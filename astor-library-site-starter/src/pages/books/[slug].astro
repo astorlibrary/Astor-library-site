@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SourceList from '../../components/SourceList.astro';
+import BookCard from '../../components/BookCard.astro';
+import { books } from '../../data/books';
+
+export function getStaticPaths() {
+  return books.map((book) => ({
+    params: { slug: book.slug },
+    props: { book }
+  }));
+}
+
+const { book } = Astro.props;
+const related = books.filter((item) => item.slug !== book.slug).slice(0, 3);
+
+const bookSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Book',
+  name: book.title,
+  author: {
+    '@type': 'Person',
+    name: book.author
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Astor Library'
+  },
+  description: book.shortDescription
+};
+---
+
+<BaseLayout title={book.title} description={book.shortDescription}>
+  <script type="application/ld+json" set:html={JSON.stringify(bookSchema)} />
+
+  <section class="book-hero">
+    <div class="large-cover" style={`--accent:${book.accent};`}>
+      <span>ASTOR LIBRARY</span>
+      <strong>{book.title}</strong>
+      <em>{book.author}</em>
+    </div>
+    <div>
+      <p class="eyebrow">{book.period} · {book.category}</p>
+      <h1>{book.title}</h1>
+      <p class="lead">{book.shortDescription}</p>
+      <div class="button-row">
+        {book.buyLinks.amazonUk && <a class="button primary" href={book.buyLinks.amazonUk}>Amazon UK</a>}
+        {book.buyLinks.payhip && <a class="button secondary" href={book.buyLinks.payhip}>Study resources</a>}
+      </div>
+    </div>
+  </section>
+
+  <section class="section article-section">
+    <p class="eyebrow">Opening context</p>
+    <h2>Start with what readers are rarely told</h2>
+    {book.openingContext.map((paragraph) => <p>{paragraph}</p>)}
+  </section>
+
+  <section class="section two-column">
+    <div class="panel">
+      <p class="eyebrow">Known for</p>
+      <ul class="feature-list">
+        {book.knownFor.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+    <div class="panel">
+      <p class="eyebrow">Study support</p>
+      <ul class="feature-list">
+        {book.studySections.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <p class="eyebrow">Adaptations and afterlives</p>
+      <h2>How the text keeps changing in performance and culture</h2>
+    </div>
+    <div class="adaptation-grid">
+      {book.adaptations.map((adaptation) => (
+        <article class="adaptation-card">
+          <p class="eyebrow">{adaptation.type} · {adaptation.year}</p>
+          <h3>{adaptation.title}</h3>
+          <p>{adaptation.note}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section split-feature">
+    <div>
+      <p class="eyebrow">Astor edition</p>
+      <h2>A product section that sits inside a useful page</h2>
+      <p>This section will hold edition details, page count, trim size, buying links, and what the Astor edition includes. It should never be the only reason the page exists.</p>
+    </div>
+    <div class="panel">
+      <ul class="feature-list">
+        <li>Readable formatting</li>
+        <li>Context-led support</li>
+        <li>Study-focused structure</li>
+        <li>Links to related resources</li>
+      </ul>
+    </div>
+  </section>
+
+  <SourceList sources={book.sources} />
+
+  <section class="section">
+    <div class="section-heading">
+      <p class="eyebrow">Related reading</p>
+      <h2>Continue through the catalogue</h2>
+    </div>
+    <div class="book-grid">
+      {related.map((item) => <BookCard book={item} />)}
+    </div>
+  </section>
+</BaseLayout>

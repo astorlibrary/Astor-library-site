@@ -1,0 +1,20 @@
+---
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/library/', label: 'Library' },
+  { href: '/shakespeare/', label: 'Shakespeare' },
+  { href: '/study/', label: 'Study' },
+  { href: '/periods/victorian/', label: 'Periods' }
+];
+---
+
+<header class="site-header">
+  <a class="brand" href="/" aria-label="Astor Library home">
+    <span>ASTOR</span>
+    <span class="torch" aria-hidden="true">♦</span>
+    <span>LIBRARY</span>
+  </a>
+  <nav class="nav" aria-label="Primary navigation">
+    {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+  </nav>
+</header>

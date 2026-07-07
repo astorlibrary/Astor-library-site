@@ -1,0 +1,16 @@
+---
+const { book } = Astro.props;
+---
+
+<a class="book-card" href={`/books/${book.slug}/`}>
+  <div class="cover-card" style={`--accent:${book.accent};`}>
+    <span class="cover-mark">ASTOR</span>
+    <strong>{book.title}</strong>
+    <em>{book.author}</em>
+  </div>
+  <div>
+    <p class="eyebrow">{book.period}</p>
+    <h3>{book.title}</h3>
+    <p>{book.shortDescription}</p>
+  </div>
+</a>

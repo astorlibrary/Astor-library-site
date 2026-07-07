@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookCard from '../../components/BookCard.astro';
+import { periods, books } from '../../data/books';
+
+export function getStaticPaths() {
+  return periods.map((period) => ({
+    params: { slug: period.slug },
+    props: { period }
+  }));
+}
+
+const { period } = Astro.props;
+const periodBooks = books.filter((book) => book.periodSlug === period.slug);
+---
+
+<BaseLayout title={period.title} description={period.description}>
+  <section class="page-hero">
+    <p class="eyebrow">Period</p>
+    <h1>{period.title}</h1>
+    <p class="lead">{period.description}</p>
+  </section>
+
+  <section class="section">
+    <div class="book-grid">
+      {periodBooks.map((book) => <BookCard book={book} />)}
+    </div>
+  </section>
+</BaseLayout>

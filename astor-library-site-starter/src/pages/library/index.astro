@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookCard from '../../components/BookCard.astro';
+import { books } from '../../data/books';
+---
+
+<BaseLayout title="Library" description="Browse Astor Library editions by title, author and period.">
+  <section class="page-hero">
+    <p class="eyebrow">Library</p>
+    <h1>Classic texts arranged as a proper catalogue, not a link list.</h1>
+    <p class="lead">Each title can become a product page, a study page and a search-friendly guide to the text.</p>
+  </section>
+
+  <section class="section">
+    <div class="book-grid">
+      {books.map((book) => <BookCard book={book} />)}
+    </div>
+  </section>
+</BaseLayout>
