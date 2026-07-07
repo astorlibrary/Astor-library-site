@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.prod-card img').forEach(img=>{img.addEventListener('error',()=>{img.classList.add('is-broken');const figure=img.closest('figure');if(figure)figure.classList.add('image-failed');},{once:true});if(img.complete&&img.naturalWidth===0){img.dispatchEvent(new Event('error'));}});});
