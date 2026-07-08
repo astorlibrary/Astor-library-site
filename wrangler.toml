@@ -1,5 +1,8 @@
 name = "astor-library-site"
 compatibility_date = "2026-07-08"
 
+[build]
+command = "node scripts/build-static.js"
+
 [assets]
-directory = "."
+directory = "./dist"
