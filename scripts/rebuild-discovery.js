@@ -66,8 +66,14 @@ function read(relative) {
 
 function decodeEntities(value) {
   const named = {
+    Agrave: 'À',
     amp: '&',
+    aacute: 'á',
+    agrave: 'à',
     apos: "'",
+    copy: '©',
+    eacute: 'é',
+    euml: 'ë',
     gt: '>',
     hellip: '…',
     laquo: '«',
@@ -77,16 +83,20 @@ function decodeEntities(value) {
     mdash: '—',
     ndash: '–',
     nbsp: ' ',
+    oacute: 'ó',
+    ograve: 'ò',
+    pound: '£',
     quot: '"',
     raquo: '»',
     rdquo: '”',
-    rsquo: '’'
+    rsquo: '’',
+    ugrave: 'ù'
   };
 
   return value
     .replace(/&#(\d+);/g, function (_, code) { return String.fromCodePoint(Number(code)); })
     .replace(/&#x([0-9a-f]+);/gi, function (_, code) { return String.fromCodePoint(parseInt(code, 16)); })
-    .replace(/&([a-z]+);/gi, function (entity, name) { return named[name.toLowerCase()] || entity; });
+    .replace(/&([a-z]+);/gi, function (entity, name) { return named[name] || named[name.toLowerCase()] || entity; });
 }
 
 function textOnly(value) {

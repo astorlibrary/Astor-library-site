@@ -13,14 +13,21 @@ const collections = [
   ['modern/index.html', 'Modern Classics']
 ];
 
-function textOnly(value) {
+function decodeEntities(value) {
+  const named = {
+    Agrave: 'À', amp: '&', aacute: 'á', agrave: 'à', apos: "'", copy: '©', eacute: 'é', euml: 'ë',
+    gt: '>', hellip: '…', laquo: '«', ldquo: '“', lsquo: '‘', lt: '<', mdash: '—', ndash: '–',
+    nbsp: ' ', oacute: 'ó', ograve: 'ò', pound: '£', quot: '"', raquo: '»', rdquo: '”', rsquo: '’', ugrave: 'ù'
+  };
+
   return value
-    .replace(/<[^>]+>/g, '')
-    .replace(/&rsquo;|&lsquo;/g, '’')
-    .replace(/&amp;/g, '&')
-    .replace(/&mdash;/g, '—')
-    .replace(/&nbsp;/g, ' ')
-    .trim();
+    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)))
+    .replace(/&([a-z]+);/gi, (entity, name) => named[name] || named[name.toLowerCase()] || entity);
+}
+
+function textOnly(value) {
+  return decodeEntities(value.replace(/<[^>]+>/g, '')).trim();
 }
 
 function rootPath(value) {

@@ -74,6 +74,19 @@
     return contents;
   }
 
+  function scrollToCurrentSection() {
+    if (!window.location.hash) return;
+    try {
+      const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+      if (!target) return;
+      const scroll = () => target.scrollIntoView();
+      if (document.readyState === 'complete') scroll();
+      else window.addEventListener('load', scroll, { once: true });
+    } catch {
+      // Ignore malformed fragments; the page itself remains fully usable.
+    }
+  }
+
   function toolCard(entry) {
     const isOverview = entry.type === 'resource' && entry.href.includes('tragedies-overview');
     const isPaired = entry.type === 'study' && entry.paired;
@@ -95,6 +108,29 @@
       '</a>';
   }
 
+  function addBookNavigation(book, collection) {
+    const intro = main.querySelector('.page-intro') || main.firstElementChild;
+    if (intro && !main.querySelector('.book-breadcrumb')) {
+      const breadcrumb = document.createElement('nav');
+      breadcrumb.className = 'book-breadcrumb';
+      breadcrumb.setAttribute('aria-label', 'Breadcrumb');
+      breadcrumb.innerHTML = '<a href="/library/">All books</a><span aria-hidden="true">/</span>' +
+        '<a href="' + escapeHtml(collection ? collection.href : '/library/') + '">' + escapeHtml(book.collection) + '</a>' +
+        '<span aria-hidden="true">/</span><span aria-current="page">' + escapeHtml(book.title) + '</span>';
+      intro.before(breadcrumb);
+    }
+
+    if (!main.querySelector('.book-end-nav')) {
+      const endNav = document.createElement('nav');
+      endNav.className = 'book-end-nav';
+      endNav.setAttribute('aria-label', 'End of page');
+      endNav.innerHTML = '<a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a>' +
+        '<a href="' + escapeHtml(collection ? collection.href : '/library/') + '">More from ' + escapeHtml(book.collection) + '</a>' +
+        '<a href="/explore/">Find another book <span aria-hidden="true">&rarr;</span></a>';
+      main.append(endNav);
+    }
+  }
+
   async function addRelatedReading(contents) {
     try {
       const response = await fetch('/assets/content-index.json');
@@ -102,6 +138,8 @@
       const data = await response.json();
       const book = data.books.find(item => normalisePath(item.href) === currentPath);
       if (!book) return;
+      const collection = data.collections.find(item => item.title === book.collection);
+      addBookNavigation(book, collection);
 
       const resources = data.resources
         .filter(item => item.relatedBooks && item.relatedBooks.some(href => normalisePath(href) === currentPath))
@@ -113,7 +151,6 @@
       const tools = resources.concat(editions);
 
       const collectionBooks = data.books.filter(item => item.collection === book.collection);
-      const collection = data.collections.find(item => item.title === book.collection);
       const currentIndex = collectionBooks.findIndex(item => item.href === book.href);
       const relatedBooks = [];
       for (let offset = 1; offset < collectionBooks.length && relatedBooks.length < 3; offset += 1) {
@@ -127,7 +164,7 @@
 
       const heading = tools.length ? 'More on ' + book.title : 'Keep reading';
       const intro = tools.length
-        ? 'Start with a guide, or keep the study edition beside the text. The shelf below leads into the rest of the collection.'
+        ? 'The guides and editions here stay close to the text. The shelf below opens another path through the collection.'
         : 'Three more books from the ' + book.collection + ' collection.';
       const toolsHtml = tools.length
         ? '<div class="related-tools">' + tools.map(toolCard).join('') + '</div>'
@@ -153,11 +190,13 @@
         if (edition) edition.after(panel);
         else main.append(panel);
       }
+      scrollToCurrentSection();
     } catch {
       // The reading page remains complete if the optional discovery index is unavailable.
     }
   }
 
   const contents = addPageContents();
+  scrollToCurrentSection();
   addRelatedReading(contents);
 })();

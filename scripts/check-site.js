@@ -183,7 +183,12 @@ for (const file of bookFiles) {
   if (!memberships.has(href)) failures.push(href + ' is not listed in a collection');
 
   const html = fs.readFileSync(file, 'utf8');
-  const sourceList = html.match(/<nav class="source-list"[\s\S]*?<\/nav>/i);
+  const proseCards = html.match(/<article class="[^"]*\bprose-card\b[^"]*">[\s\S]*?<\/article>/gi) || [];
+  for (const card of proseCards) {
+    if (/<[ou]l\b/i.test(card)) failures.push(relative(file) + ' has a prose card that still contains a list');
+    if (countMatches(card, /<p\b/gi) < 2) failures.push(relative(file) + ' has an empty prose card');
+  }
+  const sourceList = html.match(/<(nav|div|section) class="source-list"[^>]*>[\s\S]*?<\/\1>/i);
   if (sourceList) {
     const links = Array.from(sourceList[0].matchAll(/\bhref="https?:\/\/[^"]+"/gi), match => match[0]);
     const wikipedia = links.filter(link => /wikipedia\.org/i.test(link)).length;
@@ -214,6 +219,24 @@ if (listHeavy.length) {
   warnings.push(listHeavy.length + ' book pages still use more lists than paragraphs; continue the prose pass section by section');
 }
 
+const discoveryFile = path.join(root, 'assets', 'content-index.json');
+if (!fs.existsSync(discoveryFile)) {
+  failures.push('The site-wide discovery index is missing');
+} else {
+  try {
+    const discoveryText = fs.readFileSync(discoveryFile, 'utf8');
+    const discovery = JSON.parse(discoveryText);
+    if (discovery.books?.length !== bookFiles.length) {
+      failures.push('The discovery index has ' + (discovery.books?.length || 0) + ' books but the site has ' + bookFiles.length);
+    }
+    if (/&(?:#\d+|#x[0-9a-f]+|[a-z]+);/i.test(discoveryText)) {
+      failures.push('The discovery index contains an undecoded HTML character');
+    }
+  } catch {
+    failures.push('The site-wide discovery index is not valid JSON');
+  }
+}
+
 const distDir = path.join(root, 'dist');
 if (fs.existsSync(distDir)) {
   const distHtmlFiles = [];
@@ -229,6 +252,33 @@ if (fs.existsSync(distDir)) {
       if (!html.includes('/assets/site.js')) failures.push('dist/' + fileName + ' is missing site.js');
       if (!html.includes('class="skip-link"')) failures.push('dist/' + fileName + ' is missing its skip link');
       if (!/<main\b[^>]*\bid="main-content"/i.test(html)) failures.push('dist/' + fileName + ' is missing the main-content target');
+    }
+    if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
+      failures.push('dist/' + fileName + ' is missing its book description for search engines');
+    }
+    if (/^books\/[^/]+\/index\.html$/.test(fileName)) {
+      if (!/<link rel="canonical" href="\/books\/[^/]+\/">/i.test(html)) {
+        failures.push('dist/' + fileName + ' is missing its preferred book address');
+      }
+      if (!html.includes('class="book-breadcrumb"')) {
+        failures.push('dist/' + fileName + ' is missing its route back to the collection');
+      }
+      if (!html.includes('class="book-end-nav"')) {
+        failures.push('dist/' + fileName + ' is missing its end-of-page choices');
+      }
+      const structuredData = html.match(/<script type="application\/ld\+json" data-astor-book-schema>([\s\S]*?)<\/script>/i);
+      if (structuredData) {
+        try {
+          const schema = JSON.parse(structuredData[1]);
+          if (schema['@type'] !== 'WebPage' || !schema.url || !schema.isPartOf?.url ||
+              schema.breadcrumb?.itemListElement?.length !== 3 ||
+              schema.about?.['@type'] !== 'Book' || !schema.about?.image || !schema.about?.author?.name) {
+            failures.push('dist/' + fileName + ' has an incomplete book description for search engines');
+          }
+        } catch {
+          failures.push('dist/' + fileName + ' has an invalid book description for search engines');
+        }
+      }
     }
   }
 
