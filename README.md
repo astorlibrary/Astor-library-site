@@ -3,14 +3,16 @@ Website for Astor Library
 
 Future additions should follow [EDITORIAL_GUIDE.md](EDITORIAL_GUIDE.md).
 
-After adding a book to its collection page, run:
+After adding or revising a book, run:
 
 ```sh
 node scripts/rebuild-library.js
-node scripts/check-site.js
 node scripts/build-static.js
+node scripts/check-site.js
 ```
 
-`library/index.html` is rebuilt from the collection pages. Do not edit its book cards by hand.
+The first command rebuilds the full catalogue, the Explore page and the site-wide discovery index. Do not edit the generated book cards in `library/index.html` or `explore/index.html` by hand.
 
-`dist/` is the generated version of the site used for publishing. Edit the source pages instead, then rebuild it.
+`assets/content-index.json` connects book pages to matching free guides, study editions and collections. When a new guide or study edition belongs to a book, add that connection in `scripts/rebuild-discovery.js`.
+
+`dist/` is the generated version of the site used for publishing. It is ignored by Git. Edit the source pages, rebuild it, then run the site check before publishing.

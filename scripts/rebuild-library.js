@@ -48,6 +48,9 @@ for (const [relative, collection] of collections) {
     }
 
     const href = rootPath(hrefMatch[1]);
+    if (books.has(href)) {
+      throw new Error(href + ' appears in both ' + books.get(href).collection + ' and ' + collection);
+    }
     const bookFile = path.join(root, href.replace(/^\//, ''), 'index.html');
     const bookHtml = fs.readFileSync(bookFile, 'utf8');
     const titleMatch = bookHtml.match(/<h1>([\s\S]*?)<\/h1>/);
@@ -73,6 +76,15 @@ for (const [relative, collection] of collections) {
   }
 }
 
+const uncatalogued = fs.readdirSync(path.join(root, 'books'), { withFileTypes: true })
+  .filter(entry => entry.isDirectory() && fs.existsSync(path.join(root, 'books', entry.name, 'index.html')))
+  .map(entry => '/books/' + entry.name + '/')
+  .filter(href => !books.has(href));
+
+if (uncatalogued.length) {
+  throw new Error('Book pages missing from a collection: ' + uncatalogued.join(', '));
+}
+
 const sorted = [...books.values()].sort((a, b) => a.titleText.localeCompare(b.titleText, 'en', { sensitivity: 'base' }));
 if (!sorted.length) throw new Error('No catalogue books were found');
 
@@ -93,7 +105,7 @@ const html = `<!doctype html>
 <header class="site-header">
   <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="Astor Library torch"><span class="word">LIBRARY</span></a>
   <nav class="nav" aria-label="Primary navigation">
-    <a class="nav-link" href="/">Home</a><a class="nav-link" href="/library/">All books</a>
+    <a class="nav-link" href="/">Home</a><a class="nav-link" href="/explore/">Explore</a><a class="nav-link" href="/library/">All books</a>
     <details class="browse-menu"><summary>Browse collections</summary><div class="browse-panel">
       <a class="browse-card" href="/ancient-epic/" style="--browse-image:url('/Ancient%20and%20Epic.png')"><span>Ancient &amp; Epic</span></a><a class="browse-card" href="/renaissance-early-modern/" style="--browse-image:url('/Renaissance%20and%20Early%20Modern.png')"><span>Renaissance &amp; Early Modern</span></a><a class="browse-card" href="/shakespeare/" style="--browse-image:url('/Shakespeare.png')"><span>Shakespeare</span></a><a class="browse-card" href="/restoration-enlightenment/" style="--browse-image:url('/Restoration%20and%20Enlightenment.png')"><span>Restoration &amp; Enlightenment</span></a><a class="browse-card" href="/romantic-regency/" style="--browse-image:url('/Romantic%20and%20Regency.png')"><span>Romantic &amp; Regency</span></a><a class="browse-card" href="/victorian/" style="--browse-image:url('/Victorian.png')"><span>Victorian</span></a><a class="browse-card" href="/american/" style="--browse-image:url('/American%20Classics.png')"><span>American Classics</span></a><a class="browse-card" href="/modern/" style="--browse-image:url('/Modern%20Classics.png')"><span>Modern Classics</span></a><a class="browse-card" href="/study/" style="--browse-image:url('/Study%20Resources.png')"><span>Study Editions</span></a>
     </div></details>
@@ -111,3 +123,4 @@ const html = `<!doctype html>
 
 fs.writeFileSync(path.join(root, 'library/index.html'), html);
 console.log(`Rebuilt the library with ${sorted.length} books.`);
+require('./rebuild-discovery');

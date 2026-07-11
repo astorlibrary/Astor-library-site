@@ -17,6 +17,31 @@ const excluded = new Set([
   '.DS_Store'
 ]);
 
+function addImageHints(tag) {
+  let result = tag;
+  if (!/\bloading=/.test(result)) result = result.replace('<img', '<img loading="lazy"');
+  if (!/\bdecoding=/.test(result)) result = result.replace('<img', '<img decoding="async"');
+  return result;
+}
+
+function prepareHtml(html) {
+  if (!html.includes('/assets/site.js')) {
+    html = html.replace('</head>', '<script src="/assets/site.js" defer></script></head>');
+  }
+
+  if (html.includes('<main') && !html.includes('class="skip-link"')) {
+    html = html.replace(/<main(?![^>]*\bid=)([^>]*)>/, '<main id="main-content"$1>');
+    html = html.replace(/<body([^>]*)>/, '<body$1><a class="skip-link" href="#main-content">Skip to main content</a>');
+  }
+
+  html = html.replace(/<img\b[^>]*\bsrc="https?:\/\/[^"]+"[^>]*>/gi, addImageHints);
+  html = html.replace(/<a class="(?:resource-card|study-card[^"]*)"[\s\S]*?<\/a>/g, block => {
+    return block.replace(/<img\b[^>]*>/, addImageHints);
+  });
+  html = html.replace(/<img\b[^>]*\bloading="lazy"[^>]*>/g, addImageHints);
+  return html;
+}
+
 function copyRecursive(source, destination) {
   const stat = fs.statSync(source);
 
@@ -31,10 +56,7 @@ function copyRecursive(source, destination) {
   if (stat.isFile()) {
     fs.mkdirSync(path.dirname(destination), { recursive: true });
     if (path.extname(source) === '.html') {
-      let html = fs.readFileSync(source, 'utf8');
-      if (!html.includes('/assets/site.js')) {
-        html = html.replace('</head>', '<script src="/assets/site.js" defer></script></head>');
-      }
+      const html = prepareHtml(fs.readFileSync(source, 'utf8'));
       fs.writeFileSync(destination, html);
     } else {
       fs.copyFileSync(source, destination);
