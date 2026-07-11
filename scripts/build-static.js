@@ -11,6 +11,9 @@ const excluded = new Set([
   'dist',
   'node_modules',
   'scripts',
+  'README.md',
+  'EDITORIAL_GUIDE.md',
+  'wrangler.toml',
   '.DS_Store'
 ]);
 
@@ -27,7 +30,15 @@ function copyRecursive(source, destination) {
 
   if (stat.isFile()) {
     fs.mkdirSync(path.dirname(destination), { recursive: true });
-    fs.copyFileSync(source, destination);
+    if (path.extname(source) === '.html') {
+      let html = fs.readFileSync(source, 'utf8');
+      if (!html.includes('/assets/site.js')) {
+        html = html.replace('</head>', '<script src="/assets/site.js" defer></script></head>');
+      }
+      fs.writeFileSync(destination, html);
+    } else {
+      fs.copyFileSync(source, destination);
+    }
   }
 }
 
