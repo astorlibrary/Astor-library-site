@@ -36,6 +36,77 @@
     });
   }
 
+  const homeMobileMenu = document.querySelector('.home-mobile-nav');
+
+  if (homeMobileMenu) {
+    document.addEventListener('click', event => {
+      if (homeMobileMenu.open && !homeMobileMenu.contains(event.target)) homeMobileMenu.open = false;
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && homeMobileMenu.open) {
+        homeMobileMenu.open = false;
+        homeMobileMenu.querySelector('summary')?.focus();
+      }
+    });
+
+    for (const link of homeMobileMenu.querySelectorAll('a')) {
+      link.addEventListener('click', () => { homeMobileMenu.open = false; });
+    }
+  }
+
+  const motionStage = document.querySelector('[data-motion-stage]');
+  const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+
+  if (motionStage && !reducedMotion) {
+    motionStage.classList.add('is-motion-ready');
+
+    if (window.matchMedia?.('(pointer: fine)').matches) {
+      const covers = [...motionStage.querySelectorAll('[data-motion-cover]')];
+      let frame = 0;
+      let point = { x: 0, y: 0 };
+
+      const draw = () => {
+        frame = 0;
+        const movements = [
+          { x: point.x * -4, y: point.y * -3 },
+          { x: point.x * 4, y: point.y * -3 },
+          { x: point.x * 8, y: point.y * 5 }
+        ];
+        covers.forEach((cover, index) => {
+          cover.style.setProperty('--motion-x', movements[index].x.toFixed(2) + 'px');
+          cover.style.setProperty('--motion-y', movements[index].y.toFixed(2) + 'px');
+        });
+        motionStage.style.setProperty('--glow-x', (50 + point.x * 12).toFixed(2) + '%');
+      };
+
+      const queue = () => {
+        if (!frame) frame = window.requestAnimationFrame(draw);
+      };
+
+      motionStage.addEventListener('pointermove', event => {
+        const bounds = motionStage.getBoundingClientRect();
+        point = {
+          x: Math.max(-1, Math.min(1, ((event.clientX - bounds.left) / bounds.width - .5) * 2)),
+          y: Math.max(-1, Math.min(1, ((event.clientY - bounds.top) / bounds.height - .5) * 2))
+        };
+        queue();
+      });
+
+      motionStage.addEventListener('pointerleave', () => {
+        point = { x: 0, y: 0 };
+        queue();
+      });
+
+      document.addEventListener('pointermove', event => {
+        if (!motionStage.contains(event.target) && (point.x || point.y)) {
+          point = { x: 0, y: 0 };
+          queue();
+        }
+      }, { passive: true });
+    }
+  }
+
   const currentPath = normalisePath(window.location.pathname);
   for (const link of document.querySelectorAll('.nav-link, .browse-card')) {
     const linkPath = normalisePath(new URL(link.href, window.location.href).pathname);

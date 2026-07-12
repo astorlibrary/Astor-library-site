@@ -2,48 +2,49 @@
 <html lang="en">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Astor Library | Classic Books, Literary History and Study</title><meta name="description" content="Read classic books and explore their publication, performance and cultural history, with Astor study editions and free literature guides."><link rel="stylesheet" href="/assets/styles.css"></head>
 <body>
-<header class="site-header">
-  <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="Astor Library torch"><span class="word">LIBRARY</span></a>
-  <nav class="nav" aria-label="Primary navigation">
-    <a class="nav-link" href="/">Home</a>
-    <a class="nav-link" href="/explore/">Explore</a>
-    <a class="nav-link" href="/library/">All books</a>
-    <details class="browse-menu">
-      <summary>Browse collections</summary>
-      <div class="browse-panel">
-        <a class="browse-card" href="/ancient-epic/" style="--browse-image:url('/Ancient%20and%20Epic.png')"><span>Ancient &amp; Epic</span></a>
-        <a class="browse-card" href="/renaissance-early-modern/" style="--browse-image:url('/Renaissance%20and%20Early%20Modern.png')"><span>Renaissance &amp; Early Modern</span></a>
-        <a class="browse-card" href="/shakespeare/" style="--browse-image:url('/Shakespeare.png')"><span>Shakespeare</span></a>
-        <a class="browse-card" href="/restoration-enlightenment/" style="--browse-image:url('/Restoration%20and%20Enlightenment.png')"><span>Restoration &amp; Enlightenment</span></a>
-        <a class="browse-card" href="/romantic-regency/" style="--browse-image:url('/Romantic%20and%20Regency.png')"><span>Romantic &amp; Regency</span></a>
-        <a class="browse-card" href="/victorian/" style="--browse-image:url('/Victorian.png')"><span>Victorian</span></a>
-        <a class="browse-card" href="/american/" style="--browse-image:url('/American%20Classics.png')"><span>American Classics</span></a>
-        <a class="browse-card" href="/modern/" style="--browse-image:url('/Modern%20Classics.png')"><span>Modern Classics</span></a>
-        <a class="browse-card" href="/study/" style="--browse-image:url('/Study%20Resources.png')"><span>Study Editions</span></a>
+<header class="home-masthead">
+  <div class="home-masthead-main">
+    <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="" width="24" height="58"><span class="word">LIBRARY</span></a>
+    <nav class="home-masthead-links" aria-label="Primary navigation">
+      <a class="nav-link" href="/library/">Books</a>
+      <a class="nav-link" href="/study/">Study editions</a>
+      <a class="nav-link" href="/resources/">Free guides</a>
+      <a class="nav-link" href="/about/">About</a>
+    </nav>
+    <a class="home-masthead-explore" href="/explore/">Explore the library <span aria-hidden="true">&rarr;</span></a>
+    <details class="home-mobile-nav">
+      <summary><span>Menu</span><span class="home-menu-mark" aria-hidden="true"></span></summary>
+      <div class="home-mobile-panel">
+        <nav class="home-mobile-main-links" aria-label="Mobile navigation">
+          <a class="nav-link" href="/explore/">Explore the library</a><a class="nav-link" href="/library/">All books</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/resources/">Free guides</a><a class="nav-link" href="/about/">About Astor Library</a>
+        </nav>
+        <p>Browse by collection</p>
+        <nav class="home-mobile-collections" aria-label="Literary collections">
+          <a href="/ancient-epic/">Ancient &amp; Epic</a><a href="/renaissance-early-modern/">Renaissance &amp; Early Modern</a><a href="/shakespeare/">Shakespeare</a><a href="/restoration-enlightenment/">Restoration &amp; Enlightenment</a><a href="/romantic-regency/">Romantic &amp; Regency</a><a href="/victorian/">Victorian</a><a href="/american/">American Classics</a><a href="/modern/">Modern Classics</a>
+        </nav>
       </div>
     </details>
-    <a class="nav-link" href="/study/">Study editions</a>
-    <a class="nav-link" href="/resources/">Free resources</a>
+  </div>
+  <nav class="home-period-nav" aria-label="Literary collections">
+    <span>Browse the shelves</span><a href="/ancient-epic/">Ancient &amp; Epic</a><a href="/renaissance-early-modern/">Renaissance &amp; Early Modern</a><a href="/shakespeare/">Shakespeare</a><a href="/restoration-enlightenment/">Restoration &amp; Enlightenment</a><a href="/romantic-regency/">Romantic &amp; Regency</a><a href="/victorian/">Victorian</a><a href="/american/">American</a><a href="/modern/">Modern</a>
   </nav>
 </header>
 <main class="home-main">
   <section class="home-editorial-hero">
     <div class="home-hero-copy">
-      <p class="kicker">A growing library of classic literature</p>
+      <p class="kicker">Classic books, carefully opened up</p>
       <h1>Books that still feel alive.</h1>
       <p class="home-hero-lead">Read the books themselves, then stay for the stories around them: how they were written, printed, performed, argued over and passed from one reader to the next.</p>
-      <div class="button-row"><a class="button primary" href="/explore/">Search the library</a><a class="button secondary" href="/library/">Choose a book</a></div>
-      <p class="home-proof-note">Forty books are here already. The library will keep growing, one carefully made page at a time.</p>
+      <div class="button-row"><a class="button primary" href="/explore/">Find a book</a><a class="button secondary" href="/library/">Browse all books</a></div>
+      <p class="home-proof-note">The shelves are growing, with more books and guides on the way.</p>
     </div>
-    <div class="home-cover-stage" aria-label="Selected Astor Library editions">
-      <a class="home-cover home-cover-left" href="/books/hamlet/"><img src="/Hamlet.png" alt="Astor Library Hamlet cover"></a>
-      <a class="home-cover home-cover-right" href="/books/frankenstein/"><img src="/Frankenstein.png" alt="Astor Library Frankenstein cover"></a>
-      <a class="home-cover home-cover-front" href="/books/red-badge-of-courage/"><img src="/Red%20Badge%20of%20Courage.png" alt="Astor Library The Red Badge of Courage cover"></a>
-      <p class="home-cover-caption">Read the book. Discover its world.</p>
+    <div class="home-cover-stage" data-motion-stage aria-label="Selected Astor Library editions">
+      <a class="home-cover home-cover-left" data-motion-cover href="/books/hamlet/"><img src="/assets/home-hamlet.jpg" alt="Astor Library Hamlet cover" width="480" height="715" decoding="async"></a>
+      <a class="home-cover home-cover-right" data-motion-cover href="/books/frankenstein/"><img src="/assets/home-frankenstein.jpg" alt="Astor Library Frankenstein cover" width="480" height="715" decoding="async"></a>
+      <a class="home-cover home-cover-front" data-motion-cover href="/books/red-badge-of-courage/"><img src="/assets/home-red-badge.jpg" alt="Astor Library The Red Badge of Courage cover" width="480" height="715" fetchpriority="high"></a>
+      <p class="home-stage-note"><span>On the shelf</span> <em>Hamlet</em> · <em>Frankenstein</em> · <em>The Red Badge of Courage</em></p>
     </div>
   </section>
-
-  <section class="home-intro-strip" aria-label="Astor Library range"><p>From Virgil and Shakespeare to Austen, Dickens, Melville and Orwell.</p><span>One growing library.</span></section>
 
   <section class="home-collections home-block">
     <div class="home-section-heading"><div><p class="kicker">Browse by collection</p><h2>Move through literary history.</h2></div><p>Begin with an age, a tradition or Shakespeare. Each collection gives the books their proper place while leaving the doors open between them.</p></div>

@@ -150,6 +150,15 @@ for (const file of htmlFiles) {
   }
 }
 
+const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+if (!homepage.includes('class="home-masthead"')) failures.push('The homepage is missing its editorial masthead');
+if (!homepage.includes('data-motion-stage')) failures.push('The homepage is missing its living cover display');
+if (countMatches(homepage, /data-motion-cover/g) !== 3) failures.push('The homepage must feature exactly three moving covers');
+if (homepage.includes('class="home-intro-strip"')) failures.push('The homepage has restored the repeated introduction strip');
+for (const image of ['home-hamlet.jpg', 'home-frankenstein.jpg', 'home-red-badge.jpg']) {
+  if (!homepage.includes('/assets/' + image)) failures.push('The homepage is missing its smaller ' + image + ' cover');
+}
+
 const memberships = new Map();
 for (const relativeCollection of collectionFiles) {
   const collectionFile = path.join(root, relativeCollection);
