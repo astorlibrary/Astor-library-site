@@ -3,6 +3,7 @@ const path = require('path');
 
 const root = process.cwd();
 const outDir = path.join(root, 'dist');
+const SITE_URL = 'https://astorlibrary.com';
 const discoveryFile = path.join(root, 'assets', 'content-index.json');
 const discovery = fs.existsSync(discoveryFile)
   ? JSON.parse(fs.readFileSync(discoveryFile, 'utf8'))
@@ -60,6 +61,12 @@ function pageHref(source) {
   return '/' + relative;
 }
 
+function absoluteUrl(value) {
+  const href = String(value || '/');
+  if (/^https?:\/\//i.test(href)) return href;
+  return SITE_URL + (href.startsWith('/') ? href : '/' + href);
+}
+
 function bookContext(source) {
   const relative = path.relative(root, source).split(path.sep).join('/');
   if (!relative.startsWith('books/') || !relative.endsWith('/index.html')) return null;
@@ -91,30 +98,32 @@ function addBookStructuredData(html, source) {
     '@type': 'WebPage',
     name: book.title + ' | Astor Library',
     description: book.description,
-    url: book.href,
+    url: absoluteUrl(book.href),
     inLanguage: 'en-GB',
     publisher: {
       '@type': 'Organization',
-      name: 'Astor Library'
+      '@id': SITE_URL + '/#organization',
+      name: 'Astor Library',
+      url: SITE_URL + '/'
     },
     isPartOf: {
       '@type': 'CollectionPage',
       name: book.collection,
-      url: collection?.href || '/library/'
+      url: absoluteUrl(collection?.href || '/library/')
     },
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'All books', item: '/library/' },
-        { '@type': 'ListItem', position: 2, name: book.collection, item: collection?.href || '/library/' },
-        { '@type': 'ListItem', position: 3, name: book.title, item: book.href }
+        { '@type': 'ListItem', position: 1, name: 'All books', item: absoluteUrl('/library/') },
+        { '@type': 'ListItem', position: 2, name: book.collection, item: absoluteUrl(collection?.href || '/library/') },
+        { '@type': 'ListItem', position: 3, name: book.title, item: absoluteUrl(book.href) }
       ]
     },
     about: {
       '@type': 'Book',
       name: book.title,
-      url: book.href,
-      image: book.image,
+      url: absoluteUrl(book.href),
+      image: absoluteUrl(book.image),
       author: {
         '@type': 'Person',
         name: book.author
@@ -122,7 +131,7 @@ function addBookStructuredData(html, source) {
     }
   };
 
-  const canonical = html.includes('rel="canonical"') ? '' : '<link rel="canonical" href="' + book.href + '">';
+  const canonical = html.includes('rel="canonical"') ? '' : '<link rel="canonical" href="' + absoluteUrl(book.href) + '">';
   const json = JSON.stringify(schema).replace(/</g, '\\u003c');
   const structuredData = html.includes('data-astor-book-schema')
     ? ''
@@ -139,27 +148,27 @@ function addResourceStructuredData(html, source) {
     '@type': 'LearningResource',
     name: resource.title,
     description: resource.description,
-    url: resource.href,
-    image: resource.image || undefined,
+    url: absoluteUrl(resource.href),
+    image: resource.image ? absoluteUrl(resource.image) : undefined,
     inLanguage: 'en-GB',
     isAccessibleForFree: true,
     learningResourceType: 'Study guide',
     educationalUse: ['Reading', 'Study', 'Teaching'],
-    publisher: { '@type': 'Organization', name: 'Astor Library' },
+    publisher: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
     about: relatedBook
-      ? { '@type': 'Book', name: relatedBook.title, url: relatedBook.href, author: { '@type': 'Person', name: relatedBook.author } }
+      ? { '@type': 'Book', name: relatedBook.title, url: absoluteUrl(relatedBook.href), author: { '@type': 'Person', name: relatedBook.author } }
       : (resource.tags || []).slice(0, 4).map(name => ({ '@type': 'Thing', name })),
-    isPartOf: { '@type': 'CollectionPage', name: 'Free literature resources', url: '/resources/' },
+    isPartOf: { '@type': 'CollectionPage', name: 'Free literature resources', url: absoluteUrl('/resources/') },
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Free resources', item: '/resources/' },
-        ...(relatedBook ? [{ '@type': 'ListItem', position: 2, name: relatedBook.title, item: relatedBook.href }] : []),
-        { '@type': 'ListItem', position: relatedBook ? 3 : 2, name: resource.title, item: resource.href }
+        { '@type': 'ListItem', position: 1, name: 'Free resources', item: absoluteUrl('/resources/') },
+        ...(relatedBook ? [{ '@type': 'ListItem', position: 2, name: relatedBook.title, item: absoluteUrl(relatedBook.href) }] : []),
+        { '@type': 'ListItem', position: relatedBook ? 3 : 2, name: resource.title, item: absoluteUrl(resource.href) }
       ]
     }
   };
-  const canonical = html.includes('rel="canonical"') ? '' : '<link rel="canonical" href="' + resource.href + '">';
+  const canonical = html.includes('rel="canonical"') ? '' : '<link rel="canonical" href="' + absoluteUrl(resource.href) + '">';
   const json = JSON.stringify(schema).replace(/</g, '\\u003c');
   return html.replace('</head>', canonical + '<script type="application/ld+json" data-astor-resource-schema>' + json + '</script></head>');
 }
@@ -173,26 +182,49 @@ function addGlobalMetadata(html, source) {
   const resource = resourceContext(source)?.resource;
   const image = book?.image || resource?.image || '/Logo.png';
   let metadata = '';
-  if (!html.includes('rel="canonical"')) metadata += '<link rel="canonical" href="' + escapeHtml(href) + '">';
+  const absoluteHref = absoluteUrl(href);
+  const absoluteImage = absoluteUrl(image);
+  if (!html.includes('rel="canonical"')) metadata += '<link rel="canonical" href="' + escapeHtml(absoluteHref) + '">';
   if (!/name="robots"/i.test(html)) metadata += '<meta name="robots" content="index,follow,max-image-preview:large" data-astor-global-meta>';
   if (!/property="og:site_name"/i.test(html)) metadata += '<meta property="og:site_name" content="Astor Library">';
+  if (!/property="og:locale"/i.test(html)) metadata += '<meta property="og:locale" content="en_GB">';
   if (!/property="og:title"/i.test(html)) metadata += '<meta property="og:title" content="' + escapeHtml(title) + '">';
   if (!/property="og:description"/i.test(html)) metadata += '<meta property="og:description" content="' + escapeHtml(description) + '">';
   if (!/property="og:type"/i.test(html)) metadata += '<meta property="og:type" content="' + (href === '/' ? 'website' : 'article') + '">';
-  if (!/property="og:url"/i.test(html)) metadata += '<meta property="og:url" content="' + escapeHtml(href) + '">';
-  if (!/property="og:image"/i.test(html)) metadata += '<meta property="og:image" content="' + escapeHtml(image) + '">';
+  if (!/property="og:url"/i.test(html)) metadata += '<meta property="og:url" content="' + escapeHtml(absoluteHref) + '">';
+  if (!/property="og:image"/i.test(html)) metadata += '<meta property="og:image" content="' + escapeHtml(absoluteImage) + '">';
+  if (!/property="og:image:alt"/i.test(html)) metadata += '<meta property="og:image:alt" content="Astor Library classic literature editions and resources">';
   if (!/name="twitter:card"/i.test(html)) metadata += '<meta name="twitter:card" content="summary_large_image">';
   if (!/name="twitter:title"/i.test(html)) metadata += '<meta name="twitter:title" content="' + escapeHtml(title) + '">';
   if (!/name="twitter:description"/i.test(html)) metadata += '<meta name="twitter:description" content="' + escapeHtml(description) + '">';
+  if (!/name="twitter:image"/i.test(html)) metadata += '<meta name="twitter:image" content="' + escapeHtml(absoluteImage) + '">';
+  if (!/rel="icon"/i.test(html)) metadata += '<link rel="icon" href="/assets/astor-torch.svg" type="image/svg+xml">';
+  if (!/name="theme-color"/i.test(html)) metadata += '<meta name="theme-color" content="#132936">';
 
   if (href === '/' && !html.includes('data-astor-website-schema')) {
     const websiteSchema = {
       '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      name: 'Astor Library',
-      url: '/',
-      description,
-      publisher: { '@type': 'Organization', name: 'Astor Library' }
+      '@graph': [
+        {
+          '@type': 'Organization',
+          '@id': SITE_URL + '/#organization',
+          name: 'Astor Library',
+          alternateName: 'Astor Editions',
+          url: SITE_URL + '/',
+          logo: { '@type': 'ImageObject', url: absoluteUrl('/Logo.png') },
+          description
+        },
+        {
+          '@type': 'WebSite',
+          '@id': SITE_URL + '/#website',
+          name: 'Astor Library',
+          alternateName: 'Astor Editions',
+          url: SITE_URL + '/',
+          inLanguage: 'en-GB',
+          description,
+          publisher: { '@id': SITE_URL + '/#organization' }
+        }
+      ]
     };
     metadata += '<script type="application/ld+json" data-astor-website-schema>' + JSON.stringify(websiteSchema).replace(/</g, '\\u003c') + '</script>';
   }
@@ -310,4 +342,40 @@ for (const entry of fs.readdirSync(root)) {
   copyRecursive(path.join(root, entry), path.join(outDir, entry));
 }
 
-console.log('Static site copied to dist/ without repository metadata.');
+const sitemapUrls = [];
+function collectSitemap(directory) {
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    const fullPath = path.join(directory, entry.name);
+    if (entry.isDirectory()) {
+      collectSitemap(fullPath);
+      continue;
+    }
+    if (!entry.isFile() || path.extname(entry.name) !== '.html') continue;
+    const html = fs.readFileSync(fullPath, 'utf8');
+    if (/http-equiv="refresh"/i.test(html)) continue;
+    sitemapUrls.push(absoluteUrl(pageHref(path.join(root, path.relative(outDir, fullPath)))));
+  }
+}
+
+collectSitemap(outDir);
+sitemapUrls.sort((a, b) => a.localeCompare(b, 'en'));
+const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+  sitemapUrls.map(url => '  <url><loc>' + escapeHtml(url) + '</loc></url>').join('\n') +
+  '\n</urlset>\n';
+fs.writeFileSync(path.join(outDir, 'sitemap.xml'), sitemap);
+
+const pdfCanonicalRules = [];
+for (const resource of discovery.resources || []) {
+  const source = path.join(root, resource.href.replace(/^\//, ''), 'index.html');
+  if (!fs.existsSync(source)) continue;
+  const html = fs.readFileSync(source, 'utf8');
+  const pdfs = new Set(Array.from(html.matchAll(/href="(\/[^"?#]+\.pdf)"/gi), match => match[1]));
+  for (const pdf of pdfs) {
+    pdfCanonicalRules.push(pdf + '\n  Link: <' + absoluteUrl(resource.href) + '>; rel="canonical"');
+  }
+}
+pdfCanonicalRules.sort((a, b) => a.localeCompare(b, 'en'));
+fs.writeFileSync(path.join(outDir, '_headers'), '# Keep downloadable PDFs connected to their fuller guide pages.\n' + pdfCanonicalRules.join('\n\n') + '\n');
+
+console.log('Static site copied to dist/ with ' + sitemapUrls.length + ' preferred addresses and ' + pdfCanonicalRules.length + ' PDF links.');

@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = process.cwd();
+const SITE_URL = 'https://astorlibrary.com';
 const ignoredDirectories = new Set(['.git', 'dist', 'node_modules']);
 const htmlFiles = [];
 const failures = [];
@@ -155,11 +156,15 @@ const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 if (!homepage.includes('class="home-masthead"')) failures.push('The homepage is missing its editorial masthead');
 if (!homepage.includes('data-motion-stage')) failures.push('The homepage is missing its living cover display');
 if (countMatches(homepage, /data-motion-cover/g) !== 3) failures.push('The homepage must feature exactly three moving covers');
+if (!homepage.includes('class="home-finder"')) failures.push('The homepage is missing its library search entrance');
+if (!homepage.includes('class="home-new-grid"')) failures.push('The homepage is missing its new-books story');
+if (countMatches(homepage, /class="home-offer-card/g) !== 3) failures.push('The homepage must clearly explain its three kinds of resource');
+if (countMatches(homepage, /class="home-route-list"[\s\S]*?<a /g) < 1) failures.push('The homepage is missing its routes across the shelves');
 if (!homepage.includes('data-reference-reel')) failures.push('The homepage is missing its moving reference-library story');
 if (countMatches(homepage, /data-reference-frame/g) !== 3) failures.push('The homepage must feature exactly three reference-library frames');
 if (homepage.includes('class="home-intro-strip"')) failures.push('The homepage has restored the repeated introduction strip');
-for (const image of ['home-hamlet.jpg', 'home-frankenstein.jpg', 'home-red-badge.jpg']) {
-  if (!homepage.includes('/assets/' + image)) failures.push('The homepage is missing its smaller ' + image + ' cover');
+for (const image of ['The%20Odyssey.png', 'Adventures%20of%20Sherlock%20Holmes.png', 'uncle-toms-cabin-astor-cover.svg']) {
+  if (!homepage.includes(image)) failures.push('The homepage is missing its featured ' + image + ' cover');
 }
 for (const image of ['home-reference-victorian.jpg', 'home-reference-shakespeare.jpg', 'home-reference-study.jpg']) {
   if (!homepage.includes('/assets/' + image)) failures.push('The homepage is missing its lighter ' + image + ' moving image');
@@ -277,16 +282,17 @@ if (fs.existsSync(distDir)) {
       if (!html.includes('/assets/site.js')) failures.push('dist/' + fileName + ' is missing site.js');
       if (!html.includes('class="skip-link"')) failures.push('dist/' + fileName + ' is missing its skip link');
       if (!/<main\b[^>]*\bid="main-content"/i.test(html)) failures.push('dist/' + fileName + ' is missing the main-content target');
-      if (!redirect && !html.includes('rel="canonical"')) failures.push('dist/' + fileName + ' is missing its preferred address');
+      if (!redirect && !/<link rel="canonical" href="https:\/\/astorlibrary\.com\//i.test(html)) failures.push('dist/' + fileName + ' is missing its absolute preferred address');
       if (!redirect && !html.includes('property="og:title"')) failures.push('dist/' + fileName + ' is missing its sharing title');
       if (!redirect && !html.includes('property="og:description"')) failures.push('dist/' + fileName + ' is missing its sharing description');
+      if (!redirect && !/<meta property="og:url" content="https:\/\/astorlibrary\.com\//i.test(html)) failures.push('dist/' + fileName + ' is missing its full sharing address');
       if (!redirect && !html.includes('data-astor-global-meta')) failures.push('dist/' + fileName + ' is missing its search visibility information');
     }
     if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
       failures.push('dist/' + fileName + ' is missing its book description for search engines');
     }
     if (/^books\/[^/]+\/index\.html$/.test(fileName)) {
-      if (!/<link rel="canonical" href="\/books\/[^/]+\/">/i.test(html)) {
+      if (!/<link rel="canonical" href="https:\/\/astorlibrary\.com\/books\/[^/]+\/">/i.test(html)) {
         failures.push('dist/' + fileName + ' is missing its preferred book address');
       }
       if (!html.includes('class="book-breadcrumb"')) {
@@ -299,9 +305,9 @@ if (fs.existsSync(distDir)) {
       if (structuredData) {
         try {
           const schema = JSON.parse(structuredData[1]);
-          if (schema['@type'] !== 'WebPage' || !schema.url || !schema.isPartOf?.url ||
+          if (schema['@type'] !== 'WebPage' || !schema.url?.startsWith(SITE_URL) || !schema.isPartOf?.url?.startsWith(SITE_URL) ||
               schema.breadcrumb?.itemListElement?.length !== 3 ||
-              schema.about?.['@type'] !== 'Book' || !schema.about?.image || !schema.about?.author?.name) {
+              schema.about?.['@type'] !== 'Book' || !schema.about?.image?.startsWith(SITE_URL) || !schema.about?.author?.name) {
             failures.push('dist/' + fileName + ' has an incomplete book description for search engines');
           }
         } catch {
@@ -324,6 +330,26 @@ if (fs.existsSync(distDir)) {
   }
   if (!fs.existsSync(path.join(distDir, 'robots.txt'))) {
     failures.push('dist is missing its crawler instructions');
+  }
+  const sitemapFile = path.join(distDir, 'sitemap.xml');
+  if (!fs.existsSync(sitemapFile)) {
+    failures.push('dist is missing its XML sitemap');
+  } else {
+    const sitemap = fs.readFileSync(sitemapFile, 'utf8');
+    const indexedPages = distHtmlFiles.filter(file => !/http-equiv="refresh"/i.test(fs.readFileSync(file, 'utf8'))).length;
+    const sitemapEntries = countMatches(sitemap, /<url><loc>https:\/\/astorlibrary\.com\//g);
+    if (sitemapEntries !== indexedPages) failures.push('The XML sitemap contains ' + sitemapEntries + ' pages but should contain ' + indexedPages);
+    if (sitemap.includes('astorlibrary.co.uk')) failures.push('The XML sitemap points at the secondary domain');
+  }
+  const robots = fs.readFileSync(path.join(distDir, 'robots.txt'), 'utf8');
+  if (!robots.includes('Sitemap: ' + SITE_URL + '/sitemap.xml')) failures.push('robots.txt does not announce the XML sitemap');
+  const headersFile = path.join(distDir, '_headers');
+  if (!fs.existsSync(headersFile)) {
+    failures.push('dist is missing its PDF search headers');
+  } else {
+    const headers = fs.readFileSync(headersFile, 'utf8');
+    if (countMatches(headers, /rel="canonical"/g) !== 23) failures.push('The PDF search headers do not cover all 23 free guides');
+    if (!headers.includes('<' + SITE_URL + '/resources/')) failures.push('The PDF search headers do not point back to the guide pages');
   }
 }
 
