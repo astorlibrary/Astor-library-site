@@ -40,6 +40,8 @@ const studyBookLinks = {
 };
 
 const resourceBookLinks = {
+  '/resources/dracula/complete-overview/': ['/books/dracula/'],
+  '/resources/dracula/gender-roles/': ['/books/dracula/'],
   '/resources/midsummer-nights-dream/study-guide/': ['/books/a-midsummer-nights-dream/'],
   '/resources/frankenstein/study-guide/': ['/books/frankenstein/'],
   '/resources/great-expectations/study-guide/': ['/books/great-expectations/'],
@@ -48,6 +50,7 @@ const resourceBookLinks = {
   '/resources/jekyll-and-hyde/analysing-quotations/': ['/books/jekyll-and-hyde/'],
   '/resources/king-lear/summary-guide/': ['/books/king-lear/'],
   '/resources/macbeth/summary-analysis/': ['/books/macbeth/'],
+  '/resources/moby-dick/study-guide/': ['/books/moby-dick/'],
   '/resources/much-ado-about-nothing/passage-analysis/': ['/books/much-ado-about-nothing/'],
   '/resources/romeo-and-juliet/summary-guide/': ['/books/romeo-and-juliet/'],
   '/resources/shakespeare/tragedies-overview/': [
@@ -100,7 +103,7 @@ function decodeEntities(value) {
 }
 
 function textOnly(value) {
-  return decodeEntities(value.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim());
+  return decodeEntities(value.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').replace(/\s+([:;,.!?])/g, '$1').trim());
 }
 
 function firstSentence(value) {
