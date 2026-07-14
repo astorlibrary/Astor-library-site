@@ -156,18 +156,21 @@ const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 if (!homepage.includes('class="home-masthead"')) failures.push('The homepage is missing its editorial masthead');
 if (!homepage.includes('data-motion-stage')) failures.push('The homepage is missing its living cover display');
 if (countMatches(homepage, /data-motion-cover/g) !== 3) failures.push('The homepage must feature exactly three moving covers');
-if (!homepage.includes('class="home-finder"')) failures.push('The homepage is missing its library search entrance');
-if (!homepage.includes('class="home-new-grid"')) failures.push('The homepage is missing its new-books story');
-if (countMatches(homepage, /class="home-offer-card/g) !== 3) failures.push('The homepage must clearly explain its three kinds of resource');
-if (countMatches(homepage, /class="home-route-list"[\s\S]*?<a /g) < 1) failures.push('The homepage is missing its routes across the shelves');
+if (!homepage.includes('home-finder')) failures.push('The homepage is missing its library search entrance');
+if (!homepage.includes('class="archive-book-shelf"')) failures.push('The homepage is missing its new-books shelf');
+if (countMatches(homepage, /class="archive-catalogue-number"/g) !== 3) failures.push('The homepage must clearly explain its three kinds of resource');
+if (!homepage.includes('class="archive-route-list"')) failures.push('The homepage is missing its routes across the shelves');
 if (!homepage.includes('data-reference-reel')) failures.push('The homepage is missing its moving reference-library story');
 if (countMatches(homepage, /data-reference-frame/g) !== 3) failures.push('The homepage must feature exactly three reference-library frames');
 if (homepage.includes('class="home-intro-strip"')) failures.push('The homepage has restored the repeated introduction strip');
-for (const image of ['The%20Odyssey.png', 'Adventures%20of%20Sherlock%20Holmes.png', 'uncle-toms-cabin-astor-cover.svg']) {
+for (const image of ['The%20Odyssey.png', 'Adventures%20of%20Sherlock%20Holmes.png', 'Uncle%20Tom%27s%20Cabin.png']) {
   if (!homepage.includes(image)) failures.push('The homepage is missing its featured ' + image + ' cover');
 }
 for (const image of ['home-reference-victorian.jpg', 'home-reference-shakespeare.jpg', 'home-reference-study.jpg']) {
   if (!homepage.includes('/assets/' + image)) failures.push('The homepage is missing its lighter ' + image + ' moving image');
+}
+for (const icon of ['favicon.ico', 'favicon.svg', 'favicon-32x32.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'site.webmanifest']) {
+  if (!fs.existsSync(path.join(root, icon))) failures.push('The site is missing ' + icon);
 }
 
 const resourcesHub = fs.readFileSync(path.join(root, 'resources', 'index.html'), 'utf8');

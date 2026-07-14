@@ -198,7 +198,13 @@ function addGlobalMetadata(html, source) {
   if (!/name="twitter:title"/i.test(html)) metadata += '<meta name="twitter:title" content="' + escapeHtml(title) + '">';
   if (!/name="twitter:description"/i.test(html)) metadata += '<meta name="twitter:description" content="' + escapeHtml(description) + '">';
   if (!/name="twitter:image"/i.test(html)) metadata += '<meta name="twitter:image" content="' + escapeHtml(absoluteImage) + '">';
-  if (!/rel="icon"/i.test(html)) metadata += '<link rel="icon" href="/assets/astor-torch.svg" type="image/svg+xml">';
+  if (!/rel="icon"/i.test(html)) {
+    metadata += '<link rel="icon" href="/favicon.ico" sizes="any">';
+    metadata += '<link rel="icon" href="/favicon.svg" type="image/svg+xml">';
+    metadata += '<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">';
+    metadata += '<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">';
+    metadata += '<link rel="manifest" href="/site.webmanifest">';
+  }
   if (!/name="theme-color"/i.test(html)) metadata += '<meta name="theme-color" content="#132936">';
 
   if (href === '/' && !html.includes('data-astor-website-schema')) {
@@ -211,7 +217,7 @@ function addGlobalMetadata(html, source) {
           name: 'Astor Library',
           alternateName: 'Astor Editions',
           url: SITE_URL + '/',
-          logo: { '@type': 'ImageObject', url: absoluteUrl('/Logo.png') },
+          logo: { '@type': 'ImageObject', url: absoluteUrl('/icon-512.png'), width: 512, height: 512 },
           description
         },
         {
