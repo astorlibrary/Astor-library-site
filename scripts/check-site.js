@@ -165,6 +165,15 @@ for (const image of ['home-reference-victorian.jpg', 'home-reference-shakespeare
   if (!homepage.includes('/assets/' + image)) failures.push('The homepage is missing its lighter ' + image + ' moving image');
 }
 
+const resourcesHub = fs.readFileSync(path.join(root, 'resources', 'index.html'), 'utf8');
+if (!resourcesHub.includes('id="resource-search"')) failures.push('The resources page is missing its guide search');
+if (!resourcesHub.includes('/assets/resources.js')) failures.push('The resources page is missing its search script');
+if (countMatches(resourcesHub, /data-resource-filter=/g) < 7) failures.push('The resources page is missing its category filters');
+
+const readingRoutes = fs.readFileSync(path.join(root, 'reading-routes', 'index.html'), 'utf8');
+if (countMatches(readingRoutes, /class="route-block"/g) !== 5) failures.push('Reading routes must contain five complete routes');
+if (!readingRoutes.includes('/resources/dracula/complete-overview/')) failures.push('Reading routes are not connected to the free guides');
+
 const memberships = new Map();
 for (const relativeCollection of collectionFiles) {
   const collectionFile = path.join(root, relativeCollection);
@@ -263,10 +272,15 @@ if (fs.existsSync(distDir)) {
   for (const file of distHtmlFiles) {
     const html = fs.readFileSync(file, 'utf8');
     const fileName = path.relative(distDir, file);
+    const redirect = /http-equiv="refresh"/i.test(html);
     if (html.includes('<main')) {
       if (!html.includes('/assets/site.js')) failures.push('dist/' + fileName + ' is missing site.js');
       if (!html.includes('class="skip-link"')) failures.push('dist/' + fileName + ' is missing its skip link');
       if (!/<main\b[^>]*\bid="main-content"/i.test(html)) failures.push('dist/' + fileName + ' is missing the main-content target');
+      if (!redirect && !html.includes('rel="canonical"')) failures.push('dist/' + fileName + ' is missing its preferred address');
+      if (!redirect && !html.includes('property="og:title"')) failures.push('dist/' + fileName + ' is missing its sharing title');
+      if (!redirect && !html.includes('property="og:description"')) failures.push('dist/' + fileName + ' is missing its sharing description');
+      if (!redirect && !html.includes('data-astor-global-meta')) failures.push('dist/' + fileName + ' is missing its search visibility information');
     }
     if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
       failures.push('dist/' + fileName + ' is missing its book description for search engines');
@@ -295,10 +309,21 @@ if (fs.existsSync(distDir)) {
         }
       }
     }
+    if (/^resources\/.+\/index\.html$/.test(fileName)) {
+      if (!html.includes('data-astor-resource-schema')) failures.push('dist/' + fileName + ' is missing its free-guide description for search engines');
+      if (!html.includes('class="book-breadcrumb resource-breadcrumb"')) failures.push('dist/' + fileName + ' is missing its route back to free resources');
+      if (!html.includes('class="book-end-nav resource-end-nav"')) failures.push('dist/' + fileName + ' is missing its end-of-page choices');
+    }
   }
 
   if (!fs.existsSync(path.join(distDir, 'assets/content-index.json'))) {
     failures.push('dist is missing the discovery index');
+  }
+  if (!fs.existsSync(path.join(distDir, 'site-index', 'index.html'))) {
+    failures.push('dist is missing the crawlable site index');
+  }
+  if (!fs.existsSync(path.join(distDir, 'robots.txt'))) {
+    failures.push('dist is missing its crawler instructions');
   }
 }
 

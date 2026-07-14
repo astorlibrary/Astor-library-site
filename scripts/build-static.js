@@ -37,6 +37,29 @@ function escapeHtml(value) {
     .replace(/'/g, '&#39;');
 }
 
+function decodeEntities(value) {
+  const named = {
+    amp: '&', apos: "'", copy: '©', eacute: 'é', euml: 'ë', gt: '>', hellip: '…', laquo: '«',
+    ldquo: '“', lsquo: '‘', lt: '<', mdash: '—', ndash: '–', nbsp: ' ', quot: '"', raquo: '»',
+    rdquo: '”', rsquo: '’'
+  };
+  return String(value)
+    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)))
+    .replace(/&([a-z]+);/gi, (entity, name) => named[name.toLowerCase()] || entity);
+}
+
+function plainText(value) {
+  return decodeEntities(String(value).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').replace(/\s+([:;,.!?])/g, '$1').trim());
+}
+
+function pageHref(source) {
+  const relative = path.relative(root, source).split(path.sep).join('/');
+  if (relative === 'index.html') return '/';
+  if (relative.endsWith('/index.html')) return '/' + relative.slice(0, -'index.html'.length);
+  return '/' + relative;
+}
+
 function bookContext(source) {
   const relative = path.relative(root, source).split(path.sep).join('/');
   if (!relative.startsWith('books/') || !relative.endsWith('/index.html')) return null;
@@ -46,6 +69,15 @@ function bookContext(source) {
   if (!book) return null;
   const collection = discovery.collections?.find(item => item.title === book.collection);
   return { book, collection };
+}
+
+function resourceContext(source) {
+  const href = pageHref(source);
+  if (!href.startsWith('/resources/') || href === '/resources/') return null;
+  const resource = discovery.resources?.find(item => item.href === href);
+  if (!resource) return null;
+  const relatedBook = discovery.books?.find(book => resource.relatedBooks?.includes(book.href));
+  return { resource, relatedBook };
 }
 
 function addBookStructuredData(html, source) {
@@ -98,6 +130,75 @@ function addBookStructuredData(html, source) {
   return html.replace('</head>', canonical + structuredData + '</head>');
 }
 
+function addResourceStructuredData(html, source) {
+  const context = resourceContext(source);
+  if (!context || html.includes('data-astor-resource-schema')) return html;
+  const { resource, relatedBook } = context;
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name: resource.title,
+    description: resource.description,
+    url: resource.href,
+    image: resource.image || undefined,
+    inLanguage: 'en-GB',
+    isAccessibleForFree: true,
+    learningResourceType: 'Study guide',
+    educationalUse: ['Reading', 'Study', 'Teaching'],
+    publisher: { '@type': 'Organization', name: 'Astor Library' },
+    about: relatedBook
+      ? { '@type': 'Book', name: relatedBook.title, url: relatedBook.href, author: { '@type': 'Person', name: relatedBook.author } }
+      : (resource.tags || []).slice(0, 4).map(name => ({ '@type': 'Thing', name })),
+    isPartOf: { '@type': 'CollectionPage', name: 'Free literature resources', url: '/resources/' },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Free resources', item: '/resources/' },
+        ...(relatedBook ? [{ '@type': 'ListItem', position: 2, name: relatedBook.title, item: relatedBook.href }] : []),
+        { '@type': 'ListItem', position: relatedBook ? 3 : 2, name: resource.title, item: resource.href }
+      ]
+    }
+  };
+  const canonical = html.includes('rel="canonical"') ? '' : '<link rel="canonical" href="' + resource.href + '">';
+  const json = JSON.stringify(schema).replace(/</g, '\\u003c');
+  return html.replace('</head>', canonical + '<script type="application/ld+json" data-astor-resource-schema>' + json + '</script></head>');
+}
+
+function addGlobalMetadata(html, source) {
+  if (/http-equiv="refresh"/i.test(html)) return html;
+  const href = pageHref(source);
+  const title = plainText(html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || 'Astor Library');
+  const description = plainText(html.match(/<meta\b[^>]*name="description"[^>]*content="([^"]+)"/i)?.[1] || 'Classic literature, carefully introduced for readers, students and teachers.');
+  const book = bookContext(source)?.book;
+  const resource = resourceContext(source)?.resource;
+  const image = book?.image || resource?.image || '/Logo.png';
+  let metadata = '';
+  if (!html.includes('rel="canonical"')) metadata += '<link rel="canonical" href="' + escapeHtml(href) + '">';
+  if (!/name="robots"/i.test(html)) metadata += '<meta name="robots" content="index,follow,max-image-preview:large" data-astor-global-meta>';
+  if (!/property="og:site_name"/i.test(html)) metadata += '<meta property="og:site_name" content="Astor Library">';
+  if (!/property="og:title"/i.test(html)) metadata += '<meta property="og:title" content="' + escapeHtml(title) + '">';
+  if (!/property="og:description"/i.test(html)) metadata += '<meta property="og:description" content="' + escapeHtml(description) + '">';
+  if (!/property="og:type"/i.test(html)) metadata += '<meta property="og:type" content="' + (href === '/' ? 'website' : 'article') + '">';
+  if (!/property="og:url"/i.test(html)) metadata += '<meta property="og:url" content="' + escapeHtml(href) + '">';
+  if (!/property="og:image"/i.test(html)) metadata += '<meta property="og:image" content="' + escapeHtml(image) + '">';
+  if (!/name="twitter:card"/i.test(html)) metadata += '<meta name="twitter:card" content="summary_large_image">';
+  if (!/name="twitter:title"/i.test(html)) metadata += '<meta name="twitter:title" content="' + escapeHtml(title) + '">';
+  if (!/name="twitter:description"/i.test(html)) metadata += '<meta name="twitter:description" content="' + escapeHtml(description) + '">';
+
+  if (href === '/' && !html.includes('data-astor-website-schema')) {
+    const websiteSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'Astor Library',
+      url: '/',
+      description,
+      publisher: { '@type': 'Organization', name: 'Astor Library' }
+    };
+    metadata += '<script type="application/ld+json" data-astor-website-schema>' + JSON.stringify(websiteSchema).replace(/</g, '\\u003c') + '</script>';
+  }
+  return html.replace('</head>', metadata + '</head>');
+}
+
 function addBookReadingNavigation(html, source) {
   const context = bookContext(source);
   if (!context) return html;
@@ -126,9 +227,41 @@ function addBookReadingNavigation(html, source) {
   return html;
 }
 
+function addResourceReadingNavigation(html, source) {
+  const context = resourceContext(source);
+  if (!context) return html;
+  const { resource, relatedBook } = context;
+  if (!html.includes('class="resource-breadcrumb')) {
+    const middle = relatedBook
+      ? '<a href="' + escapeHtml(relatedBook.href) + '">' + escapeHtml(relatedBook.title) + '</a><span aria-hidden="true">/</span>'
+      : '';
+    const breadcrumb = '<nav class="book-breadcrumb resource-breadcrumb" aria-label="Breadcrumb"><a href="/resources/">Free resources</a><span aria-hidden="true">/</span>' + middle + '<span aria-current="page">' + escapeHtml(resource.title) + '</span></nav>';
+    const withIntro = html.replace('<section class="page-intro"', breadcrumb + '<section class="page-intro"');
+    html = withIntro === html ? html.replace(/(<main\b[^>]*>)/i, '$1' + breadcrumb) : withIntro;
+  }
+  if (!html.includes('class="book-end-nav resource-end-nav"')) {
+    const bookLink = relatedBook ? '<a href="' + escapeHtml(relatedBook.href) + '">Explore ' + escapeHtml(relatedBook.title) + '</a>' : '';
+    const endNav = '<nav class="book-end-nav resource-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a>' + bookLink + '<a href="/resources/">All free resources</a><a href="/site-index/">Site index</a></nav>';
+    html = html.replace('</main>', endNav + '</main>');
+  }
+  return html;
+}
+
+function addSiteIndexLink(html, source) {
+  if (!html.includes('<footer') || pageHref(source) === '/site-index/' || html.includes('href="/site-index/"')) return html;
+  if (html.includes('class="footer-links"')) {
+    return html.replace(/(<div class="footer-links">[\s\S]*?)(<\/div>)/i, '$1<a href="/site-index/">Site index</a>$2');
+  }
+  return html.replace('</footer>', '<div class="footer-links"><a href="/site-index/">Site index</a></div></footer>');
+}
+
 function prepareHtml(html, source) {
   html = addBookStructuredData(html, source);
+  html = addResourceStructuredData(html, source);
+  html = addGlobalMetadata(html, source);
   html = addBookReadingNavigation(html, source);
+  html = addResourceReadingNavigation(html, source);
+  html = addSiteIndexLink(html, source);
 
   if (!html.includes('/assets/site.js')) {
     html = html.replace('</head>', '<script src="/assets/site.js" defer></script></head>');
