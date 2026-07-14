@@ -75,7 +75,8 @@ const editorialPhrases = [
   'cover expected',
   'uploaded',
   'filename',
-  'placeholder'
+  'placeholder',
+  'classic texts, properly presented'
 ];
 
 for (const file of htmlFiles) {
@@ -154,9 +155,14 @@ const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 if (!homepage.includes('class="home-masthead"')) failures.push('The homepage is missing its editorial masthead');
 if (!homepage.includes('data-motion-stage')) failures.push('The homepage is missing its living cover display');
 if (countMatches(homepage, /data-motion-cover/g) !== 3) failures.push('The homepage must feature exactly three moving covers');
+if (!homepage.includes('data-reference-reel')) failures.push('The homepage is missing its moving reference-library story');
+if (countMatches(homepage, /data-reference-frame/g) !== 3) failures.push('The homepage must feature exactly three reference-library frames');
 if (homepage.includes('class="home-intro-strip"')) failures.push('The homepage has restored the repeated introduction strip');
 for (const image of ['home-hamlet.jpg', 'home-frankenstein.jpg', 'home-red-badge.jpg']) {
   if (!homepage.includes('/assets/' + image)) failures.push('The homepage is missing its smaller ' + image + ' cover');
+}
+for (const image of ['home-reference-victorian.jpg', 'home-reference-shakespeare.jpg', 'home-reference-study.jpg']) {
+  if (!homepage.includes('/assets/' + image)) failures.push('The homepage is missing its lighter ' + image + ' moving image');
 }
 
 const memberships = new Map();

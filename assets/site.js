@@ -36,6 +36,50 @@
     });
   }
 
+  const siteHeader = document.querySelector('.site-header');
+  const siteNavigation = siteHeader?.querySelector('.nav');
+
+  if (siteHeader && siteNavigation) {
+    siteNavigation.id = siteNavigation.id || 'site-navigation';
+    const toggle = document.createElement('button');
+    toggle.className = 'site-nav-toggle';
+    toggle.type = 'button';
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-controls', siteNavigation.id);
+    toggle.innerHTML = '<span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span>';
+    siteHeader.insertBefore(toggle, siteNavigation);
+    siteHeader.classList.add('site-nav-ready');
+
+    const closeSiteMenu = returnFocus => {
+      siteHeader.classList.remove('is-site-menu-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      if (collectionMenu) collectionMenu.open = false;
+      if (returnFocus) toggle.focus();
+    };
+
+    toggle.addEventListener('click', () => {
+      const open = siteHeader.classList.toggle('is-site-menu-open');
+      toggle.setAttribute('aria-expanded', String(open));
+      if (!open && collectionMenu) collectionMenu.open = false;
+    });
+
+    document.addEventListener('click', event => {
+      if (siteHeader.classList.contains('is-site-menu-open') && !siteHeader.contains(event.target)) {
+        closeSiteMenu(false);
+      }
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && siteHeader.classList.contains('is-site-menu-open')) {
+        closeSiteMenu(true);
+      }
+    });
+
+    for (const link of siteNavigation.querySelectorAll('a')) {
+      link.addEventListener('click', () => closeSiteMenu(false));
+    }
+  }
+
   const homeMobileMenu = document.querySelector('.home-mobile-nav');
 
   if (homeMobileMenu) {
@@ -105,6 +149,45 @@
         }
       }, { passive: true });
     }
+  }
+
+  const referenceReel = document.querySelector('[data-reference-reel]');
+
+  if (referenceReel && !reducedMotion) {
+    const frames = [...referenceReel.querySelectorAll('[data-reference-frame]')];
+    let reelFrame = 0;
+
+    const drawReferenceReel = () => {
+      reelFrame = 0;
+      const bounds = referenceReel.getBoundingClientRect();
+      const progress = Math.max(0, Math.min(1,
+        (window.innerHeight - bounds.top) / (window.innerHeight + bounds.height)
+      ));
+      const position = progress * (frames.length - 1);
+      const first = Math.floor(position);
+      const blend = position - first;
+
+      frames.forEach((frame, index) => {
+        let opacity = 0;
+        if (index === first) opacity = 1 - blend;
+        if (index === first + 1) opacity = blend;
+        frame.style.opacity = opacity.toFixed(3);
+        const image = frame.querySelector('img');
+        if (image) {
+          const direction = index % 2 ? 1 : -1;
+          image.style.setProperty('--frame-y', ((progress - .5) * 22 * direction).toFixed(2) + 'px');
+          image.style.setProperty('--frame-scale', (1.1 - progress * .025).toFixed(3));
+        }
+      });
+    };
+
+    const queueReferenceReel = () => {
+      if (!reelFrame) reelFrame = window.requestAnimationFrame(drawReferenceReel);
+    };
+
+    window.addEventListener('scroll', queueReferenceReel, { passive: true });
+    window.addEventListener('resize', queueReferenceReel);
+    drawReferenceReel();
   }
 
   const currentPath = normalisePath(window.location.pathname);
