@@ -94,6 +94,12 @@ function authorContext(source) {
   return author || null;
 }
 
+function subjectContext(source) {
+  const href = pageHref(source);
+  if (!href.startsWith('/subjects/') || href === '/subjects/') return null;
+  return discovery.subjects?.find(item => item.href === href) || null;
+}
+
 function addBookStructuredData(html, source) {
   const context = bookContext(source);
   if (!context) return html;
@@ -131,6 +137,7 @@ function addBookStructuredData(html, source) {
       name: book.title,
       url: absoluteUrl(book.href),
       image: absoluteUrl(book.image),
+      genre: (book.subjects || []).map(subject => subject.title),
       author: {
         '@type': 'Person',
         name: book.author,
@@ -226,6 +233,7 @@ function addCollectionStructuredData(html, source) {
   if (html.includes('data-astor-collection-schema')) return html;
 
   const collection = discovery.collections?.find(item => item.href === href);
+  const subject = subjectContext(source);
   let items = [];
   let kind = '';
 
@@ -235,6 +243,12 @@ function addCollectionStructuredData(html, source) {
   } else if (href === '/authors/') {
     items = discovery.authors || [];
     kind = 'Classic authors and writers';
+  } else if (href === '/subjects/') {
+    items = discovery.subjects || [];
+    kind = 'Literature subject guides';
+  } else if (subject) {
+    items = (discovery.books || []).filter(book => subject.relatedBooks?.includes(book.href));
+    kind = subject.title + ' books';
   } else if (collection) {
     items = (discovery.books || []).filter(book => book.collection === collection.title);
     kind = collection.title + ' books';
@@ -283,7 +297,8 @@ function addGlobalMetadata(html, source) {
   const book = bookContext(source)?.book;
   const resource = resourceContext(source)?.resource;
   const author = authorContext(source);
-  const image = book?.image || resource?.image || author?.image || '/Logo.png';
+  const subject = subjectContext(source);
+  const image = book?.image || resource?.image || author?.image || subject?.image || '/Logo.png';
   let metadata = '';
   const absoluteHref = absoluteUrl(href);
   const absoluteImage = absoluteUrl(image);
@@ -403,6 +418,7 @@ function addSiteIndexLink(html, source) {
   if (!html.includes('<footer')) return html;
   const href = pageHref(source);
   const links = [];
+  if (href !== '/subjects/' && !html.includes('href="/subjects/"')) links.push('<a href="/subjects/">Subjects</a>');
   if (href !== '/authors/' && !html.includes('href="/authors/"')) links.push('<a href="/authors/">Writers</a>');
   if (href !== '/classic-literature/' && !html.includes('href="/classic-literature/"')) links.push('<a href="/classic-literature/">Classic literature</a>');
   if (href !== '/site-index/' && !html.includes('href="/site-index/"')) links.push('<a href="/site-index/">Site index</a>');
@@ -413,10 +429,16 @@ function addSiteIndexLink(html, source) {
   return html.replace('</footer>', '<div class="footer-links">' + links.join('') + '</div></footer>');
 }
 
-function addAuthorsNavigation(html, source) {
+function addDiscoveryNavigation(html, source) {
   const href = pageHref(source);
+  if (html.includes('class="site-header"') && !html.includes('href="/subjects/"')) {
+    html = html.replace(/(<a class="nav-link" href="\/explore\/">[\s\S]*?<\/a>)/i, '$1<a class="nav-link" href="/subjects/">Subjects</a>');
+  }
   if (html.includes('class="site-header"') && !html.includes('href="/authors/"')) {
-    html = html.replace(/(<a class="nav-link" href="\/explore\/">[\s\S]*?<\/a>)/i, '$1<a class="nav-link" href="/authors/">Writers</a>');
+    html = html.replace(/(<a class="nav-link" href="\/subjects\/">[\s\S]*?<\/a>)/i, '$1<a class="nav-link" href="/authors/">Writers</a>');
+  }
+  if (href.startsWith('/subjects/') && html.includes('href="/subjects/"')) {
+    html = html.replace(/<a class="nav-link" href="\/subjects\/">Subjects<\/a>/i, '<a class="nav-link" href="/subjects/" aria-current="page">Subjects</a>');
   }
   if (href.startsWith('/authors/') && html.includes('href="/authors/"')) {
     html = html.replace(/<a class="nav-link" href="\/authors\/">Writers<\/a>/i, '<a class="nav-link" href="/authors/" aria-current="page">Writers</a>');
@@ -430,7 +452,7 @@ function prepareHtml(html, source) {
   html = addAuthorStructuredData(html, source);
   html = addCollectionStructuredData(html, source);
   html = addGlobalMetadata(html, source);
-  html = addAuthorsNavigation(html, source);
+  html = addDiscoveryNavigation(html, source);
   html = addBookAuthorLink(html, source);
   html = addBookReadingNavigation(html, source);
   html = addResourceReadingNavigation(html, source);

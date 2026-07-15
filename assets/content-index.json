@@ -2,10 +2,11 @@
   "counts": {
     "books": 49,
     "authors": 25,
+    "subjects": 5,
     "resources": 23,
     "studyEditions": 23,
     "collections": 8,
-    "entries": 128
+    "entries": 133
   },
   "books": [
     {
@@ -19,7 +20,8 @@
       "image": "/A%20Christmas%20Carol.png",
       "imageAlt": "Astor Library A Christmas Carol cover",
       "search": "A Christmas Carol Charles Dickens Victorian Dickens’s 1843 ghost story has all the warmth of Christmas without looking away from poverty. A Christmas Carol, Charles Dickens The story in context First edition, 1843 Five staves, not chapters John Leech’s first images Poverty, children and work Text, printing and illustration Chapman and Hall first edition Marley’s warning Memory as evidence Historical context Urban wealth and visible poverty Prisons, workhouses and “surplus population” Old customs, new print culture A ghost story with moral structure Performance and adaptation timeline Early stage adaptations Dickens’s public readings Scrooge; or, Marley’s Ghost MGM and Alastair Sim Scrooge musical film George C. Scott television film Scrooged The Muppet Christmas Carol Robert Zemeckis motion-capture film Sources and further reading",
-      "authorHref": "/authors/charles-dickens/"
+      "authorHref": "/authors/charles-dickens/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -32,7 +34,8 @@
       "image": "/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png",
       "imageAlt": "Astor Library A Midsummer Night's Dream cover",
       "search": "A Midsummer Night's Dream William Shakespeare Shakespeare Four young lovers, quarrelling fairies and a troupe of amateur actors collide in a moonlit forest where desire refuses to stay fixed. Law and marriage Desire disordered Power, not prettiness Theatre watching itself A Midsummer Night's Dream, William Shakespeare Before entering the wood Text and early publication First Quarto: Thomas Fisher Second Quarto and false dating First Folio Sources and story traditions Pyramus and Thisbe Theseus, Hippolyta and court authority Puck and Robin Goodfellow Aristocrats and artisans Worlds of the play Civic law and forced choice Fuseli and the darker fairy imagination Bad tragedy, good theatre Key dates Probable composition period Francis Meres record First Quarto Pepys at Drury Lane Performance history Madame Vestris at Covent Garden Peter Brook and the white box Erica Whyman: A Play for the Nation Immersive and darker revivals Music, opera and screen versions Mendelssohn Britten's opera Hollywood film Michael Hoffman film Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -45,7 +48,8 @@
       "image": "/Huckleberry%20Finn.png",
       "imageAlt": "Astor Library Adventures of Huckleberry Finn cover",
       "search": "Adventures of Huckleberry Finn Mark Twain American Classics Huck escapes his violent father and meets Jim on Jackson’s Island. The Astor Library edition Adventures of Huckleberry Finn, Mark Twain How the book works Huck tells more than he knows The river and the shore When Tom arrives A closer reading Huck’s language carries the argument The raft offers fellowship, not freedom from history The ending tests the book’s moral achievement People to keep in view Questions worth carrying through the text What Huck’s voice lets the novel do The moral argument is indirect Freedom is temporary and fragile Each episode tests civilisation Six turning points on the river The difficulty of the ending Adventure becomes control Growth does not become mastery Legal release comes late Sources and further reading",
-      "authorHref": "/authors/#mark-twain"
+      "authorHref": "/authors/#mark-twain",
+      "subjects": []
     },
     {
       "type": "book",
@@ -58,7 +62,8 @@
       "image": "/0001_1_use-the-macbeth-cover-as-the-layout-refe_oR8d6uK8WYeORWiSoFuzBw_7Bo8rZBYSiSmvEif8P1K7A_cover.png",
       "imageAlt": "Astor Library All's Well That Ends Well cover",
       "search": "All's Well That Ends Well William Shakespeare Shakespeare Helena cures a king and wins the right to choose a husband, but Bertram refuses the marriage and sets conditions he believes she cannot meet. All's Well That Ends Well, William Shakespeare Why the ending unsettles Text and early publication First Folio witness Composition is uncertain Riddle, bargain and proof Sources and story tradition Giletta of Narbonne in the Decameron The Palace of Pleasure The braggart companion Historical context Helena's cure and Bertram's refusal The father's remedy Florence and military display The problem of pursuit Characters Physician's daughter and plot-maker Rank without maturity Language without substance Household authority Witness and counter-plot Performance timeline Goodman's Fields and Drury Lane William Bridges-Adams at Stratford-upon-Avon Noel Willman and Tyrone Guthrie John Barton: stage and television record Trevor Nunn: Peggy Ashcroft as the Countess Peter Hall and Gregory Doran Nancy Meckler: abstract design and problem-play framing Blanche McIntyre: RSC contemporary production Stage adaptations Reconciliation under pressure Comedy of exposure Consent, fantasy and female agency Screen versions BBC / RSC television version BBC Television Shakespeare National Theatre broadcast record Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -71,7 +76,13 @@
       "image": "/Animal%20Farm.png",
       "imageAlt": "Astor Library Animal Farm cover",
       "search": "Animal Farm George Orwell Modern Classics Orwell’s brief, devastating fable follows a revolution that promises equality and ends in another tyranny. Animal Farm, George Orwell How the fable works Text and publication history George Orwell Spain and anti-Stalinism Writing the fable Manuscript difficulties First British edition The Freedom of the Press Russian Revolution and Stalinism Revolution and founding myth Power struggle after revolution Dictatorship and command Squealer and official explanation Language, fable and form Simple form, severe argument Law as rewriteable text Memory under pressure Plainness and irony Character and allegory guide Key dates Eric Arthur Blair born Down and Out in Paris and London The Road to Wigan Pier Homage to Catalonia BBC resignation and Tribune Animal Farm published American edition and \"Why I Write\" Nineteen Eighty-Four Orwell's death Stage adaptations National Theatre, London Guy Masterson solo version National Youth Theatre Robert Icke adaptation Alexander Raskatov opera Screen versions Halas and Batchelor animation Television film Andy Serkis animated film Key passages for study Ways into the text Propaganda and rewritten truth Boxer, Clover and Benjamin Russia and beyond Russia Sources and further reading",
-      "authorHref": "/authors/#george-orwell"
+      "authorHref": "/authors/#george-orwell",
+      "subjects": [
+        {
+          "title": "Satire and political writing",
+          "href": "/subjects/satire-political-writing/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -84,7 +95,13 @@
       "image": "/Antony%20and%20Cleopatra.png",
       "imageAlt": "Astor Library Antony and Cleopatra cover",
       "search": "Antony and Cleopatra William Shakespeare Shakespeare Antony is divided between Roman command and Cleopatra’s Alexandria, but the play refuses to make either world simple. The Astor Library edition Antony and Cleopatra, William Shakespeare How the book works The play keeps moving Everyone manages an image Defeat becomes theatre A closer reading Cleopatra is described before she can be contained Short scenes make power feel unstable The lovers struggle to author their defeat Beyond Rome against Egypt Order depends upon performance too Pleasure can be a form of rule Antony cannot keep the worlds separate People to keep in view Questions worth carrying through the text Six turns in the tragedy Language to listen for Value exceeds calculation Identity loses its old shape Events arrive through other voices Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -97,7 +114,8 @@
       "image": "/As%20you%20like%20it.png",
       "imageAlt": "Astor Library As You Like It cover",
       "search": "As You Like It William Shakespeare Shakespeare Banished from court, Rosalind enters the Forest of Arden dressed as Ganymede. The Astor Library edition As You Like It, William Shakespeare How the book works Rosalind writes the scene A forest with weather Four marriages and a return A closer reading Arden changes the rules, but not every condition Disguise creates room to think aloud The ending restores more than it explains People to keep in view Questions worth carrying through the text From the wrestling match to the epilogue Arden is not one thing Corin knows the ground Jaques turns life into material The forest interrupts ordinary sequence Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -110,7 +128,13 @@
       "image": "/Coriolanus.png",
       "imageAlt": "Astor Library Coriolanus cover",
       "search": "Coriolanus William Shakespeare Shakespeare Caius Marcius can take Corioli but cannot ask Rome’s citizens for their voices. The Astor Library edition Coriolanus, William Shakespeare How the book works Wounds become political evidence Who speaks for Rome? Volumnia made the soldier A closer reading The first argument is about bread Public honour begins inside the family People to keep in view Questions worth carrying through the text Six political tests What the play refuses to settle A crowd can reason and turn Representation includes calculation Integrity can become incapacity Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -122,8 +146,18 @@
       "href": "/books/dracula/",
       "image": "/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png",
       "imageAlt": "Astor Library Dracula reader's edition cover",
-      "search": "Dracula Bram Stoker Victorian Told through diaries, letters, telegrams and newspaper cuttings, Stoker’s 1897 novel follows Count Dracula from Transylvania to England and the group determined to stop him. Choose your edition Dracula, Bram Stoker Dracula, introduced Astor Library edition At a glance Text, sources and publication First edition: Archibald Constable and Company Bram Stoker and the Lyceum Theatre Earlier vampire fiction Vlad, Transylvania and vampire tradition Victorian context Clerks, doctors, solicitors and typists Blood, transfusion and the asylum Mina, Lucy and late-Victorian womanhood Modern evidence and older protections Characters and documentary method Legal errand, captivity and witness Typist, editor and organiser Sleep, illness and transformation Professor, doctor and interpreter Aristocrat, invader and archive problem Stage history and adaptations Lyceum copyright reading Hamilton Deane at the Grand Theatre, Derby London and Broadway Edward Gorey and the Broadway revival Screen versions Nosferatu Universal: English and Spanish-language films Hammer: Dracula / Horror of Dracula Romance, spectacle and return to Stoker Sources and further reading",
-      "authorHref": "/authors/#bram-stoker"
+      "search": "Dracula Bram Stoker Victorian Told through diaries, letters, telegrams and newspaper cuttings, Stoker’s 1897 novel follows Count Dracula from Transylvania to England and the group determined to stop him. Choose your edition Dracula, Bram Stoker Dracula, introduced Astor Library edition At a glance Text, sources and publication First edition: Archibald Constable and Company Bram Stoker and the Lyceum Theatre Earlier vampire fiction Vlad, Transylvania and vampire tradition Victorian context Clerks, doctors, solicitors and typists Blood, transfusion and the asylum Mina, Lucy and late-Victorian womanhood Modern evidence and older protections Characters and documentary method Legal errand, captivity and witness Typist, editor and organiser Sleep, illness and transformation Professor, doctor and interpreter Aristocrat, invader and archive problem Stage history and adaptations Lyceum copyright reading Hamilton Deane at the Grand Theatre, Derby London and Broadway Edward Gorey and the Broadway revival Screen versions Nosferatu Universal: English and Spanish-language films Hammer: Dracula / Horror of Dracula Romance, spectacle and return to Stoker Sources and further reading Read the documents, not only the events Writing inside the castle A witness made from absences Making a common record",
+      "authorHref": "/authors/#bram-stoker",
+      "subjects": [
+        {
+          "title": "Gothic literature",
+          "href": "/subjects/gothic-literature/"
+        },
+        {
+          "title": "Detective fiction",
+          "href": "/subjects/detective-fiction/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -135,8 +169,14 @@
       "href": "/books/frankenstein/",
       "image": "/IMG_5297.png",
       "imageAlt": "Astor Library Frankenstein commentary edition cover",
-      "search": "Frankenstein; or, The Modern Prometheus Mary Shelley Romantic & Regency Victor Frankenstein gives life to a being he immediately abandons, setting creator and creation on a path of loneliness, violence and revenge. Choose your edition Frankenstein, Mary Shelley Frankenstein, introduced Astor Library edition At a glance Text and publication First edition: anonymous, three volumes Composition and revision Bentley edition and new introduction Mary Shelley and 1816 Mary Wollstonecraft Shelley The ghost-story challenge Galvanism, anatomy and life Structure and narrative method Arctic frame Confession and self-defence Education and claim-making 1818 and 1831 Younger, sharper, less providential Revised, framed and morally darkened Which Frankenstein? Stage and screen adaptations Presumption; or, the Fate of Frankenstein Edison Studios: first screen adaptation Before Karloff James Whale and Universal Key dates Mary Wollstonecraft Godwin born Geneva and the ghost-story challenge Anonymous first edition Second edition and stage success Revised edition Mary Shelley dies Sources and further reading",
-      "authorHref": "/authors/#mary-shelley"
+      "search": "Frankenstein; or, The Modern Prometheus Mary Shelley Romantic & Regency Victor Frankenstein gives life to a being he immediately abandons, setting creator and creation on a path of loneliness, violence and revenge. Choose your edition Frankenstein, Mary Shelley Frankenstein, introduced Astor Library edition At a glance Text and publication First edition: anonymous, three volumes Composition and revision Bentley edition and new introduction Mary Shelley and 1816 Mary Wollstonecraft Shelley The ghost-story challenge Galvanism, anatomy and life Structure and narrative method Arctic frame Confession and self-defence Education and claim-making 1818 and 1831 Younger, sharper, less providential Revised, framed and morally darkened Which Frankenstein? Stage and screen adaptations Presumption; or, the Fate of Frankenstein Edison Studios: first screen adaptation Before Karloff James Whale and Universal Key dates Mary Wollstonecraft Godwin born Geneva and the ghost-story challenge Anonymous first edition Second edition and stage success Revised edition Mary Shelley dies Sources and further reading Three passages worth slowing down for The creation scene Learning beside the De Laceys The last account",
+      "authorHref": "/authors/#mary-shelley",
+      "subjects": [
+        {
+          "title": "Gothic literature",
+          "href": "/subjects/gothic-literature/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -149,7 +189,8 @@
       "image": "/Great%20Expectations.png",
       "imageAlt": "Astor Library Great Expectations cover",
       "search": "Great Expectations Charles Dickens Victorian Pip’s longing to become a gentleman draws him away from the people who love him and towards a fortune whose true source overturns everything he believes. Great Expectations, Charles Dickens Great Expectations, introduced Astor Library edition Great Expectations Study Edition Pip’s world Serial text and first edition Chapman and Hall book edition All the Year Round Harper’s Weekly Dickens, Kent and the working novel Dickens and his characters Gad’s Hill and late Dickens Work under pressure Locations and social geography Opening with graves, cold and terror Joe Gargery and honest work Gentility, debt and legal power Miss Havisham, Satis House and damaged education “Break their hearts” Adopted daughter, social instrument Victim and agent of harm Magwitch, crime and the false gentleman Magwitch returns Transportation and colonial money Law, office and compartmentalised feeling The two endings Piccadilly and separation Satis House and ambiguity “No shadow of another parting” Key dates Dickens born Debtors’ prison and blacking factory Gad’s Hill Place Serial publication Dickens dies Stage and screen adaptations Alec Guinness stage version David Lean film Later screen versions Sources and further reading",
-      "authorHref": "/authors/charles-dickens/"
+      "authorHref": "/authors/charles-dickens/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -161,8 +202,14 @@
       "href": "/books/gullivers-travels/",
       "image": "/Gulliver%27s%20Travels.png",
       "imageAlt": "Astor Library Gulliver's Travels cover",
-      "search": "Gulliver’s Travels Jonathan Swift Restoration & Enlightenment Across four increasingly unsettling voyages, Lemuel Gulliver encounters miniature courtiers, giants, impractical experimenters and rational horses. Small people, large egos Humanity enlarged Science without use The Houyhnhnm problem Gulliver’s Travels, Jonathan Swift Four voyages, changing scale Text and publication history Benjamin Motte’s London edition Composition and Scriblerian background Keys, sequels and imitations George Faulkner’s Dublin edition The four voyages Lilliput Brobdingnag Laputa, Balnibarbi, Glubbdubdrib, Luggnagg and Japan Houyhnhnmland Satire and historical context Low heels, high heels and egg-breaking Rope-dancing and preferment Lagado Discovery as domination Visual history Jonathan Swift The giant prisoner Satire made pictorial Characters and satirical functions Language and interpretation Stage and screen adaptations Fleischer Studios animated feature The 3 Worlds of Gulliver Television miniseries Modern comic recycling Sources and further reading",
-      "authorHref": "/authors/#jonathan-swift"
+      "search": "Gulliver’s Travels Jonathan Swift Restoration & Enlightenment Across four increasingly unsettling voyages, Lemuel Gulliver encounters miniature courtiers, giants, impractical experimenters and rational horses. Small people, large egos Humanity enlarged Science without use The Houyhnhnm problem Gulliver’s Travels, Jonathan Swift Four voyages, changing scale Text and publication history Benjamin Motte’s London edition Composition and Scriblerian background Keys, sequels and imitations George Faulkner’s Dublin edition The four voyages Lilliput Brobdingnag Laputa, Balnibarbi, Glubbdubdrib, Luggnagg and Japan Houyhnhnmland Satire and historical context Low heels, high heels and egg-breaking Rope-dancing and preferment Lagado Discovery as domination Visual history Jonathan Swift The giant prisoner Satire made pictorial Characters and satirical functions Language and interpretation Stage and screen adaptations Fleischer Studios animated feature The 3 Worlds of Gulliver Television miniseries Modern comic recycling Where the joke changes direction The inventory of Gulliver The proposal of gunpowder Home among the Yahoos Sources and further reading",
+      "authorHref": "/authors/#jonathan-swift",
+      "subjects": [
+        {
+          "title": "Satire and political writing",
+          "href": "/subjects/satire-political-writing/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -175,7 +222,13 @@
       "image": "/Hamlet.png",
       "imageAlt": "Astor Library Hamlet cover",
       "search": "Hamlet William Shakespeare Shakespeare A prince returns to Elsinore to mourn his father and finds a court built on haste, secrecy and surveillance. Hamlet, William Shakespeare Denmark under watch Text and publication First Quarto: Q1 Second Quarto: Q2 First Folio Sources and revenge tragedy Amleth source tradition Ghost, murder and delay Theatre as investigation Elsinore, spying and court politics Ghost and succession crisis Performance and public language Spying as habit Images, memory and afterlife Ophelia and Victorian memory Hamlet as actor’s test Sarah Bernhardt and cross-gender Hamlet Key dates Probable composition period Stationers’ Register First Quarto Second Quarto Stage and screen adaptations Restoration stage Richard Burton and Broadway David Warner and Peter Hall at the RSC Major screen records Modern transpositions Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -188,7 +241,8 @@
       "image": "/Henry%20IV,%20Part%201.png",
       "imageAlt": "Astor Library Henry IV, Part 1 cover",
       "search": "Henry IV, Part 1 William Shakespeare Shakespeare A troubled king faces rebellion while Prince Hal divides his life between the court, Falstaff’s tavern world and the reputation he intends to claim. A king without rest Hal performs disgrace Hotspur burns bright Falstaff unsettles history Henry IV, Part 1, William Shakespeare Three worlds in collision Text and publication history First quarto Repeated quartos First Folio A name with political risk Sources and historical frame Chronicle history Lancaster and York Shrewsbury Succession and stability Court, tavern and battlefield Legitimacy under strain Performance and delay Honour and fracture Gadshill Language and myth War and exposure Visual history The comic body The rebel ideal Characters in the drama Language and interpretation Stage and screen adaptations Court performance record Orson Welles, Chimes at Midnight The Hollow Crown Player Kings Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -201,7 +255,8 @@
       "image": "/Henry%20VI%2C%20Part%202.png",
       "imageAlt": "Astor Library Henry VI, Part 2 cover",
       "search": "Henry VI, Part 2 William Shakespeare Shakespeare Faction, ambition and popular rebellion tear at Henry’s fragile rule as Gloucester falls, Queen Margaret and Suffolk gain power, and York prepares his claim. Government fails Gloucester destroyed Cade enters London York waits Henry VI, Part 2, William Shakespeare A kingdom coming apart Text and print history Contention before Folio Quarto and Folio Long title, clear selling points Sources and historical compression The Union of the Two Noble and Illustre Families Chronicles, 1587 Other chronicle pressure Four years into one chain How the action unfolds Marriage, faction, ambition Public signs and private plotting Gloucester falls Suffolk and Cade York and St Albans Characters and factions Performance history RSC, The Wars of the Roses BBC Television Shakespeare RSC, Michael Boyd histories RSC, Henry VI: Rebellion The Hollow Crown Language and interpretation Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -214,7 +269,8 @@
       "image": "/Henry%20VI%2C%20Part%203.png",
       "imageAlt": "Astor Library Henry VI, Part 3 cover",
       "search": "Henry VI, Part 3 William Shakespeare Shakespeare The struggle for England’s crown becomes open civil war, breaking oaths and families as power passes between Lancaster and York. Oath broken York murdered Edward rises Villain forming Henry VI, Part 3, William Shakespeare The crown in motion Text and print history From True Tragedie to Folio history A playbook sold by event The history sequence Historical figures in the play Piety without force War against settlement Crown by possession Sources and historical compression The Union of the Two Noble and Illustre Families Chronicles, 1587 Battle after battle Looking towards Richard III How the action unfolds The settlement collapses before it can hold Family grief and battlefield disorder Edward crowned, Warwick offended Warwick changes the board Tewkesbury and the next tragedy Characters and shifting allegiances Performance history RSC, The Wars of the Roses BBC Television Shakespeare Michael Boyd, RSC RSC and The Hollow Crown Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -227,7 +283,13 @@
       "image": "/King%20Lear.png",
       "imageAlt": "Astor Library King Lear cover",
       "search": "King Lear William Shakespeare Shakespeare Lear gives away his kingdom but expects to keep the authority of a king, while Gloucester makes an equally ruinous judgement about his sons. Division as catastrophe Quarto against Folio One play, many Lears King Lear, William Shakespeare A kingdom divided Text and publication First Quarto: True Chronicle Historie Second Quarto: Pavier reprint First Folio: The Tragedie of King Lear Source history Geoffrey, Holinshed and the Leir story Mirror for Magistrates and Spenser Sidney’s Arcadia and Gloucester Harsnett, Poor Tom and the fiends Visual history Benjamin West: Lear and Cordelia Poole: the tragic ending restored to sight The storm as stage image Performance timeline Earlier King Leir Court performance Nahum Tate’s History of King Lear Macready and the Fool restored John Gielgud at the Old Vic Trevor Nunn’s RSC Lear Trevor Nunn and Ian McKellen Gregory Doran and Antony Sher Stage and screen adaptations Language and interpretation Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -240,7 +302,13 @@
       "image": "/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png",
       "imageAlt": "Astor Library Macbeth cover",
       "search": "Macbeth William Shakespeare Shakespeare A soldier hears a prophecy, murders his king and discovers that power won through terror must be defended by more terror. Macbeth, William Shakespeare The road to the crown No quarto, First Folio only Holinshed, Banquo and James I Equivocation and the Gunpowder Plot period Text, sources and first performances Forman’s note and the First Folio The historical Macbeth Restoration and eighteenth-century stage history Davenant’s Restoration Macbeth and Pepys Garrick, Pritchard and Siddons Nineteenth-century theatre and visual culture Macready, Forrest and the Astor Place Riot Verdi’s opera Macbeth Henry Irving, Ellen Terry and Sargent Twentieth century and later Barry Jackson and Orson Welles Trevor Nunn: Ian McKellen and Judi Dench Later RSC records Recent productions Yaël Farber: Almeida Theatre Max Webster: Donmar Warehouse Other modern records Screen versions Major screen versions Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -253,7 +321,13 @@
       "image": "/Moby%20Dick.png",
       "imageAlt": "Astor Library Moby-Dick cover",
       "search": "Moby-Dick Herman Melville American Classics Ishmael joins the Pequod seeking work and adventure, only to find the voyage consumed by Ahab’s private war against the white whale. Two first editions Work before myth Ishmael collects forms Ahab remains portable Choose your edition Moby-Dick; or, The Whale, Herman Melville Moby-Dick, introduced Astor Library edition At a glance Text and publication Harper & Brothers: Moby-Dick; or, The Whale Richard Bentley: The Whale Arrowhead and composition Whaling history and literary sources Melville and sea writing A surviving whaleship Boats, lines and impact The Essex and Mocha Dick Visual archive Arrowhead Sperm whale Cetology and error Rockwell Kent Passages that carry the book Characters Stage and screen adaptations The Sea Beast Moby Dick Orson Welles, Moby Dick - Rehearsed John Huston’s Moby Dick Jake Heggie’s opera Ways into the text Sources and further reading",
-      "authorHref": "/authors/#herman-melville"
+      "authorHref": "/authors/#herman-melville",
+      "subjects": [
+        {
+          "title": "Epic poetry",
+          "href": "/subjects/epic-poetry/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -266,7 +340,8 @@
       "image": "/Much%20Ado%20About%20Nothing.png",
       "imageAlt": "Astor Library Much Ado About Nothing cover",
       "search": "Much Ado About Nothing William Shakespeare Shakespeare Beatrice and Benedick spar their way towards love while a darker deception turns Claudio against Hero in public. Merry war Seeing wrongly Public damage Repair with scars Much Ado About Nothing, William Shakespeare What Messina hears and sees Text and early publication First Quarto First Folio Sources and dramatic design The slandered bride plot Shakespeare's dramatic invention A household under observation Low comedy solves high damage How the deceptions work Love produced by performance Masculine wit exposed False evidence and public shame Death, report and repair Characters Wit, anger, judgement Performance changed by loyalty Silenced centre Romantic ideal and social cruelty Malcontent without depth Comic error, factual truth Performance history RSC actor records Christopher Luscombe: Love's Labour's Won Iqbal Khan: Delhi setting Roy Alexander Weise: futuristic world Michael Longhurst: football culture Screen versions and later adaptations Kenneth Branagh film Joss Whedon film Public Theater / PBS Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -279,7 +354,8 @@
       "image": "/Frederick%20Douglass.png",
       "imageAlt": "Astor Library Narrative of the Life of Frederick Douglass cover",
       "search": "Narrative of the Life of Frederick Douglass Frederick Douglass American Classics Douglass records the violence of slavery and the deliberate systems that kept enslaved people from knowledge, family security and legal personhood. The Astor Library edition Narrative of the Life of Frederick Douglass, Frederick Douglass How the book works Written by himself Reading changes the field The Appendix draws a line A closer reading The narrative begins with what slavery withholds Reading creates pain as well as possibility The fight with Covey changes the narrative’s direction People to keep in view Questions worth carrying through the text From a stolen history to an authored life Slavery attacks memory and relation Literacy brings pain as well as power The self becomes public evidence Six decisive passages The Appendix and religious language Religious status can protect violence Sacred words are judged by action The target is made exact Sources and further reading",
-      "authorHref": "/authors/#frederick-douglass"
+      "authorHref": "/authors/#frederick-douglass",
+      "subjects": []
     },
     {
       "type": "book",
@@ -292,7 +368,13 @@
       "image": "/Othello.png",
       "imageAlt": "Astor Library Othello cover",
       "search": "Othello William Shakespeare Shakespeare Shakespeare turns a celebrated general's public honour into private catastrophe. Public honour Private pressure Seeing badly Quarto and Folio Othello, William Shakespeare At a glance Text and early publication First Quarto First Folio Why textual choice matters Source history Hecatommithi State service and frontier pressure Ottoman context Early modern terms Power, trust and interpretation Desdemona's choice Motives and improvisation Reputation and office Witness too late Characters General, husband, interpreter Choice, loyalty, vulnerability Director of false evidence Practical witness On stage Whitehall and the King's Men Margaret Hughes and Desdemona Kean, Booth, Salvini and Irving Iqbal Khan at the RSC Clint Dyer at the National Theatre Screen versions Orson Welles Laurence Olivier Oliver Parker O Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -305,7 +387,8 @@
       "image": "/Pamela.png",
       "imageAlt": "Astor Library Pamela cover",
       "search": "Pamela; or, Virtue Rewarded Samuel Richardson Restoration & Enlightenment Richardson’s 1740 novel makes private letters the ground of a struggle over sex, class and power. Pamela; or, Virtue Rewarded, Samuel Richardson At a glance Text and publication First edition Richardson: printer turned novelist Revisions and sequels Epistolary form Letters as evidence and danger Writing to parents Writing during confinement Power, class and consent Servant, daughter, writer Master and pursuer Fast circulation and unstable control Pamela in art Mr B finds Pamela writing Bedroom threat Marriage and reward Controversy, parody and marketplace Fielding’s Shamela Haywood’s The Anti-Pamela Joseph Andrews Timeline Samuel Richardson baptised Pamela first published Parody and continuation Highmore’s Pamela series Richardson dies On stage and screen Early performance culture La buona figliuola Screen and television echoes Sources and further reading",
-      "authorHref": "/authors/#samuel-richardson"
+      "authorHref": "/authors/#samuel-richardson",
+      "subjects": []
     },
     {
       "type": "book",
@@ -318,7 +401,8 @@
       "image": "/Pride%20and%20Prejudice.png",
       "imageAlt": "Astor Library Pride and Prejudice cover",
       "search": "Pride and Prejudice Jane Austen Romantic & Regency Austen's sharp comedy of judgement, marriage and money follows Elizabeth Bennet and Mr Darcy as first impressions yield to harder self-knowledge. Pride and Prejudice, Jane Austen At a glance Text and publication history Jane Austen First Impressions Cadell refusal Revision after Sense and Sensibility First publication Second edition AQA GCSE English Literature Extract and whole text What students need to show Track judgement Regency context: marriage, property and rank Entail and female insecurity Marriage as material calculation Militia, display and danger House as character evidence Form, language and narrative method Staying close to Elizabeth Private text inside public plot Speech as social test Comic distance Characters Timeline Jane Austen born Drafting First Impressions Sense and Sensibility Pride and Prejudice Later lifetime novels Austen's death The Peacock edition Editions and illustration Austen's writing house Hugh Thomson's Peacock edition From manners to romance branding Stage and screen afterlives Helen Jerome stage adaptation MGM film BBC television serial Bridget Jones's Diary Bride and Prejudice Joe Wright film Pride and Prejudice and Zombies Key passages for study Ways to study the novel Track first impressions Marriage and money Narration, dialogue and irony Sources and further reading",
-      "authorHref": "/authors/jane-austen/"
+      "authorHref": "/authors/jane-austen/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -331,7 +415,8 @@
       "image": "/Richard%20II.png",
       "imageAlt": "Astor Library Richard II cover",
       "search": "Richard II William Shakespeare Shakespeare Shakespeare turns the deposition of a king into a contest between sacred title, inherited land and effective power. Quarto pressure Kingship as performance All verse Always political Richard II, William Shakespeare The line of succession At a glance Text and print history From quarto playbook to Folio history The advertised deposition material Essex rebellion performance Historical and source context Richard II, 1367-1400 The anointed body Holinshed and the history-play method Inheritance and land Language and theatrical form Heightened speech as pressure King, cousin, subject, traitor Seeing the king made private The nation as mismanaged plot Key passages The challenge Gaunt’s England speech The hollow crown Flint Castle Deposition and mirror Pomfret prison Characters Performance and adaptation timeline Essex-related performance Charles Kean, Princess’s Theatre John Gielgud and the poetic Richard BBC television: An Age of Kings Fiona Shaw, National Theatre Trevor Nunn / Kevin Spacey RSC, Gregory Doran / David Tennant Shakespeare’s Globe / Adjoa Andoh and Lynette Linton Bridge Theatre / Jonathan Bailey Images and archives Image of kingship Richard kneeling Rule under pressure Chronicle into theatre Ways to study the play Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -344,7 +429,8 @@
       "image": "/Richard%20III.png",
       "imageAlt": "Astor Library Richard III cover",
       "search": "Richard III William Shakespeare Shakespeare Shakespeare's ruthless history play makes tyranny a performance: Richard charms the audience while scripting his path through murder, propaganda and public consent. Quarto and Folio Performance as politics Tudor history The actor's villain Richard III, William Shakespeare At a glance Text and publication First quarto Further quartos First Folio Sources and historical shaping The hostile Richard tradition Chronicle source History written after the victory The True Tragedy of Richard III Political and dramatic context Self-fashioning before action Wooing beside the coffin Dynasty as vulnerability The ally who becomes expendable Characters Actor, strategist, tyrant Curse and memory Dream, guilt and execution Resistance after loss Political broker Ending and Tudor settlement On stage Burbage and early performance memory Garrick and the Cibber stage tradition Kean, Irving and the actor-manager line Bill Alexander: Antony Sher Michael Boyd: complete history cycle Roxana Silbert: Jonjo O'Neill Gregory Doran: Arthur Hughes Adaptations Colley Cibber's adaptation Richard as a tyrant for later ages A changing performance question Screen versions Laurence Olivier Richard Loncraine and Ian McKellen The Hollow Crown Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -357,7 +443,13 @@
       "image": "/Romeo%20and%20Juliet.png",
       "imageAlt": "Astor Library Romeo and Juliet cover",
       "search": "Romeo and Juliet William Shakespeare Shakespeare Shakespeare compresses a long tale of divided lovers into four feverish days of street violence, secret marriage, banishment and fatal delay. Four days, two houses, one failed message. Romeo and Juliet, William Shakespeare Love speaks in public forms A quarto problem Always a play about bodies At a glance Text and publication First Quarto: An Excellent conceited Tragedie Second Quarto: corrected, augmented, amended Later quartos First Folio Sources and story history Pyramus and Thisbe Da Porto, Bandello and Boaistuau Arthur Brooke: Romeus and Juliet William Painter: Palace of Pleasure Language and structure Sonnet as plot machinery The shared sonnet Comedy and danger Time, speech and decision Productions in pictures First meeting under painted arches Peter Brook’s post-war Romeo and Juliet The tomb as final stage picture Michael Bogdanov’s modern Verona Balcony, obstacle and touch Friar Laurence and the failed adult plan Music, dance and adaptation Screen versions George Cukor Renato Castellani Franco Zeffirelli Baz Luhrmann: Romeo + Juliet Continuing screen life Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -370,7 +462,8 @@
       "image": "/0002_1_use-the-don-juan-cover-as-an-exact-colou_sMgaBHLlUme1jzOdjH5LaA_aUz8n_6YSzut1qW8z3QwNg_cover.png",
       "imageAlt": "Astor Library Sense and Sensibility cover",
       "search": "Sense and Sensibility Jane Austen Romantic & Regency Austen’s first published novel sets Elinor’s restraint against Marianne’s candour while inheritance, money and reputation govern the choices open to both sisters. Inheritance before romance Sense and sensibility Silence, letters, reports Austen before costume romance Sense and Sensibility, Jane Austen At a glance Text and publication history First edition: By A Lady Jane Austen before public authorship From Elinor and Marianne to revised novel Second edition and Austen’s next title Regency context: inheritance, income and marriage Property passes away from the women Reduced gentility Attachment and settlement Women carry the public cost What the title does not settle Self-command has a cost Sincerity can misread performance The education runs both ways Austen’s world in pictures The writing house Family property and literary context Richard Bentley and illustrated Austen Characters Language and narrative method On stage and screen BBC serial forms Ang Lee and Emma Thompson Kandukondain Kandukondain BBC, radio, stage and Hallmark Sources and further reading",
-      "authorHref": "/authors/jane-austen/"
+      "authorHref": "/authors/jane-austen/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -383,7 +476,17 @@
       "image": "/Jekyll%20and%20Hyde.png",
       "imageAlt": "Astor Library Strange Case of Dr Jekyll and Mr Hyde cover",
       "search": "Strange Case of Dr Jekyll and Mr Hyde Robert Louis Stevenson Victorian A respectable doctor and a violent stranger appear to share a secret no one can explain. Documents before spectacle London as a divided map The role becomes visible Strange Case of Dr Jekyll and Mr Hyde, Robert Louis Stevenson The case begins Text and publication First London edition Case, not confession Stevenson and the story’s origins Stevenson before and after Jekyll Deacon Brodie and the public double life Dream, draft and revision Victorian London, science and identity Front doors, back doors and hidden rooms Law, medicine and silence Experiment and moral responsibility Before modern diagnostic shorthand Stage adaptations Thomas Russell Sullivan and Richard Mansfield Daniel E. Bandmann and rival versions Wildhorn, Bricusse and Cuden musical Screen versions Early screen versions John Barrymore and the silent feature Rouben Mamoulian and Fredric March Victor Fleming, Spencer Tracy, Ingrid Bergman and Lana Turner Sources and further reading",
-      "authorHref": "/authors/#robert-louis-stevenson"
+      "authorHref": "/authors/#robert-louis-stevenson",
+      "subjects": [
+        {
+          "title": "Gothic literature",
+          "href": "/subjects/gothic-literature/"
+        },
+        {
+          "title": "Detective fiction",
+          "href": "/subjects/detective-fiction/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -396,7 +499,8 @@
       "image": "/Tess%20of%20the%20D%27urbervilles.png",
       "imageAlt": "Astor Library Tess of the d'Urbervilles cover",
       "search": "Tess of the d’Urbervilles Thomas Hardy Victorian Hardy follows Tess through rural labour, sexual violence and social judgement, exposing the unequal standards that make her suffer for harms done to her. A name starts the damage Purity against society Fields, dairy, machine Older law, modern police Tess of the d’Urbervilles, Thomas Hardy At a glance Publication and revision history The Graphic serial and first book edition One-volume edition The Chase and omission Moral controversy The seven phases The Maiden Maiden No More The Rally The Consequence The Woman Pays The Convert Fulfilment Wessex and labour Poverty before plot Pastoral interval Labour and machinery Resort and ritual Hardy’s Wessex in pictures Characters Language and structure On stage and screen Minnie Maddern Fiske stage success Lost silent films Roman Polanski, Tess London Weekend Television BBC One serial Stage memory Sources and further reading",
-      "authorHref": "/authors/#thomas-hardy"
+      "authorHref": "/authors/#thomas-hardy",
+      "subjects": []
     },
     {
       "type": "book",
@@ -409,7 +513,13 @@
       "image": "/Adventures%20of%20Sherlock%20Holmes.png",
       "imageAlt": "Astor Library The Adventures of Sherlock Holmes cover",
       "search": "The Adventures of Sherlock Holmes Arthur Conan Doyle Victorian Across twelve cases, Holmes and Watson move through a London of lodgings, clubs, banks, railway timetables, newspaper advertisements and locked rooms. The Astor Library edition The Adventures of Sherlock Holmes, Arthur Conan Doyle How the book works A case in one sitting Observation is not magic Private trouble at Baker Street A closer reading The stories are built from limited knowledge A modern city supplies both clue and cover The law and the just ending are not always the same Reading the collection as a collection Irene Adler alters the terms Baker Street creates continuity The final case refuses tidiness People to keep in view Questions worth carrying through the text How a Holmes story handles evidence A problem arrives already shaped The witness is not a camera Justice and law can separate Six cases, six kinds of problem Sources and further reading",
-      "authorHref": "/authors/arthur-conan-doyle/"
+      "authorHref": "/authors/arthur-conan-doyle/",
+      "subjects": [
+        {
+          "title": "Detective fiction",
+          "href": "/subjects/detective-fiction/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -422,7 +532,13 @@
       "image": "/The%20Aeneid.png",
       "imageAlt": "Astor Library The Aeneid cover",
       "search": "The Aeneid Virgil Ancient & Epic Virgil’s epic follows Aeneas from ruined Troy towards Italy, balancing Rome’s promised future against the human cost of exile, duty and war. Arms and a man Pietas under pressure Future glory, present loss Dryden’s English Virgil The Aeneid, Virgil At a glance Virgil, Augustus and Roman memory Virgil Empire after civil war Aeneas, Ascanius and the Julian line Book-by-book structure Storm and Carthage The fall of Troy Wandering Dido Games and mourning The underworld Italy and alliance War expands Camilla and Turnus The epic’s divided loyalties Knowing the destination does not simplify the road Duty pulls in several directions Troy is carried and rebuilt Six scenes that change the poem Reading Dryden’s translation Sense arrives through balance Translation joins two Augustan ages Compare a passage, not isolated words Sources and further reading",
-      "authorHref": "/authors/#virgil"
+      "authorHref": "/authors/#virgil",
+      "subjects": [
+        {
+          "title": "Epic poetry",
+          "href": "/subjects/epic-poetry/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -435,7 +551,8 @@
       "image": "/Call%20of%20the%20Wild.png",
       "imageAlt": "Astor Library The Call of the Wild cover",
       "search": "The Call of the Wild Jack London American Classics Stolen from domestic comfort and sold into Klondike labour, Buck learns the brutal laws of the trail and feels an older life drawing him into the wild. Work before romance Club and fang Animal story Buck on screen The Call of the Wild, Jack London Buck’s world Text and publication history Macmillan first edition The Saturday Evening Post From “Diablo” / “Batard” to Buck London, Klondike and source history Jack London Chilkoot Pass and the stampede Dyea, Skagway, Yukon Demand for strength Structure and chapters Kidnapping and the club Trail discipline Spitz and leadership Lead dog Bad ownership Thornton Beyond the camp Characters Body, memory, instinct Rival authority Competent handlers Unfit ownership The last human bond Naturalism and interpretation Screen adaptations Silent feature Clark Gable and Loretta Young Charlton Heston Television afterlives Harrison Ford and digital Buck Ways into the novel Who controls Buck? Law, call, fang, trail Gold rush logistics Page and screen Sources and further reading",
-      "authorHref": "/authors/#jack-london"
+      "authorHref": "/authors/#jack-london",
+      "subjects": []
     },
     {
       "type": "book",
@@ -448,7 +565,8 @@
       "image": "/Comedy%20of%20Errors.png",
       "imageAlt": "Astor Library The Comedy of Errors cover",
       "search": "The Comedy of Errors William Shakespeare Shakespeare Two sets of identical twins turn a single day in Ephesus into a whirl of missed meals, misplaced money, wrongful arrest and marital confusion. The Comedy of Errors, William Shakespeare The comic machine Gray’s Inn and the “Night of Errors” No quarto; First Folio only Plautus, doubled Classical unities, English pressure Text, sources and earliest performance First Folio printing Menaechmi and Amphitruo Gray’s Inn performance record Historical context Trade, law and suspicion Farce inside a recovery plot Adriana and the wrong husband Names, bodies and proof Visual history Folio image: a short play in a large book Doubling as visible design RSC musical: farce with movement Performance timeline Gray’s Inn revels Court performance See If You Like It The Twins Samuel Phelps at Sadler’s Wells Broadway musical The Boys from Syracuse Clifford Williams for the RSC Trevor Nunn’s RSC musical ITV television version of the RSC musical BBC Television Shakespeare Shakespeare’s Globe National Theatre / broadcast life RSC: Phillip Breen Stage adaptations From Roman twin farce to English romance comedy The Boys from Syracuse RSC musical adaptation Screen versions ITV / RSC musical Angoor and other free adaptations Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -461,7 +579,8 @@
       "image": "/Cricket%20on%20the%20Hearth.png",
       "imageAlt": "Astor Library The Cricket on the Hearth cover",
       "search": "The Cricket on the Hearth Charles Dickens Victorian A cricket’s song seems to bless the Peerybingles’ home until a disguised stranger and a false appearance bring jealousy into the room. The Astor Library edition The Cricket on the Hearth, Charles Dickens How the book works The cricket speaks without words Evidence and misreading Toys made under pressure A closer reading Comfort is made from ordinary sound and labour Seeing is not the same as knowing The happy ending has work to do People to keep in view Questions worth carrying through the text The three Chirps Home, work and the stories people tell Love protects and confines Toys without imagination Trust must survive uncertainty Sources and further reading",
-      "authorHref": "/authors/charles-dickens/"
+      "authorHref": "/authors/charles-dickens/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -474,7 +593,13 @@
       "image": "/The%20Man%20Who%20Was%20Thursday.png",
       "imageAlt": "Astor Library The Man Who Was Thursday cover",
       "search": "The Man Who Was Thursday G. K. Chesterton Modern Classics Chesterton’s 1908 nightmare begins as an anarchist thriller and opens into a comic, theological mystery of masks, pursuit and uncertain authority. The Man Who Was Thursday, G. K. Chesterton At a glance The subtitle matters: A Nightmare Detective plot, anti-anarchist fantasy, metaphysical comedy Edmund Clerihew Bentley Text and publication First publication by J. W. Arrowsmith Chesterton’s early fiction sequence Open-access texts Historical context G. K. Chesterton An invented artistic suburb Politics turned into nightmare Narrative structure Poets, law and revolt The council of days Sunday and the unanswered question Characters Poet, policeman, Thursday The anarchist poet The president who will not settle Language and style Argument by reversal Sunsets, masks and theatrical light Why the labels keep failing On radio and screen The Mercury Theatre on the Air Further BBC versions A reported musical proposal Balázs Juszt film Ways to study the novel Law as imaginative form The nightmare of misreading Why Sunday is difficult Sources and further reading",
-      "authorHref": "/authors/#g-k-chesterton"
+      "authorHref": "/authors/#g-k-chesterton",
+      "subjects": [
+        {
+          "title": "Satire and political writing",
+          "href": "/subjects/satire-political-writing/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -487,7 +612,8 @@
       "image": "/Merry%20Wives%20of%20Windsor.png",
       "imageAlt": "Astor Library The Merry Wives of Windsor cover",
       "search": "The Merry Wives of Windsor William Shakespeare Shakespeare Falstaff sends the same love letter to two married women and discovers that the wives of Windsor are far better plotters than he is. One scheme, two wives Windsor judges Falstaff Ford performs suspicion Herne’s final trick The Merry Wives of Windsor, William Shakespeare Windsor turns the tables Text and publication history First quarto Second quarto and False Folio First Folio text Memory, performance and print Windsor and local England Houses as comic machinery Collaboration and control Marriage choice Local accents and social friction The three punishments of Falstaff The buck-basket The fat woman of Brentford Herne’s Oak Visual history Falstaff outside history A named English town Folklore as social theatre Characters in the drama Language and interpretation Stage, music and screen Whitehall performance Otto Nicolai, Die lustigen Weiber von Windsor Gaiety Theatre and Arthur Sullivan BBC Television Shakespeare Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -500,7 +626,13 @@
       "image": "/The%20Odyssey.png",
       "imageAlt": "Astor Library The Odyssey cover",
       "search": "The Odyssey Homer, translated by Samuel Butler Ancient & Epic Ten years after Troy, Odysseus is still absent from Ithaca. The Astor Library edition The Odyssey, Homer, translated by Samuel Butler How the book works The voyage is told twice Every house is a test Knowing and being known A closer reading The poem begins with the person left behind Odysseus survives by controlling a version of events Recognition leads to restoration—and violence People to keep in view Questions worth carrying through the text How the poem tells the journey The hero is absent Odysseus becomes his own singer Return depends on withheld identity Six tests of belonging Sources and further reading",
-      "authorHref": "/authors/#homer-translated-by-samuel-butler"
+      "authorHref": "/authors/#homer-translated-by-samuel-butler",
+      "subjects": [
+        {
+          "title": "Epic poetry",
+          "href": "/subjects/epic-poetry/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -513,7 +645,13 @@
       "image": "/Picture%20of%20Dorian%20Gray.png",
       "imageAlt": "Astor Library The Picture of Dorian Gray cover",
       "search": "The Picture of Dorian Gray Oscar Wilde Victorian A beautiful young man remains outwardly untouched while his hidden portrait bears the marks of cruelty, fear and corruption. The Picture of Dorian Gray, Oscar Wilde The novel’s double life Text and publication history The Lippincott commission First publication in Lippincott's Art and commerce on the same page Ward, Lock book edition The uncensored textual record Wilde, aestheticism and the 1890s Oscar Wilde Beauty as an argument The cultivated artificial life Reading under suspicion Text, image and doubling The hidden record Epigram as influence Artistic worship Theatre and reality Key dates Oscar Wilde born Oxford years American lecture tour The Happy Prince and Other Tales Commission and composition Magazine publication and hostile reviews Expanded book publication Trials and imprisonment Death in Paris Reception history Morality and accusation Art, criticism and defence The novel as courtroom material Stage adaptations Silent-era adaptation Opera: Lowell Liebermann Sydney Theatre Company: Kip Williams Sarah Snook: West End and Broadway Screen versions American silent film: Thanhouser Russian silent film Albert Lewin, MGM Massimo Dallamano: modernised Dorian Oliver Parker: Dorian Gray Key passages for study Sources and further reading",
-      "authorHref": "/authors/#oscar-wilde"
+      "authorHref": "/authors/#oscar-wilde",
+      "subjects": [
+        {
+          "title": "Gothic literature",
+          "href": "/subjects/gothic-literature/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -526,7 +664,13 @@
       "image": "/The%20Prince.png",
       "imageAlt": "Astor Library The Prince cover",
       "search": "The Prince Niccolò Machiavelli Renaissance & Early Modern Written after the fall of the Florentine republic, Machiavelli's brief treatise examines how rulers acquire, hold and lose power amid war, fortune and necessity. Politics after office Effect before ideal Force and law A scandalous clarity The Prince, Niccolò Machiavelli At a glance Text and publication history First print and later editions Composition after political defeat A book known before print Medici permission and papal privilege Machiavelli and Florence Niccolò Machiavelli Republic, Medici and civic office Death and later commemoration Italian political background French intervention Medici return Church power as Italian power Condottieri and insecurity Examples and political figures Duke Valentino as case study Cruelty, crime and rule Founders and armed prophets Political terms and arguments Capacity, force and political intelligence Chance, timing and instability Chapter 17 Being and seeming The state as force and order Action under constraint Timeline Machiavelli born Second Chancery Encounter with Borgia politics Medici return, dismissal, prison The Prince composed Death First publication Index of Prohibited Books Reception Anti-Machiavel tradition Discourses beside The Prince Realism and the state Sources and further reading",
-      "authorHref": "/authors/#niccolo-machiavelli"
+      "authorHref": "/authors/#niccolo-machiavelli",
+      "subjects": [
+        {
+          "title": "Satire and political writing",
+          "href": "/subjects/satire-political-writing/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -539,7 +683,8 @@
       "image": "/Red%20Badge%20of%20Courage.png",
       "imageAlt": "Astor Library The Red Badge of Courage cover",
       "search": "The Red Badge of Courage Stephen Crane American Classics Crane places the reader inside a young soldier's fear, shame and self-deception, stripping battlefield courage of patriotic certainty. Battle starts inside The wound as badge Colour and sensation No heroic overview The Red Badge of Courage, Stephen Crane At a glance Publication and reception Stephen Crane From syndication to Appleton Shorter and longer Red Badge Civil War context Chancellorsville as likely model The private soldier's scale Waiting, marching, not knowing The story's movement Waiting for proof First fighting and flight The wounded column Return and performance Flag, courage, self-story Characters Language and method Key passages Will he run? Collective courage Self-justification The body against rhetoric Nature and indifference Courage or compensation? Adaptations and afterlives John Huston film Television film American war reading Ways to study the novel Sources and further reading",
-      "authorHref": "/authors/#stephen-crane"
+      "authorHref": "/authors/#stephen-crane",
+      "subjects": []
     },
     {
       "type": "book",
@@ -552,7 +697,13 @@
       "image": "/The%20SIgn%20Of%20Four.png",
       "imageAlt": "Astor Library The Sign of Four cover",
       "search": "The Sign of the Four Arthur Conan Doyle Victorian Doyle’s second Holmes novel joins a London detective case to the violence and plunder of empire, carrying Holmes and Watson from Baker Street to a pursuit along the Thames. One novel, two titles Client to confession Empire enters the room Portable Holmes The Astor Library edition The Sign of the Four, Arthur Conan Doyle At a glance Text and publication history Lippincott’s Monthly Magazine Book form and visual marketing Doyle before Holmes became a brand Illustrated afterlives in print Empire and the Agra treasure Treasure, fort and imperial memory Indian uprising and British military rule Tonga and the problem of colonial description Sensation, treasure and detective fiction Holmes, Watson and detection Cocaine, boredom and analysis Client, witness and marriage plot Police procedure and wrong certainty Tracking as teamwork Timeline A Study in Scarlet Langham Hotel dinner First magazine publication First book publication The Strand stories begin New illustrated editions On stage, radio and screen Early silent cinema Maurice Elvey and Stoll Pictures Arthur Wontner sound film BBC television The Crucifer of Blood Two television versions Granada Holmes From WGY to BBC Radio 4 Ways to study the novel Sources and further reading",
-      "authorHref": "/authors/arthur-conan-doyle/"
+      "authorHref": "/authors/arthur-conan-doyle/",
+      "subjects": [
+        {
+          "title": "Detective fiction",
+          "href": "/subjects/detective-fiction/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -565,7 +716,8 @@
       "image": "/Taming%20of%20the%20Shrew.png",
       "imageAlt": "Astor Library The Taming of the Shrew cover",
       "search": "The Taming of the Shrew William Shakespeare Shakespeare Shakespeare’s early comedy sets courtship and marriage against coercion, performance and resistance: a theatrical argument that remains funny, difficult and fiercely contested. The Taming of the Shrew, William Shakespeare At a glance First Folio text, later quarto A similar play, different text Italian comedy and English translation The unfinished Christopher Sly frame Text, sources and first printing First Folio: the first secure printed text Gascoigne’s Supposes A Shrew in quarto Marriage, household and law Dowry, household rule and public contract Names, roles and performance The final speech cannot be ignored The play in pictures Edward Robert Hughes: Katherina isolated Charles Robert Leslie: domestic theatre Pickford and Fairbanks on film Performance timeline Fletcher answers Shakespeare: The Woman’s Prize John Lacy: Sauny the Scot David Garrick: Catharine and Petruchio Return of Shakespeare’s fuller text in Britain Sam Taylor film: Mary Pickford and Douglas Fairbanks Kiss Me, Kate Zeffirelli film: Elizabeth Taylor and Richard Burton Michael Bogdanov at the RSC BBC Television Shakespeare 10 Things I Hate About You RSC pairing with Fletcher Shakespeare’s Globe: Toby Frow RSC gender-flipped production Adaptations The Woman’s Prize, or The Tamer Tamed Adaptation as normal practice Screen versions The Taming of the Shrew Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -578,7 +730,8 @@
       "image": "/The%20Tempest.png",
       "imageAlt": "Astor Library The Tempest cover",
       "search": "The Tempest William Shakespeare Shakespeare Shipwreck, music and magic give Prospero control of an island stage—until freedom, memory and forgiveness test the limits of his authority. Folio first Rule tested Music and report Prospero changes The Tempest, William Shakespeare At a glance Text and First Folio history First printed witness Date and early performance Comedy, romance, late play Source history and island context Sea Venture and Bermuda Reports behind the storm Montaigne and Gonzalo Court culture and spectacle Language, power and theatrical form Rule as theatre Service and promised liberty Island claim and imposed language Wonder and confinement Key passages The storm Prospero’s history lesson Caliban’s claim Gonzalo’s commonwealth The masque and its break Renunciation and release Characters Performance and adaptation timeline Whitehall Palace Dryden and Davenant adaptation Peter Brook and John Gielgud Jonathan Miller and colonial reading Prospero and Miranda Peter Greenaway, Prospero’s Books Julie Taymor film RSC, Gregory Doran Jamie Lloyd, Theatre Royal Drury Lane Ways to study the play Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -591,7 +744,8 @@
       "image": "/War%20of%20the%20Worlds.png",
       "imageAlt": "Astor Library The War of the Worlds cover",
       "search": "The War of the Worlds H. G. Wells Victorian Wells brings an overwhelmingly advanced invader to Surrey and London, reversing the logic of empire and exposing how quickly Victorian confidence can collapse. The War of the Worlds, H. G. Wells At a glance Text and publication history H. G. Wells Pearson's Magazine First book edition Woking and Horsell Common The first cylinder Panic, roads and mass movement Scientific romance and Victorian science Adaptations Orson Welles radio broadcast George Pal film Jeff Wayne musical version Steven Spielberg film BBC television version The invasion is recorded, not conquered A trained observer can still misread Catastrophe overwhelms explanation A grand plan replaces difficult work Six stages of collapse After the ending The universe has become less secure Return repeats the shape of grief The reversal cannot be forgotten Sources and further reading",
-      "authorHref": "/authors/#h-g-wells"
+      "authorHref": "/authors/#h-g-wells",
+      "subjects": []
     },
     {
       "type": "book",
@@ -604,7 +758,13 @@
       "image": "/Titus%20Andronicus.png",
       "imageAlt": "Astor Library Titus Andronicus cover",
       "search": "Titus Andronicus William Shakespeare Shakespeare Shakespeare’s early revenge tragedy drives Roman ceremony into a cycle of sacrifice, mutilation and retaliation, asking what remains when law becomes theatre. Revenge begins as ritual Rome mischooses power The body as evidence Justice becomes theatre Titus Andronicus, William Shakespeare At a glance Text and publication history First quarto Later quartos First Folio Collaboration and style Source and revenge tradition Philomela and Lavinia Revenge form Ritual and state power Aaron and visibility Images and editions Characters Violence as structure Alarbus Bassianus and false proof Titus’s bargain Lavinia reads Ovid Messages to the gods The revenge feast On stage and screen Edward Ravenscroft adaptation Peter Brook, RSC / Stratford Deborah Warner, RSC Julie Taymor, Titus Lucy Bailey, Shakespeare’s Globe Max Webster, RSC Sources and further reading",
-      "authorHref": "/shakespeare/"
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -617,7 +777,8 @@
       "image": "/Uncle%20Tom%27s%20Cabin.png",
       "imageAlt": "Astor Library edition of Uncle Tom's Cabin",
       "search": "Uncle Tom’s Cabin Harriet Beecher Stowe American Classics Mr Shelby’s decision to sell Tom and the young Harry sets two families on separate journeys. The Astor Library edition Uncle Tom’s Cabin, Harriet Beecher Stowe How the book works North and south Faith put on trial A book with many afterlives A closer reading Escape and sale move in opposite directions Feeling is used as public argument The novel and the ‘Tom shows’ are not identical People to keep in view Questions worth carrying through the text How the novel makes its argument A private debt becomes a family catastrophe Flight does not end danger Sentiment is meant to become action Six passages that hold the structure together The book and the stereotype are not the same Adaptation hardened familiar images Endurance includes refusal Influence does not remove criticism Sources and further reading",
-      "authorHref": "/authors/#harriet-beecher-stowe"
+      "authorHref": "/authors/#harriet-beecher-stowe",
+      "subjects": []
     },
     {
       "type": "book",
@@ -630,7 +791,13 @@
       "image": "/Utopia.png",
       "imageAlt": "Astor Library Utopia cover",
       "search": "Utopia Thomas More Renaissance & Early Modern More’s 1516 dialogue sends a traveller to an imagined commonwealth, testing European assumptions about property, punishment, labour, religion and government. Utopia, Thomas More At a glance A dialogue with no final answer No-place and good-place Property, counsel and punishment Text, sources and early print history Louvain first edition Early editions and added material Robinson, Burnet and English Utopia Historical context More’s career under Henry VIII Plato, Cicero, Lucian and travel writing Enclosure, labour and punishment Timeline Low Countries mission and Antwerp frame Latin publication at Louvain Basel edition and humanist apparatus First English translation Burnet’s translation Afterlives and adaptations Sir Thomas More on stage A Man for All Seasons R. A. Lafferty’s Past Master Five-hundred-year anniversary culture More on screen Sources and further reading",
-      "authorHref": "/authors/#thomas-more"
+      "authorHref": "/authors/#thomas-more",
+      "subjects": [
+        {
+          "title": "Satire and political writing",
+          "href": "/subjects/satire-political-writing/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -643,7 +810,13 @@
       "image": "/Wuthering%20Heights.png",
       "imageAlt": "Astor Library Wuthering Heights cover",
       "search": "Wuthering Heights Emily Brontë Victorian Brontë’s only novel binds two generations to the violence of love, property and revenge, told through nested witnesses whose accounts never fully settle the truth. Two estates Passion at a distance Revenge by property Romance distorted Wuthering Heights, Emily Brontë At a glance Publication and textual history First edition: Thomas Cautley Newby Charlotte Brontë’s edition Early shock Emily Brontë and Haworth Emily Brontë The parsonage Top Withens and the problem of models A Yorkshire setting Narrative design The outsider who begins wrongly Memory, witness and involvement Repetition and repair Books, inscriptions and letters Context and themes Key passages The window Catherine’s confession Heathcliff returns Isabella’s letter The late Heathcliff The graves Characters Adaptation timeline A. V. Bramble silent film William Wyler: Oberon and Olivier BBC television and Nigel Kneale Robert Fuest film BBC serial Peter Kosminsky film ITV two-part adaptation Andrea Arnold film Emma Rice / National Theatre Opera, ballet and musical versions Ways to study the novel Sources and further reading",
-      "authorHref": "/authors/#emily-bronte"
+      "authorHref": "/authors/#emily-bronte",
+      "subjects": [
+        {
+          "title": "Gothic literature",
+          "href": "/subjects/gothic-literature/"
+        }
+      ]
     }
   ],
   "authors": [
@@ -1314,6 +1487,120 @@
         }
       ],
       "search": "William Shakespeare A Midsummer Night's Dream All's Well That Ends Well Antony and Cleopatra As You Like It Coriolanus Hamlet Henry IV, Part 1 Henry VI, Part 2 Henry VI, Part 3 King Lear Macbeth Much Ado About Nothing Othello Richard II Richard III Romeo and Juliet The Comedy of Errors The Merry Wives of Windsor The Taming of the Shrew The Tempest Titus Andronicus Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare"
+    }
+  ],
+  "subjects": [
+    {
+      "type": "subject",
+      "typeLabel": "Subject guide",
+      "title": "Gothic literature",
+      "description": "Read Gothic literature through Frankenstein, Wuthering Heights, Jekyll and Hyde, The Picture of Dorian Gray and Dracula, with a clear guide to the form, its history and its changing modern fears.",
+      "href": "/subjects/gothic-literature/",
+      "image": "/Frankenstein.png",
+      "imageAlt": "Gothic literature books in Astor Library",
+      "bookCount": 5,
+      "relatedBooks": [
+        "/books/frankenstein/",
+        "/books/wuthering-heights/",
+        "/books/jekyll-and-hyde/",
+        "/books/dorian-gray/",
+        "/books/dracula/"
+      ],
+      "relatedResources": [
+        "/resources/frankenstein/study-guide/",
+        "/resources/jekyll-and-hyde/analysing-quotations/",
+        "/resources/dracula/complete-overview/",
+        "/resources/dracula/gender-roles/"
+      ],
+      "search": "Gothic literature Fear, knowledge and the hidden life Read Gothic literature through Frankenstein, Wuthering Heights, Jekyll and Hyde, The Picture of Dorian Gray and Dracula, with a clear guide to the form, its history and its changing modern fears. Gothic literature Gothic novel horror supernatural uncanny double monstrosity science modernity secrecy transgression vampire ghost castle The uncanny Something feels frightening because it is both strange and disturbingly familiar. The double A second figure carries desires, guilt or violence that another self refuses to own. Frame narrative One account encloses another, making the route by which a story reaches us part of its meaning. The sublime Vastness, danger or power produces awe that exceeds comfortable control."
+    },
+    {
+      "type": "subject",
+      "typeLabel": "Subject guide",
+      "title": "Tragedy",
+      "description": "Explore tragedy through Shakespeare’s Hamlet, Macbeth, Othello, King Lear, Romeo and Juliet, Antony and Cleopatra, Coriolanus and Titus Andronicus.",
+      "href": "/subjects/tragedy/",
+      "image": "/Romeo%20and%20Juliet.png",
+      "imageAlt": "Tragedy books in Astor Library",
+      "bookCount": 8,
+      "relatedBooks": [
+        "/books/romeo-and-juliet/",
+        "/books/hamlet/",
+        "/books/othello/",
+        "/books/king-lear/",
+        "/books/macbeth/",
+        "/books/antony-and-cleopatra/",
+        "/books/coriolanus/",
+        "/books/titus-andronicus/"
+      ],
+      "relatedResources": [
+        "/resources/shakespeare/tragedies-overview/",
+        "/resources/hamlet/sources-texts-contexts/",
+        "/resources/macbeth/summary-analysis/",
+        "/resources/king-lear/summary-guide/"
+      ],
+      "search": "Tragedy Choice, consequence and the watching audience Explore tragedy through Shakespeare’s Hamlet, Macbeth, Othello, King Lear, Romeo and Juliet, Antony and Cleopatra, Coriolanus and Titus Andronicus. tragedy Shakespeare tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family Reversal An action or discovery turns the direction of a life, plot or public position. Recognition A character comes to understand an identity, relationship or truth that changes the action. Dramatic irony The audience understands more than one or more characters inside the scene. Catastrophe The final movement in which accumulated choices and conflicts become irreversible."
+    },
+    {
+      "type": "subject",
+      "typeLabel": "Subject guide",
+      "title": "Detective fiction",
+      "description": "Explore detective fiction through Arthur Conan Doyle’s Sherlock Holmes, then follow the investigative method into Dracula and Jekyll and Hyde without confusing those Gothic works for detective novels.",
+      "href": "/subjects/detective-fiction/",
+      "image": "/The%20SIgn%20Of%20Four.png",
+      "imageAlt": "Detective fiction books in Astor Library",
+      "bookCount": 4,
+      "relatedBooks": [
+        "/books/sign-of-four/",
+        "/books/adventures-of-sherlock-holmes/",
+        "/books/jekyll-and-hyde/",
+        "/books/dracula/"
+      ],
+      "relatedResources": [
+        "/resources/dracula/complete-overview/",
+        "/resources/jekyll-and-hyde/analysing-quotations/"
+      ],
+      "search": "Detective fiction Clues, records and the authority to explain Explore detective fiction through Arthur Conan Doyle’s Sherlock Holmes, then follow the investigative method into Dracula and Jekyll and Hyde without confusing those Gothic works for detective novels. detective fiction crime mystery Sherlock Holmes Watson clue deduction evidence investigation case record police Victorian London locked room Clue A material or verbal detail whose significance exceeds its first appearance. Red herring A detail or line of suspicion that directs attention away from the eventual explanation. Fair play The principle that a reader should receive the evidence needed to understand the solution. Case narrative The shaped account through which an investigation is preserved and presented."
+    },
+    {
+      "type": "subject",
+      "typeLabel": "Subject guide",
+      "title": "Epic poetry",
+      "description": "Read epic through Homer’s Odyssey and Virgil’s Aeneid, then follow epic scale and allusion into Moby-Dick, with attention to oral form, translation, homecoming and empire.",
+      "href": "/subjects/epic-poetry/",
+      "image": "/The%20Odyssey.png",
+      "imageAlt": "Epic poetry books in Astor Library",
+      "bookCount": 3,
+      "relatedBooks": [
+        "/books/the-odyssey/",
+        "/books/the-aeneid/",
+        "/books/moby-dick/"
+      ],
+      "relatedResources": [
+        "/resources/moby-dick/study-guide/"
+      ],
+      "search": "Epic poetry Journeys, foundations and inherited song Read epic through Homer’s Odyssey and Virgil’s Aeneid, then follow epic scale and allusion into Moby-Dick, with attention to oral form, translation, homecoming and empire. epic poetry Homer Odyssey Virgil Aeneid oral tradition hero invocation muse in medias res simile homecoming nostos empire translation journey Invocation An opening appeal to the Muse that presents the poem as inspired song and asks for its subject. In medias res Beginning in the middle of the action, with earlier events supplied later. Epic simile An extended comparison that pauses action and opens another field of life or experience. Nostos Homecoming: both a journey and the recovery of place, identity and relationship."
+    },
+    {
+      "type": "subject",
+      "typeLabel": "Subject guide",
+      "title": "Satire and political writing",
+      "description": "Explore satire, allegory and political writing through Utopia, The Prince, Gulliver’s Travels, The Man Who Was Thursday and Animal Farm.",
+      "href": "/subjects/satire-political-writing/",
+      "image": "/The%20Prince.png",
+      "imageAlt": "Satire and political writing books in Astor Library",
+      "bookCount": 5,
+      "relatedBooks": [
+        "/books/the-prince/",
+        "/books/utopia/",
+        "/books/gullivers-travels/",
+        "/books/the-man-who-was-thursday/",
+        "/books/animal-farm/"
+      ],
+      "relatedResources": [
+        "/resources/shakespeare/tragedies-overview/"
+      ],
+      "search": "Satire and political writing Imagined worlds, ridicule and the language of power Explore satire, allegory and political writing through Utopia, The Prince, Gulliver’s Travels, The Man Who Was Thursday and Animal Farm. satire political writing allegory fable utopia dystopia irony parody Swift Orwell More Machiavelli Chesterton revolution power language propaganda Satire Writing that exposes vice, folly or abuse through irony, ridicule, distortion or imitation. Allegory A narrative whose figures and actions sustain a further field of political, moral or historical meaning. Utopia An imagined society used to test how actual societies organise property, work, law and belief. Fable A compressed tale, often using animals, that makes conduct and power visible through a simplified world."
     }
   ],
   "resources": [

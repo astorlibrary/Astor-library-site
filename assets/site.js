@@ -304,6 +304,8 @@
         .sort((a, b) => Number(a.paired) - Number(b.paired))
         .slice(0, 3);
       const tools = resources.concat(editions);
+      const subjects = (data.subjects || [])
+        .filter(item => item.relatedBooks && item.relatedBooks.some(href => normalisePath(href) === currentPath));
 
       const authorBooks = data.books.filter(item => item.author === book.author && item.href !== book.href);
       const collectionBooks = data.books.filter(item => item.collection === book.collection);
@@ -316,7 +318,7 @@
         }
       }
 
-      if (!tools.length && !relatedBooks.length) return;
+      if (!tools.length && !relatedBooks.length && !subjects.length) return;
 
       const heading = tools.length ? 'More on ' + book.title : 'Keep reading';
       const intro = tools.length
@@ -326,6 +328,9 @@
           : 'Three more books from the ' + book.collection + ' collection.';
       const toolsHtml = tools.length
         ? '<div class="related-tools">' + tools.map(toolCard).join('') + '</div>'
+        : '';
+      const subjectsHtml = subjects.length
+        ? '<nav class="related-subjects" aria-label="Read this book by subject"><span>Read by subject</span>' + subjects.map(subject => '<a href="' + escapeHtml(subject.href) + '">' + escapeHtml(subject.title) + '</a>').join('') + '</nav>'
         : '';
       const booksHtml = relatedBooks.length
         ? '<div class="related-books-head"><p>' + (authorBooks.length ? 'More by ' + escapeHtml(book.author) : 'From ' + escapeHtml(book.collection)) + '</p><a href="' + escapeHtml(authorBooks.length && book.authorHref ? book.authorHref : (collection ? collection.href : '/library/')) + '">' + (authorBooks.length && book.authorHref ? 'Read the writer page' : 'Browse the full collection') + '</a></div>' +
@@ -338,8 +343,8 @@
       panel.innerHTML = '<div class="related-reading-head"><div><p class="kicker">A little further</p>' +
         '<h2 id="related-reading-title">' + escapeHtml(heading) + '</h2></div>' +
         '<p>' + escapeHtml(intro) + '</p></div>' +
-        toolsHtml + booksHtml +
-        '<a class="related-explore-link" href="/explore/">Search all books, guides and editions <span aria-hidden="true">&rarr;</span></a>';
+        subjectsHtml + toolsHtml + booksHtml +
+        '<a class="related-explore-link" href="/explore/">Search all books, subjects, guides and editions <span aria-hidden="true">&rarr;</span></a>';
 
       if (contents) {
         contents.after(panel);

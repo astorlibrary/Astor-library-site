@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const subjectData = require('./subject-data');
 
 const root = process.cwd();
 
@@ -151,6 +152,7 @@ function siteHeader() {
     '<nav class="nav" aria-label="Primary navigation">' +
     '<a class="nav-link" href="/">Home</a>' +
     '<a class="nav-link" href="/explore/">Explore</a>' +
+    '<a class="nav-link" href="/subjects/">Subjects</a>' +
     '<a class="nav-link" href="/authors/">Writers</a>' +
     '<a class="nav-link" href="/library/">All books</a>' +
     '<details class="browse-menu"><summary>Browse collections</summary><div class="browse-panel">' +
@@ -328,15 +330,44 @@ const collections = collectionFiles.map(function (collection) {
   };
 });
 
-if (!books.length || !authors.length || !resources.length || !studyEditions.length || !collections.length) {
+const subjects = subjectData.map(function (subject) {
+  const relatedBooks = subject.books.map(function (book) { return book.href; });
+  const relatedResources = subject.resources
+    .map(function (resource) { return resource.href; })
+    .filter(function (href) { return href.startsWith('/resources/'); });
+  return {
+    type: 'subject',
+    typeLabel: 'Subject guide',
+    title: subject.title,
+    description: subject.description,
+    href: '/subjects/' + subject.slug + '/',
+    image: subject.books[0].image,
+    imageAlt: subject.title + ' books in Astor Library',
+    bookCount: relatedBooks.length,
+    relatedBooks: relatedBooks,
+    relatedResources: relatedResources,
+    search: [subject.title, subject.kicker, subject.description, subject.search]
+      .concat(subject.terms.map(function (term) { return term.term + ' ' + term.copy; }))
+      .join(' ')
+  };
+});
+
+books.forEach(function (book) {
+  book.subjects = subjects
+    .filter(function (subject) { return subject.relatedBooks.includes(book.href); })
+    .map(function (subject) { return { title: subject.title, href: subject.href }; });
+});
+
+if (!books.length || !authors.length || !resources.length || !studyEditions.length || !collections.length || !subjects.length) {
   throw new Error('Discovery could not find every kind of content');
 }
 
-const entries = books.concat(authors, resources, studyEditions, collections);
+const entries = subjects.concat(books, authors, resources, studyEditions, collections);
 const index = {
   counts: {
     books: books.length,
     authors: authors.length,
+    subjects: subjects.length,
     resources: resources.length,
     studyEditions: studyEditions.length,
     collections: collections.length,
@@ -344,6 +375,7 @@ const index = {
   },
   books: books,
   authors: authors,
+  subjects: subjects,
   resources: resources,
   studyEditions: studyEditions,
   collections: collections
@@ -356,7 +388,8 @@ const typeCtas = {
   book: 'Open the book',
   collection: 'Browse the collection',
   resource: 'Read the guide',
-  study: 'View the edition'
+  study: 'View the edition',
+  subject: 'Open the subject guide'
 };
 
 const entryCards = entries.map(function (entry) {
@@ -380,12 +413,12 @@ const entryCards = entries.map(function (entry) {
 const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
   '<title>Explore Literature | Astor Library</title>' +
-  '<meta name="description" content="Search Astor Library books, writers, free literature guides, study editions and historical collections in one place.">' +
-  '<link rel="stylesheet" href="/assets/styles.css"><style>.explore-paths{grid-template-columns:repeat(5,minmax(0,1fr))}@media(max-width:1050px){.explore-paths{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.explore-paths{grid-template-columns:1fr}}</style><script src="/assets/explore.js" defer></script>' +
+  '<meta name="description" content="Search Astor Library books, writers, subject guides, free literature resources, study editions and historical collections in one place.">' +
+  '<link rel="stylesheet" href="/assets/styles.css"><style>.explore-paths{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:1050px){.explore-paths{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.explore-paths{grid-template-columns:1fr}}</style><script src="/assets/explore.js" defer></script>' +
   '</head><body>' + siteHeader() +
   '<main class="page-wrap explore-page">' +
   '<section class="explore-hero"><div><p class="kicker">Books, guides and editions</p><h1>Find your way in.</h1>' +
-  '<p class="deck">Search ' + books.length + ' books, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions. You can begin with a title, a writer, a period or simply an idea that interests you.</p></div>' +
+  '<p class="deck">Search ' + books.length + ' books, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions. Begin with a title, a writer, a form or an idea that interests you.</p></div>' +
   '<aside class="explore-hero-note"><p>The library is meant to be wandered through. Search when you know what you need, or follow a collection and see where it takes you.</p></aside></section>' +
   '<section class="explore-tools" aria-label="Search everything">' +
   '<label for="explore-search">What are you looking for?</label>' +
@@ -393,6 +426,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<div class="explore-filters">' +
   '<button type="button" class="explore-filter is-active" data-filter="all" aria-pressed="true">Everything</button>' +
   '<button type="button" class="explore-filter" data-filter="book" aria-pressed="false">Books</button>' +
+  '<button type="button" class="explore-filter" data-filter="subject" aria-pressed="false">Subjects</button>' +
   '<button type="button" class="explore-filter" data-filter="author" aria-pressed="false">Writers</button>' +
   '<button type="button" class="explore-filter" data-filter="resource" aria-pressed="false">Free guides</button>' +
   '<button type="button" class="explore-filter" data-filter="study" aria-pressed="false">Study editions</button>' +
@@ -400,6 +434,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '</div></section>' +
   '<section class="explore-paths" aria-label="Ways into Astor Library">' +
   '<a href="/library/"><span>Choose a book</span><p>Read its story, publication history and life on stage or screen.</p></a>' +
+  '<a href="/subjects/"><span>Read by subject</span><p>Begin with Gothic, tragedy, detection, epic or satire and political writing.</p></a>' +
   '<a href="/authors/"><span>Meet a writer</span><p>Follow an author across the books, forms and questions that shaped their work.</p></a>' +
   '<a href="/study/"><span>Study a set text</span><p>Find an Astor edition with close-reading and essay support.</p></a>' +
   '<a href="/resources/"><span>Use a free guide</span><p>Open focused help with a text, passage, theme or question.</p></a>' +
@@ -409,7 +444,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<p class="explore-empty" id="explore-empty" hidden>Nothing quite matches that search yet. Try a title, author, period or broader word.</p>' +
   '</main>' +
   '<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic literature, carefully introduced and kept open to curious readers.</p></div>' +
-  '<div class="footer-links"><a href="/about/">About</a><a href="/authors/">Writers</a><a href="/reading-routes/">Reading routes</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>' +
+  '<div class="footer-links"><a href="/about/">About</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/reading-routes/">Reading routes</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>' +
   '</body></html>';
 
 fs.mkdirSync(path.join(root, 'explore'), { recursive: true });
@@ -478,19 +513,24 @@ const authorLinks = authors
   .map(function (author) { return '<a href="' + escapeHtml(author.href) + '"><span>' + escapeHtml(author.title) + '</span><small>' + author.bookCount + (author.bookCount === 1 ? ' book' : ' books') + '</small></a>'; })
   .join('');
 
+const subjectLinks = subjects
+  .map(function (subject) { return '<a href="' + escapeHtml(subject.href) + '"><span>' + escapeHtml(subject.title) + '</span><small>' + subject.bookCount + (subject.bookCount === 1 ? ' book' : ' books') + ' in the guide</small></a>'; })
+  .join('');
+
 const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-  '<title>Site Index | Astor Library</title><meta name="description" content="A complete, crawlable index of Astor Library books, writers, collections, free literature guides, study editions and reading routes.">' +
+  '<title>Site Index | Astor Library</title><meta name="description" content="A complete, crawlable index of Astor Library books, writers, subject guides, collections, free literature guides, study editions and reading routes.">' +
   '<link rel="stylesheet" href="/assets/styles.css"><style>' +
   '.site-index-quick{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 60px}.site-index-quick a{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;font-weight:800;color:var(--burgundy);border:1px solid var(--line);background:#fff8ef;padding:10px 13px;text-decoration:none}.index-group{border-top:1px solid var(--line);padding:38px 0 14px}.index-group h2{font-size:clamp(34px,5vw,58px);line-height:.95;letter-spacing:-.04em;margin:0 0 22px}.index-group h2 a{text-decoration:none}.index-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.index-links>a{display:flex;flex-direction:column;gap:6px;min-height:92px;border:1px solid var(--line);background:rgba(255,248,239,.86);padding:15px;text-decoration:none}.index-links span{font-size:21px;font-weight:700;line-height:1.08}.index-links small{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;color:var(--muted);line-height:1.35}@media(max-width:820px){.index-links{grid-template-columns:1fr}}' +
   '</style></head><body>' + siteHeader() +
-  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Everything in one place</p><h1>Site index.</h1><p class="deck">Every book, writer, free guide, study edition and collection currently held by Astor Library. Use this page when you know the title, or when you simply want to see the full shape of the library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions.</strong> For a more visual search, use Explore. For connections across periods, begin with the reading routes.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/reading-routes/">Reading routes</a></div></aside></section>' +
-  '<nav class="site-index-quick" aria-label="Site index sections"><a href="#writers">Writers</a><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="/about/">About Astor Library</a></nav>' +
+  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Everything in one place</p><h1>Site index.</h1><p class="deck">Every book, writer, subject guide, free resource, study edition and collection currently held by Astor Library. Use this page when you know the title, or when you simply want to see the full shape of the library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions.</strong> For a visual search, use Explore. For connections across periods, begin with Subjects or the reading routes.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/subjects/">Read by subject</a></div></aside></section>' +
+  '<nav class="site-index-quick" aria-label="Site index sections"><a href="#subjects">Subjects</a><a href="#writers">Writers</a><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="/about/">About Astor Library</a></nav>' +
+  '<section class="index-group" id="subjects"><h2><a href="/subjects/">Subject guides</a></h2><div class="index-links">' + subjectLinks + '</div></section>' +
   '<section class="index-group" id="writers"><h2><a href="/authors/">Writers</a></h2><div class="index-links">' + authorLinks + '</div></section>' +
   '<div id="books">' + collectionSections + '</div>' +
   '<section class="index-group" id="free-guides"><h2><a href="/resources/">Free literature guides</a></h2><div class="index-links">' + resourceLinks + '</div></section>' +
   '<section class="index-group" id="study-editions"><h2><a href="/study/">Study editions</a></h2><div class="index-links">' + studyLinks + '</div></section>' +
-  '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Making classic literature easier to read, teach and study, while keeping the original texts intact.</p></div><div class="footer-links"><a href="/">Home</a><a href="/authors/">Writers</a><a href="/explore/">Explore</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
+  '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Making classic literature easier to read, teach and study, while keeping the original texts intact.</p></div><div class="footer-links"><a href="/">Home</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/explore/">Explore</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
 
 fs.mkdirSync(path.join(root, 'site-index'), { recursive: true });
 fs.writeFileSync(path.join(root, 'site-index/index.html'), siteIndexHtml);
