@@ -130,6 +130,15 @@ function unique(values) {
   return Array.from(new Set(values));
 }
 
+function slugify(value) {
+  return String(value)
+    .toLocaleLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 function matchText(block, pattern, label) {
   const match = block.match(pattern);
   if (!match) throw new Error('Could not read ' + label);
@@ -142,6 +151,7 @@ function siteHeader() {
     '<nav class="nav" aria-label="Primary navigation">' +
     '<a class="nav-link" href="/">Home</a>' +
     '<a class="nav-link" href="/explore/">Explore</a>' +
+    '<a class="nav-link" href="/authors/">Writers</a>' +
     '<a class="nav-link" href="/library/">All books</a>' +
     '<details class="browse-menu"><summary>Browse collections</summary><div class="browse-panel">' +
     '<a class="browse-card" href="/ancient-epic/" style="--browse-image:url(\'/Ancient%20and%20Epic.png\')"><span>Ancient &amp; Epic</span></a>' +
@@ -193,6 +203,48 @@ for (const match of libraryHtml.matchAll(bookPattern)) {
     search: [title, author, collection, textOnly(descriptionHtml)].concat(topics).join(' ')
   });
 }
+
+const authorProfiles = {
+  'Arthur Conan Doyle': '/authors/arthur-conan-doyle/',
+  'Charles Dickens': '/authors/charles-dickens/',
+  'Jane Austen': '/authors/jane-austen/',
+  'William Shakespeare': '/shakespeare/'
+};
+
+const authors = Array.from(books.reduce(function (groups, book) {
+  if (!groups.has(book.author)) groups.set(book.author, []);
+  groups.get(book.author).push(book);
+  return groups;
+}, new Map())).map(function (pair) {
+  const name = pair[0];
+  const authorBooks = pair[1].slice().sort(function (a, b) { return a.title.localeCompare(b.title, 'en'); });
+  const slug = slugify(name);
+  const titles = authorBooks.map(function (book) { return book.title; });
+  const href = authorProfiles[name] || '/authors/#' + slug;
+  const titleList = titles.length === 1
+    ? titles[0]
+    : titles.slice(0, -1).join(', ') + ' and ' + titles[titles.length - 1];
+  const description = authorBooks.length === 1
+    ? 'Read ' + name + ' through Astor Library\'s page for ' + titleList + '.'
+    : 'Read ' + name + ' across ' + authorBooks.length + ' Astor Library books: ' + titleList + '.';
+
+  authorBooks.forEach(function (book) { book.authorHref = href; });
+
+  return {
+    type: 'author',
+    typeLabel: 'Writer',
+    title: name,
+    description: description,
+    href: href,
+    image: authorBooks[0].image,
+    imageAlt: authorBooks[0].imageAlt,
+    bookCount: authorBooks.length,
+    books: authorBooks.map(function (book) {
+      return { title: book.title, href: book.href, image: book.image, imageAlt: book.imageAlt, collection: book.collection };
+    }),
+    search: [name].concat(titles, authorBooks.map(function (book) { return book.collection; })).join(' ')
+  };
+}).sort(function (a, b) { return a.title.localeCompare(b.title, 'en'); });
 
 const resources = [];
 const resourcesHtml = read('resources/index.html');
@@ -276,20 +328,22 @@ const collections = collectionFiles.map(function (collection) {
   };
 });
 
-if (!books.length || !resources.length || !studyEditions.length || !collections.length) {
-  throw new Error('Discovery could not find all four kinds of content');
+if (!books.length || !authors.length || !resources.length || !studyEditions.length || !collections.length) {
+  throw new Error('Discovery could not find every kind of content');
 }
 
-const entries = books.concat(resources, studyEditions, collections);
+const entries = books.concat(authors, resources, studyEditions, collections);
 const index = {
   counts: {
     books: books.length,
+    authors: authors.length,
     resources: resources.length,
     studyEditions: studyEditions.length,
     collections: collections.length,
     entries: entries.length
   },
   books: books,
+  authors: authors,
   resources: resources,
   studyEditions: studyEditions,
   collections: collections
@@ -298,6 +352,7 @@ const index = {
 fs.writeFileSync(path.join(root, 'assets/content-index.json'), JSON.stringify(index, null, 2) + '\n');
 
 const typeCtas = {
+  author: 'Read the writer page',
   book: 'Open the book',
   collection: 'Browse the collection',
   resource: 'Read the guide',
@@ -305,7 +360,7 @@ const typeCtas = {
 };
 
 const entryCards = entries.map(function (entry) {
-  const detail = entry.author ? entry.author + ' · ' + entry.collection : entry.typeLabel;
+  const detail = entry.author ? entry.author + ' · ' + entry.collection : entry.type === 'author' ? entry.bookCount + (entry.bookCount === 1 ? ' book' : ' books') : entry.typeLabel;
   const search = [entry.search, entry.typeLabel].join(' ').toLocaleLowerCase();
   const image = entry.image
     ? '<img src="' + escapeHtml(entry.image) + '" alt="' + escapeHtml(entry.imageAlt || '') + '" loading="lazy">'
@@ -325,12 +380,12 @@ const entryCards = entries.map(function (entry) {
 const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
   '<title>Explore Literature | Astor Library</title>' +
-  '<meta name="description" content="Search Astor Library books, free literature guides, study editions and historical collections in one place.">' +
-  '<link rel="stylesheet" href="/assets/styles.css"><style>.explore-paths{grid-template-columns:repeat(4,minmax(0,1fr))}@media(max-width:900px){.explore-paths{grid-template-columns:1fr}}</style><script src="/assets/explore.js" defer></script>' +
+  '<meta name="description" content="Search Astor Library books, writers, free literature guides, study editions and historical collections in one place.">' +
+  '<link rel="stylesheet" href="/assets/styles.css"><style>.explore-paths{grid-template-columns:repeat(5,minmax(0,1fr))}@media(max-width:1050px){.explore-paths{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.explore-paths{grid-template-columns:1fr}}</style><script src="/assets/explore.js" defer></script>' +
   '</head><body>' + siteHeader() +
   '<main class="page-wrap explore-page">' +
   '<section class="explore-hero"><div><p class="kicker">Books, guides and editions</p><h1>Find your way in.</h1>' +
-  '<p class="deck">Search ' + books.length + ' books, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions. You can begin with a title, an author, a period or simply an idea that interests you.</p></div>' +
+  '<p class="deck">Search ' + books.length + ' books, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions. You can begin with a title, a writer, a period or simply an idea that interests you.</p></div>' +
   '<aside class="explore-hero-note"><p>The library is meant to be wandered through. Search when you know what you need, or follow a collection and see where it takes you.</p></aside></section>' +
   '<section class="explore-tools" aria-label="Search everything">' +
   '<label for="explore-search">What are you looking for?</label>' +
@@ -338,12 +393,14 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<div class="explore-filters">' +
   '<button type="button" class="explore-filter is-active" data-filter="all" aria-pressed="true">Everything</button>' +
   '<button type="button" class="explore-filter" data-filter="book" aria-pressed="false">Books</button>' +
+  '<button type="button" class="explore-filter" data-filter="author" aria-pressed="false">Writers</button>' +
   '<button type="button" class="explore-filter" data-filter="resource" aria-pressed="false">Free guides</button>' +
   '<button type="button" class="explore-filter" data-filter="study" aria-pressed="false">Study editions</button>' +
   '<button type="button" class="explore-filter" data-filter="collection" aria-pressed="false">Collections</button>' +
   '</div></section>' +
   '<section class="explore-paths" aria-label="Ways into Astor Library">' +
   '<a href="/library/"><span>Choose a book</span><p>Read its story, publication history and life on stage or screen.</p></a>' +
+  '<a href="/authors/"><span>Meet a writer</span><p>Follow an author across the books, forms and questions that shaped their work.</p></a>' +
   '<a href="/study/"><span>Study a set text</span><p>Find an Astor edition with close-reading and essay support.</p></a>' +
   '<a href="/resources/"><span>Use a free guide</span><p>Open focused help with a text, passage, theme or question.</p></a>' +
   '<a href="/reading-routes/"><span>Follow a question</span><p>Move across periods through home, freedom, fear, power and evidence.</p></a>' +
@@ -352,11 +409,48 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<p class="explore-empty" id="explore-empty" hidden>Nothing quite matches that search yet. Try a title, author, period or broader word.</p>' +
   '</main>' +
   '<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic literature, carefully introduced and kept open to curious readers.</p></div>' +
-  '<div class="footer-links"><a href="/about/">About</a><a href="/reading-routes/">Reading routes</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>' +
+  '<div class="footer-links"><a href="/about/">About</a><a href="/authors/">Writers</a><a href="/reading-routes/">Reading routes</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>' +
   '</body></html>';
 
 fs.mkdirSync(path.join(root, 'explore'), { recursive: true });
 fs.writeFileSync(path.join(root, 'explore/index.html'), exploreHtml);
+
+const featuredAuthorNames = ['Charles Dickens', 'Jane Austen', 'Arthur Conan Doyle', 'William Shakespeare'];
+const featuredAuthors = featuredAuthorNames.map(function (name) { return authors.find(function (author) { return author.title === name; }); }).filter(Boolean);
+
+function authorCoverStack(author) {
+  const covers = author.books.slice(0, 3).map(function (book, index) {
+    return '<img src="' + escapeHtml(book.image) + '" alt="' + escapeHtml(index === 0 ? book.imageAlt : '') + '" loading="lazy">';
+  }).join('');
+  return '<div class="author-cover-stack" aria-label="Books by ' + escapeHtml(author.title) + '">' + covers + '</div>';
+}
+
+const featuredAuthorCards = featuredAuthors.map(function (author) {
+  return '<article class="featured-author-card"><a href="' + escapeHtml(author.href) + '">' + authorCoverStack(author) + '<div><p class="kicker">' + author.bookCount + (author.bookCount === 1 ? ' book' : ' books') + ' in the library</p><h2>' + escapeHtml(author.title) + '</h2><p>' + escapeHtml(author.description) + '</p><span class="home-text-link">Read the writer page <span aria-hidden="true">&rarr;</span></span></div></a></article>';
+}).join('');
+
+const authorDirectoryCards = authors.map(function (author) {
+  const bookLinks = author.books.map(function (book) {
+    return '<a href="' + escapeHtml(book.href) + '">' + escapeHtml(book.title) + '</a>';
+  }).join('');
+  const name = authorProfiles[author.title]
+    ? '<a href="' + escapeHtml(author.href) + '">' + escapeHtml(author.title) + '</a>'
+    : escapeHtml(author.title);
+  return '<article class="author-directory-card" id="' + slugify(author.title) + '"><p class="author-directory-count">' + author.bookCount + (author.bookCount === 1 ? ' book' : ' books') + '</p><h2>' + name + '</h2><div class="author-book-links">' + bookLinks + '</div></article>';
+}).join('');
+
+const authorsHtml = '<!doctype html><html lang="en"><head>' +
+  '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
+  '<title>Classic Authors and Writers | Astor Library</title><meta name="description" content="Explore classic authors in Astor Library, with dedicated pages for Dickens, Austen, Conan Doyle and Shakespeare and links to every available book.">' +
+  '<link rel="stylesheet" href="/assets/styles.css"></head><body>' + siteHeader() +
+  '<main class="page-wrap authors-page"><section class="authors-hero"><div><p class="kicker">Lives, books and ways of reading</p><h1>Writers in the library.</h1><p class="deck">A book never arrives alone. Here you can follow a writer across several works, see the pressures under which those works were made, and move directly into the Astor reading pages.</p><div class="button-row"><a class="button primary" href="#all-writers">See every writer</a><a class="button secondary" href="/library/">Browse all books</a></div></div><div class="authors-hero-shelf" aria-hidden="true"><img src="/Great%20Expectations.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Adventures%20of%20Sherlock%20Holmes.png" alt=""></div></section>' +
+  '<section class="authors-intro"><p>These pages are not short biographies pasted beside a list of titles. They are places to understand how a writer worked: the forms they chose, the world they wrote from and the questions that keep their books alive.</p></section>' +
+  '<section class="featured-authors" aria-labelledby="featured-authors-title"><div class="section-title"><p class="kicker">Begin with a shelf</p><h2 id="featured-authors-title">Writers held in depth.</h2></div>' + featuredAuthorCards + '</section>' +
+  '<section class="author-directory" id="all-writers" aria-labelledby="all-writers-title"><div class="author-directory-head"><div><p class="kicker">The full catalogue</p><h2 id="all-writers-title">Every writer.</h2></div><p>' + authors.length + ' writers currently appear in Astor Library. More detailed lives and reading paths will be added as their shelves grow.</p></div><div class="author-directory-grid">' + authorDirectoryCards + '</div></section>' +
+  '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books read in the company of the writers who made them.</p></div><div class="footer-links"><a href="/library/">All books</a><a href="/explore/">Search</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
+
+fs.mkdirSync(path.join(root, 'authors'), { recursive: true });
+fs.writeFileSync(path.join(root, 'authors/index.html'), authorsHtml);
 
 const collectionSections = collections.map(function (collection) {
   const links = books
@@ -380,18 +474,23 @@ const studyLinks = studyEditions
   .map(function (edition) { return '<a href="' + escapeHtml(edition.href) + '"><span>' + escapeHtml(edition.title) + '</span><small>' + escapeHtml(edition.typeLabel) + '</small></a>'; })
   .join('');
 
+const authorLinks = authors
+  .map(function (author) { return '<a href="' + escapeHtml(author.href) + '"><span>' + escapeHtml(author.title) + '</span><small>' + author.bookCount + (author.bookCount === 1 ? ' book' : ' books') + '</small></a>'; })
+  .join('');
+
 const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-  '<title>Site Index | Astor Library</title><meta name="description" content="A complete, crawlable index of Astor Library books, collections, free literature guides, study editions and reading routes.">' +
+  '<title>Site Index | Astor Library</title><meta name="description" content="A complete, crawlable index of Astor Library books, writers, collections, free literature guides, study editions and reading routes.">' +
   '<link rel="stylesheet" href="/assets/styles.css"><style>' +
   '.site-index-quick{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 60px}.site-index-quick a{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;font-weight:800;color:var(--burgundy);border:1px solid var(--line);background:#fff8ef;padding:10px 13px;text-decoration:none}.index-group{border-top:1px solid var(--line);padding:38px 0 14px}.index-group h2{font-size:clamp(34px,5vw,58px);line-height:.95;letter-spacing:-.04em;margin:0 0 22px}.index-group h2 a{text-decoration:none}.index-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.index-links>a{display:flex;flex-direction:column;gap:6px;min-height:92px;border:1px solid var(--line);background:rgba(255,248,239,.86);padding:15px;text-decoration:none}.index-links span{font-size:21px;font-weight:700;line-height:1.08}.index-links small{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;color:var(--muted);line-height:1.35}@media(max-width:820px){.index-links{grid-template-columns:1fr}}' +
   '</style></head><body>' + siteHeader() +
-  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Everything in one place</p><h1>Site index.</h1><p class="deck">Every book, free guide, study edition and collection currently held by Astor Library. Use this page when you know the title, or when you simply want to see the full shape of the library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions.</strong> For a more visual search, use Explore. For connections across periods, begin with the reading routes.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/reading-routes/">Reading routes</a></div></aside></section>' +
-  '<nav class="site-index-quick" aria-label="Site index sections"><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="/about/">About Astor Library</a></nav>' +
+  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Everything in one place</p><h1>Site index.</h1><p class="deck">Every book, writer, free guide, study edition and collection currently held by Astor Library. Use this page when you know the title, or when you simply want to see the full shape of the library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions.</strong> For a more visual search, use Explore. For connections across periods, begin with the reading routes.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/reading-routes/">Reading routes</a></div></aside></section>' +
+  '<nav class="site-index-quick" aria-label="Site index sections"><a href="#writers">Writers</a><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="/about/">About Astor Library</a></nav>' +
+  '<section class="index-group" id="writers"><h2><a href="/authors/">Writers</a></h2><div class="index-links">' + authorLinks + '</div></section>' +
   '<div id="books">' + collectionSections + '</div>' +
   '<section class="index-group" id="free-guides"><h2><a href="/resources/">Free literature guides</a></h2><div class="index-links">' + resourceLinks + '</div></section>' +
   '<section class="index-group" id="study-editions"><h2><a href="/study/">Study editions</a></h2><div class="index-links">' + studyLinks + '</div></section>' +
-  '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Making classic literature easier to read, teach and study, while keeping the original texts intact.</p></div><div class="footer-links"><a href="/">Home</a><a href="/explore/">Explore</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
+  '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Making classic literature easier to read, teach and study, while keeping the original texts intact.</p></div><div class="footer-links"><a href="/">Home</a><a href="/authors/">Writers</a><a href="/explore/">Explore</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
 
 fs.mkdirSync(path.join(root, 'site-index'), { recursive: true });
 fs.writeFileSync(path.join(root, 'site-index/index.html'), siteIndexHtml);

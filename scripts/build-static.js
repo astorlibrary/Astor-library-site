@@ -87,6 +87,13 @@ function resourceContext(source) {
   return { resource, relatedBook };
 }
 
+function authorContext(source) {
+  const href = pageHref(source);
+  if (!href.startsWith('/authors/') || href === '/authors/') return null;
+  const author = discovery.authors?.find(item => item.href === href);
+  return author || null;
+}
+
 function addBookStructuredData(html, source) {
   const context = bookContext(source);
   if (!context) return html;
@@ -126,7 +133,8 @@ function addBookStructuredData(html, source) {
       image: absoluteUrl(book.image),
       author: {
         '@type': 'Person',
-        name: book.author
+        name: book.author,
+        url: book.authorHref ? absoluteUrl(book.authorHref) : undefined
       }
     }
   };
@@ -137,6 +145,46 @@ function addBookStructuredData(html, source) {
     ? ''
     : '<script type="application/ld+json" data-astor-book-schema>' + json + '</script>';
   return html.replace('</head>', canonical + structuredData + '</head>');
+}
+
+function addAuthorStructuredData(html, source) {
+  const author = authorContext(source);
+  if (!author || html.includes('data-astor-author-schema')) return html;
+  const dates = {
+    'Arthur Conan Doyle': { birthDate: '1859-05-22', deathDate: '1930-07-07' },
+    'Charles Dickens': { birthDate: '1812-02-07', deathDate: '1870-06-09' },
+    'Jane Austen': { birthDate: '1775-12-16', deathDate: '1817-07-18' }
+  }[author.title] || {};
+  const description = plainText(html.match(/<meta\b[^>]*name="description"[^>]*content="([^"]+)"/i)?.[1] || author.description);
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    name: author.title + ' | Astor Library',
+    description,
+    url: absoluteUrl(author.href),
+    inLanguage: 'en-GB',
+    isPartOf: { '@type': 'CollectionPage', name: 'Writers in Astor Library', url: absoluteUrl('/authors/') },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Writers', item: absoluteUrl('/authors/') },
+        { '@type': 'ListItem', position: 2, name: author.title, item: absoluteUrl(author.href) }
+      ]
+    },
+    mainEntity: {
+      '@type': 'Person',
+      '@id': absoluteUrl(author.href) + '#person',
+      name: author.title,
+      url: absoluteUrl(author.href),
+      birthDate: dates.birthDate,
+      deathDate: dates.deathDate,
+      mainEntityOfPage: absoluteUrl(author.href),
+      subjectOf: author.books.map(book => ({ '@type': 'Book', name: book.title, url: absoluteUrl(book.href), image: absoluteUrl(book.image) }))
+    },
+    publisher: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' }
+  };
+  const json = JSON.stringify(schema).replace(/</g, '\\u003c');
+  return html.replace('</head>', '<script type="application/ld+json" data-astor-author-schema>' + json + '</script></head>');
 }
 
 function addResourceStructuredData(html, source) {
@@ -184,6 +232,9 @@ function addCollectionStructuredData(html, source) {
   if (href === '/library/' || href === '/classic-literature/') {
     items = discovery.books || [];
     kind = 'Classic literature books';
+  } else if (href === '/authors/') {
+    items = discovery.authors || [];
+    kind = 'Classic authors and writers';
   } else if (collection) {
     items = (discovery.books || []).filter(book => book.collection === collection.title);
     kind = collection.title + ' books';
@@ -231,7 +282,8 @@ function addGlobalMetadata(html, source) {
   const description = plainText(html.match(/<meta\b[^>]*name="description"[^>]*content="([^"]+)"/i)?.[1] || 'Classic literature, carefully introduced for readers, students and teachers.');
   const book = bookContext(source)?.book;
   const resource = resourceContext(source)?.resource;
-  const image = book?.image || resource?.image || '/Logo.png';
+  const author = authorContext(source);
+  const image = book?.image || resource?.image || author?.image || '/Logo.png';
   let metadata = '';
   const absoluteHref = absoluteUrl(href);
   const absoluteImage = absoluteUrl(image);
@@ -308,12 +360,23 @@ function addBookReadingNavigation(html, source) {
   if (!html.includes('class="book-end-nav"')) {
     const endNav = '<nav class="book-end-nav" aria-label="End of page">' +
       '<a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a>' +
+      (book.authorHref ? '<a href="' + escapeHtml(book.authorHref) + '">More by ' + escapeHtml(book.author) + '</a>' : '') +
       '<a href="' + escapeHtml(collectionHref) + '">More from ' + escapeHtml(book.collection) + '</a>' +
       '<a href="/explore/">Find another book <span aria-hidden="true">&rarr;</span></a></nav>';
     html = html.replace('</main>', endNav + '</main>');
   }
 
   return html;
+}
+
+function addBookAuthorLink(html, source) {
+  const context = bookContext(source);
+  if (!context?.book?.authorHref) return html;
+  const { book } = context;
+  return html.replace(/<p class="kicker">([\s\S]*?)<\/p>/i, function (match, contents) {
+    if (plainText(contents) !== book.author || /<a\b/i.test(contents)) return match;
+    return '<p class="kicker book-author-kicker"><a href="' + escapeHtml(book.authorHref) + '">' + contents + '</a></p>';
+  });
 }
 
 function addResourceReadingNavigation(html, source) {
@@ -340,6 +403,7 @@ function addSiteIndexLink(html, source) {
   if (!html.includes('<footer')) return html;
   const href = pageHref(source);
   const links = [];
+  if (href !== '/authors/' && !html.includes('href="/authors/"')) links.push('<a href="/authors/">Writers</a>');
   if (href !== '/classic-literature/' && !html.includes('href="/classic-literature/"')) links.push('<a href="/classic-literature/">Classic literature</a>');
   if (href !== '/site-index/' && !html.includes('href="/site-index/"')) links.push('<a href="/site-index/">Site index</a>');
   if (!links.length) return html;
@@ -349,11 +413,25 @@ function addSiteIndexLink(html, source) {
   return html.replace('</footer>', '<div class="footer-links">' + links.join('') + '</div></footer>');
 }
 
+function addAuthorsNavigation(html, source) {
+  const href = pageHref(source);
+  if (html.includes('class="site-header"') && !html.includes('href="/authors/"')) {
+    html = html.replace(/(<a class="nav-link" href="\/explore\/">[\s\S]*?<\/a>)/i, '$1<a class="nav-link" href="/authors/">Writers</a>');
+  }
+  if (href.startsWith('/authors/') && html.includes('href="/authors/"')) {
+    html = html.replace(/<a class="nav-link" href="\/authors\/">Writers<\/a>/i, '<a class="nav-link" href="/authors/" aria-current="page">Writers</a>');
+  }
+  return html;
+}
+
 function prepareHtml(html, source) {
   html = addBookStructuredData(html, source);
   html = addResourceStructuredData(html, source);
+  html = addAuthorStructuredData(html, source);
   html = addCollectionStructuredData(html, source);
   html = addGlobalMetadata(html, source);
+  html = addAuthorsNavigation(html, source);
+  html = addBookAuthorLink(html, source);
   html = addBookReadingNavigation(html, source);
   html = addResourceReadingNavigation(html, source);
   html = addSiteIndexLink(html, source);

@@ -160,6 +160,8 @@ if (!homepage.includes('home-finder')) failures.push('The homepage is missing it
 if (!homepage.includes('class="archive-book-shelf"')) failures.push('The homepage is missing its new-books shelf');
 if (countMatches(homepage, /class="archive-catalogue-number"/g) !== 3) failures.push('The homepage must clearly explain its three kinds of resource');
 if (!homepage.includes('class="archive-route-list"')) failures.push('The homepage is missing its routes across the shelves');
+if (countMatches(homepage, /class="archive-author-covers"/g) !== 3) failures.push('The homepage must introduce three detailed writer pages');
+if (!homepage.includes('href="/authors/"')) failures.push('The homepage is missing the writers directory');
 if (!homepage.includes('data-reference-reel')) failures.push('The homepage is missing its moving reference-library story');
 if (countMatches(homepage, /data-reference-frame/g) !== 3) failures.push('The homepage must feature exactly three reference-library frames');
 if (homepage.includes('class="home-intro-strip"')) failures.push('The homepage has restored the repeated introduction strip');
@@ -189,6 +191,30 @@ for (const href of ['/library/', '/reading-routes/', '/resources/']) {
 const readingRoutes = fs.readFileSync(path.join(root, 'reading-routes', 'index.html'), 'utf8');
 if (countMatches(readingRoutes, /class="route-block"/g) !== 5) failures.push('Reading routes must contain five complete routes');
 if (!readingRoutes.includes('/resources/dracula/complete-overview/')) failures.push('Reading routes are not connected to the free guides');
+
+const authorsHubFile = path.join(root, 'authors', 'index.html');
+if (!fs.existsSync(authorsHubFile)) {
+  failures.push('The writers directory is missing');
+} else {
+  const authorsHub = fs.readFileSync(authorsHubFile, 'utf8');
+  if (!authorsHub.includes('<h1>Writers in the library.</h1>')) failures.push('The writers directory is missing its main heading');
+  for (const authorHref of ['/authors/charles-dickens/', '/authors/jane-austen/', '/authors/arthur-conan-doyle/', '/shakespeare/']) {
+    if (!authorsHub.includes('href="' + authorHref + '"')) failures.push('The writers directory is missing ' + authorHref);
+  }
+}
+
+for (const authorSlug of ['charles-dickens', 'jane-austen', 'arthur-conan-doyle']) {
+  const authorFile = path.join(root, 'authors', authorSlug, 'index.html');
+  if (!fs.existsSync(authorFile)) {
+    failures.push('The detailed writer page is missing: ' + authorSlug);
+    continue;
+  }
+  const authorHtml = fs.readFileSync(authorFile, 'utf8');
+  if (!authorHtml.includes('class="author-profile-hero"')) failures.push(authorSlug + ' is missing its writer introduction');
+  if (!authorHtml.includes('class="author-method-grid"')) failures.push(authorSlug + ' is missing its guide to the writing');
+  if (!authorHtml.includes('class="author-book-grid')) failures.push(authorSlug + ' is missing its Astor Library books');
+  if (!authorHtml.includes('class="author-sources"')) failures.push(authorSlug + ' is missing its further reading');
+}
 
 const memberships = new Map();
 for (const relativeCollection of collectionFiles) {
@@ -269,6 +295,11 @@ if (!fs.existsSync(discoveryFile)) {
     if (discovery.books?.length !== bookFiles.length) {
       failures.push('The discovery index has ' + (discovery.books?.length || 0) + ' books but the site has ' + bookFiles.length);
     }
+    const uniqueAuthors = new Set((discovery.books || []).map(book => book.author));
+    if (discovery.authors?.length !== uniqueAuthors.size) {
+      failures.push('The discovery index has ' + (discovery.authors?.length || 0) + ' writers but the books have ' + uniqueAuthors.size + ' distinct writers');
+    }
+    if ((discovery.books || []).some(book => !book.authorHref)) failures.push('A discovery book is missing its writer link');
     if (/&(?:#\d+|#x[0-9a-f]+|[a-z]+);/i.test(discoveryText)) {
       failures.push('The discovery index contains an undecoded HTML character');
     }
@@ -298,12 +329,27 @@ if (fs.existsSync(distDir)) {
       if (!redirect && !html.includes('property="og:description"')) failures.push('dist/' + fileName + ' is missing its sharing description');
       if (!redirect && !/<meta property="og:url" content="https:\/\/astorlibrary\.com\//i.test(html)) failures.push('dist/' + fileName + ' is missing its full sharing address');
       if (!redirect && !html.includes('data-astor-global-meta')) failures.push('dist/' + fileName + ' is missing its search visibility information');
+      if (html.includes('class="site-header"') && !html.includes('href="/authors/"')) failures.push('dist/' + fileName + ' is missing Writers from its shared navigation');
     }
     if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
       failures.push('dist/' + fileName + ' is missing its book description for search engines');
     }
-    if (/^(?:classic-literature|library|resources|study|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
+    if (/^(?:authors|classic-literature|library|resources|study|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
       failures.push('dist/' + fileName + ' is missing its collection description for search engines');
+    }
+    if (/^authors\/(?:charles-dickens|jane-austen|arthur-conan-doyle)\/index\.html$/.test(fileName)) {
+      if (!html.includes('data-astor-author-schema')) failures.push('dist/' + fileName + ' is missing its writer description for search engines');
+      const authorData = html.match(/<script type="application\/ld\+json" data-astor-author-schema>([\s\S]*?)<\/script>/i);
+      if (authorData) {
+        try {
+          const schema = JSON.parse(authorData[1]);
+          if (schema['@type'] !== 'ProfilePage' || schema.mainEntity?.['@type'] !== 'Person' || !schema.mainEntity?.birthDate || !schema.mainEntity?.deathDate || !schema.mainEntity?.subjectOf?.length) {
+            failures.push('dist/' + fileName + ' has an incomplete writer description for search engines');
+          }
+        } catch {
+          failures.push('dist/' + fileName + ' has an invalid writer description for search engines');
+        }
+      }
     }
     if (/^books\/[^/]+\/index\.html$/.test(fileName)) {
       if (!/<link rel="canonical" href="https:\/\/astorlibrary\.com\/books\/[^/]+\/">/i.test(html)) {
@@ -321,7 +367,7 @@ if (fs.existsSync(distDir)) {
           const schema = JSON.parse(structuredData[1]);
           if (schema['@type'] !== 'WebPage' || !schema.url?.startsWith(SITE_URL) || !schema.isPartOf?.url?.startsWith(SITE_URL) ||
               schema.breadcrumb?.itemListElement?.length !== 3 ||
-              schema.about?.['@type'] !== 'Book' || !schema.about?.image?.startsWith(SITE_URL) || !schema.about?.author?.name) {
+              schema.about?.['@type'] !== 'Book' || !schema.about?.image?.startsWith(SITE_URL) || !schema.about?.author?.name || !schema.about?.author?.url?.startsWith(SITE_URL)) {
             failures.push('dist/' + fileName + ' has an incomplete book description for search engines');
           }
         } catch {

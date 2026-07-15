@@ -279,6 +279,7 @@
       endNav.className = 'book-end-nav';
       endNav.setAttribute('aria-label', 'End of page');
       endNav.innerHTML = '<a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a>' +
+        (book.authorHref ? '<a href="' + escapeHtml(book.authorHref) + '">More by ' + escapeHtml(book.author) + '</a>' : '') +
         '<a href="' + escapeHtml(collection ? collection.href : '/library/') + '">More from ' + escapeHtml(book.collection) + '</a>' +
         '<a href="/explore/">Find another book <span aria-hidden="true">&rarr;</span></a>';
       main.append(endNav);
@@ -304,9 +305,10 @@
         .slice(0, 3);
       const tools = resources.concat(editions);
 
+      const authorBooks = data.books.filter(item => item.author === book.author && item.href !== book.href);
       const collectionBooks = data.books.filter(item => item.collection === book.collection);
       const currentIndex = collectionBooks.findIndex(item => item.href === book.href);
-      const relatedBooks = [];
+      const relatedBooks = authorBooks.slice(0, 3);
       for (let offset = 1; offset < collectionBooks.length && relatedBooks.length < 3; offset += 1) {
         const candidate = collectionBooks[(currentIndex + offset) % collectionBooks.length];
         if (candidate && candidate.href !== book.href && !relatedBooks.some(item => item.href === candidate.href)) {
@@ -318,13 +320,15 @@
 
       const heading = tools.length ? 'More on ' + book.title : 'Keep reading';
       const intro = tools.length
-        ? 'The guides and editions here stay close to the text. The shelf below opens another path through the collection.'
-        : 'Three more books from the ' + book.collection + ' collection.';
+        ? 'The guides and editions here stay close to the text. The shelf below continues through the writer or the wider collection.'
+        : authorBooks.length
+          ? 'Continue with ' + book.author + ', then move into the wider ' + book.collection + ' collection.'
+          : 'Three more books from the ' + book.collection + ' collection.';
       const toolsHtml = tools.length
         ? '<div class="related-tools">' + tools.map(toolCard).join('') + '</div>'
         : '';
       const booksHtml = relatedBooks.length
-        ? '<div class="related-books-head"><p>From ' + escapeHtml(book.collection) + '</p><a href="' + escapeHtml(collection ? collection.href : '/library/') + '">Browse the full collection</a></div>' +
+        ? '<div class="related-books-head"><p>' + (authorBooks.length ? 'More by ' + escapeHtml(book.author) : 'From ' + escapeHtml(book.collection)) + '</p><a href="' + escapeHtml(authorBooks.length && book.authorHref ? book.authorHref : (collection ? collection.href : '/library/')) + '">' + (authorBooks.length && book.authorHref ? 'Read the writer page' : 'Browse the full collection') + '</a></div>' +
           '<div class="related-books">' + relatedBooks.map(bookCard).join('') + '</div>'
         : '';
 
