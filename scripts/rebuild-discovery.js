@@ -41,6 +41,12 @@ const studyBookLinks = {
 };
 
 const resourceBookLinks = {
+  '/resources/antony-and-cleopatra/themes-critical-contexts/': ['/books/antony-and-cleopatra/'],
+  '/resources/dorian-gray/introduction/': ['/books/dorian-gray/'],
+  '/resources/macbeth/quick-guide/': ['/books/macbeth/'],
+  '/resources/pamela/psychological-analysis/': ['/books/pamela/'],
+  '/resources/richard-ii/study-guide/': ['/books/richard-ii/'],
+  '/resources/shakespeare/gender-power-omkara-maqbool/': ['/books/othello/', '/books/macbeth/'],
   '/resources/dracula/complete-overview/': ['/books/dracula/'],
   '/resources/dracula/gender-roles/': ['/books/dracula/'],
   '/resources/midsummer-nights-dream/study-guide/': ['/books/a-midsummer-nights-dream/'],

@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
+require('./rebuild-resource-additions');
+
 const root = process.cwd();
 const collections = [
   ['ancient-epic/index.html', 'Ancient & Epic'],

@@ -48,7 +48,8 @@ module.exports = [
       { href: '/resources/frankenstein/study-guide/', label: 'Frankenstein study guide', copy: 'Creation, responsibility and narrative form.' },
       { href: '/resources/jekyll-and-hyde/analysing-quotations/', label: 'Analysing Jekyll and Hyde', copy: 'A practical route into language and evidence.' },
       { href: '/resources/dracula/complete-overview/', label: 'Dracula: complete overview', copy: 'Plot, documents, characters and context.' },
-      { href: '/resources/dracula/gender-roles/', label: 'Gender roles in Dracula', copy: 'Desire, conduct and late-Victorian anxiety.' }
+      { href: '/resources/dracula/gender-roles/', label: 'Gender roles in Dracula', copy: 'Desire, conduct and late-Victorian anxiety.' },
+      { href: '/resources/dorian-gray/introduction/', label: 'The Picture of Dorian Gray: an introduction', copy: 'Art, influence, secrecy and the portrait as record.' }
     ],
     sources: [
       { href: 'https://www.bl.uk/stories/blogs/posts/spine-tingling-stories-in-the-blood-curdling-british-library', label: 'British Library: Gothic stories in the collection' },
@@ -108,6 +109,9 @@ module.exports = [
       { href: '/resources/shakespeare/tragedies-overview/', label: 'Shakespeare’s tragedies overview', copy: 'A free guide to the genre across several plays.' },
       { href: '/resources/hamlet/sources-texts-contexts/', label: 'Hamlet: sources, texts and contexts', copy: 'Revenge, print and early performance.' },
       { href: '/resources/macbeth/summary-analysis/', label: 'Macbeth summary and analysis', copy: 'The action, characters and central passages.' },
+      { href: '/resources/macbeth/quick-guide/', label: 'Macbeth quick study guide', copy: 'Prophecy, equivocation, guilt and James I.' },
+      { href: '/resources/antony-and-cleopatra/themes-critical-contexts/', label: 'Antony and Cleopatra: themes and contexts', copy: 'Rome, Egypt, gender, empire and Plutarch.' },
+      { href: '/resources/shakespeare/gender-power-omkara-maqbool/', label: 'Gender, power and Shakespeare', copy: 'Othello and Macbeth remade in film.' },
       { href: '/resources/king-lear/summary-guide/', label: 'King Lear summary guide', copy: 'A route through the divided kingdom.' }
     ],
     sources: [

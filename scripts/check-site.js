@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const resourceAdditions = require('./resource-additions');
 
 const root = process.cwd();
 const SITE_URL = 'https://astorlibrary.com';
@@ -180,10 +181,31 @@ for (const icon of ['favicon.ico', 'favicon.svg', 'favicon-32x32.png', 'apple-to
 }
 
 const resourcesHub = fs.readFileSync(path.join(root, 'resources', 'index.html'), 'utf8');
+const resourceCardCount = countMatches(resourcesHub, /class="resource-card"/g);
 if (!resourcesHub.includes('id="resource-search"')) failures.push('The resources page is missing its guide search');
 if (!resourcesHub.includes('/assets/resources.js')) failures.push('The resources page is missing its search script');
 if (countMatches(resourcesHub, /data-resource-filter=/g) < 7) failures.push('The resources page is missing its category filters');
 if (!resourcesHub.includes('class="resource-editorial"')) failures.push('The resources page is missing its explanation of how to use the free library');
+if (resourceCardCount !== 33) failures.push('The resources page contains ' + resourceCardCount + ' guides but should contain 33');
+if (!resourcesHub.includes('data-resource-filter="eighteenth-century"')) failures.push('The resources page is missing its eighteenth-century fiction filter');
+
+for (const resource of resourceAdditions) {
+  const resourceFile = path.join(root, resource.route, 'index.html');
+  if (!fs.existsSync(resourceFile)) {
+    failures.push('The new resource page is missing: ' + resource.route);
+    continue;
+  }
+  const resourceHtml = fs.readFileSync(resourceFile, 'utf8');
+  for (const className of ['resource-layout', 'guide-reading', 'note-box']) {
+    if (!resourceHtml.includes('class="' + className)) failures.push(resource.route + ' is missing ' + className);
+  }
+  if (!resourceHtml.includes(encodeURI(resource.pdf).replace(/'/g, '%27'))) failures.push(resource.route + ' is missing its PDF');
+  if (!resourceHtml.includes(encodeURI(resource.image).replace(/'/g, '%27'))) failures.push(resource.route + ' is missing its cover');
+  if (!resourceHtml.includes(resource.pageCount + '-page illustrated guide')) failures.push(resource.route + ' is missing its page count');
+  if (countMatches(resourceHtml, /<section class="guide-reading">[\s\S]*?<\/section>/g) !== 1 || countMatches(resourceHtml.match(/<section class="guide-reading">[\s\S]*?<\/section>/)?.[0] || '', /<article>/g) !== 3) {
+    failures.push(resource.route + ' must contain three reading notes');
+  }
+}
 
 const classicLiterature = fs.readFileSync(path.join(root, 'classic-literature', 'index.html'), 'utf8');
 if (!classicLiterature.includes('<h1>Classic literature.</h1>')) failures.push('The classic literature landing page is missing its main heading');
@@ -453,7 +475,7 @@ if (fs.existsSync(distDir)) {
     failures.push('dist is missing its PDF search headers');
   } else {
     const headers = fs.readFileSync(headersFile, 'utf8');
-    if (countMatches(headers, /rel="canonical"/g) !== 23) failures.push('The PDF search headers do not cover all 23 free guides');
+    if (countMatches(headers, /rel="canonical"/g) !== resourceCardCount) failures.push('The PDF search headers do not cover all ' + resourceCardCount + ' free guides');
     if (!headers.includes('<' + SITE_URL + '/resources/')) failures.push('The PDF search headers do not point back to the guide pages');
   }
 }

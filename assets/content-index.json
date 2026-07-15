@@ -3,10 +3,10 @@
     "books": 49,
     "authors": 25,
     "subjects": 5,
-    "resources": 23,
+    "resources": 33,
     "studyEditions": 23,
     "collections": 8,
-    "entries": 133
+    "entries": 143
   },
   "books": [
     {
@@ -1510,7 +1510,8 @@
         "/resources/frankenstein/study-guide/",
         "/resources/jekyll-and-hyde/analysing-quotations/",
         "/resources/dracula/complete-overview/",
-        "/resources/dracula/gender-roles/"
+        "/resources/dracula/gender-roles/",
+        "/resources/dorian-gray/introduction/"
       ],
       "search": "Gothic literature Fear, knowledge and the hidden life Read Gothic literature through Frankenstein, Wuthering Heights, Jekyll and Hyde, The Picture of Dorian Gray and Dracula, with a clear guide to the form, its history and its changing modern fears. Gothic literature Gothic novel horror supernatural uncanny double monstrosity science modernity secrecy transgression vampire ghost castle The uncanny Something feels frightening because it is both strange and disturbingly familiar. The double A second figure carries desires, guilt or violence that another self refuses to own. Frame narrative One account encloses another, making the route by which a story reaches us part of its meaning. The sublime Vastness, danger or power produces awe that exceeds comfortable control."
     },
@@ -1537,6 +1538,9 @@
         "/resources/shakespeare/tragedies-overview/",
         "/resources/hamlet/sources-texts-contexts/",
         "/resources/macbeth/summary-analysis/",
+        "/resources/macbeth/quick-guide/",
+        "/resources/antony-and-cleopatra/themes-critical-contexts/",
+        "/resources/shakespeare/gender-power-omkara-maqbool/",
         "/resources/king-lear/summary-guide/"
       ],
       "search": "Tragedy Choice, consequence and the watching audience Explore tragedy through Shakespeare’s Hamlet, Macbeth, Othello, King Lear, Romeo and Juliet, Antony and Cleopatra, Coriolanus and Titus Andronicus. tragedy Shakespeare tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family Reversal An action or discovery turns the direction of a life, plot or public position. Recognition A character comes to understand an identity, relationship or truth that changes the action. Dramatic irony The audience understands more than one or more characters inside the scene. Catastrophe The final movement in which accumulated choices and conflicts become irreversible."
@@ -1604,6 +1608,110 @@
     }
   ],
   "resources": [
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Antony and Cleopatra: Key Themes and Critical Contexts",
+      "description": "Read Rome and Egypt, love and empire, gender and performance alongside Shakespeare’s use of Plutarch.",
+      "tags": [
+        "Antony and Cleopatra",
+        "Critical contexts",
+        "Two worlds, neither simple",
+        "The opposition keeps changing",
+        "History becomes performance",
+        "Defeat does not settle meaning"
+      ],
+      "href": "/resources/antony-and-cleopatra/themes-critical-contexts/",
+      "image": "/02_antony_and_cleopatra.png",
+      "imageAlt": "Antony and Cleopatra key themes and critical contexts cover",
+      "relatedBooks": [
+        "/books/antony-and-cleopatra/"
+      ],
+      "search": "Antony and Cleopatra: Key Themes and Critical Contexts Read Rome and Egypt, love and empire, gender and performance alongside Shakespeare’s use of Plutarch. Antony and Cleopatra Critical contexts Two worlds, neither simple The opposition keeps changing History becomes performance Defeat does not settle meaning"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Gender, Power and Shakespeare",
+      "description": "Compare Bhardwaj’s film adaptations with Othello and Macbeth through gender, objects, bodies and power.",
+      "tags": [
+        "Omkara and Maqbool",
+        "Film adaptation",
+        "Adaptation changes the question",
+        "Evidence enters another culture",
+        "Desire is politically dangerous",
+        "The camera redistributes knowledge"
+      ],
+      "href": "/resources/shakespeare/gender-power-omkara-maqbool/",
+      "image": "/04_gender_power_shakespeare.png",
+      "imageAlt": "Gender Power and Shakespeare guide cover",
+      "relatedBooks": [
+        "/books/othello/",
+        "/books/macbeth/"
+      ],
+      "search": "Gender, Power and Shakespeare Compare Bhardwaj’s film adaptations with Othello and Macbeth through gender, objects, bodies and power. Omkara and Maqbool Film adaptation Adaptation changes the question Evidence enters another culture Desire is politically dangerous The camera redistributes knowledge"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Macbeth: A Quick Study Guide",
+      "description": "Follow prophecy, ambition, royal murder, guilt and the equivocal promises that turn confidence into a trap.",
+      "tags": [
+        "Macbeth",
+        "Quick guide",
+        "How certainty is manufactured",
+        "A greeting is not an instruction",
+        "Power cannot finish the crime",
+        "Words become traps"
+      ],
+      "href": "/resources/macbeth/quick-guide/",
+      "image": "/06_macbeth_study_guide.png",
+      "imageAlt": "Macbeth study guide cover",
+      "relatedBooks": [
+        "/books/macbeth/"
+      ],
+      "search": "Macbeth: A Quick Study Guide Follow prophecy, ambition, royal murder, guilt and the equivocal promises that turn confidence into a trap. Macbeth Quick guide How certainty is manufactured A greeting is not an instruction Power cannot finish the crime Words become traps"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Richard II: A Student Study Guide",
+      "description": "Study deposition, divine kingship, succession and the very different political performances of Richard and Bolingbroke.",
+      "tags": [
+        "Richard II",
+        "History play",
+        "Who can make a king?",
+        "Language becomes a kingdom",
+        "Action looks like necessity",
+        "Deposition was a live danger"
+      ],
+      "href": "/resources/richard-ii/study-guide/",
+      "image": "/09_richard_ii_study_guide.png",
+      "imageAlt": "Richard II student study guide cover",
+      "relatedBooks": [
+        "/books/richard-ii/"
+      ],
+      "search": "Richard II: A Student Study Guide Study deposition, divine kingship, succession and the very different political performances of Richard and Bolingbroke. Richard II History play Who can make a king? Language becomes a kingdom Action looks like necessity Deposition was a live danger"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "The Winter’s Tale: A Complete Study Guide",
+      "description": "Move from jealousy and tyranny to pastoral, time and the difficult work of reconciliation in Shakespeare’s late romance.",
+      "tags": [
+        "The Winter’s Tale",
+        "Complete guide",
+        "What sixteen years can—and cannot—repair",
+        "Jealousy becomes government",
+        "Another kind of play begins",
+        "Wonder does not cancel loss"
+      ],
+      "href": "/resources/winters-tale/complete-study-guide/",
+      "image": "/10_winters_tale_study_guide.png",
+      "imageAlt": "The Winter's Tale complete study guide cover",
+      "relatedBooks": [],
+      "search": "The Winter’s Tale: A Complete Study Guide Move from jealousy and tyranny to pastoral, time and the difficult work of reconciliation in Shakespeare’s late romance. The Winter’s Tale Complete guide What sixteen years can—and cannot—repair Jealousy becomes government Another kind of play begins Wonder does not cancel loss"
+    },
     {
       "type": "resource",
       "typeLabel": "Free guide",
@@ -1748,6 +1856,25 @@
     {
       "type": "resource",
       "typeLabel": "Free guide",
+      "title": "Policing and Community in Linton Kwesi Johnson’s Poetry",
+      "description": "Read Jamaican Creole, rhythm and performance beside the poems’ accounts of policing, resistance and Black British community.",
+      "tags": [
+        "Linton Kwesi Johnson",
+        "Poetry and policing",
+        "Voice is part of the argument",
+        "Creole refuses a borrowed centre",
+        "Rhythm gathers an audience",
+        "Power enters ordinary space"
+      ],
+      "href": "/resources/poetry/linton-kwesi-johnson-policing-community/",
+      "image": "/08_policing_and_community.png",
+      "imageAlt": "Policing and Community in Linton Kwesi Johnson's Poetry cover",
+      "relatedBooks": [],
+      "search": "Policing and Community in Linton Kwesi Johnson’s Poetry Read Jamaican Creole, rhythm and performance beside the poems’ accounts of policing, resistance and Black British community. Linton Kwesi Johnson Poetry and policing Voice is part of the argument Creole refuses a borrowed centre Rhythm gathers an audience Power enters ordinary space"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
       "title": "Apologia Pro Poemate Meo",
       "description": "Read Owen’s title, context, form and stanza argument closely, with routes into comparison and essays.",
       "tags": [
@@ -1819,6 +1946,48 @@
       "imageAlt": "Preview of Streetcar symbols settings and context resource",
       "relatedBooks": [],
       "search": "A Streetcar Named Desire: Symbols, Settings and Context Examine how Williams uses setting, stage space and recurring motifs to create dramatic pressure. Streetcar Modern drama"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Pamela’s Psyche",
+      "description": "Take Pamela’s divided feelings seriously through letters, class, gender, virtue and the novel’s contested reception.",
+      "tags": [
+        "Samuel Richardson",
+        "Psychological reading",
+        "A mind written in the moment",
+        "Feeling has no safe distance",
+        "Readers have always disagreed",
+        "Contradiction needs context"
+      ],
+      "href": "/resources/pamela/psychological-analysis/",
+      "image": "/07_pamelas_psyche.png",
+      "imageAlt": "Pamela's Psyche psychological analysis cover",
+      "relatedBooks": [
+        "/books/pamela/"
+      ],
+      "search": "Pamela’s Psyche Take Pamela’s divided feelings seriously through letters, class, gender, virtue and the novel’s contested reception. Samuel Richardson Psychological reading A mind written in the moment Feeling has no safe distance Readers have always disagreed Contradiction needs context"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "The Picture of Dorian Gray: An Introduction",
+      "description": "Enter Wilde’s novel through the plot, its three central figures, the changing portrait, aestheticism and concealed corruption.",
+      "tags": [
+        "Oscar Wilde",
+        "Introduction",
+        "The portrait keeps the history",
+        "Language acts upon a life",
+        "The surface does not stay innocent",
+        "Biography matters—and has limits"
+      ],
+      "href": "/resources/dorian-gray/introduction/",
+      "image": "/05_picture_of_dorian_gray.png",
+      "imageAlt": "The Picture of Dorian Gray introduction cover",
+      "relatedBooks": [
+        "/books/dorian-gray/"
+      ],
+      "search": "The Picture of Dorian Gray: An Introduction Enter Wilde’s novel through the plot, its three central figures, the changing portrait, aestheticism and concealed corruption. Oscar Wilde Introduction The portrait keeps the history Language acts upon a life The surface does not stay innocent Biography matters—and has limits"
     },
     {
       "type": "resource",
@@ -1957,6 +2126,44 @@
       "imageAlt": "Preview of Half of a Yellow Sun diaspora resource",
       "relatedBooks": [],
       "search": "Half of a Yellow Sun: Diaspora, Nation and Exile Connect nationhood and war to the novel’s treatment of belonging, displacement, diaspora and exile. Half of a Yellow Sun Diaspora"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "A Lost Voice Recovered",
+      "description": "Follow a forgotten Hughes essay from a 1927 encounter with an escaped prisoner to its recovery from the archive.",
+      "tags": [
+        "Langston Hughes",
+        "Archival recovery",
+        "A story with two recoveries",
+        "A meeting on the road",
+        "A foreword crosses languages",
+        "The archive speaks again"
+      ],
+      "href": "/resources/american/langston-hughes-chain-gang-essay/",
+      "image": "/01_a_lost_voice_recovered.png",
+      "imageAlt": "A Lost Voice Recovered cover",
+      "relatedBooks": [],
+      "search": "A Lost Voice Recovered Follow a forgotten Hughes essay from a 1927 encounter with an escaped prisoner to its recovery from the archive. Langston Hughes Archival recovery A story with two recoveries A meeting on the road A foreword crosses languages The archive speaks again"
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Don’t Turn Back",
+      "description": "Trace “Mother to Son” through the speeches of Martin Luther King Jr and Barack Obama, from quotation to shared voice.",
+      "tags": [
+        "Langston Hughes",
+        "Political speech",
+        "A poem inside public speech",
+        "The staircase carries a voice",
+        "Echo becomes shared language",
+        "The image travels again"
+      ],
+      "href": "/resources/american/langston-hughes-dont-turn-back/",
+      "image": "/03_dont_turn_back.png",
+      "imageAlt": "Don't Turn Back cover",
+      "relatedBooks": [],
+      "search": "Don’t Turn Back Trace “Mother to Son” through the speeches of Martin Luther King Jr and Barack Obama, from quotation to shared voice. Langston Hughes Political speech A poem inside public speech The staircase carries a voice Echo becomes shared language The image travels again"
     },
     {
       "type": "resource",
