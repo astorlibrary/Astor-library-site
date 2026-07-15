@@ -177,6 +177,14 @@ const resourcesHub = fs.readFileSync(path.join(root, 'resources', 'index.html'),
 if (!resourcesHub.includes('id="resource-search"')) failures.push('The resources page is missing its guide search');
 if (!resourcesHub.includes('/assets/resources.js')) failures.push('The resources page is missing its search script');
 if (countMatches(resourcesHub, /data-resource-filter=/g) < 7) failures.push('The resources page is missing its category filters');
+if (!resourcesHub.includes('class="resource-editorial"')) failures.push('The resources page is missing its explanation of how to use the free library');
+
+const classicLiterature = fs.readFileSync(path.join(root, 'classic-literature', 'index.html'), 'utf8');
+if (!classicLiterature.includes('<h1>Classic literature.</h1>')) failures.push('The classic literature landing page is missing its main heading');
+if (countMatches(classicLiterature, /class="classic-period"/g) !== 8) failures.push('The classic literature landing page must link all eight literary collections');
+for (const href of ['/library/', '/reading-routes/', '/resources/']) {
+  if (!classicLiterature.includes('href="' + href + '"')) failures.push('The classic literature landing page is missing ' + href);
+}
 
 const readingRoutes = fs.readFileSync(path.join(root, 'reading-routes', 'index.html'), 'utf8');
 if (countMatches(readingRoutes, /class="route-block"/g) !== 5) failures.push('Reading routes must contain five complete routes');
@@ -293,6 +301,9 @@ if (fs.existsSync(distDir)) {
     }
     if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
       failures.push('dist/' + fileName + ' is missing its book description for search engines');
+    }
+    if (/^(?:classic-literature|library|resources|study|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
+      failures.push('dist/' + fileName + ' is missing its collection description for search engines');
     }
     if (/^books\/[^/]+\/index\.html$/.test(fileName)) {
       if (!/<link rel="canonical" href="https:\/\/astorlibrary\.com\/books\/[^/]+\/">/i.test(html)) {

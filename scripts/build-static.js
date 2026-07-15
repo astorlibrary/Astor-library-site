@@ -173,6 +173,57 @@ function addResourceStructuredData(html, source) {
   return html.replace('</head>', canonical + '<script type="application/ld+json" data-astor-resource-schema>' + json + '</script></head>');
 }
 
+function addCollectionStructuredData(html, source) {
+  const href = pageHref(source);
+  if (html.includes('data-astor-collection-schema')) return html;
+
+  const collection = discovery.collections?.find(item => item.href === href);
+  let items = [];
+  let kind = '';
+
+  if (href === '/library/' || href === '/classic-literature/') {
+    items = discovery.books || [];
+    kind = 'Classic literature books';
+  } else if (collection) {
+    items = (discovery.books || []).filter(book => book.collection === collection.title);
+    kind = collection.title + ' books';
+  } else if (href === '/resources/') {
+    items = discovery.resources || [];
+    kind = 'Free literature study guides';
+  } else if (href === '/study/') {
+    items = discovery.studyEditions || [];
+    kind = 'Literature study editions';
+  } else {
+    return html;
+  }
+
+  const title = plainText(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || kind);
+  const description = plainText(html.match(/<meta\b[^>]*name="description"[^>]*content="([^"]+)"/i)?.[1] || kind);
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: title,
+    description,
+    url: absoluteUrl(href),
+    inLanguage: 'en-GB',
+    isPartOf: { '@type': 'WebSite', '@id': SITE_URL + '/#website', name: 'Astor Library', url: SITE_URL + '/' },
+    publisher: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
+    mainEntity: {
+      '@type': 'ItemList',
+      name: kind,
+      numberOfItems: items.length,
+      itemListElement: items.map((item, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: item.title,
+        url: absoluteUrl(item.href)
+      }))
+    }
+  };
+  const json = JSON.stringify(schema).replace(/</g, '\\u003c');
+  return html.replace('</head>', '<script type="application/ld+json" data-astor-collection-schema>' + json + '</script></head>');
+}
+
 function addGlobalMetadata(html, source) {
   if (/http-equiv="refresh"/i.test(html)) return html;
   const href = pageHref(source);
@@ -215,7 +266,7 @@ function addGlobalMetadata(html, source) {
           '@type': 'Organization',
           '@id': SITE_URL + '/#organization',
           name: 'Astor Library',
-          alternateName: 'Astor Editions',
+          alternateName: ['Astor Editions', 'astorlibrary.com'],
           url: SITE_URL + '/',
           logo: { '@type': 'ImageObject', url: absoluteUrl('/icon-512.png'), width: 512, height: 512 },
           description
@@ -224,7 +275,7 @@ function addGlobalMetadata(html, source) {
           '@type': 'WebSite',
           '@id': SITE_URL + '/#website',
           name: 'Astor Library',
-          alternateName: 'Astor Editions',
+          alternateName: ['Astor Editions', 'astorlibrary.com'],
           url: SITE_URL + '/',
           inLanguage: 'en-GB',
           description,
@@ -286,16 +337,22 @@ function addResourceReadingNavigation(html, source) {
 }
 
 function addSiteIndexLink(html, source) {
-  if (!html.includes('<footer') || pageHref(source) === '/site-index/' || html.includes('href="/site-index/"')) return html;
+  if (!html.includes('<footer')) return html;
+  const href = pageHref(source);
+  const links = [];
+  if (href !== '/classic-literature/' && !html.includes('href="/classic-literature/"')) links.push('<a href="/classic-literature/">Classic literature</a>');
+  if (href !== '/site-index/' && !html.includes('href="/site-index/"')) links.push('<a href="/site-index/">Site index</a>');
+  if (!links.length) return html;
   if (html.includes('class="footer-links"')) {
-    return html.replace(/(<div class="footer-links">[\s\S]*?)(<\/div>)/i, '$1<a href="/site-index/">Site index</a>$2');
+    return html.replace(/(<div class="footer-links">[\s\S]*?)(<\/div>)/i, '$1' + links.join('') + '$2');
   }
-  return html.replace('</footer>', '<div class="footer-links"><a href="/site-index/">Site index</a></div></footer>');
+  return html.replace('</footer>', '<div class="footer-links">' + links.join('') + '</div></footer>');
 }
 
 function prepareHtml(html, source) {
   html = addBookStructuredData(html, source);
   html = addResourceStructuredData(html, source);
+  html = addCollectionStructuredData(html, source);
   html = addGlobalMetadata(html, source);
   html = addBookReadingNavigation(html, source);
   html = addResourceReadingNavigation(html, source);
