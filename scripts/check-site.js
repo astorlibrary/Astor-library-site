@@ -155,6 +155,7 @@ for (const file of htmlFiles) {
 
 const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 if (!homepage.includes('class="home-masthead"')) failures.push('The homepage is missing its editorial masthead');
+if (!homepage.includes('independent publisher')) failures.push('The homepage does not clearly identify the modern Astor Library');
 if (!homepage.includes('data-motion-stage')) failures.push('The homepage is missing its living cover display');
 if (countMatches(homepage, /data-motion-cover/g) !== 3) failures.push('The homepage must feature exactly three moving covers');
 if (!homepage.includes('home-finder')) failures.push('The homepage is missing its library search entrance');
@@ -179,6 +180,15 @@ for (const image of ['The%20Odyssey.png', 'Adventures%20of%20Sherlock%20Holmes.p
 }
 for (const image of ['home-reference-victorian.jpg', 'home-reference-shakespeare.jpg', 'home-reference-study.jpg']) {
   if (!homepage.includes('/assets/' + image)) failures.push('The homepage is missing its lighter ' + image + ' moving image');
+}
+
+const editorialFile = path.join(root, 'editorial', 'index.html');
+if (!fs.existsSync(editorialFile)) {
+  failures.push('The site is missing its editorial standards page');
+} else {
+  const editorial = fs.readFileSync(editorialFile, 'utf8');
+  if (!editorial.includes('How the library is made')) failures.push('The editorial standards page is missing its opening statement');
+  if (countMatches(editorial, /class="editorial-principles"/g) !== 1) failures.push('The editorial standards page is missing its principles');
 }
 for (const icon of ['favicon.ico', 'favicon.svg', 'favicon-32x32.png', 'favicon-48x48.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'site.webmanifest']) {
   if (!fs.existsSync(path.join(root, icon))) failures.push('The site is missing ' + icon);
@@ -427,6 +437,9 @@ if (fs.existsSync(distDir)) {
       if (!html.includes('class="book-end-nav"')) {
         failures.push('dist/' + fileName + ' is missing its end-of-page choices');
       }
+      if (!html.includes('class="astor-page-credit"') || !html.includes('href="/editorial/"')) {
+        failures.push('dist/' + fileName + ' is missing its editorial credit');
+      }
       const structuredData = html.match(/<script type="application\/ld\+json" data-astor-book-schema>([\s\S]*?)<\/script>/i);
       if (structuredData) {
         try {
@@ -450,6 +463,26 @@ if (fs.existsSync(distDir)) {
       if (!html.includes('data-astor-resource-schema')) failures.push('dist/' + fileName + ' is missing its free-guide description for search engines');
       if (!html.includes('class="book-breadcrumb resource-breadcrumb"')) failures.push('dist/' + fileName + ' is missing its route back to free resources');
       if (!html.includes('class="book-end-nav resource-end-nav"')) failures.push('dist/' + fileName + ' is missing its end-of-page choices');
+      if (!html.includes('class="astor-page-credit"') || !html.includes('href="/editorial/"')) failures.push('dist/' + fileName + ' is missing its editorial credit');
+    }
+    if (/^(?:about|editorial)\/index\.html$/.test(fileName) && !html.includes('data-astor-identity-schema')) {
+      failures.push('dist/' + fileName + ' is missing its Astor Library identity description');
+    }
+    if (fileName === 'index.html') {
+      const websiteData = html.match(/<script type="application\/ld\+json" data-astor-website-schema>([\s\S]*?)<\/script>/i);
+      if (!websiteData) {
+        failures.push('dist/index.html is missing its Astor Library identity description');
+      } else {
+        try {
+          const schema = JSON.parse(websiteData[1]);
+          const organisation = schema['@graph']?.find(item => item['@type'] === 'Organization');
+          if (!organisation?.publishingPrinciples?.endsWith('/editorial/') || !organisation?.sameAs?.includes('https://ko-fi.com/astorlibrary')) {
+            failures.push('dist/index.html has an incomplete Astor Library identity description');
+          }
+        } catch {
+          failures.push('dist/index.html has an invalid Astor Library identity description');
+        }
+      }
     }
   }
 

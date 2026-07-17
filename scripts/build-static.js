@@ -119,6 +119,13 @@ function addBookStructuredData(html, source) {
       name: 'Astor Library',
       url: SITE_URL + '/'
     },
+    author: {
+      '@type': 'Organization',
+      '@id': SITE_URL + '/#organization',
+      name: 'Astor Library',
+      url: SITE_URL + '/'
+    },
+    publishingPrinciples: absoluteUrl('/editorial/'),
     isPartOf: {
       '@type': 'CollectionPage',
       name: book.collection,
@@ -209,7 +216,9 @@ function addResourceStructuredData(html, source) {
     isAccessibleForFree: true,
     learningResourceType: 'Study guide',
     educationalUse: ['Reading', 'Study', 'Teaching'],
+    creator: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
     publisher: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
+    publishingPrinciples: absoluteUrl('/editorial/'),
     about: relatedBook
       ? { '@type': 'Book', name: relatedBook.title, url: absoluteUrl(relatedBook.href), author: { '@type': 'Person', name: relatedBook.author } }
       : (resource.tags || []).slice(0, 4).map(name => ({ '@type': 'Thing', name })),
@@ -273,6 +282,8 @@ function addCollectionStructuredData(html, source) {
     inLanguage: 'en-GB',
     isPartOf: { '@type': 'WebSite', '@id': SITE_URL + '/#website', name: 'Astor Library', url: SITE_URL + '/' },
     publisher: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
+    author: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
+    publishingPrinciples: absoluteUrl('/editorial/'),
     mainEntity: {
       '@type': 'ItemList',
       name: kind,
@@ -316,6 +327,7 @@ function addGlobalMetadata(html, source) {
   if (!/name="twitter:title"/i.test(html)) metadata += '<meta name="twitter:title" content="' + escapeHtml(title) + '">';
   if (!/name="twitter:description"/i.test(html)) metadata += '<meta name="twitter:description" content="' + escapeHtml(description) + '">';
   if (!/name="twitter:image"/i.test(html)) metadata += '<meta name="twitter:image" content="' + escapeHtml(absoluteImage) + '">';
+  if (!/name="author"/i.test(html)) metadata += '<meta name="author" content="Astor Library">';
   if (!/rel="icon"/i.test(html)) {
     metadata += '<link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48">';
     metadata += '<link rel="icon" href="/favicon.ico" sizes="any">';
@@ -334,10 +346,13 @@ function addGlobalMetadata(html, source) {
           '@type': 'Organization',
           '@id': SITE_URL + '/#organization',
           name: 'Astor Library',
-          alternateName: ['Astor Editions', 'astorlibrary.com'],
+          alternateName: ['Astor Library Editions', 'Astor Editions', 'astorlibrary.com'],
           url: SITE_URL + '/',
           logo: { '@type': 'ImageObject', url: absoluteUrl('/icon-512.png'), width: 512, height: 512 },
-          description
+          description: 'Astor Library is an independent publisher of classic literature editions, study editions and free literature resources.',
+          sameAs: ['https://ko-fi.com/astorlibrary'],
+          publishingPrinciples: absoluteUrl('/editorial/'),
+          knowsAbout: ['Classic literature', 'English literature', 'Shakespeare', 'Literature study guides', 'Literature teaching resources']
         },
         {
           '@type': 'WebSite',
@@ -352,6 +367,29 @@ function addGlobalMetadata(html, source) {
       ]
     };
     metadata += '<script type="application/ld+json" data-astor-website-schema>' + JSON.stringify(websiteSchema).replace(/</g, '\\u003c') + '</script>';
+  }
+  if ((href === '/about/' || href === '/editorial/') && !html.includes('data-astor-identity-schema')) {
+    const identitySchema = {
+      '@context': 'https://schema.org',
+      '@type': href === '/about/' ? 'AboutPage' : 'WebPage',
+      name: title,
+      description,
+      url: absoluteHref,
+      inLanguage: 'en-GB',
+      author: { '@id': SITE_URL + '/#organization' },
+      publisher: { '@id': SITE_URL + '/#organization' },
+      about: {
+        '@type': 'Organization',
+        '@id': SITE_URL + '/#organization',
+        name: 'Astor Library',
+        alternateName: ['Astor Library Editions', 'Astor Editions'],
+        url: SITE_URL + '/',
+        logo: absoluteUrl('/icon-512.png'),
+        sameAs: ['https://ko-fi.com/astorlibrary'],
+        publishingPrinciples: absoluteUrl('/editorial/')
+      }
+    };
+    metadata += '<script type="application/ld+json" data-astor-identity-schema>' + JSON.stringify(identitySchema).replace(/</g, '\\u003c') + '</script>';
   }
   return html.replace('</head>', metadata + '</head>');
 }
@@ -415,6 +453,18 @@ function addResourceReadingNavigation(html, source) {
   return html;
 }
 
+function addEditorialCredit(html, source) {
+  const book = bookContext(source)?.book;
+  const resource = resourceContext(source)?.resource;
+  if ((!book && !resource) || html.includes('class="astor-page-credit"')) return html;
+  const copy = book
+    ? 'Prepared and checked for Astor Library. Dates, publication details and historical claims are supported by the sources listed on this page.'
+    : 'Published by Astor Library as a free literature resource, made to support reading, teaching and independent study.';
+  const credit = '<aside class="astor-page-credit" aria-label="About this page"><span><b>' + (book ? 'Astor Library reading page' : 'Astor Library free guide') + '</b>' + copy + '</span><a href="/editorial/">How we work <span aria-hidden="true">&rarr;</span></a></aside>';
+  const withIntro = html.replace(/(<section class="page-intro"[\s\S]*?<\/section>)/i, '$1' + credit);
+  return withIntro === html ? html.replace(/(<main\b[^>]*>)/i, '$1' + credit) : withIntro;
+}
+
 function addSiteIndexLink(html, source) {
   if (!html.includes('<footer')) return html;
   const href = pageHref(source);
@@ -422,6 +472,7 @@ function addSiteIndexLink(html, source) {
   if (href !== '/subjects/' && !html.includes('href="/subjects/"')) links.push('<a href="/subjects/">Subjects</a>');
   if (href !== '/authors/' && !html.includes('href="/authors/"')) links.push('<a href="/authors/">Writers</a>');
   if (href !== '/classic-literature/' && !html.includes('href="/classic-literature/"')) links.push('<a href="/classic-literature/">Classic literature</a>');
+  if (href !== '/editorial/' && !html.includes('href="/editorial/"')) links.push('<a href="/editorial/">Editorial standards</a>');
   if (href !== '/site-index/' && !html.includes('href="/site-index/"')) links.push('<a href="/site-index/">Site index</a>');
   if (!links.length) return html;
   if (html.includes('class="footer-links"')) {
@@ -457,6 +508,7 @@ function prepareHtml(html, source) {
   html = addBookAuthorLink(html, source);
   html = addBookReadingNavigation(html, source);
   html = addResourceReadingNavigation(html, source);
+  html = addEditorialCredit(html, source);
   html = addSiteIndexLink(html, source);
 
   if (!html.includes('/assets/site.js')) {
