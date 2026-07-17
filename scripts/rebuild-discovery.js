@@ -440,11 +440,11 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '</div></section>' +
   '<section class="explore-paths" aria-label="Ways into Astor Library">' +
   '<a href="/library/"><span>Choose a book</span><p>Read its story, publication history and life on stage or screen.</p></a>' +
-  '<a href="/subjects/"><span>Read by subject</span><p>Begin with Gothic, tragedy, detection, epic or satire and political writing.</p></a>' +
+  '<a href="/subjects/"><span>Read by subject</span><p>Begin with Gothic, tragedy, detection, epic, satire or the ways a story reaches us.</p></a>' +
   '<a href="/authors/"><span>Meet a writer</span><p>Follow an author across the books, forms and questions that shaped their work.</p></a>' +
   '<a href="/study/"><span>Study a set text</span><p>Find an Astor edition with close-reading and essay support.</p></a>' +
   '<a href="/resources/"><span>Use a free guide</span><p>Open focused help with a text, passage, theme or question.</p></a>' +
-  '<a href="/reading-routes/"><span>Follow a question</span><p>Move across periods through home, freedom, fear, power and evidence.</p></a>' +
+  '<a href="/reading-routes/"><span>Follow a question</span><p>Move across periods through home, freedom, fear, power, evidence and voice.</p></a>' +
   '</section>' +
   '<section class="explore-results" aria-label="Search results">' + entryCards + '</section>' +
   '<p class="explore-empty" id="explore-empty" hidden>Nothing quite matches that search yet. Try a title, author, period or broader word.</p>' +

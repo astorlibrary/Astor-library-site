@@ -281,5 +281,65 @@ module.exports = [
       { href: 'https://www.gutenberg.org/ebooks/829', label: 'Project Gutenberg: Gulliver’s Travels' },
       { href: 'https://www.gutenberg.org/ebooks/2130', label: 'Project Gutenberg: Utopia' }
     ]
+  },
+  {
+    slug: 'narration-testimony',
+    title: 'Narration and testimony',
+    navTitle: 'Narration',
+    kicker: 'Who speaks, who listens and what a record can prove',
+    description: 'Explore first-person narration, letters, framed testimony and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, Great Expectations, Huckleberry Finn and Dracula.',
+    search: 'narration narrator testimony witness first person autobiography memoir frame narrative epistolary letters diary documents retrospective voice reliability evidence perspective archive',
+    facts: [
+      { value: '1740', label: 'Pamela turns private letters into the immediate action of a novel' },
+      { value: '1845', label: 'Frederick Douglass publishes an autobiography written under the danger of recapture' },
+      { value: '1847', label: 'Wuthering Heights places most of its history inside Nelly Dean’s account to Lockwood' },
+      { value: '1897', label: 'Dracula assembles diaries, letters, telegrams and clippings into a shared record' }
+    ],
+    introduction: {
+      heading: 'A narrator is not a clear window between the reader and the world.',
+      paragraphs: [
+        'Every account begins from a position. A speaker knows some events directly, learns others by report and understands the past through present needs. The useful question is rarely whether a narrator is simply reliable or unreliable. It is what this person can know, what they cannot see and what the act of telling now allows them to do.',
+        'The difference is especially important when testimony carries real historical risk. Pamela writes while resisting the power of an employer who can intercept her words. Douglass writes to expose slavery while the details of his life may identify people and places. Pip looks back with knowledge his younger self did not possess. Nelly, Lockwood, Huck and Dracula’s document-makers each produce a different relation between experience, evidence and judgement.'
+      ]
+    },
+    methods: [
+      { label: 'Position', title: 'Begin with where the voice stands', copy: 'Ask whether the speaker is participant, witness, editor, survivor or later judge. Social position matters too: freedom, class, age, education and access determine which rooms a narrator may enter and which facts must arrive second-hand.' },
+      { label: 'Time', title: 'Separate the event from its telling', copy: 'A letter written during danger does different work from a memoir shaped years later. Retrospective narrators can interpret earlier mistakes, but that later knowledge may also arrange the past into a story that feels more settled than experience ever was.' },
+      { label: 'Record', title: 'Evidence has been selected', copy: 'A scar, letter, diary or remembered conversation does not explain itself. Notice who preserves it, who reads it and what disappears when several voices are edited into one account. An archive can strengthen knowledge while concealing the hand that assembled it.' }
+    ],
+    books: [
+      { href: '/books/pamela/', title: 'Pamela; or, Virtue Rewarded', author: 'Samuel Richardson', year: '1740', image: '/Pamela.png', copy: 'Letters written under pressure make narration part of Pamela’s struggle for privacy, safety and the right to define her own conduct.' },
+      { href: '/books/narrative-of-the-life-of-frederick-douglass/', title: 'Narrative of the Life of Frederick Douglass', author: 'Frederick Douglass', year: '1845', image: '/Frederick%20Douglass.png', copy: 'Autobiography becomes witness, abolitionist argument and a record of literacy used against the system that tried to forbid it.' },
+      { href: '/books/wuthering-heights/', title: 'Wuthering Heights', author: 'Emily Brontë', year: '1847', image: '/Wuthering%20Heights.png', copy: 'Lockwood records Nelly Dean’s long recollection, with letters, inscriptions and reported speech nested inside their accounts.' },
+      { href: '/books/great-expectations/', title: 'Great Expectations', author: 'Charles Dickens', year: '1860–61', image: '/Great%20Expectations.png', copy: 'The older Pip revisits the desires and misreadings of his younger self without becoming a neutral judge of them.' },
+      { href: '/books/adventures-of-huckleberry-finn/', title: 'Adventures of Huckleberry Finn', author: 'Mark Twain', year: '1884–85', image: '/Huckleberry%20Finn.png', copy: 'Huck’s vernacular first-person voice reveals the assumptions of his world even when his moral language cannot yet escape them.' },
+      { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'A group types, copies and orders its documents in the hope that a collective archive can make an impossible enemy credible.' }
+    ],
+    reading: {
+      heading: 'Read the joins as closely as the voice.',
+      paragraphs: [
+        'Mark every change of speaker, medium or time. Who introduces the next account? Has a letter been copied, a conversation remembered or a document translated? Those joins show how authority moves. They can also reveal what no single voice can supply without another person’s testimony.',
+        'Then compare statement with scene. A narrator may call an action generous, shameful, ordinary or inevitable while the details produce a more difficult judgement. The aim is not to catch every speaker in a lie. It is to understand how vocabulary, position and later knowledge shape what the reader is being asked to believe.'
+      ]
+    },
+    terms: [
+      { term: 'First-person narration', copy: 'A speaker tells the account as “I”, limiting knowledge to what that voice experiences, remembers, learns or chooses to report.' },
+      { term: 'Frame narrative', copy: 'One act of telling encloses another, so the route by which an account reaches the reader becomes part of the work.' },
+      { term: 'Epistolary form', copy: 'A narrative made wholly or partly from letters and other documents written by its characters.' },
+      { term: 'Retrospective narration', copy: 'A later self recounts earlier experience with knowledge, language and judgement unavailable at the time.' }
+    ],
+    resources: [
+      { href: '/reading-routes/#story', label: 'Reading route: who gets to tell the story?', copy: 'Compare four narrators whose right to speak is also part of the action.' },
+      { href: '/resources/pamela/psychological-analysis/', label: 'Pamela’s psyche', copy: 'A psychological approach to Richardson’s first-person letter writing.' },
+      { href: '/resources/great-expectations/study-guide/', label: 'Great Expectations study guide', copy: 'Follow Pip’s memory, ambition and changing judgement.' },
+      { href: '/resources/dracula/complete-overview/', label: 'Dracula: complete overview', copy: 'Read the novel’s documentary form alongside plot and context.' },
+      { href: '/resources/modern/half-of-a-yellow-sun-diaspora/', label: 'Half of a Yellow Sun: diaspora and exile', copy: 'Limited witnesses, historical memory and the struggle over who may write the book.' }
+    ],
+    sources: [
+      { href: 'https://www.loc.gov/item/14003386/', label: 'Library of Congress: 1845 Narrative of the Life of Frederick Douglass' },
+      { href: 'https://www.gutenberg.org/ebooks/6124', label: 'Project Gutenberg: Pamela' },
+      { href: 'https://www.gutenberg.org/ebooks/768', label: 'Project Gutenberg: Wuthering Heights' },
+      { href: 'https://www.gutenberg.org/ebooks/345', label: 'Project Gutenberg: Dracula' }
+    ]
   }
 ];

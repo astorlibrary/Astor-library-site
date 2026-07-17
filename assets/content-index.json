@@ -2,11 +2,11 @@
   "counts": {
     "books": 49,
     "authors": 25,
-    "subjects": 5,
+    "subjects": 6,
     "resources": 33,
     "studyEditions": 23,
     "collections": 8,
-    "entries": 143
+    "entries": 144
   },
   "books": [
     {
@@ -19,7 +19,7 @@
       "href": "/books/a-christmas-carol/",
       "image": "/A%20Christmas%20Carol.png",
       "imageAlt": "Astor Library A Christmas Carol cover",
-      "search": "A Christmas Carol Charles Dickens Victorian Dickens’s 1843 ghost story has all the warmth of Christmas without looking away from poverty. A Christmas Carol, Charles Dickens The story in context First edition, 1843 Five staves, not chapters John Leech’s first images Poverty, children and work Text, printing and illustration Chapman and Hall first edition Marley’s warning Memory as evidence Historical context Urban wealth and visible poverty Prisons, workhouses and “surplus population” Old customs, new print culture A ghost story with moral structure Performance and adaptation timeline Early stage adaptations Dickens’s public readings Scrooge; or, Marley’s Ghost MGM and Alastair Sim Scrooge musical film George C. Scott television film Scrooged The Muppet Christmas Carol Robert Zemeckis motion-capture film Sources and further reading",
+      "search": "A Christmas Carol Charles Dickens Victorian Dickens’s 1843 ghost story has all the warmth of Christmas without looking away from poverty. A Christmas Carol, Charles Dickens The story in context First edition, 1843 Five staves, not chapters John Leech’s first images Poverty, children and work Text, printing and illustration Chapman and Hall first edition Marley’s warning Memory as evidence Historical context Urban wealth and visible poverty Prisons, workhouses and “surplus population” Old customs, new print culture A ghost story with moral structure Performance and adaptation timeline Early stage adaptations Dickens’s public readings Scrooge; or, Marley’s Ghost MGM and Alastair Sim Scrooge musical film George C. Scott television film Scrooged The Muppet Christmas Carol Robert Zemeckis motion-capture film Reading the five staves What changes in Scrooge? He learns to look He joins his own life together He returns to other people Passages worth returning to Sources and further reading",
       "authorHref": "/authors/charles-dickens/",
       "subjects": []
     },
@@ -33,7 +33,7 @@
       "href": "/books/a-midsummer-nights-dream/",
       "image": "/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png",
       "imageAlt": "Astor Library A Midsummer Night's Dream cover",
-      "search": "A Midsummer Night's Dream William Shakespeare Shakespeare Four young lovers, quarrelling fairies and a troupe of amateur actors collide in a moonlit forest where desire refuses to stay fixed. Law and marriage Desire disordered Power, not prettiness Theatre watching itself A Midsummer Night's Dream, William Shakespeare Before entering the wood Text and early publication First Quarto: Thomas Fisher Second Quarto and false dating First Folio Sources and story traditions Pyramus and Thisbe Theseus, Hippolyta and court authority Puck and Robin Goodfellow Aristocrats and artisans Worlds of the play Civic law and forced choice Fuseli and the darker fairy imagination Bad tragedy, good theatre Key dates Probable composition period Francis Meres record First Quarto Pepys at Drury Lane Performance history Madame Vestris at Covent Garden Peter Brook and the white box Erica Whyman: A Play for the Nation Immersive and darker revivals Music, opera and screen versions Mendelssohn Britten's opera Hollywood film Michael Hoffman film Sources and further reading",
+      "search": "A Midsummer Night's Dream William Shakespeare Shakespeare Four young lovers, quarrelling fairies and a troupe of amateur actors collide in a moonlit forest where desire refuses to stay fixed. Law and marriage Desire disordered Power, not prettiness Theatre watching itself A Midsummer Night's Dream, William Shakespeare Before entering the wood Text and early publication First Quarto: Thomas Fisher Second Quarto and false dating First Folio Sources and story traditions Pyramus and Thisbe Theseus, Hippolyta and court authority Puck and Robin Goodfellow Aristocrats and artisans Worlds of the play Civic law and forced choice Fuseli and the darker fairy imagination Bad tragedy, good theatre Key dates Probable composition period Francis Meres record First Quarto Pepys at Drury Lane Performance history Madame Vestris at Covent Garden Peter Brook and the white box Erica Whyman: A Play for the Nation Immersive and darker revivals Music, opera and screen versions Mendelssohn Britten's opera Hollywood film Michael Hoffman film Four companies share the stage Law gives desire a deadline Private vows keep changing direction Domestic conflict alters nature Making theatre becomes the honest work Six changes made in the night The ending remembers more than it admits Sources and further reading",
       "authorHref": "/shakespeare/",
       "subjects": []
     },
@@ -49,7 +49,12 @@
       "imageAlt": "Astor Library Adventures of Huckleberry Finn cover",
       "search": "Adventures of Huckleberry Finn Mark Twain American Classics Huck escapes his violent father and meets Jim on Jackson’s Island. The Astor Library edition Adventures of Huckleberry Finn, Mark Twain How the book works Huck tells more than he knows The river and the shore When Tom arrives A closer reading Huck’s language carries the argument The raft offers fellowship, not freedom from history The ending tests the book’s moral achievement People to keep in view Questions worth carrying through the text What Huck’s voice lets the novel do The moral argument is indirect Freedom is temporary and fragile Each episode tests civilisation Six turning points on the river The difficulty of the ending Adventure becomes control Growth does not become mastery Legal release comes late Sources and further reading",
       "authorHref": "/authors/#mark-twain",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Narration and testimony",
+          "href": "/subjects/narration-testimony/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -156,6 +161,10 @@
         {
           "title": "Detective fiction",
           "href": "/subjects/detective-fiction/"
+        },
+        {
+          "title": "Narration and testimony",
+          "href": "/subjects/narration-testimony/"
         }
       ]
     },
@@ -190,7 +199,12 @@
       "imageAlt": "Astor Library Great Expectations cover",
       "search": "Great Expectations Charles Dickens Victorian Pip’s longing to become a gentleman draws him away from the people who love him and towards a fortune whose true source overturns everything he believes. Great Expectations, Charles Dickens Great Expectations, introduced Astor Library edition Great Expectations Study Edition Pip’s world Serial text and first edition Chapman and Hall book edition All the Year Round Harper’s Weekly Dickens, Kent and the working novel Dickens and his characters Gad’s Hill and late Dickens Work under pressure Locations and social geography Opening with graves, cold and terror Joe Gargery and honest work Gentility, debt and legal power Miss Havisham, Satis House and damaged education “Break their hearts” Adopted daughter, social instrument Victim and agent of harm Magwitch, crime and the false gentleman Magwitch returns Transportation and colonial money Law, office and compartmentalised feeling The two endings Piccadilly and separation Satis House and ambiguity “No shadow of another parting” Key dates Dickens born Debtors’ prison and blacking factory Gad’s Hill Place Serial publication Dickens dies Stage and screen adaptations Alec Guinness stage version David Lean film Later screen versions Sources and further reading",
       "authorHref": "/authors/charles-dickens/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Narration and testimony",
+          "href": "/subjects/narration-testimony/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -221,7 +235,7 @@
       "href": "/books/hamlet/",
       "image": "/Hamlet.png",
       "imageAlt": "Astor Library Hamlet cover",
-      "search": "Hamlet William Shakespeare Shakespeare A prince returns to Elsinore to mourn his father and finds a court built on haste, secrecy and surveillance. Hamlet, William Shakespeare Denmark under watch Text and publication First Quarto: Q1 Second Quarto: Q2 First Folio Sources and revenge tragedy Amleth source tradition Ghost, murder and delay Theatre as investigation Elsinore, spying and court politics Ghost and succession crisis Performance and public language Spying as habit Images, memory and afterlife Ophelia and Victorian memory Hamlet as actor’s test Sarah Bernhardt and cross-gender Hamlet Key dates Probable composition period Stationers’ Register First Quarto Second Quarto Stage and screen adaptations Restoration stage Richard Burton and Broadway David Warner and Peter Hall at the RSC Major screen records Modern transpositions Sources and further reading",
+      "search": "Hamlet William Shakespeare Shakespeare A prince returns to Elsinore to mourn his father and finds a court built on haste, secrecy and surveillance. Hamlet, William Shakespeare Denmark under watch Text and publication First Quarto: Q1 Second Quarto: Q2 First Folio Sources and revenge tragedy Amleth source tradition Ghost, murder and delay Theatre as investigation Elsinore, spying and court politics Ghost and succession crisis Performance and public language Spying as habit Images, memory and afterlife Ophelia and Victorian memory Hamlet as actor’s test Sarah Bernhardt and cross-gender Hamlet Key dates Probable composition period Stationers’ Register First Quarto Second Quarto Stage and screen adaptations Restoration stage Richard Burton and Broadway David Warner and Peter Hall at the RSC Major screen records Modern transpositions Six tests of knowledge Why delay keeps changing He delays to test a story He delays because actions continue after death He acts while appearing not to act Who owns the ending? Sources and further reading",
       "authorHref": "/shakespeare/",
       "subjects": [
         {
@@ -355,7 +369,12 @@
       "imageAlt": "Astor Library Narrative of the Life of Frederick Douglass cover",
       "search": "Narrative of the Life of Frederick Douglass Frederick Douglass American Classics Douglass records the violence of slavery and the deliberate systems that kept enslaved people from knowledge, family security and legal personhood. The Astor Library edition Narrative of the Life of Frederick Douglass, Frederick Douglass How the book works Written by himself Reading changes the field The Appendix draws a line A closer reading The narrative begins with what slavery withholds Reading creates pain as well as possibility The fight with Covey changes the narrative’s direction People to keep in view Questions worth carrying through the text From a stolen history to an authored life Slavery attacks memory and relation Literacy brings pain as well as power The self becomes public evidence Six decisive passages The Appendix and religious language Religious status can protect violence Sacred words are judged by action The target is made exact Sources and further reading",
       "authorHref": "/authors/#frederick-douglass",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Narration and testimony",
+          "href": "/subjects/narration-testimony/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -388,7 +407,12 @@
       "imageAlt": "Astor Library Pamela cover",
       "search": "Pamela; or, Virtue Rewarded Samuel Richardson Restoration & Enlightenment Richardson’s 1740 novel makes private letters the ground of a struggle over sex, class and power. Pamela; or, Virtue Rewarded, Samuel Richardson At a glance Text and publication First edition Richardson: printer turned novelist Revisions and sequels Epistolary form Letters as evidence and danger Writing to parents Writing during confinement Power, class and consent Servant, daughter, writer Master and pursuer Fast circulation and unstable control Pamela in art Mr B finds Pamela writing Bedroom threat Marriage and reward Controversy, parody and marketplace Fielding’s Shamela Haywood’s The Anti-Pamela Joseph Andrews Timeline Samuel Richardson baptised Pamela first published Parody and continuation Highmore’s Pamela series Richardson dies On stage and screen Early performance culture La buona figliuola Screen and television echoes Sources and further reading",
       "authorHref": "/authors/#samuel-richardson",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Narration and testimony",
+          "href": "/subjects/narration-testimony/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -475,7 +499,7 @@
       "href": "/books/jekyll-and-hyde/",
       "image": "/Jekyll%20and%20Hyde.png",
       "imageAlt": "Astor Library Strange Case of Dr Jekyll and Mr Hyde cover",
-      "search": "Strange Case of Dr Jekyll and Mr Hyde Robert Louis Stevenson Victorian A respectable doctor and a violent stranger appear to share a secret no one can explain. Documents before spectacle London as a divided map The role becomes visible Strange Case of Dr Jekyll and Mr Hyde, Robert Louis Stevenson The case begins Text and publication First London edition Case, not confession Stevenson and the story’s origins Stevenson before and after Jekyll Deacon Brodie and the public double life Dream, draft and revision Victorian London, science and identity Front doors, back doors and hidden rooms Law, medicine and silence Experiment and moral responsibility Before modern diagnostic shorthand Stage adaptations Thomas Russell Sullivan and Richard Mansfield Daniel E. Bandmann and rival versions Wildhorn, Bricusse and Cuden musical Screen versions Early screen versions John Barrymore and the silent feature Rouben Mamoulian and Fredric March Victor Fleming, Spencer Tracy, Ingrid Bergman and Lana Turner Sources and further reading",
+      "search": "Strange Case of Dr Jekyll and Mr Hyde Robert Louis Stevenson Victorian A respectable doctor and a violent stranger appear to share a secret no one can explain. Documents before spectacle London as a divided map The role becomes visible Strange Case of Dr Jekyll and Mr Hyde, Robert Louis Stevenson The case begins Text and publication First London edition Case, not confession Stevenson and the story’s origins Stevenson before and after Jekyll Deacon Brodie and the public double life Dream, draft and revision Victorian London, science and identity Front doors, back doors and hidden rooms Law, medicine and silence Experiment and moral responsibility Before modern diagnostic shorthand Stage adaptations Thomas Russell Sullivan and Richard Mansfield Daniel E. Bandmann and rival versions Wildhorn, Bricusse and Cuden musical Screen versions Early screen versions John Barrymore and the silent feature Rouben Mamoulian and Fredric March Victor Fleming, Spencer Tracy, Ingrid Bergman and Lana Turner The order of knowledge Three patterns to follow Doors, windows and cabinets Wills, letters and handwriting Recognition without description What Jekyll gets wrong Sources and further reading",
       "authorHref": "/authors/#robert-louis-stevenson",
       "subjects": [
         {
@@ -498,7 +522,7 @@
       "href": "/books/tess-of-the-durbervilles/",
       "image": "/Tess%20of%20the%20D%27urbervilles.png",
       "imageAlt": "Astor Library Tess of the d'Urbervilles cover",
-      "search": "Tess of the d’Urbervilles Thomas Hardy Victorian Hardy follows Tess through rural labour, sexual violence and social judgement, exposing the unequal standards that make her suffer for harms done to her. A name starts the damage Purity against society Fields, dairy, machine Older law, modern police Tess of the d’Urbervilles, Thomas Hardy At a glance Publication and revision history The Graphic serial and first book edition One-volume edition The Chase and omission Moral controversy The seven phases The Maiden Maiden No More The Rally The Consequence The Woman Pays The Convert Fulfilment Wessex and labour Poverty before plot Pastoral interval Labour and machinery Resort and ritual Hardy’s Wessex in pictures Characters Language and structure On stage and screen Minnie Maddern Fiske stage success Lost silent films Roman Polanski, Tess London Weekend Television BBC One serial Stage memory Sources and further reading",
+      "search": "Tess of the d’Urbervilles Thomas Hardy Victorian Hardy follows Tess through rural labour, sexual violence and social judgement, exposing the unequal standards that make her suffer for harms done to her. A name starts the damage Purity against society Fields, dairy, machine Older law, modern police Tess of the d’Urbervilles, Thomas Hardy At a glance Publication and revision history The Graphic serial and first book edition One-volume edition The Chase and omission Moral controversy The seven phases The Maiden Maiden No More The Rally The Consequence The Woman Pays The Convert Fulfilment Wessex and labour Poverty before plot Pastoral interval Labour and machinery Resort and ritual Hardy’s Wessex in pictures Characters Language and structure On stage and screen Minnie Maddern Fiske stage success Lost silent films Roman Polanski, Tess London Weekend Television BBC One serial Stage memory How the narration asks us to judge The world as Tess experiences it The narrator challenges the verdict Landscape can dwarf the individual Six moments that sharpen the argument Coincidence is not the whole cause Sources and further reading",
       "authorHref": "/authors/#thomas-hardy",
       "subjects": []
     },
@@ -531,7 +555,7 @@
       "href": "/books/the-aeneid/",
       "image": "/The%20Aeneid.png",
       "imageAlt": "Astor Library The Aeneid cover",
-      "search": "The Aeneid Virgil Ancient & Epic Virgil’s epic follows Aeneas from ruined Troy towards Italy, balancing Rome’s promised future against the human cost of exile, duty and war. Arms and a man Pietas under pressure Future glory, present loss Dryden’s English Virgil The Aeneid, Virgil At a glance Virgil, Augustus and Roman memory Virgil Empire after civil war Aeneas, Ascanius and the Julian line Book-by-book structure Storm and Carthage The fall of Troy Wandering Dido Games and mourning The underworld Italy and alliance War expands Camilla and Turnus The epic’s divided loyalties Knowing the destination does not simplify the road Duty pulls in several directions Troy is carried and rebuilt Six scenes that change the poem Reading Dryden’s translation Sense arrives through balance Translation joins two Augustan ages Compare a passage, not isolated words Sources and further reading",
+      "search": "The Aeneid Virgil Ancient & Epic Virgil’s epic follows Aeneas from ruined Troy towards Italy, balancing Rome’s promised future against the human cost of exile, duty and war. Arms and a man Pietas under pressure Future glory, present loss Dryden’s English Virgil The Aeneid, Virgil At a glance Virgil, Augustus and Roman memory Virgil Empire after civil war Aeneas, Ascanius and the Julian line Book-by-book structure Storm and Carthage The fall of Troy Wandering Dido Games and mourning The underworld Italy and alliance War expands Camilla and Turnus The epic’s divided loyalties Knowing the destination does not simplify the road Duty pulls in several directions Troy is carried and rebuilt Six scenes that change the poem Reading Dryden’s translation Sense arrives through balance Translation joins two Augustan ages Compare a passage, not isolated words People caught inside destiny How the poem slows history down Aeneas has to narrate Troy Comparison opens another world Pictures know more than their viewers Questions the ending leaves open Sources and further reading",
       "authorHref": "/authors/#virgil",
       "subjects": [
         {
@@ -578,7 +602,7 @@
       "href": "/books/cricket-on-the-hearth/",
       "image": "/Cricket%20on%20the%20Hearth.png",
       "imageAlt": "Astor Library The Cricket on the Hearth cover",
-      "search": "The Cricket on the Hearth Charles Dickens Victorian A cricket’s song seems to bless the Peerybingles’ home until a disguised stranger and a false appearance bring jealousy into the room. The Astor Library edition The Cricket on the Hearth, Charles Dickens How the book works The cricket speaks without words Evidence and misreading Toys made under pressure A closer reading Comfort is made from ordinary sound and labour Seeing is not the same as knowing The happy ending has work to do People to keep in view Questions worth carrying through the text The three Chirps Home, work and the stories people tell Love protects and confines Toys without imagination Trust must survive uncertainty Sources and further reading",
+      "search": "The Cricket on the Hearth Charles Dickens Victorian A cricket’s song seems to bless the Peerybingles’ home until a disguised stranger and a false appearance bring jealousy into the room. The Astor Library edition The Cricket on the Hearth, Charles Dickens How the book works The cricket speaks without words Evidence and misreading Toys made under pressure A closer reading Comfort is made from ordinary sound and labour Seeing is not the same as knowing The happy ending has work to do People to keep in view Questions worth carrying through the text The three Chirps Home, work and the stories people tell Love protects and confines Toys without imagination Trust must survive uncertainty Read the objects as evidence The house sounds alive before anyone speaks Imagination is also somebody’s labour Appearance creates the crisis and solves it What the celebration does—and does not—repair Sources and further reading",
       "authorHref": "/authors/charles-dickens/",
       "subjects": []
     },
@@ -625,7 +649,7 @@
       "href": "/books/the-odyssey/",
       "image": "/The%20Odyssey.png",
       "imageAlt": "Astor Library The Odyssey cover",
-      "search": "The Odyssey Homer, translated by Samuel Butler Ancient & Epic Ten years after Troy, Odysseus is still absent from Ithaca. The Astor Library edition The Odyssey, Homer, translated by Samuel Butler How the book works The voyage is told twice Every house is a test Knowing and being known A closer reading The poem begins with the person left behind Odysseus survives by controlling a version of events Recognition leads to restoration—and violence People to keep in view Questions worth carrying through the text How the poem tells the journey The hero is absent Odysseus becomes his own singer Return depends on withheld identity Six tests of belonging Sources and further reading",
+      "search": "The Odyssey Homer, translated by Samuel Butler Ancient & Epic Ten years after Troy, Odysseus is still absent from Ithaca. The Astor Library edition The Odyssey, Homer, translated by Samuel Butler How the book works The voyage is told twice Every house is a test Knowing and being known A closer reading The poem begins with the person left behind Odysseus survives by controlling a version of events Recognition leads to restoration—and violence People to keep in view Questions worth carrying through the text How the poem tells the journey The hero is absent Odysseus becomes his own singer Return depends on withheld identity Six tests of belonging The people who read the signs Recognition is not surrender The goddess stages knowledge Loyalty appears before certainty Five moments when heroism becomes difficult Sources and further reading",
       "authorHref": "/authors/#homer-translated-by-samuel-butler",
       "subjects": [
         {
@@ -682,7 +706,7 @@
       "href": "/books/red-badge-of-courage/",
       "image": "/Red%20Badge%20of%20Courage.png",
       "imageAlt": "Astor Library The Red Badge of Courage cover",
-      "search": "The Red Badge of Courage Stephen Crane American Classics Crane places the reader inside a young soldier's fear, shame and self-deception, stripping battlefield courage of patriotic certainty. Battle starts inside The wound as badge Colour and sensation No heroic overview The Red Badge of Courage, Stephen Crane At a glance Publication and reception Stephen Crane From syndication to Appleton Shorter and longer Red Badge Civil War context Chancellorsville as likely model The private soldier's scale Waiting, marching, not knowing The story's movement Waiting for proof First fighting and flight The wounded column Return and performance Flag, courage, self-story Characters Language and method Key passages Will he run? Collective courage Self-justification The body against rhetoric Nature and indifference Courage or compensation? Adaptations and afterlives John Huston film Television film American war reading Ways to study the novel Sources and further reading",
+      "search": "The Red Badge of Courage Stephen Crane American Classics Crane places the reader inside a young soldier's fear, shame and self-deception, stripping battlefield courage of patriotic certainty. Battle starts inside The wound as badge Colour and sensation No heroic overview The Red Badge of Courage, Stephen Crane At a glance Publication and reception Stephen Crane From syndication to Appleton Shorter and longer Red Badge Civil War context Chancellorsville as likely model The private soldier's scale Waiting, marching, not knowing The story's movement Waiting for proof First fighting and flight The wounded column Return and performance Flag, courage, self-story Characters Language and method Key passages Will he run? Collective courage Self-justification The body against rhetoric Nature and indifference Courage or compensation? Adaptations and afterlives John Huston film Television film American war reading Ways to study the novel The narrator stays close without agreeing Colour arrives before strategy Fear becomes an argument Types become people slowly Six kinds of battlefield evidence Does Henry mature? Sources and further reading",
       "authorHref": "/authors/#stephen-crane",
       "subjects": []
     },
@@ -757,7 +781,7 @@
       "href": "/books/titus-andronicus/",
       "image": "/Titus%20Andronicus.png",
       "imageAlt": "Astor Library Titus Andronicus cover",
-      "search": "Titus Andronicus William Shakespeare Shakespeare Shakespeare’s early revenge tragedy drives Roman ceremony into a cycle of sacrifice, mutilation and retaliation, asking what remains when law becomes theatre. Revenge begins as ritual Rome mischooses power The body as evidence Justice becomes theatre Titus Andronicus, William Shakespeare At a glance Text and publication history First quarto Later quartos First Folio Collaboration and style Source and revenge tradition Philomela and Lavinia Revenge form Ritual and state power Aaron and visibility Images and editions Characters Violence as structure Alarbus Bassianus and false proof Titus’s bargain Lavinia reads Ovid Messages to the gods The revenge feast On stage and screen Edward Ravenscroft adaptation Peter Brook, RSC / Stratford Deborah Warner, RSC Julie Taymor, Titus Lucy Bailey, Shakespeare’s Globe Max Webster, RSC Sources and further reading",
+      "search": "Titus Andronicus William Shakespeare Shakespeare Shakespeare’s early revenge tragedy drives Roman ceremony into a cycle of sacrifice, mutilation and retaliation, asking what remains when law becomes theatre. Revenge begins as ritual Rome mischooses power The body as evidence Justice becomes theatre Titus Andronicus, William Shakespeare At a glance Text and publication history First quarto Later quartos First Folio Collaboration and style Source and revenge tradition Philomela and Lavinia Revenge form Ritual and state power Aaron and visibility Images and editions Characters Violence as structure Alarbus Bassianus and false proof Titus’s bargain Lavinia reads Ovid Messages to the gods The revenge feast On stage and screen Edward Ravenscroft adaptation Peter Brook, RSC / Stratford Deborah Warner, RSC Julie Taymor, Titus Lucy Bailey, Shakespeare’s Globe Max Webster, RSC Who gets believed? Three difficulties a production must face Presence beyond speech Extremity becomes unstable Villain, outsider and father What has Lucius inherited? Read the first and last rituals together Sources and further reading",
       "authorHref": "/shakespeare/",
       "subjects": [
         {
@@ -790,7 +814,7 @@
       "href": "/books/utopia/",
       "image": "/Utopia.png",
       "imageAlt": "Astor Library Utopia cover",
-      "search": "Utopia Thomas More Renaissance & Early Modern More’s 1516 dialogue sends a traveller to an imagined commonwealth, testing European assumptions about property, punishment, labour, religion and government. Utopia, Thomas More At a glance A dialogue with no final answer No-place and good-place Property, counsel and punishment Text, sources and early print history Louvain first edition Early editions and added material Robinson, Burnet and English Utopia Historical context More’s career under Henry VIII Plato, Cicero, Lucian and travel writing Enclosure, labour and punishment Timeline Low Countries mission and Antwerp frame Latin publication at Louvain Basel edition and humanist apparatus First English translation Burnet’s translation Afterlives and adaptations Sir Thomas More on stage A Man for All Seasons R. A. Lafferty’s Past Master Five-hundred-year anniversary culture More on screen Sources and further reading",
+      "search": "Utopia Thomas More Renaissance & Early Modern More’s 1516 dialogue sends a traveller to an imagined commonwealth, testing European assumptions about property, punishment, labour, religion and government. Utopia, Thomas More At a glance A dialogue with no final answer No-place and good-place Property, counsel and punishment Text, sources and early print history Louvain first edition Early editions and added material Robinson, Burnet and English Utopia Historical context More’s career under Henry VIII Plato, Cicero, Lucian and travel writing Enclosure, labour and punishment Timeline Low Countries mission and Antwerp frame Latin publication at Louvain Basel edition and humanist apparatus First English translation Burnet’s translation Afterlives and adaptations Sir Thomas More on stage A Man for All Seasons R. A. Lafferty’s Past Master Five-hundred-year anniversary culture More on screen Read the argument before the island Should a thinker serve a ruler? Theft has causes A report, not a blueprint Six institutions to examine The joke inside the title Sources and further reading",
       "authorHref": "/authors/#thomas-more",
       "subjects": [
         {
@@ -815,6 +839,10 @@
         {
           "title": "Gothic literature",
           "href": "/subjects/gothic-literature/"
+        },
+        {
+          "title": "Narration and testimony",
+          "href": "/subjects/narration-testimony/"
         }
       ]
     }
@@ -1605,6 +1633,31 @@
         "/resources/shakespeare/tragedies-overview/"
       ],
       "search": "Satire and political writing Imagined worlds, ridicule and the language of power Explore satire, allegory and political writing through Utopia, The Prince, Gulliver’s Travels, The Man Who Was Thursday and Animal Farm. satire political writing allegory fable utopia dystopia irony parody Swift Orwell More Machiavelli Chesterton revolution power language propaganda Satire Writing that exposes vice, folly or abuse through irony, ridicule, distortion or imitation. Allegory A narrative whose figures and actions sustain a further field of political, moral or historical meaning. Utopia An imagined society used to test how actual societies organise property, work, law and belief. Fable A compressed tale, often using animals, that makes conduct and power visible through a simplified world."
+    },
+    {
+      "type": "subject",
+      "typeLabel": "Subject guide",
+      "title": "Narration and testimony",
+      "description": "Explore first-person narration, letters, framed testimony and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, Great Expectations, Huckleberry Finn and Dracula.",
+      "href": "/subjects/narration-testimony/",
+      "image": "/Pamela.png",
+      "imageAlt": "Narration and testimony books in Astor Library",
+      "bookCount": 6,
+      "relatedBooks": [
+        "/books/pamela/",
+        "/books/narrative-of-the-life-of-frederick-douglass/",
+        "/books/wuthering-heights/",
+        "/books/great-expectations/",
+        "/books/adventures-of-huckleberry-finn/",
+        "/books/dracula/"
+      ],
+      "relatedResources": [
+        "/resources/pamela/psychological-analysis/",
+        "/resources/great-expectations/study-guide/",
+        "/resources/dracula/complete-overview/",
+        "/resources/modern/half-of-a-yellow-sun-diaspora/"
+      ],
+      "search": "Narration and testimony Who speaks, who listens and what a record can prove Explore first-person narration, letters, framed testimony and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, Great Expectations, Huckleberry Finn and Dracula. narration narrator testimony witness first person autobiography memoir frame narrative epistolary letters diary documents retrospective voice reliability evidence perspective archive First-person narration A speaker tells the account as “I”, limiting knowledge to what that voice experiences, remembers, learns or chooses to report. Frame narrative One act of telling encloses another, so the route by which an account reaches the reader becomes part of the work. Epistolary form A narrative made wholly or partly from letters and other documents written by its characters. Retrospective narration A later self recounts earlier experience with knowledge, language and judgement unavailable at the time."
     }
   ],
   "resources": [
@@ -1719,7 +1772,13 @@
       "description": "Revise the plot and characters, then develop thematic, contextual and quotation-led analysis.",
       "tags": [
         "Macbeth",
-        "Summary"
+        "Summary",
+        "A route through the tragedy",
+        "Three threads to follow",
+        "Equivocation",
+        "Blood and sleep",
+        "Kingship and tyranny",
+        "Use the PDF well"
       ],
       "href": "/resources/macbeth/summary-analysis/",
       "image": "/Macbeth%20Summary%20and%20Analysis.png",
@@ -1727,7 +1786,7 @@
       "relatedBooks": [
         "/books/macbeth/"
       ],
-      "search": "Macbeth: Summary and Analysis Revise the plot and characters, then develop thematic, contextual and quotation-led analysis. Macbeth Summary"
+      "search": "Macbeth: Summary and Analysis Revise the plot and characters, then develop thematic, contextual and quotation-led analysis. Macbeth Summary A route through the tragedy Three threads to follow Equivocation Blood and sleep Kingship and tyranny Use the PDF well"
     },
     {
       "type": "resource",
@@ -1736,7 +1795,13 @@
       "description": "Review the plot and characters, connect themes to context and secure useful quotations.",
       "tags": [
         "Romeo and Juliet",
-        "Summary"
+        "Summary",
+        "The tragedy runs on a clock",
+        "Three pressures acting at once",
+        "Love borrows dangerous images",
+        "Adults control the available choices",
+        "Accident needs a prepared disaster",
+        "Build a useful quotation bank"
       ],
       "href": "/resources/romeo-and-juliet/summary-guide/",
       "image": "/Romeo%20and%20Juliet%20plot%2C%20characters%20etc.png",
@@ -1744,7 +1809,7 @@
       "relatedBooks": [
         "/books/romeo-and-juliet/"
       ],
-      "search": "Romeo and Juliet: Summary Guide Review the plot and characters, connect themes to context and secure useful quotations. Romeo and Juliet Summary"
+      "search": "Romeo and Juliet: Summary Guide Review the plot and characters, connect themes to context and secure useful quotations. Romeo and Juliet Summary The tragedy runs on a clock Three pressures acting at once Love borrows dangerous images Adults control the available choices Accident needs a prepared disaster Build a useful quotation bank"
     },
     {
       "type": "resource",
@@ -1753,7 +1818,14 @@
       "description": "Follow the double plot through power, family, sight, madness, suffering and judgement.",
       "tags": [
         "King Lear",
-        "Summary"
+        "Summary",
+        "Keep the two families together",
+        "Love becomes a public test",
+        "A forged letter replaces knowledge",
+        "Private error becomes civil disaster",
+        "Six turning points",
+        "Three words to trace",
+        "Use the summary as a second reading"
       ],
       "href": "/resources/king-lear/summary-guide/",
       "image": "/King%20Lear%20Summary.png",
@@ -1761,7 +1833,7 @@
       "relatedBooks": [
         "/books/king-lear/"
       ],
-      "search": "King Lear: Summary Guide Follow the double plot through power, family, sight, madness, suffering and judgement. King Lear Summary"
+      "search": "King Lear: Summary Guide Follow the double plot through power, family, sight, madness, suffering and judgement. King Lear Summary Keep the two families together Love becomes a public test A forged letter replaces knowledge Private error becomes civil disaster Six turning points Three words to trace Use the summary as a second reading"
     },
     {
       "type": "resource",
@@ -1770,7 +1842,14 @@
       "description": "Compare the structures, character types and dramatic concerns that recur across the tragedies.",
       "tags": [
         "Shakespeare",
-        "Tragedy"
+        "Tragedy",
+        "Begin with the form, not a “tragic flaw”",
+        "What cannot be undone?",
+        "Who understands too late?",
+        "What survives the central death?",
+        "Six questions for comparing plays",
+        "Use the overview as a comparison map",
+        "Further reading"
       ],
       "href": "/resources/shakespeare/tragedies-overview/",
       "image": "/Shakespeare%27s%20Tragedies-%20An%20overview.png",
@@ -1783,7 +1862,7 @@
         "/books/romeo-and-juliet/",
         "/books/titus-andronicus/"
       ],
-      "search": "Shakespeare’s Tragedies: An Overview Compare the structures, character types and dramatic concerns that recur across the tragedies. Shakespeare Tragedy"
+      "search": "Shakespeare’s Tragedies: An Overview Compare the structures, character types and dramatic concerns that recur across the tragedies. Shakespeare Tragedy Begin with the form, not a “tragic flaw” What cannot be undone? Who understands too late? What survives the central death? Six questions for comparing plays Use the overview as a comparison map Further reading"
     },
     {
       "type": "resource",
@@ -1843,7 +1922,13 @@
       "description": "Practise close reading, dramatic analysis and clear paragraph planning with a selected passage.",
       "tags": [
         "Much Ado",
-        "Passage analysis"
+        "Passage analysis",
+        "Start with the scene, not a device",
+        "Who controls the exchange?",
+        "Who knows more?",
+        "What changes on stage?",
+        "Five questions for close reading",
+        "From annotation to paragraph"
       ],
       "href": "/resources/much-ado-about-nothing/passage-analysis/",
       "image": "/Passage%20analysis%20-%20Much%20Ado%20About%20Nothing.png",
@@ -1851,7 +1936,7 @@
       "relatedBooks": [
         "/books/much-ado-about-nothing/"
       ],
-      "search": "Much Ado About Nothing: Passage Analysis Practise close reading, dramatic analysis and clear paragraph planning with a selected passage. Much Ado Passage analysis"
+      "search": "Much Ado About Nothing: Passage Analysis Practise close reading, dramatic analysis and clear paragraph planning with a selected passage. Much Ado Passage analysis Start with the scene, not a device Who controls the exchange? Who knows more? What changes on stage? Five questions for close reading From annotation to paragraph"
     },
     {
       "type": "resource",
@@ -1909,28 +1994,44 @@
       "description": "Examine how command, hyperbole and structure turn public mourning into an expression of private loss.",
       "tags": [
         "Auden",
-        "Elegy"
+        "Elegy",
+        "The poem keeps widening",
+        "How the language carries grief",
+        "Commands answer helplessness",
+        "Silence is carefully orchestrated",
+        "Hyperbole becomes exact feeling",
+        "A lyric with a theatrical past",
+        "Use the guide for movement, not method spotting"
       ],
       "href": "/resources/poetry/funeral-blues/",
       "image": "/Funeral%20Blues.png",
       "imageAlt": "Preview of Funeral Blues resource",
       "relatedBooks": [],
-      "search": "Funeral Blues Examine how command, hyperbole and structure turn public mourning into an expression of private loss. Auden Elegy"
+      "search": "Funeral Blues Examine how command, hyperbole and structure turn public mourning into an expression of private loss. Auden Elegy The poem keeps widening How the language carries grief Commands answer helplessness Silence is carefully orchestrated Hyperbole becomes exact feeling A lyric with a theatrical past Use the guide for movement, not method spotting"
     },
     {
       "type": "resource",
       "typeLabel": "Free guide",
       "title": "The Prelude: ‘One summer evening’",
-      "description": "Follow the passage from confidence to disturbance through nature, power, imagination and fear.",
+      "description": "A nine-page close-reading guide to the passage’s central shift, blank verse, natural power, memory and comparison.",
       "tags": [
         "Wordsworth",
-        "Passage analysis"
+        "Passage analysis",
+        "The movement of the passage.",
+        "The speaker makes himself the centre",
+        "The fixed horizon begins to move",
+        "The real ending happens in the mind",
+        "Five details worth slowing down over.",
+        "Comparison works through difference.",
+        "Private memory beside collective endurance",
+        "Transforming fear beside repeated suffering",
+        "Build from one exact hinge"
       ],
       "href": "/resources/poetry/prelude-one-summer-evening/",
       "image": "/The%20Prelude%20Extract%20Analysis.png",
       "imageAlt": "Preview of The Prelude extract analysis resource",
       "relatedBooks": [],
-      "search": "The Prelude: ‘One summer evening’ Follow the passage from confidence to disturbance through nature, power, imagination and fear. Wordsworth Passage analysis"
+      "search": "The Prelude: ‘One summer evening’ A nine-page close-reading guide to the passage’s central shift, blank verse, natural power, memory and comparison. Wordsworth Passage analysis The movement of the passage. The speaker makes himself the centre The fixed horizon begins to move The real ending happens in the mind Five details worth slowing down over. Comparison works through difference. Private memory beside collective endurance Transforming fear beside repeated suffering Build from one exact hinge"
     },
     {
       "type": "resource",
@@ -2013,7 +2114,14 @@
       "description": "Explore creation, responsibility and isolation through the novel’s layered voices, science and moral consequences.",
       "tags": [
         "Frankenstein",
-        "Study guide"
+        "Study guide",
+        "Who is telling the story?",
+        "The listener at the edge",
+        "A confession that still defends itself",
+        "A reader who becomes a speaker",
+        "Six moments that hold the novel together",
+        "Context that changes the reading",
+        "Use the guide as a map"
       ],
       "href": "/resources/frankenstein/study-guide/",
       "image": "/Frankenstein%20Revision%20Guide.png",
@@ -2021,7 +2129,7 @@
       "relatedBooks": [
         "/books/frankenstein/"
       ],
-      "search": "Frankenstein: Study Guide Explore creation, responsibility and isolation through the novel’s layered voices, science and moral consequences. Frankenstein Study guide"
+      "search": "Frankenstein: Study Guide Explore creation, responsibility and isolation through the novel’s layered voices, science and moral consequences. Frankenstein Study guide Who is telling the story? The listener at the edge A confession that still defends itself A reader who becomes a speaker Six moments that hold the novel together Context that changes the reading Use the guide as a map"
     },
     {
       "type": "resource",
@@ -2030,7 +2138,14 @@
       "description": "Follow Pip’s retrospective narration through class, guilt, crime, shame and moral education.",
       "tags": [
         "Great Expectations",
-        "Dickens"
+        "Dickens",
+        "Three stages of Pip’s education",
+        "Marshes, forge and Satis House",
+        "London and expectation",
+        "The benefactor returns",
+        "Six moments that correct Pip",
+        "Places that remember",
+        "Use the guide without flattening the novel"
       ],
       "href": "/resources/great-expectations/study-guide/",
       "image": "/Guide%20to%20Great%20Expectations.png",
@@ -2038,7 +2153,7 @@
       "relatedBooks": [
         "/books/great-expectations/"
       ],
-      "search": "Great Expectations: Study Guide Follow Pip’s retrospective narration through class, guilt, crime, shame and moral education. Great Expectations Dickens"
+      "search": "Great Expectations: Study Guide Follow Pip’s retrospective narration through class, guilt, crime, shame and moral education. Great Expectations Dickens Three stages of Pip’s education Marshes, forge and Satis House London and expectation The benefactor returns Six moments that correct Pip Places that remember Use the guide without flattening the novel"
     },
     {
       "type": "resource",
@@ -2104,28 +2219,44 @@
       "description": "Examine Gilead through power, gender, memory, language, religion, resistance and Offred’s narration.",
       "tags": [
         "Handmaid's Tale",
-        "Dystopia"
+        "Dystopia",
+        "The story is a reconstruction",
+        "Rules become ordinary detail",
+        "Memory breaks official time",
+        "The archive creates a second danger",
+        "Six systems to trace",
+        "Context without prediction",
+        "Use the guide as a route back into the novel"
       ],
       "href": "/resources/modern/handmaids-tale-guide/",
       "image": "/Handmaid%27s%20Tale%20-%20Complete%20Guide.png",
       "imageAlt": "Preview of Handmaid's Tale guide resource",
       "relatedBooks": [],
-      "search": "The Handmaid’s Tale: Complete Guide Examine Gilead through power, gender, memory, language, religion, resistance and Offred’s narration. Handmaid's Tale Dystopia"
+      "search": "The Handmaid’s Tale: Complete Guide Examine Gilead through power, gender, memory, language, religion, resistance and Offred’s narration. Handmaid's Tale Dystopia The story is a reconstruction Rules become ordinary detail Memory breaks official time The archive creates a second danger Six systems to trace Context without prediction Use the guide as a route back into the novel"
     },
     {
       "type": "resource",
       "typeLabel": "Free guide",
       "title": "Half of a Yellow Sun: Diaspora, Nation and Exile",
-      "description": "Connect nationhood and war to the novel’s treatment of belonging, displacement, diaspora and exile.",
+      "description": "A fourteen-slide argument about diaspora, Biafran history, narrative form and the limits of Richard, Olanna and Ugwu as witnesses.",
       "tags": [
         "Half of a Yellow Sun",
-        "Diaspora"
+        "Diaspora",
+        "What this presentation is doing.",
+        "Diaspora has a double edge",
+        "Nation is treated as something made",
+        "Three witnesses cannot produce one complete view",
+        "The form carries the argument.",
+        "How to use the argument.",
+        "Let the novel set the terms",
+        "Character, form and history are not interchangeable",
+        "Ask what the theory cannot explain"
       ],
       "href": "/resources/modern/half-of-a-yellow-sun-diaspora/",
       "image": "/Half%20A%20Yellow%20Sun-%20Diaspora.png",
       "imageAlt": "Preview of Half of a Yellow Sun diaspora resource",
       "relatedBooks": [],
-      "search": "Half of a Yellow Sun: Diaspora, Nation and Exile Connect nationhood and war to the novel’s treatment of belonging, displacement, diaspora and exile. Half of a Yellow Sun Diaspora"
+      "search": "Half of a Yellow Sun: Diaspora, Nation and Exile A fourteen-slide argument about diaspora, Biafran history, narrative form and the limits of Richard, Olanna and Ugwu as witnesses. Half of a Yellow Sun Diaspora What this presentation is doing. Diaspora has a double edge Nation is treated as something made Three witnesses cannot produce one complete view The form carries the argument. How to use the argument. Let the novel set the terms Character, form and history are not interchangeable Ask what the theory cannot explain"
     },
     {
       "type": "resource",

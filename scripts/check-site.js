@@ -229,17 +229,17 @@ for (const href of ['/library/', '/reading-routes/', '/resources/']) {
 }
 
 const readingRoutes = fs.readFileSync(path.join(root, 'reading-routes', 'index.html'), 'utf8');
-if (countMatches(readingRoutes, /class="route-block"/g) !== 5) failures.push('Reading routes must contain five complete routes');
+if (countMatches(readingRoutes, /class="route-block"/g) !== 6) failures.push('Reading routes must contain six complete routes');
 if (!readingRoutes.includes('/resources/dracula/complete-overview/')) failures.push('Reading routes are not connected to the free guides');
 
-const subjectSlugs = ['gothic-literature', 'tragedy', 'detective-fiction', 'epic-poetry', 'satire-political-writing'];
+const subjectSlugs = require('./subject-data').map(subject => subject.slug);
 const subjectsHubFile = path.join(root, 'subjects', 'index.html');
 if (!fs.existsSync(subjectsHubFile)) {
   failures.push('The subjects directory is missing');
 } else {
   const subjectsHub = fs.readFileSync(subjectsHubFile, 'utf8');
   if (!subjectsHub.includes('<h1>Read by subject.</h1>')) failures.push('The subjects directory is missing its main heading');
-  if (countMatches(subjectsHub, /class="subject-directory-card"/g) !== subjectSlugs.length) failures.push('The subjects directory must contain five guides');
+  if (countMatches(subjectsHub, /class="subject-directory-card"/g) !== subjectSlugs.length) failures.push('The subjects directory must contain every subject guide');
 }
 
 for (const subjectSlug of subjectSlugs) {
@@ -364,7 +364,7 @@ if (!fs.existsSync(discoveryFile)) {
       failures.push('The discovery index has ' + (discovery.authors?.length || 0) + ' writers but the books have ' + uniqueAuthors.size + ' distinct writers');
     }
     if ((discovery.books || []).some(book => !book.authorHref)) failures.push('A discovery book is missing its writer link');
-    if (discovery.subjects?.length !== subjectSlugs.length) failures.push('The discovery index must contain five subject guides');
+    if (discovery.subjects?.length !== subjectSlugs.length) failures.push('The discovery index must contain every subject guide');
     for (const subject of discovery.subjects || []) {
       if (!subject.relatedBooks?.length) failures.push(subject.title + ' has no books in the discovery index');
       for (const href of subject.relatedBooks || []) {
