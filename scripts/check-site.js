@@ -170,13 +170,17 @@ if (countMatches(homeSubjectSection, /href="\/subjects\/[^/]+\/"/g) !== 5) failu
 if (!homepage.includes('data-reference-reel')) failures.push('The homepage is missing its moving reference-library story');
 if (countMatches(homepage, /data-reference-frame/g) !== 3) failures.push('The homepage must feature exactly three reference-library frames');
 if (homepage.includes('class="home-intro-strip"')) failures.push('The homepage has restored the repeated introduction strip');
+if (countMatches(homepage, /class="archive-resource-card"/g) !== 3) failures.push('The homepage must introduce exactly three new free resources');
+for (const resourceHref of ['/resources/winters-tale/complete-study-guide/', '/resources/dorian-gray/introduction/', '/resources/american/langston-hughes-dont-turn-back/']) {
+  if (!homepage.includes('href="' + resourceHref + '"')) failures.push('The homepage is missing its new-resource link to ' + resourceHref);
+}
 for (const image of ['The%20Odyssey.png', 'Adventures%20of%20Sherlock%20Holmes.png', 'Uncle%20Tom%27s%20Cabin.png']) {
   if (!homepage.includes(image)) failures.push('The homepage is missing its featured ' + image + ' cover');
 }
 for (const image of ['home-reference-victorian.jpg', 'home-reference-shakespeare.jpg', 'home-reference-study.jpg']) {
   if (!homepage.includes('/assets/' + image)) failures.push('The homepage is missing its lighter ' + image + ' moving image');
 }
-for (const icon of ['favicon.ico', 'favicon.svg', 'favicon-32x32.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'site.webmanifest']) {
+for (const icon of ['favicon.ico', 'favicon.svg', 'favicon-32x32.png', 'favicon-48x48.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'site.webmanifest']) {
   if (!fs.existsSync(path.join(root, icon))) failures.push('The site is missing ' + icon);
 }
 

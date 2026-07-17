@@ -317,13 +317,14 @@ function addGlobalMetadata(html, source) {
   if (!/name="twitter:description"/i.test(html)) metadata += '<meta name="twitter:description" content="' + escapeHtml(description) + '">';
   if (!/name="twitter:image"/i.test(html)) metadata += '<meta name="twitter:image" content="' + escapeHtml(absoluteImage) + '">';
   if (!/rel="icon"/i.test(html)) {
+    metadata += '<link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48">';
     metadata += '<link rel="icon" href="/favicon.ico" sizes="any">';
     metadata += '<link rel="icon" href="/favicon.svg" type="image/svg+xml">';
     metadata += '<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">';
     metadata += '<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">';
     metadata += '<link rel="manifest" href="/site.webmanifest">';
   }
-  if (!/name="theme-color"/i.test(html)) metadata += '<meta name="theme-color" content="#132936">';
+  if (!/name="theme-color"/i.test(html)) metadata += '<meta name="theme-color" content="#fffaf4">';
 
   if (href === '/' && !html.includes('data-astor-website-schema')) {
     const websiteSchema = {
