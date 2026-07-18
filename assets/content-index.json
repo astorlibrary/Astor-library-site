@@ -2,11 +2,11 @@
   "counts": {
     "books": 49,
     "authors": 25,
-    "subjects": 7,
+    "subjects": 8,
     "resources": 33,
     "studyEditions": 23,
     "collections": 8,
-    "entries": 145
+    "entries": 146
   },
   "books": [
     {
@@ -58,6 +58,10 @@
         {
           "title": "Narration and testimony",
           "href": "/subjects/narration-testimony/"
+        },
+        {
+          "title": "Slavery, freedom and abolition",
+          "href": "/subjects/slavery-freedom-abolition/"
         }
       ]
     },
@@ -147,7 +151,7 @@
       "href": "/books/coriolanus/",
       "image": "/Coriolanus.png",
       "imageAlt": "Astor Library Coriolanus cover",
-      "search": "Coriolanus William Shakespeare Shakespeare Caius Marcius can take Corioli but cannot ask Rome’s citizens for their voices. The Astor Library edition Coriolanus, William Shakespeare How the book works Wounds become political evidence Who speaks for Rome? Volumnia made the soldier A closer reading The first argument is about bread Public honour begins inside the family People to keep in view Questions worth carrying through the text Six political tests What the play refuses to settle A crowd can reason and turn Representation includes calculation Integrity can become incapacity Sources and further reading",
+      "search": "Coriolanus William Shakespeare Shakespeare Caius Marcius can take Corioli but cannot ask Rome’s citizens for their voices. The Astor Library edition Coriolanus, William Shakespeare How the book works Wounds become political evidence Who speaks for Rome? Volumnia made the soldier A closer reading The first argument is about bread Public honour begins inside the family People to keep in view Questions worth carrying through the text Six political tests What the play refuses to settle A crowd can reason and turn Representation includes calculation Integrity can become incapacity Aufidius and the rival self The enemy knows his value Admiration does not remove competition Language prepares the killing Four words that keep changing sides Sources and further reading",
       "authorHref": "/shakespeare/",
       "subjects": [
         {
@@ -388,11 +392,15 @@
       "image": "/Frederick%20Douglass.png",
       "imageAlt": "Astor Library Narrative of the Life of Frederick Douglass cover",
       "search": "Narrative of the Life of Frederick Douglass Frederick Douglass American Classics Douglass records the violence of slavery and the deliberate systems that kept enslaved people from knowledge, family security and legal personhood. The Astor Library edition Narrative of the Life of Frederick Douglass, Frederick Douglass How the book works Written by himself Reading changes the field The Appendix draws a line A closer reading The narrative begins with what slavery withholds Reading creates pain as well as possibility The fight with Covey changes the narrative’s direction People to keep in view Questions worth carrying through the text From a stolen history to an authored life Slavery attacks memory and relation Literacy brings pain as well as power The self becomes public evidence Six decisive passages The Appendix and religious language Religious status can protect violence Sacred words are judged by action The target is made exact Who introduces the author? Authentication reveals the reader’s prejudice Publication is presented as danger “Written by Himself” is an argument Four rhetorical movements to follow Sources and further reading",
-      "authorHref": "/authors/#frederick-douglass",
+      "authorHref": "/authors/frederick-douglass/",
       "subjects": [
         {
           "title": "Narration and testimony",
           "href": "/subjects/narration-testimony/"
+        },
+        {
+          "title": "Slavery, freedom and abolition",
+          "href": "/subjects/slavery-freedom-abolition/"
         }
       ]
     },
@@ -840,9 +848,14 @@
       "href": "/books/uncle-toms-cabin/",
       "image": "/Uncle%20Tom%27s%20Cabin.png",
       "imageAlt": "Astor Library edition of Uncle Tom's Cabin",
-      "search": "Uncle Tom’s Cabin Harriet Beecher Stowe American Classics Mr Shelby’s decision to sell Tom and the young Harry sets two families on separate journeys. The Astor Library edition Uncle Tom’s Cabin, Harriet Beecher Stowe How the book works North and south Faith put on trial A book with many afterlives A closer reading Escape and sale move in opposite directions Feeling is used as public argument The novel and the ‘Tom shows’ are not identical People to keep in view Questions worth carrying through the text How the novel makes its argument A private debt becomes a family catastrophe Flight does not end danger Sentiment is meant to become action Six passages that hold the structure together The book and the stereotype are not the same Adaptation hardened familiar images Endurance includes refusal Influence does not remove criticism Sources and further reading",
+      "search": "Uncle Tom’s Cabin Harriet Beecher Stowe American Classics Mr Shelby’s decision to sell Tom and the young Harry sets two families on separate journeys. The Astor Library edition Uncle Tom’s Cabin, Harriet Beecher Stowe How the book works North and south Faith put on trial A book with many afterlives A closer reading Escape and sale move in opposite directions Feeling is used as public argument The novel and the ‘Tom shows’ are not identical People to keep in view Questions worth carrying through the text How the novel makes its argument A private debt becomes a family catastrophe Flight does not end danger Sentiment is meant to become action Six passages that hold the structure together The book and the stereotype are not the same Adaptation hardened familiar images Endurance includes refusal Influence does not remove criticism Ownership changes its manners, not its power Debt turns affection into a price Insight without action leaves ownership intact Ownership declares its violence openly Women keep the plot moving Abolitionist novel, not first-person testimony The distinction changes how evidence is read Place scenes together without making them equivalent Purpose and limitation can share a sentence Sources and further reading",
       "authorHref": "/authors/#harriet-beecher-stowe",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Slavery, freedom and abolition",
+          "href": "/subjects/slavery-freedom-abolition/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -994,7 +1007,7 @@
       "typeLabel": "Writer",
       "title": "Frederick Douglass",
       "description": "Read Frederick Douglass through Astor Library's page for Narrative of the Life of Frederick Douglass.",
-      "href": "/authors/#frederick-douglass",
+      "href": "/authors/frederick-douglass/",
       "image": "/Frederick%20Douglass.png",
       "imageAlt": "Astor Library Narrative of the Life of Frederick Douglass cover",
       "bookCount": 1,
@@ -1724,6 +1737,23 @@
         "/resources/modern/half-of-a-yellow-sun-diaspora/"
       ],
       "search": "Narration and testimony Who speaks, who listens and what a record can prove Explore first-person narration, letters, framed testimony and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, Great Expectations, Huckleberry Finn and Dracula. narration narrator testimony witness first person autobiography memoir frame narrative epistolary letters diary documents retrospective voice reliability evidence perspective archive First-person narration A speaker tells the account as “I”, limiting knowledge to what that voice experiences, remembers, learns or chooses to report. Frame narrative One act of telling encloses another, so the route by which an account reaches the reader becomes part of the work. Epistolary form A narrative made wholly or partly from letters and other documents written by its characters. Retrospective narration A later self recounts earlier experience with knowledge, language and judgement unavailable at the time."
+    },
+    {
+      "type": "subject",
+      "typeLabel": "Subject guide",
+      "title": "Slavery, freedom and abolition",
+      "description": "Read Frederick Douglass, Harriet Beecher Stowe and Mark Twain with the differences between testimony, abolitionist fiction and a later novel kept firmly in view.",
+      "href": "/subjects/slavery-freedom-abolition/",
+      "image": "/Frederick%20Douglass.png",
+      "imageAlt": "Slavery, freedom and abolition books in Astor Library",
+      "bookCount": 3,
+      "relatedBooks": [
+        "/books/narrative-of-the-life-of-frederick-douglass/",
+        "/books/uncle-toms-cabin/",
+        "/books/adventures-of-huckleberry-finn/"
+      ],
+      "relatedResources": [],
+      "search": "Slavery, freedom and abolition Law, testimony and the struggle to be recognised as a person Read Frederick Douglass, Harriet Beecher Stowe and Mark Twain with the differences between testimony, abolitionist fiction and a later novel kept firmly in view. slavery freedom abolition abolitionism Frederick Douglass Harriet Beecher Stowe Mark Twain Uncle Tom Huckleberry Finn Fugitive Slave Act slave narrative testimony literacy family separation race law America Abolitionism The organised movement to end slavery, pursued through Black activism, testimony, print, political action, resistance and allied work. Slave narrative The historical name for a first-person account of enslavement and freedom; the form joins autobiography to an argument against slavery. Fugitive Slave Act The 1850 federal law that strengthened the recovery of alleged freedom seekers and punished people who helped them. Sentimentalism A literary method that uses feeling, family bonds and scenes of suffering to direct moral judgement and public sympathy."
     }
   ],
   "resources": [
@@ -1951,10 +1981,19 @@
       "type": "resource",
       "typeLabel": "Free guide",
       "title": "Hamlet: Stage, Physical Performance and Audience",
-      "description": "Turn textual details into choices about staging, movement, performance and audience response.",
+      "description": "Use the 10-page guide to study shared stage space, spying, soliloquy, the Mousetrap, physical action and audience knowledge.",
       "tags": [
         "Hamlet",
-        "Performance"
+        "Performance",
+        "A play understood through the act of watching.",
+        "Shared stage space",
+        "Uneven knowledge",
+        "Acting and the body",
+        "Six stage pictures that organise the play.",
+        "Write about performance without inventing a whole production.",
+        "Find the physical instruction already present",
+        "Make the decision precise",
+        "Explain what spectators must now judge"
       ],
       "href": "/resources/hamlet/stage-physical-performance-audience/",
       "image": "/Stage%20and%20Physical%20Performance%20in%20Hamlet.png",
@@ -1962,7 +2001,7 @@
       "relatedBooks": [
         "/books/hamlet/"
       ],
-      "search": "Hamlet: Stage, Physical Performance and Audience Turn textual details into choices about staging, movement, performance and audience response. Hamlet Performance"
+      "search": "Hamlet: Stage, Physical Performance and Audience Use the 10-page guide to study shared stage space, spying, soliloquy, the Mousetrap, physical action and audience knowledge. Hamlet Performance A play understood through the act of watching. Shared stage space Uneven knowledge Acting and the body Six stage pictures that organise the play. Write about performance without inventing a whole production. Find the physical instruction already present Make the decision precise Explain what spectators must now judge"
     },
     {
       "type": "resource",
@@ -2112,16 +2151,30 @@
       "type": "resource",
       "typeLabel": "Free guide",
       "title": "A Streetcar Named Desire: Symbols, Settings and Context",
-      "description": "Examine how Williams uses setting, stage space and recurring motifs to create dramatic pressure.",
+      "description": "Use the 20-page guide to trace New Orleans, Belle Reve, the apartment, light, music, letters and the paper lantern on stage.",
       "tags": [
         "Streetcar",
-        "Modern drama"
+        "Modern drama",
+        "The play’s ideas have addresses, objects and sounds.",
+        "History becomes place",
+        "Objects make pressure visible",
+        "The apartment closes in",
+        "A map of pressure.",
+        "A symbol is an action, not a label.",
+        "Record the material fact",
+        "Ask who handles or hears it",
+        "Find the second meaning",
+        "Read what the stage leaves behind",
+        "Use context to sharpen the conflict.",
+        "Stanley belongs to change, not simple progress",
+        "Blanche’s loss is real and her ideal is selective",
+        "Private rooms hold public structures"
       ],
       "href": "/resources/drama/streetcar-symbols-settings-context/",
       "image": "/Streetcar%20Named%20Desire%20Symbols%2C%20motifs.png",
       "imageAlt": "Preview of Streetcar symbols settings and context resource",
       "relatedBooks": [],
-      "search": "A Streetcar Named Desire: Symbols, Settings and Context Examine how Williams uses setting, stage space and recurring motifs to create dramatic pressure. Streetcar Modern drama"
+      "search": "A Streetcar Named Desire: Symbols, Settings and Context Use the 20-page guide to trace New Orleans, Belle Reve, the apartment, light, music, letters and the paper lantern on stage. Streetcar Modern drama The play’s ideas have addresses, objects and sounds. History becomes place Objects make pressure visible The apartment closes in A map of pressure. A symbol is an action, not a label. Record the material fact Ask who handles or hears it Find the second meaning Read what the stage leaves behind Use context to sharpen the conflict. Stanley belongs to change, not simple progress Blanche’s loss is real and her ideal is selective Private rooms hold public structures"
     },
     {
       "type": "resource",

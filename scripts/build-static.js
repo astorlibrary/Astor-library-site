@@ -167,6 +167,7 @@ function addAuthorStructuredData(html, source) {
   const dates = {
     'Arthur Conan Doyle': { birthDate: '1859-05-22', deathDate: '1930-07-07' },
     'Charles Dickens': { birthDate: '1812-02-07', deathDate: '1870-06-09' },
+    'Frederick Douglass': { birthDate: '1818', deathDate: '1895-02-20' },
     'Jane Austen': { birthDate: '1775-12-16', deathDate: '1817-07-18' },
     'Mary Shelley': { birthDate: '1797-08-30', deathDate: '1851-02-01' }
   }[author.title] || {};

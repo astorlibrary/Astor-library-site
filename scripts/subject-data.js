@@ -402,5 +402,61 @@ module.exports = [
       { href: 'https://www.gutenberg.org/ebooks/768', label: 'Project Gutenberg: Wuthering Heights' },
       { href: 'https://www.gutenberg.org/ebooks/345', label: 'Project Gutenberg: Dracula' }
     ]
+  },
+  {
+    slug: 'slavery-freedom-abolition',
+    title: 'Slavery, freedom and abolition',
+    navTitle: 'Slavery & freedom',
+    kicker: 'Law, testimony and the struggle to be recognised as a person',
+    description: 'Read Frederick Douglass, Harriet Beecher Stowe and Mark Twain with the differences between testimony, abolitionist fiction and a later novel kept firmly in view.',
+    search: 'slavery freedom abolition abolitionism Frederick Douglass Harriet Beecher Stowe Mark Twain Uncle Tom Huckleberry Finn Fugitive Slave Act slave narrative testimony literacy family separation race law America',
+    facts: [
+      { value: '1845', label: 'Douglass publishes his first autobiography while legally vulnerable to recapture' },
+      { value: '1850', label: 'The Fugitive Slave Act strengthens federal support for recapturing freedom seekers' },
+      { value: '1851–52', label: 'Uncle Tom’s Cabin appears first in instalments and then in book form' },
+      { value: '1884–85', label: 'Huckleberry Finn is published after emancipation but set in the slavery era' }
+    ],
+    introduction: {
+      heading: 'The books share a history. They do not speak from the same position.',
+      paragraphs: [
+        'Frederick Douglass writes as a man who survived enslavement and claimed public authority over the account of his own life. Harriet Beecher Stowe writes an abolitionist novel for a mass reading public, using invented families, Christian argument and domestic feeling. Mark Twain looks back after the Civil War through the voice of a white boy whose moral vocabulary has been formed by a slaveholding society. Those differences of genre, date and authority must remain visible.',
+        'Read together, the books show slavery operating through more than individual cruelty. Sale breaks families; law follows people across state lines; literacy is controlled; churches provide both resistance and excuse; apparently kind households retain the power to own and sell. Freedom therefore means more than escape. It includes the recovery of name, family, legal standing, speech and the power to tell one’s own history.'
+      ]
+    },
+    methods: [
+      { label: 'Voice', title: 'Ask who can make a public record', copy: 'Douglass’s authorship is itself part of his argument. Stowe creates and directs several fictional voices. Twain gives Huck a limited first-person account whose ordinary words expose what his society has taught him. The form changes whose knowledge the reader receives and how it must be judged.' },
+      { label: 'Law', title: 'Follow what the law calls property', copy: 'Bills of sale, inheritance, pursuit and fugitive law turn human relationships into enforceable claims. Keep legal language beside the bodily and domestic consequences it produces. The gap between lawful conduct and justice is one of the shelf’s central pressures.' },
+      { label: 'Freedom', title: 'Movement is only the beginning', copy: 'Crossing a river or reaching a free state may change immediate danger without repairing every loss. Literacy, chosen names, reunited families, paid work and control over one’s story give freedom social and intellectual dimensions as well as geographical ones.' }
+    ],
+    books: [
+      { href: '/books/narrative-of-the-life-of-frederick-douglass/', title: 'Narrative of the Life of Frederick Douglass', author: 'Frederick Douglass', year: '1845 · autobiography', image: '/Frederick%20Douglass.png', copy: 'A first-person abolitionist testimony in which literacy, resistance and authorship become acts of freedom.' },
+      { href: '/books/uncle-toms-cabin/', title: 'Uncle Tom’s Cabin', author: 'Harriet Beecher Stowe', year: '1851–52 · abolitionist novel', image: '/Uncle%20Tom%27s%20Cabin.png', copy: 'Two journeys reveal slavery as a market, legal system and assault upon family life, while the novel’s method and afterlife demand critical reading.' },
+      { href: '/books/adventures-of-huckleberry-finn/', title: 'Adventures of Huckleberry Finn', author: 'Mark Twain', year: '1884–85 · later novel set before the Civil War', image: '/Huckleberry%20Finn.png', copy: 'Huck’s vernacular account tests conscience against a society in which helping Jim is taught to him as wrongdoing.' }
+    ],
+    reading: {
+      heading: 'Keep publication date, setting and form on separate lines.',
+      paragraphs: [
+        'Begin each book by writing down who speaks, when the book was published and when its action occurs. Douglass records an enslaved childhood from the position of a fugitive abolitionist in 1845. Stowe publishes during the immediate argument over the 1850 Fugitive Slave Act. Twain publishes two decades after the Thirteenth Amendment while setting the novel before the Civil War. Historical distance changes what each book can know and what its first readers were being asked to confront.',
+        'Then mark every change in the language of ownership. A person may be described as debt, inheritance, labour, evidence, family or fellow human being. The most revealing passages often make two vocabularies collide. Ask who benefits from the official term, whose experience it excludes and whether the narrative provides another name for the relationship.'
+      ]
+    },
+    terms: [
+      { term: 'Abolitionism', copy: 'The organised movement to end slavery, pursued through Black activism, testimony, print, political action, resistance and allied work.' },
+      { term: 'Slave narrative', copy: 'The historical name for a first-person account of enslavement and freedom; the form joins autobiography to an argument against slavery.' },
+      { term: 'Fugitive Slave Act', copy: 'The 1850 federal law that strengthened the recovery of alleged freedom seekers and punished people who helped them.' },
+      { term: 'Sentimentalism', copy: 'A literary method that uses feeling, family bonds and scenes of suffering to direct moral judgement and public sympathy.' }
+    ],
+    resources: [
+      { href: '/authors/frederick-douglass/', label: 'Frederick Douglass: writer page', copy: 'Life, public authorship, the three autobiographies and a route into the 1845 Narrative.' },
+      { href: '/books/narrative-of-the-life-of-frederick-douglass/', label: 'Read the Douglass page', copy: 'Follow literacy, violence, resistance, religion and the book’s framing documents.' },
+      { href: '/books/uncle-toms-cabin/', label: 'Read the Stowe page', copy: 'Keep the two journeys, abolitionist argument and difficult stage afterlife together.' },
+      { href: '/reading-routes/#freedom', label: 'Reading route: what does freedom require?', copy: 'Move from escape towards voice, home, law and self-command across several periods.' }
+    ],
+    sources: [
+      { href: 'https://www.loc.gov/collections/frederick-douglass-papers/articles-and-essays/frederick-douglass-timeline/', label: 'Library of Congress: Frederick Douglass timeline' },
+      { href: 'https://www.nps.gov/frdo/learn/historyculture/frederickdouglass.htm', label: 'National Park Service: Frederick Douglass' },
+      { href: 'https://guides.loc.gov/chronicling-america-slavery-abolition', label: 'Library of Congress: slavery and abolition in the historical press' },
+      { href: 'https://www.nps.gov/articles/000/the-constitution-and-the-underground-railroad.htm', label: 'National Park Service: the Constitution, fugitive law and the Underground Railroad' }
+    ]
   }
 ];
