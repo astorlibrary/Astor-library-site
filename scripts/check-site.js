@@ -229,7 +229,7 @@ for (const href of ['/library/', '/reading-routes/', '/resources/']) {
 }
 
 const readingRoutes = fs.readFileSync(path.join(root, 'reading-routes', 'index.html'), 'utf8');
-if (countMatches(readingRoutes, /class="route-block"/g) !== 6) failures.push('Reading routes must contain six complete routes');
+if (countMatches(readingRoutes, /class="route-block"/g) !== 7) failures.push('Reading routes must contain seven complete routes');
 if (!readingRoutes.includes('/resources/dracula/complete-overview/')) failures.push('Reading routes are not connected to the free guides');
 
 const subjectSlugs = require('./subject-data').map(subject => subject.slug);
@@ -260,12 +260,12 @@ if (!fs.existsSync(authorsHubFile)) {
 } else {
   const authorsHub = fs.readFileSync(authorsHubFile, 'utf8');
   if (!authorsHub.includes('<h1>Writers in the library.</h1>')) failures.push('The writers directory is missing its main heading');
-  for (const authorHref of ['/authors/charles-dickens/', '/authors/frederick-douglass/', '/authors/jane-austen/', '/authors/mary-shelley/', '/authors/arthur-conan-doyle/', '/shakespeare/']) {
+  for (const authorHref of ['/authors/charles-dickens/', '/authors/frederick-douglass/', '/authors/jane-austen/', '/authors/mary-shelley/', '/authors/arthur-conan-doyle/', '/authors/h-g-wells/', '/shakespeare/']) {
     if (!authorsHub.includes('href="' + authorHref + '"')) failures.push('The writers directory is missing ' + authorHref);
   }
 }
 
-for (const authorSlug of ['charles-dickens', 'frederick-douglass', 'jane-austen', 'mary-shelley', 'arthur-conan-doyle']) {
+for (const authorSlug of ['charles-dickens', 'frederick-douglass', 'jane-austen', 'mary-shelley', 'arthur-conan-doyle', 'h-g-wells']) {
   const authorFile = path.join(root, 'authors', authorSlug, 'index.html');
   if (!fs.existsSync(authorFile)) {
     failures.push('The detailed writer page is missing: ' + authorSlug);
@@ -459,7 +459,7 @@ if (fs.existsSync(distDir)) {
         }
       }
     }
-    if (/^resources\/.+\/index\.html$/.test(fileName)) {
+    if (/^resources\/[^/]+\/[^/]+\/index\.html$/.test(fileName)) {
       if (!html.includes('data-astor-resource-schema')) failures.push('dist/' + fileName + ' is missing its free-guide description for search engines');
       if (!html.includes('class="book-breadcrumb resource-breadcrumb"')) failures.push('dist/' + fileName + ' is missing its route back to free resources');
       if (!html.includes('class="book-end-nav resource-end-nav"')) failures.push('dist/' + fileName + ' is missing its end-of-page choices');

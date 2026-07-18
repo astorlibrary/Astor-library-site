@@ -439,7 +439,7 @@ function addResourceReadingNavigation(html, source) {
   const context = resourceContext(source);
   if (!context) return html;
   const { resource, relatedBook } = context;
-  if (!html.includes('class="resource-breadcrumb')) {
+  if (!html.includes('resource-breadcrumb')) {
     const middle = relatedBook
       ? '<a href="' + escapeHtml(relatedBook.href) + '">' + escapeHtml(relatedBook.title) + '</a><span aria-hidden="true">/</span>'
       : '';
@@ -447,7 +447,7 @@ function addResourceReadingNavigation(html, source) {
     const withIntro = html.replace('<section class="page-intro"', breadcrumb + '<section class="page-intro"');
     html = withIntro === html ? html.replace(/(<main\b[^>]*>)/i, '$1' + breadcrumb) : withIntro;
   }
-  if (!html.includes('class="book-end-nav resource-end-nav"')) {
+  if (!html.includes('resource-end-nav')) {
     const bookLink = relatedBook ? '<a href="' + escapeHtml(relatedBook.href) + '">Explore ' + escapeHtml(relatedBook.title) + '</a>' : '';
     const endNav = '<nav class="book-end-nav resource-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a>' + bookLink + '<a href="/resources/">All free resources</a><a href="/site-index/">Site index</a></nav>';
     html = html.replace('</main>', endNav + '</main>');
