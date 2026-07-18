@@ -218,6 +218,7 @@ const authorProfiles = {
   'Frederick Douglass': '/authors/frederick-douglass/',
   'Jane Austen': '/authors/jane-austen/',
   'H. G. Wells': '/authors/h-g-wells/',
+  'Mark Twain': '/authors/mark-twain/',
   'Mary Shelley': '/authors/mary-shelley/',
   'William Shakespeare': '/shakespeare/'
 };
@@ -229,6 +230,7 @@ const authorDescriptions = {
   'H. G. Wells': 'Science arrives on a Surrey common. Wells turns an invasion into an argument about empire, confidence and the limits of explanation.',
   'Jane Austen': 'Read how courtship becomes a test of judgement, money, inheritance and the stories people tell about one another.',
   'Mary Shelley': 'Meet the writer behind Frankenstein through creation, abandonment, competing voices and a career larger than one novel.',
+  'Mark Twain': 'Listen to the voice before trusting it: river knowledge, American speech and a narrator still learning how to judge his world.',
   'William Shakespeare': 'Move through comedy, history and tragedy with source, language and performance kept in view.'
 };
 
@@ -469,7 +471,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
 fs.mkdirSync(path.join(root, 'explore'), { recursive: true });
 fs.writeFileSync(path.join(root, 'explore/index.html'), exploreHtml);
 
-const featuredAuthorNames = ['Charles Dickens', 'Jane Austen', 'Frederick Douglass', 'Mary Shelley', 'Arthur Conan Doyle', 'H. G. Wells', 'William Shakespeare'];
+const featuredAuthorNames = ['Charles Dickens', 'Jane Austen', 'Frederick Douglass', 'Mary Shelley', 'Arthur Conan Doyle', 'H. G. Wells', 'Mark Twain', 'William Shakespeare'];
 const featuredAuthors = featuredAuthorNames.map(function (name) { return authors.find(function (author) { return author.title === name; }); }).filter(Boolean);
 
 function authorCoverStack(author) {
@@ -495,7 +497,7 @@ const authorDirectoryCards = authors.map(function (author) {
 
 const authorsHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-  '<title>Classic Authors and Writers | Astor Library</title><meta name="description" content="Explore classic authors in Astor Library, with substantial pages on Dickens, Austen, Frederick Douglass, Mary Shelley, Conan Doyle, H. G. Wells and Shakespeare, plus links to every available book.">' +
+  '<title>Classic Authors and Writers | Astor Library</title><meta name="description" content="Explore classic authors in Astor Library, with substantial pages on Dickens, Austen, Douglass, Shelley, Conan Doyle, Wells, Mark Twain and Shakespeare, plus links to every available book.">' +
   '<link rel="stylesheet" href="/assets/styles.css"></head><body>' + siteHeader() +
   '<main class="page-wrap authors-page"><section class="authors-hero"><div><p class="kicker">Lives, books and ways of reading</p><h1>Writers in the library.</h1><p class="deck">A book never arrives alone. Here you can follow a writer across several works, see the pressures under which those works were made, and move directly into the Astor reading pages.</p><div class="button-row"><a class="button primary" href="#all-writers">See every writer</a><a class="button secondary" href="/library/">Browse all books</a></div></div><div class="authors-hero-shelf" aria-hidden="true"><img src="/Great%20Expectations.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Adventures%20of%20Sherlock%20Holmes.png" alt=""></div></section>' +
   '<section class="authors-intro"><p>These pages are not short biographies pasted beside a list of titles. They are places to understand how a writer worked: the forms they chose, the world they wrote from and the questions that keep their books alive.</p></section>' +
