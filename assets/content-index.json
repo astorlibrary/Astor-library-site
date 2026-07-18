@@ -2,11 +2,11 @@
   "counts": {
     "books": 49,
     "authors": 25,
-    "subjects": 6,
+    "subjects": 7,
     "resources": 33,
     "studyEditions": 23,
     "collections": 8,
-    "entries": 144
+    "entries": 145
   },
   "books": [
     {
@@ -35,7 +35,12 @@
       "imageAlt": "Astor Library A Midsummer Night's Dream cover",
       "search": "A Midsummer Night's Dream William Shakespeare Shakespeare Four young lovers, quarrelling fairies and a troupe of amateur actors collide in a moonlit forest where desire refuses to stay fixed. Law and marriage Desire disordered Power, not prettiness Theatre watching itself A Midsummer Night's Dream, William Shakespeare Before entering the wood Text and early publication First Quarto: Thomas Fisher Second Quarto and false dating First Folio Sources and story traditions Pyramus and Thisbe Theseus, Hippolyta and court authority Puck and Robin Goodfellow Aristocrats and artisans Worlds of the play Civic law and forced choice Fuseli and the darker fairy imagination Bad tragedy, good theatre Key dates Probable composition period Francis Meres record First Quarto Pepys at Drury Lane Performance history Madame Vestris at Covent Garden Peter Brook and the white box Erica Whyman: A Play for the Nation Immersive and darker revivals Music, opera and screen versions Mendelssohn Britten's opera Hollywood film Michael Hoffman film Four companies share the stage Law gives desire a deadline Private vows keep changing direction Domestic conflict alters nature Making theatre becomes the honest work Six changes made in the night The ending remembers more than it admits Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -68,7 +73,12 @@
       "imageAlt": "Astor Library All's Well That Ends Well cover",
       "search": "All's Well That Ends Well William Shakespeare Shakespeare Helena cures a king and wins the right to choose a husband, but Bertram refuses the marriage and sets conditions he believes she cannot meet. All's Well That Ends Well, William Shakespeare Why the ending unsettles Text and early publication First Folio witness Composition is uncertain Riddle, bargain and proof Sources and story tradition Giletta of Narbonne in the Decameron The Palace of Pleasure The braggart companion Historical context Helena's cure and Bertram's refusal The father's remedy Florence and military display The problem of pursuit Characters Physician's daughter and plot-maker Rank without maturity Language without substance Household authority Witness and counter-plot Performance timeline Goodman's Fields and Drury Lane William Bridges-Adams at Stratford-upon-Avon Noel Willman and Tyrone Guthrie John Barton: stage and television record Trevor Nunn: Peggy Ashcroft as the Countess Peter Hall and Gregory Doran Nancy Meckler: abstract design and problem-play framing Blanche McIntyre: RSC contemporary production Stage adaptations Reconciliation under pressure Comedy of exposure Consent, fantasy and female agency Screen versions BBC / RSC television version BBC Television Shakespeare National Theatre broadcast record Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -118,9 +128,14 @@
       "href": "/books/as-you-like-it/",
       "image": "/As%20you%20like%20it.png",
       "imageAlt": "Astor Library As You Like It cover",
-      "search": "As You Like It William Shakespeare Shakespeare Banished from court, Rosalind enters the Forest of Arden dressed as Ganymede. The Astor Library edition As You Like It, William Shakespeare How the book works Rosalind writes the scene A forest with weather Four marriages and a return A closer reading Arden changes the rules, but not every condition Disguise creates room to think aloud The ending restores more than it explains People to keep in view Questions worth carrying through the text From the wrestling match to the epilogue Arden is not one thing Corin knows the ground Jaques turns life into material The forest interrupts ordinary sequence Sources and further reading",
+      "search": "As You Like It William Shakespeare Shakespeare Banished from court, Rosalind enters the Forest of Arden dressed as Ganymede. The Astor Library edition As You Like It, William Shakespeare How the book works Rosalind writes the scene A forest with weather Four marriages and a return A closer reading Arden changes the rules, but not every condition Disguise creates room to think aloud The ending restores more than it explains People to keep in view Questions worth carrying through the text From the wrestling match to the epilogue Arden is not one thing Corin knows the ground Jaques turns life into material The forest interrupts ordinary sequence Four courtships, four measures of love The comedy knows it is theatre Ganymede is more than a disguise Watching can be generous or evasive Rosalind asks the audience to finish the play Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -179,7 +194,7 @@
       "image": "/IMG_5297.png",
       "imageAlt": "Astor Library Frankenstein commentary edition cover",
       "search": "Frankenstein; or, The Modern Prometheus Mary Shelley Romantic & Regency Victor Frankenstein gives life to a being he immediately abandons, setting creator and creation on a path of loneliness, violence and revenge. Choose your edition Frankenstein, Mary Shelley Frankenstein, introduced Astor Library edition At a glance Text and publication First edition: anonymous, three volumes Composition and revision Bentley edition and new introduction Mary Shelley and 1816 Mary Wollstonecraft Shelley The ghost-story challenge Galvanism, anatomy and life Structure and narrative method Arctic frame Confession and self-defence Education and claim-making 1818 and 1831 Younger, sharper, less providential Revised, framed and morally darkened Which Frankenstein? Stage and screen adaptations Presumption; or, the Fate of Frankenstein Edison Studios: first screen adaptation Before Karloff James Whale and Universal Key dates Mary Wollstonecraft Godwin born Geneva and the ghost-story challenge Anonymous first edition Second edition and stage success Revised edition Mary Shelley dies Sources and further reading Three passages worth slowing down for The creation scene Learning beside the De Laceys The last account",
-      "authorHref": "/authors/#mary-shelley",
+      "authorHref": "/authors/mary-shelley/",
       "subjects": [
         {
           "title": "Gothic literature",
@@ -355,7 +370,12 @@
       "imageAlt": "Astor Library Much Ado About Nothing cover",
       "search": "Much Ado About Nothing William Shakespeare Shakespeare Beatrice and Benedick spar their way towards love while a darker deception turns Claudio against Hero in public. Merry war Seeing wrongly Public damage Repair with scars Much Ado About Nothing, William Shakespeare What Messina hears and sees Text and early publication First Quarto First Folio Sources and dramatic design The slandered bride plot Shakespeare's dramatic invention A household under observation Low comedy solves high damage How the deceptions work Love produced by performance Masculine wit exposed False evidence and public shame Death, report and repair Characters Wit, anger, judgement Performance changed by loyalty Silenced centre Romantic ideal and social cruelty Malcontent without depth Comic error, factual truth Performance history RSC actor records Christopher Luscombe: Love's Labour's Won Iqbal Khan: Delhi setting Roy Alexander Weise: futuristic world Michael Longhurst: football culture Screen versions and later adaptations Kenneth Branagh film Joss Whedon film Public Theater / PBS Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -367,7 +387,7 @@
       "href": "/books/narrative-of-the-life-of-frederick-douglass/",
       "image": "/Frederick%20Douglass.png",
       "imageAlt": "Astor Library Narrative of the Life of Frederick Douglass cover",
-      "search": "Narrative of the Life of Frederick Douglass Frederick Douglass American Classics Douglass records the violence of slavery and the deliberate systems that kept enslaved people from knowledge, family security and legal personhood. The Astor Library edition Narrative of the Life of Frederick Douglass, Frederick Douglass How the book works Written by himself Reading changes the field The Appendix draws a line A closer reading The narrative begins with what slavery withholds Reading creates pain as well as possibility The fight with Covey changes the narrative’s direction People to keep in view Questions worth carrying through the text From a stolen history to an authored life Slavery attacks memory and relation Literacy brings pain as well as power The self becomes public evidence Six decisive passages The Appendix and religious language Religious status can protect violence Sacred words are judged by action The target is made exact Sources and further reading",
+      "search": "Narrative of the Life of Frederick Douglass Frederick Douglass American Classics Douglass records the violence of slavery and the deliberate systems that kept enslaved people from knowledge, family security and legal personhood. The Astor Library edition Narrative of the Life of Frederick Douglass, Frederick Douglass How the book works Written by himself Reading changes the field The Appendix draws a line A closer reading The narrative begins with what slavery withholds Reading creates pain as well as possibility The fight with Covey changes the narrative’s direction People to keep in view Questions worth carrying through the text From a stolen history to an authored life Slavery attacks memory and relation Literacy brings pain as well as power The self becomes public evidence Six decisive passages The Appendix and religious language Religious status can protect violence Sacred words are judged by action The target is made exact Who introduces the author? Authentication reveals the reader’s prejudice Publication is presented as danger “Written by Himself” is an argument Four rhetorical movements to follow Sources and further reading",
       "authorHref": "/authors/#frederick-douglass",
       "subjects": [
         {
@@ -590,7 +610,12 @@
       "imageAlt": "Astor Library The Comedy of Errors cover",
       "search": "The Comedy of Errors William Shakespeare Shakespeare Two sets of identical twins turn a single day in Ephesus into a whirl of missed meals, misplaced money, wrongful arrest and marital confusion. The Comedy of Errors, William Shakespeare The comic machine Gray’s Inn and the “Night of Errors” No quarto; First Folio only Plautus, doubled Classical unities, English pressure Text, sources and earliest performance First Folio printing Menaechmi and Amphitruo Gray’s Inn performance record Historical context Trade, law and suspicion Farce inside a recovery plot Adriana and the wrong husband Names, bodies and proof Visual history Folio image: a short play in a large book Doubling as visible design RSC musical: farce with movement Performance timeline Gray’s Inn revels Court performance See If You Like It The Twins Samuel Phelps at Sadler’s Wells Broadway musical The Boys from Syracuse Clifford Williams for the RSC Trevor Nunn’s RSC musical ITV television version of the RSC musical BBC Television Shakespeare Shakespeare’s Globe National Theatre / broadcast life RSC: Phillip Breen Stage adaptations From Roman twin farce to English romance comedy The Boys from Syracuse RSC musical adaptation Screen versions ITV / RSC musical Angoor and other free adaptations Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -637,7 +662,12 @@
       "imageAlt": "Astor Library The Merry Wives of Windsor cover",
       "search": "The Merry Wives of Windsor William Shakespeare Shakespeare Falstaff sends the same love letter to two married women and discovers that the wives of Windsor are far better plotters than he is. One scheme, two wives Windsor judges Falstaff Ford performs suspicion Herne’s final trick The Merry Wives of Windsor, William Shakespeare Windsor turns the tables Text and publication history First quarto Second quarto and False Folio First Folio text Memory, performance and print Windsor and local England Houses as comic machinery Collaboration and control Marriage choice Local accents and social friction The three punishments of Falstaff The buck-basket The fat woman of Brentford Herne’s Oak Visual history Falstaff outside history A named English town Folklore as social theatre Characters in the drama Language and interpretation Stage, music and screen Whitehall performance Otto Nicolai, Die lustigen Weiber von Windsor Gaiety Theatre and Arthur Sullivan BBC Television Shakespeare Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -741,7 +771,12 @@
       "imageAlt": "Astor Library The Taming of the Shrew cover",
       "search": "The Taming of the Shrew William Shakespeare Shakespeare Shakespeare’s early comedy sets courtship and marriage against coercion, performance and resistance: a theatrical argument that remains funny, difficult and fiercely contested. The Taming of the Shrew, William Shakespeare At a glance First Folio text, later quarto A similar play, different text Italian comedy and English translation The unfinished Christopher Sly frame Text, sources and first printing First Folio: the first secure printed text Gascoigne’s Supposes A Shrew in quarto Marriage, household and law Dowry, household rule and public contract Names, roles and performance The final speech cannot be ignored The play in pictures Edward Robert Hughes: Katherina isolated Charles Robert Leslie: domestic theatre Pickford and Fairbanks on film Performance timeline Fletcher answers Shakespeare: The Woman’s Prize John Lacy: Sauny the Scot David Garrick: Catharine and Petruchio Return of Shakespeare’s fuller text in Britain Sam Taylor film: Mary Pickford and Douglas Fairbanks Kiss Me, Kate Zeffirelli film: Elizabeth Taylor and Richard Burton Michael Bogdanov at the RSC BBC Television Shakespeare 10 Things I Hate About You RSC pairing with Fletcher Shakespeare’s Globe: Toby Frow RSC gender-flipped production Adaptations The Woman’s Prize, or The Tamer Tamed Adaptation as normal practice Screen versions The Taming of the Shrew Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -755,7 +790,12 @@
       "imageAlt": "Astor Library The Tempest cover",
       "search": "The Tempest William Shakespeare Shakespeare Shipwreck, music and magic give Prospero control of an island stage—until freedom, memory and forgiveness test the limits of his authority. Folio first Rule tested Music and report Prospero changes The Tempest, William Shakespeare At a glance Text and First Folio history First printed witness Date and early performance Comedy, romance, late play Source history and island context Sea Venture and Bermuda Reports behind the storm Montaigne and Gonzalo Court culture and spectacle Language, power and theatrical form Rule as theatre Service and promised liberty Island claim and imposed language Wonder and confinement Key passages The storm Prospero’s history lesson Caliban’s claim Gonzalo’s commonwealth The masque and its break Renunciation and release Characters Performance and adaptation timeline Whitehall Palace Dryden and Davenant adaptation Peter Brook and John Gielgud Jonathan Miller and colonial reading Prospero and Miranda Peter Greenaway, Prospero’s Books Julie Taymor film RSC, Gregory Doran Jamie Lloyd, Theatre Royal Drury Lane Ways to study the play Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -1181,7 +1221,7 @@
       "typeLabel": "Writer",
       "title": "Mary Shelley",
       "description": "Read Mary Shelley through Astor Library's page for Frankenstein; or, The Modern Prometheus.",
-      "href": "/authors/#mary-shelley",
+      "href": "/authors/mary-shelley/",
       "image": "/IMG_5297.png",
       "imageAlt": "Astor Library Frankenstein commentary edition cover",
       "bookCount": 1,
@@ -1546,6 +1586,32 @@
     {
       "type": "subject",
       "typeLabel": "Subject guide",
+      "title": "Comedy and comic form",
+      "description": "Read Shakespearean comedy through mistaken identity, disguise, courtship, performance and recognition, from The Comedy of Errors and A Midsummer Night’s Dream to As You Like It and The Tempest.",
+      "href": "/subjects/comedy/",
+      "image": "/Comedy%20of%20Errors.png",
+      "imageAlt": "Comedy and comic form books in Astor Library",
+      "bookCount": 8,
+      "relatedBooks": [
+        "/books/comedy-of-errors/",
+        "/books/taming-of-the-shrew/",
+        "/books/a-midsummer-nights-dream/",
+        "/books/much-ado-about-nothing/",
+        "/books/as-you-like-it/",
+        "/books/merry-wives-of-windsor/",
+        "/books/alls-well-that-ends-well/",
+        "/books/the-tempest/"
+      ],
+      "relatedResources": [
+        "/resources/midsummer-nights-dream/study-guide/",
+        "/resources/much-ado-about-nothing/passage-analysis/",
+        "/resources/shakespeare/gender-power-omkara-maqbool/"
+      ],
+      "search": "Comedy and comic form Mistakes, performances and the difficult work of ending well Read Shakespearean comedy through mistaken identity, disguise, courtship, performance and recognition, from The Comedy of Errors and A Midsummer Night’s Dream to As You Like It and The Tempest. comedy comic form Shakespeare laughter farce festive comedy disguise mistaken identity recognition marriage courtship performance audience ending romance problem play Comic error A mistake in identity, intention or interpretation that exposes the assumptions by which a social world operates. Disguise A performed identity that redistributes knowledge and changes what a character may say, desire or arrange. Recognition The moment when a person, relationship or history becomes newly known and the action can move towards settlement. Festive comedy A comic pattern in which ordinary restraint loosens for a holiday, forest or night before a changed social order returns."
+    },
+    {
+      "type": "subject",
+      "typeLabel": "Subject guide",
       "title": "Tragedy",
       "description": "Explore tragedy through Shakespeare’s Hamlet, Macbeth, Othello, King Lear, Romeo and Juliet, Antony and Cleopatra, Coriolanus and Titus Andronicus.",
       "href": "/subjects/tragedy/",
@@ -1902,10 +1968,19 @@
       "type": "resource",
       "typeLabel": "Free guide",
       "title": "A Midsummer Night’s Dream: Study Guide",
-      "description": "Trace love, magic and authority through the play’s movement from disorder to performance and reconciliation.",
+      "description": "A 21-page guide to plot, characters, love, transformation, dreams, fairies, staging, adaptations and Puck’s epilogue.",
       "tags": [
         "Midsummer",
-        "Study guide"
+        "Study guide",
+        "A whole play arranged for return visits.",
+        "People and plot",
+        "Ideas in the action",
+        "Stage and afterlife",
+        "Four worlds meet in one comedy.",
+        "Use the guide without flattening the play.",
+        "Choose one relationship to track",
+        "Join theme to stage action",
+        "Build comparison into the paragraph"
       ],
       "href": "/resources/midsummer-nights-dream/study-guide/",
       "image": "/A%20Midsummer%20Night%27s%20Dream%20Study%20Guide.png",
@@ -1913,7 +1988,7 @@
       "relatedBooks": [
         "/books/a-midsummer-nights-dream/"
       ],
-      "search": "A Midsummer Night’s Dream: Study Guide Trace love, magic and authority through the play’s movement from disorder to performance and reconciliation. Midsummer Study guide"
+      "search": "A Midsummer Night’s Dream: Study Guide A 21-page guide to plot, characters, love, transformation, dreams, fairies, staging, adaptations and Puck’s epilogue. Midsummer Study guide A whole play arranged for return visits. People and plot Ideas in the action Stage and afterlife Four worlds meet in one comedy. Use the guide without flattening the play. Choose one relationship to track Join theme to stage action Build comparison into the paragraph"
     },
     {
       "type": "resource",
@@ -2201,16 +2276,26 @@
       "type": "resource",
       "typeLabel": "Free guide",
       "title": "The Kite Runner: Walkthrough",
-      "description": "Follow the novel’s turning points through memory, guilt, redemption, violence and social division.",
+      "description": "A 58-page chapter companion following Amir, Hassan, Baba and Sohrab through memory, migration, social division and attempted repair.",
       "tags": [
         "The Kite Runner",
-        "Walkthrough"
+        "Walkthrough",
+        "A chapter companion built around consequences.",
+        "Friendship takes place inside inequality",
+        "America changes circumstance, not memory",
+        "Rescue does not complete repair",
+        "Five threads to carry through the guide.",
+        "Context needs care.",
+        "Establish the speaker and scene",
+        "Use a reliable history beside the PDF",
+        "Ask why the history arrives here",
+        "Turn a slide into a paragraph."
       ],
       "href": "/resources/modern/kite-runner-walkthrough/",
       "image": "/The%20Kite%20Runner%20Overview.png",
       "imageAlt": "Preview of Kite Runner walkthrough resource",
       "relatedBooks": [],
-      "search": "The Kite Runner: Walkthrough Follow the novel’s turning points through memory, guilt, redemption, violence and social division. The Kite Runner Walkthrough"
+      "search": "The Kite Runner: Walkthrough A 58-page chapter companion following Amir, Hassan, Baba and Sohrab through memory, migration, social division and attempted repair. The Kite Runner Walkthrough A chapter companion built around consequences. Friendship takes place inside inequality America changes circumstance, not memory Rescue does not complete repair Five threads to carry through the guide. Context needs care. Establish the speaker and scene Use a reliable history beside the PDF Ask why the history arrives here Turn a slide into a paragraph."
     },
     {
       "type": "resource",

@@ -260,12 +260,12 @@ if (!fs.existsSync(authorsHubFile)) {
 } else {
   const authorsHub = fs.readFileSync(authorsHubFile, 'utf8');
   if (!authorsHub.includes('<h1>Writers in the library.</h1>')) failures.push('The writers directory is missing its main heading');
-  for (const authorHref of ['/authors/charles-dickens/', '/authors/jane-austen/', '/authors/arthur-conan-doyle/', '/shakespeare/']) {
+  for (const authorHref of ['/authors/charles-dickens/', '/authors/jane-austen/', '/authors/mary-shelley/', '/authors/arthur-conan-doyle/', '/shakespeare/']) {
     if (!authorsHub.includes('href="' + authorHref + '"')) failures.push('The writers directory is missing ' + authorHref);
   }
 }
 
-for (const authorSlug of ['charles-dickens', 'jane-austen', 'arthur-conan-doyle']) {
+for (const authorSlug of ['charles-dickens', 'jane-austen', 'mary-shelley', 'arthur-conan-doyle']) {
   const authorFile = path.join(root, 'authors', authorSlug, 'index.html');
   if (!fs.existsSync(authorFile)) {
     failures.push('The detailed writer page is missing: ' + authorSlug);

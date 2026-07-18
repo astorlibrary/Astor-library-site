@@ -58,6 +58,67 @@ module.exports = [
     ]
   },
   {
+    slug: 'comedy',
+    title: 'Comedy and comic form',
+    navTitle: 'Comedy',
+    kicker: 'Mistakes, performances and the difficult work of ending well',
+    description: 'Read Shakespearean comedy through mistaken identity, disguise, courtship, performance and recognition, from The Comedy of Errors and A Midsummer Night’s Dream to As You Like It and The Tempest.',
+    search: 'comedy comic form Shakespeare laughter farce festive comedy disguise mistaken identity recognition marriage courtship performance audience ending romance problem play',
+    facts: [
+      { value: '1590s', label: 'The Comedy of Errors, The Taming of the Shrew and A Midsummer Night’s Dream belong to Shakespeare’s early comic work' },
+      { value: 'c.1598–99', label: 'Much Ado About Nothing and As You Like It make wit, disguise and testing central to courtship' },
+      { value: '1623', label: 'The First Folio opens with a section of comedies before histories and tragedies' },
+      { value: 'Not one mood', label: 'The Folio’s comedies include farce, uneasy social settlements and plays later called romances' }
+    ],
+    introduction: {
+      heading: 'A comic ending does not make every problem disappear.',
+      paragraphs: [
+        'Shakespearean comedy often begins by making ordinary identity unstable. Twins arrive in the wrong city, a woman takes a male name, lovers transfer their devotion overnight, or a household turns a jealous husband into the subject of its own play. Confusion is entertaining, but it also exposes how readily rank, gender and reputation depend on performance and recognition.',
+        'The endings usually gather people into marriages, pardons and restored families. Those settlements matter, yet they do not erase everything that came before. Malvolio is not reconciled in Twelfth Night; Jaques leaves the dance in As You Like It; Helena wins Bertram under conditions audiences still argue about. Comedy is therefore more than laughter. It is a way of testing what a community can repair, what it chooses to forgive and who remains awkwardly outside the final picture.'
+      ]
+    },
+    methods: [
+      { label: 'Error', title: 'Mistake reveals a working rule', copy: 'A misidentified twin or misread letter creates more than confusion. It shows what characters expect a husband, servant, woman or gentleman to look and sound like. Watch the assumption that makes each error plausible before the correction arrives.' },
+      { label: 'Performance', title: 'Disguise gives thought a body', copy: 'Rosalind does not merely hide as Ganymede; she uses the role to direct conversation and test Orlando. Comic performance can release speech that a character’s ordinary position forbids, while creating desires and obligations that cannot be dismissed as make-believe.' },
+      { label: 'Settlement', title: 'The last scene distributes belonging', copy: 'Marriage, recognition and pardon decide who may join the dance, household or restored state. Count the people included, but also notice refusals, forced choices and sudden conversions. An ending can be formally happy while leaving a moral question open.' }
+    ],
+    books: [
+      { href: '/books/comedy-of-errors/', title: 'The Comedy of Errors', author: 'William Shakespeare', year: 'c.1590s', image: '/Comedy%20of%20Errors.png', copy: 'Separated twins, mistaken identity and a farce whose first scene begins under a sentence of death.' },
+      { href: '/books/taming-of-the-shrew/', title: 'The Taming of the Shrew', author: 'William Shakespeare', year: 'c.1590–94', image: '/Taming%20of%20the%20Shrew.png', copy: 'Courtship, household power and performed obedience in a comedy whose final speech remains contested.' },
+      { href: '/books/a-midsummer-nights-dream/', title: 'A Midsummer Night’s Dream', author: 'William Shakespeare', year: 'c.1595–96', image: '/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png', copy: 'Athenian law, fairy interference and amateur theatre meet in a night of unstable desire.' },
+      { href: '/books/much-ado-about-nothing/', title: 'Much Ado About Nothing', author: 'William Shakespeare', year: 'c.1598–99', image: '/Much%20Ado%20About%20Nothing.png', copy: 'Wit, surveillance and slander place two very different courtships under public pressure.' },
+      { href: '/books/as-you-like-it/', title: 'As You Like It', author: 'William Shakespeare', year: 'c.1599', image: '/As%20you%20like%20it.png', copy: 'Exile and disguise let Rosalind test romantic language while Arden keeps labour and inequality in sight.' },
+      { href: '/books/merry-wives-of-windsor/', title: 'The Merry Wives of Windsor', author: 'William Shakespeare', year: 'c.1597–1601', image: '/Merry%20Wives%20of%20Windsor.png', copy: 'Mistress Ford and Mistress Page turn Falstaff’s scheme into a sequence of traps and community theatre.' },
+      { href: '/books/alls-well-that-ends-well/', title: 'All’s Well That Ends Well', author: 'William Shakespeare', year: 'c.1604–05', image: '/0001_1_use-the-macbeth-cover-as-the-layout-refe_oR8d6uK8WYeORWiSoFuzBw_7Bo8rZBYSiSmvEif8P1K7A_cover.png', copy: 'A brilliant healer pursues a resistant husband through a plot whose title invites argument about its settlement.' },
+      { href: '/books/the-tempest/', title: 'The Tempest', author: 'William Shakespeare', year: 'c.1610–11', image: '/The%20Tempest.png', copy: 'A staged shipwreck gives Prospero the power to punish, educate, forgive and finally release his audience.' }
+    ],
+    reading: {
+      heading: 'Follow who controls the scene—and when that control changes hands.',
+      paragraphs: [
+        'Begin with the obstruction. A father controls a marriage, an older brother blocks an inheritance, jealousy governs a household or a law threatens an outsider. Comedy needs a pressure strong enough to make another space, name or performance necessary. The forest, disguise and practical joke are responses to a social arrangement, not decorative detours from it.',
+        'Then read the ending backwards. Which earlier mistake must be retold? Who produces proof, recognises a face or accepts a new account? A final embrace may depend on an improbable arrival, but stage action makes that improbability visible and communal. The audience watches knowledge become shared—even when one character refuses the terms on which the sharing occurs.'
+      ]
+    },
+    terms: [
+      { term: 'Comic error', copy: 'A mistake in identity, intention or interpretation that exposes the assumptions by which a social world operates.' },
+      { term: 'Disguise', copy: 'A performed identity that redistributes knowledge and changes what a character may say, desire or arrange.' },
+      { term: 'Recognition', copy: 'The moment when a person, relationship or history becomes newly known and the action can move towards settlement.' },
+      { term: 'Festive comedy', copy: 'A comic pattern in which ordinary restraint loosens for a holiday, forest or night before a changed social order returns.' }
+    ],
+    resources: [
+      { href: '/resources/midsummer-nights-dream/study-guide/', label: 'A Midsummer Night’s Dream study guide', copy: 'Follow court, forest, performance and the play’s three comic worlds.' },
+      { href: '/resources/much-ado-about-nothing/passage-analysis/', label: 'Much Ado passage analysis', copy: 'Move from claim to exact language in a comedy of overhearing and judgement.' },
+      { href: '/resources/shakespeare/gender-power-omkara-maqbool/', label: 'Gender and power in Shakespeare', copy: 'A route into performance, authority and adaptation across genres.' },
+      { href: '/books/as-you-like-it/', label: 'As You Like It reading page', copy: 'Read disguise, pastoral work, four courtships and the epilogue in depth.' }
+    ],
+    sources: [
+      { href: 'https://www.folger.edu/explore/shakespeares-works/', label: 'Folger Shakespeare Library: works by genre' },
+      { href: 'https://www.folger.edu/blogs/collation/whats-in-a-genre/', label: 'Folger: what is in a dramatic genre?' },
+      { href: 'https://www.folger.edu/explore/shakespeares-works/a-midsummer-nights-dream/', label: 'Folger: A Midsummer Night’s Dream text and collection' },
+      { href: 'https://www.rsc.org.uk/shakespeare-learning-zone', label: 'Royal Shakespeare Company: Shakespeare Learning Zone' }
+    ]
+  },
+  {
     slug: 'tragedy',
     title: 'Tragedy',
     navTitle: 'Tragedy',

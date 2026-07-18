@@ -216,6 +216,7 @@ const authorProfiles = {
   'Arthur Conan Doyle': '/authors/arthur-conan-doyle/',
   'Charles Dickens': '/authors/charles-dickens/',
   'Jane Austen': '/authors/jane-austen/',
+  'Mary Shelley': '/authors/mary-shelley/',
   'William Shakespeare': '/shakespeare/'
 };
 
@@ -440,7 +441,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '</div></section>' +
   '<section class="explore-paths" aria-label="Ways into Astor Library">' +
   '<a href="/library/"><span>Choose a book</span><p>Read its story, publication history and life on stage or screen.</p></a>' +
-  '<a href="/subjects/"><span>Read by subject</span><p>Begin with Gothic, tragedy, detection, epic, satire or the ways a story reaches us.</p></a>' +
+  '<a href="/subjects/"><span>Read by subject</span><p>Begin with comedy, Gothic, tragedy, detection, epic, satire or the ways a story reaches us.</p></a>' +
   '<a href="/authors/"><span>Meet a writer</span><p>Follow an author across the books, forms and questions that shaped their work.</p></a>' +
   '<a href="/study/"><span>Study a set text</span><p>Find an Astor edition with close-reading and essay support.</p></a>' +
   '<a href="/resources/"><span>Use a free guide</span><p>Open focused help with a text, passage, theme or question.</p></a>' +
@@ -456,7 +457,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
 fs.mkdirSync(path.join(root, 'explore'), { recursive: true });
 fs.writeFileSync(path.join(root, 'explore/index.html'), exploreHtml);
 
-const featuredAuthorNames = ['Charles Dickens', 'Jane Austen', 'Arthur Conan Doyle', 'William Shakespeare'];
+const featuredAuthorNames = ['Charles Dickens', 'Jane Austen', 'Mary Shelley', 'Arthur Conan Doyle', 'William Shakespeare'];
 const featuredAuthors = featuredAuthorNames.map(function (name) { return authors.find(function (author) { return author.title === name; }); }).filter(Boolean);
 
 function authorCoverStack(author) {
@@ -482,7 +483,7 @@ const authorDirectoryCards = authors.map(function (author) {
 
 const authorsHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-  '<title>Classic Authors and Writers | Astor Library</title><meta name="description" content="Explore classic authors in Astor Library, with dedicated pages for Dickens, Austen, Conan Doyle and Shakespeare and links to every available book.">' +
+  '<title>Classic Authors and Writers | Astor Library</title><meta name="description" content="Explore classic authors in Astor Library, with dedicated pages for Dickens, Austen, Mary Shelley, Conan Doyle and Shakespeare and links to every available book.">' +
   '<link rel="stylesheet" href="/assets/styles.css"></head><body>' + siteHeader() +
   '<main class="page-wrap authors-page"><section class="authors-hero"><div><p class="kicker">Lives, books and ways of reading</p><h1>Writers in the library.</h1><p class="deck">A book never arrives alone. Here you can follow a writer across several works, see the pressures under which those works were made, and move directly into the Astor reading pages.</p><div class="button-row"><a class="button primary" href="#all-writers">See every writer</a><a class="button secondary" href="/library/">Browse all books</a></div></div><div class="authors-hero-shelf" aria-hidden="true"><img src="/Great%20Expectations.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Adventures%20of%20Sherlock%20Holmes.png" alt=""></div></section>' +
   '<section class="authors-intro"><p>These pages are not short biographies pasted beside a list of titles. They are places to understand how a writer worked: the forms they chose, the world they wrote from and the questions that keep their books alive.</p></section>' +
