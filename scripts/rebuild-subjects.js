@@ -17,7 +17,7 @@ function siteHeader() {
   return '<header class="site-header">' +
     '<a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="Astor Library torch"><span class="word">LIBRARY</span></a>' +
     '<nav class="nav" aria-label="Primary navigation">' +
-    '<a class="nav-link" href="/">Home</a><a class="nav-link" href="/explore/">Explore</a><a class="nav-link" href="/subjects/">Subjects</a><a class="nav-link" href="/authors/">Writers</a><a class="nav-link" href="/library/">All books</a>' +
+    '<a class="nav-link" href="/">Home</a><a class="nav-link" href="/explore/">Explore</a><a class="nav-link" href="/passage-room/">Passages</a><a class="nav-link" href="/subjects/">Subjects</a><a class="nav-link" href="/authors/">Writers</a><a class="nav-link" href="/library/">All books</a>' +
     '<details class="browse-menu"><summary>Browse collections</summary><div class="browse-panel">' +
     '<a class="browse-card" href="/ancient-epic/" style="--browse-image:url(\'/Ancient%20and%20Epic.png\')"><span>Ancient &amp; Epic</span></a>' +
     '<a class="browse-card" href="/renaissance-early-modern/" style="--browse-image:url(\'/Renaissance%20and%20Early%20Modern.png\')"><span>Renaissance &amp; Early Modern</span></a>' +

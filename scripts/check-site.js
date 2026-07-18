@@ -155,9 +155,12 @@ for (const file of htmlFiles) {
 
 const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 if (!homepage.includes('class="home-masthead"')) failures.push('The homepage is missing its editorial masthead');
-if (!homepage.includes('independent publisher')) failures.push('The homepage does not clearly identify the modern Astor Library');
-if (!homepage.includes('data-motion-stage')) failures.push('The homepage is missing its living cover display');
-if (countMatches(homepage, /data-motion-cover/g) !== 3) failures.push('The homepage must feature exactly three moving covers');
+if (!/independent publisher/i.test(homepage)) failures.push('The homepage does not clearly identify the modern Astor Library');
+if (!homepage.includes('class="astor-home-hero"')) failures.push('The homepage is missing its text-first opening');
+if (!homepage.includes('data-home-passage-stage')) failures.push('The homepage is missing its changing passage display');
+if (countMatches(homepage, /data-home-passage="/g) !== 4) failures.push('The homepage must feature exactly four annotated passage previews');
+if (countMatches(homepage, /data-home-passage-target=/g) !== 4) failures.push('The homepage passage display is missing its four controls');
+if (!homepage.includes('href="/passage-room/"')) failures.push('The homepage is missing the Passage Room');
 if (!homepage.includes('home-finder')) failures.push('The homepage is missing its library search entrance');
 if (!homepage.includes('class="archive-book-shelf"')) failures.push('The homepage is missing its new-books shelf');
 if (countMatches(homepage, /class="archive-catalogue-number"/g) !== 3) failures.push('The homepage must clearly explain its three kinds of resource');
@@ -175,11 +178,37 @@ if (countMatches(homepage, /class="archive-resource-card"/g) !== 3) failures.pus
 for (const resourceHref of ['/resources/winters-tale/complete-study-guide/', '/resources/dorian-gray/introduction/', '/resources/american/langston-hughes-dont-turn-back/']) {
   if (!homepage.includes('href="' + resourceHref + '"')) failures.push('The homepage is missing its new-resource link to ' + resourceHref);
 }
-for (const image of ['The%20Odyssey.png', 'Adventures%20of%20Sherlock%20Holmes.png', 'Uncle%20Tom%27s%20Cabin.png']) {
-  if (!homepage.includes(image)) failures.push('The homepage is missing its featured ' + image + ' cover');
-}
 for (const image of ['home-reference-victorian.jpg', 'home-reference-shakespeare.jpg', 'home-reference-study.jpg']) {
   if (!homepage.includes('/assets/' + image)) failures.push('The homepage is missing its lighter ' + image + ' moving image');
+}
+
+const passageHubFile = path.join(root, 'passage-room', 'index.html');
+if (!fs.existsSync(passageHubFile)) {
+  failures.push('The site is missing the Passage Room');
+} else {
+  const passageHub = fs.readFileSync(passageHubFile, 'utf8');
+  if (!passageHub.includes('Stay with the words.')) failures.push('The Passage Room is missing its opening statement');
+  if (countMatches(passageHub, /class="passage-card /g) !== 4) failures.push('The Passage Room must open four close readings');
+}
+
+const passageRoutes = [
+  'hamlet-to-be',
+  'jekyll-duality',
+  'huckleberry-finn-apology',
+  'sherlock-holmes-scandal'
+];
+for (const route of passageRoutes) {
+  const passageFile = path.join(root, 'passage-room', route, 'index.html');
+  if (!fs.existsSync(passageFile)) {
+    failures.push('The close reading is missing: ' + route);
+    continue;
+  }
+  const passage = fs.readFileSync(passageFile, 'utf8');
+  if (!passage.includes('class="passage-spread"')) failures.push(route + ' is missing its annotated text');
+  if (countMatches(passage, /data-passage-mark=/g) !== 5) failures.push(route + ' must attach five notes to exact phrases');
+  if (countMatches(passage, /data-passage-note=/g) !== 5) failures.push(route + ' must contain five margin notes');
+  if (!passage.includes('class="passage-question"')) failures.push(route + ' is missing its closing reading question');
+  if (!passage.includes('Texts consulted')) failures.push(route + ' is missing its source note');
 }
 
 const editorialFile = path.join(root, 'editorial', 'index.html');
@@ -407,8 +436,11 @@ if (fs.existsSync(distDir)) {
     if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
       failures.push('dist/' + fileName + ' is missing its book description for search engines');
     }
-    if (/^(?:authors|subjects|classic-literature|library|resources|study|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
+    if (/^(?:authors|subjects|passage-room|classic-literature|library|resources|study|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
       failures.push('dist/' + fileName + ' is missing its collection description for search engines');
+    }
+    if (/^passage-room\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-passage-schema')) {
+      failures.push('dist/' + fileName + ' is missing its close-reading description for search engines');
     }
     if (/^subjects\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
       failures.push('dist/' + fileName + ' is missing its subject description for search engines');

@@ -15,8 +15,7 @@
       <a class="nav-link" href="/library/">Books</a>
       <a class="nav-link" href="/subjects/">Subjects</a>
       <a class="nav-link" href="/authors/">Writers</a>
-      <a class="nav-link" href="/classic-literature/">Classic literature</a>
-      <a class="nav-link" href="/shakespeare/">Shakespeare</a>
+      <a class="nav-link" href="/passage-room/">Passages</a>
       <a class="nav-link" href="/resources/">Free resources</a>
       <a class="nav-link" href="/study/">Study editions</a>
       <a class="nav-link" href="/about/">About</a>
@@ -26,7 +25,7 @@
       <summary><span>Menu</span><span class="home-menu-mark" aria-hidden="true"></span></summary>
       <div class="home-mobile-panel">
         <nav class="home-mobile-main-links" aria-label="Mobile navigation">
-          <a class="nav-link" href="/explore/">Search the library</a><a class="nav-link" href="/library/">All books</a><a class="nav-link" href="/subjects/">Subjects</a><a class="nav-link" href="/authors/">Writers</a><a class="nav-link" href="/classic-literature/">Classic literature</a><a class="nav-link" href="/shakespeare/">Shakespeare</a><a class="nav-link" href="/resources/">Free resources</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/about/">About Astor Library</a>
+          <a class="nav-link" href="/explore/">Search the library</a><a class="nav-link" href="/library/">All books</a><a class="nav-link" href="/subjects/">Subjects</a><a class="nav-link" href="/authors/">Writers</a><a class="nav-link" href="/passage-room/">The Passage Room</a><a class="nav-link" href="/classic-literature/">Classic literature</a><a class="nav-link" href="/shakespeare/">Shakespeare</a><a class="nav-link" href="/resources/">Free resources</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/about/">About Astor Library</a>
         </nav>
         <p>Browse by collection</p>
         <nav class="home-mobile-collections" aria-label="Literary collections">
@@ -41,22 +40,50 @@
 </header>
 
 <main class="home-main">
-  <section class="archive-hero">
-    <div class="archive-hero-heading">
-      <p class="archive-sup-title">Independent classic-literature publisher · editions · reading pages · free guides</p>
-      <h1>Astor<br>Library</h1>
+  <section class="astor-home-hero" data-home-passage-stage>
+    <div class="astor-home-hero-copy">
+      <p class="archive-sup-title">Independent publisher · complete texts · reading pages · free guides</p>
+      <h1>The book<br>stays open.</h1>
+      <p>Astor Library is built for readers who want help without losing the work itself. The original words remain at the centre; notes, context and analysis sit around them.</p>
+      <div class="button-row"><a class="button astor-home-primary" href="/passage-room/">Enter the Passage Room</a><a class="button astor-home-secondary" href="/library/">Browse 49 books</a></div>
+      <dl class="astor-home-counts"><div><dt>49</dt><dd>books</dd></div><div><dt>33</dt><dd>free guides</dd></div><div><dt>8</dt><dd>subject rooms</dd></div><div><dt>4</dt><dd>close readings</dd></div></dl>
     </div>
-    <div class="archive-reading-table home-cover-stage" data-motion-stage aria-label="Books newly added to Astor Library">
-      <span class="archive-table-label">On the reading table</span>
-      <a class="home-cover archive-cover-odyssey" data-motion-cover href="/books/the-odyssey/"><img src="/The%20Odyssey.png" alt="Astor Library edition of The Odyssey" width="480" height="715" fetchpriority="high"></a>
-      <a class="home-cover archive-cover-sherlock" data-motion-cover href="/books/adventures-of-sherlock-holmes/"><img src="/Adventures%20of%20Sherlock%20Holmes.png" alt="Astor Library edition of The Adventures of Sherlock Holmes" width="480" height="715" decoding="async"></a>
-      <a class="home-cover archive-cover-stowe" data-motion-cover href="/books/uncle-toms-cabin/"><img src="/Uncle%20Tom%27s%20Cabin.png" alt="Astor Library edition of Uncle Tom's Cabin" width="848" height="1264" decoding="async"></a>
-      <a class="archive-table-card" href="/books/uncle-toms-cabin/"><small>New edition</small><b>Uncle Tom&rsquo;s Cabin</b><span>Read about its two journeys, abolitionist argument and difficult afterlife.</span><em>Open the book page &rarr;</em></a>
+    <div class="home-passage-folio">
+      <div class="home-passage-folio-top"><span>The Passage Room</span><a href="/passage-room/">Read slowly <span aria-hidden="true">&rarr;</span></a></div>
+      <div class="home-passage-pages">
+        <article class="home-passage-page is-active" data-home-passage="hamlet">
+          <p class="home-passage-work">Hamlet · 3.1</p>
+          <blockquote>“To be, or not to be,<br>that is the question”</blockquote>
+          <aside><span>1</span><p>The grammar removes “I”. A private speech opens as a question larger than the speaker.</p></aside>
+          <a href="/passage-room/hamlet-to-be/">Open the full reading <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="home-passage-page" data-home-passage="jekyll" hidden>
+          <p class="home-passage-work">Jekyll and Hyde · final statement</p>
+          <blockquote>“man is not truly one,<br>but truly two”</blockquote>
+          <aside><span>2</span><p>Jekyll calls this a truth about everyone. Two sentences later, his neat pair has become a crowd.</p></aside>
+          <a href="/passage-room/jekyll-duality/">Open the full reading <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="home-passage-page" data-home-passage="huck" hidden>
+          <p class="home-passage-work">Huckleberry Finn · Chapter XV</p>
+          <blockquote>“but I done it, and I warn’t<br>ever sorry for it afterwards”</blockquote>
+          <aside><span>3</span><p>Huck cannot yet state a moral principle. The plain action of apologising runs ahead of his language.</p></aside>
+          <a href="/passage-room/huckleberry-finn-apology/">Open the full reading <span aria-hidden="true">&rarr;</span></a>
+        </article>
+        <article class="home-passage-page" data-home-passage="holmes" hidden>
+          <p class="home-passage-work">A Scandal in Bohemia · opening</p>
+          <blockquote>“To Sherlock Holmes she is<br>always the woman.”</blockquote>
+          <aside><span>4</span><p>Watson gives away the exception before the case begins. The suspense lies in discovering how she earned the name.</p></aside>
+          <a href="/passage-room/sherlock-holmes-scandal/">Open the full reading <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </div>
+      <div class="home-passage-controls" aria-label="Choose a passage"><button class="is-active" type="button" data-home-passage-target="hamlet" aria-pressed="true"><span>01</span> Hamlet</button><button type="button" data-home-passage-target="jekyll" aria-pressed="false"><span>02</span> Jekyll</button><button type="button" data-home-passage-target="huck" aria-pressed="false"><span>03</span> Huck</button><button type="button" data-home-passage-target="holmes" aria-pressed="false"><span>04</span> Holmes</button></div>
     </div>
-    <div class="archive-hero-intro">
-      <p>Astor Library is an independent publisher for readers who want to read or study classic texts without losing sight of the book itself. The original work remains at the centre. Notes, summaries, analysis and context are there to help.</p>
-      <div class="button-row"><a class="button primary" href="/library/">Browse the books</a><a class="button archive-light-button" href="/resources/">Open a free guide</a></div>
-    </div>
+  </section>
+
+  <section class="home-passage-threshold" aria-labelledby="home-passage-title">
+    <div><p class="kicker">New at Astor</p><h2 id="home-passage-title">Read the sentence twice.</h2></div>
+    <p>The Passage Room is where Astor&rsquo;s method becomes visible. A short stretch of the original text sits beside notes on exact words, followed by one question worth carrying back into the book.</p>
+    <a href="/passage-room/">Enter the room <span aria-hidden="true">&rarr;</span></a>
   </section>
 
   <section class="home-finder archive-finder" aria-labelledby="home-finder-title">
@@ -65,7 +92,7 @@
       <label for="home-search">Title, writer, period or subject</label>
       <div><input id="home-search" name="q" type="search" placeholder="Try Hamlet, Dickens, Gothic or freedom"><button type="submit">Search <span aria-hidden="true">&rarr;</span></button></div>
     </form>
-    <p class="home-finder-examples">You can also begin with <a href="/subjects/">a subject</a>, <a href="/authors/">a writer</a>, <a href="/classic-literature/">classic literature by period</a>, <a href="/shakespeare/">Shakespeare</a>, <a href="/reading-routes/">a reading route</a> or <a href="/resources/">the free resource library</a>.</p>
+    <p class="home-finder-examples">You can also begin with <a href="/passage-room/">a close reading</a>, <a href="/subjects/">a subject</a>, <a href="/authors/">a writer</a>, <a href="/classic-literature/">classic literature by period</a>, <a href="/shakespeare/">Shakespeare</a>, <a href="/reading-routes/">a reading route</a> or <a href="/resources/">the free resource library</a>.</p>
   </section>
 
   <section class="archive-subjects archive-section" aria-labelledby="archive-subjects-title">
@@ -77,7 +104,7 @@
       <a href="/subjects/epic-poetry/"><span>04</span><h3>Epic poetry</h3><p>One voyage answers to the fate of a household, a people or a future state.</p><b>The Odyssey · The Aeneid · Moby-Dick</b></a>
       <a href="/subjects/satire-political-writing/"><span>05</span><h3>Satire &amp; political writing</h3><p>Irony, impossible journeys, fables and plain political analysis expose the language of power.</p><b>Gulliver’s Travels · Animal Farm · The Prince</b></a>
     </div>
-    <a class="archive-all-link archive-subjects-link" href="/subjects/">Open all five subject guides <span aria-hidden="true">&rarr;</span></a>
+    <a class="archive-all-link archive-subjects-link" href="/subjects/">Open all eight subject guides <span aria-hidden="true">&rarr;</span></a>
   </section>
 
   <section class="archive-section archive-open-books">
@@ -138,7 +165,7 @@
       <a href="/reading-routes/#power"><span>04</span><b>Why must power be performed?</b><small>Richard II · Macbeth · Coriolanus · Antony and Cleopatra</small></a>
       <a href="/reading-routes/#evidence"><span>05</span><b>What counts as evidence?</b><small>Sherlock Holmes · Great Expectations · Moby-Dick · Dracula</small></a>
     </nav>
-    <a class="button archive-route-button" href="/reading-routes/">Open all five routes</a>
+    <a class="button archive-route-button" href="/reading-routes/">Open all seven routes</a>
   </section>
 
   <section class="archive-collections archive-section">
@@ -156,6 +183,6 @@
   </section>
 </main>
 
-<footer class="site-footer home-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div><div class="footer-links"><a href="/about/">About</a><a href="/explore/">Search</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/library/">All books</a><a href="/reading-routes/">Reading routes</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div></footer>
+<footer class="site-footer home-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div><div class="footer-links"><a href="/about/">About</a><a href="/explore/">Search</a><a href="/passage-room/">Passage Room</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/library/">All books</a><a href="/reading-routes/">Reading routes</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div></footer>
 </body>
 </html>

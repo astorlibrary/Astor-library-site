@@ -6,7 +6,8 @@
     "resources": 33,
     "studyEditions": 23,
     "collections": 8,
-    "entries": 146
+    "passages": 4,
+    "entries": 150
   },
   "books": [
     {
@@ -2933,6 +2934,60 @@
       "image": "/Modern%20Classics.png",
       "imageAlt": "Modern Classics illustrated banner",
       "search": "Modern Classics Here twentieth-century political anxiety turns strange: one novel becomes a nightmare chase, the other a farmyard revolution."
+    }
+  ],
+  "passages": [
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“To be, or not to be”",
+      "description": "Read Hamlet’s soliloquy through its missing “I”, its impossible sea of troubles and the metaphor that changes its own answer.",
+      "href": "/passage-room/hamlet-to-be/",
+      "image": "/Hamlet.png",
+      "imageAlt": "Astor Library Hamlet cover",
+      "relatedBooks": [
+        "/books/hamlet/"
+      ],
+      "search": "Hamlet Shakespeare to be or not to be soliloquy death sleep dream close reading language tragedy"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“man is not truly one”",
+      "description": "Follow Jekyll’s theory of two selves as his own vocabulary turns that tidy pair into a crowd of inhabitants.",
+      "href": "/passage-room/jekyll-duality/",
+      "image": "/Jekyll%20and%20Hyde.png",
+      "imageAlt": "Astor Library Jekyll and Hyde cover",
+      "relatedBooks": [
+        "/books/jekyll-and-hyde/"
+      ],
+      "search": "Jekyll Hyde Stevenson duality divided self truly two confession Gothic close reading language"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“but I done it”",
+      "description": "Read Huck’s apology to Jim through its fifteen-minute delay, its unheroic action and the racist language that Huck has not left behind.",
+      "href": "/passage-room/huckleberry-finn-apology/",
+      "image": "/Huckleberry%20Finn.png",
+      "imageAlt": "Astor Library Huckleberry Finn cover",
+      "relatedBooks": [
+        "/books/adventures-of-huckleberry-finn/"
+      ],
+      "search": "Huckleberry Finn Mark Twain Huck apologises Jim Chapter 15 conscience racism freedom close reading language"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“always the woman”",
+      "description": "Read Watson’s opening portrait of Irene Adler and the reasoning machine she has already proved incomplete.",
+      "href": "/passage-room/sherlock-holmes-scandal/",
+      "image": "/Adventures%20of%20Sherlock%20Holmes.png",
+      "imageAlt": "Astor Library Adventures of Sherlock Holmes cover",
+      "relatedBooks": [
+        "/books/adventures-of-sherlock-holmes/"
+      ],
+      "search": "Sherlock Holmes Irene Adler the woman Watson machine Scandal in Bohemia detective fiction close reading narration"
     }
   ]
 }

@@ -40,6 +40,16 @@
   const siteNavigation = siteHeader?.querySelector('.nav');
 
   if (siteHeader && siteNavigation) {
+    if (!siteNavigation.querySelector('a[href="/passage-room/"]')) {
+      const passageLink = document.createElement('a');
+      passageLink.className = 'nav-link';
+      passageLink.href = '/passage-room/';
+      passageLink.textContent = 'Passages';
+      const subjectsLink = siteNavigation.querySelector('a[href="/subjects/"]');
+      if (subjectsLink) siteNavigation.insertBefore(passageLink, subjectsLink);
+      else siteNavigation.append(passageLink);
+    }
+
     siteNavigation.id = siteNavigation.id || 'site-navigation';
     const toggle = document.createElement('button');
     toggle.className = 'site-nav-toggle';
@@ -99,8 +109,75 @@
     }
   }
 
-  const motionStage = document.querySelector('[data-motion-stage]');
+  const homePassageStage = document.querySelector('[data-home-passage-stage]');
   const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+
+  if (homePassageStage) {
+    const passagePages = [...homePassageStage.querySelectorAll('[data-home-passage]')];
+    const passageButtons = [...homePassageStage.querySelectorAll('[data-home-passage-target]')];
+    let passageIndex = Math.max(0, passagePages.findIndex(page => page.classList.contains('is-active')));
+    let passageTimer = 0;
+
+    const showHomePassage = (index, stopRotation = false) => {
+      passageIndex = (index + passagePages.length) % passagePages.length;
+      passagePages.forEach((page, pageIndex) => {
+        const active = pageIndex === passageIndex;
+        page.hidden = !active;
+        page.classList.toggle('is-active', active);
+      });
+      passageButtons.forEach((button, buttonIndex) => {
+        const active = buttonIndex === passageIndex;
+        button.classList.toggle('is-active', active);
+        button.setAttribute('aria-pressed', String(active));
+      });
+      if (stopRotation && passageTimer) {
+        window.clearInterval(passageTimer);
+        passageTimer = 0;
+      }
+    };
+
+    passageButtons.forEach((button, index) => {
+      button.addEventListener('click', () => showHomePassage(index, true));
+    });
+
+    showHomePassage(passageIndex);
+    if (!reducedMotion && passagePages.length > 1) {
+      passageTimer = window.setInterval(() => showHomePassage(passageIndex + 1), 6500);
+    }
+  }
+
+  const passageSpread = document.querySelector('.passage-spread');
+
+  if (passageSpread) {
+    const marks = [...passageSpread.querySelectorAll('[data-passage-mark]')];
+    const notes = [...passageSpread.querySelectorAll('[data-passage-note]')];
+
+    const showPassageNote = key => {
+      marks.forEach(mark => mark.classList.toggle('is-active', mark.dataset.passageMark === key));
+      notes.forEach(note => note.classList.toggle('is-active', note.dataset.passageNote === key));
+    };
+
+    marks.forEach(mark => {
+      const activate = () => showPassageNote(mark.dataset.passageMark);
+      mark.setAttribute('role', 'button');
+      mark.setAttribute('aria-label', 'Open note ' + (mark.querySelector('sup')?.textContent || '') + ' for ' + mark.childNodes[0]?.textContent.trim());
+      mark.addEventListener('click', activate);
+      mark.addEventListener('focus', activate);
+      mark.addEventListener('mouseenter', activate);
+      mark.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          activate();
+        }
+      });
+    });
+    notes.forEach(note => {
+      note.addEventListener('mouseenter', () => showPassageNote(note.dataset.passageNote));
+    });
+    if (marks[0]) showPassageNote(marks[0].dataset.passageMark);
+  }
+
+  const motionStage = document.querySelector('[data-motion-stage]');
 
   if (motionStage && !reducedMotion) {
     motionStage.classList.add('is-motion-ready');
@@ -244,8 +321,9 @@
   function toolCard(entry) {
     const isOverview = entry.type === 'resource' && entry.href.includes('tragedies-overview');
     const isPaired = entry.type === 'study' && entry.paired;
-    const label = isOverview ? 'Also useful' : isPaired ? 'Studying two texts?' : entry.type === 'resource' ? 'Free guide' : 'Study edition';
-    const cta = isOverview ? 'Read the overview' : isPaired ? 'See the paired edition' : entry.type === 'resource' ? 'Read the guide' : 'View the study edition';
+    const isPassage = entry.type === 'passage';
+    const label = isPassage ? 'Close reading' : isOverview ? 'Also useful' : isPaired ? 'Studying two texts?' : entry.type === 'resource' ? 'Free guide' : 'Study edition';
+    const cta = isPassage ? 'Read with the notes' : isOverview ? 'Read the overview' : isPaired ? 'See the paired edition' : entry.type === 'resource' ? 'Read the guide' : 'View the study edition';
 
     return '<article class="related-tool"><a href="' + escapeHtml(entry.href) + '">' +
       '<p class="related-label">' + label + '</p>' +
@@ -303,7 +381,10 @@
         .filter(item => item.relatedBooks && item.relatedBooks.some(href => normalisePath(href) === currentPath))
         .sort((a, b) => Number(a.paired) - Number(b.paired))
         .slice(0, 3);
-      const tools = resources.concat(editions);
+      const passages = (data.passages || [])
+        .filter(item => item.relatedBooks && item.relatedBooks.some(href => normalisePath(href) === currentPath))
+        .slice(0, 1);
+      const tools = passages.concat(resources, editions).slice(0, 4);
       const subjects = (data.subjects || [])
         .filter(item => item.relatedBooks && item.relatedBooks.some(href => normalisePath(href) === currentPath));
 

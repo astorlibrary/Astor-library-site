@@ -100,6 +100,12 @@ function subjectContext(source) {
   return discovery.subjects?.find(item => item.href === href) || null;
 }
 
+function passageContext(source) {
+  const href = pageHref(source);
+  if (!href.startsWith('/passage-room/') || href === '/passage-room/') return null;
+  return discovery.passages?.find(item => item.href === href) || null;
+}
+
 function addBookStructuredData(html, source) {
   const context = bookContext(source);
   if (!context) return html;
@@ -269,6 +275,9 @@ function addCollectionStructuredData(html, source) {
   } else if (href === '/study/') {
     items = discovery.studyEditions || [];
     kind = 'Literature study editions';
+  } else if (href === '/passage-room/') {
+    items = discovery.passages || [];
+    kind = 'Close readings of classic literature';
   } else {
     return html;
   }
@@ -302,6 +311,41 @@ function addCollectionStructuredData(html, source) {
   return html.replace('</head>', '<script type="application/ld+json" data-astor-collection-schema>' + json + '</script></head>');
 }
 
+function addPassageStructuredData(html, source) {
+  const passage = passageContext(source);
+  if (!passage || html.includes('data-astor-passage-schema')) return html;
+  const relatedBook = discovery.books?.find(book => passage.relatedBooks?.includes(book.href));
+  const title = plainText(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || passage.title);
+  const description = plainText(html.match(/<meta\b[^>]*name="description"[^>]*content="([^"]+)"/i)?.[1] || passage.description);
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    description,
+    url: absoluteUrl(passage.href),
+    mainEntityOfPage: absoluteUrl(passage.href),
+    inLanguage: 'en-GB',
+    educationalUse: ['Reading', 'Study', 'Teaching'],
+    learningResourceType: 'Close reading',
+    image: absoluteUrl(passage.image),
+    author: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
+    publisher: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/', logo: { '@type': 'ImageObject', url: absoluteUrl('/icon-512.png') } },
+    publishingPrinciples: absoluteUrl('/editorial/'),
+    about: relatedBook ? { '@type': 'Book', name: relatedBook.title, url: absoluteUrl(relatedBook.href), author: { '@type': 'Person', name: relatedBook.author } } : undefined,
+    isPartOf: { '@type': 'CollectionPage', name: 'The Passage Room', url: absoluteUrl('/passage-room/') },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'The Passage Room', item: absoluteUrl('/passage-room/') },
+        ...(relatedBook ? [{ '@type': 'ListItem', position: 2, name: relatedBook.title, item: absoluteUrl(relatedBook.href) }] : []),
+        { '@type': 'ListItem', position: relatedBook ? 3 : 2, name: passage.title, item: absoluteUrl(passage.href) }
+      ]
+    }
+  };
+  const json = JSON.stringify(schema).replace(/</g, '\\u003c');
+  return html.replace('</head>', '<script type="application/ld+json" data-astor-passage-schema>' + json + '</script></head>');
+}
+
 function addGlobalMetadata(html, source) {
   if (/http-equiv="refresh"/i.test(html)) return html;
   const href = pageHref(source);
@@ -311,7 +355,8 @@ function addGlobalMetadata(html, source) {
   const resource = resourceContext(source)?.resource;
   const author = authorContext(source);
   const subject = subjectContext(source);
-  const image = book?.image || resource?.image || author?.image || subject?.image || '/Logo.png';
+  const passage = passageContext(source);
+  const image = book?.image || resource?.image || passage?.image || author?.image || subject?.image || '/Logo.png';
   let metadata = '';
   const absoluteHref = absoluteUrl(href);
   const absoluteImage = absoluteUrl(image);
@@ -505,6 +550,7 @@ function prepareHtml(html, source) {
   html = addResourceStructuredData(html, source);
   html = addAuthorStructuredData(html, source);
   html = addCollectionStructuredData(html, source);
+  html = addPassageStructuredData(html, source);
   html = addGlobalMetadata(html, source);
   html = addDiscoveryNavigation(html, source);
   html = addBookAuthorLink(html, source);
