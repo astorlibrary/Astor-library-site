@@ -189,14 +189,18 @@ if (!fs.existsSync(passageHubFile)) {
 } else {
   const passageHub = fs.readFileSync(passageHubFile, 'utf8');
   if (!passageHub.includes('Stay with the words.')) failures.push('The Passage Room is missing its opening statement');
-  if (countMatches(passageHub, /class="passage-card /g) !== 4) failures.push('The Passage Room must open four close readings');
+  if (countMatches(passageHub, /class="passage-card /g) !== 8) failures.push('The Passage Room must open eight close readings');
 }
 
 const passageRoutes = [
   'hamlet-to-be',
   'jekyll-duality',
   'huckleberry-finn-apology',
-  'sherlock-holmes-scandal'
+  'sherlock-holmes-scandal',
+  'pride-prejudice-self-knowledge',
+  'douglass-pathway-freedom',
+  'frankenstein-adam',
+  'odyssey-olive-bed'
 ];
 for (const route of passageRoutes) {
   const passageFile = path.join(root, 'passage-room', route, 'index.html');

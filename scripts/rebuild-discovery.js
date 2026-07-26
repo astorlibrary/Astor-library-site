@@ -395,6 +395,30 @@ const passages = [
     description: 'Read Watson’s opening portrait of Irene Adler and the reasoning machine she has already proved incomplete.',
     href: '/passage-room/sherlock-holmes-scandal/', image: '/Adventures%20of%20Sherlock%20Holmes.png', imageAlt: 'Astor Library Adventures of Sherlock Holmes cover',
     relatedBooks: ['/books/adventures-of-sherlock-holmes/'], search: 'Sherlock Holmes Irene Adler the woman Watson machine Scandal in Bohemia detective fiction close reading narration'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“I never knew myself”',
+    description: 'Follow Elizabeth Bennet as she unfolds Darcy’s letter again, tests its evidence and discovers how vanity has shaped her judgment.',
+    href: '/passage-room/pride-prejudice-self-knowledge/', image: '/Pride%20and%20Prejudice.png', imageAlt: 'Astor Library Pride and Prejudice cover',
+    relatedBooks: ['/books/pride-and-prejudice/'], search: 'Pride and Prejudice Jane Austen Elizabeth Bennet Darcy letter Chapter 36 rereading self knowledge judgement vanity close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“the pathway from slavery to freedom”',
+    description: 'Read how Hugh Auld’s attempt to forbid literacy gives Frederick Douglass a new understanding of power and a fixed purpose to learn.',
+    href: '/passage-room/douglass-pathway-freedom/', image: '/Frederick%20Douglass.png', imageAlt: 'Astor Library Narrative of the Life of Frederick Douglass cover',
+    relatedBooks: ['/books/narrative-of-the-life-of-frederick-douglass/'], search: 'Frederick Douglass Narrative literacy education slavery freedom Hugh Auld Chapter 6 close reading abolition power'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“I ought to be thy Adam”',
+    description: 'Read the creature’s appeal to Victor through creation, abandonment, Adam, the fallen angel and the disputed duties of each.',
+    href: '/passage-room/frankenstein-adam/', image: '/Frankenstein.png', imageAlt: 'Astor Library Frankenstein cover',
+    relatedBooks: ['/books/frankenstein/'], search: 'Frankenstein Mary Shelley creature Adam fallen angel Paradise Lost creator responsibility abandonment Gothic close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“Who has been taking my bed?”',
+    description: 'Read Penelope’s final test through craft, secret knowledge and the rooted olive bed that makes homecoming material.',
+    href: '/passage-room/odyssey-olive-bed/', image: '/The%20Odyssey.png', imageAlt: 'Astor Library Odyssey cover',
+    relatedBooks: ['/books/the-odyssey/'], search: 'Odyssey Homer Penelope Odysseus Ulysses bed olive tree Book 23 recognition homecoming craft close reading epic'
   }
 ];
 
