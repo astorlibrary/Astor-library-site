@@ -192,7 +192,7 @@ if (!fs.existsSync(passageHubFile)) {
 } else {
   const passageHub = fs.readFileSync(passageHubFile, 'utf8');
   if (!passageHub.includes('Stay with the words.')) failures.push('The Passage Room is missing its opening statement');
-  if (countMatches(passageHub, /class="passage-card /g) !== 8) failures.push('The Passage Room must open eight close readings');
+  if (countMatches(passageHub, /class="passage-card /g) !== 12) failures.push('The Passage Room must open twelve close readings');
 }
 
 const passageRoutes = [
@@ -203,7 +203,11 @@ const passageRoutes = [
   'pride-prejudice-self-knowledge',
   'douglass-pathway-freedom',
   'frankenstein-adam',
-  'odyssey-olive-bed'
+  'odyssey-olive-bed',
+  'christmas-carol-prisons',
+  'othello-trifles-proof',
+  'uncle-toms-cabin-ice',
+  'moby-dick-call-me-ishmael'
 ];
 for (const route of passageRoutes) {
   const passageFile = path.join(root, 'passage-room', route, 'index.html');

@@ -419,6 +419,30 @@ const passages = [
     description: 'Read Penelope’s final test through craft, secret knowledge and the rooted olive bed that makes homecoming material.',
     href: '/passage-room/odyssey-olive-bed/', image: '/The%20Odyssey.png', imageAlt: 'Astor Library Odyssey cover',
     relatedBooks: ['/books/the-odyssey/'], search: 'Odyssey Homer Penelope Odysseus Ulysses bed olive tree Book 23 recognition homecoming craft close reading epic'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“Are there no prisons?”',
+    description: 'Scrooge turns a request for direct help into a cold question about prisons, workhouses and the Poor Law.',
+    href: '/passage-room/christmas-carol-prisons/', image: '/A%20Christmas%20Carol.png', imageAlt: 'Astor Library A Christmas Carol cover',
+    relatedBooks: ['/books/a-christmas-carol/'], search: 'Christmas Carol Dickens Scrooge prisons workhouses Poor Law poverty charity Stave One close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“Trifles light as air”',
+    description: 'Iago understands that jealousy can make a slight object carry the authority of proof.',
+    href: '/passage-room/othello-trifles-proof/', image: '/Othello.png', imageAlt: 'Astor Library Othello cover',
+    relatedBooks: ['/books/othello/'], search: 'Othello Shakespeare Iago handkerchief jealousy evidence proof trifles light as air Act 3 Scene 3 close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“one wild cry and flying leap”',
+    description: 'Eliza crosses the Ohio on broken ice in a scene where bodily danger exposes the violence of sale and pursuit.',
+    href: '/passage-room/uncle-toms-cabin-ice/', image: '/Uncle%20Tom%27s%20Cabin.png', imageAlt: 'Astor Library Uncle Tom’s Cabin cover',
+    relatedBooks: ['/books/uncle-toms-cabin/'], search: 'Uncle Toms Cabin Stowe Eliza Harry Ohio River ice escape slavery mother child Chapter 7 close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“Call me Ishmael.”',
+    description: 'Melville opens with a name, an invitation and a narrator who presents the sea as a way of surviving life on shore.',
+    href: '/passage-room/moby-dick-call-me-ishmael/', image: '/Moby%20Dick.png', imageAlt: 'Astor Library Moby-Dick cover',
+    relatedBooks: ['/books/moby-dick/'], search: 'Moby Dick Melville Ishmael call me opening narrator voice sea spleen Loomings Chapter 1 close reading'
   }
 ];
 
