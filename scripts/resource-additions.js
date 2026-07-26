@@ -6,7 +6,7 @@ module.exports = [
     description: 'Read the story of a long-lost Langston Hughes essay, its account of an escaped chain-gang prisoner and the archival work that returned it to English readers.',
     deck: 'In 1933 Langston Hughes wrote a foreword about an escaped chain-gang prisoner he and Zora Neale Hurston had met on the road. Published in Russian and then lost from view, the essay was recovered decades later in the archive.',
     image: '01_a_lost_voice_recovered.png',
-    pdf: 'A-Lost-Voice-Recovered-Langston-Hughes-and-the-Chain-Gang-Essay.pdf',
+    url: 'https://a-lost-voice-recovered-l-u9mgk6h.gamma.site',
     pageCount: 9,
     tags: ['Langston Hughes', 'Archive', 'American literature'],
     includes: [
@@ -33,7 +33,7 @@ module.exports = [
     description: 'A free guide to Shakespeare’s Antony and Cleopatra, covering Rome and Egypt, gender, political power, Plutarch, performance and critical interpretation.',
     deck: 'A guide to the play’s divided worlds and shifting judgements. It places love, empire, gender and political performance beside Shakespeare’s use of Plutarch and the audience’s changing view of its two central figures.',
     image: '02_antony_and_cleopatra.png',
-    pdf: 'Antony-and-Cleopatra-Key-Themes-and-Critical-Contexts.pdf',
+    url: 'https://antony-and-cleopatra-key-a1i8dw1.gamma.site',
     pageCount: 13,
     tags: ['Shakespeare', 'Tragedy', 'Critical contexts'],
     includes: [
@@ -60,7 +60,7 @@ module.exports = [
     description: 'Explore the afterlife of Langston Hughes’s Mother to Son in the speeches of Martin Luther King Jr and Barack Obama, with close attention to quotation, echo and political history.',
     deck: 'W. Jason Miller follows “Mother to Son” across twentieth- and twenty-first-century political speech, showing how Langston Hughes’s staircase reached audiences even when his name was left unspoken.',
     image: '03_dont_turn_back.png',
-    pdf: 'Dont-Turn-Back-Langston-Hughes-MLK-and-Barack-Obama.pdf',
+    url: 'https://dont-turn-back-langston--krngien.gamma.site',
     pageCount: 16,
     tags: ['Langston Hughes', 'Martin Luther King Jr', 'Political speech'],
     includes: [
@@ -87,7 +87,7 @@ module.exports = [
     description: 'A free guide to gender and power in Vishal Bhardwaj’s Omkara and Maqbool, studied as film adaptations of Shakespeare’s Othello and Macbeth.',
     deck: 'A focused comparison of Vishal Bhardwaj’s <em>Omkara</em> and <em>Maqbool</em>. The guide examines how two Shakespeare tragedies are remade through film, crime, caste, gender and the politics of contemporary India.',
     image: '04_gender_power_shakespeare.png',
-    pdf: 'Gender-Power-and-Shakespeare-A-Guide-to-Bhardwajs-Omkara-and-Maqbool.pdf',
+    url: 'https://gender-power-shakespeare-tumoq6d.gamma.site',
     pageCount: 12,
     tags: ['Shakespeare', 'Film adaptation', 'Gender and power'],
     includes: [
@@ -117,7 +117,7 @@ module.exports = [
     description: 'A free introduction to Oscar Wilde’s The Picture of Dorian Gray, with plot, characters, themes, aestheticism, corruption and the contexts of Wilde’s life and trials.',
     deck: 'An introduction to Wilde’s novel, its beautiful surfaces and concealed damage. The guide brings the plot and characters into view before turning to aestheticism, influence, corruption and the life of its author.',
     image: '05_picture_of_dorian_gray.png',
-    pdf: 'Introduction to Picture of Dorian Gray.pdf',
+    url: 'https://the-picture-of-dorian-gr-half16o.gamma.site',
     pageCount: 18,
     tags: ['Oscar Wilde', 'Gothic', 'Introduction'],
     includes: [
@@ -144,7 +144,7 @@ module.exports = [
     description: 'A concise free Macbeth guide covering the witches, James I, ambition, Duncan’s murder, blood, guilt, Banquo’s ghost and the equivocal prophecies.',
     deck: 'A short route through the pressures that drive <em>Macbeth</em>: prophecy, ambition, royal murder, guilt and the dangerous half-truths that make violence seem secure.',
     image: '06_macbeth_study_guide.png',
-    pdf: 'Macbeth- Quick Guide.pdf',
+    url: 'https://macbeth-a-study-guide-wkvonk2.gamma.site',
     pageCount: 10,
     tags: ['Macbeth', 'Quick guide', 'Context'],
     includes: [
@@ -171,7 +171,7 @@ module.exports = [
     description: 'A free psychological analysis of Samuel Richardson’s Pamela, exploring its epistolary form, disputed reception, class, gender, virtue and the heroine’s contradictory inner life.',
     deck: 'A sustained study of Pamela’s inner life and the letters through which readers encounter it. The guide takes her fear, hesitation and divided feelings seriously without losing sight of class, gender or the novel’s long history of argument.',
     image: '07_pamelas_psyche.png',
-    pdf: 'Pamelas-Psyche-A-Psychological-Analysis.pdf',
+    url: 'https://pamelas-psyche-a-psychol-n0ybnn5.gamma.site',
     pageCount: 20,
     tags: ['Samuel Richardson', 'Eighteenth-century fiction', 'Psychological reading'],
     includes: [
@@ -198,7 +198,7 @@ module.exports = [
     description: 'A free guide to policing, resistance, community, Jamaican Creole and performance in selected poems by Linton Kwesi Johnson.',
     deck: 'A close guide to the presence of police and community in Linton Kwesi Johnson’s poetry. It reads political argument through voice, rhythm, Jamaican Creole, performance and the experience of Black British life.',
     image: '08_policing_and_community.png',
-    pdf: 'Policing-and-Community-in-Linton-Kwesi-Johnsons-Poetry.pdf',
+    url: 'https://policing-and-community-i-cvtjjtz.gamma.site',
     pageCount: 16,
     tags: ['Linton Kwesi Johnson', 'Poetry', 'Policing and community'],
     includes: [
@@ -225,7 +225,7 @@ module.exports = [
     description: 'A free Richard II study guide covering deposition, divine kingship, succession, the Essex rebellion, censorship, character, rhetoric and performance.',
     deck: 'A guide to Shakespeare’s history play as both political action and verbal performance. It follows Richard and Bolingbroke through banishment, return and deposition while keeping the dangers of succession in view.',
     image: '09_richard_ii_study_guide.png',
-    pdf: 'Richard II Study Guide.pdf',
+    url: 'https://shakespeares-richard-ii-1gbwbfw.gamma.site',
     pageCount: 20,
     tags: ['Richard II', 'History play', 'Politics and rhetoric'],
     includes: [
@@ -252,7 +252,7 @@ module.exports = [
     description: 'A complete free study guide to The Winter’s Tale, with act summaries, characters, sources, context, jealousy, time, exile, reconciliation, criticism and exam preparation.',
     deck: 'A substantial guide to Shakespeare’s late romance, from the violence of Leontes’ jealousy to the long work of time and the final scene’s uncertain wonder.',
     image: '10_winters_tale_study_guide.png',
-    pdf: 'The-Winters-Tale-A-Complete-Study-Guide.pdf',
+    url: 'https://the-winters-tale-a-compl-rv7mbwm.gamma.site',
     pageCount: 42,
     tags: ['The Winter’s Tale', 'Late romance', 'Complete study guide'],
     includes: [

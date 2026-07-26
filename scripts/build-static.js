@@ -81,10 +81,10 @@ function bookContext(source) {
 function resourceContext(source) {
   const href = pageHref(source);
   if (!href.startsWith('/resources/') || href === '/resources/') return null;
-  const resource = discovery.resources?.find(item => item.href === href);
+  const resource = discovery.resources?.find(item => item.href === href || item.legacyRoute === href);
   if (!resource) return null;
   const relatedBook = discovery.books?.find(book => resource.relatedBooks?.includes(book.href));
-  return { resource, relatedBook };
+  return { resource, relatedBook, href };
 }
 
 function authorContext(source) {
@@ -212,13 +212,14 @@ function addAuthorStructuredData(html, source) {
 function addResourceStructuredData(html, source) {
   const context = resourceContext(source);
   if (!context || html.includes('data-astor-resource-schema')) return html;
-  const { resource, relatedBook } = context;
+  const { resource, relatedBook, href } = context;
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LearningResource',
     name: resource.title,
     description: resource.description,
-    url: absoluteUrl(resource.href),
+    url: absoluteUrl(href),
+    sameAs: resource.href,
     image: resource.image ? absoluteUrl(resource.image) : undefined,
     inLanguage: 'en-GB',
     isAccessibleForFree: true,
@@ -236,11 +237,11 @@ function addResourceStructuredData(html, source) {
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Free resources', item: absoluteUrl('/resources/') },
         ...(relatedBook ? [{ '@type': 'ListItem', position: 2, name: relatedBook.title, item: absoluteUrl(relatedBook.href) }] : []),
-        { '@type': 'ListItem', position: relatedBook ? 3 : 2, name: resource.title, item: absoluteUrl(resource.href) }
+        { '@type': 'ListItem', position: relatedBook ? 3 : 2, name: resource.title, item: absoluteUrl(href) }
       ]
     }
   };
-  const canonical = html.includes('rel="canonical"') ? '' : '<link rel="canonical" href="' + absoluteUrl(resource.href) + '">';
+  const canonical = html.includes('rel="canonical"') ? '' : '<link rel="canonical" href="' + absoluteUrl(href) + '">';
   const json = JSON.stringify(schema).replace(/</g, '\\u003c');
   return html.replace('</head>', canonical + '<script type="application/ld+json" data-astor-resource-schema>' + json + '</script></head>');
 }
@@ -617,29 +618,31 @@ function collectSitemap(directory) {
     if (!entry.isFile() || path.extname(entry.name) !== '.html') continue;
     const html = fs.readFileSync(fullPath, 'utf8');
     if (/http-equiv="refresh"/i.test(html)) continue;
-    sitemapUrls.push(absoluteUrl(pageHref(path.join(root, path.relative(outDir, fullPath)))));
+    const image = html.match(/<meta property="og:image" content="([^"]+)"/i)?.[1] || '';
+    const imageTitle = html.match(/<meta property="og:title" content="([^"]+)"/i)?.[1] || '';
+    sitemapUrls.push({
+      url: absoluteUrl(pageHref(path.join(root, path.relative(outDir, fullPath)))),
+      image: image && !/\/Logo\.(?:png|jpe?g|webp)$/i.test(image) ? absoluteUrl(image) : '',
+      imageTitle: imageTitle
+    });
   }
 }
 
 collectSitemap(outDir);
-sitemapUrls.sort((a, b) => a.localeCompare(b, 'en'));
+sitemapUrls.sort((a, b) => a.url.localeCompare(b.url, 'en'));
 const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
-  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-  sitemapUrls.map(url => '  <url><loc>' + escapeHtml(url) + '</loc></url>').join('\n') +
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' +
+  sitemapUrls.map(page => {
+    const image = page.image
+      ? '<image:image><image:loc>' + escapeHtml(page.image) + '</image:loc>' +
+        (page.imageTitle ? '<image:title>' + escapeHtml(page.imageTitle) + '</image:title>' : '') +
+        '</image:image>'
+      : '';
+    return '  <url><loc>' + escapeHtml(page.url) + '</loc>' + image + '</url>';
+  }).join('\n') +
   '\n</urlset>\n';
 fs.writeFileSync(path.join(outDir, 'sitemap.xml'), sitemap);
 
-const pdfCanonicalRules = [];
-for (const resource of discovery.resources || []) {
-  const source = path.join(root, resource.href.replace(/^\//, ''), 'index.html');
-  if (!fs.existsSync(source)) continue;
-  const html = fs.readFileSync(source, 'utf8');
-  const pdfs = new Set(Array.from(html.matchAll(/href="(\/[^"?#]+\.pdf)"/gi), match => match[1]));
-  for (const pdf of pdfs) {
-    pdfCanonicalRules.push(pdf + '\n  Link: <' + absoluteUrl(resource.href) + '>; rel="canonical"');
-  }
-}
-pdfCanonicalRules.sort((a, b) => a.localeCompare(b, 'en'));
-fs.writeFileSync(path.join(outDir, '_headers'), '# Keep downloadable PDFs connected to their fuller guide pages.\n' + pdfCanonicalRules.join('\n\n') + '\n');
+fs.writeFileSync(path.join(outDir, '_headers'), '# Astor Library static hosting headers.\n');
 
-console.log('Static site copied to dist/ with ' + sitemapUrls.length + ' preferred addresses and ' + pdfCanonicalRules.length + ' PDF links.');
+console.log('Static site copied to dist/ with ' + sitemapUrls.length + ' preferred addresses and image sitemap metadata.');

@@ -13,7 +13,7 @@ function escapeHtml(value) {
 }
 
 function assetPath(file) {
-  return '/' + encodeURI(file).replace(/'/g, '%27');
+  return '/' + encodeURIComponent(file).replace(/'/g, '%27');
 }
 
 function header() {
@@ -24,7 +24,6 @@ function header() {
 }
 
 function page(resource) {
-  const pdf = assetPath(resource.pdf);
   const image = assetPath(resource.image);
   const tags = resource.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('');
   const includes = resource.includes.map(item => `<li>${item}</li>`).join('');
@@ -45,8 +44,8 @@ function page(resource) {
 <body>
 ${header()}
 <main class="page-wrap">
-<section class="page-intro"><div><p class="kicker">Free Astor resource · ${resource.pageCount} pages</p><h1>${resource.titleHtml}</h1><p class="deck">${resource.deck}</p></div><aside class="source-note"><p><strong>Read the complete guide.</strong> Open the PDF on screen or keep it beside the text while you study.</p><div class="button-row"><a class="button primary" href="${pdf}">Open PDF</a><a class="button secondary" href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div></aside></section>
-<section class="resource-layout"><article class="preview-panel"><img src="${image}" alt="Cover of ${escapeHtml(resource.title)}"></article><aside class="resource-meta"><div class="tag-row">${tags}</div><p class="page-count">${resource.pageCount}-page illustrated guide</p><p>The guide includes:</p><ul>${includes}</ul><div class="link-list"><a href="${pdf}">Open the complete PDF</a>${related}<a href="/resources/">Browse every free resource</a></div></aside></section>
+<section class="page-intro"><div><p class="kicker">Free Astor resource</p><h1>${resource.titleHtml}</h1><p class="deck">${resource.deck}</p></div><aside class="source-note"><p><strong>Read the complete guide online.</strong> Open the browser-friendly guide and keep it beside the text while you study.</p><div class="button-row"><a class="button primary" href="${resource.url}">Open online guide</a><a class="button secondary" href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div></aside></section>
+<section class="resource-layout"><article class="preview-panel"><img src="${image}" alt="Cover of ${escapeHtml(resource.title)}"></article><aside class="resource-meta"><div class="tag-row">${tags}</div><p>The guide includes:</p><ul>${includes}</ul><div class="link-list"><a href="${resource.url}">Open the complete online guide</a>${related}<a href="/resources/">Browse every free resource</a></div></aside></section>
 <section class="section-title guide-title"><h2>${escapeHtml(resource.sectionHeading)}</h2><p>${escapeHtml(resource.sectionIntro)}</p></section>
 <section class="guide-reading">${readings}</section>
 <section class="note-box"><p><strong>A useful way in.</strong> ${escapeHtml(resource.note)}</p></section>

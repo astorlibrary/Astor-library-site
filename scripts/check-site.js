@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const resourceAdditions = require('./resource-additions');
+const resourceData = require('./resource-data');
 
 const root = process.cwd();
 const SITE_URL = 'https://astorlibrary.com';
@@ -229,8 +230,11 @@ if (!resourcesHub.includes('id="resource-search"')) failures.push('The resources
 if (!resourcesHub.includes('/assets/resources.js')) failures.push('The resources page is missing its search script');
 if (countMatches(resourcesHub, /data-resource-filter=/g) < 7) failures.push('The resources page is missing its category filters');
 if (!resourcesHub.includes('class="resource-editorial"')) failures.push('The resources page is missing its explanation of how to use the free library');
-if (resourceCardCount !== 33) failures.push('The resources page contains ' + resourceCardCount + ' guides but should contain 33');
+if (resourceCardCount !== resourceData.length) failures.push('The resources page contains ' + resourceCardCount + ' guides but should contain ' + resourceData.length);
 if (!resourcesHub.includes('data-resource-filter="eighteenth-century"')) failures.push('The resources page is missing its eighteenth-century fiction filter');
+for (const resource of resourceData) {
+  if (!resourcesHub.includes('href="' + resource.url + '"')) failures.push('The resources page is missing its online link for ' + resource.title);
+}
 
 for (const resource of resourceAdditions) {
   const resourceFile = path.join(root, resource.route, 'index.html');
@@ -242,9 +246,8 @@ for (const resource of resourceAdditions) {
   for (const className of ['resource-layout', 'guide-reading', 'note-box']) {
     if (!resourceHtml.includes('class="' + className)) failures.push(resource.route + ' is missing ' + className);
   }
-  if (!resourceHtml.includes(encodeURI(resource.pdf).replace(/'/g, '%27'))) failures.push(resource.route + ' is missing its PDF');
+  if (!resourceHtml.includes(resource.url)) failures.push(resource.route + ' is missing its online guide link');
   if (!resourceHtml.includes(encodeURI(resource.image).replace(/'/g, '%27'))) failures.push(resource.route + ' is missing its cover');
-  if (!resourceHtml.includes(resource.pageCount + '-page illustrated guide')) failures.push(resource.route + ' is missing its page count');
   if (countMatches(resourceHtml, /<section class="guide-reading">[\s\S]*?<\/section>/g) !== 1 || countMatches(resourceHtml.match(/<section class="guide-reading">[\s\S]*?<\/section>/)?.[0] || '', /<article>/g) !== 3) {
     failures.push(resource.route + ' must contain three reading notes');
   }
@@ -536,16 +539,13 @@ if (fs.existsSync(distDir)) {
     const sitemapEntries = countMatches(sitemap, /<url><loc>https:\/\/astorlibrary\.com\//g);
     if (sitemapEntries !== indexedPages) failures.push('The XML sitemap contains ' + sitemapEntries + ' pages but should contain ' + indexedPages);
     if (sitemap.includes('astorlibrary.co.uk')) failures.push('The XML sitemap points at the secondary domain');
+    if (!sitemap.includes('xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"')) failures.push('The XML sitemap is missing image metadata');
   }
   const robots = fs.readFileSync(path.join(distDir, 'robots.txt'), 'utf8');
   if (!robots.includes('Sitemap: ' + SITE_URL + '/sitemap.xml')) failures.push('robots.txt does not announce the XML sitemap');
   const headersFile = path.join(distDir, '_headers');
   if (!fs.existsSync(headersFile)) {
-    failures.push('dist is missing its PDF search headers');
-  } else {
-    const headers = fs.readFileSync(headersFile, 'utf8');
-    if (countMatches(headers, /rel="canonical"/g) !== resourceCardCount) failures.push('The PDF search headers do not cover all ' + resourceCardCount + ' free guides');
-    if (!headers.includes('<' + SITE_URL + '/resources/')) failures.push('The PDF search headers do not point back to the guide pages');
+    failures.push('dist is missing its static hosting headers');
   }
 }
 

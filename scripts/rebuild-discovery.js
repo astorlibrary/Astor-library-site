@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const subjectData = require('./subject-data');
+const resourceData = require('./resource-data');
 
 const root = process.cwd();
 
@@ -37,38 +38,20 @@ const studyBookLinks = {
   'https://mybook.to/FAHByQ': ['/books/macbeth/', '/books/jekyll-and-hyde/'],
   'https://mybook.to/iFtKs': ['/books/macbeth/', '/books/a-christmas-carol/'],
   'https://mybook.to/ABlyJH': ['/books/romeo-and-juliet/', '/books/jekyll-and-hyde/'],
-  'https://mybook.to/2AqrIlR': ['/books/romeo-and-juliet/', '/books/a-christmas-carol/']
+  'https://mybook.to/2AqrIlR': ['/books/romeo-and-juliet/', '/books/a-christmas-carol/'],
+  'https://mybook.to/lhbh': ['/books/alls-well-that-ends-well/'],
+  'https://mybook.to/VgUfa': ['/books/antony-and-cleopatra/'],
+  'https://mybook.to/3EoUR': ['/books/as-you-like-it/'],
+  'https://mybook.to/x08hp4o': ['/books/comedy-of-errors/'],
+  'https://mybook.to/x4F6rs': ['/books/coriolanus/'],
+  'https://mybook.to/ySSywz': ['/books/cymbeline/'],
+  'https://mybook.to/3xXPCSy': ['/books/henry-iv-parts-1-and-2/', '/books/henry-iv-part-1/', '/books/henry-iv-part-2/'],
+  'https://mybook.to/a6b3c': ['/books/henry-iv-part-2/']
 };
 
-const resourceBookLinks = {
-  '/resources/antony-and-cleopatra/themes-critical-contexts/': ['/books/antony-and-cleopatra/'],
-  '/resources/dorian-gray/introduction/': ['/books/dorian-gray/'],
-  '/resources/macbeth/quick-guide/': ['/books/macbeth/'],
-  '/resources/pamela/psychological-analysis/': ['/books/pamela/'],
-  '/resources/richard-ii/study-guide/': ['/books/richard-ii/'],
-  '/resources/shakespeare/gender-power-omkara-maqbool/': ['/books/othello/', '/books/macbeth/'],
-  '/resources/dracula/complete-overview/': ['/books/dracula/'],
-  '/resources/dracula/gender-roles/': ['/books/dracula/'],
-  '/resources/midsummer-nights-dream/study-guide/': ['/books/a-midsummer-nights-dream/'],
-  '/resources/frankenstein/study-guide/': ['/books/frankenstein/'],
-  '/resources/great-expectations/study-guide/': ['/books/great-expectations/'],
-  '/resources/hamlet/sources-texts-contexts/': ['/books/hamlet/'],
-  '/resources/hamlet/stage-physical-performance-audience/': ['/books/hamlet/'],
-  '/resources/jekyll-and-hyde/analysing-quotations/': ['/books/jekyll-and-hyde/'],
-  '/resources/king-lear/summary-guide/': ['/books/king-lear/'],
-  '/resources/macbeth/summary-analysis/': ['/books/macbeth/'],
-  '/resources/moby-dick/study-guide/': ['/books/moby-dick/'],
-  '/resources/much-ado-about-nothing/passage-analysis/': ['/books/much-ado-about-nothing/'],
-  '/resources/romeo-and-juliet/summary-guide/': ['/books/romeo-and-juliet/'],
-  '/resources/shakespeare/tragedies-overview/': [
-    '/books/hamlet/',
-    '/books/king-lear/',
-    '/books/macbeth/',
-    '/books/othello/',
-    '/books/romeo-and-juliet/',
-    '/books/titus-andronicus/'
-  ]
-};
+const resourceBookLinks = Object.fromEntries(resourceData.map(function (resource) {
+  return [resource.url, resource.relatedBooks || []];
+}));
 
 function read(relative) {
   return fs.readFileSync(path.join(root, relative), 'utf8');
@@ -131,6 +114,10 @@ function escapeHtml(value) {
 function rootPath(value) {
   if (value.startsWith('/')) return value;
   return '/' + value.replace(/^\.\.\//, '');
+}
+
+function linkPath(value) {
+  return /^(?:https?:)?\/\//i.test(value) ? value : rootPath(value);
 }
 
 function unique(values) {
@@ -272,19 +259,22 @@ const authors = Array.from(books.reduce(function (groups, book) {
 
 const resources = [];
 const resourcesHtml = read('resources/index.html');
-const resourcePattern = /<a class="resource-card" href="([^"]+)">([\s\S]*?)<\/a>/g;
+const resourcePattern = /<a class="resource-card" href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g;
 
 for (const match of resourcesHtml.matchAll(resourcePattern)) {
-  const href = rootPath(match[1]);
+  const href = linkPath(match[1]);
   const block = match[2];
   const imageMatch = block.match(/<img class="resource-thumb" src="([^"]+)" alt="([^"]*)"/);
   const titleHtml = matchText(block, /<h3>([\s\S]*?)<\/h3>/, 'resource title');
   const descriptionHtml = matchText(block, /<p>([\s\S]*?)<\/p>/, 'resource description');
   const tags = Array.from(block.matchAll(/<span class="tag">([\s\S]*?)<\/span>/g), function (tag) { return textOnly(tag[1]); });
+  const data = resourceData.find(function (resource) { return resource.url === href; });
   let relatedBooks = resourceBookLinks[href] || [];
-  const detailFile = path.join(root, href.replace(/^\//, ''), 'index.html');
+  const detailFile = data?.legacyRoute
+    ? path.join(root, data.legacyRoute.replace(/^\//, ''), 'index.html')
+    : '';
 
-  if (fs.existsSync(detailFile)) {
+  if (detailFile && fs.existsSync(detailFile)) {
     const detailHtml = fs.readFileSync(detailFile, 'utf8');
     const discovered = Array.from(detailHtml.matchAll(/href="(\/books\/[^"]+\/)"/g), function (book) { return book[1]; });
     relatedBooks = unique(relatedBooks.concat(discovered));
@@ -304,6 +294,7 @@ for (const match of resourcesHtml.matchAll(resourcePattern)) {
     href: href,
     image: imageMatch ? rootPath(imageMatch[1]) : '',
     imageAlt: imageMatch ? textOnly(imageMatch[2]) : '',
+    legacyRoute: data?.legacyRoute || '',
     relatedBooks: relatedBooks,
     search: [title, description].concat(unique(tags)).join(' ')
   });

@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-require('./rebuild-resource-additions');
+require('./rebuild-resources');
+require('./rebuild-study-additions');
 
 const root = process.cwd();
 const collections = [

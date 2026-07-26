@@ -46,7 +46,6 @@ module.exports = [
     ],
     resources: [
       { href: '/resources/frankenstein/study-guide/', label: 'Frankenstein study guide', copy: 'Creation, responsibility and narrative form.' },
-      { href: '/resources/jekyll-and-hyde/analysing-quotations/', label: 'Analysing Jekyll and Hyde', copy: 'A practical route into language and evidence.' },
       { href: '/resources/dracula/complete-overview/', label: 'Dracula: complete overview', copy: 'Plot, documents, characters and context.' },
       { href: '/resources/dracula/gender-roles/', label: 'Gender roles in Dracula', copy: 'Desire, conduct and late-Victorian anxiety.' },
       { href: '/resources/dorian-gray/introduction/', label: 'The Picture of Dorian Gray: an introduction', copy: 'Art, influence, secrecy and the portrait as record.' }
@@ -83,7 +82,7 @@ module.exports = [
       { label: 'Settlement', title: 'The last scene distributes belonging', copy: 'Marriage, recognition and pardon decide who may join the dance, household or restored state. Count the people included, but also notice refusals, forced choices and sudden conversions. An ending can be formally happy while leaving a moral question open.' }
     ],
     books: [
-      { href: '/books/comedy-of-errors/', title: 'The Comedy of Errors', author: 'William Shakespeare', year: 'c.1590s', image: '/Comedy%20of%20Errors.png', copy: 'Separated twins, mistaken identity and a farce whose first scene begins under a sentence of death.' },
+      { href: '/books/comedy-of-errors/', title: 'The Comedy of Errors', author: 'William Shakespeare', year: 'c.1590s', image: '/Comedy%20of%20Errors%20%28Main%20Page%29.png', copy: 'Separated twins, mistaken identity and a farce whose first scene begins under a sentence of death.' },
       { href: '/books/taming-of-the-shrew/', title: 'The Taming of the Shrew', author: 'William Shakespeare', year: 'c.1590–94', image: '/Taming%20of%20the%20Shrew.png', copy: 'Courtship, household power and performed obedience in a comedy whose final speech remains contested.' },
       { href: '/books/a-midsummer-nights-dream/', title: 'A Midsummer Night’s Dream', author: 'William Shakespeare', year: 'c.1595–96', image: '/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png', copy: 'Athenian law, fairy interference and amateur theatre meet in a night of unstable desire.' },
       { href: '/books/much-ado-about-nothing/', title: 'Much Ado About Nothing', author: 'William Shakespeare', year: 'c.1598–99', image: '/Much%20Ado%20About%20Nothing.png', copy: 'Wit, surveillance and slander place two very different courtships under public pressure.' },
@@ -107,7 +106,6 @@ module.exports = [
     ],
     resources: [
       { href: '/resources/midsummer-nights-dream/study-guide/', label: 'A Midsummer Night’s Dream study guide', copy: 'Follow court, forest, performance and the play’s three comic worlds.' },
-      { href: '/resources/much-ado-about-nothing/passage-analysis/', label: 'Much Ado passage analysis', copy: 'Move from claim to exact language in a comedy of overhearing and judgement.' },
       { href: '/resources/shakespeare/gender-power-omkara-maqbool/', label: 'Gender and power in Shakespeare', copy: 'A route into performance, authority and adaptation across genres.' },
       { href: '/books/as-you-like-it/', label: 'As You Like It reading page', copy: 'Read disguise, pastoral work, four courtships and the epilogue in depth.' }
     ],
@@ -168,7 +166,6 @@ module.exports = [
     ],
     resources: [
       { href: '/resources/shakespeare/tragedies-overview/', label: 'Shakespeare’s tragedies overview', copy: 'A free guide to the genre across several plays.' },
-      { href: '/resources/hamlet/sources-texts-contexts/', label: 'Hamlet: sources, texts and contexts', copy: 'Revenge, print and early performance.' },
       { href: '/resources/macbeth/summary-analysis/', label: 'Macbeth summary and analysis', copy: 'The action, characters and central passages.' },
       { href: '/resources/macbeth/quick-guide/', label: 'Macbeth quick study guide', copy: 'Prophecy, equivocation, guilt and James I.' },
       { href: '/resources/antony-and-cleopatra/themes-critical-contexts/', label: 'Antony and Cleopatra: themes and contexts', copy: 'Rome, Egypt, gender, empire and Plutarch.' },
@@ -227,7 +224,6 @@ module.exports = [
     ],
     resources: [
       { href: '/resources/dracula/complete-overview/', label: 'Dracula: complete overview', copy: 'See how the novel builds a case from separate documents.' },
-      { href: '/resources/jekyll-and-hyde/analysing-quotations/', label: 'Analysing Jekyll and Hyde', copy: 'Work closely with the language of concealment and evidence.' }
     ],
     sources: [
       { href: 'https://librariesandarchives.portsmouth.gov.uk/archive-service-and-history-centre/our-collections/conan-doyle-collection/', label: 'Portsmouth History Centre: Conan Doyle collection' },
