@@ -219,7 +219,7 @@ function addResourceStructuredData(html, source) {
     name: resource.title,
     description: resource.description,
     url: absoluteUrl(href),
-    sameAs: resource.href,
+    sameAs: resource.externalUrl,
     image: resource.image ? absoluteUrl(resource.image) : undefined,
     inLanguage: 'en-GB',
     isAccessibleForFree: true,
@@ -453,7 +453,7 @@ function addBookReadingNavigation(html, source) {
       '<a href="/library/">All books</a><span aria-hidden="true">/</span>' +
       '<a href="' + escapeHtml(collectionHref) + '">' + escapeHtml(book.collection) + '</a>' +
       '<span aria-hidden="true">/</span><span aria-current="page">' + escapeHtml(book.title) + '</span></nav>';
-    const withIntro = html.replace('<section class="page-intro"', breadcrumb + '<section class="page-intro"');
+    const withIntro = html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*")/i, breadcrumb + '$1');
     html = withIntro === html
       ? html.replace(/(<main\b[^>]*>)/i, '$1' + breadcrumb)
       : withIntro;
@@ -509,7 +509,7 @@ function addEditorialCredit(html, source) {
     ? 'Prepared and checked for Astor Library. Dates, publication details and historical claims are supported by the sources listed on this page.'
     : 'Published by Astor Library as a free literature resource, made to support reading, teaching and independent study.';
   const credit = '<aside class="astor-page-credit" aria-label="About this page"><span><b>' + (book ? 'Astor Library reading page' : 'Astor Library free guide') + '</b>' + copy + '</span><a href="/editorial/">How we work <span aria-hidden="true">&rarr;</span></a></aside>';
-  const withIntro = html.replace(/(<section class="page-intro"[\s\S]*?<\/section>)/i, '$1' + credit);
+  const withIntro = html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>)/i, '$1' + credit);
   return withIntro === html ? html.replace(/(<main\b[^>]*>)/i, '$1' + credit) : withIntro;
 }
 

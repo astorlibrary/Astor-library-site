@@ -1,4 +1,4 @@
-module.exports = [
+const resources = [
   {
     category: 'shakespeare',
     title: 'Antony and Cleopatra: Key Themes & Critical Contexts',
@@ -400,3 +400,19 @@ module.exports = [
     tags: ['The Great Gatsby', 'Critical reading']
   }
 ];
+
+function slugify(value) {
+  return String(value)
+    .toLocaleLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+for (const resource of resources) {
+  resource.route = resource.legacyRoute ||
+    '/resources/' + resource.category + '/' + slugify(resource.title) + '/';
+}
+
+module.exports = resources;

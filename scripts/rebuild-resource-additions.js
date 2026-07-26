@@ -1,15 +1,59 @@
 const fs = require('fs');
 const path = require('path');
-const resources = require('./resource-additions');
+const resources = require('./resource-data');
+const detailedResources = require('./resource-additions');
 
 const root = process.cwd();
+const detailedByUrl = new Map(detailedResources.map(resource => [resource.url, resource]));
+
+const categories = {
+  shakespeare: {
+    label: 'Shakespeare',
+    use: 'Keep the scene and its dramatic situation open beside the guide. The useful question is not simply what a theme means, but who is speaking, who is listening and what the language is trying to make happen.'
+  },
+  poetry: {
+    label: 'Poetry',
+    use: 'Read the poem aloud before settling on an interpretation. Sound, pace, line ending and repetition often carry an argument that a prose summary cannot preserve.'
+  },
+  'eighteenth-century': {
+    label: 'Eighteenth-century fiction',
+    use: 'Keep the form of the writing in view. Letters, narrators and claims to truth are part of the argument, not neutral containers for the story.'
+  },
+  regency: {
+    label: 'Romantic & Regency',
+    use: 'Return from the guide to the exact exchange or paragraph. Austen’s judgements are often made through distance, timing and the difference between what a character says and what the narration allows us to see.'
+  },
+  victorian: {
+    label: 'Victorian & Gothic',
+    use: 'Use the guide to keep plot, voice and historical pressure together. Documents, houses, secrets and divided narrators matter because of the work the novel makes them do.'
+  },
+  modern: {
+    label: 'Modern fiction',
+    use: 'Notice who is allowed to tell the story and what that account cannot settle. Historical context matters most when it changes how a voice, silence or formal choice can be read.'
+  },
+  american: {
+    label: 'American literature',
+    use: 'Keep voice and public language together. These guides are most useful when they send you back to the words through which freedom, success, race, power or national identity are being argued.'
+  }
+};
 
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function textOnly(value) {
+  return String(value)
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&(?:rsquo|lsquo);/g, '’')
+    .replace(/&(?:rdquo|ldquo);/g, '“')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function assetPath(file) {
@@ -19,46 +63,104 @@ function assetPath(file) {
 function header() {
   return `<header class="site-header">
 <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="Astor Library torch"><span class="word">LIBRARY</span></a>
-<nav class="nav" aria-label="Primary navigation"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/explore/">Explore</a><a class="nav-link" href="/library/">All books</a><a class="nav-link" href="/authors/">Writers</a><a class="nav-link" href="/subjects/">Subjects</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/resources/">Free resources</a></nav>
+<nav class="nav" aria-label="Primary navigation"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/explore/">Explore</a><a class="nav-link" href="/passage-room/">Passages</a><a class="nav-link" href="/subjects/">Subjects</a><a class="nav-link" href="/authors/">Writers</a><a class="nav-link" href="/library/">All books</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/resources/" aria-current="page">Free resources</a></nav>
 </header>`;
 }
 
+function bookTitle(href) {
+  const file = path.join(root, href.replace(/^\//, ''), 'index.html');
+  if (!fs.existsSync(file)) return 'Related Astor edition';
+  const html = fs.readFileSync(file, 'utf8');
+  const heading = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+  return heading ? textOnly(heading[1]).replace(/\.$/, '') : 'Related Astor edition';
+}
+
+function relatedLinks(resource) {
+  const books = resource.relatedBooks || [];
+  if (books.length) {
+    return books.map(href => `<a href="${escapeHtml(href)}"><span>Astor reading page</span><b>${escapeHtml(bookTitle(href))}</b><em>Read the book’s introduction, context and further material.</em></a>`).join('');
+  }
+  return `<a href="/subjects/"><span>Continue in Astor Library</span><b>Read by subject</b><em>Move from this guide to books joined by form, method or question.</em></a>
+<a href="/explore/"><span>Search the whole library</span><b>Find another text or topic</b><em>Search books, writers, subjects, close readings and free guides together.</em></a>`;
+}
+
+function readingNotes(resource, detailed) {
+  if (detailed?.readings?.length === 3) return detailed.readings;
+  const primary = resource.tags[0] || 'The text';
+  const focus = resource.tags[1] || 'Close reading';
+  const category = categories[resource.category];
+  return [
+    {
+      label: 'Begin with the guide',
+      title: primary,
+      copy: resource.description
+    },
+    {
+      label: 'Return to the work',
+      title: 'Keep the language in view',
+      copy: category.use
+    },
+    {
+      label: 'Carry one question',
+      title: focus,
+      copy: `Use ${focus.toLocaleLowerCase()} as a question to test against the text, rather than as a label that settles it in advance.`
+    }
+  ];
+}
+
 function page(resource) {
-  const image = assetPath(resource.image);
+  const detailed = detailedByUrl.get(resource.url);
+  const category = categories[resource.category];
   const tags = resource.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('');
-  const includes = resource.includes.map(item => `<li>${item}</li>`).join('');
-  const readings = resource.readings.map(item => `<article><p class="year">${escapeHtml(item.label)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.copy)}</p></article>`).join('');
-  const related = resource.relatedBooks.map(item => `<a href="${item.href}">${escapeHtml(item.label)}</a>`).join('');
-  const footerRelated = resource.relatedBooks.map(item => `<a href="${item.href}">${escapeHtml(item.label.replace(/^Read the | book page$/g, ''))}</a>`).join('');
+  const notes = readingNotes(resource, detailed);
+  const notesHtml = notes.map(item => `<article><p class="year">${escapeHtml(item.label)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.copy)}</p></article>`).join('');
+  const guidePurpose = detailed?.deck || resource.description;
+  const note = detailed?.note ||
+    `Read the introduction here first, then open the complete guide. Keep the relevant chapter, scene or poem nearby so that the resource remains a way back into the writing.`;
 
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${escapeHtml(resource.title)} | Astor Library</title>
-<meta name="description" content="${escapeHtml(resource.description)}">
+<title>${escapeHtml(resource.title)}: Free Online Guide | Astor Library</title>
+<meta name="description" content="${escapeHtml(resource.description)} Read the Astor Library introduction and open the complete guide free online.">
 <link rel="stylesheet" href="/assets/styles.css">
-<style>.resource-layout{display:grid;grid-template-columns:minmax(0,1fr) 350px;gap:28px;margin-top:34px}.preview-panel,.resource-meta,.note-box{border:1px solid var(--line);background:#fff8ef;padding:18px}.preview-panel img{width:100%;max-height:760px;display:block;object-fit:contain;background:#f3e8dd}.resource-meta p,.resource-meta li,.note-box p{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.58;color:#423b36}.resource-meta ul{padding-left:21px}.resource-meta li+li{margin-top:8px}.tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.tag{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.1em;font-weight:900;color:var(--burgundy);background:#f2e4d7;border:1px solid var(--line);padding:6px 8px}.page-count{margin:0 0 18px;color:var(--burgundy)!important;font-weight:850}.link-list{display:grid;gap:10px;margin-top:20px}.link-list a{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;border:1px solid var(--line);background:#fff8ef;padding:12px;text-decoration:none;color:var(--burgundy);font-weight:800}.guide-title{margin-top:56px}.guide-reading{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:22px}.guide-reading article{border:1px solid var(--line);background:rgba(255,248,239,.86);padding:22px;min-height:230px}.guide-reading h3{font-size:29px;line-height:1;margin:0 0 12px}.guide-reading p{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.62;color:#423b36}.guide-reading .year{color:var(--burgundy);font-weight:850;text-transform:uppercase;letter-spacing:.13em;font-size:11px}@media(max-width:900px){.resource-layout{grid-template-columns:1fr}.preview-panel{order:0}.resource-meta{order:1}.preview-panel img{max-height:560px}}@media(max-width:800px){.guide-reading{grid-template-columns:1fr}.guide-reading article{min-height:0}}@media(max-width:520px){.resource-layout{gap:14px}.preview-panel,.resource-meta,.note-box{padding:14px}.guide-reading article{padding:18px}.guide-reading h3{font-size:26px}}</style>
 </head>
-<body>
+<body class="resource-detail-page">
 ${header()}
-<main class="page-wrap">
-<section class="page-intro"><div><p class="kicker">Free Astor resource</p><h1>${resource.titleHtml}</h1><p class="deck">${resource.deck}</p></div><aside class="source-note"><p><strong>Read the complete guide online.</strong> Open the browser-friendly guide and keep it beside the text while you study.</p><div class="button-row"><a class="button primary" href="${resource.url}">Open online guide</a><a class="button secondary" href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div></aside></section>
-<section class="resource-layout"><article class="preview-panel"><img src="${image}" alt="Cover of ${escapeHtml(resource.title)}"></article><aside class="resource-meta"><div class="tag-row">${tags}</div><p>The guide includes:</p><ul>${includes}</ul><div class="link-list"><a href="${resource.url}">Open the complete online guide</a>${related}<a href="/resources/">Browse every free resource</a></div></aside></section>
-<section class="section-title guide-title"><h2>${escapeHtml(resource.sectionHeading)}</h2><p>${escapeHtml(resource.sectionIntro)}</p></section>
-<section class="guide-reading">${readings}</section>
-<section class="note-box"><p><strong>A useful way in.</strong> ${escapeHtml(resource.note)}</p></section>
+<main class="page-wrap resource-landing-page">
+<section class="page-intro resource-page-intro"><div><p class="kicker">Free online guide · ${escapeHtml(category.label)}</p><h1>${resource.titleHtml}</h1><p class="deck">${escapeHtml(guidePurpose)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Open the complete guide <span aria-hidden="true">&nearr;</span></a><a class="button secondary" href="/resources/">All free resources</a></div></div><aside class="source-note"><p><strong>This page belongs to Astor Library.</strong> It keeps the guide’s purpose, related books and place in the wider library together. The complete reading resource opens in a separate browser tab.</p></aside></section>
+
+<section class="resource-layout resource-landing-hero">
+  <figure class="resource-cover-panel"><img src="${assetPath(resource.image)}" alt="${escapeHtml(resource.title)} cover"><figcaption>Astor Library free resource</figcaption></figure>
+  <article class="resource-meta">
+    <div class="tag-row">${tags}</div>
+    <p class="resource-availability">Free · browser-friendly · opens online</p>
+    <h2>What this guide is for.</h2>
+    <p>${escapeHtml(resource.description)}</p>
+    <p>${escapeHtml(category.use)}</p>
+    <div class="resource-page-actions"><a href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Read the complete online guide <span aria-hidden="true">&nearr;</span></a><a href="/resources/">Return to the free library</a></div>
+  </article>
+</section>
+
+<section class="resource-reading-section"><div class="section-title guide-title"><p class="kicker">Before you open it</p><h2>Three ways into the guide.</h2><p>The guide is there to support the reading. These notes give you a place to begin and a reason to return to the words on the page.</p></div><div class="guide-reading">${notesHtml}</div></section>
+
+<aside class="note-box resource-use-note"><p><strong>A useful way in.</strong> ${escapeHtml(note)}</p></aside>
+
+<section class="resource-open-band"><div><p class="kicker">The complete resource</p><h2>Open the guide when you are ready.</h2><p>You will leave this Astor page and open the full browser-based guide in a new tab. This introduction will remain open so you can return to the related books and resources.</p></div><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Open free guide <span aria-hidden="true">&nearr;</span></a></section>
+
+<section class="resource-related"><div><p class="kicker">Keep reading</p><h2>Back into the library.</h2></div><div class="resource-related-links">${relatedLinks(resource)}</div></section>
 </main>
-<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Making classic literature easier to read, teach and study, while keeping the original texts intact.</p></div><div class="footer-links">${footerRelated}<a href="/resources/">All resources</a><a href="/library/">Library</a></div></footer>
+<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>The original work remains at the centre.</p></div><div class="footer-links"><a href="/resources/">All free resources</a><a href="/library/">Books</a><a href="/subjects/">Subjects</a><a href="/editorial/">How we work</a></div></footer>
 </body>
 </html>`;
 }
 
 for (const resource of resources) {
-  const directory = path.join(root, resource.route);
+  const directory = path.join(root, resource.route.replace(/^\//, ''));
   fs.mkdirSync(directory, { recursive: true });
   fs.writeFileSync(path.join(directory, 'index.html'), page(resource));
 }
 
-console.log(`Built ${resources.length} new resource pages.`);
+console.log(`Built ${resources.length} Astor landing pages for the free online guides.`);

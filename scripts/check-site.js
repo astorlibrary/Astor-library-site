@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const resourceAdditions = require('./resource-additions');
 const resourceData = require('./resource-data');
 
 const root = process.cwd();
@@ -157,11 +156,15 @@ for (const file of htmlFiles) {
 const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 if (!homepage.includes('class="home-masthead"')) failures.push('The homepage is missing its editorial masthead');
 if (!/independent publisher/i.test(homepage)) failures.push('The homepage does not clearly identify the modern Astor Library');
-if (!homepage.includes('class="astor-home-hero"')) failures.push('The homepage is missing its text-first opening');
-if (!homepage.includes('data-home-passage-stage')) failures.push('The homepage is missing its changing passage display');
-if (countMatches(homepage, /data-home-passage="/g) !== 4) failures.push('The homepage must feature exactly four annotated passage previews');
-if (countMatches(homepage, /data-home-passage-target=/g) !== 4) failures.push('The homepage passage display is missing its four controls');
+if (!homepage.includes('class="astor-home-hero ')) failures.push('The homepage is missing its text-first opening');
+if (!homepage.includes('class="home-reading-desk"')) failures.push('The homepage is missing its Astor reading desk');
+if (countMatches(homepage, /class="home-desk-book /g) !== 4) failures.push('The homepage reading desk must feature four Astor editions');
+if (!homepage.includes('class="home-library-doors"')) failures.push('The homepage is missing its three routes into Astor Library');
+if (countMatches(homepage, /class="home-library-door-grid"[\s\S]*?<\/section>/g) !== 1) failures.push('The homepage is missing its three-part library introduction');
 if (!homepage.includes('href="/passage-room/"')) failures.push('The homepage is missing the Passage Room');
+if (!homepage.includes('class="home-passage-feature"')) failures.push('The homepage is missing its later Passage Room feature');
+const homePassageSection = homepage.match(/<section class="home-passage-feature"[\s\S]*?<\/section>/i)?.[0] || '';
+if (countMatches(homePassageSection, /href="\/passage-room\/[^/]+\/"/g) !== 4) failures.push('The homepage Passage Room feature must open four close readings');
 if (!homepage.includes('home-finder')) failures.push('The homepage is missing its library search entrance');
 if (!homepage.includes('class="archive-book-shelf"')) failures.push('The homepage is missing its new-books shelf');
 if (countMatches(homepage, /class="archive-catalogue-number"/g) !== 3) failures.push('The homepage must clearly explain its three kinds of resource');
@@ -237,22 +240,25 @@ if (!resourcesHub.includes('class="resource-editorial"')) failures.push('The res
 if (resourceCardCount !== resourceData.length) failures.push('The resources page contains ' + resourceCardCount + ' guides but should contain ' + resourceData.length);
 if (!resourcesHub.includes('data-resource-filter="eighteenth-century"')) failures.push('The resources page is missing its eighteenth-century fiction filter');
 for (const resource of resourceData) {
-  if (!resourcesHub.includes('href="' + resource.url + '"')) failures.push('The resources page is missing its online link for ' + resource.title);
+  if (!resourcesHub.includes('href="' + resource.route + '"')) failures.push('The resources page is missing its Astor page for ' + resource.title);
 }
+if (/class="resource-card" href="https?:\/\//i.test(resourcesHub)) failures.push('The resources page still sends a guide card directly away from Astor Library');
 
-for (const resource of resourceAdditions) {
-  const resourceFile = path.join(root, resource.route, 'index.html');
+for (const resource of resourceData) {
+  const resourceFile = path.join(root, resource.route.replace(/^\//, ''), 'index.html');
   if (!fs.existsSync(resourceFile)) {
-    failures.push('The new resource page is missing: ' + resource.route);
+    failures.push('The resource page is missing: ' + resource.route);
     continue;
   }
   const resourceHtml = fs.readFileSync(resourceFile, 'utf8');
-  for (const className of ['resource-layout', 'guide-reading', 'note-box']) {
+  for (const className of ['resource-layout', 'guide-reading', 'note-box', 'resource-open-band', 'resource-related']) {
     if (!resourceHtml.includes('class="' + className)) failures.push(resource.route + ' is missing ' + className);
   }
   if (!resourceHtml.includes(resource.url)) failures.push(resource.route + ' is missing its online guide link');
-  if (!resourceHtml.includes(encodeURI(resource.image).replace(/'/g, '%27'))) failures.push(resource.route + ' is missing its cover');
-  if (countMatches(resourceHtml, /<section class="guide-reading">[\s\S]*?<\/section>/g) !== 1 || countMatches(resourceHtml.match(/<section class="guide-reading">[\s\S]*?<\/section>/)?.[0] || '', /<article>/g) !== 3) {
+  const expectedImage = '/' + encodeURIComponent(resource.image).replace(/'/g, '%27');
+  if (!resourceHtml.includes(expectedImage)) failures.push(resource.route + ' is missing its cover');
+  const guideReading = resourceHtml.match(/<div class="guide-reading">[\s\S]*?<\/div>/)?.[0] || '';
+  if (!guideReading || countMatches(guideReading, /<article>/g) !== 3) {
     failures.push(resource.route + ' must contain three reading notes');
   }
 }

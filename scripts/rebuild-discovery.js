@@ -50,7 +50,7 @@ const studyBookLinks = {
 };
 
 const resourceBookLinks = Object.fromEntries(resourceData.map(function (resource) {
-  return [resource.url, resource.relatedBooks || []];
+  return [resource.route, resource.relatedBooks || []];
 }));
 
 function read(relative) {
@@ -268,10 +268,10 @@ for (const match of resourcesHtml.matchAll(resourcePattern)) {
   const titleHtml = matchText(block, /<h3>([\s\S]*?)<\/h3>/, 'resource title');
   const descriptionHtml = matchText(block, /<p>([\s\S]*?)<\/p>/, 'resource description');
   const tags = Array.from(block.matchAll(/<span class="tag">([\s\S]*?)<\/span>/g), function (tag) { return textOnly(tag[1]); });
-  const data = resourceData.find(function (resource) { return resource.url === href; });
+  const data = resourceData.find(function (resource) { return resource.route === href; });
   let relatedBooks = resourceBookLinks[href] || [];
-  const detailFile = data?.legacyRoute
-    ? path.join(root, data.legacyRoute.replace(/^\//, ''), 'index.html')
+  const detailFile = data?.route
+    ? path.join(root, data.route.replace(/^\//, ''), 'index.html')
     : '';
 
   if (detailFile && fs.existsSync(detailFile)) {
@@ -292,9 +292,9 @@ for (const match of resourcesHtml.matchAll(resourcePattern)) {
     description: description,
     tags: unique(tags),
     href: href,
+    externalUrl: data?.url || '',
     image: imageMatch ? rootPath(imageMatch[1]) : '',
     imageAlt: imageMatch ? textOnly(imageMatch[2]) : '',
-    legacyRoute: data?.legacyRoute || '',
     relatedBooks: relatedBooks,
     search: [title, description].concat(unique(tags)).join(' ')
   });
