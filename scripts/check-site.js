@@ -154,11 +154,13 @@ for (const file of htmlFiles) {
 }
 
 const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const styles = fs.readFileSync(path.join(root, 'assets', 'styles.css'), 'utf8');
 if (!homepage.includes('class="home-masthead"')) failures.push('The homepage is missing its editorial masthead');
 if (!/independent publisher/i.test(homepage)) failures.push('The homepage does not clearly identify the modern Astor Library');
 if (!homepage.includes('class="astor-home-hero ')) failures.push('The homepage is missing its text-first opening');
 if (!homepage.includes('class="home-reading-desk"')) failures.push('The homepage is missing its Astor reading desk');
 if (countMatches(homepage, /class="home-desk-book /g) !== 4) failures.push('The homepage reading desk must feature four Astor editions');
+if (!/\.home-desk-book img\s*\{[^}]*height:auto/i.test(styles)) failures.push('The homepage covers can be stretched out of proportion on phones');
 if (!homepage.includes('class="home-library-doors"')) failures.push('The homepage is missing its three routes into Astor Library');
 if (countMatches(homepage, /class="home-library-door-grid"[\s\S]*?<\/section>/g) !== 1) failures.push('The homepage is missing its three-part library introduction');
 if (!homepage.includes('href="/passage-room/"')) failures.push('The homepage is missing the Passage Room');
@@ -488,6 +490,16 @@ if (fs.existsSync(distDir)) {
       }
       if (!html.includes('class="astor-page-credit"') || !html.includes('href="/editorial/"')) {
         failures.push('dist/' + fileName + ' is missing its editorial credit');
+      }
+      const bookHref = '/' + fileName.replace(/index\.html$/, '');
+      const relatedPassages = (discoveryIndex?.passages || []).filter(passage => passage.relatedBooks?.includes(bookHref));
+      if (relatedPassages.length && !html.includes('class="book-passage-shelf"')) {
+        failures.push('dist/' + fileName + ' is missing its route into the Passage Room');
+      }
+      for (const passage of relatedPassages) {
+        if (!html.includes('href="' + passage.href + '"')) {
+          failures.push('dist/' + fileName + ' is missing its close-reading link to ' + passage.href);
+        }
       }
       const structuredData = html.match(/<script type="application\/ld\+json" data-astor-book-schema>([\s\S]*?)<\/script>/i);
       if (structuredData) {

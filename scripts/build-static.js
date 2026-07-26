@@ -481,6 +481,39 @@ function addBookAuthorLink(html, source) {
   });
 }
 
+function addBookPassageLinks(html, source) {
+  const context = bookContext(source);
+  if (!context || html.includes('class="book-passage-shelf"')) return html;
+  const { book } = context;
+  const passages = (discovery.passages || []).filter(passage => passage.relatedBooks?.includes(book.href));
+  if (!passages.length) return html;
+
+  const cards = passages.map(function (passage) {
+    const number = String((discovery.passages || []).indexOf(passage) + 1).padStart(2, '0');
+    return '<a href="' + escapeHtml(passage.href) + '">' +
+      '<span>' + number + ' · Close reading</span>' +
+      '<blockquote>' + escapeHtml(passage.title) + '</blockquote>' +
+      '<p>' + escapeHtml(passage.description) + '</p>' +
+      '<b>Open the annotated passage <span aria-hidden="true">&rarr;</span></b></a>';
+  }).join('');
+
+  const resources = (discovery.resources || [])
+    .filter(resource => resource.relatedBooks?.includes(book.href))
+    .slice(0, 3);
+  const resourceLinks = resources.length
+    ? '<nav class="book-passage-resources" aria-label="Free resources for ' + escapeHtml(book.title) + '">' +
+      '<span>Also in the free library</span>' +
+      resources.map(resource => '<a href="' + escapeHtml(resource.href) + '">' + escapeHtml(resource.title) + '</a>').join('') +
+      '</nav>'
+    : '';
+
+  const section = '<section class="book-passage-shelf" aria-labelledby="book-passage-title">' +
+    '<div class="book-passage-shelf-head"><div><p class="kicker">The Passage Room</p><h2 id="book-passage-title">Read one page slowly.</h2></div>' +
+    '<p>A complete book asks for time. Here the pace changes: one short stretch of the original stays open while notes follow the exact words that make it work.</p></div>' +
+    '<div class="book-passage-grid">' + cards + '</div>' + resourceLinks + '</section>';
+  return html.replace('</main>', section + '</main>');
+}
+
 function addResourceReadingNavigation(html, source) {
   const context = resourceContext(source);
   if (!context) return html;
@@ -555,6 +588,7 @@ function prepareHtml(html, source) {
   html = addGlobalMetadata(html, source);
   html = addDiscoveryNavigation(html, source);
   html = addBookAuthorLink(html, source);
+  html = addBookPassageLinks(html, source);
   html = addBookReadingNavigation(html, source);
   html = addResourceReadingNavigation(html, source);
   html = addEditorialCredit(html, source);
