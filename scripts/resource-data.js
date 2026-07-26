@@ -229,7 +229,7 @@ module.exports = [
     title: 'Wide Sargasso Sea: A Study Guide',
     titleHtml: '<em>Wide Sargasso Sea</em>: A Study Guide',
     description: 'A clear route through Rhys’s novel, its three-part structure, principal voices, settings and central concerns.',
-    image: 'assets/wide-sargasso-study-guide.svg',
+    image: 'Wide-Sargasso-Sea-A-Study-Guide.png',
     url: 'https://wide-sargasso-sea-a-stud-dx76kvz.gamma.site',
     tags: ['Wide Sargasso Sea', 'Study guide']
   },
@@ -238,7 +238,7 @@ module.exports = [
     title: 'Wide Sargasso Sea & Post-Colonialism',
     titleHtml: '<em>Wide Sargasso Sea</em> &amp; Post-Colonialism',
     description: 'Read Rhys’s novel through empire, emancipation, race, language, displacement and contested identity.',
-    image: 'assets/wide-sargasso-post-colonialism.svg',
+    image: 'Wide-Sargasso-Sea-and-Post-Colonialism.png',
     url: 'https://wide-sargasso-sea-post-c-3jg03rl.gamma.site',
     tags: ['Wide Sargasso Sea', 'Post-colonialism']
   },
@@ -247,7 +247,7 @@ module.exports = [
     title: 'Wide Sargasso Sea — Part 2: Rochester, Antoinette, and the Unravelling of a Marriage',
     titleHtml: '<em>Wide Sargasso Sea</em> — Part 2',
     description: 'Follow Rochester and Antoinette through the shifting narration, mistrust and power that unravel their marriage.',
-    image: 'assets/wide-sargasso-part-2.svg',
+    image: 'Wide-Sargasso-Sea-Part-2-Rochester-Antoinette-and-the-Unraveling-of-a-Marriage.png',
     url: 'https://wide-sargasso-sea-part-2-ahq6zsi.gamma.site',
     tags: ['Wide Sargasso Sea', 'Part 2']
   },
@@ -256,7 +256,7 @@ module.exports = [
     title: 'Wide Sargasso Sea — Part 3 Summary & Analysis',
     titleHtml: '<em>Wide Sargasso Sea</em> — Part 3 Summary &amp; Analysis',
     description: 'Read the final section through confinement, memory, dream, fire and its return to Jane Eyre.',
-    image: 'assets/wide-sargasso-part-3.svg',
+    image: 'Wide-Sargasso-Sea-Part-3-Summary-and-Analysis.png',
     url: 'https://wide-sargasso-sea-part-3-9amlw3i.gamma.site',
     tags: ['Wide Sargasso Sea', 'Part 3']
   },
