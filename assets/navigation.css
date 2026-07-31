@@ -1,0 +1,765 @@
+/*
+ * Astor Library shared navigation
+ *
+ * This file deliberately owns the global header, Browse panel, mobile drawer,
+ * skip link and grouped footer. It is loaded after the older site stylesheet,
+ * so the selectors below are intentionally scoped and specific.
+ */
+
+:root {
+  --astor-nav-paper: #fffaf4;
+  --astor-nav-paper-deep: #f3e8dd;
+  --astor-nav-ink: #201c1a;
+  --astor-nav-muted: #5b514b;
+  --astor-nav-line: rgba(32, 28, 26, 0.15);
+  --astor-nav-burgundy: #6e1f2b;
+  --astor-nav-navy: #10263b;
+  --astor-nav-gold: #caa75f;
+  --astor-nav-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --astor-nav-serif: Georgia, "Times New Roman", serif;
+}
+
+/* Keyboard users should reach the page without crossing the whole menu. */
+.skip-link {
+  position: fixed !important;
+  z-index: 9999 !important;
+  top: 10px !important;
+  left: 12px !important;
+  min-height: 44px;
+  padding: 0 16px !important;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255, 250, 244, 0.5);
+  background: var(--astor-nav-navy) !important;
+  color: var(--astor-nav-paper) !important;
+  font: 800 13px/1 var(--astor-nav-sans) !important;
+  text-decoration: none;
+  box-shadow: 0 14px 34px rgba(16, 38, 59, 0.28);
+  transform: translateY(-160%) !important;
+  transition: transform 0.16s ease !important;
+}
+
+.skip-link:focus {
+  transform: translateY(0) !important;
+  outline: 3px solid rgba(202, 167, 95, 0.75);
+  outline-offset: 3px;
+}
+
+/* One shared desktop header. */
+.astor-global-header.site-header {
+  position: sticky !important;
+  z-index: 1200 !important;
+  top: 12px !important;
+  width: min(1320px, calc(100% - 24px)) !important;
+  max-width: 1320px !important;
+  min-height: 76px !important;
+  margin: 12px auto 0 !important;
+  padding: 0 22px !important;
+  display: grid !important;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center !important;
+  gap: 20px !important;
+  border: 1px solid var(--astor-nav-line) !important;
+  background: rgba(255, 250, 244, 0.97) !important;
+  color: var(--astor-nav-ink) !important;
+  box-shadow: 0 12px 38px rgba(32, 28, 26, 0.1) !important;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.astor-global-header.site-header .brand {
+  min-width: 0;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 11px !important;
+  color: var(--astor-nav-ink) !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.astor-global-header.site-header .brand .word {
+  font: 700 15px/1 var(--astor-nav-serif) !important;
+  letter-spacing: 0.2em !important;
+}
+
+/* The source image is tall and transparent. Never crop it into a square. */
+.astor-global-header.site-header .brand .torch-mark {
+  width: 22px !important;
+  height: 52px !important;
+  max-width: none !important;
+  max-height: none !important;
+  padding: 0 !important;
+  display: block !important;
+  flex: 0 0 22px !important;
+  overflow: visible !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  background: none !important;
+  border: 0 !important;
+  clip-path: none !important;
+}
+
+.astor-global-header.site-header .astor-primary-nav {
+  min-width: 0;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 2px !important;
+  font-family: var(--astor-nav-sans) !important;
+}
+
+.astor-global-header.site-header .astor-primary-nav > .nav-link,
+.astor-global-header.site-header .astor-browse-menu > summary {
+  min-height: 44px !important;
+  padding: 0 10px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: var(--astor-nav-muted) !important;
+  font: 800 12.5px/1.2 var(--astor-nav-sans) !important;
+  letter-spacing: 0.005em !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  box-shadow: none !important;
+}
+
+.astor-global-header.site-header .astor-primary-nav > .nav-link:hover,
+.astor-global-header.site-header .astor-primary-nav > .nav-link[aria-current="page"],
+.astor-global-header.site-header .astor-browse-menu > summary:hover,
+.astor-global-header.site-header .astor-browse-menu[open] > summary {
+  color: var(--astor-nav-burgundy) !important;
+  box-shadow: inset 0 -2px var(--astor-nav-burgundy) !important;
+}
+
+.astor-global-header.site-header .astor-browse-menu {
+  position: static !important;
+}
+
+.astor-global-header.site-header .astor-browse-menu > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.astor-global-header.site-header .astor-browse-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+.astor-global-header.site-header .astor-browse-menu > summary::after {
+  content: "+";
+  margin-left: 7px;
+  color: var(--astor-nav-burgundy);
+  font: 400 18px/1 var(--astor-nav-sans);
+  transition: transform 0.18s ease;
+}
+
+.astor-global-header.site-header .astor-browse-menu[open] > summary::after {
+  transform: rotate(45deg);
+}
+
+.astor-global-header.site-header .astor-header-search {
+  min-width: 82px;
+  min-height: 44px;
+  padding: 0 15px;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--astor-nav-navy);
+  background: var(--astor-nav-navy);
+  color: var(--astor-nav-paper);
+  font: 900 12px/1 var(--astor-nav-sans);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.astor-global-header.site-header .astor-header-search:hover {
+  border-color: var(--astor-nav-burgundy);
+  background: var(--astor-nav-burgundy);
+  color: var(--astor-nav-paper);
+  transform: translateY(-1px);
+}
+
+.astor-global-header.site-header .site-nav-toggle {
+  display: none !important;
+}
+
+/* If an old script adds a second, wired control, hide the unwired first one. */
+.astor-global-header.site-header > .site-nav-toggle:has(+ .site-nav-toggle) {
+  display: none !important;
+}
+
+.astor-global-header.site-header a:focus-visible,
+.astor-global-header.site-header summary:focus-visible,
+.astor-global-header.site-header button:focus-visible {
+  outline: 3px solid rgba(110, 31, 43, 0.34) !important;
+  outline-offset: 3px !important;
+}
+
+/* Full-width Browse panel: introduction above four calm columns. */
+.astor-global-header.site-header .astor-browse-panel {
+  position: absolute !important;
+  z-index: 5 !important;
+  top: calc(100% + 8px) !important;
+  right: 0 !important;
+  left: 0 !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: min(690px, calc(100dvh - 110px)) !important;
+  margin: 0 !important;
+  padding: 0 24px 25px !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 0 22px !important;
+  overflow-y: auto !important;
+  border: 1px solid var(--astor-nav-line) !important;
+  background: var(--astor-nav-paper) !important;
+  color: var(--astor-nav-ink) !important;
+  box-shadow: 0 26px 60px rgba(32, 28, 26, 0.18) !important;
+}
+
+.astor-global-header.site-header .astor-browse-menu:not([open]) .astor-browse-panel {
+  display: none !important;
+}
+
+.astor-global-header.site-header .astor-browse-intro {
+  grid-column: 1 / -1;
+  min-height: 74px;
+  margin: 0 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid var(--astor-nav-line);
+}
+
+.astor-global-header.site-header .astor-browse-intro p {
+  margin: 0;
+  color: var(--astor-nav-muted);
+  font: 17px/1.45 var(--astor-nav-serif);
+}
+
+.astor-global-header.site-header .astor-browse-intro a {
+  color: var(--astor-nav-burgundy);
+  font: 900 11px/1.3 var(--astor-nav-sans);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.astor-global-header.site-header .astor-browse-panel > section {
+  min-width: 0;
+  margin: 0 !important;
+  padding: 0 20px 3px 0 !important;
+  display: flex;
+  flex-direction: column;
+  border: 0 !important;
+  border-right: 1px solid var(--astor-nav-line) !important;
+  background: transparent !important;
+}
+
+.astor-global-header.site-header .astor-browse-panel > section:last-child {
+  padding-right: 0 !important;
+  border-right: 0 !important;
+}
+
+.astor-global-header.site-header .astor-browse-panel h2 {
+  margin: 0 0 10px !important;
+  color: var(--astor-nav-burgundy) !important;
+  font: 900 9px/1.3 var(--astor-nav-sans) !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase;
+}
+
+.astor-global-header.site-header .astor-browse-panel section > a {
+  min-height: 44px;
+  padding: 9px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid rgba(32, 28, 26, 0.1);
+  color: var(--astor-nav-ink) !important;
+  font: 800 13px/1.25 var(--astor-nav-sans) !important;
+  text-decoration: none !important;
+}
+
+.astor-global-header.site-header .astor-browse-panel section > a:hover,
+.astor-global-header.site-header .astor-browse-panel section > a[aria-current="page"] {
+  color: var(--astor-nav-burgundy) !important;
+}
+
+.astor-global-header.site-header .astor-browse-panel section > a span {
+  margin-top: 3px;
+  color: var(--astor-nav-muted);
+  font: 11px/1.35 var(--astor-nav-sans);
+}
+
+/* Grouped shared footer. */
+.astor-global-footer.site-footer {
+  width: min(1320px, calc(100% - 24px)) !important;
+  max-width: 1320px !important;
+  margin: 82px auto 20px !important;
+  padding: 52px 38px 48px !important;
+  display: grid !important;
+  grid-template-columns: minmax(250px, 1.35fr) repeat(3, minmax(150px, 1fr)) !important;
+  align-items: start !important;
+  gap: 42px !important;
+  border: 0 !important;
+  background: var(--astor-nav-navy) !important;
+  color: var(--astor-nav-paper) !important;
+  font-family: var(--astor-nav-sans) !important;
+}
+
+.astor-global-footer.site-footer p,
+.astor-global-footer.site-footer h2 {
+  margin-top: 0;
+}
+
+.astor-global-footer.site-footer .astor-footer-signature .footer-brand {
+  margin: 0 0 12px !important;
+  color: var(--astor-nav-paper) !important;
+  font: 400 32px/1 var(--astor-nav-serif) !important;
+  letter-spacing: -0.025em;
+}
+
+.astor-global-footer.site-footer .astor-footer-signature > p:last-child {
+  max-width: 280px;
+  margin: 0 !important;
+  color: #ded7d0 !important;
+  font: 13px/1.6 var(--astor-nav-sans) !important;
+}
+
+.astor-global-footer.site-footer .astor-footer-group {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.astor-global-footer.site-footer .astor-footer-group h2 {
+  margin: 0 0 14px !important;
+  color: var(--astor-nav-gold) !important;
+  font: 900 9px/1.3 var(--astor-nav-sans) !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase;
+}
+
+.astor-global-footer.site-footer .astor-footer-group a {
+  min-height: 38px;
+  padding: 9px 0;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(255, 250, 244, 0.16);
+  color: #f2e9df !important;
+  font: 750 12px/1.35 var(--astor-nav-sans) !important;
+  text-decoration: none !important;
+}
+
+.astor-global-footer.site-footer .astor-footer-group a:hover,
+.astor-global-footer.site-footer .astor-footer-group a:focus-visible {
+  color: var(--astor-nav-gold) !important;
+}
+
+@media (max-width: 1180px) and (min-width: 981px) {
+  .astor-global-header.site-header {
+    gap: 13px !important;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+
+  .astor-global-header.site-header .brand {
+    gap: 8px !important;
+  }
+
+  .astor-global-header.site-header .brand .word {
+    font-size: 13px !important;
+    letter-spacing: 0.16em !important;
+  }
+
+  .astor-global-header.site-header .brand .torch-mark {
+    width: 19px !important;
+    flex-basis: 19px !important;
+  }
+
+  .astor-global-header.site-header .astor-primary-nav > .nav-link,
+  .astor-global-header.site-header .astor-browse-menu > summary {
+    padding-right: 7px !important;
+    padding-left: 7px !important;
+    font-size: 11.5px !important;
+  }
+
+  .astor-global-header.site-header .astor-header-search {
+    min-width: 76px;
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+}
+
+/*
+ * Compact header and drawer. The navigation is hidden in CSS before the
+ * deferred script runs, so slow phones do not flash a wall of links.
+ */
+@media (max-width: 980px) {
+  .astor-global-header.site-header {
+    top: 0 !important;
+    width: 100% !important;
+    min-height: 66px !important;
+    margin: 0 !important;
+    padding: 0 16px !important;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 10px !important;
+    border-width: 0 0 1px !important;
+    box-shadow: 0 8px 26px rgba(32, 28, 26, 0.11) !important;
+  }
+
+  .astor-global-header.site-header .brand {
+    grid-column: 1;
+    justify-self: start;
+    gap: 8px !important;
+  }
+
+  .astor-global-header.site-header .brand .word {
+    font-size: 13.5px !important;
+    letter-spacing: 0.17em !important;
+  }
+
+  .astor-global-header.site-header .brand .torch-mark {
+    width: 19px !important;
+    height: 46px !important;
+    flex-basis: 19px !important;
+  }
+
+  .astor-global-header.site-header .astor-header-search {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 74px;
+    min-height: 44px;
+    padding: 0 12px;
+    font-size: 11px;
+  }
+
+  .astor-global-header.site-header .site-nav-toggle {
+    grid-column: 3;
+    grid-row: 1;
+    min-width: 68px !important;
+    min-height: 44px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 10px !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: var(--astor-nav-ink) !important;
+    font: 900 12px/1 var(--astor-nav-sans) !important;
+    cursor: pointer;
+  }
+
+  .astor-global-header.site-header .site-nav-mark,
+  .astor-global-header.site-header .site-nav-mark::before {
+    width: 19px !important;
+    height: 2px !important;
+    display: block !important;
+    background: var(--astor-nav-burgundy) !important;
+    transition: transform 0.18s ease !important;
+  }
+
+  .astor-global-header.site-header .site-nav-mark {
+    position: relative;
+  }
+
+  .astor-global-header.site-header .site-nav-mark::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+  }
+
+  .astor-global-header.site-header.is-site-menu-open .site-nav-mark {
+    transform: translateY(3px) rotate(45deg);
+  }
+
+  .astor-global-header.site-header.is-site-menu-open .site-nav-mark::before {
+    transform: translateY(-6px) rotate(-90deg);
+  }
+
+  .astor-global-header.site-header .astor-primary-nav {
+    position: fixed !important;
+    z-index: 1190 !important;
+    top: 66px !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 18px max(18px, calc((100vw - 760px) / 2)) 34px !important;
+    display: none !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-content: start !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    border: 0 !important;
+    border-top: 1px solid var(--astor-nav-line) !important;
+    background: var(--astor-nav-paper) !important;
+    box-shadow: none !important;
+  }
+
+  .astor-global-header.site-header.is-site-menu-open .astor-primary-nav {
+    display: grid !important;
+  }
+
+  .astor-global-header.site-header .astor-primary-nav > .nav-link {
+    min-height: 50px !important;
+    padding: 0 14px !important;
+    justify-content: flex-start !important;
+    border: 1px solid var(--astor-nav-line) !important;
+    background: var(--astor-nav-paper) !important;
+    color: var(--astor-nav-ink) !important;
+    font-size: 13px !important;
+    white-space: normal !important;
+    box-shadow: none !important;
+  }
+
+  .astor-global-header.site-header .astor-primary-nav > .nav-link:hover,
+  .astor-global-header.site-header .astor-primary-nav > .nav-link[aria-current="page"] {
+    border-color: rgba(110, 31, 43, 0.5) !important;
+    background: var(--astor-nav-paper-deep) !important;
+    color: var(--astor-nav-burgundy) !important;
+  }
+
+  .astor-global-header.site-header .astor-browse-menu {
+    grid-column: 1 / -1;
+    width: 100%;
+    border: 1px solid var(--astor-nav-line) !important;
+    background: #f7eee5 !important;
+  }
+
+  .astor-global-header.site-header .astor-browse-menu > summary {
+    width: 100% !important;
+    min-height: 52px !important;
+    padding: 0 15px !important;
+    justify-content: space-between !important;
+    background: #f7eee5 !important;
+    color: var(--astor-nav-burgundy) !important;
+    font-size: 13px !important;
+    white-space: normal !important;
+    box-shadow: none !important;
+  }
+
+  .astor-global-header.site-header .astor-browse-menu > summary::after {
+    margin-left: auto;
+  }
+
+  .astor-global-header.site-header .astor-browse-panel {
+    position: static !important;
+    width: 100% !important;
+    max-height: none !important;
+    padding: 0 14px 17px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px 16px !important;
+    overflow: visible !important;
+    border: 0 !important;
+    border-top: 1px solid var(--astor-nav-line) !important;
+    background: #f7eee5 !important;
+    box-shadow: none !important;
+  }
+
+  .astor-global-header.site-header .astor-browse-intro {
+    grid-column: 1 / -1;
+    min-height: 62px;
+    margin: 0;
+  }
+
+  .astor-global-header.site-header .astor-browse-intro p {
+    font-size: 14px;
+  }
+
+  .astor-global-header.site-header .astor-browse-panel > section,
+  .astor-global-header.site-header .astor-browse-panel > section:last-child {
+    padding: 0 !important;
+    border-right: 0 !important;
+  }
+
+  .astor-global-header.site-header .astor-browse-panel section > a {
+    min-height: 43px;
+    font-size: 12.5px !important;
+  }
+
+  html:has(.astor-global-header.is-site-menu-open),
+  body:has(.astor-global-header.is-site-menu-open),
+  body.is-site-menu-open,
+  html.site-menu-open,
+  body.site-menu-open {
+    overflow: hidden !important;
+    overscroll-behavior: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .astor-global-footer.site-footer {
+    margin-top: 62px !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 34px 24px !important;
+  }
+
+  .astor-global-footer.site-footer .astor-footer-signature {
+    grid-column: 1 / -1;
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(255, 250, 244, 0.18);
+  }
+}
+
+@media (max-width: 620px) {
+  .astor-global-header.site-header {
+    min-height: 62px !important;
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+    gap: 7px !important;
+  }
+
+  .astor-global-header.site-header .brand {
+    gap: 7px !important;
+  }
+
+  .astor-global-header.site-header .brand .word {
+    font-size: 12px !important;
+    letter-spacing: 0.14em !important;
+  }
+
+  .astor-global-header.site-header .brand .torch-mark {
+    width: 18px !important;
+    height: 44px !important;
+    flex-basis: 18px !important;
+  }
+
+  .astor-global-header.site-header .astor-header-search {
+    min-width: 58px;
+    padding: 0 8px;
+    font-size: 10.5px;
+  }
+
+  .astor-global-header.site-header .astor-header-search span {
+    display: none;
+  }
+
+  .astor-global-header.site-header .site-nav-toggle {
+    min-width: 61px !important;
+    gap: 8px !important;
+    font-size: 11px !important;
+  }
+
+  .astor-global-header.site-header .astor-primary-nav {
+    top: 62px !important;
+    padding: 13px 12px 28px !important;
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+  }
+
+  .astor-global-header.site-header .astor-primary-nav > .nav-link {
+    min-height: 48px !important;
+  }
+
+  .astor-global-header.site-header .astor-browse-menu {
+    grid-column: auto;
+  }
+
+  .astor-global-header.site-header .astor-browse-panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 17px 14px !important;
+    padding-right: 12px !important;
+    padding-left: 12px !important;
+  }
+
+  .astor-global-header.site-header .astor-browse-intro {
+    min-height: 74px;
+    padding: 11px 0;
+    display: grid;
+    gap: 7px;
+  }
+
+  .astor-global-header.site-header .astor-browse-intro p {
+    font-size: 13px;
+  }
+
+  .astor-global-header.site-header .astor-browse-intro a {
+    white-space: normal;
+  }
+
+  .astor-global-header.site-header .astor-browse-panel h2 {
+    font-size: 8px !important;
+  }
+
+  .astor-global-header.site-header .astor-browse-panel section > a {
+    min-height: 42px;
+    font-size: 11.5px !important;
+  }
+
+  .astor-global-header.site-header .astor-browse-panel section > a span {
+    display: none;
+  }
+
+  .astor-global-footer.site-footer {
+    width: 100% !important;
+    margin: 58px 0 0 !important;
+    padding: 40px 20px 34px !important;
+    grid-template-columns: 1fr !important;
+    gap: 29px !important;
+  }
+
+  .astor-global-footer.site-footer .astor-footer-signature {
+    grid-column: auto;
+    padding-bottom: 25px;
+  }
+
+  .astor-global-footer.site-footer .astor-footer-group {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 17px;
+  }
+
+  .astor-global-footer.site-footer .astor-footer-group h2 {
+    grid-column: 1 / -1;
+  }
+
+  .astor-global-footer.site-footer .astor-footer-group a {
+    min-height: 42px;
+  }
+}
+
+@media (max-width: 360px) {
+  .astor-global-header.site-header .brand .word {
+    font-size: 11px !important;
+    letter-spacing: 0.11em !important;
+  }
+
+  .astor-global-header.site-header .brand .torch-mark {
+    width: 17px !important;
+    flex-basis: 17px !important;
+  }
+
+  .astor-global-header.site-header .astor-header-search {
+    min-width: 52px;
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+
+  .astor-global-header.site-header .site-nav-toggle {
+    min-width: 57px !important;
+    gap: 6px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .astor-global-header.site-header *,
+  .astor-global-footer.site-footer *,
+  .skip-link {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

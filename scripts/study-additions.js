@@ -80,7 +80,7 @@ module.exports = [
   {
     title: 'The Taming of the Shrew',
     image: 'The Taming of the Shrew Study Cover.png',
-    url: 'https://mybook.to/SjnG',
+    url: 'https://mybook.to/2mR1',
     description: 'Courtship, household power, performance, coercion and the continuing argument over Katherina’s ending.'
   },
   {

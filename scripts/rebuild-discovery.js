@@ -52,7 +52,7 @@ const studyBookLinks = {
   'https://mybook.to/x8aiiFG': ['/books/measure-for-measure/'],
   'https://mybook.to/2QzQqmh': ['/books/the-merchant-of-venice/'],
   'https://mybook.to/o0Am2j': ['/books/richard-ii/'],
-  'https://mybook.to/SjnG': ['/books/taming-of-the-shrew/'],
+  'https://mybook.to/2mR1': ['/books/taming-of-the-shrew/'],
   'https://mybook.to/gf9uZE': ['/books/titus-andronicus/'],
   'https://mybook.to/l4zC9': ['/books/twelfth-night/']
 };

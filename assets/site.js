@@ -40,28 +40,22 @@
   const siteNavigation = siteHeader?.querySelector('.nav');
 
   if (siteHeader && siteNavigation) {
-    if (!siteNavigation.querySelector('a[href="/passage-room/"]')) {
-      const passageLink = document.createElement('a');
-      passageLink.className = 'nav-link';
-      passageLink.href = '/passage-room/';
-      passageLink.textContent = 'Passages';
-      const subjectsLink = siteNavigation.querySelector('a[href="/subjects/"]');
-      if (subjectsLink) siteNavigation.insertBefore(passageLink, subjectsLink);
-      else siteNavigation.append(passageLink);
-    }
-
     siteNavigation.id = siteNavigation.id || 'site-navigation';
-    const toggle = document.createElement('button');
-    toggle.className = 'site-nav-toggle';
-    toggle.type = 'button';
+    let toggle = siteHeader.querySelector('.site-nav-toggle');
+    if (!toggle) {
+      toggle = document.createElement('button');
+      toggle.className = 'site-nav-toggle';
+      toggle.type = 'button';
+      toggle.innerHTML = '<span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span>';
+      siteHeader.insertBefore(toggle, siteNavigation);
+    }
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-controls', siteNavigation.id);
-    toggle.innerHTML = '<span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span>';
-    siteHeader.insertBefore(toggle, siteNavigation);
     siteHeader.classList.add('site-nav-ready');
 
     const closeSiteMenu = returnFocus => {
       siteHeader.classList.remove('is-site-menu-open');
+      document.body.classList.remove('is-site-menu-open');
       toggle.setAttribute('aria-expanded', 'false');
       if (collectionMenu) collectionMenu.open = false;
       if (returnFocus) toggle.focus();
@@ -69,6 +63,7 @@
 
     toggle.addEventListener('click', () => {
       const open = siteHeader.classList.toggle('is-site-menu-open');
+      document.body.classList.toggle('is-site-menu-open', open);
       toggle.setAttribute('aria-expanded', String(open));
       if (!open && collectionMenu) collectionMenu.open = false;
     });
@@ -88,6 +83,11 @@
     for (const link of siteNavigation.querySelectorAll('a')) {
       link.addEventListener('click', () => closeSiteMenu(false));
     }
+
+    const desktopNavigation = window.matchMedia?.('(min-width: 981px)');
+    desktopNavigation?.addEventListener('change', event => {
+      if (event.matches) closeSiteMenu(false);
+    });
   }
 
   const homeMobileMenu = document.querySelector('.home-mobile-nav');

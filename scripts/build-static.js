@@ -580,6 +580,71 @@ function addDiscoveryNavigation(html, source) {
   return html;
 }
 
+function addGlobalNavigation(html, source) {
+  const href = pageHref(source);
+  const current = active => active ? ' aria-current="page"' : '';
+  const booksCurrent = href === '/library/' || href.startsWith('/books/');
+  const shakespeareCurrent = href === '/shakespeare/' || href.startsWith('/shakespeare/');
+  const resourcesCurrent = href === '/resources/' || href.startsWith('/resources/');
+  const studyCurrent = href === '/study/' || href.startsWith('/study/');
+  const passageCurrent = href === '/passage-room/' || href.startsWith('/passage-room/');
+  const searchCurrent = href === '/explore/' || href.startsWith('/explore/');
+  const browseCurrent = [
+    '/subjects/',
+    '/authors/',
+    '/reading-routes/',
+    '/classic-literature/',
+    '/ancient-epic/',
+    '/renaissance-early-modern/',
+    '/restoration-enlightenment/',
+    '/romantic-regency/',
+    '/victorian/',
+    '/american/',
+    '/modern/',
+    '/about/',
+    '/editorial/',
+    '/site-index/'
+  ].some(route => href === route || href.startsWith(route));
+
+  const header = `<header class="site-header astor-global-header site-nav-ready">
+  <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
+  <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span></button>
+  <nav class="nav astor-primary-nav" id="site-navigation" aria-label="Primary navigation">
+    <a class="nav-link" href="/library/"${current(booksCurrent)}>Books</a>
+    <a class="nav-link" href="/shakespeare/"${current(shakespeareCurrent)}>Shakespeare</a>
+    <details class="browse-menu astor-browse-menu">
+      <summary${current(browseCurrent)}>Browse</summary>
+      <div class="browse-panel astor-browse-panel">
+        <div class="astor-browse-intro"><p>Find a book by period, writer, subject or question.</p><a href="/explore/">Search the whole library <span aria-hidden="true">&rarr;</span></a></div>
+        <section><h2>The shelves</h2><a href="/library/">All books</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/shakespeare/">Shakespeare</a><a href="/ancient-epic/">Ancient &amp; Epic</a><a href="/victorian/">Victorian</a><a href="/american/">American Classics</a></section>
+        <section><h2>Find another way</h2><a href="/authors/">Writers <span>Follow one writer across the shelves.</span></a><a href="/subjects/">Subjects <span>Gothic, tragedy, epic, satire and more.</span></a><a href="/reading-routes/">Reading routes <span>Begin with a question and move between books.</span></a></section>
+        <section><h2>Read and study</h2><a href="/passage-room/">Passage Room <span>Close readings of short passages.</span></a><a href="/resources/">Free resources <span>Guides you can read online.</span></a><a href="/study/">Study editions <span>For lessons, essays and exams.</span></a></section>
+        <section><h2>About Astor</h2><a href="/about/">Why Astor Library</a><a href="/editorial/">Editorial standards</a><a href="/site-index/">Site index</a></section>
+      </div>
+    </details>
+    <a class="nav-link" href="/resources/"${current(resourcesCurrent)}>Free resources</a>
+    <a class="nav-link" href="/study/"${current(studyCurrent)}>Study editions</a>
+    <a class="nav-link" href="/passage-room/"${current(passageCurrent)}>Passage Room</a>
+  </nav>
+  <a class="astor-header-search" href="/explore/"${current(searchCurrent)}>Search <span aria-hidden="true">&rarr;</span></a>
+</header>`;
+
+  const footer = `<footer class="site-footer astor-global-footer">
+  <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
+  <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
+  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a></div>
+  <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/site-index/">Site index</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div>
+</footer>`;
+
+  html = html.replace(/<header\b[^>]*\bclass=(?:"[^"]*\b(?:site-header|home-masthead)\b[^"]*"|'[^']*\b(?:site-header|home-masthead)\b[^']*')[^>]*>[\s\S]*?<\/header>/i, header);
+  html = html.replace(/<footer\b[^>]*\bclass=(?:"[^"]*\bsite-footer\b[^"]*"|'[^']*\bsite-footer\b[^']*')[^>]*>[\s\S]*?<\/footer>/i, footer);
+
+  if (!/href=["']\/assets\/navigation\.css["']/i.test(html)) {
+    html = html.replace('</head>', '<link rel="stylesheet" href="/assets/navigation.css"></head>');
+  }
+  return html;
+}
+
 function prepareHtml(html, source) {
   html = addBookStructuredData(html, source);
   html = addResourceStructuredData(html, source);
@@ -594,6 +659,7 @@ function prepareHtml(html, source) {
   html = addResourceReadingNavigation(html, source);
   html = addEditorialCredit(html, source);
   html = addSiteIndexLink(html, source);
+  html = addGlobalNavigation(html, source);
 
   if (!html.includes('/assets/site.js')) {
     html = html.replace('</head>', '<script src="/assets/site.js" defer></script></head>');

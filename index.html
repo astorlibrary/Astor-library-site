@@ -3,179 +3,132 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Astor Library | Classic Books and Free Literature Resources</title>
-  <meta name="description" content="Read and study classic literature with complete Astor editions, detailed book pages, Shakespeare resources and free literature guides.">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <title>Astor Library | Classic Books, Study Editions and Free Guides</title>
+  <meta name="description" content="Read and study classic literature with complete Astor editions, detailed book pages, Shakespeare study editions and free literature guides.">
+  <link rel="stylesheet" href="/assets/home.css">
+  <link rel="stylesheet" href="/assets/navigation.css">
 </head>
 <body>
-<header class="home-masthead">
-  <div class="home-masthead-main">
-    <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
-    <nav class="home-masthead-links" aria-label="Primary navigation">
-      <a class="nav-link" href="/library/">Books</a>
-      <a class="nav-link" href="/subjects/">Subjects</a>
-      <a class="nav-link" href="/authors/">Writers</a>
-      <a class="nav-link" href="/passage-room/">Passages</a>
-      <a class="nav-link" href="/resources/">Free resources</a>
-      <a class="nav-link" href="/study/">Study editions</a>
-      <a class="nav-link" href="/about/">About</a>
-    </nav>
-    <a class="home-masthead-explore" href="/explore/">Search <span aria-hidden="true">&rarr;</span></a>
-    <details class="home-mobile-nav">
-      <summary><span>Menu</span><span class="home-menu-mark" aria-hidden="true"></span></summary>
-      <div class="home-mobile-panel">
-        <nav class="home-mobile-main-links" aria-label="Mobile navigation">
-          <a class="nav-link" href="/explore/">Search the library</a><a class="nav-link" href="/library/">All books</a><a class="nav-link" href="/subjects/">Subjects</a><a class="nav-link" href="/authors/">Writers</a><a class="nav-link" href="/passage-room/">The Passage Room</a><a class="nav-link" href="/classic-literature/">Classic literature</a><a class="nav-link" href="/shakespeare/">Shakespeare</a><a class="nav-link" href="/resources/">Free resources</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/about/">About Astor Library</a>
-        </nav>
-        <p>Browse by collection</p>
-        <nav class="home-mobile-collections" aria-label="Literary collections">
-          <a href="/ancient-epic/">Ancient &amp; Epic</a><a href="/renaissance-early-modern/">Renaissance &amp; Early Modern</a><a href="/shakespeare/">Shakespeare</a><a href="/restoration-enlightenment/">Restoration &amp; Enlightenment</a><a href="/romantic-regency/">Romantic &amp; Regency</a><a href="/victorian/">Victorian</a><a href="/american/">American Classics</a><a href="/modern/">Modern Classics</a>
-        </nav>
+<header class="site-header astor-global-header site-nav-ready">
+  <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
+  <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span></button>
+  <nav class="nav astor-primary-nav" id="site-navigation" aria-label="Primary navigation">
+    <a class="nav-link" href="/library/">Books</a>
+    <a class="nav-link" href="/shakespeare/">Shakespeare</a>
+    <details class="browse-menu astor-browse-menu">
+      <summary>Browse</summary>
+      <div class="browse-panel astor-browse-panel">
+        <div class="astor-browse-intro"><p>Find a book by period, writer, subject or question.</p><a href="/explore/">Search the whole library <span aria-hidden="true">&rarr;</span></a></div>
+        <section><h2>The shelves</h2><a href="/library/">All books</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/shakespeare/">Shakespeare</a><a href="/ancient-epic/">Ancient &amp; Epic</a><a href="/victorian/">Victorian</a><a href="/american/">American Classics</a></section>
+        <section><h2>Find another way</h2><a href="/authors/">Writers <span>Follow one writer across the shelves.</span></a><a href="/subjects/">Subjects <span>Gothic, tragedy, epic, satire and more.</span></a><a href="/reading-routes/">Reading routes <span>Begin with a question and move between books.</span></a></section>
+        <section><h2>Read and study</h2><a href="/passage-room/">Passage Room <span>Close readings of short passages.</span></a><a href="/resources/">Free resources <span>Guides you can read online.</span></a><a href="/study/">Study editions <span>For lessons, essays and exams.</span></a></section>
+        <section><h2>About Astor</h2><a href="/about/">Why Astor Library</a><a href="/editorial/">Editorial standards</a><a href="/site-index/">Site index</a></section>
       </div>
     </details>
-  </div>
-  <nav class="home-period-nav" aria-label="Literary collections">
-    <span>The shelves</span><a href="/ancient-epic/">Ancient &amp; Epic</a><a href="/renaissance-early-modern/">Renaissance &amp; Early Modern</a><a href="/shakespeare/">Shakespeare</a><a href="/restoration-enlightenment/">Restoration &amp; Enlightenment</a><a href="/romantic-regency/">Romantic &amp; Regency</a><a href="/victorian/">Victorian</a><a href="/american/">American</a><a href="/modern/">Modern</a>
+    <a class="nav-link" href="/resources/">Free resources</a>
+    <a class="nav-link" href="/study/">Study editions</a>
+    <a class="nav-link" href="/passage-room/">Passage Room</a>
   </nav>
+  <a class="astor-header-search" href="/explore/">Search <span aria-hidden="true">&rarr;</span></a>
 </header>
 
-<main class="home-main">
-  <section class="astor-home-hero astor-home-library-hero">
-    <div class="astor-home-hero-copy">
-      <p class="archive-sup-title">Independent publisher · books to read, consult and study</p>
-      <h1>The original stays at the centre.</h1>
-      <p>Astor Editions are made for readers who want to read or study classic texts without losing sight of the book itself. Summaries, notes, context and analysis are there to help; the work remains intact.</p>
-      <div class="button-row"><a class="button astor-home-primary" href="/library/">Browse 67 books</a><a class="button astor-home-secondary" href="/resources/">Open 40 free guides</a></div>
-      <dl class="astor-home-counts"><div><dt>67</dt><dd>books</dd></div><div><dt>40</dt><dd>free guides</dd></div><div><dt>8</dt><dd>subject rooms</dd></div><div><dt>12</dt><dd>close readings</dd></div></dl>
+<main class="library-home">
+  <section class="library-hero" aria-labelledby="home-title">
+    <div class="library-hero-copy">
+      <p class="library-kicker">Classic literature · complete texts · free guides</p>
+      <h1 id="home-title">A reference library, built around the book.</h1>
+      <p class="library-hero-lead">Astor Editions keep the complete work at the centre. Summaries, notes and context are there when you need them, without getting between you and the text.</p>
+      <form class="library-search" action="/explore/" method="get">
+        <label for="home-search">Search Astor Library</label>
+        <div><input id="home-search" name="q" type="search" placeholder="Try Hamlet, Dickens, Gothic or freedom"><button type="submit">Search</button></div>
+      </form>
+      <div class="library-hero-actions"><a class="library-button library-button-primary" href="/library/">Browse all books</a><a class="library-text-link" href="/resources/">Open the free library <span aria-hidden="true">&rarr;</span></a></div>
+      <nav class="library-search-suggestions" aria-label="Suggested searches"><span>Try</span><a href="/explore/?q=Shakespeare">Shakespeare</a><a href="/explore/?q=Dickens">Dickens</a><a href="/explore/?q=Gothic">Gothic</a><a href="/study/">Classroom resources</a></nav>
+      <p class="library-totals">67 books <span aria-hidden="true">·</span> 40 free guides <span aria-hidden="true">·</span> 39 study editions</p>
     </div>
-    <div class="home-reading-desk" aria-label="Books on the Astor reading desk">
-      <div class="home-reading-desk-head"><span>On the Astor desk</span><b>Read · consult · return</b></div>
-      <div class="home-desk-covers">
-        <a class="home-desk-book home-desk-book-one" href="/books/the-odyssey/"><img src="/assets/home/odyssey.jpg" alt="The Odyssey Astor Library edition" width="603" height="900" decoding="async" fetchpriority="high"><span>Homer</span></a>
-        <a class="home-desk-book home-desk-book-two" href="/books/pride-and-prejudice/"><img src="/assets/home/pride-prejudice.jpg" alt="Pride and Prejudice Astor Library edition" width="603" height="900" decoding="async"><span>Jane Austen</span></a>
-        <a class="home-desk-book home-desk-book-three" href="/books/narrative-of-the-life-of-frederick-douglass/"><img src="/assets/home/frederick-douglass.jpg" alt="Narrative of the Life of Frederick Douglass Astor Library edition" width="603" height="900" loading="lazy" decoding="async"><span>Frederick Douglass</span></a>
-        <a class="home-desk-book home-desk-book-four" href="/books/adventures-of-sherlock-holmes/"><img src="/assets/home/sherlock-holmes.jpg" alt="The Adventures of Sherlock Holmes Astor Library edition" width="603" height="900" loading="lazy" decoding="async"><span>Arthur Conan Doyle</span></a>
+
+    <figure class="edition-anatomy">
+      <div class="edition-anatomy-ledger"><span>Inside an Astor edition</span><b>Text first. Help close at hand.</b></div>
+      <div class="edition-anatomy-work">
+        <a class="edition-anatomy-cover" href="/books/pride-and-prejudice/"><img src="/assets/home/pride-prejudice.jpg" alt="Pride and Prejudice Astor Library edition" width="603" height="900"><span>Open the book page &rarr;</span></a>
+        <article class="edition-anatomy-page">
+          <header><span>Chapter I</span><b>Pride and Prejudice</b></header>
+          <p class="edition-anatomy-label">Original text</p>
+          <blockquote>“It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.”</blockquote>
+          <aside class="edition-note edition-note-summary"><b>Chapter summary</b><span>Netherfield has been let to Mr Bingley. Mrs Bennet wants an introduction arranged at once.</span></aside>
+          <aside class="edition-note edition-note-context"><b>Context</b><span>Marriage and property shape the opening exchange, but Austen begins by making social certainty sound absurd.</span></aside>
+          <aside class="edition-note edition-note-reading"><b>Notice</b><span>“Must be in want” turns a local expectation into mock universal law.</span></aside>
+          <footer><span>Complete text</span><span>Summary</span><span>Context</span><span>Reading note</span></footer>
+        </article>
       </div>
-      <div class="home-reading-desk-foot"><p>A reference library inside the book.</p><a href="/about/">Why Astor? <span aria-hidden="true">&rarr;</span></a></div>
+      <figcaption>The added material sits around the work. It never replaces it.</figcaption>
+    </figure>
+  </section>
+
+  <section class="library-start" aria-labelledby="start-title">
+    <div class="library-section-heading"><div><p class="library-kicker">Start here</p><h2 id="start-title">What are you looking for?</h2></div><p>Choose the part of the library that fits what you are doing now.</p></div>
+    <div class="library-start-grid">
+      <a href="/library/"><span>01</span><h3>Read a classic</h3><p>Complete texts with summaries and context close at hand.</p><b>Browse the books &rarr;</b></a>
+      <a href="/shakespeare/"><span>02</span><h3>Find a play</h3><p>Thirty-nine Shakespeare editions across all thirty-seven plays.</p><b>Enter Shakespeare &rarr;</b></a>
+      <a href="/resources/"><span>03</span><h3>Use a free guide</h3><p>Read the complete guide online, without leaving the library.</p><b>Open free resources &rarr;</b></a>
+      <a href="/study/"><span>04</span><h3>Study a text</h3><p>Closer work on characters, themes, quotations and essays.</p><b>See study editions &rarr;</b></a>
     </div>
   </section>
 
-  <section class="home-library-doors" aria-labelledby="home-library-doors-title">
-    <div class="home-library-doors-head"><p class="kicker">Choose the shelf you need</p><h2 id="home-library-doors-title">One library. Three different jobs.</h2></div>
-    <div class="home-library-door-grid">
-      <a href="/library/"><span>01 · Read</span><h3>Astor Editions</h3><p>Complete classic texts with chapter or scene help, factual context and longer reading material placed around the work.</p><b>Browse the books <span aria-hidden="true">&rarr;</span></b></a>
-      <a href="/study/"><span>02 · Prepare</span><h3>Study editions</h3><p>Closer classroom and exam support, with sustained work on character, theme, quotation, criticism and writing.</p><b>Find a study edition <span aria-hidden="true">&rarr;</span></b></a>
-      <a href="/resources/"><span>03 · Consult</span><h3>Free resources</h3><p>Forty online guides for readers, students and teachers. Each now has its own page within Astor Library.</p><b>Use the free library <span aria-hidden="true">&rarr;</span></b></a>
+  <section class="library-new" aria-labelledby="new-title">
+    <div class="library-section-heading"><div><p class="library-kicker">New to the library</p><h2 id="new-title">On the reading desk.</h2></div><a class="library-text-link" href="/shakespeare/">See the Shakespeare shelf <span aria-hidden="true">&rarr;</span></a></div>
+    <div class="library-new-grid">
+      <a class="library-new-feature" href="/books/henry-v/"><img src="/Henry%20V%20Main%20Cover.jpg" alt="Henry V Astor Library edition" loading="lazy"><div><span>New edition · William Shakespeare</span><h3><em>Henry V</em></h3><p>The complete play, with scene summaries, notes and detailed material on kingship, rhetoric, national identity and the cost of war.</p><b>Open the reading page &rarr;</b></div></a>
+      <div class="library-new-shelf">
+        <a href="/books/henry-vi-parts-1-2-and-3/"><img src="/Henry%20VI%20-%201%2C2%2C3%20Main%20Cover.jpg" alt="Henry VI Parts 1, 2 and 3 Astor Library edition" loading="lazy"><span><small>History trilogy</small><b>Henry VI, Parts 1, 2 and 3</b></span></a>
+        <a href="/books/the-merchant-of-venice/"><img src="/The%20Merchant%20of%20Venice%20Main%20Cover.jpg" alt="The Merchant of Venice Astor Library edition" loading="lazy"><span><small>Comedy</small><b>The Merchant of Venice</b></span></a>
+        <a href="/books/twelfth-night/"><img src="/Twelfth%20Night%20Main%20Cover.jpg" alt="Twelfth Night Astor Library edition" loading="lazy"><span><small>Comedy</small><b>Twelfth Night</b></span></a>
+        <a href="/books/the-winters-tale/"><img src="/The%20Winter%27s%20Tale%20Main%20COver.png" alt="The Winter's Tale Astor Library edition" loading="lazy"><span><small>Late play</small><b>The Winter’s Tale</b></span></a>
+      </div>
     </div>
   </section>
 
-  <section class="home-finder archive-finder" aria-labelledby="home-finder-title">
-    <div><p class="kicker">Search Astor Library</p><h2 id="home-finder-title">Find your book.</h2></div>
-    <form class="home-finder-form" action="/explore/" method="get">
-      <label for="home-search">Title, writer, period or subject</label>
-      <div><input id="home-search" name="q" type="search" placeholder="Try Hamlet, Dickens, Gothic or freedom"><button type="submit">Search <span aria-hidden="true">&rarr;</span></button></div>
-    </form>
-    <p class="home-finder-examples">You can also begin with <a href="/passage-room/">a close reading</a>, <a href="/subjects/">a subject</a>, <a href="/authors/">a writer</a>, <a href="/classic-literature/">classic literature by period</a>, <a href="/shakespeare/">Shakespeare</a>, <a href="/reading-routes/">a reading route</a> or <a href="/resources/">the free resource library</a>.</p>
-  </section>
-
-  <section class="archive-subjects archive-section" aria-labelledby="archive-subjects-title">
-    <div class="archive-subjects-heading"><div><p class="kicker">Read by subject</p><h2 id="archive-subjects-title">See what the books are doing</h2></div><p>Periods tell us when a book was made. These guides follow the forms, habits and arguments that pass between periods—and show where a useful label stops being enough.</p></div>
-    <div class="archive-subject-grid">
-      <a href="/subjects/gothic-literature/"><span>01</span><h3>Gothic literature</h3><p>Fear enters through houses, bodies, documents and the uneasy return of what should have stayed hidden.</p><b>Frankenstein · Dracula · Jekyll and Hyde · Dorian Gray</b></a>
-      <a href="/subjects/tragedy/"><span>02</span><h3>Tragedy</h3><p>The ending may be known. The pressure lies in watching choices narrow and possible futures disappear.</p><b>Hamlet · Macbeth · Othello · King Lear</b></a>
-      <a href="/subjects/detective-fiction/"><span>03</span><h3>Detective fiction</h3><p>A clue is seen before it is understood; a solution is shaped both by the detective and by the storyteller.</p><b>Sherlock Holmes · clues · case narratives · evidence</b></a>
-      <a href="/subjects/epic-poetry/"><span>04</span><h3>Epic poetry</h3><p>One voyage answers to the fate of a household, a people or a future state.</p><b>The Odyssey · The Aeneid · Moby-Dick</b></a>
-      <a href="/subjects/satire-political-writing/"><span>05</span><h3>Satire &amp; political writing</h3><p>Irony, impossible journeys, fables and plain political analysis expose the language of power.</p><b>Gulliver’s Travels · Animal Farm · The Prince</b></a>
-    </div>
-    <a class="archive-all-link archive-subjects-link" href="/subjects/">Open all eight subject guides <span aria-hidden="true">&rarr;</span></a>
-  </section>
-
-  <section class="archive-section archive-open-books">
-    <div class="archive-section-head"><div><p class="kicker">Recently added</p><h2>Open a book</h2></div><a class="archive-all-link" href="/library/">All books <span aria-hidden="true">&rarr;</span></a></div>
-    <div class="archive-book-shelf">
-      <a class="archive-book" href="/books/the-odyssey/"><img src="/assets/home/odyssey.jpg" alt="The Odyssey Astor Library edition" loading="lazy"><span><small>Homer</small><b>The Odyssey</b><em>A voyage home told through shipwreck, disguise, hospitality and recognition.</em></span></a>
-      <a class="archive-book" href="/books/uncle-toms-cabin/"><img src="/assets/home/uncle-toms-cabin.jpg" alt="Uncle Tom's Cabin Astor Library edition" loading="lazy"><span><small>Harriet Beecher Stowe</small><b>Uncle Tom&rsquo;s Cabin</b><em>Two journeys through slavery, and the argument Stowe builds around them.</em></span></a>
-      <a class="archive-book" href="/books/adventures-of-sherlock-holmes/"><img src="/assets/home/sherlock-holmes.jpg" alt="The Adventures of Sherlock Holmes Astor Library edition" loading="lazy"><span><small>Arthur Conan Doyle</small><b>The Adventures of Sherlock Holmes</b><em>Twelve cases, Watson&rsquo;s narration and the method that shaped detective fiction.</em></span></a>
-      <a class="archive-book" href="/books/adventures-of-huckleberry-finn/"><img src="/assets/home/huckleberry-finn.jpg" alt="Adventures of Huckleberry Finn Astor Library edition" loading="lazy"><span><small>Mark Twain</small><b>Adventures of Huckleberry Finn</b><em>Freedom on the river, violence on shore and Huck&rsquo;s troubled conscience.</em></span></a>
-      <a class="archive-book" href="/books/as-you-like-it/"><img src="/assets/home/as-you-like-it.jpg" alt="As You Like It Astor Library edition" loading="lazy"><span><small>William Shakespeare</small><b>As You Like It</b><em>Rosalind tests love and identity in the Forest of Arden.</em></span></a>
-      <a class="archive-book" href="/books/narrative-of-the-life-of-frederick-douglass/"><img src="/assets/home/frederick-douglass.jpg" alt="Narrative of the Life of Frederick Douglass Astor Library edition" loading="lazy"><span><small>Frederick Douglass</small><b>Narrative of the Life</b><em>Literacy, resistance and first-person testimony against slavery.</em></span></a>
+  <section class="library-method" aria-labelledby="method-title">
+    <div class="library-method-copy"><p class="library-kicker">Inside the editions</p><h2 id="method-title">The work stays at the centre.</h2><p>The main editions are made for any reader. A prose chapter is followed by a clear summary and factual context; a play keeps its scenes, line numbers and notes close to the words.</p><p>The study editions are made for classroom and exam work. They add sustained work on character, theme, quotation, criticism and writing, while the main editions remain books for any reader.</p><a class="library-text-link" href="/about/">Why the library is made this way <span aria-hidden="true">&rarr;</span></a></div>
+    <div class="library-method-ledger">
+      <article><span>01</span><div><h3>The complete work</h3><p>The original text remains the reason for the book.</p></div></article>
+      <article><span>02</span><div><h3>Summaries that orient</h3><p>A way back into the action, not a substitute for reading it.</p></div></article>
+      <article><span>03</span><div><h3>Context placed where it helps</h3><p>Dates, laws, places and ideas connected to the chapter or scene.</p></div></article>
+      <article><span>04</span><div><h3>Longer reading when you want it</h3><p>Character, language, form and interpretation gathered without crowding the page.</p></div></article>
     </div>
   </section>
 
-  <section class="archive-catalogue" aria-labelledby="archive-catalogue-title">
-    <div class="archive-catalogue-heading"><p class="kicker">What Astor publishes</p><h2 id="archive-catalogue-title">Three parts of the library</h2><p>The main editions are for any reader. Study editions give closer classroom and exam support. The free library contains guides, booklets and teaching material that can be opened on the site.</p></div>
-    <div class="archive-catalogue-rows">
-      <a href="/library/"><span class="archive-catalogue-number">01</span><b>Astor Editions</b><p>Complete novels, plays and poems, supported by chapter or scene summaries, factual context, notes and longer reading material.</p><strong>Browse editions &rarr;</strong></a>
-      <a href="/study/"><span class="archive-catalogue-number">02</span><b>Study editions</b><p>Books made for classroom use and exam preparation, with sustained work on character, theme, quotation, criticism and writing.</p><strong>See study editions &rarr;</strong></a>
-      <a href="/resources/"><span class="archive-catalogue-number">03</span><b>Free resources</b><p>Online guides on Shakespeare, poetry, novels and drama. They are free to read and use.</p><strong>Open the free library &rarr;</strong></a>
+  <section class="library-browse" aria-labelledby="browse-title">
+    <div class="library-section-heading"><div><p class="library-kicker">Find another way in</p><h2 id="browse-title">Browse the library.</h2></div><p>Begin with a book, a writer, a subject or a question. Each route leads back to the texts.</p></div>
+    <div class="library-browse-grid">
+      <a href="/classic-literature/"><span>By period</span><h3>Move through the shelves</h3><p>Ancient epic, early modern writing, Romanticism, Victorian literature, American classics and more.</p><b>Periods &amp; collections &rarr;</b></a>
+      <a href="/authors/"><span>By writer</span><h3>Read one writer</h3><p>Find their books together with an account of their life, work and place in the library.</p><b>Browse writers &rarr;</b></a>
+      <a href="/subjects/"><span>By subject</span><h3>Choose a subject</h3><p>Gothic, tragedy, comedy, epic, satire, detective fiction and writing about freedom.</p><b>Open subject guides &rarr;</b></a>
+      <a href="/reading-routes/"><span>By question</span><h3>Start with a question</h3><p>What makes a home? Who is allowed freedom? What counts as evidence? Each route brings several books together.</p><b>Follow a reading route &rarr;</b></a>
+    </div>
+    <nav class="library-period-list" aria-label="Literary collections"><span>The shelves</span><a href="/ancient-epic/">Ancient &amp; Epic</a><a href="/renaissance-early-modern/">Renaissance &amp; Early Modern</a><a href="/shakespeare/">Shakespeare</a><a href="/restoration-enlightenment/">Restoration &amp; Enlightenment</a><a href="/romantic-regency/">Romantic &amp; Regency</a><a href="/victorian/">Victorian</a><a href="/american/">American</a><a href="/modern/">Modern</a></nav>
+  </section>
+
+  <section class="library-desks" aria-labelledby="desks-title">
+    <div class="library-section-heading"><div><p class="library-kicker">Use the library</p><h2 id="desks-title">Read something now.</h2></div><p>Open a close reading, use a free guide or find a study edition.</p></div>
+    <div class="library-desks-grid">
+      <a class="library-desk-passage" href="/passage-room/othello-trifles-proof/"><span>Passage Room · Othello</span><blockquote>“Trifles light as air”</blockquote><p>How Iago makes almost nothing look like proof.</p><b>Read beside the words &rarr;</b></a>
+      <a class="library-desk-resource" href="/resources/winters-tale/complete-study-guide/"><img src="/assets/home/winters-tale-guide.jpg" alt="The Winter's Tale complete study guide cover" loading="lazy"><div><span>Free guide</span><h3><em>The Winter’s Tale</em></h3><p>Jealousy, time, exile and the difficult work of reconciliation.</p><b>Read the guide &rarr;</b></div></a>
+      <a class="library-desk-study" href="/study/"><img src="/Henry%20V%20Study%20Cover.png" alt="Henry V Study Edition cover" loading="lazy"><div><span>Study edition</span><h3><em>Henry V</em></h3><p>Kingship, rhetoric, national identity and the cost of war.</p><b>Find the study edition &rarr;</b></div></a>
     </div>
   </section>
 
-  <section class="archive-authors archive-section" id="writers-home" aria-labelledby="archive-authors-title">
-    <div class="archive-section-head"><div><p class="kicker">Writers in the library</p><h2 id="archive-authors-title">Follow the hand behind the book</h2></div><p>Move across several works by the same writer. These new pages bring the life, working methods and books together without treating biography as an answer to everything.</p></div>
-    <div class="archive-author-grid">
-      <a href="/authors/charles-dickens/"><div class="archive-author-covers"><img src="/assets/home/christmas-carol.jpg" alt="" loading="lazy"><img src="/assets/home/great-expectations.jpg" alt="" loading="lazy"></div><span>Three books in Astor Library</span><h3>Charles Dickens</h3><p>Serial writing, public performance, social systems and the voices that keep the argument alive.</p><b>Read the writer page &rarr;</b></a>
-      <a href="/authors/jane-austen/"><div class="archive-author-covers"><img src="/assets/home/sense-sensibility.jpg" alt="" loading="lazy"><img src="/assets/home/pride-prejudice.jpg" alt="" loading="lazy"></div><span>Two novels in Astor Library</span><h3>Jane Austen</h3><p>Chawton, anonymous publication, irony, money and the difficult work of revising a judgment.</p><b>Read the writer page &rarr;</b></a>
-      <a href="/authors/arthur-conan-doyle/"><div class="archive-author-covers"><img src="/assets/home/sign-of-four.jpg" alt="" loading="lazy"><img src="/assets/home/sherlock-holmes.jpg" alt="" loading="lazy"></div><span>Two Holmes books in Astor Library</span><h3>Arthur Conan Doyle</h3><p>Medicine, evidence, Victorian London and Watson&rsquo;s part in making deduction a story.</p><b>Read the writer page &rarr;</b></a>
-    </div>
-    <a class="archive-all-link archive-authors-link" href="/authors/">See every writer in the library <span aria-hidden="true">&rarr;</span></a>
-  </section>
-
-  <section class="archive-resource-desk archive-section" aria-labelledby="latest-resources-title">
-    <div class="archive-section-head"><div><p class="kicker">From the free library</p><h2 id="latest-resources-title">New work on the desk</h2></div><p>Astor Library now holds forty free guides. Each has an introduction within the library, followed by the complete browser-based resource.</p></div>
-    <div class="archive-resource-grid">
-      <a class="archive-resource-card" href="/resources/winters-tale/complete-study-guide/"><div class="archive-resource-image"><img src="/assets/home/winters-tale-guide.jpg" alt="The Winter's Tale complete study guide cover" loading="lazy"><span>42 pages</span></div><div><small>Shakespeare · late romance</small><h3><em>The Winter&rsquo;s Tale</em></h3><p>From Leontes&rsquo; jealousy to the long work of time, exile and reconciliation.</p><b>Read the complete guide <span aria-hidden="true">&rarr;</span></b></div></a>
-      <a class="archive-resource-card" href="/resources/dorian-gray/introduction/"><div class="archive-resource-image"><img src="/assets/home/dorian-gray-guide.jpg" alt="The Picture of Dorian Gray introduction cover" loading="lazy"><span>18 pages</span></div><div><small>Oscar Wilde · Gothic fiction</small><h3><em>The Picture of Dorian Gray</em></h3><p>The plot, principal characters, aestheticism and the portrait that keeps Dorian&rsquo;s hidden history.</p><b>Read the introduction <span aria-hidden="true">&rarr;</span></b></div></a>
-      <a class="archive-resource-card" href="/resources/american/langston-hughes-dont-turn-back/"><div class="archive-resource-image"><img src="/assets/home/dont-turn-back-guide.jpg" alt="Don't Turn Back Langston Hughes resource cover" loading="lazy"><span>16 pages</span></div><div><small>Langston Hughes · political speech</small><h3>Don&rsquo;t Turn Back</h3><p>How &ldquo;Mother to Son&rdquo; enters the language of Martin Luther King Jr and Barack Obama.</p><b>Follow the poem <span aria-hidden="true">&rarr;</span></b></div></a>
-    </div>
-  </section>
-
-  <section class="home-passage-feature" aria-labelledby="home-passage-feature-title">
-    <div class="home-passage-feature-copy"><p class="kicker">The Passage Room</p><h2 id="home-passage-feature-title">Stay with the words.</h2><p>Twelve close readings place a short stretch of the original text beside notes on exact phrases. They are not answer sheets. Each ends with a question worth carrying back into the book.</p><a class="button primary" href="/passage-room/">Enter the Passage Room</a></div>
-    <div class="home-passage-feature-list">
-      <a href="/passage-room/christmas-carol-prisons/"><span>09 · Charles Dickens</span><blockquote>“Are there no prisons?”</blockquote><b>Poverty and evasion <span aria-hidden="true">&rarr;</span></b></a>
-      <a href="/passage-room/othello-trifles-proof/"><span>10 · William Shakespeare</span><blockquote>“Trifles light as air”</blockquote><b>Jealousy and proof <span aria-hidden="true">&rarr;</span></b></a>
-      <a href="/passage-room/uncle-toms-cabin-ice/"><span>11 · Harriet Beecher Stowe</span><blockquote>“one wild cry and flying leap”</blockquote><b>Flight, pursuit and freedom <span aria-hidden="true">&rarr;</span></b></a>
-      <a href="/passage-room/moby-dick-call-me-ishmael/"><span>12 · Herman Melville</span><blockquote>“Call me Ishmael.”</blockquote><b>Voice, choice and the sea <span aria-hidden="true">&rarr;</span></b></a>
-    </div>
-  </section>
-
-  <section class="archive-history">
-    <div class="archive-history-copy"><p class="kicker">Why Astor?</p><h2>A library name with a history</h2><p>The name is a nod to one of the great library names of the nineteenth century. The original Astor Library in New York was founded through the bequest of John Jacob Astor. In 1895 it was combined with the Lenox Library and the Tilden Trust to form The New York Public Library.</p><p>It was not a circulating library. Its books were there to be consulted and studied. Astor Editions take that reference-library idea into the text itself, placing useful material around the original work.</p><a class="archive-all-link archive-history-link" href="/about/">Read about Astor Library <span aria-hidden="true">&rarr;</span></a></div>
-    <div class="archive-history-reel home-reference-reel" data-reference-reel aria-hidden="true">
-      <figure class="home-reference-frame" data-reference-frame><img src="/assets/home-reference-victorian.jpg" alt="" width="1200" height="400" loading="lazy"></figure>
-      <figure class="home-reference-frame" data-reference-frame><img src="/assets/home-reference-shakespeare.jpg" alt="" width="1200" height="400" loading="lazy"></figure>
-      <figure class="home-reference-frame" data-reference-frame><img src="/assets/home-reference-study.jpg" alt="" width="1200" height="400" loading="lazy"></figure>
-      <div class="home-reference-legend"><span>Read</span><span>Consult</span><span>Return</span></div>
-    </div>
-  </section>
-
-  <section class="archive-routes archive-section">
-    <div class="archive-section-head"><div><p class="kicker">Reading routes</p><h2>Books in conversation</h2></div><p>Start with a question and move between periods. Each route joins four books without pretending that they say the same thing.</p></div>
-    <nav class="archive-route-list" aria-label="Reading routes">
-      <a href="/reading-routes/#home"><span>01</span><b>What makes a home?</b><small>The Odyssey · The Aeneid · The Tempest · As You Like It</small></a>
-      <a href="/reading-routes/#gothic"><span>03</span><b>Where does modern fear live?</b><small>Frankenstein · Jekyll and Hyde · Dorian Gray · Dracula</small></a>
-      <a href="/reading-routes/#power"><span>04</span><b>Why must power be performed?</b><small>Richard II · Macbeth · Coriolanus · Antony and Cleopatra</small></a>
-      <a href="/reading-routes/#evidence"><span>05</span><b>What counts as evidence?</b><small>Sherlock Holmes · Great Expectations · Moby-Dick · Dracula</small></a>
-    </nav>
-    <a class="button archive-route-button" href="/reading-routes/">Open all seven routes</a>
-  </section>
-
-  <section class="archive-collections archive-section">
-    <div class="archive-section-head"><div><p class="kicker">Browse the shelves</p><h2>Collections</h2></div><p>Shakespeare has a shelf of his own. Other books are arranged by broad literary period and tradition.</p></div>
-    <div class="home-collection-grid">
-      <a class="home-collection-card" href="/ancient-epic/"><img src="/assets/home/ancient-epic.jpg" alt="Ancient ships, columns and classical artefacts" loading="lazy"><span>Ancient &amp; Epic</span></a>
-      <a class="home-collection-card" href="/renaissance-early-modern/"><img src="/assets/home/renaissance-early-modern.jpg" alt="Renaissance books, printing and instruments" loading="lazy"><span>Renaissance &amp; Early Modern</span></a>
-      <a class="home-collection-card" href="/shakespeare/"><img src="/assets/home/shakespeare.jpg" alt="The Globe stage, crown, rose and theatre mask" loading="lazy"><span>Shakespeare</span></a>
-      <a class="home-collection-card" href="/restoration-enlightenment/"><img src="/assets/home/restoration-enlightenment.jpg" alt="An Enlightenment interior with books and scientific instruments" loading="lazy"><span>Restoration &amp; Enlightenment</span></a>
-      <a class="home-collection-card" href="/romantic-regency/"><img src="/assets/home/romantic-regency.jpg" alt="A Romantic landscape with a book and writing materials" loading="lazy"><span>Romantic &amp; Regency</span></a>
-      <a class="home-collection-card" href="/victorian/"><img src="/assets/home/victorian.jpg" alt="A Victorian railway, house, watch and letter" loading="lazy"><span>Victorian</span></a>
-      <a class="home-collection-card" href="/american/"><img src="/assets/home/american-classics.jpg" alt="An American river, city skyline and steamboat" loading="lazy"><span>American Classics</span></a>
-      <a class="home-collection-card" href="/modern/"><img src="/assets/home/modern-classics.jpg" alt="A modern city scene with books and a typewriter" loading="lazy"><span>Modern Classics</span></a>
-    </div>
+  <section class="library-history" aria-labelledby="history-title">
+    <div class="library-history-copy"><p class="library-kicker">Why Astor?</p><h2 id="history-title">A library name with a history.</h2><p>The name is a nod to one of the great library names of the nineteenth century. The original Astor Library in New York was founded through the bequest of John Jacob Astor. In 1895, it was combined with the Lenox Library and the Tilden Trust to form The New York Public Library.</p><p>It was not a circulating library. Its books were there to be consulted and studied. Astor Editions take that reference-library idea into the text itself.</p><a class="library-button library-button-light" href="/about/">Read the story</a></div>
+    <figure><img src="/assets/home-reference-victorian.jpg" alt="A nineteenth-century library reading room" loading="lazy"><figcaption>Read · consult · return</figcaption></figure>
   </section>
 </main>
 
-<footer class="site-footer home-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div><div class="footer-links"><a href="/about/">About</a><a href="/explore/">Search</a><a href="/passage-room/">Passage Room</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/library/">All books</a><a href="/reading-routes/">Reading routes</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div></footer>
+<footer class="site-footer astor-global-footer">
+  <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
+  <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
+  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a></div>
+  <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/site-index/">Site index</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div>
+</footer>
 </body>
 </html>

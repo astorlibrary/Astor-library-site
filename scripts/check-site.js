@@ -154,39 +154,25 @@ for (const file of htmlFiles) {
 }
 
 const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-const styles = fs.readFileSync(path.join(root, 'assets', 'styles.css'), 'utf8');
-if (!homepage.includes('class="home-masthead"')) failures.push('The homepage is missing its editorial masthead');
-if (!/independent publisher/i.test(homepage)) failures.push('The homepage does not clearly identify the modern Astor Library');
-if (!homepage.includes('class="astor-home-hero ')) failures.push('The homepage is missing its text-first opening');
-if (!homepage.includes('class="home-reading-desk"')) failures.push('The homepage is missing its Astor reading desk');
-if (countMatches(homepage, /class="home-desk-book /g) !== 4) failures.push('The homepage reading desk must feature four Astor editions');
-if (!/\.home-desk-book img\s*\{[^}]*height:auto/i.test(styles)) failures.push('The homepage covers can be stretched out of proportion on phones');
-if (!homepage.includes('class="home-library-doors"')) failures.push('The homepage is missing its three routes into Astor Library');
-if (countMatches(homepage, /class="home-library-door-grid"[\s\S]*?<\/section>/g) !== 1) failures.push('The homepage is missing its three-part library introduction');
-if (!homepage.includes('href="/passage-room/"')) failures.push('The homepage is missing the Passage Room');
-if (!homepage.includes('class="home-passage-feature"')) failures.push('The homepage is missing its later Passage Room feature');
-const homePassageSection = homepage.match(/<section class="home-passage-feature"[\s\S]*?<\/section>/i)?.[0] || '';
-if (countMatches(homePassageSection, /href="\/passage-room\/[^/]+\/"/g) !== 4) failures.push('The homepage Passage Room feature must open four close readings');
-if (!homepage.includes('home-finder')) failures.push('The homepage is missing its library search entrance');
-if (!homepage.includes('class="archive-book-shelf"')) failures.push('The homepage is missing its new-books shelf');
-if (countMatches(homepage, /class="archive-catalogue-number"/g) !== 3) failures.push('The homepage must clearly explain its three kinds of resource');
-if (!homepage.includes('class="archive-route-list"')) failures.push('The homepage is missing its routes across the shelves');
-if (countMatches(homepage, /class="archive-author-covers"/g) !== 3) failures.push('The homepage must introduce three detailed writer pages');
-if (!homepage.includes('href="/authors/"')) failures.push('The homepage is missing the writers directory');
-if (!homepage.includes('href="/subjects/"')) failures.push('The homepage is missing the subjects directory');
-if (countMatches(homepage, /class="archive-subject-grid"[\s\S]*?<\/section>/g) !== 1) failures.push('The homepage is missing its subject desk');
-const homeSubjectSection = homepage.match(/<section class="archive-subjects[\s\S]*?<\/section>/i)?.[0] || '';
-if (countMatches(homeSubjectSection, /href="\/subjects\/[^/]+\/"/g) !== 5) failures.push('The homepage must introduce exactly five subject guides');
-if (!homepage.includes('data-reference-reel')) failures.push('The homepage is missing its moving reference-library story');
-if (countMatches(homepage, /data-reference-frame/g) !== 3) failures.push('The homepage must feature exactly three reference-library frames');
-if (homepage.includes('class="home-intro-strip"')) failures.push('The homepage has restored the repeated introduction strip');
-if (countMatches(homepage, /class="archive-resource-card"/g) !== 3) failures.push('The homepage must introduce exactly three new free resources');
-for (const resourceHref of ['/resources/winters-tale/complete-study-guide/', '/resources/dorian-gray/introduction/', '/resources/american/langston-hughes-dont-turn-back/']) {
-  if (!homepage.includes('href="' + resourceHref + '"')) failures.push('The homepage is missing its new-resource link to ' + resourceHref);
+const homepageMain = homepage.match(/<main class="library-home"[\s\S]*?<\/main>/i)?.[0] || '';
+if (!homepage.includes('/assets/home.css')) failures.push('The homepage is missing its lightweight stylesheet');
+if (!homepage.includes('/assets/navigation.css')) failures.push('The homepage is missing the shared navigation stylesheet');
+if (!homepage.includes('class="site-header astor-global-header')) failures.push('The homepage is missing the shared header');
+if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failures.push('The homepage is missing the grouped footer');
+if (!homepageMain.includes('A reference library, built around the book.')) failures.push('The homepage is missing its text-first opening');
+if (!homepageMain.includes('id="home-search"')) failures.push('The homepage is missing its immediate library search');
+if (!homepageMain.includes('class="edition-anatomy"')) failures.push('The homepage is missing its edition anatomy');
+if (!homepageMain.includes('class="library-start-grid"')) failures.push('The homepage is missing its clear starting points');
+if (!homepageMain.includes('class="library-new-shelf"')) failures.push('The homepage is missing its new-books shelf');
+if (!homepageMain.includes('class="library-method-ledger"')) failures.push('The homepage is missing its edition method');
+if (!homepageMain.includes('class="library-browse-grid"')) failures.push('The homepage is missing its browse routes');
+if (!homepageMain.includes('class="library-desks-grid"')) failures.push('The homepage is missing its reading desks');
+if (!homepageMain.includes('class="library-history"')) failures.push('The homepage is missing the Astor history');
+if (countMatches(homepageMain, /<section class="library-/g) !== 7) failures.push('The homepage must contain seven purposeful sections');
+for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/']) {
+  if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
 }
-for (const image of ['home-reference-victorian.jpg', 'home-reference-shakespeare.jpg', 'home-reference-study.jpg']) {
-  if (!homepage.includes('/assets/' + image)) failures.push('The homepage is missing its lighter ' + image + ' moving image');
-}
+if (homepage.includes('class="home-reading-desk"') || homepage.includes('class="home-library-doors"')) failures.push('The homepage still contains an older duplicate section');
 
 const passageHubFile = path.join(root, 'passage-room', 'index.html');
 if (!fs.existsSync(passageHubFile)) {
@@ -396,9 +382,12 @@ if (countMatches(shakespeareHub, /<article class="edition-card">/g) !== 39) fail
 
 const studyHub = fs.readFileSync(path.join(root, 'study', 'index.html'), 'utf8');
 if (countMatches(studyHub, /class="study-card(?: dual)?"/g) !== 39) failures.push('The study collection must contain 39 editions');
-for (const studyUrl of ['https://mybook.to/HPiX', 'https://mybook.to/ENJxO', 'https://mybook.to/x8aiiFG', 'https://mybook.to/2QzQqmh', 'https://mybook.to/o0Am2j', 'https://mybook.to/SjnG', 'https://mybook.to/gf9uZE', 'https://mybook.to/l4zC9']) {
+for (const studyUrl of ['https://mybook.to/HPiX', 'https://mybook.to/ENJxO', 'https://mybook.to/x8aiiFG', 'https://mybook.to/2QzQqmh', 'https://mybook.to/o0Am2j', 'https://mybook.to/2mR1', 'https://mybook.to/gf9uZE', 'https://mybook.to/l4zC9']) {
   if (!studyHub.includes('href="' + studyUrl + '"')) failures.push('The study collection is missing ' + studyUrl);
 }
+const tamingPage = fs.readFileSync(path.join(root, 'books', 'taming-of-the-shrew', 'index.html'), 'utf8');
+if (!tamingPage.includes('href="https://mybook.to/SjnG"')) failures.push('The Taming of the Shrew page is missing its main edition');
+if (!tamingPage.includes('href="https://mybook.to/2mR1"')) failures.push('The Taming of the Shrew page is missing its study edition');
 
 const redirectFile = path.join(root, '_redirects');
 if (!fs.existsSync(redirectFile)) {
@@ -501,6 +490,7 @@ if (fs.existsSync(distDir)) {
     const redirect = /http-equiv="refresh"/i.test(html);
     if (html.includes('<main')) {
       if (!html.includes('/assets/site.js')) failures.push('dist/' + fileName + ' is missing site.js');
+      if (!html.includes('/assets/navigation.css')) failures.push('dist/' + fileName + ' is missing navigation.css');
       if (!html.includes('class="skip-link"')) failures.push('dist/' + fileName + ' is missing its skip link');
       if (!/<main\b[^>]*\bid="main-content"/i.test(html)) failures.push('dist/' + fileName + ' is missing the main-content target');
       if (!redirect && !/<link rel="canonical" href="https:\/\/astorlibrary\.com\//i.test(html)) failures.push('dist/' + fileName + ' is missing its absolute preferred address');
@@ -508,8 +498,11 @@ if (fs.existsSync(distDir)) {
       if (!redirect && !html.includes('property="og:description"')) failures.push('dist/' + fileName + ' is missing its sharing description');
       if (!redirect && !/<meta property="og:url" content="https:\/\/astorlibrary\.com\//i.test(html)) failures.push('dist/' + fileName + ' is missing its full sharing address');
       if (!redirect && !html.includes('data-astor-global-meta')) failures.push('dist/' + fileName + ' is missing its search visibility information');
-      if (html.includes('class="site-header"') && !html.includes('href="/authors/"')) failures.push('dist/' + fileName + ' is missing Writers from its shared navigation');
-      if (html.includes('class="site-header"') && !html.includes('href="/subjects/"')) failures.push('dist/' + fileName + ' is missing Subjects from its shared navigation');
+      if (countMatches(html, /class="site-header astor-global-header/g) !== 1) failures.push('dist/' + fileName + ' must have one shared header');
+      if (countMatches(html, /class="site-footer astor-global-footer/g) !== 1) failures.push('dist/' + fileName + ' must have one grouped footer');
+      for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/explore/', '/authors/', '/subjects/']) {
+        if (!html.includes('href="' + href + '"')) failures.push('dist/' + fileName + ' is missing ' + href + ' from shared navigation');
+      }
     }
     if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
       failures.push('dist/' + fileName + ' is missing its book description for search engines');
