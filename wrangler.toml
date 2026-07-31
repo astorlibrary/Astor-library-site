@@ -6,3 +6,4 @@ command = "node scripts/build-static.js"
 
 [assets]
 directory = "./dist"
+html_handling = "force-trailing-slash"

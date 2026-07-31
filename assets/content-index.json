@@ -1,13 +1,13 @@
 {
   "counts": {
-    "books": 53,
+    "books": 67,
     "authors": 26,
     "subjects": 8,
     "resources": 40,
-    "studyEditions": 31,
+    "studyEditions": 39,
     "collections": 8,
     "passages": 12,
-    "entries": 178
+    "entries": 200
   },
   "books": [
     {
@@ -248,7 +248,7 @@
       "collection": "Restoration & Enlightenment",
       "description": "Across four increasingly unsettling voyages, Lemuel Gulliver encounters miniature courtiers, giants, impractical experimenters and rational horses.",
       "href": "/books/gullivers-travels/",
-      "image": "/Gulliver%27s%20Travels.png",
+      "image": "/Gulliver%27s%20Travels%20Replacement.jpg",
       "imageAlt": "Astor Library Gulliver's Travels cover",
       "search": "Gulliver’s Travels Jonathan Swift Restoration & Enlightenment Across four increasingly unsettling voyages, Lemuel Gulliver encounters miniature courtiers, giants, impractical experimenters and rational horses. Small people, large egos Humanity enlarged Science without use The Houyhnhnm problem Gulliver’s Travels, Jonathan Swift Four voyages, changing scale Text and publication history Benjamin Motte’s London edition Composition and Scriblerian background Keys, sequels and imitations George Faulkner’s Dublin edition The four voyages Lilliput Brobdingnag Laputa, Balnibarbi, Glubbdubdrib, Luggnagg and Japan Houyhnhnmland Satire and historical context Low heels, high heels and egg-breaking Rope-dancing and preferment Lagado Discovery as domination Visual history Jonathan Swift The giant prisoner Satire made pictorial Characters and satirical functions Language and interpretation Stage and screen adaptations Fleischer Studios animated feature The 3 Worlds of Gulliver Television miniseries Modern comic recycling Where the joke changes direction The inventory of Gulliver The proposal of gunpowder Home among the Yahoos Sources and further reading",
       "authorHref": "/authors/#jonathan-swift",
@@ -323,6 +323,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Henry V",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "A young king crosses the Channel to enforce a disputed claim and discovers that victory has a human cost.",
+      "href": "/books/henry-v/",
+      "image": "/Henry%20V%20Main%20Cover.jpg",
+      "imageAlt": "Astor Library Henry V cover",
+      "search": "Henry V William Shakespeare Shakespeare A young king crosses the Channel to enforce a disputed claim and discovers that victory has a human cost. The Astor Library edition. Henry V, William Shakespeare How the action moves. A war is made to sound lawful The crown severs old loyalties Eloquence turns from fellowship to terror The king walks among those who must fight A marriage closes the campaign, not the history Three ways into the writing. Who makes the heroic picture? Public certainty, private argument A nation heard in several accents The worlds around the play. A play written beside a live campaign The quarto and Folio do not tell precisely the same play Patriotism has never been the only way to stage it People carrying the argument. Henry V The Chorus Katherine Fluellen Michael Williams Pistol Questions that stay open. Does the play celebrate Henry’s war or put it on trial? What changes when Henry is not recognised as king? Is the final courtship private, political or both? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Henry VI, Part 1",
       "author": "William Shakespeare and collaborators",
       "collection": "Shakespeare",
@@ -365,6 +379,48 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Henry VI, Parts 1, 2 and 3",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "Three plays follow a kingdom coming apart: first in France, then at court, and finally across the battlefields of civil war.",
+      "href": "/books/henry-vi-parts-1-2-and-3/",
+      "image": "/Henry%20VI%20-%201%2C2%2C3%20Main%20Cover.jpg",
+      "imageAlt": "Astor Library Henry VI, Parts 1, 2 and 3 cover",
+      "search": "Henry VI, Parts 1, 2 and 3 William Shakespeare Shakespeare Three plays follow a kingdom coming apart: first in France, then at court, and finally across the battlefields of civil war. The Astor Library edition. Henry VI, Parts 1, 2 and 3, William Shakespeare How the action moves. The French conquests begin to disappear A marriage carries the next struggle into court Rebellion rehearses the coming civil war The crown changes hands faster than loyalty can follow The war ends by preparing another tragedy Three ways into the writing. England loses France before it loses itself A good man in an office that goodness cannot fill From diplomatic prize to maker of history The worlds around the play. The trilogy was not necessarily written in story order ‘Shakespeare’ does not mean a solitary manuscript Chronicles turn decades into a pattern of consequence People carrying the argument. Henry VI Margaret of Anjou Richard Plantagenet, Duke of York Richard, Duke of Gloucester Warwick Joan la Pucelle and Talbot Questions that stay open. Does Henry fail the kingdom, or does the kingdom make his rule impossible? How does Margaret’s changing power alter the language used about her? What does the trilogy gain by refusing stable victory? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Henry VIII",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "At a court built on display, favour can raise a servant to magnificence and remove a queen from history.",
+      "href": "/books/henry-viii/",
+      "image": "/Henry%20VIII%20Main%20Cover.jpg",
+      "imageAlt": "Astor Library Henry VIII cover",
+      "search": "Henry VIII William Shakespeare Shakespeare At a court built on display, favour can raise a servant to magnificence and remove a queen from history. The Astor Library edition. Henry VIII, William Shakespeare How the action moves. The first fall establishes the rules of court A masque becomes a political beginning The queen refuses the court that judges her The keeper of secrets is undone by papers The ending turns a vulnerable infant into a national future Three ways into the writing. What can ‘All Is True’ mean on a stage? Farewell speeches outlast official verdicts Women bear the future and pay for its uncertainty The worlds around the play. The play belongs to Shakespeare and Fletcher Its first spectacular production destroyed the Globe Tudor history was also Stuart succession politics People carrying the argument. Henry VIII Queen Katherine Cardinal Wolsey Anne Bullen Thomas Cranmer The Duke of Buckingham Questions that stay open. Whose version of events earns the name ‘true’? How should Wolsey’s repentance change our judgment of him? Does the Elizabeth prophecy resolve the play or rewrite it? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "King John",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "John holds the crown; his young nephew Arthur may have the better claim.",
+      "href": "/books/king-john/",
+      "image": "/King%20John%20Main%20Cover.jpg",
+      "imageAlt": "Astor Library King John cover",
+      "search": "King John William Shakespeare Shakespeare John holds the crown; his young nephew Arthur may have the better claim. The Astor Library edition. King John, William Shakespeare How the action moves. France challenges John in Arthur’s name A disputed city turns enemies into relatives Pandulph breaks the wedding-day peace The command that is withdrawn still kills The kingdom survives the king Three ways into the writing. The Bastard learns the market price of honour A child’s body becomes political evidence ‘Strong possession’ is not the same as right The worlds around the play. Shakespeare rewrote an already theatrical king The event modern audiences expect is absent A former stage favourite became a rarity People carrying the argument. King John Philip Faulconbridge, the Bastard Arthur Constance Hubert Cardinal Pandulph Questions that stay open. Why does the Bastard remain loyal after he understands John? Where does the play locate legitimate rule? What does Constance’s grief do that political speech cannot? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "King Lear",
       "author": "William Shakespeare",
       "collection": "Shakespeare",
@@ -384,6 +440,25 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Love’s Labour’s Lost",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "The King of Navarre and three friends swear off women just before four women arrive on state business.",
+      "href": "/books/loves-labours-lost/",
+      "image": "/Love%27s%20Labour%27s%20Lost%20Main%20Cover.jpg",
+      "imageAlt": "Astor Library Love’s Labour’s Lost cover",
+      "search": "Love’s Labour’s Lost William Shakespeare Shakespeare The King of Navarre and three friends swear off women just before four women arrive on state business. The Astor Library edition. Love’s Labour’s Lost, William Shakespeare How the action moves. Navarre builds an academy against ordinary life The women are kept outside—and take command there Private performances become public evidence The women rewrite the men’s disguise Death changes the measure of every promise Three ways into the writing. A great feast of words—and the scraps The women control interpretation ‘Our wooing doth not end like an old play’ The worlds around the play. A court performance enters the public book trade The play borrows forms rather than a plot Clarity depends upon social relations, not paraphrase People carrying the argument. Berowne Rosaline The King of Navarre The Princess of France Don Armado Holofernes Questions that stay open. Do the men love the women, or their own performances of love? Why are the women able to rewrite the men’s vows? What survives Marcade’s entrance? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Macbeth",
       "author": "William Shakespeare",
       "collection": "Shakespeare",
@@ -397,6 +472,25 @@
         {
           "title": "Tragedy",
           "href": "/subjects/tragedy/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Measure for Measure",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "Vienna is placed under the rule of a man who treats severity as proof of his own purity—until desire exposes him.",
+      "href": "/books/measure-for-measure/",
+      "image": "/Measure%20for%20Measure%20Main%20Cover.png",
+      "imageAlt": "Astor Library Measure for Measure cover",
+      "search": "Measure for Measure William Shakespeare Shakespeare Vienna is placed under the rule of a man who treats severity as proof of his own purity—until desire exposes him. The Astor Library edition. Measure for Measure, William Shakespeare How the action moves. The Duke hands Vienna to Angelo Isabella enters the argument The bargain and the prison The bed trick becomes a head trick A public reckoning Three ways into the writing. Isabella pleads for Claudio “Who will believe thee, Isabel?” Judgement, pardon and Isabella's silence The worlds around the play. A new reign and a problem of government How Shakespeare changes the inherited story The ending a production must interpret People carrying the argument. Duke Vincentio Isabella Angelo Claudio Mariana Lucio Questions that stay open. Does the Duke repair Vienna, or prove how much power he can exercise over it? Where does the play locate Isabella's freedom? Is mercy applied equally? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
         }
       ]
     },
@@ -496,6 +590,25 @@
         {
           "title": "Narration and testimony",
           "href": "/subjects/narration-testimony/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Pericles, Prince of Tyre",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "A prince flees a death sentence and spends years at the mercy of seas, rulers and chance.",
+      "href": "/books/pericles-prince-of-tyre/",
+      "image": "/Pericles%2C%20Prince%20of%20Tyre%20Main%20COver.png",
+      "imageAlt": "Astor Library Pericles, Prince of Tyre cover",
+      "search": "Pericles, Prince of Tyre William Shakespeare Shakespeare A prince flees a death sentence and spends years at the mercy of seas, rulers and chance. The Astor Library edition. Pericles, Prince of Tyre, William Shakespeare How the action moves. The riddle that must not be answered Famine, shipwreck and a second courtship Birth and apparent death at sea Marina survives the stories written for her Recognition after silence Three ways into the writing. Gower returns to tell an old story A birth inside a storm Marina brings Pericles back to language The worlds around the play. A collaborative play in a damaged witness Apollonius becomes Pericles How to put an entire sea on stage People carrying the argument. Pericles Marina Thaisa Gower Helicanus Dionyza Questions that stay open. What changes when the play is read as a collaboration? Why does the play need Gower? Is Marina protected by virtue, language or theatrical convention? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
         }
       ]
     },
@@ -718,6 +831,25 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "The Merchant of Venice",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "A loan, a marriage test and an elopement meet in a trial whose celebrated rescue is also an act of dispossession.",
+      "href": "/books/the-merchant-of-venice/",
+      "image": "/The%20Merchant%20of%20Venice%20Main%20Cover.jpg",
+      "imageAlt": "Astor Library The Merchant of Venice cover",
+      "search": "The Merchant of Venice William Shakespeare Shakespeare A loan, a marriage test and an elopement meet in a trial whose celebrated rescue is also an act of dispossession. The Astor Library edition. The Merchant of Venice, William Shakespeare How the action moves. Antonio enters the bond Caskets and departures Bassanio wins Portia as Antonio loses time The trial turns Rings and returns Three ways into the writing. The making of the bond “Hath not a Jew eyes?” Mercy preached and withheld The worlds around the play. Antisemitism without an openly recognised Jewish community Credit beneath the language of friendship The changing weight of Shylock People carrying the argument. Portia Shylock Antonio Bassanio Jessica Nerissa Questions that stay open. What does the play allow Shylock to say that its ending refuses him? Does Portia practise the mercy she describes? What kind of bond joins Antonio and Bassanio? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "The Merry Wives of Windsor",
       "author": "William Shakespeare",
       "collection": "Shakespeare",
@@ -832,7 +964,7 @@
       "collection": "Shakespeare",
       "description": "Shakespeare’s early comedy sets courtship and marriage against coercion, performance and resistance: a theatrical argument that remains funny, difficult and fiercely contested.",
       "href": "/books/taming-of-the-shrew/",
-      "image": "/Taming%20of%20the%20Shrew.png",
+      "image": "/The%20Taming%20of%20the%20Shrew%20Main%20Cover.jpg",
       "imageAlt": "Astor Library The Taming of the Shrew cover",
       "search": "The Taming of the Shrew William Shakespeare Shakespeare Shakespeare’s early comedy sets courtship and marriage against coercion, performance and resistance: a theatrical argument that remains funny, difficult and fiercely contested. The Taming of the Shrew, William Shakespeare At a glance First Folio text, later quarto A similar play, different text Italian comedy and English translation The unfinished Christopher Sly frame Text, sources and first printing First Folio: the first secure printed text Gascoigne’s Supposes A Shrew in quarto Marriage, household and law Dowry, household rule and public contract Names, roles and performance The final speech cannot be ignored The play in pictures Edward Robert Hughes: Katherina isolated Charles Robert Leslie: domestic theatre Pickford and Fairbanks on film Performance timeline Fletcher answers Shakespeare: The Woman’s Prize John Lacy: Sauny the Scot David Garrick: Catharine and Petruchio Return of Shakespeare’s fuller text in Britain Sam Taylor film: Mary Pickford and Douglas Fairbanks Kiss Me, Kate Zeffirelli film: Elizabeth Taylor and Richard Burton Michael Bogdanov at the RSC BBC Television Shakespeare 10 Things I Hate About You RSC pairing with Fletcher Shakespeare’s Globe: Toby Frow RSC gender-flipped production Adaptations The Woman’s Prize, or The Tamer Tamed Adaptation as normal practice Screen versions The Taming of the Shrew Sources and further reading",
       "authorHref": "/shakespeare/",
@@ -865,6 +997,44 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "The Two Gentlemen of Verona",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "Two friends leave Verona for the court of Milan, where first love, betrayal, disguise and a journey into the forest test what the word ‘gentleman’ is worth.",
+      "href": "/books/the-two-gentlemen-of-verona/",
+      "image": "/Two%20Gentleman%20of%20Verona%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Two Gentlemen of Verona cover",
+      "search": "The Two Gentlemen of Verona William Shakespeare Shakespeare Two friends leave Verona for the court of Milan, where first love, betrayal, disguise and a journey into the forest test what the word ‘gentleman’ is worth. The Astor Library edition. The Two Gentlemen of Verona, William Shakespeare How the action moves. The friends divide A new love and an old betrayal Banishment and disguise The forest and the false courtship A reconciliation that will not sit quietly Three ways into the writing. Proteus and the failure of constancy Julia and Silvia refuse the parts written for them Why Crab matters The worlds around the play. An early comedy finding its forms Felismena’s journey The problem at the end People carrying the argument. Valentine Proteus Julia Silvia Launce Speed Questions that stay open. What makes a gentleman? What does disguise give Julia? Can the ending be a reconciliation? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Two Noble Kinsmen",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "Two devoted cousins become rivals for Emilia in Shakespeare and John Fletcher’s strange, searching drama of friendship, desire, ceremony and fate.",
+      "href": "/books/the-two-noble-kinsmen/",
+      "image": "/The%20Two%20Noble%20Kinsmen%20Main%20Cover.jpg",
+      "imageAlt": "Astor Library The Two Noble Kinsmen cover",
+      "search": "The Two Noble Kinsmen William Shakespeare Shakespeare Two devoted cousins become rivals for Emilia in Shakespeare and John Fletcher’s strange, searching drama of friendship, desire, ceremony and fate. The Astor Library edition. The Two Noble Kinsmen, William Shakespeare How the action moves. A wedding halted by grief The prison window Courtesy sharpened into combat Desire, illness and preparation Three prayers and one broken victory Three ways into the writing. What happens to the cousins’ friendship? Emilia and the language of choice The Jailer’s Daughter outside the romance The worlds around the play. Chaucer retold for a Jacobean stage A play made by two dramatists Ceremony, dance and theatrical contrast People carrying the argument. Palamon Arcite Emilia The Jailer’s Daughter Theseus Hippolyta Questions that stay open. Are Palamon and Arcite noble? Whose wishes do the gods answer? How should the Daughter’s recovery be staged? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "The War of the Worlds",
       "author": "H. G. Wells",
       "collection": "Victorian",
@@ -875,6 +1045,44 @@
       "search": "The War of the Worlds H. G. Wells Victorian Wells brings an overwhelmingly advanced invader to Surrey and London, reversing the logic of empire and exposing how quickly Victorian confidence can collapse. The War of the Worlds, H. G. Wells At a glance Text and publication history H. G. Wells Pearson's Magazine First book edition Woking and Horsell Common The first cylinder Panic, roads and mass movement Scientific romance and Victorian science The shape of the novel. Confidence is built into the first sentence Modern systems spread danger as well as news Explanation does not cancel shock The imperial reversal. Courage cannot repair a technological gulf English people become a moving population The ending refuses national triumph Passages to return to. Adaptations Orson Welles radio broadcast George Pal film Jeff Wayne musical version Steven Spielberg film BBC television version The invasion is recorded, not conquered A trained observer can still misread Catastrophe overwhelms explanation A grand plan replaces difficult work Six stages of collapse After the ending The universe has become less secure Return repeats the shape of grief The reversal cannot be forgotten Sources and further reading",
       "authorHref": "/authors/h-g-wells/",
       "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Winter's Tale",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "A king's groundless jealousy destroys his household; sixteen years later, another generation begins the work of repair.",
+      "href": "/books/the-winters-tale/",
+      "image": "/The%20Winter%27s%20Tale%20Main%20COver.png",
+      "imageAlt": "Astor Library The Winter's Tale cover",
+      "search": "The Winter's Tale William Shakespeare Shakespeare A king's groundless jealousy destroys his household; sixteen years later, another generation begins the work of repair. The Astor Library edition. The Winter's Tale, William Shakespeare How the action moves. Leontes invents a betrayal The court cannot stop the king A bear, a shepherd and sixteen years Bohemia in flower Proof, pardon and the statue Three ways into the writing. “Too hot, too hot!”: jealousy makes its own evidence Perdita and Polixenes argue about nature The statue moves The worlds around the play. What Shakespeare changes in Pandosto Why Time breaks the play in two The bear and the living image People carrying the argument. Leontes Hermione Paulina Perdita Polixenes Autolycus Questions that stay open. Why is Leontes jealous? What would make Leontes worthy of forgiveness? Is Hermione's return a miracle or a disclosure? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Timon of Athens",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "Timon gives as though friendship could never reach a limit, then discovers that his generosity has built a market in praise rather than a community.",
+      "href": "/books/timon-of-athens/",
+      "image": "/Timon%20of%20Athens%20Main.png",
+      "imageAlt": "Astor Library Timon of Athens cover",
+      "search": "Timon of Athens William Shakespeare Shakespeare Timon gives as though friendship could never reach a limit, then discovers that his generosity has built a market in praise rather than a community. The Astor Library edition. Timon of Athens, William Shakespeare How the action moves. Praise gathers at Timon's door The estate is already empty Each friend finds a reason to refuse The last feast Gold returns in the wilderness Three ways into the writing. Art waits outside the rich man's house Water and stones at the second banquet The “yellow slave” he cannot escape The worlds around the play. Collaboration, revision and an unsettled text Athens imagined through Plutarch and Lucian A rarely staged play that invites radical choices People carrying the argument. Timon Flavius Apemantus Alcibiades Lucullus, Lucius and Sempronius The Poet and the Painter Questions that stay open. Is Timon's generosity selfless? Does Timon discover the truth about society? Why does the play give Athens to Alcibiades rather than Timon? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -892,6 +1100,44 @@
         {
           "title": "Tragedy",
           "href": "/subjects/tragedy/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Troilus and Cressida",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "Inside and outside Troy, declarations of love and honour are tested against exchange, appetite, political calculation and a war that has forgotten how to end.",
+      "href": "/books/troilus-and-cressida/",
+      "image": "/Troilus%20and%20Cressida%20Main.png",
+      "imageAlt": "Astor Library Troilus and Cressida cover",
+      "search": "Troilus and Cressida William Shakespeare Shakespeare Inside and outside Troy, declarations of love and honour are tested against exchange, appetite, political calculation and a war that has forgotten how to end. The Astor Library edition. Troilus and Cressida, William Shakespeare How the action moves. Love inside a stalled war A night of vows Cressida exchanged The show of honour Heroism stripped bare Three ways into the writing. Cressida watched and judged Ulysses and the uses of order The undoing of heroic language The worlds around the play. Homeric war and Chaucerian love A book with conflicting signals Comedy without release, tragedy without closure People carrying the argument. Troilus Cressida Pandarus Hector Ulysses Thersites Questions that stay open. How free is Cressida? Should Ulysses be believed? Why does the play end with Pandarus? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Twelfth Night",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "After a shipwreck, Viola enters Illyria in borrowed clothes and finds herself carrying another man’s love to the woman who will fall in love with her.",
+      "href": "/books/twelfth-night/",
+      "image": "/Twelfth%20Night%20Main%20Cover.jpg",
+      "imageAlt": "Astor Library Twelfth Night cover",
+      "search": "Twelfth Night William Shakespeare Shakespeare After a shipwreck, Viola enters Illyria in borrowed clothes and finds herself carrying another man’s love to the woman who will fall in love with her. The Astor Library edition. Twelfth Night, William Shakespeare How the action moves. A name borrowed after shipwreck The messenger becomes the message A household takes revenge Yellow stockings and crossed identities The twin returns Three ways into the writing. Viola, Cesario and the words between identities A comedy about imagined lovers Where festivity becomes punishment The worlds around the play. The last night of Christmas Gender on the early modern stage A comedy seen at the Middle Temple People carrying the argument. Viola Olivia Orsino Sebastian Malvolio Feste Questions that stay open. When is Cesario most real? Has the trick against Malvolio gone too far? What survives the ending? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": [
+        {
+          "title": "Comedy and comic form",
+          "href": "/subjects/comedy/"
         }
       ]
     },
@@ -1252,14 +1498,14 @@
       "title": "Jonathan Swift",
       "description": "Read Jonathan Swift through Astor Library's page for Gulliver’s Travels.",
       "href": "/authors/#jonathan-swift",
-      "image": "/Gulliver%27s%20Travels.png",
+      "image": "/Gulliver%27s%20Travels%20Replacement.jpg",
       "imageAlt": "Astor Library Gulliver's Travels cover",
       "bookCount": 1,
       "books": [
         {
           "title": "Gulliver’s Travels",
           "href": "/books/gullivers-travels/",
-          "image": "/Gulliver%27s%20Travels.png",
+          "image": "/Gulliver%27s%20Travels%20Replacement.jpg",
           "imageAlt": "Astor Library Gulliver's Travels cover",
           "collection": "Restoration & Enlightenment"
         }
@@ -1474,7 +1720,7 @@
       "href": "/shakespeare/",
       "image": "/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png",
       "imageAlt": "Astor Library A Midsummer Night's Dream cover",
-      "bookCount": 24,
+      "bookCount": 38,
       "books": [
         {
           "title": "A Midsummer Night's Dream",
@@ -1547,6 +1793,13 @@
           "collection": "Shakespeare"
         },
         {
+          "title": "Henry V",
+          "href": "/books/henry-v/",
+          "image": "/Henry%20V%20Main%20Cover.jpg",
+          "imageAlt": "Astor Library Henry V cover",
+          "collection": "Shakespeare"
+        },
+        {
           "title": "Henry VI, Part 2",
           "href": "/books/henry-vi-part-2/",
           "image": "/Henry%20VI%2C%20Part%202.png",
@@ -1561,6 +1814,27 @@
           "collection": "Shakespeare"
         },
         {
+          "title": "Henry VI, Parts 1, 2 and 3",
+          "href": "/books/henry-vi-parts-1-2-and-3/",
+          "image": "/Henry%20VI%20-%201%2C2%2C3%20Main%20Cover.jpg",
+          "imageAlt": "Astor Library Henry VI, Parts 1, 2 and 3 cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "Henry VIII",
+          "href": "/books/henry-viii/",
+          "image": "/Henry%20VIII%20Main%20Cover.jpg",
+          "imageAlt": "Astor Library Henry VIII cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "King John",
+          "href": "/books/king-john/",
+          "image": "/King%20John%20Main%20Cover.jpg",
+          "imageAlt": "Astor Library King John cover",
+          "collection": "Shakespeare"
+        },
+        {
           "title": "King Lear",
           "href": "/books/king-lear/",
           "image": "/King%20Lear.png",
@@ -1568,10 +1842,24 @@
           "collection": "Shakespeare"
         },
         {
+          "title": "Love’s Labour’s Lost",
+          "href": "/books/loves-labours-lost/",
+          "image": "/Love%27s%20Labour%27s%20Lost%20Main%20Cover.jpg",
+          "imageAlt": "Astor Library Love’s Labour’s Lost cover",
+          "collection": "Shakespeare"
+        },
+        {
           "title": "Macbeth",
           "href": "/books/macbeth/",
           "image": "/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png",
           "imageAlt": "Astor Library Macbeth cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "Measure for Measure",
+          "href": "/books/measure-for-measure/",
+          "image": "/Measure%20for%20Measure%20Main%20Cover.png",
+          "imageAlt": "Astor Library Measure for Measure cover",
           "collection": "Shakespeare"
         },
         {
@@ -1586,6 +1874,13 @@
           "href": "/books/othello/",
           "image": "/Othello.png",
           "imageAlt": "Astor Library Othello cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "Pericles, Prince of Tyre",
+          "href": "/books/pericles-prince-of-tyre/",
+          "image": "/Pericles%2C%20Prince%20of%20Tyre%20Main%20COver.png",
+          "imageAlt": "Astor Library Pericles, Prince of Tyre cover",
           "collection": "Shakespeare"
         },
         {
@@ -1617,6 +1912,13 @@
           "collection": "Shakespeare"
         },
         {
+          "title": "The Merchant of Venice",
+          "href": "/books/the-merchant-of-venice/",
+          "image": "/The%20Merchant%20of%20Venice%20Main%20Cover.jpg",
+          "imageAlt": "Astor Library The Merchant of Venice cover",
+          "collection": "Shakespeare"
+        },
+        {
           "title": "The Merry Wives of Windsor",
           "href": "/books/merry-wives-of-windsor/",
           "image": "/Merry%20Wives%20of%20Windsor.png",
@@ -1626,7 +1928,7 @@
         {
           "title": "The Taming of the Shrew",
           "href": "/books/taming-of-the-shrew/",
-          "image": "/Taming%20of%20the%20Shrew.png",
+          "image": "/The%20Taming%20of%20the%20Shrew%20Main%20Cover.jpg",
           "imageAlt": "Astor Library The Taming of the Shrew cover",
           "collection": "Shakespeare"
         },
@@ -1638,14 +1940,56 @@
           "collection": "Shakespeare"
         },
         {
+          "title": "The Two Gentlemen of Verona",
+          "href": "/books/the-two-gentlemen-of-verona/",
+          "image": "/Two%20Gentleman%20of%20Verona%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Two Gentlemen of Verona cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "The Two Noble Kinsmen",
+          "href": "/books/the-two-noble-kinsmen/",
+          "image": "/The%20Two%20Noble%20Kinsmen%20Main%20Cover.jpg",
+          "imageAlt": "Astor Library The Two Noble Kinsmen cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "The Winter's Tale",
+          "href": "/books/the-winters-tale/",
+          "image": "/The%20Winter%27s%20Tale%20Main%20COver.png",
+          "imageAlt": "Astor Library The Winter's Tale cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "Timon of Athens",
+          "href": "/books/timon-of-athens/",
+          "image": "/Timon%20of%20Athens%20Main.png",
+          "imageAlt": "Astor Library Timon of Athens cover",
+          "collection": "Shakespeare"
+        },
+        {
           "title": "Titus Andronicus",
           "href": "/books/titus-andronicus/",
           "image": "/Titus%20Andronicus.png",
           "imageAlt": "Astor Library Titus Andronicus cover",
           "collection": "Shakespeare"
+        },
+        {
+          "title": "Troilus and Cressida",
+          "href": "/books/troilus-and-cressida/",
+          "image": "/Troilus%20and%20Cressida%20Main.png",
+          "imageAlt": "Astor Library Troilus and Cressida cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "Twelfth Night",
+          "href": "/books/twelfth-night/",
+          "image": "/Twelfth%20Night%20Main%20Cover.jpg",
+          "imageAlt": "Astor Library Twelfth Night cover",
+          "collection": "Shakespeare"
         }
       ],
-      "search": "William Shakespeare A Midsummer Night's Dream All's Well That Ends Well Antony and Cleopatra As You Like It Coriolanus Cymbeline Hamlet Henry IV, Part 1 Henry IV, Part 2 Henry IV, Parts 1 and 2 Henry VI, Part 2 Henry VI, Part 3 King Lear Macbeth Much Ado About Nothing Othello Richard II Richard III Romeo and Juliet The Comedy of Errors The Merry Wives of Windsor The Taming of the Shrew The Tempest Titus Andronicus Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare"
+      "search": "William Shakespeare A Midsummer Night's Dream All's Well That Ends Well Antony and Cleopatra As You Like It Coriolanus Cymbeline Hamlet Henry IV, Part 1 Henry IV, Part 2 Henry IV, Parts 1 and 2 Henry V Henry VI, Part 2 Henry VI, Part 3 Henry VI, Parts 1, 2 and 3 Henry VIII King John King Lear Love’s Labour’s Lost Macbeth Measure for Measure Much Ado About Nothing Othello Pericles, Prince of Tyre Richard II Richard III Romeo and Juliet The Comedy of Errors The Merchant of Venice The Merry Wives of Windsor The Taming of the Shrew The Tempest The Two Gentlemen of Verona The Two Noble Kinsmen The Winter's Tale Timon of Athens Titus Andronicus Troilus and Cressida Twelfth Night Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare"
     },
     {
       "type": "author",
@@ -1697,41 +2041,51 @@
       "type": "subject",
       "typeLabel": "Subject guide",
       "title": "Comedy and comic form",
-      "description": "Read Shakespearean comedy through mistaken identity, disguise, courtship, performance and recognition, from The Comedy of Errors and A Midsummer Night’s Dream to As You Like It and The Tempest.",
+      "description": "Read Shakespearean comedy through mistaken identity, disguise, courtship, performance and difficult endings, from The Two Gentlemen of Verona and Love’s Labour’s Lost to Twelfth Night and The Winter’s Tale.",
       "href": "/subjects/comedy/",
       "image": "/Comedy%20of%20Errors%20%28Main%20Page%29.png",
       "imageAlt": "Comedy and comic form books in Astor Library",
-      "bookCount": 8,
+      "bookCount": 16,
       "relatedBooks": [
         "/books/comedy-of-errors/",
         "/books/taming-of-the-shrew/",
+        "/books/the-two-gentlemen-of-verona/",
         "/books/a-midsummer-nights-dream/",
+        "/books/loves-labours-lost/",
+        "/books/the-merchant-of-venice/",
         "/books/much-ado-about-nothing/",
         "/books/as-you-like-it/",
+        "/books/twelfth-night/",
         "/books/merry-wives-of-windsor/",
+        "/books/measure-for-measure/",
         "/books/alls-well-that-ends-well/",
+        "/books/pericles-prince-of-tyre/",
+        "/books/the-winters-tale/",
+        "/books/the-two-noble-kinsmen/",
         "/books/the-tempest/"
       ],
       "relatedResources": [
         "/resources/midsummer-nights-dream/study-guide/",
         "/resources/shakespeare/gender-power-omkara-maqbool/"
       ],
-      "search": "Comedy and comic form Mistakes, performances and the difficult work of ending well Read Shakespearean comedy through mistaken identity, disguise, courtship, performance and recognition, from The Comedy of Errors and A Midsummer Night’s Dream to As You Like It and The Tempest. comedy comic form Shakespeare laughter farce festive comedy disguise mistaken identity recognition marriage courtship performance audience ending romance problem play Comic error A mistake in identity, intention or interpretation that exposes the assumptions by which a social world operates. Disguise A performed identity that redistributes knowledge and changes what a character may say, desire or arrange. Recognition The moment when a person, relationship or history becomes newly known and the action can move towards settlement. Festive comedy A comic pattern in which ordinary restraint loosens for a holiday, forest or night before a changed social order returns."
+      "search": "Comedy and comic form Mistakes, performances and the difficult work of ending well Read Shakespearean comedy through mistaken identity, disguise, courtship, performance and difficult endings, from The Two Gentlemen of Verona and Love’s Labour’s Lost to Twelfth Night and The Winter’s Tale. comedy comic form Shakespeare laughter farce festive comedy disguise mistaken identity recognition marriage courtship performance audience ending romance problem play Comic error A mistake in identity, intention or interpretation that exposes the assumptions by which a social world operates. Disguise A performed identity that redistributes knowledge and changes what a character may say, desire or arrange. Recognition The moment when a person, relationship or history becomes newly known and the action can move towards settlement. Festive comedy A comic pattern in which ordinary restraint loosens for a holiday, forest or night before a changed social order returns."
     },
     {
       "type": "subject",
       "typeLabel": "Subject guide",
       "title": "Tragedy",
-      "description": "Explore tragedy through Shakespeare’s Hamlet, Macbeth, Othello, King Lear, Romeo and Juliet, Antony and Cleopatra, Coriolanus and Titus Andronicus.",
+      "description": "Explore Shakespearean tragedy from Titus Andronicus and Romeo and Juliet through Hamlet, Othello, Timon of Athens, Antony and Cleopatra and Coriolanus.",
       "href": "/subjects/tragedy/",
       "image": "/Romeo%20and%20Juliet.png",
       "imageAlt": "Tragedy books in Astor Library",
-      "bookCount": 8,
+      "bookCount": 10,
       "relatedBooks": [
         "/books/romeo-and-juliet/",
         "/books/hamlet/",
+        "/books/troilus-and-cressida/",
         "/books/othello/",
         "/books/king-lear/",
+        "/books/timon-of-athens/",
         "/books/macbeth/",
         "/books/antony-and-cleopatra/",
         "/books/coriolanus/",
@@ -1745,7 +2099,7 @@
         "/resources/shakespeare/gender-power-omkara-maqbool/",
         "/resources/king-lear/summary-guide/"
       ],
-      "search": "Tragedy Choice, consequence and the watching audience Explore tragedy through Shakespeare’s Hamlet, Macbeth, Othello, King Lear, Romeo and Juliet, Antony and Cleopatra, Coriolanus and Titus Andronicus. tragedy Shakespeare tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family Reversal An action or discovery turns the direction of a life, plot or public position. Recognition A character comes to understand an identity, relationship or truth that changes the action. Dramatic irony The audience understands more than one or more characters inside the scene. Catastrophe The final movement in which accumulated choices and conflicts become irreversible."
+      "search": "Tragedy Choice, consequence and the watching audience Explore Shakespearean tragedy from Titus Andronicus and Romeo and Juliet through Hamlet, Othello, Timon of Athens, Antony and Cleopatra and Coriolanus. tragedy Shakespeare tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family Reversal An action or discovery turns the direction of a life, plot or public position. Recognition A character comes to understand an identity, relationship or truth that changes the action. Dramatic irony The audience understands more than one or more characters inside the scene. Catastrophe The final movement in which accumulated choices and conflicts become irreversible."
     },
     {
       "type": "subject",
@@ -3133,6 +3487,118 @@
     },
     {
       "type": "study",
+      "typeLabel": "Study edition",
+      "title": "Henry V",
+      "description": "Kingship, rhetoric, Agincourt, national identity, responsibility and the human cost of war.",
+      "href": "https://mybook.to/HPiX",
+      "image": "/Henry%20V%20Study%20Cover.png",
+      "imageAlt": "Henry V Study cover",
+      "paired": false,
+      "relatedBooks": [
+        "/books/henry-v/"
+      ],
+      "search": "Henry V Kingship, rhetoric, Agincourt, national identity, responsibility and the human cost of war. single text"
+    },
+    {
+      "type": "study",
+      "typeLabel": "Study edition",
+      "title": "Love’s Labour’s Lost",
+      "description": "Language, courtship, performance, masculine fellowship and a comedy that refuses an easy ending.",
+      "href": "https://mybook.to/ENJxO",
+      "image": "/Love%27s%20Labour%27s%20Lost%20Study%20Cover.png",
+      "imageAlt": "Love’s Labour’s Lost Study cover",
+      "paired": false,
+      "relatedBooks": [
+        "/books/loves-labours-lost/"
+      ],
+      "search": "Love’s Labour’s Lost Language, courtship, performance, masculine fellowship and a comedy that refuses an easy ending. single text"
+    },
+    {
+      "type": "study",
+      "typeLabel": "Study edition",
+      "title": "Measure for Measure",
+      "description": "Law, desire, consent, disguise, justice and the unanswered questions of the final scene.",
+      "href": "https://mybook.to/x8aiiFG",
+      "image": "/Measure%20for%20Measure%20Study%20Cover.png",
+      "imageAlt": "Measure for Measure Study cover",
+      "paired": false,
+      "relatedBooks": [
+        "/books/measure-for-measure/"
+      ],
+      "search": "Measure for Measure Law, desire, consent, disguise, justice and the unanswered questions of the final scene. single text"
+    },
+    {
+      "type": "study",
+      "typeLabel": "Study edition",
+      "title": "The Merchant of Venice",
+      "description": "Contracts, mercy, prejudice, money, performance and the divided worlds of Venice and Belmont.",
+      "href": "https://mybook.to/2QzQqmh",
+      "image": "/Merchant%20of%20Venice%20Study%20Cover.png",
+      "imageAlt": "The Merchant of Venice Study cover",
+      "paired": false,
+      "relatedBooks": [
+        "/books/the-merchant-of-venice/"
+      ],
+      "search": "The Merchant of Venice Contracts, mercy, prejudice, money, performance and the divided worlds of Venice and Belmont. single text"
+    },
+    {
+      "type": "study",
+      "typeLabel": "Study edition",
+      "title": "Richard II",
+      "description": "Divine kingship, deposition, language, land, ceremony and Bolingbroke’s rise.",
+      "href": "https://mybook.to/o0Am2j",
+      "image": "/Richard%20II%20Study%20Cover.png",
+      "imageAlt": "Richard II Study cover",
+      "paired": false,
+      "relatedBooks": [
+        "/books/richard-ii/"
+      ],
+      "search": "Richard II Divine kingship, deposition, language, land, ceremony and Bolingbroke’s rise. single text"
+    },
+    {
+      "type": "study",
+      "typeLabel": "Study edition",
+      "title": "The Taming of the Shrew",
+      "description": "Courtship, household power, performance, coercion and the continuing argument over Katherina’s ending.",
+      "href": "https://mybook.to/SjnG",
+      "image": "/The%20Taming%20of%20the%20Shrew%20Study%20Cover.png",
+      "imageAlt": "The Taming of the Shrew Study cover",
+      "paired": false,
+      "relatedBooks": [
+        "/books/taming-of-the-shrew/"
+      ],
+      "search": "The Taming of the Shrew Courtship, household power, performance, coercion and the continuing argument over Katherina’s ending. single text"
+    },
+    {
+      "type": "study",
+      "typeLabel": "Study edition",
+      "title": "Titus Andronicus",
+      "description": "Revenge, Roman ceremony, grief, language, the body and violence staged as public spectacle.",
+      "href": "https://mybook.to/gf9uZE",
+      "image": "/Titus%20Andronicus%20Study%20Cover.png",
+      "imageAlt": "Titus Andronicus Study cover",
+      "paired": false,
+      "relatedBooks": [
+        "/books/titus-andronicus/"
+      ],
+      "search": "Titus Andronicus Revenge, Roman ceremony, grief, language, the body and violence staged as public spectacle. single text"
+    },
+    {
+      "type": "study",
+      "typeLabel": "Study edition",
+      "title": "Twelfth Night",
+      "description": "Disguise, desire, music, mistaken identity, social ambition and an ending with shadows at its edge.",
+      "href": "https://mybook.to/l4zC9",
+      "image": "/Twelfth%20Night%20Study%20Cover.png",
+      "imageAlt": "Twelfth Night Study cover",
+      "paired": false,
+      "relatedBooks": [
+        "/books/twelfth-night/"
+      ],
+      "search": "Twelfth Night Disguise, desire, music, mistaken identity, social ambition and an ending with shadows at its edge. single text"
+    },
+    {
+      "type": "study",
       "typeLabel": "Paired study edition",
       "title": "Macbeth and Jekyll and Hyde",
       "description": "Ambition, guilt, duality, secrecy, violence, the supernatural and moral collapse.",
@@ -3217,11 +3683,11 @@
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Shakespeare",
-      "description": "Shakespeare’s plays have never stood still.",
+      "description": "Thirty-seven plays, from the first histories and comedies to the late collaborations.",
       "href": "/shakespeare/",
       "image": "/Shakespeare.png",
       "imageAlt": "Shakespeare illustrated banner",
-      "search": "Shakespeare Shakespeare’s plays have never stood still. Read them through early print, the stories they borrowed and centuries of performance, from playhouse to screen."
+      "search": "Shakespeare Thirty-seven plays, from the first histories and comedies to the late collaborations. Each reading page keeps the words, the book and the stage in the same room."
     },
     {
       "type": "collection",

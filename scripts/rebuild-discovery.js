@@ -46,7 +46,15 @@ const studyBookLinks = {
   'https://mybook.to/x4F6rs': ['/books/coriolanus/'],
   'https://mybook.to/ySSywz': ['/books/cymbeline/'],
   'https://mybook.to/3xXPCSy': ['/books/henry-iv-parts-1-and-2/', '/books/henry-iv-part-1/', '/books/henry-iv-part-2/'],
-  'https://mybook.to/a6b3c': ['/books/henry-iv-part-2/']
+  'https://mybook.to/a6b3c': ['/books/henry-iv-part-2/'],
+  'https://mybook.to/HPiX': ['/books/henry-v/'],
+  'https://mybook.to/ENJxO': ['/books/loves-labours-lost/'],
+  'https://mybook.to/x8aiiFG': ['/books/measure-for-measure/'],
+  'https://mybook.to/2QzQqmh': ['/books/the-merchant-of-venice/'],
+  'https://mybook.to/o0Am2j': ['/books/richard-ii/'],
+  'https://mybook.to/SjnG': ['/books/taming-of-the-shrew/'],
+  'https://mybook.to/gf9uZE': ['/books/titus-andronicus/'],
+  'https://mybook.to/l4zC9': ['/books/twelfth-night/']
 };
 
 const resourceBookLinks = Object.fromEntries(resourceData.map(function (resource) {

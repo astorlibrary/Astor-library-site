@@ -3,6 +3,7 @@ const path = require('path');
 
 require('./rebuild-resources');
 require('./rebuild-study-additions');
+require('./rebuild-shakespeare-additions');
 
 const root = process.cwd();
 const collections = [

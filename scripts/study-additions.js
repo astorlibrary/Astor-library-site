@@ -46,5 +46,53 @@ module.exports = [
     image: 'Henry IV, Part 2 Study Cover.png',
     url: 'https://mybook.to/a6b3c',
     description: 'A failing king, a changing prince, Falstaff’s hopes, justice and succession.'
+  },
+  {
+    title: 'Henry V',
+    image: 'Henry V Study Cover.png',
+    url: 'https://mybook.to/HPiX',
+    description: 'Kingship, rhetoric, Agincourt, national identity, responsibility and the human cost of war.'
+  },
+  {
+    title: 'Love’s Labour’s Lost',
+    image: "Love's Labour's Lost Study Cover.png",
+    url: 'https://mybook.to/ENJxO',
+    description: 'Language, courtship, performance, masculine fellowship and a comedy that refuses an easy ending.'
+  },
+  {
+    title: 'Measure for Measure',
+    image: 'Measure for Measure Study Cover.png',
+    url: 'https://mybook.to/x8aiiFG',
+    description: 'Law, desire, consent, disguise, justice and the unanswered questions of the final scene.'
+  },
+  {
+    title: 'The Merchant of Venice',
+    image: 'Merchant of Venice Study Cover.png',
+    url: 'https://mybook.to/2QzQqmh',
+    description: 'Contracts, mercy, prejudice, money, performance and the divided worlds of Venice and Belmont.'
+  },
+  {
+    title: 'Richard II',
+    image: 'Richard II Study Cover.png',
+    url: 'https://mybook.to/o0Am2j',
+    description: 'Divine kingship, deposition, language, land, ceremony and Bolingbroke’s rise.'
+  },
+  {
+    title: 'The Taming of the Shrew',
+    image: 'The Taming of the Shrew Study Cover.png',
+    url: 'https://mybook.to/SjnG',
+    description: 'Courtship, household power, performance, coercion and the continuing argument over Katherina’s ending.'
+  },
+  {
+    title: 'Titus Andronicus',
+    image: 'Titus Andronicus Study Cover.png',
+    url: 'https://mybook.to/gf9uZE',
+    description: 'Revenge, Roman ceremony, grief, language, the body and violence staged as public spectacle.'
+  },
+  {
+    title: 'Twelfth Night',
+    image: 'Twelfth Night Study Cover.png',
+    url: 'https://mybook.to/l4zC9',
+    description: 'Disguise, desire, music, mistaken identity, social ambition and an ending with shadows at its edge.'
   }
 ];

@@ -61,7 +61,7 @@ module.exports = [
     title: 'Comedy and comic form',
     navTitle: 'Comedy',
     kicker: 'Mistakes, performances and the difficult work of ending well',
-    description: 'Read Shakespearean comedy through mistaken identity, disguise, courtship, performance and recognition, from The Comedy of Errors and A Midsummer Night’s Dream to As You Like It and The Tempest.',
+    description: 'Read Shakespearean comedy through mistaken identity, disguise, courtship, performance and difficult endings, from The Two Gentlemen of Verona and Love’s Labour’s Lost to Twelfth Night and The Winter’s Tale.',
     search: 'comedy comic form Shakespeare laughter farce festive comedy disguise mistaken identity recognition marriage courtship performance audience ending romance problem play',
     facts: [
       { value: '1590s', label: 'The Comedy of Errors, The Taming of the Shrew and A Midsummer Night’s Dream belong to Shakespeare’s early comic work' },
@@ -83,12 +83,20 @@ module.exports = [
     ],
     books: [
       { href: '/books/comedy-of-errors/', title: 'The Comedy of Errors', author: 'William Shakespeare', year: 'c.1590s', image: '/Comedy%20of%20Errors%20%28Main%20Page%29.png', copy: 'Separated twins, mistaken identity and a farce whose first scene begins under a sentence of death.' },
-      { href: '/books/taming-of-the-shrew/', title: 'The Taming of the Shrew', author: 'William Shakespeare', year: 'c.1590–94', image: '/Taming%20of%20the%20Shrew.png', copy: 'Courtship, household power and performed obedience in a comedy whose final speech remains contested.' },
+      { href: '/books/taming-of-the-shrew/', title: 'The Taming of the Shrew', author: 'William Shakespeare', year: 'c.1590–94', image: '/The%20Taming%20of%20the%20Shrew%20Main%20Cover.jpg', copy: 'Courtship, household power and performed obedience in a comedy whose final speech remains contested.' },
+      { href: '/books/the-two-gentlemen-of-verona/', title: 'The Two Gentlemen of Verona', author: 'William Shakespeare', year: 'c.1590–94', image: '/Two%20Gentleman%20of%20Verona%20Main%20Cover.png', copy: 'Friendship, betrayal and Julia’s disguise test what the word gentleman is worth.' },
       { href: '/books/a-midsummer-nights-dream/', title: 'A Midsummer Night’s Dream', author: 'William Shakespeare', year: 'c.1595–96', image: '/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png', copy: 'Athenian law, fairy interference and amateur theatre meet in a night of unstable desire.' },
+      { href: '/books/loves-labours-lost/', title: 'Love’s Labour’s Lost', author: 'William Shakespeare', year: 'c.1595–96', image: '/Love%27s%20Labour%27s%20Lost%20Main%20Cover.jpg', copy: 'An impossible academy collapses into courtship, verbal display and a year of waiting.' },
+      { href: '/books/the-merchant-of-venice/', title: 'The Merchant of Venice', author: 'William Shakespeare', year: 'c.1596–97', image: '/The%20Merchant%20of%20Venice%20Main%20Cover.jpg', copy: 'Contracts, prejudice and a trial complicate the movement towards marriage at Belmont.' },
       { href: '/books/much-ado-about-nothing/', title: 'Much Ado About Nothing', author: 'William Shakespeare', year: 'c.1598–99', image: '/Much%20Ado%20About%20Nothing.png', copy: 'Wit, surveillance and slander place two very different courtships under public pressure.' },
       { href: '/books/as-you-like-it/', title: 'As You Like It', author: 'William Shakespeare', year: 'c.1599', image: '/As%20you%20like%20it.png', copy: 'Exile and disguise let Rosalind test romantic language while Arden keeps labour and inequality in sight.' },
+      { href: '/books/twelfth-night/', title: 'Twelfth Night', author: 'William Shakespeare', year: 'c.1601', image: '/Twelfth%20Night%20Main%20Cover.jpg', copy: 'Viola’s borrowed identity redirects desire while festivity shades into punishment.' },
       { href: '/books/merry-wives-of-windsor/', title: 'The Merry Wives of Windsor', author: 'William Shakespeare', year: 'c.1597–1601', image: '/Merry%20Wives%20of%20Windsor.png', copy: 'Mistress Ford and Mistress Page turn Falstaff’s scheme into a sequence of traps and community theatre.' },
+      { href: '/books/measure-for-measure/', title: 'Measure for Measure', author: 'William Shakespeare', year: 'c.1603–04', image: '/Measure%20for%20Measure%20Main%20Cover.png', copy: 'Law, sexual coercion and disguised rule lead to an ending whose silences matter.' },
       { href: '/books/alls-well-that-ends-well/', title: 'All’s Well That Ends Well', author: 'William Shakespeare', year: 'c.1604–05', image: '/0001_1_use-the-macbeth-cover-as-the-layout-refe_oR8d6uK8WYeORWiSoFuzBw_7Bo8rZBYSiSmvEif8P1K7A_cover.png', copy: 'A brilliant healer pursues a resistant husband through a plot whose title invites argument about its settlement.' },
+      { href: '/books/pericles-prince-of-tyre/', title: 'Pericles, Prince of Tyre', author: 'William Shakespeare', year: 'c.1607–08', image: '/Pericles%2C%20Prince%20of%20Tyre%20Main%20COver.png', copy: 'Shipwreck, apparent death and recognition turn an old story towards family recovery.' },
+      { href: '/books/the-winters-tale/', title: 'The Winter’s Tale', author: 'William Shakespeare', year: 'c.1609–11', image: '/The%20Winter%27s%20Tale%20Main%20COver.png', copy: 'Jealous tyranny gives way to pastoral renewal and a reunion that cannot restore every loss.' },
+      { href: '/books/the-two-noble-kinsmen/', title: 'The Two Noble Kinsmen', author: 'William Shakespeare', year: 'c.1613–14', image: '/The%20Two%20Noble%20Kinsmen%20Main%20Cover.jpg', copy: 'Friendship, rivalry and fate meet in a tragicomedy written with John Fletcher.' },
       { href: '/books/the-tempest/', title: 'The Tempest', author: 'William Shakespeare', year: 'c.1610–11', image: '/The%20Tempest.png', copy: 'A staged shipwreck gives Prospero the power to punish, educate, forgive and finally release his audience.' }
     ],
     reading: {
@@ -121,7 +129,7 @@ module.exports = [
     title: 'Tragedy',
     navTitle: 'Tragedy',
     kicker: 'Choice, consequence and the watching audience',
-    description: 'Explore tragedy through Shakespeare’s Hamlet, Macbeth, Othello, King Lear, Romeo and Juliet, Antony and Cleopatra, Coriolanus and Titus Andronicus.',
+    description: 'Explore Shakespearean tragedy from Titus Andronicus and Romeo and Juliet through Hamlet, Othello, Timon of Athens, Antony and Cleopatra and Coriolanus.',
     search: 'tragedy Shakespeare tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family',
     facts: [
       { value: 'c.335 BCE', label: 'Aristotle’s Poetics gives an influential early account of tragic action' },
@@ -144,8 +152,10 @@ module.exports = [
     books: [
       { href: '/books/romeo-and-juliet/', title: 'Romeo and Juliet', author: 'William Shakespeare', year: 'c.1595', image: '/Romeo%20and%20Juliet.png', copy: 'Love, family violence, public time and the fatal speed of interpretation.' },
       { href: '/books/hamlet/', title: 'Hamlet', author: 'William Shakespeare', year: 'c.1600–01', image: '/Hamlet.png', copy: 'Revenge, performance and the difficulty of turning uncertain knowledge into action.' },
+      { href: '/books/troilus-and-cressida/', title: 'Troilus and Cressida', author: 'William Shakespeare', year: 'c.1601–02', image: '/Troilus%20and%20Cressida%20Main.png', copy: 'Love and heroic reputation are tested inside a war that has forgotten how to end.' },
       { href: '/books/othello/', title: 'Othello', author: 'William Shakespeare', year: 'c.1603–04', image: '/Othello.png', copy: 'A marriage destroyed by insinuation, manufactured proof and the demand for certainty.' },
       { href: '/books/king-lear/', title: 'King Lear', author: 'William Shakespeare', year: 'c.1605–06', image: '/King%20Lear.png', copy: 'A divided kingdom, failed recognition and the stripping away of political protection.' },
+      { href: '/books/timon-of-athens/', title: 'Timon of Athens', author: 'William Shakespeare', year: 'c.1604–06', image: '/Timon%20of%20Athens%20Main.png', copy: 'A patron’s limitless giving reverses into misanthropy when praise proves to have a price.' },
       { href: '/books/macbeth/', title: 'Macbeth', author: 'William Shakespeare', year: 'c.1606', image: '/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png', copy: 'Ambition, prophecy and the attempt to secure power through further violence.' },
       { href: '/books/antony-and-cleopatra/', title: 'Antony and Cleopatra', author: 'William Shakespeare', year: 'c.1606–07', image: '/Antony%20and%20Cleopatra.png', copy: 'Love, empire and the struggle to control how political defeat will be remembered.' },
       { href: '/books/coriolanus/', title: 'Coriolanus', author: 'William Shakespeare', year: 'c.1608', image: '/Coriolanus.png', copy: 'Military honour, class conflict and a public role one soldier cannot perform.' },
@@ -312,7 +322,7 @@ module.exports = [
     books: [
       { href: '/books/the-prince/', title: 'The Prince', author: 'Niccolò Machiavelli', year: 'written 1513', image: '/The%20Prince.png', copy: 'A political treatise that studies how rulers gain, secure and lose power under unstable conditions.' },
       { href: '/books/utopia/', title: 'Utopia', author: 'Thomas More', year: '1516', image: '/Utopia.png', copy: 'Dialogue, traveller’s report and imagined society held together without a final instruction about what to believe.' },
-      { href: '/books/gullivers-travels/', title: 'Gulliver’s Travels', author: 'Jonathan Swift', year: '1726', image: '/Gulliver%27s%20Travels.png', copy: 'Four voyages that keep changing the scale from which politics, knowledge and human pride are judged.' },
+      { href: '/books/gullivers-travels/', title: 'Gulliver’s Travels', author: 'Jonathan Swift', year: '1726', image: '/Gulliver%27s%20Travels%20Replacement.jpg', copy: 'Four voyages that keep changing the scale from which politics, knowledge and human pride are judged.' },
       { href: '/books/the-man-who-was-thursday/', title: 'The Man Who Was Thursday', author: 'G. K. Chesterton', year: '1908', image: '/The%20Man%20Who%20Was%20Thursday.png', copy: 'Anarchists, policemen and disguises turn political certainty into a comic and metaphysical nightmare.' },
       { href: '/books/animal-farm/', title: 'Animal Farm', author: 'George Orwell', year: '1945', image: '/Animal%20Farm.png', copy: 'A revolution becomes a regime through memory, force and the repeated alteration of public language.' }
     ],

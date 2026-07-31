@@ -377,6 +377,7 @@ function addGlobalMetadata(html, source) {
   if (!/name="twitter:image"/i.test(html)) metadata += '<meta name="twitter:image" content="' + escapeHtml(absoluteImage) + '">';
   if (!/name="author"/i.test(html)) metadata += '<meta name="author" content="Astor Library">';
   if (!/rel="icon"/i.test(html)) {
+    metadata += '<link rel="icon" href="/icon-512.png" type="image/png" sizes="512x512">';
     metadata += '<link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48">';
     metadata += '<link rel="icon" href="/favicon.ico" sizes="any">';
     metadata += '<link rel="icon" href="/favicon.svg" type="image/svg+xml">';

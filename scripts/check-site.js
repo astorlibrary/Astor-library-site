@@ -354,6 +354,65 @@ const bookFiles = htmlFiles.filter(file => {
   return parts.length === 3 && parts[0] === 'books' && parts[2] === 'index.html';
 });
 
+const newShakespeareSlugs = [
+  'henry-v',
+  'henry-vi-parts-1-2-and-3',
+  'henry-viii',
+  'king-john',
+  'loves-labours-lost',
+  'measure-for-measure',
+  'the-merchant-of-venice',
+  'pericles-prince-of-tyre',
+  'the-two-noble-kinsmen',
+  'the-winters-tale',
+  'timon-of-athens',
+  'troilus-and-cressida',
+  'twelfth-night',
+  'the-two-gentlemen-of-verona'
+];
+
+for (const slug of newShakespeareSlugs) {
+  const file = path.join(root, 'books', slug, 'index.html');
+  if (!fs.existsSync(file)) {
+    failures.push('The new Shakespeare reading page is missing: ' + slug);
+    continue;
+  }
+  const html = fs.readFileSync(file, 'utf8');
+  for (const className of ['page-contents', 'quick-facts', 'astor-movement-grid', 'astor-reading-grid', 'astor-context-grid', 'astor-character-grid', 'astor-question-grid', 'source-list']) {
+    if (!html.includes('class="' + className)) failures.push(slug + ' is missing ' + className);
+  }
+  if (countMatches(html, /class="fact"/g) !== 4) failures.push(slug + ' must contain four checked facts');
+  if (countMatches(html, /class="prod-card prose-card"/g) !== 3) failures.push(slug + ' must contain three close readings');
+  if (countMatches(html, /<section class="astor-movement-grid">[\s\S]*?<article>/g) !== 1 || countMatches(html.match(/<section class="astor-movement-grid">[\s\S]*?<\/section>/)?.[0] || '', /<article>/g) !== 5) failures.push(slug + ' must map five movements');
+  const sources = html.match(/<nav class="source-list"[\s\S]*?<\/nav>/)?.[0] || '';
+  if (countMatches(sources, /href="https?:\/\//g) < 4) failures.push(slug + ' needs four authoritative further-reading links');
+  const wordCount = visibleText(html).split(/\s+/).filter(Boolean).length;
+  if (wordCount < 1200) failures.push(slug + ' is too thin at ' + wordCount + ' visible words');
+}
+
+const shakespeareHub = fs.readFileSync(path.join(root, 'shakespeare', 'index.html'), 'utf8');
+if (!shakespeareHub.includes('class="shakespeare-reading-room"')) failures.push('The Shakespeare collection is missing its reading room');
+if (countMatches(shakespeareHub, /<article class="edition-card">/g) !== 39) failures.push('The Shakespeare collection must contain 39 Astor edition records');
+
+const studyHub = fs.readFileSync(path.join(root, 'study', 'index.html'), 'utf8');
+if (countMatches(studyHub, /class="study-card(?: dual)?"/g) !== 39) failures.push('The study collection must contain 39 editions');
+for (const studyUrl of ['https://mybook.to/HPiX', 'https://mybook.to/ENJxO', 'https://mybook.to/x8aiiFG', 'https://mybook.to/2QzQqmh', 'https://mybook.to/o0Am2j', 'https://mybook.to/SjnG', 'https://mybook.to/gf9uZE', 'https://mybook.to/l4zC9']) {
+  if (!studyHub.includes('href="' + studyUrl + '"')) failures.push('The study collection is missing ' + studyUrl);
+}
+
+const redirectFile = path.join(root, '_redirects');
+if (!fs.existsSync(redirectFile)) {
+  failures.push('The site is missing its permanent redirect rules');
+} else {
+  const redirects = fs.readFileSync(redirectFile, 'utf8');
+  for (const rule of ['/jekyll-and-hyde.html /books/jekyll-and-hyde/ 301', '/jekyll-and-hyde /books/jekyll-and-hyde/ 301']) {
+    if (!redirects.includes(rule)) failures.push('The permanent redirects are missing: ' + rule);
+  }
+}
+for (const file of htmlFiles) {
+  if (/http-equiv="refresh"/i.test(fs.readFileSync(file, 'utf8'))) failures.push(relative(file) + ' still uses a browser redirect instead of a permanent server redirect');
+}
+
 for (const file of bookFiles) {
   const href = '/' + path.relative(root, path.dirname(file)).split(path.sep).join('/') + '/';
   if (!memberships.has(href)) failures.push(href + ' is not listed in a collection');
@@ -552,6 +611,9 @@ if (fs.existsSync(distDir)) {
   }
   if (!fs.existsSync(path.join(distDir, 'site-index', 'index.html'))) {
     failures.push('dist is missing the crawlable site index');
+  }
+  if (!fs.existsSync(path.join(distDir, '_redirects'))) {
+    failures.push('dist is missing its permanent redirect rules');
   }
   if (!fs.existsSync(path.join(distDir, 'robots.txt'))) {
     failures.push('dist is missing its crawler instructions');
