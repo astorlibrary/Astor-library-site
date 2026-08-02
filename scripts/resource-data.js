@@ -13,6 +13,7 @@ const resources = [
   {
     category: 'shakespeare',
     title: 'Gender, Power & Shakespeare: A Guide to Bhardwaj’s Omkara and Maqbool',
+    seoTitle: 'Gender and Power in Omkara and Maqbool',
     titleHtml: 'Gender, Power &amp; Shakespeare',
     description: 'Compare Bhardwaj’s film adaptations with Othello and Macbeth through gender, objects, bodies and power.',
     image: '04_gender_power_shakespeare.png',
@@ -111,6 +112,7 @@ const resources = [
   {
     category: 'poetry',
     title: 'Policing and Community in Linton Kwesi Johnson’s Poetry',
+    seoTitle: 'Linton Kwesi Johnson: Policing and Community',
     titleHtml: 'Policing and Community in Linton Kwesi Johnson’s Poetry',
     description: 'Read Jamaican Creole, rhythm and performance beside accounts of policing, resistance and Black British community.',
     image: '08_policing_and_community.png',
@@ -245,6 +247,7 @@ const resources = [
   {
     category: 'modern',
     title: 'Wide Sargasso Sea — Part 2: Rochester, Antoinette, and the Unravelling of a Marriage',
+    seoTitle: 'Wide Sargasso Sea Part Two: Marriage and Control',
     titleHtml: '<em>Wide Sargasso Sea</em> — Part 2',
     description: 'Follow Rochester and Antoinette through the shifting narration, mistrust and power that unravel their marriage.',
     image: 'Wide-Sargasso-Sea-Part-2-Rochester-Antoinette-and-the-Unraveling-of-a-Marriage.png',
@@ -263,6 +266,7 @@ const resources = [
   {
     category: 'american',
     title: 'A Lost Voice Recovered: Langston Hughes and the Chain Gang',
+    seoTitle: 'Langston Hughes and the Lost Chain Gang Essay',
     titleHtml: 'A Lost Voice Recovered',
     description: 'Follow a forgotten Hughes essay from a 1927 encounter with an escaped prisoner to its recovery from the archive.',
     image: '01_a_lost_voice_recovered.png',
@@ -273,6 +277,7 @@ const resources = [
   {
     category: 'american',
     title: '“Don’t Turn Back”: Langston Hughes, MLK, and Barack Obama',
+    seoTitle: 'Langston Hughes: “Don’t Turn Back”',
     titleHtml: '“Don’t Turn Back”',
     description: 'Trace “Mother to Son” through the speeches of Martin Luther King Jr and Barack Obama.',
     image: '03_dont_turn_back.png',
@@ -303,6 +308,7 @@ const resources = [
   {
     category: 'american',
     title: 'To Kill a Mockingbird: Character List & Major Themes',
+    seoTitle: 'To Kill a Mockingbird: Characters and Themes',
     titleHtml: '<em>To Kill a Mockingbird</em>: Character List &amp; Major Themes',
     description: 'Keep the novel’s principal characters clear and connect them to justice, prejudice, childhood and moral courage.',
     image: 'To Kill a Mockingbird Character List & Major Themes.png',
@@ -330,6 +336,7 @@ const resources = [
   {
     category: 'american',
     title: 'Corruption, the American Dream, Symbolism, and Illusion in The Great Gatsby',
+    seoTitle: 'The Great Gatsby: Corruption, Symbols and Illusion',
     titleHtml: 'Corruption, the American Dream, Symbolism, and Illusion in <em>The Great Gatsby</em>',
     description: 'Connect the novel’s social corruption and illusions to its recurring symbols and broken versions of success.',
     image: 'Corruption-the-American-Dream-Symbolism-and-Illusion-in-The-Great-Gatsby.png',
@@ -339,6 +346,7 @@ const resources = [
   {
     category: 'american',
     title: 'Death of a Character & Important Relationships in The Great Gatsby',
+    seoTitle: 'Death and Relationships in The Great Gatsby',
     titleHtml: 'Death of a Character &amp; Important Relationships in <em>The Great Gatsby</em>',
     description: 'Study a crucial death through the relationships, loyalties and failures that prepare for it.',
     image: 'Death-of-a-Character-and-Important-Relationships-in-The-Great-Gatsby.png',
@@ -348,6 +356,7 @@ const resources = [
   {
     category: 'american',
     title: 'Great Gatsby Essay Plan: Setting, Symbolism & the American Dream',
+    seoTitle: 'The Great Gatsby Essay Plan: Setting and Symbolism',
     titleHtml: '<em>The Great Gatsby</em> Essay Plan',
     description: 'Build an essay that connects setting and symbolism to Fitzgerald’s treatment of the American Dream.',
     image: 'Great-Gatsby-Essay-Plan-Setting-Symbolism-and-the-American-Dream.png',

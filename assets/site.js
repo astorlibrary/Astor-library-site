@@ -77,6 +77,24 @@
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape' && siteHeader.classList.contains('is-site-menu-open')) {
         closeSiteMenu(true);
+        return;
+      }
+      if (event.key === 'Tab' && siteHeader.classList.contains('is-site-menu-open')) {
+        const focusable = [
+          siteHeader.querySelector('.astor-header-search'),
+          toggle,
+          ...siteNavigation.querySelectorAll('a')
+        ].filter(element => element && element.offsetParent !== null);
+        if (!focusable.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
       }
     });
 
@@ -84,10 +102,41 @@
       link.addEventListener('click', () => closeSiteMenu(false));
     }
 
-    const desktopNavigation = window.matchMedia?.('(min-width: 981px)');
+    const desktopNavigation = window.matchMedia?.('(min-width: 1041px)');
     desktopNavigation?.addEventListener('change', event => {
       if (event.matches) closeSiteMenu(false);
     });
+  }
+
+  const editionNotes = document.querySelector('[data-edition-notes]');
+
+  if (editionNotes) {
+    const noteButtons = [...editionNotes.querySelectorAll('[data-edition-note]')];
+    const notePanels = [...editionNotes.querySelectorAll('[data-edition-panel]')];
+
+    const showEditionNote = key => {
+      noteButtons.forEach(button => {
+        const active = button.dataset.editionNote === key;
+        button.setAttribute('aria-selected', String(active));
+        button.tabIndex = active ? 0 : -1;
+      });
+      notePanels.forEach(panel => {
+        panel.hidden = panel.dataset.editionPanel !== key;
+      });
+    };
+
+    noteButtons.forEach((button, index) => {
+      button.addEventListener('click', () => showEditionNote(button.dataset.editionNote));
+      button.addEventListener('keydown', event => {
+        if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+        event.preventDefault();
+        const change = event.key === 'ArrowRight' ? 1 : -1;
+        const next = noteButtons[(index + change + noteButtons.length) % noteButtons.length];
+        showEditionNote(next.dataset.editionNote);
+        next.focus();
+      });
+    });
+    if (noteButtons[0]) showEditionNote(noteButtons[0].dataset.editionNote);
   }
 
   const homeMobileMenu = document.querySelector('.home-mobile-nav');

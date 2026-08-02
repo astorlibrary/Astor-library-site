@@ -129,19 +129,19 @@ module.exports = [
     title: 'Tragedy',
     navTitle: 'Tragedy',
     kicker: 'Choice, consequence and the watching audience',
-    description: 'Explore Shakespearean tragedy from Titus Andronicus and Romeo and Juliet through Hamlet, Othello, Timon of Athens, Antony and Cleopatra and Coriolanus.',
-    search: 'tragedy Shakespeare tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family',
+    description: 'Explore early modern tragedy from Marlowe and Webster alongside Shakespeare, following the form from Doctor Faustus and Titus Andronicus to Hamlet, Othello, King Lear and The Duchess of Malfi.',
+    search: 'tragedy Shakespeare Marlowe Webster Doctor Faustus Duchess of Malfi tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family',
     facts: [
       { value: 'c.335 BCE', label: 'Aristotle’s Poetics gives an influential early account of tragic action' },
-      { value: '1590s', label: 'Titus Andronicus and Romeo and Juliet belong to Shakespeare’s early tragedies' },
+      { value: '1590s', label: 'Doctor Faustus, Titus Andronicus and Romeo and Juliet test different early tragic forms' },
       { value: '1600–06', label: 'Hamlet, Othello, King Lear and Macbeth transform the mature form' },
-      { value: '1623', label: 'The First Folio groups Shakespeare’s plays as comedies, histories and tragedies' }
+      { value: 'c.1612–14', label: 'The Duchess of Malfi turns a woman’s private choice into a tragedy of court power' }
     ],
     introduction: {
       heading: 'A tragic ending is known. Its meaning is not.',
       paragraphs: [
         'Tragedy does not depend on surprise about whether suffering will come. Titles such as The Tragedy of Hamlet or King Lear tell an audience what sort of ending to expect. The dramatic pressure comes from watching choices narrow, warnings go unheard, language fail and possible futures disappear one by one.',
-        'Shakespeare did not use a single tragic machine. Hamlet delays inside a revenge plot; Othello makes trust vulnerable to staged evidence; Lear divides a kingdom and discovers the human cost of authority; Macbeth moves with dreadful speed; Antony and Cleopatra turns defeat into rival forms of theatre. The plays belong together without becoming versions of the same fall.'
+        'The early modern stage did not use a single tragic machine. Marlowe makes Faustus bargain with knowledge, time and despair; Hamlet delays inside a revenge plot; Othello makes trust vulnerable to staged evidence; Lear divides a kingdom; Macbeth moves with dreadful speed; and Webster makes the Duchess’s chosen marriage answer to dynastic control. The plays belong together without becoming versions of the same fall.'
       ]
     },
     methods: [
@@ -150,6 +150,7 @@ module.exports = [
       { label: 'Language', title: 'Speech can reveal and conceal at once', copy: 'Soliloquies do not provide a simple key to a stable inner self. A speaker may persuade, evade, rehearse or discover a thought while speaking it. The language is an event, not a label placed over the action.' }
     ],
     books: [
+      { href: '/books/doctor-faustus/', title: 'Doctor Faustus', author: 'Christopher Marlowe', year: 'c.1592–93', image: '/Doctor%20Faustus%20Cover.png', copy: 'A scholar trades his soul for twenty-four years of service, then discovers how quickly boundless ambition can narrow into delay and fear.' },
       { href: '/books/romeo-and-juliet/', title: 'Romeo and Juliet', author: 'William Shakespeare', year: 'c.1595', image: '/Romeo%20and%20Juliet.png', copy: 'Love, family violence, public time and the fatal speed of interpretation.' },
       { href: '/books/hamlet/', title: 'Hamlet', author: 'William Shakespeare', year: 'c.1600–01', image: '/Hamlet.png', copy: 'Revenge, performance and the difficulty of turning uncertain knowledge into action.' },
       { href: '/books/troilus-and-cressida/', title: 'Troilus and Cressida', author: 'William Shakespeare', year: 'c.1601–02', image: '/Troilus%20and%20Cressida%20Main.png', copy: 'Love and heroic reputation are tested inside a war that has forgotten how to end.' },
@@ -159,6 +160,7 @@ module.exports = [
       { href: '/books/macbeth/', title: 'Macbeth', author: 'William Shakespeare', year: 'c.1606', image: '/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png', copy: 'Ambition, prophecy and the attempt to secure power through further violence.' },
       { href: '/books/antony-and-cleopatra/', title: 'Antony and Cleopatra', author: 'William Shakespeare', year: 'c.1606–07', image: '/Antony%20and%20Cleopatra.png', copy: 'Love, empire and the struggle to control how political defeat will be remembered.' },
       { href: '/books/coriolanus/', title: 'Coriolanus', author: 'William Shakespeare', year: 'c.1608', image: '/Coriolanus.png', copy: 'Military honour, class conflict and a public role one soldier cannot perform.' },
+      { href: '/books/the-duchess-of-malfi/', title: 'The Duchess of Malfi', author: 'John Webster', year: 'c.1612–14', image: '/Duchess%20of%20Malfi%20Cover.png', copy: 'A widow’s secret marriage meets surveillance, imprisonment and murder in a court that treats her freedom as disobedience.' },
       { href: '/books/titus-andronicus/', title: 'Titus Andronicus', author: 'William Shakespeare', year: 'c.1590s', image: '/Titus%20Andronicus.png', copy: 'Revenge multiplies injury until ritual, family and political order become indistinguishable from violence.' }
     ],
     reading: {
@@ -183,6 +185,8 @@ module.exports = [
       { href: '/resources/king-lear/summary-guide/', label: 'King Lear summary guide', copy: 'A route through the divided kingdom.' }
     ],
     sources: [
+      { href: 'https://www.earlymodernenglishdrama.folger.edu/drfaust', label: 'Folger: Doctor Faustus in early print and performance' },
+      { href: 'https://www.earlymodernenglishdrama.folger.edu/malfi', label: 'Folger: The Duchess of Malfi in early print and performance' },
       { href: 'https://www.folger.edu/explore/shakespeares-works/', label: 'Folger Shakespeare Library: Shakespeare’s works' },
       { href: 'https://www.folger.edu/explore/shakespeare-in-print/first-folio/', label: 'Folger Shakespeare Library: the First Folio' },
       { href: 'https://www.folger.edu/podcasts/shakespeare-unlimited/how-shakespeare-revolutionized-tragedy-with-rhodri-lewis/', label: 'Folger: how Shakespeare changed tragedy' }
@@ -246,19 +250,19 @@ module.exports = [
     title: 'Epic poetry',
     navTitle: 'Epic',
     kicker: 'Journeys, foundations and inherited song',
-    description: 'Read epic through Homer’s Odyssey and Virgil’s Aeneid, then follow epic scale and allusion into Moby-Dick, with attention to oral form, translation, homecoming and empire.',
-    search: 'epic poetry Homer Odyssey Virgil Aeneid oral tradition hero invocation muse in medias res simile homecoming nostos empire translation journey',
+    description: 'Read epic through Homer’s Odyssey, Virgil’s Aeneid and Milton’s Paradise Lost, then follow epic scale and allusion into Moby-Dick, with attention to oral form, translation, homecoming, rebellion and empire.',
+    search: 'epic poetry Homer Odyssey Virgil Aeneid Milton Paradise Lost oral tradition hero invocation muse in medias res simile blank verse fall rebellion homecoming nostos empire translation journey',
     facts: [
       { value: '24 books', label: 'The Odyssey is conventionally divided into twenty-four books' },
       { value: '12 books', label: 'The Aeneid reshapes Homeric journeys and war across twelve books' },
       { value: 'Oral form', label: 'Repeated phrases and scenes carry the memory of performance traditions' },
-      { value: 'Translation', label: 'Every English epic on this shelf is also a history of choices between languages' }
+      { value: '1667 / 1674', label: 'Paradise Lost moves from ten books in its first edition to twelve in its revised form' }
     ],
     introduction: {
       heading: 'Epic makes one life answer to a much larger history.',
       paragraphs: [
         'Epic scale does not come only from length, gods or battles. An epic joins an individual action to the fate of a household, people or future state. Odysseus’s return tests whether Ithaca can become a home again. Aeneas’s journey is burdened by a city and empire that do not yet exist.',
-        'These poems also remember other tellings. Repeated descriptions, recognisable scenes and stories told inside the main story give epic a layered past. Virgil writes with Homer in view; later writers inherit both. Moby-Dick is a novel, not an ancient epic, but its invocations, catalogues, voyage and immense adversary deliberately reach towards epic ways of making scale.'
+        'These poems also remember other tellings. Virgil writes with Homer in view; Milton invokes both classical epic and the book of Genesis while making the Fall unfold in English blank verse. Moby-Dick is a novel, not an ancient epic, but its invocations, catalogues, voyage and immense adversary deliberately reach towards epic ways of making scale.'
       ]
     },
     methods: [
@@ -269,13 +273,14 @@ module.exports = [
     books: [
       { href: '/books/the-odyssey/', title: 'The Odyssey', author: 'Homer, translated by Samuel Butler', year: 'Ancient Greek epic', image: '/The%20Odyssey.png', copy: 'Homecoming, storytelling, disguise and the difficult restoration of a household.' },
       { href: '/books/the-aeneid/', title: 'The Aeneid', author: 'Virgil, translated by John Dryden', year: 'Roman epic', image: '/The%20Aeneid.png', copy: 'Refugee memory, duty, violence and the imagined foundations of Rome.' },
+      { href: '/books/paradise-lost/', title: 'Paradise Lost', author: 'John Milton', year: '1667 / 1674 · English epic', image: '/Paradise%20Lost%20Main%20Cover.png', copy: 'Rebellion, temptation and the loss of Eden are carried through twelve books of unrhymed heroic verse.' },
       { href: '/books/moby-dick/', title: 'Moby-Dick', author: 'Herman Melville', year: '1851 · epic inheritance', image: '/Moby%20Dick.png', copy: 'A modern novel that borrows epic scale, catalogue and allusion for a voyage that resists mastery.' }
     ],
     reading: {
       heading: 'Read repetitions as a system of comparison.',
       paragraphs: [
         'When a feast, arrival or act of storytelling recurs, place it beside the earlier version. Who welcomes the stranger? Who asks for a name too soon? What is offered, withheld or violated? Epic builds moral and political distinctions through scenes that appear structurally familiar.',
-        'In translation, listen for register as well as plot. Is the language ceremonial, conversational, archaic or plain? No English version can be the neutral poem without mediation. A translation makes an argument about pace, dignity, names and the kind of distance a modern reader should feel.'
+        'In translation, listen for register as well as plot. No English version of Homer or Virgil is neutral: each makes choices about pace, dignity and names. With Milton, listen instead for the long pressure of unrhymed sentences across line endings. In every case, epic scale is made in syntax and sound as well as story.'
       ]
     },
     terms: [
@@ -291,6 +296,7 @@ module.exports = [
     sources: [
       { href: 'https://scaife.perseus.org/library/urn:cts:greekLit:tlg0012.tlg002/', label: 'Perseus: editions and translations of the Odyssey' },
       { href: 'https://scaife.perseus.org/library/urn:cts:latinLit:phi0690.phi003/', label: 'Perseus: editions and translations of the Aeneid' },
+      { href: 'https://milton.host.dartmouth.edu/reading_room/pl/book_1/text.shtml', label: 'Dartmouth: complete annotated Paradise Lost' },
       { href: 'https://www.gutenberg.org/ebooks/1727', label: 'Project Gutenberg: Butler’s Odyssey' }
     ]
   },
@@ -354,8 +360,8 @@ module.exports = [
     title: 'Narration and testimony',
     navTitle: 'Narration',
     kicker: 'Who speaks, who listens and what a record can prove',
-    description: 'Explore first-person narration, letters, framed testimony and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, Great Expectations, Huckleberry Finn and Dracula.',
-    search: 'narration narrator testimony witness first person autobiography memoir frame narrative epistolary letters diary documents retrospective voice reliability evidence perspective archive',
+    description: 'Explore letters, autobiography, framed manuscripts, retrospective voices and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, The Scarlet Letter, Great Expectations, Huckleberry Finn and Dracula.',
+    search: 'narration narrator testimony witness first person autobiography memoir frame narrative framed manuscript Custom House Scarlet Letter Hawthorne epistolary letters diary documents retrospective voice reliability evidence perspective archive',
     facts: [
       { value: '1740', label: 'Pamela turns private letters into the immediate action of a novel' },
       { value: '1845', label: 'Frederick Douglass publishes an autobiography written under the danger of recapture' },
@@ -366,7 +372,7 @@ module.exports = [
       heading: 'A narrator is not a clear window between the reader and the world.',
       paragraphs: [
         'Every account begins from a position. A speaker knows some events directly, learns others by report and understands the past through present needs. The useful question is rarely whether a narrator is simply reliable or unreliable. It is what this person can know, what they cannot see and what the act of telling now allows them to do.',
-        'The difference is especially important when testimony carries real historical risk. Pamela writes while resisting the power of an employer who can intercept her words. Douglass writes to expose slavery while the details of his life may identify people and places. Pip looks back with knowledge his younger self did not possess. Nelly, Lockwood, Huck and Dracula’s document-makers each produce a different relation between experience, evidence and judgement.'
+        'The difference is especially important when testimony carries real historical risk. Pamela writes while resisting an employer who can intercept her words, and Douglass writes to expose slavery while details may identify people and places. Hawthorne’s Custom-House narrator claims to edit a recovered manuscript before The Scarlet Letter moves into romance. Pip, Nelly, Lockwood, Huck and Dracula’s document-makers each produce a different relation between experience, evidence and judgement.'
       ]
     },
     methods: [
@@ -378,6 +384,7 @@ module.exports = [
       { href: '/books/pamela/', title: 'Pamela; or, Virtue Rewarded', author: 'Samuel Richardson', year: '1740', image: '/Pamela.png', copy: 'Letters written under pressure make narration part of Pamela’s struggle for privacy, safety and the right to define her own conduct.' },
       { href: '/books/narrative-of-the-life-of-frederick-douglass/', title: 'Narrative of the Life of Frederick Douglass', author: 'Frederick Douglass', year: '1845', image: '/Frederick%20Douglass.png', copy: 'Autobiography becomes witness, abolitionist argument and a record of literacy used against the system that tried to forbid it.' },
       { href: '/books/wuthering-heights/', title: 'Wuthering Heights', author: 'Emily Brontë', year: '1847', image: '/Wuthering%20Heights.png', copy: 'Lockwood records Nelly Dean’s long recollection, with letters, inscriptions and reported speech nested inside their accounts.' },
+      { href: '/books/the-scarlet-letter/', title: 'The Scarlet Letter', author: 'Nathaniel Hawthorne', year: '1850', image: '/The%20Scarlet%20Letter%20%28Main%20Cover%29%20.png', copy: 'A fictional editor claims to recover Hester Prynne’s history from papers and an embroidered letter, making the authority of the record part of the romance.' },
       { href: '/books/great-expectations/', title: 'Great Expectations', author: 'Charles Dickens', year: '1860–61', image: '/Great%20Expectations.png', copy: 'The older Pip revisits the desires and misreadings of his younger self without becoming a neutral judge of them.' },
       { href: '/books/adventures-of-huckleberry-finn/', title: 'Adventures of Huckleberry Finn', author: 'Mark Twain', year: '1884–85', image: '/Huckleberry%20Finn.png', copy: 'Huck’s vernacular first-person voice reveals the assumptions of his world even when his moral language cannot yet escape them.' },
       { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'A group types, copies and orders its documents in the hope that a collective archive can make an impossible enemy credible.' }
@@ -404,6 +411,7 @@ module.exports = [
     ],
     sources: [
       { href: 'https://www.loc.gov/item/14003386/', label: 'Library of Congress: 1845 Narrative of the Life of Frederick Douglass' },
+      { href: 'https://www.gutenberg.org/ebooks/25344', label: 'Project Gutenberg: The Scarlet Letter' },
       { href: 'https://www.gutenberg.org/ebooks/6124', label: 'Project Gutenberg: Pamela' },
       { href: 'https://www.gutenberg.org/ebooks/768', label: 'Project Gutenberg: Wuthering Heights' },
       { href: 'https://www.gutenberg.org/ebooks/345', label: 'Project Gutenberg: Dracula' }

@@ -1,13 +1,13 @@
 {
   "counts": {
-    "books": 67,
-    "authors": 26,
+    "books": 73,
+    "authors": 30,
     "subjects": 8,
     "resources": 40,
-    "studyEditions": 39,
+    "studyEditions": 40,
     "collections": 8,
     "passages": 12,
-    "entries": 200
+    "entries": 211
   },
   "books": [
     {
@@ -178,6 +178,25 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Doctor Faustus",
+      "author": "Christopher Marlowe",
+      "collection": "Renaissance & Early Modern",
+      "description": "Faustus has mastered the recognised branches of university learning, but mastery has not satisfied him.",
+      "href": "/books/doctor-faustus/",
+      "image": "/Doctor%20Faustus%20Cover.png",
+      "imageAlt": "Astor Library Doctor Faustus cover",
+      "search": "Doctor Faustus Christopher Marlowe Renaissance & Early Modern Faustus has mastered the recognised branches of university learning, but mastery has not satisfied him. The play remains at the centre. Doctor Faustus, Christopher Marlowe Twenty-four years narrowing towards one hour. Learning is declared too small A warning becomes a contract Questions become spectacles Empire becomes entertainment Time becomes the antagonist Read the warning inside the wish. Faustus begins by misreading Mephistopheles knows more The final hour changes time Text, theology and theatre. Grace and despair Two early versions Morality meets tragedy Voices around Faustus. Doctor Faustus Mephistopheles Lucifer The Good Angel The Evil Angel The Old Man Questions that stay open. Can he still repent? Who controls whom? Why does ambition shrink? Which play do we see? Texts and collections.",
+      "authorHref": "/authors/#christopher-marlowe",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Dracula",
       "author": "Bram Stoker",
       "collection": "Victorian",
@@ -210,8 +229,8 @@
       "collection": "Romantic & Regency",
       "description": "Victor Frankenstein gives life to a being he immediately abandons, setting creator and creation on a path of loneliness, violence and revenge.",
       "href": "/books/frankenstein/",
-      "image": "/IMG_5297.png",
-      "imageAlt": "Astor Library Frankenstein commentary edition cover",
+      "image": "/Frankenstein%201831%20replacement%20cover.jpg",
+      "imageAlt": "Astor Library Frankenstein 1831 introduced edition cover",
       "search": "Frankenstein; or, The Modern Prometheus Mary Shelley Romantic & Regency Victor Frankenstein gives life to a being he immediately abandons, setting creator and creation on a path of loneliness, violence and revenge. Choose your edition Frankenstein, Mary Shelley Frankenstein, introduced Astor Library edition At a glance Text and publication First edition: anonymous, three volumes Composition and revision Bentley edition and new introduction Mary Shelley and 1816 Mary Wollstonecraft Shelley The ghost-story challenge Galvanism, anatomy and life Structure and narrative method Arctic frame Confession and self-defence Education and claim-making 1818 and 1831 Younger, sharper, less providential Revised, framed and morally darkened Which Frankenstein? Stage and screen adaptations Presumption; or, the Fate of Frankenstein Edison Studios: first screen adaptation Before Karloff James Whale and Universal Key dates Mary Wollstonecraft Godwin born Geneva and the ghost-story challenge Anonymous first edition Second edition and stage success Revised edition Mary Shelley dies Sources and further reading Three passages worth slowing down for The creation scene Learning beside the De Laceys The last account",
       "authorHref": "/authors/mary-shelley/",
       "subjects": [
@@ -596,6 +615,25 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Paradise Lost",
+      "author": "John Milton",
+      "collection": "Restoration & Enlightenment",
+      "description": "Milton’s epic begins after a war in Heaven and ends with two people walking out of the only home they have known.",
+      "href": "/books/paradise-lost/",
+      "image": "/Paradise%20Lost%20Main%20Cover.png",
+      "imageAlt": "Astor Library Paradise Lost cover",
+      "search": "Paradise Lost John Milton Restoration & Enlightenment Milton’s epic begins after a war in Heaven and ends with two people walking out of the only home they have known. The poem remains at the centre. Paradise Lost, John Milton From defeated rebellion to a world outside Eden. Hell reorganises defeat Heaven and Eden come into view Raphael tells the larger history Persuasion becomes blame History enters the garden Sentence, persuasion and conversation. The opening sentence declares its scale Satan’s language is powerful because unstable Conversation fails before appetite wins Epic, politics and a poem made by voice. A biblical epic Written after political defeat Dictation and revision The voices inside the argument. The narrator Satan God the Father The Son Adam Eve Questions that stay open. Why is Satan persuasive? What kind of freedom? Why does Adam eat? What can be restored? Texts and collections.",
+      "authorHref": "/authors/#john-milton",
+      "subjects": [
+        {
+          "title": "Epic poetry",
+          "href": "/subjects/epic-poetry/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Pericles, Prince of Tyre",
       "author": "William Shakespeare",
       "collection": "Shakespeare",
@@ -812,6 +850,25 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "The Duchess of Malfi",
+      "author": "John Webster",
+      "collection": "Renaissance & Early Modern",
+      "description": "A young widow chooses to marry again, and the men who believe they own her life answer with surveillance, imprisonment and murder.",
+      "href": "/books/the-duchess-of-malfi/",
+      "image": "/Duchess%20of%20Malfi%20Cover.png",
+      "imageAlt": "Astor Library The Duchess of Malfi cover",
+      "search": "The Duchess of Malfi John Webster Renaissance & Early Modern A young widow chooses to marry again, and the men who believe they own her life answer with surveillance, imprisonment and murder. The play remains at the centre. The Duchess of Malfi, John Webster A secret household inside a watched court. The Duchess chooses Bosola reads the body Confidence becomes betrayal Power becomes theatre Revenge misses its mark Three places where authority is tested. The Duchess writes her own scene Bosola reads bodies for powerful men “I am Duchess of Malfi still” History, theatre and service. History reshaped A tragedy for two theatres Service and surveillance The people carrying the pressure. The Duchess Antonio Bologna Daniel de Bosola Ferdinand The Cardinal Cariola Questions that stay open. What does secrecy protect? When does explanation end? What survives power? How should Ferdinand be played? Texts and collections.",
+      "authorHref": "/authors/#john-webster",
+      "subjects": [
+        {
+          "title": "Tragedy",
+          "href": "/subjects/tragedy/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "The Man Who Was Thursday",
       "author": "G. K. Chesterton",
       "collection": "Modern Classics",
@@ -926,6 +983,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "The Rape of Lucrece",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "A boast about Lucrece’s chastity sends Tarquin from the Roman camp to her home, where hospitality becomes the opening for sexual violence.",
+      "href": "/books/the-rape-of-lucrece/",
+      "image": "/The%20Rape%20of%20Lucrece%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Rape of Lucrece cover",
+      "search": "The Rape of Lucrece William Shakespeare Shakespeare A boast about Lucrece’s chastity sends Tarquin from the Roman camp to her home, where hospitality becomes the opening for sexual violence. The poem remains at the centre. The Rape of Lucrece, William Shakespeare From a boast at war to a revolution at home. Praise becomes competition Hospitality is betrayed The world looks unchanged A painting becomes a witness Testimony becomes revolt Praise, consent and the control of a story. When praise becomes dangerous Tarquin knows what he is doing The Troy painting makes a witness Stanza, history and reputation. Rhyme royal and complaint A Roman founding story Chastity and family honour People and voices in the poem. Lucrece Sextus Tarquinius Collatine Lucretius Brutus The narrator Questions that stay open. What does the poem do with chastity? Why the language of war? Can the painting speak? Who owns the ending? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "The Red Badge of Courage",
       "author": "Stephen Crane",
       "collection": "American Classics",
@@ -936,6 +1007,25 @@
       "search": "The Red Badge of Courage Stephen Crane American Classics Crane places the reader inside a young soldier's fear, shame and self-deception, stripping battlefield courage of patriotic certainty. Battle starts inside The wound as badge Colour and sensation No heroic overview The Red Badge of Courage, Stephen Crane At a glance Publication and reception Stephen Crane From syndication to Appleton Shorter and longer Red Badge Civil War context Chancellorsville as likely model The private soldier's scale Waiting, marching, not knowing The story's movement Waiting for proof First fighting and flight The wounded column Return and performance Flag, courage, self-story Characters Language and method Key passages Will he run? Collective courage Self-justification The body against rhetoric Nature and indifference Courage or compensation? Adaptations and afterlives John Huston film Television film American war reading Ways to study the novel The narrator stays close without agreeing Colour arrives before strategy Fear becomes an argument Types become people slowly Six kinds of battlefield evidence Does Henry mature? Sources and further reading",
       "authorHref": "/authors/#stephen-crane",
       "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Scarlet Letter",
+      "author": "Nathaniel Hawthorne",
+      "collection": "American Classics",
+      "description": "Hester Prynne leaves prison carrying her infant daughter and wearing the scarlet A, but refuses to name Pearl’s father.",
+      "href": "/books/the-scarlet-letter/",
+      "image": "/The%20Scarlet%20Letter%20%28Main%20Cover%29%20.png",
+      "imageAlt": "Astor Library The Scarlet Letter cover",
+      "search": "The Scarlet Letter Nathaniel Hawthorne American Classics Hester Prynne leaves prison carrying her infant daughter and wearing the scarlet A, but refuses to name Pearl’s father. The novel remains at the centre. The Scarlet Letter, Nathaniel Hawthorne Three public scenes and seven years of concealment. Prison door and first scaffold A life beyond the town Physician and minister Escape is imagined The last scaffold A sign, a stage and a child. A letter that will not keep one meaning Daylight, midnight, daylight A symbol who is also a child Puritan Boston inside an American romance. The seventeenth century from 1850 Romance and uncertainty Ancestry and office The people made to carry meanings. Hester Prynne Pearl Arthur Dimmesdale Roger Chillingworth The Custom-House narrator Puritan Boston Questions that stay open. Why does Hester return? What does confession repair? Why is revenge worse than discovery? Where does Pearl go? Texts and collections.",
+      "authorHref": "/authors/#nathaniel-hawthorne",
+      "subjects": [
+        {
+          "title": "Narration and testimony",
+          "href": "/subjects/narration-testimony/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -1182,6 +1272,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Venus and Adonis",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "Venus pulls the young hunter Adonis from his horse and tries every language of praise, argument and physical persuasion she possesses.",
+      "href": "/books/venus-and-adonis/",
+      "image": "/Venus%20and%20Adonis%20Main%20Cover.png",
+      "imageAlt": "Astor Library Venus and Adonis cover",
+      "search": "Venus and Adonis William Shakespeare Shakespeare Venus pulls the young hunter Adonis from his horse and tries every language of praise, argument and physical persuasion she possesses. The poem remains at the centre. Venus and Adonis, William Shakespeare An interrupted hunt becomes an argument about desire. Venus stops the hunt Every argument meets a no The horses answer differently The boar enters the language A body becomes a flower Pursuit, analogy and the wound. Reversal does not remove coercion What the horses cannot prove The boar changes the poem’s tone Ovid, print and the six-line stanza. Ovid changed The Elizabethan minor epic Six lines at a time Desire, refusal and the speaking world. Venus Adonis The narrator The stallion The jennet The boar Questions that stay open. What does reversal reveal? What is Adonis refusing? Why so many animals? What does Venus learn? Texts and collections.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Wuthering Heights",
       "author": "Emily Brontë",
       "collection": "Victorian",
@@ -1284,6 +1388,26 @@
         }
       ],
       "search": "Charles Dickens A Christmas Carol Great Expectations The Cricket on the Hearth Victorian Victorian Victorian"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Christopher Marlowe",
+      "description": "Read Christopher Marlowe through Astor Library's page for Doctor Faustus.",
+      "href": "/authors/#christopher-marlowe",
+      "image": "/Doctor%20Faustus%20Cover.png",
+      "imageAlt": "Astor Library Doctor Faustus cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Doctor Faustus",
+          "href": "/books/doctor-faustus/",
+          "image": "/Doctor%20Faustus%20Cover.png",
+          "imageAlt": "Astor Library Doctor Faustus cover",
+          "collection": "Renaissance & Early Modern"
+        }
+      ],
+      "search": "Christopher Marlowe Doctor Faustus Renaissance & Early Modern"
     },
     {
       "type": "author",
@@ -1495,6 +1619,46 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "John Milton",
+      "description": "Read John Milton through Astor Library's page for Paradise Lost.",
+      "href": "/authors/#john-milton",
+      "image": "/Paradise%20Lost%20Main%20Cover.png",
+      "imageAlt": "Astor Library Paradise Lost cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Paradise Lost",
+          "href": "/books/paradise-lost/",
+          "image": "/Paradise%20Lost%20Main%20Cover.png",
+          "imageAlt": "Astor Library Paradise Lost cover",
+          "collection": "Restoration & Enlightenment"
+        }
+      ],
+      "search": "John Milton Paradise Lost Restoration & Enlightenment"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "John Webster",
+      "description": "Read John Webster through Astor Library's page for The Duchess of Malfi.",
+      "href": "/authors/#john-webster",
+      "image": "/Duchess%20of%20Malfi%20Cover.png",
+      "imageAlt": "Astor Library The Duchess of Malfi cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Duchess of Malfi",
+          "href": "/books/the-duchess-of-malfi/",
+          "image": "/Duchess%20of%20Malfi%20Cover.png",
+          "imageAlt": "Astor Library The Duchess of Malfi cover",
+          "collection": "Renaissance & Early Modern"
+        }
+      ],
+      "search": "John Webster The Duchess of Malfi Renaissance & Early Modern"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "Jonathan Swift",
       "description": "Read Jonathan Swift through Astor Library's page for Gulliver’s Travels.",
       "href": "/authors/#jonathan-swift",
@@ -1538,19 +1702,39 @@
       "title": "Mary Shelley",
       "description": "Meet the writer behind Frankenstein through creation, abandonment, competing voices and a career larger than one novel.",
       "href": "/authors/mary-shelley/",
-      "image": "/IMG_5297.png",
-      "imageAlt": "Astor Library Frankenstein commentary edition cover",
+      "image": "/Frankenstein%201831%20replacement%20cover.jpg",
+      "imageAlt": "Astor Library Frankenstein 1831 introduced edition cover",
       "bookCount": 1,
       "books": [
         {
           "title": "Frankenstein; or, The Modern Prometheus",
           "href": "/books/frankenstein/",
-          "image": "/IMG_5297.png",
-          "imageAlt": "Astor Library Frankenstein commentary edition cover",
+          "image": "/Frankenstein%201831%20replacement%20cover.jpg",
+          "imageAlt": "Astor Library Frankenstein 1831 introduced edition cover",
           "collection": "Romantic & Regency"
         }
       ],
       "search": "Mary Shelley Frankenstein; or, The Modern Prometheus Romantic & Regency"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Nathaniel Hawthorne",
+      "description": "Read Nathaniel Hawthorne through Astor Library's page for The Scarlet Letter.",
+      "href": "/authors/#nathaniel-hawthorne",
+      "image": "/The%20Scarlet%20Letter%20%28Main%20Cover%29%20.png",
+      "imageAlt": "Astor Library The Scarlet Letter cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Scarlet Letter",
+          "href": "/books/the-scarlet-letter/",
+          "image": "/The%20Scarlet%20Letter%20%28Main%20Cover%29%20.png",
+          "imageAlt": "Astor Library The Scarlet Letter cover",
+          "collection": "American Classics"
+        }
+      ],
+      "search": "Nathaniel Hawthorne The Scarlet Letter American Classics"
     },
     {
       "type": "author",
@@ -1720,7 +1904,7 @@
       "href": "/shakespeare/",
       "image": "/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png",
       "imageAlt": "Astor Library A Midsummer Night's Dream cover",
-      "bookCount": 38,
+      "bookCount": 40,
       "books": [
         {
           "title": "A Midsummer Night's Dream",
@@ -1926,6 +2110,13 @@
           "collection": "Shakespeare"
         },
         {
+          "title": "The Rape of Lucrece",
+          "href": "/books/the-rape-of-lucrece/",
+          "image": "/The%20Rape%20of%20Lucrece%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Rape of Lucrece cover",
+          "collection": "Shakespeare"
+        },
+        {
           "title": "The Taming of the Shrew",
           "href": "/books/taming-of-the-shrew/",
           "image": "/The%20Taming%20of%20the%20Shrew%20Main%20Cover.jpg",
@@ -1987,9 +2178,16 @@
           "image": "/Twelfth%20Night%20Main%20Cover.jpg",
           "imageAlt": "Astor Library Twelfth Night cover",
           "collection": "Shakespeare"
+        },
+        {
+          "title": "Venus and Adonis",
+          "href": "/books/venus-and-adonis/",
+          "image": "/Venus%20and%20Adonis%20Main%20Cover.png",
+          "imageAlt": "Astor Library Venus and Adonis cover",
+          "collection": "Shakespeare"
         }
       ],
-      "search": "William Shakespeare A Midsummer Night's Dream All's Well That Ends Well Antony and Cleopatra As You Like It Coriolanus Cymbeline Hamlet Henry IV, Part 1 Henry IV, Part 2 Henry IV, Parts 1 and 2 Henry V Henry VI, Part 2 Henry VI, Part 3 Henry VI, Parts 1, 2 and 3 Henry VIII King John King Lear Love’s Labour’s Lost Macbeth Measure for Measure Much Ado About Nothing Othello Pericles, Prince of Tyre Richard II Richard III Romeo and Juliet The Comedy of Errors The Merchant of Venice The Merry Wives of Windsor The Taming of the Shrew The Tempest The Two Gentlemen of Verona The Two Noble Kinsmen The Winter's Tale Timon of Athens Titus Andronicus Troilus and Cressida Twelfth Night Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare"
+      "search": "William Shakespeare A Midsummer Night's Dream All's Well That Ends Well Antony and Cleopatra As You Like It Coriolanus Cymbeline Hamlet Henry IV, Part 1 Henry IV, Part 2 Henry IV, Parts 1 and 2 Henry V Henry VI, Part 2 Henry VI, Part 3 Henry VI, Parts 1, 2 and 3 Henry VIII King John King Lear Love’s Labour’s Lost Macbeth Measure for Measure Much Ado About Nothing Othello Pericles, Prince of Tyre Richard II Richard III Romeo and Juliet The Comedy of Errors The Merchant of Venice The Merry Wives of Windsor The Rape of Lucrece The Taming of the Shrew The Tempest The Two Gentlemen of Verona The Two Noble Kinsmen The Winter's Tale Timon of Athens Titus Andronicus Troilus and Cressida Twelfth Night Venus and Adonis Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare"
     },
     {
       "type": "author",
@@ -2074,12 +2272,13 @@
       "type": "subject",
       "typeLabel": "Subject guide",
       "title": "Tragedy",
-      "description": "Explore Shakespearean tragedy from Titus Andronicus and Romeo and Juliet through Hamlet, Othello, Timon of Athens, Antony and Cleopatra and Coriolanus.",
+      "description": "Explore early modern tragedy from Marlowe and Webster alongside Shakespeare, following the form from Doctor Faustus and Titus Andronicus to Hamlet, Othello, King Lear and The Duchess of Malfi.",
       "href": "/subjects/tragedy/",
-      "image": "/Romeo%20and%20Juliet.png",
+      "image": "/Doctor%20Faustus%20Cover.png",
       "imageAlt": "Tragedy books in Astor Library",
-      "bookCount": 10,
+      "bookCount": 12,
       "relatedBooks": [
+        "/books/doctor-faustus/",
         "/books/romeo-and-juliet/",
         "/books/hamlet/",
         "/books/troilus-and-cressida/",
@@ -2089,6 +2288,7 @@
         "/books/macbeth/",
         "/books/antony-and-cleopatra/",
         "/books/coriolanus/",
+        "/books/the-duchess-of-malfi/",
         "/books/titus-andronicus/"
       ],
       "relatedResources": [
@@ -2099,7 +2299,7 @@
         "/resources/shakespeare/gender-power-omkara-maqbool/",
         "/resources/king-lear/summary-guide/"
       ],
-      "search": "Tragedy Choice, consequence and the watching audience Explore Shakespearean tragedy from Titus Andronicus and Romeo and Juliet through Hamlet, Othello, Timon of Athens, Antony and Cleopatra and Coriolanus. tragedy Shakespeare tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family Reversal An action or discovery turns the direction of a life, plot or public position. Recognition A character comes to understand an identity, relationship or truth that changes the action. Dramatic irony The audience understands more than one or more characters inside the scene. Catastrophe The final movement in which accumulated choices and conflicts become irreversible."
+      "search": "Tragedy Choice, consequence and the watching audience Explore early modern tragedy from Marlowe and Webster alongside Shakespeare, following the form from Doctor Faustus and Titus Andronicus to Hamlet, Othello, King Lear and The Duchess of Malfi. tragedy Shakespeare Marlowe Webster Doctor Faustus Duchess of Malfi tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family Reversal An action or discovery turns the direction of a life, plot or public position. Recognition A character comes to understand an identity, relationship or truth that changes the action. Dramatic irony The audience understands more than one or more characters inside the scene. Catastrophe The final movement in which accumulated choices and conflicts become irreversible."
     },
     {
       "type": "subject",
@@ -2125,20 +2325,21 @@
       "type": "subject",
       "typeLabel": "Subject guide",
       "title": "Epic poetry",
-      "description": "Read epic through Homer’s Odyssey and Virgil’s Aeneid, then follow epic scale and allusion into Moby-Dick, with attention to oral form, translation, homecoming and empire.",
+      "description": "Read epic through Homer’s Odyssey, Virgil’s Aeneid and Milton’s Paradise Lost, then follow epic scale and allusion into Moby-Dick, with attention to oral form, translation, homecoming, rebellion and empire.",
       "href": "/subjects/epic-poetry/",
       "image": "/The%20Odyssey.png",
       "imageAlt": "Epic poetry books in Astor Library",
-      "bookCount": 3,
+      "bookCount": 4,
       "relatedBooks": [
         "/books/the-odyssey/",
         "/books/the-aeneid/",
+        "/books/paradise-lost/",
         "/books/moby-dick/"
       ],
       "relatedResources": [
         "/resources/moby-dick/study-guide/"
       ],
-      "search": "Epic poetry Journeys, foundations and inherited song Read epic through Homer’s Odyssey and Virgil’s Aeneid, then follow epic scale and allusion into Moby-Dick, with attention to oral form, translation, homecoming and empire. epic poetry Homer Odyssey Virgil Aeneid oral tradition hero invocation muse in medias res simile homecoming nostos empire translation journey Invocation An opening appeal to the Muse that presents the poem as inspired song and asks for its subject. In medias res Beginning in the middle of the action, with earlier events supplied later. Epic simile An extended comparison that pauses action and opens another field of life or experience. Nostos Homecoming: both a journey and the recovery of place, identity and relationship."
+      "search": "Epic poetry Journeys, foundations and inherited song Read epic through Homer’s Odyssey, Virgil’s Aeneid and Milton’s Paradise Lost, then follow epic scale and allusion into Moby-Dick, with attention to oral form, translation, homecoming, rebellion and empire. epic poetry Homer Odyssey Virgil Aeneid Milton Paradise Lost oral tradition hero invocation muse in medias res simile blank verse fall rebellion homecoming nostos empire translation journey Invocation An opening appeal to the Muse that presents the poem as inspired song and asks for its subject. In medias res Beginning in the middle of the action, with earlier events supplied later. Epic simile An extended comparison that pauses action and opens another field of life or experience. Nostos Homecoming: both a journey and the recovery of place, identity and relationship."
     },
     {
       "type": "subject",
@@ -2165,15 +2366,16 @@
       "type": "subject",
       "typeLabel": "Subject guide",
       "title": "Narration and testimony",
-      "description": "Explore first-person narration, letters, framed testimony and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, Great Expectations, Huckleberry Finn and Dracula.",
+      "description": "Explore letters, autobiography, framed manuscripts, retrospective voices and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, The Scarlet Letter, Great Expectations, Huckleberry Finn and Dracula.",
       "href": "/subjects/narration-testimony/",
       "image": "/Pamela.png",
       "imageAlt": "Narration and testimony books in Astor Library",
-      "bookCount": 6,
+      "bookCount": 7,
       "relatedBooks": [
         "/books/pamela/",
         "/books/narrative-of-the-life-of-frederick-douglass/",
         "/books/wuthering-heights/",
+        "/books/the-scarlet-letter/",
         "/books/great-expectations/",
         "/books/adventures-of-huckleberry-finn/",
         "/books/dracula/"
@@ -2184,7 +2386,7 @@
         "/resources/dracula/complete-overview/",
         "/resources/modern/half-of-a-yellow-sun-diaspora/"
       ],
-      "search": "Narration and testimony Who speaks, who listens and what a record can prove Explore first-person narration, letters, framed testimony and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, Great Expectations, Huckleberry Finn and Dracula. narration narrator testimony witness first person autobiography memoir frame narrative epistolary letters diary documents retrospective voice reliability evidence perspective archive First-person narration A speaker tells the account as “I”, limiting knowledge to what that voice experiences, remembers, learns or chooses to report. Frame narrative One act of telling encloses another, so the route by which an account reaches the reader becomes part of the work. Epistolary form A narrative made wholly or partly from letters and other documents written by its characters. Retrospective narration A later self recounts earlier experience with knowledge, language and judgement unavailable at the time."
+      "search": "Narration and testimony Who speaks, who listens and what a record can prove Explore letters, autobiography, framed manuscripts, retrospective voices and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, The Scarlet Letter, Great Expectations, Huckleberry Finn and Dracula. narration narrator testimony witness first person autobiography memoir frame narrative framed manuscript Custom House Scarlet Letter Hawthorne epistolary letters diary documents retrospective voice reliability evidence perspective archive First-person narration A speaker tells the account as “I”, limiting knowledge to what that voice experiences, remembers, learns or chooses to report. Frame narrative One act of telling encloses another, so the route by which an account reaches the reader becomes part of the work. Epistolary form A narrative made wholly or partly from letters and other documents written by its characters. Retrospective narration A later self recounts earlier experience with knowledge, language and judgement unavailable at the time."
     },
     {
       "type": "subject",
@@ -2213,13 +2415,14 @@
       "tags": [
         "Antony and Cleopatra",
         "Critical contexts",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "A full route through the subject.",
+        "Two worlds, neither simple",
         "The opposition keeps changing",
         "History becomes performance",
         "Defeat does not settle meaning",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/antony-and-cleopatra/themes-critical-contexts/",
       "externalUrl": "https://antony-and-cleopatra-key-a1i8dw1.gamma.site",
@@ -2228,7 +2431,7 @@
       "relatedBooks": [
         "/books/antony-and-cleopatra/"
       ],
-      "search": "Antony and Cleopatra: Key Themes & Critical Contexts Explore Rome and Egypt, love and empire, gender, performance and the play’s changing critical contexts. Antony and Cleopatra Critical contexts What this guide is for. Three ways into the guide. The opposition keeps changing History becomes performance Defeat does not settle meaning Open the guide when you are ready. Back into the library."
+      "search": "Antony and Cleopatra: Key Themes & Critical Contexts Explore Rome and Egypt, love and empire, gender, performance and the play’s changing critical contexts. Antony and Cleopatra Critical contexts The work in view. A full route through the subject. Two worlds, neither simple The opposition keeps changing History becomes performance Defeat does not settle meaning Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2238,13 +2441,14 @@
       "tags": [
         "Omkara and Maqbool",
         "Film adaptation",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "A full route through the subject.",
+        "Adaptation changes the question",
         "Evidence enters another culture",
         "Desire is politically dangerous",
         "The camera redistributes knowledge",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/shakespeare/gender-power-omkara-maqbool/",
       "externalUrl": "https://gender-power-shakespeare-tumoq6d.gamma.site",
@@ -2254,7 +2458,7 @@
         "/books/othello/",
         "/books/macbeth/"
       ],
-      "search": "Gender, Power & Shakespeare Compare Bhardwaj’s film adaptations with Othello and Macbeth through gender, objects, bodies and power. Omkara and Maqbool Film adaptation What this guide is for. Three ways into the guide. Evidence enters another culture Desire is politically dangerous The camera redistributes knowledge Open the guide when you are ready. Back into the library."
+      "search": "Gender, Power & Shakespeare Compare Bhardwaj’s film adaptations with Othello and Macbeth through gender, objects, bodies and power. Omkara and Maqbool Film adaptation The work in view. A full route through the subject. Adaptation changes the question Evidence enters another culture Desire is politically dangerous The camera redistributes knowledge Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2264,13 +2468,14 @@
       "tags": [
         "Macbeth",
         "Quick guide",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "A full route through the subject.",
+        "How certainty is manufactured",
         "A greeting is not an instruction",
         "Power cannot finish the crime",
         "Words become traps",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/macbeth/quick-guide/",
       "externalUrl": "https://macbeth-a-study-guide-wkvonk2.gamma.site",
@@ -2279,7 +2484,7 @@
       "relatedBooks": [
         "/books/macbeth/"
       ],
-      "search": "Macbeth: A Quick Study Guide Follow prophecy, ambition, royal murder, guilt and the equivocal promises that turn confidence into a trap. Macbeth Quick guide What this guide is for. Three ways into the guide. A greeting is not an instruction Power cannot finish the crime Words become traps Open the guide when you are ready. Back into the library."
+      "search": "Macbeth: A Quick Study Guide Follow prophecy, ambition, royal murder, guilt and the equivocal promises that turn confidence into a trap. Macbeth Quick guide The work in view. A full route through the subject. How certainty is manufactured A greeting is not an instruction Power cannot finish the crime Words become traps Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2289,13 +2494,14 @@
       "tags": [
         "Richard II",
         "History play",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "A full route through the subject.",
+        "Who can make a king?",
         "Language becomes a kingdom",
         "Action looks like necessity",
         "Deposition was a live danger",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/richard-ii/study-guide/",
       "externalUrl": "https://shakespeares-richard-ii-1gbwbfw.gamma.site",
@@ -2304,7 +2510,7 @@
       "relatedBooks": [
         "/books/richard-ii/"
       ],
-      "search": "Richard II: A Student Study Guide Study deposition, divine kingship, succession and the political performances of Richard and Bolingbroke. Richard II History play What this guide is for. Three ways into the guide. Language becomes a kingdom Action looks like necessity Deposition was a live danger Open the guide when you are ready. Back into the library."
+      "search": "Richard II: A Student Study Guide Study deposition, divine kingship, succession and the political performances of Richard and Bolingbroke. Richard II History play The work in view. A full route through the subject. Who can make a king? Language becomes a kingdom Action looks like necessity Deposition was a live danger Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2314,20 +2520,21 @@
       "tags": [
         "The Winter’s Tale",
         "Complete guide",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "A full route through the subject.",
+        "What sixteen years can—and cannot—repair",
         "Jealousy becomes government",
         "Another kind of play begins",
         "Wonder does not cancel loss",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/winters-tale/complete-study-guide/",
       "externalUrl": "https://the-winters-tale-a-compl-rv7mbwm.gamma.site",
       "image": "/10_winters_tale_study_guide.png",
       "imageAlt": "The Winter’s Tale: A Complete Study Guide cover",
       "relatedBooks": [],
-      "search": "The Winter’s Tale: A Complete Study Guide Move from jealousy and tyranny to pastoral, time and the difficult work of reconciliation. The Winter’s Tale Complete guide What this guide is for. Three ways into the guide. Jealousy becomes government Another kind of play begins Wonder does not cancel loss Open the guide when you are ready. Back into the library."
+      "search": "The Winter’s Tale: A Complete Study Guide Move from jealousy and tyranny to pastoral, time and the difficult work of reconciliation. The Winter’s Tale Complete guide The work in view. A full route through the subject. What sixteen years can—and cannot—repair Jealousy becomes government Another kind of play begins Wonder does not cancel loss Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2337,11 +2544,11 @@
       "tags": [
         "Macbeth",
         "Summary",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/macbeth/summary-analysis/",
       "externalUrl": "https://act-1-scene-1-2xfguks.gamma.site",
@@ -2350,7 +2557,7 @@
       "relatedBooks": [
         "/books/macbeth/"
       ],
-      "search": "Macbeth: Summary and Analysis Revise the plot and characters, then develop thematic, contextual and quotation-led analysis. Macbeth Summary What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Macbeth: Summary and Analysis Revise the plot and characters, then develop thematic, contextual and quotation-led analysis. Macbeth Summary The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2360,11 +2567,11 @@
       "tags": [
         "Romeo and Juliet",
         "Summary",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/romeo-and-juliet/summary-guide/",
       "externalUrl": "https://romeo-and-juliet-rvvolvg.gamma.site",
@@ -2373,7 +2580,7 @@
       "relatedBooks": [
         "/books/romeo-and-juliet/"
       ],
-      "search": "Romeo and Juliet: Summary Guide Review the plot and characters, connect themes to context and secure useful quotations. Romeo and Juliet Summary What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Romeo and Juliet: Summary Guide Review the plot and characters, connect themes to context and secure useful quotations. Romeo and Juliet Summary The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2383,11 +2590,11 @@
       "tags": [
         "King Lear",
         "Summary",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/king-lear/summary-guide/",
       "externalUrl": "https://act-1-scene-1-4ydkkxl.gamma.site",
@@ -2396,7 +2603,7 @@
       "relatedBooks": [
         "/books/king-lear/"
       ],
-      "search": "King Lear: Summary Guide Follow the double plot through power, family, sight, madness, suffering and judgement. King Lear Summary What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "King Lear: Summary Guide Follow the double plot through power, family, sight, madness, suffering and judgement. King Lear Summary The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2406,11 +2613,11 @@
       "tags": [
         "Shakespeare",
         "Tragedy",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/shakespeare/tragedies-overview/",
       "externalUrl": "https://shakespeares-tragedies-a-ve41kt1.gamma.site",
@@ -2424,7 +2631,7 @@
         "/books/romeo-and-juliet/",
         "/books/titus-andronicus/"
       ],
-      "search": "Shakespeare’s Tragedies: An Overview Compare the structures, character types and dramatic concerns that recur across Shakespeare’s tragedies. Shakespeare Tragedy What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Shakespeare’s Tragedies: An Overview Compare the structures, character types and dramatic concerns that recur across Shakespeare’s tragedies. Shakespeare Tragedy The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2434,11 +2641,11 @@
       "tags": [
         "Midsummer",
         "Study guide",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/midsummer-nights-dream/study-guide/",
       "externalUrl": "https://a-midsummer-nights-dream-akwphaj.gamma.site",
@@ -2447,7 +2654,7 @@
       "relatedBooks": [
         "/books/a-midsummer-nights-dream/"
       ],
-      "search": "A Midsummer Night’s Dream: A Study Guide Explore plot, characters, love, transformation, dreams, fairies, staging, adaptations and Puck’s epilogue. Midsummer Study guide What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "A Midsummer Night’s Dream: A Study Guide Explore plot, characters, love, transformation, dreams, fairies, staging, adaptations and Puck’s epilogue. Midsummer Study guide The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2457,20 +2664,21 @@
       "tags": [
         "Linton Kwesi Johnson",
         "Poetry and policing",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "A full route through the subject.",
+        "Voice is part of the argument",
         "Creole refuses a borrowed centre",
         "Rhythm gathers an audience",
         "Power enters ordinary space",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/poetry/linton-kwesi-johnson-policing-community/",
       "externalUrl": "https://policing-and-community-i-cvtjjtz.gamma.site",
       "image": "/08_policing_and_community.png",
       "imageAlt": "Policing and Community in Linton Kwesi Johnson’s Poetry cover",
       "relatedBooks": [],
-      "search": "Policing and Community in Linton Kwesi Johnson’s Poetry Read Jamaican Creole, rhythm and performance beside accounts of policing, resistance and Black British community. Linton Kwesi Johnson Poetry and policing What this guide is for. Three ways into the guide. Creole refuses a borrowed centre Rhythm gathers an audience Power enters ordinary space Open the guide when you are ready. Back into the library."
+      "search": "Policing and Community in Linton Kwesi Johnson’s Poetry Read Jamaican Creole, rhythm and performance beside accounts of policing, resistance and Black British community. Linton Kwesi Johnson Poetry and policing The work in view. A full route through the subject. Voice is part of the argument Creole refuses a borrowed centre Rhythm gathers an audience Power enters ordinary space Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2480,13 +2688,14 @@
       "tags": [
         "Pamela",
         "Psychological reading",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "A full route through the subject.",
+        "A mind written in the moment",
         "Feeling has no safe distance",
         "Readers have always disagreed",
         "Contradiction needs context",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/pamela/psychological-analysis/",
       "externalUrl": "https://pamelas-psyche-a-psychol-n0ybnn5.gamma.site",
@@ -2495,7 +2704,7 @@
       "relatedBooks": [
         "/books/pamela/"
       ],
-      "search": "Pamela’s Psyche Read Richardson’s epistolary novel through fear, hesitation, class, gender and the heroine’s contradictory inner life. Pamela Psychological reading What this guide is for. Three ways into the guide. Feeling has no safe distance Readers have always disagreed Contradiction needs context Open the guide when you are ready. Back into the library."
+      "search": "Pamela’s Psyche Read Richardson’s epistolary novel through fear, hesitation, class, gender and the heroine’s contradictory inner life. Pamela Psychological reading The work in view. A full route through the subject. A mind written in the moment Feeling has no safe distance Readers have always disagreed Contradiction needs context Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2505,11 +2714,11 @@
       "tags": [
         "Pride and Prejudice",
         "Key quotations",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/regency/pride-prejudice-key-quotes-revision/",
       "externalUrl": "https://pride-prejudice-key-quot-62oty5x.gamma.site",
@@ -2518,7 +2727,7 @@
       "relatedBooks": [
         "/books/pride-and-prejudice/"
       ],
-      "search": "Pride & Prejudice: Key Quotes Revision Revise key quotations from Austen’s novel with concise routes into character, relationships, class and judgement. Pride and Prejudice Key quotations What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Pride & Prejudice: Key Quotes Revision Revise key quotations from Austen’s novel with concise routes into character, relationships, class and judgement. Pride and Prejudice Key quotations The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2528,13 +2737,14 @@
       "tags": [
         "Oscar Wilde",
         "Introduction",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "A full route through the subject.",
+        "The portrait keeps the history",
         "Language acts upon a life",
         "The surface does not stay innocent",
         "Biography matters—and has limits",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/dorian-gray/introduction/",
       "externalUrl": "https://the-picture-of-dorian-gr-half16o.gamma.site",
@@ -2543,7 +2753,7 @@
       "relatedBooks": [
         "/books/dorian-gray/"
       ],
-      "search": "The Picture of Dorian Gray: An Introduction Explore art, influence, secrecy, aestheticism, corruption and the portrait as a hidden record. Oscar Wilde Introduction What this guide is for. Three ways into the guide. Language acts upon a life The surface does not stay innocent Biography matters—and has limits Open the guide when you are ready. Back into the library."
+      "search": "The Picture of Dorian Gray: An Introduction Explore art, influence, secrecy, aestheticism, corruption and the portrait as a hidden record. Oscar Wilde Introduction The work in view. A full route through the subject. The portrait keeps the history Language acts upon a life The surface does not stay innocent Biography matters—and has limits Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2553,11 +2763,11 @@
       "tags": [
         "Frankenstein",
         "Study guide",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/frankenstein/study-guide/",
       "externalUrl": "https://frankenstein-by-mary-she-3hxubj1.gamma.site",
@@ -2566,7 +2776,7 @@
       "relatedBooks": [
         "/books/frankenstein/"
       ],
-      "search": "Frankenstein: Study Guide Study creation, responsibility, narrative frames, isolation, knowledge and the novel’s competing voices. Frankenstein Study guide What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Frankenstein: Study Guide Study creation, responsibility, narrative frames, isolation, knowledge and the novel’s competing voices. Frankenstein Study guide The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2576,11 +2786,11 @@
       "tags": [
         "Great Expectations",
         "Study guide",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/great-expectations/study-guide/",
       "externalUrl": "https://a-guide-to-great-expecta-w1qdbru.gamma.site",
@@ -2589,7 +2799,7 @@
       "relatedBooks": [
         "/books/great-expectations/"
       ],
-      "search": "A Guide to Great Expectations by Charles Dickens Follow Pip’s expectations through class, crime, memory, generosity and the novel’s changing ideas of gentility. Great Expectations Study guide What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "A Guide to Great Expectations by Charles Dickens Follow Pip’s expectations through class, crime, memory, generosity and the novel’s changing ideas of gentility. Great Expectations Study guide The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2599,11 +2809,11 @@
       "tags": [
         "Dracula",
         "Complete overview",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/dracula/complete-overview/",
       "externalUrl": "https://dracula-by-bram-stoker-a-e8ip7yl.gamma.site",
@@ -2612,7 +2822,7 @@
       "relatedBooks": [
         "/books/dracula/"
       ],
-      "search": "Dracula by Bram Stoker: A Complete Overview Follow the plot, documents, characters, contexts and forms of evidence assembled against the Count. Dracula Complete overview What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Dracula by Bram Stoker: A Complete Overview Follow the plot, documents, characters, contexts and forms of evidence assembled against the Count. Dracula Complete overview The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2622,11 +2832,11 @@
       "tags": [
         "Dracula",
         "Gender",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/dracula/gender-roles/",
       "externalUrl": "https://dracula-gender-roles-kywv61d.gamma.site",
@@ -2635,7 +2845,7 @@
       "relatedBooks": [
         "/books/dracula/"
       ],
-      "search": "Dracula: Gender Roles Examine desire, conduct, the New Woman, masculinity and late-Victorian anxiety in Stoker’s novel. Dracula Gender What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Dracula: Gender Roles Examine desire, conduct, the New Woman, masculinity and late-Victorian anxiety in Stoker’s novel. Dracula Gender The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2645,18 +2855,18 @@
       "tags": [
         "The Kite Runner",
         "Walkthrough",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/modern/kite-runner-walkthrough/",
       "externalUrl": "https://the-kite-runner-study-gu-e8x8o98.gamma.site",
       "image": "/The%20Kite%20Runner%20Overview.png",
       "imageAlt": "The Kite Runner: Walkthrough cover",
       "relatedBooks": [],
-      "search": "The Kite Runner: Walkthrough Follow the novel through friendship, betrayal, exile, memory, guilt and the difficult possibility of atonement. The Kite Runner Walkthrough What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "The Kite Runner: Walkthrough Follow the novel through friendship, betrayal, exile, memory, guilt and the difficult possibility of atonement. The Kite Runner Walkthrough The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2666,18 +2876,18 @@
       "tags": [
         "The Handmaid’s Tale",
         "Dystopia",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/modern/handmaids-tale-guide/",
       "externalUrl": "https://the-handmaids-tale-a-com-093fea1.gamma.site",
       "image": "/Handmaid%27s%20Tale%20-%20Complete%20Guide.png",
       "imageAlt": "The Handmaid’s Tale: Complete Guide cover",
       "relatedBooks": [],
-      "search": "The Handmaid’s Tale: Complete Guide Examine Gilead through power, gender, memory, language, religion, resistance and Offred’s narration. The Handmaid’s Tale Dystopia What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "The Handmaid’s Tale: Complete Guide Examine Gilead through power, gender, memory, language, religion, resistance and Offred’s narration. The Handmaid’s Tale Dystopia The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2687,18 +2897,18 @@
       "tags": [
         "Half of a Yellow Sun",
         "Diaspora",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/modern/half-of-a-yellow-sun-diaspora/",
       "externalUrl": "https://half-of-a-yellow-sun-dia-waqdk9y.gamma.site",
       "image": "/Half%20A%20Yellow%20Sun-%20Diaspora.png",
       "imageAlt": "Half of a Yellow Sun: Diaspora, Nation and Exile cover",
       "relatedBooks": [],
-      "search": "Half of a Yellow Sun: Diaspora, Nation and Exile Study diaspora, Biafran history, narrative form and the limits of Richard, Olanna and Ugwu as witnesses. Half of a Yellow Sun Diaspora What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Half of a Yellow Sun: Diaspora, Nation and Exile Study diaspora, Biafran history, narrative form and the limits of Richard, Olanna and Ugwu as witnesses. Half of a Yellow Sun Diaspora The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2708,18 +2918,18 @@
       "tags": [
         "Wide Sargasso Sea",
         "Study guide",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/modern/wide-sargasso-sea-a-study-guide/",
       "externalUrl": "https://wide-sargasso-sea-a-stud-dx76kvz.gamma.site",
       "image": "/Wide-Sargasso-Sea-A-Study-Guide.png",
       "imageAlt": "Wide Sargasso Sea: A Study Guide cover",
       "relatedBooks": [],
-      "search": "Wide Sargasso Sea: A Study Guide A clear route through Rhys’s novel, its three-part structure, principal voices, settings and central concerns. Wide Sargasso Sea Study guide What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Wide Sargasso Sea: A Study Guide A clear route through Rhys’s novel, its three-part structure, principal voices, settings and central concerns. Wide Sargasso Sea Study guide The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2729,18 +2939,18 @@
       "tags": [
         "Wide Sargasso Sea",
         "Post-colonialism",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/modern/wide-sargasso-sea-post-colonialism/",
       "externalUrl": "https://wide-sargasso-sea-post-c-3jg03rl.gamma.site",
       "image": "/Wide-Sargasso-Sea-and-Post-Colonialism.png",
       "imageAlt": "Wide Sargasso Sea & Post-Colonialism cover",
       "relatedBooks": [],
-      "search": "Wide Sargasso Sea & Post-Colonialism Read Rhys’s novel through empire, emancipation, race, language, displacement and contested identity. Wide Sargasso Sea Post-colonialism What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Wide Sargasso Sea & Post-Colonialism Read Rhys’s novel through empire, emancipation, race, language, displacement and contested identity. Wide Sargasso Sea Post-colonialism The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2750,18 +2960,18 @@
       "tags": [
         "Wide Sargasso Sea",
         "Part 2",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/modern/wide-sargasso-sea-part-2-rochester-antoinette-and-the-unravelling-of-a-marriage/",
       "externalUrl": "https://wide-sargasso-sea-part-2-ahq6zsi.gamma.site",
       "image": "/Wide-Sargasso-Sea-Part-2-Rochester-Antoinette-and-the-Unraveling-of-a-Marriage.png",
       "imageAlt": "Wide Sargasso Sea — Part 2: Rochester, Antoinette, and the Unravelling of a Marriage cover",
       "relatedBooks": [],
-      "search": "Wide Sargasso Sea — Part 2 Follow Rochester and Antoinette through the shifting narration, mistrust and power that unravel their marriage. Wide Sargasso Sea Part 2 What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Wide Sargasso Sea — Part 2 Follow Rochester and Antoinette through the shifting narration, mistrust and power that unravel their marriage. Wide Sargasso Sea Part 2 The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2771,18 +2981,18 @@
       "tags": [
         "Wide Sargasso Sea",
         "Part 3",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/modern/wide-sargasso-sea-part-3-summary-analysis/",
       "externalUrl": "https://wide-sargasso-sea-part-3-9amlw3i.gamma.site",
       "image": "/Wide-Sargasso-Sea-Part-3-Summary-and-Analysis.png",
       "imageAlt": "Wide Sargasso Sea — Part 3 Summary & Analysis cover",
       "relatedBooks": [],
-      "search": "Wide Sargasso Sea — Part 3 Summary & Analysis Read the final section through confinement, memory, dream, fire and its return to Jane Eyre. Wide Sargasso Sea Part 3 What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Wide Sargasso Sea — Part 3 Summary & Analysis Read the final section through confinement, memory, dream, fire and its return to Jane Eyre. Wide Sargasso Sea Part 3 The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2792,20 +3002,21 @@
       "tags": [
         "Langston Hughes",
         "Archival recovery",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "A full route through the subject.",
+        "A story with two recoveries",
         "A meeting on the road",
         "A foreword crosses languages",
         "The archive speaks again",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/langston-hughes-chain-gang-essay/",
       "externalUrl": "https://a-lost-voice-recovered-l-u9mgk6h.gamma.site",
       "image": "/01_a_lost_voice_recovered.png",
       "imageAlt": "A Lost Voice Recovered: Langston Hughes and the Chain Gang cover",
       "relatedBooks": [],
-      "search": "A Lost Voice Recovered Follow a forgotten Hughes essay from a 1927 encounter with an escaped prisoner to its recovery from the archive. Langston Hughes Archival recovery What this guide is for. Three ways into the guide. A meeting on the road A foreword crosses languages The archive speaks again Open the guide when you are ready. Back into the library."
+      "search": "A Lost Voice Recovered Follow a forgotten Hughes essay from a 1927 encounter with an escaped prisoner to its recovery from the archive. Langston Hughes Archival recovery The work in view. A full route through the subject. A story with two recoveries A meeting on the road A foreword crosses languages The archive speaks again Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2815,20 +3026,21 @@
       "tags": [
         "Langston Hughes",
         "Political speech",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "A full route through the subject.",
+        "A poem inside public speech",
         "The staircase carries a voice",
         "Echo becomes shared language",
         "The image travels again",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/langston-hughes-dont-turn-back/",
       "externalUrl": "https://dont-turn-back-langston--krngien.gamma.site",
       "image": "/03_dont_turn_back.png",
       "imageAlt": "“Don’t Turn Back”: Langston Hughes, MLK, and Barack Obama cover",
       "relatedBooks": [],
-      "search": "“Don’t Turn Back” Trace “Mother to Son” through the speeches of Martin Luther King Jr and Barack Obama. Langston Hughes Political speech What this guide is for. Three ways into the guide. The staircase carries a voice Echo becomes shared language The image travels again Open the guide when you are ready. Back into the library."
+      "search": "“Don’t Turn Back” Trace “Mother to Son” through the speeches of Martin Luther King Jr and Barack Obama. Langston Hughes Political speech The work in view. A full route through the subject. A poem inside public speech The staircase carries a voice Echo becomes shared language The image travels again Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2838,11 +3050,11 @@
       "tags": [
         "Moby-Dick",
         "Study guide",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/moby-dick/study-guide/",
       "externalUrl": "https://moby-dick-study-guide-4w1kshg.gamma.site",
@@ -2851,7 +3063,7 @@
       "relatedBooks": [
         "/books/moby-dick/"
       ],
-      "search": "Moby-Dick: Study Guide Follow the voyage, characters, whaling history and the changing forms through which Ishmael tells the story. Moby-Dick Study guide What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Moby-Dick: Study Guide Follow the voyage, characters, whaling history and the changing forms through which Ishmael tells the story. Moby-Dick Study guide The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2861,18 +3073,18 @@
       "tags": [
         "Harper Lee",
         "Biography",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/biography-of-lee-harper-1926-2016/",
       "externalUrl": "https://biography-of-lee-harper--6zdzg8h.gamma.site",
       "image": "/Biography%20of%20Harper%20Lee.png",
       "imageAlt": "Biography of Lee, Harper (1926–2016) cover",
       "relatedBooks": [],
-      "search": "Biography of Harper Lee (1926–2016) Meet the writer of To Kill a Mockingbird through her Alabama childhood, New York years and literary career. Harper Lee Biography What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Biography of Harper Lee (1926–2016) Meet the writer of To Kill a Mockingbird through her Alabama childhood, New York years and literary career. Harper Lee Biography The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2882,18 +3094,18 @@
       "tags": [
         "To Kill a Mockingbird",
         "Characters and themes",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/to-kill-a-mockingbird-character-list-major-themes/",
       "externalUrl": "https://to-kill-a-mockingbird-fk96i8f.gamma.site",
       "image": "/To%20Kill%20a%20Mockingbird%20Character%20List%20%26%20Major%20Themes.png",
       "imageAlt": "To Kill a Mockingbird: Character List & Major Themes cover",
       "relatedBooks": [],
-      "search": "To Kill a Mockingbird: Character List & Major Themes Keep the novel’s principal characters clear and connect them to justice, prejudice, childhood and moral courage. To Kill a Mockingbird Characters and themes What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "To Kill a Mockingbird: Character List & Major Themes Keep the novel’s principal characters clear and connect them to justice, prejudice, childhood and moral courage. To Kill a Mockingbird Characters and themes The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2903,18 +3115,18 @@
       "tags": [
         "The Great Gatsby",
         "Turning point",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/turning-point-in-the-great-gatsby/",
       "externalUrl": "https://turning-point-in-the-gre-hrmddv5.gamma.site",
       "image": "/Turning-Point-in-The-Great-Gatsby.png",
       "imageAlt": "Turning Point in The Great Gatsby cover",
       "relatedBooks": [],
-      "search": "Turning Point in The Great Gatsby Examine the scene and decisions that turn Gatsby’s recovered dream towards exposure and collapse. The Great Gatsby Turning point What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Turning Point in The Great Gatsby Examine the scene and decisions that turn Gatsby’s recovered dream towards exposure and collapse. The Great Gatsby Turning point The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2924,18 +3136,18 @@
       "tags": [
         "F. Scott Fitzgerald",
         "Biography",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/biography-of-f-scott-fitzgerald/",
       "externalUrl": "https://biography-of-f-scott-fit-mod3wix.gamma.site",
       "image": "/Biography-of-F-Scott-Fitzgerald.png",
       "imageAlt": "Biography of F. Scott Fitzgerald cover",
       "relatedBooks": [],
-      "search": "Biography of F. Scott Fitzgerald Place Fitzgerald’s life, writing, reputation and Jazz Age career beside the novel for which he is best known. F. Scott Fitzgerald Biography What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Biography of F. Scott Fitzgerald Place Fitzgerald’s life, writing, reputation and Jazz Age career beside the novel for which he is best known. F. Scott Fitzgerald Biography The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2945,18 +3157,18 @@
       "tags": [
         "The Great Gatsby",
         "Themes and symbols",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/corruption-the-american-dream-symbolism-and-illusion-in-the-great-gatsby/",
       "externalUrl": "https://corruption-the-american--hhs9alp.gamma.site",
       "image": "/Corruption-the-American-Dream-Symbolism-and-Illusion-in-The-Great-Gatsby.png",
       "imageAlt": "Corruption, the American Dream, Symbolism, and Illusion in The Great Gatsby cover",
       "relatedBooks": [],
-      "search": "Corruption, the American Dream, Symbolism, and Illusion in The Great Gatsby Connect the novel’s social corruption and illusions to its recurring symbols and broken versions of success. The Great Gatsby Themes and symbols What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Corruption, the American Dream, Symbolism, and Illusion in The Great Gatsby Connect the novel’s social corruption and illusions to its recurring symbols and broken versions of success. The Great Gatsby Themes and symbols The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2966,18 +3178,18 @@
       "tags": [
         "The Great Gatsby",
         "Relationships",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/death-of-a-character-important-relationships-in-the-great-gatsby/",
       "externalUrl": "https://death-of-a-character-imp-cv6a30z.gamma.site",
       "image": "/Death-of-a-Character-and-Important-Relationships-in-The-Great-Gatsby.png",
       "imageAlt": "Death of a Character & Important Relationships in The Great Gatsby cover",
       "relatedBooks": [],
-      "search": "Death of a Character & Important Relationships in The Great Gatsby Study a crucial death through the relationships, loyalties and failures that prepare for it. The Great Gatsby Relationships What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Death of a Character & Important Relationships in The Great Gatsby Study a crucial death through the relationships, loyalties and failures that prepare for it. The Great Gatsby Relationships The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -2987,18 +3199,18 @@
       "tags": [
         "The Great Gatsby",
         "Essay plan",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/great-gatsby-essay-plan-setting-symbolism-the-american-dream/",
       "externalUrl": "https://great-gatsby-essay-plan--vuql20z.gamma.site",
       "image": "/Great-Gatsby-Essay-Plan-Setting-Symbolism-and-the-American-Dream.png",
       "imageAlt": "Great Gatsby Essay Plan: Setting, Symbolism & the American Dream cover",
       "relatedBooks": [],
-      "search": "The Great Gatsby Essay Plan Build an essay that connects setting and symbolism to Fitzgerald’s treatment of the American Dream. The Great Gatsby Essay plan What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "The Great Gatsby Essay Plan Build an essay that connects setting and symbolism to Fitzgerald’s treatment of the American Dream. The Great Gatsby Essay plan The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -3008,18 +3220,18 @@
       "tags": [
         "The Great Gatsby",
         "Gatsby",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/admiration-for-gatsby-in-the-great-gatsby/",
       "externalUrl": "https://admiration-for-gatsby-in-1vuc0qs.gamma.site",
       "image": "/Admiration-for-Gatsby-in-The-Great-Gatsby.png",
       "imageAlt": "Admiration for Gatsby in The Great Gatsby cover",
       "relatedBooks": [],
-      "search": "Admiration for Gatsby in The Great Gatsby Test Nick’s admiration against Gatsby’s hope, reinvention, deception and moral choices. The Great Gatsby Gatsby What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Admiration for Gatsby in The Great Gatsby Test Nick’s admiration against Gatsby’s hope, reinvention, deception and moral choices. The Great Gatsby Gatsby The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -3029,18 +3241,18 @@
       "tags": [
         "The Great Gatsby",
         "Character",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/things-we-admire-about-gatsby/",
       "externalUrl": "https://things-we-admire-about-g-bga59ap.gamma.site",
       "image": "/THINGS-WE-ADMIRE-ABOUT-GATSBY.png",
       "imageAlt": "Things We Admire About Gatsby cover",
       "relatedBooks": [],
-      "search": "Things We Admire About Gatsby A focused revision resource on Gatsby’s hope, loyalty, imagination and capacity for self-creation. The Great Gatsby Character What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "Things We Admire About Gatsby A focused revision resource on Gatsby’s hope, loyalty, imagination and capacity for self-creation. The Great Gatsby Character The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -3050,18 +3262,18 @@
       "tags": [
         "The Great Gatsby",
         "Characters",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/the-great-gatsby-character-study-guide/",
       "externalUrl": "https://the-great-gatsby-charact-g78fiqf.gamma.site",
       "image": "/The-Great-Gatsby-Character-Study-Guide.png",
       "imageAlt": "The Great Gatsby: Character Study Guide cover",
       "relatedBooks": [],
-      "search": "The Great Gatsby: Character Study Guide Review the novel’s central characters, their relationships and the values revealed by their choices. The Great Gatsby Characters What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "The Great Gatsby: Character Study Guide Review the novel’s central characters, their relationships and the values revealed by their choices. The Great Gatsby Characters The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -3071,18 +3283,18 @@
       "tags": [
         "The Great Gatsby",
         "American Dream",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/the-great-gatsby-corruption-illusion-the-american-dream/",
       "externalUrl": "https://the-great-gatsby-corrupt-ozf3n31.gamma.site",
       "image": "/The-Great-Gatsby-Corruption-Illusion-and-the-American-Dream.png",
       "imageAlt": "The Great Gatsby: Corruption, Illusion & the American Dream cover",
       "relatedBooks": [],
-      "search": "The Great Gatsby: Corruption, Illusion & the American Dream Read the novel’s wealth, carelessness and self-invention as a critique of national promise. The Great Gatsby American Dream What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "The Great Gatsby: Corruption, Illusion & the American Dream Read the novel’s wealth, carelessness and self-invention as a critique of national promise. The Great Gatsby American Dream The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     },
     {
       "type": "resource",
@@ -3092,18 +3304,18 @@
       "tags": [
         "The Great Gatsby",
         "Critical reading",
-        "What this guide is for.",
-        "Three ways into the guide.",
+        "The work in view.",
+        "Read, test, return.",
         "Keep the language in view",
-        "Open the guide when you are ready.",
-        "Back into the library."
+        "Read the illustrated guide.",
+        "Books and related reading."
       ],
       "href": "/resources/american/the-great-gatsby-notes-critical-reading/",
       "externalUrl": "https://the-great-gatsby-notes-c-bfksz4c.gamma.site",
       "image": "/The-Great-Gatsby-Notes-and-Critical-Reading.png",
       "imageAlt": "The Great Gatsby: Notes & Critical Reading cover",
       "relatedBooks": [],
-      "search": "The Great Gatsby: Notes & Critical Reading Develop close reading of Fitzgerald’s narration, imagery, structure and critical interpretations. The Great Gatsby Critical reading What this guide is for. Three ways into the guide. Keep the language in view Open the guide when you are ready. Back into the library."
+      "search": "The Great Gatsby: Notes & Critical Reading Develop close reading of Fitzgerald’s narration, imagery, structure and critical interpretations. The Great Gatsby Critical reading The work in view. Read, test, return. Keep the language in view Read the illustrated guide. Books and related reading."
     }
   ],
   "studyEditions": [
@@ -3113,6 +3325,7 @@
       "title": "Jekyll and Hyde",
       "description": "Duality, secrecy, science, setting, narrative method and key passages.",
       "href": "https://mybook.to/ddk9RnO",
+      "externalUrl": "https://mybook.to/ddk9RnO",
       "image": "/Jekyll%20and%20Hyde%20Study.png",
       "imageAlt": "Jekyll and Hyde Study cover",
       "paired": false,
@@ -3127,6 +3340,7 @@
       "title": "A Midsummer Night’s Dream",
       "description": "Love, magic, control, performance, comedy and the mechanicals.",
       "href": "https://mybook.to/tih5",
+      "externalUrl": "https://mybook.to/tih5",
       "image": "/Midsummer%20Night%27s%20Dream%20Study.png",
       "imageAlt": "A Midsummer Night's Dream Study cover",
       "paired": false,
@@ -3141,6 +3355,7 @@
       "title": "Great Expectations",
       "description": "Pip, class, crime, Miss Havisham, Magwitch, narration and endings.",
       "href": "https://mybook.to/jAoMkeE",
+      "externalUrl": "https://mybook.to/jAoMkeE",
       "image": "/Great%20Expectations%20Study.png",
       "imageAlt": "Great Expectations Study cover",
       "paired": false,
@@ -3155,6 +3370,7 @@
       "title": "Macbeth",
       "description": "Ambition, guilt, kingship, violence, prophecy, imagery and tragedy.",
       "href": "https://mybook.to/cntRBz",
+      "externalUrl": "https://mybook.to/cntRBz",
       "image": "/Macbeth%20Study.png",
       "imageAlt": "Macbeth Study cover",
       "paired": false,
@@ -3169,6 +3385,7 @@
       "title": "Hamlet",
       "description": "Revenge, delay, theatre, corruption, mortality, Ophelia and soliloquies.",
       "href": "https://mybook.to/Q1lrp8",
+      "externalUrl": "https://mybook.to/Q1lrp8",
       "image": "/Hamlet%20Study.png",
       "imageAlt": "Hamlet Study cover",
       "paired": false,
@@ -3183,6 +3400,7 @@
       "title": "Frankenstein",
       "description": "Creation, responsibility, isolation, frame narrative, science and sympathy.",
       "href": "https://mybook.to/uGEUdh",
+      "externalUrl": "https://mybook.to/uGEUdh",
       "image": "/Frankenstein%20Study.png",
       "imageAlt": "Frankenstein Study cover",
       "paired": false,
@@ -3197,6 +3415,7 @@
       "title": "Dracula",
       "description": "Gothic threat, documents, gender, science, religion, empire and fear.",
       "href": "https://mybook.to/xGiajwx",
+      "externalUrl": "https://mybook.to/xGiajwx",
       "image": "/Dracula%20Study.png",
       "imageAlt": "Dracula Study cover",
       "paired": false,
@@ -3211,6 +3430,7 @@
       "title": "Moby-Dick",
       "description": "Ahab, Ishmael, obsession, whaling, symbolism, form and narrative voice.",
       "href": "https://mybook.to/VCYoiwF",
+      "externalUrl": "https://mybook.to/VCYoiwF",
       "image": "/Moby%20Dick%20Study.png",
       "imageAlt": "Moby Dick Study cover",
       "paired": false,
@@ -3225,6 +3445,7 @@
       "title": "The Picture of Dorian Gray",
       "description": "Aestheticism, influence, morality, doubling, the portrait and epigrams.",
       "href": "https://mybook.to/BMP2uu",
+      "externalUrl": "https://mybook.to/BMP2uu",
       "image": "/Picture%20of%20Dorian%20Gray%20Study.png",
       "imageAlt": "Picture of Dorian Gray Study cover",
       "paired": false,
@@ -3239,6 +3460,7 @@
       "title": "King Lear",
       "description": "Power, family, madness, sight, justice, Gloucester and tragic structure.",
       "href": "https://mybook.to/yIeXaP",
+      "externalUrl": "https://mybook.to/yIeXaP",
       "image": "/King%20Lear%20Study.png",
       "imageAlt": "King Lear Study cover",
       "paired": false,
@@ -3253,6 +3475,7 @@
       "title": "Richard III",
       "description": "Villainy, rhetoric, performance, power, prophecy, conscience and history.",
       "href": "https://mybook.to/bqGB",
+      "externalUrl": "https://mybook.to/bqGB",
       "image": "/Richard%20III%20Study.png",
       "imageAlt": "Richard III Study cover",
       "paired": false,
@@ -3267,6 +3490,7 @@
       "title": "Othello",
       "description": "Jealousy, race, military honour, Iago, Desdemona, language and tragedy.",
       "href": "https://mybook.to/A8uO",
+      "externalUrl": "https://mybook.to/A8uO",
       "image": "/Othello%20Study.png",
       "imageAlt": "Othello Study cover",
       "paired": false,
@@ -3281,6 +3505,7 @@
       "title": "Julius Caesar",
       "description": "Republic, rhetoric, assassination, Brutus, Antony and public persuasion.",
       "href": "https://mybook.to/donom",
+      "externalUrl": "https://mybook.to/donom",
       "image": "/Julius%20Caesar%20Study.png",
       "imageAlt": "Julius Caesar Study cover",
       "paired": false,
@@ -3293,6 +3518,7 @@
       "title": "The Merry Wives of Windsor",
       "description": "Falstaff, domestic comedy, jealousy, disguise, Windsor and social order.",
       "href": "https://mybook.to/dmYF3qO",
+      "externalUrl": "https://mybook.to/dmYF3qO",
       "image": "/Merry%20Wives%20of%20Windsor%20Study.png",
       "imageAlt": "Merry Wives of Windsor Study cover",
       "paired": false,
@@ -3307,6 +3533,7 @@
       "title": "The Tempest",
       "description": "Power, island setting, Prospero, Ariel, Caliban, masque and forgiveness.",
       "href": "https://mybook.to/pSaIay",
+      "externalUrl": "https://mybook.to/pSaIay",
       "image": "/The%20Tempest%20Study.png",
       "imageAlt": "The Tempest Study cover",
       "paired": false,
@@ -3321,6 +3548,7 @@
       "title": "Much Ado About Nothing",
       "description": "Beatrice, Benedick, Hero, Claudio, overhearing, shame and comedy.",
       "href": "https://mybook.to/8DvAj",
+      "externalUrl": "https://mybook.to/8DvAj",
       "image": "/Much%20Ado%20About%20Nothing%20Study.png",
       "imageAlt": "Much Ado About Nothing Study cover",
       "paired": false,
@@ -3335,6 +3563,7 @@
       "title": "Romeo and Juliet",
       "description": "Love, fate, conflict, youth, haste, Mercutio, Tybalt and tragedy.",
       "href": "https://mybook.to/wwhLC",
+      "externalUrl": "https://mybook.to/wwhLC",
       "image": "/Romeo%20and%20Juliet%20Study.png",
       "imageAlt": "Romeo and Juliet Study cover",
       "paired": false,
@@ -3349,6 +3578,7 @@
       "title": "Tess of the d’Urbervilles",
       "description": "Tess, Alec, Angel, class, rural labour, purity, fate and judgement.",
       "href": "https://mybook.to/FSRJnn",
+      "externalUrl": "https://mybook.to/FSRJnn",
       "image": "/Tess%20of%20the%20D%27urbervilles%20Study.png",
       "imageAlt": "Tess of the d'Urbervilles Study cover",
       "paired": false,
@@ -3363,6 +3593,7 @@
       "title": "A Christmas Carol",
       "description": "Scrooge, Marley, the spirits, poverty, redemption, time and Christmas.",
       "href": "https://mybook.to/OS3XKr",
+      "externalUrl": "https://mybook.to/OS3XKr",
       "image": "/A%20Christmas%20Carol%20Study.png",
       "imageAlt": "A Christmas Carol Study cover",
       "paired": false,
@@ -3377,6 +3608,7 @@
       "title": "All’s Well That Ends Well",
       "description": "Helena, Bertram, healing, consent, class, war and the play’s unsettled ending.",
       "href": "https://mybook.to/lhbh",
+      "externalUrl": "https://mybook.to/lhbh",
       "image": "/All%27s%20Well%20That%20Ends%20Well%20Study.png",
       "imageAlt": "All’s Well That Ends Well Study cover",
       "paired": false,
@@ -3391,6 +3623,7 @@
       "title": "Antony and Cleopatra",
       "description": "Rome, Egypt, empire, performance, gender, political loyalty and tragic spectacle.",
       "href": "https://mybook.to/VgUfa",
+      "externalUrl": "https://mybook.to/VgUfa",
       "image": "/Antony%20and%20Cleopatra%20Study.png",
       "imageAlt": "Antony and Cleopatra Study cover",
       "paired": false,
@@ -3405,6 +3638,7 @@
       "title": "As You Like It",
       "description": "Rosalind, disguise, exile, pastoral Arden, courtship and comic resolution.",
       "href": "https://mybook.to/3EoUR",
+      "externalUrl": "https://mybook.to/3EoUR",
       "image": "/As%20You%20Like%20It%20Study.png",
       "imageAlt": "As You Like It Study cover",
       "paired": false,
@@ -3419,6 +3653,7 @@
       "title": "The Comedy of Errors",
       "description": "Separated families, mistaken identity, commerce, farce, recognition and reunion.",
       "href": "https://mybook.to/x08hp4o",
+      "externalUrl": "https://mybook.to/x08hp4o",
       "image": "/Comedy%20of%20Errors%20Study.png",
       "imageAlt": "The Comedy of Errors Study cover",
       "paired": false,
@@ -3433,6 +3668,7 @@
       "title": "Coriolanus",
       "description": "Military honour, class conflict, rhetoric, family, exile and the Roman crowd.",
       "href": "https://mybook.to/x4F6rs",
+      "externalUrl": "https://mybook.to/x4F6rs",
       "image": "/Coriolanus%20Study.png",
       "imageAlt": "Coriolanus Study cover",
       "paired": false,
@@ -3447,6 +3683,7 @@
       "title": "Cymbeline",
       "description": "Imogen, disguise, jealousy, Britain and Rome, recognition and late romance.",
       "href": "https://mybook.to/ySSywz",
+      "externalUrl": "https://mybook.to/ySSywz",
       "image": "/Cymbeline%20Study%20Cover.png",
       "imageAlt": "Cymbeline Study cover",
       "paired": false,
@@ -3461,6 +3698,7 @@
       "title": "Henry IV, Parts 1 and 2",
       "description": "Hal, Falstaff, kingship, rebellion, honour and the making of Henry V across both plays.",
       "href": "https://mybook.to/3xXPCSy",
+      "externalUrl": "https://mybook.to/3xXPCSy",
       "image": "/Henry%20IV%20parts%201%20and%202%20Study.png",
       "imageAlt": "Henry IV, Parts 1 and 2 Study cover",
       "paired": false,
@@ -3477,6 +3715,7 @@
       "title": "Henry IV, Part 2",
       "description": "A failing king, a changing prince, Falstaff’s hopes, justice and succession.",
       "href": "https://mybook.to/a6b3c",
+      "externalUrl": "https://mybook.to/a6b3c",
       "image": "/Henry%20IV%2C%20Part%202%20Study%20Cover.png",
       "imageAlt": "Henry IV, Part 2 Study cover",
       "paired": false,
@@ -3490,13 +3729,12 @@
       "typeLabel": "Study edition",
       "title": "Henry V",
       "description": "Kingship, rhetoric, Agincourt, national identity, responsibility and the human cost of war.",
-      "href": "https://mybook.to/HPiX",
+      "href": "/study/henry-v/",
+      "externalUrl": "https://mybook.to/HPiX",
       "image": "/Henry%20V%20Study%20Cover.png",
       "imageAlt": "Henry V Study cover",
       "paired": false,
-      "relatedBooks": [
-        "/books/henry-v/"
-      ],
+      "relatedBooks": [],
       "search": "Henry V Kingship, rhetoric, Agincourt, national identity, responsibility and the human cost of war. single text"
     },
     {
@@ -3505,6 +3743,7 @@
       "title": "Love’s Labour’s Lost",
       "description": "Language, courtship, performance, masculine fellowship and a comedy that refuses an easy ending.",
       "href": "https://mybook.to/ENJxO",
+      "externalUrl": "https://mybook.to/ENJxO",
       "image": "/Love%27s%20Labour%27s%20Lost%20Study%20Cover.png",
       "imageAlt": "Love’s Labour’s Lost Study cover",
       "paired": false,
@@ -3519,6 +3758,7 @@
       "title": "Measure for Measure",
       "description": "Law, desire, consent, disguise, justice and the unanswered questions of the final scene.",
       "href": "https://mybook.to/x8aiiFG",
+      "externalUrl": "https://mybook.to/x8aiiFG",
       "image": "/Measure%20for%20Measure%20Study%20Cover.png",
       "imageAlt": "Measure for Measure Study cover",
       "paired": false,
@@ -3532,13 +3772,12 @@
       "typeLabel": "Study edition",
       "title": "The Merchant of Venice",
       "description": "Contracts, mercy, prejudice, money, performance and the divided worlds of Venice and Belmont.",
-      "href": "https://mybook.to/2QzQqmh",
+      "href": "/study/the-merchant-of-venice/",
+      "externalUrl": "https://mybook.to/2QzQqmh",
       "image": "/Merchant%20of%20Venice%20Study%20Cover.png",
       "imageAlt": "The Merchant of Venice Study cover",
       "paired": false,
-      "relatedBooks": [
-        "/books/the-merchant-of-venice/"
-      ],
+      "relatedBooks": [],
       "search": "The Merchant of Venice Contracts, mercy, prejudice, money, performance and the divided worlds of Venice and Belmont. single text"
     },
     {
@@ -3547,6 +3786,7 @@
       "title": "Richard II",
       "description": "Divine kingship, deposition, language, land, ceremony and Bolingbroke’s rise.",
       "href": "https://mybook.to/o0Am2j",
+      "externalUrl": "https://mybook.to/o0Am2j",
       "image": "/Richard%20II%20Study%20Cover.png",
       "imageAlt": "Richard II Study cover",
       "paired": false,
@@ -3560,13 +3800,12 @@
       "typeLabel": "Study edition",
       "title": "The Taming of the Shrew",
       "description": "Courtship, household power, performance, coercion and the continuing argument over Katherina’s ending.",
-      "href": "https://mybook.to/2mR1",
+      "href": "/study/the-taming-of-the-shrew/",
+      "externalUrl": "https://mybook.to/2mR1",
       "image": "/The%20Taming%20of%20the%20Shrew%20Study%20Cover.png",
       "imageAlt": "The Taming of the Shrew Study cover",
       "paired": false,
-      "relatedBooks": [
-        "/books/taming-of-the-shrew/"
-      ],
+      "relatedBooks": [],
       "search": "The Taming of the Shrew Courtship, household power, performance, coercion and the continuing argument over Katherina’s ending. single text"
     },
     {
@@ -3575,6 +3814,7 @@
       "title": "Titus Andronicus",
       "description": "Revenge, Roman ceremony, grief, language, the body and violence staged as public spectacle.",
       "href": "https://mybook.to/gf9uZE",
+      "externalUrl": "https://mybook.to/gf9uZE",
       "image": "/Titus%20Andronicus%20Study%20Cover.png",
       "imageAlt": "Titus Andronicus Study cover",
       "paired": false,
@@ -3589,6 +3829,7 @@
       "title": "Twelfth Night",
       "description": "Disguise, desire, music, mistaken identity, social ambition and an ending with shadows at its edge.",
       "href": "https://mybook.to/l4zC9",
+      "externalUrl": "https://mybook.to/l4zC9",
       "image": "/Twelfth%20Night%20Study%20Cover.png",
       "imageAlt": "Twelfth Night Study cover",
       "paired": false,
@@ -3599,10 +3840,24 @@
     },
     {
       "type": "study",
+      "typeLabel": "Study edition",
+      "title": "The Rime of the Ancient Mariner",
+      "description": "The voyage, the albatross, guilt, punishment, the supernatural, Christian imagery and the frame narrative.",
+      "href": "/study/rime-of-the-ancient-mariner/",
+      "externalUrl": "https://mybook.to/1TqZ",
+      "image": "/Rime%20of%20the%20Ancient%20Mariner%20Study%20Cover.png",
+      "imageAlt": "The Rime of the Ancient Mariner Study cover",
+      "paired": false,
+      "relatedBooks": [],
+      "search": "The Rime of the Ancient Mariner The voyage, the albatross, guilt, punishment, the supernatural, Christian imagery and the frame narrative. single text"
+    },
+    {
+      "type": "study",
       "typeLabel": "Paired study edition",
       "title": "Macbeth and Jekyll and Hyde",
       "description": "Ambition, guilt, duality, secrecy, violence, the supernatural and moral collapse.",
       "href": "https://mybook.to/FAHByQ",
+      "externalUrl": "https://mybook.to/FAHByQ",
       "image": "/Macbeth%20and%20Jekyll%20and%20Hyde%20Study.png",
       "imageAlt": "Macbeth and Jekyll and Hyde Study cover",
       "paired": true,
@@ -3618,6 +3873,7 @@
       "title": "Macbeth and A Christmas Carol",
       "description": "Power, guilt, supernatural warning, social responsibility and transformation.",
       "href": "https://mybook.to/iFtKs",
+      "externalUrl": "https://mybook.to/iFtKs",
       "image": "/Macbeth%20and%20A%20Christmas%20Carol%20Study.png",
       "imageAlt": "Macbeth and A Christmas Carol Study cover",
       "paired": true,
@@ -3633,6 +3889,7 @@
       "title": "Romeo and Juliet and Jekyll and Hyde",
       "description": "Conflict, identity, secrecy, violence and destructive choices.",
       "href": "https://mybook.to/ABlyJH",
+      "externalUrl": "https://mybook.to/ABlyJH",
       "image": "/Romeo%20and%20Juliet%20and%20Jekyll%20and%20Hyde%20Study.jpg",
       "imageAlt": "Romeo and Juliet and Jekyll and Hyde Study cover",
       "paired": true,
@@ -3648,6 +3905,7 @@
       "title": "Romeo and Juliet and A Christmas Carol",
       "description": "Family, social pressure, change, responsibility and moral consequence.",
       "href": "https://mybook.to/2AqrIlR",
+      "externalUrl": "https://mybook.to/2AqrIlR",
       "image": "/Romeo%20and%20Juliet%20and%20A%20Christmas%20Carol%20Study.png",
       "imageAlt": "Romeo and Juliet and A Christmas Carol Study cover",
       "paired": true,
@@ -3673,31 +3931,31 @@
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Renaissance & Early Modern",
-      "description": "These works ask what a society should be and how power really works.",
+      "description": "Theatre and political prose meet in a period preoccupied with power: who possesses it, how it is performed and what it costs.",
       "href": "/renaissance-early-modern/",
       "image": "/Renaissance%20and%20Early%20Modern.png",
       "imageAlt": "Renaissance & Early Modern illustrated banner",
-      "search": "Renaissance & Early Modern These works ask what a society should be and how power really works. They were written amid religious conflict, court politics, travel and the rapid growth of print."
+      "search": "Renaissance & Early Modern Theatre and political prose meet in a period preoccupied with power: who possesses it, how it is performed and what it costs. Webster and Marlowe place ambition, conscience and private choice on stage; More and Machiavelli test government, law and social order on the page."
     },
     {
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Shakespeare",
-      "description": "Thirty-seven plays, from the first histories and comedies to the late collaborations.",
+      "description": "All thirty-seven plays, from the first histories and comedies to the late collaborations, together with the two narrative poems that first made Shakespeare known in print.",
       "href": "/shakespeare/",
       "image": "/Shakespeare.png",
       "imageAlt": "Shakespeare illustrated banner",
-      "search": "Shakespeare Thirty-seven plays, from the first histories and comedies to the late collaborations. Each reading page keeps the words, the book and the stage in the same room."
+      "search": "Shakespeare All thirty-seven plays, from the first histories and comedies to the late collaborations, together with the two narrative poems that first made Shakespeare known in print. Each reading page keeps the words, the book and the stage in the same room."
     },
     {
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Restoration & Enlightenment",
-      "description": "The English novel begins to find its form here, in voyages, private letters, satire and fierce public argument.",
+      "description": "Milton makes biblical history into an epic of freedom and obedience; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power.",
       "href": "/restoration-enlightenment/",
       "image": "/Restoration%20and%20Enlightenment.png",
       "imageAlt": "Restoration & Enlightenment illustrated banner",
-      "search": "Restoration & Enlightenment The English novel begins to find its form here, in voyages, private letters, satire and fierce public argument."
+      "search": "Restoration & Enlightenment Milton makes biblical history into an epic of freedom and obedience; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power. Together, these works show public argument finding new forms."
     },
     {
       "type": "collection",
@@ -3723,11 +3981,11 @@
       "type": "collection",
       "typeLabel": "Collection",
       "title": "American Classics",
-      "description": "Abolitionist argument, autobiography, whaling, river satire, Civil War and the Klondike: these books do not offer one account of America.",
+      "description": "Hawthorne’s romance of public punishment joins abolitionist argument, autobiography, whaling, river satire, Civil War and the Klondike.",
       "href": "/american/",
       "image": "/American%20Classics.png",
       "imageAlt": "American Classics illustrated banner",
-      "search": "American Classics Abolitionist argument, autobiography, whaling, river satire, Civil War and the Klondike: these books do not offer one account of America. They show who could claim freedom, who was denied it and what survival asked of a person."
+      "search": "American Classics Hawthorne’s romance of public punishment joins abolitionist argument, autobiography, whaling, river satire, Civil War and the Klondike. These books do not offer one account of America: they show who could claim freedom, who was denied it and what survival asked of a person."
     },
     {
       "type": "collection",

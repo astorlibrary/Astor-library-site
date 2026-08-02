@@ -2,8 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 require('./rebuild-resources');
+require('./rebuild-resource-additions');
 require('./rebuild-study-additions');
 require('./rebuild-shakespeare-additions');
+require('./rebuild-main-additions');
 
 const root = process.cwd();
 const collections = [

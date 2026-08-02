@@ -310,12 +310,14 @@ for (const match of resourcesHtml.matchAll(resourcePattern)) {
 
 const studyEditions = [];
 const studyHtml = read('study/index.html');
-const studyPattern = /<a class="study-card( dual)?" href="([^"]+)">([\s\S]*?)<\/a>/g;
+const studyPattern = /<a class="study-card( dual)?" href="([^"]+)"([^>]*)>([\s\S]*?)<\/a>/g;
 
 for (const match of studyHtml.matchAll(studyPattern)) {
   const paired = Boolean(match[1]);
   const href = match[2];
-  const block = match[3];
+  const attributes = match[3];
+  const block = match[4];
+  const externalUrl = attributes.match(/data-buy-url="([^"]+)"/)?.[1] || (/^https?:\/\//.test(href) ? href : '');
   const imageMatch = block.match(/<img src="([^"]+)" alt="([^"]*)"/);
   const titleHtml = matchText(block, /<h3>([\s\S]*?)<\/h3>/, 'study edition title');
   const descriptionHtml = matchText(block, /<p>([\s\S]*?)<\/p>/, 'study edition description');
@@ -328,6 +330,7 @@ for (const match of studyHtml.matchAll(studyPattern)) {
     title: title,
     description: description,
     href: href,
+    externalUrl: externalUrl,
     image: imageMatch ? rootPath(imageMatch[1]) : '',
     imageAlt: imageMatch ? textOnly(imageMatch[2]) : '',
     paired: paired,

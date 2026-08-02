@@ -4,6 +4,8 @@ const path = require('path');
 const root = process.cwd();
 const outDir = path.join(root, 'dist');
 const SITE_URL = 'https://astorlibrary.com';
+// This date changes only when a site-wide release materially updates every page.
+const SITE_LASTMOD = '2026-08-02';
 const discoveryFile = path.join(root, 'assets', 'content-index.json');
 const discovery = fs.existsSync(discoveryFile)
   ? JSON.parse(fs.readFileSync(discoveryFile, 'utf8'))
@@ -104,6 +106,12 @@ function passageContext(source) {
   const href = pageHref(source);
   if (!href.startsWith('/passage-room/') || href === '/passage-room/') return null;
   return discovery.passages?.find(item => item.href === href) || null;
+}
+
+function studyContext(source) {
+  const href = pageHref(source);
+  if (!href.startsWith('/study/') || href === '/study/') return null;
+  return discovery.studyEditions?.find(item => item.href === href) || null;
 }
 
 function addBookStructuredData(html, source) {
@@ -246,6 +254,37 @@ function addResourceStructuredData(html, source) {
   return html.replace('</head>', canonical + '<script type="application/ld+json" data-astor-resource-schema>' + json + '</script></head>');
 }
 
+function addStudyStructuredData(html, source) {
+  const study = studyContext(source);
+  if (!study || html.includes('data-astor-study-schema')) return html;
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name: study.title + ' Study Edition',
+    description: study.description,
+    url: absoluteUrl(study.href),
+    sameAs: study.externalUrl || undefined,
+    image: study.image ? absoluteUrl(study.image) : undefined,
+    inLanguage: 'en-GB',
+    learningResourceType: 'Study edition',
+    educationalUse: ['Reading', 'Study', 'Teaching', 'Exam preparation'],
+    creator: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
+    publisher: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
+    publishingPrinciples: absoluteUrl('/editorial/'),
+    isPartOf: { '@type': 'CollectionPage', name: 'Astor Library Study Editions', url: absoluteUrl('/study/') },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Study editions', item: absoluteUrl('/study/') },
+        { '@type': 'ListItem', position: 2, name: study.title, item: absoluteUrl(study.href) }
+      ]
+    }
+  };
+  const canonical = html.includes('rel="canonical"') ? '' : '<link rel="canonical" href="' + absoluteUrl(study.href) + '">';
+  const json = JSON.stringify(schema).replace(/</g, '\\u003c');
+  return html.replace('</head>', canonical + '<script type="application/ld+json" data-astor-study-schema>' + json + '</script></head>');
+}
+
 function addCollectionStructuredData(html, source) {
   const href = pageHref(source);
   if (html.includes('data-astor-collection-schema')) return html;
@@ -254,6 +293,12 @@ function addCollectionStructuredData(html, source) {
   const subject = subjectContext(source);
   let items = [];
   let kind = '';
+  const pageLinks = () => {
+    const seen = new Set();
+    return [...html.matchAll(/<a\b[^>]*href="(\/[^"]*)"[^>]*>([\s\S]*?)<\/a>/gi)]
+      .map(match => ({ href: match[1], title: plainText(match[2]) }))
+      .filter(item => item.href !== href && item.title && !seen.has(item.href) && seen.add(item.href));
+  };
 
   if (href === '/library/' || href === '/classic-literature/') {
     items = discovery.books || [];
@@ -279,6 +324,22 @@ function addCollectionStructuredData(html, source) {
   } else if (href === '/passage-room/') {
     items = discovery.passages || [];
     kind = 'Close readings of classic literature';
+  } else if (href === '/explore/') {
+    items = [
+      ...(discovery.books || []),
+      ...(discovery.resources || []),
+      ...(discovery.studyEditions || []),
+      ...(discovery.authors || []),
+      ...(discovery.subjects || []),
+      ...(discovery.passages || [])
+    ];
+    kind = 'Search the Astor Library catalogue';
+  } else if (href === '/reading-routes/') {
+    items = pageLinks();
+    kind = 'Reading routes through classic literature';
+  } else if (href === '/site-index/') {
+    items = pageLinks();
+    kind = 'Astor Library site index';
   } else {
     return html;
   }
@@ -357,7 +418,8 @@ function addGlobalMetadata(html, source) {
   const author = authorContext(source);
   const subject = subjectContext(source);
   const passage = passageContext(source);
-  const image = book?.image || resource?.image || passage?.image || author?.image || subject?.image || '/Logo.png';
+  const study = studyContext(source);
+  const image = book?.image || resource?.image || passage?.image || study?.image || author?.image || subject?.image || '/Logo.png';
   let metadata = '';
   const absoluteHref = absoluteUrl(href);
   const absoluteImage = absoluteUrl(image);
@@ -407,11 +469,19 @@ function addGlobalMetadata(html, source) {
           '@type': 'WebSite',
           '@id': SITE_URL + '/#website',
           name: 'Astor Library',
-          alternateName: ['Astor Editions', 'astorlibrary.com'],
+          alternateName: ['Astor Library Editions', 'Astor Editions', 'astorlibrary.com'],
           url: SITE_URL + '/',
           inLanguage: 'en-GB',
           description,
-          publisher: { '@id': SITE_URL + '/#organization' }
+          publisher: { '@id': SITE_URL + '/#organization' },
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: {
+              '@type': 'EntryPoint',
+              urlTemplate: SITE_URL + '/explore/?q={search_term_string}'
+            },
+            'query-input': 'required name=search_term_string'
+          }
         }
       ]
     };
@@ -585,14 +655,7 @@ function addGlobalNavigation(html, source) {
   const current = active => active ? ' aria-current="page"' : '';
   const booksCurrent = href === '/library/' || href.startsWith('/books/');
   const shakespeareCurrent = href === '/shakespeare/' || href.startsWith('/shakespeare/');
-  const resourcesCurrent = href === '/resources/' || href.startsWith('/resources/');
-  const studyCurrent = href === '/study/' || href.startsWith('/study/');
-  const passageCurrent = href === '/passage-room/' || href.startsWith('/passage-room/');
-  const searchCurrent = href === '/explore/' || href.startsWith('/explore/');
-  const browseCurrent = [
-    '/subjects/',
-    '/authors/',
-    '/reading-routes/',
+  const periodsCurrent = [
     '/classic-literature/',
     '/ancient-epic/',
     '/renaissance-early-modern/',
@@ -600,33 +663,32 @@ function addGlobalNavigation(html, source) {
     '/romantic-regency/',
     '/victorian/',
     '/american/',
-    '/modern/',
-    '/about/',
-    '/editorial/',
-    '/site-index/'
+    '/modern/'
   ].some(route => href === route || href.startsWith(route));
+  const authorsCurrent = href === '/authors/' || href.startsWith('/authors/');
+  const subjectsCurrent = href === '/subjects/' || href.startsWith('/subjects/');
+  const resourcesCurrent = href === '/resources/' || href.startsWith('/resources/');
+  const studyCurrent = href === '/study/' || href.startsWith('/study/');
+  const passageCurrent = href === '/passage-room/' || href.startsWith('/passage-room/');
+  const searchCurrent = href === '/explore/' || href.startsWith('/explore/');
 
   const header = `<header class="site-header astor-global-header site-nav-ready">
-  <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
-  <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span></button>
+  <div class="astor-header-identity">
+    <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
+    <p>Independent editions of classic literature</p>
+    <a class="astor-header-search" href="/explore/"${current(searchCurrent)}>Search the catalogue <span aria-hidden="true">&rarr;</span></a>
+    <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span></button>
+  </div>
   <nav class="nav astor-primary-nav" id="site-navigation" aria-label="Primary navigation">
-    <a class="nav-link" href="/library/"${current(booksCurrent)}>Books</a>
+    <a class="nav-link" href="/library/"${current(booksCurrent)}>Catalogue</a>
     <a class="nav-link" href="/shakespeare/"${current(shakespeareCurrent)}>Shakespeare</a>
-    <details class="browse-menu astor-browse-menu">
-      <summary${current(browseCurrent)}>Browse</summary>
-      <div class="browse-panel astor-browse-panel">
-        <div class="astor-browse-intro"><p>Find a book by period, writer, subject or question.</p><a href="/explore/">Search the whole library <span aria-hidden="true">&rarr;</span></a></div>
-        <section><h2>The shelves</h2><a href="/library/">All books</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/shakespeare/">Shakespeare</a><a href="/ancient-epic/">Ancient &amp; Epic</a><a href="/victorian/">Victorian</a><a href="/american/">American Classics</a></section>
-        <section><h2>Find another way</h2><a href="/authors/">Writers <span>Follow one writer across the shelves.</span></a><a href="/subjects/">Subjects <span>Gothic, tragedy, epic, satire and more.</span></a><a href="/reading-routes/">Reading routes <span>Begin with a question and move between books.</span></a></section>
-        <section><h2>Read and study</h2><a href="/passage-room/">Passage Room <span>Close readings of short passages.</span></a><a href="/resources/">Free resources <span>Guides you can read online.</span></a><a href="/study/">Study editions <span>For lessons, essays and exams.</span></a></section>
-        <section><h2>About Astor</h2><a href="/about/">Why Astor Library</a><a href="/editorial/">Editorial standards</a><a href="/site-index/">Site index</a></section>
-      </div>
-    </details>
-    <a class="nav-link" href="/resources/"${current(resourcesCurrent)}>Free resources</a>
+    <a class="nav-link" href="/classic-literature/"${current(periodsCurrent)}>Periods</a>
+    <a class="nav-link" href="/authors/"${current(authorsCurrent)}>Writers</a>
+    <a class="nav-link" href="/subjects/"${current(subjectsCurrent)}>Subjects</a>
+    <a class="nav-link" href="/resources/"${current(resourcesCurrent)}>Free library</a>
     <a class="nav-link" href="/study/"${current(studyCurrent)}>Study editions</a>
     <a class="nav-link" href="/passage-room/"${current(passageCurrent)}>Passage Room</a>
   </nav>
-  <a class="astor-header-search" href="/explore/"${current(searchCurrent)}>Search <span aria-hidden="true">&rarr;</span></a>
 </header>`;
 
   const footer = `<footer class="site-footer astor-global-footer">
@@ -648,6 +710,7 @@ function addGlobalNavigation(html, source) {
 function prepareHtml(html, source) {
   html = addBookStructuredData(html, source);
   html = addResourceStructuredData(html, source);
+  html = addStudyStructuredData(html, source);
   html = addAuthorStructuredData(html, source);
   html = addCollectionStructuredData(html, source);
   html = addPassageStructuredData(html, source);
@@ -736,10 +799,10 @@ const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   sitemapUrls.map(page => {
     const image = page.image
       ? '<image:image><image:loc>' + escapeHtml(page.image) + '</image:loc>' +
-        (page.imageTitle ? '<image:title>' + escapeHtml(page.imageTitle) + '</image:title>' : '') +
+        (page.imageTitle ? '<image:title>' + escapeHtml(decodeEntities(page.imageTitle)) + '</image:title>' : '') +
         '</image:image>'
       : '';
-    return '  <url><loc>' + escapeHtml(page.url) + '</loc>' + image + '</url>';
+    return '  <url><loc>' + escapeHtml(page.url) + '</loc><lastmod>' + SITE_LASTMOD + '</lastmod>' + image + '</url>';
   }).join('\n') +
   '\n</urlset>\n';
 fs.writeFileSync(path.join(outDir, 'sitemap.xml'), sitemap);

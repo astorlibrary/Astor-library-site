@@ -51,6 +51,7 @@ module.exports = [
     title: 'Henry V',
     image: 'Henry V Study Cover.png',
     url: 'https://mybook.to/HPiX',
+    pageHref: '/study/henry-v/',
     description: 'Kingship, rhetoric, Agincourt, national identity, responsibility and the human cost of war.'
   },
   {
@@ -69,6 +70,7 @@ module.exports = [
     title: 'The Merchant of Venice',
     image: 'Merchant of Venice Study Cover.png',
     url: 'https://mybook.to/2QzQqmh',
+    pageHref: '/study/the-merchant-of-venice/',
     description: 'Contracts, mercy, prejudice, money, performance and the divided worlds of Venice and Belmont.'
   },
   {
@@ -81,6 +83,7 @@ module.exports = [
     title: 'The Taming of the Shrew',
     image: 'The Taming of the Shrew Study Cover.png',
     url: 'https://mybook.to/2mR1',
+    pageHref: '/study/the-taming-of-the-shrew/',
     description: 'Courtship, household power, performance, coercion and the continuing argument over Katherina’s ending.'
   },
   {
@@ -94,5 +97,12 @@ module.exports = [
     image: 'Twelfth Night Study Cover.png',
     url: 'https://mybook.to/l4zC9',
     description: 'Disguise, desire, music, mistaken identity, social ambition and an ending with shadows at its edge.'
+  },
+  {
+    title: 'The Rime of the Ancient Mariner',
+    image: 'Rime of the Ancient Mariner Study Cover.png',
+    url: 'https://mybook.to/1TqZ',
+    pageHref: '/study/rime-of-the-ancient-mariner/',
+    description: 'The voyage, the albatross, guilt, punishment, the supernatural, Christian imagery and the frame narrative.'
   }
 ];

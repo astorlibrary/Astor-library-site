@@ -154,21 +154,20 @@ for (const file of htmlFiles) {
 }
 
 const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-const homepageMain = homepage.match(/<main class="library-home"[\s\S]*?<\/main>/i)?.[0] || '';
+const homepageMain = homepage.match(/<main class="working-catalogue"[\s\S]*?<\/main>/i)?.[0] || '';
 if (!homepage.includes('/assets/home.css')) failures.push('The homepage is missing its lightweight stylesheet');
 if (!homepage.includes('/assets/navigation.css')) failures.push('The homepage is missing the shared navigation stylesheet');
 if (!homepage.includes('class="site-header astor-global-header')) failures.push('The homepage is missing the shared header');
 if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failures.push('The homepage is missing the grouped footer');
-if (!homepageMain.includes('A reference library, built around the book.')) failures.push('The homepage is missing its text-first opening');
+if (!homepageMain.includes('Read or study a classic without losing sight of the book.')) failures.push('The homepage is missing its central promise');
 if (!homepageMain.includes('id="home-search"')) failures.push('The homepage is missing its immediate library search');
-if (!homepageMain.includes('class="edition-anatomy"')) failures.push('The homepage is missing its edition anatomy');
-if (!homepageMain.includes('class="library-start-grid"')) failures.push('The homepage is missing its clear starting points');
-if (!homepageMain.includes('class="library-new-shelf"')) failures.push('The homepage is missing its new-books shelf');
-if (!homepageMain.includes('class="library-method-ledger"')) failures.push('The homepage is missing its edition method');
-if (!homepageMain.includes('class="library-browse-grid"')) failures.push('The homepage is missing its browse routes');
-if (!homepageMain.includes('class="library-desks-grid"')) failures.push('The homepage is missing its reading desks');
-if (!homepageMain.includes('class="library-history"')) failures.push('The homepage is missing the Astor history');
-if (countMatches(homepageMain, /<section class="library-/g) !== 7) failures.push('The homepage must contain seven purposeful sections');
+if (!homepageMain.includes('class="catalogue-edition-spread"')) failures.push('The homepage is missing its edition anatomy');
+if (!homepageMain.includes('class="catalogue-index-rows"')) failures.push('The homepage is missing its clear starting points');
+if (!homepageMain.includes('class="catalogue-accession-shelf"')) failures.push('The homepage is missing its new-books shelf');
+if (!homepageMain.includes('class="catalogue-find-rows"')) failures.push('The homepage is missing its browse routes');
+if (!homepageMain.includes('class="catalogue-reading-room"')) failures.push('The homepage is missing its reading room');
+if (!homepageMain.includes('class="catalogue-colophon"')) failures.push('The homepage is missing the Astor history');
+if (countMatches(homepageMain, /<section class="catalogue-/g) !== 7) failures.push('The homepage must contain seven purposeful sections');
 for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/']) {
   if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
 }
@@ -376,14 +375,53 @@ for (const slug of newShakespeareSlugs) {
   if (wordCount < 1200) failures.push(slug + ' is too thin at ' + wordCount + ' visible words');
 }
 
+const mainAdditionLinks = {
+  'the-duchess-of-malfi': 'https://mybook.to/gxHx',
+  'the-rape-of-lucrece': 'https://mybook.to/Nbx2',
+  'venus-and-adonis': 'https://mybook.to/PDmxAYg',
+  'doctor-faustus': 'https://mybook.to/B3XgneK',
+  'the-scarlet-letter': 'https://mybook.to/UlUCApB',
+  'paradise-lost': 'https://mybook.to/d36s3bi'
+};
+for (const [slug, purchaseUrl] of Object.entries(mainAdditionLinks)) {
+  const file = path.join(root, 'books', slug, 'index.html');
+  if (!fs.existsSync(file)) {
+    failures.push('The new main-edition reading page is missing: ' + slug);
+    continue;
+  }
+  const html = fs.readFileSync(file, 'utf8');
+  for (const className of ['page-contents', 'quick-facts', 'astor-movement-grid', 'astor-reading-grid', 'astor-context-grid', 'astor-character-grid', 'astor-question-grid', 'source-list']) {
+    if (!html.includes('class="' + className)) failures.push(slug + ' is missing ' + className);
+  }
+  if (!html.includes('href="' + purchaseUrl + '"')) failures.push(slug + ' is missing its purchase link');
+  if (countMatches(html, /class="fact"/g) !== 4) failures.push(slug + ' must contain four checked facts');
+  if (countMatches(html, /class="prod-card prose-card"/g) !== 3) failures.push(slug + ' must contain three close readings');
+  const sources = html.match(/<nav class="source-list"[\s\S]*?<\/nav>/)?.[0] || '';
+  if (countMatches(sources, /href="https?:\/\//g) < 3) failures.push(slug + ' needs three authoritative further-reading links');
+  const wordCount = visibleText(html).split(/\s+/).filter(Boolean).length;
+  if (wordCount < 1000) failures.push(slug + ' is too thin at ' + wordCount + ' visible words');
+}
+
 const shakespeareHub = fs.readFileSync(path.join(root, 'shakespeare', 'index.html'), 'utf8');
 if (!shakespeareHub.includes('class="shakespeare-reading-room"')) failures.push('The Shakespeare collection is missing its reading room');
-if (countMatches(shakespeareHub, /<article class="edition-card">/g) !== 39) failures.push('The Shakespeare collection must contain 39 Astor edition records');
+if (countMatches(shakespeareHub, /<article class="edition-card">/g) !== 41) failures.push('The Shakespeare collection must contain 41 Astor edition records');
 
 const studyHub = fs.readFileSync(path.join(root, 'study', 'index.html'), 'utf8');
-if (countMatches(studyHub, /class="study-card(?: dual)?"/g) !== 39) failures.push('The study collection must contain 39 editions');
+if (countMatches(studyHub, /class="study-card(?: dual)?"/g) !== 40) failures.push('The study collection must contain 40 editions');
 for (const studyUrl of ['https://mybook.to/HPiX', 'https://mybook.to/ENJxO', 'https://mybook.to/x8aiiFG', 'https://mybook.to/2QzQqmh', 'https://mybook.to/o0Am2j', 'https://mybook.to/2mR1', 'https://mybook.to/gf9uZE', 'https://mybook.to/l4zC9']) {
-  if (!studyHub.includes('href="' + studyUrl + '"')) failures.push('The study collection is missing ' + studyUrl);
+  if (!studyHub.includes('href="' + studyUrl + '"') && !studyHub.includes('data-buy-url="' + studyUrl + '"')) failures.push('The study collection is missing ' + studyUrl);
+}
+for (const slug of ['henry-v', 'the-merchant-of-venice', 'the-taming-of-the-shrew', 'rime-of-the-ancient-mariner']) {
+  const file = path.join(root, 'study', slug, 'index.html');
+  if (!fs.existsSync(file)) {
+    failures.push('The individual study-edition page is missing: ' + slug);
+    continue;
+  }
+  const html = fs.readFileSync(file, 'utf8');
+  if (countMatches(html, /<h1\b/g) !== 1) failures.push(slug + ' study page must contain one H1');
+  if (!html.includes('class="page-contents"') || !html.includes('class="source-list"')) failures.push(slug + ' study page is missing its reading structure');
+  const wordCount = visibleText(html).split(/\s+/).filter(Boolean).length;
+  if (wordCount < 900) failures.push(slug + ' study page is too thin at ' + wordCount + ' visible words');
 }
 const tamingPage = fs.readFileSync(path.join(root, 'books', 'taming-of-the-shrew', 'index.html'), 'utf8');
 if (!tamingPage.includes('href="https://mybook.to/SjnG"')) failures.push('The Taming of the Shrew page is missing its main edition');
@@ -507,11 +545,14 @@ if (fs.existsSync(distDir)) {
     if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
       failures.push('dist/' + fileName + ' is missing its book description for search engines');
     }
-    if (/^(?:authors|subjects|passage-room|classic-literature|library|resources|study|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
+    if (/^(?:authors|subjects|passage-room|classic-literature|library|resources|study|explore|reading-routes|site-index|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
       failures.push('dist/' + fileName + ' is missing its collection description for search engines');
     }
     if (/^passage-room\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-passage-schema')) {
       failures.push('dist/' + fileName + ' is missing its close-reading description for search engines');
+    }
+    if (/^study\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-study-schema')) {
+      failures.push('dist/' + fileName + ' is missing its study-edition description for search engines');
     }
     if (/^subjects\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
       failures.push('dist/' + fileName + ' is missing its subject description for search engines');

@@ -16,7 +16,8 @@ function escapeHtml(value) {
 }
 
 const cards = additions.map(function (edition) {
-  return '<a class="study-card" href="' + escapeHtml(edition.url) + '">' +
+  return '<a class="study-card" href="' + escapeHtml(edition.pageHref || edition.url) + '"' +
+    (edition.pageHref ? ' data-buy-url="' + escapeHtml(edition.url) + '"' : '') + '>' +
     '<img src="/' + encodeURIComponent(edition.image).replace(/'/g, '%27') + '" alt="' + escapeHtml(edition.title) + ' Study cover">' +
     '<span class="mini-kicker">Study edition</span>' +
     '<h3><em>' + escapeHtml(edition.title) + '</em></h3>' +
