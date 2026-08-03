@@ -655,7 +655,7 @@ function addBookPassageLinks(html, source) {
     : '';
 
   const section = '<section class="book-passage-shelf" aria-labelledby="book-passage-title">' +
-    '<div class="book-passage-shelf-head"><div><p class="kicker">The Passage Room</p><h2 id="book-passage-title">Read one page slowly.</h2></div>' +
+    '<div class="book-passage-shelf-head"><div><p class="kicker">The Passage Room</p><h2 id="book-passage-title">Read one page slowly</h2></div>' +
     '<p>A complete book asks for time. Here the pace changes: one short stretch of the original stays open while notes follow the exact words that make it work.</p></div>' +
     '<div class="book-passage-grid">' + cards + '</div>' + resourceLinks + teachingLinks + '</section>';
   return html.replace('</main>', section + '</main>');

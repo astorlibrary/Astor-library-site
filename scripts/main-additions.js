@@ -23,7 +23,7 @@ module.exports = [
       'This Astor Library edition keeps the complete play at the centre. Scene summaries and explanatory notes make the action easier to follow, while longer material opens Webster’s sources, the Jacobean theatre, court service, tragedy, language and performance.',
       'The study material does not turn the Duchess into a simple emblem or Bosola into a puzzle with one answer. It gives readers the evidence needed to argue about freedom, rank, secrecy, conscience and what remains of identity when public power has been stripped away.'
     ],
-    movementTitle: 'A secret household inside a watched court.',
+    movementTitle: 'A secret household inside a watched court',
     movementIntro: 'Five turns take the play from self-directed marriage to the final attempt to answer violence with violence.',
     movements: [
       { label: 'Marriage', title: 'The Duchess chooses', body: 'Ordered never to remarry, the Duchess proposes to Antonio herself. Cariola witnesses a ceremony that is loving, legally serious and dangerously private.' },
@@ -32,7 +32,7 @@ module.exports = [
       { label: 'Imprisonment', title: 'Power becomes theatre', body: 'Ferdinand uses wax figures, darkness and a dance of madmen to assault the Duchess’s mind before executioners kill her, Cariola and two children.' },
       { label: 'Reckoning', title: 'Revenge misses its mark', body: 'Bosola turns against the brothers but kills Antonio by mistake. The Cardinal, Ferdinand and Bosola die, leaving the surviving son to carry the family forward.' }
     ],
-    readingTitle: 'Three places where authority is tested.',
+    readingTitle: 'Three places where authority is tested',
     readings: [
       {
         label: 'Marriage',
@@ -59,13 +59,13 @@ module.exports = [
         ]
       }
     ],
-    contextTitle: 'History, theatre and service.',
+    contextTitle: 'History, theatre and service',
     contexts: [
       { label: 'Source', title: 'History reshaped', body: 'The real Giovanna d’Aragona secretly married Antonio Beccadelli after her first husband’s death. Webster inherited the story through European retellings and gives the Duchess a dramatic presence stronger than the surviving record affords her.' },
       { label: 'Stage', title: 'A tragedy for two theatres', body: 'Blackfriars could intensify darkness, music and close psychological pressure; the Globe offered a larger public space for ceremonies and sudden reversals. The play’s effects belong to bodies and voices, not darkness on the page alone.' },
       { label: 'Court', title: 'Service and surveillance', body: 'Antonio and Bosola depend upon aristocratic employment. Offices, rewards and patronage shape moral choices throughout a court where access to power is bought through usefulness.' }
     ],
-    figuresTitle: 'The people carrying the pressure.',
+    figuresTitle: 'The people carrying the pressure',
     figures: [
       { name: 'The Duchess', body: 'A widowed ruler whose private marriage challenges patriarchal and dynastic control.' },
       { name: 'Antonio Bologna', body: 'Her steward and husband: thoughtful and honourable, but increasingly vulnerable after exposure.' },
@@ -110,7 +110,7 @@ module.exports = [
       'This Astor Library edition presents the complete play with summaries and explanatory notes, then places the A-text and B-text, the Faust-book source, morality drama, Reformation argument and the play’s extraordinary stage life in view.',
       'The longer study material follows knowledge, spectacle, repentance, despair and the changing relation between Faustus and Mephistopheles. It treats the play’s theological questions seriously without pretending that performance can settle them once and for all.'
     ],
-    movementTitle: 'Twenty-four years narrowing towards one hour.',
+    movementTitle: 'Twenty-four years narrowing towards one hour',
     movementIntro: 'The play begins with global fantasies and ends by making every minute audible.',
     movements: [
       { label: 'Choice', title: 'Learning is declared too small', body: 'Faustus reviews the university disciplines and values each only by whether it can grant absolute power. Valdes and Cornelius encourage magic.' },
@@ -119,7 +119,7 @@ module.exports = [
       { label: 'Diminishment', title: 'Empire becomes entertainment', body: 'Faustus travels and performs tricks for the Pope, Emperor, duke and lesser customers. His imagined command of nations contracts into display.' },
       { label: 'Last hour', title: 'Time becomes the antagonist', body: 'An Old Man makes a final appeal. Faustus asks for Helen, then for time, concealment and extinction as the clock moves towards midnight.' }
     ],
-    readingTitle: 'Read the warning inside the wish.',
+    readingTitle: 'Read the warning inside the wish',
     readings: [
       {
         label: 'Opening',
@@ -146,13 +146,13 @@ module.exports = [
         ]
       }
     ],
-    contextTitle: 'Text, theology and theatre.',
+    contextTitle: 'Text, theology and theatre',
     contexts: [
       { label: 'Reformation', title: 'Grace and despair', body: 'Free will, repentance, predestination and despair were urgent theological questions. The play keeps repentance within Faustus’s hearing while showing how habit can make freedom feel impossible.' },
       { label: 'Text', title: 'Two early versions', body: 'The 1604 A-text and 1616 B-text differ in length, wording and incident. Theatre records also show payments for additions in 1602. Every modern performance must choose among versions.' },
       { label: 'Form', title: 'Morality meets tragedy', body: 'Good and Evil Angels, devils and personified sins come from morality drama. Marlowe places them beside a Renaissance scholar, classical reference and ambitious blank verse.' }
     ],
-    figuresTitle: 'Voices around Faustus.',
+    figuresTitle: 'Voices around Faustus',
     figures: [
       { name: 'Doctor Faustus', body: 'A celebrated scholar whose appetite for limitless power steadily narrows his life.' },
       { name: 'Mephistopheles', body: 'Lucifer’s agent: tempter, servant and deeply informed witness to damnation.' },
@@ -197,7 +197,7 @@ module.exports = [
       'This Astor Library edition presents the complete poem with a clear account of each movement, explanatory notes and material on rhyme royal, complaint, Roman history, Shakespeare’s sources, the Troy painting, testimony and the poem’s political ending.',
       'The additional material treats sexual violence with care and keeps responsibility with Tarquin. It also asks how inherited codes of chastity and family honour make Lucrece carry the public burden of a crime committed against her.'
     ],
-    movementTitle: 'From a boast at war to a revolution at home.',
+    movementTitle: 'From a boast at war to a revolution at home',
     movementIntro: 'The crime occupies one part of the poem; its aftermath, interpretation and public use occupy far more.',
     movements: [
       { label: 'Ardea', title: 'Praise becomes competition', body: 'Collatine praises Lucrece before Roman commanders. Tarquin hears her virtue described as treasure and leaves the camp to see her.' },
@@ -206,7 +206,7 @@ module.exports = [
       { label: 'Troy', title: 'A painting becomes a witness', body: 'Lucrece studies the fall of Troy, identifies with Hecuba’s grief and directs anger towards the deceptively credible Sinon.' },
       { label: 'Rome', title: 'Testimony becomes revolt', body: 'She names Tarquin, demands an oath and dies. Brutus takes command of the response and leads the movement that expels the Tarquins.' }
     ],
-    readingTitle: 'Praise, consent and the control of a story.',
+    readingTitle: 'Praise, consent and the control of a story',
     readings: [
       {
         label: 'Possession',
@@ -233,13 +233,13 @@ module.exports = [
         ]
       }
     ],
-    contextTitle: 'Stanza, history and reputation.',
+    contextTitle: 'Stanza, history and reputation',
     contexts: [
       { label: 'Form', title: 'Rhyme royal and complaint', body: 'The seven-line stanza carries serious narrative and complaint. Its couplet can sound conclusive, but Shakespeare often makes one argument spill into the next, fitting a mind unable to settle imposed injury.' },
       { label: 'History', title: 'A Roman founding story', body: 'Livy and Ovid connect Lucretia’s death with the overthrow of the Tarquins. Shakespeare delays that political end for hundreds of lines in order to remain with Lucrece.' },
       { label: 'Code', title: 'Chastity and family honour', body: 'Lucrece insists that her mind did not consent, yet fears Tarquin’s act will attach to her name. The poem exposes a system in which innocence can be inwardly certain and publicly fragile.' }
     ],
-    figuresTitle: 'People and voices in the poem.',
+    figuresTitle: 'People and voices in the poem',
     figures: [
       { name: 'Lucrece', body: 'The poem’s central consciousness, separating bodily violation from inward consent and making suffering public.' },
       { name: 'Sextus Tarquinius', body: 'The king’s son, who understands the obligations he breaks and threatens to control the evidence.' },
@@ -284,7 +284,7 @@ module.exports = [
       'This Astor Library edition presents the complete poem with summaries and notes, then follows Shakespeare’s Ovidian source, the six-line stanza, the 1590s minor epic, arguments about procreation, animal appetite, hunting, metamorphosis and reception.',
       'The study material keeps the gender reversal and consent in view together. It asks how changing the expected pursuer alters our response, why it does not cancel coercion and what Venus does with grief after the boar ends a courtship Adonis never accepted.'
     ],
-    movementTitle: 'An interrupted hunt becomes an argument about desire.',
+    movementTitle: 'An interrupted hunt becomes an argument about desire',
     movementIntro: 'Five movements carry the poem from comic pursuit to death, flower and prophecy.',
     movements: [
       { label: 'Interruption', title: 'Venus stops the hunt', body: 'She seizes Adonis’s horse, pulls him down, praises his beauty and tries to keep him with her.' },
@@ -293,7 +293,7 @@ module.exports = [
       { label: 'Warning', title: 'The boar enters the language', body: 'Adonis plans the dangerous hunt. Venus urges the harmless hare and imagines wounds the boar may inflict.' },
       { label: 'Metamorphosis', title: 'A body becomes a flower', body: 'Venus finds Adonis killed. A purple-and-white flower rises in his place, and she prophesies pain in future love.' }
     ],
-    readingTitle: 'Pursuit, analogy and the wound.',
+    readingTitle: 'Pursuit, analogy and the wound',
     readings: [
       {
         label: 'Consent',
@@ -320,13 +320,13 @@ module.exports = [
         ]
       }
     ],
-    contextTitle: 'Ovid, print and the six-line stanza.',
+    contextTitle: 'Ovid, print and the six-line stanza',
     contexts: [
       { label: 'Source', title: 'Ovid changed', body: 'In the Metamorphoses, Venus and Adonis are lovers before the fatal hunt. Shakespeare makes refusal the central action, turning adaptation into an argument about a love story with only one willing lover.' },
       { label: 'Genre', title: 'The Elizabethan minor epic', body: 'The fashionable 1590s form joins classical erotic narrative to worked rhetoric and changing tone. The poem appeared during prolonged closures of London’s theatres.' },
       { label: 'Stanza', title: 'Six lines at a time', body: 'Alternating rhyme creates movement and counterargument; the couplet clinches a joke or sharpens an image. Venus repeatedly believes her case is complete, only for refusal to begin it again.' }
     ],
-    figuresTitle: 'Desire, refusal and the speaking world.',
+    figuresTitle: 'Desire, refusal and the speaking world',
     figures: [
       { name: 'Venus', body: 'Goddess of love, but not master of another person’s desire; witty, forceful, inventive and finally grief-stricken.' },
       { name: 'Adonis', body: 'A beautiful young hunter whose brief responses remain a consistent refusal of Venus and the future she proposes.' },
@@ -371,7 +371,7 @@ module.exports = [
       'This Astor Library edition presents the complete novel with chapter summaries and contextual notes. Longer material follows the Custom House, Puritan Boston, romance, the three scaffold scenes, the unstable A, symbolism, narration, character and reception.',
       'Hawthorne’s ambiguity is kept open rather than converted into a key where each object has one meaning. The aim is to help readers distinguish evidence from interpretation and see why public certainty becomes one of the book’s most dangerous forms of power.'
     ],
-    movementTitle: 'Three public scenes and seven years of concealment.',
+    movementTitle: 'Three public scenes and seven years of concealment',
     movementIntro: 'The scaffold returns each time the relation between secrecy and public knowledge changes.',
     movements: [
       { label: 'Exposure', title: 'Prison door and first scaffold', body: 'Hester emerges with Pearl and the A. She refuses to name the father and recognises her absent husband in the crowd.' },
@@ -380,7 +380,7 @@ module.exports = [
       { label: 'Forest', title: 'Escape is imagined', body: 'Hester reveals Chillingworth’s identity to Dimmesdale and plans Europe. Pearl will not cross the brook until the A is restored.' },
       { label: 'Confession', title: 'The last scaffold', body: 'After the Election Sermon, Dimmesdale acknowledges Hester and Pearl, confesses and dies. Hester later returns and resumes the letter.' }
     ],
-    readingTitle: 'A sign, a stage and a child.',
+    readingTitle: 'A sign, a stage and a child',
     readings: [
       {
         label: 'The A',
@@ -407,13 +407,13 @@ module.exports = [
         ]
       }
     ],
-    contextTitle: 'Puritan Boston inside an American romance.',
+    contextTitle: 'Puritan Boston inside an American romance',
     contexts: [
       { label: 'History', title: 'The seventeenth century from 1850', body: 'Historical figures appear, but the romance is not a documentary reconstruction. Hawthorne uses Puritan Boston to examine punishment, authority and inherited guilt from nineteenth-century America.' },
       { label: 'Form', title: 'Romance and uncertainty', body: 'The Custom-House invents archival origins. Within the story, the narrator offers natural and supernatural explanations without deciding between them, making readers experience the desire for verdicts.' },
       { label: 'Inheritance', title: 'Ancestry and office', body: 'Hawthorne’s ancestors included a Salem witch-trial judge. His own Custom House employment adds another history of institutions, patronage and judgement to the frame.' }
     ],
-    figuresTitle: 'The people made to carry meanings.',
+    figuresTitle: 'The people made to carry meanings',
     figures: [
       { name: 'Hester Prynne', body: 'A skilled needleworker, mother and object of discipline who develops an independent life without escaping the letter’s history.' },
       { name: 'Pearl', body: 'Hester’s observant daughter, repeatedly made to serve as a symbol while asking the clearest questions.' },
@@ -458,7 +458,7 @@ module.exports = [
       'This Astor Library edition presents the complete poem with book-by-book summaries and explanatory notes. Longer material opens the biblical and epic traditions, Milton’s politics and blindness, the 1667 and 1674 editions, blank verse, character, imagery, criticism and reception.',
       'The support helps readers follow long sentences without flattening them and read Satan’s rhetoric without mistaking force for truth. It keeps the cosmic scale connected to the poem’s most intimate question: how two people speak to each other before and after trust fails.'
     ],
-    movementTitle: 'From defeated rebellion to a world outside Eden.',
+    movementTitle: 'From defeated rebellion to a world outside Eden',
     movementIntro: 'Five large movements hold the twelve-book poem together.',
     movements: [
       { label: 'Books I–II', title: 'Hell reorganises defeat', body: 'Satan and the fallen angels wake, build Pandemonium and debate their next action. Satan crosses Chaos towards the new world.' },
@@ -467,7 +467,7 @@ module.exports = [
       { label: 'Books IX–X', title: 'Persuasion becomes blame', body: 'Eve and Adam eat by different paths. Judgement, shame and accusation follow while Sin and Death build their road.' },
       { label: 'Books XI–XII', title: 'History enters the garden', body: 'Michael shows Adam future violence, the Flood and redemption. Adam and Eve leave together with grief and responsibility.' }
     ],
-    readingTitle: 'Sentence, persuasion and conversation.',
+    readingTitle: 'Sentence, persuasion and conversation',
     readings: [
       {
         label: 'Invocation',
@@ -494,13 +494,13 @@ module.exports = [
         ]
       }
     ],
-    contextTitle: 'Epic, politics and a poem made by voice.',
+    contextTitle: 'Epic, politics and a poem made by voice',
     contexts: [
       { label: 'Genre', title: 'A biblical epic', body: 'Milton adopts invocation, councils, catalogues, warfare, journeys and extended similes from Homer and Virgil, then revises heroism around patience, sacrifice and inward government.' },
       { label: 'History', title: 'Written after political defeat', body: 'Milton defended republican government before the Restoration. Arguments about liberty, tyranny, kingship and counsel carry that history without becoming a simple political key.' },
       { label: 'Voice', title: 'Dictation and revision', body: 'Milton was blind and dictated the epic to assistants. Its long sentences and changing pauses reward reading aloud; the move from ten books to twelve records major revision.' }
     ],
-    figuresTitle: 'The voices inside the argument.',
+    figuresTitle: 'The voices inside the argument',
     figures: [
       { name: 'The narrator', body: 'An ambitious poetic voice invoking divine aid and reflecting on blindness, vocation and the act of telling.' },
       { name: 'Satan', body: 'A defeated rebel whose rhetorical command coexists with envy, self-deception and diminishing freedom.' },

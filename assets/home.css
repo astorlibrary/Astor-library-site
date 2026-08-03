@@ -336,6 +336,11 @@ input:focus-visible {
   transform: translate(var(--motion-x, 0), var(--motion-y, 0)) rotate(6deg);
 }
 
+/* The centre cover overlaps this label's left edge; align it right so it stays legible. */
+.catalogue-stage-cover-right span {
+  text-align: right;
+}
+
 .catalogue-stage-cover:hover {
   z-index: 5;
   filter: brightness(1.05);

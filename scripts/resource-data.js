@@ -393,6 +393,7 @@ const resources = [
   {
     category: 'american',
     title: 'The Great Gatsby: Corruption, Illusion & the American Dream',
+    seoTitle: 'The Great Gatsby: Corruption and the American Dream',
     titleHtml: '<em>The Great Gatsby</em>: Corruption, Illusion &amp; the American Dream',
     description: 'Careless money, invented pasts, and a national promise the novel treats as already broken.',
     image: 'The-Great-Gatsby-Corruption-Illusion-and-the-American-Dream.png',
