@@ -160,7 +160,7 @@ if (!homepage.includes('/assets/home.css')) failures.push('The homepage is missi
 if (!homepage.includes('/assets/navigation.css')) failures.push('The homepage is missing the shared navigation stylesheet');
 if (!homepage.includes('class="site-header astor-global-header')) failures.push('The homepage is missing the shared header');
 if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failures.push('The homepage is missing the grouped footer');
-if (!homepageMain.includes('without losing the book')) failures.push('The homepage is missing its central promise');
+if (!homepageMain.includes('Complete classic texts, with summaries, context and notes')) failures.push('The homepage is missing its central promise');
 if (!homepageMain.includes('id="home-search"')) failures.push('The homepage is missing its immediate library search');
 if (!homepageMain.includes('class="catalogue-edition-spread"')) failures.push('The homepage is missing its edition anatomy');
 if (!homepageMain.includes('class="catalogue-index-rows"')) failures.push('The homepage is missing its clear starting points');
