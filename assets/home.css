@@ -408,8 +408,67 @@ input:focus-visible {
 .catalogue-index,
 .catalogue-accessions,
 .catalogue-edition,
+.catalogue-specification,
 .catalogue-find {
   padding: 82px clamp(36px, 5.5vw, 72px);
+}
+
+/* What is in an edition: the printed specification, stated plainly. */
+.catalogue-specification {
+  border-top: 1px solid var(--catalogue-line);
+  background: var(--catalogue-sand);
+}
+
+.catalogue-specification-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(28px, 4vw, 64px);
+}
+
+.catalogue-specification-columns article {
+  padding-top: 26px;
+  border-top: 2px solid var(--catalogue-ink);
+}
+
+.catalogue-specification-columns h3 {
+  margin: 0 0 18px;
+  font: 400 clamp(23px, 2.5vw, 30px)/1.15 var(--catalogue-serif);
+  letter-spacing: -0.02em;
+}
+
+.catalogue-specification-columns ul {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.catalogue-specification-columns li {
+  padding: 11px 0 11px 26px;
+  position: relative;
+  border-top: 1px solid var(--catalogue-line);
+  font: 400 16px/1.45 var(--catalogue-sans);
+}
+
+.catalogue-specification-columns li::before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: 4px;
+  width: 9px;
+  height: 2px;
+  background: var(--catalogue-wine);
+}
+
+.catalogue-specification-columns article > p {
+  margin: 0;
+  font: 400 15px/1.5 var(--catalogue-sans);
+  color: var(--catalogue-muted);
+}
+
+@media (max-width: 720px) {
+  .catalogue-specification-columns {
+    grid-template-columns: 1fr;
+  }
 }
 
 .catalogue-index-rows {
@@ -476,7 +535,8 @@ input:focus-visible {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: clamp(13px, 2vw, 25px);
-  align-items: end;
+  /* Align to the top so the covers share a line; titles of differing length hang below. */
+  align-items: start;
   padding: 12px 0 31px;
   border-bottom: 8px solid var(--catalogue-wine);
 }
@@ -499,6 +559,8 @@ input:focus-visible {
   width: 100%;
   aspect-ratio: 2 / 3;
   object-fit: cover;
+  /* Several Astor covers are cream; a hairline keeps them defined against the sand. */
+  border: 1px solid rgba(33, 29, 26, 0.16);
   box-shadow: 0 17px 30px rgba(33, 29, 26, 0.2);
   transition: transform 0.2s ease;
 }

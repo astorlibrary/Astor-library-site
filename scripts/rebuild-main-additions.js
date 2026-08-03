@@ -130,7 +130,7 @@ function bookPage(book) {
   <section class="astor-reading-grid">${readings}</section>
   <section class="section-title" id="context"><p class="kicker">Book, history, form</p><h2>${escapeHtml(book.contextTitle)}</h2><p>Context matters here because it changes what we can notice in the writing.</p></section>
   <section class="astor-context-grid">${contexts}</section>
-  <section class="section-title" id="figures"><p class="kicker">Keep in view</p><h2>${escapeHtml(book.figuresTitle)}</h2></section>
+  <section class="section-title" id="figures"><p class="kicker">Characters</p><h2>${escapeHtml(book.figuresTitle)}</h2></section>
   <section class="astor-character-grid">${figures}</section>
   <section class="section-title" id="questions"><p class="kicker">Carry through the work</p><h2>Questions that stay open</h2><p>Use them to test a passage, a reading or an argument of your own.</p></section>
   <section class="astor-question-grid">${questions}</section>

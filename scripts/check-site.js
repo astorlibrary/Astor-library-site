@@ -168,7 +168,8 @@ if (!homepageMain.includes('class="catalogue-accession-shelf"')) failures.push('
 if (!homepageMain.includes('class="catalogue-find-rows"')) failures.push('The homepage is missing its browse routes');
 if (!homepageMain.includes('class="catalogue-reading-room"')) failures.push('The homepage is missing its reading room');
 if (!homepageMain.includes('class="catalogue-colophon"')) failures.push('The homepage is missing the Astor history');
-if (countMatches(homepageMain, /<section class="catalogue-/g) !== 7) failures.push('The homepage must contain seven purposeful sections');
+if (countMatches(homepageMain, /<section class="catalogue-/g) !== 8) failures.push('The homepage must contain eight purposeful sections');
+if (!homepageMain.includes('class="catalogue-specification-columns"')) failures.push('The homepage is missing the edition specification');
 for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/teach/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/']) {
   if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
 }

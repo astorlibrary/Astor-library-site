@@ -86,9 +86,9 @@ function bookPage(book) {
   <section class="astor-movement-grid">${movements}</section>
   <section class="section-title" id="reading"><p class="kicker">Read closely</p><h2>Three ways into the writing</h2><p>These are not themes to collect. They are patterns to follow through particular scenes, voices and choices.</p></section>
   <section class="astor-reading-grid">${readings}</section>
-  <section class="section-title" id="context"><p class="kicker">Book, theatre, history</p><h2>The worlds around the play</h2><p>Dating, source and performance matter most when they return us to something the text is doing.</p></section>
+  <section class="section-title" id="context"><p class="kicker">Book, theatre, history</p><h2>The play in context</h2><p>Dating, source and performance matter most when they return us to something the text is doing.</p></section>
   <section class="astor-context-grid">${contexts}</section>
-  <section class="section-title" id="characters"><p class="kicker">Keep in view</p><h2>People carrying the argument</h2></section>
+  <section class="section-title" id="characters"><p class="kicker">Characters</p><h2>Principal characters</h2></section>
   <section class="astor-character-grid">${characters}</section>
   <section class="section-title" id="questions"><p class="kicker">Carry through the text</p><h2>Questions that stay open</h2><p>Use them to test a scene, a performance choice or an argument of your own.</p></section>
   <section class="astor-question-grid">${questions}</section>
