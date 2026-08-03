@@ -255,119 +255,92 @@ input:focus-visible {
 
 .catalogue-front-table {
   grid-area: table;
+  position: relative;
   min-width: 0;
   min-height: 690px;
   margin: 24px 24px 0 0;
-  padding: 26px 30px 22px;
   display: grid;
-  grid-template-rows: auto 1fr auto;
   overflow: hidden;
-  background:
-    radial-gradient(circle at var(--glow-x, 50%) 42%, rgba(216, 184, 111, 0.18), transparent 38%),
-    var(--catalogue-navy);
+  background: var(--catalogue-navy);
   color: var(--catalogue-cream);
 }
 
-.catalogue-front-table-heading,
-.catalogue-front-table-foot {
+/* A wall of covers: the list itself, at a glance. */
+.catalogue-cover-wall {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  color: #e9dfd5;
-  font: 800 9px/1.4 var(--catalogue-sans);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  /* Rows follow the covers' own 2:3 proportion, so nothing is cropped
+     sideways; the wall runs past the panel edge and is clipped there. */
+  grid-auto-rows: max-content;
+  align-content: start;
+  gap: 1px;
+  background: rgba(255, 250, 243, 0.1);
+}
+
+.catalogue-cover-wall a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: var(--catalogue-navy);
+}
+
+.catalogue-cover-wall img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  filter: saturate(0.94);
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.catalogue-cover-wall a:hover img,
+.catalogue-cover-wall a:focus-visible img {
+  transform: scale(1.06);
+  filter: saturate(1.08) brightness(1.06);
+}
+
+/* The wall darkens towards the caption so the type stays legible. */
+.catalogue-front-table::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 178px;
+  background: linear-gradient(180deg, rgba(16, 38, 59, 0) 0%, rgba(16, 38, 59, 0.82) 55%, rgba(16, 38, 59, 0.96) 100%);
+  pointer-events: none;
+}
+
+.catalogue-wall-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  padding: 26px 30px 24px;
+  display: grid;
+  gap: 7px;
+  color: var(--catalogue-cream);
+  text-decoration: none;
+}
+
+.catalogue-wall-caption strong {
+  font: 400 clamp(25px, 2.5vw, 34px)/1.1 var(--catalogue-serif);
+  letter-spacing: -0.02em;
+}
+
+.catalogue-wall-caption span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--catalogue-gold);
+  font: 800 10px/1.4 var(--catalogue-sans);
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.catalogue-front-table-heading {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 15px;
-  border-bottom: 1px solid rgba(255, 250, 243, 0.28);
-}
-
-.catalogue-front-table-heading b {
-  color: var(--catalogue-gold);
-}
-
-.catalogue-cover-stage {
-  position: relative;
-  /* Centre the stage in its stretching grid row so the covers do not
-     leave a growing gap at the top of the panel. */
-  align-self: center;
-  width: 100%;
-  min-height: 512px;
-}
-
-.catalogue-stage-cover {
-  position: absolute;
-  bottom: 34px;
-  width: 50%;
+.catalogue-wall-caption:hover span {
   color: var(--catalogue-cream);
-  text-decoration: none;
-  transform: translate(var(--motion-x, 0), var(--motion-y, 0));
-  transition: transform 0.28s ease, filter 0.2s ease;
-}
-
-.catalogue-stage-cover img {
-  width: 100%;
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
-  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.42);
-}
-
-.catalogue-stage-cover span {
-  display: block;
-  padding-top: 9px;
-  font: 750 10px/1.3 var(--catalogue-sans);
-}
-
-.catalogue-stage-cover-left {
-  z-index: 1;
-  left: 0%;
-  bottom: 62px;
-  transform: translate(var(--motion-x, 0), var(--motion-y, 0)) rotate(-6deg);
-}
-
-.catalogue-stage-cover-centre {
-  z-index: 3;
-  left: 25%;
-  width: 52%;
-}
-
-.catalogue-stage-cover-right {
-  z-index: 2;
-  right: 0%;
-  bottom: 59px;
-  transform: translate(var(--motion-x, 0), var(--motion-y, 0)) rotate(6deg);
-}
-
-/* The centre cover overlaps this label's left edge; align it right so it stays legible. */
-.catalogue-stage-cover-right span {
-  text-align: right;
-}
-
-.catalogue-stage-cover:hover {
-  z-index: 5;
-  filter: brightness(1.05);
-}
-
-.catalogue-stage-cover-left:hover {
-  transform: translate(var(--motion-x, 0), calc(var(--motion-y, 0) - 9px)) rotate(-3deg);
-}
-
-.catalogue-stage-cover-centre:hover {
-  transform: translate(var(--motion-x, 0), calc(var(--motion-y, 0) - 9px));
-}
-
-.catalogue-stage-cover-right:hover {
-  transform: translate(var(--motion-x, 0), calc(var(--motion-y, 0) - 9px)) rotate(3deg);
-}
-
-.catalogue-front-table-foot {
-  padding-top: 15px;
-  border-top: 1px solid rgba(255, 250, 243, 0.28);
-  color: var(--catalogue-gold);
 }
 
 .catalogue-register {
@@ -947,10 +920,6 @@ input:focus-visible {
     min-height: 620px;
   }
 
-  .catalogue-cover-stage {
-    min-height: 470px;
-  }
-
   .catalogue-reading-room {
     gap: 38px;
   }
@@ -980,10 +949,6 @@ input:focus-visible {
 
   .catalogue-entrance-actions {
     padding-top: 32px;
-  }
-
-  .catalogue-cover-stage {
-    min-height: 425px;
   }
 
   .catalogue-register {
@@ -1019,6 +984,23 @@ input:focus-visible {
 }
 
 @media (max-width: 620px) {
+  /* Fewer, larger covers so the titles stay readable on a phone. */
+  .catalogue-cover-wall {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .catalogue-cover-wall a:nth-child(n + 13) {
+    display: none;
+  }
+
+  .catalogue-front-table {
+    min-height: 0;
+  }
+
+  .catalogue-wall-caption {
+    padding: 22px 22px 20px;
+  }
+
   .catalogue-entrance-links {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -1091,38 +1073,6 @@ input:focus-visible {
     min-height: 382px;
     margin: 0 18px;
     padding: 18px 16px 15px;
-  }
-
-  .catalogue-cover-stage {
-    min-height: 285px;
-  }
-
-  .catalogue-stage-cover {
-    bottom: 24px;
-    width: 40%;
-  }
-
-  .catalogue-stage-cover-left {
-    bottom: 39px;
-    left: 0;
-  }
-
-  .catalogue-stage-cover-centre {
-    left: 28%;
-    width: 44%;
-  }
-
-  .catalogue-stage-cover-right {
-    right: 0;
-    bottom: 38px;
-  }
-
-  .catalogue-stage-cover span {
-    display: none;
-  }
-
-  .catalogue-front-table-foot {
-    font-size: 7px;
   }
 
   .catalogue-register {
@@ -1373,24 +1323,6 @@ input:focus-visible {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
-}
-
-/* Panel foot: writer above the genre label. */
-.catalogue-front-table-foot span {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  min-width: 0;
-}
-
-.catalogue-front-table-foot span:nth-child(2) { text-align: center; }
-.catalogue-front-table-foot span:nth-child(3) { text-align: right; }
-
-.catalogue-front-table-foot b {
-  color: var(--catalogue-cream);
-  font: 800 11px/1.3 var(--catalogue-sans);
-  letter-spacing: 0.04em;
-  text-transform: none;
 }
 
 /* Passage Room quotation: the three phrases annotated on the passage page. */
