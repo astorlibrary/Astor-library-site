@@ -13,6 +13,12 @@
   --astor-nav-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 .skip-link {
   position: fixed;
   z-index: 9999;
@@ -139,6 +145,10 @@
 .astor-global-header.site-header .astor-primary-nav > .nav-link:focus-visible {
   border-color: var(--astor-nav-line);
   background: var(--astor-nav-sand) !important;
+  color: var(--astor-nav-wine) !important;
+}
+
+.astor-global-header.site-header .astor-primary-nav > .nav-link-support {
   color: var(--astor-nav-wine) !important;
 }
 
@@ -274,6 +284,7 @@ body.is-site-menu-open {
     background: transparent !important;
     color: var(--astor-nav-ink) !important;
     font: 900 11px/1 var(--astor-nav-sans) !important;
+    touch-action: manipulation;
   }
 
   .astor-global-header.site-header.site-nav-ready .site-nav-mark,
@@ -314,7 +325,7 @@ body.is-site-menu-open {
     width: 100% !important;
     min-height: 0 !important;
     margin: 0 !important;
-    padding: 18px max(18px, calc((100vw - 700px) / 2)) 34px !important;
+    padding: 18px max(18px, calc((100vw - 700px) / 2)) calc(34px + env(safe-area-inset-bottom)) !important;
     display: none !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     align-content: start !important;
@@ -325,6 +336,7 @@ body.is-site-menu-open {
     border: 0 !important;
     border-top: 1px solid var(--astor-nav-line) !important;
     background: var(--astor-nav-paper) !important;
+    -webkit-overflow-scrolling: touch;
   }
 
   .astor-global-header.site-header.site-nav-ready.is-site-menu-open .astor-primary-nav {
@@ -345,6 +357,11 @@ body.is-site-menu-open {
   .astor-global-header.site-header .astor-primary-nav > .nav-link:hover,
   .astor-global-header.site-header .astor-primary-nav > .nav-link:focus-visible {
     background: var(--astor-nav-sand) !important;
+  }
+
+  .astor-global-header.site-header .astor-primary-nav > .nav-link-support {
+    border-color: rgba(110, 31, 43, 0.34) !important;
+    background: rgba(110, 31, 43, 0.08) !important;
   }
 
   .astor-global-header.site-header:not(.site-nav-ready) .astor-primary-nav {
@@ -402,7 +419,7 @@ body.is-site-menu-open {
   }
 
   .astor-global-header.site-header.site-nav-ready .site-nav-toggle {
-    min-width: 58px !important;
+    min-width: 62px !important;
     font-size: 10px !important;
   }
 

@@ -94,6 +94,146 @@ input:focus-visible {
   text-wrap: pretty;
 }
 
+/* The summer programme sits immediately below the shared navigation. */
+.seasonal-feature {
+  position: relative;
+  min-height: 690px;
+  padding: clamp(48px, 6vw, 82px) clamp(36px, 5.5vw, 72px);
+  display: grid;
+  grid-template-columns: minmax(290px, 0.68fr) minmax(0, 1.32fr);
+  gap: clamp(42px, 6vw, 82px);
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(33, 29, 26, 0.22);
+  background:
+    radial-gradient(circle at 10% 8%, rgba(255, 250, 243, 0.72) 0 8%, transparent 8.2%),
+    radial-gradient(circle at 94% 91%, rgba(110, 31, 43, 0.12) 0 15%, transparent 15.2%),
+    linear-gradient(135deg, #efd88c 0%, #e6c66e 45%, #d8b86f 100%);
+}
+
+.seasonal-feature::before {
+  content: "AL / SUMMER 2026";
+  position: absolute;
+  top: 25px;
+  right: clamp(36px, 5.5vw, 72px);
+  color: rgba(33, 29, 26, 0.58);
+  font: 850 9px/1 var(--catalogue-sans);
+  letter-spacing: 0.18em;
+}
+
+.seasonal-feature-heading {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
+}
+
+.seasonal-feature-heading > p {
+  margin: 0 0 23px;
+  color: var(--catalogue-wine);
+  font: 900 11px/1.3 var(--catalogue-sans);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.seasonal-feature-heading h2 {
+  max-width: 590px;
+  margin: 0 0 27px;
+  color: var(--catalogue-navy);
+  font-size: clamp(76px, 8.6vw, 124px);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+  text-wrap: balance;
+}
+
+.seasonal-feature-heading time {
+  display: block;
+  margin-bottom: 42px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(33, 29, 26, 0.32);
+  border-bottom: 1px solid rgba(33, 29, 26, 0.32);
+  color: var(--catalogue-ink);
+  font: 800 clamp(18px, 2.1vw, 27px)/1.2 var(--catalogue-sans);
+}
+
+.seasonal-feature-heading > a {
+  min-height: 48px;
+  width: max-content;
+  max-width: 100%;
+  padding: 0 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid var(--catalogue-navy);
+  background: var(--catalogue-navy);
+  color: var(--catalogue-cream);
+  font: 850 11px/1.3 var(--catalogue-sans);
+  text-decoration: none;
+}
+
+.seasonal-feature-heading > a:hover,
+.seasonal-feature-heading > a:focus-visible {
+  background: var(--catalogue-wine);
+  border-color: var(--catalogue-wine);
+}
+
+.seasonal-books {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(12px, 1.7vw, 24px);
+  align-items: end;
+}
+
+.seasonal-book {
+  min-width: 0;
+  color: var(--catalogue-ink);
+  text-decoration: none;
+}
+
+.seasonal-book:nth-child(even) {
+  transform: translateY(-38px);
+}
+
+.seasonal-book img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border: 1px solid rgba(33, 29, 26, 0.18);
+  box-shadow: 0 25px 45px rgba(55, 39, 22, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.seasonal-book:hover img,
+.seasonal-book:focus-visible img {
+  transform: translateY(-8px);
+  box-shadow: 0 32px 52px rgba(55, 39, 22, 0.34);
+}
+
+.seasonal-book > span {
+  min-width: 0;
+  display: block;
+  padding-top: 15px;
+}
+
+.seasonal-book strong,
+.seasonal-book small {
+  display: block;
+}
+
+.seasonal-book strong {
+  font-size: clamp(17px, 1.65vw, 23px);
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.seasonal-book small {
+  margin-top: 7px;
+  color: #504128;
+  font: 750 10px/1.4 var(--catalogue-sans);
+}
+
 .catalogue-kicker,
 .catalogue-page-label {
   margin: 0 0 15px;
@@ -888,6 +1028,24 @@ input:focus-visible {
     border-left: 0;
   }
 
+  .seasonal-feature {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 54px;
+  }
+
+  .seasonal-feature-heading {
+    max-width: 680px;
+  }
+
+  .seasonal-feature-heading h2 {
+    max-width: 720px;
+  }
+
+  .seasonal-books {
+    max-width: 760px;
+  }
+
   .catalogue-entrance {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -950,6 +1108,65 @@ input:focus-visible {
 
   .working-catalogue {
     box-shadow: none;
+  }
+
+  .seasonal-feature {
+    padding: 54px 18px 46px;
+    gap: 43px;
+    background:
+      radial-gradient(circle at 97% 4%, rgba(255, 250, 243, 0.68) 0 9%, transparent 9.2%),
+      linear-gradient(145deg, #efd88c 0%, #dfbe62 100%);
+  }
+
+  .seasonal-feature::before {
+    top: 19px;
+    right: 18px;
+    font-size: 8px;
+  }
+
+  .seasonal-feature-heading > p {
+    margin-bottom: 18px;
+    font-size: 9px;
+  }
+
+  .seasonal-feature-heading h2 {
+    max-width: 340px;
+    margin-bottom: 23px;
+    font-size: clamp(65px, 20vw, 82px);
+    line-height: 0.79;
+  }
+
+  .seasonal-feature-heading time {
+    margin-bottom: 25px;
+    padding: 14px 0;
+    font-size: 18px;
+  }
+
+  .seasonal-feature-heading > a {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .seasonal-books {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 16px;
+    align-items: start;
+  }
+
+  .seasonal-book:nth-child(even) {
+    transform: none;
+  }
+
+  .seasonal-book > span {
+    padding-top: 11px;
+  }
+
+  .seasonal-book strong {
+    font-size: 19px;
+  }
+
+  .seasonal-book small {
+    font-size: 9.5px;
   }
 
   .catalogue-entrance-copy {
