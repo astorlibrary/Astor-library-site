@@ -1,15 +1,20 @@
 const fs = require('fs');
 const path = require('path');
+const authorProfileData = require('./author-profiles');
 
 const root = process.cwd();
 const outDir = path.join(root, 'dist');
 const SITE_URL = 'https://astorlibrary.com';
 // This date changes only when a site-wide release materially updates every page.
-const SITE_LASTMOD = '2026-08-02';
+const SITE_LASTMOD = '2026-08-03';
 const discoveryFile = path.join(root, 'assets', 'content-index.json');
 const discovery = fs.existsSync(discoveryFile)
   ? JSON.parse(fs.readFileSync(discoveryFile, 'utf8'))
   : { books: [] };
+const thumbnailMapFile = path.join(root, 'assets', 'book-thumbnails.json');
+const bookThumbnails = fs.existsSync(thumbnailMapFile)
+  ? JSON.parse(fs.readFileSync(thumbnailMapFile, 'utf8'))
+  : {};
 
 const excluded = new Set([
   '.git',
@@ -29,6 +34,31 @@ function addImageHints(tag) {
   if (!/\bloading=/.test(result)) result = result.replace('<img', '<img loading="lazy"');
   if (!/\bdecoding=/.test(result)) result = result.replace('<img', '<img decoding="async"');
   return result;
+}
+
+function promoteFirstMainImage(html) {
+  const mainStart = html.search(/<main\b/i);
+  if (mainStart === -1) return html;
+  const beforeMain = html.slice(0, mainStart);
+  const mainAndAfter = html.slice(mainStart).replace(/<img\b[^>]*>/i, function (tag) {
+    let result = tag.replace(/\bloading="lazy"/i, 'loading="eager"');
+    if (!/\bloading=/i.test(result)) result = result.replace('<img', '<img loading="eager"');
+    if (!/\bfetchpriority=/i.test(result)) result = result.replace('<img', '<img fetchpriority="high"');
+    return result;
+  });
+  return beforeMain + mainAndAfter;
+}
+
+function useBookThumbnail(tag, sourceFile) {
+  if (!/\bloading="lazy"/i.test(tag)) return tag;
+  const source = tag.match(/\bsrc="([^"]+)"/i)?.[1];
+  if (!source || /^(?:[a-z]+:|\/\/)/i.test(source)) return tag;
+  const pageDirectory = path.posix.dirname(pageHref(sourceFile));
+  const resolvedSource = source.startsWith('/')
+    ? source
+    : path.posix.resolve(pageDirectory, source);
+  const thumbnail = bookThumbnails[resolvedSource] || '';
+  return thumbnail ? tag.replace(/\bsrc="[^"]+"/i, 'src="' + thumbnail + '"') : tag;
 }
 
 function escapeHtml(value) {
@@ -114,6 +144,12 @@ function studyContext(source) {
   return discovery.studyEditions?.find(item => item.href === href) || null;
 }
 
+function teachingContext(source) {
+  const href = pageHref(source);
+  if (!href.startsWith('/teach/') || href === '/teach/') return null;
+  return discovery.teachingRooms?.find(item => item.href === href) || null;
+}
+
 function addBookStructuredData(html, source) {
   const context = bookContext(source);
   if (!context) return html;
@@ -178,13 +214,8 @@ function addBookStructuredData(html, source) {
 function addAuthorStructuredData(html, source) {
   const author = authorContext(source);
   if (!author || html.includes('data-astor-author-schema')) return html;
-  const dates = {
-    'Arthur Conan Doyle': { birthDate: '1859-05-22', deathDate: '1930-07-07' },
-    'Charles Dickens': { birthDate: '1812-02-07', deathDate: '1870-06-09' },
-    'Frederick Douglass': { birthDate: '1818', deathDate: '1895-02-20' },
-    'Jane Austen': { birthDate: '1775-12-16', deathDate: '1817-07-18' },
-    'Mary Shelley': { birthDate: '1797-08-30', deathDate: '1851-02-01' }
-  }[author.title] || {};
+  const profile = authorProfileData.find(item => item.name === author.title);
+  const dates = profile || {};
   const description = plainText(html.match(/<meta\b[^>]*name="description"[^>]*content="([^"]+)"/i)?.[1] || author.description);
   const schema = {
     '@context': 'https://schema.org',
@@ -285,6 +316,39 @@ function addStudyStructuredData(html, source) {
   return html.replace('</head>', canonical + '<script type="application/ld+json" data-astor-study-schema>' + json + '</script></head>');
 }
 
+function addTeachingStructuredData(html, source) {
+  const room = teachingContext(source);
+  if (!room || html.includes('data-astor-teaching-schema')) return html;
+  const relatedBook = discovery.books?.find(book => room.relatedBooks?.includes(book.href));
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'LearningResource',
+    name: room.title,
+    description: room.description,
+    url: absoluteUrl(room.href),
+    image: absoluteUrl(room.image),
+    inLanguage: 'en-GB',
+    learningResourceType: ['Lesson plan', 'Teaching sequence', 'Close-reading activity'],
+    educationalUse: ['Teaching', 'Discussion', 'Close reading', 'Essay preparation'],
+    timeRequired: 'PT50M',
+    about: relatedBook ? { '@type': 'Book', name: relatedBook.title, url: absoluteUrl(relatedBook.href), author: { '@type': 'Person', name: relatedBook.author } } : undefined,
+    creator: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
+    publisher: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
+    publishingPrinciples: absoluteUrl('/editorial/'),
+    isPartOf: { '@type': 'CollectionPage', name: 'Astor Library Teaching Rooms', url: absoluteUrl('/teach/') },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Teaching rooms', item: absoluteUrl('/teach/') },
+        { '@type': 'ListItem', position: 2, name: room.title, item: absoluteUrl(room.href) }
+      ]
+    }
+  };
+  const canonical = html.includes('rel="canonical"') ? '' : '<link rel="canonical" href="' + absoluteUrl(room.href) + '">';
+  const json = JSON.stringify(schema).replace(/</g, '\\u003c');
+  return html.replace('</head>', canonical + '<script type="application/ld+json" data-astor-teaching-schema>' + json + '</script></head>');
+}
+
 function addCollectionStructuredData(html, source) {
   const href = pageHref(source);
   if (html.includes('data-astor-collection-schema')) return html;
@@ -324,6 +388,9 @@ function addCollectionStructuredData(html, source) {
   } else if (href === '/passage-room/') {
     items = discovery.passages || [];
     kind = 'Close readings of classic literature';
+  } else if (href === '/teach/') {
+    items = discovery.teachingRooms || [];
+    kind = 'Literature teaching rooms and lesson plans';
   } else if (href === '/explore/') {
     items = [
       ...(discovery.books || []),
@@ -331,7 +398,8 @@ function addCollectionStructuredData(html, source) {
       ...(discovery.studyEditions || []),
       ...(discovery.authors || []),
       ...(discovery.subjects || []),
-      ...(discovery.passages || [])
+      ...(discovery.passages || []),
+      ...(discovery.teachingRooms || [])
     ];
     kind = 'Search the Astor Library catalogue';
   } else if (href === '/reading-routes/') {
@@ -419,7 +487,8 @@ function addGlobalMetadata(html, source) {
   const subject = subjectContext(source);
   const passage = passageContext(source);
   const study = studyContext(source);
-  const image = book?.image || resource?.image || passage?.image || study?.image || author?.image || subject?.image || '/Logo.png';
+  const teaching = teachingContext(source);
+  const image = book?.image || resource?.image || passage?.image || study?.image || teaching?.image || author?.image || subject?.image || '/Logo.png';
   let metadata = '';
   const absoluteHref = absoluteUrl(href);
   const absoluteImage = absoluteUrl(image);
@@ -577,11 +646,18 @@ function addBookPassageLinks(html, source) {
       resources.map(resource => '<a href="' + escapeHtml(resource.href) + '">' + escapeHtml(resource.title) + '</a>').join('') +
       '</nav>'
     : '';
+  const teachingRooms = (discovery.teachingRooms || []).filter(room => room.relatedBooks?.includes(book.href));
+  const teachingLinks = teachingRooms.length
+    ? '<nav class="book-passage-resources book-teaching-links" aria-label="Teaching rooms for ' + escapeHtml(book.title) + '">' +
+      '<span>For the classroom</span>' +
+      teachingRooms.map(room => '<a href="' + escapeHtml(room.href) + '">' + escapeHtml(room.title) + '</a>').join('') +
+      '</nav>'
+    : '';
 
   const section = '<section class="book-passage-shelf" aria-labelledby="book-passage-title">' +
     '<div class="book-passage-shelf-head"><div><p class="kicker">The Passage Room</p><h2 id="book-passage-title">Read one page slowly.</h2></div>' +
     '<p>A complete book asks for time. Here the pace changes: one short stretch of the original stays open while notes follow the exact words that make it work.</p></div>' +
-    '<div class="book-passage-grid">' + cards + '</div>' + resourceLinks + '</section>';
+    '<div class="book-passage-grid">' + cards + '</div>' + resourceLinks + teachingLinks + '</section>';
   return html.replace('</main>', section + '</main>');
 }
 
@@ -599,7 +675,11 @@ function addResourceReadingNavigation(html, source) {
   }
   if (!html.includes('resource-end-nav')) {
     const bookLink = relatedBook ? '<a href="' + escapeHtml(relatedBook.href) + '">Explore ' + escapeHtml(relatedBook.title) + '</a>' : '';
-    const endNav = '<nav class="book-end-nav resource-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a>' + bookLink + '<a href="/resources/">All free resources</a><a href="/site-index/">Site index</a></nav>';
+    const teachingRoom = relatedBook
+      ? (discovery.teachingRooms || []).find(room => room.relatedBooks?.includes(relatedBook.href))
+      : null;
+    const teachingLink = teachingRoom ? '<a href="' + escapeHtml(teachingRoom.href) + '">' + escapeHtml(teachingRoom.title) + '</a>' : '';
+    const endNav = '<nav class="book-end-nav resource-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a>' + bookLink + teachingLink + '<a href="/resources/">All free resources</a><a href="/site-index/">Site index</a></nav>';
     html = html.replace('</main>', endNav + '</main>');
   }
   return html;
@@ -670,9 +750,10 @@ function addGlobalNavigation(html, source) {
   const resourcesCurrent = href === '/resources/' || href.startsWith('/resources/');
   const studyCurrent = href === '/study/' || href.startsWith('/study/');
   const passageCurrent = href === '/passage-room/' || href.startsWith('/passage-room/');
+  const teachingCurrent = href === '/teach/' || href.startsWith('/teach/');
   const searchCurrent = href === '/explore/' || href.startsWith('/explore/');
 
-  const header = `<header class="site-header astor-global-header site-nav-ready">
+  const header = `<header class="site-header astor-global-header">
   <div class="astor-header-identity">
     <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
     <p>Independent editions of classic literature</p>
@@ -687,6 +768,7 @@ function addGlobalNavigation(html, source) {
     <a class="nav-link" href="/subjects/"${current(subjectsCurrent)}>Subjects</a>
     <a class="nav-link" href="/resources/"${current(resourcesCurrent)}>Free library</a>
     <a class="nav-link" href="/study/"${current(studyCurrent)}>Study editions</a>
+    <a class="nav-link" href="/teach/"${current(teachingCurrent)}>Teach</a>
     <a class="nav-link" href="/passage-room/"${current(passageCurrent)}>Passage Room</a>
   </nav>
 </header>`;
@@ -694,7 +776,7 @@ function addGlobalNavigation(html, source) {
   const footer = `<footer class="site-footer astor-global-footer">
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
   <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
-  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a></div>
+  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/teach/">Teaching rooms</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/site-index/">Site index</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div>
 </footer>`;
 
@@ -711,6 +793,7 @@ function prepareHtml(html, source) {
   html = addBookStructuredData(html, source);
   html = addResourceStructuredData(html, source);
   html = addStudyStructuredData(html, source);
+  html = addTeachingStructuredData(html, source);
   html = addAuthorStructuredData(html, source);
   html = addCollectionStructuredData(html, source);
   html = addPassageStructuredData(html, source);
@@ -733,11 +816,9 @@ function prepareHtml(html, source) {
     html = html.replace(/<body([^>]*)>/, '<body$1><a class="skip-link" href="#main-content">Skip to main content</a>');
   }
 
-  html = html.replace(/<img\b[^>]*\bsrc="https?:\/\/[^"]+"[^>]*>/gi, addImageHints);
-  html = html.replace(/<a class="(?:resource-card|study-card[^"]*)"[\s\S]*?<\/a>/g, block => {
-    return block.replace(/<img\b[^>]*>/, addImageHints);
-  });
-  html = html.replace(/<img\b[^>]*\bloading="lazy"[^>]*>/g, addImageHints);
+  html = html.replace(/<img\b[^>]*>/gi, addImageHints);
+  html = promoteFirstMainImage(html);
+  html = html.replace(/<img\b[^>]*>/gi, function (tag) { return useBookThumbnail(tag, source); });
   return html;
 }
 

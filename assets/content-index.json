@@ -2,12 +2,13 @@
   "counts": {
     "books": 73,
     "authors": 30,
-    "subjects": 8,
+    "subjects": 9,
     "resources": 40,
     "studyEditions": 40,
     "collections": 8,
-    "passages": 12,
-    "entries": 211
+    "passages": 15,
+    "teachingRooms": 1,
+    "entries": 216
   },
   "books": [
     {
@@ -96,7 +97,7 @@
       "image": "/Animal%20Farm.png",
       "imageAlt": "Astor Library Animal Farm cover",
       "search": "Animal Farm George Orwell Modern Classics Orwell’s brief, devastating fable follows a revolution that promises equality and ends in another tyranny. Animal Farm, George Orwell How the fable works Text and publication history George Orwell Spain and anti-Stalinism Writing the fable Manuscript difficulties First British edition The Freedom of the Press Russian Revolution and Stalinism Revolution and founding myth Power struggle after revolution Dictatorship and command Squealer and official explanation Language, fable and form Simple form, severe argument Law as rewriteable text Memory under pressure Plainness and irony Character and allegory guide Key dates Eric Arthur Blair born Down and Out in Paris and London The Road to Wigan Pier Homage to Catalonia BBC resignation and Tribune Animal Farm published American edition and \"Why I Write\" Nineteen Eighty-Four Orwell's death Stage adaptations National Theatre, London Guy Masterson solo version National Youth Theatre Robert Icke adaptation Alexander Raskatov opera Screen versions Halas and Batchelor animation Television film Andy Serkis animated film Key passages for study Ways into the text Propaganda and rewritten truth Boxer, Clover and Benjamin Russia and beyond Russia Sources and further reading",
-      "authorHref": "/authors/#george-orwell",
+      "authorHref": "/authors/george-orwell/",
       "subjects": [
         {
           "title": "Satire and political writing",
@@ -186,7 +187,7 @@
       "image": "/Doctor%20Faustus%20Cover.png",
       "imageAlt": "Astor Library Doctor Faustus cover",
       "search": "Doctor Faustus Christopher Marlowe Renaissance & Early Modern Faustus has mastered the recognised branches of university learning, but mastery has not satisfied him. The play remains at the centre. Doctor Faustus, Christopher Marlowe Twenty-four years narrowing towards one hour. Learning is declared too small A warning becomes a contract Questions become spectacles Empire becomes entertainment Time becomes the antagonist Read the warning inside the wish. Faustus begins by misreading Mephistopheles knows more The final hour changes time Text, theology and theatre. Grace and despair Two early versions Morality meets tragedy Voices around Faustus. Doctor Faustus Mephistopheles Lucifer The Good Angel The Evil Angel The Old Man Questions that stay open. Can he still repent? Who controls whom? Why does ambition shrink? Which play do we see? Texts and collections.",
-      "authorHref": "/authors/#christopher-marlowe",
+      "authorHref": "/authors/christopher-marlowe/",
       "subjects": [
         {
           "title": "Tragedy",
@@ -205,7 +206,7 @@
       "image": "/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png",
       "imageAlt": "Astor Library Dracula reader's edition cover",
       "search": "Dracula Bram Stoker Victorian Told through diaries, letters, telegrams and newspaper cuttings, Stoker’s 1897 novel follows Count Dracula from Transylvania to England and the group determined to stop him. Choose your edition Dracula, Bram Stoker Dracula, introduced Astor Library edition At a glance Text, sources and publication First edition: Archibald Constable and Company Bram Stoker and the Lyceum Theatre Earlier vampire fiction Vlad, Transylvania and vampire tradition Victorian context Clerks, doctors, solicitors and typists Blood, transfusion and the asylum Mina, Lucy and late-Victorian womanhood Modern evidence and older protections Characters and documentary method Legal errand, captivity and witness Typist, editor and organiser Sleep, illness and transformation Professor, doctor and interpreter Aristocrat, invader and archive problem Stage history and adaptations Lyceum copyright reading Hamilton Deane at the Grand Theatre, Derby London and Broadway Edward Gorey and the Broadway revival Screen versions Nosferatu Universal: English and Spanish-language films Hammer: Dracula / Horror of Dracula Romance, spectacle and return to Stoker Sources and further reading Read the documents, not only the events Writing inside the castle A witness made from absences Making a common record",
-      "authorHref": "/authors/#bram-stoker",
+      "authorHref": "/authors/bram-stoker/",
       "subjects": [
         {
           "title": "Gothic literature",
@@ -309,7 +310,12 @@
       "imageAlt": "Astor Library Henry IV, Part 1 cover",
       "search": "Henry IV, Part 1 William Shakespeare Shakespeare A troubled king faces rebellion while Prince Hal divides his life between the court, Falstaff’s tavern world and the reputation he intends to claim. A king without rest Hal performs disgrace Hotspur burns bright Falstaff unsettles history Henry IV, Part 1, William Shakespeare Three worlds in collision Text and publication history First quarto Repeated quartos First Folio A name with political risk Sources and historical frame Chronicle history Lancaster and York Shrewsbury Succession and stability Court, tavern and battlefield Legitimacy under strain Performance and delay Honour and fracture Gadshill Language and myth War and exposure Visual history The comic body The rebel ideal Characters in the drama Language and interpretation Stage and screen adaptations Court performance record Orson Welles, Chimes at Midnight The Hollow Crown Player Kings Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -323,7 +329,12 @@
       "imageAlt": "Astor Library Henry IV, Part 2 cover",
       "search": "Henry IV, Part 2 William Shakespeare Shakespeare Victory at Shrewsbury has not healed the kingdom. Henry IV, Part 2, William Shakespeare A sequel that changes the rhythm Five movements towards a new reign News, debt and disappointment The king cannot sleep Gaultree and Westminster Father, son and the uneasy crown “I know thee not, old man” Characters and institutions Text, history and interpretation Two states of an early edition Hall and Holinshed Law beyond personality Public necessity or betrayal? Stage and screen Chimes at Midnight The Hollow Crown One long reckoning Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -351,7 +362,12 @@
       "imageAlt": "Astor Library Henry V cover",
       "search": "Henry V William Shakespeare Shakespeare A young king crosses the Channel to enforce a disputed claim and discovers that victory has a human cost. The Astor Library edition. Henry V, William Shakespeare How the action moves. A war is made to sound lawful The crown severs old loyalties Eloquence turns from fellowship to terror The king walks among those who must fight A marriage closes the campaign, not the history Three ways into the writing. Who makes the heroic picture? Public certainty, private argument A nation heard in several accents The worlds around the play. A play written beside a live campaign The quarto and Folio do not tell precisely the same play Patriotism has never been the only way to stage it People carrying the argument. Henry V The Chorus Katherine Fluellen Michael Williams Pistol Questions that stay open. Does the play celebrate Henry’s war or put it on trial? What changes when Henry is not recognised as king? Is the final courtship private, political or both? Texts and collections.",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -365,7 +381,12 @@
       "imageAlt": "Astor Library Henry VI, Part 1 cover",
       "search": "Henry VI, Part 1 William Shakespeare and collaborators Shakespeare Henry V is dead, a child wears the English crown, and military power in France begins to collapse. Henry VI, Part 1, William Shakespeare and collaborators An origin story written after the crisis began How the action moves Henry V dead, France rising Talbot and the Countess Roses chosen Talbot abandoned Joan captured, Margaret introduced Characters and competing histories Sources, authorship and historical distance Dynastic history Chronicle sequence A play made in company Enemy image and historical person Performance and the history cycle The Rose and early popularity RSC, The Wars of the Roses BBC Television Shakespeare The Hollow Crown Sources and further reading",
       "authorHref": "/authors/#william-shakespeare-and-collaborators",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -379,7 +400,12 @@
       "imageAlt": "Astor Library Henry VI, Part 2 cover",
       "search": "Henry VI, Part 2 William Shakespeare Shakespeare Faction, ambition and popular rebellion tear at Henry’s fragile rule as Gloucester falls, Queen Margaret and Suffolk gain power, and York prepares his claim. Government fails Gloucester destroyed Cade enters London York waits Henry VI, Part 2, William Shakespeare A kingdom coming apart Text and print history Contention before Folio Quarto and Folio Long title, clear selling points Sources and historical compression The Union of the Two Noble and Illustre Families Chronicles, 1587 Other chronicle pressure Four years into one chain How the action unfolds Marriage, faction, ambition Public signs and private plotting Gloucester falls Suffolk and Cade York and St Albans Characters and factions Performance history RSC, The Wars of the Roses BBC Television Shakespeare RSC, Michael Boyd histories RSC, Henry VI: Rebellion The Hollow Crown Language and interpretation Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -393,7 +419,12 @@
       "imageAlt": "Astor Library Henry VI, Part 3 cover",
       "search": "Henry VI, Part 3 William Shakespeare Shakespeare The struggle for England’s crown becomes open civil war, breaking oaths and families as power passes between Lancaster and York. Oath broken York murdered Edward rises Villain forming Henry VI, Part 3, William Shakespeare The crown in motion Text and print history From True Tragedie to Folio history A playbook sold by event The history sequence Historical figures in the play Piety without force War against settlement Crown by possession Sources and historical compression The Union of the Two Noble and Illustre Families Chronicles, 1587 Battle after battle Looking towards Richard III How the action unfolds The settlement collapses before it can hold Family grief and battlefield disorder Edward crowned, Warwick offended Warwick changes the board Tewkesbury and the next tragedy Characters and shifting allegiances Performance history RSC, The Wars of the Roses BBC Television Shakespeare Michael Boyd, RSC RSC and The Hollow Crown Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -421,7 +452,12 @@
       "imageAlt": "Astor Library Henry VIII cover",
       "search": "Henry VIII William Shakespeare Shakespeare At a court built on display, favour can raise a servant to magnificence and remove a queen from history. The Astor Library edition. Henry VIII, William Shakespeare How the action moves. The first fall establishes the rules of court A masque becomes a political beginning The queen refuses the court that judges her The keeper of secrets is undone by papers The ending turns a vulnerable infant into a national future Three ways into the writing. What can ‘All Is True’ mean on a stage? Farewell speeches outlast official verdicts Women bear the future and pay for its uncertainty The worlds around the play. The play belongs to Shakespeare and Fletcher Its first spectacular production destroyed the Globe Tudor history was also Stuart succession politics People carrying the argument. Henry VIII Queen Katherine Cardinal Wolsey Anne Bullen Thomas Cranmer The Duke of Buckingham Questions that stay open. Whose version of events earns the name ‘true’? How should Wolsey’s repentance change our judgment of him? Does the Elizabeth prophecy resolve the play or rewrite it? Texts and collections.",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -435,7 +471,12 @@
       "imageAlt": "Astor Library King John cover",
       "search": "King John William Shakespeare Shakespeare John holds the crown; his young nephew Arthur may have the better claim. The Astor Library edition. King John, William Shakespeare How the action moves. France challenges John in Arthur’s name A disputed city turns enemies into relatives Pandulph breaks the wedding-day peace The command that is withdrawn still kills The kingdom survives the king Three ways into the writing. The Bastard learns the market price of honour A child’s body becomes political evidence ‘Strong possession’ is not the same as right The worlds around the play. Shakespeare rewrote an already theatrical king The event modern audiences expect is absent A former stage favourite became a rarity People carrying the argument. King John Philip Faulconbridge, the Bastard Arthur Constance Hubert Cardinal Pandulph Questions that stay open. Why does the Bastard remain loyal after he understands John? Where does the play locate legitimate rule? What does Constance’s grief do that political speech cannot? Texts and collections.",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -450,6 +491,10 @@
       "search": "King Lear William Shakespeare Shakespeare Lear gives away his kingdom but expects to keep the authority of a king, while Gloucester makes an equally ruinous judgement about his sons. Division as catastrophe Quarto against Folio One play, many Lears King Lear, William Shakespeare A kingdom divided Text and publication First Quarto: True Chronicle Historie Second Quarto: Pavier reprint First Folio: The Tragedie of King Lear Source history Geoffrey, Holinshed and the Leir story Mirror for Magistrates and Spenser Sidney’s Arcadia and Gloucester Harsnett, Poor Tom and the fiends Visual history Benjamin West: Lear and Cordelia Poole: the tragic ending restored to sight The storm as stage image Performance timeline Earlier King Leir Court performance Nahum Tate’s History of King Lear Macready and the Fool restored John Gielgud at the Old Vic Trevor Nunn’s RSC Lear Trevor Nunn and Ian McKellen Gregory Doran and Antony Sher Stage and screen adaptations Language and interpretation Sources and further reading",
       "authorHref": "/shakespeare/",
       "subjects": [
+        {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        },
         {
           "title": "Tragedy",
           "href": "/subjects/tragedy/"
@@ -489,6 +534,10 @@
       "authorHref": "/shakespeare/",
       "subjects": [
         {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        },
+        {
           "title": "Tragedy",
           "href": "/subjects/tragedy/"
         }
@@ -524,7 +573,7 @@
       "image": "/Moby%20Dick.png",
       "imageAlt": "Astor Library Moby-Dick cover",
       "search": "Moby-Dick Herman Melville American Classics Ishmael joins the Pequod seeking work and adventure, only to find the voyage consumed by Ahab’s private war against the white whale. Two first editions Work before myth Ishmael collects forms Ahab remains portable Choose your edition Moby-Dick; or, The Whale, Herman Melville Moby-Dick, introduced Astor Library edition At a glance Text and publication Harper & Brothers: Moby-Dick; or, The Whale Richard Bentley: The Whale Arrowhead and composition Whaling history and literary sources Melville and sea writing A surviving whaleship Boats, lines and impact The Essex and Mocha Dick Visual archive Arrowhead Sperm whale Cetology and error Rockwell Kent Passages that carry the book Characters Stage and screen adaptations The Sea Beast Moby Dick Orson Welles, Moby Dick - Rehearsed John Huston’s Moby Dick Jake Heggie’s opera Ways into the text Sources and further reading",
-      "authorHref": "/authors/#herman-melville",
+      "authorHref": "/authors/herman-melville/",
       "subjects": [
         {
           "title": "Epic poetry",
@@ -623,7 +672,7 @@
       "image": "/Paradise%20Lost%20Main%20Cover.png",
       "imageAlt": "Astor Library Paradise Lost cover",
       "search": "Paradise Lost John Milton Restoration & Enlightenment Milton’s epic begins after a war in Heaven and ends with two people walking out of the only home they have known. The poem remains at the centre. Paradise Lost, John Milton From defeated rebellion to a world outside Eden. Hell reorganises defeat Heaven and Eden come into view Raphael tells the larger history Persuasion becomes blame History enters the garden Sentence, persuasion and conversation. The opening sentence declares its scale Satan’s language is powerful because unstable Conversation fails before appetite wins Epic, politics and a poem made by voice. A biblical epic Written after political defeat Dictation and revision The voices inside the argument. The narrator Satan God the Father The Son Adam Eve Questions that stay open. Why is Satan persuasive? What kind of freedom? Why does Adam eat? What can be restored? Texts and collections.",
-      "authorHref": "/authors/#john-milton",
+      "authorHref": "/authors/john-milton/",
       "subjects": [
         {
           "title": "Epic poetry",
@@ -676,7 +725,12 @@
       "imageAlt": "Astor Library Richard II cover",
       "search": "Richard II William Shakespeare Shakespeare Shakespeare turns the deposition of a king into a contest between sacred title, inherited land and effective power. Quarto pressure Kingship as performance All verse Always political Richard II, William Shakespeare The line of succession At a glance Text and print history From quarto playbook to Folio history The advertised deposition material Essex rebellion performance Historical and source context Richard II, 1367-1400 The anointed body Holinshed and the history-play method Inheritance and land Language and theatrical form Heightened speech as pressure King, cousin, subject, traitor Seeing the king made private The nation as mismanaged plot Key passages The challenge Gaunt’s England speech The hollow crown Flint Castle Deposition and mirror Pomfret prison Characters Performance and adaptation timeline Essex-related performance Charles Kean, Princess’s Theatre John Gielgud and the poetic Richard BBC television: An Age of Kings Fiona Shaw, National Theatre Trevor Nunn / Kevin Spacey RSC, Gregory Doran / David Tennant Shakespeare’s Globe / Adjoa Andoh and Lynette Linton Bridge Theatre / Jonathan Bailey Images and archives Image of kingship Richard kneeling Rule under pressure Chronicle into theatre Ways to study the play Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -690,7 +744,12 @@
       "imageAlt": "Astor Library Richard III cover",
       "search": "Richard III William Shakespeare Shakespeare Shakespeare's ruthless history play makes tyranny a performance: Richard charms the audience while scripting his path through murder, propaganda and public consent. Quarto and Folio Performance as politics Tudor history The actor's villain Richard III, William Shakespeare At a glance Text and publication First quarto Further quartos First Folio Sources and historical shaping The hostile Richard tradition Chronicle source History written after the victory The True Tragedy of Richard III Political and dramatic context Self-fashioning before action Wooing beside the coffin Dynasty as vulnerability The ally who becomes expendable Characters Actor, strategist, tyrant Curse and memory Dream, guilt and execution Resistance after loss Political broker Ending and Tudor settlement On stage Burbage and early performance memory Garrick and the Cibber stage tradition Kean, Irving and the actor-manager line Bill Alexander: Antony Sher Michael Boyd: complete history cycle Roxana Silbert: Jonjo O'Neill Gregory Doran: Arthur Hughes Adaptations Colley Cibber's adaptation Richard as a tyrant for later ages A changing performance question Screen versions Laurence Olivier Richard Loncraine and Ian McKellen The Hollow Crown Sources and further reading",
       "authorHref": "/shakespeare/",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "History plays: kingship, succession and nation",
+          "href": "/subjects/history-plays/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -736,7 +795,7 @@
       "image": "/Jekyll%20and%20Hyde.png",
       "imageAlt": "Astor Library Strange Case of Dr Jekyll and Mr Hyde cover",
       "search": "Strange Case of Dr Jekyll and Mr Hyde Robert Louis Stevenson Victorian A respectable doctor and a violent stranger appear to share a secret no one can explain. Documents before spectacle London as a divided map The role becomes visible Strange Case of Dr Jekyll and Mr Hyde, Robert Louis Stevenson The case begins Text and publication First London edition Case, not confession Stevenson and the story’s origins Stevenson before and after Jekyll Deacon Brodie and the public double life Dream, draft and revision Victorian London, science and identity Front doors, back doors and hidden rooms Law, medicine and silence Experiment and moral responsibility Before modern diagnostic shorthand Stage adaptations Thomas Russell Sullivan and Richard Mansfield Daniel E. Bandmann and rival versions Wildhorn, Bricusse and Cuden musical Screen versions Early screen versions John Barrymore and the silent feature Rouben Mamoulian and Fredric March Victor Fleming, Spencer Tracy, Ingrid Bergman and Lana Turner The order of knowledge Three patterns to follow Doors, windows and cabinets Wills, letters and handwriting Recognition without description What Jekyll gets wrong Sources and further reading",
-      "authorHref": "/authors/#robert-louis-stevenson",
+      "authorHref": "/authors/robert-louis-stevenson/",
       "subjects": [
         {
           "title": "Gothic literature",
@@ -759,7 +818,7 @@
       "image": "/Tess%20of%20the%20D%27urbervilles.png",
       "imageAlt": "Astor Library Tess of the d'Urbervilles cover",
       "search": "Tess of the d’Urbervilles Thomas Hardy Victorian Hardy follows Tess through rural labour, sexual violence and social judgement, exposing the unequal standards that make her suffer for harms done to her. A name starts the damage Purity against society Fields, dairy, machine Older law, modern police Tess of the d’Urbervilles, Thomas Hardy At a glance Publication and revision history The Graphic serial and first book edition One-volume edition The Chase and omission Moral controversy The seven phases The Maiden Maiden No More The Rally The Consequence The Woman Pays The Convert Fulfilment Wessex and labour Poverty before plot Pastoral interval Labour and machinery Resort and ritual Hardy’s Wessex in pictures Characters Language and structure On stage and screen Minnie Maddern Fiske stage success Lost silent films Roman Polanski, Tess London Weekend Television BBC One serial Stage memory How the narration asks us to judge The world as Tess experiences it The narrator challenges the verdict Landscape can dwarf the individual Six moments that sharpen the argument Coincidence is not the whole cause Sources and further reading",
-      "authorHref": "/authors/#thomas-hardy",
+      "authorHref": "/authors/thomas-hardy/",
       "subjects": []
     },
     {
@@ -858,7 +917,7 @@
       "image": "/Duchess%20of%20Malfi%20Cover.png",
       "imageAlt": "Astor Library The Duchess of Malfi cover",
       "search": "The Duchess of Malfi John Webster Renaissance & Early Modern A young widow chooses to marry again, and the men who believe they own her life answer with surveillance, imprisonment and murder. The play remains at the centre. The Duchess of Malfi, John Webster A secret household inside a watched court. The Duchess chooses Bosola reads the body Confidence becomes betrayal Power becomes theatre Revenge misses its mark Three places where authority is tested. The Duchess writes her own scene Bosola reads bodies for powerful men “I am Duchess of Malfi still” History, theatre and service. History reshaped A tragedy for two theatres Service and surveillance The people carrying the pressure. The Duchess Antonio Bologna Daniel de Bosola Ferdinand The Cardinal Cariola Questions that stay open. What does secrecy protect? When does explanation end? What survives power? How should Ferdinand be played? Texts and collections.",
-      "authorHref": "/authors/#john-webster",
+      "authorHref": "/authors/john-webster/",
       "subjects": [
         {
           "title": "Tragedy",
@@ -953,7 +1012,7 @@
       "image": "/Picture%20of%20Dorian%20Gray.png",
       "imageAlt": "Astor Library The Picture of Dorian Gray cover",
       "search": "The Picture of Dorian Gray Oscar Wilde Victorian A beautiful young man remains outwardly untouched while his hidden portrait bears the marks of cruelty, fear and corruption. The Picture of Dorian Gray, Oscar Wilde The novel’s double life Text and publication history The Lippincott commission First publication in Lippincott's Art and commerce on the same page Ward, Lock book edition The uncensored textual record Wilde, aestheticism and the 1890s Oscar Wilde Beauty as an argument The cultivated artificial life Reading under suspicion Text, image and doubling The hidden record Epigram as influence Artistic worship Theatre and reality Key dates Oscar Wilde born Oxford years American lecture tour The Happy Prince and Other Tales Commission and composition Magazine publication and hostile reviews Expanded book publication Trials and imprisonment Death in Paris Reception history Morality and accusation Art, criticism and defence The novel as courtroom material Stage adaptations Silent-era adaptation Opera: Lowell Liebermann Sydney Theatre Company: Kip Williams Sarah Snook: West End and Broadway Screen versions American silent film: Thanhouser Russian silent film Albert Lewin, MGM Massimo Dallamano: modernised Dorian Oliver Parker: Dorian Gray Key passages for study Sources and further reading",
-      "authorHref": "/authors/#oscar-wilde",
+      "authorHref": "/authors/oscar-wilde/",
       "subjects": [
         {
           "title": "Gothic literature",
@@ -1019,7 +1078,7 @@
       "image": "/The%20Scarlet%20Letter%20%28Main%20Cover%29%20.png",
       "imageAlt": "Astor Library The Scarlet Letter cover",
       "search": "The Scarlet Letter Nathaniel Hawthorne American Classics Hester Prynne leaves prison carrying her infant daughter and wearing the scarlet A, but refuses to name Pearl’s father. The novel remains at the centre. The Scarlet Letter, Nathaniel Hawthorne Three public scenes and seven years of concealment. Prison door and first scaffold A life beyond the town Physician and minister Escape is imagined The last scaffold A sign, a stage and a child. A letter that will not keep one meaning Daylight, midnight, daylight A symbol who is also a child Puritan Boston inside an American romance. The seventeenth century from 1850 Romance and uncertainty Ancestry and office The people made to carry meanings. Hester Prynne Pearl Arthur Dimmesdale Roger Chillingworth The Custom-House narrator Puritan Boston Questions that stay open. Why does Hester return? What does confession repair? Why is revenge worse than discovery? Where does Pearl go? Texts and collections.",
-      "authorHref": "/authors/#nathaniel-hawthorne",
+      "authorHref": "/authors/nathaniel-hawthorne/",
       "subjects": [
         {
           "title": "Narration and testimony",
@@ -1242,7 +1301,7 @@
       "image": "/Uncle%20Tom%27s%20Cabin.png",
       "imageAlt": "Astor Library edition of Uncle Tom's Cabin",
       "search": "Uncle Tom’s Cabin Harriet Beecher Stowe American Classics Mr Shelby’s decision to sell Tom and the young Harry sets two families on separate journeys. The Astor Library edition Uncle Tom’s Cabin, Harriet Beecher Stowe How the book works North and south Faith put on trial A book with many afterlives A closer reading Escape and sale move in opposite directions Feeling is used as public argument The novel and the ‘Tom shows’ are not identical People to keep in view Questions worth carrying through the text How the novel makes its argument A private debt becomes a family catastrophe Flight does not end danger Sentiment is meant to become action Six passages that hold the structure together The book and the stereotype are not the same Adaptation hardened familiar images Endurance includes refusal Influence does not remove criticism Ownership changes its manners, not its power Debt turns affection into a price Insight without action leaves ownership intact Ownership declares its violence openly Women keep the plot moving Abolitionist novel, not first-person testimony The distinction changes how evidence is read Place scenes together without making them equivalent Purpose and limitation can share a sentence Sources and further reading",
-      "authorHref": "/authors/#harriet-beecher-stowe",
+      "authorHref": "/authors/harriet-beecher-stowe/",
       "subjects": [
         {
           "title": "Slavery, freedom and abolition",
@@ -1312,7 +1371,7 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "Arthur Conan Doyle",
-      "description": "Enter Holmes’s London through twelve short cases and the longer investigation in The Sign of Four, always with Watson controlling the record.",
+      "description": "Enter Holmes's London through twelve short cases and the longer investigation in The Sign of Four, always with Watson controlling the record.",
       "href": "/authors/arthur-conan-doyle/",
       "image": "/Adventures%20of%20Sherlock%20Holmes.png",
       "imageAlt": "Astor Library The Adventures of Sherlock Holmes cover",
@@ -1339,8 +1398,8 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "Bram Stoker",
-      "description": "Read Bram Stoker through Astor Library's page for Dracula.",
-      "href": "/authors/#bram-stoker",
+      "description": "Read Dracula as a novel assembled from journals, letters, recordings and newsprint, where modern systems of evidence meet an ancient threat.",
+      "href": "/authors/bram-stoker/",
       "image": "/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png",
       "imageAlt": "Astor Library Dracula reader's edition cover",
       "bookCount": 1,
@@ -1393,8 +1452,8 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "Christopher Marlowe",
-      "description": "Read Christopher Marlowe through Astor Library's page for Doctor Faustus.",
-      "href": "/authors/#christopher-marlowe",
+      "description": "Follow the reach and collapse of desire in Doctor Faustus, where enormous blank-verse ambitions narrow towards one final hour.",
+      "href": "/authors/christopher-marlowe/",
       "image": "/Doctor%20Faustus%20Cover.png",
       "imageAlt": "Astor Library Doctor Faustus cover",
       "bookCount": 1,
@@ -1473,8 +1532,8 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "George Orwell",
-      "description": "Read George Orwell through Astor Library's page for Animal Farm.",
-      "href": "/authors/#george-orwell",
+      "description": "Read Animal Farm through Orwell's exact political prose, where a revolution is altered one commandment, memory and public performance at a time.",
+      "href": "/authors/george-orwell/",
       "image": "/Animal%20Farm.png",
       "imageAlt": "Astor Library Animal Farm cover",
       "bookCount": 1,
@@ -1513,8 +1572,8 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "Harriet Beecher Stowe",
-      "description": "Read Harriet Beecher Stowe through Astor Library's page for Uncle Tom’s Cabin.",
-      "href": "/authors/#harriet-beecher-stowe",
+      "description": "Read Uncle Tom's Cabin as an abolitionist novel built from interrupted homes, contested scripture and the legal machinery of slavery.",
+      "href": "/authors/harriet-beecher-stowe/",
       "image": "/Uncle%20Tom%27s%20Cabin.png",
       "imageAlt": "Astor Library edition of Uncle Tom's Cabin",
       "bookCount": 1,
@@ -1533,8 +1592,8 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "Herman Melville",
-      "description": "Read Herman Melville through Astor Library's page for Moby-Dick.",
-      "href": "/authors/#herman-melville",
+      "description": "Enter Moby-Dick through a voice that keeps changing form: voyage, sermon, drama, anatomy and argument held aboard one doomed ship.",
+      "href": "/authors/herman-melville/",
       "image": "/Moby%20Dick.png",
       "imageAlt": "Astor Library Moby-Dick cover",
       "bookCount": 1,
@@ -1620,8 +1679,8 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "John Milton",
-      "description": "Read John Milton through Astor Library's page for Paradise Lost.",
-      "href": "/authors/#john-milton",
+      "description": "Approach Paradise Lost through blank verse, political argument and voices whose beauty never removes the need to judge what they say.",
+      "href": "/authors/john-milton/",
       "image": "/Paradise%20Lost%20Main%20Cover.png",
       "imageAlt": "Astor Library Paradise Lost cover",
       "bookCount": 1,
@@ -1640,8 +1699,8 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "John Webster",
-      "description": "Read John Webster through Astor Library's page for The Duchess of Malfi.",
-      "href": "/authors/#john-webster",
+      "description": "Read The Duchess of Malfi through watched rooms, compromised service and a heroine who insists that rank does not own her private life.",
+      "href": "/authors/john-webster/",
       "image": "/Duchess%20of%20Malfi%20Cover.png",
       "imageAlt": "Astor Library The Duchess of Malfi cover",
       "bookCount": 1,
@@ -1720,8 +1779,8 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "Nathaniel Hawthorne",
-      "description": "Read Nathaniel Hawthorne through Astor Library's page for The Scarlet Letter.",
-      "href": "/authors/#nathaniel-hawthorne",
+      "description": "Read The Scarlet Letter as a romance about public signs and private histories, where no symbol keeps a single meaning for long.",
+      "href": "/authors/nathaniel-hawthorne/",
       "image": "/The%20Scarlet%20Letter%20%28Main%20Cover%29%20.png",
       "imageAlt": "Astor Library The Scarlet Letter cover",
       "bookCount": 1,
@@ -1760,8 +1819,8 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "Oscar Wilde",
-      "description": "Read Oscar Wilde through Astor Library's page for The Picture of Dorian Gray.",
-      "href": "/authors/#oscar-wilde",
+      "description": "Read The Picture of Dorian Gray through surfaces, influence and the dangerous wish to separate beauty from consequence.",
+      "href": "/authors/oscar-wilde/",
       "image": "/Picture%20of%20Dorian%20Gray.png",
       "imageAlt": "Astor Library The Picture of Dorian Gray cover",
       "bookCount": 1,
@@ -1780,8 +1839,8 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "Robert Louis Stevenson",
-      "description": "Read Robert Louis Stevenson through Astor Library's page for Strange Case of Dr Jekyll and Mr Hyde.",
-      "href": "/authors/#robert-louis-stevenson",
+      "description": "Follow Jekyll and Hyde through sealed doors, delayed documents and a city where respectability depends upon what remains unseen.",
+      "href": "/authors/robert-louis-stevenson/",
       "image": "/Jekyll%20and%20Hyde.png",
       "imageAlt": "Astor Library Strange Case of Dr Jekyll and Mr Hyde cover",
       "bookCount": 1,
@@ -1840,8 +1899,8 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "Thomas Hardy",
-      "description": "Read Thomas Hardy through Astor Library's page for Tess of the d’Urbervilles.",
-      "href": "/authors/#thomas-hardy",
+      "description": "Read Tess of the d'Urbervilles through labour, landscape and the unequal judgements that turn social power into private suffering.",
+      "href": "/authors/thomas-hardy/",
       "image": "/Tess%20of%20the%20D%27urbervilles.png",
       "imageAlt": "Astor Library Tess of the d'Urbervilles cover",
       "bookCount": 1,
@@ -1900,7 +1959,7 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "William Shakespeare",
-      "description": "Move through comedy, history and tragedy with source, language and performance kept in view.",
+      "description": "Move through comedy, history, tragedy and the narrative poems with source, language and performance kept in view.",
       "href": "/shakespeare/",
       "image": "/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png",
       "imageAlt": "Astor Library A Midsummer Night's Dream cover",
@@ -2267,6 +2326,36 @@
         "/resources/shakespeare/gender-power-omkara-maqbool/"
       ],
       "search": "Comedy and comic form Mistakes, performances and the difficult work of ending well Read Shakespearean comedy through mistaken identity, disguise, courtship, performance and difficult endings, from The Two Gentlemen of Verona and Love’s Labour’s Lost to Twelfth Night and The Winter’s Tale. comedy comic form Shakespeare laughter farce festive comedy disguise mistaken identity recognition marriage courtship performance audience ending romance problem play Comic error A mistake in identity, intention or interpretation that exposes the assumptions by which a social world operates. Disguise A performed identity that redistributes knowledge and changes what a character may say, desire or arrange. Recognition The moment when a person, relationship or history becomes newly known and the action can move towards settlement. Festive comedy A comic pattern in which ordinary restraint loosens for a holiday, forest or night before a changed social order returns."
+    },
+    {
+      "type": "subject",
+      "typeLabel": "Subject guide",
+      "title": "History plays: kingship, succession and nation",
+      "description": "Read Shakespeare’s history plays through kingship, succession, civil war and national memory, from King John and Richard II through the Henry IV, Henry V and Henry VI sequences to Richard III and Henry VIII.",
+      "href": "/subjects/history-plays/",
+      "image": "/King%20John%20Main%20Cover.jpg",
+      "imageAlt": "History plays: kingship, succession and nation books in Astor Library",
+      "bookCount": 12,
+      "relatedBooks": [
+        "/books/king-john/",
+        "/books/richard-ii/",
+        "/books/henry-iv-part-1/",
+        "/books/henry-iv-part-2/",
+        "/books/henry-v/",
+        "/books/henry-vi-part-1/",
+        "/books/henry-vi-part-2/",
+        "/books/henry-vi-part-3/",
+        "/books/richard-iii/",
+        "/books/henry-viii/",
+        "/books/macbeth/",
+        "/books/king-lear/"
+      ],
+      "relatedResources": [
+        "/resources/richard-ii/study-guide/",
+        "/resources/macbeth/quick-guide/",
+        "/resources/king-lear/summary-guide/"
+      ],
+      "search": "History plays: kingship, succession and nation Crowns, claims and the making of public memory Read Shakespeare’s history plays through kingship, succession, civil war and national memory, from King John and Richard II through the Henry IV, Henry V and Henry VI sequences to Richard III and Henry VIII. Shakespeare history plays histories kingship succession crown monarchy nation civil war Wars of the Roses Richard II Henry IV Henry V Henry VI Richard III Henry VIII King John chronicle Holinshed tetralogy legitimacy deposition First Folio Chronicle history A prose account that arranges rulers and events over time; it supplies source material but is itself a constructed interpretation of the past. Tetralogy A sequence of four plays: Henry VI Parts 1–3 and Richard III form the earlier-written first tetralogy; Richard II, Henry IV Parts 1–2 and Henry V form the second. Succession The transfer of royal authority from one ruler to another, including the hereditary rules, competing claims and acts of recognition that make a title effective. Deposition The removal of a reigning monarch, a political act that raises questions about who may judge a king and how obedience can be transferred."
     },
     {
       "type": "subject",
@@ -3369,7 +3458,7 @@
       "typeLabel": "Study edition",
       "title": "Macbeth",
       "description": "Ambition, guilt, kingship, violence, prophecy, imagery and tragedy.",
-      "href": "https://mybook.to/cntRBz",
+      "href": "/study/macbeth/",
       "externalUrl": "https://mybook.to/cntRBz",
       "image": "/Macbeth%20Study.png",
       "imageAlt": "Macbeth Study cover",
@@ -4154,6 +4243,60 @@
         "/books/moby-dick/"
       ],
       "search": "Moby Dick Melville Ishmael call me opening narrator voice sea spleen Loomings Chapter 1 close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“unsex me here”",
+      "description": "Read Lady Macbeth’s invocation through command, bodily imagery and the distance between imagined hardness and what the play later shows.",
+      "href": "/passage-room/macbeth-unsex-me-here/",
+      "image": "/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png",
+      "imageAlt": "Astor Library Macbeth cover",
+      "relatedBooks": [
+        "/books/macbeth/"
+      ],
+      "search": "Macbeth Shakespeare Lady Macbeth unsex me here Act 1 Scene 5 gender body spirits close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“Is this a dagger”",
+      "description": "Follow Macbeth’s question as sight, touch and intention pull apart on the walk towards Duncan’s chamber.",
+      "href": "/passage-room/macbeth-is-this-a-dagger/",
+      "image": "/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png",
+      "imageAlt": "Astor Library Macbeth cover",
+      "relatedBooks": [
+        "/books/macbeth/"
+      ],
+      "search": "Macbeth Shakespeare dagger soliloquy Act 2 Scene 1 hallucination murder close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“Tomorrow, and tomorrow, and tomorrow”",
+      "description": "Read Macbeth’s final meditation through repetition, measured time and the theatrical images with which he empties life of meaning.",
+      "href": "/passage-room/macbeth-tomorrow-and-tomorrow/",
+      "image": "/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png",
+      "imageAlt": "Astor Library Macbeth cover",
+      "relatedBooks": [
+        "/books/macbeth/"
+      ],
+      "search": "Macbeth Shakespeare tomorrow tomorrow tomorrow Act 5 Scene 5 time candle player tale close reading"
+    }
+  ],
+  "teachingRooms": [
+    {
+      "type": "teaching",
+      "typeLabel": "Teaching room",
+      "title": "Teach Macbeth",
+      "description": "A complete teaching room with close-reading starts, a fifty-minute lesson, a three-lesson sequence, turning points and routes into Astor editions and free guides.",
+      "href": "/teach/macbeth/",
+      "image": "/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png",
+      "imageAlt": "Astor Library Macbeth cover",
+      "relatedBooks": [
+        "/books/macbeth/"
+      ],
+      "search": "Macbeth Shakespeare teaching lesson plan classroom close reading essay evidence ambition kingship guilt tragedy"
     }
   ]
 }

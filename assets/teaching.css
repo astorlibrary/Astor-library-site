@@ -1,0 +1,604 @@
+/* Astor Teaching Rooms: page-level classroom layouts only. Global navigation,
+   brand and footer rules remain in styles.css. */
+
+.teaching-home,
+.teaching-room{
+  max-width:1320px;
+}
+
+.teaching-home-hero,
+.teaching-hero{
+  position:relative;
+  overflow:hidden;
+  color:var(--cream,#fffaf4);
+  background:
+    linear-gradient(90deg,rgba(255,250,244,.055) 1px,transparent 1px) 0 0/34px 34px,
+    linear-gradient(rgba(255,250,244,.055) 1px,transparent 1px) 0 0/34px 34px,
+    var(--navy-deep,#10263b);
+  box-shadow:var(--shadow,0 24px 70px rgba(32,28,26,.14));
+}
+
+.teaching-home-hero{
+  min-height:570px;
+  padding:74px 64px;
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(300px,.58fr);
+  gap:70px;
+  align-items:end;
+}
+
+.teaching-home-hero:after,
+.teaching-hero:after{
+  position:absolute;
+  right:-.08em;
+  bottom:-.3em;
+  color:rgba(255,250,244,.06);
+  font:400 330px/.8 Georgia,'Times New Roman',serif;
+  pointer-events:none;
+}
+
+.teaching-home-hero:after{content:'T'}
+.teaching-hero:after{content:'M'}
+
+.teaching-home-hero>*,
+.teaching-hero>*{position:relative;z-index:1}
+
+.teaching-home-hero .kicker,
+.teaching-hero .kicker{color:#e5c77f}
+
+.teaching-home-hero h1,
+.teaching-hero h1{
+  max-width:880px;
+  margin:0 0 25px;
+  color:var(--cream,#fffaf4);
+  font-weight:400;
+  line-height:.8;
+  letter-spacing:-.065em;
+}
+
+.teaching-home-hero h1{font-size:clamp(72px,9.3vw,132px)}
+.teaching-hero h1{font-size:clamp(74px,10vw,142px)}
+
+.teaching-home-hero .deck,
+.teaching-hero .deck{
+  max-width:760px;
+  margin:0;
+  color:#eee4da;
+  font-size:19px;
+  line-height:1.62;
+}
+
+.teaching-home-note,
+.teaching-hero-note{
+  padding:26px 0 4px 28px;
+  border-left:1px solid rgba(255,250,244,.3);
+}
+
+.teaching-home-note span,
+.teaching-hero-note span{
+  display:block;
+  margin-bottom:12px;
+  color:#e5c77f;
+  font:900 10px/1.35 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+
+.teaching-home-note p,
+.teaching-hero-note p{
+  margin:0 0 18px;
+  color:#f4ebe3;
+  font:16px/1.62 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+
+.teaching-home-note a,
+.teaching-hero-note a{color:#fff;font-weight:800}
+
+.teaching-principle{
+  padding:44px 64px;
+  display:grid;
+  grid-template-columns:minmax(240px,.55fr) minmax(0,1.45fr);
+  gap:62px;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  border-left:1px solid var(--line);
+  background:rgba(255,250,244,.82);
+}
+
+.teaching-principle h2{
+  margin:0;
+  font-size:clamp(38px,5vw,64px);
+  line-height:.9;
+  letter-spacing:-.045em;
+}
+
+.teaching-principle p{
+  margin:3px 0 0;
+  color:var(--muted);
+  font:17px/1.72 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+
+.teaching-index-section{padding:88px 0 42px}
+.teaching-index-heading{
+  margin-bottom:34px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(300px,.55fr);
+  gap:50px;
+  align-items:end;
+}
+.teaching-index-heading h2{
+  margin:0;
+  font-size:clamp(54px,7vw,94px);
+  line-height:.84;
+  letter-spacing:-.06em;
+}
+.teaching-index-heading>p{
+  margin:0;
+  color:var(--muted);
+  font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+
+.teaching-index-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+}
+.teaching-index-card{
+  min-height:430px;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:#fffaf4;
+}
+.teaching-index-card:first-child{background:#eadccb}
+.teaching-index-card span{
+  color:var(--burgundy);
+  font:900 10px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.teaching-index-card h3{
+  margin:50px 0 17px;
+  font-size:clamp(42px,5vw,70px);
+  line-height:.86;
+  letter-spacing:-.05em;
+}
+.teaching-index-card p{
+  max-width:680px;
+  margin:0;
+  color:#4c433e;
+  font:15px/1.66 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+.teaching-index-card a{
+  margin-top:auto;
+  padding-top:34px;
+  color:var(--burgundy);
+  font:900 12px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  text-decoration:none;
+}
+
+.teaching-hero{
+  min-height:610px;
+  padding:72px 64px 62px;
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(300px,.48fr);
+  gap:70px;
+  align-items:end;
+}
+
+.teaching-hero-note dl{margin:0}
+.teaching-hero-note div{
+  padding:12px 0;
+  display:grid;
+  grid-template-columns:88px 1fr;
+  gap:12px;
+  border-top:1px solid rgba(255,250,244,.22);
+}
+.teaching-hero-note dt{
+  color:#e5c77f;
+  font:900 9px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.teaching-hero-note dd{
+  margin:0;
+  color:#fffaf4;
+  font:14px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+
+.teaching-jump{
+  margin:0 0 58px;
+  padding:18px 22px;
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  border-left:1px solid var(--line);
+  background:#fffaf4;
+}
+.teaching-jump a{
+  padding:9px 12px;
+  border:1px solid rgba(110,31,43,.3);
+  color:var(--burgundy);
+  font:800 11px/1.2 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  text-decoration:none;
+}
+.teaching-jump a:hover{background:var(--burgundy);color:#fffaf4}
+
+.teaching-room-heading{
+  margin:78px 0 28px;
+  padding-top:25px;
+  display:grid;
+  grid-template-columns:minmax(0,.8fr) minmax(300px,.55fr);
+  gap:50px;
+  align-items:end;
+  border-top:1px solid var(--line);
+}
+.teaching-room-heading h2{
+  margin:0;
+  max-width:840px;
+  font-size:clamp(48px,6.5vw,86px);
+  line-height:.85;
+  letter-spacing:-.055em;
+}
+.teaching-room-heading>div>p:not(.kicker),
+.teaching-room-heading>p{
+  margin:0;
+  color:var(--muted);
+  font:16px/1.68 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+
+.teaching-mode-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+}
+.teaching-mode-grid article{
+  min-height:250px;
+  padding:28px;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:rgba(255,250,244,.78);
+}
+.teaching-mode-grid span,
+.teaching-task-label,
+.teaching-lesson-number{
+  color:var(--burgundy);
+  font:900 10px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.teaching-mode-grid h3{margin:30px 0 12px;font-size:32px;line-height:.98}
+.teaching-mode-grid p{margin:0;color:var(--muted);font:14px/1.62 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.teaching-mode-grid a{display:inline-block;margin-top:20px;color:var(--burgundy);font-weight:800}
+
+.teaching-task{
+  position:relative;
+  margin:0 0 32px;
+  padding:42px;
+  display:grid;
+  grid-template-columns:minmax(220px,.42fr) minmax(0,1.2fr);
+  gap:52px;
+  border:1px solid var(--line);
+  background:#fffaf4;
+  box-shadow:0 18px 42px rgba(32,28,26,.08);
+}
+.teaching-task:before{
+  content:'';
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:18px;
+  width:1px;
+  background:rgba(110,31,43,.25);
+}
+.teaching-task h3{margin:10px 0 13px;font-size:38px;line-height:.96}
+.teaching-task h4{margin:0 0 8px;font-size:24px;line-height:1.05}
+.teaching-task p,
+.teaching-task li{
+  color:#463f3a;
+  font:15px/1.66 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+.teaching-task p{margin:0 0 16px}
+.teaching-task ol,
+.teaching-task ul{margin:0;padding-left:20px}
+.teaching-task li+li{margin-top:9px}
+.teaching-task-meta{
+  margin:21px 0 0;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+}
+.teaching-task-meta b{display:block;margin-bottom:5px;color:var(--ink)}
+
+.teaching-timing{
+  margin:0;
+  padding:0;
+  list-style:none;
+  counter-reset:teaching-minute;
+}
+.teaching-timing li{
+  position:relative;
+  min-height:65px;
+  padding:10px 0 12px 82px;
+  border-top:1px solid var(--line);
+}
+.teaching-timing li:first-child{border-top:0}
+.teaching-timing time{
+  position:absolute;
+  top:10px;
+  left:0;
+  width:64px;
+  color:var(--burgundy);
+  font:900 11px/1.35 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  letter-spacing:.04em;
+}
+.teaching-timing b{display:block;margin-bottom:3px;color:var(--ink);font-family:Georgia,'Times New Roman',serif;font-size:20px}
+
+.student-prompt{
+  position:relative;
+  margin:30px 0 0;
+  padding:34px 36px 34px 62px;
+  border:1px solid rgba(32,28,26,.19);
+  background:
+    linear-gradient(90deg,transparent 38px,rgba(110,31,43,.22) 38px,rgba(110,31,43,.22) 39px,transparent 39px),
+    repeating-linear-gradient(180deg,#fffdf9 0,#fffdf9 30px,rgba(23,50,77,.12) 30px,rgba(23,50,77,.12) 31px);
+  box-shadow:0 14px 34px rgba(32,28,26,.08);
+}
+.student-prompt span{
+  display:block;
+  margin-bottom:14px;
+  color:var(--burgundy);
+  font:900 10px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.student-prompt h3{margin:0 0 18px;font-size:clamp(30px,3.4vw,45px);line-height:1}
+.student-prompt p,
+.student-prompt li{font:15px/2.05 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#38322f}
+.student-prompt p{margin:0}
+.student-prompt ol,
+.student-prompt ul{margin:0;padding-left:20px}
+
+.teaching-sequence{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+}
+.teaching-lesson{
+  min-height:600px;
+  padding:32px;
+  display:flex;
+  flex-direction:column;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:#fffaf4;
+}
+.teaching-lesson:nth-child(2){background:#eadccb}
+.teaching-lesson h3{margin:34px 0 14px;font-size:36px;line-height:.95}
+.teaching-lesson p,
+.teaching-lesson li{color:#4d4540;font:14px/1.62 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.teaching-lesson p{margin:0 0 15px}
+.teaching-lesson ul{margin:0;padding-left:18px}
+.teaching-lesson li+li{margin-top:8px}
+.teaching-lesson .teaching-lesson-outcome{margin-top:auto;padding-top:20px;border-top:1px solid var(--line)}
+.teaching-lesson .teaching-lesson-outcome b{display:block;margin-bottom:6px;color:var(--ink)}
+
+.turning-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  counter-reset:turning;
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+}
+.turning-grid article{
+  min-height:310px;
+  padding:28px;
+  counter-increment:turning;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:rgba(255,250,244,.8);
+}
+.turning-grid article:before{
+  content:'0' counter(turning);
+  color:rgba(110,31,43,.32);
+  font-size:54px;
+  line-height:1;
+}
+.turning-grid span{display:block;margin:22px 0 8px;color:var(--burgundy);font:900 10px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.turning-grid h3{margin:0 0 12px;font-size:28px;line-height:1}
+.turning-grid p{margin:0;color:var(--muted);font:14px/1.62 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+
+.teaching-discussion-grid,
+.teacher-guidance{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.teaching-discussion-grid article,
+.teacher-guidance article{
+  padding:30px;
+  border:1px solid var(--line);
+  background:#fffaf4;
+}
+.teaching-discussion-grid article:nth-child(3n),
+.teacher-guidance article:nth-child(even){background:#eadccb}
+.teaching-discussion-grid span,
+.teacher-guidance span{color:var(--burgundy);font:900 10px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.teaching-discussion-grid h3,
+.teacher-guidance h3{margin:18px 0 10px;font-size:30px;line-height:1}
+.teaching-discussion-grid p,
+.teacher-guidance p,
+.teacher-guidance li{margin:0;color:#4c443f;font:14px/1.65 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.teacher-guidance ul{margin:0;padding-left:18px}
+.teacher-guidance li+li{margin-top:8px}
+
+.evidence-ladder{
+  margin:0;
+  padding:0;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  list-style:none;
+  counter-reset:evidence;
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+}
+.evidence-ladder li{
+  min-height:230px;
+  padding:25px;
+  counter-increment:evidence;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:#fffaf4;
+  color:#4b433e;
+  font:14px/1.61 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+.evidence-ladder li:nth-child(2),
+.evidence-ladder li:nth-child(4),
+.evidence-ladder li:nth-child(5),
+.evidence-ladder li:nth-child(7){background:#eadccb}
+.evidence-ladder li:before{
+  content:counter(evidence);
+  display:block;
+  margin-bottom:38px;
+  color:var(--burgundy);
+  font:400 42px/1 Georgia,'Times New Roman',serif;
+}
+.evidence-ladder b{display:block;margin-bottom:7px;color:var(--ink);font-family:Georgia,'Times New Roman',serif;font-size:21px;line-height:1.05}
+
+.teaching-related{
+  margin:70px 0 12px;
+  padding:54px;
+  color:#fffaf4;
+  background:var(--burgundy);
+}
+.teaching-related .kicker{color:#e5c77f}
+.teaching-related h2{margin:0 0 28px;font-size:clamp(46px,6vw,78px);font-weight:400;line-height:.88;letter-spacing:-.05em}
+.teaching-related-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(255,250,244,.3);border-left:1px solid rgba(255,250,244,.3)}
+.teaching-related-grid a{min-height:170px;padding:22px;display:flex;flex-direction:column;border-right:1px solid rgba(255,250,244,.3);border-bottom:1px solid rgba(255,250,244,.3);color:#fffaf4;text-decoration:none}
+.teaching-related-grid span{color:#e5c77f;font:900 9px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.13em;text-transform:uppercase}
+.teaching-related-grid b{margin-top:auto;font-size:22px;line-height:1.05}
+.teaching-related-grid a:hover{background:rgba(255,250,244,.1)}
+
+.passage-classroom{
+  margin:-38px 44px 82px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  border-top:1px solid var(--line);
+  border-left:1px solid var(--line);
+}
+.passage-classroom article{
+  min-height:300px;
+  padding:28px;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:#fffaf4;
+}
+.passage-classroom article:nth-child(2){background:#eadccb}
+.passage-classroom span{color:var(--burgundy);font:900 10px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.passage-classroom h2{margin:26px 0 12px;font-size:31px;line-height:.96}
+.passage-classroom p,
+.passage-classroom li{color:#4a423d;font:14px/1.64 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.passage-classroom p{margin:0}
+.passage-classroom ol,
+.passage-classroom ul{margin:0;padding-left:18px}
+.passage-classroom li+li{margin-top:7px}
+
+.study-room-callout{
+  margin:46px 0;
+  padding:38px 42px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:34px;
+  align-items:center;
+  color:#fffaf4;
+  background:var(--navy-deep,#10263b);
+}
+.study-room-callout .kicker{color:#e5c77f}
+.study-room-callout h2{margin:0 0 10px;color:#fffaf4;font-size:clamp(37px,5vw,60px);line-height:.9;letter-spacing:-.045em}
+.study-room-callout p{max-width:700px;margin:0;color:#eee4db;font:15px/1.65 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.study-room-callout .button.secondary{border-color:rgba(255,250,244,.55);background:transparent;color:#fffaf4;white-space:nowrap}
+
+@media(max-width:1000px){
+  .teaching-home-hero,
+  .teaching-hero{padding-right:44px;padding-left:44px;grid-template-columns:minmax(0,1fr) minmax(250px,.5fr);gap:44px}
+  .teaching-principle{padding-right:44px;padding-left:44px;gap:38px}
+  .teaching-mode-grid,
+  .teaching-sequence,
+  .turning-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .teaching-mode-grid article:last-child,
+  .teaching-sequence article:last-child{grid-column:1/-1}
+  .teaching-task{grid-template-columns:1fr;gap:28px}
+  .evidence-ladder{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .teaching-related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .passage-classroom{grid-template-columns:1fr;margin-right:24px;margin-left:24px}
+  .passage-classroom article{min-height:0}
+}
+
+@media(max-width:760px){
+  .teaching-home,
+  .teaching-room{padding-top:24px}
+  .teaching-home-hero,
+  .teaching-hero{min-height:0;padding:48px 28px;grid-template-columns:1fr;gap:38px}
+  .teaching-home-hero h1,
+  .teaching-hero h1{font-size:clamp(62px,18vw,94px)}
+  .teaching-home-note,
+  .teaching-hero-note{padding:24px 0 0;border-top:1px solid rgba(255,250,244,.3);border-left:0}
+  .teaching-principle{padding:32px 28px;grid-template-columns:1fr;gap:22px}
+  .teaching-index-heading,
+  .teaching-room-heading{grid-template-columns:1fr;gap:22px}
+  .teaching-index-grid,
+  .teaching-mode-grid,
+  .teaching-sequence,
+  .turning-grid,
+  .teaching-discussion-grid,
+  .teacher-guidance,
+  .evidence-ladder{grid-template-columns:1fr}
+  .teaching-index-card,
+  .teaching-lesson{min-height:0}
+  .teaching-mode-grid article:last-child,
+  .teaching-sequence article:last-child{grid-column:auto}
+  .teaching-task{padding:32px 24px 32px 38px}
+  .student-prompt{padding-right:22px;padding-left:54px}
+  .teaching-related{padding:38px 28px}
+  .teaching-related-grid{grid-template-columns:1fr}
+  .teaching-related-grid a{min-height:120px}
+  .study-room-callout{padding:32px 28px;grid-template-columns:1fr}
+}
+
+@media(max-width:480px){
+  .teaching-home-hero,
+  .teaching-hero{margin-right:-8px;margin-left:-8px;padding-right:22px;padding-left:22px}
+  .teaching-jump{margin-right:-8px;margin-left:-8px;padding:14px}
+  .teaching-jump a{flex:1 1 45%;text-align:center}
+  .teaching-room-heading{margin-top:58px}
+  .teaching-task{margin-right:-6px;margin-left:-6px}
+  .turning-grid article{min-height:0}
+  .passage-classroom{margin-right:0;margin-left:0}
+}
+
+@media print{
+  .teaching-home-hero,
+  .teaching-hero,
+  .teaching-related,
+  .study-room-callout{background:#fff!important;color:#000!important;box-shadow:none!important}
+  .teaching-home-hero *,
+  .teaching-hero *,
+  .teaching-related *,
+  .study-room-callout *{color:#000!important}
+  .teaching-jump,
+  .button-row,
+  .teaching-related{display:none!important}
+  .teaching-task,
+  .teaching-lesson,
+  .student-prompt{break-inside:avoid;box-shadow:none}
+  .teaching-task,
+  .teaching-sequence,
+  .turning-grid,
+  .evidence-ladder{border-color:#777}
+}

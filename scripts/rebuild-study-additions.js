@@ -22,11 +22,18 @@ const cards = additions.map(function (edition) {
     '<span class="mini-kicker">Study edition</span>' +
     '<h3><em>' + escapeHtml(edition.title) + '</em></h3>' +
     '<p>' + escapeHtml(edition.description) + '</p>' +
-    '<span class="button primary">Buy / view</span>' +
+    '<span class="button primary">' + (edition.pageHref ? 'Explore the study page' : 'Buy / view') + '</span>' +
     '</a>';
 }).join('');
 
 html = html.replace(/<a class="study-card" href="https:\/\/mybook\.to\/lhbh">[\s\S]*?(?=<\/section><section class="section-title" id="paired-editions")/g, '');
+html = html.replace(
+  '<a class="study-card" href="https://mybook.to/cntRBz">',
+  '<a class="study-card" href="/study/macbeth/" data-buy-url="https://mybook.to/cntRBz">'
+).replace(
+  /(<a class="study-card" href="\/study\/macbeth\/"[\s\S]*?<span class="button primary">)Buy \/ view(<\/span>)/,
+  '$1Explore the study page$2'
+);
 if (!html.includes(marker)) throw new Error('Could not find the paired-editions marker in study/index.html');
 html = html.replace(marker, cards + marker);
 fs.writeFileSync(file, html);

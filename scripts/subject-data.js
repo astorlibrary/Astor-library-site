@@ -125,6 +125,72 @@ module.exports = [
     ]
   },
   {
+    slug: 'history-plays',
+    title: 'History plays: kingship, succession and nation',
+    navTitle: 'History plays',
+    kicker: 'Crowns, claims and the making of public memory',
+    description: 'Read Shakespeare’s history plays through kingship, succession, civil war and national memory, from King John and Richard II through the Henry IV, Henry V and Henry VI sequences to Richard III and Henry VIII.',
+    search: 'Shakespeare history plays histories kingship succession crown monarchy nation civil war Wars of the Roses Richard II Henry IV Henry V Henry VI Richard III Henry VIII King John chronicle Holinshed tetralogy legitimacy deposition First Folio',
+    facts: [
+      { value: '1577 / 1587', label: 'Holinshed’s Chronicles provides a principal source in two Elizabethan editions' },
+      { value: 'Two sequences', label: 'Henry VI–Richard III was written before the chronologically earlier Richard II–Henry V sequence' },
+      { value: 'Ten plays', label: 'The First Folio history section runs from King John to Henry VIII' },
+      { value: '1623', label: 'The First Folio first gathers the plays under Comedies, Histories and Tragedies' }
+    ],
+    introduction: {
+      heading: 'History reaches the stage after somebody has already shaped the record.',
+      paragraphs: [
+        'The ten plays printed as histories in the 1623 First Folio move from King John to Henry VIII, with their greatest concentration on the troubled succession between Richard II and Richard III. They draw upon chronicles, earlier plays, genealogies and public memory, but they are not transcripts of the past. Years contract into a scene, several people may be combined into one dramatic role, and a private encounter can be invented to make political pressure visible. The useful question is not simply whether Shakespeare is accurate. It is what a particular change allows an audience to see about authority, inheritance and national story.',
+        'Writing order complicates historical order. The early Henry VI plays and Richard III begin after Henry V’s death and follow the realm into the Wars of the Roses; the later Richard II, two Henry IV plays and Henry V go back to the deposition and inheritance that precede that collapse. Read one sequence and victory can look like an ending. Continue into the other and it becomes a fragile legacy. Macbeth and King Lear sit at the edge of this shelf as chronicle tragedies: neither belongs to the Folio’s history section, but each turns an inherited account of British kingship and succession into tragic action.'
+      ]
+    },
+    methods: [
+      { label: 'Chronicle', title: 'A source is material, not a verdict', copy: 'Holinshed and other chroniclers had already selected causes, repeated traditions and arranged rulers into meaningful sequences. Shakespeare selects again. Compare what the play keeps, moves or invents, then ask whose claim becomes stronger or weaker through that decision. Source study should reveal a dramatic argument, not reduce reading to catching errors.' },
+      { label: 'Performance', title: 'A king must be recognised in public', copy: 'The crown does not make authority self-executing. Oaths, processions, titles, costumes and speeches persuade other people to behave as though a claim is settled. Watch who stands near the king, who answers and whether a public role survives private doubt. Kingship is repeatedly shown as an office that bodies and audiences must perform together.' },
+      { label: 'Sequence', title: 'One reign leaves the next play unfinished business', copy: 'A deposition, pardon, rebellion or conquest returns as another generation’s inheritance. Read endings with the next opening in view. Henry V’s triumph is followed by a child king and lost territory; Richard III’s ascent gathers violence begun long before his first soliloquy. Sequence turns consequence into a form of historical memory.' }
+    ],
+    books: [
+      { href: '/books/king-john/', title: 'King John', author: 'William Shakespeare', year: 'c.1594–96', image: '/King%20John%20Main%20Cover.jpg', copy: 'A disputed succession pulls inheritance, papal authority, France and the fate of Arthur into a war whose claimants all speak law.' },
+      { href: '/books/richard-ii/', title: 'Richard II', author: 'William Shakespeare', year: 'c.1595', image: '/Richard%20II.png', copy: 'Ceremony, land and language are tested when Bolingbroke turns grievance into deposition and a new royal title.' },
+      { href: '/books/henry-iv-part-1/', title: 'Henry IV, Part 1', author: 'William Shakespeare', year: 'c.1596–97', image: '/Henry%20IV,%20Part%201.png', copy: 'Rebellion sets Hotspur beside Prince Hal, while Falstaff tests the honour and political education expected of an heir.' },
+      { href: '/books/henry-iv-part-2/', title: 'Henry IV, Part 2', author: 'William Shakespeare', year: 'c.1597–98', image: '/Henry%20IV%20part%202%20Main.jpeg', copy: 'An ageing king and an exhausted realm wait for succession as Hal prepares to make his first public judgement as Henry V.' },
+      { href: '/books/henry-v/', title: 'Henry V', author: 'William Shakespeare', year: 'c.1599', image: '/Henry%20V%20Main%20Cover.jpg', copy: 'Chorus and king construct national unity around the French campaign while soldiers and conquered civilians reveal its cost.' },
+      { href: '/books/henry-vi-part-1/', title: 'Henry VI, Part 1', author: 'William Shakespeare and collaborators', year: 'c.1591–92', image: '/Henry%20VI%2C%20Part%201%20%28Main%20cover%29.jpg', copy: 'Henry V’s funeral opens a fractured realm: France is lost while rivalry at home begins to divide the English claim.' },
+      { href: '/books/henry-vi-part-2/', title: 'Henry VI, Part 2', author: 'William Shakespeare', year: 'c.1590–91', image: '/Henry%20VI%2C%20Part%202.png', copy: 'Faction, popular rebellion and York’s concealed claim move political disagreement towards open civil war.' },
+      { href: '/books/henry-vi-part-3/', title: 'Henry VI, Part 3', author: 'William Shakespeare', year: 'c.1590–91', image: '/Henry%20VI%2C%20Part%203.png', copy: 'The crown changes hands amid the Wars of the Roses, turning dynastic argument into violence between parents and children.' },
+      { href: '/books/richard-iii/', title: 'Richard III', author: 'William Shakespeare', year: 'c.1592–94', image: '/Richard%20III.png', copy: 'Richard performs villainy and entitlement before an audience while the dead of the earlier plays challenge his version of history.' },
+      { href: '/books/henry-viii/', title: 'Henry VIII', author: 'William Shakespeare, probably with John Fletcher', year: 'c.1613', image: '/Henry%20VIII%20Main%20Cover.jpg', copy: 'Trials, falls and royal marriage lead towards Elizabeth’s birth in a late spectacle that keeps historical closure under pressure.' },
+      { href: '/books/macbeth/', title: 'Macbeth', author: 'William Shakespeare', year: 'c.1606 · chronicle tragedy', image: '/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png', copy: 'Holinshed’s Scottish history becomes a tragedy of regicide, prophecy and a succession that violence cannot securely command.' },
+      { href: '/books/king-lear/', title: 'King Lear', author: 'William Shakespeare', year: 'c.1605–06 · chronicle tragedy', image: '/King%20Lear.png', copy: 'A legendary British king divides his realm, treating succession as a love test and turning family judgement into national ruin.' }
+    ],
+    reading: {
+      heading: 'Make a succession table, then return to the people on stage.',
+      paragraphs: [
+        'A simple family tree helps: write down who claims the crown, through which relative and under what rule of inheritance. Keep legality and control in separate columns. Richard II is an anointed king who loses practical obedience; Bolingbroke acquires obedience before he can make his title feel secure. The table should clarify the claim, not decide the play. Watch the moment when a room accepts, refuses or remains silent before a new political fact.',
+        'For each play, place one ceremonial speech beside one scene of ordinary cost. Henry V’s Chorus makes a nation in language, while Williams asks what a king owes the soldiers who die for him. Jack Cade’s rebellion mixes real grievance with grotesque violence; the gardeners in Richard II describe order from outside the court. These changes of scale show who is included in the word England, who is spoken for, and whose body pays when royal history becomes a public story.'
+      ]
+    },
+    terms: [
+      { term: 'Chronicle history', copy: 'A prose account that arranges rulers and events over time; it supplies source material but is itself a constructed interpretation of the past.' },
+      { term: 'Tetralogy', copy: 'A sequence of four plays: Henry VI Parts 1–3 and Richard III form the earlier-written first tetralogy; Richard II, Henry IV Parts 1–2 and Henry V form the second.' },
+      { term: 'Succession', copy: 'The transfer of royal authority from one ruler to another, including the hereditary rules, competing claims and acts of recognition that make a title effective.' },
+      { term: 'Deposition', copy: 'The removal of a reigning monarch, a political act that raises questions about who may judge a king and how obedience can be transferred.' }
+    ],
+    resources: [
+      { href: '/resources/richard-ii/study-guide/', label: 'Richard II study guide', copy: 'Deposition, divine kingship, succession and the rival performances of Richard and Bolingbroke.' },
+      { href: '/resources/macbeth/quick-guide/', label: 'Macbeth quick study guide', copy: 'Regicide, prophecy, Scotland and the language used to make violent succession appear inevitable.' },
+      { href: '/resources/king-lear/summary-guide/', label: 'King Lear summary guide', copy: 'Follow the division of the kingdom through family judgement, rule and national suffering.' },
+      { href: '/reading-routes/#power', label: 'Reading route: why must power be performed?', copy: 'Compare Shakespearean rule with political prose and fable across the wider library.' }
+    ],
+    sources: [
+      { href: 'https://www.folger.edu/explore/shakespeares-works/', label: 'Folger Shakespeare Library: histories, texts and essays' },
+      { href: 'https://www.folger.edu/explore/shakespeare-in-print/first-folio/', label: 'Folger Shakespeare Library: the First Folio and its genre divisions' },
+      { href: 'https://digital.humanities.ox.ac.uk/project/holinshed-project', label: 'University of Oxford: the Holinshed Project' },
+      { href: 'https://www.folger.edu/explore/shakespeares-works/king-john/an-introduction-to-this-text/', label: 'Folger: King John and The Troublesome Reign' },
+      { href: 'https://www.rsc.org.uk/henry-v/learning', label: 'Royal Shakespeare Company: Henry V learning resources' }
+    ]
+  },
+  {
     slug: 'tragedy',
     title: 'Tragedy',
     navTitle: 'Tragedy',

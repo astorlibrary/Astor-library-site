@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const resourceData = require('./resource-data');
+const authorProfileData = require('./author-profiles');
 
 const root = process.cwd();
 const SITE_URL = 'https://astorlibrary.com';
@@ -168,7 +169,7 @@ if (!homepageMain.includes('class="catalogue-find-rows"')) failures.push('The ho
 if (!homepageMain.includes('class="catalogue-reading-room"')) failures.push('The homepage is missing its reading room');
 if (!homepageMain.includes('class="catalogue-colophon"')) failures.push('The homepage is missing the Astor history');
 if (countMatches(homepageMain, /<section class="catalogue-/g) !== 7) failures.push('The homepage must contain seven purposeful sections');
-for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/']) {
+for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/teach/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/']) {
   if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
 }
 if (homepage.includes('class="home-reading-desk"') || homepage.includes('class="home-library-doors"')) failures.push('The homepage still contains an older duplicate section');
@@ -179,7 +180,7 @@ if (!fs.existsSync(passageHubFile)) {
 } else {
   const passageHub = fs.readFileSync(passageHubFile, 'utf8');
   if (!passageHub.includes('Stay with the words.')) failures.push('The Passage Room is missing its opening statement');
-  if (countMatches(passageHub, /class="passage-card /g) !== 12) failures.push('The Passage Room must open twelve close readings');
+  if (countMatches(passageHub, /class="passage-card /g) !== 15) failures.push('The Passage Room must open fifteen close readings');
 }
 
 const passageRoutes = [
@@ -194,7 +195,10 @@ const passageRoutes = [
   'christmas-carol-prisons',
   'othello-trifles-proof',
   'uncle-toms-cabin-ice',
-  'moby-dick-call-me-ishmael'
+  'moby-dick-call-me-ishmael',
+  'macbeth-unsex-me-here',
+  'macbeth-is-this-a-dagger',
+  'macbeth-tomorrow-and-tomorrow'
 ];
 for (const route of passageRoutes) {
   const passageFile = path.join(root, 'passage-room', route, 'index.html');
@@ -210,6 +214,44 @@ for (const route of passageRoutes) {
   if (!passage.includes('Texts consulted')) failures.push(route + ' is missing its source note');
 }
 
+const teachingHubFile = path.join(root, 'teach', 'index.html');
+if (!fs.existsSync(teachingHubFile)) {
+  failures.push('The site is missing its Teaching Room');
+} else {
+  const teachingHub = fs.readFileSync(teachingHubFile, 'utf8');
+  if (!teachingHub.includes('class="page-wrap teaching-home"')) failures.push('The Teaching Room is missing its opening layout');
+  if (!teachingHub.includes('href="/teach/macbeth/"')) failures.push('The Teaching Room does not open the Macbeth room');
+}
+
+const macbethTeachingFile = path.join(root, 'teach', 'macbeth', 'index.html');
+if (!fs.existsSync(macbethTeachingFile)) {
+  failures.push('The Macbeth Teaching Room is missing');
+} else {
+  const macbethTeaching = fs.readFileSync(macbethTeachingFile, 'utf8');
+  for (const sectionId of ['fifteen', 'lesson', 'sequence', 'turning-points', 'discussion', 'essay', 'teacher-notes']) {
+    if (!macbethTeaching.includes('id="' + sectionId + '"')) failures.push('The Macbeth Teaching Room is missing #' + sectionId);
+  }
+  if (countMatches(macbethTeaching, /class="teaching-lesson"/g) !== 3) failures.push('The Macbeth Teaching Room must contain three sequenced lessons');
+  for (const route of passageRoutes.slice(-3)) {
+    if (!macbethTeaching.includes('href="/passage-room/' + route + '/"')) failures.push('The Macbeth Teaching Room is missing its close reading: ' + route);
+  }
+}
+
+const macbethStudyFile = path.join(root, 'study', 'macbeth', 'index.html');
+if (!fs.existsSync(macbethStudyFile)) {
+  failures.push('The detailed Macbeth study page is missing');
+} else {
+  const macbethStudy = fs.readFileSync(macbethStudyFile, 'utf8');
+  if (!macbethStudy.includes('href="https://mybook.to/cntRBz"')) failures.push('The Macbeth study page is missing its edition link');
+  if (!macbethStudy.includes('href="/teach/macbeth/"')) failures.push('The Macbeth study page is missing its Teaching Room link');
+  for (const route of passageRoutes.slice(-3)) {
+    if (!macbethStudy.includes('href="/passage-room/' + route + '/"')) failures.push('The Macbeth study page is missing its close reading: ' + route);
+  }
+  const macbethStudyMain = macbethStudy.match(/<main\b[\s\S]*?<\/main>/i)?.[0] || '';
+  const macbethStudyWords = visibleText(macbethStudyMain).split(/\s+/).filter(Boolean).length;
+  if (macbethStudyWords < 1500) failures.push('The Macbeth study page is too slight at ' + macbethStudyWords + ' words');
+}
+
 const editorialFile = path.join(root, 'editorial', 'index.html');
 if (!fs.existsSync(editorialFile)) {
   failures.push('The site is missing its editorial standards page');
@@ -218,6 +260,34 @@ if (!fs.existsSync(editorialFile)) {
   if (!editorial.includes('How the library is made')) failures.push('The editorial standards page is missing its opening statement');
   if (countMatches(editorial, /class="editorial-principles"/g) !== 1) failures.push('The editorial standards page is missing its principles');
 }
+
+const authorsHub = fs.readFileSync(path.join(root, 'authors', 'index.html'), 'utf8');
+const libraryHub = fs.readFileSync(path.join(root, 'library', 'index.html'), 'utf8');
+for (const profile of authorProfileData) {
+  if (!authorsHub.includes('href="' + profile.href + '"')) {
+    failures.push('The writers page is missing the profile link for ' + profile.name);
+  }
+  if (!libraryHub.includes('href="' + profile.href + '"')) {
+    failures.push('The catalogue is missing the writer link for ' + profile.name);
+  }
+  if (profile.href === '/shakespeare/') continue;
+
+  const authorFile = path.join(root, profile.href.replace(/^\//, ''), 'index.html');
+  if (!fs.existsSync(authorFile)) {
+    failures.push('The writer profile is missing: ' + profile.href);
+    continue;
+  }
+  const authorHtml = fs.readFileSync(authorFile, 'utf8');
+  const authorMain = authorHtml.match(/<main\b[\s\S]*?<\/main>/i)?.[0] || '';
+  const wordCount = visibleText(authorMain).split(/\s+/).filter(Boolean).length;
+  if (!authorHtml.includes('class="page-wrap author-profile-page"')) failures.push(profile.href + ' is missing the writer-page layout');
+  if (countMatches(authorHtml, /<h1\b/gi) !== 1) failures.push(profile.href + ' must have one main heading');
+  if (!authorHtml.includes('class="author-facts"')) failures.push(profile.href + ' is missing its factual register');
+  if (countMatches(authorHtml.match(/class="author-method-grid"[\s\S]*?<\/section>/i)?.[0] || '', /<article>/g) !== 3) failures.push(profile.href + ' must contain three reading methods');
+  if (!authorHtml.includes('class="source-list"')) failures.push(profile.href + ' is missing its source list');
+  if (wordCount < 600) failures.push(profile.href + ' is too slight for a full writer profile (' + wordCount + ' words)');
+}
+
 for (const icon of ['favicon.ico', 'favicon.svg', 'favicon-32x32.png', 'favicon-48x48.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'site.webmanifest']) {
   if (!fs.existsSync(path.join(root, icon))) failures.push('The site is missing ' + icon);
 }
@@ -538,14 +608,32 @@ if (fs.existsSync(distDir)) {
       if (!redirect && !html.includes('data-astor-global-meta')) failures.push('dist/' + fileName + ' is missing its search visibility information');
       if (countMatches(html, /class="site-header astor-global-header/g) !== 1) failures.push('dist/' + fileName + ' must have one shared header');
       if (countMatches(html, /class="site-footer astor-global-footer/g) !== 1) failures.push('dist/' + fileName + ' must have one grouped footer');
-      for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/explore/', '/authors/', '/subjects/']) {
+      for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/teach/', '/passage-room/', '/explore/', '/authors/', '/subjects/']) {
         if (!html.includes('href="' + href + '"')) failures.push('dist/' + fileName + ' is missing ' + href + ' from shared navigation');
+      }
+
+      const mainHtml = html.match(/<main\b[\s\S]*?<\/main>/i)?.[0] || '';
+      const mainImages = Array.from(mainHtml.matchAll(/<img\b[^>]*>/gi), match => match[0]);
+      const eagerMainImages = mainImages.filter(tag => /\bloading="eager"/i.test(tag));
+      if (eagerMainImages.length > 1) failures.push('dist/' + fileName + ' loads more than one main image eagerly');
+      for (const image of html.matchAll(/<img\b[^>]*>/gi)) {
+        if (!/\bloading="(?:lazy|eager)"/i.test(image[0]) || !/\bdecoding="async"/i.test(image[0])) {
+          failures.push('dist/' + fileName + ' has an image without explicit loading hints');
+        }
+      }
+      const isBookListing = fileName === 'library/index.html' || fileName === 'explore/index.html' || collectionFiles.includes(fileName);
+      if (isBookListing) {
+        for (const card of html.matchAll(/<(?:article|a)\b[^>]*class="[^"]*\b(?:edition-card|catalog-card|explore-card-book)\b[^"]*"[^>]*>[\s\S]*?<\/\s*(?:article|a)>/gi)) {
+          const image = card[0].match(/<img\b[^>]*>/i)?.[0] || '';
+          if (image && !/\bloading="lazy"/i.test(image)) failures.push('dist/' + fileName + ' eagerly loads a catalogue cover');
+          if (image && !/\bsrc="\/assets\/book-thumbs\//i.test(image)) failures.push('dist/' + fileName + ' is not using its light catalogue cover');
+        }
       }
     }
     if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
       failures.push('dist/' + fileName + ' is missing its book description for search engines');
     }
-    if (/^(?:authors|subjects|passage-room|classic-literature|library|resources|study|explore|reading-routes|site-index|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
+    if (/^(?:authors|subjects|passage-room|teach|classic-literature|library|resources|study|explore|reading-routes|site-index|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
       failures.push('dist/' + fileName + ' is missing its collection description for search engines');
     }
     if (/^passage-room\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-passage-schema')) {
@@ -554,10 +642,13 @@ if (fs.existsSync(distDir)) {
     if (/^study\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-study-schema')) {
       failures.push('dist/' + fileName + ' is missing its study-edition description for search engines');
     }
+    if (/^teach\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-teaching-schema')) {
+      failures.push('dist/' + fileName + ' is missing its teaching-room description for search engines');
+    }
     if (/^subjects\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
       failures.push('dist/' + fileName + ' is missing its subject description for search engines');
     }
-    if (/^authors\/(?:charles-dickens|frederick-douglass|jane-austen|mary-shelley|arthur-conan-doyle)\/index\.html$/.test(fileName)) {
+    if (/^authors\/[^/]+\/index\.html$/.test(fileName)) {
       if (!html.includes('data-astor-author-schema')) failures.push('dist/' + fileName + ' is missing its writer description for search engines');
       const authorData = html.match(/<script type="application\/ld\+json" data-astor-author-schema>([\s\S]*?)<\/script>/i);
       if (authorData) {

@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const authorProfileData = require('./author-profiles');
+const subjectData = require('./subject-data');
 
 require('./rebuild-resources');
 require('./rebuild-resource-additions');
@@ -8,6 +10,14 @@ require('./rebuild-shakespeare-additions');
 require('./rebuild-main-additions');
 
 const root = process.cwd();
+const authorProfileByName = new Map(authorProfileData.map(author => [author.name, author]));
+const subjectsByBook = new Map();
+for (const subject of subjectData) {
+  for (const book of subject.books) {
+    if (!subjectsByBook.has(book.href)) subjectsByBook.set(book.href, []);
+    subjectsByBook.get(book.href).push(subject.title);
+  }
+}
 const collections = [
   ['ancient-epic/index.html', 'Ancient & Epic'],
   ['renaissance-early-modern/index.html', 'Renaissance & Early Modern'],
@@ -34,6 +44,15 @@ function decodeEntities(value) {
 
 function textOnly(value) {
   return decodeEntities(value.replace(/<[^>]+>/g, '')).trim();
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 function rootPath(value) {
@@ -76,12 +95,19 @@ for (const [relative, collection] of collections) {
 
     const titleHtml = titleMatch[1].replace(/\.$/, '');
 
+    const authorText = textOnly(authorMatch[1]);
+    const authorProfile = authorProfileByName.get(authorText);
+
     books.set(href, {
       href,
       collection,
       titleHtml,
       titleText: textOnly(titleHtml),
-      authorHtml: authorMatch[1],
+      authorHtml: authorProfile
+        ? `<a href="${authorProfile.href}">${escapeHtml(authorText)}</a>`
+        : escapeHtml(authorText),
+      authorText,
+      subjects: subjectsByBook.get(href) || [],
       descriptionHtml: firstSentence(deckMatch[1]),
       image: rootPath(imageMatch[1]),
       imageAlt: imageMatch[2]
@@ -106,7 +132,7 @@ const filterButtons = ['All books', ...collections.map(([, label]) => label)]
   .join('');
 
 const cards = sorted.map(book => `
-      <article class="catalog-card" data-collection="${book.collection}">
+      <article class="catalog-card" data-collection="${book.collection}" data-search="${escapeHtml([book.titleText, book.authorText, book.collection, ...book.subjects, textOnly(book.descriptionHtml)].join(' '))}">
         <a class="catalog-cover" href="${book.href}"><img src="${book.image}" alt="${book.imageAlt}" loading="lazy"></a>
         <div class="catalog-card-copy"><p class="catalog-collection">${book.collection}</p><h2><a href="${book.href}">${book.titleHtml}</a></h2><p class="catalog-author">${book.authorHtml}</p><p>${book.descriptionHtml}</p><a class="home-text-link" href="${book.href}">Explore the book <span aria-hidden="true">&rarr;</span></a></div>
       </article>`).join('');
