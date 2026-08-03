@@ -13,7 +13,7 @@ module.exports = [
       { value: '1897', label: 'Dracula gathers old terror into a modern documentary form' }
     ],
     introduction: {
-      heading: 'The past returns because the present is not secure.',
+      heading: 'The past returns because the present is not secure',
       paragraphs: [
         'Gothic writing is often recognised by its surfaces: a ruined building, a locked door, a storm, a secret room, an unexplained sound. Those details matter, but the form is not a box of gloomy properties. It makes something that a culture would rather keep hidden become physically or psychologically impossible to ignore.',
         'In the books held here, terror moves steadily closer. Frankenstein crosses mountains and frozen seas, yet its deepest fear begins in a private act of creation. Wuthering Heights turns a house and its inheritance into an emotional weather system. Stevenson divides a respectable London professional; Wilde gives a beautiful public life a concealed record; Stoker brings the vampire into bedrooms, railway timetables and typewritten case notes.'
@@ -32,7 +32,7 @@ module.exports = [
       { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'Ancient predation meets blood science, transport, recording technology and a fragile archive of evidence.' }
     ],
     reading: {
-      heading: 'Watch what the narrative refuses to show directly.',
+      heading: 'Watch what the narrative refuses to show directly',
       paragraphs: [
         'Gothic plots are full of delayed accounts. A witness faints, a manuscript breaks off, a confession arrives after the damage, or one narrator places another person’s words inside a frame. Instead of treating that delay as mere suspense, ask who is allowed to tell the event and what kind of evidence the reader has actually received.',
         'Then follow changes in ordinary objects. A mirror, letter, window, key or medical instrument may begin as part of a recognisable world and become disturbing without changing its physical form. The Gothic often works at exactly that point: the familiar remains visible, but can no longer be trusted to mean what it meant before.'
@@ -70,7 +70,7 @@ module.exports = [
       { value: 'Not one mood', label: 'The Folio’s comedies include farce, uneasy social settlements and plays later called romances' }
     ],
     introduction: {
-      heading: 'A comic ending does not make every problem disappear.',
+      heading: 'A comic ending does not make every problem disappear',
       paragraphs: [
         'Shakespearean comedy often begins by making ordinary identity unstable. Twins arrive in the wrong city, a woman takes a male name, lovers transfer their devotion overnight, or a household turns a jealous husband into the subject of its own play. Confusion is entertaining, but it also exposes how readily rank, gender and reputation depend on performance and recognition.',
         'The endings usually gather people into marriages, pardons and restored families. Those settlements matter, yet they do not erase everything that came before. Malvolio is not reconciled in Twelfth Night; Jaques leaves the dance in As You Like It; Helena wins Bertram under conditions audiences still argue about. Comedy is therefore more than laughter. It is a way of testing what a community can repair, what it chooses to forgive and who remains awkwardly outside the final picture.'
@@ -100,7 +100,7 @@ module.exports = [
       { href: '/books/the-tempest/', title: 'The Tempest', author: 'William Shakespeare', year: 'c.1610–11', image: '/The%20Tempest.png', copy: 'A staged shipwreck gives Prospero the power to punish, educate, forgive and finally release his audience.' }
     ],
     reading: {
-      heading: 'Follow who controls the scene—and when that control changes hands.',
+      heading: 'Follow who controls the scene—and when that control changes hands',
       paragraphs: [
         'Begin with the obstruction. A father controls a marriage, an older brother blocks an inheritance, jealousy governs a household or a law threatens an outsider. Comedy needs a pressure strong enough to make another space, name or performance necessary. The forest, disguise and practical joke are responses to a social arrangement, not decorative detours from it.',
         'Then read the ending backwards. Which earlier mistake must be retold? Who produces proof, recognises a face or accepts a new account? A final embrace may depend on an improbable arrival, but stage action makes that improbability visible and communal. The audience watches knowledge become shared—even when one character refuses the terms on which the sharing occurs.'
@@ -138,7 +138,7 @@ module.exports = [
       { value: '1623', label: 'The First Folio first gathers the plays under Comedies, Histories and Tragedies' }
     ],
     introduction: {
-      heading: 'History reaches the stage after somebody has already shaped the record.',
+      heading: 'History reaches the stage after somebody has already shaped the record',
       paragraphs: [
         'The ten plays printed as histories in the 1623 First Folio move from King John to Henry VIII, with their greatest concentration on the troubled succession between Richard II and Richard III. They draw upon chronicles, earlier plays, genealogies and public memory, but they are not transcripts of the past. Years contract into a scene, several people may be combined into one dramatic role, and a private encounter can be invented to make political pressure visible. The useful question is not simply whether Shakespeare is accurate. It is what a particular change allows an audience to see about authority, inheritance and national story.',
         'Writing order complicates historical order. The early Henry VI plays and Richard III begin after Henry V’s death and follow the realm into the Wars of the Roses; the later Richard II, two Henry IV plays and Henry V go back to the deposition and inheritance that precede that collapse. Read one sequence and victory can look like an ending. Continue into the other and it becomes a fragile legacy. Macbeth and King Lear sit at the edge of this shelf as chronicle tragedies: neither belongs to the Folio’s history section, but each turns an inherited account of British kingship and succession into tragic action.'
@@ -164,7 +164,7 @@ module.exports = [
       { href: '/books/king-lear/', title: 'King Lear', author: 'William Shakespeare', year: 'c.1605–06 · chronicle tragedy', image: '/King%20Lear.png', copy: 'A legendary British king divides his realm, treating succession as a love test and turning family judgement into national ruin.' }
     ],
     reading: {
-      heading: 'Make a succession table, then return to the people on stage.',
+      heading: 'Make a succession table, then return to the people on stage',
       paragraphs: [
         'A simple family tree helps: write down who claims the crown, through which relative and under what rule of inheritance. Keep legality and control in separate columns. Richard II is an anointed king who loses practical obedience; Bolingbroke acquires obedience before he can make his title feel secure. The table should clarify the claim, not decide the play. Watch the moment when a room accepts, refuses or remains silent before a new political fact.',
         'For each play, place one ceremonial speech beside one scene of ordinary cost. Henry V’s Chorus makes a nation in language, while Williams asks what a king owes the soldiers who die for him. Jack Cade’s rebellion mixes real grievance with grotesque violence; the gardeners in Richard II describe order from outside the court. These changes of scale show who is included in the word England, who is spoken for, and whose body pays when royal history becomes a public story.'
@@ -195,7 +195,7 @@ module.exports = [
     title: 'Tragedy',
     navTitle: 'Tragedy',
     kicker: 'Choice, consequence and the watching audience',
-    description: 'Explore early modern tragedy from Marlowe and Webster alongside Shakespeare, following the form from Doctor Faustus and Titus Andronicus to Hamlet, Othello, King Lear and The Duchess of Malfi.',
+    description: 'Early modern tragedy from Marlowe and Webster read alongside Shakespeare, following the form from Doctor Faustus and Titus Andronicus to Hamlet, Othello and King Lear.',
     search: 'tragedy Shakespeare Marlowe Webster Doctor Faustus Duchess of Malfi tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family',
     facts: [
       { value: 'c.335 BCE', label: 'Aristotle’s Poetics gives an influential early account of tragic action' },
@@ -230,7 +230,7 @@ module.exports = [
       { href: '/books/titus-andronicus/', title: 'Titus Andronicus', author: 'William Shakespeare', year: 'c.1590s', image: '/Titus%20Andronicus.png', copy: 'Revenge multiplies injury until ritual, family and political order become indistinguishable from violence.' }
     ],
     reading: {
-      heading: 'Read the scene before judging the character.',
+      heading: 'Read the scene before judging the character',
       paragraphs: [
         'A tragic figure is often reduced to one noun—ambition, jealousy, pride, indecision. Those words can begin a discussion, but they cannot explain a play. Ask what has happened immediately before the speech, who is present, what the speaker wants from them and which action the language is trying to make possible.',
         'Keep the audience in view as well. A soliloquy creates temporary intimacy; an aside divides knowledge inside a scene; an entrance may expose a lie; a body on stage can contradict the official account of a death. Tragedy is made from what spectators are asked to know, wait for and witness together.'
@@ -263,7 +263,7 @@ module.exports = [
     title: 'Detective fiction',
     navTitle: 'Detection',
     kicker: 'Clues, records and the authority to explain',
-    description: 'Explore detective fiction through Arthur Conan Doyle’s Sherlock Holmes, then follow the investigative method into Dracula and Jekyll and Hyde without confusing those Gothic works for detective novels.',
+    description: 'Doyle’s Sherlock Holmes first, then the investigative method as it works in Dracula and Jekyll and Hyde, without mistaking those Gothic novels for detective fiction.',
     search: 'detective fiction crime mystery Sherlock Holmes Watson clue deduction evidence investigation case record police Victorian London locked room',
     facts: [
       { value: '1841', label: 'Poe’s “The Murders in the Rue Morgue” supplies an early detective-story model' },
@@ -272,7 +272,7 @@ module.exports = [
       { value: '1891–92', label: 'The Strand stories make Holmes a recurring magazine presence' }
     ],
     introduction: {
-      heading: 'A case is solved twice: by the detective and by the storyteller.',
+      heading: 'A case is solved twice: by the detective and by the storyteller',
       paragraphs: [
         'Detective fiction creates a double movement. Someone inside the story gathers traces and constructs an explanation; the narrative decides when the reader may see those traces and what they appear to mean. A solution can be logically sound and still owe its force to delay, selection and performance.',
         'Conan Doyle’s most important formal decision is Watson. Holmes can observe a cuff, footprint or timetable, but Watson turns the observation into a case with weather, rooms, clients, uncertainty and a final account. The partnership keeps method from becoming a dry demonstration and makes the return to Baker Street part of the genre’s pleasure.'
@@ -290,7 +290,7 @@ module.exports = [
       { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897 · documentary Gothic', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'Not detective fiction, but a collected archive turns several partial witnesses into a shared investigation.' }
     ],
     reading: {
-      heading: 'Separate observation, inference and proof.',
+      heading: 'Separate observation, inference and proof',
       paragraphs: [
         'When Holmes speaks rapidly, it is easy to treat every sentence as one act of deduction. Slow the passage down. Mark what can be directly seen, what depends on specialist knowledge and what remains a hypothesis until another fact confirms it. The method becomes more interesting when its joins are visible.',
         'Then read Watson’s timing. Does he report the clue when Holmes sees it, when Watson notices it or only when the solution is given? A mystery is not simply a set of facts concealed from the reader. It is an argument about the order in which facts become meaningful.'
@@ -325,7 +325,7 @@ module.exports = [
       { value: '1667 / 1674', label: 'Paradise Lost moves from ten books in its first edition to twelve in its revised form' }
     ],
     introduction: {
-      heading: 'Epic makes one life answer to a much larger history.',
+      heading: 'Epic makes one life answer to a much larger history',
       paragraphs: [
         'Epic scale does not come only from length, gods or battles. An epic joins an individual action to the fate of a household, people or future state. Odysseus’s return tests whether Ithaca can become a home again. Aeneas’s journey is burdened by a city and empire that do not yet exist.',
         'These poems also remember other tellings. Virgil writes with Homer in view; Milton invokes both classical epic and the book of Genesis while making the Fall unfold in English blank verse. Moby-Dick is a novel, not an ancient epic, but its invocations, catalogues, voyage and immense adversary deliberately reach towards epic ways of making scale.'
@@ -343,7 +343,7 @@ module.exports = [
       { href: '/books/moby-dick/', title: 'Moby-Dick', author: 'Herman Melville', year: '1851 · epic inheritance', image: '/Moby%20Dick.png', copy: 'A modern novel that borrows epic scale, catalogue and allusion for a voyage that resists mastery.' }
     ],
     reading: {
-      heading: 'Read repetitions as a system of comparison.',
+      heading: 'Read repetitions as a system of comparison',
       paragraphs: [
         'When a feast, arrival or act of storytelling recurs, place it beside the earlier version. Who welcomes the stranger? Who asks for a name too soon? What is offered, withheld or violated? Epic builds moral and political distinctions through scenes that appear structurally familiar.',
         'In translation, listen for register as well as plot. No English version of Homer or Virgil is neutral: each makes choices about pace, dignity and names. With Milton, listen instead for the long pressure of unrhymed sentences across line endings. In every case, epic scale is made in syntax and sound as well as story.'
@@ -371,7 +371,7 @@ module.exports = [
     title: 'Satire and political writing',
     navTitle: 'Satire & politics',
     kicker: 'Imagined worlds, ridicule and the language of power',
-    description: 'Explore satire, allegory and political writing through Utopia, The Prince, Gulliver’s Travels, The Man Who Was Thursday and Animal Farm.',
+    description: 'Satire, allegory and political argument from More and Machiavelli to Swift, Chesterton and Orwell, and what each believed writing could actually change.',
     search: 'satire political writing allegory fable utopia dystopia irony parody Swift Orwell More Machiavelli Chesterton revolution power language propaganda',
     facts: [
       { value: '1513', label: 'Machiavelli drafts The Prince after the collapse of the Florentine republic' },
@@ -380,7 +380,7 @@ module.exports = [
       { value: '1945', label: 'Animal Farm publishes political history as a compressed animal fable' }
     ],
     introduction: {
-      heading: 'A made-up world can make ordinary language look newly strange.',
+      heading: 'A made-up world can make ordinary language look newly strange',
       paragraphs: [
         'Satire rarely announces a safe position outside the foolish world it describes. It imitates a travel report, proposal, scientific debate or public slogan until the borrowed form begins to expose itself. The reader must judge not only what is said but the voice, scale and assumptions that make it sound reasonable.',
         'The shelf here includes works that must be distinguished. Utopia is a dialogue and imagined commonwealth; The Prince is political analysis, not fiction or a simple handbook of wickedness; Gulliver’s Travels is a satirical voyage; The Man Who Was Thursday is a philosophical nightmare wearing the clothes of a chase; Animal Farm is a political fable and allegory. Their methods cross without making their genres identical.'
@@ -399,7 +399,7 @@ module.exports = [
       { href: '/books/animal-farm/', title: 'Animal Farm', author: 'George Orwell', year: '1945', image: '/Animal%20Farm.png', copy: 'A revolution becomes a regime through memory, force and the repeated alteration of public language.' }
     ],
     reading: {
-      heading: 'Ask who is allowed to sound reasonable.',
+      heading: 'Ask who is allowed to sound reasonable',
       paragraphs: [
         'Begin with the form the passage imitates: law, travel account, political advice, scientific argument, commandment or song. What authority normally belongs to that form? Then identify the detail that puts pressure on it—a disproportion, contradiction, bodily fact or excluded person the formal language cannot comfortably contain.',
         'Avoid reducing allegory to a one-for-one code. Historical reference matters greatly in Animal Farm, but the fable remains powerful because appetite, fear, labour, education and memory create relations that exceed a simple key. Good political reading moves between the specific history and the wider mechanism without abandoning either.'
@@ -426,7 +426,7 @@ module.exports = [
     title: 'Narration and testimony',
     navTitle: 'Narration',
     kicker: 'Who speaks, who listens and what a record can prove',
-    description: 'Explore letters, autobiography, framed manuscripts, retrospective voices and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, The Scarlet Letter, Great Expectations, Huckleberry Finn and Dracula.',
+    description: 'Letters, autobiography, framed manuscripts and assembled documents, from Pamela and Frederick Douglass to Wuthering Heights, Great Expectations and Dracula.',
     search: 'narration narrator testimony witness first person autobiography memoir frame narrative framed manuscript Custom House Scarlet Letter Hawthorne epistolary letters diary documents retrospective voice reliability evidence perspective archive',
     facts: [
       { value: '1740', label: 'Pamela turns private letters into the immediate action of a novel' },
@@ -435,7 +435,7 @@ module.exports = [
       { value: '1897', label: 'Dracula assembles diaries, letters, telegrams and clippings into a shared record' }
     ],
     introduction: {
-      heading: 'A narrator is not a clear window between the reader and the world.',
+      heading: 'A narrator is not a clear window between the reader and the world',
       paragraphs: [
         'Every account begins from a position. A speaker knows some events directly, learns others by report and understands the past through present needs. The useful question is rarely whether a narrator is simply reliable or unreliable. It is what this person can know, what they cannot see and what the act of telling now allows them to do.',
         'The difference is especially important when testimony carries real historical risk. Pamela writes while resisting an employer who can intercept her words, and Douglass writes to expose slavery while details may identify people and places. Hawthorne’s Custom-House narrator claims to edit a recovered manuscript before The Scarlet Letter moves into romance. Pip, Nelly, Lockwood, Huck and Dracula’s document-makers each produce a different relation between experience, evidence and judgement.'
@@ -456,7 +456,7 @@ module.exports = [
       { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'A group types, copies and orders its documents in the hope that a collective archive can make an impossible enemy credible.' }
     ],
     reading: {
-      heading: 'Read the joins as closely as the voice.',
+      heading: 'Read the joins as closely as the voice',
       paragraphs: [
         'Mark every change of speaker, medium or time. Who introduces the next account? Has a letter been copied, a conversation remembered or a document translated? Those joins show how authority moves. They can also reveal what no single voice can supply without another person’s testimony.',
         'Then compare statement with scene. A narrator may call an action generous, shameful, ordinary or inevitable while the details produce a more difficult judgement. The aim is not to catch every speaker in a lie. It is to understand how vocabulary, position and later knowledge shape what the reader is being asked to believe.'
@@ -514,7 +514,7 @@ module.exports = [
       { href: '/books/adventures-of-huckleberry-finn/', title: 'Adventures of Huckleberry Finn', author: 'Mark Twain', year: '1884–85 · later novel set before the Civil War', image: '/Huckleberry%20Finn.png', copy: 'Huck’s vernacular account tests conscience against a society in which helping Jim is taught to him as wrongdoing.' }
     ],
     reading: {
-      heading: 'Keep publication date, setting and form on separate lines.',
+      heading: 'Keep publication date, setting and form on separate lines',
       paragraphs: [
         'Begin each book by writing down who speaks, when the book was published and when its action occurs. Douglass records an enslaved childhood from the position of a fugitive abolitionist in 1845. Stowe publishes during the immediate argument over the 1850 Fugitive Slave Act. Twain publishes two decades after the Thirteenth Amendment while setting the novel before the Civil War. Historical distance changes what each book can know and what its first readers were being asked to confront.',
         'Then mark every change in the language of ownership. A person may be described as debt, inheritance, labour, evidence, family or fellow human being. The most revealing passages often make two vocabularies collide. Ask who benefits from the official term, whose experience it excludes and whether the narrative provides another name for the relationship.'

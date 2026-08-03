@@ -138,7 +138,7 @@ const cards = sorted.map(book => `
       </article>`).join('');
 
 const html = `<!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>All Books | Astor Library</title><meta name="description" content="Browse every Astor Library book across classical, Shakespearean, Renaissance, Restoration, Romantic, Victorian, American and modern literature."><link rel="stylesheet" href="/assets/styles.css"><script src="/assets/catalogue.js" defer></script></head>
 <body>
 <header class="site-header">
@@ -152,7 +152,7 @@ const html = `<!doctype html>
   </nav>
 </header>
 <main class="page-wrap catalog-page">
-  <section class="catalog-hero"><div><p class="kicker">The complete catalogue</p><h1>Find your next classic.</h1><p class="deck">${sorted.length} books across eight collections, from ancient epic and Shakespeare to Victorian, American and modern classics.</p></div><div class="catalog-hero-covers" aria-hidden="true"><img src="/The%20Aeneid.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Moby%20Dick.png" alt=""></div></section>
+  <section class="catalog-hero"><div><p class="kicker">The complete catalogue</p><h1>Find your next classic</h1><p class="deck">${sorted.length} books across eight collections, from ancient epic and Shakespeare to Victorian, American and modern classics.</p></div><div class="catalog-hero-covers" aria-hidden="true"><img src="/The%20Aeneid.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Moby%20Dick.png" alt=""></div></section>
   <section class="catalog-tools" aria-label="Filter the catalogue"><label for="catalog-search">Search by title, author or subject</label><div class="catalog-search-row"><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Hamlet, Dickens or Gothic"><p id="catalog-count" aria-live="polite">${sorted.length} books</p></div><div class="catalog-filters">${filterButtons}</div></section>
   <section class="catalog-grid" aria-label="Astor Library books">${cards}
   </section>

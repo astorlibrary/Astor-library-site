@@ -17,7 +17,7 @@ const categories = {
   },
   'eighteenth-century': {
     label: 'Eighteenth-century fiction',
-    use: 'Keep the form of the writing in view. Letters, narrators and claims to truth are part of the argument, not neutral containers for the story.'
+    use: 'Watch the form as well as the story. Letters, narrators and claims to truth are part of the argument, not neutral containers for it.'
   },
   regency: {
     label: 'Romantic & Regency',
@@ -103,7 +103,7 @@ function readingNotes(resource, detailed) {
     },
     {
       label: 'Return to the work',
-      title: 'Keep the language in view',
+      title: 'Test the guide against the text',
       copy: category.use
     },
     {
@@ -122,36 +122,36 @@ function page(resource) {
   const notesHtml = notes.map(item => `<article><p class="year">${escapeHtml(item.label)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.copy)}</p></article>`).join('');
   const guidePurpose = detailed?.deck || resource.description;
   const note = detailed?.note ||
-    `Read the introduction here first, then open the complete guide. Keep the relevant chapter, scene or poem nearby so that the resource remains a way back into the writing.`;
+    `Read the introduction here first, then open the complete guide. Keep the relevant chapter, scene or poem beside you as you read the guide.`;
   const scopeNote = detailed?.pageCount
     ? `${detailed.pageCount} sections · written and published by Astor Library`
     : 'Written and published by Astor Library';
   const contents = detailed?.includes?.length
-    ? `<section class="resource-contents-section"><div class="resource-contents-heading"><p class="kicker">Inside the guide</p><h2>A full route through the subject.</h2><p>The online edition contains ${detailed.pageCount} sections. Its main lines of enquiry are set out here so that you can see the shape of the work before opening it.</p></div><ol class="resource-contents">${detailed.includes.map((item, index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><p>${inlineHtml(item)}</p></li>`).join('')}</ol></section>`
+    ? `<section class="resource-contents-section"><div class="resource-contents-heading"><p class="kicker">Inside the guide</p><h2>A full route through the subject</h2><p>The online edition contains ${detailed.pageCount} sections. Its main lines of enquiry are set out here so that you can see the shape of the work before opening it.</p></div><ol class="resource-contents">${detailed.includes.map((item, index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><p>${inlineHtml(item)}</p></li>`).join('')}</ol></section>`
     : '';
-  const readingHeading = detailed?.sectionHeading || 'Read, test, return.';
+  const readingHeading = detailed?.sectionHeading || 'How to use these notes';
   const readingIntro = detailed?.sectionIntro || 'Use these notes as starting points, then test them against the words, scene or chapter in front of you.';
 
   return `<!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(resource.seoTitle || resource.title)} | Astor Library</title>
-<meta name="description" content="${escapeHtml(resource.description)} Read the free Astor Library guide online.">
+<meta name="description" content="${escapeHtml(resource.description)}">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body class="resource-detail-page">
 ${header()}
 <main class="page-wrap resource-landing-page">
-<section class="page-intro resource-page-intro"><div><p class="kicker">Free online guide · ${escapeHtml(category.label)}</p><h1>${resource.titleHtml}</h1><p class="deck">${inlineHtml(guidePurpose)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Read the complete guide <span aria-hidden="true">&nearr;</span></a><a class="button secondary" href="/resources/">All free resources</a></div></div><aside class="source-note"><p><strong>${escapeHtml(scopeNote)}</strong></p><p>The reading notes, catalogue links and guide record stay here on astorlibrary.com; the full illustrated guide opens in its own tab.</p></aside></section>
+<section class="page-intro resource-page-intro"><div><p class="kicker">Free online guide · ${escapeHtml(category.label)}</p><h1>${resource.titleHtml}</h1><p class="deck">${inlineHtml(guidePurpose)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Read the complete guide <span aria-hidden="true">&nearr;</span></a><a class="button secondary" href="/resources/">All free resources</a></div></div><aside class="source-note"><p><strong>${escapeHtml(scopeNote)}</strong></p></aside></section>
 
 <section class="resource-layout resource-landing-hero">
   <figure class="resource-cover-panel"><img src="${assetPath(resource.image)}" alt="${escapeHtml(resource.title)} cover"><figcaption>Astor Library free resource</figcaption></figure>
   <article class="resource-meta">
     <div class="tag-row">${tags}</div>
     <p class="resource-availability">Free · no sign-in · read in your browser</p>
-    <h2>The work in view.</h2>
+    <h2>What this guide covers</h2>
     <p>${escapeHtml(resource.description)}</p>
     <p>${escapeHtml(category.use)}</p>
     <div class="resource-page-actions"><a href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Read the complete online guide <span aria-hidden="true">&nearr;</span></a><a href="/resources/">Return to the free library</a></div>
@@ -164,9 +164,9 @@ ${contents}
 
 <aside class="note-box resource-use-note"><p><strong>A useful way in.</strong> ${escapeHtml(note)}</p></aside>
 
-<section class="resource-open-band"><div><p class="kicker">The complete resource</p><h2>Read the illustrated guide.</h2><p>The full guide opens in a new tab. This page stays open as its catalogue record and route back into Astor Library.</p></div><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Open free guide <span aria-hidden="true">&nearr;</span></a></section>
+<section class="resource-open-band"><div><p class="kicker">The complete resource</p><h2>Read the illustrated guide</h2><p>The full guide opens in a new tab. This page stays open as its catalogue record.</p></div><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Open free guide <span aria-hidden="true">&nearr;</span></a></section>
 
-<section class="resource-related"><div><p class="kicker">Continue with Astor</p><h2>Books and related reading.</h2></div><div class="resource-related-links">${relatedLinks(resource)}</div></section>
+<section class="resource-related"><div><p class="kicker">Continue with Astor</p><h2>Books and related reading</h2></div><div class="resource-related-links">${relatedLinks(resource)}</div></section>
 </main>
 <footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>The original work remains at the centre.</p></div><div class="footer-links"><a href="/resources/">All free resources</a><a href="/library/">Books</a><a href="/subjects/">Subjects</a><a href="/editorial/">How we work</a></div></footer>
 </body>

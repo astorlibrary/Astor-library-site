@@ -226,57 +226,6 @@
     if (marks[0]) showPassageNote(marks[0].dataset.passageMark);
   }
 
-  const motionStage = document.querySelector('[data-motion-stage]');
-
-  if (motionStage && !reducedMotion) {
-    motionStage.classList.add('is-motion-ready');
-
-    if (window.matchMedia?.('(pointer: fine)').matches) {
-      const covers = [...motionStage.querySelectorAll('[data-motion-cover]')];
-      let frame = 0;
-      let point = { x: 0, y: 0 };
-
-      const draw = () => {
-        frame = 0;
-        const movements = [
-          { x: point.x * -4, y: point.y * -3 },
-          { x: point.x * 4, y: point.y * -3 },
-          { x: point.x * 8, y: point.y * 5 }
-        ];
-        covers.forEach((cover, index) => {
-          cover.style.setProperty('--motion-x', movements[index].x.toFixed(2) + 'px');
-          cover.style.setProperty('--motion-y', movements[index].y.toFixed(2) + 'px');
-        });
-        motionStage.style.setProperty('--glow-x', (50 + point.x * 12).toFixed(2) + '%');
-      };
-
-      const queue = () => {
-        if (!frame) frame = window.requestAnimationFrame(draw);
-      };
-
-      motionStage.addEventListener('pointermove', event => {
-        const bounds = motionStage.getBoundingClientRect();
-        point = {
-          x: Math.max(-1, Math.min(1, ((event.clientX - bounds.left) / bounds.width - .5) * 2)),
-          y: Math.max(-1, Math.min(1, ((event.clientY - bounds.top) / bounds.height - .5) * 2))
-        };
-        queue();
-      });
-
-      motionStage.addEventListener('pointerleave', () => {
-        point = { x: 0, y: 0 };
-        queue();
-      });
-
-      document.addEventListener('pointermove', event => {
-        if (!motionStage.contains(event.target) && (point.x || point.y)) {
-          point = { x: 0, y: 0 };
-          queue();
-        }
-      }, { passive: true });
-    }
-  }
-
   const referenceReel = document.querySelector('[data-reference-reel]');
 
   if (referenceReel && !reducedMotion) {
