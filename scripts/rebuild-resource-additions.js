@@ -9,31 +9,31 @@ const detailedByUrl = new Map(detailedResources.map(resource => [resource.url, r
 const categories = {
   shakespeare: {
     label: 'Shakespeare',
-    use: 'Keep the scene and its dramatic situation open beside the guide. The useful question is not simply what a theme means, but who is speaking, who is listening and what the language is trying to make happen.'
+    use: 'Check each claim against the scene. Identify the speaker, listener, dramatic situation and action produced by the speech.'
   },
   poetry: {
     label: 'Poetry',
-    use: 'Read the poem aloud before settling on an interpretation. Sound, pace, line ending and repetition often carry an argument that a prose summary cannot preserve.'
+    use: 'Read the poem aloud and examine sound, pace, line endings and repetition before using the prose summary.'
   },
   'eighteenth-century': {
     label: 'Eighteenth-century fiction',
-    use: 'Keep the form of the writing in view. Letters, narrators and claims to truth are part of the argument, not neutral containers for the story.'
+    use: 'Examine the letters, narrators and claims to truth as formal parts of the argument.'
   },
   regency: {
     label: 'Romantic & Regency',
-    use: 'Return from the guide to the exact exchange or paragraph. Austen’s judgements are often made through distance, timing and the difference between what a character says and what the narration allows us to see.'
+    use: 'Check the exact exchange or paragraph. Austen often creates judgement through narrative distance, timing and differences between speech and narration.'
   },
   victorian: {
     label: 'Victorian & Gothic',
-    use: 'Use the guide to keep plot, voice and historical pressure together. Documents, houses, secrets and divided narrators matter because of the work the novel makes them do.'
+    use: 'Use the guide to check plot, narrative voice and historical context. Examine how documents, houses, secrets and divided narrators function in the novel.'
   },
   modern: {
     label: 'Modern fiction',
-    use: 'Notice who is allowed to tell the story and what that account cannot settle. Historical context matters most when it changes how a voice, silence or formal choice can be read.'
+    use: 'Identify who narrates the story, what the account omits and how historical context affects the interpretation of voice, silence and form.'
   },
   american: {
     label: 'American literature',
-    use: 'Keep voice and public language together. These guides are most useful when they send you back to the words through which freedom, success, race, power or national identity are being argued.'
+    use: 'Examine the language used to discuss freedom, success, race, power and national identity, and distinguish the narrator’s wording from the guide’s interpretation.'
   }
 };
 
@@ -86,8 +86,8 @@ function relatedLinks(resource) {
   if (books.length) {
     return books.map(href => `<a href="${escapeHtml(href)}"><span>Astor reading page</span><b>${escapeHtml(bookTitle(href))}</b><em>Read the book’s introduction, context and further material.</em></a>`).join('');
   }
-  return `<a href="/subjects/"><span>Continue in Astor Library</span><b>Read by subject</b><em>Move from this guide to books joined by form, method or question.</em></a>
-<a href="/explore/"><span>Search the whole library</span><b>Find another text or topic</b><em>Search books, writers, subjects, close readings and free guides together.</em></a>`;
+  return `<a href="/subjects/"><span>Subject guides</span><b>Browse subjects and genres</b><em>Find books grouped by form, method or historical subject.</em></a>
+<a href="/explore/"><span>Catalogue search</span><b>Find another text or topic</b><em>Search books, writers, subjects, annotated passages and free guides.</em></a>`;
 }
 
 function readingNotes(resource, detailed) {
@@ -97,19 +97,19 @@ function readingNotes(resource, detailed) {
   const category = categories[resource.category];
   return [
     {
-      label: 'Begin with the guide',
+      label: 'Guide summary',
       title: primary,
       copy: resource.description
     },
     {
-      label: 'Return to the work',
-      title: 'Keep the language in view',
+      label: 'Textual evidence',
+      title: 'Check the language and form',
       copy: category.use
     },
     {
-      label: 'Carry one question',
+      label: 'Study question',
       title: focus,
-      copy: `Use ${focus.toLocaleLowerCase()} as a question to test against the text, rather than as a label that settles it in advance.`
+      copy: `Use ${focus.toLocaleLowerCase()} as a question and support the answer with quotations or precise references to the text.`
     }
   ];
 }
@@ -122,15 +122,15 @@ function page(resource) {
   const notesHtml = notes.map(item => `<article><p class="year">${escapeHtml(item.label)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.copy)}</p></article>`).join('');
   const guidePurpose = detailed?.deck || resource.description;
   const note = detailed?.note ||
-    `Read the introduction here first, then open the complete guide. Keep the relevant chapter, scene or poem nearby so that the resource remains a way back into the writing.`;
+    `Read the introduction here, then open the complete guide. Check its summaries and interpretations against the relevant chapter, scene or poem.`;
   const scopeNote = detailed?.pageCount
     ? `${detailed.pageCount} sections · written and published by Astor Library`
     : 'Written and published by Astor Library';
   const contents = detailed?.includes?.length
-    ? `<section class="resource-contents-section"><div class="resource-contents-heading"><p class="kicker">Inside the guide</p><h2>A full route through the subject.</h2><p>The online edition contains ${detailed.pageCount} sections. Its main lines of enquiry are set out here so that you can see the shape of the work before opening it.</p></div><ol class="resource-contents">${detailed.includes.map((item, index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><p>${inlineHtml(item)}</p></li>`).join('')}</ol></section>`
+    ? `<section class="resource-contents-section"><div class="resource-contents-heading"><p class="kicker">Guide contents</p><h2>What the guide contains.</h2><p>The online edition contains ${detailed.pageCount} sections. The contents are listed here before the link to the full guide.</p></div><ol class="resource-contents">${detailed.includes.map((item, index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><p>${inlineHtml(item)}</p></li>`).join('')}</ol></section>`
     : '';
-  const readingHeading = detailed?.sectionHeading || 'Read, test, return.';
-  const readingIntro = detailed?.sectionIntro || 'Use these notes as starting points, then test them against the words, scene or chapter in front of you.';
+  const readingHeading = detailed?.sectionHeading || 'Questions and evidence.';
+  const readingIntro = detailed?.sectionIntro || 'Use these notes with the relevant words, scene or chapter and cite the evidence for each conclusion.';
 
   return `<!doctype html>
 <html lang="en">
@@ -144,14 +144,14 @@ function page(resource) {
 <body class="resource-detail-page">
 ${header()}
 <main class="page-wrap resource-landing-page">
-<section class="page-intro resource-page-intro"><div><p class="kicker">Free online guide · ${escapeHtml(category.label)}</p><h1>${resource.titleHtml}</h1><p class="deck">${inlineHtml(guidePurpose)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Read the complete guide <span aria-hidden="true">&nearr;</span></a><a class="button secondary" href="/resources/">All free resources</a></div></div><aside class="source-note"><p><strong>${escapeHtml(scopeNote)}</strong></p><p>The reading notes, catalogue links and guide record stay here on astorlibrary.com; the full illustrated guide opens in its own tab.</p></aside></section>
+<section class="page-intro resource-page-intro"><div><p class="kicker">Free online guide · ${escapeHtml(category.label)}</p><h1>${resource.titleHtml}</h1><p class="deck">${inlineHtml(guidePurpose)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Read the complete guide <span aria-hidden="true">&nearr;</span></a><a class="button secondary" href="/resources/">All free resources</a></div></div><aside class="source-note"><p><strong>${escapeHtml(scopeNote)}</strong></p><p>This page lists the guide’s contents and related Astor editions. The complete illustrated guide opens in a new tab.</p></aside></section>
 
 <section class="resource-layout resource-landing-hero">
   <figure class="resource-cover-panel"><img src="${assetPath(resource.image)}" alt="${escapeHtml(resource.title)} cover"><figcaption>Astor Library free resource</figcaption></figure>
   <article class="resource-meta">
     <div class="tag-row">${tags}</div>
     <p class="resource-availability">Free · no sign-in · read in your browser</p>
-    <h2>The work in view.</h2>
+    <h2>Subject and purpose of the guide.</h2>
     <p>${escapeHtml(resource.description)}</p>
     <p>${escapeHtml(category.use)}</p>
     <div class="resource-page-actions"><a href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Read the complete online guide <span aria-hidden="true">&nearr;</span></a><a href="/resources/">Return to the free library</a></div>
@@ -162,13 +162,13 @@ ${contents}
 
 <section class="resource-reading-section"><div class="section-title guide-title"><p class="kicker">Reading notes</p><h2>${escapeHtml(readingHeading)}</h2><p>${inlineHtml(readingIntro)}</p></div><div class="guide-reading">${notesHtml}</div></section>
 
-<aside class="note-box resource-use-note"><p><strong>A useful way in.</strong> ${escapeHtml(note)}</p></aside>
+<aside class="note-box resource-use-note"><p><strong>How to use this guide.</strong> ${escapeHtml(note)}</p></aside>
 
-<section class="resource-open-band"><div><p class="kicker">The complete resource</p><h2>Read the illustrated guide.</h2><p>The full guide opens in a new tab. This page stays open as its catalogue record and route back into Astor Library.</p></div><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Open free guide <span aria-hidden="true">&nearr;</span></a></section>
+<section class="resource-open-band"><div><p class="kicker">Complete resource</p><h2>Open the full illustrated guide.</h2><p>The guide is free to read in a browser and opens in a new tab.</p></div><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Open free guide <span aria-hidden="true">&nearr;</span></a></section>
 
-<section class="resource-related"><div><p class="kicker">Continue with Astor</p><h2>Books and related reading.</h2></div><div class="resource-related-links">${relatedLinks(resource)}</div></section>
+<section class="resource-related"><div><p class="kicker">Related catalogue pages</p><h2>Relevant books and subject guides.</h2></div><div class="resource-related-links">${relatedLinks(resource)}</div></section>
 </main>
-<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>The original work remains at the centre.</p></div><div class="footer-links"><a href="/resources/">All free resources</a><a href="/library/">Books</a><a href="/subjects/">Subjects</a><a href="/editorial/">How we work</a></div></footer>
+<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, study editions and free literature resources.</p></div><div class="footer-links"><a href="/resources/">All free resources</a><a href="/library/">Books</a><a href="/subjects/">Subjects</a><a href="/editorial/">Editorial standards</a></div></footer>
 </body>
 </html>`;
 }

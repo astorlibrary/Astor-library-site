@@ -480,7 +480,7 @@ function addGlobalMetadata(html, source) {
   if (/http-equiv="refresh"/i.test(html)) return html;
   const href = pageHref(source);
   const title = plainText(html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || 'Astor Library');
-  const description = plainText(html.match(/<meta\b[^>]*name="description"[^>]*content="([^"]+)"/i)?.[1] || 'Classic literature, carefully introduced for readers, students and teachers.');
+  const description = plainText(html.match(/<meta\b[^>]*name="description"[^>]*content="([^"]+)"/i)?.[1] || 'Complete classic texts, study editions, explanatory notes and free literature resources from Astor Library.');
   const book = bookContext(source)?.book;
   const resource = resourceContext(source)?.resource;
   const author = authorContext(source);
@@ -634,7 +634,7 @@ function addBookPassageLinks(html, source) {
       '<span>' + number + ' · Close reading</span>' +
       '<blockquote>' + escapeHtml(passage.title) + '</blockquote>' +
       '<p>' + escapeHtml(passage.description) + '</p>' +
-      '<b>Open the annotated passage <span aria-hidden="true">&rarr;</span></b></a>';
+      '<b>Read the annotated passage <span aria-hidden="true">&rarr;</span></b></a>';
   }).join('');
 
   const resources = (discovery.resources || [])
@@ -642,21 +642,21 @@ function addBookPassageLinks(html, source) {
     .slice(0, 3);
   const resourceLinks = resources.length
     ? '<nav class="book-passage-resources" aria-label="Free resources for ' + escapeHtml(book.title) + '">' +
-      '<span>Also in the free library</span>' +
+      '<span>Free guides for this book</span>' +
       resources.map(resource => '<a href="' + escapeHtml(resource.href) + '">' + escapeHtml(resource.title) + '</a>').join('') +
       '</nav>'
     : '';
   const teachingRooms = (discovery.teachingRooms || []).filter(room => room.relatedBooks?.includes(book.href));
   const teachingLinks = teachingRooms.length
     ? '<nav class="book-passage-resources book-teaching-links" aria-label="Teaching rooms for ' + escapeHtml(book.title) + '">' +
-      '<span>For the classroom</span>' +
+      '<span>Teaching resources</span>' +
       teachingRooms.map(room => '<a href="' + escapeHtml(room.href) + '">' + escapeHtml(room.title) + '</a>').join('') +
       '</nav>'
     : '';
 
   const section = '<section class="book-passage-shelf" aria-labelledby="book-passage-title">' +
-    '<div class="book-passage-shelf-head"><div><p class="kicker">The Passage Room</p><h2 id="book-passage-title">Read one page slowly.</h2></div>' +
-    '<p>A complete book asks for time. Here the pace changes: one short stretch of the original stays open while notes follow the exact words that make it work.</p></div>' +
+    '<div class="book-passage-shelf-head"><div><p class="kicker">Annotated passages</p><h2 id="book-passage-title">Close readings from this book.</h2></div>' +
+    '<p>Each page reproduces a short passage and explains its language, structure and immediate context.</p></div>' +
     '<div class="book-passage-grid">' + cards + '</div>' + resourceLinks + teachingLinks + '</section>';
   return html.replace('</main>', section + '</main>');
 }
@@ -674,7 +674,7 @@ function addResourceReadingNavigation(html, source) {
     html = withIntro === html ? html.replace(/(<main\b[^>]*>)/i, '$1' + breadcrumb) : withIntro;
   }
   if (!html.includes('resource-end-nav')) {
-    const bookLink = relatedBook ? '<a href="' + escapeHtml(relatedBook.href) + '">Explore ' + escapeHtml(relatedBook.title) + '</a>' : '';
+    const bookLink = relatedBook ? '<a href="' + escapeHtml(relatedBook.href) + '">' + escapeHtml(relatedBook.title) + ' book page</a>' : '';
     const teachingRoom = relatedBook
       ? (discovery.teachingRooms || []).find(room => room.relatedBooks?.includes(relatedBook.href))
       : null;
@@ -690,11 +690,55 @@ function addEditorialCredit(html, source) {
   const resource = resourceContext(source)?.resource;
   if ((!book && !resource) || html.includes('class="astor-page-credit"')) return html;
   const copy = book
-    ? 'Prepared and checked for Astor Library. Dates, publication details and historical claims are supported by the sources listed on this page.'
-    : 'Published by Astor Library as a free literature resource, made to support reading, teaching and independent study.';
+    ? 'Dates, publication details and historical claims are checked against the sources listed on this page.'
+    : 'This free guide contains summaries, context or analysis for reading, teaching and independent study.';
   const credit = '<aside class="astor-page-credit" aria-label="About this page"><span><b>' + (book ? 'Astor Library reading page' : 'Astor Library free guide') + '</b>' + copy + '</span><a href="/editorial/">How we work <span aria-hidden="true">&rarr;</span></a></aside>';
   const withIntro = html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>)/i, '$1' + credit);
   return withIntro === html ? html.replace(/(<main\b[^>]*>)/i, '$1' + credit) : withIntro;
+}
+
+function addEditionSample(html, source) {
+  if (html.includes('class="edition-sample"')) return html;
+  const samples = {
+    '/books/macbeth/': {
+      title: 'Sample pages from the Macbeth edition',
+      copy: 'The spread shows the complete play with a scene summary, line numbers and explanatory notes keyed to the text.',
+      image: '/Macbeth%20Sample.png',
+      alt: 'Two sample pages from Macbeth showing the complete play, a scene summary, line numbers and explanatory footnotes'
+    },
+    '/books/the-odyssey/': {
+      title: 'Sample pages from The Odyssey edition',
+      copy: 'The spread shows the prose text with a chapter summary, short explanatory notes and a contextual panel.',
+      image: '/The%20Odyssey%20Sample.png',
+      alt: 'Two sample pages from The Odyssey showing the prose text, a Story so far summary and a contextual note panel'
+    },
+    '/study/rime-of-the-ancient-mariner/': {
+      title: 'Sample pages from The Rime of the Ancient Mariner',
+      copy: 'The spread shows the complete poem with marginal glosses, line numbers and explanatory footnotes.',
+      image: '/Rime%20of%20the%20Ancient%20Mariner%20Sample.png',
+      alt: 'Two sample pages from The Rime of the Ancient Mariner showing the poem, marginal glosses, line numbers and footnotes'
+    },
+    '/study/': {
+      title: 'Sample pages from the Othello Study Edition',
+      copy: 'The spread shows scene analysis, key quotations, method notes and example sentences for essay writing.',
+      image: '/Othello%20Study%20Sample.png',
+      alt: 'Two sample pages from the Othello Study Edition showing scene analysis, key quotations, method notes and example sentences'
+    },
+    '/shakespeare/': {
+      title: 'Sample pages from Shakespeare’s Sonnets',
+      copy: 'The spread shows complete poems with short introductions, line numbers and explanatory footnotes.',
+      image: '/Shakespeare%27s%20Sonnets%20Sample.png',
+      alt: 'Two sample pages from Shakespeare’s Sonnets showing complete poems, short introductions, line numbers and explanatory footnotes'
+    }
+  };
+  const sample = samples[pageHref(source)];
+  if (!sample) return html;
+
+  const section = '<section class="edition-sample" aria-labelledby="edition-sample-title">' +
+    '<div><p class="kicker">Inside the edition</p><h2 id="edition-sample-title">' + escapeHtml(sample.title) + '</h2><p>' + escapeHtml(sample.copy) + '</p></div>' +
+    '<figure><a href="' + sample.image + '"><img src="' + sample.image + '" alt="' + escapeHtml(sample.alt) + '" width="1800" height="1360"></a><figcaption>Select the image to view the sample at full size.</figcaption></figure></section>';
+  const withIntro = html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>)/i, '$1' + section);
+  return withIntro === html ? html.replace(/(<nav class="book-end-nav\b)/i, section + '$1') : withIntro;
 }
 
 function addContextImageShelf(html, source) {
@@ -709,7 +753,7 @@ function addContextImageShelf(html, source) {
   const collection = (discovery.collections || []).find(item => item.href === href);
   let candidates = [];
   let heading = 'Related editions and guides.';
-  let label = 'Continue reading';
+  let label = 'Related catalogue pages';
 
   const booksFor = routes => (routes || []).map(route => discovery.books.find(item => item.href === route)).filter(Boolean);
   const resourcesFor = routes => (discovery.resources || []).filter(item => item.relatedBooks?.some(route => routes.includes(route)));
@@ -722,7 +766,7 @@ function addContextImageShelf(html, source) {
       ...studiesFor(routes),
       ...(discovery.books || []).filter(item => item.collection === book.collection && item.href !== book.href)
     ];
-    label = 'More for this book';
+    label = 'For this book';
   } else if (resource) {
     const routes = resource.relatedBooks || [];
     candidates = [
@@ -746,7 +790,7 @@ function addContextImageShelf(html, source) {
   } else if (passage) {
     const routes = passage.relatedBooks || [];
     candidates = [...booksFor(routes), ...resourcesFor(routes), ...studiesFor(routes)];
-    label = 'Continue from this passage';
+    label = 'Related to this passage';
   } else if (teaching) {
     const routes = teaching.relatedBooks || [];
     candidates = [...booksFor(routes), ...studiesFor(routes), ...resourcesFor(routes)];
@@ -890,6 +934,7 @@ function prepareHtml(html, source) {
   html = addBookReadingNavigation(html, source);
   html = addResourceReadingNavigation(html, source);
   html = addEditorialCredit(html, source);
+  html = addEditionSample(html, source);
   html = addContextImageShelf(html, source);
   html = addSiteIndexLink(html, source);
   html = addGlobalNavigation(html, source);

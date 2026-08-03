@@ -134,7 +134,7 @@ const filterButtons = ['All books', ...collections.map(([, label]) => label)]
 const cards = sorted.map(book => `
       <article class="catalog-card" data-collection="${book.collection}" data-search="${escapeHtml([book.titleText, book.authorText, book.collection, ...book.subjects, textOnly(book.descriptionHtml)].join(' '))}">
         <a class="catalog-cover" href="${book.href}"><img src="${book.image}" alt="${book.imageAlt}" loading="lazy"></a>
-        <div class="catalog-card-copy"><p class="catalog-collection">${book.collection}</p><h2><a href="${book.href}">${book.titleHtml}</a></h2><p class="catalog-author">${book.authorHtml}</p><p>${book.descriptionHtml}</p><a class="home-text-link" href="${book.href}">Explore the book <span aria-hidden="true">&rarr;</span></a></div>
+        <div class="catalog-card-copy"><p class="catalog-collection">${book.collection}</p><h2><a href="${book.href}">${book.titleHtml}</a></h2><p class="catalog-author">${book.authorHtml}</p><p>${book.descriptionHtml}</p><a class="home-text-link" href="${book.href}">Open book page <span aria-hidden="true">&rarr;</span></a></div>
       </article>`).join('');
 
 const html = `<!doctype html>
@@ -152,12 +152,12 @@ const html = `<!doctype html>
   </nav>
 </header>
 <main class="page-wrap catalog-page">
-  <section class="catalog-hero"><div><p class="kicker">The complete catalogue</p><h1>Find your next classic.</h1><p class="deck">${sorted.length} books across eight collections, from ancient epic and Shakespeare to Victorian, American and modern classics.</p></div><div class="catalog-hero-covers" aria-hidden="true"><img src="/The%20Aeneid.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Moby%20Dick.png" alt=""></div></section>
+  <section class="catalog-hero"><div><p class="kicker">The complete catalogue</p><h1>Astor Library books.</h1><p class="deck">${sorted.length} books across eight collections, from ancient epic and Shakespeare to Victorian, American and modern classics. Search by title, author or subject.</p></div><div class="catalog-hero-covers" aria-hidden="true"><img src="/The%20Aeneid.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Moby%20Dick.png" alt=""></div></section>
   <section class="catalog-tools" aria-label="Filter the catalogue"><label for="catalog-search">Search by title, author or subject</label><div class="catalog-search-row"><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Hamlet, Dickens or Gothic"><p id="catalog-count" aria-live="polite">${sorted.length} books</p></div><div class="catalog-filters">${filterButtons}</div></section>
   <section class="catalog-grid" aria-label="Astor Library books">${cards}
   </section>
 </main>
-<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic literature for readers, students and teachers.</p></div><div class="footer-links"><a href="/">Home</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>
+<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, study editions and free literature resources.</p></div><div class="footer-links"><a href="/">Home</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>
 </body></html>`;
 
 fs.writeFileSync(path.join(root, 'library/index.html'), html);

@@ -9,28 +9,28 @@ const blockEnd = '<!-- ASTOR MAIN ADDITIONS END -->';
 const collectionCopy = {
   'renaissance-early-modern/index.html': {
     title: 'Renaissance and Early Modern Literature | Astor Library',
-    description: 'Explore Webster, Marlowe, More and Machiavelli through early modern theatre, tragedy, humanism, political prose, print and the struggle for power.',
+    description: 'Astor editions of Webster, Marlowe, More and Machiavelli, with material on early modern theatre, tragedy, humanism, political prose, print and power.',
     kicker: 'Period',
     heading: 'Renaissance &amp; Early Modern.',
     deck: 'Theatre and political prose meet in a period preoccupied with power: who possesses it, how it is performed and what it costs. Webster and Marlowe place ambition, conscience and private choice on stage; More and Machiavelli test government, law and social order on the page.'
   },
   'shakespeare/index.html': {
     title: 'Shakespeare Plays, Poems, Editions and Study Guides | Astor Library',
-    description: 'Explore 41 Astor editions across all 37 Shakespeare plays and two narrative poems, with complete texts, notes, sources, performance history and study guides.',
+    description: 'Forty-one Astor editions covering all 37 Shakespeare plays and two narrative poems, with complete texts, notes, sources, performance history and study guides.',
     kicker: 'Shakespeare',
-    heading: 'Shakespeare in the library.',
-    deck: 'All thirty-seven plays, from the first histories and comedies to the late collaborations, together with the two narrative poems that first made Shakespeare known in print. Each reading page keeps the words, the book and the stage in the same room.'
+    heading: 'Complete Shakespeare editions.',
+    deck: 'All thirty-seven plays and two narrative poems. The editions contain complete texts, scene summaries, line numbers, explanatory notes, sources, performance history and study material.'
   },
   'restoration-enlightenment/index.html': {
     title: 'Restoration and Enlightenment Literature | Astor Library',
-    description: 'Explore Milton, Swift and Richardson through epic, satire, letters, print culture, political argument and the developing English novel.',
+    description: 'Astor editions of Milton, Swift and Richardson, with material on epic, satire, letters, print culture, political argument and the developing English novel.',
     kicker: 'Period',
     heading: 'Restoration &amp; Enlightenment.',
     deck: 'Milton makes biblical history into an epic of freedom and obedience; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power. Together, these works show public argument finding new forms.'
   },
   'american/index.html': {
     title: 'American Classic Literature | Astor Library',
-    description: 'Explore American classics by Hawthorne, Stowe, Douglass, Melville, Twain, Crane and London through punishment, slavery, freedom, the sea, Civil War and the frontier.',
+    description: 'Astor editions of American classics by Hawthorne, Stowe, Douglass, Melville, Twain, Crane and London, with notes, context and study material.',
     kicker: 'Period',
     heading: 'American.',
     deck: 'Hawthorne&rsquo;s romance of public punishment joins abolitionist argument, autobiography, whaling, river satire, Civil War and the Klondike. These books do not offer one account of America: they show who could claim freedom, who was denied it and what survival asked of a person.'
@@ -120,25 +120,25 @@ function bookPage(book) {
 <main id="main-content" class="page-wrap astor-book-record">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/library/">All books</a><span aria-hidden="true">/</span><a href="${escapeHtml(book.collectionHref)}">${escapeHtml(book.collection)}</a><span aria-hidden="true">/</span><span aria-current="page">${escapeHtml(book.title)}</span></nav>
   <section class="page-intro astor-book-hero"><div><p class="kicker">${escapeHtml(book.author)}</p><h1>${escapeHtml(book.title)}</h1><p class="deck">${escapeHtml(book.deck)}</p></div><aside class="source-note astor-book-cover"><img src="${book.image}" alt="Astor Library ${escapeHtml(book.title)} cover"><div><p><strong>Astor Library edition</strong><br>${escapeHtml(book.editionKind)}</p>${heroActions}</div></aside></section>
-  <nav class="page-contents" aria-label="On this page"><strong>On this page</strong><div><a href="#edition">The edition</a><a href="#movement">How it moves</a><a href="#reading">Close reading</a><a href="#context">Context &amp; form</a><a href="#figures">People</a><a href="#questions">Questions</a><a href="#sources">Sources</a></div></nav>
+  <nav class="page-contents" aria-label="On this page"><strong>On this page</strong><div><a href="#edition">Edition contents</a><a href="#movement">Plot and structure</a><a href="#reading">Critical reading</a><a href="#context">Context and form</a><a href="#figures">Characters</a><a href="#questions">Study questions</a><a href="#sources">Sources</a></div></nav>
   <section class="quick-facts" aria-label="${escapeHtml(book.title)} facts">${facts}</section>
-  <section class="section-title" id="edition"><p class="kicker">The edition</p><h2>The ${workLabel} remains at the centre.</h2><p>Summaries and notes are there when they help. The longer material gives readers a route into form, history and interpretation without replacing the work itself.</p></section>
+  <section class="section-title" id="edition"><p class="kicker">Edition contents</p><h2>What this Astor edition contains.</h2><p>The edition contains the complete ${workLabel}, summaries, explanatory notes and title-specific material on form, publication history and interpretation.</p></section>
   <section class="timeline"><article class="edition-card new-edition"><img src="${book.image}" alt="Astor Library ${escapeHtml(book.title)} cover"><div><p class="year">${escapeHtml(book.genre)} · ${escapeHtml(book.year)}</p><h2><em>${escapeHtml(book.title)}</em>, ${escapeHtml(book.author)}</h2>${book.edition.map(paragraph).join('')}${editionActions}</div></article></section>
   <section class="section-title" id="movement"><p class="kicker">The shape of the work</p><h2>${escapeHtml(book.movementTitle)}</h2><p>${escapeHtml(book.movementIntro)}</p></section>
   <section class="astor-movement-grid">${movements}</section>
-  <section class="section-title" id="reading"><p class="kicker">Read closely</p><h2>${escapeHtml(book.readingTitle)}</h2><p>Each route begins with particular language and follows what changes around it.</p></section>
+  <section class="section-title" id="reading"><p class="kicker">Critical reading</p><h2>${escapeHtml(book.readingTitle)}</h2><p>Each section identifies specific language, structure or evidence used in the interpretation.</p></section>
   <section class="astor-reading-grid">${readings}</section>
-  <section class="section-title" id="context"><p class="kicker">Book, history, form</p><h2>${escapeHtml(book.contextTitle)}</h2><p>Context matters here because it changes what we can notice in the writing.</p></section>
+  <section class="section-title" id="context"><p class="kicker">Book, history and form</p><h2>${escapeHtml(book.contextTitle)}</h2><p>These sections explain publication history, literary form and historical information relevant to the work.</p></section>
   <section class="astor-context-grid">${contexts}</section>
-  <section class="section-title" id="figures"><p class="kicker">Keep in view</p><h2>${escapeHtml(book.figuresTitle)}</h2></section>
+  <section class="section-title" id="figures"><p class="kicker">Characters and speakers</p><h2>${escapeHtml(book.figuresTitle)}</h2></section>
   <section class="astor-character-grid">${figures}</section>
-  <section class="section-title" id="questions"><p class="kicker">Carry through the work</p><h2>Questions that stay open.</h2><p>Use them to test a passage, a reading or an argument of your own.</p></section>
+  <section class="section-title" id="questions"><p class="kicker">Study questions</p><h2>Questions for analysis and discussion.</h2><p>Answer each question with quotations or precise references to the work.</p></section>
   <section class="astor-question-grid">${questions}</section>
-  <section class="section-title" id="sources"><p class="kicker">Go further</p><h2>Texts and collections.</h2><p>For reliable texts, early editions and further research, begin with the collections below.</p></section>
+  <section class="section-title" id="sources"><p class="kicker">Sources</p><h2>Texts, archives and further reading.</h2><p>The links below support the publication history, historical context and interpretation on this page.</p></section>
   <nav class="source-list" aria-label="${escapeHtml(book.title)} sources">${sources}</nav>
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="${escapeHtml(book.collectionHref)}">More in ${escapeHtml(book.collection)}</a><a href="/study/">Study editions</a><a href="/explore/">Search the library <span aria-hidden="true">&rarr;</span></a></nav>
 </main>
-<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>The original work remains at the centre.</p></div><div class="footer-links"><a href="${escapeHtml(book.collectionHref)}">${escapeHtml(book.collection)}</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>
+<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, study editions and free literature resources.</p></div><div class="footer-links"><a href="${escapeHtml(book.collectionHref)}">${escapeHtml(book.collection)}</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>
 </body></html>`;
 }
 
@@ -164,7 +164,7 @@ function updateCollection(relative, books) {
 
   if (relative === 'shakespeare/index.html') {
     html = html
-      .replace('Find the play by the pressure it holds.', 'Find the work by the pressure it holds.')
+      .replace('Find the play by the pressure it holds.', 'Browse the works by genre.')
       .replace(/<strong>\d+ editions<\/strong><span>[^<]*\d+ plays[^<]*<\/span>/, '<strong>41 editions</strong><span>37 plays + 2 poems</span>');
   }
 

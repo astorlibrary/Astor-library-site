@@ -218,6 +218,17 @@ const authorDescriptions = Object.fromEntries(authorProfileData.map(function (au
   return [author.name, author.description];
 }));
 
+for (const author of authorProfileData) {
+  const profileFile = path.join(root, author.href.replace(/^\//, ''), 'index.html');
+  if (!fs.existsSync(profileFile)) continue;
+  const profileHtml = fs.readFileSync(profileFile, 'utf8');
+  const updatedProfileHtml = profileHtml.replace(
+    /(<div class="author-profile-heading">[\s\S]*?<p class="deck">)[\s\S]*?(<\/p>)/,
+    '$1' + escapeHtml(author.description) + '$2'
+  );
+  fs.writeFileSync(profileFile, updatedProfileHtml);
+}
+
 const authors = Array.from(books.reduce(function (groups, book) {
   if (!groups.has(book.author)) groups.set(book.author, []);
   groups.get(book.author).push(book);
@@ -546,14 +557,14 @@ const entryCards = entries.map(function (entry) {
 
 const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-  '<title>Explore Literature | Astor Library</title>' +
+  '<title>Search the Catalogue | Astor Library</title>' +
   '<meta name="description" content="Search Astor Library books, close readings, teaching rooms, writers, subject guides, free literature resources and study editions in one place.">' +
   '<link rel="stylesheet" href="/assets/styles.css"><style>.explore-paths{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:1050px){.explore-paths{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.explore-paths{grid-template-columns:1fr}}</style><script src="/assets/explore.js" defer></script>' +
   '</head><body>' + siteHeader() +
   '<main class="page-wrap explore-page">' +
-  '<section class="explore-hero"><div><p class="kicker">Books, passages, lessons, guides and editions</p><h1>Find your way in.</h1>' +
-  '<p class="deck">Search ' + books.length + ' books, ' + passages.length + ' close readings, ' + teachingRooms.length + ' teaching room, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions. Begin with a title, a writer, a form or an idea that interests you.</p></div>' +
-  '<aside class="explore-hero-note"><p>The library is meant to be wandered through. Search when you know what you need, or follow a collection and see where it takes you.</p></aside></section>' +
+  '<section class="explore-hero"><div><p class="kicker">Books, passages, lessons, guides and editions</p><h1>Search the catalogue.</h1>' +
+  '<p class="deck">Search ' + books.length + ' books, ' + passages.length + ' close readings, ' + teachingRooms.length + ' teaching room, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions by title, writer, period, subject or resource type.</p></div>' +
+  '<aside class="explore-hero-note"><p>Use the search field for a title or subject. Use the filters to limit results to books, guides, study editions, authors, passages, teaching resources or collections.</p></aside></section>' +
   '<section class="explore-tools" aria-label="Search everything">' +
   '<label for="explore-search">What are you looking for?</label>' +
   '<div class="explore-search-row"><input id="explore-search" type="search" autocomplete="off" placeholder="Try Austen, tragedy, quotation or Gothic"><p id="explore-count" aria-live="polite">' + entries.length + ' results</p></div>' +
@@ -569,19 +580,19 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<button type="button" class="explore-filter" data-filter="collection" aria-pressed="false">Collections</button>' +
   '</div></section>' +
   '<section class="explore-paths" aria-label="Ways into Astor Library">' +
-  '<a href="/passage-room/"><span>Read a passage</span><p>Keep the original words open while exact notes sit at the edge of the page.</p></a>' +
-  '<a href="/library/"><span>Choose a book</span><p>Read its story, publication history and life on stage or screen.</p></a>' +
-  '<a href="/subjects/"><span>Read by subject</span><p>Begin with comedy, Gothic, tragedy, detection, epic, satire, narration or writing about slavery and freedom.</p></a>' +
-  '<a href="/authors/"><span>Meet a writer</span><p>Follow an author across the books, forms and questions that shaped their work.</p></a>' +
-  '<a href="/study/"><span>Study a set text</span><p>Find an Astor edition with close-reading and essay support.</p></a>' +
-  '<a href="/resources/"><span>Use a free guide</span><p>Open focused help with a text, passage, theme or question.</p></a>' +
-  '<a href="/reading-routes/"><span>Follow a question</span><p>Move across periods through home, freedom, fear, power, evidence, voice and the uses of knowledge.</p></a>' +
+  '<a href="/passage-room/"><span>Annotated passages</span><p>Short extracts with notes on language, structure and context.</p></a>' +
+  '<a href="/library/"><span>Main editions</span><p>Complete texts and book pages listing the material included in each edition.</p></a>' +
+  '<a href="/subjects/"><span>Subject guides</span><p>Guides to comedy, Gothic, tragedy, detective fiction, epic, satire, narration, slavery and freedom.</p></a>' +
+  '<a href="/authors/"><span>Author pages</span><p>Biographical information, publication context and links to each writer’s Astor editions.</p></a>' +
+  '<a href="/study/"><span>Study editions</span><p>Summaries, context, quotations, critical interpretations and essay support.</p></a>' +
+  '<a href="/resources/"><span>Free guides</span><p>Online guides to individual texts, passages, themes and historical contexts.</p></a>' +
+  '<a href="/reading-routes/"><span>Cross-period reading lists</span><p>Book lists organised around home, freedom, fear, power, evidence, voice and knowledge.</p></a>' +
   '</section>' +
   '<section class="explore-results" aria-label="Search results">' + entryCards + '</section>' +
   '<button class="explore-more" id="explore-more" type="button">Show 24 more</button>' +
-  '<p class="explore-empty" id="explore-empty" hidden>Nothing quite matches that search yet. Try a title, author, period or broader word.</p>' +
+  '<p class="explore-empty" id="explore-empty" hidden>No results match that search. Try a title, author, period or broader term.</p>' +
   '</main>' +
-  '<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic literature, carefully introduced and kept open to curious readers.</p></div>' +
+  '<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, study editions and free literature resources.</p></div>' +
   '<div class="footer-links"><a href="/about/">About</a><a href="/passage-room/">Passage Room</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/reading-routes/">Reading routes</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>' +
   '</body></html>';
 
@@ -614,13 +625,13 @@ const authorDirectoryCards = authors.map(function (author) {
 
 const authorsHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-  '<title>Classic Authors and Writers | Astor Library</title><meta name="description" content="Explore classic writers through substantial pages on their lives, books, methods and historical worlds, with direct routes into every Astor Library edition.">' +
+  '<title>Classic Authors and Writers | Astor Library</title><meta name="description" content="Author pages with biographical information, publication context, literary analysis and links to every Astor Library edition by each writer.">' +
   '<link rel="stylesheet" href="/assets/styles.css"></head><body>' + siteHeader() +
-  '<main class="page-wrap authors-page"><section class="authors-hero"><div><p class="kicker">Lives, books and ways of reading</p><h1>Writers in the library.</h1><p class="deck">A book never arrives alone. Here you can follow a writer across several works, see the pressures under which those works were made, and move directly into the Astor reading pages.</p><div class="button-row"><a class="button primary" href="#all-writers">See every writer</a><a class="button secondary" href="/library/">Browse all books</a></div></div><div class="authors-hero-shelf" aria-hidden="true"><img src="/Great%20Expectations.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Adventures%20of%20Sherlock%20Holmes.png" alt=""></div></section>' +
-  '<section class="authors-intro"><p>These pages are not short biographies pasted beside a list of titles. They are places to understand how a writer worked: the forms they chose, the world they wrote from and the questions that keep their books alive.</p></section>' +
-  '<section class="featured-authors" aria-labelledby="featured-authors-title"><div class="section-title"><p class="kicker">Begin with a shelf</p><h2 id="featured-authors-title">Writers held in depth.</h2></div>' + featuredAuthorCards + '</section>' +
-  '<section class="author-directory" id="all-writers" aria-labelledby="all-writers-title"><div class="author-directory-head"><div><p class="kicker">The full catalogue</p><h2 id="all-writers-title">Every writer.</h2></div><p>' + authors.length + ' writers currently appear in Astor Library. Nineteen now have full reading pages; every name remains connected to the books held here.</p></div><div class="author-directory-grid">' + authorDirectoryCards + '</div></section>' +
-  '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books read in the company of the writers who made them.</p></div><div class="footer-links"><a href="/library/">All books</a><a href="/explore/">Search</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
+  '<main class="page-wrap authors-page"><section class="authors-hero"><div><p class="kicker">Authors and editions</p><h1>Authors represented in Astor Library.</h1><p class="deck">Author pages include biographical information, publication context, discussion of literary form and links to the writer’s books, guides and study editions.</p><div class="button-row"><a class="button primary" href="#all-writers">See every writer</a><a class="button secondary" href="/library/">Browse all books</a></div></div><div class="authors-hero-shelf" aria-hidden="true"><img src="/Great%20Expectations.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Adventures%20of%20Sherlock%20Holmes.png" alt=""></div></section>' +
+  '<section class="authors-intro"><p>Detailed pages are available for nineteen writers. Other entries link directly to the books currently held in the catalogue.</p></section>' +
+  '<section class="featured-authors" aria-labelledby="featured-authors-title"><div class="section-title"><p class="kicker">Detailed pages</p><h2 id="featured-authors-title">Author biographies and reading guides.</h2></div>' + featuredAuthorCards + '</section>' +
+  '<section class="author-directory" id="all-writers" aria-labelledby="all-writers-title"><div class="author-directory-head"><div><p class="kicker">Author directory</p><h2 id="all-writers-title">All authors.</h2></div><p>' + authors.length + ' writers currently appear in Astor Library. Nineteen have detailed author pages; every entry links to the relevant books.</p></div><div class="author-directory-grid">' + authorDirectoryCards + '</div></section>' +
+  '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Author pages, complete classic texts and study resources.</p></div><div class="footer-links"><a href="/library/">All books</a><a href="/explore/">Search</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
 
 fs.mkdirSync(path.join(root, 'authors'), { recursive: true });
 fs.writeFileSync(path.join(root, 'authors/index.html'), authorsHtml);
@@ -669,7 +680,7 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
   '<link rel="stylesheet" href="/assets/styles.css"><style>' +
   '.site-index-quick{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 60px}.site-index-quick a{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;font-weight:800;color:var(--burgundy);border:1px solid var(--line);background:#fff8ef;padding:10px 13px;text-decoration:none}.index-group{border-top:1px solid var(--line);padding:38px 0 14px}.index-group h2{font-size:clamp(34px,5vw,58px);line-height:.95;letter-spacing:-.04em;margin:0 0 22px}.index-group h2 a{text-decoration:none}.index-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.index-links>a{display:flex;flex-direction:column;gap:6px;min-height:92px;border:1px solid var(--line);background:rgba(255,248,239,.86);padding:15px;text-decoration:none}.index-links span{font-size:21px;font-weight:700;line-height:1.08}.index-links small{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;color:var(--muted);line-height:1.35}@media(max-width:820px){.index-links{grid-template-columns:1fr}}' +
   '</style></head><body>' + siteHeader() +
-  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Everything in one place</p><h1>Site index.</h1><p class="deck">Every book, close reading, teaching room, writer, subject guide, free resource, study edition and collection currently held by Astor Library. Use this page when you know the title, or when you simply want to see the full shape of the library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + passages.length + ' close readings, ' + teachingRooms.length + ' teaching room, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions.</strong> For a visual search, use Explore. For connections across periods, begin with Subjects or the reading routes.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/passage-room/">Read a passage</a></div></aside></section>' +
+  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Complete directory</p><h1>Site index.</h1><p class="deck">Links to every book, close reading, teaching page, writer, subject guide, free resource, study edition and collection currently available from Astor Library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + passages.length + ' close readings, ' + teachingRooms.length + ' teaching page, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions.</strong> Use the catalogue search to filter these entries, or browse the sections below.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/passage-room/">Read a passage</a></div></aside></section>' +
   '<nav class="site-index-quick" aria-label="Site index sections"><a href="#passages">Close readings</a><a href="#teaching-rooms">Teaching rooms</a><a href="#subjects">Subjects</a><a href="#writers">Writers</a><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="/about/">About Astor Library</a><a href="/editorial/">Editorial standards</a></nav>' +
   '<section class="index-group" id="passages"><h2><a href="/passage-room/">The Passage Room</a></h2><div class="index-links">' + passageLinks + '</div></section>' +
   '<section class="index-group" id="teaching-rooms"><h2><a href="/teach/">Teaching rooms</a></h2><div class="index-links">' + teachingLinks + '</div></section>' +
@@ -678,7 +689,7 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
   '<div id="books">' + collectionSections + '</div>' +
   '<section class="index-group" id="free-guides"><h2><a href="/resources/">Free literature guides</a></h2><div class="index-links">' + resourceLinks + '</div></section>' +
   '<section class="index-group" id="study-editions"><h2><a href="/study/">Study editions</a></h2><div class="index-links">' + studyLinks + '</div></section>' +
-  '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Making classic literature easier to read, teach and study, while keeping the original texts intact.</p></div><div class="footer-links"><a href="/">Home</a><a href="/passage-room/">Passage Room</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/explore/">Explore</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
+  '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, study editions and free literature resources.</p></div><div class="footer-links"><a href="/">Home</a><a href="/passage-room/">Passage Room</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/explore/">Explore</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
 
 fs.mkdirSync(path.join(root, 'site-index'), { recursive: true });
 fs.writeFileSync(path.join(root, 'site-index/index.html'), siteIndexHtml);

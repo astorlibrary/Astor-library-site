@@ -4,132 +4,132 @@ module.exports = [
     href: '/authors/arthur-conan-doyle/',
     birthDate: '1859-05-22',
     deathDate: '1930-07-07',
-    description: 'Enter Holmes\'s London through twelve short cases and the longer investigation in The Sign of Four, always with Watson controlling the record.'
+    description: 'The Astor catalogue includes twelve Sherlock Holmes short stories and The Sign of Four, with material on Watson\'s narration, detective method and Victorian London.'
   },
   {
     name: 'Bram Stoker',
     href: '/authors/bram-stoker/',
     birthDate: '1847-11-08',
     deathDate: '1912-04-20',
-    description: 'Read Dracula as a novel assembled from journals, letters, recordings and newsprint, where modern systems of evidence meet an ancient threat.'
+    description: 'The Dracula page covers its journals, letters, recordings and newsprint, as well as its treatment of evidence, technology and the vampire tradition.'
   },
   {
     name: 'Charles Dickens',
     href: '/authors/charles-dickens/',
     birthDate: '1812-02-07',
     deathDate: '1870-06-09',
-    description: 'Move from Christmas conversion and the pressures of childhood into the quieter unease of a village hearth.'
+    description: 'The catalogue includes A Christmas Carol, Great Expectations and The Cricket on the Hearth, with publication history, context and study material.'
   },
   {
     name: 'Christopher Marlowe',
     href: '/authors/christopher-marlowe/',
     birthDate: '1564',
     deathDate: '1593-05-30',
-    description: 'Follow the reach and collapse of desire in Doctor Faustus, where enormous blank-verse ambitions narrow towards one final hour.'
+    description: 'The Doctor Faustus page covers the play\'s two early texts, blank verse, sources, contract plot and final soliloquy.'
   },
   {
     name: 'Frederick Douglass',
     href: '/authors/frederick-douglass/',
     birthDate: '1818',
     deathDate: '1895-02-20',
-    description: 'Begin with the 1845 Narrative: a life written against the laws and language used to deny its author freedom.'
+    description: 'The 1845 Narrative page covers Douglass\'s autobiography, literacy, resistance, abolitionist publication and the legal danger of recapture.'
   },
   {
     name: 'George Orwell',
     href: '/authors/george-orwell/',
     birthDate: '1903-06-25',
     deathDate: '1950-01-21',
-    description: 'Read Animal Farm through Orwell\'s exact political prose, where a revolution is altered one commandment, memory and public performance at a time.'
+    description: 'The Animal Farm page covers political allegory, the Russian Revolution, Stalinism, propaganda, rewritten commandments and adaptation.'
   },
   {
     name: 'H. G. Wells',
     href: '/authors/h-g-wells/',
     birthDate: '1866-09-21',
     deathDate: '1946-08-13',
-    description: 'Science arrives on a Surrey common. Wells turns an invasion into an argument about empire, confidence and the limits of explanation.'
+    description: 'The War of the Worlds page covers its Surrey setting, serial publication, Victorian science, imperial politics and adaptations.'
   },
   {
     name: 'Harriet Beecher Stowe',
     href: '/authors/harriet-beecher-stowe/',
     birthDate: '1811-06-14',
     deathDate: '1896-07-01',
-    description: 'Read Uncle Tom\'s Cabin as an abolitionist novel built from interrupted homes, contested scripture and the legal machinery of slavery.'
+    description: 'The Uncle Tom\'s Cabin page covers its abolitionist argument, family separation, scripture, fugitive law, publication and stage history.'
   },
   {
     name: 'Herman Melville',
     href: '/authors/herman-melville/',
     birthDate: '1819-08-01',
     deathDate: '1891-09-28',
-    description: 'Enter Moby-Dick through a voice that keeps changing form: voyage, sermon, drama, anatomy and argument held aboard one doomed ship.'
+    description: 'The Moby-Dick page covers Ishmael\'s narration, the voyage, sermons, dramatic scenes, whaling history and Ahab\'s authority.'
   },
   {
     name: 'Jane Austen',
     href: '/authors/jane-austen/',
     birthDate: '1775-12-16',
     deathDate: '1817-07-18',
-    description: 'Read how courtship becomes a test of judgement, money, inheritance and the stories people tell about one another.'
+    description: 'The Austen catalogue covers courtship, judgement, money, inheritance, narrative method, publication and screen adaptation.'
   },
   {
     name: 'John Milton',
     href: '/authors/john-milton/',
     birthDate: '1608-12-09',
     deathDate: '1674-11-08',
-    description: 'Approach Paradise Lost through blank verse, political argument and voices whose beauty never removes the need to judge what they say.'
+    description: 'The Paradise Lost page covers blank verse, epic form, biblical sources, political context and the poem\'s competing speakers.'
   },
   {
     name: 'John Webster',
     href: '/authors/john-webster/',
     birthDate: '1580',
     deathDate: '1634',
-    description: 'Read The Duchess of Malfi through watched rooms, compromised service and a heroine who insists that rank does not own her private life.'
+    description: 'The Duchess of Malfi page covers the Duchess\'s marriage, Bosola\'s service, surveillance, Jacobean tragedy, text and performance.'
   },
   {
     name: 'Mark Twain',
     href: '/authors/mark-twain/',
     birthDate: '1835-11-30',
     deathDate: '1910-04-21',
-    description: 'Listen to the voice before trusting it: river knowledge, American speech and a narrator still learning how to judge his world.'
+    description: 'The Huckleberry Finn page covers first-person narration, dialect, the river journey, slavery, publication history and the disputed ending.'
   },
   {
     name: 'Mary Shelley',
     href: '/authors/mary-shelley/',
     birthDate: '1797-08-30',
     deathDate: '1851-02-01',
-    description: 'Meet the writer behind Frankenstein through creation, abandonment, competing voices and a career larger than one novel.'
+    description: 'The Mary Shelley page covers her life and career, the 1818 and 1831 texts of Frankenstein, scientific context and narrative structure.'
   },
   {
     name: 'Nathaniel Hawthorne',
     href: '/authors/nathaniel-hawthorne/',
     birthDate: '1804-07-04',
     deathDate: '1864-05-19',
-    description: 'Read The Scarlet Letter as a romance about public signs and private histories, where no symbol keeps a single meaning for long.'
+    description: 'The Scarlet Letter page covers Hawthorne\'s romance form, public punishment, narration, symbolism and publication history.'
   },
   {
     name: 'Oscar Wilde',
     href: '/authors/oscar-wilde/',
     birthDate: '1854-10-16',
     deathDate: '1900-11-30',
-    description: 'Read The Picture of Dorian Gray through surfaces, influence and the dangerous wish to separate beauty from consequence.'
+    description: 'The Picture of Dorian Gray page covers the 1890 and 1891 texts, aestheticism, influence, the portrait, moral controversy and adaptation.'
   },
   {
     name: 'Robert Louis Stevenson',
     href: '/authors/robert-louis-stevenson/',
     birthDate: '1850-11-13',
     deathDate: '1894-12-03',
-    description: 'Follow Jekyll and Hyde through sealed doors, delayed documents and a city where respectability depends upon what remains unseen.'
+    description: 'The Jekyll and Hyde page covers its delayed documents, London setting, divided identity, publication history and adaptations.'
   },
   {
     name: 'Thomas Hardy',
     href: '/authors/thomas-hardy/',
     birthDate: '1840-06-02',
     deathDate: '1928-01-11',
-    description: 'Read Tess of the d\'Urbervilles through labour, landscape and the unequal judgements that turn social power into private suffering.'
+    description: 'The Tess of the d\'Urbervilles page covers rural labour, Wessex, class, gender, publication history, narrative structure and adaptation.'
   },
   {
     name: 'William Shakespeare',
     href: '/shakespeare/',
     birthDate: '1564',
     deathDate: '1616-04-23',
-    description: 'Move through comedy, history, tragedy and the narrative poems with source, language and performance kept in view.'
+    description: 'The Shakespeare catalogue contains all thirty-seven plays and two narrative poems, with sources, notes, performance history and study material.'
   }
 ];
