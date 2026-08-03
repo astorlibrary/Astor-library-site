@@ -138,7 +138,7 @@ function page(resource) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(resource.seoTitle || resource.title)} | Astor Library</title>
-<meta name="description" content="${escapeHtml(resource.description)} Read the free Astor Library guide online.">
+<meta name="description" content="${escapeHtml(resource.description)}">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body class="resource-detail-page">

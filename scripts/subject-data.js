@@ -195,7 +195,7 @@ module.exports = [
     title: 'Tragedy',
     navTitle: 'Tragedy',
     kicker: 'Choice, consequence and the watching audience',
-    description: 'Explore early modern tragedy from Marlowe and Webster alongside Shakespeare, following the form from Doctor Faustus and Titus Andronicus to Hamlet, Othello, King Lear and The Duchess of Malfi.',
+    description: 'Early modern tragedy from Marlowe and Webster read alongside Shakespeare, following the form from Doctor Faustus and Titus Andronicus to Hamlet, Othello and King Lear.',
     search: 'tragedy Shakespeare Marlowe Webster Doctor Faustus Duchess of Malfi tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family',
     facts: [
       { value: 'c.335 BCE', label: 'Aristotle’s Poetics gives an influential early account of tragic action' },
@@ -263,7 +263,7 @@ module.exports = [
     title: 'Detective fiction',
     navTitle: 'Detection',
     kicker: 'Clues, records and the authority to explain',
-    description: 'Explore detective fiction through Arthur Conan Doyle’s Sherlock Holmes, then follow the investigative method into Dracula and Jekyll and Hyde without confusing those Gothic works for detective novels.',
+    description: 'Doyle’s Sherlock Holmes first, then the investigative method as it works in Dracula and Jekyll and Hyde, without mistaking those Gothic novels for detective fiction.',
     search: 'detective fiction crime mystery Sherlock Holmes Watson clue deduction evidence investigation case record police Victorian London locked room',
     facts: [
       { value: '1841', label: 'Poe’s “The Murders in the Rue Morgue” supplies an early detective-story model' },
@@ -371,7 +371,7 @@ module.exports = [
     title: 'Satire and political writing',
     navTitle: 'Satire & politics',
     kicker: 'Imagined worlds, ridicule and the language of power',
-    description: 'Explore satire, allegory and political writing through Utopia, The Prince, Gulliver’s Travels, The Man Who Was Thursday and Animal Farm.',
+    description: 'Satire, allegory and political argument from More and Machiavelli to Swift, Chesterton and Orwell, and what each believed writing could actually change.',
     search: 'satire political writing allegory fable utopia dystopia irony parody Swift Orwell More Machiavelli Chesterton revolution power language propaganda',
     facts: [
       { value: '1513', label: 'Machiavelli drafts The Prince after the collapse of the Florentine republic' },
@@ -426,7 +426,7 @@ module.exports = [
     title: 'Narration and testimony',
     navTitle: 'Narration',
     kicker: 'Who speaks, who listens and what a record can prove',
-    description: 'Explore letters, autobiography, framed manuscripts, retrospective voices and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, The Scarlet Letter, Great Expectations, Huckleberry Finn and Dracula.',
+    description: 'Letters, autobiography, framed manuscripts and assembled documents, from Pamela and Frederick Douglass to Wuthering Heights, Great Expectations and Dracula.',
     search: 'narration narrator testimony witness first person autobiography memoir frame narrative framed manuscript Custom House Scarlet Letter Hawthorne epistolary letters diary documents retrospective voice reliability evidence perspective archive',
     facts: [
       { value: '1740', label: 'Pamela turns private letters into the immediate action of a novel' },
