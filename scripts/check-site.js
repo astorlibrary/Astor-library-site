@@ -78,6 +78,19 @@ const editorialPhrases = [
   'cover expected',
   'uploaded',
   'filename',
+  'the text, with room around it',
+  'read or study a classic without losing sight of the book',
+  'the original work remains at the centre',
+  'the work in view',
+  'read, test, return',
+  'people to keep in view',
+  'questions worth carrying through the text',
+  'three ways into the writing',
+  'making classic literature easier to read, teach and study',
+  'classic literature, carefully introduced and kept open to curious readers',
+  'given room around the text',
+  'space to breathe',
+  'room to move',
   'placeholder',
   'classic texts, properly presented'
 ];
@@ -160,11 +173,10 @@ if (!homepage.includes('/assets/home.css')) failures.push('The homepage is missi
 if (!homepage.includes('/assets/navigation.css')) failures.push('The homepage is missing the shared navigation stylesheet');
 if (!homepage.includes('class="site-header astor-global-header')) failures.push('The homepage is missing the shared header');
 if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failures.push('The homepage is missing the grouped footer');
-if (!homepageMain.includes('Read or study a classic without losing sight of the book.')) failures.push('The homepage is missing its central promise');
+if (!homepageMain.includes('Complete classic texts with introductions, summaries and explanatory notes.')) failures.push('The homepage is missing its factual edition description');
 if (!homepageMain.includes('id="home-search"')) failures.push('The homepage is missing its immediate library search');
-if (!homepageMain.includes('class="catalogue-edition-spread"')) failures.push('The homepage is missing its edition anatomy');
+if (!homepageMain.includes('class="catalogue-sample-grid"')) failures.push('The homepage is missing its edition samples');
 if (!homepageMain.includes('class="catalogue-index-rows"')) failures.push('The homepage is missing its clear starting points');
-if (!homepageMain.includes('class="catalogue-accession-shelf"')) failures.push('The homepage is missing its new-books shelf');
 if (!homepageMain.includes('class="catalogue-find-rows"')) failures.push('The homepage is missing its browse routes');
 if (!homepageMain.includes('class="catalogue-reading-room"')) failures.push('The homepage is missing its reading room');
 if (!homepageMain.includes('class="catalogue-colophon"')) failures.push('The homepage is missing the Astor history');
@@ -173,7 +185,10 @@ if (!homepageMain.includes('Summer at Astor') || !homepageMain.includes('6 Julyâ
 for (const href of ['/books/a-midsummer-nights-dream/', '/books/as-you-like-it/', '/books/the-odyssey/', '/books/adventures-of-huckleberry-finn/']) {
   if (!homepageMain.includes('href="' + href + '"')) failures.push('The homepage summer feature is missing ' + href);
 }
-if (countMatches(homepageMain, /<section class="(?:seasonal-feature|catalogue-)/g) !== 8) failures.push('The homepage must contain eight purposeful sections');
+if (countMatches(homepageMain, /<section class="(?:seasonal-feature|catalogue-)/g) !== 7) failures.push('The homepage must contain seven purposeful sections');
+for (const sample of ['/Macbeth%20Sample.png', '/Othello%20Study%20Sample.png', '/Rime%20of%20the%20Ancient%20Mariner%20Sample.png', '/Shakespeare%27s%20Sonnets%20Sample.png', '/The%20Odyssey%20Sample.png']) {
+  if (!homepageMain.includes('src="' + sample + '"')) failures.push('The homepage is missing edition sample ' + sample);
+}
 if (!homepage.includes('mailto:support@astorlibrary.com')) failures.push('The homepage is missing the support email');
 for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/teach/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/']) {
   if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
@@ -185,7 +200,7 @@ if (!fs.existsSync(passageHubFile)) {
   failures.push('The site is missing the Passage Room');
 } else {
   const passageHub = fs.readFileSync(passageHubFile, 'utf8');
-  if (!passageHub.includes('Stay with the words.')) failures.push('The Passage Room is missing its opening statement');
+  if (!passageHub.includes('Annotated passages from classic literature.')) failures.push('The Passage Room is missing its opening statement');
   if (countMatches(passageHub, /class="passage-card /g) !== 15) failures.push('The Passage Room must open fifteen close readings');
 }
 
@@ -263,7 +278,7 @@ if (!fs.existsSync(editorialFile)) {
   failures.push('The site is missing its editorial standards page');
 } else {
   const editorial = fs.readFileSync(editorialFile, 'utf8');
-  if (!editorial.includes('How the library is made')) failures.push('The editorial standards page is missing its opening statement');
+  if (!editorial.includes('How Astor Library researches and edits its publications.')) failures.push('The editorial standards page is missing its opening statement');
   if (countMatches(editorial, /class="editorial-principles"/g) !== 1) failures.push('The editorial standards page is missing its principles');
 }
 
@@ -331,7 +346,7 @@ for (const resource of resourceData) {
 }
 
 const classicLiterature = fs.readFileSync(path.join(root, 'classic-literature', 'index.html'), 'utf8');
-if (!classicLiterature.includes('<h1>Classic literature.</h1>')) failures.push('The classic literature landing page is missing its main heading');
+if (!classicLiterature.includes('<h1>Classic literature editions.</h1>')) failures.push('The classic literature landing page is missing its main heading');
 if (countMatches(classicLiterature, /class="classic-period"/g) !== 8) failures.push('The classic literature landing page must link all eight literary collections');
 for (const href of ['/library/', '/reading-routes/', '/resources/']) {
   if (!classicLiterature.includes('href="' + href + '"')) failures.push('The classic literature landing page is missing ' + href);
@@ -347,7 +362,7 @@ if (!fs.existsSync(subjectsHubFile)) {
   failures.push('The subjects directory is missing');
 } else {
   const subjectsHub = fs.readFileSync(subjectsHubFile, 'utf8');
-  if (!subjectsHub.includes('<h1>Read by subject.</h1>')) failures.push('The subjects directory is missing its main heading');
+  if (!subjectsHub.includes('<h1>Subject and genre guides.</h1>')) failures.push('The subjects directory is missing its main heading');
   if (countMatches(subjectsHub, /class="subject-directory-card"/g) !== subjectSlugs.length) failures.push('The subjects directory must contain every subject guide');
 }
 
@@ -368,7 +383,7 @@ if (!fs.existsSync(authorsHubFile)) {
   failures.push('The writers directory is missing');
 } else {
   const authorsHub = fs.readFileSync(authorsHubFile, 'utf8');
-  if (!authorsHub.includes('<h1>Writers in the library.</h1>')) failures.push('The writers directory is missing its main heading');
+  if (!authorsHub.includes('<h1>Authors represented in Astor Library.</h1>')) failures.push('The writers directory is missing its main heading');
   for (const authorHref of ['/authors/charles-dickens/', '/authors/frederick-douglass/', '/authors/jane-austen/', '/authors/mary-shelley/', '/authors/arthur-conan-doyle/', '/authors/h-g-wells/', '/authors/mark-twain/', '/shakespeare/']) {
     if (!authorsHub.includes('href="' + authorHref + '"')) failures.push('The writers directory is missing ' + authorHref);
   }

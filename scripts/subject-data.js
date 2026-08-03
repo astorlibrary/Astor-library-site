@@ -4,7 +4,7 @@ module.exports = [
     title: 'Gothic literature',
     navTitle: 'Gothic',
     kicker: 'Fear, knowledge and the hidden life',
-    description: 'Read Gothic literature through Frankenstein, Wuthering Heights, Jekyll and Hyde, The Picture of Dorian Gray and Dracula, with a clear guide to the form, its history and its changing modern fears.',
+    description: 'A guide to Gothic form and history using Frankenstein, Wuthering Heights, Jekyll and Hyde, The Picture of Dorian Gray and Dracula.',
     search: 'Gothic literature Gothic novel horror supernatural uncanny double monstrosity science modernity secrecy transgression vampire ghost castle',
     facts: [
       { value: '1764', label: 'The Castle of Otranto gives the Gothic novel an early name and model' },
@@ -61,7 +61,7 @@ module.exports = [
     title: 'Comedy and comic form',
     navTitle: 'Comedy',
     kicker: 'Mistakes, performances and the difficult work of ending well',
-    description: 'Read Shakespearean comedy through mistaken identity, disguise, courtship, performance and difficult endings, from The Two Gentlemen of Verona and Love’s Labour’s Lost to Twelfth Night and The Winter’s Tale.',
+    description: 'A guide to mistaken identity, disguise, courtship, performance and endings across sixteen Shakespearean comedies and late plays.',
     search: 'comedy comic form Shakespeare laughter farce festive comedy disguise mistaken identity recognition marriage courtship performance audience ending romance problem play',
     facts: [
       { value: '1590s', label: 'The Comedy of Errors, The Taming of the Shrew and A Midsummer Night’s Dream belong to Shakespeare’s early comic work' },
@@ -129,7 +129,7 @@ module.exports = [
     title: 'History plays: kingship, succession and nation',
     navTitle: 'History plays',
     kicker: 'Crowns, claims and the making of public memory',
-    description: 'Read Shakespeare’s history plays through kingship, succession, civil war and national memory, from King John and Richard II through the Henry IV, Henry V and Henry VI sequences to Richard III and Henry VIII.',
+    description: 'A guide to kingship, succession, civil war and national history across Shakespeare’s English history plays.',
     search: 'Shakespeare history plays histories kingship succession crown monarchy nation civil war Wars of the Roses Richard II Henry IV Henry V Henry VI Richard III Henry VIII King John chronicle Holinshed tetralogy legitimacy deposition First Folio',
     facts: [
       { value: '1577 / 1587', label: 'Holinshed’s Chronicles provides a principal source in two Elizabethan editions' },
@@ -195,7 +195,7 @@ module.exports = [
     title: 'Tragedy',
     navTitle: 'Tragedy',
     kicker: 'Choice, consequence and the watching audience',
-    description: 'Explore early modern tragedy from Marlowe and Webster alongside Shakespeare, following the form from Doctor Faustus and Titus Andronicus to Hamlet, Othello, King Lear and The Duchess of Malfi.',
+    description: 'A guide to early modern tragedy in plays by Marlowe, Webster and Shakespeare, including Doctor Faustus, Hamlet, Othello, King Lear and The Duchess of Malfi.',
     search: 'tragedy Shakespeare Marlowe Webster Doctor Faustus Duchess of Malfi tragic hero catastrophe revenge tragedy hamartia recognition reversal audience stage death choice consequence power family',
     facts: [
       { value: 'c.335 BCE', label: 'Aristotle’s Poetics gives an influential early account of tragic action' },
@@ -263,7 +263,7 @@ module.exports = [
     title: 'Detective fiction',
     navTitle: 'Detection',
     kicker: 'Clues, records and the authority to explain',
-    description: 'Explore detective fiction through Arthur Conan Doyle’s Sherlock Holmes, then follow the investigative method into Dracula and Jekyll and Hyde without confusing those Gothic works for detective novels.',
+    description: 'A guide to detective method and case narration in Arthur Conan Doyle’s Sherlock Holmes stories, with comparisons to the investigations in Dracula and Jekyll and Hyde.',
     search: 'detective fiction crime mystery Sherlock Holmes Watson clue deduction evidence investigation case record police Victorian London locked room',
     facts: [
       { value: '1841', label: 'Poe’s “The Murders in the Rue Morgue” supplies an early detective-story model' },
@@ -316,7 +316,7 @@ module.exports = [
     title: 'Epic poetry',
     navTitle: 'Epic',
     kicker: 'Journeys, foundations and inherited song',
-    description: 'Read epic through Homer’s Odyssey, Virgil’s Aeneid and Milton’s Paradise Lost, then follow epic scale and allusion into Moby-Dick, with attention to oral form, translation, homecoming, rebellion and empire.',
+    description: 'A guide to epic form, oral tradition, translation, homecoming, rebellion and empire in The Odyssey, The Aeneid, Paradise Lost and Moby-Dick.',
     search: 'epic poetry Homer Odyssey Virgil Aeneid Milton Paradise Lost oral tradition hero invocation muse in medias res simile blank verse fall rebellion homecoming nostos empire translation journey',
     facts: [
       { value: '24 books', label: 'The Odyssey is conventionally divided into twenty-four books' },
@@ -371,7 +371,7 @@ module.exports = [
     title: 'Satire and political writing',
     navTitle: 'Satire & politics',
     kicker: 'Imagined worlds, ridicule and the language of power',
-    description: 'Explore satire, allegory and political writing through Utopia, The Prince, Gulliver’s Travels, The Man Who Was Thursday and Animal Farm.',
+    description: 'A guide to satire, allegory and political writing in Utopia, The Prince, Gulliver’s Travels, The Man Who Was Thursday and Animal Farm.',
     search: 'satire political writing allegory fable utopia dystopia irony parody Swift Orwell More Machiavelli Chesterton revolution power language propaganda',
     facts: [
       { value: '1513', label: 'Machiavelli drafts The Prince after the collapse of the Florentine republic' },
@@ -426,7 +426,7 @@ module.exports = [
     title: 'Narration and testimony',
     navTitle: 'Narration',
     kicker: 'Who speaks, who listens and what a record can prove',
-    description: 'Explore letters, autobiography, framed manuscripts, retrospective voices and assembled documents through Pamela, Frederick Douglass, Wuthering Heights, The Scarlet Letter, Great Expectations, Huckleberry Finn and Dracula.',
+    description: 'A guide to letters, autobiography, framed manuscripts, retrospective narration and assembled documents across seven Astor books.',
     search: 'narration narrator testimony witness first person autobiography memoir frame narrative framed manuscript Custom House Scarlet Letter Hawthorne epistolary letters diary documents retrospective voice reliability evidence perspective archive',
     facts: [
       { value: '1740', label: 'Pamela turns private letters into the immediate action of a novel' },
@@ -488,7 +488,7 @@ module.exports = [
     title: 'Slavery, freedom and abolition',
     navTitle: 'Slavery & freedom',
     kicker: 'Law, testimony and the struggle to be recognised as a person',
-    description: 'Read Frederick Douglass, Harriet Beecher Stowe and Mark Twain with the differences between testimony, abolitionist fiction and a later novel kept firmly in view.',
+    description: 'A guide to testimony, abolitionist fiction and later historical fiction in works by Frederick Douglass, Harriet Beecher Stowe and Mark Twain.',
     search: 'slavery freedom abolition abolitionism Frederick Douglass Harriet Beecher Stowe Mark Twain Uncle Tom Huckleberry Finn Fugitive Slave Act slave narrative testimony literacy family separation race law America',
     facts: [
       { value: '1845', label: 'Douglass publishes his first autobiography while legally vulnerable to recapture' },
