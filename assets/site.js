@@ -51,12 +51,17 @@
     }
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-controls', siteNavigation.id);
+    toggle.setAttribute('aria-label', 'Open navigation menu');
     siteHeader.classList.add('site-nav-ready');
+
+    const toggleText = toggle.querySelector('span:first-child');
 
     const closeSiteMenu = returnFocus => {
       siteHeader.classList.remove('is-site-menu-open');
       document.body.classList.remove('is-site-menu-open');
       toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open navigation menu');
+      if (toggleText) toggleText.textContent = 'Menu';
       if (collectionMenu) collectionMenu.open = false;
       if (returnFocus) toggle.focus();
     };
@@ -65,6 +70,8 @@
       const open = siteHeader.classList.toggle('is-site-menu-open');
       document.body.classList.toggle('is-site-menu-open', open);
       toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+      if (toggleText) toggleText.textContent = open ? 'Close' : 'Menu';
       if (!open && collectionMenu) collectionMenu.open = false;
     });
 

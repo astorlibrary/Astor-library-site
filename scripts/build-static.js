@@ -697,6 +697,91 @@ function addEditorialCredit(html, source) {
   return withIntro === html ? html.replace(/(<main\b[^>]*>)/i, '$1' + credit) : withIntro;
 }
 
+function addContextImageShelf(html, source) {
+  if (html.includes('class="context-image-shelf"')) return html;
+  const href = pageHref(source);
+  const book = bookContext(source)?.book;
+  const resource = resourceContext(source)?.resource;
+  const study = studyContext(source);
+  const subject = subjectContext(source);
+  const passage = passageContext(source);
+  const teaching = teachingContext(source);
+  const collection = (discovery.collections || []).find(item => item.href === href);
+  let candidates = [];
+  let heading = 'Related editions and guides.';
+  let label = 'Continue reading';
+
+  const booksFor = routes => (routes || []).map(route => discovery.books.find(item => item.href === route)).filter(Boolean);
+  const resourcesFor = routes => (discovery.resources || []).filter(item => item.relatedBooks?.some(route => routes.includes(route)));
+  const studiesFor = routes => (discovery.studyEditions || []).filter(item => item.relatedBooks?.some(route => routes.includes(route)));
+
+  if (book) {
+    const routes = [book.href];
+    candidates = [
+      ...resourcesFor(routes),
+      ...studiesFor(routes),
+      ...(discovery.books || []).filter(item => item.collection === book.collection && item.href !== book.href)
+    ];
+    label = 'More for this book';
+  } else if (resource) {
+    const routes = resource.relatedBooks || [];
+    candidates = [
+      ...booksFor(routes),
+      ...studiesFor(routes),
+      ...resourcesFor(routes).filter(item => item.href !== resource.href)
+    ];
+    label = 'Books and related guides';
+  } else if (study) {
+    const routes = study.relatedBooks || [];
+    candidates = [
+      ...booksFor(routes),
+      ...resourcesFor(routes),
+      ...studiesFor(routes).filter(item => item.href !== study.href)
+    ];
+    label = 'Books and related study';
+  } else if (subject) {
+    candidates = booksFor(subject.relatedBooks);
+    heading = 'Books in this subject.';
+    label = subject.title;
+  } else if (passage) {
+    const routes = passage.relatedBooks || [];
+    candidates = [...booksFor(routes), ...resourcesFor(routes), ...studiesFor(routes)];
+    label = 'Continue from this passage';
+  } else if (teaching) {
+    const routes = teaching.relatedBooks || [];
+    candidates = [...booksFor(routes), ...studiesFor(routes), ...resourcesFor(routes)];
+    label = 'Books and classroom material';
+  } else if (collection) {
+    candidates = (discovery.books || []).filter(item => item.collection === collection.title);
+    heading = 'Editions in this collection.';
+    label = collection.title;
+  } else {
+    return html;
+  }
+
+  const seen = new Set();
+  const items = candidates.filter(item => {
+    if (!item?.href || !item?.image || item.href === href || seen.has(item.href)) return false;
+    seen.add(item.href);
+    return true;
+  }).slice(0, 5);
+  if (items.length < 2) return html;
+
+  const cards = items.map(item => {
+    const external = /^https?:\/\//i.test(item.href);
+    const externalAttributes = external ? ' target="_blank" rel="noopener noreferrer"' : '';
+    return '<a href="' + escapeHtml(item.href) + '"' + externalAttributes + '>' +
+      '<img src="' + escapeHtml(item.image) + '" alt="' + escapeHtml(item.imageAlt || item.title + ' cover') + '" width="480" height="720">' +
+      '<span><small>' + escapeHtml(item.typeLabel || 'Astor Library') + '</small><strong>' + escapeHtml(item.title) + '</strong></span></a>';
+  }).join('');
+
+  const section = '<section class="context-image-shelf" aria-labelledby="context-image-shelf-title">' +
+    '<header><p class="kicker">' + escapeHtml(label) + '</p><h2 id="context-image-shelf-title">' + escapeHtml(heading) + '</h2></header>' +
+    '<div>' + cards + '</div></section>';
+  const beforeEndNavigation = html.replace(/(<nav class="book-end-nav\b)/i, section + '$1');
+  return beforeEndNavigation === html ? html.replace('</main>', section + '</main>') : beforeEndNavigation;
+}
+
 function addSiteIndexLink(html, source) {
   if (!html.includes('<footer')) return html;
   const href = pageHref(source);
@@ -770,6 +855,7 @@ function addGlobalNavigation(html, source) {
     <a class="nav-link" href="/study/"${current(studyCurrent)}>Study editions</a>
     <a class="nav-link" href="/teach/"${current(teachingCurrent)}>Teach</a>
     <a class="nav-link" href="/passage-room/"${current(passageCurrent)}>Passage Room</a>
+    <a class="nav-link nav-link-support" href="mailto:support@astorlibrary.com">Support</a>
   </nav>
 </header>`;
 
@@ -777,7 +863,7 @@ function addGlobalNavigation(html, source) {
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
   <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
   <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/teach/">Teaching rooms</a></div>
-  <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/site-index/">Site index</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div>
+  <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/site-index/">Site index</a><a href="mailto:support@astorlibrary.com">support@astorlibrary.com</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div>
 </footer>`;
 
   html = html.replace(/<header\b[^>]*\bclass=(?:"[^"]*\b(?:site-header|home-masthead)\b[^"]*"|'[^']*\b(?:site-header|home-masthead)\b[^']*')[^>]*>[\s\S]*?<\/header>/i, header);
@@ -804,6 +890,7 @@ function prepareHtml(html, source) {
   html = addBookReadingNavigation(html, source);
   html = addResourceReadingNavigation(html, source);
   html = addEditorialCredit(html, source);
+  html = addContextImageShelf(html, source);
   html = addSiteIndexLink(html, source);
   html = addGlobalNavigation(html, source);
 

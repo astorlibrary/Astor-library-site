@@ -168,7 +168,13 @@ if (!homepageMain.includes('class="catalogue-accession-shelf"')) failures.push('
 if (!homepageMain.includes('class="catalogue-find-rows"')) failures.push('The homepage is missing its browse routes');
 if (!homepageMain.includes('class="catalogue-reading-room"')) failures.push('The homepage is missing its reading room');
 if (!homepageMain.includes('class="catalogue-colophon"')) failures.push('The homepage is missing the Astor history');
-if (countMatches(homepageMain, /<section class="catalogue-/g) !== 7) failures.push('The homepage must contain seven purposeful sections');
+if (!homepageMain.includes('class="seasonal-feature"')) failures.push('The homepage is missing its summer feature');
+if (!homepageMain.includes('Summer at Astor') || !homepageMain.includes('6 July–16 August')) failures.push('The homepage summer feature is missing its title or dates');
+for (const href of ['/books/a-midsummer-nights-dream/', '/books/as-you-like-it/', '/books/the-odyssey/', '/books/adventures-of-huckleberry-finn/']) {
+  if (!homepageMain.includes('href="' + href + '"')) failures.push('The homepage summer feature is missing ' + href);
+}
+if (countMatches(homepageMain, /<section class="(?:seasonal-feature|catalogue-)/g) !== 8) failures.push('The homepage must contain eight purposeful sections');
+if (!homepage.includes('mailto:support@astorlibrary.com')) failures.push('The homepage is missing the support email');
 for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/teach/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/']) {
   if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
 }
@@ -608,6 +614,7 @@ if (fs.existsSync(distDir)) {
       if (!redirect && !html.includes('data-astor-global-meta')) failures.push('dist/' + fileName + ' is missing its search visibility information');
       if (countMatches(html, /class="site-header astor-global-header/g) !== 1) failures.push('dist/' + fileName + ' must have one shared header');
       if (countMatches(html, /class="site-footer astor-global-footer/g) !== 1) failures.push('dist/' + fileName + ' must have one grouped footer');
+      if (!html.includes('href="mailto:support@astorlibrary.com"')) failures.push('dist/' + fileName + ' is missing the support email');
       for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/teach/', '/passage-room/', '/explore/', '/authors/', '/subjects/']) {
         if (!html.includes('href="' + href + '"')) failures.push('dist/' + fileName + ' is missing ' + href + ' from shared navigation');
       }
