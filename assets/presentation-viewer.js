@@ -36,8 +36,7 @@ export class AstorPresentationViewer extends HTMLElement {
     this.#slide = ((number - 1 + total) % total) + 1;
     const slide = this.querySelector('[data-slide-image]');
     if (!slide) return;
-    slide.classList.add('is-changing');
-    slide.src = this.#slideUrl(this.#slide);
+    this.#loadSlide(this.#slide, slide);
     slide.alt = `${this._presentation.title}, slide ${this.#slide} of ${total}`;
     this.querySelector('[data-slide-counter]').textContent = `${this.#slide} / ${total}`;
     this.querySelector('[data-announcer]').textContent = `Slide ${this.#slide} of ${total}`;
@@ -62,7 +61,7 @@ export class AstorPresentationViewer extends HTMLElement {
           </div>
         </div>
         <div class="astor-presentation-viewer__frame" data-stage>
-          <img class="astor-presentation-viewer__slide" data-slide-image src="${this.#slideUrl(this.#slide)}" alt="${this.#escape(presentation.title)}, slide 1 of ${presentation.slideCount}">
+          <img class="astor-presentation-viewer__slide" data-slide-image alt="${this.#escape(presentation.title)}, slide 1 of ${presentation.slideCount}">
         </div>
         <button class="astor-presentation-viewer__arrow astor-presentation-viewer__arrow--previous" type="button" data-previous aria-label="Previous slide">‹</button>
         <button class="astor-presentation-viewer__arrow astor-presentation-viewer__arrow--next" type="button" data-next aria-label="Next slide">›</button>
@@ -73,7 +72,9 @@ export class AstorPresentationViewer extends HTMLElement {
     this.querySelector('[data-previous]').addEventListener('click', () => this.previous());
     this.querySelector('[data-next]').addEventListener('click', () => this.next());
     this.querySelector('[data-fullscreen]').addEventListener('click', () => this.#toggleFullscreen());
-    this.querySelector('[data-slide-image]').addEventListener('load', event => event.currentTarget.classList.remove('is-changing'));
+    const slide = this.querySelector('[data-slide-image]');
+    slide.addEventListener('load', event => event.currentTarget.classList.remove('is-changing'));
+    this.#loadSlide(this.#slide, slide);
 
     const stage = this.querySelector('[data-stage]');
     stage.addEventListener('pointerdown', event => { this.#pointerStartX = event.clientX; });
@@ -101,6 +102,22 @@ export class AstorPresentationViewer extends HTMLElement {
       const image = new Image();
       image.src = this.#slideUrl(slide);
     });
+  }
+
+  async #loadSlide(number, image) {
+    const url = this.#slideUrl(number);
+    image.classList.add('is-changing');
+    image.onerror = async () => {
+      image.onerror = null;
+      const parts = [];
+      for (let index = 1; ; index += 1) {
+        const response = await fetch(`${url}.part-${String(index).padStart(3, '0')}`);
+        if (!response.ok) break;
+        parts.push(await response.blob());
+      }
+      if (parts.length) image.src = URL.createObjectURL(new Blob(parts, { type: 'image/png' }));
+    };
+    image.src = url;
   }
 
   #slideUrl(number) { return `${this._presentation.folder}${number}.png`; }

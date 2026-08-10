@@ -131,6 +131,15 @@ function page(resource) {
     : '';
   const readingHeading = detailed?.sectionHeading || 'Questions and evidence.';
   const readingIntro = detailed?.sectionIntro || 'Use these notes with the relevant words, scene or chapter and cite the evidence for each conclusion.';
+  const isAstorPresentation = resource.url.startsWith('/presentations/?presentation=');
+  const linkAttributes = isAstorPresentation ? '' : ' target="_blank" rel="noopener noreferrer"';
+  const externalArrow = isAstorPresentation ? '&rarr;' : '&nearr;';
+  const completionNote = isAstorPresentation
+    ? 'The complete illustrated guide is hosted by Astor Library and opens here in your browser.'
+    : 'This page lists the guide’s contents and related Astor editions. The complete illustrated guide opens in a new tab.';
+  const openCopy = isAstorPresentation
+    ? 'The guide is free to read in your browser, with no account or external platform required.'
+    : 'The guide is free to read in a browser and opens in a new tab.';
 
   return `<!doctype html>
 <html lang="en">
@@ -144,7 +153,7 @@ function page(resource) {
 <body class="resource-detail-page">
 ${header()}
 <main class="page-wrap resource-landing-page">
-<section class="page-intro resource-page-intro"><div><p class="kicker">Free online guide · ${escapeHtml(category.label)}</p><h1>${resource.titleHtml}</h1><p class="deck">${inlineHtml(guidePurpose)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Read the complete guide <span aria-hidden="true">&nearr;</span></a><a class="button secondary" href="/resources/">All free resources</a></div></div><aside class="source-note"><p><strong>${escapeHtml(scopeNote)}</strong></p><p>This page lists the guide’s contents and related Astor editions. The complete illustrated guide opens in a new tab.</p></aside></section>
+<section class="page-intro resource-page-intro"><div><p class="kicker">Free online guide · ${escapeHtml(category.label)}</p><h1>${resource.titleHtml}</h1><p class="deck">${inlineHtml(guidePurpose)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(resource.url)}"${linkAttributes}>Read the complete guide <span aria-hidden="true">${externalArrow}</span></a><a class="button secondary" href="/resources/">All free resources</a></div></div><aside class="source-note"><p><strong>${escapeHtml(scopeNote)}</strong></p><p>${completionNote}</p></aside></section>
 
 <section class="resource-layout resource-landing-hero">
   <figure class="resource-cover-panel"><img src="${assetPath(resource.image)}" alt="${escapeHtml(resource.title)} cover"><figcaption>Astor Library free resource</figcaption></figure>
@@ -154,7 +163,7 @@ ${header()}
     <h2>Subject and purpose of the guide.</h2>
     <p>${escapeHtml(resource.description)}</p>
     <p>${escapeHtml(category.use)}</p>
-    <div class="resource-page-actions"><a href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Read the complete online guide <span aria-hidden="true">&nearr;</span></a><a href="/resources/">Return to the free library</a></div>
+    <div class="resource-page-actions"><a href="${escapeHtml(resource.url)}"${linkAttributes}>Read the complete online guide <span aria-hidden="true">${externalArrow}</span></a><a href="/resources/">Return to the free library</a></div>
   </article>
 </section>
 
@@ -164,7 +173,7 @@ ${contents}
 
 <aside class="note-box resource-use-note"><p><strong>How to use this guide.</strong> ${escapeHtml(note)}</p></aside>
 
-<section class="resource-open-band"><div><p class="kicker">Complete resource</p><h2>Open the full illustrated guide.</h2><p>The guide is free to read in a browser and opens in a new tab.</p></div><a class="button primary" href="${escapeHtml(resource.url)}" target="_blank" rel="noopener noreferrer">Open free guide <span aria-hidden="true">&nearr;</span></a></section>
+<section class="resource-open-band"><div><p class="kicker">Complete resource</p><h2>Open the full illustrated guide.</h2><p>${openCopy}</p></div><a class="button primary" href="${escapeHtml(resource.url)}"${linkAttributes}>Open free guide <span aria-hidden="true">${externalArrow}</span></a></section>
 
 <section class="resource-related"><div><p class="kicker">Related catalogue pages</p><h2>Relevant books and subject guides.</h2></div><div class="resource-related-links">${relatedLinks(resource)}</div></section>
 </main>

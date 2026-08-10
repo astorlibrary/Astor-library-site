@@ -5,7 +5,7 @@ const resources = [
     titleHtml: '<em>Antony and Cleopatra</em>: Key Themes &amp; Critical Contexts',
     description: 'Explore Rome and Egypt, love and empire, gender, performance and the play’s changing critical contexts.',
     image: '02_antony_and_cleopatra.png',
-    url: 'https://antony-and-cleopatra-key-a1i8dw1.gamma.site',
+    url: '/presentations/?presentation=antony-and-cleopatra',
     legacyRoute: '/resources/antony-and-cleopatra/themes-critical-contexts/',
     relatedBooks: ['/books/antony-and-cleopatra/'],
     tags: ['Antony and Cleopatra', 'Critical contexts']
@@ -28,7 +28,7 @@ const resources = [
     titleHtml: '<em>Macbeth</em>: A Quick Study Guide',
     description: 'Follow prophecy, ambition, royal murder, guilt and the equivocal promises that turn confidence into a trap.',
     image: '06_macbeth_study_guide.png',
-    url: 'https://macbeth-a-study-guide-wkvonk2.gamma.site',
+    url: '/presentations/?presentation=macbeth-quick-guide',
     legacyRoute: '/resources/macbeth/quick-guide/',
     relatedBooks: ['/books/macbeth/'],
     tags: ['Macbeth', 'Quick guide']
@@ -39,7 +39,7 @@ const resources = [
     titleHtml: '<em>Richard II</em>: A Student Study Guide',
     description: 'Study deposition, divine kingship, succession and the political performances of Richard and Bolingbroke.',
     image: '09_richard_ii_study_guide.png',
-    url: 'https://shakespeares-richard-ii-1gbwbfw.gamma.site',
+    url: '/presentations/?presentation=richard-ii',
     legacyRoute: '/resources/richard-ii/study-guide/',
     relatedBooks: ['/books/richard-ii/'],
     tags: ['Richard II', 'History play']
@@ -50,7 +50,7 @@ const resources = [
     titleHtml: '<em>The Winter’s Tale</em>: A Complete Study Guide',
     description: 'Move from jealousy and tyranny to pastoral, time and the difficult work of reconciliation.',
     image: '10_winters_tale_study_guide.png',
-    url: 'https://the-winters-tale-a-compl-rv7mbwm.gamma.site',
+    url: '/presentations/?presentation=winters-tale',
     legacyRoute: '/resources/winters-tale/complete-study-guide/',
     tags: ['The Winter’s Tale', 'Complete guide']
   },
@@ -60,7 +60,7 @@ const resources = [
     titleHtml: '<em>Macbeth</em>: Summary and Analysis',
     description: 'Revise the plot and characters, then develop thematic, contextual and quotation-led analysis.',
     image: 'Macbeth Summary and Analysis.png',
-    url: 'https://act-1-scene-1-2xfguks.gamma.site',
+    url: '/presentations/?presentation=macbeth-summary-analysis',
     legacyRoute: '/resources/macbeth/summary-analysis/',
     relatedBooks: ['/books/macbeth/'],
     tags: ['Macbeth', 'Summary']
@@ -70,7 +70,7 @@ const resources = [
     title: 'Romeo and Juliet: Summary Guide',
     titleHtml: '<em>Romeo and Juliet</em>: Summary Guide',
     description: 'Review the plot and characters, connect themes to context and secure useful quotations.',
-    image: 'assets/presentations/romeo-and-juliet/backdrop.webp',
+    image: 'Romeo and Juliet plot, characters etc.png',
     url: '/presentations/?presentation=romeo-and-juliet',
     legacyRoute: '/resources/romeo-and-juliet/summary-guide/',
     relatedBooks: ['/books/romeo-and-juliet/'],
@@ -93,7 +93,7 @@ const resources = [
     titleHtml: 'Shakespeare’s Tragedies: An Overview',
     description: 'Compare the structures, character types and dramatic concerns that recur across Shakespeare’s tragedies.',
     image: 'Shakespeare\'s Tragedies- An overview.png',
-    url: 'https://shakespeares-tragedies-a-ve41kt1.gamma.site',
+    url: '/presentations/?presentation=shakespeares-tragedies',
     legacyRoute: '/resources/shakespeare/tragedies-overview/',
     relatedBooks: ['/books/hamlet/', '/books/king-lear/', '/books/macbeth/', '/books/othello/', '/books/romeo-and-juliet/', '/books/titus-andronicus/'],
     tags: ['Shakespeare', 'Tragedy']
@@ -104,7 +104,7 @@ const resources = [
     titleHtml: '<em>A Midsummer Night’s Dream</em>: A Study Guide',
     description: 'Explore plot, characters, love, transformation, dreams, fairies, staging, adaptations and Puck’s epilogue.',
     image: 'A Midsummer Night\'s Dream Study Guide.png',
-    url: 'https://a-midsummer-nights-dream-akwphaj.gamma.site',
+    url: '/presentations/?presentation=midsummer-nights-dream',
     legacyRoute: '/resources/midsummer-nights-dream/study-guide/',
     relatedBooks: ['/books/a-midsummer-nights-dream/'],
     tags: ['Midsummer', 'Study guide']
@@ -116,7 +116,7 @@ const resources = [
     titleHtml: 'Policing and Community in Linton Kwesi Johnson’s Poetry',
     description: 'Read Jamaican Creole, rhythm and performance beside accounts of policing, resistance and Black British community.',
     image: '08_policing_and_community.png',
-    url: 'https://policing-and-community-i-cvtjjtz.gamma.site',
+    url: '/presentations/?presentation=policing-and-community',
     legacyRoute: '/resources/poetry/linton-kwesi-johnson-policing-community/',
     tags: ['Linton Kwesi Johnson', 'Poetry and policing']
   },
@@ -126,7 +126,7 @@ const resources = [
     titleHtml: '<em>Pamela’s</em> Psyche',
     description: 'Read Richardson’s epistolary novel through fear, hesitation, class, gender and the heroine’s contradictory inner life.',
     image: '07_pamelas_psyche.png',
-    url: 'https://pamelas-psyche-a-psychol-n0ybnn5.gamma.site',
+    url: '/presentations/?presentation=pamelas-psyche',
     legacyRoute: '/resources/pamela/psychological-analysis/',
     relatedBooks: ['/books/pamela/'],
     tags: ['Pamela', 'Psychological reading']
@@ -147,7 +147,7 @@ const resources = [
     titleHtml: '<em>The Picture of Dorian Gray</em>: An Introduction',
     description: 'Explore art, influence, secrecy, aestheticism, corruption and the portrait as a hidden record.',
     image: '05_picture_of_dorian_gray.png',
-    url: 'https://the-picture-of-dorian-gr-half16o.gamma.site',
+    url: '/presentations/?presentation=dorian-gray',
     legacyRoute: '/resources/dorian-gray/introduction/',
     relatedBooks: ['/books/dorian-gray/'],
     tags: ['Oscar Wilde', 'Introduction']
@@ -158,7 +158,7 @@ const resources = [
     titleHtml: '<em>Frankenstein</em>: Study Guide',
     description: 'Study creation, responsibility, narrative frames, isolation, knowledge and the novel’s competing voices.',
     image: 'Frankenstein Revision Guide.png',
-    url: 'https://frankenstein-by-mary-she-3hxubj1.gamma.site',
+    url: '/presentations/?presentation=frankenstein',
     legacyRoute: '/resources/frankenstein/study-guide/',
     relatedBooks: ['/books/frankenstein/'],
     tags: ['Frankenstein', 'Study guide']
@@ -169,7 +169,7 @@ const resources = [
     titleHtml: 'A Guide to <em>Great Expectations</em> by Charles Dickens',
     description: 'Follow Pip’s expectations through class, crime, memory, generosity and the novel’s changing ideas of gentility.',
     image: 'Guide to Great Expectations.png',
-    url: 'https://a-guide-to-great-expecta-w1qdbru.gamma.site',
+    url: '/presentations/?presentation=great-expectations',
     legacyRoute: '/resources/great-expectations/study-guide/',
     relatedBooks: ['/books/great-expectations/'],
     tags: ['Great Expectations', 'Study guide']
@@ -180,7 +180,7 @@ const resources = [
     titleHtml: '<em>Dracula</em> by Bram Stoker: A Complete Overview',
     description: 'Follow the plot, documents, characters, contexts and forms of evidence assembled against the Count.',
     image: 'Dracula Overview.png',
-    url: 'https://dracula-by-bram-stoker-a-e8ip7yl.gamma.site',
+    url: '/presentations/?presentation=dracula-overview',
     legacyRoute: '/resources/dracula/complete-overview/',
     relatedBooks: ['/books/dracula/'],
     tags: ['Dracula', 'Complete overview']
@@ -202,7 +202,7 @@ const resources = [
     titleHtml: '<em>The Kite Runner</em>: Walkthrough',
     description: 'Follow the novel through friendship, betrayal, exile, memory, guilt and the difficult possibility of atonement.',
     image: 'The Kite Runner Overview.png',
-    url: 'https://the-kite-runner-study-gu-e8x8o98.gamma.site',
+    url: '/presentations/?presentation=kite-runner',
     legacyRoute: '/resources/modern/kite-runner-walkthrough/',
     tags: ['The Kite Runner', 'Walkthrough']
   },
@@ -212,7 +212,7 @@ const resources = [
     titleHtml: '<em>The Handmaid’s Tale</em>: Complete Guide',
     description: 'Examine Gilead through power, gender, memory, language, religion, resistance and Offred’s narration.',
     image: 'Handmaid\'s Tale - Complete Guide.png',
-    url: 'https://the-handmaids-tale-a-com-093fea1.gamma.site',
+    url: '/presentations/?presentation=handmaids-tale',
     legacyRoute: '/resources/modern/handmaids-tale-guide/',
     tags: ['The Handmaid’s Tale', 'Dystopia']
   },
@@ -222,7 +222,7 @@ const resources = [
     titleHtml: '<em>Half of a Yellow Sun</em>: Diaspora, Nation and Exile',
     description: 'Study diaspora, Biafran history, narrative form and the limits of Richard, Olanna and Ugwu as witnesses.',
     image: 'Half A Yellow Sun- Diaspora.png',
-    url: 'https://half-of-a-yellow-sun-dia-waqdk9y.gamma.site',
+    url: '/presentations/?presentation=half-of-a-yellow-sun',
     legacyRoute: '/resources/modern/half-of-a-yellow-sun-diaspora/',
     tags: ['Half of a Yellow Sun', 'Diaspora']
   },
@@ -270,7 +270,7 @@ const resources = [
     titleHtml: 'A Lost Voice Recovered',
     description: 'Follow a forgotten Hughes essay from a 1927 encounter with an escaped prisoner to its recovery from the archive.',
     image: '01_a_lost_voice_recovered.png',
-    url: 'https://a-lost-voice-recovered-l-u9mgk6h.gamma.site',
+    url: '/presentations/?presentation=lost-voice-recovered',
     legacyRoute: '/resources/american/langston-hughes-chain-gang-essay/',
     tags: ['Langston Hughes', 'Archival recovery']
   },
@@ -281,7 +281,7 @@ const resources = [
     titleHtml: '“Don’t Turn Back”',
     description: 'Trace “Mother to Son” through the speeches of Martin Luther King Jr and Barack Obama.',
     image: '03_dont_turn_back.png',
-    url: 'https://dont-turn-back-langston--krngien.gamma.site',
+    url: '/presentations/?presentation=dont-turn-back',
     legacyRoute: '/resources/american/langston-hughes-dont-turn-back/',
     tags: ['Langston Hughes', 'Political speech']
   },
@@ -291,7 +291,7 @@ const resources = [
     titleHtml: '<em>Moby-Dick</em>: Study Guide',
     description: 'Follow the voyage, characters, whaling history and the changing forms through which Ishmael tells the story.',
     image: 'moby dick study guide.png',
-    url: 'https://moby-dick-study-guide-4w1kshg.gamma.site',
+    url: '/presentations/?presentation=moby-dick',
     legacyRoute: '/resources/moby-dick/study-guide/',
     relatedBooks: ['/books/moby-dick/'],
     tags: ['Moby-Dick', 'Study guide']
@@ -396,7 +396,7 @@ const resources = [
     titleHtml: '<em>The Great Gatsby</em>: Corruption, Illusion &amp; the American Dream',
     description: 'Read the novel’s wealth, carelessness and self-invention as a critique of national promise.',
     image: 'The-Great-Gatsby-Corruption-Illusion-and-the-American-Dream.png',
-    url: 'https://the-great-gatsby-corrupt-ozf3n31.gamma.site',
+    url: '/presentations/?presentation=great-gatsby-corruption-illusion',
     tags: ['The Great Gatsby', 'American Dream']
   },
   {
