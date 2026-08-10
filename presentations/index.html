@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presentation | Astor Library</title>
+<meta name="description" content="Read Astor Library illustrated study presentations in your browser.">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/assets/presentation-viewer.css">
+<style>.presentation-page{max-width:1440px;margin:0 auto;padding:34px 22px 84px}.presentation-page-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:18px}.presentation-page-head p{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#423b36;line-height:1.55}.presentation-page-head a{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--burgundy);font-weight:800}@media(max-width:640px){.presentation-page{padding:22px 0 56px}.presentation-page-head{display:block;padding:0 18px}.presentation-page-head a{display:inline-block;margin-top:12px}}</style>
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="Astor Library torch"><span class="word">LIBRARY</span></a>
+<nav class="nav" aria-label="Primary navigation"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/explore/">Explore</a><a class="nav-link" href="/passage-room/">Passages</a><a class="nav-link" href="/subjects/">Subjects</a><a class="nav-link" href="/authors/">Writers</a><a class="nav-link" href="/library/">All books</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/resources/">Free resources</a></nav>
+</header>
+<main class="presentation-page">
+  <div class="presentation-page-head"><div><p class="kicker">Astor Library presentation</p><p>Use the arrows, left and right keys, or swipe to move through the guide.</p></div><a href="/resources/">All free resources</a></div>
+  <astor-presentation-viewer></astor-presentation-viewer>
+</main>
+<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, study editions and free literature resources.</p></div><div class="footer-links"><a href="/resources/">All free resources</a><a href="/library/">Books</a><a href="/subjects/">Subjects</a><a href="/editorial/">Editorial standards</a></div></footer>
+<script type="module">
+  import { getPresentation } from '/assets/presentation-data.js';
+  import '/assets/presentation-viewer.js';
+  const slug = new URLSearchParams(location.search).get('presentation');
+  const presentation = getPresentation(slug);
+  document.title = `${presentation.title} | Astor Library`;
+  document.querySelector('astor-presentation-viewer').presentation = presentation;
+</script>
+</body>
+</html>
