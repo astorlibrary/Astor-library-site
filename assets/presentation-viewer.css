@@ -1,0 +1,46 @@
+astor-presentation-viewer { display:block; }
+
+.astor-presentation-viewer {
+  --presentation-ink: #fff8ef;
+  --presentation-control: rgba(32,28,26,.72);
+  --presentation-control-border: rgba(255,248,239,.42);
+  --presentation-control-hover: rgba(110,31,43,.92);
+  isolation:isolate;
+  position:relative;
+  display:grid;
+  min-height:clamp(27rem,72svh,54rem);
+  height:min(78svh,56rem);
+  overflow:hidden;
+  background:#10263b;
+  color:var(--presentation-ink);
+}
+
+.astor-presentation-viewer:fullscreen { width:100%;height:100%;min-height:100svh; }
+.astor-presentation-viewer__backdrop,.astor-presentation-viewer__wash { position:absolute;inset:0;width:100%;height:100%; }
+.astor-presentation-viewer__backdrop { z-index:-2;object-fit:cover; }
+.astor-presentation-viewer__wash { z-index:-1;background:linear-gradient(90deg,rgba(4,15,29,.34),rgba(4,15,29,.1) 50%,rgba(4,15,29,.34)); }
+.astor-presentation-viewer__topbar { position:absolute;z-index:3;top:clamp(.85rem,2vw,1.6rem);right:clamp(.85rem,2vw,1.6rem);left:clamp(.85rem,2vw,1.6rem);display:flex;align-items:center;justify-content:space-between;gap:.75rem; }
+.astor-presentation-viewer__title { max-width:65%;margin:0;padding:.48rem .72rem;background:rgba(16,38,59,.7);font:700 clamp(.7rem,1.15vw,.86rem)/1.15 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.07em;text-transform:uppercase; }
+.astor-presentation-viewer__utilities { display:flex;gap:.45rem; }
+.astor-presentation-viewer__control,.astor-presentation-viewer__arrow { border:1px solid var(--presentation-control-border);background:var(--presentation-control);color:inherit;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;cursor:pointer;transition:background-color .18s ease,border-color .18s ease,transform .18s ease; }
+.astor-presentation-viewer__control { display:inline-grid;place-items:center;min-height:2.15rem;padding:.44rem .68rem;text-decoration:none;font-size:.72rem;font-weight:800;letter-spacing:.03em;white-space:nowrap; }
+.astor-presentation-viewer__frame { z-index:1;display:grid;place-items:center;min-width:0;min-height:0;padding:clamp(4.5rem,10vh,7.5rem) clamp(4rem,11vw,9rem) clamp(3.6rem,8vh,5.7rem);touch-action:pan-y; }
+.astor-presentation-viewer__slide { display:block;max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 1.25rem 3.5rem rgba(1,7,14,.5),0 .15rem .45rem rgba(1,7,14,.32);transition:opacity .13s ease; }
+.astor-presentation-viewer__slide.is-changing { opacity:.35; }
+.astor-presentation-viewer__arrow { position:absolute;z-index:2;top:50%;width:clamp(2.35rem,4vw,3.1rem);height:clamp(2.35rem,4vw,3.1rem);border-radius:999px;font:300 clamp(2rem,3vw,2.7rem)/.75 Georgia,'Times New Roman',serif;transform:translateY(-50%); }
+.astor-presentation-viewer__arrow--previous { left:clamp(.55rem,1.8vw,1.5rem); }
+.astor-presentation-viewer__arrow--next { right:clamp(.55rem,1.8vw,1.5rem); }
+.astor-presentation-viewer__counter { position:absolute;z-index:2;right:50%;bottom:clamp(.7rem,1.8vw,1.35rem);margin:0;padding:.38rem .65rem;border:1px solid var(--presentation-control-border);border-radius:999px;background:var(--presentation-control);font:800 .74rem/1 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;transform:translateX(50%); }
+.astor-presentation-viewer__announcer { position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
+.astor-presentation-viewer__control:hover,.astor-presentation-viewer__arrow:hover { background:var(--presentation-control-hover); }
+.astor-presentation-viewer__arrow:hover { transform:translateY(-50%) scale(1.06); }
+.astor-presentation-viewer__control:focus-visible,.astor-presentation-viewer__arrow:focus-visible { outline:3px solid #f5d38b;outline-offset:3px; }
+
+@media(max-width:38rem) {
+  .astor-presentation-viewer { min-height:24rem;height:74svh; }
+  .astor-presentation-viewer__frame { padding:4rem 3.15rem 3.3rem; }
+  .astor-presentation-viewer__title { max-width:48%; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .astor-presentation-viewer__slide,.astor-presentation-viewer__control,.astor-presentation-viewer__arrow { transition:none; }
+}

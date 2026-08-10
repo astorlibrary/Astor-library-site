@@ -70,8 +70,8 @@ const resources = [
     title: 'Romeo and Juliet: Summary Guide',
     titleHtml: '<em>Romeo and Juliet</em>: Summary Guide',
     description: 'Review the plot and characters, connect themes to context and secure useful quotations.',
-    image: 'Romeo and Juliet plot, characters etc.png',
-    url: 'https://romeo-and-juliet-rvvolvg.gamma.site',
+    image: 'assets/presentations/romeo-and-juliet/backdrop.webp',
+    url: '/presentations/?presentation=romeo-and-juliet',
     legacyRoute: '/resources/romeo-and-juliet/summary-guide/',
     relatedBooks: ['/books/romeo-and-juliet/'],
     tags: ['Romeo and Juliet', 'Summary']
