@@ -1,6 +1,7 @@
 export class AstorPresentationViewer extends HTMLElement {
   #slide = 1;
   #pointerStartX = null;
+  #loadRequest = 0;
   #onKeyDown = (event) => {
     if (event.defaultPrevented || this.#isTyping(event.target)) return;
     if (event.key === 'ArrowLeft') {
@@ -96,28 +97,29 @@ export class AstorPresentationViewer extends HTMLElement {
   }
 
   #preloadNeighbours() {
-    [this.#slide - 1, this.#slide + 1].forEach(number => {
-      const total = this._presentation.slideCount;
-      const slide = ((number - 1 + total) % total) + 1;
-      const image = new Image();
-      image.src = this.#slideUrl(slide);
-    });
+    // Slide files are loaded on demand so a missing direct asset never flashes
+    // as a broken image while the viewer retrieves its delivery parts.
   }
 
   async #loadSlide(number, image) {
     const url = this.#slideUrl(number);
+    const request = ++this.#loadRequest;
     image.classList.add('is-changing');
-    image.onerror = async () => {
-      image.onerror = null;
-      const parts = [];
-      for (let index = 1; ; index += 1) {
-        const response = await fetch(`${url}.part-${String(index).padStart(3, '0')}`);
-        if (!response.ok) break;
-        parts.push(await response.blob());
-      }
-      if (parts.length) image.src = URL.createObjectURL(new Blob(parts, { type: 'image/png' }));
-    };
-    image.src = url;
+    const direct = await fetch(url, { method: 'HEAD' });
+    if (request !== this.#loadRequest) return;
+    if (direct.ok) {
+      image.src = url;
+      return;
+    }
+
+    const parts = [];
+    for (let index = 1; ; index += 1) {
+      const response = await fetch(`${url}.part-${String(index).padStart(3, '0')}`);
+      if (!response.ok) break;
+      parts.push(await response.blob());
+    }
+    if (request !== this.#loadRequest || !parts.length) return;
+    image.src = URL.createObjectURL(new Blob(parts, { type: 'image/png' }));
   }
 
   #slideUrl(number) { return `${this._presentation.folder}${number}.png`; }
