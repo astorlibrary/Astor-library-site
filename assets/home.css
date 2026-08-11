@@ -135,10 +135,12 @@ input:focus-visible {
   text-transform: uppercase;
 }
 
-.seasonal-feature-heading h2 {
+.seasonal-feature-heading .seasonal-title {
   max-width: 590px;
   margin: 0 0 27px;
   color: var(--catalogue-navy);
+  font-family: var(--catalogue-serif);
+  font-weight: 400;
   font-size: clamp(76px, 8.6vw, 124px);
   line-height: 0.78;
   letter-spacing: -0.07em;
@@ -923,7 +925,7 @@ input:focus-visible {
     max-width: 680px;
   }
 
-  .seasonal-feature-heading h2 {
+  .seasonal-feature-heading .seasonal-title {
     max-width: 720px;
   }
 
@@ -1011,7 +1013,7 @@ input:focus-visible {
     font-size: 9px;
   }
 
-  .seasonal-feature-heading h2 {
+  .seasonal-feature-heading .seasonal-title {
     max-width: 340px;
     margin-bottom: 23px;
     font-size: clamp(65px, 20vw, 82px);

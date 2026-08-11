@@ -5,6 +5,33 @@ const detailedResources = require('./resource-additions');
 
 const root = process.cwd();
 const detailedByUrl = new Map(detailedResources.map(resource => [resource.url, resource]));
+const PREVIEW_SLIDES = 3;
+
+function singleQuotedProperty(block, name) {
+  const match = block.match(new RegExp(`${name}:\\s*'((?:\\\\.|[^'])*)'`));
+  return match ? match[1].replace(/\\(['\\])/g, '$1') : '';
+}
+
+function presentationCatalog() {
+  const source = fs.readFileSync(path.join(root, 'assets', 'presentation-data.js'), 'utf8');
+  const starts = Array.from(source.matchAll(/^  '([^']+)':/gm));
+  const catalog = new Map();
+
+  starts.forEach((match, index) => {
+    const blockEnd = starts[index + 1]?.index ?? source.indexOf('\n};', match.index);
+    const block = source.slice(match.index, blockEnd);
+    const slideCount = Number(block.match(/slideCount:\s*(\d+)/)?.[1]);
+    const title = singleQuotedProperty(block, 'title');
+    const backdrop = singleQuotedProperty(block, 'backdrop');
+    if (title && backdrop && Number.isSafeInteger(slideCount) && slideCount > 0) {
+      catalog.set(match[1], { slug: match[1], title, backdrop, slideCount });
+    }
+  });
+
+  return catalog;
+}
+
+const presentationsBySlug = presentationCatalog();
 
 const categories = {
   shakespeare: {
@@ -66,6 +93,11 @@ function assetPath(file) {
   return '/' + encodeURIComponent(file).replace(/'/g, '%27');
 }
 
+function presentationSlug(url) {
+  if (!url.startsWith('/presentations/?')) return '';
+  return new URL(url, 'https://astorlibrary.invalid').searchParams.get('presentation') || '';
+}
+
 function header() {
   return `<header class="site-header">
 <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="Astor Library torch"><span class="word">LIBRARY</span></a>
@@ -117,29 +149,58 @@ function readingNotes(resource, detailed) {
 function page(resource) {
   const detailed = detailedByUrl.get(resource.url);
   const category = categories[resource.category];
+  const resourceId = presentationSlug(resource.url);
+  const isAstorPresentation = Boolean(resourceId && presentationsBySlug.has(resourceId));
+  const slideCount = presentationsBySlug.get(resourceId)?.slideCount || null;
+  const focus = resource.tags[1] || resource.tags[0] || '';
   const tags = resource.tags.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`).join('');
+  const facts = [
+    ['Resource type', 'Illustrated study guide'],
+    ['Subject', category.label],
+    focus ? ['Focus', focus] : null,
+    slideCount ? ['Length', `${slideCount} slides`] : null
+  ].filter(Boolean);
+  const factsHtml = `<dl class="resource-facts" aria-label="Resource details">${facts.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>`;
   const notes = readingNotes(resource, detailed);
   const notesHtml = notes.map(item => `<article><p class="year">${escapeHtml(item.label)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.copy)}</p></article>`).join('');
   const guidePurpose = detailed?.deck || resource.description;
-  const note = detailed?.note ||
-    `Read the introduction here, then open the complete guide. Check its summaries and interpretations against the relevant chapter, scene or poem.`;
-  const scopeNote = detailed?.pageCount
-    ? `${detailed.pageCount} sections · written and published by Astor Library`
-    : 'Written and published by Astor Library';
+  const note = detailed?.note || (isAstorPresentation
+    ? `Read the introduction and three-slide preview here, then sign in with a free account to continue. Check the guide’s summaries and interpretations against the relevant chapter, scene or poem.`
+    : `Read the introduction here, then open the external guide. Check its summaries and interpretations against the relevant chapter, scene or poem.`);
+  const scopeNote = isAstorPresentation
+    ? `${slideCount} slides · written and published by Astor Library`
+    : 'External online guide';
   const contents = detailed?.includes?.length
-    ? `<section class="resource-contents-section"><div class="resource-contents-heading"><p class="kicker">Guide contents</p><h2>What the guide contains.</h2><p>The online edition contains ${detailed.pageCount} sections. The contents are listed here before the link to the full guide.</p></div><ol class="resource-contents">${detailed.includes.map((item, index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><p>${inlineHtml(item)}</p></li>`).join('')}</ol></section>`
+    ? `<section class="resource-contents-section"><div class="resource-contents-heading"><p class="kicker">Guide contents</p><h2>What the guide covers.</h2><p>${slideCount ? `The complete guide contains ${slideCount} slides.` : 'The complete illustrated guide is available online.'} These principal areas are listed before the link to the preview.</p></div><ol class="resource-contents">${detailed.includes.map((item, index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><p>${inlineHtml(item)}</p></li>`).join('')}</ol></section>`
     : '';
   const readingHeading = detailed?.sectionHeading || 'Questions and evidence.';
   const readingIntro = detailed?.sectionIntro || 'Use these notes with the relevant words, scene or chapter and cite the evidence for each conclusion.';
-  const isAstorPresentation = resource.url.startsWith('/presentations/?presentation=');
   const linkAttributes = isAstorPresentation ? '' : ' target="_blank" rel="noopener noreferrer"';
   const externalArrow = isAstorPresentation ? '&rarr;' : '&nearr;';
   const completionNote = isAstorPresentation
-    ? 'The complete illustrated guide is hosted by Astor Library and opens here in your browser.'
+    ? `Preview the first ${PREVIEW_SLIDES} slides without signing in. A free account opens the complete illustrated guide in your browser.`
     : 'This page lists the guide’s contents and related Astor editions. The complete illustrated guide opens in a new tab.';
   const openCopy = isAstorPresentation
-    ? 'The guide is free to read in your browser, with no account or external platform required.'
+    ? `Read the first ${PREVIEW_SLIDES} slides without signing in. Create a free Astor account or sign in when you are ready to continue.`
     : 'The guide is free to read in a browser and opens in a new tab.';
+  const metaDescription = isAstorPresentation
+    ? `${resource.description} Preview three slides and use a free Astor account to read the complete guide.`
+    : `${resource.description} Open the complete guide online.`;
+  const availability = isAstorPresentation
+    ? `${PREVIEW_SLIDES}-slide preview · free account for the full guide`
+    : 'External online guide';
+  const primaryAction = isAstorPresentation ? 'Preview the guide' : 'Open the guide';
+  const heroAction = isAstorPresentation ? `Open the ${PREVIEW_SLIDES}-slide preview` : 'Open the complete guide';
+  const openKicker = isAstorPresentation ? 'Preview and continue' : 'Open online';
+  const next = encodeURIComponent(resource.route);
+  const libraryPanel = isAstorPresentation
+    ? `<section class="resource-library-panel" data-resource-library data-resource-id="${escapeHtml(resourceId)}" aria-labelledby="resource-library-title">
+  <div><p class="kicker">Your Astor library</p><h2 id="resource-library-title">Read now. Save for later.</h2><p class="resource-library-access" data-resource-access-status>Guest access · first ${PREVIEW_SLIDES} slides available</p><p class="resource-library-message" data-resource-library-status role="status" aria-live="polite">Preview ${PREVIEW_SLIDES} slides now. Sign in to save this guide and read every slide.</p></div>
+  <div class="resource-library-actions"><button type="button" data-resource-save aria-pressed="false" hidden>Save guide</button><a href="/account/" data-resource-account hidden>Account</a><a href="/account/?mode=signin&amp;next=${next}" data-resource-signin>Sign in</a><a href="/account/?mode=register&amp;next=${next}" data-resource-register>Create free account</a></div>
+</section>`
+    : `<section class="resource-library-panel resource-library-panel--external" data-resource-library aria-labelledby="resource-library-title">
+  <div><p class="kicker">External resource</p><h2 id="resource-library-title">Continue on the linked site.</h2><p class="resource-library-access" data-resource-access-status>External guide · access is handled on the linked site</p><p class="resource-library-message" data-resource-library-status role="status" aria-live="polite">This external resource is not stored in your Astor account.</p></div>
+</section>`;
 
   return `<!doctype html>
 <html lang="en">
@@ -147,23 +208,28 @@ function page(resource) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escapeHtml(resource.seoTitle || resource.title)} | Astor Library</title>
-<meta name="description" content="${escapeHtml(resource.description)} Read the free Astor Library guide online.">
+<meta name="description" content="${escapeHtml(metaDescription)}">
 <link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/auth.js" defer></script>
+<script src="/assets/resource-library.js" defer></script>
 </head>
 <body class="resource-detail-page">
 ${header()}
 <main class="page-wrap resource-landing-page">
-<section class="page-intro resource-page-intro"><div><p class="kicker">Free online guide · ${escapeHtml(category.label)}</p><h1>${resource.titleHtml}</h1><p class="deck">${inlineHtml(guidePurpose)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(resource.url)}"${linkAttributes}>Read the complete guide <span aria-hidden="true">${externalArrow}</span></a><a class="button secondary" href="/resources/">All free resources</a></div></div><aside class="source-note"><p><strong>${escapeHtml(scopeNote)}</strong></p><p>${completionNote}</p></aside></section>
+<section class="page-intro resource-page-intro"><div><p class="kicker">Free online guide · ${escapeHtml(category.label)}</p><h1>${resource.titleHtml}</h1><p class="deck">${inlineHtml(guidePurpose)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(resource.url)}"${linkAttributes}>${primaryAction} <span aria-hidden="true">${externalArrow}</span></a><a class="button secondary" href="/resources/">All free resources</a></div></div><aside class="source-note"><p><strong>${escapeHtml(scopeNote)}</strong></p><p>${completionNote}</p></aside></section>
+
+${libraryPanel}
 
 <section class="resource-layout resource-landing-hero">
   <figure class="resource-cover-panel"><img src="${assetPath(resource.image)}" alt="${escapeHtml(resource.title)} cover"><figcaption>Astor Library free resource</figcaption></figure>
   <article class="resource-meta">
     <div class="tag-row">${tags}</div>
-    <p class="resource-availability">Free · no sign-in · read in your browser</p>
+    <p class="resource-availability">${availability}</p>
     <h2>Subject and purpose of the guide.</h2>
     <p>${escapeHtml(resource.description)}</p>
     <p>${escapeHtml(category.use)}</p>
-    <div class="resource-page-actions"><a href="${escapeHtml(resource.url)}"${linkAttributes}>Read the complete online guide <span aria-hidden="true">${externalArrow}</span></a><a href="/resources/">Return to the free library</a></div>
+    ${factsHtml}
+    <div class="resource-page-actions"><a href="${escapeHtml(resource.url)}"${linkAttributes}>${heroAction} <span aria-hidden="true">${externalArrow}</span></a><a href="/resources/">Return to the free library</a></div>
   </article>
 </section>
 
@@ -173,7 +239,7 @@ ${contents}
 
 <aside class="note-box resource-use-note"><p><strong>How to use this guide.</strong> ${escapeHtml(note)}</p></aside>
 
-<section class="resource-open-band"><div><p class="kicker">Complete resource</p><h2>Open the full illustrated guide.</h2><p>${openCopy}</p></div><a class="button primary" href="${escapeHtml(resource.url)}"${linkAttributes}>Open free guide <span aria-hidden="true">${externalArrow}</span></a></section>
+<section class="resource-open-band"><div><p class="kicker">${openKicker}</p><h2>Open the illustrated guide.</h2><p>${openCopy}</p></div><a class="button primary" href="${escapeHtml(resource.url)}"${linkAttributes}>${primaryAction} <span aria-hidden="true">${externalArrow}</span></a></section>
 
 <section class="resource-related"><div><p class="kicker">Related catalogue pages</p><h2>Relevant books and subject guides.</h2></div><div class="resource-related-links">${relatedLinks(resource)}</div></section>
 </main>
@@ -188,4 +254,31 @@ for (const resource of resources) {
   fs.writeFileSync(path.join(directory, 'index.html'), page(resource));
 }
 
-console.log(`Built ${resources.length} Astor landing pages for the free online guides.`);
+const landingByPresentation = new Map();
+for (const resource of resources) {
+  const slug = presentationSlug(resource.url);
+  if (slug && !landingByPresentation.has(slug)) landingByPresentation.set(slug, resource);
+}
+
+const libraryData = Array.from(presentationsBySlug.values()).map(presentation => {
+  const resource = landingByPresentation.get(presentation.slug);
+  const category = resource ? categories[resource.category] : null;
+  return {
+    id: presentation.slug,
+    title: resource?.title || presentation.title,
+    description: resource?.description || '',
+    resourceHref: resource?.route || '',
+    viewerUrl: `/presentations/?presentation=${presentation.slug}`,
+    image: presentation.backdrop,
+    type: 'Illustrated study guide',
+    subject: category?.label || '',
+    focus: resource?.tags?.[1] || resource?.tags?.[0] || ''
+  };
+});
+
+fs.writeFileSync(
+  path.join(root, 'assets', 'resource-library-data.json'),
+  `${JSON.stringify({ resources: libraryData }, null, 2)}\n`
+);
+
+console.log(`Built ${resources.length} Astor landing pages and ${libraryData.length} dashboard resource records.`);

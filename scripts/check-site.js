@@ -118,6 +118,9 @@ for (const file of htmlFiles) {
     }
     if (countMatches(html, /<main\b/gi) !== 1) failures.push(fileName + ' must have exactly one main content area');
     if (countMatches(html, /<h1\b/gi) !== 1) failures.push(fileName + ' must have exactly one main heading');
+    if (/href=["']\/teach(?:\/|["'#?])/i.test(html)) failures.push(fileName + ' still links to a retired Teaching Room route');
+    if (/\bTeaching Rooms?\b/i.test(html)) failures.push(fileName + ' still contains retired Teaching Room branding');
+    if (html.includes('/assets/teaching.css')) failures.push(fileName + ' still loads the retired Teaching Room stylesheet');
   }
 
   for (const image of html.matchAll(/<img\b[^>]*>/gi)) {
@@ -190,9 +193,11 @@ for (const sample of ['/Macbeth%20Sample.png', '/Othello%20Study%20Sample.png', 
   if (!homepageMain.includes('src="' + sample + '"')) failures.push('The homepage is missing edition sample ' + sample);
 }
 if (!homepage.includes('mailto:support@astorlibrary.com')) failures.push('The homepage is missing the support email');
-for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/teach/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/']) {
+for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/', '/account/', '/privacy/']) {
   if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
 }
+if (!homepage.includes('class="astor-browse-menu"')) failures.push('The homepage is missing its grouped Browse disclosure');
+if (!homepage.includes('data-auth-link')) failures.push('The homepage is missing its account-aware sign-in link');
 if (homepage.includes('class="home-reading-desk"') || homepage.includes('class="home-library-doors"')) failures.push('The homepage still contains an older duplicate section');
 
 const passageHubFile = path.join(root, 'passage-room', 'index.html');
@@ -235,36 +240,12 @@ for (const route of passageRoutes) {
   if (!passage.includes('Texts consulted')) failures.push(route + ' is missing its source note');
 }
 
-const teachingHubFile = path.join(root, 'teach', 'index.html');
-if (!fs.existsSync(teachingHubFile)) {
-  failures.push('The site is missing its Teaching Room');
-} else {
-  const teachingHub = fs.readFileSync(teachingHubFile, 'utf8');
-  if (!teachingHub.includes('class="page-wrap teaching-home"')) failures.push('The Teaching Room is missing its opening layout');
-  if (!teachingHub.includes('href="/teach/macbeth/"')) failures.push('The Teaching Room does not open the Macbeth room');
-}
-
-const macbethTeachingFile = path.join(root, 'teach', 'macbeth', 'index.html');
-if (!fs.existsSync(macbethTeachingFile)) {
-  failures.push('The Macbeth Teaching Room is missing');
-} else {
-  const macbethTeaching = fs.readFileSync(macbethTeachingFile, 'utf8');
-  for (const sectionId of ['fifteen', 'lesson', 'sequence', 'turning-points', 'discussion', 'essay', 'teacher-notes']) {
-    if (!macbethTeaching.includes('id="' + sectionId + '"')) failures.push('The Macbeth Teaching Room is missing #' + sectionId);
-  }
-  if (countMatches(macbethTeaching, /class="teaching-lesson"/g) !== 3) failures.push('The Macbeth Teaching Room must contain three sequenced lessons');
-  for (const route of passageRoutes.slice(-3)) {
-    if (!macbethTeaching.includes('href="/passage-room/' + route + '/"')) failures.push('The Macbeth Teaching Room is missing its close reading: ' + route);
-  }
-}
-
 const macbethStudyFile = path.join(root, 'study', 'macbeth', 'index.html');
 if (!fs.existsSync(macbethStudyFile)) {
   failures.push('The detailed Macbeth study page is missing');
 } else {
   const macbethStudy = fs.readFileSync(macbethStudyFile, 'utf8');
   if (!macbethStudy.includes('href="https://mybook.to/cntRBz"')) failures.push('The Macbeth study page is missing its edition link');
-  if (!macbethStudy.includes('href="/teach/macbeth/"')) failures.push('The Macbeth study page is missing its Teaching Room link');
   for (const route of passageRoutes.slice(-3)) {
     if (!macbethStudy.includes('href="/passage-room/' + route + '/"')) failures.push('The Macbeth study page is missing its close reading: ' + route);
   }
@@ -620,19 +601,25 @@ if (fs.existsSync(distDir)) {
     if (html.includes('<main')) {
       if (!html.includes('/assets/site.js')) failures.push('dist/' + fileName + ' is missing site.js');
       if (!html.includes('/assets/navigation.css')) failures.push('dist/' + fileName + ' is missing navigation.css');
+      if (!redirect && !html.includes('/assets/auth.js')) failures.push('dist/' + fileName + ' is missing auth.js');
       if (!html.includes('class="skip-link"')) failures.push('dist/' + fileName + ' is missing its skip link');
       if (!/<main\b[^>]*\bid="main-content"/i.test(html)) failures.push('dist/' + fileName + ' is missing the main-content target');
       if (!redirect && !/<link rel="canonical" href="https:\/\/astorlibrary\.com\//i.test(html)) failures.push('dist/' + fileName + ' is missing its absolute preferred address');
       if (!redirect && !html.includes('property="og:title"')) failures.push('dist/' + fileName + ' is missing its sharing title');
       if (!redirect && !html.includes('property="og:description"')) failures.push('dist/' + fileName + ' is missing its sharing description');
       if (!redirect && !/<meta property="og:url" content="https:\/\/astorlibrary\.com\//i.test(html)) failures.push('dist/' + fileName + ' is missing its full sharing address');
-      if (!redirect && !html.includes('data-astor-global-meta')) failures.push('dist/' + fileName + ' is missing its search visibility information');
+      if (!redirect && !html.includes('data-astor-global-meta') && !/<meta\b[^>]*\bname=["']robots["']/i.test(html)) failures.push('dist/' + fileName + ' is missing its search visibility information');
       if (countMatches(html, /class="site-header astor-global-header/g) !== 1) failures.push('dist/' + fileName + ' must have one shared header');
       if (countMatches(html, /class="site-footer astor-global-footer/g) !== 1) failures.push('dist/' + fileName + ' must have one grouped footer');
       if (!html.includes('href="mailto:support@astorlibrary.com"')) failures.push('dist/' + fileName + ' is missing the support email');
-      for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/teach/', '/passage-room/', '/explore/', '/authors/', '/subjects/']) {
+      if (!html.includes('class="astor-browse-menu')) failures.push('dist/' + fileName + ' is missing its grouped Browse disclosure');
+      if (!html.includes('data-auth-link')) failures.push('dist/' + fileName + ' is missing its account-aware sign-in link');
+      for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/explore/', '/authors/', '/subjects/', '/reading-routes/', '/account/', '/privacy/']) {
         if (!html.includes('href="' + href + '"')) failures.push('dist/' + fileName + ' is missing ' + href + ' from shared navigation');
       }
+      if (/href=["']\/teach(?:\/|["'#?])/i.test(html)) failures.push('dist/' + fileName + ' still links to a retired Teaching Room route');
+      if (/\bTeaching Rooms?\b/i.test(html)) failures.push('dist/' + fileName + ' still contains retired Teaching Room branding');
+      if (html.includes('/assets/teaching.css')) failures.push('dist/' + fileName + ' still loads the retired Teaching Room stylesheet');
 
       const mainHtml = html.match(/<main\b[\s\S]*?<\/main>/i)?.[0] || '';
       const mainImages = Array.from(mainHtml.matchAll(/<img\b[^>]*>/gi), match => match[0]);
@@ -655,7 +642,7 @@ if (fs.existsSync(distDir)) {
     if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
       failures.push('dist/' + fileName + ' is missing its book description for search engines');
     }
-    if (/^(?:authors|subjects|passage-room|teach|classic-literature|library|resources|study|explore|reading-routes|site-index|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
+    if (/^(?:authors|subjects|passage-room|classic-literature|library|resources|study|explore|reading-routes|site-index|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
       failures.push('dist/' + fileName + ' is missing its collection description for search engines');
     }
     if (/^passage-room\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-passage-schema')) {
@@ -770,7 +757,12 @@ if (fs.existsSync(distDir)) {
     failures.push('dist is missing its XML sitemap');
   } else {
     const sitemap = fs.readFileSync(sitemapFile, 'utf8');
-    const indexedPages = distHtmlFiles.filter(file => !/http-equiv="refresh"/i.test(fs.readFileSync(file, 'utf8'))).length;
+    const indexedPages = distHtmlFiles.filter(file => {
+      const html = fs.readFileSync(file, 'utf8');
+      const noindex = /<meta\b[^>]*\bname=["']robots["'][^>]*\bcontent=["'][^"']*\bnoindex\b/i.test(html) ||
+        /<meta\b[^>]*\bcontent=["'][^"']*\bnoindex\b[^"']*["'][^>]*\bname=["']robots["']/i.test(html);
+      return !/http-equiv="refresh"/i.test(html) && !noindex;
+    }).length;
     const sitemapEntries = countMatches(sitemap, /<url><loc>https:\/\/astorlibrary\.com\//g);
     if (sitemapEntries !== indexedPages) failures.push('The XML sitemap contains ' + sitemapEntries + ' pages but should contain ' + indexedPages);
     if (sitemap.includes('astorlibrary.co.uk')) failures.push('The XML sitemap points at the secondary domain');
@@ -781,6 +773,21 @@ if (fs.existsSync(distDir)) {
   const headersFile = path.join(distDir, '_headers');
   if (!fs.existsSync(headersFile)) {
     failures.push('dist is missing its static hosting headers');
+  }
+
+  for (const privateEntry of ['worker', 'supabase', 'tests', 'package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', 'AUTH_SETUP.md', '.dev.vars']) {
+    if (fs.existsSync(path.join(distDir, privateEntry))) failures.push('dist exposes private or deployment-only source: ' + privateEntry);
+  }
+  const presentationDirectory = path.join(distDir, 'assets', 'presentations');
+  if (fs.existsSync(presentationDirectory)) {
+    for (const deck of fs.readdirSync(presentationDirectory)) {
+      const deckDirectory = path.join(presentationDirectory, deck);
+      if (!fs.statSync(deckDirectory).isDirectory()) continue;
+      for (const file of fs.readdirSync(deckDirectory)) {
+        const slide = file.match(/^(\d+)\.png(?:\.part-\d{3})?$/);
+        if (slide && Number(slide[1]) > 3) failures.push('dist exposes protected slide asset: assets/presentations/' + deck + '/' + file);
+      }
+    }
   }
 }
 

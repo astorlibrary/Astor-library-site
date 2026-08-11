@@ -474,21 +474,7 @@ const passages = [
   }
 ];
 
-const teachingRooms = [
-  {
-    type: 'teaching',
-    typeLabel: 'Teaching room',
-    title: 'Teach Macbeth',
-    description: 'A complete teaching room with close-reading starts, a fifty-minute lesson, a three-lesson sequence, turning points and routes into Astor editions and free guides.',
-    href: '/teach/macbeth/',
-    image: '/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png',
-    imageAlt: 'Astor Library Macbeth cover',
-    relatedBooks: ['/books/macbeth/'],
-    search: 'Macbeth Shakespeare teaching lesson plan classroom close reading essay evidence ambition kingship guilt tragedy'
-  }
-];
-
-if (!books.length || !authors.length || !resources.length || !studyEditions.length || !collections.length || !subjects.length || !passages.length || !teachingRooms.length) {
+if (!books.length || !authors.length || !resources.length || !studyEditions.length || !collections.length || !subjects.length || !passages.length) {
   throw new Error('Discovery could not find every kind of content: ' + JSON.stringify({
     books: books.length,
     authors: authors.length,
@@ -496,12 +482,11 @@ if (!books.length || !authors.length || !resources.length || !studyEditions.leng
     studyEditions: studyEditions.length,
     collections: collections.length,
     subjects: subjects.length,
-    passages: passages.length,
-    teachingRooms: teachingRooms.length
+    passages: passages.length
   }));
 }
 
-const entries = passages.concat(teachingRooms, subjects, books, authors, resources, studyEditions, collections);
+const entries = passages.concat(subjects, books, authors, resources, studyEditions, collections);
 const index = {
   counts: {
     books: books.length,
@@ -511,7 +496,6 @@ const index = {
     studyEditions: studyEditions.length,
     collections: collections.length,
     passages: passages.length,
-    teachingRooms: teachingRooms.length,
     entries: entries.length
   },
   books: books,
@@ -520,8 +504,7 @@ const index = {
   resources: resources,
   studyEditions: studyEditions,
   collections: collections,
-  passages: passages,
-  teachingRooms: teachingRooms
+  passages: passages
 };
 
 fs.writeFileSync(path.join(root, 'assets/content-index.json'), JSON.stringify(index, null, 2) + '\n');
@@ -533,7 +516,6 @@ const typeCtas = {
   passage: 'Read with the notes',
   resource: 'Read the guide',
   study: 'View the edition',
-  teaching: 'Open the teaching room',
   subject: 'Open the subject guide'
 };
 
@@ -558,13 +540,13 @@ const entryCards = entries.map(function (entry) {
 const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
   '<title>Search the Catalogue | Astor Library</title>' +
-  '<meta name="description" content="Search Astor Library books, close readings, teaching rooms, writers, subject guides, free literature resources and study editions in one place.">' +
+  '<meta name="description" content="Search Astor Library books, close readings, writers, subject guides, free literature resources and study editions in one place.">' +
   '<link rel="stylesheet" href="/assets/styles.css"><style>.explore-paths{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:1050px){.explore-paths{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.explore-paths{grid-template-columns:1fr}}</style><script src="/assets/explore.js" defer></script>' +
   '</head><body>' + siteHeader() +
   '<main class="page-wrap explore-page">' +
-  '<section class="explore-hero"><div><p class="kicker">Books, passages, lessons, guides and editions</p><h1>Search the catalogue.</h1>' +
-  '<p class="deck">Search ' + books.length + ' books, ' + passages.length + ' close readings, ' + teachingRooms.length + ' teaching room, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions by title, writer, period, subject or resource type.</p></div>' +
-  '<aside class="explore-hero-note"><p>Use the search field for a title or subject. Use the filters to limit results to books, guides, study editions, authors, passages, teaching resources or collections.</p></aside></section>' +
+  '<section class="explore-hero"><div><p class="kicker">Books, passages, guides and editions</p><h1>Search the catalogue.</h1>' +
+  '<p class="deck">Search ' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions by title, writer, period, subject or resource type.</p></div>' +
+  '<aside class="explore-hero-note"><p>Use the search field for a title or subject. Use the filters to limit results to books, guides, study editions, authors, passages or collections.</p></aside></section>' +
   '<section class="explore-tools" aria-label="Search everything">' +
   '<label for="explore-search">What are you looking for?</label>' +
   '<div class="explore-search-row"><input id="explore-search" type="search" autocomplete="off" placeholder="Try Austen, tragedy, quotation or Gothic"><p id="explore-count" aria-live="polite">' + entries.length + ' results</p></div>' +
@@ -572,7 +554,6 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<button type="button" class="explore-filter is-active" data-filter="all" aria-pressed="true">Everything</button>' +
   '<button type="button" class="explore-filter" data-filter="book" aria-pressed="false">Books</button>' +
   '<button type="button" class="explore-filter" data-filter="passage" aria-pressed="false">Close readings</button>' +
-  '<button type="button" class="explore-filter" data-filter="teaching" aria-pressed="false">Teaching rooms</button>' +
   '<button type="button" class="explore-filter" data-filter="subject" aria-pressed="false">Subjects</button>' +
   '<button type="button" class="explore-filter" data-filter="author" aria-pressed="false">Writers</button>' +
   '<button type="button" class="explore-filter" data-filter="resource" aria-pressed="false">Free guides</button>' +
@@ -670,20 +651,15 @@ const passageLinks = passages
   .map(function (passage) { return '<a href="' + escapeHtml(passage.href) + '"><span>' + escapeHtml(passage.title) + '</span><small>' + escapeHtml(passage.typeLabel) + '</small></a>'; })
   .join('');
 
-const teachingLinks = teachingRooms
-  .map(function (room) { return '<a href="' + escapeHtml(room.href) + '"><span>' + escapeHtml(room.title) + '</span><small>' + escapeHtml(room.typeLabel) + '</small></a>'; })
-  .join('');
-
 const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-  '<title>Site Index | Astor Library</title><meta name="description" content="A complete, crawlable index of Astor Library books, close readings, teaching rooms, writers, subject guides, free guides, study editions and reading routes.">' +
+  '<title>Site Index | Astor Library</title><meta name="description" content="A complete, crawlable index of Astor Library books, close readings, writers, subject guides, free guides, study editions and reading routes.">' +
   '<link rel="stylesheet" href="/assets/styles.css"><style>' +
   '.site-index-quick{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 60px}.site-index-quick a{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;font-weight:800;color:var(--burgundy);border:1px solid var(--line);background:#fff8ef;padding:10px 13px;text-decoration:none}.index-group{border-top:1px solid var(--line);padding:38px 0 14px}.index-group h2{font-size:clamp(34px,5vw,58px);line-height:.95;letter-spacing:-.04em;margin:0 0 22px}.index-group h2 a{text-decoration:none}.index-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.index-links>a{display:flex;flex-direction:column;gap:6px;min-height:92px;border:1px solid var(--line);background:rgba(255,248,239,.86);padding:15px;text-decoration:none}.index-links span{font-size:21px;font-weight:700;line-height:1.08}.index-links small{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;color:var(--muted);line-height:1.35}@media(max-width:820px){.index-links{grid-template-columns:1fr}}' +
   '</style></head><body>' + siteHeader() +
-  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Complete directory</p><h1>Site index.</h1><p class="deck">Links to every book, close reading, teaching page, writer, subject guide, free resource, study edition and collection currently available from Astor Library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + passages.length + ' close readings, ' + teachingRooms.length + ' teaching page, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions.</strong> Use the catalogue search to filter these entries, or browse the sections below.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/passage-room/">Read a passage</a></div></aside></section>' +
-  '<nav class="site-index-quick" aria-label="Site index sections"><a href="#passages">Close readings</a><a href="#teaching-rooms">Teaching rooms</a><a href="#subjects">Subjects</a><a href="#writers">Writers</a><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="/about/">About Astor Library</a><a href="/editorial/">Editorial standards</a></nav>' +
+  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Complete directory</p><h1>Site index.</h1><p class="deck">Links to every book, close reading, writer, subject guide, free resource, study edition and collection currently available from Astor Library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions.</strong> Use the catalogue search to filter these entries, or browse the sections below.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/passage-room/">Read a passage</a></div></aside></section>' +
+  '<nav class="site-index-quick" aria-label="Site index sections"><a href="#passages">Close readings</a><a href="#subjects">Subjects</a><a href="#writers">Writers</a><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="/about/">About Astor Library</a><a href="/editorial/">Editorial standards</a></nav>' +
   '<section class="index-group" id="passages"><h2><a href="/passage-room/">The Passage Room</a></h2><div class="index-links">' + passageLinks + '</div></section>' +
-  '<section class="index-group" id="teaching-rooms"><h2><a href="/teach/">Teaching rooms</a></h2><div class="index-links">' + teachingLinks + '</div></section>' +
   '<section class="index-group" id="subjects"><h2><a href="/subjects/">Subject guides</a></h2><div class="index-links">' + subjectLinks + '</div></section>' +
   '<section class="index-group" id="writers"><h2><a href="/authors/">Writers</a></h2><div class="index-links">' + authorLinks + '</div></section>' +
   '<div id="books">' + collectionSections + '</div>' +

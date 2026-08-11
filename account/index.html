@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Account | Astor Library</title>
+<meta name="description" content="Sign in to Astor Library, continue learning resources and manage saved guides and account settings.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/assets/account.css">
+<script src="/assets/auth.js" defer></script>
+<script src="/assets/account.js" defer></script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt=""><span class="word">LIBRARY</span></a><nav class="nav" aria-label="Primary navigation"><a class="nav-link" href="/explore/">Explore</a><a class="nav-link" href="/library/">Books</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/resources/">Resources</a></nav></header>
+<main class="account-page">
+  <section class="account-intro"><p class="kicker" data-account-intro-kicker>Free resource access</p><h1 data-account-intro-title>Your Astor Library account.</h1><p data-account-intro-copy>Create one free account to continue beyond the public preview in Astor Library’s illustrated guides. Books, publishing information and ordinary reading pages remain public.</p></section>
+  <section class="account-shell" data-account-shell aria-label="Account access">
+    <div class="account-main">
+      <p class="account-loading" data-account-loading>Checking your account…</p>
+      <div data-account-forms hidden>
+        <div class="account-tabs" role="tablist" aria-label="Choose sign in or registration">
+          <button id="account-signin-tab" type="button" role="tab" data-account-mode="signin" aria-controls="account-signin-panel">Sign in</button>
+          <button id="account-register-tab" type="button" role="tab" data-account-mode="register" aria-controls="account-register-panel">Create account</button>
+        </div>
+        <section class="account-form" id="account-signin-panel" role="tabpanel" aria-labelledby="account-signin-tab" data-account-panel="signin">
+          <h2>Welcome back.</h2><p>Sign in with the email address used for your account.</p>
+          <form data-sign-in-form novalidate>
+            <label for="signin-email">Email address</label><input id="signin-email" name="email" type="email" autocomplete="email" required>
+            <label for="signin-password">Password</label><input id="signin-password" name="password" type="password" autocomplete="current-password" minlength="8" required>
+            <p class="account-help"><a href="/account/recover/">Forgot your password?</a></p>
+            <div class="account-turnstile" data-turnstile-action="signin" aria-label="Account security check"></div>
+            <button class="account-submit" type="submit">Sign in</button>
+            <p class="account-status" data-form-status role="alert" tabindex="-1" hidden></p>
+          </form>
+        </section>
+        <section class="account-form" id="account-register-panel" role="tabpanel" aria-labelledby="account-register-tab" data-account-panel="register" hidden>
+          <h2>Create a free account.</h2><p>Your email is used for sign-in, account messages and resource access. Marketing email is optional.</p>
+          <form data-register-form novalidate>
+            <label for="register-email">Email address</label><input id="register-email" name="email" type="email" autocomplete="email" required>
+            <label for="register-password">Password</label><input id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" aria-describedby="password-guidance" required>
+            <p class="account-help" id="password-guidance">Use at least 8 characters. A password manager is recommended.</p>
+            <label for="register-password-confirm">Confirm password</label><input id="register-password-confirm" name="password_confirm" type="password" autocomplete="new-password" minlength="8" required>
+            <label class="account-consent" for="marketing-consent"><input id="marketing-consent" name="marketing_consent" type="checkbox"><span>I would like to receive occasional emails from Astor Library about new books, resources and updates. I can withdraw this choice at any time.</span></label>
+            <p class="account-help">The marketing box is optional and is not selected for you. See the <a href="/privacy/">account and email privacy notice</a>.</p>
+            <div class="account-turnstile" data-turnstile-action="signup" aria-label="Account security check"></div>
+            <button class="account-submit" type="submit">Create account</button>
+            <p class="account-status" data-form-status role="alert" tabindex="-1" hidden></p>
+          </form>
+        </section>
+      </div>
+      <section class="account-signed-in" data-account-signed-in aria-labelledby="my-account-title" hidden>
+        <header class="account-dashboard-heading">
+          <p class="kicker">Signed in</p>
+          <h2 id="my-account-title">My Account</h2>
+          <p>Return to resources you have opened or saved, then manage the essentials of your Astor Library account.</p>
+          <p class="account-dashboard-email">Signed in as <strong data-account-email></strong></p>
+        </header>
+
+        <p class="account-library-status" data-library-status role="status" aria-live="polite">Loading your resource library…</p>
+
+        <section class="account-library-section" aria-labelledby="continue-learning-title">
+          <header><p class="kicker">Pick up where you left off</p><h3 id="continue-learning-title">Continue Learning</h3><p>Open a recently read guide at the last slide you reached.</p></header>
+          <div class="account-resource-grid account-resource-grid-featured" data-continue-list></div>
+          <p class="account-empty" data-continue-empty hidden>Open an illustrated resource and your place will appear here.</p>
+        </section>
+
+        <section class="account-library-section" aria-labelledby="saved-resources-title">
+          <header><p class="kicker">Your reading list</p><h3 id="saved-resources-title">Saved Resources</h3><p>Keep useful guides together for another lesson or reading session.</p></header>
+          <div class="account-resource-grid" data-saved-list></div>
+          <p class="account-empty" data-saved-empty hidden>You have not saved a resource yet. Use <strong>Save resource</strong> in any illustrated guide to add it here.</p>
+          <div class="account-load-more"><button class="account-secondary" type="button" data-load-more-saved hidden>Load more saved resources</button></div>
+        </section>
+
+        <section class="account-library-section" aria-labelledby="recently-viewed-title">
+          <header><p class="kicker">Reading history</p><h3 id="recently-viewed-title">Recently Viewed</h3><p>Your latest illustrated resources, ordered by the time you last opened them.</p></header>
+          <div class="account-recent-list" data-recent-list></div>
+          <p class="account-empty" data-recent-empty hidden>Your recently viewed resources will appear here.</p>
+        </section>
+
+        <section class="account-library-section account-settings-section" aria-labelledby="account-settings-title">
+          <header><p class="kicker">Privacy and access</p><h3 id="account-settings-title">Account Settings</h3><p>Manage your sign-in email, marketing choice, password access and account. No public profile is created.</p></header>
+          <div class="account-settings-grid">
+            <form class="account-form account-setting-card" data-consent-form>
+              <h4>Astor Library email</h4>
+              <label class="account-toggle" for="current-marketing-consent"><span><strong>Occasional news and updates</strong><small>Receive email about new books, resources and Astor Library updates. This is optional.</small></span><input id="current-marketing-consent" data-current-consent name="marketing_consent" type="checkbox"><i aria-hidden="true"></i></label>
+              <button class="account-submit" type="submit">Save email choice</button>
+              <p class="account-status" data-form-status role="alert" tabindex="-1" hidden></p>
+            </form>
+            <form class="account-form account-setting-card" data-email-change-form>
+              <h4>Sign-in email</h4>
+              <p>Change the address used to sign in. For security, confirm the change through the email messages before it takes effect.</p>
+              <label for="account-new-email">New email address</label>
+              <input id="account-new-email" name="email" type="email" autocomplete="email" required>
+              <label for="account-current-password">Current password</label>
+              <input id="account-current-password" name="password" type="password" autocomplete="current-password" minlength="8" required>
+              <button class="account-submit" type="submit">Change sign-in email</button>
+              <p class="account-status" data-form-status role="alert" tabindex="-1" hidden></p>
+            </form>
+            <section class="account-setting-card" aria-labelledby="account-access-title">
+              <h4 id="account-access-title">Account access</h4>
+              <p>Use a recovery email to choose a new password, or sign out on this device.</p>
+              <div class="account-actions"><a class="account-secondary" href="/account/recover/">Reset password</a><button class="account-secondary" type="button" data-auth-signout>Sign out</button></div>
+            </section>
+          </div>
+          <details class="account-danger-zone">
+            <summary>Delete this account</summary>
+            <div class="account-danger-content">
+              <h4>Delete your account and resource library</h4>
+              <p>This permanently removes the account, saved resources, recent-resource activity and marketing choice. It cannot be undone.</p>
+              <form class="account-delete-form" data-delete-account-form novalidate>
+                <label for="delete-account-password">Current password</label>
+                <input id="delete-account-password" name="password" type="password" autocomplete="current-password" minlength="8" required>
+                <label for="delete-account-confirmation">Type <strong>DELETE</strong> to confirm</label>
+                <input id="delete-account-confirmation" name="confirmation" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" pattern="DELETE" aria-describedby="delete-account-guidance" required>
+                <p class="account-help" id="delete-account-guidance">The confirmation must be the word DELETE in capital letters.</p>
+                <button class="account-danger-button" type="submit" disabled>Delete account permanently</button>
+                <p class="account-status" data-form-status role="alert" tabindex="-1" hidden></p>
+              </form>
+            </div>
+          </details>
+        </section>
+      </section>
+    </div>
+    <aside class="account-aside"><p class="kicker">What stays public</p><h2>Accounts are only for complete resources.</h2><p>You can browse books, authors, publishing information, subject guides, passages, About pages and the rest of the public site without signing in.</p><ul><li>Preview the first three slides of each illustrated resource.</li><li>Continue through the full resource after sign-in.</li><li>Marketing consent stays separate from account access.</li></ul></aside>
+  </section>
+</main>
+<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books, study editions and literature resources.</p></div><div class="footer-links"><a href="/resources/">Resources</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Support</a></div></footer>
+</body>
+</html>

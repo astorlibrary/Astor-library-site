@@ -1,6 +1,8 @@
 // Add future exported-slide presentations here. The folder contains 1.png,
 // 2.png, 3.png and so on; `folder` must end in a slash.
-export const presentations = {
+export const DEFAULT_PRESENTATION_PREVIEW_SLIDES = 3;
+
+const presentationRecords = {
   'charles-dickens-christmas': {
     title: 'Charles Dickens and Christmas',
     folder: '/assets/presentations/charles-dickens-christmas/',
@@ -177,6 +179,17 @@ export const presentations = {
   'dracula-gender-roles': { title: 'Dracula: Gender Roles', folder: '/assets/presentations/dracula-gender-roles/', backdrop: '/assets/presentation-backdrops/dracula-gender.jpg', slideCount: 16 }
 };
 
+export const presentations = Object.freeze(Object.fromEntries(
+  Object.entries(presentationRecords).map(([slug, presentation]) => [
+    slug,
+    Object.freeze({
+      ...presentation,
+      slug,
+      previewSlides: presentation.previewSlides ?? DEFAULT_PRESENTATION_PREVIEW_SLIDES
+    })
+  ])
+));
+
 export function getPresentation(slug) {
-  return presentations[slug] || presentations[Object.keys(presentations)[0]];
+  return typeof slug === 'string' ? presentations[slug] || null : null;
 }
