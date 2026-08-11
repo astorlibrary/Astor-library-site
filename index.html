@@ -14,20 +14,29 @@
   <div class="astor-header-identity">
     <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
     <p>Independent editions of classic literature</p>
-    <a class="astor-header-search" href="/explore/">Search the catalogue <span aria-hidden="true">&rarr;</span></a>
     <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span></button>
   </div>
   <nav class="nav astor-primary-nav" id="site-navigation" aria-label="Primary navigation">
-    <a class="nav-link" href="/library/">Catalogue</a>
-    <a class="nav-link" href="/shakespeare/">Shakespeare</a>
-    <a class="nav-link" href="/classic-literature/">Periods</a>
-    <a class="nav-link" href="/authors/">Writers</a>
-    <a class="nav-link" href="/subjects/">Subjects</a>
-    <a class="nav-link" href="/resources/">Free library</a>
-    <a class="nav-link" href="/study/">Study editions</a>
-    <a class="nav-link" href="/teach/">Teach</a>
-    <a class="nav-link" href="/passage-room/">Passage Room</a>
-    <a class="nav-link nav-link-support" href="mailto:support@astorlibrary.com">Support</a>
+    <div class="astor-primary-links">
+      <a class="nav-link" href="/library/">Books</a>
+      <details class="astor-browse-menu">
+        <summary>Browse</summary>
+        <div class="astor-browse-panel">
+          <a href="/shakespeare/"><b>Shakespeare</b><span>Plays, poems and editions</span></a>
+          <a href="/classic-literature/"><b>Periods</b><span>Collections across literary history</span></a>
+          <a href="/authors/"><b>Writers</b><span>Authors and their Astor editions</span></a>
+          <a href="/subjects/"><b>Subjects</b><span>Genres, themes and contexts</span></a>
+          <a href="/reading-routes/"><b>Reading routes</b><span>Books connected by a question</span></a>
+        </div>
+      </details>
+      <a class="nav-link" href="/resources/">Resources</a>
+      <a class="nav-link" href="/study/">Study editions</a>
+      <a class="nav-link" href="/passage-room/">Passage Room</a>
+    </div>
+    <div class="astor-nav-utilities">
+      <a class="astor-utility-link" href="/explore/">Search</a>
+      <a class="astor-utility-link astor-account-link" href="/account/" data-auth-link>Sign in</a>
+    </div>
   </nav>
 </header>
 
@@ -35,7 +44,7 @@
   <section class="seasonal-feature" aria-labelledby="seasonal-title">
     <div class="seasonal-feature-heading">
       <p>Seasonal reading</p>
-      <h2 id="seasonal-title">Summer at Astor</h2>
+      <p class="seasonal-title" id="seasonal-title">Summer at Astor</p>
       <time datetime="2026-07-06/2026-08-16">6 July–16 August</time>
       <a href="/library/">Browse the complete catalogue <span aria-hidden="true">&rarr;</span></a>
     </div>
@@ -75,7 +84,7 @@
         <a href="/library/">Browse the editions <span aria-hidden="true">&rarr;</span></a>
         <a href="/resources/">Read a free guide <span aria-hidden="true">&rarr;</span></a>
         <a href="/study/">Find a study edition <span aria-hidden="true">&rarr;</span></a>
-        <a href="/teach/">Plan a lesson <span aria-hidden="true">&rarr;</span></a>
+        <a href="/passage-room/">Read an annotated passage <span aria-hidden="true">&rarr;</span></a>
       </nav>
     </div>
 
@@ -98,13 +107,12 @@
   </section>
 
   <section class="catalogue-index" aria-labelledby="catalogue-index-title">
-    <header class="catalogue-section-heading"><p class="catalogue-kicker">Publications and resources</p><h2 id="catalogue-index-title">What Astor Library publishes.</h2><p>Browse complete texts, study editions, free guides, teaching material and annotated passages.</p></header>
+    <header class="catalogue-section-heading"><p class="catalogue-kicker">Publications and resources</p><h2 id="catalogue-index-title">What Astor Library publishes.</h2><p>Browse complete texts, study editions, free guides and annotated passages.</p></header>
     <div class="catalogue-index-rows">
       <a href="/library/"><span class="catalogue-row-number">01</span><div><h3>Astor Editions</h3><p>Complete novels, plays and poems. Features vary by title and include introductions, summaries, line or chapter notes, context and critical material.</p></div><strong>73 books</strong><b aria-hidden="true">&rarr;</b></a>
       <a href="/shakespeare/"><span class="catalogue-row-number">02</span><div><h3>Shakespeare</h3><p>All thirty-seven plays and two narrative poems, with scene summaries, line numbering, explanatory notes and material on sources and performance.</p></div><strong>41 editions</strong><b aria-hidden="true">&rarr;</b></a>
       <a href="/resources/"><span class="catalogue-row-number">03</span><div><h3>The free library</h3><p>Guides and booklets you can read on the site and use without buying an edition.</p></div><strong>40 guides</strong><b aria-hidden="true">&rarr;</b></a>
       <a href="/study/"><span class="catalogue-row-number">04</span><div><h3>Study editions</h3><p>Scene or chapter summaries, context, key quotations, critical interpretations, model paragraphs and essay support.</p></div><strong>40 editions</strong><b aria-hidden="true">&rarr;</b></a>
-      <a href="/teach/"><span class="catalogue-row-number">05</span><div><h3>Teaching resources</h3><p>Short tasks, complete lessons, multi-lesson sequences, annotated passages and links to relevant editions and free guides.</p></div><strong>Open Macbeth</strong><b aria-hidden="true">&rarr;</b></a>
     </div>
   </section>
 
@@ -131,11 +139,11 @@
   </section>
 
   <section class="catalogue-reading-room" aria-labelledby="reading-room-title">
-    <div class="catalogue-reading-copy"><p class="catalogue-kicker">Free reading and teaching material</p><h2 id="reading-room-title">Annotated passages, guides and lesson plans.</h2><blockquote>“Trifles light as air / Are to the jealous confirmations strong / As proofs of holy writ.”</blockquote><p>This close reading explains how Iago turns the handkerchief into apparent proof and links each claim to the wording of the passage.</p><a href="/passage-room/othello-trifles-proof/">Read the annotated passage <span aria-hidden="true">&rarr;</span></a></div>
+    <div class="catalogue-reading-copy"><p class="catalogue-kicker">Free reading and teaching material</p><h2 id="reading-room-title">Annotated passages, guides and study material.</h2><blockquote>“Trifles light as air / Are to the jealous confirmations strong / As proofs of holy writ.”</blockquote><p>This close reading explains how Iago turns the handkerchief into apparent proof and links each claim to the wording of the passage.</p><a href="/passage-room/othello-trifles-proof/">Read the annotated passage <span aria-hidden="true">&rarr;</span></a></div>
     <div class="catalogue-reading-routes">
       <a href="/resources/winters-tale/complete-study-guide/"><img src="/assets/home/winters-tale-guide.jpg" alt="The Winter's Tale free guide cover" loading="lazy" width="480" height="720"><span><small>Free guide · read online</small><strong><em>The Winter’s Tale</em></strong><b>Open the guide &rarr;</b></span></a>
       <a href="/study/rime-of-the-ancient-mariner/"><img src="/assets/home/rime-study.jpg" alt="The Rime of the Ancient Mariner study edition cover" loading="lazy" width="480" height="720"><span><small>New study edition</small><strong><em>The Rime of the Ancient Mariner</em></strong><b>Read the study page &rarr;</b></span></a>
-      <a href="/teach/macbeth/"><img src="/assets/home/macbeth.jpg" alt="Macbeth Astor Library edition cover" loading="lazy" width="480" height="720"><span><small>New teaching room</small><strong><em>Macbeth</em></strong><b>Plan a lesson &rarr;</b></span></a>
+      <a href="/resources/macbeth/quick-guide/"><img src="/assets/home/macbeth.jpg" alt="Macbeth Astor Library edition cover" loading="lazy" width="480" height="720"><span><small>Free online guide</small><strong><em>Macbeth</em></strong><b>Open the guide &rarr;</b></span></a>
     </div>
   </section>
 
@@ -148,8 +156,8 @@
 <footer class="site-footer astor-global-footer">
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
   <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
-  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/teach/">Teaching rooms</a></div>
-  <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/site-index/">Site index</a><a href="mailto:support@astorlibrary.com">support@astorlibrary.com</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div>
+  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
+  <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact &amp; support</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>
 </body>
 </html>

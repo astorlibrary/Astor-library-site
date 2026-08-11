@@ -1,0 +1,23 @@
+{
+  "name": "astor-library-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Astor Library website, resource viewer and account access layer",
+  "scripts": {
+    "build": "node scripts/build-static.js",
+    "check": "node scripts/check-site.js",
+    "test": "node --test tests/*.test.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "stage:presentations": "node scripts/stage-protected-presentations.js",
+    "export:marketing": "node scripts/export-marketing-consent.js"
+  },
+  "dependencies": {
+    "@supabase/ssr": "0.12.4",
+    "@supabase/supabase-js": "2.112.3",
+    "cookie": "2.0.1"
+  },
+  "devDependencies": {
+    "wrangler": "4.120.1"
+  }
+}
