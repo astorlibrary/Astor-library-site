@@ -137,7 +137,7 @@ const resources = [
     titleHtml: '<em>Pride &amp; Prejudice</em>: Key Quotes Revision',
     description: 'Revise key quotations from Austen’s novel with concise routes into character, relationships, class and judgement.',
     image: 'Pride & Prejudice: Key Quotes Revision.png',
-    url: 'https://pride-prejudice-key-quot-62oty5x.gamma.site',
+    url: '/presentations/?presentation=pride-prejudice-key-quotes',
     relatedBooks: ['/books/pride-and-prejudice/'],
     tags: ['Pride and Prejudice', 'Key quotations']
   },
@@ -241,7 +241,7 @@ const resources = [
     titleHtml: '<em>Wide Sargasso Sea</em> &amp; Post-Colonialism',
     description: 'Read Rhys’s novel through empire, emancipation, race, language, displacement and contested identity.',
     image: 'Wide-Sargasso-Sea-and-Post-Colonialism.png',
-    url: 'https://wide-sargasso-sea-post-c-3jg03rl.gamma.site',
+    url: '/presentations/?presentation=wide-sargasso-sea-study-guide',
     tags: ['Wide Sargasso Sea', 'Post-colonialism']
   },
   {
@@ -251,7 +251,7 @@ const resources = [
     titleHtml: '<em>Wide Sargasso Sea</em> — Part 2',
     description: 'Follow Rochester and Antoinette through the shifting narration, mistrust and power that unravel their marriage.',
     image: 'Wide-Sargasso-Sea-Part-2-Rochester-Antoinette-and-the-Unraveling-of-a-Marriage.png',
-    url: 'https://wide-sargasso-sea-part-2-ahq6zsi.gamma.site',
+    url: '/presentations/?presentation=wide-sargasso-sea-study-guide',
     tags: ['Wide Sargasso Sea', 'Part 2']
   },
   {
