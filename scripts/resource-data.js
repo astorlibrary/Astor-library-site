@@ -17,7 +17,7 @@ const resources = [
     titleHtml: 'Gender, Power &amp; Shakespeare',
     description: 'Compare Bhardwaj’s film adaptations with Othello and Macbeth through gender, objects, bodies and power.',
     image: '04_gender_power_shakespeare.png',
-    url: 'https://gender-power-shakespeare-tumoq6d.gamma.site',
+    url: '/presentations/?presentation=gender-power-omkara-maqbool',
     legacyRoute: '/resources/shakespeare/gender-power-omkara-maqbool/',
     relatedBooks: ['/books/othello/', '/books/macbeth/'],
     tags: ['Omkara and Maqbool', 'Film adaptation']
@@ -82,7 +82,7 @@ const resources = [
     titleHtml: '<em>King Lear</em>: Summary Guide',
     description: 'Follow the double plot through power, family, sight, madness, suffering and judgement.',
     image: 'King Lear Summary.png',
-    url: 'https://act-1-scene-1-4ydkkxl.gamma.site',
+    url: '/presentations/?presentation=king-lear-summary-analysis',
     legacyRoute: '/resources/king-lear/summary-guide/',
     relatedBooks: ['/books/king-lear/'],
     tags: ['King Lear', 'Summary']
@@ -191,7 +191,7 @@ const resources = [
     titleHtml: '<em>Dracula</em>: Gender Roles',
     description: 'Examine desire, conduct, the New Woman, masculinity and late-Victorian anxiety in Stoker’s novel.',
     image: 'Dracula- Gender Roles.png',
-    url: 'https://dracula-gender-roles-kywv61d.gamma.site',
+    url: '/presentations/?presentation=dracula-gender-roles',
     legacyRoute: '/resources/dracula/gender-roles/',
     relatedBooks: ['/books/dracula/'],
     tags: ['Dracula', 'Gender']
@@ -232,7 +232,7 @@ const resources = [
     titleHtml: '<em>Wide Sargasso Sea</em>: A Study Guide',
     description: 'A clear route through Rhys’s novel, its three-part structure, principal voices, settings and central concerns.',
     image: 'Wide-Sargasso-Sea-A-Study-Guide.png',
-    url: 'https://wide-sargasso-sea-a-stud-dx76kvz.gamma.site',
+    url: '/presentations/?presentation=wide-sargasso-sea-study-guide',
     tags: ['Wide Sargasso Sea', 'Study guide']
   },
   {
@@ -260,7 +260,7 @@ const resources = [
     titleHtml: '<em>Wide Sargasso Sea</em> — Part 3 Summary &amp; Analysis',
     description: 'Read the final section through confinement, memory, dream, fire and its return to Jane Eyre.',
     image: 'Wide-Sargasso-Sea-Part-3-Summary-and-Analysis.png',
-    url: 'https://wide-sargasso-sea-part-3-9amlw3i.gamma.site',
+    url: '/presentations/?presentation=wide-sargasso-sea-part-3',
     tags: ['Wide Sargasso Sea', 'Part 3']
   },
   {
@@ -302,7 +302,7 @@ const resources = [
     titleHtml: 'Biography of Harper Lee (1926–2016)',
     description: 'Meet the writer of To Kill a Mockingbird through her Alabama childhood, New York years and literary career.',
     image: 'Biography of Harper Lee.png',
-    url: 'https://biography-of-lee-harper--6zdzg8h.gamma.site',
+    url: '/presentations/?presentation=biography-harper-lee',
     tags: ['Harper Lee', 'Biography']
   },
   {
@@ -312,7 +312,7 @@ const resources = [
     titleHtml: '<em>To Kill a Mockingbird</em>: Character List &amp; Major Themes',
     description: 'Keep the novel’s principal characters clear and connect them to justice, prejudice, childhood and moral courage.',
     image: 'To Kill a Mockingbird Character List & Major Themes.png',
-    url: 'https://to-kill-a-mockingbird-fk96i8f.gamma.site',
+    url: '/presentations/?presentation=to-kill-a-mockingbird-characters',
     tags: ['To Kill a Mockingbird', 'Characters and themes']
   },
   {
@@ -321,7 +321,7 @@ const resources = [
     titleHtml: 'Turning Point in <em>The Great Gatsby</em>',
     description: 'Examine the scene and decisions that turn Gatsby’s recovered dream towards exposure and collapse.',
     image: 'Turning-Point-in-The-Great-Gatsby.png',
-    url: 'https://turning-point-in-the-gre-hrmddv5.gamma.site',
+    url: '/presentations/?presentation=turning-point-great-gatsby',
     tags: ['The Great Gatsby', 'Turning point']
   },
   {
@@ -330,7 +330,7 @@ const resources = [
     titleHtml: 'Biography of F. Scott Fitzgerald',
     description: 'Place Fitzgerald’s life, writing, reputation and Jazz Age career beside the novel for which he is best known.',
     image: 'Biography-of-F-Scott-Fitzgerald.png',
-    url: 'https://biography-of-f-scott-fit-mod3wix.gamma.site',
+    url: '/presentations/?presentation=biography-f-scott-fitzgerald',
     tags: ['F. Scott Fitzgerald', 'Biography']
   },
   {
@@ -340,7 +340,7 @@ const resources = [
     titleHtml: 'Corruption, the American Dream, Symbolism, and Illusion in <em>The Great Gatsby</em>',
     description: 'Connect the novel’s social corruption and illusions to its recurring symbols and broken versions of success.',
     image: 'Corruption-the-American-Dream-Symbolism-and-Illusion-in-The-Great-Gatsby.png',
-    url: 'https://corruption-the-american--hhs9alp.gamma.site',
+    url: '/presentations/?presentation=gatsby-corruption-symbolism-illusion',
     tags: ['The Great Gatsby', 'Themes and symbols']
   },
   {
@@ -350,7 +350,7 @@ const resources = [
     titleHtml: 'Death of a Character &amp; Important Relationships in <em>The Great Gatsby</em>',
     description: 'Study a crucial death through the relationships, loyalties and failures that prepare for it.',
     image: 'Death-of-a-Character-and-Important-Relationships-in-The-Great-Gatsby.png',
-    url: 'https://death-of-a-character-imp-cv6a30z.gamma.site',
+    url: '/presentations/?presentation=gatsby-death-relationships',
     tags: ['The Great Gatsby', 'Relationships']
   },
   {
@@ -360,7 +360,7 @@ const resources = [
     titleHtml: '<em>The Great Gatsby</em> Essay Plan',
     description: 'Build an essay that connects setting and symbolism to Fitzgerald’s treatment of the American Dream.',
     image: 'Great-Gatsby-Essay-Plan-Setting-Symbolism-and-the-American-Dream.png',
-    url: 'https://great-gatsby-essay-plan--vuql20z.gamma.site',
+    url: '/presentations/?presentation=gatsby-essay-plan',
     tags: ['The Great Gatsby', 'Essay plan']
   },
   {
@@ -369,7 +369,7 @@ const resources = [
     titleHtml: 'Admiration for Gatsby in <em>The Great Gatsby</em>',
     description: 'Test Nick’s admiration against Gatsby’s hope, reinvention, deception and moral choices.',
     image: 'Admiration-for-Gatsby-in-The-Great-Gatsby.png',
-    url: 'https://admiration-for-gatsby-in-1vuc0qs.gamma.site',
+    url: '/presentations/?presentation=admiration-for-gatsby',
     tags: ['The Great Gatsby', 'Gatsby']
   },
   {
@@ -378,7 +378,7 @@ const resources = [
     titleHtml: 'Things We Admire About Gatsby',
     description: 'A focused revision resource on Gatsby’s hope, loyalty, imagination and capacity for self-creation.',
     image: 'THINGS-WE-ADMIRE-ABOUT-GATSBY.png',
-    url: 'https://things-we-admire-about-g-bga59ap.gamma.site',
+    url: '/presentations/?presentation=things-we-admire-gatsby',
     tags: ['The Great Gatsby', 'Character']
   },
   {
@@ -387,7 +387,7 @@ const resources = [
     titleHtml: '<em>The Great Gatsby</em>: Character Study Guide',
     description: 'Review the novel’s central characters, their relationships and the values revealed by their choices.',
     image: 'The-Great-Gatsby-Character-Study-Guide.png',
-    url: 'https://the-great-gatsby-charact-g78fiqf.gamma.site',
+    url: '/presentations/?presentation=great-gatsby-character-study',
     tags: ['The Great Gatsby', 'Characters']
   },
   {
@@ -396,7 +396,7 @@ const resources = [
     titleHtml: '<em>The Great Gatsby</em>: Corruption, Illusion &amp; the American Dream',
     description: 'Read the novel’s wealth, carelessness and self-invention as a critique of national promise.',
     image: 'The-Great-Gatsby-Corruption-Illusion-and-the-American-Dream.png',
-    url: '/presentations/?presentation=great-gatsby-corruption-illusion',
+    url: '/presentations/?presentation=great-gatsby-corruption-illusion-v2',
     tags: ['The Great Gatsby', 'American Dream']
   },
   {
@@ -405,7 +405,7 @@ const resources = [
     titleHtml: '<em>The Great Gatsby</em>: Notes &amp; Critical Reading',
     description: 'Develop close reading of Fitzgerald’s narration, imagery, structure and critical interpretations.',
     image: 'The-Great-Gatsby-Notes-and-Critical-Reading.png',
-    url: 'https://the-great-gatsby-notes-c-bfksz4c.gamma.site',
+    url: '/presentations/?presentation=great-gatsby-notes-critical-reading',
     tags: ['The Great Gatsby', 'Critical reading']
   }
 ];
