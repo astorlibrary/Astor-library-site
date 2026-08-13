@@ -147,16 +147,6 @@ input:focus-visible {
   text-wrap: balance;
 }
 
-.seasonal-feature-heading time {
-  display: block;
-  margin-bottom: 42px;
-  padding: 18px 0;
-  border-top: 1px solid rgba(33, 29, 26, 0.32);
-  border-bottom: 1px solid rgba(33, 29, 26, 0.32);
-  color: var(--catalogue-ink);
-  font: 800 clamp(18px, 2.1vw, 27px)/1.2 var(--catalogue-sans);
-}
-
 .seasonal-feature-heading > a {
   min-height: 48px;
   width: max-content;
@@ -1018,12 +1008,6 @@ input:focus-visible {
     margin-bottom: 23px;
     font-size: clamp(65px, 20vw, 82px);
     line-height: 0.79;
-  }
-
-  .seasonal-feature-heading time {
-    margin-bottom: 25px;
-    padding: 14px 0;
-    font-size: 18px;
   }
 
   .seasonal-feature-heading > a {

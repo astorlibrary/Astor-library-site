@@ -263,3 +263,14 @@ test('saved pagination is deterministic and error responses preserve SSR cookie 
   assert.match(source, /const apply = requestResponseAppliers\.get\(request\)[\s\S]*return apply \? apply\(response\) : response/);
   assert.match(source, /return client \? client\.apply\(missing\) : missing/);
 });
+
+test('mobile account security waits for Turnstile and uses its compact layout when needed', () => {
+  const accountSource = fs.readFileSync(new URL('../assets/account.js', import.meta.url), 'utf8');
+  const accountStyles = fs.readFileSync(new URL('../assets/account.css', import.meta.url), 'utf8');
+
+  assert.match(accountSource, /callback:\s*token\s*=>[\s\S]*settleSecurityWait\(state, state\.token\)/);
+  assert.match(accountSource, /await waitForSecurityToken\(security\.state\)/);
+  assert.match(accountSource, /availableWidth > 0 && availableWidth < 300 \? 'compact' : 'flexible'/);
+  assert.doesNotMatch(accountSource, /Complete the security check and try again\./);
+  assert.match(accountStyles, /\.account-turnstile\s*\{[\s\S]*justify-content:\s*center/);
+});

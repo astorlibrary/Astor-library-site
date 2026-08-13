@@ -4,7 +4,8 @@
 
   let securityConfigPromise = null;
   let turnstileScriptPromise = null;
-  const turnstileWidgets = new WeakMap();
+  const turnstileStates = new WeakMap();
+  const SECURITY_WAIT_MS = 120_000;
 
   function safeNext(value, fallback = '/resources/') {
     if (!value || !value.startsWith('/') || value.startsWith('//')) return fallback;
@@ -18,10 +19,20 @@
 
   function setStatus(element, message, kind = 'status') {
     if (!element) return;
+    delete element.dataset.statusSource;
     element.textContent = message;
     element.dataset.kind = kind;
     element.hidden = !message;
     if (message && kind === 'error') element.focus();
+  }
+
+  function setSecurityStatus(element, message, kind = 'status') {
+    setStatus(element, message, kind);
+    if (element && message) element.dataset.statusSource = 'security';
+  }
+
+  function clearSecurityStatus(element) {
+    if (element?.dataset.statusSource === 'security') setStatus(element, '');
   }
 
   function submitState(form, busy) {
@@ -29,6 +40,42 @@
     if (!button) return;
     button.disabled = busy;
     button.setAttribute('aria-busy', String(busy));
+  }
+
+  function settleSecurityWait(state, token) {
+    if (!state.resolveToken) return;
+    window.clearTimeout(state.waitTimer);
+    const resolve = state.resolveToken;
+    state.resolveToken = null;
+    state.waitTimer = null;
+    state.tokenPromise = null;
+    resolve(token || null);
+  }
+
+  function refreshSecurity(state) {
+    if (!state?.turnstile || state.widget === undefined) return;
+    window.setTimeout(() => {
+      try {
+        state.turnstile.reset(state.widget);
+      } catch {
+        // A concurrent automatic refresh may already have reset the widget.
+      }
+    }, 0);
+  }
+
+  function waitForSecurityToken(state) {
+    if (state.token) return Promise.resolve(state.token);
+    if (state.tokenPromise) return state.tokenPromise;
+    state.tokenPromise = new Promise(resolve => {
+      state.resolveToken = resolve;
+      state.waitTimer = window.setTimeout(() => {
+        state.tokenPromise = null;
+        state.resolveToken = null;
+        state.waitTimer = null;
+        resolve(null);
+      }, SECURITY_WAIT_MS);
+    });
+    return state.tokenPromise;
   }
 
   function securityConfig() {
@@ -63,50 +110,119 @@
     const container = form?.querySelector('[data-turnstile-action]');
     if (!container) return { required: false };
     const status = form.querySelector('[data-form-status]');
-    try {
+    let state = turnstileStates.get(form);
+    if (!state) {
+      state = {
+        required: true,
+        preparing: null,
+        turnstile: null,
+        widget: undefined,
+        token: '',
+        tokenPromise: null,
+        resolveToken: null,
+        waitTimer: null
+      };
+      turnstileStates.set(form, state);
+    }
+    if (state.required === false) return { required: false, state };
+    if (state.widget !== undefined && state.turnstile) {
+      return { required: true, turnstile: state.turnstile, state };
+    }
+    if (state.preparing) return state.preparing;
+
+    const preparing = (async () => {
       const config = await securityConfig();
       if (!config.turnstileRequired) {
         container.hidden = true;
-        return { required: false };
+        state.required = false;
+        return { required: false, state };
       }
       if (!config.turnstileSiteKey) throw new Error('The account security check has not been configured yet.');
       container.hidden = false;
       const turnstile = await loadTurnstile();
-      if (!turnstileWidgets.has(form)) {
-        const widget = turnstile.render(container, {
+      if (!turnstile || typeof turnstile.render !== 'function') {
+        throw new Error('The account security check could not be loaded.');
+      }
+      state.turnstile = turnstile;
+      if (state.widget === undefined) {
+        const availableWidth = Number(container.getBoundingClientRect?.().width || 0);
+        state.widget = turnstile.render(container, {
           sitekey: config.turnstileSiteKey,
           action: container.dataset.turnstileAction,
-          size: 'flexible',
+          size: availableWidth > 0 && availableWidth < 300 ? 'compact' : 'flexible',
           theme: 'light',
-          'error-callback': () => setStatus(status, 'The security check could not be completed. Try again.', 'error'),
-          'expired-callback': () => setStatus(status, 'The security check expired. Complete it again.', 'error')
+          callback: token => {
+            state.token = typeof token === 'string' ? token : '';
+            if (!state.token) return;
+            clearSecurityStatus(status);
+            settleSecurityWait(state, state.token);
+          },
+          'error-callback': () => {
+            state.token = '';
+            setSecurityStatus(status, 'The security check could not be completed. It will retry automatically.', 'error');
+          },
+          'expired-callback': () => {
+            state.token = '';
+            setSecurityStatus(status, 'The security check expired. Complete it again.', 'error');
+            refreshSecurity(state);
+          },
+          'timeout-callback': () => {
+            state.token = '';
+            setSecurityStatus(status, 'The security check timed out. Complete it again.', 'error');
+            refreshSecurity(state);
+          }
         });
-        turnstileWidgets.set(form, widget);
       }
-      return { required: true, turnstile };
-    } catch (error) {
-      setStatus(status, error.message || 'The account security check could not be loaded.', 'error');
-      return { required: true, unavailable: true };
+      return { required: true, turnstile, state };
+    })().catch(error => {
+      setSecurityStatus(status, error.message || 'The account security check could not be loaded.', 'error');
+      return { required: true, unavailable: true, state };
+    }).finally(() => {
+      state.preparing = null;
+    });
+    state.preparing = preparing;
+    return preparing;
+  }
+
+  function currentSecurityToken(security) {
+    if (security.state?.token) return security.state.token;
+    const token = security.turnstile?.getResponse(security.state?.widget) || '';
+    if (token && security.state) {
+      security.state.token = token;
+      return token;
     }
+    return '';
   }
 
   async function securityToken(form) {
+    submitState(form, true);
     const security = await prepareSecurity(form);
     if (!security.required) return '';
-    if (security.unavailable) return null;
-    const widget = turnstileWidgets.get(form);
-    const token = security.turnstile?.getResponse(widget) || '';
-    if (!token) {
-      setStatus(form.querySelector('[data-form-status]'), 'Complete the security check and try again.', 'error');
+    if (security.unavailable) {
+      submitState(form, false);
       return null;
+    }
+    let token = currentSecurityToken(security);
+    if (!token) {
+      const status = form.querySelector('[data-form-status]');
+      setSecurityStatus(status, 'Complete the security check above. This form will continue automatically.', 'status');
+      token = await waitForSecurityToken(security.state);
+      if (!token) {
+        setSecurityStatus(status, 'The security check took too long. Complete it and try again.', 'error');
+        submitState(form, false);
+        refreshSecurity(security.state);
+        return null;
+      }
     }
     return token;
   }
 
   function resetSecurity(form) {
-    const widget = turnstileWidgets.get(form);
-    if (widget === undefined || !window.turnstile) return;
-    window.turnstile.reset(widget);
+    const state = turnstileStates.get(form);
+    if (!state || state.widget === undefined || !state.turnstile) return;
+    state.token = '';
+    settleSecurityWait(state, null);
+    state.turnstile.reset(state.widget);
   }
 
   async function submit(form, action, body, status) {

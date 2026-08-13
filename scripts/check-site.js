@@ -184,7 +184,8 @@ if (!homepageMain.includes('class="catalogue-find-rows"')) failures.push('The ho
 if (!homepageMain.includes('class="catalogue-reading-room"')) failures.push('The homepage is missing its reading room');
 if (!homepageMain.includes('class="catalogue-colophon"')) failures.push('The homepage is missing the Astor history');
 if (!homepageMain.includes('class="seasonal-feature"')) failures.push('The homepage is missing its summer feature');
-if (!homepageMain.includes('Summer at Astor') || !homepageMain.includes('6 July–16 August')) failures.push('The homepage summer feature is missing its title or dates');
+if (!homepageMain.includes('Summer at Astor')) failures.push('The homepage summer feature is missing its title');
+if (homepageMain.includes('6 July–16 August') || /<time\b[^>]*datetime="2026-07-06\/2026-08-16"/i.test(homepageMain)) failures.push('The homepage summer feature still shows its retired date range');
 for (const href of ['/books/a-midsummer-nights-dream/', '/books/as-you-like-it/', '/books/the-odyssey/', '/books/adventures-of-huckleberry-finn/']) {
   if (!homepageMain.includes('href="' + href + '"')) failures.push('The homepage summer feature is missing ' + href);
 }
