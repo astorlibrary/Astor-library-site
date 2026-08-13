@@ -779,14 +779,30 @@ if (fs.existsSync(distDir)) {
     if (fs.existsSync(path.join(distDir, privateEntry))) failures.push('dist exposes private or deployment-only source: ' + privateEntry);
   }
   const presentationDirectory = path.join(distDir, 'assets', 'presentations');
+  const sourcePresentationDirectory = path.join(root, 'assets', 'presentations');
   if (fs.existsSync(presentationDirectory)) {
-    for (const deck of fs.readdirSync(presentationDirectory)) {
-      const deckDirectory = path.join(presentationDirectory, deck);
-      if (!fs.statSync(deckDirectory).isDirectory()) continue;
-      for (const file of fs.readdirSync(deckDirectory)) {
-        const slide = file.match(/^(\d+)\.png(?:\.part-\d{3})?$/);
-        if (slide && Number(slide[1]) > 3) failures.push('dist exposes protected slide asset: assets/presentations/' + deck + '/' + file);
+    const presentationAssets = directory => {
+      const files = [];
+      for (const deck of fs.readdirSync(directory)) {
+        const deckDirectory = path.join(directory, deck);
+        if (!fs.statSync(deckDirectory).isDirectory()) continue;
+        for (const file of fs.readdirSync(deckDirectory)) {
+          if (/^\d+\.png(?:\.part-\d{3})?$/.test(file)) files.push(deck + '/' + file);
+        }
       }
+      return files.sort();
+    };
+    const sourceAssets = presentationAssets(sourcePresentationDirectory);
+    const deployedAssets = presentationAssets(presentationDirectory);
+    if (sourceAssets.length !== deployedAssets.length || sourceAssets.some((file, index) => file !== deployedAssets[index])) {
+      failures.push('dist does not contain the complete publishable presentation asset set');
+    }
+    if (!deployedAssets.some(file => Number(path.basename(file).match(/^(\d+)/)?.[1]) > 3)) {
+      failures.push('dist is missing the post-preview presentation assets required by the authenticated viewer');
+    }
+    const wrangler = fs.readFileSync(path.join(root, 'wrangler.toml'), 'utf8');
+    if (!/run_worker_first\s*=\s*\["\/api\/\*", "\/assets\/presentations\/\*"\]/.test(wrangler)) {
+      failures.push('presentation assets are not routed through the account Worker');
     }
   }
 }

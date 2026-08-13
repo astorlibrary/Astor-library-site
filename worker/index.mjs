@@ -635,20 +635,6 @@ async function readSlideFromAssets(request, env, deck, number) {
   });
 }
 
-async function readSlideFromR2(env, deck, number) {
-  if (!env.PRESENTATIONS) {
-    throw new PublicError('The protected resource store has not been configured yet.', 503);
-  }
-  const object = await env.PRESENTATIONS.get(`presentations/${deck}/${number}.png`);
-  if (!object) return null;
-  const headers = new Headers();
-  object.writeHttpMetadata(headers);
-  headers.set('Content-Type', 'image/png');
-  headers.set('X-Content-Type-Options', 'nosniff');
-  if (object.httpEtag) headers.set('ETag', object.httpEtag);
-  return new Response(object.body, { headers });
-}
-
 async function servePresentationSlide(request, env, route) {
   if (request.method !== 'GET') throw new PublicError('Method not allowed.', 405);
   let client = null;
@@ -665,9 +651,7 @@ async function servePresentationSlide(request, env, route) {
     }
   }
 
-  const slide = route.number <= PREVIEW_SLIDES
-    ? await readSlideFromAssets(request, env, route.deck, route.number)
-    : await readSlideFromR2(env, route.deck, route.number);
+  const slide = await readSlideFromAssets(request, env, route.deck, route.number);
   if (!slide) {
     const missing = json({ error: 'This slide could not be found.' }, 404);
     return client ? client.apply(missing) : missing;

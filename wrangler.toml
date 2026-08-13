@@ -9,8 +9,4 @@ command = "node scripts/build-static.js"
 directory = "./dist"
 binding = "ASSETS"
 html_handling = "force-trailing-slash"
-run_worker_first = true
-
-[[r2_buckets]]
-binding = "PRESENTATIONS"
-bucket_name = "astor-library-protected-presentations"
+run_worker_first = ["/api/*", "/assets/presentations/*"]

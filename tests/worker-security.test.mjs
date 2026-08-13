@@ -6,6 +6,9 @@ import { hasRecentRecovery, PREVIEW_SLIDES } from '../worker/security.mjs';
 
 const presentationMetadata = fs.readFileSync(new URL('../assets/presentation-data.js', import.meta.url), 'utf8');
 const workerSource = fs.readFileSync(new URL('../worker/index.mjs', import.meta.url), 'utf8');
+const workerConfiguration = fs.readFileSync(new URL('../wrangler.toml', import.meta.url), 'utf8');
+const buildSource = fs.readFileSync(new URL('../scripts/build-static.js', import.meta.url), 'utf8');
+const packageSource = fs.readFileSync(new URL('../package.json', import.meta.url), 'utf8');
 const metadataPreviewSlides = Number(presentationMetadata.match(/DEFAULT_PRESENTATION_PREVIEW_SLIDES\s*=\s*(\d+)/)?.[1]);
 
 function assetEnvironment(extra = {}) {
@@ -57,6 +60,15 @@ test('protected slide access checks live users so account deletion revokes outst
   assert.match(protectedSlideHandler, /supabase\.auth\.getUser\(\)/);
   assert.doesNotMatch(protectedAssetHandler, /supabase\.auth\.getClaims\(\)/);
   assert.doesNotMatch(protectedSlideHandler, /supabase\.auth\.getClaims\(\)/);
+});
+
+test('publishable slides use the gated Static Assets namespace without an R2 subscription', () => {
+  assert.doesNotMatch(workerConfiguration, /\[\[r2_buckets\]\]|PRESENTATIONS/);
+  assert.match(workerConfiguration, /run_worker_first\s*=\s*\["\/api\/\*", "\/assets\/presentations\/\*"\]/);
+  assert.doesNotMatch(workerSource, /readSlideFromR2|env\.PRESENTATIONS/);
+  assert.match(workerSource, /const slide = await readSlideFromAssets\(request, env, route\.deck, route\.number\)/);
+  assert.doesNotMatch(buildSource, /Number\(presentationAsset\[1\]\)\s*>\s*3/);
+  assert.doesNotMatch(packageSource, /stage:presentations/);
 });
 
 test('the presentation namespace rejects unknown non-slide files', async () => {
