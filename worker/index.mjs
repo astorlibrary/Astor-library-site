@@ -2,19 +2,27 @@ import { createServerClient } from '@supabase/ssr';
 import { parseCookie, stringifySetCookie } from 'cookie';
 import { presentations } from '../assets/presentation-data.js';
 import {
+  createRecoveryCapability,
   hasRecentAuthentication,
   hasRecentRecovery,
   encodeLibraryCursor,
+  isValidRecoveryCapabilitySecret,
   isSafeResourceId,
   isValidLastSlide,
   LIBRARY_PAGE_SIZE,
   LIBRARY_RECENT_LIMIT,
+  normaliseEmailTokenHash,
+  normaliseEmailTokenType,
+  normalisePkceFlowId,
   parseLibraryCursor,
-  PREVIEW_SLIDES
+  PREVIEW_SLIDES,
+  RECOVERY_CAPABILITY_TTL_SECONDS,
+  verifyRecoveryCapability
 } from './security.mjs';
 
 const KNOWN_RESOURCE_IDS = new Set(Object.keys(presentations));
 const RESOURCE_ACTIONS = new Set(['view', 'save', 'unsave']);
+const RECOVERY_CAPABILITY_COOKIE = 'astor_recovery_capability';
 const requestResponseAppliers = new WeakMap();
 
 const JSON_HEADERS = {
@@ -170,6 +178,9 @@ function createRequestClient(request, env) {
 
   const supabase = createServerClient(env.SUPABASE_URL, env.SUPABASE_PUBLISHABLE_KEY, {
     cookieOptions: { path: '/', sameSite: 'lax', secure, httpOnly: true },
+    auth: {
+      experimental: { appendPkceFlowIdToRedirects: true }
+    },
     cookies: {
       getAll() {
         return Object.entries(incoming).map(([name, value]) => ({ name, value }));
@@ -196,7 +207,7 @@ function createRequestClient(request, env) {
         value: item.value,
         ...item.options,
         path: item.options?.path || '/',
-        sameSite: 'lax',
+        sameSite: item.options?.sameSite || 'lax',
         secure,
         httpOnly: true
       }));
@@ -205,26 +216,72 @@ function createRequestClient(request, env) {
     return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
   }
 
+  function setRecoveryCapability(value) {
+    incoming[RECOVERY_CAPABILITY_COOKIE] = value;
+    pendingCookies.push({
+      name: RECOVERY_CAPABILITY_COOKIE,
+      value,
+      options: {
+        maxAge: RECOVERY_CAPABILITY_TTL_SECONDS,
+        sameSite: 'strict'
+      }
+    });
+  }
+
+  function clearRecoveryCapability() {
+    delete incoming[RECOVERY_CAPABILITY_COOKIE];
+    pendingCookies.push({
+      name: RECOVERY_CAPABILITY_COOKIE,
+      value: '',
+      options: {
+        expires: new Date(0),
+        maxAge: 0,
+        sameSite: 'strict'
+      }
+    });
+  }
+
   requestResponseAppliers.set(request, apply);
-  return { supabase, apply };
+  return {
+    supabase,
+    apply,
+    clearRecoveryCapability,
+    recoveryCapability: () => incoming[RECOVERY_CAPABILITY_COOKIE] || '',
+    setRecoveryCapability
+  };
 }
 
-async function sessionPayload(supabase) {
+async function hasRecoveryCapability(client, userId, env) {
+  const capability = client.recoveryCapability();
+  if (!capability) return false;
+  const valid = await verifyRecoveryCapability(capability, userId, env.RECOVERY_COOKIE_SECRET);
+  if (!valid) client.clearRecoveryCapability();
+  return valid;
+}
+
+async function sessionPayload(client, env) {
+  const { supabase } = client;
   const { data, error } = await supabase.auth.getUser();
   if (error || !data.user) return { authenticated: false };
 
   const { data: claimsData } = await supabase.auth.getClaims();
+  const capabilityAuthorised = await hasRecoveryCapability(client, data.user.id, env);
+  const canResetPassword = hasRecentRecovery(claimsData?.claims) || capabilityAuthorised;
 
+  return accountPayload(supabase, data.user, canResetPassword);
+}
+
+async function accountPayload(supabase, user, canResetPassword = false) {
   const { data: profile } = await supabase
     .from('profiles')
     .select('marketing_consent, marketing_consent_at, marketing_consent_withdrawn_at')
-    .eq('id', data.user.id)
+    .eq('id', user.id)
     .maybeSingle();
 
   return {
     authenticated: true,
-    email: data.user.email || '',
-    canResetPassword: hasRecentRecovery(claimsData?.claims),
+    email: user.email || '',
+    canResetPassword,
     marketingConsent: Boolean(profile?.marketing_consent),
     marketingConsentAt: profile?.marketing_consent_at || null,
     marketingConsentWithdrawnAt: profile?.marketing_consent_withdrawn_at || null
@@ -266,7 +323,7 @@ async function handleAuth(request, env, action) {
   const { supabase, apply } = client;
 
   if (action === 'session') {
-    return apply(json(await sessionPayload(supabase)));
+    return apply(json(await sessionPayload(client, env)));
   }
 
   const body = await readJson(request);
@@ -308,11 +365,12 @@ async function handleAuth(request, env, action) {
     const password = validatePassword(body.password);
     const { error } = await supabase.auth.signInWithPassword({ email, password });
     if (error) throw new PublicError(friendlyAuthError(error, 'Sign-in failed. Try again.'), error.status || 400);
-    return apply(json({ ok: true, ...(await sessionPayload(supabase)) }));
+    return apply(json({ ok: true, ...(await sessionPayload(client, env)) }));
   }
 
   if (action === 'sign-out') {
     await supabase.auth.signOut({ scope: 'local' });
+    if (client.recoveryCapability()) client.clearRecoveryCapability();
     return apply(json({ ok: true, authenticated: false }));
   }
 
@@ -333,19 +391,58 @@ async function handleAuth(request, env, action) {
   if (action === 'exchange-code') {
     const code = String(body.code || '');
     if (!code || code.length > 2_048) throw new PublicError('The sign-in link is invalid or has expired.');
-    const { error } = await supabase.auth.exchangeCodeForSession(code);
+    const flowId = normalisePkceFlowId(body.flowId);
+    if (flowId === false) throw new PublicError('The sign-in link contains an invalid security flow. Request a new link.');
+    const { error } = await supabase.auth.exchangeCodeForSession(code, flowId ? { flowId } : undefined);
     if (error) throw new PublicError('The sign-in link is invalid or has expired. Request a new link.');
-    return apply(json({ ok: true, ...(await sessionPayload(supabase)) }));
+    return apply(json({ ok: true, ...(await sessionPayload(client, env)) }));
+  }
+
+  if (action === 'verify-email') {
+    const tokenHash = normaliseEmailTokenHash(body.tokenHash);
+    const type = normaliseEmailTokenType(body.type);
+    if (!tokenHash || !type) throw new PublicError('This email link is incomplete or invalid. Request a new link.');
+    const recoverySecret = type === 'recovery' ? env.RECOVERY_COOKIE_SECRET : null;
+    if (type === 'recovery' && !isValidRecoveryCapabilitySecret(recoverySecret)) {
+      throw new PublicError('Password recovery is temporarily unavailable. Request a new link later.', 503);
+    }
+    const { data, error } = await supabase.auth.verifyOtp({ token_hash: tokenHash, type });
+    if (error) throw new PublicError('This email link is invalid or has expired. Request a new link.');
+    const intermediate = type === 'email_change' && data.user === null && data.session === null;
+    if (!intermediate && (!data.user || !data.session)) {
+      throw new PublicError('The email action returned an incomplete session. Request a new link.', 502);
+    }
+    if (type === 'recovery') {
+      const capability = await createRecoveryCapability(data.user.id, recoverySecret);
+      if (!capability) throw new PublicError('Password recovery is temporarily unavailable. Request a new link later.', 503);
+      client.setRecoveryCapability(capability);
+    }
+    const verifiedAccount = intermediate
+      ? { authenticated: false, canResetPassword: false }
+      : await accountPayload(supabase, data.user, type === 'recovery');
+    return apply(json({
+      ok: true,
+      type,
+      intermediate,
+      ...verifiedAccount
+    }));
   }
 
   if (action === 'update-password') {
+    const { data: userData, error: userError } = await supabase.auth.getUser();
+    if (userError || !userData.user) {
+      throw new PublicError('Request a new password-reset link before choosing a new password.', 403);
+    }
     const { data: claimsData, error: claimsError } = await supabase.auth.getClaims();
-    if (claimsError || !hasRecentRecovery(claimsData?.claims)) {
+    const legacyRecovery = !claimsError && hasRecentRecovery(claimsData?.claims);
+    const capabilityAuthorised = await hasRecoveryCapability(client, userData.user.id, env);
+    if (!legacyRecovery && !capabilityAuthorised) {
       throw new PublicError('Request a new password-reset link before choosing a new password.', 403);
     }
     const password = validatePassword(body.password);
     const { error } = await supabase.auth.updateUser({ password });
     if (error) throw new PublicError(friendlyAuthError(error, 'The password could not be updated. Request a new reset link.'), error.status || 400);
+    client.clearRecoveryCapability();
     const { error: signOutError } = await supabase.auth.signOut({ scope: 'global' });
     if (signOutError) console.error('Password changed, but other sessions could not be revoked', signOutError);
     return apply(json({ ok: true, authenticated: false, message: 'Your password has been updated. Sign in again with the new password.' }));

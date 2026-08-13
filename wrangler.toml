@@ -1,6 +1,12 @@
 name = "astor-library-site"
 compatibility_date = "2026-07-08"
 main = "worker/index.mjs"
+keep_vars = true
+
+routes = [
+  { pattern = "astorlibrary.com", custom_domain = true },
+  { pattern = "astorlibrary.co.uk", custom_domain = true }
+]
 
 [build]
 command = "node scripts/build-static.js"

@@ -1,0 +1,44 @@
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">Confirm your email address to finish creating your Astor Library account.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;margin:0;padding:0;background:#f3eee6;">
+  <tr>
+    <td align="center" style="padding:32px 12px;">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#fffaf3;border:1px solid #e7dacb;">
+        <tr>
+          <td style="padding:24px 32px 21px;background:#10263b;border-bottom:3px solid #d8b86f;">
+            <p style="margin:0;color:#fffaf3;font-family:Georgia,'Times New Roman',serif;font-size:22px;line-height:1.2;letter-spacing:3px;text-align:center;">ASTOR&nbsp;&nbsp;LIBRARY</p>
+            <p style="margin:7px 0 0;color:#d8b86f;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1.4;letter-spacing:1.5px;text-align:center;text-transform:uppercase;">Classic books and literature resources</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:42px 40px 20px;">
+            <p style="margin:0 0 12px;color:#6e1f2b;font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:bold;line-height:1.4;letter-spacing:1.4px;text-transform:uppercase;">Account confirmation</p>
+            <h1 style="margin:0 0 20px;color:#211d1a;font-family:Georgia,'Times New Roman',serif;font-size:34px;font-weight:normal;line-height:1.15;">Confirm your email address.</h1>
+            <p style="margin:0 0 18px;color:#3f3833;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.7;">A request was made to create an Astor Library account for <strong style="color:#211d1a;">{{ .Email }}</strong>.</p>
+            <p style="margin:0 0 28px;color:#3f3833;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.7;">Confirm this address to finish setting up your account and return to the resource library.</p>
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 28px;">
+              <tr>
+                <td bgcolor="#6e1f2b" style="background:#6e1f2b;border:1px solid #6e1f2b;">
+                  <a href="{{ .SiteURL }}/account/action/#token_hash={{ .TokenHash }}&amp;type=email&amp;next={{ urlquery .RedirectTo }}" style="display:inline-block;padding:14px 22px;color:#ffffff;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;line-height:1.2;text-decoration:none;">Confirm account</a>
+                </td>
+              </tr>
+            </table>
+            <p style="margin:0 0 12px;color:#5b514a;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.65;">For security, the confirmation link can be used once. The Astor Library page will ask you to confirm the action before the link is used.</p>
+            <p style="margin:0;color:#5b514a;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.65;">If you did not create this account, you can ignore this message. No account access is granted until the address is confirmed.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:24px 40px 32px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;border-top:1px solid #e7dacb;">
+              <tr>
+                <td style="padding-top:20px;">
+                  <p style="margin:0 0 8px;color:#5b514a;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.6;">Need help? Write to <a href="mailto:support@astorlibrary.com" style="color:#6e1f2b;text-decoration:underline;">support@astorlibrary.com</a>.</p>
+                  <p style="margin:0;color:#786d65;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1.6;">Astor Library · Classic books, study editions and literature resources<br><a href="{{ .SiteURL }}/privacy/" style="color:#6e1f2b;text-decoration:underline;">Privacy</a> &nbsp;·&nbsp; <a href="{{ .SiteURL }}/account/" style="color:#6e1f2b;text-decoration:underline;">My Account</a></p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

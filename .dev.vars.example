@@ -2,6 +2,8 @@
 SUPABASE_URL="https://YOUR_PROJECT.supabase.co"
 SUPABASE_PUBLISHABLE_KEY="YOUR_SUPABASE_PUBLISHABLE_KEY"
 SITE_URL="http://localhost:8787"
+# At least 32 random bytes. Use a different value in production.
+RECOVERY_COOKIE_SECRET="REPLACE_WITH_A_RANDOM_LOCAL_RECOVERY_SECRET"
 # Optional locally. Production requires a matching Cloudflare Turnstile widget.
 # TURNSTILE_SITE_KEY="1x00000000000000000000AA"
 # TURNSTILE_SECRET_KEY="1x0000000000000000000000000000000AA"

@@ -243,6 +243,16 @@ test('the database integrity catalogue exactly matches the presentation catalogu
   assert.match(sql, /revoke all on table public\.resource_catalogue from anon, authenticated/i);
 });
 
+test('the Supabase hardening migration closes internal RPC access and covers catalogue integrity', () => {
+  const sql = fs.readFileSync(
+    new URL('../supabase/migrations/202608130003_supabase_hardening.sql', import.meta.url),
+    'utf8'
+  );
+  assert.match(sql, /revoke all on function public\.handle_new_auth_user\(\)[\s\S]*from public, anon, authenticated/i);
+  assert.match(sql, /revoke all on function public\.sync_auth_user_identity\(\)[\s\S]*from public, anon, authenticated/i);
+  assert.match(sql, /create index if not exists resource_library_resource_idx[\s\S]*on public\.resource_library_items \(resource_id\)/i);
+});
+
 test('saved pagination is deterministic and error responses preserve SSR cookie updates', () => {
   const source = fs.readFileSync(new URL('../worker/index.mjs', import.meta.url), 'utf8');
   assert.match(source, /order\('saved_at', \{ ascending: false \}\)[\s\S]*order\('resource_id', \{ ascending: true \}\)/);

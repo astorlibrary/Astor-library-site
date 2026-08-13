@@ -5,7 +5,7 @@ const authorProfileData = require('./author-profiles');
 
 const root = process.cwd();
 const SITE_URL = 'https://astorlibrary.com';
-const ignoredDirectories = new Set(['.git', 'dist', 'node_modules']);
+const ignoredDirectories = new Set(['.git', 'dist', 'node_modules', 'supabase']);
 const htmlFiles = [];
 const failures = [];
 const warnings = [];

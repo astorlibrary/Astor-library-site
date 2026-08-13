@@ -4,9 +4,48 @@ export const LIBRARY_RECENT_LIMIT = 20;
 
 const RECOVERY_WINDOW_SECONDS = 15 * 60;
 const RECENT_AUTH_WINDOW_SECONDS = 15 * 60;
+export const RECOVERY_CAPABILITY_TTL_SECONDS = 15 * 60;
 const RESOURCE_ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const LIBRARY_CURSOR_PATTERN = /^[A-Za-z0-9_-]{1,512}$/;
+const PKCE_FLOW_ID_PATTERN = /^[a-zA-Z0-9_-]{8,64}$/;
+const EMAIL_TOKEN_HASH_PATTERN = /^[a-zA-Z0-9_-]{16,256}$/;
+const EMAIL_TOKEN_TYPES = new Set(['email', 'recovery', 'email_change']);
+const RECOVERY_CAPABILITY_USER_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+const RECOVERY_CAPABILITY_SIGNATURE_PATTERN = /^[A-Za-z0-9_-]{43}$/;
 const POSTGRES_TIMESTAMP_PATTERN = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(?:\.\d{1,6})?(?:Z|([+-])(\d{2}):(\d{2}))$/;
+
+function base64UrlEncode(bytes) {
+  let binary = '';
+  for (const byte of bytes) binary += String.fromCharCode(byte);
+  return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
+}
+
+function base64UrlDecode(value) {
+  try {
+    const base64 = value.replace(/-/g, '+').replace(/_/g, '/');
+    const binary = atob(base64.padEnd(Math.ceil(base64.length / 4) * 4, '='));
+    return Uint8Array.from(binary, character => character.charCodeAt(0));
+  } catch {
+    return null;
+  }
+}
+
+function recoveryCapabilitySecret(value) {
+  if (typeof value !== 'string' || value.length > 4_096) return null;
+  const bytes = new TextEncoder().encode(value);
+  return bytes.byteLength >= 32 ? bytes : null;
+}
+
+function recoveryCapabilityTime(value) {
+  const seconds = value == null ? Math.floor(Date.now() / 1_000) : value;
+  return Number.isSafeInteger(seconds) && seconds >= 0 ? seconds : null;
+}
+
+async function recoveryCapabilityKey(secret, usages) {
+  const bytes = recoveryCapabilitySecret(secret);
+  if (!bytes) return null;
+  return crypto.subtle.importKey('raw', bytes, { name: 'HMAC', hash: 'SHA-256' }, false, usages);
+}
 
 function isValidPostgresTimestamp(value) {
   if (typeof value !== 'string') return false;
@@ -51,6 +90,58 @@ export function isSafeResourceId(value) {
 
 export function isValidLastSlide(value) {
   return value == null || (Number.isSafeInteger(value) && value >= 1 && value <= 250);
+}
+
+export function normalisePkceFlowId(value) {
+  if (value == null) return null;
+  return typeof value === 'string' && PKCE_FLOW_ID_PATTERN.test(value) ? value : false;
+}
+
+export function normaliseEmailTokenHash(value) {
+  return typeof value === 'string' && EMAIL_TOKEN_HASH_PATTERN.test(value) ? value : false;
+}
+
+export function normaliseEmailTokenType(value) {
+  return typeof value === 'string' && EMAIL_TOKEN_TYPES.has(value) ? value : false;
+}
+
+export function isValidRecoveryCapabilitySecret(value) {
+  return recoveryCapabilitySecret(value) !== null;
+}
+
+export async function createRecoveryCapability(userId, secret, nowSeconds) {
+  const now = recoveryCapabilityTime(nowSeconds);
+  if (now === null || typeof userId !== 'string' || !RECOVERY_CAPABILITY_USER_PATTERN.test(userId)) return null;
+  const key = await recoveryCapabilityKey(secret, ['sign']);
+  if (!key) return null;
+
+  const expiresAt = now + RECOVERY_CAPABILITY_TTL_SECONDS;
+  const payload = `v1.${userId}.${expiresAt}`;
+  const signature = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(payload));
+  return `${payload}.${base64UrlEncode(new Uint8Array(signature))}`;
+}
+
+export async function verifyRecoveryCapability(value, userId, secret, nowSeconds) {
+  const now = recoveryCapabilityTime(nowSeconds);
+  if (now === null || typeof value !== 'string' || value.length > 512 ||
+      typeof userId !== 'string' || !RECOVERY_CAPABILITY_USER_PATTERN.test(userId)) return false;
+
+  const parts = value.split('.');
+  if (parts.length !== 4 || parts[0] !== 'v1' || parts[1] !== userId ||
+      !/^\d{1,12}$/.test(parts[2]) || !RECOVERY_CAPABILITY_SIGNATURE_PATTERN.test(parts[3])) return false;
+  const expiresAt = Number(parts[2]);
+  if (!Number.isSafeInteger(expiresAt) || expiresAt <= now ||
+      expiresAt > now + RECOVERY_CAPABILITY_TTL_SECONDS) return false;
+
+  const signature = base64UrlDecode(parts[3]);
+  const key = await recoveryCapabilityKey(secret, ['verify']);
+  if (!signature || !key) return false;
+  return crypto.subtle.verify(
+    'HMAC',
+    key,
+    signature,
+    new TextEncoder().encode(parts.slice(0, 3).join('.'))
+  );
 }
 
 export function encodeLibraryCursor(savedAt, resourceId) {

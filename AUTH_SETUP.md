@@ -8,9 +8,9 @@ The site uses Supabase Auth for email/password accounts and a Cloudflare Worker 
 2. Open the SQL editor and run every file in `supabase/migrations/` in timestamp order. The first migration creates accounts and consent records; the second creates the private saved-resource and recent-activity relationships plus self-service account deletion.
 3. In **Authentication → URL configuration**, set:
    - Site URL: `https://astorlibrary.com`
-   - Redirect URL: `https://astorlibrary.com/account/callback/`
-   - Redirect URL: `https://astorlibrary.com/account/reset/`
-   - Add the equivalent local Wrangler URLs while testing, such as `http://localhost:8787/account/callback/` and `http://localhost:8787/account/reset/`.
+   - Redirect URL: `https://astorlibrary.com/account/callback/**` (the callback carries a validated `next` query parameter)
+   - Redirect URL: `https://astorlibrary.com/account/reset/**`
+   - Add the equivalent local Wrangler URLs while testing, such as `http://localhost:8787/account/callback/**` and `http://localhost:8787/account/reset/**`.
 4. Keep email confirmation enabled before protected access is launched. Keep Supabase **Secure email change** enabled so a sign-in email change requires confirmation from both the current and new addresses.
 5. Configure production SMTP in Supabase Auth. The default Supabase mail service is intended for testing and has delivery/rate limitations. The SMTP provider is used only for account confirmation and password recovery; it is separate from marketing email.
 6. Review Supabase password-strength and rate-limit settings before launch. The site validates Cloudflare Turnstile itself, so do not separately enable Supabase CAPTCHA without changing the Worker to pass the token to Supabase instead of consuming it at Siteverify.
@@ -28,9 +28,10 @@ pnpm wrangler secret put SUPABASE_PUBLISHABLE_KEY
 pnpm wrangler secret put SITE_URL
 pnpm wrangler secret put TURNSTILE_SITE_KEY
 pnpm wrangler secret put TURNSTILE_SECRET_KEY
+pnpm wrangler secret put RECOVERY_COOKIE_SECRET
 ```
 
-Use `https://astorlibrary.com` for `SITE_URL`. Create a Turnstile widget for that hostname and supply its site and secret keys. Signup, signin and recovery fail closed in production when Turnstile is missing; local `localhost` development can run without it. For local work, copy `.dev.vars.example` to `.dev.vars` and insert the test-project values. `.dev.vars` is ignored by Git and the build explicitly omits environment files from `dist`.
+Use `https://astorlibrary.com` for `SITE_URL`. Generate `RECOVERY_COOKIE_SECRET` from at least 32 random bytes; it signs a short-lived, user-bound password-recovery capability and must remain private. Create a Turnstile widget for the production hostname and supply its site and secret keys. Signup, signin and recovery fail closed in production when Turnstile is missing; local `localhost` development can run without it. For local work, copy `.dev.vars.example` to `.dev.vars` and insert the test-project values. `.dev.vars` is ignored by Git and the build explicitly omits environment files from `dist`.
 
 The Supabase publishable key is designed for application use, but keeping deployment configuration outside the static bundle prevents accidental coupling. Never put a Supabase secret/service-role key in the Worker or client code for this feature.
 
@@ -47,7 +48,7 @@ pnpm test
 pnpm dev
 ```
 
-Test email confirmation and recovery on the same browser/device that initiated the request because the PKCE verifier is held in a secure same-origin cookie.
+Test email confirmation and recovery in the initiating browser, a different browser and a mail app's in-app browser. New templates use a token hash verified by the Worker after a deliberate click, so they are not tied to the browser that requested the email. Already-sent legacy PKCE links remain supported during the transition.
 
 Before production release, verify:
 

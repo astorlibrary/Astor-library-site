@@ -2,7 +2,14 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import test from 'node:test';
 import worker from '../worker/index.mjs';
-import { hasRecentRecovery, PREVIEW_SLIDES } from '../worker/security.mjs';
+import {
+  createRecoveryCapability,
+  hasRecentRecovery,
+  isValidRecoveryCapabilitySecret,
+  PREVIEW_SLIDES,
+  RECOVERY_CAPABILITY_TTL_SECONDS,
+  verifyRecoveryCapability
+} from '../worker/security.mjs';
 
 const presentationMetadata = fs.readFileSync(new URL('../assets/presentation-data.js', import.meta.url), 'utf8');
 const workerSource = fs.readFileSync(new URL('../worker/index.mjs', import.meta.url), 'utf8');
@@ -105,4 +112,27 @@ test('a password reset requires a recent recovery authentication method', () => 
   assert.equal(hasRecentRecovery({ amr: [{ method: 'recovery', timestamp: now - 60 }] }), true);
   assert.equal(hasRecentRecovery({ amr: [{ method: 'password', timestamp: now }] }), false);
   assert.equal(hasRecentRecovery({ amr: [{ method: 'recovery', timestamp: now - 3_600 }] }), false);
+});
+
+test('recovery capabilities are signed, user-bound and short-lived', async () => {
+  const userId = '11111111-1111-4111-8111-111111111111';
+  const otherUserId = '22222222-2222-4222-8222-222222222222';
+  const secret = 'test-only-recovery-cookie-secret-with-32-bytes';
+  const now = 1_786_550_400;
+  const capability = await createRecoveryCapability(userId, secret, now);
+
+  assert.equal(isValidRecoveryCapabilitySecret(secret), true);
+  assert.equal(isValidRecoveryCapabilitySecret('too-short'), false);
+  assert.match(capability, /^v1\.[0-9a-f-]+\.\d+\.[A-Za-z0-9_-]{43}$/);
+  assert.equal(await verifyRecoveryCapability(capability, userId, secret, now), true);
+  assert.equal(await verifyRecoveryCapability(capability, otherUserId, secret, now), false);
+  assert.equal(await verifyRecoveryCapability(capability, userId, `${secret}-wrong`, now), false);
+  const tampered = `${capability.slice(0, -1)}${capability.endsWith('A') ? 'B' : 'A'}`;
+  assert.equal(await verifyRecoveryCapability(tampered, userId, secret, now), false);
+  assert.equal(
+    await verifyRecoveryCapability(capability, userId, secret, now + RECOVERY_CAPABILITY_TTL_SECONDS),
+    false
+  );
+  assert.equal(await createRecoveryCapability('not-a-user-id', secret, now), null);
+  assert.equal(await createRecoveryCapability(userId, 'too-short', now), null);
 });

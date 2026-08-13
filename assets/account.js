@@ -694,13 +694,20 @@
     if (!callback) return;
     const params = new URLSearchParams(window.location.search);
     const code = params.get('code');
+    const flowId = params.get('sb_flow_id');
+    const intermediateEmailChange = params.get('message') ===
+      'Confirmation link accepted. Please proceed to confirm link sent to the other email';
     const next = safeNext(params.get('next'));
+    if (!code && intermediateEmailChange) {
+      setStatus(callback, 'First confirmation accepted. Now open the confirmation message sent to the other email address.', 'success');
+      return;
+    }
     if (!code) {
       setStatus(callback, 'This confirmation link is incomplete. Sign in or request another email.', 'error');
       return;
     }
     try {
-      const result = await auth.request('exchange-code', { code });
+      const result = await auth.request('exchange-code', { code, ...(flowId ? { flowId } : {}) });
       window.history.replaceState({}, '', '/account/callback/');
       setStatus(callback, 'Email confirmed. Opening your resource…', 'success');
       if (result.authenticated) window.location.replace(next);
@@ -713,10 +720,12 @@
     const form = document.querySelector('[data-reset-form]');
     if (!form) return;
     const status = form.querySelector('[data-form-status]');
-    const code = new URLSearchParams(window.location.search).get('code');
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    const flowId = params.get('sb_flow_id');
     if (code) {
       try {
-        const session = await auth.request('exchange-code', { code });
+        const session = await auth.request('exchange-code', { code, ...(flowId ? { flowId } : {}) });
         if (!session.canResetPassword) {
           throw new Error('This link does not authorise a password reset. Request a new reset email.');
         }

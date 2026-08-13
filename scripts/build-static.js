@@ -809,7 +809,8 @@ function addDiscoveryNavigation(html, source) {
 
 function addGlobalNavigation(html, source) {
   const href = pageHref(source);
-  const current = active => active ? ' aria-current="page"' : '';
+  const inRoute = route => href === route || href.startsWith(route);
+  const current = (active, exact = active) => active ? ` aria-current="${exact ? 'page' : 'location'}"` : '';
   const booksCurrent = href === '/library/' || href.startsWith('/books/');
   const shakespeareCurrent = href === '/shakespeare/' || href.startsWith('/shakespeare/');
   const periodsCurrent = [
@@ -835,29 +836,53 @@ function addGlobalNavigation(html, source) {
   const header = `<header class="site-header astor-global-header">
   <div class="astor-header-identity">
     <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
-    <p>Independent editions of classic literature</p>
+    <p class="astor-header-strap"><span>Independent literary editions</span><small>For readers, students &amp; teachers</small></p>
     <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span></button>
   </div>
   <nav class="nav astor-primary-nav" id="site-navigation" aria-label="Primary navigation">
     <div class="astor-primary-links">
-      <a class="nav-link" href="/library/"${current(booksCurrent)}>Books</a>
+      <a class="nav-link" href="/library/"${current(booksCurrent, href === '/library/')}><span class="astor-nav-number" aria-hidden="true">01</span><span>Books</span></a>
       <details class="astor-browse-menu${browseCurrent ? ' is-current-section' : ''}">
-        <summary>Browse</summary>
-        <div class="astor-browse-panel">
-          <a href="/shakespeare/"${current(shakespeareCurrent)}><b>Shakespeare</b><span>Plays, poems and editions</span></a>
-          <a href="/classic-literature/"${current(periodsCurrent)}><b>Periods</b><span>Collections across literary history</span></a>
-          <a href="/authors/"${current(authorsCurrent)}><b>Writers</b><span>Authors and their Astor editions</span></a>
-          <a href="/subjects/"${current(subjectsCurrent)}><b>Subjects</b><span>Genres, themes and contexts</span></a>
-          <a href="/reading-routes/"${current(readingRoutesCurrent)}><b>Reading routes</b><span>Books connected by a question</span></a>
+        <summary aria-controls="astor-browse-panel" aria-expanded="false"><span class="astor-nav-number" aria-hidden="true">02</span><span>Browse library</span></summary>
+        <div class="astor-browse-panel" id="astor-browse-panel">
+          <div class="astor-browse-feature">
+            <p>Open the catalogue</p>
+            <h2>Find a book, writer or way into the text.</h2>
+            <span>Move through Astor Library by literary period, subject, author or a connected reading route.</span>
+            <a href="/explore/">Search every title <i aria-hidden="true">&rarr;</i></a>
+          </div>
+          <div class="astor-browse-directory">
+            <section aria-labelledby="astor-browse-by-title">
+              <h2 id="astor-browse-by-title">Browse by</h2>
+              <div class="astor-browse-cards">
+                <a href="/shakespeare/"${current(shakespeareCurrent, href === '/shakespeare/')}><em aria-hidden="true">01</em><span><b>Shakespeare</b><small>Plays, poems and editions</small></span></a>
+                <a href="/authors/"${current(authorsCurrent, href === '/authors/')}><em aria-hidden="true">02</em><span><b>Writers</b><small>Authors and their Astor editions</small></span></a>
+                <a href="/subjects/"${current(subjectsCurrent, href === '/subjects/')}><em aria-hidden="true">03</em><span><b>Subjects</b><small>Genres, themes and contexts</small></span></a>
+                <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}><em aria-hidden="true">04</em><span><b>Reading routes</b><small>Books connected by a question</small></span></a>
+              </div>
+            </section>
+            <section class="astor-period-directory" aria-labelledby="astor-period-title">
+              <div class="astor-directory-heading"><h2 id="astor-period-title">Literary periods</h2><a href="/classic-literature/"${current(href === '/classic-literature/')}>View the overview <span aria-hidden="true">&rarr;</span></a></div>
+              <div class="astor-period-links">
+                <a href="/ancient-epic/"${current(inRoute('/ancient-epic/'))}><b>Ancient &amp; Epic</b><span>Epic, myth and classical inheritance</span></a>
+                <a href="/renaissance-early-modern/"${current(inRoute('/renaissance-early-modern/'))}><b>Renaissance</b><span>Drama, poetry and early modern prose</span></a>
+                <a href="/restoration-enlightenment/"${current(inRoute('/restoration-enlightenment/'))}><b>Restoration</b><span>Satire, reason and eighteenth-century writing</span></a>
+                <a href="/romantic-regency/"${current(inRoute('/romantic-regency/'))}><b>Romantic &amp; Regency</b><span>Revolution, nature and the imagination</span></a>
+                <a href="/victorian/"${current(inRoute('/victorian/'))}><b>Victorian</b><span>Industry, empire and the modern city</span></a>
+                <a href="/american/"${current(inRoute('/american/'))}><b>American</b><span>Nation, freedom and American voices</span></a>
+                <a href="/modern/"${current(inRoute('/modern/'))}><b>Modern</b><span>Modernism, politics and new forms</span></a>
+              </div>
+            </section>
+          </div>
         </div>
       </details>
-      <a class="nav-link" href="/resources/"${current(resourcesCurrent)}>Resources</a>
-      <a class="nav-link" href="/study/"${current(studyCurrent)}>Study editions</a>
-      <a class="nav-link" href="/passage-room/"${current(passageCurrent)}>Passage Room</a>
+      <a class="nav-link" href="/resources/"${current(resourcesCurrent, href === '/resources/')}><span class="astor-nav-number" aria-hidden="true">03</span><span>Free resources</span></a>
+      <a class="nav-link" href="/study/"${current(studyCurrent, href === '/study/')}><span class="astor-nav-number" aria-hidden="true">04</span><span>Study editions</span></a>
+      <a class="nav-link" href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}><span class="astor-nav-number" aria-hidden="true">05</span><span>Passage Room</span></a>
     </div>
     <div class="astor-nav-utilities">
-      <a class="astor-utility-link" href="/explore/"${current(searchCurrent)}>Search</a>
-      <a class="astor-utility-link astor-account-link" href="/account/" data-auth-link${current(accountCurrent)}>Sign in</a>
+      <a class="astor-utility-link astor-search-link" href="/explore/"${current(searchCurrent, href === '/explore/')}><span aria-hidden="true"></span>Search</a>
+      <a class="astor-utility-link astor-account-link" href="/account/" data-auth-link${current(accountCurrent, href === '/account/')}>Sign in</a>
     </div>
   </nav>
 </header>`;
