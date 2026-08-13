@@ -918,13 +918,11 @@ function prepareHtml(html, source) {
 function copyRecursive(source, destination) {
   const stat = fs.statSync(source);
   const name = path.basename(source);
-  const relativeSource = path.relative(root, source).split(path.sep).join('/');
 
   // Local environment files can contain production credentials and never belong in dist.
   if (name === '.dev.vars' || name.startsWith('.dev.vars.') || name === '.env' || name.startsWith('.env.') || name === '.npmrc') return;
-  // Only the three-slide public preview is shipped as a static asset. Full slides live in private R2.
-  const presentationAsset = relativeSource.match(/^assets\/presentations\/[^/]+\/(\d+)\.png(?:\.part-\d{3})?$/);
-  if (presentationAsset && Number(presentationAsset[1]) > 3) return;
+  // Presentation files are publishable and remain inside Workers Static Assets.
+  // The Worker runs first for this namespace and applies the three-slide account boundary.
 
   if (stat.isDirectory()) {
     fs.mkdirSync(destination, { recursive: true });

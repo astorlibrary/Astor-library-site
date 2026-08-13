@@ -1,6 +1,6 @@
 # Astor Library accounts and resource access
 
-The site uses Supabase Auth for email/password accounts and a Cloudflare Worker for same-origin session cookies and protected presentation delivery. The first three slides of each deck are public. Slide 4 onward is served only after the Worker validates a Supabase session.
+The site uses Supabase Auth for email/password accounts and a Cloudflare Worker for same-origin session cookies and presentation access. The first three slides of each deck are public. At normal website URLs, slide 4 onward is served only after the Worker validates a Supabase session.
 
 ## 1. Create and configure Supabase
 
@@ -34,17 +34,9 @@ Use `https://astorlibrary.com` for `SITE_URL`. Create a Turnstile widget for tha
 
 The Supabase publishable key is designed for application use, but keeping deployment configuration outside the static bundle prevents accidental coupling. Never put a Supabase secret/service-role key in the Worker or client code for this feature.
 
-### Private presentation storage
+### Presentation storage
 
-`wrangler.toml` binds a private R2 bucket named `astor-library-protected-presentations` as `PRESENTATIONS`. Create that bucket (or change the committed name consistently) and leave public bucket access disabled. The static build now omits slide 4 onward, including every chunk, so authenticated requests can only obtain those slides through the Worker.
-
-With a complete, non-sparse checkout, assemble the protected objects into an empty directory outside the project:
-
-```sh
-pnpm stage:presentations -- --output ../astor-protected-stage
-```
-
-Upload the resulting `presentations/` tree to the private R2 bucket with the exact keys recorded in `manifest.json`, using the R2 dashboard, Wrangler or the R2 S3-compatible API. The current catalogue should produce 587 protected PNG objects. Do not deploy account access until the manifest count and a sample from every deck have been verified in R2. The bucket must not have a public custom domain or `r2.dev` URL.
+All slides are intentionally publishable and ship in Cloudflare Workers Static Assets. No R2 subscription, bucket or object-staging step is required. `wrangler.toml` runs the Worker first only for `/api/*` and `/assets/presentations/*`; ordinary pages, books, styles and images remain direct static responses. The Worker validates the signed-in user before returning slide 4 onward through either the viewer API or a direct presentation-asset path.
 
 ## 3. Build and test
 
@@ -110,9 +102,9 @@ Do not automatically add every account. Do not use Supabase authentication email
 
 ## Website access boundary and repository visibility
 
-`wrangler.toml` makes the Worker run before static assets. Direct website requests for slide 4 onward and every `.part-NNN` chunk therefore require a session, while the generated static bundle contains only slides 1–3. The viewer uses a single authenticated slide endpoint backed by private R2.
+`wrangler.toml` makes the Worker run before presentation assets and API requests. Direct website requests for slide 4 onward and every `.part-NNN` chunk therefore require a session. The viewer uses one authenticated slide endpoint, and the Worker reconstructs split slides from its internal Static Assets binding.
 
-The GitHub repository is public and contains the complete slide files and their history. The owner has confirmed that the educational content itself is publishable. The website account boundary is therefore an access and personal-library feature, not a claim that the underlying texts are confidential or protected by DRM. The private R2 path still prevents ordinary deployed-site URLs from bypassing the intended sign-in experience.
+The GitHub repository and deployed asset bundle contain the complete slide files. The owner has confirmed that the educational content itself is publishable. The website account boundary is therefore an access and personal-library feature, not a confidentiality or DRM claim. The Worker still prevents ordinary deployed-site URLs from bypassing the intended sign-in experience.
 
 ## Owner checks before launch
 
