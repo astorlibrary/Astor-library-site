@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const resourceData = require('./resource-data');
 const authorProfileData = require('./author-profiles');
+const editionUpdateData = require('./edition-update-data');
 
 const root = process.cwd();
 const SITE_URL = 'https://astorlibrary.com';
@@ -19,6 +20,10 @@ const collectionFiles = [
   'victorian/index.html',
   'american/index.html',
   'modern/index.html'
+];
+const specialistCollectionFiles = [
+  'shakespeare/apocrypha/index.html',
+  'shakespeare/expanded-scholarly-editions/index.html'
 ];
 
 function walk(directory, results, ignored) {
@@ -186,6 +191,9 @@ if (!homepageMain.includes('class="catalogue-colophon"')) failures.push('The hom
 if (!homepageMain.includes('class="seasonal-feature"')) failures.push('The homepage is missing its summer feature');
 if (!homepageMain.includes('Summer at Astor')) failures.push('The homepage summer feature is missing its title');
 if (homepageMain.includes('6 July–16 August') || /<time\b[^>]*datetime="2026-07-06\/2026-08-16"/i.test(homepageMain)) failures.push('The homepage summer feature still shows its retired date range');
+for (const total of ['<strong>97</strong><span>main editions</span>', '<strong>41</strong><span>study editions</span>', '<strong>44</strong><span>free guides</span>']) {
+  if (!homepageMain.includes(total)) failures.push('The homepage is missing its current catalogue total: ' + total);
+}
 for (const href of ['/books/a-midsummer-nights-dream/', '/books/as-you-like-it/', '/books/the-odyssey/', '/books/adventures-of-huckleberry-finn/']) {
   if (!homepageMain.includes('href="' + href + '"')) failures.push('The homepage summer feature is missing ' + href);
 }
@@ -411,6 +419,55 @@ const bookFiles = htmlFiles.filter(file => {
   const parts = relative(file).split(path.sep);
   return parts.length === 3 && parts[0] === 'books' && parts[2] === 'index.html';
 });
+if (bookFiles.length !== 97) failures.push('The main catalogue contains ' + bookFiles.length + ' books but should contain 97');
+if (memberships.get('/books/paradise-lost/') !== 'renaissance-early-modern/index.html') {
+  failures.push('Paradise Lost must be listed only in Renaissance & Early Modern');
+}
+
+for (const book of editionUpdateData) {
+  const href = '/books/' + book.slug + '/';
+  const file = path.join(root, 'books', book.slug, 'index.html');
+  if (!fs.existsSync(file)) {
+    failures.push('The requested main-edition page is missing: ' + book.slug);
+    continue;
+  }
+  const html = fs.readFileSync(file, 'utf8');
+  if (memberships.get(href) !== book.collectionFile) failures.push(href + ' is not listed in ' + book.collectionFile);
+  if (!html.includes('href="' + book.purchaseUrl + '"')) failures.push(href + ' is missing its supplied purchase link');
+  if (countMatches(html, /class="fact"/g) !== 4) failures.push(href + ' must contain four checked facts');
+  if (countMatches(html, /<li>/g) < 4 || !html.includes('class="edition-includes"')) failures.push(href + ' is missing its edition contents');
+  if (countMatches(html, /class="prod-card prose-card"/g) !== 2) failures.push(href + ' must contain two substantive reading sections');
+  for (const className of ['page-contents', 'quick-facts', 'astor-reading-grid', 'astor-context-grid', 'astor-question-grid', 'book-end-nav']) {
+    if (!html.includes('class="' + className)) failures.push(href + ' is missing ' + className);
+  }
+}
+
+const apocryphaFile = path.join(root, specialistCollectionFiles[0]);
+const expandedFile = path.join(root, specialistCollectionFiles[1]);
+if (!fs.existsSync(apocryphaFile)) {
+  failures.push('The Shakespeare Apocrypha collection is missing');
+} else {
+  const html = fs.readFileSync(apocryphaFile, 'utf8');
+  if (countMatches(html, /class="specialist-volume-card"/g) !== 8) failures.push('The Shakespeare Apocrypha collection must contain eight volumes');
+  let previous = -1;
+  for (const book of editionUpdateData.filter(item => item.range === 'apocrypha')) {
+    const position = html.indexOf('/books/' + book.slug + '/');
+    if (position === -1 || position < previous) failures.push('The Shakespeare Apocrypha volumes are not in numerical order');
+    previous = position;
+  }
+}
+if (!fs.existsSync(expandedFile)) {
+  failures.push('The Expanded Scholarly Editions collection is missing');
+} else {
+  const html = fs.readFileSync(expandedFile, 'utf8');
+  if (countMatches(html, /class="specialist-volume-card"/g) !== 5) failures.push('The Expanded Scholarly Editions collection must contain five editions');
+  for (const book of editionUpdateData.filter(item => item.range === 'expanded')) {
+    if (!html.includes('/books/' + book.slug + '/') || !html.includes(book.counterpart)) failures.push('The expanded collection is missing the edition pair for ' + book.shortTitle);
+    const standardFile = path.join(root, book.counterpart.replace(/^\//, ''), 'index.html');
+    const standardHtml = fs.existsSync(standardFile) ? fs.readFileSync(standardFile, 'utf8') : '';
+    if (!standardHtml.includes('/books/' + book.slug + '/')) failures.push(book.counterpart + ' is missing its Expanded Scholarly Edition choice');
+  }
+}
 
 const newShakespeareSlugs = [
   'henry-v',
@@ -477,11 +534,11 @@ for (const [slug, purchaseUrl] of Object.entries(mainAdditionLinks)) {
 
 const shakespeareHub = fs.readFileSync(path.join(root, 'shakespeare', 'index.html'), 'utf8');
 if (!shakespeareHub.includes('class="shakespeare-reading-room"')) failures.push('The Shakespeare collection is missing its reading room');
-if (countMatches(shakespeareHub, /<article class="edition-card">/g) !== 41) failures.push('The Shakespeare collection must contain 41 Astor edition records');
+if (countMatches(shakespeareHub, /<article class="edition-card">/g) !== 56) failures.push('The Shakespeare collection must contain 56 Astor edition records');
 
 const studyHub = fs.readFileSync(path.join(root, 'study', 'index.html'), 'utf8');
-if (countMatches(studyHub, /class="study-card(?: dual)?"/g) !== 40) failures.push('The study collection must contain 40 editions');
-for (const studyUrl of ['https://mybook.to/HPiX', 'https://mybook.to/ENJxO', 'https://mybook.to/x8aiiFG', 'https://mybook.to/2QzQqmh', 'https://mybook.to/o0Am2j', 'https://mybook.to/2mR1', 'https://mybook.to/gf9uZE', 'https://mybook.to/l4zC9']) {
+if (countMatches(studyHub, /class="study-card(?: dual)?"/g) !== 41) failures.push('The study collection must contain 41 editions');
+for (const studyUrl of ['https://mybook.to/HPiX', 'https://mybook.to/ENJxO', 'https://mybook.to/x8aiiFG', 'https://mybook.to/2QzQqmh', 'https://mybook.to/M4c6K', 'https://mybook.to/o0Am2j', 'https://mybook.to/2mR1', 'https://mybook.to/gf9uZE', 'https://mybook.to/l4zC9']) {
   if (!studyHub.includes('href="' + studyUrl + '"') && !studyHub.includes('data-buy-url="' + studyUrl + '"')) failures.push('The study collection is missing ' + studyUrl);
 }
 for (const slug of ['henry-v', 'the-merchant-of-venice', 'the-taming-of-the-shrew', 'rime-of-the-ancient-mariner']) {
@@ -632,19 +689,36 @@ if (fs.existsSync(distDir)) {
         }
       }
       const isBookListing = fileName === 'library/index.html' || fileName === 'explore/index.html' || collectionFiles.includes(fileName);
-      if (isBookListing) {
-        for (const card of html.matchAll(/<(?:article|a)\b[^>]*class="[^"]*\b(?:edition-card|catalog-card|explore-card-book)\b[^"]*"[^>]*>[\s\S]*?<\/\s*(?:article|a)>/gi)) {
-          const image = card[0].match(/<img\b[^>]*>/i)?.[0] || '';
-          if (image && !/\bloading="lazy"/i.test(image)) failures.push('dist/' + fileName + ' eagerly loads a catalogue cover');
-          if (image && !/\bsrc="\/assets\/book-thumbs\//i.test(image)) failures.push('dist/' + fileName + ' is not using its light catalogue cover');
+      const isOptimizedListing = isBookListing || fileName === 'resources/index.html' || fileName === 'study/index.html' || specialistCollectionFiles.includes(fileName);
+      if (isOptimizedListing) {
+        for (const card of html.matchAll(/<(article|a)\b[^>]*class="[^"]*\b(?:edition-card|catalog-card|explore-card-(?:book|resource|study)|resource-card|study-card|specialist-volume-card)\b[^"]*"[^>]*>[\s\S]*?<\/\1>/gi)) {
+          const images = Array.from(card[0].matchAll(/<img\b[^>]*>/gi), match => match[0]);
+          for (const image of images) {
+            if (isBookListing && !/\bloading="lazy"/i.test(image)) failures.push('dist/' + fileName + ' eagerly loads a catalogue cover');
+            if (!/\bsrc="\/assets\/book-thumbs\//i.test(image)) failures.push('dist/' + fileName + ' is not using a light catalogue image');
+          }
         }
       }
     }
     if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
       failures.push('dist/' + fileName + ' is missing its book description for search engines');
     }
-    if (/^(?:authors|subjects|passage-room|classic-literature|library|resources|study|explore|reading-routes|site-index|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
+    if (/^(?:(?:authors|subjects|passage-room|teach|classic-literature|library|resources|study|explore|reading-routes|site-index|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html|shakespeare\/(?:apocrypha|expanded-scholarly-editions)\/index\.html)$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
       failures.push('dist/' + fileName + ' is missing its collection description for search engines');
+    }
+    if (specialistCollectionFiles.includes(fileName)) {
+      const collectionData = html.match(/<script type="application\/ld\+json" data-astor-collection-schema>([\s\S]*?)<\/script>/i);
+      if (collectionData) {
+        try {
+          const schema = JSON.parse(collectionData[1]);
+          const range = fileName === specialistCollectionFiles[0] ? 'apocrypha' : 'expanded';
+          const expected = editionUpdateData.filter(book => book.range === range).map(book => SITE_URL + '/books/' + book.slug + '/');
+          const actual = (schema.mainEntity?.itemListElement || []).map(item => item.url);
+          if (JSON.stringify(actual) !== JSON.stringify(expected)) failures.push('dist/' + fileName + ' has the wrong machine-readable edition order');
+        } catch {
+          failures.push('dist/' + fileName + ' has invalid collection data');
+        }
+      }
     }
     if (/^passage-room\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-passage-schema')) {
       failures.push('dist/' + fileName + ' is missing its close-reading description for search engines');

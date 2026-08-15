@@ -6,7 +6,7 @@ const root = process.cwd();
 const outDir = path.join(root, 'dist');
 const SITE_URL = 'https://astorlibrary.com';
 // This date changes only when a site-wide release materially updates every page.
-const SITE_LASTMOD = '2026-08-11';
+const SITE_LASTMOD = '2026-08-15';
 const discoveryFile = path.join(root, 'assets', 'content-index.json');
 const discovery = fs.existsSync(discoveryFile)
   ? JSON.parse(fs.readFileSync(discoveryFile, 'utf8'))
@@ -15,6 +15,17 @@ const thumbnailMapFile = path.join(root, 'assets', 'book-thumbnails.json');
 const bookThumbnails = fs.existsSync(thumbnailMapFile)
   ? JSON.parse(fs.readFileSync(thumbnailMapFile, 'utf8'))
   : {};
+const collectionBanners = {
+  '/Ancient%20and%20Epic.png': '/assets/home/ancient-epic.jpg',
+  '/Renaissance%20and%20Early%20Modern.png': '/assets/home/renaissance-early-modern.jpg',
+  '/Shakespeare.png': '/assets/home/shakespeare.jpg',
+  '/Restoration%20and%20Enlightenment.png': '/assets/home/restoration-enlightenment.jpg',
+  '/Romantic%20and%20Regency.png': '/assets/home/romantic-regency.jpg',
+  '/Victorian.png': '/assets/home/victorian.jpg',
+  '/American%20Classics.png': '/assets/home/american-classics.jpg',
+  '/Modern%20Classics.png': '/assets/home/modern-classics.jpg',
+  '/Study%20Resources.png': '/assets/home/study-editions.jpg'
+};
 
 const excluded = new Set([
   '.git',
@@ -59,14 +70,13 @@ function promoteFirstMainImage(html) {
 }
 
 function useBookThumbnail(tag, sourceFile) {
-  if (!/\bloading="lazy"/i.test(tag)) return tag;
   const source = tag.match(/\bsrc="([^"]+)"/i)?.[1];
   if (!source || /^(?:[a-z]+:|\/\/)/i.test(source)) return tag;
   const pageDirectory = path.posix.dirname(pageHref(sourceFile));
   const resolvedSource = source.startsWith('/')
     ? source
     : path.posix.resolve(pageDirectory, source);
-  const thumbnail = bookThumbnails[resolvedSource] || '';
+  const thumbnail = collectionBanners[resolvedSource] || bookThumbnails[resolvedSource] || '';
   return thumbnail ? tag.replace(/\bsrc="[^"]+"/i, 'src="' + thumbnail + '"') : tag;
 }
 
@@ -347,7 +357,9 @@ function addCollectionStructuredData(html, source) {
     items = (discovery.books || []).filter(book => subject.relatedBooks?.includes(book.href));
     kind = subject.title + ' books';
   } else if (collection) {
-    items = (discovery.books || []).filter(book => book.collection === collection.title);
+    items = collection.relatedBooks?.length
+      ? collection.relatedBooks.map(href => (discovery.books || []).find(book => book.href === href)).filter(Boolean)
+      : (discovery.books || []).filter(book => book.collection === collection.title);
     kind = collection.title + ' books';
   } else if (href === '/resources/') {
     items = discovery.resources || [];

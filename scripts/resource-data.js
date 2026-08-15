@@ -197,6 +197,46 @@ const resources = [
     tags: ['Dracula', 'Gender']
   },
   {
+    category: 'victorian',
+    title: 'A Charles Dickens Christmas',
+    titleHtml: 'A Charles Dickens Christmas',
+    description: 'Explore how Dickens and A Christmas Carol helped reinvent Christmas through literary history, charity, family and seasonal tradition.',
+    image: 'A Dickens Christmas.png',
+    url: 'https://charles-dickens-christma-no08my6.gamma.site/',
+    relatedBooks: ['/books/a-christmas-carol/', '/books/cricket-on-the-hearth/', '/books/the-haunted-man-and-the-ghosts-bargain/'],
+    tags: ['Charles Dickens', 'Christmas']
+  },
+  {
+    category: 'victorian',
+    title: 'Ghost Stories in Literature: A Window into Human Belief',
+    titleHtml: 'Ghost Stories in Literature: A Window into Human Belief',
+    description: 'Explore what stories about the dead reveal about belief, memory, the supernatural and the living cultures that tell them.',
+    image: 'Literature and Ghost Stories.png',
+    url: 'https://ghost-stories-a-window-i-5hwf1y6.gamma.site/',
+    relatedBooks: ['/books/the-haunted-man-and-the-ghosts-bargain/', '/books/dracula/', '/books/frankenstein/'],
+    tags: ['Ghost stories', 'Supernatural belief']
+  },
+  {
+    category: 'victorian',
+    title: 'Christmas Traditions',
+    titleHtml: 'Christmas Traditions',
+    description: 'Trace the Victorian customs, rituals and influences that shaped the modern Christmas, from domestic celebration to seasonal literature.',
+    image: 'A Victorian Christmas.png',
+    url: 'https://victorian-christmas-trad-ebopxnl.gamma.site/',
+    relatedBooks: ['/books/a-victorian-christmas/', '/books/a-christmas-carol/', '/books/cricket-on-the-hearth/'],
+    tags: ['Victorian Christmas', 'Cultural history']
+  },
+  {
+    category: 'victorian',
+    title: 'How Literature Shaped Halloween',
+    titleHtml: 'How Literature Shaped Halloween',
+    description: 'Trace the dark literary thread from ancient Celtic ritual through ghost stories and Gothic masterpieces to the modern Halloween.',
+    image: 'How Literature Shaped Halloween.png',
+    url: 'https://how-literature-shaped-ha-ai2opsd.gamma.site/',
+    relatedBooks: ['/books/frankenstein/', '/books/dracula/', '/books/jekyll-and-hyde/', '/books/dorian-gray/'],
+    tags: ['Halloween', 'Gothic literature']
+  },
+  {
     category: 'modern',
     title: 'The Kite Runner: Walkthrough',
     titleHtml: '<em>The Kite Runner</em>: Walkthrough',
