@@ -1,13 +1,13 @@
 {
   "counts": {
-    "books": 73,
-    "authors": 30,
+    "books": 97,
+    "authors": 43,
     "subjects": 9,
-    "resources": 40,
-    "studyEditions": 40,
-    "collections": 8,
+    "resources": 44,
+    "studyEditions": 41,
+    "collections": 10,
     "passages": 15,
-    "entries": 215
+    "entries": 259
   },
   "books": [
     {
@@ -34,7 +34,7 @@
       "href": "/books/a-midsummer-nights-dream/",
       "image": "/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png",
       "imageAlt": "Astor Library A Midsummer Night's Dream cover",
-      "search": "A Midsummer Night's Dream William Shakespeare Shakespeare Four young lovers, quarrelling fairies and a troupe of amateur actors collide in a moonlit forest where desire refuses to stay fixed. Law and marriage Desire disordered Power, not prettiness Theatre watching itself A Midsummer Night's Dream, William Shakespeare Before entering the wood Text and early publication First Quarto: Thomas Fisher Second Quarto and false dating First Folio Sources and story traditions Pyramus and Thisbe Theseus, Hippolyta and court authority Puck and Robin Goodfellow Aristocrats and artisans Worlds of the play Civic law and forced choice Fuseli and the darker fairy imagination Bad tragedy, good theatre Key dates Probable composition period Francis Meres record First Quarto Pepys at Drury Lane Performance history Madame Vestris at Covent Garden Peter Brook and the white box Erica Whyman: A Play for the Nation Immersive and darker revivals Music, opera and screen versions Mendelssohn Britten's opera Hollywood film Michael Hoffman film Four companies share the stage Law gives desire a deadline Private vows keep changing direction Domestic conflict alters nature Making theatre becomes the honest work Six changes made in the night The ending remembers more than it admits Sources and further reading",
+      "search": "A Midsummer Night's Dream William Shakespeare Shakespeare Four young lovers, quarrelling fairies and a troupe of amateur actors collide in a moonlit forest where desire refuses to stay fixed. Law and marriage Desire disordered Power, not prettiness Theatre watching itself A Midsummer Night's Dream, William Shakespeare Before entering the wood Text and early publication First Quarto: Thomas Fisher Second Quarto and false dating First Folio Sources and story traditions Pyramus and Thisbe Theseus, Hippolyta and court authority Puck and Robin Goodfellow Aristocrats and artisans Worlds of the play Civic law and forced choice Fuseli and the darker fairy imagination Bad tragedy, good theatre Key dates Probable composition period Francis Meres record First Quarto Pepys at Drury Lane Performance history Madame Vestris at Covent Garden Peter Brook and the white box Erica Whyman: A Play for the Nation Immersive and darker revivals Music, opera and screen versions Mendelssohn Britten's opera Hollywood film Michael Hoffman film Four companies share the stage Law gives desire a deadline Private vows keep changing direction Domestic conflict alters nature Making theatre becomes the honest work Six changes made in the night The ending remembers more than it admits Sources and further reading Standard or expanded scholarship.",
       "authorHref": "/shakespeare/",
       "subjects": [
         {
@@ -42,6 +42,48 @@
           "href": "/subjects/comedy/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "A Midsummer Night’s Dream — Expanded Scholarly Edition",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "A premium complete edition with same-page commentary and extensive scholarship on the early texts, fairies and folklore, marriage law, the lovers, mechanicals, performance and adaptation.",
+      "href": "/books/a-midsummer-nights-dream-expanded-scholarly-edition/",
+      "image": "/Midsummer%20Night%27s%20Dream%20Scholarly%20Cover.png",
+      "imageAlt": "Astor Library A Midsummer Night’s Dream — Expanded Scholarly Edition cover",
+      "search": "A Midsummer Night’s Dream — Expanded Scholarly Edition William Shakespeare Shakespeare A premium complete edition with same-page commentary and extensive scholarship on the early texts, fairies and folklore, marriage law, the lovers, mechanicals, performance and adaptation. What this Astor edition contains. A Midsummer Night’s Dream The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Expanded Scholarly Edition Three questions carried by the edition. Desire and control Fairy disturbance Watching a play Standard or expanded scholarship.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "A Victorian Christmas",
+      "author": "Astor Library",
+      "collection": "Victorian",
+      "description": "A history of the nineteenth-century changes that created much of the Christmas culture inherited by later generations, from trees, cards and crackers to family gatherings, charity, carols and ghost stories.",
+      "href": "/books/a-victorian-christmas/",
+      "image": "/A%20Victorian%20Christmas%20Main%20Cover.png",
+      "imageAlt": "Astor Library A Victorian Christmas cover",
+      "search": "A Victorian Christmas Astor Library Victorian A history of the nineteenth-century changes that created much of the Christmas culture inherited by later generations, from trees, cards and crackers to family gatherings, charity, carols and ghost stories. What this Astor edition contains. A Victorian Christmas The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Cultural history Three questions carried by the edition. Tradition and invention Home and labour Print and imagination",
+      "authorHref": "/authors/#astor-library",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "A Yorkshire Tragedy",
+      "author": "Thomas Middleton",
+      "collection": "Shakespeare",
+      "description": "A concentrated ten-scene domestic tragedy based on Walter Calverley’s 1605 attack on his family, printed under Shakespeare’s name but now most strongly attributed to Thomas Middleton.",
+      "href": "/books/a-yorkshire-tragedy/",
+      "image": "/A%20Yorkshire%20Tragedy%20Main%20Cover.png",
+      "imageAlt": "Astor Library A Yorkshire Tragedy cover",
+      "search": "A Yorkshire Tragedy Thomas Middleton Shakespeare A concentrated ten-scene domestic tragedy based on Walter Calverley’s 1605 attack on his family, printed under Shakespeare’s name but now most strongly attributed to Thomas Middleton. What this Astor edition contains. A Yorkshire Tragedy The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Shakespeare Apocrypha · Volume VIII Three questions carried by the edition. Debt and family Compression True crime and drama",
+      "authorHref": "/authors/#thomas-middleton",
+      "subjects": []
     },
     {
       "type": "book",
@@ -122,6 +164,20 @@
           "href": "/subjects/tragedy/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Arden of Faversham",
+      "author": "Anonymous; partly attributed to Shakespeare or Thomas Kyd",
+      "collection": "Shakespeare",
+      "description": "An annotated edition of the 1592 domestic tragedy based on a Kent murder of 1551, with the competing cases for Shakespeare, Thomas Kyd and unresolved collaboration presented without false certainty.",
+      "href": "/books/arden-of-faversham/",
+      "image": "/Arden%20of%20Faversham%20Main%20Coverr.png",
+      "imageAlt": "Astor Library Arden of Faversham cover",
+      "search": "Arden of Faversham Anonymous; partly attributed to Shakespeare or Thomas Kyd Shakespeare An annotated edition of the 1592 domestic tragedy based on a Kent murder of 1551, with the competing cases for Shakespeare, Thomas Kyd and unresolved collaboration presented without false certainty. What this Astor edition contains. Arden of Faversham The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Shakespeare Apocrypha · Volume II Three questions carried by the edition. Crime at home Providence and accident Attribution and evidence",
+      "authorHref": "/authors/#anonymous-partly-attributed-to-shakespeare-or-thomas-kyd",
+      "subjects": []
     },
     {
       "type": "book",
@@ -224,6 +280,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Edward III",
+      "author": "William Shakespeare and a collaborator",
+      "collection": "Shakespeare",
+      "description": "A specialist annotated edition of the anonymous 1596 history play now generally understood to contain a substantial contribution by Shakespeare, although the identity of his collaborator remains unsettled.",
+      "href": "/books/edward-iii/",
+      "image": "/Edward%20III%20Main%20Cover.png",
+      "imageAlt": "Astor Library Edward III cover",
+      "search": "Edward III William Shakespeare and a collaborator Shakespeare A specialist annotated edition of the anonymous 1596 history play now generally understood to contain a substantial contribution by Shakespeare, although the identity of his collaborator remains unsettled. What this Astor edition contains. Edward III The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Shakespeare Apocrypha · Volume I Three questions carried by the edition. Kingship and self-command Father and prince A disputed canon",
+      "authorHref": "/authors/#william-shakespeare-and-a-collaborator",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Frankenstein; or, The Modern Prometheus",
       "author": "Mary Shelley",
       "collection": "Romantic & Regency",
@@ -288,7 +358,7 @@
       "href": "/books/hamlet/",
       "image": "/Hamlet.png",
       "imageAlt": "Astor Library Hamlet cover",
-      "search": "Hamlet William Shakespeare Shakespeare A prince returns to Elsinore to mourn his father and finds a court built on haste, secrecy and surveillance. Hamlet, William Shakespeare Denmark under watch Text and publication First Quarto: Q1 Second Quarto: Q2 First Folio Sources and revenge tragedy Amleth source tradition Ghost, murder and delay Theatre as investigation Elsinore, spying and court politics Ghost and succession crisis Performance and public language Spying as habit Images, memory and afterlife Ophelia and Victorian memory Hamlet as actor’s test Sarah Bernhardt and cross-gender Hamlet Key dates Probable composition period Stationers’ Register First Quarto Second Quarto Stage and screen adaptations Restoration stage Richard Burton and Broadway David Warner and Peter Hall at the RSC Major screen records Modern transpositions Six tests of knowledge Why delay keeps changing He delays to test a story He delays because actions continue after death He acts while appearing not to act Who owns the ending? Sources and further reading",
+      "search": "Hamlet William Shakespeare Shakespeare A prince returns to Elsinore to mourn his father and finds a court built on haste, secrecy and surveillance. Hamlet, William Shakespeare Denmark under watch Text and publication First Quarto: Q1 Second Quarto: Q2 First Folio Sources and revenge tragedy Amleth source tradition Ghost, murder and delay Theatre as investigation Elsinore, spying and court politics Ghost and succession crisis Performance and public language Spying as habit Images, memory and afterlife Ophelia and Victorian memory Hamlet as actor’s test Sarah Bernhardt and cross-gender Hamlet Key dates Probable composition period Stationers’ Register First Quarto Second Quarto Stage and screen adaptations Restoration stage Richard Burton and Broadway David Warner and Peter Hall at the RSC Major screen records Modern transpositions Six tests of knowledge Why delay keeps changing He delays to test a story He delays because actions continue after death He acts while appearing not to act Who owns the ending? Sources and further reading Standard or expanded scholarship.",
       "authorHref": "/shakespeare/",
       "subjects": [
         {
@@ -296,6 +366,20 @@
           "href": "/subjects/tragedy/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Hamlet — Expanded Scholarly Edition",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "A premium, substantially expanded edition of Hamlet with a complete conflated text, same-page commentary and extensive material on textual history, criticism, performance and interpretation.",
+      "href": "/books/hamlet-expanded-scholarly-edition/",
+      "image": "/Hamlet%20Scholarly%20Cover.png",
+      "imageAlt": "Astor Library Hamlet — Expanded Scholarly Edition cover",
+      "search": "Hamlet — Expanded Scholarly Edition William Shakespeare Shakespeare A premium, substantially expanded edition of Hamlet with a complete conflated text, same-page commentary and extensive material on textual history, criticism, performance and interpretation. What this Astor edition contains. Hamlet The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Expanded Scholarly Edition Three questions carried by the edition. Evidence and action Text and version Four centuries on stage Standard or expanded scholarship.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -461,6 +545,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Jane Eyre",
+      "author": "Charlotte Brontë",
+      "collection": "Victorian",
+      "description": "Charlotte Brontë’s novel of independence, conscience and love follows Jane from an abused childhood through Lowood School and Thornfield Hall to the point at which she can determine the terms of her own life.",
+      "href": "/books/jane-eyre/",
+      "image": "/Jane%20Eyre%20Main%20Cover.png",
+      "imageAlt": "Astor Library Jane Eyre cover",
+      "search": "Jane Eyre Charlotte Brontë Victorian Charlotte Brontë’s novel of independence, conscience and love follows Jane from an abused childhood through Lowood School and Thornfield Hall to the point at which she can determine the terms of her own life. What this Astor edition contains. Jane Eyre The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1847 Three questions carried by the edition. Independence and equality Gothic and domestic space Voice and judgement",
+      "authorHref": "/authors/#charlotte-bronte",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "King John",
       "author": "William Shakespeare",
       "collection": "Shakespeare",
@@ -487,7 +585,7 @@
       "href": "/books/king-lear/",
       "image": "/King%20Lear.png",
       "imageAlt": "Astor Library King Lear cover",
-      "search": "King Lear William Shakespeare Shakespeare Lear gives away his kingdom but expects to keep the authority of a king, while Gloucester makes an equally ruinous judgement about his sons. Division as catastrophe Quarto against Folio One play, many Lears King Lear, William Shakespeare A kingdom divided Text and publication First Quarto: True Chronicle Historie Second Quarto: Pavier reprint First Folio: The Tragedie of King Lear Source history Geoffrey, Holinshed and the Leir story Mirror for Magistrates and Spenser Sidney’s Arcadia and Gloucester Harsnett, Poor Tom and the fiends Visual history Benjamin West: Lear and Cordelia Poole: the tragic ending restored to sight The storm as stage image Performance timeline Earlier King Leir Court performance Nahum Tate’s History of King Lear Macready and the Fool restored John Gielgud at the Old Vic Trevor Nunn’s RSC Lear Trevor Nunn and Ian McKellen Gregory Doran and Antony Sher Stage and screen adaptations Language and interpretation Sources and further reading",
+      "search": "King Lear William Shakespeare Shakespeare Lear gives away his kingdom but expects to keep the authority of a king, while Gloucester makes an equally ruinous judgement about his sons. Division as catastrophe Quarto against Folio One play, many Lears King Lear, William Shakespeare A kingdom divided Text and publication First Quarto: True Chronicle Historie Second Quarto: Pavier reprint First Folio: The Tragedie of King Lear Source history Geoffrey, Holinshed and the Leir story Mirror for Magistrates and Spenser Sidney’s Arcadia and Gloucester Harsnett, Poor Tom and the fiends Visual history Benjamin West: Lear and Cordelia Poole: the tragic ending restored to sight The storm as stage image Performance timeline Earlier King Leir Court performance Nahum Tate’s History of King Lear Macready and the Fool restored John Gielgud at the Old Vic Trevor Nunn’s RSC Lear Trevor Nunn and Ian McKellen Gregory Doran and Antony Sher Stage and screen adaptations Language and interpretation Sources and further reading Standard or expanded scholarship.",
       "authorHref": "/shakespeare/",
       "subjects": [
         {
@@ -499,6 +597,34 @@
           "href": "/subjects/tragedy/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "King Lear — Expanded Scholarly Edition",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "A premium conflated edition of King Lear with full commentary and an extended account of the Quarto and Folio, political context, double plot, criticism and performance history.",
+      "href": "/books/king-lear-expanded-scholarly-edition/",
+      "image": "/King%20Lear%20Scholarly%20Cover.png",
+      "imageAlt": "Astor Library King Lear — Expanded Scholarly Edition cover",
+      "search": "King Lear — Expanded Scholarly Edition William Shakespeare Shakespeare A premium conflated edition of King Lear with full commentary and an extended account of the Quarto and Folio, political context, double plot, criticism and performance history. What this Astor edition contains. King Lear The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Expanded Scholarly Edition Three questions carried by the edition. Authority after surrender Two texts Sight and justice Standard or expanded scholarship.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Locrine",
+      "author": "Anonymous; attributed variously to Greene, Peele and others",
+      "collection": "Shakespeare",
+      "description": "A complete annotated text of the 1595 legendary British tragedy, whose title-page initials W.",
+      "href": "/books/locrine/",
+      "image": "/Locrine%20Main%20Cover.png",
+      "imageAlt": "Astor Library Locrine cover",
+      "search": "Locrine Anonymous; attributed variously to Greene, Peele and others Shakespeare A complete annotated text of the 1595 legendary British tragedy, whose title-page initials W. What this Astor edition contains. Locrine The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Shakespeare Apocrypha · Volume III Three questions carried by the edition. Legendary Britain Dumb show and tragedy Initials and attribution",
+      "authorHref": "/authors/#anonymous-attributed-variously-to-greene-peele-and-others",
+      "subjects": []
     },
     {
       "type": "book",
@@ -529,7 +655,7 @@
       "href": "/books/macbeth/",
       "image": "/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png",
       "imageAlt": "Astor Library Macbeth cover",
-      "search": "Macbeth William Shakespeare Shakespeare After hearing the witches’ prophecy, Macbeth murders Duncan and becomes king. Macbeth, William Shakespeare The road to the crown No quarto, First Folio only Holinshed, Banquo and James I Equivocation and the Gunpowder Plot period Text, sources and first performances Forman’s note and the First Folio The historical Macbeth Restoration and eighteenth-century stage history Davenant’s Restoration Macbeth and Pepys Garrick, Pritchard and Siddons Nineteenth-century theatre and visual culture Macready, Forrest and the Astor Place Riot Verdi’s opera Macbeth Henry Irving, Ellen Terry and Sargent Twentieth century and later Barry Jackson and Orson Welles Trevor Nunn: Ian McKellen and Judi Dench Later RSC records Recent productions Yaël Farber: Almeida Theatre Max Webster: Donmar Warehouse Other modern records Screen versions Major screen versions Sources and further reading",
+      "search": "Macbeth William Shakespeare Shakespeare After hearing the witches’ prophecy, Macbeth murders Duncan and becomes king. Macbeth, William Shakespeare The road to the crown No quarto, First Folio only Holinshed, Banquo and James I Equivocation and the Gunpowder Plot period Text, sources and first performances Forman’s note and the First Folio The historical Macbeth Restoration and eighteenth-century stage history Davenant’s Restoration Macbeth and Pepys Garrick, Pritchard and Siddons Nineteenth-century theatre and visual culture Macready, Forrest and the Astor Place Riot Verdi’s opera Macbeth Henry Irving, Ellen Terry and Sargent Twentieth century and later Barry Jackson and Orson Welles Trevor Nunn: Ian McKellen and Judi Dench Later RSC records Recent productions Yaël Farber: Almeida Theatre Max Webster: Donmar Warehouse Other modern records Screen versions Major screen versions Sources and further reading Standard or expanded scholarship.",
       "authorHref": "/shakespeare/",
       "subjects": [
         {
@@ -541,6 +667,20 @@
           "href": "/subjects/tragedy/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Macbeth — Expanded Scholarly Edition",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "A premium complete edition of Macbeth with same-page commentary and extensive essays on the Folio text, Middleton, James I, witchcraft, equivocation, psychology, criticism and performance.",
+      "href": "/books/macbeth-expanded-scholarly-edition/",
+      "image": "/Macbeth%20Scholarly%20Cover.png",
+      "imageAlt": "Astor Library Macbeth — Expanded Scholarly Edition cover",
+      "search": "Macbeth — Expanded Scholarly Edition William Shakespeare Shakespeare A premium complete edition of Macbeth with same-page commentary and extensive essays on the Folio text, Middleton, James I, witchcraft, equivocation, psychology, criticism and performance. What this Astor edition contains. Macbeth The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Expanded Scholarly Edition Three questions carried by the edition. Prophecy and choice Marriage and murder Equivocal text Standard or expanded scholarship.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -579,6 +719,20 @@
           "href": "/subjects/epic-poetry/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Mrs Dalloway",
+      "author": "Virginia Woolf",
+      "collection": "Modern Classics",
+      "description": "Across one June day in London, Woolf connects Clarissa Dalloway’s preparations for a party with the final hours of Septimus Warren Smith, a veteran failed by the doctors appointed to treat him.",
+      "href": "/books/mrs-dalloway/",
+      "image": "/Mrs%20Dalloway%20Main%20Cover.png",
+      "imageAlt": "Astor Library Mrs Dalloway cover",
+      "search": "Mrs Dalloway Virginia Woolf Modern Classics Across one June day in London, Woolf connects Clarissa Dalloway’s preparations for a party with the final hours of Septimus Warren Smith, a veteran failed by the doctors appointed to treat him. What this Astor edition contains. Mrs Dalloway The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1925 Three questions carried by the edition. Time and consciousness War and medicine Privacy and society",
+      "authorHref": "/authors/#virginia-woolf",
+      "subjects": []
     },
     {
       "type": "book",
@@ -632,7 +786,7 @@
       "href": "/books/othello/",
       "image": "/Othello.png",
       "imageAlt": "Astor Library Othello cover",
-      "search": "Othello William Shakespeare Shakespeare Iago persuades Othello that Desdemona has been unfaithful. Public honour Private pressure Seeing badly Quarto and Folio Othello, William Shakespeare At a glance Text and early publication First Quarto First Folio Why textual choice matters Source history Hecatommithi State service and frontier pressure Ottoman context Early modern terms Power, trust and interpretation Desdemona's choice Motives and improvisation Reputation and office Witness too late Characters General, husband, interpreter Choice, loyalty, vulnerability Director of false evidence Practical witness On stage Whitehall and the King's Men Margaret Hughes and Desdemona Kean, Booth, Salvini and Irving Iqbal Khan at the RSC Clint Dyer at the National Theatre Screen versions Orson Welles Laurence Olivier Oliver Parker O Sources and further reading",
+      "search": "Othello William Shakespeare Shakespeare Iago persuades Othello that Desdemona has been unfaithful. Public honour Private pressure Seeing badly Quarto and Folio Othello, William Shakespeare At a glance Text and early publication First Quarto First Folio Why textual choice matters Source history Hecatommithi State service and frontier pressure Ottoman context Early modern terms Power, trust and interpretation Desdemona's choice Motives and improvisation Reputation and office Witness too late Characters General, husband, interpreter Choice, loyalty, vulnerability Director of false evidence Practical witness On stage Whitehall and the King's Men Margaret Hughes and Desdemona Kean, Booth, Salvini and Irving Iqbal Khan at the RSC Clint Dyer at the National Theatre Screen versions Orson Welles Laurence Olivier Oliver Parker O Sources and further reading Standard or expanded scholarship.",
       "authorHref": "/shakespeare/",
       "subjects": [
         {
@@ -640,6 +794,20 @@
           "href": "/subjects/tragedy/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Othello — Expanded Scholarly Edition",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "A premium complete edition of Othello with same-page commentary and extended scholarship on text, Venice and Cyprus, race, evidence, dramatic time, criticism and performance.",
+      "href": "/books/othello-expanded-scholarly-edition/",
+      "image": "/Othello%20Scholarly%20Cover.png",
+      "imageAlt": "Astor Library Othello — Expanded Scholarly Edition cover",
+      "search": "Othello — Expanded Scholarly Edition William Shakespeare Shakespeare A premium complete edition of Othello with same-page commentary and extended scholarship on text, Venice and Cyprus, race, evidence, dramatic time, criticism and performance. What this Astor edition contains. Othello The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Expanded Scholarly Edition Three questions carried by the edition. Manufactured proof Race and service Text and performance Standard or expanded scholarship.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -665,12 +833,12 @@
       "typeLabel": "Book",
       "title": "Paradise Lost",
       "author": "John Milton",
-      "collection": "Restoration & Enlightenment",
+      "collection": "Renaissance & Early Modern",
       "description": "Milton’s epic begins after a war in Heaven and ends with two people walking out of the only home they have known.",
       "href": "/books/paradise-lost/",
       "image": "/Paradise%20Lost%20Main%20Cover.png",
       "imageAlt": "Astor Library Paradise Lost cover",
-      "search": "Paradise Lost John Milton Restoration & Enlightenment Milton’s epic begins after a war in Heaven and ends with two people walking out of the only home they have known. What this Astor edition contains. Paradise Lost, John Milton From defeated rebellion to a world outside Eden. Hell reorganises defeat Heaven and Eden come into view Raphael tells the larger history Persuasion becomes blame History enters the garden Sentence, persuasion and conversation. The opening sentence declares its scale Satan’s language is powerful because unstable Conversation fails before appetite wins Epic, politics and a poem made by voice. A biblical epic Written after political defeat Dictation and revision The voices inside the argument. The narrator Satan God the Father The Son Adam Eve Questions for analysis and discussion. Why is Satan persuasive? What kind of freedom? Why does Adam eat? What can be restored? Texts, archives and further reading.",
+      "search": "Paradise Lost John Milton Renaissance & Early Modern Milton’s epic begins after a war in Heaven and ends with two people walking out of the only home they have known. What this Astor edition contains. Paradise Lost, John Milton From defeated rebellion to a world outside Eden. Hell reorganises defeat Heaven and Eden come into view Raphael tells the larger history Persuasion becomes blame History enters the garden Sentence, persuasion and conversation. The opening sentence declares its scale Satan’s language is powerful because unstable Conversation fails before appetite wins Epic, politics and a poem made by voice. A biblical epic Written after political defeat Dictation and revision The voices inside the argument. The narrator Satan God the Father The Son Adam Eve Questions for analysis and discussion. Why is Satan persuasive? What kind of freedom? Why does Adam eat? What can be restored? Texts, archives and further reading.",
       "authorHref": "/authors/john-milton/",
       "subjects": [
         {
@@ -753,6 +921,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Robinson Crusoe",
+      "author": "Daniel Defoe",
+      "collection": "Restoration & Enlightenment",
+      "description": "Defoe’s novel follows Crusoe from restless commercial voyages to twenty-eight years on an island, where survival, Providence, labour, property and colonial authority become inseparable.",
+      "href": "/books/robinson-crusoe/",
+      "image": "/Robinson%20Crusoe.png",
+      "imageAlt": "Astor Library Robinson Crusoe cover",
+      "search": "Robinson Crusoe Daniel Defoe Restoration & Enlightenment Defoe’s novel follows Crusoe from restless commercial voyages to twenty-eight years on an island, where survival, Providence, labour, property and colonial authority become inseparable. What this Astor edition contains. Robinson Crusoe The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1719 Three questions carried by the edition. Labour and property Providence and narrative Colonial authority",
+      "authorHref": "/authors/#daniel-defoe",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Romeo and Juliet",
       "author": "William Shakespeare",
       "collection": "Shakespeare",
@@ -772,6 +954,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Selected Poems of John Skelton",
+      "author": "John Skelton",
+      "collection": "Renaissance & Early Modern",
+      "description": "Fourteen poems and sequences display Skelton’s range from formal elegy and devotion to court satire, comic portraiture and the rapid-fire rhyming line that took his name.",
+      "href": "/books/selected-poems-of-john-skelton/",
+      "image": "/Skelton%20Main%20Cover.png",
+      "imageAlt": "Astor Library Selected Poems of John Skelton cover",
+      "search": "Selected Poems of John Skelton John Skelton Renaissance & Early Modern Fourteen poems and sequences display Skelton’s range from formal elegy and devotion to court satire, comic portraiture and the rapid-fire rhyming line that took his name. What this Astor edition contains. Selected Poems of John Skelton The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Early Tudor poetry Three questions carried by the edition. The Skeltonic line Court and danger Selection and text",
+      "authorHref": "/authors/#john-skelton",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Sense and Sensibility",
       "author": "Jane Austen",
       "collection": "Romantic & Regency",
@@ -781,6 +977,34 @@
       "imageAlt": "Astor Library Sense and Sensibility cover",
       "search": "Sense and Sensibility Jane Austen Romantic & Regency Austen’s first published novel sets Elinor’s restraint against Marianne’s candour while inheritance, money and reputation govern the choices open to both sisters. Inheritance before romance Sense and sensibility Silence, letters, reports Austen before costume romance Sense and Sensibility, Jane Austen At a glance Text and publication history First edition: By A Lady Jane Austen before public authorship From Elinor and Marianne to revised novel Second edition and Austen’s next title Regency context: inheritance, income and marriage Property passes away from the women Reduced gentility Attachment and settlement Women carry the public cost What the title does not settle Self-command has a cost Sincerity can misread performance The education runs both ways Austen’s world in pictures The writing house Family property and literary context Richard Bentley and illustrated Austen Characters Language and narrative method On stage and screen BBC serial forms Ang Lee and Emma Thompson Kandukondain Kandukondain BBC, radio, stage and Hallmark Sources and further reading",
       "authorHref": "/authors/jane-austen/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Shakespeare’s Sonnets",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "All 154 sonnets in the 1609 order, with a complete poem, concise headnote and same-page explanation designed to make each argument readable without a separate reference book.",
+      "href": "/books/shakespeares-sonnets/",
+      "image": "/Shakespeare%27s%20Sonnets%20Main%20Cover.png",
+      "imageAlt": "Astor Library Shakespeare’s Sonnets cover",
+      "search": "Shakespeare’s Sonnets William Shakespeare Shakespeare All 154 sonnets in the 1609 order, with a complete poem, concise headnote and same-page explanation designed to make each argument readable without a separate reference book. What this Astor edition contains. Shakespeare’s Sonnets The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Poetry · 1609 Three questions carried by the edition. Sequence and change Time and verse Address and uncertainty",
+      "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Sir Thomas More",
+      "author": "Anthony Munday and collaborators, including an attributed Shakespeare addition",
+      "collection": "Shakespeare",
+      "description": "The complete surviving collaborative play and additions, including the three manuscript pages known as Hand D and widely accepted as Shakespeare’s only surviving dramatic writing in his own hand.",
+      "href": "/books/sir-thomas-more/",
+      "image": "/Sir%20Thomas%20More%20Main%20Cover.png",
+      "imageAlt": "Astor Library Sir Thomas More cover",
+      "search": "Sir Thomas More Anthony Munday and collaborators, including an attributed Shakespeare addition Shakespeare The complete surviving collaborative play and additions, including the three manuscript pages known as Hand D and widely accepted as Shakespeare’s only surviving dramatic writing in his own hand. What this Astor edition contains. Sir Thomas More The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Shakespeare Apocrypha · Volume IV Three questions carried by the edition. Strangers and civic order Conscience and office A manuscript in motion",
+      "authorHref": "/authors/#anthony-munday-and-collaborators-including-an-attributed-shakespeare-addition",
       "subjects": []
     },
     {
@@ -927,6 +1151,48 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "The Haunted Man and the Ghost’s Bargain",
+      "author": "Charles Dickens",
+      "collection": "Victorian",
+      "description": "Dickens’s final Christmas book is a ghost story about memory, suffering and the cost of erasing the past: when Redlaw forgets sorrow, he also loses the compassion that sorrow had taught him.",
+      "href": "/books/the-haunted-man-and-the-ghosts-bargain/",
+      "image": "/The%20Haunted%20Man%20and%20the%20Ghost%27s%20Bargain%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Haunted Man and the Ghost’s Bargain cover",
+      "search": "The Haunted Man and the Ghost’s Bargain Charles Dickens Victorian Dickens’s final Christmas book is a ghost story about memory, suffering and the cost of erasing the past: when Redlaw forgets sorrow, he also loses the compassion that sorrow had taught him. What this Astor edition contains. The Haunted Man and the Ghost’s Bargain The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Christmas book · 1848 Three questions carried by the edition. Memory and sympathy Knowledge and experiment Stage afterlife",
+      "authorHref": "/authors/charles-dickens/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Iliad",
+      "author": "Homer, translated by Samuel Butler",
+      "collection": "Ancient & Epic",
+      "description": "Homer’s epic concentrates on the anger of Achilles during a short period of the Trojan War, moving from his quarrel with Agamemnon to the recovery of Hector’s body by Priam.",
+      "href": "/books/the-iliad/",
+      "image": "/The%20Iliad.png",
+      "imageAlt": "Astor Library The Iliad cover",
+      "search": "The Iliad Homer, translated by Samuel Butler Ancient & Epic Homer’s epic concentrates on the anger of Achilles during a short period of the Trojan War, moving from his quarrel with Agamemnon to the recovery of Hector’s body by Priam. What this Astor edition contains. The Iliad The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Epic · Butler translation, 1898 Three questions carried by the edition. Anger and honour Mortality and glory A human ending",
+      "authorHref": "/authors/#homer-translated-by-samuel-butler",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The London Prodigal",
+      "author": "Anonymous",
+      "collection": "Shakespeare",
+      "description": "The complete 1605 city comedy about debt, false inheritance, marriage and reform, printed under Shakespeare’s name but not accepted as his work.",
+      "href": "/books/the-london-prodigal/",
+      "image": "/The%20London%20Prodigal%20Main%20Cover.png",
+      "imageAlt": "Astor Library The London Prodigal cover",
+      "search": "The London Prodigal Anonymous Shakespeare The complete 1605 city comedy about debt, false inheritance, marriage and reform, printed under Shakespeare’s name but not accepted as his work. What this Astor edition contains. The London Prodigal The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Shakespeare Apocrypha · Volume VI Three questions carried by the edition. Credit and identity Marriage and patience A name on the title page",
+      "authorHref": "/authors/#anonymous",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "The Man Who Was Thursday",
       "author": "G. K. Chesterton",
       "collection": "Modern Classics",
@@ -1041,6 +1307,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "The Puritan",
+      "author": "Thomas Middleton",
+      "collection": "Shakespeare",
+      "description": "A complete modern-spelling edition of the fast Jacobean city comedy printed as written by W.",
+      "href": "/books/the-puritan/",
+      "image": "/The%20Puritan%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Puritan cover",
+      "search": "The Puritan Thomas Middleton Shakespeare A complete modern-spelling edition of the fast Jacobean city comedy printed as written by W. What this Astor edition contains. The Puritan The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Shakespeare Apocrypha · Volume VII Three questions carried by the edition. Fraud as theatre London on stage From Shakespeare to Middleton",
+      "authorHref": "/authors/#thomas-middleton",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "The Rape of Lucrece",
       "author": "William Shakespeare",
       "collection": "Shakespeare",
@@ -1049,6 +1329,20 @@
       "image": "/The%20Rape%20of%20Lucrece%20Main%20Cover.png",
       "imageAlt": "Astor Library The Rape of Lucrece cover",
       "search": "The Rape of Lucrece William Shakespeare Shakespeare A boast about Lucrece’s chastity sends Tarquin from the Roman camp to her home, where hospitality becomes the opening for sexual violence. What this Astor edition contains. The Rape of Lucrece, William Shakespeare From a boast at war to a revolution at home. Praise becomes competition Hospitality is betrayed The world looks unchanged A painting becomes a witness Testimony becomes revolt Praise, consent and the control of a story. When praise becomes dangerous Tarquin knows what he is doing The Troy painting makes a witness Stanza, history and reputation. Rhyme royal and complaint A Roman founding story Chastity and family honour People and voices in the poem. Lucrece Sextus Tarquinius Collatine Lucretius Brutus The narrator Questions for analysis and discussion. What does the poem do with chastity? Why the language of war? Can the painting speak? Who owns the ending? Texts, archives and further reading.",
+      "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Rape of Lucrece and Venus and Adonis",
+      "author": "William Shakespeare",
+      "collection": "Shakespeare",
+      "description": "Shakespeare’s two long narrative poems are presented complete in one edition, with line-by-line same-page notes and material on desire, resistance, violence, grief, testimony and political change.",
+      "href": "/books/the-rape-of-lucrece-and-venus-and-adonis/",
+      "image": "/The%20Rape%20of%20Lucrece%20and%20Venus%20and%20Adonis%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Rape of Lucrece and Venus and Adonis cover",
+      "search": "The Rape of Lucrece and Venus and Adonis William Shakespeare Shakespeare Shakespeare’s two long narrative poems are presented complete in one edition, with line-by-line same-page notes and material on desire, resistance, violence, grief, testimony and political change. What this Astor edition contains. The Rape of Lucrece and Venus and Adonis The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Two narrative poems · 1593–94 Three questions carried by the edition. Desire and refusal Violence and testimony Print and reputation",
       "authorHref": "/shakespeare/",
       "subjects": []
     },
@@ -1064,6 +1358,20 @@
       "imageAlt": "Astor Library The Red Badge of Courage cover",
       "search": "The Red Badge of Courage Stephen Crane American Classics Crane places the reader inside a young soldier's fear, shame and self-deception, stripping battlefield courage of patriotic certainty. Battle starts inside The wound as badge Colour and sensation No heroic overview The Red Badge of Courage, Stephen Crane At a glance Publication and reception Stephen Crane From syndication to Appleton Shorter and longer Red Badge Civil War context Chancellorsville as likely model The private soldier's scale Waiting, marching, not knowing The story's movement Waiting for proof First fighting and flight The wounded column Return and performance Flag, courage, self-story Characters Language and method Key passages Will he run? Collective courage Self-justification The body against rhetoric Nature and indifference Courage or compensation? Adaptations and afterlives John Huston film Television film American war reading Ways to study the novel The narrator stays close without agreeing Colour arrives before strategy Fear becomes an argument Types become people slowly Six kinds of battlefield evidence Does Henry mature? Sources and further reading",
       "authorHref": "/authors/#stephen-crane",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Rime of the Ancient Mariner",
+      "author": "Samuel Taylor Coleridge",
+      "collection": "Romantic & Regency",
+      "description": "Coleridge’s mariner tells of an albatross killed without explanation, a motionless sea, supernatural punishment and a compulsion to repeat a story whose redemption never becomes simple.",
+      "href": "/books/the-rime-of-the-ancient-mariner/",
+      "image": "/Rime%20of%20the%20Ancient%20Mariner%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Rime of the Ancient Mariner cover",
+      "search": "The Rime of the Ancient Mariner Samuel Taylor Coleridge Romantic & Regency Coleridge’s mariner tells of an albatross killed without explanation, a motionless sea, supernatural punishment and a compulsion to repeat a story whose redemption never becomes simple. What this Astor edition contains. The Rime of the Ancient Mariner The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Poem · 1798 / 1834 text Three questions carried by the edition. Crime without motive Verse and gloss Compelled narration",
+      "authorHref": "/authors/#samuel-taylor-coleridge",
       "subjects": []
     },
     {
@@ -1103,6 +1411,20 @@
           "href": "/subjects/detective-fiction/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Sorrows of Young Werther",
+      "author": "Johann Wolfgang von Goethe",
+      "collection": "Romantic & Regency",
+      "description": "Goethe’s epistolary novel confines the reader largely to Werther’s increasingly unstable account of his love for Charlotte, who is already engaged to Albert.",
+      "href": "/books/the-sorrows-of-young-werther/",
+      "image": "/The%20Sorrows%20of%20Young%20Werther%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Sorrows of Young Werther cover",
+      "search": "The Sorrows of Young Werther Johann Wolfgang von Goethe Romantic & Regency Goethe’s epistolary novel confines the reader largely to Werther’s increasingly unstable account of his love for Charlotte, who is already engaged to Albert. What this Astor edition contains. The Sorrows of Young Werther The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1774 / 1787 Three questions carried by the edition. Feeling and perspective Life and fiction A European phenomenon",
+      "authorHref": "/authors/#johann-wolfgang-von-goethe",
+      "subjects": []
     },
     {
       "type": "book",
@@ -1212,6 +1534,20 @@
           "href": "/subjects/comedy/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Thomas Lord Cromwell",
+      "author": "Anonymous",
+      "collection": "Shakespeare",
+      "description": "A complete annotated edition of the chronicle play printed in 1602 as written by W.",
+      "href": "/books/thomas-lord-cromwell/",
+      "image": "/Thomas%20Lord%20Cromwell%20Main%20Cover.png",
+      "imageAlt": "Astor Library Thomas Lord Cromwell cover",
+      "search": "Thomas Lord Cromwell Anonymous Shakespeare A complete annotated edition of the chronicle play printed in 1602 as written by W. What this Astor edition contains. Thomas Lord Cromwell The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Shakespeare Apocrypha · Volume V Three questions carried by the edition. Fortune and advancement Debt and gratitude History reshaped",
+      "authorHref": "/authors/#anonymous",
+      "subjects": []
     },
     {
       "type": "book",
@@ -1369,6 +1705,93 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "Anonymous",
+      "description": "Read Anonymous across 2 Astor Library books: The London Prodigal and Thomas Lord Cromwell.",
+      "href": "/authors/#anonymous",
+      "image": "/The%20London%20Prodigal%20Main%20Cover.png",
+      "imageAlt": "Astor Library The London Prodigal cover",
+      "bookCount": 2,
+      "books": [
+        {
+          "title": "The London Prodigal",
+          "href": "/books/the-london-prodigal/",
+          "image": "/The%20London%20Prodigal%20Main%20Cover.png",
+          "imageAlt": "Astor Library The London Prodigal cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "Thomas Lord Cromwell",
+          "href": "/books/thomas-lord-cromwell/",
+          "image": "/Thomas%20Lord%20Cromwell%20Main%20Cover.png",
+          "imageAlt": "Astor Library Thomas Lord Cromwell cover",
+          "collection": "Shakespeare"
+        }
+      ],
+      "search": "Anonymous The London Prodigal Thomas Lord Cromwell Shakespeare Shakespeare"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Anonymous; attributed variously to Greene, Peele and others",
+      "description": "Read Anonymous; attributed variously to Greene, Peele and others through Astor Library's page for Locrine.",
+      "href": "/authors/#anonymous-attributed-variously-to-greene-peele-and-others",
+      "image": "/Locrine%20Main%20Cover.png",
+      "imageAlt": "Astor Library Locrine cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Locrine",
+          "href": "/books/locrine/",
+          "image": "/Locrine%20Main%20Cover.png",
+          "imageAlt": "Astor Library Locrine cover",
+          "collection": "Shakespeare"
+        }
+      ],
+      "search": "Anonymous; attributed variously to Greene, Peele and others Locrine Shakespeare"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Anonymous; partly attributed to Shakespeare or Thomas Kyd",
+      "description": "Read Anonymous; partly attributed to Shakespeare or Thomas Kyd through Astor Library's page for Arden of Faversham.",
+      "href": "/authors/#anonymous-partly-attributed-to-shakespeare-or-thomas-kyd",
+      "image": "/Arden%20of%20Faversham%20Main%20Coverr.png",
+      "imageAlt": "Astor Library Arden of Faversham cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Arden of Faversham",
+          "href": "/books/arden-of-faversham/",
+          "image": "/Arden%20of%20Faversham%20Main%20Coverr.png",
+          "imageAlt": "Astor Library Arden of Faversham cover",
+          "collection": "Shakespeare"
+        }
+      ],
+      "search": "Anonymous; partly attributed to Shakespeare or Thomas Kyd Arden of Faversham Shakespeare"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Anthony Munday and collaborators, including an attributed Shakespeare addition",
+      "description": "Read Anthony Munday and collaborators, including an attributed Shakespeare addition through Astor Library's page for Sir Thomas More.",
+      "href": "/authors/#anthony-munday-and-collaborators-including-an-attributed-shakespeare-addition",
+      "image": "/Sir%20Thomas%20More%20Main%20Cover.png",
+      "imageAlt": "Astor Library Sir Thomas More cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Sir Thomas More",
+          "href": "/books/sir-thomas-more/",
+          "image": "/Sir%20Thomas%20More%20Main%20Cover.png",
+          "imageAlt": "Astor Library Sir Thomas More cover",
+          "collection": "Shakespeare"
+        }
+      ],
+      "search": "Anthony Munday and collaborators, including an attributed Shakespeare addition Sir Thomas More Shakespeare"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "Arthur Conan Doyle",
       "description": "The Astor catalogue includes twelve Sherlock Holmes short stories and The Sign of Four, with material on Watson's narration, detective method and Victorian London.",
       "href": "/authors/arthur-conan-doyle/",
@@ -1392,6 +1815,26 @@
         }
       ],
       "search": "Arthur Conan Doyle The Adventures of Sherlock Holmes The Sign of the Four Victorian Victorian"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Astor Library",
+      "description": "Read Astor Library through Astor Library's page for A Victorian Christmas.",
+      "href": "/authors/#astor-library",
+      "image": "/A%20Victorian%20Christmas%20Main%20Cover.png",
+      "imageAlt": "Astor Library A Victorian Christmas cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "A Victorian Christmas",
+          "href": "/books/a-victorian-christmas/",
+          "image": "/A%20Victorian%20Christmas%20Main%20Cover.png",
+          "imageAlt": "Astor Library A Victorian Christmas cover",
+          "collection": "Victorian"
+        }
+      ],
+      "search": "Astor Library A Victorian Christmas Victorian"
     },
     {
       "type": "author",
@@ -1421,7 +1864,7 @@
       "href": "/authors/charles-dickens/",
       "image": "/A%20Christmas%20Carol.png",
       "imageAlt": "Astor Library A Christmas Carol cover",
-      "bookCount": 3,
+      "bookCount": 4,
       "books": [
         {
           "title": "A Christmas Carol",
@@ -1443,9 +1886,36 @@
           "image": "/Cricket%20on%20the%20Hearth.png",
           "imageAlt": "Astor Library The Cricket on the Hearth cover",
           "collection": "Victorian"
+        },
+        {
+          "title": "The Haunted Man and the Ghost’s Bargain",
+          "href": "/books/the-haunted-man-and-the-ghosts-bargain/",
+          "image": "/The%20Haunted%20Man%20and%20the%20Ghost%27s%20Bargain%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Haunted Man and the Ghost’s Bargain cover",
+          "collection": "Victorian"
         }
       ],
-      "search": "Charles Dickens A Christmas Carol Great Expectations The Cricket on the Hearth Victorian Victorian Victorian"
+      "search": "Charles Dickens A Christmas Carol Great Expectations The Cricket on the Hearth The Haunted Man and the Ghost’s Bargain Victorian Victorian Victorian Victorian"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Charlotte Brontë",
+      "description": "Read Charlotte Brontë through Astor Library's page for Jane Eyre.",
+      "href": "/authors/#charlotte-bronte",
+      "image": "/Jane%20Eyre%20Main%20Cover.png",
+      "imageAlt": "Astor Library Jane Eyre cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Jane Eyre",
+          "href": "/books/jane-eyre/",
+          "image": "/Jane%20Eyre%20Main%20Cover.png",
+          "imageAlt": "Astor Library Jane Eyre cover",
+          "collection": "Victorian"
+        }
+      ],
+      "search": "Charlotte Brontë Jane Eyre Victorian"
     },
     {
       "type": "author",
@@ -1466,6 +1936,26 @@
         }
       ],
       "search": "Christopher Marlowe Doctor Faustus Renaissance & Early Modern"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Daniel Defoe",
+      "description": "Read Daniel Defoe through Astor Library's page for Robinson Crusoe.",
+      "href": "/authors/#daniel-defoe",
+      "image": "/Robinson%20Crusoe.png",
+      "imageAlt": "Astor Library Robinson Crusoe cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Robinson Crusoe",
+          "href": "/books/robinson-crusoe/",
+          "image": "/Robinson%20Crusoe.png",
+          "imageAlt": "Astor Library Robinson Crusoe cover",
+          "collection": "Restoration & Enlightenment"
+        }
+      ],
+      "search": "Daniel Defoe Robinson Crusoe Restoration & Enlightenment"
     },
     {
       "type": "author",
@@ -1611,12 +2101,19 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "Homer, translated by Samuel Butler",
-      "description": "Read Homer, translated by Samuel Butler through Astor Library's page for The Odyssey.",
+      "description": "Read Homer, translated by Samuel Butler across 2 Astor Library books: The Iliad and The Odyssey.",
       "href": "/authors/#homer-translated-by-samuel-butler",
-      "image": "/The%20Odyssey.png",
-      "imageAlt": "Astor Library The Odyssey cover",
-      "bookCount": 1,
+      "image": "/The%20Iliad.png",
+      "imageAlt": "Astor Library The Iliad cover",
+      "bookCount": 2,
       "books": [
+        {
+          "title": "The Iliad",
+          "href": "/books/the-iliad/",
+          "image": "/The%20Iliad.png",
+          "imageAlt": "Astor Library The Iliad cover",
+          "collection": "Ancient & Epic"
+        },
         {
           "title": "The Odyssey",
           "href": "/books/the-odyssey/",
@@ -1625,7 +2122,7 @@
           "collection": "Ancient & Epic"
         }
       ],
-      "search": "Homer, translated by Samuel Butler The Odyssey Ancient & Epic"
+      "search": "Homer, translated by Samuel Butler The Iliad The Odyssey Ancient & Epic Ancient & Epic"
     },
     {
       "type": "author",
@@ -1677,6 +2174,26 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "Johann Wolfgang von Goethe",
+      "description": "Read Johann Wolfgang von Goethe through Astor Library's page for The Sorrows of Young Werther.",
+      "href": "/authors/#johann-wolfgang-von-goethe",
+      "image": "/The%20Sorrows%20of%20Young%20Werther%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Sorrows of Young Werther cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Sorrows of Young Werther",
+          "href": "/books/the-sorrows-of-young-werther/",
+          "image": "/The%20Sorrows%20of%20Young%20Werther%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Sorrows of Young Werther cover",
+          "collection": "Romantic & Regency"
+        }
+      ],
+      "search": "Johann Wolfgang von Goethe The Sorrows of Young Werther Romantic & Regency"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "John Milton",
       "description": "The Paradise Lost page covers blank verse, epic form, biblical sources, political context and the poem's competing speakers.",
       "href": "/authors/john-milton/",
@@ -1689,10 +2206,30 @@
           "href": "/books/paradise-lost/",
           "image": "/Paradise%20Lost%20Main%20Cover.png",
           "imageAlt": "Astor Library Paradise Lost cover",
-          "collection": "Restoration & Enlightenment"
+          "collection": "Renaissance & Early Modern"
         }
       ],
-      "search": "John Milton Paradise Lost Restoration & Enlightenment"
+      "search": "John Milton Paradise Lost Renaissance & Early Modern"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "John Skelton",
+      "description": "Read John Skelton through Astor Library's page for Selected Poems of John Skelton.",
+      "href": "/authors/#john-skelton",
+      "image": "/Skelton%20Main%20Cover.png",
+      "imageAlt": "Astor Library Selected Poems of John Skelton cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Selected Poems of John Skelton",
+          "href": "/books/selected-poems-of-john-skelton/",
+          "image": "/Skelton%20Main%20Cover.png",
+          "imageAlt": "Astor Library Selected Poems of John Skelton cover",
+          "collection": "Renaissance & Early Modern"
+        }
+      ],
+      "search": "John Skelton Selected Poems of John Skelton Renaissance & Early Modern"
     },
     {
       "type": "author",
@@ -1877,6 +2414,26 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "Samuel Taylor Coleridge",
+      "description": "Read Samuel Taylor Coleridge through Astor Library's page for The Rime of the Ancient Mariner.",
+      "href": "/authors/#samuel-taylor-coleridge",
+      "image": "/Rime%20of%20the%20Ancient%20Mariner%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Rime of the Ancient Mariner cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Rime of the Ancient Mariner",
+          "href": "/books/the-rime-of-the-ancient-mariner/",
+          "image": "/Rime%20of%20the%20Ancient%20Mariner%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Rime of the Ancient Mariner cover",
+          "collection": "Romantic & Regency"
+        }
+      ],
+      "search": "Samuel Taylor Coleridge The Rime of the Ancient Mariner Romantic & Regency"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "Stephen Crane",
       "description": "Read Stephen Crane through Astor Library's page for The Red Badge of Courage.",
       "href": "/authors/#stephen-crane",
@@ -1913,6 +2470,33 @@
         }
       ],
       "search": "Thomas Hardy Tess of the d’Urbervilles Victorian"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Thomas Middleton",
+      "description": "Read Thomas Middleton across 2 Astor Library books: A Yorkshire Tragedy and The Puritan.",
+      "href": "/authors/#thomas-middleton",
+      "image": "/A%20Yorkshire%20Tragedy%20Main%20Cover.png",
+      "imageAlt": "Astor Library A Yorkshire Tragedy cover",
+      "bookCount": 2,
+      "books": [
+        {
+          "title": "A Yorkshire Tragedy",
+          "href": "/books/a-yorkshire-tragedy/",
+          "image": "/A%20Yorkshire%20Tragedy%20Main%20Cover.png",
+          "imageAlt": "Astor Library A Yorkshire Tragedy cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "The Puritan",
+          "href": "/books/the-puritan/",
+          "image": "/The%20Puritan%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Puritan cover",
+          "collection": "Shakespeare"
+        }
+      ],
+      "search": "Thomas Middleton A Yorkshire Tragedy The Puritan Shakespeare Shakespeare"
     },
     {
       "type": "author",
@@ -1957,18 +2541,45 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "Virginia Woolf",
+      "description": "Read Virginia Woolf through Astor Library's page for Mrs Dalloway.",
+      "href": "/authors/#virginia-woolf",
+      "image": "/Mrs%20Dalloway%20Main%20Cover.png",
+      "imageAlt": "Astor Library Mrs Dalloway cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Mrs Dalloway",
+          "href": "/books/mrs-dalloway/",
+          "image": "/Mrs%20Dalloway%20Main%20Cover.png",
+          "imageAlt": "Astor Library Mrs Dalloway cover",
+          "collection": "Modern Classics"
+        }
+      ],
+      "search": "Virginia Woolf Mrs Dalloway Modern Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "William Shakespeare",
       "description": "The Shakespeare catalogue contains all thirty-seven plays and two narrative poems, with sources, notes, performance history and study material.",
       "href": "/shakespeare/",
       "image": "/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png",
       "imageAlt": "Astor Library A Midsummer Night's Dream cover",
-      "bookCount": 40,
+      "bookCount": 47,
       "books": [
         {
           "title": "A Midsummer Night's Dream",
           "href": "/books/a-midsummer-nights-dream/",
           "image": "/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png",
           "imageAlt": "Astor Library A Midsummer Night's Dream cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "A Midsummer Night’s Dream — Expanded Scholarly Edition",
+          "href": "/books/a-midsummer-nights-dream-expanded-scholarly-edition/",
+          "image": "/Midsummer%20Night%27s%20Dream%20Scholarly%20Cover.png",
+          "imageAlt": "Astor Library A Midsummer Night’s Dream — Expanded Scholarly Edition cover",
           "collection": "Shakespeare"
         },
         {
@@ -2011,6 +2622,13 @@
           "href": "/books/hamlet/",
           "image": "/Hamlet.png",
           "imageAlt": "Astor Library Hamlet cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "Hamlet — Expanded Scholarly Edition",
+          "href": "/books/hamlet-expanded-scholarly-edition/",
+          "image": "/Hamlet%20Scholarly%20Cover.png",
+          "imageAlt": "Astor Library Hamlet — Expanded Scholarly Edition cover",
           "collection": "Shakespeare"
         },
         {
@@ -2084,6 +2702,13 @@
           "collection": "Shakespeare"
         },
         {
+          "title": "King Lear — Expanded Scholarly Edition",
+          "href": "/books/king-lear-expanded-scholarly-edition/",
+          "image": "/King%20Lear%20Scholarly%20Cover.png",
+          "imageAlt": "Astor Library King Lear — Expanded Scholarly Edition cover",
+          "collection": "Shakespeare"
+        },
+        {
           "title": "Love’s Labour’s Lost",
           "href": "/books/loves-labours-lost/",
           "image": "/Love%27s%20Labour%27s%20Lost%20Main%20Cover.jpg",
@@ -2095,6 +2720,13 @@
           "href": "/books/macbeth/",
           "image": "/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png",
           "imageAlt": "Astor Library Macbeth cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "Macbeth — Expanded Scholarly Edition",
+          "href": "/books/macbeth-expanded-scholarly-edition/",
+          "image": "/Macbeth%20Scholarly%20Cover.png",
+          "imageAlt": "Astor Library Macbeth — Expanded Scholarly Edition cover",
           "collection": "Shakespeare"
         },
         {
@@ -2116,6 +2748,13 @@
           "href": "/books/othello/",
           "image": "/Othello.png",
           "imageAlt": "Astor Library Othello cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "Othello — Expanded Scholarly Edition",
+          "href": "/books/othello-expanded-scholarly-edition/",
+          "image": "/Othello%20Scholarly%20Cover.png",
+          "imageAlt": "Astor Library Othello — Expanded Scholarly Edition cover",
           "collection": "Shakespeare"
         },
         {
@@ -2147,6 +2786,13 @@
           "collection": "Shakespeare"
         },
         {
+          "title": "Shakespeare’s Sonnets",
+          "href": "/books/shakespeares-sonnets/",
+          "image": "/Shakespeare%27s%20Sonnets%20Main%20Cover.png",
+          "imageAlt": "Astor Library Shakespeare’s Sonnets cover",
+          "collection": "Shakespeare"
+        },
+        {
           "title": "The Comedy of Errors",
           "href": "/books/comedy-of-errors/",
           "image": "/Comedy%20of%20Errors%20%28Main%20Page%29.png",
@@ -2172,6 +2818,13 @@
           "href": "/books/the-rape-of-lucrece/",
           "image": "/The%20Rape%20of%20Lucrece%20Main%20Cover.png",
           "imageAlt": "Astor Library The Rape of Lucrece cover",
+          "collection": "Shakespeare"
+        },
+        {
+          "title": "The Rape of Lucrece and Venus and Adonis",
+          "href": "/books/the-rape-of-lucrece-and-venus-and-adonis/",
+          "image": "/The%20Rape%20of%20Lucrece%20and%20Venus%20and%20Adonis%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Rape of Lucrece and Venus and Adonis cover",
           "collection": "Shakespeare"
         },
         {
@@ -2245,7 +2898,27 @@
           "collection": "Shakespeare"
         }
       ],
-      "search": "William Shakespeare A Midsummer Night's Dream All's Well That Ends Well Antony and Cleopatra As You Like It Coriolanus Cymbeline Hamlet Henry IV, Part 1 Henry IV, Part 2 Henry IV, Parts 1 and 2 Henry V Henry VI, Part 2 Henry VI, Part 3 Henry VI, Parts 1, 2 and 3 Henry VIII King John King Lear Love’s Labour’s Lost Macbeth Measure for Measure Much Ado About Nothing Othello Pericles, Prince of Tyre Richard II Richard III Romeo and Juliet The Comedy of Errors The Merchant of Venice The Merry Wives of Windsor The Rape of Lucrece The Taming of the Shrew The Tempest The Two Gentlemen of Verona The Two Noble Kinsmen The Winter's Tale Timon of Athens Titus Andronicus Troilus and Cressida Twelfth Night Venus and Adonis Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare"
+      "search": "William Shakespeare A Midsummer Night's Dream A Midsummer Night’s Dream — Expanded Scholarly Edition All's Well That Ends Well Antony and Cleopatra As You Like It Coriolanus Cymbeline Hamlet Hamlet — Expanded Scholarly Edition Henry IV, Part 1 Henry IV, Part 2 Henry IV, Parts 1 and 2 Henry V Henry VI, Part 2 Henry VI, Part 3 Henry VI, Parts 1, 2 and 3 Henry VIII King John King Lear King Lear — Expanded Scholarly Edition Love’s Labour’s Lost Macbeth Macbeth — Expanded Scholarly Edition Measure for Measure Much Ado About Nothing Othello Othello — Expanded Scholarly Edition Pericles, Prince of Tyre Richard II Richard III Romeo and Juliet Shakespeare’s Sonnets The Comedy of Errors The Merchant of Venice The Merry Wives of Windsor The Rape of Lucrece The Rape of Lucrece and Venus and Adonis The Taming of the Shrew The Tempest The Two Gentlemen of Verona The Two Noble Kinsmen The Winter's Tale Timon of Athens Titus Andronicus Troilus and Cressida Twelfth Night Venus and Adonis Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare Shakespeare"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "William Shakespeare and a collaborator",
+      "description": "Read William Shakespeare and a collaborator through Astor Library's page for Edward III.",
+      "href": "/authors/#william-shakespeare-and-a-collaborator",
+      "image": "/Edward%20III%20Main%20Cover.png",
+      "imageAlt": "Astor Library Edward III cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Edward III",
+          "href": "/books/edward-iii/",
+          "image": "/Edward%20III%20Main%20Cover.png",
+          "imageAlt": "Astor Library Edward III cover",
+          "collection": "Shakespeare"
+        }
+      ],
+      "search": "William Shakespeare and a collaborator Edward III Shakespeare"
     },
     {
       "type": "author",
@@ -2952,6 +3625,111 @@
         "/books/dracula/"
       ],
       "search": "Dracula: Gender Roles Examine desire, conduct, the New Woman, masculinity and late-Victorian anxiety in Stoker’s novel. Dracula Gender Read now. Save for later. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "A Charles Dickens Christmas",
+      "description": "Explore how Dickens and A Christmas Carol helped reinvent Christmas through literary history, charity, family and seasonal tradition.",
+      "tags": [
+        "Charles Dickens",
+        "Christmas",
+        "Continue on the linked site.",
+        "Subject and purpose of the guide.",
+        "Questions and evidence.",
+        "Check the language and form",
+        "Open the illustrated guide.",
+        "Relevant books and subject guides."
+      ],
+      "href": "/resources/victorian/a-charles-dickens-christmas/",
+      "externalUrl": "https://charles-dickens-christma-no08my6.gamma.site/",
+      "image": "/A%20Dickens%20Christmas.png",
+      "imageAlt": "A Charles Dickens Christmas cover",
+      "relatedBooks": [
+        "/books/a-christmas-carol/",
+        "/books/cricket-on-the-hearth/",
+        "/books/the-haunted-man-and-the-ghosts-bargain/"
+      ],
+      "search": "A Charles Dickens Christmas Explore how Dickens and A Christmas Carol helped reinvent Christmas through literary history, charity, family and seasonal tradition. Charles Dickens Christmas Continue on the linked site. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Ghost Stories in Literature: A Window into Human Belief",
+      "description": "Explore what stories about the dead reveal about belief, memory, the supernatural and the living cultures that tell them.",
+      "tags": [
+        "Ghost stories",
+        "Supernatural belief",
+        "Continue on the linked site.",
+        "Subject and purpose of the guide.",
+        "Questions and evidence.",
+        "Check the language and form",
+        "Open the illustrated guide.",
+        "Relevant books and subject guides."
+      ],
+      "href": "/resources/victorian/ghost-stories-in-literature-a-window-into-human-belief/",
+      "externalUrl": "https://ghost-stories-a-window-i-5hwf1y6.gamma.site/",
+      "image": "/Literature%20and%20Ghost%20Stories.png",
+      "imageAlt": "Ghost Stories in Literature: A Window into Human Belief cover",
+      "relatedBooks": [
+        "/books/the-haunted-man-and-the-ghosts-bargain/",
+        "/books/dracula/",
+        "/books/frankenstein/"
+      ],
+      "search": "Ghost Stories in Literature: A Window into Human Belief Explore what stories about the dead reveal about belief, memory, the supernatural and the living cultures that tell them. Ghost stories Supernatural belief Continue on the linked site. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "Christmas Traditions",
+      "description": "Trace the Victorian customs, rituals and influences that shaped the modern Christmas, from domestic celebration to seasonal literature.",
+      "tags": [
+        "Victorian Christmas",
+        "Cultural history",
+        "Continue on the linked site.",
+        "Subject and purpose of the guide.",
+        "Questions and evidence.",
+        "Check the language and form",
+        "Open the illustrated guide.",
+        "Relevant books and subject guides."
+      ],
+      "href": "/resources/victorian/christmas-traditions/",
+      "externalUrl": "https://victorian-christmas-trad-ebopxnl.gamma.site/",
+      "image": "/A%20Victorian%20Christmas.png",
+      "imageAlt": "Christmas Traditions cover",
+      "relatedBooks": [
+        "/books/a-victorian-christmas/",
+        "/books/a-christmas-carol/",
+        "/books/cricket-on-the-hearth/"
+      ],
+      "search": "Christmas Traditions Trace the Victorian customs, rituals and influences that shaped the modern Christmas, from domestic celebration to seasonal literature. Victorian Christmas Cultural history Continue on the linked site. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
+    },
+    {
+      "type": "resource",
+      "typeLabel": "Free guide",
+      "title": "How Literature Shaped Halloween",
+      "description": "Trace the dark literary thread from ancient Celtic ritual through ghost stories and Gothic masterpieces to the modern Halloween.",
+      "tags": [
+        "Halloween",
+        "Gothic literature",
+        "Continue on the linked site.",
+        "Subject and purpose of the guide.",
+        "Questions and evidence.",
+        "Check the language and form",
+        "Open the illustrated guide.",
+        "Relevant books and subject guides."
+      ],
+      "href": "/resources/victorian/how-literature-shaped-halloween/",
+      "externalUrl": "https://how-literature-shaped-ha-ai2opsd.gamma.site/",
+      "image": "/How%20Literature%20Shaped%20Halloween.png",
+      "imageAlt": "How Literature Shaped Halloween cover",
+      "relatedBooks": [
+        "/books/frankenstein/",
+        "/books/dracula/",
+        "/books/jekyll-and-hyde/",
+        "/books/dorian-gray/"
+      ],
+      "search": "How Literature Shaped Halloween Trace the dark literary thread from ancient Celtic ritual through ghost stories and Gothic masterpieces to the modern Halloween. Halloween Gothic literature Continue on the linked site. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
     {
       "type": "resource",
@@ -3911,6 +4689,21 @@
     {
       "type": "study",
       "typeLabel": "Study edition",
+      "title": "Mrs Dalloway",
+      "description": "Clarissa Dalloway, Septimus Warren Smith, memory, time, London, isolation and survival.",
+      "href": "https://mybook.to/M4c6K",
+      "externalUrl": "https://mybook.to/M4c6K",
+      "image": "/Mrs%20Dalloway%20Study%20Cover.png",
+      "imageAlt": "Mrs Dalloway Study cover",
+      "paired": false,
+      "relatedBooks": [
+        "/books/mrs-dalloway/"
+      ],
+      "search": "Mrs Dalloway Clarissa Dalloway, Septimus Warren Smith, memory, time, London, isolation and survival. single text"
+    },
+    {
+      "type": "study",
+      "typeLabel": "Study edition",
       "title": "Richard II",
       "description": "Divine kingship, deposition, language, land, ceremony and Bolingbroke’s rise.",
       "href": "https://mybook.to/o0Am2j",
@@ -4049,61 +4842,104 @@
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Ancient & Epic",
-      "description": "The collection contains Samuel Butler’s prose translation of The Odyssey and John Dryden’s verse translation of The Aeneid, with material on epic form, myth, homecoming, exile and empire.",
+      "description": "Homer’s Iliad begins with anger inside a war; the Odyssey asks what survives war and wandering.",
       "href": "/ancient-epic/",
-      "image": "/Ancient%20and%20Epic.png",
+      "image": "/assets/home/ancient-epic.jpg",
       "imageAlt": "Ancient & Epic illustrated banner",
-      "search": "Ancient & Epic The collection contains Samuel Butler’s prose translation of The Odyssey and John Dryden’s verse translation of The Aeneid, with material on epic form, myth, homecoming, exile and empire."
+      "relatedBooks": [],
+      "search": "Ancient & Epic Homer’s Iliad begins with anger inside a war; the Odyssey asks what survives war and wandering. Virgil’s Aeneid turns the refugee from Troy towards a future Rome while keeping the cost of that future in view."
     },
     {
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Renaissance & Early Modern",
-      "description": "Theatre and political prose meet in a period preoccupied with power: who possesses it, how it is performed and what it costs.",
+      "description": "Skelton’s quick, irregular verse joins theatre, political prose and epic in a period preoccupied with power.",
       "href": "/renaissance-early-modern/",
-      "image": "/Renaissance%20and%20Early%20Modern.png",
+      "image": "/assets/home/renaissance-early-modern.jpg",
       "imageAlt": "Renaissance & Early Modern illustrated banner",
-      "search": "Renaissance & Early Modern Theatre and political prose meet in a period preoccupied with power: who possesses it, how it is performed and what it costs. Webster and Marlowe place ambition, conscience and private choice on stage; More and Machiavelli test government, law and social order on the page."
+      "relatedBooks": [],
+      "search": "Renaissance & Early Modern Skelton’s quick, irregular verse joins theatre, political prose and epic in a period preoccupied with power. More and Machiavelli test government on the page; Marlowe and Webster stage ambition and conscience; Milton makes freedom and obedience the matter of epic."
     },
     {
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Shakespeare",
-      "description": "All thirty-seven plays and two narrative poems.",
+      "description": "All thirty-seven plays, the poetry, eight Shakespeare Apocrypha volumes and five Expanded Scholarly Editions.",
       "href": "/shakespeare/",
-      "image": "/Shakespeare.png",
+      "image": "/assets/home/shakespeare.jpg",
       "imageAlt": "Shakespeare illustrated banner",
-      "search": "Shakespeare All thirty-seven plays and two narrative poems. The editions contain complete texts, scene summaries, line numbers, explanatory notes, sources, performance history and study material."
+      "relatedBooks": [],
+      "search": "Shakespeare All thirty-seven plays, the poetry, eight Shakespeare Apocrypha volumes and five Expanded Scholarly Editions. Standard and specialist editions remain clearly distinguished throughout the catalogue."
+    },
+    {
+      "type": "collection",
+      "typeLabel": "Collection",
+      "title": "Shakespeare Apocrypha",
+      "description": "Eight specialist annotated editions of plays historically attributed to, associated with or connected to Shakespeare and his theatrical world, arranged in numerical order.",
+      "href": "/shakespeare/apocrypha/",
+      "image": "/Edward%20III%20Main%20Cover.png",
+      "imageAlt": "Shakespeare Apocrypha illustrated banner",
+      "relatedBooks": [
+        "/books/edward-iii/",
+        "/books/arden-of-faversham/",
+        "/books/locrine/",
+        "/books/sir-thomas-more/",
+        "/books/thomas-lord-cromwell/",
+        "/books/the-london-prodigal/",
+        "/books/the-puritan/",
+        "/books/a-yorkshire-tragedy/"
+      ],
+      "search": "Shakespeare Apocrypha Eight specialist annotated editions of plays historically attributed to, associated with or connected to Shakespeare and his theatrical world, arranged in numerical order."
+    },
+    {
+      "type": "collection",
+      "typeLabel": "Collection",
+      "title": "Astor Shakespeare: Expanded Scholarly Editions",
+      "description": "Five premium Shakespeare editions with substantially expanded front matter, textual discussion, criticism, historical context, close analysis and performance history.",
+      "href": "/shakespeare/expanded-scholarly-editions/",
+      "image": "/Hamlet%20Scholarly%20Cover.png",
+      "imageAlt": "Astor Shakespeare: Expanded Scholarly Editions illustrated banner",
+      "relatedBooks": [
+        "/books/hamlet-expanded-scholarly-edition/",
+        "/books/king-lear-expanded-scholarly-edition/",
+        "/books/a-midsummer-nights-dream-expanded-scholarly-edition/",
+        "/books/othello-expanded-scholarly-edition/",
+        "/books/macbeth-expanded-scholarly-edition/"
+      ],
+      "search": "Astor Shakespeare: Expanded Scholarly Editions Five premium Shakespeare editions with substantially expanded front matter, textual discussion, criticism, historical context, close analysis and performance history."
     },
     {
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Restoration & Enlightenment",
-      "description": "Milton makes biblical history into an epic of freedom and obedience; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power.",
+      "description": "Defoe turns shipwreck, survival and colonial commerce into a new kind of fictional life; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power.",
       "href": "/restoration-enlightenment/",
-      "image": "/Restoration%20and%20Enlightenment.png",
+      "image": "/assets/home/restoration-enlightenment.jpg",
       "imageAlt": "Restoration & Enlightenment illustrated banner",
-      "search": "Restoration & Enlightenment Milton makes biblical history into an epic of freedom and obedience; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power. Together, these works show public argument finding new forms."
+      "relatedBooks": [],
+      "search": "Restoration & Enlightenment Defoe turns shipwreck, survival and colonial commerce into a new kind of fictional life; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power. Together, these works show prose fiction and public argument finding new forms."
     },
     {
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Romantic & Regency",
-      "description": "The collection contains editions of Jane Austen and Mary Shelley, with material on courtship, inheritance, women’s financial position, Gothic fiction, science, authorship and publication.",
+      "description": "Goethe and Coleridge turn desire, isolation, guilt and the supernatural into Romantic experiments.",
       "href": "/romantic-regency/",
-      "image": "/Romantic%20and%20Regency.png",
+      "image": "/assets/home/romantic-regency.jpg",
       "imageAlt": "Romantic & Regency illustrated banner",
-      "search": "Romantic & Regency The collection contains editions of Jane Austen and Mary Shelley, with material on courtship, inheritance, women’s financial position, Gothic fiction, science, authorship and publication."
+      "relatedBooks": [],
+      "search": "Romantic & Regency Goethe and Coleridge turn desire, isolation, guilt and the supernatural into Romantic experiments. Austen makes courtship answer to money, inheritance and self-knowledge; Shelley gives scientific ambition a voice, a body and the power to accuse its creator."
     },
     {
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Victorian",
-      "description": "Novels and short fiction by Dickens, Brontë, Hardy, Stevenson, Stoker, Wilde, Wells and Conan Doyle, with publication history, social and scientific context, narrative analysis and adaptation history.",
+      "description": "Dickens and Brontë join Hardy, Stevenson, Stoker, Wilde, Wells and Conan Doyle in a collection moving between Christmas rooms, city streets, country houses, moors, laboratories and consulting rooms.",
       "href": "/victorian/",
-      "image": "/Victorian.png",
+      "image": "/assets/home/victorian.jpg",
       "imageAlt": "Victorian illustrated banner",
-      "search": "Victorian Novels and short fiction by Dickens, Brontë, Hardy, Stevenson, Stoker, Wilde, Wells and Conan Doyle, with publication history, social and scientific context, narrative analysis and adaptation history."
+      "relatedBooks": [],
+      "search": "Victorian Dickens and Brontë join Hardy, Stevenson, Stoker, Wilde, Wells and Conan Doyle in a collection moving between Christmas rooms, city streets, country houses, moors, laboratories and consulting rooms. Each edition places the work beside its publication and social history."
     },
     {
       "type": "collection",
@@ -4111,19 +4947,21 @@
       "title": "American Classics",
       "description": "Hawthorne’s romance of public punishment joins abolitionist argument, autobiography, whaling, river satire, Civil War and the Klondike.",
       "href": "/american/",
-      "image": "/American%20Classics.png",
+      "image": "/assets/home/american-classics.jpg",
       "imageAlt": "American Classics illustrated banner",
+      "relatedBooks": [],
       "search": "American Classics Hawthorne’s romance of public punishment joins abolitionist argument, autobiography, whaling, river satire, Civil War and the Klondike. These books do not offer one account of America: they show who could claim freedom, who was denied it and what survival asked of a person."
     },
     {
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Modern Classics",
-      "description": "The collection contains G.",
+      "description": "Woolf turns one June day in London into an intricate movement through memory and consciousness.",
       "href": "/modern/",
-      "image": "/Modern%20Classics.png",
+      "image": "/assets/home/modern-classics.jpg",
       "imageAlt": "Modern Classics illustrated banner",
-      "search": "Modern Classics The collection contains G. K. Chesterton’s political and philosophical novel The Man Who Was Thursday and George Orwell’s political allegory Animal Farm."
+      "relatedBooks": [],
+      "search": "Modern Classics Woolf turns one June day in London into an intricate movement through memory and consciousness. Chesterton makes political conspiracy a strange metropolitan chase; Orwell follows a revolution whose language changes as thoroughly as its promises."
     }
   ],
   "passages": [

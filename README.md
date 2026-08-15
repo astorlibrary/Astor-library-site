@@ -7,11 +7,12 @@ After adding or revising a book, run:
 
 ```sh
 node scripts/rebuild-library.js
+node scripts/generate-book-thumbnails.js
 node scripts/build-static.js
 node scripts/check-site.js
 ```
 
-The first command rebuilds the full catalogue, the Explore page and the site-wide discovery index. Do not edit the generated book cards in `library/index.html` or `explore/index.html` by hand.
+The first command rebuilds the full catalogue, the Explore page and the site-wide discovery index. The thumbnail step refreshes lightweight listing images for books, study editions and free resources. Do not edit the generated book cards in `library/index.html` or `explore/index.html` by hand.
 
 `assets/content-index.json` connects book pages to matching free guides, study editions and collections. When a new guide or study edition belongs to a book, add that connection in `scripts/rebuild-discovery.js`.
 

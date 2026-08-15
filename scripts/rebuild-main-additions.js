@@ -9,24 +9,24 @@ const blockEnd = '<!-- ASTOR MAIN ADDITIONS END -->';
 const collectionCopy = {
   'renaissance-early-modern/index.html': {
     title: 'Renaissance and Early Modern Literature | Astor Library',
-    description: 'Astor editions of Webster, Marlowe, More and Machiavelli, with material on early modern theatre, tragedy, humanism, political prose, print and power.',
+    description: 'Astor editions of Webster, Marlowe, More, Machiavelli and Milton, with material on early modern theatre, tragedy, humanism, epic, political prose, print and power.',
     kicker: 'Period',
     heading: 'Renaissance &amp; Early Modern.',
-    deck: 'Theatre and political prose meet in a period preoccupied with power: who possesses it, how it is performed and what it costs. Webster and Marlowe place ambition, conscience and private choice on stage; More and Machiavelli test government, law and social order on the page.'
+    deck: 'Theatre, political prose and epic meet in a period preoccupied with power: who possesses it, how it is performed and what it costs. Webster and Marlowe place ambition, conscience and private choice on stage; More, Machiavelli and Milton test government, freedom and social order on the page.'
   },
   'shakespeare/index.html': {
     title: 'Shakespeare Plays, Poems, Editions and Study Guides | Astor Library',
-    description: 'Forty-one Astor editions covering all 37 Shakespeare plays and two narrative poems, with complete texts, notes, sources, performance history and study guides.',
+    description: 'Fifty-six Astor Shakespeare editions: all 37 plays, poetry, eight Shakespeare Apocrypha volumes and five Expanded Scholarly Editions, with notes, context and performance history.',
     kicker: 'Shakespeare',
     heading: 'Complete Shakespeare editions.',
-    deck: 'All thirty-seven plays and two narrative poems. The editions contain complete texts, scene summaries, line numbers, explanatory notes, sources, performance history and study material.'
+    deck: 'All thirty-seven plays, the poetry, eight Shakespeare Apocrypha volumes and five Expanded Scholarly Editions. Standard and specialist editions remain clearly distinguished throughout the catalogue.'
   },
   'restoration-enlightenment/index.html': {
     title: 'Restoration and Enlightenment Literature | Astor Library',
-    description: 'Astor editions of Milton, Swift and Richardson, with material on epic, satire, letters, print culture, political argument and the developing English novel.',
+    description: 'Astor editions of Defoe, Swift and Richardson, with material on travel, survival, satire, letters, print culture, commerce and the developing English novel.',
     kicker: 'Period',
     heading: 'Restoration &amp; Enlightenment.',
-    deck: 'Milton makes biblical history into an epic of freedom and obedience; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power. Together, these works show public argument finding new forms.'
+    deck: 'Defoe turns travel, shipwreck and colonial commerce into a new kind of fictional life; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power. Together, these works show prose fiction and public argument finding new forms.'
   },
   'american/index.html': {
     title: 'American Classic Literature | Astor Library',
@@ -165,7 +165,7 @@ function updateCollection(relative, books) {
   if (relative === 'shakespeare/index.html') {
     html = html
       .replace('Find the play by the pressure it holds.', 'Browse the works by genre.')
-      .replace(/<strong>\d+ editions<\/strong><span>[^<]*\d+ plays[^<]*<\/span>/, '<strong>41 editions</strong><span>37 plays + 2 poems</span>');
+      .replace(/<strong>\d+ editions<\/strong><span>[^<]*<\/span>/, '<strong>56 editions</strong><span>37 plays + poetry + specialist ranges</span>');
   }
 
   const divider = relative === 'shakespeare/index.html'
@@ -192,6 +192,21 @@ const byCollection = new Map();
 for (const book of additions) {
   if (!byCollection.has(book.collectionFile)) byCollection.set(book.collectionFile, []);
   byCollection.get(book.collectionFile).push(book);
+}
+for (const relative of [
+  'ancient-epic/index.html',
+  'renaissance-early-modern/index.html',
+  'shakespeare/index.html',
+  'restoration-enlightenment/index.html',
+  'romantic-regency/index.html',
+  'victorian/index.html',
+  'american/index.html',
+  'modern/index.html'
+]) {
+  const file = path.join(root, relative);
+  let html = fs.readFileSync(file, 'utf8');
+  html = html.replace(new RegExp(blockStart + '[\\s\\S]*?' + blockEnd, 'g'), '');
+  fs.writeFileSync(file, html);
 }
 for (const [relative, books] of byCollection) updateCollection(relative, books);
 

@@ -74,6 +74,12 @@ module.exports = [
     description: 'Contracts, mercy, prejudice, money, performance and the divided worlds of Venice and Belmont.'
   },
   {
+    title: 'Mrs Dalloway',
+    image: 'Mrs Dalloway Study Cover.png',
+    url: 'https://mybook.to/M4c6K',
+    description: 'Clarissa Dalloway, Septimus Warren Smith, memory, time, London, isolation and survival.'
+  },
+  {
     title: 'Richard II',
     image: 'Richard II Study Cover.png',
     url: 'https://mybook.to/o0Am2j',

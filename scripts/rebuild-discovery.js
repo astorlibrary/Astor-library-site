@@ -3,18 +3,21 @@ const path = require('path');
 const subjectData = require('./subject-data');
 const resourceData = require('./resource-data');
 const authorProfileData = require('./author-profiles');
+const editionUpdateData = require('./edition-update-data');
 
 const root = process.cwd();
 
 const collectionFiles = [
-  { file: 'ancient-epic/index.html', name: 'Ancient & Epic', href: '/ancient-epic/', image: '/Ancient%20and%20Epic.png' },
-  { file: 'renaissance-early-modern/index.html', name: 'Renaissance & Early Modern', href: '/renaissance-early-modern/', image: '/Renaissance%20and%20Early%20Modern.png' },
-  { file: 'shakespeare/index.html', name: 'Shakespeare', href: '/shakespeare/', image: '/Shakespeare.png' },
-  { file: 'restoration-enlightenment/index.html', name: 'Restoration & Enlightenment', href: '/restoration-enlightenment/', image: '/Restoration%20and%20Enlightenment.png' },
-  { file: 'romantic-regency/index.html', name: 'Romantic & Regency', href: '/romantic-regency/', image: '/Romantic%20and%20Regency.png' },
-  { file: 'victorian/index.html', name: 'Victorian', href: '/victorian/', image: '/Victorian.png' },
-  { file: 'american/index.html', name: 'American Classics', href: '/american/', image: '/American%20Classics.png' },
-  { file: 'modern/index.html', name: 'Modern Classics', href: '/modern/', image: '/Modern%20Classics.png' }
+  { file: 'ancient-epic/index.html', name: 'Ancient & Epic', href: '/ancient-epic/', image: '/assets/home/ancient-epic.jpg' },
+  { file: 'renaissance-early-modern/index.html', name: 'Renaissance & Early Modern', href: '/renaissance-early-modern/', image: '/assets/home/renaissance-early-modern.jpg' },
+  { file: 'shakespeare/index.html', name: 'Shakespeare', href: '/shakespeare/', image: '/assets/home/shakespeare.jpg' },
+  { file: 'shakespeare/apocrypha/index.html', name: 'Shakespeare Apocrypha', href: '/shakespeare/apocrypha/', image: '/Edward%20III%20Main%20Cover.png', relatedBooks: editionUpdateData.filter(book => book.range === 'apocrypha').map(book => '/books/' + book.slug + '/') },
+  { file: 'shakespeare/expanded-scholarly-editions/index.html', name: 'Astor Shakespeare: Expanded Scholarly Editions', href: '/shakespeare/expanded-scholarly-editions/', image: '/Hamlet%20Scholarly%20Cover.png', relatedBooks: editionUpdateData.filter(book => book.range === 'expanded').map(book => '/books/' + book.slug + '/') },
+  { file: 'restoration-enlightenment/index.html', name: 'Restoration & Enlightenment', href: '/restoration-enlightenment/', image: '/assets/home/restoration-enlightenment.jpg' },
+  { file: 'romantic-regency/index.html', name: 'Romantic & Regency', href: '/romantic-regency/', image: '/assets/home/romantic-regency.jpg' },
+  { file: 'victorian/index.html', name: 'Victorian', href: '/victorian/', image: '/assets/home/victorian.jpg' },
+  { file: 'american/index.html', name: 'American Classics', href: '/american/', image: '/assets/home/american-classics.jpg' },
+  { file: 'modern/index.html', name: 'Modern Classics', href: '/modern/', image: '/assets/home/modern-classics.jpg' }
 ];
 
 const studyBookLinks = {
@@ -53,6 +56,7 @@ const studyBookLinks = {
   'https://mybook.to/ENJxO': ['/books/loves-labours-lost/'],
   'https://mybook.to/x8aiiFG': ['/books/measure-for-measure/'],
   'https://mybook.to/2QzQqmh': ['/books/the-merchant-of-venice/'],
+  'https://mybook.to/M4c6K': ['/books/mrs-dalloway/'],
   'https://mybook.to/o0Am2j': ['/books/richard-ii/'],
   'https://mybook.to/2mR1': ['/books/taming-of-the-shrew/'],
   'https://mybook.to/gf9uZE': ['/books/titus-andronicus/'],
@@ -349,6 +353,7 @@ const collections = collectionFiles.map(function (collection) {
     href: collection.href,
     image: collection.image,
     imageAlt: collection.name + ' illustrated banner',
+    relatedBooks: collection.relatedBooks || [],
     search: [collection.name, textOnly(deckHtml)].join(' ')
   };
 });

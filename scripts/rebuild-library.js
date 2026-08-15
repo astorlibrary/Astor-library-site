@@ -3,11 +3,12 @@ const path = require('path');
 const authorProfileData = require('./author-profiles');
 const subjectData = require('./subject-data');
 
+require('./rebuild-shakespeare-additions');
+require('./rebuild-main-additions');
+require('./rebuild-edition-update');
 require('./rebuild-resources');
 require('./rebuild-resource-additions');
 require('./rebuild-study-additions');
-require('./rebuild-shakespeare-additions');
-require('./rebuild-main-additions');
 
 const root = process.cwd();
 const authorProfileByName = new Map(authorProfileData.map(author => [author.name, author]));
