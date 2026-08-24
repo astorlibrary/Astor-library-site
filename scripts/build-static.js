@@ -28,6 +28,7 @@ const collectionBanners = {
 };
 
 const excluded = new Set([
+  '.agents',
   '.git',
   '.github',
   '.gitignore',
