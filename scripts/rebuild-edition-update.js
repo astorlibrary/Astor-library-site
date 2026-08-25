@@ -245,7 +245,10 @@ function updateCollection(relative, additions) {
     if (introStart === -1 || introClose === -1) throw new Error('Could not place Shakespeare collection routes');
     html = html.slice(0, introClose + '</section>'.length) + '\n' + routeBlock + html.slice(introClose + '</section>'.length);
   } else {
-    body = '<div class="section-title astor-update-divider"><p class="kicker">New Astor editions</p><h2>Recently added to this collection.</h2></div>' + additions.map(catalogueCard).join('\n');
+    // New records belong to the collection itself. Keep the generator markers
+    // for repeatable rebuilds, but do not split otherwise equal editions into a
+    // temporary "recently added" tier in the reader-facing shelf.
+    body = additions.map(catalogueCard).join('\n');
   }
   const block = blockStart + '\n' + body + '\n' + blockEnd + '\n';
   const mainClose = html.lastIndexOf('</main>');

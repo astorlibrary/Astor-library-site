@@ -497,6 +497,10 @@
         if (edition) edition.after(panel);
         else main.append(panel);
       }
+      // Keep the compact static shelf as a no-JavaScript fallback, but avoid
+      // showing the same recommendations twice when this richer panel loads.
+      const staticRelatedShelf = main.querySelector('.context-image-shelf-book');
+      if (staticRelatedShelf) staticRelatedShelf.hidden = true;
       scrollToCurrentSection();
     } catch {
       // The reading page remains complete if the optional discovery index is unavailable.

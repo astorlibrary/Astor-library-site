@@ -192,11 +192,21 @@ function hardbackPage(hardbacks) {
     if (bIndex === -1) return -1;
     return aIndex - bIndex;
   });
-  const heroBooks = collectionOrder
-    .map(collection => hardbacks.find(book => book.collection === collection))
-    .filter(Boolean)
-    .slice(0, 3);
-  const heroCovers = heroBooks.map((book, index) => `<img src="${assetPath(book.image)}" alt=""${index === 0 ? ' fetchpriority="high"' : ' loading="lazy"'}>`).join('');
+  const heroSlugs = [
+    'sleepy-hollow-and-other-stories',
+    'the-odyssey',
+    'a-victorian-bonfire-night'
+  ];
+  const heroBooks = heroSlugs.map(slug => {
+    const book = hardbacks.find(candidate => candidate.slug === slug);
+    if (!book) throw new Error(`Missing hardback hero edition: ${slug}`);
+    return book;
+  });
+  const heroCovers = heroBooks.map((book, index) => {
+    const title = escapeHtml(book.title);
+    const loading = index === 1 ? ' fetchpriority="high"' : ' loading="lazy"';
+    return `<a href="${escapeHtml(book.href)}" aria-label="Open ${title}"><img src="${assetPath(book.image)}" alt=""${loading} decoding="async"></a>`;
+  }).join('');
   const sections = groups.map(([collection, books], index) => {
     const id = 'hardbacks-' + collection.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const collectionHref = books[0].collectionHref;
@@ -210,7 +220,7 @@ function hardbackPage(hardbacks) {
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Hardback Editions | Astor Library</title><meta name="description" content="Browse Astor Library hardback editions across epic, Shakespeare, Victorian and American literature, with matched paperback links on every book page."><link rel="stylesheet" href="/assets/styles.css"></head>
 <body>${header()}
 <main id="main-content" class="page-wrap hardback-page">
-  <section class="hardback-hero"><div class="hardback-hero-copy"><p class="kicker">Books to keep and give</p><h1>Hardback editions.</h1><p class="deck">A separate shelf for Astor books available in hardback: annotated classics, epic poetry, Shakespeare and seasonal collections. Each cover below is the hardback artwork for that title.</p><div class="button-row"><a class="button primary" href="#hardback-shelf">Browse the hardback shelf</a><a class="button secondary" href="/library/">All Astor books</a></div></div><div class="hardback-hero-covers" aria-hidden="true">${heroCovers}</div></section>
+  <section class="hardback-hero"><div class="hardback-hero-copy"><p class="kicker">Books to keep and give</p><h1>Hardback editions.</h1><p class="deck">A separate shelf for Astor books available in hardback: annotated classics, epic poetry, Shakespeare and seasonal collections. Each cover below is the hardback artwork for that title.</p><div class="button-row"><a class="button primary" href="#hardback-shelf">Browse the hardback shelf</a><a class="button secondary" href="/library/">All Astor books</a></div></div><nav class="hardback-hero-covers" aria-label="Highlighted hardback editions">${heroCovers}</nav></section>
   <section class="hardback-editorial-note" aria-label="About Astor hardback editions"><p><strong>Two formats, one clear route.</strong> Every hardback opens the book&rsquo;s main Astor page, where its hardback and paperback covers sit together with separate retailer links.</p><p>The section is organised by the established Astor collections so that each cover remains beside books from its own visual series.</p></section>
   ${sections}
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/library/">Browse all books</a><a href="/explore/">Search Astor Library <span aria-hidden="true">&rarr;</span></a></nav>

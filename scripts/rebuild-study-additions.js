@@ -30,9 +30,15 @@ html = html.replace(/<a class="study-card" href="https:\/\/mybook\.to\/lhbh">[\s
 html = html.replace(
   '<a class="study-card" href="https://mybook.to/cntRBz">',
   '<a class="study-card" href="/study/macbeth/" data-buy-url="https://mybook.to/cntRBz">'
-).replace(
-  /(<a class="study-card" href="\/study\/macbeth\/"[\s\S]*?<span class="button primary">)Buy \/ view(<\/span>)/,
-  '$1Open the study page$2'
+);
+html = html.replace(
+  /<a class="study-card" href="\/study\/macbeth\/"[^>]*>[\s\S]*?<\/a>/,
+  function (card) {
+    return card.replace(
+      /(<span class="button primary">)(?:Buy \/ view|Open the study page)(<\/span>)/,
+      '$1Open the study page$2'
+    );
+  }
 );
 if (!html.includes(marker)) throw new Error('Could not find the paired-editions marker in study/index.html');
 html = html.replace(marker, cards + marker);

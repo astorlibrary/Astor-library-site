@@ -769,18 +769,19 @@ function addContextImageShelf(html, source) {
     if (!item?.href || !item?.image || item.href === href || seen.has(item.href)) return false;
     seen.add(item.href);
     return true;
-  }).slice(0, 5);
+  }).slice(0, 4);
   if (items.length < 2) return html;
 
   const cards = items.map(item => {
     const external = /^https?:\/\//i.test(item.href);
     const externalAttributes = external ? ' target="_blank" rel="noopener noreferrer"' : '';
-    return '<a href="' + escapeHtml(item.href) + '"' + externalAttributes + '>' +
-      '<img src="' + escapeHtml(item.image) + '" alt="' + escapeHtml(item.imageAlt || item.title + ' cover') + '" width="480" height="720">' +
-      '<span><small>' + escapeHtml(item.typeLabel || 'Astor Library') + '</small><strong>' + escapeHtml(item.title) + '</strong></span></a>';
+    return '<a class="context-image-card" href="' + escapeHtml(item.href) + '"' + externalAttributes + '>' +
+      '<span class="context-image-cover"><img src="' + escapeHtml(item.image) + '" alt="' + escapeHtml(item.imageAlt || item.title + ' cover') + '" width="360" height="576" loading="lazy"></span>' +
+      '<span class="context-image-copy"><small>' + escapeHtml(item.typeLabel || 'Astor Library') + '</small><strong>' + escapeHtml(item.title) + '</strong><span class="context-image-link">Open page <span aria-hidden="true">&rarr;</span></span></span></a>';
   }).join('');
 
-  const section = '<section class="context-image-shelf" aria-labelledby="context-image-shelf-title">' +
+  const sectionClass = book ? 'context-image-shelf context-image-shelf-book' : 'context-image-shelf';
+  const section = '<section class="' + sectionClass + '" aria-labelledby="context-image-shelf-title">' +
     '<header><p class="kicker">' + escapeHtml(label) + '</p><h2 id="context-image-shelf-title">' + escapeHtml(heading) + '</h2></header>' +
     '<div>' + cards + '</div></section>';
   const beforeEndNavigation = html.replace(/(<nav class="book-end-nav\b)/i, section + '$1');

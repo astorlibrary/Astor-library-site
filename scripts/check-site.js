@@ -208,6 +208,13 @@ const academicFeature = homepageMain.match(/<section class="academic-feature"[\s
 if (!academicFeature) failures.push('The homepage is missing its new-academic-year feature');
 if (!academicFeature.includes('Begin with the text.')) failures.push('The homepage academic feature is missing its editorial title');
 if (!academicFeature.includes('The new academic year')) failures.push('The homepage academic feature is missing its seasonal context');
+if (!academicFeature.includes('Back to school') || !academicFeature.includes('Late August &mdash; September')) failures.push('The homepage academic feature does not read as an August–September back-to-school programme');
+for (const className of ['academic-season-masthead', 'academic-season-shelf', 'academic-route-block']) {
+  if (!academicFeature.includes('class="' + className + '"')) failures.push('The homepage academic feature is missing its structured ' + className + ' section');
+}
+if (countMatches(academicFeature, /class="academic-cover-table"[\s\S]*?<\/nav>/g) !== 1 || countMatches(academicFeature.match(/class="academic-cover-table"[\s\S]*?<\/nav>/)?.[0] || '', /<a href=/g) !== 4) {
+  failures.push('The homepage academic feature must present four selected books and resources');
+}
 for (const href of ['/library/', '/shakespeare/', '/study/', '/resources/']) {
   if (!academicFeature.includes('href="' + href + '"')) failures.push('The homepage academic feature is missing ' + href);
 }
@@ -525,9 +532,19 @@ if (!hardbackHtml) {
   if (!hardbackHtml.includes('class="page-wrap hardback-page"')) failures.push('The hardback collection is missing its premium-books layout');
   if (!hardbackHtml.includes('<h1>Hardback editions.</h1>')) failures.push('The hardback collection is missing its main heading');
   if (countMatches(hardbackHtml, /class="hardback-card"/g) !== formatReleaseData.hardbacks.length) failures.push('The hardback collection must contain exactly the ten supplied formats');
+  const hardbackHero = hardbackHtml.match(/<nav class="hardback-hero-covers"[\s\S]*?<\/nav>/i)?.[0] || '';
+  const heroLinks = Array.from(hardbackHero.matchAll(/<a href="([^"]+)"[\s\S]*?<img src="([^"]+)"/g), match => ({ href: match[1], image: match[2] }));
+  const expectedHeroLinks = [
+    { href: '/books/sleepy-hollow-and-other-stories/', image: assetPath('Sleepy Hollow and other American Halloween Stories Hardcover.png') },
+    { href: '/books/the-odyssey/', image: assetPath('The Odyssey Hardcover.png') },
+    { href: '/books/a-victorian-bonfire-night/', image: assetPath('Victorian Bonfire Night Hardcover.png') }
+  ];
+  if (JSON.stringify(heroLinks) !== JSON.stringify(expectedHeroLinks)) failures.push('The hardback hero must show Sleepy Hollow, The Odyssey and A Victorian Bonfire Night in that order');
+  if (hardbackHero.includes('Shakespeare%27s%20Sonnets%20Hardback.png')) failures.push('The hardback hero must not feature Shakespeare’s Sonnets');
 }
 
 const primaryCollectionHtml = collectionFiles.map(file => fs.readFileSync(path.join(root, file), 'utf8')).join('\n');
+if (/Recently added to this collection|astor-update-divider/i.test(primaryCollectionHtml)) failures.push('Primary collection shelves still split recent additions from the rest of their editions');
 for (const hardback of formatReleaseData.hardbacks) {
   const href = hardback.href;
   const hardbackCover = assetPath(hardback.image);
@@ -837,6 +854,18 @@ if (fs.existsSync(distDir)) {
     }
     if (/^books\/[^/]+\/index\.html$/.test(fileName) && !html.includes('data-astor-book-schema')) {
       failures.push('dist/' + fileName + ' is missing its book description for search engines');
+    }
+    if (/^books\/[^/]+\/index\.html$/.test(fileName)) {
+      const contextShelf = html.match(/<section class="context-image-shelf[^"]*"[\s\S]*?<\/section>/i)?.[0] || '';
+      if (contextShelf) {
+        const contextCards = countMatches(contextShelf, /class="context-image-card"/g);
+        if (contextCards < 2 || contextCards > 4) failures.push('dist/' + fileName + ' must keep its related shelf between two and four compact cards');
+        for (const image of contextShelf.matchAll(/<img\b[^>]*>/gi)) {
+          if (!/\bwidth="360"/i.test(image[0]) || !/\bheight="576"/i.test(image[0]) || !/\bloading="lazy"/i.test(image[0])) {
+            failures.push('dist/' + fileName + ' has a related cover without compact intrinsic dimensions and lazy loading');
+          }
+        }
+      }
     }
     if (/^(?:(?:authors|subjects|passage-room|teach|classic-literature|library|resources|study|explore|reading-routes|site-index|hardbacks|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html|shakespeare\/(?:apocrypha|expanded-scholarly-editions)\/index\.html)$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
       failures.push('dist/' + fileName + ' is missing its collection description for search engines');
