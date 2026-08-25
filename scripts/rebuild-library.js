@@ -2,10 +2,12 @@ const fs = require('fs');
 const path = require('path');
 const authorProfileData = require('./author-profiles');
 const subjectData = require('./subject-data');
+const editionUpdateData = require('./edition-update-data');
 
 require('./rebuild-shakespeare-additions');
 require('./rebuild-main-additions');
 require('./rebuild-edition-update');
+require('./rebuild-format-release');
 require('./rebuild-resources');
 require('./rebuild-resource-additions');
 require('./rebuild-study-additions');
@@ -61,12 +63,47 @@ function rootPath(value) {
   return `/${value.replace(/^\.\.\//, '')}`;
 }
 
+function assetPath(file) {
+  return '/' + encodeURIComponent(file).replace(/'/g, '%27');
+}
+
 function firstSentence(value) {
   const match = value.match(/^([\s\S]*?[.!?])(?:\s|$)/);
   return match ? match[1] : value;
 }
 
 const books = new Map();
+
+function readBookRecord(href, collection, image, imageAlt) {
+  const bookFile = path.join(root, href.replace(/^\//, ''), 'index.html');
+  const bookHtml = fs.readFileSync(bookFile, 'utf8');
+  const titleMatch = bookHtml.match(/<h1>([\s\S]*?)<\/h1>/);
+  const authorMatch = bookHtml.match(/<p class="kicker">([\s\S]*?)<\/p>/);
+  const deckMatch = bookHtml.match(/<p class="deck">([\s\S]*?)<\/p>/);
+
+  if (!titleMatch || !authorMatch || !deckMatch) {
+    throw new Error(`Could not read the title, author or introduction in ${bookFile}`);
+  }
+
+  const titleHtml = titleMatch[1].replace(/\.$/, '');
+  const authorText = textOnly(authorMatch[1]);
+  const authorProfile = authorProfileByName.get(authorText);
+
+  return {
+    href,
+    collection,
+    titleHtml,
+    titleText: textOnly(titleHtml),
+    authorHtml: authorProfile
+      ? `<a href="${authorProfile.href}">${escapeHtml(authorText)}</a>`
+      : escapeHtml(authorText),
+    authorText,
+    subjects: subjectsByBook.get(href) || [],
+    descriptionHtml: firstSentence(deckMatch[1]),
+    image,
+    imageAlt: textOnly(imageAlt)
+  };
+}
 
 for (const [relative, collection] of collections) {
   const html = fs.readFileSync(path.join(root, relative), 'utf8');
@@ -84,36 +121,25 @@ for (const [relative, collection] of collections) {
     if (books.has(href)) {
       throw new Error(href + ' appears in both ' + books.get(href).collection + ' and ' + collection);
     }
-    const bookFile = path.join(root, href.replace(/^\//, ''), 'index.html');
-    const bookHtml = fs.readFileSync(bookFile, 'utf8');
-    const titleMatch = bookHtml.match(/<h1>([\s\S]*?)<\/h1>/);
-    const authorMatch = bookHtml.match(/<p class="kicker">([\s\S]*?)<\/p>/);
-    const deckMatch = bookHtml.match(/<p class="deck">([\s\S]*?)<\/p>/);
-
-    if (!titleMatch || !authorMatch || !deckMatch) {
-      throw new Error(`Could not read the title, author or introduction in ${bookFile}`);
-    }
-
-    const titleHtml = titleMatch[1].replace(/\.$/, '');
-
-    const authorText = textOnly(authorMatch[1]);
-    const authorProfile = authorProfileByName.get(authorText);
-
-    books.set(href, {
-      href,
-      collection,
-      titleHtml,
-      titleText: textOnly(titleHtml),
-      authorHtml: authorProfile
-        ? `<a href="${authorProfile.href}">${escapeHtml(authorText)}</a>`
-        : escapeHtml(authorText),
-      authorText,
-      subjects: subjectsByBook.get(href) || [],
-      descriptionHtml: firstSentence(deckMatch[1]),
-      image: rootPath(imageMatch[1]),
-      imageAlt: imageMatch[2]
-    });
+    books.set(href, readBookRecord(href, collection, rootPath(imageMatch[1]), imageMatch[2]));
   }
+}
+
+// Specialist Shakespeare ranges keep their own coherent collection pages rather
+// than appearing in the standard-edition grid. Register those canonical book
+// pages directly so that the complete catalogue, writers and discovery indexes
+// still include them and the uncatalogued-page invariant remains meaningful.
+for (const book of editionUpdateData.filter(entry => entry.range === 'apocrypha' || entry.range === 'expanded')) {
+  const href = `/books/${book.slug}/`;
+  if (books.has(href)) {
+    throw new Error(`${href} is a specialist Shakespeare edition and must not appear in the standard Shakespeare grid`);
+  }
+  books.set(href, readBookRecord(
+    href,
+    'Shakespeare',
+    rootPath(assetPath(book.image)),
+    `Astor Library ${book.title} cover`
+  ));
 }
 
 const uncatalogued = fs.readdirSync(path.join(root, 'books'), { withFileTypes: true })
@@ -134,7 +160,7 @@ const filterButtons = ['All books', ...collections.map(([, label]) => label)]
 
 const cards = sorted.map(book => `
       <article class="catalog-card" data-collection="${book.collection}" data-search="${escapeHtml([book.titleText, book.authorText, book.collection, ...book.subjects, textOnly(book.descriptionHtml)].join(' '))}">
-        <a class="catalog-cover" href="${book.href}"><img src="${book.image}" alt="${book.imageAlt}" loading="lazy"></a>
+        <a class="catalog-cover" href="${book.href}"><img src="${book.image}" alt="${escapeHtml(book.imageAlt)}" loading="lazy"></a>
         <div class="catalog-card-copy"><p class="catalog-collection">${book.collection}</p><h2><a href="${book.href}">${book.titleHtml}</a></h2><p class="catalog-author">${book.authorHtml}</p><p>${book.descriptionHtml}</p><a class="home-text-link" href="${book.href}">Open book page <span aria-hidden="true">&rarr;</span></a></div>
       </article>`).join('');
 

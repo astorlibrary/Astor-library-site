@@ -1,13 +1,13 @@
 {
   "counts": {
-    "books": 97,
-    "authors": 43,
+    "books": 117,
+    "authors": 59,
     "subjects": 9,
     "resources": 44,
     "studyEditions": 41,
-    "collections": 10,
+    "collections": 11,
     "passages": 15,
-    "entries": 259
+    "entries": 296
   },
   "books": [
     {
@@ -60,6 +60,34 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "A Room of One’s Own",
+      "author": "Virginia Woolf",
+      "collection": "Modern Classics",
+      "description": "Woolf asks what material conditions a woman needs in order to write, moving through Oxbridge, Fernham, the British Museum and literary history by way of fact, fiction and speculation.",
+      "href": "/books/a-room-of-ones-own/",
+      "image": "/A%20Room%20of%20One%27s%20Own%20Main%20COver.png",
+      "imageAlt": "Astor Library A Room of One’s Own cover",
+      "search": "A Room of One’s Own Virginia Woolf Modern Classics Woolf asks what material conditions a woman needs in order to write, moving through Oxbridge, Fernham, the British Museum and literary history by way of fact, fiction and speculation. What this Astor edition contains. A Room of One’s Own The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Essay · 1929 Three questions carried by the edition. Material freedom Fact mixed with fiction Women in literary history",
+      "authorHref": "/authors/#virginia-woolf",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "A Victorian Bonfire Night",
+      "author": "James Orchard Halliwell, Douglas Jerrold and others",
+      "collection": "Victorian",
+      "description": "Victorian fiction, essays, folklore and newspaper reporting trace the Fifth of November as statutory Protestant observance gave way to children’s customs, bonfire societies and public entertainment.",
+      "href": "/books/a-victorian-bonfire-night/",
+      "image": "/A%20Victorian%20Bonfire%20Night%20Main%20Cover.png",
+      "imageAlt": "Astor Library A Victorian Bonfire Night cover",
+      "search": "A Victorian Bonfire Night James Orchard Halliwell, Douglas Jerrold and others Victorian Victorian fiction, essays, folklore and newspaper reporting trace the Fifth of November as statutory Protestant observance gave way to children’s customs, bonfire societies and public entertainment. What this Astor edition contains. A Victorian Bonfire Night The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Annotated cultural history Three questions carried by the edition. Observance and entertainment Regional Bonfire Night Fire, food and regulation Paperback and hardback.",
+      "authorHref": "/authors/#james-orchard-halliwell-douglas-jerrold-and-others",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "A Victorian Christmas",
       "author": "Astor Library",
       "collection": "Victorian",
@@ -67,7 +95,7 @@
       "href": "/books/a-victorian-christmas/",
       "image": "/A%20Victorian%20Christmas%20Main%20Cover.png",
       "imageAlt": "Astor Library A Victorian Christmas cover",
-      "search": "A Victorian Christmas Astor Library Victorian A history of the nineteenth-century changes that created much of the Christmas culture inherited by later generations, from trees, cards and crackers to family gatherings, charity, carols and ghost stories. What this Astor edition contains. A Victorian Christmas The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Cultural history Three questions carried by the edition. Tradition and invention Home and labour Print and imagination",
+      "search": "A Victorian Christmas Astor Library Victorian A history of the nineteenth-century changes that created much of the Christmas culture inherited by later generations, from trees, cards and crackers to family gatherings, charity, carols and ghost stories. What this Astor edition contains. A Victorian Christmas The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Cultural history Three questions carried by the edition. Tradition and invention Home and labour Print and imagination Paperback and hardback.",
       "authorHref": "/authors/#astor-library",
       "subjects": []
     },
@@ -111,6 +139,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Alice’s Adventures in Wonderland",
+      "author": "Lewis Carroll",
+      "collection": "Victorian",
+      "description": "Carroll’s final revised text is supported by notes on Victorian language, customs, poems and references, together with the Oxford and manuscript history behind Wonderland.",
+      "href": "/books/alices-adventures-in-wonderland/",
+      "image": "/Alice%27s%20Adventures%20in%20Wonderland%20Main%20Cover.png",
+      "imageAlt": "Astor Library Alice’s Adventures in Wonderland cover",
+      "search": "Alice’s Adventures in Wonderland Lewis Carroll Victorian Carroll’s final revised text is supported by notes on Victorian language, customs, poems and references, together with the Oxford and manuscript history behind Wonderland. What this Astor edition contains. Alice’s Adventures in Wonderland The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1865 Three questions carried by the edition. Language and recognition Manuscript to book Words and pictures",
+      "authorHref": "/authors/#lewis-carroll",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "All's Well That Ends Well",
       "author": "William Shakespeare",
       "collection": "Shakespeare",
@@ -145,6 +187,20 @@
           "href": "/subjects/satire-political-writing/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Anne of Green Gables",
+      "author": "L. M. Montgomery",
+      "collection": "Modern Classics",
+      "description": "Eleven-year-old Anne Shirley is sent by mistake to Matthew and Marilla Cuthbert at Green Gables in Montgomery’s Prince Edward Island novel.",
+      "href": "/books/anne-of-green-gables/",
+      "image": "/Anne%20of%20Green%20Gables%20Main%20Cover.png",
+      "imageAlt": "Astor Library Anne of Green Gables cover",
+      "search": "Anne of Green Gables L. M. Montgomery Modern Classics Eleven-year-old Anne Shirley is sent by mistake to Matthew and Marilla Cuthbert at Green Gables in Montgomery’s Prince Edward Island novel. What this Astor edition contains. Anne of Green Gables The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1908 Three questions carried by the edition. Arrival by mistake Prince Edward Island Language retained",
+      "authorHref": "/authors/#l-m-montgomery",
+      "subjects": []
     },
     {
       "type": "book",
@@ -201,6 +257,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Charles I: Selected Writings",
+      "author": "Charles I and contemporaries",
+      "collection": "Renaissance & Early Modern",
+      "description": "Seventeen documents trace the disputed reign of Charles I from the conflicts of the 1620s to trial and execution, with authorship and provenance stated for each selection.",
+      "href": "/books/charles-i-selected-writings/",
+      "image": "/Charles%20I%20selected%20Writings%20Main%20Cover.png",
+      "imageAlt": "Astor Library Charles I: Selected Writings cover",
+      "search": "Charles I: Selected Writings Charles I and contemporaries Renaissance & Early Modern Seventeen documents trace the disputed reign of Charles I from the conflicts of the 1620s to trial and execution, with authorship and provenance stated for each selection. What this Astor edition contains. Charles I: Selected Writings The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Primary documents · 1620s–1649 Three questions carried by the edition. Royal voice and drafting Crown and Parliament Trial and memory",
+      "authorHref": "/authors/#charles-i-and-contemporaries",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Coriolanus",
       "author": "William Shakespeare",
       "collection": "Shakespeare",
@@ -229,6 +299,20 @@
       "imageAlt": "Astor Library Cymbeline cover",
       "search": "Cymbeline William Shakespeare Shakespeare A banished husband, a wager on a wife’s fidelity, two lost princes and a threatened Roman war meet in one of Shakespeare’s boldest late plays. Cymbeline, William Shakespeare A late play made from many forms How the story unfolds Marriage and exile The false victory Flight towards Wales A body in borrowed clothes Battle and recognition Characters and relationships Sources, text and interpretation Britain and Rome The wager plot The only early printed text Tragedy turned towards repair Stage and afterlife Simon Forman watches the play Imogen at the centre Britain, empire and gender Sources and further reading",
       "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Dickens at Christmas",
+      "author": "Charles Dickens",
+      "collection": "Victorian",
+      "description": "Four complete Dickens Christmas books bring A Christmas Carol together with The Chimes, The Cricket on the Hearth and The Haunted Man and the Ghost’s Bargain.",
+      "href": "/books/dickens-at-christmas/",
+      "image": "/Dickens%20at%20Christmas%20Main%20Cover.png",
+      "imageAlt": "Astor Library Dickens at Christmas cover",
+      "search": "Dickens at Christmas Charles Dickens Victorian Four complete Dickens Christmas books bring A Christmas Carol together with The Chimes, The Cricket on the Hearth and The Haunted Man and the Ghost’s Bargain. What this Astor edition contains. Dickens at Christmas The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Four Christmas books · 1843–48 Three questions carried by the edition. Four Christmas forms Poverty and judgement Memory and sympathy Paperback and hardback.",
+      "authorHref": "/authors/charles-dickens/",
       "subjects": []
     },
     {
@@ -289,6 +373,20 @@
       "imageAlt": "Astor Library Edward III cover",
       "search": "Edward III William Shakespeare and a collaborator Shakespeare A specialist annotated edition of the anonymous 1596 history play now generally understood to contain a substantial contribution by Shakespeare, although the identity of his collaborator remains unsettled. What this Astor edition contains. Edward III The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Shakespeare Apocrypha · Volume I Three questions carried by the edition. Kingship and self-command Father and prince A disputed canon",
       "authorHref": "/authors/#william-shakespeare-and-a-collaborator",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Ethan Frome",
+      "author": "Edith Wharton",
+      "collection": "American Classics",
+      "description": "An engineer reconstructs the history behind Ethan Frome’s injuries, returning twenty-four years to a failing Starkfield farm, a constricted marriage and Mattie Silver’s arrival.",
+      "href": "/books/ethan-frome/",
+      "image": "/Ethan%20Frome%20Main%20Cover.png",
+      "imageAlt": "Astor Library Ethan Frome cover",
+      "search": "Ethan Frome Edith Wharton American Classics An engineer reconstructs the history behind Ethan Frome’s injuries, returning twenty-four years to a failing Starkfield farm, a constricted marriage and Mattie Silver’s arrival. What this Astor edition contains. Ethan Frome The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1911 Three questions carried by the edition. No practical exit A reconstructed past Starkfield winter",
+      "authorHref": "/authors/#edith-wharton",
       "subjects": []
     },
     {
@@ -648,6 +746,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Lyrical Ballads",
+      "author": "William Wordsworth and Samuel Taylor Coleridge",
+      "collection": "Romantic & Regency",
+      "description": "Thirty-six poems from the 1798 and 1800 editions preserve the forms in which Wordsworth and Coleridge first published them, including the original Rime of the Ancyent Marinere.",
+      "href": "/books/lyrical-ballads/",
+      "image": "/Lyrical%20Ballads%20Main%20Cover.png",
+      "imageAlt": "Astor Library Lyrical Ballads cover",
+      "search": "Lyrical Ballads William Wordsworth and Samuel Taylor Coleridge Romantic & Regency Thirty-six poems from the 1798 and 1800 editions preserve the forms in which Wordsworth and Coleridge first published them, including the original Rime of the Ancyent Marinere. What this Astor edition contains. Lyrical Ballads The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Selected poetry · 1798 / 1800 Three questions carried by the edition. First forms Two poets Place and encounter",
+      "authorHref": "/authors/#william-wordsworth-and-samuel-taylor-coleridge",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Macbeth",
       "author": "William Shakespeare",
       "collection": "Shakespeare",
@@ -700,6 +812,20 @@
           "href": "/subjects/comedy/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Michael Robartes and the Dancer",
+      "author": "W. B. Yeats",
+      "collection": "Modern Classics",
+      "description": "Yeats’s fifteen-poem collection is presented in its Cuala Press form, including Easter, 1916 and The Second Coming, with later alterations recorded rather than silently substituted.",
+      "href": "/books/michael-robartes-and-the-dancer/",
+      "image": "/Michael%20Robartes%20Main%20Cover.png",
+      "imageAlt": "Astor Library Michael Robartes and the Dancer cover",
+      "search": "Michael Robartes and the Dancer W. B. Yeats Modern Classics Yeats’s fifteen-poem collection is presented in its Cuala Press form, including Easter, 1916 and The Second Coming, with later alterations recorded rather than silently substituted. What this Astor edition contains. Michael Robartes and the Dancer The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Poetry collection · 1921 Three questions carried by the edition. Poems in their first book Ireland and revolution Private systems",
+      "authorHref": "/authors/#w-b-yeats",
+      "subjects": []
     },
     {
       "type": "book",
@@ -770,6 +896,25 @@
           "title": "Narration and testimony",
           "href": "/subjects/narration-testimony/"
         },
+        {
+          "title": "Slavery, freedom and abolition",
+          "href": "/subjects/slavery-freedom-abolition/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Oroonoko",
+      "author": "Aphra Behn",
+      "collection": "Restoration & Enlightenment",
+      "description": "Behn’s narrative follows an African prince betrayed by an English slave-trading captain, transported to Surinam and repeatedly denied the freedom promised to him and Imoinda.",
+      "href": "/books/oroonoko/",
+      "image": "/Oroonoko%20Main%20Cover.png",
+      "imageAlt": "Astor Library Oroonoko cover",
+      "search": "Oroonoko Aphra Behn Restoration & Enlightenment Behn’s narrative follows an African prince betrayed by an English slave-trading captain, transported to Surinam and repeatedly denied the freedom promised to him and Imoinda. What this Astor edition contains. Oroonoko The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1688 Three questions carried by the edition. Promise and betrayal Narrative and evidence Surinam and Coramantien",
+      "authorHref": "/authors/#aphra-behn",
+      "subjects": [
         {
           "title": "Slavery, freedom and abolition",
           "href": "/subjects/slavery-freedom-abolition/"
@@ -989,7 +1134,7 @@
       "href": "/books/shakespeares-sonnets/",
       "image": "/Shakespeare%27s%20Sonnets%20Main%20Cover.png",
       "imageAlt": "Astor Library Shakespeare’s Sonnets cover",
-      "search": "Shakespeare’s Sonnets William Shakespeare Shakespeare All 154 sonnets in the 1609 order, with a complete poem, concise headnote and same-page explanation designed to make each argument readable without a separate reference book. What this Astor edition contains. Shakespeare’s Sonnets The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Poetry · 1609 Three questions carried by the edition. Sequence and change Time and verse Address and uncertainty",
+      "search": "Shakespeare’s Sonnets William Shakespeare Shakespeare All 154 sonnets in the 1609 order, with a complete poem, concise headnote and same-page explanation designed to make each argument readable without a separate reference book. What this Astor edition contains. Shakespeare’s Sonnets The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Poetry · 1609 Three questions carried by the edition. Sequence and change Time and verse Address and uncertainty Paperback and hardback.",
       "authorHref": "/shakespeare/",
       "subjects": []
     },
@@ -1006,6 +1151,25 @@
       "search": "Sir Thomas More Anthony Munday and collaborators, including an attributed Shakespeare addition Shakespeare The complete surviving collaborative play and additions, including the three manuscript pages known as Hand D and widely accepted as Shakespeare’s only surviving dramatic writing in his own hand. What this Astor edition contains. Sir Thomas More The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Shakespeare Apocrypha · Volume IV Three questions carried by the edition. Strangers and civic order Conscience and office A manuscript in motion",
       "authorHref": "/authors/#anthony-munday-and-collaborators-including-an-attributed-shakespeare-addition",
       "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Sleepy Hollow and Other American Halloween Stories",
+      "author": "Washington Irving, Edgar Allan Poe and others",
+      "collection": "American Classics",
+      "description": "Twelve complete American stories are placed back in their original settings and then followed into the later Halloween tradition that gathered ghosts, witches, haunted houses and black cats around October.",
+      "href": "/books/sleepy-hollow-and-other-stories/",
+      "image": "/Sleepy%20Hollow%20Main%20Cover.png",
+      "imageAlt": "Astor Library Sleepy Hollow and Other American Halloween Stories cover",
+      "search": "Sleepy Hollow and Other American Halloween Stories Washington Irving, Edgar Allan Poe and others American Classics Twelve complete American stories are placed back in their original settings and then followed into the later Halloween tradition that gathered ghosts, witches, haunted houses and black cats around October. What this Astor edition contains. Sleepy Hollow and Other American Halloween Stories The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Annotated collection · twelve stories Three questions carried by the edition. Stories before Halloween An American supernatural line Making a holiday canon Paperback and hardback.",
+      "authorHref": "/authors/#washington-irving-edgar-allan-poe-and-others",
+      "subjects": [
+        {
+          "title": "Gothic literature",
+          "href": "/subjects/gothic-literature/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -1073,7 +1237,7 @@
       "href": "/books/the-aeneid/",
       "image": "/The%20Aeneid.png",
       "imageAlt": "Astor Library The Aeneid cover",
-      "search": "The Aeneid Virgil Ancient & Epic Virgil’s epic follows Aeneas from ruined Troy towards Italy, balancing Rome’s promised future against the human cost of exile, duty and war. Arms and a man Pietas under pressure Future glory, present loss Dryden’s English Virgil The Aeneid, Virgil At a glance Virgil, Augustus and Roman memory Virgil Empire after civil war Aeneas, Ascanius and the Julian line Book-by-book structure Storm and Carthage The fall of Troy Wandering Dido Games and mourning The underworld Italy and alliance War expands Camilla and Turnus The epic’s divided loyalties Knowing the destination does not simplify the road Duty pulls in several directions Troy is carried and rebuilt Six scenes that change the poem Reading Dryden’s translation Sense arrives through balance Translation joins two Augustan ages Compare a passage, not isolated words People caught inside destiny How the poem slows history down Aeneas has to narrate Troy Comparison opens another world Pictures know more than their viewers Questions the ending leaves open Sources and further reading",
+      "search": "The Aeneid Virgil Ancient & Epic Virgil’s epic follows Aeneas from ruined Troy towards Italy, balancing Rome’s promised future against the human cost of exile, duty and war. Arms and a man Pietas under pressure Future glory, present loss Dryden’s English Virgil The Aeneid, Virgil At a glance Virgil, Augustus and Roman memory Virgil Empire after civil war Aeneas, Ascanius and the Julian line Book-by-book structure Storm and Carthage The fall of Troy Wandering Dido Games and mourning The underworld Italy and alliance War expands Camilla and Turnus The epic’s divided loyalties Knowing the destination does not simplify the road Duty pulls in several directions Troy is carried and rebuilt Six scenes that change the poem Reading Dryden’s translation Sense arrives through balance Translation joins two Augustan ages Compare a passage, not isolated words People caught inside destiny How the poem slows history down Aeneas has to narrate Troy Comparison opens another world Pictures know more than their viewers Questions the ending leaves open Sources and further reading Paperback and hardback. The Aeneid",
       "authorHref": "/authors/#virgil",
       "subjects": [
         {
@@ -1094,6 +1258,20 @@
       "imageAlt": "Astor Library The Call of the Wild cover",
       "search": "The Call of the Wild Jack London American Classics Stolen from domestic comfort and sold into Klondike labour, Buck learns the brutal laws of the trail and feels an older life drawing him into the wild. Work before romance Club and fang Animal story Buck on screen The Call of the Wild, Jack London Buck’s world Text and publication history Macmillan first edition The Saturday Evening Post From “Diablo” / “Batard” to Buck London, Klondike and source history Jack London Chilkoot Pass and the stampede Dyea, Skagway, Yukon Demand for strength Structure and chapters Kidnapping and the club Trail discipline Spitz and leadership Lead dog Bad ownership Thornton Beyond the camp Characters Body, memory, instinct Rival authority Competent handlers Unfit ownership The last human bond Naturalism and interpretation Screen adaptations Silent feature Clark Gable and Loretta Young Charlton Heston Television afterlives Harrison Ford and digital Buck Topics for analysis. Who controls Buck? Law, call, fang, trail Gold rush logistics Page and screen Sources and further reading",
       "authorHref": "/authors/#jack-london",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Chimes",
+      "author": "Charles Dickens",
+      "collection": "Victorian",
+      "description": "Dickens’s supernatural Christmas story follows Trotty Veck as respectable arguments about poverty teach him to despise his own class, before the bells show where those beliefs can lead.",
+      "href": "/books/the-chimes/",
+      "image": "/The%20Chimes%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Chimes cover",
+      "search": "The Chimes Charles Dickens Victorian Dickens’s supernatural Christmas story follows Trotty Veck as respectable arguments about poverty teach him to despise his own class, before the bells show where those beliefs can lead. What this Astor edition contains. The Chimes The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Christmas book · 1844 Three questions carried by the edition. Who defines poverty? A possible future The quarters",
+      "authorHref": "/authors/charles-dickens/",
       "subjects": []
     },
     {
@@ -1132,6 +1310,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "The Doves’ Nest and Other Stories",
+      "author": "Katherine Mansfield",
+      "collection": "Modern Classics",
+      "description": "Six completed stories and four significant unfinished pieces from Mansfield’s posthumous 1923 collection are presented with notes on their status, publication and final context.",
+      "href": "/books/the-doves-nest-and-other-stories/",
+      "image": "/The%20Doves%27%20Nest%20and%20Other%20Stories%20Main%20COver.png",
+      "imageAlt": "Astor Library The Doves’ Nest and Other Stories cover",
+      "search": "The Doves’ Nest and Other Stories Katherine Mansfield Modern Classics Six completed stories and four significant unfinished pieces from Mansfield’s posthumous 1923 collection are presented with notes on their status, publication and final context. What this Astor edition contains. The Doves’ Nest and Other Stories The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Stories and fragments · 1923 Three questions carried by the edition. Completion and fragment Childhood and class A posthumous book",
+      "authorHref": "/authors/#katherine-mansfield",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "The Duchess of Malfi",
       "author": "John Webster",
       "collection": "Renaissance & Early Modern",
@@ -1147,6 +1339,20 @@
           "href": "/subjects/tragedy/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "collection": "American Classics",
+      "description": "Set during the summer of 1922 between Long Island’s Gold Coast and Prohibition-era New York, Fitzgerald’s novel is presented in its first-edition text with notes and chapter support.",
+      "href": "/books/the-great-gatsby/",
+      "image": "/The%20Great%20Gatsby%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Great Gatsby cover",
+      "search": "The Great Gatsby F. Scott Fitzgerald American Classics Set during the summer of 1922 between Long Island’s Gold Coast and Prohibition-era New York, Fitzgerald’s novel is presented in its first-edition text with notes and chapter support. What this Astor edition contains. The Great Gatsby The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1925 Three questions carried by the edition. Place and division Money in 1922 First reception and revival Paperback and hardback.",
+      "authorHref": "/authors/#f-scott-fitzgerald",
+      "subjects": []
     },
     {
       "type": "book",
@@ -1172,9 +1378,14 @@
       "href": "/books/the-iliad/",
       "image": "/The%20Iliad.png",
       "imageAlt": "Astor Library The Iliad cover",
-      "search": "The Iliad Homer, translated by Samuel Butler Ancient & Epic Homer’s epic concentrates on the anger of Achilles during a short period of the Trojan War, moving from his quarrel with Agamemnon to the recovery of Hector’s body by Priam. What this Astor edition contains. The Iliad The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Epic · Butler translation, 1898 Three questions carried by the edition. Anger and honour Mortality and glory A human ending",
+      "search": "The Iliad Homer, translated by Samuel Butler Ancient & Epic Homer’s epic concentrates on the anger of Achilles during a short period of the Trojan War, moving from his quarrel with Agamemnon to the recovery of Hector’s body by Priam. What this Astor edition contains. The Iliad The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Epic · Butler translation, 1898 Three questions carried by the edition. Anger and honour Mortality and glory A human ending Paperback and hardback.",
       "authorHref": "/authors/#homer-translated-by-samuel-butler",
-      "subjects": []
+      "subjects": [
+        {
+          "title": "Epic poetry",
+          "href": "/subjects/epic-poetry/"
+        }
+      ]
     },
     {
       "type": "book",
@@ -1250,6 +1461,39 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka, translated by Ian Johnston",
+      "collection": "Modern Classics",
+      "description": "Gregor Samsa wakes transformed into what Ian Johnston calls a “monstrous verminous bug”, yet his first fear concerns work, debt and the employer whose authority reaches into the family home.",
+      "href": "/books/the-metamorphosis/",
+      "image": "/The%20Metamorphosis%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Metamorphosis cover",
+      "search": "The Metamorphosis Franz Kafka, translated by Ian Johnston Modern Classics Gregor Samsa wakes transformed into what Ian Johnston calls a “monstrous verminous bug”, yet his first fear concerns work, debt and the employer whose authority reaches into the family home. What this Astor edition contains. The Metamorphosis The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novella · 1915 Three questions carried by the edition. Work before wonder A household economy A translated creature",
+      "authorHref": "/authors/#franz-kafka-translated-by-ian-johnston",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Moonstone",
+      "author": "Wilkie Collins",
+      "collection": "Victorian",
+      "description": "The disappearance of a priceless diamond is investigated through the testimonies of people connected to the case in Collins’s Victorian detective novel.",
+      "href": "/books/the-moonstone/",
+      "image": "/The%20Moonstone%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Moonstone cover",
+      "search": "The Moonstone Wilkie Collins Victorian The disappearance of a priceless diamond is investigated through the testimonies of people connected to the case in Collins’s Victorian detective novel. What this Astor edition contains. The Moonstone The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1868 Three questions carried by the edition. Testimony and character Empire and possession Making detective fiction",
+      "authorHref": "/authors/#wilkie-collins",
+      "subjects": [
+        {
+          "title": "Detective fiction",
+          "href": "/subjects/detective-fiction/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "The Odyssey",
       "author": "Homer, translated by Samuel Butler",
       "collection": "Ancient & Epic",
@@ -1257,7 +1501,7 @@
       "href": "/books/the-odyssey/",
       "image": "/The%20Odyssey.png",
       "imageAlt": "Astor Library The Odyssey cover",
-      "search": "The Odyssey Homer, translated by Samuel Butler Ancient & Epic Ten years after the Trojan War, Odysseus is still trying to return to Ithaca. What this Astor edition contains. The Odyssey, Homer, translated by Samuel Butler Structure and narrative method. The voyage is told twice Every house is a test Knowing and being known A closer reading The poem begins with the person left behind Odysseus survives by controlling a version of events Recognition leads to restoration—and violence Principal characters Questions for analysis and discussion How the poem tells the journey The hero is absent Odysseus becomes his own singer Return depends on withheld identity Six tests of belonging The people who read the signs Recognition is not surrender The goddess stages knowledge Loyalty appears before certainty Five moments when heroism becomes difficult Sources and further reading",
+      "search": "The Odyssey Homer, translated by Samuel Butler Ancient & Epic Ten years after the Trojan War, Odysseus is still trying to return to Ithaca. What this Astor edition contains. The Odyssey, Homer, translated by Samuel Butler Structure and narrative method. The voyage is told twice Every house is a test Knowing and being known A closer reading The poem begins with the person left behind Odysseus survives by controlling a version of events Recognition leads to restoration—and violence Principal characters Questions for analysis and discussion How the poem tells the journey The hero is absent Odysseus becomes his own singer Return depends on withheld identity Six tests of belonging The people who read the signs Recognition is not surrender The goddess stages knowledge Loyalty appears before certainty Five moments when heroism becomes difficult Sources and further reading Paperback and hardback. The Odyssey",
       "authorHref": "/authors/#homer-translated-by-samuel-butler",
       "subjects": [
         {
@@ -1276,7 +1520,7 @@
       "href": "/books/dorian-gray/",
       "image": "/Picture%20of%20Dorian%20Gray.png",
       "imageAlt": "Astor Library The Picture of Dorian Gray cover",
-      "search": "The Picture of Dorian Gray Oscar Wilde Victorian A beautiful young man remains outwardly untouched while his hidden portrait bears the marks of cruelty, fear and corruption. The Picture of Dorian Gray, Oscar Wilde The novel’s double life Text and publication history The Lippincott commission First publication in Lippincott's Art and commerce on the same page Ward, Lock book edition The uncensored textual record Wilde, aestheticism and the 1890s Oscar Wilde Beauty as an argument The cultivated artificial life Reading under suspicion Text, image and doubling The hidden record Epigram as influence Artistic worship Theatre and reality Key dates Oscar Wilde born Oxford years American lecture tour The Happy Prince and Other Tales Commission and composition Magazine publication and hostile reviews Expanded book publication Trials and imprisonment Death in Paris Reception history Morality and accusation Art, criticism and defence The novel as courtroom material Stage adaptations Silent-era adaptation Opera: Lowell Liebermann Sydney Theatre Company: Kip Williams Sarah Snook: West End and Broadway Screen versions American silent film: Thanhouser Russian silent film Albert Lewin, MGM Massimo Dallamano: modernised Dorian Oliver Parker: Dorian Gray Key passages for study Sources and further reading",
+      "search": "The Picture of Dorian Gray Oscar Wilde Victorian A beautiful young man remains outwardly untouched while his hidden portrait bears the marks of cruelty, fear and corruption. The Picture of Dorian Gray, Oscar Wilde The novel’s double life Text and publication history The Lippincott commission First publication in Lippincott's Art and commerce on the same page Ward, Lock book edition The uncensored textual record Wilde, aestheticism and the 1890s Oscar Wilde Beauty as an argument The cultivated artificial life Reading under suspicion Text, image and doubling The hidden record Epigram as influence Artistic worship Theatre and reality Key dates Oscar Wilde born Oxford years American lecture tour The Happy Prince and Other Tales Commission and composition Magazine publication and hostile reviews Expanded book publication Trials and imprisonment Death in Paris Reception history Morality and accusation Art, criticism and defence The novel as courtroom material Stage adaptations Silent-era adaptation Opera: Lowell Liebermann Sydney Theatre Company: Kip Williams Sarah Snook: West End and Broadway Screen versions American silent film: Thanhouser Russian silent film Albert Lewin, MGM Massimo Dallamano: modernised Dorian Oliver Parker: Dorian Gray Key passages for study Sources and further reading Paperback and hardback. The Picture of Dorian Gray",
       "authorHref": "/authors/oscar-wilde/",
       "subjects": [
         {
@@ -1519,6 +1763,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "The Wind in the Willows",
+      "author": "Kenneth Grahame",
+      "collection": "Modern Classics",
+      "description": "Mole, Rat, Badger and Toad move between riverbank picnics, the Wild Wood, motor-car disasters and the battle for Toad Hall in Grahame’s Edwardian classic.",
+      "href": "/books/the-wind-in-the-willows/",
+      "image": "/The%20Wind%20in%20the%20Willows%20-%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Wind in the Willows cover",
+      "search": "The Wind in the Willows Kenneth Grahame Modern Classics Mole, Rat, Badger and Toad move between riverbank picnics, the Wild Wood, motor-car disasters and the battle for Toad Hall in Grahame’s Edwardian classic. What this Astor edition contains. The Wind in the Willows The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1908 Three questions carried by the edition. Home and wandering Old roads and new machines Friendship and correction",
+      "authorHref": "/authors/#kenneth-grahame",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "The Winter's Tale",
       "author": "William Shakespeare",
       "collection": "Shakespeare",
@@ -1532,6 +1790,39 @@
         {
           "title": "Comedy and comic form",
           "href": "/subjects/comedy/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Woman in White",
+      "author": "Wilkie Collins",
+      "collection": "Victorian",
+      "description": "Walter Hartright investigates a mysterious woman, a hidden identity and a conspiracy involving marriage, inheritance and power in Collins’s multiple-narrator novel.",
+      "href": "/books/the-woman-in-white/",
+      "image": "/The%20Woman%20in%20White%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Woman in White cover",
+      "search": "The Woman in White Wilkie Collins Victorian Walter Hartright investigates a mysterious woman, a hidden identity and a conspiracy involving marriage, inheritance and power in Collins’s multiple-narrator novel. What this Astor edition contains. The Woman in White The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Novel · 1859–60 / 1861 text Three questions carried by the edition. Evidence and narration Marriage and property Institutions and power",
+      "authorHref": "/authors/#wilkie-collins",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Yellow Wallpaper and the Giant Wistaria",
+      "author": "Charlotte Perkins Gilman",
+      "collection": "American Classics",
+      "description": "Gilman’s two stories appeared seven months apart in The New England Magazine; this edition restores their shared publication world while recording important differences among surviving texts.",
+      "href": "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
+      "image": "/The%20Yellow%20Paper%20and%20The%20Giant%20Wistaria%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Yellow Wallpaper and the Giant Wistaria cover",
+      "search": "The Yellow Wallpaper and the Giant Wistaria Charlotte Perkins Gilman American Classics Gilman’s two stories appeared seven months apart in The New England Magazine; this edition restores their shared publication world while recording important differences among surviving texts. What this Astor edition contains. The Yellow Wallpaper and the Giant Wistaria The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Two stories · 1891–92 Three questions carried by the edition. Domestic authority Periodical publication Text and repetition",
+      "authorHref": "/authors/#charlotte-perkins-gilman",
+      "subjects": [
+        {
+          "title": "Gothic literature",
+          "href": "/subjects/gothic-literature/"
         }
       ]
     },
@@ -1680,6 +1971,25 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Victorian Ghost Stories",
+      "author": "Elizabeth Gaskell, Charles Dickens and others",
+      "collection": "Victorian",
+      "description": "Eight complete stories, four poems and documentary material follow the Victorian supernatural from haunted houses and phantom coaches to séances, railway disasters and psychical research.",
+      "href": "/books/victorian-ghost-stories/",
+      "image": "/Victorian%20Ghost%20Stories%20Main%20Cover.png",
+      "imageAlt": "Astor Library Victorian Ghost Stories cover",
+      "search": "Victorian Ghost Stories Elizabeth Gaskell, Charles Dickens and others Victorian Eight complete stories, four poems and documentary material follow the Victorian supernatural from haunted houses and phantom coaches to séances, railway disasters and psychical research. What this Astor edition contains. Victorian Ghost Stories The complete work and its historical shape. Story, argument and structure. What the complete text brings into view. How the edition is organised. Editorial method Context and interpretation Annotated collection · 1844 to the century’s end Three questions carried by the edition. Haunted places Seeing and believing A changing tradition",
+      "authorHref": "/authors/#elizabeth-gaskell-charles-dickens-and-others",
+      "subjects": [
+        {
+          "title": "Gothic literature",
+          "href": "/subjects/gothic-literature/"
+        }
+      ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Wuthering Heights",
       "author": "Emily Brontë",
       "collection": "Victorian",
@@ -1792,6 +2102,26 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "Aphra Behn",
+      "description": "Read Aphra Behn through Astor Library's page for Oroonoko.",
+      "href": "/authors/#aphra-behn",
+      "image": "/Oroonoko%20Main%20Cover.png",
+      "imageAlt": "Astor Library Oroonoko cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Oroonoko",
+          "href": "/books/oroonoko/",
+          "image": "/Oroonoko%20Main%20Cover.png",
+          "imageAlt": "Astor Library Oroonoko cover",
+          "collection": "Restoration & Enlightenment"
+        }
+      ],
+      "search": "Aphra Behn Oroonoko Restoration & Enlightenment"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "Arthur Conan Doyle",
       "description": "The Astor catalogue includes twelve Sherlock Holmes short stories and The Sign of Four, with material on Watson's narration, detective method and Victorian London.",
       "href": "/authors/arthur-conan-doyle/",
@@ -1864,7 +2194,7 @@
       "href": "/authors/charles-dickens/",
       "image": "/A%20Christmas%20Carol.png",
       "imageAlt": "Astor Library A Christmas Carol cover",
-      "bookCount": 4,
+      "bookCount": 6,
       "books": [
         {
           "title": "A Christmas Carol",
@@ -1874,10 +2204,24 @@
           "collection": "Victorian"
         },
         {
+          "title": "Dickens at Christmas",
+          "href": "/books/dickens-at-christmas/",
+          "image": "/Dickens%20at%20Christmas%20Main%20Cover.png",
+          "imageAlt": "Astor Library Dickens at Christmas cover",
+          "collection": "Victorian"
+        },
+        {
           "title": "Great Expectations",
           "href": "/books/great-expectations/",
           "image": "/Great%20Expectations.png",
           "imageAlt": "Astor Library Great Expectations cover",
+          "collection": "Victorian"
+        },
+        {
+          "title": "The Chimes",
+          "href": "/books/the-chimes/",
+          "image": "/The%20Chimes%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Chimes cover",
           "collection": "Victorian"
         },
         {
@@ -1895,7 +2239,27 @@
           "collection": "Victorian"
         }
       ],
-      "search": "Charles Dickens A Christmas Carol Great Expectations The Cricket on the Hearth The Haunted Man and the Ghost’s Bargain Victorian Victorian Victorian Victorian"
+      "search": "Charles Dickens A Christmas Carol Dickens at Christmas Great Expectations The Chimes The Cricket on the Hearth The Haunted Man and the Ghost’s Bargain Victorian Victorian Victorian Victorian Victorian Victorian"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Charles I and contemporaries",
+      "description": "Read Charles I and contemporaries through Astor Library's page for Charles I: Selected Writings.",
+      "href": "/authors/#charles-i-and-contemporaries",
+      "image": "/Charles%20I%20selected%20Writings%20Main%20Cover.png",
+      "imageAlt": "Astor Library Charles I: Selected Writings cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Charles I: Selected Writings",
+          "href": "/books/charles-i-selected-writings/",
+          "image": "/Charles%20I%20selected%20Writings%20Main%20Cover.png",
+          "imageAlt": "Astor Library Charles I: Selected Writings cover",
+          "collection": "Renaissance & Early Modern"
+        }
+      ],
+      "search": "Charles I and contemporaries Charles I: Selected Writings Renaissance & Early Modern"
     },
     {
       "type": "author",
@@ -1916,6 +2280,26 @@
         }
       ],
       "search": "Charlotte Brontë Jane Eyre Victorian"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Charlotte Perkins Gilman",
+      "description": "Read Charlotte Perkins Gilman through Astor Library's page for The Yellow Wallpaper and the Giant Wistaria.",
+      "href": "/authors/#charlotte-perkins-gilman",
+      "image": "/The%20Yellow%20Paper%20and%20The%20Giant%20Wistaria%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Yellow Wallpaper and the Giant Wistaria cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Yellow Wallpaper and the Giant Wistaria",
+          "href": "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
+          "image": "/The%20Yellow%20Paper%20and%20The%20Giant%20Wistaria%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Yellow Wallpaper and the Giant Wistaria cover",
+          "collection": "American Classics"
+        }
+      ],
+      "search": "Charlotte Perkins Gilman The Yellow Wallpaper and the Giant Wistaria American Classics"
     },
     {
       "type": "author",
@@ -1960,6 +2344,46 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "Edith Wharton",
+      "description": "Read Edith Wharton through Astor Library's page for Ethan Frome.",
+      "href": "/authors/#edith-wharton",
+      "image": "/Ethan%20Frome%20Main%20Cover.png",
+      "imageAlt": "Astor Library Ethan Frome cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Ethan Frome",
+          "href": "/books/ethan-frome/",
+          "image": "/Ethan%20Frome%20Main%20Cover.png",
+          "imageAlt": "Astor Library Ethan Frome cover",
+          "collection": "American Classics"
+        }
+      ],
+      "search": "Edith Wharton Ethan Frome American Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Elizabeth Gaskell, Charles Dickens and others",
+      "description": "Read Elizabeth Gaskell, Charles Dickens and others through Astor Library's page for Victorian Ghost Stories.",
+      "href": "/authors/#elizabeth-gaskell-charles-dickens-and-others",
+      "image": "/Victorian%20Ghost%20Stories%20Main%20Cover.png",
+      "imageAlt": "Astor Library Victorian Ghost Stories cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Victorian Ghost Stories",
+          "href": "/books/victorian-ghost-stories/",
+          "image": "/Victorian%20Ghost%20Stories%20Main%20Cover.png",
+          "imageAlt": "Astor Library Victorian Ghost Stories cover",
+          "collection": "Victorian"
+        }
+      ],
+      "search": "Elizabeth Gaskell, Charles Dickens and others Victorian Ghost Stories Victorian"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "Emily Brontë",
       "description": "Read Emily Brontë through Astor Library's page for Wuthering Heights.",
       "href": "/authors/#emily-bronte",
@@ -1976,6 +2400,46 @@
         }
       ],
       "search": "Emily Brontë Wuthering Heights Victorian"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "F. Scott Fitzgerald",
+      "description": "Read F. Scott Fitzgerald through Astor Library's page for The Great Gatsby.",
+      "href": "/authors/#f-scott-fitzgerald",
+      "image": "/The%20Great%20Gatsby%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Great Gatsby cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Great Gatsby",
+          "href": "/books/the-great-gatsby/",
+          "image": "/The%20Great%20Gatsby%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Great Gatsby cover",
+          "collection": "American Classics"
+        }
+      ],
+      "search": "F. Scott Fitzgerald The Great Gatsby American Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Franz Kafka, translated by Ian Johnston",
+      "description": "Read Franz Kafka, translated by Ian Johnston through Astor Library's page for The Metamorphosis.",
+      "href": "/authors/#franz-kafka-translated-by-ian-johnston",
+      "image": "/The%20Metamorphosis%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Metamorphosis cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Metamorphosis",
+          "href": "/books/the-metamorphosis/",
+          "image": "/The%20Metamorphosis%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Metamorphosis cover",
+          "collection": "Modern Classics"
+        }
+      ],
+      "search": "Franz Kafka, translated by Ian Johnston The Metamorphosis Modern Classics"
     },
     {
       "type": "author",
@@ -2147,6 +2611,26 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "James Orchard Halliwell, Douglas Jerrold and others",
+      "description": "Read James Orchard Halliwell, Douglas Jerrold and others through Astor Library's page for A Victorian Bonfire Night.",
+      "href": "/authors/#james-orchard-halliwell-douglas-jerrold-and-others",
+      "image": "/A%20Victorian%20Bonfire%20Night%20Main%20Cover.png",
+      "imageAlt": "Astor Library A Victorian Bonfire Night cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "A Victorian Bonfire Night",
+          "href": "/books/a-victorian-bonfire-night/",
+          "image": "/A%20Victorian%20Bonfire%20Night%20Main%20Cover.png",
+          "imageAlt": "Astor Library A Victorian Bonfire Night cover",
+          "collection": "Victorian"
+        }
+      ],
+      "search": "James Orchard Halliwell, Douglas Jerrold and others A Victorian Bonfire Night Victorian"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "Jane Austen",
       "description": "The Austen catalogue covers courtship, judgement, money, inheritance, narrative method, publication and screen adaptation.",
       "href": "/authors/jane-austen/",
@@ -2270,6 +2754,86 @@
         }
       ],
       "search": "Jonathan Swift Gulliver’s Travels Restoration & Enlightenment"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Katherine Mansfield",
+      "description": "Read Katherine Mansfield through Astor Library's page for The Doves’ Nest and Other Stories.",
+      "href": "/authors/#katherine-mansfield",
+      "image": "/The%20Doves%27%20Nest%20and%20Other%20Stories%20Main%20COver.png",
+      "imageAlt": "Astor Library The Doves’ Nest and Other Stories cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Doves’ Nest and Other Stories",
+          "href": "/books/the-doves-nest-and-other-stories/",
+          "image": "/The%20Doves%27%20Nest%20and%20Other%20Stories%20Main%20COver.png",
+          "imageAlt": "Astor Library The Doves’ Nest and Other Stories cover",
+          "collection": "Modern Classics"
+        }
+      ],
+      "search": "Katherine Mansfield The Doves’ Nest and Other Stories Modern Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Kenneth Grahame",
+      "description": "Read Kenneth Grahame through Astor Library's page for The Wind in the Willows.",
+      "href": "/authors/#kenneth-grahame",
+      "image": "/The%20Wind%20in%20the%20Willows%20-%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Wind in the Willows cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Wind in the Willows",
+          "href": "/books/the-wind-in-the-willows/",
+          "image": "/The%20Wind%20in%20the%20Willows%20-%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Wind in the Willows cover",
+          "collection": "Modern Classics"
+        }
+      ],
+      "search": "Kenneth Grahame The Wind in the Willows Modern Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "L. M. Montgomery",
+      "description": "Read L. M. Montgomery through Astor Library's page for Anne of Green Gables.",
+      "href": "/authors/#l-m-montgomery",
+      "image": "/Anne%20of%20Green%20Gables%20Main%20Cover.png",
+      "imageAlt": "Astor Library Anne of Green Gables cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Anne of Green Gables",
+          "href": "/books/anne-of-green-gables/",
+          "image": "/Anne%20of%20Green%20Gables%20Main%20Cover.png",
+          "imageAlt": "Astor Library Anne of Green Gables cover",
+          "collection": "Modern Classics"
+        }
+      ],
+      "search": "L. M. Montgomery Anne of Green Gables Modern Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Lewis Carroll",
+      "description": "Read Lewis Carroll through Astor Library's page for Alice’s Adventures in Wonderland.",
+      "href": "/authors/#lewis-carroll",
+      "image": "/Alice%27s%20Adventures%20in%20Wonderland%20Main%20Cover.png",
+      "imageAlt": "Astor Library Alice’s Adventures in Wonderland cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Alice’s Adventures in Wonderland",
+          "href": "/books/alices-adventures-in-wonderland/",
+          "image": "/Alice%27s%20Adventures%20in%20Wonderland%20Main%20Cover.png",
+          "imageAlt": "Astor Library Alice’s Adventures in Wonderland cover",
+          "collection": "Victorian"
+        }
+      ],
+      "search": "Lewis Carroll Alice’s Adventures in Wonderland Victorian"
     },
     {
       "type": "author",
@@ -2542,12 +3106,19 @@
       "type": "author",
       "typeLabel": "Writer",
       "title": "Virginia Woolf",
-      "description": "Read Virginia Woolf through Astor Library's page for Mrs Dalloway.",
+      "description": "Read Virginia Woolf across 2 Astor Library books: A Room of One’s Own and Mrs Dalloway.",
       "href": "/authors/#virginia-woolf",
-      "image": "/Mrs%20Dalloway%20Main%20Cover.png",
-      "imageAlt": "Astor Library Mrs Dalloway cover",
-      "bookCount": 1,
+      "image": "/A%20Room%20of%20One%27s%20Own%20Main%20COver.png",
+      "imageAlt": "Astor Library A Room of One’s Own cover",
+      "bookCount": 2,
       "books": [
+        {
+          "title": "A Room of One’s Own",
+          "href": "/books/a-room-of-ones-own/",
+          "image": "/A%20Room%20of%20One%27s%20Own%20Main%20COver.png",
+          "imageAlt": "Astor Library A Room of One’s Own cover",
+          "collection": "Modern Classics"
+        },
         {
           "title": "Mrs Dalloway",
           "href": "/books/mrs-dalloway/",
@@ -2556,7 +3127,74 @@
           "collection": "Modern Classics"
         }
       ],
-      "search": "Virginia Woolf Mrs Dalloway Modern Classics"
+      "search": "Virginia Woolf A Room of One’s Own Mrs Dalloway Modern Classics Modern Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "W. B. Yeats",
+      "description": "Read W. B. Yeats through Astor Library's page for Michael Robartes and the Dancer.",
+      "href": "/authors/#w-b-yeats",
+      "image": "/Michael%20Robartes%20Main%20Cover.png",
+      "imageAlt": "Astor Library Michael Robartes and the Dancer cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Michael Robartes and the Dancer",
+          "href": "/books/michael-robartes-and-the-dancer/",
+          "image": "/Michael%20Robartes%20Main%20Cover.png",
+          "imageAlt": "Astor Library Michael Robartes and the Dancer cover",
+          "collection": "Modern Classics"
+        }
+      ],
+      "search": "W. B. Yeats Michael Robartes and the Dancer Modern Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Washington Irving, Edgar Allan Poe and others",
+      "description": "Read Washington Irving, Edgar Allan Poe and others through Astor Library's page for Sleepy Hollow and Other American Halloween Stories.",
+      "href": "/authors/#washington-irving-edgar-allan-poe-and-others",
+      "image": "/Sleepy%20Hollow%20Main%20Cover.png",
+      "imageAlt": "Astor Library Sleepy Hollow and Other American Halloween Stories cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Sleepy Hollow and Other American Halloween Stories",
+          "href": "/books/sleepy-hollow-and-other-stories/",
+          "image": "/Sleepy%20Hollow%20Main%20Cover.png",
+          "imageAlt": "Astor Library Sleepy Hollow and Other American Halloween Stories cover",
+          "collection": "American Classics"
+        }
+      ],
+      "search": "Washington Irving, Edgar Allan Poe and others Sleepy Hollow and Other American Halloween Stories American Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Wilkie Collins",
+      "description": "Read Wilkie Collins across 2 Astor Library books: The Moonstone and The Woman in White.",
+      "href": "/authors/#wilkie-collins",
+      "image": "/The%20Moonstone%20Main%20Cover.png",
+      "imageAlt": "Astor Library The Moonstone cover",
+      "bookCount": 2,
+      "books": [
+        {
+          "title": "The Moonstone",
+          "href": "/books/the-moonstone/",
+          "image": "/The%20Moonstone%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Moonstone cover",
+          "collection": "Victorian"
+        },
+        {
+          "title": "The Woman in White",
+          "href": "/books/the-woman-in-white/",
+          "image": "/The%20Woman%20in%20White%20Main%20Cover.png",
+          "imageAlt": "Astor Library The Woman in White cover",
+          "collection": "Victorian"
+        }
+      ],
+      "search": "Wilkie Collins The Moonstone The Woman in White Victorian Victorian"
     },
     {
       "type": "author",
@@ -2939,6 +3577,26 @@
         }
       ],
       "search": "William Shakespeare and collaborators Henry VI, Part 1 Shakespeare"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "William Wordsworth and Samuel Taylor Coleridge",
+      "description": "Read William Wordsworth and Samuel Taylor Coleridge through Astor Library's page for Lyrical Ballads.",
+      "href": "/authors/#william-wordsworth-and-samuel-taylor-coleridge",
+      "image": "/Lyrical%20Ballads%20Main%20Cover.png",
+      "imageAlt": "Astor Library Lyrical Ballads cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Lyrical Ballads",
+          "href": "/books/lyrical-ballads/",
+          "image": "/Lyrical%20Ballads%20Main%20Cover.png",
+          "imageAlt": "Astor Library Lyrical Ballads cover",
+          "collection": "Romantic & Regency"
+        }
+      ],
+      "search": "William Wordsworth and Samuel Taylor Coleridge Lyrical Ballads Romantic & Regency"
     }
   ],
   "subjects": [
@@ -2946,16 +3604,19 @@
       "type": "subject",
       "typeLabel": "Subject guide",
       "title": "Gothic literature",
-      "description": "A guide to Gothic form and history using Frankenstein, Wuthering Heights, Jekyll and Hyde, The Picture of Dorian Gray and Dracula.",
+      "description": "A guide to Gothic form and history, from Frankenstein and Jekyll and Hyde to Victorian ghost stories and American supernatural fiction.",
       "href": "/subjects/gothic-literature/",
       "image": "/Frankenstein.png",
       "imageAlt": "Gothic literature books in Astor Library",
-      "bookCount": 5,
+      "bookCount": 8,
       "relatedBooks": [
         "/books/frankenstein/",
+        "/books/sleepy-hollow-and-other-stories/",
         "/books/wuthering-heights/",
+        "/books/victorian-ghost-stories/",
         "/books/jekyll-and-hyde/",
         "/books/dorian-gray/",
+        "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
         "/books/dracula/"
       ],
       "relatedResources": [
@@ -2964,7 +3625,7 @@
         "/resources/dracula/gender-roles/",
         "/resources/dorian-gray/introduction/"
       ],
-      "search": "Gothic literature Fear, knowledge and the hidden life A guide to Gothic form and history using Frankenstein, Wuthering Heights, Jekyll and Hyde, The Picture of Dorian Gray and Dracula. Gothic literature Gothic novel horror supernatural uncanny double monstrosity science modernity secrecy transgression vampire ghost castle The uncanny Something feels frightening because it is both strange and disturbingly familiar. The double A second figure carries desires, guilt or violence that another self refuses to own. Frame narrative One account encloses another, making the route by which a story reaches us part of its meaning. The sublime Vastness, danger or power produces awe that exceeds comfortable control."
+      "search": "Gothic literature Fear, knowledge and the hidden life A guide to Gothic form and history, from Frankenstein and Jekyll and Hyde to Victorian ghost stories and American supernatural fiction. Gothic literature Gothic novel horror supernatural uncanny double monstrosity science modernity secrecy transgression vampire ghost castle Victorian ghost stories Sleepy Hollow Yellow Wallpaper The uncanny Something feels frightening because it is both strange and disturbingly familiar. The double A second figure carries desires, guilt or violence that another self refuses to own. Frame narrative One account encloses another, making the route by which a story reaches us part of its meaning. The sublime Vastness, danger or power produces awe that exceeds comfortable control."
     },
     {
       "type": "subject",
@@ -3066,12 +3727,13 @@
       "type": "subject",
       "typeLabel": "Subject guide",
       "title": "Detective fiction",
-      "description": "A guide to detective method and case narration in Arthur Conan Doyle’s Sherlock Holmes stories, with comparisons to the investigations in Dracula and Jekyll and Hyde.",
+      "description": "A guide to detective method and case narration from The Moonstone to Arthur Conan Doyle’s Sherlock Holmes stories, with comparisons to the investigations in Dracula and Jekyll and Hyde.",
       "href": "/subjects/detective-fiction/",
-      "image": "/The%20SIgn%20Of%20Four.png",
+      "image": "/The%20Moonstone%20Main%20Cover.png",
       "imageAlt": "Detective fiction books in Astor Library",
-      "bookCount": 4,
+      "bookCount": 5,
       "relatedBooks": [
+        "/books/the-moonstone/",
         "/books/sign-of-four/",
         "/books/adventures-of-sherlock-holmes/",
         "/books/jekyll-and-hyde/",
@@ -3080,18 +3742,19 @@
       "relatedResources": [
         "/resources/dracula/complete-overview/"
       ],
-      "search": "Detective fiction Clues, records and the authority to explain A guide to detective method and case narration in Arthur Conan Doyle’s Sherlock Holmes stories, with comparisons to the investigations in Dracula and Jekyll and Hyde. detective fiction crime mystery Sherlock Holmes Watson clue deduction evidence investigation case record police Victorian London locked room Clue A material or verbal detail whose significance exceeds its first appearance. Red herring A detail or line of suspicion that directs attention away from the eventual explanation. Fair play The principle that a reader should receive the evidence needed to understand the solution. Case narrative The shaped account through which an investigation is preserved and presented."
+      "search": "Detective fiction Clues, records and the authority to explain A guide to detective method and case narration from The Moonstone to Arthur Conan Doyle’s Sherlock Holmes stories, with comparisons to the investigations in Dracula and Jekyll and Hyde. detective fiction crime mystery Wilkie Collins Moonstone Sherlock Holmes Watson clue deduction evidence investigation case record police Victorian London locked room Clue A material or verbal detail whose significance exceeds its first appearance. Red herring A detail or line of suspicion that directs attention away from the eventual explanation. Fair play The principle that a reader should receive the evidence needed to understand the solution. Case narrative The shaped account through which an investigation is preserved and presented."
     },
     {
       "type": "subject",
       "typeLabel": "Subject guide",
       "title": "Epic poetry",
-      "description": "A guide to epic form, oral tradition, translation, homecoming, rebellion and empire in The Odyssey, The Aeneid, Paradise Lost and Moby-Dick.",
+      "description": "A guide to epic form, oral tradition, translation, war, homecoming, rebellion and empire in The Iliad, The Odyssey, The Aeneid, Paradise Lost and Moby-Dick.",
       "href": "/subjects/epic-poetry/",
-      "image": "/The%20Odyssey.png",
+      "image": "/The%20Iliad.png",
       "imageAlt": "Epic poetry books in Astor Library",
-      "bookCount": 4,
+      "bookCount": 5,
       "relatedBooks": [
+        "/books/the-iliad/",
         "/books/the-odyssey/",
         "/books/the-aeneid/",
         "/books/paradise-lost/",
@@ -3100,7 +3763,7 @@
       "relatedResources": [
         "/resources/moby-dick/study-guide/"
       ],
-      "search": "Epic poetry Journeys, foundations and inherited song A guide to epic form, oral tradition, translation, homecoming, rebellion and empire in The Odyssey, The Aeneid, Paradise Lost and Moby-Dick. epic poetry Homer Odyssey Virgil Aeneid Milton Paradise Lost oral tradition hero invocation muse in medias res simile blank verse fall rebellion homecoming nostos empire translation journey Invocation An opening appeal to the Muse that presents the poem as inspired song and asks for its subject. In medias res Beginning in the middle of the action, with earlier events supplied later. Epic simile An extended comparison that pauses action and opens another field of life or experience. Nostos Homecoming: both a journey and the recovery of place, identity and relationship."
+      "search": "Epic poetry Journeys, foundations and inherited song A guide to epic form, oral tradition, translation, war, homecoming, rebellion and empire in The Iliad, The Odyssey, The Aeneid, Paradise Lost and Moby-Dick. epic poetry Homer Iliad Odyssey Virgil Aeneid Milton Paradise Lost oral tradition hero invocation muse in medias res simile blank verse fall rebellion war Achilles homecoming nostos empire translation journey Invocation An opening appeal to the Muse that presents the poem as inspired song and asks for its subject. In medias res Beginning in the middle of the action, with earlier events supplied later. Epic simile An extended comparison that pauses action and opens another field of life or experience. Nostos Homecoming: both a journey and the recovery of place, identity and relationship."
     },
     {
       "type": "subject",
@@ -3153,18 +3816,19 @@
       "type": "subject",
       "typeLabel": "Subject guide",
       "title": "Slavery, freedom and abolition",
-      "description": "A guide to testimony, abolitionist fiction and later historical fiction in works by Frederick Douglass, Harriet Beecher Stowe and Mark Twain.",
+      "description": "A guide to representations of enslavement, testimony, abolitionist fiction and historical memory in works by Aphra Behn, Frederick Douglass, Harriet Beecher Stowe and Mark Twain.",
       "href": "/subjects/slavery-freedom-abolition/",
-      "image": "/Frederick%20Douglass.png",
+      "image": "/Oroonoko%20Main%20Cover.png",
       "imageAlt": "Slavery, freedom and abolition books in Astor Library",
-      "bookCount": 3,
+      "bookCount": 4,
       "relatedBooks": [
+        "/books/oroonoko/",
         "/books/narrative-of-the-life-of-frederick-douglass/",
         "/books/uncle-toms-cabin/",
         "/books/adventures-of-huckleberry-finn/"
       ],
       "relatedResources": [],
-      "search": "Slavery, freedom and abolition Law, testimony and the struggle to be recognised as a person A guide to testimony, abolitionist fiction and later historical fiction in works by Frederick Douglass, Harriet Beecher Stowe and Mark Twain. slavery freedom abolition abolitionism Frederick Douglass Harriet Beecher Stowe Mark Twain Uncle Tom Huckleberry Finn Fugitive Slave Act slave narrative testimony literacy family separation race law America Abolitionism The organised movement to end slavery, pursued through Black activism, testimony, print, political action, resistance and allied work. Slave narrative The historical name for a first-person account of enslavement and freedom; the form joins autobiography to an argument against slavery. Fugitive Slave Act The 1850 federal law that strengthened the recovery of alleged freedom seekers and punished people who helped them. Sentimentalism A literary method that uses feeling, family bonds and scenes of suffering to direct moral judgement and public sympathy."
+      "search": "Slavery, freedom and abolition Law, testimony and the struggle to be recognised as a person A guide to representations of enslavement, testimony, abolitionist fiction and historical memory in works by Aphra Behn, Frederick Douglass, Harriet Beecher Stowe and Mark Twain. slavery freedom abolition abolitionism Aphra Behn Oroonoko Surinam Frederick Douglass Harriet Beecher Stowe Mark Twain Uncle Tom Huckleberry Finn Fugitive Slave Act slave narrative testimony literacy family separation race law Atlantic America Abolitionism The organised movement to end slavery, pursued through Black activism, testimony, print, political action, resistance and allied work. Slave narrative The historical name for a first-person account of enslavement and freedom; the form joins autobiography to an argument against slavery. Fugitive Slave Act The 1850 federal law that strengthened the recovery of alleged freedom seekers and punished people who helped them. Sentimentalism A literary method that uses feeling, family bonds and scenes of suffering to direct moral judgement and public sympathy."
     }
   ],
   "resources": [
@@ -3647,8 +4311,10 @@
       "imageAlt": "A Charles Dickens Christmas cover",
       "relatedBooks": [
         "/books/a-christmas-carol/",
+        "/books/the-chimes/",
         "/books/cricket-on-the-hearth/",
-        "/books/the-haunted-man-and-the-ghosts-bargain/"
+        "/books/the-haunted-man-and-the-ghosts-bargain/",
+        "/books/dickens-at-christmas/"
       ],
       "search": "A Charles Dickens Christmas Explore how Dickens and A Christmas Carol helped reinvent Christmas through literary history, charity, family and seasonal tradition. Charles Dickens Christmas Continue on the linked site. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
@@ -3672,6 +4338,9 @@
       "image": "/Literature%20and%20Ghost%20Stories.png",
       "imageAlt": "Ghost Stories in Literature: A Window into Human Belief cover",
       "relatedBooks": [
+        "/books/victorian-ghost-stories/",
+        "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
+        "/books/sleepy-hollow-and-other-stories/",
         "/books/the-haunted-man-and-the-ghosts-bargain/",
         "/books/dracula/",
         "/books/frankenstein/"
@@ -3700,7 +4369,8 @@
       "relatedBooks": [
         "/books/a-victorian-christmas/",
         "/books/a-christmas-carol/",
-        "/books/cricket-on-the-hearth/"
+        "/books/cricket-on-the-hearth/",
+        "/books/dickens-at-christmas/"
       ],
       "search": "Christmas Traditions Trace the Victorian customs, rituals and influences that shaped the modern Christmas, from domestic celebration to seasonal literature. Victorian Christmas Cultural history Continue on the linked site. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
@@ -3724,6 +4394,8 @@
       "image": "/How%20Literature%20Shaped%20Halloween.png",
       "imageAlt": "How Literature Shaped Halloween cover",
       "relatedBooks": [
+        "/books/sleepy-hollow-and-other-stories/",
+        "/books/victorian-ghost-stories/",
         "/books/frankenstein/",
         "/books/dracula/",
         "/books/jekyll-and-hyde/",
@@ -4022,7 +4694,9 @@
       "externalUrl": "/presentations/?presentation=turning-point-great-gatsby",
       "image": "/Turning-Point-in-The-Great-Gatsby.png",
       "imageAlt": "Turning Point in The Great Gatsby cover",
-      "relatedBooks": [],
+      "relatedBooks": [
+        "/books/the-great-gatsby/"
+      ],
       "search": "Turning Point in The Great Gatsby Examine the scene and decisions that turn Gatsby’s recovered dream towards exposure and collapse. The Great Gatsby Turning point Read now. Save for later. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
     {
@@ -4044,7 +4718,9 @@
       "externalUrl": "/presentations/?presentation=biography-f-scott-fitzgerald",
       "image": "/Biography-of-F-Scott-Fitzgerald.png",
       "imageAlt": "Biography of F. Scott Fitzgerald cover",
-      "relatedBooks": [],
+      "relatedBooks": [
+        "/books/the-great-gatsby/"
+      ],
       "search": "Biography of F. Scott Fitzgerald Place Fitzgerald’s life, writing, reputation and Jazz Age career beside the novel for which he is best known. F. Scott Fitzgerald Biography Read now. Save for later. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
     {
@@ -4066,7 +4742,9 @@
       "externalUrl": "/presentations/?presentation=gatsby-corruption-symbolism-illusion",
       "image": "/Corruption-the-American-Dream-Symbolism-and-Illusion-in-The-Great-Gatsby.png",
       "imageAlt": "Corruption, the American Dream, Symbolism, and Illusion in The Great Gatsby cover",
-      "relatedBooks": [],
+      "relatedBooks": [
+        "/books/the-great-gatsby/"
+      ],
       "search": "Corruption, the American Dream, Symbolism, and Illusion in The Great Gatsby Connect the novel’s social corruption and illusions to its recurring symbols and broken versions of success. The Great Gatsby Themes and symbols Read now. Save for later. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
     {
@@ -4088,7 +4766,9 @@
       "externalUrl": "/presentations/?presentation=gatsby-death-relationships",
       "image": "/Death-of-a-Character-and-Important-Relationships-in-The-Great-Gatsby.png",
       "imageAlt": "Death of a Character & Important Relationships in The Great Gatsby cover",
-      "relatedBooks": [],
+      "relatedBooks": [
+        "/books/the-great-gatsby/"
+      ],
       "search": "Death of a Character & Important Relationships in The Great Gatsby Study a crucial death through the relationships, loyalties and failures that prepare for it. The Great Gatsby Relationships Read now. Save for later. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
     {
@@ -4110,7 +4790,9 @@
       "externalUrl": "/presentations/?presentation=gatsby-essay-plan",
       "image": "/Great-Gatsby-Essay-Plan-Setting-Symbolism-and-the-American-Dream.png",
       "imageAlt": "Great Gatsby Essay Plan: Setting, Symbolism & the American Dream cover",
-      "relatedBooks": [],
+      "relatedBooks": [
+        "/books/the-great-gatsby/"
+      ],
       "search": "The Great Gatsby Essay Plan Build an essay that connects setting and symbolism to Fitzgerald’s treatment of the American Dream. The Great Gatsby Essay plan Read now. Save for later. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
     {
@@ -4132,7 +4814,9 @@
       "externalUrl": "/presentations/?presentation=admiration-for-gatsby",
       "image": "/Admiration-for-Gatsby-in-The-Great-Gatsby.png",
       "imageAlt": "Admiration for Gatsby in The Great Gatsby cover",
-      "relatedBooks": [],
+      "relatedBooks": [
+        "/books/the-great-gatsby/"
+      ],
       "search": "Admiration for Gatsby in The Great Gatsby Test Nick’s admiration against Gatsby’s hope, reinvention, deception and moral choices. The Great Gatsby Gatsby Read now. Save for later. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
     {
@@ -4154,7 +4838,9 @@
       "externalUrl": "/presentations/?presentation=things-we-admire-gatsby",
       "image": "/THINGS-WE-ADMIRE-ABOUT-GATSBY.png",
       "imageAlt": "Things We Admire About Gatsby cover",
-      "relatedBooks": [],
+      "relatedBooks": [
+        "/books/the-great-gatsby/"
+      ],
       "search": "Things We Admire About Gatsby A focused revision resource on Gatsby’s hope, loyalty, imagination and capacity for self-creation. The Great Gatsby Character Read now. Save for later. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
     {
@@ -4176,7 +4862,9 @@
       "externalUrl": "/presentations/?presentation=great-gatsby-character-study",
       "image": "/The-Great-Gatsby-Character-Study-Guide.png",
       "imageAlt": "The Great Gatsby: Character Study Guide cover",
-      "relatedBooks": [],
+      "relatedBooks": [
+        "/books/the-great-gatsby/"
+      ],
       "search": "The Great Gatsby: Character Study Guide Review the novel’s central characters, their relationships and the values revealed by their choices. The Great Gatsby Characters Read now. Save for later. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
     {
@@ -4198,7 +4886,9 @@
       "externalUrl": "/presentations/?presentation=great-gatsby-corruption-illusion-v2",
       "image": "/The-Great-Gatsby-Corruption-Illusion-and-the-American-Dream.png",
       "imageAlt": "The Great Gatsby: Corruption, Illusion & the American Dream cover",
-      "relatedBooks": [],
+      "relatedBooks": [
+        "/books/the-great-gatsby/"
+      ],
       "search": "The Great Gatsby: Corruption, Illusion & the American Dream Read the novel’s wealth, carelessness and self-invention as a critique of national promise. The Great Gatsby American Dream Read now. Save for later. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     },
     {
@@ -4220,7 +4910,9 @@
       "externalUrl": "/presentations/?presentation=great-gatsby-notes-critical-reading",
       "image": "/The-Great-Gatsby-Notes-and-Critical-Reading.png",
       "imageAlt": "The Great Gatsby: Notes & Critical Reading cover",
-      "relatedBooks": [],
+      "relatedBooks": [
+        "/books/the-great-gatsby/"
+      ],
       "search": "The Great Gatsby: Notes & Critical Reading Develop close reading of Fitzgerald’s narration, imagery, structure and critical interpretations. The Great Gatsby Critical reading Read now. Save for later. Subject and purpose of the guide. Questions and evidence. Check the language and form Open the illustrated guide. Relevant books and subject guides."
     }
   ],
@@ -4864,12 +5556,12 @@
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Shakespeare",
-      "description": "All thirty-seven plays, the poetry, eight Shakespeare Apocrypha volumes and five Expanded Scholarly Editions.",
+      "description": "The main shelf brings together the regular Astor editions of all thirty-seven plays and the poetry.",
       "href": "/shakespeare/",
       "image": "/assets/home/shakespeare.jpg",
       "imageAlt": "Shakespeare illustrated banner",
       "relatedBooks": [],
-      "search": "Shakespeare All thirty-seven plays, the poetry, eight Shakespeare Apocrypha volumes and five Expanded Scholarly Editions. Standard and specialist editions remain clearly distinguished throughout the catalogue."
+      "search": "Shakespeare The main shelf brings together the regular Astor editions of all thirty-seven plays and the poetry. The Astor Shakespeare scholarly editions and the Shakespeare Apocrypha have their own collections, so each range keeps its character and remains easy to browse."
     },
     {
       "type": "collection",
@@ -4895,7 +5587,7 @@
       "type": "collection",
       "typeLabel": "Collection",
       "title": "Astor Shakespeare: Expanded Scholarly Editions",
-      "description": "Five premium Shakespeare editions with substantially expanded front matter, textual discussion, criticism, historical context, close analysis and performance history.",
+      "description": "Five Shakespeare editions with substantially expanded front matter, textual discussion, criticism, historical context, close analysis and performance history.",
       "href": "/shakespeare/expanded-scholarly-editions/",
       "image": "/Hamlet%20Scholarly%20Cover.png",
       "imageAlt": "Astor Shakespeare: Expanded Scholarly Editions illustrated banner",
@@ -4906,7 +5598,29 @@
         "/books/othello-expanded-scholarly-edition/",
         "/books/macbeth-expanded-scholarly-edition/"
       ],
-      "search": "Astor Shakespeare: Expanded Scholarly Editions Five premium Shakespeare editions with substantially expanded front matter, textual discussion, criticism, historical context, close analysis and performance history."
+      "search": "Astor Shakespeare: Expanded Scholarly Editions Five Shakespeare editions with substantially expanded front matter, textual discussion, criticism, historical context, close analysis and performance history."
+    },
+    {
+      "type": "collection",
+      "typeLabel": "Collection",
+      "title": "Hardback Editions",
+      "description": "A separate shelf for Astor books available in hardback: annotated classics, epic poetry, Shakespeare and seasonal collections.",
+      "href": "/hardbacks/",
+      "image": "/Great%20Gatsby%20Hardcover.png",
+      "imageAlt": "Hardback Editions illustrated banner",
+      "relatedBooks": [
+        "/books/a-victorian-bonfire-night/",
+        "/books/the-odyssey/",
+        "/books/the-iliad/",
+        "/books/the-aeneid/",
+        "/books/sleepy-hollow-and-other-stories/",
+        "/books/shakespeares-sonnets/",
+        "/books/dorian-gray/",
+        "/books/the-great-gatsby/",
+        "/books/dickens-at-christmas/",
+        "/books/a-victorian-christmas/"
+      ],
+      "search": "Hardback Editions A separate shelf for Astor books available in hardback: annotated classics, epic poetry, Shakespeare and seasonal collections. Each cover below is the hardback artwork for that title."
     },
     {
       "type": "collection",

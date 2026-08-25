@@ -4,8 +4,8 @@ module.exports = [
     title: 'Gothic literature',
     navTitle: 'Gothic',
     kicker: 'Fear, knowledge and the hidden life',
-    description: 'A guide to Gothic form and history using Frankenstein, Wuthering Heights, Jekyll and Hyde, The Picture of Dorian Gray and Dracula.',
-    search: 'Gothic literature Gothic novel horror supernatural uncanny double monstrosity science modernity secrecy transgression vampire ghost castle',
+    description: 'A guide to Gothic form and history, from Frankenstein and Jekyll and Hyde to Victorian ghost stories and American supernatural fiction.',
+    search: 'Gothic literature Gothic novel horror supernatural uncanny double monstrosity science modernity secrecy transgression vampire ghost castle Victorian ghost stories Sleepy Hollow Yellow Wallpaper',
     facts: [
       { value: '1764', label: 'The Castle of Otranto gives the Gothic novel an early name and model' },
       { value: '1818', label: 'Frankenstein joins Gothic terror to experimental science' },
@@ -16,7 +16,7 @@ module.exports = [
       heading: 'The past returns because the present is not secure.',
       paragraphs: [
         'Gothic writing is often recognised by its surfaces: a ruined building, a locked door, a storm, a secret room, an unexplained sound. Those details matter, but the form is not a box of gloomy properties. It makes something that a culture would rather keep hidden become physically or psychologically impossible to ignore.',
-        'In the books held here, terror moves steadily closer. Frankenstein crosses mountains and frozen seas, yet its deepest fear begins in a private act of creation. Wuthering Heights turns a house and its inheritance into an emotional weather system. Stevenson divides a respectable London professional; Wilde gives a beautiful public life a concealed record; Stoker brings the vampire into bedrooms, railway timetables and typewritten case notes.'
+        'In the books held here, terror moves steadily closer. Frankenstein crosses mountains and frozen seas, yet its deepest fear begins in a private act of creation. Wuthering Heights turns a house and its inheritance into an emotional weather system. Victorian and American supernatural stories make the ordinary house, road and railway uncanny; Gilman makes domestic decoration an instrument of confinement. Stevenson divides a respectable London professional; Wilde gives a beautiful public life a concealed record; Stoker brings the vampire into bedrooms, railway timetables and typewritten case notes.'
       ]
     },
     methods: [
@@ -26,9 +26,12 @@ module.exports = [
     ],
     books: [
       { href: '/books/frankenstein/', title: 'Frankenstein', author: 'Mary Shelley', year: '1818', image: '/Frankenstein.png', copy: 'Creation, abandonment and the danger of treating life as an experiment without obligation.' },
+      { href: '/books/sleepy-hollow-and-other-stories/', title: 'Sleepy Hollow and Other American Halloween Stories', author: 'Washington Irving, Edgar Allan Poe and others', year: '1820–1921 · anthology', image: '/Sleepy%20Hollow%20Main%20Cover.png', copy: 'Twelve American supernatural stories, returned to their publication settings and traced into the later Halloween tradition.' },
       { href: '/books/wuthering-heights/', title: 'Wuthering Heights', author: 'Emily Brontë', year: '1847', image: '/Wuthering%20Heights.png', copy: 'A house, an inheritance and a passion whose effects continue through another generation.' },
+      { href: '/books/victorian-ghost-stories/', title: 'Victorian Ghost Stories', author: 'Elizabeth Gaskell, Charles Dickens and others', year: '1844–1905 · anthology', image: '/Victorian%20Ghost%20Stories%20Main%20Cover.png', copy: 'Haunted houses, phantom journeys and railway danger beside Victorian spiritualism and psychical research.' },
       { href: '/books/jekyll-and-hyde/', title: 'Jekyll and Hyde', author: 'Robert Louis Stevenson', year: '1886', image: '/Jekyll%20and%20Hyde.png', copy: 'The divided self, professional secrecy and a London investigation that arrives through documents.' },
       { href: '/books/dorian-gray/', title: 'The Picture of Dorian Gray', author: 'Oscar Wilde', year: '1890–91', image: '/Picture%20of%20Dorian%20Gray.png', copy: 'Beauty, influence and a portrait made to bear the consequences its owner refuses.' },
+      { href: '/books/the-yellow-wallpaper-and-the-giant-wistaria/', title: 'The Yellow Wallpaper and the Giant Wistaria', author: 'Charlotte Perkins Gilman', year: '1891–92', image: '/The%20Yellow%20Paper%20and%20The%20Giant%20Wistaria%20Main%20Cover.png', copy: 'Two stories in which domestic space, medical authority and what a household conceals become sources of terror.' },
       { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'Ancient predation meets blood science, transport, recording technology and a fragile archive of evidence.' }
     ],
     reading: {
@@ -263,19 +266,19 @@ module.exports = [
     title: 'Detective fiction',
     navTitle: 'Detection',
     kicker: 'Clues, records and the authority to explain',
-    description: 'A guide to detective method and case narration in Arthur Conan Doyle’s Sherlock Holmes stories, with comparisons to the investigations in Dracula and Jekyll and Hyde.',
-    search: 'detective fiction crime mystery Sherlock Holmes Watson clue deduction evidence investigation case record police Victorian London locked room',
+    description: 'A guide to detective method and case narration from The Moonstone to Arthur Conan Doyle’s Sherlock Holmes stories, with comparisons to the investigations in Dracula and Jekyll and Hyde.',
+    search: 'detective fiction crime mystery Wilkie Collins Moonstone Sherlock Holmes Watson clue deduction evidence investigation case record police Victorian London locked room',
     facts: [
       { value: '1841', label: 'Poe’s “The Murders in the Rue Morgue” supplies an early detective-story model' },
+      { value: '1868', label: 'The Moonstone reconstructs a stolen-diamond case through a sequence of testimonies' },
       { value: '1887', label: 'A Study in Scarlet introduces Holmes and Watson' },
-      { value: '1890', label: 'The Sign of Four gives the partnership its second novel-length case' },
-      { value: '1891–92', label: 'The Strand stories make Holmes a recurring magazine presence' }
+      { value: '1890–92', label: 'The Sign of Four and the Strand stories establish the partnership’s recurring case form' }
     ],
     introduction: {
       heading: 'A case is solved twice: by the detective and by the storyteller.',
       paragraphs: [
         'Detective fiction creates a double movement. Someone inside the story gathers traces and constructs an explanation; the narrative decides when the reader may see those traces and what they appear to mean. A solution can be logically sound and still owe its force to delay, selection and performance.',
-        'Conan Doyle’s most important formal decision is Watson. Holmes can observe a cuff, footprint or timetable, but Watson turns the observation into a case with weather, rooms, clients, uncertainty and a final account. The partnership keeps method from becoming a dry demonstration and makes the return to Baker Street part of the genre’s pleasure.'
+        'The Moonstone distributes its evidence among witnesses whose voices reveal character as well as fact. Conan Doyle’s most important formal decision is Watson. Holmes can observe a cuff, footprint or timetable, but Watson turns the observation into a case with weather, rooms, clients, uncertainty and a final account. Both forms make the record of an investigation part of the mystery.'
       ]
     },
     methods: [
@@ -284,6 +287,7 @@ module.exports = [
       { label: 'The verdict', title: 'Explanation is a form of power', copy: 'To solve a case is to decide which story becomes public. Holmes sometimes protects a client, lets an offender leave or withholds a name. The genre therefore tests the detective’s judgment as well as the accuracy of the deduction.' }
     ],
     books: [
+      { href: '/books/the-moonstone/', title: 'The Moonstone', author: 'Wilkie Collins', year: '1868', image: '/The%20Moonstone%20Main%20Cover.png', copy: 'A stolen diamond is investigated through connected testimonies that make voice, empire and possession part of the case.' },
       { href: '/books/sign-of-four/', title: 'The Sign of Four', author: 'Arthur Conan Doyle', year: '1890', image: '/The%20SIgn%20Of%20Four.png', copy: 'A novel-length case in which a missing treasure opens questions of empire, possession and testimony.' },
       { href: '/books/adventures-of-sherlock-holmes/', title: 'The Adventures of Sherlock Holmes', author: 'Arthur Conan Doyle', year: '1892', image: '/Adventures%20of%20Sherlock%20Holmes.png', copy: 'Twelve stories that make the client, the clue, Watson’s delay and Holmes’s explanation endlessly adaptable.' },
       { href: '/books/jekyll-and-hyde/', title: 'Jekyll and Hyde', author: 'Robert Louis Stevenson', year: '1886 · investigative Gothic', image: '/Jekyll%20and%20Hyde.png', copy: 'Not a detective novel, but a lawyer’s inquiry, witness statements and sealed documents govern how its secret emerges.' },
@@ -316,8 +320,8 @@ module.exports = [
     title: 'Epic poetry',
     navTitle: 'Epic',
     kicker: 'Journeys, foundations and inherited song',
-    description: 'A guide to epic form, oral tradition, translation, homecoming, rebellion and empire in The Odyssey, The Aeneid, Paradise Lost and Moby-Dick.',
-    search: 'epic poetry Homer Odyssey Virgil Aeneid Milton Paradise Lost oral tradition hero invocation muse in medias res simile blank verse fall rebellion homecoming nostos empire translation journey',
+    description: 'A guide to epic form, oral tradition, translation, war, homecoming, rebellion and empire in The Iliad, The Odyssey, The Aeneid, Paradise Lost and Moby-Dick.',
+    search: 'epic poetry Homer Iliad Odyssey Virgil Aeneid Milton Paradise Lost oral tradition hero invocation muse in medias res simile blank verse fall rebellion war Achilles homecoming nostos empire translation journey',
     facts: [
       { value: '24 books', label: 'The Odyssey is conventionally divided into twenty-four books' },
       { value: '12 books', label: 'The Aeneid reshapes Homeric journeys and war across twelve books' },
@@ -327,7 +331,7 @@ module.exports = [
     introduction: {
       heading: 'Epic makes one life answer to a much larger history.',
       paragraphs: [
-        'Epic scale does not come only from length, gods or battles. An epic joins an individual action to the fate of a household, people or future state. Odysseus’s return tests whether Ithaca can become a home again. Aeneas’s journey is burdened by a city and empire that do not yet exist.',
+        'Epic scale does not come only from length, gods or battles. An epic joins an individual action to the fate of a household, people or future state. Achilles’s anger changes the course of the war at Troy; Odysseus’s return tests whether Ithaca can become a home again. Aeneas’s journey is burdened by a city and empire that do not yet exist.',
         'These poems also remember other tellings. Virgil writes with Homer in view; Milton invokes both classical epic and the book of Genesis while making the Fall unfold in English blank verse. Moby-Dick is a novel, not an ancient epic, but its invocations, catalogues, voyage and immense adversary deliberately reach towards epic ways of making scale.'
       ]
     },
@@ -337,6 +341,7 @@ module.exports = [
       { label: 'Scale', title: 'The ordinary and cosmic share a line', copy: 'A meal, wound, garment or door may stand beside divine action and national history. Epic does not abandon material detail. It enlarges consequence until an object can carry memory across generations.' }
     ],
     books: [
+      { href: '/books/the-iliad/', title: 'The Iliad', author: 'Homer, translated by Samuel Butler', year: 'Ancient Greek epic', image: '/The%20Iliad.png', copy: 'Anger, mortality and the costs of heroic honour during a concentrated movement of the Trojan War.' },
       { href: '/books/the-odyssey/', title: 'The Odyssey', author: 'Homer, translated by Samuel Butler', year: 'Ancient Greek epic', image: '/The%20Odyssey.png', copy: 'Homecoming, storytelling, disguise and the difficult restoration of a household.' },
       { href: '/books/the-aeneid/', title: 'The Aeneid', author: 'Virgil, translated by John Dryden', year: 'Roman epic', image: '/The%20Aeneid.png', copy: 'Refugee memory, duty, violence and the imagined foundations of Rome.' },
       { href: '/books/paradise-lost/', title: 'Paradise Lost', author: 'John Milton', year: '1667 / 1674 · English epic', image: '/Paradise%20Lost%20Main%20Cover.png', copy: 'Rebellion, temptation and the loss of Eden are carried through twelve books of unrhymed heroic verse.' },
@@ -360,6 +365,7 @@ module.exports = [
       { href: '/resources/moby-dick/study-guide/', label: 'Moby-Dick study guide', copy: 'Follow the voyage, forms of knowledge and epic reach of the novel.' }
     ],
     sources: [
+      { href: 'https://scaife.perseus.org/library/urn:cts:greekLit:tlg0012.tlg001/', label: 'Perseus: editions and translations of the Iliad' },
       { href: 'https://scaife.perseus.org/library/urn:cts:greekLit:tlg0012.tlg002/', label: 'Perseus: editions and translations of the Odyssey' },
       { href: 'https://scaife.perseus.org/library/urn:cts:latinLit:phi0690.phi003/', label: 'Perseus: editions and translations of the Aeneid' },
       { href: 'https://milton.host.dartmouth.edu/reading_room/pl/book_1/text.shtml', label: 'Dartmouth: complete annotated Paradise Lost' },
@@ -488,19 +494,19 @@ module.exports = [
     title: 'Slavery, freedom and abolition',
     navTitle: 'Slavery & freedom',
     kicker: 'Law, testimony and the struggle to be recognised as a person',
-    description: 'A guide to testimony, abolitionist fiction and later historical fiction in works by Frederick Douglass, Harriet Beecher Stowe and Mark Twain.',
-    search: 'slavery freedom abolition abolitionism Frederick Douglass Harriet Beecher Stowe Mark Twain Uncle Tom Huckleberry Finn Fugitive Slave Act slave narrative testimony literacy family separation race law America',
+    description: 'A guide to representations of enslavement, testimony, abolitionist fiction and historical memory in works by Aphra Behn, Frederick Douglass, Harriet Beecher Stowe and Mark Twain.',
+    search: 'slavery freedom abolition abolitionism Aphra Behn Oroonoko Surinam Frederick Douglass Harriet Beecher Stowe Mark Twain Uncle Tom Huckleberry Finn Fugitive Slave Act slave narrative testimony literacy family separation race law Atlantic America',
     facts: [
+      { value: '1688', label: 'Oroonoko places betrayal, enslavement and revolt within England’s colony in Surinam' },
       { value: '1845', label: 'Douglass publishes his first autobiography while legally vulnerable to recapture' },
-      { value: '1850', label: 'The Fugitive Slave Act strengthens federal support for recapturing freedom seekers' },
-      { value: '1851–52', label: 'Uncle Tom’s Cabin appears first in instalments and then in book form' },
+      { value: '1850–52', label: 'The Fugitive Slave Act and Uncle Tom’s Cabin sharpen the public abolitionist argument' },
       { value: '1884–85', label: 'Huckleberry Finn is published after emancipation but set in the slavery era' }
     ],
     introduction: {
       heading: 'The books share a history. They do not speak from the same position.',
       paragraphs: [
-        'Frederick Douglass writes as a man who survived enslavement and claimed public authority over the account of his own life. Harriet Beecher Stowe writes an abolitionist novel for a mass reading public, using invented families, Christian argument and domestic feeling. Mark Twain looks back after the Civil War through the voice of a white boy whose moral vocabulary has been formed by a slaveholding society. Those differences of genre, date and authority must remain visible.',
-        'Read together, the books show slavery operating through more than individual cruelty. Sale breaks families; law follows people across state lines; literacy is controlled; churches provide both resistance and excuse; apparently kind households retain the power to own and sell. Freedom therefore means more than escape. It includes the recovery of name, family, legal standing, speech and the power to tell one’s own history.'
+        'Aphra Behn’s Oroonoko represents an enslaved African prince and a colonial revolt through an English narrator; it is neither testimony by an enslaved writer nor a straightforward abolitionist tract. Frederick Douglass writes as a man who survived enslavement and claimed public authority over the account of his own life. Harriet Beecher Stowe writes an abolitionist novel for a mass reading public, using invented families, Christian argument and domestic feeling. Mark Twain looks back after the Civil War through the voice of a white boy whose moral vocabulary has been formed by a slaveholding society. Those differences of genre, date and authority must remain visible.',
+        'Read together, the books show slavery operating through more than individual cruelty. Atlantic trade and colonial plantation rule organise Behn’s Surinam; sale breaks families; law follows people across state lines; literacy is controlled; churches provide both resistance and excuse; apparently kind households retain the power to own and sell. Freedom therefore means more than escape. It includes the recovery of name, family, legal standing, speech and the power to tell one’s own history.'
       ]
     },
     methods: [
@@ -509,6 +515,7 @@ module.exports = [
       { label: 'Freedom', title: 'Movement is only the beginning', copy: 'Crossing a river or reaching a free state may change immediate danger without repairing every loss. Literacy, chosen names, reunited families, paid work and control over one’s story give freedom social and intellectual dimensions as well as geographical ones.' }
     ],
     books: [
+      { href: '/books/oroonoko/', title: 'Oroonoko', author: 'Aphra Behn', year: '1688 · Restoration narrative', image: '/Oroonoko%20Main%20Cover.png', copy: 'An African prince is betrayed into slavery in Surinam, where broken promises of freedom lead to revolt and catastrophic colonial violence.' },
       { href: '/books/narrative-of-the-life-of-frederick-douglass/', title: 'Narrative of the Life of Frederick Douglass', author: 'Frederick Douglass', year: '1845 · autobiography', image: '/Frederick%20Douglass.png', copy: 'A first-person abolitionist testimony in which literacy, resistance and authorship become acts of freedom.' },
       { href: '/books/uncle-toms-cabin/', title: 'Uncle Tom’s Cabin', author: 'Harriet Beecher Stowe', year: '1851–52 · abolitionist novel', image: '/Uncle%20Tom%27s%20Cabin.png', copy: 'Two journeys reveal slavery as a market, legal system and assault upon family life, while the novel’s method and afterlife demand critical reading.' },
       { href: '/books/adventures-of-huckleberry-finn/', title: 'Adventures of Huckleberry Finn', author: 'Mark Twain', year: '1884–85 · later novel set before the Civil War', image: '/Huckleberry%20Finn.png', copy: 'Huck’s vernacular account tests conscience against a society in which helping Jim is taught to him as wrongdoing.' }

@@ -768,3 +768,692 @@
 .specialist-paired-covers{width:185px;min-height:280px;display:flex;align-items:flex-end}.specialist-paired-covers img{width:112px;aspect-ratio:2/3;object-fit:cover;box-shadow:0 12px 24px rgba(32,28,26,.2)}.specialist-paired-covers img+img{margin-left:-39px;transform:translateY(18px)}
 @media(max-width:1050px){.shakespeare-edition-pairs{grid-template-columns:repeat(3,minmax(0,1fr))}.specialist-collection-hero{grid-template-columns:minmax(0,1fr) 320px;padding:50px}.specialist-volume-grid{grid-template-columns:1fr}}
 @media(max-width:720px){.astor-reading-grid-two,.shakespeare-specialist-gateways,.edition-choice-grid{grid-template-columns:1fr}.shakespeare-specialist-gateways{margin:42px 0 58px}.shakespeare-specialist-gateways>a{min-height:280px;padding:25px}.shakespeare-specialist-gateways h2{margin-top:30px}.shakespeare-edition-pairs{display:grid;grid-auto-flow:column;grid-auto-columns:84%;grid-template-columns:none;overflow-x:auto;scroll-snap-type:inline mandatory;padding-bottom:12px}.shakespeare-edition-pairs article{scroll-snap-align:start}.edition-choice-band{margin:60px 0}.edition-choice-grid>a{min-height:0;padding:16px;grid-template-columns:95px minmax(0,1fr);gap:16px}.edition-choice-grid img{width:95px}.edition-choice-grid b{margin-bottom:15px}.edition-choice-grid strong{font-size:25px}.specialist-collection-hero{min-height:0;margin:0 -15px;padding:41px 22px 26px;grid-template-columns:1fr;gap:20px}.specialist-collection-hero h1{font-size:clamp(53px,15vw,78px)}.specialist-collection-hero .deck{font-size:15.5px}.specialist-cover-stack{min-height:300px}.specialist-cover-stack img{bottom:15px;width:115px}.specialist-collection-note{margin:0 -15px 60px}.specialist-volume-grid{gap:10px}.specialist-volume-card{padding:15px;grid-template-columns:95px minmax(0,1fr);gap:15px}.specialist-volume-card>img{width:95px}.specialist-volume-card h2{font-size:28px}.specialist-volume-card p:not(.year){font-size:12.5px}.specialist-volume-card .button-row{grid-column:1/-1}.specialist-paired-covers{width:108px;min-height:185px}.specialist-paired-covers img{width:70px}.specialist-paired-covers img+img{margin-left:-27px;transform:translateY(12px)}}
+
+/* Paperback and hardback choices on individual edition pages. */
+.edition-formats,
+.edition-format-panel {
+  margin: 72px 0 88px;
+  padding: clamp(30px, 4vw, 50px);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #eadccb;
+}
+
+.edition-format-intro {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(260px, .85fr);
+  gap: 12px 48px;
+  align-items: end;
+}
+
+.edition-format-intro .kicker {
+  grid-column: 1 / -1;
+  margin-bottom: 3px;
+}
+
+.edition-format-intro h2 {
+  margin: 0;
+  font-size: clamp(43px, 5.6vw, 70px);
+  font-weight: 400;
+  line-height: .88;
+  letter-spacing: -.052em;
+}
+
+.edition-format-intro > p:last-child {
+  margin: 0;
+  color: #504741;
+  font: 14.5px/1.68 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.edition-format-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.edition-format-card {
+  min-width: 0;
+  min-height: 315px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 145px minmax(0, 1fr);
+  gap: 23px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--burgundy);
+  background: rgba(255, 250, 244, .88);
+}
+
+.edition-format-card.is-hardback {
+  border-top-color: var(--navy-deep);
+  background: #fffaf4;
+}
+
+.edition-format-cover {
+  min-width: 0;
+  display: block;
+  text-decoration: none;
+}
+
+.edition-format-cover img {
+  display: block;
+  width: 145px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  background: #f3e8dd;
+  box-shadow: 0 16px 31px rgba(32, 28, 26, .21);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.edition-format-cover:hover img,
+.edition-format-cover:focus-visible img {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 38px rgba(32, 28, 26, .25);
+}
+
+.edition-format-copy {
+  min-width: 0;
+}
+
+.edition-format-label {
+  margin: 0 0 20px;
+  color: var(--burgundy);
+  font: 900 9px/1.35 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.is-hardback .edition-format-label {
+  color: var(--navy-deep);
+}
+
+.edition-format-copy h3 {
+  margin: 0 0 13px;
+  font-size: clamp(29px, 3vw, 40px);
+  font-weight: 400;
+  line-height: .95;
+}
+
+.edition-format-copy > p:not(.edition-format-label) {
+  margin: 0;
+  color: #514842;
+  font: 13px/1.62 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.edition-format-copy .button {
+  margin-top: 20px;
+}
+
+/* The dedicated hardback room: restrained colour, generous covers, clear formats. */
+.hardback-collection-page,
+.hardback-page {
+  max-width: 1280px;
+}
+
+.hardback-hero {
+  min-height: 650px;
+  margin: 18px 0 0;
+  padding: clamp(42px, 5.2vw, 68px);
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(360px, 1.05fr);
+  gap: clamp(36px, 5vw, 70px);
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(255, 250, 244, .18);
+  background:
+    linear-gradient(90deg, rgba(255, 250, 244, .035) 1px, transparent 1px) 0 0 / 54px 54px,
+    var(--navy-deep);
+  color: #fffaf4;
+  box-shadow: var(--shadow);
+}
+
+.hardback-hero .kicker {
+  color: #e7c985;
+}
+
+.hardback-hero h1 {
+  max-width: 700px;
+  margin: 8px 0 27px;
+  color: #fffaf4;
+  font-size: clamp(67px, 8vw, 108px);
+  font-weight: 400;
+  line-height: .8;
+  letter-spacing: -.06em;
+  text-wrap: balance;
+}
+
+.hardback-hero-copy > p:not(.kicker) {
+  max-width: 650px;
+  margin: 0;
+  color: #eee5dc;
+  font: 16px/1.72 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.hardback-hero .button.primary {
+  border-color: #fffaf4;
+  background: #fffaf4;
+  color: var(--burgundy);
+}
+
+.hardback-hero .button.secondary {
+  border-color: rgba(255, 250, 244, .55);
+  background: transparent;
+  color: #fffaf4;
+}
+
+.hardback-hero-covers {
+  min-width: 0;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hardback-hero-covers > a,
+.hardback-hero-covers > img {
+  width: min(34%, 175px);
+  flex: 0 0 auto;
+}
+
+.hardback-hero-covers > :not(:first-child) {
+  margin-left: -28px;
+}
+
+.hardback-hero-covers > :nth-child(1) {
+  z-index: 2;
+  transform: translateY(-14px) rotate(-5deg);
+}
+
+.hardback-hero-covers > :nth-child(2) {
+  z-index: 4;
+  transform: translateY(-35px);
+}
+
+.hardback-hero-covers > :nth-child(3) {
+  z-index: 3;
+  transform: translateY(-6px) rotate(5deg);
+}
+
+.hardback-hero-covers > :nth-child(n + 4) {
+  display: none;
+}
+
+.hardback-hero-covers img {
+  display: block;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  border: 1px solid rgba(255, 250, 244, .2);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, .4);
+}
+
+.hardback-hero-covers > a img {
+  width: 100%;
+}
+
+.hardback-editorial-note {
+  margin: 0 0 78px;
+  padding: 25px 30px;
+  border-bottom: 1px solid var(--line);
+  background: #eadccb;
+}
+
+.hardback-editorial-note p {
+  max-width: 1000px;
+  margin: 0;
+  color: #433b36;
+  font: 15px/1.68 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.hardback-editorial-note p + p {
+  margin-top: 9px;
+}
+
+.hardback-group,
+.hardback-collection {
+  margin: 0 0 84px;
+}
+
+.hardback-group-heading,
+.hardback-collection-heading {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr);
+  gap: 12px 45px;
+  align-items: start;
+  border-top: 1px solid var(--line);
+  padding-top: 26px;
+}
+
+.hardback-group-heading > div,
+.hardback-collection-heading > div {
+  grid-row: 1 / 3;
+  min-width: 0;
+}
+
+.hardback-group-heading .kicker,
+.hardback-collection-heading .kicker {
+  margin-bottom: 2px;
+}
+
+.hardback-group-heading h2,
+.hardback-collection-heading h2 {
+  margin: 0;
+  font-size: clamp(43px, 5.8vw, 72px);
+  font-weight: 400;
+  line-height: .88;
+  letter-spacing: -.052em;
+}
+
+.hardback-group-heading > p,
+.hardback-collection-heading > p {
+  grid-column: 2;
+  margin: 0;
+  color: #514842;
+  font: 14px/1.66 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.hardback-group-heading > a,
+.hardback-collection-heading > a {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.hardback-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.hardback-card {
+  min-width: 0;
+  min-height: 330px;
+  padding: 21px;
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--navy-deep);
+  background: rgba(255, 250, 244, .82);
+}
+
+.hardback-cover {
+  min-width: 0;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hardback-cover img {
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  background: #f3e8dd;
+  box-shadow: 0 17px 32px rgba(32, 28, 26, .2);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.hardback-cover:hover img,
+.hardback-cover:focus-visible img {
+  transform: translateY(-5px);
+  box-shadow: 0 23px 39px rgba(32, 28, 26, .25);
+}
+
+.hardback-card-copy {
+  min-width: 0;
+}
+
+.hardback-format {
+  margin: 2px 0 15px;
+  color: var(--burgundy);
+  font: 900 9px/1.35 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.hardback-card h3 {
+  margin: 0 0 7px;
+  font-size: clamp(29px, 3.1vw, 40px);
+  font-weight: 400;
+  line-height: .94;
+}
+
+.hardback-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hardback-card h3 a:hover,
+.hardback-card h3 a:focus-visible {
+  color: var(--burgundy);
+}
+
+.hardback-author {
+  margin: 0 0 17px;
+  color: var(--burgundy);
+  font: 800 11px/1.4 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.hardback-card-copy > p:not(.hardback-format, .hardback-author) {
+  margin: 0;
+  color: #514842;
+  font: 13px/1.62 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.hardback-card .button-row {
+  margin-top: 19px;
+  gap: 8px;
+}
+
+.hardback-card .button {
+  min-height: 40px;
+  padding: 0 12px;
+  font-size: 11px;
+}
+
+/* Shakespeare is one doorway with three deliberately separate shelves. */
+.shakespeare-collection-page {
+  --shakespeare-route-accent: var(--burgundy);
+  max-width: 1280px;
+}
+
+.shakespeare-standard-page {
+  --shakespeare-route-accent: var(--burgundy);
+}
+
+.shakespeare-scholarly-page {
+  --shakespeare-route-accent: var(--navy-deep);
+}
+
+.shakespeare-apocrypha-page {
+  --shakespeare-route-accent: #65313a;
+}
+
+.shakespeare-collection-routes {
+  margin: 34px 0 52px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.shakespeare-collection-route {
+  position: relative;
+  min-width: 0;
+  min-height: 225px;
+  padding: 27px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 250, 244, .82);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.shakespeare-collection-route.route-scholarly {
+  border-color: rgba(255, 250, 244, .2);
+  background: var(--navy-deep);
+  color: #fffaf4;
+}
+
+.shakespeare-collection-route.route-apocrypha {
+  border-color: rgba(255, 250, 244, .2);
+  background: #65313a;
+  color: #fffaf4;
+}
+
+.shakespeare-collection-route:hover,
+.shakespeare-collection-route:focus-visible {
+  z-index: 2;
+  transform: translateY(-3px);
+  box-shadow: 0 17px 36px rgba(32, 28, 26, .14);
+}
+
+.shakespeare-collection-route.is-current {
+  z-index: 1;
+  box-shadow: inset 0 5px 0 #d6b66e;
+}
+
+.shakespeare-collection-route span {
+  color: var(--burgundy);
+  font: 900 9px/1.35 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.shakespeare-collection-route.route-scholarly span,
+.shakespeare-collection-route.route-apocrypha span {
+  color: #e7c985;
+}
+
+.shakespeare-collection-route strong {
+  max-width: 330px;
+  margin: 34px 0 13px;
+  display: block;
+  font-size: clamp(29px, 3vw, 40px);
+  font-weight: 400;
+  line-height: .94;
+}
+
+.shakespeare-collection-route small {
+  max-width: 360px;
+  margin-top: auto;
+  display: block;
+  color: #514842;
+  font: 12.5px/1.58 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.shakespeare-collection-route.route-scholarly small,
+.shakespeare-collection-route.route-apocrypha small {
+  color: #eee5dc;
+}
+
+.shakespeare-apocrypha-page .specialist-collection-hero {
+  background: #65313a;
+}
+
+.shakespeare-scholarly-page .specialist-collection-note {
+  border-left: 5px solid var(--navy-deep);
+}
+
+.shakespeare-apocrypha-page .specialist-collection-note {
+  border-left: 5px solid #65313a;
+}
+
+@media (max-width: 1050px) {
+  .hardback-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(310px, .8fr);
+  }
+
+  .hardback-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 780px) {
+  .edition-format-intro,
+  .hardback-group-heading,
+  .hardback-collection-heading {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .edition-format-intro .kicker,
+  .hardback-group-heading .kicker,
+  .hardback-collection-heading .kicker,
+  .hardback-group-heading > p,
+  .hardback-collection-heading > p,
+  .hardback-group-heading > a,
+  .hardback-collection-heading > a {
+    grid-column: auto;
+  }
+
+  .hardback-group-heading > div,
+  .hardback-collection-heading > div {
+    grid-row: auto;
+  }
+
+  .edition-format-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hardback-hero {
+    min-height: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 43px 22px 28px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .hardback-hero h1 {
+    font-size: clamp(55px, 15vw, 80px);
+  }
+
+  .hardback-hero-covers {
+    min-height: 305px;
+  }
+
+  .hardback-hero-covers > a,
+  .hardback-hero-covers > img {
+    width: min(31%, 125px);
+  }
+
+  .hardback-editorial-note {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .shakespeare-collection-routes {
+    grid-template-columns: 1fr;
+    margin: 26px 0 42px;
+  }
+
+  .shakespeare-collection-route {
+    min-height: 0;
+    padding: 23px;
+  }
+
+  .shakespeare-collection-route strong {
+    margin: 24px 0 11px;
+    font-size: 31px;
+  }
+
+  .shakespeare-collection-route small {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .edition-formats,
+  .edition-format-panel {
+    margin: 52px -15px 62px;
+    padding: 34px 18px;
+  }
+
+  .edition-format-intro h2 {
+    font-size: 44px;
+  }
+
+  .edition-format-card {
+    min-height: 0;
+    padding: 17px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .edition-format-cover img {
+    width: min(58%, 170px);
+  }
+
+  .edition-format-label {
+    margin-bottom: 13px;
+  }
+
+  .edition-format-copy h3 {
+    font-size: 30px;
+  }
+
+  .edition-format-copy .button {
+    width: 100%;
+  }
+
+  .hardback-editorial-note {
+    margin-bottom: 56px;
+    padding: 21px 20px;
+  }
+
+  .hardback-group,
+  .hardback-collection {
+    margin-bottom: 62px;
+  }
+
+  .hardback-grid {
+    gap: 9px;
+  }
+
+  .hardback-card {
+    min-height: 0;
+    padding: 12px;
+    grid-template-columns: 84px minmax(0, 1fr);
+    gap: 13px;
+  }
+
+  .hardback-cover img {
+    width: 84px;
+  }
+
+  .hardback-format {
+    margin-bottom: 8px;
+    font-size: 8px;
+  }
+
+  .hardback-card h3 {
+    margin-bottom: 5px;
+    font-size: 25px;
+  }
+
+  .hardback-author {
+    margin-bottom: 9px;
+    font-size: 10px;
+  }
+
+  .hardback-card-copy > p:not(.hardback-format, .hardback-author) {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 11.5px;
+    line-height: 1.45;
+  }
+
+  .hardback-card .button-row {
+    margin-top: 11px;
+    display: grid;
+    gap: 6px;
+  }
+
+  .hardback-card .button {
+    width: 100%;
+    min-height: 37px;
+    padding: 0 8px;
+    font-size: 9px;
+  }
+
+  .shakespeare-collection-route {
+    padding: 20px;
+  }
+
+  .shakespeare-collection-route strong {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+}

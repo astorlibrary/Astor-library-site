@@ -4,6 +4,7 @@ const subjectData = require('./subject-data');
 const resourceData = require('./resource-data');
 const authorProfileData = require('./author-profiles');
 const editionUpdateData = require('./edition-update-data');
+const formatReleaseData = require('./format-release-data');
 
 const root = process.cwd();
 
@@ -13,6 +14,7 @@ const collectionFiles = [
   { file: 'shakespeare/index.html', name: 'Shakespeare', href: '/shakespeare/', image: '/assets/home/shakespeare.jpg' },
   { file: 'shakespeare/apocrypha/index.html', name: 'Shakespeare Apocrypha', href: '/shakespeare/apocrypha/', image: '/Edward%20III%20Main%20Cover.png', relatedBooks: editionUpdateData.filter(book => book.range === 'apocrypha').map(book => '/books/' + book.slug + '/') },
   { file: 'shakespeare/expanded-scholarly-editions/index.html', name: 'Astor Shakespeare: Expanded Scholarly Editions', href: '/shakespeare/expanded-scholarly-editions/', image: '/Hamlet%20Scholarly%20Cover.png', relatedBooks: editionUpdateData.filter(book => book.range === 'expanded').map(book => '/books/' + book.slug + '/') },
+  { file: 'hardbacks/index.html', name: 'Hardback Editions', href: '/hardbacks/', image: '/Great%20Gatsby%20Hardcover.png', relatedBooks: formatReleaseData.hardbacks.map(book => book.href) },
   { file: 'restoration-enlightenment/index.html', name: 'Restoration & Enlightenment', href: '/restoration-enlightenment/', image: '/assets/home/restoration-enlightenment.jpg' },
   { file: 'romantic-regency/index.html', name: 'Romantic & Regency', href: '/romantic-regency/', image: '/assets/home/romantic-regency.jpg' },
   { file: 'victorian/index.html', name: 'Victorian', href: '/victorian/', image: '/assets/home/victorian.jpg' },
@@ -623,8 +625,10 @@ fs.mkdirSync(path.join(root, 'authors'), { recursive: true });
 fs.writeFileSync(path.join(root, 'authors/index.html'), authorsHtml);
 
 const collectionSections = collections.map(function (collection) {
-  const links = books
-    .filter(function (book) { return book.collection === collection.title; })
+  const collectionBooks = collection.relatedBooks?.length
+    ? collection.relatedBooks.map(function (href) { return books.find(function (book) { return book.href === href; }); }).filter(Boolean)
+    : books.filter(function (book) { return book.collection === collection.title; });
+  const links = collectionBooks
     .sort(function (a, b) { return a.title.localeCompare(b.title, 'en'); })
     .map(function (book) {
       return '<a href="' + escapeHtml(book.href) + '"><span>' + escapeHtml(book.title) + '</span><small>' + escapeHtml(book.author) + '</small></a>';

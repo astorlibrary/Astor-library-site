@@ -2,12 +2,21 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const childProcess = require('child_process');
+const formatReleaseData = require('./format-release-data');
 
 const root = process.cwd();
 const index = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'content-index.json'), 'utf8'));
 const outputDirectory = path.join(root, 'assets', 'book-thumbs');
 const mappingFile = path.join(root, 'assets', 'book-thumbnails.json');
 const mapping = {};
+const formatImages = formatReleaseData.hardbacks.map(function (hardback) {
+  return {
+    type: 'hardback',
+    title: hardback.title + ' hardback',
+    href: hardback.href,
+    image: '/' + encodeURIComponent(hardback.image).replace(/'/g, '%27')
+  };
+});
 const items = [
   ...(index.books || []),
   ...(index.studyEditions || []),
@@ -16,7 +25,8 @@ const items = [
   ...(index.teachingRooms || []),
   ...(index.subjects || []),
   ...(index.authors || []),
-  ...(index.collections || [])
+  ...(index.collections || []),
+  ...formatImages
 ];
 const seenSources = new Set();
 

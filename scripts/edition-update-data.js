@@ -29,6 +29,11 @@ const collections = {
     collectionHref: '/victorian/',
     collectionFile: 'victorian/index.html'
   },
+  american: {
+    collection: 'American Classics',
+    collectionHref: '/american/',
+    collectionFile: 'american/index.html'
+  },
   modern: {
     collection: 'Modern Classics',
     collectionHref: '/modern/',
@@ -40,7 +45,7 @@ function inCollection(key, book) {
   return Object.assign({}, collections[key], book);
 }
 
-module.exports = [
+const editionUpdateBooks = [
   inCollection('victorian', {
     slug: 'a-victorian-christmas',
     title: 'A Victorian Christmas',
@@ -857,3 +862,11 @@ module.exports = [
     ]
   })
 ];
+
+const formatReleaseBooks = require('./format-release-data').books;
+const knownTitles = new Set(editionUpdateBooks.map(book => book.title));
+const knownSlugs = new Set(editionUpdateBooks.map(book => book.slug));
+
+module.exports = editionUpdateBooks.concat(formatReleaseBooks.filter(book => {
+  return !knownTitles.has(book.title) && !knownSlugs.has(book.slug);
+}));

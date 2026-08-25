@@ -23,7 +23,7 @@ function walkHtml(directory, output = []) {
 test('the compact dashboard catalogue covers every presentation with valid local targets', () => {
   const payload = JSON.parse(read('assets/resource-library-data.json'));
   assert.ok(Array.isArray(payload.resources));
-  assert.equal(payload.resources.length, 44);
+  assert.equal(payload.resources.length, Object.keys(presentations).length);
 
   const records = new Map(payload.resources.map(item => [item.id, item]));
   assert.equal(records.size, payload.resources.length, 'resource IDs must be unique');
@@ -46,15 +46,21 @@ test('the compact dashboard catalogue covers every presentation with valid local
   }
 });
 
-test('all generated resource pages expose consistent signed-in library actions', () => {
+test('all generated resource pages expose the appropriate library or external actions', () => {
   assert.match(read('assets/styles.css'), /\[hidden\]\s*\{\s*display:\s*none\s*!important;?\s*\}/i);
   const pages = walkHtml(path.join(root, 'resources'))
     .filter(file => read(path.relative(root, file)).includes('data-resource-library'));
-  assert.equal(pages.length, 40);
+  assert.equal(pages.length, Object.keys(presentations).length);
 
   for (const file of pages) {
     const relative = path.relative(root, file);
     const html = fs.readFileSync(file, 'utf8');
+    if (html.includes('resource-library-panel--external')) {
+      assert.doesNotMatch(html, /data-resource-id=/i, relative);
+      assert.match(html, /External guide · access is handled on the linked site/i, relative);
+      assert.doesNotMatch(html, /data-resource-save/i, relative);
+      continue;
+    }
     const resourceId = html.match(/data-resource-id="([a-z0-9-]+)"/)?.[1];
     assert.ok(resourceId && presentations[resourceId], `${relative} needs a catalogue resource ID`);
     assert.match(html, /<button[^>]*data-resource-save[^>]*aria-pressed="false"/i, relative);

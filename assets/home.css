@@ -94,136 +94,214 @@ input:focus-visible {
   text-wrap: pretty;
 }
 
-/* The summer programme sits immediately below the shared navigation. */
-.seasonal-feature {
+/* An editorial new-year reading table, led by Astor's own books. */
+.academic-feature {
   position: relative;
   min-height: 690px;
-  padding: clamp(48px, 6vw, 82px) clamp(36px, 5.5vw, 72px);
+  padding: clamp(54px, 6vw, 82px) clamp(36px, 5.5vw, 72px);
   display: grid;
-  grid-template-columns: minmax(290px, 0.68fr) minmax(0, 1.32fr);
-  gap: clamp(42px, 6vw, 82px);
+  grid-template-columns: minmax(250px, 0.78fr) minmax(360px, 1.08fr) minmax(250px, 0.8fr);
+  gap: clamp(30px, 4.3vw, 58px);
   align-items: center;
   overflow: hidden;
-  border-bottom: 1px solid rgba(33, 29, 26, 0.22);
+  border-bottom: 1px solid rgba(255, 250, 243, 0.22);
   background:
-    radial-gradient(circle at 10% 8%, rgba(255, 250, 243, 0.72) 0 8%, transparent 8.2%),
-    radial-gradient(circle at 94% 91%, rgba(110, 31, 43, 0.12) 0 15%, transparent 15.2%),
-    linear-gradient(135deg, #efd88c 0%, #e6c66e 45%, #d8b86f 100%);
+    linear-gradient(90deg, rgba(255, 250, 243, 0.035) 1px, transparent 1px) 0 0 / 52px 52px,
+    radial-gradient(circle at 43% 48%, rgba(216, 184, 111, 0.14), transparent 31%),
+    var(--catalogue-navy);
+  color: var(--catalogue-cream);
 }
 
-.seasonal-feature::before {
-  content: "AL / SUMMER 2026";
+.academic-feature::before {
+  content: "AL / NEW TERM 2026";
   position: absolute;
   top: 25px;
   right: clamp(36px, 5.5vw, 72px);
-  color: rgba(33, 29, 26, 0.58);
+  color: rgba(255, 250, 243, 0.52);
   font: 850 9px/1 var(--catalogue-sans);
   letter-spacing: 0.18em;
 }
 
-.seasonal-feature-heading {
-  position: relative;
-  z-index: 2;
-  min-width: 0;
-}
-
-.seasonal-feature-heading > p {
-  margin: 0 0 23px;
-  color: var(--catalogue-wine);
-  font: 900 11px/1.3 var(--catalogue-sans);
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.seasonal-feature-heading .seasonal-title {
-  max-width: 590px;
-  margin: 0 0 27px;
-  color: var(--catalogue-navy);
-  font-family: var(--catalogue-serif);
-  font-weight: 400;
-  font-size: clamp(76px, 8.6vw, 124px);
-  line-height: 0.78;
-  letter-spacing: -0.07em;
-  text-wrap: balance;
-}
-
-.seasonal-feature-heading > a {
-  min-height: 48px;
-  width: max-content;
-  max-width: 100%;
-  padding: 0 18px;
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  border: 1px solid var(--catalogue-navy);
-  background: var(--catalogue-navy);
-  color: var(--catalogue-cream);
-  font: 850 11px/1.3 var(--catalogue-sans);
-  text-decoration: none;
-}
-
-.seasonal-feature-heading > a:hover,
-.seasonal-feature-heading > a:focus-visible {
-  background: var(--catalogue-wine);
-  border-color: var(--catalogue-wine);
-}
-
-.seasonal-books {
+.academic-feature-copy,
+.academic-cover-table,
+.academic-route-index {
   position: relative;
   z-index: 1;
   min-width: 0;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(12px, 1.7vw, 24px);
-  align-items: end;
 }
 
-.seasonal-book {
-  min-width: 0;
-  color: var(--catalogue-ink);
+.academic-session {
+  margin: 0 0 28px;
+  color: var(--catalogue-gold);
+  font: 900 10px/1.4 var(--catalogue-sans);
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.academic-session span {
+  display: block;
+  margin-top: 7px;
+  color: rgba(255, 250, 243, 0.7);
+  font-size: 8px;
+  letter-spacing: 0.14em;
+}
+
+.academic-feature-title {
+  max-width: 470px;
+  margin: 0 0 28px;
+  color: var(--catalogue-cream);
+  font-size: clamp(66px, 7.2vw, 104px);
+  line-height: 0.79;
+  letter-spacing: -0.065em;
+  text-wrap: balance;
+}
+
+.academic-feature-copy > p:not(.academic-session, .academic-feature-title) {
+  max-width: 500px;
+  margin: 0 0 28px;
+  color: #eadfd4;
+  font: 15px/1.72 var(--catalogue-sans);
+}
+
+.academic-feature-copy > a {
+  min-height: 47px;
+  width: max-content;
+  max-width: 100%;
+  padding: 0 17px;
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid rgba(255, 250, 243, 0.62);
+  color: var(--catalogue-cream);
+  font: 850 11px/1.35 var(--catalogue-sans);
   text-decoration: none;
 }
 
-.seasonal-book:nth-child(even) {
-  transform: translateY(-38px);
+.academic-feature-copy > a:hover,
+.academic-feature-copy > a:focus-visible {
+  border-color: var(--catalogue-cream);
+  background: var(--catalogue-cream);
+  color: var(--catalogue-wine);
 }
 
-.seasonal-book img {
+.academic-cover-table {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 18px;
+  border: 1px solid rgba(255, 250, 243, 0.24);
+  background: rgba(255, 250, 243, 0.06);
+}
+
+.academic-cover-table > a {
+  min-width: 0;
+  color: var(--catalogue-cream);
+  text-decoration: none;
+}
+
+.academic-cover-table img {
   width: 100%;
   aspect-ratio: 2 / 3;
-  object-fit: cover;
-  border: 1px solid rgba(33, 29, 26, 0.18);
-  box-shadow: 0 25px 45px rgba(55, 39, 22, 0.28);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  object-fit: contain;
+  border: 1px solid rgba(255, 250, 243, 0.2);
+  background: rgba(255, 250, 243, 0.08);
+  box-shadow: 0 20px 34px rgba(0, 0, 0, 0.34);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.seasonal-book:hover img,
-.seasonal-book:focus-visible img {
-  transform: translateY(-8px);
-  box-shadow: 0 32px 52px rgba(55, 39, 22, 0.34);
+.academic-cover-table a:hover img,
+.academic-cover-table a:focus-visible img {
+  transform: translateY(-6px);
+  box-shadow: 0 26px 40px rgba(0, 0, 0, 0.4);
 }
 
-.seasonal-book > span {
+.academic-cover-table a > span,
+.academic-cover-table small,
+.academic-cover-table strong {
+  display: block;
   min-width: 0;
-  display: block;
-  padding-top: 15px;
 }
 
-.seasonal-book strong,
-.seasonal-book small {
-  display: block;
+.academic-cover-table a > span {
+  padding-top: 11px;
 }
 
-.seasonal-book strong {
-  font-size: clamp(17px, 1.65vw, 23px);
+.academic-cover-table small {
+  margin-bottom: 5px;
+  color: var(--catalogue-gold);
+  font: 850 8px/1.3 var(--catalogue-sans);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.academic-cover-table strong {
+  font-size: clamp(17px, 1.7vw, 23px);
   font-weight: 400;
-  line-height: 1.02;
+  line-height: 1.04;
+  overflow-wrap: anywhere;
 }
 
-.seasonal-book small {
+.academic-route-index {
+  border-top: 1px solid rgba(255, 250, 243, 0.3);
+}
+
+.academic-route-index > a {
+  min-height: 122px;
+  padding: 18px 0;
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) 18px;
+  gap: 13px;
+  align-content: center;
+  border-bottom: 1px solid rgba(255, 250, 243, 0.3);
+  color: var(--catalogue-cream);
+  text-decoration: none;
+}
+
+.academic-route-index > a > span {
+  padding-top: 3px;
+  color: var(--catalogue-gold);
+  font: 900 8px/1.3 var(--catalogue-sans);
+  letter-spacing: 0.12em;
+}
+
+.academic-route-index strong,
+.academic-route-index small {
+  grid-column: 2;
+  display: block;
+}
+
+.academic-route-index strong {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.academic-route-index small {
   margin-top: 7px;
-  color: #504128;
-  font: 750 10px/1.4 var(--catalogue-sans);
+  color: #ddd3cb;
+  font: 11.5px/1.48 var(--catalogue-sans);
+}
+
+.academic-route-index b {
+  grid-column: 3;
+  grid-row: 1 / 3;
+  align-self: center;
+  color: var(--catalogue-gold);
+  font-size: 20px;
+  font-weight: 400;
+  transition: transform 0.18s ease;
+}
+
+.academic-route-index > a:hover,
+.academic-route-index > a:focus-visible {
+  padding-right: 7px;
+  padding-left: 7px;
+  background: rgba(255, 250, 243, 0.08);
+}
+
+.academic-route-index > a:hover b,
+.academic-route-index > a:focus-visible b {
+  transform: translateX(4px);
 }
 
 .catalogue-kicker,
@@ -877,6 +955,29 @@ input:focus-visible {
 }
 
 @media (max-width: 1080px) {
+  .academic-feature {
+    grid-template-columns: minmax(240px, 0.72fr) minmax(390px, 1.28fr);
+  }
+
+  .academic-route-index {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-left: 1px solid rgba(255, 250, 243, 0.3);
+  }
+
+  .academic-route-index > a {
+    min-height: 160px;
+    padding: 19px;
+    grid-template-columns: 24px minmax(0, 1fr);
+    align-content: start;
+    border-right: 1px solid rgba(255, 250, 243, 0.3);
+  }
+
+  .academic-route-index b {
+    display: none;
+  }
+
   .catalogue-entrance {
     grid-template-columns: minmax(0, 1fr) minmax(400px, 0.78fr);
   }
@@ -905,22 +1006,27 @@ input:focus-visible {
     border-left: 0;
   }
 
-  .seasonal-feature {
+  .academic-feature {
     min-height: 0;
     grid-template-columns: 1fr;
     gap: 54px;
   }
 
-  .seasonal-feature-heading {
-    max-width: 680px;
+  .academic-feature-copy {
+    max-width: 690px;
   }
 
-  .seasonal-feature-heading .seasonal-title {
-    max-width: 720px;
+  .academic-feature-title {
+    max-width: 650px;
   }
 
-  .seasonal-books {
-    max-width: 760px;
+  .academic-cover-table {
+    width: min(100%, 650px);
+  }
+
+  .academic-route-index {
+    grid-column: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .catalogue-entrance {
@@ -984,57 +1090,84 @@ input:focus-visible {
     box-shadow: none;
   }
 
-  .seasonal-feature {
-    padding: 54px 18px 46px;
-    gap: 43px;
+  .academic-feature {
+    padding: 55px 18px 46px;
+    gap: 39px;
     background:
-      radial-gradient(circle at 97% 4%, rgba(255, 250, 243, 0.68) 0 9%, transparent 9.2%),
-      linear-gradient(145deg, #efd88c 0%, #dfbe62 100%);
+      linear-gradient(90deg, rgba(255, 250, 243, 0.035) 1px, transparent 1px) 0 0 / 44px 44px,
+      radial-gradient(circle at 50% 44%, rgba(216, 184, 111, 0.12), transparent 34%),
+      var(--catalogue-navy);
   }
 
-  .seasonal-feature::before {
+  .academic-feature::before {
     top: 19px;
     right: 18px;
     font-size: 8px;
   }
 
-  .seasonal-feature-heading > p {
-    margin-bottom: 18px;
+  .academic-session {
+    margin-bottom: 20px;
     font-size: 9px;
   }
 
-  .seasonal-feature-heading .seasonal-title {
-    max-width: 340px;
-    margin-bottom: 23px;
-    font-size: clamp(65px, 20vw, 82px);
-    line-height: 0.79;
+  .academic-feature-title {
+    max-width: 360px;
+    margin-bottom: 21px;
+    font-size: clamp(58px, 18vw, 77px);
+    line-height: 0.8;
   }
 
-  .seasonal-feature-heading > a {
+  .academic-feature-copy > p:not(.academic-session, .academic-feature-title) {
+    font-size: 14px;
+    line-height: 1.62;
+  }
+
+  .academic-feature-copy > a {
     width: 100%;
     justify-content: space-between;
   }
 
-  .seasonal-books {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 32px 16px;
-    align-items: start;
+  .academic-cover-table {
+    padding: 15px;
+    gap: 24px 13px;
   }
 
-  .seasonal-book:nth-child(even) {
-    transform: none;
+  .academic-cover-table a > span {
+    padding-top: 9px;
   }
 
-  .seasonal-book > span {
-    padding-top: 11px;
+  .academic-cover-table strong {
+    font-size: 18px;
   }
 
-  .seasonal-book strong {
-    font-size: 19px;
+  .academic-route-index {
+    grid-template-columns: 1fr;
+    border-left: 0;
   }
 
-  .seasonal-book small {
-    font-size: 9.5px;
+  .academic-route-index > a {
+    min-height: 0;
+    padding: 18px 0;
+    grid-template-columns: 27px minmax(0, 1fr) 18px;
+    border-right: 0;
+  }
+
+  .academic-route-index > a:hover,
+  .academic-route-index > a:focus-visible {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+
+  .academic-route-index strong {
+    font-size: 25px;
+  }
+
+  .academic-route-index small {
+    font-size: 11px;
+  }
+
+  .academic-route-index b {
+    display: block;
   }
 
   .catalogue-entrance-copy {

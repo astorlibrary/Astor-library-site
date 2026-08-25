@@ -6,7 +6,7 @@ const root = process.cwd();
 const outDir = path.join(root, 'dist');
 const SITE_URL = 'https://astorlibrary.com';
 // This date changes only when a site-wide release materially updates every page.
-const SITE_LASTMOD = '2026-08-15';
+const SITE_LASTMOD = '2026-08-25';
 const discoveryFile = path.join(root, 'assets', 'content-index.json');
 const discovery = fs.existsSync(discoveryFile)
   ? JSON.parse(fs.readFileSync(discoveryFile, 'utf8'))
@@ -825,6 +825,7 @@ function addGlobalNavigation(html, source) {
   const inRoute = route => href === route || href.startsWith(route);
   const current = (active, exact = active) => active ? ` aria-current="${exact ? 'page' : 'location'}"` : '';
   const booksCurrent = href === '/library/' || href.startsWith('/books/');
+  const hardbacksCurrent = href === '/hardbacks/' || href.startsWith('/hardbacks/');
   const shakespeareCurrent = href === '/shakespeare/' || href.startsWith('/shakespeare/');
   const periodsCurrent = [
     '/classic-literature/',
@@ -844,7 +845,7 @@ function addGlobalNavigation(html, source) {
   const passageCurrent = href === '/passage-room/' || href.startsWith('/passage-room/');
   const searchCurrent = href === '/explore/' || href.startsWith('/explore/');
   const accountCurrent = href === '/account/' || href.startsWith('/account/');
-  const browseCurrent = shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent || readingRoutesCurrent;
+  const browseCurrent = hardbacksCurrent || shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent || readingRoutesCurrent;
 
   const header = `<header class="site-header astor-global-header">
   <div class="astor-header-identity">
@@ -869,9 +870,10 @@ function addGlobalNavigation(html, source) {
               <h2 id="astor-browse-by-title">Browse by</h2>
               <div class="astor-browse-cards">
                 <a href="/shakespeare/"${current(shakespeareCurrent, href === '/shakespeare/')}><em aria-hidden="true">01</em><span><b>Shakespeare</b><small>Plays, poems and editions</small></span></a>
-                <a href="/authors/"${current(authorsCurrent, href === '/authors/')}><em aria-hidden="true">02</em><span><b>Writers</b><small>Authors and their Astor editions</small></span></a>
-                <a href="/subjects/"${current(subjectsCurrent, href === '/subjects/')}><em aria-hidden="true">03</em><span><b>Subjects</b><small>Genres, themes and contexts</small></span></a>
-                <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}><em aria-hidden="true">04</em><span><b>Reading routes</b><small>Books connected by a question</small></span></a>
+                <a href="/hardbacks/"${current(hardbacksCurrent, href === '/hardbacks/')}><em aria-hidden="true">02</em><span><b>Hardbacks</b><small>Gift and casebound editions</small></span></a>
+                <a href="/authors/"${current(authorsCurrent, href === '/authors/')}><em aria-hidden="true">03</em><span><b>Writers</b><small>Authors and their Astor editions</small></span></a>
+                <a href="/subjects/"${current(subjectsCurrent, href === '/subjects/')}><em aria-hidden="true">04</em><span><b>Subjects</b><small>Genres, themes and contexts</small></span></a>
+                <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}><em aria-hidden="true">05</em><span><b>Reading routes</b><small>Books connected by a question</small></span></a>
               </div>
             </section>
             <section class="astor-period-directory" aria-labelledby="astor-period-title">
@@ -902,7 +904,7 @@ function addGlobalNavigation(html, source) {
 
   const footer = `<footer class="site-footer astor-global-footer">
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
-  <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
+  <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/hardbacks/">Hardback editions</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
   <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact &amp; support</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;

@@ -203,7 +203,7 @@ const resources = [
     description: 'Explore how Dickens and A Christmas Carol helped reinvent Christmas through literary history, charity, family and seasonal tradition.',
     image: 'A Dickens Christmas.png',
     url: 'https://charles-dickens-christma-no08my6.gamma.site/',
-    relatedBooks: ['/books/a-christmas-carol/', '/books/cricket-on-the-hearth/', '/books/the-haunted-man-and-the-ghosts-bargain/'],
+    relatedBooks: ['/books/a-christmas-carol/', '/books/the-chimes/', '/books/cricket-on-the-hearth/', '/books/the-haunted-man-and-the-ghosts-bargain/', '/books/dickens-at-christmas/'],
     tags: ['Charles Dickens', 'Christmas']
   },
   {
@@ -213,7 +213,7 @@ const resources = [
     description: 'Explore what stories about the dead reveal about belief, memory, the supernatural and the living cultures that tell them.',
     image: 'Literature and Ghost Stories.png',
     url: 'https://ghost-stories-a-window-i-5hwf1y6.gamma.site/',
-    relatedBooks: ['/books/the-haunted-man-and-the-ghosts-bargain/', '/books/dracula/', '/books/frankenstein/'],
+    relatedBooks: ['/books/victorian-ghost-stories/', '/books/the-yellow-wallpaper-and-the-giant-wistaria/', '/books/sleepy-hollow-and-other-stories/', '/books/the-haunted-man-and-the-ghosts-bargain/', '/books/dracula/', '/books/frankenstein/'],
     tags: ['Ghost stories', 'Supernatural belief']
   },
   {
@@ -223,7 +223,7 @@ const resources = [
     description: 'Trace the Victorian customs, rituals and influences that shaped the modern Christmas, from domestic celebration to seasonal literature.',
     image: 'A Victorian Christmas.png',
     url: 'https://victorian-christmas-trad-ebopxnl.gamma.site/',
-    relatedBooks: ['/books/a-victorian-christmas/', '/books/a-christmas-carol/', '/books/cricket-on-the-hearth/'],
+    relatedBooks: ['/books/a-victorian-christmas/', '/books/a-christmas-carol/', '/books/cricket-on-the-hearth/', '/books/dickens-at-christmas/'],
     tags: ['Victorian Christmas', 'Cultural history']
   },
   {
@@ -233,7 +233,7 @@ const resources = [
     description: 'Trace the dark literary thread from ancient Celtic ritual through ghost stories and Gothic masterpieces to the modern Halloween.',
     image: 'How Literature Shaped Halloween.png',
     url: 'https://how-literature-shaped-ha-ai2opsd.gamma.site/',
-    relatedBooks: ['/books/frankenstein/', '/books/dracula/', '/books/jekyll-and-hyde/', '/books/dorian-gray/'],
+    relatedBooks: ['/books/sleepy-hollow-and-other-stories/', '/books/victorian-ghost-stories/', '/books/frankenstein/', '/books/dracula/', '/books/jekyll-and-hyde/', '/books/dorian-gray/'],
     tags: ['Halloween', 'Gothic literature']
   },
   {
@@ -362,6 +362,7 @@ const resources = [
     description: 'Examine the scene and decisions that turn Gatsby’s recovered dream towards exposure and collapse.',
     image: 'Turning-Point-in-The-Great-Gatsby.png',
     url: '/presentations/?presentation=turning-point-great-gatsby',
+    relatedBooks: ['/books/the-great-gatsby/'],
     tags: ['The Great Gatsby', 'Turning point']
   },
   {
@@ -371,6 +372,7 @@ const resources = [
     description: 'Place Fitzgerald’s life, writing, reputation and Jazz Age career beside the novel for which he is best known.',
     image: 'Biography-of-F-Scott-Fitzgerald.png',
     url: '/presentations/?presentation=biography-f-scott-fitzgerald',
+    relatedBooks: ['/books/the-great-gatsby/'],
     tags: ['F. Scott Fitzgerald', 'Biography']
   },
   {
@@ -381,6 +383,7 @@ const resources = [
     description: 'Connect the novel’s social corruption and illusions to its recurring symbols and broken versions of success.',
     image: 'Corruption-the-American-Dream-Symbolism-and-Illusion-in-The-Great-Gatsby.png',
     url: '/presentations/?presentation=gatsby-corruption-symbolism-illusion',
+    relatedBooks: ['/books/the-great-gatsby/'],
     tags: ['The Great Gatsby', 'Themes and symbols']
   },
   {
@@ -391,6 +394,7 @@ const resources = [
     description: 'Study a crucial death through the relationships, loyalties and failures that prepare for it.',
     image: 'Death-of-a-Character-and-Important-Relationships-in-The-Great-Gatsby.png',
     url: '/presentations/?presentation=gatsby-death-relationships',
+    relatedBooks: ['/books/the-great-gatsby/'],
     tags: ['The Great Gatsby', 'Relationships']
   },
   {
@@ -401,6 +405,7 @@ const resources = [
     description: 'Build an essay that connects setting and symbolism to Fitzgerald’s treatment of the American Dream.',
     image: 'Great-Gatsby-Essay-Plan-Setting-Symbolism-and-the-American-Dream.png',
     url: '/presentations/?presentation=gatsby-essay-plan',
+    relatedBooks: ['/books/the-great-gatsby/'],
     tags: ['The Great Gatsby', 'Essay plan']
   },
   {
@@ -410,6 +415,7 @@ const resources = [
     description: 'Test Nick’s admiration against Gatsby’s hope, reinvention, deception and moral choices.',
     image: 'Admiration-for-Gatsby-in-The-Great-Gatsby.png',
     url: '/presentations/?presentation=admiration-for-gatsby',
+    relatedBooks: ['/books/the-great-gatsby/'],
     tags: ['The Great Gatsby', 'Gatsby']
   },
   {
@@ -419,6 +425,7 @@ const resources = [
     description: 'A focused revision resource on Gatsby’s hope, loyalty, imagination and capacity for self-creation.',
     image: 'THINGS-WE-ADMIRE-ABOUT-GATSBY.png',
     url: '/presentations/?presentation=things-we-admire-gatsby',
+    relatedBooks: ['/books/the-great-gatsby/'],
     tags: ['The Great Gatsby', 'Character']
   },
   {
@@ -428,6 +435,7 @@ const resources = [
     description: 'Review the novel’s central characters, their relationships and the values revealed by their choices.',
     image: 'The-Great-Gatsby-Character-Study-Guide.png',
     url: '/presentations/?presentation=great-gatsby-character-study',
+    relatedBooks: ['/books/the-great-gatsby/'],
     tags: ['The Great Gatsby', 'Characters']
   },
   {
@@ -437,6 +445,7 @@ const resources = [
     description: 'Read the novel’s wealth, carelessness and self-invention as a critique of national promise.',
     image: 'The-Great-Gatsby-Corruption-Illusion-and-the-American-Dream.png',
     url: '/presentations/?presentation=great-gatsby-corruption-illusion-v2',
+    relatedBooks: ['/books/the-great-gatsby/'],
     tags: ['The Great Gatsby', 'American Dream']
   },
   {
@@ -446,6 +455,7 @@ const resources = [
     description: 'Develop close reading of Fitzgerald’s narration, imagery, structure and critical interpretations.',
     image: 'The-Great-Gatsby-Notes-and-Critical-Reading.png',
     url: '/presentations/?presentation=great-gatsby-notes-critical-reading',
+    relatedBooks: ['/books/the-great-gatsby/'],
     tags: ['The Great Gatsby', 'Critical reading']
   }
 ];
