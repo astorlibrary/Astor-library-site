@@ -1,6 +1,19 @@
 const fs = require('fs');
 const path = require('path');
 const books = require('./edition-update-data');
+// Book-specific section headings live outside the template so the editorial
+// guide's rule against interchangeable headings survives every rebuild.
+const sectionOverrides = require('./edition-section-overrides.json');
+
+function sectionTitleBlock(id, kicker, slug) {
+  const section = sectionOverrides[slug]?.[id];
+  if (!section || !section.heading) {
+    throw new Error('Missing "' + id + '" section heading for "' + slug + '" in scripts/edition-section-overrides.json. ' +
+      'Write a book-specific heading and note (EDITORIAL_GUIDE.md forbids template headings).');
+  }
+  return '<section class="section-title" id="' + id + '"><p class="kicker">' + kicker + '</p><h2>' + section.heading + '</h2>' +
+    (section.note ? '<p>' + section.note + '</p>' : '') + '</section>';
+}
 
 const root = process.cwd();
 const blockStart = '<!-- ASTOR EDITION UPDATE START -->';
@@ -171,11 +184,11 @@ function bookPage(book) {
   <section class="quick-facts" aria-label="${escapeHtml(book.title)} facts">${facts}</section>
   <section class="section-title" id="edition"><p class="kicker">Edition contents</p><h2>What this Astor edition contains.</h2><p>These features belong to the main edition represented by the cover and purchase link on this page.</p></section>
   <section class="timeline"><article class="edition-card new-edition"><img src="${assetPath(book.image)}" alt="Astor Library ${escapeHtml(book.title)} cover" loading="lazy"><div><p class="year">${escapeHtml(book.label)}</p><h2><em>${escapeHtml(book.shortTitle || book.title)}</em></h2><ul class="edition-includes">${includes}</ul>${actionButtons(book, true)}</div></article></section>
-  <section class="section-title" id="work"><p class="kicker">About the work</p><h2>The complete work and its historical shape.</h2><p>The factual account below preserves the supplied publication, textual and contextual information.</p></section>
+  ${sectionTitleBlock('work', 'About the work', book.slug)}
   <section class="astor-reading-grid astor-reading-grid-two">${readings}</section>
-  <section class="section-title" id="editorial"><p class="kicker">Text and context</p><h2>How the edition is organised.</h2><p>Editorial choices are stated openly so that readers can distinguish the literary work from its supporting material.</p></section>
+  ${sectionTitleBlock('editorial', 'Text and context', book.slug)}
   <section class="astor-context-grid">${contexts}</section>
-  <section class="section-title" id="reading"><p class="kicker">Reading routes</p><h2>Three questions carried by the edition.</h2><p>These routes connect the work’s form, history and central pressures without reducing it to one interpretation.</p></section>
+  ${sectionTitleBlock('reading', 'Reading routes', book.slug)}
   <section class="astor-question-grid">${topics}</section>
 ${editionChoice(book)}
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="${escapeHtml(book.collectionHref)}">More in ${escapeHtml(book.collection)}</a>${book.range === 'apocrypha' ? '<a href="/shakespeare/apocrypha/">All eight Apocrypha volumes</a>' : ''}${book.range === 'expanded' ? '<a href="/shakespeare/expanded-scholarly-editions/">All Expanded Scholarly Editions</a>' : ''}<a href="/explore/">Search the library <span aria-hidden="true">&rarr;</span></a></nav>

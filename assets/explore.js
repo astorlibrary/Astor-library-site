@@ -5,6 +5,7 @@
   const count = document.querySelector('#explore-count');
   const empty = document.querySelector('#explore-empty');
   const more = document.querySelector('#explore-more');
+  const paths = document.querySelector('.explore-paths');
 
   if (!search || !filters.length || !cards.length || !count || !empty || !more) return;
 
@@ -45,6 +46,9 @@
     empty.hidden = matching !== 0;
     more.hidden = matching <= shown;
     more.textContent = 'Show ' + Math.min(pageSize, matching - shown) + ' more';
+    // The "ways in" cards orient first-time visitors; once a search or filter
+    // is active they only push the results further down the page.
+    if (paths) paths.hidden = Boolean(query) || activeType !== 'all';
   }
 
   search.addEventListener('input', () => {

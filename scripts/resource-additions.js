@@ -127,12 +127,12 @@ module.exports = [
       'Beauty, art, secrecy, corruption and the divided self.',
       'The portrait as Gothic object, conscience and record.'
     ],
-    sectionHeading: 'The portrait keeps the history',
+    sectionHeading: 'The portrait keeps the history.',
     sectionIntro: 'Dorian’s wish separates appearance from consequence, but the novel never lets that separation become secure.',
     readings: [
       { label: 'Influence', title: 'Language acts upon a life', copy: 'Lord Henry’s conversation gives Dorian ways to imagine youth, pleasure and loss. The novel asks whether influence excuses a choice or makes responsibility more difficult to understand.' },
       { label: 'Art and secrecy', title: 'The surface does not stay innocent', copy: 'Basil’s portrait begins as art and becomes evidence. Its changing body records the history that Dorian’s unchanged face allows society to ignore.' },
-      { label: 'Oscar Wilde', title: 'Biography matters—and has limits', copy: 'The novel’s revisions, reception and Wilde’s later trials belong to its history. They deepen the context without turning every character or desire into a disguised fact about the author.' }
+      { label: 'Oscar Wilde', title: 'Biography matters, and has limits', copy: 'The novel’s revisions, reception and Wilde’s later trials belong to its history. They deepen the context without turning every character or desire into a disguised fact about the author.' }
     ],
     note: 'Track each moment when somebody looks: at Dorian, at the portrait, at a performance or at another person. Seeing in this novel is never the same as knowing.',
     relatedBooks: [{ href: '/books/dorian-gray/', label: 'Read the Picture of Dorian Gray book page' }]

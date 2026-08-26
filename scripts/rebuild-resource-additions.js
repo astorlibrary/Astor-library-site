@@ -2,6 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const resources = require('./resource-data');
 const detailedResources = require('./resource-additions');
+// Guide-specific wording for the "Subject and purpose" sentence and the three
+// reading-notes articles; without an entry a guide falls back to the generic
+// category wording, which the editorial guide treats as a placeholder only.
+const pageOverrides = require('./resource-page-overrides.json');
 
 const root = process.cwd();
 const detailedByUrl = new Map(detailedResources.map(resource => [resource.url, resource]));
@@ -52,7 +56,7 @@ const categories = {
   },
   victorian: {
     label: 'Victorian & Gothic',
-    use: 'Use the guide to check plot, narrative voice and historical context. Examine how documents, houses, secrets and divided narrators function in the novel.'
+    use: 'Check each claim against the text itself, and keep the guide’s summaries distinct from its interpretations.'
   },
   modern: {
     label: 'Modern fiction',
@@ -141,7 +145,7 @@ function readingNotes(resource, detailed) {
     {
       label: 'Study question',
       title: focus,
-      copy: `Use ${focus.toLocaleLowerCase()} as a question and support the answer with quotations or precise references to the text.`
+      copy: 'Turn the guide’s subject into a question and support the answer with quotations or precise references to the text.'
     }
   ];
 }
@@ -161,8 +165,12 @@ function page(resource) {
     slideCount ? ['Length', `${slideCount} slides`] : null
   ].filter(Boolean);
   const factsHtml = `<dl class="resource-facts" aria-label="Resource details">${facts.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>`;
-  const notes = readingNotes(resource, detailed);
-  const notesHtml = notes.map(item => `<article><p class="year">${escapeHtml(item.label)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.copy)}</p></article>`).join('');
+  const override = pageOverrides[resource.route] || {};
+  // Override fields hold page-ready HTML captured from the edited guides, so
+  // they are emitted verbatim; the fallback path still escapes plain text.
+  const notesHtml = override.readings?.length === 3
+    ? override.readings.map(item => `<article><p class="year">${item.label}</p><h3>${item.title}</h3><p>${item.copy}</p></article>`).join('')
+    : readingNotes(resource, detailed).map(item => `<article><p class="year">${escapeHtml(item.label)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.copy)}</p></article>`).join('');
   const guidePurpose = detailed?.deck || resource.description;
   const note = detailed?.note || (isAstorPresentation
     ? `Read the introduction and three-slide preview here, then sign in with a free account to continue. Check the guide’s summaries and interpretations against the relevant chapter, scene or poem.`
@@ -227,7 +235,7 @@ ${libraryPanel}
     <p class="resource-availability">${availability}</p>
     <h2>Subject and purpose of the guide.</h2>
     <p>${escapeHtml(resource.description)}</p>
-    <p>${escapeHtml(category.use)}</p>
+    <p>${override.use || escapeHtml(category.use)}</p>
     ${factsHtml}
     <div class="resource-page-actions"><a href="${escapeHtml(resource.url)}"${linkAttributes}>${heroAction} <span aria-hidden="true">${externalArrow}</span></a><a href="/resources/">Return to the free library</a></div>
   </article>

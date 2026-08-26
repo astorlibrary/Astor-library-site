@@ -338,7 +338,7 @@ const resources = [
   },
   {
     category: 'american',
-    title: 'Biography of Lee, Harper (1926–2016)',
+    title: 'Biography of Harper Lee (1926–2016)',
     titleHtml: 'Biography of Harper Lee (1926–2016)',
     description: 'Meet the writer of To Kill a Mockingbird through her Alabama childhood, New York years and literary career.',
     image: 'Biography of Harper Lee.png',
