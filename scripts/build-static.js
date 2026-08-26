@@ -27,6 +27,13 @@ const collectionBanners = {
   '/Study%20Resources.png': '/assets/home/study-editions.jpg'
 };
 
+// Social previews, JSON-LD and the image sitemap should advertise the optimised
+// catalogue thumbnails, never the multi-megabyte original uploads.
+function optimisedImage(imagePath) {
+  if (!imagePath) return imagePath;
+  return collectionBanners[imagePath] || bookThumbnails[imagePath] || imagePath;
+}
+
 const excluded = new Set([
   '.agents',
   '.git',
@@ -61,7 +68,12 @@ function promoteFirstMainImage(html) {
   const mainStart = html.search(/<main\b/i);
   if (mainStart === -1) return html;
   const beforeMain = html.slice(0, mainStart);
-  const mainAndAfter = html.slice(mainStart).replace(/<img\b[^>]*>/i, function (tag) {
+  // Images marked data-no-priority (large sample spreads) must not become the
+  // page's highest-priority fetch; promote the first ordinary image instead.
+  let promoted = false;
+  const mainAndAfter = html.slice(mainStart).replace(/<img\b[^>]*>/gi, function (tag) {
+    if (promoted || /\bdata-no-priority\b/i.test(tag)) return tag;
+    promoted = true;
     let result = tag.replace(/\bloading="lazy"/i, 'loading="eager"');
     if (!/\bloading=/i.test(result)) result = result.replace('<img', '<img loading="eager"');
     if (!/\bfetchpriority=/i.test(result)) result = result.replace('<img', '<img fetchpriority="high"');
@@ -207,7 +219,7 @@ function addBookStructuredData(html, source) {
       '@type': 'Book',
       name: book.title,
       url: absoluteUrl(book.href),
-      image: absoluteUrl(book.image),
+      image: absoluteUrl(optimisedImage(book.image)),
       genre: (book.subjects || []).map(subject => subject.title),
       author: {
         '@type': 'Person',
@@ -254,7 +266,7 @@ function addAuthorStructuredData(html, source) {
       birthDate: dates.birthDate,
       deathDate: dates.deathDate,
       mainEntityOfPage: absoluteUrl(author.href),
-      subjectOf: author.books.map(book => ({ '@type': 'Book', name: book.title, url: absoluteUrl(book.href), image: absoluteUrl(book.image) }))
+      subjectOf: author.books.map(book => ({ '@type': 'Book', name: book.title, url: absoluteUrl(book.href), image: absoluteUrl(optimisedImage(book.image)) }))
     },
     publisher: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' }
   };
@@ -273,7 +285,7 @@ function addResourceStructuredData(html, source) {
     description: resource.description,
     url: absoluteUrl(href),
     sameAs: resource.externalUrl,
-    image: resource.image ? absoluteUrl(resource.image) : undefined,
+    image: resource.image ? absoluteUrl(optimisedImage(resource.image)) : undefined,
     inLanguage: 'en-GB',
     isAccessibleForFree: true,
     learningResourceType: 'Study guide',
@@ -309,7 +321,7 @@ function addStudyStructuredData(html, source) {
     description: study.description,
     url: absoluteUrl(study.href),
     sameAs: study.externalUrl || undefined,
-    image: study.image ? absoluteUrl(study.image) : undefined,
+    image: study.image ? absoluteUrl(optimisedImage(study.image)) : undefined,
     inLanguage: 'en-GB',
     learningResourceType: 'Study edition',
     educationalUse: ['Reading', 'Study', 'Teaching', 'Exam preparation'],
@@ -436,7 +448,7 @@ function addPassageStructuredData(html, source) {
     inLanguage: 'en-GB',
     educationalUse: ['Reading', 'Study', 'Teaching'],
     learningResourceType: 'Close reading',
-    image: absoluteUrl(passage.image),
+    image: absoluteUrl(optimisedImage(passage.image)),
     author: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/' },
     publisher: { '@type': 'Organization', '@id': SITE_URL + '/#organization', name: 'Astor Library', url: SITE_URL + '/', logo: { '@type': 'ImageObject', url: absoluteUrl('/icon-512.png') } },
     publishingPrinciples: absoluteUrl('/editorial/'),
@@ -466,7 +478,11 @@ function addGlobalMetadata(html, source) {
   const subject = subjectContext(source);
   const passage = passageContext(source);
   const study = studyContext(source);
-  const image = book?.image || resource?.image || passage?.image || study?.image || author?.image || subject?.image || '/Logo.png';
+  const imageOwner = book || resource || passage || study || author || subject;
+  const image = optimisedImage(imageOwner?.image) || '/assets/og-logo.jpg';
+  const imageAlt = imageOwner?.imageAlt || (imageOwner?.title
+    ? plainText(imageOwner.title) + ', Astor Library'
+    : 'Astor Library classic literature editions and resources');
   let metadata = '';
   const absoluteHref = absoluteUrl(href);
   const absoluteImage = absoluteUrl(image);
@@ -479,7 +495,7 @@ function addGlobalMetadata(html, source) {
   if (!/property="og:type"/i.test(html)) metadata += '<meta property="og:type" content="' + (href === '/' ? 'website' : 'article') + '">';
   if (!/property="og:url"/i.test(html)) metadata += '<meta property="og:url" content="' + escapeHtml(absoluteHref) + '">';
   if (!/property="og:image"/i.test(html)) metadata += '<meta property="og:image" content="' + escapeHtml(absoluteImage) + '">';
-  if (!/property="og:image:alt"/i.test(html)) metadata += '<meta property="og:image:alt" content="Astor Library classic literature editions and resources">';
+  if (!/property="og:image:alt"/i.test(html)) metadata += '<meta property="og:image:alt" content="' + escapeHtml(imageAlt) + '">';
   if (!/name="twitter:card"/i.test(html)) metadata += '<meta name="twitter:card" content="summary_large_image">';
   if (!/name="twitter:title"/i.test(html)) metadata += '<meta name="twitter:title" content="' + escapeHtml(title) + '">';
   if (!/name="twitter:description"/i.test(html)) metadata += '<meta name="twitter:description" content="' + escapeHtml(description) + '">';
@@ -669,31 +685,41 @@ function addEditionSample(html, source) {
     '/books/macbeth/': {
       title: 'Sample pages from the Macbeth edition',
       copy: 'The spread shows the complete play with a scene summary, line numbers and explanatory notes keyed to the text.',
-      image: '/Macbeth%20Sample.png',
+      image: '/assets/samples/macbeth-sample.jpg',
+      fullImage: '/Macbeth%20Sample.png',
+      width: 1200, height: 914,
       alt: 'Two sample pages from Macbeth showing the complete play, a scene summary, line numbers and explanatory footnotes'
     },
     '/books/the-odyssey/': {
       title: 'Sample pages from The Odyssey edition',
       copy: 'The spread shows the prose text with a chapter summary, short explanatory notes and a contextual panel.',
-      image: '/The%20Odyssey%20Sample.png',
+      image: '/assets/samples/the-odyssey-sample.jpg',
+      fullImage: '/The%20Odyssey%20Sample.png',
+      width: 1200, height: 893,
       alt: 'Two sample pages from The Odyssey showing the prose text, a Story so far summary and a contextual note panel'
     },
     '/study/rime-of-the-ancient-mariner/': {
       title: 'Sample pages from The Rime of the Ancient Mariner',
       copy: 'The spread shows the complete poem with marginal glosses, line numbers and explanatory footnotes.',
-      image: '/Rime%20of%20the%20Ancient%20Mariner%20Sample.png',
+      image: '/assets/samples/rime-of-the-ancient-mariner-sample.jpg',
+      fullImage: '/Rime%20of%20the%20Ancient%20Mariner%20Sample.png',
+      width: 1200, height: 896,
       alt: 'Two sample pages from The Rime of the Ancient Mariner showing the poem, marginal glosses, line numbers and footnotes'
     },
     '/study/': {
       title: 'Sample pages from the Othello Study Edition',
       copy: 'The spread shows scene analysis, key quotations, method notes and example sentences for essay writing.',
-      image: '/Othello%20Study%20Sample.png',
+      image: '/assets/samples/othello-study-sample.jpg',
+      fullImage: '/Othello%20Study%20Sample.png',
+      width: 1200, height: 896,
       alt: 'Two sample pages from the Othello Study Edition showing scene analysis, key quotations, method notes and example sentences'
     },
     '/shakespeare/': {
       title: 'Sample pages from Shakespeare’s Sonnets',
       copy: 'The spread shows complete poems with short introductions, line numbers and explanatory footnotes.',
-      image: '/Shakespeare%27s%20Sonnets%20Sample.png',
+      image: '/assets/samples/shakespeare-s-sonnets-sample.jpg',
+      fullImage: '/Shakespeare%27s%20Sonnets%20Sample.png',
+      width: 1200, height: 899,
       alt: 'Two sample pages from Shakespeare’s Sonnets showing complete poems, short introductions, line numbers and explanatory footnotes'
     }
   };
@@ -702,7 +728,7 @@ function addEditionSample(html, source) {
 
   const section = '<section class="edition-sample" aria-labelledby="edition-sample-title">' +
     '<div><p class="kicker">Inside the edition</p><h2 id="edition-sample-title">' + escapeHtml(sample.title) + '</h2><p>' + escapeHtml(sample.copy) + '</p></div>' +
-    '<figure><a href="' + sample.image + '"><img src="' + sample.image + '" alt="' + escapeHtml(sample.alt) + '" width="1800" height="1360"></a><figcaption>Select the image to view the sample at full size.</figcaption></figure></section>';
+    '<figure><a href="' + sample.fullImage + '"><img src="' + sample.image + '" alt="' + escapeHtml(sample.alt) + '" width="' + sample.width + '" height="' + sample.height + '" data-no-priority></a><figcaption>Select the image to view the sample at full size.</figcaption></figure></section>';
   const withIntro = html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>)/i, '$1' + section);
   return withIntro === html ? html.replace(/(<nav class="book-end-nav\b)/i, section + '$1') : withIntro;
 }
@@ -726,9 +752,11 @@ function addContextImageShelf(html, source) {
 
   if (book) {
     const routes = [book.href];
+    // The paired study edition leads the shelf so the four-card cap can never
+    // push a book's own study edition off its page.
     candidates = [
-      ...resourcesFor(routes),
       ...studiesFor(routes),
+      ...resourcesFor(routes),
       ...(discovery.books || []).filter(item => item.collection === book.collection && item.href !== book.href)
     ];
     label = 'For this book';
@@ -858,7 +886,7 @@ function addGlobalNavigation(html, source) {
     <div class="astor-primary-links">
       <a class="nav-link" href="/library/"${current(booksCurrent, href === '/library/')}><span class="astor-nav-number" aria-hidden="true">01</span><span>Books</span></a>
       <details class="astor-browse-menu${browseCurrent ? ' is-current-section' : ''}">
-        <summary aria-controls="astor-browse-panel" aria-expanded="false"><span class="astor-nav-number" aria-hidden="true">02</span><span>Browse library</span></summary>
+        <summary aria-controls="astor-browse-panel"><span class="astor-nav-number" aria-hidden="true">02</span><span>Browse library</span></summary>
         <div class="astor-browse-panel" id="astor-browse-panel">
           <div class="astor-browse-feature">
             <p>Open the catalogue</p>
@@ -920,6 +948,9 @@ function addGlobalNavigation(html, source) {
 }
 
 function prepareHtml(html, source) {
+  // The site publishes British English and stamps en-GB metadata everywhere;
+  // normalise the bare lang="en" used by older source pages to match.
+  html = html.replace(/(<html\b[^>]*\blang=")en(")/i, '$1en-GB$2');
   html = addBookStructuredData(html, source);
   html = addResourceStructuredData(html, source);
   html = addStudyStructuredData(html, source);
@@ -962,6 +993,9 @@ function copyRecursive(source, destination) {
 
   // Local environment files can contain production credentials and never belong in dist.
   if (name === '.dev.vars' || name.startsWith('.dev.vars.') || name === '.env' || name.startsWith('.env.') || name === '.npmrc') return;
+  // The thumbnail manifest is a build-time lookup only; publishing it would also
+  // make every original upload look referenced to the dist image prune below.
+  if (name === 'book-thumbnails.json') return;
   // Presentation files are publishable and remain inside Workers Static Assets.
   // The Worker runs first for this namespace and applies the three-slide account boundary.
 
@@ -993,6 +1027,21 @@ for (const entry of fs.readdirSync(root)) {
   copyRecursive(path.join(root, entry), path.join(outDir, entry));
 }
 
+// The published discovery index drives client-side related-book shelves and
+// search results; point its images at the optimised thumbnails so those
+// features never load multi-megabyte original covers.
+const distDiscoveryFile = path.join(outDir, 'assets', 'content-index.json');
+if (fs.existsSync(distDiscoveryFile)) {
+  const distDiscovery = JSON.parse(fs.readFileSync(distDiscoveryFile, 'utf8'));
+  for (const value of Object.values(distDiscovery)) {
+    if (!Array.isArray(value)) continue;
+    for (const item of value) {
+      if (item && typeof item.image === 'string') item.image = optimisedImage(item.image);
+    }
+  }
+  fs.writeFileSync(distDiscoveryFile, JSON.stringify(distDiscovery, null, 2) + '\n');
+}
+
 const sitemapUrls = [];
 function collectSitemap(directory) {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
@@ -1010,7 +1059,7 @@ function collectSitemap(directory) {
     const imageTitle = html.match(/<meta property="og:title" content="([^"]+)"/i)?.[1] || '';
     sitemapUrls.push({
       url: absoluteUrl(pageHref(path.join(root, path.relative(outDir, fullPath)))),
-      image: image && !/\/Logo\.(?:png|jpe?g|webp)$/i.test(image) ? absoluteUrl(image) : '',
+      image: image && !/\/(?:Logo|assets\/og-logo)\.(?:png|jpe?g|webp)$/i.test(image) ? absoluteUrl(image) : '',
       imageTitle: imageTitle
     });
   }
@@ -1038,6 +1087,19 @@ fs.writeFileSync(path.join(outDir, '_headers'), `# Astor Library static hosting 
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Content-Security-Policy: frame-ancestors 'self'
   X-Frame-Options: SAMEORIGIN
+  Strict-Transport-Security: max-age=31536000
+
+/assets/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/book-thumbs/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/home/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/assets/samples/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
 
 /account/*
   Cache-Control: private, no-store
@@ -1051,4 +1113,44 @@ fs.writeFileSync(path.join(outDir, '_headers'), `# Astor Library static hosting 
   X-Robots-Tag: noindex, noimageindex, noarchive
 `);
 
+// Publish only the root-level images that the generated site still references.
+// The repo root keeps every original upload; readers are served thumbnails, so
+// unreferenced multi-megabyte originals stay out of the deploy entirely.
+const referenceableExtensions = new Set(['.html', '.css', '.js', '.mjs', '.json', '.xml', '.webmanifest', '.txt', '.svg']);
+let referenceText = '';
+(function collectReferenceText(directory) {
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    const fullPath = path.join(directory, entry.name);
+    if (entry.isDirectory()) {
+      collectReferenceText(fullPath);
+      continue;
+    }
+    if (entry.isFile() && referenceableExtensions.has(path.extname(entry.name).toLowerCase())) {
+      referenceText += fs.readFileSync(fullPath, 'utf8') + '\n';
+    }
+  }
+})(outDir);
+
+let prunedCount = 0;
+let prunedBytes = 0;
+for (const entry of fs.readdirSync(outDir)) {
+  if (!/\.(?:png|jpe?g)$/i.test(entry)) continue;
+  const candidates = [
+    entry,
+    encodeURI(entry),
+    encodeURIComponent(entry),
+    entry.replace(/ /g, '%20'),
+    entry.replace(/ /g, '%20').replace(/'/g, '%27'),
+    escapeHtml(entry)
+  ];
+  if (candidates.some(candidate => referenceText.includes(candidate))) continue;
+  const fullPath = path.join(outDir, entry);
+  prunedBytes += fs.statSync(fullPath).size;
+  fs.unlinkSync(fullPath);
+  prunedCount += 1;
+}
+
 console.log('Static site copied to dist/ with ' + sitemapUrls.length + ' preferred addresses and image sitemap metadata.');
+if (prunedCount) {
+  console.log('Left ' + prunedCount + ' unreferenced root images (' + (prunedBytes / 1024 / 1024).toFixed(0) + ' MB) out of dist/.');
+}

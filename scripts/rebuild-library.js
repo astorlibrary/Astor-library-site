@@ -183,6 +183,7 @@ const html = `<!doctype html>
   <section class="catalog-tools" aria-label="Filter the catalogue"><label for="catalog-search">Search by title, author or subject</label><div class="catalog-search-row"><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Hamlet, Dickens or Gothic"><p id="catalog-count" aria-live="polite">${sorted.length} books</p></div><div class="catalog-filters">${filterButtons}</div></section>
   <section class="catalog-grid" aria-label="Astor Library books">${cards}
   </section>
+  <p id="catalog-empty" class="catalog-empty" hidden>No books match that search. Try a different title or author, or <a href="/explore/">search the whole catalogue</a>, which also covers guides, writers and subjects.</p>
 </main>
 <footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, study editions and free literature resources.</p></div><div class="footer-links"><a href="/">Home</a><a href="/subjects/">Subjects</a><a href="/authors/">Writers</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>
 </body></html>`;

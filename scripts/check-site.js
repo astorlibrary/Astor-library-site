@@ -229,7 +229,7 @@ for (const total of [
 }
 const homepageSections = Array.from(homepageMain.matchAll(/^  <section class="([^"]+)"/gm), match => match[1]);
 if (homepageSections.length !== 7 || homepageSections[0] !== 'academic-feature') failures.push('The homepage must contain seven top-level sections beginning with the academic feature');
-for (const sample of ['/Macbeth%20Sample.png', '/Othello%20Study%20Sample.png', '/Rime%20of%20the%20Ancient%20Mariner%20Sample.png', '/Shakespeare%27s%20Sonnets%20Sample.png', '/The%20Odyssey%20Sample.png']) {
+for (const sample of ['/assets/samples/macbeth-sample.jpg', '/assets/samples/othello-study-sample.jpg', '/assets/samples/rime-of-the-ancient-mariner-sample.jpg', '/assets/samples/shakespeare-s-sonnets-sample.jpg', '/assets/samples/the-odyssey-sample.jpg']) {
   if (!homepageMain.includes('src="' + sample + '"')) failures.push('The homepage is missing edition sample ' + sample);
 }
 if (!homepage.includes('mailto:support@astorlibrary.com')) failures.push('The homepage is missing the support email');

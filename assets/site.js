@@ -447,7 +447,9 @@
       const passages = (data.passages || [])
         .filter(item => item.relatedBooks && item.relatedBooks.some(href => normalisePath(href) === currentPath))
         .slice(0, 1);
-      const tools = passages.concat(resources, editions).slice(0, 4);
+      // Keep the paired study edition visible: reserve it the first slot so
+      // passages and resources can never crowd it out of the four-card panel.
+      const tools = editions.slice(0, 1).concat(passages, resources, editions.slice(1)).slice(0, 4);
       const subjects = (data.subjects || [])
         .filter(item => item.relatedBooks && item.relatedBooks.some(href => normalisePath(href) === currentPath));
 

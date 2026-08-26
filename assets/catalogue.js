@@ -3,6 +3,7 @@
   const filters = [...document.querySelectorAll('.catalog-filter')];
   const cards = [...document.querySelectorAll('.catalog-card')];
   const count = document.querySelector('#catalog-count');
+  const empty = document.querySelector('#catalog-empty');
 
   if (!search || !filters.length || !cards.length || !count) return;
 
@@ -21,6 +22,7 @@
     }
 
     count.textContent = `${visible} ${visible === 1 ? 'book' : 'books'}`;
+    if (empty) empty.hidden = visible > 0;
   }
 
   search.addEventListener('input', updateCatalogue);

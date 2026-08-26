@@ -182,7 +182,7 @@
 
 .account-status[data-kind="error"] { border-color: #a12632; background: #f7e7e6; }
 .account-status[data-kind="success"] { border-color: #34614c; background: #e7f1eb; }
-.account-status:focus { outline: 3px solid var(--account-gold); outline-offset: 2px; }
+.account-status:focus { outline: 3px solid var(--account-wine); outline-offset: 2px; }
 .account-loading { min-height: 210px; display: grid; place-items: center; font: 700 14px/1.5 var(--account-sans); }
 
 .account-detail {
@@ -229,7 +229,7 @@
 .account-submit:focus-visible,
 .account-secondary:focus-visible,
 .account-consent:has(input:focus-visible) {
-  outline: 3px solid var(--account-gold);
+  outline: 3px solid var(--account-wine);
   outline-offset: 3px;
 }
 
@@ -653,12 +653,12 @@
 }
 
 .account-toggle:has(input:focus-visible) {
-  outline: 3px solid var(--account-gold);
+  outline: 3px solid var(--account-wine);
   outline-offset: 3px;
 }
 
 .account-toggle input:focus-visible + i {
-  outline: 3px solid var(--account-gold);
+  outline: 3px solid var(--account-wine);
   outline-offset: 3px;
 }
 
@@ -729,7 +729,7 @@
 .account-danger-zone > summary:focus-visible,
 .account-delete-form input:focus-visible,
 .account-danger-button:focus-visible {
-  outline: 3px solid var(--account-gold);
+  outline: 3px solid var(--account-wine);
   outline-offset: 3px;
 }
 

@@ -528,6 +528,12 @@ body {
   outline-color: var(--astor-nav-wine);
 }
 
+.astor-global-header .astor-header-identity a:focus-visible,
+.astor-global-header .astor-header-identity button:focus-visible {
+  outline-color: var(--astor-nav-wine);
+  outline-offset: 3px;
+}
+
 body.is-site-menu-open {
   overflow: hidden;
 }
@@ -916,6 +922,11 @@ body.is-site-menu-open {
 
   .astor-footer-signature {
     grid-column: 1 / -1;
+  }
+
+  .astor-global-header.site-header.site-nav-ready .astor-primary-nav a:focus-visible,
+  .astor-global-header.site-header.site-nav-ready .astor-primary-nav summary:focus-visible {
+    outline-color: var(--astor-nav-wine);
   }
 }
 
