@@ -1089,7 +1089,10 @@ fs.writeFileSync(path.join(outDir, '_headers'), `# Astor Library static hosting 
   X-Frame-Options: SAMEORIGIN
   Strict-Transport-Security: max-age=31536000
 
-/assets/*
+/assets/*.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/*.js
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /assets/book-thumbs/*
