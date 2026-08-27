@@ -4,13 +4,19 @@ const books = require('./edition-update-data');
 // Book-specific section headings live outside the template so the editorial
 // guide's rule against interchangeable headings survives every rebuild.
 const sectionOverrides = require('./edition-section-overrides.json');
+const bookEnrichments = require('./book-enrichment-data');
 
-function sectionTitleBlock(id, kicker, slug) {
+function sectionOverride(id, slug) {
   const section = sectionOverrides[slug]?.[id];
   if (!section || !section.heading) {
     throw new Error('Missing "' + id + '" section heading for "' + slug + '" in scripts/edition-section-overrides.json. ' +
       'Write a book-specific heading and note (EDITORIAL_GUIDE.md forbids template headings).');
   }
+  return section;
+}
+
+function sectionTitleBlock(id, kicker, slug) {
+  const section = sectionOverride(id, slug);
   return '<section class="section-title" id="' + id + '"><p class="kicker">' + kicker + '</p><h2>' + section.heading + '</h2>' +
     (section.note ? '<p>' + section.note + '</p>' : '') + '</section>';
 }
@@ -113,6 +119,32 @@ function paragraphs(values) {
   return values.map(value => '<p>' + escapeHtml(value) + '</p>').join('');
 }
 
+function supportingFigure(image) {
+  return `<figure class="book-document-figure"><img src="${escapeHtml(image.src)}" width="${Number(image.width)}" height="${Number(image.height)}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async"><figcaption><span>${escapeHtml(image.caption)}</span><small>${escapeHtml(image.credit)} · <a href="${escapeHtml(image.sourceUrl)}">Source and image record</a> · ${escapeHtml(image.license)}</small></figcaption></figure>`;
+}
+
+function enrichedBookSections(book, enrichment) {
+  const work = sectionOverride('work', book.slug);
+  const movements = enrichment.movements.map((item, index) => `<article><span>${String(index + 1).padStart(2, '0')}</span><h3>${escapeHtml(item.title)}</h3>${paragraphs(item.body)}</article>`).join('');
+  const closeReadings = enrichment.closeReadings.map(item => `<article><p class="book-reading-phrase">“${escapeHtml(item.phrase)}”</p><h3>${escapeHtml(item.title)}</h3>${paragraphs(item.body)}</article>`).join('');
+  const contexts = enrichment.contexts.map(item => `<article><p class="year">${escapeHtml(item.label)}</p><h3>${escapeHtml(item.title)}</h3>${paragraphs(item.body)}</article>`).join('');
+  const chronology = enrichment.chronology.map(item => `<article><time>${escapeHtml(item.date)}</time><div><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.body)}</p></div></article>`).join('');
+
+  return `<section class="book-editorial-opening" id="work">
+    <div><p class="kicker">Reader’s guide</p><h2>${work.heading}</h2>${work.note ? '<p class="book-editorial-note">' + work.note + '</p>' : ''}</div>
+    <div class="book-editorial-lead"><h3 class="book-editorial-thesis">${escapeHtml(enrichment.heading)}</h3>${paragraphs(enrichment.introduction)}</div>
+  </section>
+  <section class="section-title book-section-heading" id="structure"><p class="kicker">How the work moves</p><h2>${escapeHtml(enrichment.movementHeading)}</h2><p>${escapeHtml(enrichment.movementDeck)}</p></section>
+  <section class="book-movement-grid">${movements}</section>
+  <section class="section-title book-section-heading" id="archive"><p class="kicker">From the archive</p><h2>${escapeHtml(enrichment.archiveHeading)}</h2><p>${escapeHtml(enrichment.archiveDeck)}</p></section>
+  <section class="book-document-gallery">${enrichment.gallery.map(supportingFigure).join('')}</section>
+  <section class="section-title book-section-heading" id="close-reading"><p class="kicker">Close reading</p><h2>${escapeHtml(enrichment.closeReadingHeading)}</h2><p>${escapeHtml(enrichment.closeReadingDeck)}</p></section>
+  <section class="book-close-reading-grid">${closeReadings}</section>
+  <section class="section-title book-section-heading" id="history"><p class="kicker">History and context</p><h2>${escapeHtml(enrichment.contextHeading)}</h2><p>${escapeHtml(enrichment.contextDeck)}</p></section>
+  <section class="book-context-essays">${contexts}</section>
+  <section class="book-chronology" aria-label="${escapeHtml(book.title)} chronology">${chronology}</section>`;
+}
+
 function header() {
   return `<header class="site-header">
   <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="Astor Library torch"><span class="word">LIBRARY</span></a>
@@ -147,6 +179,7 @@ function editionChoice(book) {
 }
 
 function bookPage(book) {
+  const enrichment = bookEnrichments[book.slug];
   const facts = book.facts.map(fact => '<div class="fact"><b>' + escapeHtml(fact.label) + '</b><span>' + escapeHtml(fact.text) + '</span></div>').join('');
   const includes = book.editionIncludes.map(item => '<li>' + escapeHtml(item) + '</li>').join('');
   const openingOne = book.overview.slice(0, 2);
@@ -172,6 +205,18 @@ function bookPage(book) {
     : book.range === 'apocrypha'
       ? 'Specialist Astor annotated edition'
       : 'Main Astor edition';
+  const pageContents = enrichment
+    ? '<a href="#edition">Edition</a><a href="#work">Reader’s guide</a><a href="#structure">Structure</a><a href="#archive">Archive</a><a href="#close-reading">Close reading</a><a href="#history">History</a><a href="#editorial">Edition method</a><a href="#reading">Questions</a><a href="#sources">Sources</a>'
+    : '<a href="#edition">Edition contents</a><a href="#work">About the work</a><a href="#editorial">Text and context</a><a href="#reading">Reading routes</a>';
+  const workSections = enrichment
+    ? enrichedBookSections(book, enrichment)
+    : `${sectionTitleBlock('work', 'About the work', book.slug)}
+  <section class="astor-reading-grid astor-reading-grid-two">${readings}</section>`;
+  const sources = enrichment
+    ? `<section class="section-title book-section-heading" id="sources"><p class="kicker">Sources and further reading</p><h2>${escapeHtml(enrichment.sourcesHeading)}</h2><p>${escapeHtml(enrichment.sourcesDeck)}</p></section><nav class="book-source-grid" aria-label="Sources used for ${escapeHtml(book.title)}">${enrichment.sources.map(source => `<a href="${escapeHtml(source.url)}"><strong>${escapeHtml(source.label)}</strong><span>${escapeHtml(source.note)}</span></a>`).join('')}</nav>`
+    : '';
+  const choiceSection = editionChoice(book);
+  const afterQuestions = enrichment ? [sources, choiceSection].filter(Boolean).join('\n') : choiceSection;
 
   return `<!doctype html>
 <html lang="en-GB">
@@ -180,17 +225,16 @@ function bookPage(book) {
 <main id="main-content" class="page-wrap astor-book-record">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/library/">All books</a><span aria-hidden="true">/</span><a href="${escapeHtml(book.collectionHref)}">${escapeHtml(book.collection)}</a>${rangeCrumb}<span aria-hidden="true">/</span><span aria-current="page">${escapeHtml(book.shortTitle || book.title)}</span></nav>
   <section class="page-intro astor-book-hero"><div><p class="kicker">${escapeHtml(book.author)}</p><h1>${escapeHtml(book.title)}</h1><p class="deck">${escapeHtml(book.deck)}</p></div><aside class="source-note astor-book-cover"><img src="${assetPath(book.image)}" alt="Astor Library ${escapeHtml(book.title)} cover"><div><p><strong>${escapeHtml(book.label)}</strong><br>${editionLevel}</p>${actionButtons(book, false)}</div></aside></section>
-  <nav class="page-contents" aria-label="On this page"><strong>On this page</strong><div><a href="#edition">Edition contents</a><a href="#work">About the work</a><a href="#editorial">Text and context</a><a href="#reading">Reading routes</a>${book.counterpart ? '<a href="#edition-choice-title">Choose an edition</a>' : ''}</div></nav>
+  <nav class="page-contents" aria-label="On this page"><strong>On this page</strong><div>${pageContents}${book.counterpart ? '<a href="#edition-choice-title">Choose an edition</a>' : ''}</div></nav>
   <section class="quick-facts" aria-label="${escapeHtml(book.title)} facts">${facts}</section>
   <section class="section-title" id="edition"><p class="kicker">Edition contents</p><h2>What this Astor edition contains.</h2><p>These features belong to the main edition represented by the cover and purchase link on this page.</p></section>
   <section class="timeline"><article class="edition-card new-edition"><img src="${assetPath(book.image)}" alt="Astor Library ${escapeHtml(book.title)} cover" loading="lazy"><div><p class="year">${escapeHtml(book.label)}</p><h2><em>${escapeHtml(book.shortTitle || book.title)}</em></h2><ul class="edition-includes">${includes}</ul>${actionButtons(book, true)}</div></article></section>
-  ${sectionTitleBlock('work', 'About the work', book.slug)}
-  <section class="astor-reading-grid astor-reading-grid-two">${readings}</section>
+  ${workSections}
   ${sectionTitleBlock('editorial', 'Text and context', book.slug)}
   <section class="astor-context-grid">${contexts}</section>
   ${sectionTitleBlock('reading', 'Reading routes', book.slug)}
   <section class="astor-question-grid">${topics}</section>
-${editionChoice(book)}
+${afterQuestions}
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="${escapeHtml(book.collectionHref)}">More in ${escapeHtml(book.collection)}</a>${book.range === 'apocrypha' ? '<a href="/shakespeare/apocrypha/">All eight Apocrypha volumes</a>' : ''}${book.range === 'expanded' ? '<a href="/shakespeare/expanded-scholarly-editions/">All Expanded Scholarly Editions</a>' : ''}<a href="/explore/">Search the library <span aria-hidden="true">&rarr;</span></a></nav>
 </main>
 <footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, study editions and free literature resources.</p></div><div class="footer-links"><a href="${escapeHtml(book.collectionHref)}">${escapeHtml(book.collection)}</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></div></footer>
@@ -235,8 +279,8 @@ function shakespeareRoutes(active) {
 function updateCollection(relative, additions) {
   const file = path.join(root, relative);
   let html = fs.readFileSync(file, 'utf8');
-  html = html.replace(new RegExp(blockStart + '[\\s\\S]*?' + blockEnd, 'g'), '');
-  html = html.replace(new RegExp(routesStart + '[\\s\\S]*?' + routesEnd, 'g'), '');
+  html = html.replace(new RegExp('\\s*' + blockStart + '[\\s\\S]*?' + blockEnd + '\\s*', 'g'), '\n');
+  html = html.replace(new RegExp('\\s*' + routesStart + '[\\s\\S]*?' + routesEnd + '\\s*', 'g'), '\n');
   const copy = collectionCopy[relative];
   if (copy) {
     html = html

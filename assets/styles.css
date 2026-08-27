@@ -257,10 +257,371 @@
   .study-hero{display:grid!important;grid-template-columns:none!important;grid-auto-flow:column;grid-auto-columns:88%;gap:10px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:inline mandatory;padding-bottom:11px}.study-panel{min-height:255px;padding:22px;scroll-snap-align:start}.study-panel h2{font-size:38px}.study-note-grid{grid-template-columns:1fr 1fr!important;gap:7px}.study-note{padding:9px}.study-note span{font-size:11px}
   .study-grid{gap:9px!important}.study-card{min-height:0;padding:11px;display:grid!important;grid-template-columns:90px minmax(0,1fr)!important;grid-template-rows:auto auto 1fr auto;gap:5px 13px}.study-card img{grid-column:1;grid-row:1/5;width:90px!important;height:130px!important;object-fit:contain}.study-card .mini-kicker,.study-card h3,.study-card p,.study-card .button{grid-column:2}.study-card h3{font-size:21px}.study-card p{font-size:12px;display:-webkit-box;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical}.study-card .button{min-height:36px;padding:0 10px;justify-self:start;font-size:11px}
 
-  .page-contents{margin:27px -15px 39px;padding:16px 15px 14px;box-shadow:none}.page-contents div{display:flex!important;flex-wrap:nowrap;gap:8px;margin-top:10px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:inline proximity;scrollbar-width:none}.page-contents div::-webkit-scrollbar{display:none}.page-contents a{flex:0 0 auto;max-width:210px;min-height:38px;padding:7px 10px;display:flex;align-items:center;border:1px solid rgba(255,248,239,.28);scroll-snap-align:start}
+  .page-contents{margin:27px -15px 39px;padding:16px 15px 14px;box-shadow:none}.page-contents div{display:flex!important;flex-wrap:nowrap;gap:8px;margin-top:10px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:inline proximity;scrollbar-width:none}.page-contents div::-webkit-scrollbar{display:none}.page-contents a{flex:0 0 auto;max-width:210px;min-height:44px;padding:7px 10px;display:flex;align-items:center;border:1px solid rgba(255,248,239,.28);scroll-snap-align:start}
   .section-title{margin-top:42px}.section-title h2{font-size:36px}.timeline{gap:0;border-top:1px solid var(--line)}.prod-card,.prod-card.prose-card{padding:20px 2px;background:transparent;border-width:0 0 1px;border-left:0;box-shadow:none}.prod-card.prose-card p:not(.year),.prod-card p,.prod-card li{font-size:14.5px;line-height:1.62}.prod-card.has-image{gap:16px}.prod-card.has-image figure{margin:0 -2px}.prod-card img{max-height:330px}.prod-card h3{font-size:27px}
   .record-list{grid-template-columns:1fr 1fr!important;gap:8px}.record-list li{padding:13px;font-size:13px;line-height:1.45}.record-list b{font-size:20px}.source-list{gap:8px}.source-list a{padding:13px;font-size:13px}
   .book-end-nav{margin-right:-15px;margin-left:-15px;padding:20px 15px}.site-footer{font-size:13px;line-height:1.5}.footer-links{display:grid;grid-template-columns:1fr 1fr}
+}
+
+/* Rich editorial book records ------------------------------------------------ */
+.book-editorial-opening {
+  margin: 88px 0 72px;
+  padding-top: 34px;
+  display: grid;
+  grid-template-columns: minmax(250px, .7fr) minmax(0, 1.3fr);
+  gap: 72px;
+  border-top: 1px solid var(--line);
+}
+
+.book-editorial-opening h2 {
+  max-width: 500px;
+  margin: 0;
+  font-size: clamp(43px, 5.5vw, 68px);
+  font-weight: 400;
+  line-height: .94;
+  letter-spacing: -.045em;
+}
+
+.book-editorial-note {
+  max-width: 470px;
+  margin: 20px 0 0;
+  color: #5d534c;
+  font: 13.5px/1.65 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.book-editorial-thesis {
+  max-width: 720px;
+  margin: 0 0 24px;
+  color: var(--burgundy);
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 400;
+  line-height: 1.06;
+  letter-spacing: -.025em;
+}
+
+.book-editorial-lead p {
+  max-width: 760px;
+  margin: 0 0 24px;
+  color: #403832;
+  font-size: 18px;
+  line-height: 1.76;
+}
+
+.book-editorial-lead p:first-of-type::first-letter {
+  float: left;
+  margin: 9px 10px 0 0;
+  color: var(--burgundy);
+  font-size: 75px;
+  line-height: .65;
+}
+
+.book-section-heading {
+  max-width: 910px;
+}
+
+.book-movement-grid,
+.book-close-reading-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.book-movement-grid > article,
+.book-close-reading-grid > article {
+  min-width: 0;
+  padding: 30px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 250, 244, .62);
+}
+
+.book-movement-grid > article > span {
+  display: block;
+  margin-bottom: 48px;
+  color: var(--burgundy);
+  font: 900 11px/1 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: .15em;
+}
+
+.book-movement-grid h3,
+.book-close-reading-grid h3,
+.book-context-essays h3,
+.book-chronology h3 {
+  margin: 0 0 17px;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.025em;
+}
+
+.book-movement-grid p,
+.book-close-reading-grid p:not(.book-reading-phrase),
+.book-context-essays p:not(.year),
+.book-chronology p {
+  margin: 0 0 14px;
+  color: #504741;
+  font: 14.5px/1.72 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.book-movement-grid p:last-child,
+.book-close-reading-grid p:last-child,
+.book-context-essays p:last-child {
+  margin-bottom: 0;
+}
+
+.book-document-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.book-document-figure {
+  min-width: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 520px auto;
+  background: #183047;
+  color: #fffaf4;
+}
+
+.book-document-figure img {
+  width: 100%;
+  height: 520px;
+  padding: 28px;
+  display: block;
+  object-fit: contain;
+  background: #e8ded2;
+}
+
+.book-document-figure figcaption {
+  padding: 20px 22px 22px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.book-document-figure figcaption span {
+  display: block;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.book-document-figure figcaption small {
+  display: block;
+  margin-top: 12px;
+  color: #d8cfc6;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.book-document-figure figcaption a {
+  color: #f0d28d;
+}
+
+.book-reading-phrase {
+  min-height: 90px;
+  margin: 0 0 28px;
+  color: var(--burgundy);
+  font-size: clamp(25px, 2.8vw, 38px);
+  font-style: italic;
+  line-height: 1.02;
+  letter-spacing: -.035em;
+}
+
+.book-context-essays {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.book-context-essays article {
+  padding: 30px;
+  background: #eadccb;
+}
+
+.book-context-essays .year {
+  margin-bottom: 32px;
+}
+
+.book-chronology {
+  margin: 34px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.book-chronology article {
+  padding: 19px 0;
+  display: grid;
+  grid-template-columns: minmax(125px, .28fr) minmax(0, 1fr);
+  gap: 34px;
+  border-bottom: 1px solid var(--line);
+}
+
+.book-chronology time {
+  padding-top: 3px;
+  color: var(--burgundy);
+  font: 900 12px/1.35 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.book-chronology h3 {
+  margin-bottom: 7px;
+  font-size: 23px;
+}
+
+.book-chronology p {
+  margin: 0;
+}
+
+.book-source-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.book-source-grid a {
+  min-height: 132px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 250, 244, .72);
+  text-decoration: none;
+}
+
+.book-source-grid a:hover,
+.book-source-grid a:focus-visible {
+  background: #fffaf4;
+  outline: 3px solid var(--burgundy);
+  outline-offset: -3px;
+}
+
+.book-source-grid strong {
+  color: var(--burgundy);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.book-source-grid span {
+  color: #5d534c;
+  font: 12.5px/1.55 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .book-editorial-opening {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .book-context-essays {
+    grid-template-columns: 1fr;
+  }
+
+  .book-context-essays article {
+    padding: 26px;
+  }
+}
+
+@media (max-width: 720px) {
+  .book-document-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .book-editorial-opening {
+    margin: 56px 0 48px;
+    padding-top: 25px;
+    gap: 23px;
+  }
+
+  .book-editorial-opening h2 {
+    font-size: 42px;
+  }
+
+  .book-editorial-note {
+    margin-top: 15px;
+  }
+
+  .book-editorial-thesis {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  .book-editorial-lead p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .book-editorial-lead p:first-of-type::first-letter {
+    font-size: 62px;
+  }
+
+  .book-movement-grid,
+  .book-close-reading-grid,
+  .book-source-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-movement-grid > article,
+  .book-close-reading-grid > article {
+    padding: 24px 2px;
+    border-right: 0;
+    border-left: 0;
+    background: transparent;
+  }
+
+  .book-movement-grid,
+  .book-close-reading-grid {
+    border-left: 0;
+  }
+
+  .book-movement-grid > article > span {
+    margin-bottom: 24px;
+  }
+
+  .book-reading-phrase {
+    min-height: 0;
+    margin-bottom: 18px;
+    font-size: 31px;
+  }
+
+  .book-document-figure {
+    grid-template-rows: 360px auto;
+  }
+
+  .book-document-figure img {
+    height: 360px;
+    padding: 18px;
+  }
+
+  .book-context-essays {
+    gap: 8px;
+  }
+
+  .book-context-essays article {
+    padding: 23px 20px;
+  }
+
+  .book-chronology article {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .book-source-grid {
+    border-left: 0;
+  }
+
+  .book-source-grid a {
+    min-height: 0;
+    padding: 18px 2px;
+    border-right: 0;
+    background: transparent;
+  }
 }
 
 /* The Passage Room: Astor's text-first reading system */
@@ -390,7 +751,7 @@
 
 /* A quiet editorial signature on every book and free-guide page. */
 .astor-page-credit{margin:18px 0 42px;padding:15px 18px;display:flex;gap:24px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:#514842;background:rgba(255,250,244,.56);font:12.5px/1.55 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.astor-page-credit span{max-width:880px}.astor-page-credit b{margin-right:9px;color:#6e1f2b;font-size:10px;letter-spacing:.11em;text-transform:uppercase}.astor-page-credit a{flex:0 0 auto;color:#6e1f2b;font-weight:850;text-decoration:none}.astor-page-credit a:hover{text-decoration:underline}
-@media(max-width:620px){.astor-page-credit{margin:12px 0 32px;padding:14px 2px;display:block;background:transparent}.astor-page-credit b{display:block;margin:0 0 5px}.astor-page-credit a{display:inline-block;margin-top:9px}}
+@media(max-width:620px){.astor-page-credit{margin:12px 0 32px;padding:14px 2px;display:block;background:transparent}.astor-page-credit>span{display:block}.astor-page-credit b{display:block;margin:0 0 5px}.astor-page-credit a{display:inline-block;margin-top:9px}}
 
 /* Homepage: Astor Library opens with its books and reference-library idea. */
 .astor-home-library-hero{grid-template-columns:minmax(0,.95fr) minmax(560px,1.05fr)}.astor-home-library-hero .astor-home-hero-copy h1{max-width:720px;font-size:clamp(72px,7.8vw,118px);line-height:.79}.home-reading-desk{margin:36px 36px 36px 0;display:flex;flex-direction:column;overflow:hidden;background:#eadccb;color:#2d2724;box-shadow:0 22px 56px rgba(0,0,0,.25)}.home-reading-desk-head,.home-reading-desk-foot{min-height:62px;padding:0 25px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid rgba(45,39,36,.22);font:900 9px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.14em;text-transform:uppercase}.home-reading-desk-head b{color:#6e1f2b}.home-desk-covers{position:relative;min-height:570px;overflow:hidden;background:radial-gradient(circle at 50% 42%,rgba(255,250,244,.9),rgba(255,250,244,.16) 48%,transparent 70%),linear-gradient(155deg,#d9c4ae,#eadccb 60%,#d8c1ab)}.home-desk-covers:before{content:'';position:absolute;inset:auto 0 0;height:23%;background:linear-gradient(0deg,rgba(74,55,42,.26),transparent)}.home-desk-covers:after{content:'ASTOR LIBRARY';position:absolute;left:25px;bottom:17px;color:rgba(75,50,45,.2);font-size:43px;letter-spacing:.11em}.home-desk-book{position:absolute;display:block;color:#6e1f2b;text-decoration:none;transition:filter .25s ease,transform .25s ease;animation:astorDeskDrift 7s ease-in-out infinite}.home-desk-book img{display:block;width:100%;box-shadow:0 24px 34px rgba(45,39,36,.34)}.home-desk-book span{position:absolute;right:7px;bottom:7px;padding:5px 7px;background:#fffaf4;color:#6e1f2b;font:900 8px/1 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.07em;text-transform:uppercase}.home-desk-book:hover{z-index:8;filter:saturate(1.08) brightness(1.03)}.home-desk-book-one{z-index:2;left:3%;bottom:41px;width:185px;transform:rotate(-9deg);animation-delay:-1s}.home-desk-book-two{z-index:5;left:28%;top:34px;width:218px;transform:rotate(-2deg);animation-delay:-4s}.home-desk-book-three{z-index:4;right:20%;top:99px;width:190px;transform:rotate(4deg);animation-delay:-2.2s}.home-desk-book-four{z-index:3;right:-1%;bottom:42px;width:174px;transform:rotate(9deg);animation-delay:-5.4s}.home-reading-desk-foot{border-top:1px solid rgba(45,39,36,.22);border-bottom:0}.home-reading-desk-foot p{margin:0;font-family:Georgia,'Times New Roman',serif;font-size:18px;font-weight:400;letter-spacing:0;text-transform:none}.home-reading-desk-foot a{color:#6e1f2b;text-decoration:none}.home-library-doors{max-width:1320px;margin:0 auto 0;padding:72px 0 90px}.home-library-doors-head{padding:0 8px 31px;display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:55px;align-items:end}.home-library-doors-head h2{max-width:850px;margin:0;font-size:clamp(54px,7vw,88px);font-weight:400;line-height:.84;letter-spacing:-.055em}.home-library-door-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}.home-library-door-grid>a{min-height:355px;padding:29px;display:flex;flex-direction:column;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,250,244,.68);color:inherit;text-decoration:none}.home-library-door-grid>a:hover{background:#fffaf4}.home-library-door-grid span{color:#6e1f2b;font:900 10px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.13em;text-transform:uppercase}.home-library-door-grid h3{margin:54px 0 18px;font-size:42px;font-weight:400;line-height:.9}.home-library-door-grid p{margin:0;color:#504741;font:14.5px/1.72 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.home-library-door-grid b{margin-top:auto;padding-top:24px;color:#6e1f2b;font:900 11px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.home-passage-feature{max-width:1320px;margin:0 auto 95px;padding:68px 62px;display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr);gap:68px;background:#6e1f2b;color:#fffaf4}.home-passage-feature .kicker{color:#e4c784}.home-passage-feature-copy h2{margin:0 0 25px;color:#fffaf4;font-size:clamp(58px,7.4vw,92px);font-weight:400;line-height:.82;letter-spacing:-.055em}.home-passage-feature-copy>p:not(.kicker){max-width:570px;color:#f1e4dc;font:15.5px/1.72 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.home-passage-feature-copy .button.primary{margin-top:22px;border-color:#fffaf4;background:#fffaf4;color:#6e1f2b}.home-passage-feature-list{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(255,250,244,.28);border-left:1px solid rgba(255,250,244,.28)}.home-passage-feature-list>a{min-height:260px;padding:24px;display:flex;flex-direction:column;border-right:1px solid rgba(255,250,244,.28);border-bottom:1px solid rgba(255,250,244,.28);color:#fffaf4;text-decoration:none}.home-passage-feature-list>a:hover{background:rgba(255,250,244,.1)}.home-passage-feature-list span{color:#e4c784;font:900 9px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.12em;text-transform:uppercase}.home-passage-feature-list blockquote{margin:35px 0 18px;font-size:28px;line-height:1.02}.home-passage-feature-list b{margin-top:auto;color:#f5eae1;font:800 10px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}

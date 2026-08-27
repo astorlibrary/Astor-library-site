@@ -152,7 +152,7 @@ function catalogueCard(book) {
 function updateCollection(relative, books) {
   const file = path.join(root, relative);
   let html = fs.readFileSync(file, 'utf8');
-  html = html.replace(new RegExp(blockStart + '[\\s\\S]*?' + blockEnd, 'g'), '');
+  html = html.replace(new RegExp('\\s*' + blockStart + '[\\s\\S]*?' + blockEnd + '\\s*', 'g'), '\n');
 
   const copy = collectionCopy[relative];
   if (copy) {
@@ -205,7 +205,7 @@ for (const relative of [
 ]) {
   const file = path.join(root, relative);
   let html = fs.readFileSync(file, 'utf8');
-  html = html.replace(new RegExp(blockStart + '[\\s\\S]*?' + blockEnd, 'g'), '');
+  html = html.replace(new RegExp('\\s*' + blockStart + '[\\s\\S]*?' + blockEnd + '\\s*', 'g'), '\n');
   fs.writeFileSync(file, html);
 }
 for (const [relative, books] of byCollection) updateCollection(relative, books);

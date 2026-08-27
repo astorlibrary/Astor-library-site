@@ -79,7 +79,7 @@ const books = [
   }),
   inCollection('american', {
     slug: 'the-yellow-wallpaper-and-the-giant-wistaria',
-    title: 'The Yellow Wallpaper and the Giant Wistaria',
+    title: 'The Yellow Wall-Paper and The Giant Wistaria',
     author: 'Charlotte Perkins Gilman',
     image: 'The Yellow Paper and The Giant Wistaria Main Cover.png',
     purchaseUrl: 'https://mybook.to/J4dveV',
@@ -95,10 +95,10 @@ const books = [
       { label: 'Seven months apart', text: 'The two stories appeared close together in 1891–92.' },
       { label: 'Shared periodical', text: 'Both were published in The New England Magazine.' },
       { label: 'Textual evidence', text: 'The edition records important differences between surviving versions.' },
-      { label: 'Claims checked', text: 'Frequently repeated statements about The Yellow Wallpaper are examined against evidence.' }
+      { label: 'Claims checked', text: 'Frequently repeated statements about The Yellow Wall-Paper are examined against evidence.' }
     ],
     overview: [
-      'The Yellow Wallpaper and The Giant Wistaria were published only seven months apart in The New England Magazine in 1891–92. Reading them together restores a connection created by their original periodical setting.',
+      'The Yellow Wall-Paper and The Giant Wistaria were published only seven months apart in The New England Magazine in 1891–92. Reading them together restores a connection created by their original periodical setting.',
       'The edition places both stories in Gilman’s historical and biographical world. Concise material explains the rest cure, marriage law and the practical organisation of domestic life.',
       'Victorian wallpaper is treated as a material object and a historical reference, not merely as a modern critical symbol detached from the story’s setting.',
       'Publication history and textual notes record significant differences among surviving versions and separate documented evidence from claims that have acquired authority through repetition.'

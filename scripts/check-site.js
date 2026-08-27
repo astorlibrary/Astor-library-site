@@ -4,6 +4,8 @@ const resourceData = require('./resource-data');
 const authorProfileData = require('./author-profiles');
 const editionUpdateData = require('./edition-update-data');
 const formatReleaseData = require('./format-release-data');
+const bookEnrichments = require('./book-enrichment-data');
+const editionSectionOverrides = require('./edition-section-overrides.json');
 
 const root = process.cwd();
 const SITE_URL = 'https://astorlibrary.com';
@@ -64,6 +66,15 @@ function relative(file) {
 
 function assetPath(file) {
   return '/' + encodeURIComponent(file).replace(/'/g, '%27');
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 function visibleText(html) {
@@ -468,6 +479,18 @@ if (memberships.get('/books/paradise-lost/') !== 'renaissance-early-modern/index
   failures.push('Paradise Lost must be listed only in Renaissance & Early Modern');
 }
 
+const editionSlugs = new Set(editionUpdateData.map(book => book.slug));
+const enrichmentSlugs = Object.keys(bookEnrichments);
+for (const slug of enrichmentSlugs) {
+  if (!editionSlugs.has(slug)) failures.push('The enrichment registry contains an unknown edition slug: ' + slug);
+}
+for (const slug of Object.keys(editionSectionOverrides)) {
+  if (!editionSlugs.has(slug)) failures.push('The edition section overrides contain an unknown edition slug: ' + slug);
+}
+for (const slug of editionSlugs) {
+  if (!editionSectionOverrides[slug]) failures.push('The generated edition is missing its section overrides: ' + slug);
+}
+
 for (const book of editionUpdateData) {
   const href = '/books/' + book.slug + '/';
   const file = path.join(root, 'books', book.slug, 'index.html');
@@ -486,8 +509,62 @@ for (const book of editionUpdateData) {
   if (!html.includes(assetPath(book.image))) failures.push(href + ' is missing its supplied cover');
   if (countMatches(html, /class="fact"/g) !== 4) failures.push(href + ' must contain four checked facts');
   if (countMatches(html, /<li>/g) < 4 || !html.includes('class="edition-includes"')) failures.push(href + ' is missing its edition contents');
-  if (countMatches(html, /class="prod-card prose-card"/g) !== 2) failures.push(href + ' must contain two substantive reading sections');
-  for (const className of ['page-contents', 'quick-facts', 'astor-reading-grid', 'astor-context-grid', 'astor-question-grid', 'book-end-nav']) {
+  const overrides = editionSectionOverrides[book.slug];
+  for (const id of ['work', 'editorial', 'reading']) {
+    const section = overrides?.[id];
+    if (!section?.heading || !section?.note) {
+      failures.push(href + ' is missing its ' + id + ' section heading or note override');
+      continue;
+    }
+    if (!html.includes('<h2>' + section.heading + '</h2>') || !html.includes('<p>' + section.note + '</p>') && !html.includes('<p class="book-editorial-note">' + section.note + '</p>')) {
+      failures.push(href + ' does not preserve its exact ' + id + ' heading and note');
+    }
+  }
+
+  const enrichment = bookEnrichments[book.slug];
+  if (enrichment) {
+    const editorialWords = JSON.stringify({
+      introduction: enrichment.introduction,
+      movements: enrichment.movements,
+      closeReadings: enrichment.closeReadings,
+      contexts: enrichment.contexts,
+      chronology: enrichment.chronology
+    }).replace(/[^A-Za-zÀ-ÖØ-öø-ÿ’'-]+/g, ' ').trim().split(/\s+/).filter(Boolean).length;
+    if (editorialWords < 900) failures.push(href + ' must contain at least 900 words of enriched editorial data');
+    if (!Array.isArray(enrichment.introduction) || enrichment.introduction.length < 2) failures.push(href + ' needs a two-paragraph editorial introduction');
+    if (!enrichment.heading || !enrichment.movementHeading || !enrichment.movementDeck || !enrichment.archiveHeading || !enrichment.archiveDeck || !enrichment.closeReadingHeading || !enrichment.closeReadingDeck || !enrichment.contextHeading || !enrichment.contextDeck || !enrichment.sourcesHeading || !enrichment.sourcesDeck) {
+      failures.push(href + ' has incomplete book-specific long-page headings');
+    }
+    if (!Array.isArray(enrichment.movements) || enrichment.movements.length < 3 || enrichment.movements.some(item => !Array.isArray(item.body) || item.body.length < 2) || countMatches(html, /class="book-movement-grid"/g) !== 1) failures.push(href + ' is missing its structured narrative movement');
+    if (!Array.isArray(enrichment.closeReadings) || enrichment.closeReadings.length < 3 || enrichment.closeReadings.some(item => !Array.isArray(item.body) || item.body.length < 2) || countMatches(html, /class="book-reading-phrase"/g) !== enrichment.closeReadings.length) failures.push(href + ' is missing three developed close readings');
+    if (!Array.isArray(enrichment.contexts) || enrichment.contexts.length < 3 || enrichment.contexts.some(item => !Array.isArray(item.body) || item.body.length < 2) || countMatches(html, /class="book-context-essays"/g) !== 1) failures.push(href + ' is missing historical context essays');
+    if (!Array.isArray(enrichment.chronology) || enrichment.chronology.length < 4 || countMatches(html, /class="book-chronology"/g) !== 1) failures.push(href + ' is missing a checked chronology');
+    if (!Array.isArray(enrichment.gallery) || enrichment.gallery.length < 2 || countMatches(html, /class="book-document-figure"/g) !== enrichment.gallery.length) failures.push(href + ' must contain at least two documentary images');
+    if (!Array.isArray(enrichment.sources) || enrichment.sources.length < 4 || countMatches(html, /class="book-source-grid"/g) !== 1) failures.push(href + ' must contain at least four named sources');
+    for (const id of ['work', 'structure', 'archive', 'close-reading', 'history', 'editorial', 'reading', 'sources']) {
+      if (!html.includes('id="' + id + '"')) failures.push(href + ' is missing the rich-page section #' + id);
+    }
+    for (const image of enrichment.gallery || []) {
+      const imageFile = path.join(root, String(image.src || '').replace(/^\//, ''));
+      if (!fs.existsSync(imageFile)) failures.push(href + ' is missing editorial image ' + image.src);
+      if (!image.alt || !image.caption || !image.credit || !image.license || !/^https:\/\//.test(image.sourceUrl) || !Number.isInteger(image.width) || image.width <= 0 || !Number.isInteger(image.height) || image.height <= 0) failures.push(href + ' has incomplete editorial image metadata for ' + image.src);
+      if (image.src === assetPath(book.image)) failures.push(href + ' uses its cover as a documentary image');
+      const expectedImage = '<img src="' + image.src + '" width="' + image.width + '" height="' + image.height + '" alt="' + escapeHtml(image.alt) + '" loading="lazy" decoding="async">';
+      if (!html.includes(expectedImage)) failures.push(href + ' does not render complete image metadata for ' + image.src);
+      if (!html.includes('href="' + escapeHtml(image.sourceUrl) + '"')) failures.push(href + ' does not render the image record for ' + image.src);
+    }
+    for (const source of enrichment.sources || []) {
+      if (!source.label || !source.note || !/^https:\/\//.test(source.url)) failures.push(href + ' has an incomplete or non-HTTPS source');
+      if (!html.includes('href="' + escapeHtml(source.url) + '"')) failures.push(href + ' does not render source ' + source.url);
+    }
+    if (countMatches(html, /class="prod-card prose-card"/g) !== 0) failures.push(href + ' still contains the retired generic reading cards');
+  } else if (countMatches(html, /class="prod-card prose-card"/g) !== 2) {
+    failures.push(href + ' must contain two substantive reading sections');
+  }
+
+  const requiredClasses = ['page-contents', 'quick-facts', 'astor-context-grid', 'astor-question-grid', 'book-end-nav'];
+  if (!enrichment) requiredClasses.push('astor-reading-grid');
+  for (const className of requiredClasses) {
     if (!html.includes('class="' + className)) failures.push(href + ' is missing ' + className);
   }
 }
