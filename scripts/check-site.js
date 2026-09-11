@@ -249,7 +249,7 @@ if (!fs.existsSync(passageHubFile)) {
 } else {
   const passageHub = fs.readFileSync(passageHubFile, 'utf8');
   if (!passageHub.includes('Annotated passages from classic literature.')) failures.push('The Passage Room is missing its opening statement');
-  if (countMatches(passageHub, /class="passage-card /g) !== 30) failures.push('The Passage Room must open thirty close readings');
+  if (countMatches(passageHub, /class="passage-card /g) !== 42) failures.push('The Passage Room must open forty-two close readings');
 }
 
 const passageRoutes = [
@@ -282,7 +282,19 @@ const passageRoutes = [
   'yellow-wallpaper-got-out-at-last',
   'dracula-children-of-the-night',
   'great-gatsby-boats-against-the-current',
-  'room-of-ones-own-money-and-a-room'
+  'room-of-ones-own-money-and-a-room',
+  'twelfth-night-food-of-love',
+  'midsummer-nights-dream-imagination',
+  'richard-ii-sceptred-isle',
+  'henry-v-band-of-brothers',
+  'merchant-of-venice-hath-not-a-jew-eyes',
+  'duchess-of-malfi-still',
+  'robinson-crusoe-footprint',
+  'scarlet-letter-rose-bush',
+  'tintern-abbey-sense-sublime',
+  'alice-in-wonderland-who-are-you',
+  'dorian-gray-preface',
+  'war-of-the-worlds-opening'
 ];
 for (const route of passageRoutes) {
   const passageFile = path.join(root, 'passage-room', route, 'index.html');
