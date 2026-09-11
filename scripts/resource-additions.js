@@ -271,5 +271,545 @@ module.exports = [
     ],
     note: 'When the play changes tone, do not leave the earlier acts behind. Ask what Bohemia remembers from Sicilia and what the final wonder is unable to restore.',
     relatedBooks: []
+  },
+  {
+    "url": "/presentations/?presentation=pope-lock-and-criticism",
+    "deck": "Explore Pope’s two poems through their versions, reception, poetic machinery and close reading.",
+    "includes": [
+      "The structure and reception of An Essay on Criticism.",
+      "The incident behind The Rape of the Lock and its successive versions.",
+      "Sylphs, ombre, the dressing table and Clarissa.",
+      "Terminology, the ending and the poems’ afterlives."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 17 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Versions",
+        "title": "Follow the revisions",
+        "copy": "Compare the versions of The Rape of the Lock discussed in the slides. What changes when the machinery and Clarissa’s speech enter the poem?"
+      },
+      {
+        "label": "Form",
+        "title": "Read the dressing table",
+        "copy": "Use the dressing-table passage to identify the relationship between ordinary objects and elevated poetic language."
+      },
+      {
+        "label": "Reception",
+        "title": "A poem about judgement",
+        "copy": "Place the structure of An Essay on Criticism beside its reception. How do the responses test the poem’s account of critical judgement?"
+      }
+    ],
+    "note": "Compare the versions of The Rape of the Lock discussed in the slides. What changes when the machinery and Clarissa’s speech enter the poem?"
+  },
+  {
+    "url": "/presentations/?presentation=blackwood-the-willows",
+    "deck": "Read The Willows through its landscape, narrative technique, weird fiction and reception.",
+    "includes": [
+      "The text, plot and origins of the landscape.",
+      "Narrative technique and the willows themselves.",
+      "Weird fiction and Blackwood’s literary position.",
+      "Reception, common misunderstandings and sources."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 11 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Landscape",
+        "title": "Attend to the surroundings",
+        "copy": "Track the descriptions of the river, islands and willows. Which details make the landscape difficult for the travellers to interpret?"
+      },
+      {
+        "label": "Technique",
+        "title": "Measure the uncertainty",
+        "copy": "Separate what the narrator observes from what he fears or infers. How does that gap shape the reading experience?"
+      },
+      {
+        "label": "Genre",
+        "title": "Consider the weird",
+        "copy": "Use the genre discussion to ask what kind of explanation the story invites, withholds or makes impossible."
+      }
+    ],
+    "note": "Track the descriptions of the river, islands and willows. Which details make the landscape difficult for the travellers to interpret?"
+  },
+  {
+    "url": "/presentations/?presentation=arden-of-faversham-1592",
+    "deck": "Explore the murder records, domestic tragedy, characters and authorship questions behind Arden of Faversham.",
+    "includes": [
+      "The killing, its aftermath and Holinshed’s account.",
+      "Petty treason, chronology and domestic tragedy.",
+      "Dick Reede, Black Will, Shakebag and Alice Arden.",
+      "The evidence and limits of authorship attribution."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 15 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Records",
+        "title": "Compare history and drama",
+        "copy": "Compare the killing as recorded in the source material with its treatment in the play. Where does the drama change the emphasis?"
+      },
+      {
+        "label": "Characters",
+        "title": "Follow competing interests",
+        "copy": "Read Alice Arden beside Dick Reede and the hired killers. How do their different interests affect the shape of the tragedy?"
+      },
+      {
+        "label": "Attribution",
+        "title": "Weigh the evidence",
+        "copy": "Separate the authorship evidence presented in the guide from the conclusions drawn from it. Note where the argument remains open."
+      }
+    ],
+    "note": "Compare the killing as recorded in the source material with its treatment in the play. Where does the drama change the emphasis?"
+  },
+  {
+    "url": "/presentations/?presentation=dracula-1897-origins",
+    "deck": "Explore Dracula’s composition through Whitby, Stoker’s reading and notes, narrative form and publication history.",
+    "includes": [
+      "Whitby and Stoker’s documented reading.",
+      "The notes and misconceptions about Vlad the Impaler.",
+      "The documentary form and the Demeter.",
+      "Publication, Powers of Darkness and sources."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 13 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Composition",
+        "title": "Start with the notes",
+        "copy": "Use the surviving notes and reading discussed in the guide to distinguish documented sources from later associations."
+      },
+      {
+        "label": "Form",
+        "title": "Follow the documents",
+        "copy": "Ask how the diaries, letters and other records distribute knowledge. Who can assemble the evidence, and when?"
+      },
+      {
+        "label": "Publication",
+        "title": "Compare the afterlives",
+        "copy": "Read the discussion of Powers of Darkness alongside the publication history. Keep the different texts and their claims distinct."
+      }
+    ],
+    "note": "Use the surviving notes and reading discussed in the guide to distinguish documented sources from later associations."
+  },
+  {
+    "url": "/presentations/?presentation=ancient-mariner-versions-and-gloss",
+    "deck": "Follow Coleridge’s poem through its revisions, marginal gloss, verse form and reception.",
+    "includes": [
+      "The poem’s origins and successive versions.",
+      "The 1798 text and Wordsworth’s 1800 note.",
+      "The marginal gloss and Burnet epigraph.",
+      "Verse form, the turning point and afterlife."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 14 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Versions",
+        "title": "Identify the text",
+        "copy": "Establish which version you are reading before comparing particular words or passages with the guide."
+      },
+      {
+        "label": "Gloss",
+        "title": "Read two voices together",
+        "copy": "Place the marginal gloss beside the corresponding verse. Where do their explanations or tones diverge?"
+      },
+      {
+        "label": "Form",
+        "title": "Listen to the turn",
+        "copy": "Read the turning-point passage aloud and connect its changes in rhythm and language to the Mariner’s experience."
+      }
+    ],
+    "note": "Establish which version you are reading before comparing particular words or passages with the guide."
+  },
+  {
+    "url": "/presentations/?presentation=gogol-overcoat-the-mantle",
+    "deck": "Read Gogol’s story through rank, money, naming, translation and the problem of its ending.",
+    "includes": [
+      "The text, plot and Table of Ranks.",
+      "Akaky’s name, finances and dealings with Petrovitch.",
+      "The Person of Consequence and the ending.",
+      "Translation, literary myths and editorial questions."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 15 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Rank",
+        "title": "Read the social detail",
+        "copy": "Trace the guide’s discussion of names, rank and money. How do these details shape the treatment of Akaky?"
+      },
+      {
+        "label": "Translation",
+        "title": "Compare the titles",
+        "copy": "Use the translation section to examine what is at stake in calling the story The Overcoat or The Mantle."
+      },
+      {
+        "label": "Ending",
+        "title": "Reconsider the earlier story",
+        "copy": "Place the ending beside the account of what Akaky leaves behind. Which earlier judgements does it make harder to sustain?"
+      }
+    ],
+    "note": "Trace the guide’s discussion of names, rank and money. How do these details shape the treatment of Akaky?"
+  },
+  {
+    "url": "/presentations/?presentation=hamlet-three-texts",
+    "deck": "Compare Q1, Q2 and F1 through their differences, the rediscovery of Q1 and debates about textual authority.",
+    "includes": [
+      "The three early texts and the appearance of Q1.",
+      "The speech in Q1 and the 1823 discovery.",
+      "Competing accounts of Q1 and the term “bad quarto”.",
+      "Q2 against F1, sources and common misunderstandings."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 11 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Q1",
+        "title": "Compare the speech",
+        "copy": "Read the Q1 speech beside the version you know. Note differences in wording and placement before judging their effects."
+      },
+      {
+        "label": "Textual history",
+        "title": "Test the explanations",
+        "copy": "Set the guide’s three positions on Q1 beside the evidence offered for each. Which questions remain unresolved?"
+      },
+      {
+        "label": "Editing",
+        "title": "Name your version",
+        "copy": "Use Q1, Q2 and F1 precisely when discussing a textual difference. Avoid treating the three witnesses as interchangeable."
+      }
+    ],
+    "note": "Read the Q1 speech beside the version you know. Note differences in wording and placement before judging their effects."
+  },
+  {
+    "url": "/presentations/?presentation=moby-dick-1851-publication",
+    "deck": "Follow Moby-Dick’s British and American publication, missing Epilogue, sources, reception and revival.",
+    "includes": [
+      "The two publications and the missing Epilogue.",
+      "British reviewers, the title and its hyphen.",
+      "Melville’s whaling, documented sources and Hawthorne.",
+      "The book’s form, early reception and revival."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 13 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Editions",
+        "title": "Read the ending in context",
+        "copy": "Compare the discussion of the missing Epilogue with the British reviews. How does access to an ending affect a reader’s judgement?"
+      },
+      {
+        "label": "Sources",
+        "title": "Distinguish life and reading",
+        "copy": "Keep Melville’s own whaling experience separate from the written sources discussed in the guide."
+      },
+      {
+        "label": "Reception",
+        "title": "Follow changing judgements",
+        "copy": "Place the early reception beside the revival. What different features of the book become central to each account?"
+      }
+    ],
+    "note": "Compare the discussion of the missing Epilogue with the British reviews. How does access to an ending affect a reader’s judgement?"
+  },
+  {
+    "url": "/presentations/?presentation=iliad-samuel-butler",
+    "deck": "Explore Butler’s translation choices alongside the Iliad’s scope, composition and transmission.",
+    "includes": [
+      "The base text and Samuel Butler’s approach to translation.",
+      "English prose style and the use of Roman names.",
+      "The poem’s contents and what falls outside it.",
+      "Composition, transmission and common misunderstandings."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 13 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Translation",
+        "title": "Notice the names",
+        "copy": "Use the discussion of Roman names to identify Butler’s choices before comparing this translation with another version."
+      },
+      {
+        "label": "Scope",
+        "title": "Locate the poem’s boundaries",
+        "copy": "Separate events narrated in the Iliad from events belonging to the wider story of the Trojan War."
+      },
+      {
+        "label": "Transmission",
+        "title": "Follow the text’s survival",
+        "copy": "Read the account of composition beside the account of transmission. What kinds of evidence does each discussion use?"
+      }
+    ],
+    "note": "Use the discussion of Roman names to identify Butler’s choices before comparing this translation with another version."
+  },
+  {
+    "url": "/presentations/?presentation=white-fang-1906",
+    "deck": "Explore White Fang through London’s northern experience, animal perspective and the nature-fakers controversy.",
+    "includes": [
+      "The book and its relationship to London’s other animal fiction.",
+      "London’s North and writing from an animal’s perspective.",
+      "The nature-fakers controversy and London’s reply.",
+      "The novel’s argument and common misunderstandings."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 10 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Structure",
+        "title": "Examine the mirror",
+        "copy": "Use the guide’s comparison with London’s other animal fiction to consider the direction of White Fang’s journey."
+      },
+      {
+        "label": "Perspective",
+        "title": "Read from inside the animal",
+        "copy": "Identify where the narration presents sensation, learned behaviour or human interpretation. How are those distinctions maintained?"
+      },
+      {
+        "label": "Debate",
+        "title": "Read the reply",
+        "copy": "Place the nature-fakers criticism beside London’s response and the passages used to support his position."
+      }
+    ],
+    "note": "Use the guide’s comparison with London’s other animal fiction to consider the direction of White Fang’s journey."
+  },
+  {
+    "url": "/presentations/?presentation=paradise-lost-publication-and-form",
+    "deck": "Explore Paradise Lost through Milton’s circumstances, manuscript, publishing contract, revisions and verse.",
+    "includes": [
+      "Milton’s circumstances and blindness.",
+      "The surviving manuscript and publishing contract.",
+      "Ten books, twelve books, the Arguments and “The Verse”.",
+      "The opening, Satan, terminology and reception."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 13 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Publication",
+        "title": "Read the material evidence",
+        "copy": "Place the manuscript and contract beside the guide’s account of Milton’s circumstances. What can each document establish?"
+      },
+      {
+        "label": "Structure",
+        "title": "Compare ten and twelve",
+        "copy": "Follow the reorganisation from ten books to twelve. Ask how divisions and Arguments guide a reader through the poem."
+      },
+      {
+        "label": "Reading",
+        "title": "Attend to the opening",
+        "copy": "Read the opening beside the discussion of Satan and reception. Distinguish the poem’s words from the responses they have prompted."
+      }
+    ],
+    "note": "Place the manuscript and contract beside the guide’s account of Milton’s circumstances. What can each document establish?"
+  },
+  {
+    "url": "/presentations/?presentation=duchess-of-malfi-1623",
+    "deck": "Explore Webster’s play through its title page, historical sources, cast list, indoor staging and tragic structure.",
+    "includes": [
+      "The printed book and its title-page claims.",
+      "The historical Duchess and the story’s route to London.",
+      "The cast list, productions and indoor stage.",
+      "The Duchess, Bosola, Act IV and contemporary response."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 14 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Print",
+        "title": "Read the title page",
+        "copy": "Examine what the title page says about the relationship between the printed text and the performed play."
+      },
+      {
+        "label": "Performance",
+        "title": "Use the cast list",
+        "copy": "Follow how the guide uses actors’ names to discuss productions. Distinguish documentary evidence from inference."
+      },
+      {
+        "label": "Structure",
+        "title": "Follow the play beyond Act IV",
+        "copy": "Consider what remains for the drama to do after the Duchess’s death, and how Bosola affects that movement."
+      }
+    ],
+    "note": "Examine what the title page says about the relationship between the printed text and the performed play."
+  },
+  {
+    "url": "/presentations/?presentation=king-lear-two-texts",
+    "deck": "Compare King Lear’s early texts, editorial conflation, source changes and the stage afterlife of its ending.",
+    "includes": [
+      "The two texts and a printing with a false date.",
+      "Textual differences and the costs of conflation.",
+      "Arguments for and against treating the texts separately.",
+      "Shakespeare’s sources, Nahum Tate and the ending."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 13 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Witnesses",
+        "title": "Identify the differences",
+        "copy": "Compare the passages and scenes discussed in the guide before deciding what the differences imply."
+      },
+      {
+        "label": "Editing",
+        "title": "Examine conflation",
+        "copy": "Ask what an editor gains or loses by combining readings from different texts. State which edition supports your own argument."
+      },
+      {
+        "label": "Afterlife",
+        "title": "Follow the ending",
+        "copy": "Place Shakespeare’s treatment of his sources beside the discussion of Tate. How does each ending redirect the audience’s judgement?"
+      }
+    ],
+    "note": "Compare the passages and scenes discussed in the guide before deciding what the differences imply."
+  },
+  {
+    "url": "/presentations/?presentation=macbeth-folio-and-middleton",
+    "deck": "Examine Macbeth’s Folio text, dating evidence, possible Middleton contributions, sources and royal context.",
+    "includes": [
+      "The surviving text and the evidence for dating.",
+      "Thomas Middleton and the effects of interpolation.",
+      "Simon Forman’s account and Holinshed.",
+      "Shakespeare’s changes, James and common misunderstandings."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 10 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Evidence",
+        "title": "Distinguish the witnesses",
+        "copy": "Read the Folio discussion beside Simon Forman’s account. What can a printed text and a performance report each tell us?"
+      },
+      {
+        "label": "Attribution",
+        "title": "Consider the interpolations",
+        "copy": "Follow the evidence offered for Middleton’s contributions and consider how the passages affect the play around them."
+      },
+      {
+        "label": "Sources",
+        "title": "Track the changes",
+        "copy": "Compare the treatment of Holinshed with the discussion of James. Support claims about political context with the specific changes identified."
+      }
+    ],
+    "note": "Read the Folio discussion beside Simon Forman’s account. What can a printed text and a performance report each tell us?"
+  },
+  {
+    "url": "/presentations/?presentation=puddnhead-wilson-1894",
+    "deck": "Explore Pudd’nhead Wilson’s composition, racial classifications, fingerprints, courtroom and unsettled justice.",
+    "includes": [
+      "The novel’s origins and the physical book.",
+      "Roxy and the language of racial fractions.",
+      "Fingerprints, the courtroom and justice.",
+      "Pudd’nhead Wilson’s Calendar and common misunderstandings."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 13 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Composition",
+        "title": "Follow the separation",
+        "copy": "Read the account of the novel’s origins beside the physical book. How does the guide explain the relationship between the separated narratives?"
+      },
+      {
+        "label": "Classification",
+        "title": "Attend to the fractions",
+        "copy": "Examine the language of racial fractions in relation to Roxy. What assumptions do those classifications ask characters to accept?"
+      },
+      {
+        "label": "Justice",
+        "title": "Question the verdict",
+        "copy": "Separate what the fingerprint evidence establishes from what the ending resolves. Does discovery produce justice for each character?"
+      }
+    ],
+    "note": "Read the account of the novel’s origins beside the physical book. How does the guide explain the relationship between the separated narratives?"
+  },
+  {
+    "url": "/presentations/?presentation=othello-two-texts",
+    "deck": "Compare Othello’s quarto and Folio texts through variant words, oaths, censorship, sources and performances.",
+    "includes": [
+      "The two texts and their differences.",
+      "Oaths and the legislation discussed in the guide.",
+      "A disputed reading and Cinthio’s story.",
+      "Early performances and common misunderstandings."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 9 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Variants",
+        "title": "Compare the wording",
+        "copy": "Record the quarto and Folio readings separately before explaining the dramatic effect of a difference."
+      },
+      {
+        "label": "Censorship",
+        "title": "Read the oaths",
+        "copy": "Use the discussion of the law to consider the altered oaths. Keep the legislative context distinct from other possible causes of revision."
+      },
+      {
+        "label": "Sources",
+        "title": "Return to Cinthio",
+        "copy": "Compare the source story with the play’s treatment of it, using the precise points identified in the guide."
+      }
+    ],
+    "note": "Record the quarto and Folio readings separately before explaining the dramatic effect of a difference."
+  },
+  {
+    "url": "/presentations/?presentation=sir-thomas-more-manuscript",
+    "deck": "Explore the Sir Thomas More manuscript through its hands, censorship, riot scenes and attribution evidence.",
+    "includes": [
+      "The manuscript as an object and its different hands.",
+      "The censor and the Ill May Day riot.",
+      "Hand D and the evidence and limits of attribution.",
+      "Unsettled dating and the rest of the play."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 13 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Manuscript",
+        "title": "Look at the hands",
+        "copy": "Identify the different contributions described in the guide. How does a manuscript preserve evidence that a printed text may conceal?"
+      },
+      {
+        "label": "Censorship",
+        "title": "Read the objections",
+        "copy": "Place the censor’s interventions beside the discussion of the riot. What theatrical or political concerns do they identify?"
+      },
+      {
+        "label": "Attribution",
+        "title": "Keep the limits visible",
+        "copy": "Read the case for Hand D’s attribution alongside the guide’s qualifications, and distinguish it from questions about the whole play."
+      }
+    ],
+    "note": "Identify the different contributions described in the guide. How does a manuscript preserve evidence that a printed text may conceal?"
+  },
+  {
+    "url": "/presentations/?presentation=moonstone-1868",
+    "deck": "Explore The Moonstone through its composition, narrators, historical prologue, detection and reception.",
+    "includes": [
+      "The book’s composition and its narrators.",
+      "Narrative structure and the historical prologue.",
+      "Collins’s preface, Sergeant Cuff and the Shivering Sand.",
+      "The novel’s place in detective fiction and its reception."
+    ],
+    "sectionHeading": "Reading the text and its history.",
+    "sectionIntro": "Use these questions alongside the 14 illustrated slides and the work itself.",
+    "readings": [
+      {
+        "label": "Narration",
+        "title": "Compare the accounts",
+        "copy": "Track what each narrator knows, omits or interprets. How does the sequence of accounts change the evidence available to the reader?"
+      },
+      {
+        "label": "History",
+        "title": "Read the prologue",
+        "copy": "Place the prologue beside the guide’s discussion of documented history and Collins’s own preface."
+      },
+      {
+        "label": "Detection",
+        "title": "Follow Cuff’s reading",
+        "copy": "Compare Sergeant Cuff’s treatment of details with the narrators’ explanations, then consider the guide’s account of the novel’s reception."
+      }
+    ],
+    "note": "Track what each narrator knows, omits or interprets. How does the sequence of accounts change the evidence available to the reader?"
   }
 ];

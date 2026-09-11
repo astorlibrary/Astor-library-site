@@ -203,48 +203,40 @@ for (const file of htmlFiles) {
 }
 
 const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-const homepageMain = homepage.match(/<main class="working-catalogue"[\s\S]*?<\/main>/i)?.[0] || '';
+const homepageMain = homepage.match(/<main class="home"[\s\S]*?<\/main>/i)?.[0] || '';
 if (!homepage.includes('/assets/home.css')) failures.push('The homepage is missing its lightweight stylesheet');
 if (!homepage.includes('/assets/navigation.css')) failures.push('The homepage is missing the shared navigation stylesheet');
 if (!homepage.includes('class="site-header astor-global-header')) failures.push('The homepage is missing the shared header');
 if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failures.push('The homepage is missing the grouped footer');
-if (!homepageMain.includes('Complete classic texts with introductions, summaries and explanatory notes.')) failures.push('The homepage is missing its factual edition description');
-if (!homepageMain.includes('id="home-search"')) failures.push('The homepage is missing its immediate library search');
-if (!homepageMain.includes('class="catalogue-sample-grid"')) failures.push('The homepage is missing its edition samples');
-if (!homepageMain.includes('class="catalogue-index-rows"')) failures.push('The homepage is missing its clear starting points');
-if (!homepageMain.includes('class="catalogue-find-rows"')) failures.push('The homepage is missing its browse routes');
-if (!homepageMain.includes('class="catalogue-reading-room"')) failures.push('The homepage is missing its reading room');
-if (!homepageMain.includes('class="catalogue-colophon"')) failures.push('The homepage is missing the Astor history');
-const academicFeature = homepageMain.match(/<section class="academic-feature"[\s\S]*?<\/section>/i)?.[0] || '';
-if (!academicFeature) failures.push('The homepage is missing its new-academic-year feature');
-if (!academicFeature.includes('Begin with the text.')) failures.push('The homepage academic feature is missing its editorial title');
-if (!academicFeature.includes('The new academic year')) failures.push('The homepage academic feature is missing its seasonal context');
-if (!academicFeature.includes('Back to school') || !academicFeature.includes('Late August &mdash; September')) failures.push('The homepage academic feature does not read as an August–September back-to-school programme');
-for (const className of ['academic-season-masthead', 'academic-season-shelf', 'academic-route-block']) {
-  if (!academicFeature.includes('class="' + className + '"')) failures.push('The homepage academic feature is missing its structured ' + className + ' section');
+if (!homepageMain.includes('complete texts with introductions, summaries and explanatory notes.')) failures.push('The homepage is missing its factual edition description');
+for (const className of ['home-tiles', 'home-book-list', 'home-sample-grid', 'home-free-list', 'home-browse-cols', 'home-colophon-name']) {
+  if (!homepageMain.includes('class="' + className + '"')) failures.push('The homepage is missing its ' + className + ' section');
 }
-if (countMatches(academicFeature, /class="academic-cover-table"[\s\S]*?<\/nav>/g) !== 1 || countMatches(academicFeature.match(/class="academic-cover-table"[\s\S]*?<\/nav>/)?.[0] || '', /<a href=/g) !== 4) {
-  failures.push('The homepage academic feature must present four selected books and resources');
+const autumnFeature = homepageMain.match(/<section class="autumn-feature"[\s\S]*?<\/section>/i)?.[0] || '';
+if (!autumnFeature.includes('Autumn <em>at</em> Astor.')) failures.push('The homepage is missing its Autumn at Astor feature');
+if (!autumnFeature.includes('September &mdash; November')) failures.push('The homepage autumn feature is missing its seasonal context');
+const autumnShelf = autumnFeature.match(/<nav class="autumn-shelf"[\s\S]*?<\/nav>/i)?.[0] || '';
+if (countMatches(autumnShelf, /<a href=/g) !== 6) failures.push('The homepage autumn shelf must present six selected books');
+for (const slug of ['frankenstein', 'dracula', 'wuthering-heights', 'victorian-ghost-stories', 'a-victorian-bonfire-night', 'doctor-faustus']) {
+  if (!autumnShelf.includes('href="/books/' + slug + '/"')) failures.push('The homepage autumn shelf is missing ' + slug);
 }
-for (const href of ['/library/', '/shakespeare/', '/study/', '/resources/']) {
-  if (!academicFeature.includes('href="' + href + '"')) failures.push('The homepage academic feature is missing ' + href);
-}
-if (/Summer at Astor|class="seasonal-feature"|6 July(?:&ndash;|–|-)16 August/i.test(homepageMain)) failures.push('The homepage still contains its retired summer feature');
+if (/Summer at Astor|class="seasonal-feature"|class="academic-feature"/i.test(homepageMain)) failures.push('The homepage still contains a retired seasonal feature');
 for (const total of [
-  '<strong>' + sourceBookFiles.length + '</strong><span>books</span>',
-  '<strong>' + studyEditionCount + '</strong><span>study editions</span>',
-  '<strong>' + resourceData.length + '</strong><span>free guides</span>',
-  '<strong>' + closeReadingCount + '</strong><span>close readings</span>'
+  sourceBookFiles.length + ' complete novels, plays and poems',
+  'All ' + sourceBookFiles.length + ' books &rarr;',
+  studyEditionCount + ' editions with summaries',
+  resourceData.length + ' guides and ' + closeReadingCount + ' annotated passages',
+  'href="/resources/">All ' + resourceData.length + ' &rarr;'
 ]) {
   if (!homepageMain.includes(total)) failures.push('The homepage is missing its current catalogue total: ' + total);
 }
 const homepageSections = Array.from(homepageMain.matchAll(/^  <section class="([^"]+)"/gm), match => match[1]);
-if (homepageSections.length !== 7 || homepageSections[0] !== 'academic-feature') failures.push('The homepage must contain seven top-level sections beginning with the academic feature');
-for (const sample of ['/assets/samples/macbeth-sample.jpg', '/assets/samples/othello-study-sample.jpg', '/assets/samples/rime-of-the-ancient-mariner-sample.jpg', '/assets/samples/shakespeare-s-sonnets-sample.jpg', '/assets/samples/the-odyssey-sample.jpg']) {
+if (homepageSections.length !== 7 || homepageSections[0] !== 'autumn-feature') failures.push('The homepage must contain seven top-level sections beginning with the autumn feature');
+for (const sample of ['/assets/samples/macbeth-sample.jpg', '/assets/samples/othello-study-sample.jpg', '/assets/samples/rime-of-the-ancient-mariner-sample.jpg', '/assets/samples/the-odyssey-sample.jpg']) {
   if (!homepageMain.includes('src="' + sample + '"')) failures.push('The homepage is missing edition sample ' + sample);
 }
 if (!homepage.includes('mailto:support@astorlibrary.com')) failures.push('The homepage is missing the support email');
-for (const href of ['/library/', '/hardbacks/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/', '/account/', '/privacy/']) {
+for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/', '/account/', '/privacy/']) {
   if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
 }
 if (!homepage.includes('class="astor-browse-menu"')) failures.push('The homepage is missing its grouped Browse disclosure');

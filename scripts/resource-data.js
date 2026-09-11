@@ -457,6 +457,288 @@ const resources = [
     url: '/presentations/?presentation=great-gatsby-notes-critical-reading',
     relatedBooks: ['/books/the-great-gatsby/'],
     tags: ['The Great Gatsby', 'Critical reading']
+  },
+  {
+    "category": "poetry",
+    "title": "Alexander Pope: The Rape of the Lock and An Essay on Criticism",
+    "titleHtml": "Alexander Pope: The Rape of the Lock and An Essay on Criticism",
+    "description": "Explore Pope’s two poems through their versions, reception, poetic machinery and close reading.",
+    "image": "pope-lock-and-criticism-cover.png",
+    "url": "/presentations/?presentation=pope-lock-and-criticism",
+    "legacyRoute": "/resources/poetry/pope-lock-and-criticism/",
+    "relatedBooks": [],
+    "tags": [
+      "Alexander Pope",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "modern",
+    "title": "Algernon Blackwood: The Willows (1907)",
+    "titleHtml": "Algernon Blackwood: The Willows (1907)",
+    "description": "Read The Willows through its landscape, narrative technique, weird fiction and reception.",
+    "image": "blackwood-the-willows-cover.png",
+    "url": "/presentations/?presentation=blackwood-the-willows",
+    "legacyRoute": "/resources/modern/blackwood-the-willows/",
+    "relatedBooks": [],
+    "tags": [
+      "Algernon Blackwood",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "renaissance-early-modern",
+    "title": "Arden of Faversham (1592)",
+    "titleHtml": "Arden of Faversham (1592)",
+    "description": "Explore the murder records, domestic tragedy, characters and authorship questions behind Arden of Faversham.",
+    "image": "arden-of-faversham-1592-cover.png",
+    "url": "/presentations/?presentation=arden-of-faversham-1592",
+    "legacyRoute": "/resources/renaissance-early-modern/arden-of-faversham-1592/",
+    "relatedBooks": [
+      "/books/arden-of-faversham/"
+    ],
+    "tags": [
+      "Arden of Faversham (1592)",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "victorian",
+    "title": "Bram Stoker: Dracula (1897), Notes and Origins",
+    "titleHtml": "Bram Stoker: Dracula (1897), Notes and Origins",
+    "description": "Explore Dracula’s composition through Whitby, Stoker’s reading and notes, narrative form and publication history.",
+    "image": "dracula-1897-origins-cover.png",
+    "url": "/presentations/?presentation=dracula-1897-origins",
+    "legacyRoute": "/resources/victorian/dracula-1897-origins/",
+    "relatedBooks": [
+      "/books/dracula/"
+    ],
+    "tags": [
+      "Bram Stoker",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "poetry",
+    "title": "The Rime of the Ancient Mariner: Versions and Gloss",
+    "titleHtml": "The Rime of the Ancient Mariner: Versions and Gloss",
+    "description": "Follow Coleridge’s poem through its revisions, marginal gloss, verse form and reception.",
+    "image": "ancient-mariner-versions-and-gloss-cover.png",
+    "url": "/presentations/?presentation=ancient-mariner-versions-and-gloss",
+    "legacyRoute": "/resources/poetry/ancient-mariner-versions-and-gloss/",
+    "relatedBooks": [
+      "/books/the-rime-of-the-ancient-mariner/"
+    ],
+    "tags": [
+      "The Rime of the Ancient Mariner",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "victorian",
+    "title": "Gogol: The Overcoat and The Mantle",
+    "titleHtml": "Gogol: The Overcoat and The Mantle",
+    "description": "Read Gogol’s story through rank, money, naming, translation and the problem of its ending.",
+    "image": "gogol-overcoat-the-mantle-cover.png",
+    "url": "/presentations/?presentation=gogol-overcoat-the-mantle",
+    "legacyRoute": "/resources/victorian/gogol-overcoat-the-mantle/",
+    "relatedBooks": [],
+    "tags": [
+      "Gogol",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "shakespeare",
+    "title": "Hamlet: Three Texts",
+    "titleHtml": "Hamlet: Three Texts",
+    "description": "Compare Q1, Q2 and F1 through their differences, the rediscovery of Q1 and debates about textual authority.",
+    "image": "hamlet-three-texts-cover.png",
+    "url": "/presentations/?presentation=hamlet-three-texts",
+    "legacyRoute": "/resources/shakespeare/hamlet-three-texts/",
+    "relatedBooks": [
+      "/books/hamlet/",
+      "/books/hamlet-expanded-scholarly-edition/"
+    ],
+    "tags": [
+      "Hamlet",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "american",
+    "title": "Moby-Dick (1851): Publication and Revival",
+    "titleHtml": "Moby-Dick (1851): Publication and Revival",
+    "description": "Follow Moby-Dick’s British and American publication, missing Epilogue, sources, reception and revival.",
+    "image": "moby-dick-1851-publication-cover.png",
+    "url": "/presentations/?presentation=moby-dick-1851-publication",
+    "legacyRoute": "/resources/american/moby-dick-1851-publication/",
+    "relatedBooks": [
+      "/books/moby-dick/"
+    ],
+    "tags": [
+      "Moby-Dick (1851)",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "ancient-epic",
+    "title": "The Iliad in Samuel Butler’s Prose",
+    "titleHtml": "The Iliad in Samuel Butler’s Prose",
+    "description": "Explore Butler’s translation choices alongside the Iliad’s scope, composition and transmission.",
+    "image": "iliad-samuel-butler-cover.png",
+    "url": "/presentations/?presentation=iliad-samuel-butler",
+    "legacyRoute": "/resources/ancient-epic/iliad-samuel-butler/",
+    "relatedBooks": [
+      "/books/the-iliad/"
+    ],
+    "tags": [
+      "The Iliad in Samuel Butler’s Prose",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "american",
+    "title": "Jack London: White Fang (1906)",
+    "titleHtml": "Jack London: White Fang (1906)",
+    "description": "Explore White Fang through London’s northern experience, animal perspective and the nature-fakers controversy.",
+    "image": "white-fang-1906-cover.png",
+    "url": "/presentations/?presentation=white-fang-1906",
+    "legacyRoute": "/resources/american/white-fang-1906/",
+    "relatedBooks": [],
+    "tags": [
+      "Jack London",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "poetry",
+    "title": "Paradise Lost: Publication and Form",
+    "titleHtml": "Paradise Lost: Publication and Form",
+    "description": "Explore Paradise Lost through Milton’s circumstances, manuscript, publishing contract, revisions and verse.",
+    "image": "paradise-lost-publication-and-form-cover.png",
+    "url": "/presentations/?presentation=paradise-lost-publication-and-form",
+    "legacyRoute": "/resources/poetry/paradise-lost-publication-and-form/",
+    "relatedBooks": [
+      "/books/paradise-lost/"
+    ],
+    "tags": [
+      "Paradise Lost",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "renaissance-early-modern",
+    "title": "The Duchess of Malfi (1623): Print and Performance",
+    "titleHtml": "The Duchess of Malfi (1623): Print and Performance",
+    "description": "Explore Webster’s play through its title page, historical sources, cast list, indoor staging and tragic structure.",
+    "image": "duchess-of-malfi-1623-cover.png",
+    "url": "/presentations/?presentation=duchess-of-malfi-1623",
+    "legacyRoute": "/resources/renaissance-early-modern/duchess-of-malfi-1623/",
+    "relatedBooks": [
+      "/books/the-duchess-of-malfi/"
+    ],
+    "tags": [
+      "The Duchess of Malfi (1623)",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "shakespeare",
+    "title": "King Lear: Two Plays, One Title",
+    "titleHtml": "King Lear: Two Plays, One Title",
+    "description": "Compare King Lear’s early texts, editorial conflation, source changes and the stage afterlife of its ending.",
+    "image": "king-lear-two-texts-cover.png",
+    "url": "/presentations/?presentation=king-lear-two-texts",
+    "legacyRoute": "/resources/shakespeare/king-lear-two-texts/",
+    "relatedBooks": [
+      "/books/king-lear/",
+      "/books/king-lear-expanded-scholarly-edition/"
+    ],
+    "tags": [
+      "King Lear",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "shakespeare",
+    "title": "Macbeth: The Folio Text and Middleton’s Hand",
+    "titleHtml": "Macbeth: The Folio Text and Middleton’s Hand",
+    "description": "Examine Macbeth’s Folio text, dating evidence, possible Middleton contributions, sources and royal context.",
+    "image": "macbeth-folio-and-middleton-cover.png",
+    "url": "/presentations/?presentation=macbeth-folio-and-middleton",
+    "legacyRoute": "/resources/shakespeare/macbeth-folio-and-middleton/",
+    "relatedBooks": [
+      "/books/macbeth/",
+      "/books/macbeth-expanded-scholarly-edition/"
+    ],
+    "tags": [
+      "Macbeth",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "american",
+    "title": "Mark Twain: Pudd’nhead Wilson (1894)",
+    "titleHtml": "Mark Twain: Pudd’nhead Wilson (1894)",
+    "description": "Explore Pudd’nhead Wilson’s composition, racial classifications, fingerprints, courtroom and unsettled justice.",
+    "image": "puddnhead-wilson-1894-cover.png",
+    "url": "/presentations/?presentation=puddnhead-wilson-1894",
+    "legacyRoute": "/resources/american/puddnhead-wilson-1894/",
+    "relatedBooks": [],
+    "tags": [
+      "Mark Twain",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "shakespeare",
+    "title": "Othello: Two Texts and the Words the Law Removed",
+    "titleHtml": "Othello: Two Texts and the Words the Law Removed",
+    "description": "Compare Othello’s quarto and Folio texts through variant words, oaths, censorship, sources and performances.",
+    "image": "othello-two-texts-cover.png",
+    "url": "/presentations/?presentation=othello-two-texts",
+    "legacyRoute": "/resources/shakespeare/othello-two-texts/",
+    "relatedBooks": [
+      "/books/othello/",
+      "/books/othello-expanded-scholarly-edition/"
+    ],
+    "tags": [
+      "Othello",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "renaissance-early-modern",
+    "title": "Sir Thomas More: The Censored Manuscript",
+    "titleHtml": "Sir Thomas More: The Censored Manuscript",
+    "description": "Explore the Sir Thomas More manuscript through its hands, censorship, riot scenes and attribution evidence.",
+    "image": "sir-thomas-more-manuscript-cover.png",
+    "url": "/presentations/?presentation=sir-thomas-more-manuscript",
+    "legacyRoute": "/resources/renaissance-early-modern/sir-thomas-more-manuscript/",
+    "relatedBooks": [
+      "/books/sir-thomas-more/"
+    ],
+    "tags": [
+      "Sir Thomas More",
+      "Text and publication"
+    ]
+  },
+  {
+    "category": "victorian",
+    "title": "Wilkie Collins: The Moonstone (1868)",
+    "titleHtml": "Wilkie Collins: The Moonstone (1868)",
+    "description": "Explore The Moonstone through its composition, narrators, historical prologue, detection and reception.",
+    "image": "moonstone-1868-cover.png",
+    "url": "/presentations/?presentation=moonstone-1868",
+    "legacyRoute": "/resources/victorian/moonstone-1868/",
+    "relatedBooks": [
+      "/books/the-moonstone/"
+    ],
+    "tags": [
+      "Wilkie Collins",
+      "Text and publication"
+    ]
   }
 ];
 

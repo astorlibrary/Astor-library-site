@@ -232,13 +232,13 @@ test('the migration enforces private ownership, uniqueness, cascade and scoped d
 });
 
 test('the database integrity catalogue exactly matches the presentation catalogue', () => {
-  const sql = fs.readFileSync(
-    new URL('../supabase/migrations/202608110002_resource_library.sql', import.meta.url),
-    'utf8'
-  );
-  const entries = Array.from(sql.matchAll(/\('([a-z0-9-]+)',\s*(\d+)\)/g), match => [match[1], Number(match[2])]);
+  const directory = new URL('../supabase/migrations/', import.meta.url);
+  const sql = fs.readdirSync(directory).filter(name => name.endsWith('.sql')).sort()
+    .map(name => fs.readFileSync(new URL(name, directory), 'utf8')).join('\n');
+  const catalogInserts = Array.from(sql.matchAll(/insert into public\.resource_catalogue\s*\(resource_id,\s*slide_count\)\s*values([\s\S]*?);/gi), match => match[1]);
+  const entries = catalogInserts.flatMap(block => Array.from(block.matchAll(/\('([a-z0-9-]+)',\s*(\d+)\)/g), match => [match[1], Number(match[2])]));
   const expected = Object.fromEntries(Object.entries(presentations).map(([id, item]) => [id, item.slideCount]));
-  assert.equal(entries.length, Object.keys(expected).length);
+  assert.equal(new Set(entries.map(([id]) => id)).size, Object.keys(expected).length);
   assert.deepEqual(Object.fromEntries(entries), expected);
   assert.match(sql, /revoke all on table public\.resource_catalogue from anon, authenticated/i);
 });

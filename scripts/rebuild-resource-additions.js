@@ -38,6 +38,14 @@ function presentationCatalog() {
 const presentationsBySlug = presentationCatalog();
 
 const categories = {
+  'ancient-epic': {
+    label: 'Ancient & Epic',
+    use: 'Identify the translation and compare its choices with the poem’s language, narrative scope and history of transmission.'
+  },
+  'renaissance-early-modern': {
+    label: 'Renaissance & Early Modern',
+    use: 'Read the dramatic text alongside the evidence of print, manuscript, sources and performance.'
+  },
   shakespeare: {
     label: 'Shakespeare',
     use: 'Check each claim against the scene. Identify the speaker, listener, dramatic situation and action produced by the speech.'

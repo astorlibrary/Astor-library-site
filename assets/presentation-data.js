@@ -176,7 +176,115 @@ const presentationRecords = {
   'king-lear-summary-analysis': { title: 'King Lear: Summary Guide', folder: '/assets/presentations/king-lear-summary-analysis/', backdrop: '/assets/presentation-backdrops/king-lear.jpg', slideCount: 18 },
   'gender-power-omkara-maqbool': { title: 'Gender, Power & Shakespeare: Omkara and Maqbool', folder: '/assets/presentations/gender-power-omkara-maqbool/', backdrop: '/assets/presentation-backdrops/omkara-maqbool.jpg', slideCount: 12 },
   'pride-prejudice-key-quotes': { title: 'Pride and Prejudice: Key Quotes Revision', folder: '/assets/presentations/pride-prejudice-key-quotes/', backdrop: '/assets/presentation-backdrops/pride-prejudice.jpg', slideCount: 10 },
-  'dracula-gender-roles': { title: 'Dracula: Gender Roles', folder: '/assets/presentations/dracula-gender-roles/', backdrop: '/assets/presentation-backdrops/dracula-gender.jpg', slideCount: 16 }
+  'dracula-gender-roles': { title: 'Dracula: Gender Roles', folder: '/assets/presentations/dracula-gender-roles/', backdrop: '/assets/presentation-backdrops/dracula-gender.jpg', slideCount: 16 },
+  'pope-lock-and-criticism': {
+    title: 'Alexander Pope: The Rape of the Lock and An Essay on Criticism',
+    folder: '/assets/presentations/pope-lock-and-criticism/',
+    backdrop: '/assets/presentation-backdrops/pamelas-psyche.webp',
+    slideCount: 17
+  },
+  'blackwood-the-willows': {
+    title: 'Algernon Blackwood: The Willows (1907)',
+    folder: '/assets/presentations/blackwood-the-willows/',
+    backdrop: '/assets/presentation-backdrops/midsummer-nights-dream.webp',
+    slideCount: 11
+  },
+  'arden-of-faversham-1592': {
+    title: 'Arden of Faversham (1592)',
+    folder: '/assets/presentations/arden-of-faversham-1592/',
+    backdrop: '/assets/presentation-backdrops/shakespeares-tragedies.webp',
+    slideCount: 15
+  },
+  'dracula-1897-origins': {
+    title: 'Bram Stoker: Dracula (1897), Notes and Origins',
+    folder: '/assets/presentations/dracula-1897-origins/',
+    backdrop: '/assets/presentation-backdrops/dracula-overview.webp',
+    slideCount: 13
+  },
+  'ancient-mariner-versions-and-gloss': {
+    title: 'The Rime of the Ancient Mariner: Versions and Gloss',
+    folder: '/assets/presentations/ancient-mariner-versions-and-gloss/',
+    backdrop: '/assets/presentation-backdrops/moby-dick.webp',
+    slideCount: 14
+  },
+  'gogol-overcoat-the-mantle': {
+    title: 'Gogol: The Overcoat and The Mantle',
+    folder: '/assets/presentations/gogol-overcoat-the-mantle/',
+    backdrop: '/assets/presentation-backdrops/ghost-stories.webp',
+    slideCount: 15
+  },
+  'hamlet-three-texts': {
+    title: 'Hamlet: Three Texts',
+    folder: '/assets/presentations/hamlet-three-texts/',
+    backdrop: '/assets/presentation-backdrops/richard-ii.webp',
+    slideCount: 11
+  },
+  'moby-dick-1851-publication': {
+    title: 'Moby-Dick (1851): Publication and Revival',
+    folder: '/assets/presentations/moby-dick-1851-publication/',
+    backdrop: '/assets/presentation-backdrops/moby-dick.webp',
+    slideCount: 13
+  },
+  'iliad-samuel-butler': {
+    title: 'The Iliad in Samuel Butler’s Prose',
+    folder: '/assets/presentations/iliad-samuel-butler/',
+    backdrop: '/assets/presentation-backdrops/odyssey-homer-vs-nolan.webp',
+    slideCount: 13
+  },
+  'white-fang-1906': {
+    title: 'Jack London: White Fang (1906)',
+    folder: '/assets/presentations/white-fang-1906/',
+    backdrop: '/assets/presentation-backdrops/frankenstein.webp',
+    slideCount: 10
+  },
+  'paradise-lost-publication-and-form': {
+    title: 'Paradise Lost: Publication and Form',
+    folder: '/assets/presentations/paradise-lost-publication-and-form/',
+    backdrop: '/assets/presentation-backdrops/ghost-stories.webp',
+    slideCount: 13
+  },
+  'duchess-of-malfi-1623': {
+    title: 'The Duchess of Malfi (1623): Print and Performance',
+    folder: '/assets/presentations/duchess-of-malfi-1623/',
+    backdrop: '/assets/presentation-backdrops/dorian-gray.webp',
+    slideCount: 14
+  },
+  'king-lear-two-texts': {
+    title: 'King Lear: Two Plays, One Title',
+    folder: '/assets/presentations/king-lear-two-texts/',
+    backdrop: '/assets/presentation-backdrops/king-lear.jpg',
+    slideCount: 13
+  },
+  'macbeth-folio-and-middleton': {
+    title: 'Macbeth: The Folio Text and Middleton’s Hand',
+    folder: '/assets/presentations/macbeth-folio-and-middleton/',
+    backdrop: '/assets/presentation-backdrops/macbeth-quick-guide.webp',
+    slideCount: 10
+  },
+  'puddnhead-wilson-1894': {
+    title: 'Mark Twain: Pudd’nhead Wilson (1894)',
+    folder: '/assets/presentations/puddnhead-wilson-1894/',
+    backdrop: '/assets/presentation-backdrops/harper-lee-mockingbird.jpg',
+    slideCount: 13
+  },
+  'othello-two-texts': {
+    title: 'Othello: Two Texts and the Words the Law Removed',
+    folder: '/assets/presentations/othello-two-texts/',
+    backdrop: '/assets/presentation-backdrops/richard-ii.webp',
+    slideCount: 9
+  },
+  'sir-thomas-more-manuscript': {
+    title: 'Sir Thomas More: The Censored Manuscript',
+    folder: '/assets/presentations/sir-thomas-more-manuscript/',
+    backdrop: '/assets/presentation-backdrops/shakespeares-tragedies.webp',
+    slideCount: 13
+  },
+  'moonstone-1868': {
+    title: 'Wilkie Collins: The Moonstone (1868)',
+    folder: '/assets/presentations/moonstone-1868/',
+    backdrop: '/assets/presentation-backdrops/dorian-gray.webp',
+    slideCount: 14
+  }
 };
 
 export const presentations = Object.freeze(Object.fromEntries(

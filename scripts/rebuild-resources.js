@@ -5,6 +5,8 @@ const resources = require('./resource-data');
 const root = process.cwd();
 
 const categories = [
+  { id: 'ancient-epic', label: 'Ancient & Epic', short: 'Ancient & Epic' },
+  { id: 'renaissance-early-modern', label: 'Renaissance & Early Modern', short: 'Early Modern' },
   { id: 'shakespeare', label: 'Shakespeare', short: 'Shakespeare' },
   { id: 'poetry', label: 'Poetry', short: 'Poetry' },
   { id: 'eighteenth-century', label: 'Eighteenth-century fiction', short: 'Eighteenth century' },
@@ -74,7 +76,7 @@ const html = `<!doctype html>
 ${header()}
 <main class="page-wrap">
 <section class="page-intro"><div><p class="kicker">Astor Study</p><h1>Free literature resources.</h1><p class="deck">${resources.length} free online guides to Shakespeare, poetry, fiction and drama. Each catalogue page lists the guide's subject, contents and related reading.</p></div><aside class="source-note"><p><strong>Choose a text or topic.</strong> Search by title, character, theme, period or type of resource, then open the full guide.</p></aside></section>
-<section class="resource-hero"><div class="resource-panel"><h2>Browse by period and tradition.</h2><p>The categories cover Shakespeare, poetry, eighteenth-century literature, Regency literature, Victorian literature, modern fiction and American literature.</p><div class="button-row">${jumpLinks}</div></div><div class="resource-panel"><h2>Free to read and use.</h2><p>Every complete guide is available without charge. Ko-fi contributions support the production and hosting of these resources.</p><div class="button-row"><a class="button primary" href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div></div></section>
+<section class="resource-hero"><div class="resource-panel"><h2>Browse by period and tradition.</h2><p>The categories cover ancient epic, Renaissance and early modern drama, Shakespeare, poetry, eighteenth-century literature, Regency literature, Victorian literature, modern fiction and American literature.</p><div class="button-row">${jumpLinks}</div></div><div class="resource-panel"><h2>Free to read and use.</h2><p>Every complete guide is available without charge. Ko-fi contributions support the production and hosting of these resources.</p><div class="button-row"><a class="button primary" href="https://ko-fi.com/astorlibrary">Support Astor Library</a></div></div></section>
 <section class="resource-finder" aria-labelledby="resource-finder-title"><div class="resource-finder-head"><div><p class="kicker">Free literature guides</p><h2 id="resource-finder-title">Search and filter the guides.</h2></div><p class="deck">Search by title, character, theme or type of resource, or select a category.</p></div><label for="resource-search">What are you studying?</label><div class="resource-search-row"><input id="resource-search" type="search" autocomplete="off" placeholder="Try Gatsby, Dracula, Shakespeare or gender"><p id="resource-count" aria-live="polite">${resources.length} guides</p></div><div class="resource-filters" aria-label="Filter free resources"><button class="resource-filter is-active" type="button" data-resource-filter="all" aria-pressed="true">All guides</button>${filters}</div></section>
 <p class="resource-empty" id="resource-empty" hidden>No guide matches that search yet. Try the book title, an author or a broader idea.</p>
 ${sections}
@@ -88,3 +90,11 @@ ${sections}
 
 fs.writeFileSync(path.join(root, 'resources', 'index.html'), html);
 console.log(`Rebuilt the free-resource catalogue with ${resources.length} online guides.`);
+
+// Keep the homepage's two resource totals aligned with the generated catalogue.
+const homepagePath = path.join(root, 'index.html');
+const homepage = fs.readFileSync(homepagePath, 'utf8');
+const updatedHomepage = homepage
+  .replace(/(<span>)\d+( guides and \d+ annotated passages)/, (_, before, after) => before + resources.length + after)
+  .replace(/(href="\/resources\/">All )\d+( &rarr;)/, (_, before, after) => before + resources.length + after);
+fs.writeFileSync(homepagePath, updatedHomepage);

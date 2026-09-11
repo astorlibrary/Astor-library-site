@@ -195,7 +195,7 @@ export class AstorPresentationViewer extends HTMLElement {
         </div>
         <div class="astor-presentation-viewer__body">
           <div class="astor-presentation-viewer__frame" data-stage>
-            <img class="astor-presentation-viewer__slide" data-slide-image alt="${this.#escape(presentation.title)}, slide 1 of ${presentation.slideCount}" width="2400" height="1350">
+            <img class="astor-presentation-viewer__slide" data-slide-image alt="${this.#escape(presentation.title)}, slide 1 of ${presentation.slideCount}" width="2400" height="1350" hidden>
             <div class="astor-presentation-viewer__status" data-status role="status" hidden>
               <span class="astor-presentation-viewer__spinner" aria-hidden="true"></span>
               <p data-status-text></p>
@@ -222,6 +222,9 @@ export class AstorPresentationViewer extends HTMLElement {
         <p class="astor-presentation-viewer__announcer" data-announcer aria-live="polite" aria-atomic="true"></p>
       </section>`;
 
+    this.querySelector('.astor-presentation-viewer__backdrop').addEventListener('error', event => {
+      event.currentTarget.hidden = true;
+    }, { once: true });
     this.querySelector('[data-previous]').addEventListener('click', () => this.previous());
     this.querySelector('[data-next]').addEventListener('click', () => this.next());
     this.querySelector('[data-retry]').addEventListener('click', () => this.#loadSlide(this.#requestedSlide));
@@ -329,6 +332,7 @@ export class AstorPresentationViewer extends HTMLElement {
       this.#revokeObjectUrl();
       this.#objectUrl = objectUrl;
       image.src = objectUrl;
+      image.hidden = false;
       image.alt = `${this._presentation.title}, slide ${number} of ${this._presentation.slideCount}`;
       this.#slide = number;
       this.#hasLoadedSlide = true;
