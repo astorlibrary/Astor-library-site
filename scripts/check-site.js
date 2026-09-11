@@ -249,7 +249,7 @@ if (!fs.existsSync(passageHubFile)) {
 } else {
   const passageHub = fs.readFileSync(passageHubFile, 'utf8');
   if (!passageHub.includes('Annotated passages from classic literature.')) failures.push('The Passage Room is missing its opening statement');
-  if (countMatches(passageHub, /class="passage-card /g) !== 15) failures.push('The Passage Room must open fifteen close readings');
+  if (countMatches(passageHub, /class="passage-card /g) !== 30) failures.push('The Passage Room must open thirty close readings');
 }
 
 const passageRoutes = [
@@ -267,7 +267,22 @@ const passageRoutes = [
   'moby-dick-call-me-ishmael',
   'macbeth-unsex-me-here',
   'macbeth-is-this-a-dagger',
-  'macbeth-tomorrow-and-tomorrow'
+  'macbeth-tomorrow-and-tomorrow',
+  'romeo-and-juliet-light',
+  'king-lear-blow-winds',
+  'tempest-our-revels',
+  'doctor-faustus-thousand-ships',
+  'sonnet-130-false-compare',
+  'paradise-lost-mind-its-own-place',
+  'ancient-mariner-water-water',
+  'jane-eyre-i-am-no-bird',
+  'wuthering-heights-i-am-heathcliff',
+  'great-expectations-marsh-country',
+  'tess-president-of-the-immortals',
+  'yellow-wallpaper-got-out-at-last',
+  'dracula-children-of-the-night',
+  'great-gatsby-boats-against-the-current',
+  'room-of-ones-own-money-and-a-room'
 ];
 for (const route of passageRoutes) {
   const passageFile = path.join(root, 'passage-room', route, 'index.html');
@@ -277,8 +292,10 @@ for (const route of passageRoutes) {
   }
   const passage = fs.readFileSync(passageFile, 'utf8');
   if (!passage.includes('class="passage-spread"')) failures.push(route + ' is missing its annotated text');
-  if (countMatches(passage, /data-passage-mark=/g) !== 5) failures.push(route + ' must attach five notes to exact phrases');
-  if (countMatches(passage, /data-passage-note=/g) !== 5) failures.push(route + ' must contain five margin notes');
+  const markCount = countMatches(passage, /data-passage-mark=/g);
+  const noteCount = countMatches(passage, /data-passage-note=/g);
+  if (markCount < 5 || markCount > 8) failures.push(route + ' must attach between five and eight notes to exact phrases');
+  if (noteCount !== markCount) failures.push(route + ' margin notes must match its marked phrases');
   if (!passage.includes('class="passage-question"')) failures.push(route + ' is missing its closing reading question');
   if (!passage.includes('Texts consulted')) failures.push(route + ' is missing its source note');
 }
@@ -289,7 +306,7 @@ if (!fs.existsSync(macbethStudyFile)) {
 } else {
   const macbethStudy = fs.readFileSync(macbethStudyFile, 'utf8');
   if (!macbethStudy.includes('href="https://mybook.to/cntRBz"')) failures.push('The Macbeth study page is missing its edition link');
-  for (const route of passageRoutes.slice(-3)) {
+  for (const route of ['macbeth-unsex-me-here', 'macbeth-is-this-a-dagger', 'macbeth-tomorrow-and-tomorrow']) {
     if (!macbethStudy.includes('href="/passage-room/' + route + '/"')) failures.push('The Macbeth study page is missing its close reading: ' + route);
   }
   const macbethStudyMain = macbethStudy.match(/<main\b[\s\S]*?<\/main>/i)?.[0] || '';
