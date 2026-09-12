@@ -249,7 +249,7 @@ if (!fs.existsSync(passageHubFile)) {
 } else {
   const passageHub = fs.readFileSync(passageHubFile, 'utf8');
   if (!passageHub.includes('Annotated passages from classic literature.')) failures.push('The Passage Room is missing its opening statement');
-  if (countMatches(passageHub, /class="passage-card /g) !== 42) failures.push('The Passage Room must open forty-two close readings');
+  if (countMatches(passageHub, /class="passage-card /g) !== 54) failures.push('The Passage Room must open fifty-four close readings');
 }
 
 const passageRoutes = [
@@ -294,7 +294,19 @@ const passageRoutes = [
   'tintern-abbey-sense-sublime',
   'alice-in-wonderland-who-are-you',
   'dorian-gray-preface',
-  'war-of-the-worlds-opening'
+  'war-of-the-worlds-opening',
+  'the-prince-feared-or-loved',
+  'oroonoko-royal-slave',
+  'gullivers-travels-odious-vermin',
+  'metamorphosis-vermin',
+  'iliad-hectors-helmet',
+  'woman-in-white-midnight-touch',
+  'red-badge-sun-like-a-wafer',
+  'call-of-the-wild-ecstasy',
+  'moonstone-robinson-crusoe',
+  'wind-in-the-willows-piper',
+  'anne-of-green-gables-naming',
+  'mrs-dalloway-flowers-herself'
 ];
 for (const route of passageRoutes) {
   const passageFile = path.join(root, 'passage-room', route, 'index.html');
