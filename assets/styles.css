@@ -671,23 +671,45 @@
 .passage-question{margin:0 0 86px;padding:58px 64px;background:#6e1f2b;color:#fffaf4}.passage-question span{color:#e5c77f;font:900 10px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.16em;text-transform:uppercase}.passage-question h2{max-width:1080px;margin:21px 0 0;font-size:clamp(38px,5.4vw,70px);font-weight:400;line-height:1.02;letter-spacing:-.035em}
 .passage-context{margin-bottom:70px;padding:0 44px;display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.45fr);gap:70px}.passage-context h2{margin:0 0 18px;font-size:clamp(47px,6vw,78px);line-height:.88;letter-spacing:-.055em}.passage-context>div>p:not(.kicker){max-width:720px;font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--muted)}.passage-context aside{padding:25px;border:1px solid var(--line);background:#fffaf4}.passage-context aside h3{margin:0 0 16px;font-size:24px}.passage-context aside a{display:block;padding:12px 0;border-top:1px solid var(--line);color:#6e1f2b;font:700 13px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.passage-end-nav{padding:26px 0;display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--line)}.passage-end-nav a{color:#6e1f2b;font:900 13px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-decoration:none}
 
-.passage-reading-page{--accent:#6e1f2b}
-.passage-reading-page .passage-running-head{color:var(--accent)}
+.passage-reading-page{--accent:#6e1f2b;--paper:#fffaf4}
+.passage-reading-page .passage-reading-hero{background:color-mix(in srgb,var(--accent) 30%,#10263b)}
+.passage-reading-page .passage-reading-hero .kicker{color:color-mix(in srgb,var(--accent) 35%,#e5c77f)}
+.passage-reading-page .passage-running-head{color:var(--accent);border-bottom-color:color-mix(in srgb,var(--accent) 35%,rgba(32,28,26,.18))}
+.passage-reading-page .passage-paper{background:linear-gradient(90deg,color-mix(in srgb,var(--accent) 4%,transparent),transparent 14%,transparent 86%,color-mix(in srgb,var(--accent) 4%,transparent)),var(--paper)}
 .passage-reading-page .passage-text sup{background:var(--accent)}
-.passage-reading-page .passage-margin article>span{background:var(--accent)}
-.passage-reading-page .passage-margin article.is-active{box-shadow:8px 10px 25px color-mix(in srgb,var(--accent) 20%,rgba(32,28,26,.12))}
 .passage-reading-page .passage-text mark:hover,.passage-reading-page .passage-text mark:focus-visible,.passage-reading-page .passage-text mark.is-active{background:linear-gradient(180deg,transparent 42%,color-mix(in srgb,var(--accent) 26%,transparent) 42%)}
 .passage-reading-page .passage-text mark:focus-visible{outline-color:var(--accent)}
-.passage-reading-page .passage-reading-hero .kicker{color:color-mix(in srgb,var(--accent) 45%,#e5c77f)}
+.passage-reading-page .passage-margin{background:color-mix(in srgb,var(--accent) 7%,#e9dfd3)}
+.passage-reading-page .passage-margin article>span{background:var(--accent)}
+.passage-reading-page .passage-margin article.is-active{box-shadow:8px 10px 25px color-mix(in srgb,var(--accent) 20%,rgba(32,28,26,.12))}
+.passage-reading-page .passage-question{background:color-mix(in srgb,var(--accent) 78%,#1d1416)}
 .passage-reading-page .book-breadcrumb [aria-current="page"]{color:var(--accent)}
+.passage-reading-page .passage-classroom article>span,.passage-reading-page .passage-after .kicker,.passage-reading-page .passage-context .kicker{color:var(--accent)}
+/* Verse and playscript: line numbers in the gutter, speaker cues, gloss */
+.passage-text{position:relative}
+.passage-text .ln{position:absolute;left:-2.6em;width:2.2em;text-align:right;color:color-mix(in srgb,var(--accent) 55%,#a0968c);font:500 12px/1 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.04em;padding-top:.62em;user-select:none}
+.passage-text .cue{display:block;margin:0 0 4px;color:var(--accent);font:900 11px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.passage-text .cue+br{display:none}
+.passage-text .stage{display:block;margin:.2em 0 .5em;font:italic 15px/1.5 Georgia,'Times New Roman',serif;color:#71665f}
+.passage-text .gloss{display:block;margin:0 0 .35em;font:italic 15px/1.5 Georgia,'Times New Roman',serif;color:color-mix(in srgb,var(--accent) 80%,#3a2a12);letter-spacing:.01em}
+.passage-paper.paper-script .passage-running-head{border-bottom:3px double color-mix(in srgb,var(--accent) 45%,rgba(32,28,26,.18))}
+.passage-paper.paper-verse{padding-left:clamp(56px,7vw,110px)}
+.passage-paper.paper-verse .passage-text{font-size:clamp(23px,2.5vw,34px)}
+.passage-paper.paper-verse .passage-text p{margin-bottom:1.35em}
+/* Manuscript: texts that are written documents inside the fiction */
 .passage-dateline{margin:-34px 0 40px;font:italic 16px/1.4 Georgia,'Times New Roman',serif;color:var(--accent);letter-spacing:.01em}
-.passage-paper.paper-journal{padding-left:clamp(56px,7vw,104px);background:linear-gradient(90deg,color-mix(in srgb,var(--accent) 3%,transparent),#fdf7ec)}
+.passage-paper.paper-journal{--paper:#fdf7ec;padding-left:clamp(56px,7vw,104px)}
 .passage-paper.paper-journal .passage-running-head{margin-bottom:34px}
-.passage-paper.paper-journal .passage-text{position:relative}
 .passage-paper.paper-journal .passage-text:before{content:"";position:absolute;top:-6px;bottom:-6px;left:-26px;width:2px;background:color-mix(in srgb,var(--accent) 42%,transparent);box-shadow:5px 0 0 color-mix(in srgb,var(--accent) 14%,transparent)}
-.passage-text .cue{display:block;margin:0 0 3px;color:var(--accent);font:900 11px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.15em;text-transform:uppercase}
-.passage-paper.paper-script .passage-text p{margin:0 0 .72em}
-@media(max-width:820px){.passage-paper.paper-journal{padding-left:clamp(32px,7vw,44px)}.passage-paper.paper-journal .passage-text:before{left:-14px}.passage-dateline{margin-top:-18px}}
+.passage-paper.paper-journal.paper-wallpaper{--paper:#f6ecc9;background-image:linear-gradient(90deg,rgba(160,122,30,.08),transparent 14%,transparent 86%,rgba(160,122,30,.08)),repeating-linear-gradient(0deg,transparent 0,transparent 27px,rgba(160,122,30,.07) 27px,rgba(160,122,30,.07) 28px)}
+/* Openings and endings */
+.passage-paper.paper-opening .passage-text p:first-of-type::first-letter{float:left;margin:.08em .12em 0 0;color:var(--accent);font-size:3.9em;line-height:.78;font-weight:400}
+.passage-paper.paper-closing .passage-text::after{content:"\2766";display:block;margin:.9em 0 0;color:var(--accent);font-size:.9em;text-align:center;letter-spacing:.3em}
+.passage-paper.paper-closing .passage-text p:last-of-type{margin-top:1.6em;padding-top:1.1em;border-top:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+/* Aphorisms */
+.passage-paper.paper-aphorism .passage-text p{max-width:30ch;margin:0 auto 1.35em;text-align:center}
+.passage-paper.paper-aphorism .passage-text p+p::before{content:"\25C6";display:block;margin:0 auto .9em;color:var(--accent);font-size:.34em;letter-spacing:.5em}
+@media(max-width:820px){.passage-paper.paper-journal,.passage-paper.paper-verse{padding-left:clamp(32px,7vw,44px)}.passage-paper.paper-journal .passage-text:before{left:-14px}.passage-dateline{margin-top:-18px}.passage-text .ln{display:none}}
 @media(max-width:1040px){.astor-home-hero{grid-template-columns:1fr 1fr}.astor-home-hero-copy{padding-right:38px;padding-left:42px}.home-passage-folio{margin-right:24px}.home-passage-page{padding-right:32px;padding-left:32px}.astor-home-counts{grid-template-columns:repeat(2,1fr)}.passage-hub-hero,.passage-reading-hero{padding-right:44px;padding-left:44px}.passage-spread{grid-template-columns:minmax(0,1.35fr) minmax(290px,.65fr)}.passage-paper{padding-right:38px;padding-left:38px}.passage-after{gap:45px}}
 @media(max-width:820px){.astor-home-hero{margin-top:0;grid-template-columns:1fr}.astor-home-hero-copy{padding:55px 25px 42px}.astor-home-hero-copy h1{font-size:clamp(72px,19vw,112px)}.astor-home-counts{margin-top:39px;grid-template-columns:repeat(4,1fr)}.home-passage-folio{margin:0 18px 28px;transform:none}.home-passage-page{min-height:500px}.home-passage-threshold{margin:0 18px;padding:30px 25px;grid-template-columns:1fr}.passage-hub-hero,.passage-reading-hero{min-height:0;grid-template-columns:1fr;gap:48px;padding:54px 30px}.passage-hub-principle{padding-left:0;border-top:1px solid rgba(255,250,244,.24);border-left:0;padding-top:23px}.passage-manifesto,.passage-library-heading,.passage-after,.passage-context{grid-template-columns:1fr}.passage-manifesto{padding:42px 30px;gap:30px}.passage-library{padding:72px 0}.passage-library-heading{padding:0 18px;gap:23px}.passage-card-grid{grid-template-columns:1fr}.passage-card{min-height:440px;border:1px solid rgba(32,28,26,.18)!important}.passage-card+ .passage-card{border-top:0!important}.passage-next{padding:53px 30px}.passage-reading-page{padding-top:0}.passage-reading-hero{margin-right:-15px;margin-left:-15px}.passage-reading-hero aside{padding-top:22px;padding-left:0;border-top:1px solid rgba(255,250,244,.25);border-left:0}.passage-spread{margin-right:-10px;margin-left:-10px;grid-template-columns:1fr;box-shadow:none}.passage-paper{min-height:0}.passage-margin{min-height:0;border-left:1px solid rgba(32,28,26,.16)}.passage-margin article.is-active{transform:none}.passage-after{padding:0 8px 72px;gap:32px}.passage-after>div:last-child{padding-top:0}.passage-question{margin-right:-10px;margin-left:-10px;padding:48px 30px}.passage-context{padding:0 8px;gap:42px}}
 @media(max-width:820px){.passage-shelf+.passage-shelf{margin-top:65px}.passage-shelf-head{padding:0 18px;display:block}.passage-shelf-head span{display:block;margin-bottom:9px}.passage-shelf-new:before{top:-32px}}
