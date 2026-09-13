@@ -38,55 +38,65 @@ const collectionFiles = [
   'american/index.html',
   'modern/index.html'
 ];
+// Each collection's title, search description and introduction. The
+// introductions name the books and writers on the shelf and what the editions
+// contain; counts are left to the page itself, which reads them from the shelf.
 const collectionCopy = {
   'ancient-epic/index.html': {
     title: 'Ancient and Epic Literature | Astor Library',
-    description: 'Astor editions of the Iliad, Odyssey and Aeneid, with material on epic form, oral tradition, war, homecoming, exile, translation and empire.',
-    kicker: 'Period',
+    description: 'Astor editions of the Iliad, the Odyssey and the Aeneid, with summaries, notes and material on epic form, oral tradition, war, homecoming, translation and empire.',
+    kicker: 'Collection',
     heading: 'Ancient &amp; Epic.',
-    deck: 'Homer&rsquo;s <em>Iliad</em> begins with anger inside a war; the <em>Odyssey</em> asks what survives war and wandering. Virgil&rsquo;s <em>Aeneid</em> turns the refugee from Troy towards a future Rome while keeping the cost of that future in view.'
+    deck: 'Homer&rsquo;s <em>Iliad</em> and <em>Odyssey</em> in Samuel Butler&rsquo;s prose, and Virgil&rsquo;s <em>Aeneid</em> in John Dryden&rsquo;s verse. Each edition gives the complete poem with summaries, explanatory notes and an account of how it was composed, handed down and translated.'
   },
   'renaissance-early-modern/index.html': {
     title: 'Renaissance and Early Modern Literature | Astor Library',
-    description: 'Astor editions of Skelton, More, Machiavelli, Marlowe, Webster and Milton, with material on Tudor poetry, humanism, drama, epic, print and political power.',
-    kicker: 'Period',
+    description: 'Astor editions of Skelton, More, Machiavelli, Marlowe, Webster, Charles I and Milton, with notes on Tudor poetry, humanism, drama, epic, print and political power.',
+    kicker: 'Collection',
     heading: 'Renaissance &amp; Early Modern.',
-    deck: 'Skelton&rsquo;s quick, irregular verse joins theatre, political prose and epic in a period preoccupied with power. More and Machiavelli test government on the page; Marlowe and Webster stage ambition and conscience; Milton makes freedom and obedience the matter of epic.'
+    deck: 'Writing from the century and a half between John Skelton and John Milton: Skelton&rsquo;s poems, More&rsquo;s <em>Utopia</em> and Machiavelli&rsquo;s <em>The Prince</em>, Marlowe&rsquo;s <em>Doctor Faustus</em> and Webster&rsquo;s <em>The Duchess of Malfi</em>, the selected writings of Charles I, and <em>Paradise Lost</em>. Each edition gives the complete text with summaries, notes and its publication history.'
   },
   'shakespeare/index.html': {
-    title: 'Shakespeare Standard Editions, Scholarly Editions and Apocrypha | Astor Library',
-    description: 'Browse Astor standard editions of all 37 Shakespeare plays and the poetry, with separate collections for The Astor Shakespeare scholarly editions and Shakespeare Apocrypha.',
-    kicker: 'Shakespeare',
+    title: 'Shakespeare Editions: All the Plays and Poems | Astor Library',
+    description: 'Astor editions of all thirty-seven Shakespeare plays and the poems, with scene summaries, line numbers and notes, plus five expanded scholarly editions and the eight-volume Shakespeare Apocrypha.',
+    kicker: 'Collection',
     heading: 'Shakespeare.',
-    deck: 'The main shelf brings together the regular Astor editions of all thirty-seven plays and the poetry. The Astor Shakespeare scholarly editions and the Shakespeare Apocrypha have their own collections, so each range keeps its character and remains easy to browse.'
+    deck: 'All thirty-seven plays and the poems in the standard Astor series, each with scene summaries, line numbers and explanatory notes on the same page as the text. Five plays are also published as expanded scholarly editions, and eight plays once printed under Shakespeare&rsquo;s name make up the Shakespeare Apocrypha, each with its own shelf below.'
   },
   'restoration-enlightenment/index.html': {
     title: 'Restoration and Enlightenment Literature | Astor Library',
-    description: 'Astor editions of Defoe, Swift and Richardson, with material on travel, survival, satire, letters, print culture, commerce and the developing English novel.',
-    kicker: 'Period',
+    description: 'Astor editions of Behn, Defoe, Swift and Richardson, with summaries, notes and material on travel, survival, satire, letters, print culture and the early English novel.',
+    kicker: 'Collection',
     heading: 'Restoration &amp; Enlightenment.',
-    deck: 'Defoe turns shipwreck, survival and colonial commerce into a new kind of fictional life; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power. Together, these works show prose fiction and public argument finding new forms.'
+    deck: 'Four early works of English prose fiction, from Aphra Behn&rsquo;s <em>Oroonoko</em> in 1688 to Samuel Richardson&rsquo;s <em>Pamela</em> in 1740, with Defoe&rsquo;s <em>Robinson Crusoe</em> and Swift&rsquo;s <em>Gulliver&rsquo;s Travels</em> between them. Each edition gives the complete text with chapter summaries, notes and its publication history.'
   },
   'romantic-regency/index.html': {
     title: 'Romantic and Regency Literature | Astor Library',
-    description: 'Astor editions of Goethe, Coleridge, Austen and Shelley, with material on Romantic poetry and fiction, courtship, inheritance, nature, guilt, science and the Gothic.',
-    kicker: 'Period',
+    description: 'Astor editions of Goethe, Wordsworth and Coleridge, Jane Austen and Mary Shelley, with summaries, notes and material on Romantic poetry and fiction, courtship, inheritance, nature and the Gothic.',
+    kicker: 'Collection',
     heading: 'Romantic &amp; Regency.',
-    deck: 'Goethe and Coleridge turn desire, isolation, guilt and the supernatural into Romantic experiments. Austen makes courtship answer to money, inheritance and self-knowledge; Shelley gives scientific ambition a voice, a body and the power to accuse its creator.'
+    deck: 'Six books from 1774 to 1818: Goethe&rsquo;s <em>The Sorrows of Young Werther</em>, <em>Lyrical Ballads</em>, Coleridge&rsquo;s <em>The Rime of the Ancient Mariner</em>, Jane Austen&rsquo;s <em>Sense and Sensibility</em> and <em>Pride and Prejudice</em>, and Mary Shelley&rsquo;s <em>Frankenstein</em>. Each edition gives the complete text with summaries, notes and its publication history.'
   },
   'victorian/index.html': {
     title: 'Victorian Literature | Astor Library',
-    description: 'Victorian editions by Dickens, Brontë, Hardy, Stevenson, Stoker, Wilde, Wells and Conan Doyle, including Jane Eyre and Christmas writing, with notes and context.',
-    kicker: 'Period',
+    description: 'Astor editions of Dickens, the Brontës, Wilkie Collins, Lewis Carroll, Hardy, Stevenson, Wilde, Conan Doyle, Wells and Stoker, with annotated Christmas, Bonfire Night and ghost-story collections.',
+    kicker: 'Collection',
     heading: 'Victorian.',
-    deck: 'Dickens and Bront&euml; join Hardy, Stevenson, Stoker, Wilde, Wells and Conan Doyle in a collection moving between Christmas rooms, city streets, country houses, moors, laboratories and consulting rooms. Each edition places the work beside its publication and social history.'
+    deck: 'From <em>A Christmas Carol</em> in 1843 to <em>Dracula</em> and <em>The War of the Worlds</em> at the end of the century: Dickens, Charlotte and Emily Bront&euml;, Wilkie Collins, Lewis Carroll, Hardy, Stevenson, Wilde, Conan Doyle, Wells and Stoker, together with annotated collections of Victorian ghost stories and of Christmas and Bonfire Night customs. Each edition gives the complete text with summaries, notes and its publication history.'
+  },
+  'american/index.html': {
+    title: 'American Classics | Astor Library',
+    description: 'Astor editions of Douglass, Hawthorne, Stowe, Melville, Twain, Gilman, Crane, London, Wharton and Fitzgerald, with summaries, notes and an annotated collection of American Halloween stories.',
+    kicker: 'Collection',
+    heading: 'American Classics.',
+    deck: 'From Frederick Douglass&rsquo;s <em>Narrative</em> in 1845 to <em>The Great Gatsby</em> in 1925: Hawthorne, Stowe, Melville, Twain, Gilman, Crane, London, Wharton and Fitzgerald, with an annotated collection of American Halloween stories from Washington Irving onwards. Each edition gives the complete text with summaries, notes and its publication history.'
   },
   'modern/index.html': {
-    title: 'Modern Classic Literature | Astor Library',
-    description: 'Astor editions of Virginia Woolf, G. K. Chesterton and George Orwell, with material on modernism, London, consciousness, political language, conspiracy and revolution.',
-    kicker: 'Period',
-    heading: 'Modern.',
-    deck: 'Woolf turns one June day in London into an intricate movement through memory and consciousness. Chesterton makes political conspiracy a strange metropolitan chase; Orwell follows a revolution whose language changes as thoroughly as its promises.'
+    title: 'Modern Classics | Astor Library',
+    description: 'Astor editions of Chesterton, Grahame, Montgomery, Kafka, Yeats, Mansfield, Virginia Woolf and Orwell, with summaries, notes and context for the years 1908 to 1945.',
+    kicker: 'Collection',
+    heading: 'Modern Classics.',
+    deck: 'Nine books from 1908 to 1945: Chesterton&rsquo;s <em>The Man Who Was Thursday</em>, <em>The Wind in the Willows</em> and <em>Anne of Green Gables</em>; Kafka&rsquo;s <em>The Metamorphosis</em>, Yeats&rsquo;s <em>Michael Robartes and the Dancer</em> and Katherine Mansfield&rsquo;s last stories; Virginia Woolf&rsquo;s <em>Mrs Dalloway</em> and <em>A Room of One&rsquo;s Own</em>; and Orwell&rsquo;s <em>Animal Farm</em>. Each edition gives the complete text with summaries, notes and its publication history.'
   }
 };
 

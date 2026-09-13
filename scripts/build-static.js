@@ -15,23 +15,14 @@ const thumbnailMapFile = path.join(root, 'assets', 'book-thumbnails.json');
 const bookThumbnails = fs.existsSync(thumbnailMapFile)
   ? JSON.parse(fs.readFileSync(thumbnailMapFile, 'utf8'))
   : {};
-const collectionBanners = {
-  '/Ancient%20and%20Epic.png': '/assets/home/ancient-epic.jpg',
-  '/Renaissance%20and%20Early%20Modern.png': '/assets/home/renaissance-early-modern.jpg',
-  '/Shakespeare.png': '/assets/home/shakespeare.jpg',
-  '/Restoration%20and%20Enlightenment.png': '/assets/home/restoration-enlightenment.jpg',
-  '/Romantic%20and%20Regency.png': '/assets/home/romantic-regency.jpg',
-  '/Victorian.png': '/assets/home/victorian.jpg',
-  '/American%20Classics.png': '/assets/home/american-classics.jpg',
-  '/Modern%20Classics.png': '/assets/home/modern-classics.jpg',
-  '/Study%20Resources.png': '/assets/home/study-editions.jpg'
-};
+const { collections: collectionDirectory } = require('./collection-data');
+const collectionPages = require('./collection-page')({ discovery, escapeHtml, plainText, pageHref });
 
 // Social previews, JSON-LD and the image sitemap should advertise the optimised
 // catalogue thumbnails, never the multi-megabyte original uploads.
 function optimisedImage(imagePath) {
   if (!imagePath) return imagePath;
-  return collectionBanners[imagePath] || bookThumbnails[imagePath] || imagePath;
+  return bookThumbnails[imagePath] || imagePath;
 }
 
 const excluded = new Set([
@@ -89,7 +80,7 @@ function useBookThumbnail(tag, sourceFile) {
   const resolvedSource = source.startsWith('/')
     ? source
     : path.posix.resolve(pageDirectory, source);
-  const thumbnail = collectionBanners[resolvedSource] || bookThumbnails[resolvedSource] || '';
+  const thumbnail = bookThumbnails[resolvedSource] || '';
   return thumbnail ? tag.replace(/\bsrc="[^"]+"/i, 'src="' + thumbnail + '"') : tag;
 }
 
@@ -490,7 +481,10 @@ function addGlobalMetadata(html, source) {
   const subject = subjectContext(source);
   const passage = passageContext(source);
   const study = studyContext(source);
-  const imageOwner = book || resource || passage || study || author || subject;
+  const collection = collectionPages.collectionFor(source)
+    ? (discovery.collections || []).find(item => item.href === href)
+    : null;
+  const imageOwner = book || resource || passage || study || author || subject || collection;
   const image = optimisedImage(imageOwner?.image) || '/assets/og-logo.jpg';
   const imageAlt = imageOwner?.imageAlt || (imageOwner?.title
     ? plainText(imageOwner.title) + ', Astor Library'
@@ -796,11 +790,12 @@ function addContextImageShelf(html, source) {
     const routes = passage.relatedBooks || [];
     candidates = [...booksFor(routes), ...resourcesFor(routes), ...studiesFor(routes)];
     label = 'Related to this passage';
-  } else if (collection) {
+  } else if (collection && !collectionPages.collectionFor(source)) {
     candidates = (discovery.books || []).filter(item => item.collection === collection.title);
     heading = 'Editions in this collection.';
     label = collection.title;
   } else {
+    // The eight main collection pages already list every edition they hold.
     return html;
   }
 
@@ -868,16 +863,14 @@ function addGlobalNavigation(html, source) {
   const booksCurrent = href === '/library/' || href.startsWith('/books/');
   const hardbacksCurrent = href === '/hardbacks/' || href.startsWith('/hardbacks/');
   const shakespeareCurrent = href === '/shakespeare/' || href.startsWith('/shakespeare/');
-  const periodsCurrent = [
-    '/classic-literature/',
-    '/ancient-epic/',
-    '/renaissance-early-modern/',
-    '/restoration-enlightenment/',
-    '/romantic-regency/',
-    '/victorian/',
-    '/american/',
-    '/modern/'
-  ].some(route => href === route || href.startsWith(route));
+  const periodsCurrent = ['/classic-literature/', ...collectionDirectory.map(collection => collection.href)]
+    .some(route => href === route || href.startsWith(route));
+  const collectionLinks = collectionDirectory.map(collection =>
+    '<a href="' + collection.href + '"' + current(inRoute(collection.href)) + '><b>' + escapeHtml(collection.shortName) + '</b><span>' + escapeHtml(collection.tagline) + '</span></a>'
+  ).join('\n                ');
+  const footerCollectionLinks = collectionDirectory.map(collection =>
+    '<a href="' + collection.href + '">' + escapeHtml(collection.name) + '</a>'
+  ).join('');
   const authorsCurrent = href === '/authors/' || href.startsWith('/authors/');
   const subjectsCurrent = href === '/subjects/' || href.startsWith('/subjects/');
   const readingRoutesCurrent = href === '/reading-routes/' || href.startsWith('/reading-routes/');
@@ -903,30 +896,23 @@ function addGlobalNavigation(html, source) {
           <div class="astor-browse-feature">
             <p>Open the catalogue</p>
             <h2>Find a book, writer or way into the text.</h2>
-            <span>Move through Astor Library by literary period, subject, author or a connected reading route.</span>
+            <span>Move through Astor Library by collection, writer, subject or a connected reading route.</span>
             <a href="/explore/">Search every title <i aria-hidden="true">&rarr;</i></a>
           </div>
           <div class="astor-browse-directory">
+            <section class="astor-period-directory" aria-labelledby="astor-period-title">
+              <div class="astor-directory-heading"><h2 id="astor-period-title">Collections</h2><a href="/classic-literature/"${current(href === '/classic-literature/')}>All eight collections <span aria-hidden="true">&rarr;</span></a></div>
+              <div class="astor-period-links">
+                ${collectionLinks}
+              </div>
+            </section>
             <section aria-labelledby="astor-browse-by-title">
               <h2 id="astor-browse-by-title">Browse by</h2>
               <div class="astor-browse-cards">
-                <a href="/shakespeare/"${current(shakespeareCurrent, href === '/shakespeare/')}><em aria-hidden="true">01</em><span><b>Shakespeare</b><small>Plays, poems and editions</small></span></a>
-                <a href="/hardbacks/"${current(hardbacksCurrent, href === '/hardbacks/')}><em aria-hidden="true">02</em><span><b>Hardbacks</b><small>Gift and casebound editions</small></span></a>
-                <a href="/authors/"${current(authorsCurrent, href === '/authors/')}><em aria-hidden="true">03</em><span><b>Writers</b><small>Authors and their Astor editions</small></span></a>
-                <a href="/subjects/"${current(subjectsCurrent, href === '/subjects/')}><em aria-hidden="true">04</em><span><b>Subjects</b><small>Genres, themes and contexts</small></span></a>
-                <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}><em aria-hidden="true">05</em><span><b>Reading routes</b><small>Books connected by a question</small></span></a>
-              </div>
-            </section>
-            <section class="astor-period-directory" aria-labelledby="astor-period-title">
-              <div class="astor-directory-heading"><h2 id="astor-period-title">Literary periods</h2><a href="/classic-literature/"${current(href === '/classic-literature/')}>View the overview <span aria-hidden="true">&rarr;</span></a></div>
-              <div class="astor-period-links">
-                <a href="/ancient-epic/"${current(inRoute('/ancient-epic/'))}><b>Ancient &amp; Epic</b><span>Epic, myth and classical inheritance</span></a>
-                <a href="/renaissance-early-modern/"${current(inRoute('/renaissance-early-modern/'))}><b>Renaissance</b><span>Drama, poetry and early modern prose</span></a>
-                <a href="/restoration-enlightenment/"${current(inRoute('/restoration-enlightenment/'))}><b>Restoration</b><span>Satire, reason and eighteenth-century writing</span></a>
-                <a href="/romantic-regency/"${current(inRoute('/romantic-regency/'))}><b>Romantic &amp; Regency</b><span>Revolution, nature and the imagination</span></a>
-                <a href="/victorian/"${current(inRoute('/victorian/'))}><b>Victorian</b><span>Industry, empire and the modern city</span></a>
-                <a href="/american/"${current(inRoute('/american/'))}><b>American</b><span>Nation, freedom and American voices</span></a>
-                <a href="/modern/"${current(inRoute('/modern/'))}><b>Modern</b><span>Modernism, politics and new forms</span></a>
+                <a href="/hardbacks/"${current(hardbacksCurrent, href === '/hardbacks/')}><em aria-hidden="true">01</em><span><b>Hardbacks</b><small>Casebound editions</small></span></a>
+                <a href="/authors/"${current(authorsCurrent, href === '/authors/')}><em aria-hidden="true">02</em><span><b>Writers</b><small>Authors and their Astor editions</small></span></a>
+                <a href="/subjects/"${current(subjectsCurrent, href === '/subjects/')}><em aria-hidden="true">03</em><span><b>Subjects</b><small>Genres, themes and contexts</small></span></a>
+                <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}><em aria-hidden="true">04</em><span><b>Reading routes</b><small>Books connected by a question</small></span></a>
               </div>
             </section>
           </div>
@@ -945,8 +931,9 @@ function addGlobalNavigation(html, source) {
 
   const footer = `<footer class="site-footer astor-global-footer">
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
-  <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/hardbacks/">Hardback editions</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
-  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
+  <div class="astor-footer-group astor-footer-collections"><h2>Collections</h2>${footerCollectionLinks}<a href="/hardbacks/">Hardback editions</a></div>
+  <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a><a href="/reading-routes/">Reading routes</a><a href="/explore/">Search the library</a></div>
+  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact &amp; support</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;
 
@@ -959,10 +946,30 @@ function addGlobalNavigation(html, source) {
   return html;
 }
 
+// The periods overview quotes how many books each collection holds. Those
+// figures come from the catalogue at build time so they cannot go stale.
+function refreshCollectionCounts(html, source) {
+  if (pageHref(source) !== '/classic-literature/') return html;
+  const words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+  const tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+  const numberWord = value => value < 20 ? words[value] : tens[Math.floor(value / 10)] + (value % 10 ? '-' + words[value % 10] : '');
+  const total = (discovery.books || []).length;
+  html = html.replace(/Browse all \d+ books/g, 'Browse all ' + total + ' books');
+  return html.replace(/(<a class="classic-period" href="([^"]+)">[\s\S]*?<strong>)[^<]*?(\s*&rarr;<\/strong>)/g, function (match, before, href, after) {
+    const collection = collectionDirectory.find(item => item.href === href);
+    if (!collection) return match;
+    const count = (discovery.books || []).filter(book => book.collection === collection.name).length;
+    const word = numberWord(count);
+    return before + word.charAt(0).toUpperCase() + word.slice(1) + (count === 1 ? ' book' : ' books') + after;
+  });
+}
+
 function prepareHtml(html, source) {
   // The site publishes British English and stamps en-GB metadata everywhere;
   // normalise the bare lang="en" used by older source pages to match.
   html = html.replace(/(<html\b[^>]*\blang=")en(")/i, '$1en-GB$2');
+  html = collectionPages.render(html, source);
+  html = refreshCollectionCounts(html, source);
   html = addBookStructuredData(html, source);
   html = addResourceStructuredData(html, source);
   html = addStudyStructuredData(html, source);

@@ -30,7 +30,7 @@ Tell the user what is being improved in simple language. Avoid technical shortha
 - Prefer durable data or generator changes over hand-patching generated copies.
 - Edit source files, not `dist/`. Rebuild `dist/` only through the project build.
 - Match uploaded covers and resources by title despite harmless hyphen, number or spacing differences. Inspect ambiguous assets rather than guessing.
-- Keep Shakespeare as its own collection; do not fold it back into Renaissance and Early Modern.
+- Keep Shakespeare as its own collection; do not fold it back into Renaissance and Early Modern. Present it as one of the eight collections, in date order, never as a separate range in menus, footers or homepage tiles.
 - Give free resources their own useful Astor landing pages. Do not make catalogue cards jump straight to a PDF or outside website.
 - Use authoritative primary or institutional sources for factual literary history. Browse when facts, links or current performance records may have changed.
 - Build internal routes between books, writers, subjects, passages, teaching rooms, study editions and resources.

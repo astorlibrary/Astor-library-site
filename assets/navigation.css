@@ -363,7 +363,7 @@ body {
 
 .astor-browse-cards {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-bottom: 1px solid var(--astor-nav-line);
 }
 
@@ -414,7 +414,16 @@ body {
 }
 
 .astor-period-directory {
-  margin-top: 25px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.astor-period-links {
+  border-bottom: 1px solid var(--astor-nav-line);
+}
+
+.astor-period-links > a {
+  border-bottom: 0;
 }
 
 .astor-directory-heading {
@@ -544,7 +553,7 @@ body.is-site-menu-open {
   margin: 0 auto 24px;
   padding: 52px clamp(28px, 4.5vw, 58px);
   display: grid;
-  grid-template-columns: minmax(250px, 1.4fr) repeat(3, minmax(150px, 0.8fr));
+  grid-template-columns: minmax(220px, 1.3fr) repeat(4, minmax(140px, 0.8fr));
   gap: 42px;
   border: 0;
   border-top: 1px solid rgba(255, 250, 243, 0.18);

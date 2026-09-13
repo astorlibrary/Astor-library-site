@@ -35,6 +35,8 @@ The site is source HTML, CSS, JavaScript, JSON and image assets. Important build
 - `scripts/subject-data.js`: define subject guides and their book relationships.
 - `scripts/resource-data.js`: define free resources and their Astor landing pages.
 - `scripts/book-data.js`: central book records where present.
+- `scripts/collection-data.js`: the eight collections in order, their featured covers and the first-publication dates used to sort each shelf.
+- `scripts/collection-page.js`: turns each collection's source record (introduction plus shelf cards) into the published page at build time: heading with covers, collection switcher, sorted or grouped shelf and the free material for those books.
 - `scripts/author-profiles.js`: registered writer profiles.
 
 Inspect the current scripts before assuming their exact responsibilities; the architecture evolves.

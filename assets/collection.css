@@ -1,0 +1,140 @@
+/* Astor Library collection pages: heading, collection switcher, shelf and support.
+   Loaded after styles.css on the eight collection pages only. */
+
+.collection-page{max-width:1240px;padding-top:34px}
+.collection-page .book-breadcrumb{margin:0 0 22px}
+
+/* Heading with three real covers from the collection. */
+.collection-hero{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(300px,.88fr);gap:clamp(30px,5vw,64px);align-items:center;padding:clamp(34px,5vw,60px);background:linear-gradient(90deg,rgba(255,250,244,.035) 1px,transparent 1px) 0 0/54px 54px,var(--navy-deep,#10263b);color:#fffaf4;box-shadow:0 24px 70px rgba(32,28,26,.14)}
+.collection-hero .kicker{margin-bottom:12px;color:#e7c985}
+.collection-hero h1{max-width:13ch;margin:0 0 20px;color:#fffaf4;font-size:clamp(50px,7vw,94px);font-weight:400;line-height:.86;letter-spacing:-.05em;text-wrap:balance}
+.collection-hero .deck{max-width:58ch;margin:0;color:#eee5dc;font-size:17px;line-height:1.7}
+.collection-facts{display:flex;flex-wrap:wrap;gap:0 36px;margin:28px 0 0;padding:20px 0 0;border-top:1px solid rgba(255,250,244,.22)}
+.collection-facts div{margin:0 0 8px}
+.collection-facts dt{color:#c9b58a;font:800 10px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.collection-facts dd{margin:5px 0 0;color:#fffaf4;font:400 22px/1.15 Georgia,'Times New Roman',serif}
+.collection-hero .button-row{margin-top:22px}
+.collection-hero .button.primary{border-color:#fffaf4;background:#fffaf4;color:var(--burgundy)}
+.collection-hero .button.secondary{border-color:rgba(255,250,244,.55);background:transparent;color:#fffaf4}
+.collection-hero-covers{display:flex;align-items:flex-end;justify-content:center;min-height:420px;min-width:0}
+.collection-hero-covers a{width:min(34%,186px);flex:0 0 auto;color:inherit;text-decoration:none;transition:filter .18s ease}
+.collection-hero-covers a+a{margin-left:-26px}
+.collection-hero-covers a:nth-child(1){z-index:2;transform:translateY(-10px) rotate(-5deg)}
+.collection-hero-covers a:nth-child(2){z-index:4;transform:translateY(-32px)}
+.collection-hero-covers a:nth-child(3){z-index:3;transform:translateY(-4px) rotate(5deg)}
+.collection-hero-covers a:hover,.collection-hero-covers a:focus-visible{filter:brightness(1.08)}
+.collection-hero-covers img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;border:1px solid rgba(255,250,244,.2);box-shadow:0 25px 45px rgba(0,0,0,.4)}
+
+/* Row of links to the other collections. */
+.collection-switcher{display:flex;flex-wrap:wrap;align-items:stretch;margin:26px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font:750 12.5px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.collection-switcher a{display:inline-flex;align-items:center;min-height:48px;margin-bottom:-1px;padding:0 15px;border-bottom:3px solid transparent;color:var(--muted);text-decoration:none;white-space:nowrap}
+.collection-switcher a:hover,.collection-switcher a:focus-visible{color:var(--burgundy)}
+.collection-switcher a[aria-current]{color:var(--ink);border-bottom-color:var(--burgundy)}
+.collection-switcher .collection-switcher-all{margin-left:auto;color:var(--burgundy)}
+
+/* The Shakespeare collection's three shelves sit between the switcher and the books. */
+.collection-page .shakespeare-collection-routes{margin:30px 0 0}
+
+/* The shelf. */
+.collection-shelf{margin-top:54px}
+.collection-shelf-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.8fr);gap:14px 48px;align-items:end;margin-bottom:24px}
+.collection-shelf-head .kicker{margin-bottom:10px}
+.collection-shelf-head h2{max-width:22ch;margin:0;font-size:clamp(34px,4.6vw,54px);font-weight:400;line-height:.95;letter-spacing:-.04em;text-wrap:balance}
+.collection-shelf-head p{margin:0 0 6px;color:#514842;font:14px/1.65 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.collection-writers{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;margin:0 0 24px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font:600 13.5px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.collection-writers>span:first-child{color:var(--burgundy);font:900 10px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.collection-writers a{color:var(--ink);text-decoration:none;border-bottom:1px solid rgba(110,31,43,.3)}
+.collection-writers a:hover,.collection-writers a:focus-visible{color:var(--burgundy);border-color:var(--burgundy)}
+.collection-writers>span:not(:first-child){color:var(--muted)}
+.collection-group-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
+.collection-group-nav a{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 16px;border:1px solid var(--line);background:rgba(255,250,244,.85);color:var(--ink);font:750 12.5px/1 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-decoration:none}
+.collection-group-nav a span{color:var(--burgundy);font-weight:900}
+.collection-group-nav a:hover,.collection-group-nav a:focus-visible{border-color:var(--burgundy);color:var(--burgundy)}
+.collection-group{margin:0 0 54px;scroll-margin-top:24px}
+.collection-group>header{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin:0 0 18px;padding-top:20px;border-top:2px solid var(--ink)}
+.collection-group h3{margin:0;font-size:36px;font-weight:400;line-height:1;letter-spacing:-.03em}
+.collection-group>header>span{color:var(--muted);font:700 11.5px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.collection-group>header>p{flex-basis:100%;max-width:72ch;margin:6px 0 0;color:#514842;font:14px/1.65 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+
+/* Cards. The selectors carry the page class so they win over the shared edition-card rules. */
+.collection-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.collection-page .collection-card{display:flex;flex-direction:column;min-width:0;margin:0;padding:0;border:1px solid var(--line);border-left:1px solid var(--line);background:rgba(255,250,244,.9);box-shadow:0 10px 28px rgba(32,28,26,.05);transition:box-shadow .18s ease,transform .18s ease}
+.collection-page .collection-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(32,28,26,.12)}
+.collection-page .collection-card-cover{display:flex;align-items:flex-end;justify-content:center;height:236px;padding:22px 22px 0;background:linear-gradient(180deg,#e6d8c7,#f3e9dd)}
+.collection-page .collection-card-cover img{display:block;width:auto;height:100%;max-width:72%;margin:0;aspect-ratio:2/3;object-fit:cover;border:1px solid rgba(32,28,26,.08);box-shadow:0 14px 30px rgba(32,28,26,.28)}
+.collection-page .collection-card-body{display:flex;flex:1;flex-direction:column;min-width:0;padding:20px 22px 22px}
+.collection-page .collection-card .year{margin:0 0 8px;font-size:10px;letter-spacing:.13em}
+.collection-page .collection-card h2{margin:0 0 4px;font-size:25px;line-height:1.05;letter-spacing:-.02em}
+.collection-page .collection-card h2 a{color:inherit;text-decoration:none}
+.collection-page .collection-card h2 a:hover,.collection-page .collection-card h2 a:focus-visible{color:var(--burgundy)}
+.collection-page .collection-card-author{margin:0 0 12px;color:var(--muted);font:700 13px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.collection-page .collection-card-author a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(110,31,43,.28)}
+.collection-page .collection-card-author a:hover{color:var(--burgundy);border-color:var(--burgundy)}
+.collection-page .collection-card-copy{flex:1}
+.collection-page .collection-card-copy p{margin:0 0 10px;font-size:14px;line-height:1.6}
+.collection-page .collection-card-copy ul{margin:0 0 10px;padding-left:18px;font-size:13.5px;line-height:1.5}
+.collection-page .collection-card .button-row{margin-top:auto;padding-top:8px;gap:8px}
+.collection-page .collection-card .button{min-height:40px;padding:0 14px;font-size:12px}
+
+/* Free guides, close readings and study editions for the collection. */
+.collection-support{margin:70px 0 0;padding:44px clamp(22px,4vw,48px);border:1px solid var(--line);border-top:3px solid var(--burgundy);background:#fff8ef}
+.collection-support>header{max-width:760px;margin-bottom:26px}
+.collection-support h2{margin:0 0 10px;font-size:clamp(30px,4vw,44px);font-weight:400;line-height:1;letter-spacing:-.035em;text-wrap:balance}
+.collection-support>header p{margin:0;color:#514842;font:14px/1.65 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.collection-support-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.collection-support h3{margin:0 0 6px;padding-bottom:8px;border-bottom:1px solid var(--ink);color:var(--burgundy);font:800 10px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.collection-support ul{margin:0;padding:0;list-style:none}
+.collection-support li{padding:10px 0;border-bottom:1px solid var(--line)}
+.collection-support li a{display:block;color:var(--ink);font:400 17px/1.3 Georgia,'Times New Roman',serif;text-decoration:none}
+.collection-support li a:hover,.collection-support li a:focus-visible{color:var(--burgundy);text-decoration:underline;text-underline-offset:4px}
+.collection-support li span{display:block;margin-top:3px;color:var(--muted);font:600 12px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.collection-support-more{display:inline-block;margin-top:14px;color:var(--burgundy);font:800 12px/1.45 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-decoration:none}
+.collection-support-more:hover,.collection-support-more:focus-visible{text-decoration:underline;text-underline-offset:4px}
+.collection-page .book-end-nav{margin-top:60px}
+
+@media(max-width:1000px){
+  .collection-hero{grid-template-columns:1fr;gap:26px}
+  .collection-hero-covers{min-height:300px;align-items:flex-end}
+  .collection-hero-covers a{width:min(30%,150px)}
+  .collection-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .collection-shelf-head{grid-template-columns:1fr}
+  .collection-support-columns{grid-template-columns:1fr;gap:22px}
+}
+
+@media(max-width:620px){
+  .collection-page{padding-top:18px}
+  .collection-page .book-breadcrumb{margin-bottom:16px}
+  .collection-hero{margin:0 -15px;padding:34px 20px 28px;box-shadow:none}
+  .collection-hero h1{font-size:clamp(44px,13vw,58px)}
+  .collection-hero .deck{font-size:15.5px;line-height:1.62}
+  .collection-facts{gap:0 24px}
+  .collection-facts dd{font-size:19px}
+  .collection-hero .button-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .collection-hero .button{width:100%;padding:0 10px;font-size:12px}
+  .collection-hero-covers{min-height:0;padding-top:34px}
+  .collection-hero-covers a{width:31%}
+  .collection-hero-covers a+a{margin-left:-14px}
+  .collection-switcher{flex-wrap:nowrap;margin:18px -15px 0;padding:0 15px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .collection-switcher::-webkit-scrollbar{display:none}
+  .collection-switcher a{padding:0 12px}
+  .collection-switcher .collection-switcher-all{margin-left:8px}
+  .collection-shelf{margin-top:40px}
+  .collection-group h3{font-size:30px}
+  .collection-grid{grid-template-columns:1fr;gap:12px}
+  main.page-wrap.collection-page .collection-card{display:grid;grid-template-columns:92px minmax(0,1fr);gap:0 15px;padding:14px;margin:0;border-left-width:1px}
+  main.page-wrap.collection-page .collection-card-cover{grid-row:1/2;align-self:start;height:auto;padding:0;background:none}
+  main.page-wrap.collection-page .collection-card-cover img{width:92px;height:auto;max-width:none;box-shadow:0 9px 18px rgba(32,28,26,.16)}
+  main.page-wrap.collection-page .collection-card>div{display:flex;padding:0}
+  main.page-wrap.collection-page .collection-card .year{margin:2px 0 6px;font-size:9.5px}
+  main.page-wrap.collection-page .collection-card h2{margin:0 0 4px;font-size:22px;line-height:1}
+  main.page-wrap.collection-page .collection-card>div>p{margin:0 0 8px;font-size:12.5px}
+  main.page-wrap.collection-page .collection-card-copy p{font-size:13.5px;line-height:1.55}
+  main.page-wrap.collection-page .collection-card>div>.button-row{margin-top:6px;padding-top:0}
+  .collection-support{margin:48px -15px 0;padding:32px 18px}
+  .collection-support li a{font-size:16px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .collection-page .collection-card,.collection-hero-covers a{transition:none}
+  .collection-page .collection-card:hover{transform:none}
+}

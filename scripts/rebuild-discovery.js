@@ -8,18 +8,18 @@ const formatReleaseData = require('./format-release-data');
 
 const root = process.cwd();
 
+const { collections: collectionDirectory } = require('./collection-data');
+
+// The eight main collections take their listing image from the first of their
+// featured covers, so search results and social previews show real Astor
+// artwork. The specialist Shakespeare ranges and the hardback shelf keep a
+// cover of their own.
 const collectionFiles = [
-  { file: 'ancient-epic/index.html', name: 'Ancient & Epic', href: '/ancient-epic/', image: '/assets/home/ancient-epic.jpg' },
-  { file: 'renaissance-early-modern/index.html', name: 'Renaissance & Early Modern', href: '/renaissance-early-modern/', image: '/assets/home/renaissance-early-modern.jpg' },
-  { file: 'shakespeare/index.html', name: 'Shakespeare', href: '/shakespeare/', image: '/assets/home/shakespeare.jpg' },
+  ...collectionDirectory.slice(0, 3),
   { file: 'shakespeare/apocrypha/index.html', name: 'Shakespeare Apocrypha', href: '/shakespeare/apocrypha/', image: '/Edward%20III%20Main%20Cover.png', relatedBooks: editionUpdateData.filter(book => book.range === 'apocrypha').map(book => '/books/' + book.slug + '/') },
   { file: 'shakespeare/expanded-scholarly-editions/index.html', name: 'Astor Shakespeare: Expanded Scholarly Editions', href: '/shakespeare/expanded-scholarly-editions/', image: '/Hamlet%20Scholarly%20Cover.png', relatedBooks: editionUpdateData.filter(book => book.range === 'expanded').map(book => '/books/' + book.slug + '/') },
   { file: 'hardbacks/index.html', name: 'Hardback Editions', href: '/hardbacks/', image: '/Great%20Gatsby%20Hardcover.png', relatedBooks: formatReleaseData.hardbacks.map(book => book.href) },
-  { file: 'restoration-enlightenment/index.html', name: 'Restoration & Enlightenment', href: '/restoration-enlightenment/', image: '/assets/home/restoration-enlightenment.jpg' },
-  { file: 'romantic-regency/index.html', name: 'Romantic & Regency', href: '/romantic-regency/', image: '/assets/home/romantic-regency.jpg' },
-  { file: 'victorian/index.html', name: 'Victorian', href: '/victorian/', image: '/assets/home/victorian.jpg' },
-  { file: 'american/index.html', name: 'American Classics', href: '/american/', image: '/assets/home/american-classics.jpg' },
-  { file: 'modern/index.html', name: 'Modern Classics', href: '/modern/', image: '/assets/home/modern-classics.jpg' }
+  ...collectionDirectory.slice(3)
 ];
 
 const studyBookLinks = {
@@ -347,14 +347,16 @@ for (const match of studyHtml.matchAll(studyPattern)) {
 const collections = collectionFiles.map(function (collection) {
   const html = read(collection.file);
   const deckHtml = matchText(html, /<p class="deck">([\s\S]*?)<\/p>/, collection.name + ' introduction');
+  const featured = collection.featured ? books.find(function (book) { return book.href === collection.featured[0]; }) : null;
+  if (collection.featured && !featured) throw new Error('The featured cover ' + collection.featured[0] + ' for ' + collection.name + ' is not in the catalogue');
   return {
     type: 'collection',
     typeLabel: 'Collection',
     title: collection.name,
     description: firstSentence(deckHtml),
     href: collection.href,
-    image: collection.image,
-    imageAlt: collection.name + ' illustrated banner',
+    image: featured ? featured.image : collection.image,
+    imageAlt: featured ? featured.imageAlt : collection.name + ' cover',
     relatedBooks: collection.relatedBooks || [],
     search: [collection.name, textOnly(deckHtml)].join(' ')
   };

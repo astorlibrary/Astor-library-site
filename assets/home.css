@@ -854,3 +854,37 @@ input:focus-visible {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* Catalogue tiles show real covers from the shelf they open. */
+.home-tile-covers {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  padding: 16px 12px 0;
+  overflow: hidden;
+  background: var(--catalogue-sand);
+}
+.home-tile-covers img {
+  width: 40%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border: 1px solid rgba(33, 29, 26, 0.12);
+  box-shadow: 0 12px 26px rgba(33, 29, 26, 0.32);
+  background: var(--catalogue-cream);
+}
+.home-tile-covers img + img {
+  margin-left: -13%;
+}
+.home-tile-covers img:nth-child(1) {
+  transform: translateY(10px) rotate(-6deg);
+}
+.home-tile-covers img:nth-child(2) {
+  position: relative;
+  z-index: 2;
+}
+.home-tile-covers img:nth-child(3) {
+  transform: translateY(10px) rotate(6deg);
+}

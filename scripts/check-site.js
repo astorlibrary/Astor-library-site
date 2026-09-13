@@ -6,6 +6,7 @@ const editionUpdateData = require('./edition-update-data');
 const formatReleaseData = require('./format-release-data');
 const bookEnrichments = require('./book-enrichment-data');
 const editionSectionOverrides = require('./edition-section-overrides.json');
+const { collections: collectionDirectory } = require('./collection-data');
 
 const root = process.cwd();
 const SITE_URL = 'https://astorlibrary.com';
@@ -124,7 +125,8 @@ const editorialPhrases = [
   'space to breathe',
   'room to move',
   'placeholder',
-  'classic texts, properly presented'
+  'classic texts, properly presented',
+  'illustrated banner'
 ];
 
 for (const file of htmlFiles) {
@@ -196,6 +198,7 @@ for (const file of htmlFiles) {
     }
   }
 
+  if (html.includes('collection-page-banner')) failures.push(fileName + ' still carries an illustrated collection banner');
   const text = visibleText(html);
   for (const phrase of editorialPhrases) {
     if (text.includes(phrase)) failures.push(fileName + ' contains build wording: "' + phrase + '"');
@@ -240,6 +243,20 @@ for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/pa
   if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
 }
 if (!homepage.includes('class="astor-browse-menu"')) failures.push('The homepage is missing its grouped Browse disclosure');
+const homeCollectionColumn = homepageMain.match(/<div><h3>By collection<\/h3>[\s\S]*?<\/div>/i)?.[0] || '';
+if (!homeCollectionColumn) failures.push('The homepage is missing its By collection column');
+for (const collection of collectionDirectory) {
+  if (!homeCollectionColumn.includes('href="' + collection.href + '"')) failures.push('The homepage collection column is missing ' + collection.href);
+}
+const homeTiles = homepageMain.match(/<div class="home-tiles">[\s\S]*?<\/div>\s*<\/section>/i)?.[0] || '';
+for (const href of ['/library/', '/study/', '/hardbacks/', '/resources/']) {
+  if (!homeTiles.includes('href="' + href + '"')) failures.push('The homepage tiles are missing ' + href);
+}
+if (homeTiles.includes('href="/shakespeare/"')) failures.push('The homepage still presents Shakespeare as a separate tile rather than a collection');
+if (countMatches(homeTiles, /class="home-tile-covers"/g) < 3) failures.push('The homepage tiles are not showing real covers');
+if (/\/assets\/home\/[a-z-]+\.jpg" alt="[^"]*(?:editions|banner)/i.test(homeTiles)) failures.push('The homepage tiles still use illustrated banners');
+const hardbackWords = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+if (!homeTiles.includes(hardbackWords[formatReleaseData.hardbacks.length] + ' titles')) failures.push('The homepage hardback tile does not state the current number of hardback titles');
 if (!homepage.includes('data-auth-link')) failures.push('The homepage is missing its account-aware sign-in link');
 if (homepage.includes('class="home-reading-desk"') || homepage.includes('class="home-library-doors"')) failures.push('The homepage still contains an older duplicate section');
 
@@ -425,6 +442,10 @@ for (const resource of resourceData) {
 const classicLiterature = fs.readFileSync(path.join(root, 'classic-literature', 'index.html'), 'utf8');
 if (!classicLiterature.includes('<h1>Classic literature editions.</h1>')) failures.push('The classic literature landing page is missing its main heading');
 if (countMatches(classicLiterature, /class="classic-period"/g) !== 8) failures.push('The classic literature landing page must link all eight literary collections');
+if (countMatches(classicLiterature, /class="classic-period-covers"/g) !== 8) failures.push('The classic literature landing page must show real covers for all eight collections');
+for (const collection of collectionDirectory) {
+  if (!classicLiterature.includes('<a class="classic-period" href="' + collection.href + '">')) failures.push('The classic literature landing page is missing ' + collection.href);
+}
 for (const href of ['/library/', '/reading-routes/', '/resources/']) {
   if (!classicLiterature.includes('href="' + href + '"')) failures.push('The classic literature landing page is missing ' + href);
 }
@@ -949,6 +970,14 @@ if (fs.existsSync(distDir)) {
       for (const href of ['/library/', '/hardbacks/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/explore/', '/authors/', '/subjects/', '/reading-routes/', '/account/', '/privacy/']) {
         if (!html.includes('href="' + href + '"')) failures.push('dist/' + fileName + ' is missing ' + href + ' from shared navigation');
       }
+      const menuCollections = html.match(/<div class="astor-period-links">[\s\S]*?<\/div>/)?.[0] || '';
+      const footerCollections = html.match(/<div class="astor-footer-group astor-footer-collections">[\s\S]*?<\/div>/)?.[0] || '';
+      for (const collection of collectionDirectory) {
+        if (!menuCollections.includes('href="' + collection.href + '"')) failures.push('dist/' + fileName + ' menu does not list ' + collection.name + ' among the collections');
+        if (!footerCollections.includes('href="' + collection.href + '"')) failures.push('dist/' + fileName + ' footer does not list ' + collection.name + ' among the collections');
+      }
+      const browseCards = html.match(/<div class="astor-browse-cards">([\s\S]*?)<\/div>/)?.[1] || '';
+      if (browseCards.includes('href="/shakespeare/"')) failures.push('dist/' + fileName + ' menu still singles Shakespeare out from the other collections');
       if (/href=["']\/teach(?:\/|["'#?])/i.test(html)) failures.push('dist/' + fileName + ' still links to a retired Teaching Room route');
       if (/\bTeaching Rooms?\b/i.test(html)) failures.push('dist/' + fileName + ' still contains retired Teaching Room branding');
       if (html.includes('/assets/teaching.css')) failures.push('dist/' + fileName + ' still loads the retired Teaching Room stylesheet');
@@ -960,6 +989,40 @@ if (fs.existsSync(distDir)) {
       for (const image of html.matchAll(/<img\b[^>]*>/gi)) {
         if (!/\bloading="(?:lazy|eager)"/i.test(image[0]) || !/\bdecoding="async"/i.test(image[0])) {
           failures.push('dist/' + fileName + ' has an image without explicit loading hints');
+        }
+      }
+      if (collectionFiles.includes(fileName)) {
+        const sourceCards = countMatches(fs.readFileSync(path.join(root, fileName), 'utf8'), /<article class="edition-card">/g);
+        const publishedCards = countMatches(html, /<article class="edition-card collection-card">/g);
+        if (publishedCards !== sourceCards) failures.push('dist/' + fileName + ' publishes ' + publishedCards + ' shelf cards but the source holds ' + sourceCards);
+        for (const className of ['collection-hero', 'collection-hero-covers', 'collection-switcher', 'collection-shelf', 'collection-grid', 'collection-support']) {
+          if (!html.includes('class="' + className + '"')) failures.push('dist/' + fileName + ' is missing its ' + className);
+        }
+        if (!html.includes('href="/assets/collection.css"')) failures.push('dist/' + fileName + ' is missing the collection stylesheet');
+        if (countMatches(html, /class="collection-hero-covers"[\s\S]*?<\/div><\/section>/g) !== 1 || countMatches(html.match(/class="collection-hero-covers"[\s\S]*?<\/div><\/section>/)?.[0] || '', /<img\b/g) !== 3) failures.push('dist/' + fileName + ' must show three real covers in its heading');
+        for (const collection of collectionDirectory) {
+          if (!html.includes('<a href="' + collection.href + '"' + (collectionFiles.indexOf(fileName) === collectionDirectory.indexOf(collection) ? ' aria-current="page"' : '') + '>')) failures.push('dist/' + fileName + ' switcher is missing ' + collection.href);
+        }
+        if (html.includes('class="context-image-shelf"')) failures.push('dist/' + fileName + ' repeats its own editions in a related shelf');
+        if (fileName === 'shakespeare/index.html') {
+          for (const id of ['tragedies', 'comedies', 'histories', 'late-plays', 'poems']) {
+            if (!html.includes('<section class="collection-group" id="' + id + '"')) failures.push('dist/' + fileName + ' is missing its ' + id + ' group');
+          }
+          if (!html.includes('class="collection-group-nav"')) failures.push('dist/' + fileName + ' is missing its genre navigation');
+          if (html.includes('class="shakespeare-reading-room"')) failures.push('dist/' + fileName + ' still publishes the old reading room beside the grouped shelf');
+        }
+      }
+      if (fileName === 'classic-literature/index.html') {
+        const total = (discoveryIndex?.books || []).length;
+        if (!html.includes('Browse all ' + total + ' books')) failures.push('dist/' + fileName + ' does not state the current catalogue total');
+        for (const collection of collectionDirectory) {
+          const count = (discoveryIndex?.books || []).filter(book => book.collection === collection.name).length;
+          const card = html.match(new RegExp('<a class="classic-period" href="' + collection.href.replace(/\//g, '\\/') + '">[\\s\\S]*?<\\/a>'))?.[0] || '';
+          const stated = card.match(/<strong>([A-Za-z-]+) books? &rarr;<\/strong>/)?.[1] || '';
+          const words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
+          const tens = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+          const expected = count < 20 ? words[count] : tens[Math.floor(count / 10)] + (count % 10 ? '-' + words[count % 10] : '');
+          if (stated.toLowerCase() !== expected) failures.push('dist/' + fileName + ' states ' + (stated || 'no count') + ' for ' + collection.name + ' but the catalogue holds ' + count);
         }
       }
       const isBookListing = fileName === 'library/index.html' || fileName === 'explore/index.html' || collectionFiles.includes(fileName) || fileName === hardbackCollectionFile;
