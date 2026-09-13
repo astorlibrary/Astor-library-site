@@ -249,7 +249,7 @@ if (!fs.existsSync(passageHubFile)) {
 } else {
   const passageHub = fs.readFileSync(passageHubFile, 'utf8');
   if (!passageHub.includes('Annotated passages from classic literature.')) failures.push('The Passage Room is missing its opening statement');
-  if (countMatches(passageHub, /class="passage-card /g) !== 54) failures.push('The Passage Room must open fifty-four close readings');
+  if (countMatches(passageHub, /class="passage-card /g) !== 66) failures.push('The Passage Room must open sixty-six close readings');
 }
 
 const passageRoutes = [
@@ -306,7 +306,19 @@ const passageRoutes = [
   'moonstone-robinson-crusoe',
   'wind-in-the-willows-piper',
   'anne-of-green-gables-naming',
-  'mrs-dalloway-flowers-herself'
+  'mrs-dalloway-flowers-herself',
+  'richard-iii-winter-of-our-discontent',
+  'as-you-like-it-seven-ages',
+  'measure-for-measure-to-die',
+  'antony-and-cleopatra-the-barge',
+  'yeats-the-second-coming',
+  'aeneid-arms-and-the-man',
+  'utopia-sheep-devour-men',
+  'werther-wonderful-serenity',
+  'pamela-dear-father-and-mother',
+  'sense-and-sensibility-annuity',
+  'ethan-frome-bit-by-bit',
+  'the-fly-he-could-not-remember'
 ];
 for (const route of passageRoutes) {
   const passageFile = path.join(root, 'passage-room', route, 'index.html');

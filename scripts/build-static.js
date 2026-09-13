@@ -467,6 +467,18 @@ function addPassageStructuredData(html, source) {
   return html.replace('</head>', '<script type="application/ld+json" data-astor-passage-schema>' + json + '</script></head>');
 }
 
+// Every close reading carries its book's cover in the hero, so the page
+// announces which edition it belongs to before the passage is read.
+function addPassageHeroCover(html, source) {
+  const passage = passageContext(source);
+  if (!passage || !passage.image || html.includes('class="passage-hero-cover"')) return html;
+  const relatedBook = discovery.books?.find(book => passage.relatedBooks?.includes(book.href));
+  const cover = optimisedImage(passage.image);
+  const alt = escapeHtml(passage.imageAlt || (relatedBook ? relatedBook.title + ' cover' : 'Book cover'));
+  const figure = '<a class="passage-hero-cover" href="' + (relatedBook ? relatedBook.href : '/passage-room/') + '"><img src="' + cover + '" alt="' + alt + '" width="180" height="270"></a>';
+  return html.replace(/(<section class="passage-reading-hero">[\s\S]*?<aside>)/, '$1' + figure);
+}
+
 function addGlobalMetadata(html, source) {
   if (/http-equiv="refresh"/i.test(html)) return html;
   const href = pageHref(source);
@@ -957,6 +969,7 @@ function prepareHtml(html, source) {
   html = addAuthorStructuredData(html, source);
   html = addCollectionStructuredData(html, source);
   html = addPassageStructuredData(html, source);
+  html = addPassageHeroCover(html, source);
   html = addGlobalMetadata(html, source);
   html = addDiscoveryNavigation(html, source);
   html = addBookAuthorLink(html, source);
