@@ -479,6 +479,48 @@ function addPassageHeroCover(html, source) {
   return html.replace(/(<section class="passage-reading-hero">[\s\S]*?<aside>)/, '$1' + figure);
 }
 
+// Each reading's room is the paper treatment set on its own page; the hub is
+// shelved the same way, so the related strip below a reading offers the
+// nearest neighbours by author first and then by form.
+const PASSAGE_FORMS = [
+  ['paper-script', 'playhouse', 'Playscript'],
+  ['paper-verse', 'verse', 'Verse'],
+  ['paper-journal', 'manuscripts', 'Manuscript'],
+  ['paper-opening', 'openings', 'Opening'],
+  ['paper-closing', 'endings', 'Ending'],
+  ['paper-aphorism', 'prose', 'Aphorisms']
+];
+function passageForm(html) {
+  const classes = (html.match(/<div class="passage-paper([^"]*)"/) || [, ''])[1].split(/\s+/);
+  for (const [cls, room, label] of PASSAGE_FORMS) if (classes.includes(cls)) return { room, label };
+  return { room: 'prose', label: 'Prose' };
+}
+const passageRooms = new Map();
+for (const passage of discovery.passages || []) {
+  const file = path.join(root, passage.href.slice(1), 'index.html');
+  if (!fs.existsSync(file)) continue;
+  const book = discovery.books?.find(item => passage.relatedBooks?.includes(item.href));
+  passageRooms.set(passage.href, { ...passageForm(fs.readFileSync(file, 'utf8')), author: book?.author || '', bookTitle: book?.title || '' });
+}
+function addPassageRelated(html, source) {
+  const passage = passageContext(source);
+  if (!passage || html.includes('class="passage-related"')) return html;
+  const self = passageRooms.get(passage.href);
+  if (!self) return html;
+  const others = (discovery.passages || []).filter(item => item.href !== passage.href && passageRooms.has(item.href));
+  const byAuthor = others.filter(item => self.author && passageRooms.get(item.href).author === self.author);
+  const byRoom = others.filter(item => passageRooms.get(item.href).room === self.room && !byAuthor.includes(item));
+  const picks = byAuthor.concat(byRoom).slice(0, 3);
+  if (picks.length < 3) picks.push(...others.filter(item => !picks.includes(item)).slice(0, 3 - picks.length));
+  const heading = byAuthor.length >= 2 ? 'More from ' + escapeHtml(self.author.split(' ').slice(-1)[0]) + '.' : 'Also in ' + { playhouse: 'the playhouse', verse: 'the verse room', manuscripts: 'the manuscript room', openings: 'the openings', endings: 'the endings', prose: 'the prose room' }[self.room] + '.';
+  const cards = picks.map(item => {
+    const info = passageRooms.get(item.href);
+    return '<a href="' + item.href + '"><small>' + escapeHtml(info.label) + '</small><strong>' + item.title + '</strong><em>' + escapeHtml(info.bookTitle) + '</em></a>';
+  }).join('');
+  const section = '<section class="passage-related" aria-labelledby="passage-related-title"><div class="passage-related-head"><span>Keep reading</span><h2 id="passage-related-title">' + heading + '</h2></div><div class="passage-related-grid">' + cards + '</div></section>\n  ';
+  return html.replace('<nav class="passage-end-nav"', section + '<nav class="passage-end-nav"');
+}
+
 function addGlobalMetadata(html, source) {
   if (/http-equiv="refresh"/i.test(html)) return html;
   const href = pageHref(source);
@@ -970,6 +1012,7 @@ function prepareHtml(html, source) {
   html = addCollectionStructuredData(html, source);
   html = addPassageStructuredData(html, source);
   html = addPassageHeroCover(html, source);
+  html = addPassageRelated(html, source);
   html = addGlobalMetadata(html, source);
   html = addDiscoveryNavigation(html, source);
   html = addBookAuthorLink(html, source);

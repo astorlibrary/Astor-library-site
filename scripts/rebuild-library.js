@@ -192,3 +192,4 @@ fs.writeFileSync(path.join(root, 'library/index.html'), html);
 console.log(`Rebuilt the library with ${sorted.length} books.`);
 require('./rebuild-subjects');
 require('./rebuild-discovery');
+require('./rebuild-passage-hub');

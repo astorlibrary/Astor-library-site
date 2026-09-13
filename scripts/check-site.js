@@ -249,7 +249,7 @@ if (!fs.existsSync(passageHubFile)) {
 } else {
   const passageHub = fs.readFileSync(passageHubFile, 'utf8');
   if (!passageHub.includes('Annotated passages from classic literature.')) failures.push('The Passage Room is missing its opening statement');
-  if (countMatches(passageHub, /class="passage-card /g) !== 66) failures.push('The Passage Room must open sixty-six close readings');
+  if (countMatches(passageHub, /class="passage-card /g) !== 78) failures.push('The Passage Room must open seventy-eight close readings');
 }
 
 const passageRoutes = [
@@ -318,7 +318,19 @@ const passageRoutes = [
   'pamela-dear-father-and-mother',
   'sense-and-sensibility-annuity',
   'ethan-frome-bit-by-bit',
-  'the-fly-he-could-not-remember'
+  'the-fly-he-could-not-remember',
+  'henry-iv-what-is-honour',
+  'winters-tale-she-is-warm',
+  'much-ado-this-can-be-no-trick',
+  'coriolanus-i-banish-you',
+  'cymbeline-fear-no-more',
+  'henry-vi-tigers-heart',
+  'lucrece-times-glory',
+  'king-john-grief-fills-the-room',
+  'sign-of-four-seven-per-cent',
+  'sleepy-hollow-ichabod-crane',
+  'man-who-was-thursday-victoria',
+  'haunted-man-memory-green'
 ];
 for (const route of passageRoutes) {
   const passageFile = path.join(root, 'passage-room', route, 'index.html');
