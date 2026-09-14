@@ -547,3 +547,241 @@ module.exports = [
     ]
   }
 ];
+
+// Book identity, artwork and canonical routes come from the edition registry.
+// Subject shelves link the shared book page and therefore show its paperback
+// artwork; labelled hardcover offers remain on the edition's format panel.
+const septemberCatalogue = require('./september-catalogue-data.json');
+const existingSubjectBooks = new Map(module.exports.flatMap(subject => subject.books).map(book => [book.href, book]));
+function septemberSubjectBook(slug, year, copy) {
+  const book = septemberCatalogue.find(entry => entry.slug === slug);
+  if (!book) throw new Error(`Unknown September subject book: ${slug}`);
+  const image = book.format === 'hardcover' ? book.paperbackImage : book.image;
+  if (!image) throw new Error(`No canonical paperback artwork for subject book: ${slug}`);
+  return { href: book.href, title: book.title, author: book.author, year, image: '/' + encodeURIComponent(image).replace(/'/g, '%27'), copy };
+}
+function addSubjectBooks(slug, rows) {
+  const subject = module.exports.find(entry => entry.slug === slug);
+  if (!subject) throw new Error(`Unknown subject: ${slug}`);
+  for (const row of rows) {
+    const book = septemberSubjectBook(...row);
+    const existing = subject.books.findIndex(entry => entry.href === book.href);
+    if (existing === -1) subject.books.push(book);
+    else subject.books[existing] = book;
+  }
+}
+
+addSubjectBooks('gothic-literature', [
+  ['the-turn-of-the-screw', '1898', 'A governess records appearances at Bly in a manuscript transmitted through a Christmas storytelling frame.'],
+  ['american-ghost-stories', '1878–1925 · anthology', 'Ten complete stories with documented copy-texts, magazine histories and contextual essays.'],
+  ['carnacki-the-ghost-finder', '1913 / 1947', 'Nine investigations distinguish the six-story first collection from the later complete contents.'],
+  ['m-r-james-collected-ghost-stories', '1904–1936 · collected stories', 'Thirty-three completed stories, with individual publication histories and James’s writings on the ghost story.'],
+  ['edgar-allan-poe-selected-tales', '1839–1849 · selected tales', 'Ten complete stories, including Gothic fiction and the two investigations of C. Auguste Dupin.'],
+  ['the-house-on-the-borderland', '1908', 'Travellers find a manuscript describing an isolated Irish house, a siege and visions of astronomical time.'],
+  ['the-wendigo', '1910', 'A Canadian hunting expedition accompanies documentary material on the setting and windigo traditions.'],
+  ['the-willows', '1907', 'Two canoeists camp among the flooded islands of the Danube; contextual material examines the real journey.'],
+  ['the-rime-of-the-ancient-mariner', '1798 / 1834', 'A supernatural voyage is told to a wedding guest, with later revisions and the marginal gloss identified.'],
+  ['war-of-the-worlds', '1897–98', 'A survivor records a Martian invasion through Surrey and London, with historical and scientific context.']
+]);
+addSubjectBooks('comedy', [
+  ['the-importance-of-being-earnest', '1895 / 1899', 'The complete three-act play follows invented identities, engagements and the discovery of Jack’s parentage.'],
+  ['the-diary-of-a-nobody', '1888–89 / 1892', 'Charles Pooter records domestic life, work and social embarrassments in his suburban diary.'],
+  ['three-men-in-a-boat', '1889', 'A Thames holiday becomes a sequence of packing, camping and boating difficulties.'],
+  ['a-connecticut-yankee-in-king-arthurs-court', '1889', 'Hank Morgan introduces nineteenth-century technology into a fictional Arthurian Britain.'],
+  ['the-blue-castle', '1926', 'Valancy Stirling’s altered conduct disrupts the expectations of her Ontario family.']
+]);
+addSubjectBooks('tragedy', [
+  ['julius-caesar', 'c.1599 / 1623', 'The assassination of Caesar leads to funeral speeches, civil conflict and the battles at Philippi.'],
+  ['a-dolls-house', '1879', 'Nora’s concealed loan precipitates a crisis in the Helmer household; the play is printed in Sharp’s translation.']
+]);
+addSubjectBooks('detective-fiction', [
+  ['carnacki-the-ghost-finder', '1913 / 1947', 'Carnacki investigates reported hauntings using witnesses, equipment and tests for fraud.'],
+  ['edgar-allan-poe-selected-tales', '1839–1849 · selected tales', 'The selection includes The Murders in the Rue Morgue and The Purloined Letter.'],
+  ['puddnhead-wilson', '1894', 'A murder investigation and fingerprint evidence intersect with a history of exchanged identities and slavery.']
+]);
+addSubjectBooks('satire-political-writing', [
+  ['a-connecticut-yankee-in-king-arthurs-court', '1889', 'Hank’s schools, factories and weapons are placed beside monarchy, slavery and inherited rank.'],
+  ['puddnhead-wilson', '1894', 'The novel examines the legal consequences of racial classification through two exchanged children.'],
+  ['julius-caesar', 'c.1599 / 1623', 'Conspirators and opponents make competing public claims about liberty, power and Rome.'],
+  ['seven-pillars-of-wisdom', '1926 Subscribers’ text', 'Lawrence’s account of the Arab Revolt is accompanied by material examining its political and historical record.'],
+  ['the-chimes', '1844', 'Trotty Veck encounters statistical, punitive and paternal arguments about poverty before the bells show a possible future.']
+]);
+addSubjectBooks('narration-testimony', [
+  ['the-turn-of-the-screw', '1898', 'The governess’s retrospective manuscript reaches the reader through two framing narrators.'],
+  ['the-diary-of-a-nobody', '1888–89 / 1892', 'Pooter’s diary records his own explanations of incidents that other characters understand differently.'],
+  ['seven-pillars-of-wisdom', '1926 Subscribers’ text', 'The edition places a participant’s retrospective war memoir beside sources, despatches and historical evidence.'],
+  ['the-house-on-the-borderland', '1908', 'A manuscript found in a ruined house supplies the account transmitted by a framing narrative.'],
+  ['edgar-allan-poe-selected-tales', '1839–1849 · selected tales', 'Criminal confession, an observer’s account and Dupin’s explanations offer distinct narrative positions.'],
+  ['the-awakening', '1899', 'The narrative follows Edna Pontellier’s thoughts, actions and changing responses to her surroundings.'],
+  ['the-rape-of-lucrece-and-venus-and-adonis', '1593–94', 'Shakespeare’s narrative poems include argument, reported action and Lucrece’s testimony after Tarquin’s assault.'],
+  ['red-badge-of-courage', '1895', 'The battle is followed through Henry Fleming’s limited knowledge and changing explanations of his conduct.']
+]);
+addSubjectBooks('slavery-freedom-abolition', [
+  ['a-connecticut-yankee-in-king-arthurs-court', '1889', 'Hank and Arthur encounter slavery during their journey, and are themselves sold as slaves.'],
+  ['puddnhead-wilson', '1894', 'The exchanged children’s legal identities reveal how slavery and inheritance depend on racial classification.'],
+  ['the-adventures-of-tom-sawyer', '1876', 'The edition places the fictional St Petersburg beside slavery and childhood in Twain’s Missouri.']
+]);
+
+const comedySubject = module.exports.find(subject => subject.slug === 'comedy');
+comedySubject.description = 'A guide to comic form, mistaken identity, social performance and narration in Shakespeare, Wilde, Jerome, the Grossmiths, Twain and Montgomery.';
+comedySubject.introduction.paragraphs.push('The wider selection includes stage comedy, a suburban diary, a boating narrative and novels. Their comic situations use different forms: Wilde’s invented identities are performed before an audience, while Pooter’s diary and Jerome’s travel account present the explanations of a narrator. These prose works extend the guide beyond Shakespeare without classifying all comic writing as a play.');
+const tragedySubject = module.exports.find(subject => subject.slug === 'tragedy');
+tragedySubject.description = 'Tragedy and serious drama in Shakespeare, Marlowe, Webster and Ibsen, with context on choices, authority, public action and domestic conflict.';
+tragedySubject.introduction.paragraphs.push('Ibsen’s A Doll’s House provides a later comparison in serious domestic drama. Its ending does not follow the deaths that close many early modern tragedies; the household’s crisis instead leads to Nora’s departure. Julius Caesar extends the Shakespeare selection through assassination and the ensuing civil war.');
+module.exports.find(subject => subject.slug === 'narration-testimony').description = 'Letters, diaries, autobiography, framed manuscripts, retrospective narration and assembled documents across the Astor catalogue.';
+
+module.exports.push(
+  {
+    slug: 'childhood-and-education', title: 'Childhood and education', navTitle: 'Childhood', kicker: 'Families, schools and learning',
+    description: 'Childhood, schooling and family life in Tom Sawyer, The Railway Children and other Astor novels, with attention to narrators, institutions and historical settings.',
+    search: 'childhood education school family children Tom Sawyer Railway Children Anne Green Gables Alice Huckleberry Finn Jane Eyre Great Expectations',
+    facts: [
+      { value: 'Family', label: 'Parents, guardians and adopted households have different powers and obligations' },
+      { value: 'School', label: 'Lessons, punishments and examinations shape several of these narratives' },
+      { value: 'Voice', label: 'A child’s account and an adult recollection offer different perspectives' },
+      { value: 'History', label: 'Work, class and law affect the opportunities available to children' }
+    ],
+    introduction: { heading: 'The institutions around a child.', paragraphs: [
+      'These books place children in households, schools and communities with rules they are expected to learn. Tom Sawyer bargains with other boys, the railway children adjust to reduced family income, and Anne enters a new household at Green Gables. Each narrative gives those arrangements a particular historical and social setting.',
+      'The guide includes books written for different readerships. A novel about a child is not necessarily a book addressed only to children. Compare the age and position of the character with the voice telling the story: Huck narrates his experience, whereas Jane Eyre and Pip look back on childhood from later life.'
+    ] },
+    methods: [
+      { label: 'Household', title: 'Identify the adults responsible', copy: 'Record who supplies money, food, work, discipline and protection. A parent, guardian, employer or school may exercise different kinds of authority.' },
+      { label: 'Education', title: 'Compare lessons with experience', copy: 'Follow what a child is formally taught and what happens outside the lesson. Use the specific disagreement or incident as evidence.' },
+      { label: 'Narration', title: 'Locate the storyteller in time', copy: 'Distinguish a child’s immediate account from an adult’s memory of childhood, and from a narrator describing the child from outside.' }
+    ],
+    books: [
+      septemberSubjectBook('the-adventures-of-tom-sawyer', '1876', 'School, Sunday school, family discipline and the boys’ own rules in a Missouri town.'),
+      septemberSubjectBook('the-railway-children', '1906', 'Three children adapt to a changed household and establish relationships with railway workers.'),
+      { href: '/books/anne-of-green-gables/', title: 'Anne of Green Gables', author: 'L. M. Montgomery', year: '1908', image: '/Anne%20of%20Green%20Gables%20Main%20Cover.png', copy: 'Anne’s arrival at Green Gables is followed through family life, schooling and her place in Avonlea.' },
+      { href: '/books/alices-adventures-in-wonderland/', title: 'Alice’s Adventures in Wonderland', author: 'Lewis Carroll', year: '1865', image: '/Alice%27s%20Adventures%20in%20Wonderland%20Main%20Cover.png', copy: 'Alice encounters lessons, recitations, games and rules that no longer behave as she expects.' },
+      existingSubjectBooks.get('/books/adventures-of-huckleberry-finn/'),
+      existingSubjectBooks.get('/books/great-expectations/')
+    ],
+    reading: { heading: 'Read the rule and the response together.', paragraphs: [
+      'When a child disobeys, identify the rule before deciding what the incident demonstrates. The account may involve a misunderstanding, a practical difficulty or a conscious rejection. Check how the narrator describes it and how other characters respond.',
+      'Place schooling and family life beside the historical information supplied by each edition. Money, work, enslavement, adoption and access to education do not have the same meaning in every setting. A comparison is more useful when those differences remain visible.'
+    ] },
+    terms: [
+      { term: 'Retrospective narration', copy: 'An account told after the events, often from a later stage of life.' },
+      { term: 'Guardian', copy: 'A person responsible for the care of a child; the legal and practical duties depend on the setting.' },
+      { term: 'Didactic writing', copy: 'Writing intended to teach or instruct, whether or not it takes the form of a school lesson.' },
+      { term: 'Coming-of-age narrative', copy: 'A narrative organised around changes in a young person’s knowledge, position or responsibilities.' }
+    ],
+    resources: [
+      { href: '/reading-routes/', label: 'Reading routes', copy: 'Related selections on home, freedom and voice.' },
+      { href: '/library/', label: 'All Astor books', copy: 'Find other editions by title or author.' }
+    ],
+    sources: [
+      { href: 'https://twain.lib.virginia.edu/tomsawye/tomhompg.html', label: 'University of Virginia: The Adventures of Tom Sawyer' },
+      { href: 'https://www.gutenberg.org/files/1874/1874-h/1874-h.htm', label: 'The Railway Children: complete text' }
+    ]
+  },
+  {
+    slug: 'travel-and-landscape', title: 'Travel and landscape', navTitle: 'Travel', kicker: 'Routes, places and the conditions of a journey',
+    description: 'Journeys and landscapes in memoir, fiction and poetry: the Thames, Danube, Yukon, Arabian campaigns and voyages at sea.',
+    search: 'travel landscape journey memoir poetry river sea voyage Thames Danube Yukon Klondike Lawrence Coleridge Blackwood London Crane Jerome',
+    facts: [
+      { value: 'Routes', label: 'A journey depends on distances, transport and available supplies' },
+      { value: 'Place', label: 'A real location and its literary description are different kinds of evidence' },
+      { value: 'Genre', label: 'Memoir, fiction and poetry make different claims about events' },
+      { value: 'Change', label: 'Later maps and landscapes may differ from those described in a book' }
+    ],
+    introduction: { heading: 'Establish where the travellers are going.', paragraphs: [
+      'The journeys in this selection have practical conditions: boats, currents, camps, provisions, work and physical endurance. Jerome’s Thames holiday, Blackwood’s Danube campsite and the sailors in Crane’s The Open Boat involve different aims and different degrees of danger. The book pages identify their settings and the historical information supplied in each edition.',
+      'Travel writing also requires attention to the form of the account. Seven Pillars of Wisdom is a participant’s retrospective memoir; White Fang follows an animal through fictional settings; and Coleridge’s poems use speakers whose journeys and landscapes cannot be treated as the author’s travel diary. Keep those distinctions when comparing places across books.'
+    ] },
+    methods: [
+      { label: 'Route', title: 'Follow the practical itinerary', copy: 'Check distances, transport, weather and supplies. These details explain what movement is possible and who the traveller depends on.' },
+      { label: 'Evidence', title: 'Separate record from fiction', copy: 'A real journey may provide background for a story without proving that its incidents happened to the author.' },
+      { label: 'Landscape', title: 'Use the appropriate historical map', copy: 'Names, borders, rivers and buildings can change. The edition’s historical geography may explain a difference from the present-day location.' }
+    ],
+    books: [
+      septemberSubjectBook('three-men-in-a-boat', '1889', 'The Thames journey is accompanied by notes on places, prices, boating and camping.'),
+      septemberSubjectBook('seven-pillars-of-wisdom', '1926 Subscribers’ text', 'The Arab Revolt memoir includes accounts of movement, the Hejaz Railway, water and supplies.'),
+      septemberSubjectBook('the-open-boat-and-other-stories', '1898 London collection', 'The seventeen-story collection includes sea travel, Western settings and New York street life.'),
+      septemberSubjectBook('the-willows', '1907', 'The edition documents Blackwood’s Danube journey and subsequent changes to the river landscape.'),
+      septemberSubjectBook('the-wendigo', '1910', 'The Canadian hunting expedition is placed beside geographical and historical context.'),
+      septemberSubjectBook('white-fang', '1906', 'The wolfdog moves through northern camps and working life before arriving in California.'),
+      septemberSubjectBook('call-of-the-wild', '1903', 'Buck’s movement from California to the North is shaped by the Klondike economy and sled work.'),
+      septemberSubjectBook('the-blue-castle', '1926', 'The Ontario setting accompanies historical material on Muskoka and the novel’s composition.'),
+      septemberSubjectBook('selected-poems-of-samuel-taylor-coleridge', '43-poem selection', 'Narrative and conversation poems provide different accounts of journeys, places and remembered landscapes.'),
+      septemberSubjectBook('the-rime-of-the-ancient-mariner', '1798 / 1834', 'A narrated sea voyage appears with the later gloss and a history of the poem’s revisions.'),
+      existingSubjectBooks.get('/books/moby-dick/'),
+      existingSubjectBooks.get('/books/the-odyssey/')
+    ],
+    reading: { heading: 'Keep the traveller’s position in view.', paragraphs: [
+      'Identify whether the account is made during a journey or afterwards. A memoirist can know the outcome of an event that the traveller did not yet understand. A fictional narrator can select and arrange a route for different purposes.',
+      'Then consider what the account permits its traveller to see. Work, money, authority, local knowledge and language affect access. The historical notes offer evidence about those conditions; the narrative provides the particular encounters to examine.'
+    ] },
+    terms: [
+      { term: 'Itinerary', copy: 'The sequence of places and stages in a journey.' },
+      { term: 'Memoir', copy: 'A retrospective account of experiences or events in which the writer took part.' },
+      { term: 'Topography', copy: 'The physical features and arrangement of a place.' },
+      { term: 'Historical geography', copy: 'The study of places and landscapes in relation to earlier periods.' }
+    ],
+    resources: [
+      { href: '/authors/algernon-blackwood/', label: 'Algernon Blackwood', copy: 'The Willows and The Wendigo, with distinct geographical contexts.' },
+      { href: '/authors/jack-london/', label: 'Jack London', copy: 'The Call of the Wild and White Fang.' }
+    ],
+    sources: [
+      { href: 'https://www.jeromekjerome.com/bibliography/books/three-men-in-a-boat-to-say-nothing-of-the-dog/', label: 'Jerome K. Jerome Society: Three Men in a Boat bibliography' },
+      { href: 'https://www.gutenberg.org/ebooks/11438', label: 'The Willows: complete text' },
+      { href: 'https://jacklondonpark.com/product/white-fang/', label: 'Jack London State Historic Park: White Fang' }
+    ]
+  },
+  {
+    slug: 'seasonal-writing', title: 'Seasonal writing and customs', navTitle: 'Seasonal', kicker: 'Christmas, Halloween and the Fifth of November',
+    description: 'Seasonal stories and historical customs across British and American collections, from Dickens’s Christmas books to Halloween and Bonfire Night.',
+    search: 'Christmas Halloween Bonfire Night seasonal writing customs anthology Dickens American Victorian ghost stories holiday publishing',
+    facts: [
+      { value: 'Publication', label: 'A seasonal annual’s printed year may differ from the year it reached readers' },
+      { value: 'Contents', label: 'An anthology may combine fiction, poetry and historical documents' },
+      { value: 'Custom', label: 'Holiday practices have specific histories rather than one universal origin' },
+      { value: 'Afterlives', label: 'Stories can acquire a seasonal association after their first publication' }
+    ],
+    introduction: { heading: 'Distinguish the holiday from the history of the text.', paragraphs: [
+      'The books in this guide include stories written for seasonal publication and works associated with a holiday by later readers. Dickens’s short Christmas books belong to a particular publishing sequence. The stories gathered in Sleepy Hollow and Other American Halloween Stories were not originally written for Halloween; the edition explains how the later association developed.',
+      'The historical collections also examine food, charitable activity, publishing, legislation and celebration. Their complete primary texts stand beside commentary and documents. Read the contents and textual information on each book page to distinguish the original works from the modern research accompanying them.'
+    ] },
+    methods: [
+      { label: 'Date', title: 'Check first publication', copy: 'Distinguish an original story’s date from the later anthology in which it appears and from the period of the customs under discussion.' },
+      { label: 'Contents', title: 'Identify each kind of material', copy: 'Stories, poems, documents and editorial chapters have different functions. A full contents list prevents a collection from being mistaken for one novel.' },
+      { label: 'Custom', title: 'Follow the documentary evidence', copy: 'Laws, prices, magazines, illustrations and advertisements can establish when a practice was recorded or promoted.' }
+    ],
+    books: [
+      septemberSubjectBook('american-christmas-stories', '1823–1905 · anthology', 'Eight stories and one poem accompany researched chapters on American Christmas customs and publishing.'),
+      septemberSubjectBook('cricket-on-the-hearth', '1845', 'Dickens’s domestic Christmas book follows John and Dot Peerybingle through a misunderstanding.'),
+      septemberSubjectBook('the-chimes', '1844', 'Four quarters organise Dickens’s New Year story of Trotty Veck and the bells.'),
+      septemberSubjectBook('the-haunted-man-and-the-ghosts-bargain', '1848', 'Redlaw’s bargain to forget suffering becomes the subject of Dickens’s fifth Christmas book.'),
+      { href: '/books/dickens-at-christmas/', title: 'Dickens at Christmas', author: 'Charles Dickens', year: '1843–1848 · four-book collection', image: '/Dickens%20at%20Christmas%20Main%20Cover.png', copy: 'Four complete Christmas books in one volume, with individual introductions and contextual material.' },
+      existingSubjectBooks.get('/books/sleepy-hollow-and-other-stories/'),
+      { href: '/books/a-victorian-christmas/', title: 'A Victorian Christmas', author: 'Astor Library', year: 'Historical collection', image: '/A%20Victorian%20Christmas%20Main%20Cover.png', copy: 'Customs, objects, publication and labour in the history of the nineteenth-century Christmas.' },
+      { href: '/books/a-victorian-bonfire-night/', title: 'A Victorian Bonfire Night', author: 'James Orchard Halliwell, Douglas Jerrold and others', year: 'Historical collection', image: '/A%20Victorian%20Bonfire%20Night%20Main%20Cover.png', copy: 'Primary texts and researched history concerning the Fifth of November.' }
+    ],
+    reading: { heading: 'Compare what was written with how it was later used.', paragraphs: [
+      'A story’s present seasonal popularity does not by itself identify its original purpose. Start with the first-publication note and the setting of the story, then follow the edition’s account of later reprinting, performance and holiday association.',
+      'For historical customs, ask what each source establishes. A law records a particular legal measure; an advertisement records what a seller offered; a reminiscence records a later account. Their dates and geographical limits matter when describing a holiday’s history.'
+    ] },
+    terms: [
+      { term: 'Anthology', copy: 'A selected collection of separately composed works, sometimes accompanied by new editorial material.' },
+      { term: 'Annual', copy: 'A publication issued for a particular year, often prepared and sold before that year began.' },
+      { term: 'Primary text', copy: 'A work or document reproduced as material for reading and historical study.' },
+      { term: 'Anachronism', copy: 'A detail assigned to a period in which it did not belong.' }
+    ],
+    resources: [
+      { href: '/authors/charles-dickens/', label: 'Charles Dickens', copy: 'The complete catalogue of Dickens works and collections.' },
+      { href: '/subjects/gothic-literature/', label: 'Gothic literature', copy: 'Related supernatural fiction across periods and countries.' }
+    ],
+    sources: [
+      { href: 'https://www.gutenberg.org/cache/epub/653/pg653-images.html', label: 'The Chimes: complete text' },
+      { href: 'https://www.vam.ac.uk/blog/museum-life/chiming-in-the-new-year-with-dickens-2', label: 'Victoria and Albert Museum: The Chimes and the New Year' }
+    ]
+  }
+);
+
+for (const subject of module.exports) {
+  if (subject.books.some(book => !book)) throw new Error(`Missing book data in subject ${subject.slug}`);
+  if (new Set(subject.books.map(book => book.href)).size !== subject.books.length) throw new Error(`Duplicate book in subject ${subject.slug}`);
+  subject.search += ' ' + subject.books.map(book => `${book.title} ${book.author}`).join(' ');
+}

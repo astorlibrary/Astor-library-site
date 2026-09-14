@@ -409,7 +409,7 @@ const editionUpdateBooks = [
     title: 'The Rape of Lucrece and Venus and Adonis',
     author: 'William Shakespeare',
     image: 'The Rape of Lucrece and Venus and Adonis Main Cover.png',
-    purchaseUrl: 'https://mybook.to/ISU31lH',
+    purchaseUrl: 'https://mybook.to/Xsfo',
     label: 'Two narrative poems · 1593–94',
     deck: 'Shakespeare’s two long narrative poems are presented complete in one edition, with line-by-line same-page notes and material on desire, resistance, violence, grief, testimony and political change.',
     editionIncludes: [

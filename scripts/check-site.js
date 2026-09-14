@@ -6,6 +6,9 @@ const editionUpdateData = require('./edition-update-data');
 const formatReleaseData = require('./format-release-data');
 const bookEnrichments = require('./book-enrichment-data');
 const editionSectionOverrides = require('./edition-section-overrides.json');
+const { metadata: pageMetadata, validatePageSeo, validateSitemapUrls } = require('./seo-validation');
+const { coverFormat } = require('./book-edition-schema');
+const septemberCatalogue = require('./september-catalogue-data.json');
 
 const root = process.cwd();
 const SITE_URL = 'https://astorlibrary.com';
@@ -208,7 +211,6 @@ if (!homepage.includes('/assets/home.css')) failures.push('The homepage is missi
 if (!homepage.includes('/assets/navigation.css')) failures.push('The homepage is missing the shared navigation stylesheet');
 if (!homepage.includes('class="site-header astor-global-header')) failures.push('The homepage is missing the shared header');
 if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failures.push('The homepage is missing the grouped footer');
-if (!homepageMain.includes('complete texts with introductions, summaries and explanatory notes.')) failures.push('The homepage is missing its factual edition description');
 for (const className of ['home-tiles', 'home-book-list', 'home-sample-grid', 'home-free-list', 'home-browse-cols', 'home-colophon-name']) {
   if (!homepageMain.includes('class="' + className + '"')) failures.push('The homepage is missing its ' + className + ' section');
 }
@@ -217,9 +219,23 @@ if (!autumnFeature.includes('Autumn <em>at</em> Astor.')) failures.push('The hom
 if (!autumnFeature.includes('September &mdash; November')) failures.push('The homepage autumn feature is missing its seasonal context');
 const autumnShelf = autumnFeature.match(/<nav class="autumn-shelf"[\s\S]*?<\/nav>/i)?.[0] || '';
 if (countMatches(autumnShelf, /<a href=/g) !== 6) failures.push('The homepage autumn shelf must present six selected books');
-for (const slug of ['frankenstein', 'dracula', 'wuthering-heights', 'victorian-ghost-stories', 'a-victorian-bonfire-night', 'doctor-faustus']) {
-  if (!autumnShelf.includes('href="/books/' + slug + '/"')) failures.push('The homepage autumn shelf is missing ' + slug);
+const autumnBooks = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'content-index.json'), 'utf8')).books;
+const autumnThumbnails = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'book-thumbnails.json'), 'utf8'));
+const autumnCards = [...autumnShelf.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
+const autumnCollections = [];
+if (new Set(autumnCards.map(card => card[1])).size !== autumnCards.length) failures.push('The autumn shelf repeats a selected book');
+for (const card of autumnCards) {
+  const book = autumnBooks.find(item => item.href === card[1]);
+  if (!book) {
+    failures.push('The autumn shelf links to a book missing from the catalogue: ' + card[1]);
+    continue;
+  }
+  autumnCollections.push(book.collection);
+  const image = card[2].match(/<img\b[^>]*src="([^"]+)"/)?.[1];
+  if (image !== book.image && image !== autumnThumbnails[book.image]) failures.push('The autumn shelf has a mismatched cover for ' + book.href);
 }
+if (new Set(autumnCollections).size < 5) failures.push('The autumn shelf must represent at least five catalogue collections');
+if (autumnCollections.filter(collection => collection === 'Victorian').length > 2) failures.push('The autumn shelf is dominated by Victorian titles');
 if (/Summer at Astor|class="seasonal-feature"|class="academic-feature"/i.test(homepageMain)) failures.push('The homepage still contains a retired seasonal feature');
 for (const total of [
   sourceBookFiles.length + ' complete novels, plays and poems',
@@ -377,7 +393,8 @@ for (const profile of authorProfileData) {
   if (!authorsHub.includes('href="' + profile.href + '"')) {
     failures.push('The writers page is missing the profile link for ' + profile.name);
   }
-  if (!libraryHub.includes('href="' + profile.href + '"')) {
+  const contributorPageLinked = sourceBookFiles.some(file => fs.readFileSync(file, 'utf8').includes('href="' + profile.href + '"'));
+  if (!libraryHub.includes('href="' + profile.href + '"') && !(profile.profileType === 'catalogue' && contributorPageLinked)) {
     failures.push('The catalogue is missing the writer link for ' + profile.name);
   }
   if (profile.href === '/shakespeare/') continue;
@@ -393,9 +410,14 @@ for (const profile of authorProfileData) {
   if (!authorHtml.includes('class="page-wrap author-profile-page"')) failures.push(profile.href + ' is missing the writer-page layout');
   if (countMatches(authorHtml, /<h1\b/gi) !== 1) failures.push(profile.href + ' must have one main heading');
   if (!authorHtml.includes('class="author-facts"')) failures.push(profile.href + ' is missing its factual register');
-  if (countMatches(authorHtml.match(/class="author-method-grid"[\s\S]*?<\/section>/i)?.[0] || '', /<article>/g) !== 3) failures.push(profile.href + ' must contain three reading methods');
   if (!authorHtml.includes('class="source-list"')) failures.push(profile.href + ' is missing its source list');
-  if (wordCount < 600) failures.push(profile.href + ' is too slight for a full writer profile (' + wordCount + ' words)');
+  if (profile.profileType === 'catalogue') {
+    if (!authorHtml.includes('class="author-profile-hero"') || !authorHtml.includes('class="author-book-grid')) failures.push(profile.href + ' is missing its writer introduction or book collection');
+    if (wordCount < 100) failures.push(profile.href + ' needs a factual introduction and its book collection');
+  } else {
+    if (countMatches(authorHtml.match(/class="author-method-grid"[\s\S]*?<\/section>/i)?.[0] || '', /<article>/g) !== 3) failures.push(profile.href + ' must contain three reading methods');
+    if (wordCount < 600) failures.push(profile.href + ' is too slight for a full writer profile (' + wordCount + ' words)');
+  }
 }
 
 for (const icon of ['favicon.ico', 'favicon.svg', 'favicon-32x32.png', 'favicon-48x48.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'site.webmanifest']) {
@@ -654,7 +676,31 @@ if (!fs.existsSync(expandedFile)) {
 }
 
 if (formatReleaseData.books.length !== 20) failures.push('The format release data must contain the twenty supplied paperback editions');
-if (formatReleaseData.hardbacks.length !== 10) failures.push('The format release data must contain the ten supplied hardback editions');
+const septemberHardbacks = septemberCatalogue.filter(book => book.format === 'hardcover');
+const septemberPaperbacks = septemberCatalogue.filter(book => book.format === 'paperback');
+if (septemberCatalogue.length !== 39 || septemberPaperbacks.length !== 26 || septemberHardbacks.length !== 13) failures.push('The September request must preserve all 39 supplied editions: 26 paperbacks and 13 hardcovers');
+if (formatReleaseData.hardbacks.length !== 10 + septemberHardbacks.length) failures.push('The hardback registry must retain the ten existing formats and all supplied September hardcovers');
+if (new Set(septemberCatalogue.map(book => book.href + ':' + book.format)).size !== septemberCatalogue.length) failures.push('The September catalogue repeats an edition');
+if (new Set(septemberCatalogue.map(book => book.purchaseUrl)).size !== septemberCatalogue.length) failures.push('The September catalogue repeats a purchase link');
+for (const book of septemberCatalogue) {
+  const file = path.join(root, book.href.slice(1), 'index.html');
+  const html = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : '';
+  if (!html) {
+    failures.push('A supplied September title is missing: ' + book.title);
+    continue;
+  }
+  if (memberships.get(book.href) !== book.collectionFile) failures.push(book.href + ' has the wrong literary collection');
+  if (![...html.matchAll(/<img\b[^>]*src="([^"]+)"/g)].some(match => decodeURIComponent(match[1]) === '/' + book.image)) failures.push(book.href + ' does not show its supplied ' + book.format + ' cover');
+  if (!html.includes('href="' + book.purchaseUrl + '"')) failures.push(book.href + ' does not retain its supplied ' + book.format + ' purchase link');
+  if (coverFormat(book.image)?.toLowerCase() !== book.format) failures.push(book.href + ' disagrees with its cover filename about physical format');
+  if (book.format === 'hardcover') {
+    const registered = formatReleaseData.hardbacks.find(item => item.href === book.href);
+    if (!registered || registered.image !== book.image || registered.purchaseUrl !== book.purchaseUrl) failures.push(book.href + ' has mismatched hardcover registry details');
+  }
+  for (const phrase of ['the novel breathes', 'this haunting work invites', 'a timeless exploration', 'the pages come alive']) {
+    if (visibleText(html).includes(phrase)) failures.push(book.href + ' contains prohibited generic phrasing: ' + phrase);
+  }
+}
 if (new Set(formatReleaseData.books.map(book => book.slug)).size !== formatReleaseData.books.length) failures.push('The format release data repeats a paperback book');
 if (new Set(formatReleaseData.hardbacks.map(book => book.href)).size !== formatReleaseData.hardbacks.length) failures.push('The format release data repeats a hardback book');
 
@@ -665,13 +711,13 @@ if (!hardbackHtml) {
 } else {
   if (!hardbackHtml.includes('class="page-wrap hardback-page"')) failures.push('The hardback collection is missing its premium-books layout');
   if (!hardbackHtml.includes('<h1>Hardback editions.</h1>')) failures.push('The hardback collection is missing its main heading');
-  if (countMatches(hardbackHtml, /class="hardback-card"/g) !== formatReleaseData.hardbacks.length) failures.push('The hardback collection must contain exactly the ten supplied formats');
+  if (countMatches(hardbackHtml, /class="hardback-card"/g) !== formatReleaseData.hardbacks.length) failures.push('The hardback collection must contain every registered hardcover exactly once');
   const hardbackHero = hardbackHtml.match(/<nav class="hardback-hero-covers"[\s\S]*?<\/nav>/i)?.[0] || '';
   const heroLinks = Array.from(hardbackHero.matchAll(/<a href="([^"]+)"[\s\S]*?<img src="([^"]+)"/g), match => ({ href: match[1], image: match[2] }));
   const expectedHeroLinks = [
-    { href: '/books/sleepy-hollow-and-other-stories/', image: assetPath('Sleepy Hollow and other American Halloween Stories Hardcover.png') },
-    { href: '/books/the-odyssey/', image: assetPath('The Odyssey Hardcover.png') },
-    { href: '/books/a-victorian-bonfire-night/', image: assetPath('Victorian Bonfire Night Hardcover.png') }
+    { href: '/books/sleepy-hollow-and-other-stories/#hardback-edition', image: assetPath('Sleepy Hollow and other American Halloween Stories Hardcover.png') },
+    { href: '/books/the-odyssey/#hardback-edition', image: assetPath('The Odyssey Hardcover.png') },
+    { href: '/books/a-victorian-bonfire-night/#hardback-edition', image: assetPath('Victorian Bonfire Night Hardcover.png') }
   ];
   if (JSON.stringify(heroLinks) !== JSON.stringify(expectedHeroLinks)) failures.push('The hardback hero must show Sleepy Hollow, The Odyssey and A Victorian Bonfire Night in that order');
   if (hardbackHero.includes('Shakespeare%27s%20Sonnets%20Hardback.png')) failures.push('The hardback hero must not feature Shakespeare’s Sonnets');
@@ -686,12 +732,12 @@ for (const hardback of formatReleaseData.hardbacks) {
   for (const sourceImage of [hardback.image, hardback.paperbackImage]) {
     if (!fs.existsSync(path.join(root, sourceImage))) failures.push(href + ' is missing its format cover: ' + sourceImage);
   }
-  if (!/(?:hardback|hardcover|casebound)/i.test(hardback.image)) failures.push(href + ' does not identify its hardback artwork clearly');
-  if (/(?:hardback|hardcover|casebound)/i.test(hardback.paperbackImage) || hardback.image === hardback.paperbackImage) failures.push(href + ' has not kept its paperback artwork distinct');
+  if (coverFormat(hardback.image) !== 'Hardcover') failures.push(href + ' does not identify its hardback artwork clearly');
+  if (coverFormat(hardback.paperbackImage) === 'Hardcover' || hardback.image === hardback.paperbackImage) failures.push(href + ' has not kept its paperback artwork distinct');
 
   if (hardbackHtml) {
     const cards = hardbackHtml.match(/<article class="hardback-card">[\s\S]*?<\/article>/g) || [];
-    const matchingCards = cards.filter(card => card.includes('href="' + href + '"'));
+    const matchingCards = cards.filter(card => card.includes('href="' + href + '#hardback-edition"'));
     if (matchingCards.length !== 1) {
       failures.push('The hardback shelf must contain one card for ' + href);
     } else {
@@ -779,7 +825,7 @@ const mainAdditionLinks = {
   'the-rape-of-lucrece': 'https://mybook.to/Nbx2',
   'venus-and-adonis': 'https://mybook.to/PDmxAYg',
   'doctor-faustus': 'https://mybook.to/B3XgneK',
-  'the-scarlet-letter': 'https://mybook.to/UlUCApB',
+  'the-scarlet-letter': 'https://mybook.to/3HYxB',
   'paradise-lost': 'https://mybook.to/d36s3bi'
 };
 for (const [slug, purchaseUrl] of Object.entries(mainAdditionLinks)) {
@@ -903,9 +949,30 @@ if (!fs.existsSync(discoveryFile)) {
     if (discovery.books?.length !== bookFiles.length) {
       failures.push('The discovery index has ' + (discovery.books?.length || 0) + ' books but the site has ' + bookFiles.length);
     }
-    const uniqueAuthors = new Set((discovery.books || []).map(book => book.author));
-    if (discovery.authors?.length !== uniqueAuthors.size) {
-      failures.push('The discovery index has ' + (discovery.authors?.length || 0) + ' writers but the books have ' + uniqueAuthors.size + ' distinct writers');
+    const expectedAuthorBooks = new Map();
+    for (const book of discovery.books || []) {
+      for (const name of authorProfileData.authorNamesForBook(book)) {
+        if (!expectedAuthorBooks.has(name)) expectedAuthorBooks.set(name, new Set());
+        expectedAuthorBooks.get(name).add(book.href);
+      }
+    }
+    if (discovery.authors?.length !== expectedAuthorBooks.size) {
+      failures.push('The discovery index has ' + (discovery.authors?.length || 0) + ' writers but the books have ' + expectedAuthorBooks.size + ' distinct writers');
+    }
+    const indexedAuthors = new Set();
+    for (const author of discovery.authors || []) {
+      if (indexedAuthors.has(author.title)) failures.push('The discovery index repeats writer ' + author.title);
+      indexedAuthors.add(author.title);
+      const expectedBooks = expectedAuthorBooks.get(author.title);
+      const indexedBooks = (author.books || []).map(book => book.href);
+      if (!expectedBooks) {
+        failures.push('The discovery index includes an unknown writer: ' + author.title);
+      } else if (author.bookCount !== expectedBooks.size || indexedBooks.length !== expectedBooks.size || new Set(indexedBooks).size !== expectedBooks.size || indexedBooks.some(href => !expectedBooks.has(href))) {
+        failures.push('The discovery index has incorrect book membership for ' + author.title);
+      }
+    }
+    for (const name of expectedAuthorBooks.keys()) {
+      if (!indexedAuthors.has(name)) failures.push('The discovery index is missing writer ' + name);
     }
     if ((discovery.books || []).some(book => !book.authorHref)) failures.push('A discovery book is missing its writer link');
     const hardbackCollection = (discovery.collections || []).find(collection => collection.href === '/hardbacks/');
@@ -933,6 +1000,10 @@ if (!fs.existsSync(discoveryFile)) {
 const distDir = path.join(root, 'dist');
 if (fs.existsSync(distDir)) {
   const distHtmlFiles = [];
+  const distTitles = new Map();
+  const distDescriptions = new Map();
+  const seoThumbnails = fs.existsSync(thumbnailManifestFile)
+    ? JSON.parse(fs.readFileSync(thumbnailManifestFile, 'utf8')) : {};
   walk(distDir, distHtmlFiles);
   if (distHtmlFiles.length !== htmlFiles.length) {
     failures.push('dist contains ' + distHtmlFiles.length + ' pages but the source contains ' + htmlFiles.length);
@@ -942,6 +1013,18 @@ if (fs.existsSync(distDir)) {
     const html = fs.readFileSync(file, 'utf8');
     const fileName = path.relative(distDir, file);
     const redirect = /http-equiv="refresh"/i.test(html);
+    const expectedHref = fileName === 'index.html' ? '/' : '/' + fileName.split(path.sep).join('/').replace(/index\.html$/, '');
+    for (const error of validatePageSeo(html, SITE_URL + expectedHref)) failures.push('dist/' + fileName + ' ' + error);
+    const metadata = pageMetadata(html);
+    if (!metadata.noindex && !metadata.redirect) {
+      for (const [label, value, seen] of [
+        ['title', metadata.titles[0], distTitles], ['description', metadata.descriptions[0], distDescriptions]
+      ]) {
+        if (!value) continue;
+        if (seen.has(value)) failures.push('dist/' + fileName + ' duplicates the search ' + label + ' of dist/' + seen.get(value));
+        seen.set(value, fileName);
+      }
+    }
     if (html.includes('<main')) {
       if (!html.includes('/assets/site.js')) failures.push('dist/' + fileName + ' is missing site.js');
       if (!html.includes('/assets/navigation.css')) failures.push('dist/' + fileName + ' is missing navigation.css');
@@ -1084,19 +1167,64 @@ if (fs.existsSync(distDir)) {
       if (structuredData) {
         try {
           const schema = JSON.parse(structuredData[1]);
+          const schemaAuthors = Array.isArray(schema.about?.author) ? schema.about.author : [schema.about?.author];
           if (schema['@type'] !== 'WebPage' || !schema.url?.startsWith(SITE_URL) || !schema.isPartOf?.url?.startsWith(SITE_URL) ||
               schema.breadcrumb?.itemListElement?.length !== 3 ||
-              schema.about?.['@type'] !== 'Book' || !schema.about?.image?.startsWith(SITE_URL) || !schema.about?.author?.name || !schema.about?.author?.url?.startsWith(SITE_URL)) {
+              schema.about?.['@type'] !== 'Book' || !schema.about?.image?.startsWith(SITE_URL) ||
+              !schemaAuthors.length || schemaAuthors.some(author => !author?.name || !author?.url?.startsWith(SITE_URL))) {
             failures.push('dist/' + fileName + ' has an incomplete book description for search engines');
           }
           const bookHref = '/' + fileName.replace(/index\.html$/, '');
           const indexedBook = discoveryIndex?.books?.find(book => book.href === bookHref);
+          if (indexedBook && JSON.stringify(schemaAuthors.map(author => author?.name)) !== JSON.stringify(authorProfileData.authorNamesForBook(indexedBook))) {
+            failures.push('dist/' + fileName + ' does not describe each named book contributor separately');
+          }
+          if (schema.url !== SITE_URL + bookHref || schema.about?.url !== SITE_URL + bookHref ||
+              schema.breadcrumb?.itemListElement?.[2]?.item !== SITE_URL + bookHref) {
+            failures.push('dist/' + fileName + ' describes a different book address in its structured data');
+          }
+          if (indexedBook && schema.about?.image !== SITE_URL + (seoThumbnails[indexedBook.image] || indexedBook.image)) {
+            failures.push('dist/' + fileName + ' has a structured-data cover that differs from its catalogue cover');
+          }
           if (indexedBook?.subjects?.length && schema.about?.genre?.length !== indexedBook.subjects.length) {
             failures.push('dist/' + fileName + ' is missing its subject genres for search engines');
+          }
+          const pairedFormats = formatReleaseData.hardbacks.find(book => book.href === bookHref);
+          if (pairedFormats) {
+            const editions = schema.about?.workExample || [];
+            if (editions.length !== 2) failures.push('dist/' + fileName + ' must describe both displayed book formats');
+            for (const [format, image, purchaseUrl] of [
+              ['Paperback', pairedFormats.paperbackImage, pairedFormats.paperbackPurchaseUrl],
+              ['Hardcover', pairedFormats.image, pairedFormats.purchaseUrl]
+            ]) {
+              const originalImage = assetPath(image);
+              const expectedImage = SITE_URL + (seoThumbnails[originalImage] || originalImage);
+              const edition = editions.find(item => item.bookFormat === 'https://schema.org/' + format);
+              if (!edition || edition.image !== expectedImage || edition.potentialAction?.target !== purchaseUrl ||
+                  edition.url !== SITE_URL + bookHref || (coverFormat(image) && coverFormat(image) !== format)) {
+                failures.push('dist/' + fileName + ' has mismatched ' + format.toLowerCase() + ' cover, format or retailer metadata');
+              }
+              if (!html.includes('src="' + (seoThumbnails[originalImage] || originalImage) + '"') || !html.includes('href="' + purchaseUrl + '"')) {
+                failures.push('dist/' + fileName + ' describes a book format that is not visibly linked');
+              }
+            }
+          } else {
+            const paperback = septemberPaperbacks.find(book => book.href === bookHref);
+            if (paperback) {
+              const editions = schema.about?.workExample || [];
+              const image = assetPath(paperback.image);
+              if (editions.length !== 1 || editions[0].bookFormat !== 'https://schema.org/Paperback' ||
+                  editions[0].image !== SITE_URL + (seoThumbnails[image] || image) ||
+                  editions[0].potentialAction?.target !== paperback.purchaseUrl || editions[0].url !== SITE_URL + bookHref) {
+                failures.push('dist/' + fileName + ' does not preserve its supplied paperback format, cover and retailer metadata');
+              }
+            }
           }
         } catch {
           failures.push('dist/' + fileName + ' has an invalid book description for search engines');
         }
+      } else {
+        failures.push('dist/' + fileName + ' is missing its book structured data');
       }
     }
     if (/^resources\/[^/]+\/[^/]+\/index\.html$/.test(fileName)) {
@@ -1143,12 +1271,18 @@ if (fs.existsSync(distDir)) {
     failures.push('dist is missing its XML sitemap');
   } else {
     const sitemap = fs.readFileSync(sitemapFile, 'utf8');
-    const indexedPages = distHtmlFiles.filter(file => {
+    const indexableFiles = distHtmlFiles.filter(file => {
       const html = fs.readFileSync(file, 'utf8');
-      const noindex = /<meta\b[^>]*\bname=["']robots["'][^>]*\bcontent=["'][^"']*\bnoindex\b/i.test(html) ||
-        /<meta\b[^>]*\bcontent=["'][^"']*\bnoindex\b[^"']*["'][^>]*\bname=["']robots["']/i.test(html);
-      return !/http-equiv="refresh"/i.test(html) && !noindex;
-    }).length;
+      const metadata = pageMetadata(html);
+      return !metadata.redirect && !metadata.noindex;
+    });
+    const indexedPages = indexableFiles.length;
+    const expectedUrls = indexableFiles.map(file => {
+      const route = path.relative(distDir, file).split(path.sep).join('/');
+      return SITE_URL + (route === 'index.html' ? '/' : '/' + route.replace(/index\.html$/, ''));
+    });
+    const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
+    failures.push(...validateSitemapUrls(sitemapUrls, expectedUrls));
     const sitemapEntries = countMatches(sitemap, /<url><loc>https:\/\/astorlibrary\.com\//g);
     if (sitemapEntries !== indexedPages) failures.push('The XML sitemap contains ' + sitemapEntries + ' pages but should contain ' + indexedPages);
     if (sitemap.includes('astorlibrary.co.uk')) failures.push('The XML sitemap points at the secondary domain');

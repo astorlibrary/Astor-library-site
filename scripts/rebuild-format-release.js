@@ -123,10 +123,10 @@ function validateReleaseData() {
     validateAsset(hardback.paperbackImage, `${label} paperback cover`);
     validatePurchaseUrl(hardback.purchaseUrl, `${label} purchase URL`);
     validatePurchaseUrl(hardback.paperbackPurchaseUrl, `${label} paperback purchase URL`);
-    if (!/(?:hardback|hardcover|casebound)/i.test(hardback.image)) {
+    if (!/(?:hard[\s_-]*(?:back|cover)|casebound)/i.test(hardback.image)) {
       throw new Error(`${label} cover filename does not identify hardback artwork: ${hardback.image}`);
     }
-    if (/(?:hardback|hardcover|casebound)/i.test(hardback.paperbackImage) || hardback.paperbackImage === hardback.image) {
+    if (/(?:hard[\s_-]*(?:back|cover)|casebound)/i.test(hardback.paperbackImage) || hardback.paperbackImage === hardback.image) {
       throw new Error(`${label} paperback artwork is not clearly distinct from the hardback cover`);
     }
   }
@@ -137,10 +137,10 @@ function formatPanel(book) {
   const headingId = `edition-formats-${book.slug}`;
   return `${formatStart}
 <section class="edition-format-panel" aria-labelledby="${headingId}">
-  <div class="edition-format-intro"><p class="kicker">Available formats</p><h2 id="${headingId}">Paperback and hardback.</h2><p>Choose the format that suits your reading or shelf. Both editions contain the same text and editorial material; each retailer link opens the cover shown below.</p></div>
+  <div class="edition-format-intro"><p class="kicker">Available formats</p><h2 id="${headingId}">Paperback and hardback.</h2><p>Choose the format that suits your reading or shelf. Each format has its own cover and retailer link below.</p></div>
   <div class="edition-format-grid">
-    <article class="edition-format-card is-paperback"><a class="edition-format-cover" href="${escapeHtml(book.paperbackPurchaseUrl)}" aria-label="View the paperback edition of ${title}"><img src="${assetPath(book.paperbackImage)}" alt="Astor Library ${title} paperback cover" loading="lazy"></a><div class="edition-format-copy"><p class="edition-format-label">Paperback edition</p><h3><em>${title}</em></h3><p>The regular Astor paperback, with the text and editorial material described on this page.</p><a class="button primary" href="${escapeHtml(book.paperbackPurchaseUrl)}">View paperback edition</a></div></article>
-    <article class="edition-format-card is-hardback"><a class="edition-format-cover" href="${escapeHtml(book.purchaseUrl)}" aria-label="View the hardback edition of ${title}"><img src="${assetPath(book.image)}" alt="Astor Library ${title} hardback cover" loading="lazy"></a><div class="edition-format-copy"><p class="edition-format-label">Hardback edition</p><h3><em>${title}</em></h3><p>${escapeHtml(book.editorial)}</p><a class="button secondary" href="${escapeHtml(book.purchaseUrl)}">View hardback edition</a></div></article>
+    <article class="edition-format-card is-paperback" id="paperback-edition"><a class="edition-format-cover" href="${escapeHtml(book.paperbackPurchaseUrl)}" aria-label="View the paperback edition of ${title}"><img src="${assetPath(book.paperbackImage)}" alt="Astor Library ${title} paperback cover" loading="lazy"></a><div class="edition-format-copy"><p class="edition-format-label">Paperback edition</p><h3><em>${title}</em></h3><p>The regular Astor paperback, with the text and editorial material described on this page.</p><a class="button primary" href="${escapeHtml(book.paperbackPurchaseUrl)}">View paperback edition</a></div></article>
+    <article class="edition-format-card is-hardback" id="hardback-edition"><a class="edition-format-cover" href="${escapeHtml(book.purchaseUrl)}" aria-label="View the hardback edition of ${title}"><img src="${assetPath(book.image)}" alt="Astor Library ${title} hardback cover" loading="lazy"></a><div class="edition-format-copy"><p class="edition-format-label">Hardback edition</p><h3><em>${title}</em></h3><p>${escapeHtml(book.editorial)}</p><a class="button secondary" href="${escapeHtml(book.purchaseUrl)}">View hardback edition</a></div></article>
   </div>
 </section>
 ${formatEnd}`;
@@ -173,8 +173,8 @@ function header() {
 function hardbackCard(book) {
   const title = escapeHtml(book.title);
   return `<article class="hardback-card">
-  <a class="hardback-cover" href="${escapeHtml(book.href)}"><img src="${assetPath(book.image)}" alt="Astor Library ${title} hardback cover" loading="lazy"></a>
-  <div class="hardback-card-copy"><p class="hardback-format">Hardback edition</p><h3><a href="${escapeHtml(book.href)}"><em>${title}</em></a></h3><p class="hardback-author">${escapeHtml(book.author)}</p><p>${escapeHtml(book.deck)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(book.href)}">Open book page</a><a class="button secondary" href="${escapeHtml(book.purchaseUrl)}">View hardback</a></div></div>
+  <a class="hardback-cover" href="${escapeHtml(book.href)}#hardback-edition"><img src="${assetPath(book.image)}" alt="Astor Library ${title} hardback cover" loading="lazy"></a>
+  <div class="hardback-card-copy"><p class="hardback-format">Hardback edition</p><h3><a href="${escapeHtml(book.href)}#hardback-edition"><em>${title}</em></a></h3><p class="hardback-author">${escapeHtml(book.author)}</p><p>${escapeHtml(book.deck)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(book.href)}#hardback-edition">Open book page</a><a class="button secondary" href="${escapeHtml(book.purchaseUrl)}">View hardback</a></div></div>
 </article>`;
 }
 
@@ -205,7 +205,7 @@ function hardbackPage(hardbacks) {
   const heroCovers = heroBooks.map((book, index) => {
     const title = escapeHtml(book.title);
     const loading = index === 1 ? ' fetchpriority="high"' : ' loading="lazy"';
-    return `<a href="${escapeHtml(book.href)}" aria-label="Open ${title}"><img src="${assetPath(book.image)}" alt=""${loading} decoding="async"></a>`;
+    return `<a href="${escapeHtml(book.href)}#hardback-edition" aria-label="Open ${title}"><img src="${assetPath(book.image)}" alt=""${loading} decoding="async"></a>`;
   }).join('');
   const sections = groups.map(([collection, books], index) => {
     const id = 'hardbacks-' + collection.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');

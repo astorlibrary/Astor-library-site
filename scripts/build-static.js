@@ -1,12 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 const authorProfileData = require('./author-profiles');
+const { metadata: pageMetadata } = require('./seo-validation');
+const { hardbacks } = require('./format-release-data');
+const { bookEditionSchemas, paperbackEditionSchema } = require('./book-edition-schema');
+const septemberCatalogue = require('./september-catalogue-data.json');
 
 const root = process.cwd();
 const outDir = path.join(root, 'dist');
 const SITE_URL = 'https://astorlibrary.com';
-// This date changes only when a site-wide release materially updates every page.
-const SITE_LASTMOD = '2026-08-25';
 const discoveryFile = path.join(root, 'assets', 'content-index.json');
 const discovery = fs.existsSync(discoveryFile)
   ? JSON.parse(fs.readFileSync(discoveryFile, 'utf8'))
@@ -181,6 +183,14 @@ function addBookStructuredData(html, source) {
   if (!context) return html;
   const { book, collection } = context;
   if (!book) return html;
+  const pairedFormats = hardbacks.find(edition => edition.href === book.href);
+  const suppliedPaperback = septemberCatalogue.find(edition => edition.href === book.href && edition.format === 'paperback');
+  const editionImageUrl = filename => absoluteUrl(optimisedImage('/' + encodeURIComponent(filename).replace(/'/g, '%27')));
+  const bookAuthors = authorProfileData.authorNamesForBook(book).map(name => ({
+    '@type': name === 'Astor Library' ? 'Organization' : 'Person',
+    name,
+    url: absoluteUrl(discovery.authors?.find(author => author.title === name)?.href || book.authorHref || '/authors/')
+  }));
 
   const schema = {
     '@context': 'https://schema.org',
@@ -221,11 +231,12 @@ function addBookStructuredData(html, source) {
       url: absoluteUrl(book.href),
       image: absoluteUrl(optimisedImage(book.image)),
       genre: (book.subjects || []).map(subject => subject.title),
-      author: {
-        '@type': 'Person',
-        name: book.author,
-        url: book.authorHref ? absoluteUrl(book.authorHref) : undefined
-      }
+      author: bookAuthors.length === 1 ? bookAuthors[0] : bookAuthors,
+      ...(pairedFormats ? {
+        workExample: bookEditionSchemas(pairedFormats, absoluteUrl(book.href), editionImageUrl)
+      } : suppliedPaperback ? {
+        workExample: [paperbackEditionSchema(suppliedPaperback, absoluteUrl(book.href), editionImageUrl)]
+      } : {})
     }
   };
 
@@ -1108,9 +1119,8 @@ function collectSitemap(directory) {
     }
     if (!entry.isFile() || path.extname(entry.name) !== '.html') continue;
     const html = fs.readFileSync(fullPath, 'utf8');
-    if (/http-equiv="refresh"/i.test(html)) continue;
-    if (/<meta\b[^>]*\bname=["']robots["'][^>]*\bcontent=["'][^"']*\bnoindex\b/i.test(html) ||
-        /<meta\b[^>]*\bcontent=["'][^"']*\bnoindex\b[^"']*["'][^>]*\bname=["']robots["']/i.test(html)) continue;
+    const metadata = pageMetadata(html);
+    if (metadata.redirect || metadata.noindex) continue;
     const image = html.match(/<meta property="og:image" content="([^"]+)"/i)?.[1] || '';
     const imageTitle = html.match(/<meta property="og:title" content="([^"]+)"/i)?.[1] || '';
     sitemapUrls.push({
@@ -1131,7 +1141,9 @@ const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
         (page.imageTitle ? '<image:title>' + escapeHtml(decodeEntities(page.imageTitle)) + '</image:title>' : '') +
         '</image:image>'
       : '';
-    return '  <url><loc>' + escapeHtml(page.url) + '</loc><lastmod>' + SITE_LASTMOD + '</lastmod>' + image + '</url>';
+    // Omit optional lastmod until each page has a verified content-change date.
+    // A release-wide constant misdates newer pages and gives crawlers false signals.
+    return '  <url><loc>' + escapeHtml(page.url) + '</loc>' + image + '</url>';
   }).join('\n') +
   '\n</urlset>\n';
 fs.writeFileSync(path.join(outDir, 'sitemap.xml'), sitemap);

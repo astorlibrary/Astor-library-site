@@ -47,7 +47,7 @@ const books = [
     author: 'Elizabeth Gaskell, Charles Dickens and others',
     image: 'Victorian Ghost Stories Main Cover.png',
     purchaseUrl: 'https://mybook.to/SzGnyfD',
-    label: 'Annotated collection · 1844 to the century’s end',
+    label: 'Annotated collection · 1844–1901',
     deck: 'Eight complete stories, four poems and documentary material follow the Victorian supernatural from haunted houses and phantom coaches to séances, railway disasters and psychical research.',
     editionIncludes: [
       'Eight complete stories and four complete poems',
@@ -58,7 +58,7 @@ const books = [
     facts: [
       { label: 'Eight stories', text: 'The collection runs from The Old Nurse’s Story to The Judge’s House.' },
       { label: 'Four poems', text: 'Complete poems sit beside the prose rather than appearing only as extracts.' },
-      { label: '1844 onwards', text: 'The chronology follows the Victorian supernatural to the end of the nineteenth century.' },
+      { label: '1844–1901', text: 'The collection brings together stories, poems and documents across these years.' },
       { label: 'Documentary context', text: 'Spiritualism and psychical research are represented through historical documents.' }
     ],
     overview: [
@@ -910,5 +910,7 @@ const remainingBooks = [
 ];
 
 books.push(...remainingBooks);
+
+hardbacks.push(...require('./september-catalogue-data.json').filter(book => book.format === 'hardcover'));
 
 module.exports = { books, hardbacks };

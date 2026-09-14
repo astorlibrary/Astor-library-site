@@ -7,6 +7,7 @@ const editionUpdateData = require('./edition-update-data');
 require('./rebuild-shakespeare-additions');
 require('./rebuild-main-additions');
 require('./rebuild-edition-update');
+require('./rebuild-september-catalogue');
 require('./rebuild-format-release');
 require('./rebuild-resources');
 require('./rebuild-resource-additions');
@@ -87,16 +88,22 @@ function readBookRecord(href, collection, image, imageAlt) {
 
   const titleHtml = titleMatch[1].replace(/\.$/, '');
   const authorText = textOnly(authorMatch[1]);
-  const authorProfile = authorProfileByName.get(authorText);
+  const authorNames = authorProfileData.authorNamesForBook({ href, author: authorText });
+  const authorHtml = authorNames.map(name => {
+    const profile = authorProfileByName.get(name);
+    const label = escapeHtml(name);
+    const linkedName = profile ? `<a href="${profile.href}">${label}</a>` : label;
+    return authorProfileData.contributorNotes[href]?.[name]
+      ? `${linkedName} (attributed)`
+      : linkedName;
+  }).join(', ');
 
   return {
     href,
     collection,
     titleHtml,
     titleText: textOnly(titleHtml),
-    authorHtml: authorProfile
-      ? `<a href="${authorProfile.href}">${escapeHtml(authorText)}</a>`
-      : escapeHtml(authorText),
+    authorHtml,
     authorText,
     subjects: subjectsByBook.get(href) || [],
     descriptionHtml: firstSentence(deckMatch[1]),
@@ -189,6 +196,18 @@ const html = `<!doctype html>
 </body></html>`;
 
 fs.writeFileSync(path.join(root, 'library/index.html'), html);
+
+const homepageFile = path.join(root, 'index.html');
+let homepageHtml = fs.readFileSync(homepageFile, 'utf8');
+for (const pattern of [
+  /\b\d+(?= complete novels, plays and poems)/g,
+  /(?<=<a class="home-more" href="\/library\/">All )\d+(?= books &rarr;<\/a>)/g
+]) {
+  if ([...homepageHtml.matchAll(pattern)].length !== 1) throw new Error('Could not find a unique homepage book total');
+  homepageHtml = homepageHtml.replace(pattern, String(sorted.length));
+}
+fs.writeFileSync(homepageFile, homepageHtml);
+
 console.log(`Rebuilt the library with ${sorted.length} books.`);
 require('./rebuild-subjects');
 require('./rebuild-discovery');

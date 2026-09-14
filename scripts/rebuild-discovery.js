@@ -236,8 +236,10 @@ for (const author of authorProfileData) {
 }
 
 const authors = Array.from(books.reduce(function (groups, book) {
-  if (!groups.has(book.author)) groups.set(book.author, []);
-  groups.get(book.author).push(book);
+  for (const name of authorProfileData.authorNamesForBook(book)) {
+    if (!groups.has(name)) groups.set(name, []);
+    if (!groups.get(name).some(entry => entry.href === book.href)) groups.get(name).push(book);
+  }
   return groups;
 }, new Map())).map(function (pair) {
   const name = pair[0];
@@ -252,7 +254,10 @@ const authors = Array.from(books.reduce(function (groups, book) {
     ? 'Read ' + name + ' through Astor Library\'s page for ' + titleList + '.'
     : 'Read ' + name + ' across ' + authorBooks.length + ' Astor Library books: ' + titleList + '.');
 
-  authorBooks.forEach(function (book) { book.authorHref = href; });
+  authorBooks.forEach(function (book) {
+    const names = authorProfileData.authorNamesForBook(book);
+    book.authorHref = names.length === 1 ? href : '/authors/#all-writers';
+  });
 
   return {
     type: 'author',
@@ -264,7 +269,7 @@ const authors = Array.from(books.reduce(function (groups, book) {
     imageAlt: authorBooks[0].imageAlt,
     bookCount: authorBooks.length,
     books: authorBooks.map(function (book) {
-      return { title: book.title, href: book.href, image: book.image, imageAlt: book.imageAlt, collection: book.collection };
+      return { title: book.title, href: book.href, image: book.image, imageAlt: book.imageAlt, collection: book.collection, description: book.description };
     }),
     search: [name].concat(titles, authorBooks.map(function (book) { return book.collection; })).join(' ')
   };
@@ -981,7 +986,8 @@ const featuredAuthorCards = featuredAuthors.map(function (author) {
 
 const authorDirectoryCards = authors.map(function (author) {
   const bookLinks = author.books.map(function (book) {
-    return '<a href="' + escapeHtml(book.href) + '">' + escapeHtml(book.title) + '</a>';
+    const attribution = authorProfileData.contributorNotes?.[book.href]?.[author.title];
+    return '<a href="' + escapeHtml(book.href) + '">' + escapeHtml(book.title) + (attribution ? ' <span>(' + escapeHtml(attribution) + ')</span>' : '') + '</a>';
   }).join('');
   const name = authorProfiles[author.title]
     ? '<a href="' + escapeHtml(author.href) + '">' + escapeHtml(author.title) + '</a>'
@@ -994,9 +1000,9 @@ const authorsHtml = '<!doctype html><html lang="en"><head>' +
   '<title>Classic Authors and Writers | Astor Library</title><meta name="description" content="Author pages with biographical information, publication context, literary analysis and links to every Astor Library edition by each writer.">' +
   '<link rel="stylesheet" href="/assets/styles.css"></head><body>' + siteHeader() +
   '<main class="page-wrap authors-page"><section class="authors-hero"><div><p class="kicker">Authors and editions</p><h1>Authors represented in Astor Library.</h1><p class="deck">Author pages include biographical information, publication context, discussion of literary form and links to the writer’s books, guides and study editions.</p><div class="button-row"><a class="button primary" href="#all-writers">See every writer</a><a class="button secondary" href="/library/">Browse all books</a></div></div><div class="authors-hero-shelf" aria-hidden="true"><img src="/Great%20Expectations.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Adventures%20of%20Sherlock%20Holmes.png" alt=""></div></section>' +
-  '<section class="authors-intro"><p>Detailed pages are available for nineteen writers. Other entries link directly to the books currently held in the catalogue.</p></section>' +
+  '<section class="authors-intro"><p>Writer pages include full biographical guides and concise catalogues of available books. Anthologies are also listed under their named contributors.</p></section>' +
   '<section class="featured-authors" aria-labelledby="featured-authors-title"><div class="section-title"><p class="kicker">Detailed pages</p><h2 id="featured-authors-title">Author biographies and reading guides.</h2></div>' + featuredAuthorCards + '</section>' +
-  '<section class="author-directory" id="all-writers" aria-labelledby="all-writers-title"><div class="author-directory-head"><div><p class="kicker">Author directory</p><h2 id="all-writers-title">All authors.</h2></div><p>' + authors.length + ' writers currently appear in Astor Library. Nineteen have detailed author pages; every entry links to the relevant books.</p></div><div class="author-directory-grid">' + authorDirectoryCards + '</div></section>' +
+  '<section class="author-directory" id="all-writers" aria-labelledby="all-writers-title"><div class="author-directory-head"><div><p class="kicker">Author directory</p><h2 id="all-writers-title">All authors.</h2></div><p>' + authors.length + ' writers currently appear in Astor Library. Every entry links to the relevant books and collections.</p></div><div class="author-directory-grid">' + authorDirectoryCards + '</div></section>' +
   '</main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Author pages, complete classic texts and study resources.</p></div><div class="footer-links"><a href="/library/">All books</a><a href="/explore/">Search</a><a href="/reading-routes/">Reading routes</a><a href="/resources/">Free resources</a></div></footer></body></html>';
 
 fs.mkdirSync(path.join(root, 'authors'), { recursive: true });
@@ -1058,3 +1064,5 @@ fs.mkdirSync(path.join(root, 'site-index'), { recursive: true });
 fs.writeFileSync(path.join(root, 'site-index/index.html'), siteIndexHtml);
 
 console.log('Rebuilt discovery with ' + entries.length + ' searchable entries.');
+
+require('./rebuild-author-catalogue')(authors, siteHeader);

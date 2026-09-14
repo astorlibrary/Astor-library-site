@@ -355,7 +355,7 @@ module.exports = [
     collectionHref: '/american/',
     collectionFile: 'american/index.html',
     image: '/The%20Scarlet%20Letter%20%28Main%20Cover%29%20.png',
-    purchaseUrl: 'https://mybook.to/UlUCApB',
+    purchaseUrl: 'https://mybook.to/3HYxB',
     year: '1850',
     genre: 'American romance',
     editionKind: 'Complete novel with chapter summaries, notes, historical context and material for further study.',
@@ -449,7 +449,7 @@ module.exports = [
     deck: 'Milton’s epic begins after a war in Heaven and ends with two people walking out of the only home they have known. Cosmic rebellion, political argument, marriage, temptation, grief and the possibility of renewal are held within one immense blank-verse design.',
     facts: [
       { label: '1667', text: 'The first edition arranged the poem in ten books.' },
-      { label: '1674', text: 'Milton revised the poem into twelve books and added arguments and a defence of unrhymed verse.' },
+      { label: '1674', text: 'Milton revised the ten-book poem into twelve books for the second edition.' },
       { label: 'Blank verse', text: 'Unrhymed iambic pentameter lets long sentences move across and beyond individual lines.' },
       { label: 'In medias res', text: 'The action begins after Satan’s defeat, then ranges across rebellion, creation, the Fall and future history.' }
     ],
