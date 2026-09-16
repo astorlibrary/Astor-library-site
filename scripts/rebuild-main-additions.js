@@ -69,7 +69,7 @@ function header() {
 function actionButtons(book, includeCollection) {
   const buttons = [];
   if (book.purchaseUrl) {
-    buttons.push('<a class="button primary" href="' + escapeHtml(book.purchaseUrl) + '">Buy / view Astor edition</a>');
+    buttons.push('<a class="button primary" href="' + escapeHtml(book.purchaseUrl) + '">Buy the Astor edition</a>');
   }
   if (includeCollection) {
     buttons.push('<a class="button secondary" href="' + escapeHtml(book.collectionHref) + '">Browse ' + escapeHtml(book.collection) + '</a>');
@@ -144,7 +144,7 @@ function bookPage(book) {
 
 function catalogueCard(book) {
   const buyButton = book.purchaseUrl
-    ? '<a class="button secondary" href="' + escapeHtml(book.purchaseUrl) + '">Buy / view edition</a>'
+    ? '<a class="button secondary" href="' + escapeHtml(book.purchaseUrl) + '">Buy the edition</a>'
     : '';
   return '<article class="edition-card"><img src="' + book.image + '" alt="Astor Library ' + escapeHtml(book.title) + ' cover"><div><p class="year">' + escapeHtml(book.genre) + '</p><h2><em>' + escapeHtml(book.title) + '</em></h2><p>' + escapeHtml(book.deck) + '</p><div class="button-row"><a class="button primary" href="/books/' + escapeHtml(book.slug) + '/">Open page</a>' + buyButton + '</div></div></article>';
 }

@@ -161,7 +161,7 @@ const filterButtons = ['All books', ...collections.map(([, label]) => label)]
 const cards = sorted.map(book => `
       <article class="catalog-card" data-collection="${book.collection}" data-search="${escapeHtml([book.titleText, book.authorText, book.collection, ...book.subjects, textOnly(book.descriptionHtml)].join(' '))}">
         <a class="catalog-cover" href="${book.href}"><img src="${book.image}" alt="${escapeHtml(book.imageAlt)}" loading="lazy"></a>
-        <div class="catalog-card-copy"><p class="catalog-collection">${book.collection}</p><h2><a href="${book.href}">${book.titleHtml}</a></h2><p class="catalog-author">${book.authorHtml}</p><p>${book.descriptionHtml}</p><a class="home-text-link" href="${book.href}">Open book page <span aria-hidden="true">&rarr;</span></a></div>
+        <div class="catalog-card-copy"><p class="catalog-collection">${book.collection}</p><h2><a href="${book.href}">${book.titleHtml}</a></h2><p class="catalog-author">${book.authorHtml}</p><p>${book.descriptionHtml}</p><a class="home-text-link" href="${book.href}">About the book <span aria-hidden="true">&rarr;</span></a></div>
       </article>`).join('');
 
 const html = `<!doctype html>

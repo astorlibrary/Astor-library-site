@@ -174,7 +174,7 @@ function hardbackCard(book) {
   const title = escapeHtml(book.title);
   return `<article class="hardback-card">
   <a class="hardback-cover" href="${escapeHtml(book.href)}"><img src="${assetPath(book.image)}" alt="Astor Library ${title} hardback cover" loading="lazy"></a>
-  <div class="hardback-card-copy"><p class="hardback-format">Hardback edition</p><h3><a href="${escapeHtml(book.href)}"><em>${title}</em></a></h3><p class="hardback-author">${escapeHtml(book.author)}</p><p>${escapeHtml(book.deck)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(book.href)}">Open book page</a><a class="button secondary" href="${escapeHtml(book.purchaseUrl)}">View hardback</a></div></div>
+  <div class="hardback-card-copy"><p class="hardback-format">Hardback edition</p><h3><a href="${escapeHtml(book.href)}"><em>${title}</em></a></h3><p class="hardback-author">${escapeHtml(book.author)}</p><p>${escapeHtml(book.deck)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(book.href)}">About the book</a><a class="button secondary" href="${escapeHtml(book.purchaseUrl)}">Buy the hardback</a></div></div>
 </article>`;
 }
 

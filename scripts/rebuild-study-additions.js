@@ -22,7 +22,7 @@ const cards = additions.map(function (edition) {
     '<span class="mini-kicker">Study edition</span>' +
     '<h3><em>' + escapeHtml(edition.title) + '</em></h3>' +
     '<p>' + escapeHtml(edition.description) + '</p>' +
-    '<span class="button primary">' + (edition.pageHref ? 'Open the study page' : 'Buy / view') + '</span>' +
+    '<span class="button primary">' + (edition.pageHref ? 'About the study edition' : 'Buy the edition') + '</span>' +
     '</a>';
 }).join('');
 
@@ -35,8 +35,8 @@ html = html.replace(
   /<a class="study-card" href="\/study\/macbeth\/"[^>]*>[\s\S]*?<\/a>/,
   function (card) {
     return card.replace(
-      /(<span class="button primary">)(?:Buy \/ view|Open the study page)(<\/span>)/,
-      '$1Open the study page$2'
+      /(<span class="button primary">)(?:Buy \/ view|Buy the edition|Open the study page|About the study edition)(<\/span>)/,
+      '$1About the study edition$2'
     );
   }
 );

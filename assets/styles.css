@@ -1920,3 +1920,11 @@
 .classic-period-covers img{width:98px;height:auto;aspect-ratio:2/3;object-fit:cover;border:1px solid var(--line);box-shadow:0 12px 26px rgba(32,28,26,.24)}
 .classic-period-covers img+img{margin-left:-40px;transform:translateY(-16px)}
 @media(max-width:620px){.classic-period{grid-template-columns:1fr 96px}.classic-period-covers{height:auto;align-items:flex-start}.classic-period-covers img{width:64px}.classic-period-covers img+img{margin-left:-26px;transform:translateY(-10px)}}
+
+/* Catalogue: cover-first cards, matching the collection shelves, on wide screens. */
+@media(min-width:981px){.catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.catalog-page .catalog-card{display:flex;flex-direction:column;min-height:0;padding:0;background:rgba(255,250,244,.9)}.catalog-page .catalog-card[hidden]{display:none}.catalog-page .catalog-cover{display:flex;align-items:flex-end;justify-content:center;align-self:stretch;height:236px;padding:22px 22px 0;background:linear-gradient(180deg,#e6d8c7,#f3e9dd)}.catalog-page .catalog-cover img{width:auto;height:100%;max-width:72%;object-fit:cover;background:none;border:1px solid rgba(32,28,26,.08);box-shadow:0 14px 30px rgba(32,28,26,.28)}.catalog-page .catalog-card-copy{flex:1;padding:20px 22px 22px}.catalog-page .catalog-card h2{font-size:25px;line-height:1.05;letter-spacing:-.02em}.catalog-page .catalog-card-copy>p:not(.catalog-collection):not(.catalog-author){flex:1;font-size:14px;line-height:1.6}}
+/* Specialist Shakespeare cards: keep both covers of a pair inside the card. */
+.specialist-paired-covers{width:100%;min-height:0;justify-content:flex-start}
+.specialist-paired-covers img{width:58%}
+.specialist-paired-covers img+img{margin-left:-22%;transform:translateY(16px)}
+.specialist-paired-covers{align-self:start;align-items:flex-start}
