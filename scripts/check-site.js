@@ -401,6 +401,14 @@ for (const profile of authorProfileData) {
   if (countMatches(authorHtml.match(/class="author-method-grid"[\s\S]*?<\/section>/i)?.[0] || '', /<article>/g) !== 3) failures.push(profile.href + ' must contain three reading methods');
   if (!authorHtml.includes('class="source-list"')) failures.push(profile.href + ' is missing its source list');
   if (wordCount < 600) failures.push(profile.href + ' is too slight for a full writer profile (' + wordCount + ' words)');
+  // A writer page must list every book by that writer in the catalogue, so
+  // the shelf never falls behind the catalogue as editions are added.
+  const authorBooks = libraryHub.match(/<article class="catalog-card"[\s\S]*?<\/article>/g) || [];
+  for (const card of authorBooks) {
+    if (!card.includes('href="' + profile.href + '"')) continue;
+    const bookHref = card.match(/<h2><a href="([^"]+)">/)?.[1];
+    if (bookHref && !authorMain.includes('href="' + bookHref + '"')) failures.push(profile.href + ' does not list ' + bookHref + ', which the catalogue attributes to ' + profile.name);
+  }
 }
 
 for (const icon of ['favicon.ico', 'favicon.svg', 'favicon-32x32.png', 'favicon-48x48.png', 'apple-touch-icon.png', 'icon-192.png', 'icon-512.png', 'site.webmanifest']) {

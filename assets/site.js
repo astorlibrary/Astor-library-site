@@ -342,6 +342,10 @@
   if (!main) return;
 
   function addPageContents() {
+    // Pages built with their own contents bar keep it; only older reading
+    // pages without one get a bar built from their section headings.
+    const existing = main.querySelector('nav.page-contents');
+    if (existing) return existing;
     const headings = [...main.querySelectorAll('.section-title h2')];
     if (headings.length < 3) return null;
 

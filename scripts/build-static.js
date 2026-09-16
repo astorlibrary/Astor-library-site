@@ -6,7 +6,7 @@ const root = process.cwd();
 const outDir = path.join(root, 'dist');
 const SITE_URL = 'https://astorlibrary.com';
 // This date changes only when a site-wide release materially updates every page.
-const SITE_LASTMOD = '2026-08-25';
+const SITE_LASTMOD = '2026-09-16';
 const discoveryFile = path.join(root, 'assets', 'content-index.json');
 const discovery = fs.existsSync(discoveryFile)
   ? JSON.parse(fs.readFileSync(discoveryFile, 'utf8'))
