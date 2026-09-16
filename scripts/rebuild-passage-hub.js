@@ -45,7 +45,7 @@ discovery.passages.forEach((passage, index) => {
   if (!card) throw new Error('No card copy in scripts/passage-cards.json for ' + slug);
   const { room, label } = roomFor(slug);
   const number = String(index + 1).padStart(2, '0');
-  const search = (label + ' ' + card.small + ' ' + card.quote + ' ' + card.blurb)
+  const search = (label + ' ' + card.small + ' ' + card.quote + ' ' + card.blurb + ' ' + (passage.search || ''))
     .replace(/<[^>]+>/g, ' ')
     .replace(/&[a-z]+;/gi, ' ')
     .replace(/\s+/g, ' ')

@@ -336,6 +336,8 @@
     if (linkPath === currentPath) link.setAttribute('aria-current', 'page');
   }
 
+  passageHubFilter();
+
   if (!currentPath.startsWith('/books/')) return;
 
   const main = document.querySelector('main.page-wrap');
@@ -573,7 +575,6 @@
     input.addEventListener('input', apply);
   }
 
-  passageHubFilter();
   const contents = addPageContents();
   scrollToCurrentSection();
   addRelatedReading(contents);
