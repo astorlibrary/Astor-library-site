@@ -45,8 +45,15 @@ discovery.passages.forEach((passage, index) => {
   if (!card) throw new Error('No card copy in scripts/passage-cards.json for ' + slug);
   const { room, label } = roomFor(slug);
   const number = String(index + 1).padStart(2, '0');
+  const search = (label + ' ' + card.small + ' ' + card.quote + ' ' + card.blurb)
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&[a-z]+;/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase()
+    .replace(/"/g, '');
   groups[room].push(
-    '<a class="passage-card ' + card.tint + '" href="' + passage.href + '">' +
+    '<a class="passage-card ' + card.tint + '" href="' + passage.href + '" data-search="' + search + '">' +
     '<i class="passage-card-form">' + label + '</i>' +
     '<span class="passage-card-number">' + number + '</span>' +
     '<small>' + card.small + '</small>' +

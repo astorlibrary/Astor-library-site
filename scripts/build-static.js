@@ -723,6 +723,39 @@ function addBookPassageLinks(html, source) {
   return html.replace('</main>', section + '</main>');
 }
 
+// Aggregate a writer's close readings onto their author page — the per-book
+// shelves already sit on each book page; this gathers them in one place.
+function addAuthorPassageLinks(html, source) {
+  const author = authorContext(source);
+  if (!author || html.includes('class="author-passage-shelf"')) return html;
+  const bookHrefs = new Set((author.books || []).map(book => book.href));
+  const passages = (discovery.passages || []).filter(passage =>
+    (passage.relatedBooks || []).some(href => bookHrefs.has(href)));
+  if (!passages.length) return html;
+
+  const shown = passages.slice(0, 8);
+  const cards = shown.map(function (passage) {
+    const number = String((discovery.passages || []).indexOf(passage) + 1).padStart(2, '0');
+    const book = (discovery.books || []).find(item => (passage.relatedBooks || []).includes(item.href));
+    return '<a href="' + escapeHtml(passage.href) + '">' +
+      '<span>' + number + ' · ' + escapeHtml(book ? book.title : 'Close reading') + '</span>' +
+      '<blockquote>' + escapeHtml(passage.title) + '</blockquote>' +
+      '<p>' + escapeHtml(passage.description) + '</p>' +
+      '<b>Read the annotated passage <span aria-hidden="true">&rarr;</span></b></a>';
+  }).join('');
+  const more = passages.length > shown.length
+    ? '<a class="author-passage-more" href="/passage-room/">All ' + passages.length + ' close readings from this writer are in the Passage Room <span aria-hidden="true">&rarr;</span></a>'
+    : '';
+  const section = '<section class="book-passage-shelf author-passage-shelf" aria-labelledby="author-passage-title">' +
+    '<div class="book-passage-shelf-head"><div><p class="kicker">Annotated passages</p><h2 id="author-passage-title">Close readings from this writer.</h2></div>' +
+    '<p>Short passages from this writer&rsquo;s work, each reproduced and explained line by line.</p></div>' +
+    '<div class="book-passage-grid">' + cards + '</div>' + more + '</section>';
+  const anchor = html.includes('<section class="author-sources"') ? '<section class="author-sources"' : '</main>';
+  return anchor === '</main>'
+    ? html.replace('</main>', section + '</main>')
+    : html.replace(anchor, section + anchor);
+}
+
 function addResourceReadingNavigation(html, source) {
   const context = resourceContext(source);
   if (!context) return html;
@@ -1039,6 +1072,7 @@ function prepareHtml(html, source) {
   html = addDiscoveryNavigation(html, source);
   html = addBookAuthorLink(html, source);
   html = addBookPassageLinks(html, source);
+  html = addAuthorPassageLinks(html, source);
   html = addBookReadingNavigation(html, source);
   html = addResourceReadingNavigation(html, source);
   html = addEditorialCredit(html, source);

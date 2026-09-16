@@ -47,6 +47,10 @@ async function checkUrl(url) {
       if (/amazon\./.test(finalUrl) && [403, 405, 429, 503].includes(response.status)) {
         return { url, status: response.status, finalUrl, verdict: 'unverifiable (retailer bot check)' };
       }
+      // Ko-fi serves humans fine but walls off non-browser clients with 403.
+      if (/ko-fi\.com/.test(finalUrl) && response.status === 403) {
+        return { url, status: 403, finalUrl, verdict: 'unverifiable (retailer bot check)' };
+      }
       // Rate limiting from the link service itself: back off and retry; a
       // persistent 429 is inconclusive, never a dead link.
       if (response.status === 429) {

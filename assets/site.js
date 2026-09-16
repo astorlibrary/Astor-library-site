@@ -515,6 +515,65 @@
     }
   }
 
+  // Progressive-enhancement filter for the Passage Room hub: the control is
+  // built in JS so no-script visitors never see a dead search box, and all
+  // cards remain visible without it.
+  function passageHubFilter() {
+    const library = document.querySelector('.passage-library');
+    const nav = library && library.querySelector('.passage-hub-nav');
+    if (!library || !nav) return;
+    const cards = [...library.querySelectorAll('.passage-card')];
+    if (cards.length < 12) return;
+    const rooms = [...library.querySelectorAll('.passage-room')];
+    const navLinks = [...nav.querySelectorAll('a')];
+    const total = cards.length;
+
+    const wrap = document.createElement('div');
+    wrap.className = 'passage-filter';
+    wrap.innerHTML =
+      '<label for="passage-filter-input">Filter readings</label>' +
+      '<input type="search" id="passage-filter-input" autocomplete="off" placeholder="Search by work, quotation or theme…">' +
+      '<p class="passage-filter-count" role="status" aria-live="polite" hidden></p>';
+    nav.insertAdjacentElement('afterend', wrap);
+    const input = wrap.querySelector('input');
+    const count = wrap.querySelector('.passage-filter-count');
+
+    function roomCount(key) {
+      const room = document.getElementById(key);
+      return room ? room.querySelectorAll('.passage-card:not([hidden])').length : 0;
+    }
+    function apply() {
+      const q = input.value.trim().toLowerCase();
+      let shown = 0;
+      for (const card of cards) {
+        const hay = (card.getAttribute('data-search') || '') + ' ' + card.textContent.toLowerCase();
+        const match = !q || hay.indexOf(q) !== -1;
+        card.hidden = !match;
+        if (match) shown++;
+      }
+      for (const room of rooms) room.hidden = room.querySelectorAll('.passage-card:not([hidden])').length === 0;
+      for (const link of navLinks) {
+        const key = (link.getAttribute('href') || '').replace('#', '');
+        const room = document.getElementById(key);
+        if (!room) continue;
+        const visible = q ? roomCount(key) : room.querySelectorAll('.passage-card').length;
+        link.hidden = Boolean(q) && visible === 0;
+        const small = link.querySelector('small');
+        if (small) small.textContent = visible;
+      }
+      if (q) {
+        count.hidden = false;
+        count.textContent = shown
+          ? 'Showing ' + shown + ' of ' + total + ' readings'
+          : 'No readings match “' + input.value.trim() + '”';
+      } else {
+        count.hidden = true;
+      }
+    }
+    input.addEventListener('input', apply);
+  }
+
+  passageHubFilter();
   const contents = addPageContents();
   scrollToCurrentSection();
   addRelatedReading(contents);

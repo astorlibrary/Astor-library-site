@@ -4,7 +4,7 @@ module.exports = [
     title: "Henry V",
     author: "William Shakespeare",
     image: "/Henry%20V%20Main%20Cover.jpg",
-    url: "https://mybook.to/Tge8-",
+    url: "https://mybook.to/Tge8",
     studyUrl: "https://mybook.to/HPiX",
     genre: "History",
     date: "1599",
