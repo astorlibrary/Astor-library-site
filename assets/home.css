@@ -430,7 +430,9 @@ input:focus-visible {
 
 .home-book-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  /* Six editions: a 340px track gives three across on desktop and two on a
+     tablet, so the rows stay even instead of breaking four-then-two. */
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
   gap: clamp(18px, 2.5vw, 32px);
 }
 
