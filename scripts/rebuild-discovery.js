@@ -985,7 +985,7 @@ const entryCards = entries.map(function (entry) {
   const detail = entry.author ? entry.author + ' · ' + entry.collection : entry.type === 'author' ? entry.bookCount + (entry.bookCount === 1 ? ' book' : ' books') : entry.typeLabel;
   const search = [entry.search, entry.typeLabel].join(' ').toLocaleLowerCase();
   const image = entry.image
-    ? '<img src="' + escapeHtml(entry.image) + '" alt="' + escapeHtml(entry.imageAlt || '') + '" loading="lazy">'
+    ? '<img src="' + escapeHtml(entry.image) + '" alt="' + escapeHtml(entry.imageAlt || '') + '" width="240" height="360" loading="lazy">'
     : '<span class="explore-card-no-image" aria-hidden="true">A</span>';
 
   // A result that leaves the site (a study edition with no on-site page yet)

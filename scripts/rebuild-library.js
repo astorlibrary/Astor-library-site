@@ -167,7 +167,7 @@ const filterButtons = ['All books', ...collections.map(([, label]) => label)]
 
 const cards = sorted.map(book => `
       <article class="catalog-card" data-collection="${book.collection}" data-search="${escapeHtml([book.titleText, book.authorText, book.collection, ...book.subjects, textOnly(book.descriptionHtml)].join(' '))}">
-        <a class="catalog-cover" href="${book.href}"><img src="${book.image}" alt="${escapeHtml(book.imageAlt)}" loading="lazy"></a>
+        <a class="catalog-cover" href="${book.href}"><img src="${book.image}" alt="${escapeHtml(book.imageAlt)}" width="155" height="233" loading="lazy"></a>
         <div class="catalog-card-copy"><p class="catalog-collection">${book.collection}</p><h2><a href="${book.href}">${book.titleHtml}</a></h2><p class="catalog-author">${book.authorHtml}</p><p>${book.descriptionHtml}</p><a class="home-text-link" href="${book.href}">Open book page <span aria-hidden="true">&rarr;</span></a></div>
       </article>`).join('');
 
@@ -186,7 +186,7 @@ const html = `<!doctype html>
   </nav>
 </header>
 <main class="page-wrap catalog-page">
-  <section class="catalog-hero"><div><p class="kicker">The complete catalogue</p><h1>Astor Library books.</h1><p class="deck">${sorted.length} books across eight collections, from ancient epic and Shakespeare to Victorian, American and modern classics. Search by title, author or subject.</p></div><div class="catalog-hero-covers" aria-hidden="true"><img src="/The%20Aeneid.png" alt=""><img src="/Pride%20and%20Prejudice.png" alt=""><img src="/Moby%20Dick.png" alt=""></div></section>
+  <section class="catalog-hero"><div><p class="kicker">The complete catalogue</p><h1>Astor Library books.</h1><p class="deck">${sorted.length} books across eight collections, from ancient epic and Shakespeare to Victorian, American and modern classics. Search by title, author or subject.</p></div><div class="catalog-hero-covers" aria-hidden="true"><img src="/The%20Aeneid.png" alt="" width="160" height="240"><img src="/Pride%20and%20Prejudice.png" alt="" width="160" height="240"><img src="/Moby%20Dick.png" alt="" width="160" height="240"></div></section>
   <section class="catalog-tools" aria-label="Filter the catalogue"><label for="catalog-search">Search by title, author or subject</label><div class="catalog-search-row"><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Hamlet, Dickens or Gothic"><p id="catalog-count" aria-live="polite">${sorted.length} books</p></div><div class="catalog-filters">${filterButtons}</div></section>
   <section class="catalog-grid" aria-label="Astor Library books">${cards}
   </section>

@@ -401,7 +401,7 @@
   function thumbnailSrcset(image) {
     if (!image || !image.startsWith('/assets/book-thumbs/') || !image.endsWith('.jpg')) return '';
     const small = image.replace(/\.jpg$/, '-360.jpg');
-    return ' srcset="' + escapeHtml(small) + ' 360w, ' + escapeHtml(image) + ' 720w" sizes="auto"';
+    return ' srcset="' + escapeHtml(small) + ' 360w, ' + escapeHtml(image) + ' 720w" sizes="72px"';
   }
 
   function bookCard(book) {
