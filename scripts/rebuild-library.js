@@ -172,7 +172,7 @@ const cards = sorted.map(book => `
       </article>`).join('');
 
 const html = `<!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>All Books | Astor Library</title><meta name="description" content="Browse every Astor Library book across classical, Shakespearean, Renaissance, Restoration, Romantic, Victorian, American and modern literature."><link rel="stylesheet" href="/assets/styles.css"><script src="/assets/catalogue.js" defer></script></head>
 <body>
 <header class="site-header">
