@@ -24,22 +24,22 @@ const collectionFiles = [
 
 const studyBookLinks = {
   '/study/macbeth/': ['/books/macbeth/'],
-  'https://mybook.to/OS3XKr': ['/books/a-christmas-carol/'],
+  '/study/a-christmas-carol/': ['/books/a-christmas-carol/'],
   'https://mybook.to/tih5': ['/books/a-midsummer-nights-dream/'],
   'https://mybook.to/BMP2uu': ['/books/dorian-gray/'],
   'https://mybook.to/xGiajwx': ['/books/dracula/'],
-  'https://mybook.to/uGEUdh': ['/books/frankenstein/'],
+  '/study/frankenstein/': ['/books/frankenstein/'],
   'https://mybook.to/jAoMkeE': ['/books/great-expectations/'],
-  'https://mybook.to/Q1lrp8': ['/books/hamlet/'],
-  'https://mybook.to/ddk9RnO': ['/books/jekyll-and-hyde/'],
+  '/study/hamlet/': ['/books/hamlet/'],
+  '/study/jekyll-and-hyde/': ['/books/jekyll-and-hyde/'],
   'https://mybook.to/yIeXaP': ['/books/king-lear/'],
   'https://mybook.to/cntRBz': ['/books/macbeth/'],
   'https://mybook.to/dmYF3qO': ['/books/merry-wives-of-windsor/'],
   'https://mybook.to/VCYoiwF': ['/books/moby-dick/'],
   'https://mybook.to/8DvAj': ['/books/much-ado-about-nothing/'],
-  'https://mybook.to/A8uO': ['/books/othello/'],
+  '/study/othello/': ['/books/othello/'],
   'https://mybook.to/bqGB': ['/books/richard-iii/'],
-  'https://mybook.to/wwhLC': ['/books/romeo-and-juliet/'],
+  '/study/romeo-and-juliet/': ['/books/romeo-and-juliet/'],
   'https://mybook.to/FSRJnn': ['/books/tess-of-the-durbervilles/'],
   'https://mybook.to/pSaIay': ['/books/the-tempest/'],
   'https://mybook.to/FAHByQ': ['/books/macbeth/', '/books/jekyll-and-hyde/'],
@@ -861,7 +861,79 @@ const passages = [
     description: 'Read the ending of Dickens’s last Christmas book through a narrator who says nothing, the shadows that change the room, and the portrait under holly.',
     href: '/passage-room/haunted-man-memory-green/', image: '/The%20Haunted%20Man%20and%20the%20Ghost%27s%20Bargain%20Main%20Cover.png', imageAlt: 'Astor Library The Haunted Man cover',
     relatedBooks: ['/books/the-haunted-man-and-the-ghosts-bargain/', '/books/dickens-at-christmas/'], search: 'Haunted Man Ghosts Bargain Dickens Christmas book ending Lord keep my memory green Redlaw Milly portrait holly close reading'
-  }
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“Uneasy lies the head that wears a crown”',
+    description: 'Read the sleepless king’s apostrophe to sleep through the ship-boy on the mast, the watch-case and a usurper’s guilt.',
+    href: '/passage-room/henry-iv-part-2-uneasy-lies-the-head/', image: '/Henry%20IV%20part%202%20Main.jpeg', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/henry-iv-part-2/'], search: 'Henry IV Part 2 Shakespeare uneasy lies the head sleep Act 3 Scene 1 ship-boy insomnia king close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“Farewell? A long farewell to all my greatness!”',
+    description: 'Read Wolsey’s fall through the three-day plant, boys on bladders, the sea of glory and the fall like Lucifer.',
+    href: '/passage-room/henry-viii-long-farewell/', image: '/Henry%20VIII%20Main%20Cover.jpg', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/henry-viii/'], search: 'Henry VIII Shakespeare Fletcher Wolsey long farewell greatness Act 3 Scene 2 fall Lucifer close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“Take but degree away, untune that string”',
+    description: 'Read Ulysses on degree through the untuned string, the universal wolf and the schemer who preaches order.',
+    href: '/passage-room/troilus-and-cressida-degree/', image: '/Troilus%20and%20Cressida%20Main.png', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/troilus-and-cressida/'], search: 'Troilus and Cressida Shakespeare Ulysses degree untune the string universal wolf Act 1 Scene 3 hierarchy close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“Thus much of this will make black white, foul fair”',
+    description: 'Read Timon and the gold through the yellow slave, the inversions money performs and the speech Marx quoted.',
+    href: '/passage-room/timon-of-athens-gold/', image: '/Timon%20of%20Athens%20Main.png', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/timon-of-athens/'], search: 'Timon of Athens Shakespeare Middleton gold yellow slave black white Act 4 Scene 3 money Marx close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“I am the sea. Hark how her sighs doth flow!”',
+    description: 'Read Titus refusing reason through bottomless grief, the weeping welkin and a messenger with two heads and a hand.',
+    href: '/passage-room/titus-andronicus-i-am-the-sea/', image: '/Titus%20Andronicus.png', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/titus-andronicus/'], search: 'Titus Andronicus Shakespeare I am the sea reason grief Act 3 Scene 1 Lavinia revenge close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“Thy husband is thy lord, thy life, thy keeper”',
+    description: 'Read Katherina’s last speech through the troubled fountain, subject and prince, and four centuries of argument about whether she means it.',
+    href: '/passage-room/taming-of-the-shrew-thy-husband-is-thy-lord/', image: '/The%20Taming%20of%20the%20Shrew%20Main%20Cover.jpg', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/taming-of-the-shrew/'], search: 'Taming of the Shrew Shakespeare Katherina obedience husband is thy lord Act 5 Scene 2 Kate wager close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“I to the world am like a drop of water”',
+    description: 'Read Antipholus alone in Ephesus through the drop that seeks another drop and a farce that opens on lost identity.',
+    href: '/passage-room/comedy-of-errors-drop-of-water/', image: '/Comedy%20of%20Errors%20%28Main%20Page%29.png', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/comedy-of-errors/'], search: 'Comedy of Errors Shakespeare Antipholus drop of water identity twins Act 1 Scene 2 Ephesus close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“From women’s eyes this doctrine I derive”',
+    description: 'Read Berowne’s defence of breaking the oath through Promethean fire, women as academes and a play that will not let him win.',
+    href: '/passage-room/loves-labours-lost-womens-eyes/', image: '/Love%27s%20Labour%27s%20Lost%20Main%20Cover.jpg', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/loves-labours-lost/'], search: 'Loves Labours Lost Shakespeare Berowne from womens eyes oath Promethean fire Act 4 Scene 3 sophistry close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“Our remedies oft in ourselves do lie”',
+    description: 'Read Helena resolving to act through the fated sky that gives free scope and the most self-reliant heroine in the comedies.',
+    href: '/passage-room/alls-well-our-remedies/', image: '/Alls%20Well%20That%20Ends%20Well%20Main%20Cover.png', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/alls-well-that-ends-well/'], search: 'Alls Well That Ends Well Shakespeare Helena our remedies in ourselves Act 1 Scene 1 king project close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“the sourest-natured dog that lives”',
+    description: 'Read Launce’s farewell with his dog Crab through the shoes that are parents, “I am the dog”, and the first great clown speech.',
+    href: '/passage-room/two-gentlemen-launce-and-crab/', image: '/Two%20Gentleman%20of%20Verona%20Main%20Cover.png', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/the-two-gentlemen-of-verona/'], search: 'Two Gentlemen of Verona Shakespeare Launce Crab dog Act 2 Scene 3 clown malapropism close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“Hunting he lov’d, but love he laugh’d to scorn”',
+    description: 'Read the opening of Venus and Adonis through the sun taking leave, the goddess as bold-faced suitor and the poem that made Shakespeare famous.',
+    href: '/passage-room/venus-and-adonis-purple-coloured-face/', image: '/Venus%20and%20Adonis%20Main%20Cover.png', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/venus-and-adonis/'], search: 'Venus and Adonis Shakespeare narrative poem opening Adonis goddess suitor 1593 Southampton close reading'
+  },
+  {
+    type: 'passage', typeLabel: 'Close reading', title: '“The kettle began it!”',
+    description: 'Read the opening of Dickens’s third Christmas book through a narrator who argues with a character about a kettle and the Dutch clock.',
+    href: '/passage-room/cricket-on-the-hearth-the-kettle-began-it/', image: '/Cricket%20on%20the%20Hearth.png', imageAlt: 'Astor Library cover',
+    relatedBooks: ['/books/cricket-on-the-hearth/'], search: 'Cricket on the Hearth Dickens kettle began it Christmas book narrator Peerybingle Dutch clock close reading'
+  },
 ];
 
 if (!books.length || !authors.length || !resources.length || !studyEditions.length || !collections.length || !subjects.length || !passages.length) {
@@ -916,14 +988,19 @@ const entryCards = entries.map(function (entry) {
     ? '<img src="' + escapeHtml(entry.image) + '" alt="' + escapeHtml(entry.imageAlt || '') + '" loading="lazy">'
     : '<span class="explore-card-no-image" aria-hidden="true">A</span>';
 
+  // A result that leaves the site (a study edition with no on-site page yet)
+  // must say so; an internal-looking label in front of a retailer link
+  // misleads the reader.
+  const external = /^https?:\/\//i.test(entry.href);
+  const cta = external ? 'Buy / view on Amazon <span aria-hidden="true">&nearr;</span>' : typeCtas[entry.type] + ' <span aria-hidden="true">&rarr;</span>';
   return '<article class="explore-card explore-card-' + entry.type + '" data-type="' + entry.type + '" data-search="' + escapeHtml(search) + '">' +
-    '<a href="' + escapeHtml(entry.href) + '">' +
+    '<a href="' + escapeHtml(entry.href) + '"' + (external ? ' target="_blank" rel="noopener noreferrer"' : '') + '>' +
     '<div class="explore-card-image">' + image + '</div>' +
     '<div class="explore-card-copy">' +
     '<p class="explore-kind">' + escapeHtml(detail) + '</p>' +
     '<h2>' + escapeHtml(entry.title) + '</h2>' +
     '<p>' + escapeHtml(entry.description) + '</p>' +
-    '<span class="home-text-link">' + typeCtas[entry.type] + ' <span aria-hidden="true">&rarr;</span></span>' +
+    '<span class="home-text-link">' + cta + '</span>' +
     '</div></a></article>';
 }).join('');
 
@@ -1029,7 +1106,11 @@ const resourceLinks = resources
 const studyLinks = studyEditions
   .slice()
   .sort(function (a, b) { return a.title.localeCompare(b.title, 'en'); })
-  .map(function (edition) { return '<a href="' + escapeHtml(edition.href) + '"><span>' + escapeHtml(edition.title) + '</span><small>' + escapeHtml(edition.typeLabel) + '</small></a>'; })
+  .map(function (edition) {
+    const external = /^https?:\/\//i.test(edition.href);
+    const label = external ? edition.typeLabel + ' · on Amazon &nearr;' : edition.typeLabel;
+    return '<a href="' + escapeHtml(edition.href) + '"' + (external ? ' target="_blank" rel="noopener noreferrer"' : '') + '><span>' + escapeHtml(edition.title) + '</span><small>' + label + '</small></a>';
+  })
   .join('');
 
 const authorLinks = authors

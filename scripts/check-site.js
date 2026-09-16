@@ -265,7 +265,7 @@ if (!fs.existsSync(passageHubFile)) {
 } else {
   const passageHub = fs.readFileSync(passageHubFile, 'utf8');
   if (!passageHub.includes('Annotated passages from classic literature.')) failures.push('The Passage Room is missing its opening statement');
-  if (countMatches(passageHub, /class="passage-card /g) !== 78) failures.push('The Passage Room must open seventy-eight close readings');
+  if (countMatches(passageHub, /class="passage-card /g) !== 90) failures.push('The Passage Room must open ninety close readings');
 }
 
 const passageRoutes = [
@@ -346,7 +346,19 @@ const passageRoutes = [
   'sign-of-four-seven-per-cent',
   'sleepy-hollow-ichabod-crane',
   'man-who-was-thursday-victoria',
-  'haunted-man-memory-green'
+  'haunted-man-memory-green',
+  'henry-iv-part-2-uneasy-lies-the-head',
+  'henry-viii-long-farewell',
+  'troilus-and-cressida-degree',
+  'timon-of-athens-gold',
+  'titus-andronicus-i-am-the-sea',
+  'taming-of-the-shrew-thy-husband-is-thy-lord',
+  'comedy-of-errors-drop-of-water',
+  'loves-labours-lost-womens-eyes',
+  'alls-well-our-remedies',
+  'two-gentlemen-launce-and-crab',
+  'venus-and-adonis-purple-coloured-face',
+  'cricket-on-the-hearth-the-kettle-began-it',
 ];
 for (const route of passageRoutes) {
   const passageFile = path.join(root, 'passage-room', route, 'index.html');
@@ -863,7 +875,8 @@ for (const book of [...apocryphaBooks, ...expandedBooks]) {
 }
 
 const studyHub = fs.readFileSync(path.join(root, 'study', 'index.html'), 'utf8');
-if (countMatches(studyHub, /class="study-card(?: dual)?"/g) !== 41) failures.push('The study collection must contain 41 editions');
+const expectedStudyCards = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'content-index.json'), 'utf8')).studyEditions.length;
+if (countMatches(studyHub, /class="study-card(?: dual)?"/g) !== expectedStudyCards) failures.push('The study collection must contain ' + expectedStudyCards + ' editions');
 for (const studyUrl of ['https://mybook.to/HPiX', 'https://mybook.to/ENJxO', 'https://mybook.to/x8aiiFG', 'https://mybook.to/2QzQqmh', 'https://mybook.to/M4c6K', 'https://mybook.to/o0Am2j', 'https://mybook.to/2mR1', 'https://mybook.to/gf9uZE', 'https://mybook.to/l4zC9']) {
   if (!studyHub.includes('href="' + studyUrl + '"') && !studyHub.includes('data-buy-url="' + studyUrl + '"')) failures.push('The study collection is missing ' + studyUrl);
 }
