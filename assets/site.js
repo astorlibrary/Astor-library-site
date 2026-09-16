@@ -396,9 +396,15 @@
       '</a></article>';
   }
 
+  function thumbnailSrcset(image) {
+    if (!image || !image.startsWith('/assets/book-thumbs/') || !image.endsWith('.jpg')) return '';
+    const small = image.replace(/\.jpg$/, '-360.jpg');
+    return ' srcset="' + escapeHtml(small) + ' 360w, ' + escapeHtml(image) + ' 720w" sizes="auto"';
+  }
+
   function bookCard(book) {
     return '<a class="related-book" href="' + escapeHtml(book.href) + '">' +
-      '<img src="' + escapeHtml(book.image) + '" alt="' + escapeHtml(book.imageAlt || '') + '" loading="lazy">' +
+      '<img src="' + escapeHtml(book.image) + '"' + thumbnailSrcset(book.image) + ' alt="' + escapeHtml(book.imageAlt || '') + '" loading="lazy">' +
       '<span><b>' + escapeHtml(book.title) + '</b><small>' + escapeHtml(book.author) + '</small></span>' +
       '</a>';
   }

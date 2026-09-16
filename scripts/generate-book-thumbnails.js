@@ -49,20 +49,28 @@ for (const item of items) {
     .toLowerCase() || 'catalogue-image';
   const hash = crypto.createHash('sha1').update(sourceHref).digest('hex').slice(0, 8);
   const fileName = slug + '-' + hash + '.jpg';
-  const destination = path.join(outputDirectory, fileName);
+  const smallFileName = slug + '-' + hash + '-360.jpg';
 
-  childProcess.execFileSync('/usr/bin/sips', [
-    '-s', 'format', 'jpeg',
-    '-s', 'formatOptions', '78',
-    '-Z', '720',
-    sourceFile,
-    '--out', destination
-  ], { stdio: 'ignore' });
+  // Two sizes per cover: 720px for hero covers and retina grids, 360px for
+  // catalogue and explore grid cells. Consumers derive the -360 name from the
+  // mapped path, so both files must always exist together.
+  for (const [maxSize, quality, name] of [[720, '78', fileName], [360, '74', smallFileName]]) {
+    childProcess.execFileSync('/usr/bin/sips', [
+      '-s', 'format', 'jpeg',
+      '-s', 'formatOptions', quality,
+      '-Z', String(maxSize),
+      sourceFile,
+      '--out', path.join(outputDirectory, name)
+    ], { stdio: 'ignore' });
+  }
 
   mapping[sourceHref] = '/assets/book-thumbs/' + fileName;
 }
 
-const activeFiles = new Set(Object.values(mapping).map(value => path.basename(value)));
+const activeFiles = new Set(Object.values(mapping).flatMap(value => {
+  const base = path.basename(value);
+  return [base, base.replace(/\.jpg$/, '-360.jpg')];
+}));
 for (const fileName of fs.readdirSync(outputDirectory)) {
   if (/\.jpg$/i.test(fileName) && !activeFiles.has(fileName)) {
     fs.unlinkSync(path.join(outputDirectory, fileName));

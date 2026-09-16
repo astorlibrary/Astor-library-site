@@ -91,8 +91,19 @@ function useBookThumbnail(tag, sourceFile) {
   const resolvedSource = source.startsWith('/')
     ? source
     : path.posix.resolve(pageDirectory, source);
-  const thumbnail = collectionBanners[resolvedSource] || bookThumbnails[resolvedSource] || '';
-  return thumbnail ? tag.replace(/\bsrc="[^"]+"/i, 'src="' + thumbnail + '"') : tag;
+  const alreadyThumbnail = resolvedSource.startsWith('/assets/book-thumbs/') && !/-360\.jpg$/.test(resolvedSource);
+  const thumbnail = collectionBanners[resolvedSource] || bookThumbnails[resolvedSource] || (alreadyThumbnail ? resolvedSource : '');
+  if (!thumbnail) return tag;
+  let result = tag.replace(/\bsrc="[^"]+"/i, 'src="' + thumbnail + '"');
+  // Lazy grid and shelf images also get the 360px variant so small cells stop
+  // downloading 720px files; eager hero covers keep the plain 720px source.
+  const smallThumbnail = thumbnail.replace(/\.jpg$/, '-360.jpg');
+  if (/\bloading="lazy"/i.test(result) && !/\bsrcset=/i.test(result) &&
+      thumbnail.startsWith('/assets/book-thumbs/') &&
+      fs.existsSync(path.join(root, smallThumbnail.replace(/^\//, '')))) {
+    result = result.replace('<img', '<img srcset="' + smallThumbnail + ' 360w, ' + thumbnail + ' 720w" sizes="auto"');
+  }
+  return result;
 }
 
 function escapeHtml(value) {

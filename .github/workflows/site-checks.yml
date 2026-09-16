@@ -1,0 +1,37 @@
+name: Site checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Regenerated pages match the committed ones
+        run: |
+          node scripts/rebuild-library.js
+          git diff --exit-code
+
+      - name: Build the static site
+        run: node scripts/build-static.js
+
+      - name: Check links, structure and editorial safeguards
+        run: node scripts/check-site.js
+
+      - name: Run tests
+        run: node --test tests/*.test.mjs
