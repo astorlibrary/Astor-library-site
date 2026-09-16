@@ -856,7 +856,8 @@ input:focus-visible {
 }
 
 /* Catalogue tiles show real covers from the shelf they open. */
-.home-tile-covers {
+.home-tiles .home-tile-covers {
+  margin-top: 0;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -867,7 +868,7 @@ input:focus-visible {
   background: var(--catalogue-sand);
 }
 .home-tile-covers img {
-  width: 40%;
+  width: 34%;
   height: auto;
   aspect-ratio: 2 / 3;
   object-fit: cover;
@@ -876,7 +877,7 @@ input:focus-visible {
   background: var(--catalogue-cream);
 }
 .home-tile-covers img + img {
-  margin-left: -13%;
+  margin-left: -9%;
 }
 .home-tile-covers img:nth-child(1) {
   transform: translateY(10px) rotate(-6deg);
