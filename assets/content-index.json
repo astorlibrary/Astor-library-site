@@ -6,8 +6,8 @@
     "resources": 62,
     "studyEditions": 41,
     "collections": 11,
-    "passages": 78,
-    "entries": 442
+    "passages": 90,
+    "entries": 454
   },
   "books": [
     {
@@ -223,7 +223,7 @@
       "collection": "Shakespeare",
       "description": "Helena cures a king and wins the right to choose a husband, but Bertram refuses the marriage and sets conditions he believes she cannot meet.",
       "href": "/books/alls-well-that-ends-well/",
-      "image": "/0001_1_use-the-macbeth-cover-as-the-layout-refe_oR8d6uK8WYeORWiSoFuzBw_7Bo8rZBYSiSmvEif8P1K7A_cover.png",
+      "image": "/Alls%20Well%20That%20Ends%20Well%20Main%20Cover.png",
       "imageAlt": "Astor Library All's Well That Ends Well cover",
       "search": "All's Well That Ends Well William Shakespeare Shakespeare Helena cures a king and wins the right to choose a husband, but Bertram refuses the marriage and sets conditions he believes she cannot meet. All's Well That Ends Well, William Shakespeare Why the ending unsettles Text and early publication First Folio witness Composition is uncertain Riddle, bargain and proof Sources and story tradition Giletta of Narbonne in the Decameron The Palace of Pleasure The braggart companion Historical context Helena's cure and Bertram's refusal The father's remedy Florence and military display The problem of pursuit Characters Physician's daughter and plot-maker Rank without maturity Language without substance Household authority Witness and counter-plot Performance timeline Goodman's Fields and Drury Lane William Bridges-Adams at Stratford-upon-Avon Noel Willman and Tyrone Guthrie John Barton: stage and television record Trevor Nunn: Peggy Ashcroft as the Countess Peter Hall and Gregory Doran Nancy Meckler: abstract design and problem-play framing Blanche McIntyre: RSC contemporary production Stage adaptations Reconciliation under pressure Comedy of exposure Consent, fantasy and female agency Screen versions BBC / RSC television version BBC Television Shakespeare National Theatre broadcast record Sources and further reading",
       "authorHref": "/shakespeare/",
@@ -4871,7 +4871,7 @@
         {
           "title": "All's Well That Ends Well",
           "href": "/books/alls-well-that-ends-well/",
-          "image": "/0001_1_use-the-macbeth-cover-as-the-layout-refe_oR8d6uK8WYeORWiSoFuzBw_7Bo8rZBYSiSmvEif8P1K7A_cover.png",
+          "image": "/Alls%20Well%20That%20Ends%20Well%20Main%20Cover.png",
           "imageAlt": "Astor Library All's Well That Ends Well cover",
           "collection": "Shakespeare",
           "description": "Helena cures a king and wins the right to choose a husband, but Bertram refuses the marriage and sets conditions he believes she cannot meet."
@@ -7244,7 +7244,7 @@
       "typeLabel": "Study edition",
       "title": "Jekyll and Hyde",
       "description": "Duality, secrecy, science, setting, narrative method and key passages.",
-      "href": "https://mybook.to/ddk9RnO",
+      "href": "/study/jekyll-and-hyde/",
       "externalUrl": "https://mybook.to/ddk9RnO",
       "image": "/Jekyll%20and%20Hyde%20Study.png",
       "imageAlt": "Jekyll and Hyde Study cover",
@@ -7304,7 +7304,7 @@
       "typeLabel": "Study edition",
       "title": "Hamlet",
       "description": "Revenge, delay, theatre, corruption, mortality, Ophelia and soliloquies.",
-      "href": "https://mybook.to/Q1lrp8",
+      "href": "/study/hamlet/",
       "externalUrl": "https://mybook.to/Q1lrp8",
       "image": "/Hamlet%20Study.png",
       "imageAlt": "Hamlet Study cover",
@@ -7319,7 +7319,7 @@
       "typeLabel": "Study edition",
       "title": "Frankenstein",
       "description": "Creation, responsibility, isolation, frame narrative, science and sympathy.",
-      "href": "https://mybook.to/uGEUdh",
+      "href": "/study/frankenstein/",
       "externalUrl": "https://mybook.to/uGEUdh",
       "image": "/Frankenstein%20Study.png",
       "imageAlt": "Frankenstein Study cover",
@@ -7409,7 +7409,7 @@
       "typeLabel": "Study edition",
       "title": "Othello",
       "description": "Jealousy, race, military honour, Iago, Desdemona, language and tragedy.",
-      "href": "https://mybook.to/A8uO",
+      "href": "/study/othello/",
       "externalUrl": "https://mybook.to/A8uO",
       "image": "/Othello%20Study.png",
       "imageAlt": "Othello Study cover",
@@ -7482,7 +7482,7 @@
       "typeLabel": "Study edition",
       "title": "Romeo and Juliet",
       "description": "Love, fate, conflict, youth, haste, Mercutio, Tybalt and tragedy.",
-      "href": "https://mybook.to/wwhLC",
+      "href": "/study/romeo-and-juliet/",
       "externalUrl": "https://mybook.to/wwhLC",
       "image": "/Romeo%20and%20Juliet%20Study.png",
       "imageAlt": "Romeo and Juliet Study cover",
@@ -7512,7 +7512,7 @@
       "typeLabel": "Study edition",
       "title": "A Christmas Carol",
       "description": "Scrooge, Marley, the spirits, poverty, redemption, time and Christmas.",
-      "href": "https://mybook.to/OS3XKr",
+      "href": "/study/a-christmas-carol/",
       "externalUrl": "https://mybook.to/OS3XKr",
       "image": "/A%20Christmas%20Carol%20Study.png",
       "imageAlt": "A Christmas Carol Study cover",
@@ -9031,6 +9031,162 @@
         "/books/dickens-at-christmas/"
       ],
       "search": "Haunted Man Ghosts Bargain Dickens Christmas book ending Lord keep my memory green Redlaw Milly portrait holly close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“Uneasy lies the head that wears a crown”",
+      "description": "Read the sleepless king’s apostrophe to sleep through the ship-boy on the mast, the watch-case and a usurper’s guilt.",
+      "href": "/passage-room/henry-iv-part-2-uneasy-lies-the-head/",
+      "image": "/Henry%20IV%20part%202%20Main.jpeg",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/henry-iv-part-2/"
+      ],
+      "search": "Henry IV Part 2 Shakespeare uneasy lies the head sleep Act 3 Scene 1 ship-boy insomnia king close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“Farewell? A long farewell to all my greatness!”",
+      "description": "Read Wolsey’s fall through the three-day plant, boys on bladders, the sea of glory and the fall like Lucifer.",
+      "href": "/passage-room/henry-viii-long-farewell/",
+      "image": "/Henry%20VIII%20Main%20Cover.jpg",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/henry-viii/"
+      ],
+      "search": "Henry VIII Shakespeare Fletcher Wolsey long farewell greatness Act 3 Scene 2 fall Lucifer close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“Take but degree away, untune that string”",
+      "description": "Read Ulysses on degree through the untuned string, the universal wolf and the schemer who preaches order.",
+      "href": "/passage-room/troilus-and-cressida-degree/",
+      "image": "/Troilus%20and%20Cressida%20Main.png",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/troilus-and-cressida/"
+      ],
+      "search": "Troilus and Cressida Shakespeare Ulysses degree untune the string universal wolf Act 1 Scene 3 hierarchy close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“Thus much of this will make black white, foul fair”",
+      "description": "Read Timon and the gold through the yellow slave, the inversions money performs and the speech Marx quoted.",
+      "href": "/passage-room/timon-of-athens-gold/",
+      "image": "/Timon%20of%20Athens%20Main.png",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/timon-of-athens/"
+      ],
+      "search": "Timon of Athens Shakespeare Middleton gold yellow slave black white Act 4 Scene 3 money Marx close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“I am the sea. Hark how her sighs doth flow!”",
+      "description": "Read Titus refusing reason through bottomless grief, the weeping welkin and a messenger with two heads and a hand.",
+      "href": "/passage-room/titus-andronicus-i-am-the-sea/",
+      "image": "/Titus%20Andronicus.png",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/titus-andronicus/"
+      ],
+      "search": "Titus Andronicus Shakespeare I am the sea reason grief Act 3 Scene 1 Lavinia revenge close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“Thy husband is thy lord, thy life, thy keeper”",
+      "description": "Read Katherina’s last speech through the troubled fountain, subject and prince, and four centuries of argument about whether she means it.",
+      "href": "/passage-room/taming-of-the-shrew-thy-husband-is-thy-lord/",
+      "image": "/The%20Taming%20of%20the%20Shrew%20Main%20Cover.jpg",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/taming-of-the-shrew/"
+      ],
+      "search": "Taming of the Shrew Shakespeare Katherina obedience husband is thy lord Act 5 Scene 2 Kate wager close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“I to the world am like a drop of water”",
+      "description": "Read Antipholus alone in Ephesus through the drop that seeks another drop and a farce that opens on lost identity.",
+      "href": "/passage-room/comedy-of-errors-drop-of-water/",
+      "image": "/Comedy%20of%20Errors%20%28Main%20Page%29.png",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/comedy-of-errors/"
+      ],
+      "search": "Comedy of Errors Shakespeare Antipholus drop of water identity twins Act 1 Scene 2 Ephesus close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“From women’s eyes this doctrine I derive”",
+      "description": "Read Berowne’s defence of breaking the oath through Promethean fire, women as academes and a play that will not let him win.",
+      "href": "/passage-room/loves-labours-lost-womens-eyes/",
+      "image": "/Love%27s%20Labour%27s%20Lost%20Main%20Cover.jpg",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/loves-labours-lost/"
+      ],
+      "search": "Loves Labours Lost Shakespeare Berowne from womens eyes oath Promethean fire Act 4 Scene 3 sophistry close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“Our remedies oft in ourselves do lie”",
+      "description": "Read Helena resolving to act through the fated sky that gives free scope and the most self-reliant heroine in the comedies.",
+      "href": "/passage-room/alls-well-our-remedies/",
+      "image": "/Alls%20Well%20That%20Ends%20Well%20Main%20Cover.png",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/alls-well-that-ends-well/"
+      ],
+      "search": "Alls Well That Ends Well Shakespeare Helena our remedies in ourselves Act 1 Scene 1 king project close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“the sourest-natured dog that lives”",
+      "description": "Read Launce’s farewell with his dog Crab through the shoes that are parents, “I am the dog”, and the first great clown speech.",
+      "href": "/passage-room/two-gentlemen-launce-and-crab/",
+      "image": "/Two%20Gentleman%20of%20Verona%20Main%20Cover.png",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/the-two-gentlemen-of-verona/"
+      ],
+      "search": "Two Gentlemen of Verona Shakespeare Launce Crab dog Act 2 Scene 3 clown malapropism close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“Hunting he lov’d, but love he laugh’d to scorn”",
+      "description": "Read the opening of Venus and Adonis through the sun taking leave, the goddess as bold-faced suitor and the poem that made Shakespeare famous.",
+      "href": "/passage-room/venus-and-adonis-purple-coloured-face/",
+      "image": "/Venus%20and%20Adonis%20Main%20Cover.png",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/venus-and-adonis/"
+      ],
+      "search": "Venus and Adonis Shakespeare narrative poem opening Adonis goddess suitor 1593 Southampton close reading"
+    },
+    {
+      "type": "passage",
+      "typeLabel": "Close reading",
+      "title": "“The kettle began it!”",
+      "description": "Read the opening of Dickens’s third Christmas book through a narrator who argues with a character about a kettle and the Dutch clock.",
+      "href": "/passage-room/cricket-on-the-hearth-the-kettle-began-it/",
+      "image": "/Cricket%20on%20the%20Hearth.png",
+      "imageAlt": "Astor Library cover",
+      "relatedBooks": [
+        "/books/cricket-on-the-hearth/"
+      ],
+      "search": "Cricket on the Hearth Dickens kettle began it Christmas book narrator Peerybingle Dutch clock close reading"
     }
   ]
 }
