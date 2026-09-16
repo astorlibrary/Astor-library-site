@@ -59,8 +59,8 @@ function subjectPage(subject) {
     return '<a href="' + escapeHtml(source.href) + '">' + escapeHtml(source.label) + '</a>';
   }).join('');
 
-  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-    '<title>' + escapeHtml(subject.title) + ': Books, History and Reading Guide | Astor Library</title><meta name="description" content="' + escapeHtml(subject.description) + '"><link rel="stylesheet" href="/assets/styles.css"></head><body>' +
+  return '<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
+    '<title>' + escapeHtml(subject.title.split(':')[0]) + ': Books and Reading Guide | Astor Library</title><meta name="description" content="' + escapeHtml(subject.description) + '"><link rel="stylesheet" href="/assets/styles.css"></head><body>' +
     siteHeader() + '<main id="main-content" class="page-wrap subject-guide-page">' +
     '<nav class="book-breadcrumb subject-breadcrumb" aria-label="Breadcrumb"><a href="/subjects/">Subjects</a><span aria-hidden="true">/</span><span aria-current="page">' + escapeHtml(subject.title) + '</span></nav>' +
     '<section class="subject-guide-hero"><div><p class="kicker">' + escapeHtml(subject.kicker) + '</p><h1>' + escapeHtml(subject.title) + '.</h1><p class="deck">' + escapeHtml(subject.description) + '</p><div class="button-row"><a class="button primary" href="#subject-books">Books in this guide</a><a class="button secondary" href="/subjects/">All subjects</a></div></div>' +
@@ -82,7 +82,7 @@ function subjectIndex() {
     return '<article class="subject-directory-card"><a href="/subjects/' + escapeHtml(subject.slug) + '/">' + coverFan(subject.books, 'Books in ' + subject.title, 'subject-index-covers') + '<div><p class="kicker">0' + (index + 1) + ' · ' + subject.books.length + ' books</p><h2>' + escapeHtml(subject.title) + '</h2><p>' + escapeHtml(subject.description) + '</p><span class="home-text-link">Open the subject guide <span aria-hidden="true">&rarr;</span></span></div></a></article>';
   }).join('');
 
-  return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
+  return '<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
     '<title>Literature Subjects and Genre Guides | Astor Library</title><meta name="description" content="Guides to comedy, Gothic literature, tragedy, detective fiction, epic poetry, satire, narration, slavery, freedom and abolition, with links to relevant Astor editions."><link rel="stylesheet" href="/assets/styles.css"></head><body>' +
     siteHeader() + '<main id="main-content" class="page-wrap subjects-page"><section class="subjects-hero"><div><p class="kicker">Forms, methods and histories</p><h1>Subject and genre guides.</h1><p class="deck">Each guide defines a form or method, gives relevant historical information, explains key terms and links to books and free resources.</p><div class="button-row"><a class="button primary" href="#subject-guides">Choose a subject</a><a class="button secondary" href="/reading-routes/">Browse reading lists</a></div></div><div class="subjects-hero-words" aria-hidden="true"><span>Comedy</span><span>Gothic</span><span>Freedom</span><span>Narration</span><span>Epic</span></div></section>' +
     '<section class="subjects-intro"><p>The guides distinguish related forms and explain how particular works use language, structure and narration. They also link to Astor editions and free resources for each subject.</p></section>' +

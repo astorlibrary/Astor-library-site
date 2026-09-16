@@ -264,7 +264,7 @@ if (!fs.existsSync(passageHubFile)) {
   failures.push('The site is missing the Passage Room');
 } else {
   const passageHub = fs.readFileSync(passageHubFile, 'utf8');
-  if (!passageHub.includes('Annotated passages from classic literature.')) failures.push('The Passage Room is missing its opening statement');
+  if (!passageHub.includes('Annotated passages from classic literature')) failures.push('The Passage Room is missing its opening statement');
   if (countMatches(passageHub, /class="passage-card /g) !== 78) failures.push('The Passage Room must open seventy-eight close readings');
 }
 

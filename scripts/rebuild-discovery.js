@@ -927,7 +927,7 @@ const entryCards = entries.map(function (entry) {
     '</div></a></article>';
 }).join('');
 
-const exploreHtml = '<!doctype html><html lang="en"><head>' +
+const exploreHtml = '<!doctype html><html lang="en-GB"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
   '<title>Search the Catalogue | Astor Library</title>' +
   '<meta name="description" content="Search Astor Library books, close readings, writers, subject guides, free literature resources and study editions in one place.">' +
@@ -995,7 +995,7 @@ const authorDirectoryCards = authors.map(function (author) {
   return '<article class="author-directory-card" id="' + slugify(author.title) + '"><p class="author-directory-count">' + author.bookCount + (author.bookCount === 1 ? ' book' : ' books') + '</p><h2>' + name + '</h2><div class="author-book-links">' + bookLinks + '</div></article>';
 }).join('');
 
-const authorsHtml = '<!doctype html><html lang="en"><head>' +
+const authorsHtml = '<!doctype html><html lang="en-GB"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
   '<title>Classic Authors and Writers | Astor Library</title><meta name="description" content="Author pages with biographical information, publication context, literary analysis and links to every Astor Library edition by each writer.">' +
   '<link rel="stylesheet" href="/assets/styles.css"></head><body>' + siteHeader() +
@@ -1044,7 +1044,7 @@ const passageLinks = passages
   .map(function (passage) { return '<a href="' + escapeHtml(passage.href) + '"><span>' + escapeHtml(passage.title) + '</span><small>' + escapeHtml(passage.typeLabel) + '</small></a>'; })
   .join('');
 
-const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
+const siteIndexHtml = '<!doctype html><html lang="en-GB"><head>' +
   '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
   '<title>Site Index | Astor Library</title><meta name="description" content="A complete, crawlable index of Astor Library books, close readings, writers, subject guides, free guides, study editions and reading routes.">' +
   '<link rel="stylesheet" href="/assets/styles.css"><style>' +

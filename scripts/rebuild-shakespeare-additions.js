@@ -72,7 +72,7 @@ function bookPage(book) {
     : '<a class="button secondary" href="/study/">Browse study editions</a>';
 
   return `<!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${escapeHtml(book.title)} | Text, Context and Performance | Astor Library</title><meta name="description" content="${escapeHtml(firstSentence(book.deck))}"><link rel="stylesheet" href="/assets/styles.css"></head>
 <body>${header()}
 <main id="main-content" class="page-wrap astor-book-record">
