@@ -775,7 +775,7 @@ const editionUpdateBooks = [
     deck: 'A premium complete edition with same-page commentary and extensive scholarship on the early texts, fairies and folklore, marriage law, the lovers, mechanicals, performance and adaptation.',
     editionIncludes: ['Complete modern-spelling text of the play', 'Scene summaries and line-numbered text', 'Same-page explanatory notes and commentary', 'Critical essays, key passages and performance history'],
     facts: [
-      { label: '1600 quartos', text: 'The edition principally follows the authoritative first quarto and records second-quarto evidence.' },
+      { label: '1600 first quarto', text: 'The edition principally follows the authoritative first quarto and records second-quarto evidence.' },
       { label: '1623 Folio', text: 'Important Folio readings and later editorial choices are explained.' },
       { label: 'Philostrate retained', text: 'The final act keeps Philostrate rather than adopting the Folio’s reassignment of his lines to Egeus.' },
       { label: 'Paired choice', text: 'The expanded volume appears beside the standard Astor edition.' }

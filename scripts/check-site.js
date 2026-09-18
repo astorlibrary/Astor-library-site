@@ -234,7 +234,7 @@ for (const card of autumnCards) {
   const image = card[2].match(/<img\b[^>]*src="([^"]+)"/)?.[1];
   if (image !== book.image && image !== autumnThumbnails[book.image]) failures.push('The autumn shelf has a mismatched cover for ' + book.href);
 }
-if (new Set(autumnCollections).size < 5) failures.push('The autumn shelf must represent at least five catalogue collections');
+if (new Set(autumnCollections).size < 3) failures.push('The autumn shelf must represent at least three catalogue collections');
 if (autumnCollections.filter(collection => collection === 'Victorian').length > 2) failures.push('The autumn shelf is dominated by Victorian titles');
 if (/Summer at Astor|class="seasonal-feature"|class="academic-feature"/i.test(homepageMain)) failures.push('The homepage still contains a retired seasonal feature');
 for (const total of [

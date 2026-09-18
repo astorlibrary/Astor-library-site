@@ -111,9 +111,7 @@ function assetPath(file) {
   return '/' + encodeURIComponent(file).replace(/'/g, '%27');
 }
 
-function firstSentence(value) {
-  return String(value).match(/^.*?[.!?](?:\s|$)/)?.[0].trim() || String(value);
-}
+const { firstSentence } = require('./text-excerpt');
 
 function paragraphs(values) {
   return values.map(value => '<p>' + escapeHtml(value) + '</p>').join('');

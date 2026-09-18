@@ -113,9 +113,7 @@ function textOnly(value) {
 }
 
 function firstSentence(value) {
-  const plain = textOnly(value);
-  const match = plain.match(/^([\s\S]*?[.!?])(?:\s|$)/);
-  return match ? match[1] : plain;
+  return require('./text-excerpt').firstSentence(textOnly(value));
 }
 
 function escapeHtml(value) {
@@ -948,7 +946,8 @@ if (!books.length || !authors.length || !resources.length || !studyEditions.leng
   }));
 }
 
-const entries = passages.concat(subjects, books, authors, resources, studyEditions, collections);
+const seasons = require('./seasonal-helpers').discoveryEntries(books);
+const entries = passages.concat(subjects, books, authors, resources, studyEditions, collections, seasons);
 const index = {
   counts: {
     books: books.length,
@@ -958,6 +957,7 @@ const index = {
     studyEditions: studyEditions.length,
     collections: collections.length,
     passages: passages.length,
+    seasons: seasons.length,
     entries: entries.length
   },
   books: books,
@@ -966,12 +966,14 @@ const index = {
   resources: resources,
   studyEditions: studyEditions,
   collections: collections,
-  passages: passages
+  passages: passages,
+  seasons: seasons
 };
 
 fs.writeFileSync(path.join(root, 'assets/content-index.json'), JSON.stringify(index, null, 2) + '\n');
 
 const typeCtas = {
+  season: 'Explore the seasonal collection',
   author: 'Read the writer page',
   book: 'Open the book',
   collection: 'Browse the collection',
@@ -1025,9 +1027,11 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<button type="button" class="explore-filter" data-filter="author" aria-pressed="false">Writers</button>' +
   '<button type="button" class="explore-filter" data-filter="resource" aria-pressed="false">Free guides</button>' +
   '<button type="button" class="explore-filter" data-filter="study" aria-pressed="false">Study editions</button>' +
+  '<button type="button" class="explore-filter" data-filter="season" aria-pressed="false">Seasons</button>' +
   '<button type="button" class="explore-filter" data-filter="collection" aria-pressed="false">Collections</button>' +
   '</div></section>' +
   '<section class="explore-paths" aria-label="Ways into Astor Library">' +
+  '<a href="/seasons/"><span>The seasonal library</span><p>Books and resources for Halloween, Christmas, Bonfire Night and the changing seasons.</p></a>' +
   '<a href="/passage-room/"><span>Annotated passages</span><p>Short extracts with notes on language, structure and context.</p></a>' +
   '<a href="/library/"><span>Main editions</span><p>Complete texts and book pages listing the material included in each edition.</p></a>' +
   '<a href="/subjects/"><span>Subject guides</span><p>Guides to comedy, Gothic, tragedy, detective fiction, epic, satire, narration, slavery and freedom.</p></a>' +
@@ -1132,7 +1136,8 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
   '.site-index-quick{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 60px}.site-index-quick a{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;font-weight:800;color:var(--burgundy);border:1px solid var(--line);background:#fff8ef;padding:10px 13px;text-decoration:none}.index-group{border-top:1px solid var(--line);padding:38px 0 14px}.index-group h2{font-size:clamp(34px,5vw,58px);line-height:.95;letter-spacing:-.04em;margin:0 0 22px}.index-group h2 a{text-decoration:none}.index-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.index-links>a{display:flex;flex-direction:column;gap:6px;min-height:92px;border:1px solid var(--line);background:rgba(255,248,239,.86);padding:15px;text-decoration:none}.index-links span{font-size:21px;font-weight:700;line-height:1.08}.index-links small{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;color:var(--muted);line-height:1.35}@media(max-width:820px){.index-links{grid-template-columns:1fr}}' +
   '</style></head><body>' + siteHeader() +
   '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Complete directory</p><h1>Site index.</h1><p class="deck">Links to every book, close reading, writer, subject guide, free resource, study edition and collection currently available from Astor Library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions.</strong> Use the catalogue search to filter these entries, or browse the sections below.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/passage-room/">Read a passage</a></div></aside></section>' +
-  '<nav class="site-index-quick" aria-label="Site index sections"><a href="#passages">Close readings</a><a href="#subjects">Subjects</a><a href="#writers">Writers</a><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="/about/">About Astor Library</a><a href="/editorial/">Editorial standards</a></nav>' +
+  '<nav class="site-index-quick" aria-label="Site index sections"><a href="#seasons">Seasons</a><a href="#passages">Close readings</a><a href="#subjects">Subjects</a><a href="#writers">Writers</a><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="/about/">About Astor Library</a><a href="/editorial/">Editorial standards</a></nav>' +
+  '<section class="index-group" id="seasons"><h2><a href="/seasons/">The seasonal library</a></h2><div class="index-links">' + seasons.map(season => '<a href="' + season.href + '"><span>' + escapeHtml(season.title) + '</span><small>Books and resources · open all year</small></a>').join('') + '</div></section>' +
   '<section class="index-group" id="passages"><h2><a href="/passage-room/">The Passage Room</a></h2><div class="index-links">' + passageLinks + '</div></section>' +
   '<section class="index-group" id="subjects"><h2><a href="/subjects/">Subject guides</a></h2><div class="index-links">' + subjectLinks + '</div></section>' +
   '<section class="index-group" id="writers"><h2><a href="/authors/">Writers</a></h2><div class="index-links">' + authorLinks + '</div></section>' +

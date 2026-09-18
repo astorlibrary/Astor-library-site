@@ -5,8 +5,10 @@ const { metadata: pageMetadata } = require('./seo-validation');
 const { hardbacks } = require('./format-release-data');
 const { bookEditionSchemas, paperbackEditionSchema } = require('./book-edition-schema');
 const septemberCatalogue = require('./september-catalogue-data.json');
+const { seasons, booksFor, hrefFor } = require('./seasonal-helpers');
 
 const root = process.cwd();
+const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
 const outDir = path.join(root, 'dist');
 const SITE_URL = 'https://astorlibrary.com';
 const discoveryFile = path.join(root, 'assets', 'content-index.json');
@@ -386,6 +388,9 @@ function addCollectionStructuredData(html, source) {
   if (href === '/library/' || href === '/classic-literature/') {
     items = discovery.books || [];
     kind = 'Classic literature books';
+  } else if (href === '/seasons/') {
+    items = discovery.seasons || [];
+    kind = 'Seasonal books and resources';
   } else if (href === '/authors/') {
     items = discovery.authors || [];
     kind = 'Classic authors and writers';
@@ -416,7 +421,8 @@ function addCollectionStructuredData(html, source) {
       ...(discovery.studyEditions || []),
       ...(discovery.authors || []),
       ...(discovery.subjects || []),
-      ...(discovery.passages || [])
+      ...(discovery.passages || []),
+      ...(discovery.seasons || [])
     ];
     kind = 'Search the Astor Library catalogue';
   } else if (href === '/reading-routes/') {
@@ -558,7 +564,8 @@ function addGlobalMetadata(html, source) {
   const subject = subjectContext(source);
   const passage = passageContext(source);
   const study = studyContext(source);
-  const imageOwner = book || resource || passage || study || author || subject;
+  const season = discovery.seasons?.find(item => item.href === href);
+  const imageOwner = book || resource || passage || study || author || subject || season;
   const image = optimisedImage(imageOwner?.image) || '/assets/og-logo.jpg';
   const imageAlt = imageOwner?.imageAlt || (imageOwner?.title
     ? plainText(imageOwner.title) + ', Astor Library'
@@ -962,6 +969,16 @@ function addDiscoveryNavigation(html, source) {
   return html;
 }
 
+function addBookSeasonLinks(html, source) {
+  const context = bookContext(source);
+  if (!context) return html;
+  if (!html.includes('href="/assets/seasons.css"')) html = html.replace('</head>', '<link rel="stylesheet" href="/assets/seasons.css"></head>');
+  const matches = seasons.filter(season => booksFor(season).includes(context.book.href));
+  if (!matches.length) return html;
+  const links = '<aside class="season-book-backlinks" aria-label="Seasonal reading collections"><p>Find this book in the seasonal library</p><div>' + matches.map(season => '<a href="' + hrefFor(season) + '">' + escapeHtml(season.shortTitle || season.title) + '</a>').join('') + '</div></aside>';
+  return html.replace(/<nav class="book-end-nav"|<\/main>/, match => links + match);
+}
+
 function addGlobalNavigation(html, source) {
   const href = pageHref(source);
   const inRoute = route => href === route || href.startsWith(route);
@@ -987,7 +1004,8 @@ function addGlobalNavigation(html, source) {
   const passageCurrent = href === '/passage-room/' || href.startsWith('/passage-room/');
   const searchCurrent = href === '/explore/' || href.startsWith('/explore/');
   const accountCurrent = href === '/account/' || href.startsWith('/account/');
-  const browseCurrent = hardbacksCurrent || shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent || readingRoutesCurrent;
+  const seasonsCurrent = inRoute('/seasons/');
+  const browseCurrent = seasonsCurrent || hardbacksCurrent || shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent || readingRoutesCurrent;
 
   const header = `<header class="site-header astor-global-header">
   <div class="astor-header-identity">
@@ -1016,6 +1034,7 @@ function addGlobalNavigation(html, source) {
                 <a href="/authors/"${current(authorsCurrent, href === '/authors/')}><em aria-hidden="true">03</em><span><b>Writers</b><small>Authors and their Astor editions</small></span></a>
                 <a href="/subjects/"${current(subjectsCurrent, href === '/subjects/')}><em aria-hidden="true">04</em><span><b>Subjects</b><small>Genres, themes and contexts</small></span></a>
                 <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}><em aria-hidden="true">05</em><span><b>Reading routes</b><small>Books connected by a question</small></span></a>
+                <a href="/seasons/"${current(seasonsCurrent, href === '/seasons/')}><em aria-hidden="true">06</em><span><b>Seasons &amp; occasions</b><small>Festive books and reading rooms</small></span></a>
               </div>
             </section>
             <section class="astor-period-directory" aria-labelledby="astor-period-title">
@@ -1047,7 +1066,7 @@ function addGlobalNavigation(html, source) {
   const footer = `<footer class="site-footer astor-global-footer">
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
   <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/hardbacks/">Hardback editions</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
-  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
+  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/seasons/">The seasonal library</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact &amp; support</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;
 
@@ -1083,7 +1102,9 @@ function prepareHtml(html, source) {
   html = addEditionSample(html, source);
   html = addContextImageShelf(html, source);
   html = addSiteIndexLink(html, source);
+  html = addBookSeasonLinks(html, source);
   html = addGlobalNavigation(html, source);
+  html = html.replace(/href="\/assets\/seasons\.css"/g, 'href="/assets/seasons.css?v=' + seasonalStylesVersion + '"');
 
   if (!html.includes('/assets/site.js')) {
     html = html.replace('</head>', '<script src="/assets/site.js" defer></script></head>');

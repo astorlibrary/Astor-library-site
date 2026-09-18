@@ -22,9 +22,7 @@ function paragraph(value) {
   return '<p>' + escapeHtml(value) + '</p>';
 }
 
-function firstSentence(value) {
-  return String(value).match(/^.*?[.!?](?:\s|$)/)?.[0].trim() || String(value);
-}
+const { firstSentence } = require('./text-excerpt');
 
 function header() {
   return `<header class="site-header">

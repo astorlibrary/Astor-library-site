@@ -9,6 +9,7 @@ require('./rebuild-main-additions');
 require('./rebuild-edition-update');
 require('./rebuild-september-catalogue');
 require('./rebuild-format-release');
+require('./rebuild-book-depth');
 require('./rebuild-resources');
 require('./rebuild-resource-additions');
 require('./rebuild-study-additions');
@@ -68,10 +69,7 @@ function assetPath(file) {
   return '/' + encodeURIComponent(file).replace(/'/g, '%27');
 }
 
-function firstSentence(value) {
-  const match = value.match(/^([\s\S]*?[.!?])(?:\s|$)/);
-  return match ? match[1] : value;
-}
+const { firstSentence } = require('./text-excerpt');
 
 const books = new Map();
 
@@ -212,3 +210,5 @@ console.log(`Rebuilt the library with ${sorted.length} books.`);
 require('./rebuild-subjects');
 require('./rebuild-discovery');
 require('./rebuild-passage-hub');
+
+require('./rebuild-seasons');
