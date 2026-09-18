@@ -13,3 +13,76 @@
 @media(prefers-reduced-motion:reduce){.season-cover,.season-book-image img{transition:none}}
 
 .season-page [id],.book-depth{scroll-margin-top:100px}.season-art-caption{bottom:-10px;margin:0}.season-deck{font-weight:400}
+/* Illustrated seasonal identities. Decoration is separate from all reading and purchase content. */
+.season-page,.season-tile{--ribbon:#b85125;--glow:#754022;--stripe:#f0bd65;--stage:#f0dfc0}
+.theme-autumn{--night:#352016;--ink:#452b1e;--accent:#f3bc62;--light:#fff5df;--paper:#fcf4e5;--soft:#efe0c9;--muted:#685345;--ribbon:#b85125;--glow:#794324;--stripe:#ba5c2c;--stage:#f0dfc0}
+.theme-christmas{--night:#073b2d;--ink:#153d2e;--accent:#f4d080;--ribbon:#a52639;--glow:#286447;--stripe:#b72b3c;--paper:#fff8e9;--soft:#e8e1c9;--stage:#e4eadc}
+.theme-halloween{--night:#211329;--ink:#3c2343;--accent:#ffb658;--ribbon:#b15123;--glow:#55305c;--stripe:#de812f;--paper:#fff2de;--stage:#eadbd3}
+.theme-bonfire-night{--night:#111b32;--ink:#2c3045;--accent:#ffc472;--ribbon:#b74b2d;--glow:#393154;--stripe:#e4793e;--stage:#e7d9ca}
+.theme-winter{--night:#163e57;--ink:#21435c;--accent:#daedf5;--ribbon:#39788c;--glow:#39718a;--stripe:#9acbd8;--stage:#dcecf1}
+.theme-summer{--night:#065460;--ink:#204b4d;--accent:#ffe095;--ribbon:#c9553b;--glow:#208884;--stripe:#f0bc48;--paper:#fff9e9;--stage:#e1ecdf}
+.theme-valentines-day{--night:#681b37;--ink:#642740;--accent:#ffd5ca;--ribbon:#ac3555;--glow:#a64460;--stripe:#cf6f85;--stage:#f5dfdf}
+.theme-fourth-of-july{--night:#14345b;--ink:#253d59;--accent:#fff0cb;--ribbon:#b13240;--glow:#315b84;--stripe:#ba3d4a;--paper:#fff9ee;--stage:#e0e6ed}
+.season-hero{background:radial-gradient(ellipse at 85% 35%,var(--glow),transparent 60%),var(--night);border-bottom:0}
+.season-hero::before{inset:18px;border-color:color-mix(in srgb,var(--accent) 38%,transparent);z-index:1}
+.season-hero::after{content:"";position:absolute;inset:auto 0 0;height:10px;background:repeating-linear-gradient(135deg,var(--ribbon) 0 20px,var(--accent) 20px 23px,var(--night) 23px 43px,var(--accent) 43px 46px)}
+.season-hero>.season-wrap{position:relative;z-index:1}
+.season-garland{position:absolute;top:0;left:0;width:100%;height:118px;pointer-events:none;overflow:hidden}
+.season-hero>.season-garland{z-index:2}
+.season-breadcrumb{position:relative;z-index:3;padding:110px 0 30px}
+.season-hero-grid{padding-bottom:52px;min-height:550px;gap:15px}
+.season-hero h1{text-shadow:0 3px 18px #0002}
+.season-hero-copy>.season-eyebrow{display:flex;gap:12px;align-items:center}
+.season-hero-copy>.season-eyebrow::before{content:"";width:33px;height:2px;background:var(--accent)}
+.season-button{box-shadow:4px 4px 0 var(--ribbon);border-color:var(--accent);transition:box-shadow .2s,transform .2s}
+.season-button:hover{box-shadow:2px 2px 0 var(--ribbon);transform:translate(2px,2px)}
+.season-art{min-height:570px}
+.season-scene{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.season-cover-fan{inset:24% 5% 22%}
+.season-cover{flex-basis:34%;margin:0 -3%}
+.season-cover img{filter:brightness(1.03)}
+.season-art-caption{bottom:-8px;letter-spacing:.13em;color:var(--light)}
+.season-jump{background:var(--night);color:var(--light);border-bottom:3px solid var(--ribbon)}
+.season-jump a{border-bottom:1px solid transparent}
+.season-jump a:hover{border-color:var(--accent);color:var(--accent)}
+.season-introduction{border-bottom:3px double color-mix(in srgb,var(--ribbon) 38%,var(--paper))}
+.season-introduction>.season-eyebrow{color:var(--ink);border-left:4px solid var(--ribbon);padding-left:16px;align-self:start;max-width:200px}
+.season-section-head{max-width:800px}
+.season-section-mark{display:flex;align-items:center;gap:18px;margin-bottom:18px;pointer-events:none}
+.season-section-mark::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,color-mix(in srgb,var(--ribbon) 48%,var(--paper)),transparent)}
+.season-section-mark .season-emblem{height:58px;width:90px;flex:none}
+.season-book-image{position:relative;isolation:isolate;background-color:var(--stage);background-image:radial-gradient(ellipse at 50% 60%,color-mix(in srgb,var(--paper) 90%,transparent),transparent 65%),repeating-linear-gradient(135deg,transparent 0 25px,color-mix(in srgb,var(--ribbon) 7%,transparent) 25px 26px);border:1px solid color-mix(in srgb,var(--ribbon) 19%,var(--paper));border-bottom:4px solid var(--ribbon);padding:34px}
+.season-book-image::after{content:"";position:absolute;inset:8px;border:1px solid color-mix(in srgb,var(--ink) 14%,transparent);pointer-events:none;z-index:-1}
+.season-book-image>.season-emblem{position:absolute;width:70px;height:50px;top:9px;right:8px;opacity:.85;pointer-events:none;z-index:-1}
+.season-book-image img{position:relative}
+.season-book-copy{border-color:color-mix(in srgb,var(--ribbon) 27%,var(--paper))}
+.season-resource{border:1px solid color-mix(in srgb,var(--ribbon) 24%,var(--paper));border-top:4px solid var(--ribbon);background:linear-gradient(135deg,color-mix(in srgb,var(--stage) 50%,white),var(--paper) 75%);box-shadow:3px 3px 0 color-mix(in srgb,var(--ribbon) 9%,var(--paper))}
+.season-resource .season-eyebrow{color:var(--ink)}
+.season-note{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 10% 0,var(--glow),transparent 60%),var(--night);border:1px solid var(--accent);outline:5px solid var(--night);padding:90px 42px 42px;box-shadow:0 9px 0 var(--ribbon)}
+.season-note::after{content:"";position:absolute;inset:10px;border:1px solid color-mix(in srgb,var(--accent) 38%,transparent);pointer-events:none;z-index:-1}
+.season-note>.season-garland{height:70px;opacity:.9}
+.season-note>div{position:relative}
+.season-tile{background:radial-gradient(ellipse at 80% 75%,var(--glow),transparent 80%),var(--night);border:1px solid color-mix(in srgb,var(--accent) 50%,var(--night));border-bottom:6px solid var(--ribbon);padding-top:65px;isolation:isolate}
+.season-tile::before{content:"";inset:8px;border:1px solid color-mix(in srgb,var(--accent) 27%,transparent);opacity:1;pointer-events:none}
+.season-tile>.season-garland{height:58px;opacity:1}
+.season-tile>h3,.season-tile>p,.season-tile-period,.season-tile-link{position:relative}
+.season-tile-stage{position:relative;width:100%;aspect-ratio:1/1;min-height:200px;margin-top:auto}
+.season-tile-covers{position:absolute;inset:27% 8% 22%;height:auto;margin:0}
+.season-tile-covers img{width:34%;height:100%;max-height:none;max-width:none}
+.season-tile-link{margin-top:7px}
+.season-directory .season-tile{padding:75px 40px 32px}
+.season-directory .season-tile-stage{max-width:420px;align-self:center}
+.season-directory .season-tile-covers{height:auto}
+.season-directory .season-tile-covers img{height:100%;max-width:none}
+.season-directory .season-tile>.season-garland{height:67px}
+.season-directory-hero{background:radial-gradient(ellipse at 10% 20%,#79432466,transparent 40%),radial-gradient(ellipse at 90% 80%,#28644788,transparent 40%),#302219}
+.season-directory-hero::after{content:"";position:absolute;inset:auto 0 0;height:8px;background:repeating-linear-gradient(90deg,#e79b42 0 12.5%,#9050a1 12.5% 25%,#d05c3d 25% 37.5%,#599772 37.5% 50%,#add3e6 50% 62.5%,#e9c863 62.5% 75%,#d88297 75% 87.5%,#587eab 87.5% 100%)}
+.theme-christmas .season-book-image{background-image:radial-gradient(ellipse at 50% 60%,#fff8e9df,transparent 65%),repeating-linear-gradient(90deg,transparent 0 33px,#1a60440a 33px 36px),repeating-linear-gradient(0deg,transparent 0 33px,#1a604409 33px 36px)}
+.theme-halloween .season-book-image{background-image:radial-gradient(circle at 90% 8%,#ffb65880,transparent 28%),radial-gradient(ellipse at 50% 100%,#d8c8d1,transparent 80%)}
+.theme-winter .season-book-image{background-image:radial-gradient(circle,#ffffffaf 1.3px,transparent 1.6px),linear-gradient(160deg,#c8dee7,#edf5f5);background-size:26px 30px,100% 100%}
+.theme-summer .season-book-image{background-image:repeating-linear-gradient(90deg,#ffffff4d 0 20px,transparent 20px 40px)}
+.theme-fourth-of-july .season-book-image{background-image:repeating-linear-gradient(0deg,#fff9ee 0 21px,#b1324017 21px 42px)}
+@media(max-width:1000px){.season-hero-grid{min-height:510px}.season-art{min-height:510px}.season-breadcrumb{padding-top:100px}.season-note{padding:85px 32px 32px}.season-book-image{padding:28px}.season-tile-stage{max-width:400px;align-self:center}}
+@media(max-width:650px){.season-hero::before{inset:9px}.season-hero>.season-garland{height:90px}.season-breadcrumb{padding:91px 0 22px;font-size:9px;gap:9px}.season-hero-grid{gap:8px;padding-top:0;padding-bottom:44px}.season-hero h1{font-size:clamp(57px,12vw,76px)}.season-art{min-height:0;aspect-ratio:1/1;width:100%;max-width:430px;margin-top:2px}.season-cover-fan{inset:24% 5% 22%}.season-cover{flex-basis:34%}.season-art-caption{bottom:-18px;font-size:8px}.season-period{margin-bottom:2px}.season-introduction{padding:34px 0}.season-section-mark{margin-bottom:16px}.season-section-mark .season-emblem{height:48px;width:75px}.season-book-image{padding:26px 14px 20px}.season-book-image>.season-emblem{width:48px;height:33px;right:4px;top:4px;opacity:.75}.season-book-image img{height:180px}.season-book-image::after{inset:5px}.season-note{padding:80px 23px 28px;gap:20px}.season-note>.season-garland{height:65px}.season-tile{padding-top:64px}.season-directory .season-tile{padding:70px 27px 27px}.season-tile-stage{min-height:0}.season-tile-covers img{height:100%}.season-note p{font-size:16px}.season-jump a{line-height:1.7}.season-section-head h2{font-size:38px}}
+@media(max-width:374px){.season-book-image{padding:16px 10px}.season-book-image img{height:auto}.season-book-image>.season-emblem{width:36px;height:24px;opacity:.6}.season-breadcrumb{font-size:8px}.season-hero-actions{gap:18px}.season-art{min-height:0}.season-art-caption{letter-spacing:.08em}.season-tile{padding-left:22px;padding-right:22px}.season-directory .season-tile{padding-left:23px;padding-right:23px}.season-directory .season-tile h3{font-size:43px}.season-note{outline-width:3px}}
+@media(prefers-reduced-motion:reduce){.season-button{transition:none}}
