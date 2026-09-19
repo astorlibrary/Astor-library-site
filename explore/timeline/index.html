@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Literature timeline | Astor Library</title>
+  <meta name="description" content="An interactive timeline placing every Astor Library title against its historical moment and against the other books in the catalogue.">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/astor-study.css">
+  <script type="module" src="/assets/astor/timeline.mjs"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="Astor Library torch"><span class="word">LIBRARY</span></a>
+  <nav class="nav" aria-label="Primary navigation"><a class="nav-link" href="/library/">Books</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/resources/">Free resources</a><a class="nav-link" href="/play/">Play &amp; revise</a></nav>
+</header>
+<main id="main-content" class="page-wrap">
+  <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Timeline</span></nav>
+  <section class="page-intro">
+    <div><p class="kicker">Explore</p><h1>The books against their moment.</h1><p class="deck">Publication, first performance and the political weather each book was written into, laid on one scale. Filter by period or by kind of event, and see which books were being written at the same time as which.</p></div>
+  </section>
+
+  <div id="astor-timeline-controls" class="astor-chooser"></div>
+  <div class="astor-timeline" id="astor-timeline"></div>
+  <div class="astor-timeline-detail" id="astor-timeline-detail" hidden></div>
+<noscript><div class="astor-empty">The timeline needs JavaScript. Each book page carries its own dated context under “The book in its moment”.</div></noscript>
+
+  <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/explore/map/">Map of settings</a><a href="/classic-literature/">Periods</a><a href="/explore/">Search the library</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></nav>
+</main>
+<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div><div class="footer-links"><a href="/library/">Books</a><a href="/study/">Study editions</a><a href="/play/">Play &amp; revise</a><a href="/explore/">Search</a></div></footer>
+</body>
+</html>

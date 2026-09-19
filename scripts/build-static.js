@@ -1008,9 +1008,16 @@ function addGlobalNavigation(html, source) {
   const studyCurrent = href === '/study/' || href.startsWith('/study/');
   const passageCurrent = href === '/passage-room/' || href.startsWith('/passage-room/');
   const searchCurrent = href === '/explore/' || href.startsWith('/explore/');
+  const playCurrent = inRoute('/play/') || href === '/today/';
+  const myLibraryCurrent = href === '/my-library/';
+  const teachersCurrent = href === '/for-teachers/';
+  const exploreToolsCurrent = [
+    '/explore/quotations/', '/explore/timeline/', '/explore/characters/',
+    '/explore/techniques/', '/explore/map/', '/explore/compare/'
+  ].some(route => href === route);
   const accountCurrent = href === '/account/' || href.startsWith('/account/');
   const seasonsCurrent = inRoute('/seasons/');
-  const browseCurrent = seasonsCurrent || hardbacksCurrent || shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent || readingRoutesCurrent;
+  const browseCurrent = seasonsCurrent || hardbacksCurrent || shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent || readingRoutesCurrent || exploreToolsCurrent || teachersCurrent;
 
   const header = `<header class="site-header astor-global-header">
   <div class="astor-header-identity">
@@ -1042,6 +1049,18 @@ function addGlobalNavigation(html, source) {
                 <a href="/seasons/"${current(seasonsCurrent, href === '/seasons/')}><em aria-hidden="true">06</em><span><b>Seasons &amp; occasions</b><small>Festive books and reading rooms</small></span></a>
               </div>
             </section>
+            <section aria-labelledby="astor-tools-title">
+              <h2 id="astor-tools-title">Study tools</h2>
+              <div class="astor-browse-cards">
+                <a href="/explore/quotations/"${current(href === '/explore/quotations/')}><em aria-hidden="true">01</em><span><b>Quotation explorer</b><small>Every checked quotation, filterable</small></span></a>
+                <a href="/explore/timeline/"${current(href === '/explore/timeline/')}><em aria-hidden="true">02</em><span><b>Timeline</b><small>The books against their moment</small></span></a>
+                <a href="/explore/characters/"${current(href === '/explore/characters/')}><em aria-hidden="true">03</em><span><b>Character maps</b><small>Relationships, act by act</small></span></a>
+                <a href="/explore/techniques/"${current(href === '/explore/techniques/')}><em aria-hidden="true">04</em><span><b>Technique glossary</b><small>Terms with the evidence attached</small></span></a>
+                <a href="/explore/map/"${current(href === '/explore/map/')}><em aria-hidden="true">05</em><span><b>Map of settings</b><small>Where the books happen</small></span></a>
+                <a href="/explore/compare/"${current(href === '/explore/compare/')}><em aria-hidden="true">06</em><span><b>Compare two texts</b><small>Shared themes, side by side</small></span></a>
+                <a href="/for-teachers/"${current(teachersCurrent)}><em aria-hidden="true">07</em><span><b>For teachers</b><small>Starters, worksheets, projector mode</small></span></a>
+              </div>
+            </section>
             <section class="astor-period-directory" aria-labelledby="astor-period-title">
               <div class="astor-directory-heading"><h2 id="astor-period-title">Literary periods</h2><a href="/classic-literature/"${current(href === '/classic-literature/')}>View the overview <span aria-hidden="true">&rarr;</span></a></div>
               <div class="astor-period-links">
@@ -1060,9 +1079,11 @@ function addGlobalNavigation(html, source) {
       <a class="nav-link" href="/resources/"${current(resourcesCurrent, href === '/resources/')}><span class="astor-nav-number" aria-hidden="true">03</span><span>Free resources</span></a>
       <a class="nav-link" href="/study/"${current(studyCurrent, href === '/study/')}><span class="astor-nav-number" aria-hidden="true">04</span><span>Study editions</span></a>
       <a class="nav-link" href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}><span class="astor-nav-number" aria-hidden="true">05</span><span>Passage Room</span></a>
+      <a class="nav-link" href="/play/"${current(playCurrent, href === '/play/')}><span class="astor-nav-number" aria-hidden="true">06</span><span>Play &amp; revise</span></a>
     </div>
     <div class="astor-nav-utilities">
-      <a class="astor-utility-link astor-search-link" href="/explore/"${current(searchCurrent, href === '/explore/')}><span aria-hidden="true"></span>Search</a>
+      <a class="astor-utility-link astor-search-link" href="/explore/" data-astor-palette${current(searchCurrent, href === '/explore/')}><span aria-hidden="true"></span>Search</a>
+      <a class="astor-utility-link astor-mylibrary-link" href="/my-library/"${current(myLibraryCurrent)}>My library</a>
       <a class="astor-utility-link astor-account-link" href="/account/" data-auth-link${current(accountCurrent, href === '/account/')}>Sign in</a>
     </div>
   </nav>
@@ -1072,6 +1093,7 @@ function addGlobalNavigation(html, source) {
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
   <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/hardbacks/">Hardback editions</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
   <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/seasons/">The seasonal library</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
+  <div class="astor-footer-group"><h2>Play &amp; explore</h2><a href="/play/">Revision games</a><a href="/today/">Today</a><a href="/explore/quotations/">Quotation explorer</a><a href="/explore/timeline/">Timeline</a><a href="/explore/characters/">Character maps</a><a href="/explore/techniques/">Technique glossary</a><a href="/explore/map/">Map of settings</a><a href="/explore/compare/">Compare two texts</a><a href="/for-teachers/">For teachers</a><a href="/my-library/">My library</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact &amp; support</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;
 
@@ -1080,6 +1102,11 @@ function addGlobalNavigation(html, source) {
 
   if (!/href=["']\/assets\/navigation\.css["']/i.test(html)) {
     html = html.replace('</head>', '<link rel="stylesheet" href="/assets/navigation.css"></head>');
+  }
+  // The palette opens over any page, so it ships with the shared navigation.
+  // It fetches its index only when a reader actually opens it.
+  if (!html.includes('/assets/astor/palette.mjs')) {
+    html = html.replace('</head>', '<script type="module" src="/assets/astor/palette.mjs"></script></head>');
   }
   return html;
 }

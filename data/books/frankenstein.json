@@ -1,0 +1,1338 @@
+{
+  "slug": "frankenstein",
+  "title": "Frankenstein; or, The Modern Prometheus",
+  "author": "Mary Shelley",
+  "href": "/books/frankenstein/",
+  "studyHref": "/study/frankenstein/",
+  "buyUrl": "https://mybook.to/DMoGj",
+  "form": "novel",
+  "genre": "Gothic",
+  "period": "Romantic & Regency",
+  "written": "Begun in the summer of 1816",
+  "firstPublished": 1818,
+  "setting": "Geneva, Ingolstadt, the Alps, the Orkneys and the Arctic ice, in the previous century",
+  "readingTime": 420,
+  "difficulty": 4,
+  "lengthNote": "Four letters and twenty-four chapters, told by three narrators nested inside one another",
+  "openingLine": "You will rejoice to hear that no disaster has accompanied the commencement of an enterprise which you have regarded with such evil forebodings.",
+  "summary": "A student in Ingolstadt works out how to animate dead matter, succeeds, looks at what he has made and runs out of the room. The being he abandons teaches itself to speak and read, is driven off by everyone who sees it, and comes back to demand a companion. Shelley builds the whole argument as a set of nested testimonies, so that neither maker nor made ever gets to tell the story alone.",
+  "referenceStyle": "chapter, with the outer frame given as Letter I to Letter IV",
+  "sourceText": {
+    "label": "Standard Ebooks text of Frankenstein — Mary Shelley's revised 1831 edition",
+    "note": "The text checked here is the one-volume 1831 revision, not the anonymous 1818 first edition. It can be identified from the inside: it carries Shelley's 1831 introduction about the summer at Geneva, it runs as twenty-four continuous chapters rather than three volumes, and Elizabeth Lavenza arrives as an orphan taken in by the Frankensteins rather than as Victor's cousin."
+  },
+  "atAGlance": [
+    {
+      "label": "Begun",
+      "value": "Summer 1816",
+      "note": "At the Villa Diodati by Lake Geneva, after Byron proposed that the party each write a ghost story."
+    },
+    {
+      "label": "First published",
+      "value": "1818",
+      "note": "Anonymously, in three volumes, by Lackington, Hughes, Harding, Mavor & Jones."
+    },
+    {
+      "label": "Text used here",
+      "value": "1831",
+      "note": "Shelley's revised single-volume text for Bentley's Standard Novels, with a new introduction."
+    },
+    {
+      "label": "Shape",
+      "value": "Four letters, twenty-four chapters",
+      "note": "Walton writes to his sister; Victor speaks inside Walton's letters; the creature speaks inside Victor's account."
+    }
+  ],
+  "structure": [
+    {
+      "id": "letters",
+      "label": "Letters I-IV",
+      "title": "An explorer writes home and finds a better story than his own",
+      "summary": "Robert Walton, sailing north in search of a passage and a friend, writes to a sister who never answers. Ice closes around the ship, a huge figure crosses it on a sledge, and the next day the crew pulls aboard a starving European who has been chasing him. Everything that follows is inside a letter.",
+      "scenes": [
+        {
+          "ref": "Letter I",
+          "summary": "Walton, at St Petersburgh, describes an expedition he expects to make him famous."
+        },
+        {
+          "ref": "Letter II",
+          "summary": "At Archangel he complains that he has no friend, and no one to correct him."
+        },
+        {
+          "ref": "Letter III",
+          "summary": "A short, confident note sent from open sea."
+        },
+        {
+          "ref": "Letter IV",
+          "summary": "The ship is frozen in; the sledge is sighted; Victor Frankenstein comes aboard and begins to talk."
+        }
+      ]
+    },
+    {
+      "id": "making",
+      "label": "Chapters I-V",
+      "title": "A Geneva childhood, a university, and one night in November",
+      "summary": "Victor describes an upbringing so protected that his own account can find nothing in it to blame. At Ingolstadt he moves from discredited alchemists to modern chemistry, works alone for two years, and animates the thing he has assembled. The success lasts one sentence; the horror begins in the next.",
+      "scenes": [
+        {
+          "ref": "Chapters I-II",
+          "summary": "The Frankenstein household, Elizabeth's arrival, and a boy's reading in Agrippa and Paracelsus."
+        },
+        {
+          "ref": "Chapter III",
+          "summary": "His mother dies; at Ingolstadt, Waldman's lecture redirects him towards modern chemistry."
+        },
+        {
+          "ref": "Chapter IV",
+          "summary": "Two years in charnel houses and dissecting rooms; he breaks off his account to warn Walton."
+        },
+        {
+          "ref": "Chapter V",
+          "summary": "The creature opens its eye; Victor flees, falls ill, and is nursed by Clerval."
+        }
+      ]
+    },
+    {
+      "id": "consequences",
+      "label": "Chapters VI-X",
+      "title": "A child is killed and a servant is hanged for it",
+      "summary": "News from Geneva: William is dead. Victor sees the creature by lightning on the way home and says nothing while Justine Moritz is tried, persuaded to confess and executed. This is the section that makes the novel a moral problem rather than a horror story, because Victor's silence costs a life and he presents it as suffering.",
+      "scenes": [
+        {
+          "ref": "Chapters VI-VII",
+          "summary": "Clerval's friendship, then the letter announcing William's murder; a figure seen in a storm near Plainpalais."
+        },
+        {
+          "ref": "Chapter VIII",
+          "summary": "Justine's trial and execution; Victor keeps what he knows to himself."
+        },
+        {
+          "ref": "Chapters IX-X",
+          "summary": "Grief-stricken travel in the Alps; on the Mer de Glace the creature approaches and asks to be heard."
+        }
+      ]
+    },
+    {
+      "id": "creature",
+      "label": "Chapters XI-XVI",
+      "title": "The being's own account of learning to be a person",
+      "summary": "For six chapters the novel hands its voice to the thing it has been calling a wretch. It describes sensation before language, a year of watching the De Lacey family through a chink, an education gathered from Volney, Milton and Goethe, and the moment Felix beats it out of the cottage. It has been benevolent and is becoming something else.",
+      "scenes": [
+        {
+          "ref": "Chapters XI-XII",
+          "summary": "First sensations, fire, hunger, flight from villages, and the hovel beside the De Lacey cottage."
+        },
+        {
+          "ref": "Chapters XIII-XIV",
+          "summary": "Safie's arrival gives the creature language lessons by proxy, and the De Laceys' own history."
+        },
+        {
+          "ref": "Chapter XV",
+          "summary": "Three books, and Victor's laboratory journal; the blind old man listens until his family returns."
+        },
+        {
+          "ref": "Chapter XVI",
+          "summary": "The cottage is abandoned; the creature saves a girl and is shot for it, then meets William."
+        }
+      ]
+    },
+    {
+      "id": "bargain",
+      "label": "Chapters XVII-XXIII",
+      "title": "A promise made in Chamounix and broken in the Orkneys",
+      "summary": "The creature asks for one thing: a female of its own kind, and exile. Victor agrees, travels to England and Scotland, and tears the half-made companion apart with the creature watching at the window. The threat that follows is answered by a wedding, which is exactly what the threat was designed to produce.",
+      "scenes": [
+        {
+          "ref": "Chapters XVII-XVIII",
+          "summary": "The bargain is struck; Victor delays for months, then leaves for England with Clerval."
+        },
+        {
+          "ref": "Chapter XIX",
+          "summary": "London, Oxford, Scotland, and a hut on a remote Orkney island."
+        },
+        {
+          "ref": "Chapter XX",
+          "summary": "The second creature is destroyed; the creature promises to be with him on his wedding night."
+        },
+        {
+          "ref": "Chapters XXI-XXIII",
+          "summary": "Clerval is found strangled and Victor is charged; acquitted, he marries Elizabeth, who dies that night."
+        }
+      ]
+    },
+    {
+      "id": "pursuit",
+      "label": "Chapter XXIV and Walton's close",
+      "title": "Two ruined men and an argument that will not close",
+      "summary": "Victor chases the creature north until the ice stops both of them, and dies on Walton's ship still recommending ambition in the same breath as warning against it. The creature comes aboard to grieve over him, tells Walton what the pursuit cost on its side, and leaves. Nobody is left to settle who was right.",
+      "scenes": [
+        {
+          "ref": "Chapter XXIV",
+          "summary": "The pursuit across Russia and the ice; Victor's last speech to Walton's mutinous crew."
+        },
+        {
+          "ref": "Walton, in continuation",
+          "summary": "Victor dies; the creature is found weeping over the body and speaks for itself one last time."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "victor",
+      "name": "Victor Frankenstein",
+      "role": "Genevese student of natural philosophy",
+      "summary": "He gives two years to the problem of animating dead matter and about ten seconds to the question of what he will do afterwards. His narration is the novel's central difficulty: it is fluent, self-accusing and consistently arranged so that the things he chose look like things that happened to him.",
+      "clue": "He works alone for two years to make something live, then runs out of the room when it opens its eye, and spends the rest of his life calling that moment his misfortune.",
+      "firstAppearance": "Letter IV",
+      "traits": [
+        "secretive",
+        "eloquent",
+        "never quite culpable in his own account"
+      ],
+      "relationships": [
+        {
+          "to": "creature",
+          "label": "maker and abandoner of",
+          "kind": "enemy",
+          "stages": [
+            "making",
+            "consequences",
+            "bargain",
+            "pursuit"
+          ]
+        },
+        {
+          "to": "elizabeth",
+          "label": "engaged to, then married to",
+          "kind": "marriage",
+          "stages": [
+            "bargain"
+          ]
+        },
+        {
+          "to": "clerval",
+          "label": "closest friend of",
+          "kind": "ally",
+          "stages": [
+            "making",
+            "bargain"
+          ]
+        },
+        {
+          "to": "walton",
+          "label": "guest and cautionary example to",
+          "kind": "mentor",
+          "stages": [
+            "letters",
+            "pursuit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creature",
+      "name": "The creature",
+      "role": "The being Victor assembles and abandons",
+      "summary": "Nameless on purpose, and called daemon, wretch and fiend by everyone who describes him, including himself. He is the best reader in the book and the best speaker in it, and he makes his case for a companion in the formal language of rights before he makes his case for revenge.",
+      "clue": "Eight feet tall, articulate, self-taught from three stolen books, and asking only for one other creature in the world who will not scream at the sight of him.",
+      "firstAppearance": "Chapter V",
+      "traits": [
+        "eloquent",
+        "abandoned",
+        "systematically refused"
+      ],
+      "relationships": [
+        {
+          "to": "victor",
+          "label": "creature and pursuer of",
+          "kind": "enemy",
+          "stages": [
+            "creature",
+            "bargain",
+            "pursuit"
+          ]
+        },
+        {
+          "to": "de-laceys",
+          "label": "secret student and protector of",
+          "kind": "family",
+          "stages": [
+            "creature"
+          ]
+        },
+        {
+          "to": "elizabeth",
+          "label": "killer of",
+          "kind": "enemy",
+          "stages": [
+            "bargain"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walton",
+      "name": "Robert Walton",
+      "role": "Arctic explorer, the outermost narrator",
+      "summary": "An amateur with money, no formal education and a plan to reach the pole, who writes home that he wants a friend more than he wants the passage. He is offered the story as a warning and never quite says whether he has taken it; his crew, not his conscience, turns the ship around.",
+      "clue": "He is frozen into the ice north of Archangel, writing letters to a sister who cannot reply, when a sledge crosses his bow carrying the man whose story fills this book.",
+      "firstAppearance": "Letter I",
+      "traits": [
+        "ambitious",
+        "lonely",
+        "a listener"
+      ],
+      "relationships": [
+        {
+          "to": "victor",
+          "label": "rescuer and audience of",
+          "kind": "ally",
+          "stages": [
+            "letters",
+            "pursuit"
+          ]
+        },
+        {
+          "to": "margaret",
+          "label": "brother of",
+          "kind": "family",
+          "stages": [
+            "letters",
+            "pursuit"
+          ]
+        },
+        {
+          "to": "creature",
+          "label": "last witness to",
+          "kind": "ally",
+          "stages": [
+            "pursuit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elizabeth",
+      "name": "Elizabeth Lavenza",
+      "role": "Taken into the Frankenstein household as a child; Victor's betrothed",
+      "summary": "Presented to Victor as a gift when they are children, and described by him for the rest of his life as a possession he was given. Her longest piece of writing offers to release him from the engagement; he marries her anyway, knowing what has been promised for the wedding night.",
+      "clue": "Brought home from Italy as a child and handed to a boy who was told she was his present, she dies on her wedding night because her husband assumed a threat was aimed at him.",
+      "firstAppearance": "Chapter I",
+      "traits": [
+        "conciliating",
+        "clear-sighted in her letters",
+        "used"
+      ],
+      "relationships": [
+        {
+          "to": "victor",
+          "label": "betrothed and wife of",
+          "kind": "marriage",
+          "stages": [
+            "making",
+            "bargain"
+          ]
+        },
+        {
+          "to": "justine",
+          "label": "defender of, at the trial",
+          "kind": "ally",
+          "stages": [
+            "consequences"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clerval",
+      "name": "Henry Clerval",
+      "role": "Victor's friend from childhood",
+      "summary": "The alternative Victor might have been: a student of languages and poetry who nurses his friend through a breakdown without ever asking what caused it. He is strangled on a beach in Ireland because he is travelling with the wrong man, and his death produces the book's second wrongful arrest.",
+      "clue": "A merchant's son who wanted Persian and Sanskrit rather than chemistry, and who nursed his friend for months without asking a single question about the illness.",
+      "firstAppearance": "Chapter II",
+      "traits": [
+        "generous",
+        "literary",
+        "incurious at the wrong moment"
+      ],
+      "relationships": [
+        {
+          "to": "victor",
+          "label": "friend and nurse of",
+          "kind": "ally",
+          "stages": [
+            "making",
+            "bargain"
+          ]
+        },
+        {
+          "to": "creature",
+          "label": "killed by",
+          "kind": "enemy",
+          "stages": [
+            "bargain"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "justine",
+      "name": "Justine Moritz",
+      "role": "Servant in the Frankenstein house",
+      "summary": "Tried for William's murder on the evidence of a miniature planted in her pocket, and convicted after a confessor persuades her that a lie will save her soul. Victor sits in the courtroom knowing who did it. The novel's clearest statement about what respectable silence costs is made by a hanging.",
+      "clue": "A servant loved by the family she serves, condemned on a planted locket and a confession extracted by a priest, while the one man who could clear her says nothing.",
+      "firstAppearance": "Chapter VI",
+      "traits": [
+        "devoted",
+        "innocent",
+        "persuaded to accuse herself"
+      ],
+      "relationships": [
+        {
+          "to": "elizabeth",
+          "label": "defended by",
+          "kind": "ally",
+          "stages": [
+            "consequences"
+          ]
+        },
+        {
+          "to": "victor",
+          "label": "condemned by the silence of",
+          "kind": "enemy",
+          "stages": [
+            "consequences"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-laceys",
+      "name": "The De Lacey family",
+      "role": "Exiled French cottagers in Germany",
+      "summary": "A blind father, a son and a daughter living in poverty after a political disgrace, watched for months through a chink by a being who chops their firewood at night. They teach it language, history and sympathy without knowing it exists, and then Felix beats it with a stick.",
+      "clue": "A blind man, his son and his daughter, poor and exiled, who are taught kindness to a stranger by everything except the moment the stranger appears.",
+      "firstAppearance": "Chapter XI",
+      "traits": [
+        "gentle",
+        "impoverished",
+        "terrified at the decisive moment"
+      ],
+      "relationships": [
+        {
+          "to": "creature",
+          "label": "unknowing teachers of",
+          "kind": "mentor",
+          "stages": [
+            "creature"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "margaret",
+      "name": "Margaret Saville",
+      "role": "Walton's sister in England, the reader of every word",
+      "summary": "She never speaks, never writes back and never appears, and the entire novel is addressed to her. Her initials are Mary Shelley's reversed, and her silence is structural: every narrator in the book is finally talking to a woman at home who cannot interrupt them.",
+      "clue": "She is in England, she is the person the whole book is addressed to, and she does not get a single line.",
+      "firstAppearance": "Letter I",
+      "traits": [
+        "silent",
+        "absent",
+        "the addressee"
+      ],
+      "relationships": [
+        {
+          "to": "walton",
+          "label": "sister of",
+          "kind": "family",
+          "stages": [
+            "letters",
+            "pursuit"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "responsibility",
+      "name": "Creation and responsibility",
+      "summary": "The novel is not much interested in whether Victor should have made the creature, and enormously interested in what he owed it afterwards. The abandonment takes one sentence and is never revisited as a decision; every later disaster is traceable to it, and the creature argues the point better than anyone else in the book.",
+      "development": "A boast in Chapter IV, a flight in Chapter V, an unanswerable case on the Mer de Glace, and a demand for a companion that Victor grants and then breaks in the Orkneys."
+    },
+    {
+      "id": "isolation",
+      "name": "Loneliness",
+      "summary": "Everyone in this book is alone in a slightly different way. Walton has no friend, Victor works two years in a room nobody enters, the creature watches a family through a hole in a wall, and Margaret Saville receives every word and answers none. The plot turns on a request for company being refused.",
+      "development": "Walton states the want in Letter II; the creature makes it a formal demand in Chapter XVII; Victor destroys the answer in Chapter XX and is hunted for it."
+    },
+    {
+      "id": "knowledge",
+      "name": "Knowledge and ambition",
+      "summary": "Shelley separates the pursuit of knowledge from its use with unusual care. Victor's science works; that is the problem. The novel's warnings are all about appetite rather than method, and its most quoted caution — learn from my example — comes from a man who cannot resist telling the story that will teach it.",
+      "development": "Alchemy in Chapter II, Waldman's lecture in Chapter III, a two-year secret in Chapter IV, and a deathbed in which the warning is immediately half-withdrawn."
+    },
+    {
+      "id": "nature",
+      "name": "Nature and the sublime",
+      "summary": "Mountains, storms and ice do real work here rather than decorating the scenery. Victor goes to the Alps to be soothed and meets the creature there; the glacier that is supposed to console him produces his accuser. The one landscape that answers him properly is the Arctic, which stops him.",
+      "development": "A blasted oak in Chapter II, the Mer de Glace in Chapter X, the Orkneys in Chapter XIX, and an ice field that finally holds both pursuer and pursued."
+    },
+    {
+      "id": "nurture",
+      "name": "Education and what makes a monster",
+      "summary": "The creature's own narrative is a short course in eighteenth-century theories of mind: sensation first, then language, then books, then a sense of injustice. He tells us plainly that he was benevolent and good and that misery altered him. The novel gives him the evidence to prove it before it lets him kill anyone.",
+      "development": "Six chapters of self-education end with Felix's stick; the first murder follows the discovery that a child of seven has already learned to scream at him."
+    },
+    {
+      "id": "justice",
+      "name": "Justice and testimony",
+      "summary": "Two innocent people are arrested in this novel and one is hanged, both times on circumstantial evidence and both times because the man who knows the truth decides that telling it would sound mad. Shelley makes the courts reasonable and wrong, which is more disturbing than making them corrupt.",
+      "development": "Justine's trial in Chapter VIII, Victor's arrest for Clerval's murder in Chapter XXI, and a frame narrative that finally leaves the whole case in an explorer's private letters."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "frame-narrative",
+      "name": "Frame narrative",
+      "definition": "A story enclosed within another story, often several layers deep.",
+      "inThisBook": "Walton encloses Victor, Victor encloses the creature, and the creature encloses the De Laceys' history. Every claim reaches the reader through at least one person with a reason to shape it."
+    },
+    {
+      "id": "epistolary",
+      "name": "Epistolary form",
+      "definition": "A narrative built out of letters and documents rather than told by an outside narrator.",
+      "inThisBook": "Walton's letters, Elizabeth's and Alphonse's letters, and Victor's own laboratory journal read by the creature: the book is a bundle of papers addressed to people who mostly cannot reply."
+    },
+    {
+      "id": "sublime",
+      "name": "The Romantic sublime",
+      "definition": "The effect of vastness — mountains, storms, ice — that overwhelms and enlarges the observer at once.",
+      "inThisBook": "Victor uses Alpine scenery as medication and it fails every time; the sublime in this novel keeps producing the creature rather than consolation."
+    },
+    {
+      "id": "allusion",
+      "name": "Allusion",
+      "definition": "A deliberate reference to another text, used to borrow its argument.",
+      "inThisBook": "The epigraph is Adam's complaint to God from Paradise Lost, and the creature reads Milton as true history. Volney supplies him with politics and Goethe with grief."
+    },
+    {
+      "id": "doubling",
+      "name": "Doubling",
+      "definition": "Two figures constructed so that each one completes or exposes the other.",
+      "inThisBook": "Victor and the creature share a vocabulary, a solitude and a pursuit, and by the last chapter it is genuinely hard to say which of them is hunting the other."
+    },
+    {
+      "id": "retrospective-narration",
+      "name": "Retrospective narration",
+      "definition": "An account given after the event by a narrator who already knows how it ends.",
+      "inThisBook": "Victor tells the story dying, which lets him load ordinary evenings with foreboding and convert decisions into destiny before the reader can examine them."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "satiate-curiosity",
+      "text": "I shall satiate my ardent curiosity with the sight of a part of the world never before visited, and may tread a land never before imprinted by the foot of man.",
+      "speaker": "Robert Walton",
+      "reference": "Letter I",
+      "stage": "letters",
+      "context": "Walton writes to his sister from St Petersburgh before the expedition sails.",
+      "analysis": "The verbs give the game away: satiate belongs to appetite, not to science, and tread is about leaving a mark rather than finding anything. Walton wants the place to be untouched so that he can be the one who touches it, which is precisely the wish Victor will spend the rest of the book regretting.",
+      "themes": [
+        "knowledge"
+      ],
+      "techniques": [
+        "epistolary"
+      ],
+      "characters": [
+        "walton"
+      ],
+      "source": "Standard Ebooks text, Letter I",
+      "cloze": [
+        "satiate",
+        "curiosity"
+      ]
+    },
+    {
+      "id": "no-friend",
+      "text": "I have no friend, Margaret: when I am glowing with the enthusiasm of success, there will be none to participate my joy; if I am assailed by disappointment, no one will endeavour to sustain me in dejection.",
+      "speaker": "Robert Walton",
+      "reference": "Letter II",
+      "stage": "letters",
+      "context": "From Archangel, waiting for the ice to open.",
+      "analysis": "The sentence is addressed to his sister, which means he is telling the one person who loves him that he has nobody. That blindness is the point: Walton defines friendship as an audience for his moods, and within two letters he has found one in a man who will talk for three hundred pages.",
+      "themes": [
+        "isolation"
+      ],
+      "techniques": [
+        "epistolary"
+      ],
+      "characters": [
+        "walton",
+        "margaret"
+      ],
+      "source": "Standard Ebooks text, Letter II",
+      "cloze": [
+        "friend",
+        "dejection"
+      ]
+    },
+    {
+      "id": "small-price",
+      "text": "One man’s life or death were but a small price to pay for the acquirement of the knowledge which I sought; for the dominion I should acquire and transmit over the elemental foes of our race.",
+      "speaker": "Robert Walton",
+      "reference": "Letter IV",
+      "stage": "letters",
+      "context": "Walton reports what he said to Victor, his rescued passenger, over the first days aboard.",
+      "analysis": "He says this to a man who has already paid that price several times over, which is why Victor begins to weep rather than to argue. Note the slide from knowledge to dominion inside one sentence: the enquiry is barely stated before it becomes a claim to rule, and the price is always one man's and never the speaker's.",
+      "themes": [
+        "knowledge",
+        "responsibility"
+      ],
+      "techniques": [
+        "frame-narrative"
+      ],
+      "characters": [
+        "walton",
+        "victor"
+      ],
+      "source": "Standard Ebooks text, Letter IV",
+      "cloze": [
+        "dominion",
+        "price"
+      ]
+    },
+    {
+      "id": "world-secret",
+      "text": "The world was to me a secret which I desired to divine.",
+      "speaker": "Victor Frankenstein",
+      "reference": "Chapter II",
+      "stage": "making",
+      "context": "Victor contrasts his own childhood curiosity with Clerval's taste for poetry and adventure.",
+      "analysis": "Divine is doing two jobs: to work out, and to do the work of a god. Shelley lets the pun sit there unremarked in a sentence about a small boy, ten chapters before anyone has assembled anything. The world is cast as something withholding information from him, which makes discovery feel like the recovery of a right.",
+      "themes": [
+        "knowledge"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "victor"
+      ],
+      "source": "Standard Ebooks text, Chapter II",
+      "cloze": [
+        "secret",
+        "divine"
+      ]
+    },
+    {
+      "id": "so-much-has-been-done",
+      "text": "So much has been done, exclaimed the soul of Frankenstein⁠—more, far more, will I achieve: treading in the steps already marked, I will pioneer a new way, explore unknown powers, and unfold to the world the deepest mysteries of creation.",
+      "speaker": "Victor Frankenstein",
+      "reference": "Chapter III",
+      "stage": "making",
+      "context": "Immediately after Waldman's lecture on the achievements of modern chemistry.",
+      "analysis": "He quotes himself in the third person and hands the speech to his soul rather than his mouth, which keeps the boast at arm's length while still making it. The one moment of real modesty — treading in the steps already marked — is buried between two promises to go further than anyone has gone.",
+      "themes": [
+        "knowledge"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "victor"
+      ],
+      "source": "Standard Ebooks text, Chapter III",
+      "cloze": [
+        "pioneer",
+        "mysteries"
+      ]
+    },
+    {
+      "id": "learn-from-me",
+      "text": "Learn from me, if not by my precepts, at least by my example, how dangerous is the acquirement of knowledge, and how much happier that man is who believes his native town to be the world, than he who aspires to become greater than his nature will allow.",
+      "speaker": "Victor Frankenstein",
+      "reference": "Chapter IV",
+      "stage": "making",
+      "context": "Victor breaks off his narrative to refuse Walton the secret of animation.",
+      "analysis": "The moral is offered as the reason for telling a story that is also, unmistakably, a performance of how far he got. He withholds the method and keeps the glamour, and the alternative he proposes — believing your home town to be the world — is not a life he would accept for himself for an afternoon.",
+      "themes": [
+        "knowledge",
+        "responsibility"
+      ],
+      "techniques": [
+        "frame-narrative"
+      ],
+      "characters": [
+        "victor",
+        "walton"
+      ],
+      "source": "Standard Ebooks text, Chapter IV",
+      "cloze": [
+        "precepts",
+        "example"
+      ]
+    },
+    {
+      "id": "new-species",
+      "text": "A new species would bless me as its creator and source; many happy and excellent natures would owe their being to me. No father could claim the gratitude of his child so completely as I should deserve theirs.",
+      "speaker": "Victor Frankenstein",
+      "reference": "Chapter IV",
+      "stage": "making",
+      "context": "Working alone through two seasons, imagining what success will mean.",
+      "analysis": "Every clause is about what he will receive: blessing, gratitude, a debt so complete that no ordinary father could match it. He imagines fatherhood entirely as a creditor relationship, and the novel then tests the arrangement by giving him exactly one child, who asks him for something.",
+      "themes": [
+        "responsibility",
+        "knowledge"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "victor",
+        "creature"
+      ],
+      "source": "Standard Ebooks text, Chapter IV",
+      "cloze": [
+        "species",
+        "gratitude"
+      ]
+    },
+    {
+      "id": "dreary-night",
+      "text": "It was on a dreary night of November, that I beheld the accomplishment of my toils.",
+      "speaker": "Victor Frankenstein",
+      "reference": "Chapter V",
+      "stage": "making",
+      "context": "The opening sentence of the creation scene.",
+      "analysis": "Shelley said this was the first sentence she wrote, and the whole chapter is built backwards from it. Beheld makes Victor a spectator at his own experiment, and accomplishment of my toils names the labour rather than the thing produced — the grammar is already looking away from the body on the table.",
+      "themes": [
+        "responsibility"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "victor",
+        "creature"
+      ],
+      "source": "Standard Ebooks text, Chapter V",
+      "cloze": [
+        "dreary",
+        "toils"
+      ]
+    },
+    {
+      "id": "yellow-eye",
+      "text": "I saw the dull yellow eye of the creature open; it breathed hard, and a convulsive motion agitated its limbs.",
+      "speaker": "Victor Frankenstein",
+      "reference": "Chapter V",
+      "stage": "making",
+      "context": "The moment of animation itself.",
+      "analysis": "The most famous event in the novel is reported without a single active verb for Victor: he saw, and then things happened by themselves. There is no lightning, no machinery and no instant of triumph in the text at all, only an eye opening and a man watching. Every screen version has had to invent the scene that Shelley refused to write.",
+      "themes": [
+        "responsibility"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "victor",
+        "creature"
+      ],
+      "source": "Standard Ebooks text, Chapter V",
+      "cloze": [
+        "yellow",
+        "convulsive"
+      ]
+    },
+    {
+      "id": "beauty-of-the-dream",
+      "text": "I had desired it with an ardour that far exceeded moderation; but now that I had finished, the beauty of the dream vanished, and breathless horror and disgust filled my heart.",
+      "speaker": "Victor Frankenstein",
+      "reference": "Chapter V",
+      "stage": "making",
+      "context": "Moments after the animation, before he runs from the room.",
+      "analysis": "Nothing about the creature has changed between the sentence before and the sentence after; what has changed is that Victor has stopped wanting. The horror is described as arriving in him rather than coming from anything, and the novel will hold him to that all the way to the Arctic: the being is made monstrous by a reaction, not by a defect.",
+      "themes": [
+        "responsibility",
+        "nurture"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "victor",
+        "creature"
+      ],
+      "source": "Standard Ebooks text, Chapter V",
+      "cloze": [
+        "ardour",
+        "disgust"
+      ]
+    },
+    {
+      "id": "thy-adam",
+      "text": "Remember, that I am thy creature; I ought to be thy Adam; but I am rather the fallen angel, whom thou drivest from joy for no misdeed.",
+      "speaker": "The creature",
+      "reference": "Chapter X",
+      "stage": "consequences",
+      "context": "On the Mer de Glace, the first words the creature addresses to Victor at length.",
+      "analysis": "He argues in the second person singular that scripture and Milton use for God, and he has picked his precedent with care: Satan fell for a misdeed, and his claim is that he has not committed one. The sentence is a legal submission dressed as a lament, and Victor never answers the argument, only the tone.",
+      "themes": [
+        "responsibility",
+        "nurture"
+      ],
+      "techniques": [
+        "allusion"
+      ],
+      "characters": [
+        "creature",
+        "victor"
+      ],
+      "source": "Standard Ebooks text, Chapter X",
+      "cloze": [
+        "Adam",
+        "fallen"
+      ]
+    },
+    {
+      "id": "misery-made-me-a-fiend",
+      "text": "I was benevolent and good; misery made me a fiend. Make me happy, and I shall again be virtuous.",
+      "speaker": "The creature",
+      "reference": "Chapter X",
+      "stage": "consequences",
+      "context": "The end of the creature's opening appeal on the glacier.",
+      "analysis": "Two short clauses containing the novel's whole theory of character: virtue is a condition, not a substance, and it can be restored by changing the conditions. It is also a threat with the grammar of an offer. The reader has not yet heard the six chapters of evidence that will be produced to support the first half of it.",
+      "themes": [
+        "nurture",
+        "responsibility"
+      ],
+      "techniques": [
+        "doubling"
+      ],
+      "characters": [
+        "creature"
+      ],
+      "source": "Standard Ebooks text, Chapter X",
+      "cloze": [
+        "benevolent",
+        "fiend"
+      ]
+    },
+    {
+      "id": "strange-nature-knowledge",
+      "text": "Of what a strange nature is knowledge! It clings to the mind, when it has once seized on it, like a lichen on the rock.",
+      "speaker": "The creature",
+      "reference": "Chapter XIII",
+      "stage": "creature",
+      "context": "After the lessons given to Safie have taught him human history and property.",
+      "analysis": "The creature reaches Victor's subject from the opposite direction and comes to the opposite conclusion: knowledge is not something you go and get, it is something that will not let go of you. He chooses an image from the landscape he actually lives in, which is one of the quiet signs that his education has become his own rather than the De Laceys'.",
+      "themes": [
+        "knowledge",
+        "nurture"
+      ],
+      "techniques": [
+        "frame-narrative"
+      ],
+      "characters": [
+        "creature",
+        "de-laceys"
+      ],
+      "source": "Standard Ebooks text, Chapter XIII",
+      "cloze": [
+        "clings",
+        "lichen"
+      ]
+    },
+    {
+      "id": "accursed-creator",
+      "text": "Accursed creator! Why did you form a monster so hideous that even you turned from me in disgust?",
+      "speaker": "The creature",
+      "reference": "Chapter XV",
+      "stage": "creature",
+      "context": "Reading Victor's own laboratory journal, found in the pocket of the clothes he took from the flat.",
+      "analysis": "He has learned about his own making from the notes of the man who made him, which is the cruellest use of a document in a novel full of documents. The accusation is not that he was made, but that he was made and then looked at. Even you concedes that everyone else's disgust was to be expected.",
+      "themes": [
+        "responsibility",
+        "nurture"
+      ],
+      "techniques": [
+        "epistolary"
+      ],
+      "characters": [
+        "creature",
+        "victor"
+      ],
+      "source": "Standard Ebooks text, Chapter XV",
+      "cloze": [
+        "Accursed",
+        "disgust"
+      ]
+    },
+    {
+      "id": "cursed-creator",
+      "text": "Cursed, cursed creator! Why did I live? Why, in that instant, did I not extinguish the spark of existence which you had so wantonly bestowed?",
+      "speaker": "The creature",
+      "reference": "Chapter XVI",
+      "stage": "creature",
+      "context": "After the De Laceys abandon the cottage and he burns it down.",
+      "analysis": "Spark of existence is Victor's own phrase for what he infused, handed back with wantonly attached to it. This is the hinge of the creature's narrative: the sentence before it he is grieving, and a few pages later he has met a child in the woods. Shelley puts the turn into a rhetorical question rather than a decision.",
+      "themes": [
+        "nurture",
+        "responsibility"
+      ],
+      "techniques": [
+        "doubling"
+      ],
+      "characters": [
+        "creature",
+        "de-laceys"
+      ],
+      "source": "Standard Ebooks text, Chapter XVI",
+      "cloze": [
+        "Cursed",
+        "spark"
+      ]
+    },
+    {
+      "id": "create-a-female",
+      "text": "You must create a female for me, with whom I can live in the interchange of those sympathies necessary for my being. This you alone can do; and I demand it of you as a right which you must not refuse to concede.",
+      "speaker": "The creature",
+      "reference": "Chapter XVII",
+      "stage": "bargain",
+      "context": "The demand that follows the whole of the creature's narrative.",
+      "analysis": "Six chapters of evidence have been building to the word right, and he uses the vocabulary of contract rather than mercy: demand, concede, must not refuse. Shelley's father argued in Political Justice that obligations follow from what a being is capable of feeling, and the creature has just spent his narrative proving his capability.",
+      "themes": [
+        "isolation",
+        "justice"
+      ],
+      "techniques": [
+        "frame-narrative"
+      ],
+      "characters": [
+        "creature",
+        "victor"
+      ],
+      "source": "Standard Ebooks text, Chapter XVII",
+      "cloze": [
+        "female",
+        "right"
+      ]
+    },
+    {
+      "id": "malicious-because-miserable",
+      "text": "I am malicious because I am miserable. Am I not shunned and hated by all mankind?",
+      "speaker": "The creature",
+      "reference": "Chapter XVII",
+      "stage": "bargain",
+      "context": "Replying to Victor's refusal and threats on the Mer de Glace.",
+      "analysis": "The causal because is the most contested word in the novel, and the creature puts it in the present tense rather than the past: not misery made me, but misery is making me, now, and can stop. The question that follows shifts the burden of proof onto everyone who has met him.",
+      "themes": [
+        "nurture",
+        "isolation"
+      ],
+      "techniques": [
+        "doubling"
+      ],
+      "characters": [
+        "creature",
+        "victor"
+      ],
+      "source": "Standard Ebooks text, Chapter XVII",
+      "cloze": [
+        "malicious",
+        "miserable"
+      ]
+    },
+    {
+      "id": "creator-master",
+      "text": "You are my creator, but I am your master;⁠—obey!",
+      "speaker": "The creature",
+      "reference": "Chapter XX",
+      "stage": "bargain",
+      "context": "After Victor tears the half-finished female apart in the Orkney hut.",
+      "analysis": "The reasoning stops here and does not resume. Six words reverse the relation the whole book has been built on, and the dash before obey marks the exact point at which the creature stops asking. Everything he does afterwards is designed to leave Victor alive and alone, which is the punishment he was given first.",
+      "themes": [
+        "responsibility",
+        "isolation"
+      ],
+      "techniques": [
+        "doubling"
+      ],
+      "characters": [
+        "creature",
+        "victor"
+      ],
+      "source": "Standard Ebooks text, Chapter XX",
+      "cloze": [
+        "creator",
+        "master"
+      ]
+    },
+    {
+      "id": "fearless-powerful",
+      "text": "Beware; for I am fearless, and therefore powerful.",
+      "speaker": "The creature",
+      "reference": "Chapter XX",
+      "stage": "bargain",
+      "context": "The creature's last speech before he leaves the island.",
+      "analysis": "He has worked out that he cannot be threatened with anything he has not already lost, and states it as a syllogism. Compare Victor, whose power rests entirely on secrets he is afraid to reveal: the two of them are being measured against each other by what they still have to protect.",
+      "themes": [
+        "isolation",
+        "justice"
+      ],
+      "techniques": [
+        "doubling"
+      ],
+      "characters": [
+        "creature"
+      ],
+      "source": "Standard Ebooks text, Chapter XX",
+      "cloze": [
+        "fearless",
+        "powerful"
+      ]
+    },
+    {
+      "id": "wedding-night",
+      "text": "It is well. I go; but remember, I shall be with you on your wedding night.",
+      "speaker": "The creature",
+      "reference": "Chapter XX",
+      "stage": "bargain",
+      "context": "Leaving the Orkneys after the destruction of his companion.",
+      "analysis": "Victor reads this as a death sentence on himself and spends three chapters arranging his affairs accordingly. The creature has in fact announced with complete precision what he intends: to take from Victor exactly what Victor took from him, on the night it would be taken. The misreading is entirely Victor's, and it is made of self-importance.",
+      "themes": [
+        "responsibility",
+        "isolation"
+      ],
+      "techniques": [
+        "doubling"
+      ],
+      "characters": [
+        "creature",
+        "victor",
+        "elizabeth"
+      ],
+      "source": "Standard Ebooks text, Chapter XX",
+      "cloze": [
+        "wedding",
+        "remember"
+      ]
+    },
+    {
+      "id": "died-by-my-hands",
+      "text": "William, Justine, and Henry⁠—they all died by my hands.",
+      "speaker": "Victor Frankenstein",
+      "reference": "Chapter XXII",
+      "stage": "bargain",
+      "context": "To his father, refusing the comfort offered after his acquittal in Ireland.",
+      "analysis": "It is the one moment in Victor's narrative where the grammar puts him in the accusative position he has been avoiding for twenty chapters. His father hears it as the raving of a sick man, which lets Victor keep the confession and lose nothing by it — and Elizabeth's name is not yet on the list only because the wedding has not happened.",
+      "themes": [
+        "responsibility",
+        "justice"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "victor",
+        "justine",
+        "clerval"
+      ],
+      "source": "Standard Ebooks text, Chapter XXII",
+      "cloze": [
+        "Justine",
+        "hands"
+      ]
+    },
+    {
+      "id": "abortion",
+      "text": "I, the miserable and the abandoned, am an abortion, to be spurned at, and kicked, and trampled on.",
+      "speaker": "The creature",
+      "reference": "Chapter XXIV",
+      "stage": "pursuit",
+      "context": "Speaking to Walton over Victor's body in the cabin.",
+      "analysis": "He has adopted the vocabulary of the people who drove him off, and the three passive verbs pile up in the order a body would meet them. Shelley gives the creature the last full speech in the novel and lets him convict himself in language he did not invent, which leaves the reader to decide who taught it to him.",
+      "themes": [
+        "isolation",
+        "nurture"
+      ],
+      "techniques": [
+        "frame-narrative"
+      ],
+      "characters": [
+        "creature",
+        "walton"
+      ],
+      "source": "Standard Ebooks text, Chapter XXIV",
+      "cloze": [
+        "abandoned",
+        "spurned"
+      ]
+    },
+    {
+      "id": "seek-tranquillity",
+      "text": "Farewell, Walton! Seek happiness in tranquillity, and avoid ambition, even if it be only the apparently innocent one of distinguishing yourself in science and discoveries.",
+      "speaker": "Victor Frankenstein",
+      "reference": "Chapter XXIV",
+      "stage": "pursuit",
+      "context": "Victor's last words, on Walton's ship.",
+      "analysis": "This is as close as the novel comes to a moral, and Shelley immediately undercuts it: the next sentence has Victor asking why he should say such a thing, since another man might yet succeed. The warning and its withdrawal are in the same breath, and Walton is left holding both.",
+      "themes": [
+        "knowledge",
+        "responsibility"
+      ],
+      "techniques": [
+        "frame-narrative"
+      ],
+      "characters": [
+        "victor",
+        "walton"
+      ],
+      "source": "Standard Ebooks text, Chapter XXIV",
+      "cloze": [
+        "tranquillity",
+        "ambition"
+      ]
+    },
+    {
+      "id": "darkness-and-distance",
+      "text": "He was soon borne away by the waves, and lost in darkness and distance.",
+      "speaker": "Robert Walton",
+      "reference": "Chapter XXIV",
+      "stage": "pursuit",
+      "context": "The last sentence of the novel, as the creature leaves the ship on an ice raft.",
+      "analysis": "No body, no pyre and no confirmation: the creature announces his own death and the novel declines to show it. The final verb is passive and the last two nouns are abstractions, so the book closes on a failure of evidence — which is consistent, since every fact in it has reached us through someone else's letter.",
+      "themes": [
+        "justice",
+        "isolation"
+      ],
+      "techniques": [
+        "frame-narrative",
+        "epistolary"
+      ],
+      "characters": [
+        "creature",
+        "walton"
+      ],
+      "source": "Standard Ebooks text, Chapter XXIV",
+      "cloze": [
+        "borne",
+        "darkness"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1792,
+      "label": "Mary Wollstonecraft publishes A Vindication of the Rights of Woman",
+      "detail": "The author's mother, whose arguments about education and sympathy run through the creature's narrative.",
+      "kind": "context"
+    },
+    {
+      "year": 1793,
+      "label": "William Godwin publishes Political Justice",
+      "detail": "The author's father, and the source of the novel's habit of testing obligation by argument rather than by feeling.",
+      "kind": "context"
+    },
+    {
+      "year": 1797,
+      "label": "Mary Wollstonecraft Godwin is born in London",
+      "detail": "Her mother died within days, of complications following the birth.",
+      "kind": "author"
+    },
+    {
+      "year": 1803,
+      "label": "Giovanni Aldini's galvanic demonstrations in London",
+      "detail": "Electrical experiments on the body of a hanged man at the Royal College of Surgeons, widely reported.",
+      "kind": "context"
+    },
+    {
+      "year": 1816,
+      "label": "The summer at the Villa Diodati",
+      "detail": "Byron proposes a ghost-story competition beside Lake Geneva; Shelley, then eighteen, begins the tale.",
+      "kind": "work"
+    },
+    {
+      "year": 1818,
+      "label": "Frankenstein published anonymously in three volumes",
+      "detail": "Dedicated to Godwin, with a preface written by Percy Bysshe Shelley, which led several reviewers to assume he was the author.",
+      "kind": "work"
+    },
+    {
+      "year": 1823,
+      "label": "Presumption; or, The Fate of Frankenstein opens in London",
+      "detail": "Richard Brinsley Peake's version gives the creature no speech at all — the first of many adaptations to take his argument away.",
+      "kind": "reception"
+    },
+    {
+      "year": 1823,
+      "label": "A second edition names Mary Shelley as the author",
+      "detail": "Published in two volumes while she was abroad, and seen through the press by her father.",
+      "kind": "work"
+    },
+    {
+      "year": 1831,
+      "label": "The revised one-volume edition for Bentley's Standard Novels",
+      "detail": "Shelley adds the introduction about the Diodati summer and alters the novel's account of Elizabeth, chance and fate. This is the text used here.",
+      "kind": "work"
+    },
+    {
+      "year": 1851,
+      "label": "Mary Shelley dies in London",
+      "detail": "She had outlived Percy Shelley by nearly thirty years and all but one of her children.",
+      "kind": "author"
+    },
+    {
+      "year": 1910,
+      "label": "Edison Studios releases the first screen Frankenstein",
+      "detail": "A single reel, long thought lost, in which the creature is produced in a vat rather than on a table.",
+      "kind": "reception"
+    },
+    {
+      "year": 1931,
+      "label": "James Whale's Frankenstein for Universal",
+      "detail": "Boris Karloff's flat-headed, inarticulate creature becomes the popular image of a character who, in the novel, argues fluently for his rights.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Geneva",
+      "lat": 46.2044,
+      "lon": 6.1432,
+      "note": "The Frankenstein household, and the city whose courts hang Justine."
+    },
+    {
+      "name": "Cologny, Lake Geneva",
+      "lat": 46.2247,
+      "lon": 6.1739,
+      "note": "The Villa Diodati, where the ghost-story competition of 1816 produced the novel."
+    },
+    {
+      "name": "Ingolstadt",
+      "lat": 48.7665,
+      "lon": 11.4258,
+      "note": "The university where Victor works alone for two years and animates the creature."
+    },
+    {
+      "name": "Chamonix and the Mer de Glace",
+      "lat": 45.9237,
+      "lon": 6.8694,
+      "note": "The glacier where the creature finally makes his case, in the novel's spelling Chamounix."
+    },
+    {
+      "name": "Orkney",
+      "lat": 58.9809,
+      "lon": -2.9605,
+      "note": "The remote island hut where Victor begins and then destroys the female companion."
+    },
+    {
+      "name": "Archangel",
+      "lat": 64.5401,
+      "lon": 40.5433,
+      "note": "Walton's last port before the ice, and the place from which he writes that he has no friend."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "A myth about science without conscience",
+      "summary": "The oldest popular reading, and the one the title invites: a man reaches beyond the permitted limits of knowledge and is destroyed by what he makes. It has given the novel a second life in debates about genetics, artificial intelligence and research ethics.",
+      "counter": "The novel spends almost no time on whether the creation was wrong and a great deal on what happened next. Read closely, the disaster begins not in the laboratory but at the door Victor runs out of."
+    },
+    {
+      "position": "A book about parents, birth and abandonment",
+      "summary": "Criticism since the 1970s has read the novel through Shelley's own losses — a mother who died giving birth to her, and children of her own who did not survive — and through a creation scene in which a maker recoils from what he has brought into the world.",
+      "counter": "The biographical fit can flatten the creature's case, which is argued in the public language of rights and obligation rather than the private language of family feeling."
+    },
+    {
+      "position": "A political argument inherited from Godwin and Wollstonecraft",
+      "summary": "On this reading the novel is a test of the claim that character is formed by circumstance. The creature's six chapters of self-education are the evidence, and Justine's trial is the counter-example in which reasonable institutions kill an innocent woman.",
+      "counter": "The creature does eventually murder a child and a bride, and the novel never lets the reader treat those acts as merely the output of his conditions."
+    },
+    {
+      "position": "A question about who is allowed to speak",
+      "summary": "The structure puts the creature at the centre of three frames, so that his account reaches us only through a man who hates him and a man writing home. Adaptations that make him silent are not misreading the book so much as completing a process it describes.",
+      "counter": "He is also the novel's most persuasive rhetorician, and a reader can reasonably suspect that the eloquence is doing the same work Victor's does — arranging the facts."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "Who is responsible for the deaths in Frankenstein?",
+      "focus": "Creation, abandonment and the limits of Victor's account",
+      "plan": [
+        "Separate the making from the abandoning: the novel treats them as two decisions and only dwells on one.",
+        "Use Chapter V to show how the grammar of Victor's narration removes him from his own actions.",
+        "Turn to Chapter VIII, where a silence that costs nothing to break costs Justine her life.",
+        "Weigh the creature's case in Chapters X and XVII, in which he argues from what he was made capable of feeling.",
+        "Close on the wedding night: Victor's misreading of the threat is the last and most expensive act of self-importance in the book."
+      ]
+    },
+    {
+      "question": "How does the frame narrative shape what a reader is able to believe?",
+      "focus": "Structure, testimony and unreliable narration",
+      "plan": [
+        "Set out the three layers and note that the innermost voice is the one with the fewest witnesses.",
+        "Show Walton establishing himself in Letters I-IV as a man predisposed to admire an ambitious stranger.",
+        "Examine Victor's retrospective habits: foreboding, destiny and the passive voice.",
+        "Read the creature's narrative for its own rhetorical shaping, including his choice of Milton as precedent.",
+        "Conclude with the last page: no body, no proof, and a story that reaches us only as a bundle of private letters."
+      ]
+    },
+    {
+      "question": "'The creature is made monstrous by the way he is treated, not by the way he is made.' Discuss.",
+      "focus": "Nurture, education and the evidence of Chapters XI-XVI",
+      "plan": [
+        "Begin with the creation scene, where nothing about the body changes between wonder and disgust.",
+        "Trace the creature's education through sensation, language, books and a sense of injustice.",
+        "Use Felix's stick and the shooting in the woods as the two points where kindness is met with violence.",
+        "Test the claim against William's murder, which follows the discovery that even a child recoils.",
+        "Decide whether the novel endorses his argument, or merely gives him the strongest possible version of it."
+      ]
+    },
+    {
+      "question": "What use does Shelley make of landscape?",
+      "focus": "The sublime, the Alps and the Arctic",
+      "plan": [
+        "Establish the Romantic convention Victor is relying on: mountains as a cure for the mind.",
+        "Show it failing on the Mer de Glace, where the sublime prospect delivers his accuser.",
+        "Contrast the Orkney island, where desolation enables the worst thing he does rather than consoling him.",
+        "Read the Arctic as the only landscape in the novel that can hold both pursuer and pursued.",
+        "Conclude with the blasted oak of Chapter II: the novel's first image of power is destructive and impersonal."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Victor never gives the creature a name. What does the novel gain by refusing him one?",
+    "Walton is offered the story as a warning. By the last page, has he taken it?",
+    "The creature asks for a companion and promises exile. Should Victor have agreed?",
+    "Every narrator in the novel is finally addressing Margaret Saville, who never replies. What difference does that make to how the book reads?",
+    "Would you rather read the 1818 text or the 1831 revision, and on what grounds would you choose?"
+  ],
+  "related": [
+    {
+      "href": "/books/dracula/",
+      "why": "The other great novel assembled out of letters and journals, where documents are again the only evidence anyone has."
+    },
+    {
+      "href": "/books/jekyll-and-hyde/",
+      "why": "A second experiment carried out in private by a respectable man who cannot afterwards control what he has released."
+    },
+    {
+      "href": "/books/paradise-lost/",
+      "why": "The creature's own reading, and the source of the epigraph: Adam's complaint that he did not ask to be made."
+    },
+    {
+      "href": "/books/the-rime-of-the-ancient-mariner/",
+      "why": "Shelley quotes it directly, and it supplies the model of a haunted man compelled to tell his story to a stranger."
+    },
+    {
+      "href": "/books/wuthering-heights/",
+      "why": "Another novel that puts a violent story inside a mild narrator's account and lets the frame do the moral work."
+    }
+  ],
+  "videos": []
+}

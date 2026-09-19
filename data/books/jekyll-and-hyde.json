@@ -1,0 +1,1282 @@
+{
+  "slug": "jekyll-and-hyde",
+  "title": "Strange Case of Dr Jekyll and Mr Hyde",
+  "author": "Robert Louis Stevenson",
+  "href": "/books/jekyll-and-hyde/",
+  "studyHref": "/study/jekyll-and-hyde/",
+  "buyUrl": "https://mybook.to/zRCA6G",
+  "form": "novella",
+  "genre": "Gothic",
+  "period": "Victorian",
+  "written": "1885",
+  "firstPublished": 1886,
+  "setting": "London: a professional square, a laboratory behind it, and a street in Soho",
+  "readingTime": 110,
+  "difficulty": 3,
+  "lengthNote": "Ten short chapters, the last two of them documents that the other eight never see",
+  "openingLine": "Mr. Utterson the lawyer was a man of a rugged countenance that was never lighted by a smile; cold, scanty and embarrassed in discourse; backward in sentiment; lean, long, dusty, dreary and yet somehow lovable.",
+  "summary": "A lawyer notices that his oldest friend has left everything in a will to a man nobody can describe, and sets out to find him. Stevenson keeps the secret from the reader for eight chapters by the simple method of following the wrong man: Utterson investigates blackmail because blackmail is the worst thing his profession can imagine. The explanation, when it comes, is a confession written by the person with the strongest reason to shape it.",
+  "referenceStyle": "chapter, named as the novella names its ten divisions",
+  "sourceText": {
+    "label": "Standard Ebooks text of Strange Case of Dr Jekyll and Mr Hyde",
+    "note": "The chapters carry titles rather than numbers in the original, and references here use those titles. Note the original has no The in front of Strange Case."
+  },
+  "atAGlance": [
+    {
+      "label": "Written",
+      "value": "1885",
+      "note": "At Skerryvore, the house in Bournemouth Stevenson took for his health."
+    },
+    {
+      "label": "First published",
+      "value": "January 1886",
+      "note": "By Longmans, Green and Co. in London; a New York edition appeared at about the same time."
+    },
+    {
+      "label": "Title",
+      "value": "Strange Case of Dr Jekyll and Mr Hyde",
+      "note": "No opening The, and no full stop after Dr — the phrasing of a case report rather than a novel."
+    },
+    {
+      "label": "Shape",
+      "value": "Ten chapters, two of them sealed documents",
+      "note": "Eight chapters of investigation, then Lanyon's narrative and Jekyll's statement arrive after both men are dead."
+    }
+  ],
+  "structure": [
+    {
+      "id": "the-door",
+      "label": "Story of the Door; Search for Mr. Hyde",
+      "title": "A building with two fronts, and a will that reads like blackmail",
+      "summary": "Enfield tells Utterson about a man who trampled a child and paid her family with a cheque signed by someone respectable. The door he went in by turns out to belong to Jekyll's house, and the will Utterson has been keeping in his safe leaves everything to the same man. The lawyer goes looking, and the novella's method is set: everything arrives second-hand.",
+      "scenes": [
+        {
+          "ref": "Story of the Door",
+          "summary": "A Sunday walk, a neglected door, and Enfield's account of the trampling and the cheque."
+        },
+        {
+          "ref": "Search for Mr. Hyde",
+          "summary": "Utterson rereads the will, fails to get anything from Lanyon, and waits in the street until Hyde appears."
+        }
+      ]
+    },
+    {
+      "id": "the-murder",
+      "label": "Dr. Jekyll Was Quite at Ease; The Carew Murder Case; Incident of the Letter",
+      "title": "An assurance that holds for a year, and a murder witnessed from a window",
+      "summary": "Jekyll tells Utterson he can be rid of Hyde whenever he chooses, and for some months appears to have done it. Then a maid watching from an upstairs window sees Hyde beat an elderly MP to death in the street with a cane. Jekyll produces a letter of farewell from the murderer, and Utterson's clerk notices that the handwriting is his friend's with a different slope.",
+      "scenes": [
+        {
+          "ref": "Dr. Jekyll Was Quite at Ease",
+          "summary": "After dinner, Jekyll asks Utterson to let the matter sleep and promises he can end it at will."
+        },
+        {
+          "ref": "The Carew Murder Case",
+          "summary": "Sir Danvers Carew is clubbed to death in the moonlight; Utterson takes the police to Soho."
+        },
+        {
+          "ref": "Incident of the Letter",
+          "summary": "Jekyll shows a letter supposedly from Hyde; Mr Guest reads the hand and Utterson keeps quiet."
+        }
+      ]
+    },
+    {
+      "id": "withdrawal",
+      "label": "Remarkable Incident of Dr. Lanyon; Incident at the Window",
+      "title": "One friend dies of what he has seen; the other shuts the window",
+      "summary": "Lanyon, a sceptic who has mocked Jekyll's science for years, is found looking like a man with a death sentence and refuses to say why. He dies within weeks, leaving a sealed envelope not to be opened until Jekyll is gone. Weeks later Jekyll is talking to Utterson from an upper window when his face changes and the sash comes down.",
+      "scenes": [
+        {
+          "ref": "Remarkable Incident of Dr. Lanyon",
+          "summary": "Lanyon's collapse, his refusal to hear Jekyll's name, and the envelope left for Utterson."
+        },
+        {
+          "ref": "Incident at the Window",
+          "summary": "A conversation from the court below ends in an expression the two men below cannot discuss."
+        }
+      ]
+    },
+    {
+      "id": "last-night",
+      "label": "The Last Night",
+      "title": "A servant, a lawyer and an axe",
+      "summary": "Poole comes to Utterson because the voice behind the cabinet door has been sending out for a drug for a week and is not his master's. The two of them break the door down and find a body still twitching in clothes too large for it. The novella's climax is entirely made of sounds heard through wood and objects examined afterwards.",
+      "scenes": [
+        {
+          "ref": "The Last Night",
+          "summary": "The weeping voice, the rejected chemicals, the axe, and a suicide found among Jekyll's papers."
+        }
+      ]
+    },
+    {
+      "id": "statements",
+      "label": "Dr. Lanyon's Narrative; Henry Jekyll's Full Statement of the Case",
+      "title": "Two documents, and both writers already dead",
+      "summary": "Lanyon describes what he saw when he handed over a drawer of powders at midnight, and stops short of saying more. Jekyll then explains everything, from a youthful double life to the batch of impure salt he can no longer replace. The explanation is also a defence, and it arrives when nobody can cross-examine it.",
+      "scenes": [
+        {
+          "ref": "Dr. Lanyon's Narrative",
+          "summary": "The urgent letter, the drawer, the visitor in oversized clothes, and the transformation Lanyon will not describe twice."
+        },
+        {
+          "ref": "Henry Jekyll's Full Statement of the Case",
+          "summary": "The theory of the two natures, the first draught, the pleasures, the murder, and the loss of control."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "utterson",
+      "name": "Gabriel John Utterson",
+      "role": "Lawyer, and the novella's investigating consciousness",
+      "summary": "Dry, incurious about other people's vices and loyal past the point of prudence, he is the perfect filter for this story because he cannot imagine the answer. He keeps looking for a blackmailer, which is the worst thing a respectable London career can produce, and the search is honest work aimed in the wrong direction.",
+      "clue": "A lawyer who drinks gin alone to mortify his taste for vintages, and who solves nothing because the only crime he can picture is blackmail.",
+      "firstAppearance": "Story of the Door",
+      "traits": [
+        "reticent",
+        "loyal",
+        "professionally literal-minded"
+      ],
+      "relationships": [
+        {
+          "to": "jekyll",
+          "label": "lawyer and old friend of",
+          "kind": "ally",
+          "stages": [
+            "the-door",
+            "the-murder",
+            "withdrawal",
+            "last-night"
+          ]
+        },
+        {
+          "to": "enfield",
+          "label": "kinsman and Sunday walking companion of",
+          "kind": "family",
+          "stages": [
+            "the-door",
+            "withdrawal"
+          ]
+        },
+        {
+          "to": "lanyon",
+          "label": "old friend of",
+          "kind": "ally",
+          "stages": [
+            "the-door",
+            "withdrawal"
+          ]
+        },
+        {
+          "to": "poole",
+          "label": "trusted by",
+          "kind": "ally",
+          "stages": [
+            "last-night"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jekyll",
+      "name": "Dr Henry Jekyll",
+      "role": "Physician, and the author of the final statement",
+      "summary": "Large, well made, fifty, celebrated for his charities, and privately annoyed that a man of his standing cannot also be a man of his appetites. His experiment does not create a second nature; it removes the inconvenience of having one body carry both, and his confession keeps trying to make that sound like a scientific result.",
+      "clue": "A celebrated doctor of fifty whose own written account of himself begins with a theory of human nature and ends with a hand he cannot stop from changing.",
+      "firstAppearance": "Story of the Door",
+      "traits": [
+        "respectable",
+        "self-justifying",
+        "addicted to his own escape"
+      ],
+      "relationships": [
+        {
+          "to": "hyde",
+          "label": "identical with",
+          "kind": "doubling",
+          "stages": [
+            "the-door",
+            "the-murder",
+            "withdrawal",
+            "last-night",
+            "statements"
+          ]
+        },
+        {
+          "to": "utterson",
+          "label": "client and friend of",
+          "kind": "ally",
+          "stages": [
+            "the-murder",
+            "withdrawal"
+          ]
+        },
+        {
+          "to": "lanyon",
+          "label": "estranged colleague of",
+          "kind": "rival",
+          "stages": [
+            "the-door",
+            "withdrawal",
+            "statements"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hyde",
+      "name": "Edward Hyde",
+      "role": "The younger, smaller figure who uses Jekyll's back door",
+      "summary": "Everyone who meets him agrees that he is deformed and nobody can say where. He is smaller and younger than Jekyll because, on Jekyll's own account, that side of the man had less exercise. Apart from two acts of violence, almost everything he does in the book is administrative: signing cheques, taking rooms, fetching chemicals.",
+      "clue": "Smaller and younger than the man he lives inside, hateful on sight to everyone, and impossible for any witness to describe.",
+      "firstAppearance": "Story of the Door",
+      "traits": [
+        "violent",
+        "indescribable",
+        "unembarrassed"
+      ],
+      "relationships": [
+        {
+          "to": "jekyll",
+          "label": "identical with",
+          "kind": "doubling",
+          "stages": [
+            "the-door",
+            "the-murder",
+            "statements"
+          ]
+        },
+        {
+          "to": "carew",
+          "label": "murderer of",
+          "kind": "enemy",
+          "stages": [
+            "the-murder"
+          ]
+        },
+        {
+          "to": "utterson",
+          "label": "sought by",
+          "kind": "enemy",
+          "stages": [
+            "the-door",
+            "the-murder"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lanyon",
+      "name": "Dr Hastie Lanyon",
+      "role": "Physician, Jekyll's contemporary and critic",
+      "summary": "Hearty, conventional and certain that Jekyll went wrong in mind ten years ago, he is the book's representative of orthodox science. What kills him is not the violence but the knowledge, and his narrative stops exactly where the scene stops being explicable, leaving the reader to be told the rest by the guilty party.",
+      "clue": "A red-faced, dogmatic physician who calls his old friend's work balderdash, and who is dead within three weeks of seeing it work.",
+      "firstAppearance": "Search for Mr. Hyde",
+      "traits": [
+        "sceptical",
+        "hearty",
+        "destroyed by one night"
+      ],
+      "relationships": [
+        {
+          "to": "jekyll",
+          "label": "estranged colleague of",
+          "kind": "rival",
+          "stages": [
+            "the-door",
+            "statements"
+          ]
+        },
+        {
+          "to": "utterson",
+          "label": "friend and correspondent of",
+          "kind": "ally",
+          "stages": [
+            "withdrawal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enfield",
+      "name": "Richard Enfield",
+      "role": "A well-known man about town, Utterson's distant kinsman",
+      "summary": "He supplies the first story and then declines to discuss it ever again, which sets the novella's rule that respectable men stop asking at the point where the answer would be interesting. His account of the trampling is the only time in the book a reader sees Hyde act before knowing who he is.",
+      "clue": "He tells the story that starts the whole investigation, and then agrees never to mention it again.",
+      "firstAppearance": "Story of the Door",
+      "traits": [
+        "worldly",
+        "discreet to a fault"
+      ],
+      "relationships": [
+        {
+          "to": "utterson",
+          "label": "kinsman and walking companion of",
+          "kind": "family",
+          "stages": [
+            "the-door",
+            "withdrawal"
+          ]
+        },
+        {
+          "to": "hyde",
+          "label": "first witness against",
+          "kind": "enemy",
+          "stages": [
+            "the-door"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "poole",
+      "name": "Poole",
+      "role": "Jekyll's butler of twenty years",
+      "summary": "He works out the truth before any professional man in the book does, and he does it by listening: the voice behind the door is not his master's, and the figure he glimpses among the crates is the wrong size. Having no theory to defend, he is free to believe his ears.",
+      "clue": "Twenty years in the same household, and the first person to be sure that the man behind the locked door is not the one who ought to be there.",
+      "firstAppearance": "Search for Mr. Hyde",
+      "traits": [
+        "observant",
+        "frightened",
+        "right"
+      ],
+      "relationships": [
+        {
+          "to": "jekyll",
+          "label": "servant of",
+          "kind": "service",
+          "stages": [
+            "the-murder",
+            "last-night"
+          ]
+        },
+        {
+          "to": "utterson",
+          "label": "brings the case to",
+          "kind": "ally",
+          "stages": [
+            "last-night"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carew",
+      "name": "Sir Danvers Carew",
+      "role": "An elderly Member of Parliament",
+      "summary": "He appears for one paragraph, asking a stranger for directions with old-fashioned courtesy, and is beaten to death for it. His killing turns a private worry into a public case, and it is the only event in the novella that a reader watches happen rather than hears about afterwards.",
+      "clue": "A white-haired gentleman who stops in the moonlight to ask the way, and whose politeness gets him clubbed to death.",
+      "firstAppearance": "The Carew Murder Case",
+      "traits": [
+        "courteous",
+        "elderly",
+        "unlucky"
+      ],
+      "relationships": [
+        {
+          "to": "hyde",
+          "label": "killed by",
+          "kind": "enemy",
+          "stages": [
+            "the-murder"
+          ]
+        },
+        {
+          "to": "utterson",
+          "label": "correspondent of",
+          "kind": "ally",
+          "stages": [
+            "the-murder"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "duality",
+      "name": "The divided self",
+      "summary": "Jekyll's theory is that a man contains two natures and would be happier if they were housed separately. The novella tests the theory and finds it false in an interesting way: separating them does not free the good half, it frees the other one and leaves the first with the bill. Hyde is not an intruder but a licence.",
+      "development": "Proposed as a beloved daydream in the final statement, achieved with the first draught, and abandoned when the transformations begin to happen without the drug."
+    },
+    {
+      "id": "reputation",
+      "name": "Respectability",
+      "summary": "Almost everybody in this book protects somebody's name. Enfield stops telling his story, Utterson pockets evidence in a murder case, Jekyll's whole experiment exists so that his standing can survive his appetites. The Gothic pressure comes less from the laboratory than from the number of educated men who decline to ask a question.",
+      "development": "Enfield's discretion in chapter one, Utterson's suppression of the letter, and Jekyll's confession that he was never a hypocrite because both halves of him were sincere."
+    },
+    {
+      "id": "evidence",
+      "name": "Documents and testimony",
+      "summary": "A will, a cheque, a letter, a comparison of handwriting, a sealed envelope, a statement: the story reaches the reader almost entirely as paper handled by a lawyer. What looks like a supernatural tale is organised like a case file, and the last two chapters are exhibits that arrive when neither witness can be questioned.",
+      "development": "Utterson's safe holds the will from the first chapter; by the last, it holds Lanyon's envelope and Jekyll's statement, and the story is over before anyone reads them."
+    },
+    {
+      "id": "city",
+      "name": "London as a divided map",
+      "summary": "Stevenson gives Jekyll's house two addresses. The front is a comfortable square; the back is the neglected door on a by-street that Enfield knows. Soho appears through fog as a district in a nightmare, and the geography does the argument's work: one building, two entrances, and a respectable man who uses both.",
+      "development": "The door in chapter one, the Soho rooms after the murder, the court below the window, and finally the dissecting rooms between the two halves of the house."
+    },
+    {
+      "id": "indescribable",
+      "name": "What cannot be described",
+      "summary": "Every witness says Hyde is deformed and no witness can name the deformity. Stevenson makes the failure repeat until it becomes the subject: the response to Hyde is social and instinctive before it is visual, which leaves a reader to wonder what these respectable observers think they are recognising.",
+      "development": "Enfield cannot specify it, Utterson cannot, Poole cannot, and Jekyll finally explains it as evil written plainly on a face — an explanation from the least reliable source available."
+    },
+    {
+      "id": "appetite",
+      "name": "Appetite and habit",
+      "summary": "The story keeps the pleasures vague and the mechanics of dependence very precise. Jekyll starts taking the draught for enjoyment, then to be himself again, then in double doses, then at any hour; the last crisis is a failed supply of a chemical. It reads less like a fable about sin than a careful account of a habit.",
+      "development": "An occasional escape becomes an involuntary change in Regent's Park, and the final chapter turns on a drawer of salt that cannot be replaced."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "multiple-narrators",
+      "name": "Multiple narrators",
+      "definition": "A story assembled from several voices, each limited to what that person knows.",
+      "inThisBook": "Eight chapters follow Utterson, who is wrong; the last two are written by Lanyon and Jekyll, who are right and dead. The truth arrives only when it can no longer be tested."
+    },
+    {
+      "id": "delayed-revelation",
+      "name": "Delayed revelation",
+      "definition": "Withholding the central fact so that earlier scenes must be reread once it lands.",
+      "inThisBook": "Stevenson never shows a transformation until chapter nine. Every adaptation that opens with one is telling a different story, because the novella's suspense is built on a reader sharing Utterson's blindness."
+    },
+    {
+      "id": "thresholds",
+      "name": "Doors and thresholds",
+      "definition": "Physical barriers used to carry an idea about what is concealed behind them.",
+      "inThisBook": "A blistered door with neither bell nor knocker, a cabinet door broken with an axe, a window shut mid-sentence: the plot advances by things being locked, forced or closed."
+    },
+    {
+      "id": "legal-diction",
+      "name": "Legal and professional diction",
+      "definition": "The vocabulary of contracts, cases and clinical reports used for uncanny material.",
+      "inThisBook": "The title itself is a case report, the will's phrasing is quoted verbatim, and the confession is a statement of the case — the supernatural is handled entirely in the language of offices."
+    },
+    {
+      "id": "understatement",
+      "name": "Understatement",
+      "definition": "Saying less than the situation warrants, so that the omission carries the weight.",
+      "inThisBook": "Enfield's it was hellish to see, Lanyon's refusal to name what he witnessed, and Utterson's habit of noticing something and going home are all places where the prose declines to elaborate."
+    },
+    {
+      "id": "doubling-technique",
+      "name": "Doubling",
+      "definition": "Pairing characters or spaces so that each exposes something about the other.",
+      "inThisBook": "Jekyll and Hyde are the obvious pair, but so are the two fronts of one house, the two doctors, and Utterson and Enfield, who walk together every Sunday without speaking."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "cains-heresy",
+      "text": "I let my brother go to the devil in his own way.",
+      "speaker": "Gabriel John Utterson",
+      "reference": "Story of the Door",
+      "stage": "the-door",
+      "context": "The narrator's summary of Utterson's usual joke about himself, on the first page.",
+      "analysis": "It is offered as tolerance and it is also a policy of non-intervention, stated before any of the events. Cain's question was whether he was his brother's keeper; Utterson has decided in advance that he is not, and the plot then hands him a friend going to the devil and eight chapters in which he never quite intervenes.",
+      "themes": [
+        "reputation"
+      ],
+      "techniques": [
+        "understatement"
+      ],
+      "characters": [
+        "utterson"
+      ],
+      "source": "Standard Ebooks text, Story of the Door",
+      "cloze": [
+        "brother",
+        "devil"
+      ]
+    },
+    {
+      "id": "sordid-negligence",
+      "text": "It was two storeys high; showed no window, nothing but a door on the lower storey and a blind forehead of discoloured wall on the upper; and bore in every feature, the marks of prolonged and sordid negligence.",
+      "reference": "Story of the Door",
+      "stage": "the-door",
+      "context": "The first description of the door in the by-street, before anyone connects it to Jekyll.",
+      "analysis": "Blind forehead gives the building a face that cannot look back, which is exactly the problem every witness will have with Hyde. The whole description is of absences — no window, nothing but a door, neither bell nor knocker — so the reader meets the concealed half of Jekyll's house as a subtraction from an ordinary street.",
+      "themes": [
+        "city",
+        "indescribable"
+      ],
+      "techniques": [
+        "thresholds"
+      ],
+      "characters": [],
+      "source": "Standard Ebooks text, Story of the Door",
+      "cloze": [
+        "blind",
+        "negligence"
+      ]
+    },
+    {
+      "id": "juggernaut",
+      "text": "It sounds nothing to hear, but it was hellish to see. It wasn’t like a man; it was like some damned Juggernaut.",
+      "speaker": "Richard Enfield",
+      "reference": "Story of the Door",
+      "stage": "the-door",
+      "context": "Enfield describing how Hyde walked over the fallen child.",
+      "analysis": "Enfield reaches for a Hindu temple car brought back by imperial travellers because ordinary English will not do the job, and he flags the failure himself: it sounds nothing to hear. The comparison makes Hyde mechanical rather than cruel — something that continues rather than something that decides.",
+      "themes": [
+        "indescribable"
+      ],
+      "techniques": [
+        "multiple-narrators",
+        "understatement"
+      ],
+      "characters": [
+        "enfield",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Story of the Door",
+      "cloze": [
+        "hellish",
+        "Juggernaut"
+      ]
+    },
+    {
+      "id": "hateful-faces",
+      "text": "I never saw a circle of such hateful faces; and there was the man in the middle, with a kind of black, sneering coolness",
+      "speaker": "Richard Enfield",
+      "reference": "Story of the Door",
+      "stage": "the-door",
+      "context": "The crowd that gathers around Hyde after the child is knocked down.",
+      "analysis": "The hateful faces here are the respectable ones. Enfield has just described a doctor turning sick with the desire to kill, and women as wild as harpies, and the calm figure is the man who trampled a child. Stevenson keeps arranging scenes in which the decent majority looks worse than it means to.",
+      "themes": [
+        "reputation",
+        "indescribable"
+      ],
+      "techniques": [
+        "multiple-narrators"
+      ],
+      "characters": [
+        "enfield",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Story of the Door",
+      "cloze": [
+        "hateful",
+        "coolness"
+      ]
+    },
+    {
+      "id": "cannot-describe",
+      "text": "There is something wrong with his appearance; something displeasing, something downright detestable. I never saw a man I so disliked, and yet I scarce know why.",
+      "speaker": "Richard Enfield",
+      "reference": "Story of the Door",
+      "stage": "the-door",
+      "context": "Utterson has asked what Hyde looks like.",
+      "analysis": "Three attempts at a noun and not one physical detail: the sentence describes Enfield's reaction and calls it a description. Every witness in the book will repeat the pattern, and since the reader only ever gets these reports, Hyde stays permanently unillustrated — which is why he is so easy for adaptations to invent.",
+      "themes": [
+        "indescribable"
+      ],
+      "techniques": [
+        "multiple-narrators",
+        "understatement"
+      ],
+      "characters": [
+        "enfield",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Story of the Door",
+      "cloze": [
+        "displeasing",
+        "detestable"
+      ]
+    },
+    {
+      "id": "pink-of-proprieties",
+      "text": "the person that drew the cheque is the very pink of the proprieties, celebrated too, and (what makes it worse) one of your fellows who do what they call good",
+      "speaker": "Richard Enfield",
+      "reference": "Story of the Door",
+      "stage": "the-door",
+      "context": "Explaining why he assumes the cheque means blackmail.",
+      "analysis": "What makes it worse is the whole novella in four words: the scandal is not the violence but the signature attached to it. Enfield's parenthesis assumes that public charity and private vice go together as a matter of course, which is the assumption Jekyll's confession will confirm from the inside.",
+      "themes": [
+        "reputation"
+      ],
+      "techniques": [
+        "understatement"
+      ],
+      "characters": [
+        "enfield",
+        "jekyll"
+      ],
+      "source": "Standard Ebooks text, Story of the Door",
+      "cloze": [
+        "proprieties",
+        "celebrated"
+      ]
+    },
+    {
+      "id": "the-will",
+      "text": "disappearance or unexplained absence for any period exceeding three calendar months",
+      "reference": "Search for Mr. Hyde",
+      "stage": "the-door",
+      "context": "The clause in Jekyll's will that has offended Utterson for years.",
+      "analysis": "A will normally provides for death; this one provides for a man ceasing to be present without dying. Utterson reads it as evidence that Hyde has a hold over his friend, which is a reasonable professional inference and completely wrong. The clause is in fact the most honest sentence Jekyll writes before his confession.",
+      "themes": [
+        "evidence",
+        "duality"
+      ],
+      "techniques": [
+        "legal-diction"
+      ],
+      "characters": [
+        "utterson",
+        "jekyll",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Search for Mr. Hyde",
+      "cloze": [
+        "disappearance",
+        "absence"
+      ]
+    },
+    {
+      "id": "mr-seek",
+      "text": "If he be Mr. Hyde,” he had thought, “I shall be Mr. Seek.",
+      "speaker": "Gabriel John Utterson",
+      "reference": "Search for Mr. Hyde",
+      "stage": "the-door",
+      "context": "Utterson, having begun to haunt the by-street at night.",
+      "analysis": "The one joke the lawyer makes in the book, and it treats the name as a pseudonym rather than a person. He is right that the name is a description and wrong about what it describes, and Stevenson lets the pun stand as the high point of an investigation that never gets any closer than this.",
+      "themes": [
+        "evidence"
+      ],
+      "techniques": [
+        "legal-diction"
+      ],
+      "characters": [
+        "utterson",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Search for Mr. Hyde",
+      "cloze": [
+        "Hyde",
+        "Seek"
+      ]
+    },
+    {
+      "id": "lanyon-wrong-in-mind",
+      "text": "He began to go wrong, wrong in mind; and though of course I continue to take an interest in him for old sake’s sake as they say, I see and I have seen devilish little of the man.",
+      "speaker": "Dr Hastie Lanyon",
+      "reference": "Search for Mr. Hyde",
+      "stage": "the-door",
+      "context": "Lanyon, over wine, explaining his estrangement from Jekyll.",
+      "analysis": "The repetition of wrong — first moral, then mental — is Lanyon trying to be charitable and failing. He has diagnosed his colleague as mad rather than immoral, which is the most generous verdict orthodox science can offer, and it will be overturned in one night by a demonstration he asked for.",
+      "themes": [
+        "duality",
+        "reputation"
+      ],
+      "techniques": [
+        "multiple-narrators"
+      ],
+      "characters": [
+        "lanyon",
+        "jekyll"
+      ],
+      "source": "Standard Ebooks text, Search for Mr. Hyde",
+      "cloze": [
+        "wrong",
+        "devilish"
+      ]
+    },
+    {
+      "id": "satans-signature",
+      "text": "if ever I read Satan’s signature upon a face, it is on that of your new friend.",
+      "speaker": "Gabriel John Utterson",
+      "reference": "Search for Mr. Hyde",
+      "stage": "the-door",
+      "context": "Utterson's private reflection after meeting Hyde in the street for the first time.",
+      "analysis": "A lawyer reaches for the one thing in his professional world that settles a question — a signature — and applies it to a face. The metaphor concedes that he has no evidence, only a reading, and the book has already shown him that handwriting is precisely what cannot be trusted here.",
+      "themes": [
+        "indescribable",
+        "evidence"
+      ],
+      "techniques": [
+        "legal-diction"
+      ],
+      "characters": [
+        "utterson",
+        "hyde",
+        "jekyll"
+      ],
+      "source": "Standard Ebooks text, Search for Mr. Hyde",
+      "cloze": [
+        "signature",
+        "face"
+      ]
+    },
+    {
+      "id": "no-statute",
+      "text": "He was wild when he was young; a long while ago to be sure; but in the law of God, there is no statute of limitations.",
+      "speaker": "Gabriel John Utterson",
+      "reference": "Search for Mr. Hyde",
+      "stage": "the-door",
+      "context": "Walking home, constructing a theory of blackmail out of Jekyll's youth.",
+      "analysis": "He translates damnation into the only jurisdiction he practises in, and in doing so he arrives at a theory that is wrong in fact and exactly right in spirit. Jekyll's statement will confirm the wild youth and the absence of any limitation period; it will simply put the punishment inside the man rather than in an extortionist's hands.",
+      "themes": [
+        "reputation",
+        "evidence"
+      ],
+      "techniques": [
+        "legal-diction"
+      ],
+      "characters": [
+        "utterson",
+        "jekyll"
+      ],
+      "source": "Standard Ebooks text, Search for Mr. Hyde",
+      "cloze": [
+        "wild",
+        "limitations"
+      ]
+    },
+    {
+      "id": "rid-of-hyde",
+      "text": "the moment I choose, I can be rid of Mr. Hyde.",
+      "speaker": "Dr Henry Jekyll",
+      "reference": "Dr. Jekyll Was Quite at Ease",
+      "stage": "the-murder",
+      "context": "Reassuring Utterson after dinner, and asking him to let the matter sleep.",
+      "analysis": "Every word of it is true when he says it and false within the year — this is the sentence of a man describing an escape he has not yet failed to make. Choose is the load-bearing word, and the final statement is largely an account of the point at which choosing stopped being available.",
+      "themes": [
+        "appetite",
+        "duality"
+      ],
+      "techniques": [
+        "delayed-revelation"
+      ],
+      "characters": [
+        "jekyll",
+        "utterson",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Dr. Jekyll Was Quite at Ease",
+      "cloze": [
+        "choose",
+        "rid"
+      ]
+    },
+    {
+      "id": "apelike-fury",
+      "text": "And next moment, with apelike fury, he was trampling his victim under foot and hailing down a storm of blows, under which the bones were audibly shattered and the body jumped upon the roadway.",
+      "reference": "The Carew Murder Case",
+      "stage": "the-murder",
+      "context": "A maidservant at an upstairs window watching the killing of Sir Danvers Carew.",
+      "analysis": "The violence is graded by sound and motion rather than by injury: audibly shattered, and a body that jumps. Apelike is the closest the book comes to the Victorian idea that the lower nature is an earlier one, and it is worth noticing that the observation belongs to a witness who faints, not to the narrator.",
+      "themes": [
+        "indescribable",
+        "duality"
+      ],
+      "techniques": [
+        "multiple-narrators"
+      ],
+      "characters": [
+        "hyde",
+        "carew"
+      ],
+      "source": "Standard Ebooks text, The Carew Murder Case",
+      "cloze": [
+        "apelike",
+        "trampling"
+      ]
+    },
+    {
+      "id": "insensate-cruelty",
+      "text": "The stick with which the deed had been done, although it was of some rare and very tough and heavy wood, had broken in the middle under the stress of this insensate cruelty",
+      "reference": "The Carew Murder Case",
+      "stage": "the-murder",
+      "context": "The police examine the scene the following morning.",
+      "analysis": "The cane was a present from Utterson, and half of it will be found in Jekyll's house: the murder weapon travels from the lawyer to the victim's body to the respectable friend's rooms. Stevenson measures the violence indirectly, by what it did to a piece of hardwood, which is more frightening than a description of the body would have been.",
+      "themes": [
+        "evidence"
+      ],
+      "techniques": [
+        "legal-diction"
+      ],
+      "characters": [
+        "hyde",
+        "carew",
+        "utterson"
+      ],
+      "source": "Standard Ebooks text, The Carew Murder Case",
+      "cloze": [
+        "broken",
+        "cruelty"
+      ]
+    },
+    {
+      "id": "mortify-curiosity",
+      "text": "It is one thing to mortify curiosity, another to conquer it",
+      "reference": "Remarkable Incident of Dr. Lanyon",
+      "stage": "withdrawal",
+      "context": "After Lanyon's death, with the sealed envelope locked in Utterson's safe.",
+      "analysis": "Mortify is the word used earlier for Utterson's habit of drinking gin instead of the wine he loves, and here it covers a lawyer choosing not to open a packet he is legally entitled to hold. The novella's plot could end at this sentence if one respectable man broke one seal, and the point is that he does not.",
+      "themes": [
+        "reputation",
+        "evidence"
+      ],
+      "techniques": [
+        "understatement"
+      ],
+      "characters": [
+        "utterson",
+        "lanyon"
+      ],
+      "source": "Standard Ebooks text, Remarkable Incident of Dr. Lanyon",
+      "cloze": [
+        "mortify",
+        "conquer"
+      ]
+    },
+    {
+      "id": "there-stood-henry-jekyll",
+      "text": "there before my eyes⁠—pale and shaken, and half fainting, and groping before him with his hands, like a man restored from death⁠—there stood Henry Jekyll!",
+      "speaker": "Dr Hastie Lanyon",
+      "reference": "Dr. Lanyon's Narrative",
+      "stage": "statements",
+      "context": "The end of Lanyon's account of the midnight visit.",
+      "analysis": "The transformation the whole book has been withholding is given in a single clause, and it is the restoration rather than the change: Hyde becoming Jekyll, not the other way round. Lanyon's narrative then stops. He tells Utterson what he saw and refuses to write what he was told afterwards, which is the last act of professional discretion in the story.",
+      "themes": [
+        "duality",
+        "evidence"
+      ],
+      "techniques": [
+        "delayed-revelation",
+        "multiple-narrators"
+      ],
+      "characters": [
+        "lanyon",
+        "jekyll",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Dr. Lanyon's Narrative",
+      "cloze": [
+        "groping",
+        "restored"
+      ]
+    },
+    {
+      "id": "not-truly-one",
+      "text": "man is not truly one, but truly two. I say two, because the state of my own knowledge does not pass beyond that point.",
+      "speaker": "Dr Henry Jekyll",
+      "reference": "Henry Jekyll's Full Statement of the Case",
+      "stage": "statements",
+      "context": "The opening argument of the confession.",
+      "analysis": "The second sentence undoes the first: he admits that two is the limit of his evidence, not a finding, and guesses that man will turn out to be a polity of many. The famous formula is offered by its own author as provisional, which is a warning about how much weight the rest of the confession can carry.",
+      "themes": [
+        "duality"
+      ],
+      "techniques": [
+        "multiple-narrators"
+      ],
+      "characters": [
+        "jekyll"
+      ],
+      "source": "Standard Ebooks text, Henry Jekyll's Full Statement of the Case",
+      "cloze": [
+        "truly",
+        "two"
+      ]
+    },
+    {
+      "id": "no-hypocrite",
+      "text": "Though so profound a double-dealer, I was in no sense a hypocrite; both sides of me were in dead earnest",
+      "speaker": "Dr Henry Jekyll",
+      "reference": "Henry Jekyll's Full Statement of the Case",
+      "stage": "statements",
+      "context": "Explaining the double life he led long before any chemistry was involved.",
+      "analysis": "This is the confession's central plea in mitigation, and it is a distinction with real content: he is not pretending to be good, he is genuinely both. It also quietly establishes that the division existed years before the drug, which means the experiment did not cause his condition — it only supplied a second body to keep the accounts in.",
+      "themes": [
+        "duality",
+        "reputation"
+      ],
+      "techniques": [
+        "multiple-narrators"
+      ],
+      "characters": [
+        "jekyll"
+      ],
+      "source": "Standard Ebooks text, Henry Jekyll's Full Statement of the Case",
+      "cloze": [
+        "double-dealer",
+        "hypocrite"
+      ]
+    },
+    {
+      "id": "unjust-might-go",
+      "text": "the unjust might go his way, delivered from the aspirations and remorse of his more upright twin; and the just could walk steadfastly and securely on his upward path",
+      "speaker": "Dr Henry Jekyll",
+      "reference": "Henry Jekyll's Full Statement of the Case",
+      "stage": "statements",
+      "context": "The daydream that preceded the experiment.",
+      "analysis": "Read the order: the unjust is delivered first and at greater length, and the just merely continues walking. Jekyll's utopia is arranged for the benefit of the half he claims to want rid of, and the sentence gives away whose freedom the experiment was actually designed to secure.",
+      "themes": [
+        "duality",
+        "appetite"
+      ],
+      "techniques": [
+        "doubling-technique"
+      ],
+      "characters": [
+        "jekyll",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Henry Jekyll's Full Statement of the Case",
+      "cloze": [
+        "unjust",
+        "twin"
+      ]
+    },
+    {
+      "id": "this-too-was-myself",
+      "text": "And yet when I looked upon that ugly idol in the glass, I was conscious of no repugnance, rather of a leap of welcome. This, too, was myself.",
+      "speaker": "Dr Henry Jekyll",
+      "reference": "Henry Jekyll's Full Statement of the Case",
+      "stage": "statements",
+      "context": "Seeing Hyde's reflection for the first time.",
+      "analysis": "Everyone else who looks at that face reports disgust; the one person who is it reports welcome. The admission destroys the defence Jekyll spends the rest of the chapter building, since a man cannot claim that Hyde was an alien invader and also that he recognised him instantly with pleasure.",
+      "themes": [
+        "duality",
+        "appetite"
+      ],
+      "techniques": [
+        "doubling-technique"
+      ],
+      "characters": [
+        "jekyll",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Henry Jekyll's Full Statement of the Case",
+      "cloze": [
+        "idol",
+        "welcome"
+      ]
+    },
+    {
+      "id": "pure-evil",
+      "text": "all human beings, as we meet them, are commingled out of good and evil: and Edward Hyde, alone in the ranks of mankind, was pure evil.",
+      "speaker": "Dr Henry Jekyll",
+      "reference": "Henry Jekyll's Full Statement of the Case",
+      "stage": "statements",
+      "context": "Accounting for the physical revulsion Hyde provokes in strangers.",
+      "analysis": "It is the most convenient sentence in the confession, and it is contradicted by the plot: Hyde is frightened, he weeps, he negotiates, he writes letters and he wants to live. Pure evil is what Jekyll needs Hyde to be if the responsibility is to sit anywhere but with him.",
+      "themes": [
+        "duality",
+        "indescribable"
+      ],
+      "techniques": [
+        "multiple-narrators"
+      ],
+      "characters": [
+        "jekyll",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Henry Jekyll's Full Statement of the Case",
+      "cloze": [
+        "commingled",
+        "pure"
+      ]
+    },
+    {
+      "id": "stain-of-breath",
+      "text": "Edward Hyde would pass away like the stain of breath upon a mirror",
+      "speaker": "Dr Henry Jekyll",
+      "reference": "Henry Jekyll's Full Statement of the Case",
+      "stage": "statements",
+      "context": "Describing the security of the arrangement in its early months.",
+      "analysis": "The image is of something that was never a substance in the first place, which is how Jekyll would like the arrangement understood. Note what follows it in the sentence: a man quietly at home who could afford to laugh at suspicion. The comfort being described is not moral relief but immunity from consequences.",
+      "themes": [
+        "appetite",
+        "reputation"
+      ],
+      "techniques": [
+        "doubling-technique"
+      ],
+      "characters": [
+        "jekyll",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Henry Jekyll's Full Statement of the Case",
+      "cloze": [
+        "stain",
+        "mirror"
+      ]
+    },
+    {
+      "id": "devil-caged",
+      "text": "My devil had been long caged, he came out roaring.",
+      "speaker": "Dr Henry Jekyll",
+      "reference": "Henry Jekyll's Full Statement of the Case",
+      "stage": "statements",
+      "context": "Explaining the murder of Sir Danvers Carew after two months of abstinence.",
+      "analysis": "The possessive is the admission: my devil, not the devil. He has just spent two months living virtuously, and the account he gives is that the abstinence itself loaded the violence — which makes the Carew murder the direct consequence of his attempt to reform.",
+      "themes": [
+        "appetite",
+        "duality"
+      ],
+      "techniques": [
+        "doubling-technique"
+      ],
+      "characters": [
+        "jekyll",
+        "hyde",
+        "carew"
+      ],
+      "source": "Standard Ebooks text, Henry Jekyll's Full Statement of the Case",
+      "cloze": [
+        "devil",
+        "caged"
+      ]
+    },
+    {
+      "id": "losing-hold",
+      "text": "I was slowly losing hold of my original and better self, and becoming slowly incorporated with my second and worse.",
+      "speaker": "Dr Henry Jekyll",
+      "reference": "Henry Jekyll's Full Statement of the Case",
+      "stage": "statements",
+      "context": "After the involuntary transformation in Regent's Park.",
+      "analysis": "The difficulty has reversed: at the start it took a drug to become Hyde, and now it takes one to stay Jekyll. Slowly appears twice in a single sentence, and the repetition turns a supernatural condition into something with the shape of a habit, measured in doses that stop working.",
+      "themes": [
+        "appetite",
+        "duality"
+      ],
+      "techniques": [
+        "doubling-technique"
+      ],
+      "characters": [
+        "jekyll",
+        "hyde"
+      ],
+      "source": "Standard Ebooks text, Henry Jekyll's Full Statement of the Case",
+      "cloze": [
+        "losing",
+        "incorporated"
+      ]
+    },
+    {
+      "id": "end-of-jekyll",
+      "text": "Here then, as I lay down the pen and proceed to seal up my confession, I bring the life of that unhappy Henry Jekyll to an end.",
+      "speaker": "Dr Henry Jekyll",
+      "reference": "Henry Jekyll's Full Statement of the Case",
+      "stage": "statements",
+      "context": "The last sentence of the novella.",
+      "analysis": "He writes about himself in the third person and hands the ending to a sealing-wax, not to a death: the act that finishes Henry Jekyll is the closing of a document. It is also a disclaimer — what is to follow concerns another than myself — so the book ends with its narrator declining responsibility for his own body.",
+      "themes": [
+        "evidence",
+        "duality"
+      ],
+      "techniques": [
+        "legal-diction",
+        "multiple-narrators"
+      ],
+      "characters": [
+        "jekyll"
+      ],
+      "source": "Standard Ebooks text, Henry Jekyll's Full Statement of the Case",
+      "cloze": [
+        "confession",
+        "unhappy"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1788,
+      "label": "Deacon William Brodie is hanged in Edinburgh",
+      "detail": "A respected cabinetmaker and town councillor by day and a burglar by night; Stevenson grew up with the story and later wrote a play about him.",
+      "kind": "context"
+    },
+    {
+      "year": 1850,
+      "label": "Robert Louis Stevenson is born in Edinburgh",
+      "detail": "Into a family of lighthouse engineers, in a city of respectable New Town squares and old closes.",
+      "kind": "author"
+    },
+    {
+      "year": 1859,
+      "label": "Darwin publishes On the Origin of Species",
+      "detail": "One source of the late-Victorian habit of describing the worse half of a man as an earlier one.",
+      "kind": "context"
+    },
+    {
+      "year": 1885,
+      "label": "The novella is written at Bournemouth",
+      "detail": "By Stevenson's own account it began in a dream and was drafted at great speed; the household story that he burned a first version has been repeated ever since.",
+      "kind": "work"
+    },
+    {
+      "year": 1886,
+      "label": "Published in London by Longmans, Green and Co.",
+      "detail": "Issued as a cheap shilling shocker in January and taken up almost at once by pulpits and reviewers.",
+      "kind": "work"
+    },
+    {
+      "year": 1886,
+      "label": "Kidnapped published in the same year",
+      "detail": "Stevenson's most productive period, and a reminder that the man writing about a divided self was also writing adventure fiction.",
+      "kind": "author"
+    },
+    {
+      "year": 1887,
+      "label": "Richard Mansfield stars in the authorised stage version",
+      "detail": "Thomas Russell Sullivan's adaptation, first at the Boston Museum; the transformation is performed in front of the audience, reversing Stevenson's method.",
+      "kind": "reception"
+    },
+    {
+      "year": 1888,
+      "label": "Mansfield brings the play to London during the Whitechapel murders",
+      "detail": "The coincidence fixed a link between the story and the idea of a respectable Londoner who kills, and the production closed early.",
+      "kind": "reception"
+    },
+    {
+      "year": 1894,
+      "label": "Stevenson dies at Vailima in Samoa",
+      "detail": "Aged forty-four, with Weir of Hermiston unfinished.",
+      "kind": "author"
+    },
+    {
+      "year": 1931,
+      "label": "Rouben Mamoulian's film for Paramount",
+      "detail": "Fredric March won an Academy Award for the dual role, and the film's subjective camera made the transformation the centrepiece.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Soho, London",
+      "lat": 51.5136,
+      "lon": -0.1365,
+      "note": "Hyde's rooms, reached through a fog that Utterson describes as a district of some city in a nightmare."
+    },
+    {
+      "name": "Cavendish Square",
+      "lat": 51.5169,
+      "lon": -0.1467,
+      "note": "Lanyon's house, the address of orthodox and prosperous medicine."
+    },
+    {
+      "name": "Regent's Park",
+      "lat": 51.5313,
+      "lon": -0.157,
+      "note": "Where Jekyll changes into Hyde on a bench, in daylight, without taking anything."
+    },
+    {
+      "name": "Bournemouth",
+      "lat": 50.7192,
+      "lon": -1.8808,
+      "note": "Skerryvore, the house where Stevenson wrote the novella in 1885."
+    },
+    {
+      "name": "Edinburgh",
+      "lat": 55.9533,
+      "lon": -3.1883,
+      "note": "Stevenson's own divided city, and the town where Deacon Brodie kept two lives in one reputation."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "A fable about the divided self",
+      "summary": "The reading the title has given the language: two natures in one man, one of them released by chemistry. It takes Jekyll's own theory as the book's, and it is the version almost every adaptation dramatises.",
+      "counter": "The theory belongs to a narrator with every reason to prefer it, and the novella's own evidence — Hyde's fear, his letters, his negotiations — keeps failing to match the claim that he is pure evil."
+    },
+    {
+      "position": "A study of Victorian respectability",
+      "summary": "On this account the subject is not the laboratory but the club: a professional class in which discretion is a virtue, questions are impolite, and a man's reputation is a shared asset that several people work to protect.",
+      "counter": "It risks making the story sociology. The horror in the last night chapter is not about reputation at all; it is about a voice behind a door."
+    },
+    {
+      "position": "A book about addiction",
+      "summary": "Readers have long noticed how precisely the middle chapters describe tolerance, escalating doses, involuntary relapse and a failed supply. The crisis is finally chemical: a batch of salt with an impurity that cannot be reproduced.",
+      "counter": "Stevenson never names a substance or a habit, and the reading can quietly replace the moral question — what Jekyll wanted — with a medical one."
+    },
+    {
+      "position": "A story about the limits of description",
+      "summary": "Attention has turned to what the book refuses to show: the pleasures are unspecified, the deformity is unnamed, and eight chapters pass without a transformation. What is frightening is generated by the gaps rather than by any image.",
+      "counter": "A reader can also find the gaps evasive rather than artful, and the unspecified pleasures have carried very different meanings for different generations."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "How does Stevenson control what the reader is allowed to know?",
+      "focus": "Structure, narration and delayed revelation",
+      "plan": [
+        "Establish that eight chapters follow a man whose professional imagination cannot reach the answer.",
+        "Use the will and the handwriting comparison to show evidence arriving in a form Utterson can misread.",
+        "Examine Lanyon's narrative: the one eyewitness account, and its deliberate stopping point.",
+        "Read the final statement as a document with an author and a purpose rather than as the truth.",
+        "Conclude with adaptation: what is lost when a production shows the transformation in its first scene."
+      ]
+    },
+    {
+      "question": "Is Hyde a separate person, or a permission?",
+      "focus": "Duality, responsibility and the evidence of the confession",
+      "plan": [
+        "Set out Jekyll's own theory of two natures and note where he admits its limits.",
+        "Gather the moments that undercut the theory: the leap of welcome at the mirror, my devil, the memory that carries across.",
+        "Use the Carew murder and its timing after two months of virtue.",
+        "Consider Hyde's ordinary behaviour — cheques, lodgings, letters — as evidence against pure evil.",
+        "Decide whether the novella endorses Jekyll's defence or supplies the material to dismantle it."
+      ]
+    },
+    {
+      "question": "What does respectability cost in this novella?",
+      "focus": "Reputation, silence and professional discretion",
+      "plan": [
+        "Begin with Enfield and Utterson agreeing never to mention the door again.",
+        "Trace the pattern through Utterson's suppression of the letter in a murder investigation.",
+        "Weigh Lanyon's sealed envelope, held unopened while there is still time to act.",
+        "Set Poole against the professionals: a servant who believes the evidence of his ears.",
+        "Close on Jekyll's admission that he was in no sense a hypocrite, and ask what that distinction is worth."
+      ]
+    },
+    {
+      "question": "How does Stevenson use London?",
+      "focus": "Setting, architecture and the divided map",
+      "plan": [
+        "Start with the single building that has a comfortable square at the front and a blistered door at the back.",
+        "Contrast the descriptions of the by-street on a Sunday with Soho under fog.",
+        "Track the thresholds: the door with no knocker, the window shut mid-sentence, the cabinet door taken down with an axe.",
+        "Consider Edinburgh behind the London geography, and what Stevenson gains by moving it south.",
+        "Conclude with Regent's Park, where the safest and most public space produces the change."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Utterson never opens Lanyon's envelope while it could still do any good. Is that decency or cowardice?",
+    "Nobody can describe Hyde's deformity. What do you think the witnesses are actually responding to?",
+    "The novella never says what Hyde's pleasures are. Does that make the book stronger or evasive?",
+    "Jekyll's statement is the only full account of what happened. How much of it would you accept?",
+    "Almost every adaptation shows the transformation early. What is lost, and is anything gained?"
+  ],
+  "related": [
+    {
+      "href": "/books/dracula/",
+      "why": "The other late-Victorian case file, where the danger is again reconstructed from documents by professional men."
+    },
+    {
+      "href": "/books/dorian-gray/",
+      "why": "Published five years later, and the same arrangement in reverse: the respectable face stays intact while the hidden thing takes the damage."
+    },
+    {
+      "href": "/books/frankenstein/",
+      "why": "The earlier experiment carried out alone and in secret, and the earlier confession delivered by a dying man."
+    },
+    {
+      "href": "/books/adventures-of-sherlock-holmes/",
+      "why": "The same London of fog, cabs and respectable clients with unrespectable problems, investigated by someone who is much better at it than Utterson."
+    },
+    {
+      "href": "/books/the-turn-of-the-screw/",
+      "why": "Another short book whose whole effect depends on a single narrator's account and on what is never shown."
+    }
+  ],
+  "videos": []
+}

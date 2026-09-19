@@ -1,0 +1,1278 @@
+{
+  "slug": "pride-and-prejudice",
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "href": "/books/pride-and-prejudice/",
+  "buyUrl": "https://mybook.to/D5Am6hU",
+  "form": "novel",
+  "genre": "Comedy of manners",
+  "period": "Romantic & Regency",
+  "written": "Drafted 1796–97 as First Impressions; revised 1811–12",
+  "firstPublished": 1813,
+  "setting": "Hertfordshire, Kent, London and Derbyshire, in the years of the militia camps",
+  "readingTime": 500,
+  "difficulty": 3,
+  "lengthNote": "Sixty-one chapters, first issued in three volumes",
+  "openingLine": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+  "summary": "A family of five daughters, an estate entailed away from all of them, and a neighbourhood that treats every new arrival as an opportunity. Elizabeth Bennet is the best reader of character in the book and gets the two most important readings wrong, and Austen builds the plot so that correcting them costs her something. The comedy never lets go of the arithmetic underneath it: who has money, who will inherit, and who can afford to refuse.",
+  "referenceStyle": "chapter",
+  "sourceText": {
+    "label": "Standard Ebooks text of Pride and Prejudice",
+    "note": "Chapters are numbered continuously from 1 to 61, as in the Standard Ebooks text; first editions divide the same chapters across three volumes."
+  },
+  "atAGlance": [
+    {
+      "label": "First published",
+      "value": "28 January 1813",
+      "note": "Thomas Egerton, London, in three volumes, credited to the author of Sense and Sensibility."
+    },
+    {
+      "label": "Earlier title",
+      "value": "First Impressions",
+      "note": "The 1796–97 draft; the discarded title names the novel's central test more plainly than the published one."
+    },
+    {
+      "label": "Copyright",
+      "value": "Sold outright",
+      "note": "Austen sold the copyright to Egerton for £110 rather than publishing on commission, and so earned nothing from later editions."
+    },
+    {
+      "label": "Shape",
+      "value": "Sixty-one chapters",
+      "note": "The first proposal falls almost exactly at the centre of the book, and everything after it is re-reading."
+    }
+  ],
+  "structure": [
+    {
+      "id": "chapters-1-12",
+      "label": "Chapters 1–12",
+      "title": "Netherfield taken, and everybody measured",
+      "summary": "A single man with four or five thousand a year moves into the neighbourhood and the Bennets begin calculating. The Meryton assembly fixes Darcy's reputation in one overheard sentence, and Jane's convenient illness keeps Elizabeth at Netherfield long enough for the two of them to start sparring in earnest."
+    },
+    {
+      "id": "chapters-13-23",
+      "label": "Chapters 13–23",
+      "title": "The heir, the officer and the practical marriage",
+      "summary": "Mr Collins arrives to inspect the estate he will inherit and the cousin he intends to marry; Wickham arrives with a grievance that flatters Elizabeth's judgement. Within three days Collins is refused, Charlotte Lucas accepts him, and the Bingleys leave for London taking Jane's prospects with them."
+    },
+    {
+      "id": "chapters-24-34",
+      "label": "Chapters 24–34",
+      "title": "Hunsford, Rosings and a proposal nobody wanted",
+      "summary": "Elizabeth visits Charlotte's parsonage and sees what a comfortable home actually costs. Lady Catherine presides, Colonel Fitzwilliam lets slip that Darcy separated Bingley from Jane, and Darcy proposes in terms that make refusing him easy and enjoyable."
+    },
+    {
+      "id": "chapters-35-42",
+      "label": "Chapters 35–42",
+      "title": "The letter, and a second reading",
+      "summary": "Darcy hands over a letter and walks away, and the novel changes direction without a single event taking place. Elizabeth reads it twice, reconstructs Wickham from the beginning, and arrives at the only self-accusation in the book that is not comic."
+    },
+    {
+      "id": "chapters-43-50",
+      "label": "Chapters 43–50",
+      "title": "Pemberley, and the news from Brighton",
+      "summary": "A house, a housekeeper and a set of grounds supply the evidence about Darcy that conversation could not. Then Lydia runs off with Wickham, and the family's standing, which has been a joke for forty chapters, becomes something that can actually be destroyed."
+    },
+    {
+      "id": "chapters-51-61",
+      "label": "Chapters 51–61",
+      "title": "What the settlement cost, and who paid it",
+      "summary": "Lydia returns married and unembarrassed, and the reader learns before Elizabeth does who bought the marriage. Lady Catherine's attempt to extract a promise produces the opposite of the one she wants, and the last chapters distribute incomes as carefully as affections."
+    }
+  ],
+  "characters": [
+    {
+      "id": "elizabeth-bennet",
+      "name": "Elizabeth Bennet",
+      "role": "Second of the five Bennet daughters",
+      "summary": "Quick, funny and justly confident in her own judgement, which is exactly why the novel arranges for her to be wrong about the two men she is most certain of. Her wit is a form of courage in a household where nobody else will say anything true.",
+      "clue": "She refuses two proposals, walks three miles through mud to nurse her sister, and only discovers her own vanity by reading a letter twice.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "quick-witted",
+        "proud of her discernment",
+        "capable of changing her mind"
+      ],
+      "relationships": [
+        {
+          "to": "darcy",
+          "label": "misjudges, then marries",
+          "kind": "love",
+          "stages": [
+            "chapters-1-12",
+            "chapters-24-34",
+            "chapters-35-42",
+            "chapters-51-61"
+          ]
+        },
+        {
+          "to": "jane-bennet",
+          "label": "sister and confidante",
+          "kind": "family"
+        },
+        {
+          "to": "charlotte-lucas",
+          "label": "closest friend, and a test of her principles",
+          "kind": "ally",
+          "stages": [
+            "chapters-13-23",
+            "chapters-24-34"
+          ]
+        },
+        {
+          "to": "wickham",
+          "label": "flattered and deceived by",
+          "kind": "rival",
+          "stages": [
+            "chapters-13-23"
+          ]
+        },
+        {
+          "to": "mr-bennet",
+          "label": "favourite daughter of",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "darcy",
+      "name": "Fitzwilliam Darcy",
+      "role": "Owner of Pemberley in Derbyshire",
+      "summary": "Ten thousand a year and no talent for a room full of strangers. Austen gives him the novel's worst opening sentence and then spends fifty chapters showing that his conduct has always been better than his manner, which is not quite the same as saying he was right.",
+      "clue": "He insults a woman within her hearing at a country dance, proposes to her against his own better judgement, and later pays a blackguard to marry her sister without telling anyone.",
+      "firstAppearance": "Chapter 3",
+      "traits": [
+        "reserved",
+        "conscious of rank",
+        "scrupulous about debts"
+      ],
+      "relationships": [
+        {
+          "to": "elizabeth-bennet",
+          "label": "insults, proposes to, and marries",
+          "kind": "love"
+        },
+        {
+          "to": "bingley",
+          "label": "friend and adviser to",
+          "kind": "ally",
+          "stages": [
+            "chapters-1-12",
+            "chapters-13-23"
+          ]
+        },
+        {
+          "to": "wickham",
+          "label": "childhood companion, later paymaster of",
+          "kind": "enemy",
+          "stages": [
+            "chapters-35-42",
+            "chapters-51-61"
+          ]
+        },
+        {
+          "to": "lady-catherine",
+          "label": "nephew of",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "jane-bennet",
+      "name": "Jane Bennet",
+      "role": "The eldest Bennet daughter",
+      "summary": "Her determination to think well of everybody is presented as a moral achievement and a practical disaster: it makes her unreadable to Bingley, unreadable to Darcy, and defenceless against Caroline Bingley. The novel likes her and does not recommend her method.",
+      "clue": "She catches cold riding to dinner in the rain because her mother wanted her to stay the night, and forgives everyone involved.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "generous",
+        "reserved by temperament",
+        "slow to suspect"
+      ],
+      "relationships": [
+        {
+          "to": "bingley",
+          "label": "attached to, and separated from",
+          "kind": "love",
+          "stages": [
+            "chapters-1-12",
+            "chapters-13-23",
+            "chapters-51-61"
+          ]
+        },
+        {
+          "to": "elizabeth-bennet",
+          "label": "sister and confidante",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "bingley",
+      "name": "Charles Bingley",
+      "role": "Tenant of Netherfield Park",
+      "summary": "Amiable, rich and so willing to be guided that his friend can detach him from the woman he loves with a few words about her family. He is the novel's evidence that good nature without judgement is a kind of weakness.",
+      "clue": "He takes a house for the shooting, falls in love at the first assembly, and is talked out of it by a friend and a sister in a single winter.",
+      "firstAppearance": "Chapter 3",
+      "traits": [
+        "easy-tempered",
+        "suggestible",
+        "genuinely without snobbery"
+      ],
+      "relationships": [
+        {
+          "to": "jane-bennet",
+          "label": "in love with",
+          "kind": "love"
+        },
+        {
+          "to": "darcy",
+          "label": "guided by",
+          "kind": "ally"
+        }
+      ]
+    },
+    {
+      "id": "wickham",
+      "name": "George Wickham",
+      "role": "Lieutenant in the militia",
+      "summary": "He tells Elizabeth a story about Darcy within an hour of meeting her, and she believes it because it is well told and because she wants to. His charm is a working method rather than a temperament, and the militia's presence in Meryton is what gives it a market.",
+      "clue": "The steward's son who was left a living in a will, sold it for ready money, and then complained for the rest of the book that he had been robbed of it.",
+      "firstAppearance": "Chapter 15",
+      "traits": [
+        "plausible",
+        "indebted",
+        "entirely unrepentant"
+      ],
+      "relationships": [
+        {
+          "to": "lydia-bennet",
+          "label": "elopes with, and is paid to marry",
+          "kind": "marriage",
+          "stages": [
+            "chapters-43-50",
+            "chapters-51-61"
+          ]
+        },
+        {
+          "to": "darcy",
+          "label": "slanders and is bought off by",
+          "kind": "enemy"
+        },
+        {
+          "to": "elizabeth-bennet",
+          "label": "confides a false history to",
+          "kind": "rival"
+        }
+      ]
+    },
+    {
+      "id": "mr-collins",
+      "name": "Mr Collins",
+      "role": "Clergyman of Hunsford, heir to Longbourn",
+      "summary": "He proposes to two women in three days and is not embarrassed by either outcome, because the proposal was never about a person. Everything he says is addressed upwards to his patroness, even when he is standing in somebody else's parlour insulting their daughter.",
+      "clue": "He offers his hand as a favour to the family he will dispossess, and numbers his reasons for marrying like items in a sermon.",
+      "firstAppearance": "Chapter 13",
+      "traits": [
+        "obsequious",
+        "self-satisfied",
+        "incapable of hearing a refusal"
+      ],
+      "relationships": [
+        {
+          "to": "charlotte-lucas",
+          "label": "married to",
+          "kind": "marriage",
+          "stages": [
+            "chapters-13-23",
+            "chapters-24-34"
+          ]
+        },
+        {
+          "to": "lady-catherine",
+          "label": "in the service of",
+          "kind": "service"
+        },
+        {
+          "to": "mr-bennet",
+          "label": "cousin and heir of",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "charlotte-lucas",
+      "name": "Charlotte Lucas",
+      "role": "Elizabeth's friend, later Mrs Collins",
+      "summary": "Twenty-seven, without fortune, and the only character who states the terms of the marriage market out loud without either joking or complaining. Her parsonage is arranged so that she sees as little of her husband as the house allows, which is the closest the novel comes to a verdict on the bargain.",
+      "clue": "She accepts in three days the man her closest friend refused, and explains that she asks only a comfortable home.",
+      "firstAppearance": "Chapter 5",
+      "traits": [
+        "clear-eyed",
+        "unsentimental",
+        "quietly competent"
+      ],
+      "relationships": [
+        {
+          "to": "mr-collins",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "elizabeth-bennet",
+          "label": "friend of",
+          "kind": "ally"
+        }
+      ]
+    },
+    {
+      "id": "lydia-bennet",
+      "name": "Lydia Bennet",
+      "role": "The youngest Bennet daughter",
+      "summary": "Fifteen, unsupervised and encouraged, she does exactly what her upbringing has trained her to do, and the novel is careful to spread the blame across her mother's indulgence and her father's amused neglect. Her elopement is the one plot event that could not be undone by an explanation.",
+      "clue": "She is delighted to be married before her elder sisters and cannot understand why the family is not delighted too.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "heedless",
+        "shameless",
+        "badly taught"
+      ],
+      "relationships": [
+        {
+          "to": "wickham",
+          "label": "runs off with",
+          "kind": "marriage"
+        },
+        {
+          "to": "mrs-bennet",
+          "label": "favourite daughter of",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "mr-bennet",
+      "name": "Mr Bennet",
+      "role": "Master of Longbourn",
+      "summary": "He retreats to his library and treats his family as a source of entertainment, and the novel charges him for it: the daughter he never bothered to check runs away, and his best line about making sport for our neighbours is spoken just before he finds out what that costs.",
+      "clue": "He tells his least favourite daughter that one parent will refuse to see her again whichever way she answers a proposal.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "ironic",
+        "indolent",
+        "fond without being useful"
+      ],
+      "relationships": [
+        {
+          "to": "mrs-bennet",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "elizabeth-bennet",
+          "label": "father of",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "lady-catherine",
+      "name": "Lady Catherine de Bourgh",
+      "role": "Of Rosings Park, Darcy's aunt",
+      "summary": "She gives orders about other people's carriages, shelves and marriages with the same confidence, and is the only character who states the class objection to the match in plain words. Her one decisive action in the plot is the one that brings the marriage about.",
+      "clue": "She drives to a small Hertfordshire village to demand a promise, and is told that she has no right to ask for one.",
+      "firstAppearance": "Chapter 29",
+      "traits": [
+        "imperious",
+        "intrusive",
+        "unused to refusal"
+      ],
+      "relationships": [
+        {
+          "to": "darcy",
+          "label": "aunt of",
+          "kind": "family"
+        },
+        {
+          "to": "elizabeth-bennet",
+          "label": "confronts",
+          "kind": "enemy",
+          "stages": [
+            "chapters-51-61"
+          ]
+        },
+        {
+          "to": "mr-collins",
+          "label": "patroness of",
+          "kind": "service"
+        }
+      ]
+    },
+    {
+      "id": "mrs-bennet",
+      "name": "Mrs Bennet",
+      "role": "Mistress of Longbourn",
+      "summary": "Ridiculous and not wrong. Her single subject is getting five daughters married before her husband dies, and the entail means that the alternative is genuine poverty, so the novel laughs at her method rather than her motive.",
+      "clue": "Her nerves are her oldest companions, and she can turn a wet evening into an engagement if the house is far enough from home.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "loud",
+        "tireless",
+        "materially correct"
+      ],
+      "relationships": [
+        {
+          "to": "mr-bennet",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "lydia-bennet",
+          "label": "mother of",
+          "kind": "family"
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "judgement",
+      "name": "First impressions and judgement",
+      "summary": "The discarded title is still the working one. Almost every character forms a verdict in a single evening and then spends the book defending it, and Austen makes the reader do the same thing so that the correction lands on both at once.",
+      "development": "Fixed at the Meryton assembly, hardened by Wickham's story, dismantled by a letter in Chapter 35, and formally re-examined at Pemberley."
+    },
+    {
+      "id": "marriage-and-money",
+      "name": "Marriage and money",
+      "summary": "Every attachment in the novel is quoted with a figure attached, from Bingley's four or five thousand a year to the hundred pounds that settles Lydia. Austen does not treat this as vulgar; she treats it as the arithmetic within which affection has to operate.",
+      "development": "Stated as a joke in the first sentence, argued seriously by Charlotte in Chapter 22, and paid in cash by Darcy in the last volume."
+    },
+    {
+      "id": "class",
+      "name": "Rank and connection",
+      "summary": "The obstacle between Elizabeth and Darcy is not money on her side but relations on hers: an uncle in trade, an aunt in Cheapside, a mother who cannot be taken anywhere. The novel dismantles the objection by making the Gardiners the most sensible adults in it.",
+      "development": "Voiced by Caroline Bingley, formalised by Darcy's first proposal, and shouted by Lady Catherine in the last volume after it has stopped being true for anyone the reader trusts."
+    },
+    {
+      "id": "female-security",
+      "name": "Entail and female security",
+      "summary": "Longbourn passes to Mr Collins, so five daughters must find husbands or find lodgings. The legal fact sits under every comic scene, and it is why Charlotte's calculation is a calculation rather than a failure of feeling.",
+      "development": "Explained early and never forgotten: it makes Mrs Bennet's campaign rational, Collins's proposal a favour in his own eyes, and Lydia's ruin a threat to four other women."
+    },
+    {
+      "id": "reputation",
+      "name": "Reputation and family conduct",
+      "summary": "Character in this novel is public property. A sister's elopement is treated as a defect in every other sister, and Mary's moralising about a woman's irretrievable ruin is contemptible and, within the world of the book, accurate about the consequences.",
+      "development": "From the embarrassment of the Netherfield ball, through Darcy's letter about Jane's family, to the Brighton crisis where reputation becomes something that must be bought back."
+    },
+    {
+      "id": "self-knowledge",
+      "name": "Self-knowledge",
+      "summary": "Both leading characters have to revise not an opinion but a habit of mind. Elizabeth discovers that she was flattered into belief; Darcy discovers that being brought up on good principles is not the same as being taught to apply them.",
+      "development": "Elizabeth's reckoning comes in Chapter 36, Darcy's is reported in Chapter 58, and the novel makes the two confessions echo each other's grammar."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "free-indirect-style",
+      "name": "Free indirect style",
+      "definition": "Narration that takes on a character's vocabulary and assumptions without marking them as quotation.",
+      "inThisBook": "The narrative sits so close to Elizabeth that her errors arrive as facts; the reader distrusts Darcy on her evidence and has to re-read the first half after the letter."
+    },
+    {
+      "id": "irony",
+      "name": "Irony",
+      "definition": "Saying one thing in a form that invites the opposite judgement.",
+      "inThisBook": "The famous first sentence states a truth nobody in the book holds and everybody acts on: it is the mothers, not the single men, who are in want of anything."
+    },
+    {
+      "id": "letters",
+      "name": "Letters",
+      "definition": "Written documents inserted into a narrative as evidence and as plot.",
+      "inThisBook": "Darcy's letter is the structural hinge, and Austen distinguishes her characters by their prose: Collins pompous, Jane over-careful, Lydia unpunctuated and untroubled."
+    },
+    {
+      "id": "dialogue",
+      "name": "Dialogue as exposure",
+      "definition": "Letting characters convict themselves in their own speech rather than describing their faults.",
+      "inThisBook": "Mr Collins numbers his reasons for marrying and Lady Catherine interrogates a stranger about her sisters' accomplishments; neither needs a word of narrative comment."
+    },
+    {
+      "id": "epigram",
+      "name": "Epigram",
+      "definition": "A generalisation compressed into a single balanced sentence.",
+      "inThisBook": "Characters reach for maxims when they are least reliable — Mary on vanity and pride, Charlotte on happiness in marriage, Mary again on a woman's ruin."
+    },
+    {
+      "id": "parallel-plotting",
+      "name": "Parallel courtships",
+      "definition": "Running several versions of the same situation so that each comments on the others.",
+      "inThisBook": "Five marriages are set side by side — Jane's, Charlotte's, Lydia's, Elizabeth's and the Bennets' own — so that the reader can see what each one was bought with."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "truth-universally",
+      "text": "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+      "reference": "Chapter 1",
+      "stage": "chapters-1-12",
+      "context": "The opening sentence of the novel.",
+      "analysis": "The sentence claims to report a consensus and names nobody who holds it; the passive construction hides the mothers who are the actual subject. Read strictly it is also false in the book that follows, where the single men are in want of nothing and the women are in want of an income.",
+      "themes": [
+        "marriage-and-money"
+      ],
+      "techniques": [
+        "irony",
+        "epigram"
+      ],
+      "characters": [],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "universally",
+        "fortune"
+      ]
+    },
+    {
+      "id": "poor-nerves",
+      "text": "You mistake me, my dear. I have a high respect for your nerves. They are my old friends. I have heard you mention them with consideration these twenty years at least.",
+      "speaker": "Mr Bennet",
+      "reference": "Chapter 1",
+      "stage": "chapters-1-12",
+      "context": "Answering his wife's complaint that he has no compassion on her nerves.",
+      "analysis": "The joke depends on treating an ailment as an acquaintance, and it establishes the marriage in a line: he has been amusing himself at her expense for two decades and has changed nothing. Twenty years is also the age of the eldest daughter, which quietly dates the arrangement.",
+      "themes": [
+        "marriage-and-money"
+      ],
+      "techniques": [
+        "dialogue",
+        "irony"
+      ],
+      "characters": [
+        "mr-bennet",
+        "mrs-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "nerves",
+        "friends"
+      ]
+    },
+    {
+      "id": "tolerable",
+      "text": "She is tolerable; but not handsome enough to tempt me; and I am in no humour at present to give consequence to young ladies who are slighted by other men.",
+      "speaker": "Mr Darcy",
+      "reference": "Chapter 3",
+      "stage": "chapters-1-12",
+      "context": "At the Meryton assembly, refusing Bingley's suggestion that he dance with Elizabeth, who is sitting close enough to hear.",
+      "analysis": "Eight words decide the first half of the book. The grammar is the insult: she is graded, then found insufficient for a purpose, with no verb that admits she is a person in the room. Elizabeth's response is to repeat it as a comic story, which is how a wound is kept fresh.",
+      "themes": [
+        "judgement",
+        "class"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "darcy",
+        "elizabeth-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 3",
+      "cloze": [
+        "tolerable",
+        "handsome"
+      ]
+    },
+    {
+      "id": "mortified-mine",
+      "text": "I could easily forgive his pride, if he had not mortified mine.",
+      "speaker": "Elizabeth Bennet",
+      "reference": "Chapter 5",
+      "stage": "chapters-1-12",
+      "context": "Discussing Darcy's behaviour at the assembly with Charlotte Lucas and her family.",
+      "analysis": "She names the mechanism of her own prejudice and does not notice she has done it. The two pronouns are balanced against each other across the comma, which is the shape the whole novel will take: two kinds of pride meeting and neither able to see the other's.",
+      "themes": [
+        "judgement",
+        "self-knowledge"
+      ],
+      "techniques": [
+        "epigram"
+      ],
+      "characters": [
+        "elizabeth-bennet",
+        "darcy"
+      ],
+      "source": "Standard Ebooks text, Chapter 5",
+      "cloze": [
+        "forgive",
+        "mortified"
+      ]
+    },
+    {
+      "id": "vanity-and-pride",
+      "text": "Vanity and pride are different things, though the words are often used synonymously. A person may be proud without being vain. Pride relates more to our opinion of ourselves, vanity to what we would have others think of us.",
+      "speaker": "Mary Bennet",
+      "reference": "Chapter 5",
+      "stage": "chapters-1-12",
+      "context": "Mary offering the company the benefit of her reading.",
+      "analysis": "The distinction is sound and the novel uses it: Darcy is proud and Wickham is vain, and the difference is exactly the one Mary draws. Austen's joke is that the book's dullest speaker supplies its most useful definition, and nobody in the room listens.",
+      "themes": [
+        "judgement",
+        "self-knowledge"
+      ],
+      "techniques": [
+        "epigram"
+      ],
+      "characters": [
+        "darcy",
+        "wickham"
+      ],
+      "source": "Standard Ebooks text, Chapter 5",
+      "cloze": [
+        "Vanity",
+        "synonymously"
+      ]
+    },
+    {
+      "id": "good-opinion-lost",
+      "text": "My good opinion once lost is lost forever.",
+      "speaker": "Mr Darcy",
+      "reference": "Chapter 11",
+      "stage": "chapters-1-12",
+      "context": "At Netherfield, admitting to a resentful temper during an evening of sparring with Elizabeth.",
+      "analysis": "He says this as a confession of a fault and plainly regards it as a standard. The novel then spends fifty chapters disproving it about him, since his good opinion of Elizabeth survives her refusal and her family; the line is a self-portrait that has stopped being accurate.",
+      "themes": [
+        "judgement",
+        "self-knowledge"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "darcy"
+      ],
+      "source": "Standard Ebooks text, Chapter 11",
+      "cloze": [
+        "opinion",
+        "forever"
+      ]
+    },
+    {
+      "id": "delighted-us-long-enough",
+      "text": "That will do extremely well, child. You have delighted us long enough. Let the other young ladies have time to exhibit.",
+      "speaker": "Mr Bennet",
+      "reference": "Chapter 18",
+      "stage": "chapters-13-23",
+      "context": "Stopping Mary's second song at the Netherfield ball.",
+      "analysis": "A father humiliates a daughter in public and the sentence is constructed so that the cruelty travels inside a compliment. It is the clearest instance of the habit Elizabeth will later have to judge: her father's wit is aimed at his own children and costs him nothing.",
+      "themes": [
+        "reputation"
+      ],
+      "techniques": [
+        "irony",
+        "dialogue"
+      ],
+      "characters": [
+        "mr-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 18",
+      "cloze": [
+        "delighted",
+        "exhibit"
+      ]
+    },
+    {
+      "id": "reasons-for-marrying",
+      "text": "My reasons for marrying are, first, that I think it a right thing for every clergyman in easy circumstances (like myself) to set the example of matrimony in his parish.",
+      "speaker": "Mr Collins",
+      "reference": "Chapter 19",
+      "stage": "chapters-13-23",
+      "context": "Proposing to Elizabeth, having secured her mother's permission but not her attention.",
+      "analysis": "He begins a proposal with an enumerated list and the first item is professional example. The woman is not in the sentence at all; she appears later, as the third reason, on the recommendation of somebody else. Austen lets the syntax do the whole characterisation.",
+      "themes": [
+        "marriage-and-money"
+      ],
+      "techniques": [
+        "dialogue",
+        "irony"
+      ],
+      "characters": [
+        "mr-collins"
+      ],
+      "source": "Standard Ebooks text, Chapter 19",
+      "cloze": [
+        "reasons",
+        "matrimony"
+      ]
+    },
+    {
+      "id": "unhappy-alternative",
+      "text": "An unhappy alternative is before you, Elizabeth. From this day you must be a stranger to one of your parents. Your mother will never see you again if you do not marry Mr. Collins, and I will never see you again if you do.",
+      "speaker": "Mr Bennet",
+      "reference": "Chapter 20",
+      "stage": "chapters-13-23",
+      "context": "Called in by Mrs Bennet to force Elizabeth to accept Collins.",
+      "analysis": "He supports his daughter by pretending not to, which lets him defeat his wife and stay amusing at the same time. The sentence is perfectly balanced around the two parents, and the balance is the point: Elizabeth's rescue arrives as a joke, and the same detachment will let Lydia go to Brighton.",
+      "themes": [
+        "female-security",
+        "marriage-and-money"
+      ],
+      "techniques": [
+        "irony",
+        "dialogue"
+      ],
+      "characters": [
+        "mr-bennet",
+        "elizabeth-bennet",
+        "mr-collins"
+      ],
+      "source": "Standard Ebooks text, Chapter 20",
+      "cloze": [
+        "alternative",
+        "stranger"
+      ]
+    },
+    {
+      "id": "not-romantic",
+      "text": "I am not romantic you know. I never was. I ask only a comfortable home; and considering Mr. Collins’s character, connections, and situation in life, I am convinced that my chance of happiness with him is as fair, as most people can boast on entering the marriage state.",
+      "speaker": "Charlotte Lucas",
+      "reference": "Chapter 22",
+      "stage": "chapters-13-23",
+      "context": "Telling Elizabeth that she has accepted Mr Collins.",
+      "analysis": "She asks only for a house and states her odds like an actuary, and the novel never corrects her arithmetic. Set against the first sentence of the book, this is the same proposition with the irony taken out, spoken by the person whom the marriage market has priced most accurately.",
+      "themes": [
+        "marriage-and-money",
+        "female-security"
+      ],
+      "techniques": [
+        "dialogue",
+        "epigram"
+      ],
+      "characters": [
+        "charlotte-lucas",
+        "mr-collins"
+      ],
+      "source": "Standard Ebooks text, Chapter 22",
+      "cloze": [
+        "romantic",
+        "comfortable"
+      ]
+    },
+    {
+      "id": "in-vain-have-i-struggled",
+      "text": "In vain have I struggled. It will not do. My feelings will not be repressed. You must allow me to tell you how ardently I admire and love you.",
+      "speaker": "Mr Darcy",
+      "reference": "Chapter 34",
+      "stage": "chapters-24-34",
+      "context": "The first proposal, at the Hunsford parsonage, while Elizabeth is re-reading Jane's letters.",
+      "analysis": "Four short sentences, three of them about his own resistance, and the declaration arrives only in the fourth. 'Struggled' and 'repressed' treat his feeling as an enemy position, so that by the time he reaches 'admire and love' he has already told her what the offer costs him.",
+      "themes": [
+        "class",
+        "judgement"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "darcy",
+        "elizabeth-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 34",
+      "cloze": [
+        "struggled",
+        "repressed"
+      ]
+    },
+    {
+      "id": "last-man-in-the-world",
+      "text": "I had not known you a month before I felt that you were the last man in the world whom I could ever be prevailed on to marry.",
+      "speaker": "Elizabeth Bennet",
+      "reference": "Chapter 34",
+      "stage": "chapters-24-34",
+      "context": "Refusing Darcy, after he has asked why he is rejected with so little civility.",
+      "analysis": "The superlative is a hostage to fortune and Austen collects on it twenty-six chapters later. Note the precision of 'a month': she dates her verdict exactly, which is what makes it possible for the novel to show her the evidence she had not yet seen.",
+      "themes": [
+        "judgement"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "elizabeth-bennet",
+        "darcy"
+      ],
+      "source": "Standard Ebooks text, Chapter 34",
+      "cloze": [
+        "month",
+        "marry"
+      ]
+    },
+    {
+      "id": "be-not-alarmed",
+      "text": "Be not alarmed, Madam, on receiving this letter, by the apprehension of its containing any repetition of those sentiments, or renewal of those offers, which were last night so disgusting to you.",
+      "speaker": "Mr Darcy",
+      "reference": "Chapter 35",
+      "stage": "chapters-35-42",
+      "context": "The opening of the letter handed to Elizabeth in the park at Rosings.",
+      "analysis": "He hands over the one form of speech she cannot interrupt, and opens by disclaiming any renewal of the offer, which is how he makes the document readable. From here the novel's evidence arrives in writing, and its turning point involves no event at all — only a second reading.",
+      "themes": [
+        "judgement",
+        "self-knowledge"
+      ],
+      "techniques": [
+        "letters"
+      ],
+      "characters": [
+        "darcy",
+        "elizabeth-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 35",
+      "cloze": [
+        "alarmed",
+        "repetition"
+      ]
+    },
+    {
+      "id": "never-knew-myself",
+      "text": "But vanity, not love, has been my folly. Pleased with the preference of one, and offended by the neglect of the other, on the very beginning of our acquaintance, I have courted prepossession and ignorance, and driven reason away, where either were concerned. Till this moment, I never knew myself.",
+      "speaker": "Elizabeth Bennet",
+      "reference": "Chapter 36",
+      "stage": "chapters-35-42",
+      "context": "Alone, having read Darcy's letter twice and reconstructed everything Wickham told her.",
+      "analysis": "She does not accuse herself of loving the wrong man but of a fault in method: she was pleased by one and slighted by the other, and let that do her thinking. 'Vanity, not love, has been my folly' applies Mary's distinction from Chapter 5 to herself, thirty chapters after it was laughed at.",
+      "themes": [
+        "self-knowledge",
+        "judgement"
+      ],
+      "techniques": [
+        "free-indirect-style"
+      ],
+      "characters": [
+        "elizabeth-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 36",
+      "cloze": [
+        "vanity",
+        "folly"
+      ]
+    },
+    {
+      "id": "best-landlord",
+      "text": "I have never had a cross word from him in my life, and I have known him ever since he was four years old.",
+      "speaker": "Mrs Reynolds",
+      "reference": "Chapter 43",
+      "stage": "chapters-43-50",
+      "context": "The Pemberley housekeeper showing the house to Elizabeth and the Gardiners.",
+      "analysis": "The testimony that changes Elizabeth's mind comes from a servant with twenty years of observation and no reason to flatter a stranger. Austen makes the evidence economic rather than romantic: landlord and master are job titles, and Darcy is being assessed on how he treats people who cannot answer back.",
+      "themes": [
+        "class",
+        "judgement"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "darcy",
+        "elizabeth-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 43",
+      "cloze": [
+        "cross",
+        "known"
+      ]
+    },
+    {
+      "id": "amiable-light",
+      "text": "In what an amiable light does this place him!",
+      "speaker": "Elizabeth Bennet",
+      "reference": "Chapter 43",
+      "stage": "chapters-43-50",
+      "context": "Standing in the Pemberley gallery, hearing the housekeeper describe Darcy's care of his sister.",
+      "analysis": "'This place' is doing double duty: the phrase means this circumstance, and she is standing in the house itself. The estate is functioning as evidence — grounds, portraits, accounts of conduct over years — where conversation had produced only impressions.",
+      "themes": [
+        "judgement",
+        "class"
+      ],
+      "techniques": [
+        "free-indirect-style"
+      ],
+      "characters": [
+        "elizabeth-bennet",
+        "darcy"
+      ],
+      "source": "Standard Ebooks text, Chapter 43",
+      "cloze": [
+        "amiable",
+        "place"
+      ]
+    },
+    {
+      "id": "loss-of-virtue",
+      "text": "Unhappy as the event must be for Lydia, we may draw from it this useful lesson; that loss of virtue in a female is irretrievable⁠—that one false step involves her in endless ruin⁠—that her reputation is no less brittle than it is beautiful⁠—and that she cannot be too much guarded in her behaviour towards the undeserving of the other sex.",
+      "speaker": "Mary Bennet",
+      "reference": "Chapter 47",
+      "stage": "chapters-43-50",
+      "context": "To Elizabeth, while the family waits for news of Lydia.",
+      "analysis": "The consolation is monstrous and the description is correct, which is the difficulty the novel will not dissolve. 'Brittle' and 'beautiful' are yoked by alliteration into a single property that a woman owns and can break, and nothing in the plot disproves the account — only Darcy's money limits the damage.",
+      "themes": [
+        "reputation",
+        "female-security"
+      ],
+      "techniques": [
+        "epigram"
+      ],
+      "characters": [
+        "lydia-bennet",
+        "elizabeth-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 47",
+      "cloze": [
+        "irretrievable",
+        "brittle"
+      ]
+    },
+    {
+      "id": "shades-of-pemberley",
+      "text": "Are the shades of Pemberley to be thus polluted?",
+      "speaker": "Lady Catherine de Bourgh",
+      "reference": "Chapter 56",
+      "stage": "chapters-51-61",
+      "context": "In the Longbourn shrubbery, demanding that Elizabeth promise never to accept Darcy.",
+      "analysis": "The objection has left the realm of income and become almost sacramental: a house has shades, and a marriage would defile them. It is the class argument in its purest and least answerable form, and the novel answers it by having the interview itself convince Darcy to propose again.",
+      "themes": [
+        "class",
+        "reputation"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "lady-catherine",
+        "elizabeth-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 56",
+      "cloze": [
+        "shades",
+        "polluted"
+      ]
+    },
+    {
+      "id": "resolved-to-act",
+      "text": "I am only resolved to act in that manner which will, in my own opinion, constitute my happiness, without reference to you, or to any person so wholly unconnected with me.",
+      "speaker": "Elizabeth Bennet",
+      "reference": "Chapter 56",
+      "stage": "chapters-51-61",
+      "context": "Refusing Lady Catherine the promise she has come for.",
+      "analysis": "She claims the right to define her own happiness and denies her interrogator any standing at all, and she does it in the flattest, least witty sentence she speaks in the book. The wit is dropped because this is not a duel; it is a jurisdictional claim.",
+      "themes": [
+        "class",
+        "self-knowledge"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "elizabeth-bennet",
+        "lady-catherine"
+      ],
+      "source": "Standard Ebooks text, Chapter 56",
+      "cloze": [
+        "resolved",
+        "happiness"
+      ]
+    },
+    {
+      "id": "make-sport",
+      "text": "For what do we live but to make sport for our neighbours, and laugh at them in our turn?",
+      "speaker": "Mr Bennet",
+      "reference": "Chapter 57",
+      "stage": "chapters-51-61",
+      "context": "Reading Mr Collins's letter aloud to Elizabeth, who cannot enjoy it.",
+      "analysis": "It is the closest thing he has to a philosophy, and the novel has just finished showing what it costs: the daughter he did not watch has been retrieved with somebody else's money. The rhetorical question assumes an answer that the last hundred pages have withdrawn.",
+      "themes": [
+        "reputation",
+        "judgement"
+      ],
+      "techniques": [
+        "epigram",
+        "irony"
+      ],
+      "characters": [
+        "mr-bennet",
+        "elizabeth-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 57",
+      "cloze": [
+        "sport",
+        "neighbours"
+      ]
+    },
+    {
+      "id": "selfish-being",
+      "text": "I have been a selfish being all my life, in practice, though not in principle. As a child I was taught what was right, but I was not taught to correct my temper.",
+      "speaker": "Mr Darcy",
+      "reference": "Chapter 58",
+      "stage": "chapters-51-61",
+      "context": "Walking with Elizabeth after the second proposal has been accepted.",
+      "analysis": "The distinction between practice and principle is the same one Elizabeth reached in Chapter 36, and Austen gives the two confessions a matching shape so that the marriage is founded on a shared diagnosis. He blames an upbringing and does not use it as an excuse, which is the difference between him and Wickham.",
+      "themes": [
+        "self-knowledge",
+        "class"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "darcy",
+        "elizabeth-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 58",
+      "cloze": [
+        "selfish",
+        "principle"
+      ]
+    },
+    {
+      "id": "happiest-creature",
+      "text": "I am the happiest creature in the world. Perhaps other people have said so before, but not one with such justice. I am happier even than Jane; she only smiles, I laugh.",
+      "speaker": "Elizabeth Bennet",
+      "reference": "Chapter 60",
+      "stage": "chapters-51-61",
+      "context": "Writing to Mrs Gardiner, who had been at Pemberley with her.",
+      "analysis": "She claims a superlative and then immediately audits it, which is exactly how she has argued all book. The comparison with Jane is not vanity but accuracy about temperament: the sister who thinks well of everyone smiles, and the one who has had to revise her judgements laughs.",
+      "themes": [
+        "self-knowledge",
+        "marriage-and-money"
+      ],
+      "techniques": [
+        "letters",
+        "free-indirect-style"
+      ],
+      "characters": [
+        "elizabeth-bennet",
+        "jane-bennet"
+      ],
+      "source": "Standard Ebooks text, Chapter 60",
+      "cloze": [
+        "happiest",
+        "justice"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1775,
+      "label": "Jane Austen born at Steventon",
+      "detail": "The seventh child of a Hampshire rector, in a household that read aloud and wrote for each other.",
+      "kind": "author"
+    },
+    {
+      "year": 1796,
+      "label": "First Impressions drafted",
+      "detail": "Written in 1796–97, in Austen's early twenties. No manuscript of this version survives.",
+      "kind": "work"
+    },
+    {
+      "year": 1797,
+      "label": "The manuscript is offered to Thomas Cadell",
+      "detail": "Austen's father wrote to the London publisher, who declined without asking to see it. The novel waited more than a decade.",
+      "kind": "work"
+    },
+    {
+      "year": 1811,
+      "label": "Sense and Sensibility published",
+      "detail": "Austen's first published novel, issued anonymously, made a second Austen title commercially plausible.",
+      "kind": "author"
+    },
+    {
+      "year": 1813,
+      "label": "Pride and Prejudice published",
+      "detail": "Thomas Egerton issued it in three volumes on 28 January, credited to the author of Sense and Sensibility. A second edition followed the same year.",
+      "kind": "work"
+    },
+    {
+      "year": 1814,
+      "label": "Mansfield Park published",
+      "detail": "The first of Austen's novels written entirely after she had become a published author.",
+      "kind": "author"
+    },
+    {
+      "year": 1815,
+      "label": "Emma published",
+      "detail": "Issued by John Murray with an 1816 date on the title page.",
+      "kind": "author"
+    },
+    {
+      "year": 1817,
+      "label": "Austen dies at Winchester",
+      "detail": "She was forty-one. Her name had still not appeared on a title page.",
+      "kind": "author"
+    },
+    {
+      "year": 1818,
+      "label": "Northanger Abbey and Persuasion published together",
+      "detail": "Issued posthumously, with a biographical notice by her brother Henry that named her at last.",
+      "kind": "reception"
+    },
+    {
+      "year": 1833,
+      "label": "Richard Bentley reprints the novels",
+      "detail": "Austen enters the cheap standard-novel market, and stays in print from this point on.",
+      "kind": "reception"
+    },
+    {
+      "year": 1894,
+      "label": "The Peacock edition",
+      "detail": "George Allen publishes Hugh Thomson's illustrated edition, whose gilt peacock binding became the novel's most recognisable object.",
+      "kind": "reception"
+    },
+    {
+      "year": 1940,
+      "label": "MGM's Pride and Prejudice",
+      "detail": "Directed by Robert Z. Leonard, with Greer Garson and Laurence Olivier, and costumed with cheerful disregard for the Regency.",
+      "kind": "reception"
+    },
+    {
+      "year": 1995,
+      "label": "BBC serial adapted by Andrew Davies",
+      "detail": "Jennifer Ehle and Colin Firth in six episodes; the version against which most later screen Darcys are measured.",
+      "kind": "reception"
+    },
+    {
+      "year": 2005,
+      "label": "Joe Wright's film",
+      "detail": "Keira Knightley and Matthew Macfadyen, in a version that puts mud, livestock and noise back into Longbourn.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Hertfordshire",
+      "lat": 51.8098,
+      "lon": -0.2377,
+      "note": "Longbourn, Meryton and Netherfield: a neighbourhood of twenty-four families, small enough that one new tenant changes everything."
+    },
+    {
+      "name": "Gracechurch Street, London",
+      "lat": 51.5133,
+      "lon": -0.0855,
+      "note": "The Gardiners' house, within sight of their own warehouses — the address that Caroline Bingley finds fatal and the novel finds respectable."
+    },
+    {
+      "name": "Kent",
+      "lat": 51.268,
+      "lon": 0.074,
+      "note": "Hunsford parsonage and Rosings Park, where Charlotte's bargain and Darcy's first proposal are both inspected at close range."
+    },
+    {
+      "name": "Derbyshire",
+      "lat": 53.2148,
+      "lon": -1.6753,
+      "note": "Pemberley and the village of Lambton, reached on a tour that Elizabeth undertakes only because the Lakes proved too far."
+    },
+    {
+      "name": "Brighton",
+      "lat": 50.8225,
+      "lon": -0.1372,
+      "note": "The militia's summer quarters, and the town Lydia is allowed to visit because refusing would have caused a scene."
+    },
+    {
+      "name": "Newcastle upon Tyne",
+      "lat": 54.9783,
+      "lon": -1.6178,
+      "note": "Where Wickham's new regiment is quartered after the marriage: far north, and paid for by Darcy."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "A comedy of moral education",
+      "summary": "The oldest reading takes the novel at the word of its discarded title: two people form wrong first impressions, gather better evidence, and are rewarded with each other. On this account the book's subject is the discipline of judgement.",
+      "counter": "It has to explain away how much of the reward is material, and why the plot is settled by Darcy's chequebook rather than by anybody's improved understanding."
+    },
+    {
+      "position": "An economic novel about women without money",
+      "summary": "Criticism attentive to the entail reads the courtships as a survey of what is available to genteel women with no income: Charlotte's bargain, Lydia's disaster and Elizabeth's luck are three outcomes of one predicament.",
+      "counter": "Pressed hard it can make Elizabeth's refusals look like bad economics rather than integrity, and it struggles with how funny the book is."
+    },
+    {
+      "position": "A study in narrative point of view",
+      "summary": "Formalist and stylistic criticism has focused on Austen's free indirect style, arguing that the novel's real achievement is the reader's induced error: we misjudge Darcy because we are reading through Elizabeth without being told so.",
+      "counter": "The technique is not applied evenly — several chapters step away from Elizabeth entirely — so the effect may owe as much to withheld information as to style."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "How does Austen present the relationship between marriage and money?",
+      "focus": "Entail, income and the price of refusal",
+      "plan": [
+        "Start with the entail as a legal fact, not a theme: Longbourn passes to Collins, and five daughters must therefore marry or be dependent.",
+        "Read the first sentence as a joke whose real subject is the mothers, then set Charlotte's speech in Chapter 22 beside it as the same proposition without irony.",
+        "Compare the three completed bargains — Charlotte's comfort, Lydia's rescue, Elizabeth's Pemberley — and note what each one cost and who paid.",
+        "Test the romantic reading against Chapter 47: Lydia's ruin is averted by money, and the novel says so plainly.",
+        "Conclude on whether the ending endorses the system it has mocked, or simply gives one heroine an exemption from it."
+      ]
+    },
+    {
+      "question": "'The novel is about learning to read people.' Discuss.",
+      "focus": "Judgement, evidence and revision",
+      "plan": [
+        "Establish the pattern of instant verdicts: the assembly in Chapter 3, Wickham's history in Chapter 16, Mrs Bennet on Bingley's income.",
+        "Show how Austen implicates the reader through free indirect style, so that Elizabeth's misreadings arrive as narrative fact.",
+        "Make Chapter 35 the hinge: the evidence is written, it can be re-read, and nothing happens except a change of mind.",
+        "Use Pemberley in Chapter 43 to argue that the novel trusts long testimony and property over conversation and charm.",
+        "Weigh the counter-case: Jane reads everybody generously and is wrong about nobody's character, only about their conduct."
+      ]
+    },
+    {
+      "question": "Examine Austen's presentation of Mr Bennet.",
+      "focus": "Wit, detachment and paternal failure",
+      "plan": [
+        "Open with the twenty-year joke about his wife's nerves: the marriage as a settled comic arrangement.",
+        "Show the wit turned on his own children in Chapter 18, and on Elizabeth's proposal crisis in Chapter 20, where it happens to help.",
+        "Trace the cost: Lydia goes to Brighton because refusing would have been tiresome, and the library is his habitual answer to every demand.",
+        "Read his line about making sport for our neighbours in Chapter 57 against the crisis that has just been paid for by Darcy.",
+        "Decide whether the novel forgives him, and what his brief self-reproach after Lydia's flight is worth."
+      ]
+    },
+    {
+      "question": "How far does Pride and Prejudice challenge the class system it describes?",
+      "focus": "Rank, connection and the Gardiners",
+      "plan": [
+        "Separate money from rank: the Bennets are gentry without capital, the Gardiners have capital without rank, and Darcy has both.",
+        "Track the objection as it hardens: Caroline Bingley's sneers, Darcy's first proposal, Lady Catherine's shades of Pemberley.",
+        "Use the Gardiners as the novel's counter-argument — the tradesman's family are the most sensible adults in the book and the ones Darcy treats best.",
+        "Note the limits: no character crosses a class line without a fortune arriving to make it respectable, and Wickham's rise is punished.",
+        "Conclude on the ending's arithmetic, where affection is settled alongside incomes in the same sentences."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Charlotte Lucas asks only for a comfortable home. Does the novel think she is wrong?",
+    "Elizabeth changes her mind about Darcy after seeing his house. Is that a shallow reason or a sound one?",
+    "Mr Bennet is the funniest character in the book and arguably the most culpable. Can both be true at once?",
+    "Lydia's elopement is settled with money and never with an apology. What does the novel want us to feel about that?",
+    "The book was first called First Impressions. Which title describes it better, and what does the change cost?"
+  ],
+  "related": [
+    {
+      "href": "/books/sense-and-sensibility/",
+      "why": "Austen's first published novel, and the same marriage market seen from the side of women who have already lost their income."
+    },
+    {
+      "href": "/books/jane-eyre/",
+      "why": "Another governess-adjacent heroine who refuses a proposal on principle, written thirty years later and with the comedy removed."
+    },
+    {
+      "href": "/books/great-expectations/",
+      "why": "A hero who has to discover that his own judgement was bought for him, and that the money came from a source he despised."
+    },
+    {
+      "href": "/books/the-importance-of-being-earnest/",
+      "why": "The marriage market as farce, with the interrogation about income and connections played at full volume."
+    },
+    {
+      "href": "/books/wuthering-heights/",
+      "why": "The opposite settlement of the same questions about property, rank and who may marry whom."
+    }
+  ],
+  "videos": []
+}
