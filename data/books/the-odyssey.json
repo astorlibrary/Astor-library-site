@@ -1,0 +1,984 @@
+{
+  "slug": "the-odyssey",
+  "title": "The Odyssey",
+  "author": "Homer",
+  "href": "/books/the-odyssey/",
+  "buyUrl": "https://mybook.to/uAMn",
+  "form": "poem",
+  "genre": "Epic",
+  "period": "Ancient & Epic",
+  "written": "Composed in Greek, probably in the late eighth or early seventh century BCE; Samuel Butler's English prose translation appeared in 1900",
+  "firstPublished": 1488,
+  "setting": "Ithaca, Pylos, Sparta, and the seas and islands between Troy and home, in the tenth year after the fall of Troy",
+  "readingTime": 600,
+  "difficulty": 3,
+  "lengthNote": "A poem of about 12,000 lines of Greek hexameter verse in twenty-four books. Butler translates it into continuous English prose, so it reads like a novel, but it is recorded here as a poem because that is what Homer made.",
+  "openingLine": "Tell me, O Muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy.",
+  "summary": "A war poem has a sequel about getting home, and it turns out that getting home is the harder job. Odysseus has been gone twenty years; his son has grown up without him, his wife is holding off a hundred and eight suitors with a piece of weaving, and he himself is sitting on a beach crying. The poem spends half its length on the voyage everyone remembers and the other half in one house on one island, where a man dressed as a beggar has to find out who is still loyal to him before anybody finds out who he is. Its hero wins by lying, and the poem admires him for it; its last great test is set not by a monster but by his wife.",
+  "referenceStyle": "book — Butler's prose translation carries no line numbers, so quotations are placed by book alone (Book 1 to Book 24)",
+  "sourceText": {
+    "label": "Samuel Butler's prose translation of the Odyssey (1900), Project Gutenberg eBook 1727",
+    "url": "https://www.gutenberg.org/cache/epub/1727/pg1727.txt",
+    "note": "Quotations are given exactly as Butler first printed them, and Butler used the Roman names then usual in English: Ulysses for Odysseus, Minerva for Athene, Jove for Zeus, Neptune for Poseidon, Mercury for Hermes, Proserpine for Persephone. The Astor edition prints the same translation with the familiar Greek names restored, so a quotation here that says Ulysses will say Odysseus there. Outside quotations, the commentary uses the Greek names."
+  },
+  "atAGlance": [
+    {
+      "label": "Composed",
+      "value": "c. 725–675 BCE",
+      "note": "A scholarly estimate, not a record. The poem comes out of a long tradition of oral performance and nobody knows when, or whether, a single poet fixed it."
+    },
+    {
+      "label": "This translation",
+      "value": "1900",
+      "note": "Samuel Butler, novelist and author of Erewhon, put the poem into plain Victorian prose for readers without Greek."
+    },
+    {
+      "label": "Length",
+      "value": "24 books",
+      "note": "The division into twenty-four books is ancient but later than the poem, and is usually credited to the scholars of Alexandria."
+    },
+    {
+      "label": "Time covered",
+      "value": "About forty days",
+      "note": "The ten years of wandering are told in flashback over a single evening. The action of the poem itself takes about six weeks."
+    }
+  ],
+  "structure": [
+    {
+      "id": "books-1-4",
+      "label": "Books 1–4",
+      "title": "The son goes looking",
+      "summary": "The hero of the poem does not appear for four books. Instead we get the hole he has left: a house being eaten by his wife's suitors, and a son of twenty who has never had to act. Athene sends Telemachus abroad to ask after his father, and what he brings back is less news than an education in how a great house ought to be run.",
+      "scenes": [
+        { "ref": "Book 1", "title": "The council of the gods", "summary": "Zeus complains that mortals blame the gods for their own folly; Athene, disguised as Mentes, stirs Telemachus to act." },
+        { "ref": "Book 2", "title": "The assembly in Ithaca", "summary": "Telemachus denounces the suitors in public, Antinous tells the story of Penelope's web, and the boy sails by night." },
+        { "ref": "Book 3", "title": "Nestor at Pylos", "summary": "Nestor receives the strangers with sacrifice and talk, and tells how the Greek fleet broke up after Troy." },
+        { "ref": "Book 4", "title": "Menelaus and Helen at Sparta", "summary": "Husband and wife tell rival stories about Odysseus at Troy; in Ithaca the suitors plan to murder Telemachus on his way home." }
+      ]
+    },
+    {
+      "id": "books-5-8",
+      "label": "Books 5–8",
+      "title": "From Calypso's island to the Phaeacian court",
+      "summary": "Odysseus enters his own poem weeping on a beach, refuses immortality, builds a raft, is wrecked by Poseidon and crawls ashore naked among strangers. The Phaeacians test the rules of hospitality from the host's side, and their blind bard sings the Trojan war back to a guest who turns out to have been in it.",
+      "scenes": [
+        { "ref": "Book 5", "title": "The raft", "summary": "Hermes orders Calypso to release Odysseus; he turns down eternal life, sails for seventeen days and is wrecked within sight of land." },
+        { "ref": "Book 6", "title": "Nausicaa", "summary": "A princess doing the laundry meets a naked castaway, who talks his way to safety with a speech about marriage." },
+        { "ref": "Book 7", "title": "The palace of Alcinous", "summary": "Odysseus is received as a suppliant and promised a ship home before anybody has asked his name." },
+        { "ref": "Book 8", "title": "Games and songs", "summary": "Demodocus sings of Troy and of Ares and Aphrodite; the guest weeps twice, and Alcinous finally asks who he is." }
+      ]
+    },
+    {
+      "id": "books-9-12",
+      "label": "Books 9–12",
+      "title": "The wanderings, told by the wanderer",
+      "summary": "Everything most readers think of as the Odyssey — Cyclops, Circe, the dead, the Sirens, Scylla — is here, and all of it is narrated by Odysseus himself after dinner to hosts who are about to give him presents. He leaves Troy with twelve ships and ends the story alone, and the poem leaves the reader to decide how much of the account to take on trust.",
+      "scenes": [
+        { "ref": "Book 9", "title": "Lotus-eaters and Cyclops", "summary": "Odysseus blinds Polyphemus under the name Noman, then shouts his real name from the ship and earns Poseidon's curse." },
+        { "ref": "Book 10", "title": "Aeolus, the Laestrygonians, Circe", "summary": "The bag of winds is opened in sight of home; eleven ships are destroyed; Circe turns men to pigs and then keeps them a year." },
+        { "ref": "Book 11", "title": "The land of the dead", "summary": "Tiresias prophesies the way home and the journey after it; Odysseus meets his mother, Agamemnon and Achilles." },
+        { "ref": "Book 12", "title": "Sirens, Scylla and the cattle of the Sun", "summary": "Odysseus hears the Sirens tied to the mast, loses six men to Scylla, and loses everyone else when the crew eat the Sun's cattle." }
+      ]
+    },
+    {
+      "id": "books-13-16",
+      "label": "Books 13–16",
+      "title": "Ithaca, unrecognised",
+      "summary": "The Phaeacians put Odysseus ashore asleep, and he wakes not knowing where he is. From here the poem slows right down. Athene turns him into an old beggar, he shelters with the swineherd Eumaeus, and father and son meet in a hut, where the first thing they do after weeping is count the enemy.",
+      "scenes": [
+        { "ref": "Book 13", "title": "The landing", "summary": "Odysseus lies to a shepherd boy who is really Athene; she is delighted, and the two of them plan the suitors' deaths." },
+        { "ref": "Book 14", "title": "The swineherd's hut", "summary": "Eumaeus feeds a beggar he takes for a stranger and refuses to believe the beggar's news that his master is coming home." },
+        { "ref": "Book 15", "title": "Telemachus returns", "summary": "Telemachus leaves Sparta, slips past the ambush, and Eumaeus tells the story of how he was sold as a child." },
+        { "ref": "Book 16", "title": "Father and son", "summary": "Athene restores Odysseus's looks for a moment; Telemachus takes him for a god, then believes him, and they plot." }
+      ]
+    },
+    {
+      "id": "books-17-20",
+      "label": "Books 17–20",
+      "title": "The beggar in the hall",
+      "summary": "Odysseus goes into his own house in rags and is kicked, pelted and laughed at in it. These books are a long audit of loyalty: the dog knows him and dies, the nurse knows him and is silenced, the goatherd and the maids insult him, and Penelope questions him by firelight without, apparently, knowing who he is.",
+      "scenes": [
+        { "ref": "Book 17", "title": "Argos", "summary": "The old hound recognises his master from the dung heap; inside, Antinous throws a footstool at the beggar." },
+        { "ref": "Book 18", "title": "The fight with Irus", "summary": "Odysseus boxes the resident beggar for the suitors' amusement and warns the one decent suitor, Amphinomus, to leave." },
+        { "ref": "Book 19", "title": "The interview and the scar", "summary": "Penelope and the beggar talk alone; Eurycleia washes his feet and knows the scar; Penelope announces the contest of the bow." },
+        { "ref": "Book 20", "title": "The last feast", "summary": "A sleepless night, thunder from a clear sky, and the prophet Theoclymenus sees the hall running with blood while the suitors laugh." }
+      ]
+    },
+    {
+      "id": "books-21-24",
+      "label": "Books 21–24",
+      "title": "The bow, the bed and the truce",
+      "summary": "The beggar strings the bow nobody else can bend, and the hall becomes a battlefield with the doors locked. The killing is followed by a second test, which Odysseus does not set but sits: Penelope's trick about the bed. The final book goes down to the dead and out to Laertes' farm, and stops a civil war by divine order.",
+      "scenes": [
+        { "ref": "Book 21", "title": "The contest", "summary": "The suitors fail to string the bow; Odysseus strings it like a lyre and shoots through the twelve axes." },
+        { "ref": "Book 22", "title": "The slaughter", "summary": "Antinous dies first with a cup at his lips; all the suitors are killed, and twelve maidservants are hanged." },
+        { "ref": "Book 23", "title": "The bed", "summary": "Penelope will not accept him until he proves he knows how their bed was built; then the night is lengthened for them." },
+        { "ref": "Book 24", "title": "The dead, Laertes, and peace", "summary": "The suitors' ghosts reach Hades, Odysseus tests his father in the orchard, and Athene halts the suitors' kin." }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "odysseus",
+      "name": "Odysseus (Butler's Ulysses)",
+      "role": "King of Ithaca, ten years at Troy and ten more getting back",
+      "summary": "The Iliad's heroes are strong; this one is clever, and the poem treats cleverness as a kind of endurance. He can build a raft, a bed and a lie with equal care, and he tells five separate false life-stories once he is home. He is also the only survivor of his expedition, a fact he narrates himself and for which he never quite takes the blame.",
+      "clue": "He gives a giant a false name and gets away with it, then cannot resist shouting the real one, and pays ten years for the pleasure.",
+      "firstAppearance": "Book 5",
+      "traits": ["inventive", "patient", "untrusting"],
+      "relationships": [
+        { "to": "penelope", "label": "husband of, and tested by", "kind": "marriage", "stages": ["books-17-20", "books-21-24"] },
+        { "to": "telemachus", "label": "father of", "kind": "family", "stages": ["books-13-16", "books-21-24"] },
+        { "to": "athene", "label": "protected by", "kind": "ally", "stages": ["books-5-8", "books-13-16", "books-21-24"] },
+        { "to": "poseidon", "label": "persecuted by", "kind": "enemy", "stages": ["books-5-8", "books-9-12"] },
+        { "to": "polyphemus", "label": "blinds and taunts", "kind": "enemy", "stages": ["books-9-12"] },
+        { "to": "calypso", "label": "held for seven years by", "kind": "love", "stages": ["books-5-8"] },
+        { "to": "antinous", "label": "kills first", "kind": "enemy", "stages": ["books-17-20", "books-21-24"] }
+      ]
+    },
+    {
+      "id": "penelope",
+      "name": "Penelope",
+      "role": "Wife of Odysseus, besieged in her own house",
+      "summary": "She has no army, no husband and a son too young to help, and she holds a hundred-odd men off for three years with a loom. The poem never quite says when she recognises the beggar, and her decision to set the bow contest on the very day he arrives can be read as despair, luck or collusion. She is the only person in the poem who out-tricks Odysseus.",
+      "clue": "She weaves by day, unpicks by night, and at the end orders a bed moved that she knows cannot be moved.",
+      "firstAppearance": "Book 1",
+      "traits": ["guarded", "resourceful", "hard to read"],
+      "relationships": [
+        { "to": "odysseus", "label": "wife of, and tester of", "kind": "marriage", "stages": ["books-17-20", "books-21-24"] },
+        { "to": "telemachus", "label": "mother of, and overruled by", "kind": "family", "stages": ["books-1-4", "books-21-24"] },
+        { "to": "antinous", "label": "courted and deceived", "kind": "enemy", "stages": ["books-1-4", "books-17-20"] },
+        { "to": "eurycleia", "label": "served by", "kind": "service" }
+      ]
+    },
+    {
+      "id": "telemachus",
+      "name": "Telemachus",
+      "role": "Son of Odysseus, a baby when his father sailed",
+      "summary": "The first four books are his, and they show a young man who has been told all his life whose son he is and has no way to check. His journey finds out very little about Odysseus and a good deal about himself. By Book 21 he is giving orders to his mother and could, the poem hints, have strung the bow himself.",
+      "clue": "He tells his mother that talking is men's business in Book 1, and that the bow is men's business in Book 21, in almost the same words.",
+      "firstAppearance": "Book 1",
+      "traits": ["untested", "quick to learn", "his father's son"],
+      "relationships": [
+        { "to": "odysseus", "label": "son of", "kind": "family", "stages": ["books-13-16", "books-21-24"] },
+        { "to": "penelope", "label": "son of", "kind": "family" },
+        { "to": "athene", "label": "guided by", "kind": "mentor", "stages": ["books-1-4", "books-13-16"] },
+        { "to": "antinous", "label": "marked for murder by", "kind": "enemy", "stages": ["books-1-4", "books-13-16"] },
+        { "to": "eumaeus", "label": "treated as a son by", "kind": "friendship", "stages": ["books-13-16"] }
+      ]
+    },
+    {
+      "id": "athene",
+      "name": "Athene (Butler's Minerva)",
+      "role": "Goddess of craft and war, daughter of Zeus",
+      "summary": "She opens the plot by lobbying her father while Poseidon is out of the room, and she stays in it to the last line. She appears as Mentes, as Mentor, as a little girl with a pitcher and as a shepherd boy, and she likes Odysseus for the quality a moralist would disapprove of: he lies as well as she does.",
+      "clue": "Caught being lied to by her favourite mortal, she smiles, strokes his hand and compliments his technique.",
+      "firstAppearance": "Book 1",
+      "traits": ["partisan", "disguised", "amused"],
+      "relationships": [
+        { "to": "odysseus", "label": "patron of", "kind": "ally" },
+        { "to": "telemachus", "label": "coaches, as Mentes and Mentor", "kind": "mentor", "stages": ["books-1-4"] },
+        { "to": "poseidon", "label": "works round her uncle", "kind": "rival", "stages": ["books-1-4", "books-13-16"] }
+      ]
+    },
+    {
+      "id": "poseidon",
+      "name": "Poseidon (Butler's Neptune)",
+      "role": "God of the sea, father of the Cyclops",
+      "summary": "His anger is the reason a voyage of a few weeks takes ten years, and it has a specific cause: Odysseus blinded his son and then supplied a name for the curse. He cannot kill Odysseus, because fate has settled that the man gets home, so he settles for making it slow, solitary and expensive, and takes out the remainder on the Phaeacians.",
+      "clue": "He is away at a feast among the Ethiopians when the poem begins, which is the only reason anything can start.",
+      "firstAppearance": "Book 5",
+      "traits": ["grudge-bearing", "absent", "thorough"],
+      "relationships": [
+        { "to": "odysseus", "label": "persecutes", "kind": "enemy", "stages": ["books-5-8", "books-9-12"] },
+        { "to": "polyphemus", "label": "father of", "kind": "family", "stages": ["books-9-12"] }
+      ]
+    },
+    {
+      "id": "polyphemus",
+      "name": "Polyphemus",
+      "role": "A Cyclops, shepherd and cannibal",
+      "summary": "He is the poem's clearest picture of a host who breaks every rule: he asks his guests' business before feeding them, eats them, and offers as his guest-gift the favour of being eaten last. Yet he is tender with his ram, and Odysseus was in his cave uninvited, helping himself to cheese. The episode is less one-sided than its teller makes it sound.",
+      "clue": "His neighbours ask who is hurting him, and he gives them an answer that sends them back to bed.",
+      "firstAppearance": "Book 9",
+      "traits": ["lawless", "solitary", "literal-minded"],
+      "relationships": [
+        { "to": "odysseus", "label": "blinded by", "kind": "enemy", "stages": ["books-9-12"] },
+        { "to": "poseidon", "label": "son of", "kind": "family", "stages": ["books-9-12"] }
+      ]
+    },
+    {
+      "id": "calypso",
+      "name": "Calypso",
+      "role": "A nymph, daughter of Atlas, on the island of Ogygia",
+      "summary": "Her name comes from the Greek for hiding, and she has hidden Odysseus from the world for seven years. She offers the one thing no Homeric hero is otherwise offered — never to die — and he declines it for a woman he concedes is less beautiful. Told to release him, she protests that gods are allowed mortal lovers and goddesses are not.",
+      "clue": "She offers a man immortality and ends up lending him an axe.",
+      "firstAppearance": "Book 5",
+      "traits": ["possessive", "generous", "aggrieved"],
+      "relationships": [
+        { "to": "odysseus", "label": "keeps, and lets go", "kind": "love", "stages": ["books-5-8"] }
+      ]
+    },
+    {
+      "id": "circe",
+      "name": "Circe",
+      "role": "A goddess and enchantress on the island of Aeaea",
+      "summary": "She turns half the crew into pigs, fails to turn Odysseus, and then becomes the most useful ally of the whole voyage. It is Circe who sends him to the dead and who briefs him, point by point, on the Sirens, Scylla and the cattle of the Sun. He stays a year, and it is the crew who have to remind him about home.",
+      "clue": "Her guests arrive as men and are penned as pigs, with their minds unchanged.",
+      "firstAppearance": "Book 10",
+      "traits": ["dangerous", "hospitable", "well-informed"],
+      "relationships": [
+        { "to": "odysseus", "label": "enchants, then advises", "kind": "love", "stages": ["books-9-12"] }
+      ]
+    },
+    {
+      "id": "nausicaa",
+      "name": "Nausicaa",
+      "role": "Daughter of Alcinous, king of the Phaeacians",
+      "summary": "She is the only person on the beach who does not run away from the salt-caked stranger, and she manages the encounter better than he could have hoped, down to the instruction to walk behind her wagon so that nobody gossips. The poem lets her think of him as a husband and then quietly sends him home to someone else.",
+      "clue": "She goes to the river to wash her brothers' clothes and comes back with the hero of the Trojan war.",
+      "firstAppearance": "Book 6",
+      "traits": ["composed", "practical", "wistful"],
+      "relationships": [
+        { "to": "odysseus", "label": "rescues", "kind": "friendship", "stages": ["books-5-8"] }
+      ]
+    },
+    {
+      "id": "eumaeus",
+      "name": "Eumaeus",
+      "role": "Swineherd to Odysseus, born a king's son and sold as a child",
+      "summary": "He is the poem's model host, and he is a slave with a hut and a herd of pigs. He gives a beggar the best cut of pork and his own cloak, and refuses to believe the beggar's good news because he has been lied to before. The narrator addresses him directly as 'you', a courtesy the poem extends to nobody else in Ithaca.",
+      "clue": "He has been told so often that his master is coming home that he will not believe it from the master himself.",
+      "firstAppearance": "Book 14",
+      "traits": ["loyal", "sceptical", "generous"],
+      "relationships": [
+        { "to": "odysseus", "label": "serves, unrecognising", "kind": "service", "stages": ["books-13-16", "books-17-20", "books-21-24"] },
+        { "to": "telemachus", "label": "greets like a father", "kind": "friendship", "stages": ["books-13-16"] }
+      ]
+    },
+    {
+      "id": "eurycleia",
+      "name": "Eurycleia",
+      "role": "The old nurse of Odysseus and of Telemachus",
+      "summary": "She knows the house better than anyone in it, and she knows Odysseus by touch: the scar on his leg tells her what twenty years and a goddess's disguise were hiding from everybody else. Her reward is a hand at her throat. After the killing it is she who names the twelve disloyal maids.",
+      "clue": "She drops his foot into the basin, the water spills, and he grips her by the throat before she can speak.",
+      "firstAppearance": "Book 1",
+      "traits": ["observant", "fierce", "trusted"],
+      "relationships": [
+        { "to": "odysseus", "label": "nursed, and recognises", "kind": "service", "stages": ["books-17-20", "books-21-24"] },
+        { "to": "penelope", "label": "serves", "kind": "service" }
+      ]
+    },
+    {
+      "id": "antinous",
+      "name": "Antinous and the suitors",
+      "role": "The ringleader of the hundred and eight men courting Penelope",
+      "summary": "The suitors are guests who will not leave, and their offence is described again and again as eating. Antinous is the worst of them: he proposes Telemachus's murder and throws a stool at a beggar in another man's hall. Yet his account of Penelope's web in Book 2 is half admiring, and the suitors' kin have a grievance the last book takes seriously.",
+      "clue": "He dies with a gold cup raised to his lips, thinking about his wine.",
+      "firstAppearance": "Book 1",
+      "traits": ["arrogant", "greedy", "heedless"],
+      "relationships": [
+        { "to": "penelope", "label": "courts", "kind": "rival", "stages": ["books-1-4", "books-17-20"] },
+        { "to": "telemachus", "label": "plots to kill", "kind": "enemy", "stages": ["books-1-4", "books-13-16"] },
+        { "to": "odysseus", "label": "strikes, and is shot by", "kind": "enemy", "stages": ["books-17-20", "books-21-24"] }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "home",
+      "name": "Homecoming",
+      "summary": "The Greek word is nostos, and the poem measures its hero against other men's returns: Agamemnon got home quickly and was murdered at dinner; Menelaus got home rich and sits beside a wife he cannot quite trust. Arriving is the easy part. Home has to be re-entered carefully, in disguise, and won back room by room.",
+      "development": "A longing on Calypso's beach in Book 5, a coastline glimpsed and lost in Book 10, an unrecognised shore in Book 13, and finally an olive-tree bedpost in Book 23 — after which Tiresias's prophecy quietly says he must leave again."
+    },
+    {
+      "id": "hospitality",
+      "name": "Hosts, guests and strangers",
+      "summary": "Nearly every episode is a test of how a household treats someone who turns up at the door. The rule — feed the stranger first, ask his name afterwards, send him on with a gift — is under the protection of Zeus. Nestor, Menelaus, the Phaeacians and a swineherd keep it; the Cyclops inverts it; the suitors break it from the guest's side by never leaving.",
+      "development": "Shown working in Books 3, 4 and 7, parodied in the Cyclops's cave, kept by the poorest household in Book 14, and enforced in Book 22 with a bow."
+    },
+    {
+      "id": "identity",
+      "name": "Names, fame and recognition",
+      "summary": "Odysseus survives by being nobody and cannot bear it. A hero exists in what is said about him, so the man who calls himself Noman has to shout his name and address from the ship. In Ithaca the process runs the other way: he withholds his name and is recognised piece by piece, by a dog, a scar, a bow and a bed.",
+      "development": "Withheld for a whole book at the Phaeacian court, declared with pride in Book 9, hidden again from Book 13, and then surrendered in stages to son, nurse, servants, wife and father."
+    },
+    {
+      "id": "disguise",
+      "name": "Cunning, lies and disguise",
+      "summary": "The poem's word for its hero is polytropos — of many turns — and it admires the quality without apology. Athene loves him because he lies well; Penelope matches him with the web and the bed. But deceit corrodes as well as protects: by Book 24 he cannot greet his own grieving father without first trying a false story on him.",
+      "development": "A tactic against the Cyclops, a habit by Book 13, a household policy in Books 17 to 21, and something close to a compulsion in the orchard scene of Book 24."
+    },
+    {
+      "id": "loyalty",
+      "name": "Loyalty and the audit of the household",
+      "summary": "Twenty years is long enough for everyone to have made a choice, and the second half of the poem goes through the household finding out what each one chose. Penelope, Eumaeus, Eurycleia, the cowherd Philoetius and the dog pass. Melanthius the goatherd and twelve of the fifty maids do not, and the poem's punishment of them is harsher than modern readers find comfortable.",
+      "development": "Tested quietly in the swineherd's hut, brutally in the hall, intimately at the footbath, and paid out in Book 22."
+    },
+    {
+      "id": "justice",
+      "name": "Justice, revenge and the gods",
+      "summary": "Zeus opens the poem by saying that mortals bring suffering on themselves beyond what is fated, and offers Aegisthus as the example. The crew who eat the Sun's cattle and the suitors who eat Odysseus's are both warned and both destroyed. Whether what happens in the hall is justice or a massacre is a question the final book raises and then closes by decree.",
+      "development": "Stated as a principle in Book 1, illustrated on Thrinacia in Book 12, carried out in Book 22, and challenged by the dead men's families in Book 24."
+    },
+    {
+      "id": "narration",
+      "name": "Storytelling and who gets to tell it",
+      "summary": "This is a poem full of poets. Phemius sings in Ithaca, Demodocus at the Phaeacian court, and Odysseus himself is compared to a bard by his host. The famous adventures reach us only in his words, to an audience he needs to impress, and the same man tells elaborate false autobiographies in Ithaca with exactly the same fluency.",
+      "development": "A bard's song makes Penelope weep in Book 1 and Odysseus weep in Book 8; he takes over as narrator for Books 9 to 12, and strings the bow in Book 21 like a singer tuning a lyre."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "in-medias-res",
+      "name": "Beginning in the middle",
+      "definition": "Opening an epic late in its story and supplying the earlier events afterwards, usually through a character's own narration.",
+      "inThisBook": "The poem starts in the twentieth year, and with the wrong person: four books about Telemachus before Odysseus appears. The ten years of wandering are then folded into one evening's talk, so that the poem's present is only about forty days long."
+    },
+    {
+      "id": "invocation",
+      "name": "Invocation",
+      "definition": "An opening address to a muse or god, asking for the song and announcing its subject.",
+      "inThisBook": "The proem asks the Muse for 'that ingenious hero' and does not name him until the second paragraph. It also gets its excuses in early, blaming the crew's deaths on 'their own sheer folly' before we have heard a word of the evidence."
+    },
+    {
+      "id": "epithets",
+      "name": "Epithets and formulae",
+      "definition": "Fixed descriptive phrases attached to a person or thing and repeated whenever they recur, a working tool of poetry composed in performance.",
+      "inThisBook": "Dawn is 'rosy-fingered' every time she appears, and whole blocks of lines — arming, washing, serving a meal — recur word for word. Butler keeps many of these in his prose. The repetitions are not padding: they make each dawn and each dinner the same ritual, so a breach of the ritual shows at once."
+    },
+    {
+      "id": "epic-simile",
+      "name": "Extended simile",
+      "definition": "A comparison developed over several lines until it becomes a small scene of its own, typically closed with 'even so'.",
+      "inThisBook": "The Odyssey's similes have a habit of crossing sides. The victor of Troy weeps like a woman being dragged into slavery from a sacked town; Penelope greets her husband like a shipwrecked sailor reaching land, which is his experience, not hers. The comparisons make characters change places with those their stories have harmed or left behind."
+    },
+    {
+      "id": "retrospective-narration",
+      "name": "The hero as his own narrator",
+      "definition": "A story told after the event by someone who was in it, with the advantages and the unreliability that implies.",
+      "inThisBook": "Books 9 to 12 are in the first person, and the poem has taken care to show us beforehand that the speaker is a gifted liar who wants a ship and presents from his audience. Nothing confirms or denies his account except Poseidon's anger, which is real enough."
+    },
+    {
+      "id": "dramatic-irony",
+      "name": "Dramatic irony",
+      "definition": "The audience knows something that a character speaking or acting does not.",
+      "inThisBook": "From Book 13 onwards almost every conversation in Ithaca is conducted with a man whose identity we know and the speakers do not. Eumaeus mourns his master to his master's face; the suitors wish the beggar luck 'in other things' as he strings the bow that will kill them."
+    },
+    {
+      "id": "recognition-scene",
+      "name": "Recognition scene",
+      "definition": "A scene in which one character discovers who another really is, often by means of a token or sign.",
+      "inThisBook": "The second half is built as a ladder of these, each with a different token and a different cost: Telemachus by a goddess's help, Argos by scent, Eurycleia by a scar, the herdsmen by being shown it, the suitors by an arrow, Penelope by the bed, Laertes by the orchard trees counted out to a child."
+    },
+    {
+      "id": "symbolic-objects",
+      "name": "Objects that carry the argument",
+      "definition": "Physical things that the narrative returns to until they stand for a relationship or an idea.",
+      "inThisBook": "The web that is never finished is Penelope's marriage kept open. The bow that only one man can string is the kingship. The bed built round a living olive tree is a marriage that cannot be moved without being killed — and the poem makes the point by having someone threaten to move it."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "tell-me-o-muse",
+      "text": "Tell me, O Muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy. Many cities did he visit, and many were the nations with whose manners and customs he was acquainted",
+      "reference": "Book 1",
+      "stage": "books-1-4",
+      "context": "The opening of the poem.",
+      "analysis": "The Iliad's first noun is anger; this poem's is a man, and an unnamed one. 'Ingenious' is Butler's word for the Greek polytropos, 'of many turns', which can mean much-travelled or much-twisting, and the sentence allows both. Note too what he is credited with: not killing, but visiting cities and learning customs. The hero is introduced as a kind of tourist with a sack of Troy behind him.",
+      "themes": ["identity", "disguise"],
+      "techniques": ["invocation"],
+      "characters": ["odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book I",
+      "cloze": ["ingenious", "Troy"]
+    },
+    {
+      "id": "men-lay-blame",
+      "text": "See now, how men lay blame upon us gods for what is after all nothing but their own folly.",
+      "speaker": "Zeus (Butler's Jove)",
+      "reference": "Book 1",
+      "stage": "books-1-4",
+      "context": "Zeus opens the council of the gods, thinking of Aegisthus, who was warned not to murder Agamemnon and did.",
+      "analysis": "The first speech in the poem is a complaint about being misjudged, and it sets the moral rules for everything after. People are warned; people ignore the warning; people pay. The crew and the suitors will both fit the pattern exactly. What the speech leaves out is Poseidon, whose persecution of Odysseus is about to be discussed and is not obviously anybody's folly but a god's temper.",
+      "themes": ["justice"],
+      "techniques": ["dramatic-irony"],
+      "characters": [],
+      "source": "Butler's translation, Project Gutenberg text, Book I",
+      "cloze": ["blame", "folly"]
+    },
+    {
+      "id": "speech-is-mans-matter",
+      "text": "Go, then, within the house and busy yourself with your daily duties, your loom, your distaff, and the ordering of your servants; for speech is man’s matter, and mine above all others",
+      "speaker": "Telemachus",
+      "reference": "Book 1",
+      "stage": "books-1-4",
+      "context": "Penelope has asked the bard to stop singing about the Greeks' homecoming. Her son overrules her in front of the suitors.",
+      "analysis": "It is the first time Telemachus has asserted himself and he does it against the wrong target, which is both comic and sad. The lines are nearly those Hector speaks to Andromache in the Iliad, with 'war' changed to 'speech': in this poem talk is the weapon. Penelope goes upstairs 'wondering', and keeps weaving — the loom he sends her back to is where the real resistance is happening.",
+      "themes": ["identity", "narration"],
+      "techniques": ["epithets"],
+      "characters": ["telemachus", "penelope"],
+      "source": "Butler's translation, Project Gutenberg text, Book I",
+      "cloze": ["loom", "speech"]
+    },
+    {
+      "id": "great-web",
+      "text": "we could see her working on her great web all day long, but at night she would unpick the stitches again by torchlight. She fooled us in this way for three years and we never found her out",
+      "speaker": "Antinous",
+      "reference": "Book 2",
+      "stage": "books-1-4",
+      "context": "In the assembly, Antinous blames Penelope for the suitors' long stay: she promised to choose when the shroud for Laertes was done.",
+      "analysis": "The story is told by her enemy, as an accusation, and it comes out as a tribute: three years, a hundred men, and they 'never found her out' until a maid told them. The web is a shroud, so she defers one man's funeral to defer her own remarriage. It is also the female version of her husband's craft. He makes things that hold — rafts, beds; she makes something that must never be finished.",
+      "themes": ["disguise", "loyalty"],
+      "techniques": ["symbolic-objects"],
+      "characters": ["penelope", "antinous"],
+      "source": "Butler's translation, Project Gutenberg text, Book II",
+      "cloze": ["web", "unpick", "torchlight"]
+    },
+    {
+      "id": "only-a-woman",
+      "text": "I am quite aware that my wife Penelope is nothing like so tall or so beautiful as yourself. She is only a woman, whereas you are an immortal. Nevertheless, I want to get home, and can think of nothing else.",
+      "speaker": "Odysseus",
+      "reference": "Book 5",
+      "stage": "books-5-8",
+      "context": "Calypso, ordered to let him go, asks whether she is really less attractive than his wife and reminds him that she can make him immortal.",
+      "analysis": "This is diplomacy — he is speaking to a goddess who could still drown him — but it is also the poem's central choice, made in three sentences. He concedes every point of comparison and then says 'Nevertheless'. What he chooses is not the better woman but the mortal life: ageing, a particular island, a death. After the Iliad's heroes, who trade life for fame, here is one who turns down eternity for home.",
+      "themes": ["home", "loyalty"],
+      "techniques": [],
+      "characters": ["odysseus", "calypso", "penelope"],
+      "source": "Butler's translation, Project Gutenberg text, Book V",
+      "cloze": ["immortal", "Nevertheless", "home"]
+    },
+    {
+      "id": "of-one-mind",
+      "text": "there is nothing better in this world than that man and wife should be of one mind in a house. It discomfits their enemies, makes the hearts of their friends glad, and they themselves know more about it than any one.",
+      "speaker": "Odysseus",
+      "reference": "Book 6",
+      "stage": "books-5-8",
+      "context": "Naked, filthy and holding a branch in front of himself, Odysseus ends his appeal to Nausicaa by wishing her a good marriage.",
+      "analysis": "As rhetoric it is perfectly judged: a frightening stranger reassures a girl of marriageable age by praising marriage. But the Greek word behind 'of one mind', homophrosyne, describes what the poem will show in Book 23, where husband and wife turn out to think alike because each is testing the other. The last clause is the shrewdest — a good marriage is partly a secret, which is what the bed will be.",
+      "themes": ["home", "hospitality"],
+      "techniques": ["dramatic-irony"],
+      "characters": ["odysseus", "nausicaa"],
+      "source": "Butler's translation, Project Gutenberg text, Book VI",
+      "cloze": ["one mind", "enemies"]
+    },
+    {
+      "id": "wept-as-a-woman",
+      "text": "He wept as a woman weeps when she throws herself on the body of her husband who has fallen before his own city and people, fighting bravely in defence of his home and children.",
+      "reference": "Book 8",
+      "stage": "books-5-8",
+      "context": "At Odysseus's own request, Demodocus sings of the wooden horse and the sack of Troy. The guest breaks down.",
+      "analysis": "The song is about his greatest success, and the simile puts him in the place of one of its victims: a Trojan widow, who in the following lines is beaten on the back with spears and led off to slavery. The poem does not say Odysseus feels guilt. It simply makes the sacker of cities cry in the shape of the sacked, and leaves the comparison there for the listener.",
+      "themes": ["narration", "identity"],
+      "techniques": ["epic-simile"],
+      "characters": ["odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book VIII",
+      "cloze": ["woman", "husband", "city"]
+    },
+    {
+      "id": "i-am-ulysses",
+      "text": "I am Ulysses son of Laertes, renowned among mankind for all manner of subtlety, so that my fame ascends to heaven.",
+      "speaker": "Odysseus",
+      "reference": "Book 9",
+      "stage": "books-9-12",
+      "context": "After a whole book as an anonymous guest, Odysseus finally answers Alcinous's question and begins the story of his wanderings.",
+      "analysis": "He has just heard a bard sing about him, so he knows the claim about fame is true, and he makes it without embarrassment: in this world reputation is a fact like height. What he is famous for is 'subtlety' — tricks. He is about to narrate four books in which that subtlety loses him twelve ships, and the boast in the first sentence frames how he wants the losses understood.",
+      "themes": ["identity", "narration"],
+      "techniques": ["retrospective-narration"],
+      "characters": ["odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book IX",
+      "cloze": ["subtlety", "fame"]
+    },
+    {
+      "id": "my-name-is-noman",
+      "text": "Cyclops, you ask my name and I will tell it you; give me, therefore, the present you promised me; my name is Noman; this is what my father and mother and my friends have always called me.",
+      "speaker": "Odysseus",
+      "reference": "Book 9",
+      "stage": "books-9-12",
+      "context": "Odysseus has got Polyphemus drunk on unmixed wine. The giant asks his name so that he can give him a guest-gift.",
+      "analysis": "The joke pays off when the blinded giant tells his neighbours that 'Noman is killing me' and they go home. In Greek there is a second pun underneath: a form of 'no one' sounds like metis, cunning, the hero's defining quality. Notice that he demands his 'present' in the same breath. Even while planning to blind his host, Odysseus is holding him to the etiquette of hospitality the Cyclops despises.",
+      "themes": ["identity", "disguise", "hospitality"],
+      "techniques": ["retrospective-narration", "dramatic-irony"],
+      "characters": ["odysseus", "polyphemus"],
+      "source": "Butler's translation, Project Gutenberg text, Book IX",
+      "cloze": ["Noman", "present"]
+    },
+    {
+      "id": "say-it-was-ulysses",
+      "text": "Cyclops, if any one asks you who it was that put your eye out and spoiled your beauty, say it was the valiant warrior Ulysses, son of Laertes, who lives in Ithaca.",
+      "speaker": "Odysseus",
+      "reference": "Book 9",
+      "stage": "books-9-12",
+      "context": "From the ship, against the pleading of his crew, Odysseus taunts the blinded Cyclops a second time.",
+      "analysis": "The escape worked because he was nobody; he cannot stand to stay nobody. Name, father and home address are exactly what a curse requires, and Polyphemus uses all three in his prayer to Poseidon a moment later. The poem's whole ten-year delay follows from this one sentence. It is the Iliad's hero, hungry for credit, breaking out of the Odyssey's survivor — and the crew, who begged him to be quiet, are the ones who pay.",
+      "themes": ["identity", "justice"],
+      "techniques": ["retrospective-narration"],
+      "characters": ["odysseus", "polyphemus", "poseidon"],
+      "source": "Butler's translation, Project Gutenberg text, Book IX",
+      "cloze": ["Ulysses", "Laertes", "Ithaca"]
+    },
+    {
+      "id": "well-made-oar",
+      "text": "you must take a well made oar and carry it on and on, till you come to a country where the people have never heard of the sea and do not even mix salt with their food",
+      "speaker": "The ghost of Tiresias",
+      "reference": "Book 11",
+      "stage": "books-9-12",
+      "context": "In the land of the dead, the prophet tells Odysseus what he must do after he has killed the suitors.",
+      "analysis": "Before the homecoming has happened, the poem announces that it will not be the end. He must walk inland until someone mistakes the oar for a winnowing shovel — until he reaches people for whom his entire story means nothing — and make his peace with Poseidon there. It is a strange, quiet idea: the man whose fame 'ascends to heaven' is sent to find the place where nobody has heard of him.",
+      "themes": ["home", "justice"],
+      "techniques": ["symbolic-objects"],
+      "characters": ["odysseus", "poseidon"],
+      "source": "Butler's translation, Project Gutenberg text, Book XI",
+      "cloze": ["oar", "sea", "salt"]
+    },
+    {
+      "id": "dream-or-phantom",
+      "text": "Thrice I sprang towards her and tried to clasp her in my arms, but each time she flitted from my embrace as it were a dream or phantom",
+      "speaker": "Odysseus",
+      "reference": "Book 11",
+      "stage": "books-9-12",
+      "context": "Odysseus meets the ghost of his mother Anticleia, who has told him she died of longing for him.",
+      "analysis": "He did not know she was dead; he learns it by seeing her among the ghosts. The triple attempt became a fixture of later epic, and Virgil borrows it twice. Here it is the first real cost of the twenty years presented to him in person. Cleverness is no use: for once he is reduced to grabbing at something, and the mother who could always be embraced is the one thing on the voyage he cannot hold.",
+      "themes": ["home"],
+      "techniques": ["retrospective-narration"],
+      "characters": ["odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XI",
+      "cloze": ["Thrice", "dream", "phantom"]
+    },
+    {
+      "id": "paid-servant",
+      "text": "I would rather be a paid servant in a poor man’s house and be above ground than king of kings among the dead.",
+      "speaker": "The ghost of Achilles",
+      "reference": "Book 11",
+      "stage": "books-9-12",
+      "context": "Odysseus has congratulated Achilles on being honoured like a god in life and a great prince among the dead.",
+      "analysis": "In the Iliad Achilles chose a short life and lasting glory; here the Odyssey lets him review the bargain and reject it. It is the later poem quarrelling with the earlier one, and doing so through its greatest hero. The speech also justifies Odysseus's own choice in Book 5. A hired labourer on someone else's farm is the lowest free rank there is, and Achilles would take it. Odysseus, in rags in Ithaca, more or less does.",
+      "themes": ["identity", "home"],
+      "techniques": ["retrospective-narration"],
+      "characters": ["odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XI",
+      "cloze": ["servant", "king", "dead"]
+    },
+    {
+      "id": "sirens-song",
+      "text": "No one ever sailed past us without staying to hear the enchanting sweetness of our song—and he who listens will go on his way not only charmed, but wiser",
+      "speaker": "The Sirens",
+      "reference": "Book 12",
+      "stage": "books-9-12",
+      "context": "The crew row past with wax in their ears; Odysseus, tied to the mast, hears the song.",
+      "analysis": "What the Sirens offer is not pleasure but knowledge: they go on to say they know everything that happened at Troy. In other words they offer to sing him the Iliad, with himself in it, for ever. The temptation is precisely fitted to a man who wept at Demodocus's song. The meadow around them is heaped with bones, and the danger is the one the whole poem worries at — a story so good you never go home.",
+      "themes": ["narration", "home"],
+      "techniques": ["retrospective-narration"],
+      "characters": ["odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XII",
+      "cloze": ["song", "wiser"]
+    },
+    {
+      "id": "plausible-shrewd-shifty",
+      "text": "that is why I cannot desert you in your afflictions; you are so plausible, shrewd and shifty.",
+      "speaker": "Athene (Butler's Minerva)",
+      "reference": "Book 13",
+      "stage": "books-13-16",
+      "context": "On the beach in Ithaca, Odysseus has refused to believe even Athene that he is really home.",
+      "analysis": "A goddess explains her loyalty, and the reasons are three words a moralist would use as charges. Butler's 'shifty' is sharper than most translators allow themselves and catches the tone: affectionate, amused, professional. She has just listened to him lie to her face and enjoyed it. The line tells us what kind of virtue this poem rewards — not honesty but wariness, the refusal to take even a homecoming on trust.",
+      "themes": ["disguise", "loyalty"],
+      "techniques": [],
+      "characters": ["athene", "odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XIII",
+      "cloze": ["plausible", "shrewd", "shifty"]
+    },
+    {
+      "id": "strangers-and-beggars",
+      "text": "Stranger, though a still poorer man should come here, it would not be right for me to insult him, for all strangers and beggars are from Jove.",
+      "speaker": "Eumaeus",
+      "reference": "Book 14",
+      "stage": "books-13-16",
+      "context": "The swineherd has called off his dogs, seated the beggar on his own bed-covering and been thanked for it.",
+      "analysis": "The law of hospitality gets its plainest statement from a slave in a pig farm, with no audience and nothing to gain. That is the point: the suitors, noblemen in a palace, will throw furniture at the same beggar. The narrator marks the moment by addressing the swineherd directly — 'you answered, O swineherd Eumaeus' — a warmth the poem saves for him. Rank in the Odyssey is tested by what you do with a stranger.",
+      "themes": ["hospitality", "loyalty"],
+      "techniques": ["dramatic-irony"],
+      "characters": ["eumaeus", "odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XIV",
+      "cloze": ["strangers", "beggars"]
+    },
+    {
+      "id": "no-other-ulysses",
+      "text": "There is no other Ulysses who will come hereafter. Such as I am, it is I, who after long wandering and much hardship have got home in the twentieth year to my own country.",
+      "speaker": "Odysseus",
+      "reference": "Book 16",
+      "stage": "books-13-16",
+      "context": "Telemachus, seeing the beggar transformed, insists he must be a god and not his father.",
+      "analysis": "Every other recognition in the poem rests on a token. This one cannot: Telemachus was a baby, there is no shared memory to appeal to, and the father can only say, in effect, I am all you are going to get. 'Such as I am' is a modest phrase from a man who announced his fame to the Phaeacians. The son has spent four books looking for a legend, and what arrives is this.",
+      "themes": ["identity", "home"],
+      "techniques": ["recognition-scene"],
+      "characters": ["odysseus", "telemachus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XVI",
+      "cloze": ["hereafter", "twentieth"]
+    },
+    {
+      "id": "argos-wagged-his-tail",
+      "text": "As soon as he saw Ulysses standing there, he dropped his ears and wagged his tail, but he could not get close up to his master.",
+      "reference": "Book 17",
+      "stage": "books-17-20",
+      "context": "At the gate of his own house Odysseus passes his old hunting dog, lying neglected and flea-ridden on a dung heap.",
+      "analysis": "Athene's disguise works on every human being in Ithaca and fails on a dog, instantly. Argos is also a picture of the household — once swift, now lying in filth because 'the women take no care of him'. Odysseus has to wipe away a tear without Eumaeus seeing, and walk on; the dog dies as he goes in. The only recognition that costs him nothing in risk is the one he is not allowed to answer.",
+      "themes": ["loyalty", "identity"],
+      "techniques": ["recognition-scene", "dramatic-irony"],
+      "characters": ["odysseus", "eumaeus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XVII",
+      "cloze": ["ears", "tail", "master"]
+    },
+    {
+      "id": "knew-the-scar",
+      "text": "as soon as she began washing her master, she at once knew the scar as one that had been given him by a wild boar when he was hunting on Mt. Parnassus",
+      "reference": "Book 19",
+      "stage": "books-17-20",
+      "context": "Eurycleia washes the beggar's feet on Penelope's orders. He has turned away from the firelight, too late.",
+      "analysis": "At the instant of discovery the poem stops and tells, at length, how the boy got the scar and how his grandfather Autolycus, 'the most accomplished thief and perjurer in the whole world', gave him his name. Only then does the foot fall into the basin. The digression is not a lapse in suspense; it says that identity is a history written on the body, which no goddess's disguise reaches.",
+      "themes": ["identity", "loyalty"],
+      "techniques": ["recognition-scene"],
+      "characters": ["eurycleia", "odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XIX",
+      "cloze": ["scar", "boar", "Parnassus"]
+    },
+    {
+      "id": "gates-of-horn-and-ivory",
+      "text": "There are two gates through which these unsubstantial fancies proceed; the one is of horn, and the other ivory.",
+      "speaker": "Penelope",
+      "reference": "Book 19",
+      "stage": "books-17-20",
+      "context": "Penelope has told the beggar her dream of an eagle killing her geese; he assures her it means the suitors will die.",
+      "analysis": "False dreams come through ivory, true ones through horn, and Penelope says she thinks hers was ivory. Then, in the next breath, she announces the contest of the bow for tomorrow. Either she has given up, or she has understood more from this stranger than she admits and is handing him his weapon. The poem does not settle it, and her refusal to hope aloud is of a piece with twenty years of caution.",
+      "themes": ["disguise", "loyalty"],
+      "techniques": ["dramatic-irony", "symbolic-objects"],
+      "characters": ["penelope", "odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XIX",
+      "cloze": ["horn", "ivory"]
+    },
+    {
+      "id": "bard-strings-his-lyre",
+      "text": "strung it as easily as a skilled bard strings a new peg of his lyre and makes the twisted gut fast at both ends.",
+      "reference": "Book 21",
+      "stage": "books-21-24",
+      "context": "The suitors have all failed to bend the bow. The beggar turns it over, checks it for worm, and strings it.",
+      "analysis": "At the moment he becomes a killer, he is compared to a poet. The string then 'sang sweetly under his touch', and his next words invite the suitors to 'song and dance'. The simile closes a circle drawn since Book 8: the man who wept at a bard's song and took over as narrator now plays an instrument of his own, and the performance that follows is the one the whole poem has been tuning for.",
+      "themes": ["narration", "identity"],
+      "techniques": ["epic-simile", "symbolic-objects"],
+      "characters": ["odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XXI",
+      "cloze": ["bard", "lyre"]
+    },
+    {
+      "id": "rejoice-in-silence",
+      "text": "rejoice in silence; restrain yourself, and do not make any noise about it; it is an unholy thing to vaunt over dead men.",
+      "speaker": "Odysseus",
+      "reference": "Book 22",
+      "stage": "books-21-24",
+      "context": "Eurycleia comes into the hall, sees the heaped corpses and her master spattered like a lion, and begins to cry out in triumph.",
+      "analysis": "Iliadic heroes vaunt over the fallen as a matter of course, and Odysseus vaunted over the Cyclops to his cost. Here he has learnt, or the poem has: the suitors died by 'heaven's doom and their own evil deeds', and the killer presents himself as an instrument. It is a scruple of piety rather than mercy, though. His very next sentence asks the nurse which of the women have been disloyal.",
+      "themes": ["justice"],
+      "techniques": [],
+      "characters": ["odysseus", "eurycleia"],
+      "source": "Butler's translation, Project Gutenberg text, Book XXII",
+      "cloze": ["silence", "unholy", "vaunt"]
+    },
+    {
+      "id": "thrushes-or-doves",
+      "text": "as thrushes or doves beat against a net that has been set for them in a thicket just as they were getting to their nest, and a terrible fate awaits them, even so did the women have to put their heads in nooses one after the other and die most miserably.",
+      "reference": "Book 22",
+      "stage": "books-21-24",
+      "context": "Twelve maidservants who slept with the suitors are made to carry out the bodies and clean the hall; Telemachus then hangs them.",
+      "analysis": "The narrative says they deserve it; the simile does not sound convinced. Small birds heading for their nest — for home, the poem's own highest value — are caught in a net. The next sentence, about their feet moving 'but not for very long', is as cold as anything in Homer. The women were slaves, and what choice they had is not discussed. The poem's justice and the poem's sympathy part company here, and both are left on the page.",
+      "themes": ["justice", "loyalty"],
+      "techniques": ["epic-simile"],
+      "characters": ["telemachus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XXII",
+      "cloze": ["doves", "net", "nest"]
+    },
+    {
+      "id": "young-olive",
+      "text": "There was a young olive growing within the precincts of the house, in full vigour, and about as thick as a bearing-post. I built my room round this with strong walls of stone and a roof to cover them",
+      "speaker": "Odysseus",
+      "reference": "Book 23",
+      "stage": "books-21-24",
+      "context": "Penelope has told Eurycleia to move the master's bed out of the bedroom. Odysseus, for the only time in the poem, loses his temper.",
+      "analysis": "It is a trap, and the master of traps walks into it: only the man who built the bed knows that one post is a rooted tree. His anger is the proof, because it is unplanned. The secret is apt as well as secure. He did not bring a bed into a house; he built the house around a living thing and made the marriage out of that. His fear that someone has 'cut down the olive tree at its roots' is the fear of the whole twenty years.",
+      "themes": ["home", "identity", "disguise"],
+      "techniques": ["recognition-scene", "symbolic-objects"],
+      "characters": ["odysseus", "penelope"],
+      "source": "Butler's translation, Project Gutenberg text, Book XXIII",
+      "cloze": ["olive", "walls", "roof"]
+    },
+    {
+      "id": "sight-of-land",
+      "text": "As the sight of land is welcome to men who are swimming towards the shore, when Neptune has wrecked their ship with the fury of his winds and waves",
+      "reference": "Book 23",
+      "stage": "books-21-24",
+      "context": "Penelope has accepted the proof of the bed; husband and wife hold each other and weep.",
+      "analysis": "The simile begins as if it were about Odysseus — he is the one Poseidon wrecked, in Book 5, in nearly these terms — and then turns: 'even so was her husband welcome to her'. The shipwrecked swimmer is Penelope. In one comparison the poem gives her his ordeal and says that staying was a voyage too. It is the 'one mind' he wished on Nausicaa, enacted in the grammar of a sentence.",
+      "themes": ["home", "loyalty"],
+      "techniques": ["epic-simile"],
+      "characters": ["penelope", "odysseus", "poseidon"],
+      "source": "Butler's translation, Project Gutenberg text, Book XXIII",
+      "cloze": ["land", "swimming", "wrecked"]
+    },
+    {
+      "id": "constancy-of-penelope",
+      "text": "The fame, therefore, of her virtue shall never die, and the immortals shall compose a song that shall be welcome to all mankind in honour of the constancy of Penelope.",
+      "speaker": "The ghost of Agamemnon",
+      "reference": "Book 24",
+      "stage": "books-21-24",
+      "context": "In Hades the dead suitors tell their story, and Agamemnon, murdered by his own wife, responds.",
+      "analysis": "Undying fame in song is what Iliadic warriors die for, and here it is awarded to a woman for staying at home. The song Agamemnon predicts is, of course, the one we are reading. But his praise is narrow — 'constancy' — and the poem has shown a good deal more than that: nerve, deceit, and a test her husband failed to see coming. The dead king sees a faithful wife because a faithless one killed him.",
+      "themes": ["loyalty", "narration"],
+      "techniques": [],
+      "characters": ["penelope"],
+      "source": "Butler's translation, Project Gutenberg text, Book XXIV",
+      "cloze": ["fame", "song", "constancy"]
+    },
+    {
+      "id": "stop-this-warful-strife",
+      "text": "Ulysses, noble son of Laertes, stop this warful strife, or Jove will be angry with you.",
+      "speaker": "Athene (Butler's Minerva)",
+      "reference": "Book 24",
+      "stage": "books-21-24",
+      "context": "The suitors' families have armed to avenge them. Odysseus is swooping on them 'like a soaring eagle' when a thunderbolt lands at Athene's feet.",
+      "analysis": "The poem ends by stopping its hero. Left to himself he would kill every man on the field, and the feud between the houses of Ithaca would run for generations; it takes Zeus's thunderbolt and a direct order to end it. The peace is imposed, not earned, which is honest. A poem that began with gods discussing human responsibility finishes by admitting that revenge has no natural stopping place.",
+      "themes": ["justice"],
+      "techniques": ["epithets"],
+      "characters": ["athene", "odysseus"],
+      "source": "Butler's translation, Project Gutenberg text, Book XXIV",
+      "cloze": ["strife", "angry"]
+    }
+  ],
+  "timeline": [
+    {
+      "year": -1184,
+      "label": "The traditional date for the fall of Troy",
+      "detail": "Worked out by the Greek scholar Eratosthenes centuries later. It is a calculation from legend, not a record, but it falls close to a destruction that archaeologists date to around 1180 BCE at the site of Hisarlik.",
+      "kind": "context"
+    },
+    {
+      "year": -700,
+      "label": "The Odyssey takes something like its present form",
+      "detail": "Probably in the late eighth or early seventh century BCE, a little after the Iliad, in the Greek-speaking eastern Aegean. It draws on generations of oral song about the returns of the heroes from Troy.",
+      "kind": "work"
+    },
+    {
+      "year": -150,
+      "label": "Alexandrian scholars edit the text",
+      "detail": "Over the third and second centuries BCE the librarians at Alexandria, Aristarchus the most influential among them, compared manuscripts and marked suspect lines. The division into twenty-four books is usually credited to this period.",
+      "kind": "reception"
+    },
+    {
+      "year": -19,
+      "label": "Virgil dies, leaving the Aeneid",
+      "detail": "Rome's national epic rewrites Homer: its first six books answer the Odyssey with a hero who sails west from Troy and visits the dead.",
+      "kind": "reception"
+    },
+    {
+      "year": 1488,
+      "label": "Homer printed for the first time",
+      "detail": "The first printed edition of the Greek text of both epics appeared in Florence, edited by Demetrius Chalcondyles.",
+      "kind": "work"
+    },
+    {
+      "year": 1616,
+      "label": "George Chapman's complete Homer",
+      "detail": "Chapman's English Odyssey, in rhymed pentameter, had appeared about two years earlier; the collected Whole Works of Homer made both poems available to English readers without Greek.",
+      "kind": "reception"
+    },
+    {
+      "year": 1726,
+      "label": "Pope's Odyssey completed",
+      "detail": "Alexander Pope's version in heroic couplets, produced with two collaborators, followed his Iliad and was the standard English Homer for a century.",
+      "kind": "reception"
+    },
+    {
+      "year": 1835,
+      "label": "Samuel Butler born",
+      "detail": "The translator was born at Langar in Nottinghamshire, a clergyman's son. He would be a sheep farmer in New Zealand, a painter, a satirist and a critic of Darwin before he turned to Homer.",
+      "kind": "author"
+    },
+    {
+      "year": 1842,
+      "label": "Tennyson publishes 'Ulysses'",
+      "detail": "A dramatic monologue for the hero in old age, restless in Ithaca and ready to sail again. It takes its cue from Tiresias's prophecy and from Dante rather than from Homer's ending.",
+      "kind": "reception"
+    },
+    {
+      "year": 1897,
+      "label": "Butler's The Authoress of the Odyssey",
+      "detail": "Butler argued that the poem was written by a young woman in Sicily, at Trapani, who put herself into it as Nausicaa. Scholars have not accepted the theory, but it made him read the poem's domestic detail more closely than most.",
+      "kind": "author"
+    },
+    {
+      "year": 1900,
+      "label": "Butler's prose Odyssey published",
+      "detail": "He wanted, he said, a version for readers who knew no Greek, in the plain English of his own day. His Iliad had appeared two years before. Butler died in 1902.",
+      "kind": "work"
+    },
+    {
+      "year": 1922,
+      "label": "James Joyce's Ulysses",
+      "detail": "Joyce maps the Odyssey's episodes on to one day in Dublin, with an advertising canvasser as Odysseus. The Roman form of the name, as in Butler, was still the ordinary English one.",
+      "kind": "reception"
+    },
+    {
+      "year": 1928,
+      "label": "Milman Parry's study of the Homeric epithet",
+      "detail": "Parry showed that the repeated phrases form a system fitted to the metre, of the kind a poet composing aloud would need. Fieldwork among singers in Yugoslavia in the 1930s supported the case that Homeric verse grew out of oral performance.",
+      "kind": "reception"
+    },
+    {
+      "year": 1939,
+      "label": "A Mycenaean palace found near Pylos",
+      "detail": "Carl Blegen's excavation at Ano Englianos uncovered a Bronze Age palace and an archive of clay tablets. When their script, Linear B, was deciphered in 1952, it proved to be an early form of Greek.",
+      "kind": "context"
+    }
+  ],
+  "places": [
+    {
+      "name": "Troy (Hisarlik)",
+      "lat": 39.9575,
+      "lon": 26.2389,
+      "note": "The mound at Hisarlik in north-west Turkey, generally accepted as the site of Troy. Everything in the poem is measured from here: Odysseus sails from it in the first line and has still not got home ten years later."
+    },
+    {
+      "name": "Ithaca",
+      "lat": 38.3667,
+      "lon": 20.7167,
+      "note": "The modern island of Ithaki in the Ionian Sea, which has carried the name since antiquity. Homer's description does not fit it in every detail, and other islands have been proposed, but this is the traditional identification."
+    },
+    {
+      "name": "Pylos (Palace of Nestor)",
+      "lat": 37.0275,
+      "lon": 21.695,
+      "note": "The Bronze Age palace at Ano Englianos in Messenia, excavated from 1939 and known as the Palace of Nestor. Telemachus lands at 'sandy Pylos' in Book 3 and finds the old king sacrificing on the beach."
+    },
+    {
+      "name": "Sparta",
+      "lat": 37.0745,
+      "lon": 22.4303,
+      "note": "Lacedaemon, where Telemachus visits Menelaus and Helen in Book 4 and sees a marriage that survived the war, after a fashion."
+    },
+    {
+      "name": "Cape Malea",
+      "lat": 36.4386,
+      "lon": 23.1989,
+      "note": "The south-eastern tip of the Peloponnese, a notorious place for ships. Here, in Book 9, the north wind drives Odysseus off his course for home and off the map of the known world."
+    },
+    {
+      "name": "Corfu",
+      "lat": 39.62,
+      "lon": 19.92,
+      "note": "Traditionally identified with Scheria, the island of the Phaeacians, since at least the fifth century BCE. Homer's Scheria is a place at the edge of the real, and the identification is ancient local pride rather than geography."
+    },
+    {
+      "name": "Strait of Messina",
+      "lat": 38.2467,
+      "lon": 15.6328,
+      "note": "The narrow water between Sicily and mainland Italy, traditionally identified with the passage between Scylla and Charybdis in Book 12. Ancient writers already placed the wanderings around Sicily and southern Italy; the poem itself gives no bearings."
+    },
+    {
+      "name": "Mount Parnassus",
+      "lat": 38.5333,
+      "lon": 22.6167,
+      "note": "Where the young Odysseus, visiting his grandfather Autolycus, was gored by a boar. The scar is how Eurycleia knows him in Book 19."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "A moral poem: the just are rewarded and the wicked pay",
+      "summary": "On this reading Zeus's opening speech is the key. Mortals suffer beyond their portion through their own recklessness; the crew and the suitors are both warned, both persist, and both are destroyed, while the patient hero and the faithful wife get their house back. The Odyssey is then a more ethically ordered poem than the Iliad, with gods who care about right conduct.",
+      "counter": "The scheme fits the suitors better than it fits the facts. Poseidon's ten-year persecution is a private grudge, the Phaeacians are punished for the exact hospitality the poem praises, and the hanged maids and the imposed truce of Book 24 suggest a poet less comfortable with the tidy version than Zeus is."
+    },
+    {
+      "position": "Penelope knows: the second half as a collaboration",
+      "summary": "Some readers hold that Penelope recognises the beggar, or at least suspects him, during the interview in Book 19, and that her decision to stage the bow contest the next day is a move in a game both are playing. It makes her the poem's second strategist rather than a prize waiting to be claimed, and it accounts for the odd timing.",
+      "counter": "The text never says so, and says several things against it: she weeps for her husband in his presence, prays for death in Book 20, and is genuinely resistant in Book 23. It may be truer to the poem to say that it keeps her mind deliberately closed to us, as she keeps it closed to everyone else."
+    },
+    {
+      "position": "The untrustworthy hero",
+      "summary": "A sceptical reading notices that the monsters, the witches and the loss of every ship and man are reported only by Odysseus, to hosts he needs to impress, and that the same voice later tells five detailed and entirely false life-stories in Ithaca. His account consistently puts the blame on the crew. The poem, on this view, is inviting us to admire the performance and doubt the performer.",
+      "counter": "The narrator confirms the essentials in his own voice — the blinding of the Cyclops, the cattle of the Sun, Poseidon's anger — so the adventures cannot simply be a tall tale. And for an audience raised on oral poetry, skill in telling was a heroic virtue, not grounds for suspicion."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "Is Odysseus a hero to be admired?",
+      "focus": "Cunning, endurance and the cost to others",
+      "plan": [
+        "Start from the first adjective, 'ingenious', and establish that this poem's idea of excellence is intelligence and staying power rather than strength.",
+        "Take the Cyclops episode as the test case: the Noman trick shows the quality at its best, and the boast from the ship shows the older heroic appetite for fame undoing it.",
+        "Count the cost — twelve ships, every companion — and weigh his own narration of those losses against the proem's insistence that the men died by their own folly.",
+        "Set against this the refusal of Calypso's offer and the patience in the hall, where he absorbs blows he could return.",
+        "Close on Book 24: he lies to his grieving father out of habit and has to be stopped from slaughter by a thunderbolt. Admiration is what the poem asks for; decide how much it qualifies the request."
+      ]
+    },
+    {
+      "question": "How does the Odyssey use hospitality to judge its characters?",
+      "focus": "Hosts, guests and the protection of Zeus",
+      "plan": [
+        "Set out the rule as the poem shows it working at Pylos and Sparta: welcome, bath, food, and only then the question of a name.",
+        "Treat Polyphemus as the deliberate inversion, point by point, including the parody of a guest-gift — while noting that Odysseus entered uninvited.",
+        "Use Eumaeus to show that the standard is moral rather than social: 'all strangers and beggars are from Jove' is said in a hut.",
+        "Read the suitors as bad guests rather than bad hosts, whose crime is put in terms of eating, and connect them to the crew on Thrinacia.",
+        "Finish with the Phaeacians, turned to stone for giving a stranger passage, and ask whether the poem's gods uphold the code as reliably as its mortals are expected to."
+      ]
+    },
+    {
+      "question": "'The real contest in the Odyssey is between husband and wife.' Discuss the presentation of Penelope.",
+      "focus": "Cunning, loyalty and what the poem withholds",
+      "plan": [
+        "Begin with the web, told by Antinous as a grievance, and show how it establishes her as a strategist before she has said much at all.",
+        "Examine the Book 19 interview and the gates of horn and ivory: set out what she says she believes and what she then does.",
+        "Make the bed scene the centre. She tests him with a lie, he fails to see it coming, and his anger is the proof; she is the only person to out-manoeuvre him.",
+        "Follow the reverse simile of the shipwrecked swimmer, which gives her his ordeal, as the poem's own statement of their equality.",
+        "Qualify with the limits: Telemachus twice sends her to her room, and Agamemnon's praise reduces her to 'constancy'. Consider whether the poem sees more than its characters do."
+      ]
+    },
+    {
+      "question": "What is the effect of having Odysseus tell his own adventures?",
+      "focus": "Narrative structure and reliability",
+      "plan": [
+        "Describe the structure: a poem that begins in the twentieth year and hands four books to its hero to narrate after dinner.",
+        "Show how Book 8 prepares for this, with Demodocus's songs and the weeping guest, so that Odysseus takes over from a professional bard.",
+        "Consider audience and motive: the Phaeacians are about to give him passage and treasure, and Alcinous compliments him on telling it like a poet.",
+        "Compare the false Cretan tales of Books 13 to 19, which are plausible, detailed and untrue, and ask what that does to our trust in Books 9 to 12.",
+        "Conclude with the bow strung like a lyre: the poem treats storytelling and action as the same skill, and leaves admiration and doubt side by side."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Odysseus turns down immortality with Calypso for a wife he admits is less beautiful and a life that will end. What exactly is he choosing?",
+    "When do you think Penelope knows who the beggar is? Find the moment you would stake the argument on, and the strongest evidence against it.",
+    "Twelve maidservants are hanged in Book 22, and the simile compares them to birds caught on their way to the nest. Is the poem on the side of the sentence it carries out?",
+    "Achilles in Hades would rather be a living labourer than king of the dead. Does that remark change how you read the Iliad, or only how you read the Odyssey?",
+    "Almost everything we know about the wanderings comes from Odysseus. Which episode would you most like a second witness for, and why?",
+    "The poem ends with a truce imposed by a thunderbolt. Is that a satisfying ending, an evasion, or an admission?"
+  ],
+  "related": [
+    {
+      "href": "/books/the-iliad/",
+      "why": "The war this poem is the aftermath of, and the idea of heroism — a short life for lasting fame — that Achilles' ghost takes back in Book 11."
+    },
+    {
+      "href": "/books/the-aeneid/",
+      "why": "Virgil's answer: another survivor of Troy, another voyage and another descent to the dead, but with a hero who is travelling away from home to found one."
+    },
+    {
+      "href": "/passage-room/odyssey-olive-bed/",
+      "why": "A close reading of the bed built round the olive tree, the test Penelope sets and Odysseus does not see coming."
+    },
+    {
+      "href": "/books/paradise-lost/",
+      "why": "Milton inherits the machinery — invocation, beginning in the middle, a long story told to a host over a meal — and turns it to a different kind of homecoming lost."
+    },
+    {
+      "href": "/books/robinson-crusoe/",
+      "why": "The castaway as practical man: another hero defined by what he can build with his hands, on an island, a long way from home."
+    }
+  ],
+  "videos": []
+}
