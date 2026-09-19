@@ -854,6 +854,13 @@
 .astor-graph { display: block; width: 100%; height: auto; max-width: 100%; font-family: var(--astor-sans); }
 .astor-graph .astor-edge { fill: none; stroke: rgba(32, 28, 26, .34); stroke-width: 1.5; transition: opacity .2s ease, stroke-width .2s ease; }
 .astor-graph .astor-edge.is-enemy { stroke: var(--astor-red); stroke-dasharray: 5 4; }
+.astor-graph .astor-edge.is-rival { stroke: var(--astor-red); stroke-dasharray: 1.5 4; stroke-linecap: round; stroke-width: 2; }
+.astor-graph .astor-edge.is-doubling { stroke-dasharray: 1.5 4; stroke-linecap: round; stroke-width: 2; stroke: rgba(32, 28, 26, .6); }
+.astor-graph .astor-edge.is-friendship,
+.astor-graph .astor-edge.is-ally { stroke: var(--astor-green); }
+.astor-graph .astor-edge.is-family { stroke: var(--astor-gold-line, #a9842f); stroke-width: 2; }
+.astor-graph .astor-edge.is-mentor,
+.astor-graph .astor-edge.is-service { stroke: rgba(32, 28, 26, .5); stroke-dasharray: 8 3; }
 .astor-graph .astor-edge.is-marriage,
 .astor-graph .astor-edge.is-love { stroke: var(--burgundy); stroke-width: 2.5; }
 .astor-graph.has-selection .astor-edge { opacity: .1; }
@@ -862,8 +869,9 @@
 .astor-graph.has-selection .astor-edge.is-involved.is-love { stroke-width: 3.5; }
 .astor-graph.no-motion .astor-edge { transition: none; }
 .astor-graph .astor-node { cursor: pointer; }
-.astor-graph .astor-node circle { fill: #fffdfa; stroke: var(--burgundy); stroke-width: 2; }
-.astor-graph .astor-node.is-selected circle { fill: var(--burgundy); }
+.astor-graph .astor-node .astor-node-hit { fill: transparent; stroke: none; }
+.astor-graph .astor-node .astor-node-disc { fill: #fffdfa; stroke: var(--burgundy); stroke-width: 2; }
+.astor-graph .astor-node.is-selected .astor-node-disc { fill: var(--burgundy); }
 .astor-graph .astor-node.is-dimmed { opacity: .38; }
 .astor-graph .astor-node text,
 .astor-graph .astor-node-label {
@@ -876,11 +884,11 @@
 }
 .astor-graph .astor-node.is-selected .astor-node-label,
 .astor-graph .astor-node.is-neighbour .astor-node-label { fill: var(--burgundy); }
-.astor-graph .astor-node.is-neighbour circle { fill: #f3dede; }
+.astor-graph .astor-node.is-neighbour .astor-node-disc { fill: #f3dede; }
 .astor-graph .astor-node:focus { outline: none; }
-.astor-graph .astor-node:hover circle,
-.astor-graph .astor-node:focus circle { fill: var(--burgundy); }
-.astor-graph .astor-node:focus-visible circle { stroke: var(--ink); stroke-width: 3; }
+.astor-graph .astor-node:hover .astor-node-disc,
+.astor-graph .astor-node:focus .astor-node-disc { fill: var(--burgundy); }
+.astor-graph .astor-node:focus-visible .astor-node-disc { stroke: var(--ink); stroke-width: 3; }
 .astor-graph .astor-edge-label {
   font-size: 11px;
   font-weight: 700;
@@ -897,8 +905,12 @@
 .astor-graph-key .is-marriage .astor-key-line,
 .astor-graph-key .is-love .astor-key-line { border-top-width: 3px; border-color: var(--burgundy); }
 .astor-graph-key .is-enemy .astor-key-line { border-top-style: dashed; border-color: var(--astor-red); }
-.astor-graph-key .is-friendship .astor-key-line { border-color: var(--astor-green); }
-.astor-graph-key .is-rival .astor-key-line,
+.astor-graph-key .is-friendship .astor-key-line,
+.astor-graph-key .is-ally .astor-key-line { border-color: var(--astor-green); }
+.astor-graph-key .is-family .astor-key-line { border-color: var(--astor-gold-line, #a9842f); }
+.astor-graph-key .is-mentor .astor-key-line,
+.astor-graph-key .is-service .astor-key-line { border-top-style: dashed; }
+.astor-graph-key .is-rival .astor-key-line { border-top-style: dotted; border-color: var(--astor-red); }
 .astor-graph-key .is-doubling .astor-key-line { border-top-style: dotted; }
 
 .astor-character-detail { margin-top: 16px; }
@@ -1506,3 +1518,14 @@
   .astor-sheet-print .astor-sheet-head h2 { font-size: 22pt; }
   .astor-sheet-print .astor-sheet h3 { margin-top: 8pt; }
 }
+
+/* ------------------------------------------------ phone fit and tap targets */
+
+/* A long option must never push a menu wider than the page it sits in. */
+.page-wrap select,
+.astor-panel select,
+.astor-toolkit select { max-width: 100%; min-width: 0; box-sizing: border-box; text-overflow: ellipsis; }
+
+/* Things meant to be tapped get a fingertip's height. */
+.astor-timeline-column .astor-timeline-event { min-height: 36px; padding: 8px 10px; font-size: 12px; }
+.astor-place-book li .astor-link-button { display: inline-block; min-height: 32px; padding: 6px 0; }

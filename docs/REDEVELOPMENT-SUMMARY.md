@@ -246,8 +246,17 @@ session contains.
   it sits in rather than scaled down from a fixed canvas, so the type is the
   same size on a phone as on a desk. Characters sit around a ring that becomes
   a tall ellipse on a narrow screen; their names sit outside it where the
-  lines cannot reach them, shortened only as far as they stay unique within
-  the book. Lines are curved and carry no text: choosing a character lights
+  lines cannot reach them. Names are never shortened (an earlier pass turned
+  "The Ghost of Christmas Yet to Come" into "The Come" and "King Richard II"
+  into "King II"): each is measured in the type it is set in, wrapped onto two
+  or three lines, and the ring is then narrowed until every name is inside the
+  drawing and grown taller until no name touches another name or a node. A
+  record may give a character a `shortName` where the full one is unwieldy.
+  A tie declared from both ends is drawn once; line styles match the key; and
+  each node carries an invisible 40-pixel disc so a fingertip finds it. All 57
+  maps were measured at every act and section (399 drawings) at 320, 375, 768
+  and 1280 pixels, and in the book-page embed: no overlap, no clipping. Lines
+  are curved and carry no text: choosing a character lights
   their connections and dims the rest, and the panel beneath spells each one
   out with the parts of the book it holds in. Relationships that declare
   their stages appear and disappear as you step through the acts. The same
