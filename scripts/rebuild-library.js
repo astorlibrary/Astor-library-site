@@ -212,3 +212,4 @@ require('./rebuild-discovery');
 require('./rebuild-passage-hub');
 
 require('./rebuild-seasons');
+require('./rebuild-study-data');

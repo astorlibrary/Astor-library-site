@@ -6,6 +6,8 @@ const { hardbacks } = require('./format-release-data');
 const { bookEditionSchemas, paperbackEditionSchema } = require('./book-edition-schema');
 const septemberCatalogue = require('./september-catalogue-data.json');
 const { seasons, booksFor, hrefFor } = require('./seasonal-helpers');
+const { loadBooks } = require('./book-data');
+const { renderToolkit } = require('./study-toolkit');
 
 const root = process.cwd();
 const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
@@ -15,6 +17,9 @@ const discoveryFile = path.join(root, 'assets', 'content-index.json');
 const discovery = fs.existsSync(discoveryFile)
   ? JSON.parse(fs.readFileSync(discoveryFile, 'utf8'))
   : { books: [] };
+// One structured record per title drives the study toolkit injected below.
+const studyData = new Map(loadBooks().map(book => [book.slug, book]));
+
 const thumbnailMapFile = path.join(root, 'assets', 'book-thumbnails.json');
 const bookThumbnails = fs.existsSync(thumbnailMapFile)
   ? JSON.parse(fs.readFileSync(thumbnailMapFile, 'utf8'))
@@ -1079,6 +1084,80 @@ function addGlobalNavigation(html, source) {
   return html;
 }
 
+// The study toolkit is generated rather than written into each page by hand,
+// so a change to one title's data reaches its book page, its study page, the
+// explorers and the games in the same build.
+function studyToolkitFor(source) {
+  const href = pageHref(source);
+  const bookMatch = href.match(/^\/books\/([^/]+)\/$/);
+  if (bookMatch && studyData.has(bookMatch[1])) return { book: studyData.get(bookMatch[1]), kind: 'book' };
+  const studyMatch = href.match(/^\/study\/([^/]+)\/$/);
+  if (studyMatch) {
+    const direct = studyData.get(studyMatch[1]);
+    if (direct) return { book: direct, kind: 'study' };
+    const paired = [...studyData.values()].find(book => book.studyHref === href);
+    if (paired) return { book: paired, kind: 'study' };
+  }
+  return null;
+}
+
+function discoveryTitle(href) {
+  for (const group of ['books', 'resources', 'studyEditions', 'passages', 'authors', 'subjects', 'collections', 'seasons']) {
+    const found = (discovery[group] || []).find(item => item.href === href);
+    if (found) return plainText(found.title);
+  }
+  return null;
+}
+
+function addStudyToolkit(html, source) {
+  const context = studyToolkitFor(source);
+  if (!context || !html.includes('<main')) return html;
+  if (html.includes('id="astor-study-toolkit"')) return html;
+
+  const heading = context.kind === 'study'
+    ? 'Work through ' + context.book.title + '.'
+    : 'Study ' + context.book.title + '.';
+  const toolkit = renderToolkit(context.book, { heading, titleFor: discoveryTitle });
+
+  // Insert where the page stops introducing the book and starts on its
+  // history: after the edition card, else after the quick facts, else after
+  // the opening section.
+  const anchors = context.kind === 'study'
+    ? [
+        /<section class="section-title" id="sources">/i,
+        /<nav class="book-end-nav"/i,
+        /<\/main>/i
+      ]
+    : [
+        /<article class="edition-card[^"]*">[\s\S]*?<\/article>/i,
+        /<section class="quick-facts"[\s\S]*?<\/section>/i,
+        /<section class="page-intro[^"]*">[\s\S]*?<\/section>/i
+      ];
+
+  let placed = false;
+  for (const anchor of anchors) {
+    const match = html.match(anchor);
+    if (!match) continue;
+    const before = /^<(?:section|nav)|^<\/main/i.test(match[0]);
+    const at = before ? match.index : match.index + match[0].length;
+    // The book-page anchors match whole blocks and insert after them; the
+    // study-page anchors are opening tags and insert before them.
+    const insertAt = context.kind === 'study' ? match.index : at;
+    html = html.slice(0, insertAt) + toolkit + html.slice(insertAt);
+    placed = true;
+    break;
+  }
+  if (!placed) html = html.replace('</main>', toolkit + '</main>');
+
+  if (!/href="\/assets\/astor-study\.css"/i.test(html)) {
+    html = html.replace('</head>', '<link rel="stylesheet" href="/assets/astor-study.css"></head>');
+  }
+  if (!html.includes('/assets/astor/toolkit.mjs')) {
+    html = html.replace('</head>', '<script type="module" src="/assets/astor/toolkit.mjs"></script></head>');
+  }
+  return html;
+}
+
 function prepareHtml(html, source) {
   // The site publishes British English and stamps en-GB metadata everywhere;
   // normalise the bare lang="en" used by older source pages to match.
@@ -1101,6 +1180,7 @@ function prepareHtml(html, source) {
   html = addEditorialCredit(html, source);
   html = addEditionSample(html, source);
   html = addContextImageShelf(html, source);
+  html = addStudyToolkit(html, source);
   html = addSiteIndexLink(html, source);
   html = addBookSeasonLinks(html, source);
   html = addGlobalNavigation(html, source);
