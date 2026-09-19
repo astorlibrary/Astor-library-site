@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 25,
-    "quotations": 568,
-    "characters": 231,
-    "themes": 117,
-    "techniques": 111,
-    "timelineEvents": 289,
-    "places": 140
+    "books": 26,
+    "quotations": 592,
+    "characters": 239,
+    "themes": 122,
+    "techniques": 117,
+    "timelineEvents": 297,
+    "places": 146
   },
   "books": [
     {
@@ -2655,6 +2655,1412 @@
         {
           "href": "/books/a-midsummer-nights-dream-expanded-scholarly-edition/",
           "why": "The expanded Astor edition, with fuller textual, critical and performance material."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "antony-and-cleopatra",
+      "title": "Antony and Cleopatra",
+      "author": "William Shakespeare",
+      "href": "/books/antony-and-cleopatra/",
+      "studyHref": "",
+      "playHref": "/play/?book=antony-and-cleopatra",
+      "form": "play",
+      "genre": "Tragedy",
+      "period": "Shakespeare",
+      "setting": "The Roman world after Julius Caesar’s death: Alexandria, Rome, Misenum, Athens, Syria and the sea off Actium",
+      "written": "c. 1606–07",
+      "firstPublished": 1623,
+      "readingTime": 190,
+      "difficulty": 4,
+      "lengthNote": "Around 3,000 lines spread over forty-two scenes — more scenes than any other play in the Folio",
+      "openingLine": "Nay, but this dotage of our general's O'erflows the measure",
+      "summary": "A triumvir who governs a third of the known world will not leave Alexandria, and Rome sends messengers instead of armies. Shakespeare gives the story forty-two scenes and no settled vantage point: every judgement passed on Antony is passed by someone with an interest in it. After Actium the play stops being about who wins and becomes about who gets to describe the losers, and Cleopatra spends the last act taking that job away from Caesar.",
+      "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+      "sourceText": {
+        "label": "Globe/Moby text of Antony and Cleopatra",
+        "note": "Line numbers follow the traditional Globe numbering; modern editions divide some of the short battle scenes differently."
+      },
+      "structure": [
+        {
+          "id": "act-1",
+          "label": "Act I",
+          "title": "A general who will not come home",
+          "summary": "Rome watches Egypt through other people's eyes and does not like what it reports. Antony hears of his wife's death and of Pompey's fleet, decides to leave, and discovers that leaving Cleopatra is a scene she intends to direct. Caesar meanwhile sets out the charge sheet in private.",
+          "scenes": [
+            {
+              "ref": "1.1",
+              "title": "The measure overflowed",
+              "summary": "Philo tells a fellow officer what to look for, and the lovers walk on and perform exactly it."
+            },
+            {
+              "ref": "1.2",
+              "title": "News from Rome",
+              "summary": "A soothsayer reads the women's palms; Antony learns that Fulvia is dead and resolves to break his Egyptian fetters."
+            },
+            {
+              "ref": "1.3",
+              "title": "The parting",
+              "summary": "Cleopatra stages illness, accusation and forgiveness in one scene and lets Antony go on her own terms."
+            },
+            {
+              "ref": "1.4",
+              "title": "Caesar's account",
+              "summary": "Caesar itemises Antony's failings to Lepidus, then praises the soldier Antony once was when he needs him back."
+            },
+            {
+              "ref": "1.5",
+              "title": "Absence",
+              "summary": "Cleopatra fills the time with opium, memory and messengers, and dismisses her younger self as salad days."
+            }
+          ]
+        },
+        {
+          "id": "act-2",
+          "label": "Act II",
+          "title": "A marriage, a treaty and a drunken galley",
+          "summary": "The triumvirs patch their quarrel with Antony's marriage to Caesar's sister, and Enobarbus tells the Romans what they have just bargained against. Pompey is bought off at Misenum, and the peace is celebrated by three rulers of the world dancing on a boat while a pirate offers to cut the cable.",
+          "scenes": [
+            {
+              "ref": "2.1",
+              "title": "Pompey's reckoning",
+              "summary": "Pompey counts on Antony staying in Egypt and hears at once that he is coming to Rome."
+            },
+            {
+              "ref": "2.2",
+              "title": "The bargain and the barge",
+              "summary": "Antony agrees to marry Octavia; minutes later Enobarbus describes Cleopatra on the Cydnus to the men who arranged it."
+            },
+            {
+              "ref": "2.3",
+              "title": "The soothsayer",
+              "summary": "Told that his guardian spirit is always beaten by Caesar's, Antony decides to go back to Egypt."
+            },
+            {
+              "ref": "2.4",
+              "title": "Marching orders",
+              "summary": "Lepidus and the others arrange to meet at Mount Misenum."
+            },
+            {
+              "ref": "2.5",
+              "title": "The messenger struck",
+              "summary": "Cleopatra hales the bringer of the marriage news up and down, then calls him back to describe Octavia."
+            },
+            {
+              "ref": "2.6",
+              "title": "Terms at Misenum",
+              "summary": "Pompey accepts Sicily and Sardinia; Enobarbus and Menas measure each other in prose afterwards."
+            },
+            {
+              "ref": "2.7",
+              "title": "On the galley",
+              "summary": "Menas offers to cut the cable and make Pompey lord of the world; Pompey wishes it had been done without asking."
+            }
+          ]
+        },
+        {
+          "id": "act-3",
+          "label": "Act III",
+          "title": "Actium, and the ship that turned",
+          "summary": "The alliance dissolves in short scenes and reported news: Lepidus is deposed, Octavia is sent back, Antony insists on fighting at sea and then follows Cleopatra's fleeing sails. Defeat is immediately fought over as a story, and Enobarbus begins to calculate what loyalty to a falling man is worth.",
+          "scenes": [
+            {
+              "ref": "3.1",
+              "title": "Ventidius in Syria",
+              "summary": "A subordinate wins a victory and explains why winning too well is bad for a career."
+            },
+            {
+              "ref": "3.2",
+              "title": "Octavia leaves Rome",
+              "summary": "Enobarbus and Agrippa mock the triumvirs' tears while the marriage is sealed."
+            },
+            {
+              "ref": "3.3",
+              "title": "The report on Octavia",
+              "summary": "Cleopatra cross-examines the messenger until Octavia is short, low-voiced and dull."
+            },
+            {
+              "ref": "3.4",
+              "title": "Athens",
+              "summary": "Antony lists Caesar's slights; Octavia asks to mediate between husband and brother."
+            },
+            {
+              "ref": "3.5",
+              "title": "Lepidus removed",
+              "summary": "Eros reports that the third triumvir has been used and then imprisoned."
+            },
+            {
+              "ref": "3.6",
+              "title": "Caesar's case",
+              "summary": "Antony's public enthronement of Cleopatra and her children gives Rome its pretext; Octavia arrives without ceremony."
+            },
+            {
+              "ref": "3.7",
+              "title": "By sea",
+              "summary": "Every soldier argues for land; Antony fights by sea because Caesar dares him to."
+            },
+            {
+              "ref": "3.8",
+              "title": "Caesar's orders",
+              "summary": "Caesar tells Taurus not to engage on land until the sea is decided."
+            },
+            {
+              "ref": "3.9",
+              "title": "Antony's orders",
+              "summary": "Antony sets his squadrons where he can see the battle."
+            },
+            {
+              "ref": "3.10",
+              "title": "The flight",
+              "summary": "Enobarbus and Scarus watch Cleopatra's sixty ships turn and Antony's flagship follow."
+            },
+            {
+              "ref": "3.11",
+              "title": "Shame in Alexandria",
+              "summary": "Antony tells his followers to take his treasure and go, then forgives Cleopatra in the same breath as blaming her."
+            },
+            {
+              "ref": "3.12",
+              "title": "The schoolmaster",
+              "summary": "Antony's ambassador is a tutor; Caesar refuses his terms and sends Thidias to work on Cleopatra."
+            },
+            {
+              "ref": "3.13",
+              "title": "Thidias whipped",
+              "summary": "Antony has Caesar's envoy flogged for kissing Cleopatra's hand, calls for another supper, and Enobarbus decides to leave."
+            }
+          ]
+        },
+        {
+          "id": "act-4",
+          "label": "Act IV",
+          "title": "A victory, a desertion, and a death that will not come cleanly",
+          "summary": "Antony wins a day on land, and the music of a god leaving the city is heard under the stage the night before he loses the rest. Enobarbus dies of his own defection. Told a false report of Cleopatra's death, Antony asks Eros to kill him, botches the attempt himself, and is hauled up into the monument to die by degrees.",
+          "scenes": [
+            {
+              "ref": "4.1",
+              "title": "Caesar laughs",
+              "summary": "Antony's challenge to single combat is dismissed as the noise of a man out of options."
+            },
+            {
+              "ref": "4.2",
+              "title": "The last supper",
+              "summary": "Antony makes his servants weep by thanking them as though tonight were the end."
+            },
+            {
+              "ref": "4.3",
+              "title": "Music under the stage",
+              "summary": "Soldiers on watch hear hautboys beneath them and take it for Hercules leaving Antony."
+            },
+            {
+              "ref": "4.4",
+              "title": "Arming",
+              "summary": "Cleopatra helps buckle his armour and is told she is a better squire than she knows."
+            },
+            {
+              "ref": "4.5",
+              "title": "Enobarbus's chest",
+              "summary": "Antony hears of the desertion and sends his treasure after him with a kind message."
+            },
+            {
+              "ref": "4.6",
+              "title": "Caesar's front line",
+              "summary": "Caesar puts the deserters in the vanguard; Enobarbus receives the treasure and turns away to die."
+            },
+            {
+              "ref": "4.7",
+              "title": "A day on land",
+              "summary": "Scarus fights with new wounds and Antony's forces drive Caesar back to camp."
+            },
+            {
+              "ref": "4.8",
+              "title": "Home in triumph",
+              "summary": "Antony presents the wounded Scarus to Cleopatra and asks the city to make its armour ring."
+            },
+            {
+              "ref": "4.9",
+              "title": "The ditch",
+              "summary": "Enobarbus asks the moon to witness his repentance and dies before the watch can speak to him."
+            },
+            {
+              "ref": "4.10",
+              "title": "Sea again",
+              "summary": "Antony resolves to fight by water once more."
+            },
+            {
+              "ref": "4.11",
+              "title": "Caesar's instruction",
+              "summary": "Caesar tells his army to hold the valleys while the fleets meet."
+            },
+            {
+              "ref": "4.12",
+              "title": "The fleet yields",
+              "summary": "The Egyptian ships surrender without a fight and Antony calls Cleopatra a triple-turn'd whore."
+            },
+            {
+              "ref": "4.13",
+              "title": "The monument",
+              "summary": "Cleopatra takes refuge and sends word that she is dead, to see what it does."
+            },
+            {
+              "ref": "4.14",
+              "title": "Eros",
+              "summary": "Antony watches his shape dissolve like cloud, orders Eros to kill him, and falls on his own sword when Eros will not."
+            },
+            {
+              "ref": "4.15",
+              "title": "Hauled aloft",
+              "summary": "The dying Antony is lifted to Cleopatra, gives advice she refuses to take, and she resolves on a Roman death."
+            }
+          ]
+        },
+        {
+          "id": "act-5",
+          "label": "Act V",
+          "title": "Caesar's triumph, and the scene Cleopatra takes out of it",
+          "summary": "Caesar has won and needs Cleopatra alive to walk in Rome. The last act is a negotiation conducted by both sides in bad faith, until Cleopatra decides that a basket of figs is a better ending than a procession. She dies dressed for a coronation, and Caesar is left arranging the funeral of a story he did not write.",
+          "scenes": [
+            {
+              "ref": "5.1",
+              "title": "The news of Antony",
+              "summary": "Caesar weeps for the rival he has just destroyed and immediately asks how to keep Cleopatra from suicide."
+            },
+            {
+              "ref": "5.2",
+              "title": "The monument",
+              "summary": "Cleopatra is taken, lies to Caesar about her treasure, dreams Antony into a colossus and dies by the asp."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "antony",
+          "name": "Mark Antony",
+          "role": "Triumvir of Rome, general",
+          "summary": "A soldier whose reputation is largely made of other people's memories of him, and who keeps being asked to live up to a version of himself that is already historical. He is generous, careless and consistently late, and the play's tenderness towards him comes from watching a man lose the shape he is supposed to hold.",
+          "clue": "He rules a third of the world and answers a summons from it with a shrug; he dies asking for wine and permission to speak a little.",
+          "firstAppearance": "1.1",
+          "traits": [
+            "open-handed",
+            "self-dramatising",
+            "unable to hold one shape"
+          ],
+          "relationships": [
+            {
+              "to": "cleopatra",
+              "label": "lover of",
+              "kind": "love"
+            },
+            {
+              "to": "octavius-caesar",
+              "label": "partner and rival of",
+              "kind": "rival",
+              "stages": [
+                "act-1",
+                "act-2",
+                "act-3",
+                "act-4"
+              ]
+            },
+            {
+              "to": "octavia",
+              "label": "married to",
+              "kind": "marriage",
+              "stages": [
+                "act-2",
+                "act-3"
+              ]
+            },
+            {
+              "to": "enobarbus",
+              "label": "commander of",
+              "kind": "service"
+            }
+          ]
+        },
+        {
+          "id": "cleopatra",
+          "name": "Cleopatra",
+          "role": "Queen of Egypt",
+          "summary": "She is never off duty: every mood is real and also calculated, and the play declines to separate the two. Her political intelligence is usually discussed as caprice by Romans who cannot see that testing a messenger, staging a faint or refusing a triumph are all the same skill.",
+          "clue": "She beats the bringer of bad news, then asks him to describe her rival's height; at the end she dresses for a coronation to meet a snake.",
+          "firstAppearance": "1.1",
+          "traits": [
+            "quick",
+            "theatrical",
+            "politically exact"
+          ],
+          "relationships": [
+            {
+              "to": "antony",
+              "label": "lover of",
+              "kind": "love"
+            },
+            {
+              "to": "charmian",
+              "label": "served by",
+              "kind": "service"
+            },
+            {
+              "to": "octavius-caesar",
+              "label": "prize and opponent of",
+              "kind": "enemy",
+              "stages": [
+                "act-4",
+                "act-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "octavius-caesar",
+          "name": "Octavius Caesar",
+          "role": "Triumvir, later sole ruler of Rome",
+          "summary": "Young, dry and entirely without appetite, he wins because he is the only person in the play who never mistakes a gesture for an achievement. Shakespeare gives him no soliloquy at all, so the audience is never invited inside a mind that runs the world.",
+          "clue": "He drinks reluctantly, weeps on cue for a dead rival, and wants the queen alive mainly so that she can walk behind his chariot.",
+          "firstAppearance": "1.4",
+          "traits": [
+            "patient",
+            "unimaginative",
+            "always ahead"
+          ],
+          "relationships": [
+            {
+              "to": "antony",
+              "label": "partner and rival of",
+              "kind": "rival"
+            },
+            {
+              "to": "octavia",
+              "label": "brother of",
+              "kind": "family"
+            },
+            {
+              "to": "lepidus",
+              "label": "colleague and then gaoler of",
+              "kind": "enemy",
+              "stages": [
+                "act-2",
+                "act-3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "enobarbus",
+          "name": "Domitius Enobarbus",
+          "role": "Antony's lieutenant and closest follower",
+          "summary": "He talks to the audience in prose, sees through everyone including himself, and produces the one speech in the play that makes Cleopatra indisputable. His defection is a reasoned decision that kills him, which is the play's sharpest comment on reason.",
+          "clue": "He tells Rome about a burnished barge, calculates that loyalty to a falling lord is folly, acts on the calculation and dies of it in a ditch.",
+          "firstAppearance": "1.2",
+          "traits": [
+            "sardonic",
+            "clear-eyed",
+            "undone by being right"
+          ],
+          "relationships": [
+            {
+              "to": "antony",
+              "label": "follower, then deserter of",
+              "kind": "service"
+            },
+            {
+              "to": "cleopatra",
+              "label": "describes and defends",
+              "kind": "ally",
+              "stages": [
+                "act-2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "octavia",
+          "name": "Octavia",
+          "role": "Caesar's sister, Antony's second wife",
+          "summary": "A treaty in human form, and the play knows it: she is praised for holy, cold and still conversation by men deciding what to do with her. Her few speeches are attempts to be a person in an arrangement that needs her not to be.",
+          "clue": "Her marriage is the whole of the peace, and when she asks to travel between her brother and her husband she is really asking not to be the reason for a war.",
+          "firstAppearance": "2.3",
+          "traits": [
+            "dutiful",
+            "used"
+          ],
+          "relationships": [
+            {
+              "to": "octavius-caesar",
+              "label": "sister of",
+              "kind": "family"
+            },
+            {
+              "to": "antony",
+              "label": "married to",
+              "kind": "marriage",
+              "stages": [
+                "act-2",
+                "act-3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "charmian",
+          "name": "Charmian",
+          "role": "Cleopatra's attendant",
+          "summary": "She jokes with a soothsayer in the second scene and closes the queen's eyes in the last, and the play gives her the final judgement on Cleopatra's life. Straightening the crown on a dead woman's head before dying herself is the only stage direction the ending needs.",
+          "clue": "She asks a fortune-teller for a husband who cannot be angry, and ends by mending her mistress's crown and following her.",
+          "firstAppearance": "1.2",
+          "traits": [
+            "witty",
+            "loyal to the last gesture"
+          ],
+          "relationships": [
+            {
+              "to": "cleopatra",
+              "label": "attends",
+              "kind": "service"
+            }
+          ]
+        },
+        {
+          "id": "pompey",
+          "name": "Sextus Pompeius",
+          "role": "Commander of the fleet, the triumvirs' opponent at sea",
+          "summary": "He has the strongest navy and the weakest stomach for what winning would require. Offered the world by a pirate who only needs permission to cut a rope, he explains that the deed would have been honourable if he had not been told about it.",
+          "clue": "He is master of the sea and loses it by refusing an offer he would have accepted if nobody had asked him first.",
+          "firstAppearance": "2.1",
+          "traits": [
+            "well-placed",
+            "scrupulous at the wrong moment"
+          ],
+          "relationships": [
+            {
+              "to": "octavius-caesar",
+              "label": "enemy, then signatory with",
+              "kind": "enemy",
+              "stages": [
+                "act-2"
+              ]
+            },
+            {
+              "to": "antony",
+              "label": "rival and host of",
+              "kind": "rival",
+              "stages": [
+                "act-2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lepidus",
+          "name": "Lepidus",
+          "role": "The third triumvir",
+          "summary": "His function is to agree with whoever is speaking and to keep asking the others not to quarrel. He is carried drunk off Pompey's galley and deposed offstage a few scenes later, which is how the play measures the value of a share in power without the means to defend it.",
+          "clue": "A third of the world is his; he spends his best scene asking what sort of thing a crocodile is, and is carried off the boat asleep.",
+          "firstAppearance": "1.4",
+          "traits": [
+            "conciliatory",
+            "expendable"
+          ],
+          "relationships": [
+            {
+              "to": "octavius-caesar",
+              "label": "colleague of",
+              "kind": "ally",
+              "stages": [
+                "act-1",
+                "act-2"
+              ]
+            },
+            {
+              "to": "antony",
+              "label": "defender of",
+              "kind": "ally",
+              "stages": [
+                "act-1",
+                "act-2"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "rome-and-egypt",
+          "name": "Rome and Egypt",
+          "canonicalName": "Rome and Egypt",
+          "summary": "The play offers the opposition — discipline against appetite, measure against excess — in its first fourteen lines, and then spends five acts making it unusable. Rome is as theatrical as Alexandria; it has simply trained its performance to look like plain fact.",
+          "development": "Philo states the Roman case before Antony has spoken; by Act V Caesar is arranging a procession and Cleopatra is refusing a part in it, and both are staging."
+        },
+        {
+          "id": "measure",
+          "name": "Measure and excess",
+          "canonicalName": "Measure and excess",
+          "summary": "Counting is the Roman virtue: ships, legions, kingdoms, the terms of a treaty. Antony and Cleopatra answer in a vocabulary of boundlessness — new heavens, melting empires, an autumn that grew the more by reaping — and the play will not say which language is lying.",
+          "development": "Antony refuses to have love reckoned in 1.1; Caesar ends by counting the pair into a single grave and a solemn show."
+        },
+        {
+          "id": "performance",
+          "name": "Performance and self-presentation",
+          "canonicalName": "Performance and sincerity",
+          "summary": "Everyone here is managing an image: Cleopatra openly, Caesar invisibly, Antony badly. The most dangerous thing Cleopatra imagines in the last act is not death but a bad performance of herself by a squeaking boy actor in Rome.",
+          "development": "Play-acting is flirtation in Act I, propaganda in Act III, and by Act V the only remaining way of winning."
+        },
+        {
+          "id": "report",
+          "name": "News, messengers and report",
+          "canonicalName": "News, messengers and report",
+          "summary": "Almost everything important arrives through somebody else's mouth: Fulvia's death, the marriage, Actium, Antony's suicide. The play is built so that events reach the stage already interpreted, and the interpreter always has something at stake.",
+          "development": "A messenger is beaten in 2.5, a messenger is whipped in 3.13, and in 4.13 Cleopatra sends a false report of her own death to see what it will do."
+        },
+        {
+          "id": "dissolution",
+          "name": "Melting and dissolving identity",
+          "canonicalName": "Melting and dissolving identity",
+          "summary": "Antony's imagery is full of things losing their edges: Rome melting in Tiber, a cloud that was a horse becoming indistinct as water in water, a crown of the earth that melts at his death. The tragedy asks whether a self must keep one shape to be worth anything.",
+          "development": "The images begin as extravagance in Act I and become a description of his actual condition by 4.14, where he says outright that he cannot hold this visible shape."
+        },
+        {
+          "id": "loyalty",
+          "name": "Loyalty and defection",
+          "canonicalName": "Loyalty and defection",
+          "summary": "The play is full of people deciding when to leave, and it refuses to make any of those decisions simple. Enobarbus's desertion is reasonable, Antony's response to it is generous, and the generosity is what makes the reasonable decision unbearable.",
+          "development": "Ventidius declines to win too much in 3.1, Enobarbus leaves in 3.13, the Egyptian fleet yields in 4.12, and Charmian follows her mistress in 5.2."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "hyperbole",
+          "name": "Hyperbole",
+          "canonicalName": "Hyperbole",
+          "definition": "Deliberate overstatement, used not to deceive but to claim a scale ordinary language cannot reach.",
+          "bookDefinition": "Deliberate overstatement, used not to deceive but to claim a scale ordinary language cannot reach.",
+          "inThisBook": "Cleopatra's dream of an emperor whose legs bestrid the ocean is the play's largest overstatement and its most searching question: Dolabella says no such man existed, and she asks whether that settles anything."
+        },
+        {
+          "id": "short-scenes",
+          "name": "Scene fragmentation",
+          "canonicalName": "Scene fragmentation",
+          "definition": "Building an act from many brief scenes rather than a few long ones.",
+          "bookDefinition": "Building an act from many brief scenes rather than a few long ones.",
+          "inThisBook": "Act III changes place thirteen times, and the battle of Actium is split into four scenes of which none shows the fighting. Political space is made to feel unmanageable by the form itself."
+        },
+        {
+          "id": "messenger",
+          "name": "The messenger scene",
+          "canonicalName": "The messenger scene",
+          "definition": "A convention in which offstage events are reported to a listener who reacts in front of us.",
+          "bookDefinition": "A convention in which offstage events are reported to a listener who reacts in front of us.",
+          "inThisBook": "Shakespeare turns a convention into a subject: the messenger who is beaten in 2.5 and recalled in 3.3 shows that the listener, not the news, decides what the news means."
+        },
+        {
+          "id": "chorus-figure",
+          "name": "The commentator within the action",
+          "canonicalName": "The commentator within the action",
+          "definition": "A character who stands slightly outside events and interprets them, without being exempt from them.",
+          "bookDefinition": "A character who stands slightly outside events and interprets them, without being exempt from them.",
+          "inThisBook": "Enobarbus supplies the barge speech, the jokes and the running assessment of his own commander, and then discovers that commentary is not a safe place to stand."
+        },
+        {
+          "id": "run-on-verse",
+          "name": "Run-on verse",
+          "canonicalName": "Run-on verse",
+          "definition": "Blank verse in which sense spills past the line-ending instead of resting on it.",
+          "bookDefinition": "Blank verse in which sense spills past the line-ending instead of resting on it.",
+          "inThisBook": "The late style is at its loosest here: sentences begin mid-line, break off, and restart, so that even the grandest speeches sound like someone thinking rather than declaring."
+        },
+        {
+          "id": "elemental-imagery",
+          "name": "Elemental imagery",
+          "canonicalName": "Elemental imagery",
+          "definition": "Fire, air, earth and water used as a vocabulary for what a person is made of.",
+          "bookDefinition": "Fire, air, earth and water used as a vocabulary for what a person is made of.",
+          "inThisBook": "Cleopatra's 'I am fire and air' discards the two heavier elements at the moment of dying, having earlier called kingdoms clay through Antony's mouth."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "dotage-overflows",
+          "text": "Nay, but this dotage of our general's O'erflows the measure: those his goodly eyes, That o'er the files and musters of the war Have glow'd like plated Mars, now bend, now turn, The office and devotion of their view Upon a tawny front",
+          "speaker": "Philo",
+          "reference": "1.1.1",
+          "stage": "act-1",
+          "context": "The opening lines of the play, spoken to a fellow Roman officer just before Antony and Cleopatra walk on.",
+          "analysis": "The audience is given the Roman verdict before it is given a single fact, and the verb does the work: measure is the Roman unit of everything, and Antony is accused of exceeding it. Note that the criticism is grammatically a compliment gone wrong — the eyes still glow, they have simply been redirected.",
+          "themes": [
+            "rome-and-egypt",
+            "measure"
+          ],
+          "techniques": [
+            "chorus-figure"
+          ],
+          "characters": [
+            "antony"
+          ],
+          "source": "Globe/Moby text, 1.1.1-6",
+          "cloze": [
+            "dotage",
+            "measure"
+          ]
+        },
+        {
+          "id": "beggary-in-love",
+          "text": "There's beggary in the love that can be reckon'd.",
+          "speaker": "Mark Antony",
+          "reference": "1.1.16",
+          "stage": "act-1",
+          "context": "Answering Cleopatra's opening challenge, 'If it be love indeed, tell me how much.'",
+          "analysis": "Her question is a piece of accounting and his answer refuses the ledger, which sets the terms of the whole play. 'Reckon'd' carries both counting and being called to account, so the line quietly declines two different Roman demands in one word.",
+          "themes": [
+            "measure",
+            "rome-and-egypt"
+          ],
+          "techniques": [],
+          "characters": [
+            "antony",
+            "cleopatra"
+          ],
+          "source": "Globe/Moby text, 1.1.16",
+          "cloze": [
+            "beggary",
+            "reckon'd"
+          ]
+        },
+        {
+          "id": "rome-in-tiber",
+          "text": "Let Rome in Tiber melt, and the wide arch Of the ranged empire fall! Here is my space.",
+          "speaker": "Mark Antony",
+          "reference": "1.1.36",
+          "stage": "act-1",
+          "context": "Refusing to hear the messengers from Rome in front of Cleopatra.",
+          "analysis": "The first of the play's melting images arrives as bravado and returns in Act IV as diagnosis. 'Here is my space' is three monosyllables after a collapsing empire, and it is spoken by a man standing on a stage — the smallest possible claim, made in the largest possible terms.",
+          "themes": [
+            "dissolution",
+            "rome-and-egypt"
+          ],
+          "techniques": [
+            "hyperbole"
+          ],
+          "characters": [
+            "antony",
+            "cleopatra"
+          ],
+          "source": "Globe/Moby text, 1.1.36-37",
+          "cloze": [
+            "melt",
+            "space"
+          ]
+        },
+        {
+          "id": "fishes-drinks-wastes",
+          "text": "he fishes, drinks, and wastes The lamps of night in revel; is not more man-like Than Cleopatra; nor the queen of Ptolemy More womanly than he",
+          "speaker": "Octavius Caesar",
+          "reference": "1.4.4",
+          "stage": "act-1",
+          "context": "Reading the dispatches from Alexandria aloud to Lepidus.",
+          "analysis": "The charge is not laziness but exchange: Caesar's grievance is that the two of them have swapped a quality he believes is fixed. The sentence is arranged as a balance with Antony and Cleopatra on either side of it, so the syntax performs the crossing it complains of.",
+          "themes": [
+            "rome-and-egypt",
+            "report"
+          ],
+          "techniques": [],
+          "characters": [
+            "octavius-caesar",
+            "antony",
+            "cleopatra"
+          ],
+          "source": "Globe/Moby text, 1.4.4-7",
+          "cloze": [
+            "man-like",
+            "womanly"
+          ]
+        },
+        {
+          "id": "vagabond-flag",
+          "text": "This common body, Like to a vagabond flag upon the stream, Goes to and back, lackeying the varying tide, To rot itself with motion.",
+          "speaker": "Octavius Caesar",
+          "reference": "1.4.48",
+          "stage": "act-1",
+          "context": "On hearing that Pompey is gaining support among the people.",
+          "analysis": "Caesar's one extended image in the play is of the public as pondweed, and it tells you what kind of ruler he will be. 'Lackeying' turns the crowd into a servant running beside a horse, and 'rot itself with motion' denies that popular movement is even alive.",
+          "themes": [
+            "rome-and-egypt"
+          ],
+          "techniques": [],
+          "characters": [
+            "octavius-caesar",
+            "pompey"
+          ],
+          "source": "Globe/Moby text, 1.4.48-51",
+          "cloze": [
+            "lackeying",
+            "rot"
+          ]
+        },
+        {
+          "id": "salad-days",
+          "text": "My salad days, When I was green in judgment: cold in blood, To say as I said then!",
+          "speaker": "Cleopatra",
+          "reference": "1.5.86",
+          "stage": "act-1",
+          "context": "Silencing Charmian, who has reminded her how she once praised Julius Caesar.",
+          "analysis": "She rewrites her own past on the spot rather than lose an argument, and the phrase has been so thoroughly borrowed since that its edge is easy to miss: green is unripe, and cold in blood is an accusation of having been insufficiently alive. The revision is the performance.",
+          "themes": [
+            "performance"
+          ],
+          "techniques": [],
+          "characters": [
+            "cleopatra",
+            "charmian"
+          ],
+          "source": "Globe/Moby text, 1.5.86-88",
+          "cloze": [
+            "salad",
+            "green"
+          ]
+        },
+        {
+          "id": "the-barge",
+          "text": "The barge she sat in, like a burnish'd throne, Burn'd on the water: the poop was beaten gold; Purple the sails, and so perfumed that The winds were love-sick with them",
+          "speaker": "Domitius Enobarbus",
+          "reference": "2.2.230",
+          "stage": "act-2",
+          "context": "In Rome, to Agrippa and Maecenas, minutes after Antony has agreed to marry Octavia.",
+          "analysis": "The placing is the argument: the treaty has just been signed and Enobarbus immediately tells the signatories what they have bargained against. Shakespeare keeps much of North's prose almost word for word but breaks it across the verse line, so that the sentence never rests where the metre does.",
+          "themes": [
+            "performance",
+            "report"
+          ],
+          "techniques": [
+            "hyperbole",
+            "chorus-figure"
+          ],
+          "characters": [
+            "enobarbus",
+            "cleopatra"
+          ],
+          "source": "Globe/Moby text, 2.2.230-233",
+          "cloze": [
+            "barge",
+            "burnish'd"
+          ]
+        },
+        {
+          "id": "what-they-undid-did",
+          "text": "With divers-colour'd fans, whose wind did seem To glow the delicate cheeks which they did cool, And what they undid did.",
+          "speaker": "Domitius Enobarbus",
+          "reference": "2.2.242",
+          "stage": "act-2",
+          "context": "Continuing the description of Cleopatra on the river Cydnus.",
+          "analysis": "Four words at the end of the sentence contradict themselves twice and remain perfectly grammatical. It is the play's whole method in miniature: the fans cool and heat at once, and Cleopatra is not a paradox to be resolved but a description that has to hold both halves.",
+          "themes": [
+            "performance",
+            "measure"
+          ],
+          "techniques": [
+            "hyperbole"
+          ],
+          "characters": [
+            "enobarbus",
+            "cleopatra"
+          ],
+          "source": "Globe/Moby text, 2.2.242-244",
+          "cloze": [
+            "undid"
+          ]
+        },
+        {
+          "id": "infinite-variety",
+          "text": "Age cannot wither her, nor custom stale Her infinite variety: other women cloy The appetites they feed: but she makes hungry Where most she satisfies",
+          "speaker": "Domitius Enobarbus",
+          "reference": "2.2.278",
+          "stage": "act-2",
+          "context": "Answering Maecenas, who has just said that Antony must now leave her for good.",
+          "analysis": "The claim is presented as a prediction about Antony's behaviour, not a compliment, which is why the Romans take it seriously. 'Custom' and 'cloy' are both words about repetition wearing things out, and the line's argument is that Cleopatra has found a way of not repeating herself.",
+          "themes": [
+            "performance",
+            "measure"
+          ],
+          "techniques": [
+            "hyperbole",
+            "chorus-figure"
+          ],
+          "characters": [
+            "enobarbus",
+            "cleopatra",
+            "antony"
+          ],
+          "source": "Globe/Moby text, 2.2.278-281",
+          "cloze": [
+            "wither",
+            "variety"
+          ]
+        },
+        {
+          "id": "honesty-and-i",
+          "text": "Mine honesty and I begin to square.",
+          "speaker": "Domitius Enobarbus",
+          "reference": "3.13.47",
+          "stage": "act-3",
+          "context": "An aside, watching Cleopatra receive Caesar's messenger after Actium.",
+          "analysis": "'Square' means to quarrel, and the line splits a man from his own integrity as though they were two soldiers falling out. Everything Enobarbus says for the rest of the scene is an argument with himself conducted in the third person, and he loses it.",
+          "themes": [
+            "loyalty"
+          ],
+          "techniques": [
+            "chorus-figure"
+          ],
+          "characters": [
+            "enobarbus"
+          ],
+          "source": "Globe/Moby text, 3.13.47",
+          "cloze": [
+            "honesty",
+            "square"
+          ]
+        },
+        {
+          "id": "rudder-tied",
+          "text": "Egypt, thou knew'st too well My heart was to thy rudder tied by the strings, And thou shouldst tow me after",
+          "speaker": "Mark Antony",
+          "reference": "3.11.60",
+          "stage": "act-3",
+          "context": "In Alexandria after Actium, forgiving Cleopatra for the flight he chose to follow.",
+          "analysis": "He calls her by the name of her country, which is what the Romans do, and then describes himself as cargo. The accusation and the excuse are the same sentence: she knew, therefore it is her doing, and he was towed, therefore it is not his.",
+          "themes": [
+            "dissolution",
+            "loyalty"
+          ],
+          "techniques": [],
+          "characters": [
+            "antony",
+            "cleopatra"
+          ],
+          "source": "Globe/Moby text, 3.11.60-62",
+          "cloze": [
+            "rudder",
+            "tow"
+          ]
+        },
+        {
+          "id": "water-in-water",
+          "text": "That which is now a horse, even with a thought The rack dislimns, and makes it indistinct, As water is in water.",
+          "speaker": "Mark Antony",
+          "reference": "4.14.12",
+          "stage": "act-4",
+          "context": "To Eros, watching the evening clouds change shape before his last defeat.",
+          "analysis": "'Dislimns' — unpaints — is rare enough that Shakespeare may have made it, and it treats the sky as a canvas being wiped. The simile then refuses the comfort of a comparison: water in water is not like dissolution, it is the thing itself, and there is nothing left to see it against.",
+          "themes": [
+            "dissolution"
+          ],
+          "techniques": [
+            "elemental-imagery"
+          ],
+          "characters": [
+            "antony"
+          ],
+          "source": "Globe/Moby text, 4.14.12-14",
+          "cloze": [
+            "dislimns",
+            "water"
+          ]
+        },
+        {
+          "id": "visible-shape",
+          "text": "My good knave Eros, now thy captain is Even such a body: here I am Antony: Yet cannot hold this visible shape, my knave.",
+          "speaker": "Mark Antony",
+          "reference": "4.14.16",
+          "stage": "act-4",
+          "context": "Applying the cloud image to himself, moments before asking Eros to kill him.",
+          "analysis": "'Here I am Antony' ought to be the most certain statement a man can make, and the next line takes it back. The name has been public property since the first scene — Philo's, Caesar's, Cleopatra's — and Antony is the last person to lose his grip on it.",
+          "themes": [
+            "dissolution",
+            "performance"
+          ],
+          "techniques": [
+            "run-on-verse"
+          ],
+          "characters": [
+            "antony"
+          ],
+          "source": "Globe/Moby text, 4.14.16-18",
+          "cloze": [
+            "Antony",
+            "shape"
+          ]
+        },
+        {
+          "id": "master-leaver",
+          "text": "But let the world rank me in register A master-leaver and a fugitive",
+          "speaker": "Domitius Enobarbus",
+          "reference": "4.9.26",
+          "stage": "act-4",
+          "context": "Alone in a ditch by Caesar's camp, after Antony has sent his abandoned treasure after him.",
+          "analysis": "A man who has spent the play writing other people's reputations asks for his own to be filed under two words. 'Register' is a clerk's word, and the request is for no mitigation at all — he has understood that the record is the only judgement there will be.",
+          "themes": [
+            "loyalty",
+            "report"
+          ],
+          "techniques": [
+            "chorus-figure"
+          ],
+          "characters": [
+            "enobarbus",
+            "antony"
+          ],
+          "source": "Globe/Moby text, 4.9.26-27",
+          "cloze": [
+            "master-leaver",
+            "fugitive"
+          ]
+        },
+        {
+          "id": "dying-egypt",
+          "text": "I am dying, Egypt, dying: Give me some wine, and let me speak a little.",
+          "speaker": "Mark Antony",
+          "reference": "4.15.50",
+          "stage": "act-4",
+          "context": "Hauled up into the monument, bleeding from his own sword.",
+          "analysis": "He has already said the same half-line twenty-seven lines earlier, and repetition is how the scene measures time: the dying takes long enough that he has to announce it twice. The request is for wine and for permission — the most public man in the world asking to be allowed to finish a sentence.",
+          "themes": [
+            "dissolution",
+            "performance"
+          ],
+          "techniques": [
+            "run-on-verse"
+          ],
+          "characters": [
+            "antony",
+            "cleopatra"
+          ],
+          "source": "Globe/Moby text, 4.15.50-51",
+          "cloze": [
+            "dying",
+            "wine"
+          ]
+        },
+        {
+          "id": "crown-o-the-earth",
+          "text": "The crown o' the earth doth melt. My lord! O, wither'd is the garland of the war, The soldier's pole is fall'n: young boys and girls Are level now with men; the odds is gone, And there is nothing left remarkable Beneath the visiting moon.",
+          "speaker": "Cleopatra",
+          "reference": "4.15.75",
+          "stage": "act-4",
+          "context": "The moment Antony dies in her arms at the top of the monument.",
+          "analysis": "Grief is expressed as the collapse of every scale of difference: with the pole gone, children and men measure the same. 'The odds is gone' is flat and almost colloquial in the middle of the grandest lament in the play, and it is the line that tells you what she thinks she has lost — not a lover but a standard.",
+          "themes": [
+            "measure",
+            "dissolution"
+          ],
+          "techniques": [
+            "hyperbole"
+          ],
+          "characters": [
+            "cleopatra",
+            "antony"
+          ],
+          "source": "Globe/Moby text, 4.15.75-80",
+          "cloze": [
+            "melt",
+            "odds"
+          ]
+        },
+        {
+          "id": "legs-bestrid-the-ocean",
+          "text": "His legs bestrid the ocean: his rear'd arm Crested the world: his voice was propertied As all the tuned spheres",
+          "speaker": "Cleopatra",
+          "reference": "5.2.101",
+          "stage": "act-5",
+          "context": "Describing her dream of Antony to Dolabella, one of Caesar's officers.",
+          "analysis": "She is making a colossus out of a man who died badly two scenes ago, and she asks Dolabella outright whether such a person could have existed. His honest no does not end the exchange: she answers that dreaming him is itself a kind of evidence, which is the play's last defence of the imagination against Roman fact.",
+          "themes": [
+            "performance",
+            "measure"
+          ],
+          "techniques": [
+            "hyperbole"
+          ],
+          "characters": [
+            "cleopatra",
+            "antony"
+          ],
+          "source": "Globe/Moby text, 5.2.101-103",
+          "cloze": [
+            "bestrid",
+            "Crested"
+          ]
+        },
+        {
+          "id": "he-words-me",
+          "text": "He words me, girls, he words me, that I should not Be noble to myself",
+          "speaker": "Cleopatra",
+          "reference": "5.2.225",
+          "stage": "act-5",
+          "context": "The instant Caesar leaves, having promised her kind treatment.",
+          "analysis": "Turning the noun into a verb is the whole judgement: Caesar's courtesy is a technique and she has seen the mechanism. Her word for suicide here is 'noble to myself', which converts a Roman virtue into something a queen can do alone and in private.",
+          "themes": [
+            "report",
+            "performance"
+          ],
+          "techniques": [],
+          "characters": [
+            "cleopatra",
+            "octavius-caesar"
+          ],
+          "source": "Globe/Moby text, 5.2.225-226",
+          "cloze": [
+            "words",
+            "noble"
+          ]
+        },
+        {
+          "id": "squeaking-cleopatra",
+          "text": "the quick comedians Extemporally will stage us, and present Our Alexandrian revels; Antony Shall be brought drunken forth, and I shall see Some squeaking Cleopatra boy my greatness I' the posture of a whore.",
+          "speaker": "Cleopatra",
+          "reference": "5.2.258",
+          "stage": "act-5",
+          "context": "Explaining to Iras what a Roman triumph would actually involve.",
+          "analysis": "The line was first spoken by a boy actor playing Cleopatra, so the theatre is required to admit its own limits at the very moment she rejects them. What she fears is not death or captivity but a bad performance, and the fear is what drives her to write a better final scene.",
+          "themes": [
+            "performance",
+            "rome-and-egypt"
+          ],
+          "techniques": [
+            "chorus-figure"
+          ],
+          "characters": [
+            "cleopatra",
+            "antony"
+          ],
+          "source": "Globe/Moby text, 5.2.258-263",
+          "cloze": [
+            "squeaking",
+            "posture"
+          ]
+        },
+        {
+          "id": "immortal-longings",
+          "text": "Give me my robe, put on my crown; I have Immortal longings in me",
+          "speaker": "Cleopatra",
+          "reference": "5.2.328",
+          "stage": "act-5",
+          "context": "After the clown has delivered the basket of figs and wished her joy o' the worm.",
+          "analysis": "She dresses for a coronation rather than a death, and the stage business is deliberate: robe and crown are the properties Caesar intended to parade. The word 'longings' keeps the appetite the Romans accused her of and attaches it to eternity instead of to supper.",
+          "themes": [
+            "performance",
+            "measure"
+          ],
+          "techniques": [],
+          "characters": [
+            "cleopatra"
+          ],
+          "source": "Globe/Moby text, 5.2.328-329",
+          "cloze": [
+            "robe",
+            "Immortal"
+          ]
+        },
+        {
+          "id": "fire-and-air",
+          "text": "I am fire and air; my other elements I give to baser life.",
+          "speaker": "Cleopatra",
+          "reference": "5.2.337",
+          "stage": "act-5",
+          "context": "Dressed and crowned, a few lines before the asp is applied.",
+          "analysis": "Four elements were supposed to make a body; she discards earth and water and keeps the two that rise. It is also a direct answer to Antony's 'kingdoms are clay' in the first scene — the play's opening and closing images of substance are spoken by the two lovers about the same set of things.",
+          "themes": [
+            "dissolution",
+            "measure"
+          ],
+          "techniques": [
+            "elemental-imagery"
+          ],
+          "characters": [
+            "cleopatra"
+          ],
+          "source": "Globe/Moby text, 5.2.337-338",
+          "cloze": [
+            "fire",
+            "elements"
+          ]
+        },
+        {
+          "id": "baby-at-my-breast",
+          "text": "Dost thou not see my baby at my breast, That sucks the nurse asleep?",
+          "speaker": "Cleopatra",
+          "reference": "5.2.361",
+          "stage": "act-5",
+          "context": "With the asp at her breast, as Charmian cries out.",
+          "analysis": "The image makes her death an act of feeding, and the venom a child. Cleopatra's own children are barely mentioned in the play; here, at the last possible moment, she becomes a mother to the thing killing her, and asks a question rather than making a claim.",
+          "themes": [
+            "performance",
+            "dissolution"
+          ],
+          "techniques": [],
+          "characters": [
+            "cleopatra",
+            "charmian"
+          ],
+          "source": "Globe/Moby text, 5.2.361-362",
+          "cloze": [
+            "baby",
+            "nurse"
+          ]
+        },
+        {
+          "id": "lass-unparalleld",
+          "text": "Now boast thee, death, in thy possession lies A lass unparallel'd. Downy windows, close;",
+          "speaker": "Charmian",
+          "reference": "5.2.368",
+          "stage": "act-5",
+          "context": "Closing the dead queen's eyes before applying an asp to herself.",
+          "analysis": "After five acts of Egypt, empire and infinite variety, the summing-up word is 'lass' — the smallest, plainest, most domestic noun available. Charmian then straightens the crown, which is the only correction anyone in the play manages to make to how Cleopatra will be seen.",
+          "themes": [
+            "loyalty",
+            "performance"
+          ],
+          "techniques": [],
+          "characters": [
+            "charmian",
+            "cleopatra"
+          ],
+          "source": "Globe/Moby text, 5.2.368-369",
+          "cloze": [
+            "lass",
+            "unparallel'd"
+          ]
+        },
+        {
+          "id": "pair-so-famous",
+          "text": "She shall be buried by her Antony: No grave upon the earth shall clip in it A pair so famous.",
+          "speaker": "Octavius Caesar",
+          "reference": "5.2.421",
+          "stage": "act-5",
+          "context": "The play's closing speech, after the guards find Cleopatra dead.",
+          "analysis": "The winner's last act is to arrange the funeral of the people who beat him to it, and 'clip' — embrace — lets the grave do what Caesar prevented. He is already speaking of them as a story worth lamenting, which is exactly the outcome Cleopatra spent the act securing.",
+          "themes": [
+            "report",
+            "rome-and-egypt"
+          ],
+          "techniques": [],
+          "characters": [
+            "octavius-caesar",
+            "cleopatra",
+            "antony"
+          ],
+          "source": "Globe/Moby text, 5.2.421-423",
+          "cloze": [
+            "buried",
+            "famous"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "Written",
+          "value": "c. 1606–07",
+          "note": "Close in date to King Lear and Macbeth, and to Shakespeare’s other Plutarch play, Coriolanus."
+        },
+        {
+          "label": "First printed",
+          "value": "1623",
+          "note": "No quarto survives. The play was entered in the Stationers’ Register in 1608, but the Folio is the only early text."
+        },
+        {
+          "label": "Chief source",
+          "value": "Plutarch’s Life of Antony",
+          "note": "In Thomas North’s English translation of 1579, which Shakespeare follows closely enough that whole phrases survive into the verse."
+        },
+        {
+          "label": "Shape",
+          "value": "Five acts, forty-two scenes",
+          "note": "Act III alone changes location thirteen times; several scenes are under twenty lines long."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "A tragedy of the world well lost",
+          "summary": "The reading that takes the lovers at their own valuation: the Roman world is small, the love is large, and Cleopatra's last act converts political defeat into something Caesar cannot touch.",
+          "counter": "It has to look past Actium, the whipping of Thidias and the desertion of the Egyptian fleet, all of which the play insists on showing."
+        },
+        {
+          "position": "A political play about the making of an emperor",
+          "summary": "On this account the subject is Caesar's patient assembly of sole rule, with Antony as the last obstacle and Egypt as the pretext; the love story is the material out of which a founding myth of empire is built.",
+          "counter": "Shakespeare gives Caesar no soliloquy and the lovers almost all the poetry, which is a strange way to write a play about the winner."
+        },
+        {
+          "position": "A play about how reputation is manufactured",
+          "summary": "Recent criticism has concentrated on report, rumour and messengers: nearly every major event reaches us through someone with an interest in how it is described, and the last act is an open contest over who narrates the dead.",
+          "counter": "Pressed too far, it makes the play sound sceptical about everything, when Antony's physical death and Enobarbus's are given no gloss at all."
+        },
+        {
+          "position": "Cleopatra and the limits of the Roman categories",
+          "summary": "Feminist and postcolonial readings have examined how consistently Rome describes Egypt in terms of appetite, softness and race, and how far the play endorses that vocabulary or exposes it as a governing tool.",
+          "counter": "The play also gives Cleopatra the theatrical extravagance the Roman case predicts, so the critique and the caricature are made from the same material."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How far does the play invite us to accept Rome's judgement of Egypt?",
+          "focus": "Rome, Egypt and the reliability of the speaker",
+          "plan": [
+            "Start with the fact that Philo's verdict comes before any action: the audience is given a reading before it is given evidence.",
+            "Set Caesar's dispatch in 1.4 beside Enobarbus's barge speech in 2.2 and ask what each speaker needs his description to achieve.",
+            "Show how Roman self-presentation is also theatre, using the galley scene at Misenum and Caesar's management of Octavia.",
+            "Test the opposition against Act IV, where Antony's Roman death fails and Cleopatra's Egyptian one succeeds.",
+            "Conclude on 5.2: Caesar's final speech adopts the lovers' scale, which suggests the Roman categories have not held."
+          ]
+        },
+        {
+          "question": "Discuss Shakespeare's presentation of Cleopatra.",
+          "focus": "Performance, politics and the last act",
+          "plan": [
+            "Begin with 2.5 and 3.3, where testing a messenger is shown to be a method rather than a mood.",
+            "Use Enobarbus in 2.2 to establish that her theatricality is recognised by Rome as a political force.",
+            "Examine Actium and its aftermath as the point where her judgement is most open to attack.",
+            "Read 5.2 as a scene she constructs: the false account of her treasure, the dream of Antony, the robe and crown.",
+            "Weigh two conclusions: a woman who finally achieves dignity, or one who has been managing her own image throughout."
+          ]
+        },
+        {
+          "question": "What does the play gain from being written in so many short scenes?",
+          "focus": "Structure, pace and political space",
+          "plan": [
+            "Count the shape: forty-two scenes, thirteen of them in Act III, some under twenty lines.",
+            "Take Actium as the case study — four scenes, no fighting shown, the disaster delivered by witnesses.",
+            "Show how juxtaposition does the arguing: a Roman judgement is answered by the next Egyptian scene before the audience can settle it.",
+            "Consider the cost as well as the gain, including how little sustained interiority any character is allowed.",
+            "Close on the two long scenes that break the pattern, 2.2 and 5.2, and ask why those are the ones given room."
+          ]
+        },
+        {
+          "question": "'The tragedy of Enobarbus.' How useful is that description of the play?",
+          "focus": "Loyalty, judgement and the cost of being right",
+          "plan": [
+            "Establish his function: prose, asides, jokes and the running assessment of his own commander.",
+            "Trace his reasoning from 3.13, where honesty and he begin to square, to the decision itself.",
+            "Set Antony's response — sending the treasure after him — against the logic that produced the desertion.",
+            "Read 4.9 closely: he asks the world to record him in two words and offers no defence.",
+            "Decide whether his death is a sub-plot, a commentary on the main action, or the play's clearest verdict on measuring loyalty by prospects."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Almost every major event reaches us as a report. Does that make the play sceptical, or simply realistic about how politics works?",
+        "Caesar is given no soliloquy at all. What does Shakespeare gain by keeping the winner's mind closed to us?",
+        "Antony's death takes two scenes and goes wrong; Cleopatra's is quick and beautifully staged. What is the play saying by the contrast?",
+        "Cleopatra fears a squeaking boy actor more than she fears dying. What does that tell us about what she thinks is at stake?",
+        "Is Octavia a character or an instrument? Does the play notice the difference?"
+      ],
+      "timeline": [
+        {
+          "year": 1579,
+          "label": "North's translation of Plutarch published",
+          "detail": "Thomas North's English Plutarch, made from Amyot's French, gives Shakespeare both his narrative and some of his phrasing.",
+          "kind": "context"
+        },
+        {
+          "year": 1592,
+          "label": "Mary Sidney's Antonius printed",
+          "detail": "A translation of Robert Garnier's French tragedy, and part of an English fashion for closet drama about the Egyptian queen.",
+          "kind": "context"
+        },
+        {
+          "year": 1594,
+          "label": "Samuel Daniel's Cleopatra published",
+          "detail": "Written as a companion to Mary Sidney's play, and evidence that the subject was already established before Shakespeare took it up.",
+          "kind": "context"
+        },
+        {
+          "year": 1599,
+          "label": "Julius Caesar first performed",
+          "detail": "Antony's oration over the body belongs to the same Plutarchan material, seven or eight years earlier in Shakespeare's career.",
+          "kind": "work"
+        },
+        {
+          "year": 1606,
+          "label": "Antony and Cleopatra most likely written",
+          "detail": "Usually dated 1606–07, between King Lear and Coriolanus.",
+          "kind": "work"
+        },
+        {
+          "year": 1608,
+          "label": "Entered in the Stationers' Register",
+          "detail": "The entry records an intention to print that produced no surviving quarto.",
+          "kind": "work"
+        },
+        {
+          "year": 1623,
+          "label": "First Folio",
+          "detail": "The only early text, printed among the tragedies with no act or scene divisions of the kind modern editions supply.",
+          "kind": "work"
+        },
+        {
+          "year": 1678,
+          "label": "Dryden's All for Love published",
+          "detail": "A rewriting of the story in neoclassical form, keeping the unities Shakespeare ignores; it held the stage for well over a century.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Alexandria",
+          "lat": 31.2001,
+          "lon": 29.9187,
+          "note": "Cleopatra's palace and the monument in which both lovers die."
+        },
+        {
+          "name": "Rome",
+          "lat": 41.9028,
+          "lon": 12.4964,
+          "note": "Caesar's house, the triumvirs' quarrel and the marriage to Octavia."
+        },
+        {
+          "name": "Actium",
+          "lat": 38.9345,
+          "lon": 20.7628,
+          "note": "The sea battle of Act III, fought offstage and reported by two officers watching from the shore."
+        },
+        {
+          "name": "Misenum",
+          "lat": 40.7856,
+          "lon": 14.0817,
+          "note": "Where the triumvirs come to terms with Pompey and then get drunk on his galley."
+        },
+        {
+          "name": "Athens",
+          "lat": 37.9838,
+          "lon": 23.7275,
+          "note": "Antony and Octavia's household, and the scene in which the treaty begins to fail."
+        },
+        {
+          "name": "Tarsus",
+          "lat": 36.9177,
+          "lon": 34.8936,
+          "note": "On the river Cydnus, where Enobarbus places the barge and the first meeting."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/julius-caesar/",
+          "why": "The same Plutarch and the same Antony, seven years earlier and considerably more in control of a crowd."
+        },
+        {
+          "href": "/books/coriolanus/",
+          "why": "Shakespeare's other late Roman play from North, and the opposite temperament: a man who cannot perform at all."
+        },
+        {
+          "href": "/books/macbeth/",
+          "why": "Written within a year or two, and the contrast is instructive: one tragedy of terrible speed, one of enormous distances."
+        },
+        {
+          "href": "/books/romeo-and-juliet/",
+          "why": "The other play in which lovers die by their own hands in a monument, but at the beginning of a career and with none of the politics."
+        },
+        {
+          "href": "/books/cymbeline/",
+          "why": "Rome and a queen again, in the late mode where the tragic material is allowed to turn out otherwise."
         }
       ],
       "videos": []
@@ -21131,7 +22537,7 @@
           "id": "marriage-and-money",
           "name": "Marriage and money",
           "canonicalName": "Marriage and money",
-          "summary": "Every attachment in the novel is quoted with a figure attached, from Bingley’s four or five thousand a year to the hundred pounds that settles Lydia. Austen does not treat this as vulgar; she treats it as the arithmetic within which affection has to operate.",
+          "summary": "Every attachment in the novel is quoted with a figure attached, from Bingley’s four or five thousand a year to the hundred a year Mr Bennet is asked to promise for Lydia. Austen does not treat this as vulgar; she treats it as the arithmetic within which affection has to operate.",
           "development": "Stated as a joke in the first sentence, argued seriously by Charlotte in Chapter 22, and paid in cash by Darcy in the last volume."
         },
         {
@@ -21906,7 +23312,7 @@
         {
           "year": 1818,
           "label": "Northanger Abbey and Persuasion published together",
-          "detail": "Issued posthumously, with a biographical notice by her brother Henry that named her at last.",
+          "detail": "Issued in the last days of 1817 with 1818 on the title page, and carrying the biographical notice by her brother Henry that named her at last.",
           "kind": "reception"
         },
         {
@@ -29871,21 +31277,21 @@
           "id": "epoch-1-hartright",
           "label": "The First Epoch — Hartright",
           "title": "The road, Limmeridge and the likeness",
-          "summary": "Walter Hartright takes a post teaching drawing in Cumberland, having met a woman dressed entirely in white on the Finchley Road and helped her into a cab. At Limmeridge he finds his pupil's face is the same face, falls in love with an engaged woman, and is quietly removed from the household.",
+          "summary": "Walter Hartright takes a post teaching drawing in Cumberland, having met a woman dressed entirely in white on the Finchley Road and helped her into a cab. At Limmeridge he finds his pupil’s face is the same face, falls in love with an engaged woman, and is quietly removed from the household.",
           "scenes": []
         },
         {
           "id": "epoch-1-gilmore",
           "label": "The First Epoch — Gilmore",
           "title": "The settlement",
-          "summary": "The family solicitor takes over the narrative and the story becomes a document. Sir Percival's lawyer refuses to protect Laura's twenty thousand pounds, Mr Fairlie will not exert himself to object, and Gilmore signs a settlement he says no daughter of his would have been married under.",
+          "summary": "The family solicitor takes over the narrative and the story becomes a document. Sir Percival’s lawyer refuses to protect Laura’s twenty thousand pounds, Mr Fairlie will not exert himself to object, and Gilmore signs a settlement he says no daughter of his would have been married under.",
           "scenes": []
         },
         {
           "id": "epoch-1-halcombe",
-          "label": "The First Epoch — Marian's diary",
+          "label": "The First Epoch — Marian’s diary",
           "title": "The marriage agreed",
-          "summary": "Marian's diary begins, and with it the novel's most immediate voice: dated, unrevised and written by somebody who does not know what happens next. Laura tells Sir Percival the truth about her feelings and he marries her anyway.",
+          "summary": "Marian’s diary begins, and with it the novel’s most immediate voice: dated, unrevised and written by somebody who does not know what happens next. Laura tells Sir Percival the truth about her feelings and he marries her anyway.",
           "scenes": []
         },
         {
@@ -29899,28 +31305,28 @@
           "id": "epoch-2-others",
           "label": "The Second Epoch — other hands",
           "title": "The substitution, told by the people who were there",
-          "summary": "Mr Fairlie, the housekeeper Eliza Michelson, a cook, a doctor and a headstone carry the story through the exchange. Anne Catherick dies in London under Laura's name; Laura is taken to the asylum under Anne's, and every step is attested by somebody who saw only a fragment.",
+          "summary": "Mr Fairlie, the housekeeper Eliza Michelson, a cook, a doctor and a headstone carry the story through the exchange. Anne Catherick dies in London under Laura’s name; Laura is taken to the asylum under Anne’s, and every step is attested by somebody who saw only a fragment.",
           "scenes": []
         },
         {
           "id": "epoch-3-hartright",
           "label": "The Third Epoch — Hartright returns",
           "title": "A living woman and her own grave",
-          "summary": "Walter comes back from Central America to find a stone with Laura's name on it and a woman nobody will identify. The investigation turns into a search for dates: what is needed is not a confession but proof that the journey to London happened after the death on the certificate.",
+          "summary": "Walter comes back from Central America to find a stone with Laura’s name on it and a woman nobody will identify. The investigation turns into a search for dates: what is needed is not a confession but proof that the journey to London happened after the death on the certificate.",
           "scenes": []
         },
         {
           "id": "epoch-3-catherick-fosco",
           "label": "The Third Epoch — Mrs Catherick and Fosco",
           "title": "Two confessions, neither of them penitent",
-          "summary": "Mrs Catherick's letter explains the vestry, the forged register and the secret Sir Percival died trying to burn. Fosco, writing at pistol point, gives the conspiracy as a piece of intellectual autobiography and awards himself the credit for it.",
+          "summary": "Mrs Catherick’s letter explains the vestry, the forged register and the secret Sir Percival died trying to burn. Fosco, writing at pistol point, gives the conspiracy as a piece of intellectual autobiography and awards himself the credit for it.",
           "scenes": []
         },
         {
           "id": "epoch-3-conclusion",
           "label": "The Third Epoch — the conclusion",
           "title": "Identity restored, on paper",
-          "summary": "Fosco is killed in Paris by the Brotherhood he betrayed, the false inscription is cut away from the stone, and Laura's name is publicly restored in front of the tenants at Limmeridge. Walter closes the file he has spent the novel assembling and hands the last word to Marian.",
+          "summary": "Fosco is killed in Paris by the Brotherhood he betrayed, the false inscription is cut away from the stone, and Laura’s name is publicly restored in front of the tenants at Limmeridge. Walter closes the file he has spent the novel assembling and hands the last word to Marian.",
           "scenes": []
         }
       ],
@@ -29929,7 +31335,7 @@
           "id": "walter-hartright",
           "name": "Walter Hartright",
           "role": "A teacher of drawing, later the editor of the whole narrative",
-          "summary": "He is the novel's hero and also its archivist, which are two different kinds of power. He collects, orders and introduces every other statement in the book, so the reader's impression of Marian, Fosco and Laura has already passed through his hands before it arrives.",
+          "summary": "He is the novel’s hero and also its archivist, which are two different kinds of power. He collects, orders and introduces every other statement in the book, so the reader’s impression of Marian, Fosco and Laura has already passed through his hands before it arrives.",
           "clue": "He is walking back to London at midnight when a hand touches his shoulder, and he spends the rest of the book assembling the paperwork that follows.",
           "firstAppearance": "The First Epoch, Chapter I",
           "traits": [
@@ -29978,7 +31384,7 @@
         {
           "id": "marian-halcombe",
           "name": "Marian Halcombe",
-          "role": "Laura's half-sister",
+          "role": "Laura’s half-sister",
           "summary": "She is introduced through a description that admires her figure and recoils from her face, and then proceeds to do everything the plot requires: investigate, climb, travel, negotiate and remember. The novel gives her no money, no legal standing and the best prose in the book.",
           "clue": "She takes off her shoes, crawls out over a verandah roof in a downpour and writes down what she hears until the fever takes the pen away.",
           "firstAppearance": "The First Epoch, Chapter VI",
@@ -30085,7 +31491,7 @@
           "role": "Baronet, of Blackwater Park",
           "summary": "Charming for exactly as long as the settlement takes to sign, and after that a man locking doors. His secret is smaller and more frightening than the plot implies: he has no title at all, only a page added to a parish register, which makes him a forgery rather than a villain.",
           "clue": "He dies in the vestry of a country church, trying to burn the book that proves he was never entitled to his own name.",
-          "firstAppearance": "The First Epoch, Marian's diary",
+          "firstAppearance": "The First Epoch, Vincent Gilmore’s narrative",
           "traits": [
             "plausible in public",
             "violent in private",
@@ -30116,10 +31522,10 @@
         {
           "id": "count-fosco",
           "name": "Count Fosco",
-          "role": "An Italian exile, Sir Percival's friend",
+          "role": "An Italian exile, Sir Percival’s friend",
           "summary": "Enormous, silent-footed, fond of white mice and pastry, and the only character in the novel who thinks in terms of systems. He is also the one who writes his own confession and cannot resist making it a lecture; his vanity is what eventually kills him.",
           "clue": "He keeps canaries and white mice, flatters his enemy in her own diary, and is found in the Paris Morgue with a mark cut into his left arm.",
-          "firstAppearance": "The Second Epoch, Marian's narrative",
+          "firstAppearance": "The Second Epoch, Marian’s narrative",
           "traits": [
             "theatrical",
             "genuinely clever",
@@ -30149,7 +31555,7 @@
         {
           "id": "frederick-fairlie",
           "name": "Frederick Fairlie",
-          "role": "Laura's uncle, master of Limmeridge House",
+          "role": "Laura’s uncle, master of Limmeridge House",
           "summary": "A collector of etchings and coins who has made his own nerves into a full-time occupation, and whose refusal to be troubled is what allows every stage of the conspiracy to proceed. Collins hands him a narrative of his own so that he can convict himself in his own voice.",
           "clue": "He asks visitors to speak more quietly and to put the tray of coins back themselves, and calls himself a bundle of nerves dressed up to look like a man.",
           "firstAppearance": "The First Epoch, Chapter VII",
@@ -30177,10 +31583,10 @@
         {
           "id": "mrs-catherick",
           "name": "Mrs Catherick",
-          "role": "Anne's mother, of Welmingham",
-          "summary": "She sold her silence for respectability and has spent twenty years collecting it in instalments: a house, a clock, and the clergyman's bow every Sunday. Her narrative is the coldest thing in the book, because she is not ashamed of any of it.",
+          "role": "Anne’s mother, of Welmingham",
+          "summary": "She sold her silence for respectability and has spent twenty years collecting it in instalments: a house, a clock, and the clergyman’s bow every Sunday. Her narrative is the coldest thing in the book, because she is not ashamed of any of it.",
           "clue": "She sits at her window each Sunday to be bowed to by the clergyman, and counts that bow as the price of what she did in a vestry.",
-          "firstAppearance": "The Second Epoch, Marian's narrative",
+          "firstAppearance": "The Second Epoch, Marian’s narrative",
           "traits": [
             "unrepentant",
             "socially ambitious",
@@ -30203,9 +31609,9 @@
           "id": "vincent-gilmore",
           "name": "Vincent Gilmore",
           "role": "The Fairlie family solicitor",
-          "summary": "He writes the second narrative and supplies the novel's legal spine: the marriage settlement, the twenty thousand pounds, and the clause that makes Laura worth more dead than alive. He sees exactly what is coming and signs anyway, because his client will not be bothered.",
+          "summary": "He writes the second narrative and supplies the novel’s legal spine: the marriage settlement, the twenty thousand pounds, and the clause that makes Laura worth more dead than alive. He sees exactly what is coming and signs anyway, because his client will not be bothered.",
           "clue": "He records, twice and in the same words, that no daughter of his would have been married under the settlement he was compelled to draw up.",
-          "firstAppearance": "The First Epoch, Gilmore's narrative",
+          "firstAppearance": "The First Epoch, Gilmore’s narrative",
           "traits": [
             "professional",
             "clear-sighted",
@@ -30233,22 +31639,22 @@
           "id": "identity",
           "name": "Identity and documents",
           "canonicalName": "Identity and documents",
-          "summary": "A person in this novel is whatever the paperwork says. A gravestone, a doctor's certificate and a parish register are enough to kill a living woman and to make a commoner a baronet, and no amount of embodied self-knowledge will overturn any of them.",
-          "development": "Anne's white dress and Laura's face set up the resemblance; the inscription in Limmeridge churchyard executes it; and the counter-attack, when it comes, is made of dates rather than recognition."
+          "summary": "A person in this novel is whatever the paperwork says. A gravestone, a doctor’s certificate and a parish register are enough to kill a living woman and to make a commoner a baronet, and no amount of embodied self-knowledge will overturn any of them.",
+          "development": "Anne’s white dress and Laura’s face set up the resemblance; the inscription in Limmeridge churchyard executes it; and the counter-attack, when it comes, is made of dates rather than recognition."
         },
         {
           "id": "testimony",
           "name": "Testimony and the record",
           "canonicalName": "Testimony and the record",
           "summary": "The book is arranged as evidence in a trial that never takes place, and the arrangement is itself the argument: no single witness sees enough, and the person who compiles them holds the real power. Walter says so in the preamble and then exercises it for six hundred pages.",
-          "development": "From Hartright's opening statement of method, through Marian's dated diary and Mr Fairlie's self-serving deposition, to Fosco's written confession extracted at gunpoint."
+          "development": "From Hartright’s opening statement of method, through Marian’s dated diary and Mr Fairlie’s self-serving deposition, to Fosco’s written confession extracted at gunpoint."
         },
         {
           "id": "marriage-and-property",
           "name": "Marriage, money and the law",
           "canonicalName": "Marriage, money and the law",
-          "summary": "The conspiracy needs no magic, only a settlement. Laura's twenty thousand pounds passes to her husband if she dies first, and the whole plot is an attempt to bring that clause forward by about fifty years.",
-          "development": "Drafted in Gilmore's narrative, refused correction by an indolent guardian, and executed at Blackwater Park by a man who needs the money before his creditors arrive."
+          "summary": "The conspiracy needs no magic, only a settlement. Laura’s twenty thousand pounds passes to her husband if she dies first, and the whole plot is an attempt to bring that clause forward by about fifty years.",
+          "development": "Drafted in Gilmore’s narrative, refused correction by an indolent guardian, and executed at Blackwater Park by a man who needs the money before his creditors arrive."
         },
         {
           "id": "confinement",
@@ -30261,15 +31667,15 @@
           "id": "gender",
           "name": "What women are allowed to do",
           "canonicalName": "Manhood and gender",
-          "summary": "The preamble divides the world into a woman's patience and a man's resolution, and the novel immediately disobeys it. Marian does the investigating, the climbing and the remembering; Laura's own word about who she is counts for nothing in law.",
-          "development": "Stated as a formula in the first paragraph, contradicted throughout Marian's diary, and quietly restored at the end when the record is closed by Walter and the estate passes to his son."
+          "summary": "The preamble divides the world into a woman’s patience and a man’s resolution, and the novel immediately disobeys it. Marian does the investigating, the climbing and the remembering; Laura’s own word about who she is counts for nothing in law.",
+          "development": "Stated as a formula in the first paragraph, contradicted throughout Marian’s diary, and quietly restored at the end when the record is closed by Walter and the estate passes to his son."
         },
         {
           "id": "class-and-name",
           "name": "Rank, name and forgery",
           "canonicalName": "Rank, name and forgery",
-          "summary": "Sir Percival's secret is that his rank is a forgery, and the novel treats this as worse than the conspiracy it produced. A title, like an identity, turns out to be a line of writing in a book kept in a badly locked cupboard.",
-          "development": "Hinted by Anne's question about men of the rank of Baronet, investigated through the marriage register at Old Welmingham, and settled by a fire in a vestry."
+          "summary": "Sir Percival’s secret is that his rank is a forgery, and the novel treats this as worse than the conspiracy it produced. A title, like an identity, turns out to be a line of writing in a book kept in a badly locked cupboard.",
+          "development": "Hinted by Anne’s question about men of the rank of Baronet, investigated through the marriage register at Old Welmingham, and settled by a fire in a vestry."
         }
       ],
       "techniques": [
@@ -30303,7 +31709,7 @@
           "canonicalName": "Serial suspense",
           "definition": "Shaping instalments so that each ends where a reader cannot stop.",
           "bookDefinition": "Shaping instalments so that each ends where a reader cannot stop.",
-          "inThisBook": "Collins was writing weekly while the novel was appearing, and the seams show in the best way: narratives break off mid-crisis, and Marian's diary simply stops in the middle of a sentence."
+          "inThisBook": "Collins was writing weekly while the novel was appearing, and the seams show in the best way: narratives break off mid-crisis, and Marian’s diary simply stops in the middle of a sentence."
         },
         {
           "id": "chronology",
@@ -30319,7 +31725,7 @@
           "canonicalName": "Reading faces",
           "definition": "Treating physical appearance as evidence of character, in the manner of Victorian physiognomy.",
           "bookDefinition": "Treating physical appearance as evidence of character, in the manner of Victorian physiognomy.",
-          "inThisBook": "Walter grades Marian's figure and then her face in two consecutive paragraphs, and the novel spends the rest of its length disproving the second reading with her conduct."
+          "inThisBook": "Walter grades Marian’s figure and then her face in two consecutive paragraphs, and the novel spends the rest of its length disproving the second reading with her conduct."
         }
       ],
       "quotations": [
@@ -30327,7 +31733,7 @@
           "id": "womans-patience",
           "text": "This is the story of what a woman’s patience can endure, and what a Man’s resolution can achieve.",
           "speaker": "Walter Hartright",
-          "reference": "The First Epoch, Walter Hartright's narrative, Chapter I",
+          "reference": "The First Epoch, Walter Hartright’s narrative, Chapter I",
           "stage": "epoch-1-hartright",
           "context": "The first sentence of the preamble.",
           "analysis": "Two virtues, two sexes, and the capital letters fall on Man and not on woman. The book then reverses the assignment without ever amending the sentence: it is Marian who acts and Walter who spends years waiting for a date to be proved, and the formula stands at the front of the file like an uncorrected heading.",
@@ -30351,10 +31757,10 @@
           "id": "more-than-one-pen",
           "text": "the story here presented will be told by more than one pen, as the story of an offence against the laws is told in Court by more than one witness⁠—with the same object, in both cases, to present the truth always in its most direct and most intelligible aspect; and to trace the course of one complete series of events, by making the persons who have been most closely connected with them, at each successive stage, relate their own experience, word for word.",
           "speaker": "Walter Hartright",
-          "reference": "The First Epoch, Walter Hartright's narrative, Chapter I",
+          "reference": "The First Epoch, Walter Hartright’s narrative, Chapter I",
           "stage": "epoch-1-hartright",
           "context": "The preamble, setting out how the narrative to follow has been assembled.",
-          "analysis": "The comparison is to a court, and it promises the reader a jury's job. What the sentence does not mention is the person who chose the witnesses and set them in order; 'word for word' guarantees the accuracy of each statement and says nothing about the selection.",
+          "analysis": "The comparison is to a court, and it promises the reader a jury’s job. What the sentence does not mention is the person who chose the witnesses and set them in order; ‘word for word’ guarantees the accuracy of each statement and says nothing about the selection.",
           "themes": [
             "testimony",
             "identity"
@@ -30376,10 +31782,10 @@
           "id": "solitary-woman",
           "text": "There, in the middle of the broad bright high road⁠—there, as if it had that moment sprung out of the earth or dropped from the heaven⁠—stood the figure of a solitary woman, dressed from head to foot in white garments, her face bent in grave inquiry on mine, her hand pointing to the dark cloud over London, as I faced her.",
           "speaker": "Walter Hartright",
-          "reference": "The First Epoch, Walter Hartright's narrative, Chapter IV",
+          "reference": "The First Epoch, Walter Hartright’s narrative, Chapter IV",
           "stage": "epoch-1-hartright",
           "context": "On the Finchley Road at the end of a July night, the moment a hand touches his shoulder.",
-          "analysis": "The repeated 'there' holds her in place for a whole clause before the sentence admits what she is, and the two alternatives offered — out of the earth or down from the heaven — are both supernatural. She is described entirely by her clothes and her gesture; the novel will spend six hundred pages establishing that she also has a name.",
+          "analysis": "The repeated ‘there’ holds her in place for a whole clause before the sentence admits what she is, and the two alternatives offered — out of the earth or down from the heaven — are both supernatural. She is described entirely by her clothes and her gesture; the novel will spend six hundred pages establishing that she also has a name.",
           "themes": [
             "identity"
           ],
@@ -30398,35 +31804,35 @@
           ]
         },
         {
-          "id": "rank-of-baronet",
-          "text": "many men of the rank of Baronet?",
-          "speaker": "Anne Catherick",
-          "reference": "The First Epoch, Walter Hartright's narrative, Chapter IV",
+          "id": "escaped-from-my-asylum",
+          "text": "Done! She has escaped from my asylum. Don’t forget; a woman in white. Drive on.",
+          "speaker": "The proprietor of the asylum",
+          "reference": "The First Epoch, Walter Hartright’s narrative, Chapter IV",
           "stage": "epoch-1-hartright",
-          "context": "Interrupting herself on the road to London, having stopped to look him in the face.",
-          "analysis": "She asks about a class of persons rather than a person, which is the most she dares and the most she knows. The question is also the novel's first piece of withheld evidence, and Walter records the full stop and the searching look because he cannot yet record the name.",
+          "context": "Called down from a chaise to a policeman on the Finchley Road, minutes after Walter has put the woman into a cab.",
+          "analysis": "Four sentences, and the only description offered is a colour. The policeman asks what she has done and is answered with a word that means the opposite of an offence, which is the novel’s first demonstration that a certificate does the work a charge would otherwise have to do.",
           "themes": [
-            "class-and-name",
-            "testimony"
+            "confinement",
+            "identity"
           ],
           "techniques": [
             "serial-suspense"
           ],
           "characters": [
             "anne-catherick",
-            "sir-percival-glyde"
+            "walter-hartright"
           ],
           "source": "Standard Ebooks text, The First Epoch, Hartright, Chapter IV",
           "cloze": [
-            "rank",
-            "Baronet"
+            "escaped",
+            "asylum"
           ]
         },
         {
           "id": "the-lady-is-dark",
           "text": "She left the window⁠—and I said to myself, The lady is dark. She moved forward a few steps⁠—and I said to myself, The lady is young.",
           "speaker": "Walter Hartright",
-          "reference": "The First Epoch, Walter Hartright's narrative, Chapter VI",
+          "reference": "The First Epoch, Walter Hartright’s narrative, Chapter VI",
           "stage": "epoch-1-hartright",
           "context": "Meeting Marian Halcombe for the first time, before she turns round.",
           "analysis": "Two clauses of movement, each answered by a verdict, as though a face were arriving in instalments. The syntax is a piece of physiognomy in action, and the paragraph that follows — swarthy, masculine, almost a moustache — shows the method failing on the one person in the book most worth reading correctly.",
@@ -30450,9 +31856,9 @@
           "id": "bundle-of-nerves",
           "text": "I am nothing but a bundle of nerves dressed up to look like a man.",
           "speaker": "Frederick Fairlie",
-          "reference": "The Second Epoch, Frederick Fairlie's narrative",
+          "reference": "The Second Epoch, Frederick Fairlie’s narrative",
           "stage": "epoch-2-others",
-          "context": "Asked by his servant how he is, on the morning Fosco's messenger arrives.",
+          "context": "Asked by his servant how he is, on the morning Fosco’s messenger arrives.",
           "analysis": "He describes himself as an assemblage rather than a person, and does it with obvious pleasure. Collins gives him his own narrative precisely so that this self-portrait can be volunteered rather than reported: the man whose refusal to be troubled costs his niece her name is allowed to explain himself, and does.",
           "themes": [
             "gender",
@@ -30464,7 +31870,7 @@
           "characters": [
             "frederick-fairlie"
           ],
-          "source": "Standard Ebooks text, The Second Epoch, Frederick Fairlie's narrative",
+          "source": "Standard Ebooks text, The Second Epoch, Frederick Fairlie’s narrative",
           "cloze": [
             "bundle",
             "nerves"
@@ -30472,12 +31878,12 @@
         },
         {
           "id": "no-daughter-of-mine",
-          "text": "remember that my plain duty of warning you has been performed. As the faithful friend and servant of your family, I tell you, at parting, that no daughter of mine should be married to any man alive under such a settlement as you are forcing me to make for Miss Fairlie.",
+          "text": "Seriously and sorrowfully I repeat here the parting words that I spoke at Limmeridge House:⁠—No daughter of mine should have been married to any man alive under such a settlement as I was compelled to make for Laura Fairlie.",
           "speaker": "Vincent Gilmore",
-          "reference": "The First Epoch, Vincent Gilmore's narrative, Chapter IV",
+          "reference": "The First Epoch, Vincent Gilmore’s narrative, Chapter IV",
           "stage": "epoch-1-gilmore",
-          "context": "To Mr Fairlie, having failed to persuade him to protect Laura's twenty thousand pounds.",
-          "analysis": "A solicitor puts his objection on the record and then draws the document anyway, which is the most accurate picture of professional helplessness in Victorian fiction. He repeats the same sentence at the end of his narrative, in the past tense, which is what a man does when he expects to be asked about it later.",
+          "context": "Closing his narrative, having failed to persuade Mr Fairlie to protect Laura’s twenty thousand pounds.",
+          "analysis": "He puts his objection on the record, draws the document anyway, and then quotes himself in the past tense at the end of his own statement — which is what a professional man does when he expects to be asked about it later. It is the most accurate picture of legal helplessness in the novel: he sees the clause, names it, and signs.",
           "themes": [
             "marriage-and-property",
             "testimony"
@@ -30493,7 +31899,7 @@
           ],
           "source": "Standard Ebooks text, The First Epoch, Gilmore, Chapter IV",
           "cloze": [
-            "warning",
+            "daughter",
             "settlement"
           ]
         },
@@ -30501,9 +31907,9 @@
           "id": "men-are-the-enemies",
           "text": "No man under heaven deserves these sacrifices from us women. Men! They are the enemies of our innocence and our peace⁠—they drag us away from our parents’ love and our sisters’ friendship⁠—they take us body and soul to themselves, and fasten our helpless lives to theirs as they chain up a dog to his kennel.",
           "speaker": "Marian Halcombe",
-          "reference": "The First Epoch, Marian Halcombe's diary, Chapter II",
+          "reference": "The First Epoch, Marian Halcombe’s diary, Chapter II",
           "stage": "epoch-1-halcombe",
-          "context": "To Laura, who has just said that she means to go through with the marriage for her father's sake.",
+          "context": "To Laura, who has just said that she means to go through with the marriage for her father’s sake.",
           "analysis": "The simile is domestic and brutal: a wife is a dog chained to a kennel, and the verbs — drag, take, fasten — are all transitive with women as their object. It is the most explicit political statement in the novel, and Collins gives it to a woman writing privately in a diary she does not expect anyone to read.",
           "themes": [
             "gender",
@@ -30516,7 +31922,7 @@
             "marian-halcombe",
             "laura-fairlie"
           ],
-          "source": "Standard Ebooks text, The First Epoch, Marian Halcombe's diary, Chapter II",
+          "source": "Standard Ebooks text, The First Epoch, Marian Halcombe’s diary, Chapter II",
           "cloze": [
             "sacrifices",
             "kennel"
@@ -30526,7 +31932,7 @@
           "id": "fools-crime",
           "text": "The fool’s crime is the crime that is found out, and the wise man’s crime is the crime that is not found out.",
           "speaker": "Count Fosco",
-          "reference": "The Second Epoch, Marian Halcombe's narrative, Chapter III",
+          "reference": "The Second Epoch, Marian Halcombe’s narrative, Chapter III",
           "stage": "epoch-2-halcombe",
           "context": "At Blackwater Park, arguing after dinner that crimes cause their own detection is a piece of claptrap.",
           "analysis": "The antithesis is perfectly balanced and completely circular: the only evidence of a wise crime is that you have never heard of it. Fosco is describing the plan he is about to execute, out loud, to the woman who will try to stop him, and the pleasure of saying it is what he cannot forgo.",
@@ -30551,10 +31957,10 @@
           "id": "english-society",
           "text": "English Society, Miss Halcombe, is as often the accomplice as it is the enemy of crime.",
           "speaker": "Count Fosco",
-          "reference": "The Second Epoch, Marian Halcombe's narrative, Chapter III",
+          "reference": "The Second Epoch, Marian Halcombe’s narrative, Chapter III",
           "stage": "epoch-2-halcombe",
-          "context": "Continuing the same argument, having just accused John Bull of finding other people's faults faster than his own.",
-          "analysis": "The foreigner is given the outsider's privilege of describing the host country's machinery, and the sentence turns out to be a plot summary: the conspiracy works because respectable people accept a certificate. Collins puts his own thesis in the villain's mouth, which is a cheap trick that works.",
+          "context": "Continuing the same argument, having just accused John Bull of finding other people’s faults faster than his own.",
+          "analysis": "The foreigner is given the outsider’s privilege of describing the host country’s machinery, and the sentence turns out to be a plot summary: the conspiracy works because respectable people accept a certificate. Collins puts his own thesis in the villain’s mouth, which is a cheap trick that works.",
           "themes": [
             "identity",
             "class-and-name"
@@ -30576,7 +31982,7 @@
           "id": "womans-tongue",
           "text": "Women can resist a man’s love, a man’s fame, a man’s personal appearance, and a man’s money, but they cannot resist a man’s tongue when he knows how to talk to them.",
           "speaker": "Marian Halcombe",
-          "reference": "The Second Epoch, Marian Halcombe's narrative, Chapter V",
+          "reference": "The Second Epoch, Marian Halcombe’s narrative, Chapter V",
           "stage": "epoch-2-halcombe",
           "context": "In her diary, after an evening in which Fosco has deliberately charmed the table.",
           "analysis": "She writes the sentence as a general law and includes herself in it, which is the honesty that makes her diary worth reading. The list ascends from love to fame to appearance to money and then breaks the pattern: the irresistible thing is not a possession at all but a technique.",
@@ -30601,10 +32007,10 @@
           "id": "fosco-postscript",
           "text": "The illness of our excellent Miss Halcombe has afforded me the opportunity of enjoying an unexpected intellectual pleasure.",
           "speaker": "Count Fosco",
-          "reference": "The Second Epoch, Marian Halcombe's narrative, postscript",
+          "reference": "The Second Epoch, Marian Halcombe’s narrative, postscript",
           "stage": "epoch-2-halcombe",
-          "context": "Written at the foot of Marian's diary, which breaks off mid-sentence when the fever takes her.",
-          "analysis": "The violation is done entirely in the register of a compliment, and the reader discovers it at the same moment as the page is turned. It is also a formal outrage: the novel's most private document is annotated by its antagonist, which tells you exactly how safe any of these testimonies are.",
+          "context": "Written at the foot of Marian’s diary, which breaks off mid-sentence when the fever takes her.",
+          "analysis": "The violation is done entirely in the register of a compliment, and the reader discovers it at the same moment as the page is turned. It is also a formal outrage: the novel’s most private document is annotated by its antagonist, which tells you exactly how safe any of these testimonies are.",
           "themes": [
             "testimony",
             "identity"
@@ -30617,7 +32023,7 @@
             "count-fosco",
             "marian-halcombe"
           ],
-          "source": "Standard Ebooks text, The Second Epoch, Marian Halcombe's narrative, Postscript by a Sincere Friend",
+          "source": "Standard Ebooks text, The Second Epoch, Marian Halcombe’s narrative, Postscript by a Sincere Friend",
           "cloze": [
             "illness",
             "intellectual"
@@ -30650,12 +32056,12 @@
         },
         {
           "id": "socially-morally-legally-dead",
-          "text": "In the eye of reason and of law, in the estimation of relatives and friends, according to every received formality of civilised society, “Laura, Lady Glyde,” lay buried with her mother in Limmeridge churchyard. Torn in her own lifetime from the list of the living, the daughter of Philip Fairlie and the wife of Percival Glyde might still exist for her sister, might still exist for me, but to all the world besides she was dead. Dead to her uncle, who had renounced her; dead to the servants of the house, who had failed to recognise her; dead to the persons in authority, who had transmitted her fortune to her husband and her aunt; dead to my mother and my sister, who believed me to be the dupe of an adventuress and the victim of a fraud; socially, morally, legally",
+          "text": "Dead to her uncle, who had renounced her; dead to the servants of the house, who had failed to recognise her; dead to the persons in authority, who had transmitted her fortune to her husband and her aunt; dead to my mother and my sister, who believed me to be the dupe of an adventuress and the victim of a fraud; socially, morally, legally⁠—dead.",
           "speaker": "Walter Hartright",
-          "reference": "The Third Epoch, Walter Hartright's narrative, Chapter I",
+          "reference": "The Third Epoch, Walter Hartright’s narrative, Chapter I",
           "stage": "epoch-3-hartright",
           "context": "Opening the Third Epoch, standing in a world where the woman beside him is officially buried.",
-          "analysis": "The sentence accumulates authorities — reason, law, relatives, friends, formality — and then the paragraph tolls the word 'dead' at the end of clause after clause. The three adverbs at the close are ranked from softest to hardest, and it is the legal one that the rest of the novel has to attack.",
+          "analysis": "Four clauses, each beginning with the same word and each naming a different authority — a guardian, the servants, the officials who transferred her fortune, and his own family. The three adverbs at the close rank the kinds of death from softest to hardest, and it is the legal one the rest of the novel has to attack.",
           "themes": [
             "identity",
             "testimony"
@@ -30669,18 +32075,18 @@
           ],
           "source": "Standard Ebooks text, The Third Epoch, Hartright, Chapter I",
           "cloze": [
-            "reason",
-            "dead"
+            "renounced",
+            "legally"
           ]
         },
         {
           "id": "the-date-proves-the-case",
           "text": "she must have started on the twenty-sixth, and must have come to London one day after the date of her own death on the doctor’s certificate. If we can prove that date, we prove our case against Sir Percival and the Count.",
           "speaker": "Walter Hartright",
-          "reference": "The Third Epoch, Walter Hartright's narrative, Chapter IV",
+          "reference": "The Third Epoch, Walter Hartright’s narrative, Chapter IV",
           "stage": "epoch-3-hartright",
           "context": "Working out with Marian what evidence would actually overturn the conspiracy.",
-          "analysis": "The rescue turns on a single day. Nobody needs to recognise Laura, and nobody's word about her is worth anything; what is required is a document showing she travelled after she died. Collins makes the emotional climax of his novel an argument about a calendar, which is the most Victorian thing about it.",
+          "analysis": "The rescue turns on a single day. Nobody needs to recognise Laura, and nobody’s word about her is worth anything; what is required is a document showing she travelled after she died. Collins makes the emotional climax of his novel an argument about a calendar, which is the most Victorian thing about it.",
           "themes": [
             "identity",
             "testimony"
@@ -30704,7 +32110,7 @@
           "id": "the-register",
           "text": "I was struck by the insecurity of the place in which the register was kept. The door of the press was warped and cracked with age, and the lock was of the smallest and commonest kind. I could have forced it easily with the walking-stick I carried in my hand.",
           "speaker": "Walter Hartright",
-          "reference": "The Third Epoch, Walter Hartright's narrative, Chapter IX",
+          "reference": "The Third Epoch, Walter Hartright’s narrative, Chapter IX",
           "stage": "epoch-3-hartright",
           "context": "In the vestry at Old Welmingham, as the clerk produces the marriage register.",
           "analysis": "A baronetcy is kept in a warped cupboard behind a lock that a man could break with a walking-stick, and Collins gives us the exact means to hand. The register is the same kind of object as the gravestone and the death certificate: a piece of writing that makes a person, kept somewhere nobody guards.",
@@ -30729,10 +32135,10 @@
           "id": "chemistry",
           "text": "Chemistry especially has always had irresistible attractions for me from the enormous, the illimitable power which the knowledge of it confers. Chemists⁠—I assert it emphatically⁠—might sway, if they pleased, the destinies of humanity.",
           "speaker": "Count Fosco",
-          "reference": "The Third Epoch, Count Fosco's narrative",
+          "reference": "The Third Epoch, Count Fosco’s narrative",
           "stage": "epoch-3-catherick-fosco",
-          "context": "Opening his written confession, composed at Walter's dictation and at his own leisure.",
-          "analysis": "Asked for a confession, he delivers a prospectus. The dash before 'I assert it emphatically' is the sound of a man who cannot let a sentence go without applauding it, and this vanity is exactly what Walter has counted on: the document he needs is produced because Fosco cannot bear to write a dull one.",
+          "context": "Opening his written confession, composed at Walter’s dictation and at his own leisure.",
+          "analysis": "Asked for a confession, he delivers a prospectus. The dash before ‘I assert it emphatically’ is the sound of a man who cannot let a sentence go without applauding it, and this vanity is exactly what Walter has counted on: the document he needs is produced because Fosco cannot bear to write a dull one.",
           "themes": [
             "identity",
             "testimony"
@@ -30745,7 +32151,7 @@
             "count-fosco",
             "walter-hartright"
           ],
-          "source": "Standard Ebooks text, The Third Epoch, Fosco's narrative",
+          "source": "Standard Ebooks text, The Third Epoch, Fosco’s narrative",
           "cloze": [
             "Chemistry",
             "destinies"
@@ -30755,7 +32161,7 @@
           "id": "two-identities",
           "text": "That conception involved nothing less than the complete transformation of two separate identities. Lady Glyde and Anne Catherick were to change names, places, and destinies, the one with the other⁠—the prodigious consequences contemplated by the change being the gain of thirty thousand pounds, and the eternal preservation of Sir Percival",
           "speaker": "Count Fosco",
-          "reference": "The Third Epoch, Count Fosco's narrative",
+          "reference": "The Third Epoch, Count Fosco’s narrative",
           "stage": "epoch-3-catherick-fosco",
           "context": "Describing the moment he first understood what could be done with the resemblance.",
           "analysis": "He calls it a conception, as though it were a piece of composition, and prices it in the same clause: thirty thousand pounds and a secret kept. The three nouns he exchanges — names, places, destinies — go from the trivial to the absolute without a change of tone, which is the whole character in one list.",
@@ -30772,7 +32178,7 @@
             "laura-fairlie",
             "anne-catherick"
           ],
-          "source": "Standard Ebooks text, The Third Epoch, Fosco's narrative",
+          "source": "Standard Ebooks text, The Third Epoch, Fosco’s narrative",
           "cloze": [
             "transformation",
             "destinies"
@@ -30782,10 +32188,10 @@
           "id": "morgue",
           "text": "I passed on my way the terrible dead-house of Paris⁠—the Morgue. A great crowd clamoured and heaved round the door. There was evidently something inside which excited the popular curiosity, and fed the popular appetite for horror.",
           "speaker": "Walter Hartright",
-          "reference": "The Third Epoch, Walter Hartright's conclusion, Chapter II",
+          "reference": "The Third Epoch, Walter Hartright’s conclusion, Chapter II",
           "stage": "epoch-3-conclusion",
           "context": "In Paris, walking towards Notre Dame, some days after Fosco has left England.",
-          "analysis": "The Count's death is delivered as a piece of tourism: a crowd, a queue and an overheard conversation. Collins refuses his villain a scene, and the body is identified by a mark cut into the arm — another inscription, in the one place where a name could not be forged.",
+          "analysis": "The Count’s death is delivered as a piece of tourism: a crowd, a queue and an overheard conversation. Collins refuses his villain a scene, and the body is identified by a mark cut into the arm — another inscription, in the one place where a name could not be forged.",
           "themes": [
             "identity",
             "class-and-name"
@@ -30797,7 +32203,7 @@
             "count-fosco",
             "walter-hartright"
           ],
-          "source": "Standard Ebooks text, The Third Epoch, Hartright's conclusion, Chapter II",
+          "source": "Standard Ebooks text, The Third Epoch, Hartright’s conclusion, Chapter II",
           "cloze": [
             "dead-house",
             "crowd"
@@ -30807,7 +32213,7 @@
           "id": "let-marian-end-our-story",
           "text": "The long, happy labour of many months is over. Marian was the good angel of our lives⁠—let Marian end our Story.",
           "speaker": "Walter Hartright",
-          "reference": "The Third Epoch, Walter Hartright's conclusion, Chapter III",
+          "reference": "The Third Epoch, Walter Hartright’s conclusion, Chapter III",
           "stage": "epoch-3-conclusion",
           "context": "The last sentences of the novel, after Marian has held up the child who is the heir of Limmeridge.",
           "analysis": "The labour of months is the writing, not the living, so the book ends by announcing that a file has been closed. He calls Marian the good angel and hands her the last word in a sentence he himself is writing, which is generosity and editorial control performing the same gesture.",
@@ -30823,7 +32229,7 @@
             "walter-hartright",
             "marian-halcombe"
           ],
-          "source": "Standard Ebooks text, The Third Epoch, Hartright's conclusion, Chapter III",
+          "source": "Standard Ebooks text, The Third Epoch, Hartright’s conclusion, Chapter III",
           "cloze": [
             "labour",
             "angel"
@@ -30834,12 +32240,12 @@
         {
           "label": "Serialised",
           "value": "1859–60",
-          "note": "Weekly in Dickens's All the Year Round from 26 November 1859, and simultaneously in Harper's Weekly in New York."
+          "note": "Weekly in Dickens’s All the Year Round from 26 November 1859, and simultaneously in Harper’s Weekly in New York."
         },
         {
           "label": "Book edition",
           "value": "1860",
-          "note": "Three volumes from Sampson Low; Collins then prepared a revised one-volume text with a dated preface in 1861."
+          "note": "Three volumes in 1860; Collins then prepared a revised one-volume text, with a dated preface, in 1861."
         },
         {
           "label": "Written to deadline",
@@ -30849,7 +32255,7 @@
         {
           "label": "Shape",
           "value": "Eleven narratives",
-          "note": "Hartright, Gilmore, Marian's diary, Mr Fairlie, the housekeeper, a cook, a doctor, a gravestone, Mrs Catherick and Fosco — and Hartright decides the order of all of them."
+          "note": "Hartright, Gilmore, Marian’s diary, Mr Fairlie, the housekeeper, a cook, a doctor, a gravestone, Mrs Catherick and Fosco — and Hartright decides the order of all of them."
         }
       ],
       "criticalViews": [
@@ -30859,14 +32265,14 @@
           "counter": "Treating it as the origin of a genre can flatten what is odd about it, particularly the decision to tell the whole thing as a bundle of legal statements."
         },
         {
-          "position": "A novel about the law of married women's property",
-          "summary": "Criticism attentive to the settlement reads the plot as an argument about legal disability: Laura's money, her testimony and her liberty all belong to somebody else, and the conspiracy only has to use powers that the law already grants.",
-          "counter": "The novel's resolution restores her by the same legal machinery it has just exposed, which makes it hard to read as a reforming book."
+          "position": "A novel about the law of married women’s property",
+          "summary": "Criticism attentive to the settlement reads the plot as an argument about legal disability: Laura’s money, her testimony and her liberty all belong to somebody else, and the conspiracy only has to use powers that the law already grants.",
+          "counter": "The novel’s resolution restores her by the same legal machinery it has just exposed, which makes it hard to read as a reforming book."
         },
         {
           "position": "A book that cannot decide about Marian",
           "summary": "Feminist criticism since the 1970s has focused on the gap between what Marian does and how the novel frames her: she is the intelligence of the plot and is introduced through a description of her face that treats her as a physiological joke.",
-          "counter": "Defenders point out that the description is Walter's rather than the narrative's, and that the structure allows Marian's own prose to answer it at length."
+          "counter": "Defenders point out that the description is Walter’s rather than the narrative’s, and that the structure allows Marian’s own prose to answer it at length."
         }
       ],
       "essayQuestions": [
@@ -30874,11 +32280,11 @@
           "question": "What does Collins gain by telling the story through many narrators?",
           "focus": "Form, evidence and the power of the editor",
           "plan": [
-            "Begin with the preamble's own claim: a court, several witnesses, and each speaking only of what they saw.",
-            "Show the method producing suspense — Marian's diary breaking off, Mr Fairlie's account arriving after the damage is done.",
-            "Show it producing class comedy and range, from a solicitor's professional prose to a housekeeper's careful self-defence and a cook's few sentences.",
+            "Begin with the preamble’s own claim: a court, several witnesses, and each speaking only of what they saw.",
+            "Show the method producing suspense — Marian’s diary breaking off, Mr Fairlie’s account arriving after the damage is done.",
+            "Show it producing class comedy and range, from a solicitor’s professional prose to a housekeeper’s careful self-defence and a cook’s few sentences.",
             "Turn the argument: Walter selects and orders every document, so the novel about distributed testimony has one author inside it.",
-            "Test the case with Fosco's confession, which is extracted under threat and is still the most self-satisfied writing in the book."
+            "Test the case with Fosco’s confession, which is extracted under threat and is still the most self-satisfied writing in the book."
           ]
         },
         {
@@ -30888,7 +32294,7 @@
             "Set out what the conspiracy actually requires: a death certificate, a gravestone, a reception at an asylum, and nobody willing to look twice.",
             "Show that recognition fails repeatedly — servants, an uncle and a village all decline to identify a living woman.",
             "Use the register at Old Welmingham to show the reverse case: a forged page makes a commoner a baronet.",
-            "Read the counter-attack as an argument about dates, not about faces, and ask what that says about the novel's idea of proof.",
+            "Read the counter-attack as an argument about dates, not about faces, and ask what that says about the novel’s idea of proof.",
             "Conclude on the restoration scene, in which Laura is made herself again by a public reading and a new inscription."
           ]
         },
@@ -30899,18 +32305,18 @@
             "Start with the two-paragraph introduction, where the figure is admired and the face is recoiled from in consecutive sentences.",
             "Track what she actually does: investigates, negotiates, climbs the verandah in the rain, and keeps the only dated record of the conspiracy.",
             "Examine what she cannot do — hold property, give testimony that counts, or prevent a marriage settlement.",
-            "Read Fosco's postscript as a violation that is also a tribute, and consider why Collins gives her admirer to the villain.",
+            "Read Fosco’s postscript as a violation that is also a tribute, and consider why Collins gives her admirer to the villain.",
             "Weigh the ending: she is called the good angel and given the last word, in a book whose last word is written by somebody else."
           ]
         },
         {
-          "question": "'The conspiracy needs no villains, only institutions.' How far do you agree?",
+          "question": "‘The conspiracy needs no villains, only institutions.’ How far do you agree?",
           "focus": "Marriage law, private asylums and respectability",
           "plan": [
             "Set out the legal position: the settlement, the twenty thousand pounds, and the clause Gilmore objects to and signs anyway.",
             "Show private asylum admission as an administrative act requiring certificates and a willing signature.",
-            "Use Fosco's after-dinner argument about English Society as the accomplice of crime, and check it against the plot that follows.",
-            "Test the counter-case: Sir Percival's violence and Fosco's ingenuity are not reducible to procedure.",
+            "Use Fosco’s after-dinner argument about English Society as the accomplice of crime, and check it against the plot that follows.",
+            "Test the counter-case: Sir Percival’s violence and Fosco’s ingenuity are not reducible to procedure.",
             "Decide whether the novel wants these institutions reformed or merely finds them frightening."
           ]
         }
@@ -30919,7 +32325,7 @@
         "Walter compiles every statement in the book. How much should we trust the arrangement?",
         "Laura is the centre of the plot and is given almost no narrative of her own. Is that a failure or a point being made?",
         "Fosco writes his own confession and cannot resist showing off. Does that make him more or less frightening?",
-        "Sir Percival's secret is a forged entry in a parish register. Why does the novel treat that as worse than the conspiracy it caused?",
+        "Sir Percival’s secret is a forged entry in a parish register. Why does the novel treat that as worse than the conspiracy it caused?",
         "Marian does the work and Walter gets the marriage. What would have to change for the novel to end differently?"
       ],
       "timeline": [
@@ -30932,7 +32338,7 @@
         {
           "year": 1851,
           "label": "Collins meets Dickens",
-          "detail": "An amateur theatrical brings them together, and Dickens's magazines become Collins's main platform for the next decade.",
+          "detail": "An amateur theatrical brings them together, and Dickens’s magazines become Collins’s main platform for the next decade.",
           "kind": "author"
         },
         {
@@ -30944,7 +32350,7 @@
         {
           "year": 1859,
           "label": "Serialisation starts",
-          "detail": "The first instalment appeared on 26 November in All the Year Round and, the same week, in Harper's Weekly in New York.",
+          "detail": "The first instalment appeared on 26 November in All the Year Round and, the same week, in Harper’s Weekly in New York.",
           "kind": "work"
         },
         {
@@ -30973,7 +32379,7 @@
         },
         {
           "year": 1871,
-          "label": "Collins's own stage version",
+          "label": "Collins’s own stage version",
           "detail": "He dramatised the novel himself, part of a long effort to keep control of a story that was being adapted without him.",
           "kind": "reception"
         },
@@ -30992,7 +32398,7 @@
         {
           "year": 1982,
           "label": "BBC television serial",
-          "detail": "A five-part version that restores the novel's documentary structure by keeping the narrators separate.",
+          "detail": "A serial version with room to keep the narrators separate, which is how the novel’s documentary structure survives adaptation.",
           "kind": "reception"
         },
         {
@@ -31007,13 +32413,13 @@
           "name": "Cumberland",
           "lat": 54.7,
           "lon": -3.1,
-          "note": "Limmeridge House and its churchyard: where Walter is engaged, where the false inscription is cut, and where Laura's name is finally read out to the tenants."
+          "note": "Limmeridge House and its churchyard: where Walter is engaged, where the false inscription is cut, and where Laura’s name is finally read out to the tenants."
         },
         {
           "name": "London",
           "lat": 51.5074,
           "lon": -0.1278,
-          "note": "Clement's Inn, the Finchley Road at midnight, the asylum, and the poor lodgings where Walter, Marian and Laura hide while the case is built."
+          "note": "Clement’s Inn, the Finchley Road at midnight, the asylum, and the poor lodgings where Walter, Marian and Laura hide while the case is built."
         },
         {
           "name": "Hampshire",
@@ -31025,7 +32431,7 @@
           "name": "Paris",
           "lat": 48.8566,
           "lon": 2.3522,
-          "note": "The Morgue by the river, where Fosco's body is displayed to a crowd and identified by a mark on his left arm."
+          "note": "The Morgue by the river, where Fosco’s body is displayed to a crowd and identified by a mark on his left arm."
         },
         {
           "name": "Liverpool",

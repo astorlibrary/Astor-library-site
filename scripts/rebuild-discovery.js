@@ -65,6 +65,15 @@ const studyBookLinks = {
   'https://mybook.to/l4zC9': ['/books/twelfth-night/']
 };
 
+// A study edition that gains an on-site page changes its key in this map from
+// the retailer address to the page address. Re-keying it here means the map
+// above never has to be edited when a page is generated.
+for (const [buyUrl, pageHref] of Object.entries(require('./rebuild-generated-study-pages').generatedStudyPages())) {
+  if (!studyBookLinks[buyUrl]) continue;
+  studyBookLinks[pageHref] = studyBookLinks[buyUrl];
+  delete studyBookLinks[buyUrl];
+}
+
 const resourceBookLinks = Object.fromEntries(resourceData.map(function (resource) {
   return [resource.route, resource.relatedBooks || []];
 }));

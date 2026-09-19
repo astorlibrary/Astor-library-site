@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const additions = require('./study-additions');
+const { generatedStudyPages } = require('./rebuild-generated-study-pages');
 
 const file = path.join(process.cwd(), 'study', 'index.html');
 const marker = '</section><section class="section-title" id="paired-editions">';
@@ -15,12 +16,15 @@ function escapeHtml(value) {
     .replace(/'/g, '&#39;');
 }
 
+const generatedPages = generatedStudyPages();
+
 const cards = additions.map(function (edition) {
   // Cards without an on-site page go straight to the retailer; say so
   // honestly rather than looking like an internal destination.
-  const external = !edition.pageHref;
-  return '<a class="study-card" href="' + escapeHtml(edition.pageHref || edition.url) + '"' +
-    (edition.pageHref ? ' data-buy-url="' + escapeHtml(edition.url) + '"' : ' target="_blank" rel="noopener noreferrer"') + '>' +
+  const pageHref = edition.pageHref || generatedPages[edition.url] || '';
+  const external = !pageHref;
+  return '<a class="study-card" href="' + escapeHtml(pageHref || edition.url) + '"' +
+    (pageHref ? ' data-buy-url="' + escapeHtml(edition.url) + '"' : ' target="_blank" rel="noopener noreferrer"') + '>' +
     '<img src="/' + encodeURIComponent(edition.image).replace(/'/g, '%27') + '" alt="' + escapeHtml(edition.title) + ' Study cover">' +
     '<span class="mini-kicker">Study edition</span>' +
     '<h3><em>' + escapeHtml(edition.title) + '</em></h3>' +
@@ -32,7 +36,11 @@ const cards = additions.map(function (edition) {
 html = html.replace(/<a class="study-card" href="https:\/\/mybook\.to\/lhbh"[^>]*>[\s\S]*?(?=<\/section><section class="section-title" id="paired-editions")/g, '');
 // Baseline hub cards whose study edition has an on-site page: link the page,
 // keep the retailer link as data-buy-url, and label the button accordingly.
+// Baseline hub cards that open an on-site page. The hand-written pages are
+// listed here; the rest are added by rebuild-generated-study-pages.js, so a
+// card follows its page into the site the moment the page exists.
 const studyPages = {
+  ...generatedPages,
   'https://mybook.to/cntRBz': '/study/macbeth/',
   'https://mybook.to/Q1lrp8': '/study/hamlet/',
   'https://mybook.to/A8uO': '/study/othello/',

@@ -1,0 +1,1387 @@
+{
+  "slug": "antony-and-cleopatra",
+  "title": "Antony and Cleopatra",
+  "author": "William Shakespeare",
+  "href": "/books/antony-and-cleopatra/",
+  "buyUrl": "https://mybook.to/Cbks",
+  "form": "play",
+  "genre": "Tragedy",
+  "period": "Shakespeare",
+  "written": "c. 1606–07",
+  "firstPublished": 1623,
+  "setting": "The Roman world after Julius Caesar’s death: Alexandria, Rome, Misenum, Athens, Syria and the sea off Actium",
+  "readingTime": 190,
+  "difficulty": 4,
+  "lengthNote": "Around 3,000 lines spread over forty-two scenes — more scenes than any other play in the Folio",
+  "openingLine": "Nay, but this dotage of our general's O'erflows the measure",
+  "summary": "A triumvir who governs a third of the known world will not leave Alexandria, and Rome sends messengers instead of armies. Shakespeare gives the story forty-two scenes and no settled vantage point: every judgement passed on Antony is passed by someone with an interest in it. After Actium the play stops being about who wins and becomes about who gets to describe the losers, and Cleopatra spends the last act taking that job away from Caesar.",
+  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "sourceText": {
+    "label": "Globe/Moby text of Antony and Cleopatra",
+    "note": "Line numbers follow the traditional Globe numbering; modern editions divide some of the short battle scenes differently."
+  },
+  "atAGlance": [
+    {
+      "label": "Written",
+      "value": "c. 1606–07",
+      "note": "Close in date to King Lear and Macbeth, and to Shakespeare’s other Plutarch play, Coriolanus."
+    },
+    {
+      "label": "First printed",
+      "value": "1623",
+      "note": "No quarto survives. The play was entered in the Stationers’ Register in 1608, but the Folio is the only early text."
+    },
+    {
+      "label": "Chief source",
+      "value": "Plutarch’s Life of Antony",
+      "note": "In Thomas North’s English translation of 1579, which Shakespeare follows closely enough that whole phrases survive into the verse."
+    },
+    {
+      "label": "Shape",
+      "value": "Five acts, forty-two scenes",
+      "note": "Act III alone changes location thirteen times; several scenes are under twenty lines long."
+    }
+  ],
+  "structure": [
+    {
+      "id": "act-1",
+      "label": "Act I",
+      "title": "A general who will not come home",
+      "summary": "Rome watches Egypt through other people's eyes and does not like what it reports. Antony hears of his wife's death and of Pompey's fleet, decides to leave, and discovers that leaving Cleopatra is a scene she intends to direct. Caesar meanwhile sets out the charge sheet in private.",
+      "scenes": [
+        {
+          "ref": "1.1",
+          "title": "The measure overflowed",
+          "summary": "Philo tells a fellow officer what to look for, and the lovers walk on and perform exactly it."
+        },
+        {
+          "ref": "1.2",
+          "title": "News from Rome",
+          "summary": "A soothsayer reads the women's palms; Antony learns that Fulvia is dead and resolves to break his Egyptian fetters."
+        },
+        {
+          "ref": "1.3",
+          "title": "The parting",
+          "summary": "Cleopatra stages illness, accusation and forgiveness in one scene and lets Antony go on her own terms."
+        },
+        {
+          "ref": "1.4",
+          "title": "Caesar's account",
+          "summary": "Caesar itemises Antony's failings to Lepidus, then praises the soldier Antony once was when he needs him back."
+        },
+        {
+          "ref": "1.5",
+          "title": "Absence",
+          "summary": "Cleopatra fills the time with opium, memory and messengers, and dismisses her younger self as salad days."
+        }
+      ]
+    },
+    {
+      "id": "act-2",
+      "label": "Act II",
+      "title": "A marriage, a treaty and a drunken galley",
+      "summary": "The triumvirs patch their quarrel with Antony's marriage to Caesar's sister, and Enobarbus tells the Romans what they have just bargained against. Pompey is bought off at Misenum, and the peace is celebrated by three rulers of the world dancing on a boat while a pirate offers to cut the cable.",
+      "scenes": [
+        {
+          "ref": "2.1",
+          "title": "Pompey's reckoning",
+          "summary": "Pompey counts on Antony staying in Egypt and hears at once that he is coming to Rome."
+        },
+        {
+          "ref": "2.2",
+          "title": "The bargain and the barge",
+          "summary": "Antony agrees to marry Octavia; minutes later Enobarbus describes Cleopatra on the Cydnus to the men who arranged it."
+        },
+        {
+          "ref": "2.3",
+          "title": "The soothsayer",
+          "summary": "Told that his guardian spirit is always beaten by Caesar's, Antony decides to go back to Egypt."
+        },
+        {
+          "ref": "2.4",
+          "title": "Marching orders",
+          "summary": "Lepidus and the others arrange to meet at Mount Misenum."
+        },
+        {
+          "ref": "2.5",
+          "title": "The messenger struck",
+          "summary": "Cleopatra hales the bringer of the marriage news up and down, then calls him back to describe Octavia."
+        },
+        {
+          "ref": "2.6",
+          "title": "Terms at Misenum",
+          "summary": "Pompey accepts Sicily and Sardinia; Enobarbus and Menas measure each other in prose afterwards."
+        },
+        {
+          "ref": "2.7",
+          "title": "On the galley",
+          "summary": "Menas offers to cut the cable and make Pompey lord of the world; Pompey wishes it had been done without asking."
+        }
+      ]
+    },
+    {
+      "id": "act-3",
+      "label": "Act III",
+      "title": "Actium, and the ship that turned",
+      "summary": "The alliance dissolves in short scenes and reported news: Lepidus is deposed, Octavia is sent back, Antony insists on fighting at sea and then follows Cleopatra's fleeing sails. Defeat is immediately fought over as a story, and Enobarbus begins to calculate what loyalty to a falling man is worth.",
+      "scenes": [
+        {
+          "ref": "3.1",
+          "title": "Ventidius in Syria",
+          "summary": "A subordinate wins a victory and explains why winning too well is bad for a career."
+        },
+        {
+          "ref": "3.2",
+          "title": "Octavia leaves Rome",
+          "summary": "Enobarbus and Agrippa mock the triumvirs' tears while the marriage is sealed."
+        },
+        {
+          "ref": "3.3",
+          "title": "The report on Octavia",
+          "summary": "Cleopatra cross-examines the messenger until Octavia is short, low-voiced and dull."
+        },
+        {
+          "ref": "3.4",
+          "title": "Athens",
+          "summary": "Antony lists Caesar's slights; Octavia asks to mediate between husband and brother."
+        },
+        {
+          "ref": "3.5",
+          "title": "Lepidus removed",
+          "summary": "Eros reports that the third triumvir has been used and then imprisoned."
+        },
+        {
+          "ref": "3.6",
+          "title": "Caesar's case",
+          "summary": "Antony's public enthronement of Cleopatra and her children gives Rome its pretext; Octavia arrives without ceremony."
+        },
+        {
+          "ref": "3.7",
+          "title": "By sea",
+          "summary": "Every soldier argues for land; Antony fights by sea because Caesar dares him to."
+        },
+        {
+          "ref": "3.8",
+          "title": "Caesar's orders",
+          "summary": "Caesar tells Taurus not to engage on land until the sea is decided."
+        },
+        {
+          "ref": "3.9",
+          "title": "Antony's orders",
+          "summary": "Antony sets his squadrons where he can see the battle."
+        },
+        {
+          "ref": "3.10",
+          "title": "The flight",
+          "summary": "Enobarbus and Scarus watch Cleopatra's sixty ships turn and Antony's flagship follow."
+        },
+        {
+          "ref": "3.11",
+          "title": "Shame in Alexandria",
+          "summary": "Antony tells his followers to take his treasure and go, then forgives Cleopatra in the same breath as blaming her."
+        },
+        {
+          "ref": "3.12",
+          "title": "The schoolmaster",
+          "summary": "Antony's ambassador is a tutor; Caesar refuses his terms and sends Thidias to work on Cleopatra."
+        },
+        {
+          "ref": "3.13",
+          "title": "Thidias whipped",
+          "summary": "Antony has Caesar's envoy flogged for kissing Cleopatra's hand, calls for another supper, and Enobarbus decides to leave."
+        }
+      ]
+    },
+    {
+      "id": "act-4",
+      "label": "Act IV",
+      "title": "A victory, a desertion, and a death that will not come cleanly",
+      "summary": "Antony wins a day on land, and the music of a god leaving the city is heard under the stage the night before he loses the rest. Enobarbus dies of his own defection. Told a false report of Cleopatra's death, Antony asks Eros to kill him, botches the attempt himself, and is hauled up into the monument to die by degrees.",
+      "scenes": [
+        {
+          "ref": "4.1",
+          "title": "Caesar laughs",
+          "summary": "Antony's challenge to single combat is dismissed as the noise of a man out of options."
+        },
+        {
+          "ref": "4.2",
+          "title": "The last supper",
+          "summary": "Antony makes his servants weep by thanking them as though tonight were the end."
+        },
+        {
+          "ref": "4.3",
+          "title": "Music under the stage",
+          "summary": "Soldiers on watch hear hautboys beneath them and take it for Hercules leaving Antony."
+        },
+        {
+          "ref": "4.4",
+          "title": "Arming",
+          "summary": "Cleopatra helps buckle his armour and is told she is a better squire than she knows."
+        },
+        {
+          "ref": "4.5",
+          "title": "Enobarbus's chest",
+          "summary": "Antony hears of the desertion and sends his treasure after him with a kind message."
+        },
+        {
+          "ref": "4.6",
+          "title": "Caesar's front line",
+          "summary": "Caesar puts the deserters in the vanguard; Enobarbus receives the treasure and turns away to die."
+        },
+        {
+          "ref": "4.7",
+          "title": "A day on land",
+          "summary": "Scarus fights with new wounds and Antony's forces drive Caesar back to camp."
+        },
+        {
+          "ref": "4.8",
+          "title": "Home in triumph",
+          "summary": "Antony presents the wounded Scarus to Cleopatra and asks the city to make its armour ring."
+        },
+        {
+          "ref": "4.9",
+          "title": "The ditch",
+          "summary": "Enobarbus asks the moon to witness his repentance and dies before the watch can speak to him."
+        },
+        {
+          "ref": "4.10",
+          "title": "Sea again",
+          "summary": "Antony resolves to fight by water once more."
+        },
+        {
+          "ref": "4.11",
+          "title": "Caesar's instruction",
+          "summary": "Caesar tells his army to hold the valleys while the fleets meet."
+        },
+        {
+          "ref": "4.12",
+          "title": "The fleet yields",
+          "summary": "The Egyptian ships surrender without a fight and Antony calls Cleopatra a triple-turn'd whore."
+        },
+        {
+          "ref": "4.13",
+          "title": "The monument",
+          "summary": "Cleopatra takes refuge and sends word that she is dead, to see what it does."
+        },
+        {
+          "ref": "4.14",
+          "title": "Eros",
+          "summary": "Antony watches his shape dissolve like cloud, orders Eros to kill him, and falls on his own sword when Eros will not."
+        },
+        {
+          "ref": "4.15",
+          "title": "Hauled aloft",
+          "summary": "The dying Antony is lifted to Cleopatra, gives advice she refuses to take, and she resolves on a Roman death."
+        }
+      ]
+    },
+    {
+      "id": "act-5",
+      "label": "Act V",
+      "title": "Caesar's triumph, and the scene Cleopatra takes out of it",
+      "summary": "Caesar has won and needs Cleopatra alive to walk in Rome. The last act is a negotiation conducted by both sides in bad faith, until Cleopatra decides that a basket of figs is a better ending than a procession. She dies dressed for a coronation, and Caesar is left arranging the funeral of a story he did not write.",
+      "scenes": [
+        {
+          "ref": "5.1",
+          "title": "The news of Antony",
+          "summary": "Caesar weeps for the rival he has just destroyed and immediately asks how to keep Cleopatra from suicide."
+        },
+        {
+          "ref": "5.2",
+          "title": "The monument",
+          "summary": "Cleopatra is taken, lies to Caesar about her treasure, dreams Antony into a colossus and dies by the asp."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "antony",
+      "name": "Mark Antony",
+      "role": "Triumvir of Rome, general",
+      "summary": "A soldier whose reputation is largely made of other people's memories of him, and who keeps being asked to live up to a version of himself that is already historical. He is generous, careless and consistently late, and the play's tenderness towards him comes from watching a man lose the shape he is supposed to hold.",
+      "clue": "He rules a third of the world and answers a summons from it with a shrug; he dies asking for wine and permission to speak a little.",
+      "firstAppearance": "1.1",
+      "traits": [
+        "open-handed",
+        "self-dramatising",
+        "unable to hold one shape"
+      ],
+      "relationships": [
+        {
+          "to": "cleopatra",
+          "label": "lover of",
+          "kind": "love"
+        },
+        {
+          "to": "octavius-caesar",
+          "label": "partner and rival of",
+          "kind": "rival",
+          "stages": [
+            "act-1",
+            "act-2",
+            "act-3",
+            "act-4"
+          ]
+        },
+        {
+          "to": "octavia",
+          "label": "married to",
+          "kind": "marriage",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "enobarbus",
+          "label": "commander of",
+          "kind": "service"
+        }
+      ]
+    },
+    {
+      "id": "cleopatra",
+      "name": "Cleopatra",
+      "role": "Queen of Egypt",
+      "summary": "She is never off duty: every mood is real and also calculated, and the play declines to separate the two. Her political intelligence is usually discussed as caprice by Romans who cannot see that testing a messenger, staging a faint or refusing a triumph are all the same skill.",
+      "clue": "She beats the bringer of bad news, then asks him to describe her rival's height; at the end she dresses for a coronation to meet a snake.",
+      "firstAppearance": "1.1",
+      "traits": [
+        "quick",
+        "theatrical",
+        "politically exact"
+      ],
+      "relationships": [
+        {
+          "to": "antony",
+          "label": "lover of",
+          "kind": "love"
+        },
+        {
+          "to": "charmian",
+          "label": "served by",
+          "kind": "service"
+        },
+        {
+          "to": "octavius-caesar",
+          "label": "prize and opponent of",
+          "kind": "enemy",
+          "stages": [
+            "act-4",
+            "act-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "octavius-caesar",
+      "name": "Octavius Caesar",
+      "role": "Triumvir, later sole ruler of Rome",
+      "summary": "Young, dry and entirely without appetite, he wins because he is the only person in the play who never mistakes a gesture for an achievement. Shakespeare gives him no soliloquy at all, so the audience is never invited inside a mind that runs the world.",
+      "clue": "He drinks reluctantly, weeps on cue for a dead rival, and wants the queen alive mainly so that she can walk behind his chariot.",
+      "firstAppearance": "1.4",
+      "traits": [
+        "patient",
+        "unimaginative",
+        "always ahead"
+      ],
+      "relationships": [
+        {
+          "to": "antony",
+          "label": "partner and rival of",
+          "kind": "rival"
+        },
+        {
+          "to": "octavia",
+          "label": "brother of",
+          "kind": "family"
+        },
+        {
+          "to": "lepidus",
+          "label": "colleague and then gaoler of",
+          "kind": "enemy",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enobarbus",
+      "name": "Domitius Enobarbus",
+      "role": "Antony's lieutenant and closest follower",
+      "summary": "He talks to the audience in prose, sees through everyone including himself, and produces the one speech in the play that makes Cleopatra indisputable. His defection is a reasoned decision that kills him, which is the play's sharpest comment on reason.",
+      "clue": "He tells Rome about a burnished barge, calculates that loyalty to a falling lord is folly, acts on the calculation and dies of it in a ditch.",
+      "firstAppearance": "1.2",
+      "traits": [
+        "sardonic",
+        "clear-eyed",
+        "undone by being right"
+      ],
+      "relationships": [
+        {
+          "to": "antony",
+          "label": "follower, then deserter of",
+          "kind": "service"
+        },
+        {
+          "to": "cleopatra",
+          "label": "describes and defends",
+          "kind": "ally",
+          "stages": [
+            "act-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "octavia",
+      "name": "Octavia",
+      "role": "Caesar's sister, Antony's second wife",
+      "summary": "A treaty in human form, and the play knows it: she is praised for holy, cold and still conversation by men deciding what to do with her. Her few speeches are attempts to be a person in an arrangement that needs her not to be.",
+      "clue": "Her marriage is the whole of the peace, and when she asks to travel between her brother and her husband she is really asking not to be the reason for a war.",
+      "firstAppearance": "2.3",
+      "traits": [
+        "dutiful",
+        "used"
+      ],
+      "relationships": [
+        {
+          "to": "octavius-caesar",
+          "label": "sister of",
+          "kind": "family"
+        },
+        {
+          "to": "antony",
+          "label": "married to",
+          "kind": "marriage",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charmian",
+      "name": "Charmian",
+      "role": "Cleopatra's attendant",
+      "summary": "She jokes with a soothsayer in the second scene and closes the queen's eyes in the last, and the play gives her the final judgement on Cleopatra's life. Straightening the crown on a dead woman's head before dying herself is the only stage direction the ending needs.",
+      "clue": "She asks a fortune-teller for a husband who cannot be angry, and ends by mending her mistress's crown and following her.",
+      "firstAppearance": "1.2",
+      "traits": [
+        "witty",
+        "loyal to the last gesture"
+      ],
+      "relationships": [
+        {
+          "to": "cleopatra",
+          "label": "attends",
+          "kind": "service"
+        }
+      ]
+    },
+    {
+      "id": "pompey",
+      "name": "Sextus Pompeius",
+      "role": "Commander of the fleet, the triumvirs' opponent at sea",
+      "summary": "He has the strongest navy and the weakest stomach for what winning would require. Offered the world by a pirate who only needs permission to cut a rope, he explains that the deed would have been honourable if he had not been told about it.",
+      "clue": "He is master of the sea and loses it by refusing an offer he would have accepted if nobody had asked him first.",
+      "firstAppearance": "2.1",
+      "traits": [
+        "well-placed",
+        "scrupulous at the wrong moment"
+      ],
+      "relationships": [
+        {
+          "to": "octavius-caesar",
+          "label": "enemy, then signatory with",
+          "kind": "enemy",
+          "stages": [
+            "act-2"
+          ]
+        },
+        {
+          "to": "antony",
+          "label": "rival and host of",
+          "kind": "rival",
+          "stages": [
+            "act-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lepidus",
+      "name": "Lepidus",
+      "role": "The third triumvir",
+      "summary": "His function is to agree with whoever is speaking and to keep asking the others not to quarrel. He is carried drunk off Pompey's galley and deposed offstage a few scenes later, which is how the play measures the value of a share in power without the means to defend it.",
+      "clue": "A third of the world is his; he spends his best scene asking what sort of thing a crocodile is, and is carried off the boat asleep.",
+      "firstAppearance": "1.4",
+      "traits": [
+        "conciliatory",
+        "expendable"
+      ],
+      "relationships": [
+        {
+          "to": "octavius-caesar",
+          "label": "colleague of",
+          "kind": "ally",
+          "stages": [
+            "act-1",
+            "act-2"
+          ]
+        },
+        {
+          "to": "antony",
+          "label": "defender of",
+          "kind": "ally",
+          "stages": [
+            "act-1",
+            "act-2"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "rome-and-egypt",
+      "name": "Rome and Egypt",
+      "summary": "The play offers the opposition — discipline against appetite, measure against excess — in its first fourteen lines, and then spends five acts making it unusable. Rome is as theatrical as Alexandria; it has simply trained its performance to look like plain fact.",
+      "development": "Philo states the Roman case before Antony has spoken; by Act V Caesar is arranging a procession and Cleopatra is refusing a part in it, and both are staging."
+    },
+    {
+      "id": "measure",
+      "name": "Measure and excess",
+      "summary": "Counting is the Roman virtue: ships, legions, kingdoms, the terms of a treaty. Antony and Cleopatra answer in a vocabulary of boundlessness — new heavens, melting empires, an autumn that grew the more by reaping — and the play will not say which language is lying.",
+      "development": "Antony refuses to have love reckoned in 1.1; Caesar ends by counting the pair into a single grave and a solemn show."
+    },
+    {
+      "id": "performance",
+      "name": "Performance and self-presentation",
+      "summary": "Everyone here is managing an image: Cleopatra openly, Caesar invisibly, Antony badly. The most dangerous thing Cleopatra imagines in the last act is not death but a bad performance of herself by a squeaking boy actor in Rome.",
+      "development": "Play-acting is flirtation in Act I, propaganda in Act III, and by Act V the only remaining way of winning."
+    },
+    {
+      "id": "report",
+      "name": "News, messengers and report",
+      "summary": "Almost everything important arrives through somebody else's mouth: Fulvia's death, the marriage, Actium, Antony's suicide. The play is built so that events reach the stage already interpreted, and the interpreter always has something at stake.",
+      "development": "A messenger is beaten in 2.5, a messenger is whipped in 3.13, and in 4.13 Cleopatra sends a false report of her own death to see what it will do."
+    },
+    {
+      "id": "dissolution",
+      "name": "Melting and dissolving identity",
+      "summary": "Antony's imagery is full of things losing their edges: Rome melting in Tiber, a cloud that was a horse becoming indistinct as water in water, a crown of the earth that melts at his death. The tragedy asks whether a self must keep one shape to be worth anything.",
+      "development": "The images begin as extravagance in Act I and become a description of his actual condition by 4.14, where he says outright that he cannot hold this visible shape."
+    },
+    {
+      "id": "loyalty",
+      "name": "Loyalty and defection",
+      "summary": "The play is full of people deciding when to leave, and it refuses to make any of those decisions simple. Enobarbus's desertion is reasonable, Antony's response to it is generous, and the generosity is what makes the reasonable decision unbearable.",
+      "development": "Ventidius declines to win too much in 3.1, Enobarbus leaves in 3.13, the Egyptian fleet yields in 4.12, and Charmian follows her mistress in 5.2."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "hyperbole",
+      "name": "Hyperbole",
+      "definition": "Deliberate overstatement, used not to deceive but to claim a scale ordinary language cannot reach.",
+      "inThisBook": "Cleopatra's dream of an emperor whose legs bestrid the ocean is the play's largest overstatement and its most searching question: Dolabella says no such man existed, and she asks whether that settles anything."
+    },
+    {
+      "id": "short-scenes",
+      "name": "Scene fragmentation",
+      "definition": "Building an act from many brief scenes rather than a few long ones.",
+      "inThisBook": "Act III changes place thirteen times, and the battle of Actium is split into four scenes of which none shows the fighting. Political space is made to feel unmanageable by the form itself."
+    },
+    {
+      "id": "messenger",
+      "name": "The messenger scene",
+      "definition": "A convention in which offstage events are reported to a listener who reacts in front of us.",
+      "inThisBook": "Shakespeare turns a convention into a subject: the messenger who is beaten in 2.5 and recalled in 3.3 shows that the listener, not the news, decides what the news means."
+    },
+    {
+      "id": "chorus-figure",
+      "name": "The commentator within the action",
+      "definition": "A character who stands slightly outside events and interprets them, without being exempt from them.",
+      "inThisBook": "Enobarbus supplies the barge speech, the jokes and the running assessment of his own commander, and then discovers that commentary is not a safe place to stand."
+    },
+    {
+      "id": "run-on-verse",
+      "name": "Run-on verse",
+      "definition": "Blank verse in which sense spills past the line-ending instead of resting on it.",
+      "inThisBook": "The late style is at its loosest here: sentences begin mid-line, break off, and restart, so that even the grandest speeches sound like someone thinking rather than declaring."
+    },
+    {
+      "id": "elemental-imagery",
+      "name": "Elemental imagery",
+      "definition": "Fire, air, earth and water used as a vocabulary for what a person is made of.",
+      "inThisBook": "Cleopatra's 'I am fire and air' discards the two heavier elements at the moment of dying, having earlier called kingdoms clay through Antony's mouth."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "dotage-overflows",
+      "text": "Nay, but this dotage of our general's O'erflows the measure: those his goodly eyes, That o'er the files and musters of the war Have glow'd like plated Mars, now bend, now turn, The office and devotion of their view Upon a tawny front",
+      "speaker": "Philo",
+      "reference": "1.1.1",
+      "stage": "act-1",
+      "context": "The opening lines of the play, spoken to a fellow Roman officer just before Antony and Cleopatra walk on.",
+      "analysis": "The audience is given the Roman verdict before it is given a single fact, and the verb does the work: measure is the Roman unit of everything, and Antony is accused of exceeding it. Note that the criticism is grammatically a compliment gone wrong — the eyes still glow, they have simply been redirected.",
+      "themes": [
+        "rome-and-egypt",
+        "measure"
+      ],
+      "techniques": [
+        "chorus-figure"
+      ],
+      "characters": [
+        "antony"
+      ],
+      "source": "Globe/Moby text, 1.1.1-6",
+      "cloze": [
+        "dotage",
+        "measure"
+      ]
+    },
+    {
+      "id": "beggary-in-love",
+      "text": "There's beggary in the love that can be reckon'd.",
+      "speaker": "Mark Antony",
+      "reference": "1.1.16",
+      "stage": "act-1",
+      "context": "Answering Cleopatra's opening challenge, 'If it be love indeed, tell me how much.'",
+      "analysis": "Her question is a piece of accounting and his answer refuses the ledger, which sets the terms of the whole play. 'Reckon'd' carries both counting and being called to account, so the line quietly declines two different Roman demands in one word.",
+      "themes": [
+        "measure",
+        "rome-and-egypt"
+      ],
+      "techniques": [],
+      "characters": [
+        "antony",
+        "cleopatra"
+      ],
+      "source": "Globe/Moby text, 1.1.16",
+      "cloze": [
+        "beggary",
+        "reckon'd"
+      ]
+    },
+    {
+      "id": "rome-in-tiber",
+      "text": "Let Rome in Tiber melt, and the wide arch Of the ranged empire fall! Here is my space.",
+      "speaker": "Mark Antony",
+      "reference": "1.1.36",
+      "stage": "act-1",
+      "context": "Refusing to hear the messengers from Rome in front of Cleopatra.",
+      "analysis": "The first of the play's melting images arrives as bravado and returns in Act IV as diagnosis. 'Here is my space' is three monosyllables after a collapsing empire, and it is spoken by a man standing on a stage — the smallest possible claim, made in the largest possible terms.",
+      "themes": [
+        "dissolution",
+        "rome-and-egypt"
+      ],
+      "techniques": [
+        "hyperbole"
+      ],
+      "characters": [
+        "antony",
+        "cleopatra"
+      ],
+      "source": "Globe/Moby text, 1.1.36-37",
+      "cloze": [
+        "melt",
+        "space"
+      ]
+    },
+    {
+      "id": "fishes-drinks-wastes",
+      "text": "he fishes, drinks, and wastes The lamps of night in revel; is not more man-like Than Cleopatra; nor the queen of Ptolemy More womanly than he",
+      "speaker": "Octavius Caesar",
+      "reference": "1.4.4",
+      "stage": "act-1",
+      "context": "Reading the dispatches from Alexandria aloud to Lepidus.",
+      "analysis": "The charge is not laziness but exchange: Caesar's grievance is that the two of them have swapped a quality he believes is fixed. The sentence is arranged as a balance with Antony and Cleopatra on either side of it, so the syntax performs the crossing it complains of.",
+      "themes": [
+        "rome-and-egypt",
+        "report"
+      ],
+      "techniques": [],
+      "characters": [
+        "octavius-caesar",
+        "antony",
+        "cleopatra"
+      ],
+      "source": "Globe/Moby text, 1.4.4-7",
+      "cloze": [
+        "man-like",
+        "womanly"
+      ]
+    },
+    {
+      "id": "vagabond-flag",
+      "text": "This common body, Like to a vagabond flag upon the stream, Goes to and back, lackeying the varying tide, To rot itself with motion.",
+      "speaker": "Octavius Caesar",
+      "reference": "1.4.48",
+      "stage": "act-1",
+      "context": "On hearing that Pompey is gaining support among the people.",
+      "analysis": "Caesar's one extended image in the play is of the public as pondweed, and it tells you what kind of ruler he will be. 'Lackeying' turns the crowd into a servant running beside a horse, and 'rot itself with motion' denies that popular movement is even alive.",
+      "themes": [
+        "rome-and-egypt"
+      ],
+      "techniques": [],
+      "characters": [
+        "octavius-caesar",
+        "pompey"
+      ],
+      "source": "Globe/Moby text, 1.4.48-51",
+      "cloze": [
+        "lackeying",
+        "rot"
+      ]
+    },
+    {
+      "id": "salad-days",
+      "text": "My salad days, When I was green in judgment: cold in blood, To say as I said then!",
+      "speaker": "Cleopatra",
+      "reference": "1.5.86",
+      "stage": "act-1",
+      "context": "Silencing Charmian, who has reminded her how she once praised Julius Caesar.",
+      "analysis": "She rewrites her own past on the spot rather than lose an argument, and the phrase has been so thoroughly borrowed since that its edge is easy to miss: green is unripe, and cold in blood is an accusation of having been insufficiently alive. The revision is the performance.",
+      "themes": [
+        "performance"
+      ],
+      "techniques": [],
+      "characters": [
+        "cleopatra",
+        "charmian"
+      ],
+      "source": "Globe/Moby text, 1.5.86-88",
+      "cloze": [
+        "salad",
+        "green"
+      ]
+    },
+    {
+      "id": "the-barge",
+      "text": "The barge she sat in, like a burnish'd throne, Burn'd on the water: the poop was beaten gold; Purple the sails, and so perfumed that The winds were love-sick with them",
+      "speaker": "Domitius Enobarbus",
+      "reference": "2.2.230",
+      "stage": "act-2",
+      "context": "In Rome, to Agrippa and Maecenas, minutes after Antony has agreed to marry Octavia.",
+      "analysis": "The placing is the argument: the treaty has just been signed and Enobarbus immediately tells the signatories what they have bargained against. Shakespeare keeps much of North's prose almost word for word but breaks it across the verse line, so that the sentence never rests where the metre does.",
+      "themes": [
+        "performance",
+        "report"
+      ],
+      "techniques": [
+        "hyperbole",
+        "chorus-figure"
+      ],
+      "characters": [
+        "enobarbus",
+        "cleopatra"
+      ],
+      "source": "Globe/Moby text, 2.2.230-233",
+      "cloze": [
+        "barge",
+        "burnish'd"
+      ]
+    },
+    {
+      "id": "what-they-undid-did",
+      "text": "With divers-colour'd fans, whose wind did seem To glow the delicate cheeks which they did cool, And what they undid did.",
+      "speaker": "Domitius Enobarbus",
+      "reference": "2.2.242",
+      "stage": "act-2",
+      "context": "Continuing the description of Cleopatra on the river Cydnus.",
+      "analysis": "Four words at the end of the sentence contradict themselves twice and remain perfectly grammatical. It is the play's whole method in miniature: the fans cool and heat at once, and Cleopatra is not a paradox to be resolved but a description that has to hold both halves.",
+      "themes": [
+        "performance",
+        "measure"
+      ],
+      "techniques": [
+        "hyperbole"
+      ],
+      "characters": [
+        "enobarbus",
+        "cleopatra"
+      ],
+      "source": "Globe/Moby text, 2.2.242-244",
+      "cloze": [
+        "undid"
+      ]
+    },
+    {
+      "id": "infinite-variety",
+      "text": "Age cannot wither her, nor custom stale Her infinite variety: other women cloy The appetites they feed: but she makes hungry Where most she satisfies",
+      "speaker": "Domitius Enobarbus",
+      "reference": "2.2.278",
+      "stage": "act-2",
+      "context": "Answering Maecenas, who has just said that Antony must now leave her for good.",
+      "analysis": "The claim is presented as a prediction about Antony's behaviour, not a compliment, which is why the Romans take it seriously. 'Custom' and 'cloy' are both words about repetition wearing things out, and the line's argument is that Cleopatra has found a way of not repeating herself.",
+      "themes": [
+        "performance",
+        "measure"
+      ],
+      "techniques": [
+        "hyperbole",
+        "chorus-figure"
+      ],
+      "characters": [
+        "enobarbus",
+        "cleopatra",
+        "antony"
+      ],
+      "source": "Globe/Moby text, 2.2.278-281",
+      "cloze": [
+        "wither",
+        "variety"
+      ]
+    },
+    {
+      "id": "honesty-and-i",
+      "text": "Mine honesty and I begin to square.",
+      "speaker": "Domitius Enobarbus",
+      "reference": "3.13.47",
+      "stage": "act-3",
+      "context": "An aside, watching Cleopatra receive Caesar's messenger after Actium.",
+      "analysis": "'Square' means to quarrel, and the line splits a man from his own integrity as though they were two soldiers falling out. Everything Enobarbus says for the rest of the scene is an argument with himself conducted in the third person, and he loses it.",
+      "themes": [
+        "loyalty"
+      ],
+      "techniques": [
+        "chorus-figure"
+      ],
+      "characters": [
+        "enobarbus"
+      ],
+      "source": "Globe/Moby text, 3.13.47",
+      "cloze": [
+        "honesty",
+        "square"
+      ]
+    },
+    {
+      "id": "rudder-tied",
+      "text": "Egypt, thou knew'st too well My heart was to thy rudder tied by the strings, And thou shouldst tow me after",
+      "speaker": "Mark Antony",
+      "reference": "3.11.60",
+      "stage": "act-3",
+      "context": "In Alexandria after Actium, forgiving Cleopatra for the flight he chose to follow.",
+      "analysis": "He calls her by the name of her country, which is what the Romans do, and then describes himself as cargo. The accusation and the excuse are the same sentence: she knew, therefore it is her doing, and he was towed, therefore it is not his.",
+      "themes": [
+        "dissolution",
+        "loyalty"
+      ],
+      "techniques": [],
+      "characters": [
+        "antony",
+        "cleopatra"
+      ],
+      "source": "Globe/Moby text, 3.11.60-62",
+      "cloze": [
+        "rudder",
+        "tow"
+      ]
+    },
+    {
+      "id": "water-in-water",
+      "text": "That which is now a horse, even with a thought The rack dislimns, and makes it indistinct, As water is in water.",
+      "speaker": "Mark Antony",
+      "reference": "4.14.12",
+      "stage": "act-4",
+      "context": "To Eros, watching the evening clouds change shape before his last defeat.",
+      "analysis": "'Dislimns' — unpaints — is rare enough that Shakespeare may have made it, and it treats the sky as a canvas being wiped. The simile then refuses the comfort of a comparison: water in water is not like dissolution, it is the thing itself, and there is nothing left to see it against.",
+      "themes": [
+        "dissolution"
+      ],
+      "techniques": [
+        "elemental-imagery"
+      ],
+      "characters": [
+        "antony"
+      ],
+      "source": "Globe/Moby text, 4.14.12-14",
+      "cloze": [
+        "dislimns",
+        "water"
+      ]
+    },
+    {
+      "id": "visible-shape",
+      "text": "My good knave Eros, now thy captain is Even such a body: here I am Antony: Yet cannot hold this visible shape, my knave.",
+      "speaker": "Mark Antony",
+      "reference": "4.14.16",
+      "stage": "act-4",
+      "context": "Applying the cloud image to himself, moments before asking Eros to kill him.",
+      "analysis": "'Here I am Antony' ought to be the most certain statement a man can make, and the next line takes it back. The name has been public property since the first scene — Philo's, Caesar's, Cleopatra's — and Antony is the last person to lose his grip on it.",
+      "themes": [
+        "dissolution",
+        "performance"
+      ],
+      "techniques": [
+        "run-on-verse"
+      ],
+      "characters": [
+        "antony"
+      ],
+      "source": "Globe/Moby text, 4.14.16-18",
+      "cloze": [
+        "Antony",
+        "shape"
+      ]
+    },
+    {
+      "id": "master-leaver",
+      "text": "But let the world rank me in register A master-leaver and a fugitive",
+      "speaker": "Domitius Enobarbus",
+      "reference": "4.9.26",
+      "stage": "act-4",
+      "context": "Alone in a ditch by Caesar's camp, after Antony has sent his abandoned treasure after him.",
+      "analysis": "A man who has spent the play writing other people's reputations asks for his own to be filed under two words. 'Register' is a clerk's word, and the request is for no mitigation at all — he has understood that the record is the only judgement there will be.",
+      "themes": [
+        "loyalty",
+        "report"
+      ],
+      "techniques": [
+        "chorus-figure"
+      ],
+      "characters": [
+        "enobarbus",
+        "antony"
+      ],
+      "source": "Globe/Moby text, 4.9.26-27",
+      "cloze": [
+        "master-leaver",
+        "fugitive"
+      ]
+    },
+    {
+      "id": "dying-egypt",
+      "text": "I am dying, Egypt, dying: Give me some wine, and let me speak a little.",
+      "speaker": "Mark Antony",
+      "reference": "4.15.50",
+      "stage": "act-4",
+      "context": "Hauled up into the monument, bleeding from his own sword.",
+      "analysis": "He has already said the same half-line twenty-seven lines earlier, and repetition is how the scene measures time: the dying takes long enough that he has to announce it twice. The request is for wine and for permission — the most public man in the world asking to be allowed to finish a sentence.",
+      "themes": [
+        "dissolution",
+        "performance"
+      ],
+      "techniques": [
+        "run-on-verse"
+      ],
+      "characters": [
+        "antony",
+        "cleopatra"
+      ],
+      "source": "Globe/Moby text, 4.15.50-51",
+      "cloze": [
+        "dying",
+        "wine"
+      ]
+    },
+    {
+      "id": "crown-o-the-earth",
+      "text": "The crown o' the earth doth melt. My lord! O, wither'd is the garland of the war, The soldier's pole is fall'n: young boys and girls Are level now with men; the odds is gone, And there is nothing left remarkable Beneath the visiting moon.",
+      "speaker": "Cleopatra",
+      "reference": "4.15.75",
+      "stage": "act-4",
+      "context": "The moment Antony dies in her arms at the top of the monument.",
+      "analysis": "Grief is expressed as the collapse of every scale of difference: with the pole gone, children and men measure the same. 'The odds is gone' is flat and almost colloquial in the middle of the grandest lament in the play, and it is the line that tells you what she thinks she has lost — not a lover but a standard.",
+      "themes": [
+        "measure",
+        "dissolution"
+      ],
+      "techniques": [
+        "hyperbole"
+      ],
+      "characters": [
+        "cleopatra",
+        "antony"
+      ],
+      "source": "Globe/Moby text, 4.15.75-80",
+      "cloze": [
+        "melt",
+        "odds"
+      ]
+    },
+    {
+      "id": "legs-bestrid-the-ocean",
+      "text": "His legs bestrid the ocean: his rear'd arm Crested the world: his voice was propertied As all the tuned spheres",
+      "speaker": "Cleopatra",
+      "reference": "5.2.101",
+      "stage": "act-5",
+      "context": "Describing her dream of Antony to Dolabella, one of Caesar's officers.",
+      "analysis": "She is making a colossus out of a man who died badly two scenes ago, and she asks Dolabella outright whether such a person could have existed. His honest no does not end the exchange: she answers that dreaming him is itself a kind of evidence, which is the play's last defence of the imagination against Roman fact.",
+      "themes": [
+        "performance",
+        "measure"
+      ],
+      "techniques": [
+        "hyperbole"
+      ],
+      "characters": [
+        "cleopatra",
+        "antony"
+      ],
+      "source": "Globe/Moby text, 5.2.101-103",
+      "cloze": [
+        "bestrid",
+        "Crested"
+      ]
+    },
+    {
+      "id": "he-words-me",
+      "text": "He words me, girls, he words me, that I should not Be noble to myself",
+      "speaker": "Cleopatra",
+      "reference": "5.2.225",
+      "stage": "act-5",
+      "context": "The instant Caesar leaves, having promised her kind treatment.",
+      "analysis": "Turning the noun into a verb is the whole judgement: Caesar's courtesy is a technique and she has seen the mechanism. Her word for suicide here is 'noble to myself', which converts a Roman virtue into something a queen can do alone and in private.",
+      "themes": [
+        "report",
+        "performance"
+      ],
+      "techniques": [],
+      "characters": [
+        "cleopatra",
+        "octavius-caesar"
+      ],
+      "source": "Globe/Moby text, 5.2.225-226",
+      "cloze": [
+        "words",
+        "noble"
+      ]
+    },
+    {
+      "id": "squeaking-cleopatra",
+      "text": "the quick comedians Extemporally will stage us, and present Our Alexandrian revels; Antony Shall be brought drunken forth, and I shall see Some squeaking Cleopatra boy my greatness I' the posture of a whore.",
+      "speaker": "Cleopatra",
+      "reference": "5.2.258",
+      "stage": "act-5",
+      "context": "Explaining to Iras what a Roman triumph would actually involve.",
+      "analysis": "The line was first spoken by a boy actor playing Cleopatra, so the theatre is required to admit its own limits at the very moment she rejects them. What she fears is not death or captivity but a bad performance, and the fear is what drives her to write a better final scene.",
+      "themes": [
+        "performance",
+        "rome-and-egypt"
+      ],
+      "techniques": [
+        "chorus-figure"
+      ],
+      "characters": [
+        "cleopatra",
+        "antony"
+      ],
+      "source": "Globe/Moby text, 5.2.258-263",
+      "cloze": [
+        "squeaking",
+        "posture"
+      ]
+    },
+    {
+      "id": "immortal-longings",
+      "text": "Give me my robe, put on my crown; I have Immortal longings in me",
+      "speaker": "Cleopatra",
+      "reference": "5.2.328",
+      "stage": "act-5",
+      "context": "After the clown has delivered the basket of figs and wished her joy o' the worm.",
+      "analysis": "She dresses for a coronation rather than a death, and the stage business is deliberate: robe and crown are the properties Caesar intended to parade. The word 'longings' keeps the appetite the Romans accused her of and attaches it to eternity instead of to supper.",
+      "themes": [
+        "performance",
+        "measure"
+      ],
+      "techniques": [],
+      "characters": [
+        "cleopatra"
+      ],
+      "source": "Globe/Moby text, 5.2.328-329",
+      "cloze": [
+        "robe",
+        "Immortal"
+      ]
+    },
+    {
+      "id": "fire-and-air",
+      "text": "I am fire and air; my other elements I give to baser life.",
+      "speaker": "Cleopatra",
+      "reference": "5.2.337",
+      "stage": "act-5",
+      "context": "Dressed and crowned, a few lines before the asp is applied.",
+      "analysis": "Four elements were supposed to make a body; she discards earth and water and keeps the two that rise. It is also a direct answer to Antony's 'kingdoms are clay' in the first scene — the play's opening and closing images of substance are spoken by the two lovers about the same set of things.",
+      "themes": [
+        "dissolution",
+        "measure"
+      ],
+      "techniques": [
+        "elemental-imagery"
+      ],
+      "characters": [
+        "cleopatra"
+      ],
+      "source": "Globe/Moby text, 5.2.337-338",
+      "cloze": [
+        "fire",
+        "elements"
+      ]
+    },
+    {
+      "id": "baby-at-my-breast",
+      "text": "Dost thou not see my baby at my breast, That sucks the nurse asleep?",
+      "speaker": "Cleopatra",
+      "reference": "5.2.361",
+      "stage": "act-5",
+      "context": "With the asp at her breast, as Charmian cries out.",
+      "analysis": "The image makes her death an act of feeding, and the venom a child. Cleopatra's own children are barely mentioned in the play; here, at the last possible moment, she becomes a mother to the thing killing her, and asks a question rather than making a claim.",
+      "themes": [
+        "performance",
+        "dissolution"
+      ],
+      "techniques": [],
+      "characters": [
+        "cleopatra",
+        "charmian"
+      ],
+      "source": "Globe/Moby text, 5.2.361-362",
+      "cloze": [
+        "baby",
+        "nurse"
+      ]
+    },
+    {
+      "id": "lass-unparalleld",
+      "text": "Now boast thee, death, in thy possession lies A lass unparallel'd. Downy windows, close;",
+      "speaker": "Charmian",
+      "reference": "5.2.368",
+      "stage": "act-5",
+      "context": "Closing the dead queen's eyes before applying an asp to herself.",
+      "analysis": "After five acts of Egypt, empire and infinite variety, the summing-up word is 'lass' — the smallest, plainest, most domestic noun available. Charmian then straightens the crown, which is the only correction anyone in the play manages to make to how Cleopatra will be seen.",
+      "themes": [
+        "loyalty",
+        "performance"
+      ],
+      "techniques": [],
+      "characters": [
+        "charmian",
+        "cleopatra"
+      ],
+      "source": "Globe/Moby text, 5.2.368-369",
+      "cloze": [
+        "lass",
+        "unparallel'd"
+      ]
+    },
+    {
+      "id": "pair-so-famous",
+      "text": "She shall be buried by her Antony: No grave upon the earth shall clip in it A pair so famous.",
+      "speaker": "Octavius Caesar",
+      "reference": "5.2.421",
+      "stage": "act-5",
+      "context": "The play's closing speech, after the guards find Cleopatra dead.",
+      "analysis": "The winner's last act is to arrange the funeral of the people who beat him to it, and 'clip' — embrace — lets the grave do what Caesar prevented. He is already speaking of them as a story worth lamenting, which is exactly the outcome Cleopatra spent the act securing.",
+      "themes": [
+        "report",
+        "rome-and-egypt"
+      ],
+      "techniques": [],
+      "characters": [
+        "octavius-caesar",
+        "cleopatra",
+        "antony"
+      ],
+      "source": "Globe/Moby text, 5.2.421-423",
+      "cloze": [
+        "buried",
+        "famous"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1579,
+      "label": "North's translation of Plutarch published",
+      "detail": "Thomas North's English Plutarch, made from Amyot's French, gives Shakespeare both his narrative and some of his phrasing.",
+      "kind": "context"
+    },
+    {
+      "year": 1592,
+      "label": "Mary Sidney's Antonius printed",
+      "detail": "A translation of Robert Garnier's French tragedy, and part of an English fashion for closet drama about the Egyptian queen.",
+      "kind": "context"
+    },
+    {
+      "year": 1594,
+      "label": "Samuel Daniel's Cleopatra published",
+      "detail": "Written as a companion to Mary Sidney's play, and evidence that the subject was already established before Shakespeare took it up.",
+      "kind": "context"
+    },
+    {
+      "year": 1599,
+      "label": "Julius Caesar first performed",
+      "detail": "Antony's oration over the body belongs to the same Plutarchan material, seven or eight years earlier in Shakespeare's career.",
+      "kind": "work"
+    },
+    {
+      "year": 1606,
+      "label": "Antony and Cleopatra most likely written",
+      "detail": "Usually dated 1606–07, between King Lear and Coriolanus.",
+      "kind": "work"
+    },
+    {
+      "year": 1608,
+      "label": "Entered in the Stationers' Register",
+      "detail": "The entry records an intention to print that produced no surviving quarto.",
+      "kind": "work"
+    },
+    {
+      "year": 1623,
+      "label": "First Folio",
+      "detail": "The only early text, printed among the tragedies with no act or scene divisions of the kind modern editions supply.",
+      "kind": "work"
+    },
+    {
+      "year": 1678,
+      "label": "Dryden's All for Love published",
+      "detail": "A rewriting of the story in neoclassical form, keeping the unities Shakespeare ignores; it held the stage for well over a century.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Alexandria",
+      "lat": 31.2001,
+      "lon": 29.9187,
+      "note": "Cleopatra's palace and the monument in which both lovers die."
+    },
+    {
+      "name": "Rome",
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "note": "Caesar's house, the triumvirs' quarrel and the marriage to Octavia."
+    },
+    {
+      "name": "Actium",
+      "lat": 38.9345,
+      "lon": 20.7628,
+      "note": "The sea battle of Act III, fought offstage and reported by two officers watching from the shore."
+    },
+    {
+      "name": "Misenum",
+      "lat": 40.7856,
+      "lon": 14.0817,
+      "note": "Where the triumvirs come to terms with Pompey and then get drunk on his galley."
+    },
+    {
+      "name": "Athens",
+      "lat": 37.9838,
+      "lon": 23.7275,
+      "note": "Antony and Octavia's household, and the scene in which the treaty begins to fail."
+    },
+    {
+      "name": "Tarsus",
+      "lat": 36.9177,
+      "lon": 34.8936,
+      "note": "On the river Cydnus, where Enobarbus places the barge and the first meeting."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "A tragedy of the world well lost",
+      "summary": "The reading that takes the lovers at their own valuation: the Roman world is small, the love is large, and Cleopatra's last act converts political defeat into something Caesar cannot touch.",
+      "counter": "It has to look past Actium, the whipping of Thidias and the desertion of the Egyptian fleet, all of which the play insists on showing."
+    },
+    {
+      "position": "A political play about the making of an emperor",
+      "summary": "On this account the subject is Caesar's patient assembly of sole rule, with Antony as the last obstacle and Egypt as the pretext; the love story is the material out of which a founding myth of empire is built.",
+      "counter": "Shakespeare gives Caesar no soliloquy and the lovers almost all the poetry, which is a strange way to write a play about the winner."
+    },
+    {
+      "position": "A play about how reputation is manufactured",
+      "summary": "Recent criticism has concentrated on report, rumour and messengers: nearly every major event reaches us through someone with an interest in how it is described, and the last act is an open contest over who narrates the dead.",
+      "counter": "Pressed too far, it makes the play sound sceptical about everything, when Antony's physical death and Enobarbus's are given no gloss at all."
+    },
+    {
+      "position": "Cleopatra and the limits of the Roman categories",
+      "summary": "Feminist and postcolonial readings have examined how consistently Rome describes Egypt in terms of appetite, softness and race, and how far the play endorses that vocabulary or exposes it as a governing tool.",
+      "counter": "The play also gives Cleopatra the theatrical extravagance the Roman case predicts, so the critique and the caricature are made from the same material."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "How far does the play invite us to accept Rome's judgement of Egypt?",
+      "focus": "Rome, Egypt and the reliability of the speaker",
+      "plan": [
+        "Start with the fact that Philo's verdict comes before any action: the audience is given a reading before it is given evidence.",
+        "Set Caesar's dispatch in 1.4 beside Enobarbus's barge speech in 2.2 and ask what each speaker needs his description to achieve.",
+        "Show how Roman self-presentation is also theatre, using the galley scene at Misenum and Caesar's management of Octavia.",
+        "Test the opposition against Act IV, where Antony's Roman death fails and Cleopatra's Egyptian one succeeds.",
+        "Conclude on 5.2: Caesar's final speech adopts the lovers' scale, which suggests the Roman categories have not held."
+      ]
+    },
+    {
+      "question": "Discuss Shakespeare's presentation of Cleopatra.",
+      "focus": "Performance, politics and the last act",
+      "plan": [
+        "Begin with 2.5 and 3.3, where testing a messenger is shown to be a method rather than a mood.",
+        "Use Enobarbus in 2.2 to establish that her theatricality is recognised by Rome as a political force.",
+        "Examine Actium and its aftermath as the point where her judgement is most open to attack.",
+        "Read 5.2 as a scene she constructs: the false account of her treasure, the dream of Antony, the robe and crown.",
+        "Weigh two conclusions: a woman who finally achieves dignity, or one who has been managing her own image throughout."
+      ]
+    },
+    {
+      "question": "What does the play gain from being written in so many short scenes?",
+      "focus": "Structure, pace and political space",
+      "plan": [
+        "Count the shape: forty-two scenes, thirteen of them in Act III, some under twenty lines.",
+        "Take Actium as the case study — four scenes, no fighting shown, the disaster delivered by witnesses.",
+        "Show how juxtaposition does the arguing: a Roman judgement is answered by the next Egyptian scene before the audience can settle it.",
+        "Consider the cost as well as the gain, including how little sustained interiority any character is allowed.",
+        "Close on the two long scenes that break the pattern, 2.2 and 5.2, and ask why those are the ones given room."
+      ]
+    },
+    {
+      "question": "'The tragedy of Enobarbus.' How useful is that description of the play?",
+      "focus": "Loyalty, judgement and the cost of being right",
+      "plan": [
+        "Establish his function: prose, asides, jokes and the running assessment of his own commander.",
+        "Trace his reasoning from 3.13, where honesty and he begin to square, to the decision itself.",
+        "Set Antony's response — sending the treasure after him — against the logic that produced the desertion.",
+        "Read 4.9 closely: he asks the world to record him in two words and offers no defence.",
+        "Decide whether his death is a sub-plot, a commentary on the main action, or the play's clearest verdict on measuring loyalty by prospects."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Almost every major event reaches us as a report. Does that make the play sceptical, or simply realistic about how politics works?",
+    "Caesar is given no soliloquy at all. What does Shakespeare gain by keeping the winner's mind closed to us?",
+    "Antony's death takes two scenes and goes wrong; Cleopatra's is quick and beautifully staged. What is the play saying by the contrast?",
+    "Cleopatra fears a squeaking boy actor more than she fears dying. What does that tell us about what she thinks is at stake?",
+    "Is Octavia a character or an instrument? Does the play notice the difference?"
+  ],
+  "related": [
+    {
+      "href": "/books/julius-caesar/",
+      "why": "The same Plutarch and the same Antony, seven years earlier and considerably more in control of a crowd."
+    },
+    {
+      "href": "/books/coriolanus/",
+      "why": "Shakespeare's other late Roman play from North, and the opposite temperament: a man who cannot perform at all."
+    },
+    {
+      "href": "/books/macbeth/",
+      "why": "Written within a year or two, and the contrast is instructive: one tragedy of terrible speed, one of enormous distances."
+    },
+    {
+      "href": "/books/romeo-and-juliet/",
+      "why": "The other play in which lovers die by their own hands in a monument, but at the beginning of a career and with none of the politics."
+    },
+    {
+      "href": "/books/cymbeline/",
+      "why": "Rome and a queen again, in the late mode where the tragic material is allowed to turn out otherwise."
+    }
+  ],
+  "videos": []
+}
