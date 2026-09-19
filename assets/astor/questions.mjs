@@ -237,20 +237,24 @@ export function orderThePlot(book, random = Math.random) {
 
 // --- theme and technique ---------------------------------------------------
 
+// A line tagged with several themes is asked about its first, and the wrong
+// answers come only from themes it does not carry, so exactly one option is
+// ever right however many the line holds.
 export function themeMatch(book, random = Math.random) {
   const names = book.themes.map(theme => theme.name);
   if (names.length < 4) return [];
   const byId = new Map(book.themes.map(theme => [theme.id, theme]));
   return book.quotations
-    .filter(quotation => (quotation.themes || []).length === 1 && byId.has(quotation.themes[0]))
+    .filter(quotation => (quotation.themes || []).length >= 1 && byId.has(quotation.themes[0]))
     .map(quotation => {
       const theme = byId.get(quotation.themes[0]);
+      const carried = new Set(quotation.themes.map(id => byId.get(id)?.name).filter(Boolean));
       return makeChoice({
         id: 'theme:' + book.slug + ':' + quotation.id,
         stem: 'Which theme does this line carry?',
         quote: quotation.text,
         correct: theme.name,
-        distractors: names.filter(name => name !== theme.name),
+        distractors: names.filter(name => !carried.has(name)),
         explain: theme.summary,
         source: quotationSource(book, quotation),
         book: bookRef(book),
@@ -265,15 +269,16 @@ export function techniqueSpotter(book, random = Math.random) {
   if (names.length < 4) return [];
   const byId = new Map(book.techniques.map(technique => [technique.id, technique]));
   return book.quotations
-    .filter(quotation => (quotation.techniques || []).length === 1 && byId.has(quotation.techniques[0]))
+    .filter(quotation => (quotation.techniques || []).length >= 1 && byId.has(quotation.techniques[0]))
     .map(quotation => {
       const technique = byId.get(quotation.techniques[0]);
+      const used = new Set(quotation.techniques.map(id => byId.get(id)?.name).filter(Boolean));
       return makeChoice({
         id: 'technique:' + book.slug + ':' + quotation.id,
         stem: 'Which technique is doing the work here?',
         quote: quotation.text,
         correct: technique.name,
-        distractors: names.filter(name => name !== technique.name),
+        distractors: names.filter(name => !used.has(name)),
         explain: technique.definition + ' ' + technique.inThisBook,
         source: quotationSource(book, quotation),
         book: bookRef(book),

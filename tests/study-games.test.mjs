@@ -78,15 +78,23 @@ test('who-said-it never offers the right speaker twice', () => {
   }
 });
 
-test('theme and technique questions only ask about single-tagged lines', () => {
+test('theme and technique questions have exactly one right answer', () => {
   for (const book of books) {
+    const themeName = new Map(book.themes.map(theme => [theme.id, theme.name]));
+    const techniqueName = new Map(book.techniques.map(technique => [technique.id, technique.name]));
     for (const question of themeMatch(book, fixed())) {
       const quotation = book.quotations.find(entry => question.id.endsWith(':' + entry.id));
-      assert.equal(quotation.themes.length, 1, question.id + ' asks about a line with several themes');
+      const carried = quotation.themes.map(id => themeName.get(id));
+      const right = question.options.filter(option => carried.includes(option));
+      assert.equal(right.length, 1, question.id + ' offers ' + right.length + ' themes the line carries');
+      assert.equal(right[0], question.options[question.answer], question.id + ' marks the wrong option');
     }
     for (const question of techniqueSpotter(book, fixed())) {
       const quotation = book.quotations.find(entry => question.id.endsWith(':' + entry.id));
-      assert.equal(quotation.techniques.length, 1, question.id + ' asks about a line with several techniques');
+      const used = quotation.techniques.map(id => techniqueName.get(id));
+      const right = question.options.filter(option => used.includes(option));
+      assert.equal(right.length, 1, question.id + ' offers ' + right.length + ' techniques the line uses');
+      assert.equal(right[0], question.options[question.answer], question.id + ' marks the wrong option');
     }
   }
 });
