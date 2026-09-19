@@ -1023,7 +1023,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '</head><body>' + siteHeader() +
   '<main class="page-wrap explore-page">' +
   '<section class="explore-hero"><div><p class="kicker">Books, passages, guides and editions</p><h1>Search the catalogue.</h1>' +
-  '<p class="deck">Search ' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions by title, writer, period, subject or resource type.</p></div>' +
+  '<p class="deck">Search ' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions by title, writer, period, subject or resource type. Press the slash key anywhere on the site to search without leaving the page.</p></div>' +
   '<aside class="explore-hero-note"><p>Use the search field for a title or subject. Use the filters to limit results to books, guides, study editions, authors, passages or collections.</p></aside></section>' +
   '<section class="explore-tools" aria-label="Search everything">' +
   '<label for="explore-search">What are you looking for?</label>' +
@@ -1048,6 +1048,14 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<a href="/study/"><span>Study editions</span><p>Summaries, context, quotations, critical interpretations and essay support.</p></a>' +
   '<a href="/resources/"><span>Free guides</span><p>Online guides to individual texts, passages, themes and historical contexts.</p></a>' +
   '<a href="/reading-routes/"><span>Cross-period reading lists</span><p>Book lists organised around home, freedom, fear, power, evidence, voice and knowledge.</p></a>' +
+  '<a href="/explore/quotations/"><span>Quotation explorer</span><p>Every checked quotation in the catalogue, filterable by theme, technique, character, period and form.</p></a>' +
+  '<a href="/explore/timeline/"><span>Literature timeline</span><p>Each book set against its historical moment and against everything else being written at the time.</p></a>' +
+  '<a href="/explore/characters/"><span>Character maps</span><p>Relationship diagrams that redraw for each act, so a household can be watched coming apart in order.</p></a>' +
+  '<a href="/explore/techniques/"><span>Technique glossary</span><p>Literary terms defined once and then shown at work in particular lines across the library.</p></a>' +
+  '<a href="/explore/map/"><span>Map of settings</span><p>Where the books happen, from Inverness and Thornfield to Transylvania and the Pequod’s track.</p></a>' +
+  '<a href="/explore/compare/"><span>Compare two texts</span><p>Shared themes and techniques set side by side, with paired quotations for a comparative essay.</p></a>' +
+  '<a href="/play/"><span>Play &amp; revise</span><p>Nine revision games, flashcard decks and an essay planner, all built from the same checked material.</p></a>' +
+  '<a href="/for-teachers/"><span>For teachers</span><p>Lesson starters, printable worksheets, discussion sheets and a projector mode.</p></a>' +
   '</section>' +
   '<section class="explore-results" aria-label="Search results">' + entryCards + '</section>' +
   '<button class="explore-more" id="explore-more" type="button">Show 24 more</button>' +

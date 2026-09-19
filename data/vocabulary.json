@@ -1,5 +1,8 @@
 {
   "themes": {
+    "authority": {
+      "name": "Rules and authority"
+    },
     "class": {
       "name": "Class and money"
     },
@@ -8,6 +11,9 @@
     },
     "disguise": {
       "name": "Disguise and the law"
+    },
+    "dream": {
+      "name": "The dream and the waking"
     },
     "fate": {
       "name": "Fate, stars and accident"
@@ -35,6 +41,12 @@
     },
     "kingship": {
       "name": "What a king is for"
+    },
+    "knowledge": {
+      "name": "Knowledge and ambition"
+    },
+    "language": {
+      "name": "Language taken literally"
     },
     "love": {
       "name": "Love as damage"
@@ -107,6 +119,10 @@
       "name": "Landscape as pressure",
       "definition": "Using terrain, weather and scale to exert force on the characters rather than to decorate them."
     },
+    "prophecy": {
+      "name": "Prophecy",
+      "definition": "A speech that predicts consequences the audience can check against history."
+    },
     "retrospective-narration": {
       "name": "Retrospective narration",
       "definition": "An account given after the event by a narrator who already knows how it ends."
@@ -114,6 +130,10 @@
     "song": {
       "name": "Song",
       "definition": "Sung lyric used to carry information a speech cannot."
+    },
+    "stage-property": {
+      "name": "The stage property",
+      "definition": "An object handled on stage that accumulates meaning as it changes hands."
     },
     "symbolic-objects": {
       "name": "Objects and omens",

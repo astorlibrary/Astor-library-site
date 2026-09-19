@@ -56,6 +56,7 @@ const excluded = new Set([
   'tests',
   'supabase',
   'worker',
+  'docs',
   'README.md',
   'EDITORIAL_GUIDE.md',
   'AUTH_SETUP.md',

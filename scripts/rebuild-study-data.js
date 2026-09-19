@@ -197,6 +197,19 @@ for (const tool of [
 
 fs.writeFileSync(searchFile, JSON.stringify({ entries: searchEntries }, null, 0) + '\n');
 
+// The homepage states how much study material exists; keep the two numbers
+// truthful rather than leaving them to rot.
+const homepageFile = path.join(root, 'index.html');
+if (fs.existsSync(homepageFile)) {
+  let homepage = fs.readFileSync(homepageFile, 'utf8');
+  for (const [key, value] of [['quotations', index.counts.quotations], ['titles', index.counts.books]]) {
+    const pattern = new RegExp('(<span data-astor-count="' + key + '">)\\d+(<\\/span>)', 'g');
+    if (!pattern.test(homepage)) throw new Error('The homepage has no ' + key + ' counter');
+    homepage = homepage.replace(pattern, '$1' + value + '$2');
+  }
+  fs.writeFileSync(homepageFile, homepage);
+}
+
 console.log(
   'Published study data for ' + index.counts.books + ' titles: ' +
   index.counts.quotations + ' quotations, ' +

@@ -211,7 +211,7 @@ if (!homepage.includes('/assets/home.css')) failures.push('The homepage is missi
 if (!homepage.includes('/assets/navigation.css')) failures.push('The homepage is missing the shared navigation stylesheet');
 if (!homepage.includes('class="site-header astor-global-header')) failures.push('The homepage is missing the shared header');
 if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failures.push('The homepage is missing the grouped footer');
-for (const className of ['home-tiles', 'home-book-list', 'home-sample-grid', 'home-free-list', 'home-browse-cols', 'home-colophon-name']) {
+for (const className of ['home-tiles', 'home-book-list', 'home-sample-grid', 'home-free-list', 'home-study-grid', 'home-browse-cols', 'home-colophon-name']) {
   if (!homepageMain.includes('class="' + className + '"')) failures.push('The homepage is missing its ' + className + ' section');
 }
 const autumnFeature = homepageMain.match(/<section class="autumn-feature"[\s\S]*?<\/section>/i)?.[0] || '';
@@ -1308,7 +1308,7 @@ if (fs.existsSync(distDir)) {
     failures.push('dist is missing its static hosting headers');
   }
 
-  for (const privateEntry of ['worker', 'supabase', 'tests', 'package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', 'AUTH_SETUP.md', '.dev.vars']) {
+  for (const privateEntry of ['worker', 'supabase', 'tests', 'docs', 'package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', 'AUTH_SETUP.md', '.dev.vars']) {
     if (fs.existsSync(path.join(distDir, privateEntry))) failures.push('dist exposes private or deployment-only source: ' + privateEntry);
   }
   const presentationDirectory = path.join(distDir, 'assets', 'presentations');
