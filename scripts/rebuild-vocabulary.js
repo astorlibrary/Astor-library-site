@@ -20,9 +20,9 @@ const root = process.cwd();
 const vocabularyFile = path.join(root, 'data', 'vocabulary.json');
 
 function loadVocabulary() {
-  if (!fs.existsSync(vocabularyFile)) return { themes: {}, techniques: {} };
+  if (!fs.existsSync(vocabularyFile)) return { themes: {}, techniques: {}, note: '' };
   const parsed = JSON.parse(fs.readFileSync(vocabularyFile, 'utf8'));
-  return { themes: parsed.themes || {}, techniques: parsed.techniques || {} };
+  return { themes: parsed.themes || {}, techniques: parsed.techniques || {}, note: parsed._note || '' };
 }
 
 function usage(books) {
@@ -81,8 +81,10 @@ if (require.main === module) {
         ? { name: shortest.name, definition: shortest.definition }
         : { name: shortest.name };
     }
+    // Curated entries and the file's own note survive a redraft: only the
+    // identifiers that have no canonical name yet are added.
     console.log(JSON.stringify(
-      { themes: sortKeys(draft.themes), techniques: sortKeys(draft.techniques) }, null, 2));
+      { _note: vocabulary.note, themes: sortKeys(draft.themes), techniques: sortKeys(draft.techniques) }, null, 2));
     return;
   }
 

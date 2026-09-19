@@ -1,160 +1,109 @@
 {
+  "_note": "Canonical names for the theme and technique identifiers that more than one book uses. Each book still names the idea in its own words on its own page; these are the names the glossary, the quotation explorer and the cross-library filters use, so that two books' particular slants on one term do not become two separate headings. Run `node scripts/rebuild-vocabulary.js` to see which shared identifiers still need one, and `--draft` for a starting point to edit. Entries here are curated by hand and are preserved when the draft is regenerated.",
   "themes": {
-    "authority": {
-      "name": "Rules and authority"
-    },
-    "class": {
-      "name": "Class and money"
-    },
-    "confinement": {
-      "name": "Confinement and the asylum"
-    },
-    "conscience": {
-      "name": "Conscience"
-    },
-    "disguise": {
-      "name": "Disguise and the law"
-    },
-    "dream": {
-      "name": "The dream and the waking"
-    },
-    "fate": {
-      "name": "Fate, stars and accident"
-    },
-    "forgiveness": {
-      "name": "Revenge given up"
-    },
-    "friendship": {
-      "name": "Friendship and betrayal"
-    },
-    "gender": {
-      "name": "Manhood and gender"
-    },
-    "guilt": {
-      "name": "Guilt and conscience"
-    },
-    "identity": {
-      "name": "Identity and documents"
-    },
-    "isolation": {
-      "name": "Isolation"
-    },
-    "justice": {
-      "name": "Justice and testimony"
-    },
-    "kingship": {
-      "name": "What a king is for"
-    },
-    "knowledge": {
-      "name": "Knowledge and ambition"
-    },
-    "language": {
-      "name": "Language taken literally"
-    },
-    "love": {
-      "name": "Love as damage"
-    },
-    "loyalty": {
-      "name": "Love for one man"
-    },
-    "marriage": {
-      "name": "Marriage as a market"
-    },
-    "memory": {
-      "name": "Memory and time"
-    },
-    "nature": {
-      "name": "Nature and the sublime"
-    },
-    "performance": {
-      "name": "Performance and sincerity"
-    },
-    "power": {
-      "name": "Rule and service"
-    },
-    "religion": {
-      "name": "Three religions"
-    },
-    "reputation": {
-      "name": "Respectability"
-    },
-    "revenge": {
-      "name": "Revenge and delay"
-    },
-    "rhetoric": {
-      "name": "Persuasion as a weapon"
-    },
-    "time": {
-      "name": "Youth and time"
-    },
-    "work": {
-      "name": "Work and the land"
-    }
+    "authority": { "name": "Authority and obedience" },
+    "class": { "name": "Class and money" },
+    "confinement": { "name": "Confinement" },
+    "conscience": { "name": "Conscience" },
+    "desire": { "name": "Desire" },
+    "disguise": { "name": "Disguise and identity" },
+    "dream": { "name": "Dreams and waking" },
+    "empire": { "name": "Empire and discovery" },
+    "evidence": { "name": "Evidence and testimony" },
+    "fate": { "name": "Fate and chance" },
+    "forgiveness": { "name": "Forgiveness" },
+    "friendship": { "name": "Friendship" },
+    "gender": { "name": "Gender" },
+    "guilt": { "name": "Guilt" },
+    "identity": { "name": "Identity" },
+    "inheritance": { "name": "Inheritance and succession" },
+    "isolation": { "name": "Isolation" },
+    "justice": { "name": "Justice and mercy" },
+    "kingship": { "name": "Kingship" },
+    "knowledge": { "name": "Knowledge" },
+    "language": { "name": "Language and naming" },
+    "love": { "name": "Love" },
+    "loyalty": { "name": "Loyalty" },
+    "marriage": { "name": "Marriage" },
+    "memory": { "name": "Memory" },
+    "nature": { "name": "Nature" },
+    "performance": { "name": "Performance and sincerity" },
+    "possession": { "name": "Possession" },
+    "power": { "name": "Power" },
+    "religion": { "name": "Religion" },
+    "reputation": { "name": "Reputation" },
+    "revenge": { "name": "Revenge" },
+    "rhetoric": { "name": "Rhetoric and persuasion" },
+    "secrecy": { "name": "Secrecy" },
+    "service": { "name": "Service" },
+    "silence": { "name": "Silence" },
+    "time": { "name": "Time" },
+    "work": { "name": "Work" }
   },
   "techniques": {
     "catalogue": {
       "name": "Catalogue",
-      "definition": "A long list of objects or names used in place of narrative."
+      "definition": "A list allowed to run on past the point of usefulness, so that the accumulation itself becomes the effect."
     },
     "dialect": {
       "name": "Dialect",
-      "definition": "Regional speech written phonetically."
+      "definition": "Spelling and grammar used to mark where a speaker comes from, and what being heard that way costs them."
     },
     "direct-address": {
       "name": "Direct address",
-      "definition": "A character speaking straight to the audience, treating them as confidants rather than observers."
+      "definition": "A narrator or speaker turning outward to address the reader or the audience by name."
     },
     "disguise": {
       "name": "Disguise",
-      "definition": "A character adopting another identity in full view of the audience."
+      "definition": "A character concealing their identity, so that the audience knows more than the people on stage do."
     },
     "double-plot": {
-      "name": "The double plot",
-      "definition": "Two parallel stories staged so that each comments on the other."
+      "name": "Double plot",
+      "definition": "A second story running beside the first, repeating its problem in another key and commenting on it."
     },
     "epigram": {
       "name": "Epigram",
-      "definition": "A generalisation compressed into a single balanced sentence."
+      "definition": "A short balanced sentence that sounds like settled wisdom and usually turns a received idea inside out."
     },
     "frame-narrative": {
       "name": "Frame narrative",
-      "definition": "A story enclosed within another story, often several layers deep."
+      "definition": "A story told inside another story, so that every account reaches the reader through somebody with an interest in it."
     },
     "gothic": {
       "name": "Gothic machinery",
-      "definition": "Bells, darkness, apparitions, graves and locked rooms used to produce dread."
+      "definition": "The stock furniture of Gothic writing — the ruin, the storm, the locked room, the buried secret — put to a particular use."
     },
     "idiolect": {
       "name": "Idiolect",
-      "definition": "Giving each character a distinct and consistent way of speaking."
+      "definition": "A speech habit belonging to one character alone, so that they can be recognised before they are named."
     },
     "landscape": {
-      "name": "Landscape as pressure",
-      "definition": "Using terrain, weather and scale to exert force on the characters rather than to decorate them."
+      "name": "Landscape",
+      "definition": "Place and weather made to press on the people living in them, rather than serving as scenery."
     },
     "prophecy": {
       "name": "Prophecy",
-      "definition": "A speech that predicts consequences the audience can check against history."
+      "definition": "A statement about the future that shapes the action by being believed, whether or not it is true."
     },
     "retrospective-narration": {
       "name": "Retrospective narration",
-      "definition": "An account given after the event by a narrator who already knows how it ends."
+      "definition": "A narrator telling their own earlier life, with the distance between the two selves doing the judging."
     },
     "song": {
       "name": "Song",
-      "definition": "Sung lyric used to carry information a speech cannot."
+      "definition": "A sung passage standing outside the dialogue, free to say what the speaking characters cannot."
     },
     "stage-property": {
-      "name": "The stage property",
-      "definition": "An object handled on stage that accumulates meaning as it changes hands."
+      "name": "Stage property",
+      "definition": "An object handled on stage that carries far more weight than its use in the scene explains."
     },
     "symbolic-objects": {
-      "name": "Objects and omens",
-      "definition": "Things in the narrative that carry a meaning the characters half-register."
+      "name": "Symbolic objects",
+      "definition": "An object the narrative keeps returning to until it stands for the argument rather than illustrating it."
     },
     "thresholds": {
-      "name": "Doors and thresholds",
-      "definition": "Physical barriers used to carry an idea about what is concealed behind them."
+      "name": "Thresholds",
+      "definition": "Doors, windows, gates and stairs used to mark what may be crossed, by whom, and at what cost."
     }
   }
 }
