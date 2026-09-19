@@ -25,15 +25,16 @@ once corrects it everywhere.
 
 | | Before | After |
 | --- | --- | --- |
-| Source pages | 393 | 434 |
-| On-site study pages | 12 | 23 |
-| Structured book records | 0 | 36 |
-| Checked quotations on the site | 0 | 821 |
-| Characters, themes, techniques described | 0 | 324 / 156 / 158 |
-| Dated timeline events | 0 | 415 |
-| Mapped settings | 0 | 203 |
+| Source pages | 393 | 433 |
+| On-site study pages | 11 | 29 |
+| Structured book records | 0 | 57 |
+| Checked quotations on the site | 0 | 1,307 |
+| Characters described | 0 | 510 |
+| Theme and technique entries | 0 | 221 and 221, under 74 shared names |
+| Dated timeline events | 0 | 646 |
+| Mapped settings | 0 | 321 |
 | Interactive tools | 0 | 22 pages |
-| Automated checks | 1,354-line checker, 47 tests | + 141 lines of data checks, 98 tests |
+| Automated checks | 1,354-line checker, 47 tests | 1,496-line checker, 98 tests |
 
 Nothing on the site loads a third-party script, sets a cookie for a reader who
 has not asked for one, or sends anything anywhere.
@@ -48,7 +49,7 @@ Primary navigation keeps its five destinations and gains a sixth.
 01 Books              /library/            (unchanged)
 02 Browse library     mega panel           + a "Study tools" column (below)
 03 Free resources     /resources/          (unchanged)
-04 Study editions     /study/              + 11 generated study pages
+04 Study editions     /study/              + 18 generated study pages
 05 Passage Room       /passage-room/       (unchanged)
 06 Play & revise      /play/               NEW
    Search             palette, / or Ctrl-K NEW behaviour on the existing link
@@ -83,7 +84,7 @@ Primary navigation keeps its five destinations and gains a sixth.
 ```
 
 Plus a study toolkit injected into every `/books/<slug>/` and `/study/<slug>/`
-page that has a record, and eleven generated study pages for editions that
+page that has a record, and eighteen generated study pages for editions that
 previously sent readers straight to a retailer.
 
 ---
@@ -305,13 +306,13 @@ quotation and each source text to the same form, locates the line, and checks
 that the declared reference is the line or chapter the quotation actually
 starts on.
 
-**Final result: 821 quotations checked. All were found. All but a handful
-match their source exactly; the remainder differ only in the terminal
-punctuation of a quotation cut short — a colon or comma closed with a full
-stop, which is ordinary editorial practice.** Five references that pointed at
-the second line of a quotation rather than the first were corrected. Three
-prose quotations that had silently dropped a narrative interruption were
-retyped against their source.
+**Final result: 1,307 quotations checked. All were found. 1,299 match their
+source exactly; the remaining eight differ only in the terminal punctuation of
+a quotation cut short — a colon or comma closed with a full stop, which is
+ordinary editorial practice.** Five references that pointed at the second line
+of a quotation rather than the first were corrected. Three prose quotations
+that had silently dropped a narrative interruption were retyped against their
+source.
 
 Divergences from a source that are deliberate, and recorded in the data:
 
@@ -444,9 +445,17 @@ migration path for anonymous data or a feature that only works once signed in.
 Neither is an improvement on a store that works for everyone immediately. The
 existing auth layer is untouched.
 
-**Books without a record.** 36 of 141 titles have one. The remaining 105 book
-pages are exactly as they were — no broken links, no empty panels, no "coming
-soon". A title joins the platform when its record does.
+**Books without a record.** 57 of 141 titles have one, chosen by how widely
+each is studied and by whether a checkable public-domain text was reachable.
+The remaining 84 book pages are exactly as they were — no broken links, no
+empty panels, no "coming soon". A title joins the platform when its record
+does.
+
+**Line numbers where a source has none.** *Paradise Lost* is referenced by
+book rather than book and line, because the source text carries no line
+numbers and counting them would have produced numbers nobody could check.
+*Mrs Dalloway* has no chapters at all, so its quotations are placed by the
+episode of the day they fall in. Both records say so in `referenceStyle`.
 
 ---
 
@@ -475,20 +484,22 @@ from that one file.
 1. **Verified videos.** Add ids for the RSC, National Theatre, Globe Player,
    British Library and university lectures from a machine with network access,
    one title at a time. The component is waiting.
-2. **The remaining 105 titles.** The corpus work is the slow part; the
-   platform work is done. Priorities by likely use: Moby-Dick's companions in
-   American Classics, the remaining history plays, and the seasonal
-   collections, which have no records at all.
-3. **Per-book difficulty and reading time on the catalogue cards.** Both are in
+2. **The remaining 84 titles.** The source-text work is the slow part; the
+   platform work is done. Priorities by likely use: the rest of the history
+   plays and late romances, the remaining Victorian novels, and the seasonal
+   collections and story anthologies, which have no records at all.
+3. **Decide the source-text policy** described at the end of §5, and make the
+   quotations and the Astor editions agree.
+4. **Per-book difficulty and reading time on the catalogue cards.** Both are in
    the records already and would make `/library/` far more useful to a reader
    choosing what to start.
-4. **Passage Room links into the explorer.** The ninety close readings and the
-   821 quotations are separate bodies of work that ought to point at each
+5. **Passage Room links into the explorer.** The ninety close readings and the
+   1,307 quotations are separate bodies of work that ought to point at each
    other.
-5. **An offline mode.** Everything a reader needs for revision is already
+6. **An offline mode.** Everything a reader needs for revision is already
    static JSON and vanilla modules; a service worker would make the games work
    on a train. This is the cheapest large win left.
-6. **Watch the shared vocabulary.** It is the one thing that degrades quietly
+7. **Watch the shared vocabulary.** It is the one thing that degrades quietly
    as the library grows. `node scripts/rebuild-vocabulary.js` should be run
    whenever a batch of records lands, and the canonical names read as a set
    rather than one at a time.
