@@ -68,7 +68,7 @@ function starters(book) {
   const quotations = sample(book.quotations, 3);
   const items = [
     'Put this on the board and give them four minutes: “' + (quotations[0]?.text || '') + '” (' + (quotations[0]?.reference || '') + '). One question only: who benefits from this being said?',
-    'Name a character without naming them: “' + maskName(book.characters[0].summary, book.characters[0].name) + '” Who is it, and which word gave it away?',
+    'Name a character without naming them: “' + maskName(book.characters[0].clue || book.characters[0].summary, book.characters[0].name) + '” Who is it, and which word gave it away?',
     'Two minutes in pairs: put the ' + (book.form === 'play' ? 'acts' : 'sections') + ' in order — ' + shuffle(book.structure.map(stage => stage.label)).join(', ') + '. Then ask which one could be moved without breaking the book.',
     'A theme on the board — ' + book.themes[0].name + '. Sixty seconds to write down one line that carries it. Collect three and argue about which is strongest.',
     quotations[1]
@@ -141,18 +141,22 @@ function discussionSheet(book) {
 }
 
 function knowledgeSheet(book) {
-  const sheet = sheetShell(book, 'Knowledge check', 'ten questions, answers overleaf');
+  const sheet = sheetShell(book, 'Knowledge check', 'ten questions, answers below');
+  // The same draw has to answer the same questions, so the samples are taken
+  // once and used twice rather than redrawn for the answer list.
   const quotations = sample(book.quotations, 6);
-  const questions = quotations.map((quotation, index) =>
-    (index + 1) + '. Who says “' + quotation.text + '”, and where?');
-  const extra = sample(book.characters, 2).map((character, index) =>
-    (quotations.length + index + 1) + '. ' + maskName(character.summary, character.name) + ' Who is this?');
-  const context = sample(book.timeline || [], 2).map((event, index) =>
-    (quotations.length + extra.length + index + 1) + '. In which year: ' + event.label + '?');
+  const characters = sample(book.characters, 2);
+  const events = sample(book.timeline || [], 2);
 
-  sheet.append(el('ol', {}, [...questions, ...extra, ...context].map(question => {
+  const questions = [
+    ...quotations.map(quotation => 'Who says “' + quotation.text + '”, and where?'),
+    ...characters.map(character => maskName(character.clue || character.summary, character.name) + ' Who is this?'),
+    ...events.map(event => 'In which year: ' + event.label + '?')
+  ];
+
+  sheet.append(el('ol', {}, questions.map(question => {
     const item = el('li', {});
-    item.append(el('p', { text: question.replace(/^\d+\.\s*/, '') }));
+    item.append(el('p', { text: question }));
     item.append(rules(1));
     return item;
   })));
@@ -161,8 +165,8 @@ function knowledgeSheet(book) {
   answers.append(el('p', { class: 'astor-compare-heading', text: 'Answers' }));
   answers.append(el('ol', {}, [
     ...quotations.map(quotation => el('li', { text: (quotation.speaker || 'Narrator') + ', ' + book.title + ' ' + quotation.reference })),
-    ...sample(book.characters, 2).map(character => el('li', { text: character.name })),
-    ...sample(book.timeline || [], 2).map(event => el('li', { text: String(event.year) }))
+    ...characters.map(character => el('li', { text: character.name })),
+    ...events.map(event => el('li', { text: String(event.year) }))
   ]));
   sheet.append(answers);
   sheet.append(el('p', { class: 'astor-inline-note', text: 'The answer list is regenerated with the sheet; print them together or fold the page.' }));

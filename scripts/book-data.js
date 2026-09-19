@@ -18,7 +18,7 @@ const dataDirectory = path.join(root, 'data', 'books');
 
 const FORMS = ['play', 'novel', 'novella', 'story collection', 'poem', 'memoir', 'non-fiction'];
 const TIMELINE_KINDS = ['work', 'author', 'context', 'reception'];
-const RELATIONSHIP_KINDS = ['family', 'marriage', 'love', 'ally', 'rival', 'enemy', 'service', 'mentor', 'doubling'];
+const RELATIONSHIP_KINDS = ['family', 'marriage', 'love', 'friendship', 'ally', 'rival', 'enemy', 'service', 'mentor', 'doubling'];
 
 function isPlainObject(value) {
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value);

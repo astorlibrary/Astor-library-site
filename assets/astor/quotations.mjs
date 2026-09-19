@@ -30,11 +30,14 @@ async function start() {
   }
 
   const quotations = allQuotations(index);
+  // The explorer works across the library, so a shared identifier is labelled
+  // with its canonical name rather than whichever book happened to be read
+  // last. Each book keeps its own wording on its own page.
   const themeNames = new Map();
   const techniqueNames = new Map();
   for (const book of index.books) {
-    for (const theme of book.themes) themeNames.set(theme.id, theme.name);
-    for (const technique of book.techniques) techniqueNames.set(technique.id, technique.name);
+    for (const theme of book.themes) themeNames.set(theme.id, theme.canonicalName || theme.name);
+    for (const technique of book.techniques) techniqueNames.set(technique.id, technique.canonicalName || technique.name);
   }
 
   // A link from a book page or the search palette can pre-select a filter.
@@ -69,6 +72,7 @@ function buildFilters(index, quotations, themeNames, techniqueNames) {
   });
   search.addEventListener('input', () => {
     state.query = search.value;
+    syncAddress();
     render(quotations, themeNames, techniqueNames);
   });
   filterForm.append(el('fieldset', {}, [
@@ -118,6 +122,7 @@ function syncAddress() {
   for (const key of ['theme', 'technique', 'book', 'period', 'form']) {
     for (const value of state[key]) url.searchParams.append(key, value);
   }
+  if (state.query.trim()) url.searchParams.set('q', state.query.trim());
   window.history.replaceState(null, '', url);
 }
 

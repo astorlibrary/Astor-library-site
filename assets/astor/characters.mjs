@@ -145,7 +145,11 @@ function renderGraph(book, stage) {
   graphMount.append(svg);
 
   const key = el('div', { class: 'astor-tag-row' });
-  for (const [kind, label] of [['marriage', 'Marriage'], ['family', 'Family'], ['ally', 'Ally'], ['rival', 'Rival'], ['enemy', 'Enemy'], ['love', 'Love'], ['service', 'Service']]) {
+  for (const [kind, label] of [
+    ['marriage', 'Marriage'], ['family', 'Family'], ['love', 'Love'], ['friendship', 'Friendship'],
+    ['ally', 'Ally'], ['mentor', 'Mentor'], ['service', 'Service'],
+    ['rival', 'Rival'], ['enemy', 'Enemy'], ['doubling', 'Doubling']
+  ]) {
     if (!edges.some(edge => edge.kind === kind)) continue;
     key.append(el('span', { class: 'astor-tag', text: label }));
   }

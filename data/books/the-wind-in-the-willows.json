@@ -1,0 +1,1156 @@
+{
+  "slug": "the-wind-in-the-willows",
+  "title": "The Wind in the Willows",
+  "author": "Kenneth Grahame",
+  "href": "/books/the-wind-in-the-willows/",
+  "buyUrl": "https://mybook.to/wYAk",
+  "form": "novel",
+  "genre": "Animal fable",
+  "period": "Modern Classics",
+  "written": "Out of bedtime stories and letters sent to the author’s son in 1907",
+  "firstPublished": 1908,
+  "setting": "An English river bank, the Wild Wood beyond it, and the roads, courts and railways of Edwardian England",
+  "readingTime": 290,
+  "difficulty": 3,
+  "lengthNote": "Twelve chapters, of which only six concern Toad at all",
+  "openingLine": "The Mole had been working very hard all the morning, spring-cleaning his little home.",
+  "summary": "A mole abandons his spring-cleaning, finds a river, and acquires three friends and a way of life within a single afternoon. Around that quiet centre Grahame builds two very different books: a farce in which a rich amphibian steals a motorcar and goes to prison, and a set of chapters about homesickness, wandering and awe that have no jokes in them at all. The animals are the size of their own houses and of human courtrooms by turns, and the novel never explains the discrepancy because it does not need to.",
+  "referenceStyle": "chapter",
+  "sourceText": {
+    "label": "Standard Ebooks text of The Wind in the Willows",
+    "note": "The twelve chapters are numbered I to XII and carry titles in the text; they are cited here by Arabic numeral."
+  },
+  "atAGlance": [
+    {
+      "label": "First published",
+      "value": "8 October 1908",
+      "note": "Methuen, London, with a frontispiece by W. Graham Robertson and no other pictures."
+    },
+    {
+      "label": "Origin",
+      "value": "Letters to Alastair",
+      "note": "Grahame sent animal-story letters to his young son in 1907; the Bodleian holds fifteen of them."
+    },
+    {
+      "label": "The author’s day job",
+      "value": "Secretary of the Bank of England",
+      "note": "He had entered the Bank in 1879 and resigned in June 1908, four months before the book appeared."
+    },
+    {
+      "label": "Shape",
+      "value": "Twelve chapters, two books",
+      "note": "The Toad farce runs through six of them; the other six are about home, wonder and going away."
+    }
+  ],
+  "structure": [
+    {
+      "id": "chapters-1-2",
+      "label": "Chapters 1–2",
+      "title": "The River Bank and the Open Road",
+      "summary": "Mole throws down his whitewash brush, comes up into the sunlight and meets a Rat who owns a boat and a picnic hamper. Within a chapter he has a new life; within two, Toad has abandoned a caravan for a motorcar he has only heard, and the book’s two rhythms are both running."
+    },
+    {
+      "id": "chapters-3-4",
+      "label": "Chapters 3–4",
+      "title": "The Wild Wood and Mr Badger",
+      "summary": "Mole goes into the Wild Wood alone to call on Badger, is frightened by faces and whistling, and is found asleep in a hollow tree by a Rat carrying pistols. Badger’s underground house turns out to be built in the cellars of a vanished city, and the terror of the wood becomes a lecture on who lasts."
+    },
+    {
+      "id": "chapters-5-6",
+      "label": "Chapters 5–6",
+      "title": "Dulce Domum and Mr Toad",
+      "summary": "On a winter walk Mole catches the smell of his own abandoned house and breaks down in the road; Rat takes him back, and the field-mice sing carols at the door. Then Badger, Rat and Mole put Toad under house arrest, and he escapes out of a bedroom window by knotted sheets before lunch."
+    },
+    {
+      "id": "chapters-7-8",
+      "label": "Chapters 7–8",
+      "title": "The Piper at the Gates of Dawn and Toad’s Adventures",
+      "summary": "Searching at night for Otter’s lost son, Rat and Mole hear piping on an island and see something they are then mercifully allowed to forget. Alongside that chapter sits Toad in a dungeon, weeping over bubble-and-squeak, and the gaoler’s daughter proposing a washerwoman’s dress."
+    },
+    {
+      "id": "chapters-9-10",
+      "label": "Chapters 9–10",
+      "title": "Wayfarers All and the Further Adventures of Toad",
+      "summary": "A Sea Rat talks the Water Rat into a trance of harbours and southern ports, and Mole has to hold him down and put a pencil in his paw. Toad meanwhile escapes by train, barge and stolen horse, sells the horse to a gipsy, and boasts his way into a river."
+    },
+    {
+      "id": "chapters-11-12",
+      "label": "Chapters 11–12",
+      "title": "The tears of Toad and the return to Toad Hall",
+      "summary": "Toad comes home to find his house occupied by stoats and weasels and, for once, listens while Badger explains a plan. The four of them retake the hall through a tunnel, and Toad’s banquet is remarkable chiefly for the speeches and songs he does not give."
+    }
+  ],
+  "characters": [
+    {
+      "id": "mole",
+      "name": "Mole",
+      "role": "A householder who leaves his house",
+      "summary": "He begins the book as the reader’s proxy — ignorant, enthusiastic and easily impressed — and ends it as the animal who thinks of the tunnel and holds the line in the fight. His crisis in Chapter 5 is the emotional centre of the novel: he is the one who discovers that leaving home does not end the claim it has on you.",
+      "clue": "Whitewash on the fur, a brush thrown down on the floor, and a scrape up into the sunlight; later, the one who smells his own front door in the dark and cannot stop crying.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "curious",
+        "loyal",
+        "unexpectedly practical"
+      ],
+      "relationships": [
+        {
+          "to": "rat",
+          "label": "lodger, pupil and friend of",
+          "kind": "ally",
+          "stages": [
+            "chapters-1-2",
+            "chapters-5-6",
+            "chapters-11-12"
+          ]
+        },
+        {
+          "to": "badger",
+          "label": "calls on, alone and unannounced",
+          "kind": "ally",
+          "stages": [
+            "chapters-3-4"
+          ]
+        },
+        {
+          "to": "toad",
+          "label": "manages and eventually rescues",
+          "kind": "ally",
+          "stages": [
+            "chapters-5-6",
+            "chapters-11-12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rat",
+      "name": "Water Rat",
+      "role": "Riverbank poet, boatman and host",
+      "summary": "He is competent in everything the river requires and incurious about everything beyond it, and the book both loves him for the first and tests him on the second. His collapse in Chapter 9, when a wandering Sea Rat almost carries him off southward, shows how thin the difference is between a settled life and a refusal to look up.",
+      "clue": "He keeps a boat, a hamper and a paper of half-finished verses, and tells a new friend that the Wide World is something that does not matter either to him or to anybody else.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "hospitable",
+        "expert",
+        "more fragile than he looks"
+      ],
+      "relationships": [
+        {
+          "to": "mole",
+          "label": "takes in and teaches",
+          "kind": "mentor",
+          "stages": [
+            "chapters-1-2",
+            "chapters-5-6"
+          ]
+        },
+        {
+          "to": "sea-rat",
+          "label": "nearly follows",
+          "kind": "doubling",
+          "stages": [
+            "chapters-9-10"
+          ]
+        },
+        {
+          "to": "toad",
+          "label": "exasperated keeper of",
+          "kind": "ally",
+          "stages": [
+            "chapters-5-6",
+            "chapters-11-12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toad",
+      "name": "Toad of Toad Hall",
+      "role": "A rich animal with a new enthusiasm every season",
+      "summary": "Boats, caravans and motorcars pass through him in turn, each one described as a conversion. He is the only character with money, a hall and a name in the newspapers, and the plot punishes him with prison and dispossession while the narration keeps enjoying him — a tension the ending resolves only by making him behave.",
+      "clue": "Goggles, gaiters, a bright red car on approval, twenty years’ imprisonment, a washerwoman’s dress, and a song about himself sung twice over in front of a mirror.",
+      "firstAppearance": "Chapter 2",
+      "traits": [
+        "boastful",
+        "generous",
+        "incapable of learning for long"
+      ],
+      "relationships": [
+        {
+          "to": "badger",
+          "label": "lectured and disciplined by",
+          "kind": "mentor",
+          "stages": [
+            "chapters-5-6",
+            "chapters-11-12"
+          ]
+        },
+        {
+          "to": "gaolers-daughter",
+          "label": "rescued by",
+          "kind": "ally",
+          "stages": [
+            "chapters-7-8"
+          ]
+        },
+        {
+          "to": "wild-wooders",
+          "label": "dispossessed by",
+          "kind": "enemy",
+          "stages": [
+            "chapters-11-12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "badger",
+      "name": "Badger",
+      "role": "The authority of the Wild Wood",
+      "summary": "He hates society, keeps no fixed hours and is treated by every other animal as the last word. His house, built into the cellars of a city that has disappeared, gives him the long view that the rest of the book lacks, and it is why his rebukes to Toad carry weight that Rat’s do not.",
+      "clue": "A long, gloomy, shabby passage, a kitchen with a fire in it and no invitation ever issued; he is out, or asleep, or busy, and everyone waits for him anyway.",
+      "firstAppearance": "Chapter 4",
+      "traits": [
+        "gruff",
+        "patient",
+        "unimpressed by novelty"
+      ],
+      "relationships": [
+        {
+          "to": "toad",
+          "label": "disciplinarian of",
+          "kind": "mentor",
+          "stages": [
+            "chapters-5-6",
+            "chapters-11-12"
+          ]
+        },
+        {
+          "to": "mole",
+          "label": "receives and approves of",
+          "kind": "ally",
+          "stages": [
+            "chapters-3-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "otter",
+      "name": "Otter",
+      "role": "A riverbank neighbour, and Portly’s father",
+      "summary": "He appears in the margins of the sociable chapters and then, in Chapter 7, supplies the emergency that takes Rat and Mole up the river at night. His grief is reported rather than shown, which is what allows the vision on the island to happen to somebody else.",
+      "clue": "He comes out of the water beside a picnic and shakes himself dry, and later stands all night at a ford waiting for a small son who cannot swim well enough yet.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "sociable",
+        "watchful",
+        "at home in the current"
+      ],
+      "relationships": [
+        {
+          "to": "rat",
+          "label": "old friend of",
+          "kind": "ally",
+          "stages": [
+            "chapters-1-2",
+            "chapters-7-8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sea-rat",
+      "name": "The Sea Rat",
+      "role": "A wayfarer out of the south",
+      "summary": "He arrives for one chapter, eats a meal, talks about harbours, and leaves the Water Rat glassy-eyed and packing. He is the book’s argument against itself: everything the river stands for is put at risk by a stranger who is better at describing places than Rat is at defending his own.",
+      "clue": "Lean, keen-featured and dusty, with a story of Constantinople, Venice and a little grey sea town, and a voice that works on the listener like wine.",
+      "firstAppearance": "Chapter 9",
+      "traits": [
+        "eloquent",
+        "restless",
+        "faintly dangerous"
+      ],
+      "relationships": [
+        {
+          "to": "rat",
+          "label": "hypnotises",
+          "kind": "doubling",
+          "stages": [
+            "chapters-9-10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaolers-daughter",
+      "name": "The gaoler’s daughter",
+      "role": "A girl in the castle where Toad is imprisoned",
+      "summary": "She is fond of animals, sees through Toad completely, and arranges his escape by lending him her aunt’s washerwoman’s dress for a consideration. She is one of the very few humans in the book with a will of her own, and the plot of the second half depends entirely on her.",
+      "clue": "She is fond of animals and keeps several of her own, and it is her aunt’s trade, her aunt’s gown and her own arithmetic that get a prisoner out through a gate.",
+      "firstAppearance": "Chapter 8",
+      "traits": [
+        "kind",
+        "shrewd",
+        "businesslike"
+      ],
+      "relationships": [
+        {
+          "to": "toad",
+          "label": "pities and disguises",
+          "kind": "ally",
+          "stages": [
+            "chapters-7-8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wild-wooders",
+      "name": "The stoats, weasels and ferrets",
+      "role": "Inhabitants of the Wild Wood, and squatters at Toad Hall",
+      "summary": "They frighten Mole in Chapter 3 and occupy Toad Hall in Chapter 11, and the book never grants them a named individual or a line of reported thought. They are the clearest sign of the novel’s politics: the riverbankers own houses, and the animals from the wood get them only by seizure.",
+      "clue": "Wicked little faces in holes, whistling and pattering behind the traveller, and later a banquet in somebody else’s dining room with sentries at the gate.",
+      "firstAppearance": "Chapter 3",
+      "traits": [
+        "numerous",
+        "opportunistic",
+        "easily routed"
+      ],
+      "relationships": [
+        {
+          "to": "badger",
+          "label": "deferential to",
+          "kind": "service",
+          "stages": [
+            "chapters-3-4",
+            "chapters-11-12"
+          ]
+        },
+        {
+          "to": "toad",
+          "label": "occupy the house of",
+          "kind": "enemy",
+          "stages": [
+            "chapters-11-12"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "home",
+      "name": "Home, and the claim it keeps",
+      "summary": "Every animal in the book is defined by a dwelling — a hole in a bank, a house under a wood, a hall with a banqueting room — and the plot repeatedly takes one away. Grahame’s most serious writing is about the moment a house you abandoned calls you back, and about how difficult it is to admit that the call has been heard.",
+      "development": "Mole leaves his house in Chapter 1 without a backward look, is ambushed by the smell of it in Chapter 5, and by Chapter 12 is planning the recovery of somebody else’s."
+    },
+    {
+      "id": "wanderlust",
+      "name": "Wandering and the Wide World",
+      "summary": "Against the riverbank sits everything outside it: the Wide World Rat refuses to discuss, the open road Toad takes up as a fashion, and the southern ports the Sea Rat describes until Rat starts packing. The book is honest enough to make the case for leaving eloquent, and then to treat it as an illness to be nursed.",
+      "development": "Refused as a topic in Chapter 1, played as farce by Toad in Chapter 2, and taken seriously enough in Chapter 9 to require physical restraint and a sheet of paper."
+    },
+    {
+      "id": "friendship",
+      "name": "Friendship as management",
+      "summary": "Loyalty here looks like supervision: Rat feeds and teaches Mole, Badger and Rat put Toad under house arrest, and Mole holds a struggling friend down on the floor until the fit passes. Affection in this book is rarely declared and almost always expressed as taking charge of somebody.",
+      "development": "Hospitality in Chapter 1, rescue in Chapter 3, house arrest in Chapter 6, physical restraint in Chapter 9, and a military operation in Chapter 11."
+    },
+    {
+      "id": "class",
+      "name": "Halls, holes and the lower orders",
+      "summary": "Toad has a hall, a boathouse and a solicitor; the Wild Wooders have holes and no names. The novel’s comedy of a gentleman in a washerwoman’s dress depends on the assumption that both women and stoats are types rather than people, and its happy ending restores a landowner to his property by force.",
+      "development": "Signalled in the ‘Private. No landing allowed’ notice-board in Chapter 2, tested in the barge-woman’s kitchen, and settled at the point of a cudgel in Chapter 11."
+    },
+    {
+      "id": "technology",
+      "name": "The motorcar against the old road",
+      "summary": "The car arrives first as a noise, then as a cloud of dust, then as a court case, and the book records what it does to everyone else on the road: a horse in the ditch, a cart on its side, a canary in a cage. Grahame published in the years when speed limits, licences and registration plates were new law, not prophecy.",
+      "development": "A hum like a distant bee in Chapter 2, an obsession by the end of it, twenty years’ imprisonment in Chapter 6, and a promise in the last chapter that is entirely believed by nobody."
+    },
+    {
+      "id": "numinous",
+      "name": "Wonder, and the gift of forgetfulness",
+      "summary": "One chapter steps outside the comedy altogether: two animals hear piping at dawn, see something they can only call the Friend and Helper, and are then given oblivion as a kindness. The book will not let awe be kept, catalogued or used later, which is why the experience leaves no mark on the plot.",
+      "development": "Announced by music on an island in Chapter 7, granted and immediately withdrawn, and echoed faintly in the Sea Rat’s spell two chapters later."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "mixed-registers",
+      "name": "Shifting registers",
+      "definition": "Moving between comic, domestic and exalted styles within one book, without harmonising them.",
+      "inThisBook": "Chapter 7 is written in the cadences of the King James Bible and Chapter 10 in those of a music-hall sketch; the same four animals appear in both, and neither chapter apologises for the other."
+    },
+    {
+      "id": "animal-scale",
+      "name": "Animals on a sliding scale",
+      "definition": "Keeping creatures simultaneously animal and human in size, station and behaviour, and never resolving the contradiction.",
+      "inThisBook": "Toad is small enough to be picked up by a barge-woman and large enough to drive a motorcar and stand trial; Mole is the size of his own front door and of a punt seat by turns."
+    },
+    {
+      "id": "catalogue",
+      "name": "Catalogue",
+      "definition": "A long list of objects or names used in place of narrative.",
+      "inThisBook": "The luncheon basket is emptied in a single unpunctuated word — coldtonguecoldham and the rest — so that abundance arrives as a sound rather than an inventory."
+    },
+    {
+      "id": "song",
+      "name": "Song",
+      "definition": "Sung lyric used to carry information a speech cannot.",
+      "inThisBook": "The field-mice carol at Mole’s door, the Rat hears verse in the reeds, and Toad composes a hymn to himself in a bedroom and sings it twice — the surest sign that his reform is skin-deep."
+    },
+    {
+      "id": "idiolect",
+      "name": "Idiolect",
+      "definition": "Giving each character a distinct and consistent way of speaking.",
+      "inThisBook": "Rat's sentences drift and trail off, Badger's are short and final, and Toad speaks almost entirely in exclamations about himself; the four voices can be told apart without attribution."
+    },
+    {
+      "id": "thresholds",
+      "name": "Doors and thresholds",
+      "definition": "Physical barriers used to carry an idea about what is concealed behind them.",
+      "inThisBook": "Badger’s door in the snow, ‘Mole End’ in Gothic lettering over a bellpull, a cell door, and finally a forgotten tunnel that opens inside the butler’s pantry."
+    },
+    {
+      "id": "mock-heroic",
+      "name": "Mock-heroic",
+      "definition": "Epic apparatus — arms, councils, homecomings — applied to small domestic events.",
+      "inThisBook": "The last chapter is called ‘The Return of Ulysses’, the weapons are laid out in rows on the table, and the battle for a dining room is fought by four animals with sticks."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "divine-discontent",
+      "text": "Spring was moving in the air above and in the earth below and around him, penetrating even his dark and lowly little house with its spirit of divine discontent and longing.",
+      "reference": "Chapter 1",
+      "stage": "chapters-1-2",
+      "context": "The third sentence of the novel, while Mole is still at work with the whitewash.",
+      "analysis": "The season is the subject of the sentence and Mole merely the place it reaches, which sets up a book in which characters are acted on by weather, smells and calls rather than by decisions. ‘Divine discontent’ is a phrase from the pulpit and the essay, and it arrives four lines before the word ‘Bother!’ — the two registers of the whole novel established on its first page.",
+      "themes": [
+        "home",
+        "wanderlust"
+      ],
+      "techniques": [
+        "mixed-registers"
+      ],
+      "characters": [
+        "mole"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "Spring",
+        "discontent"
+      ]
+    },
+    {
+      "id": "hang-spring-cleaning",
+      "text": "he suddenly flung down his brush on the floor, said, “Bother!” and “O blow!” and also “Hang spring-cleaning!”",
+      "reference": "Chapter 1",
+      "stage": "chapters-1-2",
+      "context": "The moment Mole abandons the house he has spent all morning cleaning.",
+      "analysis": "Three exclamations in ascending order of daring, and all of them mild: the most rebellious thing Mole can say is a word about housework. The comedy is that a life is being abandoned in the vocabulary of a slightly cross uncle, and the novel keeps that gap between small language and large events all the way to the battle at the end.",
+      "themes": [
+        "home",
+        "wanderlust"
+      ],
+      "techniques": [
+        "mixed-registers"
+      ],
+      "characters": [
+        "mole"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "Bother",
+        "spring-cleaning"
+      ]
+    },
+    {
+      "id": "messing-about-in-boats",
+      "text": "there is nothing⁠—absolute nothing⁠—half so much worth doing as simply messing about in boats.",
+      "speaker": "Water Rat",
+      "reference": "Chapter 1",
+      "stage": "chapters-1-2",
+      "context": "Rowing Mole downstream on the morning they meet.",
+      "analysis": "The famous sentence is usually quoted as ‘absolutely nothing’; Grahame wrote ‘absolute nothing’, and the slight wrongness is part of Rat’s dreamy delivery, which trails off a line later into ‘messing—about—in—boats; messing—’. The philosophy being proposed is the refusal of purpose, and the sentence enacts it by losing its own thread.",
+      "themes": [
+        "home"
+      ],
+      "techniques": [
+        "idiolect"
+      ],
+      "characters": [
+        "rat",
+        "mole"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "messing",
+        "boats"
+      ]
+    },
+    {
+      "id": "luncheon-basket",
+      "text": "“There’s cold chicken inside it,” replied the Rat briefly: “coldtonguecoldhamcoldbeefpickledgherkinssaladfrenchrollscresssandwichespottedmeatgingerbeerlemonadesodawater⁠—”",
+      "speaker": "Water Rat",
+      "reference": "Chapter 1",
+      "stage": "chapters-1-2",
+      "context": "Mole asks what is in the fat wicker luncheon basket.",
+      "analysis": "The spaces are removed so that the list is read at the speed Rat says it, and the effect is of a rope of food paying out without a breath. ‘Briefly’ is the joke: the narrator calls a sixteen-item catalogue brief because for Rat the river’s abundance genuinely goes without saying.",
+      "themes": [
+        "home"
+      ],
+      "techniques": [
+        "catalogue"
+      ],
+      "characters": [
+        "rat",
+        "mole"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "chicken",
+        "briefly"
+      ]
+    },
+    {
+      "id": "wide-world",
+      "text": "“Beyond the Wild Wood comes the Wide World,” said the Rat. “And that’s something that doesn’t matter, either to you or me. I’ve never been there, and I’m never going, nor you either, if you’ve got any sense at all. Don’t ever refer to it again, please.",
+      "speaker": "Water Rat",
+      "reference": "Chapter 1",
+      "stage": "chapters-1-2",
+      "context": "Mole has asked what lies past the smoke on the horizon.",
+      "analysis": "Rat answers a question about geography with a prohibition, and the sentence that closes the subject — ‘Don’t ever refer to it again, please’ — is the politest thing in the book and the most frightened. Chapter 9 will collect on it: the animal who refuses to discuss the world outside turns out to be the one most easily carried off by a stranger’s description of it.",
+      "themes": [
+        "wanderlust",
+        "home"
+      ],
+      "techniques": [
+        "idiolect"
+      ],
+      "characters": [
+        "rat",
+        "mole"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "Wide World",
+        "sense"
+      ]
+    },
+    {
+      "id": "poop-poop-trance",
+      "text": "They found him in a sort of a trance, a happy smile on his face, his eyes still fixed on the dusty wake of their destroyer. At intervals he was still heard to murmur “Poop-poop!”",
+      "reference": "Chapter 2",
+      "stage": "chapters-1-2",
+      "context": "The motorcar has just put the caravan in the ditch and disappeared down the road.",
+      "analysis": "The car is converted into a sound and the sound into a possession: Toad has learned the vocabulary of the new machine before he has touched one. ‘Their destroyer’ is the narrator’s word, not Toad’s, and it keeps the wrecked cart and the terrified horse in view while the joke is being made.",
+      "themes": [
+        "technology"
+      ],
+      "techniques": [
+        "song"
+      ],
+      "characters": [
+        "toad",
+        "rat",
+        "mole"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "cloze": [
+        "trance",
+        "Poop-poop"
+      ]
+    },
+    {
+      "id": "poetry-of-motion",
+      "text": "“Glorious, stirring sight!” murmured Toad, never offering to move. “The poetry of motion! The real way to travel! The only way to travel!",
+      "speaker": "Toad",
+      "reference": "Chapter 2",
+      "stage": "chapters-1-2",
+      "context": "Still sitting in the road where the car has left him.",
+      "analysis": "‘Never offering to move’ is placed inside a speech about motion, and the contradiction is the whole of Toad: his enthusiasms are states of mind rather than activities. The three exclamations escalate from description to doctrine in nine words, which is how every one of his conversions is reported.",
+      "themes": [
+        "technology"
+      ],
+      "techniques": [
+        "idiolect"
+      ],
+      "characters": [
+        "toad"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "cloze": [
+        "poetry",
+        "travel"
+      ]
+    },
+    {
+      "id": "make-an-animal-of-you",
+      "text": "I want to show you the world! I’m going to make an animal of you, my boy!",
+      "speaker": "Toad",
+      "reference": "Chapter 2",
+      "stage": "chapters-1-2",
+      "context": "Persuading Rat to come on the caravan expedition.",
+      "analysis": "‘Make a man of you’ is the phrase the sentence is built on, and swapping in ‘animal’ is the book’s only direct joke about its own premise. It also reveals Toad’s theory of friendship: other people are raw material for his current enthusiasm, which is why he never notices that Rat has said no.",
+      "themes": [
+        "wanderlust",
+        "friendship"
+      ],
+      "techniques": [
+        "animal-scale"
+      ],
+      "characters": [
+        "toad",
+        "rat"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "cloze": [
+        "world",
+        "animal"
+      ]
+    },
+    {
+      "id": "insides-of-things",
+      "text": "he thought that he had never seen so far and so intimately into the insides of things as on that winter day when Nature was deep in her annual slumber and seemed to have kicked the clothes off.",
+      "reference": "Chapter 3",
+      "stage": "chapters-3-4",
+      "context": "Mole setting out alone for the Wild Wood on a cold, still afternoon.",
+      "analysis": "A sentence of grave Latinate observation ends with somebody kicking off the bedclothes, and the joint is invisible. This is Grahame’s characteristic move — the natural world made domestic rather than sublime — and it explains why a wood can be terrifying in this book without ever becoming supernatural.",
+      "themes": [
+        "home"
+      ],
+      "techniques": [
+        "mixed-registers"
+      ],
+      "characters": [
+        "mole"
+      ],
+      "source": "Standard Ebooks text, Chapter 3",
+      "cloze": [
+        "intimately",
+        "slumber"
+      ]
+    },
+    {
+      "id": "river-bankers",
+      "text": "We river-bankers, we hardly ever come here by ourselves. If we have to come, we come in couples at least; then we’re generally all right.",
+      "speaker": "Water Rat",
+      "reference": "Chapter 3",
+      "stage": "chapters-3-4",
+      "context": "Comforting Mole in the hollow tree after finding him in the snow.",
+      "analysis": "‘We river-bankers’ is the first time the book names a class, and it does so to explain where that class does not go. The reassurance is really a set of rules of caste — passwords, signs, sayings which have power and effect — and the Wild Wood is dangerous chiefly because it belongs to animals who have not been introduced.",
+      "themes": [
+        "class",
+        "friendship"
+      ],
+      "techniques": [
+        "idiolect"
+      ],
+      "characters": [
+        "rat",
+        "mole",
+        "wild-wooders"
+      ],
+      "source": "Standard Ebooks text, Chapter 3",
+      "cloze": [
+        "river-bankers",
+        "couples"
+      ]
+    },
+    {
+      "id": "people-come-they-go",
+      "text": "“People come⁠—they stay for a while, they flourish, they build⁠—and they go. It is their way. But we remain.",
+      "speaker": "Badger",
+      "reference": "Chapter 4",
+      "stage": "chapters-3-4",
+      "context": "Explaining that his house is built in the cellars of a city that once stood where the Wild Wood now grows.",
+      "analysis": "The dashes let the whole of human history pass in a single line, and the verbs get shorter as it goes. ‘But we remain’ is the book’s one moment of geological time, and it quietly reverses the usual arrangement in which animals are temporary and people permanent.",
+      "themes": [
+        "home",
+        "class"
+      ],
+      "techniques": [
+        "animal-scale"
+      ],
+      "characters": [
+        "badger"
+      ],
+      "source": "Standard Ebooks text, Chapter 4",
+      "cloze": [
+        "flourish",
+        "remain"
+      ]
+    },
+    {
+      "id": "home-that-was-what-they-meant",
+      "text": "Home! That was what they meant, those caressing appeals, those soft touches wafted through the air, those invisible little hands pulling and tugging, all one way!",
+      "reference": "Chapter 5",
+      "stage": "chapters-5-6",
+      "context": "On the winter road, when Mole catches the smell of the house he abandoned in Chapter 1.",
+      "analysis": "The summons is written entirely as touch — appeals, touches, hands — so that homesickness arrives as a physical assault rather than a thought. Grahame delays the explanation for a whole paragraph after the word ‘Home!’, which reproduces the order in which Mole himself works it out.",
+      "themes": [
+        "home"
+      ],
+      "techniques": [
+        "mixed-registers"
+      ],
+      "characters": [
+        "mole"
+      ],
+      "source": "Standard Ebooks text, Chapter 5",
+      "cloze": [
+        "Home",
+        "invisible"
+      ]
+    },
+    {
+      "id": "mole-end",
+      "text": "directly facing them was Mole’s little front door, with “Mole End” painted, in Gothic lettering, over the bellpull at the side.",
+      "reference": "Chapter 5",
+      "stage": "chapters-5-6",
+      "context": "Rat following Mole down the long passage to the house he left in the spring.",
+      "analysis": "Gothic lettering over a bellpull is suburban gentility rendered in a hole in the ground, and it tells you what Mole was before he met the river. The detail also does the work that Mole’s tears could not: the house is shown to be modest, cared for and named by its owner, all in one line.",
+      "themes": [
+        "home",
+        "class"
+      ],
+      "techniques": [
+        "thresholds"
+      ],
+      "characters": [
+        "mole",
+        "rat"
+      ],
+      "source": "Standard Ebooks text, Chapter 5",
+      "cloze": [
+        "door",
+        "Gothic"
+      ]
+    },
+    {
+      "id": "friend-and-helper",
+      "text": "he looked in the very eyes of the Friend and Helper; saw the backward sweep of the curved horns, gleaming in the growing daylight; saw the stern, hooked nose between the kindly eyes that were looking down on them humorously",
+      "reference": "Chapter 7",
+      "stage": "chapters-7-8",
+      "context": "Dawn on the island, at the end of the night search for Otter’s son.",
+      "analysis": "The god is never named in the chapter, only titled, and the description is built out of a repeated ‘saw’ that turns looking into a liturgy. Note the adverb ‘humorously’ dropped into the middle of an awe-struck sentence: even here Grahame will not let the sublime arrive without a domestic detail to steady it.",
+      "themes": [
+        "numinous"
+      ],
+      "techniques": [
+        "mixed-registers"
+      ],
+      "characters": [
+        "mole",
+        "rat",
+        "otter"
+      ],
+      "source": "Standard Ebooks text, Chapter 7",
+      "cloze": [
+        "Friend",
+        "horns"
+      ]
+    },
+    {
+      "id": "afraid-of-him",
+      "text": "“Afraid?” murmured the Rat, his eyes shining with unutterable love. “Afraid! Of Him? O, never, never! And yet⁠—and yet⁠—O, Mole, I am afraid!”",
+      "speaker": "Water Rat",
+      "reference": "Chapter 7",
+      "stage": "chapters-7-8",
+      "context": "Mole has whispered the question while both animals are crouching on the island.",
+      "analysis": "The speech contradicts itself twice in eighteen words and means all three positions at once, which is a precise account of religious awe rather than a muddle. It is also the only time in the novel that Rat, the competent one, is given a sentence he cannot finish.",
+      "themes": [
+        "numinous"
+      ],
+      "techniques": [
+        "mixed-registers"
+      ],
+      "characters": [
+        "rat",
+        "mole"
+      ],
+      "source": "Standard Ebooks text, Chapter 7",
+      "cloze": [
+        "Afraid",
+        "never"
+      ]
+    },
+    {
+      "id": "gift-of-forgetfulness",
+      "text": "For this is the last best gift that the kindly demigod is careful to bestow on those to whom he has revealed himself in their helping: the gift of forgetfulness.",
+      "reference": "Chapter 7",
+      "stage": "chapters-7-8",
+      "context": "A breeze crosses the island and both animals lose the memory of what they have seen.",
+      "analysis": "The vision is removed from the characters by the narrator rather than by them, and the colon lands on ‘forgetfulness’ as though it were a reward. This is why the chapter leaves no trace on the plot: Grahame has decided that an experience of this kind cannot be carried back into a book about picnics and motorcars.",
+      "themes": [
+        "numinous",
+        "friendship"
+      ],
+      "techniques": [
+        "mixed-registers"
+      ],
+      "characters": [
+        "rat",
+        "mole"
+      ],
+      "source": "Standard Ebooks text, Chapter 7",
+      "cloze": [
+        "gift",
+        "forgetfulness"
+      ]
+    },
+    {
+      "id": "call-of-the-south",
+      "text": "“And you, you will come too, young brother; for the days pass, and never return, and the South still waits for you. Take the adventure, heed the call, now ere the irrevocable moment passes!",
+      "speaker": "The Sea Rat",
+      "reference": "Chapter 9",
+      "stage": "chapters-9-10",
+      "context": "The end of the Sea Rat’s account of his travels, told over a meal on the riverbank.",
+      "analysis": "The rhythm is deliberately liturgical — three clauses, then a command, then a warning — and it works on Rat precisely because he has no counter-vocabulary for it. Set beside Chapter 7, the chapter is unnerving: the same trance-like language that produced a god here produces a travel brochure.",
+      "themes": [
+        "wanderlust"
+      ],
+      "techniques": [
+        "mixed-registers"
+      ],
+      "characters": [
+        "sea-rat",
+        "rat"
+      ],
+      "source": "Standard Ebooks text, Chapter 9",
+      "cloze": [
+        "adventure",
+        "irrevocable"
+      ]
+    },
+    {
+      "id": "the-cure-has-begun",
+      "text": "It is true that he sucked a good deal more than he scribbled; but it was joy to the Mole to know that the cure had at least begun.",
+      "reference": "Chapter 9",
+      "stage": "chapters-9-10",
+      "context": "After Mole has held Rat down through his fit and then put paper and pencil in front of him.",
+      "analysis": "Wanting to go to sea is treated here as an illness with a treatment, and the treatment is writing poetry. It is the most revealing sentence in the book about its own making: the longing is real, the departure is impossible, and what is left is a man at a desk sucking a pencil.",
+      "themes": [
+        "wanderlust",
+        "friendship"
+      ],
+      "techniques": [
+        "song"
+      ],
+      "characters": [
+        "mole",
+        "rat"
+      ],
+      "source": "Standard Ebooks text, Chapter 9",
+      "cloze": [
+        "scribbled",
+        "cure"
+      ]
+    },
+    {
+      "id": "what-a-clever-toad",
+      "text": "“Ho, ho!” he said to himself, as he marched along with his chin in the air, “what a clever Toad I am! There is surely no animal equal to me for cleverness in the whole world!",
+      "speaker": "Toad",
+      "reference": "Chapter 10",
+      "stage": "chapters-9-10",
+      "context": "Walking away from the barge, having just stolen the barge-woman’s horse.",
+      "analysis": "Every escape in the second half has been arranged by somebody else — a girl with a dress, an engine-driver, a gipsy with cash — and Toad’s self-congratulation edits all of them out. The narrator lets him do it at length and then puts him in a river, which is the book’s standard method of argument.",
+      "themes": [
+        "class"
+      ],
+      "techniques": [
+        "mock-heroic"
+      ],
+      "characters": [
+        "toad"
+      ],
+      "source": "Standard Ebooks text, Chapter 10",
+      "cloze": [
+        "clever",
+        "cleverness"
+      ]
+    },
+    {
+      "id": "toad-came-home",
+      "text": "The Toad⁠—came⁠—home!",
+      "speaker": "Toad",
+      "reference": "Chapter 12",
+      "stage": "chapters-11-12",
+      "context": "The refrain of the song Toad composes in his bedroom before the banquet, and sings twice over.",
+      "analysis": "The dashes are stage directions for a singer pausing to be admired, and the third person is the point: Toad writes about himself as a public event. The chapter is called ‘The Return of Ulysses’, and the returning hero’s first act is to compose his own ballad.",
+      "themes": [
+        "home",
+        "class"
+      ],
+      "techniques": [
+        "song",
+        "mock-heroic"
+      ],
+      "characters": [
+        "toad"
+      ],
+      "source": "Standard Ebooks text, Chapter 12",
+      "cloze": [
+        "Toad",
+        "home"
+      ]
+    },
+    {
+      "id": "badgers-was-the-master-mind",
+      "text": "“Badger’s was the master mind; the Mole and the Water Rat bore the brunt of the fighting; I merely served in the ranks and did little or nothing.”",
+      "speaker": "Toad",
+      "reference": "Chapter 12",
+      "stage": "chapters-11-12",
+      "context": "Disengaging himself from Otter’s embrace at the banquet.",
+      "analysis": "It is an accurate account of the battle, delivered by the one animal who has never given an accurate account of anything. The modesty is a new performance rather than a new character, and the narrator confirms it two lines later by noting how closely Toad watches Badger and Rat for their reaction.",
+      "themes": [
+        "friendship",
+        "class"
+      ],
+      "techniques": [
+        "mock-heroic"
+      ],
+      "characters": [
+        "toad",
+        "badger",
+        "rat",
+        "mole"
+      ],
+      "source": "Standard Ebooks text, Chapter 12",
+      "cloze": [
+        "master mind",
+        "brunt"
+      ]
+    },
+    {
+      "id": "altered-toad",
+      "text": "He was indeed an altered Toad!",
+      "reference": "Chapter 12",
+      "stage": "chapters-11-12",
+      "context": "After Toad has declined to make a speech or sing a song at his own banquet.",
+      "analysis": "One sentence, one paragraph, and an exclamation mark that could be admiration or disbelief. The reform is real enough to be observed and light enough to be withdrawn, which is why the book can end with a promise about motorcars that nobody in the room believes.",
+      "themes": [
+        "technology",
+        "class"
+      ],
+      "techniques": [
+        "mock-heroic"
+      ],
+      "characters": [
+        "toad"
+      ],
+      "source": "Standard Ebooks text, Chapter 12",
+      "cloze": [
+        "altered"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1859,
+      "label": "Kenneth Grahame born in Edinburgh",
+      "detail": "He was brought up largely by relatives in Berkshire after his mother’s death, on the stretch of the Thames the book keeps returning to.",
+      "kind": "author"
+    },
+    {
+      "year": 1879,
+      "label": "Grahame enters the Bank of England",
+      "detail": "He worked there for nearly thirty years while publishing essays and stories in his own time.",
+      "kind": "author"
+    },
+    {
+      "year": 1895,
+      "label": "The Golden Age published",
+      "detail": "Sketches of childhood seen from the child’s side; Dream Days followed in 1898.",
+      "kind": "author"
+    },
+    {
+      "year": 1898,
+      "label": "Grahame becomes Secretary of the Bank of England",
+      "detail": "The most senior post he held, and the one he resigned a few months before the novel appeared.",
+      "kind": "author"
+    },
+    {
+      "year": 1903,
+      "label": "The Motor Car Act",
+      "detail": "Registration, driving licences and a twenty-mile-an-hour limit — the legal background to Toad’s career on the road.",
+      "kind": "context"
+    },
+    {
+      "year": 1907,
+      "label": "The letters to Alastair",
+      "detail": "Grahame sent his young son a series of animal-story letters; fifteen survive in the Bodleian with manuscript material for the novel.",
+      "kind": "work"
+    },
+    {
+      "year": 1908,
+      "label": "Retirement, and publication",
+      "detail": "Grahame resigned from the Bank in June; Methuen published The Wind in the Willows on 8 October.",
+      "kind": "work"
+    },
+    {
+      "year": 1920,
+      "label": "Alastair Grahame dies at Oxford",
+      "detail": "The son the stories were first told to; he was nineteen.",
+      "kind": "author"
+    },
+    {
+      "year": 1929,
+      "label": "A. A. Milne’s Toad of Toad Hall staged",
+      "detail": "The dramatisation keeps the Toad plot and drops the chapters that have no jokes in them, a division most adaptations have followed.",
+      "kind": "reception"
+    },
+    {
+      "year": 1931,
+      "label": "E. H. Shepard illustrates the book",
+      "detail": "His drawings fixed the appearance of the four animals for most readers; the 1908 first edition had a frontispiece and nothing else.",
+      "kind": "reception"
+    },
+    {
+      "year": 1932,
+      "label": "Grahame dies at Pangbourne",
+      "detail": "He is buried at Oxford, beside Alastair.",
+      "kind": "author"
+    }
+  ],
+  "places": [
+    {
+      "name": "Cookham Dean, Berkshire",
+      "lat": 51.5583,
+      "lon": -0.7583,
+      "note": "Where Grahame spent part of his childhood beside the Thames, and the country the riverbank chapters draw on."
+    },
+    {
+      "name": "Quarry Wood, near Marlow",
+      "lat": 51.5617,
+      "lon": -0.7833,
+      "note": "The wood on the hill above Cookham Dean, long identified locally with the Wild Wood."
+    },
+    {
+      "name": "Pangbourne",
+      "lat": 51.4856,
+      "lon": -1.0889,
+      "note": "Grahame’s last home, on the same river, where he died in 1932."
+    },
+    {
+      "name": "Fowey, Cornwall",
+      "lat": 50.336,
+      "lon": -4.637,
+      "note": "The harbour town Grahame knew well, and the kind of grey sea town the Sea Rat describes to a spellbound listener."
+    },
+    {
+      "name": "Bank of England, London",
+      "lat": 51.5142,
+      "lon": -0.0886,
+      "note": "Grahame’s office for nearly thirty years, and the working life the riverbank is usually read against."
+    },
+    {
+      "name": "Bodleian Library, Oxford",
+      "lat": 51.754,
+      "lon": -1.2544,
+      "note": "Holds the surviving letters to Alastair and manuscript material for the novel."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "Two books bound as one",
+      "summary": "The most persistent critical observation is that the Toad chapters and the riverbank chapters belong to different works — one a picaresque farce with a plot, the other a set of static essays on home, awe and longing. Readers who love one often skip the other, and adaptations almost always choose the farce.",
+      "counter": "The seam is the point: both halves are about leaving a house, and only Toad is allowed to make it funny."
+    },
+    {
+      "position": "A pastoral written against the motorcar",
+      "summary": "Read as Edwardian social record, the book is a defence of an older road and river culture at the moment it was being displaced, published five years after the Motor Car Act and by a man who had spent his career in the City.",
+      "counter": "The novel gives the machine all the best noises and its most memorable character, and the countryside it defends has servants, halls and no visible labour."
+    },
+    {
+      "position": "The politics of the riverbank",
+      "summary": "Later criticism has looked hard at who owns what: a gentleman’s hall recovered by force from animals who are never individually named, a class of ‘river-bankers’ with passwords, and women who appear mainly as gaolers’ daughters and barge-women.",
+      "counter": "Badger’s speech about vanished cities cuts against any settled order, and the book’s final image of respect from the Wild Wood is uneasy rather than triumphant."
+    },
+    {
+      "position": "The mystical chapter",
+      "summary": "‘The Piper at the Gates of Dawn’ has been read as late-Victorian nature religion, as a private elegy, and as the one place where Grahame’s essayist’s prose is given a subject large enough for it. Its removal from the plot by the gift of forgetfulness is the crux of every reading.",
+      "counter": "It can also be read as an evasion: the book raises something it cannot use and then deletes it before the next chapter."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "‘A book about home, interrupted by a book about Toad.’ How convincing is this account of the novel?",
+      "focus": "Structure, tone and the two plots",
+      "plan": [
+        "Set out the division precisely: which chapters concern Toad, and which of the others have any plot at all.",
+        "Use Chapter 5 to show what the quiet chapters do that the farce cannot — homesickness as a physical event rather than a comic reversal.",
+        "Show the two plots touching: Toad’s dispossession in Chapter 11 is also a story about a house, and Mole is the one who solves it.",
+        "Test the claim against Chapter 9, which is neither farce nor domestic comfort and belongs to neither half cleanly.",
+        "Conclude on the ending, where the returning hero, the recovered house and the suppressed song are all in the same room."
+      ]
+    },
+    {
+      "question": "How does Grahame use the Wild Wood?",
+      "focus": "Fear, class and the geography of the book",
+      "plan": [
+        "Begin with the wood as Mole meets it: faces, whistling, pattering, and no actual attack.",
+        "Read Rat’s explanation as a statement of caste — river-bankers, passwords, and animals who have not been introduced.",
+        "Turn to Badger’s house, which converts the frightening wood into history and makes the ruins of a city its foundation.",
+        "Follow the Wild Wooders to Toad Hall and ask what changes when the frightening neighbours become squatters in a dining room.",
+        "Weigh the final paragraph’s picture of mother-weasels teaching respect: reassurance, or an occupation confirmed?"
+      ]
+    },
+    {
+      "question": "What is ‘The Piper at the Gates of Dawn’ doing in this novel?",
+      "focus": "Register, the numinous and narrative consequence",
+      "plan": [
+        "Describe the chapter’s prose: the repeated ‘saw’, the refusal to name the god, the single humorous adjective.",
+        "Establish what prompts it — a lost child and a night search — so that the vision is framed by an ordinary emergency.",
+        "Analyse the gift of forgetfulness as a narrative device: nothing may be carried forward into the following chapters.",
+        "Compare the Sea Rat’s spell in Chapter 9, which uses the same trance-like rhythms for a worldly purpose.",
+        "Decide whether the chapter enlarges the book or exposes the limits of what the rest of it can hold."
+      ]
+    },
+    {
+      "question": "Is Toad reformed?",
+      "focus": "Character, comedy and the ending",
+      "plan": [
+        "Chart the conversions in order — boats, caravan, motorcar — and note that each is announced in the same language.",
+        "Examine the mechanisms of his escapes and how little of each one he actually performs himself.",
+        "Read the bedroom song as evidence: private, third-person, and sung twice.",
+        "Set the modest speech at the banquet against his sideways glances at Badger and Rat.",
+        "Conclude with the promise about the first motorcar he sees, and whether the book wants reform or only good manners."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Rat refuses even to discuss the Wide World, and is nearly carried off by it. Is his life on the river a choice or an avoidance?",
+    "The animals are sometimes the size of a boat and sometimes the size of a courtroom. Does the book lose anything by never resolving this?",
+    "Mole is the only character who cries in the novel. Why does Grahame give the breakdown to him rather than to Toad?",
+    "Toad Hall is recovered by force from animals who have no names or speeches. What would change if the stoats were given either?",
+    "Why does the vision on the island have to be forgotten?"
+  ],
+  "related": [
+    {
+      "href": "/books/alices-adventures-in-wonderland/",
+      "why": "The other English classic in which animals hold conversations, and a much less comfortable one about manners."
+    },
+    {
+      "href": "/books/the-railway-children/",
+      "why": "Published two years earlier, and built on the same Edwardian machinery — railways, courts and a house lost and regained."
+    },
+    {
+      "href": "/books/three-men-in-a-boat/",
+      "why": "The Thames as a comic idyll of picnics, hampers and incompetent boating, twenty years before Rat took up the sculls."
+    },
+    {
+      "href": "/books/call-of-the-wild/",
+      "why": "An animal book from the other extreme: no speech, no houses, and instinct treated as a matter of survival rather than character."
+    },
+    {
+      "href": "/books/the-willows/",
+      "why": "Blackwood’s riverside terror of the same decade, where the water and the willows are not friendly at all."
+    }
+  ],
+  "videos": []
+}

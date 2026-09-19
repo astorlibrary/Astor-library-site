@@ -1181,3 +1181,7 @@
   height: 100%;
   border: 0;
 }
+
+.astor-graph .astor-edge.is-friendship { stroke: var(--astor-green); }
+.astor-graph .astor-edge.is-rival { stroke-dasharray: 3 3; }
+.astor-graph .astor-edge.is-doubling { stroke-dasharray: 1 5; }

@@ -201,7 +201,9 @@ export class Round {
   renderOrder(question) {
     this.order = question.items.slice();
     const list = el('ol', { class: 'astor-game-order' });
-    const draw = () => {
+    // Moving an item rebuilds the list, which would otherwise drop the
+    // keyboard focus back to the top of the page; the item that moved keeps it.
+    const draw = (focusId, direction) => {
       clear(list);
       this.order.forEach((item, position) => {
         const row = el('li', { class: 'astor-game-order-row' }, [
@@ -211,17 +213,24 @@ export class Round {
             el('button', {
               class: 'astor-game-move', type: 'button', 'aria-label': 'Move "' + item.label + '" earlier',
               disabled: position === 0, html: '&uarr;',
-              onclick: () => { [this.order[position - 1], this.order[position]] = [this.order[position], this.order[position - 1]]; draw(); announce(this.live, item.label + ' moved to position ' + position); }
+              onclick: () => { [this.order[position - 1], this.order[position]] = [this.order[position], this.order[position - 1]]; draw(item.id, 'up'); announce(this.live, item.label + ' moved to position ' + position); }
             }),
             el('button', {
               class: 'astor-game-move', type: 'button', 'aria-label': 'Move "' + item.label + '" later',
               disabled: position === this.order.length - 1, html: '&darr;',
-              onclick: () => { [this.order[position + 1], this.order[position]] = [this.order[position], this.order[position + 1]]; draw(); announce(this.live, item.label + ' moved to position ' + (position + 2)); }
+              onclick: () => { [this.order[position + 1], this.order[position]] = [this.order[position], this.order[position + 1]]; draw(item.id, 'down'); announce(this.live, item.label + ' moved to position ' + (position + 2)); }
             })
           ])
         ]);
         list.append(row);
       });
+      if (!focusId) return;
+      const moved = this.order.findIndex(item => item.id === focusId);
+      const controls = list.children[moved]?.querySelectorAll('.astor-game-move');
+      const wanted = controls?.[direction === 'up' ? 0 : 1];
+      // At the top or bottom the button that moved the item is now disabled,
+      // so focus goes to the one that is still usable.
+      (wanted && !wanted.disabled ? wanted : controls?.[direction === 'up' ? 1 : 0])?.focus();
     };
     draw();
     return list;
