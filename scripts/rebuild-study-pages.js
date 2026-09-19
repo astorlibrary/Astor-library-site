@@ -393,7 +393,7 @@ function buildPages() {
     mount: `  <div class="astor-graph-wrap"><div id="astor-map"></div></div>
   <div id="astor-map-list"></div>`,
     fallback: 'The map needs JavaScript. Each book page names its settings in the “At a glance” panel.',
-    tail: '  <p class="astor-inline-note">The map is drawn from coordinates held with each book’s record; it loads no tiles and contacts no third party.</p>',
+    tail: '  <p class="astor-inline-note">The places come from coordinates held with each book’s record, and the coastlines and borders from Natural Earth, which is in the public domain. Both are served from this site: the map loads no tiles and contacts no third party.</p>',
     links: [{ href: '/explore/timeline/', label: 'Timeline' }, { href: '/subjects/travel-and-landscape/', label: 'Travel &amp; landscape' }]
   }));
 

@@ -271,13 +271,24 @@ session contains.
   shown doing a particular job in a particular line in every book that uses
   it. Two hundred terms are reached through an A to Z bar and a search box;
   each entry opens on its definition and unfolds its examples when asked.
-- **Map** — inline SVG on an equirectangular projection from coordinates held
-  with each record. It loads no tiles and contacts nobody; the graticule gives
-  scale without claiming a cartographic accuracy the page does not have. Three
-  hundred places do not fit three hundred labels, so the map shows dots sized
-  for the screen and names only the one chosen; the list beneath, folded book
-  by book, carries the information and lights the dot when a place is chosen
-  there. It opens on Britain and Ireland, where half the places are.
+- **Map** — inline SVG on an equirectangular projection. The first version
+  was dots on a bare grid, which is not a map. It now draws real land:
+  coastlines and borders from Natural Earth (public domain), prepared by
+  `scripts/build-map-geography.js` into one small file per view in
+  `assets/astor/geo/` (about 20 KB each compressed; detail is kept inside
+  the view and thrown away outside it, and shapes crossing the date line are
+  unrolled so they do not band the world). The paths are held in degrees and
+  put in place by one transform, so nothing is projected point by point. It
+  still loads no tiles and contacts nobody. Five views: London and the
+  South-East, Britain and Ireland, Europe, the Americas, the world; each is
+  framed to the box, wide on a desk and tall on a phone. Places that would
+  be drawn on top of one another are gathered into one numbered marker
+  (London alone holds sixty), markers that come to touch are joined, names
+  are lettered wherever they clear every marker and every other name, seas
+  and countries are named faintly for orientation, and choosing a marker
+  lists what happens there beneath the map, folded by book when there are
+  many. The list under the map, folded book by book, lights the marker when
+  a place is chosen there.
 - **Compare** — two titles side by side, starting from the themes and
   techniques they share and pairing the quotations that carry them, because
   that is where a comparative paragraph actually begins.
