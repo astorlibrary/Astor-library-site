@@ -356,6 +356,16 @@ Other accuracy rules applied throughout:
   is the 1831 revision, not the 1818 first edition, and *The Picture of Dorian
   Gray* is the twenty-chapter 1891 book rather than the 1890 magazine version.
 
+One judgement call to flag. The brief lists "supplied" among the banned
+machinery phrases, alongside "uploaded" and "this page uses". It is read here
+as banning the machinery sense — a page describing its own construction — and
+not the ordinary literary one. The site already uses the word that way
+sixty-odd times ("Harsnett's Declaration supplied Edgar's fiends"), and
+`check-site.js` has never banned it, so banning it only in the new records
+would have made them read differently from every page around them. Thirteen
+ordinary uses remain in the records; the machinery senses are caught by the
+existing checks. Easy to reverse if the intention was the stricter one.
+
 One limitation worth naming. The source texts are not always the text the
 Astor edition itself prints. The clearest case is *The Great Gatsby*, where
 the source anglicises spelling — "judgements", "grey", "honour", "orgiastic" —
