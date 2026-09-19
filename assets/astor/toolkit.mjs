@@ -5,10 +5,12 @@
 // per-act progress, quotation filters and the commonplace-book control on each
 // quotation. Nothing here is required to read the page.
 
-import { el, announce } from './util.mjs';
+import { el, clear, announce, download } from './util.mjs';
+import { loadBook } from './data.mjs';
 import {
   isRemembering, recordVisit, isSaved, toggleSaved,
-  bookProgress, markStage, toggleCommonplace, inCommonplace
+  bookProgress, markStage, toggleCommonplace, inCommonplace,
+  readingPlan, savePlan, removePlan, markSitting
 } from './store.mjs';
 
 const toolkit = document.querySelector('#astor-study-toolkit');
@@ -30,6 +32,8 @@ function enhance(root) {
   setUpQuoteFilters(root, live);
   setUpCommonplace(root, { slug, title, href });
   setUpVideos(root);
+  setUpReadingPlan(root, { slug, title, href }, live);
+  setUpSheet(root, { slug, title });
 
   root.classList.add('is-enhanced');
 }
@@ -71,6 +75,7 @@ function setUpTabs(root, live) {
       tab.tabIndex = selected ? 0 : -1;
       panels[position].hidden = !selected;
     });
+    embedMap(panels[index]);
     if (focus) tabs[index].focus();
     const hash = '#' + panels[index].id;
     if (window.history.replaceState) window.history.replaceState(null, '', hash);
@@ -92,6 +97,31 @@ function setUpTabs(root, live) {
   }
   openFromHash();
   window.addEventListener('hashchange', openFromHash);
+}
+
+// --- the relationship map ---------------------------------------------------
+//
+// The Characters panel carries a box for the map. The record and the drawing
+// code are fetched the first time the panel is opened, not before, so a reader
+// who never opens it never pays for it.
+
+const embedded = new WeakSet();
+
+function embedMap(panel) {
+  const box = panel.querySelector('[data-astor-character-map]');
+  if (!box || embedded.has(box)) return;
+  embedded.add(box);
+  const link = box.querySelector('a');
+  import('./characters.mjs')
+    .then(module => module.embedCharacterMap(box, box.dataset.astorCharacterMap))
+    .then(map => {
+      if (!map) return;
+      // Keep the way through to the full-page explorer underneath the drawing.
+      box.append(el('p', { class: 'astor-inline-note' }, [
+        el('a', { href: link?.getAttribute('href') || '/explore/characters/', text: 'Open this map on its own page \u2192' })
+      ]));
+    })
+    .catch(() => { /* the link to the explorer is still there */ });
 }
 
 // --- saving ----------------------------------------------------------------
@@ -140,6 +170,9 @@ function setUpProgress(root, slug, title, live) {
       '<span>' + done + '/' + rows.length + ' read</span>';
   }
 
+  const painters = [];
+  root.addEventListener('astor:progress', () => { for (const paint of painters) paint(); paintRing(); });
+
   for (const row of rows) {
     const stage = row.dataset.stage;
     const slot = row.querySelector('.astor-stage-slot');
@@ -162,9 +195,160 @@ function setUpProgress(root, slug, title, live) {
       announce(live, label + (done ? ' unmarked.' : ' marked as read.'));
     });
     paint();
+    painters.push(paint);
     slot.replaceWith(button);
   }
   paintRing();
+}
+
+// --- reading plan ------------------------------------------------------------
+//
+// The record's acts or sections are shared out across the days a reader has
+// free before a date they choose. The plan is kept on this device; ticking a
+// sitting marks its parts as read, so the plot tab and the plan agree.
+
+function setUpReadingPlan(root, book, live) {
+  const box = root.querySelector('[data-astor-plan]');
+  if (!box) return;
+  let plan = isRemembering() ? readingPlan(book.slug) : null;
+  let record = null;
+  const load = () => (record ? Promise.resolve(record) : loadBook(book.slug).then(loaded => { record = loaded; return loaded; }));
+  const mount = el('div', { class: 'astor-plan-body' });
+  box.append(mount);
+  draw();
+
+  function draw() {
+    clear(mount);
+    import('./plan.mjs').then(planning => (plan ? drawPlan(planning) : drawForm(planning)))
+      .catch(() => mount.append(el('p', { class: 'astor-inline-note', text: 'The planner could not load. The acts and sections are listed under Plot.' })));
+  }
+
+  function drawForm({ todayKey, addDays, WEEKDAYS, buildPlan }) {
+    const today = todayKey();
+    const finish = el('input', { type: 'date', id: 'astor-plan-finish-' + book.slug, value: addDays(today, 13), min: today, required: true });
+    const days = el('div', { class: 'astor-plan-days' });
+    const checks = [];
+    for (let offset = 1; offset <= 7; offset += 1) {
+      const day = offset % 7;
+      const input = el('input', { type: 'checkbox', value: String(day), checked: true });
+      checks.push(input);
+      days.append(el('label', { class: 'astor-check' }, [input, el('span', { text: WEEKDAYS[day].slice(0, 3) })]));
+    }
+    const form = el('form', { class: 'astor-plan-form' }, [
+      el('div', {}, [el('label', { for: finish.id, text: 'Finish by' }), finish]),
+      el('fieldset', {}, [el('legend', { text: 'Days you can read' }), days]),
+      el('button', { class: 'button', type: 'submit', text: 'Make my plan' })
+    ]);
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const weekdays = checks.filter(input => input.checked).map(input => Number(input.value));
+      load().then(loaded => {
+        const built = buildPlan(loaded, { start: today, finish: finish.value, weekdays });
+        if (!built) {
+          announce(live, 'No free days fall before that date. Choose a later date or more days.');
+          form.append(el('p', { class: 'astor-inline-note', text: 'No free days fall before that date. Choose a later date or more days.' }));
+          return;
+        }
+        plan = built;
+        if (isRemembering()) savePlan(plan);
+        draw();
+        announce(live, 'Plan made: ' + plan.sittings.length + ' sittings.');
+      });
+    });
+    mount.append(form);
+  }
+
+  function drawPlan({ planSummary, readableDay, toIcs }) {
+    const summary = planSummary(plan);
+    mount.append(el('p', {
+      class: 'astor-explorer-count',
+      text: summary.total + (summary.total === 1 ? ' sitting, ' : ' sittings, ') + readableDay(plan.start) + ' to ' + readableDay(plan.finish) +
+        ' \u00b7 ' + summary.done + ' done' + (summary.overdue ? ', ' + summary.overdue + ' behind' : '')
+    }));
+    const list = el('ol', { class: 'astor-plan-list' });
+    plan.sittings.forEach((sitting, index) => {
+      const input = el('input', { type: 'checkbox', checked: sitting.done, id: 'astor-sitting-' + book.slug + '-' + index });
+      const row = el('li', { class: sitting.done ? 'is-done' : '' }, [
+        el('label', { class: 'astor-check' }, [
+          input,
+          el('span', {}, [
+            el('b', { text: readableDay(sitting.date) }),
+            document.createTextNode(' \u00b7 ' + sitting.label + ' '),
+            el('small', { text: 'about ' + sitting.minutes + ' minutes' })
+          ])
+        ])
+      ]);
+      input.addEventListener('change', () => {
+        sitting.done = input.checked;
+        row.classList.toggle('is-done', input.checked);
+        if (isRemembering()) {
+          markSitting(book.slug, index, input.checked);
+          for (const id of sitting.stages) markStage(book.slug, id, input.checked);
+          root.dispatchEvent(new CustomEvent('astor:progress'));
+        }
+        announce(live, sitting.label + (input.checked ? ' done.' : ' not done yet.'));
+      });
+      list.append(row);
+    });
+    mount.append(list);
+    mount.append(el('div', { class: 'astor-toolkit-actions' }, [
+      el('button', {
+        class: 'button secondary', type: 'button', text: 'Add to my calendar (.ics)',
+        onclick: () => download(book.slug + '-reading-plan.ics', toIcs(plan), 'text/calendar;charset=utf-8')
+      }),
+      el('button', {
+        class: 'button secondary', type: 'button', text: 'Start again',
+        onclick: () => { plan = null; if (isRemembering()) removePlan(book.slug); draw(); }
+      })
+    ]));
+    if (!isRemembering()) {
+      mount.append(el('p', { class: 'astor-inline-note', text: 'Storage is switched off in this browser, so the plan lasts until you leave the page. Add it to your calendar to keep it.' }));
+    }
+  }
+}
+
+// --- revision sheet -----------------------------------------------------------
+
+function setUpSheet(root, book) {
+  const box = root.querySelector('[data-astor-sheet]');
+  if (!box) return;
+  // The printed copy is a clone placed directly under <body>; the print
+  // stylesheet hides everything else, so the page's own length does not turn
+  // into blank pages after the sheet.
+  let printed = null;
+  window.addEventListener('beforeprint', () => {
+    const current = box.querySelector('.astor-sheet');
+    if (!current || printed) return;
+    printed = el('div', { class: 'astor-sheet-print' }, [current.cloneNode(true)]);
+    document.body.append(printed);
+  });
+  window.addEventListener('afterprint', () => { printed?.remove(); printed = null; });
+  const button = el('button', { class: 'button secondary', type: 'button', text: 'Show the revision sheet', 'aria-expanded': 'false' });
+  box.append(el('p', { class: 'astor-toolkit-actions' }, [button]));
+  let sheet = null;
+  button.addEventListener('click', () => {
+    if (sheet) {
+      sheet.remove();
+      sheet = null;
+      document.body.classList.remove('astor-has-sheet');
+      button.textContent = 'Show the revision sheet';
+      button.setAttribute('aria-expanded', 'false');
+      return;
+    }
+    Promise.all([import('./sheet.mjs'), loadBook(book.slug)]).then(([module, record]) => {
+      sheet = el('div', { class: 'astor-sheet-wrap' });
+      sheet.append(module.buildSheet(record));
+      sheet.append(el('p', { class: 'astor-toolkit-actions' }, [
+        el('button', { class: 'button', type: 'button', text: 'Print it', onclick: () => window.print() })
+      ]));
+      box.append(sheet);
+      document.body.classList.add('astor-has-sheet');
+      button.textContent = 'Hide the revision sheet';
+      button.setAttribute('aria-expanded', 'true');
+    }).catch(() => {
+      box.append(el('p', { class: 'astor-inline-note', text: 'The sheet could not be built just now. Everything on it is in the tabs above.' }));
+    });
+  });
 }
 
 // --- quotation filters -----------------------------------------------------

@@ -4,11 +4,13 @@
 // There is no account behind this page. If it is empty, that is because this
 // device has not read anything yet, not because a sign-in is missing.
 
-import { el, clear, formatDate } from './util.mjs';
+import { el, clear, formatDate, download } from './util.mjs';
+import { planSummary, nextSitting, readableDay } from './plan.mjs';
 import { loadIndex } from './data.mjs';
 import {
   isRemembering, savedBooks, recentlyViewed, allProgress, commonplace,
-  annotate, toggleCommonplace, scores, streak, exportAll, forget, deckSummary
+  annotate, toggleCommonplace, scores, streak, exportAll, forget, deckSummary,
+  allPlans, removePlan
 } from './store.mjs';
 import { cardId } from './data.mjs';
 
@@ -18,6 +20,7 @@ const mounts = {
   progress: document.querySelector('#astor-progress'),
   recent: document.querySelector('#astor-recent'),
   commonplace: document.querySelector('#astor-commonplace'),
+  plans: document.querySelector('#astor-plans'),
   scores: document.querySelector('#astor-scores'),
   controls: document.querySelector('#astor-data-controls')
 };
@@ -46,6 +49,7 @@ async function start() {
   renderProgress(index);
   renderRecent();
   renderCommonplace();
+  renderPlans();
   renderScores();
   renderControls();
 }
@@ -197,6 +201,36 @@ function renderCommonplace() {
   mounts.commonplace.append(exportRow);
 }
 
+function renderPlans() {
+  if (!mounts.plans) return;
+  clear(mounts.plans);
+  const plans = allPlans().sort((a, b) => (nextSitting(a)?.date || 'z').localeCompare(nextSitting(b)?.date || 'z'));
+  if (!plans.length) {
+    mounts.plans.append(el('p', { class: 'astor-empty', text: 'No plans yet. On a book page, open the Revise tab, choose a finishing date and the days you have free.' }));
+    return;
+  }
+  const grid = el('div', { class: 'astor-dash-grid' });
+  for (const plan of plans) {
+    const summary = planSummary(plan);
+    const next = nextSitting(plan);
+    const tile = el('div', { class: 'astor-dash-tile' }, [
+      el('b', { text: plan.title }),
+      el('strong', { text: summary.finished ? 'Finished' : next ? readableDay(next.date) : '\u2014' }),
+      el('small', { text: summary.finished
+        ? 'All ' + summary.total + ' sittings done.'
+        : next.label + ', about ' + next.minutes + ' minutes. ' + summary.done + ' of ' + summary.total + ' sittings done' +
+          (summary.overdue ? ', ' + summary.overdue + ' behind.' : '.') }),
+      el('small', {}, [
+        el('a', { href: plan.href + '#astor-revise', text: 'Open the plan \u2192' }),
+        ' \u00b7 ',
+        el('button', { class: 'astor-link-button', type: 'button', text: 'Remove', onclick: () => { removePlan(plan.slug); renderPlans(); } })
+      ])
+    ]);
+    grid.append(tile);
+  }
+  mounts.plans.append(grid);
+}
+
 function renderScores() {
   clear(mounts.scores);
   const entries = Object.entries(scores());
@@ -229,16 +263,6 @@ function gameName(gameId) {
     'opening-lines': 'Opening lines',
     daily: 'The Daily Five'
   })[gameId] || gameId;
-}
-
-function download(name, text) {
-  const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-  const url = URL.createObjectURL(blob);
-  const link = el('a', { href: url, download: name });
-  document.body.append(link);
-  link.click();
-  link.remove();
-  URL.revokeObjectURL(url);
 }
 
 function renderControls() {

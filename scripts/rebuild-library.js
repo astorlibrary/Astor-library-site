@@ -12,6 +12,7 @@ require('./rebuild-format-release');
 require('./rebuild-book-depth');
 require('./rebuild-resources');
 require('./rebuild-resource-additions');
+require('./rebuild-study-pages');
 require('./rebuild-generated-study-pages').build();
 require('./rebuild-study-additions');
 

@@ -212,3 +212,26 @@ test('today() formats a date the way the daily puzzle keys on it', async () => {
   assert.equal(store.today(new Date(2026, 0, 5)), '2026-01-05');
   assert.equal(store.today(new Date(2026, 11, 31)), '2026-12-31');
 });
+
+test('a reading plan is kept, ticked off and forgotten with the rest', async () => {
+  const store = await freshStore();
+  assert.equal(store.readingPlan('macbeth'), null);
+  store.savePlan({ slug: 'macbeth', title: 'Macbeth', href: '/books/macbeth/', sittings: [{ date: '2026-09-21', stages: ['act-1'], done: false }] });
+  assert.equal(store.readingPlan('macbeth').title, 'Macbeth');
+  store.markSitting('macbeth', 0, true);
+  assert.equal(store.readingPlan('macbeth').sittings[0].done, true);
+  assert.equal(store.allPlans().length, 1);
+  assert.ok(JSON.parse(store.exportAll()).plans.macbeth);
+  store.removePlan('macbeth');
+  assert.equal(store.allPlans().length, 0);
+  store.savePlan({ slug: 'hamlet', title: 'Hamlet', href: '/books/hamlet/', sittings: [] });
+  store.forget('plans');
+  assert.equal(store.allPlans().length, 0);
+});
+
+test('a reading plan is discarded quietly when storage is unavailable', async () => {
+  const store = await freshStore({ throwOnWrite: true });
+  store.savePlan({ slug: 'macbeth', title: 'Macbeth', href: '/books/macbeth/', sittings: [] });
+  assert.equal(store.readingPlan('macbeth'), null);
+  assert.equal(store.isRemembering(), false);
+});

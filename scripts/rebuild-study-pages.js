@@ -408,6 +408,8 @@ function buildPages() {
   <div id="astor-recent"></div>
   <section class="section-title" id="commonplace"><p class="kicker">Commonplace book</p><h2>Quotations you have kept.</h2><p>Add a note to any of them. The whole book exports as plain text.</p></section>
   <div id="astor-commonplace"></div>
+  <section class="section-title" id="plans"><p class="kicker">Reading plans</p><h2>What to read next, and when.</h2><p>Plans made from the Revise tab on a book page: the next sitting, and how far along you are.</p></section>
+  <div id="astor-plans"></div>
   <section class="section-title" id="scores"><p class="kicker">Revision</p><h2>Scores and streak.</h2><p>Best results by game, and the run of days you have played.</p></section>
   <div id="astor-scores"></div>`,
     fallback: 'This page reads what your browser has remembered, which needs JavaScript. Nothing is stored on a server, so there is nothing to recover elsewhere.',

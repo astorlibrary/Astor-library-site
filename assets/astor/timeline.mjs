@@ -140,14 +140,6 @@ function render() {
 
   const first = shown[0].year;
   const last = shown[shown.length - 1].year;
-  const span = Math.max(1, last - first);
-
-  const scale = el('div', { class: 'astor-timeline-scale' });
-  const steps = 6;
-  for (let step = 0; step < steps; step += 1) {
-    scale.append(el('span', { text: formatYear(Math.round(first + (span * step) / steps)) }));
-  }
-  track.append(scale);
 
   // One marker per year, not one per event. Six books printed in 1850 would
   // otherwise need six rows to themselves and push everything else off the
@@ -159,10 +151,52 @@ function render() {
   }
   const years = [...byYear.entries()].sort((a, b) => a[0] - b[0]);
 
+  const boardWidth = track.clientWidth || 1100;
+  if (boardWidth < 640) renderColumn(years, shown, first, last);
+  else renderBoard(years, shown, first, last, boardWidth);
+}
+
+// A phone has no width to lay years along, so there the timeline runs down the
+// page: the year on the left, what happened on the right, in order.
+function renderColumn(years, shown, first, last) {
+  const list = el('ol', { class: 'astor-timeline-column' });
+  for (const [year, group] of years) {
+    const kinds = new Set(group.map(event => event.kind));
+    const button = el('button', {
+      class: 'astor-timeline-event', type: 'button',
+      'data-kind': kinds.size === 1 ? [...kinds][0] : 'mixed',
+      'aria-expanded': 'false',
+      text: group.length === 1 ? group[0].label : group.length + ' events'
+    });
+    button.addEventListener('click', () => select(year, group, button));
+    list.append(el('li', {}, [
+      el('span', { class: 'astor-timeline-year', text: formatYear(year) }),
+      el('span', { class: 'astor-timeline-what' }, [
+        button,
+        el('span', { class: 'astor-timeline-books', text: [...new Set(group.map(event => event.book.title))].join(' \u00b7 ') })
+      ])
+    ]));
+  }
+  track.append(list);
+  track.append(el('p', {
+    class: 'astor-inline-note',
+    text: shown.length + ' events in ' + years.length + ' different years between ' + formatYear(first) +
+      ' and ' + formatYear(last) + '. Select a year to read it.'
+  }));
+}
+
+function renderBoard(years, shown, first, last, boardWidth) {
+  const span = Math.max(1, last - first);
+  const scale = el('div', { class: 'astor-timeline-scale' });
+  const steps = 6;
+  for (let step = 0; step < steps; step += 1) {
+    scale.append(el('span', { text: formatYear(Math.round(first + (span * step) / steps)) }));
+  }
+  track.append(scale);
+
   // A marker in the left half of the scale runs rightwards from its year and
   // one in the right half runs leftwards to it, so neither is pushed off the
   // page. Each joins the first row whose last marker finished before it starts.
-  const boardWidth = track.clientWidth || 1100;
   const markerWidth = Math.min(210, Math.max(118, Math.round(boardWidth / 3.4)));
   const widthPercent = (markerWidth / boardWidth) * 100;
   const padding = (8 / boardWidth) * 100;

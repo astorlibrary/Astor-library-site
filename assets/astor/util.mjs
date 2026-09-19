@@ -112,3 +112,14 @@ export function announce(node, message) {
   // makes the live region reliable across screen readers.
   window.setTimeout(() => { node.textContent = message; }, 40);
 }
+
+// Hands the reader a file made in the page, with nothing sent anywhere.
+export function download(name, text, type = 'text/plain;charset=utf-8') {
+  const blob = new Blob([text], { type });
+  const url = URL.createObjectURL(blob);
+  const link = el('a', { href: url, download: name });
+  document.body.append(link);
+  link.click();
+  link.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+}

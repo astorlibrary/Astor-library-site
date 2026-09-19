@@ -17,10 +17,14 @@ const countNode = document.querySelector('#astor-quote-count');
 
 if (filterForm && results) start();
 
-const state = { query: '', book: new Set(), period: new Set(), theme: new Set(), technique: new Set(), form: new Set() };
+let index = null;
+const state = { query: '', book: new Set(), period: new Set(), theme: new Set(), technique: new Set(), form: new Set(), shown: 0 };
+
+// Cards arrive a page at a time. Thirteen hundred at once is a very long
+// scroll on a phone and most of them are not what anybody came for.
+const PAGE = 24;
 
 async function start() {
-  let index;
   try {
     index = await loadIndex();
   } catch {
@@ -64,7 +68,19 @@ function tally(quotations, key, getter) {
 
 function buildFilters(index, quotations, themeNames, techniqueNames) {
   clear(filterForm);
-  filterForm.append(el('h2', { text: 'Narrow it down' }));
+  // On a phone the filters would otherwise stand between the reader and the
+  // first quotation, so they fold away behind their heading there.
+  const heading = el('h2', {}, [el('button', {
+    class: 'astor-filter-toggle', type: 'button', 'aria-expanded': 'false', 'aria-controls': 'astor-quote-filter-body',
+    text: 'Narrow it down',
+    onclick: () => {
+      const open = filterForm.classList.toggle('is-open');
+      heading.firstChild.setAttribute('aria-expanded', String(open));
+    }
+  })]);
+  filterForm.append(heading);
+  const body = el('div', { class: 'astor-filter-body', id: 'astor-quote-filter-body' });
+  filterForm.append(body);
 
   const search = el('input', {
     type: 'search', id: 'astor-quote-search', placeholder: 'A word, a name, a phrase',
@@ -73,9 +89,10 @@ function buildFilters(index, quotations, themeNames, techniqueNames) {
   search.addEventListener('input', () => {
     state.query = search.value;
     syncAddress();
+    state.shown = 0;
     render(quotations, themeNames, techniqueNames);
   });
-  filterForm.append(el('fieldset', {}, [
+  body.append(el('fieldset', {}, [
     el('legend', { text: 'Search' }),
     search
   ]));
@@ -97,19 +114,21 @@ function buildFilters(index, quotations, themeNames, techniqueNames) {
       input.addEventListener('change', () => {
         if (input.checked) state[key].add(value); else state[key].delete(value);
         syncAddress();
+        state.shown = 0;
         render(quotations, themeNames, techniqueNames);
       });
       list.append(el('label', { class: 'astor-check' }, [input, el('span', { text: nameOf(value) + ' (' + total + ')' })]));
     }
-    filterForm.append(el('fieldset', {}, [el('legend', { text: label }), list]));
+    body.append(el('fieldset', {}, [el('legend', { text: label }), list]));
   }
 
-  filterForm.append(el('button', {
+  body.append(el('button', {
     class: 'button secondary', type: 'button', text: 'Clear every filter',
     onclick: () => {
       state.query = '';
       for (const key of ['book', 'period', 'theme', 'technique', 'form']) state[key].clear();
       syncAddress();
+      state.shown = 0;
       buildFilters(index, quotations, themeNames, techniqueNames);
       render(quotations, themeNames, techniqueNames);
     }
@@ -154,16 +173,65 @@ function render(quotations, themeNames, techniqueNames) {
     return;
   }
 
-  // A long list is cheaper to build in one pass than card by card.
+  const chips = activeChips(themeNames, techniqueNames, () => {
+    syncAddress();
+    state.shown = 0;
+    buildFilters(index, quotations, themeNames, techniqueNames);
+    render(quotations, themeNames, techniqueNames);
+  });
+  if (chips) results.append(chips);
+
+  state.shown = Math.max(state.shown, PAGE);
   const fragment = document.createDocumentFragment();
-  for (const quotation of shown.slice(0, 300)) {
+  for (const quotation of shown.slice(0, state.shown)) {
     fragment.append(card(quotation, themeNames, techniqueNames));
   }
   results.append(fragment);
 
-  if (shown.length > 300) {
-    results.append(el('p', { class: 'astor-inline-note', text: 'Showing the first 300. Narrow the filters to see the rest.' }));
+  if (shown.length > state.shown) {
+    const remaining = shown.length - state.shown;
+    results.append(el('p', { class: 'astor-more' }, [
+      el('button', {
+        class: 'button secondary', type: 'button',
+        text: 'Show ' + Math.min(PAGE, remaining) + ' more (' + remaining + ' to come)',
+        onclick: () => {
+          const before = state.shown;
+          state.shown += PAGE;
+          render(quotations, themeNames, techniqueNames);
+          results.querySelectorAll('.astor-quote-card')[before]?.querySelector('a, button')?.focus();
+        }
+      })
+    ]));
   }
+}
+
+// The filters in force, as chips above the results, each with its own remove.
+function activeChips(themeNames, techniqueNames, onChange) {
+  const chips = [];
+  const groups = [
+    ['theme', id => themeNames.get(id) || id],
+    ['technique', id => techniqueNames.get(id) || id],
+    ['book', slug => index.books.find(book => book.slug === slug)?.title || slug],
+    ['period', value => value],
+    ['form', value => value]
+  ];
+  for (const [key, nameOf] of groups) {
+    for (const value of state[key]) {
+      chips.push(el('button', {
+        class: 'astor-chip', type: 'button', 'aria-label': 'Remove the filter ' + nameOf(value),
+        text: nameOf(value) + ' \u00d7',
+        onclick: () => { state[key].delete(value); onChange(); }
+      }));
+    }
+  }
+  if (state.query.trim()) {
+    chips.push(el('button', {
+      class: 'astor-chip', type: 'button', 'aria-label': 'Clear the search',
+      text: '\u201c' + state.query.trim() + '\u201d \u00d7',
+      onclick: () => { state.query = ''; onChange(); }
+    }));
+  }
+  return chips.length ? el('div', { class: 'astor-chip-row' }, chips) : null;
 }
 
 function card(quotation, themeNames, techniqueNames) {

@@ -21,6 +21,7 @@ const EMPTY = {
   commonplace: [],
   cards: {},
   daily: {},
+  plans: {},
   settings: {}
 };
 
@@ -335,6 +336,35 @@ export function recordDaily(result, day = today()) {
 
 export function dailyHistory() {
   return read().daily;
+}
+
+// --- reading plans ---------------------------------------------------------
+
+export function readingPlan(slug) {
+  return read().plans[slug] || null;
+}
+
+export function allPlans() {
+  return Object.values(read().plans);
+}
+
+export function savePlan(plan) {
+  if (!plan || !plan.slug) return null;
+  update(state => { state.plans[plan.slug] = plan; return state; });
+  return plan;
+}
+
+export function removePlan(slug) {
+  update(state => { delete state.plans[slug]; return state; });
+}
+
+export function markSitting(slug, index, done) {
+  update(state => {
+    const plan = state.plans[slug];
+    if (!plan || !plan.sittings[index]) return state;
+    plan.sittings[index].done = Boolean(done);
+    return state;
+  });
 }
 
 // --- housekeeping ----------------------------------------------------------

@@ -115,7 +115,9 @@ function charactersPanel(book) {
     '<h3>Who is who</h3>' +
     '<p class="astor-panel-note">Each entry says what the character is for, not only what they do. ' +
     'The relationship map shows how the connections change as the ' + (book.form === 'play' ? 'acts' : 'sections') + ' pass.</p>' +
+    '<div class="astor-character-map" data-astor-character-map="' + escapeHtml(book.slug) + '">' +
     '<p class="astor-toolkit-actions"><a class="button secondary" href="/explore/characters/?book=' + escapeHtml(book.slug) + '">Open the relationship map</a></p>' +
+    '</div>' +
     '<div class="astor-character-grid">' + cards + '</div>' +
     '</section>';
 }
@@ -267,6 +269,17 @@ function revisePanel(book) {
     '<h3>Revise ' + escapeHtml(book.title) + '</h3>' +
     '<p class="astor-panel-note">Every question in these games is built from the material above, so nothing appears that the page has not already taught. ' +
     'Your scores and your revision streak are kept on this device only.</p>' +
+    '<div class="astor-revise-tools">' +
+    '<div class="astor-plan" data-astor-plan="' + escapeHtml(book.slug) + '">' +
+    '<h4>Plan your reading</h4>' +
+    '<p>Choose a finishing date and the days you have free, and the ' + (book.form === 'play' ? 'acts' : 'sections') +
+    ' above are shared out across them, with a rough time for each sitting. The plan stays on this device and can be added to your calendar.</p>' +
+    '</div>' +
+    '<div class="astor-sheet-box" data-astor-sheet="' + escapeHtml(book.slug) + '">' +
+    '<h4>One page to take with you</h4>' +
+    '<p>The shape of the book, who is who, the themes, ' + Math.min(8, book.quotations.length) + ' lines worth knowing with their references, and three questions to practise on, laid out to print on a single sheet.</p>' +
+    '</div>' +
+    '</div>' +
     '<div class="astor-play-grid">' + cards +
     '<a class="astor-play-card" href="/play/flashcards/?book=' + escapeHtml(book.slug) + '">' +
     '<span class="astor-play-kind">Flashcards</span><h4>Spaced repetition</h4>' +
