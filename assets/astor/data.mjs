@@ -72,7 +72,7 @@ export function allThemes(index) {
   const themes = new Map();
   for (const book of index.books) {
     for (const theme of book.themes) {
-      const entry = themes.get(theme.id) || { id: theme.id, name: theme.name, books: [] };
+      const entry = themes.get(theme.id) || { id: theme.id, name: theme.canonicalName || theme.name, books: [] };
       entry.books.push({ slug: book.slug, title: book.title, href: book.href, summary: theme.summary });
       themes.set(theme.id, entry);
     }
@@ -86,7 +86,7 @@ export function allTechniques(index) {
     for (const technique of book.techniques) {
       const entry = techniques.get(technique.id) || {
         id: technique.id,
-        name: technique.name,
+        name: technique.canonicalName || technique.name,
         definition: technique.definition,
         examples: []
       };
@@ -94,6 +94,7 @@ export function allTechniques(index) {
         slug: book.slug,
         title: book.title,
         href: book.href,
+        bookName: technique.name,
         inThisBook: technique.inThisBook,
         quotations: book.quotations.filter(quotation => (quotation.techniques || []).includes(technique.id))
       });

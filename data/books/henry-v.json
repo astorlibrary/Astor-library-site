@@ -15,7 +15,7 @@
   "difficulty": 4,
   "lengthNote": "Around 3,200 lines in the Folio — the quarto of 1600 is barely half that",
   "openingLine": "O for a Muse of fire, that would ascend The brightest heaven of invention",
-  "summary": "A king takes an army across the Channel on a claim that churchmen have supplied for him, sacks a town by threatening its children, and wins a battle he had no business winning. Shakespeare frames it with a Chorus who describes a national epic, and then writes scenes that will not quite fit inside it: a soldier who asks whose fault it will be if the cause is bad, a boy who would trade his fame for a pot of ale, an epilogue that hands the conquest straight back.",
+  "summary": "A king takes an army across the Channel on a claim that churchmen have built for him, sacks a town by threatening its children, and wins a battle he had no business winning. Shakespeare frames it with a Chorus who describes a national epic, and then writes scenes that will not quite fit inside it: a soldier who asks whose fault it will be if the cause is bad, a boy who would trade his fame for a pot of ale, an epilogue that hands the conquest straight back.",
   "referenceStyle": "act.scene.line, Globe/Moby line numbering",
   "sourceText": {
     "label": "Globe/Moby text of Henry V",
@@ -241,7 +241,7 @@
       "relationships": [
         {
           "to": "canterbury",
-          "label": "supplied with a claim by",
+          "label": "given his claim by",
           "kind": "ally",
           "stages": [
             "act-1"
@@ -304,7 +304,7 @@
       "relationships": [
         {
           "to": "henry",
-          "label": "supplies with a claim",
+          "label": "hands the king his claim",
           "kind": "ally",
           "stages": [
             "act-1"

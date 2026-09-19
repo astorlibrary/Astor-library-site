@@ -1340,6 +1340,147 @@ if (fs.existsSync(distDir)) {
   }
 }
 
+// --- the structured study data -------------------------------------------
+//
+// One JSON file per title feeds the book page, the study page, the explorers,
+// the games and the daily puzzle. If it is wrong here it is wrong in nine
+// places at once, so it is checked harder than anything else on the site.
+
+const { loadBooks, validateBook } = require('./book-data');
+const studyBooks = loadBooks();
+
+function dataText(book) {
+  // Every string a reader could see, for the editorial phrase check.
+  const parts = [];
+  const walk = value => {
+    if (typeof value === 'string') parts.push(value);
+    else if (Array.isArray(value)) for (const item of value) walk(item);
+    else if (value && typeof value === 'object') for (const item of Object.values(value)) walk(item);
+  };
+  walk(book);
+  return parts.join(' ').toLowerCase();
+}
+
+function pageExists(href) {
+  if (!/^\/[a-z0-9-/]*\/$/.test(href)) return false;
+  return fs.existsSync(path.join(root, href.replace(/^\//, '').replace(/\/$/, ''), 'index.html'));
+}
+
+for (const book of studyBooks) {
+  const fileName = 'data/books/' + book.fileName;
+  for (const problem of validateBook(book, book.fileName)) failures.push('data/books/' + problem);
+
+  if (!pageExists(book.href)) failures.push(fileName + ' points at a missing book page: ' + book.href);
+  if (book.studyHref && !pageExists(book.studyHref)) failures.push(fileName + ' points at a missing study page: ' + book.studyHref);
+  for (const related of book.related || []) {
+    if (!pageExists(related.href)) failures.push(fileName + ' has a related link to a missing page: ' + related.href);
+  }
+  if (book.buyUrl && !/^https:\/\//.test(book.buyUrl)) failures.push(fileName + ' has a buy link that is not an https address');
+
+  const text = dataText(book);
+  for (const phrase of editorialPhrases) {
+    if (text.includes(phrase)) failures.push(fileName + ' contains build wording: "' + phrase + '"');
+  }
+  if (/\bsizes="auto"/i.test(text)) failures.push(fileName + ' contains sizes="auto"');
+  // Exam specifications change; the site does not claim to track them.
+  for (const board of ['aqa', 'edexcel', 'eduqas', 'wjec', ' ocr ']) {
+    if (text.includes(board)) failures.push(fileName + ' names an exam board (' + board.trim() + ')');
+  }
+
+  if (book.form === 'play') {
+    for (const quotation of book.quotations) {
+      const numbered = /^\d+\.\d+(\.\d+)?$/.test(quotation.reference);
+      // Some plays number an Induction or a Prologue outside the acts.
+      const named = /^(act|scene|prologue|epilogue|chorus|induction)\b/i.test(quotation.reference);
+      if (!numbered && !named) {
+        failures.push(fileName + ' has a play reference that is neither act.scene.line nor a named division: "' + quotation.reference + '"');
+      }
+    }
+  }
+
+  for (const video of book.videos || []) {
+    if (!['youtube-nocookie', 'vimeo'].includes(video.provider)) {
+      failures.push(fileName + ' has a video from an unsupported provider: ' + video.provider);
+    }
+  }
+}
+
+// A shared identifier has to mean one thing across the library, or the
+// glossary and the cross-library filters quietly merge two different ideas.
+// Each book may still name the term in its own words on its own page; what a
+// shared identifier needs is one canonical name for everywhere else.
+const { missingCanonicalNames } = require('./rebuild-vocabulary');
+for (const item of missingCanonicalNames(studyBooks)) {
+  failures.push('data/vocabulary.json has no canonical name for the ' + item.kind.replace(/s$/, '') +
+    ' "' + item.id + '", used differently by ' + item.entries.map(entry => entry.slug).join(' and ') +
+    '. Run node scripts/rebuild-vocabulary.js --draft');
+}
+
+// The published indexes must match the data they were generated from.
+for (const [file, key] of [['assets/study-index.json', 'books'], ['assets/search-index.json', 'entries']]) {
+  const fullPath = path.join(root, file);
+  if (!fs.existsSync(fullPath)) { failures.push(file + ' has not been generated'); continue; }
+  const parsed = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+  if (!Array.isArray(parsed[key])) failures.push(file + ' is missing its ' + key + ' list');
+}
+const studyIndexFile = path.join(root, 'assets', 'study-index.json');
+if (fs.existsSync(studyIndexFile)) {
+  const studyIndex = JSON.parse(fs.readFileSync(studyIndexFile, 'utf8'));
+  if (studyIndex.books.length !== studyBooks.length) {
+    failures.push('assets/study-index.json covers ' + studyIndex.books.length + ' titles but data/books holds ' + studyBooks.length + '. Run node scripts/rebuild-study-data.js');
+  }
+  const slugs = new Set(studyBooks.map(book => book.slug));
+  for (const entry of studyIndex.books) {
+    if (!slugs.has(entry.slug)) failures.push('assets/study-index.json holds a title with no data file: ' + entry.slug);
+    if (!entry.quotations.every(quotation => quotation.reference && quotation.source)) {
+      failures.push('assets/study-index.json has an unreferenced quotation in ' + entry.slug);
+    }
+  }
+}
+const searchIndexFile = path.join(root, 'assets', 'search-index.json');
+if (fs.existsSync(searchIndexFile)) {
+  const searchIndex = JSON.parse(fs.readFileSync(searchIndexFile, 'utf8'));
+  const checkedHrefs = new Set();
+  for (const entry of searchIndex.entries) {
+    const target = entry.h.split('#')[0].split('?')[0];
+    if (checkedHrefs.has(target)) continue;
+    checkedHrefs.add(target);
+    if (!pageExists(target)) failures.push('assets/search-index.json points at a missing page: ' + entry.h);
+  }
+}
+
+// The generated Play, Explore and reader pages.
+const generatedPages = [
+  'play', 'play/who-said-it', 'play/fill-the-line', 'play/theme-match',
+  'play/technique-spotter', 'play/character-identification', 'play/order-the-plot',
+  'play/which-book', 'play/context-sprint', 'play/opening-lines',
+  'play/flashcards', 'play/essay-forge', 'play/defend-the-reading',
+  'today', 'explore/quotations', 'explore/timeline', 'explore/characters',
+  'explore/techniques', 'explore/map', 'explore/compare', 'my-library', 'for-teachers'
+];
+for (const page of generatedPages) {
+  const file = path.join(root, page, 'index.html');
+  if (!fs.existsSync(file)) { failures.push('The generated page /' + page + '/ is missing. Run node scripts/rebuild-study-pages.js'); continue; }
+  const html = fs.readFileSync(file, 'utf8');
+  const moduleMatch = html.match(/src="\/assets\/astor\/([a-z-]+\.mjs)"/);
+  if (!moduleMatch) failures.push('/' + page + '/ does not load a study module');
+  else if (!fs.existsSync(path.join(root, 'assets', 'astor', moduleMatch[1]))) {
+    failures.push('/' + page + '/ loads a missing module: ' + moduleMatch[1]);
+  }
+  if (!html.includes('<noscript>')) failures.push('/' + page + '/ has no fallback for readers without JavaScript');
+  if (!html.includes('/assets/astor-study.css')) failures.push('/' + page + '/ is missing the study stylesheet');
+}
+
+// sizes="auto" is never valid here: the build only adds a srcset when an image
+// declares a width, and an automatic sizes attribute breaks that contract.
+for (const file of htmlFiles) {
+  if (/sizes="auto"/i.test(fs.readFileSync(file, 'utf8'))) failures.push(relative(file) + ' uses sizes="auto"');
+}
+for (const file of ['assets/astor-study.css', 'assets/navigation.css']) {
+  const css = fs.readFileSync(path.join(root, file), 'utf8');
+  if (!css.includes('prefers-reduced-motion')) warnings.push(file + ' does not respect prefers-reduced-motion');
+}
+
 if (warnings.length) {
   console.warn('Editorial notes:');
   for (const warning of warnings) console.warn('- ' + warning);

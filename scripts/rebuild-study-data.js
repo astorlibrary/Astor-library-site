@@ -8,9 +8,17 @@
 const fs = require('fs');
 const path = require('path');
 const { loadBooks, validateAll } = require('./book-data');
+const { loadVocabulary } = require('./rebuild-vocabulary');
 
 const root = process.cwd();
 const outputFile = path.join(root, 'assets', 'study-index.json');
+
+// Each book names its themes and techniques in its own words. Where a term is
+// shared across titles, data/vocabulary.json supplies the one name the
+// glossary and the cross-library filters use, so that two books' particular
+// slants on "dialect" do not become two separate headings.
+const vocabulary = loadVocabulary();
+const canonical = (kind, entry) => vocabulary[kind][entry.id]?.name || entry.name;
 
 // The index carries what a cross-library tool needs. That includes the essay
 // questions, critical positions and discussion questions, because the essay
@@ -54,8 +62,21 @@ function indexEntry(book) {
       traits: character.traits || [],
       relationships: character.relationships || []
     })),
-    themes: (book.themes || []).map(theme => ({ id: theme.id, name: theme.name, summary: theme.summary, development: theme.development || '' })),
-    techniques: (book.techniques || []).map(technique => ({ id: technique.id, name: technique.name, definition: technique.definition, inThisBook: technique.inThisBook })),
+    themes: (book.themes || []).map(theme => ({
+      id: theme.id,
+      name: theme.name,
+      canonicalName: canonical('themes', theme),
+      summary: theme.summary,
+      development: theme.development || ''
+    })),
+    techniques: (book.techniques || []).map(technique => ({
+      id: technique.id,
+      name: technique.name,
+      canonicalName: canonical('techniques', technique),
+      definition: vocabulary.techniques[technique.id]?.definition || technique.definition,
+      bookDefinition: technique.definition,
+      inThisBook: technique.inThisBook
+    })),
     quotations: (book.quotations || []).map(quotation => ({
       id: quotation.id,
       text: quotation.text,

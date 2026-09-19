@@ -126,21 +126,26 @@ export function fillTheLine(book, random = Math.random) {
     if (!hidden.length) return null;
     let remaining = quotation.text;
     const segments = [];
+    // The answer is the wording the line actually uses, not the wording the
+    // record declared: 'Mock' and 'mock' are the same instruction to hide a
+    // word, but only one of them puts the line back together.
+    const answers = [];
     for (const word of hidden) {
       const at = remaining.toLowerCase().indexOf(word.toLowerCase());
       if (at < 0) return null;
       segments.push(remaining.slice(0, at));
+      answers.push(remaining.slice(at, at + word.length));
       remaining = remaining.slice(at + word.length);
     }
     segments.push(remaining);
-    const decoys = sample(vocabulary.filter(word => !hidden.some(item => item.toLowerCase() === word.toLowerCase())), 4, random);
+    const decoys = sample(vocabulary.filter(word => !answers.some(item => item.toLowerCase() === word.toLowerCase())), 4, random);
     return {
       kind: 'cloze',
       id: 'cloze:' + book.slug + ':' + quotation.id,
       stem: quotation.speaker ? 'Complete the line spoken by ' + quotation.speaker + '.' : 'Complete the line.',
       segments,
-      answer: hidden,
-      bank: shuffle([...hidden, ...decoys], random),
+      answer: answers,
+      bank: shuffle([...answers, ...decoys], random),
       explain: quotation.analysis,
       source: quotationSource(book, quotation),
       book: bookRef(book)
@@ -231,8 +236,13 @@ export function techniqueSpotter(book, random = Math.random) {
 
 // --- character identification ----------------------------------------------
 
+// Articles are not part of a name, so masking them would blank out half the
+// clue: "The creature" hides "creature", not "the".
+const NAME_NOISE = new Set(['the', 'and', 'of', 'a', 'an', 'to', 'in']);
+
 export function maskName(text, name) {
-  const parts = [name, ...name.split(/\s+/)].filter(part => part.length > 2);
+  const parts = [name, ...name.split(/\s+/)]
+    .filter(part => part.length > 2 && !NAME_NOISE.has(part.toLowerCase()));
   let masked = text;
   for (const part of [...new Set(parts)].sort((a, b) => b.length - a.length)) {
     masked = masked.replace(new RegExp('\\b' + part.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + "(?:'s|’s)?\\b", 'gi'), '———');
@@ -247,7 +257,9 @@ export function characterIdentification(book, random = Math.random) {
     .map(character => makeChoice({
       id: 'character:' + book.slug + ':' + character.id,
       stem: 'Which character is described here?',
-      quote: character.clue || maskName(character.summary, character.name),
+      // A clue is written not to name the character, but the masking runs over
+      // it anyway: a game that gives away its own answer is worse than no game.
+      quote: maskName(character.clue || character.summary, character.name),
       correct: character.name,
       distractors: names.filter(name => name !== character.name),
       explain: character.summary,
