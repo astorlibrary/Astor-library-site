@@ -22,10 +22,26 @@
     "note": "Line numbers follow the traditional Globe numbering. Modern editions vary by a line or two."
   },
   "atAGlance": [
-    { "label": "Written", "value": "c. 1606", "note": "Soon after the Gunpowder Plot trials, and three years into James VI and I's English reign." },
-    { "label": "First printed", "value": "1623", "note": "No quarto survives. The First Folio is the only early text." },
-    { "label": "Chief source", "value": "Holinshed's Chronicles", "note": "Shakespeare compresses decades of Scottish history into a matter of months." },
-    { "label": "Shape", "value": "Five acts, 28 scenes", "note": "Two of the five acts are over before the murder is half an hour old on stage." }
+    {
+      "label": "Written",
+      "value": "c. 1606",
+      "note": "Soon after the Gunpowder Plot trials, and three years into James VI and I's English reign."
+    },
+    {
+      "label": "First printed",
+      "value": "1623",
+      "note": "No quarto survives. The First Folio is the only early text."
+    },
+    {
+      "label": "Chief source",
+      "value": "Holinshed's Chronicles",
+      "note": "Shakespeare compresses decades of Scottish history into a matter of months."
+    },
+    {
+      "label": "Shape",
+      "value": "Five acts, 28 scenes",
+      "note": "Two of the five acts are over before the murder is half an hour old on stage."
+    }
   ],
   "structure": [
     {
@@ -34,13 +50,41 @@
       "title": "A prophecy, and a decision made in the dark",
       "summary": "Macbeth and Banquo meet the witches on the heath and hear that Macbeth will be thane of Cawdor and king. When the first title arrives within minutes, the second stops being an absurdity. Lady Macbeth reads his letter, judges him too decent to take the nearest way, and has the murder arranged before he reaches the door.",
       "scenes": [
-        { "ref": "1.1", "title": "Thunder", "summary": "Three witches agree to meet Macbeth on the heath." },
-        { "ref": "1.2", "title": "The report", "summary": "A wounded sergeant describes Macbeth carving his way through a rebel army." },
-        { "ref": "1.3", "title": "The prophecy", "summary": "The witches hail Macbeth as Glamis, Cawdor and king hereafter, and tell Banquo he will father kings." },
-        { "ref": "1.4", "title": "Malcolm named heir", "summary": "Duncan thanks Macbeth and then names his own son Prince of Cumberland, putting a step in Macbeth's way." },
-        { "ref": "1.5", "title": "The letter", "summary": "Lady Macbeth reads Macbeth's letter and calls on the spirits to strip her of pity." },
-        { "ref": "1.6", "title": "The welcome", "summary": "Duncan arrives at Inverness and praises the sweetness of the air." },
-        { "ref": "1.7", "title": "The argument", "summary": "Macbeth decides against the murder; his wife changes his mind in under fifty lines." }
+        {
+          "ref": "1.1",
+          "title": "Thunder",
+          "summary": "Three witches agree to meet Macbeth on the heath."
+        },
+        {
+          "ref": "1.2",
+          "title": "The report",
+          "summary": "A wounded sergeant describes Macbeth carving his way through a rebel army."
+        },
+        {
+          "ref": "1.3",
+          "title": "The prophecy",
+          "summary": "The witches hail Macbeth as Glamis, Cawdor and king hereafter, and tell Banquo he will father kings."
+        },
+        {
+          "ref": "1.4",
+          "title": "Malcolm named heir",
+          "summary": "Duncan thanks Macbeth and then names his own son Prince of Cumberland, putting a step in Macbeth's way."
+        },
+        {
+          "ref": "1.5",
+          "title": "The letter",
+          "summary": "Lady Macbeth reads Macbeth's letter and calls on the spirits to strip her of pity."
+        },
+        {
+          "ref": "1.6",
+          "title": "The welcome",
+          "summary": "Duncan arrives at Inverness and praises the sweetness of the air."
+        },
+        {
+          "ref": "1.7",
+          "title": "The argument",
+          "summary": "Macbeth decides against the murder; his wife changes his mind in under fifty lines."
+        }
       ]
     },
     {
@@ -49,10 +93,26 @@
       "title": "The murder, and the noise that follows it",
       "summary": "Macbeth sees a dagger that is not there, kills Duncan offstage, and comes back unable to say 'Amen'. The knocking at the gate, the Porter's drunken joke about hell, and the discovery of the body turn a private act into a public emergency. Malcolm and Donalbain run, which conveniently makes them suspects.",
       "scenes": [
-        { "ref": "2.1", "title": "The dagger", "summary": "Banquo confesses uneasy dreams; alone, Macbeth follows a dagger he cannot grasp." },
-        { "ref": "2.2", "title": "After", "summary": "Macbeth returns with the grooms' daggers, hearing a voice cry sleep no more." },
-        { "ref": "2.3", "title": "The knocking", "summary": "The Porter plays hell's gatekeeper; Macduff discovers the body and Macbeth kills the grooms." },
-        { "ref": "2.4", "title": "Unnatural signs", "summary": "Ross and an Old Man report horses eating each other; Macbeth goes to Scone to be crowned." }
+        {
+          "ref": "2.1",
+          "title": "The dagger",
+          "summary": "Banquo confesses uneasy dreams; alone, Macbeth follows a dagger he cannot grasp."
+        },
+        {
+          "ref": "2.2",
+          "title": "After",
+          "summary": "Macbeth returns with the grooms' daggers, hearing a voice cry sleep no more."
+        },
+        {
+          "ref": "2.3",
+          "title": "The knocking",
+          "summary": "The Porter plays hell's gatekeeper; Macduff discovers the body and Macbeth kills the grooms."
+        },
+        {
+          "ref": "2.4",
+          "title": "Unnatural signs",
+          "summary": "Ross and an Old Man report horses eating each other; Macbeth goes to Scone to be crowned."
+        }
       ]
     },
     {
@@ -61,12 +121,36 @@
       "title": "Killing to keep what killing won",
       "summary": "Banquo suspects and says nothing. Macbeth, who now fears the second half of the prophecy more than the first, hires murderers without telling his wife. Fleance escapes, the ghost sits in Macbeth's chair at the banquet, and the marriage that planned the first murder comes apart over the third.",
       "scenes": [
-        { "ref": "3.1", "title": "Banquo's suspicion", "summary": "Banquo weighs what Macbeth has gained; Macbeth hires two murderers." },
-        { "ref": "3.2", "title": "Scorpions", "summary": "Macbeth keeps his wife ignorant of the plan for the first time." },
-        { "ref": "3.3", "title": "The ambush", "summary": "Banquo is killed and Fleance escapes into the dark." },
-        { "ref": "3.4", "title": "The banquet", "summary": "Banquo's ghost takes Macbeth's seat and the state dinner collapses." },
-        { "ref": "3.5", "title": "Hecate", "summary": "Hecate rebukes the witches — a scene most scholars think was added later." },
-        { "ref": "3.6", "title": "Rumour", "summary": "Lennox speaks in careful irony; Macduff has gone to England." }
+        {
+          "ref": "3.1",
+          "title": "Banquo's suspicion",
+          "summary": "Banquo weighs what Macbeth has gained; Macbeth hires two murderers."
+        },
+        {
+          "ref": "3.2",
+          "title": "Scorpions",
+          "summary": "Macbeth keeps his wife ignorant of the plan for the first time."
+        },
+        {
+          "ref": "3.3",
+          "title": "The ambush",
+          "summary": "Banquo is killed and Fleance escapes into the dark."
+        },
+        {
+          "ref": "3.4",
+          "title": "The banquet",
+          "summary": "Banquo's ghost takes Macbeth's seat and the state dinner collapses."
+        },
+        {
+          "ref": "3.5",
+          "title": "Hecate",
+          "summary": "Hecate rebukes the witches — a scene most scholars think was added later."
+        },
+        {
+          "ref": "3.6",
+          "title": "Rumour",
+          "summary": "Lennox speaks in careful irony; Macduff has gone to England."
+        }
       ]
     },
     {
@@ -75,9 +159,21 @@
       "title": "Apparitions, and a household murdered",
       "summary": "Macbeth demands more prophecy and is given three riddles that sound like safety. He orders the killing of Macduff's wife and children, an act with no strategic purpose at all. In England, Malcolm tests Macduff by pretending to be worse than the tyrant, and the news from home arrives.",
       "scenes": [
-        { "ref": "4.1", "title": "The apparitions", "summary": "Beware Macduff; none of woman born shall harm Macbeth; he is safe till Birnam wood moves." },
-        { "ref": "4.2", "title": "Fife", "summary": "Lady Macduff and her son are murdered on stage." },
-        { "ref": "4.3", "title": "The English court", "summary": "Malcolm tests Macduff's loyalty; Ross brings the news from Fife." }
+        {
+          "ref": "4.1",
+          "title": "The apparitions",
+          "summary": "Beware Macduff; none of woman born shall harm Macbeth; he is safe till Birnam wood moves."
+        },
+        {
+          "ref": "4.2",
+          "title": "Fife",
+          "summary": "Lady Macduff and her son are murdered on stage."
+        },
+        {
+          "ref": "4.3",
+          "title": "The English court",
+          "summary": "Malcolm tests Macduff's loyalty; Ross brings the news from Fife."
+        }
       ]
     },
     {
@@ -86,14 +182,46 @@
       "title": "The riddles come true, and mean nothing",
       "summary": "Lady Macbeth washes hands that are clean. Macbeth, told of her death, can find no more feeling in it than a line about tomorrow. Birnam wood moves because the army carries it; the man not of woman born was delivered by caesarean section. Every guarantee holds and every one betrays him.",
       "scenes": [
-        { "ref": "5.1", "title": "Sleepwalking", "summary": "A doctor and gentlewoman watch Lady Macbeth relive the murders in her sleep." },
-        { "ref": "5.2", "title": "The march", "summary": "The Scottish lords join Malcolm's army near Birnam." },
-        { "ref": "5.3", "title": "The yellow leaf", "summary": "Macbeth clings to the apparitions and asks the doctor to cure his wife's mind." },
-        { "ref": "5.4", "title": "Branches", "summary": "Malcolm orders each soldier to cut a bough for cover." },
-        { "ref": "5.5", "title": "Tomorrow", "summary": "The queen is dead; a messenger reports that the wood is moving." },
-        { "ref": "5.6", "title": "The assault", "summary": "The army throws down its screen of branches." },
-        { "ref": "5.7", "title": "Young Siward", "summary": "Macbeth kills a man he cannot fear and begins to look for Macduff." },
-        { "ref": "5.8", "title": "The end", "summary": "Macduff reveals his birth, kills Macbeth, and Malcolm is hailed king." }
+        {
+          "ref": "5.1",
+          "title": "Sleepwalking",
+          "summary": "A doctor and gentlewoman watch Lady Macbeth relive the murders in her sleep."
+        },
+        {
+          "ref": "5.2",
+          "title": "The march",
+          "summary": "The Scottish lords join Malcolm's army near Birnam."
+        },
+        {
+          "ref": "5.3",
+          "title": "The yellow leaf",
+          "summary": "Macbeth clings to the apparitions and asks the doctor to cure his wife's mind."
+        },
+        {
+          "ref": "5.4",
+          "title": "Branches",
+          "summary": "Malcolm orders each soldier to cut a bough for cover."
+        },
+        {
+          "ref": "5.5",
+          "title": "Tomorrow",
+          "summary": "The queen is dead; a messenger reports that the wood is moving."
+        },
+        {
+          "ref": "5.6",
+          "title": "The assault",
+          "summary": "The army throws down its screen of branches."
+        },
+        {
+          "ref": "5.7",
+          "title": "Young Siward",
+          "summary": "Macbeth kills a man he cannot fear and begins to look for Macduff."
+        },
+        {
+          "ref": "5.8",
+          "title": "The end",
+          "summary": "Macduff reveals his birth, kills Macbeth, and Malcolm is hailed king."
+        }
       ]
     }
   ],
@@ -105,12 +233,41 @@
       "summary": "A soldier praised for a savagery the state approves of, who discovers that the same nerve is unbearable when he uses it for himself. He imagines every murder in full before he commits it and feels every consequence afterwards, which is why the play is a tragedy rather than a case study.",
       "clue": "A soldier whose imagination is his conscience: he sees the dagger before he uses it and hears the voice that will not let him sleep afterwards.",
       "firstAppearance": "1.3",
-      "traits": ["imaginative", "brave in battle", "unable to stop"],
+      "traits": [
+        "imaginative",
+        "brave in battle",
+        "unable to stop"
+      ],
       "relationships": [
-        { "to": "lady-macbeth", "label": "married to", "kind": "marriage", "note": "Partners in the first murder, strangers by the third." },
-        { "to": "duncan", "label": "kinsman, host and murderer of", "kind": "enemy", "stages": ["act-1", "act-2"] },
-        { "to": "banquo", "label": "brother officer, then killer of", "kind": "rival" },
-        { "to": "macduff", "label": "hunted by", "kind": "enemy", "stages": ["act-4", "act-5"] }
+        {
+          "to": "lady-macbeth",
+          "label": "married to",
+          "kind": "marriage",
+          "note": "Partners in the first murder, strangers by the third."
+        },
+        {
+          "to": "duncan",
+          "label": "kinsman, host and murderer of",
+          "kind": "enemy",
+          "stages": [
+            "act-1",
+            "act-2"
+          ]
+        },
+        {
+          "to": "banquo",
+          "label": "brother officer, then killer of",
+          "kind": "rival"
+        },
+        {
+          "to": "macduff",
+          "label": "hunted by",
+          "kind": "enemy",
+          "stages": [
+            "act-4",
+            "act-5"
+          ]
+        }
       ]
     },
     {
@@ -120,10 +277,25 @@
       "summary": "She reads her husband accurately in a single speech and organises the murder he cannot organise himself. Her strength is a performance she has to summon, and once the crown is won she has no further part to play, which is where the sleepwalking begins.",
       "clue": "She calls on spirits to unsex her, tells her husband to look like the innocent flower, and later cannot get a spot off a clean hand.",
       "firstAppearance": "1.5",
-      "traits": ["decisive", "self-willed", "undone by what she willed"],
+      "traits": [
+        "decisive",
+        "self-willed",
+        "undone by what she willed"
+      ],
       "relationships": [
-        { "to": "macbeth", "label": "married to", "kind": "marriage" },
-        { "to": "duncan", "label": "host to", "kind": "enemy", "stages": ["act-1"] }
+        {
+          "to": "macbeth",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "duncan",
+          "label": "host to",
+          "kind": "enemy",
+          "stages": [
+            "act-1"
+          ]
+        }
       ]
     },
     {
@@ -132,10 +304,21 @@
       "role": "A general, father of Fleance",
       "summary": "He hears the same prophecy and does nothing with it, which makes him the play's control experiment. His silence after Duncan's death is not innocence either: he suspects Macbeth of foul play and keeps quiet because the prophecy also promised something to him.",
       "firstAppearance": "1.3",
-      "traits": ["watchful", "compromised by silence"],
+      "traits": [
+        "watchful",
+        "compromised by silence"
+      ],
       "relationships": [
-        { "to": "macbeth", "label": "fellow general, then victim", "kind": "rival" },
-        { "to": "fleance", "label": "father of", "kind": "family" }
+        {
+          "to": "macbeth",
+          "label": "fellow general, then victim",
+          "kind": "rival"
+        },
+        {
+          "to": "fleance",
+          "label": "father of",
+          "kind": "family"
+        }
       ]
     },
     {
@@ -144,10 +327,24 @@
       "role": "King of Scotland",
       "summary": "Generous, trusting and a poor judge of faces — he says as much about the last thane of Cawdor moments before promoting the next traitor. Shakespeare makes him gentler than the historical king so that the murder costs the audience something.",
       "firstAppearance": "1.2",
-      "traits": ["gracious", "trusting"],
+      "traits": [
+        "gracious",
+        "trusting"
+      ],
       "relationships": [
-        { "to": "malcolm", "label": "father of", "kind": "family" },
-        { "to": "macbeth", "label": "kinsman and guest of", "kind": "family", "stages": ["act-1"] }
+        {
+          "to": "malcolm",
+          "label": "father of",
+          "kind": "family"
+        },
+        {
+          "to": "macbeth",
+          "label": "kinsman and guest of",
+          "kind": "family",
+          "stages": [
+            "act-1"
+          ]
+        }
       ]
     },
     {
@@ -156,11 +353,35 @@
       "role": "Thane of Fife",
       "summary": "He discovers the body, refuses the coronation, and leaves for England without warning his household — a decision the play does not let him off. His grief in 4.3 is the one moment where a man is allowed to feel a loss fully before acting on it.",
       "firstAppearance": "2.3",
-      "traits": ["blunt", "grieving", "the play's instrument"],
+      "traits": [
+        "blunt",
+        "grieving",
+        "the play's instrument"
+      ],
       "relationships": [
-        { "to": "lady-macduff", "label": "married to", "kind": "marriage" },
-        { "to": "malcolm", "label": "ally of", "kind": "ally", "stages": ["act-4", "act-5"] },
-        { "to": "macbeth", "label": "avenger of", "kind": "enemy", "stages": ["act-4", "act-5"] }
+        {
+          "to": "lady-macduff",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "malcolm",
+          "label": "ally of",
+          "kind": "ally",
+          "stages": [
+            "act-4",
+            "act-5"
+          ]
+        },
+        {
+          "to": "macbeth",
+          "label": "avenger of",
+          "kind": "enemy",
+          "stages": [
+            "act-4",
+            "act-5"
+          ]
+        }
       ]
     },
     {
@@ -169,10 +390,25 @@
       "role": "Duncan's elder son, Prince of Cumberland",
       "summary": "Named heir in 1.4, which is the political fact that makes the prophecy inconvenient. He flees, learns caution, and tests Macduff with a portrait of himself as a worse tyrant than Macbeth — a scene that shows a king being manufactured rather than born.",
       "firstAppearance": "1.2",
-      "traits": ["cautious", "politically educated"],
+      "traits": [
+        "cautious",
+        "politically educated"
+      ],
       "relationships": [
-        { "to": "duncan", "label": "son of", "kind": "family" },
-        { "to": "macduff", "label": "tests and then allies with", "kind": "ally", "stages": ["act-4", "act-5"] }
+        {
+          "to": "duncan",
+          "label": "son of",
+          "kind": "family"
+        },
+        {
+          "to": "macduff",
+          "label": "tests and then allies with",
+          "kind": "ally",
+          "stages": [
+            "act-4",
+            "act-5"
+          ]
+        }
       ]
     },
     {
@@ -181,10 +417,24 @@
       "role": "Three witches",
       "summary": "They tell the truth in a form designed to be misheard. Nothing they say compels anybody to do anything, which is the difficulty: the play never settles whether they cause the future or merely describe it accurately enough to be dangerous.",
       "firstAppearance": "1.1",
-      "traits": ["equivocal", "precise"],
+      "traits": [
+        "equivocal",
+        "precise"
+      ],
       "relationships": [
-        { "to": "macbeth", "label": "prophesy to", "kind": "doubling" },
-        { "to": "banquo", "label": "prophesy to", "kind": "doubling", "stages": ["act-1"] }
+        {
+          "to": "macbeth",
+          "label": "prophesy to",
+          "kind": "doubling"
+        },
+        {
+          "to": "banquo",
+          "label": "prophesy to",
+          "kind": "doubling",
+          "stages": [
+            "act-1"
+          ]
+        }
       ]
     },
     {
@@ -193,9 +443,19 @@
       "role": "Macduff's wife",
       "summary": "She gets one scene, and uses it to say the thing nobody else will: that a man who leaves his wife and children unguarded has behaved like a traitor to them, whatever his politics. She is killed on stage, which is rare in Shakespeare and deliberate here.",
       "firstAppearance": "4.2",
-      "traits": ["clear-sighted", "abandoned"],
+      "traits": [
+        "clear-sighted",
+        "abandoned"
+      ],
       "relationships": [
-        { "to": "macduff", "label": "married to", "kind": "marriage", "stages": ["act-4"] }
+        {
+          "to": "macduff",
+          "label": "married to",
+          "kind": "marriage",
+          "stages": [
+            "act-4"
+          ]
+        }
       ]
     },
     {
@@ -204,9 +464,20 @@
       "role": "Banquo's son",
       "summary": "He speaks eleven words and then escapes into the dark, and the whole second half of the play runs on that escape. James VI and I's line claimed descent from Banquo, so Fleance running offstage is also the future sitting in the audience.",
       "firstAppearance": "2.1",
-      "traits": ["silent", "the unclosed door"],
+      "traits": [
+        "silent",
+        "the unclosed door"
+      ],
       "relationships": [
-        { "to": "banquo", "label": "son of", "kind": "family", "stages": ["act-2", "act-3"] }
+        {
+          "to": "banquo",
+          "label": "son of",
+          "kind": "family",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        }
       ]
     }
   ],
@@ -295,11 +566,20 @@
       "stage": "act-1",
       "context": "The closing couplet of the first scene, spoken by all three witches together.",
       "analysis": "Twelve lines into the play, the audience is handed its instructions: nothing here will be safely readable. The chiasmus turns two opposed words into a closed loop, and the shift into rhymed trochaic tetrameter sets the witches apart from every other voice in the play before they have done anything at all.",
-      "themes": ["appearance"],
-      "techniques": ["antithesis"],
-      "characters": ["witches"],
+      "themes": [
+        "appearance"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "witches"
+      ],
       "source": "Globe/Moby text, 1.1.12",
-      "cloze": ["foul", "fair"]
+      "cloze": [
+        "foul",
+        "fair"
+      ]
     },
     {
       "id": "all-hail",
@@ -309,11 +589,18 @@
       "stage": "act-1",
       "context": "The third of three greetings on the heath, after Glamis and Cawdor.",
       "analysis": "The sentence does not contain an instruction, a condition or a route. It is the flat future tense that does the damage: Macbeth is told what will be, and spends the play converting a prediction into a plan while believing he is only keeping an appointment.",
-      "themes": ["fate"],
+      "themes": [
+        "fate"
+      ],
       "techniques": [],
-      "characters": ["witches", "macbeth"],
+      "characters": [
+        "witches",
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 1.3.50-52",
-      "cloze": ["hereafter"]
+      "cloze": [
+        "hereafter"
+      ]
     },
     {
       "id": "milk-of-human-kindness",
@@ -323,25 +610,44 @@
       "stage": "act-1",
       "context": "Reading Macbeth's letter about the prophecy, alone.",
       "analysis": "She diagnoses him in a single image, and the image is not an insult — it grants him a nature she considers a practical obstacle. 'The nearest way' is the whole murder rendered as a route on a map, which is exactly the kind of euphemism the couple will need for the next two acts.",
-      "themes": ["ambition", "gender"],
+      "themes": [
+        "ambition",
+        "gender"
+      ],
       "techniques": [],
-      "characters": ["lady-macbeth", "macbeth"],
+      "characters": [
+        "lady-macbeth",
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 1.5.17-18",
-      "cloze": ["kindness", "nearest"]
+      "cloze": [
+        "kindness",
+        "nearest"
+      ]
     },
     {
       "id": "unsex-me-here",
       "text": "Come, you spirits That tend on mortal thoughts, unsex me here, And fill me from the crown to the toe top-full Of direst cruelty!",
       "speaker": "Lady Macbeth",
-      "reference": "1.5.45",
+      "reference": "1.5.44",
       "stage": "act-1",
       "context": "Alone, after learning that Duncan will arrive that night.",
       "analysis": "The cruelty she wants has to be sent for, which tells the audience she does not already possess it. 'Crown to the toe' puts the crown on her body as well as on Duncan's head, and the request to be unsexed treats womanhood as a set of feelings — pity, remorse, the milk she later names — that would get in the way.",
-      "themes": ["gender", "ambition"],
-      "techniques": ["soliloquy"],
-      "characters": ["lady-macbeth"],
-      "source": "Globe/Moby text, 1.5.44-48",
-      "cloze": ["unsex", "cruelty"]
+      "themes": [
+        "gender",
+        "ambition"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "lady-macbeth"
+      ],
+      "source": "Globe/Moby text, 1.5.44-47",
+      "cloze": [
+        "unsex",
+        "cruelty"
+      ]
     },
     {
       "id": "innocent-flower",
@@ -351,11 +657,21 @@
       "stage": "act-1",
       "context": "Instructing Macbeth as Duncan approaches the castle.",
       "analysis": "The advice is a compressed piece of stage direction: a face to wear and a thing to be. It also answers Duncan's complaint sixty lines earlier that there is no art to find the mind's construction in the face — the play has just supplied the art, and given it to the other side.",
-      "themes": ["appearance"],
-      "techniques": ["antithesis"],
-      "characters": ["lady-macbeth", "macbeth"],
+      "themes": [
+        "appearance"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "lady-macbeth",
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 1.5.73-74",
-      "cloze": ["innocent", "serpent"]
+      "cloze": [
+        "innocent",
+        "serpent"
+      ]
     },
     {
       "id": "if-it-were-done",
@@ -365,11 +681,20 @@
       "stage": "act-1",
       "context": "Alone, leaving the banquet at which Duncan is his guest.",
       "analysis": "Four uses of 'done' in twelve words, and not one of them names the act. The line is thinking in circles because the speaker will not let the word 'murder' into it, and the soliloquy goes on to reject the plan entirely on grounds of consequence rather than conscience.",
-      "themes": ["guilt", "ambition"],
-      "techniques": ["soliloquy"],
-      "characters": ["macbeth"],
+      "themes": [
+        "guilt",
+        "ambition"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 1.7.1-2",
-      "cloze": ["quickly"]
+      "cloze": [
+        "quickly"
+      ]
     },
     {
       "id": "vaulting-ambition",
@@ -379,11 +704,20 @@
       "stage": "act-1",
       "context": "The end of the soliloquy in which he decides not to kill Duncan.",
       "analysis": "He can find no reason for the murder except the wanting of it, and he says so as though that settled the matter. The rider who over-leaps the saddle is a comic image for a catastrophic one, and the sentence breaks off before it lands — the falling is left to the rest of the play.",
-      "themes": ["ambition"],
-      "techniques": ["soliloquy"],
-      "characters": ["macbeth"],
+      "themes": [
+        "ambition"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 1.7.25-28",
-      "cloze": ["Vaulting", "ambition"]
+      "cloze": [
+        "Vaulting",
+        "ambition"
+      ]
     },
     {
       "id": "is-this-a-dagger",
@@ -393,11 +727,21 @@
       "stage": "act-2",
       "context": "Alone at night, moving towards Duncan's chamber.",
       "analysis": "The dagger is offered to him handle first, as a servant would offer it — the hallucination is helpfully arranging the murder. He asks a question rather than making a claim, and keeps asking: the speech is a man conducting an experiment on his own mind and losing.",
-      "themes": ["guilt", "appearance"],
-      "techniques": ["soliloquy"],
-      "characters": ["macbeth"],
+      "themes": [
+        "guilt",
+        "appearance"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 2.1.41-42",
-      "cloze": ["dagger", "handle"]
+      "cloze": [
+        "dagger",
+        "handle"
+      ]
     },
     {
       "id": "sleep-no-more",
@@ -407,11 +751,18 @@
       "stage": "act-2",
       "context": "Immediately after the murder, still holding the daggers.",
       "analysis": "He reports the sentence rather than owning it, and the voice uses his name as though he were already a story being told about someone else. Sleep is the first of the ordinary things the murder takes away, and the play keeps the receipt: Lady Macbeth will be walking in her sleep three acts later.",
-      "themes": ["guilt"],
+      "themes": [
+        "guilt"
+      ],
       "techniques": [],
-      "characters": ["macbeth"],
+      "characters": [
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 2.2.46-47",
-      "cloze": ["murder", "sleep"]
+      "cloze": [
+        "murder",
+        "sleep"
+      ]
     },
     {
       "id": "neptunes-ocean",
@@ -421,11 +772,20 @@
       "stage": "act-2",
       "context": "Looking at his hands after Duncan's murder.",
       "analysis": "The scale inverts inside four lines: an ocean cannot clean one hand, so the hand stains the ocean. 'Incarnadine' and 'multitudinous' are Latinate and enormous; 'making the green one red' is four monosyllables and a colour. Shakespeare gives the man the grand version and then the plain one, and the plain one is worse.",
-      "themes": ["guilt"],
-      "techniques": ["blood-imagery"],
-      "characters": ["macbeth"],
+      "themes": [
+        "guilt"
+      ],
+      "techniques": [
+        "blood-imagery"
+      ],
+      "characters": [
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 2.2.75-78",
-      "cloze": ["incarnadine", "green"]
+      "cloze": [
+        "incarnadine",
+        "green"
+      ]
     },
     {
       "id": "scorpions",
@@ -435,11 +795,18 @@
       "stage": "act-3",
       "context": "Speaking to Lady Macbeth while concealing the plan to kill Banquo.",
       "analysis": "The endearment and the scorpions arrive in the same breath, and he tells her about the state of his mind precisely in order to avoid telling her its contents. This is the scene where the marriage stops being a partnership: from here he acts and she is informed afterwards, if at all.",
-      "themes": ["guilt"],
+      "themes": [
+        "guilt"
+      ],
       "techniques": [],
-      "characters": ["macbeth", "lady-macbeth"],
+      "characters": [
+        "macbeth",
+        "lady-macbeth"
+      ],
       "source": "Globe/Moby text, 3.2.41",
-      "cloze": ["scorpions"]
+      "cloze": [
+        "scorpions"
+      ]
     },
     {
       "id": "blood-will-have-blood",
@@ -449,11 +816,20 @@
       "stage": "act-3",
       "context": "After the guests have been sent away from the ruined banquet.",
       "analysis": "He quotes a proverb, which is the closest he now comes to a moral framework: murder is described as a creature with an appetite of its own. The grammar has no agent in it anywhere, and that is the point — by Act III he has stopped experiencing his killings as things he decides to do.",
-      "themes": ["guilt", "fate"],
-      "techniques": ["blood-imagery"],
-      "characters": ["macbeth"],
+      "themes": [
+        "guilt",
+        "fate"
+      ],
+      "techniques": [
+        "blood-imagery"
+      ],
+      "characters": [
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 3.4.145",
-      "cloze": ["blood"]
+      "cloze": [
+        "blood"
+      ]
     },
     {
       "id": "birnam-wood",
@@ -463,11 +839,21 @@
       "stage": "act-4",
       "context": "The third apparition, a crowned child holding a tree.",
       "analysis": "The prophecy hands him an impossibility and he accepts the gift without examining the wrapping — a child holding a branch has already shown him how the wood will move. Equivocation works here not by lying but by offering a picture the listener would rather keep.",
-      "themes": ["fate"],
-      "techniques": ["equivocation"],
-      "characters": ["witches", "macbeth"],
+      "themes": [
+        "fate"
+      ],
+      "techniques": [
+        "equivocation"
+      ],
+      "characters": [
+        "witches",
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 4.1.102-104",
-      "cloze": ["Birnam", "Dunsinane"]
+      "cloze": [
+        "Birnam",
+        "Dunsinane"
+      ]
     },
     {
       "id": "give-sorrow-words",
@@ -477,11 +863,20 @@
       "stage": "act-4",
       "context": "To Macduff, on hearing that his wife and children are dead.",
       "analysis": "The one piece of straightforwardly good advice in the play, and it is about language. Set it against Macbeth, who has spent four acts refusing to name what he is doing; the play's cure for grief is the opposite of the habit that produced it.",
-      "themes": ["guilt", "gender"],
+      "themes": [
+        "guilt",
+        "gender"
+      ],
       "techniques": [],
-      "characters": ["malcolm", "macduff"],
+      "characters": [
+        "malcolm",
+        "macduff"
+      ],
       "source": "Globe/Moby text, 4.3.244-245",
-      "cloze": ["sorrow", "break"]
+      "cloze": [
+        "sorrow",
+        "break"
+      ]
     },
     {
       "id": "out-damned-spot",
@@ -491,11 +886,19 @@
       "stage": "act-5",
       "context": "Sleepwalking, watched by a doctor and her gentlewoman.",
       "analysis": "She told her husband in 2.2 that a little water clears us of this deed, and she is now scrubbing a hand that has nothing on it. The speech is in prose, which for a queen at this point in a tragedy is itself a diagnosis, and it is broken into fragments that move between all three murders at once.",
-      "themes": ["guilt"],
-      "techniques": ["blood-imagery"],
-      "characters": ["lady-macbeth"],
+      "themes": [
+        "guilt"
+      ],
+      "techniques": [
+        "blood-imagery"
+      ],
+      "characters": [
+        "lady-macbeth"
+      ],
       "source": "Globe/Moby text, 5.1.31",
-      "cloze": ["damned"]
+      "cloze": [
+        "damned"
+      ]
     },
     {
       "id": "yellow-leaf",
@@ -505,11 +908,21 @@
       "stage": "act-5",
       "context": "Alone at Dunsinane as the English army approaches.",
       "analysis": "He itemises exactly what he has lost, in order, and the list is entirely made of relationships. It is the most accurate self-assessment anyone makes in the play, and it changes nothing — a few lines later he is shouting at a servant about the colour of his face.",
-      "themes": ["ambition", "kingship"],
-      "techniques": ["soliloquy"],
-      "characters": ["macbeth"],
+      "themes": [
+        "ambition",
+        "kingship"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 5.3.26-30",
-      "cloze": ["yellow", "honour"]
+      "cloze": [
+        "yellow",
+        "honour"
+      ]
     },
     {
       "id": "tomorrow",
@@ -519,11 +932,22 @@
       "stage": "act-5",
       "context": "On being told that the queen is dead.",
       "analysis": "Asked to feel something about his wife's death, he produces a theory of time instead. The repetition flattens the future into a queue, and 'syllable' quietly turns all of history into something merely said aloud — which sets up the walking shadow and the poor player five lines later.",
-      "themes": ["ambition", "fate"],
-      "techniques": ["soliloquy"],
-      "characters": ["macbeth", "lady-macbeth"],
+      "themes": [
+        "ambition",
+        "fate"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "macbeth",
+        "lady-macbeth"
+      ],
       "source": "Globe/Moby text, 5.5.21-23",
-      "cloze": ["Creeps", "syllable"]
+      "cloze": [
+        "Creeps",
+        "syllable"
+      ]
     },
     {
       "id": "walking-shadow",
@@ -533,11 +957,20 @@
       "stage": "act-5",
       "context": "The continuation of the same speech.",
       "analysis": "The metaphor is aimed at the actor saying it, in a theatre, to people who will go home in an hour. It is the bleakest thing in the play and also the most theatrically self-aware: the man who wanted to be remembered as king describes existence as a performance nobody will recall.",
-      "themes": ["ambition"],
-      "techniques": ["soliloquy"],
-      "characters": ["macbeth"],
+      "themes": [
+        "ambition"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 5.5.26-28",
-      "cloze": ["shadow", "struts"]
+      "cloze": [
+        "shadow",
+        "struts"
+      ]
     },
     {
       "id": "untimely-ripp-d",
@@ -547,11 +980,20 @@
       "stage": "act-5",
       "context": "In single combat with Macbeth, answering the claim that no man of woman born can harm him.",
       "analysis": "The last guarantee fails on a technicality, and the technicality is a birth. Macbeth's response — that the word has 'cow'd my better part of man' — admits the whole trick: he had been fighting on the strength of a sentence rather than an army.",
-      "themes": ["fate"],
-      "techniques": ["equivocation"],
-      "characters": ["macduff", "macbeth"],
+      "themes": [
+        "fate"
+      ],
+      "techniques": [
+        "equivocation"
+      ],
+      "characters": [
+        "macduff",
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 5.8.19-20",
-      "cloze": ["Untimely"]
+      "cloze": [
+        "Untimely"
+      ]
     },
     {
       "id": "fears-do-make-us-traitors",
@@ -561,11 +1003,19 @@
       "stage": "act-4",
       "context": "To Ross, on learning that her husband has fled to England.",
       "analysis": "Six words that convict Macduff of the thing the whole play is about — acting on fear and calling it strategy. She is defending nobody, least of all herself, and the scene that follows makes her the only character permitted to be simply right.",
-      "themes": ["kingship", "appearance"],
+      "themes": [
+        "kingship",
+        "appearance"
+      ],
       "techniques": [],
-      "characters": ["lady-macduff", "macduff"],
+      "characters": [
+        "lady-macduff",
+        "macduff"
+      ],
       "source": "Globe/Moby text, 4.2.5",
-      "cloze": ["traitors"]
+      "cloze": [
+        "traitors"
+      ]
     },
     {
       "id": "divine-not-physician",
@@ -575,11 +1025,19 @@
       "stage": "act-5",
       "context": "After watching Lady Macbeth sleepwalk.",
       "analysis": "Medicine hands the case over: what is wrong with her is not a condition. The line pairs with Macbeth's demand two scenes later that the same doctor pluck a rooted sorrow from the memory, and with Scotland itself, repeatedly described as a patient nobody can treat.",
-      "themes": ["guilt", "kingship"],
+      "themes": [
+        "guilt",
+        "kingship"
+      ],
       "techniques": [],
-      "characters": ["lady-macbeth"],
+      "characters": [
+        "lady-macbeth"
+      ],
       "source": "Globe/Moby text, 5.1.68",
-      "cloze": ["divine", "physician"]
+      "cloze": [
+        "divine",
+        "physician"
+      ]
     },
     {
       "id": "stars-hide-your-fires",
@@ -589,33 +1047,128 @@
       "stage": "act-1",
       "context": "Aside, immediately after Duncan names Malcolm his heir.",
       "analysis": "The first thing he does after the obstacle appears is ask the universe to look away. Light and dark run through the whole play as a moral lighting rig, and here Macbeth is operating it himself — he wants not to be seen, including by himself.",
-      "themes": ["ambition", "appearance"],
-      "techniques": ["antithesis"],
-      "characters": ["macbeth"],
+      "themes": [
+        "ambition",
+        "appearance"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "macbeth"
+      ],
       "source": "Globe/Moby text, 1.4.57-58",
-      "cloze": ["fires", "desires"]
+      "cloze": [
+        "fires",
+        "desires"
+      ]
     }
   ],
   "timeline": [
-    { "year": 1040, "label": "The historical Macbeth becomes king of Alba", "detail": "He ruled for seventeen years, a reign Shakespeare compresses to a few violent months.", "kind": "context" },
-    { "year": 1057, "label": "The historical Macbeth is killed at Lumphanan", "detail": "Not at Dunsinane, and not by Macduff.", "kind": "context" },
-    { "year": 1587, "label": "Holinshed's Chronicles reissued", "detail": "Shakespeare's chief source for the Scottish material, including the meeting with the three weird sisters.", "kind": "work" },
-    { "year": 1597, "label": "James VI publishes Daemonologie", "detail": "The future king of England writes a dialogue on witchcraft six years before inheriting the English throne.", "kind": "context" },
-    { "year": 1603, "label": "James VI of Scotland becomes James I of England", "detail": "A Scottish king in London, claiming descent from Banquo, changes what a Scottish play on a London stage can mean.", "kind": "context" },
-    { "year": 1605, "label": "The Gunpowder Plot", "detail": "The conspiracy and its trials put the word equivocation into everyday London use.", "kind": "context" },
-    { "year": 1606, "label": "Macbeth most likely written and first performed", "detail": "The Porter's equivocator is the strongest internal evidence for the date.", "kind": "work" },
-    { "year": 1611, "label": "Simon Forman records seeing Macbeth at the Globe", "detail": "The earliest surviving eyewitness account of the play in performance.", "kind": "reception" },
-    { "year": 1623, "label": "First Folio", "detail": "The only early printed text of the play, and a short one.", "kind": "work" },
-    { "year": 1847, "label": "Verdi's Macbeth premieres in Florence", "detail": "Revised for Paris in 1865, it becomes a performance tradition of its own.", "kind": "reception" },
-    { "year": 1936, "label": "Orson Welles directs the Federal Theatre Project's Black-cast Macbeth", "detail": "Staged at the Lafayette Theatre in Harlem and relocated to a Caribbean island.", "kind": "reception" }
+    {
+      "year": 1040,
+      "label": "The historical Macbeth becomes king of Alba",
+      "detail": "He ruled for seventeen years, a reign Shakespeare compresses to a few violent months.",
+      "kind": "context"
+    },
+    {
+      "year": 1057,
+      "label": "The historical Macbeth is killed at Lumphanan",
+      "detail": "Not at Dunsinane, and not by Macduff.",
+      "kind": "context"
+    },
+    {
+      "year": 1587,
+      "label": "Holinshed's Chronicles reissued",
+      "detail": "Shakespeare's chief source for the Scottish material, including the meeting with the three weird sisters.",
+      "kind": "work"
+    },
+    {
+      "year": 1597,
+      "label": "James VI publishes Daemonologie",
+      "detail": "The future king of England writes a dialogue on witchcraft six years before inheriting the English throne.",
+      "kind": "context"
+    },
+    {
+      "year": 1603,
+      "label": "James VI of Scotland becomes James I of England",
+      "detail": "A Scottish king in London, claiming descent from Banquo, changes what a Scottish play on a London stage can mean.",
+      "kind": "context"
+    },
+    {
+      "year": 1605,
+      "label": "The Gunpowder Plot",
+      "detail": "The conspiracy and its trials put the word equivocation into everyday London use.",
+      "kind": "context"
+    },
+    {
+      "year": 1606,
+      "label": "Macbeth most likely written and first performed",
+      "detail": "The Porter's equivocator is the strongest internal evidence for the date.",
+      "kind": "work"
+    },
+    {
+      "year": 1611,
+      "label": "Simon Forman records seeing Macbeth at the Globe",
+      "detail": "The earliest surviving eyewitness account of the play in performance.",
+      "kind": "reception"
+    },
+    {
+      "year": 1623,
+      "label": "First Folio",
+      "detail": "The only early printed text of the play, and a short one.",
+      "kind": "work"
+    },
+    {
+      "year": 1847,
+      "label": "Verdi's Macbeth premieres in Florence",
+      "detail": "Revised for Paris in 1865, it becomes a performance tradition of its own.",
+      "kind": "reception"
+    },
+    {
+      "year": 1936,
+      "label": "Orson Welles directs the Federal Theatre Project's Black-cast Macbeth",
+      "detail": "Staged at the Lafayette Theatre in Harlem and relocated to a Caribbean island.",
+      "kind": "reception"
+    }
   ],
   "places": [
-    { "name": "Inverness", "lat": 57.4778, "lon": -4.2247, "note": "Macbeth's castle, where Duncan is murdered while a guest." },
-    { "name": "Forres", "lat": 57.6089, "lon": -3.6214, "note": "Duncan's court, where Macbeth is thanked and Malcolm is named heir." },
-    { "name": "Dunsinane Hill", "lat": 56.4708, "lon": -3.3306, "note": "Macbeth's fortress in the last act, and the hill Birnam wood must reach." },
-    { "name": "Birnam", "lat": 56.5586, "lon": -3.5844, "note": "The wood the soldiers cut for cover, about twelve miles from Dunsinane." },
-    { "name": "Fife", "lat": 56.2082, "lon": -3.1495, "note": "Macduff's household, murdered in 4.2." },
-    { "name": "Iona", "lat": 56.3333, "lon": -6.4, "note": "Colmekill, where Duncan's body is carried for burial among his ancestors." }
+    {
+      "name": "Inverness",
+      "lat": 57.4778,
+      "lon": -4.2247,
+      "note": "Macbeth's castle, where Duncan is murdered while a guest."
+    },
+    {
+      "name": "Forres",
+      "lat": 57.6089,
+      "lon": -3.6214,
+      "note": "Duncan's court, where Macbeth is thanked and Malcolm is named heir."
+    },
+    {
+      "name": "Dunsinane Hill",
+      "lat": 56.4708,
+      "lon": -3.3306,
+      "note": "Macbeth's fortress in the last act, and the hill Birnam wood must reach."
+    },
+    {
+      "name": "Birnam",
+      "lat": 56.5586,
+      "lon": -3.5844,
+      "note": "The wood the soldiers cut for cover, about twelve miles from Dunsinane."
+    },
+    {
+      "name": "Fife",
+      "lat": 56.2082,
+      "lon": -3.1495,
+      "note": "Macduff's household, murdered in 4.2."
+    },
+    {
+      "name": "Iona",
+      "lat": 56.3333,
+      "lon": -6.4,
+      "note": "Colmekill, where Duncan's body is carried for burial among his ancestors."
+    }
   ],
   "criticalViews": [
     {
@@ -688,11 +1241,26 @@
     "The play is the shortest of the major tragedies. What would be lost if it were longer?"
   ],
   "related": [
-    { "href": "/books/hamlet/", "why": "The other tragedy built almost entirely out of soliloquy, and the opposite case: a man who cannot act." },
-    { "href": "/books/king-lear/", "why": "Written within a year or two, and equally interested in a kingdom that comes apart at the top." },
-    { "href": "/books/richard-iii/", "why": "An earlier study of a usurper who enjoys the audience's company, where Macbeth cannot bear it." },
-    { "href": "/books/julius-caesar/", "why": "Political murder argued out in advance, and the same discovery that killing a ruler does not settle anything." },
-    { "href": "/books/macbeth-expanded-scholarly-edition/", "why": "The expanded Astor edition, with fuller textual, critical and performance material." }
+    {
+      "href": "/books/hamlet/",
+      "why": "The other tragedy built almost entirely out of soliloquy, and the opposite case: a man who cannot act."
+    },
+    {
+      "href": "/books/king-lear/",
+      "why": "Written within a year or two, and equally interested in a kingdom that comes apart at the top."
+    },
+    {
+      "href": "/books/richard-iii/",
+      "why": "An earlier study of a usurper who enjoys the audience's company, where Macbeth cannot bear it."
+    },
+    {
+      "href": "/books/julius-caesar/",
+      "why": "Political murder argued out in advance, and the same discovery that killing a ruler does not settle anything."
+    },
+    {
+      "href": "/books/macbeth-expanded-scholarly-edition/",
+      "why": "The expanded Astor edition, with fuller textual, critical and performance material."
+    }
   ],
   "videos": []
 }

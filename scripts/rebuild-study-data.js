@@ -12,9 +12,10 @@ const { loadBooks, validateAll } = require('./book-data');
 const root = process.cwd();
 const outputFile = path.join(root, 'assets', 'study-index.json');
 
-// Long-form editorial material (at-a-glance notes, essay plans, critical
-// positions, discussion questions) belongs to the book page and the study
-// page. The index carries only what a cross-library tool needs.
+// The index carries what a cross-library tool needs. That includes the essay
+// questions, critical positions and discussion questions, because the essay
+// forge, the argument builder and the teachers' generators all work from a
+// chosen title without loading its individual record.
 function indexEntry(book) {
   return {
     slug: book.slug,
@@ -69,6 +70,10 @@ function indexEntry(book) {
       source: quotation.source,
       cloze: quotation.cloze || []
     })),
+    atAGlance: book.atAGlance || [],
+    criticalViews: book.criticalViews || [],
+    essayQuestions: book.essayQuestions || [],
+    discussionQuestions: book.discussionQuestions || [],
     timeline: book.timeline || [],
     places: book.places || [],
     related: book.related || [],
