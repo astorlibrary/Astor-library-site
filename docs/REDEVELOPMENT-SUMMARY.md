@@ -76,6 +76,8 @@ Primary navigation keeps its five destinations and gains a sixth.
 /explore/quotations/                every quotation, filterable by theme, technique, character, period, form
 /explore/timeline/                  every dated event on one scale
 /explore/characters/                SVG relationship maps that redraw act by act
+/explore/themes/                    every shared theme, book by book
+/offline/                           what the device holds when there is no signal
 /explore/techniques/                glossary: each term defined once, then shown at work
 /explore/map/                       where the books happen
 /explore/compare/                   two titles side by side, with paired quotations
@@ -251,6 +253,11 @@ session contains.
   their stages appear and disappear as you step through the acts. The same
   map is embedded in the Characters tab of every book page, loaded the first
   time the tab is opened.
+- **Themes** — every theme in the records, ordered by how many books share
+  it, each opened to the books' own accounts of it side by side, how it
+  develops in each, and a line from each that carries it, with a way through
+  to every quotation carrying the theme and to a comparison of two of the
+  books. Each theme on a book page links to its entry.
 - **Techniques** — each term defined once from the shared vocabulary, then
   shown doing a particular job in a particular line in every book that uses
   it. Two hundred terms are reached through an A to Z bar and a search box;
@@ -287,6 +294,29 @@ references (one per theme first, so the sheet covers the whole book), the
 techniques, and three questions to practise on — drawn on the page and sent
 to the printer on its own, with nothing else from the page around it.
 
+### The mixed round, the catalogue and the homepage
+
+A tenth game, the mixed round, draws a few questions of every kind a title
+supports so a session changes its footing each time. The catalogue cards say
+which titles carry a toolkit, with reading time and difficulty from the
+record, and a filter shows only those. The homepage carries the passage of
+the day — the same one the Today page shows, chosen by the same arithmetic —
+with the reader's own result if the device has one.
+
+The five Expanded Scholarly Editions carry the base play's toolkit through an
+`editions` field on the record, so sixty-two book pages have one.
+
+### Offline
+
+A service worker (`sw.js`, stamped at build time with a version drawn from
+the files it keeps) holds the study modules, the stylesheets, the quotation
+index and each book's record on the device, and a copy of every study, play,
+explore or book page the reader opens. Pages are network-first with the copy
+as fallback; data is served from the copy while a fresh one is fetched;
+nothing under `/api/`, `/account/` or sign-in is touched. A deploy that
+changes any kept file is a new worker and a fresh cache. `/offline/` lists
+what the device holds.
+
 ### Personalisation
 
 `assets/astor/store.mjs` holds everything in one `localStorage` record:
@@ -301,6 +331,12 @@ covered by tests.
 
 Progress is *declared*, not inferred: a reader ticks an act when they have
 read it, rather than having it guessed from how far they scrolled.
+
+### Close readings and the toolkit
+
+The Read next tab of a book page opens with the Passage Room's close readings
+of that book, so the ninety annotated passages and the study records point at
+each other.
 
 ### The search palette
 
@@ -550,20 +586,7 @@ from that one file.
    collections and story anthologies, which have no records at all.
 3. **Decide the source-text policy** described at the end of §5, and make the
    quotations and the Astor editions agree.
-4. **Per-book difficulty and reading time on the catalogue cards.** Both are in
-   the records already and would make `/library/` far more useful to a reader
-   choosing what to start.
-5. **Passage Room links into the explorer.** The ninety close readings and the
-   1,307 quotations are separate bodies of work that ought to point at each
-   other.
-6. **An offline mode.** Everything a reader needs for revision is already
-   static JSON and vanilla modules; a service worker would make the games work
-   on a train. This is the cheapest large win left.
-7. **Reading plans that adapt.** The plan is made once from the dates given;
-   a reader who falls behind sees the overdue count but is not offered a
-   re-spread. Re-planning from today, keeping what is already ticked, is a
-   small addition to `plan.mjs`.
-8. **Watch the shared vocabulary.** It is the one thing that degrades quietly
+4. **Watch the shared vocabulary.** It is the one thing that degrades quietly
    as the library grows. `node scripts/rebuild-vocabulary.js` should be run
    whenever a batch of records lands, and the canonical names read as a set
    rather than one at a time.
