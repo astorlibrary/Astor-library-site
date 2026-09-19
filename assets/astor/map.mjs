@@ -537,8 +537,31 @@ function renderDetail(chosen) {
     if (!byBook.has(place.book.slug)) byBook.set(place.book.slug, { book: place.book, places: [] });
     byBook.get(place.book.slug).places.push(place);
   }
+  // A crowded marker on a wide view can be opened out on a closer one.
+  const here = ORDER.indexOf(view);
+  const closer = chosen.length > 1 && here > 0
+    ? ORDER.slice(0, here).find(key => chosen.filter(place => inView(place, VIEWS[key])).length >= chosen.length * 0.75)
+    : null;
+  const zoom = closer
+    ? el('p', { class: 'astor-toolkit-actions' }, [el('button', {
+      class: 'button secondary', type: 'button',
+      text: 'Zoom to ' + VIEWS[closer].name.replace(/^The /, 'the '),
+      onclick: () => {
+        view = closer;
+        selectedSpot = null;
+        selected = null;
+        const select = document.querySelector('#astor-map-view');
+        if (select) select.value = closer;
+        render();
+        renderDetail(null);
+        announce(live, 'Showing ' + VIEWS[closer].name + '.');
+        mapMount.scrollIntoView({ block: 'nearest', behavior: motion() });
+      }
+    })])
+    : null;
   detailMount.append(el('article', { class: 'astor-quote-card astor-map-card' }, [
     el('h3', { text: chosen.length === 1 ? chosen[0].name : chosen.length + ' places here' }),
+    zoom,
     ...[...byBook.values()].sort((a, b) => a.book.title.localeCompare(b.book.title)).map(entry => {
       const list = el('ul', {}, entry.places.map(place => el('li', {}, [
         chosen.length === 1 ? null : el('strong', { text: place.name + (place.note ? ' — ' : '') }),
