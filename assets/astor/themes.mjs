@@ -46,7 +46,12 @@ async function start() {
   if (target) document.getElementById(target)?.scrollIntoView({ block: 'start' });
   window.addEventListener('hashchange', () => {
     const entry = document.getElementById(window.location.hash.slice(1));
-    if (entry?.classList.contains('astor-term')) { entry.open = true; entry.scrollIntoView({ block: 'start' }); }
+    if (entry?.classList.contains('astor-term')) {
+      const group = entry.closest('.astor-term-group');
+      if (group) group.open = true;
+      entry.open = true;
+      entry.scrollIntoView({ block: 'start' });
+    }
   });
 }
 
@@ -71,7 +76,25 @@ function render(themes, query, order, openId) {
     listMount.append(el('p', { class: 'astor-empty', text: 'No theme matches that. Try a shorter word.' }));
     return;
   }
-  for (const theme of shown) listMount.append(entry(theme, theme.id === openId || words.length > 0));
+  // Unsearched, the page is about what books share: those themes come first,
+  // and the ones a single book carries are folded beneath them.
+  const single = words.length ? [] : shown.filter(theme => theme.books.length === 1);
+  for (const theme of shown) {
+    if (single.includes(theme)) continue;
+    listMount.append(entry(theme, theme.id === openId || words.length > 0));
+  }
+  if (single.length) {
+    const group = el('details', {
+      class: 'astor-term-group',
+      open: single.some(theme => theme.id === openId)
+    });
+    group.append(el('summary', {}, [
+      el('span', { class: 'astor-term-name', text: 'Themes one book carries alone' }),
+      el('small', { text: single.length + ' themes' })
+    ]));
+    for (const theme of single) group.append(entry(theme, theme.id === openId));
+    listMount.append(group);
+  }
 }
 
 function entry(theme, open) {
