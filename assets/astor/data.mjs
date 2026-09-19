@@ -73,7 +73,15 @@ export function allThemes(index) {
   for (const book of index.books) {
     for (const theme of book.themes) {
       const entry = themes.get(theme.id) || { id: theme.id, name: theme.canonicalName || theme.name, books: [] };
-      entry.books.push({ slug: book.slug, title: book.title, href: book.href, summary: theme.summary });
+      entry.books.push({
+        slug: book.slug,
+        title: book.title,
+        href: book.href,
+        name: theme.name,
+        summary: theme.summary,
+        development: theme.development || '',
+        quotations: book.quotations.filter(quotation => (quotation.themes || []).includes(theme.id))
+      });
       themes.set(theme.id, entry);
     }
   }

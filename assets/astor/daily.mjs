@@ -8,7 +8,7 @@
 
 import { el, clear, seededRandom, hashString, pick, formatDate } from './util.mjs';
 import { loadIndex, allQuotations } from './data.mjs';
-import { dailyRound, resultGrid } from './questions.mjs';
+import { dailyRound, resultGrid, dailyPassage } from './questions.mjs';
 import { Round, emptyState } from './engine.mjs';
 import { today, dailyResult, recordDaily, streak, isRemembering } from './store.mjs';
 
@@ -40,7 +40,7 @@ function renderStrip(index, day) {
   const year = new Date().getFullYear();
 
   if (quotations.length) {
-    const quotation = pick(quotations, random);
+    const quotation = dailyPassage(index, day);
     strip.append(el('section', {}, [
       el('h2', { text: 'Passage of the day' }),
       el('blockquote', {}, [el('p', { text: quotation.text })]),

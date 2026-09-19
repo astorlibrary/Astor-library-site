@@ -54,6 +54,15 @@ function validateBook(book, fileName) {
   if (book.summary && wordCount(book.summary) < 25) problems.push(at('has a summary too short to be useful'));
   if (book.href && !/^\/[a-z0-9-/]+\/$/.test(book.href)) problems.push(at('has an href that is not a site path'));
   if (book.studyHref && !/^\/[a-z0-9-/]+\/$/.test(book.studyHref)) problems.push(at('has a studyHref that is not a site path'));
+  // Other book pages that present the same text — an expanded scholarly
+  // edition of a play, say — and so carry this record's toolkit as well.
+  if (book.editions !== undefined) {
+    if (!Array.isArray(book.editions)) problems.push(at('has editions that are not a list'));
+    else for (const edition of book.editions) {
+      if (!slugCase(edition)) problems.push(at('has an edition slug that is not lower-case and hyphenated: ' + edition));
+      if (edition === book.slug) problems.push(at('lists itself as an edition'));
+    }
+  }
   if (book.firstPublished !== undefined && !Number.isInteger(book.firstPublished)) problems.push(at('has a non-integer firstPublished'));
   if (book.readingTime !== undefined && !(Number.isInteger(book.readingTime) && book.readingTime > 0)) problems.push(at('has an invalid readingTime'));
   if (book.difficulty !== undefined && !(Number.isInteger(book.difficulty) && book.difficulty >= 1 && book.difficulty <= 5)) {

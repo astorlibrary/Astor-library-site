@@ -3,6 +3,9 @@
   "title": "A Midsummer Night's Dream",
   "author": "William Shakespeare",
   "href": "/books/a-midsummer-nights-dream/",
+  "editions": [
+    "a-midsummer-nights-dream-expanded-scholarly-edition"
+  ],
   "buyUrl": "https://mybook.to/YAc2yAJ",
   "form": "play",
   "genre": "Comedy",
@@ -21,10 +24,26 @@
     "note": "Line numbers follow the traditional Globe numbering. Modern editions based on the 1600 quarto may differ by a line or two."
   },
   "atAGlance": [
-    { "label": "Written", "value": "c. 1595-96", "note": "Usually placed close to Romeo and Juliet, whose plot the mechanicals accidentally perform as farce." },
-    { "label": "First printed", "value": "1600", "note": "A quarto printed for Thomas Fisher, whose title page says the play had been publicly acted by the Lord Chamberlain's Men." },
-    { "label": "Sources", "value": "No single source", "note": "Ovid, Chaucer, English fairy lore and Shakespeare's own theatre, combined rather than adapted." },
-    { "label": "Shape", "value": "Four worlds, one wood", "note": "Court, lovers, fairies and players, each with a different kind of verse." }
+    {
+      "label": "Written",
+      "value": "c. 1595-96",
+      "note": "Usually placed close to Romeo and Juliet, whose plot the mechanicals accidentally perform as farce."
+    },
+    {
+      "label": "First printed",
+      "value": "1600",
+      "note": "A quarto printed for Thomas Fisher, whose title page says the play had been publicly acted by the Lord Chamberlain's Men."
+    },
+    {
+      "label": "Sources",
+      "value": "No single source",
+      "note": "Ovid, Chaucer, English fairy lore and Shakespeare's own theatre, combined rather than adapted."
+    },
+    {
+      "label": "Shape",
+      "value": "Four worlds, one wood",
+      "note": "Court, lovers, fairies and players, each with a different kind of verse."
+    }
   ],
   "structure": [
     {
@@ -33,8 +52,16 @@
       "title": "A law, a deadline and a cast list",
       "summary": "Theseus is four days from marrying a woman he defeated in battle when Egeus arrives demanding the Athenian law that lets a father dispose of a daughter. Hermia is given a month to obey, die or enter a convent; she and Lysander agree to run, tell Helena, and Helena tells Demetrius. In a separate room six tradesmen are allocating parts in a play about a double suicide.",
       "scenes": [
-        { "ref": "1.1", "title": "The law", "summary": "Egeus demands his right; Theseus upholds it; the lovers plan to escape and Helena betrays the plan." },
-        { "ref": "1.2", "title": "The casting", "summary": "Quince hands out parts and Bottom offers to play all of them." }
+        {
+          "ref": "1.1",
+          "title": "The law",
+          "summary": "Egeus demands his right; Theseus upholds it; the lovers plan to escape and Helena betrays the plan."
+        },
+        {
+          "ref": "1.2",
+          "title": "The casting",
+          "summary": "Quince hands out parts and Bottom offers to play all of them."
+        }
       ]
     },
     {
@@ -43,8 +70,16 @@
       "title": "A quarrel that has spoiled the weather",
       "summary": "Oberon and Titania have fallen out over a stolen Indian boy, and the dispute has stopped the seasons behaving. Oberon sends for a flower whose juice makes the sleeper dote on whatever they first see, intending it for his wife, and adds an instruction about the Athenian youth he has just watched treat a woman badly. Puck anoints the wrong Athenian.",
       "scenes": [
-        { "ref": "2.1", "title": "The flower", "summary": "Oberon and Titania quarrel; Helena pursues Demetrius through the wood; Puck is sent for love-in-idleness." },
-        { "ref": "2.2", "title": "The mistake", "summary": "Titania is drugged asleep; Puck finds Lysander and Hermia lying apart and anoints the wrong man." }
+        {
+          "ref": "2.1",
+          "title": "The flower",
+          "summary": "Oberon and Titania quarrel; Helena pursues Demetrius through the wood; Puck is sent for love-in-idleness."
+        },
+        {
+          "ref": "2.2",
+          "title": "The mistake",
+          "summary": "Titania is drugged asleep; Puck finds Lysander and Hermia lying apart and anoints the wrong man."
+        }
       ]
     },
     {
@@ -53,8 +88,16 @@
       "title": "Everything wrong at once",
       "summary": "Bottom acquires an ass's head, his friends run, and the fairy queen wakes and falls in love with him. In the other half of the wood both men now love Helena, who is certain she is being mocked, and the two women who grew up together insult each other's height until the men go off to fight. Oberon has Puck fog the wood and put them all to sleep.",
       "scenes": [
-        { "ref": "3.1", "title": "The ass's head", "summary": "The rehearsal is interrupted; Bottom is transformed and Titania wakes to adore him." },
-        { "ref": "3.2", "title": "The quarrel", "summary": "Both men court Helena, the two women fall out, and Puck leads the rivals astray in the dark." }
+        {
+          "ref": "3.1",
+          "title": "The ass's head",
+          "summary": "The rehearsal is interrupted; Bottom is transformed and Titania wakes to adore him."
+        },
+        {
+          "ref": "3.2",
+          "title": "The quarrel",
+          "summary": "Both men court Helena, the two women fall out, and Puck leads the rivals astray in the dark."
+        }
       ]
     },
     {
@@ -63,8 +106,16 @@
       "title": "Waking up, and not asking questions",
       "summary": "Oberon has what he wanted, releases Titania and says nothing about how he got it. Theseus finds the four lovers asleep in the wood, overrules Egeus and adds them to his own wedding — while Demetrius, alone of the four, is still under the drug. Bottom wakes last, in the middle of the stage, trying to describe something he has no words for.",
       "scenes": [
-        { "ref": "4.1", "title": "The waking", "summary": "Titania is released; the hunt finds the lovers; Theseus overrules the law; Bottom wakes and gropes for his dream." },
-        { "ref": "4.2", "title": "Back in Athens", "summary": "The players mourn their lost leading man until he walks in with news of a wedding." }
+        {
+          "ref": "4.1",
+          "title": "The waking",
+          "summary": "Titania is released; the hunt finds the lovers; Theseus overrules the law; Bottom wakes and gropes for his dream."
+        },
+        {
+          "ref": "4.2",
+          "title": "Back in Athens",
+          "summary": "The players mourn their lost leading man until he walks in with news of a wedding."
+        }
       ]
     },
     {
@@ -73,7 +124,11 @@
       "title": "The worst play ever performed, and a blessing",
       "summary": "Three couples watch Pyramus and Thisbe, a tragedy of forbidden love and mistaken death performed by men who explain the wall and apologise for the lion. The court heckles it; the play they are mocking is the story they have just escaped. The fairies then come indoors to bless the marriages, and Puck asks the audience to call the whole thing a dream.",
       "scenes": [
-        { "ref": "5.1", "title": "Pyramus and Thisbe, and the epilogue", "summary": "The mechanicals perform; the court comments; Oberon and Titania bless the house; Puck asks for pardon." }
+        {
+          "ref": "5.1",
+          "title": "Pyramus and Thisbe, and the epilogue",
+          "summary": "The mechanicals perform; the court comments; Oberon and Titania bless the house; Puck asks for pardon."
+        }
       ]
     }
   ],
@@ -85,11 +140,31 @@
       "summary": "He begins by upholding a law that would kill a girl for choosing the wrong husband and ends by overruling it without explanation, having changed nothing about his beliefs in between. His great speech dismisses lovers, lunatics and poets as the same kind of unreliable witness, which is spoken in a play that has just shown the audience fairies.",
       "clue": "He won his bride in battle, tells a girl her father made her as a seal makes an impression in wax, and does not believe a word of what the lovers report.",
       "firstAppearance": "1.1",
-      "traits": ["reasonable", "inconsistent", "a good host"],
+      "traits": [
+        "reasonable",
+        "inconsistent",
+        "a good host"
+      ],
       "relationships": [
-        { "to": "hippolyta", "label": "betrothed to, by conquest", "kind": "marriage" },
-        { "to": "egeus", "label": "upholds and then overrules", "kind": "ally", "stages": ["act-1", "act-4"] },
-        { "to": "oberon", "label": "counterpart in the wood", "kind": "doubling" }
+        {
+          "to": "hippolyta",
+          "label": "betrothed to, by conquest",
+          "kind": "marriage"
+        },
+        {
+          "to": "egeus",
+          "label": "upholds and then overrules",
+          "kind": "ally",
+          "stages": [
+            "act-1",
+            "act-4"
+          ]
+        },
+        {
+          "to": "oberon",
+          "label": "counterpart in the wood",
+          "kind": "doubling"
+        }
       ]
     },
     {
@@ -98,10 +173,21 @@
       "role": "Queen of the Amazons, betrothed to Theseus",
       "summary": "She says very little and almost all of it disagrees with her future husband. When he explains away the lovers' night as imagination, she points out that four people telling the same story is evidence of something, which is the only argument in the play for believing the audience's own eyes.",
       "firstAppearance": "1.1",
-      "traits": ["laconic", "sceptical of scepticism"],
+      "traits": [
+        "laconic",
+        "sceptical of scepticism"
+      ],
       "relationships": [
-        { "to": "theseus", "label": "betrothed to", "kind": "marriage" },
-        { "to": "titania", "label": "counterpart in the wood", "kind": "doubling" }
+        {
+          "to": "theseus",
+          "label": "betrothed to",
+          "kind": "marriage"
+        },
+        {
+          "to": "titania",
+          "label": "counterpart in the wood",
+          "kind": "doubling"
+        }
       ]
     },
     {
@@ -110,10 +196,28 @@
       "role": "Hermia's father",
       "summary": "He appears twice, asks for his daughter's death both times, and is then simply overruled and forgotten. Shakespeare gives the comedy's opening crisis to a man with no interior life at all, so that the law he invokes looks like a piece of machinery rather than a feeling.",
       "firstAppearance": "1.1",
-      "traits": ["legalistic", "unmoved"],
+      "traits": [
+        "legalistic",
+        "unmoved"
+      ],
       "relationships": [
-        { "to": "hermia", "label": "father of", "kind": "family", "stages": ["act-1", "act-4"] },
-        { "to": "demetrius", "label": "chosen son-in-law", "kind": "ally", "stages": ["act-1"] }
+        {
+          "to": "hermia",
+          "label": "father of",
+          "kind": "family",
+          "stages": [
+            "act-1",
+            "act-4"
+          ]
+        },
+        {
+          "to": "demetrius",
+          "label": "chosen son-in-law",
+          "kind": "ally",
+          "stages": [
+            "act-1"
+          ]
+        }
       ]
     },
     {
@@ -123,11 +227,34 @@
       "summary": "Threatened with death in the first scene, she argues back in front of a duke and then leaves the city. In the wood she loses her certainty piece by piece — first her lover, then her oldest friend — and the play's harshest comedy is about her height, which is the one thing she cannot answer.",
       "clue": "Ordered to marry a man she does not want or die, she runs; by dawn she is being called a bead, an acorn and a painted maypole by her closest friend.",
       "firstAppearance": "1.1",
-      "traits": ["stubborn", "quick-tempered", "small"],
+      "traits": [
+        "stubborn",
+        "quick-tempered",
+        "small"
+      ],
       "relationships": [
-        { "to": "lysander", "label": "in love with", "kind": "love" },
-        { "to": "helena", "label": "childhood friend of", "kind": "ally", "stages": ["act-1", "act-3"] },
-        { "to": "egeus", "label": "daughter of", "kind": "family", "stages": ["act-1"] }
+        {
+          "to": "lysander",
+          "label": "in love with",
+          "kind": "love"
+        },
+        {
+          "to": "helena",
+          "label": "childhood friend of",
+          "kind": "ally",
+          "stages": [
+            "act-1",
+            "act-3"
+          ]
+        },
+        {
+          "to": "egeus",
+          "label": "daughter of",
+          "kind": "family",
+          "stages": [
+            "act-1"
+          ]
+        }
       ]
     },
     {
@@ -136,11 +263,34 @@
       "role": "An Athenian in love with Hermia",
       "summary": "He is Demetrius's equal in everything except the father's approval, which is the whole plot. Drugged, he turns on Hermia with a viciousness the spell does not really account for, and the play never gives him a line acknowledging what he said.",
       "firstAppearance": "1.1",
-      "traits": ["articulate", "unrecognisable when enchanted"],
+      "traits": [
+        "articulate",
+        "unrecognisable when enchanted"
+      ],
       "relationships": [
-        { "to": "hermia", "label": "in love with", "kind": "love" },
-        { "to": "demetrius", "label": "rival of", "kind": "rival", "stages": ["act-1", "act-3"] },
-        { "to": "helena", "label": "pursues under the spell", "kind": "love", "stages": ["act-2", "act-3"] }
+        {
+          "to": "hermia",
+          "label": "in love with",
+          "kind": "love"
+        },
+        {
+          "to": "demetrius",
+          "label": "rival of",
+          "kind": "rival",
+          "stages": [
+            "act-1",
+            "act-3"
+          ]
+        },
+        {
+          "to": "helena",
+          "label": "pursues under the spell",
+          "kind": "love",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        }
       ]
     },
     {
@@ -150,10 +300,26 @@
       "summary": "She betrays her friend's escape plan in order to be thanked by a man who despises her, and knows exactly how little that is worth while she does it. Her offer to be treated like a dog is the most uncomfortable speech in the comedy, and when both men suddenly want her she assumes it is a joke at her expense.",
       "clue": "She hands over her best friend's secret to a man who has just told her he is sick when he looks at her, and asks only to be beaten and followed like a spaniel.",
       "firstAppearance": "1.1",
-      "traits": ["self-aware", "self-abasing", "tall"],
+      "traits": [
+        "self-aware",
+        "self-abasing",
+        "tall"
+      ],
       "relationships": [
-        { "to": "demetrius", "label": "in love with", "kind": "love" },
-        { "to": "hermia", "label": "childhood friend of", "kind": "ally", "stages": ["act-1", "act-3"] }
+        {
+          "to": "demetrius",
+          "label": "in love with",
+          "kind": "love"
+        },
+        {
+          "to": "hermia",
+          "label": "childhood friend of",
+          "kind": "ally",
+          "stages": [
+            "act-1",
+            "act-3"
+          ]
+        }
       ]
     },
     {
@@ -162,10 +328,31 @@
       "role": "Egeus's choice for Hermia",
       "summary": "He courted Helena, dropped her, and threatens her with violence in the wood when she will not stop following him. He is the only one of the four never released from the drug: the comedy's final pairing rests on an enchantment nobody on stage mentions again.",
       "firstAppearance": "1.1",
-      "traits": ["brusque", "approved of", "still enchanted"],
+      "traits": [
+        "brusque",
+        "approved of",
+        "still enchanted"
+      ],
       "relationships": [
-        { "to": "helena", "label": "abandoned, then restored to by magic", "kind": "love", "stages": ["act-1", "act-4", "act-5"] },
-        { "to": "lysander", "label": "rival of", "kind": "rival", "stages": ["act-1", "act-3"] }
+        {
+          "to": "helena",
+          "label": "abandoned, then restored to by magic",
+          "kind": "love",
+          "stages": [
+            "act-1",
+            "act-4",
+            "act-5"
+          ]
+        },
+        {
+          "to": "lysander",
+          "label": "rival of",
+          "kind": "rival",
+          "stages": [
+            "act-1",
+            "act-3"
+          ]
+        }
       ]
     },
     {
@@ -175,11 +362,27 @@
       "summary": "He wants a boy his wife is raising and drugs her into humiliation until she gives him up. The same night he also takes pity on a woman he has never met and tries to fix her love life, and the play makes no attempt to reconcile the two impulses in one character.",
       "clue": "He watches everything from the edge of the stage, corrects one couple out of pity and destroys his wife's dignity to win an argument about a child.",
       "firstAppearance": "2.1",
-      "traits": ["invisible", "jealous", "occasionally kind"],
+      "traits": [
+        "invisible",
+        "jealous",
+        "occasionally kind"
+      ],
       "relationships": [
-        { "to": "titania", "label": "married to, at war with", "kind": "marriage" },
-        { "to": "puck", "label": "master of", "kind": "service" },
-        { "to": "theseus", "label": "counterpart at court", "kind": "doubling" }
+        {
+          "to": "titania",
+          "label": "married to, at war with",
+          "kind": "marriage"
+        },
+        {
+          "to": "puck",
+          "label": "master of",
+          "kind": "service"
+        },
+        {
+          "to": "theseus",
+          "label": "counterpart at court",
+          "kind": "doubling"
+        }
       ]
     },
     {
@@ -189,11 +392,31 @@
       "summary": "Her account of the ruined seasons makes the fairy quarrel a matter of flooded fields and human disease, which is a larger claim than any other character makes for themselves. She keeps the changeling boy out of loyalty to his dead mother, and loses him while drugged into loving a weaver with an ass's head.",
       "clue": "She keeps a dead friend's child, blames the rotted corn and the drowned fields on her marriage, and wakes to find herself feeding apricots to a man with an ass's head.",
       "firstAppearance": "2.1",
-      "traits": ["imperious", "loyal", "humiliated"],
+      "traits": [
+        "imperious",
+        "loyal",
+        "humiliated"
+      ],
       "relationships": [
-        { "to": "oberon", "label": "married to, at war with", "kind": "marriage" },
-        { "to": "bottom", "label": "enchanted into loving", "kind": "love", "stages": ["act-3", "act-4"] },
-        { "to": "hippolyta", "label": "counterpart at court", "kind": "doubling" }
+        {
+          "to": "oberon",
+          "label": "married to, at war with",
+          "kind": "marriage"
+        },
+        {
+          "to": "bottom",
+          "label": "enchanted into loving",
+          "kind": "love",
+          "stages": [
+            "act-3",
+            "act-4"
+          ]
+        },
+        {
+          "to": "hippolyta",
+          "label": "counterpart at court",
+          "kind": "doubling"
+        }
       ]
     },
     {
@@ -203,10 +426,25 @@
       "summary": "He belongs to English village folklore rather than to Athens, and he is brought into the play as both an employee and a hazard: he does what he is told and enjoys what goes wrong with it. He is given the last word, and uses it to offer the audience a way out of everything they have seen.",
       "clue": "He frightens village girls, curdles the milk, mistakes one Athenian for another, and finally asks the audience to pretend they were asleep.",
       "firstAppearance": "2.1",
-      "traits": ["mischievous", "obedient", "unbothered"],
+      "traits": [
+        "mischievous",
+        "obedient",
+        "unbothered"
+      ],
       "relationships": [
-        { "to": "oberon", "label": "servant of", "kind": "service" },
-        { "to": "bottom", "label": "transforms", "kind": "rival", "stages": ["act-3"] }
+        {
+          "to": "oberon",
+          "label": "servant of",
+          "kind": "service"
+        },
+        {
+          "to": "bottom",
+          "label": "transforms",
+          "kind": "rival",
+          "stages": [
+            "act-3"
+          ]
+        }
       ]
     },
     {
@@ -216,10 +454,29 @@
       "summary": "He wants to play every part in the play and is the only mortal who meets the fairies awake and is not frightened of them. He is also the only one who tries to describe the night afterwards, and the speech in which he fails — senses swapped over, words giving out — is the play's most serious statement about what has happened to everyone.",
       "clue": "A weaver who offers to play the lion, the lady and the tyrant, is given an ass's head, and wakes up trying to say what his eye has heard.",
       "firstAppearance": "1.2",
-      "traits": ["confident", "kindly", "unembarrassable"],
+      "traits": [
+        "confident",
+        "kindly",
+        "unembarrassable"
+      ],
       "relationships": [
-        { "to": "titania", "label": "adored by, briefly", "kind": "love", "stages": ["act-3", "act-4"] },
-        { "to": "puck", "label": "transformed by", "kind": "rival", "stages": ["act-3"] }
+        {
+          "to": "titania",
+          "label": "adored by, briefly",
+          "kind": "love",
+          "stages": [
+            "act-3",
+            "act-4"
+          ]
+        },
+        {
+          "to": "puck",
+          "label": "transformed by",
+          "kind": "rival",
+          "stages": [
+            "act-3"
+          ]
+        }
       ]
     }
   ],
@@ -308,11 +565,20 @@
       "stage": "act-1",
       "context": "The opening lines, four days before the wedding.",
       "analysis": "The play starts a clock and immediately complains about it, which is how the whole comedy will run: everything is dated to the moon. The image Theseus reaches for — an old woman withering away a young man's inheritance — puts impatience and money in the first speech of a play about who may marry whom.",
-      "themes": ["love", "law"],
+      "themes": [
+        "love",
+        "law"
+      ],
       "techniques": [],
-      "characters": ["theseus", "hippolyta"],
+      "characters": [
+        "theseus",
+        "hippolyta"
+      ],
       "source": "Globe/Moby text, 1.1.1-4",
-      "cloze": ["nuptial", "moon"]
+      "cloze": [
+        "nuptial",
+        "moon"
+      ]
     },
     {
       "id": "wooed-with-my-sword",
@@ -322,11 +588,20 @@
       "stage": "act-1",
       "context": "To his bride, in the same opening speech.",
       "analysis": "He describes a conquest as a courtship without appearing to notice the difference, and 'doing thee injuries' is left in the sentence as a plain fact. 'In another key' is a musical term, so the change he promises is one of tone rather than of relation — which is precisely the question Oberon and Titania will act out in the wood.",
-      "themes": ["love", "power"],
+      "themes": [
+        "love",
+        "power"
+      ],
       "techniques": [],
-      "characters": ["theseus", "hippolyta"],
+      "characters": [
+        "theseus",
+        "hippolyta"
+      ],
       "source": "Globe/Moby text, 1.1.17-19",
-      "cloze": ["sword", "injuries"]
+      "cloze": [
+        "sword",
+        "injuries"
+      ]
     },
     {
       "id": "as-she-is-mine",
@@ -336,11 +611,21 @@
       "stage": "act-1",
       "context": "Asking the duke to enforce his right over his daughter.",
       "analysis": "'Dispose of' is a term for property, and the alternatives offered are a husband or an execution, in that order and in the same sentence. Egeus is not presented as a monster: he is invoking something he calls ancient and the duke agrees it exists, which is what makes the first scene of a comedy cold.",
-      "themes": ["law", "power"],
+      "themes": [
+        "law",
+        "power"
+      ],
       "techniques": [],
-      "characters": ["egeus", "hermia", "theseus"],
+      "characters": [
+        "egeus",
+        "hermia",
+        "theseus"
+      ],
       "source": "Globe/Moby text, 1.1.42-45",
-      "cloze": ["privilege", "dispose"]
+      "cloze": [
+        "privilege",
+        "dispose"
+      ]
     },
     {
       "id": "form-in-wax",
@@ -350,11 +635,21 @@
       "stage": "act-1",
       "context": "Advising Hermia to obey, before setting out her choices.",
       "analysis": "The image makes a daughter a seal impression rather than a person, and the pun on figure and disfigure lets destruction sound like a matter of craft. It is offered as kindly counsel, which is the point: the play's cruelty is spoken in the register of good sense.",
-      "themes": ["law", "power"],
+      "themes": [
+        "law",
+        "power"
+      ],
       "techniques": [],
-      "characters": ["theseus", "hermia", "egeus"],
+      "characters": [
+        "theseus",
+        "hermia",
+        "egeus"
+      ],
       "source": "Globe/Moby text, 1.1.48-52",
-      "cloze": ["wax", "disfigure"]
+      "cloze": [
+        "wax",
+        "disfigure"
+      ]
     },
     {
       "id": "course-of-true-love",
@@ -364,11 +659,19 @@
       "stage": "act-1",
       "context": "Comforting Hermia after the duke's judgement.",
       "analysis": "The most quoted line in the play is a young man consoling his girlfriend by telling her that their situation is an old story, and he is about to list the ways love goes wrong as if reciting from a book. What follows is not comfort but a catalogue of obstacles, ending in the image of darkness swallowing light.",
-      "themes": ["love"],
+      "themes": [
+        "love"
+      ],
       "techniques": [],
-      "characters": ["lysander", "hermia"],
+      "characters": [
+        "lysander",
+        "hermia"
+      ],
       "source": "Globe/Moby text, 1.1.136",
-      "cloze": ["true", "smooth"]
+      "cloze": [
+        "true",
+        "smooth"
+      ]
     },
     {
       "id": "quick-bright-things",
@@ -378,11 +681,20 @@
       "stage": "act-1",
       "context": "The end of his list of the ways love is thwarted.",
       "analysis": "Three heavy monosyllables — jaws, darkness, devour — arrive in a comedy fifteen minutes old. 'Quick' means living as well as fast, so the line describes both a flash of lightning and a short life, and it is the closest this play comes to the tragedy the mechanicals will perform badly in the last act.",
-      "themes": ["love", "dream"],
+      "themes": [
+        "love",
+        "dream"
+      ],
       "techniques": [],
-      "characters": ["lysander", "hermia"],
+      "characters": [
+        "lysander",
+        "hermia"
+      ],
       "source": "Globe/Moby text, 1.1.149-151",
-      "cloze": ["darkness", "confusion"]
+      "cloze": [
+        "darkness",
+        "confusion"
+      ]
     },
     {
       "id": "love-looks-not-with-the-eyes",
@@ -392,11 +704,22 @@
       "stage": "act-1",
       "context": "Alone, deciding to betray Hermia's escape plan to Demetrius.",
       "analysis": "She works out the play's theory of love before any magic has appeared, and then acts on it in the worst available way. The rhymed couplets she has slipped into mark the moment a character stops talking to other people and starts constructing an argument for herself.",
-      "themes": ["love"],
-      "techniques": ["verse-registers"],
-      "characters": ["helena", "demetrius", "hermia"],
+      "themes": [
+        "love"
+      ],
+      "techniques": [
+        "verse-registers"
+      ],
+      "characters": [
+        "helena",
+        "demetrius",
+        "hermia"
+      ],
       "source": "Globe/Moby text, 1.1.238-239",
-      "cloze": ["mind", "blind"]
+      "cloze": [
+        "mind",
+        "blind"
+      ]
     },
     {
       "id": "play-the-lion",
@@ -406,11 +729,20 @@
       "stage": "act-1",
       "context": "At the casting, having already asked to play Pyramus and Thisbe.",
       "analysis": "'Too' is the joke: he has accepted the lead and wants the other parts as well, including the one with no words. Quince talks him out of it by explaining that a convincing lion would get the company hanged, which is the first of the play's several reminders that theatre in 1595 was a licensed activity.",
-      "themes": ["theatre"],
-      "techniques": ["bathos"],
-      "characters": ["bottom"],
+      "themes": [
+        "theatre"
+      ],
+      "techniques": [
+        "bathos"
+      ],
+      "characters": [
+        "bottom"
+      ],
       "source": "Globe/Moby text, 1.2.63-64",
-      "cloze": ["lion", "roar"]
+      "cloze": [
+        "lion",
+        "roar"
+      ]
     },
     {
       "id": "ill-met-by-moonlight",
@@ -420,11 +752,20 @@
       "stage": "act-2",
       "context": "The first meeting of the fairy king and queen in the play.",
       "analysis": "Six words establish that this marriage is in the middle of a long argument, and the greeting inverts a courtesy — well met — into its opposite. Everything the fairies do for the rest of the night is a move in a quarrel that began before the audience arrived.",
-      "themes": ["power", "love"],
+      "themes": [
+        "power",
+        "love"
+      ],
       "techniques": [],
-      "characters": ["oberon", "titania"],
+      "characters": [
+        "oberon",
+        "titania"
+      ],
       "source": "Globe/Moby text, 2.1.61",
-      "cloze": ["moonlight", "proud"]
+      "cloze": [
+        "moonlight",
+        "proud"
+      ]
     },
     {
       "id": "seasons-alter",
@@ -434,11 +775,22 @@
       "stage": "act-2",
       "context": "In the middle of her account of the damage the quarrel has done.",
       "analysis": "The speech puts flooded fields, rotted corn and human disease on the domestic argument's account, which is a far larger claim than any mortal in the play makes. It also dates the comedy for the first audience: the mid-1590s were years of ruined harvests and abnormal weather, and this is the play noticing.",
-      "themes": ["power", "transformation"],
-      "techniques": ["catalogue"],
-      "characters": ["titania", "oberon"],
+      "themes": [
+        "power",
+        "transformation"
+      ],
+      "techniques": [
+        "catalogue"
+      ],
+      "characters": [
+        "titania",
+        "oberon"
+      ],
       "source": "Globe/Moby text, 2.1.107-109",
-      "cloze": ["seasons", "frosts"]
+      "cloze": [
+        "seasons",
+        "frosts"
+      ]
     },
     {
       "id": "votaress",
@@ -448,11 +800,20 @@
       "stage": "act-2",
       "context": "Refusing to hand over the changeling boy.",
       "analysis": "Her reason for keeping the child is not possessiveness but a promise to a dead friend, and the speech that follows is the warmest thing in the play — two women laughing on a beach at the shape of the sails. The boy himself never appears, and after Act IV nobody mentions him again.",
-      "themes": ["power", "love"],
+      "themes": [
+        "power",
+        "love"
+      ],
       "techniques": [],
-      "characters": ["titania", "oberon"],
+      "characters": [
+        "titania",
+        "oberon"
+      ],
       "source": "Globe/Moby text, 2.1.123-125",
-      "cloze": ["buys", "votaress"]
+      "cloze": [
+        "buys",
+        "votaress"
+      ]
     },
     {
       "id": "western-flower",
@@ -462,11 +823,19 @@
       "stage": "act-2",
       "context": "Describing how Cupid's arrow missed an imperial votaress and struck a flower.",
       "analysis": "The drug that drives the rest of the plot is given an origin story in three lines, and its colour is a wound. 'Love-in-idleness' is a real country name for the wild pansy, so the enchantment arrives dressed as folklore rather than as sorcery — which is how the play prefers its magic.",
-      "themes": ["love", "transformation"],
+      "themes": [
+        "love",
+        "transformation"
+      ],
       "techniques": [],
-      "characters": ["oberon"],
+      "characters": [
+        "oberon"
+      ],
       "source": "Globe/Moby text, 2.1.169-171",
-      "cloze": ["flower", "love-in-idleness"]
+      "cloze": [
+        "flower",
+        "love-in-idleness"
+      ]
     },
     {
       "id": "girdle-round-the-earth",
@@ -476,11 +845,19 @@
       "stage": "act-2",
       "context": "Sent to fetch the flower from wherever it grows.",
       "analysis": "The boast fixes the scale of the wood: the errand crosses the world and takes less time than an act. It also quietly sets the play's clock against the audience's, since forty minutes is roughly how long the fairies are then offstage.",
-      "themes": ["dream"],
+      "themes": [
+        "dream"
+      ],
       "techniques": [],
-      "characters": ["puck", "oberon"],
+      "characters": [
+        "puck",
+        "oberon"
+      ],
       "source": "Globe/Moby text, 2.1.178-179",
-      "cloze": ["girdle", "forty"]
+      "cloze": [
+        "girdle",
+        "forty"
+      ]
     },
     {
       "id": "your-spaniel",
@@ -490,11 +867,21 @@
       "stage": "act-2",
       "context": "Pursuing Demetrius into the wood after he has told her to go away.",
       "analysis": "Four imperatives in a row, all of them asking to be hurt, and the one thing she requests is permission rather than affection. Oberon overhears this, which is why he intervenes — the play's only act of supernatural kindness is provoked by a woman debasing herself in front of a stranger.",
-      "themes": ["love", "power"],
+      "themes": [
+        "love",
+        "power"
+      ],
       "techniques": [],
-      "characters": ["helena", "demetrius", "oberon"],
+      "characters": [
+        "helena",
+        "demetrius",
+        "oberon"
+      ],
       "source": "Globe/Moby text, 2.1.207-211",
-      "cloze": ["spaniel", "fawn"]
+      "cloze": [
+        "spaniel",
+        "fawn"
+      ]
     },
     {
       "id": "cannot-fight-for-love",
@@ -504,11 +891,22 @@
       "stage": "act-2",
       "context": "After Demetrius threatens to do her mischief in the wood.",
       "analysis": "She identifies the rule she is breaking and states the cost of breaking it in one couplet. 'Wood' puns on wooed and on the old word for mad, and also names the place she is standing in — three meanings in a monosyllable, all of them about a woman who has come to the wrong place to do the wrong thing.",
-      "themes": ["love", "law"],
-      "techniques": ["verse-registers"],
-      "characters": ["helena", "demetrius"],
+      "themes": [
+        "love",
+        "law"
+      ],
+      "techniques": [
+        "verse-registers"
+      ],
+      "characters": [
+        "helena",
+        "demetrius"
+      ],
       "source": "Globe/Moby text, 2.1.244-246",
-      "cloze": ["scandal", "woo"]
+      "cloze": [
+        "scandal",
+        "woo"
+      ]
     },
     {
       "id": "reason-and-love",
@@ -518,11 +916,23 @@
       "stage": "act-3",
       "context": "Replying to the fairy queen's declaration of love, while wearing an ass's head.",
       "analysis": "The play's thesis is delivered in prose by the only character who has not been given the drug, and he treats the failure of reason and love as a neighbourly dispute that a bit of mediation might settle. It is also a polite way of telling a queen that she is not making sense.",
-      "themes": ["love", "transformation"],
-      "techniques": ["bathos", "verse-registers"],
-      "characters": ["bottom", "titania"],
+      "themes": [
+        "love",
+        "transformation"
+      ],
+      "techniques": [
+        "bathos",
+        "verse-registers"
+      ],
+      "characters": [
+        "bottom",
+        "titania"
+      ],
       "source": "Globe/Moby text, 3.1.134-138",
-      "cloze": ["reason", "neighbours"]
+      "cloze": [
+        "reason",
+        "neighbours"
+      ]
     },
     {
       "id": "what-fools",
@@ -532,11 +942,22 @@
       "stage": "act-3",
       "context": "Watching the four lovers converge, having caused the confusion himself.",
       "analysis": "The line is usually quoted as detached wisdom; on stage it is an author admiring his own mistake. Puck has just proposed that they stay and watch, which makes the lovers' worst hour into an entertainment with two spectators — the same arrangement the audience is in.",
-      "themes": ["dream", "theatre"],
-      "techniques": ["play-within-a-play"],
-      "characters": ["puck", "oberon"],
+      "themes": [
+        "dream",
+        "theatre"
+      ],
+      "techniques": [
+        "play-within-a-play"
+      ],
+      "characters": [
+        "puck",
+        "oberon"
+      ],
       "source": "Globe/Moby text, 3.2.118",
-      "cloze": ["fools", "mortals"]
+      "cloze": [
+        "fools",
+        "mortals"
+      ]
     },
     {
       "id": "double-cherry",
@@ -546,11 +967,21 @@
       "stage": "act-3",
       "context": "Accusing Hermia of joining the men in mocking her.",
       "analysis": "The most tender description of friendship in the play is made in the course of ending one, and every image in it is of two things that cannot be separated. 'Union in partition' is a paradox held together only by the grammar, which is what the friendship has become by this point in the night.",
-      "themes": ["love"],
-      "techniques": ["catalogue"],
-      "characters": ["helena", "hermia"],
+      "themes": [
+        "love"
+      ],
+      "techniques": [
+        "catalogue"
+      ],
+      "characters": [
+        "helena",
+        "hermia"
+      ],
       "source": "Globe/Moby text, 3.2.212-215",
-      "cloze": ["cherry", "partition"]
+      "cloze": [
+        "cherry",
+        "partition"
+      ]
     },
     {
       "id": "though-she-be-but-little",
@@ -560,11 +991,19 @@
       "stage": "act-3",
       "context": "Hiding behind the men as Hermia loses her temper.",
       "analysis": "The line most often printed on posters is an insult delivered while retreating, and the evidence for it is what Hermia was like at school — the two women have known each other since childhood and are now using that knowledge as ammunition. Hermia's reply picks out the only word that matters to her: 'Little' again.",
-      "themes": ["love"],
+      "themes": [
+        "love"
+      ],
       "techniques": [],
-      "characters": ["helena", "hermia"],
+      "characters": [
+        "helena",
+        "hermia"
+      ],
       "source": "Globe/Moby text, 3.2.337-339",
-      "cloze": ["little", "fierce"]
+      "cloze": [
+        "little",
+        "fierce"
+      ]
     },
     {
       "id": "enamoured-of-an-ass",
@@ -574,11 +1013,22 @@
       "stage": "act-4",
       "context": "Waking after Oberon has taken the changeling boy and released her.",
       "analysis": "She calls it a vision, he says nothing about what he did, and the boy is never mentioned again by either of them. Her next line — that her eyes now loathe his visage — is aimed at a man asleep three feet away, and the comedy depends on the audience finding that funny rather than looking at it too closely.",
-      "themes": ["transformation", "power", "dream"],
+      "themes": [
+        "transformation",
+        "power",
+        "dream"
+      ],
       "techniques": [],
-      "characters": ["titania", "oberon", "bottom"],
+      "characters": [
+        "titania",
+        "oberon",
+        "bottom"
+      ],
       "source": "Globe/Moby text, 4.1.77-78",
-      "cloze": ["visions", "enamour'd"]
+      "cloze": [
+        "visions",
+        "enamour'd"
+      ]
     },
     {
       "id": "bottoms-dream",
@@ -588,11 +1038,21 @@
       "stage": "act-4",
       "context": "Alone on stage, waking after the others have gone.",
       "analysis": "The senses have been shuffled, which is exactly right for someone describing an experience the available vocabulary does not cover; the pattern is a garbled echo of St Paul on what the eye has not seen. The mangling is the meaning — this is the only character who admits that something happened which cannot be tidied into a morning story.",
-      "themes": ["dream", "transformation"],
-      "techniques": ["bathos"],
-      "characters": ["bottom"],
+      "themes": [
+        "dream",
+        "transformation"
+      ],
+      "techniques": [
+        "bathos"
+      ],
+      "characters": [
+        "bottom"
+      ],
       "source": "Globe/Moby text, 4.1.216-220",
-      "cloze": ["eye", "dream"]
+      "cloze": [
+        "eye",
+        "dream"
+      ]
     },
     {
       "id": "lunatic-lover-poet",
@@ -602,11 +1062,20 @@
       "stage": "act-5",
       "context": "Dismissing the lovers' account of the night before the entertainment begins.",
       "analysis": "'All compact' means made entirely of, so the three are not compared but identified. The speech is the rational case against everything the audience has just watched, delivered by a character out of Greek myth in a play with fairies in it, and Hippolyta's reply — that all four tell the same story — is the only answer it gets.",
-      "themes": ["dream", "theatre"],
+      "themes": [
+        "dream",
+        "theatre"
+      ],
       "techniques": [],
-      "characters": ["theseus", "hippolyta"],
+      "characters": [
+        "theseus",
+        "hippolyta"
+      ],
       "source": "Globe/Moby text, 5.1.8-9",
-      "cloze": ["lunatic", "imagination"]
+      "cloze": [
+        "lunatic",
+        "imagination"
+      ]
     },
     {
       "id": "airy-nothing",
@@ -616,11 +1085,19 @@
       "stage": "act-5",
       "context": "The continuation of the same speech.",
       "analysis": "He intends this as evidence that poets are unreliable, and produces the best description of writing in Shakespeare while doing it. 'A local habitation and a name' is what a stage gives a story — an address and a cast list — so the sceptic accidentally states the terms on which the theatre he is standing in operates.",
-      "themes": ["theatre", "dream"],
+      "themes": [
+        "theatre",
+        "dream"
+      ],
       "techniques": [],
-      "characters": ["theseus"],
+      "characters": [
+        "theseus"
+      ],
       "source": "Globe/Moby text, 5.1.15-18",
-      "cloze": ["airy", "habitation"]
+      "cloze": [
+        "airy",
+        "habitation"
+      ]
     },
     {
       "id": "best-in-this-kind",
@@ -630,11 +1107,22 @@
       "stage": "act-5",
       "context": "Answering Hippolyta's complaint that the mechanicals' play is the silliest stuff she ever heard.",
       "analysis": "The defence of bad acting is also a defence of all acting, and it is made by the man who has just explained that imagination is not to be trusted. Hippolyta's answer is the sharper one: then it must be your imagination and not theirs, which puts the work of the theatre squarely on the people watching.",
-      "themes": ["theatre", "dream"],
-      "techniques": ["play-within-a-play"],
-      "characters": ["theseus", "hippolyta"],
+      "themes": [
+        "theatre",
+        "dream"
+      ],
+      "techniques": [
+        "play-within-a-play"
+      ],
+      "characters": [
+        "theseus",
+        "hippolyta"
+      ],
       "source": "Globe/Moby text, 5.1.211-212",
-      "cloze": ["shadows", "imagination"]
+      "cloze": [
+        "shadows",
+        "imagination"
+      ]
     },
     {
       "id": "if-we-shadows",
@@ -644,34 +1132,135 @@
       "stage": "act-5",
       "context": "The epilogue, spoken after the fairies have blessed the house.",
       "analysis": "'Shadows' is Theseus's word for actors four hundred lines earlier, so the epilogue picks up the court's own dismissal and turns it into an apology. The offer is the one the characters have already accepted about themselves — call it a dream — and the rhymed tetrameter is the fairies' metre, which means the excuse is being made by the people who caused the trouble.",
-      "themes": ["dream", "theatre"],
-      "techniques": ["epilogue", "verse-registers"],
-      "characters": ["puck"],
+      "themes": [
+        "dream",
+        "theatre"
+      ],
+      "techniques": [
+        "epilogue",
+        "verse-registers"
+      ],
+      "characters": [
+        "puck"
+      ],
       "source": "Globe/Moby text, 5.1.413-416",
-      "cloze": ["shadows", "slumber'd"]
+      "cloze": [
+        "shadows",
+        "slumber'd"
+      ]
     }
   ],
   "timeline": [
-    { "year": 1595, "label": "The play probably written", "detail": "Usually placed in the mid-1590s on stylistic grounds, close to Romeo and Juliet; no document fixes the year.", "kind": "work" },
-    { "year": 1598, "label": "Francis Meres lists the play in Palladis Tamia", "detail": "The earliest external record that it existed, two years before it was printed.", "kind": "work" },
-    { "year": 1600, "label": "First Quarto, printed for Thomas Fisher", "detail": "The title page says the play had been publicly acted by the Lord Chamberlain's Men. Most modern editions descend from this text.", "kind": "work" },
-    { "year": 1619, "label": "Second Quarto, falsely dated 1600", "detail": "Set from Q1 and belonging to the group of reprints associated with Thomas Pavier.", "kind": "work" },
-    { "year": 1623, "label": "First Folio", "detail": "Printed among the comedies, from the second quarto, with small changes including the substitution of Egeus for Philostrate in the last act.", "kind": "work" },
-    { "year": 1662, "label": "Samuel Pepys sees the play and detests it", "detail": "His diary records one of the bluntest hostile verdicts in the play's reception history.", "kind": "reception" },
-    { "year": 1826, "label": "Mendelssohn composes the overture", "detail": "Written when he was seventeen, and still the music most audiences hear in their heads.", "kind": "reception" },
-    { "year": 1840, "label": "Madame Vestris stages the play at Covent Garden", "detail": "A production that helped establish the Victorian fairy-spectacle tradition.", "kind": "reception" },
-    { "year": 1842, "label": "Mendelssohn's incidental music", "detail": "Added sixteen years after the overture, and the source of the wedding march.", "kind": "reception" },
-    { "year": 1935, "label": "Reinhardt and Dieterle's Hollywood film", "detail": "With James Cagney as Bottom and Mickey Rooney as Puck: the play as a studio fantasy.", "kind": "reception" },
-    { "year": 1960, "label": "Britten's opera premieres at Aldeburgh", "detail": "The libretto begins in the wood rather than in Athens, shifting the balance from law to enchantment.", "kind": "reception" },
-    { "year": 1970, "label": "Peter Brook's white box production for the RSC", "detail": "Sally Jacobs's bare white set, trapezes and circus skills replaced painted foliage and changed how the play could look.", "kind": "reception" }
+    {
+      "year": 1595,
+      "label": "The play probably written",
+      "detail": "Usually placed in the mid-1590s on stylistic grounds, close to Romeo and Juliet; no document fixes the year.",
+      "kind": "work"
+    },
+    {
+      "year": 1598,
+      "label": "Francis Meres lists the play in Palladis Tamia",
+      "detail": "The earliest external record that it existed, two years before it was printed.",
+      "kind": "work"
+    },
+    {
+      "year": 1600,
+      "label": "First Quarto, printed for Thomas Fisher",
+      "detail": "The title page says the play had been publicly acted by the Lord Chamberlain's Men. Most modern editions descend from this text.",
+      "kind": "work"
+    },
+    {
+      "year": 1619,
+      "label": "Second Quarto, falsely dated 1600",
+      "detail": "Set from Q1 and belonging to the group of reprints associated with Thomas Pavier.",
+      "kind": "work"
+    },
+    {
+      "year": 1623,
+      "label": "First Folio",
+      "detail": "Printed among the comedies, from the second quarto, with small changes including the substitution of Egeus for Philostrate in the last act.",
+      "kind": "work"
+    },
+    {
+      "year": 1662,
+      "label": "Samuel Pepys sees the play and detests it",
+      "detail": "His diary records one of the bluntest hostile verdicts in the play's reception history.",
+      "kind": "reception"
+    },
+    {
+      "year": 1826,
+      "label": "Mendelssohn composes the overture",
+      "detail": "Written when he was seventeen, and still the music most audiences hear in their heads.",
+      "kind": "reception"
+    },
+    {
+      "year": 1840,
+      "label": "Madame Vestris stages the play at Covent Garden",
+      "detail": "A production that helped establish the Victorian fairy-spectacle tradition.",
+      "kind": "reception"
+    },
+    {
+      "year": 1842,
+      "label": "Mendelssohn's incidental music",
+      "detail": "Added sixteen years after the overture, and the source of the wedding march.",
+      "kind": "reception"
+    },
+    {
+      "year": 1935,
+      "label": "Reinhardt and Dieterle's Hollywood film",
+      "detail": "With James Cagney as Bottom and Mickey Rooney as Puck: the play as a studio fantasy.",
+      "kind": "reception"
+    },
+    {
+      "year": 1960,
+      "label": "Britten's opera premieres at Aldeburgh",
+      "detail": "The libretto begins in the wood rather than in Athens, shifting the balance from law to enchantment.",
+      "kind": "reception"
+    },
+    {
+      "year": 1970,
+      "label": "Peter Brook's white box production for the RSC",
+      "detail": "Sally Jacobs's bare white set, trapezes and circus skills replaced painted foliage and changed how the play could look.",
+      "kind": "reception"
+    }
   ],
   "places": [
-    { "name": "Athens", "lat": 37.9838, "lon": 23.7275, "note": "Theseus's city, where the law gives a father the right to dispose of his daughter." },
-    { "name": "Sparta", "lat": 37.0811, "lon": 22.4231, "note": "Named by Theseus and Hippolyta when they compare hunting dogs on the morning after." },
-    { "name": "Crete", "lat": 35.2401, "lon": 24.8093, "note": "Where Hippolyta once heard hounds bay a bear, in the same exchange." },
-    { "name": "Thessaly", "lat": 39.639, "lon": 22.4191, "note": "The third of the hunting regions Theseus lists when boasting about his pack." },
-    { "name": "India", "lat": 20.5937, "lon": 78.9629, "note": "The changeling boy's country, and the spiced Indian air where Titania's votaress laughed at the sails." },
-    { "name": "Fleet Street, London", "lat": 51.5142, "lon": -0.1072, "note": "Thomas Fisher's shop at the sign of the White Hart, where the 1600 quarto was sold." }
+    {
+      "name": "Athens",
+      "lat": 37.9838,
+      "lon": 23.7275,
+      "note": "Theseus's city, where the law gives a father the right to dispose of his daughter."
+    },
+    {
+      "name": "Sparta",
+      "lat": 37.0811,
+      "lon": 22.4231,
+      "note": "Named by Theseus and Hippolyta when they compare hunting dogs on the morning after."
+    },
+    {
+      "name": "Crete",
+      "lat": 35.2401,
+      "lon": 24.8093,
+      "note": "Where Hippolyta once heard hounds bay a bear, in the same exchange."
+    },
+    {
+      "name": "Thessaly",
+      "lat": 39.639,
+      "lon": 22.4191,
+      "note": "The third of the hunting regions Theseus lists when boasting about his pack."
+    },
+    {
+      "name": "India",
+      "lat": 20.5937,
+      "lon": 78.9629,
+      "note": "The changeling boy's country, and the spiced Indian air where Titania's votaress laughed at the sails."
+    },
+    {
+      "name": "Fleet Street, London",
+      "lat": 51.5142,
+      "lon": -0.1072,
+      "note": "Thomas Fisher's shop at the sign of the White Hart, where the 1600 quarto was sold."
+    }
   ],
   "criticalViews": [
     {
@@ -744,11 +1333,26 @@
     "Theseus says imagination cannot be trusted, in a play with fairies in it. Who wins that argument?"
   ],
   "related": [
-    { "href": "/books/romeo-and-juliet/", "why": "Written at about the same time, with the same plot of parental prohibition and mistaken death — played straight instead of as farce." },
-    { "href": "/books/the-tempest/", "why": "The other play of spirits, spells and interrupted entertainments, with the magic put to the business of government." },
-    { "href": "/books/as-you-like-it/", "why": "The other comedy in which leaving the city for a wood rearranges everybody's affections." },
-    { "href": "/books/twelfth-night/", "why": "Desire misdirected without any magic at all, which makes a useful control on this play's flower." },
-    { "href": "/books/a-midsummer-nights-dream-expanded-scholarly-edition/", "why": "The expanded Astor edition, with fuller textual, critical and performance material." }
+    {
+      "href": "/books/romeo-and-juliet/",
+      "why": "Written at about the same time, with the same plot of parental prohibition and mistaken death — played straight instead of as farce."
+    },
+    {
+      "href": "/books/the-tempest/",
+      "why": "The other play of spirits, spells and interrupted entertainments, with the magic put to the business of government."
+    },
+    {
+      "href": "/books/as-you-like-it/",
+      "why": "The other comedy in which leaving the city for a wood rearranges everybody's affections."
+    },
+    {
+      "href": "/books/twelfth-night/",
+      "why": "Desire misdirected without any magic at all, which makes a useful control on this play's flower."
+    },
+    {
+      "href": "/books/a-midsummer-nights-dream-expanded-scholarly-edition/",
+      "why": "The expanded Astor edition, with fuller textual, critical and performance material."
+    }
   ],
   "videos": []
 }

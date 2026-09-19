@@ -258,7 +258,7 @@ function setUpReadingPlan(root, book, live) {
     mount.append(form);
   }
 
-  function drawPlan({ planSummary, readableDay, toIcs }) {
+  function drawPlan({ planSummary, readableDay, toIcs, replan }) {
     const summary = planSummary(plan);
     mount.append(el('p', {
       class: 'astor-explorer-count',
@@ -296,6 +296,15 @@ function setUpReadingPlan(root, book, live) {
         class: 'button secondary', type: 'button', text: 'Add to my calendar (.ics)',
         onclick: () => download(book.slug + '-reading-plan.ics', toIcs(plan), 'text/calendar;charset=utf-8')
       }),
+      summary.overdue ? el('button', {
+        class: 'button secondary', type: 'button', text: 'Re-plan from today',
+        onclick: () => load().then(loaded => {
+          plan = replan(plan, loaded);
+          if (isRemembering()) savePlan(plan);
+          draw();
+          announce(live, 'Plan re-spread from today: ' + plan.sittings.filter(sitting => !sitting.done).length + ' sittings to go.');
+        })
+      }) : null,
       el('button', {
         class: 'button secondary', type: 'button', text: 'Start again',
         onclick: () => { plan = null; if (isRemembering()) removePlan(book.slug); draw(); }

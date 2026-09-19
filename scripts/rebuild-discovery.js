@@ -1051,6 +1051,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<a href="/explore/quotations/"><span>Quotation explorer</span><p>Every checked quotation in the catalogue, filterable by theme, technique, character, period and form.</p></a>' +
   '<a href="/explore/timeline/"><span>Literature timeline</span><p>Each book set against its historical moment and against everything else being written at the time.</p></a>' +
   '<a href="/explore/characters/"><span>Character maps</span><p>Relationship diagrams that redraw for each act, so a household can be watched coming apart in order.</p></a>' +
+  '<a href="/explore/themes/"><span>Themes across the library</span><p>Each shared theme set out book by book: what every title makes of it, and the lines that carry it.</p></a>' +
   '<a href="/explore/techniques/"><span>Technique glossary</span><p>Literary terms defined once and then shown at work in particular lines across the library.</p></a>' +
   '<a href="/explore/map/"><span>Map of settings</span><p>Where the books happen, from Inverness and Thornfield to Transylvania and the Pequod’s track.</p></a>' +
   '<a href="/explore/compare/"><span>Compare two texts</span><p>Shared themes and techniques set side by side, with paired quotations for a comparative essay.</p></a>' +
@@ -1175,6 +1176,7 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
     ['/explore/quotations/', 'Quotation explorer', 'Every checked quotation, filterable'],
     ['/explore/timeline/', 'Literature timeline', 'Each book against its historical moment'],
     ['/explore/characters/', 'Character maps', 'Relationship diagrams, act by act'],
+    ['/explore/themes/', 'Themes across the library', 'One idea, handled many ways'],
     ['/explore/techniques/', 'Technique glossary', 'Terms with the evidence attached'],
     ['/explore/map/', 'Map of settings', 'Where the books happen'],
     ['/explore/compare/', 'Compare two texts', 'Shared themes and techniques side by side'],

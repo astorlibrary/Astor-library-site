@@ -19,6 +19,12 @@ const discovery = fs.existsSync(discoveryFile)
   : { books: [] };
 // One structured record per title drives the study toolkit injected below.
 const studyData = new Map(loadBooks().map(book => [book.slug, book]));
+// A record can name other book pages that present the same text; those pages
+// carry the same toolkit, addressed to themselves.
+const studyEditions = new Map();
+for (const book of studyData.values()) {
+  for (const edition of book.editions || []) studyEditions.set(edition, book);
+}
 
 const thumbnailMapFile = path.join(root, 'assets', 'book-thumbnails.json');
 const bookThumbnails = fs.existsSync(thumbnailMapFile)
@@ -1013,7 +1019,7 @@ function addGlobalNavigation(html, source) {
   const myLibraryCurrent = href === '/my-library/';
   const teachersCurrent = href === '/for-teachers/';
   const exploreToolsCurrent = [
-    '/explore/quotations/', '/explore/timeline/', '/explore/characters/',
+    '/explore/quotations/', '/explore/timeline/', '/explore/characters/', '/explore/themes/',
     '/explore/techniques/', '/explore/map/', '/explore/compare/'
   ].some(route => href === route);
   const accountCurrent = href === '/account/' || href.startsWith('/account/');
@@ -1056,10 +1062,11 @@ function addGlobalNavigation(html, source) {
                 <a href="/explore/quotations/"${current(href === '/explore/quotations/')}><em aria-hidden="true">01</em><span><b>Quotation explorer</b><small>Every checked quotation, filterable</small></span></a>
                 <a href="/explore/timeline/"${current(href === '/explore/timeline/')}><em aria-hidden="true">02</em><span><b>Timeline</b><small>The books against their moment</small></span></a>
                 <a href="/explore/characters/"${current(href === '/explore/characters/')}><em aria-hidden="true">03</em><span><b>Character maps</b><small>Relationships, act by act</small></span></a>
-                <a href="/explore/techniques/"${current(href === '/explore/techniques/')}><em aria-hidden="true">04</em><span><b>Technique glossary</b><small>Terms with the evidence attached</small></span></a>
-                <a href="/explore/map/"${current(href === '/explore/map/')}><em aria-hidden="true">05</em><span><b>Map of settings</b><small>Where the books happen</small></span></a>
-                <a href="/explore/compare/"${current(href === '/explore/compare/')}><em aria-hidden="true">06</em><span><b>Compare two texts</b><small>Shared themes, side by side</small></span></a>
-                <a href="/for-teachers/"${current(teachersCurrent)}><em aria-hidden="true">07</em><span><b>For teachers</b><small>Starters, worksheets, projector mode</small></span></a>
+                <a href="/explore/themes/"${current(href === '/explore/themes/')}><em aria-hidden="true">04</em><span><b>Themes</b><small>One idea, handled many ways</small></span></a>
+                <a href="/explore/techniques/"${current(href === '/explore/techniques/')}><em aria-hidden="true">05</em><span><b>Technique glossary</b><small>Terms with the evidence attached</small></span></a>
+                <a href="/explore/map/"${current(href === '/explore/map/')}><em aria-hidden="true">06</em><span><b>Map of settings</b><small>Where the books happen</small></span></a>
+                <a href="/explore/compare/"${current(href === '/explore/compare/')}><em aria-hidden="true">07</em><span><b>Compare two texts</b><small>Shared themes, side by side</small></span></a>
+                <a href="/for-teachers/"${current(teachersCurrent)}><em aria-hidden="true">08</em><span><b>For teachers</b><small>Starters, worksheets, projector mode</small></span></a>
               </div>
             </section>
             <section class="astor-period-directory" aria-labelledby="astor-period-title">
@@ -1094,7 +1101,7 @@ function addGlobalNavigation(html, source) {
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
   <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/hardbacks/">Hardback editions</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
   <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/seasons/">The seasonal library</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
-  <div class="astor-footer-group"><h2>Play &amp; explore</h2><a href="/play/">Revision games</a><a href="/today/">Today</a><a href="/explore/quotations/">Quotation explorer</a><a href="/explore/timeline/">Timeline</a><a href="/explore/characters/">Character maps</a><a href="/explore/techniques/">Technique glossary</a><a href="/explore/map/">Map of settings</a><a href="/explore/compare/">Compare two texts</a><a href="/for-teachers/">For teachers</a><a href="/my-library/">My library</a></div>
+  <div class="astor-footer-group"><h2>Play &amp; explore</h2><a href="/play/">Revision games</a><a href="/today/">Today</a><a href="/explore/quotations/">Quotation explorer</a><a href="/explore/timeline/">Timeline</a><a href="/explore/characters/">Character maps</a><a href="/explore/themes/">Themes</a><a href="/explore/techniques/">Technique glossary</a><a href="/explore/map/">Map of settings</a><a href="/explore/compare/">Compare two texts</a><a href="/for-teachers/">For teachers</a><a href="/my-library/">My library</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact &amp; support</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;
 
@@ -1119,6 +1126,7 @@ function studyToolkitFor(source) {
   const href = pageHref(source);
   const bookMatch = href.match(/^\/books\/([^/]+)\/$/);
   if (bookMatch && studyData.has(bookMatch[1])) return { book: studyData.get(bookMatch[1]), kind: 'book' };
+  if (bookMatch && studyEditions.has(bookMatch[1])) return { book: { ...studyEditions.get(bookMatch[1]), href }, kind: 'book' };
   const studyMatch = href.match(/^\/study\/([^/]+)\/$/);
   if (studyMatch) {
     const direct = studyData.get(studyMatch[1]);

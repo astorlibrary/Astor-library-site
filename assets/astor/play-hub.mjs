@@ -17,7 +17,8 @@ const BOOK_GAMES = [
   ['theme-match', 'Theme match', 'Decide which theme a quotation carries.'],
   ['technique-spotter', 'Technique spotter', 'Name the device doing the work.'],
   ['character-identification', 'Who is this?', 'A character described without being named.'],
-  ['order-the-plot', 'Order the plot', 'Put the acts and scenes back into sequence.']
+  ['order-the-plot', 'Order the plot', 'Put the acts and scenes back into sequence.'],
+  ['mixed-round', 'Mixed round', 'Every kind of question the book supports, in one run.']
 ];
 
 const LIBRARY_GAMES = [
@@ -148,7 +149,7 @@ function renderStats(index) {
   let available = 0;
   for (const [id] of [...BOOK_GAMES, ...LIBRARY_GAMES]) {
     if (LIBRARY_GAMES.some(game => game[0] === id)) available += count(id, index.books);
-    else for (const book of index.books) available += count(id, book);
+    else if (id !== 'mixed-round') for (const book of index.books) available += count(id, book);
   }
 
   const tiles = [

@@ -161,14 +161,34 @@ if (uncatalogued.length) {
 const sorted = [...books.values()].sort((a, b) => a.titleText.localeCompare(b.titleText, 'en', { sensitivity: 'base' }));
 if (!sorted.length) throw new Error('No catalogue books were found');
 
+// Titles with a study record say so on their card, with the reading time and
+// the difficulty the record carries, so a reader choosing what to start can
+// see both before opening the page.
+const { loadBooks } = require('./book-data');
+const { readingTimeLabel, DIFFICULTY_WORDS } = require('./study-toolkit');
+const studyRecords = new Map();
+for (const record of loadBooks()) {
+  studyRecords.set(record.href, record);
+  for (const edition of record.editions || []) studyRecords.set('/books/' + edition + '/', record);
+}
+function studyMeta(book) {
+  const record = studyRecords.get(book.href);
+  if (!record) return '';
+  const parts = ['Study toolkit'];
+  if (record.readingTime) parts.push(readingTimeLabel(record.readingTime));
+  if (record.difficulty && DIFFICULTY_WORDS[record.difficulty]) parts.push(DIFFICULTY_WORDS[record.difficulty]);
+  return '<p class="catalog-meta"><span class="catalog-meta-mark" aria-hidden="true">&#9679;</span>' + parts.map(escapeHtml).join(' &middot; ') + '</p>';
+}
+
 const filterButtons = ['All books', ...collections.map(([, label]) => label)]
   .map((label, index) => `<button type="button" class="catalog-filter${index === 0 ? ' is-active' : ''}" data-filter="${index === 0 ? 'all' : label}" aria-pressed="${index === 0 ? 'true' : 'false'}">${label}</button>`)
-  .join('');
+  .join('') +
+  `<button type="button" class="catalog-filter catalog-filter-toolkit" data-toolkit-filter aria-pressed="false">With a study toolkit (${[...books.values()].filter(book => studyRecords.has(book.href)).length})</button>`;
 
 const cards = sorted.map(book => `
-      <article class="catalog-card" data-collection="${book.collection}" data-search="${escapeHtml([book.titleText, book.authorText, book.collection, ...book.subjects, textOnly(book.descriptionHtml)].join(' '))}">
+      <article class="catalog-card" data-collection="${book.collection}" data-toolkit="${studyRecords.has(book.href) ? 'yes' : 'no'}" data-search="${escapeHtml([book.titleText, book.authorText, book.collection, ...book.subjects, textOnly(book.descriptionHtml)].join(' '))}">
         <a class="catalog-cover" href="${book.href}"><img src="${book.image}" alt="${escapeHtml(book.imageAlt)}" width="155" height="233" loading="lazy"></a>
-        <div class="catalog-card-copy"><p class="catalog-collection">${book.collection}</p><h2><a href="${book.href}">${book.titleHtml}</a></h2><p class="catalog-author">${book.authorHtml}</p><p>${book.descriptionHtml}</p><a class="home-text-link" href="${book.href}">Open book page <span aria-hidden="true">&rarr;</span></a></div>
+        <div class="catalog-card-copy"><p class="catalog-collection">${book.collection}</p><h2><a href="${book.href}">${book.titleHtml}</a></h2><p class="catalog-author">${book.authorHtml}</p>${studyMeta(book)}<p>${book.descriptionHtml}</p><a class="home-text-link" href="${book.href}">Open book page <span aria-hidden="true">&rarr;</span></a></div>
       </article>`).join('');
 
 const html = `<!doctype html>

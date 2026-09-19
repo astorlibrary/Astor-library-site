@@ -1473,10 +1473,10 @@ if (fs.existsSync(searchIndexFile)) {
 // The generated Play, Explore and reader pages.
 const generatedPages = [
   'play', 'play/who-said-it', 'play/fill-the-line', 'play/theme-match',
-  'play/technique-spotter', 'play/character-identification', 'play/order-the-plot',
+  'play/technique-spotter', 'play/character-identification', 'play/order-the-plot', 'play/mixed-round',
   'play/which-book', 'play/context-sprint', 'play/opening-lines',
   'play/flashcards', 'play/essay-forge', 'play/defend-the-reading',
-  'today', 'explore/quotations', 'explore/timeline', 'explore/characters',
+  'today', 'explore/quotations', 'explore/timeline', 'explore/characters', 'explore/themes',
   'explore/techniques', 'explore/map', 'explore/compare', 'my-library', 'for-teachers'
 ];
 for (const page of generatedPages) {

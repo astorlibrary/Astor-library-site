@@ -36,6 +36,7 @@ test('every page a record points at exists', () => {
   for (const book of books) {
     assert.ok(exists(book.href), book.slug + ' points at a missing book page');
     if (book.studyHref) assert.ok(exists(book.studyHref), book.slug + ' points at a missing study page');
+    for (const edition of book.editions || []) assert.ok(exists('/books/' + edition + '/'), book.slug + ' names a missing edition: ' + edition);
     for (const related of book.related || []) {
       assert.ok(exists(related.href), book.slug + ' links to a missing page: ' + related.href);
     }

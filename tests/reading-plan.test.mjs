@@ -94,3 +94,21 @@ test('a plan with a comma in the title is escaped for the calendar', () => {
   const ics = toIcs(plan);
   assert.ok(ics.includes('Macbeth\\, or the Scottish play'));
 });
+
+test('re-planning keeps what is done and spreads the rest from today', async () => {
+  const { replan } = await import('../assets/astor/plan.mjs');
+  const plan = buildPlan(macbeth, { start: '2026-09-21', finish: '2026-10-04', weekdays: [] });
+  plan.sittings[0].done = true;
+  const later = replan(plan, macbeth, { today: '2026-10-01' });
+  assert.equal(later.sittings[0].done, true);
+  const pending = later.sittings.filter(sitting => !sitting.done);
+  assert.ok(pending.every(sitting => sitting.date >= '2026-10-01'), 'a sitting is left in the past');
+  assert.ok(pending.every(sitting => sitting.date <= '2026-10-04'), 'the finishing date moved although it was still ahead');
+  const stages = later.sittings.flatMap(sitting => sitting.stages);
+  assert.deepEqual(stages, macbeth.structure.map(stage => stage.id));
+  const overrun = replan(plan, macbeth, { today: '2026-11-01' });
+  assert.equal(overrun.finish, '2026-11-14');
+  assert.equal(planSummary(overrun, '2026-11-01').overdue, 0);
+  for (const sitting of plan.sittings) sitting.done = true;
+  assert.equal(replan(plan, macbeth, { today: '2026-12-01' }), plan);
+});

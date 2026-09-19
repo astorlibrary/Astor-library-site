@@ -131,6 +131,14 @@ const GAMES = [
     why: 'Sequence is an argument. Knowing that the banquet comes after the ambush and before the apparitions is what lets you write about cause instead of listing incidents.'
   },
   {
+    slug: 'mixed-round',
+    name: 'Mixed round',
+    scope: 'book',
+    blurb: 'Every kind of question the book supports, in one run.',
+    deck: 'Speakers, missing words, themes, techniques, characters and the order of events, mixed together and drawn from one title. Nothing repeats its footing twice in a row.',
+    why: 'Drilling one kind of question teaches the shape of the question as much as the book. A round that changes its kind every time only rewards knowing the text.'
+  },
+  {
     slug: 'which-book',
     name: 'Which book?',
     scope: 'library',
@@ -337,6 +345,22 @@ function buildPages() {
   <div id="astor-character-detail"></div>`,
     fallback: 'The maps need JavaScript. Every character, with their role and their connections, is described on the book page.',
     links: [{ href: '/play/character-identification/', label: 'Who is this?' }, { href: '/library/', label: 'All books' }]
+  }));
+
+  // --- explore: themes ---
+  written.push(page({
+    dir: 'explore/themes',
+    title: 'Themes across the library | Astor Library',
+    description: 'Every theme in the Astor Library study records, with each book\u2019s handling of it set beside the others and the quotations that carry it.',
+    kicker: 'Explore',
+    heading: 'One idea, handled many ways.',
+    deck: 'A theme that several books share is not one thing. Ambition in Macbeth is not ambition in Great Expectations, and the difference is where a comparative essay starts. Each theme here is set out book by book: what the book makes of it, how it develops, and a line that carries it.',
+    breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Themes</span>',
+    module: 'themes.mjs',
+    mount: `  <div class="astor-chooser" id="astor-theme-search"></div>
+  <div id="astor-theme-list"></div>`,
+    fallback: 'The explorer needs JavaScript. Each book page has a \u201cWhat the book keeps returning to\u201d section covering its own themes.',
+    links: [{ href: '/explore/quotations/', label: 'Quotation explorer' }, { href: '/explore/compare/', label: 'Compare two texts' }]
   }));
 
   // --- explore: techniques ---

@@ -125,14 +125,15 @@ function charactersPanel(book) {
 function themesPanel(book) {
   const notes = book.themes.map(theme =>
     '<article class="astor-note" id="astor-theme-' + escapeHtml(theme.id) + '">' +
-    '<h4>' + escapeHtml(theme.name) + '</h4>' +
+    '<h4><a href="/explore/themes/#' + escapeHtml(theme.id) + '">' + escapeHtml(theme.name) + '</a></h4>' +
     '<p>' + escapeHtml(theme.summary) + '</p>' +
     (theme.development ? '<p class="astor-note-aside">' + escapeHtml(theme.development) + '</p>' : '') +
     '</article>'
   ).join('');
   return '<section class="astor-panel" id="astor-themes" data-panel="Themes">' +
     '<h3>What the book keeps returning to</h3>' +
-    '<p class="astor-panel-note">Every quotation below is tagged with the themes it carries, so a theme can be followed through the text rather than asserted.</p>' +
+    '<p class="astor-panel-note">Every quotation below is tagged with the themes it carries, so a theme can be followed through the text rather than asserted. ' +
+    'The <a href="/explore/themes/">themes explorer</a> sets each of these beside the other books that share it.</p>' +
     '<div class="astor-note-grid">' + notes + '</div>' +
     '</section>';
 }
@@ -257,7 +258,8 @@ const GAMES = [
   ['theme-match', 'Theme match', 'Decide which theme a quotation is carrying.'],
   ['technique-spotter', 'Technique spotter', 'Name the device doing the work.'],
   ['character-identification', 'Who is this?', 'Identify a character from a description that never names them.'],
-  ['order-the-plot', 'Order the plot', 'Put the acts, chapters and scenes back into sequence.']
+  ['order-the-plot', 'Order the plot', 'Put the acts, chapters and scenes back into sequence.'],
+  ['mixed-round', 'Mixed round', 'Every kind of question, one book, one run.']
 ];
 
 function revisePanel(book) {

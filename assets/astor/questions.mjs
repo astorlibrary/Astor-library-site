@@ -314,6 +314,19 @@ export function openingLines(books, random = Math.random) {
   })).filter(Boolean);
 }
 
+// --- a mixed round -----------------------------------------------------------
+//
+// A few questions of every kind the book supports, so a revision session
+// changes its footing every question instead of drilling one habit.
+export function mixedRound(book, random = Math.random) {
+  const questions = [];
+  for (const [id, builder] of Object.entries(GAME_BUILDERS)) {
+    if (builder.scope !== 'book' || id === 'mixed-round') continue;
+    questions.push(...sample(builder.build(book, random), 3, random));
+  }
+  return questions;
+}
+
 // --- assembling a round ----------------------------------------------------
 
 export const GAME_BUILDERS = {
@@ -323,6 +336,7 @@ export const GAME_BUILDERS = {
   'theme-match': { scope: 'book', build: themeMatch },
   'technique-spotter': { scope: 'book', build: techniqueSpotter },
   'character-identification': { scope: 'book', build: characterIdentification },
+  'mixed-round': { scope: 'book', build: mixedRound },
   'which-book': { scope: 'library', build: whichBook },
   'context-sprint': { scope: 'library', build: contextSprint },
   'opening-lines': { scope: 'library', build: openingLines }
@@ -334,6 +348,15 @@ export function buildRound(gameId, source, { length = 10, seed = null } = {}) {
   const random = seed === null ? Math.random : seededRandom(seed);
   const questions = builder.build(source, random);
   return shuffle(questions, random).slice(0, length);
+}
+
+// The passage of the day: the same quotation for everybody, chosen by the date.
+export function dailyPassage(index, day) {
+  const quotations = index.books.flatMap(book => book.quotations.map(quotation => ({
+    ...quotation, bookSlug: book.slug, bookTitle: book.title, bookHref: book.href, author: book.author
+  })));
+  if (!quotations.length) return null;
+  return pick(quotations, seededRandom(hashString('astor-strip:' + day)));
 }
 
 // The Daily Five: one question from each of five kinds, chosen by the date so

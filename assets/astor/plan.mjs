@@ -122,6 +122,21 @@ export function buildPlan(book, { start, finish, weekdays } = {}) {
   };
 }
 
+// A reader who has fallen behind keeps what they have ticked and has the rest
+// shared out again from today: to the original finishing date if it is still
+// ahead, otherwise across the next fortnight.
+export function replan(plan, book, { today = todayKey() } = {}) {
+  const done = plan.sittings.filter(sitting => sitting.done);
+  const read = new Set(done.flatMap(sitting => sitting.stages));
+  const remaining = { ...book, structure: (book.structure || []).filter(stage => !read.has(stage.id)) };
+  if (!remaining.structure.length) return plan;
+  const finish = plan.finish > today ? plan.finish : addDays(today, 13);
+  const fresh = buildPlan(remaining, { start: today, finish, weekdays: plan.weekdays })
+    || buildPlan(remaining, { start: today, finish: addDays(today, 13), weekdays: plan.weekdays });
+  if (!fresh) return plan;
+  return { ...plan, finish: fresh.finish, sittings: [...done, ...fresh.sittings] };
+}
+
 export function nextSitting(plan, today = todayKey()) {
   const pending = (plan.sittings || []).filter(sitting => !sitting.done);
   if (!pending.length) return null;

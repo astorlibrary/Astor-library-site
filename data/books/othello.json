@@ -4,6 +4,9 @@
   "author": "William Shakespeare",
   "href": "/books/othello/",
   "studyHref": "/study/othello/",
+  "editions": [
+    "othello-expanded-scholarly-edition"
+  ],
   "buyUrl": "https://mybook.to/ANNU",
   "form": "play",
   "genre": "Tragedy",
@@ -22,10 +25,26 @@
     "note": "The Globe numbering follows a conflated text. The 1622 quarto and the 1623 Folio differ in oaths, stage directions and several substantial passages."
   },
   "atAGlance": [
-    { "label": "First recorded performance", "value": "1 November 1604", "note": "The Revels accounts record a play of the Moor of Venice at Whitehall." },
-    { "label": "First printed", "value": "1622", "note": "A quarto printed by Nicholas Okes for Thomas Walkley, nearly twenty years after the court record." },
-    { "label": "Source", "value": "Cinthio's Hecatommithi", "note": "An Italian prose tale supplies the Moor, the ensign, the wife and the handkerchief; Shakespeare supplies the names and the motives." },
-    { "label": "Shape", "value": "Five acts, fifteen scenes", "note": "One act in Venice, four on an island, and a single scene — 3.3 — in which the whole tragedy is arranged." }
+    {
+      "label": "First recorded performance",
+      "value": "1 November 1604",
+      "note": "The Revels accounts record a play of the Moor of Venice at Whitehall."
+    },
+    {
+      "label": "First printed",
+      "value": "1622",
+      "note": "A quarto printed by Nicholas Okes for Thomas Walkley, nearly twenty years after the court record."
+    },
+    {
+      "label": "Source",
+      "value": "Cinthio's Hecatommithi",
+      "note": "An Italian prose tale supplies the Moor, the ensign, the wife and the handkerchief; Shakespeare supplies the names and the motives."
+    },
+    {
+      "label": "Shape",
+      "value": "Five acts, fifteen scenes",
+      "note": "One act in Venice, four on an island, and a single scene — 3.3 — in which the whole tragedy is arranged."
+    }
   ],
   "structure": [
     {
@@ -34,9 +53,21 @@
       "title": "A marriage is put on public trial",
       "summary": "Iago begins the play complaining about promotion and ends it with a plan, and in between a private marriage becomes a matter of state. Brabantio accuses Othello of witchcraft before the Senate; Othello answers with an account of courtship and Desdemona answers with a statement of divided duty. They win, and the reward is a posting to a war.",
       "scenes": [
-        { "ref": "1.1", "title": "Under the window", "summary": "Iago and Roderigo wake Brabantio with the most racially loaded language in the play." },
-        { "ref": "1.2", "title": "Arrest in the street", "summary": "Othello meets an armed party with a joke about dew and rust, and is summoned by the Duke." },
-        { "ref": "1.3", "title": "The Senate", "summary": "Othello and Desdemona defend the marriage; Cyprus is threatened; Iago tells Roderigo to fill his purse." }
+        {
+          "ref": "1.1",
+          "title": "Under the window",
+          "summary": "Iago and Roderigo wake Brabantio with the most racially loaded language in the play."
+        },
+        {
+          "ref": "1.2",
+          "title": "Arrest in the street",
+          "summary": "Othello meets an armed party with a joke about dew and rust, and is summoned by the Duke."
+        },
+        {
+          "ref": "1.3",
+          "title": "The Senate",
+          "summary": "Othello and Desdemona defend the marriage; Cyprus is threatened; Iago tells Roderigo to fill his purse."
+        }
       ]
     },
     {
@@ -45,9 +76,21 @@
       "title": "The storm removes the war and seals the island",
       "summary": "The Turkish fleet is destroyed by weather before a shot is fired, which strands a garrison with nothing to do. Iago uses the holiday to get Cassio drunk, start a brawl and have him stripped of his lieutenancy — then offers, as a friend, to help him get it back by asking Desdemona.",
       "scenes": [
-        { "ref": "2.1", "title": "Landfall", "summary": "Separate ships arrive through the storm; Iago watches Cassio take Desdemona's hand." },
-        { "ref": "2.2", "title": "The proclamation", "summary": "A herald announces feasting to celebrate a war that never happened." },
-        { "ref": "2.3", "title": "The watch", "summary": "Drink, a stabbing, a cashiered lieutenant, and a piece of advice that starts the plot." }
+        {
+          "ref": "2.1",
+          "title": "Landfall",
+          "summary": "Separate ships arrive through the storm; Iago watches Cassio take Desdemona's hand."
+        },
+        {
+          "ref": "2.2",
+          "title": "The proclamation",
+          "summary": "A herald announces feasting to celebrate a war that never happened."
+        },
+        {
+          "ref": "2.3",
+          "title": "The watch",
+          "summary": "Drink, a stabbing, a cashiered lieutenant, and a piece of advice that starts the plot."
+        }
       ]
     },
     {
@@ -56,10 +99,26 @@
       "title": "One long scene manufactures certainty",
       "summary": "In about five hundred lines Iago moves Othello from 'I do love thee' to a demand for a wife's death, without producing a single fact. The handkerchief drops by accident, is picked up by Emilia and planted; by the end of the act it has stopped being cloth and become a document.",
       "scenes": [
-        { "ref": "3.1", "title": "The musicians", "summary": "Cassio arranges his approach to Desdemona through Emilia." },
-        { "ref": "3.2", "title": "The fortifications", "summary": "Eleven lines of routine business that keep Othello offstage and the audience waiting." },
-        { "ref": "3.3", "title": "The garden", "summary": "Insinuation, repetition, a dropped handkerchief and a demand for ocular proof." },
-        { "ref": "3.4", "title": "The handkerchief", "summary": "Othello asks for it, invents or reports its history, and will not hear about Cassio." }
+        {
+          "ref": "3.1",
+          "title": "The musicians",
+          "summary": "Cassio arranges his approach to Desdemona through Emilia."
+        },
+        {
+          "ref": "3.2",
+          "title": "The fortifications",
+          "summary": "Eleven lines of routine business that keep Othello offstage and the audience waiting."
+        },
+        {
+          "ref": "3.3",
+          "title": "The garden",
+          "summary": "Insinuation, repetition, a dropped handkerchief and a demand for ocular proof."
+        },
+        {
+          "ref": "3.4",
+          "title": "The handkerchief",
+          "summary": "Othello asks for it, invents or reports its history, and will not hear about Cassio."
+        }
       ]
     },
     {
@@ -68,9 +127,21 @@
       "title": "Othello watches the scene Iago directs",
       "summary": "Iago stages a conversation about Bianca and lets Othello overhear it as a conversation about Desdemona. Othello falls into a fit, then strikes his wife in front of a Venetian envoy. The act ends in a bedroom with two women talking honestly about marriage while one of them prepares the bed she will be killed in.",
       "scenes": [
-        { "ref": "4.1", "title": "The overhearing", "summary": "A staged conversation, the handkerchief produced by the wrong woman, and a blow struck in public." },
-        { "ref": "4.2", "title": "The brothel scene", "summary": "Othello interrogates Emilia, then Desdemona, treating his own house as a whorehouse." },
-        { "ref": "4.3", "title": "The Willow Song", "summary": "Desdemona remembers her mother's maid; Emilia sets out the case for wives." }
+        {
+          "ref": "4.1",
+          "title": "The overhearing",
+          "summary": "A staged conversation, the handkerchief produced by the wrong woman, and a blow struck in public."
+        },
+        {
+          "ref": "4.2",
+          "title": "The brothel scene",
+          "summary": "Othello interrogates Emilia, then Desdemona, treating his own house as a whorehouse."
+        },
+        {
+          "ref": "4.3",
+          "title": "The Willow Song",
+          "summary": "Desdemona remembers her mother's maid; Emilia sets out the case for wives."
+        }
       ]
     },
     {
@@ -79,8 +150,16 @@
       "title": "The murder is performed as justice, then exposed",
       "summary": "Roderigo is finally spent and killed; Cassio is wounded in the dark. Othello comes to the bedchamber with a speech about cause and light, and kills his wife as though carrying out a sentence. Emilia takes the whole structure apart in about forty lines, and pays for it.",
       "scenes": [
-        { "ref": "5.1", "title": "The street", "summary": "Iago's last improvisation: two attacks in the dark and a witness silenced." },
-        { "ref": "5.2", "title": "The bedchamber", "summary": "The killing, Emilia's testimony, Iago's silence, and Othello's last account of himself." }
+        {
+          "ref": "5.1",
+          "title": "The street",
+          "summary": "Iago's last improvisation: two attacks in the dark and a witness silenced."
+        },
+        {
+          "ref": "5.2",
+          "title": "The bedchamber",
+          "summary": "The killing, Emilia's testimony, Iago's silence, and Othello's last account of himself."
+        }
       ]
     }
   ],
@@ -92,12 +171,39 @@
       "summary": "Indispensable to the state and never quite of it, he is the most controlled speaker in the play until the middle of Act III and one of the least controlled afterwards. What destroys him is not credulity in general — he defends himself brilliantly against Brabantio — but a standard of proof that he hands over to somebody else.",
       "clue": "He answers a charge of witchcraft with a story about his life, and later demands to be shown something he can see.",
       "firstAppearance": "1.2",
-      "traits": ["commanding", "formal", "catastrophically trusting"],
+      "traits": [
+        "commanding",
+        "formal",
+        "catastrophically trusting"
+      ],
       "relationships": [
-        { "to": "desdemona", "label": "married to", "kind": "marriage" },
-        { "to": "iago", "label": "trusts and is destroyed by", "kind": "service" },
-        { "to": "cassio", "label": "promotes, then cashiers", "kind": "service", "stages": ["act-2", "act-3"] },
-        { "to": "brabantio", "label": "accused by", "kind": "enemy", "stages": ["act-1"] }
+        {
+          "to": "desdemona",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "iago",
+          "label": "trusts and is destroyed by",
+          "kind": "service"
+        },
+        {
+          "to": "cassio",
+          "label": "promotes, then cashiers",
+          "kind": "service",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "brabantio",
+          "label": "accused by",
+          "kind": "enemy",
+          "stages": [
+            "act-1"
+          ]
+        }
       ]
     },
     {
@@ -107,12 +213,42 @@
       "summary": "She marries against her father, argues her own case before the Senate, and then finds that every quality she showed in Act I is used against her: constancy becomes persistence, generosity becomes appetite. Her worst mistake is a piece of ordinary decency — pressing Cassio's suit because she believes he has been wronged.",
       "clue": "She defends her own marriage before the Venetian Senate, and with her last breath says nobody killed her.",
       "firstAppearance": "1.3",
-      "traits": ["direct", "persistent", "generous"],
+      "traits": [
+        "direct",
+        "persistent",
+        "generous"
+      ],
       "relationships": [
-        { "to": "othello", "label": "married to", "kind": "marriage" },
-        { "to": "emilia", "label": "attended and defended by", "kind": "ally", "stages": ["act-4", "act-5"] },
-        { "to": "brabantio", "label": "daughter of", "kind": "family", "stages": ["act-1"] },
-        { "to": "cassio", "label": "advocates for", "kind": "ally", "stages": ["act-3"] }
+        {
+          "to": "othello",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "emilia",
+          "label": "attended and defended by",
+          "kind": "ally",
+          "stages": [
+            "act-4",
+            "act-5"
+          ]
+        },
+        {
+          "to": "brabantio",
+          "label": "daughter of",
+          "kind": "family",
+          "stages": [
+            "act-1"
+          ]
+        },
+        {
+          "to": "cassio",
+          "label": "advocates for",
+          "kind": "ally",
+          "stages": [
+            "act-3"
+          ]
+        }
       ]
     },
     {
@@ -122,12 +258,42 @@
       "summary": "He gives more reasons for what he does than any other Shakespearean villain and none of them holds: the promotion, the rumour about Emilia, the claim that he too loves Desdemona. What is consistent is method. He almost never lies outright; he times, he hesitates, he declines to say things, and lets other people finish his sentences for him.",
       "clue": "He is called honest by nearly everyone in the play, and his last decision is to stop speaking.",
       "firstAppearance": "1.1",
-      "traits": ["improvising", "patient", "unaccountable"],
+      "traits": [
+        "improvising",
+        "patient",
+        "unaccountable"
+      ],
       "relationships": [
-        { "to": "othello", "label": "serves and ruins", "kind": "service" },
-        { "to": "emilia", "label": "married to", "kind": "marriage" },
-        { "to": "roderigo", "label": "milks", "kind": "rival", "stages": ["act-1", "act-2", "act-5"] },
-        { "to": "cassio", "label": "resents and frames", "kind": "rival", "stages": ["act-2", "act-3", "act-4"] }
+        {
+          "to": "othello",
+          "label": "serves and ruins",
+          "kind": "service"
+        },
+        {
+          "to": "emilia",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "roderigo",
+          "label": "milks",
+          "kind": "rival",
+          "stages": [
+            "act-1",
+            "act-2",
+            "act-5"
+          ]
+        },
+        {
+          "to": "cassio",
+          "label": "resents and frames",
+          "kind": "rival",
+          "stages": [
+            "act-2",
+            "act-3",
+            "act-4"
+          ]
+        }
       ]
     },
     {
@@ -137,11 +303,34 @@
       "summary": "She hands her husband the handkerchief without asking why, and spends the last act making up for it. Her long speech in 4.3 is the only sustained argument in the play against the sexual double standard, and it is spoken by a woman who has been married to Iago for years and has clearly learned it from him.",
       "clue": "She picks up a handkerchief to please her husband, and later tells the truth about it knowing what he will do.",
       "firstAppearance": "2.1",
-      "traits": ["worldly", "complicit", "finally immovable"],
+      "traits": [
+        "worldly",
+        "complicit",
+        "finally immovable"
+      ],
       "relationships": [
-        { "to": "iago", "label": "married to", "kind": "marriage" },
-        { "to": "desdemona", "label": "serves and defends", "kind": "ally", "stages": ["act-4", "act-5"] },
-        { "to": "othello", "label": "accuses", "kind": "enemy", "stages": ["act-5"] }
+        {
+          "to": "iago",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "desdemona",
+          "label": "serves and defends",
+          "kind": "ally",
+          "stages": [
+            "act-4",
+            "act-5"
+          ]
+        },
+        {
+          "to": "othello",
+          "label": "accuses",
+          "kind": "enemy",
+          "stages": [
+            "act-5"
+          ]
+        }
       ]
     },
     {
@@ -151,11 +340,39 @@
       "summary": "Promoted over Iago's head and entirely unequipped to survive him. He cannot drink, he is courteous to women in a way that can be made to look like something else, and his idea of a disaster is the loss of a reputation. The play never suggests he has done anything wrong, which is why the plot works.",
       "clue": "One cup of wine costs him his commission, and he then asks the general's wife to get it back.",
       "firstAppearance": "1.2",
-      "traits": ["courteous", "susceptible", "career-minded"],
+      "traits": [
+        "courteous",
+        "susceptible",
+        "career-minded"
+      ],
       "relationships": [
-        { "to": "othello", "label": "lieutenant to", "kind": "service", "stages": ["act-2", "act-3"] },
-        { "to": "iago", "label": "trusts", "kind": "rival", "stages": ["act-2", "act-3"] },
-        { "to": "bianca", "label": "kept company with", "kind": "love", "stages": ["act-3", "act-4"] }
+        {
+          "to": "othello",
+          "label": "lieutenant to",
+          "kind": "service",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "iago",
+          "label": "trusts",
+          "kind": "rival",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "bianca",
+          "label": "kept company with",
+          "kind": "love",
+          "stages": [
+            "act-3",
+            "act-4"
+          ]
+        }
       ]
     },
     {
@@ -165,10 +382,30 @@
       "summary": "Iago's purse and his rehearsal space. Every technique used on Othello is tried first on Roderigo, who is told to sell his land, follow the wars and wait — and does. He is the only character who accuses Iago to his face before Act V, and he is killed in the dark for it.",
       "clue": "Told to put money in his purse, he sells his land, follows an army he has no business with and is stabbed by the man who advised him.",
       "firstAppearance": "1.1",
-      "traits": ["gullible", "persistent", "expendable"],
+      "traits": [
+        "gullible",
+        "persistent",
+        "expendable"
+      ],
       "relationships": [
-        { "to": "iago", "label": "financed and murdered by", "kind": "service", "stages": ["act-1", "act-2", "act-5"] },
-        { "to": "desdemona", "label": "hopelessly in love with", "kind": "love", "stages": ["act-1"] }
+        {
+          "to": "iago",
+          "label": "financed and murdered by",
+          "kind": "service",
+          "stages": [
+            "act-1",
+            "act-2",
+            "act-5"
+          ]
+        },
+        {
+          "to": "desdemona",
+          "label": "hopelessly in love with",
+          "kind": "love",
+          "stages": [
+            "act-1"
+          ]
+        }
       ]
     },
     {
@@ -178,10 +415,28 @@
       "summary": "He has entertained Othello at his house for years and still cannot imagine his daughter choosing him, so he reaches for witchcraft. Defeated in the Senate, he leaves with a warning that Iago will be quoting in effect for the rest of the play: a daughter who deceived her father may deceive a husband.",
       "clue": "He calls a general a thief and a sorcerer in front of the Senate, then hands over a daughter he says has already deceived him.",
       "firstAppearance": "1.1",
-      "traits": ["proud", "wounded", "prophetic by accident"],
+      "traits": [
+        "proud",
+        "wounded",
+        "prophetic by accident"
+      ],
       "relationships": [
-        { "to": "desdemona", "label": "father of", "kind": "family", "stages": ["act-1"] },
-        { "to": "othello", "label": "accuses", "kind": "enemy", "stages": ["act-1"] }
+        {
+          "to": "desdemona",
+          "label": "father of",
+          "kind": "family",
+          "stages": [
+            "act-1"
+          ]
+        },
+        {
+          "to": "othello",
+          "label": "accuses",
+          "kind": "enemy",
+          "stages": [
+            "act-1"
+          ]
+        }
       ]
     },
     {
@@ -191,10 +446,29 @@
       "summary": "She is given the handkerchief to copy, brings it back in a jealous temper, and thereby supplies the visible object Othello has been demanding. The play lets her be openly in love and openly angry, and then uses her reputation to discredit her in front of the men who need a witness.",
       "clue": "Asked to take out the work on a piece of embroidery, she throws it back in the street at exactly the wrong moment.",
       "firstAppearance": "3.4",
-      "traits": ["candid", "jealous", "dismissed"],
+      "traits": [
+        "candid",
+        "jealous",
+        "dismissed"
+      ],
       "relationships": [
-        { "to": "cassio", "label": "in love with", "kind": "love", "stages": ["act-3", "act-4"] },
-        { "to": "iago", "label": "blamed by", "kind": "rival", "stages": ["act-5"] }
+        {
+          "to": "cassio",
+          "label": "in love with",
+          "kind": "love",
+          "stages": [
+            "act-3",
+            "act-4"
+          ]
+        },
+        {
+          "to": "iago",
+          "label": "blamed by",
+          "kind": "rival",
+          "stages": [
+            "act-5"
+          ]
+        }
       ]
     }
   ],
@@ -283,11 +557,24 @@
       "stage": "act-1",
       "context": "Explaining to Roderigo, in the street at night, why he still works for Othello.",
       "analysis": "'Follow' and 'serve' are the vocabulary of loyal service, and he uses both against their meaning in a single line. The plan is announced in the play's first fifty lines, so nothing Iago does later is a surprise to anyone except the people on stage.",
-      "themes": ["honesty", "reputation"],
-      "techniques": ["soliloquy-and-aside", "dramatic-irony"],
-      "characters": ["iago", "othello", "roderigo"],
+      "themes": [
+        "honesty",
+        "reputation"
+      ],
+      "techniques": [
+        "soliloquy-and-aside",
+        "dramatic-irony"
+      ],
+      "characters": [
+        "iago",
+        "othello",
+        "roderigo"
+      ],
       "source": "Globe/Moby text, 1.1.42",
-      "cloze": ["follow", "serve"]
+      "cloze": [
+        "follow",
+        "serve"
+      ]
     },
     {
       "id": "i-am-not-what-i-am",
@@ -297,11 +584,21 @@
       "stage": "act-1",
       "context": "The end of his account of the two kinds of servant.",
       "analysis": "The sentence is a flat contradiction that cannot be unpacked into sense, which is exactly its function: he tells the truth about himself in a form that guarantees nothing follows from it. It also inverts the formula God gives Moses, and the audience is left holding a confession no character has heard.",
-      "themes": ["honesty"],
-      "techniques": ["soliloquy-and-aside"],
-      "characters": ["iago", "roderigo"],
+      "themes": [
+        "honesty"
+      ],
+      "techniques": [
+        "soliloquy-and-aside"
+      ],
+      "characters": [
+        "iago",
+        "roderigo"
+      ],
       "source": "Globe/Moby text, 1.1.65-66",
-      "cloze": ["heart", "am"]
+      "cloze": [
+        "heart",
+        "am"
+      ]
     },
     {
       "id": "old-black-ram",
@@ -311,11 +608,24 @@
       "stage": "act-1",
       "context": "Shouted up at Brabantio's window in the dark, before Othello has appeared.",
       "analysis": "The audience is given the marriage as an image of livestock before it meets either partner, and the colour contrast is doing the work of an argument. Iago is anonymous in the dark here, which lets the play introduce the prejudice as a voice from the street rather than the view of a named character.",
-      "themes": ["race", "marriage"],
-      "techniques": ["animal-imagery"],
-      "characters": ["iago", "brabantio", "othello", "desdemona"],
+      "themes": [
+        "race",
+        "marriage"
+      ],
+      "techniques": [
+        "animal-imagery"
+      ],
+      "characters": [
+        "iago",
+        "brabantio",
+        "othello",
+        "desdemona"
+      ],
       "source": "Globe/Moby text, 1.1.92-93",
-      "cloze": ["black", "white"]
+      "cloze": [
+        "black",
+        "white"
+      ]
     },
     {
       "id": "rude-am-i",
@@ -325,11 +635,20 @@
       "stage": "act-1",
       "context": "Beginning his defence before the Duke and the senators.",
       "analysis": "A claim to be a poor speaker, made in perfectly balanced verse at the opening of the most persuasive speech in the play. The modesty is a rhetorical device with a long pedigree, and its success in this scene is what makes Act III so painful: he can handle a senate but not an insinuation.",
-      "themes": ["race", "reputation"],
+      "themes": [
+        "race",
+        "reputation"
+      ],
       "techniques": [],
-      "characters": ["othello", "brabantio"],
+      "characters": [
+        "othello",
+        "brabantio"
+      ],
       "source": "Globe/Moby text, 1.3.91-92",
-      "cloze": ["Rude", "speech"]
+      "cloze": [
+        "Rude",
+        "speech"
+      ]
     },
     {
       "id": "she-loved-me-for-the-dangers",
@@ -339,11 +658,20 @@
       "stage": "act-1",
       "context": "Ending his account of how the courtship happened, over dinners at her father's house.",
       "analysis": "The couplet balances two lines and two verbs and quietly reveals an asymmetry: she loves a story, he loves being listened to. That is a real marriage and a fragile one, and Iago's whole campaign consists of offering Othello a different story about himself.",
-      "themes": ["marriage", "race"],
+      "themes": [
+        "marriage",
+        "race"
+      ],
       "techniques": [],
-      "characters": ["othello", "desdemona"],
+      "characters": [
+        "othello",
+        "desdemona"
+      ],
       "source": "Globe/Moby text, 1.3.181-182",
-      "cloze": ["dangers", "pity"]
+      "cloze": [
+        "dangers",
+        "pity"
+      ]
     },
     {
       "id": "divided-duty",
@@ -353,11 +681,21 @@
       "stage": "act-1",
       "context": "Asked by her father, in front of the Senate, where she owes most obedience.",
       "analysis": "She answers a question about love with an analysis of obligation, and the structure of the speech — father first, husband second, precedent from her own mother — is legal rather than romantic. It is the most politically skilful thing anyone says in the scene, and she is about twenty.",
-      "themes": ["marriage", "reputation"],
+      "themes": [
+        "marriage",
+        "reputation"
+      ],
       "techniques": [],
-      "characters": ["desdemona", "brabantio", "othello"],
+      "characters": [
+        "desdemona",
+        "brabantio",
+        "othello"
+      ],
       "source": "Globe/Moby text, 1.3.197-198",
-      "cloze": ["divided", "duty"]
+      "cloze": [
+        "divided",
+        "duty"
+      ]
     },
     {
       "id": "look-to-her-moor",
@@ -367,11 +705,24 @@
       "stage": "act-1",
       "context": "His parting shot as the Senate breaks up.",
       "analysis": "A father's last piece of spite, delivered in a rhyming couplet so that it sticks. Iago never has to make this argument himself: it has already been said in public by a senator, and Othello recalls it in the middle of Act III as though it were evidence.",
-      "themes": ["proof", "marriage", "race"],
-      "techniques": ["dramatic-irony"],
-      "characters": ["brabantio", "othello", "desdemona"],
+      "themes": [
+        "proof",
+        "marriage",
+        "race"
+      ],
+      "techniques": [
+        "dramatic-irony"
+      ],
+      "characters": [
+        "brabantio",
+        "othello",
+        "desdemona"
+      ],
       "source": "Globe/Moby text, 1.3.316-317",
-      "cloze": ["deceived", "father"]
+      "cloze": [
+        "deceived",
+        "father"
+      ]
     },
     {
       "id": "free-and-open-nature",
@@ -381,11 +732,23 @@
       "stage": "act-1",
       "context": "Alone at the end of Act I, working out his plan.",
       "analysis": "It is an accurate character reference and a plan of attack in the same sentence: the quality he names is generosity, and he treats it as an exploit. The animal simile arrives at the end of the thought rather than the beginning, so the insult lands after the compliment has been accepted.",
-      "themes": ["honesty", "proof"],
-      "techniques": ["soliloquy-and-aside", "animal-imagery"],
-      "characters": ["iago", "othello"],
+      "themes": [
+        "honesty",
+        "proof"
+      ],
+      "techniques": [
+        "soliloquy-and-aside",
+        "animal-imagery"
+      ],
+      "characters": [
+        "iago",
+        "othello"
+      ],
       "source": "Globe/Moby text, 1.3.420-423",
-      "cloze": ["free", "honest"]
+      "cloze": [
+        "free",
+        "honest"
+      ]
     },
     {
       "id": "reputation-reputation",
@@ -395,11 +758,22 @@
       "stage": "act-2",
       "context": "Drunk and disgraced, moments after the brawl that costs him his lieutenancy.",
       "analysis": "Five uses of the word in three lines, in prose, from a man too drunk to vary his vocabulary — and the content is theologically serious. Iago answers by calling reputation an idle imposition, then tells Othello the opposite in 3.3, which is the clearest evidence that he believes neither.",
-      "themes": ["reputation", "honesty"],
-      "techniques": ["verse-breakdown"],
-      "characters": ["cassio", "iago"],
+      "themes": [
+        "reputation",
+        "honesty"
+      ],
+      "techniques": [
+        "verse-breakdown"
+      ],
+      "characters": [
+        "cassio",
+        "iago"
+      ],
       "source": "Globe/Moby text, 2.3.266-268",
-      "cloze": ["Reputation", "bestial"]
+      "cloze": [
+        "Reputation",
+        "bestial"
+      ]
     },
     {
       "id": "chaos-is-come-again",
@@ -409,11 +783,20 @@
       "stage": "act-3",
       "context": "As Desdemona leaves the garden, seconds before Iago begins.",
       "analysis": "He phrases his love as a condition on which the order of the world depends, and does it minutes before the world is dismantled. The construction is a hostage to fortune and the play collects: within four hundred lines he will love her not, and the noun he chose is the one that arrives.",
-      "themes": ["marriage", "jealousy"],
+      "themes": [
+        "marriage",
+        "jealousy"
+      ],
       "techniques": [],
-      "characters": ["othello", "desdemona"],
+      "characters": [
+        "othello",
+        "desdemona"
+      ],
       "source": "Globe/Moby text, 3.3.100-102",
-      "cloze": ["Perdition", "Chaos"]
+      "cloze": [
+        "Perdition",
+        "Chaos"
+      ]
     },
     {
       "id": "good-name",
@@ -423,11 +806,22 @@
       "stage": "act-3",
       "context": "Refusing, at length, to say what he is thinking.",
       "analysis": "He argues for the sanctity of reputation as a reason not to speak, which makes the withholding look like scruple rather than technique. The same man told Cassio in 2.3 that reputation was an idle imposition; the contradiction is never noticed on stage because each speech is exactly what its hearer needs.",
-      "themes": ["reputation", "honesty"],
-      "techniques": ["dramatic-irony"],
-      "characters": ["iago", "othello"],
+      "themes": [
+        "reputation",
+        "honesty"
+      ],
+      "techniques": [
+        "dramatic-irony"
+      ],
+      "characters": [
+        "iago",
+        "othello"
+      ],
       "source": "Globe/Moby text, 3.3.177-179",
-      "cloze": ["Good", "jewel"]
+      "cloze": [
+        "Good",
+        "jewel"
+      ]
     },
     {
       "id": "green-eyed-monster",
@@ -437,11 +831,22 @@
       "stage": "act-3",
       "context": "Warning Othello against a feeling he has not yet described.",
       "analysis": "A warning that functions as an instruction: the word is placed in Othello's mind under cover of protecting him from it. The image is of something that plays with its food rather than eating it, which is a fair description of what Iago is doing for the rest of the scene.",
-      "themes": ["jealousy"],
-      "techniques": ["animal-imagery", "dramatic-irony"],
-      "characters": ["iago", "othello"],
+      "themes": [
+        "jealousy"
+      ],
+      "techniques": [
+        "animal-imagery",
+        "dramatic-irony"
+      ],
+      "characters": [
+        "iago",
+        "othello"
+      ],
       "source": "Globe/Moby text, 3.3.188-190",
-      "cloze": ["jealousy", "green-eyed"]
+      "cloze": [
+        "jealousy",
+        "green-eyed"
+      ]
     },
     {
       "id": "trifles-light-as-air",
@@ -451,11 +856,22 @@
       "stage": "act-3",
       "context": "Alone, having just taken the handkerchief from Emilia.",
       "analysis": "He states his epistemology out loud and it is correct: once a man is jealous, weight of evidence stops mattering and any object will do. The comparison with scripture is precise — proof that cannot be questioned because questioning it is already the offence.",
-      "themes": ["proof", "jealousy"],
-      "techniques": ["soliloquy-and-aside", "stage-property"],
-      "characters": ["iago"],
+      "themes": [
+        "proof",
+        "jealousy"
+      ],
+      "techniques": [
+        "soliloquy-and-aside",
+        "stage-property"
+      ],
+      "characters": [
+        "iago"
+      ],
       "source": "Globe/Moby text, 3.3.361-363",
-      "cloze": ["Trifles", "proofs"]
+      "cloze": [
+        "Trifles",
+        "proofs"
+      ]
     },
     {
       "id": "farewell-the-tranquil-mind",
@@ -465,11 +881,22 @@
       "stage": "act-3",
       "context": "Rounding on Iago, having accepted that his wife is unfaithful.",
       "analysis": "Told that his marriage is over, he says goodbye to his career. The list is entirely military — troops, banners, drums — because his occupation and his sense of himself are the same thing, and Iago has just removed the domestic foundation the whole structure stood on.",
-      "themes": ["jealousy", "reputation"],
-      "techniques": ["verse-breakdown"],
-      "characters": ["othello", "iago"],
+      "themes": [
+        "jealousy",
+        "reputation"
+      ],
+      "techniques": [
+        "verse-breakdown"
+      ],
+      "characters": [
+        "othello",
+        "iago"
+      ],
       "source": "Globe/Moby text, 3.3.390-392",
-      "cloze": ["Farewell", "tranquil"]
+      "cloze": [
+        "Farewell",
+        "tranquil"
+      ]
     },
     {
       "id": "ocular-proof",
@@ -479,11 +906,23 @@
       "stage": "act-3",
       "context": "Seizing Iago by the throat in the middle of the garden scene.",
       "analysis": "The demand sounds rigorous and is already a defeat: he has accepted the charge and is asking only to be shown it. Note the word order — 'my love a whore' assumes the conclusion inside the request — and note that what he is eventually given to see is a conversation about another woman.",
-      "themes": ["proof", "jealousy"],
-      "techniques": ["stage-property"],
-      "characters": ["othello", "iago", "desdemona"],
+      "themes": [
+        "proof",
+        "jealousy"
+      ],
+      "techniques": [
+        "stage-property"
+      ],
+      "characters": [
+        "othello",
+        "iago",
+        "desdemona"
+      ],
       "source": "Globe/Moby text, 3.3.401-402",
-      "cloze": ["ocular", "proof"]
+      "cloze": [
+        "ocular",
+        "proof"
+      ]
     },
     {
       "id": "pontic-sea",
@@ -493,11 +932,20 @@
       "stage": "act-3",
       "context": "Rejecting Iago's suggestion that he may change his mind.",
       "analysis": "He describes his own resolve as a current that cannot turn, using a geographical fact about the Black Sea to make a psychological claim. The passage appears in the Folio and not in the 1622 quarto, so some early readers met an Othello who never said it.",
-      "themes": ["jealousy", "proof"],
+      "themes": [
+        "jealousy",
+        "proof"
+      ],
       "techniques": [],
-      "characters": ["othello", "iago"],
+      "characters": [
+        "othello",
+        "iago"
+      ],
       "source": "Globe/Moby text, 3.3.504-506",
-      "cloze": ["Pontic", "ebb"]
+      "cloze": [
+        "Pontic",
+        "ebb"
+      ]
     },
     {
       "id": "husbands-faults",
@@ -507,11 +955,20 @@
       "stage": "act-4",
       "context": "Undressing Desdemona for bed, after a conversation about whether any woman would betray her husband.",
       "analysis": "The argument is causal rather than moral: she is not defending adultery but explaining it as a response. Coming at the end of an act in which Desdemona has been struck and called a whore, it is the play's only sustained analysis of marriage from inside one, and it is spoken by the woman who lost the handkerchief.",
-      "themes": ["marriage", "reputation"],
+      "themes": [
+        "marriage",
+        "reputation"
+      ],
       "techniques": [],
-      "characters": ["emilia", "desdemona"],
+      "characters": [
+        "emilia",
+        "desdemona"
+      ],
       "source": "Globe/Moby text, 4.3.93-95",
-      "cloze": ["husbands'", "wives"]
+      "cloze": [
+        "husbands'",
+        "wives"
+      ]
     },
     {
       "id": "it-is-the-cause",
@@ -521,11 +978,20 @@
       "stage": "act-5",
       "context": "Entering the bedchamber with a light, Desdemona asleep.",
       "analysis": "Three statements and no object: he cannot say what the cause is, and the refusal is addressed to the stars rather than to himself. 'Cause' is a legal word, and he uses it to convert a murder into a sentence — the speech is the machinery by which he becomes, in his own account, a judge.",
-      "themes": ["proof", "jealousy"],
+      "themes": [
+        "proof",
+        "jealousy"
+      ],
       "techniques": [],
-      "characters": ["othello", "desdemona"],
+      "characters": [
+        "othello",
+        "desdemona"
+      ],
       "source": "Globe/Moby text, 5.2.2-4",
-      "cloze": ["cause", "chaste"]
+      "cloze": [
+        "cause",
+        "chaste"
+      ]
     },
     {
       "id": "put-out-the-light",
@@ -535,11 +1001,21 @@
       "stage": "act-5",
       "context": "Standing over the bed with a taper in his hand.",
       "analysis": "The same six words twice, meaning a candle and then a life, and the difference between them is the whole of the following seven lines: the lamp can be relit, she cannot. He is working out the metaphor while holding the object, which is why the line can only be understood in performance.",
-      "themes": ["proof", "marriage"],
-      "techniques": ["stage-property"],
-      "characters": ["othello", "desdemona"],
+      "themes": [
+        "proof",
+        "marriage"
+      ],
+      "techniques": [
+        "stage-property"
+      ],
+      "characters": [
+        "othello",
+        "desdemona"
+      ],
       "source": "Globe/Moby text, 5.2.8",
-      "cloze": ["light"]
+      "cloze": [
+        "light"
+      ]
     },
     {
       "id": "nobody-i-myself",
@@ -549,11 +1025,21 @@
       "stage": "act-5",
       "context": "Asked by Emilia who has done this deed.",
       "analysis": "Her last act is to lie to protect the man who has just killed her, and the adjective she chooses for him is 'kind'. Whether this is love, self-abnegation or a final failure of the play to let her speak for herself has been argued for four centuries, and the text supplies no stage direction to settle it.",
-      "themes": ["marriage", "honesty"],
+      "themes": [
+        "marriage",
+        "honesty"
+      ],
       "techniques": [],
-      "characters": ["desdemona", "emilia", "othello"],
+      "characters": [
+        "desdemona",
+        "emilia",
+        "othello"
+      ],
       "source": "Globe/Moby text, 5.2.148-149",
-      "cloze": ["Nobody", "kind"]
+      "cloze": [
+        "Nobody",
+        "kind"
+      ]
     },
     {
       "id": "the-more-angel-she",
@@ -563,11 +1049,21 @@
       "stage": "act-5",
       "context": "Hearing Othello admit that he killed Desdemona, and that she died denying it.",
       "analysis": "She reaches for the colour vocabulary the play has been circling since the first scene, and turns it on Othello at the moment he is least able to answer. It is also the first time anyone in Cyprus contradicts him to his face, and the whole exposure of Iago follows from a servant refusing to be quiet.",
-      "themes": ["race", "honesty"],
+      "themes": [
+        "race",
+        "honesty"
+      ],
       "techniques": [],
-      "characters": ["emilia", "othello", "desdemona"],
+      "characters": [
+        "emilia",
+        "othello",
+        "desdemona"
+      ],
       "source": "Globe/Moby text, 5.2.156-157",
-      "cloze": ["angel", "devil"]
+      "cloze": [
+        "angel",
+        "devil"
+      ]
     },
     {
       "id": "demand-me-nothing",
@@ -577,11 +1073,20 @@
       "stage": "act-5",
       "context": "Asked why he has ensnared Othello's soul and body.",
       "analysis": "The one thing an audience wants at the end of this play is an explanation, and he withholds it deliberately, in a couplet, having talked more than anyone else for five acts. The silence is his last piece of control: no motive can now be checked against the deeds.",
-      "themes": ["honesty", "proof"],
+      "themes": [
+        "honesty",
+        "proof"
+      ],
       "techniques": [],
-      "characters": ["iago", "othello"],
+      "characters": [
+        "iago",
+        "othello"
+      ],
       "source": "Globe/Moby text, 5.2.349-350",
-      "cloze": ["Demand", "speak"]
+      "cloze": [
+        "Demand",
+        "speak"
+      ]
     },
     {
       "id": "loved-not-wisely",
@@ -591,33 +1096,126 @@
       "stage": "act-5",
       "context": "His last speech, before the concealed dagger.",
       "analysis": "He commissions his own obituary and then dictates it, which is not quite the same as accepting judgement. The phrase 'loved not wisely but too well' is a considerable piece of editing by a man who smothered his wife on the word of an ensign, and the play lets him have it without endorsing it.",
-      "themes": ["reputation", "race"],
+      "themes": [
+        "reputation",
+        "race"
+      ],
       "techniques": [],
-      "characters": ["othello"],
+      "characters": [
+        "othello"
+      ],
       "source": "Globe/Moby text, 5.2.393-395",
-      "cloze": ["extenuate", "wisely"]
+      "cloze": [
+        "extenuate",
+        "wisely"
+      ]
     }
   ],
   "timeline": [
-    { "year": 1565, "label": "Cinthio's Hecatommithi published", "detail": "The Italian story collection containing the tale of the Moor, the ensign and the handkerchief.", "kind": "context" },
-    { "year": 1571, "label": "Venice loses Cyprus to the Ottomans", "detail": "The island Shakespeare's garrison defends had been Ottoman for a generation by the time the play was written.", "kind": "context" },
-    { "year": 1603, "label": "Knolles's General History of the Turks", "detail": "Evidence of how current Ottoman affairs were in London when the play was taking shape.", "kind": "context" },
-    { "year": 1604, "label": "First recorded performance at Whitehall", "detail": "The Revels accounts place the Moor of Venice at court on 1 November.", "kind": "work" },
-    { "year": 1606, "label": "Parliament restrains profanity on the stage", "detail": "Often connected with the Folio text's removal of oaths that the quarto prints.", "kind": "context" },
-    { "year": 1622, "label": "The First Quarto printed", "detail": "Printed by Nicholas Okes for Thomas Walkley; its title page records performance at the Globe and Blackfriars.", "kind": "work" },
-    { "year": 1623, "label": "The First Folio text", "detail": "Around 160 lines longer than the quarto, including the Willow Song and the Pontic sea speech.", "kind": "work" },
-    { "year": 1660, "label": "Desdemona and the first professional actress", "detail": "Restoration records associate the part with the first appearance of a woman on the English public stage.", "kind": "reception" },
-    { "year": 1881, "label": "Henry Irving plays Iago to Edwin Booth's Othello", "detail": "A London season that fixed the two parts as a pair of star roles for a generation.", "kind": "reception" },
-    { "year": 1952, "label": "Orson Welles's film", "detail": "Shot over several years and edited into a fragmented, architectural version of the tragedy.", "kind": "reception" },
-    { "year": 1995, "label": "Oliver Parker's film", "detail": "Laurence Fishburne as Othello and Kenneth Branagh as Iago, with Iago speaking directly to camera.", "kind": "reception" },
-    { "year": 2015, "label": "Iqbal Khan's RSC production", "detail": "Hugh Quarshie as Othello and Lucian Msamati as the first Black actor to play Iago at the RSC.", "kind": "reception" }
+    {
+      "year": 1565,
+      "label": "Cinthio's Hecatommithi published",
+      "detail": "The Italian story collection containing the tale of the Moor, the ensign and the handkerchief.",
+      "kind": "context"
+    },
+    {
+      "year": 1571,
+      "label": "Venice loses Cyprus to the Ottomans",
+      "detail": "The island Shakespeare's garrison defends had been Ottoman for a generation by the time the play was written.",
+      "kind": "context"
+    },
+    {
+      "year": 1603,
+      "label": "Knolles's General History of the Turks",
+      "detail": "Evidence of how current Ottoman affairs were in London when the play was taking shape.",
+      "kind": "context"
+    },
+    {
+      "year": 1604,
+      "label": "First recorded performance at Whitehall",
+      "detail": "The Revels accounts place the Moor of Venice at court on 1 November.",
+      "kind": "work"
+    },
+    {
+      "year": 1606,
+      "label": "Parliament restrains profanity on the stage",
+      "detail": "Often connected with the Folio text's removal of oaths that the quarto prints.",
+      "kind": "context"
+    },
+    {
+      "year": 1622,
+      "label": "The First Quarto printed",
+      "detail": "Printed by Nicholas Okes for Thomas Walkley; its title page records performance at the Globe and Blackfriars.",
+      "kind": "work"
+    },
+    {
+      "year": 1623,
+      "label": "The First Folio text",
+      "detail": "Around 160 lines longer than the quarto, including the Willow Song and the Pontic sea speech.",
+      "kind": "work"
+    },
+    {
+      "year": 1660,
+      "label": "Desdemona and the first professional actress",
+      "detail": "Restoration records associate the part with the first appearance of a woman on the English public stage.",
+      "kind": "reception"
+    },
+    {
+      "year": 1881,
+      "label": "Henry Irving plays Iago to Edwin Booth's Othello",
+      "detail": "A London season that fixed the two parts as a pair of star roles for a generation.",
+      "kind": "reception"
+    },
+    {
+      "year": 1952,
+      "label": "Orson Welles's film",
+      "detail": "Shot over several years and edited into a fragmented, architectural version of the tragedy.",
+      "kind": "reception"
+    },
+    {
+      "year": 1995,
+      "label": "Oliver Parker's film",
+      "detail": "Laurence Fishburne as Othello and Kenneth Branagh as Iago, with Iago speaking directly to camera.",
+      "kind": "reception"
+    },
+    {
+      "year": 2015,
+      "label": "Iqbal Khan's RSC production",
+      "detail": "Hugh Quarshie as Othello and Lucian Msamati as the first Black actor to play Iago at the RSC.",
+      "kind": "reception"
+    }
   ],
   "places": [
-    { "name": "Venice", "lat": 45.4408, "lon": 12.3155, "note": "The republic that needs Othello's generalship and cannot quite accept his marriage." },
-    { "name": "Famagusta, Cyprus", "lat": 35.125, "lon": 33.9417, "note": "The Venetian stronghold on the island; the walled port a garrison would have held against the Ottoman fleet." },
-    { "name": "Rhodes", "lat": 36.4349, "lon": 28.2176, "note": "The feint in the Senate scene — the Turkish fleet steers for it in order to be somewhere else." },
-    { "name": "Aleppo", "lat": 36.2021, "lon": 37.1343, "note": "The city Othello names in his last speech, in the story about the turbaned Turk." },
-    { "name": "Whitehall Palace, London", "lat": 51.5044, "lon": -0.1264, "note": "Where the earliest recorded performance took place, on 1 November 1604." }
+    {
+      "name": "Venice",
+      "lat": 45.4408,
+      "lon": 12.3155,
+      "note": "The republic that needs Othello's generalship and cannot quite accept his marriage."
+    },
+    {
+      "name": "Famagusta, Cyprus",
+      "lat": 35.125,
+      "lon": 33.9417,
+      "note": "The Venetian stronghold on the island; the walled port a garrison would have held against the Ottoman fleet."
+    },
+    {
+      "name": "Rhodes",
+      "lat": 36.4349,
+      "lon": 28.2176,
+      "note": "The feint in the Senate scene — the Turkish fleet steers for it in order to be somewhere else."
+    },
+    {
+      "name": "Aleppo",
+      "lat": 36.2021,
+      "lon": 37.1343,
+      "note": "The city Othello names in his last speech, in the story about the turbaned Turk."
+    },
+    {
+      "name": "Whitehall Palace, London",
+      "lat": 51.5044,
+      "lon": -0.1264,
+      "note": "Where the earliest recorded performance took place, on 1 November 1604."
+    }
   ],
   "criticalViews": [
     {
@@ -690,11 +1288,26 @@
     "Othello's last speech arranges how he will be remembered. Should we let him?"
   ],
   "related": [
-    { "href": "/books/hamlet/", "why": "The tragedy immediately before it, and the opposite problem: a hero who will not act until the evidence is sound." },
-    { "href": "/books/king-lear/", "why": "Another play in which a credulous man destroys the person who loves him on the strength of a fabrication." },
-    { "href": "/books/macbeth/", "why": "The other tragedy in which a marriage is the engine of the plot, and in which one partner talks the other into it." },
-    { "href": "/books/the-merchant-of-venice/", "why": "The same city, and the same question about who Venice will use and who it will accept." },
-    { "href": "/books/othello-expanded-scholarly-edition/", "why": "The expanded Astor edition, with fuller material on the quarto and Folio texts, criticism and stage history." }
+    {
+      "href": "/books/hamlet/",
+      "why": "The tragedy immediately before it, and the opposite problem: a hero who will not act until the evidence is sound."
+    },
+    {
+      "href": "/books/king-lear/",
+      "why": "Another play in which a credulous man destroys the person who loves him on the strength of a fabrication."
+    },
+    {
+      "href": "/books/macbeth/",
+      "why": "The other tragedy in which a marriage is the engine of the plot, and in which one partner talks the other into it."
+    },
+    {
+      "href": "/books/the-merchant-of-venice/",
+      "why": "The same city, and the same question about who Venice will use and who it will accept."
+    },
+    {
+      "href": "/books/othello-expanded-scholarly-edition/",
+      "why": "The expanded Astor edition, with fuller material on the quarto and Folio texts, criticism and stage history."
+    }
   ],
   "videos": []
 }

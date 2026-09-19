@@ -170,7 +170,7 @@ for (const book of entries) {
     addEntry('Character', character.name, book.href + '#astor-characters', book.title, character.name + ' ' + book.title + ' ' + (character.role || ''));
   }
   for (const theme of book.themes) {
-    addEntry('Theme', theme.name + ' in ' + book.title, '/explore/quotations/?theme=' + theme.id, book.title, theme.name + ' ' + book.title);
+    addEntry('Theme', theme.name + ' in ' + book.title, '/explore/themes/#' + theme.id, book.title, theme.name + ' ' + book.title);
   }
   for (const technique of book.techniques) {
     addEntry('Technique', technique.name, '/explore/techniques/#' + technique.id, technique.definition, technique.name);
@@ -188,6 +188,7 @@ for (const tool of [
   ['Tool', 'Quotation explorer', '/explore/quotations/', 'Filter every quotation by theme, character and technique', 'quotations explorer filter'],
   ['Tool', 'Literature timeline', '/explore/timeline/', 'Every Astor title against its historical moment', 'timeline history dates'],
   ['Tool', 'Character maps', '/explore/characters/', 'Relationship diagrams that change act by act', 'characters relationships map diagram'],
+  ['Tool', 'Themes across the library', '/explore/themes/', 'Each shared theme, book by book', 'themes theme explorer compare'],
   ['Tool', 'Technique glossary', '/explore/techniques/', 'Literary terms with live examples from the texts', 'technique glossary terms devices'],
   ['Tool', 'Map of settings', '/explore/map/', 'Where the books take place', 'map places settings geography'],
   ['Tool', 'Compare two texts', '/explore/compare/', 'Shared themes and techniques, side by side', 'compare comparative essay two texts'],
