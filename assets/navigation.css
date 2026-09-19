@@ -1097,3 +1097,34 @@ body.is-site-menu-open {
 @media print {
   .astor-palette { display: none !important; }
 }
+
+/* Small capitals are a house habit, but eight and nine pixels cannot be read
+   on a phone. Nothing a reader is meant to read goes below eleven there. */
+@media (max-width: 680px) {
+  .site-nav-toggle span,
+  .site-footer h2,
+  .home-kicker, .home-more, .home-support-button, .home-browse-cols h3,
+  .autumn-session span, .autumn-session b, .autumn-shelf small,
+  .book-breadcrumb a, .book-breadcrumb span,
+  .astor-page-credit b, p.year, .related-label,
+  .book-passage-grid a > span, .book-passage-resources > span,
+  .catalog-collection, .catalog-meta-mark, span.tag,
+  .hardback-format, .hardback-author, .hardbacks-page a.button,
+  .season-eyebrow, .season-tile-period,
+  .author-directory-count, .passage-card-form, .passage-source-line,
+  .passage-reading-page sup, .passage-reading-page small,
+  .shakespeare-collection-route > span, .shakespeare-reading-table article > p,
+  .context-image-copy small, .context-image-link span,
+  .passage-hub-principle > span, .passage-hub-nav > span, .passage-hub-nav small,
+  .passage-filter label, .passage-room-head span, .passage-card > small,
+  .passage-reading-hero aside > span, .passage-running-head span,
+  .passage-margin article > span, .passage-question > span,
+  .passage-classroom article > span, .passage-related-head > span,
+  .hardback-card-copy .button-row a.button, .home-text-link > span,
+  .astor-movement-grid article > span, .astor-context-grid article > span,
+  .astor-question-grid article > span,
+  .autumn-dates em, .home-book-list small,
+  .edition-choice-grid a > span > b, .book-passage-grid a > b > span {
+    font-size: 11px !important;
+  }
+}
