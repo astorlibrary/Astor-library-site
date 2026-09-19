@@ -219,8 +219,13 @@ function contextPanel(book) {
     ).join('') + '</div>'
     : '';
   const places = (book.places || []).length
-    ? '<p class="astor-inline-note">The places in this book are plotted on the <a href="/explore/map/?book=' +
-    escapeHtml(book.slug) + '">map of settings</a>.</p>'
+    ? '<h4 class="astor-subhead">Where it happens</h4>' +
+    '<div class="astor-book-map-box" data-astor-book-map="' + escapeHtml(book.slug) + '">' +
+    '<ul class="astor-place-plain">' + book.places.map(place =>
+      '<li><strong>' + escapeHtml(place.name) + '</strong>' + (place.note ? ' — ' + escapeHtml(place.note) : '') + '</li>').join('') + '</ul>' +
+    '</div>' +
+    '<p class="astor-inline-note"><a href="/explore/map/?book=' + escapeHtml(book.slug) +
+    '">Open these places on the map of settings →</a></p>'
     : '';
   if (!timeline && !views) return '';
   return '<section class="astor-panel" id="astor-context" data-panel="Context">' +

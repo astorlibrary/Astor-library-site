@@ -13,11 +13,13 @@
 // it on the map.
 
 import { el, clear, announce, prefersReducedMotion } from './util.mjs';
-import { loadIndex } from './data.mjs';
+import { loadIndex, loadBook } from './data.mjs';
 
 const controls = document.querySelector('#astor-map-controls');
-const mapMount = document.querySelector('#astor-map');
-const listMount = document.querySelector('#astor-map-list');
+// The page has one map. A book page borrows the same drawing for its own
+// places through embedBookMap, which points these at a box of its own.
+let mapMount = document.querySelector('#astor-map');
+let listMount = document.querySelector('#astor-map-list');
 
 const VIEWS = {
   london: { name: 'London and the South-East', west: -1.35, east: 1.5, south: 50.7, north: 52.1 },
@@ -138,6 +140,57 @@ async function start() {
       timer = window.setTimeout(renderMap, 120);
     }).observe(mapMount);
   }
+}
+
+// The coastline files, and the ground each one covers in enough detail.
+const GEOGRAPHY = [
+  ['london', -2.6, 50.2, 2.8, 52.7], ['britain', -18, 47, 9, 62.5], ['europe', -40, 25, 60, 75],
+  ['americas', -175, -60, -20, 84], ['world', -180, -90, 180, 90]
+];
+
+// A view fitted to one book's places, drawn from the most detailed coastline
+// that covers them, so the Odyssey is the Aegean and not a speck on Europe.
+function bookView(book) {
+  const lons = book.places.map(place => place.lon);
+  const lats = book.places.map(place => place.lat);
+  let west = Math.min(...lons), east = Math.max(...lons), south = Math.min(...lats), north = Math.max(...lats);
+  const pad = Math.max(0.5, Math.max(east - west, north - south) * 0.22);
+  west -= pad; east += pad; south -= pad; north += pad;
+  const [geography] = GEOGRAPHY.find(([, w, s2, e, n]) => west >= w && east <= e && south >= s2 && north <= n) || GEOGRAPHY[GEOGRAPHY.length - 1];
+  // Too wide a spread for one fitted frame (the Pacific and the Atlantic in
+  // one book) falls back to the widest named view that holds it.
+  if (east - west > 200) return fittingView(book);
+  VIEWS.book = { name: 'The places in ' + book.title, west, east, south: Math.max(-80, south), north: Math.min(84, north), geography };
+  return 'book';
+}
+
+// Draws one book's places into a box on its own page. The toolkit calls this
+// the first time the Context panel is opened.
+export async function embedBookMap(root, slug) {
+  const book = await loadBook(slug);
+  if (!book || !(book.places || []).length) return null;
+  clear(root);
+  mapMount = el('div', { class: 'astor-book-map' });
+  detailMount = el('div', { class: 'astor-map-detail' });
+  live = el('p', { class: 'astor-game-live', 'aria-live': 'polite', role: 'status' });
+  listMount = null;
+  root.append(el('div', { class: 'astor-graph-wrap' }, [mapMount]), live, detailMount);
+  places = book.places.map((place, position) => ({ ...place, book, id: book.slug + '-' + position }));
+  view = bookView(book);
+  bookFilter = 'all';
+  await renderMap();
+  if ('ResizeObserver' in window) {
+    let lastWidth = mapMount.clientWidth;
+    let timer = 0;
+    new ResizeObserver(() => {
+      const width = mapMount.clientWidth;
+      if (!width || Math.abs(width - lastWidth) < 8) return;
+      lastWidth = width;
+      window.clearTimeout(timer);
+      timer = window.setTimeout(renderMap, 120);
+    }).observe(mapMount);
+  }
+  return { view };
 }
 
 function fittingView(book) {
@@ -268,7 +321,7 @@ async function renderMap() {
   const width = drawnWidth();
   const bounds = frame(view, width);
   const height = bounds.height;
-  const land = await loadGeography(view);
+  const land = await loadGeography(VIEWS[view].geography || view);
   if (turn !== drawing) return;
   clear(mapMount);
   const visible = shown();
@@ -295,7 +348,8 @@ async function renderMap() {
     svg.append(group);
   }
 
-  const step = view === 'london' ? 0.5 : view === 'britain' ? 2 : view === 'europe' ? 5 : 20;
+  const span = bounds.east - bounds.west;
+  const step = span < 5 ? 0.5 : span < 24 ? 2 : span < 70 ? 5 : 20;
   const grid = svgEl('g', { class: 'astor-map-grid' });
   for (let longitude = Math.ceil(bounds.west / step) * step; longitude <= bounds.east; longitude += step) {
     const x = project(longitude, bounds.south, bounds).x;
@@ -313,21 +367,11 @@ async function renderMap() {
   for (const spot of spots) {
     taken.push({ left: spot.x - spot.radius - 2, right: spot.x + spot.radius + 2, top: spot.y - spot.radius - 2, bottom: spot.y + spot.radius + 2 });
   }
-  for (const [text, longitude, latitude, kind] of REFERENCE[view] || []) {
-    const point = project(longitude, latitude, bounds);
-    const size = kind === 'sea' ? fontSize : fontSize - 1;
-    const half = (kind === 'sea' ? letter(text, size) : letter(text, size) * 1.3) / 2;
-    const box = { left: point.x - half, right: point.x + half, top: point.y - size, bottom: point.y + 3 };
-    if (box.left < 4 || box.right > width - 4 || box.top < 4 || box.bottom > height - 4) continue;
-    if (taken.some(other => overlaps(box, other))) continue;
-    taken.push(box);
-    const label = svgEl('text', {
-      class: 'astor-map-reference' + (kind === 'sea' ? ' is-sea' : ''),
-      x: point.x, y: point.y, 'text-anchor': 'middle', 'font-size': size
-    });
-    label.textContent = text;
-    svg.append(label);
-  }
+  // Seas and countries are lettered last, into whatever room the book's own
+  // places leave, but drawn underneath them.
+  const referenceLayer = svgEl('g', { class: 'astor-map-references' });
+  svg.append(referenceLayer);
+
 
   const isChosen = spot => spot.key === selectedSpot || spot.places.some(place => place.id === selected);
   const ordered = [...spots].sort((a, b) => (isChosen(b) - isChosen(a)) || (b.places.length - a.places.length));
@@ -354,6 +398,25 @@ async function renderMap() {
       const box = fits(option);
       if (box) { placed = { option, box }; break; }
     }
+    // "Troy (Hisarlik)" can be "Troy" where the gloss will not fit; the full
+    // name is still in the panel and the list.
+    const shorter = text.replace(/\s*\(.*?\)\s*/g, ' ').replace(/,.*$/, '').trim();
+    if (!placed && shorter && shorter !== text) {
+      const sw = letter(shorter, fontSize) + 4;
+      const again = [
+        { anchor: 'start', x: spot.x + gap, y: spot.y, left: spot.x + gap, top: spot.y - h / 2 },
+        { anchor: 'end', x: spot.x - gap, y: spot.y, left: spot.x - gap - sw, top: spot.y - h / 2 },
+        { anchor: 'middle', x: spot.x, y: spot.y - gap - h / 2 + 2, left: spot.x - sw / 2, top: spot.y - gap - h + 2 },
+        { anchor: 'middle', x: spot.x, y: spot.y + gap + h / 2 - 2, left: spot.x - sw / 2, top: spot.y + gap - 2 }
+      ];
+      for (const option of again) {
+        const box = { left: option.left, right: option.left + sw, top: option.top, bottom: option.top + h };
+        if (box.left < 2 || box.right > width - 2 || box.top < 2 || box.bottom > height - 2) continue;
+        if (taken.some(other => overlaps(box, other))) continue;
+        placed = { option, box, text: shorter };
+        break;
+      }
+    }
     // The chosen place is always named, even where it has to sit on something.
     if (!placed && chosen) {
       const option = options.find(entry => entry.left >= 2 && entry.left + w <= width - 2) || options[0];
@@ -361,9 +424,24 @@ async function renderMap() {
     }
     if (!placed) continue;
     taken.push(placed.box);
-    labels.push({ spot, text, chosen, ...placed.option });
+    labels.push({ spot, text: placed.text || text, chosen, ...placed.option });
   }
 
+  for (const [text, longitude, latitude, kind] of REFERENCE[VIEWS[view].geography || view] || []) {
+    const point = project(longitude, latitude, bounds);
+    const size = kind === 'sea' ? fontSize : fontSize - 1;
+    const half = (kind === 'sea' ? letter(text, size) : letter(text, size) * 1.55) / 2;
+    const box = { left: point.x - half, right: point.x + half, top: point.y - size, bottom: point.y + 3 };
+    if (box.left < 4 || box.right > width - 4 || box.top < 4 || box.bottom > height - 4) continue;
+    if (taken.some(other => overlaps(box, other))) continue;
+    taken.push(box);
+    const label = svgEl('text', {
+      class: 'astor-map-reference' + (kind === 'sea' ? ' is-sea' : ''),
+      x: point.x, y: point.y, 'text-anchor': 'middle', 'font-size': size
+    });
+    label.textContent = text;
+    referenceLayer.append(label);
+  }
   let selectedNode = null;
   for (const spot of spots) {
     const chosen = isChosen(spot);
@@ -470,6 +548,7 @@ function renderDetail(chosen) {
 }
 
 function renderList() {
+  if (!listMount) return;
   clear(listMount);
   const visible = shown();
   const grouped = new Map();
