@@ -24,6 +24,14 @@ function escapeHtml(value) {
     .replace(/'/g, '&#39;');
 }
 
+// Years before the common era are stored as negative integers and shown the
+// way a reader writes them.
+function formatYear(year) {
+  const value = Number(year);
+  if (!Number.isFinite(value)) return String(year);
+  return value < 0 ? Math.abs(value) + ' BC' : String(value);
+}
+
 function readingTimeLabel(minutes) {
   if (!minutes) return '';
   if (minutes < 60) return minutes + ' minutes';
@@ -193,7 +201,7 @@ function techniquesPanel(book) {
 function contextPanel(book) {
   const timeline = (book.timeline || []).length
     ? '<ol class="astor-spine">' + book.timeline.slice().sort((a, b) => a.year - b.year).map(entry =>
-      '<li><span class="astor-stage-label">' + escapeHtml(String(entry.year)) + '</span>' +
+      '<li><span class="astor-stage-label">' + escapeHtml(formatYear(entry.year)) + '</span>' +
       '<div><h4>' + escapeHtml(entry.label) + '</h4>' +
       (entry.detail ? '<p>' + escapeHtml(entry.detail) + '</p>' : '') + '</div><span></span></li>'
     ).join('') + '</ol>'
@@ -357,4 +365,4 @@ function renderToolkit(book, { heading, titleFor } = {}) {
     '</section>';
 }
 
-module.exports = { renderToolkit, escapeHtml, readingTimeLabel, fallbackTitle, DIFFICULTY_WORDS };
+module.exports = { renderToolkit, escapeHtml, readingTimeLabel, formatYear, fallbackTitle, DIFFICULTY_WORDS };

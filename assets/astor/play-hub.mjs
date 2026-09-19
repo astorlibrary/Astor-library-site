@@ -143,12 +143,20 @@ function renderStats(index) {
   const run = streak();
   const played = Object.values(scores()).reduce((total, entry) => total + entry.played, 0);
 
+  // Count the questions rather than estimating them: the builders are cheap to
+  // run and a made-up total would be the one number on the page nobody checked.
+  let available = 0;
+  for (const [id] of [...BOOK_GAMES, ...LIBRARY_GAMES]) {
+    if (LIBRARY_GAMES.some(game => game[0] === id)) available += count(id, index.books);
+    else for (const book of index.books) available += count(id, book);
+  }
+
   const tiles = [
     ['Revision streak', run.live && run.current ? String(run.current) : '0', run.live && run.current
       ? 'day' + (run.current === 1 ? '' : 's') + ' in a row. Longest: ' + run.longest + '.'
       : 'Play a round today to start one.'],
     ['Rounds played', String(played), played ? 'on this device.' : 'Nothing yet — start anywhere below.'],
-    ['Questions available', String(index.counts.quotations * 4 + index.counts.timelineEvents), 'generated from ' + index.counts.quotations + ' checked quotations across ' + index.counts.books + ' titles.'],
+    ['Questions available', available.toLocaleString('en-GB'), 'generated from ' + index.counts.quotations.toLocaleString('en-GB') + ' checked quotations across ' + index.counts.books + ' titles.'],
     ['Titles with games', String(index.counts.books), 'and every one of them adds nine more rounds.']
   ];
 

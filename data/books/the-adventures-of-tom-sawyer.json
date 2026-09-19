@@ -1,0 +1,1133 @@
+{
+  "slug": "the-adventures-of-tom-sawyer",
+  "title": "The Adventures of Tom Sawyer",
+  "author": "Mark Twain",
+  "href": "/books/the-adventures-of-tom-sawyer/",
+  "buyUrl": "https://mybook.to/lvaRkk",
+  "form": "novel",
+  "genre": "Boyhood novel",
+  "period": "American Classics",
+  "written": "Drafted in the early 1870s at Hartford and Quarry Farm",
+  "firstPublished": 1876,
+  "setting": "St Petersburg, a Mississippi river town in Missouri, in the decades before the Civil War",
+  "readingTime": 350,
+  "difficulty": 3,
+  "lengthNote": "Thirty-five chapters, a preface and a conclusion that explains why the book stops",
+  "openingLine": "“Tom!”",
+  "summary": "A boy in a slaveholding river town dodges school, trades a whitewashing job for other boys’ treasures, and then watches a murder in a graveyard at midnight. Twain keeps the two halves in the same book on purpose: the comedy of Sunday-school tickets and dead cats runs straight into a perjured trial, a man left to starve behind a cave door, and twelve thousand dollars that buys a boy into respectability he does not want. The narrator is an adult looking back with affection and no illusions, and the Conclusion admits that the story stops because its hero is about to stop being a boy.",
+  "referenceStyle": "chapter",
+  "sourceText": {
+    "label": "Standard Ebooks text of The Adventures of Tom Sawyer",
+    "note": "The thirty-five chapters are numbered I to XXXV in the text and cited here by Arabic numeral; the Preface and Conclusion are cited by name. Twain’s spelling and dialect forms are retained."
+  },
+  "atAGlance": [
+    {
+      "label": "First published",
+      "value": "9 June 1876, in London",
+      "note": "Chatto & Windus issued the first edition months before the authorised American one."
+    },
+    {
+      "label": "Pirated",
+      "value": "Toronto, 29 July 1876",
+      "note": "Belford Brothers brought out an unauthorised Canadian edition; the American Publishing Company’s followed in December."
+    },
+    {
+      "label": "Source town",
+      "value": "Hannibal, Missouri",
+      "note": "St Petersburg is built from the town Samuel Clemens grew up in, rearranged rather than copied."
+    },
+    {
+      "label": "Shape",
+      "value": "Thirty-five chapters",
+      "note": "Two plots: the summer of games, and the murder that the games keep running into."
+    }
+  ],
+  "structure": [
+    {
+      "id": "chapters-1-7",
+      "label": "Chapters 1–7",
+      "title": "The fence, the Sunday school and Becky Thatcher",
+      "summary": "Tom dodges Aunt Polly, converts a punishment into a profitable enterprise, and exchanges traded tickets for a Bible prize he cannot answer a single question about. Becky Thatcher arrives, is engaged to him inside a day, and discovers she is not the first."
+    },
+    {
+      "id": "chapters-8-11",
+      "label": "Chapters 8–11",
+      "title": "The graveyard, the oath and Muff Potter",
+      "summary": "Tom and Huck take a dead cat to a new grave to cure warts and see a doctor killed, a drunk framed and a knife left in the right hands. They swear a blood oath to keep mum, and for three chapters the comedy is interrupted by a boy who cannot sleep."
+    },
+    {
+      "id": "chapters-12-18",
+      "label": "Chapters 12–18",
+      "title": "Jackson’s Island and the funeral",
+      "summary": "Three boys run away to be pirates, live on bacon and stolen watermelons, and hear their own town firing a cannon over the water to raise their bodies. Tom’s masterpiece is to come back for the funeral, and the congregation sings the doxology over three boys standing in the aisle."
+    },
+    {
+      "id": "chapters-19-24",
+      "label": "Chapters 19–24",
+      "title": "The trial",
+      "summary": "Tom takes Becky’s whipping, sits through an examination evening of borrowed compositions, and finally breaks the oath in open court. Muff Potter is saved, Injun Joe goes through the window, and Tom becomes a hero by day and a terrified child at night."
+    },
+    {
+      "id": "chapters-25-29",
+      "label": "Chapters 25–29",
+      "title": "Treasure, the haunted house and the revenge job",
+      "summary": "A game of digging for buried money turns real when two men count out gold under the floor of a haunted house. Huck follows them, learns that the Widow Douglas is the object of a revenge, and fetches the Welshman and his sons up Cardiff Hill in the middle of the night."
+    },
+    {
+      "id": "chapters-30-33",
+      "label": "Chapters 30–33",
+      "title": "The cave, and the door that was already shut",
+      "summary": "Tom and Becky are lost in McDougal’s cave for three days, and Tom sees a hand holding a candle that belongs to the man he testified against. The cave door is sealed by the town, and when it is opened again Injun Joe is lying dead against it with a broken knife."
+    },
+    {
+      "id": "chapters-34-35",
+      "label": "Chapters 34–35",
+      "title": "Twelve thousand dollars and a hogshead",
+      "summary": "The boys are rich, invested at six per cent, and Huck is taken into the Widow Douglas’s house, where he is washed, combed and made to eat by the clock. He lasts three weeks, and Tom can only get him back by promising that the robber gang has an entry requirement: respectability."
+    }
+  ],
+  "characters": [
+    {
+      "id": "tom",
+      "name": "Tom Sawyer",
+      "role": "A boy in the care of his dead mother’s sister",
+      "summary": "He is a showman first and a hero second, and the book is unusually clear that the two are often the same thing: he returns from the dead for the effect, takes a whipping for Becky in front of an audience, and tells the truth in court only when it can be done at the last possible dramatic moment. His courage is real, and it is always staged.",
+      "clue": "He sells the right to whitewash a fence, collects enough traded tickets to win a Bible he has not read, and comes back from the dead in time to hear his own funeral sermon.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "theatrical",
+        "enterprising",
+        "braver than he expects to be"
+      ],
+      "relationships": [
+        {
+          "to": "aunt-polly",
+          "label": "nephew and torment of",
+          "kind": "family",
+          "stages": [
+            "chapters-1-7",
+            "chapters-12-18"
+          ]
+        },
+        {
+          "to": "huck",
+          "label": "sworn confederate of",
+          "kind": "ally",
+          "stages": [
+            "chapters-8-11",
+            "chapters-25-29",
+            "chapters-34-35"
+          ]
+        },
+        {
+          "to": "becky",
+          "label": "engaged to",
+          "kind": "love",
+          "stages": [
+            "chapters-1-7",
+            "chapters-30-33"
+          ]
+        },
+        {
+          "to": "injun-joe",
+          "label": "witness against",
+          "kind": "enemy",
+          "stages": [
+            "chapters-8-11",
+            "chapters-19-24",
+            "chapters-30-33"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "huck",
+      "name": "Huckleberry Finn",
+      "role": "Son of the town drunkard",
+      "summary": "He sleeps in empty hogsheads, comes and goes as he likes, and is envied by every boy whose mother has forbidden him. Twain gives him the novel’s only sustained resistance to the town’s values, and the last chapter is an argument he loses — for now, and in one book’s time not at all.",
+      "clue": "Cast-off clothes too big for him, a life without school, church, shoes or bedtime, and three weeks of being washed and combed before he runs for a hogshead.",
+      "firstAppearance": "Chapter 6",
+      "traits": [
+        "free",
+        "superstitious",
+        "unpersuaded by comfort"
+      ],
+      "relationships": [
+        {
+          "to": "tom",
+          "label": "partner of",
+          "kind": "ally",
+          "stages": [
+            "chapters-8-11",
+            "chapters-25-29",
+            "chapters-34-35"
+          ]
+        },
+        {
+          "to": "widow-douglas",
+          "label": "saves, and is adopted by",
+          "kind": "family",
+          "stages": [
+            "chapters-25-29",
+            "chapters-34-35"
+          ]
+        },
+        {
+          "to": "injun-joe",
+          "label": "shadows",
+          "kind": "enemy",
+          "stages": [
+            "chapters-25-29"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aunt-polly",
+      "name": "Aunt Polly",
+      "role": "Tom’s guardian, his dead sister’s aunt",
+      "summary": "She believes in duty, the rod and patent medicines, and is defeated in advance by her own affection — the novel’s first long speech is her explaining to herself why she will not punish him. Her grief in the funeral chapters is the strongest feeling in the book and is played, uncomfortably, for comedy.",
+      "clue": "She keeps her spectacles for style rather than service, doses a boy with Pain-killer, and can be disarmed by any joke made at the right moment.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "dutiful",
+        "credulous about remedies",
+        "unable to be severe"
+      ],
+      "relationships": [
+        {
+          "to": "tom",
+          "label": "guardian of",
+          "kind": "family",
+          "stages": [
+            "chapters-1-7",
+            "chapters-12-18"
+          ]
+        },
+        {
+          "to": "sid",
+          "label": "aunt of",
+          "kind": "family",
+          "stages": [
+            "chapters-1-7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "becky",
+      "name": "Becky Thatcher",
+      "role": "The judge’s daughter, newly arrived in St Petersburg",
+      "summary": "She is courted, jilted, insulted and reconciled within a few chapters, and then given the novel’s longest ordeal in the cave, where she is the one who runs out of strength first. Twain grants her a genuine moment of moral weight — the torn schoolbook and Tom’s whipping — and then returns her to the plot as somebody to be rescued.",
+      "clue": "Yellow hair in two long tails, a new face in a small school, and a torn page in the master’s anatomy book that somebody else is thrashed for.",
+      "firstAppearance": "Chapter 3",
+      "traits": [
+        "proud",
+        "quick to quarrel",
+        "honest under pressure"
+      ],
+      "relationships": [
+        {
+          "to": "tom",
+          "label": "engaged to, and lost in the cave with",
+          "kind": "love",
+          "stages": [
+            "chapters-1-7",
+            "chapters-30-33"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "injun-joe",
+      "name": "Injun Joe",
+      "role": "The murderer of Dr Robinson",
+      "summary": "He is the book’s engine of fear and the clearest sign of its limits: a character built almost entirely out of period assumptions about mixed and Native ancestry, given a grudge, a knife and no inner life. His death behind the sealed cave door is the most disturbing scene Twain wrote for children, and the town treats it as a spectacle.",
+      "clue": "He is whipped as a vagrant by a judge and repays it in the doctor’s own graveyard; later he is found dead against a door with a broken bowie-knife and a hollow in the stone under a dripping stalactite.",
+      "firstAppearance": "Chapter 9",
+      "traits": [
+        "vengeful",
+        "patient",
+        "given no interior by the book"
+      ],
+      "relationships": [
+        {
+          "to": "muff-potter",
+          "label": "frames",
+          "kind": "enemy",
+          "stages": [
+            "chapters-8-11",
+            "chapters-19-24"
+          ]
+        },
+        {
+          "to": "tom",
+          "label": "hunted by the testimony of",
+          "kind": "enemy",
+          "stages": [
+            "chapters-19-24",
+            "chapters-30-33"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "muff-potter",
+      "name": "Muff Potter",
+      "role": "The town drunk, tried for murder",
+      "summary": "He is persuaded by the real killer that he did it himself, and thanks the two boys who are letting him hang for the small kindnesses they smuggle through the jail window. His gratitude is what finally breaks Tom’s oath, which makes him the novel’s most effective moral argument.",
+      "clue": "Told he committed a murder he slept through, he believes it, and thanks the boys at the grating for tobacco and matches while they say nothing that would save him.",
+      "firstAppearance": "Chapter 9",
+      "traits": [
+        "harmless",
+        "suggestible",
+        "grateful"
+      ],
+      "relationships": [
+        {
+          "to": "injun-joe",
+          "label": "framed by",
+          "kind": "enemy",
+          "stages": [
+            "chapters-8-11"
+          ]
+        },
+        {
+          "to": "tom",
+          "label": "saved by",
+          "kind": "ally",
+          "stages": [
+            "chapters-19-24"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sid",
+      "name": "Sid",
+      "role": "Tom’s half-brother",
+      "summary": "He is quiet, clean and an informer, and exists to show what the town actually rewards. Twain uses him to keep the reader from mistaking the novel for a morality tale: the model boy is the one nobody, including the narrator, likes.",
+      "clue": "He notices that the thread in a collar has changed colour, and tells.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "observant",
+        "obedient",
+        "disliked"
+      ],
+      "relationships": [
+        {
+          "to": "tom",
+          "label": "half-brother and informer on",
+          "kind": "family",
+          "stages": [
+            "chapters-1-7",
+            "chapters-12-18"
+          ]
+        },
+        {
+          "to": "aunt-polly",
+          "label": "nephew of",
+          "kind": "family",
+          "stages": [
+            "chapters-1-7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "widow-douglas",
+      "name": "The Widow Douglas",
+      "role": "The kindest and richest person in St Petersburg",
+      "summary": "She is marked for mutilation by Injun Joe because her dead husband once had him horsewhipped, and she is saved by a boy who has no reason to care except that she was once kind to him. Her reward for Huck is to civilise him, which the novel presents as both genuine generosity and a kind of confinement.",
+      "clue": "Her house is at the top of the hill, she has ice-cream most days, and she is saved from a knife by a barefoot boy who will not give his name to the men he fetches.",
+      "firstAppearance": "Chapter 5",
+      "traits": [
+        "generous",
+        "respectable",
+        "well meaning about other people’s lives"
+      ],
+      "relationships": [
+        {
+          "to": "huck",
+          "label": "protector and reformer of",
+          "kind": "family",
+          "stages": [
+            "chapters-25-29",
+            "chapters-34-35"
+          ]
+        },
+        {
+          "to": "injun-joe",
+          "label": "intended victim of",
+          "kind": "enemy",
+          "stages": [
+            "chapters-25-29"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "play",
+      "name": "Play, work and the difference between them",
+      "summary": "The whitewashing chapter states a general law — that work is whatever you are obliged to do — and the rest of the novel tests it. Pirating, robbing, digging for treasure and being dead are all games until somebody starts firing a cannon over the river or counting out real gold, at which point the game does not stop; it simply acquires consequences.",
+      "development": "A fence sold in Chapter 2, a pirate camp in Chapter 13, a robber gang still being planned in Chapter 35 — with a murder trial, a manhunt and a cave in between."
+    },
+    {
+      "id": "guilt",
+      "name": "Conscience, and keeping mum",
+      "summary": "Tom’s oath makes silence a point of honour and lets a man go to trial for a murder two children watched. Twain writes conscience as physical symptom — sleeplessness, a week of dread, inquests on dead cats that will not leave him alone — and the confession, when it comes, is extracted by gratitude rather than by principle.",
+      "development": "A blood oath in Chapter 10, a smuggled plug of tobacco through a jail grating in Chapter 11, and a witness box in Chapter 23 where the truth arrives at the last possible moment."
+    },
+    {
+      "id": "reputation",
+      "name": "Respectable St Petersburg",
+      "summary": "The town runs on visible virtue: Sunday-school tickets that can be traded rather than earned, examination compositions copied from the same handful of moral endings, and mothers who forbid their sons to speak to the boy they all envy. Twain does not despise the village, but he never lets the reader confuse its standards with goodness.",
+      "development": "A Bible won by commerce in Chapter 4, a model boy loathed in Chapter 1, and in the last chapter the same standards applied to Huck with a hairbrush and a clock."
+    },
+    {
+      "id": "superstition",
+      "name": "Warts, spunk-water and signs",
+      "summary": "The boys’ world is governed by an elaborate system of charms, oaths and cures that they discuss with the precision of theologians, and the book takes it seriously as a working technology of childhood. It is also what puts them in the graveyard at midnight, so the novel’s central crime enters through a folk remedy for warts.",
+      "development": "Dead cats and bean-burying in Chapter 6, an oath written in blood in Chapter 10, and the marked candles, superstitions and omens that structure the treasure hunt."
+    },
+    {
+      "id": "race",
+      "name": "Who counts in St Petersburg",
+      "summary": "The town is a slaveholding one, and its hierarchy is reported as ordinary fact: enslaved people do the work in the background, and the man the plot needs as its monster is identified almost entirely by his ancestry. A modern reading has to hold two things together — the accuracy of the record and the assumptions of the telling.",
+      "development": "Present from the first chapters as the town’s ordinary furniture, concentrated in the treatment of Injun Joe, and left unexamined by an ending in which the whole village comes to see him buried."
+    },
+    {
+      "id": "boyhood",
+      "name": "Where boyhood stops",
+      "summary": "Twain ends the book with a note explaining that it must stop here, because to go on would be to write the history of a man. The novel is built to that boundary: it can hold murder, perjury and starvation, but not marriage, work or the future, and everything in it is dated by an adult who knows the town is gone.",
+      "development": "Signalled by the Preface’s claim on real events, sustained by a narrator who keeps stepping outside the summer, and stated outright in the Conclusion."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "dialect",
+      "name": "Dialect",
+      "definition": "Regional speech written phonetically.",
+      "inThisBook": "Huck’s speech is spelled as it sounds — ’pears, widder, hain’t — against a narrator with a full literary vocabulary, and the gap between the two is the book’s chief source of both comedy and sympathy."
+    },
+    {
+      "id": "irony",
+      "name": "Narratorial irony",
+      "definition": "A narrator whose tone quietly judges what it reports.",
+      "inThisBook": "The mayor and his wife are introduced ‘among other unnecessaries’, and the whitewashing law of human action is credited to a great and wise philosopher — the writer of this book."
+    },
+    {
+      "id": "satire",
+      "name": "Satire of institutions",
+      "definition": "Comic exposure of the machinery by which a community measures virtue.",
+      "inThisBook": "The Sunday school, the examination evening and the Cadets of Temperance are each given a full set piece, and each is shown rewarding performance rather than the thing performed."
+    },
+    {
+      "id": "mock-heroic",
+      "name": "Mock-heroic",
+      "definition": "Epic apparatus — arms, councils, homecomings — applied to small domestic events.",
+      "inThisBook": "Three boys on a sandbar style themselves the Black Avenger of the Spanish Main, the Terror of the Seas and the Red-Handed, and the Conclusion measures the whole book against the convention that a novel ends with a marriage."
+    },
+    {
+      "id": "set-piece",
+      "name": "The comic set piece",
+      "definition": "A self-contained episode built to a single disaster, complete in one chapter.",
+      "inThisBook": "The fence, the Bible prize, the Pain-killer and the poodle on the pinch-bug each occupy a chapter, and each is constructed so that Tom’s humiliation and Tom’s triumph are the same event."
+    },
+    {
+      "id": "melodrama",
+      "name": "Melodrama inside the idyll",
+      "definition": "Stage-villain plotting — oaths, graveyards, disguises, buried gold — running underneath a realist surface.",
+      "inThisBook": "A midnight murder, a framed innocent, a masked revenge and a treasure under a cross are imported wholesale from popular drama, and are the reason the summer chapters acquire a body count."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "most-of-the-adventures",
+      "text": "Most of the adventures recorded in this book really occurred; one or two were experiences of my own, the rest those of boys who were schoolmates of mine.",
+      "reference": "Preface",
+      "stage": "chapters-1-7",
+      "context": "The opening of Twain’s preface, signed before the story begins.",
+      "analysis": "The claim is made in the flat voice of a deposition, and it is doing two jobs: it licenses the book’s cruelties as reportage and it warns the reader not to look for a moral design. Twain goes on to say that Tom is a composite of three boys and therefore belongs to the composite order of architecture — a joke that quietly admits how much arranging has been done.",
+      "themes": [
+        "boyhood"
+      ],
+      "techniques": [
+        "irony"
+      ],
+      "characters": [
+        "tom",
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Preface",
+      "cloze": [
+        "adventures",
+        "schoolmates"
+      ]
+    },
+    {
+      "id": "not-the-model-boy",
+      "text": "He was not the Model Boy of the village. He knew the model boy very well though⁠—and loathed him.",
+      "reference": "Chapter 1",
+      "stage": "chapters-1-7",
+      "context": "Introducing Tom, after the first chase round the house.",
+      "analysis": "The capital letters make the Model Boy an office rather than a person, and the drop to lower case in the second sentence quietly demotes him. ‘Loathed’ is much stronger than the joke requires, and it sets the book’s position early: the village’s system of rewards is not being satirised from outside but hated from within.",
+      "themes": [
+        "reputation",
+        "boyhood"
+      ],
+      "techniques": [
+        "irony"
+      ],
+      "characters": [
+        "tom",
+        "sid"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "Model",
+        "loathed"
+      ]
+    },
+    {
+      "id": "aunt-polly-conscience",
+      "text": "Every time I let him off, my conscience does hurt me so, and every time I hit him my old heart most breaks.",
+      "speaker": "Aunt Polly",
+      "reference": "Chapter 1",
+      "stage": "chapters-1-7",
+      "context": "Alone in the kitchen, after Tom has escaped over the fence.",
+      "analysis": "Her dilemma is stated as a perfect trap with no third option, and the balanced grammar — every time, every time — is the sound of an argument she has had with herself for years. It tells the reader before Chapter 2 that punishment in this book is a ritual nobody expects to work.",
+      "themes": [
+        "guilt",
+        "reputation"
+      ],
+      "techniques": [
+        "dialect"
+      ],
+      "characters": [
+        "aunt-polly",
+        "tom"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "conscience",
+        "breaks"
+      ]
+    },
+    {
+      "id": "chance-to-whitewash",
+      "text": "“Like it? Well, I don’t see why I oughtn’t to like it. Does a boy get a chance to whitewash a fence every day?”",
+      "speaker": "Tom Sawyer",
+      "reference": "Chapter 2",
+      "stage": "chapters-1-7",
+      "context": "Answering Ben Rogers, who has come to jeer at him for working on a Saturday.",
+      "analysis": "The rhetorical question does all the work: scarcity is invented out of nothing, and Ben is converted in four lines. Tom never claims the job is pleasant — he claims it is rare, which is the distinction the next paragraph turns into a law of human action.",
+      "themes": [
+        "play"
+      ],
+      "techniques": [
+        "set-piece",
+        "dialect"
+      ],
+      "characters": [
+        "tom"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "cloze": [
+        "chance",
+        "whitewash"
+      ]
+    },
+    {
+      "id": "great-law-of-human-action",
+      "text": "He had discovered a great law of human action, without knowing it⁠—namely, that in order to make a man or a boy covet a thing, it is only necessary to make the thing difficult to attain.",
+      "reference": "Chapter 2",
+      "stage": "chapters-1-7",
+      "context": "After the fence has been whitewashed three times over by other boys who paid for the privilege.",
+      "analysis": "The narrator takes a boy’s trick and restates it as economics, and the phrase ‘without knowing it’ opens the distance between the adult telling and the child acting that the whole book runs on. It is also a rare instance of Twain giving the reader the moral of an episode outright, and he immediately undercuts it with a joke about the wise philosopher who wrote the book.",
+      "themes": [
+        "play"
+      ],
+      "techniques": [
+        "irony"
+      ],
+      "characters": [
+        "tom"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "cloze": [
+        "covet",
+        "difficult"
+      ]
+    },
+    {
+      "id": "work-and-play",
+      "text": "Work consists of whatever a body is obliged to do, and that Play consists of whatever a body is not obliged to do.",
+      "reference": "Chapter 2",
+      "stage": "chapters-1-7",
+      "context": "The narrator continuing his commentary on the whitewashing.",
+      "analysis": "Both definitions turn on obligation rather than effort, which is why the book can put pirates, treasure-hunting and a three-day ordeal in a cave on the same side of the line as a game. The examples that follow — treadmills against Mont Blanc — make the point that the difference is in who is making you do it.",
+      "themes": [
+        "play"
+      ],
+      "techniques": [
+        "irony"
+      ],
+      "characters": [
+        "tom"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "cloze": [
+        "Work",
+        "obliged"
+      ]
+    },
+    {
+      "id": "huck-cordially-hated",
+      "text": "Huckleberry was cordially hated and dreaded by all the mothers of the town, because he was idle and lawless and vulgar and bad⁠—and because all their children admired him so, and delighted in his forbidden society, and wished they dared to be like him.",
+      "reference": "Chapter 6",
+      "stage": "chapters-1-7",
+      "context": "Tom meets the juvenile pariah of the village on his way to school.",
+      "analysis": "The sentence gives the official reason and the real one in the same breath, joined by an ‘and’ that pretends they are the same kind of thing. Note the order of the adjectives — idle first, bad last — which is the town’s scale of values rather than a moral one.",
+      "themes": [
+        "reputation",
+        "race"
+      ],
+      "techniques": [
+        "irony"
+      ],
+      "characters": [
+        "huck",
+        "tom"
+      ],
+      "source": "Standard Ebooks text, Chapter 6",
+      "cloze": [
+        "dreaded",
+        "forbidden"
+      ]
+    },
+    {
+      "id": "what-is-dead-cats-good-for",
+      "text": "“Say⁠—what is dead cats good for, Huck?”",
+      "speaker": "Tom Sawyer",
+      "reference": "Chapter 6",
+      "stage": "chapters-1-7",
+      "context": "Tom has just noticed what Huck is swinging by the tail.",
+      "analysis": "The question is asked in the tone of one specialist consulting another, and the discussion that follows — spunk-water, bean-burying, the exact words to say — has the structure of a technical seminar. It is also the hinge of the plot: this conversation is what takes two children into a graveyard at midnight.",
+      "themes": [
+        "superstition",
+        "play"
+      ],
+      "techniques": [
+        "dialect"
+      ],
+      "characters": [
+        "tom",
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 6",
+      "cloze": [
+        "dead",
+        "cats"
+      ]
+    },
+    {
+      "id": "we-got-to-keep-mum",
+      "text": "“Tom, we got to keep mum. You know that. That Injun devil wouldn’t make any more of drownding us than a couple of cats, if we was to squeak ’bout this and they didn’t hang him.",
+      "speaker": "Huckleberry Finn",
+      "reference": "Chapter 10",
+      "stage": "chapters-8-11",
+      "context": "The two boys in the old tannery, an hour after the murder.",
+      "analysis": "Huck’s reasoning is entirely practical and entirely correct, and it is the practical argument, not the oath, that binds them. The simile about cats returns the reader to the dead cat that took them to the graveyard, which is Twain’s habit of letting the comic props reappear as threats.",
+      "themes": [
+        "guilt",
+        "superstition"
+      ],
+      "techniques": [
+        "dialect",
+        "melodrama"
+      ],
+      "characters": [
+        "huck",
+        "tom",
+        "injun-joe"
+      ],
+      "source": "Standard Ebooks text, Chapter 10",
+      "cloze": [
+        "mum",
+        "cats"
+      ]
+    },
+    {
+      "id": "the-oath",
+      "text": "“Huck Finn and Tom Sawyer swears they will keep mum about This and They wish They may Drop down dead in Their Tracks if They ever Tell and Rot.”",
+      "reference": "Chapter 10",
+      "stage": "chapters-8-11",
+      "context": "The oath written on a pine shingle in red keel and signed in blood.",
+      "analysis": "The capital letters are the boys’ idea of what a legal document looks like, copied from nothing they have ever read properly. The document is a game and a binding contract at once — this is the point in the novel where play stops being separable from consequence, and a man goes to trial because two children have signed a shingle.",
+      "themes": [
+        "guilt",
+        "play",
+        "superstition"
+      ],
+      "techniques": [
+        "melodrama",
+        "mock-heroic"
+      ],
+      "characters": [
+        "tom",
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 10",
+      "cloze": [
+        "swears",
+        "Rot"
+      ]
+    },
+    {
+      "id": "gnawing-conscience",
+      "text": "Tom’s fearful secret and gnawing conscience disturbed his sleep for as much as a week after this",
+      "reference": "Chapter 11",
+      "stage": "chapters-8-11",
+      "context": "The days following Muff Potter’s arrest.",
+      "analysis": "‘For as much as a week’ is the sentence’s sting: the narrator measures a child’s remorse against an adult’s and finds it short. Twain neither excuses Tom nor makes him a monster — he simply records the duration, and then lets the guilt come back every time the schoolboys hold another inquest on a dead cat.",
+      "themes": [
+        "guilt",
+        "boyhood"
+      ],
+      "techniques": [
+        "irony"
+      ],
+      "characters": [
+        "tom",
+        "muff-potter"
+      ],
+      "source": "Standard Ebooks text, Chapter 11",
+      "cloze": [
+        "secret",
+        "week"
+      ]
+    },
+    {
+      "id": "sleep-of-the-conscience-free",
+      "text": "The pipe dropped from the fingers of the Red-Handed, and he slept the sleep of the conscience-free and the weary.",
+      "reference": "Chapter 13",
+      "stage": "chapters-12-18",
+      "context": "The first night on Jackson’s Island, in the pirate camp.",
+      "analysis": "The boys’ chosen titles are used straight-faced by the narrator, so that ‘the Red-Handed’ and ‘conscience-free’ sit in the same clause. The joke has an edge: Huck, who has no conscience to trouble him about running away, is the one of the three with a murder on his mind and can still sleep.",
+      "themes": [
+        "play",
+        "guilt"
+      ],
+      "techniques": [
+        "mock-heroic"
+      ],
+      "characters": [
+        "huck",
+        "tom"
+      ],
+      "source": "Standard Ebooks text, Chapter 13",
+      "cloze": [
+        "Red-Handed",
+        "conscience-free"
+      ]
+    },
+    {
+      "id": "three-dead-boys",
+      "text": "the congregation rose and stared while the three dead boys came marching up the aisle",
+      "reference": "Chapter 17",
+      "stage": "chapters-12-18",
+      "context": "In the middle of the funeral sermon preached over Tom, Joe and Huck.",
+      "analysis": "The narration keeps calling them dead after they have walked in, which is exactly how the congregation sees them for the length of a held breath. Tom has engineered the best entrance available to a human being, and the novel notes a few lines later that Huck, who has no family in the church, gets no share of the welcome.",
+      "themes": [
+        "play",
+        "reputation"
+      ],
+      "techniques": [
+        "set-piece",
+        "melodrama"
+      ],
+      "characters": [
+        "tom",
+        "huck",
+        "aunt-polly"
+      ],
+      "source": "Standard Ebooks text, Chapter 17",
+      "cloze": [
+        "dead",
+        "aisle"
+      ]
+    },
+    {
+      "id": "truth-is-always-respectable",
+      "text": "“Speak out, my boy⁠—don’t be diffident. The truth is always respectable. What did you take there?”",
+      "reference": "Chapter 23",
+      "stage": "chapters-19-24",
+      "context": "Counsel for the defence examining Tom in the murder trial.",
+      "analysis": "The lawyer’s maxim collides immediately with the answer — a dead cat — and the court laughs. Twain places the book’s most solemn statement about truth one line before its silliest object, which is his standard method for keeping a moral from hardening into a lesson.",
+      "themes": [
+        "guilt",
+        "reputation"
+      ],
+      "techniques": [
+        "irony",
+        "set-piece"
+      ],
+      "characters": [
+        "tom"
+      ],
+      "source": "Standard Ebooks text, Chapter 23",
+      "cloze": [
+        "truth",
+        "respectable"
+      ]
+    },
+    {
+      "id": "tom-began-hesitatingly",
+      "text": "Tom began⁠—hesitatingly at first, but as he warmed to his subject his words flowed more and more easily; in a little while every sound ceased but his own voice; every eye fixed itself upon him",
+      "reference": "Chapter 23",
+      "stage": "chapters-19-24",
+      "context": "Tom breaking the oath in open court, with Injun Joe sitting in the room.",
+      "analysis": "The act of conscience is described in exactly the vocabulary the book uses for his performances — warming to his subject, every eye on him — so that the bravest thing Tom does is also his best entrance. Twain does not let the reader separate the two, and the chapter ends with the witness terrified for months afterwards.",
+      "themes": [
+        "guilt",
+        "reputation"
+      ],
+      "techniques": [
+        "melodrama"
+      ],
+      "characters": [
+        "tom",
+        "injun-joe",
+        "muff-potter"
+      ],
+      "source": "Standard Ebooks text, Chapter 23",
+      "cloze": [
+        "hesitatingly",
+        "voice"
+      ]
+    },
+    {
+      "id": "would-be-president",
+      "text": "There were some that believed he would be President, yet, if he escaped hanging.",
+      "reference": "Chapter 24",
+      "stage": "chapters-19-24",
+      "context": "St Petersburg’s verdict on Tom after the trial.",
+      "analysis": "The village’s two available futures for a remarkable boy are the highest office in the country and the gallows, and it cannot tell which is coming. The sentence also dates the book precisely: this is a river town’s idea of how far a bright, unmanageable child might go, and the joke was old enough by 1876 to be affectionate.",
+      "themes": [
+        "reputation",
+        "boyhood"
+      ],
+      "techniques": [
+        "irony"
+      ],
+      "characters": [
+        "tom"
+      ],
+      "source": "Standard Ebooks text, Chapter 24",
+      "cloze": [
+        "President",
+        "hanging"
+      ]
+    },
+    {
+      "id": "were-lost",
+      "text": "“Tom, Tom, we’re lost! we’re lost! We never can get out of this awful place! Oh, why did we ever leave the others!”",
+      "speaker": "Becky Thatcher",
+      "reference": "Chapter 31",
+      "stage": "chapters-30-33",
+      "context": "In McDougal’s cave, after the candles have shown them an unfamiliar passage.",
+      "analysis": "Becky is given the plain statement of the situation while Tom is still constructing reassurances, which reverses the usual distribution of realism in the novel. The exclamation marks and the repetition are the only hysteria the book allows anybody, and it is immediately followed by Tom keeping his voice cheerful — a performance, and the thing that gets them out.",
+      "themes": [
+        "boyhood",
+        "play"
+      ],
+      "techniques": [
+        "melodrama"
+      ],
+      "characters": [
+        "becky",
+        "tom"
+      ],
+      "source": "Standard Ebooks text, Chapter 31",
+      "cloze": [
+        "lost",
+        "awful"
+      ]
+    },
+    {
+      "id": "the-broken-knife",
+      "text": "Injun Joe’s bowie-knife lay close by, its blade broken in two. The great foundation-beam of the door had been chipped and hacked through, with tedious labor; useless labor, too, it was, for the native rock formed a sill outside it",
+      "reference": "Chapter 33",
+      "stage": "chapters-30-33",
+      "context": "When the cave door is opened, a fortnight after the town sealed it.",
+      "analysis": "The passage is written as a forensic reconstruction — knife, beam, sill, the hollow worn in stone by dripping water — and the repetition of ‘labor’ makes the dying man’s work sound like the whitewashing chapter turned inside out. Twain then has the town hold a picnic at the cave mouth for the funeral, which is the harshest judgement in the book and is delivered without comment.",
+      "themes": [
+        "race",
+        "guilt"
+      ],
+      "techniques": [
+        "melodrama"
+      ],
+      "characters": [
+        "injun-joe",
+        "tom"
+      ],
+      "source": "Standard Ebooks text, Chapter 33",
+      "cloze": [
+        "knife",
+        "labor"
+      ]
+    },
+    {
+      "id": "it-dont-work",
+      "text": "“Don’t talk about it, Tom. I’ve tried it, and it don’t work; it don’t work, Tom. It ain’t for me; I ain’t used to it.",
+      "speaker": "Huckleberry Finn",
+      "reference": "Chapter 35",
+      "stage": "chapters-34-35",
+      "context": "Found in an empty hogshead after three weeks in the Widow Douglas’s house.",
+      "analysis": "The repetition is not rhetoric but exhaustion, and the complaint that follows is entirely about the body: washing, combing, clothes that let no air through, meals by the clock. Huck makes the only sustained case in the novel against what the town calls kindness, and Tom defeats it with an argument about club membership.",
+      "themes": [
+        "reputation",
+        "boyhood"
+      ],
+      "techniques": [
+        "dialect"
+      ],
+      "characters": [
+        "huck",
+        "tom",
+        "widow-douglas"
+      ],
+      "source": "Standard Ebooks text, Chapter 35",
+      "cloze": [
+        "work",
+        "used"
+      ]
+    },
+    {
+      "id": "so-endeth-this-chronicle",
+      "text": "So endeth this chronicle. It being strictly a history of a boy, it must stop here; the story could not go much further without becoming the history of a man.",
+      "reference": "Conclusion",
+      "stage": "chapters-34-35",
+      "context": "The first sentences of the Conclusion, after the last chapter.",
+      "analysis": "The archaism of ‘So endeth’ borrows the cadence of a lesson read in church, and is then used to explain a purely technical decision about where a book stops. The remark about novels of grown people ending with a marriage also tells you what Twain thinks he has avoided — and Huckleberry Finn, nine years later, is the history of a boy who does not stop.",
+      "themes": [
+        "boyhood"
+      ],
+      "techniques": [
+        "irony",
+        "mock-heroic"
+      ],
+      "characters": [
+        "tom",
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Conclusion",
+      "cloze": [
+        "chronicle",
+        "history"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1835,
+      "label": "Samuel Langhorne Clemens born at Florida, Missouri",
+      "detail": "The family moved to Hannibal on the Mississippi four years later.",
+      "kind": "author"
+    },
+    {
+      "year": 1839,
+      "label": "The Clemens family moves to Hannibal",
+      "detail": "The river town, its cave, its hill and its social order supply nearly everything St Petersburg is made of.",
+      "kind": "author"
+    },
+    {
+      "year": 1861,
+      "label": "The Civil War begins",
+      "detail": "The book, written afterwards, looks back at a Missouri slaveholding town and never says so directly.",
+      "kind": "context"
+    },
+    {
+      "year": 1876,
+      "label": "First edition published in London",
+      "detail": "Chatto & Windus issued the book on 9 June, ahead of any authorised American printing.",
+      "kind": "work"
+    },
+    {
+      "year": 1876,
+      "label": "Pirated in Toronto, and published in the United States",
+      "detail": "Belford Brothers’ unauthorised Canadian edition appeared on 29 July; the American Publishing Company’s illustrated edition followed in December.",
+      "kind": "work"
+    },
+    {
+      "year": 1876,
+      "label": "True W. Williams illustrates the American edition",
+      "detail": "His pictures shaped how the book was sold by subscription, and are discussed rather than reproduced in the Astor edition.",
+      "kind": "work"
+    },
+    {
+      "year": 1884,
+      "label": "Adventures of Huckleberry Finn published in Britain",
+      "detail": "The American edition followed in 1885; the sequel gives the narration to the boy Tom treats as an accessory.",
+      "kind": "author"
+    },
+    {
+      "year": 1894,
+      "label": "Pudd’nhead Wilson published",
+      "detail": "Twain returns to the same river town and puts slavery, identity and the law at the centre rather than the edge.",
+      "kind": "author"
+    },
+    {
+      "year": 1910,
+      "label": "Mark Twain dies at Redding, Connecticut",
+      "detail": "By then Tom Sawyer had long outsold its first, disappointing season.",
+      "kind": "author"
+    },
+    {
+      "year": 1938,
+      "label": "The Technicolor film adaptation",
+      "detail": "Produced by David O. Selznick, it fixed the fence, the cave and the funeral as the story’s three scenes for a mass audience.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Hannibal, Missouri",
+      "lat": 39.7084,
+      "lon": -91.3585,
+      "note": "The river town Clemens grew up in, and the source of St Petersburg’s streets, church, school and social order."
+    },
+    {
+      "name": "Cardiff Hill (Holliday’s Hill)",
+      "lat": 39.7167,
+      "lon": -91.3583,
+      "note": "The hill above the town, Cardiff Hill in the novel, up which Huck follows Injun Joe to the Widow Douglas’s house."
+    },
+    {
+      "name": "Mark Twain Cave, south of Hannibal",
+      "lat": 39.68,
+      "lon": -91.35,
+      "note": "The limestone cave behind McDougal’s cave, where Tom and Becky are lost and Injun Joe is sealed in."
+    },
+    {
+      "name": "Hartford, Connecticut",
+      "lat": 41.7658,
+      "lon": -72.6734,
+      "note": "Twain’s home while he wrote the book, and the base of the American Publishing Company that issued the December 1876 edition."
+    },
+    {
+      "name": "London",
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "note": "Chatto & Windus published the true first edition here in June 1876, before American readers could buy it."
+    },
+    {
+      "name": "Toronto",
+      "lat": 43.6532,
+      "lon": -79.3832,
+      "note": "Belford Brothers’ unauthorised edition of July 1876 reached readers ahead of the authorised American book."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "An idyll with a body in it",
+      "summary": "The most common account of the book treats it as a summer idyll — fence, island, cave — into which a melodrama of murder and buried gold has been imported from popular theatre. The interest then lies in how the two survive in one volume, and in what the games look like once a real knife has appeared.",
+      "counter": "The division is too neat: the oath, the trial and the treasure are all continuations of games the boys were already playing."
+    },
+    {
+      "position": "A record of a slaveholding town",
+      "summary": "Read as social history, the novel documents an antebellum Missouri village in exact detail — its church, school, courtroom and hierarchy — including the enslaved labour that makes the boys’ freedom possible and is reported as ordinary background.",
+      "counter": "Documentation is not examination; the book notices the town’s order without ever putting it on trial, which is the work Twain left to Huckleberry Finn and Pudd’nhead Wilson."
+    },
+    {
+      "position": "The problem of Injun Joe",
+      "summary": "Modern criticism concentrates on a villain constructed from period assumptions about Native and mixed ancestry, given a grievance and no interiority, and finally starved to death behind a door while the town holds a picnic. How a study of childhood handles that character is now part of how it is taught.",
+      "counter": "The novel does record the whipping and the public humiliation that produced his grudge, which is more than the town itself is willing to remember."
+    },
+    {
+      "position": "Tom as performer",
+      "summary": "A reading that runs through the whole book: every act of courage is also a scene, from the funeral entrance to the whipping taken for Becky to the testimony delivered at the last possible moment. The question is whether performance disqualifies the courage or is simply the form it takes in a boy raised on adventure stories.",
+      "counter": "The cave chapters give him three days with no audience at all, and he behaves exactly the same."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "How does Twain hold the comic and criminal halves of the novel together?",
+      "focus": "Structure, tone and consequence",
+      "plan": [
+        "Set out the two plots and where they first intersect: a wart cure that requires a graveyard at midnight.",
+        "Show how comic props return as threats — the dead cat at the trial, the cave as a picnic spot and then a tomb.",
+        "Use the oath in Chapter 10 to argue that play and consequence are never separable in this book.",
+        "Consider the funeral chapter, which is simultaneously the funniest and the cruellest thing in the novel.",
+        "Conclude with the Conclusion, and the boundary Twain says he has to stop at."
+      ]
+    },
+    {
+      "question": "‘Tom’s courage is always a performance.’ Discuss.",
+      "focus": "Character, audience and the trial",
+      "plan": [
+        "Begin with the whitewashing, where Tom’s talent is identified as salesmanship before anything else.",
+        "Read the return from the dead as the purest case: real grief, deliberately produced, for an entrance.",
+        "Analyse the trial in Chapter 23, where the narrator uses performance vocabulary for an act of conscience.",
+        "Test the claim against the cave, where he has no audience but Becky and no advantage to gain.",
+        "Weigh the ending, in which he recruits Huck back to respectability by making a gang membership of it."
+      ]
+    },
+    {
+      "question": "What does the novel show, and what does it decline to examine, about St Petersburg?",
+      "focus": "Community, hierarchy and the limits of the narrator",
+      "plan": [
+        "Gather the institutions Twain satirises directly: the Sunday school, the examination evening, the Cadets of Temperance.",
+        "Show the town’s hierarchy as the book reports it, including the enslaved labour that appears as ordinary furniture.",
+        "Examine the treatment of Injun Joe and of Huck: two outsiders, one demonised and one envied.",
+        "Consider the picnic at the cave mouth after the funeral as the novel’s sharpest unspoken judgement.",
+        "Decide whether the adult narrator’s irony amounts to a critique or only to affection with good eyesight."
+      ]
+    },
+    {
+      "question": "How does Twain use Huckleberry Finn in this book?",
+      "focus": "Freedom, dialect and the ending",
+      "plan": [
+        "Describe how Huck is introduced: through the mothers’ verdict and the children’s envy in the same sentence.",
+        "Contrast his speech with the narrator’s and with Tom’s, and show what the dialect is doing beyond comedy.",
+        "Follow his independent plot — the haunted house, the hill, the Welshman — in which he acts alone and refuses credit.",
+        "Read Chapter 35 as a serious argument about civilisation conducted in a hogshead.",
+        "Conclude by considering what it means that Twain had to write another novel to let Huck answer back."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Two children watch a murder and let an innocent man go to trial. Does the novel hold them responsible?",
+    "Aunt Polly’s grief in the funeral chapters is genuine, and it is played for laughs. Does the book get away with it?",
+    "Huck says that being civilised does not work. Is the last chapter a happy ending for him?",
+    "The town seals the cave and then holds a picnic at its mouth. What is Twain doing by reporting this without comment?",
+    "The Conclusion says the story must stop before its hero becomes a man. What could this novel not have contained?"
+  ],
+  "related": [
+    {
+      "href": "/books/adventures-of-huckleberry-finn/",
+      "why": "The sequel that hands the narration to Huck and turns the same river into a moral problem rather than a playground."
+    },
+    {
+      "href": "/books/puddnhead-wilson/",
+      "why": "Twain returning to the same kind of river town with slavery, identity and the courtroom moved to the centre."
+    },
+    {
+      "href": "/books/a-connecticut-yankee-in-king-arthurs-court/",
+      "why": "The same narrator’s voice turned on chivalry and progress, with the comedy carrying a much darker argument."
+    },
+    {
+      "href": "/books/anne-of-green-gables/",
+      "why": "Another episodic novel about a child in a small community, and a useful contrast in how much harm each book will admit."
+    },
+    {
+      "href": "/books/the-railway-children/",
+      "why": "Childhood as a set of adventures with adult catastrophe kept just offstage, written a generation later and on another continent."
+    }
+  ],
+  "videos": []
+}

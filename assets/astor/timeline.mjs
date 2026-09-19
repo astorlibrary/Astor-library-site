@@ -5,7 +5,7 @@
 // later life. Laid on one scale they answer a question no book page can: what
 // else was being written while this was being written.
 
-import { el, clear, announce } from './util.mjs';
+import { el, clear, announce, formatYear } from './util.mjs';
 import { loadIndex } from './data.mjs';
 
 const KINDS = [
@@ -31,7 +31,10 @@ const SPANS = [
   ['modern', '1900 onwards', 1900, Infinity]
 ];
 
-const state = { kinds: new Set(KINDS.map(kind => kind[0])), period: 'all', book: 'all', span: 'all' };
+// The page opens on the works themselves — when each book was written,
+// performed or printed — because that is the one view every reader wants
+// first. The other three kinds are a click away and the note says so.
+const state = { kinds: new Set(['work']), period: 'all', book: 'all', span: 'all' };
 let events = [];
 let books = [];
 
@@ -62,7 +65,10 @@ async function start() {
   // Open on whichever span holds the most events, so the first view is the
   // one a reader can actually read.
   const busiest = SPANS.filter(span => span[0] !== 'all')
-    .map(span => ({ id: span[0], count: events.filter(event => event.year >= span[2] && event.year < span[3]).length }))
+    .map(span => ({
+      id: span[0],
+      count: events.filter(event => (event.kind || 'context') === 'work' && event.year >= span[2] && event.year < span[3]).length
+    }))
     .sort((a, b) => b.count - a.count)[0];
   if (busiest && busiest.count >= 8) state.span = busiest.id;
 
@@ -99,7 +105,7 @@ function buildControls() {
   const row = el('div', { class: 'astor-tag-row' });
   for (const [kind, label] of KINDS) {
     const button = el('button', {
-      class: 'astor-filter', type: 'button', 'aria-pressed': 'true', text: label,
+      class: 'astor-filter', type: 'button', 'aria-pressed': String(state.kinds.has(kind)), text: label,
       onclick: () => {
         if (state.kinds.has(kind)) state.kinds.delete(kind); else state.kinds.add(kind);
         button.setAttribute('aria-pressed', String(state.kinds.has(kind)));
@@ -139,55 +145,99 @@ function render() {
   const scale = el('div', { class: 'astor-timeline-scale' });
   const steps = 6;
   for (let step = 0; step < steps; step += 1) {
-    scale.append(el('span', { text: String(Math.round(first + (span * step) / steps)) }));
+    scale.append(el('span', { text: formatYear(Math.round(first + (span * step) / steps)) }));
   }
   track.append(scale);
 
-  // Events are stacked into rows so that near-identical years stay readable.
-  const rows = [];
-  const board = el('div', { class: 'astor-timeline-track' });
+  // One marker per year, not one per event. Six books printed in 1850 would
+  // otherwise need six rows to themselves and push everything else off the
+  // screen; grouped, the year is one marker that opens all six.
+  const byYear = new Map();
   for (const event of shown) {
-    const left = ((event.year - first) / span) * 100;
-    let rowIndex = rows.findIndex(lastLeft => left - lastLeft > 9);
-    if (rowIndex < 0) { rows.push(left); rowIndex = rows.length - 1; } else rows[rowIndex] = left;
+    if (!byYear.has(event.year)) byYear.set(event.year, []);
+    byYear.get(event.year).push(event);
+  }
+  const years = [...byYear.entries()].sort((a, b) => a[0] - b[0]);
+
+  // A marker in the left half of the scale runs rightwards from its year and
+  // one in the right half runs leftwards to it, so neither is pushed off the
+  // page. Each joins the first row whose last marker finished before it starts.
+  const boardWidth = track.clientWidth || 1100;
+  const markerWidth = Math.min(210, Math.max(118, Math.round(boardWidth / 3.4)));
+  const widthPercent = (markerWidth / boardWidth) * 100;
+  const padding = (8 / boardWidth) * 100;
+
+  const rowEnds = [];
+  const board = el('div', { class: 'astor-timeline-track' });
+  for (const [year, group] of years) {
+    const at = ((year - first) / span) * 100;
+    const anchorsLeft = at <= 50;
+    const markerStart = anchorsLeft ? at : at - widthPercent;
+    const markerEnd = anchorsLeft ? at + widthPercent : at;
+
+    let rowIndex = rowEnds.findIndex(rowEnd => markerStart >= rowEnd + padding);
+    if (rowIndex < 0) { rowEnds.push(markerEnd); rowIndex = rowEnds.length - 1; } else rowEnds[rowIndex] = markerEnd;
+
+    const label = group.length === 1
+      ? formatYear(year) + ' \u00b7 ' + shorten(group[0].book.title)
+      : formatYear(year) + ' \u00b7 ' + group.length + ' events';
+    const kinds = new Set(group.map(event => event.kind));
     const button = el('button', {
       class: 'astor-timeline-event', type: 'button',
-      'data-kind': event.kind,
+      'data-kind': kinds.size === 1 ? [...kinds][0] : 'mixed',
       'aria-expanded': 'false',
-      style: 'left:' + left + '%; top:' + (rowIndex * 32) + 'px',
-      text: event.year + ' · ' + event.book.title
+      'aria-label': formatYear(year) + ': ' + group.map(event => event.label).join('; '),
+      style: (anchorsLeft ? 'left:' + at + '%;' : 'right:' + (100 - at) + '%;') +
+        ' top:' + (rowIndex * 32) + 'px; width:' + markerWidth + 'px',
+      text: label
     });
-    button.addEventListener('click', () => select(event, button));
+    button.addEventListener('click', () => select(year, group, button));
     board.append(button);
   }
-  board.style.minHeight = (rows.length * 32 + 20) + 'px';
+  board.style.minHeight = (rowEnds.length * 32 + 20) + 'px';
   track.append(board);
   track.append(el('p', {
     class: 'astor-inline-note',
-    text: shown.length + ' events between ' + first + ' and ' + last + '. Select one to read it, ' +
-      'or narrow the view with the controls above — a wide span puts a century into a few pixels.'
+    text: shown.length + ' events, falling in ' + years.length + ' different years between ' + formatYear(first) +
+      ' and ' + formatYear(last) + '. Select a year to read it. The page opens on the works ' +
+      'themselves; add the history around them, the writers and what happened afterwards with the ' +
+      'buttons above.'
   }));
 }
 
-function select(event, button) {
+// A title in a marker has to fit beside its neighbours; the full one is in the
+// panel the marker opens.
+function shorten(title) {
+  return title.length > 22 ? title.slice(0, 20).replace(/[\s,;:]+\S*$/, '') + '\u2026' : title;
+}
+
+function select(year, group, button) {
   for (const other of track.querySelectorAll('.astor-timeline-event')) other.setAttribute('aria-expanded', 'false');
   button.setAttribute('aria-expanded', 'true');
   clear(detail);
   detail.hidden = false;
-  detail.append(el('p', { class: 'kicker', text: KINDS.find(kind => kind[0] === event.kind)?.[1] || 'Event' }));
-  detail.append(el('h3', { text: event.year + ': ' + event.label }));
-  if (event.detail) detail.append(el('p', { text: event.detail }));
-  detail.append(el('p', {}, [
-    el('a', { href: event.book.href, text: 'Read ' + event.book.title + ' →' })
-  ]));
+  detail.append(el('p', { class: 'kicker', text: formatYear(year) }));
+  detail.append(el('h3', {
+    text: group.length === 1 ? group[0].label : group.length + ' things happened in ' + formatYear(year)
+  }));
+
+  for (const event of group) {
+    detail.append(el('article', { class: 'astor-note' }, [
+      el('h4', {}, [el('a', { href: event.book.href, text: event.book.title })]),
+      el('p', { class: 'astor-quote-attribution', text: KINDS.find(kind => kind[0] === event.kind)?.[1] || 'Event' }),
+      group.length === 1 ? null : el('p', { text: event.label }),
+      event.detail ? el('p', { text: event.detail }) : null
+    ]));
+  }
+
   const neighbours = visible()
-    .filter(other => other.id !== event.id && Math.abs(other.year - event.year) <= 12)
-    .sort((a, b) => Math.abs(a.year - event.year) - Math.abs(b.year - event.year))
-    .slice(0, 4);
+    .filter(other => other.year !== year && Math.abs(other.year - year) <= 12)
+    .sort((a, b) => Math.abs(a.year - year) - Math.abs(b.year - year))
+    .slice(0, 5);
   if (neighbours.length) {
     detail.append(el('p', { class: 'astor-quote-attribution', text: 'Around the same time' }));
     detail.append(el('ul', { class: 'astor-question-list' }, neighbours.map(other =>
-      el('li', {}, [el('a', { href: other.book.href, text: other.year + ' — ' + other.label }) ]))));
+      el('li', {}, [el('a', { href: other.book.href, text: formatYear(other.year) + ' \u2014 ' + other.label })]))));
   }
-  announce(detail, event.year + '. ' + event.label);
+  announce(detail, formatYear(year) + '. ' + group.map(event => event.label).join('. '));
 }

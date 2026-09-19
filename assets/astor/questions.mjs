@@ -14,7 +14,7 @@
 // quotation entered once is a card on the book page, an entry in the explorer,
 // a flashcard, and a question in four different games.
 
-import { shuffle, sample, pick, seededRandom, hashString } from './util.mjs';
+import { shuffle, sample, pick, seededRandom, hashString, formatYear } from './util.mjs';
 
 const STOP_WORDS = new Set([
   'the', 'and', 'but', 'for', 'nor', 'yet', 'so', 'a', 'an', 'of', 'to', 'in',
@@ -281,12 +281,12 @@ export function contextSprint(books, random = Math.random) {
     const near = years
       .filter(year => year !== entry.year && Math.abs(year - entry.year) <= 80)
       .sort(() => 0);
-    const distractors = (near.length >= 3 ? near : years.filter(year => year !== entry.year)).map(String);
+    const distractors = (near.length >= 3 ? near : years.filter(year => year !== entry.year)).map(formatYear);
     return makeChoice({
       id: 'context:' + entry.book.slug + ':' + entry.year + ':' + hashString(entry.label).toString(36),
       stem: 'In which year?',
       quote: entry.label,
-      correct: String(entry.year),
+      correct: formatYear(entry.year),
       distractors,
       explain: entry.detail || '',
       source: entry.book.title,

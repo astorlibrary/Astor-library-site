@@ -1,0 +1,1107 @@
+{
+  "slug": "ethan-frome",
+  "title": "Ethan Frome",
+  "author": "Edith Wharton",
+  "href": "/books/ethan-frome/",
+  "buyUrl": "https://mybook.to/MN2KL",
+  "form": "novella",
+  "genre": "Tragedy",
+  "period": "American Classics",
+  "written": "Out of an earlier French exercise, Hiver, written while Wharton was living in Paris",
+  "firstPublished": 1911,
+  "setting": "Starkfield, a declining Massachusetts hill village, across one winter and twenty-four years later",
+  "readingTime": 120,
+  "difficulty": 3,
+  "lengthNote": "A prologue, nine short chapters and an epilogue — under two hundred pages",
+  "openingLine": "I had the story, bit by bit, from various people, and, as generally happens in such cases, each time it was a different story.",
+  "summary": "An engineer stranded by a strike in a New England village becomes curious about a lame, silent man at the post office, and assembles the reason from what the neighbours will tell him. What he arrives at is a winter twenty-four years earlier, a farm that cannot be sold, a wife with symptoms and a young cousin with nowhere else to go. The cruelty of the book is not the accident at the end but what the accident fails to end.",
+  "referenceStyle": "chapter — the framing narrative is unnumbered and is referenced here as Prologue and Epilogue",
+  "sourceText": {
+    "label": "Standard Ebooks text of Ethan Frome",
+    "note": "Chapters are numbered I to IX, with Wharton's unnumbered opening and closing sections given here as Prologue and Epilogue. The phonetic Starkfield speech is reproduced as printed."
+  },
+  "atAGlance": [
+    {
+      "label": "First published",
+      "value": "1911",
+      "note": "By Charles Scribner's Sons, after serialisation in Scribner's Magazine."
+    },
+    {
+      "label": "Written first in French",
+      "value": "Hiver",
+      "note": "A composition exercise Wharton wrote while living in Paris supplied the situation and the setting."
+    },
+    {
+      "label": "Time span",
+      "value": "Twenty-four years",
+      "note": "The distance between the winter the narrator reconstructs and the kitchen he finally walks into."
+    },
+    {
+      "label": "Narration",
+      "value": "An outsider's reconstruction",
+      "note": "Everything between the prologue and the epilogue is what the engineer has made of other people's fragments."
+    }
+  ],
+  "structure": [
+    {
+      "id": "prologue",
+      "label": "Prologue",
+      "title": "A visiting engineer collects a village's version",
+      "summary": "Held in Starkfield by a carpenters' strike, the narrator notices a ruined man at the post office and starts asking. Harmon Gow supplies the accident, Mrs Ned Hale supplies a reticence, and a snowstorm finally puts him inside the Frome kitchen — at which point the book goes back twenty-four years."
+    },
+    {
+      "id": "chapters-1-3",
+      "label": "Chapters I–III",
+      "title": "Waiting outside the dance",
+      "summary": "Ethan stands in the cold watching Mattie Silver dance with Denis Eady, and walks her home the long way past the graveyard. Zeena is awake when they get in, and by the third chapter she has announced a trip to Bettsbridge to see a new doctor."
+    },
+    {
+      "id": "chapters-4-5",
+      "label": "Chapters IV–V",
+      "title": "An evening alone, and the cat breaks the dish",
+      "summary": "With Zeena away, Ethan and Mattie have supper in a kitchen that briefly feels like a different life. The cat knocks Zeena's red glass pickle-dish off the table, and Ethan puts the pieces back on the shelf intending to buy glue in the morning."
+    },
+    {
+      "id": "chapters-6-7",
+      "label": "Chapters VI–VII",
+      "title": "Complications, a hired girl, and the broken dish found",
+      "summary": "Zeena comes back with a diagnosis and a hired girl already engaged, which means Mattie must leave in the morning. Ethan has no money and no argument, and when the pieces of the dish are discovered the quarrel stops being about anybody's health."
+    },
+    {
+      "id": "chapters-8-9",
+      "label": "Chapters VIII–IX",
+      "title": "No money, no letter, and the elm at the bottom of the hill",
+      "summary": "Ethan drafts a letter he cannot send, goes to Andrew Hale for an advance he does not get, and drives Mattie to the station by way of the sledding hill. She asks him not to leave her, and then asks him for something else."
+    },
+    {
+      "id": "epilogue",
+      "label": "Epilogue",
+      "title": "The kitchen, twenty-four years on",
+      "summary": "The narrator is shown into the room the three of them share, and the two women in it are not arranged as anyone would have predicted. Mrs Hale afterwards says the thing nobody in Starkfield has said aloud for a quarter of a century."
+    }
+  ],
+  "characters": [
+    {
+      "id": "ethan-frome",
+      "name": "Ethan Frome",
+      "role": "A farmer and sawmill owner, twenty-eight in the reconstructed winter",
+      "summary": "He studied engineering for a year at Worcester and came back to nurse first his father, then his mother, then the wife he married because the silence after his mother's funeral was unbearable. Every exit is costed in the book and none of them clears: he cannot sell the farm, cannot raise fifty dollars, and cannot leave without abandoning a sick woman.",
+      "clue": "A lame man with a red gash across his forehead who drives into the village every day at noon for a newspaper he never opens.",
+      "firstAppearance": "Prologue",
+      "traits": [
+        "inarticulate",
+        "dutiful",
+        "trapped by arithmetic"
+      ],
+      "relationships": [
+        {
+          "to": "zeena",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "mattie-silver",
+          "label": "in love with",
+          "kind": "love",
+          "stages": [
+            "chapters-1-3",
+            "chapters-4-5",
+            "chapters-8-9"
+          ]
+        },
+        {
+          "to": "andrew-hale",
+          "label": "asks for an advance from",
+          "kind": "service",
+          "stages": [
+            "chapters-8-9"
+          ]
+        },
+        {
+          "to": "narrator",
+          "label": "reconstructed by",
+          "kind": "doubling",
+          "stages": [
+            "prologue",
+            "epilogue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zeena",
+      "name": "Zenobia (Zeena) Frome",
+      "role": "Ethan's wife, seven years older than him",
+      "summary": "She came to nurse his mother and stayed as his wife, and her illness — never diagnosed by the book — is the only authority a woman in her position has. Wharton gives her almost no interior life and a great deal of power, and the epilogue reverses the two so completely that the reader has to reconsider everything said about her.",
+      "clue": "She goes to a new doctor in a neighbouring town and comes home with a word that outranks trouble, and a hired girl already engaged.",
+      "firstAppearance": "Chapters I–III",
+      "traits": [
+        "ailing",
+        "watchful",
+        "proprietorial"
+      ],
+      "relationships": [
+        {
+          "to": "ethan-frome",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "mattie-silver",
+          "label": "cousin and employer of",
+          "kind": "family",
+          "stages": [
+            "chapters-6-7",
+            "epilogue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mattie-silver",
+      "name": "Mattie Silver",
+      "role": "Zeena's young cousin, working in the house for her keep",
+      "summary": "Her father's failure left her with fifty dollars and no training; shop work and stenography both broke her health, so she is at the Fromes because there is nowhere else. She is not a great beauty or a great mind — the novel is careful about that — she is simply the only warm thing in the house.",
+      "clue": "She hangs a ribbon at her neck, uses the good dish for one supper, and asks at the top of a hill to be steered at a tree.",
+      "firstAppearance": "Chapters I–III",
+      "traits": [
+        "cheerful",
+        "unskilled",
+        "without options"
+      ],
+      "relationships": [
+        {
+          "to": "ethan-frome",
+          "label": "in love with",
+          "kind": "love",
+          "stages": [
+            "chapters-4-5",
+            "chapters-8-9"
+          ]
+        },
+        {
+          "to": "zeena",
+          "label": "dependent on",
+          "kind": "family",
+          "stages": [
+            "chapters-6-7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "narrator",
+      "name": "The engineer",
+      "role": "An unnamed visitor sent to Corbury Junction on a job",
+      "summary": "He is never named and never explains his own life, and he states at the outset that the story came to him in pieces that did not agree. The central chapters are his construction, not testimony, which means every judgement the reader makes about Zeena arrives through a stranger who spent one night in the house.",
+      "firstAppearance": "Prologue",
+      "traits": [
+        "curious",
+        "outsider",
+        "candid about his own guesswork"
+      ],
+      "relationships": [
+        {
+          "to": "harmon-gow",
+          "label": "informed by",
+          "kind": "ally",
+          "stages": [
+            "prologue"
+          ]
+        },
+        {
+          "to": "mrs-ned-hale",
+          "label": "lodges with",
+          "kind": "ally",
+          "stages": [
+            "prologue",
+            "epilogue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "harmon-gow",
+      "name": "Harmon Gow",
+      "role": "Former driver of the Bettsbridge stage",
+      "summary": "He knew the families along the route before the trolley and the railway came, and he supplies the narrator with the accident, the dates and the single sentence that the whole reconstruction is built on. His information stops exactly where the village's sympathy stops.",
+      "firstAppearance": "Prologue",
+      "traits": [
+        "plain",
+        "well-informed",
+        "finite"
+      ],
+      "relationships": [
+        {
+          "to": "narrator",
+          "label": "first source for",
+          "kind": "ally",
+          "stages": [
+            "prologue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mrs-ned-hale",
+      "name": "Mrs Ned Hale",
+      "role": "The narrator's landlady, formerly Ruth Varnum",
+      "summary": "She was the first person into the house after the accident and has said almost nothing about it since. Her reticence is what gives the epilogue its force: when she finally speaks she delivers the harshest verdict in the book, and immediately apologises for it.",
+      "firstAppearance": "Prologue",
+      "traits": [
+        "genteel",
+        "reticent",
+        "haunted"
+      ],
+      "relationships": [
+        {
+          "to": "narrator",
+          "label": "final source for",
+          "kind": "ally",
+          "stages": [
+            "epilogue"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "andrew-hale",
+      "name": "Andrew Hale",
+      "role": "A builder, Ethan's chief customer",
+      "summary": "He pays for lumber three months after delivery and is himself short of money because he is fitting out a house for his son's marriage. His refusal of an advance is delivered kindly and is the exact point at which every remaining exit closes.",
+      "firstAppearance": "Chapters VIII–IX",
+      "traits": [
+        "amiable",
+        "slow to pay",
+        "short himself"
+      ],
+      "relationships": [
+        {
+          "to": "ethan-frome",
+          "label": "refuses an advance to",
+          "kind": "service",
+          "stages": [
+            "chapters-8-9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "denis-eady",
+      "name": "Denis Eady",
+      "role": "The grocer's son, with his father's horses to drive",
+      "summary": "He has money, a cutter and no obligations, which makes him the version of Ethan's life that was available to somebody else. He offers Mattie a lift home from the dance and is refused, and afterwards he functions mainly as the future the Fromes cannot compete with.",
+      "firstAppearance": "Chapters I–III",
+      "traits": [
+        "prosperous",
+        "confident",
+        "unencumbered"
+      ],
+      "relationships": [
+        {
+          "to": "mattie-silver",
+          "label": "courts",
+          "kind": "rival",
+          "stages": [
+            "chapters-1-3"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "class",
+      "name": "Class and money",
+      "summary": "The book gives exact figures and lets them do the work of fate: fifty dollars asked for and refused, lumber paid for three months in arrears, a mortgage that cannot be cleared, a girl with no saleable skill. Wharton's tragedy is not a matter of temperament but of a household that cannot raise the fare out.",
+      "development": "The poverty is scenery in the early chapters and machinery by Chapter VIII, where the plan to run away collapses not on conscience but on the price of the tickets."
+    },
+    {
+      "id": "obligation",
+      "name": "Duty and the sick wife",
+      "summary": "Ethan is held by illness rather than affection: first his father's, then his mother's, then Zeena's, in an unbroken sequence of people who need nursing. The novel refuses to say whether Zeena is ill or has discovered that illness is the one form of authority open to her, and that refusal is the point.",
+      "development": "Marriage is presented as the consequence of a funeral, and the epilogue completes the pattern by putting the invalid on her feet to nurse the girl she sent away."
+    },
+    {
+      "id": "silence",
+      "name": "What is never said",
+      "summary": "Almost nothing in this book is spoken at the moment it matters. Ethan rehearses sentences he does not deliver, writes a letter he does not send, and says goodbye without saying anything; Mrs Ned Hale keeps her verdict for twenty-four years. Wharton makes the unspoken sentence a physical event, with a place in the scene.",
+      "development": "The narrator names the silence in the prologue as something frozen; by Chapter IX the two people involved can only reach each other by doing rather than speaking."
+    },
+    {
+      "id": "winter",
+      "name": "Winter as a material fact",
+      "summary": "Cold in this book is not atmosphere but economics: it decides what work can be done, which roads are passable, how long a journey to the station takes and what a farm can earn. The village's phrase for a man ruined by staying — too many winters — is a piece of local economics rather than a metaphor.",
+      "development": "The narrator experiences one winter and finds it merely severe; the reconstruction shows what twenty-eight of them do, and the epilogue confines all three survivors to a single heated kitchen."
+    },
+    {
+      "id": "love",
+      "name": "Love as damage",
+      "summary": "The feeling between Ethan and Mattie is made of very small things — a ribbon, a chair moved, a shared supper — and the novel is precise about how little it would have taken to satisfy it and how completely that little is unavailable. What it produces is not liberation but an attempt at joint suicide that leaves both alive.",
+      "development": "It begins as company in Chapter I, becomes a domestic fantasy over one supper, and by the top of the sledding hill has turned into the conviction that there is no version of being together except not surviving."
+    },
+    {
+      "id": "isolation",
+      "name": "Isolation",
+      "summary": "Starkfield is described as a place where the clever leave and the rest are snowed in, and the Frome farm stands a mile beyond even that. The house has had a wing pulled down, which the narrator reads as the look of a body with a limb missing, and the epilogue shuts three people into one room with nobody to overhear them.",
+      "development": "Geographic at first, then social — nobody visits — and finally absolute, when the only stranger to enter the kitchen in years is a man waiting out a storm."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "frame-narrative",
+      "name": "Frame narrative",
+      "definition": "A story enclosed within another story, often several layers deep.",
+      "inThisBook": "The prologue and epilogue belong to an outsider who admits his sources contradicted each other; the nine chapters between them are his reconstruction, given with a confidence about Ethan's private thoughts that no informant could have supplied."
+    },
+    {
+      "id": "landscape",
+      "name": "Landscape as pressure",
+      "definition": "Using terrain, weather and scale to exert force on the characters rather than to decorate them.",
+      "inThisBook": "The hill, the snow, the distance to Corbury Flats and the elm at the bottom of the run are all load-bearing: each of them limits what a character is physically able to do next."
+    },
+    {
+      "id": "dialect",
+      "name": "Dialect",
+      "definition": "Regional speech written phonetically.",
+      "inThisBook": "The villagers' speech is set down as it sounds — 'wust kind', ''cept', 'ha' died' — while the narrator's prose stays formal, so the gap between the observer and the observed is audible on every page he quotes."
+    },
+    {
+      "id": "symbolic-objects",
+      "name": "Objects and omens",
+      "definition": "Things in the narrative that carry a meaning the characters half-register.",
+      "inThisBook": "A wedding-present pickle-dish taken down for one supper and broken by a cat carries the whole marriage; so do a hanging ribbon, a dead cucumber-vine and a gravestone with the wrong first name on it."
+    },
+    {
+      "id": "ellipsis",
+      "name": "The gap in the telling",
+      "definition": "Leaving out the part of a story the reader most expects to be shown.",
+      "inThisBook": "The novel jumps from a sled aimed at an elm to a kitchen twenty-four years later without narrating the crash, the injuries or the decisions afterwards, so the reader reconstructs the worst of it from a woman's shape in a chair."
+    },
+    {
+      "id": "understatement",
+      "name": "Understatement",
+      "definition": "Reporting extreme events in language deliberately too mild for them.",
+      "inThisBook": "The village calls a catastrophe a smash-up, a driver says Ethan will likely touch a hundred, and the book's cruellest judgement is delivered by a kindly landlady who then worries she has spoken out of turn."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "i-had-the-story",
+      "text": "I had the story, bit by bit, from various people, and, as generally happens in such cases, each time it was a different story.",
+      "speaker": "The narrator",
+      "reference": "Prologue",
+      "stage": "prologue",
+      "context": "The opening sentence of the book.",
+      "analysis": "The first sentence of a tragedy is a warning about evidence. 'Bit by bit' concedes that the pieces arrived separately, and the last clause concedes that they contradicted each other — so everything the reader is about to be shown in close-up third person has been assembled by a man who has just told us his materials do not agree.",
+      "themes": [
+        "silence"
+      ],
+      "techniques": [
+        "frame-narrative"
+      ],
+      "characters": [
+        "narrator"
+      ],
+      "source": "Standard Ebooks text, Prologue",
+      "cloze": [
+        "bit",
+        "different"
+      ]
+    },
+    {
+      "id": "smash-up",
+      "text": "He’s looked that way ever since he had his smash-up; and that’s twenty-four years ago come next February",
+      "speaker": "Harmon Gow",
+      "reference": "Prologue",
+      "stage": "prologue",
+      "context": "The first explanation the narrator is offered for Frome's appearance.",
+      "analysis": "The village's word for the event is a word for a cart overturning, and the sentence dates it with the precision people use for a wedding or a death. The whole book is contained in the gap between the mildness of 'smash-up' and the fact that somebody has been counting the Februaries.",
+      "themes": [
+        "winter",
+        "silence"
+      ],
+      "techniques": [
+        "understatement",
+        "dialect"
+      ],
+      "characters": [
+        "harmon-gow",
+        "ethan-frome"
+      ],
+      "source": "Standard Ebooks text, Prologue",
+      "cloze": [
+        "smash-up",
+        "February"
+      ]
+    },
+    {
+      "id": "dead-and-in-hell",
+      "text": "He looks as if he was dead and in hell now!",
+      "speaker": "Harmon Gow",
+      "reference": "Prologue",
+      "stage": "prologue",
+      "context": "Answering his own remark that Frome will probably live to a hundred.",
+      "analysis": "Gow has just said the Fromes are tough and will last, and he immediately spoils the compliment. Putting hell in the present tense makes the rest of the book an explanation rather than a mystery: the reader now knows the outcome and is waiting only to be told what it cost.",
+      "themes": [
+        "isolation",
+        "obligation"
+      ],
+      "techniques": [
+        "dialect",
+        "understatement"
+      ],
+      "characters": [
+        "harmon-gow",
+        "ethan-frome"
+      ],
+      "source": "Standard Ebooks text, Prologue",
+      "cloze": [
+        "dead",
+        "hell"
+      ]
+    },
+    {
+      "id": "too-many-winters",
+      "text": "Guess he’s been in Starkfield too many winters. Most of the smart ones get away.",
+      "speaker": "Harmon Gow",
+      "reference": "Prologue",
+      "stage": "prologue",
+      "context": "The sentence the narrator says he built all his later inferences around.",
+      "analysis": "Two flat statements which between them contain a theory of the whole district: that staying is what does the damage, and that staying is what the less able do. The narrator quotes it twice, and the second quotation is his admission that a reconstruction of twenty-four years has been grown from one man's offhand remark.",
+      "themes": [
+        "winter",
+        "class",
+        "isolation"
+      ],
+      "techniques": [
+        "dialect",
+        "frame-narrative"
+      ],
+      "characters": [
+        "harmon-gow",
+        "ethan-frome"
+      ],
+      "source": "Standard Ebooks text, Prologue",
+      "cloze": [
+        "winters",
+        "smart"
+      ]
+    },
+    {
+      "id": "sluggish-pulse",
+      "text": "it seemed to produce no change except that of retarding still more the sluggish pulse of Starkfield",
+      "speaker": "The narrator",
+      "reference": "Prologue",
+      "stage": "prologue",
+      "context": "The effect of a spell of bright clear cold on the village.",
+      "analysis": "The village is given a pulse, which makes the winter a condition rather than a season and the place a patient rather than a location. It is the first of the book's many transfers of medical language away from Zeena, who is the only person in it with a diagnosis.",
+      "themes": [
+        "winter",
+        "isolation"
+      ],
+      "techniques": [
+        "landscape"
+      ],
+      "characters": [
+        "narrator"
+      ],
+      "source": "Standard Ebooks text, Prologue",
+      "cloze": [
+        "sluggish",
+        "pulse"
+      ]
+    },
+    {
+      "id": "mute-melancholy-landscape",
+      "text": "He seemed a part of the mute melancholy landscape, an incarnation of its frozen woe, with all that was warm and sentient in him fast bound below the surface; but there was nothing unfriendly in his silence.",
+      "speaker": "The narrator",
+      "reference": "Prologue",
+      "stage": "prologue",
+      "context": "After several winter drives to the Junction in Frome's sleigh, in near-silence.",
+      "analysis": "The man is absorbed into the scenery and then, in the last clause, quietly handed back his humanity. 'Fast bound below the surface' describes ice over water, and the reconstruction that follows is an attempt to get at what is under it — an attempt the narrator has already told us is guesswork.",
+      "themes": [
+        "silence",
+        "winter"
+      ],
+      "techniques": [
+        "landscape",
+        "frame-narrative"
+      ],
+      "characters": [
+        "ethan-frome",
+        "narrator"
+      ],
+      "source": "Standard Ebooks text, Prologue",
+      "cloze": [
+        "frozen",
+        "silence"
+      ]
+    },
+    {
+      "id": "always-go-on-living-here",
+      "text": "We’ll always go on living here together, and some day she’ll lie there beside me.",
+      "speaker": "Ethan Frome",
+      "reference": "Chapter II",
+      "stage": "chapters-1-3",
+      "context": "Walking Mattie home past the Frome graves, which had always oppressed him.",
+      "analysis": "This is the novel's love scene, and it consists of a man imagining a shared grave. The graves that used to stand for everything he could not escape have been converted, in one sentence, into a promise — which tells the reader exactly how narrow the available happiness is.",
+      "themes": [
+        "love",
+        "isolation"
+      ],
+      "techniques": [
+        "symbolic-objects"
+      ],
+      "characters": [
+        "ethan-frome",
+        "mattie-silver"
+      ],
+      "source": "Standard Ebooks text, Chapter II",
+      "cloze": [
+        "living",
+        "beside"
+      ]
+    },
+    {
+      "id": "slumbering-spark",
+      "text": "There was in him a slumbering spark of sociability which the long Starkfield winters had not yet extinguished.",
+      "reference": "Chapter IV",
+      "stage": "chapters-4-5",
+      "context": "Ethan driving to the village in unusually good spirits, with Zeena away.",
+      "analysis": "'Not yet' is the word that turns a kind sentence into a threatening one. The metaphor is a fire going out slowly in a cold house, and the chapter that contains it is the only one in which Ethan whistles, sings and behaves like a man of twenty-eight.",
+      "themes": [
+        "winter",
+        "isolation"
+      ],
+      "techniques": [
+        "landscape"
+      ],
+      "characters": [
+        "ethan-frome"
+      ],
+      "source": "Standard Ebooks text, Chapter IV",
+      "cloze": [
+        "spark",
+        "extinguished"
+      ]
+    },
+    {
+      "id": "silence-had-deepened",
+      "text": "There the silence had deepened about him year by year.",
+      "reference": "Chapter IV",
+      "stage": "chapters-4-5",
+      "context": "The history of the farm after his father's accident and his mother's decline.",
+      "analysis": "Silence is given a depth and a rate of increase, like snow or debt. The sentence also supplies the motive for the marriage twenty pages before the book states it: Ethan asks Zeena to stay because she has been speaking in a house where nobody spoke.",
+      "themes": [
+        "silence",
+        "obligation"
+      ],
+      "techniques": [
+        "understatement"
+      ],
+      "characters": [
+        "ethan-frome"
+      ],
+      "source": "Standard Ebooks text, Chapter IV",
+      "cloze": [
+        "silence",
+        "deepened"
+      ]
+    },
+    {
+      "id": "endurance-his-wife",
+      "text": "Sacred to the memory of Ethan Frome and Endurance his wife, who dwelled together in peace for fifty years.",
+      "reference": "Chapter IV",
+      "stage": "chapters-4-5",
+      "context": "An ancestor's headstone on the knoll, which had interested him as a boy because it bore his name.",
+      "analysis": "The wife's name is a virtue and the epitaph is a sentence about duration rather than affection — fifty years, in peace, together. Wharton then has Ethan wonder whether the same words will be written over him and Zeena, and the epilogue answers the question without needing a stone.",
+      "themes": [
+        "obligation",
+        "silence"
+      ],
+      "techniques": [
+        "symbolic-objects"
+      ],
+      "characters": [
+        "ethan-frome",
+        "zeena"
+      ],
+      "source": "Standard Ebooks text, Chapter IV",
+      "cloze": [
+        "Endurance",
+        "peace"
+      ]
+    },
+    {
+      "id": "pickle-dish-crash",
+      "text": "backed into the pickle-dish, which fell to the floor with a crash",
+      "reference": "Chapter IV",
+      "stage": "chapters-4-5",
+      "context": "The cat, startled off the table during the supper Ethan and Mattie have alone.",
+      "analysis": "The agent of the disaster is a cat, which lets Wharton destroy the marriage's most valued object without giving anybody the blame or the satisfaction. The dish was a wedding present never used; taking it down for one meal is the only extravagance in the book, and it is punished within the hour.",
+      "themes": [
+        "love",
+        "obligation"
+      ],
+      "techniques": [
+        "symbolic-objects"
+      ],
+      "characters": [
+        "mattie-silver",
+        "ethan-frome"
+      ],
+      "source": "Standard Ebooks text, Chapter IV",
+      "cloze": [
+        "pickle-dish",
+        "crash"
+      ]
+    },
+    {
+      "id": "complications",
+      "text": "I’ve got complications",
+      "speaker": "Zeena Frome",
+      "reference": "Chapter VII",
+      "stage": "chapters-6-7",
+      "context": "Reporting the new Bettsbridge doctor's verdict, on her return.",
+      "analysis": "Three words, delivered with the air of somebody singled out for a great fate. In a village where everybody has troubles, the word is a promotion, and Wharton has Zeena win the only argument that matters by producing a noun her husband cannot contradict.",
+      "themes": [
+        "obligation",
+        "class"
+      ],
+      "techniques": [
+        "understatement",
+        "dialect"
+      ],
+      "characters": [
+        "zeena"
+      ],
+      "source": "Standard Ebooks text, Chapter VII",
+      "cloze": [
+        "complications"
+      ]
+    },
+    {
+      "id": "distinction-death-warrant",
+      "text": "To have them was in itself a distinction, though it was also, in most cases, a death-warrant.",
+      "reference": "Chapter VII",
+      "stage": "chapters-6-7",
+      "context": "The narrator explaining what the word means in that part of the country.",
+      "analysis": "The sentence balances social promotion against a death sentence on either side of a comma, and the phrase 'in most cases' quietly leaves room for the ones who live for decades. It is the book's one moment of open irony about Zeena, and it is also the book's refusal to say whether she is ill.",
+      "themes": [
+        "obligation",
+        "class"
+      ],
+      "techniques": [
+        "understatement",
+        "frame-narrative"
+      ],
+      "characters": [
+        "zeena"
+      ],
+      "source": "Standard Ebooks text, Chapter VII",
+      "cloze": [
+        "distinction",
+        "death-warrant"
+      ]
+    },
+    {
+      "id": "doctor-says-my-death",
+      "text": "The doctor says it’ll be my death if I go on slaving the way I’ve had to.",
+      "speaker": "Zeena Frome",
+      "reference": "Chapter VII",
+      "stage": "chapters-6-7",
+      "context": "Justifying the hired girl she has already engaged, which means Mattie must go.",
+      "analysis": "The medical authority is quoted rather than present, and the word 'slaving' recasts a household in which somebody else does the work. The sentence is unanswerable by design: to argue with it is to be a man who would rather keep a girl than keep his wife alive.",
+      "themes": [
+        "obligation",
+        "class"
+      ],
+      "techniques": [
+        "dialect"
+      ],
+      "characters": [
+        "zeena",
+        "ethan-frome"
+      ],
+      "source": "Standard Ebooks text, Chapter VII",
+      "cloze": [
+        "death",
+        "slaving"
+      ]
+    },
+    {
+      "id": "took-from-me",
+      "text": "now you’ve took from me the one I cared for most of all",
+      "speaker": "Zeena Frome",
+      "reference": "Chapter VII",
+      "stage": "chapters-6-7",
+      "context": "Holding the pieces of the red glass pickle-dish.",
+      "analysis": "She is grieving over crockery, and the phrasing is that of a woman mourning a person — which is the nearest the novel lets her come to saying what she knows about her husband and her cousin. She then stops in a spasm of sobs and hardens again, and the marriage never discusses any of it.",
+      "themes": [
+        "silence",
+        "love"
+      ],
+      "techniques": [
+        "symbolic-objects"
+      ],
+      "characters": [
+        "zeena",
+        "ethan-frome"
+      ],
+      "source": "Standard Ebooks text, Chapter VII",
+      "cloze": [
+        "took",
+        "cared"
+      ]
+    },
+    {
+      "id": "prisoner-for-life",
+      "text": "He was a prisoner for life, and now his one ray of light was to be extinguished.",
+      "reference": "Chapter VIII",
+      "stage": "chapters-8-9",
+      "context": "After the failure to raise fifty dollars from Andrew Hale.",
+      "analysis": "The sentence arrives immediately after a page of arithmetic — the price of tickets, the mortgage, the three months' credit — so the prison metaphor is being cashed against a ledger rather than a mood. Wharton is precise that the walls are financial, and that the door was shut by a kind man who was also short of money.",
+      "themes": [
+        "class",
+        "obligation",
+        "isolation"
+      ],
+      "techniques": [
+        "understatement"
+      ],
+      "characters": [
+        "ethan-frome",
+        "andrew-hale"
+      ],
+      "source": "Standard Ebooks text, Chapter VIII",
+      "cloze": [
+        "prisoner",
+        "extinguished"
+      ]
+    },
+    {
+      "id": "right-into-the-big-elm",
+      "text": "Right into the big elm. You said you could. So ’t we’d never have to leave each other any more.",
+      "speaker": "Mattie Silver",
+      "reference": "Chapter IX",
+      "stage": "chapters-8-9",
+      "context": "At the top of the coast, after one run down, her lips against his ear.",
+      "analysis": "She proposes it, not him, and she does so by quoting his own boast back at him. The reasoning in the last clause is a child's — this is the only way of not being separated — and the flat construction, with no word for death anywhere in it, is what makes the moment unbearable.",
+      "themes": [
+        "love",
+        "class"
+      ],
+      "techniques": [
+        "understatement",
+        "dialect"
+      ],
+      "characters": [
+        "mattie-silver",
+        "ethan-frome"
+      ],
+      "source": "Standard Ebooks text, Chapter IX",
+      "cloze": [
+        "elm",
+        "leave"
+      ]
+    },
+    {
+      "id": "wifes-face",
+      "text": "But suddenly his wife’s face, with twisted monstrous lineaments, thrust itself between him and his goal",
+      "reference": "Chapter IX",
+      "stage": "chapters-8-9",
+      "context": "The second run down the hill, with the elm ahead.",
+      "analysis": "Zeena appears at the last possible instant as a hallucination and physically deflects the sled, so the crash that follows is neither a clean death nor a clean escape. Wharton has the marriage intervene in the accident itself, which is why the survivors end up in one kitchen rather than two graves.",
+      "themes": [
+        "obligation",
+        "love"
+      ],
+      "techniques": [
+        "symbolic-objects",
+        "landscape"
+      ],
+      "characters": [
+        "ethan-frome",
+        "zeena"
+      ],
+      "source": "Standard Ebooks text, Chapter IX",
+      "cloze": [
+        "face",
+        "goal"
+      ]
+    },
+    {
+      "id": "slatternly-calico",
+      "text": "A slatternly calico wrapper hung from her shoulders and the wisps of her thin grey hair were drawn away from a high forehead and fastened at the back by a broken comb.",
+      "reference": "Epilogue",
+      "stage": "epilogue",
+      "context": "The narrator's first sight of the woman who gets up to prepare the meal in the Frome kitchen.",
+      "analysis": "The description is given before the name, so the reader spends a paragraph deciding which of the two women this is and gets it wrong. The broken comb is the detail that does the work: everything in the room has been mended once and is now simply being used broken.",
+      "themes": [
+        "class",
+        "isolation"
+      ],
+      "techniques": [
+        "ellipsis",
+        "symbolic-objects"
+      ],
+      "characters": [
+        "zeena",
+        "narrator"
+      ],
+      "source": "Standard Ebooks text, Epilogue",
+      "cloze": [
+        "calico",
+        "comb"
+      ]
+    },
+    {
+      "id": "if-shed-ha-died",
+      "text": "And I say, if she’d ha’ died, Ethan might ha’ lived",
+      "speaker": "Mrs Ned Hale",
+      "reference": "Epilogue",
+      "stage": "epilogue",
+      "context": "The impulse of complete avowal that seizes her after twenty-four years of reticence.",
+      "analysis": "She has already said her minister was shocked by the same sentence, and she repeats it anyway, in dialect, with 'I say' at the front to mark that she knows what she is doing. It converts the accident from a tragedy into a failed mercy, which is a far harder thing for the reader to hold.",
+      "themes": [
+        "silence",
+        "obligation"
+      ],
+      "techniques": [
+        "dialect",
+        "frame-narrative"
+      ],
+      "characters": [
+        "mrs-ned-hale",
+        "mattie-silver",
+        "ethan-frome"
+      ],
+      "source": "Standard Ebooks text, Epilogue",
+      "cloze": [
+        "died",
+        "lived"
+      ]
+    },
+    {
+      "id": "the-women-hold-their-tongues",
+      "text": "I don’t see’s there’s much difference between the Fromes up at the farm and the Fromes down in the graveyard; ’cept that down there they’re all quiet, and the women have got to hold their tongues.",
+      "speaker": "Mrs Ned Hale",
+      "reference": "Epilogue",
+      "stage": "epilogue",
+      "context": "The last words of the book.",
+      "analysis": "The joke is that the dead are quieter, and the sting is in what it concedes about the living: the kitchen is a grave with the arguing left in. Ending a novel about a man who could not speak on a line about women who cannot stop is Wharton's final adjustment to who, in Starkfield, has actually been silenced.",
+      "themes": [
+        "silence",
+        "isolation",
+        "obligation"
+      ],
+      "techniques": [
+        "dialect",
+        "understatement"
+      ],
+      "characters": [
+        "mrs-ned-hale",
+        "zeena",
+        "mattie-silver"
+      ],
+      "source": "Standard Ebooks text, Epilogue",
+      "cloze": [
+        "graveyard",
+        "tongues"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1862,
+      "label": "Edith Newbold Jones born in New York",
+      "detail": "Into the old moneyed society she would spend a career anatomising.",
+      "kind": "author"
+    },
+    {
+      "year": 1885,
+      "label": "Marriage to Edward Robbins Wharton",
+      "detail": "A match that became increasingly unhappy and ended in divorce in 1913.",
+      "kind": "author"
+    },
+    {
+      "year": 1902,
+      "label": "The Mount completed at Lenox, Massachusetts",
+      "detail": "Wharton designed the house and gardens herself and lived in the Berkshire hill country this book is set in.",
+      "kind": "author"
+    },
+    {
+      "year": 1904,
+      "label": "A coasting accident at Lenox",
+      "detail": "A documented sledding accident in the town, often connected with the novel's ending, though Wharton did not identify it as her source.",
+      "kind": "context"
+    },
+    {
+      "year": 1905,
+      "label": "The House of Mirth",
+      "detail": "The novel that made her reputation, and the first of her studies of a woman destroyed by an economy she is not allowed to work in.",
+      "kind": "author"
+    },
+    {
+      "year": 1911,
+      "label": "Ethan Frome published",
+      "detail": "By Charles Scribner's Sons, after appearing in Scribner's Magazine.",
+      "kind": "work"
+    },
+    {
+      "year": 1913,
+      "label": "The Custom of the Country",
+      "detail": "Published two years later, and as ruthless about money in drawing rooms as this book is about money on a hill farm.",
+      "kind": "author"
+    },
+    {
+      "year": 1920,
+      "label": "The Age of Innocence",
+      "detail": "Written after the war, from France, looking back at the New York of her childhood.",
+      "kind": "author"
+    },
+    {
+      "year": 1921,
+      "label": "Wharton awarded the Pulitzer Prize for fiction",
+      "detail": "The first woman to receive it, for The Age of Innocence.",
+      "kind": "reception"
+    },
+    {
+      "year": 1937,
+      "label": "Wharton dies in France",
+      "detail": "At Saint-Brice-sous-Forêt, north of Paris, where she had lived for years.",
+      "kind": "author"
+    }
+  ],
+  "places": [
+    {
+      "name": "Lenox, Massachusetts",
+      "lat": 42.3565,
+      "lon": -73.2854,
+      "note": "Where Wharton built The Mount and learned the Berkshire winters that Starkfield is made from."
+    },
+    {
+      "name": "Pittsfield, Massachusetts",
+      "lat": 42.4501,
+      "lon": -73.2454,
+      "note": "The nearest real town of any size to Wharton's Berkshire country, and the model for the errands the Fromes take to Bettsbridge."
+    },
+    {
+      "name": "Mount Greylock",
+      "lat": 42.6376,
+      "lon": -73.1662,
+      "note": "The highest point in Massachusetts, in the hill country whose isolated farms Wharton took her setting from."
+    },
+    {
+      "name": "Paris",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "note": "Where Wharton was living when she wrote the French exercise, Hiver, that supplied the situation of this book."
+    },
+    {
+      "name": "New York",
+      "lat": 40.7128,
+      "lon": -74.006,
+      "note": "The city of Scribner's Magazine, which serialised the novella, and the society Wharton usually wrote about instead."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "A tragedy of economics rather than character",
+      "summary": "On this reading the novel's subject is a household that cannot raise money: the unsellable farm, the three months' credit, the fifty dollars refused. Every emotional development is preceded by a financial one, and the ending is what happens when no exit can be paid for.",
+      "counter": "It underrates how much of the trap Ethan builds himself — he has a letter written and abandons it before the money question is settled."
+    },
+    {
+      "position": "The frame as the novel's real subject",
+      "summary": "Wharton gives an outsider nine chapters of confident access to a silent man's mind, having first told us his sources disagreed. Read this way the book is about how a village's reticence gets turned into a story, and about who is entitled to narrate a marriage.",
+      "counter": "The reconstruction is so sustained and so intimate that most readers forget the frame entirely until the epilogue reopens it."
+    },
+    {
+      "position": "Zeena as the novel's misread figure",
+      "summary": "Later criticism has argued that the one character denied an interior life is the one with the least power — a woman whose only available authority is illness, judged throughout by a narrator who met her once, and who is then found nursing the rival she dismissed.",
+      "counter": "The epilogue's reversal may be less a rehabilitation than a final cruelty: all three are kept alive in one room precisely so that nobody is released."
+    },
+    {
+      "position": "New England realism against the pastoral",
+      "summary": "Wharton said she was writing against the prettified rural New England of earlier fiction, and the novel's bareness — no charm, no folk wisdom, no redemptive nature — is a deliberate correction.",
+      "counter": "The severity is itself a style, and the book's symmetry and symbolism are as shaped as anything it was reacting against."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "How far is the tragedy of Ethan Frome caused by poverty?",
+      "focus": "Money, obligation and the closing of every exit",
+      "plan": [
+        "Collect the figures the novel is precise about: the mortgage, the unsold farm, three months' credit, fifty dollars, Mattie's fifty from her father.",
+        "Show how the plan to leave collapses in Chapter VIII on the price of the journey rather than on conscience.",
+        "Weigh the competing cause: duty to a sick wife, and the sequence of invalids that began with Ethan's father.",
+        "Consider Mattie's position separately — her health broken by paid work, and no household but this one.",
+        "Decide whether the book presents poverty as the cause or as the thing that makes character irreversible."
+      ]
+    },
+    {
+      "question": "What does the framing narrator contribute to the novel?",
+      "focus": "Reconstruction, reliability and the limits of testimony",
+      "plan": [
+        "Begin with the first sentence and its admission that the accounts did not agree.",
+        "Establish what the narrator could actually have learned, and from whom — Harmon Gow, Mrs Hale, one night in the kitchen.",
+        "Set that against the intimacy of the central chapters, which report Ethan's unspoken thoughts.",
+        "Examine the epilogue's reopening of the frame and the effect of hearing Mrs Hale's verdict in her own words.",
+        "Judge whether the frame undermines the story it introduces or gives it its authority."
+      ]
+    },
+    {
+      "question": "Discuss Wharton's presentation of Zeena.",
+      "focus": "Illness, power and the novel's silences",
+      "plan": [
+        "Note that the reader never enters her mind, and ask who is responsible for that — Wharton, or the narrator she invented.",
+        "Trace the sequence by which illness becomes authority: the doctor at Bettsbridge, the word complications, the hired girl already engaged.",
+        "Read the pickle-dish scene as the only place her feeling reaches the surface, and consider what it is really about.",
+        "Use the epilogue, where she is on her feet and doing the nursing, to test every earlier judgement.",
+        "Conclude on whether the novel condemns her, pities her, or declines to decide."
+      ]
+    },
+    {
+      "question": "'The most important thing in Ethan Frome is what the book does not narrate.' Discuss.",
+      "focus": "Silence, ellipsis and the gap before the epilogue",
+      "plan": [
+        "List the unspoken: the unsent letter, the goodbye that is not said, Mrs Hale's twenty-four years of reticence.",
+        "Analyse the jump from the sled to the kitchen, and what the reader is required to construct across it.",
+        "Show how objects — a dish, a ribbon, a gravestone — carry the conversations the characters never have.",
+        "Consider the effect of putting the book's harshest statement in the mouth of its most reticent character, at the very end.",
+        "Assess what would be lost if the crash and its aftermath were narrated in full."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "The narrator admits his sources contradicted each other. How much of the story should we believe?",
+    "Mattie proposes the crash, not Ethan. Does that change how you read her?",
+    "Zeena never gets a point of view. Is that Wharton's judgement on her, or the narrator's limitation?",
+    "The novel gives exact sums of money throughout. What would be different if it did not?",
+    "Mrs Hale says it would have been better if Mattie had died. Is the book agreeing with her?"
+  ],
+  "related": [
+    {
+      "href": "/books/the-awakening/",
+      "why": "Another short American novel about a marriage that offers no exit, published a decade earlier and equally unwilling to console."
+    },
+    {
+      "href": "/books/the-scarlet-letter/",
+      "why": "The New England that Wharton was writing against and out of: small, watchful, and organised around what cannot be said."
+    },
+    {
+      "href": "/books/wuthering-heights/",
+      "why": "A frame narrator piecing together a passion from other people's accounts, in a landscape that does half the work."
+    },
+    {
+      "href": "/books/tess-of-the-durbervilles/",
+      "why": "Rural poverty treated as a mechanism rather than a backdrop, with the same refusal to let a good character escape it."
+    },
+    {
+      "href": "/books/mrs-dalloway/",
+      "why": "Published fourteen years later, and also concerned with a life closed off by other people's care and the difference between surviving and living."
+    }
+  ],
+  "videos": []
+}

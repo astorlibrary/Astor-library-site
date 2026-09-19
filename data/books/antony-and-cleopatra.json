@@ -587,7 +587,7 @@
   ],
   "techniques": [
     {
-      "id": "hyperbole-of-scale",
+      "id": "hyperbole",
       "name": "Hyperbole",
       "definition": "Deliberate overstatement, used not to deceive but to claim a scale ordinary language cannot reach.",
       "inThisBook": "Cleopatra's dream of an emperor whose legs bestrid the ocean is the play's largest overstatement and its most searching question: Dolabella says no such man existed, and she asks whether that settles anything."
@@ -684,7 +684,7 @@
         "rome-and-egypt"
       ],
       "techniques": [
-        "hyperbole-of-scale"
+        "hyperbole"
       ],
       "characters": [
         "antony",
@@ -777,7 +777,7 @@
         "report"
       ],
       "techniques": [
-        "hyperbole-of-scale",
+        "hyperbole",
         "chorus-figure"
       ],
       "characters": [
@@ -803,7 +803,7 @@
         "measure"
       ],
       "techniques": [
-        "hyperbole-of-scale"
+        "hyperbole"
       ],
       "characters": [
         "enobarbus",
@@ -827,7 +827,7 @@
         "measure"
       ],
       "techniques": [
-        "hyperbole-of-scale",
+        "hyperbole",
         "chorus-figure"
       ],
       "characters": [
@@ -997,7 +997,7 @@
         "dissolution"
       ],
       "techniques": [
-        "hyperbole-of-scale"
+        "hyperbole"
       ],
       "characters": [
         "cleopatra",
@@ -1022,7 +1022,7 @@
         "measure"
       ],
       "techniques": [
-        "hyperbole-of-scale"
+        "hyperbole"
       ],
       "characters": [
         "cleopatra",
@@ -1200,6 +1200,18 @@
     }
   ],
   "timeline": [
+    {
+      "year": -31,
+      "label": "The battle of Actium",
+      "detail": "Octavian's fleet defeats Antony and Cleopatra off the western coast of Greece. Shakespeare keeps the sea-fight offstage and stages the reaction to it instead.",
+      "kind": "context"
+    },
+    {
+      "year": -30,
+      "label": "The deaths of Antony and Cleopatra",
+      "detail": "Alexandria falls to Octavian, and within the year both are dead. Plutarch's account of the manner of Cleopatra's death is the source Shakespeare follows most closely.",
+      "kind": "context"
+    },
     {
       "year": 1579,
       "label": "North's translation of Plutarch published",

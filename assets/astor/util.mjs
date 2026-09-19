@@ -92,6 +92,14 @@ export function pageBook() {
   };
 }
 
+// Years before the common era are stored as negative integers and shown the
+// way a reader writes them, so a record can carry Actium without printing -31.
+export function formatYear(year) {
+  const value = Number(year);
+  if (!Number.isFinite(value)) return String(year);
+  return value < 0 ? Math.abs(value) + ' BC' : String(value);
+}
+
 export function formatDate(value) {
   const date = value instanceof Date ? value : new Date(value);
   return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
