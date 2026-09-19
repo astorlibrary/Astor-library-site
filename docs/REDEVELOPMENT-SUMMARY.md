@@ -230,27 +230,62 @@ session contains.
 
 - **Quotations** — filters on theme, technique, book, period and form, plus
   free text over the line, the speaker, the title and the analysis. Filters
-  are reflected in the address, so a filtered view can be linked.
+  are reflected in the address, so a filtered view can be linked, and shown
+  as chips above the results with their own remove. Cards arrive twenty-four
+  at a time; on a phone the filter panel folds behind its heading.
 - **Timeline** — every dated event on one scale, stacked into rows so nothing
   overlaps, with filters for period, book, kind of event and stretch of time.
+  On a phone, which has no width to lay years along, it runs down the page
+  instead, the year on the left and what happened on the right.
   It opens on the span holding most of its events, because a thousand years on
   one axis puts 1606 and 1611 in the same pixel. Selecting an event shows what
   else was happening within twelve years.
-- **Character maps** — inline SVG, no library. Characters sit on a circle,
-  relationships are drawn between them, and relationships that declare the
-  stages they hold in appear and disappear as you step through the acts. Every
-  node is focusable and writes the character's full entry out below, so
-  nothing is trapped in a picture.
+- **Character maps** — inline SVG, no library, drawn at the size of the box
+  it sits in rather than scaled down from a fixed canvas, so the type is the
+  same size on a phone as on a desk. Characters sit around a ring that becomes
+  a tall ellipse on a narrow screen; their names sit outside it where the
+  lines cannot reach them, shortened only as far as they stay unique within
+  the book. Lines are curved and carry no text: choosing a character lights
+  their connections and dims the rest, and the panel beneath spells each one
+  out with the parts of the book it holds in. Relationships that declare
+  their stages appear and disappear as you step through the acts. The same
+  map is embedded in the Characters tab of every book page, loaded the first
+  time the tab is opened.
 - **Techniques** — each term defined once from the shared vocabulary, then
   shown doing a particular job in a particular line in every book that uses
-  it.
+  it. Two hundred terms are reached through an A to Z bar and a search box;
+  each entry opens on its definition and unfolds its examples when asked.
 - **Map** — inline SVG on an equirectangular projection from coordinates held
   with each record. It loads no tiles and contacts nobody; the graticule gives
-  scale without claiming a cartographic accuracy the page does not have, and
-  the list below it carries the information.
+  scale without claiming a cartographic accuracy the page does not have. Three
+  hundred places do not fit three hundred labels, so the map shows dots sized
+  for the screen and names only the one chosen; the list beneath, folded book
+  by book, carries the information and lights the dot when a place is chosen
+  there. It opens on Britain and Ireland, where half the places are.
 - **Compare** — two titles side by side, starting from the themes and
   techniques they share and pairing the quotations that carry them, because
   that is where a comparative paragraph actually begins.
+
+### Reading plans and the revision sheet
+
+The Revise tab of every book page carries two more things built from the
+record.
+
+**Plan your reading.** Choose a finishing date and the days of the week you
+have free, and the book's acts or sections are shared out across them —
+whole parts, never split, weighted by how many scenes or chapters each
+carries, with a rough time for each sitting derived from the record's reading
+time. Ticking a sitting marks its parts as read, so the plot tab and the plan
+agree. The plan is kept in local storage, appears on My Library with its next
+sitting, and downloads as a plain iCalendar file (one all-day event per
+sitting) that any calendar application imports. The arithmetic lives in
+`assets/astor/plan.mjs` with no DOM in it, and is tested against every record.
+
+**One page to take with you.** A revision sheet — the shape of the book, who
+is who, the themes in a sentence each, eight lines worth knowing with their
+references (one per theme first, so the sheet covers the whole book), the
+techniques, and three questions to practise on — drawn on the page and sent
+to the printer on its own, with nothing else from the page around it.
 
 ### Personalisation
 
@@ -384,7 +419,7 @@ recorded here so it is not discovered by a reader.
 node scripts/rebuild-library.js     # catalogue, discovery, study pages, study data, vocabulary check
 node scripts/build-static.js        # header, footer, metadata, JSON-LD, the study toolkit, dist/
 node scripts/check-site.js          # links, structure, editorial safeguards, the data layer
-npm test                            # 98 tests
+npm test                            # 108 tests
 ```
 
 `npm run predeploy` chains build, check and test. CI additionally reruns
@@ -398,6 +433,11 @@ New checks in `check-site.js`:
 - every search-index entry points at a page that exists
 - the published indexes cover exactly the records on disk
 - every shared theme or technique identifier has a canonical name
+- no technique name is entered under two different identifiers (this found
+  five: `narratorial-voice`, `free-indirect`, `doubling-technique`, `songs`
+  and `first-person-retrospect`, each a shared term entered again under a
+  private id, so the glossary showed the term twice with half its examples
+  under each; all five are merged)
 - no record contains banned build wording, `sizes="auto"`, or an exam board
 - play references are `act.scene.line` or a named division
 - every generated page loads a module that exists, carries a `<noscript>`
@@ -405,7 +445,7 @@ New checks in `check-site.js`:
 - `docs/` never reaches `dist/`
 
 New tests: `tests/study-data.test.mjs` (17), `tests/study-games.test.mjs`
-(17), `tests/astor-store.test.mjs` (17). They found two real bugs before
+(17), `tests/astor-store.test.mjs` (19), `tests/reading-plan.test.mjs` (8). They found two real bugs before
 release — a cloze answer returned in the wrong case, so a correctly-filled
 line failed to rebuild; and a character clue that contained the name it was
 asking the player to guess.
@@ -416,6 +456,16 @@ the flashcards, the essay forge, the argument builder, the daily puzzle, all
 six explorers, the dashboard, the teachers' generators, projector mode and the
 search palette, plus keyboard-only play and a check for horizontal overflow at
 390px. No console errors, no failed requests, no overflow.
+
+A second pass, made after the first review, went through every new page in
+a phone-emulating browser as well as at desk width and found what the first
+had missed: the character map's labels piled into the middle of the drawing
+and shrank with it on a phone; the map of settings drew three hundred labels
+over each other; the quotation explorer and the glossary were a hundred and
+seventy thousand and two hundred thousand pixels tall on a phone; the timeline
+truncated every label to nothing at that width; and the book chooser's
+`<select>` overflowed the viewport on every tool page. All of it is redrawn
+or paged, and the screenshots at 390px and 1280px are clean.
 
 ---
 
@@ -509,7 +559,11 @@ from that one file.
 6. **An offline mode.** Everything a reader needs for revision is already
    static JSON and vanilla modules; a service worker would make the games work
    on a train. This is the cheapest large win left.
-7. **Watch the shared vocabulary.** It is the one thing that degrades quietly
+7. **Reading plans that adapt.** The plan is made once from the dates given;
+   a reader who falls behind sees the overdue count but is not offered a
+   re-spread. Re-planning from today, keeping what is already ticked, is a
+   small addition to `plan.mjs`.
+8. **Watch the shared vocabulary.** It is the one thing that degrades quietly
    as the library grows. `node scripts/rebuild-vocabulary.js` should be run
    whenever a batch of records lands, and the canonical names read as a set
    rather than one at a time.
