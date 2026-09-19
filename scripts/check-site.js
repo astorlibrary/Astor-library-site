@@ -1417,6 +1417,26 @@ for (const item of missingCanonicalNames(studyBooks)) {
     '. Run node scripts/rebuild-vocabulary.js --draft');
 }
 
+// Two identifiers with the same display name are one idea entered twice, and
+// the glossary would show the term twice with half its examples under each.
+{
+  const names = new Map();
+  for (const book of studyBooks) {
+    for (const technique of book.techniques || []) {
+      const name = String(technique.name || '').trim().toLowerCase();
+      if (!names.has(name)) names.set(name, new Map());
+      const ids = names.get(name);
+      if (!ids.has(technique.id)) ids.set(technique.id, []);
+      ids.get(technique.id).push(book.slug);
+    }
+  }
+  for (const [name, ids] of names) {
+    if (ids.size < 2) continue;
+    failures.push('The technique "' + name + '" is entered under ' + ids.size + ' different identifiers: ' +
+      [...ids.entries()].map(([id, slugs]) => id + ' (' + slugs.join(', ') + ')').join('; ') + '. Merge them into one');
+  }
+}
+
 // The published indexes must match the data they were generated from.
 for (const [file, key] of [['assets/study-index.json', 'books'], ['assets/search-index.json', 'entries']]) {
   const fullPath = path.join(root, file);

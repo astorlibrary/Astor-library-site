@@ -4,7 +4,7 @@
     "quotations": 1307,
     "characters": 510,
     "themes": 221,
-    "techniques": 221,
+    "techniques": 216,
     "timelineEvents": 646,
     "places": 321
   },
@@ -457,10 +457,10 @@
       ],
       "techniques": [
         {
-          "id": "narratorial-voice",
+          "id": "direct-address",
           "name": "Direct address",
           "canonicalName": "Direct address",
-          "definition": "A narrator who speaks openly to the reader, arguing, joking and insisting.",
+          "definition": "A narrator or speaker turning outward to address the reader or the audience by name.",
           "bookDefinition": "A narrator who speaks openly to the reader, arguing, joking and insisting.",
           "inThisBook": "The book opens by haggling with the reader about a simile — what exactly is dead about a doornail — and only then explains that the point must be conceded or nothing wonderful can follow."
         },
@@ -518,7 +518,7 @@
             "change"
           ],
           "techniques": [
-            "narratorial-voice"
+            "direct-address"
           ],
           "characters": [
             "marley"
@@ -590,7 +590,7 @@
             "business"
           ],
           "techniques": [
-            "narratorial-voice"
+            "direct-address"
           ],
           "characters": [
             "fred",
@@ -614,7 +614,7 @@
             "poverty"
           ],
           "techniques": [
-            "narratorial-voice"
+            "direct-address"
           ],
           "characters": [
             "scrooge"
@@ -659,7 +659,7 @@
             "change"
           ],
           "techniques": [
-            "narratorial-voice",
+            "direct-address",
             "gothic"
           ],
           "characters": [
@@ -834,7 +834,7 @@
             "change"
           ],
           "techniques": [
-            "narratorial-voice"
+            "direct-address"
           ],
           "characters": [
             "ghost-present",
@@ -858,7 +858,7 @@
             "community"
           ],
           "techniques": [
-            "narratorial-voice"
+            "direct-address"
           ],
           "characters": [
             "tiny-tim",
@@ -1028,7 +1028,7 @@
             "business"
           ],
           "techniques": [
-            "narratorial-voice"
+            "direct-address"
           ],
           "characters": [
             "scrooge",
@@ -15021,7 +15021,7 @@
           "inThisBook": "Chapter XI replaces eighteen years with embroideries, jewels, church vestments and Dorian’s ancestors. The absence of scenes is the point: a life spent collecting leaves nothing that can be told as a story."
         },
         {
-          "id": "free-indirect",
+          "id": "free-indirect-style",
           "name": "Free indirect style",
           "canonicalName": "Free indirect style",
           "definition": "Third-person narration that slips into a character’s own vocabulary and self-justification.",
@@ -15343,7 +15343,7 @@
             "surface"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "dorian",
@@ -15394,7 +15394,7 @@
             "surface"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "dorian",
@@ -15419,7 +15419,7 @@
             "influence"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "aestheticist-prose"
           ],
           "characters": [
@@ -15495,7 +15495,7 @@
             "double-life"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "dorian",
@@ -15547,7 +15547,7 @@
             "conscience"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "dorian"
@@ -15621,7 +15621,7 @@
             "time"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "symbolism"
           ],
           "characters": [
@@ -28752,7 +28752,7 @@
           "inThisBook": "Enfield’s it was hellish to see, Lanyon’s refusal to name what he witnessed, and Utterson’s habit of noticing something and going home are all places where the prose declines to elaborate."
         },
         {
-          "id": "doubling-technique",
+          "id": "doubling",
           "name": "Doubling",
           "canonicalName": "Doubling",
           "definition": "Pairing characters or spaces so that each exposes something about the other.",
@@ -29219,7 +29219,7 @@
             "appetite"
           ],
           "techniques": [
-            "doubling-technique"
+            "doubling"
           ],
           "characters": [
             "jekyll",
@@ -29244,7 +29244,7 @@
             "appetite"
           ],
           "techniques": [
-            "doubling-technique"
+            "doubling"
           ],
           "characters": [
             "jekyll",
@@ -29294,7 +29294,7 @@
             "reputation"
           ],
           "techniques": [
-            "doubling-technique"
+            "doubling"
           ],
           "characters": [
             "jekyll",
@@ -29319,7 +29319,7 @@
             "duality"
           ],
           "techniques": [
-            "doubling-technique"
+            "doubling"
           ],
           "characters": [
             "jekyll",
@@ -29345,7 +29345,7 @@
             "duality"
           ],
           "techniques": [
-            "doubling-technique"
+            "doubling"
           ],
           "characters": [
             "jekyll",
@@ -36904,7 +36904,7 @@
       ],
       "techniques": [
         {
-          "id": "free-indirect",
+          "id": "free-indirect-style",
           "name": "Free indirect style",
           "canonicalName": "Free indirect style",
           "definition": "Third-person narration that takes on a character's vocabulary and judgements without quotation marks or attribution.",
@@ -36966,7 +36966,7 @@
             "class"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "clarissa-dalloway"
@@ -36989,7 +36989,7 @@
             "memory"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "tunnelling"
           ],
           "characters": [
@@ -37014,7 +37014,7 @@
             "isolation"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "simultaneity"
           ],
           "characters": [
@@ -37060,7 +37060,7 @@
             "isolation"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "clarissa-dalloway"
@@ -37108,7 +37108,7 @@
             "performance"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "clarissa-dalloway"
@@ -37131,7 +37131,7 @@
             "war"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "simultaneity"
           ],
           "characters": [
@@ -37156,7 +37156,7 @@
             "war"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "rezia"
@@ -37204,7 +37204,7 @@
             "isolation"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "peter-walsh"
@@ -37227,7 +37227,7 @@
             "war"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "septimus-warren-smith"
@@ -37251,7 +37251,7 @@
             "confinement"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "septimus-warren-smith"
@@ -37275,7 +37275,7 @@
             "war"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "septimus-warren-smith",
@@ -37300,7 +37300,7 @@
             "class"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "sir-william-bradshaw"
@@ -37324,7 +37324,7 @@
             "class"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "sir-william-bradshaw"
@@ -37372,7 +37372,7 @@
             "isolation"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "symbolic-objects"
           ],
           "characters": [
@@ -37398,7 +37398,7 @@
             "performance"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "symbolic-objects"
           ],
           "characters": [
@@ -37423,7 +37423,7 @@
             "isolation"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "clarissa-dalloway"
@@ -37447,7 +37447,7 @@
             "war"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "refrain"
           ],
           "characters": [
@@ -37473,7 +37473,7 @@
           ],
           "techniques": [
             "double-plot",
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "clarissa-dalloway",
@@ -37523,7 +37523,7 @@
             "isolation"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "peter-walsh",
@@ -44883,7 +44883,7 @@
       ],
       "techniques": [
         {
-          "id": "free-indirect",
+          "id": "free-indirect-style",
           "name": "Free indirect style",
           "canonicalName": "Free indirect style",
           "definition": "Third-person narration that takes on the vocabulary and bias of the character it follows.",
@@ -44969,7 +44969,7 @@
             "regiment"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "colour-imagery"
           ],
           "characters": [
@@ -44994,7 +44994,7 @@
             "courage"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "henry-fleming"
@@ -45018,7 +45018,7 @@
             "courage"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "henry-fleming",
@@ -45043,7 +45043,7 @@
             "courage"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "henry-fleming",
@@ -45068,7 +45068,7 @@
             "courage"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "irony"
           ],
           "characters": [
@@ -45094,7 +45094,7 @@
           ],
           "techniques": [
             "animal-imagery",
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "henry-fleming"
@@ -45117,7 +45117,7 @@
             "self-deception"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "irony"
           ],
           "characters": [
@@ -45143,7 +45143,7 @@
           ],
           "techniques": [
             "irony",
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "henry-fleming"
@@ -45166,7 +45166,7 @@
             "nature"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "irony"
           ],
           "characters": [
@@ -45240,7 +45240,7 @@
           ],
           "techniques": [
             "colour-imagery",
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "henry-fleming"
@@ -45289,7 +45289,7 @@
             "self-deception"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "henry-fleming",
@@ -45338,7 +45338,7 @@
             "courage"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "animal-imagery",
             "irony"
           ],
@@ -45365,7 +45365,7 @@
           ],
           "techniques": [
             "animal-imagery",
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "henry-fleming"
@@ -45442,7 +45442,7 @@
           ],
           "techniques": [
             "colour-imagery",
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "henry-fleming"
@@ -45466,7 +45466,7 @@
             "courage"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "irony"
           ],
           "characters": [
@@ -45491,7 +45491,7 @@
             "courage"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "henry-fleming"
@@ -49002,10 +49002,10 @@
       ],
       "techniques": [
         {
-          "id": "first-person-retrospect",
+          "id": "retrospective-narration",
           "name": "Retrospective first person",
-          "canonicalName": "Retrospective first person",
-          "definition": "A narrator recounting his own past with the benefit of knowing how it ended.",
+          "canonicalName": "Retrospective narration",
+          "definition": "A narrator telling their own earlier life, with the distance between the two selves doing the judging.",
           "bookDefinition": "A narrator recounting his own past with the benefit of knowing how it ended.",
           "inThisBook": "Crusoe repeatedly corrects his younger self — what he then took for a miracle, what he now sees was a bag of chicken feed — so the book contains its own commentary."
         },
@@ -49064,7 +49064,7 @@
           ],
           "techniques": [
             "circumstantial-realism",
-            "first-person-retrospect"
+            "retrospective-narration"
           ],
           "characters": [
             "crusoe",
@@ -49089,7 +49089,7 @@
             "record"
           ],
           "techniques": [
-            "first-person-retrospect"
+            "retrospective-narration"
           ],
           "characters": [
             "crusoes-father",
@@ -49261,7 +49261,7 @@
             "record"
           ],
           "techniques": [
-            "first-person-retrospect"
+            "retrospective-narration"
           ],
           "characters": [
             "crusoe"
@@ -49332,7 +49332,7 @@
             "solitude"
           ],
           "techniques": [
-            "first-person-retrospect"
+            "retrospective-narration"
           ],
           "characters": [
             "crusoe"
@@ -49356,7 +49356,7 @@
             "solitude"
           ],
           "techniques": [
-            "first-person-retrospect"
+            "retrospective-narration"
           ],
           "characters": [
             "crusoe"
@@ -49430,7 +49430,7 @@
           ],
           "techniques": [
             "providential-reading",
-            "first-person-retrospect"
+            "retrospective-narration"
           ],
           "characters": [
             "crusoe"
@@ -49504,7 +49504,7 @@
             "slavery"
           ],
           "techniques": [
-            "first-person-retrospect"
+            "retrospective-narration"
           ],
           "characters": [
             "friday",
@@ -56713,7 +56713,7 @@
       ],
       "techniques": [
         {
-          "id": "free-indirect",
+          "id": "free-indirect-style",
           "name": "Free indirect style",
           "canonicalName": "Free indirect style",
           "definition": "Third-person narration that takes on the vocabulary and bias of the character it follows.",
@@ -56774,7 +56774,7 @@
             "marriage"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "symbolic-objects"
           ],
           "characters": [
@@ -56800,7 +56800,7 @@
             "isolation"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "edna-pontellier"
@@ -56846,7 +56846,7 @@
             "awakening"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "edna-pontellier"
@@ -56870,7 +56870,7 @@
             "isolation"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "edna-pontellier"
@@ -56943,7 +56943,7 @@
             "sea"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "edna-pontellier"
@@ -56967,7 +56967,7 @@
             "awakening"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "edna-pontellier"
@@ -57038,7 +57038,7 @@
           ],
           "techniques": [
             "foils",
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "edna-pontellier",
@@ -57063,7 +57063,7 @@
             "marriage"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "edna-pontellier"
@@ -57228,7 +57228,7 @@
             "sea"
           ],
           "techniques": [
-            "free-indirect"
+            "free-indirect-style"
           ],
           "characters": [
             "edna-pontellier"
@@ -57252,7 +57252,7 @@
             "marriage"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "ellipsis"
           ],
           "characters": [
@@ -57277,7 +57277,7 @@
             "isolation"
           ],
           "techniques": [
-            "free-indirect",
+            "free-indirect-style",
             "foils"
           ],
           "characters": [
@@ -71197,10 +71197,10 @@
       ],
       "techniques": [
         {
-          "id": "songs",
+          "id": "song",
           "name": "Song",
           "canonicalName": "Song",
-          "definition": "Sung lyric used to carry mood, comment or structure rather than plot.",
+          "definition": "A sung passage standing outside the dialogue, free to say what the speaking characters cannot.",
           "bookDefinition": "Sung lyric used to carry mood, comment or structure rather than plot.",
           "inThisBook": "There are more songs here than in any other Shakespeare comedy, and they go in one direction: from 'O mistress mine' through 'Come away, death' to a closing ballad about wind and rain that undoes the happy ending."
         },
@@ -71258,7 +71258,7 @@
             "desire"
           ],
           "techniques": [
-            "songs"
+            "song"
           ],
           "characters": [
             "orsino"
@@ -71448,7 +71448,7 @@
             "festivity"
           ],
           "techniques": [
-            "songs"
+            "song"
           ],
           "characters": [
             "feste",
@@ -71779,7 +71779,7 @@
             "mourning"
           ],
           "techniques": [
-            "songs",
+            "song",
             "fools-licence"
           ],
           "characters": [
