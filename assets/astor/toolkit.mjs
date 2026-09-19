@@ -407,8 +407,10 @@ function setUpVideos(root) {
         src: build(card.dataset.videoId),
         title: card.querySelector('h4')?.textContent || 'Video',
         loading: 'lazy',
-        allow: 'accelerometer; encrypted-media; picture-in-picture',
-        referrerpolicy: 'no-referrer',
+        allow: 'accelerometer; encrypted-media; picture-in-picture; fullscreen',
+        // YouTube refuses an embed that names no origin (its "Error 153"), so
+        // the player is told which site it is on, and nothing about the page.
+        referrerpolicy: 'strict-origin-when-cross-origin',
         allowfullscreen: true
       });
       button.replaceWith(el('div', { class: 'astor-video-frame' }, [frame]));
