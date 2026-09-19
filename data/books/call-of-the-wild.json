@@ -1,0 +1,1180 @@
+{
+  "slug": "call-of-the-wild",
+  "title": "The Call of the Wild",
+  "author": "Jack London",
+  "href": "/books/call-of-the-wild/",
+  "buyUrl": "https://mybook.to/HWzVY4",
+  "form": "novel",
+  "genre": "Naturalist adventure",
+  "period": "American Classics",
+  "written": "1902, after London’s winter in the Yukon",
+  "firstPublished": 1903,
+  "setting": "The Santa Clara Valley in California, then the Klondike trail from Dyea over the Chilkoot Pass to Dawson and beyond",
+  "readingTime": 150,
+  "difficulty": 2,
+  "lengthNote": "Seven chapters, about 32,000 words — short enough to be read at a sitting, and built to be",
+  "openingLine": "Buck did not read the newspapers, or he would have known that trouble was brewing, not alone for himself, but for every tidewater dog, strong of muscle and with warm, long hair, from Puget Sound to San Diego.",
+  "summary": "A gardener’s helper with gambling debts sells a judge’s dog to the Klondike trade, and Buck is carried north into a labour market that values him by the pound. London writes the change that follows as an education rather than a liberation: the club teaches law, the traces teach work, and every step towards the wolves is paid for in hunger, frostbite and the deaths of other dogs. The book is told from inside an animal that cannot explain itself, which is why its conclusions have to be shown in behaviour rather than argued.",
+  "referenceStyle": "chapter",
+  "sourceText": {
+    "label": "Standard Ebooks text of The Call of the Wild",
+    "note": "The seven chapters are numbered I to VII and carry titles in the text; they are cited here by Arabic numeral."
+  },
+  "atAGlance": [
+    {
+      "label": "First published",
+      "value": "1903",
+      "note": "Serialised in five instalments in The Saturday Evening Post before Macmillan issued the book."
+    },
+    {
+      "label": "Written from",
+      "value": "One Yukon winter",
+      "note": "London went north in 1897 and came back with almost no gold and the whole of his Northland material."
+    },
+    {
+      "label": "Shape",
+      "value": "Seven titled chapters",
+      "note": "Three of them are named for a law, a beast and a toil; only the last is named for the call."
+    },
+    {
+      "label": "Point of view",
+      "value": "A dog’s",
+      "note": "Buck is given memory, calculation and dream, but never speech and never a human sentence of his own."
+    }
+  ],
+  "structure": [
+    {
+      "id": "chapter-1",
+      "label": "Chapter 1",
+      "title": "Into the Primitive",
+      "summary": "Buck is stolen from Judge Miller’s estate, crated, starved, and beaten into submission by a man with a club. The chapter turns a domestic animal into freight, and the beating is presented as a lesson rather than an outrage: he learns that a man with a club is to be obeyed, and never forgets it."
+    },
+    {
+      "id": "chapter-2",
+      "label": "Chapter 2",
+      "title": "The Law of Club and Fang",
+      "summary": "Curly is killed in two minutes on the Dyea beach, and Buck understands the rule of the place before anyone states it. He learns to sleep under the snow, to steal food without being caught and to pull in harness, and London is careful to record each of these as a loss as well as a skill."
+    },
+    {
+      "id": "chapter-3",
+      "label": "Chapter 3",
+      "title": "The Dominant Primordial Beast",
+      "summary": "The rivalry with Spitz turns into open war over a nest in the snow, and Buck begins undermining the lead dog’s authority by protecting the shirkers. The rabbit hunt ends in the fight that kills Spitz, and Buck wins it with cunning rather than weight."
+    },
+    {
+      "id": "chapter-4",
+      "label": "Chapter 4",
+      "title": "Who Has Won to Mastership",
+      "summary": "Buck takes the lead by refusing any other place in the team and drives it harder than Spitz ever did. The record run to Skagway is followed by the death of Dave, who cannot bear to be taken out of the traces, and by the sale of the whole team to men who know nothing."
+    },
+    {
+      "id": "chapter-5",
+      "label": "Chapter 5",
+      "title": "The Toil of Trace and Trail",
+      "summary": "Hal, Charles and Mercedes load too much, feed too much, then feed nothing, and beat dogs that can no longer stand. The chapter is the book’s clearest statement that cruelty in the North is usually incompetence, and it ends with the ice giving way beneath the sled Buck has been cut out of."
+    },
+    {
+      "id": "chapter-6",
+      "label": "Chapter 6",
+      "title": "For the Love of a Man",
+      "summary": "John Thornton nurses Buck back to strength and receives the only love Buck has ever given. The thousand-pound wager at Dawson turns that love into a public spectacle, and Buck’s rescues of Thornton show devotion working as an instinct faster than obedience."
+    },
+    {
+      "id": "chapter-7",
+      "label": "Chapter 7",
+      "title": "The Sounding of the Call",
+      "summary": "In the unmapped East, Buck hunts a bull moose for days and runs with a timber wolf, returning to camp each time because Thornton is there. The Yeehats kill Thornton, Buck kills the Yeehats, and the last tie to man is cut by other men."
+    }
+  ],
+  "characters": [
+    {
+      "id": "buck",
+      "name": "Buck",
+      "role": "A St Bernard and Scotch shepherd cross, latterly a sled dog",
+      "summary": "He begins as a well-fed aristocrat on a Californian estate and ends at the head of a wolf pack, and London insists that nothing in between is sudden. Each stage is a piece of learning under pressure — the club, the snow nest, the stolen bacon, the fight with Spitz — so that the wildest thing he does is also the best-trained.",
+      "clue": "Stolen from a judge’s lawn and sold by the pound, this one learns to sleep under snow, steal without being seen and lead a team, and finishes as a story the Yeehats tell about a valley they will not enter.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "adaptable",
+        "patient",
+        "capable of imagination"
+      ],
+      "relationships": [
+        {
+          "to": "spitz",
+          "label": "rival and killer of",
+          "kind": "rival",
+          "stages": [
+            "chapter-2",
+            "chapter-3"
+          ]
+        },
+        {
+          "to": "john-thornton",
+          "label": "loved by and loves",
+          "kind": "love",
+          "stages": [
+            "chapter-6",
+            "chapter-7"
+          ]
+        },
+        {
+          "to": "man-in-the-red-sweater",
+          "label": "taught by the club of",
+          "kind": "enemy",
+          "stages": [
+            "chapter-1"
+          ]
+        },
+        {
+          "to": "perrault-and-francois",
+          "label": "worked by",
+          "kind": "service",
+          "stages": [
+            "chapter-2",
+            "chapter-3",
+            "chapter-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spitz",
+      "name": "Spitz",
+      "role": "Lead dog of the mail team",
+      "summary": "A Spitzbergen dog with an experienced sense of where power lies and a habit of laughing with his tongue out as he kills. He is not a villain so much as an incumbent, and the book gives him the same qualities it admires in Buck, minus imagination.",
+      "clue": "A snow-white incumbent who runs out his scarlet tongue in a way he has of laughing, and who is beaten at last by a trick he cannot see coming twice.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "experienced",
+        "treacherous",
+        "unimaginative"
+      ],
+      "relationships": [
+        {
+          "to": "buck",
+          "label": "displaced by",
+          "kind": "rival",
+          "stages": [
+            "chapter-3"
+          ]
+        },
+        {
+          "to": "curly",
+          "label": "first to attack",
+          "kind": "enemy",
+          "stages": [
+            "chapter-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "john-thornton",
+      "name": "John Thornton",
+      "role": "A prospector with frozen feet, later Buck’s master",
+      "summary": "He is the only man in the book who treats dogs as company rather than plant, and the book rewards him with a devotion so absolute it becomes dangerous to him. His death is arranged so that Buck loses him to other men rather than to the wild, which keeps the ending from being a simple choice.",
+      "clue": "Left behind with frozen feet to mend, he cuts a dying dog out of the traces with two strokes of a knife and never afterwards has to give that dog an order twice.",
+      "firstAppearance": "Chapter 5",
+      "traits": [
+        "competent",
+        "unafraid of the wild",
+        "careless of gold"
+      ],
+      "relationships": [
+        {
+          "to": "buck",
+          "label": "master and beloved of",
+          "kind": "love",
+          "stages": [
+            "chapter-6",
+            "chapter-7"
+          ]
+        },
+        {
+          "to": "hal-and-charles",
+          "label": "intervenes against",
+          "kind": "enemy",
+          "stages": [
+            "chapter-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "perrault-and-francois",
+      "name": "Perrault and François",
+      "role": "Government couriers driving the mail team",
+      "summary": "Hard employers who know ice, pace and dogs, and who are set in the book as a standard against which later owners fail. They work Buck to the edge of his strength and are the only handlers who never waste him, which the novel counts as a kind of decency.",
+      "clue": "A French-Canadian courier and his halfbreed driver, in a hurry with government despatches, who judge ice by looking at it and are proud of a record run.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "skilled",
+        "hard",
+        "fair by the standards of the trail"
+      ],
+      "relationships": [
+        {
+          "to": "buck",
+          "label": "drive and feed",
+          "kind": "service",
+          "stages": [
+            "chapter-2",
+            "chapter-3",
+            "chapter-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "man-in-the-red-sweater",
+      "name": "The man in the red sweater",
+      "role": "A dog-breaker in Seattle",
+      "summary": "He appears for one chapter, hits Buck until Buck stops rising, and is then described as almost fair. The book needs him to state its first principle in a form that cannot be argued with, and gives him no name, no history and no cruelty beyond the professional.",
+      "clue": "He greets each crated arrival with a hatchet and a club, breaks it, feeds it, and sells it on at three hundred dollars a head, government money.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "methodical",
+        "businesslike"
+      ],
+      "relationships": [
+        {
+          "to": "buck",
+          "label": "breaks",
+          "kind": "enemy",
+          "stages": [
+            "chapter-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hal-and-charles",
+      "name": "Hal and Charles",
+      "role": "Gold-rush newcomers who buy the team",
+      "summary": "A young man with a Colt’s revolver and a hunting-knife and a middle-aged one with watering eyes, neither of whom can pack a sled or count a ration. Their failure is arithmetical before it is moral, and London lets the arithmetic do the condemning.",
+      "clue": "One wears a revolver and a bowie knife on a belt that bristles with cartridges; the other sits down very slowly on a log; between them they buy fourteen dogs and food for far fewer.",
+      "firstAppearance": "Chapter 5",
+      "traits": [
+        "ignorant",
+        "quarrelsome",
+        "brutal when frightened"
+      ],
+      "relationships": [
+        {
+          "to": "mercedes",
+          "label": "brother and husband of",
+          "kind": "family",
+          "stages": [
+            "chapter-5"
+          ]
+        },
+        {
+          "to": "buck",
+          "label": "own and beat",
+          "kind": "enemy",
+          "stages": [
+            "chapter-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mercedes",
+      "name": "Mercedes",
+      "role": "Charles’s wife and Hal’s sister",
+      "summary": "She weeps over the dogs while riding on the sled they are dragging, and her kindness is one of the book’s most exact pieces of cruelty. London uses her to show that sentiment about animals and knowledge of them are different things, and that in the North the difference kills.",
+      "clue": "She pleads for the dogs, hides food for them, throws her arms round the neck of one of them, and then weighs one hundred and twenty pounds on the load they cannot move.",
+      "firstAppearance": "Chapter 5",
+      "traits": [
+        "sentimental",
+        "helpless by custom",
+        "unable to learn"
+      ],
+      "relationships": [
+        {
+          "to": "hal-and-charles",
+          "label": "sister and wife to",
+          "kind": "family",
+          "stages": [
+            "chapter-5"
+          ]
+        },
+        {
+          "to": "buck",
+          "label": "pities and exhausts",
+          "kind": "enemy",
+          "stages": [
+            "chapter-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dave",
+      "name": "Dave",
+      "role": "Wheel dog",
+      "summary": "A morose animal who cares about nothing except the sled behind him, and who fights to be put back in harness when he is dying of an internal injury. His death is the book’s clearest statement that work can be an identity rather than an imposition.",
+      "clue": "Taken out of the traces to rest, this one staggers alongside the team, bites its way back into place, and is finally granted the dignity of a shot in the timber.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "morose",
+        "expert",
+        "proud of the traces"
+      ],
+      "relationships": [
+        {
+          "to": "buck",
+          "label": "teaches the harness to",
+          "kind": "mentor",
+          "stages": [
+            "chapter-2",
+            "chapter-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "curly",
+      "name": "Curly",
+      "role": "A good-natured Newfoundland",
+      "summary": "She makes an advance towards a husky in the way a Southland dog would, and is dead two minutes later with forty dogs looking on. Her death is the whole of the book’s argument compressed into one page, and Buck remembers it for the rest of the novel.",
+      "clue": "Friendly in the manner of a warmer country, she goes down once on the Dyea beach and never gets up, and the manner of it comes back to a watching dog at night for years.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "good-natured",
+        "unprepared"
+      ],
+      "relationships": [
+        {
+          "to": "buck",
+          "label": "shipmate of",
+          "kind": "ally",
+          "stages": [
+            "chapter-1",
+            "chapter-2"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "force",
+      "name": "Club, fang and the making of law",
+      "summary": "The book’s laws are not agreed but demonstrated: a club teaches obedience, a pack teaches that a dog who goes down does not get up, and a lead dog holds rank only while he can hold it. London never calls this justice, but he does call it law, and the distinction is the novel’s hardest idea.",
+      "development": "Stated in the beating of Chapter 1, named in the title of Chapter 2, tested in the fight with Spitz, and finally turned against human beings in Chapter 7, where Buck kills men and feels pride rather than guilt."
+    },
+    {
+      "id": "work",
+      "name": "Trace, trail and the day’s haul",
+      "summary": "Everything in the North is measured in loads, miles and rations, and the novel keeps the figures in front of the reader: sixty miles in a day, a pound and a half of dried salmon, a thousand pounds of flour frozen to the snow. Buck's education is a working life, and the book's admiration for competence is as strong as its interest in instinct.",
+      "development": "Buck first finds that he does not despise the harness; Dave dies rather than leave it; and in Chapter 6 the same strength is put to a wager, which is work turned into entertainment."
+    },
+    {
+      "id": "ownership",
+      "name": "Owners, and what a dog is worth",
+      "summary": "Buck passes through the hands of a judge, a gardener’s helper, a saloon keeper, a dog-breaker, two couriers, a Scotch halfbreed, three incompetents and finally a man who does not think of him as property at all. Each transfer has a price attached, and the novel’s last move is to remove him from the market entirely.",
+      "development": "Theft in California, three hundred dollars in Seattle, a government sale at Skagway, a hopeless purchase at Dawson, and then Thornton, whose claim is never written down and who is killed by other men before it can be tested."
+    },
+    {
+      "id": "survival",
+      "name": "Adaptation and the fit",
+      "summary": "London’s naturalism is practical rather than theoretical: the dog who learns to steal survives, the dog who keeps his Southland manners dies on the beach, and morality is treated as a luxury good that the climate cannot support. The book presents this as observation, and its confidence is one of the things modern readers argue with.",
+      "development": "Curly's death sets the terms, the first theft marks Buck as fit, and by Chapter 7 he is described as a creature in full flower — the same vocabulary applied to a killer rather than a survivor."
+    },
+    {
+      "id": "wild",
+      "name": "The call, and ancestral memory",
+      "summary": "Beside the trail material runs a stranger book, in which Buck dreams of a hairy man beside a fire and hears something in the forest that has no object. London gives this the language of inheritance rather than of longing, so that going wild reads as recall rather than escape.",
+      "development": "First a half-memory by the campfire, then the wolf brother in Chapter 7, then a period of alternation in which the call and Thornton hold him equally, and finally the pack."
+    },
+    {
+      "id": "loyalty",
+      "name": "Love for one man",
+      "summary": "The bond with Thornton is the only relationship in the novel that is not a transaction, and it is written as a physical habit — the hand taken in the jaws, the head rested on a knee, the watch kept from a distance. It is also the last thing standing between Buck and the forest, which is why the book has to kill it.",
+      "development": "Rescue in Chapter 5, convalescence and games in Chapter 6, the rapids and the wager, and then a pool in a mining camp from which no trace leads away."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "animal-focalisation",
+      "name": "The animal point of view",
+      "definition": "Narration tied to the perceptions of a creature that cannot use language, so that thought has to be shown as sensation, memory and behaviour.",
+      "inThisBook": "Buck understands the sale of a team as money passing between men, and the narrator regularly marks the limit — 'Not that Buck reasoned it out' — to keep him an animal while granting him an inner life."
+    },
+    {
+      "id": "landscape",
+      "name": "The North as pressure",
+      "definition": "Using terrain, weather and scale to exert force on the characters rather than to decorate them.",
+      "inThisBook": "Sixty below, thin fall ice, the Chilcoot Divide and a trail that has to be broken with webbed shoes are not scenery: they set the ration, the pace and the odds on any given dog living out the month."
+    },
+    {
+      "id": "elevated-diction",
+      "name": "Grand diction for animal experience",
+      "definition": "Deliberately heightened, Latinate vocabulary applied to creatures and events that would ordinarily be described plainly.",
+      "inThisBook": "'The dominant primordial beast', 'the articulate travail of existence', 'the inexorable elimination of the superfluous' — London writes a dog fight in the language of evolutionary science and epic at once."
+    },
+    {
+      "id": "refrain",
+      "name": "The returning phrase",
+      "definition": "A phrase repeated at intervals so that its meaning changes with each context.",
+      "inThisBook": "'The law of club and fang' arrives as a description of savages, becomes an excuse for theft, then a rule Buck enforces, and finally the standard he breaks by killing men."
+    },
+    {
+      "id": "dialect",
+      "name": "Dialect",
+      "definition": "Regional speech written phonetically.",
+      "inThisBook": "François is given a thick phonetic French-Canadian English — 'Dat Buck two devils' — which sets the drivers' speech apart from a narrator who has the whole vocabulary of Victorian science at his disposal."
+    },
+    {
+      "id": "symbolic-objects",
+      "name": "Objects that carry the argument",
+      "definition": "Things in the narrative that carry a meaning the characters half-register.",
+      "inThisBook": "The club, the traces, the thousand-pound sled and the moosehide sack of gold are all ordinary equipment, and each one measures exactly how much of Buck belongs to somebody."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "did-not-read-the-newspapers",
+      "text": "Buck did not read the newspapers, or he would have known that trouble was brewing, not alone for himself, but for every tidewater dog, strong of muscle and with warm, long hair, from Puget Sound to San Diego.",
+      "reference": "Chapter 1",
+      "stage": "chapter-1",
+      "context": "The novel’s opening sentence.",
+      "analysis": "The joke about newspapers grants Buck ignorance rather than stupidity, and the sentence then does the reading for him: the danger is a market, described by geography and by coat length. Before the story starts, the reader has been told that what happens to Buck happens to a class of animals, which is why the book keeps count of other dogs.",
+      "themes": [
+        "ownership"
+      ],
+      "techniques": [
+        "animal-focalisation"
+      ],
+      "characters": [
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "newspapers",
+        "tidewater"
+      ]
+    },
+    {
+      "id": "beaten-not-broken",
+      "text": "He was beaten (he knew that); but he was not broken.",
+      "reference": "Chapter 1",
+      "stage": "chapter-1",
+      "context": "After the man in the red sweater has clubbed Buck to the ground for the last time.",
+      "analysis": "The bracket is the sentence’s whole method: knowledge is separated from feeling and filed away, which is how Buck will meet everything from here on. Note the passive verbs — things are done to him in this chapter, and the first active thing he does with the lesson is remember it.",
+      "themes": [
+        "force",
+        "survival"
+      ],
+      "techniques": [
+        "animal-focalisation"
+      ],
+      "characters": [
+        "buck",
+        "man-in-the-red-sweater"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "beaten",
+        "broken"
+      ]
+    },
+    {
+      "id": "club-was-a-revelation",
+      "text": "That club was a revelation. It was his introduction to the reign of primitive law, and he met the introduction halfway.",
+      "reference": "Chapter 1",
+      "stage": "chapter-1",
+      "context": "Buck, still unable to stand, watching the man who has beaten him.",
+      "analysis": "'Revelation', 'reign' and 'introduction' are the vocabulary of religion and of polite society, applied to a beating with a stick. 'Halfway' is the disturbing word: the novel is claiming that Buck consents to the arrangement, and that the consent is what makes him fit for the North.",
+      "themes": [
+        "force",
+        "survival"
+      ],
+      "techniques": [
+        "elevated-diction",
+        "symbolic-objects"
+      ],
+      "characters": [
+        "buck",
+        "man-in-the-red-sweater"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "revelation",
+        "halfway"
+      ]
+    },
+    {
+      "id": "no-law-but-club-and-fang",
+      "text": "They were savages, all of them, who knew no law but the law of club and fang.",
+      "reference": "Chapter 2",
+      "stage": "chapter-2",
+      "context": "Buck’s first day on the Dyea beach.",
+      "analysis": "The sentence puts dogs and men in a single category, which is the book’s recurring move and the source of most of the trouble modern readers have with it. It also gives the chapter its title before any incident has proved the point — the proof arrives thirty lines later, when Curly goes down.",
+      "themes": [
+        "force"
+      ],
+      "techniques": [
+        "refrain"
+      ],
+      "characters": [
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "cloze": [
+        "savages",
+        "fang"
+      ]
+    },
+    {
+      "id": "decay-of-moral-nature",
+      "text": "It marked, further, the decay or going to pieces of his moral nature, a vain thing and a handicap in the ruthless struggle for existence.",
+      "reference": "Chapter 2",
+      "stage": "chapter-2",
+      "context": "After Buck steals a chunk of bacon from Perrault’s supplies — the first theft of his life.",
+      "analysis": "Two appraisals sit in one sentence: 'decay' and 'going to pieces' condemn the change, while 'a vain thing and a handicap' approves of it. The double vocabulary is the naturalist position in miniature, and the novel never resolves it — it simply stops using moral words once Buck has stopped needing them.",
+      "themes": [
+        "survival"
+      ],
+      "techniques": [
+        "elevated-diction"
+      ],
+      "characters": [
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "cloze": [
+        "decay",
+        "handicap"
+      ]
+    },
+    {
+      "id": "not-that-buck-reasoned",
+      "text": "Not that Buck reasoned it out. He was fit, that was all, and unconsciously he accommodated himself to the new mode of life.",
+      "reference": "Chapter 2",
+      "stage": "chapter-2",
+      "context": "Immediately after the narrator has explained the theft in the language of Southland law and Northland necessity.",
+      "analysis": "The narrator withdraws the argument he has just made from the character who prompted it, which is how London keeps a thinking dog from becoming a talking one. 'Fit' is doing technical work here: it belongs to the vocabulary of natural selection, not of praise.",
+      "themes": [
+        "survival"
+      ],
+      "techniques": [
+        "animal-focalisation"
+      ],
+      "characters": [
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "cloze": [
+        "reasoned",
+        "fit"
+      ]
+    },
+    {
+      "id": "dominant-primordial-beast",
+      "text": "The dominant primordial beast was strong in Buck, and under the fierce conditions of trail life it grew and grew. Yet it was a secret growth.",
+      "reference": "Chapter 3",
+      "stage": "chapter-3",
+      "context": "The opening of the chapter that ends with Spitz’s death.",
+      "analysis": "The grammar makes the beast the subject and Buck the location, which is the book’s way of describing character as something inherited rather than chosen. 'Secret' matters for the plot: Buck spends the chapter avoiding fights precisely because he intends to win the only one that counts.",
+      "themes": [
+        "wild",
+        "force"
+      ],
+      "techniques": [
+        "elevated-diction"
+      ],
+      "characters": [
+        "buck",
+        "spitz"
+      ],
+      "source": "Standard Ebooks text, Chapter 3",
+      "cloze": [
+        "primordial",
+        "secret"
+      ]
+    },
+    {
+      "id": "ecstasy-summit-of-life",
+      "text": "There is an ecstasy that marks the summit of life, and beyond which life cannot rise.",
+      "reference": "Chapter 3",
+      "stage": "chapter-3",
+      "context": "Buck leading the pack after a snowshoe rabbit in the moonlight.",
+      "analysis": "The narrator steps away from the dog entirely here and makes a claim about artists and soldiers before returning to Buck, which is how the hunt is raised to the level of a general law. It is also the closest the novel comes to admitting that the wild is being sold to the reader as a pleasure.",
+      "themes": [
+        "wild"
+      ],
+      "techniques": [
+        "elevated-diction"
+      ],
+      "characters": [
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 3",
+      "cloze": [
+        "ecstasy",
+        "summit"
+      ]
+    },
+    {
+      "id": "mercy-gentler-climes",
+      "text": "There was no hope for him. Buck was inexorable. Mercy was a thing reserved for gentler climes.",
+      "reference": "Chapter 3",
+      "stage": "chapter-3",
+      "context": "Spitz on three legs, with the circle of huskies waiting to close in.",
+      "analysis": "Three short sentences in place of the long periodic ones that surround them: the prose contracts at exactly the moment the killing begins. 'Climes' turns mercy into a matter of latitude rather than character, which excuses Buck and indicts the whole geography instead.",
+      "themes": [
+        "force",
+        "survival"
+      ],
+      "techniques": [
+        "landscape"
+      ],
+      "characters": [
+        "buck",
+        "spitz"
+      ],
+      "source": "Standard Ebooks text, Chapter 3",
+      "cloze": [
+        "Mercy",
+        "climes"
+      ]
+    },
+    {
+      "id": "fight-by-head",
+      "text": "He fought by instinct, but he could fight by head as well.",
+      "reference": "Chapter 3",
+      "stage": "chapter-3",
+      "context": "The decisive moment of the fight with Spitz, as Buck breaks his forelegs one after the other.",
+      "analysis": "The novel has spent two chapters arguing that instinct is what survives, and then awards the fight to calculation. Whatever the narrator says about primordial beasts, Buck wins because he does the same feint twice and the other dog cannot adapt.",
+      "themes": [
+        "survival",
+        "force"
+      ],
+      "techniques": [
+        "animal-focalisation"
+      ],
+      "characters": [
+        "buck",
+        "spitz"
+      ],
+      "source": "Standard Ebooks text, Chapter 3",
+      "cloze": [
+        "instinct",
+        "head"
+      ]
+    },
+    {
+      "id": "pride-of-trace-and-trail",
+      "text": "For the pride of trace and trail was his, and, sick unto death, he could not bear that another dog should do his work.",
+      "reference": "Chapter 4",
+      "stage": "chapter-4",
+      "context": "Dave, dying of an internal injury, fighting to be put back in the harness he has been taken out of to rest.",
+      "analysis": "'Sick unto death' is biblical diction spent on a sled dog, and the effect is to take his preference seriously rather than to make it pathetic. The scene also states the book’s most unexpected proposition: that the harness can be an identity, so that removing it is the injury.",
+      "themes": [
+        "work",
+        "loyalty"
+      ],
+      "techniques": [
+        "elevated-diction",
+        "symbolic-objects"
+      ],
+      "characters": [
+        "dave",
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 4",
+      "cloze": [
+        "pride",
+        "work"
+      ]
+    },
+    {
+      "id": "undreamed-of-tent",
+      "text": "“Undreamed of!” cried Mercedes, throwing up her hands in dainty dismay. “However in the world could I manage without a tent?”",
+      "speaker": "Mercedes",
+      "reference": "Chapter 5",
+      "stage": "chapter-5",
+      "context": "A bystander at Dawson has suggested that the party travel without a tent.",
+      "analysis": "Her objection is grammatically about management and actually about self-image, and the book lets the word 'dainty' do the damage. The line belongs to the drawing room, which is the point: everything the three newcomers say is imported, and the North charges them freight on it.",
+      "themes": [
+        "ownership",
+        "work"
+      ],
+      "techniques": [
+        "dialect"
+      ],
+      "characters": [
+        "mercedes",
+        "hal-and-charles"
+      ],
+      "source": "Standard Ebooks text, Chapter 5",
+      "cloze": [
+        "Undreamed",
+        "dainty"
+      ]
+    },
+    {
+      "id": "elimination-of-the-superfluous",
+      "text": "And so it went, the inexorable elimination of the superfluous.",
+      "reference": "Chapter 5",
+      "stage": "chapter-5",
+      "context": "Mercedes’s clothes-bags being emptied onto the snow as the load is cut down.",
+      "analysis": "The phrase is lifted from evolutionary argument and applied to luggage, and the comedy of that is exact: the same principle will shortly be applied to the dogs and then to the people. London rarely tells the reader a system is at work; here he names one and lets it run through three paragraphs of packing.",
+      "themes": [
+        "survival",
+        "work"
+      ],
+      "techniques": [
+        "elevated-diction"
+      ],
+      "characters": [
+        "mercedes",
+        "hal-and-charles"
+      ],
+      "source": "Standard Ebooks text, Chapter 5",
+      "cloze": [
+        "inexorable",
+        "superfluous"
+      ]
+    },
+    {
+      "id": "genuine-passionate-love",
+      "text": "Love, genuine passionate love, was his for the first time.",
+      "reference": "Chapter 6",
+      "stage": "chapter-6",
+      "context": "Buck convalescing in John Thornton’s camp after being cut out of Hal’s traces.",
+      "analysis": "The sentence is placed after a page of games and roughhousing rather than before it, so the claim is made to rest on evidence. It also quietly disposes of the Santa Clara Valley: the judge’s household gave Buck dignity, partnership and stewardship, and the book counts none of that as love.",
+      "themes": [
+        "loyalty"
+      ],
+      "techniques": [
+        "animal-focalisation"
+      ],
+      "characters": [
+        "buck",
+        "john-thornton"
+      ],
+      "source": "Standard Ebooks text, Chapter 6",
+      "cloze": [
+        "genuine",
+        "love"
+      ]
+    },
+    {
+      "id": "as-you-love-me",
+      "text": "“As you love me, Buck. As you love me,” was what he whispered.",
+      "speaker": "John Thornton",
+      "reference": "Chapter 6",
+      "stage": "chapter-6",
+      "context": "Before Buck attempts to start a thousand-pound load frozen to the snow at Dawson.",
+      "analysis": "Thornton does not give a command, and the repetition turns the wager into a request between equals. The sentence is also a confession that he has staked another creature’s body on a bar-room boast, which the crowd’s cheering afterwards does nothing to settle.",
+      "themes": [
+        "loyalty",
+        "work"
+      ],
+      "techniques": [
+        "animal-focalisation"
+      ],
+      "characters": [
+        "john-thornton",
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 6",
+      "cloze": [
+        "love",
+        "whispered"
+      ]
+    },
+    {
+      "id": "start-a-thousand-pounds",
+      "text": "“Pooh! pooh!” said John Thornton; “Buck can start a thousand pounds.”",
+      "speaker": "John Thornton",
+      "reference": "Chapter 6",
+      "stage": "chapter-6",
+      "context": "In the Eldorado Saloon, among men arguing about what their dogs can pull.",
+      "analysis": "The boast is made in the grammar of the saloon, and the narrative immediately records that Thornton did not know whether it was true and had no money to back it. What follows is the one episode in the novel where Buck’s strength is converted directly into cash, and it is the humans who arrange the sale.",
+      "themes": [
+        "work",
+        "ownership"
+      ],
+      "techniques": [
+        "symbolic-objects"
+      ],
+      "characters": [
+        "john-thornton",
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 6",
+      "cloze": [
+        "thousand",
+        "pounds"
+      ]
+    },
+    {
+      "id": "call-still-sounding",
+      "text": "And closely akin to the visions of the hairy man was the call still sounding in the depths of the forest.",
+      "reference": "Chapter 7",
+      "stage": "chapter-7",
+      "context": "In camp during the long summer in the unmapped country east of Dawson.",
+      "analysis": "The call is introduced as a relative of the dreams rather than as a voice, which keeps it inside Buck’s nervous system and out of the supernatural. Note that it has no content: London never says what it asks for, only that Buck goes looking for it as though it were a tangible thing.",
+      "themes": [
+        "wild"
+      ],
+      "techniques": [
+        "refrain",
+        "animal-focalisation"
+      ],
+      "characters": [
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 7",
+      "cloze": [
+        "call",
+        "forest"
+      ]
+    },
+    {
+      "id": "a-thing-that-preyed",
+      "text": "He was a killer, a thing that preyed, living on the things that lived, unaided, alone, by virtue of his own strength and prowess, surviving triumphantly in a hostile environment where only the strong survived.",
+      "reference": "Chapter 7",
+      "stage": "chapter-7",
+      "context": "After Buck has hunted and killed a great bull moose over four days.",
+      "analysis": "The clauses pile up without a main verb after the first, so the sentence performs the swelling pride it describes. 'A thing that preyed' also removes the personal pronoun for a moment: the book’s most individual dog is being described, briefly, as a category of animal.",
+      "themes": [
+        "wild",
+        "survival"
+      ],
+      "techniques": [
+        "elevated-diction"
+      ],
+      "characters": [
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 7",
+      "cloze": [
+        "killer",
+        "preyed"
+      ]
+    },
+    {
+      "id": "noblest-game",
+      "text": "He had killed man, the noblest game of all, and he had killed in the face of the law of club and fang.",
+      "reference": "Chapter 7",
+      "stage": "chapter-7",
+      "context": "Buck among the bodies of the Yeehats, after Thornton’s death.",
+      "analysis": "The phrase 'the law of club and fang' has travelled a long way: it began as a description of what men and dogs on the beach knew, and is now the thing Buck has successfully broken. 'Game' is the cruellest word in the book — it places human beings in the category of animals hunted for sport, exactly reversing the trade that opened the story.",
+      "themes": [
+        "force",
+        "wild"
+      ],
+      "techniques": [
+        "refrain"
+      ],
+      "characters": [
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 7",
+      "cloze": [
+        "noblest",
+        "game"
+      ]
+    },
+    {
+      "id": "last-tie-was-broken",
+      "text": "John Thornton was dead. The last tie was broken. Man and the claims of man no longer bound him.",
+      "reference": "Chapter 7",
+      "stage": "chapter-7",
+      "context": "By the pool in the ruined camp, as the wolf pack comes down the valley under a full moon.",
+      "analysis": "Three flat statements, the shortest sentences in the chapter, and all of them about other people’s claims rather than Buck’s desires. The novel has been careful never to let him choose the wild over Thornton: the tie is cut by the Yeehats, so the ending is a release rather than a preference.",
+      "themes": [
+        "wild",
+        "loyalty",
+        "ownership"
+      ],
+      "techniques": [
+        "refrain"
+      ],
+      "characters": [
+        "buck",
+        "john-thornton"
+      ],
+      "source": "Standard Ebooks text, Chapter 7",
+      "cloze": [
+        "tie",
+        "claims"
+      ]
+    },
+    {
+      "id": "ghost-dog",
+      "text": "But more remarkable than this, the Yeehats tell of a Ghost Dog that runs at the head of the pack.",
+      "reference": "Chapter 7",
+      "stage": "chapter-7",
+      "context": "The closing pages, years after the events of the story.",
+      "analysis": "The narration hands the ending over to the people Buck has been killing, so that the last account of him is hearsay from his victims. It is also the moment the book stops being naturalism: a dog whose every action has been explained by environment and inheritance leaves the record as a legend.",
+      "themes": [
+        "wild"
+      ],
+      "techniques": [
+        "animal-focalisation"
+      ],
+      "characters": [
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 7",
+      "cloze": [
+        "Ghost",
+        "pack"
+      ]
+    },
+    {
+      "id": "song-of-the-younger-world",
+      "text": "he may be seen running at the head of the pack through the pale moonlight or glimmering borealis, leaping gigantic above his fellows, his great throat a-bellow as he sings a song of the younger world, which is the song of the pack.",
+      "reference": "Chapter 7",
+      "stage": "chapter-7",
+      "context": "The last sentence of the novel.",
+      "analysis": "The song was introduced in Chapter 3 as the huskies’ nightly wail, 'the pleading of life' pitched in a minor key; here the same phrase returns with Buck leading it. The tense has also changed to habitual present, which lifts him out of the story’s chronology and into something that keeps happening.",
+      "themes": [
+        "wild"
+      ],
+      "techniques": [
+        "refrain",
+        "elevated-diction"
+      ],
+      "characters": [
+        "buck"
+      ],
+      "source": "Standard Ebooks text, Chapter 7",
+      "cloze": [
+        "moonlight",
+        "song"
+      ]
+    },
+    {
+      "id": "old-longings-nomadic",
+      "text": "Old longings nomadic leap, Chafing at custom’s chain; Again from its brumal sleep Wakens the ferine strain.",
+      "reference": "Epigraph",
+      "stage": "chapter-1",
+      "context": "The verse epigraph printed before the first chapter, from John Myers O’Hara’s poem ‘Atavism’.",
+      "analysis": "Four lines that give the whole plot away and supply its vocabulary: longing, custom, sleep and strain. 'Brumal' and 'ferine' are dictionary words for winter and wildness, and their stiffness is useful — the book will argue that what wakes in Buck is a technical inheritance rather than a romantic urge.",
+      "themes": [
+        "wild"
+      ],
+      "techniques": [
+        "elevated-diction"
+      ],
+      "characters": [],
+      "source": "Standard Ebooks text, epigraph",
+      "cloze": [
+        "nomadic",
+        "ferine"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1876,
+      "label": "Jack London born in San Francisco",
+      "detail": "Born John Griffith Chaney; he took the surname of his stepfather, John London.",
+      "kind": "author"
+    },
+    {
+      "year": 1896,
+      "label": "Gold found on a tributary of the Klondike",
+      "detail": "The strike that emptied the Pacific ports of strong dogs the following summer.",
+      "kind": "context"
+    },
+    {
+      "year": 1897,
+      "label": "London travels north to the Klondike",
+      "detail": "He went in over the Chilkoot route in the first season of the stampede and wintered in the Yukon.",
+      "kind": "author"
+    },
+    {
+      "year": 1898,
+      "label": "London returns to California",
+      "detail": "He came back with almost no gold and with the material for the Northland stories that made his name.",
+      "kind": "author"
+    },
+    {
+      "year": 1903,
+      "label": "The Call of the Wild serialised and published",
+      "detail": "Five instalments in The Saturday Evening Post, then the Macmillan book, in a green pictorial binding with colour plates.",
+      "kind": "work"
+    },
+    {
+      "year": 1903,
+      "label": "The argument about animal minds reaches the magazines",
+      "detail": "Naturalists began attacking popular animal stories for granting their subjects human reasoning — a charge London would later answer directly.",
+      "kind": "context"
+    },
+    {
+      "year": 1906,
+      "label": "White Fang published",
+      "detail": "London called it a companion piece, reversing the journey: a wild dog brought into domestication.",
+      "kind": "author"
+    },
+    {
+      "year": 1916,
+      "label": "London dies at Glen Ellen, California",
+      "detail": "He was forty, and one of the first American writers to have made a large income from fiction alone.",
+      "kind": "author"
+    },
+    {
+      "year": 1923,
+      "label": "First feature film adaptation",
+      "detail": "Produced by Hal Roach and directed by Fred Jackman, beginning a century of screen versions.",
+      "kind": "reception"
+    },
+    {
+      "year": 1935,
+      "label": "William A. Wellman’s film with Clark Gable",
+      "detail": "The studio version enlarges Thornton and adds a romance, a pattern most later adaptations follow.",
+      "kind": "reception"
+    },
+    {
+      "year": 2020,
+      "label": "Chris Sanders’s film with a digital Buck",
+      "detail": "The animal is computer-generated throughout, which changes what a performance by Buck can be.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Santa Clara Valley, California",
+      "lat": 37.3541,
+      "lon": -121.9552,
+      "note": "Judge Miller’s place, with its cement swimming tank and its Mexican hairless — the sun-kissed Southland Buck is stolen from."
+    },
+    {
+      "name": "Seattle",
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "note": "Where the crate is opened with a hatchet and the man in the red sweater sells dogs on at three hundred dollars a head."
+    },
+    {
+      "name": "Dyea, Alaska",
+      "lat": 59.5122,
+      "lon": -135.3536,
+      "note": "The beach where Curly is killed within hours of landing; the town itself was abandoned within a few years of the rush."
+    },
+    {
+      "name": "Chilkoot Pass",
+      "lat": 59.6939,
+      "lon": -135.2283,
+      "note": "The climb the team makes on its first day out, and the reason strong dogs were worth stealing in California."
+    },
+    {
+      "name": "Lake Laberge",
+      "lat": 61.1833,
+      "lon": -135.1667,
+      "note": "Lake Le Barge in the novel, where Buck first fights Spitz over a nest dug in the snow."
+    },
+    {
+      "name": "Dawson City",
+      "lat": 64.0601,
+      "lon": -139.4333,
+      "note": "The end of the mail run, the saloon where the thousand-pound wager is made, and the last town before the unmapped East."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "The book as naturalism",
+      "summary": "The standard reading takes London at his word: heredity and environment do the work, morality is a local luxury, and Buck’s progress is a demonstration that the fit survive. The novel supplies its own technical vocabulary for this, from adaptation to the elimination of the superfluous.",
+      "counter": "The fight with Spitz is won by a feint rather than by strength, and Dave dies for something that looks very like pride, so the machinery keeps producing characters."
+    },
+    {
+      "position": "The book as a labour story",
+      "summary": "Read from the harness rather than the forest, the novel is about work: ownership, rations, overloading, the difference between a hard employer and an ignorant one, and a body that is bought and sold by weight. London had been a labourer and an oyster pirate before he was a writer, and the trail sections are written by someone who has costed a day’s work.",
+      "counter": "It has to explain away the ending, in which the worker does not organise or escape but leaves the species."
+    },
+    {
+      "position": "The book’s evolutionary language and its politics",
+      "summary": "Criticism since the later twentieth century has examined how readily the novel moves between dogs, 'savages' and named peoples, and how its talk of breed and strain belongs to a period vocabulary of racial hierarchy. The Yeehats in the final chapter are the clearest test case.",
+      "counter": "The same vocabulary is used of white gold-seekers, who are eliminated by the North with no more ceremony than anybody else."
+    },
+    {
+      "position": "The question of the animal mind",
+      "summary": "London was accused of granting his animals reasoning they could not have, and he answered that Buck acts on association and inference rather than thought. The dispute is still the most useful way into the book’s narrative method, because it asks exactly what a sentence like 'Not that Buck reasoned it out' is doing.",
+      "counter": "The dream of the hairy man beside a fire is inheritance, not inference, and no account of animal psychology explains it."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "Is Buck’s change a liberation or a training?",
+      "focus": "Instinct, learning and the shape of the plot",
+      "plan": [
+        "Start with the club in Chapter 1: the first thing that happens to Buck is instruction, and he is said to meet it halfway.",
+        "Trace the skills in Chapter 2 — the snow nest, the stolen bacon, the harness — and note that each is described as both a gain and a loss.",
+        "Use the fight with Spitz to complicate the instinct case: the decisive move is a repeated feint, and the narrator calls it imagination.",
+        "Weigh the dreams of the hairy man and the call, which are inherited rather than learned, and which use a different vocabulary.",
+        "Close on the last chapter: the tie to Thornton is cut by the Yeehats, so the wild is something Buck is released into rather than something he chooses."
+      ]
+    },
+    {
+      "question": "How does London use human beings in a novel about a dog?",
+      "focus": "Owners, handlers and the moral scale of the book",
+      "plan": [
+        "Set out the sequence of owners as a series of transactions, from Manuel’s gambling debts to the Government sale at Skagway.",
+        "Contrast Perrault and François with Hal, Charles and Mercedes: competence against sentiment, and what each costs the dogs.",
+        "Examine Mercedes closely — her pity for the team and her hundred and twenty pounds on the sled — as the book’s definition of useless kindness.",
+        "Read Thornton as the exception who proves the rule, since his claim on Buck is the only one never expressed in money.",
+        "Conclude with the Yeehats and the killing of men, and ask what the novel has done to the category of the human by that point."
+      ]
+    },
+    {
+      "question": "Discuss London’s narrative voice and the problem of telling a story from inside an animal.",
+      "focus": "Focalisation, diction and the limits the narrator sets",
+      "plan": [
+        "Identify the two registers: plain trail reporting with figures and distances, and heightened evolutionary diction.",
+        "Collect the narrator’s corrections — 'Not that Buck reasoned it out' — and ask what work they do for a reader who has just been given Buck’s reasoning.",
+        "Show how sensation replaces speech: the smell of fat earth, the frost in the fur, the feel of a hand on the head.",
+        "Consider the moments the narrator leaves Buck entirely, such as the passage on ecstasy, and what is gained and lost there.",
+        "End with the final chapter's change of tense and source, where Buck becomes a story told by the Yeehats."
+      ]
+    },
+    {
+      "question": "‘A book about work, not about wilderness.’ How far do you agree?",
+      "focus": "Labour, ownership and the economics of the trail",
+      "plan": [
+        "Gather the novel’s measurements: rations, loads, mileage, sixty below, a thousand pounds of flour frozen to the runners.",
+        "Use Dave’s death to show work as an identity rather than an imposition, and Buck’s first day in harness as consent to it.",
+        "Read the wager at Dawson as the moment labour becomes spectacle and a dog’s strength is paid for in gold dust.",
+        "Set against this the three chapters of dream, call and hunting, which use no economic language at all.",
+        "Decide whether the ending cancels the working book or completes it by removing Buck from the market."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "The man in the red sweater is described as fair by the standards of his trade. Does the novel agree with him?",
+    "Mercedes is the only character who consistently pities the dogs, and she does them the most harm. What is the book arguing?",
+    "Why does London kill John Thornton rather than let Buck leave him?",
+    "Buck kills men and feels pride. Is the reader meant to share it, resist it, or simply observe it?",
+    "The last page hands the story to the Yeehats. What changes when a naturalist novel ends in legend?"
+  ],
+  "related": [
+    {
+      "href": "/books/white-fang/",
+      "why": "London’s deliberate counterpart, running the journey the other way: a wild-born dog brought into a house."
+    },
+    {
+      "href": "/books/red-badge-of-courage/",
+      "why": "The same American naturalism applied to a boy under fire, with instinct and cowardice measured just as coldly."
+    },
+    {
+      "href": "/books/the-open-boat-and-other-stories/",
+      "why": "Crane’s men in an indifferent sea, where survival is again a matter of conditions rather than deserving."
+    },
+    {
+      "href": "/books/moby-dick/",
+      "why": "The other great American book about an animal, and about what men need it to mean."
+    },
+    {
+      "href": "/books/the-wind-in-the-willows/",
+      "why": "Published five years later and the opposite experiment: animals given speech, manners and houses rather than instinct."
+    }
+  ],
+  "videos": []
+}

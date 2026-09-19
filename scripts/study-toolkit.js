@@ -269,6 +269,32 @@ function revisePanel(book) {
     '</section>';
 }
 
+// Watching. Nothing is embedded until a reader asks for it: the card is plain
+// markup, and only a click loads a frame, from youtube-nocookie.com or
+// player.vimeo.com. Until then the page contacts neither.
+//
+// The `videos` array is empty in every record shipped so far, because a video
+// id cannot be verified from this environment and an invented one is worse
+// than none. Add an entry with a title, provider, id, url and a plain note on
+// what it is, and the section appears.
+function videosPanel(book) {
+  if (!(book.videos || []).length) return '';
+  const cards = book.videos.map(video =>
+    '<article class="astor-video" data-video-provider="' + escapeHtml(video.provider) + '" data-video-id="' + escapeHtml(video.id) + '">' +
+    '<h4>' + escapeHtml(video.title) + '</h4>' +
+    '<p>' + escapeHtml(video.note) + '</p>' +
+    '<p class="astor-inline-note">' + escapeHtml(video.source || video.provider) + '</p>' +
+    '<button class="button secondary" type="button" data-video-play>Load the video</button> ' +
+    '<a class="button secondary" href="' + escapeHtml(video.url) + '" rel="noopener noreferrer">Watch it on the original site</a>' +
+    '</article>'
+  ).join('');
+  return '<section class="astor-panel" id="astor-watch" data-panel="Watch">' +
+    '<h3>Worth watching</h3>' +
+    '<p class="astor-panel-note">Nothing here loads until you ask for it, and nothing is embedded from a service that would set a cookie before you do.</p>' +
+    '<div class="astor-note-grid">' + cards + '</div>' +
+    '</section>';
+}
+
 function relatedPanel(book, titleFor) {
   if (!(book.related || []).length) return '';
   const cards = book.related.map(related =>
@@ -299,6 +325,7 @@ function renderToolkit(book, { heading, titleFor } = {}) {
     techniquesPanel(book),
     contextPanel(book),
     essaysPanel(book),
+    videosPanel(book),
     revisePanel(book),
     relatedPanel(book, resolveTitle)
   ].filter(Boolean);

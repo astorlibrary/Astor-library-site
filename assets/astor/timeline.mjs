@@ -19,7 +19,19 @@ const controls = document.querySelector('#astor-timeline-controls');
 const track = document.querySelector('#astor-timeline');
 const detail = document.querySelector('#astor-timeline-detail');
 
-const state = { kinds: new Set(KINDS.map(kind => kind[0])), period: 'all', book: 'all' };
+// A thousand years on one axis puts 1606 and 1611 in the same pixel, so the
+// page opens on the stretch of time most of the events actually fall in and
+// offers the wider spans as a choice.
+const SPANS = [
+  ['all', 'Everything', -Infinity, Infinity],
+  ['ancient', 'Before 1500', -Infinity, 1500],
+  ['early-modern', '1500 to 1700', 1500, 1700],
+  ['long-eighteenth', '1700 to 1830', 1700, 1830],
+  ['victorian', '1830 to 1900', 1830, 1900],
+  ['modern', '1900 onwards', 1900, Infinity]
+];
+
+const state = { kinds: new Set(KINDS.map(kind => kind[0])), period: 'all', book: 'all', span: 'all' };
 let events = [];
 let books = [];
 
@@ -47,6 +59,13 @@ async function start() {
     return;
   }
 
+  // Open on whichever span holds the most events, so the first view is the
+  // one a reader can actually read.
+  const busiest = SPANS.filter(span => span[0] !== 'all')
+    .map(span => ({ id: span[0], count: events.filter(event => event.year >= span[2] && event.year < span[3]).length }))
+    .sort((a, b) => b.count - a.count)[0];
+  if (busiest && busiest.count >= 8) state.span = busiest.id;
+
   buildControls();
   render();
 }
@@ -68,6 +87,14 @@ function buildControls() {
   bookSelect.addEventListener('change', () => { state.book = bookSelect.value; render(); });
   controls.append(el('div', {}, [el('label', { for: bookSelect.id, text: 'Book' }), bookSelect]));
 
+  const spanSelect = el('select', { id: 'astor-timeline-span', 'aria-label': 'Choose a stretch of time' });
+  for (const [id, label, from, to] of SPANS) {
+    const count = events.filter(event => event.year >= from && event.year < to).length;
+    spanSelect.append(el('option', { value: id, text: label + ' (' + count + ')', selected: id === state.span }));
+  }
+  spanSelect.addEventListener('change', () => { state.span = spanSelect.value; render(); });
+  controls.append(el('div', {}, [el('label', { for: spanSelect.id, text: 'When' }), spanSelect]));
+
   const kindGroup = el('div', {}, [el('label', { text: 'Kind of event' })]);
   const row = el('div', { class: 'astor-tag-row' });
   for (const [kind, label] of KINDS) {
@@ -86,7 +113,9 @@ function buildControls() {
 }
 
 function visible() {
+  const span = SPANS.find(entry => entry[0] === state.span) || SPANS[0];
   return events.filter(event => {
+    if (event.year < span[2] || event.year >= span[3]) return false;
     if (!state.kinds.has(event.kind)) return false;
     if (state.period !== 'all' && event.book.period !== state.period) return false;
     if (state.book !== 'all' && event.book.slug !== state.book) return false;
@@ -135,7 +164,8 @@ function render() {
   track.append(board);
   track.append(el('p', {
     class: 'astor-inline-note',
-    text: shown.length + ' events between ' + first + ' and ' + last + '. Select one to read it.'
+    text: shown.length + ' events between ' + first + ' and ' + last + '. Select one to read it, ' +
+      'or narrow the view with the controls above — a wide span puts a century into a few pixels.'
   }));
 }
 

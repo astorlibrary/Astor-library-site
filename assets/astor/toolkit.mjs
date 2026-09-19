@@ -29,6 +29,7 @@ function enhance(root) {
   setUpProgress(root, slug, title, live);
   setUpQuoteFilters(root, live);
   setUpCommonplace(root, { slug, title, href });
+  setUpVideos(root);
 
   root.classList.add('is-enhanced');
 }
@@ -188,6 +189,36 @@ function setUpQuoteFilters(root, live) {
       }
       count.textContent = shown + (shown === 1 ? ' quotation' : ' quotations');
       announce(live, shown + ' quotations shown.');
+    });
+  }
+}
+
+// --- click-to-load video ---------------------------------------------------
+//
+// The page contacts no video service until a reader presses the button, and
+// then only youtube-nocookie.com or player.vimeo.com.
+
+const VIDEO_FRAMES = {
+  'youtube-nocookie': id => 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?rel=0',
+  vimeo: id => 'https://player.vimeo.com/video/' + encodeURIComponent(id)
+};
+
+function setUpVideos(root) {
+  for (const card of root.querySelectorAll('.astor-video')) {
+    const button = card.querySelector('[data-video-play]');
+    if (!button) continue;
+    button.addEventListener('click', () => {
+      const build = VIDEO_FRAMES[card.dataset.videoProvider];
+      if (!build) return;
+      const frame = el('iframe', {
+        src: build(card.dataset.videoId),
+        title: card.querySelector('h4')?.textContent || 'Video',
+        loading: 'lazy',
+        allow: 'accelerometer; encrypted-media; picture-in-picture',
+        referrerpolicy: 'no-referrer',
+        allowfullscreen: true
+      });
+      button.replaceWith(el('div', { class: 'astor-video-frame' }, [frame]));
     });
   }
 }
