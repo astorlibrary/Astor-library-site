@@ -6,6 +6,8 @@ const { hardbacks } = require('./format-release-data');
 const { bookEditionSchemas, paperbackEditionSchema } = require('./book-edition-schema');
 const septemberCatalogue = require('./september-catalogue-data.json');
 const { seasons, booksFor, hrefFor } = require('./seasonal-helpers');
+const { loadBooks } = require('./book-data');
+const { renderToolkit } = require('./study-toolkit');
 
 const root = process.cwd();
 const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
@@ -15,6 +17,15 @@ const discoveryFile = path.join(root, 'assets', 'content-index.json');
 const discovery = fs.existsSync(discoveryFile)
   ? JSON.parse(fs.readFileSync(discoveryFile, 'utf8'))
   : { books: [] };
+// One structured record per title drives the study toolkit injected below.
+const studyData = new Map(loadBooks().map(book => [book.slug, book]));
+// A record can name other book pages that present the same text; those pages
+// carry the same toolkit, addressed to themselves.
+const studyEditions = new Map();
+for (const book of studyData.values()) {
+  for (const edition of book.editions || []) studyEditions.set(edition, book);
+}
+
 const thumbnailMapFile = path.join(root, 'assets', 'book-thumbnails.json');
 const bookThumbnails = fs.existsSync(thumbnailMapFile)
   ? JSON.parse(fs.readFileSync(thumbnailMapFile, 'utf8'))
@@ -51,6 +62,7 @@ const excluded = new Set([
   'tests',
   'supabase',
   'worker',
+  'docs',
   'README.md',
   'EDITORIAL_GUIDE.md',
   'AUTH_SETUP.md',
@@ -1003,9 +1015,16 @@ function addGlobalNavigation(html, source) {
   const studyCurrent = href === '/study/' || href.startsWith('/study/');
   const passageCurrent = href === '/passage-room/' || href.startsWith('/passage-room/');
   const searchCurrent = href === '/explore/' || href.startsWith('/explore/');
+  const playCurrent = inRoute('/play/') || href === '/today/';
+  const myLibraryCurrent = href === '/my-library/';
+  const teachersCurrent = href === '/for-teachers/';
+  const exploreToolsCurrent = [
+    '/explore/quotations/', '/explore/timeline/', '/explore/characters/', '/explore/themes/',
+    '/explore/techniques/', '/explore/map/', '/explore/compare/'
+  ].some(route => href === route);
   const accountCurrent = href === '/account/' || href.startsWith('/account/');
   const seasonsCurrent = inRoute('/seasons/');
-  const browseCurrent = seasonsCurrent || hardbacksCurrent || shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent || readingRoutesCurrent;
+  const browseCurrent = seasonsCurrent || hardbacksCurrent || shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent || readingRoutesCurrent || exploreToolsCurrent || teachersCurrent;
 
   const header = `<header class="site-header astor-global-header">
   <div class="astor-header-identity">
@@ -1037,6 +1056,19 @@ function addGlobalNavigation(html, source) {
                 <a href="/seasons/"${current(seasonsCurrent, href === '/seasons/')}><em aria-hidden="true">06</em><span><b>Seasons &amp; occasions</b><small>Festive books and reading rooms</small></span></a>
               </div>
             </section>
+            <section aria-labelledby="astor-tools-title">
+              <h2 id="astor-tools-title">Study tools</h2>
+              <div class="astor-browse-cards">
+                <a href="/explore/quotations/"${current(href === '/explore/quotations/')}><em aria-hidden="true">01</em><span><b>Quotation explorer</b><small>Every checked quotation, filterable</small></span></a>
+                <a href="/explore/timeline/"${current(href === '/explore/timeline/')}><em aria-hidden="true">02</em><span><b>Timeline</b><small>The books against their moment</small></span></a>
+                <a href="/explore/characters/"${current(href === '/explore/characters/')}><em aria-hidden="true">03</em><span><b>Character maps</b><small>Relationships, act by act</small></span></a>
+                <a href="/explore/themes/"${current(href === '/explore/themes/')}><em aria-hidden="true">04</em><span><b>Themes</b><small>One idea, handled many ways</small></span></a>
+                <a href="/explore/techniques/"${current(href === '/explore/techniques/')}><em aria-hidden="true">05</em><span><b>Technique glossary</b><small>Terms with the evidence attached</small></span></a>
+                <a href="/explore/map/"${current(href === '/explore/map/')}><em aria-hidden="true">06</em><span><b>Map of settings</b><small>Where the books happen</small></span></a>
+                <a href="/explore/compare/"${current(href === '/explore/compare/')}><em aria-hidden="true">07</em><span><b>Compare two texts</b><small>Shared themes, side by side</small></span></a>
+                <a href="/for-teachers/"${current(teachersCurrent)}><em aria-hidden="true">08</em><span><b>For teachers</b><small>Starters, worksheets, projector mode</small></span></a>
+              </div>
+            </section>
             <section class="astor-period-directory" aria-labelledby="astor-period-title">
               <div class="astor-directory-heading"><h2 id="astor-period-title">Literary periods</h2><a href="/classic-literature/"${current(href === '/classic-literature/')}>View the overview <span aria-hidden="true">&rarr;</span></a></div>
               <div class="astor-period-links">
@@ -1055,9 +1087,11 @@ function addGlobalNavigation(html, source) {
       <a class="nav-link" href="/resources/"${current(resourcesCurrent, href === '/resources/')}><span class="astor-nav-number" aria-hidden="true">03</span><span>Free resources</span></a>
       <a class="nav-link" href="/study/"${current(studyCurrent, href === '/study/')}><span class="astor-nav-number" aria-hidden="true">04</span><span>Study editions</span></a>
       <a class="nav-link" href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}><span class="astor-nav-number" aria-hidden="true">05</span><span>Passage Room</span></a>
+      <a class="nav-link" href="/play/"${current(playCurrent, href === '/play/')}><span class="astor-nav-number" aria-hidden="true">06</span><span>Play &amp; revise</span></a>
     </div>
     <div class="astor-nav-utilities">
-      <a class="astor-utility-link astor-search-link" href="/explore/"${current(searchCurrent, href === '/explore/')}><span aria-hidden="true"></span>Search</a>
+      <a class="astor-utility-link astor-search-link" href="/explore/" data-astor-palette${current(searchCurrent, href === '/explore/')}><span aria-hidden="true"></span>Search</a>
+      <a class="astor-utility-link astor-mylibrary-link" href="/my-library/"${current(myLibraryCurrent)}>My library</a>
       <a class="astor-utility-link astor-account-link" href="/account/" data-auth-link${current(accountCurrent, href === '/account/')}>Sign in</a>
     </div>
   </nav>
@@ -1067,6 +1101,7 @@ function addGlobalNavigation(html, source) {
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
   <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/hardbacks/">Hardback editions</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
   <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/seasons/">The seasonal library</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
+  <div class="astor-footer-group"><h2>Play &amp; explore</h2><a href="/play/">Revision games</a><a href="/today/">Today</a><a href="/explore/quotations/">Quotation explorer</a><a href="/explore/timeline/">Timeline</a><a href="/explore/characters/">Character maps</a><a href="/explore/themes/">Themes</a><a href="/explore/techniques/">Technique glossary</a><a href="/explore/map/">Map of settings</a><a href="/explore/compare/">Compare two texts</a><a href="/for-teachers/">For teachers</a><a href="/my-library/">My library</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact &amp; support</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;
 
@@ -1075,6 +1110,90 @@ function addGlobalNavigation(html, source) {
 
   if (!/href=["']\/assets\/navigation\.css["']/i.test(html)) {
     html = html.replace('</head>', '<link rel="stylesheet" href="/assets/navigation.css"></head>');
+  }
+  // The palette opens over any page, so it ships with the shared navigation.
+  // It fetches its index only when a reader actually opens it.
+  if (!html.includes('/assets/astor/palette.mjs')) {
+    html = html.replace('</head>', '<script type="module" src="/assets/astor/palette.mjs"></script></head>');
+  }
+  return html;
+}
+
+// The study toolkit is generated rather than written into each page by hand,
+// so a change to one title's data reaches its book page, its study page, the
+// explorers and the games in the same build.
+function studyToolkitFor(source) {
+  const href = pageHref(source);
+  const bookMatch = href.match(/^\/books\/([^/]+)\/$/);
+  if (bookMatch && studyData.has(bookMatch[1])) return { book: studyData.get(bookMatch[1]), kind: 'book' };
+  if (bookMatch && studyEditions.has(bookMatch[1])) return { book: { ...studyEditions.get(bookMatch[1]), href }, kind: 'book', baseHref: studyEditions.get(bookMatch[1]).href };
+  const studyMatch = href.match(/^\/study\/([^/]+)\/$/);
+  if (studyMatch) {
+    const direct = studyData.get(studyMatch[1]);
+    if (direct) return { book: direct, kind: 'study' };
+    const paired = [...studyData.values()].find(book => book.studyHref === href);
+    if (paired) return { book: paired, kind: 'study' };
+  }
+  return null;
+}
+
+function discoveryTitle(href) {
+  for (const group of ['books', 'resources', 'studyEditions', 'passages', 'authors', 'subjects', 'collections', 'seasons']) {
+    const found = (discovery[group] || []).find(item => item.href === href);
+    if (found) return plainText(found.title);
+  }
+  return null;
+}
+
+function addStudyToolkit(html, source) {
+  const context = studyToolkitFor(source);
+  if (!context || !html.includes('<main')) return html;
+  if (html.includes('id="astor-study-toolkit"')) return html;
+
+  const heading = context.kind === 'study'
+    ? 'Work through ' + context.book.title + '.'
+    : 'Study ' + context.book.title + '.';
+  const baseHref = context.baseHref || context.book.href;
+  const passages = (discovery.passages || [])
+    .filter(passage => (passage.relatedBooks || []).includes(baseHref))
+    .map(passage => ({ href: passage.href, title: plainText(passage.title), description: plainText(passage.description || '') }));
+  const toolkit = renderToolkit(context.book, { heading, titleFor: discoveryTitle, passages });
+
+  // Insert where the page stops introducing the book and starts on its
+  // history: after the edition card, else after the quick facts, else after
+  // the opening section.
+  const anchors = context.kind === 'study'
+    ? [
+        /<section class="section-title" id="sources">/i,
+        /<nav class="book-end-nav"/i,
+        /<\/main>/i
+      ]
+    : [
+        /<article class="edition-card[^"]*">[\s\S]*?<\/article>/i,
+        /<section class="quick-facts"[\s\S]*?<\/section>/i,
+        /<section class="page-intro[^"]*">[\s\S]*?<\/section>/i
+      ];
+
+  let placed = false;
+  for (const anchor of anchors) {
+    const match = html.match(anchor);
+    if (!match) continue;
+    const before = /^<(?:section|nav)|^<\/main/i.test(match[0]);
+    const at = before ? match.index : match.index + match[0].length;
+    // The book-page anchors match whole blocks and insert after them; the
+    // study-page anchors are opening tags and insert before them.
+    const insertAt = context.kind === 'study' ? match.index : at;
+    html = html.slice(0, insertAt) + toolkit + html.slice(insertAt);
+    placed = true;
+    break;
+  }
+  if (!placed) html = html.replace('</main>', toolkit + '</main>');
+
+  if (!/href="\/assets\/astor-study\.css"/i.test(html)) {
+    html = html.replace('</head>', '<link rel="stylesheet" href="/assets/astor-study.css"></head>');
+  }
+  if (!html.includes('/assets/astor/toolkit.mjs')) {
+    html = html.replace('</head>', '<script type="module" src="/assets/astor/toolkit.mjs"></script></head>');
   }
   return html;
 }
@@ -1101,6 +1220,7 @@ function prepareHtml(html, source) {
   html = addEditorialCredit(html, source);
   html = addEditionSample(html, source);
   html = addContextImageShelf(html, source);
+  html = addStudyToolkit(html, source);
   html = addSiteIndexLink(html, source);
   html = addBookSeasonLinks(html, source);
   html = addGlobalNavigation(html, source);
@@ -1203,6 +1323,30 @@ function collectSitemap(directory) {
 
 collectSitemap(outDir);
 sitemapUrls.sort((a, b) => a.url.localeCompare(b.url, 'en'));
+// The service worker is stamped with a version drawn from the files it keeps,
+// so a deploy that changes any of them is a new worker and a fresh cache.
+{
+  const workerFile = path.join(outDir, 'sw.js');
+  if (fs.existsSync(workerFile)) {
+    const moduleDir = path.join(outDir, 'assets', 'astor');
+    const modules = fs.readdirSync(moduleDir).filter(name => name.endsWith('.mjs')).sort().map(name => '/assets/astor/' + name);
+    const hash = require('crypto').createHash('sha256');
+    for (const file of modules.map(name => path.join(outDir, name)).concat([
+      path.join(outDir, 'assets', 'astor-study.css'),
+      path.join(outDir, 'assets', 'styles.css'),
+      path.join(outDir, 'assets', 'navigation.css'),
+      path.join(outDir, 'assets', 'study-index.json'),
+      path.join(outDir, 'sw.js')
+    ])) {
+      if (fs.existsSync(file)) hash.update(fs.readFileSync(file));
+    }
+    const stamped = fs.readFileSync(workerFile, 'utf8')
+      .replace('__ASTOR_BUILD__', hash.digest('hex').slice(0, 12))
+      .replace('__ASTOR_MODULES__', JSON.stringify(modules));
+    fs.writeFileSync(workerFile, stamped);
+  }
+}
+
 const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' +
   sitemapUrls.map(page => {

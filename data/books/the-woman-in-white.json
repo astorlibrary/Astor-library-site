@@ -1,0 +1,1193 @@
+{
+  "slug": "the-woman-in-white",
+  "title": "The Woman in White",
+  "author": "Wilkie Collins",
+  "href": "/books/the-woman-in-white/",
+  "buyUrl": "https://mybook.to/OepTu",
+  "form": "novel",
+  "genre": "Sensation novel",
+  "period": "Victorian",
+  "written": "Begun 15 August 1859; the manuscript finished 26 July 1860, with the serial still running",
+  "firstPublished": 1860,
+  "setting": "Cumberland, London and a decaying estate in Hampshire, between 1849 and 1851",
+  "readingTime": 780,
+  "difficulty": 3,
+  "lengthNote": "Three Epochs, assembled out of eleven separate narratives by nine hands",
+  "openingLine": "This is the story of what a woman’s patience can endure, and what a Man’s resolution can achieve.",
+  "summary": "A drawing master meets a frightened woman on the Finchley Road at midnight and learns afterwards that she has escaped from an asylum. Her resemblance to the heiress he is about to teach turns out to be the whole machinery of a conspiracy: two women can be exchanged if the documents say so, and a marriage settlement supplies the motive. Collins tells it as a file of statements by different hands, so that the reader assembles the case as a jury would, out of testimony that nobody has cross-examined.",
+  "referenceStyle": "epoch, narrative and chapter",
+  "sourceText": {
+    "label": "Standard Ebooks text of The Woman in White",
+    "note": "References give the epoch, the narrator and the chapter number within that narrative, since the novel numbers its chapters afresh for each new hand."
+  },
+  "atAGlance": [
+    {
+      "label": "Serialised",
+      "value": "1859–60",
+      "note": "Weekly in Dickens’s All the Year Round from 26 November 1859, and simultaneously in Harper’s Weekly in New York."
+    },
+    {
+      "label": "Book edition",
+      "value": "1860",
+      "note": "Three volumes in 1860; Collins then prepared a revised one-volume text, with a dated preface, in 1861."
+    },
+    {
+      "label": "Written to deadline",
+      "value": "Composition overlapped publication",
+      "note": "Collins began on 15 August 1859 and finished the manuscript on 26 July 1860, with instalments appearing throughout."
+    },
+    {
+      "label": "Shape",
+      "value": "Eleven narratives",
+      "note": "Hartright, Gilmore, Marian’s diary, Mr Fairlie, the housekeeper, a cook, a doctor, a gravestone, Mrs Catherick and Fosco — and Hartright decides the order of all of them."
+    }
+  ],
+  "structure": [
+    {
+      "id": "epoch-1-hartright",
+      "label": "The First Epoch — Hartright",
+      "title": "The road, Limmeridge and the likeness",
+      "summary": "Walter Hartright takes a post teaching drawing in Cumberland, having met a woman dressed entirely in white on the Finchley Road and helped her into a cab. At Limmeridge he finds his pupil’s face is the same face, falls in love with an engaged woman, and is quietly removed from the household."
+    },
+    {
+      "id": "epoch-1-gilmore",
+      "label": "The First Epoch — Gilmore",
+      "title": "The settlement",
+      "summary": "The family solicitor takes over the narrative and the story becomes a document. Sir Percival’s lawyer refuses to protect Laura’s twenty thousand pounds, Mr Fairlie will not exert himself to object, and Gilmore signs a settlement he says no daughter of his would have been married under."
+    },
+    {
+      "id": "epoch-1-halcombe",
+      "label": "The First Epoch — Marian’s diary",
+      "title": "The marriage agreed",
+      "summary": "Marian’s diary begins, and with it the novel’s most immediate voice: dated, unrevised and written by somebody who does not know what happens next. Laura tells Sir Percival the truth about her feelings and he marries her anyway."
+    },
+    {
+      "id": "epoch-2-halcombe",
+      "label": "The Second Epoch — Blackwater Park",
+      "title": "Fosco, surveillance and a diary interrupted",
+      "summary": "The couple return with Count and Countess Fosco, and Blackwater Park becomes a place where letters are read and servants are managed. Marian climbs onto the verandah roof in the rain to hear the two men plan, and writes down what she has heard until the fever takes the pen out of her hand."
+    },
+    {
+      "id": "epoch-2-others",
+      "label": "The Second Epoch — other hands",
+      "title": "The substitution, told by the people who were there",
+      "summary": "Mr Fairlie, the housekeeper Eliza Michelson, a cook, a doctor and a headstone carry the story through the exchange. Anne Catherick dies in London under Laura’s name; Laura is taken to the asylum under Anne’s, and every step is attested by somebody who saw only a fragment."
+    },
+    {
+      "id": "epoch-3-hartright",
+      "label": "The Third Epoch — Hartright returns",
+      "title": "A living woman and her own grave",
+      "summary": "Walter comes back from Central America to find a stone with Laura’s name on it and a woman nobody will identify. The investigation turns into a search for dates: what is needed is not a confession but proof that the journey to London happened after the death on the certificate."
+    },
+    {
+      "id": "epoch-3-catherick-fosco",
+      "label": "The Third Epoch — Mrs Catherick and Fosco",
+      "title": "Two confessions, neither of them penitent",
+      "summary": "Mrs Catherick’s letter explains the vestry, the forged register and the secret Sir Percival died trying to burn. Fosco, writing at pistol point, gives the conspiracy as a piece of intellectual autobiography and awards himself the credit for it."
+    },
+    {
+      "id": "epoch-3-conclusion",
+      "label": "The Third Epoch — the conclusion",
+      "title": "Identity restored, on paper",
+      "summary": "Fosco is killed in Paris by the Brotherhood he betrayed, the false inscription is cut away from the stone, and Laura’s name is publicly restored in front of the tenants at Limmeridge. Walter closes the file he has spent the novel assembling and hands the last word to Marian."
+    }
+  ],
+  "characters": [
+    {
+      "id": "walter-hartright",
+      "name": "Walter Hartright",
+      "role": "A teacher of drawing, later the editor of the whole narrative",
+      "summary": "He is the novel’s hero and also its archivist, which are two different kinds of power. He collects, orders and introduces every other statement in the book, so the reader’s impression of Marian, Fosco and Laura has already passed through his hands before it arrives.",
+      "clue": "He is walking back to London at midnight when a hand touches his shoulder, and he spends the rest of the book assembling the paperwork that follows.",
+      "firstAppearance": "The First Epoch, Chapter I",
+      "traits": [
+        "observant",
+        "methodical",
+        "in charge of the record"
+      ],
+      "relationships": [
+        {
+          "to": "laura-fairlie",
+          "label": "loves, loses and marries",
+          "kind": "love",
+          "stages": [
+            "epoch-1-hartright",
+            "epoch-3-hartright",
+            "epoch-3-conclusion"
+          ]
+        },
+        {
+          "to": "marian-halcombe",
+          "label": "ally and fellow investigator",
+          "kind": "ally",
+          "stages": [
+            "epoch-1-hartright",
+            "epoch-3-hartright"
+          ]
+        },
+        {
+          "to": "count-fosco",
+          "label": "finally confronts",
+          "kind": "enemy",
+          "stages": [
+            "epoch-3-catherick-fosco"
+          ]
+        },
+        {
+          "to": "anne-catherick",
+          "label": "helps on the road",
+          "kind": "ally",
+          "stages": [
+            "epoch-1-hartright"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marian-halcombe",
+      "name": "Marian Halcombe",
+      "role": "Laura’s half-sister",
+      "summary": "She is introduced through a description that admires her figure and recoils from her face, and then proceeds to do everything the plot requires: investigate, climb, travel, negotiate and remember. The novel gives her no money, no legal standing and the best prose in the book.",
+      "clue": "She takes off her shoes, crawls out over a verandah roof in a downpour and writes down what she hears until the fever takes the pen away.",
+      "firstAppearance": "The First Epoch, Chapter VI",
+      "traits": [
+        "fearless",
+        "sardonic",
+        "without any legal power at all"
+      ],
+      "relationships": [
+        {
+          "to": "laura-fairlie",
+          "label": "half-sister and protector of",
+          "kind": "family"
+        },
+        {
+          "to": "count-fosco",
+          "label": "admired and outmanoeuvred by",
+          "kind": "enemy",
+          "stages": [
+            "epoch-2-halcombe",
+            "epoch-2-others"
+          ]
+        },
+        {
+          "to": "walter-hartright",
+          "label": "ally of",
+          "kind": "ally"
+        }
+      ]
+    },
+    {
+      "id": "laura-fairlie",
+      "name": "Laura Fairlie",
+      "role": "Heiress of Limmeridge, later Lady Glyde",
+      "summary": "She is the object the conspiracy moves around, and Collins gives her almost no narrative of her own: her testimony is the one thing the plot establishes is legally worthless. What is stolen from her is not money but the acknowledged fact of being herself.",
+      "clue": "Her name is on a gravestone in Cumberland while she is alive in London, and for a whole epoch nobody in authority will say otherwise.",
+      "firstAppearance": "The First Epoch, Chapter VIII",
+      "traits": [
+        "gentle",
+        "honest to her own cost",
+        "erased"
+      ],
+      "relationships": [
+        {
+          "to": "sir-percival-glyde",
+          "label": "married to",
+          "kind": "marriage",
+          "stages": [
+            "epoch-1-gilmore",
+            "epoch-1-halcombe",
+            "epoch-2-halcombe"
+          ]
+        },
+        {
+          "to": "anne-catherick",
+          "label": "resembles, and is exchanged with",
+          "kind": "doubling"
+        },
+        {
+          "to": "walter-hartright",
+          "label": "loves and finally marries",
+          "kind": "love"
+        },
+        {
+          "to": "marian-halcombe",
+          "label": "half-sister of",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "anne-catherick",
+      "name": "Anne Catherick",
+      "role": "The woman in white",
+      "summary": "She is dressed in white because a kind woman once praised her in it, shut up in an asylum because she knew a secret she did not understand, and killed by the conspiracy because her heart gives out at the right moment for it. She gives the novel its title and almost nothing else of her own.",
+      "clue": "She asks a stranger on the road whether he knows many men of the rank of Baronet, and will not say which one she means.",
+      "firstAppearance": "The First Epoch, Chapter IV",
+      "traits": [
+        "frightened",
+        "half-informed",
+        "unheard by anyone with authority"
+      ],
+      "relationships": [
+        {
+          "to": "laura-fairlie",
+          "label": "resembles and replaces",
+          "kind": "doubling"
+        },
+        {
+          "to": "mrs-catherick",
+          "label": "daughter of",
+          "kind": "family"
+        },
+        {
+          "to": "sir-percival-glyde",
+          "label": "confined by",
+          "kind": "enemy"
+        }
+      ]
+    },
+    {
+      "id": "sir-percival-glyde",
+      "name": "Sir Percival Glyde",
+      "role": "Baronet, of Blackwater Park",
+      "summary": "Charming for exactly as long as the settlement takes to sign, and after that a man locking doors. His secret is smaller and more frightening than the plot implies: he has no title at all, only a page added to a parish register, which makes him a forgery rather than a villain.",
+      "clue": "He dies in the vestry of a country church, trying to burn the book that proves he was never entitled to his own name.",
+      "firstAppearance": "The First Epoch, Vincent Gilmore’s narrative",
+      "traits": [
+        "plausible in public",
+        "violent in private",
+        "financially desperate"
+      ],
+      "relationships": [
+        {
+          "to": "laura-fairlie",
+          "label": "married to for her money",
+          "kind": "marriage"
+        },
+        {
+          "to": "count-fosco",
+          "label": "directed by",
+          "kind": "ally",
+          "stages": [
+            "epoch-2-halcombe",
+            "epoch-2-others"
+          ]
+        },
+        {
+          "to": "mrs-catherick",
+          "label": "accomplice of",
+          "kind": "ally"
+        }
+      ]
+    },
+    {
+      "id": "count-fosco",
+      "name": "Count Fosco",
+      "role": "An Italian exile, Sir Percival’s friend",
+      "summary": "Enormous, silent-footed, fond of white mice and pastry, and the only character in the novel who thinks in terms of systems. He is also the one who writes his own confession and cannot resist making it a lecture; his vanity is what eventually kills him.",
+      "clue": "He keeps canaries and white mice, flatters his enemy in her own diary, and is found in the Paris Morgue with a mark cut into his left arm.",
+      "firstAppearance": "The Second Epoch, Marian’s narrative",
+      "traits": [
+        "theatrical",
+        "genuinely clever",
+        "fatally vain"
+      ],
+      "relationships": [
+        {
+          "to": "marian-halcombe",
+          "label": "admires and defeats",
+          "kind": "enemy"
+        },
+        {
+          "to": "sir-percival-glyde",
+          "label": "manages",
+          "kind": "ally"
+        },
+        {
+          "to": "walter-hartright",
+          "label": "finally cornered by",
+          "kind": "enemy",
+          "stages": [
+            "epoch-3-catherick-fosco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frederick-fairlie",
+      "name": "Frederick Fairlie",
+      "role": "Laura’s uncle, master of Limmeridge House",
+      "summary": "A collector of etchings and coins who has made his own nerves into a full-time occupation, and whose refusal to be troubled is what allows every stage of the conspiracy to proceed. Collins hands him a narrative of his own so that he can convict himself in his own voice.",
+      "clue": "He asks visitors to speak more quietly and to put the tray of coins back themselves, and calls himself a bundle of nerves dressed up to look like a man.",
+      "firstAppearance": "The First Epoch, Chapter VII",
+      "traits": [
+        "indolent",
+        "querulous",
+        "catastrophically unhelpful"
+      ],
+      "relationships": [
+        {
+          "to": "laura-fairlie",
+          "label": "guardian of, in name",
+          "kind": "family"
+        },
+        {
+          "to": "count-fosco",
+          "label": "manipulated by",
+          "kind": "enemy",
+          "stages": [
+            "epoch-2-others"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mrs-catherick",
+      "name": "Mrs Catherick",
+      "role": "Anne’s mother, of Welmingham",
+      "summary": "She sold her silence for respectability and has spent twenty years collecting it in instalments: a house, a clock, and the clergyman’s bow every Sunday. Her narrative is the coldest thing in the book, because she is not ashamed of any of it.",
+      "clue": "She sits at her window each Sunday to be bowed to by the clergyman, and counts that bow as the price of what she did in a vestry.",
+      "firstAppearance": "The Second Epoch, Marian’s narrative",
+      "traits": [
+        "unrepentant",
+        "socially ambitious",
+        "hard"
+      ],
+      "relationships": [
+        {
+          "to": "anne-catherick",
+          "label": "mother of",
+          "kind": "family"
+        },
+        {
+          "to": "sir-percival-glyde",
+          "label": "accomplice and blackmailer of",
+          "kind": "ally"
+        }
+      ]
+    },
+    {
+      "id": "vincent-gilmore",
+      "name": "Vincent Gilmore",
+      "role": "The Fairlie family solicitor",
+      "summary": "He writes the second narrative and supplies the novel’s legal spine: the marriage settlement, the twenty thousand pounds, and the clause that makes Laura worth more dead than alive. He sees exactly what is coming and signs anyway, because his client will not be bothered.",
+      "clue": "He records, twice and in the same words, that no daughter of his would have been married under the settlement he was compelled to draw up.",
+      "firstAppearance": "The First Epoch, Gilmore’s narrative",
+      "traits": [
+        "professional",
+        "clear-sighted",
+        "powerless without instructions"
+      ],
+      "relationships": [
+        {
+          "to": "laura-fairlie",
+          "label": "solicitor to",
+          "kind": "service"
+        },
+        {
+          "to": "frederick-fairlie",
+          "label": "overruled by",
+          "kind": "service",
+          "stages": [
+            "epoch-1-gilmore"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "identity",
+      "name": "Identity and documents",
+      "summary": "A person in this novel is whatever the paperwork says. A gravestone, a doctor’s certificate and a parish register are enough to kill a living woman and to make a commoner a baronet, and no amount of embodied self-knowledge will overturn any of them.",
+      "development": "Anne’s white dress and Laura’s face set up the resemblance; the inscription in Limmeridge churchyard executes it; and the counter-attack, when it comes, is made of dates rather than recognition."
+    },
+    {
+      "id": "testimony",
+      "name": "Testimony and the record",
+      "summary": "The book is arranged as evidence in a trial that never takes place, and the arrangement is itself the argument: no single witness sees enough, and the person who compiles them holds the real power. Walter says so in the preamble and then exercises it for six hundred pages.",
+      "development": "From Hartright’s opening statement of method, through Marian’s dated diary and Mr Fairlie’s self-serving deposition, to Fosco’s written confession extracted at gunpoint."
+    },
+    {
+      "id": "marriage-and-property",
+      "name": "Marriage, money and the law",
+      "summary": "The conspiracy needs no magic, only a settlement. Laura’s twenty thousand pounds passes to her husband if she dies first, and the whole plot is an attempt to bring that clause forward by about fifty years.",
+      "development": "Drafted in Gilmore’s narrative, refused correction by an indolent guardian, and executed at Blackwater Park by a man who needs the money before his creditors arrive."
+    },
+    {
+      "id": "confinement",
+      "name": "Confinement and the asylum",
+      "summary": "Two women are shut up in this novel and neither is mad. Private asylum admission needed certificates and somebody willing to sign them, and Collins builds his most frightening scenes out of that ordinary administrative fact rather than out of anything Gothic.",
+      "development": "Anne escapes in the first chapters, Laura is admitted under her name in the second epoch, and the rescue depends on a nurse being bribed rather than on any doubt being raised."
+    },
+    {
+      "id": "gender",
+      "name": "What women are allowed to do",
+      "summary": "The preamble divides the world into a woman’s patience and a man’s resolution, and the novel immediately disobeys it. Marian does the investigating, the climbing and the remembering; Laura’s own word about who she is counts for nothing in law.",
+      "development": "Stated as a formula in the first paragraph, contradicted throughout Marian’s diary, and quietly restored at the end when the record is closed by Walter and the estate passes to his son."
+    },
+    {
+      "id": "class-and-name",
+      "name": "Rank, name and forgery",
+      "summary": "Sir Percival’s secret is that his rank is a forgery, and the novel treats this as worse than the conspiracy it produced. A title, like an identity, turns out to be a line of writing in a book kept in a badly locked cupboard.",
+      "development": "Hinted by Anne’s question about men of the rank of Baronet, investigated through the marriage register at Old Welmingham, and settled by a fire in a vestry."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "multiple-narrators",
+      "name": "Multiple narrators",
+      "definition": "Telling one story through a sequence of first-person accounts by different people.",
+      "inThisBook": "Eleven narratives by nine hands, from a solicitor and a housekeeper to a cook, a doctor and a headstone; each witness speaks only of what they saw, and the differences between their voices carry the class comedy as well as the evidence."
+    },
+    {
+      "id": "documentary-form",
+      "name": "Documentary form",
+      "definition": "Building a novel out of objects that would exist in the world it describes.",
+      "inThisBook": "Diaries with dates, letters, a marriage settlement, a death certificate, a parish register and a carved inscription are not illustrations of the plot; they are the plot, and altering one of them is the crime."
+    },
+    {
+      "id": "doubling",
+      "name": "Doubling",
+      "definition": "Two characters constructed so that one can stand in for the other.",
+      "inThisBook": "Anne and Laura are half-sisters without knowing it, share a face and a childhood dress, and the conspiracy consists simply of letting the world act on the resemblance."
+    },
+    {
+      "id": "serial-suspense",
+      "name": "Serial suspense",
+      "definition": "Shaping instalments so that each ends where a reader cannot stop.",
+      "inThisBook": "Collins was writing weekly while the novel was appearing, and the seams show in the best way: narratives break off mid-crisis, and Marian’s diary simply stops in the middle of a sentence."
+    },
+    {
+      "id": "chronology",
+      "name": "Dates as evidence",
+      "definition": "Making the exact timing of events the decisive fact in a plot.",
+      "inThisBook": "The conspiracy is not overturned by anyone recognising Laura but by proving that she travelled to London after the date on her own death certificate."
+    },
+    {
+      "id": "physiognomy",
+      "name": "Reading faces",
+      "definition": "Treating physical appearance as evidence of character, in the manner of Victorian physiognomy.",
+      "inThisBook": "Walter grades Marian’s figure and then her face in two consecutive paragraphs, and the novel spends the rest of its length disproving the second reading with her conduct."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "womans-patience",
+      "text": "This is the story of what a woman’s patience can endure, and what a Man’s resolution can achieve.",
+      "speaker": "Walter Hartright",
+      "reference": "The First Epoch, Walter Hartright’s narrative, Chapter I",
+      "stage": "epoch-1-hartright",
+      "context": "The first sentence of the preamble.",
+      "analysis": "Two virtues, two sexes, and the capital letters fall on Man and not on woman. The book then reverses the assignment without ever amending the sentence: it is Marian who acts and Walter who spends years waiting for a date to be proved, and the formula stands at the front of the file like an uncorrected heading.",
+      "themes": [
+        "gender",
+        "testimony"
+      ],
+      "techniques": [
+        "documentary-form"
+      ],
+      "characters": [
+        "walter-hartright"
+      ],
+      "source": "Standard Ebooks text, The First Epoch, Hartright, Chapter I",
+      "cloze": [
+        "patience",
+        "resolution"
+      ]
+    },
+    {
+      "id": "more-than-one-pen",
+      "text": "the story here presented will be told by more than one pen, as the story of an offence against the laws is told in Court by more than one witness⁠—with the same object, in both cases, to present the truth always in its most direct and most intelligible aspect; and to trace the course of one complete series of events, by making the persons who have been most closely connected with them, at each successive stage, relate their own experience, word for word.",
+      "speaker": "Walter Hartright",
+      "reference": "The First Epoch, Walter Hartright’s narrative, Chapter I",
+      "stage": "epoch-1-hartright",
+      "context": "The preamble, setting out how the narrative to follow has been assembled.",
+      "analysis": "The comparison is to a court, and it promises the reader a jury’s job. What the sentence does not mention is the person who chose the witnesses and set them in order; ‘word for word’ guarantees the accuracy of each statement and says nothing about the selection.",
+      "themes": [
+        "testimony",
+        "identity"
+      ],
+      "techniques": [
+        "multiple-narrators",
+        "documentary-form"
+      ],
+      "characters": [
+        "walter-hartright"
+      ],
+      "source": "Standard Ebooks text, The First Epoch, Hartright, Chapter I",
+      "cloze": [
+        "pen",
+        "witness"
+      ]
+    },
+    {
+      "id": "solitary-woman",
+      "text": "There, in the middle of the broad bright high road⁠—there, as if it had that moment sprung out of the earth or dropped from the heaven⁠—stood the figure of a solitary woman, dressed from head to foot in white garments, her face bent in grave inquiry on mine, her hand pointing to the dark cloud over London, as I faced her.",
+      "speaker": "Walter Hartright",
+      "reference": "The First Epoch, Walter Hartright’s narrative, Chapter IV",
+      "stage": "epoch-1-hartright",
+      "context": "On the Finchley Road at the end of a July night, the moment a hand touches his shoulder.",
+      "analysis": "The repeated ‘there’ holds her in place for a whole clause before the sentence admits what she is, and the two alternatives offered — out of the earth or down from the heaven — are both supernatural. She is described entirely by her clothes and her gesture; the novel will spend six hundred pages establishing that she also has a name.",
+      "themes": [
+        "identity"
+      ],
+      "techniques": [
+        "doubling",
+        "physiognomy"
+      ],
+      "characters": [
+        "anne-catherick",
+        "walter-hartright"
+      ],
+      "source": "Standard Ebooks text, The First Epoch, Hartright, Chapter IV",
+      "cloze": [
+        "solitary",
+        "white"
+      ]
+    },
+    {
+      "id": "escaped-from-my-asylum",
+      "text": "Done! She has escaped from my asylum. Don’t forget; a woman in white. Drive on.",
+      "speaker": "The proprietor of the asylum",
+      "reference": "The First Epoch, Walter Hartright’s narrative, Chapter IV",
+      "stage": "epoch-1-hartright",
+      "context": "Called down from a chaise to a policeman on the Finchley Road, minutes after Walter has put the woman into a cab.",
+      "analysis": "Four sentences, and the only description offered is a colour. The policeman asks what she has done and is answered with a word that means the opposite of an offence, which is the novel’s first demonstration that a certificate does the work a charge would otherwise have to do.",
+      "themes": [
+        "confinement",
+        "identity"
+      ],
+      "techniques": [
+        "serial-suspense"
+      ],
+      "characters": [
+        "anne-catherick",
+        "walter-hartright"
+      ],
+      "source": "Standard Ebooks text, The First Epoch, Hartright, Chapter IV",
+      "cloze": [
+        "escaped",
+        "asylum"
+      ]
+    },
+    {
+      "id": "the-lady-is-dark",
+      "text": "She left the window⁠—and I said to myself, The lady is dark. She moved forward a few steps⁠—and I said to myself, The lady is young.",
+      "speaker": "Walter Hartright",
+      "reference": "The First Epoch, Walter Hartright’s narrative, Chapter VI",
+      "stage": "epoch-1-hartright",
+      "context": "Meeting Marian Halcombe for the first time, before she turns round.",
+      "analysis": "Two clauses of movement, each answered by a verdict, as though a face were arriving in instalments. The syntax is a piece of physiognomy in action, and the paragraph that follows — swarthy, masculine, almost a moustache — shows the method failing on the one person in the book most worth reading correctly.",
+      "themes": [
+        "gender"
+      ],
+      "techniques": [
+        "physiognomy"
+      ],
+      "characters": [
+        "marian-halcombe",
+        "walter-hartright"
+      ],
+      "source": "Standard Ebooks text, The First Epoch, Hartright, Chapter VI",
+      "cloze": [
+        "dark",
+        "young"
+      ]
+    },
+    {
+      "id": "bundle-of-nerves",
+      "text": "I am nothing but a bundle of nerves dressed up to look like a man.",
+      "speaker": "Frederick Fairlie",
+      "reference": "The Second Epoch, Frederick Fairlie’s narrative",
+      "stage": "epoch-2-others",
+      "context": "Asked by his servant how he is, on the morning Fosco’s messenger arrives.",
+      "analysis": "He describes himself as an assemblage rather than a person, and does it with obvious pleasure. Collins gives him his own narrative precisely so that this self-portrait can be volunteered rather than reported: the man whose refusal to be troubled costs his niece her name is allowed to explain himself, and does.",
+      "themes": [
+        "gender",
+        "testimony"
+      ],
+      "techniques": [
+        "multiple-narrators"
+      ],
+      "characters": [
+        "frederick-fairlie"
+      ],
+      "source": "Standard Ebooks text, The Second Epoch, Frederick Fairlie’s narrative",
+      "cloze": [
+        "bundle",
+        "nerves"
+      ]
+    },
+    {
+      "id": "no-daughter-of-mine",
+      "text": "Seriously and sorrowfully I repeat here the parting words that I spoke at Limmeridge House:⁠—No daughter of mine should have been married to any man alive under such a settlement as I was compelled to make for Laura Fairlie.",
+      "speaker": "Vincent Gilmore",
+      "reference": "The First Epoch, Vincent Gilmore’s narrative, Chapter IV",
+      "stage": "epoch-1-gilmore",
+      "context": "Closing his narrative, having failed to persuade Mr Fairlie to protect Laura’s twenty thousand pounds.",
+      "analysis": "He puts his objection on the record, draws the document anyway, and then quotes himself in the past tense at the end of his own statement — which is what a professional man does when he expects to be asked about it later. It is the most accurate picture of legal helplessness in the novel: he sees the clause, names it, and signs.",
+      "themes": [
+        "marriage-and-property",
+        "testimony"
+      ],
+      "techniques": [
+        "documentary-form",
+        "multiple-narrators"
+      ],
+      "characters": [
+        "vincent-gilmore",
+        "frederick-fairlie",
+        "laura-fairlie"
+      ],
+      "source": "Standard Ebooks text, The First Epoch, Gilmore, Chapter IV",
+      "cloze": [
+        "daughter",
+        "settlement"
+      ]
+    },
+    {
+      "id": "men-are-the-enemies",
+      "text": "No man under heaven deserves these sacrifices from us women. Men! They are the enemies of our innocence and our peace⁠—they drag us away from our parents’ love and our sisters’ friendship⁠—they take us body and soul to themselves, and fasten our helpless lives to theirs as they chain up a dog to his kennel.",
+      "speaker": "Marian Halcombe",
+      "reference": "The First Epoch, Marian Halcombe’s diary, Chapter II",
+      "stage": "epoch-1-halcombe",
+      "context": "To Laura, who has just said that she means to go through with the marriage for her father’s sake.",
+      "analysis": "The simile is domestic and brutal: a wife is a dog chained to a kennel, and the verbs — drag, take, fasten — are all transitive with women as their object. It is the most explicit political statement in the novel, and Collins gives it to a woman writing privately in a diary she does not expect anyone to read.",
+      "themes": [
+        "gender",
+        "marriage-and-property"
+      ],
+      "techniques": [
+        "documentary-form"
+      ],
+      "characters": [
+        "marian-halcombe",
+        "laura-fairlie"
+      ],
+      "source": "Standard Ebooks text, The First Epoch, Marian Halcombe’s diary, Chapter II",
+      "cloze": [
+        "sacrifices",
+        "kennel"
+      ]
+    },
+    {
+      "id": "fools-crime",
+      "text": "The fool’s crime is the crime that is found out, and the wise man’s crime is the crime that is not found out.",
+      "speaker": "Count Fosco",
+      "reference": "The Second Epoch, Marian Halcombe’s narrative, Chapter III",
+      "stage": "epoch-2-halcombe",
+      "context": "At Blackwater Park, arguing after dinner that crimes cause their own detection is a piece of claptrap.",
+      "analysis": "The antithesis is perfectly balanced and completely circular: the only evidence of a wise crime is that you have never heard of it. Fosco is describing the plan he is about to execute, out loud, to the woman who will try to stop him, and the pleasure of saying it is what he cannot forgo.",
+      "themes": [
+        "identity",
+        "testimony"
+      ],
+      "techniques": [
+        "serial-suspense"
+      ],
+      "characters": [
+        "count-fosco",
+        "marian-halcombe"
+      ],
+      "source": "Standard Ebooks text, The Second Epoch, Marian Halcombe, Chapter III",
+      "cloze": [
+        "fool",
+        "wise"
+      ]
+    },
+    {
+      "id": "english-society",
+      "text": "English Society, Miss Halcombe, is as often the accomplice as it is the enemy of crime.",
+      "speaker": "Count Fosco",
+      "reference": "The Second Epoch, Marian Halcombe’s narrative, Chapter III",
+      "stage": "epoch-2-halcombe",
+      "context": "Continuing the same argument, having just accused John Bull of finding other people’s faults faster than his own.",
+      "analysis": "The foreigner is given the outsider’s privilege of describing the host country’s machinery, and the sentence turns out to be a plot summary: the conspiracy works because respectable people accept a certificate. Collins puts his own thesis in the villain’s mouth, which is a cheap trick that works.",
+      "themes": [
+        "identity",
+        "class-and-name"
+      ],
+      "techniques": [
+        "multiple-narrators"
+      ],
+      "characters": [
+        "count-fosco",
+        "marian-halcombe"
+      ],
+      "source": "Standard Ebooks text, The Second Epoch, Marian Halcombe, Chapter III",
+      "cloze": [
+        "Society",
+        "accomplice"
+      ]
+    },
+    {
+      "id": "womans-tongue",
+      "text": "Women can resist a man’s love, a man’s fame, a man’s personal appearance, and a man’s money, but they cannot resist a man’s tongue when he knows how to talk to them.",
+      "speaker": "Marian Halcombe",
+      "reference": "The Second Epoch, Marian Halcombe’s narrative, Chapter V",
+      "stage": "epoch-2-halcombe",
+      "context": "In her diary, after an evening in which Fosco has deliberately charmed the table.",
+      "analysis": "She writes the sentence as a general law and includes herself in it, which is the honesty that makes her diary worth reading. The list ascends from love to fame to appearance to money and then breaks the pattern: the irresistible thing is not a possession at all but a technique.",
+      "themes": [
+        "gender",
+        "testimony"
+      ],
+      "techniques": [
+        "documentary-form"
+      ],
+      "characters": [
+        "marian-halcombe",
+        "count-fosco"
+      ],
+      "source": "Standard Ebooks text, The Second Epoch, Marian Halcombe, Chapter V",
+      "cloze": [
+        "resist",
+        "tongue"
+      ]
+    },
+    {
+      "id": "fosco-postscript",
+      "text": "The illness of our excellent Miss Halcombe has afforded me the opportunity of enjoying an unexpected intellectual pleasure.",
+      "speaker": "Count Fosco",
+      "reference": "The Second Epoch, Marian Halcombe’s narrative, postscript",
+      "stage": "epoch-2-halcombe",
+      "context": "Written at the foot of Marian’s diary, which breaks off mid-sentence when the fever takes her.",
+      "analysis": "The violation is done entirely in the register of a compliment, and the reader discovers it at the same moment as the page is turned. It is also a formal outrage: the novel’s most private document is annotated by its antagonist, which tells you exactly how safe any of these testimonies are.",
+      "themes": [
+        "testimony",
+        "identity"
+      ],
+      "techniques": [
+        "documentary-form",
+        "serial-suspense"
+      ],
+      "characters": [
+        "count-fosco",
+        "marian-halcombe"
+      ],
+      "source": "Standard Ebooks text, The Second Epoch, Marian Halcombe’s narrative, Postscript by a Sincere Friend",
+      "cloze": [
+        "illness",
+        "intellectual"
+      ]
+    },
+    {
+      "id": "gravestone",
+      "text": "Sacred to the Memory of Laura, Lady Glyde, wife of Sir Percival Glyde, Bart., of Blackwater Park, Hampshire, and daughter of the late Philip Fairlie, Esq., of Limmeridge House, in this parish. Born March 27th, 1829; married December 22nd, 1849; died July 25th, 1850.",
+      "reference": "The Second Epoch, the narrative of the tombstone",
+      "stage": "epoch-2-others",
+      "context": "The inscription on the Fairlie monument in Limmeridge churchyard, given as a narrative in its own right.",
+      "analysis": "Collins lets a piece of carved stone take a turn as narrator, and it is the only witness in the book that cannot be cross-examined. Three dates — born, married, died — are all it offers, and the last of them is the lie on which everything depends and, eventually, the thing that breaks the case open.",
+      "themes": [
+        "identity",
+        "testimony"
+      ],
+      "techniques": [
+        "documentary-form",
+        "multiple-narrators"
+      ],
+      "characters": [
+        "laura-fairlie"
+      ],
+      "source": "Standard Ebooks text, The Second Epoch, The Story Continued in Several Narratives",
+      "cloze": [
+        "Sacred",
+        "Memory"
+      ]
+    },
+    {
+      "id": "socially-morally-legally-dead",
+      "text": "Dead to her uncle, who had renounced her; dead to the servants of the house, who had failed to recognise her; dead to the persons in authority, who had transmitted her fortune to her husband and her aunt; dead to my mother and my sister, who believed me to be the dupe of an adventuress and the victim of a fraud; socially, morally, legally⁠—dead.",
+      "speaker": "Walter Hartright",
+      "reference": "The Third Epoch, Walter Hartright’s narrative, Chapter I",
+      "stage": "epoch-3-hartright",
+      "context": "Opening the Third Epoch, standing in a world where the woman beside him is officially buried.",
+      "analysis": "Four clauses, each beginning with the same word and each naming a different authority — a guardian, the servants, the officials who transferred her fortune, and his own family. The three adverbs at the close rank the kinds of death from softest to hardest, and it is the legal one the rest of the novel has to attack.",
+      "themes": [
+        "identity",
+        "testimony"
+      ],
+      "techniques": [
+        "documentary-form"
+      ],
+      "characters": [
+        "laura-fairlie",
+        "walter-hartright"
+      ],
+      "source": "Standard Ebooks text, The Third Epoch, Hartright, Chapter I",
+      "cloze": [
+        "renounced",
+        "legally"
+      ]
+    },
+    {
+      "id": "the-date-proves-the-case",
+      "text": "she must have started on the twenty-sixth, and must have come to London one day after the date of her own death on the doctor’s certificate. If we can prove that date, we prove our case against Sir Percival and the Count.",
+      "speaker": "Walter Hartright",
+      "reference": "The Third Epoch, Walter Hartright’s narrative, Chapter IV",
+      "stage": "epoch-3-hartright",
+      "context": "Working out with Marian what evidence would actually overturn the conspiracy.",
+      "analysis": "The rescue turns on a single day. Nobody needs to recognise Laura, and nobody’s word about her is worth anything; what is required is a document showing she travelled after she died. Collins makes the emotional climax of his novel an argument about a calendar, which is the most Victorian thing about it.",
+      "themes": [
+        "identity",
+        "testimony"
+      ],
+      "techniques": [
+        "chronology",
+        "documentary-form"
+      ],
+      "characters": [
+        "walter-hartright",
+        "marian-halcombe",
+        "laura-fairlie"
+      ],
+      "source": "Standard Ebooks text, The Third Epoch, Hartright, Chapter IV",
+      "cloze": [
+        "twenty-sixth",
+        "certificate"
+      ]
+    },
+    {
+      "id": "the-register",
+      "text": "I was struck by the insecurity of the place in which the register was kept. The door of the press was warped and cracked with age, and the lock was of the smallest and commonest kind. I could have forced it easily with the walking-stick I carried in my hand.",
+      "speaker": "Walter Hartright",
+      "reference": "The Third Epoch, Walter Hartright’s narrative, Chapter IX",
+      "stage": "epoch-3-hartright",
+      "context": "In the vestry at Old Welmingham, as the clerk produces the marriage register.",
+      "analysis": "A baronetcy is kept in a warped cupboard behind a lock that a man could break with a walking-stick, and Collins gives us the exact means to hand. The register is the same kind of object as the gravestone and the death certificate: a piece of writing that makes a person, kept somewhere nobody guards.",
+      "themes": [
+        "class-and-name",
+        "identity"
+      ],
+      "techniques": [
+        "documentary-form"
+      ],
+      "characters": [
+        "walter-hartright",
+        "sir-percival-glyde"
+      ],
+      "source": "Standard Ebooks text, The Third Epoch, Hartright, Chapter IX",
+      "cloze": [
+        "insecurity",
+        "register"
+      ]
+    },
+    {
+      "id": "chemistry",
+      "text": "Chemistry especially has always had irresistible attractions for me from the enormous, the illimitable power which the knowledge of it confers. Chemists⁠—I assert it emphatically⁠—might sway, if they pleased, the destinies of humanity.",
+      "speaker": "Count Fosco",
+      "reference": "The Third Epoch, Count Fosco’s narrative",
+      "stage": "epoch-3-catherick-fosco",
+      "context": "Opening his written confession, composed at Walter’s dictation and at his own leisure.",
+      "analysis": "Asked for a confession, he delivers a prospectus. The dash before ‘I assert it emphatically’ is the sound of a man who cannot let a sentence go without applauding it, and this vanity is exactly what Walter has counted on: the document he needs is produced because Fosco cannot bear to write a dull one.",
+      "themes": [
+        "identity",
+        "testimony"
+      ],
+      "techniques": [
+        "multiple-narrators",
+        "documentary-form"
+      ],
+      "characters": [
+        "count-fosco",
+        "walter-hartright"
+      ],
+      "source": "Standard Ebooks text, The Third Epoch, Fosco’s narrative",
+      "cloze": [
+        "Chemistry",
+        "destinies"
+      ]
+    },
+    {
+      "id": "two-identities",
+      "text": "That conception involved nothing less than the complete transformation of two separate identities. Lady Glyde and Anne Catherick were to change names, places, and destinies, the one with the other⁠—the prodigious consequences contemplated by the change being the gain of thirty thousand pounds, and the eternal preservation of Sir Percival",
+      "speaker": "Count Fosco",
+      "reference": "The Third Epoch, Count Fosco’s narrative",
+      "stage": "epoch-3-catherick-fosco",
+      "context": "Describing the moment he first understood what could be done with the resemblance.",
+      "analysis": "He calls it a conception, as though it were a piece of composition, and prices it in the same clause: thirty thousand pounds and a secret kept. The three nouns he exchanges — names, places, destinies — go from the trivial to the absolute without a change of tone, which is the whole character in one list.",
+      "themes": [
+        "identity",
+        "marriage-and-property"
+      ],
+      "techniques": [
+        "doubling",
+        "documentary-form"
+      ],
+      "characters": [
+        "count-fosco",
+        "laura-fairlie",
+        "anne-catherick"
+      ],
+      "source": "Standard Ebooks text, The Third Epoch, Fosco’s narrative",
+      "cloze": [
+        "transformation",
+        "destinies"
+      ]
+    },
+    {
+      "id": "morgue",
+      "text": "I passed on my way the terrible dead-house of Paris⁠—the Morgue. A great crowd clamoured and heaved round the door. There was evidently something inside which excited the popular curiosity, and fed the popular appetite for horror.",
+      "speaker": "Walter Hartright",
+      "reference": "The Third Epoch, Walter Hartright’s conclusion, Chapter II",
+      "stage": "epoch-3-conclusion",
+      "context": "In Paris, walking towards Notre Dame, some days after Fosco has left England.",
+      "analysis": "The Count’s death is delivered as a piece of tourism: a crowd, a queue and an overheard conversation. Collins refuses his villain a scene, and the body is identified by a mark cut into the arm — another inscription, in the one place where a name could not be forged.",
+      "themes": [
+        "identity",
+        "class-and-name"
+      ],
+      "techniques": [
+        "serial-suspense"
+      ],
+      "characters": [
+        "count-fosco",
+        "walter-hartright"
+      ],
+      "source": "Standard Ebooks text, The Third Epoch, Hartright’s conclusion, Chapter II",
+      "cloze": [
+        "dead-house",
+        "crowd"
+      ]
+    },
+    {
+      "id": "let-marian-end-our-story",
+      "text": "The long, happy labour of many months is over. Marian was the good angel of our lives⁠—let Marian end our Story.",
+      "speaker": "Walter Hartright",
+      "reference": "The Third Epoch, Walter Hartright’s conclusion, Chapter III",
+      "stage": "epoch-3-conclusion",
+      "context": "The last sentences of the novel, after Marian has held up the child who is the heir of Limmeridge.",
+      "analysis": "The labour of months is the writing, not the living, so the book ends by announcing that a file has been closed. He calls Marian the good angel and hands her the last word in a sentence he himself is writing, which is generosity and editorial control performing the same gesture.",
+      "themes": [
+        "testimony",
+        "gender"
+      ],
+      "techniques": [
+        "documentary-form",
+        "multiple-narrators"
+      ],
+      "characters": [
+        "walter-hartright",
+        "marian-halcombe"
+      ],
+      "source": "Standard Ebooks text, The Third Epoch, Hartright’s conclusion, Chapter III",
+      "cloze": [
+        "labour",
+        "angel"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1824,
+      "label": "Wilkie Collins born in London",
+      "detail": "Son of the landscape painter William Collins, and trained for the law before he gave it up for fiction.",
+      "kind": "author"
+    },
+    {
+      "year": 1851,
+      "label": "Collins meets Dickens",
+      "detail": "An amateur theatrical brings them together, and Dickens’s magazines become Collins’s main platform for the next decade.",
+      "kind": "author"
+    },
+    {
+      "year": 1859,
+      "label": "Composition begins",
+      "detail": "Collins started writing on 15 August at Broadstairs, with no complete manuscript and a serial slot already booked.",
+      "kind": "work"
+    },
+    {
+      "year": 1859,
+      "label": "Serialisation starts",
+      "detail": "The first instalment appeared on 26 November in All the Year Round and, the same week, in Harper’s Weekly in New York.",
+      "kind": "work"
+    },
+    {
+      "year": 1860,
+      "label": "The manuscript is finished",
+      "detail": "Collins completed it on 26 July, while the serial was still running; the British serial ended on 25 August.",
+      "kind": "work"
+    },
+    {
+      "year": 1860,
+      "label": "First English book edition",
+      "detail": "Three volumes, in the expensive format that circulating libraries preferred.",
+      "kind": "work"
+    },
+    {
+      "year": 1861,
+      "label": "The revised one-volume text",
+      "detail": "Collins corrected the chronology and added a dated preface; this is the text most modern editions follow.",
+      "kind": "work"
+    },
+    {
+      "year": 1868,
+      "label": "The Moonstone",
+      "detail": "Collins uses the same method again — a case assembled from the statements of people who each saw one part of it.",
+      "kind": "author"
+    },
+    {
+      "year": 1871,
+      "label": "Collins’s own stage version",
+      "detail": "He dramatised the novel himself, part of a long effort to keep control of a story that was being adapted without him.",
+      "kind": "reception"
+    },
+    {
+      "year": 1889,
+      "label": "Collins dies",
+      "detail": "He had published more than twenty novels, and the sensation novel had long since been absorbed into the detective story.",
+      "kind": "author"
+    },
+    {
+      "year": 1948,
+      "label": "Warner Bros. film",
+      "detail": "Directed by Peter Godfrey, with Eleanor Parker in the double role of Laura and Anne, which is how the cinema usually solves the resemblance.",
+      "kind": "reception"
+    },
+    {
+      "year": 1982,
+      "label": "BBC television serial",
+      "detail": "A serial version with room to keep the narrators separate, which is how the novel’s documentary structure survives adaptation.",
+      "kind": "reception"
+    },
+    {
+      "year": 1997,
+      "label": "BBC television film",
+      "detail": "A single-film adaptation that compresses the eleven narratives into one line of action, as most screen versions do.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Cumberland",
+      "lat": 54.7,
+      "lon": -3.1,
+      "note": "Limmeridge House and its churchyard: where Walter is engaged, where the false inscription is cut, and where Laura’s name is finally read out to the tenants."
+    },
+    {
+      "name": "London",
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "note": "Clement’s Inn, the Finchley Road at midnight, the asylum, and the poor lodgings where Walter, Marian and Laura hide while the case is built."
+    },
+    {
+      "name": "Hampshire",
+      "lat": 51.0577,
+      "lon": -1.3081,
+      "note": "Blackwater Park, with its stagnant lake and dilapidated wing, and Welmingham, where Mrs Catherick sits at her window collecting respectability."
+    },
+    {
+      "name": "Paris",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "note": "The Morgue by the river, where Fosco’s body is displayed to a crowd and identified by a mark on his left arm."
+    },
+    {
+      "name": "Liverpool",
+      "lat": 53.4084,
+      "lon": -2.9916,
+      "note": "The port Walter sails from with the expedition to Central America, and the passenger lists that later help fix the dates."
+    },
+    {
+      "name": "Honduras",
+      "lat": 15.2,
+      "lon": -86.2419,
+      "note": "Where Walter lands with the archaeological expedition, and spends the months in which the conspiracy is carried out at home."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "The founding sensation novel",
+      "summary": "The standard literary-historical reading places the book at the head of a 1860s genre that put crime, bigamy and false identity inside respectable English houses rather than in Italian castles, and made the newspaper rather than the Gothic its source.",
+      "counter": "Treating it as the origin of a genre can flatten what is odd about it, particularly the decision to tell the whole thing as a bundle of legal statements."
+    },
+    {
+      "position": "A novel about the law of married women’s property",
+      "summary": "Criticism attentive to the settlement reads the plot as an argument about legal disability: Laura’s money, her testimony and her liberty all belong to somebody else, and the conspiracy only has to use powers that the law already grants.",
+      "counter": "The novel’s resolution restores her by the same legal machinery it has just exposed, which makes it hard to read as a reforming book."
+    },
+    {
+      "position": "A book that cannot decide about Marian",
+      "summary": "Feminist criticism since the 1970s has focused on the gap between what Marian does and how the novel frames her: she is the intelligence of the plot and is introduced through a description of her face that treats her as a physiological joke.",
+      "counter": "Defenders point out that the description is Walter’s rather than the narrative’s, and that the structure allows Marian’s own prose to answer it at length."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "What does Collins gain by telling the story through many narrators?",
+      "focus": "Form, evidence and the power of the editor",
+      "plan": [
+        "Begin with the preamble’s own claim: a court, several witnesses, and each speaking only of what they saw.",
+        "Show the method producing suspense — Marian’s diary breaking off, Mr Fairlie’s account arriving after the damage is done.",
+        "Show it producing class comedy and range, from a solicitor’s professional prose to a housekeeper’s careful self-defence and a cook’s few sentences.",
+        "Turn the argument: Walter selects and orders every document, so the novel about distributed testimony has one author inside it.",
+        "Test the case with Fosco’s confession, which is extracted under threat and is still the most self-satisfied writing in the book."
+      ]
+    },
+    {
+      "question": "How does the novel present the relationship between identity and documents?",
+      "focus": "Certificates, registers, inscriptions",
+      "plan": [
+        "Set out what the conspiracy actually requires: a death certificate, a gravestone, a reception at an asylum, and nobody willing to look twice.",
+        "Show that recognition fails repeatedly — servants, an uncle and a village all decline to identify a living woman.",
+        "Use the register at Old Welmingham to show the reverse case: a forged page makes a commoner a baronet.",
+        "Read the counter-attack as an argument about dates, not about faces, and ask what that says about the novel’s idea of proof.",
+        "Conclude on the restoration scene, in which Laura is made herself again by a public reading and a new inscription."
+      ]
+    },
+    {
+      "question": "Examine the presentation of Marian Halcombe.",
+      "focus": "Capability, appearance and the limits placed on her",
+      "plan": [
+        "Start with the two-paragraph introduction, where the figure is admired and the face is recoiled from in consecutive sentences.",
+        "Track what she actually does: investigates, negotiates, climbs the verandah in the rain, and keeps the only dated record of the conspiracy.",
+        "Examine what she cannot do — hold property, give testimony that counts, or prevent a marriage settlement.",
+        "Read Fosco’s postscript as a violation that is also a tribute, and consider why Collins gives her admirer to the villain.",
+        "Weigh the ending: she is called the good angel and given the last word, in a book whose last word is written by somebody else."
+      ]
+    },
+    {
+      "question": "‘The conspiracy needs no villains, only institutions.’ How far do you agree?",
+      "focus": "Marriage law, private asylums and respectability",
+      "plan": [
+        "Set out the legal position: the settlement, the twenty thousand pounds, and the clause Gilmore objects to and signs anyway.",
+        "Show private asylum admission as an administrative act requiring certificates and a willing signature.",
+        "Use Fosco’s after-dinner argument about English Society as the accomplice of crime, and check it against the plot that follows.",
+        "Test the counter-case: Sir Percival’s violence and Fosco’s ingenuity are not reducible to procedure.",
+        "Decide whether the novel wants these institutions reformed or merely finds them frightening."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Walter compiles every statement in the book. How much should we trust the arrangement?",
+    "Laura is the centre of the plot and is given almost no narrative of her own. Is that a failure or a point being made?",
+    "Fosco writes his own confession and cannot resist showing off. Does that make him more or less frightening?",
+    "Sir Percival’s secret is a forged entry in a parish register. Why does the novel treat that as worse than the conspiracy it caused?",
+    "Marian does the work and Walter gets the marriage. What would have to change for the novel to end differently?"
+  ],
+  "related": [
+    {
+      "href": "/books/the-moonstone/",
+      "why": "Collins doing the same thing again eight years later: a case assembled from statements by people who each saw one part of it."
+    },
+    {
+      "href": "/books/jane-eyre/",
+      "why": "A confined woman, a husband with a secret and a country house with a wing nobody visits, written thirteen years earlier."
+    },
+    {
+      "href": "/books/dracula/",
+      "why": "Another novel built entirely out of diaries, letters and transcripts, with a group assembling evidence against something official channels will not credit."
+    },
+    {
+      "href": "/books/great-expectations/",
+      "why": "Serialised in the same magazine a year later, and equally interested in what documents, settlements and hidden benefactors do to an identity."
+    },
+    {
+      "href": "/books/the-turn-of-the-screw/",
+      "why": "The other great case of a narrative handed to the reader as a document, with the reliability of the narrator left as the real question."
+    }
+  ],
+  "videos": []
+}

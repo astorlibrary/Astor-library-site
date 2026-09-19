@@ -854,3 +854,106 @@ input:focus-visible {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* Study, play and revise ---------------------------------------------------- */
+
+.home-study { padding-top: 8px; }
+
+.home-study .lead { max-width: 74ch; margin: 0 0 26px; }
+
+.home-study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--line, rgba(32, 28, 26, .14));
+  border-left: 1px solid var(--line, rgba(32, 28, 26, .14));
+}
+
+.home-study-grid a {
+  display: block;
+  padding: 22px 20px 24px;
+  text-decoration: none;
+  color: inherit;
+  border-right: 1px solid var(--line, rgba(32, 28, 26, .14));
+  border-bottom: 1px solid var(--line, rgba(32, 28, 26, .14));
+  background: rgba(255, 248, 239, .6);
+}
+
+.home-study-grid a:hover { background: rgba(255, 248, 239, 1); }
+
+.home-study-grid small {
+  display: block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 11px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--burgundy, #6E1F2B);
+  margin-bottom: 10px;
+}
+
+.home-study-grid strong {
+  display: block;
+  font-size: 21px;
+  line-height: 1.2;
+  letter-spacing: -.015em;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.home-study-grid span {
+  display: block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5a514c;
+}
+
+@media (max-width: 620px) {
+  .home-study-grid a { padding: 18px 16px 20px; }
+}
+
+/* Today on Astor: the passage of the day, set in by home.mjs */
+
+.home-today {
+  margin: 0 0 26px;
+  padding: 22px 24px 20px;
+  border: 1px solid var(--line, rgba(32, 28, 26, .14));
+  border-left: 4px solid var(--burgundy, #6E1F2B);
+  background: rgba(255, 248, 239, .8);
+}
+
+.home-today .home-kicker { margin-bottom: 10px; }
+
+.home-today blockquote { margin: 0 0 8px; }
+
+.home-today blockquote p {
+  margin: 0;
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.35;
+  letter-spacing: -.01em;
+}
+
+.home-today-attribution {
+  margin: 0 0 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--burgundy, #6E1F2B);
+}
+
+.home-today-status {
+  margin: 0 0 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #423b36;
+}
+
+.home-today nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
+
+@media (max-width: 680px) {
+  .home-today { padding: 18px 16px 16px; }
+}

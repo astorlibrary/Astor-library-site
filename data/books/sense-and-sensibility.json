@@ -1,0 +1,1181 @@
+{
+  "slug": "sense-and-sensibility",
+  "title": "Sense and Sensibility",
+  "author": "Jane Austen",
+  "href": "/books/sense-and-sensibility/",
+  "buyUrl": "https://mybook.to/tkdZqtz",
+  "form": "novel",
+  "genre": "Comedy of manners",
+  "period": "Romantic & Regency",
+  "written": "Begun in the 1790s, probably as Elinor and Marianne; revised for publication by 1811",
+  "firstPublished": 1811,
+  "setting": "Sussex, Devonshire, London and Somersetshire, in a household of reduced income",
+  "readingTime": 470,
+  "difficulty": 3,
+  "lengthNote": "Fifty chapters, first issued in three volumes",
+  "openingLine": "The family of Dashwood had long been settled in Sussex.",
+  "summary": "A will, a promise and a conversation between husband and wife reduce four women from Norland Park to a cottage in Devonshire, and the novel takes its shape from that arithmetic. Elinor keeps a secret she is bound not to share; Marianne tells everybody everything and is destroyed by a man who never wrote her a word she could show anyone. Austen’s first published book is also her most interested in what silence costs the person keeping it.",
+  "referenceStyle": "chapter",
+  "sourceText": {
+    "label": "Standard Ebooks text of Sense and Sensibility",
+    "note": "Chapters are numbered continuously from 1 to 50, as in the Standard Ebooks text; the 1811 first edition divides the same chapters across three volumes."
+  },
+  "atAGlance": [
+    {
+      "label": "First published",
+      "value": "1811",
+      "note": "Printed for the author by C. Roworth and published by T. Egerton, Whitehall, in three volumes, ‘By A Lady’."
+    },
+    {
+      "label": "Financial risk",
+      "value": "Published on commission",
+      "note": "Austen carried the cost herself and kept the copyright, which is why this novel, unlike Pride and Prejudice, went on earning for her."
+    },
+    {
+      "label": "Earlier form",
+      "value": "Elinor and Marianne",
+      "note": "Family tradition remembers an earlier version, probably in letters. No manuscript survives."
+    },
+    {
+      "label": "Shape",
+      "value": "Fifty chapters",
+      "note": "The engagement that drives the whole plot is disclosed to Elinor at the end of the first volume and to everyone else in the third."
+    }
+  ],
+  "structure": [
+    {
+      "id": "chapters-1-12",
+      "label": "Chapters 1–12",
+      "title": "A promise talked down, and a cottage in Devonshire",
+      "summary": "Old Mr Dashwood’s will ties up Norland, and the second chapter reduces a deathbed promise to nothing across a single fireside conversation. The Dashwood women take Barton Cottage on a relation’s charity, Marianne sprains her ankle in the rain, and Willoughby arrives carrying her downhill."
+    },
+    {
+      "id": "chapters-13-22",
+      "label": "Chapters 13–22",
+      "title": "An attachment everyone assumes, and a secret nobody expects",
+      "summary": "Willoughby and Marianne behave as though they were engaged and never say that they are; then he leaves for London without explanation. Lucy Steele, watching Elinor closely, discloses her four-year engagement to Edward Ferrars in a conversation designed to look like a confidence."
+    },
+    {
+      "id": "chapters-23-36",
+      "label": "Chapters 23–36",
+      "title": "London, and the letter Marianne has to read in public",
+      "summary": "In town Marianne writes to Willoughby and waits; he cuts her at a party and returns her letters with a note his fiancée dictated. Colonel Brandon supplies the history of the two Elizas, and the Ferrars family discovers Lucy, with consequences measured in pounds."
+    },
+    {
+      "id": "chapters-37-44",
+      "label": "Chapters 37–44",
+      "title": "What Elinor had been carrying, and what Willoughby came to say",
+      "summary": "Elinor finally tells Marianne how long she has known about Lucy and what it has cost to say nothing. At Cleveland Marianne walks in wet grass until she is dangerously ill, and Willoughby arrives at midnight to explain himself to the only person who will listen."
+    },
+    {
+      "id": "chapters-45-50",
+      "label": "Chapters 45–50",
+      "title": "A recovery, a misheard name, and two settlements",
+      "summary": "Marianne reconsiders her whole conduct without abandoning her capacity to feel. A servant’s report that Mr Ferrars is married sends the household into mourning for the wrong brother, and the novel closes by arranging incomes at Delaford and a parsonage nearby."
+    }
+  ],
+  "characters": [
+    {
+      "id": "elinor-dashwood",
+      "name": "Elinor Dashwood",
+      "role": "The eldest Dashwood sister, nineteen",
+      "summary": "She is nineteen and already the family’s counsellor, which tells the reader what her mother is like. Her self-command is a duty she has taken on rather than a coldness, and Austen is careful to show the bill: four months of knowing about Lucy while listening to her sister complain that she does not feel enough.",
+      "clue": "She keeps another woman’s engagement secret for four months because she was told it in confidence, and is called cold-hearted for it by her own sister.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "self-governing",
+        "discreet to her own cost",
+        "ironic in private"
+      ],
+      "relationships": [
+        {
+          "to": "edward-ferrars",
+          "label": "attached to",
+          "kind": "love",
+          "stages": [
+            "chapters-1-12",
+            "chapters-45-50"
+          ]
+        },
+        {
+          "to": "marianne-dashwood",
+          "label": "sister of",
+          "kind": "family"
+        },
+        {
+          "to": "lucy-steele",
+          "label": "confided in, and quietly attacked by",
+          "kind": "rival",
+          "stages": [
+            "chapters-13-22",
+            "chapters-23-36"
+          ]
+        },
+        {
+          "to": "colonel-brandon",
+          "label": "trusted by",
+          "kind": "ally",
+          "stages": [
+            "chapters-23-36",
+            "chapters-45-50"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marianne-dashwood",
+      "name": "Marianne Dashwood",
+      "role": "The second Dashwood sister, seventeen",
+      "summary": "Everything but prudent, in the novel’s own phrase. Her mistake is not that she feels too much but that she treats shared taste as evidence of shared character, which makes her the ideal audience for a man performing sensibility at her.",
+      "clue": "She runs down a hill in the rain, is carried home by a stranger, and later asks her sister whether her own conduct has been blameless.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "candid",
+        "musical",
+        "incapable of concealment"
+      ],
+      "relationships": [
+        {
+          "to": "willoughby",
+          "label": "attached to, and abandoned by",
+          "kind": "love",
+          "stages": [
+            "chapters-1-12",
+            "chapters-13-22",
+            "chapters-23-36"
+          ]
+        },
+        {
+          "to": "elinor-dashwood",
+          "label": "sister of",
+          "kind": "family"
+        },
+        {
+          "to": "colonel-brandon",
+          "label": "dismisses, then marries",
+          "kind": "marriage",
+          "stages": [
+            "chapters-45-50"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "edward-ferrars",
+      "name": "Edward Ferrars",
+      "role": "Fanny Dashwood’s brother",
+      "summary": "Diffident, without a profession, and held in place by an engagement he made at nineteen to a woman he no longer loves. His honour consists entirely of refusing to break a promise that has become a trap, which is both admirable and the reason he is nearly absent from his own love plot.",
+      "clue": "He is disinherited rather than break an engagement, and is released only when the woman he is bound to elopes with his richer brother.",
+      "firstAppearance": "Chapter 3",
+      "traits": [
+        "reserved",
+        "conscientious",
+        "with no occupation to fill his time"
+      ],
+      "relationships": [
+        {
+          "to": "elinor-dashwood",
+          "label": "in love with",
+          "kind": "love"
+        },
+        {
+          "to": "lucy-steele",
+          "label": "secretly engaged to",
+          "kind": "marriage",
+          "stages": [
+            "chapters-13-22",
+            "chapters-23-36",
+            "chapters-37-44"
+          ]
+        },
+        {
+          "to": "fanny-dashwood",
+          "label": "brother of",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "willoughby",
+      "name": "John Willoughby",
+      "role": "Heir to Allenham, of Combe Magna in Somersetshire",
+      "summary": "He reads the right poets, rides the right horses and agrees with Marianne about everything, which is exactly how a fortune-hunter would behave and also how a man in love behaves. Austen’s hardest decision is giving him a midnight scene in which his remorse is entirely genuine and entirely useless.",
+      "clue": "He carries a girl home through the rain, cuts her dead in a London drawing room, and turns up months later to explain himself to her sister while she lies ill upstairs.",
+      "firstAppearance": "Chapter 9",
+      "traits": [
+        "charming on purpose",
+        "extravagant",
+        "genuinely remorseful too late"
+      ],
+      "relationships": [
+        {
+          "to": "marianne-dashwood",
+          "label": "courts and abandons",
+          "kind": "love"
+        },
+        {
+          "to": "colonel-brandon",
+          "label": "exposed by",
+          "kind": "enemy",
+          "stages": [
+            "chapters-23-36"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colonel-brandon",
+      "name": "Colonel Brandon",
+      "role": "Of Delaford, thirty-five",
+      "summary": "Introduced as a joke about flannel waistcoats and old age, and revealed to be the only man in the book who has ever acted at real cost. The story of the two Elizas gives the novel its darker arithmetic: what happens to a woman with feeling and no protection.",
+      "clue": "Thirty-five, silent, and mocked for wearing flannel; he keeps a ward in the country and fights a duel he never mentions.",
+      "firstAppearance": "Chapter 7",
+      "traits": [
+        "reticent",
+        "constant",
+        "damaged by an old history"
+      ],
+      "relationships": [
+        {
+          "to": "marianne-dashwood",
+          "label": "loves and finally marries",
+          "kind": "marriage"
+        },
+        {
+          "to": "elinor-dashwood",
+          "label": "confides in",
+          "kind": "ally"
+        },
+        {
+          "to": "edward-ferrars",
+          "label": "gives a living to",
+          "kind": "service",
+          "stages": [
+            "chapters-37-44"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lucy-steele",
+      "name": "Lucy Steele",
+      "role": "Edward’s secret fiancée",
+      "summary": "Uneducated, sharp and the best tactician in the book. She turns a confidence into a weapon by making Elinor the one person who cannot repeat it, and she ends the novel richer than anybody except by abandoning the engagement she spent four hundred pages defending.",
+      "clue": "She tells her rival a secret in order to bind her to silence, and finally marries the brother with the money instead.",
+      "firstAppearance": "Chapter 21",
+      "traits": [
+        "calculating",
+        "flattering",
+        "illiterate on paper and expert in person"
+      ],
+      "relationships": [
+        {
+          "to": "edward-ferrars",
+          "label": "engaged to for four years",
+          "kind": "marriage"
+        },
+        {
+          "to": "elinor-dashwood",
+          "label": "binds to silence",
+          "kind": "rival"
+        }
+      ]
+    },
+    {
+      "id": "mrs-dashwood",
+      "name": "Mrs Dashwood",
+      "role": "The sisters’ mother",
+      "summary": "She has her second daughter’s temperament and none of a mother’s caution, which is why nobody ever asks Marianne and Willoughby whether they are engaged. Her romantic delicacy is indistinguishable, in its effects, from neglect.",
+      "clue": "She refuses to ask her daughter a direct question about an engagement because asking would show a want of confidence.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "warm",
+        "imprudent",
+        "guided by her own feelings"
+      ],
+      "relationships": [
+        {
+          "to": "marianne-dashwood",
+          "label": "mother of, and much like",
+          "kind": "family"
+        },
+        {
+          "to": "elinor-dashwood",
+          "label": "advised by her own daughter",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "john-dashwood",
+      "name": "John Dashwood",
+      "role": "The sisters’ half-brother, owner of Norland",
+      "summary": "He means to keep his promise to his dying father and is talked out of it in one conversation without ever noticing that he has changed his mind. He is the novel’s demonstration that selfishness does not require a villain, only a wife with an argument and a husband who wants to be persuaded.",
+      "clue": "He promises his dying father to provide for his sisters, and reduces three thousand pounds to occasional presents of fish and game.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "not ill-disposed",
+        "cold-hearted",
+        "easily reasoned into meanness"
+      ],
+      "relationships": [
+        {
+          "to": "fanny-dashwood",
+          "label": "married to and directed by",
+          "kind": "marriage"
+        },
+        {
+          "to": "elinor-dashwood",
+          "label": "half-brother of",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "fanny-dashwood",
+      "name": "Fanny Dashwood",
+      "role": "John Dashwood’s wife",
+      "summary": "She conducts the second chapter like a barrister, moving from three thousand pounds to five hundred to an annuity to nothing at all, and each step sounds more reasonable than the last. Austen gives her no soliloquy and no villainy — only impeccable argument in her own interest.",
+      "clue": "She observes that people always live for ever when there is an annuity to be paid them, and so the annuity is dropped.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "acquisitive",
+        "plausible",
+        "relentless"
+      ],
+      "relationships": [
+        {
+          "to": "john-dashwood",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "edward-ferrars",
+          "label": "sister of",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "mrs-jennings",
+      "name": "Mrs Jennings",
+      "role": "Sir John Middleton’s mother-in-law",
+      "summary": "Vulgar, inquisitive and the most practically kind person in the novel. She embarrasses both sisters constantly and is also the one who sits up with Marianne when she is dying, which is Austen’s way of separating manners from goodness.",
+      "clue": "She jokes relentlessly about beaux and conquests, and then nurses a girl she barely knows through a fever nobody else can face.",
+      "firstAppearance": "Chapter 7",
+      "traits": [
+        "loud",
+        "matchmaking",
+        "genuinely generous"
+      ],
+      "relationships": [
+        {
+          "to": "marianne-dashwood",
+          "label": "nurses",
+          "kind": "ally",
+          "stages": [
+            "chapters-37-44"
+          ]
+        },
+        {
+          "to": "elinor-dashwood",
+          "label": "hostess to in London",
+          "kind": "ally",
+          "stages": [
+            "chapters-23-36"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "sense-and-sensibility",
+      "name": "Sense and sensibility",
+      "summary": "The title looks like a contest and the novel refuses to hold one. Elinor’s judgement leaves her carrying knowledge alone; Marianne’s candour makes her legible to a man who reads her for profit. Each sister ends the book holding something she learned from the other.",
+      "development": "Set up in Chapter 1 as a contrast of temperaments, tested through four months of silence, and settled in Chapter 46 when Marianne judges her own conduct by her sister’s standard."
+    },
+    {
+      "id": "money-and-inheritance",
+      "name": "Money and inheritance",
+      "summary": "The plot is started by a will and finished by a settlement, and every important decision in between has a figure attached. Austen puts the numbers on the page — two thousand a year, five hundred pounds, a hundred a year — so that no reader can treat the feeling as separable from the income.",
+      "development": "From the second chapter’s reduction of a promise to nothing, through Marianne’s argument about competence in Chapter 17, to the livings and settlements distributed in the last chapters."
+    },
+    {
+      "id": "secrecy",
+      "name": "Secrecy and silence",
+      "summary": "Almost every crisis in the book is caused by something withheld: an engagement kept for four years, an attachment never declared, a history told too late. Silence is variously honour, weapon and cowardice, and the novel distinguishes carefully between the three.",
+      "development": "Lucy’s disclosure in Chapter 22 loads the gun; Elinor’s four months of secrecy are detonated in Chapter 37; Brandon’s history and Willoughby’s confession arrive when they can no longer help."
+    },
+    {
+      "id": "female-dependence",
+      "name": "Dependence",
+      "summary": "The Dashwood women are not poor in any sense a labourer would recognise, and they have no power whatever over where they live, what they keep or whom they may marry. The novel’s interest is in that specific genteel powerlessness, which looks comfortable and forecloses everything.",
+      "development": "Begins with the entail of Norland, continues at Barton on a relation’s charity, and reaches its sharpest point in the two Elizas, who had feeling and no protection at all."
+    },
+    {
+      "id": "performance",
+      "name": "Performance and sincerity",
+      "summary": "Willoughby’s great advantage is that he is genuinely charming, so the performance of sensibility and the thing itself cannot be told apart by taste alone. The novel keeps asking what evidence of character is admissible, and keeps answering: conduct over time, and nothing else.",
+      "development": "Established in Marianne’s first conversations with Willoughby about Cowper and dead leaves, and undone by the letter in Chapter 29 that he did not write."
+    },
+    {
+      "id": "illness",
+      "name": "Illness and the body",
+      "summary": "Marianne’s fever is not a metaphor that arrives conveniently; it is caused by wet feet, twice, and nearly kills her. Austen lets grief have physical consequences so that the reckoning that follows is forced on a body rather than reasoned out at leisure.",
+      "development": "Wet grass at Cleveland, a putrid fever, a night when Elinor expects her sister to die, and a recovery that produces the novel’s only formal self-examination."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "free-indirect-style",
+      "name": "Free indirect style",
+      "definition": "Narration that borrows a character’s idiom and assumptions without marking them as quotation.",
+      "inThisBook": "The narration sits mostly with Elinor, so the reader is kept as ignorant as she is and as bound by her discretion; Marianne is largely observed from outside, which is why her feelings arrive as events."
+    },
+    {
+      "id": "irony",
+      "name": "Irony",
+      "definition": "Wording that invites the reader to a judgement the speaker has not made.",
+      "inThisBook": "The second chapter is conducted entirely in reasonable-sounding speech, and Austen never once says that John Dashwood is being mean; the arithmetic says it."
+    },
+    {
+      "id": "letters",
+      "name": "Letters",
+      "definition": "Written documents used as plot, evidence and characterisation.",
+      "inThisBook": "Marianne writes three unanswered notes and receives one cold reply that was dictated by another woman, and the physical returning of her letters and a lock of hair is what makes the break public."
+    },
+    {
+      "id": "parallel-sisters",
+      "name": "Paired plots",
+      "definition": "Running two versions of a situation side by side so that each measures the other.",
+      "inThisBook": "Both sisters lose a man to a prior claim and a richer woman; one conceals it for four months and one collapses in a ballroom, and the novel refuses to declare a winner."
+    },
+    {
+      "id": "embedded-history",
+      "name": "Embedded histories",
+      "definition": "A second, older story told by a character to explain the present one.",
+      "inThisBook": "Brandon’s account of the two Elizas supplies the consequences the main plot is too polite to stage, and turns Willoughby from a disappointment into a danger."
+    },
+    {
+      "id": "dialogue",
+      "name": "Dialogue as exposure",
+      "definition": "Allowing characters to convict themselves in their own speech.",
+      "inThisBook": "Fanny Dashwood argues her husband down from three thousand pounds to nothing in a single conversation, and every step she takes sounds more reasonable than the one before."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "elinor-strength-of-understanding",
+      "text": "possessed a strength of understanding, and coolness of judgment, which qualified her, though only nineteen, to be the counsellor of her mother",
+      "reference": "Chapter 1",
+      "stage": "chapters-1-12",
+      "context": "The narrator’s first account of the eldest Dashwood sister.",
+      "analysis": "A nineteen-year-old is described as her mother’s counsellor, which characterises the mother as much as the daughter. The nouns are all about control — strength, coolness, judgment — and the clause that follows insists she also has strong feelings, so the novel cannot later be read as praising numbness.",
+      "themes": [
+        "sense-and-sensibility"
+      ],
+      "techniques": [
+        "free-indirect-style"
+      ],
+      "characters": [
+        "elinor-dashwood",
+        "mrs-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "understanding",
+        "counsellor"
+      ]
+    },
+    {
+      "id": "everything-but-prudent",
+      "text": "She was sensible and clever; but eager in everything: her sorrows, her joys, could have no moderation. She was generous, amiable, interesting: she was everything but prudent.",
+      "reference": "Chapter 1",
+      "stage": "chapters-1-12",
+      "context": "The narrator introducing Marianne, immediately after the account of Elinor.",
+      "analysis": "Three compliments and then the single withheld word. ‘Everything but prudent’ concedes that she lacks only one quality and structures the whole plot around its absence, and the list of generous, amiable, interesting is exactly what Willoughby will find useful.",
+      "themes": [
+        "sense-and-sensibility",
+        "performance"
+      ],
+      "techniques": [
+        "free-indirect-style"
+      ],
+      "characters": [
+        "marianne-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "moderation",
+        "prudent"
+      ]
+    },
+    {
+      "id": "annuity",
+      "text": "people always live forever when there is an annuity to be paid them; and she is very stout and healthy, and hardly forty. An annuity is a very serious business; it comes over and over every year, and there is no getting rid of it.",
+      "speaker": "Fanny Dashwood",
+      "reference": "Chapter 2",
+      "stage": "chapters-1-12",
+      "context": "Persuading her husband out of the last version of his promise to his dying father.",
+      "analysis": "The objection to an annuity is that the recipients will be so inconsiderate as to survive. Notice the shift from a moral question to a bookkeeping one: ‘a very serious business’ and ‘no getting rid of it’ are the phrases of a woman describing a liability, and nobody in the room corrects her.",
+      "themes": [
+        "money-and-inheritance",
+        "female-dependence"
+      ],
+      "techniques": [
+        "dialogue",
+        "irony"
+      ],
+      "characters": [
+        "fanny-dashwood",
+        "john-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "cloze": [
+        "annuity",
+        "serious"
+      ]
+    },
+    {
+      "id": "esteem-him",
+      "text": "I think very highly of him⁠—that I greatly esteem, that I like him.",
+      "speaker": "Elinor Dashwood",
+      "reference": "Chapter 4",
+      "stage": "chapters-1-12",
+      "context": "Answering her mother and sister about her feelings for Edward Ferrars.",
+      "analysis": "Three verbs in ascending order, each hedged, and none of them the one she means. It is not coldness but accuracy: she has no engagement and no declaration, so she claims only what she can defend — and her sister immediately treats the precision as an insult to love itself.",
+      "themes": [
+        "sense-and-sensibility",
+        "secrecy"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "elinor-dashwood",
+        "edward-ferrars"
+      ],
+      "source": "Standard Ebooks text, Chapter 4",
+      "cloze": [
+        "esteem",
+        "highly"
+      ]
+    },
+    {
+      "id": "cold-hearted",
+      "text": "Esteem him! Like him! Cold-hearted Elinor! Oh! worse than cold-hearted! Ashamed of being otherwise. Use those words again, and I will leave the room this moment.",
+      "speaker": "Marianne Dashwood",
+      "reference": "Chapter 4",
+      "stage": "chapters-1-12",
+      "context": "Bursting out at Elinor’s careful account of her feelings for Edward.",
+      "analysis": "She repeats her sister’s two verbs as though quoting evidence at a trial, and the charge is not that Elinor feels nothing but that she is ashamed to say so. Forty chapters later Marianne will use the same word about her own conduct, and mean the opposite by it.",
+      "themes": [
+        "sense-and-sensibility"
+      ],
+      "techniques": [
+        "dialogue",
+        "parallel-sisters"
+      ],
+      "characters": [
+        "marianne-dashwood",
+        "elinor-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 4",
+      "cloze": [
+        "Esteem",
+        "Cold-hearted"
+      ]
+    },
+    {
+      "id": "dear-dear-norland",
+      "text": "Oh! happy house, could you know what I suffer in now viewing you from this spot, from whence perhaps I may view you no more!⁠—And you, ye well-known trees!⁠—but you will continue the same.",
+      "speaker": "Marianne Dashwood",
+      "reference": "Chapter 5",
+      "stage": "chapters-1-12",
+      "context": "Walking alone in front of the house on the family’s last evening at Norland.",
+      "analysis": "She addresses a house and then a stand of trees, and both refuse to answer, which she takes personally. The apostrophe is her method in miniature: feeling counts as real only when it is performed aloud, and the complaint that the trees will continue the same is a complaint that grief has no witness.",
+      "themes": [
+        "sense-and-sensibility",
+        "female-dependence"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "marianne-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 5",
+      "cloze": [
+        "house",
+        "trees"
+      ]
+    },
+    {
+      "id": "flannel-waistcoats",
+      "text": "with me a flannel waistcoat is invariably connected with aches, cramps, rheumatisms, and every species of ailment that can afflict the old and the feeble.",
+      "speaker": "Marianne Dashwood",
+      "reference": "Chapter 8",
+      "stage": "chapters-1-12",
+      "context": "Rejecting Mrs Jennings’s suggestion that Colonel Brandon admires her.",
+      "analysis": "A whole character is dismissed on the evidence of one garment, which is precisely the reasoning Marianne uses in the other direction about Willoughby. The novel remembers the joke: the last paragraph about her marriage returns to the flannel waistcoat, and by then the garment has stopped being funny.",
+      "themes": [
+        "sense-and-sensibility",
+        "performance"
+      ],
+      "techniques": [
+        "dialogue",
+        "irony"
+      ],
+      "characters": [
+        "marianne-dashwood",
+        "colonel-brandon"
+      ],
+      "source": "Standard Ebooks text, Chapter 8",
+      "cloze": [
+        "flannel",
+        "rheumatisms"
+      ]
+    },
+    {
+      "id": "dead-leaves",
+      "text": "with what transporting sensation have I formerly seen them fall! How have I delighted, as I walked, to see them driven in showers about me by the wind! What feelings have they, the season, the air altogether inspired! Now there is no one to regard them. They are seen only as a nuisance, swept hastily off, and driven as much as possible from the sight.",
+      "speaker": "Marianne Dashwood",
+      "reference": "Chapter 16",
+      "stage": "chapters-13-22",
+      "context": "Told by Elinor that the walks at Norland are thick with dead leaves.",
+      "analysis": "Three exclamations about her own past sensations, and then a grievance: the leaves are now swept up by people who do not feel them. Elinor’s one-line reply, that not everyone shares her passion for dead leaves, is the driest thing she says in the book, and it lands because Marianne has just claimed a monopoly on noticing.",
+      "themes": [
+        "sense-and-sensibility"
+      ],
+      "techniques": [
+        "irony",
+        "dialogue"
+      ],
+      "characters": [
+        "elinor-dashwood",
+        "marianne-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 16",
+      "cloze": [
+        "transporting",
+        "nuisance"
+      ]
+    },
+    {
+      "id": "wealth-or-grandeur",
+      "text": "What have wealth or grandeur to do with happiness?",
+      "speaker": "Marianne Dashwood",
+      "reference": "Chapter 17",
+      "stage": "chapters-13-22",
+      "context": "Objecting to Elinor’s remark about the uses of money.",
+      "analysis": "A rhetorical question that the plot spends the next thirty chapters answering in detail. Within ten lines Marianne has priced her own competence at about two thousand a year, which is roughly the income of the man she is rejecting as too old.",
+      "themes": [
+        "money-and-inheritance"
+      ],
+      "techniques": [
+        "dialogue",
+        "irony"
+      ],
+      "characters": [
+        "marianne-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 17",
+      "cloze": [
+        "wealth",
+        "happiness"
+      ]
+    },
+    {
+      "id": "competence-and-wealth",
+      "text": "Your competence and my wealth are very much alike, I dare say; and without them, as the world goes now, we shall both agree that every kind of external comfort must be wanting. Your ideas are only more noble than mine. Come, what is your competence?",
+      "speaker": "Elinor Dashwood",
+      "reference": "Chapter 17",
+      "stage": "chapters-13-22",
+      "context": "Turning her sister’s objection about money into a question with a number in it.",
+      "analysis": "The trick is to let Marianne keep the nobler word and then ask her to define it. Austen’s characters argue about income the way other novels’ characters argue about virtue, and the scene ends with a figure rather than a principle.",
+      "themes": [
+        "money-and-inheritance",
+        "sense-and-sensibility"
+      ],
+      "techniques": [
+        "dialogue",
+        "irony"
+      ],
+      "characters": [
+        "elinor-dashwood",
+        "marianne-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 17",
+      "cloze": [
+        "competence",
+        "wealth"
+      ]
+    },
+    {
+      "id": "four-years",
+      "text": "We have been engaged these four years.",
+      "speaker": "Lucy Steele",
+      "reference": "Chapter 22",
+      "stage": "chapters-13-22",
+      "context": "Telling Elinor about her engagement to Edward Ferrars, in a conversation Lucy has carefully arranged.",
+      "analysis": "Six words, placed after a long approach designed to make Elinor ask for them. The disclosure is an act of aggression disguised as intimacy: once Elinor holds the secret as a confidence, she is the one person in England who cannot use it.",
+      "themes": [
+        "secrecy",
+        "performance"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "lucy-steele",
+        "elinor-dashwood",
+        "edward-ferrars"
+      ],
+      "source": "Standard Ebooks text, Chapter 22",
+      "cloze": [
+        "engaged",
+        "four"
+      ]
+    },
+    {
+      "id": "solemnly-engaged",
+      "text": "to be as solemnly engaged to him, as if the strictest legal covenant had bound us to each other.",
+      "speaker": "Lucy Steele",
+      "reference": "Chapter 29",
+      "stage": "chapters-23-36",
+      "context": "Marianne, quoting her own understanding of her position with Willoughby after his letter arrives.",
+      "analysis": "The comparison is to a legal instrument, which is exactly what she does not have. A private understanding, however sincere, leaves no document and no claim; Lucy Steele’s four-year engagement is equally unwritten and she treats it as property, which is why she wins.",
+      "themes": [
+        "secrecy",
+        "female-dependence"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "marianne-dashwood",
+        "willoughby"
+      ],
+      "source": "Standard Ebooks text, Chapter 29",
+      "cloze": [
+        "solemnly",
+        "covenant"
+      ]
+    },
+    {
+      "id": "four-months",
+      "text": "For four months, Marianne, I have had all this hanging on my mind, without being at liberty to speak of it to a single creature; knowing that it would make you and my mother most unhappy whenever it were explained to you",
+      "speaker": "Elinor Dashwood",
+      "reference": "Chapter 37",
+      "stage": "chapters-37-44",
+      "context": "Telling Marianne, for the first time, how long she has known about Lucy’s engagement.",
+      "analysis": "The unit is time, not feeling: four months, without liberty to speak, while being told repeatedly that she does not feel enough. The sentence also explains the novel’s structure — the reader has been kept inside Elinor’s silence too, and only now learns what it weighed.",
+      "themes": [
+        "secrecy",
+        "sense-and-sensibility"
+      ],
+      "techniques": [
+        "dialogue",
+        "parallel-sisters"
+      ],
+      "characters": [
+        "elinor-dashwood",
+        "marianne-dashwood",
+        "lucy-steele"
+      ],
+      "source": "Standard Ebooks text, Chapter 37",
+      "cloze": [
+        "months",
+        "liberty"
+      ]
+    },
+    {
+      "id": "libertine",
+      "text": "I acknowledge that her situation and her character ought to have been respected by me. I do not mean to justify myself, but at the same time cannot leave you to suppose that I have nothing to urge⁠—that because she was injured she was irreproachable, and because I was a libertine, she must be a saint.",
+      "speaker": "John Willoughby",
+      "reference": "Chapter 44",
+      "stage": "chapters-37-44",
+      "context": "At Cleveland, at midnight, while Marianne lies dangerously ill upstairs.",
+      "analysis": "He concedes the charge and then immediately reopens it, which is the pattern of the whole confession: an apology with a defence folded inside it. ‘Because I was a libertine, she must be a saint’ is a real argument about evidence, offered by a man who needs it not to be true.",
+      "themes": [
+        "performance",
+        "female-dependence"
+      ],
+      "techniques": [
+        "embedded-history",
+        "dialogue"
+      ],
+      "characters": [
+        "willoughby"
+      ],
+      "source": "Standard Ebooks text, Chapter 44",
+      "cloze": [
+        "libertine",
+        "saint"
+      ]
+    },
+    {
+      "id": "infinitely-dearer",
+      "text": "I felt that she was infinitely dearer to me than any other woman",
+      "speaker": "John Willoughby",
+      "reference": "Chapter 44",
+      "stage": "chapters-37-44",
+      "context": "Describing the effect of Marianne’s note, received in London after he had decided to marry Miss Grey.",
+      "analysis": "The comparative is the problem: she is dearer than other women, and he has already worked out what she is worth against an income. Austen allows the feeling to be genuine precisely so that the novel cannot be read as saying that charming men are simply insincere.",
+      "themes": [
+        "performance",
+        "money-and-inheritance"
+      ],
+      "techniques": [
+        "dialogue"
+      ],
+      "characters": [
+        "willoughby",
+        "marianne-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 44",
+      "cloze": [
+        "infinitely",
+        "dearer"
+      ]
+    },
+    {
+      "id": "my-illness-has-made-me-think",
+      "text": "My illness has made me think. It has given me leisure and calmness for serious recollection. Long before I was enough recovered to talk, I was perfectly able to reflect. I considered the past: I saw in my own behaviour, since the beginning of our acquaintance with him last autumn, nothing but a series of imprudence towards myself, and want of kindness to others.",
+      "speaker": "Marianne Dashwood",
+      "reference": "Chapter 46",
+      "stage": "chapters-45-50",
+      "context": "Convalescent at Barton, setting out her own conduct to Elinor.",
+      "analysis": "The self-examination is conducted in the vocabulary of accounting — a series, a beginning, a survey of behaviour since last autumn — which is how her sister thinks, not how she does. Note that she blames imprudence and unkindness to others, never the strength of her feelings.",
+      "themes": [
+        "sense-and-sensibility",
+        "illness"
+      ],
+      "techniques": [
+        "dialogue",
+        "parallel-sisters"
+      ],
+      "characters": [
+        "marianne-dashwood",
+        "elinor-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 46",
+      "cloze": [
+        "illness",
+        "imprudence"
+      ]
+    },
+    {
+      "id": "compare-it-with-yours",
+      "text": "I compare it with what it ought to have been; I compare it with yours.",
+      "speaker": "Marianne Dashwood",
+      "reference": "Chapter 46",
+      "stage": "chapters-45-50",
+      "context": "Refusing Elinor’s attempt to excuse her conduct by comparing it with other people’s.",
+      "analysis": "Two clauses, the second shorter and harder than the first. She adopts an absolute standard and then names a person as its measure, which is the precise reversal of Chapter 4, where the same sister’s behaviour was evidence of a cold heart.",
+      "themes": [
+        "sense-and-sensibility"
+      ],
+      "techniques": [
+        "parallel-sisters",
+        "dialogue"
+      ],
+      "characters": [
+        "marianne-dashwood",
+        "elinor-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 46",
+      "cloze": [
+        "compare",
+        "yours"
+      ]
+    },
+    {
+      "id": "mistress-of-myself",
+      "text": "I will be calm⁠—I will be mistress of myself.",
+      "speaker": "Elinor Dashwood",
+      "reference": "Chapter 48",
+      "stage": "chapters-45-50",
+      "context": "Watching from the window as a horseman she takes to be Edward dismounts at the gate.",
+      "analysis": "She states self-command as an intention rather than a fact, which is the closest the novel comes to admitting what it has cost her. Two chapters of evidence follow: when Edward’s news finally arrives she leaves the room and cries until she thinks she will never stop.",
+      "themes": [
+        "sense-and-sensibility",
+        "secrecy"
+      ],
+      "techniques": [
+        "free-indirect-style"
+      ],
+      "characters": [
+        "elinor-dashwood",
+        "edward-ferrars"
+      ],
+      "source": "Standard Ebooks text, Chapter 48",
+      "cloze": [
+        "calm",
+        "mistress"
+      ]
+    },
+    {
+      "id": "born-to-an-extraordinary-fate",
+      "text": "Marianne Dashwood was born to an extraordinary fate. She was born to discover the falsehood of her own opinions, and to counteract, by her conduct, her most favourite maxims. She was born to overcome an affection formed so late in life as at seventeen, and with no sentiment superior to strong esteem and lively friendship, voluntarily to give her hand to another!",
+      "reference": "Chapter 50",
+      "stage": "chapters-45-50",
+      "context": "The narrator summing up Marianne’s marriage to Colonel Brandon.",
+      "analysis": "The mock-heroic opening promises a destiny and delivers a list of maxims disproved. ‘Born to discover the falsehood of her own opinions’ makes the second marriage a correction rather than a reward, and readers have argued ever since about whether the joke is affectionate or a shrug.",
+      "themes": [
+        "sense-and-sensibility",
+        "performance"
+      ],
+      "techniques": [
+        "irony",
+        "free-indirect-style"
+      ],
+      "characters": [
+        "marianne-dashwood",
+        "colonel-brandon"
+      ],
+      "source": "Standard Ebooks text, Chapter 50",
+      "cloze": [
+        "extraordinary",
+        "falsehood"
+      ]
+    },
+    {
+      "id": "without-disagreement",
+      "text": "among the merits and the happiness of Elinor and Marianne, let it not be ranked as the least considerable, that though sisters, and living almost within sight of each other, they could live without disagreement between themselves, or producing coolness between their husbands.",
+      "reference": "Chapter 50",
+      "stage": "chapters-45-50",
+      "context": "The final sentence of the novel.",
+      "analysis": "The book closes not on either marriage but on the relation between the sisters, and phrases their achievement in the negative — no disagreement, no coolness. After a plot driven by what one sister could not tell the other, the last thing the novel counts as happiness is two women living within sight of each other and still speaking.",
+      "themes": [
+        "sense-and-sensibility",
+        "secrecy"
+      ],
+      "techniques": [
+        "irony",
+        "parallel-sisters"
+      ],
+      "characters": [
+        "elinor-dashwood",
+        "marianne-dashwood"
+      ],
+      "source": "Standard Ebooks text, Chapter 50",
+      "cloze": [
+        "disagreement",
+        "coolness"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1775,
+      "label": "Jane Austen born at Steventon",
+      "detail": "In the Hampshire rectory where she wrote the first versions of three of her six novels.",
+      "kind": "author"
+    },
+    {
+      "year": 1795,
+      "label": "Elinor and Marianne",
+      "detail": "Family tradition places an early version of this story in the mid-1790s, probably told in letters. No manuscript survives.",
+      "kind": "work"
+    },
+    {
+      "year": 1797,
+      "label": "First Impressions offered to a publisher and refused",
+      "detail": "The novel that became Pride and Prejudice was declined unseen, and Austen published nothing for another fourteen years.",
+      "kind": "author"
+    },
+    {
+      "year": 1809,
+      "label": "The Austens settle at Chawton",
+      "detail": "The move to a settled house in Hampshire begins the period in which every one of Austen’s novels was revised or written.",
+      "kind": "author"
+    },
+    {
+      "year": 1811,
+      "label": "Sense and Sensibility published",
+      "detail": "Printed for the author by C. Roworth, published by T. Egerton in three volumes, and advertised at fifteen shillings in boards.",
+      "kind": "work"
+    },
+    {
+      "year": 1813,
+      "label": "The first edition sells out; a second follows",
+      "detail": "In the same year Pride and Prejudice appeared as ‘by the author of Sense and Sensibility’, turning an anonymous debut into a commercial identity.",
+      "kind": "reception"
+    },
+    {
+      "year": 1814,
+      "label": "Mansfield Park published",
+      "detail": "The first novel Austen wrote knowing that she had readers.",
+      "kind": "author"
+    },
+    {
+      "year": 1817,
+      "label": "Austen dies at Winchester",
+      "detail": "Aged forty-one, with none of her novels published under her own name.",
+      "kind": "author"
+    },
+    {
+      "year": 1833,
+      "label": "Bentley’s Standard Novels reprint",
+      "detail": "Sense and Sensibility re-enters the market in a cheap uniform edition, and Austen’s novels stop going out of print.",
+      "kind": "reception"
+    },
+    {
+      "year": 1971,
+      "label": "First BBC television adaptation",
+      "detail": "The beginning of a long serial tradition that gives the social network around the sisters more room than a feature film can.",
+      "kind": "reception"
+    },
+    {
+      "year": 1995,
+      "label": "Ang Lee’s film, from Emma Thompson’s screenplay",
+      "detail": "Thompson as Elinor, Kate Winslet as Marianne, Alan Rickman as Brandon; it won the Academy Award for Adapted Screenplay and the Golden Bear at Berlin.",
+      "kind": "reception"
+    },
+    {
+      "year": 2000,
+      "label": "Kandukondain Kandukondain",
+      "detail": "Rajiv Menon’s Tamil-language film relocates the sisters, the prospects and the delayed recognition to an Indian setting.",
+      "kind": "reception"
+    },
+    {
+      "year": 2008,
+      "label": "BBC serial adapted by Andrew Davies",
+      "detail": "A three-part version directed by John Alexander, which restores the seduction plot to its place near the front of the story.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Sussex",
+      "lat": 50.928,
+      "lon": -0.167,
+      "note": "Norland Park, where the Dashwoods had been settled for generations and lived for a single year as guests of the heir."
+    },
+    {
+      "name": "Devonshire",
+      "lat": 50.7156,
+      "lon": -3.5309,
+      "note": "Barton Cottage and Barton Park: a house taken on very easy terms from a relation, which is a polite name for charity."
+    },
+    {
+      "name": "London",
+      "lat": 51.51,
+      "lon": -0.1487,
+      "note": "Berkeley Street and the drawing rooms where Marianne waits for a reply, and is cut in public when it comes."
+    },
+    {
+      "name": "Somersetshire",
+      "lat": 51.105,
+      "lon": -2.9262,
+      "note": "Combe Magna, Willoughby’s own small estate, and Cleveland, where Marianne walks in wet grass until she is dangerously ill."
+    },
+    {
+      "name": "Dorsetshire",
+      "lat": 50.7488,
+      "lon": -2.3445,
+      "note": "Delaford, Colonel Brandon’s property, with the living he gives away and the mulberry tree Mrs Jennings cannot stop describing."
+    },
+    {
+      "name": "Plymouth",
+      "lat": 50.3755,
+      "lon": -4.1427,
+      "note": "Where the Steele sisters have their connections, and the town whose name is enough to place them socially the moment it is mentioned."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "A conduct-novel with a verdict",
+      "summary": "One long-standing reading takes the title at face value: Marianne’s sensibility is a fashionable excess, Elinor’s judgement is the corrective, and the plot administers the lesson through illness and a second marriage.",
+      "counter": "It has to ignore how much the novel charges Elinor for her self-command, and how carefully it refuses to say that Marianne’s feelings were themselves the error."
+    },
+    {
+      "position": "A novel about property and dependence",
+      "summary": "Criticism attentive to the opening chapters treats the will, the entail and the annuity conversation as the real engine: the book is about what happens to women whose income is decided by a half-brother’s conscience.",
+      "counter": "Pushed far, it reduces both sisters to case studies and has little to say about the comedy, which is where most of Austen’s precision actually lives."
+    },
+    {
+      "position": "A study in what may be said aloud",
+      "summary": "A more formal reading attends to who knows what and when: the novel is organised around secrets, confidences and disclosures, and the reader is held inside Elinor’s silence as a technical device rather than a moral example.",
+      "counter": "This can make the ending feel arbitrary, since the secret is dissolved not by anyone’s virtue but by Lucy Steele changing brothers."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "Does Sense and Sensibility side with Elinor?",
+      "focus": "The title as a contest, and the novel’s refusal to hold one",
+      "plan": [
+        "Set out the Chapter 1 contrast precisely: strength of understanding and coolness of judgment against sensible, clever and everything but prudent.",
+        "Show what Elinor’s method costs in Chapter 37 — four months of silence, and the accusation of feeling nothing from her own sister.",
+        "Show what Marianne’s method costs at Cleveland, and note that the illness has a physical cause, not a poetic one.",
+        "Read Chapter 46 closely: Marianne adopts her sister’s standard, and Elinor in Chapter 48 has to announce self-command as an intention rather than possess it.",
+        "Conclude on the last sentence, which measures success by the sisters’ relation to each other rather than by either temperament winning."
+      ]
+    },
+    {
+      "question": "How does Austen use money in the novel?",
+      "focus": "Wills, annuities, competence and settlements",
+      "plan": [
+        "Begin with Chapter 2 as a set piece: a promise reduced by stages, with every step argued in reasonable language.",
+        "Trace the sums that follow — five hundred pounds, a hundred a year, two thousand a year at Delaford — and note that Austen always gives the figure.",
+        "Use the competence exchange in Chapter 17 to show the sisters arguing about income in the vocabulary of virtue.",
+        "Show money deciding the plot rather than decorating it: Willoughby’s debts, Mrs Ferrars’s disinheritance, and Brandon’s gift of a living.",
+        "Weigh whether the ending criticises this economy or simply provides two escapes from it."
+      ]
+    },
+    {
+      "question": "Examine the presentation of Willoughby.",
+      "focus": "Charm, sincerity and the midnight confession",
+      "plan": [
+        "Establish how his charm works: shared taste in poetry and music, treated by Marianne as proof of shared character.",
+        "Set the letter of Chapter 29 beside the man, and note that it was dictated by another woman — his cruelty is partly delegated.",
+        "Bring in Brandon’s history of the two Elizas, which converts a disappointing suitor into a demonstrable danger.",
+        "Read the Chapter 44 confession carefully: the apologies and the self-defences are interleaved, and the feeling is genuine.",
+        "Decide what the novel gains by refusing to make him simply insincere, and what it loses."
+      ]
+    },
+    {
+      "question": "‘The novel is driven by what cannot be said.’ Discuss.",
+      "focus": "Secrecy, confidence and disclosure",
+      "plan": [
+        "List the withheld information: Lucy’s engagement, Brandon’s history, Willoughby’s debts, Elinor’s own attachment.",
+        "Show that Lucy’s disclosure in Chapter 22 works as a weapon precisely because it is framed as a confidence.",
+        "Contrast Marianne, who conceals nothing and is ruined by having no written proof of anything.",
+        "Use Mrs Dashwood’s refusal to ask a direct question about an engagement as the novel’s sharpest criticism of delicacy.",
+        "Close on how the secret is finally dissolved — not by honesty, but by Lucy transferring herself to the richer brother."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Elinor keeps Lucy’s secret for four months because she was told it in confidence. Was she right to?",
+    "Marianne marries a man she once mocked for wearing flannel. Is the ending a reward, a compromise or a joke?",
+    "Fanny Dashwood is never punished and never in doubt. Why does Austen put her argument at the very front of the book?",
+    "Willoughby’s remorse is real. Does that make him better or worse?",
+    "Mrs Jennings is vulgar and kind; Mr John Dashwood is polite and cold. What is the novel saying about manners?"
+  ],
+  "related": [
+    {
+      "href": "/books/pride-and-prejudice/",
+      "why": "Written from the same drafts and the same decade, with the comedy pitched higher and the money kept just as visible."
+    },
+    {
+      "href": "/books/jane-eyre/",
+      "why": "Another dependent young woman with no property and a prior claim standing between her and the man she wants."
+    },
+    {
+      "href": "/books/the-awakening/",
+      "why": "Marianne’s question about what feeling is owed to convention, asked again eighty years later and answered far more bleakly."
+    },
+    {
+      "href": "/books/wuthering-heights/",
+      "why": "Sensibility taken to the point where it stops being a temperament and becomes a force that wrecks two households."
+    },
+    {
+      "href": "/books/the-importance-of-being-earnest/",
+      "why": "Fanny Dashwood’s arithmetic turned into farce, with incomes and connections interrogated out loud."
+    }
+  ],
+  "videos": []
+}

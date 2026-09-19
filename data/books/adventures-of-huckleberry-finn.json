@@ -1,0 +1,1320 @@
+{
+  "slug": "adventures-of-huckleberry-finn",
+  "title": "Adventures of Huckleberry Finn",
+  "author": "Mark Twain",
+  "href": "/books/adventures-of-huckleberry-finn/",
+  "buyUrl": "https://mybook.to/QY2Go",
+  "form": "novel",
+  "genre": "Picaresque novel",
+  "period": "American Classics",
+  "written": "1876-83",
+  "firstPublished": 1884,
+  "setting": "The Mississippi valley, from a Missouri village down past Cairo into the slave states, some forty or fifty years before the book was written",
+  "readingTime": 480,
+  "difficulty": 3,
+  "lengthNote": "Forty-three chapters, with a Notice and a note on dialect standing in front of the first sentence",
+  "openingLine": "You don’t know about me without you have read a book by the name of The Adventures of Tom Sawyer; but that ain’t no matter.",
+  "summary": "A boy escapes a father who beats him by faking his own murder, and finds on an island in the river a man who has run because he is about to be sold away from his wife and children. They float south on a raft, which takes them further into slave country with every mile. Twain gives the whole book to Huck's voice, so that everything cruel in the society comes to the reader through a narrator who has been taught to think it ordinary, and the novel's central act of conscience is one Huck believes will damn him.",
+  "referenceStyle": "chapter",
+  "sourceText": {
+    "label": "Standard Ebooks text of Adventures of Huckleberry Finn",
+    "note": "References give the chapter; the last is numbered in the text as 'Chapter the Last'. The novel repeatedly uses a racial slur that is not reproduced here."
+  },
+  "atAGlance": [
+    {
+      "label": "British first",
+      "value": "December 1884",
+      "note": "Chatto & Windus, London, some weeks ahead of the American issue."
+    },
+    {
+      "label": "American first",
+      "value": "February 1885",
+      "note": "Charles L. Webster & Company, New York — Twain's own firm, selling by subscription."
+    },
+    {
+      "label": "Written over",
+      "value": "Seven years",
+      "note": "Begun in 1876, abandoned, taken up briefly in 1880 and finished in 1883."
+    },
+    {
+      "label": "Front matter",
+      "value": "A Notice and an Explanatory",
+      "note": "One forbids the reader to look for a moral; the other insists the dialects were done by ear and on purpose."
+    },
+    {
+      "label": "Narration",
+      "value": "First person, vernacular",
+      "note": "Huck's grammar is the book's instrument: everything the reader knows arrives through a boy who does not know it."
+    }
+  ],
+  "structure": [
+    {
+      "id": "village",
+      "label": "Chapters 1–7",
+      "title": "Widow, Pap and a faked murder",
+      "summary": "Huck is being civilised by the Widow Douglas and schooled by Miss Watson when his father reappears to claim him and the money the last book left him. Locked in a cabin across the river and beaten, he saws his way out, kills a pig, scatters the blood and hair, and arranges the scene so that the whole village will go looking for a body.",
+      "scenes": [
+        {
+          "ref": "Chapter 1",
+          "title": "Civilising Huck",
+          "summary": "Prayer, the good place and the bad place, and a boy who would rather go where the company is better."
+        },
+        {
+          "ref": "Chapter 6",
+          "title": "The cabin",
+          "summary": "Pap takes him across the river and keeps him locked in while he drinks."
+        },
+        {
+          "ref": "Chapter 7",
+          "title": "The pig",
+          "summary": "A murder is staged so convincingly that nobody will look for a runaway."
+        }
+      ]
+    },
+    {
+      "id": "island",
+      "label": "Chapters 8–11",
+      "title": "Jackson's Island",
+      "summary": "Huck finds he is not alone on the island: Miss Watson's Jim has run because he overheard that he was to be sold down to New Orleans for eight hundred dollars. Two escapes become one journey, although only one of them is a crime. A flooded house drifts past with a dead man in it whom Jim will not let Huck look at.",
+      "scenes": [
+        {
+          "ref": "Chapter 8",
+          "title": "The meeting",
+          "summary": "Jim admits he has run off; Huck promises not to tell, and immediately feels the weight of the promise."
+        },
+        {
+          "ref": "Chapter 11",
+          "title": "Judith Loftus",
+          "summary": "Huck goes ashore in a dress, is caught out by the way he throws, and learns men are searching the island."
+        }
+      ]
+    },
+    {
+      "id": "river",
+      "label": "Chapters 12–16",
+      "title": "The fog, and the men with the guns",
+      "summary": "A wrecked steamboat, a night of borrowed provisions, and then the two decisive scenes of the first half: a fog that separates them, after which Huck tries to persuade Jim the whole night was a dream, and a skiff carrying two men hunting runaways, whom Huck turns away with a story about smallpox. They pass Cairo in the dark without knowing it.",
+      "scenes": [
+        {
+          "ref": "Chapter 15",
+          "title": "The fog",
+          "summary": "Jim's grief at losing Huck is turned into a joke, and then answered."
+        },
+        {
+          "ref": "Chapter 16",
+          "title": "The slave hunters",
+          "summary": "Huck cannot give Jim up, decides he has done wrong, and cannot work out why doing right would feel any better."
+        }
+      ]
+    },
+    {
+      "id": "feud",
+      "label": "Chapters 17–18",
+      "title": "The Grangerfords",
+      "summary": "Separated from Jim, Huck is taken in by a family of unfailing courtesy who have been shooting their neighbours for thirty years over a lawsuit nobody can now explain. He is given a parlour with an elegy-writing dead daughter's paintings in it, watches two boys he likes killed at a woodpile, and goes back to the raft without describing what he saw.",
+      "scenes": [
+        {
+          "ref": "Chapter 18",
+          "title": "The woodpile",
+          "summary": "Buck is shot; Huck climbs a tree and afterwards says he will not tell everything that happened."
+        }
+      ]
+    },
+    {
+      "id": "frauds",
+      "label": "Chapters 19–30",
+      "title": "The duke and the king",
+      "summary": "Two confidence men take over the raft and turn the journey into a tour of what small river towns will pay to see. A camp meeting is robbed, a drunk is shot dead in the street in front of a crowd that wants to lynch his killer and is talked out of it, Shakespeare is mangled for money, and finally the pair impersonate the brothers of a dead man to steal his daughters' inheritance.",
+      "scenes": [
+        {
+          "ref": "Chapter 22",
+          "title": "Colonel Sherburn",
+          "summary": "A man who has just committed murder faces down a mob by telling them what they are."
+        },
+        {
+          "ref": "Chapter 26",
+          "title": "The Wilks girls",
+          "summary": "Huck decides to steal the money back because Mary Jane's trust is more than he can go on taking."
+        }
+      ]
+    },
+    {
+      "id": "letter",
+      "label": "Chapters 31–32",
+      "title": "The letter, and what Huck does with it",
+      "summary": "The king sells Jim for forty dollars. Huck tries to pray, finds he cannot pray a lie, writes to Miss Watson to tell her where Jim is, and feels clean for the first time in his life. Then he sits thinking about the journey, looks at the paper, and decides. He arrives at the Phelps farm and is taken for somebody else entirely.",
+      "scenes": [
+        {
+          "ref": "Chapter 31",
+          "title": "The decision",
+          "summary": "A letter is written, held, and torn up, and the boy tearing it believes he has chosen damnation."
+        }
+      ]
+    },
+    {
+      "id": "evasion",
+      "label": "Chapters 33–43",
+      "title": "Tom Sawyer's arrangements",
+      "summary": "Tom arrives, discovers that Jim is being held in a shed, and refuses to simply open the door. Six weeks of rope ladders, sawn bedposts, anonymous letters, rats and a grindstone follow, because the books say so. The escape ends with Tom shot in the leg, Jim giving up his own freedom to fetch a doctor, and the news that Miss Watson freed him in her will two months earlier.",
+      "scenes": [
+        {
+          "ref": "Chapter 36",
+          "title": "The plan",
+          "summary": "Tom rejects every practical method on the grounds that it is not in the authorities."
+        },
+        {
+          "ref": "Chapter 40",
+          "title": "The doctor",
+          "summary": "Jim comes out of hiding to help the boy who has been using him, knowing what it will cost."
+        },
+        {
+          "ref": "Chapter the Last",
+          "title": "The Territory",
+          "summary": "Jim is told he has been free all along, Tom pays him forty dollars, and Huck decides to leave before anyone can adopt him."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "huck",
+      "name": "Huckleberry Finn",
+      "role": "Narrator; a thirteen-year-old runaway",
+      "summary": "He lies constantly, competently and mostly to protect other people, and he tells the reader the truth about everything he does not understand. His moral education happens entirely in the wrong vocabulary: every decent thing he does, he records as a sin, which is why the book can show a conscience working without ever letting him take credit for it.",
+      "clue": "He fakes his own murder with a pig's blood, invents a new name in every town, and thinks he is going to hell for the best thing he ever did.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "resourceful",
+        "truthful in the wrong direction",
+        "trained to be wrong"
+      ],
+      "relationships": [
+        {
+          "to": "jim",
+          "label": "travels with, betrays, apologises to, protects",
+          "kind": "ally",
+          "stages": [
+            "island",
+            "river",
+            "letter"
+          ]
+        },
+        {
+          "to": "pap",
+          "label": "son of",
+          "kind": "family",
+          "stages": [
+            "village"
+          ]
+        },
+        {
+          "to": "tom-sawyer",
+          "label": "friend and follower of",
+          "kind": "ally",
+          "stages": [
+            "village",
+            "evasion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jim",
+      "name": "Jim",
+      "role": "An enslaved man, husband and father, running for his family",
+      "summary": "He runs because he has heard he is to be sold to New Orleans and separated from his wife and children, and everything he does afterwards is directed at getting them back. He is the most competent adult in the book — he reads the river, the weather and the people — and he is the one character permitted a scene of unguarded grief, about a daughter he once struck for disobedience she could not hear.",
+      "clue": "He is worth eight hundred dollars, and says so; he stands another man's night watch so the boy can sleep; and he gives up his own escape to fetch a doctor for the child who trapped him.",
+      "firstAppearance": "Chapter 2",
+      "traits": [
+        "watchful",
+        "self-possessed",
+        "acting always for his family"
+      ],
+      "relationships": [
+        {
+          "to": "huck",
+          "label": "protects and instructs",
+          "kind": "ally",
+          "stages": [
+            "island",
+            "river",
+            "letter"
+          ]
+        },
+        {
+          "to": "miss-watson",
+          "label": "enslaved by, and freed in her will",
+          "kind": "service",
+          "stages": [
+            "village",
+            "evasion"
+          ]
+        },
+        {
+          "to": "duke-and-king",
+          "label": "sold for forty dollars by",
+          "kind": "enemy",
+          "stages": [
+            "frauds",
+            "letter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tom-sawyer",
+      "name": "Tom Sawyer",
+      "role": "Huck's friend, and the author of the last ten chapters' plans",
+      "summary": "He has read the romances and intends to live by them, which is charming at the start of the book and unbearable at the end. He knows throughout the escape that Jim has already been freed, and keeps that fact to himself because the adventure requires a prisoner. The novel lets him be shot in the leg and does not otherwise punish him.",
+      "clue": "He will not let anyone simply unlock a door, because the authorities require a rope ladder, a journal in blood and a pet rattlesnake.",
+      "firstAppearance": "Chapter 2",
+      "traits": [
+        "inventive",
+        "literary",
+        "careless of other people's time and skin"
+      ],
+      "relationships": [
+        {
+          "to": "huck",
+          "label": "directs",
+          "kind": "mentor",
+          "stages": [
+            "village",
+            "evasion"
+          ]
+        },
+        {
+          "to": "jim",
+          "label": "keeps captive for sport",
+          "kind": "enemy",
+          "stages": [
+            "evasion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pap",
+      "name": "Pap Finn",
+      "role": "Huck's father",
+      "summary": "A drunk who appears when he hears his son has money, sues for custody, and is granted it by a new judge who believes in the sanctity of the family. His rant about a well-dressed free Black college professor is the clearest statement in the book of what the racial system is actually for, and it is delivered by the least competent man in Missouri.",
+      "clue": "He has hair like a dead fish's belly, goes to law to get his son's money, and reckons a government that lets an educated free man vote is not worth belonging to.",
+      "firstAppearance": "Chapter 5",
+      "traits": [
+        "violent",
+        "self-pitying",
+        "entitled"
+      ],
+      "relationships": [
+        {
+          "to": "huck",
+          "label": "father of",
+          "kind": "family",
+          "stages": [
+            "village"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "miss-watson",
+      "name": "Miss Watson",
+      "role": "The Widow Douglas's sister, and Jim's owner",
+      "summary": "She teaches Huck to spell and to pray, promises him a heaven consisting of a harp, and is about to sell a man away from his family for eight hundred dollars. The novel never treats these as separate facts. Her deathbed manumission arrives too late to be generosity and too conveniently to be anything else.",
+      "clue": "She sets a boy to his spelling-book, tells him about the good place, and is at the same moment considering an offer from a New Orleans trader.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "pious",
+        "improving",
+        "an owner of people"
+      ],
+      "relationships": [
+        {
+          "to": "jim",
+          "label": "owns, and frees in her will",
+          "kind": "service",
+          "stages": [
+            "village",
+            "evasion"
+          ]
+        },
+        {
+          "to": "huck",
+          "label": "attempts to civilise",
+          "kind": "mentor",
+          "stages": [
+            "village"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duke-and-king",
+      "name": "The duke and the king",
+      "role": "Two confidence men who take over the raft",
+      "summary": "One claims to be a displaced duke, the other the lost dauphin of France, and the river towns keep paying. They are funny for ten chapters and then they sell a man for forty dollars, which is the book's coldest joke: the frauds finally deal in the one commodity the respectable characters deal in too.",
+      "clue": "One is a duke and the other a king, both by their own account, and their best-attended show is the one nobody is allowed to describe afterwards.",
+      "firstAppearance": "Chapter 19",
+      "traits": [
+        "shameless",
+        "inventive",
+        "finally simply cruel"
+      ],
+      "relationships": [
+        {
+          "to": "huck",
+          "label": "commandeer the raft from",
+          "kind": "rival",
+          "stages": [
+            "frauds"
+          ]
+        },
+        {
+          "to": "mary-jane",
+          "label": "attempt to rob",
+          "kind": "enemy",
+          "stages": [
+            "frauds"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buck-grangerford",
+      "name": "Buck Grangerford",
+      "role": "A boy of Huck's age in a feuding family",
+      "summary": "He is delighted to have a friend his own age and cannot explain the war he is fighting: a lawsuit, thirty years ago, that somebody lost. He is killed within two chapters of meeting Huck, and the manner of his death is the one thing Huck refuses to write down in detail.",
+      "clue": "He asks a stranger a riddle, cannot say what his family's war is about, and is shot at a woodpile before the chapter ends.",
+      "firstAppearance": "Chapter 17",
+      "traits": [
+        "friendly",
+        "brave",
+        "inheriting a quarrel"
+      ],
+      "relationships": [
+        {
+          "to": "huck",
+          "label": "befriends",
+          "kind": "ally",
+          "stages": [
+            "feud"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sherburn",
+      "name": "Colonel Sherburn",
+      "role": "A storekeeper who shoots a drunk in the street",
+      "summary": "He gives the town twenty-four hours' notice, kills Boggs in front of the man's daughter, and then stands on his own porch and tells the lynch mob exactly why it will not come up the steps. The speech is contemptuous, accurate and entirely unpunished, and the novel gives nobody a voice to answer it.",
+      "clue": "He shoots an unarmed drunk at the appointed hour, then faces down the crowd that comes for him with nothing but a shotgun and an opinion of them.",
+      "firstAppearance": "Chapter 21",
+      "traits": [
+        "cold",
+        "articulate",
+        "unanswered"
+      ],
+      "relationships": [
+        {
+          "to": "huck",
+          "label": "watched by",
+          "kind": "rival",
+          "stages": [
+            "frauds"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mary-jane",
+      "name": "Mary Jane Wilks",
+      "role": "The eldest of three orphaned sisters",
+      "summary": "She inherits, with her sisters, the estate the king and the duke have come for, and she is the person whose straightforward decency finally makes lying unendurable to Huck. She is also the one character who cries over a family of enslaved people being sold apart, which the novel notes and the town does not.",
+      "clue": "Her trust is what makes the boy give up a fraud he had every reason to let run, and she leaves a candle burning for him.",
+      "firstAppearance": "Chapter 24",
+      "traits": [
+        "generous",
+        "direct",
+        "capable of grief for other people"
+      ],
+      "relationships": [
+        {
+          "to": "huck",
+          "label": "trusted and protected by",
+          "kind": "ally",
+          "stages": [
+            "frauds"
+          ]
+        },
+        {
+          "to": "duke-and-king",
+          "label": "defrauded by",
+          "kind": "enemy",
+          "stages": [
+            "frauds"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "conscience",
+      "name": "Conscience against instruction",
+      "summary": "Huck's conscience is a machine his society built, and it works perfectly: it tells him that helping Jim is theft and a sin, and it makes him feel filthy for doing it. What the novel dramatises is not a boy discovering that slavery is wrong but a boy acting against everything he believes and calling the result wickedness.",
+      "development": "First felt as an itch in Chapter 16, argued out and abandoned at the end of the same chapter, and brought to a decision in Chapter 31 when he tears up the letter and takes the damnation with it."
+    },
+    {
+      "id": "freedom",
+      "name": "The river and the shore",
+      "summary": "The raft holds talk, food, work and the only sustained kindness in the book, and it is moving in the wrong direction the whole time. Twain will not allow the water to be a symbol of liberty: it is a road, a workplace and a commercial highway that carries two fugitives deeper into the country they are escaping.",
+      "development": "Established in the night passages of Chapters 12 and 19, undercut when they pass Cairo in the fog, and closed off entirely when the raft is boarded in Chapter 19 by two men who take it over."
+    },
+    {
+      "id": "property",
+      "name": "People as property",
+      "summary": "The novel's most chilling sentences are arithmetic. Jim is worth eight hundred dollars, and says so about himself; he is sold for forty by a man who wanted a drink; a reward of two hundred is advertised for his return. The system is shown through prices rather than through argument, which is why the book does not need a speech against it.",
+      "development": "Named in Chapter 8 when Jim explains why he ran, priced in Chapter 31, and finally made absurd in Chapter 43 when Tom pays him forty dollars for having been a prisoner."
+    },
+    {
+      "id": "fraud",
+      "name": "Performance and fraud",
+      "summary": "Almost every character is playing somebody else: Huck is a girl, an orphan, a servant and then Tom Sawyer; the duke and the king are royalty; Tom conducts an escape according to books. The river towns are taken in because they want the show, and the novel keeps asking who is left paying when the audience goes home.",
+      "development": "Comic from Chapter 19, turns ugly at the Wilks funeral, and becomes cruelty in the last ten chapters, when the performance is staged around a man who cannot leave."
+    },
+    {
+      "id": "respectability",
+      "name": "Respectability and violence",
+      "summary": "The Grangerfords are courteous, hospitable, church-going and murderous; the town that wants to lynch Sherburn is the same town that laughed at Boggs; the ladies who set Huck to his spelling own the man on the raft. Twain arranges the episodes so that the violence is always underwritten by good manners.",
+      "development": "From the family that takes their guns to church in Chapter 18, through Sherburn's speech in Chapter 22, to the tarred and feathered frauds in Chapter 33 that make even Huck sick."
+    },
+    {
+      "id": "books",
+      "name": "What books do to people",
+      "summary": "Tom's romances give the gang its oath, the caravan of Spaniards that turns out to be a Sunday-school picnic, and finally a six-week escape plan for a man who could walk out of an unlocked door. Set beside them are Emmeline Grangerford's mortuary verses and the Shakespeare the king butchers for money: reading is presented as a way of not seeing what is in front of you.",
+      "development": "Introduced as a joke in Chapter 3, echoed in the Grangerford parlour, and turned into the structural problem of the last section."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "vernacular-narration",
+      "name": "Vernacular first person",
+      "definition": "Telling a whole novel in the unliterary speech of its narrator, including its grammar and its blind spots.",
+      "inThisBook": "There is no adult voice anywhere in the book to explain what Huck has got wrong, so the reader has to make the judgement from inside a sentence that is not making it."
+    },
+    {
+      "id": "dialect",
+      "name": "Written dialect",
+      "definition": "Rendering different regional and social speech by respelling it on the page.",
+      "inThisBook": "The Explanatory insists on seven distinct varieties, done by ear rather than guesswork, and the claim is a warning: the way a character talks is going to be treated as evidence about them."
+    },
+    {
+      "id": "dramatic-irony",
+      "name": "Dramatic irony",
+      "definition": "A narrator reporting something the reader understands better than he does.",
+      "inThisBook": "Huck calls his decision to help Jim wickedness, and the whole moral force of the book depends on the reader disagreeing with the only voice available."
+    },
+    {
+      "id": "episodic",
+      "name": "Episodic structure",
+      "definition": "A journey narrative built from self-contained encounters rather than a single developing plot.",
+      "inThisBook": "Feud, camp meeting, murder, mob, Shakespeare, funeral fraud: each landing is a separate examination of a community, and the raft between them is where the book breathes."
+    },
+    {
+      "id": "deadpan",
+      "name": "Deadpan",
+      "definition": "Delivering an outrage or an absurdity in the same flat tone as everything else.",
+      "inThisBook": "Huck reports a shooting, a lynch mob and his own damnation in the same register he uses for catfish and corn-dodgers, and the flatness is what makes them land."
+    },
+    {
+      "id": "framing-notice",
+      "name": "The framing notice",
+      "definition": "Prefatory matter that instructs the reader how — or how not — to read what follows.",
+      "inThisBook": "A Notice threatens prosecution, banishment and shooting for anyone who looks for motive, moral or plot; the joke is a dare, and the book has a moral, a motive and very little plot."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "notice",
+      "text": "Persons attempting to find a motive in this narrative will be prosecuted; persons attempting to find a moral in it will be banished; persons attempting to find a plot in it will be shot.",
+      "reference": "Notice",
+      "stage": "village",
+      "context": "The single sentence printed on its own page before the novel begins.",
+      "analysis": "Three legal punishments escalate from prosecution to execution across one sentence, which is the same escalation the book's river towns run on. The joke is also a set of instructions: it is precisely the motive, the moral and the plot that readers have been arguing about ever since, and the notice knows it.",
+      "themes": [
+        "books"
+      ],
+      "techniques": [
+        "framing-notice",
+        "deadpan"
+      ],
+      "characters": [],
+      "source": "Standard Ebooks text, Notice",
+      "cloze": [
+        "moral",
+        "plot"
+      ]
+    },
+    {
+      "id": "explanatory-shadings",
+      "text": "The shadings have not been done in a haphazard fashion, or by guesswork; but painstakingly, and with the trustworthy guidance and support of personal familiarity with these several forms of speech.",
+      "reference": "Explanatory",
+      "stage": "village",
+      "context": "The note on dialect, printed immediately after the Notice.",
+      "analysis": "Having just forbidden the reader to look for anything, Twain makes one claim in earnest, and it is about accuracy of ear. The effect is to put speech under warranty before the first chapter: how a character talks is going to be offered as evidence, so the reader is warned not to treat any voice in the book as neutral.",
+      "themes": [
+        "books"
+      ],
+      "techniques": [
+        "framing-notice",
+        "dialect"
+      ],
+      "characters": [],
+      "source": "Standard Ebooks text, Explanatory",
+      "cloze": [
+        "shadings",
+        "guesswork"
+      ]
+    },
+    {
+      "id": "you-dont-know-about-me",
+      "text": "You don’t know about me without you have read a book by the name of The Adventures of Tom Sawyer; but that ain’t no matter. That book was made by Mr. Mark Twain, and he told the truth, mainly. There was things which he stretched, but mainly he told the truth.",
+      "reference": "Chapter 1",
+      "stage": "village",
+      "context": "The opening of the novel.",
+      "analysis": "The narrator reviews his own author in the third sentence, and grades him: mainly truthful, some stretching. That sets the terms for everything after it — this book will be judged by whether it tells the truth rather than whether it is well made — and it establishes at once that Huck's honesty and Huck's accuracy are not the same thing.",
+      "themes": [
+        "books"
+      ],
+      "techniques": [
+        "vernacular-narration",
+        "framing-notice"
+      ],
+      "characters": [
+        "huck",
+        "tom-sawyer"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "stretched",
+        "truth"
+      ]
+    },
+    {
+      "id": "good-place",
+      "text": "She said it was wicked to say what I said; said she wouldn’t say it for the whole world; she was going to live so as to go to the good place. Well, I couldn’t see no advantage in going where she was going, so I made up my mind I wouldn’t try for it.",
+      "reference": "Chapter 1",
+      "stage": "village",
+      "context": "Miss Watson has told Huck about heaven and hell, and he has said he wishes he were in the second one.",
+      "analysis": "He rejects salvation on grounds of company, which is a child's reason and also the book's whole ethical method: Huck decides everything by who is in the room. The same calculation will produce his decision in Chapter 31, where he chooses hell again, and for exactly the same reason.",
+      "themes": [
+        "conscience",
+        "respectability"
+      ],
+      "techniques": [
+        "vernacular-narration",
+        "deadpan"
+      ],
+      "characters": [
+        "huck",
+        "miss-watson"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "wicked",
+        "advantage"
+      ]
+    },
+    {
+      "id": "i-run-off",
+      "text": "“Well, I b’lieve you, Huck. I⁠—I run off.”",
+      "speaker": "Jim",
+      "reference": "Chapter 8",
+      "stage": "island",
+      "context": "On Jackson's Island, after Huck has sworn not to tell.",
+      "analysis": "The hesitation is printed into the line — the pronoun is said twice with a dash between — and it is the only time in the book Jim stammers. He is handing a white child the power to have him hunted, and the novel measures the size of that in two syllables and a piece of punctuation.",
+      "themes": [
+        "property",
+        "conscience"
+      ],
+      "techniques": [
+        "dialect"
+      ],
+      "characters": [
+        "jim",
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 8",
+      "cloze": [
+        "run off"
+      ]
+    },
+    {
+      "id": "i-owns-mysef",
+      "text": "“Yes; en I’s rich now, come to look at it. I owns mysef, en I’s wuth eight hund’d dollars. I wisht I had de money, I wouldn’ want no mo’.”",
+      "speaker": "Jim",
+      "reference": "Chapter 8",
+      "stage": "island",
+      "context": "Telling Huck about his speculations in livestock and the bank that failed.",
+      "analysis": "He performs the entire logic of slavery in three clauses: the man is the property, so running makes him the owner of an asset worth eight hundred dollars that he cannot sell or spend. The joke is exact and the final wish — that he had the money instead of merely being it — is the most desolate sentence in the chapter.",
+      "themes": [
+        "property",
+        "freedom"
+      ],
+      "techniques": [
+        "dialect",
+        "deadpan"
+      ],
+      "characters": [
+        "jim"
+      ],
+      "source": "Standard Ebooks text, Chapter 8",
+      "cloze": [
+        "rich",
+        "dollars"
+      ]
+    },
+    {
+      "id": "trash",
+      "text": "En all you wuz thinkin’ ’bout wuz how you could make a fool uv ole Jim wid a lie. Dat truck dah is trash; en trash is what people is dat puts dirt on de head er dey fren’s en makes ’em ashamed.",
+      "speaker": "Jim",
+      "reference": "Chapter 15",
+      "stage": "river",
+      "context": "After Huck, reunited in the fog, has tried to convince him that the whole terrifying night was a dream.",
+      "analysis": "Jim turns the leaves and rubbish on the raft into a definition and then applies it to a person, so the rebuke is built out of what is physically in front of them. It is the only moment in the book where an adult states a moral principle plainly, and it comes from the man the law counts as property; Huck's apology follows, and he records it as the hardest thing he ever did.",
+      "themes": [
+        "conscience",
+        "freedom"
+      ],
+      "techniques": [
+        "dialect"
+      ],
+      "characters": [
+        "jim",
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 15",
+      "cloze": [
+        "trash",
+        "ashamed"
+      ]
+    },
+    {
+      "id": "trembly-and-feverish",
+      "text": "Jim said it made him all over trembly and feverish to be so close to freedom. Well, I can tell you it made me all over trembly and feverish, too, to hear him, because I begun to get it through my head that he was most free⁠—and who was to blame for it? Why, me.",
+      "reference": "Chapter 16",
+      "stage": "river",
+      "context": "Watching for the lights of Cairo, where the Ohio would carry them into free states.",
+      "analysis": "The same four words describe two opposite feelings, and the repetition is what makes the passage work: Huck can feel exactly what Jim feels and has been taught to file it as guilt. 'Who was to blame' treats another man's liberty as damage, which is the vocabulary the whole book is trying to get out of and never quite does.",
+      "themes": [
+        "conscience",
+        "freedom"
+      ],
+      "techniques": [
+        "dramatic-irony",
+        "vernacular-narration"
+      ],
+      "characters": [
+        "huck",
+        "jim"
+      ],
+      "source": "Standard Ebooks text, Chapter 16",
+      "cloze": [
+        "trembly",
+        "blame"
+      ]
+    },
+    {
+      "id": "spose-youd-a-done-right",
+      "text": "Then I thought a minute, and says to myself, hold on; s’pose you’d a done right and give Jim up, would you felt better than what you do now? No, says I, I’d feel bad⁠—I’d feel just the same way I do now.",
+      "reference": "Chapter 16",
+      "stage": "river",
+      "context": "Alone on the raft after turning two slave hunters away with a story about smallpox in the family.",
+      "analysis": "He tests his moral training empirically and it fails: the two courses of action produce the same feeling, so the rule cannot be doing any work. Huck's conclusion is that he may as well stop bothering about right and wrong altogether, which is the funniest and bleakest joke in the novel — the failure of a corrupt ethics leaves him with no ethics he can name.",
+      "themes": [
+        "conscience"
+      ],
+      "techniques": [
+        "dramatic-irony",
+        "vernacular-narration"
+      ],
+      "characters": [
+        "huck",
+        "jim"
+      ],
+      "source": "Standard Ebooks text, Chapter 16",
+      "cloze": [
+        "right",
+        "bad"
+      ]
+    },
+    {
+      "id": "feud",
+      "text": "a feud is this way: A man has a quarrel with another man, and kills him; then that other man’s brother kills him; then the other brothers, on both sides, goes for one another; then the cousins chip in⁠—and by and by everybody’s killed off, and there ain’t no more feud. But it’s kind of slow, and takes a long time.",
+      "speaker": "Buck Grangerford",
+      "reference": "Chapter 18",
+      "stage": "feud",
+      "context": "Explaining to Huck what his family has been doing for thirty years.",
+      "analysis": "The definition is delivered as a process with a predictable end state, like a recipe, and the last sentence complains about the pace rather than the outcome. Buck cannot say what the quarrel was about — a lawsuit, somebody lost — and he will be killed within two chapters, which makes his tone the exact measure of how thoroughly the thing has been inherited.",
+      "themes": [
+        "respectability"
+      ],
+      "techniques": [
+        "deadpan",
+        "episodic"
+      ],
+      "characters": [
+        "buck-grangerford",
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 18",
+      "cloze": [
+        "feud",
+        "cousins"
+      ]
+    },
+    {
+      "id": "not-a-sound-anywheres",
+      "text": "Not a sound anywheres⁠—perfectly still⁠—just like the whole world was asleep, only sometimes the bullfrogs a-cluttering, maybe.",
+      "reference": "Chapter 19",
+      "stage": "frauds",
+      "context": "The opening of the dawn passage, a few pages before the duke and the king come aboard.",
+      "analysis": "The sentence is built entirely out of negatives and qualifications, which is how Huck describes anything he loves: he will not commit to the silence without adding the frogs. This is the last unspoiled morning in the book — within four pages two men will climb onto the raft — and Twain gives it the most careful prose Huck ever produces.",
+      "themes": [
+        "freedom"
+      ],
+      "techniques": [
+        "vernacular-narration"
+      ],
+      "characters": [
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 19",
+      "cloze": [
+        "still",
+        "bullfrogs"
+      ]
+    },
+    {
+      "id": "lovely-to-live-on-a-raft",
+      "text": "It’s lovely to live on a raft. We had the sky up there, all speckled with stars, and we used to lay on our backs and look up at them, and discuss about whether they was made or only just happened.",
+      "reference": "Chapter 19",
+      "stage": "frauds",
+      "context": "Describing the nights before the two confidence men arrive.",
+      "analysis": "Two people on a raft conduct a cosmological debate in the flattest possible terms — made, or only just happened — and neither of them wins. It is the only conversation in the book between equals, and Twain has placed it in the middle of the chapter that ends with the raft being taken over.",
+      "themes": [
+        "freedom",
+        "conscience"
+      ],
+      "techniques": [
+        "vernacular-narration"
+      ],
+      "characters": [
+        "huck",
+        "jim"
+      ],
+      "source": "Standard Ebooks text, Chapter 19",
+      "cloze": [
+        "raft",
+        "stars"
+      ]
+    },
+    {
+      "id": "average-man-coward",
+      "text": "I was born and raised in the South, and I’ve lived in the North; so I know the average all around. The average man’s a coward.",
+      "speaker": "Colonel Sherburn",
+      "reference": "Chapter 22",
+      "stage": "frauds",
+      "context": "On his own porch, facing the mob that has come to lynch him for shooting Boggs.",
+      "analysis": "The speech works because it is true and because the man delivering it has just committed murder in front of a child. Twain gives the book's sharpest analysis of crowd cowardice to a killer and then gives nobody the reply, which leaves the reader holding an argument they cannot comfortably accept or refute.",
+      "themes": [
+        "respectability"
+      ],
+      "techniques": [
+        "episodic"
+      ],
+      "characters": [
+        "sherburn"
+      ],
+      "source": "Standard Ebooks text, Chapter 22",
+      "cloze": [
+        "average",
+        "coward"
+      ]
+    },
+    {
+      "id": "kings-rapscallions",
+      "text": "“Well, that’s what I’m a-saying; all kings is mostly rapscallions, as fur as I can make out.”",
+      "speaker": "Huckleberry Finn",
+      "reference": "Chapter 23",
+      "stage": "frauds",
+      "context": "On the raft, after Jim asks whether the two impostors are typical of royalty.",
+      "analysis": "Huck defends the frauds by generalising them, and then runs through Henry the Eighth and half the English succession to prove it — which is his one piece of book learning and it is all wrong. The comedy conceals the point: the duke and the king are not a departure from how power behaves in this novel, they are a small provincial version of it.",
+      "themes": [
+        "fraud",
+        "books"
+      ],
+      "techniques": [
+        "deadpan"
+      ],
+      "characters": [
+        "huck",
+        "duke-and-king",
+        "jim"
+      ],
+      "source": "Standard Ebooks text, Chapter 23",
+      "cloze": [
+        "kings",
+        "rapscallions"
+      ]
+    },
+    {
+      "id": "plumb-deef-en-dumb",
+      "text": "Oh, Huck, I bust out a-cryin’ en grab her up in my arms, en say, ‘Oh, de po’ little thing! De Lord God Amighty fogive po’ ole Jim, kaze he never gwyne to fogive hisself as long’s he live!’ Oh, she was plumb deef en dumb, Huck, plumb deef en dumb⁠—en I’d ben a-treat’n her so!",
+      "speaker": "Jim",
+      "reference": "Chapter 23",
+      "stage": "frauds",
+      "context": "Late at night on the raft, after Huck has woken to find him mourning for his wife and children.",
+      "analysis": "The story is told as a piece of evidence against himself: he struck a four-year-old for disobedience she could not hear. Twain gives Jim a scene of self-accusation of exactly the kind he gives Huck, and the repetition of 'plumb deef en dumb' is the sound of a man still, years later, working out what happened.",
+      "themes": [
+        "property",
+        "conscience"
+      ],
+      "techniques": [
+        "dialect"
+      ],
+      "characters": [
+        "jim",
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 23",
+      "cloze": [
+        "cryin’",
+        "fogive"
+      ]
+    },
+    {
+      "id": "ill-pray-for-you",
+      "text": "“Good-bye. I’m going to do everything just as you’ve told me; and if I don’t ever see you again, I shan’t ever forget you and I’ll think of you a many and a many a time, and I’ll pray for you, too!”⁠—and she was gone.",
+      "speaker": "Mary Jane Wilks",
+      "reference": "Chapter 28",
+      "stage": "frauds",
+      "context": "Leaving the house on Huck's instructions, so that the fraud can be exposed without her present.",
+      "analysis": "She promises to pray for a boy who has spent three days lying to her, and Huck's reaction is to say that she could no more pray for Judas than for him. The novel gives him a person to protect for the first time since Jim, and the test matters because Jim is not there: it is the one decision he makes for somebody he has known for three days.",
+      "themes": [
+        "conscience",
+        "fraud"
+      ],
+      "techniques": [
+        "episodic"
+      ],
+      "characters": [
+        "mary-jane",
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 28",
+      "cloze": [
+        "forget",
+        "pray"
+      ]
+    },
+    {
+      "id": "pray-a-lie",
+      "text": "You can’t pray a lie⁠—I found that out.",
+      "reference": "Chapter 31",
+      "stage": "letter",
+      "context": "Kneeling to pray for the strength to give Jim up, and finding the words will not come.",
+      "analysis": "Five words and a discovery, reported in the past tense as though it were a fact about the world rather than about him. The sentence is the hinge of the book: Huck has established that he cannot deceive God, which leaves him nothing to hide behind when he sits down twenty lines later with the letter in his hand.",
+      "themes": [
+        "conscience"
+      ],
+      "techniques": [
+        "vernacular-narration",
+        "deadpan"
+      ],
+      "characters": [
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 31",
+      "cloze": [
+        "pray",
+        "lie"
+      ]
+    },
+    {
+      "id": "close-place",
+      "text": "It was a close place. I took it up, and held it in my hand. I was a-trembling, because I’d got to decide, forever, betwixt two things, and I knowed it.",
+      "reference": "Chapter 31",
+      "stage": "letter",
+      "context": "Holding the letter that would tell Miss Watson where Jim is.",
+      "analysis": "Four short sentences, no subordination, and one adverb doing all the work: 'forever'. Huck understands the stakes exactly — he has just spent a page remembering Jim standing his watch and calling him honey — and the physical detail of the trembling hand is the only description in a passage otherwise made entirely of thought.",
+      "themes": [
+        "conscience",
+        "property"
+      ],
+      "techniques": [
+        "vernacular-narration"
+      ],
+      "characters": [
+        "huck",
+        "jim"
+      ],
+      "source": "Standard Ebooks text, Chapter 31",
+      "cloze": [
+        "close",
+        "decide"
+      ]
+    },
+    {
+      "id": "go-to-hell",
+      "text": "“All right, then, I’ll go to hell”⁠—and tore it up.",
+      "speaker": "Huckleberry Finn",
+      "reference": "Chapter 31",
+      "stage": "letter",
+      "context": "The decision, spoken aloud to himself on the raft.",
+      "analysis": "The most moral act in American fiction is recorded as a sin by the person committing it, and the sentence gives two thirds of its length to the damnation and one clause to the deed. 'All right, then' is the tone of a boy conceding an argument he has lost, which is precisely what has happened: his conscience won, and he did the right thing anyway.",
+      "themes": [
+        "conscience",
+        "property"
+      ],
+      "techniques": [
+        "dramatic-irony",
+        "vernacular-narration"
+      ],
+      "characters": [
+        "huck",
+        "jim"
+      ],
+      "source": "Standard Ebooks text, Chapter 31",
+      "cloze": [
+        "hell",
+        "tore"
+      ]
+    },
+    {
+      "id": "awful-thoughts",
+      "text": "It was awful thoughts and awful words, but they was said. And I let them stay said; and never thought no more about reforming.",
+      "reference": "Chapter 31",
+      "stage": "letter",
+      "context": "Immediately after tearing up the letter.",
+      "analysis": "'Let them stay said' treats speech as something that could have been withdrawn and deliberately was not, which is as close as Huck comes to claiming a decision. He then reclassifies himself as wicked by profession, and the novel lets the misdescription stand — there is nobody in the book qualified to correct him.",
+      "themes": [
+        "conscience"
+      ],
+      "techniques": [
+        "dramatic-irony"
+      ],
+      "characters": [
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 31",
+      "cloze": [
+        "awful",
+        "reforming"
+      ]
+    },
+    {
+      "id": "human-beings-cruel",
+      "text": "Well, it made me sick to see it; and I was sorry for them poor pitiful rascals, it seemed like I couldn’t ever feel any hardness against them any more in the world. It was a dreadful thing to see. Human beings can be awful cruel to one another.",
+      "reference": "Chapter 33",
+      "stage": "evasion",
+      "context": "Watching a mob carry the tarred and feathered duke and king through the town on a rail.",
+      "analysis": "He pities two men who sold his friend for forty dollars, which is the clearest evidence in the book that his sympathy operates independently of desert. The final sentence is the only general statement Huck makes in the whole novel, and it is about the crowd rather than about the frauds.",
+      "themes": [
+        "respectability",
+        "fraud"
+      ],
+      "techniques": [
+        "deadpan",
+        "vernacular-narration"
+      ],
+      "characters": [
+        "huck",
+        "duke-and-king"
+      ],
+      "source": "Standard Ebooks text, Chapter 33",
+      "cloze": [
+        "sorry",
+        "cruel"
+      ]
+    },
+    {
+      "id": "conscience-no-sense",
+      "text": "it don’t make no difference whether you do right or wrong, a person’s conscience ain’t got no sense, and just goes for him anyway",
+      "reference": "Chapter 33",
+      "stage": "evasion",
+      "context": "Walking home after the mob has gone past, feeling to blame for something he did not do.",
+      "analysis": "This is the finding of the experiment he ran in Chapter 16, now stated as a law. It also quietly protects the ending: a conscience that punishes indiscriminately is not a moral instrument at all, which is why Huck's decision on the raft has to be understood as made against his conscience rather than by it.",
+      "themes": [
+        "conscience"
+      ],
+      "techniques": [
+        "dramatic-irony",
+        "vernacular-narration"
+      ],
+      "characters": [
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 33",
+      "cloze": [
+        "conscience",
+        "sense"
+      ]
+    },
+    {
+      "id": "doan-budge",
+      "text": "Well, den, is Jim gywne to say it? No, sah⁠—I doan’ budge a step out’n dis place ’dout a doctor, not if it’s forty year!",
+      "speaker": "Jim",
+      "reference": "Chapter 40",
+      "stage": "evasion",
+      "context": "After Tom is shot in the leg during the escape, with the raft waiting and the river open.",
+      "analysis": "He reasons it out first — would Tom leave a man to die? — and answers with the one thing he has that is entirely his own, which is his word. The choice costs him his liberty within the hour, and Twain places it in the middle of the section most often accused of throwing the novel's moral seriousness away.",
+      "themes": [
+        "property",
+        "freedom"
+      ],
+      "techniques": [
+        "dialect"
+      ],
+      "characters": [
+        "jim",
+        "tom-sawyer",
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter 40",
+      "cloze": [
+        "budge",
+        "doctor"
+      ]
+    },
+    {
+      "id": "light-out",
+      "text": "But I reckon I got to light out for the Territory ahead of the rest, because Aunt Sally she’s going to adopt me and sivilize me, and I can’t stand it. I been there before.",
+      "reference": "Chapter the Last",
+      "stage": "evasion",
+      "context": "The last sentences of the novel.",
+      "analysis": "The book ends where it began, with a boy running from a woman who wants to improve him, and the circle is the point: nothing in four hundred pages has changed his position. 'I been there before' is the flattest possible last line, and the Territory he proposes to light out for is Indian land the United States is in the process of taking.",
+      "themes": [
+        "freedom",
+        "respectability"
+      ],
+      "techniques": [
+        "vernacular-narration",
+        "deadpan"
+      ],
+      "characters": [
+        "huck"
+      ],
+      "source": "Standard Ebooks text, Chapter the Last",
+      "cloze": [
+        "Territory",
+        "sivilize"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1835,
+      "label": "Samuel Langhorne Clemens born in Florida, Missouri",
+      "detail": "The family moved to Hannibal on the Mississippi four years later.",
+      "kind": "author"
+    },
+    {
+      "year": 1839,
+      "label": "The Clemens family settles in Hannibal",
+      "detail": "A river town in a slave state, and the model for St Petersburg in both Tom Sawyer and this book.",
+      "kind": "author"
+    },
+    {
+      "year": 1857,
+      "label": "Clemens begins training as a Mississippi steamboat pilot",
+      "detail": "Four years on the river gave him the geography, the vocabulary and eventually the pen name.",
+      "kind": "author"
+    },
+    {
+      "year": 1865,
+      "label": "The Thirteenth Amendment abolishes slavery in the United States",
+      "detail": "The novel is set roughly a generation earlier, but written and published well after emancipation, and in the middle of its reversal in the South.",
+      "kind": "context"
+    },
+    {
+      "year": 1876,
+      "label": "The Adventures of Tom Sawyer is published, and Huck's manuscript is begun",
+      "detail": "Twain wrote the first stretch at Quarry Farm near Elmira and then put it aside for years.",
+      "kind": "work"
+    },
+    {
+      "year": 1880,
+      "label": "A brief return to the manuscript",
+      "detail": "Work resumed and stalled again; the Grangerford and river material belongs to this uneven period.",
+      "kind": "work"
+    },
+    {
+      "year": 1883,
+      "label": "Life on the Mississippi is published and the novel is finished",
+      "detail": "A trip back down the river seems to have unlocked the second half, which was written quickly.",
+      "kind": "work"
+    },
+    {
+      "year": 1884,
+      "label": "Chatto & Windus publish the British edition in December",
+      "detail": "The London issue came out some weeks before the American one, partly to secure copyright.",
+      "kind": "work"
+    },
+    {
+      "year": 1885,
+      "label": "Charles L. Webster & Company publish the American edition in February",
+      "detail": "Twain's own subscription house, with illustrations by E. W. Kemble.",
+      "kind": "work"
+    },
+    {
+      "year": 1885,
+      "label": "The Concord public library removes the book from its shelves",
+      "detail": "The stated objections were to coarseness and bad grammar; Twain professed himself delighted by the sales it would bring.",
+      "kind": "reception"
+    },
+    {
+      "year": 1910,
+      "label": "Mark Twain dies at Redding, Connecticut",
+      "detail": "By then the book was established, and the arguments about its last ten chapters had already begun.",
+      "kind": "author"
+    }
+  ],
+  "places": [
+    {
+      "name": "Hannibal, Missouri",
+      "lat": 39.7084,
+      "lon": -91.3585,
+      "note": "Twain's boyhood town on the west bank, and the original of the village Huck runs from."
+    },
+    {
+      "name": "Cairo, Illinois",
+      "lat": 37.0053,
+      "lon": -89.1765,
+      "note": "The mouth of the Ohio, and the turning they miss in the fog — the one place the journey could have gone north."
+    },
+    {
+      "name": "St Louis, Missouri",
+      "lat": 38.627,
+      "lon": -90.1994,
+      "note": "The city downstream that the steamboats and the slave trade both run through."
+    },
+    {
+      "name": "New Orleans, Louisiana",
+      "lat": 29.9511,
+      "lon": -90.0715,
+      "note": "The market Jim is to be sold into, and the direction the river carries them the whole way."
+    },
+    {
+      "name": "Elmira, New York",
+      "lat": 42.0898,
+      "lon": -76.8077,
+      "note": "Quarry Farm, the hilltop study where the manuscript was begun in 1876 and finished in 1883."
+    },
+    {
+      "name": "Hartford, Connecticut",
+      "lat": 41.7658,
+      "lon": -72.6734,
+      "note": "The house Twain was living in while the book was written and published by his own firm."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "The book as America's central novel of conscience",
+      "summary": "The reading that made its reputation: Huck's decision in Chapter 31 is an individual moral judgement made against every institution that formed him, and the vernacular voice is what makes it possible.",
+      "counter": "It makes a white boy's conscience the measure of the book, when Jim's aims — freedom, safety, his family — are the ones the plot keeps deferring."
+    },
+    {
+      "position": "The book as a failure in its last ten chapters",
+      "summary": "A long-standing objection, put most influentially in the twentieth century: the arrival of Tom Sawyer turns a man's captivity into a game and throws away what the river journey had earned.",
+      "counter": "The evasion can also be read as the point — Huck does not graduate into a hero, and a culture's habits are shown reasserting themselves the moment there is company."
+    },
+    {
+      "position": "The book as a document of racist forms",
+      "summary": "Criticism has examined how far the novel's minstrel inheritance shapes Jim — the superstition, the comic routines, the long stretches where he is asleep or tied up — and how that sits beside the scenes of grief and judgement it also gives him.",
+      "counter": "The same scenes can be read as Twain exhibiting the stereotype in order to break it, and readers disagree over where exhibition ends and reproduction begins."
+    },
+    {
+      "position": "The book as a study of its own language",
+      "summary": "A formal reading that takes the Explanatory seriously: the novel is an experiment in what a whole book narrated in unliterary American speech can do, and the moral effects follow from the grammar rather than the plot.",
+      "counter": "It can float free of the fact that the language includes a slur used more than two hundred times, and of what that does to a reader now."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "How does Twain use Huck's narration to criticise the society Huck belongs to?",
+      "focus": "Vernacular voice, dramatic irony and the absence of an adult narrator",
+      "plan": [
+        "Establish the method: there is no second voice in the novel to correct Huck, so every judgement must be made by the reader.",
+        "Use Chapter 1 to show the technique at low stakes — heaven rejected on grounds of company.",
+        "Work through Chapter 16, where Huck's conscience argues for betrayal and loses on entirely practical grounds.",
+        "Bring in Chapter 31, where the moral vocabulary is completely inverted and the reader has to find the right word.",
+        "Consider the limits: what does the method make it hard for the novel to say, and about whom?"
+      ]
+    },
+    {
+      "question": "'The raft is not freedom.' Discuss the presentation of the river.",
+      "focus": "Geography, direction and the shape of the journey",
+      "plan": [
+        "Begin with the direction of travel: the current runs south, and every mile is deeper into slave country.",
+        "Use the Cairo fog in Chapters 15 and 16 as the structural hinge — the one exit is missed in the dark.",
+        "Set the dawn passage of Chapter 19 against the arrival of the duke and king in the same chapter.",
+        "Show how each landing restores money, property and violence to a journey that had briefly escaped them.",
+        "Conclude on the Phelps farm, where the river has delivered Jim to precisely the situation he ran from."
+      ]
+    },
+    {
+      "question": "How should a reader judge the last ten chapters?",
+      "focus": "Tom Sawyer, the evasion and what the ending does to the book",
+      "plan": [
+        "State the objection plainly: Jim's captivity becomes a game, and Tom knows all along that he has been freed.",
+        "Weigh the case that the regression is deliberate — Huck follows Tom, as he has followed him since Chapter 2.",
+        "Use Chapter 40 to complicate both readings: Jim gives up his escape to fetch a doctor, and is chained again for it.",
+        "Consider who the ending punishes and who it does not, and what Tom's forty dollars is meant to settle.",
+        "Decide whether the last line — lighting out for the Territory — is an escape or a repetition."
+      ]
+    },
+    {
+      "question": "How does the novel present Jim?",
+      "focus": "Knowledge, family, comedy and the limits of the narrator's attention",
+      "plan": [
+        "Start from what Jim wants, stated in Chapter 8: not an adventure but his wife and children.",
+        "Gather the evidence of competence — the weather, the river, the dead man in the house, the night watches.",
+        "Read Chapter 15 and Chapter 23 closely: the rebuke and the account of his deaf daughter are the two places he is given a full interior.",
+        "Set against these the scenes where the comedy is at his expense, and ask who the joke is arranged for.",
+        "Conclude on Chapter 40 and the ending, and on how much of Jim's own story the novel is willing to finish."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Huck describes the best thing he does as the worst thing he does. What does the novel gain by refusing to correct him?",
+    "Jim is the most capable adult on the raft. Why does the book so often arrange for him to be absent, asleep or hidden?",
+    "Colonel Sherburn's speech about cowardice is accurate, and he is a murderer. What is Twain doing by giving nobody the reply?",
+    "The Notice forbids the reader to look for a moral. Is that a joke, a defence, or an instruction?",
+    "Tom knows Jim is free and keeps it to himself for six weeks. Does the novel hold him responsible?",
+    "The book's language includes a slur used constantly. How should a reader, a classroom or an edition handle that?"
+  ],
+  "related": [
+    {
+      "href": "/books/the-adventures-of-tom-sawyer/",
+      "why": "The earlier book Huck reviews in his first paragraph, and the source of the boy who takes over the last ten chapters."
+    },
+    {
+      "href": "/books/narrative-of-the-life-of-frederick-douglass/",
+      "why": "The same river system and the same institution, described from inside it by a man who escaped and wrote his own account."
+    },
+    {
+      "href": "/books/uncle-toms-cabin/",
+      "why": "The novel that made slavery a subject for American fiction thirty years earlier, and against which Twain's method is a deliberate argument."
+    },
+    {
+      "href": "/books/puddnhead-wilson/",
+      "why": "Twain returning to the same river towns a decade later, with fingerprints, a switched baby and no comedy at all."
+    },
+    {
+      "href": "/books/great-expectations/",
+      "why": "The other great first-person account of a boy whose moral education runs directly against what his society taught him."
+    }
+  ],
+  "videos": []
+}

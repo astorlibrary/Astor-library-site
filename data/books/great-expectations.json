@@ -1,0 +1,1480 @@
+{
+  "slug": "great-expectations",
+  "title": "Great Expectations",
+  "author": "Charles Dickens",
+  "href": "/books/great-expectations/",
+  "buyUrl": "https://mybook.to/AeEfb2",
+  "form": "novel",
+  "genre": "Bildungsroman",
+  "period": "Victorian",
+  "written": "1860-61",
+  "firstPublished": 1861,
+  "setting": "The Kent marshes near the Thames estuary, and London, in the first half of the nineteenth century",
+  "readingTime": 900,
+  "difficulty": 3,
+  "lengthNote": "Fifty-nine chapters in three stages of Pip's expectations, written to fit thirty-five weekly instalments",
+  "openingLine": "My father’s family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.",
+  "summary": "A blacksmith's boy who once fed a starving convict on the marshes is given a fortune by an anonymous benefactor and sent to London to be made into a gentleman. He assumes the money comes from the woman in the decayed wedding dress, and it does not. The book is narrated by the older Pip, who knows from the first page exactly how badly the younger one behaved to the people who loved him, and declines to spare either of them.",
+  "referenceStyle": "chapter",
+  "sourceText": {
+    "label": "Standard Ebooks text of Great Expectations",
+    "note": "References give the chapter, which the text numbers in roman. The text is the revised ending as published in 1861, not the ending Dickens first wrote."
+  },
+  "atAGlance": [
+    {
+      "label": "Serialised",
+      "value": "December 1860 – August 1861",
+      "note": "Thirty-five weekly instalments in All the Year Round, the journal Dickens owned and edited."
+    },
+    {
+      "label": "Book form",
+      "value": "1861",
+      "note": "Chapman and Hall, in three volumes."
+    },
+    {
+      "label": "Divisions",
+      "value": "Three stages",
+      "note": "The text itself announces the end of the first and second stages of Pip's expectations."
+    },
+    {
+      "label": "Endings",
+      "value": "Two",
+      "note": "Dickens wrote one ending, then replaced it before publication after Bulwer-Lytton read the manuscript."
+    },
+    {
+      "label": "Narration",
+      "value": "First person, retrospective",
+      "note": "His second novel told wholly in the first person, after David Copperfield."
+    }
+  ],
+  "structure": [
+    {
+      "id": "marshes",
+      "label": "Chapters 1–7",
+      "title": "The churchyard and the file",
+      "summary": "Pip is turned upside down among the graves of his parents and told to bring food and a file to a man with an iron on his leg. He steals from his own kitchen, is not found out, and the convict protects him by confessing to the theft — a debt the book will take fifty chapters to call in.",
+      "scenes": [
+        {
+          "ref": "Chapter 1",
+          "summary": "The convict rises from among the graves; Pip learns the identity of things by being held over them."
+        },
+        {
+          "ref": "Chapter 2",
+          "summary": "The pork pie, the brandy and the file, taken from a house where everything is counted."
+        },
+        {
+          "ref": "Chapter 5",
+          "summary": "The soldiers retake both convicts on the marsh; Magwitch takes the blame for the stolen food."
+        },
+        {
+          "ref": "Chapter 7",
+          "summary": "Joe tells Pip about his own father, and about why he lets Mrs Joe rule the forge."
+        }
+      ]
+    },
+    {
+      "id": "satis",
+      "label": "Chapters 8–19",
+      "title": "Satis House, and the end of the first stage",
+      "summary": "Pip is sent to play at a house where the clocks stopped at twenty to nine and the wedding breakfast is still on the table. Estella calls his hands coarse and his boots thick, and he comes home ashamed of a life he had been perfectly happy in. Then Jaggers arrives with money from a source Pip is forbidden to ask about.",
+      "scenes": [
+        {
+          "ref": "Chapter 8",
+          "summary": "Cards with Estella; Pip looks at his own hands afterwards and does not like them."
+        },
+        {
+          "ref": "Chapter 9",
+          "summary": "He lies about the visit to his sister and Pumblechook, and Joe tells him plainly that lies are lies."
+        },
+        {
+          "ref": "Chapter 13",
+          "summary": "Miss Havisham pays for the apprenticeship, and Pip is bound to the forge he now despises."
+        },
+        {
+          "ref": "Chapter 18",
+          "summary": "Jaggers announces the great expectations, the condition of secrecy and the removal to London."
+        },
+        {
+          "ref": "Chapter 19",
+          "summary": "Pip leaves for London; the mists rise, and the first stage of his expectations ends."
+        }
+      ]
+    },
+    {
+      "id": "london",
+      "label": "Chapters 20–28",
+      "title": "Little Britain, Barnard's Inn and the Castle",
+      "summary": "London turns out to be smaller and dirtier than expected. Pip meets Herbert Pocket, who renames him Handel and teaches him how to hold a fork; Wemmick, who keeps a drawbridge between his office and his feelings; and Jaggers, who washes his hands of his clients with scented soap. Joe visits and is made miserable by good manners.",
+      "scenes": [
+        {
+          "ref": "Chapter 20",
+          "summary": "Smithfield, Newgate and the crowd of people waiting outside Jaggers's office."
+        },
+        {
+          "ref": "Chapter 22",
+          "summary": "Herbert gives Pip the history of Miss Havisham and the bridegroom who did not come."
+        },
+        {
+          "ref": "Chapter 25",
+          "summary": "Walworth, the Aged P, the drawbridge and the gun: Wemmick's second life."
+        },
+        {
+          "ref": "Chapter 27",
+          "summary": "Joe comes to London, calls him sir, and leaves rather than go on being out of place."
+        }
+      ]
+    },
+    {
+      "id": "expectations",
+      "label": "Chapters 29–39",
+      "title": "Debts, Estella, and the end of the second stage",
+      "summary": "Pip believes Miss Havisham has designed Estella for him; Miss Havisham lets him. He runs up debts, half-ruins Herbert and secretly rescues him, buries his sister and neglects Joe. On a wild night in his rooms above the river, a man climbs the stairs and holds out both hands.",
+      "scenes": [
+        {
+          "ref": "Chapter 29",
+          "summary": "Estella returns as a woman, and Miss Havisham tells Pip to love her whatever it costs him."
+        },
+        {
+          "ref": "Chapter 35",
+          "summary": "Mrs Joe's funeral, larks over the grave, and Pip's promise to visit that he does not keep."
+        },
+        {
+          "ref": "Chapter 38",
+          "summary": "Estella warns him that she has no heart and must be taken as she has been made."
+        },
+        {
+          "ref": "Chapter 39",
+          "summary": "Magwitch returns, names himself the source of the money, and the second stage ends."
+        }
+      ]
+    },
+    {
+      "id": "truth",
+      "label": "Chapters 40–52",
+      "title": "Convict money",
+      "summary": "Everything Pip has built rests on a man who will be hanged if he is found in England. Herbert learns Magwitch's history; Compeyson turns out to be Miss Havisham's bridegroom; Estella marries Drummle; and Miss Havisham, asking what she has done, catches fire in her own wedding dress.",
+      "scenes": [
+        {
+          "ref": "Chapter 42",
+          "summary": "Magwitch's account of his own childhood, and of the gentleman who took the lighter sentence."
+        },
+        {
+          "ref": "Chapter 44",
+          "summary": "Pip tells Estella she is part of his existence; she tells him she is to marry Bentley Drummle."
+        },
+        {
+          "ref": "Chapter 49",
+          "summary": "Miss Havisham asks Pip's forgiveness, repeats one question until the dress catches."
+        },
+        {
+          "ref": "Chapter 51",
+          "summary": "Pip works out Estella's parentage and makes Jaggers admit it without admitting anything."
+        }
+      ]
+    },
+    {
+      "id": "river",
+      "label": "Chapters 53–59",
+      "title": "The river, the fever and the garden",
+      "summary": "Orlick nearly kills Pip in the sluice-house on the marshes; the escape down the Thames fails within sight of the steamer; Magwitch dies in the prison infirmary believing his daughter is alive and a lady. Pip falls ill, is nursed by Joe, works eleven years in the East, and comes back to a demolished house.",
+      "scenes": [
+        {
+          "ref": "Chapter 53",
+          "summary": "Orlick, the lime-kiln, and an accounting of every injury Pip never noticed he was causing."
+        },
+        {
+          "ref": "Chapter 54",
+          "summary": "The rowing boat, the customs galley and Compeyson under the paddle-wheel."
+        },
+        {
+          "ref": "Chapter 56",
+          "summary": "Magwitch's death, and the only lie in the book that is entirely kind."
+        },
+        {
+          "ref": "Chapter 59",
+          "summary": "The ruined garden at Satis House eleven years later, and the evening mists rising."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "pip",
+      "name": "Pip",
+      "role": "Philip Pirrip; narrator, blacksmith's apprentice, then a gentleman on someone else's money",
+      "summary": "Two people at once: the boy who behaves badly and the man telling you about it, who supplies the judgements the boy could not. The book's great difficulty is that his snobbery is presented from inside, so the reader is made to feel the shame of the thick boots before being invited to despise him for feeling it.",
+      "clue": "He gives himself his own name as an infant because he cannot manage the real one, and spends the novel being ashamed of the man who taught him to read.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "ashamed",
+        "observant",
+        "harder on himself than on anyone"
+      ],
+      "relationships": [
+        {
+          "to": "joe",
+          "label": "brother-in-law and, in effect, son of",
+          "kind": "family"
+        },
+        {
+          "to": "magwitch",
+          "label": "benefactor and self-declared second father",
+          "kind": "family",
+          "stages": [
+            "marshes",
+            "expectations",
+            "truth",
+            "river"
+          ]
+        },
+        {
+          "to": "estella",
+          "label": "in love with",
+          "kind": "love"
+        },
+        {
+          "to": "miss-havisham",
+          "label": "believes himself chosen by",
+          "kind": "mentor",
+          "stages": [
+            "satis",
+            "expectations"
+          ]
+        },
+        {
+          "to": "herbert",
+          "label": "friend of",
+          "kind": "ally",
+          "stages": [
+            "london",
+            "expectations",
+            "truth",
+            "river"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joe",
+      "name": "Joe Gargery",
+      "role": "Blacksmith, married to Pip's sister",
+      "summary": "He cannot spell, will not raise his hand in his own house, and is the moral centre of the novel without ever being told so. His explanation of why he allows his wife to rule — that his own father beat his mother, and he would rather be hit himself — is the best piece of reasoning anyone in the book manages.",
+      "clue": "He calls a court card a Jack, stands at the forge in an apron, and comes to London to be called sir by a boy he taught to read.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "gentle",
+        "inarticulate",
+        "unshakeable"
+      ],
+      "relationships": [
+        {
+          "to": "pip",
+          "label": "raises and forgives",
+          "kind": "family"
+        },
+        {
+          "to": "mrs-joe",
+          "label": "married to",
+          "kind": "marriage",
+          "stages": [
+            "marshes",
+            "satis",
+            "london"
+          ]
+        },
+        {
+          "to": "biddy",
+          "label": "later married to",
+          "kind": "marriage",
+          "stages": [
+            "river"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mrs-joe",
+      "name": "Mrs Joe Gargery",
+      "role": "Pip's sister, twenty years older",
+      "summary": "She has brought Pip up by hand and never stops saying so; the phrase covers both the rearing and the beating. Dickens complicates the caricature by having her, after Orlick's attack, become mild and anxious to be forgiven by the man who hurt her, which is harder to read than the tyranny was.",
+      "clue": "She keeps the pantry locked, wears a bib full of pins, and after an assault she never describes spends her last months trying to placate her attacker.",
+      "firstAppearance": "Chapter 2",
+      "traits": [
+        "violent",
+        "aggrieved",
+        "altered by injury"
+      ],
+      "relationships": [
+        {
+          "to": "pip",
+          "label": "sister of",
+          "kind": "family",
+          "stages": [
+            "marshes",
+            "satis"
+          ]
+        },
+        {
+          "to": "joe",
+          "label": "married to",
+          "kind": "marriage",
+          "stages": [
+            "marshes",
+            "satis"
+          ]
+        },
+        {
+          "to": "orlick",
+          "label": "attacked by",
+          "kind": "enemy",
+          "stages": [
+            "satis",
+            "london"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biddy",
+      "name": "Biddy",
+      "role": "Schoolmistress's granddaughter, later Joe's wife",
+      "summary": "She teaches Pip everything he learns before Jaggers arrives and is the only person who tells him the truth about his conduct to his face. The novel gives her the sharpest line in it — that Pip need not be ashamed of Joe, and is — and then rewards her with the life Pip threw away.",
+      "clue": "She learns everything Pip learns at the same speed and with none of the help, and marries the blacksmith on the day Pip comes home to propose to her.",
+      "firstAppearance": "Chapter 7",
+      "traits": [
+        "clear-sighted",
+        "patient",
+        "unflattering"
+      ],
+      "relationships": [
+        {
+          "to": "pip",
+          "label": "childhood friend and conscience of",
+          "kind": "ally"
+        },
+        {
+          "to": "joe",
+          "label": "marries",
+          "kind": "marriage",
+          "stages": [
+            "river"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "estella",
+      "name": "Estella",
+      "role": "Miss Havisham's adopted daughter",
+      "summary": "Trained from childhood to break hearts, and honest about it to the one person who will not listen. Her warnings to Pip are not coquetry — she tells him repeatedly and in plain terms that she has no heart and will do him harm — and the plot's cruellest turn is that her real parents are a convict and a murderess.",
+      "clue": "She is raised to wound, says so out loud, and marries the worst man available partly because he is the only one she cannot damage.",
+      "firstAppearance": "Chapter 8",
+      "traits": [
+        "cold by training",
+        "truthful",
+        "self-aware"
+      ],
+      "relationships": [
+        {
+          "to": "miss-havisham",
+          "label": "adopted and trained by",
+          "kind": "family"
+        },
+        {
+          "to": "pip",
+          "label": "warns and refuses",
+          "kind": "love"
+        },
+        {
+          "to": "magwitch",
+          "label": "daughter of",
+          "kind": "family",
+          "stages": [
+            "truth",
+            "river"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "miss-havisham",
+      "name": "Miss Havisham",
+      "role": "Of Satis House, jilted on her wedding morning",
+      "summary": "She has stopped the clocks, kept on one shoe and left the cake to the mice, and she is aware the whole arrangement is theatre. What she has done to Estella is worse than what was done to her, and the novel makes her say so herself before the fire — she wanted to save a child from misery and made one instead.",
+      "clue": "One shoe on, one stocking, a yellowed veil, and clocks that all read twenty minutes to nine.",
+      "firstAppearance": "Chapter 8",
+      "traits": [
+        "theatrical",
+        "vengeful",
+        "finally appalled"
+      ],
+      "relationships": [
+        {
+          "to": "estella",
+          "label": "adopts and trains",
+          "kind": "family"
+        },
+        {
+          "to": "pip",
+          "label": "lets him believe she is his benefactor",
+          "kind": "mentor",
+          "stages": [
+            "satis",
+            "expectations",
+            "truth"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "magwitch",
+      "name": "Abel Magwitch",
+      "role": "Transported convict; Pip's benefactor, under the name Provis",
+      "summary": "He begins as a threat in a graveyard and ends as the one character who has given everything he had for another person. His speech about making a gentleman is the book's hinge: he has bought Pip the way a man buys a racehorse, out of love, and Pip's revulsion at being owned is inseparable from his revulsion at the ownership being working-class.",
+      "clue": "He limps out of the marsh mist with an iron on his leg, eats like a dog, and comes back from Australia to look at what his money made.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "frightening",
+        "devoted",
+        "proprietorial"
+      ],
+      "relationships": [
+        {
+          "to": "pip",
+          "label": "secretly funds and claims as a son",
+          "kind": "family"
+        },
+        {
+          "to": "estella",
+          "label": "father of",
+          "kind": "family",
+          "stages": [
+            "truth",
+            "river"
+          ]
+        },
+        {
+          "to": "jaggers",
+          "label": "client of",
+          "kind": "service"
+        }
+      ]
+    },
+    {
+      "id": "jaggers",
+      "name": "Mr Jaggers",
+      "role": "Criminal lawyer of Little Britain",
+      "summary": "He bites his forefinger, never admits a fact and washes his hands after every client. The routine is not cynicism but the only defence available to a man who knows exactly where the money in London comes from, and who has quietly saved one woman from the gallows and placed one child in a rich house.",
+      "clue": "He smells of scented soap, will accept no statement that is not evidence, and keeps a towel behind a closet door for use after every client.",
+      "firstAppearance": "Chapter 11",
+      "traits": [
+        "forensic",
+        "withholding",
+        "not without mercy"
+      ],
+      "relationships": [
+        {
+          "to": "pip",
+          "label": "guardian of",
+          "kind": "service",
+          "stages": [
+            "satis",
+            "london",
+            "expectations",
+            "truth"
+          ]
+        },
+        {
+          "to": "wemmick",
+          "label": "employer of",
+          "kind": "service"
+        },
+        {
+          "to": "magwitch",
+          "label": "acts for",
+          "kind": "service"
+        }
+      ]
+    },
+    {
+      "id": "wemmick",
+      "name": "Wemmick",
+      "role": "Jaggers's clerk; proprietor of the Castle at Walworth",
+      "summary": "He states as policy what everyone else in the novel does by accident: that the self at work and the self at home are different people and must not be confounded. At the office he collects portable property from condemned men; at Walworth he fires a gun at nine so his deaf father can feel it.",
+      "clue": "His house has a drawbridge, a moat four feet wide and a cannon, and his opinions change at the garden gate.",
+      "firstAppearance": "Chapter 21",
+      "traits": [
+        "compartmented",
+        "kind at home",
+        "dry at work"
+      ],
+      "relationships": [
+        {
+          "to": "jaggers",
+          "label": "clerk to",
+          "kind": "service"
+        },
+        {
+          "to": "pip",
+          "label": "advises, in two different voices",
+          "kind": "ally",
+          "stages": [
+            "london",
+            "expectations",
+            "truth",
+            "river"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "herbert",
+      "name": "Herbert Pocket",
+      "role": "Pip's friend and fellow lodger at Barnard's Inn",
+      "summary": "The pale young gentleman Pip fought in a garden, now the one person in London who improves him. He is hopeless at making money and excellent at everything else, and the best thing Pip does in the novel is to buy him a partnership in secret and never tell him.",
+      "clue": "He renames his friend after a piece of music, is perpetually looking about him for capital, and never learns who paid for his position.",
+      "firstAppearance": "Chapter 11",
+      "traits": [
+        "cheerful",
+        "unbusinesslike",
+        "loyal"
+      ],
+      "relationships": [
+        {
+          "to": "pip",
+          "label": "friend of",
+          "kind": "ally",
+          "stages": [
+            "london",
+            "expectations",
+            "truth",
+            "river"
+          ]
+        },
+        {
+          "to": "magwitch",
+          "label": "helps conceal",
+          "kind": "ally",
+          "stages": [
+            "truth",
+            "river"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "orlick",
+      "name": "Dolge Orlick",
+      "role": "Journeyman at the forge",
+      "summary": "He is what Pip's resentments would look like if they were acted on. He attacks Mrs Joe with the convict's leg-iron, and in the sluice-house he accuses Pip of the very things Pip accuses himself of — that he came between a man and his prospects, and that he was always the favourite.",
+      "clue": "He slouches about the forge, strikes a woman with a filed-off leg-iron, and later tells his enemy that everything wrong in his life was that enemy's doing.",
+      "firstAppearance": "Chapter 15",
+      "traits": [
+        "resentful",
+        "violent",
+        "a dark double"
+      ],
+      "relationships": [
+        {
+          "to": "mrs-joe",
+          "label": "attacks",
+          "kind": "enemy",
+          "stages": [
+            "satis"
+          ]
+        },
+        {
+          "to": "pip",
+          "label": "shadow and enemy of",
+          "kind": "doubling",
+          "stages": [
+            "satis",
+            "river"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "gentility",
+      "name": "Gentility and what it costs",
+      "summary": "Becoming a gentleman in this book is not a moral improvement but a change of accent, boots and address, paid for by someone else. Dickens sets Pip's education against Joe's illiteracy and Biddy's self-teaching, and quietly notes that the least educated characters make the fewest mistakes about how to behave.",
+      "development": "The shame begins with a pair of hands in Chapter 8, becomes an income in Chapter 18, and is exposed as convict money in Chapter 39."
+    },
+    {
+      "id": "guilt",
+      "name": "Guilt, crime and complicity",
+      "summary": "Pip's first act is a theft committed under threat, and he never stops feeling like a criminal. The novel keeps him in the neighbourhood of the law — Newgate, the hulks, Jaggers's office, the condemned cell — so that the distance between the gentleman and the convict keeps failing to open up.",
+      "development": "The stolen pork pie leads to a man who takes the blame; the man leads to the money; the money leads Pip back to a prison, where he ends up praying for a dying convict."
+    },
+    {
+      "id": "class",
+      "name": "Class and money",
+      "summary": "Every fortune in the book has a source somebody would rather not name: Miss Havisham's brewery, Magwitch's sheep and speculation, Jaggers's fees from the dock. What the novel refuses is the idea that money can be laundered by manners, and Magwitch's return is the plot making that argument physically.",
+      "development": "Pip's debts rise with his status; his one honourable transaction, buying Herbert's partnership, is the one he keeps secret."
+    },
+    {
+      "id": "love",
+      "name": "Love as damage",
+      "summary": "Miss Havisham's instruction to Pip is to love Estella whatever it does to him, and to keep loving as it tears deeper. Estella tells him plainly that she has no heart and will hurt him. Love in this novel is repeatedly something done to a person rather than between two of them.",
+      "development": "The engineered attachment of the Satis House visits becomes an obsession Pip can defend only by admitting it is unreasonable, and Miss Havisham's collapse in Chapter 49 is the moment she recognises what she built."
+    },
+    {
+      "id": "parents",
+      "name": "Parents, substitutes and making people",
+      "summary": "Nobody in the book is raised by the people who produced them. Pip has a sister, a brother-in-law, a guardian and two self-appointed benefactors; Estella has a jilted bride for a mother and a convict for a father. The recurring question is whether a child is made by design, and whether the designer can be blamed.",
+      "development": "Miss Havisham's 'what have I done' and Magwitch's 'I'm your second father' are the same claim from opposite ends — that a person can be manufactured — and the novel judges them differently."
+    },
+    {
+      "id": "memory",
+      "name": "Memory and the older narrator",
+      "summary": "The story is told by a man who already knows the answer to every question the boy is asking. That gap is the novel's method: the reader gets the misjudgement and the verdict on it in the same sentence, which is why the snobbery can be shown at full strength without being endorsed.",
+      "development": "The narrator interrupts from the first chapter to name a memorable day and the long chain it begins, and keeps returning to the reader directly at the points where the younger Pip behaves worst."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "retrospective-narration",
+      "name": "Retrospective first person",
+      "definition": "A narrator recalling their own past, so that experience and judgement arrive together.",
+      "inThisBook": "The older Pip supplies verdicts the younger one could not reach — 'it is a most miserable thing to feel ashamed of home' — and occasionally addresses the reader outright to make the moral general."
+    },
+    {
+      "id": "setting-as-mood",
+      "name": "Landscape as feeling",
+      "definition": "Weather and place used to carry the emotional weight of a scene.",
+      "inThisBook": "Mists rise as Pip leaves the forge and rise again in the last sentence of the book; the marshes are flat, wet and open, and the first thing they teach him is the identity of things."
+    },
+    {
+      "id": "symbolic-objects",
+      "name": "Objects carrying the plot",
+      "definition": "A physical thing that returns at intervals, gathering meaning each time.",
+      "inThisBook": "The file stolen for Magwitch reappears in a stranger's hands, then as the weapon used on Mrs Joe; the bride-cake, the stopped clocks and the single shoe do the same work at Satis House."
+    },
+    {
+      "id": "doubling",
+      "name": "Doubling",
+      "definition": "Two characters built so that each exposes something in the other.",
+      "inThisBook": "Orlick voices Pip's own resentments back at him in the sluice-house; Magwitch and Miss Havisham are two benefactors making two children; Compeyson is the gentleman Magwitch is punished for not being."
+    },
+    {
+      "id": "idiolect",
+      "name": "Speech as class",
+      "definition": "Giving each character a distinct vocabulary, grammar and rhythm.",
+      "inThisBook": "Joe's tangled syntax, Magwitch's 'wittles', Jaggers's refusal of any sentence that is not evidence and Wemmick's two registers do more social work than any description in the novel."
+    },
+    {
+      "id": "serial-structure",
+      "name": "Weekly serial structure",
+      "definition": "Chapters shaped to end an instalment with a reason to return.",
+      "inThisBook": "Written for thirty-five weekly numbers rather than monthly parts, the book is unusually tight for Dickens, and its two great reversals both fall at the close of a stage."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "my-fathers-family-name",
+      "text": "My father’s family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip. So, I called myself Pip, and came to be called Pip.",
+      "reference": "Chapter 1",
+      "stage": "marshes",
+      "context": "The opening sentences of the novel.",
+      "analysis": "He names himself in the first line, which is the only act of self-creation in the book that works. Everything after this is somebody else's attempt to name him — Handel, my boy, sir, a gentleman — and the final clause, 'came to be called', already concedes that identity is something other people do to you.",
+      "themes": [
+        "memory",
+        "parents"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "Pirrip",
+        "Pip"
+      ]
+    },
+    {
+      "id": "identity-of-things",
+      "text": "My first most vivid and broad impression of the identity of things seems to me to have been gained on a memorable raw afternoon towards evening.",
+      "reference": "Chapter 1",
+      "stage": "marshes",
+      "context": "Introducing the churchyard on the marshes.",
+      "analysis": "A child's first understanding of the world is dated to the afternoon a man threatened to cut his throat, and the phrase for it is legal and exact rather than emotional. 'The identity of things' is what the rest of the novel systematically takes away from him: nothing turns out to be what it was labelled.",
+      "themes": [
+        "memory"
+      ],
+      "techniques": [
+        "retrospective-narration",
+        "setting-as-mood"
+      ],
+      "characters": [
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "identity",
+        "memorable"
+      ]
+    },
+    {
+      "id": "hold-your-noise",
+      "text": "“Hold your noise!” cried a terrible voice, as a man started up from among the graves at the side of the church porch. “Keep still, you little devil, or I’ll cut your throat!”",
+      "speaker": "Magwitch",
+      "reference": "Chapter 1",
+      "stage": "marshes",
+      "context": "The convict's first appearance, in the churchyard.",
+      "analysis": "The man rises out of the family graves, which puts him structurally in the place of Pip's dead parents some four hundred pages before the plot gets there. He is also, at this moment, simply a voice — Dickens gives the sound before the body, so that the marshes seem to produce him.",
+      "themes": [
+        "guilt",
+        "parents"
+      ],
+      "techniques": [
+        "setting-as-mood"
+      ],
+      "characters": [
+        "magwitch",
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "noise",
+        "throat"
+      ]
+    },
+    {
+      "id": "wittles",
+      "text": "“You get me a file.” He tilted me again. “And you get me wittles.” He tilted me again. “You bring ’em both to me.”",
+      "speaker": "Magwitch",
+      "reference": "Chapter 1",
+      "stage": "marshes",
+      "context": "Giving Pip his instructions while holding him upside down.",
+      "analysis": "The repeated stage direction between clauses turns a threat into a rhythm, and the two objects demanded — one to eat, one to cut iron — are the whole of what the man needs from the world. Both come back: the file resurfaces in a stranger's hand and then as the weapon used on Pip's sister.",
+      "themes": [
+        "guilt"
+      ],
+      "techniques": [
+        "idiolect",
+        "symbolic-objects"
+      ],
+      "characters": [
+        "magwitch",
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "cloze": [
+        "file",
+        "wittles"
+      ]
+    },
+    {
+      "id": "coarse-hands-thick-boots",
+      "text": "“He calls the knaves Jacks, this boy!” said Estella with disdain, before our first game was out. “And what coarse hands he has! And what thick boots!”",
+      "speaker": "Estella",
+      "reference": "Chapter 8",
+      "stage": "satis",
+      "context": "Playing beggar my neighbour at Satis House.",
+      "analysis": "Three sentences, three separate grounds of contempt: vocabulary, body and clothing. She never speaks to Pip in this scene, only about him, and the whole novel's machinery of shame is installed here with a card game and a piece of vocabulary Joe taught him.",
+      "themes": [
+        "gentility",
+        "class"
+      ],
+      "techniques": [
+        "idiolect"
+      ],
+      "characters": [
+        "estella",
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 8",
+      "cloze": [
+        "coarse",
+        "thick"
+      ]
+    },
+    {
+      "id": "coarse-hands-common-boots",
+      "text": "I took the opportunity of being alone in the courtyard to look at my coarse hands and my common boots. My opinion of those accessories was not favorable. They had never troubled me before, but they troubled me now, as vulgar appendages.",
+      "reference": "Chapter 8",
+      "stage": "satis",
+      "context": "Alone in the yard at Satis House, immediately after the card game.",
+      "analysis": "He has adopted her adjectives within a page, and the word 'accessories' shows the change happening in his vocabulary before it happens in his conduct. 'They had never troubled me before' is the older narrator marking the exact moment a happy childhood was converted into a grievance.",
+      "themes": [
+        "gentility",
+        "memory"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 8",
+      "cloze": [
+        "coarse",
+        "vulgar"
+      ]
+    },
+    {
+      "id": "lies-is-lies",
+      "text": "“There’s one thing you may be sure of, Pip,” said Joe, after some rumination, “namely, that lies is lies. Howsever they come, they didn’t ought to come, and they come from the father of lies, and work round to the same.",
+      "speaker": "Joe Gargery",
+      "reference": "Chapter 9",
+      "stage": "satis",
+      "context": "After Pip has invented a coach, a flag and black velvet to describe Satis House.",
+      "analysis": "The grammar is wrong in every clause and the reasoning is unanswerable, which is Dickens's standing joke about Joe and also his argument. Joe then adds that Pip is uncommon already, in learning and in size — he refuses the whole category the boy has just started to judge himself by.",
+      "themes": [
+        "gentility",
+        "guilt"
+      ],
+      "techniques": [
+        "idiolect"
+      ],
+      "characters": [
+        "joe",
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 9",
+      "cloze": [
+        "lies",
+        "father"
+      ]
+    },
+    {
+      "id": "memorable-day",
+      "text": "Pause you who read this, and think for a moment of the long chain of iron or gold, of thorns or flowers, that would never have bound you, but for the formation of the first link on one memorable day.",
+      "reference": "Chapter 9",
+      "stage": "satis",
+      "context": "Closing the chapter on Pip's first visit to Satis House.",
+      "analysis": "The narrator stops the story to address the reader directly, and reaches for a chain — the image already attached to leg-irons, and in Dickens's own earlier Christmas book to a dead man's punishment. Offering iron or gold, thorns or flowers, he declines to say which Pip's turned out to be.",
+      "themes": [
+        "memory",
+        "guilt"
+      ],
+      "techniques": [
+        "retrospective-narration",
+        "symbolic-objects"
+      ],
+      "characters": [
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 9",
+      "cloze": [
+        "chain",
+        "link"
+      ]
+    },
+    {
+      "id": "break-their-hearts",
+      "text": "Miss Havisham would embrace her with lavish fondness, murmuring something in her ear that sounded like “Break their hearts my pride and hope, break their hearts and have no mercy!”",
+      "speaker": "Miss Havisham",
+      "reference": "Chapter 12",
+      "stage": "satis",
+      "context": "Watching Estella after one of Pip's visits.",
+      "analysis": "Pip reports it as something that 'sounded like' the words, so the most damning line in Estella's upbringing reaches the reader through a child who did not quite catch it. The endearments and the instruction are in the same breath: pride and hope are what she calls the girl she is training to be unable to love.",
+      "themes": [
+        "love",
+        "parents"
+      ],
+      "techniques": [
+        "doubling"
+      ],
+      "characters": [
+        "miss-havisham",
+        "estella"
+      ],
+      "source": "Standard Ebooks text, Chapter 12",
+      "cloze": [
+        "Break",
+        "mercy"
+      ]
+    },
+    {
+      "id": "ashamed-of-home",
+      "text": "It is a most miserable thing to feel ashamed of home. There may be black ingratitude in the thing, and the punishment may be retributive and well deserved; but that it is a miserable thing, I can testify.",
+      "reference": "Chapter 14",
+      "stage": "satis",
+      "context": "After a year in which the forge has come to look coarse and common to him.",
+      "analysis": "The older narrator concedes the charge against the boy in full — ingratitude, deserved punishment — and then insists on the misery anyway, in the language of a witness box. It is the book's characteristic move: guilt admitted so completely that pity becomes possible.",
+      "themes": [
+        "gentility",
+        "memory",
+        "class"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 14",
+      "cloze": [
+        "ashamed",
+        "ingratitude"
+      ]
+    },
+    {
+      "id": "walworth-sentiments",
+      "text": "“Mr. Pip,” he replied, with gravity, “Walworth is one place, and this office is another. Much as the Aged is one person, and Mr. Jaggers is another. They must not be confounded together.",
+      "speaker": "Wemmick",
+      "reference": "Chapter 36",
+      "stage": "expectations",
+      "context": "Pip asks for advice in Little Britain that Wemmick has already given at Walworth.",
+      "analysis": "He states as a rule of hygiene what the rest of the novel suffers as a problem: that the person you are at work and the person you are at home are not obliged to agree. Pip has spent the book trying to keep the forge and London apart and calling it shame; Wemmick does the same thing and calls it an address.",
+      "themes": [
+        "class",
+        "gentility"
+      ],
+      "techniques": [
+        "doubling",
+        "idiolect"
+      ],
+      "characters": [
+        "wemmick",
+        "pip",
+        "jaggers"
+      ],
+      "source": "Standard Ebooks text, Chapter 36",
+      "cloze": [
+        "Walworth",
+        "confounded"
+      ]
+    },
+    {
+      "id": "scented-soap",
+      "text": "he would wash his hands, and wipe them and dry them all over this towel, whenever he came in from a police court or dismissed a client from his room",
+      "reference": "Chapter 26",
+      "stage": "expectations",
+      "context": "Describing the closet in Jaggers's room.",
+      "analysis": "The ritual is Pilate's, performed several times a day by a man who never states an opinion about guilt. Dickens attaches the smell of the soap to him everywhere he goes, so that the reader is reminded of what is being washed off at exactly the moments Jaggers is at his most impressive.",
+      "themes": [
+        "guilt",
+        "class"
+      ],
+      "techniques": [
+        "symbolic-objects"
+      ],
+      "characters": [
+        "jaggers"
+      ],
+      "source": "Standard Ebooks text, Chapter 26",
+      "cloze": [
+        "wash",
+        "client"
+      ]
+    },
+    {
+      "id": "love-her-love-her",
+      "text": "“Love her, love her, love her! If she favors you, love her. If she wounds you, love her. If she tears your heart to pieces⁠—and as it gets older and stronger it will tear deeper⁠—love her, love her, love her!”",
+      "speaker": "Miss Havisham",
+      "reference": "Chapter 29",
+      "stage": "expectations",
+      "context": "Holding Pip's head down to hers in the chair at Satis House.",
+      "analysis": "Nine imperatives in three sentences, with the conditions arranged so that being hurt and being favoured produce the same instruction. She is not describing love but prescribing a wound, and Pip lies awake that night converting her command into a declaration of his own, which is the point at which the training takes.",
+      "themes": [
+        "love",
+        "parents"
+      ],
+      "techniques": [
+        "doubling"
+      ],
+      "characters": [
+        "miss-havisham",
+        "pip",
+        "estella"
+      ],
+      "source": "Standard Ebooks text, Chapter 29",
+      "cloze": [
+        "Love",
+        "wounds"
+      ]
+    },
+    {
+      "id": "i-have-no-heart",
+      "text": "“You must know,” said Estella, condescending to me as a brilliant and beautiful woman might, “that I have no heart⁠—if that has anything to do with my memory.”",
+      "reference": "Chapter 29",
+      "stage": "expectations",
+      "speaker": "Estella",
+      "context": "Explaining to Pip why she does not remember what he remembers.",
+      "analysis": "She is answering a question about memory, and the qualification at the end is the sharp part: she suspects that feeling and recollection are the same organ, and that she was denied both at once. Pip hears a coquette's line and misses the diagnosis.",
+      "themes": [
+        "love",
+        "memory"
+      ],
+      "techniques": [
+        "idiolect"
+      ],
+      "characters": [
+        "estella",
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 29",
+      "cloze": [
+        "heart",
+        "memory"
+      ]
+    },
+    {
+      "id": "irresistible",
+      "text": "I knew to my sorrow, often and often, if not always, that I loved her against reason, against promise, against peace, against hope, against happiness, against all discouragement that could be.",
+      "reference": "Chapter 29",
+      "stage": "expectations",
+      "context": "The narrator interrupting to describe what loving Estella was actually like.",
+      "analysis": "Six repetitions of 'against', each one naming something a sensible man would have chosen instead, and the sentence never supplies a reason on the other side. This is the older Pip refusing the conventional account of love as a mistake to be explained, and admitting it as a fact he could not argue with.",
+      "themes": [
+        "love",
+        "memory"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "pip",
+        "estella"
+      ],
+      "source": "Standard Ebooks text, Chapter 29",
+      "cloze": [
+        "reason",
+        "discouragement"
+      ]
+    },
+    {
+      "id": "as-i-have-been-made",
+      "text": "“So,” said Estella, “I must be taken as I have been made. The success is not mine, the failure is not mine, but the two together make me.”",
+      "speaker": "Estella",
+      "reference": "Chapter 38",
+      "stage": "expectations",
+      "context": "Answering Miss Havisham's complaint that she is cold to her.",
+      "analysis": "The passive voice is exact and deliberate: she has been made, and she declines both the credit and the blame. It is also an answer to the whole Victorian plot of self-improvement that Pip is living out three streets away — one character is trying to make himself, and the other knows she was manufactured.",
+      "themes": [
+        "parents",
+        "love"
+      ],
+      "techniques": [
+        "idiolect"
+      ],
+      "characters": [
+        "estella",
+        "miss-havisham"
+      ],
+      "source": "Standard Ebooks text, Chapter 38",
+      "cloze": [
+        "made",
+        "failure"
+      ]
+    },
+    {
+      "id": "made-a-gentleman-on-you",
+      "text": "“Yes, Pip, dear boy, I’ve made a gentleman on you! It’s me wot has done it! I swore that time, sure as ever I earned a guinea, that guinea should go to you.",
+      "speaker": "Magwitch",
+      "reference": "Chapter 39",
+      "stage": "expectations",
+      "context": "Revealing himself as Pip's benefactor in the rooms by the river.",
+      "analysis": "The grammar Pip has spent three hundred pages learning to be ashamed of is the grammar that paid for the lessons. 'Made a gentleman on you' is a maker's claim over an object, and Pip's horror is not only at the source of the money but at being the thing that was made.",
+      "themes": [
+        "gentility",
+        "class",
+        "parents"
+      ],
+      "techniques": [
+        "idiolect"
+      ],
+      "characters": [
+        "magwitch",
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 39",
+      "cloze": [
+        "gentleman",
+        "guinea"
+      ]
+    },
+    {
+      "id": "second-father",
+      "text": "“Look’ee here, Pip. I’m your second father. You’re my son⁠—more to me nor any son. I’ve put away money, only for you to spend.",
+      "speaker": "Magwitch",
+      "reference": "Chapter 39",
+      "stage": "expectations",
+      "context": "Continuing the revelation, in Pip's chambers at night.",
+      "analysis": "He claims a relationship rather than a debt, and the claim is unanswerable because it is true — no one else has spent a life on Pip. 'Second father' also places him behind Joe in the queue, which is the one piece of accounting in the scene that Pip is in no position to dispute.",
+      "themes": [
+        "parents",
+        "class"
+      ],
+      "techniques": [
+        "idiolect",
+        "doubling"
+      ],
+      "characters": [
+        "magwitch",
+        "pip",
+        "joe"
+      ],
+      "source": "Standard Ebooks text, Chapter 39",
+      "cloze": [
+        "second",
+        "son"
+      ]
+    },
+    {
+      "id": "part-of-my-existence",
+      "text": "“Out of my thoughts! You are part of my existence, part of myself. You have been in every line I have ever read since I first came here, the rough common boy whose poor heart you wounded even then.",
+      "speaker": "Pip",
+      "reference": "Chapter 44",
+      "stage": "truth",
+      "context": "At Satis House, on learning that Estella will marry Bentley Drummle.",
+      "analysis": "He describes her as an editorial presence in everything he has read, which for a man whose education was the whole point of his fortune is a devastating admission about what the education was for. He also calls himself the rough common boy in the same sentence, taking back Estella's word at the one moment he is speaking as an equal.",
+      "themes": [
+        "love",
+        "gentility"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "pip",
+        "estella"
+      ],
+      "source": "Standard Ebooks text, Chapter 44",
+      "cloze": [
+        "existence",
+        "wounded"
+      ]
+    },
+    {
+      "id": "what-have-i-done",
+      "text": "“O!” she cried, despairingly. “What have I done! What have I done!”",
+      "speaker": "Miss Havisham",
+      "reference": "Chapter 49",
+      "stage": "truth",
+      "context": "After Pip's account of his feelings for Estella has shown her what she made.",
+      "analysis": "The question repeats twenty and fifty times in a page, and the novel says she never changed the order of the three sentences she was left with by the end. She had asked Pip to forgive her in writing, under her name — the whole scene is a woman trying to get a sentence exactly right, having spent twenty-five years refusing to finish one.",
+      "themes": [
+        "parents",
+        "love"
+      ],
+      "techniques": [
+        "symbolic-objects"
+      ],
+      "characters": [
+        "miss-havisham",
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 49",
+      "cloze": [
+        "done"
+      ]
+    },
+    {
+      "id": "merciful-to-him",
+      "text": "I thought of the two men who went up into the Temple to pray, and I knew there were no better words that I could say beside his bed, than “O Lord, be merciful to him a sinner!”",
+      "reference": "Chapter 56",
+      "stage": "river",
+      "context": "At Magwitch's death in the prison infirmary.",
+      "analysis": "Pip has just told a dying man that his daughter is alive, a lady and loved — the only lie in the novel that costs nobody anything. The prayer he then chooses is the publican's rather than the Pharisee's, which quietly settles the question of who in this book has been standing at the front of the temple.",
+      "themes": [
+        "guilt",
+        "parents"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "pip",
+        "magwitch"
+      ],
+      "source": "Standard Ebooks text, Chapter 56",
+      "cloze": [
+        "merciful",
+        "sinner"
+      ]
+    },
+    {
+      "id": "ever-the-best-of-friends",
+      "text": "“Lookee here, old chap,” said Joe, bending over me. “Ever the best of friends; ain’t us, Pip?”",
+      "speaker": "Joe Gargery",
+      "reference": "Chapter 57",
+      "stage": "river",
+      "context": "Nursing Pip through the fever, having paid his debts.",
+      "analysis": "The same sentence he used in Chapter 7 to comfort a crying child, produced again fifty chapters later without a word of reproach in between. Joe's vocabulary has not moved at all while Pip's has been expensively remade, and the novel's judgement is contained in which of the two turns out to have needed changing.",
+      "themes": [
+        "memory",
+        "gentility"
+      ],
+      "techniques": [
+        "idiolect",
+        "retrospective-narration"
+      ],
+      "characters": [
+        "joe",
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 57",
+      "cloze": [
+        "friends",
+        "chap"
+      ]
+    },
+    {
+      "id": "bent-and-broken",
+      "text": "I have been bent and broken, but⁠—I hope⁠—into a better shape.",
+      "speaker": "Estella",
+      "reference": "Chapter 59",
+      "stage": "river",
+      "context": "In the ruined garden of Satis House, eleven years later.",
+      "analysis": "The metaphor belongs to the forge: iron is bent and broken into shape by heat and hammering, and the woman raised in a brewer's house finishes the novel speaking Joe's trade. The hesitation marked by the dashes is the only uncertainty she has ever expressed.",
+      "themes": [
+        "love",
+        "parents"
+      ],
+      "techniques": [
+        "symbolic-objects"
+      ],
+      "characters": [
+        "estella",
+        "pip"
+      ],
+      "source": "Standard Ebooks text, Chapter 59",
+      "cloze": [
+        "bent",
+        "shape"
+      ]
+    },
+    {
+      "id": "no-shadow-of-another-parting",
+      "text": "as the morning mists had risen long ago when I first left the forge, so the evening mists were rising now, and in all the broad expanse of tranquil light they showed to me, I saw no shadow of another parting from her.",
+      "reference": "Chapter 59",
+      "stage": "river",
+      "context": "The last sentence of the novel, as published.",
+      "analysis": "The sentence closes a loop opened in Chapter 19, where mists rose as Pip walked away from the forge towards London. What it does not do is say they marry: 'no shadow of another parting' is a negative, seen in mist, by a narrator who has been wrong about every prospect he has ever surveyed.",
+      "themes": [
+        "love",
+        "memory"
+      ],
+      "techniques": [
+        "setting-as-mood",
+        "retrospective-narration"
+      ],
+      "characters": [
+        "pip",
+        "estella"
+      ],
+      "source": "Standard Ebooks text, Chapter 59",
+      "cloze": [
+        "mists",
+        "parting"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1812,
+      "label": "Dickens born in Portsmouth",
+      "detail": "Pip's childhood belongs roughly to the same decade as Dickens's own.",
+      "kind": "author"
+    },
+    {
+      "year": 1824,
+      "label": "The blacking warehouse",
+      "detail": "Dickens's father was imprisoned for debt and the boy was sent out to work, an episode behind the novel's shame about hands, clothes and company.",
+      "kind": "author"
+    },
+    {
+      "year": 1840,
+      "label": "Transportation to New South Wales ends",
+      "detail": "The system that sent Magwitch to Australia, and the sentence he risks hanging by breaking.",
+      "kind": "context"
+    },
+    {
+      "year": 1850,
+      "label": "David Copperfield completed",
+      "detail": "Dickens re-read it before starting Great Expectations, to be sure he was not repeating himself in the first person.",
+      "kind": "author"
+    },
+    {
+      "year": 1857,
+      "label": "Dickens moves to Gad's Hill Place",
+      "detail": "In the Kent country the novel's marshes and estuary are drawn from.",
+      "kind": "author"
+    },
+    {
+      "year": 1860,
+      "label": "Serialisation begins",
+      "detail": "The first weekly instalment appeared in All the Year Round in December; Dickens took the novel on partly to lift the journal's sales.",
+      "kind": "work"
+    },
+    {
+      "year": 1861,
+      "label": "The ending is changed",
+      "detail": "Bulwer-Lytton read the manuscript ending and objected; Dickens wrote the replacement that has been printed ever since.",
+      "kind": "work"
+    },
+    {
+      "year": 1861,
+      "label": "Serial ends and the book appears",
+      "detail": "The last instalment ran in August, and Chapman and Hall published the novel in three volumes.",
+      "kind": "work"
+    },
+    {
+      "year": 1870,
+      "label": "Dickens dies at Gad's Hill",
+      "detail": "Great Expectations was his penultimate completed novel, followed by Our Mutual Friend.",
+      "kind": "author"
+    },
+    {
+      "year": 1946,
+      "label": "David Lean's film",
+      "detail": "Its graveyard opening and Satis House interiors have shaped how the novel is imagined ever since.",
+      "kind": "reception"
+    },
+    {
+      "year": 1998,
+      "label": "Alfonso Cuarón's film",
+      "detail": "Relocated to Florida and New York, with Pip as a painter, which tests how much of the novel is the plot and how much the class system.",
+      "kind": "reception"
+    },
+    {
+      "year": 2012,
+      "label": "Mike Newell's film",
+      "detail": "A return to period adaptation, with Ralph Fiennes as Magwitch and Helena Bonham Carter as Miss Havisham.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Cooling, Kent",
+      "lat": 51.4622,
+      "lon": 0.5203,
+      "note": "The marsh churchyard with its row of small graves, usually taken as the model for the opening chapter."
+    },
+    {
+      "name": "Rochester",
+      "lat": 51.389,
+      "lon": 0.5045,
+      "note": "The market town behind Pip's, and the brewery and old houses behind Satis House."
+    },
+    {
+      "name": "Gad's Hill Place, Higham",
+      "lat": 51.418,
+      "lon": 0.46,
+      "note": "Dickens's house, a few miles from the marshes he was writing about."
+    },
+    {
+      "name": "Smithfield and Little Britain, London",
+      "lat": 51.5187,
+      "lon": -0.1,
+      "note": "Jaggers's office, in sight of Newgate and the meat market Pip arrives at, smeared with filth and fat."
+    },
+    {
+      "name": "Walworth",
+      "lat": 51.487,
+      "lon": -0.093,
+      "note": "Wemmick's castle, drawbridge and nine o'clock gun."
+    },
+    {
+      "name": "Hammersmith",
+      "lat": 51.4927,
+      "lon": -0.224,
+      "note": "Matthew Pocket's house on the river, where Pip is educated alongside Drummle and Startop."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "A novel about the gentleman as a fiction",
+      "summary": "The central reading treats gentility as the book's target: Pip's education buys him accent, address and debt, while the people who behave best in the novel are a blacksmith, a village schoolmistress and a transported felon.",
+      "counter": "The ending softens the case — Pip is rewarded with a clerkship, a friendship and a scene in a garden, none of which examine the system that produced the shame."
+    },
+    {
+      "position": "The two endings",
+      "summary": "A long-running textual argument. The manuscript ending kept Pip and Estella apart; the published one brings them together in the ruined garden in terms carefully hedged with mist. Which is the better novel, and which the more honest, has been debated since the first readers learned there were two.",
+      "counter": "The published ending is not the reconciliation it is often taken for: it promises only that Pip saw no shadow of another parting, which is a statement about his eyesight."
+    },
+    {
+      "position": "Crime, empire and the source of money",
+      "summary": "Later criticism has followed the money: an English gentleman is funded by a sheep farmer in New South Wales, whose capital comes from a penal colony. The novel's plot makes visible a connection between metropolitan respectability and transportation that most Victorian fiction leaves offstage.",
+      "counter": "Magwitch is also the novel's most loving character, and readings that treat him chiefly as economic evidence can lose what the deathbed scene is doing."
+    },
+    {
+      "position": "Pip as an unreliable witness against himself",
+      "summary": "Criticism of the narration notes that every harsh judgement of Pip in the book is made by Pip, which makes the reader's disapproval hard to separate from the narrator's self-punishment.",
+      "counter": "Biddy, Joe and Herbert are all given chances to say what they think, and none of them is as severe as the narrator — which may mean he is exaggerating, or that they are being kind."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "How does Dickens present the idea of the gentleman?",
+      "focus": "Class, money and conduct",
+      "plan": [
+        "Begin with Chapter 8: the whole apparatus of shame installed by a card game, a pair of hands and a pair of boots.",
+        "Contrast Joe's conduct with Pip's manners — Joe is the only person in the novel whose behaviour is never governed by who is watching.",
+        "Use Magwitch's claim to have made a gentleman to show that the title is something bought, and by whom.",
+        "Bring in Compeyson, the gentleman who received the lighter sentence, as the novel's hardest evidence.",
+        "Ask what Pip ends with: a clerkship, a friendship and no fortune, and whether that counts as an answer or an evasion."
+      ]
+    },
+    {
+      "question": "Discuss the presentation of Miss Havisham and Estella.",
+      "focus": "Damage, design and responsibility",
+      "plan": [
+        "Set out what Miss Havisham has staged: stopped clocks, one shoe, the bride-cake left for the mice.",
+        "Read Estella's warnings as accurate rather than flirtatious — she says plainly that she has no heart.",
+        "Use 'I must be taken as I have been made' to argue about how much responsibility a manufactured person carries.",
+        "Turn on Chapter 49, where Miss Havisham sees what she did by watching Pip's face, and asks the same question fifty times.",
+        "Weigh two verdicts: a Gothic monster of a woman, or the novel's clearest case of damage repeating itself down a generation."
+      ]
+    },
+    {
+      "question": "What use does Dickens make of the marshes and the river?",
+      "focus": "Setting, structure and mood",
+      "plan": [
+        "Open with Chapter 1, where the flat marsh country teaches a child the identity of things.",
+        "Track the mists: rising as Pip leaves the forge in Chapter 19, and rising again in the novel's last sentence.",
+        "Set the openness of the marshes against the enclosure of Satis House and the crowding of Smithfield.",
+        "Follow the Thames from the hulks at the start to the failed escape by rowing boat in Chapter 54.",
+        "Conclude on the pattern: Pip goes up the river to become a gentleman and comes back down it with a dying man."
+      ]
+    },
+    {
+      "question": "'The novel is told by a man judging his younger self.' How far does that shape the reader's response?",
+      "focus": "Narration and sympathy",
+      "plan": [
+        "Establish the double voice with 'it is a most miserable thing to feel ashamed of home', where the charge and the plea arrive together.",
+        "Note the direct addresses to the reader, which generalise Pip's case at the points where he behaves worst.",
+        "Compare what other characters say about Pip — Biddy, Joe, Herbert — with what he says about himself.",
+        "Consider Orlick in Chapter 53, who voices the accusations from outside and is not believed because of who is making them.",
+        "Decide whether the retrospection earns the reader's sympathy or simply forecloses criticism by getting there first."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Pip is ashamed of Joe and knows it is contemptible. Does knowing make it better or worse?",
+    "Magwitch says he has made a gentleman. Is he a benefactor, an owner, or both?",
+    "Estella warns Pip repeatedly and he ignores her. Whose failure is that?",
+    "Dickens replaced his first ending after a friend objected. Should a reader prefer the published one?",
+    "Wemmick keeps his feelings at Walworth and his judgement in Little Britain. Is that cowardice or common sense?"
+  ],
+  "related": [
+    {
+      "href": "/books/a-christmas-carol/",
+      "why": "Dickens seventeen years earlier on money, memory and whether a settled character can be remade."
+    },
+    {
+      "href": "/books/jane-eyre/",
+      "why": "The other great first-person Victorian account of a childhood turned into a case against the adults who managed it."
+    },
+    {
+      "href": "/books/the-moonstone/",
+      "why": "Written for the same journal circle, and the clearest demonstration of what serial suspense does to a plot."
+    },
+    {
+      "href": "/books/tess-of-the-durbervilles/",
+      "why": "The next generation's version of the same question: what a person's origins are allowed to decide about their life."
+    },
+    {
+      "href": "/books/adventures-of-huckleberry-finn/",
+      "why": "A boy narrator, a fugitive on a river and a conscience formed against everything he has been taught."
+    }
+  ],
+  "videos": []
+}

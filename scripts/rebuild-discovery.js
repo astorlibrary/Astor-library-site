@@ -65,6 +65,15 @@ const studyBookLinks = {
   'https://mybook.to/l4zC9': ['/books/twelfth-night/']
 };
 
+// A study edition that gains an on-site page changes its key in this map from
+// the retailer address to the page address. Re-keying it here means the map
+// above never has to be edited when a page is generated.
+for (const [buyUrl, pageHref] of Object.entries(require('./rebuild-generated-study-pages').generatedStudyPages())) {
+  if (!studyBookLinks[buyUrl]) continue;
+  studyBookLinks[pageHref] = studyBookLinks[buyUrl];
+  delete studyBookLinks[buyUrl];
+}
+
 const resourceBookLinks = Object.fromEntries(resourceData.map(function (resource) {
   return [resource.route, resource.relatedBooks || []];
 }));
@@ -1014,7 +1023,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '</head><body>' + siteHeader() +
   '<main class="page-wrap explore-page">' +
   '<section class="explore-hero"><div><p class="kicker">Books, passages, guides and editions</p><h1>Search the catalogue.</h1>' +
-  '<p class="deck">Search ' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions by title, writer, period, subject or resource type.</p></div>' +
+  '<p class="deck">Search ' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions by title, writer, period, subject or resource type. Press the slash key anywhere on the site to search without leaving the page.</p></div>' +
   '<aside class="explore-hero-note"><p>Use the search field for a title or subject. Use the filters to limit results to books, guides, study editions, authors, passages or collections.</p></aside></section>' +
   '<section class="explore-tools" aria-label="Search everything">' +
   '<label for="explore-search">What are you looking for?</label>' +
@@ -1039,6 +1048,15 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<a href="/study/"><span>Study editions</span><p>Summaries, context, quotations, critical interpretations and essay support.</p></a>' +
   '<a href="/resources/"><span>Free guides</span><p>Online guides to individual texts, passages, themes and historical contexts.</p></a>' +
   '<a href="/reading-routes/"><span>Cross-period reading lists</span><p>Book lists organised around home, freedom, fear, power, evidence, voice and knowledge.</p></a>' +
+  '<a href="/explore/quotations/"><span>Quotation explorer</span><p>Every checked quotation in the catalogue, filterable by theme, technique, character, period and form.</p></a>' +
+  '<a href="/explore/timeline/"><span>Literature timeline</span><p>Each book set against its historical moment and against everything else being written at the time.</p></a>' +
+  '<a href="/explore/characters/"><span>Character maps</span><p>Relationship diagrams that redraw for each act, so a household can be watched coming apart in order.</p></a>' +
+  '<a href="/explore/themes/"><span>Themes across the library</span><p>Each shared theme set out book by book: what every title makes of it, and the lines that carry it.</p></a>' +
+  '<a href="/explore/techniques/"><span>Technique glossary</span><p>Literary terms defined once and then shown at work in particular lines across the library.</p></a>' +
+  '<a href="/explore/map/"><span>Map of settings</span><p>Where the books happen, from Inverness and Thornfield to Transylvania and the Pequod’s track.</p></a>' +
+  '<a href="/explore/compare/"><span>Compare two texts</span><p>Shared themes and techniques set side by side, with paired quotations for a comparative essay.</p></a>' +
+  '<a href="/play/"><span>Play &amp; revise</span><p>Nine revision games, flashcard decks and an essay planner, all built from the same checked material.</p></a>' +
+  '<a href="/for-teachers/"><span>For teachers</span><p>Lesson starters, printable worksheets, discussion sheets and a projector mode.</p></a>' +
   '</section>' +
   '<section class="explore-results" aria-label="Search results">' + entryCards + '</section>' +
   '<button class="explore-more" id="explore-more" type="button">Show 24 more</button>' +
@@ -1135,8 +1153,36 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
   '<link rel="stylesheet" href="/assets/styles.css"><style>' +
   '.site-index-quick{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 60px}.site-index-quick a{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;font-weight:800;color:var(--burgundy);border:1px solid var(--line);background:#fff8ef;padding:10px 13px;text-decoration:none}.index-group{border-top:1px solid var(--line);padding:38px 0 14px}.index-group h2{font-size:clamp(34px,5vw,58px);line-height:.95;letter-spacing:-.04em;margin:0 0 22px}.index-group h2 a{text-decoration:none}.index-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.index-links>a{display:flex;flex-direction:column;gap:6px;min-height:92px;border:1px solid var(--line);background:rgba(255,248,239,.86);padding:15px;text-decoration:none}.index-links span{font-size:21px;font-weight:700;line-height:1.08}.index-links small{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;color:var(--muted);line-height:1.35}@media(max-width:820px){.index-links{grid-template-columns:1fr}}' +
   '</style></head><body>' + siteHeader() +
-  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Complete directory</p><h1>Site index.</h1><p class="deck">Links to every book, close reading, writer, subject guide, free resource, study edition and collection currently available from Astor Library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions.</strong> Use the catalogue search to filter these entries, or browse the sections below.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/passage-room/">Read a passage</a></div></aside></section>' +
-  '<nav class="site-index-quick" aria-label="Site index sections"><a href="#seasons">Seasons</a><a href="#passages">Close readings</a><a href="#subjects">Subjects</a><a href="#writers">Writers</a><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="/about/">About Astor Library</a><a href="/editorial/">Editorial standards</a></nav>' +
+  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Complete directory</p><h1>Site index.</h1><p class="deck">Links to every book, close reading, writer, subject guide, free resource, study edition and collection currently available from Astor Library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions, plus twenty-two study tools.</strong> Use the catalogue search to filter these entries, or browse the sections below.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/passage-room/">Read a passage</a></div></aside></section>' +
+  '<nav class="site-index-quick" aria-label="Site index sections"><a href="#seasons">Seasons</a><a href="#passages">Close readings</a><a href="#subjects">Subjects</a><a href="#writers">Writers</a><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="#tools">Study tools</a><a href="/about/">About Astor Library</a><a href="/editorial/">Editorial standards</a></nav>' +
+  // The tools are part of the site and belong in a page that calls itself a
+  // complete directory; they are listed by hand because there are few of them
+  // and each needs a sentence rather than a category.
+  '<section class="index-group" id="tools"><h2><a href="/play/">Study tools</a></h2><div class="index-links">' + [
+    ['/play/', 'Play &amp; revise', 'Nine revision games, flashcards and an essay planner'],
+    ['/play/who-said-it/', 'Who said it?', 'Name the speaker of a line'],
+    ['/play/fill-the-line/', 'Fill the line', 'Put the missing words back into a speech'],
+    ['/play/theme-match/', 'Theme match', 'Decide which theme a quotation carries'],
+    ['/play/technique-spotter/', 'Technique spotter', 'Name the device doing the work'],
+    ['/play/character-identification/', 'Who is this?', 'A character described without being named'],
+    ['/play/order-the-plot/', 'Order the plot', 'Put acts, chapters and scenes back in sequence'],
+    ['/play/which-book/', 'Which book?', 'One line, the whole library'],
+    ['/play/context-sprint/', 'Context sprint', 'Place an event in the right year'],
+    ['/play/opening-lines/', 'Opening lines', 'Name the book from its first sentence'],
+    ['/play/flashcards/', 'Flashcards', 'Spaced repetition over a title’s quotations'],
+    ['/play/essay-forge/', 'Essay forge', 'Build a plan paragraph by paragraph'],
+    ['/play/defend-the-reading/', 'Defend the reading', 'Argue a reading against the case on the other side'],
+    ['/today/', 'Astor today', 'Passage of the day and the Daily Five'],
+    ['/explore/quotations/', 'Quotation explorer', 'Every checked quotation, filterable'],
+    ['/explore/timeline/', 'Literature timeline', 'Each book against its historical moment'],
+    ['/explore/characters/', 'Character maps', 'Relationship diagrams, act by act'],
+    ['/explore/themes/', 'Themes across the library', 'One idea, handled many ways'],
+    ['/explore/techniques/', 'Technique glossary', 'Terms with the evidence attached'],
+    ['/explore/map/', 'Map of settings', 'Where the books happen'],
+    ['/explore/compare/', 'Compare two texts', 'Shared themes and techniques side by side'],
+    ['/my-library/', 'My library', 'Saved books, progress, streak and commonplace book'],
+    ['/for-teachers/', 'For teachers', 'Lesson starters, worksheets and projector mode']
+  ].map(tool => '<a href="' + tool[0] + '"><span>' + tool[1] + '</span><small>' + tool[2] + '</small></a>').join('') + '</div></section>' +
   '<section class="index-group" id="seasons"><h2><a href="/seasons/">The seasonal library</a></h2><div class="index-links">' + seasons.map(season => '<a href="' + season.href + '"><span>' + escapeHtml(season.title) + '</span><small>Books and resources · open all year</small></a>').join('') + '</div></section>' +
   '<section class="index-group" id="passages"><h2><a href="/passage-room/">The Passage Room</a></h2><div class="index-links">' + passageLinks + '</div></section>' +
   '<section class="index-group" id="subjects"><h2><a href="/subjects/">Subject guides</a></h2><div class="index-links">' + subjectLinks + '</div></section>' +
