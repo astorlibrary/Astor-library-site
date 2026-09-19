@@ -204,7 +204,7 @@ keyboard rules: number keys choose, Enter checks and advances, R restarts. The
 end screen lists what was missed with a button to keep each line.
 
 There is no separate question bank. From one Macbeth record the builders
-produce 22 who-said-it questions, 22 cloze questions, 11 theme questions, 15
+produce 22 who-said-it questions, 22 cloze questions, 22 theme questions, 15
 technique questions, 9 character questions and 5 ordering rounds, and every
 explanation shown after an answer is the analysis printed on the book page.
 
@@ -212,6 +212,19 @@ Distractors are chosen to be hard rather than decorative: wrong speakers come
 from the same play, wrong titles prefer the same *form*, wrong years are
 within eighty years of the right one, and the cloze word bank is drawn from
 the same book's vocabulary so register gives nothing away.
+
+Every question has exactly one right answer, and the tests check it:
+
+- **Who said it** never offers two names for one person. Speakers are entered
+  short ("Scrooge", "Gloucester") and the cast in full, so wrong answers
+  exclude any alias of the speaker, anyone the line involves, and aliases of
+  each other; two cast members who share a name (Macbeth, Lady Macbeth) still
+  appear together, because telling them apart is the point.
+- **Theme match** and **technique spotter** ask about a line's first tag and
+  draw wrong answers only from tags the line does not carry. (They first used
+  only single-tagged lines, which left carefully tagged records with no
+  questions; across the library the change took theme match from 317
+  questions to 1,472.)
 
 ### The Daily Five
 
