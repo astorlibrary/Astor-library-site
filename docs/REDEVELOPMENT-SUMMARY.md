@@ -289,6 +289,10 @@ session contains.
   lists what happens there beneath the map, folded by book when there are
   many. The list under the map, folded book by book, lights the marker when
   a place is chosen there.
+  The same drawing appears on every book page with a record, in the Context
+  tab, fitted to that book's own places and drawn from the most detailed
+  coastline that covers them; book places are lettered before country and sea
+  names, which fill whatever room is left.
 - **Compare** — two titles side by side, starting from the themes and
   techniques they share and pairing the quotations that carry them, because
   that is where a comparative paragraph actually begins.
@@ -527,15 +531,19 @@ or paged, and the screenshots at 390px and 1280px are clean.
 
 ## 7. What was not built, and why
 
-**Videos.** The brief asked for privacy-friendly click-to-load embeds of real
-RSC, National Theatre, British Library, Globe or university material. The
-build environment has no general internet egress, so there is no way to
-confirm that a given video id is live, is what it claims to be, or is still
-publicly available — and inventing ids would be worse than having none. So the
-component is built, styled and documented, and every record ships
-`"videos": []`, which means the section does not render at all.
+**Videos (added later, 19 September).** The first build environment had no
+internet access, so it shipped the click-to-load component with every record
+set to `"videos": []`. A later pass with network access added 46 videos to
+sixteen of the most-studied titles, from the RSC, Shakespeare's Globe, the
+National Theatre, the British Library, the Folger, TED-Ed, CrashCourse, BBC
+Teach, Yale and the Charles Dickens Museum. Each id was checked twice through
+YouTube's oEmbed endpoint (`https://www.youtube.com/oembed?url=…`), which
+returns the title and channel of a live public video and an error for anything
+else, and the channel was matched against the record's `source`. The player
+is embedded with `referrerpolicy="strict-origin-when-cross-origin"`: YouTube
+refuses an embed that sends no origin at all.
 
-To add one, put an entry in a record:
+To add one, verify the id the same way, then put an entry in a record:
 
 ```json
 "videos": [{
@@ -578,8 +586,11 @@ episode of the day they fall in. Both records say so in `referenceStyle`.
 ## 8. Adding a book
 
 1. Write `data/books/<slug>.json`. Copy an existing record for the shape.
-   Verify every quotation against a public-domain text and record its
-   reference and the text you checked it against.
+   Put the plain-text URL of the public-domain source in `sourceText.url`
+   (a Project Gutenberg "Plain Text UTF-8" file), then run
+   `node scripts/verify-quotations.js <slug>`: it fetches the text once into
+   `.cache/`, and every quotation and the opening line must be found in it
+   word for word. Hyphenation and dashes are ignored; spelling is not.
 2. Reuse an existing theme or technique identifier where you mean the same
    idea. If you introduce a shared one, run
    `node scripts/rebuild-vocabulary.js --draft` and edit the canonical name.

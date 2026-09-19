@@ -492,6 +492,22 @@ async function renderMap() {
   svg.append(labelLayer);
 
   mapMount.append(svg);
+
+  // Country and sea names were placed by estimate. Now they are drawn, measure
+  // them, and drop any that touch a place name, a marker or each other.
+  const clear2 = (a, b) => a.x + a.width + 2 < b.x || b.x + b.width + 2 < a.x || a.y + a.height + 2 < b.y || b.y + b.height + 2 < a.y;
+  const blocking = [
+    ...[...svg.querySelectorAll('.astor-place-label')].map(text => text.getBBox()),
+    ...spots.map(spot => ({ x: spot.x - spot.radius, y: spot.y - spot.radius, width: spot.radius * 2, height: spot.radius * 2 }))
+  ];
+  for (const text of [...referenceLayer.children]) {
+    let box;
+    try { box = text.getBBox(); } catch { continue; }
+    const outside = box.x < 2 || box.y < 2 || box.x + box.width > width - 2 || box.y + box.height > height - 2;
+    if (outside || !blocking.every(other => clear2(box, other))) text.remove();
+    else blocking.push(box);
+  }
+
   if (selectedNode && !mapMount.contains(document.activeElement) && document.activeElement === document.body) {
     selectedNode.focus({ preventScroll: true });
   }
