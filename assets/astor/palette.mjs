@@ -8,6 +8,7 @@
 //
 // The index is fetched the first time the palette opens, never on page load.
 
+import './offline.mjs';
 import { el, clear } from './util.mjs';
 
 const MAX_RESULTS = 12;

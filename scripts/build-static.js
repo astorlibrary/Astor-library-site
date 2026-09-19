@@ -1126,7 +1126,7 @@ function studyToolkitFor(source) {
   const href = pageHref(source);
   const bookMatch = href.match(/^\/books\/([^/]+)\/$/);
   if (bookMatch && studyData.has(bookMatch[1])) return { book: studyData.get(bookMatch[1]), kind: 'book' };
-  if (bookMatch && studyEditions.has(bookMatch[1])) return { book: { ...studyEditions.get(bookMatch[1]), href }, kind: 'book' };
+  if (bookMatch && studyEditions.has(bookMatch[1])) return { book: { ...studyEditions.get(bookMatch[1]), href }, kind: 'book', baseHref: studyEditions.get(bookMatch[1]).href };
   const studyMatch = href.match(/^\/study\/([^/]+)\/$/);
   if (studyMatch) {
     const direct = studyData.get(studyMatch[1]);
@@ -1153,7 +1153,11 @@ function addStudyToolkit(html, source) {
   const heading = context.kind === 'study'
     ? 'Work through ' + context.book.title + '.'
     : 'Study ' + context.book.title + '.';
-  const toolkit = renderToolkit(context.book, { heading, titleFor: discoveryTitle });
+  const baseHref = context.baseHref || context.book.href;
+  const passages = (discovery.passages || [])
+    .filter(passage => (passage.relatedBooks || []).includes(baseHref))
+    .map(passage => ({ href: passage.href, title: plainText(passage.title), description: plainText(passage.description || '') }));
+  const toolkit = renderToolkit(context.book, { heading, titleFor: discoveryTitle, passages });
 
   // Insert where the page stops introducing the book and starts on its
   // history: after the edition card, else after the quick facts, else after
@@ -1319,6 +1323,30 @@ function collectSitemap(directory) {
 
 collectSitemap(outDir);
 sitemapUrls.sort((a, b) => a.url.localeCompare(b.url, 'en'));
+// The service worker is stamped with a version drawn from the files it keeps,
+// so a deploy that changes any of them is a new worker and a fresh cache.
+{
+  const workerFile = path.join(outDir, 'sw.js');
+  if (fs.existsSync(workerFile)) {
+    const moduleDir = path.join(outDir, 'assets', 'astor');
+    const modules = fs.readdirSync(moduleDir).filter(name => name.endsWith('.mjs')).sort().map(name => '/assets/astor/' + name);
+    const hash = require('crypto').createHash('sha256');
+    for (const file of modules.map(name => path.join(outDir, name)).concat([
+      path.join(outDir, 'assets', 'astor-study.css'),
+      path.join(outDir, 'assets', 'styles.css'),
+      path.join(outDir, 'assets', 'navigation.css'),
+      path.join(outDir, 'assets', 'study-index.json'),
+      path.join(outDir, 'sw.js')
+    ])) {
+      if (fs.existsSync(file)) hash.update(fs.readFileSync(file));
+    }
+    const stamped = fs.readFileSync(workerFile, 'utf8')
+      .replace('__ASTOR_BUILD__', hash.digest('hex').slice(0, 12))
+      .replace('__ASTOR_MODULES__', JSON.stringify(modules));
+    fs.writeFileSync(workerFile, stamped);
+  }
+}
+
 const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' +
   sitemapUrls.map(page => {

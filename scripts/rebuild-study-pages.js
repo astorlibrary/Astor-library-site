@@ -413,6 +413,21 @@ function buildPages() {
     links: [{ href: '/reading-routes/', label: 'Reading routes' }, { href: '/explore/quotations/', label: 'Quotation explorer' }]
   }));
 
+  // --- offline ---
+  written.push(page({
+    dir: 'offline',
+    title: 'Offline | Astor Library',
+    description: 'What Astor Library keeps on your device for reading and revising without a connection.',
+    kicker: 'Offline',
+    heading: 'No connection, but not nothing.',
+    deck: 'The study tools, the quotations and every book page you have opened are kept on this device as you go, so they open without a signal. What this device holds is listed below.',
+    breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Offline</span>',
+    module: 'offline.mjs',
+    mount: '  <div id="astor-offline-list"><p class="astor-inline-note">Looking at what is kept here\u2026</p></div>',
+    fallback: 'This page lists what your browser has kept, which needs JavaScript.',
+    links: [{ href: '/play/', label: 'Play &amp; revise' }, { href: '/my-library/', label: 'My library' }]
+  }));
+
   // --- my library ---
   written.push(page({
     dir: 'my-library',

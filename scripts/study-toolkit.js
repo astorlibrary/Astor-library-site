@@ -318,16 +318,28 @@ function videosPanel(book) {
     '</section>';
 }
 
-function relatedPanel(book, titleFor) {
-  if (!(book.related || []).length) return '';
-  const cards = book.related.map(related =>
+function relatedPanel(book, titleFor, passages = []) {
+  if (!(book.related || []).length && !passages.length) return '';
+  const readings = passages.length
+    ? '<h4 class="astor-subhead">Close readings of this book</h4>' +
+      '<p class="astor-panel-note">One passage at a time, with the wording annotated phrase by phrase in the Passage Room.</p>' +
+      '<div class="astor-note-grid">' + passages.map(passage =>
+        '<article class="astor-note"><h4><a href="' + escapeHtml(passage.href) + '">' + escapeHtml(passage.title) + '</a></h4>' +
+        '<p>' + escapeHtml(passage.description || '') + '</p></article>'
+      ).join('') + '</div>'
+    : '';
+  const cards = (book.related || []).map(related =>
     '<article class="astor-note"><h4><a href="' + escapeHtml(related.href) + '">' + escapeHtml(titleFor(related.href)) + '</a></h4>' +
     '<p>' + escapeHtml(related.why) + '</p></article>'
   ).join('');
+  const related = cards
+    ? (readings ? '<h4 class="astor-subhead">Where to go from here</h4>' : '') +
+      '<p class="astor-panel-note">Connections worth following, each with a reason rather than a category.</p>' +
+      '<div class="astor-note-grid">' + cards + '</div>'
+    : '';
   return '<section class="astor-panel" id="astor-related" data-panel="Read next">' +
-    '<h3>Where to go from here</h3>' +
-    '<p class="astor-panel-note">Connections worth following, each with a reason rather than a category.</p>' +
-    '<div class="astor-note-grid">' + cards + '</div>' +
+    '<h3>' + (readings ? 'Closer, and further' : 'Where to go from here') + '</h3>' +
+    readings + related +
     '</section>';
 }
 
@@ -338,7 +350,7 @@ function fallbackTitle(href) {
     .replace(/(^|\s)\S/g, character => character.toUpperCase());
 }
 
-function renderToolkit(book, { heading, titleFor } = {}) {
+function renderToolkit(book, { heading, titleFor, passages } = {}) {
   const resolveTitle = href => (titleFor && titleFor(href)) || fallbackTitle(href);
   const panels = [
     plotPanel(book),
@@ -350,7 +362,7 @@ function renderToolkit(book, { heading, titleFor } = {}) {
     essaysPanel(book),
     videosPanel(book),
     revisePanel(book),
-    relatedPanel(book, resolveTitle)
+    relatedPanel(book, resolveTitle, passages || [])
   ].filter(Boolean);
 
   const tabs = panels.map((panel, index) => {
