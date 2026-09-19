@@ -1,0 +1,1608 @@
+{
+  "slug": "the-aeneid",
+  "title": "The Aeneid",
+  "author": "Virgil",
+  "translator": "John Dryden",
+  "href": "/books/the-aeneid/",
+  "buyUrl": "https://mybook.to/ZdOQoGv",
+  "form": "poem",
+  "genre": "Epic",
+  "period": "Ancient & Epic",
+  "written": "c. 29–19 BCE, left unrevised at Virgil’s death; Dryden’s English version 1697",
+  "setting": "Troy, the Mediterranean, Carthage, Sicily, the underworld beneath Cumae and the mouth of the Tiber, in the generation after the Trojan War",
+  "readingTime": 780,
+  "difficulty": 4,
+  "lengthNote": "Around 13,700 lines of heroic couplets in Dryden’s version, arranged in twelve books",
+  "openingLine": "Arms, and the man I sing, who, forc’d by fate, And haughty Juno’s unrelenting hate, Expell’d and exil’d, left the Trojan shore.",
+  "summary": "A Trojan prince escapes his burning city with his father on his back, and spends twelve books being told by gods, ghosts and oracles that his losses are the price of a Rome he will never see. Virgil wrote it for Augustus and left it unfinished; Dryden turned its hexameters into the heroic couplets of 1697, so that the Latin’s ambivalence arrives in English with a Restoration snap. It ends not with a city founded but with a sword driven into a man who has just begged for his life.",
+  "referenceStyle": "book — Dryden’s translation carries no line numbers, so quotations are placed by book alone",
+  "sourceText": {
+    "label": "Standard Ebooks text of Dryden’s translation of the Aeneid",
+    "note": "Dryden’s 1697 version prints no line numbers, so references stop at the book; the line numbers of Latin editions do not correspond to his couplets. Quotations keep Dryden’s spelling and punctuation, and leave out only the speech marks that open or close a quoted speech."
+  },
+  "atAGlance": [
+    {
+      "label": "Written",
+      "value": "c. 29–19 BCE",
+      "note": "Begun after the Georgics, in the decade in which Octavian became Augustus. Virgil died with the revision unfinished."
+    },
+    {
+      "label": "Left unfinished",
+      "value": "19 BCE",
+      "note": "Virgil is said to have asked for the manuscript to be burnt. Augustus had it published, half-lines and all."
+    },
+    {
+      "label": "This translation",
+      "value": "1697",
+      "note": "Dryden’s Works of Virgil, published by subscription through Jacob Tonson, with the Aeneid in heroic couplets."
+    },
+    {
+      "label": "Shape",
+      "value": "Twelve books",
+      "note": "Six of wandering that answer the Odyssey, six of war that answer the Iliad, with the underworld at the hinge."
+    }
+  ],
+  "structure": [
+    {
+      "id": "book-1",
+      "label": "Book I",
+      "title": "A storm, and a queen who understands exile",
+      "summary": "Juno, who has not forgiven Troy, bribes the wind-god to wreck the Trojan fleet within sight of Italy. Aeneas is thrown up on the coast of Africa, where a city is being built by another refugee: Dido of Tyre, who welcomes the survivors and, under Venus’s management, begins to love their leader. Jupiter has already told Venus how it all ends, which is the poem’s method: the reader knows Rome is coming before Aeneas does."
+    },
+    {
+      "id": "book-2",
+      "label": "Book II",
+      "title": "The night Troy fell, told by the man who left it",
+      "summary": "At Dido’s table Aeneas narrates the wooden horse, Sinon’s lies, Laocoön’s death and the sack. He sees Priam butchered at his own altar, is stopped by his mother from killing Helen, and leaves with his father on his shoulders, his son by the hand and his wife behind. Creusa is lost in the dark; her ghost tells him to stop looking and go."
+    },
+    {
+      "id": "book-3",
+      "label": "Book III",
+      "title": "Seven years of wrong turnings",
+      "summary": "The Trojans try Thrace, Delos, Crete and the Strophades before the oracles start to make sense. A Harpy curses them with a famine that will make them eat their tables; at Buthrotum Helenus and Andromache have built a miniature Troy, which is exactly what Aeneas must not do. Anchises dies in Sicily, and the narration catches up with the storm of Book I."
+    },
+    {
+      "id": "book-4",
+      "label": "Book IV",
+      "title": "Dido",
+      "summary": "Dido tells her sister she is in love and is encouraged to act on it. A storm drives the hunting party into a cave, and what happens there she calls marriage. Rumour carries the story across Africa; Jupiter sends Mercury; Aeneas has the fleet readied in secret and, when confronted, says he is not free. Dido curses his descendants, builds a pyre for the things he left, and dies on his sword."
+    },
+    {
+      "id": "book-5",
+      "label": "Book V",
+      "title": "Games for a dead father, and a pilot lost",
+      "summary": "Back in Sicily a year after Anchises’s death, Aeneas holds funeral games: a boat race, a footrace, boxing, archery and the boys’ cavalry display. Juno sends Iris to persuade the Trojan women to burn the ships, and four are lost. The weary are left behind in a new town; on the last calm night at sea the god of Sleep pushes the helmsman Palinurus overboard."
+    },
+    {
+      "id": "book-6",
+      "label": "Book VI",
+      "title": "Down, and back through the wrong gate",
+      "summary": "At Cumae the Sibyl foretells wars, a new Achilles and a Tiber foaming with blood, then leads Aeneas underground with the golden bough. He passes Palinurus unburied and Dido silent, and finds Anchises in Elysium reviewing the souls of Romans not yet born, from Romulus to Augustus to the boy Marcellus. He returns to daylight through the gate of ivory, the gate of false dreams."
+    },
+    {
+      "id": "book-7",
+      "label": "Book VII",
+      "title": "Italy, and the war Juno raises",
+      "summary": "The Trojans land at the Tiber’s mouth and eat the flat loaves beneath their food — the tables, and the end of the famine curse. King Latinus, warned by an oracle to marry his daughter to a foreigner, offers Lavinia to Aeneas. Juno summons the Fury Allecto to madden Queen Amata and the prince Turnus, and a hunting accident involving a pet stag turns two peoples to war. The book ends with a catalogue of the Italian forces."
+    },
+    {
+      "id": "book-8",
+      "label": "Book VIII",
+      "title": "Rome before Rome, and a shield full of the future",
+      "summary": "The river Tiber tells Aeneas to go upstream for allies. He finds Evander, an Arcadian king ruling a village of huts on the Palatine, who walks him over the future sites of the Forum and the Capitol and entrusts him with his son Pallas. Venus brings armour forged by Vulcan; the shield shows Roman history down to Actium and the triumph of Augustus, which Aeneas admires without understanding."
+    },
+    {
+      "id": "book-9",
+      "label": "Book IX",
+      "title": "The camp besieged, and two friends undone by a helmet",
+      "summary": "With Aeneas away, Turnus attacks the Trojan camp and tries to burn the fleet, which turns into sea-nymphs. Nisus and Euryalus slip out at night to carry word to Aeneas, kill sleeping enemies for the pleasure of it, and are caught when a stolen helmet catches the moonlight. Turnus gets inside the camp alone and has to swim the Tiber to escape."
+    },
+    {
+      "id": "book-10",
+      "label": "Book X",
+      "title": "Pallas killed, and Aeneas made terrible",
+      "summary": "Jupiter declares that he will favour neither side and let each man’s deeds decide. Aeneas returns by sea with Etruscan allies; Turnus kills young Pallas and strips his sword-belt, an act the narrator says he will one day wish undone. Aeneas cuts through the field in a rage, refusing pleas for mercy, and kills the godless Mezentius after Mezentius’s son Lausus dies defending him."
+    },
+    {
+      "id": "book-11",
+      "label": "Book XI",
+      "title": "Funerals, a council and a warrior queen",
+      "summary": "A truce for the dead: Pallas is carried home, and Evander asks only for Turnus’s death in return. The Latins argue about peace while Turnus’s rival Drances needles him. Camilla, the Volscian horsewoman raised in the wild, leads the cavalry and kills until she is distracted by a priest’s golden armour and shot by a man who then runs from what he has done."
+    },
+    {
+      "id": "book-12",
+      "label": "Book XII",
+      "title": "Single combat, and a belt",
+      "summary": "Turnus agrees to decide the war in a duel; his sister Juturna breaks the truce; Aeneas is wounded and healed by Venus; the Trojans attack the city and Amata hangs herself. Jupiter and Juno settle the future: the Trojan name will vanish and the Latins keep their language and dress. Aeneas brings Turnus down with a spear, hesitates at his plea, sees Pallas’s belt on his shoulder and kills him."
+    }
+  ],
+  "characters": [
+    {
+      "id": "aeneas",
+      "name": "Aeneas",
+      "role": "Trojan prince, son of Venus and Anchises, leader of the survivors",
+      "summary": "The poem calls him pious and shows him weeping, and the two are the same fact: his duty is to gods, father, son and an unborn people, and he pays for it in everyone he leaves. He is a reluctant hero in Books I to VI and a frightening one in X and XII, and the difference between the two is Pallas.",
+      "clue": "He carries his father out of a burning city, leaves a queen who loved him because a god told him to, and ends the poem killing a man who has just surrendered.",
+      "firstAppearance": "Book I",
+      "traits": [
+        "dutiful",
+        "grieving",
+        "capable of fury"
+      ],
+      "relationships": [
+        {
+          "to": "anchises",
+          "label": "son of",
+          "kind": "family"
+        },
+        {
+          "to": "ascanius",
+          "label": "father of",
+          "kind": "family"
+        },
+        {
+          "to": "dido",
+          "label": "loved by, then deserts",
+          "kind": "love",
+          "stages": [
+            "book-1",
+            "book-4",
+            "book-6"
+          ]
+        },
+        {
+          "to": "pallas",
+          "label": "guardian, then avenger of",
+          "kind": "mentor",
+          "stages": [
+            "book-8",
+            "book-10",
+            "book-12"
+          ]
+        },
+        {
+          "to": "turnus",
+          "label": "rival and killer of",
+          "kind": "enemy",
+          "stages": [
+            "book-10",
+            "book-12"
+          ]
+        },
+        {
+          "to": "evander",
+          "label": "guest and ally of",
+          "kind": "ally",
+          "stages": [
+            "book-8",
+            "book-11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dido",
+      "name": "Dido",
+      "role": "Queen of Carthage, a Phoenician exile who built her city from nothing",
+      "summary": "She is what Aeneas might have been: a refugee who founded a city and finished it. Virgil gives her the poem’s best speeches — the welcome, the passion, the curse — and then has her refuse to speak at all when they meet among the dead. Her death is written as a wound in the poem, not as a lesson.",
+      "clue": "She founded a city before the hero arrived, called a cave a wedding, and turned her back on him in the underworld without a word.",
+      "firstAppearance": "Book I",
+      "traits": [
+        "generous",
+        "proud",
+        "unforgiving"
+      ],
+      "relationships": [
+        {
+          "to": "aeneas",
+          "label": "loves, and is abandoned by",
+          "kind": "love",
+          "stages": [
+            "book-1",
+            "book-4",
+            "book-6"
+          ]
+        },
+        {
+          "to": "venus",
+          "label": "made a pawn by",
+          "kind": "enemy",
+          "stages": [
+            "book-1"
+          ]
+        },
+        {
+          "to": "juno",
+          "label": "her city’s patron",
+          "kind": "service",
+          "stages": [
+            "book-1",
+            "book-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anchises",
+      "name": "Anchises",
+      "role": "Aeneas’s father; carried out of Troy, buried in Sicily, met again in Elysium",
+      "summary": "Lame, old and stubborn, he refuses to leave Troy until a flame plays harmlessly on his grandson’s head, and thereafter reads every omen for the fleet. Dead by the end of Book III, he becomes the poem’s most important voice in Book VI, where he explains to his son what Rome is for.",
+      "clue": "Carried on his son’s shoulders out of the flames, he is later found in a meadow reviewing the unborn and explaining an empire.",
+      "firstAppearance": "Book II",
+      "traits": [
+        "pious",
+        "prophetic",
+        "a weight and a guide"
+      ],
+      "relationships": [
+        {
+          "to": "aeneas",
+          "label": "father of",
+          "kind": "family"
+        },
+        {
+          "to": "ascanius",
+          "label": "grandfather of",
+          "kind": "family",
+          "stages": [
+            "book-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ascanius",
+      "name": "Ascanius (Iulus)",
+      "role": "Aeneas’s son, ancestor of the Julian line",
+      "summary": "A child led by the hand in Book II, a boy who shoots a pet stag in Book VII and starts a war, and a youth who kills his first enemy in Book IX and is told by Apollo that it must be his last. He is the poem’s reason for everything and does almost nothing; Augustus’s family claimed descent from him.",
+      "clue": "A boy whose hunting accident starts a war, and whose second name the emperor’s family took as their own.",
+      "firstAppearance": "Book I",
+      "traits": [
+        "a future rather than a person",
+        "eager",
+        "protected"
+      ],
+      "relationships": [
+        {
+          "to": "aeneas",
+          "label": "son of",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "juno",
+      "name": "Juno",
+      "role": "Queen of the gods, enemy of Troy and patron of Carthage",
+      "summary": "The poem’s engine. She cannot change what fate has decreed, so she delays it, and every storm, love affair, ship-burning and war in the poem is her work. Her question in Book I is whether gods can hold such resentment, and the answer is that this one can, until Jupiter buys her off with the Trojan name.",
+      "clue": "She cannot stop the future, so she makes it as expensive as possible, and is finally paid off with a people’s name.",
+      "firstAppearance": "Book I",
+      "traits": [
+        "unrelenting",
+        "resourceful",
+        "bought off at last"
+      ],
+      "relationships": [
+        {
+          "to": "aeneas",
+          "label": "persecutes",
+          "kind": "enemy"
+        },
+        {
+          "to": "venus",
+          "label": "rival of",
+          "kind": "rival"
+        },
+        {
+          "to": "turnus",
+          "label": "uses as her champion",
+          "kind": "ally",
+          "stages": [
+            "book-7",
+            "book-9",
+            "book-12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "venus",
+      "name": "Venus",
+      "role": "Goddess of love, Aeneas’s mother",
+      "summary": "She protects her son by managing other people: she makes Dido fall in love as a security measure, gets a shield out of her husband Vulcan with a night’s persuasion, and pulls the arrow from Aeneas’s wound in Book XII. Her care is real and it does not extend to anyone else.",
+      "clue": "She appears to her son disguised as a huntress and lets him recognise her only as she turns to leave.",
+      "firstAppearance": "Book I",
+      "traits": [
+        "protective",
+        "managing",
+        "indifferent to the rest"
+      ],
+      "relationships": [
+        {
+          "to": "aeneas",
+          "label": "mother of",
+          "kind": "family"
+        },
+        {
+          "to": "juno",
+          "label": "rival of",
+          "kind": "rival"
+        },
+        {
+          "to": "dido",
+          "label": "uses",
+          "kind": "enemy",
+          "stages": [
+            "book-1",
+            "book-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turnus",
+      "name": "Turnus",
+      "role": "Prince of the Rutulians, Lavinia’s suitor, leader of the Italian resistance",
+      "summary": "The poem’s Achilles, and its Hector. He has courage, a grievance, a sister who is a nymph and the Fury Allecto in his blood; he kills Pallas and takes his belt, which the narrator marks at once as the act he will regret. He surrenders, and the last thing he does in the poem is beg.",
+      "clue": "He wears a dead boy’s belt into his last fight, and it is the belt, not the fight, that kills him.",
+      "firstAppearance": "Book VII",
+      "traits": [
+        "brave",
+        "aggrieved",
+        "maddened"
+      ],
+      "relationships": [
+        {
+          "to": "aeneas",
+          "label": "rival of, killed by",
+          "kind": "enemy",
+          "stages": [
+            "book-9",
+            "book-10",
+            "book-12"
+          ]
+        },
+        {
+          "to": "pallas",
+          "label": "kills and strips",
+          "kind": "enemy",
+          "stages": [
+            "book-10"
+          ]
+        },
+        {
+          "to": "juno",
+          "label": "championed by",
+          "kind": "service"
+        },
+        {
+          "to": "camilla",
+          "label": "allied with",
+          "kind": "ally",
+          "stages": [
+            "book-7",
+            "book-11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pallas",
+      "name": "Pallas",
+      "role": "Evander’s son, sent to war under Aeneas’s protection",
+      "summary": "He rides out of Pallanteum with his father watching from the gate, fights believing that Jupiter is impartial, and is killed by Turnus in his first campaign. His sword-belt, worn by his killer as a trophy, is the object the whole ending turns on: the sight of it is what stops Aeneas’s mercy.",
+      "clue": "A king’s only son whose sword-belt, worn by his killer, decides the poem’s last lines.",
+      "firstAppearance": "Book VIII",
+      "traits": [
+        "young",
+        "fearless",
+        "the debt"
+      ],
+      "relationships": [
+        {
+          "to": "evander",
+          "label": "son of",
+          "kind": "family"
+        },
+        {
+          "to": "aeneas",
+          "label": "entrusted to",
+          "kind": "mentor",
+          "stages": [
+            "book-8",
+            "book-10"
+          ]
+        },
+        {
+          "to": "turnus",
+          "label": "killed by",
+          "kind": "enemy",
+          "stages": [
+            "book-10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evander",
+      "name": "Evander",
+      "role": "Arcadian king of Pallanteum, a village on the site of Rome",
+      "summary": "A poor king who remembers meeting Anchises. He gives Aeneas a walking tour of a Rome that does not exist yet, offers him a bed of leaves and bearskin, and hands over his son with a speech that already sounds like mourning. In Book XI he asks for one thing in return, and gets it in the poem’s last line.",
+      "clue": "He rules a village of huts where the Forum will stand, and tells a guest to dare to be poor as a god once was.",
+      "firstAppearance": "Book VIII",
+      "traits": [
+        "hospitable",
+        "old",
+        "bereaved"
+      ],
+      "relationships": [
+        {
+          "to": "pallas",
+          "label": "father of",
+          "kind": "family"
+        },
+        {
+          "to": "aeneas",
+          "label": "host and ally of",
+          "kind": "ally",
+          "stages": [
+            "book-8",
+            "book-11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camilla",
+      "name": "Camilla",
+      "role": "Volscian warrior, raised in the wild and dedicated to Diana",
+      "summary": "Her father tied her to a spear as a baby and threw her across a river to save her; she grew up hunting and never learned to fear. Virgil gives her the poem’s last great battle sequence and a death caused by wanting a priest’s gold armour, which is the flaw he gives soldiers on both sides.",
+      "clue": "Thrown across a river tied to a spear as an infant, she leads the cavalry and dies reaching for a priest’s gold.",
+      "firstAppearance": "Book VII",
+      "traits": [
+        "swift",
+        "fearless",
+        "undone by spoil"
+      ],
+      "relationships": [
+        {
+          "to": "turnus",
+          "label": "fights for",
+          "kind": "ally",
+          "stages": [
+            "book-7",
+            "book-11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nisus-and-euryalus",
+      "name": "Nisus and Euryalus",
+      "role": "Two Trojan friends, one older, one barely a man",
+      "summary": "They volunteer for a night raid to reach Aeneas and are undone by the older one’s protectiveness and the younger one’s appetite for spoil. Their episode is the poem’s clearest statement about the pleasure of killing, and the narrator interrupts it to promise them immortality, which the poem then delivers.",
+      "clue": "Two friends on a night raid through a sleeping camp, betrayed by a stolen helmet catching the moonlight.",
+      "firstAppearance": "Book V",
+      "traits": [
+        "devoted",
+        "reckless",
+        "immortalised"
+      ],
+      "relationships": [
+        {
+          "to": "aeneas",
+          "label": "serve under",
+          "kind": "service",
+          "stages": [
+            "book-5",
+            "book-9"
+          ]
+        },
+        {
+          "to": "ascanius",
+          "label": "volunteer before",
+          "kind": "service",
+          "stages": [
+            "book-9"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "duty",
+      "name": "Pietas: duty to gods, father and people",
+      "summary": "The poem’s word for Aeneas is pius, and Dryden’s ‘pious’ and ‘good’ carry it. It does not mean devout; it means bound — to gods, to a father, to a son, to a people not yet born — and the poem tests what happens when the obligations disagree. Leaving Carthage is pietas, and so is killing Turnus, and the reader is made to feel the cost of both.",
+      "development": "Born at Troy in fear for Anchises; strained to breaking at Carthage; given its purpose by Anchises in Book VI; and turned into vengeance in the last line, where Aeneas kills in Pallas’s name."
+    },
+    {
+      "id": "fate",
+      "name": "Fate, and the cost of knowing it",
+      "summary": "Fate in the Aeneid is not a mystery but a schedule. Jupiter reads it aloud in Book I, Anchises shows it in Book VI and the shield engraves it in Book VIII; nobody can alter it, and Juno spends twelve books proving that it can be made to hurt. What the hero knows about the ending never tells him how to live through the middle.",
+      "development": "A promise to Venus in Book I; a curse from the Harpy in Book III; a parade of the unborn in Book VI; and Jupiter’s neutrality in Book X, where the outcome is left to ‘each to his proper fortune’."
+    },
+    {
+      "id": "empire",
+      "name": "Empire, and what it is founded on",
+      "summary": "Rome is the poem’s destination and never appears in it. What appears is the price: Troy burnt, Carthage cursed, a pilot drowned, Italians killed on their own soil. Anchises’s definition of Rome’s art — to tame the proud and free the subjected — is tested in the last lines on a proud man who has submitted.",
+      "development": "Promised without bounds in Book I; walked over as huts and pasture in Book VIII; engraved on a shield the hero cannot read; and paid for, in the closing books, in Italian blood."
+    },
+    {
+      "id": "exile",
+      "name": "Exile, and the carrying of Troy",
+      "summary": "Aeneas leaves Troy with his gods in his arms and is told repeatedly not to rebuild it. Helenus’s miniature Troy at Buthrotum is a warning, and Jupiter’s settlement in Book XII abolishes even the Trojan name: the exiles will arrive only by ceasing to be what they were.",
+      "development": "Departure in Book II; false homes in Book III; the temptation of Carthage in Book IV; and in Book XII the bargain that the Trojans will be absorbed rather than restored."
+    },
+    {
+      "id": "love",
+      "name": "Dido: love against the schedule",
+      "summary": "Book IV is a tragedy inside an epic, and it is Dido’s. Venus starts the passion as policy, Juno turns it into a wedding as policy, and the woman between them is the only person in the poem who acts wholly on her own feeling. The narrator calls her love a fault; her curse, and her silence in Book VI, suggest the poem does not entirely agree with him.",
+      "development": "Sparked at the feast in Book I; consummated and named in Book IV; answered with silence among the dead in Book VI."
+    },
+    {
+      "id": "revenge",
+      "name": "Anger, and the last line",
+      "summary": "The poem opens with a goddess’s resentment and ends with a man’s. Juno cannot alter fate, so she takes revenge on it; Dido’s dying wish is an avenger; Evander asks for Turnus’s life; and Aeneas, shown throughout as the man who restrains himself, delivers the last blow ‘rous’d anew to wrath’. The poem does not say whether the anger was justice.",
+      "development": "Juno’s in Books I and VII; Dido’s curse in Book IV; the belt taken in Book X; the belt seen in Book XII."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "heroic-couplet",
+      "name": "Heroic couplet",
+      "definition": "Two rhymed lines of iambic pentameter, closed at the rhyme so that each pair makes a complete unit of sense.",
+      "inThisBook": "Dryden’s form, not Virgil’s. The Latin hexameter runs on across lines; the couplet stops and balances, so that Virgil’s ambivalences arrive in English as antitheses. When Dryden needs more room he adds a third rhyme or a twelve-syllable line, and the triplets tend to fall where the Latin is grandest."
+    },
+    {
+      "id": "epic-simile",
+      "name": "Epic simile",
+      "definition": "An extended comparison that leaves the narrative for several lines and acquires a life of its own.",
+      "inThisBook": "Neptune calming the storm is a statesman quieting a mob; Dido in love is a deer with the arrow still in her; Euryalus dies like a poppy in rain. The comparisons keep leaving the battlefield for the farm, the hive and the garden — the worlds the empire will be built on."
+    },
+    {
+      "id": "invocation",
+      "name": "Invocation",
+      "definition": "A direct address to a muse or a source of inspiration, placed at the head of a book.",
+      "inThisBook": "Two of them. The Muse is asked in Book I to explain Juno’s anger, and Erato is summoned in Book VII for the war, which the poet calls a greater work. The second invocation announces that the poem is starting again, this time as an Iliad."
+    },
+    {
+      "id": "in-medias-res",
+      "name": "Beginning in the middle",
+      "definition": "Opening an epic after the decisive events, and supplying the earlier history later through a character’s narration.",
+      "inThisBook": "The poem opens seven years out from Troy, in a storm, and the fall of the city is told by Aeneas at Dido’s table two books later. That arrangement makes the narrator of the catastrophe its survivor, and makes his listener fall in love with him."
+    },
+    {
+      "id": "ekphrasis",
+      "name": "Ekphrasis",
+      "definition": "A work of art described inside the narrative at length, so that the reader looks at it with the characters.",
+      "inThisBook": "The fall of Troy painted on Juno’s temple in Book I, the doors of Apollo’s temple at Cumae in Book VI, and the shield in Book VIII, which shows Roman history down to Actium. Each time Aeneas looks at a picture of a history he cannot fully read: his own past, and his people’s future."
+    },
+    {
+      "id": "prophecy",
+      "name": "Prophecy",
+      "definition": "A statement about the future that shapes the action by being believed, whether or not it is true.",
+      "inThisBook": "Jupiter, Creusa’s ghost, Helenus, Celaeno, the Sibyl, Anchises and the river Tiber all tell Aeneas what will happen, and none of them tells him what it will feel like. The reader is handed Rome in Book I and then made to watch it cost Dido, Palinurus, Pallas and Turnus."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "arms-and-the-man",
+      "text": "Arms, and the man I sing, who, forc’d by fate, And haughty Juno’s unrelenting hate, Expell’d and exil’d, left the Trojan shore.",
+      "reference": "Book I",
+      "stage": "book-1",
+      "context": "The first lines of the poem.",
+      "analysis": "Virgil’s first word is arma, weapons, and Dryden keeps it: the poem announces war before it announces a hero, and the hero is named only by what has been done to him. Three past participles in the third line — forc’d, expell’d, exil’d — make him grammatically passive from the start, which is the condition the whole poem tests.",
+      "themes": [
+        "exile",
+        "fate"
+      ],
+      "techniques": [
+        "heroic-couplet",
+        "invocation"
+      ],
+      "characters": [
+        "aeneas",
+        "juno"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book I",
+      "cloze": [
+        "Arms",
+        "fate"
+      ]
+    },
+    {
+      "id": "so-vast-a-frame",
+      "text": "Such time, such toil, requir’d the Roman name, Such length of labour for so vast a frame.",
+      "reference": "Book I",
+      "stage": "book-1",
+      "context": "After the catalogue of Juno’s grievances, as the fleet is scattered for the seventh year.",
+      "analysis": "The couplet stands where Virgil’s tantae molis erat Romanam condere gentem stands, and it is the poem’s thesis: Rome is a weight before it is a glory. ‘Frame’ is a builder’s word, and the parallel ‘Such … such’ makes labour and time the materials of the city rather than obstacles to it.",
+      "themes": [
+        "empire"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [],
+      "source": "Standard Ebooks text of Dryden’s translation, Book I",
+      "cloze": [
+        "toil",
+        "frame"
+      ]
+    },
+    {
+      "id": "an-hour-will-come",
+      "text": "An hour will come, with pleasure to relate Your sorrows past, as benefits of Fate.",
+      "speaker": "Aeneas",
+      "reference": "Book I",
+      "stage": "book-1",
+      "context": "Aeneas rallying the survivors on the African shore, having hidden his own grief.",
+      "analysis": "Virgil’s forsan et haec olim meminisse iuvabit is a conditional — perhaps, one day, this too will be pleasant to remember. Dryden’s Aeneas promises. That small hardening is characteristic of the translation, and it makes the speech a commander’s rather than a survivor’s; the lines just before have told us he speaks with a sick heart and a hopeful face.",
+      "themes": [
+        "exile",
+        "duty"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "aeneas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book I",
+      "cloze": [
+        "pleasure",
+        "benefits"
+      ]
+    },
+    {
+      "id": "no-bounds-of-empire",
+      "text": "To them no bounds of empire I assign, Nor term of years to their immortal line.",
+      "speaker": "Jupiter",
+      "reference": "Book I",
+      "stage": "book-1",
+      "context": "Jupiter reassuring Venus, and unrolling the future as far as Augustus.",
+      "analysis": "Imperium sine fine, empire without end, is here split into space and time, bounds and term, which is how a couplet likes to think. It is the poem’s most quoted promise, and Jupiter makes it to a weeping goddess in private: the reader holds the guarantee, and no one on the ground ever will.",
+      "themes": [
+        "empire",
+        "fate"
+      ],
+      "techniques": [
+        "prophecy",
+        "heroic-couplet"
+      ],
+      "characters": [
+        "venus"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book I",
+      "cloze": [
+        "bounds",
+        "immortal"
+      ]
+    },
+    {
+      "id": "mute-walls",
+      "text": "Ev’n the mute walls relate the warrior’s fame, And Trojan griefs the Tyrians’ pity claim.",
+      "speaker": "Aeneas",
+      "reference": "Book I",
+      "stage": "book-1",
+      "context": "Aeneas finding the fall of Troy painted on the walls of Juno’s temple at Carthage.",
+      "analysis": "This is where the Latin has sunt lacrimae rerum, the phrase nobody can translate, and Dryden declines to try, giving instead a plain observation that the enemy has made art of his grief. What consoles Aeneas is being known: his disaster is famous here, and fame in this poem is a form of survival.",
+      "themes": [
+        "exile"
+      ],
+      "techniques": [
+        "ekphrasis"
+      ],
+      "characters": [
+        "aeneas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book I",
+      "cloze": [
+        "mute",
+        "pity"
+      ]
+    },
+    {
+      "id": "pity-woes",
+      "text": "Like you, an alien in a land unknown, I learn to pity woes so like my own.",
+      "speaker": "Dido",
+      "reference": "Book I",
+      "stage": "book-1",
+      "context": "Dido’s welcome to the shipwrecked Trojans, before she has set eyes on Aeneas.",
+      "analysis": "Non ignara mali, miseris succurrere disco: she is a refugee too, and her hospitality is the poem’s first act of pietas by anyone other than the hero. The rhyme closes ‘unknown’ on ‘my own’, shutting the distance between guest and host before Venus has done any work at all, which makes what follows less a trick than an acceleration.",
+      "themes": [
+        "exile",
+        "love"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "dido"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book I",
+      "cloze": [
+        "alien",
+        "pity"
+      ]
+    },
+    {
+      "id": "sad-remembrance",
+      "text": "Great queen, what you command me to relate Renews the sad remembrance of our fate:",
+      "speaker": "Aeneas",
+      "reference": "Book II",
+      "stage": "book-2",
+      "context": "The first words of Aeneas’s narrative at Dido’s feast, which fills Books II and III.",
+      "analysis": "Infandum, regina, iubes renovare dolorem: the story of Troy is told by its survivor, at dinner, to a woman who will fall in love with the telling. Dryden’s ‘renews’ keeps Virgil’s sense that narration reopens the wound, and the two books that follow are the poem’s longest stretch in a human voice rather than the narrator’s.",
+      "themes": [
+        "exile"
+      ],
+      "techniques": [
+        "in-medias-res"
+      ],
+      "characters": [
+        "aeneas",
+        "dido"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book II",
+      "cloze": [
+        "remembrance",
+        "fate"
+      ]
+    },
+    {
+      "id": "admit-the-horse",
+      "text": "Somewhat is sure design’d, by fraud or force: Trust not their presents, nor admit the horse.",
+      "speaker": "Laocoön",
+      "reference": "Book II",
+      "stage": "book-2",
+      "context": "Laocoön’s warning against the wooden horse, minutes before the sea-serpents kill him.",
+      "analysis": "The famous timeo Danaos et dona ferentes becomes an instruction rather than a confession of fear, and Dryden’s ‘admit’ is the exact word: the horse is a question of what a city lets in. Laocoön is right and is killed for it, and the Trojans read his death as proof that he was wrong, which is how the poem shows a city talking itself into ruin.",
+      "themes": [
+        "fate"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [],
+      "source": "Standard Ebooks text of Dryden’s translation, Book II",
+      "cloze": [
+        "presents",
+        "horse"
+      ]
+    },
+    {
+      "id": "headless-carcass",
+      "text": "On the bleak shore now lies th’ abandon’d king, A headless carcass, and a nameless thing.",
+      "speaker": "Aeneas",
+      "reference": "Book II",
+      "stage": "book-2",
+      "context": "Priam’s death at his own altar, as Aeneas tells it.",
+      "analysis": "A king who ruled Asia is reduced in one couplet to a body with no head and no name, and ‘thing’ is the poem’s bleakest noun. The lines that follow have Aeneas think at once of his own father, so that the sight of a dead king is the moment the son’s duty is born: pietas begins as fear for Anchises.",
+      "themes": [
+        "duty",
+        "exile"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "aeneas",
+        "anchises"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book II",
+      "cloze": [
+        "headless",
+        "nameless"
+      ]
+    },
+    {
+      "id": "willing-freight",
+      "text": "Haste, my dear father, (’tis no time to wait,) And load my shoulders with a willing freight.",
+      "speaker": "Aeneas",
+      "reference": "Book II",
+      "stage": "book-2",
+      "context": "Aeneas to Anchises as Troy burns, before lifting him onto his shoulders.",
+      "analysis": "‘Freight’ is a merchant’s word, and Dryden uses it deliberately: the father becomes cargo and the son a vessel, which is what Aeneas is for the rest of the poem. The image is the one Augustan Rome chose for the whole story — a man carrying his past and leading his future out of the fire — and Dryden’s parenthesis keeps the hurry in it.",
+      "themes": [
+        "duty"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "aeneas",
+        "anchises",
+        "ascanius"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book II",
+      "cloze": [
+        "shoulders",
+        "freight"
+      ]
+    },
+    {
+      "id": "grind-the-plates",
+      "text": "Fierce famine is your lot for this misdeed, Reduc’d to grind the plates on which you feed.",
+      "speaker": "Celaeno",
+      "reference": "Book III",
+      "stage": "book-3",
+      "context": "The Harpy Celaeno’s curse on the Trojans after they attack her flock.",
+      "analysis": "The threat sounds like starvation and turns out to be a picnic: in Book VII the Trojans eat the flat loaves they have used as plates, and Ascanius laughs that they are eating their tables. It is the poem’s clearest demonstration of how prophecy works — terrifying in advance, harmless in the event — and it is the moment Aeneas knows he has arrived.",
+      "themes": [
+        "fate"
+      ],
+      "techniques": [
+        "prophecy"
+      ],
+      "characters": [],
+      "source": "Standard Ebooks text of Dryden’s translation, Book III",
+      "cloze": [
+        "famine",
+        "plates"
+      ]
+    },
+    {
+      "id": "specious-name",
+      "text": "The queen, whom sense of honour could not move, No longer made a secret of her love, But call’d it marriage, by that specious name To veil the crime and sanctify the shame.",
+      "reference": "Book IV",
+      "stage": "book-4",
+      "context": "The narrator’s judgement immediately after the cave.",
+      "analysis": "Virgil’s coniugium vocat, hoc praetexit nomine culpam is neutral enough to be argued over; Dryden’s ‘veil the crime and sanctify the shame’ is not, and the translation takes a side the Latin only half takes. Whether the cave was a marriage is the question Dido dies on, and whose word we trust here, hers or the narrator’s, decides how we read her.",
+      "themes": [
+        "love"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "dido"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book IV",
+      "cloze": [
+        "marriage",
+        "specious"
+      ]
+    },
+    {
+      "id": "fame-from-small-beginnings",
+      "text": "Fame, the great ill, from small beginnings grows: Swift from the first; and ev’ry moment brings New vigour to her flights, new pinions to her wings.",
+      "reference": "Book IV",
+      "stage": "book-4",
+      "context": "Rumour personified, carrying the news of Dido and Aeneas across Libya.",
+      "analysis": "Fama is a monster with an eye and a tongue under every feather, and she grows by moving, which is what Dryden’s triplet does: the third line is longer than the two before it, an alexandrine, so that the verse itself acquires ‘new pinions’ as it goes. The rumour reaches Iarbas, Iarbas prays to Jupiter, and Jupiter sends Mercury; the plot of Book IV runs on gossip.",
+      "themes": [
+        "love"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "dido",
+        "aeneas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book IV",
+      "cloze": [
+        "Fame",
+        "beginnings"
+      ]
+    },
+    {
+      "id": "forced-by-my-fate",
+      "text": "Fair queen, oppose not what the gods command; Forc’d by my fate, I leave your happy land.",
+      "speaker": "Aeneas",
+      "reference": "Book IV",
+      "stage": "book-4",
+      "context": "The end of Aeneas’s only speech in his own defence to Dido.",
+      "analysis": "Italiam non sponte sequor: this is the whole of his case, that he does not go willingly, and the poem lets him make it in a couplet whose rhyme, ‘command’ on ‘land’, has the tidiness of an excuse. Dido’s reply calls him the child of a rock suckled by tigers, and the reader is not told which of them is right.",
+      "themes": [
+        "duty",
+        "love"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "aeneas",
+        "dido"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book IV",
+      "cloze": [
+        "fate",
+        "happy"
+      ]
+    },
+    {
+      "id": "rise-some-avenger",
+      "text": "Rise some avenger of our Libyan blood, With fire and sword pursue the perjur’d brood;",
+      "speaker": "Dido",
+      "reference": "Book IV",
+      "stage": "book-4",
+      "context": "Dido’s curse on Aeneas and his descendants, spoken as his fleet leaves the harbour.",
+      "analysis": "Every Roman reader knew the avenger’s name was Hannibal, and the curse is the poem’s way of making the Punic Wars a consequence of one man’s departure. The future tense here is Jupiter’s future tense from Book I turned inside out: prophecy from the losing side, and just as accurate.",
+      "themes": [
+        "revenge",
+        "fate"
+      ],
+      "techniques": [
+        "prophecy"
+      ],
+      "characters": [
+        "dido"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book IV",
+      "cloze": [
+        "avenger",
+        "blood"
+      ]
+    },
+    {
+      "id": "a-glorious-name",
+      "text": "My fatal course is finish’d; and I go, A glorious name, among the ghosts below.",
+      "speaker": "Dido",
+      "reference": "Book IV",
+      "stage": "book-4",
+      "context": "Dido on the pyre, with the sword Aeneas left behind.",
+      "analysis": "Vixi, she says in the Latin — I have lived — and lists what she has built as a general lists conquests. Dryden gives her a heroic epitaph in the poem’s own vocabulary: ‘a glorious name’ is what Nisus wants and what Jupiter promises Rome, so that the queen claims for herself the honour the poem reserves for men and empires.",
+      "themes": [
+        "love"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "dido"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book IV",
+      "cloze": [
+        "glorious",
+        "ghosts"
+      ]
+    },
+    {
+      "id": "faith-reposed-on-seas",
+      "text": "For faith repos’d on seas, and on the flatt’ring sky, Thy naked corpse is doom’d on shores unknown to lie.",
+      "speaker": "Aeneas",
+      "reference": "Book V",
+      "stage": "book-5",
+      "context": "Aeneas’s epitaph for his helmsman Palinurus, swept overboard on a calm night.",
+      "analysis": "Two alexandrines, twelve syllables each, in a poem of ten-syllable lines: Dryden slows the verse to a funeral pace. Palinurus is the price Neptune asked for a safe crossing, one life for many, and the ‘flatt’ring sky’ carries the poem’s standing suspicion of every promise made from above.",
+      "themes": [
+        "fate",
+        "duty"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "aeneas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book V",
+      "cloze": [
+        "faith",
+        "corpse"
+      ]
+    },
+    {
+      "id": "wars-horrid-wars",
+      "text": "Wars, horrid wars, I view⁠—a field of blood, And Tiber rolling with a purple flood.",
+      "speaker": "The Sibyl",
+      "reference": "Book VI",
+      "stage": "book-6",
+      "context": "The Sibyl’s prophecy at Cumae, before the descent to the underworld.",
+      "analysis": "Bella, horrida bella, and Dryden keeps the stammer of it. The Sibyl promises the second half of the poem in a couplet — a new Achilles, a river the colour of blood — and the verb ‘view’ makes it something she sees rather than something she predicts. The future in this poem is already a landscape.",
+      "themes": [
+        "fate"
+      ],
+      "techniques": [
+        "prophecy"
+      ],
+      "characters": [],
+      "source": "Standard Ebooks text of Dryden’s translation, Book VI",
+      "cloze": [
+        "horrid",
+        "purple"
+      ]
+    },
+    {
+      "id": "smooth-the-descent",
+      "text": "The gates of hell are open night and day; Smooth the descent, and easy is the way: But to return, and view the cheerful skies, In this the task and mighty labour lies.",
+      "speaker": "The Sibyl",
+      "reference": "Book VI",
+      "stage": "book-6",
+      "context": "The Sibyl answering Aeneas’s request to visit his father among the dead.",
+      "analysis": "Facilis descensus Averno: the most quoted lines in the poem, and they are about return, not descent. ‘Task’ and ‘labour’ are the words used of Rome’s founding at the start of Book I, so the underworld journey is made a rehearsal of the whole enterprise — and the way back out will be through the gate of false dreams.",
+      "themes": [
+        "fate",
+        "duty"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "aeneas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book VI",
+      "cloze": [
+        "Smooth",
+        "labour"
+      ]
+    },
+    {
+      "id": "disdainfully-she-looked",
+      "text": "Disdainfully she look’d; then turning round, But fix’d her eyes unmov’d upon the ground, And what he says and swears, regards no more Than the deaf rocks, when the loud billows roar;",
+      "reference": "Book VI",
+      "stage": "book-6",
+      "context": "Dido’s response to Aeneas among the dead, when he weeps and explains himself.",
+      "analysis": "Her silence answers every word of his speech in Book IV. Virgil compares her to flint and to marble; Dryden’s ‘deaf rocks’ and ‘loud billows’ hand back the imagery she used of him, the man born of a rock, so that in death she becomes exactly what she accused him of being.",
+      "themes": [
+        "love",
+        "revenge"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "dido",
+        "aeneas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book VI",
+      "cloze": [
+        "Disdainfully",
+        "deaf"
+      ]
+    },
+    {
+      "id": "awful-sway",
+      "text": "Let others better mould the running mass Of metals, and inform the breathing brass, And soften into flesh a marble face; Plead better at the bar; describe the skies, And when the stars descend, and when they rise. But, Rome, ’tis thine alone, with awful sway, To rule mankind, and make the world obey,",
+      "speaker": "Anchises",
+      "reference": "Book VI",
+      "stage": "book-6",
+      "context": "The close of Anchises’s parade of future Romans in Elysium.",
+      "analysis": "Anchises concedes sculpture, oratory and astronomy to the Greeks and claims government for Rome, and the concession is made inside a poem that is itself a Greek form borrowed. Dryden’s ‘awful sway’ is an English king’s phrase, and the triplet that follows, closing on an alexandrine, gives Rome a longer line than anyone else in the poem is allowed.",
+      "themes": [
+        "empire"
+      ],
+      "techniques": [
+        "prophecy",
+        "heroic-couplet"
+      ],
+      "characters": [
+        "anchises"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book VI",
+      "cloze": [
+        "Rome",
+        "obey"
+      ]
+    },
+    {
+      "id": "two-gates",
+      "text": "Two gates the silent house of Sleep adorn; Of polish’d ivory this, that of transparent horn: True visions thro’ transparent horn arise; Thro’ polish’d ivory pass deluding lies.",
+      "reference": "Book VI",
+      "stage": "book-6",
+      "context": "The end of Book VI: Anchises sends Aeneas back to the world.",
+      "analysis": "The poem explains the two gates and then has Anchises send his son out through the wrong one. Readers have argued about it since antiquity, and the question is not decorative: if the parade of Roman heroes belongs among the ‘deluding lies’, the poem has just undercut its own imperial centrepiece, and it does so in four flat, explanatory lines.",
+      "themes": [
+        "fate",
+        "empire"
+      ],
+      "techniques": [
+        "prophecy"
+      ],
+      "characters": [
+        "anchises",
+        "aeneas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book VI",
+      "cloze": [
+        "ivory",
+        "horn"
+      ]
+    },
+    {
+      "id": "hell-shall-supply",
+      "text": "If Jove and Heav’n my just desires deny, Hell shall the pow’r of Heav’n and Jove supply.",
+      "speaker": "Juno",
+      "reference": "Book VII",
+      "stage": "book-7",
+      "context": "Juno, watching the Trojans land in Italy, resolving to raise the Fury Allecto.",
+      "analysis": "Flectere si nequeo superos, Acheronta movebo — the line Freud later set on the title page of The Interpretation of Dreams. Juno knows she cannot alter fate and says so in the very next couplet; what she can do is make it cost, and the second half of the poem is the bill.",
+      "themes": [
+        "revenge",
+        "fate"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "juno"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book VII",
+      "cloze": [
+        "Hell",
+        "supply"
+      ]
+    },
+    {
+      "id": "oxen-lowed",
+      "text": "They view’d the ground of Rome’s litigious hall; (Once oxen low’d, where now the lawyers bawl;)",
+      "reference": "Book VIII",
+      "stage": "book-8",
+      "context": "Evander walking Aeneas over the site of the future Forum.",
+      "analysis": "The parenthesis is Virgil’s own joke, and Dryden sharpens it into satire: the lowing of cattle becomes the bawling of lawyers, and the rhyme makes them the same noise. The whole walk through Pallanteum works this way, a Roman reader seeing marble where the hero sees grass, and the poem lets the reader decide which is the loss.",
+      "themes": [
+        "empire"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "evander",
+        "aeneas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book VIII",
+      "cloze": [
+        "oxen",
+        "lawyers"
+      ]
+    },
+    {
+      "id": "dare-to-be-poor",
+      "text": "Mean as it is, this palace, and this door, Receiv’d Alcides, then a conqueror. Dare to be poor; accept our homely food, Which feasted him, and emulate a god.",
+      "speaker": "Evander",
+      "reference": "Book VIII",
+      "stage": "book-8",
+      "context": "Evander welcoming Aeneas to his hut on the Palatine, where Hercules once lodged.",
+      "analysis": "Aude, hospes, contemnere opes: the Augustan reader lived in a city that had long stopped daring any such thing, and Virgil puts the poem’s ideal of virtue in a house of thatch on the hill where Augustus lived. Evander’s hospitality answers Dido’s in Book I, and this is the guest-friendship the poem chooses to honour.",
+      "themes": [
+        "duty",
+        "empire"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "evander",
+        "aeneas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book VIII",
+      "cloze": [
+        "poor",
+        "homely"
+      ]
+    },
+    {
+      "id": "fame-and-fortune-of-his-race",
+      "text": "Unknown the names, he yet admires the grace, And bears aloft the fame and fortune of his race.",
+      "reference": "Book VIII",
+      "stage": "book-8",
+      "context": "The last lines of Book VIII, as Aeneas lifts the shield Vulcan made for him.",
+      "analysis": "Rerum ignarus imagine gaudet: he does not know what he is looking at. The shield shows Actium and the triumph of Augustus, a history the reader has lived through and the hero cannot, and the couplet lets him shoulder it without understanding it — which is as good a definition of his role as the poem offers.",
+      "themes": [
+        "empire",
+        "fate"
+      ],
+      "techniques": [
+        "ekphrasis"
+      ],
+      "characters": [
+        "aeneas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book VIII",
+      "cloze": [
+        "fame",
+        "race"
+      ]
+    },
+    {
+      "id": "gods-of-our-desire",
+      "text": "Or do the gods inspire This warmth, or make we gods of our desire?",
+      "speaker": "Nisus",
+      "reference": "Book IX",
+      "stage": "book-9",
+      "context": "Nisus proposing the night raid to Euryalus.",
+      "analysis": "The question is the poem’s own: whether heroic impulse is sent by the gods or merely wanted. Nisus answers it himself in the next lines, where what he wants is ‘a memorable name’, and the raid that follows becomes a killing spree before it becomes a tragedy.",
+      "themes": [
+        "fate",
+        "duty"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "nisus-and-euryalus"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book IX",
+      "cloze": [
+        "gods",
+        "desire"
+      ]
+    },
+    {
+      "id": "white-poppy",
+      "text": "His snowy neck reclines upon his breast, Like a fair flow’r by the keen share oppress’d; Like a white poppy sinking on the plain, Whose heavy head is overcharg’d with rain.",
+      "reference": "Book IX",
+      "stage": "book-9",
+      "context": "The death of Euryalus, cut down after Nisus fails to draw the enemy off him.",
+      "analysis": "Two similes for one death: the poppy heavy with rain comes from a Trojan’s death in the Iliad, the flower cut by the plough from Catullus. Virgil makes the boy’s neck droop like a garden, and Dryden’s ‘overcharg’d’ adds the pathos of something simply too full to stand up.",
+      "themes": [
+        "love"
+      ],
+      "techniques": [
+        "epic-simile"
+      ],
+      "characters": [
+        "nisus-and-euryalus"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book IX",
+      "cloze": [
+        "poppy",
+        "rain"
+      ]
+    },
+    {
+      "id": "o-happy-friends",
+      "text": "O happy friends! for, if my verse can give Immortal life, your fame shall ever live, Fix’d as the Capitol’s foundation lies, And spread, where’er the Roman eagle flies!",
+      "reference": "Book IX",
+      "stage": "book-9",
+      "context": "The narrator interrupting the battle to address the two dead friends directly.",
+      "analysis": "Virgil breaks his own reticence and speaks in the first person in the middle of a battle. The promise is conditional — ‘if my verse can give’ — and its guarantee is the Capitol and the Roman eagle: the poem measures its own survival by the empire’s, a bet that has so far paid out the other way round.",
+      "themes": [
+        "empire"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "nisus-and-euryalus"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book IX",
+      "cloze": [
+        "verse",
+        "eagle"
+      ]
+    },
+    {
+      "id": "each-to-his-proper-fortune",
+      "text": "Each to his proper fortune stand or fall; Equal and unconcern’d I look on all. Rutulians, Trojans, are the same to me; And both shall draw the lots their fates decree.",
+      "speaker": "Jupiter",
+      "reference": "Book X",
+      "stage": "book-10",
+      "context": "Jupiter closing the council of the gods with a declaration of neutrality.",
+      "analysis": "Rex Iuppiter omnibus idem: the poem’s theology in two couplets, and it is a refusal. The god who promised Venus empire without end now declines to lift a finger for it and leaves the outcome to men’s deeds; the gap between the promise and the neutrality is where the poem lives.",
+      "themes": [
+        "fate"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [],
+      "source": "Standard Ebooks text of Dryden’s translation, Book X",
+      "cloze": [
+        "fortune",
+        "lots"
+      ]
+    },
+    {
+      "id": "my-own-crime",
+      "text": "’Twas not his fault, my Pallas fell so young, But my own crime, for having liv’d too long.",
+      "speaker": "Evander",
+      "reference": "Book XI",
+      "stage": "book-11",
+      "context": "Evander over the body of Pallas, carried home on a bier of twigs.",
+      "analysis": "The father blames neither the ally who lost his son nor the enemy who killed him, but his own survival. It is the poem’s recurring accusation, that living on is a fault — Aeneas felt it at Troy — and the speech ends by asking Aeneas for Turnus’s death as the debt owed to a father.",
+      "themes": [
+        "duty",
+        "revenge"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "evander",
+        "pallas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book XI",
+      "cloze": [
+        "fault",
+        "crime"
+      ]
+    },
+    {
+      "id": "a-father-once",
+      "text": "Yet think, O think, if mercy may be shown⁠— Thou hadst a father once, and hast a son⁠— Pity my sire, now sinking to the grave; And for Anchises’ sake old Daunus save!",
+      "speaker": "Turnus",
+      "reference": "Book XII",
+      "stage": "book-12",
+      "context": "Turnus, brought down by Aeneas’s spear, begging for his life.",
+      "analysis": "The plea is aimed exactly: it invokes the father Aeneas carried and the son he led by the hand, the two images of the poem’s pietas. It nearly works — the narrator says his hand was stayed and his heart melting — and it is the belt, not the argument, that ends the pause.",
+      "themes": [
+        "duty",
+        "revenge"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "turnus",
+        "aeneas",
+        "anchises"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book XII",
+      "cloze": [
+        "mercy",
+        "father"
+      ]
+    },
+    {
+      "id": "pallas-gives-this-blow",
+      "text": "Traitor, dost thou, dost thou to grace pretend, Clad, as thou art, in trophies of my friend? To his sad soul a grateful off’ring go! ’Tis Pallas, Pallas gives this deadly blow.",
+      "speaker": "Aeneas",
+      "reference": "Book XII",
+      "stage": "book-12",
+      "context": "Aeneas’s last words, after seeing Pallas’s belt on Turnus’s shoulder.",
+      "analysis": "He kills in another man’s name, twice repeated, and calls the death an offering: the poem’s religious vocabulary is used for an execution. Whether this is pietas fulfilled or fury triumphant is the question the ending will not settle, and Dryden’s parenthesis about the flames in his eyes does not soften it.",
+      "themes": [
+        "revenge",
+        "duty"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "aeneas",
+        "turnus",
+        "pallas"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book XII",
+      "cloze": [
+        "Pallas",
+        "deadly"
+      ]
+    },
+    {
+      "id": "the-disdainful-soul",
+      "text": "He rais’d his arm aloft, and, at the word, Deep in his bosom drove the shining sword. The streaming blood distain’d his arms around; And the disdainful soul came rushing through the wound.",
+      "reference": "Book XII",
+      "stage": "book-12",
+      "context": "The last four lines of the poem.",
+      "analysis": "There is no epilogue: no marriage, no city, no Rome. The Latin ends with Turnus’s life fleeing indignant to the shades, and Dryden’s ‘disdainful’ keeps the dead man’s point of view in the final word, so that the poem closes on the loser’s resentment rather than the victor’s prize. Dryden had used the same couplet for the death of Mezentius in Book X.",
+      "themes": [
+        "revenge",
+        "empire"
+      ],
+      "techniques": [
+        "heroic-couplet"
+      ],
+      "characters": [
+        "aeneas",
+        "turnus"
+      ],
+      "source": "Standard Ebooks text of Dryden’s translation, Book XII",
+      "cloze": [
+        "disdainful",
+        "wound"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": -70,
+      "label": "Virgil born near Mantua",
+      "detail": "Publius Vergilius Maro, at Andes in the countryside of Cisalpine Gaul, on 15 October by the ancient biographers’ reckoning.",
+      "kind": "author"
+    },
+    {
+      "year": -44,
+      "label": "Julius Caesar assassinated",
+      "detail": "The murder that opened more than a decade of civil war. Caesar’s adopted heir Octavian was eighteen.",
+      "kind": "context"
+    },
+    {
+      "year": -42,
+      "label": "Philippi",
+      "detail": "Brutus and Cassius defeated; the confiscations of land to settle veterans that followed reached the country round Mantua and shadow the Eclogues.",
+      "kind": "context"
+    },
+    {
+      "year": -31,
+      "label": "Actium",
+      "detail": "Octavian’s fleet defeats Antony and Cleopatra. The battle is the centrepiece of Aeneas’s shield in Book VIII.",
+      "kind": "context"
+    },
+    {
+      "year": -29,
+      "label": "The Georgics finished; work on the Aeneid begins (c.)",
+      "detail": "The ancient life of Virgil has him reading the Georgics to Octavian on his return from the East, and turning at once to the epic that occupied his last decade.",
+      "kind": "work"
+    },
+    {
+      "year": -27,
+      "label": "Octavian takes the name Augustus",
+      "detail": "The settlement that made him princeps. Jupiter’s prophecy in Book I and the parade in Book VI both culminate in him.",
+      "kind": "context"
+    },
+    {
+      "year": -23,
+      "label": "Death of Marcellus",
+      "detail": "Augustus’s nephew and presumed heir, dead at nineteen. His lament closes the parade of heroes in Book VI, which Virgil is said to have read to the boy’s mother Octavia.",
+      "kind": "context"
+    },
+    {
+      "year": -19,
+      "label": "Virgil dies at Brundisium",
+      "detail": "Returning from Greece, where he had meant to spend three years revising. He asked for the poem to be burnt; Augustus overruled him and had Varius and Tucca see it into circulation.",
+      "kind": "work"
+    },
+    {
+      "year": 1513,
+      "label": "Gavin Douglas completes the Eneados",
+      "detail": "The first complete translation into any form of English, in Middle Scots, with a thirteenth book added from Maffeo Vegio.",
+      "kind": "reception"
+    },
+    {
+      "year": 1689,
+      "label": "Purcell’s Dido and Aeneas performed by this year",
+      "detail": "The earliest known performance was at a girls’ school in Chelsea, to Nahum Tate’s libretto. Book IV became an English tragedy of its own.",
+      "kind": "reception"
+    },
+    {
+      "year": 1697,
+      "label": "Dryden’s Works of Virgil published",
+      "detail": "By subscription through Jacob Tonson, with the Aeneid in heroic couplets. Dryden, out of office since the Revolution of 1688, made it the largest undertaking of his last years.",
+      "kind": "work"
+    },
+    {
+      "year": 1863,
+      "label": "Berlioz’s Les Troyens reaches the stage",
+      "detail": "Only the Carthage half was performed in Paris in his lifetime. The whole opera, from the horse to Dido’s pyre, had to wait for the twentieth century.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Troy",
+      "lat": 39.9575,
+      "lon": 26.2389,
+      "note": "Hisarlik in north-west Turkey: the city whose fall Aeneas narrates in Book II, and whose gods he carries."
+    },
+    {
+      "name": "Carthage",
+      "lat": 36.8528,
+      "lon": 10.3233,
+      "note": "Dido’s city on the Gulf of Tunis, seen half-built in Book I and cursed in Book IV to become Rome’s enemy."
+    },
+    {
+      "name": "Buthrotum",
+      "lat": 39.7461,
+      "lon": 20.0208,
+      "note": "Butrint in Albania, where Helenus and Andromache have rebuilt Troy in miniature — a home Aeneas is warned not to copy."
+    },
+    {
+      "name": "Drepanum and Mount Eryx",
+      "lat": 38.0372,
+      "lon": 12.5864,
+      "note": "Trapani and Erice in western Sicily, where Anchises dies in Book III and the funeral games are held in Book V."
+    },
+    {
+      "name": "Cumae",
+      "lat": 40.8486,
+      "lon": 14.0553,
+      "note": "The Sibyl’s cave and the way down to the underworld, north of Naples. The Greek colony was real and the cave can still be walked."
+    },
+    {
+      "name": "Mouth of the Tiber",
+      "lat": 41.7558,
+      "lon": 12.2917,
+      "note": "Near Ostia: where the Trojans land in Book VII, eat their tables, and know they have arrived."
+    },
+    {
+      "name": "The Palatine, Rome",
+      "lat": 41.8892,
+      "lon": 12.4864,
+      "note": "Evander’s village of huts in Book VIII, on the hill where Augustus would later live."
+    },
+    {
+      "name": "Mantua",
+      "lat": 45.1564,
+      "lon": 10.7914,
+      "note": "Virgil’s birthplace, near which the confiscations after Philippi fell. Brindisi, where he died on the way home from Greece, is at the other end of Italy."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "The Augustan poem",
+      "summary": "The oldest reading takes the poem at Jupiter’s word: a celebration of Rome and of Augustus, with the prophecy in Book I, the parade in Book VI and the shield in Book VIII as its load-bearing structure, and Aeneas as the model of the self-denying public man.",
+      "counter": "It has to explain why the poem ends with a killing rather than a founding, and why the hero leaves the underworld by the gate of false dreams."
+    },
+    {
+      "position": "The two voices",
+      "summary": "Since the mid-twentieth century, and a well-known essay by Adam Parry on the poem’s two voices, critics have heard a private note of loss beneath the public music of empire: Dido, Palinurus, Pallas and Turnus are the cost, and the poem counts it.",
+      "counter": "It can turn every moment of pathos into dissent, when Virgil’s first readers may have found grief and glory perfectly compatible."
+    },
+    {
+      "position": "Dryden’s Aeneid as an English political poem",
+      "summary": "Dryden translated after losing office under William III, and his Virgil has been read as a poem about usurpation, exile and a rightful line, addressed to a country that had just changed kings.",
+      "counter": "The translation was a commercial venture dedicated to subscribers of both parties, and much of its heightened royalism is simply the idiom of the couplet."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "Is the killing of Turnus the fulfilment of Aeneas’s pietas or its failure?",
+      "focus": "The ending, and what pietas has come to mean by Book XII",
+      "plan": [
+        "Define pietas from the poem’s own evidence: Anchises on his shoulders in Book II, the games for his father in Book V, the ‘good Aeneas’ who orders a tomb for Misenus in Book VI.",
+        "Set out Anchises’s rule for Rome in Book VI — to tame the proud and free the subjected — and note that Turnus at the end is a proud man who has submitted.",
+        "Use Evander’s speech over Pallas in Book XI: the killing is asked for by a father, so it can be read as a debt of pietas to the living.",
+        "Weigh the narrator’s words at the moment of the blow, ‘rous’d anew to wrath’, against the hesitation just before: is Aeneas acting or reacting?",
+        "Decide whether the poem wants the two readings held together, and whether its refusal of an epilogue is itself the argument."
+      ]
+    },
+    {
+      "question": "How far does the Aeneid take Dido’s side?",
+      "focus": "Book IV, the narrator, and the meeting in Book VI",
+      "plan": [
+        "Begin in Book I, where Dido’s welcome is the poem’s model of hospitality and her rising city is the model of what Aeneas is trying to build.",
+        "Examine the two divine plots against her, Venus’s in Book I and Juno’s in Book IV, and ask whether a woman managed by two goddesses can be judged for what follows.",
+        "Read the narrator’s ‘specious name’ closely, with Dryden’s hardening of the Latin, and set it against the speeches the poem gives her.",
+        "Take her curse seriously as history: the avenger is Hannibal, and every Roman reader knew it.",
+        "End in the underworld, where she says nothing, and decide what her silence does to Aeneas’s defence."
+      ]
+    },
+    {
+      "question": "What does the poem gain, and lose, by telling its hero the ending?",
+      "focus": "Prophecy, fate and the replacement of suspense by cost",
+      "plan": [
+        "List the prophecies in order, from Jupiter in Book I to the Tiber in Book VIII, and note what each tells Aeneas and what each leaves out.",
+        "Show that the reader always knows more than the hero: the shield in Book VIII, admired but not understood, is the clearest case.",
+        "Argue that suspense is replaced by cost — the question is never whether Rome will happen but who will pay for it.",
+        "Use the Harpy’s curse in Book III and its harmless fulfilment in Book VII to show how prophecy frightens in advance and disappoints in the event.",
+        "Weigh Jupiter’s neutrality in Book X against his promise in Book I, and decide whether the poem believes its own schedule."
+      ]
+    },
+    {
+      "question": "How does Dryden’s couplet change Virgil’s poem?",
+      "focus": "Translation as interpretation",
+      "plan": [
+        "Start with what the couplet does mechanically: it closes at the rhyme, so a Latin sentence that runs on becomes a series of balanced judgements.",
+        "Take a passage where Dryden decides for Virgil: ‘veil the crime’ in Book IV, or ‘An hour will come’ in Book I, where a Latin ‘perhaps’ becomes a promise.",
+        "Consider the triplets and alexandrines, where Dryden gives himself extra room, and ask why they fall where they do: Fame’s wings, Rome’s ‘awful sway’, the epitaph for Palinurus.",
+        "Set the translation in 1697 — a poet out of office after the Revolution, rendering a poem about exile and a rightful line, for subscribers on both sides.",
+        "Conclude on whether Dryden’s sharpening of Virgil’s ambivalence is a loss, or the form in which English readers first felt it."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Aeneas never chooses Rome; he is told about it. Is a hero who obeys still a hero, and does the poem think so?",
+    "Dido calls the cave a marriage and the narrator calls that a specious name. Whose account does the poem finally endorse?",
+    "Anchises sends Aeneas back to the world through the gate of false dreams. Is this a warning, a joke, or an accident of an unfinished poem?",
+    "The poem promises Rome and ends on a corpse. Why does Virgil stop where he does?",
+    "Dryden makes Aeneas’s ‘perhaps’ into a promise and Dido’s fault into a crime. Where else does the couplet decide what the Latin left open?",
+    "Nisus and Euryalus kill sleeping men and are mourned as heroes. Does the poem see any difference between their raid and Turnus’s war?"
+  ],
+  "videos": [],
+  "related": [
+    {
+      "href": "/books/the-iliad/",
+      "why": "The war poem Virgil’s second half answers: Turnus is his Hector and his Achilles, and the death of Pallas is Patroclus over again."
+    },
+    {
+      "href": "/books/the-odyssey/",
+      "why": "The wandering poem behind Books I to VI, down to the storm, the hospitable queen, the narrated past and the visit to the dead."
+    },
+    {
+      "href": "/books/paradise-lost/",
+      "why": "Milton took the invocation, the epic simile, the councils and the visit to the underworld from Virgil, and set out to beat him at all of them."
+    },
+    {
+      "href": "/books/antony-and-cleopatra/",
+      "why": "The other Roman story of a commander undone in Africa by a queen; Actium, engraved on Aeneas’s shield, is the battle Shakespeare stages."
+    },
+    {
+      "href": "/books/the-rape-of-lucrece/",
+      "why": "Lucrece studies a painting of the fall of Troy and finds Sinon in it — Shakespeare’s own version of Aeneas before the mute walls of Carthage."
+    }
+  ]
+}

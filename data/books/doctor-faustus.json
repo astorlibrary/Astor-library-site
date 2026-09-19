@@ -1,0 +1,1416 @@
+{
+  "slug": "doctor-faustus",
+  "title": "Doctor Faustus",
+  "author": "Christopher Marlowe",
+  "href": "/books/doctor-faustus/",
+  "buyUrl": "https://mybook.to/B3XgneK",
+  "form": "play",
+  "genre": "Tragedy",
+  "period": "Renaissance & Early Modern",
+  "written": "c. 1592–93",
+  "firstPublished": 1604,
+  "setting": "Wittenberg — the play's 'Wertenberg' — with excursions through the air to Rome, the Emperor's court and the Duke of Vanholt's",
+  "readingTime": 80,
+  "difficulty": 3,
+  "lengthNote": "The 1604 text runs to around 1,500 lines; the 1616 text adds nearly seven hundred more",
+  "openingLine": "Not marching now in fields of Thrasymene, Where Mars did mate the Carthaginians;",
+  "summary": "A Wittenberg scholar who has exhausted logic, medicine, law and divinity signs his soul to Lucifer in his own blood for twenty-four years of a devil's service. He asks the devil what hell is, is told plainly, and does not believe it. The years pass in tricks and sightseeing, and the play's last scene puts a clock on stage and makes an audience listen to one hour go by. It is a tragedy about a man who could always have stopped, told by a devil who keeps saying so.",
+  "referenceStyle": "scene — the 1604 text is divided into sixteen scenes without acts, and carries no line numbers",
+  "sourceText": {
+    "label": "Standard Ebooks text of Doctor Faustus (the 1604 text, edited by Havelock Ellis)",
+    "note": "The text is the 1604 quarto with a few readings from 1616, divided into scenes only, following Ward and Bullen. Editions based on the 1616 text, or which impose five acts, will place these passages differently."
+  },
+  "atAGlance": [
+    {
+      "label": "Written",
+      "value": "c. 1592–93",
+      "note": "The English Faust Book, its source, was printed in 1592; Marlowe was dead by the end of May 1593."
+    },
+    {
+      "label": "First printed",
+      "value": "1604",
+      "note": "The short A-text. A much longer B-text followed in 1616, with new scenes at Rome and the Emperor's court that are probably not Marlowe's."
+    },
+    {
+      "label": "Chief source",
+      "value": "The English Faust Book",
+      "note": "A translation of the German Historia von D. Johann Fausten of 1587, which supplied the pact, the travels and the last night."
+    },
+    {
+      "label": "Shape",
+      "value": "Sixteen scenes and a Chorus",
+      "note": "The Chorus opens and closes the play; the sixteen scenes are Ward's division, and no act breaks survive from the theatre."
+    }
+  ],
+  "structure": [
+    {
+      "id": "choice",
+      "label": "Scenes 1–2",
+      "title": "Learning declared too small",
+      "summary": "The Chorus disowns war and love as subjects and offers instead a scholar in his study. Faustus takes the four faculties one by one and dismisses each for failing to make him more than a man, misreads two verses of scripture into a sentence of death, and sends for the magicians Valdes and Cornelius. Two scholars ask Wagner where his master is and get logic-chopping for an answer.",
+      "scenes": [
+        {
+          "ref": "Prologue",
+          "title": "The Chorus",
+          "summary": "Faustus's birth, his rise at Wittenberg and his fall into necromancy, told before he has spoken."
+        },
+        {
+          "ref": "Scene 1",
+          "title": "The study",
+          "summary": "Faustus rejects Aristotle, Galen, Justinian and Jerome's Bible; the Angels make their first appearance; Valdes and Cornelius promise him the world."
+        },
+        {
+          "ref": "Scene 2",
+          "title": "Wagner and the scholars",
+          "summary": "Wagner parodies his master's syllogisms; the scholars go to tell the Rector."
+        }
+      ]
+    },
+    {
+      "id": "bargain",
+      "label": "Scenes 3–5",
+      "title": "A warning becomes a contract",
+      "summary": "Faustus conjures at night and finds that his Latin did not compel anybody: the devil came because he heard a man abjure the Trinity. Mephistopheles answers every question about hell truthfully and Faustus takes none of it seriously. Wagner hires the Clown with a parody of the same bargain, and in Scene 5 the deed is written in blood that congeals, under a warning on Faustus's own arm that he reads and ignores.",
+      "scenes": [
+        {
+          "ref": "Scene 3",
+          "title": "The conjuring",
+          "summary": "Mephistopheles appears, is sent back to change into a friar, and explains that he came of his own accord."
+        },
+        {
+          "ref": "Scene 4",
+          "title": "Wagner and the Clown",
+          "summary": "A hungry Clown is offered service and two devils; the pact replayed for a shoulder of mutton."
+        },
+        {
+          "ref": "Scene 5",
+          "title": "The deed of gift",
+          "summary": "Blood, a chafer of coals, 'Homo, fuge', a devil dressed as a wife, and three books instead of the world."
+        }
+      ]
+    },
+    {
+      "id": "diversion",
+      "label": "Scene 6",
+      "title": "Questions become a show",
+      "summary": "Faustus looks at the sky and repents, then argues himself out of it. He asks Mephistopheles the questions a schoolboy could answer and gets answers; he asks who made the world and is refused. When he calls on Christ, Lucifer himself arrives, and the last serious question in the play is drowned in a pageant of the Seven Deadly Sins, which Faustus finds delicious.",
+      "scenes": [
+        {
+          "ref": "Scene 6",
+          "title": "Astronomy and the Sins",
+          "summary": "Repentance, astronomy, the forbidden question, Lucifer's visit and the Seven Deadly Sins in their proper shapes."
+        }
+      ]
+    },
+    {
+      "id": "travels",
+      "label": "Scenes 7–12",
+      "title": "Empire shrinks into entertainment",
+      "summary": "The Chorus sends Faustus round Europe in a dragon-drawn chariot. What he does with omnipotence is snatch the Pope's dinner, box his ears, and let off fireworks among friars. Robin the ostler steals a conjuring book and is turned into an ape for his trouble. At the Emperor's court Faustus raises the shadow of Alexander and gives a sceptical knight horns; he sells a horse made of hay, lets a man pull his leg off, and fetches January grapes for a pregnant duchess.",
+      "scenes": [
+        {
+          "ref": "Scene 7",
+          "title": "Rome",
+          "summary": "Invisible at the Pope's feast; bell, book and candle; the friars beaten."
+        },
+        {
+          "ref": "Scene 8",
+          "title": "The stolen book",
+          "summary": "The Chorus reports Faustus's fame; Robin plans to conjure the parish maidens naked."
+        },
+        {
+          "ref": "Scene 9",
+          "title": "The goblet",
+          "summary": "Robin and Ralph summon Mephistopheles from Constantinople over a stolen cup, and are turned into an ape and a dog."
+        },
+        {
+          "ref": "Scene 10",
+          "title": "The Emperor's court",
+          "summary": "Spirits in the shapes of Alexander and his paramour; a knight sent out with horns."
+        },
+        {
+          "ref": "Scene 11",
+          "title": "The horse-courser",
+          "summary": "A horse that vanishes in water; Faustus, alone, remembers the thief on the cross and falls asleep."
+        },
+        {
+          "ref": "Scene 12",
+          "title": "Vanholt",
+          "summary": "Grapes in January for the Duchess, explained with a lecture on the hemispheres."
+        }
+      ]
+    },
+    {
+      "id": "last-hour",
+      "label": "Scenes 13–16",
+      "title": "Time becomes the antagonist",
+      "summary": "Wagner notices that his master has made his will and is still carousing. Faustus shows the scholars Helen of Troy, is begged by an Old Man to repent, nearly does, and asks for Helen as his paramour instead to drown the thought. The Old Man goes to heaven under the devils' noses. In the last scene the clock strikes eleven, the half-hour and twelve, and Faustus bargains with the spheres, with the earth, with the clouds and with God for a shorter damnation before the devils come.",
+      "scenes": [
+        {
+          "ref": "Scene 13",
+          "title": "Wagner's suspicion",
+          "summary": "Faustus has given Wagner all his goods and is feasting with the students."
+        },
+        {
+          "ref": "Scene 14",
+          "title": "Helen and the Old Man",
+          "summary": "Helen passes over the stage; the Old Man's appeal; the pact renewed in blood; the kiss."
+        },
+        {
+          "ref": "Scene 15",
+          "title": "The Old Man's exit",
+          "summary": "Devils try the Old Man's faith and lose."
+        },
+        {
+          "ref": "Scene 16",
+          "title": "The last hour",
+          "summary": "Faustus confesses to the scholars, and the clock strikes while he speaks."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "faustus",
+      "name": "Faustus",
+      "role": "Doctor of divinity at Wittenberg, then conjuror",
+      "summary": "The cleverest man in Germany, and the worst reader in the play: he finds a death sentence in scripture by stopping halfway through the verse, and finds a wife, a fable and a trifle in hell after being told exactly what it is. His wants are enormous in Scene 1 and by Scene 12 he is fetching grapes. What keeps him tragic is that every time the play offers him repentance he feels it, names it, and reaches for a distraction.",
+      "clue": "He signs a document in his own blood, reads a warning written on his arm, and asks for a kiss to make him immortal with less than a year to run.",
+      "firstAppearance": "Scene 1",
+      "traits": [
+        "brilliant",
+        "impatient",
+        "unable to believe what he is told"
+      ],
+      "relationships": [
+        {
+          "to": "mephistopheles",
+          "label": "master and prisoner of",
+          "kind": "service"
+        },
+        {
+          "to": "lucifer",
+          "label": "sells his soul to",
+          "kind": "enemy",
+          "stages": [
+            "bargain",
+            "diversion",
+            "last-hour"
+          ]
+        },
+        {
+          "to": "old-man",
+          "label": "briefly persuaded by, then betrays",
+          "kind": "mentor",
+          "stages": [
+            "last-hour"
+          ]
+        },
+        {
+          "to": "helen",
+          "label": "takes as paramour",
+          "kind": "love",
+          "stages": [
+            "last-hour"
+          ]
+        },
+        {
+          "to": "wagner",
+          "label": "master of, and heir to nothing",
+          "kind": "service"
+        }
+      ]
+    },
+    {
+      "id": "mephistopheles",
+      "name": "Mephistopheles",
+      "role": "A devil, servant to Lucifer, assigned to Faustus",
+      "summary": "The most honest speaker in the play. He tells Faustus he did not come when called, that hell is wherever he is, and that the pact is a trap, and he tells him before the signature. His single aside — what will he not do to obtain this soul — is the only moment he sounds like the tempter Faustus takes him for. He is also, on the evidence of Scene 3, in pain the whole time.",
+      "clue": "Sent back to change his shape because he is too ugly, he returns as a Franciscan friar and explains, unasked, that he is in hell at that moment.",
+      "firstAppearance": "Scene 3",
+      "traits": [
+        "truthful",
+        "suffering",
+        "obedient to somebody else"
+      ],
+      "relationships": [
+        {
+          "to": "faustus",
+          "label": "serves, and collects",
+          "kind": "service"
+        },
+        {
+          "to": "lucifer",
+          "label": "servant to",
+          "kind": "service"
+        },
+        {
+          "to": "robin",
+          "label": "summoned by, and turns into an ape",
+          "kind": "enemy",
+          "stages": [
+            "travels"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lucifer",
+      "name": "Lucifer",
+      "role": "Prince of devils",
+      "summary": "He appears only when Faustus calls on Christ, which tells you what he is for. His method is never argument: he arrives with Belzebub, reminds Faustus of the terms, and puts on a show. The Seven Deadly Sins are his answer to the question of who made the world, and Faustus accepts the exchange.",
+      "clue": "He walks in the moment his customer names the Saviour, brings a companion-prince and a pageant of seven, and hands over a book about changing shape.",
+      "firstAppearance": "Scene 6",
+      "traits": [
+        "punctual",
+        "theatrical"
+      ],
+      "relationships": [
+        {
+          "to": "faustus",
+          "label": "buys the soul of",
+          "kind": "enemy",
+          "stages": [
+            "bargain",
+            "diversion",
+            "last-hour"
+          ]
+        },
+        {
+          "to": "mephistopheles",
+          "label": "master of",
+          "kind": "service"
+        }
+      ]
+    },
+    {
+      "id": "good-angel",
+      "name": "The Good Angel",
+      "role": "The voice of return",
+      "summary": "Never wrong and never persuasive. Each time he appears he says the same thing in fewer words — repent, and God will pity thee — and each time he is answered by the Evil Angel with something more specific. He is last heard in Scene 6, and the Old Man takes over his part in human form.",
+      "clue": "He has the same argument four times, always in the company of an opposite, and loses every exchange on stage while being right.",
+      "firstAppearance": "Scene 1",
+      "traits": [
+        "brief",
+        "correct",
+        "outtalked"
+      ],
+      "relationships": [
+        {
+          "to": "evil-angel",
+          "label": "paired against",
+          "kind": "doubling"
+        },
+        {
+          "to": "faustus",
+          "label": "urges to repent",
+          "kind": "mentor",
+          "stages": [
+            "choice",
+            "bargain",
+            "diversion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evil-angel",
+      "name": "The Evil Angel",
+      "role": "The voice that keeps him going",
+      "summary": "He wins by naming things: honour and wealth against 'heavenly things', and in Scene 6 the flat lie that Faustus is a spirit whom God cannot pity. His last line — that if Faustus repents the devils will tear him in pieces — turns fear into the reason not to be saved, which is the play's definition of despair.",
+      "clue": "He tells a man he is no longer human and therefore cannot be forgiven, and the man believes him within two lines.",
+      "firstAppearance": "Scene 1",
+      "traits": [
+        "specific",
+        "frightening"
+      ],
+      "relationships": [
+        {
+          "to": "good-angel",
+          "label": "paired against",
+          "kind": "doubling"
+        },
+        {
+          "to": "faustus",
+          "label": "works on the fears of",
+          "kind": "enemy",
+          "stages": [
+            "choice",
+            "bargain",
+            "diversion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wagner",
+      "name": "Wagner",
+      "role": "Faustus's servant",
+      "summary": "He talks like his master, in syllogisms and Latin tags, and hires the Clown with a devil's bargain of his own, which is how the play tells us what the pact looks like from outside. In Scene 13 he has been given all Faustus's goods and cannot square a man making his will with a man still at supper, which is the play's own puzzle put in a servant's mouth.",
+      "clue": "He inherits everything his master owns and still cannot tell whether the master expects to die.",
+      "firstAppearance": "Scene 1",
+      "traits": [
+        "pedantic",
+        "imitative"
+      ],
+      "relationships": [
+        {
+          "to": "faustus",
+          "label": "servant and heir of",
+          "kind": "service"
+        },
+        {
+          "to": "robin",
+          "label": "hires with threats of devils",
+          "kind": "service",
+          "stages": [
+            "bargain"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "old-man",
+      "name": "The Old Man",
+      "role": "A stranger who comes to Faustus's study near the end",
+      "summary": "The play's proof that faith is possible. He offers Faustus the vial of grace he can see hanging over his head, is nearly successful, and is handed to the devils for it. In Scene 15 he faces them alone and they cannot touch him, which is the one demonstration in the play that Mephistopheles was telling the truth about the limits of his power.",
+      "clue": "He sees an angel with a vial above another man's head, is sentenced to torment for saying so, and walks off to God while the devils watch.",
+      "firstAppearance": "Scene 14",
+      "traits": [
+        "faithful",
+        "untouchable"
+      ],
+      "relationships": [
+        {
+          "to": "faustus",
+          "label": "pleads with, and is betrayed by",
+          "kind": "mentor",
+          "stages": [
+            "last-hour"
+          ]
+        },
+        {
+          "to": "mephistopheles",
+          "label": "beyond the reach of",
+          "kind": "enemy",
+          "stages": [
+            "last-hour"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "helen",
+      "name": "Helen of Troy",
+      "role": "A spirit in the shape of Helen",
+      "summary": "She never speaks. She passes over the stage once for the scholars and once for Faustus, and the most famous lines in the play are spoken to a devil in a borrowed face. Faustus asks her to make him immortal, and the text has already told us, in the deed of gift, that he is a spirit in form and substance himself.",
+      "clue": "Two lines of stage direction and not one word of her own, yet she receives the play's most quoted speech.",
+      "firstAppearance": "Scene 14",
+      "traits": [
+        "silent",
+        "borrowed"
+      ],
+      "relationships": [
+        {
+          "to": "faustus",
+          "label": "conjured for, and kissed by",
+          "kind": "love",
+          "stages": [
+            "last-hour"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "robin",
+      "name": "Robin",
+      "role": "An ostler who steals a conjuring book",
+      "summary": "He cannot read, steals the book anyway, and wants the same things Faustus wanted in a smaller room: women, free wine, revenge on a vintner. The play lets him summon Mephistopheles from Constantinople with gibberish, which retrospectively makes Faustus's Latin in Scene 3 look no more necessary than the devil said it was.",
+      "clue": "He conjures a devil from Constantinople with nonsense words to keep a stolen goblet, and is delighted to be turned into an ape.",
+      "firstAppearance": "Scene 8",
+      "traits": [
+        "illiterate",
+        "cheerful"
+      ],
+      "relationships": [
+        {
+          "to": "mephistopheles",
+          "label": "summons by accident",
+          "kind": "enemy",
+          "stages": [
+            "travels"
+          ]
+        },
+        {
+          "to": "wagner",
+          "label": "servant of, as the Clown",
+          "kind": "service",
+          "stages": [
+            "bargain"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chorus",
+      "name": "The Chorus",
+      "role": "A single speaker who opens and closes the play",
+      "summary": "He apologises for the smallness of the subject — no wars, no courts of kings, only a man in a study — and then compares that man to Icarus. At the end he cuts the branch and burns the laurel, and offers the audience a moral so narrow that four hundred years of readers have declined to accept it as the play's last word.",
+      "clue": "He begins by listing the subjects the play will not be about, and ends by burning a laurel bough.",
+      "firstAppearance": "Prologue",
+      "traits": [
+        "formal",
+        "cautionary"
+      ],
+      "relationships": [
+        {
+          "to": "faustus",
+          "label": "frames the story of",
+          "kind": "doubling",
+          "stages": [
+            "choice",
+            "travels",
+            "last-hour"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "knowledge",
+      "name": "Knowledge and its limits",
+      "summary": "Faustus does not want to know things; he wants knowing to make him something else. The opening soliloquy rejects each discipline for failing to confer immortality or empire, and once he has the devil he asks questions Wagner could answer, then the one question that matters, and is refused. The only new knowledge the pact delivers is what Mephistopheles says in Scene 3, and Faustus declines it.",
+      "development": "Scene 1 dismisses the four faculties; Scene 6 reduces omniscience to a lesson on the spheres; in Scene 16 the last words are a promise to burn the books."
+    },
+    {
+      "id": "ambition",
+      "name": "Ambition",
+      "summary": "The wants in Scene 1 are magnificent and incompatible: gold from India, Germany walled in brass, the Prince of Parma driven out, silk for the students. None of them is ever attempted. What the play shows instead is the desire itself, which shrinks as fast as it is satisfied, until the man who would be emperor of the world is playing tricks on a horse-dealer.",
+      "development": "Empire in Scenes 1 and 3, the Pope's dinner in Scene 7, horns for a knight in Scene 10, grapes in Scene 12."
+    },
+    {
+      "id": "despair",
+      "name": "Despair and repentance",
+      "summary": "Despair in this play is a doctrine, not a mood: the settled belief that one's sin is beyond forgiveness, which the Reformation counted as itself a sin. Faustus repents in Scene 6 and again in Scene 14, and each time the word 'damned' is put in his ear before the act is finished. The Old Man is on stage to show that the door is open; the Evil Angel is there to say it will hurt to go through it.",
+      "development": "Scene 5 opens with the word; Scene 6 sets 'never too late' against 'too late'; in Scene 16 he asks for a shorter hell rather than for mercy."
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "summary": "Twenty-four years are agreed in Scene 3 and spent by Scene 11, with nothing on stage to mark their passing but a Chorus. Then the play slows down to the speed of a clock. The last soliloquy is timed by three chimes, and its pleas — for a year, a month, a week, a day, an hour — are a man bargaining down the same span he sold so cheaply.",
+      "development": "Time is the price in Scene 5, a 'restless course' in Scene 11, and the enemy on stage in Scene 16."
+    },
+    {
+      "id": "hell",
+      "name": "Hell as a place and a condition",
+      "summary": "Mephistopheles gives two definitions and Faustus disputes both. Hell is where the damned are, without limits or a single place; and hell is the memory of heaven in a creature deprived of it. The play's own hell arrives on cue at midnight with devils and thunder, but it has been present since Scene 3 in the form of a friar who says he is in it.",
+      "development": "Defined in Scenes 3 and 5, called a fable in Scene 5, and made literal by the stage direction that ends Scene 16."
+    },
+    {
+      "id": "spectacle",
+      "name": "Spectacle as distraction",
+      "summary": "Every crisis of conscience in the play is met with a show: devils dancing with crowns after the signature, the Seven Deadly Sins after the forbidden question, Helen after the Old Man. Marlowe writes the entertainments so that an audience enjoys them too, which makes the theatre complicit in the method Lucifer uses.",
+      "development": "A dance in Scene 5, a pageant in Scene 6, a dumb-show in Scene 10, a woman who does not speak in Scene 14."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "soliloquy",
+      "name": "Soliloquy",
+      "definition": "A character alone on stage, thinking aloud to the audience.",
+      "inThisBook": "Faustus addresses himself by name throughout — 'Settle thy studies, Faustus' — so that his soliloquies are dialogues with a second self, and the Angels are that dialogue given bodies."
+    },
+    {
+      "id": "morality-play",
+      "name": "Morality-play machinery",
+      "definition": "Personified virtues, vices and angels contending for a representative human soul, inherited from the medieval religious drama.",
+      "inThisBook": "The Good and Evil Angels, the Seven Deadly Sins and the Old Man are all morality figures; Marlowe puts them beside a Renaissance doctor speaking Ovid and Virgil, and the two traditions argue over him."
+    },
+    {
+      "id": "blank-verse",
+      "name": "Blank verse",
+      "definition": "Unrhymed iambic pentameter, in which the sentence and the line are free to disagree.",
+      "inThisBook": "Faustus's grand speeches pile up proper nouns — Ilium, Semele, Arethusa — until the line is carrying its own weight; the comic scenes drop into prose, and the last soliloquy breaks its pentameters with 'No! no!' and 'O God!'."
+    },
+    {
+      "id": "chorus",
+      "name": "The Chorus",
+      "definition": "A narrator who addresses the audience directly between the acts.",
+      "inThisBook": "The Chorus speaks the prologue, covers the journeys in Scenes 7 and 8, and delivers the epilogue, which is the only place the play states a moral in its own voice."
+    },
+    {
+      "id": "parody-subplot",
+      "name": "Parody subplot",
+      "definition": "A low plot that repeats the main plot's action in a debased form.",
+      "inThisBook": "Wagner buys the Clown for seven years with threats of devils; Robin conjures Mephistopheles with gibberish to keep a goblet. Each replays the pact at a price that makes Faustus's look no better."
+    },
+    {
+      "id": "dramatic-irony",
+      "name": "Dramatic irony",
+      "definition": "The audience knows something a character on stage does not.",
+      "inThisBook": "Faustus calls hell a fable to a devil who has just said he is standing in it; the audience believes Mephistopheles from Scene 3, and spends the play watching Faustus not."
+    },
+    {
+      "id": "allusion",
+      "name": "Allusion",
+      "definition": "A deliberate reference to another text, used to borrow its argument.",
+      "inThisBook": "The Chorus compares Faustus to Icarus, Faustus quotes Ovid's lover asking the horses of the night to run slowly, and the Helen speech promises to re-fight the Trojan war for Wittenberg: classical stories are the only ones he can hear, and none of them ends well."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "waxen-wings",
+      "text": "Till swollen with cunning of a self-conceit, His waxen wings did mount above his reach, And, melting, heavens conspired his overthrow;",
+      "speaker": "Chorus",
+      "reference": "Prologue",
+      "stage": "choice",
+      "context": "The Chorus, before Faustus is discovered in his study.",
+      "analysis": "The story is over before it begins: the Icarus comparison is in the past tense, and the verb is 'conspired', which makes heaven the plotter. 'Cunning' still meant knowledge as well as craft, so the line accuses learning itself of the swelling. An audience is told to watch a fall, not a choice.",
+      "themes": [
+        "knowledge",
+        "ambition"
+      ],
+      "techniques": [
+        "chorus",
+        "allusion"
+      ],
+      "characters": [
+        "chorus",
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Chorus preceding Scene 1",
+      "cloze": [
+        "waxen",
+        "conspired"
+      ]
+    },
+    {
+      "id": "settle-thy-studies",
+      "text": "Settle thy studies, Faustus, and begin To sound the depth of that thou wilt profess;",
+      "speaker": "Faustus",
+      "reference": "Scene 1",
+      "stage": "choice",
+      "context": "The first words Faustus speaks, alone in his study.",
+      "analysis": "He addresses himself in the second person and by name, a habit he keeps to the last scene. It sounds like discipline and works as evasion: the man giving the orders is never quite the man who has to answer for them. 'Sound the depth' is a sailor's phrase, and the survey that follows never once lowers the line.",
+      "themes": [
+        "knowledge"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 1",
+      "cloze": [
+        "Settle",
+        "depth"
+      ]
+    },
+    {
+      "id": "we-must-sin",
+      "text": "If we say that we have no sin, we deceive ourselves, and there’s no truth in us. Why then, belike we must sin, and so consequently die.",
+      "speaker": "Faustus",
+      "reference": "Scene 1",
+      "stage": "choice",
+      "context": "Reading Jerome's Bible, having just translated 'the reward of sin is death'.",
+      "analysis": "Both verses continue in the original — the gift of God is eternal life; if we confess our sins he is faithful to forgive them — and Faustus closes the book before the second half of each. The syllogism is formally perfect and rests on two truncated premises, which is the whole play in miniature: a scholar damned by a reading habit. 'Belike' is the casual word of a man who thinks he is being rigorous.",
+      "themes": [
+        "knowledge",
+        "despair"
+      ],
+      "techniques": [
+        "soliloquy",
+        "dramatic-irony"
+      ],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 1",
+      "cloze": [
+        "deceive",
+        "consequently"
+      ]
+    },
+    {
+      "id": "mighty-god",
+      "text": "A sound magician is a mighty god: Here, Faustus, tire thy brains to gain a deity.",
+      "speaker": "Faustus",
+      "reference": "Scene 1",
+      "stage": "choice",
+      "context": "The end of the survey of learning, as he turns to the necromantic books.",
+      "analysis": "The first line is a general claim and the second an instruction to himself, which is how his mind works: a proposition, then an order. 'Tire thy brains' is what he has been doing for thirty years, so the deity is to be got by the same labour that produced the doctorate. The god he means is the one he has just dismissed as offering only death.",
+      "themes": [
+        "ambition",
+        "knowledge"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 1",
+      "cloze": [
+        "magician",
+        "deity"
+      ]
+    },
+    {
+      "id": "go-forward-faustus",
+      "text": "Go forward, Faustus, in that famous art, Wherein all Nature’s treasure is contained: Be thou on earth as Jove is in the sky, Lord and commander of these elements.",
+      "speaker": "Evil Angel",
+      "reference": "Scene 1",
+      "stage": "choice",
+      "context": "Answering the Good Angel's plea to lay the damned book aside.",
+      "analysis": "The Good Angel has just used the word 'blasphemy'; the Evil Angel does not argue with it, he changes the subject to treasure. 'Jove' is the classical name the play uses when it wants God without the theology, and it is the Evil Angel who first suggests that Faustus might be one. Faustus's next speech begins with the word 'glutted'.",
+      "themes": [
+        "ambition"
+      ],
+      "techniques": [
+        "morality-play"
+      ],
+      "characters": [
+        "evil-angel",
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 1",
+      "cloze": [
+        "Jove",
+        "commander"
+      ]
+    },
+    {
+      "id": "world-of-profit",
+      "text": "O, what a world of profit and delight, Of power, of honour, of omnipotence Is promised to the studious artisan!",
+      "speaker": "Faustus",
+      "reference": "Scene 1",
+      "stage": "choice",
+      "context": "Contemplating the books of magic.",
+      "analysis": "The list climbs from profit to omnipotence in two lines, and the climb is the point — each noun makes the last look small. 'Studious artisan' is a strange phrase for a god: it keeps the magician a workman, someone who serves an apprenticeship, and the play will hold him to it.",
+      "themes": [
+        "ambition",
+        "knowledge"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 1",
+      "cloze": [
+        "omnipotence",
+        "artisan"
+      ]
+    },
+    {
+      "id": "magic-ravished",
+      "text": "’Tis magic, magic, that hath ravished me.",
+      "speaker": "Faustus",
+      "reference": "Scene 1",
+      "stage": "choice",
+      "context": "To Valdes and Cornelius, after dismissing philosophy, law, physic and divinity in a line each.",
+      "analysis": "He had said earlier in the scene that Analytics had ravished him; the verb has moved on and the object has changed, which suggests the ravishing is a habit of his rather than a property of magic. The repetition of 'magic' is the sound of a man persuading himself, and the passive voice makes him the one acted upon.",
+      "themes": [
+        "ambition"
+      ],
+      "techniques": [],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 1",
+      "cloze": [
+        "ravished"
+      ]
+    },
+    {
+      "id": "why-this-is-hell",
+      "text": "Why this is hell, nor am I out of it: Think’st thou that I who saw the face of God, And tasted the eternal joys of Heaven, Am not tormented with ten thousand hells, In being deprived of everlasting bliss?",
+      "speaker": "Mephistopheles",
+      "reference": "Scene 3",
+      "stage": "bargain",
+      "context": "Faustus has asked how the devil comes to be out of hell.",
+      "analysis": "The devil answers the question with a definition and then with a memory, and the memory is the definition: hell is having seen the face of God and knowing you will not again. This is spoken before the pact, by the creature Faustus proposes to make his servant, and Faustus's reply is to call him unmanly. The play's tragedy is that its best theology is delivered to someone who will not take notes.",
+      "themes": [
+        "hell",
+        "despair"
+      ],
+      "techniques": [
+        "dramatic-irony"
+      ],
+      "characters": [
+        "mephistopheles",
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 3",
+      "cloze": [
+        "hell",
+        "deprived"
+      ]
+    },
+    {
+      "id": "as-many-souls",
+      "text": "Had I as many souls as there be stars, I’d give them all for Mephistopheles.",
+      "speaker": "Faustus",
+      "reference": "Scene 3",
+      "stage": "bargain",
+      "context": "Alone, after sending Mephistopheles to Lucifer with the offer of his soul.",
+      "analysis": "He has one soul and the sentence prices it as though he had a sky full, which is the accounting of a man who has never had to spend it. The line also tells us what he is buying: not power, but Mephistopheles — the companion, the conversation. The plans for bridging the ocean that follow are an afterthought.",
+      "themes": [
+        "ambition"
+      ],
+      "techniques": [],
+      "characters": [
+        "faustus",
+        "mephistopheles"
+      ],
+      "source": "Standard Ebooks text, Scene 3",
+      "cloze": [
+        "souls",
+        "stars"
+      ]
+    },
+    {
+      "id": "shoulder-of-mutton",
+      "text": "the villain is bare and out of service, and so hungry that I know he would give his soul to the devil for a shoulder of mutton, though ’twere blood-raw.",
+      "speaker": "Wagner",
+      "reference": "Scene 4",
+      "stage": "bargain",
+      "context": "Wagner sizing up the Clown as a prospective servant.",
+      "analysis": "The Clown's answer — that he would want it well roasted, with good sauce, if he pays so dear — is the first sensible negotiation in the play. Faustus, one scene earlier, asked for nothing so specific. The joke is in prose and the pact it mocks is in verse, and the prose drives the harder bargain.",
+      "themes": [
+        "ambition"
+      ],
+      "techniques": [
+        "parody-subplot"
+      ],
+      "characters": [
+        "wagner",
+        "robin"
+      ],
+      "source": "Standard Ebooks text, Scene 4",
+      "cloze": [
+        "mutton",
+        "blood-raw"
+      ]
+    },
+    {
+      "id": "despair-in-god",
+      "text": "Now, Faustus, must Thou needs be damned, and canst thou not be saved: What boots it then to think of God or Heaven? Away with such vain fancies, and despair: Despair in God, and trust in Belzebub;",
+      "speaker": "Faustus",
+      "reference": "Scene 5",
+      "stage": "bargain",
+      "context": "Alone in his study at midnight, before the deed is signed.",
+      "analysis": "The first sentence is a conclusion with no argument in front of it: nothing has been signed, and he is already telling himself that he cannot be saved. 'Despair' here is used as a religious term, the deliberate refusal of hope, and he orders himself into it as he ordered himself to settle his studies. The pact in this scene ratifies a damnation he has already talked himself into.",
+      "themes": [
+        "despair"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 5",
+      "cloze": [
+        "Despair",
+        "Belzebub"
+      ]
+    },
+    {
+      "id": "blood-congeals",
+      "text": "My blood congeals, and I can write no more.",
+      "speaker": "Faustus",
+      "reference": "Scene 5",
+      "stage": "bargain",
+      "context": "Writing the deed of gift with the blood from his own arm.",
+      "analysis": "The body refuses before the mind does, and Faustus notices — his next lines ask what the staying of his blood portends. Mephistopheles fetches fire, which is the play's way of saying that hell has to help the signature along. The chafer of coals is the first stage property of the damnation, and it is a domestic one.",
+      "themes": [
+        "despair",
+        "hell"
+      ],
+      "techniques": [],
+      "characters": [
+        "faustus",
+        "mephistopheles"
+      ],
+      "source": "Standard Ebooks text, Scene 5",
+      "cloze": [
+        "congeals"
+      ]
+    },
+    {
+      "id": "consummatum-est",
+      "text": "Consummatum est; this bill is ended, And Faustus hath bequeathed his soul to Lucifer",
+      "speaker": "Faustus",
+      "reference": "Scene 5",
+      "stage": "bargain",
+      "context": "The deed is signed; the inscription 'Homo, fuge' appears on his arm a moment later.",
+      "analysis": "The Latin is Christ's last word on the cross in the Vulgate, and Faustus uses it to close a legal document. It is either the most reckless blasphemy in the play or its most exact irony: a sacrifice is being completed, and the wrong person is being offered. 'Bill' and 'bequeathed' keep the transaction in a lawyer's register, which is the discipline he called mercenary in Scene 1.",
+      "themes": [
+        "hell",
+        "despair"
+      ],
+      "techniques": [
+        "allusion",
+        "dramatic-irony"
+      ],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 5",
+      "cloze": [
+        "Consummatum",
+        "bequeathed"
+      ]
+    },
+    {
+      "id": "hell-hath-no-limits",
+      "text": "Hell hath no limits, nor is circumscribed In one self place; for where we are is hell, And where hell is, there must we ever be:",
+      "speaker": "Mephistopheles",
+      "reference": "Scene 5",
+      "stage": "bargain",
+      "context": "Faustus's first question after the deed is delivered: where is the place that men call hell?",
+      "analysis": "Faustus asks for a location and is given a grammar: hell is defined by its inhabitants, not its coordinates. The chiasmus — where we are is hell, where hell is we are — closes on itself like the loop it describes. Faustus's response, four lines later, is that he thinks hell's a fable.",
+      "themes": [
+        "hell"
+      ],
+      "techniques": [
+        "dramatic-irony"
+      ],
+      "characters": [
+        "mephistopheles",
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 5",
+      "cloze": [
+        "limits",
+        "circumscribed"
+      ]
+    },
+    {
+      "id": "till-experience",
+      "text": "Ay, think so still, till experience change thy mind.",
+      "speaker": "Mephistopheles",
+      "reference": "Scene 5",
+      "stage": "bargain",
+      "context": "Replying to Faustus's 'Come, I think hell’s a fable.'",
+      "analysis": "A single line, and the most patient thing anybody says in the play. The devil does not argue; he refers the case to the future, and the future is the last scene. 'Experience' is the empiricist's word, and the joke is that Faustus, who rejected every book for not going far enough, will be the one who learns from evidence.",
+      "themes": [
+        "hell",
+        "knowledge"
+      ],
+      "techniques": [
+        "dramatic-irony"
+      ],
+      "characters": [
+        "mephistopheles",
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 5",
+      "cloze": [
+        "experience"
+      ]
+    },
+    {
+      "id": "heart-so-hardened",
+      "text": "My heart’s so hardened I cannot repent. Scarce can I name salvation, faith, or heaven, But fearful echoes thunder in mine ears “Faustus, thou art damned!”",
+      "speaker": "Faustus",
+      "reference": "Scene 6",
+      "stage": "diversion",
+      "context": "After the Evil Angel has told him that God cannot pity a spirit.",
+      "analysis": "'Cannot' is the Evil Angel's word, adopted within four lines; a moment earlier Faustus was saying 'God will pity me if I repent'. The hardened heart is Pharaoh's in Exodus, and there it is God who does the hardening, which is the Calvinist reading the play keeps in play without endorsing. The echoes that thunder are his own voice coming back, as the Angels are.",
+      "themes": [
+        "despair"
+      ],
+      "techniques": [
+        "soliloquy",
+        "morality-play"
+      ],
+      "characters": [
+        "faustus",
+        "evil-angel"
+      ],
+      "source": "Standard Ebooks text, Scene 6",
+      "cloze": [
+        "hardened",
+        "repent"
+      ]
+    },
+    {
+      "id": "never-too-late",
+      "text": "Never too late, if Faustus can repent.",
+      "speaker": "Good Angel",
+      "reference": "Scene 6",
+      "stage": "diversion",
+      "context": "Answering the Evil Angel's 'Too late', after Faustus asks whether it is.",
+      "analysis": "The Good Angel's whole doctrine is in the conditional clause, and 'can' is where the play lives: not whether God will forgive but whether Faustus is able to ask. The Evil Angel's reply is not a denial but a threat, that the devils will tear him in pieces, and it is the threat that works. Faustus's next line is a prayer to Christ, and Lucifer walks in on it.",
+      "themes": [
+        "despair"
+      ],
+      "techniques": [
+        "morality-play"
+      ],
+      "characters": [
+        "good-angel",
+        "evil-angel",
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 6",
+      "cloze": [
+        "Never",
+        "repent"
+      ]
+    },
+    {
+      "id": "man-condemned",
+      "text": "What art thou, Faustus, but a man condemned to die? Thy fatal time doth draw to final end; Despair doth drive distrust into my thoughts: Confound these passions with a quiet sleep: Tush, Christ did call the thief upon the cross; Then rest thee, Faustus, quiet in conceit.",
+      "speaker": "Faustus",
+      "reference": "Scene 11",
+      "stage": "travels",
+      "context": "Alone for a moment after selling the horse-courser a horse, before falling asleep in his chair.",
+      "analysis": "This is the only place in the middle of the play where Faustus's fear surfaces, and it lasts six lines between a horse trick and a leg-pulling. The thief on the cross is the standard example of a last-minute pardon, and he cites it not to repent but to go to sleep. 'Quiet in conceit' means at ease in his own thinking, and it is the play's diagnosis.",
+      "themes": [
+        "despair",
+        "time"
+      ],
+      "techniques": [
+        "soliloquy",
+        "allusion"
+      ],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 11",
+      "cloze": [
+        "condemned",
+        "thief"
+      ]
+    },
+    {
+      "id": "vial-of-grace",
+      "text": "I see an angel hovers o’er thy head, And, with a vial full of precious grace, Offers to pour the same into thy soul: Then call for mercy, and avoid despair.",
+      "speaker": "Old Man",
+      "reference": "Scene 14",
+      "stage": "last-hour",
+      "context": "Mephistopheles has just handed Faustus a dagger.",
+      "analysis": "The Old Man can see what Faustus cannot, and describes it as a stage picture: an angel above, a vial, a pouring. 'Avoid despair' is the exact theological instruction, and the imperative is the last one Faustus will receive from a human being. The dagger and the vial are on stage at the same moment, and he takes neither.",
+      "themes": [
+        "despair"
+      ],
+      "techniques": [
+        "morality-play"
+      ],
+      "characters": [
+        "old-man",
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 14",
+      "cloze": [
+        "vial",
+        "despair"
+      ]
+    },
+    {
+      "id": "thousand-ships",
+      "text": "Was this the face that launched a thousand ships And burnt the topless towers of Ilium? Sweet Helen, make me immortal with a kiss.",
+      "speaker": "Faustus",
+      "reference": "Scene 14",
+      "stage": "last-hour",
+      "context": "Helen has re-entered at his request, to be his paramour and drown the Old Man's words.",
+      "analysis": "The question is about destruction — ships launched to burn a city — and the request that follows asks for immortality from the face that caused it. He is already immortal by the terms of his own deed, as a spirit, and the kiss that follows sucks his soul forth, so the line is precisely wrong. Marlowe has the most beautiful verse in the play spoken to a devil in disguise, and the beauty is the trap.",
+      "themes": [
+        "spectacle",
+        "despair"
+      ],
+      "techniques": [
+        "blank-verse",
+        "allusion"
+      ],
+      "characters": [
+        "faustus",
+        "helen"
+      ],
+      "source": "Standard Ebooks text, Scene 14",
+      "cloze": [
+        "thousand",
+        "immortal"
+      ]
+    },
+    {
+      "id": "dross-not-helena",
+      "text": "Here will I dwell, for Heaven is in these lips, And all is dross that is not Helena.",
+      "speaker": "Faustus",
+      "reference": "Scene 14",
+      "stage": "last-hour",
+      "context": "After the kiss.",
+      "analysis": "He has spent the play refusing to think of Heaven, and here he relocates it to a mouth. 'Dross' is the alchemist's word for what is left when the metal is refined out, and the man who wanted to be a god now counts everything but a shadow as waste. It is the pact restated as a love poem.",
+      "themes": [
+        "spectacle",
+        "hell"
+      ],
+      "techniques": [
+        "blank-verse"
+      ],
+      "characters": [
+        "faustus",
+        "helen"
+      ],
+      "source": "Standard Ebooks text, Scene 14",
+      "cloze": [
+        "dross",
+        "Heaven"
+      ]
+    },
+    {
+      "id": "one-bare-hour",
+      "text": "Ah, Faustus, Now hast thou but one bare hour to live, And then thou must be damned perpetually!",
+      "speaker": "Faustus",
+      "reference": "Scene 16",
+      "stage": "last-hour",
+      "context": "The scholars have gone to the next room to pray; the clock has struck eleven.",
+      "analysis": "The soliloquy opens on the same self-address as Scene 1, and the word 'bare' does the arithmetic: twenty-four years have become sixty minutes. 'Perpetually' is the antonym the play has been withholding, and the line makes an audience count with him — the clock will strike twice more before the devils enter.",
+      "themes": [
+        "time"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 16",
+      "cloze": [
+        "bare",
+        "perpetually"
+      ]
+    },
+    {
+      "id": "stand-still-spheres",
+      "text": "Stand still, you ever-moving spheres of Heaven, That time may cease, and midnight never come;",
+      "speaker": "Faustus",
+      "reference": "Scene 16",
+      "stage": "last-hour",
+      "context": "The first request of the last soliloquy.",
+      "analysis": "He commands the spheres as he commanded Mephistopheles, and this time the magic does not work: the spheres are the ones he was lectured on in Scene 6, and they move in twenty-four hours whatever a magician says. The line is a stage direction nobody can follow, addressed to a heaven he had promised never to look at.",
+      "themes": [
+        "time",
+        "knowledge"
+      ],
+      "techniques": [
+        "soliloquy",
+        "blank-verse"
+      ],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 16",
+      "cloze": [
+        "spheres",
+        "midnight"
+      ]
+    },
+    {
+      "id": "lente-currite",
+      "text": "O lente, lente, currite noctis equi! The stars move still, time runs, the clock will strike, The Devil will come, and Faustus must be damned.",
+      "speaker": "Faustus",
+      "reference": "Scene 16",
+      "stage": "last-hour",
+      "context": "Having asked for a year, a month, a week, a day, and been given none of them.",
+      "analysis": "The Latin is Ovid's, a lover asking the horses of the night to run slowly so that the night with his mistress will last; Faustus borrows a line about pleasure for a line about terror. The English that follows answers it in four flat clauses, each one monosyllabic and each one a fact. Verse cannot slow the clock, and the sentence knows it.",
+      "themes": [
+        "time"
+      ],
+      "techniques": [
+        "allusion",
+        "blank-verse"
+      ],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 16",
+      "cloze": [
+        "lente",
+        "clock"
+      ]
+    },
+    {
+      "id": "christs-blood",
+      "text": "See, see where Christ’s blood streams in the firmament!",
+      "speaker": "Faustus",
+      "reference": "Scene 16",
+      "stage": "last-hour",
+      "context": "Between asking who pulls him down and asking Lucifer to spare him.",
+      "analysis": "The blood he signed with in Scene 5 is answered by blood across the whole sky, and he sees it — the play's most painful line is that one drop would save him and he cannot reach it. The next appeal is to Lucifer, in the same breath, which is despair as the play defines it: not disbelief in mercy but the conviction that it is for somebody else.",
+      "themes": [
+        "despair",
+        "hell"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 16",
+      "cloze": [
+        "blood",
+        "firmament"
+      ]
+    },
+    {
+      "id": "burn-my-books",
+      "text": "Ugly hell, gape not! come not, Lucifer! I’ll burn my books!",
+      "speaker": "Faustus",
+      "reference": "Scene 16",
+      "stage": "last-hour",
+      "context": "The devils have entered; these are his last words before they carry him off.",
+      "analysis": "The offer comes when it can buy nothing, and it is the first time he has proposed giving anything up. Books were where the play began — a man in a study, reading — and the last thing he thinks of is to destroy them, as though the knowledge were the contract. The final word of the speech, cut off here, is Mephistopheles's name.",
+      "themes": [
+        "knowledge",
+        "hell"
+      ],
+      "techniques": [],
+      "characters": [
+        "faustus",
+        "lucifer"
+      ],
+      "source": "Standard Ebooks text, Scene 16",
+      "cloze": [
+        "burn",
+        "books"
+      ]
+    },
+    {
+      "id": "cut-is-the-branch",
+      "text": "Cut is the branch that might have grown full straight, And burned is Apollo’s laurel-bough, That sometime grew within this learned man.",
+      "speaker": "Chorus",
+      "reference": "Scene 16",
+      "stage": "last-hour",
+      "context": "The epilogue, spoken after the devils have taken Faustus.",
+      "analysis": "'Might have grown' is the play's only concession that the ending was not fixed, and it comes from the Chorus, after the fact. Apollo's laurel was the poet's crown as well as the scholar's, so the Chorus is also burning what Marlowe has just written. The moral that follows — wonder at unlawful things but do not practise them — is narrower than the play, and productions often cut it.",
+      "themes": [
+        "knowledge",
+        "time"
+      ],
+      "techniques": [
+        "chorus"
+      ],
+      "characters": [
+        "chorus",
+        "faustus"
+      ],
+      "source": "Standard Ebooks text, Scene 16 (epilogue)",
+      "cloze": [
+        "branch",
+        "laurel-bough"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1564,
+      "label": "Christopher Marlowe born in Canterbury",
+      "detail": "A shoemaker's son, baptised in February, two months before Shakespeare.",
+      "kind": "author"
+    },
+    {
+      "year": 1587,
+      "label": "The German Faust Book printed in Frankfurt",
+      "detail": "The Historia von D. Johann Fausten, an anonymous cautionary life of a magician who had died some decades earlier.",
+      "kind": "context"
+    },
+    {
+      "year": 1592,
+      "label": "The English Faust Book printed",
+      "detail": "The Historie of the Damnable Life and Deserved Death of Doctor John Faustus, translated by 'P. F., Gent.', which gave Marlowe his pact, his travels and his last night.",
+      "kind": "context"
+    },
+    {
+      "year": 1593,
+      "label": "Marlowe killed at Deptford",
+      "detail": "Stabbed in a house in Deptford Strand at the end of May, aged twenty-nine, with a warrant from the Privy Council outstanding against him.",
+      "kind": "author"
+    },
+    {
+      "year": 1594,
+      "label": "Henslowe's diary records Doctor Faustus at the Rose",
+      "detail": "The Admiral's Men, with Edward Alleyn in the title role, played it repeatedly through the mid-1590s.",
+      "kind": "reception"
+    },
+    {
+      "year": 1602,
+      "label": "Henslowe pays for additions to the play",
+      "detail": "William Bird and Samuel Rowley received four pounds for 'adicyones', which are probably the source of much that is new in the 1616 text.",
+      "kind": "work"
+    },
+    {
+      "year": 1604,
+      "label": "The A-text printed",
+      "detail": "The first surviving edition, a short quarto; reprinted in 1609 and 1611.",
+      "kind": "work"
+    },
+    {
+      "year": 1616,
+      "label": "The B-text printed",
+      "detail": "A quarto over a third longer, with new scenes at Rome and the Emperor's court and a different ending for the Old Man and the scholars.",
+      "kind": "work"
+    },
+    {
+      "year": 1808,
+      "label": "Goethe publishes Faust, Part One",
+      "detail": "The German poem that made the Faust story a myth of striving rather than damnation, and against which Marlowe's play has been read ever since.",
+      "kind": "reception"
+    },
+    {
+      "year": 1896,
+      "label": "William Poel revives the play in London",
+      "detail": "The Elizabethan Stage Society's production returned Marlowe's text to performance after a long absence from the stage.",
+      "kind": "reception"
+    },
+    {
+      "year": 1967,
+      "label": "Richard Burton films Doctor Faustus",
+      "detail": "Burton played Faustus and Elizabeth Taylor the silent Helen, developed from a stage production at Oxford the year before.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Wittenberg",
+      "lat": 51.8666,
+      "lon": 12.6489,
+      "note": "The play's 'Wertenberg': Faustus's university, his study, and the town he offers to sack for Helen."
+    },
+    {
+      "name": "Rome",
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "note": "The Pope's privy chamber in Scene 7, where an invisible Faustus snatches the dishes and boxes the Pope's ear."
+    },
+    {
+      "name": "Trier",
+      "lat": 49.7596,
+      "lon": 6.6439,
+      "note": "The first stop Faustus names on his tour of Europe, 'environed round with airy mountaintops'."
+    },
+    {
+      "name": "Naples",
+      "lat": 40.8518,
+      "lon": 14.2681,
+      "note": "Where Faustus sees Virgil's tomb and the tunnel the poet was said to have cut through the rock in one night."
+    },
+    {
+      "name": "Canterbury",
+      "lat": 51.2802,
+      "lon": 1.0789,
+      "note": "Marlowe's birthplace, and the cathedral school that sent him to Cambridge."
+    },
+    {
+      "name": "Deptford",
+      "lat": 51.4795,
+      "lon": -0.026,
+      "note": "Where Marlowe was killed in May 1593, a year or so after the play was probably written."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "An orthodox morality play",
+      "summary": "The Chorus says what the play means, the Angels are real, and Faustus is damned justly for a sin he commits with open eyes and refuses to repent of. On this reading the comic scenes are not padding but the same lesson in a lower key, and the ending is the only one the theology allows.",
+      "counter": "It has to explain why the play gives its most moving verse to the damned man and its flattest to the Chorus, and why Mephistopheles is allowed to be so sympathetic."
+    },
+    {
+      "position": "The overreacher as hero",
+      "summary": "Faustus is a Renaissance figure punished by a medieval framework, and Marlowe's sympathies are with the aspiration rather than the punishment. The play becomes a tragedy of magnificent desire in a world too small for it, with the Helen speech as its centre.",
+      "counter": "The desire in the text keeps shrinking. A hero of aspiration would not spend the middle of the play fetching grapes, and the play shows him doing so at length."
+    },
+    {
+      "position": "A play about predestination and despair",
+      "summary": "Reformation debates about whether the will is free to repent, and whether despair is itself damning, run through every scene with the Angels in it. Faustus may be unable to repent because he is reprobate, or because he has been told so often that he is; the text can be read either way, and the ambiguity is the argument.",
+      "counter": "The Old Man's escape in Scene 15 shows grace working on stage, which makes the reprobate reading harder to sustain as the play's own view."
+    },
+    {
+      "position": "Two plays, not one",
+      "summary": "The 1604 and 1616 texts differ so much in the middle scenes and the ending that any claim about 'the play' has to say which. The shorter text is bleaker and more inward; the longer one is more spectacular and more explicit about the devils' control.",
+      "counter": "The scenes on which most readings rest — the study, the pact, Helen, the last hour — are substantially shared between the two."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "'Faustus is damned by the way he reads.' How far do you agree?",
+      "focus": "Knowledge, interpretation and the opening soliloquy",
+      "plan": [
+        "Open with the survey of learning in Scene 1 and show that each discipline is rejected on a single quoted sentence, taken out of its book.",
+        "Examine the two scripture verses he truncates and what the missing halves say; the syllogism is valid and the premises are cut.",
+        "Turn to Scene 3 and Scene 5, where Mephistopheles is a text he also refuses to read: hell is a fable, marriage a toy.",
+        "Test the claim against Scene 6, where the questions he asks are answered and the one that matters is refused; is the fault in him or in what is available?",
+        "Close on 'I'll burn my books' as the play's last judgement on where the damage lay."
+      ]
+    },
+    {
+      "question": "Is repentance ever possible for Faustus?",
+      "focus": "Despair, the Angels and the Old Man",
+      "plan": [
+        "Set out the theology the play assumes: despair as the refusal of hope, and the Good Angel's 'never too late' as its answer.",
+        "Trace the pattern of Scenes 5, 6 and 14, in which repentance is felt, named and interrupted, and note who does the interrupting each time.",
+        "Use the Old Man in Scenes 14 and 15 as the play's demonstration that grace works on stage for someone.",
+        "Consider the case that Faustus is reprobate from the start: 'my heart's so hardened I cannot repent' and the blood that congeals.",
+        "Decide what the last soliloquy shows: a man who cannot repent, or one who bargains instead, asking for a shorter hell rather than for mercy."
+      ]
+    },
+    {
+      "question": "What is the comedy for?",
+      "focus": "The subplot, the travels and the structure of the middle scenes",
+      "plan": [
+        "Describe what the comic scenes contain: Wagner and the Clown, Robin and Ralph, the Pope, the horse-courser.",
+        "Show how each repeats the pact at a lower price, and what that does to Faustus's version.",
+        "Argue that the shrinking of Faustus's ambitions into tricks is the play's argument, not a lapse from it.",
+        "Weigh the textual case: additions were paid for in 1602, and the 1616 text has more of this material. Does authorship change the point?",
+        "Conclude with the horse-courser scene, where six lines of terror sit between two jokes, and ask what the placing achieves."
+      ]
+    },
+    {
+      "question": "'Mephistopheles is the play's most honest character.' Discuss.",
+      "focus": "The devil as witness, servant and tempter",
+      "plan": [
+        "Begin with Scene 3: he did not come when called, he serves Lucifer, and hell is where he is standing.",
+        "Set against this his one aside in Scene 5 and the wife, the books and the fireworks he uses to distract Faustus.",
+        "Examine the refusal to say who made the world, and the arrival of Lucifer immediately afterwards.",
+        "Consider Scene 14, where he hands Faustus a dagger, threatens him, and then admits the Old Man's faith is beyond his reach.",
+        "Close on what an audience is meant to feel about a tempter who tells the truth, and whether that makes him more or less frightening."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Mephistopheles tells Faustus what hell is in Scene 3 and again in Scene 5. Why does Faustus not believe him?",
+    "The Good Angel is always right and never wins. What would the play lose if he were more persuasive?",
+    "Faustus wants to wall Germany with brass and ends up fetching grapes. When exactly does the ambition shrink, and does the play mark the moment?",
+    "The most beautiful speech in the play is addressed to a devil in the shape of Helen. Does the beauty of the verse work for Faustus or against him?",
+    "The Chorus ends by telling the audience only to wonder at unlawful things. Is that the play's moral, or just the Chorus's?"
+  ],
+  "related": [
+    {
+      "href": "/books/paradise-lost/",
+      "why": "Milton's Satan, like Mephistopheles, carries hell with him wherever he goes, and says so."
+    },
+    {
+      "href": "/books/macbeth/",
+      "why": "Another man who knows the price before he acts and finds afterwards that the goods are worthless."
+    },
+    {
+      "href": "/books/the-duchess-of-malfi/",
+      "why": "Jacobean tragedy a generation on, where the devils have become courtiers and the hell is Italian."
+    },
+    {
+      "href": "/books/dorian-gray/",
+      "why": "The bargain for a life without consequences, retold in the 1890s with a portrait for a contract."
+    },
+    {
+      "href": "/books/frankenstein/",
+      "why": "A student at Ingolstadt who also finds the recognised sciences too small, and makes something he cannot control."
+    }
+  ],
+  "videos": []
+}

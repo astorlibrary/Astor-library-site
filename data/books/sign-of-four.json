@@ -1,0 +1,1107 @@
+{
+  "slug": "sign-of-four",
+  "title": "The Sign of the Four",
+  "author": "Arthur Conan Doyle",
+  "href": "/books/sign-of-four/",
+  "buyUrl": "https://mybook.to/IGAlMU5",
+  "form": "novel",
+  "genre": "Detective fiction",
+  "period": "Victorian",
+  "written": "1889–90",
+  "firstPublished": 1890,
+  "setting": "London over a few September days in 1888 — Baker Street, Upper Norwood, Lambeth and the Thames below the Pool — with a confession that reaches back to Agra in 1857 and the penal settlement on the Andaman Islands",
+  "readingTime": 190,
+  "difficulty": 2,
+  "lengthNote": "Twelve chapters, around 43,000 words — written to fill a single number of a monthly magazine",
+  "openingLine": "Sherlock Holmes took his bottle from the corner of the mantelpiece and his hypodermic syringe from its neat morocco case.",
+  "summary": "A governess has received a large pearl by post on the same day every year since her father vanished, and now an anonymous letter asks her to wait outside a theatre. Holmes follows the pearls to a locked room in Norwood, a dead man with a poisoned thorn in his scalp, and a steam launch running for the sea. What he uncovers is not a London crime at all but the tail end of a theft committed at Agra during the uprising of 1857, and the novel keeps insisting that the treasure came home to England with the men who ran the empire, and that its curse came with it. Watson, meanwhile, is falling in love with the client, which is the one development his friend has no method for.",
+  "referenceStyle": "chapter",
+  "sourceText": {
+    "label": "Standard Ebooks text of The Sign of the Four",
+    "note": "Quotations are placed by chapter. The Standard Ebooks text keeps the magazine's title and its American spellings — 'color', 'honorable', 'seven-percent' — and those are kept here rather than corrected."
+  },
+  "atAGlance": [
+    {
+      "label": "Magazine",
+      "value": "February 1890",
+      "note": "Printed complete in one number of Lippincott's Monthly Magazine, commissioned at a dinner in London the previous August at which Oscar Wilde was also asked for a story."
+    },
+    {
+      "label": "Book",
+      "value": "October 1890",
+      "note": "Spencer Blackett's edition dropped the second 'the' from the title, which is why two forms of it survive."
+    },
+    {
+      "label": "Narrator",
+      "value": "Dr John Watson",
+      "note": "He narrates a case in which he proposes to the client before the criminal has finished confessing."
+    },
+    {
+      "label": "The crime",
+      "value": "Agra, 1857",
+      "note": "The London murder is the last act of a theft, a betrayal and a prison sentence that began during the uprising more than thirty years earlier."
+    }
+  ],
+  "structure": [
+    {
+      "id": "the-problem",
+      "label": "Chapters 1–3",
+      "title": "The science of deduction, and a client",
+      "summary": "Holmes, between cases, is injecting cocaine three times a day and defending it as the only alternative to boredom. He reads Watson's brother's history off a pocket-watch, and then Mary Morstan arrives with a story: a father who vanished from a London hotel in 1878, a pearl posted to her every year since 1882, and a letter asking her to be outside the Lyceum that night. The three of them drive through fog to a house in Brixton."
+    },
+    {
+      "id": "pondicherry-lodge",
+      "label": "Chapters 4–6",
+      "title": "Two brothers and a locked room",
+      "summary": "Thaddeus Sholto explains that his father, Major Sholto, brought the Agra treasure home from India, hid it, lived in fear of a wooden-legged man, and died before he could tell his sons where it was. His twin Bartholomew has just found it. At Pondicherry Lodge they find Bartholomew dead in a bolted room with a thorn in his scalp and the words 'The sign of the four' on a scrap of paper. Holmes reads the room, and Inspector Athelney Jones arrests Thaddeus."
+    },
+    {
+      "id": "the-trail",
+      "label": "Chapters 7–9",
+      "title": "Creosote, Toby and the Irregulars",
+      "summary": "A dog named Toby follows a creosote-stained footprint six miles across south London to a barrel on a wharf, which is the wrong creosote. Holmes learns that the fugitives have hired a steam launch, the Aurora, and cannot find it: the Baker Street Irregulars search both banks, Holmes spends a day disguised as an old sailor, and Watson visits Mary at Camberwell. The chain breaks and is repaired by a boatyard where a launch is being kept out of sight."
+    },
+    {
+      "id": "the-river",
+      "label": "Chapter 10",
+      "title": "The chase",
+      "summary": "A police launch runs the Aurora down between Greenwich and Plumstead. The islander Tonga raises his blowpipe and is shot by both Holmes and Watson; Jonathan Small runs the launch aground and sticks fast in the mud of the marsh with his wooden leg. The only pure action sequence in the Holmes novels, and Doyle writes it as a race between engines."
+    },
+    {
+      "id": "the-treasure",
+      "label": "Chapter 11",
+      "title": "An empty box",
+      "summary": "Watson is sent with the iron chest to Camberwell so that Mary can be the first to see her fortune. The box, when forced, is empty. Small has thrown the jewels into the river rather than let the Sholtos or the Crown have them, and the loss removes the obstacle Watson has been unable to speak past: the chapter ends with an engagement."
+    },
+    {
+      "id": "smalls-story",
+      "label": "Chapter 12",
+      "title": "Jonathan Small's confession",
+      "summary": "In handcuffs at Baker Street, Small tells the whole history: a lost leg in the Ganges, the siege at Agra, the murder of the merchant Achmet with three Sikh soldiers, the pact of the four, the Andaman convict settlement, Major Sholto's betrayal, and an escape made possible by an islander whose loyalty the book never explains. Holmes settles the division of the case's rewards and reaches for the cocaine bottle."
+    }
+  ],
+  "characters": [
+    {
+      "id": "sherlock-holmes",
+      "name": "Sherlock Holmes",
+      "role": "Consulting detective",
+      "summary": "This is the Holmes of the needle and the monograph on tobacco ash, the version who says he cannot live without brain-work and means it as a medical statement. He is unusually social here — he takes Toby on a walk, hires small boys, sings the praises of a Frenchman's murder case — but the book brackets him between two doses, and the last line hands him the bottle back.",
+      "clue": "He reads a dead brother's habits off a scratched watch, keeps a hundred and forty kinds of tobacco ash in a monograph, and ends the book reaching for a syringe.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "restless",
+        "exact",
+        "indifferent to reward"
+      ],
+      "relationships": [
+        {
+          "to": "john-watson",
+          "label": "friend and lodger of",
+          "kind": "friendship"
+        },
+        {
+          "to": "mary-morstan",
+          "label": "engaged by",
+          "kind": "service",
+          "stages": [
+            "the-problem"
+          ]
+        },
+        {
+          "to": "jonathan-small",
+          "label": "hunts and then listens to",
+          "kind": "enemy",
+          "stages": [
+            "the-trail",
+            "the-river",
+            "smalls-story"
+          ]
+        },
+        {
+          "to": "athelney-jones",
+          "label": "outpaces and then briefs",
+          "kind": "rival"
+        }
+      ]
+    },
+    {
+      "id": "john-watson",
+      "name": "Dr John Watson",
+      "role": "Narrator; army surgeon on half-pay",
+      "summary": "Watson wrote up the first case and is told in the opening chapter that he made it romantic. He then narrates a case in which he falls in love with the client, worries about her money, carries a treasure chest across London and is relieved to find it empty. The novel is his argument with Holmes about whether feeling is a fault, and he wins it by getting married.",
+      "clue": "A wounded army doctor who is told he has tinged an exact science with romance, and who proves the point by proposing to the client.",
+      "firstAppearance": "Chapter 1",
+      "traits": [
+        "loyal",
+        "self-doubting",
+        "in love by Chapter 2"
+      ],
+      "relationships": [
+        {
+          "to": "sherlock-holmes",
+          "label": "chronicler and friend of",
+          "kind": "friendship"
+        },
+        {
+          "to": "mary-morstan",
+          "label": "falls in love with and marries",
+          "kind": "love"
+        }
+      ]
+    },
+    {
+      "id": "mary-morstan",
+      "name": "Mary Morstan",
+      "role": "The client, a governess",
+      "summary": "She brings a story, a plan of a fort and six pearls to Baker Street, and Holmes later says she had a genius for detection. Doyle allows her to be brave through a night of corpses and then to weep in the cab afterwards, and Watson's narration cannot describe her without also describing what her possible fortune would do to his chances.",
+      "clue": "A governess who has been posted one large pearl a year since her father disappeared, and who gives up a fortune without being asked.",
+      "firstAppearance": "Chapter 2",
+      "traits": [
+        "composed",
+        "practical",
+        "wealthy for one chapter"
+      ],
+      "relationships": [
+        {
+          "to": "john-watson",
+          "label": "marries",
+          "kind": "love"
+        },
+        {
+          "to": "thaddeus-sholto",
+          "label": "co-heir with",
+          "kind": "ally",
+          "stages": [
+            "pondicherry-lodge",
+            "the-treasure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jonathan-small",
+      "name": "Jonathan Small",
+      "role": "Ex-soldier, convict, one of the four",
+      "summary": "A Worcestershire farm boy who lost a leg to a crocodile in the Ganges, took a share in a murder at Agra, and spent twenty years in the Andaman convict settlement being cheated of the proceeds. His confession occupies the last chapter and gives the book its second voice: aggrieved, plain and certain that the treasure is his because he suffered for it.",
+      "clue": "He signs a chart on behalf of four men, hops on one leg to kill a guard, and tells his life story in handcuffs to the man who caught him.",
+      "firstAppearance": "Chapter 10",
+      "traits": [
+        "dogged",
+        "loyal to an oath",
+        "unforgiving"
+      ],
+      "relationships": [
+        {
+          "to": "tonga",
+          "label": "escaped with and travelled with",
+          "kind": "ally"
+        },
+        {
+          "to": "sherlock-holmes",
+          "label": "caught by",
+          "kind": "enemy",
+          "stages": [
+            "the-river",
+            "smalls-story"
+          ]
+        },
+        {
+          "to": "thaddeus-sholto",
+          "label": "enemy of the family of",
+          "kind": "enemy"
+        }
+      ]
+    },
+    {
+      "id": "thaddeus-sholto",
+      "name": "Thaddeus Sholto",
+      "role": "Major Sholto's younger twin",
+      "summary": "A hypochondriac who lives in a Brixton villa dressed like an Eastern curiosity shop and has been sending Mary Morstan pearls to ease his conscience about a fortune his father stole. He tells the family history at length, is arrested for his brother's murder on the strength of being nervous, and is cleared without ever becoming less nervous.",
+      "clue": "He receives his visitors under a hookah in a room full of tiger skins, sends a stranger a pearl every year, and is arrested for a murder because he twitches.",
+      "firstAppearance": "Chapter 4",
+      "traits": [
+        "nervous",
+        "scrupulous",
+        "talkative"
+      ],
+      "relationships": [
+        {
+          "to": "mary-morstan",
+          "label": "sends pearls to",
+          "kind": "ally"
+        },
+        {
+          "to": "athelney-jones",
+          "label": "arrested by",
+          "kind": "enemy",
+          "stages": [
+            "pondicherry-lodge",
+            "the-trail"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "athelney-jones",
+      "name": "Inspector Athelney Jones",
+      "role": "Scotland Yard detective",
+      "summary": "He arrives at Pondicherry Lodge announcing that there are stern facts and no room for theories, then arrests the whole household including the gatekeeper. He is not stupid, only confident, and Doyle uses him to show that a method which starts from the obvious suspect will always find one. By the river chase he is doing what Holmes tells him, and he takes the credit.",
+      "clue": "A red-faced official who declares there is no room for theories and then arrests everyone in the house, including the man who let him in.",
+      "firstAppearance": "Chapter 6",
+      "traits": [
+        "confident",
+        "official",
+        "useful in the end"
+      ],
+      "relationships": [
+        {
+          "to": "sherlock-holmes",
+          "label": "patronises, then defers to",
+          "kind": "rival"
+        }
+      ]
+    },
+    {
+      "id": "tonga",
+      "name": "Tonga",
+      "role": "An Andaman islander, Small's companion",
+      "summary": "Small's account is that Tonga nursed him back to health, helped him escape and stayed with him for love; the London chapters give him no words at all. Watson describes him through a gazetteer entry before he has seen him and shoots him on sight. He is the book's clearest instance of Victorian racial writing, and any honest reading has to say so: the 'savage' is invented by the narration, not observed by it.",
+      "clue": "Seen only at a window and over a gunwale, he is described out of a gazetteer before anyone who has met him speaks, and he dies in the Thames without a line of dialogue.",
+      "firstAppearance": "Chapter 10",
+      "traits": [
+        "silent",
+        "loyal in Small's telling",
+        "made monstrous in Watson's"
+      ],
+      "relationships": [
+        {
+          "to": "jonathan-small",
+          "label": "companion and rescuer of",
+          "kind": "ally"
+        }
+      ]
+    },
+    {
+      "id": "toby",
+      "name": "Toby",
+      "role": "A tracking dog, half spaniel and half lurcher",
+      "summary": "Borrowed from a bird-stuffer in Lambeth and paid in sugar, Toby follows a smell of creosote across six miles of south London and arrives, with complete confidence, at a barrel of creosote. Holmes says he would rather have Toby than the whole detective force, and the joke is that the dog's method and the police's have the same flaw: both follow the strongest scent.",
+      "clue": "An ugly, lop-eared animal fetched from a naturalist's shop at midnight, who leads two men six miles and is wrong.",
+      "firstAppearance": "Chapter 7",
+      "traits": [
+        "waddling",
+        "infallible until Chapter 8"
+      ],
+      "relationships": [
+        {
+          "to": "sherlock-holmes",
+          "label": "borrowed by",
+          "kind": "service",
+          "stages": [
+            "the-trail"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "empire",
+      "name": "Empire comes home",
+      "summary": "The London mystery is a residue. Every object that matters — the pearls, the plan of Agra fort, the poisoned thorns, the treasure itself — was made or stolen in India, and the men who fight over it are officers, convicts and a prison guard from the Andaman settlement. Doyle does not moralise about this, which is what makes it readable as an argument: the wealth of the empire arrives in Norwood already cursed.",
+      "development": "Announced by a hookah in Brixton, confirmed by a dead man in a locked room, and finally narrated in full by Small, whose account of 1857 is the only place the book lets the colonised speak — and even there only through an Englishman."
+    },
+    {
+      "id": "evidence",
+      "name": "Reading traces",
+      "summary": "Holmes's method here is material: a watch-case, a footprint in creosote, the width of a stride, the shape of a toe. Athelney Jones is his foil because Jones also reads evidence, only he starts with a conclusion. The book's point is that inference is a discipline, not a gift, and Watson is repeatedly invited to follow the chain and check each link.",
+      "development": "The watch in Chapter 1 is a demonstration; the room in Chapter 6 is a working; Toby's wrong barrel in Chapter 8 is the correction that shows the method can fail honestly."
+    },
+    {
+      "id": "love",
+      "name": "Love against method",
+      "summary": "Holmes announces that emotion is opposed to true cold reason and that he will never marry. Watson, narrating, spends the case unable to stop noticing Mary Morstan. The novel does not resolve the argument; it lets both men win, one with a wife and one with a syringe.",
+      "development": "Holmes's rule in Chapter 2, Watson's silence in the cab in Chapter 7, the empty box in Chapter 11 that makes speech possible, and the cocaine-bottle that closes the last chapter."
+    },
+    {
+      "id": "class",
+      "name": "Money and the marriage plot",
+      "summary": "Watson cannot propose to a woman who is about to be worth half a million, because a half-pay surgeon marrying an heiress would look like fortune-hunting. The treasure therefore has to be lost before the love story can move, and Doyle lets his narrator say plainly that he was glad when it was.",
+      "development": "Watson's calculation in Chapter 7 is answered by the annuity Holmes computes in Chapter 11, and then cancelled by an empty box."
+    },
+    {
+      "id": "race",
+      "name": "The invented savage",
+      "summary": "Tonga is constructed before he appears: Holmes reads a gazetteer aloud on the Andamanese, and Watson's description on the river repeats its terms. Small's version — a devoted companion who saved his life — is the one the plot actually requires, and the narration ignores it. The gap between the two accounts is where the book's racism is visible and where it can be taught.",
+      "development": "Gazetteer in Chapter 8, revolvers in Chapter 10, Small's testimony in Chapter 12: the reader receives the caricature first and the person last."
+    },
+    {
+      "id": "possession",
+      "name": "Whose loot is it?",
+      "summary": "Four men swear to share a treasure; a merchant is murdered for it; a major steals it from the convicts; his son hides it from his brother; the Crown claims it; Small throws it in the Thames. Nobody in the book has a clean title, and Small's furious question — where is the justice in giving it up to those who never earned it — has no good answer.",
+      "development": "The chest passes through six pairs of hands and is opened once, empty, in Chapter 11."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "retrospective-narration",
+      "name": "Retrospective narration",
+      "definition": "A narrator telling their own earlier life, with the distance between the two selves doing the judging.",
+      "inThisBook": "Watson writes after his marriage: 'She has told me since' lets the reader know how the love story ends while the mystery is still open, so that suspense and comfort run side by side."
+    },
+    {
+      "id": "deduction",
+      "name": "The chain of inference",
+      "definition": "A conclusion presented as a series of small observations, each of which the reader is invited to check.",
+      "inThisBook": "The watch in Chapter 1 and the death-room in Chapter 6 are worked examples; Holmes shows each link, and Watson's job is to say 'Simple enough' too late."
+    },
+    {
+      "id": "frame-narrative",
+      "name": "Confession as second novel",
+      "definition": "A story told inside another story, so that every account reaches the reader through somebody with an interest in it.",
+      "inThisBook": "Small's confession in Chapter 12 is a complete adventure story in its own voice, with the London plot reduced to its epilogue; the book's centre of gravity moves to Agra at the end."
+    },
+    {
+      "id": "setting-as-mood",
+      "name": "Landscape as feeling",
+      "definition": "Weather and place used to carry the emotional weight of a scene.",
+      "inThisBook": "The September fog in Chapter 3 makes the faces in the Strand ghostlike before there is a ghost; Watson says he is not subject to impressions and then records nothing else."
+    },
+    {
+      "id": "foils",
+      "name": "Foils",
+      "definition": "A character constructed to throw another's choices into relief by making different ones.",
+      "inThisBook": "Athelney Jones is Holmes's method with the observation left out, and Toby is Holmes's method with the reasoning left out; both are wrong in instructive ways."
+    },
+    {
+      "id": "symbolic-objects",
+      "name": "The treasure chest",
+      "definition": "An object the narrative keeps returning to until it stands for the argument rather than illustrating it.",
+      "inThisBook": "The iron box is described, carried, weighed and forced open before anyone looks inside, and it is empty; the novel's whole argument about wealth is in that anticlimax."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "seven-percent-solution",
+      "text": "“It is cocaine,” he said⁠—“a seven-percent solution. Would you care to try it?”",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 1",
+      "stage": "the-problem",
+      "context": "Answering Watson's question about which drug is in the syringe.",
+      "analysis": "The offer is the shocking part, not the drug. Holmes speaks of the dose with the precision of a prescription, and the courtesy of 'would you care to' turns an addiction into hospitality. Doyle opens his second Holmes novel with the detective's weakness on the first page, before any client, which is a decision no later story repeats so bluntly.",
+      "themes": [
+        "love"
+      ],
+      "characters": [
+        "sherlock-holmes",
+        "john-watson"
+      ],
+      "cloze": [
+        "cocaine",
+        "seven-percent"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "techniques": []
+    },
+    {
+      "id": "rebels-at-stagnation",
+      "text": "Give me problems, give me work, give me the most abstruse cryptogram or the most intricate analysis, and I am in my own proper atmosphere. I can dispense then with artificial stimulants. But I abhor the dull routine of existence. I crave for mental exaltation.",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 1",
+      "stage": "the-problem",
+      "context": "Defending the cocaine to Watson, who has finally protested.",
+      "analysis": "Three imperatives in a row, each demanding something harder than the last, and then a sentence that admits the drug is a substitute. 'Exaltation' is a religious word, and it is the one Holmes reaches for: the work is not a profession but a state he needs to be in. The passage explains why every idle interval in the stories is dangerous to him.",
+      "themes": [
+        "evidence",
+        "love"
+      ],
+      "characters": [
+        "sherlock-holmes"
+      ],
+      "cloze": [
+        "exaltation",
+        "routine"
+      ],
+      "source": "Standard Ebooks text, Chapter 1",
+      "techniques": []
+    },
+    {
+      "id": "exact-science",
+      "text": "Detection is, or ought to be, an exact science, and should be treated in the same cold and unemotional manner. You have attempted to tinge it with romanticism, which produces much the same effect as if you worked a love-story or an elopement into the fifth proposition of Euclid.",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 1",
+      "stage": "the-problem",
+      "context": "His review of Watson's account of their first case, A Study in Scarlet.",
+      "analysis": "Doyle is reviewing his own first novel through his detective, and the joke is that the book in the reader's hands is about to work an elopement in. 'Or ought to be' is the give-away: Holmes knows detection is not yet a science, and his exactness is an aspiration he polices in other people.",
+      "themes": [
+        "evidence",
+        "love"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "sherlock-holmes",
+        "john-watson"
+      ],
+      "cloze": [
+        "romanticism",
+        "Euclid"
+      ],
+      "source": "Standard Ebooks text, Chapter 1"
+    },
+    {
+      "id": "i-never-guess",
+      "text": "“No, no: I never guess. It is a shocking habit⁠—destructive to the logical faculty.",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 1",
+      "stage": "the-problem",
+      "context": "After deducing the history of Watson's brother from a pocket-watch.",
+      "analysis": "He treats guessing as a moral failing rather than a shortcut, and the sentence that follows sets out his whole pedagogy: the inference only looks like magic because the observer did not see the small facts. The watch scene is a lesson rather than a trick, and it hurts Watson because the facts were true.",
+      "themes": [
+        "evidence"
+      ],
+      "techniques": [
+        "deduction"
+      ],
+      "characters": [
+        "sherlock-holmes",
+        "john-watson"
+      ],
+      "cloze": [
+        "guess"
+      ],
+      "source": "Standard Ebooks text, Chapter 1"
+    },
+    {
+      "id": "hence-the-cocaine",
+      "text": "Hence the cocaine. I cannot live without brain-work. What else is there to live for? Stand at the window here. Was ever such a dreary, dismal, unprofitable world? See how the yellow fog swirls down the street and drifts across the dun-colored houses.",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 1",
+      "stage": "the-problem",
+      "context": "Asked whether he has a case in hand, and answering that he has none.",
+      "analysis": "The complaint moves from his own brain to the view from the window as though the fog were the same problem. It is the one moment in the novel where Holmes sounds like a decadent poet, and it is immediately interrupted by the client's arrival: the world stops being unprofitable the moment it supplies a problem.",
+      "themes": [
+        "love"
+      ],
+      "techniques": [
+        "setting-as-mood"
+      ],
+      "characters": [
+        "sherlock-holmes"
+      ],
+      "cloze": [
+        "brain-work",
+        "fog"
+      ],
+      "source": "Standard Ebooks text, Chapter 1"
+    },
+    {
+      "id": "calculating-machine",
+      "text": "“You really are an automaton⁠—a calculating-machine!” I cried. “There is something positively inhuman in you at times.”",
+      "speaker": "Dr John Watson",
+      "reference": "Chapter 2",
+      "stage": "the-problem",
+      "context": "After Holmes says he did not observe whether Miss Morstan was attractive.",
+      "analysis": "Watson's outburst is the first sign of the love story, since he is offended on Mary's behalf before he has admitted any interest in her. 'At times' is the loyal qualification; the metaphor of the machine is the one Watson will use in later stories too, and Doyle always lets Holmes contradict it within a page or two.",
+      "themes": [
+        "love"
+      ],
+      "characters": [
+        "john-watson",
+        "sherlock-holmes",
+        "mary-morstan"
+      ],
+      "cloze": [
+        "automaton",
+        "inhuman"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "techniques": []
+    },
+    {
+      "id": "a-mere-unit",
+      "text": "A client is to me a mere unit⁠—a factor in a problem. The emotional qualities are antagonistic to clear reasoning.",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 2",
+      "stage": "the-problem",
+      "context": "His reply to the charge of being a calculating machine.",
+      "analysis": "The arithmetic vocabulary — unit, factor, problem — is deliberate, and Holmes goes on to prove it with an anecdote about a charming poisoner. The rule is sound as method and useless as a way to live, which the novel demonstrates by having the client marry the narrator.",
+      "themes": [
+        "evidence",
+        "love"
+      ],
+      "characters": [
+        "sherlock-holmes"
+      ],
+      "cloze": [
+        "unit",
+        "factor"
+      ],
+      "source": "Standard Ebooks text, Chapter 2",
+      "techniques": []
+    },
+    {
+      "id": "september-evening",
+      "text": "It was a September evening, and not yet seven o’clock, but the day had been a dreary one, and a dense drizzly fog lay low upon the great city. Mud-colored clouds drooped sadly over the muddy streets.",
+      "speaker": "Dr John Watson",
+      "reference": "Chapter 3",
+      "stage": "the-problem",
+      "context": "The drive to the Lyceum with Mary Morstan.",
+      "analysis": "Fog is Doyle's London the way the moor is his Devon, and this paragraph fixes the image for the whole Holmes canon. The clouds 'drooped sadly' before anyone in the cab has admitted to sadness; Watson goes on to say he is not subject to impressions, having just written one down.",
+      "themes": [
+        "empire"
+      ],
+      "techniques": [
+        "setting-as-mood"
+      ],
+      "characters": [
+        "john-watson"
+      ],
+      "cloze": [
+        "fog",
+        "drooped"
+      ],
+      "source": "Standard Ebooks text, Chapter 3"
+    },
+    {
+      "id": "the-sign-of-the-four",
+      "text": "‘The sign of the four⁠—Jonathan Small, Muhammad Singh, Abdullah Khan, Dost Akbar.’",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 3",
+      "stage": "the-problem",
+      "context": "Reading the paper found in Captain Morstan's desk.",
+      "analysis": "The title of the novel is a list of four names, three of them Indian, read aloud in a cab in the Strand. Doyle gives the reader the whole conspiracy in Chapter 3 and relies on nobody being able to make sense of it, which is the book's method in miniature: the facts are all present and the story that connects them is thirty years away.",
+      "themes": [
+        "empire",
+        "possession"
+      ],
+      "characters": [
+        "sherlock-holmes",
+        "jonathan-small"
+      ],
+      "cloze": [
+        "four"
+      ],
+      "source": "Standard Ebooks text, Chapter 3",
+      "techniques": []
+    },
+    {
+      "id": "wooden-legs",
+      "text": "Our father would never tell us what it was he feared, but he had a most marked aversion to men with wooden legs.",
+      "speaker": "Thaddeus Sholto",
+      "reference": "Chapter 4",
+      "stage": "pondicherry-lodge",
+      "context": "Explaining his father's last years at Pondicherry Lodge.",
+      "analysis": "A guilty conscience reduced to a single phobia, and told deadpan by a son who thinks it a whim. The detail also does the plot's work: it announces the villain's signature two chapters before his footprint, so that the reader is ahead of the police and behind Holmes, which is where Doyle likes to keep them.",
+      "themes": [
+        "empire",
+        "possession"
+      ],
+      "characters": [
+        "thaddeus-sholto",
+        "jonathan-small"
+      ],
+      "cloze": [
+        "wooden"
+      ],
+      "source": "Standard Ebooks text, Chapter 4",
+      "techniques": []
+    },
+    {
+      "id": "eliminated-the-impossible",
+      "text": "How often have I said to you that when you have eliminated the impossible whatever remains, however improbable, must be the truth?",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 6",
+      "stage": "pondicherry-lodge",
+      "context": "Working out how the killer entered a room bolted from inside.",
+      "analysis": "The most quoted sentence in the canon appears here as a rebuke — 'how often have I said' — as if it were already an old rule. It is a principle of exclusion rather than discovery: it tells you what to keep, not how to see it, and the scene shows Holmes doing the seeing first, on the sill and in the dust.",
+      "themes": [
+        "evidence"
+      ],
+      "techniques": [
+        "deduction"
+      ],
+      "characters": [
+        "sherlock-holmes",
+        "john-watson"
+      ],
+      "cloze": [
+        "impossible",
+        "improbable"
+      ],
+      "source": "Standard Ebooks text, Chapter 6"
+    },
+    {
+      "id": "stern-facts",
+      "text": "Bad business! Bad business! Stern facts here⁠—no room for theories.",
+      "speaker": "Inspector Athelney Jones",
+      "reference": "Chapter 6",
+      "stage": "pondicherry-lodge",
+      "context": "Arriving at the murder scene and finding Holmes already there.",
+      "analysis": "He says facts and then produces a theory within a minute, arresting the brother of the dead man on the grounds of his manner. The line is Doyle's summary of official method: confidence mistaken for evidence, and the word 'stern' doing the work that observation should.",
+      "themes": [
+        "evidence"
+      ],
+      "techniques": [
+        "foils"
+      ],
+      "characters": [
+        "athelney-jones",
+        "thaddeus-sholto"
+      ],
+      "cloze": [
+        "theories"
+      ],
+      "source": "Standard Ebooks text, Chapter 6"
+    },
+    {
+      "id": "toby-over-the-force",
+      "text": "I would rather have Toby’s help than that of the whole detective force of London.",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 6",
+      "stage": "pondicherry-lodge",
+      "context": "Sending Watson to Lambeth to borrow a dog.",
+      "analysis": "A compliment to a dog and an insult to the police in one sentence, and the book will qualify it two chapters later when Toby leads them to a barrel. The comparison is exact, though: both the dog and the force follow the strongest signal, and Holmes values the animal because it never pretends to a theory.",
+      "themes": [
+        "evidence"
+      ],
+      "techniques": [
+        "foils"
+      ],
+      "characters": [
+        "sherlock-holmes",
+        "toby"
+      ],
+      "cloze": [
+        "Toby"
+      ],
+      "source": "Standard Ebooks text, Chapter 6"
+    },
+    {
+      "id": "half-pay-surgeon",
+      "text": "Worse still, she was rich. If Holmes’s researches were successful, she would be an heiress. Was it fair, was it honorable, that a half-pay surgeon should take such advantage of an intimacy which chance had brought about? Might she not look upon me as a mere vulgar fortune-seeker?",
+      "speaker": "Dr John Watson",
+      "reference": "Chapter 7",
+      "stage": "the-trail",
+      "context": "In the cab with Mary Morstan after the night at Pondicherry Lodge.",
+      "analysis": "'Worse still' is the give-away: wealth is listed as a disaster. Watson's questions are the marriage plot's usual obstacle turned inside out, since the woman's money bars the man, and the treasure that everyone else is chasing is the one thing he needs to lose. Doyle lets him say so almost aloud.",
+      "themes": [
+        "class",
+        "love"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "john-watson",
+        "mary-morstan"
+      ],
+      "cloze": [
+        "heiress",
+        "fortune-seeker"
+      ],
+      "source": "Standard Ebooks text, Chapter 7"
+    },
+    {
+      "id": "see-everything",
+      "text": "They can go everywhere, see everything, overhear everyone.",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 8",
+      "stage": "the-trail",
+      "context": "On the Baker Street Irregulars, dispatched to search both banks of the Thames for the Aurora.",
+      "analysis": "Three parallel clauses with three universal pronouns, and it is a description of street children. The Irregulars are invisible because nobody in Victorian London looks at them, and Holmes turns that neglect into an instrument; the sentence is also a definition of what a detective would like to be.",
+      "themes": [
+        "evidence",
+        "class"
+      ],
+      "characters": [
+        "sherlock-holmes"
+      ],
+      "cloze": [
+        "everywhere",
+        "overhear"
+      ],
+      "source": "Standard Ebooks text, Chapter 8",
+      "techniques": []
+    },
+    {
+      "id": "sleepless-night",
+      "text": "He was wrapped in some sort of dark ulster or blanket, which left only his face exposed; but that face was enough to give a man a sleepless night. Never have I seen features so deeply marked with all bestiality and cruelty.",
+      "speaker": "Dr John Watson",
+      "reference": "Chapter 10",
+      "stage": "the-river",
+      "context": "Watson's first sight of Tonga on the deck of the Aurora, moments before he and Holmes shoot him.",
+      "analysis": "The passage should be read against Small's account two chapters later, where the same man is faithful, resourceful and grieving. Watson sees a face for a few seconds across water at night and reports character; the 'bestiality' is supplied by the gazetteer Holmes read aloud in Chapter 8. The narration manufactures a savage in order to justify two revolvers, and the novel never notices.",
+      "themes": [
+        "race",
+        "empire"
+      ],
+      "characters": [
+        "john-watson",
+        "tonga"
+      ],
+      "cloze": [
+        "sleepless",
+        "cruelty"
+      ],
+      "source": "Standard Ebooks text, Chapter 10",
+      "techniques": []
+    },
+    {
+      "id": "curse-of-the-treasure",
+      "text": "It was an evil day for me when first I clapped eyes upon the merchant Achmet and had to do with the Agra treasure, which never brought anything but a curse yet upon the man who owned it. To him it brought murder, to Major Sholto it brought fear and guilt, to me it has meant slavery for life.",
+      "speaker": "Jonathan Small",
+      "reference": "Chapter 11",
+      "stage": "the-treasure",
+      "context": "In the police launch, handcuffed, as the empty box is carried away.",
+      "analysis": "Small's sentence has the shape of a ledger — three owners, three costs — and it is the moral of the book, spoken by the man with the least right to it. Doyle gives the stolen-treasure curse to a convict rather than a narrator, so that it arrives as grievance rather than as sermon.",
+      "themes": [
+        "possession",
+        "empire"
+      ],
+      "techniques": [
+        "frame-narrative"
+      ],
+      "characters": [
+        "jonathan-small"
+      ],
+      "cloze": [
+        "curse",
+        "slavery"
+      ],
+      "source": "Standard Ebooks text, Chapter 11"
+    },
+    {
+      "id": "gained-a-treasure",
+      "text": "Whoever had lost a treasure, I knew that night that I had gained one.",
+      "speaker": "Dr John Watson",
+      "reference": "Chapter 11",
+      "stage": "the-treasure",
+      "context": "The last sentence of the chapter, after the empty chest and the proposal.",
+      "analysis": "The sentence is built on a substitution the whole novel has been arranging: the jewels go into the Thames so that a woman can be called a treasure without irony. Watson's 'that night' quietly dates the engagement to the same hour as the arrest, and the chapter closes on the one theft the book approves of.",
+      "themes": [
+        "love",
+        "class"
+      ],
+      "techniques": [
+        "retrospective-narration"
+      ],
+      "characters": [
+        "john-watson",
+        "mary-morstan"
+      ],
+      "cloze": [
+        "treasure",
+        "gained"
+      ],
+      "source": "Standard Ebooks text, Chapter 11"
+    },
+    {
+      "id": "a-pretty-justice",
+      "text": "A pretty justice! Whose loot is this, if it is not ours? Where is the justice that I should give it up to those who have never earned it? Look how I have earned it! Twenty long years in that fever-ridden swamp, all day at work under the mangrove-tree, all night chained up in the filthy convict-huts",
+      "speaker": "Jonathan Small",
+      "reference": "Chapter 12",
+      "stage": "smalls-story",
+      "context": "Answering Holmes's suggestion that throwing away the jewels was hardly justice.",
+      "analysis": "He calls it loot, which concedes the theft and claims the title anyway, and the claim rests entirely on suffering: he has paid for the treasure in years, so it is his. The speech is the closest the novel comes to a critique of empire, and it is made by a man who took part in a murder, which keeps the reader from agreeing comfortably.",
+      "themes": [
+        "possession",
+        "empire"
+      ],
+      "techniques": [
+        "frame-narrative"
+      ],
+      "characters": [
+        "jonathan-small",
+        "sherlock-holmes"
+      ],
+      "cloze": [
+        "loot",
+        "earned"
+      ],
+      "source": "Standard Ebooks text, Chapter 12"
+    },
+    {
+      "id": "love-is-an-emotional-thing",
+      "text": "But love is an emotional thing, and whatever is emotional is opposed to that true cold reason which I place above all things. I should never marry myself, lest I bias my judgment.",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 12",
+      "stage": "smalls-story",
+      "context": "His response to the news of Watson's engagement.",
+      "analysis": "He has just praised Mary's genius for detection, so the objection is not to her but to the category. 'Lest I bias my judgment' treats marriage as a contamination of the instrument, and the syntax — a general law, then a personal rule — is how Holmes always moves. The book has spent twelve chapters showing that the rule protects him from nothing.",
+      "themes": [
+        "love",
+        "evidence"
+      ],
+      "characters": [
+        "sherlock-holmes",
+        "john-watson",
+        "mary-morstan"
+      ],
+      "cloze": [
+        "emotional",
+        "reason"
+      ],
+      "source": "Standard Ebooks text, Chapter 12",
+      "techniques": []
+    },
+    {
+      "id": "the-division",
+      "text": "“The division seems rather unfair,” I remarked. “You have done all the work in this business. I get a wife out of it, Jones gets the credit, pray what remains for you?”",
+      "speaker": "Dr John Watson",
+      "reference": "Chapter 12",
+      "stage": "smalls-story",
+      "context": "The closing exchange at Baker Street after Small has been taken away.",
+      "analysis": "Watson has been arguing about fair shares for twelve chapters — pearls, annuities, the four, the Crown — and he ends by dividing the case itself like a treasure. The question is set up as a feed line, and it is: the answer is the novel's last sentence.",
+      "themes": [
+        "possession",
+        "love"
+      ],
+      "characters": [
+        "john-watson",
+        "sherlock-holmes",
+        "athelney-jones"
+      ],
+      "cloze": [
+        "wife",
+        "credit"
+      ],
+      "source": "Standard Ebooks text, Chapter 12",
+      "techniques": []
+    },
+    {
+      "id": "the-cocaine-bottle",
+      "text": "“For me,” said Sherlock Holmes, “there still remains the cocaine-bottle.” And he stretched his long white hand up for it.",
+      "speaker": "Sherlock Holmes",
+      "reference": "Chapter 12",
+      "stage": "smalls-story",
+      "context": "The last sentence of the novel.",
+      "analysis": "The book began with the syringe and ends with the hand reaching for it, so the case has been a parenthesis in an addiction. 'Still remains' echoes the precept about eliminating the impossible: when the problem is removed, what is left is the drug. Doyle refuses the reassurance a detective story usually ends on.",
+      "themes": [
+        "love"
+      ],
+      "techniques": [
+        "symbolic-objects"
+      ],
+      "characters": [
+        "sherlock-holmes"
+      ],
+      "cloze": [
+        "cocaine-bottle"
+      ],
+      "source": "Standard Ebooks text, Chapter 12"
+    }
+  ],
+  "timeline": [
+    {
+      "year": 1857,
+      "label": "The Indian uprising begins",
+      "detail": "Jonathan Small's confession places the theft of the Agra treasure during the siege of the fort that year.",
+      "kind": "context"
+    },
+    {
+      "year": 1858,
+      "label": "A British penal settlement is established at Port Blair in the Andaman Islands",
+      "detail": "Small's twenty years there, and the convict-guard officers Morstan and Sholto, come from this history.",
+      "kind": "context"
+    },
+    {
+      "year": 1859,
+      "label": "Arthur Conan Doyle born in Edinburgh",
+      "detail": "He trained as a doctor, and Watson's half-pay army surgeon is a colleague of sorts.",
+      "kind": "author"
+    },
+    {
+      "year": 1887,
+      "label": "A Study in Scarlet appears in Beeton's Christmas Annual",
+      "detail": "Holmes and Watson first meet; The Sign of the Four opens with Holmes reviewing Watson's write-up of it.",
+      "kind": "work"
+    },
+    {
+      "year": 1889,
+      "label": "Dinner at the Langham Hotel with Oscar Wilde",
+      "detail": "The American editor J. M. Stoddart commissioned a story from each; Wilde's became The Picture of Dorian Gray.",
+      "kind": "work"
+    },
+    {
+      "year": 1890,
+      "label": "The Sign of the Four printed complete in Lippincott's Monthly Magazine",
+      "detail": "February number. Spencer Blackett's book edition followed in October under the shorter title The Sign of Four.",
+      "kind": "work"
+    },
+    {
+      "year": 1891,
+      "label": "The Strand Magazine begins the Holmes short stories",
+      "detail": "'A Scandal in Bohemia' opens in July; the popularity that followed sent readers back to the two novels.",
+      "kind": "reception"
+    },
+    {
+      "year": 1893,
+      "label": "Doyle kills Holmes at the Reichenbach Falls in 'The Final Problem'",
+      "detail": "The detective who ends this novel reaching for cocaine was, his author felt, taking up too much of his life.",
+      "kind": "author"
+    },
+    {
+      "year": 1923,
+      "label": "Maurice Elvey's silent film The Sign of Four",
+      "detail": "Eille Norwood, the most prolific screen Holmes of the silent era, plays the detective.",
+      "kind": "reception"
+    },
+    {
+      "year": 1932,
+      "label": "Arthur Wontner's sound film",
+      "detail": "Graham Cutts directs; the treasure plot and the river chase survive, the Agra chapters are compressed.",
+      "kind": "reception"
+    },
+    {
+      "year": 1930,
+      "label": "Death of Arthur Conan Doyle",
+      "detail": "By then he had written four Holmes novels and fifty-six stories, and regarded them as the least of his work.",
+      "kind": "author"
+    }
+  ],
+  "places": [
+    {
+      "name": "221B Baker Street",
+      "lat": 51.5237,
+      "lon": -0.1585,
+      "note": "Where the novel opens with a syringe and closes with a bottle; the Irregulars are briefed here."
+    },
+    {
+      "name": "The Lyceum Theatre, Strand",
+      "lat": 51.5116,
+      "lon": -0.12,
+      "note": "The third pillar from the left, where Mary Morstan is told to wait at seven o'clock."
+    },
+    {
+      "name": "Upper Norwood",
+      "lat": 51.418,
+      "lon": -0.085,
+      "note": "Pondicherry Lodge, Major Sholto's house, where Bartholomew is found dead in a bolted room."
+    },
+    {
+      "name": "Lambeth",
+      "lat": 51.495,
+      "lon": -0.117,
+      "note": "Pinchin Lane, the bird-stuffer's shop where Toby is borrowed at midnight."
+    },
+    {
+      "name": "Camberwell",
+      "lat": 51.474,
+      "lon": -0.092,
+      "note": "Mrs Cecil Forrester's house, where Mary lives and where the empty chest is opened."
+    },
+    {
+      "name": "Plumstead Marshes",
+      "lat": 51.495,
+      "lon": 0.1,
+      "note": "Where the Aurora runs aground and Small's wooden leg sticks in the mud."
+    },
+    {
+      "name": "Agra Fort",
+      "lat": 27.1795,
+      "lon": 78.0211,
+      "note": "Where Small and three Sikh soldiers murder the merchant Achmet and hide the treasure in 1857."
+    },
+    {
+      "name": "Port Blair, Andaman Islands",
+      "lat": 11.6234,
+      "lon": 92.7265,
+      "note": "The convict settlement where Small serves twenty years and Sholto and Morstan command the guard."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "A detective story that is really an imperial romance",
+      "summary": "Readers since the 1980s have argued that the London mystery is a frame for a story about colonial plunder: the treasure, the poison, the convict and the islander all come from India, and the book's real subject is what the empire sends home.",
+      "counter": "Doyle shows no sign of intending a critique. Small is a murderer, Tonga is a caricature, and the Crown's claim on the jewels goes unquestioned by everyone but the convict."
+    },
+    {
+      "position": "The novel as a study in Holmes's psychology",
+      "summary": "The cocaine frame, the boredom, the refusal of love and the reaching hand at the end make this the most inward of the Holmes books, and a portrait of a man whose gift is also a compulsion.",
+      "counter": "The middle chapters are pure procedure — dog, boys, launch — and the frame is only two pages at each end. The psychology may be a garnish Doyle added to give a magazine number a shape."
+    },
+    {
+      "position": "Watson's book, not Holmes's",
+      "summary": "The love plot, the anxiety about money and the retrospective hints of a happy ending give Watson a narrative of his own for the only time in the canon, and the case is arranged so that his story rather than Holmes's gets a resolution.",
+      "counter": "Doyle's later stories drop Mary almost without comment, which suggests he regarded the marriage as a device for closing one book rather than a change in the series."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "How far is The Sign of the Four a novel about empire rather than about detection?",
+      "focus": "The Agra backstory, the Andaman setting and what the treasure means",
+      "plan": [
+        "Start from the title: four names, three of them Indian, read aloud in a London cab before anyone can interpret them.",
+        "Trace the objects — pearls, plan, thorns, chest — and show that every clue Holmes reads was made abroad.",
+        "Use Small's confession in Chapter 12 as a second novel with its own values: an oath, a betrayal, a claim founded on suffering.",
+        "Set his 'pretty justice' speech against the Crown's claim and Holmes's indifference to who gets the money.",
+        "Conclude on the empty box: the novel disposes of the treasure rather than deciding whom it belongs to."
+      ]
+    },
+    {
+      "question": "'Love is an emotional thing, and whatever is emotional is opposed to that true cold reason.' How does the novel test Holmes's claim?",
+      "focus": "Method, feeling and the double ending",
+      "plan": [
+        "Establish the rule in Chapters 1 and 2: detection as exact science, the client as a unit.",
+        "Show Watson's narration breaking the rule from the moment Mary enters, and his silence in the cab in Chapter 7.",
+        "Examine how the plot is shaped to serve the love story: the treasure must be lost before Watson can speak.",
+        "Weigh Holmes's praise of Mary's genius against his refusal to marry — the objection is to a category, not a person.",
+        "Close on the two last sentences, a wife and a cocaine-bottle, and decide whether the book prefers one."
+      ]
+    },
+    {
+      "question": "Discuss the presentation of Tonga.",
+      "focus": "Colonial description, narrative voice and the gap between two accounts",
+      "plan": [
+        "Begin with the gazetteer in Chapter 8: Tonga is defined by a reference book before he appears.",
+        "Analyse Watson's description on the river, noting how little he could actually see and how much he reports.",
+        "Compare Small's account in Chapter 12 — nursing, loyalty, grief — which the plot depends on and the narration ignores.",
+        "Consider Doyle's decision to give Tonga no speech at all, and what it does to the reader's ability to judge him.",
+        "Conclude on how the two accounts can be taught together, as evidence of how a Victorian narrative manufactures a 'savage'."
+      ]
+    },
+    {
+      "question": "How does Doyle use Athelney Jones and Toby to define Holmes's method?",
+      "focus": "Foils, evidence and the possibility of honest error",
+      "plan": [
+        "Set out Jones's 'stern facts' and his immediate theory: confidence presented as evidence.",
+        "Contrast Holmes's handling of the death-room, where every inference is shown and checkable.",
+        "Turn to Toby: praised over the whole detective force, then led six miles to the wrong barrel.",
+        "Argue that the dog's failure is the important one, because it shows the method can be wrong without being dishonest.",
+        "End with the division of rewards in Chapter 12: Jones takes the credit, and Holmes does not mind."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Holmes calls the client a mere unit. Is he ever actually unkind to Mary Morstan, or only about her?",
+    "Small says the treasure never brought anything but a curse. Does the novel believe him, or is that just what a caught man says?",
+    "Why does Doyle let Watson tell us he is happily married before the case is over? What does the reader lose or gain?",
+    "Read Watson's description of Tonga next to Small's account of him. Which does the plot need, and which does the narration prefer?",
+    "The book opens with cocaine and closes with it. What would change if those two pages were cut?"
+  ],
+  "related": [
+    {
+      "href": "/books/adventures-of-sherlock-holmes/",
+      "why": "The twelve Strand stories that followed within a year and made Holmes a household name; the method here is the same, at magazine length."
+    },
+    {
+      "href": "/books/the-moonstone/",
+      "why": "An earlier English detective novel about an Indian jewel that carries its curse home; Doyle's plot is in many ways an answer to it."
+    },
+    {
+      "href": "/books/dorian-gray/",
+      "why": "Commissioned at the same Langham Hotel dinner for the same magazine, and published by Lippincott's five months later."
+    },
+    {
+      "href": "/books/jekyll-and-hyde/",
+      "why": "Another late-Victorian short novel in which respectable London is unsettled by what a professional man keeps in a locked room."
+    },
+    {
+      "href": "/books/the-woman-in-white/",
+      "why": "Collins's earlier sensation novel supplies the pattern of a fortune, a threatened heiress and a secret that has to be told by the wrongdoer."
+    }
+  ],
+  "videos": []
+}

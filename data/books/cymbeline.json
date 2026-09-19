@@ -1,0 +1,1442 @@
+{
+  "slug": "cymbeline",
+  "title": "Cymbeline",
+  "author": "William Shakespeare",
+  "href": "/books/cymbeline/",
+  "buyUrl": "https://mybook.to/S59f",
+  "form": "play",
+  "genre": "Romance",
+  "period": "Shakespeare",
+  "written": "c. 1610",
+  "firstPublished": 1623,
+  "setting": "Ancient Britain in the reign of Cymbeline, with scenes in Rome and in the mountains of Wales above Milford Haven",
+  "readingTime": 190,
+  "difficulty": 4,
+  "lengthNote": "Around 3,300 lines — one of the longest plays in the Folio, with a last scene of nearly 600",
+  "openingLine": "You do not meet a man but frowns: our bloods No more obey the heavens than our courtiers Still seem as does the king.",
+  "summary": "Imogen, the king’s daughter, has married the man she chose instead of the stepbrother chosen for her, and the play punishes almost everyone for it. Her husband is banished, wagers on her chastity in Rome, loses to a lie built from a mole and a bracelet, and orders her killed. Shakespeare then sends her across Britain in boy’s clothes to a cave in Wales, where her lost brothers are living under other names, and to a headless body dressed in her husband’s suit. The final scene undoes every deception in turn, and the play’s real interest is in how much has to be confessed aloud before anyone can be forgiven.",
+  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "sourceText": {
+    "label": "Globe/Moby text of Cymbeline",
+    "note": "Line numbers follow the traditional Globe numbering. The only early text is the First Folio of 1623, where the play stands last among the tragedies; modern editions vary by a line or two and some divide Act I differently."
+  },
+  "atAGlance": [
+    {
+      "label": "Written",
+      "value": "c. 1610",
+      "note": "One of the late plays, close in date to The Winter’s Tale and a year or so before The Tempest."
+    },
+    {
+      "label": "First seen",
+      "value": "by 1611",
+      "note": "Simon Forman wrote out the plot from a performance, wager, trunk and mole included."
+    },
+    {
+      "label": "First printed",
+      "value": "1623",
+      "note": "No quarto exists. The Folio prints it as the last of the tragedies, and the label has never quite fitted."
+    },
+    {
+      "label": "Sources",
+      "value": "Holinshed and Boccaccio",
+      "note": "The British king and the Roman tribute come from the chronicles; the wager on a wife’s fidelity is a tale from the Decameron."
+    },
+    {
+      "label": "Shape",
+      "value": "Five acts, 27 scenes",
+      "note": "Three plots — the wager, the tribute and the lost princes — are kept apart for four acts and collapsed into one scene in the fifth."
+    }
+  ],
+  "structure": [
+    {
+      "id": "act-1",
+      "label": "Act I",
+      "title": "A marriage the king did not allow, and a bet the husband should not have taken",
+      "summary": "Imogen has married Posthumus, an orphan raised at court, and Cymbeline banishes him for it. In Rome, Iachimo goads Posthumus into staking his diamond ring on Imogen’s chastity. Iachimo travels to Britain, tries a direct seduction, is thrown off, and switches at once to the plan the play will run on: a trunk, supposedly full of valuables, left overnight in her bedchamber.",
+      "scenes": [
+        {
+          "ref": "1.1",
+          "title": "The banishment",
+          "summary": "Two gentlemen explain the marriage; Posthumus and Imogen exchange a ring and a bracelet as he leaves."
+        },
+        {
+          "ref": "1.2",
+          "title": "Cloten",
+          "summary": "The Queen’s son boasts of a fight he did not win."
+        },
+        {
+          "ref": "1.3",
+          "title": "Watching him go",
+          "summary": "Imogen asks Pisanio exactly how her husband looked as his ship shrank to nothing."
+        },
+        {
+          "ref": "1.4",
+          "title": "The wager",
+          "summary": "In Rome, Iachimo bets ten thousand ducats against Posthumus’s ring that he can seduce Imogen."
+        },
+        {
+          "ref": "1.5",
+          "title": "The Queen’s box",
+          "summary": "The Queen asks the doctor for poison; Cornelius gives her a sleeping draught instead."
+        },
+        {
+          "ref": "1.6",
+          "title": "The trunk",
+          "summary": "Iachimo slanders Posthumus, is rebuffed, apologises, and asks Imogen to keep a trunk safe in her chamber."
+        }
+      ]
+    },
+    {
+      "id": "act-2",
+      "label": "Act II",
+      "title": "A room described, and a husband convinced",
+      "summary": "Iachimo climbs out of the trunk while Imogen sleeps, notes the furnishings, the book she was reading and a mole on her breast, slips the bracelet off her arm and climbs back in. Cloten serenades her and is told he is worth less than her husband’s meanest garment. In Rome, Posthumus resists the description of the room, gives way at the bracelet, and is destroyed by the mole.",
+      "scenes": [
+        {
+          "ref": "2.1",
+          "title": "Bowls",
+          "summary": "Cloten loses at bowls and swears at everyone."
+        },
+        {
+          "ref": "2.2",
+          "title": "The bedchamber",
+          "summary": "Iachimo takes an inventory of a sleeping woman and her room, and steals the bracelet."
+        },
+        {
+          "ref": "2.3",
+          "title": "The aubade",
+          "summary": "Cloten’s musicians sing to Imogen; she compares him unfavourably to Posthumus’s clothes."
+        },
+        {
+          "ref": "2.4",
+          "title": "The proof",
+          "summary": "Iachimo reports the room, produces the bracelet and describes the mole; Posthumus surrenders the ring."
+        },
+        {
+          "ref": "2.5",
+          "title": "Half-workers",
+          "summary": "Alone, Posthumus curses all women, his mother included."
+        }
+      ]
+    },
+    {
+      "id": "act-3",
+      "label": "Act III",
+      "title": "Rome demands tribute, and Imogen leaves the court",
+      "summary": "Cymbeline, pushed by the Queen and Cloten, refuses Caesar’s tribute and invites a war. Posthumus writes two letters: one to Imogen summoning her to Milford Haven, one to Pisanio ordering him to kill her there. Pisanio reads her the second on the road, refuses to obey it, and dresses her as a boy. Meanwhile, in the Welsh mountains, an old man called Morgan is bringing up two boys who do not know they are the king’s sons.",
+      "scenes": [
+        {
+          "ref": "3.1",
+          "title": "The tribute",
+          "summary": "Caius Lucius demands the Roman tribute; Cloten and the Queen answer for Britain."
+        },
+        {
+          "ref": "3.2",
+          "title": "Two letters",
+          "summary": "Pisanio reads the order to murder Imogen; Imogen reads the invitation to Milford."
+        },
+        {
+          "ref": "3.3",
+          "title": "The cave",
+          "summary": "Belarius and the boys he calls his sons greet the morning outside their cave."
+        },
+        {
+          "ref": "3.4",
+          "title": "The road to Milford",
+          "summary": "Pisanio shows Imogen the death warrant, refuses it, and gives her a boy’s clothes and the Queen’s drug."
+        },
+        {
+          "ref": "3.5",
+          "title": "The court empties",
+          "summary": "Lucius departs; Imogen is missed; Cloten forces Pisanio to hand over Posthumus’s suit."
+        },
+        {
+          "ref": "3.6",
+          "title": "Fidele",
+          "summary": "Starving, Imogen enters the cave and is taken in as a boy called Fidele."
+        },
+        {
+          "ref": "3.7",
+          "title": "Rome",
+          "summary": "The Senate orders Lucius to lead the army against Britain."
+        }
+      ]
+    },
+    {
+      "id": "act-4",
+      "label": "Act IV",
+      "title": "A body in the wrong clothes",
+      "summary": "Cloten arrives in Wales dressed as Posthumus, intending to kill him and rape Imogen, and is beheaded by Guiderius in a fight that lasts a few lines. Imogen, sick, has taken the Queen’s drug and is laid out as dead beside the headless body. When she wakes she recognises the clothes and grieves for her husband over the corpse of the man she despised. Lucius finds the boy weeping and takes him into service.",
+      "scenes": [
+        {
+          "ref": "4.1",
+          "title": "Cloten in Wales",
+          "summary": "Cloten admires himself in Posthumus’s garments and rehearses his revenge."
+        },
+        {
+          "ref": "4.2",
+          "title": "Fidele’s funeral",
+          "summary": "Guiderius kills Cloten; the brothers sing over Fidele; Imogen wakes beside a headless man."
+        },
+        {
+          "ref": "4.3",
+          "title": "The king alone",
+          "summary": "Cymbeline has lost his wife to madness, his son-in-law and his daughter in a day."
+        },
+        {
+          "ref": "4.4",
+          "title": "To the war",
+          "summary": "The boys insist on fighting for a Britain that has never acknowledged them."
+        }
+      ]
+    },
+    {
+      "id": "act-5",
+      "label": "Act V",
+      "title": "Everyone confesses",
+      "summary": "Posthumus, holding the bloody cloth that he thinks proves his wife dead, repents before he learns she is innocent, and fights for Britain disguised as a peasant. An old man and two boys hold a lane and turn the battle. In prison, Posthumus dreams of his dead family and of Jupiter descending on an eagle. The last scene assembles every survivor in Cymbeline’s tent and works through the deceptions one by one until the king can pardon everybody and pay the tribute he went to war to refuse.",
+      "scenes": [
+        {
+          "ref": "5.1",
+          "title": "The bloody cloth",
+          "summary": "Posthumus repents his order and resolves to die fighting for Britain."
+        },
+        {
+          "ref": "5.2",
+          "title": "The battle",
+          "summary": "Posthumus, as a peasant, disarms Iachimo; the Britons break and are rallied."
+        },
+        {
+          "ref": "5.3",
+          "title": "The lane",
+          "summary": "Posthumus describes how an old man and two boys saved the day, and gives himself up as a Roman."
+        },
+        {
+          "ref": "5.4",
+          "title": "The prison",
+          "summary": "The ghosts of the Leonati petition Jupiter, who descends and leaves a tablet."
+        },
+        {
+          "ref": "5.5",
+          "title": "The reckoning",
+          "summary": "The Queen’s confession is reported, Iachimo confesses, Imogen is revealed, the princes are restored and all are pardoned."
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "imogen",
+      "name": "Imogen",
+      "role": "Cymbeline’s daughter, secretly married to Posthumus",
+      "summary": "She is the only character who is right about everything and believed by no one. Her husband takes a foreigner’s word over hers, her father calls her marriage baseness, and even the audience watches her weep over the wrong corpse. What the play gives her instead of vindication is movement: she is the one who leaves the court, crosses the country and walks into the cave.",
+      "clue": "A princess who crosses her country dressed as a boy called Fidele, and mourns her husband over a headless body that is not his.",
+      "firstAppearance": "1.1",
+      "traits": [
+        "exact",
+        "quick-tempered",
+        "unbroken"
+      ],
+      "relationships": [
+        {
+          "to": "posthumus",
+          "label": "married to",
+          "kind": "marriage",
+          "note": "Separated in the first scene and reunited in the last; he strikes her before he knows her."
+        },
+        {
+          "to": "cymbeline",
+          "label": "daughter of",
+          "kind": "family"
+        },
+        {
+          "to": "iachimo",
+          "label": "slandered by",
+          "kind": "enemy",
+          "stages": [
+            "act-1",
+            "act-2"
+          ]
+        },
+        {
+          "to": "cloten",
+          "label": "pursued by",
+          "kind": "enemy",
+          "stages": [
+            "act-1",
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "pisanio",
+          "label": "protected by",
+          "kind": "service"
+        },
+        {
+          "to": "guiderius",
+          "label": "sister of, unknowing",
+          "kind": "family",
+          "stages": [
+            "act-3",
+            "act-4",
+            "act-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "posthumus",
+      "name": "Posthumus Leonatus",
+      "role": "An orphan raised at court, banished for marrying Imogen",
+      "summary": "Introduced as the best man in Britain, he needs less than a scene in Rome to bet on his wife’s body and less than one more to believe he has lost. His repentance in Act V is the play’s strangest move: he decides Imogen was worth more than her fault before he learns she had none, which is the only kind of forgiveness the play seems to trust.",
+      "clue": "A banished husband who stakes a diamond ring on his wife’s chastity, orders her death by letter, and fights for Britain dressed as a peasant.",
+      "firstAppearance": "1.1",
+      "traits": [
+        "idealised",
+        "credulous",
+        "penitent"
+      ],
+      "relationships": [
+        {
+          "to": "imogen",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "iachimo",
+          "label": "wagers with, then forgives",
+          "kind": "rival"
+        },
+        {
+          "to": "pisanio",
+          "label": "master of",
+          "kind": "service"
+        },
+        {
+          "to": "cymbeline",
+          "label": "banished by",
+          "kind": "enemy",
+          "stages": [
+            "act-1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iachimo",
+      "name": "Iachimo",
+      "role": "An Italian gentleman who bets he can seduce Imogen",
+      "summary": "He never lays a hand on her, which is the point: his victory is entirely a matter of description. From the trunk he takes notes on the room like a surveyor, and in Rome he retails them in the order most likely to work. His confession in the last scene is nearly as long as the crime, and just as ornamented.",
+      "clue": "A visitor from Rome who hides in a trunk, catalogues a sleeping woman’s bedroom and wins a wager with a bracelet and a mole.",
+      "firstAppearance": "1.4",
+      "traits": [
+        "observant",
+        "theatrical",
+        "ashamed at last"
+      ],
+      "relationships": [
+        {
+          "to": "posthumus",
+          "label": "deceives",
+          "kind": "rival"
+        },
+        {
+          "to": "imogen",
+          "label": "fails to seduce, then slanders",
+          "kind": "enemy",
+          "stages": [
+            "act-1",
+            "act-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cymbeline",
+      "name": "Cymbeline",
+      "role": "King of Britain",
+      "summary": "The title character is barely in the play and wrong whenever he is. He banishes the wrong man, trusts the wrong wife, refuses a tribute he later pays voluntarily, and has to be told the plot of his own life by other people in the final scene. His last decision, to pay Rome after beating it, is the one act of judgement the play lets him have.",
+      "clue": "A king who gives the play its name, banishes his son-in-law, goes to war over a tribute and then pays it after winning.",
+      "firstAppearance": "1.1",
+      "traits": [
+        "easily led",
+        "absent",
+        "generous at the end"
+      ],
+      "relationships": [
+        {
+          "to": "imogen",
+          "label": "father of",
+          "kind": "family"
+        },
+        {
+          "to": "queen",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "belarius",
+          "label": "wronged, and robbed by",
+          "kind": "enemy"
+        },
+        {
+          "to": "guiderius",
+          "label": "father of, unknowing",
+          "kind": "family"
+        }
+      ]
+    },
+    {
+      "id": "queen",
+      "name": "The Queen",
+      "role": "Cymbeline’s second wife, Cloten’s mother",
+      "summary": "A stepmother out of a fairy tale who commissions poison from a doctor in the first act and speaks for British independence in the third. She never gets a name, dies offstage, and has her confession reported by the doctor she tried to use. The play is unsentimental about her: her patriotism is as counterfeit as her affection.",
+      "clue": "A nameless stepmother who orders poison, argues Britain’s case against Rome, and dies confessing she never loved the king.",
+      "firstAppearance": "1.1",
+      "traits": [
+        "plausible",
+        "poisonous"
+      ],
+      "relationships": [
+        {
+          "to": "cymbeline",
+          "label": "married to",
+          "kind": "marriage"
+        },
+        {
+          "to": "cloten",
+          "label": "mother of",
+          "kind": "family"
+        },
+        {
+          "to": "imogen",
+          "label": "false friend to",
+          "kind": "enemy",
+          "stages": [
+            "act-1",
+            "act-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cloten",
+      "name": "Cloten",
+      "role": "The Queen’s son, the husband the king intended for Imogen",
+      "summary": "A bully who cannot fence, bowl, sing or woo, and who is nonetheless dangerous because he has the Queen behind him. Imogen tells him he is worth less than her husband’s meanest garment, and he answers by putting on that garment to kill the husband in it. The play then beheads him in it, and the body becomes indistinguishable from the man he envied.",
+      "clue": "A prince who loses at bowls, hires musicians to serenade a woman who despises him, and dies wearing another man’s clothes.",
+      "firstAppearance": "1.2",
+      "traits": [
+        "boastful",
+        "violent",
+        "ridiculous until he is not"
+      ],
+      "relationships": [
+        {
+          "to": "queen",
+          "label": "son of",
+          "kind": "family"
+        },
+        {
+          "to": "imogen",
+          "label": "rejected suitor of",
+          "kind": "enemy"
+        },
+        {
+          "to": "guiderius",
+          "label": "killed by",
+          "kind": "enemy",
+          "stages": [
+            "act-4"
+          ]
+        },
+        {
+          "to": "posthumus",
+          "label": "wears the clothes of",
+          "kind": "doubling",
+          "stages": [
+            "act-3",
+            "act-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pisanio",
+      "name": "Pisanio",
+      "role": "Posthumus’s servant, left in Britain to attend Imogen",
+      "summary": "He is ordered by letter to murder his mistress and decides, without a soliloquy of agonising, simply not to. Everything that keeps Imogen alive — the boy’s clothes, the route to Milford, the drug he believes is a cordial — comes out of his pockets. He is lied to by everyone and lies to everyone, and remains the most honest person in the play.",
+      "clue": "A servant who reads his master’s order to kill his mistress, refuses it, and dresses her as a boy instead.",
+      "firstAppearance": "1.1",
+      "traits": [
+        "loyal",
+        "resourceful",
+        "disobedient in the right way"
+      ],
+      "relationships": [
+        {
+          "to": "posthumus",
+          "label": "serves",
+          "kind": "service"
+        },
+        {
+          "to": "imogen",
+          "label": "protects",
+          "kind": "service"
+        },
+        {
+          "to": "cloten",
+          "label": "bullied by",
+          "kind": "enemy",
+          "stages": [
+            "act-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "belarius",
+      "name": "Belarius",
+      "role": "A banished lord living in Wales as Morgan, who stole the king’s sons",
+      "summary": "Twenty years before the play he was falsely accused of treason, and his answer was to kidnap two infant princes and raise them in a cave. He speaks the play’s pastoral philosophy and admits in the same breath that he cannot make the boys believe it. Restoring them at the end costs him the only family he has.",
+      "clue": "An old man in a cave who calls himself Morgan, preaches the virtues of a low roof, and turns out to have kidnapped two princes.",
+      "firstAppearance": "3.3",
+      "traits": [
+        "wronged",
+        "sententious",
+        "self-sacrificing"
+      ],
+      "relationships": [
+        {
+          "to": "guiderius",
+          "label": "foster-father of",
+          "kind": "family"
+        },
+        {
+          "to": "arviragus",
+          "label": "foster-father of",
+          "kind": "family"
+        },
+        {
+          "to": "cymbeline",
+          "label": "banished by, and robbed",
+          "kind": "enemy"
+        }
+      ]
+    },
+    {
+      "id": "guiderius",
+      "name": "Guiderius",
+      "role": "Cymbeline’s elder son, raised as Polydore",
+      "summary": "He kills Cloten in a short scene and throws the head in a river, and reports it with a cheerfulness that would be shocking in any other play. Royalty, in his case, is a matter of impatience: he cannot bear the cave, and the play treats that restlessness as the proof of his birth.",
+      "clue": "A young man raised in a cave who beheads a prince in a fight of a few lines and sends the head downstream as an embassy to its mother.",
+      "firstAppearance": "3.3",
+      "traits": [
+        "impatient",
+        "fearless",
+        "blunt"
+      ],
+      "relationships": [
+        {
+          "to": "belarius",
+          "label": "foster-son of",
+          "kind": "family"
+        },
+        {
+          "to": "arviragus",
+          "label": "brother of",
+          "kind": "family"
+        },
+        {
+          "to": "imogen",
+          "label": "brother of, unknowing",
+          "kind": "family",
+          "stages": [
+            "act-3",
+            "act-4",
+            "act-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arviragus",
+      "name": "Arviragus",
+      "role": "Cymbeline’s younger son, raised as Cadwal",
+      "summary": "The gentler brother, who promises the boy Fidele flowers on his grave and then shares the funeral song. He and Guiderius love their sister before they know who she is, which the play uses as its argument that blood recognises blood without documents.",
+      "clue": "The younger of two brothers in a Welsh cave, who promises pale primroses and harebells for the grave of a boy he has known for days.",
+      "firstAppearance": "3.3",
+      "traits": [
+        "tender",
+        "eloquent"
+      ],
+      "relationships": [
+        {
+          "to": "belarius",
+          "label": "foster-son of",
+          "kind": "family"
+        },
+        {
+          "to": "guiderius",
+          "label": "brother of",
+          "kind": "family"
+        },
+        {
+          "to": "imogen",
+          "label": "brother of, unknowing",
+          "kind": "family",
+          "stages": [
+            "act-3",
+            "act-4",
+            "act-5"
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "evidence",
+      "name": "Evidence and what it proves",
+      "summary": "Nothing Iachimo reports is untrue. The tapestry, the chimney-piece, the bracelet and the mole are all exactly as described; what is false is the story attached to them. The play is unusually interested in how proof works — in what a token can and cannot establish — and its last scene is a long public audit of every piece of evidence the plot has relied on.",
+      "development": "A ring and a bracelet exchanged in 1.1 become a bet in 1.4, a stolen bracelet in 2.2, a conviction in 2.4 and a bloody cloth in 5.1, before the whole chain is read back in 5.5."
+    },
+    {
+      "id": "jealousy",
+      "name": "Jealousy on a wager",
+      "summary": "Posthumus is not jealous when the play begins; the emotion is manufactured in Rome by a man who treats a marriage as a proposition to be tested. Once installed, it works exactly as it does in Othello, but faster and with less pretence of reasoning: a description of a room is enough. Shakespeare then does what he refused to do for Othello and lets the husband live to find out.",
+      "development": "Resisted at 2.4, total by the end of the scene, and turned into a curse on all women in the soliloquy of 2.5; by 5.1 it has become repentance without information."
+    },
+    {
+      "id": "disguise",
+      "name": "Disguise and three names",
+      "summary": "Imogen becomes Fidele, the princes are Polydore and Cadwal, Belarius is Morgan, and Cloten dies dressed as Posthumus. The play keeps proving that clothes are a more reliable identification than faces: Imogen knows her husband by the shape of his leg and is wrong, and the brothers know Fidele as a brother and are right without knowing why.",
+      "development": "Adopted under pressure in Act III, tested to destruction over the headless body in Act IV, and stripped off one at a time in the last scene."
+    },
+    {
+      "id": "britain-and-rome",
+      "name": "Britain and Rome",
+      "summary": "The tribute plot puts the Queen and Cloten, the play’s villains, in charge of British patriotism, and gives the noblest lines about Britain to a woman planning to leave it. Cymbeline wins the war and pays the tribute anyway. Written a few years after James proclaimed himself king of Great Britain and made peace with Spain, the play is careful to make independence and submission both look like versions of the same thing.",
+      "development": "Refused in 3.1 on the villains’ advice, fought over in Act V, and settled at 5.5 by a victor who chooses to pay."
+    },
+    {
+      "id": "forgiveness",
+      "name": "Pardon as the last word",
+      "summary": "Everybody in the last scene has something to confess and the king forgives all of it, including a Roman general who came to conquer him. What makes the pardon more than a convention is its order: Posthumus forgives Iachimo before Cymbeline speaks, and had already forgiven Imogen in 5.1 for a crime she did not commit. Mercy, in this play, precedes the facts.",
+      "development": "Anticipated by Pisanio’s disobedience in 3.4, chosen by Posthumus in 5.1, and made state policy in 5.5."
+    },
+    {
+      "id": "nature-nurture",
+      "name": "Nature and nurture",
+      "summary": "Two princes brought up in a cave behave like princes; a prince brought up at court behaves like Cloten. Belarius argues the case for the simple life at length and admits that the boys’ blood keeps arguing back. The play appears to endorse the idea that royalty shows regardless of upbringing, and then undercuts it with a queen’s son who has had every advantage.",
+      "development": "Stated as a sermon in 3.3, demonstrated in the fight of 4.2 and the lane of 5.3, and confirmed by the recognitions of 5.5."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "stage-property",
+      "name": "Stage property",
+      "definition": "An object handled on stage that carries far more weight than its use in the scene explains.",
+      "inThisBook": "The ring, the bracelet, the trunk, the bloody cloth and Jupiter’s tablet are the plot: each changes hands as evidence, and the last scene is largely a matter of getting them back to their owners."
+    },
+    {
+      "id": "dramatic-irony",
+      "name": "Dramatic irony",
+      "definition": "The audience knows something a character on stage does not.",
+      "inThisBook": "Imogen’s lament over the headless body is the extreme case: the audience knows it is Cloten, knows why it is wearing Posthumus’s clothes, and has to watch her grief spend itself on the wrong man."
+    },
+    {
+      "id": "disguise",
+      "name": "Disguise",
+      "definition": "A character concealing their identity, so that the audience knows more than the people on stage do.",
+      "inThisBook": "Almost every character in Wales is under another name, and the recognitions in 5.5 have to be staged in sequence because so many are pending."
+    },
+    {
+      "id": "song",
+      "name": "Song",
+      "definition": "A sung passage standing outside the dialogue, free to say what the speaking characters cannot.",
+      "inThisBook": "Cloten hires a song to wake Imogen and the brothers speak one to bury her: the aubade and the dirge are the play’s two set pieces, and the Folio marks the funeral song to be spoken, not sung."
+    },
+    {
+      "id": "soliloquy",
+      "name": "Soliloquy",
+      "definition": "A character alone on stage, thinking aloud to the audience.",
+      "inThisBook": "Iachimo’s speech from the trunk is a soliloquy delivered over a sleeping woman; Posthumus gets two, one to curse all women and one to repent."
+    },
+    {
+      "id": "recognition-scene",
+      "name": "The recognition scene",
+      "definition": "A scene in which concealed identities and hidden facts are revealed to the characters, usually in public and usually all at once.",
+      "inThisBook": "The final scene runs more than twenty separate revelations in sequence, each triggered by the last, so that the audience, who knows everything, watches the characters catch up."
+    },
+    {
+      "id": "deus-ex-machina",
+      "name": "The god descends",
+      "definition": "A divine figure lowered onto the stage to resolve or interpret the action.",
+      "inThisBook": "Jupiter descends on an eagle in 5.4, leaves a riddling tablet and explains that he crosses those he loves best — an apology for the plot, delivered by the playwright’s machinery."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "not-meet-a-man-but-frowns",
+      "text": "You do not meet a man but frowns: our bloods No more obey the heavens than our courtiers Still seem as does the king.",
+      "speaker": "First Gentleman",
+      "reference": "1.1.1",
+      "stage": "act-1",
+      "context": "The opening lines, one gentleman explaining the court’s mood to another.",
+      "analysis": "The first word of the play is ‘seem’ in disguise: courtiers frown because the king frowns, whatever they feel. The verb is buried in a knotted sentence about blood and heavens, which is how the whole play talks — the exposition is famously hard to follow, and the difficulty announces a court where nobody says what they mean.",
+      "themes": [
+        "britain-and-rome"
+      ],
+      "techniques": [],
+      "characters": [
+        "cymbeline"
+      ],
+      "source": "Globe/Moby text, 1.1.1-3",
+      "cloze": [
+        "frowns",
+        "seem"
+      ]
+    },
+    {
+      "id": "basest-thing-avoid",
+      "text": "Thou basest thing, avoid! hence, from my sight! If after this command thou fraught the court With thy unworthiness, thou diest: away! Thou'rt poison to my blood.",
+      "speaker": "Cymbeline",
+      "reference": "1.1.147",
+      "stage": "act-1",
+      "context": "The king finds Posthumus still with Imogen after the sentence of banishment.",
+      "analysis": "The king’s first words in his own play are a string of four commands and a threat, and the word he reaches for is ‘poison’ — the substance his own wife has just been arranging to buy. Cymbeline mistakes the antidote for the toxin, which is the shape of every judgement he makes until the last scene.",
+      "themes": [
+        "evidence"
+      ],
+      "techniques": [
+        "dramatic-irony"
+      ],
+      "characters": [
+        "cymbeline",
+        "posthumus"
+      ],
+      "source": "Globe/Moby text, 1.1.147-150",
+      "cloze": [
+        "poison"
+      ]
+    },
+    {
+      "id": "broke-mine-eye-strings",
+      "text": "I would have broke mine eye-strings; crack'd them, but To look upon him, till the diminution Of space had pointed him sharp as my needle,",
+      "speaker": "Imogen",
+      "reference": "1.3.22",
+      "stage": "act-1",
+      "context": "Asking Pisanio how long he watched Posthumus’s ship.",
+      "analysis": "She imagines her husband shrinking with distance to the point of a needle and then to a gnat, and would rather damage her eyes than lose the view. The image is domestic and violent at once, which is Imogen’s register throughout: her love is exact to the point of injury, and she will later take the shape of a leg for proof.",
+      "themes": [
+        "evidence"
+      ],
+      "techniques": [],
+      "characters": [
+        "imogen",
+        "pisanio"
+      ],
+      "source": "Globe/Moby text, 1.3.22-24",
+      "cloze": [
+        "eye-strings",
+        "needle"
+      ]
+    },
+    {
+      "id": "wage-against-your-gold",
+      "text": "I will wage against your gold, gold to it: my ring I hold dear as my finger; 'tis part of it.",
+      "speaker": "Posthumus",
+      "reference": "1.4.124",
+      "stage": "act-1",
+      "context": "Accepting Iachimo’s wager in Rome.",
+      "analysis": "He says the ring is part of his body and stakes it in the same breath, so the bet is on his own flesh as well as Imogen’s. The scene is in prose, the only extended prose in the play, and the flat commercial vocabulary — wage, gold, hold — makes a marriage sound like a contract that can be tested for breach.",
+      "themes": [
+        "jealousy",
+        "evidence"
+      ],
+      "techniques": [
+        "stage-property"
+      ],
+      "characters": [
+        "posthumus",
+        "iachimo"
+      ],
+      "source": "Globe/Moby text, 1.4.124-125",
+      "cloze": [
+        "ring",
+        "finger"
+      ]
+    },
+    {
+      "id": "crickets-sing",
+      "text": "The crickets sing, and man's o'er-labour'd sense Repairs itself by rest. Our Tarquin thus Did softly press the rushes, ere he waken'd The chastity he wounded.",
+      "speaker": "Iachimo",
+      "reference": "2.2.14",
+      "stage": "act-2",
+      "context": "Climbing out of the trunk while Imogen sleeps.",
+      "analysis": "He names himself Tarquin, the rapist of Lucrece, before he has done anything, and then does nothing: the comparison is a fantasy he grants himself in place of the act. The crickets and the rushes make the speech sound like a lullaby, and the verse never raises its voice — the violation here is entirely one of looking.",
+      "themes": [
+        "evidence",
+        "jealousy"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "iachimo",
+        "imogen"
+      ],
+      "source": "Globe/Moby text, 2.2.14-17",
+      "cloze": [
+        "Tarquin",
+        "chastity"
+      ]
+    },
+    {
+      "id": "mole-cinque-spotted",
+      "text": "On her left breast A mole cinque-spotted, like the crimson drops I' the bottom of a cowslip: here's a voucher, Stronger than ever law could make:",
+      "speaker": "Iachimo",
+      "reference": "2.2.40",
+      "stage": "act-2",
+      "context": "Iachimo, still in the bedchamber, noting the detail that will convince Posthumus.",
+      "analysis": "The word he uses is ‘voucher’, a legal receipt, and he immediately ranks it above the law. A mole compared to a cowslip is the most delicate image in the play, and it is being entered as evidence. Shakespeare lets the beauty of the description and the ugliness of its purpose sit in the same three lines without comment.",
+      "themes": [
+        "evidence"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "iachimo",
+        "imogen"
+      ],
+      "source": "Globe/Moby text, 2.2.40-43",
+      "cloze": [
+        "mole",
+        "voucher"
+      ]
+    },
+    {
+      "id": "dragons-of-the-night",
+      "text": "Swift, swift, you dragons of the night, that dawning May bare the raven's eye! I lodge in fear; Though this a heavenly angel, hell is here.",
+      "speaker": "Iachimo",
+      "reference": "2.2.51",
+      "stage": "act-2",
+      "context": "Returning to the trunk as the clock strikes three.",
+      "analysis": "He asks night to go faster, the opposite of what a lover in a bedchamber would want, because he cannot bear the room. The rhymed couplet on ‘fear’ and ‘here’ closes the speech like a lid, and the clock striking immediately afterwards tells the audience that the whole inventory took the play about forty lines.",
+      "themes": [
+        "jealousy"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "iachimo"
+      ],
+      "source": "Globe/Moby text, 2.2.51-53",
+      "cloze": [
+        "dragons",
+        "hell"
+      ]
+    },
+    {
+      "id": "half-workers",
+      "text": "Is there no way for men to be but women Must be half-workers? We are all bastards;",
+      "speaker": "Posthumus",
+      "reference": "2.5.1",
+      "stage": "act-2",
+      "context": "Alone in Rome, after surrendering the ring.",
+      "analysis": "The complaint is with biology: men cannot be made without women, so no man can be sure of his own making. From a single supposed adultery he reaches universal illegitimacy in two lines, which is the speed at which jealousy reasons. The speech ends by resolving to write against women, and the play answers it by having a woman walk across Britain.",
+      "themes": [
+        "jealousy"
+      ],
+      "techniques": [
+        "soliloquy"
+      ],
+      "characters": [
+        "posthumus"
+      ],
+      "source": "Globe/Moby text, 2.5.1-2",
+      "cloze": [
+        "half-workers",
+        "bastards"
+      ]
+    },
+    {
+      "id": "britain-is-a-world-by-itself",
+      "text": "There be many Caesars, Ere such another Julius. Britain is A world by itself; and we will nothing pay For wearing our own noses.",
+      "speaker": "Cloten",
+      "reference": "3.1.13",
+      "stage": "act-3",
+      "context": "Answering the Roman ambassador’s demand for tribute.",
+      "analysis": "The most quotable statement of British independence in the play is given to its most contemptible character, and it ends on noses. Shakespeare had the Queen make the serious case a few lines later, but he lets Cloten speak first, so that the audience hears patriotism as a bully’s swagger before it hears it as an argument.",
+      "themes": [
+        "britain-and-rome"
+      ],
+      "techniques": [],
+      "characters": [
+        "cloten"
+      ],
+      "source": "Globe/Moby text, 3.1.13-16",
+      "cloze": [
+        "Britain",
+        "noses"
+      ]
+    },
+    {
+      "id": "horse-with-wings",
+      "text": "O, for a horse with wings! Hear'st thou, Pisanio? He is at Milford-Haven: read, and tell me How far 'tis thither. If one of mean affairs May plod it in a week, why may not I Glide thither in a day?",
+      "speaker": "Imogen",
+      "reference": "3.2.50",
+      "stage": "act-3",
+      "context": "On reading Posthumus’s letter asking her to meet him in Wales.",
+      "analysis": "The letter she is so happy about is the bait for her murder, and Pisanio, holding the other letter, has to answer her questions about distance. Her verse runs on past every line-ending, all questions and imperatives, while his replies are short — the scene is built on the gap between what she wants to know and what he knows.",
+      "themes": [
+        "evidence"
+      ],
+      "techniques": [
+        "dramatic-irony"
+      ],
+      "characters": [
+        "imogen",
+        "pisanio"
+      ],
+      "source": "Globe/Moby text, 3.2.50-54",
+      "cloze": [
+        "wings",
+        "Milford-Haven"
+      ]
+    },
+    {
+      "id": "goodly-day-not-to-keep-house",
+      "text": "A goodly day not to keep house, with such Whose roof's as low as ours! Stoop, boys; this gate Instructs you how to adore the heavens and bows you To a morning's holy office:",
+      "speaker": "Belarius",
+      "reference": "3.3.1",
+      "stage": "act-3",
+      "context": "Coming out of the cave with the two boys at dawn.",
+      "analysis": "The first line of the Welsh scenes turns a low doorway into a lesson: you bow because the roof makes you. It is pastoral philosophy delivered as a stage direction, and the boys, who have to stoop, spend the rest of the scene refusing to accept the moral. Their birth is showing before the audience has been told about it.",
+      "themes": [
+        "nature-nurture"
+      ],
+      "techniques": [],
+      "characters": [
+        "belarius",
+        "guiderius",
+        "arviragus"
+      ],
+      "source": "Globe/Moby text, 3.3.1-4",
+      "cloze": [
+        "roof",
+        "Stoop"
+      ]
+    },
+    {
+      "id": "paper-hath-cut-her-throat",
+      "text": "What shall I need to draw my sword? the paper Hath cut her throat already. No, 'tis slander, Whose edge is sharper than the sword,",
+      "speaker": "Pisanio",
+      "reference": "3.4.34",
+      "stage": "act-3",
+      "context": "Watching Imogen read the letter that orders her death.",
+      "analysis": "He corrects himself mid-line — not the paper, the slander — and in doing so identifies the weapon the whole play has been using. Nobody in Cymbeline is harmed by a blade until Act IV; the damage is done by a description, a letter and a bracelet, and Pisanio is the first character to say so.",
+      "themes": [
+        "evidence"
+      ],
+      "techniques": [],
+      "characters": [
+        "pisanio",
+        "imogen"
+      ],
+      "source": "Globe/Moby text, 3.4.34-36",
+      "cloze": [
+        "paper",
+        "slander"
+      ]
+    },
+    {
+      "id": "garment-out-of-fashion",
+      "text": "Some jay of Italy Whose mother was her painting, hath betray'd him: Poor I am stale, a garment out of fashion; And, for I am richer than to hang by the walls, I must be ripp'd:--to pieces with me!",
+      "speaker": "Imogen",
+      "reference": "3.4.52",
+      "stage": "act-3",
+      "context": "Her response to the charge of adultery.",
+      "analysis": "Her instinct is to blame an Italian woman who does not exist, and then to describe herself as clothing: out of fashion, too good to be hung up, so cut up. The play’s obsession with garments as identity runs through her here, and ‘ripp’d’ anticipates the beheaded body she will find wearing her husband’s suit.",
+      "themes": [
+        "jealousy",
+        "disguise"
+      ],
+      "techniques": [],
+      "characters": [
+        "imogen"
+      ],
+      "source": "Globe/Moby text, 3.4.52-56",
+      "cloze": [
+        "garment",
+        "ripp'd"
+      ]
+    },
+    {
+      "id": "hath-britain-all-the-sun",
+      "text": "Hath Britain all the sun that shines? Day, night, Are they not but in Britain? I' the world's volume Our Britain seems as of it, but not in 't; In a great pool a swan's nest: prithee, think There's livers out of Britain.",
+      "speaker": "Imogen",
+      "reference": "3.4.157",
+      "stage": "act-3",
+      "context": "Told by Pisanio that she cannot stay in Britain, she agrees.",
+      "analysis": "The finest lines about Britain in the play argue for leaving it. A swan’s nest in a pool is small, white and precarious, and the image concedes what Cloten’s speech denied — that the island is part of a larger world. The character who most deserves the country is the one prepared to think of it from outside.",
+      "themes": [
+        "britain-and-rome",
+        "disguise"
+      ],
+      "techniques": [],
+      "characters": [
+        "imogen",
+        "pisanio"
+      ],
+      "source": "Globe/Moby text, 3.4.157-161",
+      "cloze": [
+        "sun",
+        "swan's"
+      ]
+    },
+    {
+      "id": "clotens-clotpoll",
+      "text": "I have sent Cloten's clotpoll down the stream, In embassy to his mother: his body's hostage For his return.",
+      "speaker": "Guiderius",
+      "reference": "4.2.232",
+      "stage": "act-4",
+      "context": "Reporting what he did with the head.",
+      "analysis": "A prince’s head sent downriver as a diplomatic mission is a joke in the vocabulary of the tribute plot, and the pun on Cloten’s name says what the play thinks of him. The cheerfulness is the point: Guiderius has no idea he has killed a prince, or that he is one, and the audience watches royal blood behave as if it were.",
+      "themes": [
+        "nature-nurture"
+      ],
+      "techniques": [],
+      "characters": [
+        "guiderius",
+        "cloten"
+      ],
+      "source": "Globe/Moby text, 4.2.232-234",
+      "cloze": [
+        "clotpoll",
+        "embassy"
+      ]
+    },
+    {
+      "id": "fear-no-more",
+      "text": "Fear no more the heat o' the sun, Nor the furious winter's rages; Thou thy worldly task hast done, Home art gone, and ta'en thy wages: Golden lads and girls all must, As chimney-sweepers, come to dust.",
+      "speaker": "Guiderius",
+      "reference": "4.2.327",
+      "stage": "act-4",
+      "context": "The first stanza of the dirge over Fidele, who is not dead.",
+      "analysis": "The dead are paid off like servants — task done, wages taken, sent home — and the last couplet levels lords and sweeps in a single rhyme. It is the play’s most famous passage and it is sung to someone alive, which the audience knows; the consolation is real, and it is being spent on the wrong occasion, like almost every feeling in the play.",
+      "themes": [
+        "nature-nurture",
+        "disguise"
+      ],
+      "techniques": [
+        "song",
+        "dramatic-irony"
+      ],
+      "characters": [
+        "guiderius",
+        "arviragus",
+        "imogen"
+      ],
+      "source": "Globe/Moby text, 4.2.327-332",
+      "cloze": [
+        "wages",
+        "dust"
+      ]
+    },
+    {
+      "id": "headless-man",
+      "text": "A headless man! The garments of Posthumus! I know the shape of's leg: this is his hand; His foot Mercurial; his Martial thigh; The brawns of Hercules:",
+      "speaker": "Imogen",
+      "reference": "4.2.378",
+      "stage": "act-4",
+      "context": "Waking beside Cloten’s body, which is wearing her husband’s clothes.",
+      "analysis": "She identifies the body limb by limb, each with a god attached, and every identification is wrong. The scene is the play’s cruellest use of the audience’s knowledge: the more precisely she loves, the more completely she errs. Shakespeare has made clothing a better witness than a wife, and lets her prove it on her own husband’s enemy.",
+      "themes": [
+        "evidence",
+        "disguise"
+      ],
+      "techniques": [
+        "dramatic-irony",
+        "stage-property"
+      ],
+      "characters": [
+        "imogen",
+        "cloten",
+        "posthumus"
+      ],
+      "source": "Globe/Moby text, 4.2.378-381",
+      "cloze": [
+        "headless",
+        "garments"
+      ]
+    },
+    {
+      "id": "bloody-cloth",
+      "text": "Yea, bloody cloth, I'll keep thee, for I wish'd Thou shouldst be colour'd thus. You married ones, If each of you should take this course, how many Must murder wives much better than themselves For wrying but a little!",
+      "speaker": "Posthumus",
+      "reference": "5.1.1",
+      "stage": "act-5",
+      "context": "Alone in the Roman camp, holding the cloth Pisanio sent as proof of Imogen’s death.",
+      "analysis": "He repents while still believing her guilty, and turns to the married men in the audience to ask how many of them would survive their own standard. The speech separates forgiveness from acquittal — he forgives a fault he thinks is real — and that is what makes the pardons of the last scene more than a formality.",
+      "themes": [
+        "forgiveness",
+        "jealousy"
+      ],
+      "techniques": [
+        "soliloquy",
+        "stage-property"
+      ],
+      "characters": [
+        "posthumus"
+      ],
+      "source": "Globe/Moby text, 5.1.1-5",
+      "cloze": [
+        "bloody",
+        "murder"
+      ]
+    },
+    {
+      "id": "whom-best-i-love-i-cross",
+      "text": "Whom best I love I cross; to make my gift, The more delay'd, delighted.",
+      "speaker": "Jupiter",
+      "reference": "5.4.102",
+      "stage": "act-5",
+      "context": "The god, descended on an eagle, answers the ghosts of Posthumus’s family.",
+      "analysis": "This is the play explaining its own plot: the delays and cruelties are a technique for making the ending land harder. Jupiter speaks in quatrains where everyone else speaks blank verse, which sets him outside the action like a stage manager, and ‘delay’d, delighted’ is a pun on the play’s method.",
+      "themes": [
+        "forgiveness"
+      ],
+      "techniques": [
+        "deus-ex-machina"
+      ],
+      "characters": [
+        "posthumus"
+      ],
+      "source": "Globe/Moby text, 5.4.102-103",
+      "cloze": [
+        "cross",
+        "delighted"
+      ]
+    },
+    {
+      "id": "think-that-you-are-upon-a-rock",
+      "text": "Why did you throw your wedded lady from you? Think that you are upon a rock; and now Throw me again.",
+      "speaker": "Imogen",
+      "reference": "5.5.309",
+      "stage": "act-5",
+      "context": "To Posthumus, who has just struck her without recognising her.",
+      "analysis": "Her first words to her husband after four acts apart are a challenge, not a complaint, and she dares him to repeat the injury. The rock is an image of safety for a shipwreck and of danger for a fall, and she offers him both. The reunion is fierce rather than tearful, which is truer to her than the ending deserves.",
+      "themes": [
+        "forgiveness"
+      ],
+      "techniques": [
+        "recognition-scene"
+      ],
+      "characters": [
+        "imogen",
+        "posthumus"
+      ],
+      "source": "Globe/Moby text, 5.5.309-311",
+      "cloze": [
+        "rock",
+        "Throw"
+      ]
+    },
+    {
+      "id": "hang-there-like-a-fruit",
+      "text": "Hang there like a fruit, my soul, Till the tree die!",
+      "speaker": "Posthumus",
+      "reference": "5.5.312",
+      "stage": "act-5",
+      "context": "Embracing Imogen, in answer to her challenge.",
+      "analysis": "His answer to being told to throw her again is to become the tree she hangs from, so the image of falling turns into one of growth. The line is a line and a half, and its shortness after all the confessing of the final scene is the point: the marriage is repaired in fewer words than it took to break.",
+      "themes": [
+        "forgiveness"
+      ],
+      "techniques": [
+        "recognition-scene"
+      ],
+      "characters": [
+        "posthumus",
+        "imogen"
+      ],
+      "source": "Globe/Moby text, 5.5.312-313",
+      "cloze": [
+        "fruit",
+        "tree"
+      ]
+    },
+    {
+      "id": "kneel-not-to-me",
+      "text": "Kneel not to me: The power that I have on you is, to spare you; The malice towards you to forgive you: live, And deal with others better.",
+      "speaker": "Posthumus",
+      "reference": "5.5.507",
+      "stage": "act-5",
+      "context": "To Iachimo, who has confessed and offered his life.",
+      "analysis": "He defines power as the capacity to spare and malice as the capacity to forgive, a pair of definitions the rest of the play has not earned but now adopts. Cymbeline hears it and copies it two lines later, so the king learns his last policy from the son-in-law he banished in the first scene.",
+      "themes": [
+        "forgiveness"
+      ],
+      "techniques": [
+        "recognition-scene"
+      ],
+      "characters": [
+        "posthumus",
+        "iachimo"
+      ],
+      "source": "Globe/Moby text, 5.5.507-510",
+      "cloze": [
+        "spare",
+        "forgive"
+      ]
+    },
+    {
+      "id": "pardons-the-word-to-all",
+      "text": "Pardon's the word to all.",
+      "speaker": "Cymbeline",
+      "reference": "5.5.513",
+      "stage": "act-5",
+      "context": "The king, having watched Posthumus forgive Iachimo, extends the pardon to everyone.",
+      "analysis": "Five words for a general amnesty, immediately after saying he will learn generosity from his son-in-law. The king makes his one good decision by imitation, and the phrase is a password rather than a judgement — ‘the word’ — which is exactly how a fairy tale ends and how a court, in this play, is run.",
+      "themes": [
+        "forgiveness",
+        "britain-and-rome"
+      ],
+      "techniques": [
+        "recognition-scene"
+      ],
+      "characters": [
+        "cymbeline"
+      ],
+      "source": "Globe/Moby text, 5.5.513",
+      "cloze": [
+        "Pardon's"
+      ]
+    },
+    {
+      "id": "never-was-a-war-did-cease",
+      "text": "Never was a war did cease, Ere bloody hands were wash'd, with such a peace.",
+      "speaker": "Cymbeline",
+      "reference": "5.5.581",
+      "stage": "act-5",
+      "context": "The last lines of the play, as the king agrees to pay the tribute he fought to refuse.",
+      "analysis": "The peace is made before the hands are washed, which means before the fighting has been cleaned up or accounted for. Cymbeline pays Rome what he won the right not to pay, and the closing couplet presents that as the point: the victory was needed only so that submission could be a choice.",
+      "themes": [
+        "britain-and-rome",
+        "forgiveness"
+      ],
+      "techniques": [],
+      "characters": [
+        "cymbeline"
+      ],
+      "source": "Globe/Moby text, 5.5.581-582",
+      "cloze": [
+        "war",
+        "peace"
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "year": 43,
+      "label": "Rome invades Britain under Claudius",
+      "detail": "The historical Cunobelinus, Shakespeare’s Cymbeline, had ruled in the south-east and died not long before. The play’s tribute dispute is built from chronicle memories of this period.",
+      "kind": "context"
+    },
+    {
+      "year": 1136,
+      "label": "Geoffrey of Monmouth’s History of the Kings of Britain",
+      "detail": "Completed around this year; it passes Kymbelinus and the Roman tribute down to the Tudor chroniclers.",
+      "kind": "context"
+    },
+    {
+      "year": 1353,
+      "label": "Boccaccio’s Decameron complete",
+      "detail": "The tale of a merchant who wagers on his wife’s chastity and loses to a man hidden in a chest is the source of the Iachimo plot.",
+      "kind": "context"
+    },
+    {
+      "year": 1587,
+      "label": "Holinshed’s Chronicles reissued",
+      "detail": "Supplies Cymbeline, his sons, the tribute and the story of a lane held against an army, which Holinshed sets in tenth-century Scotland.",
+      "kind": "context"
+    },
+    {
+      "year": 1604,
+      "label": "James proclaims himself King of Great Britain",
+      "detail": "A king pressing the union of his kingdoms and peace with Spain is the context for a play in which Britain fights Rome and then pays the tribute.",
+      "kind": "context"
+    },
+    {
+      "year": 1608,
+      "label": "The King’s Men take the Blackfriars playhouse",
+      "detail": "An indoor theatre with music and machinery for descents; the late plays were written with it in view.",
+      "kind": "context"
+    },
+    {
+      "year": 1610,
+      "label": "Cymbeline written, around this year",
+      "detail": "Its closeness to The Winter’s Tale and Philaster by Beaumont and Fletcher is argued from style; no firmer date survives.",
+      "kind": "work"
+    },
+    {
+      "year": 1611,
+      "label": "Simon Forman records the plot",
+      "detail": "His notes on a performance describe the wager, the trunk and the mole, and are the earliest evidence of the play on stage.",
+      "kind": "reception"
+    },
+    {
+      "year": 1623,
+      "label": "First Folio",
+      "detail": "The only early text, placed last among the tragedies.",
+      "kind": "work"
+    },
+    {
+      "year": 1682,
+      "label": "Thomas D’Urfey’s The Injured Princess",
+      "detail": "A Restoration rewriting that kept the stage for decades in place of Shakespeare’s text.",
+      "kind": "reception"
+    },
+    {
+      "year": 1896,
+      "label": "Ellen Terry plays Imogen at the Lyceum",
+      "detail": "Henry Irving was Iachimo. Bernard Shaw wrote Terry long letters of advice on the part and disliked the play’s ending enough to rewrite it later.",
+      "kind": "reception"
+    },
+    {
+      "year": 1937,
+      "label": "Shaw’s Cymbeline Refinished",
+      "detail": "A replacement fifth act that strips out the recognitions, staged in London the same year.",
+      "kind": "reception"
+    }
+  ],
+  "places": [
+    {
+      "name": "Lud’s-town (London)",
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "note": "Cymbeline’s court, where the play begins and where the tribute is refused; the king marches through it at the close."
+    },
+    {
+      "name": "Milford Haven",
+      "lat": 51.7128,
+      "lon": -5.0341,
+      "note": "The Welsh harbour where Posthumus’s letter summons Imogen and where the Roman army lands."
+    },
+    {
+      "name": "The Welsh mountains",
+      "lat": 51.95,
+      "lon": -4.77,
+      "note": "Belarius’s cave, somewhere in the hills above Milford; the play never names the spot."
+    },
+    {
+      "name": "Rome",
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "note": "Philario’s house, where the wager is made and won, and the Senate that sends Lucius to Britain."
+    }
+  ],
+  "criticalViews": [
+    {
+      "position": "A late romance, built on the Beaumont and Fletcher model",
+      "summary": "Read beside Philaster, The Winter’s Tale and The Tempest, the play looks like an experiment in tragicomedy: suffering pushed as far as it will go and then reversed by recognition, with a god descending to explain the design.",
+      "counter": "It leaves the tribute plot and the fairy-tale stepmother looking like leftovers from other kinds of play, which may be exactly what they are."
+    },
+    {
+      "position": "An incoherent plot rescued by Imogen",
+      "summary": "Samuel Johnson’s note on the play, which finds its mixture of periods, places and improbabilities beneath serious criticism, set the tone for two centuries in which Imogen was admired and the rest was cut or apologised for.",
+      "counter": "The improbabilities are so numerous and so openly flagged — Jupiter on an eagle, twenty revelations in one scene — that they read better as method than as carelessness."
+    },
+    {
+      "position": "A Jacobean political play",
+      "summary": "The refusal and then payment of the Roman tribute, spoken in the years of James’s peace with Spain and his campaign for a united Britain, makes the play an argument about how a small kingdom stands in relation to an empire.",
+      "counter": "The case for British independence is given to the villains, and the play never says whether that is satire or accident."
+    },
+    {
+      "position": "A play about a woman’s body as evidence",
+      "summary": "Feminist criticism has concentrated on the bedchamber scene, where a sleeping woman is inventoried like a room, and on the wager that makes her chastity a matter for male settlement in a foreign city.",
+      "counter": "Imogen is also the play’s most active figure, and readings that keep her as an object have to explain why she does all the travelling."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "‘Nothing Iachimo says is untrue.’ How does Cymbeline present the relationship between evidence and truth?",
+      "focus": "The wager, the bedchamber and the final audit",
+      "plan": [
+        "Begin with 1.4, where a marriage is turned into a proposition that can be tested and paid out on.",
+        "Read 2.2 as an inventory: every item Iachimo notes is accurate, and the audience watches accuracy being assembled into a lie.",
+        "Use 2.4 to show the order of proof — room, bracelet, mole — and the point at which Posthumus stops asking questions.",
+        "Set Pisanio’s ‘the paper hath cut her throat’ against Imogen’s identification of the wrong body in 4.2: both show evidence outrunning judgement.",
+        "Close on 5.5, where the ring and bracelet are handed back and the play insists that proof has to be reread in public before it can be trusted."
+      ]
+    },
+    {
+      "question": "Discuss the presentation of Britain in Cymbeline.",
+      "focus": "The tribute plot and the swan’s nest",
+      "plan": [
+        "Establish who speaks for Britain in 3.1 — Cloten and the Queen — and what that does to the audience’s sympathy for their case.",
+        "Set against it Imogen’s swan’s nest speech in 3.4, which values Britain by placing it inside a larger world.",
+        "Read the Welsh scenes as an alternative Britain: a cave that produces princes while the court produces Cloten.",
+        "Use the battle and the lane in 5.2-5.3 to show Britons winning without the court’s help.",
+        "End with Cymbeline paying the tribute after victory, and consider whether the play endorses submission, union or something less tidy."
+      ]
+    },
+    {
+      "question": "How does Shakespeare use disguise and clothing in Cymbeline?",
+      "focus": "Fidele, the borrowed suit and the headless body",
+      "plan": [
+        "Start with Imogen’s insult in 2.3 that Cloten is worth less than Posthumus’s meanest garment, which sets the plot of Acts III and IV in motion.",
+        "Follow the suit: Cloten demands it from Pisanio, wears it to Wales, and dies in it.",
+        "Read 4.2 closely, where Imogen identifies her husband from the shape of a leg and is wrong.",
+        "Compare the brothers, who recognise Fidele as kin without any evidence at all.",
+        "Argue that the play distrusts clothes as identification and then relies on them for its plot, and decide whether that is a contradiction or the subject."
+      ]
+    },
+    {
+      "question": "‘Pardon’s the word to all.’ Is the ending of Cymbeline earned?",
+      "focus": "Forgiveness, confession and the last scene",
+      "plan": [
+        "Count the revelations in 5.5 and note that the audience already knows every one of them.",
+        "Use 5.1 to show Posthumus forgiving Imogen before he knows she is innocent, and ask what that does to the value of the final pardons.",
+        "Read Iachimo’s confession as a performance, and Posthumus’s ‘kneel not to me’ as the play’s definition of power.",
+        "Weigh the Queen and Cloten, who are the only people not forgiven because they are the only people dead.",
+        "Conclude by comparing Shaw’s objection — that the recognitions are tedious — with the view that their length is the play’s argument about how much confession peace requires."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Iachimo never touches Imogen. Why does the play treat what he does in her bedroom as a violation anyway?",
+    "Posthumus forgives Imogen before he learns she was innocent. Does that make his repentance more admirable, or does it show he never understood what she had done?",
+    "The most eloquent case for British independence is made by Cloten and the Queen. What is Shakespeare doing by giving it to them?",
+    "Imogen mourns a headless body that turns out to be Cloten. Is the scene cruel to her, to the audience, or to both?",
+    "Jupiter descends to say that he crosses those he loves best. Is that an explanation of the play or an excuse for it?"
+  ],
+  "related": [
+    {
+      "href": "/books/the-winters-tale/",
+      "why": "Written within a year or so, and the same shape: a husband’s jealousy, a wife presumed dead, and a last scene that hands her back."
+    },
+    {
+      "href": "/books/othello/",
+      "why": "The earlier study of a husband convinced by a handkerchief; Cymbeline runs the same machinery and lets him live to be told."
+    },
+    {
+      "href": "/books/pericles-prince-of-tyre/",
+      "why": "The first of the late romances, with the same scattered family, the same sea-voyages and a father who has to be taught to recognise his child."
+    },
+    {
+      "href": "/books/the-tempest/",
+      "why": "The last of the group, where the forgiveness Cymbeline reaches by accident is planned from the first scene."
+    },
+    {
+      "href": "/books/much-ado-about-nothing/",
+      "why": "A woman slandered with a staged proof and believed dead, in a comedy that stops short of the mountains and the war."
+    }
+  ],
+  "videos": []
+}
