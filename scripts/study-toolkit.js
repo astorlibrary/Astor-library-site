@@ -7,6 +7,8 @@
 // JavaScript gets all of the same material, stacked, and nothing is hidden
 // from a search engine.
 
+const { accentFor, motifSvg } = require('./book-motifs');
+
 const DIFFICULTY_WORDS = {
   1: 'Straightforward',
   2: 'Steady going',
@@ -377,12 +379,13 @@ function renderToolkit(book, { heading, titleFor, passages } = {}) {
   }).join('');
 
   return '<section class="astor-toolkit" id="astor-study-toolkit"' +
+    ' style="--book-accent: ' + accentFor(book.slug) + '"' +
     ' data-astor-book="' + escapeHtml(book.slug) + '"' +
     ' data-astor-book-title="' + escapeHtml(book.title) + '"' +
     ' data-astor-book-href="' + escapeHtml(book.href) + '"' +
     ' aria-labelledby="astor-toolkit-title">' +
     '<div class="astor-toolkit-head">' +
-    '<div><p class="kicker">Astor study toolkit</p>' +
+    '<div><p class="kicker">' + motifSvg(book, 22) + 'Astor study toolkit</p>' +
     '<h2 id="astor-toolkit-title">' + escapeHtml(heading || ('Work through ' + book.title + '.')) + '</h2>' +
     '<p>Plot, characters, themes, quotations, language, context, essay plans and games.</p></div>' +
     '<div class="astor-toolkit-actions">' +

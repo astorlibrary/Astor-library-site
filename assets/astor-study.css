@@ -1579,3 +1579,31 @@
 .astor-slippy .maplibregl-ctrl-group button { width: 36px; height: 36px; }
 .astor-slippy .maplibregl-ctrl-attrib { font-family: var(--astor-sans); font-size: 11px; }
 .astor-slippy .maplibregl-cooperative-gesture-screen { font-family: var(--astor-sans); font-size: 16px; }
+
+/* ------------------------------------------------- a colour for each book */
+
+/* Every study record carries a colour taken from its own cover and an
+   ornament chosen from its genre, so two books never look like one another.
+   Where no book is in view, the house burgundy stands in. */
+
+.astor-motif { display: inline-block; vertical-align: -0.35em; margin-right: 8px; color: var(--book-accent, var(--burgundy)); }
+.kicker .astor-motif { margin-right: 10px; }
+
+.astor-toolkit { --astor-accent: var(--book-accent, var(--burgundy)); }
+.astor-toolkit .astor-toolkit-head { border-top: 3px solid var(--astor-accent); padding-top: 22px; }
+.astor-toolkit .astor-toolkit-head .kicker { color: var(--astor-accent); }
+.astor-toolkit .astor-tab[aria-selected="true"] { border-bottom-color: var(--astor-accent); color: var(--astor-accent); }
+.astor-toolkit .astor-panel > h3 { border-left: 4px solid var(--astor-accent); padding-left: 14px; }
+.astor-toolkit .astor-quote-card { border-left: 3px solid color-mix(in srgb, var(--astor-accent) 55%, transparent); }
+.astor-toolkit .astor-subhead { color: var(--astor-accent); }
+.astor-toolkit .button.primary { background: var(--astor-accent); border-color: var(--astor-accent); }
+.astor-toolkit .astor-progress-bar > span { background: var(--astor-accent); }
+
+.astor-book-record .astor-book-hero .kicker,
+.astor-book-record .section-title .kicker { color: var(--book-accent, var(--burgundy)); }
+.astor-book-record .section-title { border-top-color: color-mix(in srgb, var(--book-accent, var(--burgundy)) 40%, var(--astor-line)); }
+.astor-book-record .astor-book-hero { border-bottom: 3px solid var(--book-accent, var(--burgundy)); }
+
+@supports not (color: color-mix(in srgb, red 50%, blue)) {
+  .astor-toolkit .astor-quote-card { border-left-color: var(--astor-accent); }
+}
