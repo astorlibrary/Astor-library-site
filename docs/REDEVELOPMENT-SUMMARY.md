@@ -36,8 +36,9 @@ once corrects it everywhere.
 | Interactive tools | 0 | 22 pages |
 | Automated checks | 1,354-line checker, 47 tests | 1,496-line checker, 98 tests |
 
-Nothing on the site loads a third-party script, sets a cookie for a reader who
-has not asked for one, or sends anything anywhere.
+The site loads no third-party script and sets no cookie for a reader who has
+not asked for one. The one thing fetched from elsewhere is the map tiles on
+the map of settings, from OpenFreeMap; everything else is served from here.
 
 ---
 
@@ -284,28 +285,27 @@ session contains.
   shown doing a particular job in a particular line in every book that uses
   it. Two hundred terms are reached through an A to Z bar and a search box;
   each entry opens on its definition and unfolds its examples when asked.
-- **Map** — inline SVG on an equirectangular projection. The first version
-  was dots on a bare grid, which is not a map. It now draws real land:
-  coastlines and borders from Natural Earth (public domain), prepared by
-  `scripts/build-map-geography.js` into one small file per view in
-  `assets/astor/geo/` (about 20 KB each compressed; detail is kept inside
-  the view and thrown away outside it, and shapes crossing the date line are
-  unrolled so they do not band the world). The paths are held in degrees and
-  put in place by one transform, so nothing is projected point by point. It
-  still loads no tiles and contacts nobody. Five views: London and the
-  South-East, Britain and Ireland, Europe, the Americas, the world; each is
-  framed to the box, wide on a desk and tall on a phone. Places that would
-  be drawn on top of one another are gathered into one numbered marker
-  (London alone holds sixty), markers that come to touch are joined, names
-  are lettered wherever they clear every marker and every other name, seas
-  and countries are named faintly for orientation, and choosing a marker
-  lists what happens there beneath the map, folded by book when there are
-  many. The list under the map, folded book by book, lights the marker when
-  a place is chosen there.
-  The same drawing appears on every book page with a record, in the Context
-  tab, fitted to that book's own places and drawn from the most detailed
-  coastline that covers them; book places are lettered before country and sea
-  names, which fill whatever room is left.
+- **Map** — a real map. MapLibre GL (hosted in `assets/vendor/`) draws
+  OpenStreetMap tiles served by OpenFreeMap, which needs no key and allows
+  commercial use. Places that share a spot are one marker; markers that crowd
+  each other gather into numbered clusters that open as you zoom; invisible
+  stand-ins the size of each marker keep names off them. Choosing a marker
+  lists what happens there, folded by book when there are many. The same map
+  is embedded in the Context tab of every book page with a record, fitted to
+  that book's places.
+
+  Two earlier versions are worth recording, because the lesson stuck: dots on
+  a graticule (which is not a map), then Natural Earth coastlines drawn from
+  files this site serves itself (better, but "just a blank backdrop" to
+  anyone expecting a map). The coastline version survives as
+  `assets/astor/map-outline.mjs` and takes over whenever the real map cannot
+  run: no WebGL, no tiles, a container with no height, or any thrown error.
+  `scripts/build-map-geography.js` still prepares its coastline files.
+
+  The map sets its own height in JavaScript rather than trusting the
+  stylesheet. A phone holding an hour-old stylesheet with a fresh script once
+  gave the map no height at all, which looked exactly like no map.
+
 - **Compare** — two titles side by side, starting from the themes and
   techniques they share and pairing the quotations that carry them, because
   that is where a comparative paragraph actually begins.
@@ -570,7 +570,7 @@ To add one, verify the id the same way, then put an entry in a record:
 ```
 
 `provider` must be `youtube-nocookie` or `vimeo`; anything else fails the
-build. The page contacts nobody until a reader presses "Load the video".
+build. The page contacts nobody until a reader presses Play.
 
 **Critics' quotations.** In copyright, and unverifiable here. Positions are
 described in the site's own words instead.
