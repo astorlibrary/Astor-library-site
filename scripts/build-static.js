@@ -11,6 +11,38 @@ const { renderToolkit } = require('./study-toolkit');
 
 const root = process.cwd();
 const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
+// Every other stylesheet and shared script is stamped with a hash of its own
+// contents. A reader holding an hour-old stylesheet with a fresh script is how
+// the map came to have no height at all on a phone; a changed file now arrives
+// under a new address and cannot be served from a stale cache.
+const assetVersions = new Map();
+function versionOf(assetPath) {
+  if (!assetVersions.has(assetPath)) {
+    const file = path.join(root, assetPath.replace(/^\//, ''));
+    const hash = fs.existsSync(file)
+      ? require('crypto').createHash('sha256').update(fs.readFileSync(file)).digest('hex').slice(0, 10)
+      : '';
+    assetVersions.set(assetPath, hash);
+  }
+  return assetVersions.get(assetPath);
+}
+
+const VERSIONED_ASSETS = [
+  '/assets/styles.css', '/assets/astor-study.css', '/assets/home.css', '/assets/seasons.css',
+  '/assets/account.css', '/assets/presentation-viewer.css', '/assets/site.js', '/assets/catalogue.js',
+  '/assets/explore.js', '/assets/resources.js', '/assets/resource-library.js'
+];
+
+function versionAssets(html) {
+  for (const asset of VERSIONED_ASSETS) {
+    const version = versionOf(asset);
+    if (!version) continue;
+    const escaped = asset.replace(/[/.]/g, character => '\\' + character);
+    html = html.replace(new RegExp('((?:href|src)=["\'])' + escaped + '(?:\\?[^"\']*)?(["\'])', 'g'), '$1' + asset + '?v=' + version + '$2');
+  }
+  return html;
+}
+
 const navigationVersion = require('crypto').createHash('sha256')
   .update(fs.readFileSync(path.join(root, 'assets/navigation.css')))
   .update(fs.readFileSync(path.join(root, 'assets/astor/palette.mjs')))
@@ -1124,7 +1156,7 @@ function addGlobalNavigation(html, source) {
   // behaviour with the current shared navigation styles.
   html = html.replace(/(href=["'])\/assets\/navigation\.css(?:\?[^"']*)?(["'])/g, '$1/assets/navigation.css?v=' + navigationVersion + '$2');
   html = html.replace(/(src=["'])\/assets\/astor\/palette\.mjs(?:\?[^"']*)?(["'])/g, '$1/assets/astor/palette.mjs?v=' + navigationVersion + '$2');
-  return html;
+  return versionAssets(html);
 }
 
 // The study toolkit is generated rather than written into each page by hand,
