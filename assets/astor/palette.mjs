@@ -18,6 +18,7 @@ let input = null;
 let list = null;
 let selected = 0;
 let lastFocus = null;
+let loadFailed = false;
 
 document.addEventListener('keydown', event => {
   const openCombo = (event.key === 'k' || event.key === 'K') && (event.metaKey || event.ctrlKey);
@@ -30,9 +31,10 @@ document.addEventListener('keydown', event => {
 });
 
 // The header's existing Search link keeps working as a link; a modified click
-// or a plain click both stay useful, so only the palette shortcut is new.
+// opens the catalogue in a new tab as usual.
 for (const trigger of document.querySelectorAll('[data-astor-palette]')) {
   trigger.addEventListener('click', event => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     open();
   });
@@ -46,12 +48,13 @@ function build() {
     'aria-label': 'Search Astor Library',
     role: 'combobox', 'aria-expanded': 'true', 'aria-controls': 'astor-palette-results', 'aria-autocomplete': 'list'
   });
-  const box = el('div', { class: 'astor-palette-box', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Search Astor Library' }, [
+  const box = el('div', { class: 'astor-palette-box' }, [
+    el('div', { class: 'astor-palette-heading' }, [el('strong', { text: 'Search the library' }), el('button', { type: 'button', class: 'astor-palette-close', text: 'Close', onclick: close })]),
     input,
     list,
     el('p', { class: 'astor-palette-hint', text: 'Arrow keys to move, Enter to open, Esc to close.' })
   ]);
-  palette = el('div', { class: 'astor-palette', hidden: true }, [box]);
+  palette = el('dialog', { class: 'astor-palette', 'aria-label': 'Search Astor Library' }, [box]);
   palette.addEventListener('click', event => { if (event.target === palette) close(); });
   input.addEventListener('input', () => { selected = 0; render(); });
   input.addEventListener('keydown', onKey);
@@ -61,30 +64,36 @@ function build() {
 async function open() {
   if (!palette) build();
   lastFocus = document.activeElement;
-  palette.hidden = false;
+  if (!palette.open) palette.showModal();
   input.value = '';
   selected = 0;
   input.focus();
   render();
   if (entries) return;
+  loadFailed = false;
+  render();
   try {
     const response = await fetch('/assets/search-index.json', { credentials: 'omit' });
-    entries = (await response.json()).entries;
+    if (!response.ok) throw new Error('Search index unavailable');
+    const payload = await response.json();
+    if (!Array.isArray(payload.entries)) throw new Error('Invalid search index');
+    entries = payload.entries;
+    loadFailed = false;
   } catch {
-    entries = [];
+    loadFailed = true;
   }
   render();
 }
 
 function close() {
   if (!palette) return;
-  palette.hidden = true;
+  palette.close();
   lastFocus?.focus?.();
 }
 
 function onKey(event) {
   if (event.key === 'Escape') { event.preventDefault(); return close(); }
-  const rows = [...list.children];
+  const rows = [...list.querySelectorAll('[role=option]')];
   if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
     event.preventDefault();
     if (!rows.length) return;
@@ -101,7 +110,10 @@ function onKey(event) {
 function paintSelection(rows) {
   rows.forEach((row, index) => {
     row.setAttribute('aria-selected', String(index === selected));
-    if (index === selected) row.scrollIntoView({ block: 'nearest' });
+    if (index === selected) {
+      input.setAttribute('aria-activedescendant', row.id);
+      row.scrollIntoView({ block: 'nearest' });
+    }
   });
 }
 
@@ -120,7 +132,15 @@ function score(entry, words) {
 
 function render() {
   clear(list);
+  input.removeAttribute('aria-activedescendant');
   const query = input.value.trim().toLowerCase();
+
+  if (loadFailed) {
+    list.append(el('li', {}, [el('p', { class: 'astor-palette-hint', text: 'Search could not load. You can still search the catalogue below, or close and retry.' })]));
+    list.append(row({ k: 'Search', t: 'Search the catalogue', h: '/explore/?q=' + encodeURIComponent(input.value.trim()) }));
+    paintSelection([...list.querySelectorAll('[role=option]')]);
+    return;
+  }
 
   if (!entries) {
     list.append(el('li', {}, [el('p', { class: 'astor-palette-hint', text: 'Loading…' })]));
@@ -131,7 +151,7 @@ function render() {
     for (const suggestion of entries.filter(entry => entry.k === 'Tool').slice(0, 8)) {
       list.append(row(suggestion));
     }
-    paintSelection([...list.children]);
+    paintSelection([...list.querySelectorAll('[role=option]')]);
     return;
   }
 
@@ -145,16 +165,16 @@ function render() {
   if (!ranked.length) {
     list.append(el('li', {}, [el('p', { class: 'astor-palette-hint', text: 'No matches. Try a single word.' })]));
     list.append(row({ k: 'Search', t: 'Search the catalogue for “' + input.value.trim() + '”', h: '/explore/?q=' + encodeURIComponent(input.value.trim()), n: '' }));
-    paintSelection([...list.children]);
+    paintSelection([...list.querySelectorAll('[role=option]')]);
     return;
   }
 
   for (const item of ranked) list.append(row(item.entry));
-  paintSelection([...list.children]);
+  paintSelection([...list.querySelectorAll('[role=option]')]);
 }
 
 function row(entry) {
-  return el('li', { role: 'option', 'aria-selected': 'false' }, [
+  return el('li', { role: 'option', id: 'astor-result-' + list.children.length, 'aria-selected': 'false' }, [
     el('a', { href: entry.h }, [
       el('span', { class: 'astor-palette-kind', text: entry.k }),
       el('span', { class: 'astor-palette-title' }, [
