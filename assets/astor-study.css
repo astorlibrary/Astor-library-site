@@ -1607,3 +1607,31 @@
 @supports not (color: color-mix(in srgb, red 50%, blue)) {
   .astor-toolkit .astor-quote-card { border-left-color: var(--astor-accent); }
 }
+
+/* The ornament again, large and faint, behind the opening of a study page. */
+.astor-book-hero { position: relative; overflow: hidden; }
+.astor-motif-watermark {
+  position: absolute;
+  right: 8px;
+  top: -26px;
+  margin: 0;
+  opacity: .08;
+  pointer-events: none;
+}
+@media (max-width: 940px) {
+  .astor-motif-watermark { right: -22px; top: -30px; width: 132px; height: 132px; }
+}
+.astor-book-hero > div,
+.astor-book-hero > aside { position: relative; z-index: 1; }
+.astor-book-record .section-title.astor-marked > .kicker::before {
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 1px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: var(--book-accent, var(--burgundy));
+}
+.astor-book-record .fact b,
+.astor-book-record .quick-facts b { color: var(--book-accent, var(--burgundy)); }
+.astor-book-record .edition-card .year { color: var(--book-accent, var(--burgundy)); }
