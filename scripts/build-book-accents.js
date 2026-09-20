@@ -107,9 +107,17 @@ function accentOf(file, floor) {
 
 // A cover printed in black, cream and one ink gives very little to go on, so
 // the search is tried again with a lower bar before anything is given up.
+// Every book page, not only the ones with a study record: a page without a
+// record still deserves its own colour.
+const slugs = new Set(loadBooks().map(book => book.slug));
+for (const entry of fs.readdirSync(path.join(root, 'books'))) {
+  if (fs.existsSync(path.join(root, 'books', entry, 'index.html'))) slugs.add(entry);
+}
+
 const accents = {};
 const missing = [];
-for (const book of loadBooks()) {
+for (const slug of [...slugs].sort()) {
+  const book = { slug };
   const cover = coverFor(book.slug);
   if (!cover) { missing.push(book.slug + ' (no cover)'); continue; }
   const accent = accentOf(cover, 0.18) || accentOf(cover, 0.08) || accentOf(cover, 0.03);

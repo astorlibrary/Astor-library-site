@@ -8,7 +8,7 @@ const septemberCatalogue = require('./september-catalogue-data.json');
 const { seasons, booksFor, hrefFor } = require('./seasonal-helpers');
 const { loadBooks } = require('./book-data');
 const { renderToolkit } = require('./study-toolkit');
-const { accentFor, motifSvg, motifName } = require('./book-motifs');
+const { accentFor, motifSvg, motifSvgByName, motifName, identityFor } = require('./book-motifs');
 
 const root = process.cwd();
 const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
@@ -1218,6 +1218,29 @@ function moveRelatedReadingDown(html) {
   return rest.replace(/<\/main>/, block.trimEnd() + '\n</main>');
 }
 
+// A book page with no study record still gets its colour and its symbol.
+function addPlainBookIdentity(html, source) {
+  const href = pageHref(source);
+  const match = href.match(/^\/books\/([^/]+)\/$/);
+  if (!match || !html.includes('<main') || html.includes('--book-accent')) return html;
+  const slug = match[1];
+  const title = (html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [, ''])[1].replace(/<[^>]+>/g, ' ').trim();
+  const { accent, motif } = identityFor(slug, title);
+  html = html.replace(/<main([^>]*)>/, (whole, attributes) => {
+    if (/style=/.test(attributes)) return whole;
+    return '<main' + attributes + ' style="--book-accent: ' + accent + '" data-motif="' + motif + '">';
+  });
+  let marked = false;
+  html = html.replace(/(<p class="kicker">)/, (whole, open) => {
+    if (marked) return whole;
+    marked = true;
+    return open + motifSvgByName(motif, 22);
+  });
+  html = html.replace(/<section class="page-intro([^"]*)"([^>]*)>/, (whole, rest, attributes) =>
+    '<section class="page-intro' + rest + ' astor-marked-hero"' + attributes + '>' + motifSvgByName(motif, 168, 'astor-motif-watermark'));
+  return html;
+}
+
 function addStudyToolkit(html, source) {
   const context = studyToolkitFor(source);
   if (!context || !html.includes('<main')) return html;
@@ -1301,6 +1324,7 @@ function prepareHtml(html, source) {
   html = addEditionSample(html, source);
   html = addContextImageShelf(html, source);
   html = addStudyToolkit(html, source);
+  html = addPlainBookIdentity(html, source);
   html = addSiteIndexLink(html, source);
   html = addBookSeasonLinks(html, source);
   html = addGlobalNavigation(html, source);

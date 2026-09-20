@@ -70,6 +70,8 @@ const MOTIFS = {
   gable: '<path d="M3.5 12 12 4.5l8.5 7.5"/><path d="M5.5 10.8v9.7h13v-9.7"/><path d="M10 20.5v-5.5h4v5.5"/>',
   albatross: '<path d="M2.5 13.5c3.4-4.4 6.2-6.6 8.4-6.6 1.4 0 2.4.7 3 2.1.6-1.4 1.6-2.1 3-2.1 2.2 0 5 2.2 8.4 6.6"/><path d="M13.9 9c-.6 3.6-1.2 6.4-1.9 8.4-.7-2-1.3-4.8-1.9-8.4"/>',
   beetle: '<ellipse cx="12" cy="13.5" rx="4.6" ry="6.4"/><path d="M12 7.1V20M7.4 9.5 3.5 7M16.6 9.5 20.5 7M7 13.5H3M17 13.5h4M7.6 17.6 4.2 20.4M16.4 17.6l3.4 2.8"/><circle cx="12" cy="5.2" r="2"/>',
+  quill: '<path d="M4.5 20.5c0-7 5-13 15-15.5-1 9-5.5 14-12 14.5"/><path d="M4.5 20.5 9 16"/><path d="M11 14.5c2.4-.4 4.2-1.6 5.4-3.6"/>',
+  holly: '<path d="M12 8.5c0-3 2-5 6-5.5-.4 3.6-2.4 5.5-6 5.5Z"/><path d="M12 8.5c0-3-2-5-6-5.5.4 3.6 2.4 5.5 6 5.5Z"/><path d="M12 8.5c2.6 0 4.4 1.4 5.4 4-3.4.6-5.4-.6-5.4-4Z"/><path d="M12 8.5c-2.6 0-4.4 1.4-5.4 4 3.4.6 5.4-.6 5.4-4Z"/><circle cx="10.4" cy="17.6" r="1.7"/><circle cx="13.8" cy="19" r="1.7"/>',
   fleuron: '<path d="M12 21.5c0-5 3-7 6.5-7.6C18 17.4 15.4 20 12 21.5Z"/><path d="M12 21.5c0-5-3-7-6.5-7.6C6 17.4 8.6 20 12 21.5Z"/><path d="M12 14.5c0-5.5 2.2-8.6 5.5-9.9C17 9.4 15 13 12 14.5Z"/><path d="M12 14.5C12 9 9.8 5.9 6.5 4.6 7 9.4 9 13 12 14.5Z"/>'
 };
 
@@ -156,6 +158,31 @@ function motifName(book) {
   return 'fleuron';
 }
 
+// A page with no study record still has a title and a slug to go on.
+const BY_TITLE = [
+  [/christmas|carol|chimes|cricket on the hearth|haunted man/i, 'holly'],
+  [/ghost|haunt|wendigo|carnacki|borderland|willows|turn of the screw/i, 'web'],
+  [/halloween|sleepy hollow|bonfire/i, 'candle'],
+  [/sonnet|poems|poetry|lyrical ballads|selected verse|michael robartes/i, 'quill'],
+  [/\b(henry|richard|edward)\b\s*(i{1,3}|iv|vi{1,3}|viii|part|the)/i, 'crown'],
+  [/king john|cromwell|sir thomas more|locrine|arden of faversham|puritan|london prodigal|yorkshire tragedy/i, 'crown'],
+  [/odyssey|iliad|aeneid|voyage|sea|island|crusoe|moby|whale|open boat/i, 'ship'],
+  [/sherlock|sign of four|moonstone|woman in white|detective/i, 'keyhole'],
+  [/utopia|prince|leviathan|charles i|seven pillars|room of one/i, 'column'],
+  [/alice|wonderland|railway|green gables|blue castle|selfish giant|wind in the willows|tom sawyer/i, 'star'],
+  [/dream|tempest|winter|midsummer/i, 'moon'],
+  [/war|badge|worlds|kinsmen|troilus|coriolanus|lucrece/i, 'shield'],
+  [/love|romeo|much ado|twelfth|as you like|shrew|errors|merry wives|gentlemen|labour/i, 'quatrefoil']
+];
+
+// Everything a page needs to wear its book's colours, record or no record.
+function identityFor(slug, title) {
+  if (BOOK_MOTIFS[slug] && MOTIFS[BOOK_MOTIFS[slug]]) return { accent: accentFor(slug), motif: BOOK_MOTIFS[slug] };
+  const text = ((title || '') + ' ' + slug.replace(/-/g, ' ')).trim();
+  for (const [pattern, name] of BY_TITLE) if (pattern.test(text)) return { accent: accentFor(slug), motif: name };
+  return { accent: accentFor(slug), motif: 'fleuron' };
+}
+
 function accentFor(slug) {
   return accents[slug] || HOUSE;
 }
@@ -170,4 +197,13 @@ function motifSvg(book, size = 26, extraClass = '') {
     MOTIFS[name] + '</svg>';
 }
 
-module.exports = { accentFor, motifName, motifSvg, MOTIFS };
+// The same drawing, addressed by name rather than by record.
+function motifSvgByName(name, size = 26, extraClass = '') {
+  const shape = MOTIFS[name] || MOTIFS.fleuron;
+  return '<svg class="astor-motif' + (extraClass ? ' ' + extraClass : '') + '" data-motif="' + name +
+    '" width="' + size + '" height="' + size + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
+    'stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' +
+    shape + '</svg>';
+}
+
+module.exports = { accentFor, motifName, motifSvg, motifSvgByName, identityFor, MOTIFS };
