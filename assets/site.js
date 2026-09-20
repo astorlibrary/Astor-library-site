@@ -500,13 +500,11 @@
         subjectsHtml + toolsHtml + booksHtml +
         '<a class="related-explore-link" href="/explore/">Search all books, subjects, guides and editions <span aria-hidden="true">&rarr;</span></a>';
 
-      if (contents) {
-        contents.after(panel);
-      } else {
-        const edition = main.querySelector('.edition-card');
-        if (edition) edition.after(panel);
-        else main.append(panel);
-      }
+      // The shelf belongs at the foot of the page. A reader who has just
+      // arrived wants the book, not a list of other books.
+      const endNav = main.querySelector('.book-end-nav');
+      if (endNav) endNav.before(panel);
+      else main.append(panel);
       // Keep the compact static shelf as a no-JavaScript fallback, but avoid
       // showing the same recommendations twice when this richer panel loads.
       const staticRelatedShelf = main.querySelector('.context-image-shelf-book');

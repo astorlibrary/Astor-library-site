@@ -957,3 +957,22 @@ input:focus-visible {
 @media (max-width: 680px) {
   .home-today { padding: 18px 16px 16px; }
 }
+
+/* ------------------------------------------------------- a quieter homepage
+
+   The autumn header stays as it is. Below it the page had a section every
+   four hundred pixels, each with its own rules and panels. The sections keep
+   their material; they are given room, and the furniture around them goes. */
+
+.home-wrap { padding-top: 78px; padding-bottom: 78px; }
+.home-wrap + .home-wrap { padding-top: 0; }
+.home-section-head.is-ruled { border-top: 1px solid var(--line); padding-top: 26px; }
+.home-today { border: 0; border-left: 2px solid var(--book-accent, var(--burgundy)); border-radius: 0; padding: 4px 0 4px 20px; background: none; }
+.home-book-list img { box-shadow: none; }
+.home-free-item, .home-study-grid > a, .home-browse-cols > div { border: 0; background: none; }
+.home-study-grid { gap: 30px 34px; }
+.home-colophon, .home-support { border-top: 1px solid var(--line); }
+
+@media (max-width: 620px) {
+  .home-wrap { padding-top: 54px; padding-bottom: 54px; }
+}

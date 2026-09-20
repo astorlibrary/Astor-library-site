@@ -1659,3 +1659,39 @@
 .astor-feature-note { margin: 14px 0 0; font-family: var(--astor-sans); font-size: 13px; color: #5a514c; }
 .astor-feature-note a { color: var(--book-accent, var(--burgundy)); font-weight: 700; }
 @media (max-width: 620px) { .astor-feature { padding: 20px 18px 18px; margin-bottom: 32px; } }
+
+/* ------------------------------------------------- a quieter study toolkit
+
+   Every card in the toolkit had a border, a fill and a shadow, so a panel of
+   eight quotations read as eight boxes before it read as eight quotations.
+   The cards keep their structure and lose their walls. */
+
+.astor-toolkit .astor-note,
+.astor-toolkit .astor-quote-card,
+.astor-toolkit .astor-play-card,
+.astor-toolkit .astor-video,
+.astor-toolkit .astor-stage {
+  border: 0;
+  border-top: 1px solid var(--astor-line);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.astor-toolkit .astor-quote-card {
+  border-top: 0;
+  border-left: 2px solid color-mix(in srgb, var(--astor-accent, var(--burgundy)) 45%, transparent);
+  padding-left: 18px;
+}
+.astor-toolkit .astor-note-grid { gap: 26px 34px; }
+.astor-toolkit .astor-quote-list { gap: 30px; }
+.astor-toolkit .astor-panel { padding-left: 0; padding-right: 0; background: none; }
+.astor-toolkit .astor-panel > h3 { margin-bottom: 18px; }
+.astor-toolkit .astor-glance { border: 0; }
+.astor-toolkit .astor-tabs { border-bottom: 1px solid var(--astor-line); }
+.astor-toolkit { border: 0; border-top: 3px solid var(--astor-accent, var(--burgundy)); background: none; padding: 0; }
+.astor-toolkit .astor-toolkit-head { border-top: 0; padding-top: 26px; }
+@supports not (color: color-mix(in srgb, red 50%, blue)) {
+  .astor-toolkit .astor-quote-card { border-left-color: var(--astor-accent, var(--burgundy)); }
+}

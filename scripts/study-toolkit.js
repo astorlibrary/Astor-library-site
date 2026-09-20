@@ -356,7 +356,7 @@ function fallbackTitle(href) {
     .replace(/(^|\s)\S/g, character => character.toUpperCase());
 }
 
-function renderToolkit(book, { heading, titleFor, passages } = {}) {
+function renderToolkit(book, { heading, titleFor, passages, showGlance = true } = {}) {
   const resolveTitle = href => (titleFor && titleFor(href)) || fallbackTitle(href);
   const panels = [
     plotPanel(book),
@@ -393,7 +393,7 @@ function renderToolkit(book, { heading, titleFor, passages } = {}) {
     '<a class="button primary" href="/play/?book=' + escapeHtml(book.slug) + '">Revise this book</a>' +
     '</div>' +
     '</div>' +
-    glance(book) +
+    (showGlance ? glance(book) : '') +
     '<div class="astor-tabs" role="tablist" aria-label="Study toolkit sections">' + tabs + '</div>' +
     panels.join('') +
     '</section>';

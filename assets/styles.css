@@ -1931,3 +1931,81 @@
 @media(max-width:620px){.explore-paths>a{padding:16px 18px}.explore-paths>a>span{font-size:22px}.explore-paths>a>p{font-size:15px;margin-bottom:0}}
 @media(max-width:620px){.subject-index-covers img:nth-child(2){transform:translateX(-74%) rotate(-7deg)}.subject-index-covers img:nth-child(3){transform:translateX(-26%) rotate(7deg)}.author-cover-stack img:nth-child(2){transform:translateX(-74%) rotate(-6deg)}.author-cover-stack img:nth-child(3){transform:translateX(-26%) rotate(6deg)}}
 @media(max-width:560px){.passage-card{min-height:0;padding:22px 20px 20px}.passage-card-number{font-size:48px;right:16px;top:14px}.passage-card-form{left:20px;top:16px}.passage-card small{margin-top:26px}.passage-card blockquote{margin:12px 0 14px;font-size:32px;line-height:1}.passage-card p{margin-bottom:12px;font-size:14.5px;line-height:1.5}.passage-card:after{width:150px;height:150px;inset:auto -55px -70px auto}}
+
+/* ------------------------------------------------------------ quieter pages
+
+   Astor's pages had grown a box around everything: borders, shadows and
+   panels competing at the same weight. The material is unchanged; what
+   follows removes the boxes, opens the spacing and lets the type carry the
+   page. Hairlines are kept only where they separate one thing from another. */
+
+.hub-card, .prod-card, .edition-card, .fact, .record-list li, .image-note,
+.source-list a, .astor-note, .astor-quote-card, .related-tool, .related-book,
+.explore-card, .astor-feature { box-shadow: none; }
+
+.feature-book { box-shadow: none; }
+
+/* Facts read as a row of statements, not four boxes. */
+.quick-facts { gap: 0 34px; margin: 34px 0 54px; }
+.fact { min-height: 0; padding: 0 0 0 18px; border: 0; border-left: 1px solid var(--line); background: none; }
+.fact b { font-size: 26px; }
+
+/* One hairline above a section, and room to breathe before it. */
+.section-title { margin: 92px 0 30px; padding-top: 24px; }
+.page-wrap .section-title:first-of-type { margin-top: 64px; }
+
+/* Cards: no border, no fill; a hairline only where it does work. */
+.prod-card, .record-list li, .image-note { border: 0; background: none; padding-left: 0; padding-right: 0; }
+.record-list { gap: 26px 34px; }
+.record-list li { border-top: 1px solid var(--line); padding-top: 16px; }
+.timeline { gap: 34px; }
+.prod-card { border-top: 1px solid var(--line); padding-top: 20px; }
+.source-list a { border: 0; border-top: 1px solid var(--line); background: none; padding: 14px 0; }
+.source-list { gap: 0; }
+
+/* Prose stays at a readable measure however wide the screen. */
+.prod-card p, .prod-card li, .record-list li, .image-note p, .section-title p,
+.edition-card p, .edition-card li { max-width: 74ch; }
+
+/* The contents bar becomes a quiet line of links rather than a dark slab. */
+.page-contents { background: none; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 14px 0; }
+.page-contents a { color: var(--muted); }
+.page-contents a:hover, .page-contents a[aria-current] { color: var(--burgundy); }
+
+/* The related shelf now sits at the foot of the page, so it is quieter too. */
+.related-reading { margin-top: 84px; padding: 34px 0 0; border-top: 1px solid var(--line); background: none; }
+.related-tool, .related-book { border: 0; background: none; }
+
+/* The book's own symbol, faint, behind the opening of its page. */
+.page-intro.astor-marked-hero { position: relative; overflow: hidden; }
+.astor-marked-hero > div, .astor-marked-hero > aside { position: relative; z-index: 1; }
+
+/* The remaining boxes on a book page: prose set in cards, the edition panels
+   and the asides. A rule above each is enough to separate them. */
+.prod-card.prose-card, .edition-format-card, .season-book-backlinks, .astor-page-credit {
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.edition-card { border: 0; background: none; padding-left: 0; padding-right: 0; }
+.source-note { border: 0; border-left: 2px solid var(--line); background: none; padding: 2px 0 2px 20px; }
+.edition-card img, .feature-book img, .home-book-list img, .book-cover img { box-shadow: 0 10px 26px rgba(32,28,26,.10); }
+.edition-format-panel { border: 0; background: none; }
+
+/* The contents line follows the reader down a long book page, so the length
+   of the page is something to steer by rather than scroll through. */
+.page-contents {
+  position: sticky;
+  top: var(--astor-header-height, 64px);
+  z-index: 5;
+  margin-bottom: 8px;
+  background: linear-gradient(var(--paper), var(--paper));
+  backdrop-filter: saturate(140%) blur(2px);
+}
+@media (max-width: 620px) {
+  .page-contents { position: static; backdrop-filter: none; }
+}

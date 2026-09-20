@@ -8,6 +8,7 @@ const septemberCatalogue = require('./september-catalogue-data.json');
 const { seasons, booksFor, hrefFor } = require('./seasonal-helpers');
 const { loadBooks } = require('./book-data');
 const { renderToolkit } = require('./study-toolkit');
+const { accentFor, motifSvg, motifName } = require('./book-motifs');
 
 const root = process.cwd();
 const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
@@ -1185,10 +1186,44 @@ function discoveryTitle(href) {
   return null;
 }
 
+// A book page wears its book's colour and its own symbol: a lightning bolt on
+// Frankenstein, a whale on Moby-Dick, a candle on A Christmas Carol.
+function addBookIdentity(html, book) {
+  if (!html.includes('<main') || html.includes('--book-accent')) return html;
+  html = html.replace(/<main([^>]*)>/, (whole, attributes) => {
+    if (/style=/.test(attributes)) return whole.replace(/style="([^"]*)"/, 'style="$1; --book-accent: ' + accentFor(book.slug) + '"');
+    return '<main' + attributes + ' style="--book-accent: ' + accentFor(book.slug) + '" data-motif="' + motifName(book) + '">';
+  });
+  // The symbol goes beside the author's name at the top of the page, and once
+  // more, large and faint, behind the opening.
+  let marked = false;
+  html = html.replace(/(<p class="kicker">)/, (whole, open) => {
+    if (marked) return whole;
+    marked = true;
+    return open + motifSvg(book, 22);
+  });
+  html = html.replace(/<section class="page-intro([^"]*)"([^>]*)>/, (whole, rest, attributes) =>
+    '<section class="page-intro' + rest + ' astor-marked-hero"' + attributes + '>' + motifSvg(book, 168, 'astor-motif-watermark'));
+  return html;
+}
+
+// The shelf of related guides and editions is worth having, but not before
+// the reader has reached the book itself. It moves to the foot of the page.
+function moveRelatedReadingDown(html) {
+  const match = html.match(/<section class="related-reading[\s\S]*?<\/section>\s*/);
+  if (!match) return html;
+  const block = match[0];
+  const rest = html.replace(block, '');
+  if (/<nav class="book-end-nav/.test(rest)) return rest.replace(/<nav class="book-end-nav/, block.trimEnd() + '\n  <nav class="book-end-nav');
+  return rest.replace(/<\/main>/, block.trimEnd() + '\n</main>');
+}
+
 function addStudyToolkit(html, source) {
   const context = studyToolkitFor(source);
   if (!context || !html.includes('<main')) return html;
   if (html.includes('id="astor-study-toolkit"')) return html;
+  html = addBookIdentity(html, context.book);
+  if (context.kind === 'book') html = moveRelatedReadingDown(html);
 
   const heading = context.kind === 'study'
     ? 'Work through ' + context.book.title + '.'
@@ -1197,7 +1232,12 @@ function addStudyToolkit(html, source) {
   const passages = (discovery.passages || [])
     .filter(passage => (passage.relatedBooks || []).includes(baseHref))
     .map(passage => ({ href: passage.href, title: plainText(passage.title), description: plainText(passage.description || '') }));
-  const toolkit = renderToolkit(context.book, { heading, titleFor: discoveryTitle, passages });
+  // A page that already opens with its own facts does not need them again
+  // from the toolkit.
+  const toolkit = renderToolkit(context.book, {
+    heading, titleFor: discoveryTitle, passages,
+    showGlance: !/class="quick-facts/.test(html)
+  });
 
   // Insert where the page stops introducing the book and starts on its
   // history: after the edition card, else after the quick facts, else after
