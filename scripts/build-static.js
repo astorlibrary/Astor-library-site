@@ -1372,10 +1372,16 @@ fs.writeFileSync(path.join(outDir, '_headers'), `# Astor Library static hosting 
   Strict-Transport-Security: max-age=31536000
 
 /assets/*.css
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Cache-Control: public, max-age=300, stale-while-revalidate=3600
 
 /assets/*.js
-  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+  Cache-Control: public, max-age=300, stale-while-revalidate=3600
+
+/assets/*.mjs
+  Cache-Control: public, max-age=300, stale-while-revalidate=3600
+
+/assets/vendor/*
+  Cache-Control: public, max-age=31536000, immutable
 
 /assets/book-thumbs/*
   Cache-Control: public, max-age=31536000, immutable

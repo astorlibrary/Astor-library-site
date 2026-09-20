@@ -16,6 +16,8 @@ const LIBRARY = '/assets/vendor/maplibre-gl-5.24.0/maplibre-gl.js';
 const LIBRARY_CSS = '/assets/vendor/maplibre-gl-5.24.0/maplibre-gl.css';
 const STYLE = 'https://tiles.openfreemap.org/styles/liberty';
 const INK = '#6E1F2B';
+const HEIGHT = 'height:min(68vh,640px);min-height:380px;width:100%;position:relative;background:#dfe8ea';
+const BOOK_HEIGHT = 'height:min(52vh,460px);min-height:300px;width:100%;position:relative;background:#dfe8ea';
 const PAPER = '#fffdfa';
 
 const VIEWS = {
@@ -100,6 +102,37 @@ function isTouch() {
 // Builds a map in `container` and calls back with its methods once the style
 // has loaded, or calls `failed` if it cannot.
 function makeMap(maplibregl, container, options, failed) {
+  let gone = false;
+  let map;
+  try {
+    map = buildMap(maplibregl, container, options, () => giveUpSafely());
+  } catch {
+    failed();
+    return null;
+  }
+
+  function giveUpSafely() {
+    if (gone) return;
+    gone = true;
+    try { map.remove(); } catch { /* it may never have started */ }
+    failed();
+  }
+
+  // A container with no height draws nothing. Give it one and tell the map.
+  const watchSize = () => {
+    if (gone) return;
+    if (container.clientHeight < 40) {
+      container.style.minHeight = '380px';
+      try { map.resize(); } catch { /* not ready yet */ }
+    }
+  };
+  window.setTimeout(watchSize, 400);
+  if ('ResizeObserver' in window) new ResizeObserver(() => { if (!gone) { try { map.resize(); } catch { /* not ready */ } } }).observe(container);
+  container.addEventListener('webglcontextlost', giveUpSafely);
+  return map;
+}
+
+function buildMap(maplibregl, container, options, giveUpSafely) {
   let loaded = false;
   const map = new maplibregl.Map({
     container,
@@ -119,13 +152,10 @@ function makeMap(maplibregl, container, options, failed) {
   // Only a style that never arrives means no map. A slow or missing tile
   // after that is the map's own business.
   let styled = false;
-  let gone = false;
   const giveUp = () => {
-    if (gone || loaded) return;
-    gone = true;
+    if (loaded) return;
     window.clearTimeout(timer);
-    map.remove();
-    failed();
+    giveUpSafely();
   };
   const timer = window.setTimeout(() => { if (!styled) giveUp(); }, 15000);
   map.on('error', () => { if (!styled) giveUp(); });
@@ -172,8 +202,10 @@ function makeMap(maplibregl, container, options, failed) {
     // Invisible stand-ins the size of each marker. Names are laid out around
     // them, so a name never lands on a marker.
     const blocker = size => ({ width: size, height: size, data: new Uint8Array(size * size * 4) });
-    if (!map.hasImage('astor-spot-block')) map.addImage('astor-spot-block', blocker(24));
-    if (!map.hasImage('astor-cluster-block')) map.addImage('astor-cluster-block', blocker(56));
+    try {
+      if (!map.hasImage('astor-spot-block')) map.addImage('astor-spot-block', blocker(24));
+      if (!map.hasImage('astor-cluster-block')) map.addImage('astor-cluster-block', blocker(56));
+    } catch { /* names will simply lay themselves out around each other */ }
     map.addLayer({
       id: 'spot-block', type: 'symbol', source: 'places', filter: ['!', ['has', 'point_count']],
       layout: { 'icon-image': 'astor-spot-block', 'icon-allow-overlap': true, 'icon-size': 1 }
@@ -318,7 +350,7 @@ async function startExplorer() {
   const byId = new Map(places.map(place => [place.id, place]));
   const withPlaces = index.books.filter(book => (book.places || []).length).sort((a, b) => a.title.localeCompare(b.title));
 
-  const holder = el('div', { class: 'astor-slippy', role: 'region', 'aria-label': 'Map of where the books are set' });
+  const holder = el('div', { class: 'astor-slippy', style: HEIGHT, role: 'region', 'aria-label': 'Map of where the books are set' });
   const note = el('p', { class: 'astor-inline-note', text: 'Tap a marker to see what happens there.' });
   const live = el('p', { class: 'astor-game-live', 'aria-live': 'polite', role: 'status' });
   const detail = el('div', { class: 'astor-map-detail' });
@@ -428,7 +460,7 @@ export async function embedBookMap(root, slug) {
   const byId = new Map(places.map(place => [place.id, place]));
 
   clear(root);
-  const holder = el('div', { class: 'astor-slippy is-book', role: 'region', 'aria-label': 'Map of where ' + book.title + ' is set' });
+  const holder = el('div', { class: 'astor-slippy is-book', style: BOOK_HEIGHT, role: 'region', 'aria-label': 'Map of where ' + book.title + ' is set' });
   const live = el('p', { class: 'astor-game-live', 'aria-live': 'polite', role: 'status' });
   const detail = el('div', { class: 'astor-map-detail' });
   root.append(el('div', { class: 'astor-graph-wrap has-slippy' }, [holder]), live, detail);
