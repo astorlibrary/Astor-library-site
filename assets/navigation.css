@@ -1124,6 +1124,8 @@ body.is-site-menu-open {
   .astor-movement-grid article > span, .astor-context-grid article > span,
   .astor-question-grid article > span,
   .autumn-dates em, .home-book-list small,
+  .home-wrap a > span > small, .edition-format-label,
+  .explore-card .explore-kind, .editorial-principles article > span,
   .edition-choice-grid a > span > b, .book-passage-grid a > b > span {
     font-size: 11px !important;
   }

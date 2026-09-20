@@ -311,8 +311,8 @@ function videosPanel(book) {
     '<h4>' + escapeHtml(video.title) + '</h4>' +
     '<p>' + escapeHtml(video.note) + '</p>' +
     '<p class="astor-inline-note">' + escapeHtml(video.source || video.provider) + '</p>' +
-    '<button class="button secondary" type="button" data-video-play>Load the video</button> ' +
-    '<a class="button secondary" href="' + escapeHtml(video.url) + '" rel="noopener noreferrer">Watch it on the original site</a>' +
+    '<button class="button secondary" type="button" data-video-play>Play</button> ' +
+    '<a class="button secondary" href="' + escapeHtml(video.url) + '" rel="noopener noreferrer">Watch on YouTube</a>' +
     '</article>'
   ).join('');
   return '<section class="astor-panel" id="astor-watch" data-panel="Watch">' +
