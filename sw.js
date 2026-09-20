@@ -47,7 +47,8 @@ function isData(url) {
   return url.pathname.startsWith('/data/books/') ||
     url.pathname === '/assets/study-index.json' ||
     url.pathname === '/assets/search-index.json' ||
-    url.pathname === '/assets/content-index.json';
+    url.pathname === '/assets/content-index.json' ||
+    url.pathname.startsWith('/assets/astor/geo/');
 }
 
 function isAsset(url) {

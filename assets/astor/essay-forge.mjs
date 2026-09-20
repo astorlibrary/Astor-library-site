@@ -43,7 +43,7 @@ function render(book) {
 
   const thesis = el('textarea', {
     'aria-label': 'Your line of argument',
-    placeholder: 'One sentence. What are you actually arguing? Not what the question is about — what you think the answer is.'
+    placeholder: 'One sentence: what are you arguing?'
   });
   thesis.addEventListener('input', () => { state.thesis = thesis.value; paintOutput(); });
 
@@ -53,7 +53,7 @@ function render(book) {
       el('div', {}, [
         el('p', { class: 'kicker', text: 'Essay forge · ' + book.title }),
         el('h2', { text: 'Build the plan.' }),
-        el('p', { text: 'Choose a question, set out your line of argument in one sentence, then add a paragraph at a time. Each needs a point, a piece of evidence and a sentence on what the evidence is doing.' })
+        el('p', { text: 'Pick a question, write your argument in a sentence, then build it up paragraph by paragraph.' })
       ])
     ]),
     el('div', { class: 'astor-panel' }, [
@@ -105,7 +105,7 @@ function render(book) {
     const point = el('textarea', {
       value: paragraph.point,
       'aria-label': 'Point for paragraph ' + (index + 1),
-      placeholder: 'A claim, not a topic. “Ambition” is a topic; “the play refuses to let ambition be a motive” is a claim.'
+      placeholder: 'Make a claim, not a topic. “Ambition” is a topic.'
     });
     point.addEventListener('input', () => { paragraph.point = point.value; paintOutput(); });
 
@@ -123,7 +123,7 @@ function render(book) {
     const effect = el('textarea', {
       value: paragraph.effect,
       'aria-label': 'Effect for paragraph ' + (index + 1),
-      placeholder: 'What is the language doing? If the sentence could begin “this shows that”, write the next one instead.'
+      placeholder: 'What is the language doing here?'
     });
     effect.addEventListener('input', () => { paragraph.effect = effect.value; paintOutput(); });
 

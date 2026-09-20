@@ -1,289 +1,499 @@
-// A map of where the books happen.
+// The map of settings, on a real map.
 //
-// Drawn as inline SVG on an equirectangular projection from coordinates held
-// with each book's record. No tiles are fetched and no third party is
-// contacted: the map is a grid, a set of points and a list, and the list is
-// the part that carries the information.
+// MapLibre (hosted in assets/vendor) draws OpenStreetMap tiles served by
+// OpenFreeMap. Places that share a spot are one marker; markers that crowd
+// each other gather into numbered clusters that open as you zoom. Choosing a
+// marker lists what happens there beneath the map.
 //
-// Three hundred places do not fit three hundred labels, so the map shows dots
-// and names only the one you choose. Every place is also in the list below,
-// book by book, and choosing it there lights it on the map.
+// If the browser cannot draw WebGL, or the tiles do not arrive (no signal),
+// the outline map in map-outline.mjs takes over, drawn from coastline files
+// this site serves itself.
 
-import { el, clear, announce, prefersReducedMotion } from './util.mjs';
-import { loadIndex } from './data.mjs';
+import { el, clear, announce } from './util.mjs';
+import { loadIndex, loadBook } from './data.mjs';
 
-const controls = document.querySelector('#astor-map-controls');
-const mapMount = document.querySelector('#astor-map');
-const listMount = document.querySelector('#astor-map-list');
+const LIBRARY = '/assets/vendor/maplibre-gl-5.24.0/maplibre-gl.js';
+const LIBRARY_CSS = '/assets/vendor/maplibre-gl-5.24.0/maplibre-gl.css';
+const STYLE = 'https://tiles.openfreemap.org/styles/liberty';
+const INK = '#6E1F2B';
+const HEIGHT = 'height:min(68vh,640px);min-height:380px;width:100%;position:relative;background:#dfe8ea';
+const BOOK_HEIGHT = 'height:min(52vh,460px);min-height:300px;width:100%;position:relative;background:#dfe8ea';
+const PAPER = '#fffdfa';
 
 const VIEWS = {
-  britain: { name: 'Britain and Ireland', west: -11, east: 3, south: 49.5, north: 59.5 },
-  europe: { name: 'Europe', west: -12, east: 32, south: 35, north: 62 },
-  americas: { name: 'The Americas', west: -130, east: -30, south: -20, north: 62 },
-  world: { name: 'The whole world', west: -180, east: 180, south: -60, north: 80 }
+  london: { name: 'London and the South-East', bounds: [[-1.35, 50.7], [1.5, 52.1]] },
+  britain: { name: 'Britain and Ireland', bounds: [[-10.8, 49.8], [2.2, 59.2]] },
+  europe: { name: 'Europe', bounds: [[-12, 35], [32, 62]] },
+  americas: { name: 'The Americas', bounds: [[-130, -20], [-30, 62]] },
+  world: { name: 'The whole world', bounds: [[-170, -55], [175, 72]] }
 };
-const ORDER = ['britain', 'europe', 'americas', 'world'];
+const ORDER = ['london', 'britain', 'europe', 'americas', 'world'];
 
-// Britain is taller than it is wide, and drawn to its true shape it would run
-// to twelve hundred pixels on a desk. Each view is widened, sea on both sides,
-// until the drawing is no taller than seven-tenths of its width.
-for (const bounds of Object.values(VIEWS)) {
-  const cosine = Math.cos(((bounds.north + bounds.south) / 2) * (Math.PI / 180));
-  const needed = (bounds.north - bounds.south) / (0.7 * cosine);
-  const span = bounds.east - bounds.west;
-  if (needed > span) {
-    bounds.west -= (needed - span) / 2;
-    bounds.east += (needed - span) / 2;
-  }
-}
+// --- loading the library ----------------------------------------------------
 
-let places = [];
-let view = 'britain';
-let bookFilter = 'all';
-let selected = null;
-let live = null;
+let library = null;
 
-if (mapMount) start();
-
-async function start() {
-  let index;
+function webglAvailable() {
   try {
-    index = await loadIndex();
+    const canvas = document.createElement('canvas');
+    return Boolean(canvas.getContext('webgl2') || canvas.getContext('webgl'));
   } catch {
-    mapMount.append(el('p', { class: 'astor-empty', text: 'The map could not load. Each book page names its settings in the “At a glance” panel.' }));
-    return;
-  }
-
-  places = index.books.flatMap(book => (book.places || []).map((place, position) => ({
-    ...place, book, id: book.slug + '-' + position
-  })));
-  if (!places.length) {
-    mapMount.append(el('p', { class: 'astor-empty', text: 'No settings are plotted yet. They arrive with each title’s record.' }));
-    return;
-  }
-
-  live = el('p', { class: 'astor-game-live', 'aria-live': 'polite', role: 'status' });
-  listMount.before(live);
-
-  buildControls(index);
-  render();
-
-  if ('ResizeObserver' in window) {
-    let lastWidth = mapMount.clientWidth;
-    let timer = 0;
-    new ResizeObserver(() => {
-      const width = mapMount.clientWidth;
-      if (Math.abs(width - lastWidth) < 8) return;
-      lastWidth = width;
-      window.clearTimeout(timer);
-      timer = window.setTimeout(renderMap, 120);
-    }).observe(mapMount);
+    return false;
   }
 }
 
-function fittingView(book) {
-  const fits = key => (book.places || []).every(place =>
-    place.lon >= VIEWS[key].west && place.lon <= VIEWS[key].east &&
-    place.lat >= VIEWS[key].south && place.lat <= VIEWS[key].north);
-  return ORDER.find(fits) || 'world';
-}
-
-function buildControls(index) {
-  clear(controls);
-
-  const viewSelect = el('select', { id: 'astor-map-view', 'aria-label': 'Choose a view' });
-  for (const key of ORDER) {
-    const count = places.filter(place => inView(place, VIEWS[key])).length;
-    viewSelect.append(el('option', { value: key, text: VIEWS[key].name + ' (' + count + ')' }));
-  }
-  viewSelect.addEventListener('change', () => { view = viewSelect.value; render(); });
-  controls.append(el('div', {}, [el('label', { for: viewSelect.id, text: 'View' }), viewSelect]));
-
-  const bookSelect = el('select', { id: 'astor-map-book', 'aria-label': 'Filter by book' });
-  bookSelect.append(el('option', { value: 'all', text: 'Every book' }));
-  const withPlaces = index.books.filter(book => (book.places || []).length).sort((a, b) => a.title.localeCompare(b.title));
-  for (const book of withPlaces) bookSelect.append(el('option', { value: book.slug, text: book.title }));
-
-  const requested = new URLSearchParams(window.location.search).get('book');
-  if (requested && withPlaces.some(book => book.slug === requested)) {
-    bookFilter = requested;
-    bookSelect.value = requested;
-    view = fittingView(withPlaces.find(entry => entry.slug === requested));
-  }
-  viewSelect.value = view;
-
-  bookSelect.addEventListener('change', () => {
-    bookFilter = bookSelect.value;
-    selected = null;
-    if (bookFilter !== 'all') {
-      view = fittingView(withPlaces.find(entry => entry.slug === bookFilter));
-      viewSelect.value = view;
+function loadLibrary() {
+  if (library) return library;
+  library = new Promise((resolve, reject) => {
+    if (!webglAvailable()) { reject(new Error('no webgl')); return; }
+    if (window.maplibregl) { resolve(window.maplibregl); return; }
+    if (!document.querySelector('link[href="' + LIBRARY_CSS + '"]')) {
+      document.head.append(el('link', { rel: 'stylesheet', href: LIBRARY_CSS }));
     }
-    render();
+    const script = el('script', { src: LIBRARY });
+    script.addEventListener('load', () => (window.maplibregl ? resolve(window.maplibregl) : reject(new Error('no library'))));
+    script.addEventListener('error', () => reject(new Error('library failed')));
+    document.head.append(script);
   });
-  controls.append(el('div', {}, [el('label', { for: bookSelect.id, text: 'Book' }), bookSelect]));
+  return library;
 }
 
-function svgEl(name, attributes = {}) {
-  const node = document.createElementNS('http://www.w3.org/2000/svg', name);
-  for (const [key, value] of Object.entries(attributes)) node.setAttribute(key, String(value));
-  return node;
-}
+// --- the places ---------------------------------------------------------------
 
-function inView(place, bounds) {
-  return place.lon >= bounds.west && place.lon <= bounds.east &&
-    place.lat >= bounds.south && place.lat <= bounds.north;
-}
-
-function shown() {
-  const bounds = VIEWS[view];
-  return places.filter(place => (bookFilter === 'all' || place.book.slug === bookFilter) && inView(place, bounds));
-}
-
-function render() {
-  renderMap();
-  renderList();
-}
-
-function renderMap() {
-  clear(mapMount);
-  const bounds = VIEWS[view];
-  const width = 960;
-  // Degrees of longitude shrink towards the poles; scaling the height by the
-  // cosine of the middle latitude keeps Britain roughly the shape it is.
-  const midLatitude = ((bounds.north + bounds.south) / 2) * (Math.PI / 180);
-  const height = Math.round(width * ((bounds.north - bounds.south) / (bounds.east - bounds.west)) / Math.cos(midLatitude));
-  const visible = shown();
-
-  // Dots are sized for the screen, not the drawing: on a phone the drawing is
-  // scaled to a third of its width and a dot that stays readable there is
-  // drawn three times as large.
-  const scale = width / Math.max(240, mapMount.clientWidth || width);
-  const radius = 5.5 * scale;
-  const fontSize = 12 * scale;
-
-  const svg = svgEl('svg', {
-    class: 'astor-map-svg',
-    viewBox: '0 0 ' + width + ' ' + height,
-    role: 'group',
-    'aria-label': visible.length + ' places from the Astor Library catalogue, shown on ' + bounds.name.toLowerCase()
+// Places at the same spot (forty books name London) become one marker.
+function spots(places) {
+  const byKey = new Map();
+  for (const place of places) {
+    const key = place.lon.toFixed(3) + ',' + place.lat.toFixed(3);
+    if (!byKey.has(key)) byKey.set(key, []);
+    byKey.get(key).push(place);
+  }
+  return [...byKey.values()].map((group, index) => {
+    const tally = new Map();
+    for (const place of group) tally.set(place.name, (tally.get(place.name) || 0) + 1);
+    const name = [...tally.entries()].sort((a, b) => b[1] - a[1])[0][0];
+    return {
+      type: 'Feature',
+      id: index + 1,
+      geometry: { type: 'Point', coordinates: [group[0].lon, group[0].lat] },
+      properties: {
+        spot: index + 1,
+        name: name.replace(/\s*\(.*?\)\s*/g, ' ').trim(),
+        label: group.length > 1 ? name.replace(/\s*\(.*?\)\s*/g, ' ').trim() + ' · ' + group.length : name.replace(/\s*\(.*?\)\s*/g, ' ').trim(),
+        count: group.length,
+        ids: group.map(place => place.id).join(' ')
+      }
+    };
   });
+}
 
-  svg.append(svgEl('rect', { x: 0, y: 0, width, height, fill: '#fbf3e9' }));
+function boundsOf(places) {
+  const lons = places.map(place => place.lon);
+  const lats = places.map(place => place.lat);
+  return [[Math.min(...lons), Math.min(...lats)], [Math.max(...lons), Math.max(...lats)]];
+}
 
-  // A graticule rather than a coastline: the grid gives a sense of scale
-  // without claiming a cartographic accuracy the page does not have.
-  const step = view === 'britain' ? 2 : view === 'europe' ? 5 : 20;
-  const grid = svgEl('g', { stroke: 'rgba(32,28,26,.1)', 'stroke-width': String(scale) });
-  for (let longitude = Math.ceil(bounds.west / step) * step; longitude <= bounds.east; longitude += step) {
-    const x = project(longitude, bounds.south, bounds, width, height).x;
-    grid.append(svgEl('line', { x1: x, y1: 0, x2: x, y2: height }));
+// --- drawing ------------------------------------------------------------------
+
+function isTouch() {
+  return window.matchMedia('(pointer: coarse)').matches;
+}
+
+// Builds a map in `container` and calls back with its methods once the style
+// has loaded, or calls `failed` if it cannot.
+function makeMap(maplibregl, container, options, failed) {
+  let gone = false;
+  let map;
+  try {
+    map = buildMap(maplibregl, container, options, () => giveUpSafely());
+  } catch {
+    failed();
+    return null;
   }
-  for (let latitude = Math.ceil(bounds.south / step) * step; latitude <= bounds.north; latitude += step) {
-    const y = project(bounds.west, latitude, bounds, width, height).y;
-    grid.append(svgEl('line', { x1: 0, y1: y, x2: width, y2: y }));
+
+  function giveUpSafely() {
+    if (gone) return;
+    gone = true;
+    try { map.remove(); } catch { /* it may never have started */ }
+    failed();
   }
-  svg.append(grid);
 
-  const name = svgEl('text', { class: 'astor-map-name', x: 14 * scale, y: 22 * scale, 'font-size': fontSize * 0.9 });
-  name.textContent = bounds.name + ' · ' + step + '° grid';
-  svg.append(name);
-
-  let selectedNode = null;
-  for (const place of visible) {
-    const point = project(place.lon, place.lat, bounds, width, height);
-    const isSelected = selected === place.id;
-    const node = svgEl('g', {
-      class: 'astor-place' + (isSelected ? ' is-selected' : ''),
-      tabindex: '0', role: 'button', 'aria-pressed': String(isSelected),
-      'aria-label': place.name + ', ' + place.book.title + '.'
-    });
-    node.append(svgEl('circle', { cx: point.x, cy: point.y, r: isSelected ? radius * 1.5 : radius }));
-    const title = svgEl('title');
-    title.textContent = place.name + ' — ' + place.book.title;
-    node.append(title);
-    const choose = () => select(isSelected ? null : place.id, true);
-    node.addEventListener('click', choose);
-    node.addEventListener('keydown', event => {
-      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); choose(); }
-    });
-    svg.append(node);
-    if (isSelected) {
-      selectedNode = node;
-      // The label goes on whichever side has room.
-      const leftward = point.x > width * 0.72;
-      const label = svgEl('text', {
-        class: 'astor-place-label',
-        x: leftward ? point.x - radius * 2.2 : point.x + radius * 2.2,
-        y: point.y + fontSize * 0.36,
-        'font-size': fontSize,
-        'text-anchor': leftward ? 'end' : 'start'
-      });
-      label.textContent = place.name + ' · ' + place.book.title;
-      svg.append(label);
+  // A container with no height draws nothing. Give it one and tell the map.
+  const watchSize = () => {
+    if (gone) return;
+    if (container.clientHeight < 40) {
+      container.style.minHeight = '380px';
+      try { map.resize(); } catch { /* not ready yet */ }
     }
-  }
-  mapMount.append(svg);
-  if (selectedNode && !mapMount.contains(document.activeElement)) selectedNode.focus({ preventScroll: true });
+  };
+  window.setTimeout(watchSize, 400);
+  if ('ResizeObserver' in window) new ResizeObserver(() => { if (!gone) { try { map.resize(); } catch { /* not ready */ } } }).observe(container);
+  container.addEventListener('webglcontextlost', giveUpSafely);
 
-  mapMount.append(el('p', {
-    class: 'astor-inline-note',
-    text: visible.length
-      ? visible.length + ' place' + (visible.length === 1 ? '' : 's') + ' in view. Choose a dot to name it, or a place in the list below to find it on the map.'
-      : 'Nothing in this view. Try “The whole world”.'
-  }));
+  // A map built while the tab was in the background has drawn nothing. Draw
+  // it when the reader comes back to it.
+  document.addEventListener('visibilitychange', () => {
+    if (gone || document.visibilityState !== 'visible') return;
+    try { map.resize(); map.triggerRepaint(); } catch { /* not ready yet */ }
+  });
+  return map;
 }
 
-function renderList() {
-  clear(listMount);
-  const visible = shown();
+function buildMap(maplibregl, container, options, giveUpSafely) {
+  let loaded = false;
+  const map = new maplibregl.Map({
+    container,
+    style: STYLE,
+    bounds: options.bounds,
+    fitBoundsOptions: { padding: 36, maxZoom: options.maxZoom || 9 },
+    attributionControl: { compact: true },
+    cooperativeGestures: options.cooperative,
+    dragRotate: false,
+    pitchWithRotate: false,
+    touchPitch: false,
+    maxZoom: 16
+  });
+  map.touchZoomRotate.disableRotation();
+  map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+
+  // Only a style that never arrives means no map. A slow or missing tile
+  // after that is the map's own business.
+  let styled = false;
+  const giveUp = () => {
+    if (loaded) return;
+    window.clearTimeout(timer);
+    giveUpSafely();
+  };
+  const timer = window.setTimeout(() => { if (!styled) giveUp(); }, 15000);
+  map.on('error', () => { if (!styled) giveUp(); });
+
+  // The markers go on as soon as the style is ready. Waiting for 'load'
+  // would mean waiting for a drawn frame, which never comes while the page
+  // is in a background tab.
+  map.on('style.load', () => {
+    styled = true;
+    loaded = true;
+    window.clearTimeout(timer);
+    map.addSource('places', {
+      type: 'geojson',
+      data: { type: 'FeatureCollection', features: [] },
+      cluster: true,
+      clusterRadius: 38,
+      clusterMaxZoom: 9,
+      clusterProperties: { places: ['+', ['get', 'count']] }
+    });
+    map.addLayer({
+      id: 'clusters', type: 'circle', source: 'places', filter: ['has', 'point_count'],
+      paint: {
+        'circle-color': INK,
+        'circle-opacity': 0.92,
+        'circle-radius': ['step', ['get', 'places'], 13, 5, 16, 15, 20, 40, 25],
+        'circle-stroke-color': PAPER,
+        'circle-stroke-width': 2
+      }
+    });
+    map.addLayer({
+      id: 'cluster-count', type: 'symbol', source: 'places', filter: ['has', 'point_count'],
+      layout: { 'text-field': ['to-string', ['get', 'places']], 'text-font': ['Noto Sans Bold'], 'text-size': 12, 'text-allow-overlap': true },
+      paint: { 'text-color': PAPER }
+    });
+    map.addLayer({
+      id: 'spot', type: 'circle', source: 'places', filter: ['!', ['has', 'point_count']],
+      paint: {
+        'circle-color': INK,
+        'circle-radius': ['case', ['boolean', ['feature-state', 'chosen'], false], 9, ['>', ['get', 'count'], 1], 8, 6],
+        'circle-stroke-color': ['case', ['boolean', ['feature-state', 'chosen'], false], '#b78a42', PAPER],
+        'circle-stroke-width': ['case', ['boolean', ['feature-state', 'chosen'], false], 3, 2]
+      }
+    });
+    // Invisible stand-ins the size of each marker. Names are laid out around
+    // them, so a name never lands on a marker.
+    const blocker = size => ({ width: size, height: size, data: new Uint8Array(size * size * 4) });
+    try {
+      if (!map.hasImage('astor-spot-block')) map.addImage('astor-spot-block', blocker(24));
+      if (!map.hasImage('astor-cluster-block')) map.addImage('astor-cluster-block', blocker(56));
+    } catch { /* names will simply lay themselves out around each other */ }
+    map.addLayer({
+      id: 'spot-block', type: 'symbol', source: 'places', filter: ['!', ['has', 'point_count']],
+      layout: { 'icon-image': 'astor-spot-block', 'icon-allow-overlap': true, 'icon-size': 1 }
+    });
+    map.addLayer({
+      id: 'cluster-block', type: 'symbol', source: 'places', filter: ['has', 'point_count'],
+      layout: {
+        'icon-image': 'astor-cluster-block',
+        'icon-allow-overlap': true,
+        'icon-size': ['step', ['get', 'places'], 0.55, 5, 0.65, 15, 0.78, 40, 0.95]
+      }
+    });
+    map.addLayer({
+      id: 'spot-name', type: 'symbol', source: 'places', filter: ['!', ['has', 'point_count']],
+      layout: {
+        'text-field': ['get', 'label'],
+        'text-font': ['Noto Sans Bold'],
+        'text-size': 12,
+        'text-variable-anchor': ['left', 'right', 'top', 'bottom'],
+        'text-radial-offset': 1,
+        'text-padding': 3,
+        'text-justify': 'auto',
+        'text-max-width': 12
+      },
+      paint: { 'text-color': '#201c1a', 'text-halo-color': PAPER, 'text-halo-width': 1.6 }
+    });
+
+    for (const layer of ['clusters', 'spot']) {
+      map.on('mouseenter', layer, () => { map.getCanvas().style.cursor = 'pointer'; });
+      map.on('mouseleave', layer, () => { map.getCanvas().style.cursor = ''; });
+    }
+
+    // A cluster opens by zooming in; one that will not come apart (places too
+    // close to separate) lists what it holds instead.
+    map.on('click', 'clusters', async event => {
+      const feature = event.features[0];
+      const source = map.getSource('places');
+      const zoom = await source.getClusterExpansionZoom(feature.properties.cluster_id);
+      if (zoom > 12 || zoom <= map.getZoom() + 0.05) {
+        const leaves = await source.getClusterLeaves(feature.properties.cluster_id, 1000, 0);
+        options.onChoose(leaves.flatMap(leaf => leaf.properties.ids.split(' ')), null);
+        return;
+      }
+      map.easeTo({ center: feature.geometry.coordinates, zoom });
+    });
+    map.on('click', 'spot', event => {
+      const feature = event.features[0];
+      options.onChoose(feature.properties.ids.split(' '), feature.id);
+    });
+
+    options.onReady(map);
+  });
+  return map;
+}
+
+// --- the detail panel and the list ------------------------------------------
+
+function renderDetail(mount, chosen) {
+  clear(mount);
+  if (!chosen.length) return;
+  const byBook = new Map();
+  for (const place of chosen) {
+    if (!byBook.has(place.book.slug)) byBook.set(place.book.slug, { book: place.book, places: [] });
+    byBook.get(place.book.slug).places.push(place);
+  }
+  const books = [...byBook.values()].sort((a, b) => a.book.title.localeCompare(b.book.title));
+  const names = [...new Set(chosen.map(place => place.name))];
+  mount.append(el('article', { class: 'astor-quote-card astor-map-card' }, [
+    el('h3', { text: names.length === 1 ? names[0] : chosen.length + ' places' }),
+    ...books.map(entry => {
+      const list = el('ul', {}, entry.places.map(place => el('li', {}, [
+        names.length === 1 ? null : el('strong', { text: place.name + (place.note ? ' — ' : '') }),
+        document.createTextNode(place.note || '')
+      ])));
+      if (books.length > 4) {
+        return el('details', { class: 'astor-place-book' }, [
+          el('summary', {}, [
+            el('span', { text: entry.book.title }),
+            el('small', { text: entry.places.length + (entry.places.length === 1 ? ' place' : ' places') })
+          ]),
+          list,
+          el('p', { class: 'astor-map-card-link' }, [el('a', { href: entry.book.href, text: entry.book.title + ' →' })])
+        ]);
+      }
+      return el('div', { class: 'astor-map-card-book' }, [
+        el('p', { class: 'astor-quote-attribution' }, [el('a', { href: entry.book.href, text: entry.book.title })]),
+        list
+      ]);
+    })
+  ]));
+}
+
+function renderList(mount, places, onPick) {
+  clear(mount);
   const grouped = new Map();
-  for (const place of visible) {
+  for (const place of places) {
     if (!grouped.has(place.book.slug)) grouped.set(place.book.slug, { book: place.book, places: [] });
     grouped.get(place.book.slug).places.push(place);
   }
   const books = [...grouped.values()].sort((a, b) => a.book.title.localeCompare(b.book.title));
   const wrap = el('div', { class: 'astor-place-books' });
   for (const entry of books) {
-    const open = books.length === 1 || entry.places.some(place => place.id === selected);
-    const details = el('details', { class: 'astor-place-book', id: 'astor-places-' + entry.book.slug, open });
+    const details = el('details', { class: 'astor-place-book', id: 'astor-places-' + entry.book.slug, open: books.length === 1 });
     details.append(el('summary', {}, [
       el('span', { text: entry.book.title }),
       el('small', { text: entry.places.length + (entry.places.length === 1 ? ' place' : ' places') })
     ]));
     details.append(el('ul', {}, entry.places.map(place =>
-      el('li', { id: 'astor-place-' + place.id, class: place.id === selected ? 'is-selected' : '' }, [
-        el('button', { class: 'astor-link-button', type: 'button', text: place.name, onclick: () => select(place.id, false) }),
-        document.createTextNode(place.note || ''),
-        ' ',
-        el('a', { href: entry.book.href, text: 'Book page →', class: 'astor-place-link' })
+      el('li', { id: 'astor-place-' + place.id }, [
+        el('button', { class: 'astor-link-button', type: 'button', text: place.name, onclick: () => onPick(place) }),
+        document.createTextNode(place.note ? ' ' + place.note + ' ' : ' '),
+        el('a', { href: entry.book.href, text: 'Book →', class: 'astor-place-link' })
       ]))));
     wrap.append(details);
   }
-  listMount.append(wrap);
+  mount.append(wrap);
 }
 
-function select(id, fromMap) {
-  selected = id;
-  renderMap();
-  renderList();
-  const place = places.find(entry => entry.id === id);
-  if (!place) return;
-  announce(live, place.name + ', ' + place.book.title + '. ' + (place.note || ''));
-  if (fromMap) {
-    document.getElementById('astor-place-' + id)?.scrollIntoView({ block: 'center', behavior: motion() });
-  } else {
-    mapMount.scrollIntoView({ block: 'nearest', behavior: motion() });
+// --- the explorer page --------------------------------------------------------
+
+const controls = document.querySelector('#astor-map-controls');
+const explorerMount = document.querySelector('#astor-map');
+const listMount = document.querySelector('#astor-map-list');
+
+if (explorerMount) startExplorer();
+
+async function startExplorer() {
+  let maplibregl;
+  let index;
+  try {
+    [maplibregl, index] = await Promise.all([loadLibrary(), loadIndex()]);
+  } catch {
+    import('./map-outline.mjs');
+    return;
   }
+
+  const places = index.books.flatMap(book => (book.places || []).map((place, position) => ({ ...place, book, id: book.slug + '-' + position })));
+  if (!places.length) {
+    explorerMount.append(el('p', { class: 'astor-empty', text: 'No places yet.' }));
+    return;
+  }
+  const byId = new Map(places.map(place => [place.id, place]));
+  const withPlaces = index.books.filter(book => (book.places || []).length).sort((a, b) => a.title.localeCompare(b.title));
+
+  const holder = el('div', { class: 'astor-slippy', style: HEIGHT, role: 'region', 'aria-label': 'Map of where the books are set' });
+  const note = el('p', { class: 'astor-inline-note', text: 'Tap a marker to see what happens there.' });
+  const live = el('p', { class: 'astor-game-live', 'aria-live': 'polite', role: 'status' });
+  const detail = el('div', { class: 'astor-map-detail' });
+  explorerMount.append(holder, note);
+  explorerMount.closest('.astor-graph-wrap')?.classList.add('has-slippy');
+  (explorerMount.closest('.astor-graph-wrap') || explorerMount).after(live, detail);
+
+  let map = null;
+  let chosenSpot = null;
+  let book = 'all';
+
+  const shown = () => (book === 'all' ? places : places.filter(place => place.book.slug === book));
+
+  function choose(ids, spotId) {
+    const chosen = ids.map(id => byId.get(id)).filter(Boolean);
+    if (map && chosenSpot !== null) map.setFeatureState({ source: 'places', id: chosenSpot }, { chosen: false });
+    chosenSpot = spotId;
+    if (map && spotId !== null) map.setFeatureState({ source: 'places', id: spotId }, { chosen: true });
+    renderDetail(detail, chosen);
+    announce(live, chosen.length === 1 ? chosen[0].name + ', ' + chosen[0].book.title + '.' : chosen.length + ' places, listed below the map.');
+  }
+
+  // Choosing from the list shows the place at once, then the map catches up
+  // and lights its marker.
+  function pick(place) {
+    choose([place.id], null);
+    if (!map) return;
+    holder.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    map.flyTo({ center: [place.lon, place.lat], zoom: Math.max(map.getZoom(), 10) });
+    map.once('idle', () => {
+      try {
+        const feature = map.querySourceFeatures('places')
+          .find(item => !item.properties.point_count && String(item.properties.ids).split(' ').includes(place.id));
+        if (feature && feature.id !== undefined) {
+          if (chosenSpot !== null) map.setFeatureState({ source: 'places', id: chosenSpot }, { chosen: false });
+          chosenSpot = feature.id;
+          map.setFeatureState({ source: 'places', id: feature.id }, { chosen: true });
+        }
+      } catch { /* the panel is already showing the place */ }
+    });
+  }
+
+  function refresh(fit) {
+    if (!map) return;
+    const current = shown();
+    chosenSpot = null;
+    map.getSource('places').setData({ type: 'FeatureCollection', features: spots(current) });
+    renderList(listMount, current, pick);
+    clear(detail);
+    if (fit) map.fitBounds(fit, { padding: 36, maxZoom: 9, duration: 600 });
+  }
+
+  // Controls: a view to jump to, and a book to show on its own.
+  clear(controls);
+  const viewSelect = el('select', { id: 'astor-map-view' });
+  for (const key of ORDER) viewSelect.append(el('option', { value: key, text: VIEWS[key].name }));
+  viewSelect.value = 'britain';
+  const bookSelect = el('select', { id: 'astor-map-book' });
+  bookSelect.append(el('option', { value: 'all', text: 'Every book' }));
+  for (const entry of withPlaces) bookSelect.append(el('option', { value: entry.slug, text: entry.title }));
+  controls.append(
+    el('div', {}, [el('label', { for: viewSelect.id, text: 'Go to' }), viewSelect]),
+    el('div', {}, [el('label', { for: bookSelect.id, text: 'Book' }), bookSelect])
+  );
+  viewSelect.addEventListener('change', () => map?.fitBounds(VIEWS[viewSelect.value].bounds, { padding: 24, duration: 700 }));
+  bookSelect.addEventListener('change', () => {
+    book = bookSelect.value;
+    refresh(book === 'all' ? VIEWS[viewSelect.value].bounds : boundsOf(shown()));
+  });
+
+  const requested = new URLSearchParams(window.location.search).get('book');
+  if (requested && withPlaces.some(entry => entry.slug === requested)) {
+    book = requested;
+    bookSelect.value = requested;
+  }
+
+  makeMap(maplibregl, holder, {
+    bounds: book === 'all' ? VIEWS.britain.bounds : boundsOf(shown()),
+    cooperative: isTouch(),
+    onChoose: choose,
+    onReady: ready => { map = ready; refresh(null); }
+  }, () => {
+    // No tiles: hand the page to the outline map.
+    clear(explorerMount);
+    clear(controls);
+    live.remove();
+    detail.remove();
+    explorerMount.closest('.astor-graph-wrap')?.classList.remove('has-slippy');
+    import('./map-outline.mjs');
+  });
 }
 
-function motion() {
-  return prefersReducedMotion() ? 'auto' : 'smooth';
-}
+// --- a book page ----------------------------------------------------------------
 
-function project(longitude, latitude, bounds, width, height) {
-  return {
-    x: ((longitude - bounds.west) / (bounds.east - bounds.west)) * width,
-    y: height - ((latitude - bounds.south) / (bounds.north - bounds.south)) * height
-  };
+// Draws one book's places on its own page. The book-page tools call this the
+// first time the Context tab is opened.
+export async function embedBookMap(root, slug) {
+  const book = await loadBook(slug);
+  if (!book || !(book.places || []).length) return null;
+  let maplibregl;
+  try {
+    maplibregl = await loadLibrary();
+  } catch {
+    return (await import('./map-outline.mjs')).embedBookMap(root, slug);
+  }
+  const places = book.places.map((place, position) => ({ ...place, book, id: book.slug + '-' + position }));
+  const byId = new Map(places.map(place => [place.id, place]));
+
+  clear(root);
+  const holder = el('div', { class: 'astor-slippy is-book', style: BOOK_HEIGHT, role: 'region', 'aria-label': 'Map of where ' + book.title + ' is set' });
+  const live = el('p', { class: 'astor-game-live', 'aria-live': 'polite', role: 'status' });
+  const detail = el('div', { class: 'astor-map-detail' });
+  root.append(el('div', { class: 'astor-graph-wrap has-slippy' }, [holder]), live, detail);
+
+  return new Promise(resolve => {
+    let chosenSpot = null;
+    let map = null;
+    makeMap(maplibregl, holder, {
+      bounds: boundsOf(places),
+      maxZoom: 8,
+      cooperative: true,
+      onChoose: (ids, spotId) => {
+        if (map && chosenSpot !== null) map.setFeatureState({ source: 'places', id: chosenSpot }, { chosen: false });
+        chosenSpot = spotId;
+        if (map && spotId !== null) map.setFeatureState({ source: 'places', id: spotId }, { chosen: true });
+        const chosen = ids.map(id => byId.get(id)).filter(Boolean);
+        renderDetail(detail, chosen);
+        announce(live, chosen.map(place => place.name).join(', ') + '.');
+      },
+      onReady: ready => {
+        map = ready;
+        map.getSource('places').setData({ type: 'FeatureCollection', features: spots(places) });
+        resolve({ view: 'book' });
+      }
+    }, async () => {
+      resolve(await (await import('./map-outline.mjs')).embedBookMap(root, slug));
+    });
+  });
 }

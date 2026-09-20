@@ -43,7 +43,7 @@ function render(book) {
     onclick: () => openProjector(book)
   }));
   actions.append(el('button', {
-    class: 'button secondary', type: 'button', text: 'Print what is on screen',
+    class: 'button secondary', type: 'button', text: 'Print',
     onclick: () => window.print()
   }));
 
@@ -64,19 +64,19 @@ function rules(count) {
 }
 
 function starters(book) {
-  const sheet = sheetShell(book, 'Five lesson starters', 'no preparation needed');
+  const sheet = sheetShell(book, 'Five lesson starters', 'ready to use');
   const quotations = sample(book.quotations, 3);
   const items = [
-    'Put this on the board and give them four minutes: “' + (quotations[0]?.text || '') + '” (' + (quotations[0]?.reference || '') + '). One question only: who benefits from this being said?',
-    'Name a character without naming them: “' + maskName(book.characters[0].clue || book.characters[0].summary, book.characters[0].name) + '” Who is it, and which word gave it away?',
-    'Two minutes in pairs: put the ' + (book.form === 'play' ? 'acts' : 'sections') + ' in order — ' + shuffle(book.structure.map(stage => stage.label)).join(', ') + '. Then ask which one could be moved without breaking the book.',
-    'A theme on the board — ' + book.themes[0].name + '. Sixty seconds to write down one line that carries it. Collect three and argue about which is strongest.',
+    'Put this on the board: “' + (quotations[0]?.text || '') + '” (' + (quotations[0]?.reference || '') + '). Ask who gains from this line. Allow four minutes.',
+    'Read out this description: “' + maskName(book.characters[0].clue || book.characters[0].summary, book.characters[0].name) + '” Who is it? Which word gave it away?',
+    'In pairs, put the ' + (book.form === 'play' ? 'acts' : 'sections') + ' in order: ' + shuffle(book.structure.map(stage => stage.label)).join(', ') + '. Allow two minutes. Could any of them swap places?',
+    'Write the theme ' + book.themes[0].name + ' on the board. Give them a minute to find a line about it. Collect three and vote on the strongest.',
     quotations[1]
-      ? 'Read this aloud twice, the second time badly on purpose: “' + quotations[1].text + '” What does the wrong reading reveal about the right one?'
-      : 'Ask what the first page of this book teaches you about how to read the rest of it.'
+      ? 'Read this aloud twice, once well and once badly: “' + quotations[1].text + '” What changed?'
+      : 'Read the first page together. What does it tell you about the rest of the book?'
   ];
   sheet.append(el('ol', {}, items.map(item => el('li', { text: item }))));
-  sheet.append(el('p', { class: 'astor-inline-note', text: 'Regenerate the page for a different set. Every quotation is referenced and checked.' }));
+  sheet.append(el('p', { class: 'astor-inline-note', text: 'Press Lesson starters again for a new set.' }));
   return sheet;
 }
 
@@ -88,7 +88,7 @@ function quotationSheet(book) {
     const item = el('li', {});
     item.append(el('blockquote', { class: 'astor-game-quote' }, [el('p', { text: quotation.text })]));
     item.append(el('p', { class: 'astor-worksheet-meta', text: (quotation.speaker ? quotation.speaker + ' · ' : '') + book.title + ' ' + quotation.reference }));
-    item.append(el('p', { text: 'What is the language doing here, and why does it matter that it is this character saying it?' }));
+    item.append(el('p', { text: 'Underline the key words. What do they tell you about the speaker?' }));
     item.append(rules(3));
     list.append(item);
   }
@@ -103,7 +103,7 @@ function characterSheet(book) {
   for (const character of book.characters) {
     const item = el('li', {});
     item.append(el('p', { text: character.name + (character.role ? ' — ' + character.role : '') }));
-    item.append(el('p', { text: 'One thing they want. One thing that stops them. One line that proves it.' }));
+    item.append(el('p', { text: 'Write what they want and what stops them. Add a quotation.' }));
     item.append(rules(3));
     list.append(item);
   }
@@ -114,7 +114,7 @@ function characterSheet(book) {
 function sequenceSheet(book) {
   const sheet = sheetShell(book, 'Sequencing worksheet', 'cut up, or number in order');
   const shuffled = shuffle(book.structure.map(stage => stage.label + ': ' + stage.title));
-  sheet.append(el('p', { text: 'Number these from first to last, then write one sentence saying why the order matters.' }));
+  sheet.append(el('p', { text: 'Number these from first to last. Then pick one and say what it leads to.' }));
   const list = el('ol', {});
   for (const line of shuffled) {
     const item = el('li', {});
@@ -127,9 +127,9 @@ function sequenceSheet(book) {
 }
 
 function discussionSheet(book) {
-  const sheet = sheetShell(book, 'Discussion sheet', 'questions with something at stake');
+  const sheet = sheetShell(book, 'Discussion sheet', 'for pairs or groups');
   const questions = (book.discussionQuestions || []).concat(
-    (book.criticalViews || []).map(view => view.position + '. ' + view.summary + ' Is the objection — ' + (view.counter || 'that it proves too much') + ' — fatal to it?')
+    (book.criticalViews || []).map(view => view.position + '. ' + view.summary + ' Against this: ' + (view.counter || 'It goes too far.') + ' Which side do you agree with?')
   );
   sheet.append(el('ol', {}, questions.map(question => {
     const item = el('li', {});
@@ -169,7 +169,7 @@ function knowledgeSheet(book) {
     ...events.map(event => el('li', { text: String(event.year) }))
   ]));
   sheet.append(answers);
-  sheet.append(el('p', { class: 'astor-inline-note', text: 'The answer list is regenerated with the sheet; print them together or fold the page.' }));
+  sheet.append(el('p', { class: 'astor-inline-note', text: 'Fold the page to hide the answers.' }));
   return sheet;
 }
 
@@ -196,7 +196,7 @@ function openProjector(book) {
     projector.append(el('p', { class: 'astor-projector-meta', text: slide.meta + '  ·  ' + (position + 1) + ' of ' + slides.length }));
     projector.append(el('div', { class: 'astor-projector-controls' }, [
       el('button', { type: 'button', text: '← Back', onclick: () => step(-1) }),
-      el('button', { type: 'button', text: 'Forward →', onclick: () => step(1) }),
+      el('button', { type: 'button', text: 'Next →', onclick: () => step(1) }),
       el('button', { type: 'button', text: 'Close', onclick: close })
     ]));
     projector.querySelector('button')?.focus({ preventScroll: true });

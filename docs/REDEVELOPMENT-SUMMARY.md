@@ -36,8 +36,9 @@ once corrects it everywhere.
 | Interactive tools | 0 | 22 pages |
 | Automated checks | 1,354-line checker, 47 tests | 1,496-line checker, 98 tests |
 
-Nothing on the site loads a third-party script, sets a cookie for a reader who
-has not asked for one, or sends anything anywhere.
+The site loads no third-party script and sets no cookie for a reader who has
+not asked for one. The one thing fetched from elsewhere is the map tiles on
+the map of settings, from OpenFreeMap; everything else is served from here.
 
 ---
 
@@ -204,7 +205,7 @@ keyboard rules: number keys choose, Enter checks and advances, R restarts. The
 end screen lists what was missed with a button to keep each line.
 
 There is no separate question bank. From one Macbeth record the builders
-produce 22 who-said-it questions, 22 cloze questions, 11 theme questions, 15
+produce 22 who-said-it questions, 22 cloze questions, 22 theme questions, 15
 technique questions, 9 character questions and 5 ordering rounds, and every
 explanation shown after an answer is the analysis printed on the book page.
 
@@ -212,6 +213,19 @@ Distractors are chosen to be hard rather than decorative: wrong speakers come
 from the same play, wrong titles prefer the same *form*, wrong years are
 within eighty years of the right one, and the cloze word bank is drawn from
 the same book's vocabulary so register gives nothing away.
+
+Every question has exactly one right answer, and the tests check it:
+
+- **Who said it** never offers two names for one person. Speakers are entered
+  short ("Scrooge", "Gloucester") and the cast in full, so wrong answers
+  exclude any alias of the speaker, anyone the line involves, and aliases of
+  each other; two cast members who share a name (Macbeth, Lady Macbeth) still
+  appear together, because telling them apart is the point.
+- **Theme match** and **technique spotter** ask about a line's first tag and
+  draw wrong answers only from tags the line does not carry. (They first used
+  only single-tagged lines, which left carefully tagged records with no
+  questions; across the library the change took theme match from 317
+  questions to 1,472.)
 
 ### The Daily Five
 
@@ -271,13 +285,27 @@ session contains.
   shown doing a particular job in a particular line in every book that uses
   it. Two hundred terms are reached through an A to Z bar and a search box;
   each entry opens on its definition and unfolds its examples when asked.
-- **Map** — inline SVG on an equirectangular projection from coordinates held
-  with each record. It loads no tiles and contacts nobody; the graticule gives
-  scale without claiming a cartographic accuracy the page does not have. Three
-  hundred places do not fit three hundred labels, so the map shows dots sized
-  for the screen and names only the one chosen; the list beneath, folded book
-  by book, carries the information and lights the dot when a place is chosen
-  there. It opens on Britain and Ireland, where half the places are.
+- **Map** — a real map. MapLibre GL (hosted in `assets/vendor/`) draws
+  OpenStreetMap tiles served by OpenFreeMap, which needs no key and allows
+  commercial use. Places that share a spot are one marker; markers that crowd
+  each other gather into numbered clusters that open as you zoom; invisible
+  stand-ins the size of each marker keep names off them. Choosing a marker
+  lists what happens there, folded by book when there are many. The same map
+  is embedded in the Context tab of every book page with a record, fitted to
+  that book's places.
+
+  Two earlier versions are worth recording, because the lesson stuck: dots on
+  a graticule (which is not a map), then Natural Earth coastlines drawn from
+  files this site serves itself (better, but "just a blank backdrop" to
+  anyone expecting a map). The coastline version survives as
+  `assets/astor/map-outline.mjs` and takes over whenever the real map cannot
+  run: no WebGL, no tiles, a container with no height, or any thrown error.
+  `scripts/build-map-geography.js` still prepares its coastline files.
+
+  The map sets its own height in JavaScript rather than trusting the
+  stylesheet. A phone holding an hour-old stylesheet with a fresh script once
+  gave the map no height at all, which looked exactly like no map.
+
 - **Compare** — two titles side by side, starting from the themes and
   techniques they share and pairing the quotations that carry them, because
   that is where a comparative paragraph actually begins.
@@ -516,15 +544,19 @@ or paged, and the screenshots at 390px and 1280px are clean.
 
 ## 7. What was not built, and why
 
-**Videos.** The brief asked for privacy-friendly click-to-load embeds of real
-RSC, National Theatre, British Library, Globe or university material. The
-build environment has no general internet egress, so there is no way to
-confirm that a given video id is live, is what it claims to be, or is still
-publicly available — and inventing ids would be worse than having none. So the
-component is built, styled and documented, and every record ships
-`"videos": []`, which means the section does not render at all.
+**Videos (added later, 19 September).** The first build environment had no
+internet access, so it shipped the click-to-load component with every record
+set to `"videos": []`. A later pass with network access added 46 videos to
+sixteen of the most-studied titles, from the RSC, Shakespeare's Globe, the
+National Theatre, the British Library, the Folger, TED-Ed, CrashCourse, BBC
+Teach, Yale and the Charles Dickens Museum. Each id was checked twice through
+YouTube's oEmbed endpoint (`https://www.youtube.com/oembed?url=…`), which
+returns the title and channel of a live public video and an error for anything
+else, and the channel was matched against the record's `source`. The player
+is embedded with `referrerpolicy="strict-origin-when-cross-origin"`: YouTube
+refuses an embed that sends no origin at all.
 
-To add one, put an entry in a record:
+To add one, verify the id the same way, then put an entry in a record:
 
 ```json
 "videos": [{
@@ -538,7 +570,7 @@ To add one, put an entry in a record:
 ```
 
 `provider` must be `youtube-nocookie` or `vimeo`; anything else fails the
-build. The page contacts nobody until a reader presses "Load the video".
+build. The page contacts nobody until a reader presses Play.
 
 **Critics' quotations.** In copyright, and unverifiable here. Positions are
 described in the site's own words instead.
@@ -567,8 +599,11 @@ episode of the day they fall in. Both records say so in `referenceStyle`.
 ## 8. Adding a book
 
 1. Write `data/books/<slug>.json`. Copy an existing record for the shape.
-   Verify every quotation against a public-domain text and record its
-   reference and the text you checked it against.
+   Put the plain-text URL of the public-domain source in `sourceText.url`
+   (a Project Gutenberg "Plain Text UTF-8" file), then run
+   `node scripts/verify-quotations.js <slug>`: it fetches the text once into
+   `.cache/`, and every quotation and the opening line must be found in it
+   word for word. Hyphenation and dashes are ignored; spelling is not.
 2. Reuse an existing theme or technique identifier where you mean the same
    idea. If you introduce a shared one, run
    `node scripts/rebuild-vocabulary.js --draft` and edit the canonical name.

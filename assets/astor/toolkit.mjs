@@ -13,6 +13,11 @@ import {
   readingPlan, savePlan, removePlan, markSitting
 } from './store.mjs';
 
+// Boxes whose drawing has already been fetched. Declared before the set-up
+// below runs, because a page opened on a panel (#astor-characters) draws it
+// during set-up.
+const embedded = new WeakSet();
+
 const toolkit = document.querySelector('#astor-study-toolkit');
 if (toolkit) enhance(toolkit);
 
@@ -76,6 +81,7 @@ function setUpTabs(root, live) {
       panels[position].hidden = !selected;
     });
     embedMap(panels[index]);
+    embedPlaces(panels[index]);
     if (focus) tabs[index].focus();
     const hash = '#' + panels[index].id;
     if (window.history.replaceState) window.history.replaceState(null, '', hash);
@@ -105,7 +111,21 @@ function setUpTabs(root, live) {
 // code are fetched the first time the panel is opened, not before, so a reader
 // who never opens it never pays for it.
 
-const embedded = new WeakSet();
+
+// The Context panel lists a book's places; the first time it is opened they
+// are drawn on a map above the list, which stays as it was if that fails.
+function embedPlaces(panel) {
+  const box = panel.querySelector('[data-astor-book-map]');
+  if (!box || embedded.has(box)) return;
+  embedded.add(box);
+  const list = box.querySelector('ul');
+  const holder = el('div', {});
+  box.prepend(holder);
+  import('./map.mjs')
+    .then(module => module.embedBookMap(holder, box.dataset.astorBookMap))
+    .then(map => { if (!map) holder.remove(); else if (list) list.classList.add('is-under-map'); })
+    .catch(() => holder.remove());
+}
 
 function embedMap(panel) {
   const box = panel.querySelector('[data-astor-character-map]');
@@ -311,7 +331,7 @@ function setUpReadingPlan(root, book, live) {
       })
     ]));
     if (!isRemembering()) {
-      mount.append(el('p', { class: 'astor-inline-note', text: 'Storage is switched off in this browser, so the plan lasts until you leave the page. Add it to your calendar to keep it.' }));
+      mount.append(el('p', { class: 'astor-inline-note', text: 'Storage is off in this browser, so the plan will not be saved. Add it to your calendar to keep it.' }));
     }
   }
 }
@@ -407,8 +427,10 @@ function setUpVideos(root) {
         src: build(card.dataset.videoId),
         title: card.querySelector('h4')?.textContent || 'Video',
         loading: 'lazy',
-        allow: 'accelerometer; encrypted-media; picture-in-picture',
-        referrerpolicy: 'no-referrer',
+        allow: 'accelerometer; encrypted-media; picture-in-picture; fullscreen',
+        // YouTube refuses an embed that names no origin (its "Error 153"), so
+        // the player is told which site it is on, and nothing about the page.
+        referrerpolicy: 'strict-origin-when-cross-origin',
         allowfullscreen: true
       });
       button.replaceWith(el('div', { class: 'astor-video-frame' }, [frame]));

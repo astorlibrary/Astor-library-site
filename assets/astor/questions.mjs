@@ -58,18 +58,67 @@ function makeChoice({ id, kind, stem, quote, hint, correct, distractors, explain
 
 // --- who said it -----------------------------------------------------------
 
+// The words of a name that identify the person: no titles, ranks or ordinals.
+const TITLE_WORDS = new Set([
+  'the', 'of', 'and', 'a', 'an', 'mr', 'mrs', 'miss', 'ms', 'dr', 'sir', 'lady', 'lord', 'king', 'queen', 'prince',
+  'princess', 'duke', 'duchess', 'earl', 'count', 'countess', 'captain', 'colonel', 'sergeant', 'lieutenant',
+  'professor', 'doctor', 'father', 'mother', 'old', 'young', 'first', 'second', 'third', 'now', 'de', 'st', 'hon', 'rev'
+]);
+
+export function nameTokens(name) {
+  return new Set(String(name).toLowerCase().replace(/[’']s\b/g, '').split(/[^a-zà-ÿ]+/)
+    .filter(word => word.length > 1 && !TITLE_WORDS.has(word) && !/^[ivx]+$/.test(word))
+    // "Witches" and "Witch" are the same word for this purpose.
+    .map(word => word.replace(/(?:es|s)$/, '')));
+}
+
+// Two names are one person when the identifying words of one are all found
+// in the other: "Scrooge" in "Ebenezer Scrooge", "King Richard III" in
+// "Richard, Duke of Gloucester". Two Bennets who differ by a forename are not.
+export function sameName(a, b) {
+  const left = nameTokens(a);
+  const right = nameTokens(b);
+  if (!left.size || !right.size) return false;
+  const [small, large] = left.size <= right.size ? [left, right] : [right, left];
+  for (const token of small) if (!large.has(token)) return false;
+  return true;
+}
+
+// The wrong answers for a line: nobody who could be the speaker under another
+// name ("Scrooge" beside "Ebenezer Scrooge", "Gloucester" beside "King Richard
+// III"), nobody the line itself involves (the Weird Sisters beside the Third
+// Witch), and no two names for one person among the wrong answers either.
+function otherSpeakers(book, quotation) {
+  const byId = new Map(book.characters.map(character => [character.id, character]));
+  const involved = (quotation.characters || []).map(id => byId.get(id)?.name).filter(Boolean);
+  const speakers = [...new Set(book.quotations.map(entry => entry.speaker).filter(Boolean))];
+  const candidates = [
+    ...book.characters.map(character => character.name),
+    ...speakers.filter(speaker => !book.characters.some(character => sameName(character.name, speaker)))
+  ];
+  // Two names that are both in the cast list are two people, however alike:
+  // Macbeth and Lady Macbeth are the pair most worth telling apart.
+  const cast = new Set(book.characters.map(character => character.name));
+  const alike = (a, b) => !(cast.has(a) && cast.has(b)) && sameName(a, b);
+  const chosen = [];
+  for (const name of candidates) {
+    if (alike(name, quotation.speaker)) continue;
+    if (involved.includes(name) && name !== quotation.speaker) continue;
+    if (chosen.some(other => alike(other, name))) continue;
+    chosen.push(name);
+  }
+  return chosen;
+}
+
 export function whoSaidIt(book, random = Math.random) {
-  const speakers = [...new Set(book.quotations.map(quotation => quotation.speaker).filter(Boolean))];
-  const names = [...new Set([...speakers, ...book.characters.map(character => character.name)])];
-  if (names.length < 4) return [];
   return book.quotations
-    .filter(quotation => quotation.speaker)
+    .filter(quotation => quotation.speaker && !/stage direction/i.test(quotation.speaker))
     .map(quotation => makeChoice({
       id: 'who:' + book.slug + ':' + quotation.id,
       stem: 'Who says this?',
       quote: quotation.text,
       correct: quotation.speaker,
-      distractors: names.filter(name => name !== quotation.speaker),
+      distractors: otherSpeakers(book, quotation),
       explain: quotation.analysis,
       source: quotationSource(book, quotation),
       book: bookRef(book),
@@ -188,20 +237,24 @@ export function orderThePlot(book, random = Math.random) {
 
 // --- theme and technique ---------------------------------------------------
 
+// A line tagged with several themes is asked about its first, and the wrong
+// answers come only from themes it does not carry, so exactly one option is
+// ever right however many the line holds.
 export function themeMatch(book, random = Math.random) {
   const names = book.themes.map(theme => theme.name);
   if (names.length < 4) return [];
   const byId = new Map(book.themes.map(theme => [theme.id, theme]));
   return book.quotations
-    .filter(quotation => (quotation.themes || []).length === 1 && byId.has(quotation.themes[0]))
+    .filter(quotation => (quotation.themes || []).length >= 1 && byId.has(quotation.themes[0]))
     .map(quotation => {
       const theme = byId.get(quotation.themes[0]);
+      const carried = new Set(quotation.themes.map(id => byId.get(id)?.name).filter(Boolean));
       return makeChoice({
         id: 'theme:' + book.slug + ':' + quotation.id,
         stem: 'Which theme does this line carry?',
         quote: quotation.text,
         correct: theme.name,
-        distractors: names.filter(name => name !== theme.name),
+        distractors: names.filter(name => !carried.has(name)),
         explain: theme.summary,
         source: quotationSource(book, quotation),
         book: bookRef(book),
@@ -216,15 +269,16 @@ export function techniqueSpotter(book, random = Math.random) {
   if (names.length < 4) return [];
   const byId = new Map(book.techniques.map(technique => [technique.id, technique]));
   return book.quotations
-    .filter(quotation => (quotation.techniques || []).length === 1 && byId.has(quotation.techniques[0]))
+    .filter(quotation => (quotation.techniques || []).length >= 1 && byId.has(quotation.techniques[0]))
     .map(quotation => {
       const technique = byId.get(quotation.techniques[0]);
+      const used = new Set(quotation.techniques.map(id => byId.get(id)?.name).filter(Boolean));
       return makeChoice({
         id: 'technique:' + book.slug + ':' + quotation.id,
         stem: 'Which technique is doing the work here?',
         quote: quotation.text,
         correct: technique.name,
-        distractors: names.filter(name => name !== technique.name),
+        distractors: names.filter(name => !used.has(name)),
         explain: technique.definition + ' ' + technique.inThisBook,
         source: quotationSource(book, quotation),
         book: bookRef(book),

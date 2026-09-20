@@ -28,10 +28,10 @@ async function fill(mount) {
   const result = dailyResult(day);
   const run = streak();
   const status = result
-    ? 'You scored ' + result.score + ' of ' + result.total + ' on today’s Daily Five.'
+    ? 'You scored ' + result.score + ' of ' + result.total + ' today.'
     : run.live && run.current
-      ? 'Your revision streak is ' + run.current + (run.current === 1 ? ' day' : ' days') + '. Today’s five are waiting.'
-      : 'Five questions from across the library, the same for everybody, changing at midnight.';
+      ? 'Your streak is ' + run.current + (run.current === 1 ? ' day' : ' days') + '. Today’s questions are ready.'
+      : 'Five quick questions. New every day.';
 
   clear(mount);
   mount.append(
@@ -40,7 +40,7 @@ async function fill(mount) {
     el('p', { class: 'home-today-attribution', text: (passage.speaker ? passage.speaker + ' · ' : '') + passage.bookTitle + ' ' + passage.reference }),
     el('p', { class: 'home-today-status', text: status }),
     el('nav', {}, [
-      el('a', { class: 'home-more', href: '/today/', text: result ? 'See today’s page →' : 'Play the Daily Five →' }),
+      el('a', { class: 'home-more', href: '/today/', text: result ? 'See today’s page →' : 'Play today’s questions →' }),
       el('a', { class: 'home-more', href: passage.bookHref, text: 'Read ' + passage.bookTitle + ' →' })
     ])
   );

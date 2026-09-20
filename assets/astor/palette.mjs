@@ -49,7 +49,7 @@ function build() {
   const box = el('div', { class: 'astor-palette-box', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Search Astor Library' }, [
     input,
     list,
-    el('p', { class: 'astor-palette-hint', text: 'Up and down to move, Enter to open, Escape to close. Press / anywhere to reopen.' })
+    el('p', { class: 'astor-palette-hint', text: 'Arrow keys to move, Enter to open, Esc to close.' })
   ]);
   palette = el('div', { class: 'astor-palette', hidden: true }, [box]);
   palette.addEventListener('click', event => { if (event.target === palette) close(); });
@@ -123,7 +123,7 @@ function render() {
   const query = input.value.trim().toLowerCase();
 
   if (!entries) {
-    list.append(el('li', {}, [el('p', { class: 'astor-palette-hint', text: 'Loading the index…' })]));
+    list.append(el('li', {}, [el('p', { class: 'astor-palette-hint', text: 'Loading…' })]));
     return;
   }
 
@@ -143,7 +143,7 @@ function render() {
     .slice(0, MAX_RESULTS);
 
   if (!ranked.length) {
-    list.append(el('li', {}, [el('p', { class: 'astor-palette-hint', text: 'Nothing matches. Try a single word, or search the whole catalogue.' })]));
+    list.append(el('li', {}, [el('p', { class: 'astor-palette-hint', text: 'No matches. Try a single word.' })]));
     list.append(row({ k: 'Search', t: 'Search the catalogue for “' + input.value.trim() + '”', h: '/explore/?q=' + encodeURIComponent(input.value.trim()), n: '' }));
     paintSelection([...list.children]);
     return;

@@ -64,7 +64,7 @@ export async function withBooks(container, options, render) {
   } catch {
     if (container) {
       clear(container);
-      container.append(el('p', { class: 'astor-empty', text: 'The study data could not be loaded. Reload the page, or open a book page directly from the catalogue.' }));
+      container.append(el('p', { class: 'astor-empty', text: 'Couldn’t load the books. Try reloading the page.' }));
     }
     return null;
   }
@@ -74,7 +74,7 @@ export async function withBooks(container, options, render) {
   if (!books.length) {
     if (container) {
       clear(container);
-      container.append(el('p', { class: 'astor-empty', text: 'No titles carry the material this tool needs yet.' }));
+      container.append(el('p', { class: 'astor-empty', text: 'No books for this yet.' }));
     }
     return null;
   }

@@ -36,7 +36,7 @@ async function start() {
     clear(mounts.dash);
     mounts.dash.append(el('p', {
       class: 'astor-empty',
-      text: 'This browser has storage switched off, so nothing can be remembered between visits. Everything else on the site works as usual; only this page has nothing to show.'
+      text: 'Storage is turned off in this browser, so nothing can be saved.'
     }));
     return;
   }
@@ -70,12 +70,12 @@ function renderDash(index) {
   }
 
   const tiles = [
-    ['Saved books', String(savedBooks().length), 'kept from the study toolkit on a book page.'],
-    ['Sections read', String(readStages), 'across ' + Object.keys(progress).length + ' ' + (Object.keys(progress).length === 1 ? 'title' : 'titles') + ', marked by you.'],
+    ['Saved books', String(savedBooks().length), 'on your shelf.'],
+    ['Sections read', String(readStages), 'across ' + Object.keys(progress).length + ' ' + (Object.keys(progress).length === 1 ? 'title' : 'titles') + '.'],
     ['Revision streak', run.live && run.current ? String(run.current) : '0', run.live && run.current ? 'days in a row. Longest: ' + run.longest + '.' : 'Play a round today to start one.'],
     ['Quotations kept', String(commonplace().length), 'in your commonplace book.'],
-    ['Rounds played', String(played), played ? 'since you started.' : 'nothing yet.'],
-    ['Flashcards due', String(due), due ? 'waiting in your decks today.' : 'nothing due today.']
+    ['Rounds played', String(played), played ? 'so far.' : 'Try a game.'],
+    ['Flashcards due', String(due), due ? 'to review today.' : 'All done for today.']
   ];
 
   for (const [label, value, note] of tiles) {
@@ -105,14 +105,14 @@ function renderSaved() {
   shelf(mounts.saved, savedBooks().map(book => ({
     href: book.href, title: book.title,
     note: 'Saved ' + formatDate(book.at)
-  })), 'Nothing saved yet. Open any book with a study toolkit and use “Save to my library”.');
+  })), 'No saved books yet. Save one from any book page.');
 }
 
 function renderRecent() {
   shelf(mounts.recent, recentlyViewed(12).map(entry => ({
     href: entry.href, title: entry.title,
     note: formatDate(entry.at)
-  })), 'Nothing here yet. Pages you open will appear as you go.');
+  })), 'Nothing yet. Pages you open will appear here.');
 }
 
 function renderProgress(index) {
@@ -120,7 +120,7 @@ function renderProgress(index) {
   const progress = allProgress();
   const slugs = Object.keys(progress).filter(slug => progress[slug].stages.length);
   if (!slugs.length) {
-    mounts.progress.append(el('p', { class: 'astor-empty', text: 'No progress marked yet. On a book page, tick an act or a section once you have read it.' }));
+    mounts.progress.append(el('p', { class: 'astor-empty', text: 'Nothing marked yet. Tick off sections on a book page as you read.' }));
     return;
   }
   const grid = el('div', { class: 'astor-dash-grid' });
@@ -145,7 +145,7 @@ function renderCommonplace() {
   if (!entries.length) {
     mounts.commonplace.append(el('p', {
       class: 'astor-empty',
-      text: 'Empty so far. Every quotation on a book page, in the explorer and in the flashcards has a button to keep it here.'
+      text: 'Nothing kept yet. Keep a quotation and it will appear here.'
     }));
     return;
   }
@@ -155,7 +155,7 @@ function renderCommonplace() {
     const note = el('textarea', {
       value: entry.note || '',
       'aria-label': 'Your note on this quotation',
-      placeholder: 'Why you kept it, or what you want to say about it.'
+      placeholder: 'Add a note'
     });
     let timer = null;
     note.addEventListener('input', () => {
@@ -179,7 +179,7 @@ function renderCommonplace() {
 
   const exportRow = el('div', { class: 'button-row' });
   exportRow.append(el('button', {
-    class: 'button secondary', type: 'button', text: 'Copy the whole commonplace book',
+    class: 'button secondary', type: 'button', text: 'Copy all',
     onclick: async event => {
       const text = entries.map(entry =>
         '“' + entry.text + '”\n— ' + (entry.reference || entry.book || '') + (entry.note ? '\n' + entry.note : '')
@@ -188,12 +188,12 @@ function renderCommonplace() {
         await navigator.clipboard.writeText(text);
         event.currentTarget.textContent = 'Copied';
       } catch {
-        event.currentTarget.textContent = 'Copying is blocked in this browser';
+        event.currentTarget.textContent = 'Couldn’t copy';
       }
     }
   }));
   exportRow.append(el('button', {
-    class: 'button secondary', type: 'button', text: 'Download it as a text file',
+    class: 'button secondary', type: 'button', text: 'Download as text',
     onclick: () => download('astor-commonplace-book.txt', entries.map(entry =>
       '“' + entry.text + '”\n— ' + (entry.reference || entry.book || '') + (entry.note ? '\n' + entry.note : '')
     ).join('\n\n'))
@@ -206,7 +206,7 @@ function renderPlans() {
   clear(mounts.plans);
   const plans = allPlans().sort((a, b) => (nextSitting(a)?.date || 'z').localeCompare(nextSitting(b)?.date || 'z'));
   if (!plans.length) {
-    mounts.plans.append(el('p', { class: 'astor-empty', text: 'No plans yet. On a book page, open the Revise tab, choose a finishing date and the days you have free.' }));
+    mounts.plans.append(el('p', { class: 'astor-empty', text: 'No plans yet. Make one in the Revise tab on any book page.' }));
     return;
   }
   const grid = el('div', { class: 'astor-dash-grid' });
@@ -235,7 +235,7 @@ function renderScores() {
   clear(mounts.scores);
   const entries = Object.entries(scores());
   if (!entries.length) {
-    mounts.scores.append(el('p', { class: 'astor-empty', text: 'No rounds played yet. The games are at /play/.' }));
+    mounts.scores.append(el('p', { class: 'astor-empty', text: 'No games played yet.' }));
     return;
   }
   const grid = el('div', { class: 'astor-dash-grid' });
@@ -261,21 +261,21 @@ function gameName(gameId) {
     'which-book': 'Which book?',
     'context-sprint': 'Context sprint',
     'opening-lines': 'Opening lines',
-    daily: 'The Daily Five'
+    daily: 'Today’s questions'
   })[gameId] || gameId;
 }
 
 function renderControls() {
   clear(mounts.controls);
   mounts.controls.append(el('button', {
-    class: 'button secondary', type: 'button', text: 'Export everything as JSON',
+    class: 'button secondary', type: 'button', text: 'Download my data',
     onclick: () => download('astor-library-data.json', exportAll())
   }));
   for (const [section, label] of [
     ['recent', 'Clear recently viewed'],
     ['saved', 'Clear saved books'],
-    ['commonplace', 'Clear the commonplace book'],
-    ['cards', 'Reset the flashcard schedule'],
+    ['commonplace', 'Clear commonplace book'],
+    ['cards', 'Reset flashcards'],
     [null, 'Forget everything']
   ]) {
     const button = el('button', { class: 'button secondary', type: 'button', text: label });

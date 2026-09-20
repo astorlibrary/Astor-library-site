@@ -17,15 +17,15 @@ async function start(container) {
   const gameId = container.dataset.game;
   const scope = container.dataset.scope;
   const builder = GAME_BUILDERS[gameId];
-  if (!builder) return emptyState(container, 'That game is not available.');
+  if (!builder) return emptyState(container, 'That game isn’t available.');
 
-  container.append(el('p', { class: 'astor-inline-note', text: 'Loading the material…' }));
+  container.append(el('p', { class: 'astor-inline-note', text: 'Loading…' }));
 
   let index;
   try {
     index = await loadIndex();
   } catch {
-    return emptyState(container, 'The study material could not be loaded just now. Reload the page, or read the same quotations on the book pages.', [
+    return emptyState(container, 'The game didn’t load. Try reloading the page.', [
       { href: '/library/', label: 'Browse the catalogue' }
     ]);
   }
@@ -44,7 +44,7 @@ function runBook(container, gameId, index) {
     .sort((a, b) => a.title.localeCompare(b.title));
 
   if (!books.length) {
-    return emptyState(container, 'No title yet carries enough material for this game. It appears as soon as a book’s record does.', [
+    return emptyState(container, 'No books are ready for this game yet.', [
       { href: '/play/', label: 'Other games' }
     ]);
   }
@@ -80,7 +80,7 @@ function runBook(container, gameId, index) {
 function runLibrary(container, gameId, index) {
   const questions = buildRound(gameId, index.books, { length: 10 });
   if (questions.length < 4) {
-    return emptyState(container, 'This game needs more titles in the library than currently carry the material. Try one of the single-book games.', [
+    return emptyState(container, 'This game isn’t ready yet. Try another one.', [
       { href: '/play/', label: 'Other games' }
     ]);
   }
@@ -89,7 +89,7 @@ function runLibrary(container, gameId, index) {
     gameId,
     reshuffle: () => buildRound(gameId, index.books, { length: 10 }),
     endLinks: [
-      { href: '/today/', label: 'The Daily Five' },
+      { href: '/today/', label: 'Today' },
       { href: '/play/', label: 'Another game' }
     ]
   });

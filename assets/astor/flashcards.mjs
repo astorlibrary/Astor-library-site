@@ -27,7 +27,7 @@ function runDeck(book) {
 
   if (!isRemembering()) {
     mount.append(el('div', { class: 'astor-game-panel' }, [
-      el('p', { class: 'astor-inline-note', text: 'Browser storage is switched off here, so the schedule cannot be kept between visits. The deck still works; every card is simply treated as new.' })
+      el('p', { class: 'astor-inline-note', text: 'Storage is off in this browser, so your place will not be saved.' })
     ]));
   }
 

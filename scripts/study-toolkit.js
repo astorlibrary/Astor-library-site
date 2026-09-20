@@ -60,14 +60,14 @@ function glance(book) {
     cells.push({
       label: 'Reading time',
       value: readingTimeLabel(book.readingTime),
-      note: 'An unhurried first reading, without notes.'
+      note: 'At an easy pace, without notes.'
     });
   }
   if (book.difficulty) {
     cells.push({
-      label: 'Going in cold',
+      label: 'Difficulty',
       value: DIFFICULTY_WORDS[book.difficulty],
-      note: 'Astor rates this ' + book.difficulty + ' out of 5 for first-time readers.'
+      note: 'Rated ' + book.difficulty + ' out of 5 for first-time readers.'
     });
   }
   if (book.setting) {
@@ -94,7 +94,7 @@ function plotPanel(book) {
       '</li>';
   }).join('');
   return '<section class="astor-panel" id="astor-plot" data-panel="Plot">' +
-    '<h3>The shape of ' + escapeHtml(book.title) + '</h3>' +
+    '<h3>What happens in ' + escapeHtml(book.title) + '</h3>' +
     '<p class="astor-panel-note">' + escapeHtml(book.summary) + '</p>' +
     '<ol class="astor-spine">' + stages + '</ol>' +
     '</section>';
@@ -113,8 +113,8 @@ function charactersPanel(book) {
   }).join('');
   return '<section class="astor-panel" id="astor-characters" data-panel="Characters">' +
     '<h3>Who is who</h3>' +
-    '<p class="astor-panel-note">Each entry says what the character is for, not only what they do. ' +
-    'The relationship map shows how the connections change as the ' + (book.form === 'play' ? 'acts' : 'sections') + ' pass.</p>' +
+    '<p class="astor-panel-note">' +
+    'The map shows how their connections change across the ' + (book.form === 'play' ? 'acts' : 'sections') + '.</p>' +
     '<div class="astor-character-map" data-astor-character-map="' + escapeHtml(book.slug) + '">' +
     '<p class="astor-toolkit-actions"><a class="button secondary" href="/explore/characters/?book=' + escapeHtml(book.slug) + '">Open the relationship map</a></p>' +
     '</div>' +
@@ -131,9 +131,9 @@ function themesPanel(book) {
     '</article>'
   ).join('');
   return '<section class="astor-panel" id="astor-themes" data-panel="Themes">' +
-    '<h3>What the book keeps returning to</h3>' +
-    '<p class="astor-panel-note">Every quotation below is tagged with the themes it carries, so a theme can be followed through the text rather than asserted. ' +
-    'The <a href="/explore/themes/">themes explorer</a> sets each of these beside the other books that share it.</p>' +
+    '<h3>What the book keeps coming back to</h3>' +
+    '<p class="astor-panel-note">' +
+    'Compare these with other books in the <a href="/explore/themes/">themes explorer</a>.</p>' +
     '<div class="astor-note-grid">' + notes + '</div>' +
     '</section>';
 }
@@ -143,7 +143,7 @@ function quotationsPanel(book) {
   const techniqueNames = new Map(book.techniques.map(technique => [technique.id, technique.name]));
   const characterNames = new Map(book.characters.map(character => [character.id, character.name]));
 
-  const filters = ['<button class="astor-filter" type="button" data-quote-filter="all" aria-pressed="true">Everything</button>']
+  const filters = ['<button class="astor-filter" type="button" data-quote-filter="all" aria-pressed="true">All</button>']
     .concat(book.themes.map(theme =>
       '<button class="astor-filter" type="button" data-quote-filter="theme:' + escapeHtml(theme.id) + '" aria-pressed="false">' + escapeHtml(theme.name) + '</button>'
     ))
@@ -175,12 +175,11 @@ function quotationsPanel(book) {
   }).join('');
 
   return '<section class="astor-panel" id="astor-quotations" data-panel="Quotations">' +
-    '<h3>Lines worth knowing, and what to say about them</h3>' +
-    '<p class="astor-panel-note">' + book.quotations.length + ' quotations, each checked against the ' +
-    escapeHtml(book.sourceText.label) + ' and referenced by ' + escapeHtml(book.referenceStyle) + '.' +
-    (book.sourceText.note ? ' ' + escapeHtml(book.sourceText.note) : '') + '</p>' +
+    '<h3>Key quotations</h3>' +
+    '<p class="astor-panel-note">' + book.quotations.length + ' quotations, each with the place it comes from.</p>' +
     '<div class="astor-quote-filters" role="group" aria-label="Filter quotations by theme">' + filters + '</div>' +
     '<div class="astor-quote-list">' + cards + '</div>' +
+    '<p class="astor-inline-note">Quoted from the ' + escapeHtml(book.sourceText.label) + '.</p>' +
     '</section>';
 }
 
@@ -195,8 +194,8 @@ function techniquesPanel(book) {
   ).join('');
   return '<section class="astor-panel" id="astor-techniques" data-panel="Form &amp; language">' +
     '<h3>How it is written</h3>' +
-    '<p class="astor-panel-note">Each term is defined generally and then shown doing a particular job in this text. ' +
-    'The <a href="/explore/techniques/">technique glossary</a> collects the same terms across the whole library.</p>' +
+    '<p class="astor-panel-note">' +
+    'The <a href="/explore/techniques/">technique glossary</a> shows these terms across the library.</p>' +
     '<div class="astor-note-grid">' + notes + '</div>' +
     '</section>';
 }
@@ -219,14 +218,19 @@ function contextPanel(book) {
     ).join('') + '</div>'
     : '';
   const places = (book.places || []).length
-    ? '<p class="astor-inline-note">The places in this book are plotted on the <a href="/explore/map/?book=' +
-    escapeHtml(book.slug) + '">map of settings</a>.</p>'
+    ? '<h4 class="astor-subhead">Where it happens</h4>' +
+    '<div class="astor-book-map-box" data-astor-book-map="' + escapeHtml(book.slug) + '">' +
+    '<ul class="astor-place-plain">' + book.places.map(place =>
+      '<li><strong>' + escapeHtml(place.name) + '</strong>' + (place.note ? ' — ' + escapeHtml(place.note) : '') + '</li>').join('') + '</ul>' +
+    '</div>' +
+    '<p class="astor-inline-note"><a href="/explore/map/?book=' + escapeHtml(book.slug) +
+    '">Open the full map →</a></p>'
     : '';
   if (!timeline && !views) return '';
   return '<section class="astor-panel" id="astor-context" data-panel="Context">' +
-    '<h3>The book in its moment</h3>' +
-    '<p class="astor-panel-note">Dates that matter to the text, and the readings the book has attracted since. ' +
-    'The <a href="/explore/timeline/">library timeline</a> sets these beside every other Astor title.</p>' +
+    '<h3>Background</h3>' +
+    '<p class="astor-panel-note">Key dates and how the book has been read. ' +
+    'See other books on the <a href="/explore/timeline/">library timeline</a>.</p>' +
     timeline + views + places +
     '</section>';
 }
@@ -245,21 +249,21 @@ function essaysPanel(book) {
     : '';
   if (!questions && !discussion) return '';
   return '<section class="astor-panel" id="astor-essays" data-panel="Essays">' +
-    '<h3>Questions, and how to answer them</h3>' +
-    '<p class="astor-panel-note">Each plan is a route through the text rather than a set of conclusions. ' +
-    'The <a href="/play/essay-forge/?book=' + escapeHtml(book.slug) + '">essay forge</a> turns any of them into a paragraph-by-paragraph outline you can keep.</p>' +
+    '<h3>Essay questions</h3>' +
+    '<p class="astor-panel-note">Each question has a plan. ' +
+    'Build a full plan in the <a href="/play/essay-forge/?book=' + escapeHtml(book.slug) + '">essay planner</a>.</p>' +
     '<div class="astor-note-grid">' + questions + '</div>' + discussion +
     '</section>';
 }
 
 const GAMES = [
-  ['who-said-it', 'Who said it?', 'A line appears; name the speaker.'],
-  ['fill-the-line', 'Fill the line', 'Put the missing words back into a famous speech.'],
-  ['theme-match', 'Theme match', 'Decide which theme a quotation is carrying.'],
-  ['technique-spotter', 'Technique spotter', 'Name the device doing the work.'],
-  ['character-identification', 'Who is this?', 'Identify a character from a description that never names them.'],
-  ['order-the-plot', 'Order the plot', 'Put the acts, chapters and scenes back into sequence.'],
-  ['mixed-round', 'Mixed round', 'Every kind of question, one book, one run.']
+  ['who-said-it', 'Who said it?', 'Read a line and name who says it.'],
+  ['fill-the-line', 'Fill the line', 'Fill in the missing words.'],
+  ['theme-match', 'Theme match', 'Match each quotation to its theme.'],
+  ['technique-spotter', 'Technique spotter', 'Spot the technique in each quotation.'],
+  ['character-identification', 'Who is this?', 'Guess the character from a description.'],
+  ['order-the-plot', 'Order the plot', 'Put the plot back in order.'],
+  ['mixed-round', 'Mixed round', 'A mix of every game.']
 ];
 
 function revisePanel(book) {
@@ -269,25 +273,25 @@ function revisePanel(book) {
   ).join('');
   return '<section class="astor-panel" id="astor-revise" data-panel="Revise">' +
     '<h3>Revise ' + escapeHtml(book.title) + '</h3>' +
-    '<p class="astor-panel-note">Every question in these games is built from the material above, so nothing appears that the page has not already taught. ' +
-    'Your scores and your revision streak are kept on this device only.</p>' +
+    '<p class="astor-panel-note">Test yourself on this book. ' +
+    'Scores are saved in this browser.</p>' +
     '<div class="astor-revise-tools">' +
     '<div class="astor-plan" data-astor-plan="' + escapeHtml(book.slug) + '">' +
     '<h4>Plan your reading</h4>' +
-    '<p>Choose a finishing date and the days you have free, and the ' + (book.form === 'play' ? 'acts' : 'sections') +
-    ' above are shared out across them, with a rough time for each sitting. The plan stays on this device and can be added to your calendar.</p>' +
+    '<p>Pick a finish date and the days you can read, and the ' + (book.form === 'play' ? 'acts' : 'sections') +
+    ' are split between them.</p>' +
     '</div>' +
     '<div class="astor-sheet-box" data-astor-sheet="' + escapeHtml(book.slug) + '">' +
-    '<h4>One page to take with you</h4>' +
-    '<p>The shape of the book, who is who, the themes, ' + Math.min(8, book.quotations.length) + ' lines worth knowing with their references, and three questions to practise on, laid out to print on a single sheet.</p>' +
+    '<h4>Revision sheet</h4>' +
+    '<p>Plot, characters, themes and ' + Math.min(8, book.quotations.length) + ' key quotations on one page to print.</p>' +
     '</div>' +
     '</div>' +
     '<div class="astor-play-grid">' + cards +
     '<a class="astor-play-card" href="/play/flashcards/?book=' + escapeHtml(book.slug) + '">' +
-    '<span class="astor-play-kind">Flashcards</span><h4>Spaced repetition</h4>' +
-    '<p>A deck of ' + book.quotations.length + ' quotations that returns the ones you keep forgetting.</p></a>' +
-    '<a class="astor-play-card" href="/today/"><span class="astor-play-kind">Daily</span><h4>The Daily Five</h4>' +
-    '<p>Five questions drawn from across the library, the same five for everybody, changing at midnight.</p></a>' +
+    '<span class="astor-play-kind">Flashcards</span><h4>Learn the quotations</h4>' +
+    '<p>' + book.quotations.length + ' cards. The ones you get wrong come back sooner.</p></a>' +
+    '<a class="astor-play-card" href="/today/"><span class="astor-play-kind">Daily</span><h4>Today’s questions</h4>' +
+    '<p>Five questions. New every day.</p></a>' +
     '</div>' +
     '</section>';
 }
@@ -307,13 +311,13 @@ function videosPanel(book) {
     '<h4>' + escapeHtml(video.title) + '</h4>' +
     '<p>' + escapeHtml(video.note) + '</p>' +
     '<p class="astor-inline-note">' + escapeHtml(video.source || video.provider) + '</p>' +
-    '<button class="button secondary" type="button" data-video-play>Load the video</button> ' +
-    '<a class="button secondary" href="' + escapeHtml(video.url) + '" rel="noopener noreferrer">Watch it on the original site</a>' +
+    '<button class="button secondary" type="button" data-video-play>Play</button> ' +
+    '<a class="button secondary" href="' + escapeHtml(video.url) + '" rel="noopener noreferrer">Watch on YouTube</a>' +
     '</article>'
   ).join('');
   return '<section class="astor-panel" id="astor-watch" data-panel="Watch">' +
     '<h3>Worth watching</h3>' +
-    '<p class="astor-panel-note">Nothing here loads until you ask for it, and nothing is embedded from a service that would set a cookie before you do.</p>' +
+    '<p class="astor-panel-note">Nothing loads until you press play.</p>' +
     '<div class="astor-note-grid">' + cards + '</div>' +
     '</section>';
 }
@@ -322,7 +326,7 @@ function relatedPanel(book, titleFor, passages = []) {
   if (!(book.related || []).length && !passages.length) return '';
   const readings = passages.length
     ? '<h4 class="astor-subhead">Close readings of this book</h4>' +
-      '<p class="astor-panel-note">One passage at a time, with the wording annotated phrase by phrase in the Passage Room.</p>' +
+      '<p class="astor-panel-note">Close readings of single passages from this book.</p>' +
       '<div class="astor-note-grid">' + passages.map(passage =>
         '<article class="astor-note"><h4><a href="' + escapeHtml(passage.href) + '">' + escapeHtml(passage.title) + '</a></h4>' +
         '<p>' + escapeHtml(passage.description || '') + '</p></article>'
@@ -334,7 +338,7 @@ function relatedPanel(book, titleFor, passages = []) {
   ).join('');
   const related = cards
     ? (readings ? '<h4 class="astor-subhead">Where to go from here</h4>' : '') +
-      '<p class="astor-panel-note">Connections worth following, each with a reason rather than a category.</p>' +
+      '<p class="astor-panel-note">Where to go next.</p>' +
       '<div class="astor-note-grid">' + cards + '</div>'
     : '';
   return '<section class="astor-panel" id="astor-related" data-panel="Read next">' +
@@ -380,7 +384,7 @@ function renderToolkit(book, { heading, titleFor, passages } = {}) {
     '<div class="astor-toolkit-head">' +
     '<div><p class="kicker">Astor study toolkit</p>' +
     '<h2 id="astor-toolkit-title">' + escapeHtml(heading || ('Work through ' + book.title + '.')) + '</h2>' +
-    '<p>Plot, characters, themes, checked quotations with analysis, language, context, essay plans and a set of revision games — all built from the same material, so nothing here contradicts anything else.</p></div>' +
+    '<p>Plot, characters, themes, quotations, language, context, essay plans and games.</p></div>' +
     '<div class="astor-toolkit-actions">' +
     '<button class="button secondary" type="button" data-astor-save aria-pressed="false">Save to my library</button>' +
     '<a class="button primary" href="/play/?book=' + escapeHtml(book.slug) + '">Revise this book</a>' +

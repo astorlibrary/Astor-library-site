@@ -9,8 +9,8 @@ import { el, clear, announce, formatYear } from './util.mjs';
 import { loadIndex } from './data.mjs';
 
 const KINDS = [
-  ['work', 'The work itself'],
-  ['context', 'History around it'],
+  ['work', 'The book'],
+  ['context', 'History'],
   ['author', 'The writer'],
   ['reception', 'Afterwards']
 ];
@@ -45,7 +45,7 @@ async function start() {
   try {
     index = await loadIndex();
   } catch {
-    track.append(el('p', { class: 'astor-empty', text: 'The timeline could not load. Each book page carries its own dated context.' }));
+    track.append(el('p', { class: 'astor-empty', text: 'Couldn’t load the timeline. Try reloading the page.' }));
     return;
   }
 
@@ -58,7 +58,7 @@ async function start() {
   })));
 
   if (!events.length) {
-    track.append(el('p', { class: 'astor-empty', text: 'No dated events yet. They arrive with each title’s record.' }));
+    track.append(el('p', { class: 'astor-empty', text: 'No dates here yet.' }));
     return;
   }
 
@@ -93,7 +93,7 @@ function buildControls() {
   bookSelect.addEventListener('change', () => { state.book = bookSelect.value; render(); });
   controls.append(el('div', {}, [el('label', { for: bookSelect.id, text: 'Book' }), bookSelect]));
 
-  const spanSelect = el('select', { id: 'astor-timeline-span', 'aria-label': 'Choose a stretch of time' });
+  const spanSelect = el('select', { id: 'astor-timeline-span', 'aria-label': 'Time span' });
   for (const [id, label, from, to] of SPANS) {
     const count = events.filter(event => event.year >= from && event.year < to).length;
     spanSelect.append(el('option', { value: id, text: label + ' (' + count + ')', selected: id === state.span }));
@@ -180,8 +180,8 @@ function renderColumn(years, shown, first, last) {
   track.append(list);
   track.append(el('p', {
     class: 'astor-inline-note',
-    text: shown.length + ' events in ' + years.length + ' different years between ' + formatYear(first) +
-      ' and ' + formatYear(last) + '. Select a year to read it.'
+    text: shown.length + ' events in ' + years.length + ' different years, ' + formatYear(first) +
+      ' to ' + formatYear(last) + '. Pick a year for details.'
   }));
 }
 
@@ -232,10 +232,9 @@ function renderBoard(years, shown, first, last, boardWidth) {
   track.append(board);
   track.append(el('p', {
     class: 'astor-inline-note',
-    text: shown.length + ' events, falling in ' + years.length + ' different years between ' + formatYear(first) +
-      ' and ' + formatYear(last) + '. Select a year to read it. The page opens on the works ' +
-      'themselves; add the history around them, the writers and what happened afterwards with the ' +
-      'buttons above.'
+    text: shown.length + ' events in ' + years.length + ' different years, ' + formatYear(first) +
+      ' to ' + formatYear(last) + '. Pick a year for details. ' +
+      'Add more kinds of event with the buttons above.'
   }));
 }
 
