@@ -231,7 +231,7 @@ function buildPages() {
   // --- essay forge ---
   written.push(page({
     dir: 'play/essay-forge',
-    title: 'Essay forge | Astor Library',
+    title: 'Essay planner | Astor Library',
     description: 'Build an essay plan: choose a question, take a line of argument and attach quotations to each paragraph.',
     kicker: 'Planning tool',
     heading: 'Essay planner.',

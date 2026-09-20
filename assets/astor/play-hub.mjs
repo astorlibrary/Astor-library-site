@@ -29,7 +29,7 @@ const LIBRARY_GAMES = [
 
 const TOOLS = [
   ['flashcards', 'Flashcards', 'Learn the key quotations for each book.', 'Quotations'],
-  ['essay-forge', 'Essay forge', 'Plan an essay, one paragraph at a time.', 'Planning'],
+  ['essay-forge', 'Essay planner', 'Plan an essay, one paragraph at a time.', 'Planning'],
   ['defend-the-reading', 'Defend the reading', 'Argue for or against a reading of the book.', 'Argument']
 ];
 

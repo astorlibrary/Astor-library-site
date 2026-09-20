@@ -176,11 +176,10 @@ function quotationsPanel(book) {
 
   return '<section class="astor-panel" id="astor-quotations" data-panel="Quotations">' +
     '<h3>Key quotations</h3>' +
-    '<p class="astor-panel-note">' + book.quotations.length + ' quotations from the ' +
-    escapeHtml(book.sourceText.label) + ', referenced by ' + escapeHtml(book.referenceStyle) + '.' +
-    (book.sourceText.note ? ' ' + escapeHtml(book.sourceText.note) : '') + '</p>' +
+    '<p class="astor-panel-note">' + book.quotations.length + ' quotations, each with the place it comes from.</p>' +
     '<div class="astor-quote-filters" role="group" aria-label="Filter quotations by theme">' + filters + '</div>' +
     '<div class="astor-quote-list">' + cards + '</div>' +
+    '<p class="astor-inline-note">Quoted from the ' + escapeHtml(book.sourceText.label) + '.</p>' +
     '</section>';
 }
 
@@ -252,7 +251,7 @@ function essaysPanel(book) {
   return '<section class="astor-panel" id="astor-essays" data-panel="Essays">' +
     '<h3>Essay questions</h3>' +
     '<p class="astor-panel-note">Each question has a plan. ' +
-    'Build a full outline in the <a href="/play/essay-forge/?book=' + escapeHtml(book.slug) + '">essay forge</a>.</p>' +
+    'Build a full plan in the <a href="/play/essay-forge/?book=' + escapeHtml(book.slug) + '">essay planner</a>.</p>' +
     '<div class="astor-note-grid">' + questions + '</div>' + discussion +
     '</section>';
 }

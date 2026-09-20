@@ -1170,7 +1170,7 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
     ['/play/context-sprint/', 'Context sprint', 'Place an event in the right year'],
     ['/play/opening-lines/', 'Opening lines', 'Name the book from its first sentence'],
     ['/play/flashcards/', 'Flashcards', 'Spaced repetition over a title’s quotations'],
-    ['/play/essay-forge/', 'Essay forge', 'Build a plan paragraph by paragraph'],
+    ['/play/essay-forge/', 'Essay planner', 'Build a plan paragraph by paragraph'],
     ['/play/defend-the-reading/', 'Defend the reading', 'Argue a reading against the case on the other side'],
     ['/today/', 'Astor today', 'Passage of the day and the Daily Five'],
     ['/explore/quotations/', 'Quotation explorer', 'Every checked quotation, filterable'],
