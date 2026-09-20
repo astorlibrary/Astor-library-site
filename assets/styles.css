@@ -2019,3 +2019,16 @@
   .page-contents a { border: 1px solid var(--line); border-radius: 0; }
   .page-contents a:hover, .page-contents a:focus-visible { border-color: var(--burgundy); }
 }
+
+/* Grids of cards: the covers and the titles are enough. The boxes around
+   them are not, and 141 of them on the catalogue page is a wall. */
+.catalog-card, .resource-card, .study-card {
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+.catalog-card { padding-bottom: 6px; }
+.catalog-card:hover img, .study-card:hover img, .resource-card:hover img { transform: translateY(-3px); }
+.catalog-card img, .study-card img, .resource-card img { transition: transform .2s ease; box-shadow: 0 8px 20px rgba(32, 28, 26, .10); }
+.passage-card { box-shadow: none; }
+.study-note, .study-panel, .resource-panel { border: 0; border-top: 1px solid var(--line); background: none; }
