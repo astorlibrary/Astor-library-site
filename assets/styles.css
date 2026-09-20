@@ -2009,3 +2009,13 @@
 @media (max-width: 620px) {
   .page-contents { position: static; backdrop-filter: none; }
 }
+
+/* The contents links were lettered for a dark slab: pale text, pale borders.
+   On the quiet bar they need the page's own ink. */
+.page-contents strong { color: var(--muted); }
+.page-contents a { border: 0; border-bottom: 1px solid transparent; }
+.page-contents a:hover, .page-contents a:focus-visible { border-bottom-color: var(--burgundy); }
+@media (max-width: 620px) {
+  .page-contents a { border: 1px solid var(--line); border-radius: 0; }
+  .page-contents a:hover, .page-contents a:focus-visible { border-color: var(--burgundy); }
+}
