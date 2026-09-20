@@ -22,10 +22,26 @@
     "note": "Line numbers follow the traditional Globe numbering, which counts the prose scenes continuously. Modern editions vary."
   },
   "atAGlance": [
-    { "label": "Written", "value": "c. 1596–1597", "note": "Topical references and the style of the verse place composition in the later 1590s." },
-    { "label": "First printed", "value": "1600", "note": "The First Quarto, which remains the basis of most modern editions." },
-    { "label": "Chief source", "value": "Il Pecorone", "note": "The bond, the trial and the disguised lady-lawyer come from a tale in Ser Giovanni Fiorentino's Italian collection." },
-    { "label": "At court", "value": "February 1605", "note": "The first recorded performance was on 10 February 1605, and the play was repeated before the court two days later." }
+    {
+      "label": "Written",
+      "value": "c. 1596–1597",
+      "note": "Topical references and the style of the verse place composition in the later 1590s."
+    },
+    {
+      "label": "First printed",
+      "value": "1600",
+      "note": "The First Quarto, which remains the basis of most modern editions."
+    },
+    {
+      "label": "Chief source",
+      "value": "Il Pecorone",
+      "note": "The bond, the trial and the disguised lady-lawyer come from a tale in Ser Giovanni Fiorentino's Italian collection."
+    },
+    {
+      "label": "At court",
+      "value": "February 1605",
+      "note": "The first recorded performance was on 10 February 1605, and the play was repeated before the court two days later."
+    }
   ],
   "structure": [
     {
@@ -34,9 +50,21 @@
       "title": "A sad merchant, a locked test, and a bond made in jest",
       "summary": "Antonio cannot say why he is unhappy. Bassanio needs money to court an heiress whose father has left her unable to choose her own husband, and Shylock lends it on a forfeit of a pound of flesh — proposed, and accepted, as a piece of friendly humour by men who have just insulted each other.",
       "scenes": [
-        { "ref": "1.1", "title": "The Rialto", "summary": "Antonio's friends try to explain his melancholy; Bassanio asks for a further loan to go to Belmont." },
-        { "ref": "1.2", "title": "The will of a dead father", "summary": "Portia reviews her suitors with Nerissa and complains of a lottery she cannot refuse." },
-        { "ref": "1.3", "title": "The merry bond", "summary": "Shylock recalls years of public abuse, then lends interest-free against a pound of Antonio's flesh." }
+        {
+          "ref": "1.1",
+          "title": "The Rialto",
+          "summary": "Antonio's friends try to explain his melancholy; Bassanio asks for a further loan to go to Belmont."
+        },
+        {
+          "ref": "1.2",
+          "title": "The will of a dead father",
+          "summary": "Portia reviews her suitors with Nerissa and complains of a lottery she cannot refuse."
+        },
+        {
+          "ref": "1.3",
+          "title": "The merry bond",
+          "summary": "Shylock recalls years of public abuse, then lends interest-free against a pound of Antonio's flesh."
+        }
       ]
     },
     {
@@ -45,15 +73,51 @@
       "title": "Two wrong caskets and a daughter gone",
       "summary": "Morocco and Arragon choose gold and silver and are beaten by their own assumptions about worth. In Venice, Jessica leaves her father's house dressed as a boy, taking money and jewels with her, and the Christian gentlemen of the Rialto turn Shylock's public grief into a street entertainment.",
       "scenes": [
-        { "ref": "2.1", "title": "Morocco arrives", "summary": "He asks not to be judged by his complexion and is told the terms of the lottery." },
-        { "ref": "2.2", "title": "Launcelot changes master", "summary": "The clown argues with his own conscience and leaves Shylock for Bassanio." },
-        { "ref": "2.3", "title": "Jessica's plan", "summary": "She calls her father's house hell and asks Launcelot to carry a letter to Lorenzo." },
-        { "ref": "2.4", "title": "The masque", "summary": "Lorenzo learns what gold and jewels she will bring with her." },
-        { "ref": "2.5", "title": "Locking up", "summary": "Shylock, going out to supper against his judgement, tells Jessica to shut the windows." },
-        { "ref": "2.6", "title": "The elopement", "summary": "Jessica throws down a casket and escapes in boy's clothes, ashamed of the disguise." },
-        { "ref": "2.7", "title": "Gold", "summary": "Morocco opens the golden casket and finds a skull and a rhyme about glittering." },
-        { "ref": "2.8", "title": "Reported grief", "summary": "Salanio performs Shylock's cries about his daughter and his ducats for laughs." },
-        { "ref": "2.9", "title": "Silver", "summary": "Arragon takes what he deserves and is handed the portrait of a blinking idiot." }
+        {
+          "ref": "2.1",
+          "title": "Morocco arrives",
+          "summary": "He asks not to be judged by his complexion and is told the terms of the lottery."
+        },
+        {
+          "ref": "2.2",
+          "title": "Launcelot changes master",
+          "summary": "The clown argues with his own conscience and leaves Shylock for Bassanio."
+        },
+        {
+          "ref": "2.3",
+          "title": "Jessica's plan",
+          "summary": "She calls her father's house hell and asks Launcelot to carry a letter to Lorenzo."
+        },
+        {
+          "ref": "2.4",
+          "title": "The masque",
+          "summary": "Lorenzo learns what gold and jewels she will bring with her."
+        },
+        {
+          "ref": "2.5",
+          "title": "Locking up",
+          "summary": "Shylock, going out to supper against his judgement, tells Jessica to shut the windows."
+        },
+        {
+          "ref": "2.6",
+          "title": "The elopement",
+          "summary": "Jessica throws down a casket and escapes in boy's clothes, ashamed of the disguise."
+        },
+        {
+          "ref": "2.7",
+          "title": "Gold",
+          "summary": "Morocco opens the golden casket and finds a skull and a rhyme about glittering."
+        },
+        {
+          "ref": "2.8",
+          "title": "Reported grief",
+          "summary": "Salanio performs Shylock's cries about his daughter and his ducats for laughs."
+        },
+        {
+          "ref": "2.9",
+          "title": "Silver",
+          "summary": "Arragon takes what he deserves and is handed the portrait of a blinking idiot."
+        }
       ]
     },
     {
@@ -62,11 +126,31 @@
       "title": "Lead won, ships lost, and a speech about eyes",
       "summary": "Bassanio rejects ornament, chooses lead and wins Portia within the hour. In the same act Shylock, taunted in the street about his daughter, answers with the play's most famous demand for common humanity and ends it by promising revenge. News arrives that Antonio's ships are gone.",
       "scenes": [
-        { "ref": "3.1", "title": "On the Rialto", "summary": "Salarino and Salanio bait Shylock; Tubal brings news of Jessica's spending and of a wrecked argosy." },
-        { "ref": "3.2", "title": "Lead", "summary": "Bassanio chooses correctly; the rings are given; a letter from Antonio interrupts the betrothal." },
-        { "ref": "3.3", "title": "No more speaking", "summary": "Shylock refuses to hear Antonio and repeats that he will have his bond." },
-        { "ref": "3.4", "title": "Padua", "summary": "Portia sends for legal papers from Doctor Bellario and tells Nerissa they will go disguised." },
-        { "ref": "3.5", "title": "Salvation and bacon", "summary": "Launcelot jokes that converting Jews will raise the price of pork; Jessica changes the subject." }
+        {
+          "ref": "3.1",
+          "title": "On the Rialto",
+          "summary": "Salarino and Salanio bait Shylock; Tubal brings news of Jessica's spending and of a wrecked argosy."
+        },
+        {
+          "ref": "3.2",
+          "title": "Lead",
+          "summary": "Bassanio chooses correctly; the rings are given; a letter from Antonio interrupts the betrothal."
+        },
+        {
+          "ref": "3.3",
+          "title": "No more speaking",
+          "summary": "Shylock refuses to hear Antonio and repeats that he will have his bond."
+        },
+        {
+          "ref": "3.4",
+          "title": "Padua",
+          "summary": "Portia sends for legal papers from Doctor Bellario and tells Nerissa they will go disguised."
+        },
+        {
+          "ref": "3.5",
+          "title": "Salvation and bacon",
+          "summary": "Launcelot jokes that converting Jews will raise the price of pork; Jessica changes the subject."
+        }
       ]
     },
     {
@@ -75,8 +159,16 @@
       "title": "The court, and what mercy turns out to mean",
       "summary": "The longest scene in the play. Shylock refuses three times the money, Portia arrives disguised as a lawyer from Padua and preaches mercy, and then wins by reading the bond more strictly than its holder. Within forty lines Shylock has lost his estate, his livelihood and his religion.",
       "scenes": [
-        { "ref": "4.1", "title": "The trial", "summary": "Mercy is argued, the bond is enforced to the letter, and an alien statute is produced against the plaintiff." },
-        { "ref": "4.2", "title": "The rings", "summary": "Portia and Nerissa, still disguised, collect the rings their husbands swore never to part with." }
+        {
+          "ref": "4.1",
+          "title": "The trial",
+          "summary": "Mercy is argued, the bond is enforced to the letter, and an alien statute is produced against the plaintiff."
+        },
+        {
+          "ref": "4.2",
+          "title": "The rings",
+          "summary": "Portia and Nerissa, still disguised, collect the rings their husbands swore never to part with."
+        }
       ]
     },
     {
@@ -85,7 +177,11 @@
       "title": "Music at Belmont, and one man missing",
       "summary": "Lorenzo and Jessica trade stories of lovers who came to bad ends, the wives expose the business of the rings, and Antonio learns that three of his ships are safe after all. Shylock is not mentioned. The comedy closes with everybody paired except the merchant it is named after.",
       "scenes": [
-        { "ref": "5.1", "title": "Moonlight", "summary": "Music, the ring quarrel, the revelation of the disguise, and news that Antonio's argosies have come home." }
+        {
+          "ref": "5.1",
+          "title": "Moonlight",
+          "summary": "Music, the ring quarrel, the revelation of the disguise, and news that Antonio's argosies have come home."
+        }
       ]
     }
   ],
@@ -97,11 +193,39 @@
       "summary": "He appears in five scenes and dominates the play. Shakespeare gives him the abuse he has taken in detail — the spitting, the name-calling, the kicks — and then has him turn that history into a legal instrument. The play neither excuses what he does nor lets his enemies off the account he reads them.",
       "clue": "He keeps a ledger of insults as exactly as one of debts, asks whether a dog has money, and leaves the stage saying he is not well.",
       "firstAppearance": "1.3",
-      "traits": ["exact", "unforgiving", "publicly humiliated"],
+      "traits": [
+        "exact",
+        "unforgiving",
+        "publicly humiliated"
+      ],
       "relationships": [
-        { "to": "antonio", "label": "creditor and enemy of", "kind": "enemy", "stages": ["act-1", "act-3", "act-4"] },
-        { "to": "jessica", "label": "father of", "kind": "family", "stages": ["act-2", "act-3"] },
-        { "to": "portia", "label": "defeated in court by", "kind": "rival", "stages": ["act-4"] }
+        {
+          "to": "antonio",
+          "label": "creditor and enemy of",
+          "kind": "enemy",
+          "stages": [
+            "act-1",
+            "act-3",
+            "act-4"
+          ]
+        },
+        {
+          "to": "jessica",
+          "label": "father of",
+          "kind": "family",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "portia",
+          "label": "defeated in court by",
+          "kind": "rival",
+          "stages": [
+            "act-4"
+          ]
+        }
       ]
     },
     {
@@ -111,12 +235,43 @@
       "summary": "Rich, quick and confined: her father's will means she may neither choose nor refuse. She takes the only freedom available by leaving Belmont in a man's gown, and the same intelligence that saves Antonio is later used to trap her own husband over a ring.",
       "clue": "She may neither choose a husband nor refuse one, so she borrows a lawyer's gown from Padua and wins the biggest case in Venice.",
       "firstAppearance": "1.2",
-      "traits": ["clever", "controlled", "less merciful than her own speech"],
+      "traits": [
+        "clever",
+        "controlled",
+        "less merciful than her own speech"
+      ],
       "relationships": [
-        { "to": "bassanio", "label": "married to", "kind": "marriage", "stages": ["act-3", "act-5"] },
-        { "to": "nerissa", "label": "confidante and fellow conspirator", "kind": "ally" },
-        { "to": "antonio", "label": "rescuer of, and rival for Bassanio", "kind": "rival", "stages": ["act-4", "act-5"] },
-        { "to": "shylock", "label": "prosecutes in the guise of defending", "kind": "rival", "stages": ["act-4"] }
+        {
+          "to": "bassanio",
+          "label": "married to",
+          "kind": "marriage",
+          "stages": [
+            "act-3",
+            "act-5"
+          ]
+        },
+        {
+          "to": "nerissa",
+          "label": "confidante and fellow conspirator",
+          "kind": "ally"
+        },
+        {
+          "to": "antonio",
+          "label": "rescuer of, and rival for Bassanio",
+          "kind": "rival",
+          "stages": [
+            "act-4",
+            "act-5"
+          ]
+        },
+        {
+          "to": "shylock",
+          "label": "prosecutes in the guise of defending",
+          "kind": "rival",
+          "stages": [
+            "act-4"
+          ]
+        }
       ]
     },
     {
@@ -126,11 +281,40 @@
       "summary": "The title character speaks the first line of the play and almost nothing in the last scene. His sadness is never explained; his willingness to die for Bassanio is stated plainly, and so is his intention to go on spitting on Shylock. He is the only major figure who ends the play unpaired.",
       "clue": "He opens the play saying he does not know why he is sad, offers his own body as security for a friend's courtship, and ends it the only one without a partner.",
       "firstAppearance": "1.1",
-      "traits": ["melancholy", "generous", "unrepentant in his contempt"],
+      "traits": [
+        "melancholy",
+        "generous",
+        "unrepentant in his contempt"
+      ],
       "relationships": [
-        { "to": "bassanio", "label": "devoted to", "kind": "love", "stages": ["act-1", "act-4"] },
-        { "to": "shylock", "label": "debtor and abuser of", "kind": "enemy", "stages": ["act-1", "act-3", "act-4"] },
-        { "to": "portia", "label": "saved by, and displaced by", "kind": "rival", "stages": ["act-4", "act-5"] }
+        {
+          "to": "bassanio",
+          "label": "devoted to",
+          "kind": "love",
+          "stages": [
+            "act-1",
+            "act-4"
+          ]
+        },
+        {
+          "to": "shylock",
+          "label": "debtor and abuser of",
+          "kind": "enemy",
+          "stages": [
+            "act-1",
+            "act-3",
+            "act-4"
+          ]
+        },
+        {
+          "to": "portia",
+          "label": "saved by, and displaced by",
+          "kind": "rival",
+          "stages": [
+            "act-4",
+            "act-5"
+          ]
+        }
       ]
     },
     {
@@ -140,11 +324,35 @@
       "summary": "He has run through his money and proposes to repair it by marrying a fortune, which he explains to Antonio without embarrassment. His casket speech rejects outward show in terms that apply uncomfortably well to his own courtship, financed by a borrowed appearance of wealth.",
       "clue": "He argues that the world is deceived by ornament while wearing clothes bought with a friend's borrowed money.",
       "firstAppearance": "1.1",
-      "traits": ["charming", "improvident", "sincere in patches"],
+      "traits": [
+        "charming",
+        "improvident",
+        "sincere in patches"
+      ],
       "relationships": [
-        { "to": "portia", "label": "married to", "kind": "marriage", "stages": ["act-3", "act-5"] },
-        { "to": "antonio", "label": "indebted to", "kind": "love", "stages": ["act-1", "act-4"] },
-        { "to": "gratiano", "label": "companion of", "kind": "ally" }
+        {
+          "to": "portia",
+          "label": "married to",
+          "kind": "marriage",
+          "stages": [
+            "act-3",
+            "act-5"
+          ]
+        },
+        {
+          "to": "antonio",
+          "label": "indebted to",
+          "kind": "love",
+          "stages": [
+            "act-1",
+            "act-4"
+          ]
+        },
+        {
+          "to": "gratiano",
+          "label": "companion of",
+          "kind": "ally"
+        }
       ]
     },
     {
@@ -154,10 +362,30 @@
       "summary": "She robs her father, sells her mother's ring for a monkey, and converts. Shakespeare gives her the discomfort as well as the escape: she is ashamed of her boy's clothes, and in the last act she and Lorenzo exchange a string of stories about lovers whose nights ended badly.",
       "clue": "She leaves her father's house in a boy's coat with his ducats in a casket, and spends the last act naming lovers who came to grief.",
       "firstAppearance": "2.3",
-      "traits": ["decisive", "uneasy", "assimilated at a price"],
+      "traits": [
+        "decisive",
+        "uneasy",
+        "assimilated at a price"
+      ],
       "relationships": [
-        { "to": "shylock", "label": "daughter of", "kind": "family", "stages": ["act-2", "act-3"] },
-        { "to": "lorenzo", "label": "elopes with", "kind": "love", "stages": ["act-2", "act-5"] }
+        {
+          "to": "shylock",
+          "label": "daughter of",
+          "kind": "family",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "lorenzo",
+          "label": "elopes with",
+          "kind": "love",
+          "stages": [
+            "act-2",
+            "act-5"
+          ]
+        }
       ]
     },
     {
@@ -167,10 +395,25 @@
       "summary": "He plans the elopement as a raid, is pleased about the gold, and then speaks the play's most beautiful verse about music and the harmony of the spheres. The distance between those two facts is one of the things the last act is for.",
       "clue": "He organises a theft and an elopement in the same breath, and later explains that a man with no music in him is fit for treasons.",
       "firstAppearance": "1.1",
-      "traits": ["lyrical", "opportunist"],
+      "traits": [
+        "lyrical",
+        "opportunist"
+      ],
       "relationships": [
-        { "to": "jessica", "label": "elopes with", "kind": "love", "stages": ["act-2", "act-5"] },
-        { "to": "bassanio", "label": "friend of", "kind": "ally" }
+        {
+          "to": "jessica",
+          "label": "elopes with",
+          "kind": "love",
+          "stages": [
+            "act-2",
+            "act-5"
+          ]
+        },
+        {
+          "to": "bassanio",
+          "label": "friend of",
+          "kind": "ally"
+        }
       ]
     },
     {
@@ -180,10 +423,26 @@
       "summary": "She doubles Portia at every level: she gives the sceptical answer in 1.2, marries the friend rather than the principal, disguises herself as a clerk, and runs the same trick with the same ring. The play works by these pairings, and she is the clearest of them.",
       "clue": "She dresses as a lawyer's clerk, marries the friend rather than the hero, and plays the ring trick a second time.",
       "firstAppearance": "1.2",
-      "traits": ["dry", "practical", "a shadow of her mistress"],
+      "traits": [
+        "dry",
+        "practical",
+        "a shadow of her mistress"
+      ],
       "relationships": [
-        { "to": "portia", "label": "attends and abets", "kind": "service" },
-        { "to": "gratiano", "label": "married to", "kind": "marriage", "stages": ["act-3", "act-5"] }
+        {
+          "to": "portia",
+          "label": "attends and abets",
+          "kind": "service"
+        },
+        {
+          "to": "gratiano",
+          "label": "married to",
+          "kind": "marriage",
+          "stages": [
+            "act-3",
+            "act-5"
+          ]
+        }
       ]
     },
     {
@@ -193,11 +452,34 @@
       "summary": "Bassanio says he speaks an infinite deal of nothing, and for three acts that is a joke about a harmless talker. In the courtroom he becomes the voice that cheers each reversal and asks for Shylock to be hanged, which is where the comic licence stops being comic.",
       "clue": "A friend says he speaks an infinite deal of nothing; in court he applauds every turn of the verdict and offers the defeated man a free halter.",
       "firstAppearance": "1.1",
-      "traits": ["loud", "coarse", "cruel when permitted"],
+      "traits": [
+        "loud",
+        "coarse",
+        "cruel when permitted"
+      ],
       "relationships": [
-        { "to": "bassanio", "label": "follower of", "kind": "ally" },
-        { "to": "nerissa", "label": "married to", "kind": "marriage", "stages": ["act-3", "act-5"] },
-        { "to": "shylock", "label": "jeers at", "kind": "enemy", "stages": ["act-4"] }
+        {
+          "to": "bassanio",
+          "label": "follower of",
+          "kind": "ally"
+        },
+        {
+          "to": "nerissa",
+          "label": "married to",
+          "kind": "marriage",
+          "stages": [
+            "act-3",
+            "act-5"
+          ]
+        },
+        {
+          "to": "shylock",
+          "label": "jeers at",
+          "kind": "enemy",
+          "stages": [
+            "act-4"
+          ]
+        }
       ]
     }
   ],
@@ -286,11 +568,18 @@
       "stage": "act-1",
       "context": "The opening line of the play, to Salarino and Salanio on the Rialto.",
       "analysis": "A comedy begins with a man announcing an unexplained depression, and the play never supplies the explanation — his friends propose his ships and then love, and he denies both. The refusal to account for it leaves a hole at the centre of the title role that every production has to fill with something.",
-      "themes": ["friendship"],
+      "themes": [
+        "friendship"
+      ],
       "techniques": [],
-      "characters": ["antonio"],
+      "characters": [
+        "antonio"
+      ],
       "source": "Globe/Moby text, 1.1.1",
-      "cloze": ["sooth", "sad"]
+      "cloze": [
+        "sooth",
+        "sad"
+      ]
     },
     {
       "id": "will-of-a-dead-father",
@@ -300,11 +589,23 @@
       "stage": "act-1",
       "context": "In prose to Nerissa, listing the suitors she cannot refuse.",
       "analysis": "The sentence turns on one word used twice: 'will' as desire and 'will' as legal document. Portia's problem is stated as a pun, which is a warning about the kind of play this is — the trial in Act IV will also be won by a word that carries two meanings at once.",
-      "themes": ["value", "disguise"],
-      "techniques": ["legal-quibble", "prose-and-verse"],
-      "characters": ["portia", "nerissa"],
+      "themes": [
+        "value",
+        "disguise"
+      ],
+      "techniques": [
+        "legal-quibble",
+        "prose-and-verse"
+      ],
+      "characters": [
+        "portia",
+        "nerissa"
+      ],
       "source": "Globe/Moby text, 1.2.213-214",
-      "cloze": ["living", "dead"]
+      "cloze": [
+        "living",
+        "dead"
+      ]
     },
     {
       "id": "sufferance-badge",
@@ -314,11 +615,19 @@
       "stage": "act-1",
       "context": "Answering Antonio's request for a loan by recalling how Antonio has treated him.",
       "analysis": "A badge in Venice was not a metaphor: Jews were required to wear identifying marks, and Shylock takes that fact and makes endurance itself the uniform. The shrug is the detail that does the work — a small physical gesture, repeated over years, standing in for everything he has swallowed.",
-      "themes": ["antisemitism"],
+      "themes": [
+        "antisemitism"
+      ],
       "techniques": [],
-      "characters": ["shylock", "antonio"],
+      "characters": [
+        "shylock",
+        "antonio"
+      ],
       "source": "Globe/Moby text, 1.3.109-110",
-      "cloze": ["sufferance", "badge"]
+      "cloze": [
+        "sufferance",
+        "badge"
+      ]
     },
     {
       "id": "hath-a-dog-money",
@@ -328,11 +637,22 @@
       "stage": "act-1",
       "context": "Quoting back to Antonio the names Antonio has called him.",
       "analysis": "He performs the insult rather than complaining of it, putting Antonio's own vocabulary into a speech Antonio has to stand and listen to. Quotation marks are a weapon here: the abuse is returned intact, with the arithmetic of the loan sitting inside it.",
-      "themes": ["antisemitism", "bonds"],
-      "techniques": ["rhetorical-question"],
-      "characters": ["shylock", "antonio"],
+      "themes": [
+        "antisemitism",
+        "bonds"
+      ],
+      "techniques": [
+        "rhetorical-question"
+      ],
+      "characters": [
+        "shylock",
+        "antonio"
+      ],
       "source": "Globe/Moby text, 1.3.121-122",
-      "cloze": ["dog", "cur"]
+      "cloze": [
+        "dog",
+        "cur"
+      ]
     },
     {
       "id": "call-thee-so-again",
@@ -342,11 +662,20 @@
       "stage": "act-1",
       "context": "His reply, immediately before asking for the loan anyway.",
       "analysis": "He does not deny a word of the account; he promises to repeat it. The couplet is the reason the bond is not simply a piece of villainy — the borrower has just told the lender to his face that nothing will change, and then asks to be lent the money as to an enemy.",
-      "themes": ["antisemitism", "bonds"],
+      "themes": [
+        "antisemitism",
+        "bonds"
+      ],
       "techniques": [],
-      "characters": ["antonio", "shylock"],
+      "characters": [
+        "antonio",
+        "shylock"
+      ],
       "source": "Globe/Moby text, 1.3.129-130",
-      "cloze": ["spit", "spurn"]
+      "cloze": [
+        "spit",
+        "spurn"
+      ]
     },
     {
       "id": "merry-bond",
@@ -356,11 +685,19 @@
       "stage": "act-1",
       "context": "Sending Antonio to the notary to seal the agreement.",
       "analysis": "'Merry' is doing a great deal of work, and nobody in the scene challenges it. The forfeit is framed as a joke between men who have just exchanged threats, which is exactly what allows Antonio to sign it: a penalty that cannot be meant does not need to be feared.",
-      "themes": ["bonds"],
+      "themes": [
+        "bonds"
+      ],
       "techniques": [],
-      "characters": ["shylock", "antonio"],
+      "characters": [
+        "shylock",
+        "antonio"
+      ],
       "source": "Globe/Moby text, 1.3.174",
-      "cloze": ["merry", "bond"]
+      "cloze": [
+        "merry",
+        "bond"
+      ]
     },
     {
       "id": "gentle-jew",
@@ -370,11 +707,22 @@
       "stage": "act-1",
       "context": "As Shylock leaves to fetch the ducats.",
       "analysis": "'Gentle' and 'gentile' were near-homophones, so the compliment is also a joke about conversion — and the joke turns out to be a prophecy the court will enforce at knife-point in Act IV. Antonio can praise the man only by imagining him becoming someone else.",
-      "themes": ["antisemitism", "mercy"],
-      "techniques": ["biblical-allusion"],
-      "characters": ["antonio", "shylock"],
+      "themes": [
+        "antisemitism",
+        "mercy"
+      ],
+      "techniques": [
+        "biblical-allusion"
+      ],
+      "characters": [
+        "antonio",
+        "shylock"
+      ],
       "source": "Globe/Moby text, 1.3.179-180",
-      "cloze": ["gentle", "Christian"]
+      "cloze": [
+        "gentle",
+        "Christian"
+      ]
     },
     {
       "id": "house-is-hell",
@@ -384,11 +732,22 @@
       "stage": "act-2",
       "context": "Saying goodbye to Launcelot, who is leaving her father's service.",
       "analysis": "Her complaint is not cruelty but dullness — the house is hell because it is tedious, and the clown made it bearable. It is the only account the play gives of what living with Shylock was like, and it comes from someone about to rob him.",
-      "themes": ["antisemitism", "value"],
-      "techniques": ["prose-and-verse"],
-      "characters": ["jessica", "shylock"],
+      "themes": [
+        "antisemitism",
+        "value"
+      ],
+      "techniques": [
+        "prose-and-verse"
+      ],
+      "characters": [
+        "jessica",
+        "shylock"
+      ],
       "source": "Globe/Moby text, 2.3.2-3",
-      "cloze": ["hell", "devil"]
+      "cloze": [
+        "hell",
+        "devil"
+      ]
     },
     {
       "id": "all-that-glitters",
@@ -398,11 +757,20 @@
       "stage": "act-2",
       "context": "Reading the scroll found inside the golden casket, beside a skull.",
       "analysis": "The verse is in short rhyming lines, a nursery metre for a lesson everybody claims to know already, and the casket answers in the first person as though the gold were speaking. Morocco has just argued himself into gold by reasoning about what the world values — the scroll's point is that he was reasoning at all.",
-      "themes": ["value"],
-      "techniques": ["double-plot"],
-      "characters": ["portia"],
+      "themes": [
+        "value"
+      ],
+      "techniques": [
+        "double-plot"
+      ],
+      "characters": [
+        "portia"
+      ],
       "source": "Globe/Moby text, 2.7.66-69",
-      "cloze": ["glitters", "outside"]
+      "cloze": [
+        "glitters",
+        "outside"
+      ]
     },
     {
       "id": "my-daughter-my-ducats",
@@ -412,11 +780,22 @@
       "stage": "act-2",
       "context": "Salanio and Salarino imitating Shylock's behaviour in the street after Jessica's flight.",
       "analysis": "The audience never sees Shylock discover the loss; it is reported as an impersonation by a man doing the voice for a laugh. Whether the alternation of daughter and ducats is grief or greed depends entirely on how far you trust the reporter, and the play deliberately gives you no other witness.",
-      "themes": ["antisemitism", "value"],
-      "techniques": ["double-plot"],
-      "characters": ["shylock", "jessica"],
+      "themes": [
+        "antisemitism",
+        "value"
+      ],
+      "techniques": [
+        "double-plot"
+      ],
+      "characters": [
+        "shylock",
+        "jessica"
+      ],
       "source": "Globe/Moby text, 2.8.15-16",
-      "cloze": ["daughter", "ducats"]
+      "cloze": [
+        "daughter",
+        "ducats"
+      ]
     },
     {
       "id": "hath-not-a-jew",
@@ -426,11 +805,22 @@
       "stage": "act-3",
       "context": "In the street, to Salarino, who has just asked what a pound of flesh is good for.",
       "analysis": "The argument is built entirely on the body, not on doctrine, and the repetitions of 'the same' make the shared ground impossible to refuse. It is in prose, which is why it sounds like a man talking rather than a set speech, and its logic is deliberately unfinished — everything so far has been about suffering, and the next sentence will apply the same equality to revenge.",
-      "themes": ["antisemitism"],
-      "techniques": ["rhetorical-question", "prose-and-verse", "flesh-imagery"],
-      "characters": ["shylock"],
+      "themes": [
+        "antisemitism"
+      ],
+      "techniques": [
+        "rhetorical-question",
+        "prose-and-verse",
+        "flesh-imagery"
+      ],
+      "characters": [
+        "shylock"
+      ],
       "source": "Globe/Moby text, 3.1.53-59",
-      "cloze": ["eyes", "same"]
+      "cloze": [
+        "eyes",
+        "same"
+      ]
     },
     {
       "id": "villany-you-teach-me",
@@ -440,11 +830,21 @@
       "stage": "act-3",
       "context": "The end of the same speech, after the questions about bleeding and laughing.",
       "analysis": "He claims to be a pupil, which puts the responsibility on the teachers and leaves him doing the thing anyway. 'Better the instruction' is the sentence's cold centre: he intends not merely to match Christian revenge but to improve on it, and the play holds him to that promise in the courtroom.",
-      "themes": ["antisemitism", "mercy"],
-      "techniques": ["prose-and-verse"],
-      "characters": ["shylock"],
+      "themes": [
+        "antisemitism",
+        "mercy"
+      ],
+      "techniques": [
+        "prose-and-verse"
+      ],
+      "characters": [
+        "shylock"
+      ],
       "source": "Globe/Moby text, 3.1.66-68",
-      "cloze": ["villany", "instruction"]
+      "cloze": [
+        "villany",
+        "instruction"
+      ]
     },
     {
       "id": "deceived-with-ornament",
@@ -454,11 +854,22 @@
       "stage": "act-3",
       "context": "Deliberating in front of the three caskets at Belmont.",
       "analysis": "He wins by distrusting appearances, having arrived in Belmont on borrowed money precisely in order to look the part. 'Still' means always, and the line indicts a world Bassanio has been working rather successfully; the play lets him say the true thing without noticing that it applies to him.",
-      "themes": ["value", "disguise"],
-      "techniques": ["double-plot"],
-      "characters": ["bassanio", "portia"],
+      "themes": [
+        "value",
+        "disguise"
+      ],
+      "techniques": [
+        "double-plot"
+      ],
+      "characters": [
+        "bassanio",
+        "portia"
+      ],
       "source": "Globe/Moby text, 3.2.76-77",
-      "cloze": ["outward", "ornament"]
+      "cloze": [
+        "outward",
+        "ornament"
+      ]
     },
     {
       "id": "which-is-the-merchant",
@@ -468,11 +879,23 @@
       "stage": "act-4",
       "context": "Her first words on entering the court in the gown of a doctor of laws.",
       "analysis": "The question establishes her impartiality and is also unanswerable by sight, which is the play's point about what Venice thinks it can see. She already knows which is which, so the line is a performance of neutrality by the one person in the room who has come to win.",
-      "themes": ["disguise", "antisemitism"],
-      "techniques": ["legal-quibble"],
-      "characters": ["portia", "shylock", "antonio"],
+      "themes": [
+        "disguise",
+        "antisemitism"
+      ],
+      "techniques": [
+        "legal-quibble"
+      ],
+      "characters": [
+        "portia",
+        "shylock",
+        "antonio"
+      ],
       "source": "Globe/Moby text, 4.1.178",
-      "cloze": ["merchant", "Jew"]
+      "cloze": [
+        "merchant",
+        "Jew"
+      ]
     },
     {
       "id": "quality-of-mercy",
@@ -482,11 +905,22 @@
       "stage": "act-4",
       "context": "Answering Shylock's question: on what compulsion must he be merciful?",
       "analysis": "The whole speech depends on mercy being uncompelled, which is a direct answer to the word 'compulsion' in Shylock's question. What follows in the scene contradicts it: the court will compel mercy out of Shylock at the price of his religion, and the word for what he receives will still be mercy.",
-      "themes": ["mercy"],
-      "techniques": ["biblical-allusion", "prose-and-verse"],
-      "characters": ["portia", "shylock"],
+      "themes": [
+        "mercy"
+      ],
+      "techniques": [
+        "biblical-allusion",
+        "prose-and-verse"
+      ],
+      "characters": [
+        "portia",
+        "shylock"
+      ],
       "source": "Globe/Moby text, 4.1.191-194",
-      "cloze": ["mercy", "strain'd"]
+      "cloze": [
+        "mercy",
+        "strain'd"
+      ]
     },
     {
       "id": "my-deeds-upon-my-head",
@@ -496,11 +930,22 @@
       "stage": "act-4",
       "context": "Refusing Portia's appeal and asking for judgment on the bond.",
       "analysis": "He takes the consequences onto himself in the words of a formula that Shakespeare's audience would have heard as an echo of the Gospel account of Christ's condemnation, and which was used for centuries to justify persecution. Giving Shylock that sentence is the harshest thing the play does to him, and he says it in the act of asking only for what he is owed.",
-      "themes": ["mercy", "antisemitism", "bonds"],
-      "techniques": ["biblical-allusion"],
-      "characters": ["shylock"],
+      "themes": [
+        "mercy",
+        "antisemitism",
+        "bonds"
+      ],
+      "techniques": [
+        "biblical-allusion"
+      ],
+      "characters": [
+        "shylock"
+      ],
       "source": "Globe/Moby text, 4.1.213",
-      "cloze": ["deeds", "law"]
+      "cloze": [
+        "deeds",
+        "law"
+      ]
     },
     {
       "id": "tarry-a-little",
@@ -510,11 +955,23 @@
       "stage": "act-4",
       "context": "Stopping Shylock as he prepares to cut.",
       "analysis": "She has let the case run to the point of the knife before producing the objection, which means the trap was set several hundred lines earlier. Her method is not mercy but a stricter literalism than Shylock's own: he asked for what the words say, and she gives him exactly that and no more.",
-      "themes": ["mercy", "bonds"],
-      "techniques": ["legal-quibble", "flesh-imagery"],
-      "characters": ["portia", "shylock"],
+      "themes": [
+        "mercy",
+        "bonds"
+      ],
+      "techniques": [
+        "legal-quibble",
+        "flesh-imagery"
+      ],
+      "characters": [
+        "portia",
+        "shylock"
+      ],
       "source": "Globe/Moby text, 4.1.316-318",
-      "cloze": ["Tarry", "blood"]
+      "cloze": [
+        "Tarry",
+        "blood"
+      ]
     },
     {
       "id": "you-take-my-life",
@@ -524,11 +981,20 @@
       "stage": "act-4",
       "context": "After the court has divided his estate and offered to commute the fine.",
       "analysis": "The repetition of 'take' four times in four lines turns the verdict into an inventory. He refuses the distinction the court is congratulating itself on — between killing a man and removing his livelihood — and the play gives him the argument without letting him win it.",
-      "themes": ["mercy", "value", "antisemitism"],
+      "themes": [
+        "mercy",
+        "value",
+        "antisemitism"
+      ],
       "techniques": [],
-      "characters": ["shylock"],
+      "characters": [
+        "shylock"
+      ],
       "source": "Globe/Moby text, 4.1.388-391",
-      "cloze": ["house", "means"]
+      "cloze": [
+        "house",
+        "means"
+      ]
     },
     {
       "id": "he-presently-become-a-christian",
@@ -538,11 +1004,20 @@
       "stage": "act-4",
       "context": "Stating his terms for giving up his half of Shylock's goods.",
       "analysis": "It is called a favour, and it is attached as a condition to a pardon Shylock cannot refuse. 'Presently' means at once: the man who has just been prevented from taking a pound of flesh is required to change religion on the spot, and the scene treats this as the merciful outcome.",
-      "themes": ["mercy", "antisemitism"],
+      "themes": [
+        "mercy",
+        "antisemitism"
+      ],
       "techniques": [],
-      "characters": ["antonio", "shylock"],
+      "characters": [
+        "antonio",
+        "shylock"
+      ],
       "source": "Globe/Moby text, 4.1.400-401",
-      "cloze": ["favour", "Christian"]
+      "cloze": [
+        "favour",
+        "Christian"
+      ]
     },
     {
       "id": "i-am-content",
@@ -552,11 +1027,19 @@
       "stage": "act-4",
       "context": "Asked by Portia whether he accepts the court's terms.",
       "analysis": "Three words, and then four more lines asking to be allowed to leave because he is not well. Antonio had used the same phrase twelve lines earlier while dictating the terms, so the play puts the identical sentence in two mouths in one scene and lets the difference between them stand without comment.",
-      "themes": ["mercy", "antisemitism"],
+      "themes": [
+        "mercy",
+        "antisemitism"
+      ],
       "techniques": [],
-      "characters": ["shylock", "portia"],
+      "characters": [
+        "shylock",
+        "portia"
+      ],
       "source": "Globe/Moby text, 4.1.408",
-      "cloze": ["content"]
+      "cloze": [
+        "content"
+      ]
     },
     {
       "id": "moonlight-sleeps",
@@ -566,11 +1049,22 @@
       "stage": "act-5",
       "context": "In the garden at Belmont with Jessica, waiting for Portia's return.",
       "analysis": "The last act opens by changing the weather completely: after four hundred lines of courtroom prose the play produces its most lyrical verse, and does it in the mouth of the man who organised the elopement and the theft. Shakespeare buys the comedy its ending with music, and the person who says she is never merry when she hears it is sitting next to him.",
-      "themes": ["friendship", "value"],
-      "techniques": ["prose-and-verse"],
-      "characters": ["lorenzo", "jessica"],
+      "themes": [
+        "friendship",
+        "value"
+      ],
+      "techniques": [
+        "prose-and-verse"
+      ],
+      "characters": [
+        "lorenzo",
+        "jessica"
+      ],
       "source": "Globe/Moby text, 5.1.61-63",
-      "cloze": ["moonlight", "music"]
+      "cloze": [
+        "moonlight",
+        "music"
+      ]
     },
     {
       "id": "never-merry",
@@ -580,31 +1074,115 @@
       "stage": "act-5",
       "context": "Her reply to Lorenzo's account of music's power over wild animals.",
       "analysis": "It is the last thing she says in the play. Lorenzo talks her out of it immediately, explaining that attentiveness only looks like sadness, and she does not answer — a silence that productions can play as agreement, exhaustion or something colder.",
-      "themes": ["antisemitism", "friendship"],
+      "themes": [
+        "antisemitism",
+        "friendship"
+      ],
       "techniques": [],
-      "characters": ["jessica", "lorenzo"],
+      "characters": [
+        "jessica",
+        "lorenzo"
+      ],
       "source": "Globe/Moby text, 5.1.76",
-      "cloze": ["merry", "music"]
+      "cloze": [
+        "merry",
+        "music"
+      ]
     }
   ],
   "timeline": [
-    { "year": 1558, "label": "Il Pecorone reaches print", "detail": "Ser Giovanni Fiorentino's fourteenth-century collection contains the bond, the trial and the lady disguised as a lawyer.", "kind": "context" },
-    { "year": 1594, "label": "Roderigo Lopez is executed in London", "detail": "The queen's Portuguese physician, of Jewish descent, was convicted of conspiracy; the trial fed a wave of public feeling in the years just before the play.", "kind": "context" },
-    { "year": 1598, "label": "Entered in the Stationers' Register", "detail": "Registered to James Roberts as the Merchant of Venice, two years before it was printed.", "kind": "work" },
-    { "year": 1600, "label": "First Quarto", "detail": "The earliest printed text, and the basis of most modern editions.", "kind": "work" },
-    { "year": 1605, "label": "Performed at court", "detail": "The first recorded performance, on 10 February, with a repeat before the court two days later.", "kind": "reception" },
-    { "year": 1623, "label": "First Folio", "detail": "Printed among the comedies, following the quarto text closely.", "kind": "work" },
-    { "year": 1741, "label": "Charles Macklin plays Shylock at Drury Lane", "detail": "He abandoned the comic red wig of the Restoration stage and played the part seriously, which changed the play's reputation.", "kind": "reception" },
-    { "year": 1814, "label": "Edmund Kean's London debut as Shylock", "detail": "A performance that made the moneylender a figure of tragic force rather than a stage villain.", "kind": "reception" },
-    { "year": 1879, "label": "Henry Irving's Shylock at the Lyceum", "detail": "Irving's dignified, sympathetic reading dominated the late Victorian stage and shaped expectations for decades.", "kind": "reception" },
-    { "year": 2004, "label": "Michael Radford's film", "detail": "A screen version set in a carefully reconstructed Venice, with Al Pacino as Shylock and an opening sequence about the ghetto.", "kind": "reception" }
+    {
+      "year": 1558,
+      "label": "Il Pecorone reaches print",
+      "detail": "Ser Giovanni Fiorentino's fourteenth-century collection contains the bond, the trial and the lady disguised as a lawyer.",
+      "kind": "context"
+    },
+    {
+      "year": 1594,
+      "label": "Roderigo Lopez is executed in London",
+      "detail": "The queen's Portuguese physician, of Jewish descent, was convicted of conspiracy; the trial fed a wave of public feeling in the years just before the play.",
+      "kind": "context"
+    },
+    {
+      "year": 1598,
+      "label": "Entered in the Stationers' Register",
+      "detail": "Registered to James Roberts as the Merchant of Venice, two years before it was printed.",
+      "kind": "work"
+    },
+    {
+      "year": 1600,
+      "label": "First Quarto",
+      "detail": "The earliest printed text, and the basis of most modern editions.",
+      "kind": "work"
+    },
+    {
+      "year": 1605,
+      "label": "Performed at court",
+      "detail": "The first recorded performance, on 10 February, with a repeat before the court two days later.",
+      "kind": "reception"
+    },
+    {
+      "year": 1623,
+      "label": "First Folio",
+      "detail": "Printed among the comedies, following the quarto text closely.",
+      "kind": "work"
+    },
+    {
+      "year": 1741,
+      "label": "Charles Macklin plays Shylock at Drury Lane",
+      "detail": "He abandoned the comic red wig of the Restoration stage and played the part seriously, which changed the play's reputation.",
+      "kind": "reception"
+    },
+    {
+      "year": 1814,
+      "label": "Edmund Kean's London debut as Shylock",
+      "detail": "A performance that made the moneylender a figure of tragic force rather than a stage villain.",
+      "kind": "reception"
+    },
+    {
+      "year": 1879,
+      "label": "Henry Irving's Shylock at the Lyceum",
+      "detail": "Irving's dignified, sympathetic reading dominated the late Victorian stage and shaped expectations for decades.",
+      "kind": "reception"
+    },
+    {
+      "year": 2004,
+      "label": "Michael Radford's film",
+      "detail": "A screen version set in a carefully reconstructed Venice, with Al Pacino as Shylock and an opening sequence about the ghetto.",
+      "kind": "reception"
+    }
   ],
   "places": [
-    { "name": "Venice", "lat": 45.4408, "lon": 12.3155, "note": "The city of the bond, the street insults and the court of justice." },
-    { "name": "The Rialto", "lat": 45.438, "lon": 12.3358, "note": "The commercial exchange where news of ships travels and where Antonio has abused Shylock in public." },
-    { "name": "Genoa", "lat": 44.4056, "lon": 8.9463, "note": "Where Tubal reports Jessica spending her father's ducats and trading her mother's ring." },
-    { "name": "Padua", "lat": 45.4064, "lon": 11.8768, "note": "Home of Doctor Bellario, whose legal opinion and borrowed credentials get Portia into the courtroom." },
-    { "name": "Tripoli", "lat": 32.8872, "lon": 13.1913, "note": "One of the ports named for Antonio's argosies, and the destination of the ship reported lost." }
+    {
+      "name": "Venice",
+      "lat": 45.4408,
+      "lon": 12.3155,
+      "note": "The city of the bond, the street insults and the court of justice."
+    },
+    {
+      "name": "The Rialto",
+      "lat": 45.438,
+      "lon": 12.3358,
+      "note": "The commercial exchange where news of ships travels and where Antonio has abused Shylock in public."
+    },
+    {
+      "name": "Genoa",
+      "lat": 44.4056,
+      "lon": 8.9463,
+      "note": "Where Tubal reports Jessica spending her father's ducats and trading her mother's ring."
+    },
+    {
+      "name": "Padua",
+      "lat": 45.4064,
+      "lon": 11.8768,
+      "note": "Home of Doctor Bellario, whose legal opinion and borrowed credentials get Portia into the courtroom."
+    },
+    {
+      "name": "Tripoli",
+      "lat": 32.8872,
+      "lon": 13.1913,
+      "note": "One of the ports named for Antonio's argosies, and the destination of the ship reported lost."
+    }
   ],
   "criticalViews": [
     {
@@ -677,11 +1255,51 @@
     "The play is classed as a comedy. What would have to change for it to be a tragedy?"
   ],
   "related": [
-    { "href": "/books/othello/", "why": "The other Venetian play, and the other outsider whom the city uses and then discards." },
-    { "href": "/books/measure-for-measure/", "why": "A comedy that also stops for a long argument about mercy and the letter of the law, and also ends in silence." },
-    { "href": "/books/twelfth-night/", "why": "Another heroine who puts on a man's clothes, with the same interest in what a disguise makes possible." },
-    { "href": "/books/as-you-like-it/", "why": "The other great breeches role of these years, and a comic world built on the same device pushed in the opposite direction." },
-    { "href": "/books/much-ado-about-nothing/", "why": "A comedy of the same period that turns for a whole act into something close to tragedy before recovering." }
+    {
+      "href": "/books/othello/",
+      "why": "The other Venetian play, and the other outsider whom the city uses and then discards."
+    },
+    {
+      "href": "/books/measure-for-measure/",
+      "why": "A comedy that also stops for a long argument about mercy and the letter of the law, and also ends in silence."
+    },
+    {
+      "href": "/books/twelfth-night/",
+      "why": "Another heroine who puts on a man's clothes, with the same interest in what a disguise makes possible."
+    },
+    {
+      "href": "/books/as-you-like-it/",
+      "why": "The other great breeches role of these years, and a comic world built on the same device pushed in the opposite direction."
+    },
+    {
+      "href": "/books/much-ado-about-nothing/",
+      "why": "A comedy of the same period that turns for a whole act into something close to tragedy before recovering."
+    }
   ],
-  "videos": []
+  "videos": [
+    {
+      "title": "Who is Shylock? | The Merchant of Venice (2022) | Winter 2021/22 | Shakespeare's Globe",
+      "provider": "youtube-nocookie",
+      "id": "Xh00-buLu0c",
+      "url": "https://www.youtube.com/watch?v=Xh00-buLu0c",
+      "note": "The actor playing Shylock at the Globe talks about the part and the difficulties the play raises.",
+      "source": "Shakespeare's Globe"
+    },
+    {
+      "title": "Act 4 Scene 1 | The Merchant of Venice | 2015 | Royal Shakespeare Company",
+      "provider": "youtube-nocookie",
+      "id": "sCkhgfDQUzI",
+      "url": "https://www.youtube.com/watch?v=sCkhgfDQUzI",
+      "note": "The RSC company performs the courtroom scene from its 2015 production.",
+      "source": "Royal Shakespeare Company"
+    },
+    {
+      "title": "The Merchant of Venice Synopsis | Royal Shakespeare Company",
+      "provider": "youtube-nocookie",
+      "id": "VA6yysHox98",
+      "url": "https://www.youtube.com/watch?v=VA6yysHox98",
+      "note": "Actors from an RSC touring production tell the story of the play.",
+      "source": "Royal Shakespeare Company"
+    }
+  ]
 }
