@@ -11,6 +11,10 @@ const { renderToolkit } = require('./study-toolkit');
 
 const root = process.cwd();
 const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
+const navigationVersion = require('crypto').createHash('sha256')
+  .update(fs.readFileSync(path.join(root, 'assets/navigation.css')))
+  .update(fs.readFileSync(path.join(root, 'assets/astor/palette.mjs')))
+  .digest('hex').slice(0, 10);
 const outDir = path.join(root, 'dist');
 const SITE_URL = 'https://astorlibrary.com';
 const discoveryFile = path.join(root, 'assets', 'content-index.json');
@@ -1116,6 +1120,10 @@ function addGlobalNavigation(html, source) {
   if (!html.includes('/assets/astor/palette.mjs')) {
     html = html.replace('</head>', '<script type="module" src="/assets/astor/palette.mjs"></script></head>');
   }
+  // Version both assets together so an offline cache cannot mix old search
+  // behaviour with the current shared navigation styles.
+  html = html.replace(/(href=["'])\/assets\/navigation\.css(?:\?[^"']*)?(["'])/g, '$1/assets/navigation.css?v=' + navigationVersion + '$2');
+  html = html.replace(/(src=["'])\/assets\/astor\/palette\.mjs(?:\?[^"']*)?(["'])/g, '$1/assets/astor/palette.mjs?v=' + navigationVersion + '$2');
   return html;
 }
 
