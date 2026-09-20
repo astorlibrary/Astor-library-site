@@ -129,6 +129,13 @@ function makeMap(maplibregl, container, options, failed) {
   window.setTimeout(watchSize, 400);
   if ('ResizeObserver' in window) new ResizeObserver(() => { if (!gone) { try { map.resize(); } catch { /* not ready */ } } }).observe(container);
   container.addEventListener('webglcontextlost', giveUpSafely);
+
+  // A map built while the tab was in the background has drawn nothing. Draw
+  // it when the reader comes back to it.
+  document.addEventListener('visibilitychange', () => {
+    if (gone || document.visibilityState !== 'visible') return;
+    try { map.resize(); map.triggerRepaint(); } catch { /* not ready yet */ }
+  });
   return map;
 }
 
