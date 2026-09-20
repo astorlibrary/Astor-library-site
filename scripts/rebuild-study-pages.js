@@ -426,7 +426,7 @@ function buildPages() {
     mount: `  <section class="astor-dash-grid" id="astor-dash" aria-label="Your reading at a glance"></section>
   <section class="section-title" id="saved"><p class="kicker">Saved</p><h2>Books you have kept.</h2><p>Saved from any book page with the button in the study toolkit.</p></section>
   <div id="astor-saved"></div>
-  <section class="section-title" id="progress"><p class="kicker">Progress</p><h2>How far through.</h2><p>Marked by you, act by act or section by section, rather than guessed from how far you scrolled.</p></section>
+  <section class="section-title" id="progress"><p class="kicker">Progress</p><h2>How far through.</h2><p>What you have ticked off, act by act.</p></section>
   <div id="astor-progress"></div>
   <section class="section-title" id="recent"><p class="kicker">Recently viewed</p><h2>Where you have been.</h2><p>The last pages you opened on this device.</p></section>
   <div id="astor-recent"></div>

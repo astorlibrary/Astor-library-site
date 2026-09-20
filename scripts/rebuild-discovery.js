@@ -1048,14 +1048,14 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<a href="/study/"><span>Study editions</span><p>Summaries, context, quotations, critical interpretations and essay support.</p></a>' +
   '<a href="/resources/"><span>Free guides</span><p>Online guides to individual texts, passages, themes and historical contexts.</p></a>' +
   '<a href="/reading-routes/"><span>Cross-period reading lists</span><p>Book lists organised around home, freedom, fear, power, evidence, voice and knowledge.</p></a>' +
-  '<a href="/explore/quotations/"><span>Quotation explorer</span><p>Every checked quotation in the catalogue, filterable by theme, technique, character, period and form.</p></a>' +
-  '<a href="/explore/timeline/"><span>Literature timeline</span><p>Each book set against its historical moment and against everything else being written at the time.</p></a>' +
-  '<a href="/explore/characters/"><span>Character maps</span><p>Relationship diagrams that redraw for each act, so a household can be watched coming apart in order.</p></a>' +
-  '<a href="/explore/themes/"><span>Themes across the library</span><p>Each shared theme set out book by book: what every title makes of it, and the lines that carry it.</p></a>' +
-  '<a href="/explore/techniques/"><span>Technique glossary</span><p>Literary terms defined once and then shown at work in particular lines across the library.</p></a>' +
-  '<a href="/explore/map/"><span>Map of settings</span><p>Where the books happen, from Inverness and Thornfield to Transylvania and the Pequod’s track.</p></a>' +
-  '<a href="/explore/compare/"><span>Compare two texts</span><p>Shared themes and techniques set side by side, with paired quotations for a comparative essay.</p></a>' +
-  '<a href="/play/"><span>Play &amp; revise</span><p>Nine revision games, flashcard decks and an essay planner, all built from the same checked material.</p></a>' +
+  '<a href="/explore/quotations/"><span>Quotation explorer</span><p>Every quotation in the catalogue. Filter by book, theme, character or period.</p></a>' +
+  '<a href="/explore/timeline/"><span>Literature timeline</span><p>Every book on one scale, beside everything written at the same time.</p></a>' +
+  '<a href="/explore/characters/"><span>Character maps</span><p>Who is tied to whom, and how it changes act by act.</p></a>' +
+  '<a href="/explore/themes/"><span>Themes across the library</span><p>Themes the books share, set out book by book.</p></a>' +
+  '<a href="/explore/techniques/"><span>Technique glossary</span><p>What each term means, with a line from a book using it.</p></a>' +
+  '<a href="/explore/map/"><span>Map of settings</span><p>Where the books are set, from Inverness to Transylvania.</p></a>' +
+  '<a href="/explore/compare/"><span>Compare two texts</span><p>Two books side by side, with paired quotations.</p></a>' +
+  '<a href="/play/"><span>Play &amp; revise</span><p>Nine revision games, flashcards and an essay planner.</p></a>' +
   '<a href="/for-teachers/"><span>For teachers</span><p>Lesson starters, printable worksheets, discussion sheets and a projector mode.</p></a>' +
   '</section>' +
   '<section class="explore-results" aria-label="Search results">' + entryCards + '</section>' +
