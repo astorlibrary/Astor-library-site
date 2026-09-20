@@ -29,7 +29,7 @@ async function start() {
     index = await loadIndex();
   } catch {
     countNode.textContent = '';
-    results.append(el('p', { class: 'astor-empty', text: 'The quotations could not be loaded. Every one of them is printed, with its analysis, on the book page it belongs to.' }));
+    results.append(el('p', { class: 'astor-empty', text: 'Couldn’t load the quotations. Try reloading the page.' }));
     return;
   }
 
@@ -72,7 +72,7 @@ function buildFilters(index, quotations, themeNames, techniqueNames) {
   // first quotation, so they fold away behind their heading there.
   const heading = el('h2', {}, [el('button', {
     class: 'astor-filter-toggle', type: 'button', 'aria-expanded': 'false', 'aria-controls': 'astor-quote-filter-body',
-    text: 'Narrow it down',
+    text: 'Filters',
     onclick: () => {
       const open = filterForm.classList.toggle('is-open');
       heading.firstChild.setAttribute('aria-expanded', String(open));
@@ -83,7 +83,7 @@ function buildFilters(index, quotations, themeNames, techniqueNames) {
   filterForm.append(body);
 
   const search = el('input', {
-    type: 'search', id: 'astor-quote-search', placeholder: 'A word, a name, a phrase',
+    type: 'search', id: 'astor-quote-search', placeholder: 'A word or a name',
     value: state.query, autocomplete: 'off'
   });
   search.addEventListener('input', () => {
@@ -123,7 +123,7 @@ function buildFilters(index, quotations, themeNames, techniqueNames) {
   }
 
   body.append(el('button', {
-    class: 'button secondary', type: 'button', text: 'Clear every filter',
+    class: 'button secondary', type: 'button', text: 'Clear filters',
     onclick: () => {
       state.query = '';
       for (const key of ['book', 'period', 'theme', 'technique', 'form']) state[key].clear();
@@ -169,7 +169,7 @@ function render(quotations, themeNames, techniqueNames) {
 
   clear(results);
   if (!shown.length) {
-    results.append(el('p', { class: 'astor-empty', text: 'Try removing a filter, or searching for a single word rather than a phrase.' }));
+    results.append(el('p', { class: 'astor-empty', text: 'Try fewer filters or a single word.' }));
     return;
   }
 
@@ -193,7 +193,7 @@ function render(quotations, themeNames, techniqueNames) {
     results.append(el('p', { class: 'astor-more' }, [
       el('button', {
         class: 'button secondary', type: 'button',
-        text: 'Show ' + Math.min(PAGE, remaining) + ' more (' + remaining + ' to come)',
+        text: 'Show ' + Math.min(PAGE, remaining) + ' more (' + remaining + ' left)',
         onclick: () => {
           const before = state.shown;
           state.shown += PAGE;

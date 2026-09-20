@@ -331,7 +331,7 @@ function setUpReadingPlan(root, book, live) {
       })
     ]));
     if (!isRemembering()) {
-      mount.append(el('p', { class: 'astor-inline-note', text: 'Storage is switched off in this browser, so the plan lasts until you leave the page. Add it to your calendar to keep it.' }));
+      mount.append(el('p', { class: 'astor-inline-note', text: 'Storage is off in this browser, so the plan will not be saved. Add it to your calendar to keep it.' }));
     }
   }
 }

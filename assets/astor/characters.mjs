@@ -27,7 +27,7 @@ const chooser = document.querySelector('#astor-character-chooser');
 const graphMount = document.querySelector('#astor-character-graph');
 
 if (graphMount) {
-  withBooks(chooser, { label: 'Whose relationships?', filter: book => book.characters.length >= 3 }, book => {
+  withBooks(chooser, { label: 'Choose a book', filter: book => book.characters.length >= 3 }, book => {
     mountCharacterMap({
       graph: graphMount,
       switcher: document.querySelector('#astor-stage-switch'),
@@ -431,9 +431,8 @@ function renderGraph(mount, book, state, onToggle) {
   mount.append(el('p', {
     class: 'astor-inline-note',
     text: edges.length
-      ? edges.length + ' connection' + (edges.length === 1 ? '' : 's') + ' between ' + characters.length +
-        ' characters. Choose a name to see who it is tied to and how; choose it again to clear.'
-      : 'No relationships are recorded for this part of the book. Try “The whole book”.'
+      ? 'Tap a name to see their connections.'
+      : 'No connections in this part. Try “The whole book”.'
   }));
 
   // Selecting redraws the whole map, so hand focus back to the node that was
@@ -456,8 +455,8 @@ function renderDetail(mount, book, state, onSelect) {
   if (!character) {
     mount.append(el('p', {
       class: 'astor-inline-note',
-      text: 'Choose a character to read their entry, or step through the ' +
-        (book.form === 'play' ? 'acts' : 'sections') + ' above to see which connections hold when.'
+      text: 'Choose ' +
+        (book.form === 'play' ? 'an act' : 'a section') + ' above to see the map at that point.'
     }));
     return;
   }
@@ -489,7 +488,7 @@ function renderDetail(mount, book, state, onSelect) {
           document.createTextNode(outward ? holds : ' ' + edge.label + holds)
         ]);
       }))
-      : el('p', { class: 'astor-inline-note', text: 'No connections recorded in this part of the book.' }),
+      : el('p', { class: 'astor-inline-note', text: 'No connections in this part of the book.' }),
     el('p', {}, [el('a', {
       href: book.href + '#astor-character-' + character.id,
       text: window.location.pathname === book.href ? 'Jump to the full entry ↓' : 'Read the full entry on the ' + book.title + ' page →'

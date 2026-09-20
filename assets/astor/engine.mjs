@@ -103,7 +103,7 @@ export class Round {
 
     const actions = el('div', { class: 'astor-game-actions' });
     this.checkButton = el('button', {
-      class: 'button primary', type: 'button', text: 'Check answer',
+      class: 'button primary', type: 'button', text: 'Check',
       onclick: () => this.check()
     });
     actions.append(this.checkButton);
@@ -181,7 +181,7 @@ export class Round {
     const blank = this.blankButtons[position];
     blank.textContent = word;
     blank.classList.add('is-filled');
-    blank.setAttribute('aria-label', `Blank ${position + 1}, ${word}. Activate to clear.`);
+    blank.setAttribute('aria-label', `Blank ${position + 1}, ${word}. Select to clear.`);
     button.disabled = true;
     button.classList.add('is-used');
   }
@@ -244,7 +244,7 @@ export class Round {
     let correct = false;
 
     if (question.kind === 'choice') {
-      if (this.selection === null) { announce(this.live, 'Choose an answer first.'); return; }
+      if (this.selection === null) { announce(this.live, 'Pick an answer first.'); return; }
       correct = this.selection === question.answer;
       for (const [index, button] of this.optionButtons.entries()) {
         button.disabled = true;
@@ -276,14 +276,14 @@ export class Round {
 
     this.checked = true;
     this.answers.push(correct);
-    this.checkButton.textContent = this.index === this.questions.length - 1 ? 'See your result' : 'Next question';
+    this.checkButton.textContent = this.index === this.questions.length - 1 ? 'See your score' : 'Next';
     this.container.querySelector('.astor-game-skip')?.remove();
 
     const feedback = this.feedback;
     feedback.hidden = false;
     feedback.className = 'astor-game-feedback ' + (correct ? 'is-correct' : 'is-wrong');
     clear(feedback);
-    feedback.append(el('p', { class: 'astor-game-verdict', text: correct ? 'Right.' : 'Not this time.' }));
+    feedback.append(el('p', { class: 'astor-game-verdict', text: correct ? 'Right.' : 'Not quite.' }));
     if (question.kind === 'choice' && !correct) {
       feedback.append(el('p', { class: 'astor-game-answer', text: 'The answer is ' + question.options[question.answer] + '.' }));
     }
@@ -332,7 +332,7 @@ export class Round {
 
     const missed = this.questions.filter((_, position) => !this.answers[position]);
     if (missed.length) {
-      panel.append(el('h3', { class: 'astor-game-missed-title', text: 'Worth another look' }));
+      panel.append(el('h3', { class: 'astor-game-missed-title', text: 'The ones you missed' }));
       const list = el('ul', { class: 'astor-game-missed' });
       for (const question of missed) {
         const item = el('li', {}, [
@@ -344,7 +344,7 @@ export class Round {
           const save = el('button', {
             class: 'astor-save-quote', type: 'button',
             'aria-pressed': String(inCommonplace(id)),
-            text: inCommonplace(id) ? 'In your commonplace book' : 'Save to commonplace book'
+            text: inCommonplace(id) ? 'In your commonplace book' : 'Save this quotation'
           });
           save.addEventListener('click', () => {
             const added = toggleCommonplace({
@@ -352,7 +352,7 @@ export class Round {
               book: question.book.title, bookHref: question.book.href
             });
             save.setAttribute('aria-pressed', String(added));
-            save.textContent = added ? 'In your commonplace book' : 'Save to commonplace book';
+            save.textContent = added ? 'In your commonplace book' : 'Save this quotation';
           });
           item.append(save);
         }
@@ -375,11 +375,11 @@ export class Round {
 
 function verdict(score, total) {
   const ratio = total ? score / total : 0;
-  if (ratio === 1) return 'A clean round.';
-  if (ratio >= 0.8) return 'Strong — the gaps are narrow ones.';
-  if (ratio >= 0.5) return 'A working knowledge, with room to sharpen it.';
-  if (ratio > 0) return 'Worth a second pass before the next round.';
-  return 'Start with the book page, then come back.';
+  if (ratio === 1) return 'Full marks.';
+  if (ratio >= 0.8) return 'Very good.';
+  if (ratio >= 0.5) return 'Not bad.';
+  if (ratio > 0) return 'Worth another go.';
+  return 'Read the book page, then try again.';
 }
 
 export function emptyState(container, message, links = []) {

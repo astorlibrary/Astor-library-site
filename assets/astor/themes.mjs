@@ -18,28 +18,28 @@ async function start() {
   try {
     index = await loadIndex();
   } catch {
-    listMount.append(el('p', { class: 'astor-empty', text: 'The themes could not load. Each book page has a “What the book keeps returning to” section covering its own.' }));
+    listMount.append(el('p', { class: 'astor-empty', text: 'Couldn’t load the themes. Try reloading the page.' }));
     return;
   }
 
   const themes = allThemes(index);
   if (!themes.length) {
-    listMount.append(el('p', { class: 'astor-empty', text: 'No themes recorded yet.' }));
+    listMount.append(el('p', { class: 'astor-empty', text: 'No themes yet.' }));
     return;
   }
 
   clear(search);
   const input = el('input', {
     type: 'search', id: 'astor-theme-query', autocomplete: 'off',
-    placeholder: 'A theme, or a book that carries it'
+    placeholder: 'A theme or a book'
   });
-  const order = el('select', { id: 'astor-theme-order', 'aria-label': 'Order the themes' });
+  const order = el('select', { id: 'astor-theme-order', 'aria-label': 'Sort themes' });
   order.append(el('option', { value: 'books', text: 'Most books first' }));
   order.append(el('option', { value: 'name', text: 'A to Z' }));
   input.addEventListener('input', () => render(themes, input.value, order.value, window.location.hash.slice(1)));
   order.addEventListener('change', () => render(themes, input.value, order.value, window.location.hash.slice(1)));
   search.append(el('div', { class: 'astor-chooser-grow' }, [el('label', { for: input.id, text: 'Find a theme' }), input]));
-  search.append(el('div', {}, [el('label', { for: order.id, text: 'Order' }), order]));
+  search.append(el('div', {}, [el('label', { for: order.id, text: 'Sort' }), order]));
 
   const target = window.location.hash.slice(1);
   render(themes, '', 'books', target);
@@ -69,7 +69,7 @@ function render(themes, query, order, openId) {
   const shared = shown.filter(theme => theme.books.length > 1).length;
   listMount.append(el('p', {
     class: 'astor-explorer-count',
-    text: shown.length + (shown.length === 1 ? ' theme' : ' themes') + ', ' + shared + ' of them shared by more than one book'
+    text: shown.length + (shown.length === 1 ? ' theme' : ' themes') + ', ' + shared + ' in more than one book'
   }));
 
   if (!shown.length) {
@@ -89,7 +89,7 @@ function render(themes, query, order, openId) {
       open: single.some(theme => theme.id === openId)
     });
     group.append(el('summary', {}, [
-      el('span', { class: 'astor-term-name', text: 'Themes one book carries alone' }),
+      el('span', { class: 'astor-term-name', text: 'Themes in one book only' }),
       el('small', { text: single.length + ' themes' })
     ]));
     for (const theme of single) group.append(entry(theme, theme.id === openId));
@@ -114,7 +114,7 @@ function entry(theme, open) {
     const block = el('article', { class: 'astor-note' });
     block.append(el('h4', {}, [el('a', { href: book.href + '#astor-theme-' + theme.id, text: book.title })]));
     if (book.name && book.name !== theme.name) {
-      block.append(el('p', { class: 'astor-quote-attribution', text: 'There called ' + book.name }));
+      block.append(el('p', { class: 'astor-quote-attribution', text: 'Also called ' + book.name }));
     }
     block.append(el('p', { text: book.summary }));
     if (book.development) block.append(el('p', { class: 'astor-note-aside', text: book.development }));
@@ -130,7 +130,7 @@ function entry(theme, open) {
   }
   body.append(grid);
   const actions = el('p', { class: 'astor-toolkit-actions' }, [
-    el('a', { class: 'button secondary', href: '/explore/quotations/?theme=' + encodeURIComponent(theme.id), text: 'Every quotation carrying it' })
+    el('a', { class: 'button secondary', href: '/explore/quotations/?theme=' + encodeURIComponent(theme.id), text: 'See the quotations' })
   ]);
   if (theme.books.length > 1) {
     actions.append(el('a', {

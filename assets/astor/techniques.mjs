@@ -22,20 +22,20 @@ async function start() {
   try {
     index = await loadIndex();
   } catch {
-    listMount.append(el('p', { class: 'astor-empty', text: 'The glossary could not load. Each book page has a “How it is written” section covering the same terms for that title.' }));
+    listMount.append(el('p', { class: 'astor-empty', text: 'Couldn’t load the glossary. Try reloading the page.' }));
     return;
   }
 
   const techniques = allTechniques(index);
   if (!techniques.length) {
-    listMount.append(el('p', { class: 'astor-empty', text: 'No techniques recorded yet.' }));
+    listMount.append(el('p', { class: 'astor-empty', text: 'No terms yet.' }));
     return;
   }
 
   clear(search);
   const input = el('input', {
     type: 'search', id: 'astor-technique-query', autocomplete: 'off',
-    placeholder: 'A term, or a book that uses it'
+    placeholder: 'A term or a book'
   });
   input.addEventListener('input', () => render(techniques, input.value, document.location.hash.slice(1)));
   search.append(el('div', { class: 'astor-chooser-grow' }, [
@@ -80,7 +80,7 @@ function render(techniques, query, openId) {
   listMount.append(el('p', {
     class: 'astor-explorer-count',
     text: shown.length + (shown.length === 1 ? ' term' : ' terms') +
-      ', shown across ' + new Set(shown.flatMap(technique => technique.examples.map(example => example.slug))).size + ' titles'
+      ' across ' + new Set(shown.flatMap(technique => technique.examples.map(example => example.slug))).size + ' books'
   }));
 
   if (!shown.length) {
@@ -114,7 +114,7 @@ function entry(technique, open) {
     const block = el('article', { class: 'astor-note' });
     block.append(el('h4', {}, [el('a', { href: example.href, text: example.title })]));
     if (example.bookName && example.bookName !== technique.name) {
-      block.append(el('p', { class: 'astor-quote-attribution', text: 'There called ' + example.bookName }));
+      block.append(el('p', { class: 'astor-quote-attribution', text: 'Also called ' + example.bookName }));
     }
     block.append(el('p', { text: example.inThisBook }));
     const quotation = example.quotations[0];
@@ -132,7 +132,7 @@ function entry(technique, open) {
     el('a', {
       class: 'button secondary',
       href: '/explore/quotations/?technique=' + encodeURIComponent(technique.id),
-      text: 'Every quotation using it'
+      text: 'See the quotations'
     }),
     el('a', { class: 'button secondary', href: '/play/technique-spotter/', text: 'Practise spotting it' })
   ]));

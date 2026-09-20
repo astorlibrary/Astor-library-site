@@ -20,13 +20,13 @@ async function start() {
   try {
     index = await loadIndex();
   } catch {
-    mount.append(el('p', { class: 'astor-empty', text: 'The comparison tool could not load its material. Each book page lists its own themes and techniques.' }));
+    mount.append(el('p', { class: 'astor-empty', text: 'Couldn’t load the books. Try reloading the page.' }));
     return;
   }
 
   const books = index.books.slice().sort((a, b) => a.title.localeCompare(b.title));
   if (books.length < 2) {
-    mount.append(el('p', { class: 'astor-empty', text: 'Two titles are needed before anything can be compared. More are on the way.' }));
+    mount.append(el('p', { class: 'astor-empty', text: 'Not enough books to compare yet.' }));
     return;
   }
 
@@ -35,13 +35,13 @@ async function start() {
   let right = books.find(book => book.slug === params.get('b')) || books.find(book => book.slug !== left.slug);
 
   clear(chooser);
-  const leftSelect = select('astor-compare-left', 'First text', books, left, value => {
+  const leftSelect = select('astor-compare-left', 'First book', books, left, value => {
     left = value;
     if (right.slug === left.slug) right = books.find(book => book.slug !== left.slug);
     rightSelect.value = right.slug;
     update();
   });
-  const rightSelect = select('astor-compare-right', 'Second text', books, right, value => { right = value; update(); });
+  const rightSelect = select('astor-compare-right', 'Second book', books, right, value => { right = value; update(); });
   chooser.append(leftSelect.wrapper);
   chooser.append(rightSelect.wrapper);
   chooser.append(el('button', {
@@ -90,7 +90,7 @@ function facts(book) {
       el('li', { text: 'Period: ' + book.period }),
       book.written || book.firstPublished ? el('li', { text: 'Date: ' + (book.written || book.firstPublished) }) : null,
       book.setting ? el('li', { text: 'Setting: ' + book.setting }) : null,
-      el('li', { text: 'Shape: ' + book.structure.length + ' ' + (book.form === 'play' ? 'acts' : 'sections') })
+      el('li', { text: 'Structure: ' + book.structure.length + ' ' + (book.form === 'play' ? 'acts' : 'sections') })
     ].filter(Boolean))
   ];
 }
@@ -115,8 +115,8 @@ function render(left, right) {
         text: sharedThemes.length || sharedTechniques.length
           ? 'They share ' + sharedThemes.length + ' ' + (sharedThemes.length === 1 ? 'theme' : 'themes') +
             ' and ' + sharedTechniques.length + ' ' + (sharedTechniques.length === 1 ? 'technique' : 'techniques') +
-            '. Start a comparison from the shared ground, not from the plots.'
-          : 'These two share no theme or technique in their records, which is itself worth an opening paragraph: what does each do that the other has no use for?'
+            '.'
+          : 'These two have no themes or techniques in common.'
       })
     ])
   ]));
@@ -144,20 +144,20 @@ function render(left, right) {
     panel.append(row('Shared techniques',
       [el('ul', { class: 'astor-shared-list' }, sharedTechniques.map(technique =>
         el('li', {}, [el('a', { class: 'astor-tag', href: '/explore/techniques/#' + technique.id, text: technique.name })])))],
-      [el('p', { class: 'astor-analysis', text: 'Both records name these. The glossary shows what each is doing in each book, which is where the difference usually is.' })]
+      [el('p', { class: 'astor-analysis', text: 'See the glossary for how each book uses them.' })]
     ));
   }
 
   const onlyLeft = left.themes.filter(theme => !right.themes.some(other => other.id === theme.id));
   const onlyRight = right.themes.filter(theme => !left.themes.some(other => other.id === theme.id));
   if (onlyLeft.length || onlyRight.length) {
-    panel.append(row('What only one of them does',
+    panel.append(row('Themes not shared',
       [el('ul', { class: 'astor-question-list' }, onlyLeft.map(theme => el('li', { text: theme.name + ' — ' + theme.summary })))],
       [el('ul', { class: 'astor-question-list' }, onlyRight.map(theme => el('li', { text: theme.name + ' — ' + theme.summary })))]
     ));
   }
 
-  panel.append(row('Go on from here',
+  panel.append(row('What next',
     [el('div', { class: 'button-row' }, [
       el('a', { class: 'button secondary', href: left.href, text: 'Study ' + left.title }),
       el('a', { class: 'button secondary', href: '/play/essay-forge/?book=' + left.slug, text: 'Plan an essay' })

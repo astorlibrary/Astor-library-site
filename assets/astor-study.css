@@ -1567,3 +1567,15 @@
   .astor-term[open] summary .astor-term-definition { display: block; -webkit-line-clamp: unset; }
   .astor-term-group > .astor-term { margin: 0 12px; }
 }
+
+/* ------------------------------------------------------------ the real map */
+
+.astor-graph-wrap.has-slippy { padding: 0; overflow: hidden; }
+.astor-slippy { position: relative; width: 100%; height: clamp(380px, 68vh, 640px); background: #dfe8ea; }
+.astor-slippy.is-book { height: clamp(300px, 52vh, 460px); }
+.astor-graph-wrap.has-slippy + .astor-inline-note,
+#astor-map > .astor-inline-note { margin: 10px 12px; }
+.astor-slippy .maplibregl-ctrl-group { border-radius: 0; box-shadow: 0 2px 8px rgba(32, 28, 26, .18); }
+.astor-slippy .maplibregl-ctrl-group button { width: 36px; height: 36px; }
+.astor-slippy .maplibregl-ctrl-attrib { font-family: var(--astor-sans); font-size: 11px; }
+.astor-slippy .maplibregl-cooperative-gesture-screen { font-family: var(--astor-sans); font-size: 16px; }

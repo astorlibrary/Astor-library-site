@@ -77,14 +77,14 @@ function renderStrip(index, day) {
   strip.append(el('section', {}, [
     el('h2', { text: 'The date' }),
     el('blockquote', {}, [el('p', { text: formatDate(new Date()) })]),
-    el('p', { text: 'Everything on this page changes at midnight, and everybody sees the same thing. Nothing here is chosen for you in particular.' })
+    el('p', { text: 'New every day, and the same for everyone.' })
   ]));
 }
 
 function renderPuzzle(index, day) {
   const questions = dailyRound(index, day);
   if (questions.length < 3) {
-    return emptyState(gameMount, 'The library needs a few more titles before the Daily Five is worth playing. The single-book games are ready now.', [
+    return emptyState(gameMount, 'Not enough books yet. Try the single-book games.', [
       { href: '/play/', label: 'Play & revise' }
     ]);
   }
@@ -136,6 +136,6 @@ function renderDone(result, total, day) {
   row.append(el('a', { class: 'button secondary', href: '/play/', text: 'Play something else' }));
   row.append(el('a', { class: 'button secondary', href: '/my-library/', text: 'My library' }));
   panel.append(row);
-  panel.append(el('p', { class: 'astor-inline-note', text: 'The grid gives nothing away: a filled square is a right answer, an empty one is not.' }));
+  panel.append(el('p', { class: 'astor-inline-note', text: 'A filled square is a right answer.' }));
   gameMount.append(panel);
 }

@@ -12,25 +12,25 @@ import { scores, streak, deckSummary, isRemembering, recentlyViewed } from './st
 import { cardId } from './data.mjs';
 
 const BOOK_GAMES = [
-  ['who-said-it', 'Who said it?', 'A line appears without its speaker. Name who says it.'],
-  ['fill-the-line', 'Fill the line', 'Words are taken out of a speech. Put them back.'],
-  ['theme-match', 'Theme match', 'Decide which theme a quotation carries.'],
-  ['technique-spotter', 'Technique spotter', 'Name the device doing the work.'],
-  ['character-identification', 'Who is this?', 'A character described without being named.'],
-  ['order-the-plot', 'Order the plot', 'Put the acts and scenes back into sequence.'],
-  ['mixed-round', 'Mixed round', 'Every kind of question the book supports, in one run.']
+  ['who-said-it', 'Who said it?', 'Read a line and name who says it.'],
+  ['fill-the-line', 'Fill the line', 'Put the missing words back.'],
+  ['theme-match', 'Theme match', 'Match each quotation to its theme.'],
+  ['technique-spotter', 'Technique spotter', 'Spot the technique in each quotation.'],
+  ['character-identification', 'Who is this?', 'Name the character from a description.'],
+  ['order-the-plot', 'Order the plot', 'Put the story back in order.'],
+  ['mixed-round', 'Mixed round', 'A bit of every game.']
 ];
 
 const LIBRARY_GAMES = [
-  ['which-book', 'Which book?', 'One line, every title. Name where it comes from.'],
-  ['context-sprint', 'Context sprint', 'Place an event in the right year, against near misses.'],
+  ['which-book', 'Which book?', 'Name the book a line comes from.'],
+  ['context-sprint', 'Context sprint', 'Pick the year each event happened.'],
   ['opening-lines', 'Opening lines', 'Name the book from its first sentence.']
 ];
 
 const TOOLS = [
-  ['flashcards', 'Flashcards', 'Spaced repetition over a title’s quotations.', 'Spaced repetition'],
-  ['essay-forge', 'Essay forge', 'Build a plan paragraph by paragraph from real questions.', 'Planning'],
-  ['defend-the-reading', 'Defend the reading', 'Argue one reading against the strongest case on the other side.', 'Argument']
+  ['flashcards', 'Flashcards', 'Learn the key quotations for each book.', 'Quotations'],
+  ['essay-forge', 'Essay forge', 'Plan an essay, one paragraph at a time.', 'Planning'],
+  ['defend-the-reading', 'Defend the reading', 'Argue for or against a reading of the book.', 'Argument']
 ];
 
 const statsMount = document.querySelector('#astor-play-stats');
@@ -46,7 +46,7 @@ async function start() {
   try {
     index = await loadIndex();
   } catch {
-    bookMount.append(el('p', { class: 'astor-empty', text: 'The games could not load their material. Reload the page, or read the same quotations on the book pages.' }));
+    bookMount.append(el('p', { class: 'astor-empty', text: 'The games didn’t load. Try reloading the page.' }));
     return;
   }
 
@@ -60,7 +60,7 @@ async function start() {
   mountChooser(chooser, {
     books,
     current,
-    label: 'Revise which book?',
+    label: 'Which book?',
     onChange: book => { current = book; renderBookGames(book); }
   });
 
@@ -100,14 +100,14 @@ function renderBookGames(book) {
     offered += 1;
     bookMount.append(card(
       '/play/' + id + '/?book=' + encodeURIComponent(book.slug),
-      title === 'Order the plot' ? 'Sequencing' : 'Game',
+      title === 'Order the plot' ? 'Puzzle' : 'Game',
       title,
       note,
-      [available + ' questions ready', bestLine(id, book.slug)].filter(Boolean).join(' · ')
+      [available + ' questions', bestLine(id, book.slug)].filter(Boolean).join(' · ')
     ));
   }
   if (!offered) {
-    bookMount.append(el('p', { class: 'astor-empty', text: book.title + ' does not yet carry enough material for a round. Try another title.' }));
+    bookMount.append(el('p', { class: 'astor-empty', text: 'No games for ' + book.title + ' yet. Try another book.' }));
   }
 }
 
@@ -116,11 +116,11 @@ function renderLibraryGames(index) {
   for (const [id, title, note] of LIBRARY_GAMES) {
     const available = count(id, index.books);
     if (available < 4) continue;
-    libraryMount.append(card('/play/' + id + '/', 'Whole library', title, note, [available + ' questions ready', bestLine(id)].filter(Boolean).join(' · ')));
+    libraryMount.append(card('/play/' + id + '/', 'Whole library', title, note, [available + ' questions', bestLine(id)].filter(Boolean).join(' · ')));
   }
-  libraryMount.append(card('/today/', 'Daily', 'The Daily Five', 'Five questions, the same for everybody, changing at midnight.', 'Shareable result'));
+  libraryMount.append(card('/today/', 'Daily', 'The Daily Five', 'Five quick questions. New every day.', 'Share your score'));
   if (!libraryMount.children.length) {
-    libraryMount.append(el('p', { class: 'astor-empty', text: 'The library games need a few more titles before they are worth playing.' }));
+    libraryMount.append(el('p', { class: 'astor-empty', text: 'The library games aren’t ready yet.' }));
   }
 }
 

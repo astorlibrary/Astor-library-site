@@ -55,7 +55,7 @@ function render(book) {
 
     inner.append(el('article', { class: 'astor-note' }, [
       el('h4', { text: 'The strongest thing against it' }),
-      el('p', { text: view.counter || 'No standing objection is recorded for this reading. Construct one: what would the play have to do differently for this reading to fail?' })
+      el('p', { text: view.counter || 'No objection recorded. What would have to be different for this reading to fail?' })
     ]));
 
     inner.append(el('p', { class: 'astor-compare-heading', text: 'Which side are you taking?' }));
@@ -71,7 +71,7 @@ function render(book) {
     inner.append(el('p', { class: 'astor-compare-heading', text: 'Your evidence' }));
     inner.append(el('p', {
       class: 'astor-inline-note',
-      text: 'Choose three or four quotations that carry your side of the argument. A reading defended on one line is a reading that has not been tested.'
+      text: 'Pick three or four quotations for your side.'
     }));
 
     const list = el('div', { class: 'astor-quote-list' });
@@ -110,7 +110,7 @@ function render(book) {
       const note = el('textarea', {
         value: concession,
         'aria-label': 'What the other side costs your argument',
-        placeholder: 'What does the strongest objection actually cost you? An argument that concedes nothing has not met the other side.'
+        placeholder: 'What does the objection cost you?'
       });
       note.addEventListener('input', () => { concession = note.value; });
       inner.append(note);

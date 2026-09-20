@@ -30,8 +30,8 @@ async function fill(mount) {
   const status = result
     ? 'You scored ' + result.score + ' of ' + result.total + ' on today’s Daily Five.'
     : run.live && run.current
-      ? 'Your revision streak is ' + run.current + (run.current === 1 ? ' day' : ' days') + '. Today’s five are waiting.'
-      : 'Five questions from across the library, the same for everybody, changing at midnight.';
+      ? 'Your streak is ' + run.current + (run.current === 1 ? ' day' : ' days') + '. Today’s questions are ready.'
+      : 'Five quick questions. New every day.';
 
   clear(mount);
   mount.append(

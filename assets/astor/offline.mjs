@@ -33,7 +33,7 @@ async function listKept(mount) {
   pages = [...new Set(pages)].sort();
   clear(mount);
   if (!pages.length) {
-    mount.append(el('p', { class: 'astor-empty', text: 'Nothing has been kept on this device yet. Pages you open while connected are kept as you go.' }));
+    mount.append(el('p', { class: 'astor-empty', text: 'Nothing saved for offline yet. Open a few pages while online.' }));
     return;
   }
   const books = pages.filter(page => page.startsWith('/books/') || page.startsWith('/study/'));
