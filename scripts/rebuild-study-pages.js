@@ -189,7 +189,7 @@ function buildPages() {
   <div class="astor-play-grid" id="astor-play-tools"></div>`,
     fallback: 'The games need JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
     tail: '',
-    links: [{ href: '/today/', label: 'The Daily Five' }, { href: '/my-library/', label: 'My library' }]
+    links: [{ href: '/today/', label: 'Today' }, { href: '/my-library/', label: 'My library' }]
   }));
 
   // --- one page per game ---
@@ -207,7 +207,7 @@ function buildPages() {
       mount: `  <div class="astor-game" id="astor-game" data-game="${escapeHtml(game.slug)}" data-scope="${game.scope}"></div>`,
       fallback: 'This game needs JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
       tail: '  <p class="astor-inline-note">Keyboard: number keys answer, Enter checks and moves on, R restarts.</p>',
-      links: [{ href: '/play/', label: 'All games' }, { href: '/today/', label: 'The Daily Five' }]
+      links: [{ href: '/play/', label: 'All games' }, { href: '/today/', label: 'Today' }]
     }));
   }
 
@@ -440,7 +440,7 @@ function buildPages() {
     tail: `  <section class="section-title" id="data"><p class="kicker">Your data</p><h2>Your data.</h2></section>
   <p class="deck">Everything here is saved in this browser. Download it or clear it below.</p>
   <div class="button-row" id="astor-data-controls"></div>`,
-    links: [{ href: '/play/', label: 'Play &amp; revise' }, { href: '/today/', label: 'The Daily Five' }]
+    links: [{ href: '/play/', label: 'Play &amp; revise' }, { href: '/today/', label: 'Today' }]
   }));
 
   // --- for teachers ---

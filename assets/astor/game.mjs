@@ -89,7 +89,7 @@ function runLibrary(container, gameId, index) {
     gameId,
     reshuffle: () => buildRound(gameId, index.books, { length: 10 }),
     endLinks: [
-      { href: '/today/', label: 'The Daily Five' },
+      { href: '/today/', label: 'Today' },
       { href: '/play/', label: 'Another game' }
     ]
   });

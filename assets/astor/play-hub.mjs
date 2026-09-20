@@ -118,7 +118,7 @@ function renderLibraryGames(index) {
     if (available < 4) continue;
     libraryMount.append(card('/play/' + id + '/', 'Whole library', title, note, [available + ' questions', bestLine(id)].filter(Boolean).join(' · ')));
   }
-  libraryMount.append(card('/today/', 'Daily', 'The Daily Five', 'Five quick questions. New every day.', 'Share your score'));
+  libraryMount.append(card('/today/', 'Daily', 'Today’s questions', 'Five quick questions. New every day.', 'Share your score'));
   if (!libraryMount.children.length) {
     libraryMount.append(el('p', { class: 'astor-empty', text: 'The library games aren’t ready yet.' }));
   }

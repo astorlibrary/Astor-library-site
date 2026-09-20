@@ -261,7 +261,7 @@ function gameName(gameId) {
     'which-book': 'Which book?',
     'context-sprint': 'Context sprint',
     'opening-lines': 'Opening lines',
-    daily: 'The Daily Five'
+    daily: 'Today’s questions'
   })[gameId] || gameId;
 }
 

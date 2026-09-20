@@ -290,7 +290,7 @@ function revisePanel(book) {
     '<a class="astor-play-card" href="/play/flashcards/?book=' + escapeHtml(book.slug) + '">' +
     '<span class="astor-play-kind">Flashcards</span><h4>Learn the quotations</h4>' +
     '<p>' + book.quotations.length + ' cards. The ones you get wrong come back sooner.</p></a>' +
-    '<a class="astor-play-card" href="/today/"><span class="astor-play-kind">Daily</span><h4>The Daily Five</h4>' +
+    '<a class="astor-play-card" href="/today/"><span class="astor-play-kind">Daily</span><h4>Today’s questions</h4>' +
     '<p>Five questions. New every day.</p></a>' +
     '</div>' +
     '</section>';

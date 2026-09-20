@@ -111,7 +111,7 @@ function renderDone(result, total, day) {
   const run = streak();
 
   const panel = el('div', { class: 'astor-game-end' });
-  panel.append(el('p', { class: 'kicker', text: 'The Daily Five · ' + day }));
+  panel.append(el('p', { class: 'kicker', text: 'Today · ' + day }));
   panel.append(el('h2', { text: result.score + ' out of ' + (result.total || total) }));
   panel.append(el('p', { class: 'astor-share-grid', text: grid }));
   panel.append(el('p', {
@@ -121,7 +121,7 @@ function renderDone(result, total, day) {
       : 'A new five arrives at midnight.'
   }));
 
-  const shareText = 'Astor Library — The Daily Five, ' + day + '\n' + grid + ' ' + result.score + '/' + (result.total || total) + '\nhttps://astorlibrary.com/today/';
+  const shareText = 'Astor Library — today’s questions, ' + day + '\n' + grid + ' ' + result.score + '/' + (result.total || total) + '\nhttps://astorlibrary.com/today/';
   const row = el('div', { class: 'button-row' });
   const share = el('button', { class: 'button primary', type: 'button', text: 'Copy your result' });
   share.addEventListener('click', async () => {

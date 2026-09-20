@@ -1172,7 +1172,7 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
     ['/play/flashcards/', 'Flashcards', 'Spaced repetition over a title’s quotations'],
     ['/play/essay-forge/', 'Essay planner', 'Build a plan paragraph by paragraph'],
     ['/play/defend-the-reading/', 'Defend the reading', 'Argue a reading against the case on the other side'],
-    ['/today/', 'Astor today', 'Passage of the day and the Daily Five'],
+    ['/today/', 'Astor today', 'A passage, a book and five questions'],
     ['/explore/quotations/', 'Quotation explorer', 'Every checked quotation, filterable'],
     ['/explore/timeline/', 'Literature timeline', 'Each book against its historical moment'],
     ['/explore/characters/', 'Character maps', 'Relationship diagrams, act by act'],

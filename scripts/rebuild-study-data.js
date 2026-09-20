@@ -184,7 +184,7 @@ for (const book of entries) {
 
 for (const tool of [
   ['Tool', 'Play and revise', '/play/', 'Every revision game in one place', 'play games revise quiz revision'],
-  ['Tool', 'The Daily Five', '/today/', "Today's passage, puzzle and literary anniversary", 'daily puzzle today streak'],
+  ['Tool', 'Today’s questions', '/today/', "A passage, a book and five questions", 'daily puzzle today streak'],
   ['Tool', 'Quotation explorer', '/explore/quotations/', 'Filter every quotation by theme, character and technique', 'quotations explorer filter'],
   ['Tool', 'Literature timeline', '/explore/timeline/', 'Every Astor title against its historical moment', 'timeline history dates'],
   ['Tool', 'Character maps', '/explore/characters/', 'Relationship diagrams that change act by act', 'characters relationships map diagram'],
