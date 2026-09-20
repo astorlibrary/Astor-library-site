@@ -110,6 +110,61 @@ const HEADER = `<header class="site-header">
   <nav class="nav" aria-label="Primary navigation"><a class="nav-link" href="/library/">Books</a><a class="nav-link" href="/study/" aria-current="page">Study editions</a><a class="nav-link" href="/resources/">Free resources</a><a class="nav-link" href="/play/">Play &amp; revise</a></nav>
 </header>`;
 
+// One panel that is not on every page. Which one a book gets depends on what
+// its record actually holds and on the title itself, so two study pages
+// opened side by side are not the same page with different words in it.
+function openingPanel(book) {
+  if (!book.openingLine) return null;
+  return {
+    kind: 'It opens',
+    html: '<blockquote class="astor-feature-line">' + escapeHtml(book.openingLine) + '</blockquote>' +
+      '<p class="astor-feature-note">The first sentence of ' + escapeHtml(book.title) + '.</p>'
+  };
+}
+
+function placesPanel(book) {
+  const places = (book.places || []).slice(0, 5);
+  if (places.length < 4) return null;
+  return {
+    kind: 'Where it happens',
+    html: '<ul class="astor-feature-list">' + places.map(place =>
+      '<li><b>' + escapeHtml(place.name) + '</b>' + (place.note ? ' ' + escapeHtml(place.note) : '') + '</li>').join('') +
+      '</ul><p class="astor-feature-note"><a href="/explore/map/?book=' + escapeHtml(book.slug) + '">See these on the map</a></p>'
+  };
+}
+
+function castPanel(book) {
+  const cast = (book.characters || []).slice(0, 5);
+  if (cast.length < 4) return null;
+  return {
+    kind: 'Who to watch',
+    html: '<ul class="astor-feature-list">' + cast.map(character =>
+      '<li><b>' + escapeHtml(character.name) + '</b> ' + escapeHtml(character.role || '') + '</li>').join('') +
+      '</ul><p class="astor-feature-note"><a href="/explore/characters/?book=' + escapeHtml(book.slug) + '">See how they connect</a></p>'
+  };
+}
+
+function yearPanel(book) {
+  const events = (book.timeline || []).filter(entry => entry.year).slice(0, 4);
+  if (events.length < 3) return null;
+  return {
+    kind: 'The years around it',
+    html: '<ul class="astor-feature-years">' + events.map(entry =>
+      '<li><b>' + escapeHtml(String(entry.year)) + '</b> ' + escapeHtml(entry.label) + '</li>').join('') +
+      '</ul><p class="astor-feature-note"><a href="/explore/timeline/">See it against the other books</a></p>'
+  };
+}
+
+function featureBlock(book) {
+  const panels = [openingPanel(book), castPanel(book), placesPanel(book), yearPanel(book)].filter(Boolean);
+  if (!panels.length) return '';
+  let hash = 0;
+  for (const character of book.slug) hash = (hash * 31 + character.charCodeAt(0)) >>> 0;
+  const panel = panels[hash % panels.length];
+  return '<section class="astor-feature" aria-label="' + escapeHtml(panel.kind) + '">' +
+    '<p class="kicker">' + escapeHtml(panel.kind) + '</p>' + panel.html + '</section>';
+}
+
 function factCells(book) {
   const cells = (book.atAGlance || []).slice(0, 4).map(fact =>
     '<div class="fact"><b>' + escapeHtml(fact.value) + '</b><span>' +
@@ -156,6 +211,8 @@ ${HEADER}
   </section>
 
   <section class="quick-facts" aria-label="${escapeHtml(book.title)} facts">${factCells(book)}</section>
+
+  ${featureBlock(book)}
 
   <section class="section-title astor-marked" id="edition"><p class="kicker">Edition contents</p><h2>What the study edition contains.</h2><p>The complete text with scene or chapter summaries, explanatory notes, contextual essays, character and theme material, passage work and essay questions.</p></section>
   <section class="timeline"><article class="edition-card new-edition"><img src="${escapeHtml(edition.image)}" alt="${escapeHtml(book.title)} Study Edition cover"><div><p class="year">Astor Study Edition</p><h2><em>${escapeHtml(book.title)}</em>, ${escapeHtml(book.author)}</h2><p>${escapeHtml(book.summary)}</p><p>Everything below this card is worked out on the page rather than kept for the book: the plot ${escapeHtml(stageWord)}, the characters and how they are connected, the themes with the evidence attached, ${quotationCount} quotations checked against ${escapeHtml(book.sourceText.label)}, the language, the context and four essay questions with a route through each.</p><div class="button-row"><a class="button primary" href="${escapeHtml(edition.buyUrl)}">Buy / view the Astor Study Edition</a></div></div></article></section>
