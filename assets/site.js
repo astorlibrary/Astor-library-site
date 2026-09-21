@@ -337,6 +337,7 @@
   }
 
   passageHubFilter();
+  foldBookSections();
 
   if (!currentPath.startsWith('/books/')) return;
 
@@ -518,6 +519,62 @@
   // Progressive-enhancement filter for the Passage Room hub: the control is
   // built in JS so no-script visitors never see a dead search box, and all
   // cards remain visible without it.
+  // A book page carries a long editorial account of the book: publication,
+  // adaptations, sources, stage history. All of it is worth having and none of
+  // it should be the first thing a reader has to scroll past. Each part keeps
+  // its heading and its opening line; the rest folds away behind it. Without
+  // JavaScript the page stays exactly as it is, whole and open.
+  function foldBookSections() {
+    const main = document.querySelector('main.page-wrap');
+    if (!main || !document.querySelector('.book-breadcrumb')) return;
+    const toolkit = main.querySelector('#astor-study-toolkit');
+
+    const KEEP_OPEN = /astor-toolkit|book-passage-shelf|related-reading|edition-format-panel|context-image-shelf|season-book-backlinks|book-end-nav|astor-feature|page-contents|quick-facts|page-intro|astor-page-credit|book-breadcrumb/;
+    const children = [...main.children];
+
+    const groups = [];
+    for (let index = 0; index < children.length; index += 1) {
+      const child = children[index];
+      if (!child.classList.contains('section-title')) continue;
+      const body = [];
+      for (let next = index + 1; next < children.length; next += 1) {
+        const sibling = children[next];
+        if (sibling.classList.contains('section-title') || KEEP_OPEN.test(sibling.className)) break;
+        body.push(sibling);
+      }
+      // A section holding the study tools is left alone: those have their own
+      // tabs and are the reason most readers are here.
+      const holdsToolkit = body.some(block => block.contains(toolkit) || block.id === 'astor-study-toolkit');
+      if (body.length && !holdsToolkit) groups.push({ head: child, body });
+    }
+    // The first section stays open, so a page never begins with a row of
+    // closed headings.
+    if (groups.length < 3) return;
+    const foldable = groups.slice(1);
+
+    foldable.forEach((group, position) => {
+      const heading = group.head.querySelector('h2');
+      const note = group.head.querySelector('p');
+      const fold = document.createElement('details');
+      fold.className = 'book-fold';
+      if (position === 0) fold.open = true;
+      const summary = document.createElement('summary');
+      const title = document.createElement('span');
+      title.className = 'book-fold-title';
+      title.textContent = heading ? heading.textContent.trim() : 'More';
+      summary.append(title);
+      if (note && note.textContent.trim()) {
+        const line = document.createElement('span');
+        line.className = 'book-fold-note';
+        line.textContent = note.textContent.trim();
+        summary.append(line);
+      }
+      fold.append(summary);
+      group.head.replaceWith(fold);
+      for (const block of group.body) fold.append(block);
+    });
+  }
+
   function passageHubFilter() {
     const library = document.querySelector('.passage-library');
     const nav = library && library.querySelector('.passage-hub-nav');
