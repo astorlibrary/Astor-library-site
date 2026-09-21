@@ -1,0 +1,762 @@
+{
+  "slug": "troilus-and-cressida",
+  "title": "Troilus and Cressida",
+  "author": "William Shakespeare",
+  "href": "/books/troilus-and-cressida/",
+  "buyUrl": "https://mybook.to/lhMCrD8",
+  "form": "play",
+  "genre": "Problem play",
+  "period": "Shakespeare",
+  "written": "c. 1601-02",
+  "firstPublished": 1609,
+  "setting": "Troy and the Greek camp on the plain below it, in the seventh year of the siege",
+  "readingTime": 180,
+  "difficulty": 5,
+  "lengthNote": "About 3,500 lines across a prologue and twenty-four scenes. Act V is ten of them, most under fifty lines, and the two council scenes of Act I and Act II hold nearly a fifth of the play between them",
+  "openingLine": "In Troy, there lies the scene.",
+  "summary": "Seven years into the siege, a Trojan prince gets the woman he wants through her uncle's brokerage and loses her four days later to a prisoner exchange arranged by her own father. Around that, the Greek command argues about why its best soldier will not leave his tent, and the Trojan council argues about whether Helen is worth what she has already cost. Nobody wins anything. The one formal duel is called off because the fighters turn out to be cousins, the one great death is an ambush by twenty men against one who has taken his armour off, and the last word belongs to a diseased go-between.",
+  "referenceStyle": "act.scene.line, Globe line numbering",
+  "sourceText": {
+    "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
+    "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
+    "note": "This is the text the quotations were taken from word for word, and act, scene and line references follow the traditional Globe numbering, which modern editions vary from by a line or two."
+  },
+  "atAGlance": [
+    { "label": "Written", "value": "c. 1601-02", "note": "The Stationers' Register entry of 7 February 1603 is the first firm record of it. Nothing fixes a first performance, and the 1609 quarto contradicts itself about whether there was one." },
+    { "label": "First printed", "value": "1609", "note": "A quarto for Richard Bonian and Henry Walley, surviving in two states: one title page advertises acting at the Globe, the other replaces it with a preface insisting the play never reached a stage." },
+    { "label": "Sources", "value": "Chaucer and the Troy books", "note": "The lovers come from Troilus and Criseyde; the war comes from Caxton's Recuyell and Lydgate's Troy Book, with Chapman's first instalment of Homer newly in English." },
+    { "label": "Shape", "value": "Five acts, twenty-four scenes and a prologue", "note": "Placed among the tragedies in the First Folio but left out of the catalogue at the front of the volume, and unpaginated for most of its length." }
+  ],
+  "structure": [
+    {
+      "id": "act-1",
+      "label": "Act I",
+      "title": "A war nobody is fighting, and a courtship nobody has begun",
+      "summary": "An armed Prologue announces that the play starts in the middle of the war and asks the audience for nothing. Troilus then refuses to go to the field because he is in love; Cressida listens to her uncle advertise Troilus for a whole afternoon and decides to hold off; and in the Greek camp Ulysses explains that seven years have produced nothing because degree has been abandoned, before proposing a rigged lottery that will put Ajax against Hector and sting Achilles out of his tent.",
+      "scenes": [
+        { "ref": "Prologue", "title": "A prologue in armour", "summary": "Thirty-one lines on the sixty-nine ships, the six gates of Troy and a play that leaps over the beginning of the story." },
+        { "ref": "1.1", "title": "Troilus unarms", "summary": "Troilus tells Pandarus he is too weak with love to fight, and complains that he cannot reach Cressida except through her uncle." },
+        { "ref": "1.2", "title": "Cressida keeps her counsel", "summary": "Pandarus praises Troilus to Cressida, then names the Trojan lords as they come back from the field; left alone, she explains why she will show nothing." },
+        { "ref": "1.3", "title": "Degree, and a lottery", "summary": "Agamemnon and Nestor make the failure sound noble; Ulysses diagnoses it as the collapse of rank, and Hector's challenge gives him a way to use it." }
+      ]
+    },
+    {
+      "id": "act-2",
+      "label": "Act II",
+      "title": "Two councils, both arguing against their own conclusions",
+      "summary": "Ajax beats Thersites and learns nothing; the Trojan council debates whether to send Helen back; the Greek generals find Achilles still refusing to come out. Hector proves that keeping Helen is wrong in law, nature and arithmetic, and then votes to keep her. Ulysses works Ajax up with flattery until he is ready to be used. On both sides of the plain, men reach a decision their own reasoning has just demolished.",
+      "scenes": [
+        { "ref": "2.1", "title": "Ajax and Thersites", "summary": "Ajax strikes Thersites for not reading him the proclamation; Achilles arrives and the railing spreads to him." },
+        { "ref": "2.2", "title": "The Trojan council", "summary": "Hector argues that Helen is not worth the cost, Troilus that worth is whatever men put on it; Cassandra interrupts to say Troy will burn, and Hector takes Troilus's side." },
+        { "ref": "2.3", "title": "The cold shoulder", "summary": "Thersites curses the whole camp; Achilles will not come out, and Ulysses begins praising Ajax to his face to make Achilles hear it." }
+      ]
+    },
+    {
+      "id": "act-3",
+      "label": "Act III",
+      "title": "One night, and the bargain that ends it",
+      "summary": "Pandarus flirts through Helen's music room on an errand, brings the lovers together in his orchard and takes them to a bed, hearing them swear vows in which each names the proverb their name will become. Between those two scenes Calchas asks the Greeks for his daughter in exchange for the prisoner Antenor, and gets her, before either lover knows the request has been made.",
+      "scenes": [
+        { "ref": "3.1", "title": "Helen and the music", "summary": "Pandarus makes his excuses to Paris and Helen, sings them a song about love, and covers for Troilus's absence from supper." },
+        { "ref": "3.2", "title": "The orchard", "summary": "Troilus and Cressida meet; she confesses she has loved him for months, and all three swear the oaths that turn their names into by-words." },
+        { "ref": "3.3", "title": "Calchas asks, Ulysses lectures", "summary": "Cressida is promised to the Greeks for Antenor; the generals walk past Achilles, and Ulysses tells him that time throws good deeds into a wallet behind its back." }
+      ]
+    },
+    {
+      "id": "act-4",
+      "label": "Act IV",
+      "title": "The exchange, and a duel called off",
+      "summary": "Cressida is woken, told, and handed across in a single morning. Troilus gives her a sleeve, takes her glove, and asks her four times to be true. In the Greek camp the whole command kisses her in turn, and Ulysses dismisses her in ten lines. Hector and Ajax then fight to no result because they are cousins, the two armies eat together, and Ulysses offers to walk Troilus to the tent where Diomedes will spend the night.",
+      "scenes": [
+        { "ref": "4.1", "title": "Two enemies, politely", "summary": "Aeneas and Diomedes swear to kill each other later; asked who deserves Helen, Diomedes says she has cost a Greek life for every false drop in her veins." },
+        { "ref": "4.2", "title": "Morning at Pandarus's house", "summary": "The lovers part at dawn; Aeneas knocks, and Cressida learns she is to be traded and swears she will not go." },
+        { "ref": "4.3", "title": "The hour fixed", "summary": "Thirteen lines in the street: Paris tells Troilus to fetch her, and Troilus says he will deliver her like a priest at an altar." },
+        { "ref": "4.4", "title": "The sleeve and the glove", "summary": "Troilus and Cressida exchange tokens; he asks her to be true so often that she asks whether he loves her at all." },
+        { "ref": "4.5", "title": "The lists", "summary": "Cressida is kissed by the Greek command; Hector and Ajax break off as kin, the sides feast together, and Ulysses offers Troilus a place to watch from." }
+      ]
+    },
+    {
+      "id": "act-5",
+      "label": "Act V",
+      "title": "Watching, and a killing done in company",
+      "summary": "Ten short scenes. Troilus watches Cressida give his sleeve to Diomedes while Ulysses watches Troilus and Thersites watches all three. Hector goes out although his wife, his sister and his father have knelt to stop him, kills a man for the armour he is wearing, and is caught with his own off by Achilles and the Myrmidons. Troy keeps the field and has lost everything, and Pandarus is left alone on stage to make his will.",
+      "scenes": [
+        { "ref": "5.1", "title": "Achilles's tent", "summary": "Thersites brings a letter from Hecuba that keeps Achilles out of the battle; the Trojans come to supper, and Diomedes slips away to Calchas." },
+        { "ref": "5.2", "title": "Four people watching one", "summary": "Cressida gives Diomedes the sleeve; Troilus, hidden with Ulysses, refuses at first to believe that the woman he is looking at is Cressida." },
+        { "ref": "5.3", "title": "Hector will not be stopped", "summary": "Andromache, Cassandra and Priam beg Hector to stay in; he goes, and Troilus tears up a letter from Cressida without answering it." },
+        { "ref": "5.4-5.7", "title": "The field", "summary": "Excursions, insults and missed meetings: Thersites talks his way out of a fight, Troilus loses his horse to Diomedes, and Achilles instructs his Myrmidons to ring Hector and kill him." },
+        { "ref": "5.8-5.10", "title": "Hector unarmed, and Pandarus alone", "summary": "Hector takes off his armour and is surrounded; his body is tied to a horse's tail, Troilus carries the news back, and Pandarus addresses the theatre." }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "troilus",
+      "name": "Troilus",
+      "role": "Priam's youngest son, in love with Cressida",
+      "summary": "He argues in the Trojan council that a thing is worth exactly what men are willing to pay for it, and cannot hold that position for a single night once it is applied to him. His love is real and almost entirely self-addressed: he tells Cressida what her constancy will mean to future poets, and when he sees her with Diomedes his first move is to deny that the woman in front of him is Cressida.",
+      "clue": "He wins the argument for keeping Helen with a merchant's reasoning, loses the girl he got by the same means, and stands in the dark insisting that what he can see is not there.",
+      "firstAppearance": "1.1",
+      "traits": ["idealising", "young", "undone by proof"],
+      "relationships": [
+        { "to": "cressida", "label": "in love with, and betrayed by", "kind": "love", "stages": ["act-3", "act-4", "act-5"] },
+        { "to": "pandarus", "label": "brought to Cressida by, and casts off", "kind": "ally", "stages": ["act-1", "act-3", "act-5"] },
+        { "to": "hector", "label": "younger brother of", "kind": "family" },
+        { "to": "diomedes", "label": "rival for Cressida", "kind": "enemy", "stages": ["act-4", "act-5"] }
+      ]
+    },
+    {
+      "id": "cressida",
+      "name": "Cressida",
+      "role": "Calchas's daughter, left in Troy when her father defected",
+      "summary": "She is the quickest talker in the play and the least free person in it. Alone at the end of her first scene she says she will hold off because men value what they have not yet got, and everything afterwards shows how little that leaves her. She is traded for a prisoner in a conversation she is not present at, kissed in turn by the Greek command on arrival, and watched by three hidden men on the night she gives the sleeve away.",
+      "clue": "She keeps her feelings back for an act on principle, gives them away in one night, and is exchanged for a Trojan prisoner the next morning without being consulted.",
+      "firstAppearance": "1.2",
+      "traits": ["quick", "guarded", "traded"],
+      "relationships": [
+        { "to": "troilus", "label": "vows to, then breaks with", "kind": "love", "stages": ["act-3", "act-4", "act-5"] },
+        { "to": "pandarus", "label": "niece of", "kind": "family" },
+        { "to": "diomedes", "label": "given into his charge, and keeps him", "kind": "love", "stages": ["act-4", "act-5"] }
+      ]
+    },
+    {
+      "id": "pandarus",
+      "name": "Pandarus",
+      "role": "Cressida's uncle, and the go-between",
+      "summary": "He praises each lover to the other for a whole afternoon, brings them together, makes jokes at the bedroom door and asks for nothing except to be in the room. He stands over their vows and invites the world to call every future go-between by his name. By the last act he has a cough, a rheum in his eyes and an ache in his bones, and Troilus dismisses him in a line and a half.",
+      "clue": "He advertises one lover to the other all afternoon, gets them a bed, and ends the play alone at the front of the stage complaining about his bones.",
+      "firstAppearance": "1.1",
+      "traits": ["busy", "prurient", "discarded"],
+      "relationships": [
+        { "to": "cressida", "label": "uncle of, and broker for", "kind": "family" },
+        { "to": "troilus", "label": "procures for, and is cast off by", "kind": "ally", "stages": ["act-1", "act-3", "act-5"] },
+        { "to": "thersites", "label": "the play's other diseased commentator", "kind": "doubling" }
+      ]
+    },
+    {
+      "id": "hector",
+      "name": "Hector",
+      "role": "Troy's best soldier, and Priam's eldest son",
+      "summary": "He makes the strongest case in the play for giving Helen back, on the law of nations and the arithmetic of Trojan dead, and then says he will keep her because Troy's dignity is bound up in it. The same split kills him: he lets beaten Greeks get up again, goes to the field on a day his whole family has knelt to prevent, chases a man for his armour, and unbuckles his own in an open field.",
+      "clue": "He proves that keeping Helen is wrong and votes to keep her; he spares the men he beats, and dies because he took his breastplate off to rest.",
+      "firstAppearance": "2.2",
+      "traits": ["courteous", "reasoning", "self-contradicting"],
+      "relationships": [
+        { "to": "troilus", "label": "elder brother of", "kind": "family" },
+        { "to": "cassandra", "label": "brother of, and deaf to", "kind": "family", "stages": ["act-2", "act-5"] },
+        { "to": "ajax", "label": "cousin of, and breaks off the duel for it", "kind": "family", "stages": ["act-4"] },
+        { "to": "achilles", "label": "challenged by, and killed by", "kind": "enemy", "stages": ["act-4", "act-5"] }
+      ]
+    },
+    {
+      "id": "ulysses",
+      "name": "Ulysses",
+      "role": "A Greek commander, and the camp's strategist",
+      "summary": "He gives the play its great speech on degree, and then spends four acts managing two proud men with a rigged lottery and a staged snub. He is right about nearly everything and almost nothing he arranges works: Ajax fights nobody, Achilles comes back for a dead friend, and the war is settled by an ambush. He is also the man who walks Troilus to the tent where he will watch Cressida hand over the sleeve.",
+      "clue": "He explains that order holds the universe together, then fixes a lottery, organises a public cold shoulder, and shows a young man where to stand to watch his girl betray him.",
+      "firstAppearance": "1.3",
+      "traits": ["analytical", "managing", "ineffective"],
+      "relationships": [
+        { "to": "ajax", "label": "flatters into the challenge", "kind": "ally", "stages": ["act-1", "act-2", "act-4"] },
+        { "to": "achilles", "label": "lectures on time and reputation", "kind": "ally", "stages": ["act-2", "act-3"] },
+        { "to": "troilus", "label": "guides to Calchas's tent", "kind": "ally", "stages": ["act-4", "act-5"] }
+      ]
+    },
+    {
+      "id": "achilles",
+      "name": "Achilles",
+      "role": "The Greeks' best fighter, who will not fight",
+      "summary": "He lies in his tent with Patroclus, watching impressions of the generals and living on his own fame and an oath sworn to a Trojan princess. Ulysses tells him that reputation goes stale unless it is kept up daily, and it does not move him; the death of Patroclus does. He then surrounds an unarmed Hector with twenty Myrmidons, has them do the killing, and orders the field to be told that Achilles killed Hector.",
+      "clue": "He spends three acts in his tent laughing at impressions of his commanders, and earns his fame by telling twenty men to ring a man who has taken his armour off.",
+      "firstAppearance": "2.1",
+      "traits": ["idle", "vain", "sudden"],
+      "relationships": [
+        { "to": "hector", "label": "surveys, then ambushes", "kind": "enemy", "stages": ["act-4", "act-5"] },
+        { "to": "ajax", "label": "the camp's other proud man, set against him", "kind": "doubling", "stages": ["act-1", "act-2"] },
+        { "to": "thersites", "label": "keeps as a licensed railer", "kind": "service", "stages": ["act-2", "act-3", "act-5"] }
+      ]
+    },
+    {
+      "id": "thersites",
+      "name": "Thersites",
+      "role": "A scurrilous Greek, kept about the camp as a fool",
+      "summary": "He is beaten by Ajax in his first scene, taken up by Achilles in his second, and licensed to say whatever he likes. His account of the war, that it is a quarrel over an adulteress and a cuckold which will end in disease, is coarser than the play and is never contradicted by it. He gets off the battlefield alive in the last act by telling Hector, accurately, that he is a rascal and a knave.",
+      "clue": "He is struck in his first scene, reduces the whole war to lust and boils, and survives the last battle by admitting to his face that he is worth nothing.",
+      "firstAppearance": "2.1",
+      "traits": ["foul-mouthed", "accurate", "beaten"],
+      "relationships": [
+        { "to": "ajax", "label": "beaten by, and rails at", "kind": "service", "stages": ["act-2"] },
+        { "to": "achilles", "label": "attached to, and licensed by", "kind": "service", "stages": ["act-2", "act-3", "act-5"] },
+        { "to": "pandarus", "label": "the other voice that ends in disease", "kind": "doubling" }
+      ]
+    },
+    {
+      "id": "diomedes",
+      "name": "Diomedes",
+      "role": "A Greek commander, sent to fetch Cressida",
+      "summary": "He is given the job of bringing Cressida out of Troy and tells Troilus to his face that he will take his instructions from nobody. In the camp he presses her for a token, refuses to be teased or delayed, and wears the sleeve on his helm the next morning. He is also the one man who says out loud what Helen has cost, counting a Greek life against every false drop in her veins.",
+      "clue": "He collects a woman as part of a prisoner swap, declines the escort's advice on how to treat her, and rides out next day with another man's sleeve on his helmet.",
+      "firstAppearance": "1.3",
+      "traits": ["blunt", "unsentimental", "effective"],
+      "relationships": [
+        { "to": "cressida", "label": "escorts, courts and keeps", "kind": "love", "stages": ["act-4", "act-5"] },
+        { "to": "troilus", "label": "takes his sleeve and his horse", "kind": "enemy", "stages": ["act-4", "act-5"] }
+      ]
+    },
+    {
+      "id": "ajax",
+      "name": "Ajax",
+      "role": "A Greek lord, half Trojan by blood",
+      "summary": "Alexander describes him in the second scene as a creature assembled from other animals, and the camp treats him as a tool: Ulysses rigs the lottery so that he draws the lot to fight Hector and Achilles is humiliated by the choice. Praised into a stupor, he stops recognising the people he speaks to. The duel he has been built up for ends in an embrace, because his mother was Priam's sister.",
+      "clue": "He is picked to fight Hector because he is slow enough to be flattered into it, and the fight is stopped on the ground that the two of them are cousins.",
+      "firstAppearance": "2.1",
+      "traits": ["slow", "flattered", "half-Trojan"],
+      "relationships": [
+        { "to": "hector", "label": "cousin of, and embraces instead of fighting", "kind": "family", "stages": ["act-4"] },
+        { "to": "achilles", "label": "set up as his replacement", "kind": "doubling", "stages": ["act-1", "act-2"] },
+        { "to": "thersites", "label": "beats him for not reading the proclamation", "kind": "service", "stages": ["act-2"] },
+        { "to": "ulysses", "label": "used by", "kind": "ally", "stages": ["act-1", "act-2", "act-4"] }
+      ]
+    },
+    {
+      "id": "cassandra",
+      "name": "Cassandra",
+      "role": "Priam's daughter, a prophet nobody acts on",
+      "summary": "She breaks into the Trojan council to say that Troy must fall unless Helen goes, and Troilus answers that a mad sister's raptures cannot spoil a good quarrel. In the last act she kneels with Andromache and Priam to keep Hector indoors, and describes his wounds, his pale eye and the city's screaming while he is standing in front of her, unhurt. She is right on both occasions and obeyed on neither.",
+      "clue": "She walks into a war council to say the city will burn, is called brain-sick by her own brother, and later describes her brother's death to his face before he goes out.",
+      "firstAppearance": "2.2",
+      "traits": ["exact", "unheeded", "raving"],
+      "relationships": [
+        { "to": "hector", "label": "sister of, and cannot stop him", "kind": "family", "stages": ["act-2", "act-5"] },
+        { "to": "troilus", "label": "sister of, dismissed by", "kind": "family", "stages": ["act-2", "act-5"] }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "value",
+      "name": "Price and value",
+      "summary": "The Trojan council spends most of a scene on a question of pricing: is Helen worth what she has cost. Troilus says worth is whatever a buyer will pay, Hector says a thing has its own estimate apart from the wanting, and the play then hands the argument to the lovers, where Cressida is exchanged for a prisoner and a sleeve becomes a trophy.",
+      "development": "Troilus makes his merchant's case in 2.2 and Hector answers it; by 4.3 a woman is being swapped for Antenor, and by 5.5 Diomedes is sending Troilus's captured horse to her as a gift."
+    },
+    {
+      "id": "honour",
+      "name": "Honour",
+      "summary": "Everybody appeals to honour and almost nobody can say what it requires. It makes Hector keep a woman he has just proved should be sent home, keeps Achilles in his tent, brings him out of it, calls off a duel between cousins, and finally licenses twenty men to kill one who is unarmed.",
+      "development": "Hector's challenge in 1.3 offers the old single-combat version; 4.5 breaks it off on grounds of kinship; 5.7 replaces it with the Myrmidons standing in a ring."
+    },
+    {
+      "id": "reputation",
+      "name": "Reputation",
+      "summary": "These names arrive on stage already famous, and the play tests what fame is made of. Ulysses tells Achilles that good deeds fall into a bag on time's back and that only the newest is looked at, and the Greek camp then proves it by transferring its worship to Ajax inside a day.",
+      "development": "Ulysses lectures Achilles in 3.3; Ajax is praised into stupidity in 2.3 and cannot recognise Thersites by the next scene; Achilles buys his fame back with an ambush in 5.8."
+    },
+    {
+      "id": "loyalty",
+      "name": "Vows and their keeping",
+      "summary": "Three people in an orchard swear an oath and, in the same breath, name the proverbs their names will become if it is broken. The play then breaks it. Troilus asks Cressida to be true four times in one parting, which is already a forecast, and she gives the sleeve away on her second night in the camp.",
+      "development": "The oaths are sworn in 3.2, repeated as anxious instructions in 4.4, and cashed in 5.2, where Troilus watches the sleeve change hands and tries to argue that the woman is somebody else."
+    },
+    {
+      "id": "desire",
+      "name": "Appetite",
+      "summary": "Wanting is the engine of both plots and the play keeps putting it in the language of eating and infection. Ulysses ends his speech on order with appetite as a wolf that devours everything and then itself, Troilus says the will is infinite and the performance a slave to limit, and Thersites reduces the whole war to lechery.",
+      "development": "1.3 gives the political version, 3.2 the erotic one, and Act V the physical bill: Thersites on disease, Pandarus coughing, and the last lines of the play made out of his ailments."
+    },
+    {
+      "id": "authority",
+      "name": "Degree and command",
+      "summary": "The Greek army has a general who cannot get his best soldier out of bed. Ulysses explains the failure as the collapse of rank into emulation, where each man envies the one above him, and then treats the collapse as a resource, running the camp by flattery, rigged chance and manufactured slights instead of orders.",
+      "development": "The diagnosis comes in 1.3 and the remedy immediately after it; 2.3 and 3.3 show the remedy in operation; Act V shows what it produced, which is a victory nobody in the camp planned."
+    },
+    {
+      "id": "time",
+      "name": "Time",
+      "summary": "The play is soaked in the future tense. The lovers swear by what people will say of them centuries later, Cassandra describes a death that has not happened yet, Ulysses turns time into a host hustling his guests out of the door, and Hector answers a prophecy of Troy's fall by saying the end will crown everything.",
+      "development": "Cassandra's warning in 2.2 goes unheeded; the lovers name their own afterlife in 3.2; Ulysses makes time an argument for action in 3.3; and 4.5 leaves the outcome to time as arbitrator."
+    }
+  ],
+  "techniques": [
+    {
+      "id": "double-plot",
+      "name": "Double plot",
+      "definition": "A second story running beside the first, repeating its problem in another key and commenting on it.",
+      "inThisBook": "The love plot and the war plot ask the same question about worth and exchange. Helen is kept because the Trojans have already paid too much for her; Cressida is handed over because Antenor is worth more. The two plots meet in 4.5, where a woman is passed round a camp in the scene that also stages the war's one formal duel."
+    },
+    {
+      "id": "overhearing",
+      "name": "Watching unseen",
+      "definition": "A scene built in layers, with each watcher watched by another, so the audience sees the reaction before the event has finished.",
+      "inThisBook": "Act V Scene 2 puts Cressida and Diomedes at the front, Troilus and Ulysses concealed behind them, and Thersites behind those two supplying obscene commentary. Every word Cressida says reaches the audience through three interested men, which is why the scene refuses to settle what she is doing."
+    },
+    {
+      "id": "epithets",
+      "name": "Epithets",
+      "definition": "The fixed descriptive tags attached to famous names by the tradition a story comes from.",
+      "inThisBook": "The characters walk on already labelled by Homer and the Troy books: great Hector, the great Achilles, wise Ulysses. The play sets the label beside the man in the tent, so that Achilles is introduced as the sinew and forehand of the host and discovered on a lazy bed, laughing at impressions."
+    },
+    {
+      "id": "foils",
+      "name": "Foils",
+      "definition": "A character constructed to throw another's choices into relief by making different ones.",
+      "inThisBook": "Ajax and Achilles are set against each other deliberately, by Ulysses, who calls them two curs to be set on by their own pride. Hector and Troilus split the argument about Helen between an old code and a new one, and Cressida and Helen are the two women the war is fought over and about."
+    },
+    {
+      "id": "catalogue",
+      "name": "Catalogue",
+      "definition": "A list allowed to run on past the point of usefulness, so that the accumulation itself becomes the effect.",
+      "inThisBook": "Thersites curses Patroclus with a list of ailments that runs from the guts-griping ruptures through raw eyes and wheezing lungs to the incurable bone-ache, and does not stop where a joke would. The same device builds Ulysses' picture of the universe in 1.3, where the list of things degree holds up is longer than the argument needs."
+    },
+    {
+      "id": "prophecy",
+      "name": "Prophecy",
+      "definition": "A statement about the future that shapes the action by being believed, whether or not it is true.",
+      "inThisBook": "Cassandra tells the council Troy will burn and is called brain-sick; she then describes Hector's death in detail to his face. The lovers do the same thing to themselves in 3.2, swearing by the proverbs their names will become, and the audience already knows that all three forecasts are correct."
+    },
+    {
+      "id": "epilogue",
+      "name": "Epilogue",
+      "definition": "A direct address to the audience after the story has closed.",
+      "inThisBook": "Pandarus is left alone after Troilus has walked off, and turns to the house to complain about his trade, recite a scrap of verse about the humble-bee, and promise to leave the audience his diseases in two months' time. It answers the armed Prologue, which also spoke straight out and also promised nothing."
+    }
+  ],
+  "quotations": [
+    {
+      "id": "prologue-armed",
+      "text": "And hither am I come A prologue arm’d, but not in confidence Of author’s pen or actor’s voice, but suited In like conditions as our argument",
+      "speaker": "Prologue",
+      "reference": "Prologue.22",
+      "stage": "act-1",
+      "context": "The opening speech, after the ships have been counted and the six gates of Troy named.",
+      "analysis": "A prologue normally comes out in a black cloak to ask for goodwill. This one comes out in armour and refuses to ask, saying the costume matches the subject. The line also tells the audience how to take everything that follows: the play will be defensive, combative and uninterested in being liked, and it ends by leaving the verdict to chance.",
+      "themes": ["honour", "reputation"],
+      "techniques": ["epilogue"],
+      "characters": [],
+      "source": "Complete Works (eBook 100), Troilus and Cressida Prologue.22-25",
+      "cloze": ["prologue", "confidence"]
+    },
+    {
+      "id": "helen-must-be-fair",
+      "text": "Fools on both sides! Helen must needs be fair, When with your blood you daily paint her thus.",
+      "speaker": "Troilus",
+      "reference": "1.1.94",
+      "stage": "act-1",
+      "context": "Alone after Pandarus has walked out on him, hearing the alarum from the field.",
+      "analysis": "Painting a woman's face was a byword for cosmetic fraud, and Troilus makes the paint blood: Helen's beauty is manufactured daily by the men dying for it. It is the sharpest thing said about the war, and it is said by the man who will stand up in council an act later and argue that she must be kept.",
+      "themes": ["value", "honour"],
+      "techniques": [],
+      "characters": ["troilus"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 1.1.94-95",
+      "cloze": ["Fools", "paint"]
+    },
+    {
+      "id": "men-prize",
+      "text": "Women are angels, wooing: Things won are done; joy’s soul lies in the doing.…Men prize the thing ungain’d more than it is.",
+      "speaker": "Cressida",
+      "reference": "1.2.287",
+      "stage": "act-1",
+      "context": "Alone at the end of her first scene, after her uncle has spent the afternoon selling Troilus to her.",
+      "analysis": "Her first private words are a piece of market analysis, and they are about herself as the commodity. She has worked out that her value lasts exactly as long as she withholds it, which makes her caution a business decision and not coldness. The play then takes the decision out of her hands by trading her for a prisoner.",
+      "themes": ["value", "desire"],
+      "techniques": [],
+      "characters": ["cressida", "pandarus", "troilus"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 1.2.286-293",
+      "cloze": ["angels", "prize"]
+    },
+    {
+      "id": "degree",
+      "text": "Take but degree away, untune that string, And hark what discord follows! Each thing melts In mere oppugnancy",
+      "speaker": "Ulysses",
+      "reference": "1.3.109",
+      "stage": "act-1",
+      "context": "Answering Agamemnon's question about what is wrong with the Greek army after seven years.",
+      "analysis": "The image is a lute string: loosen one and the whole instrument is out of tune. It is the most orderly statement of hierarchy in Shakespeare, and it is a diagnosis with a plan attached, delivered by a man who is about to rig a lottery. Nothing in the speech is untrue, and nothing in the play is run by it.",
+      "themes": ["authority", "honour"],
+      "techniques": ["catalogue"],
+      "characters": ["ulysses"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 1.3.109-111",
+      "cloze": ["degree", "discord"]
+    },
+    {
+      "id": "universal-wolf",
+      "text": "And appetite, an universal wolf, So doubly seconded with will and power, Must make perforce an universal prey, And last eat up himself.",
+      "speaker": "Ulysses",
+      "reference": "1.3.121",
+      "stage": "act-1",
+      "context": "The end of the same speech, describing what follows when power turns into will and will into appetite.",
+      "analysis": "The chain is deliberate: power, will, appetite, and then a wolf that runs out of everything else and starts on itself. Ulysses means it politically, but the image is the one the rest of the play keeps reaching for, in Thersites's lechery, in Troilus's boundless desire, and in Achilles feeding his eyes on Hector's body before he kills him.",
+      "themes": ["desire", "authority"],
+      "techniques": [],
+      "characters": ["ulysses"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 1.3.121-124",
+      "cloze": ["appetite", "wolf"]
+    },
+    {
+      "id": "let-helen-go",
+      "text": "Let Helen go. Since the first sword was drawn about this question, Every tithe soul ’mongst many thousand dismes Hath been as dear as Helen—I mean, of ours.",
+      "speaker": "Hector",
+      "reference": "2.2.17",
+      "stage": "act-2",
+      "context": "Opening the Trojan council on whether to return Helen and end the war.",
+      "analysis": "A disme is a tenth, the tithe taken by the church, and Hector uses it to count the dead: one in ten of many thousands, and each of them worth as much as she is. The arithmetic is unanswerable and he supplies the qualification himself — of ours — which quietly concedes that the calculation is tribal before it is moral.",
+      "themes": ["value", "honour"],
+      "techniques": [],
+      "characters": ["hector"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 2.2.17-20",
+      "cloze": ["tithe", "dismes"]
+    },
+    {
+      "id": "valued",
+      "text": "What’s aught but as ’tis valued?",
+      "speaker": "Troilus",
+      "reference": "2.2.52",
+      "stage": "act-2",
+      "context": "Interrupting Hector's argument that Helen is not worth what she costs to keep.",
+      "analysis": "Five words that reduce every question in the play to a market. Troilus is arguing that worth is conferred by the buyer, which is convenient for a council that has already paid, and fatal to him personally: if value is only what somebody will give, then Cressida is worth one Antenor, and a sleeve is worth whatever Diomedes decides.",
+      "themes": ["value"],
+      "techniques": [],
+      "characters": ["troilus", "hector"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 2.2.52",
+      "cloze": ["aught", "valued"]
+    },
+    {
+      "id": "value-dwells",
+      "text": "But value dwells not in particular will: It holds his estimate and dignity As well wherein ’tis precious of itself As in the prizer.",
+      "speaker": "Hector",
+      "reference": "2.2.53",
+      "stage": "act-2",
+      "context": "The immediate reply to Troilus in the Trojan council.",
+      "analysis": "Hector's answer is the philosophical one: a thing has worth in itself as well as in the eye of whoever prizes it, and to make the service greater than the god is idolatry. He is right, he wins the exchange, and he then votes with his brothers anyway, which is the moment the play's whole argument about value is revealed to be unenforceable.",
+      "themes": ["value", "honour"],
+      "techniques": ["foils"],
+      "characters": ["hector", "troilus"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 2.2.53-56",
+      "cloze": ["value", "prizer"]
+    },
+    {
+      "id": "propend",
+      "text": "Hector’s opinion Is this, in way of truth. Yet, ne’ertheless, My spritely brethren, I propend to you In resolution to keep Helen still",
+      "speaker": "Hector",
+      "reference": "2.2.190",
+      "stage": "act-2",
+      "context": "Closing the debate, immediately after proving that the law of nature and of nations requires Helen's return.",
+      "analysis": "The hinge of the play turns on two words. He has established the truth, in way of truth, and then leans the other way because the dignity of the family is engaged. Nothing has been refuted. The council simply prefers its own reputation to its own reasoning, and Troy is destroyed by a man who could see the answer perfectly well.",
+      "themes": ["honour", "value", "reputation"],
+      "techniques": [],
+      "characters": ["hector", "troilus"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 2.2.188-193",
+      "cloze": ["opinion", "propend"]
+    },
+    {
+      "id": "whore-and-cuckold",
+      "text": "All the argument is a whore and a cuckold—a good quarrel to draw emulous factions and bleed to death upon.",
+      "speaker": "Thersites",
+      "reference": "2.3.72",
+      "stage": "act-2",
+      "context": "Leaving Achilles's tent as the Greek generals arrive.",
+      "analysis": "Argument means the plot of a play as well as the matter of a dispute, so Thersites is reviewing the drama he is standing in. Ten years, sixty-nine ships and every famous name in the Greek world reduced to two people and their adultery. The play never answers him, and every later scene supplies more evidence for the prosecution.",
+      "themes": ["desire", "honour"],
+      "techniques": ["catalogue"],
+      "characters": ["thersites"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 2.3.72-74",
+      "cloze": ["argument", "cuckold"]
+    },
+    {
+      "id": "monstruosity",
+      "text": "This is the monstruosity in love, lady, that the will is infinite, and the execution confin’d; that the desire is boundless, and the act a slave to limit.",
+      "speaker": "Troilus",
+      "reference": "3.2.81",
+      "stage": "act-3",
+      "context": "In the orchard, answering Cressida's suggestion that lovers promise more than they can deliver.",
+      "analysis": "He thinks he is paying love a compliment and he is describing the machinery that will break them both. Will and desire are limitless, performance is not, and the gap between them is where every vow in the play goes. Cressida has just made the same point as a joke about lions and hares, and she is the one who will be blamed for proving it.",
+      "themes": ["desire", "loyalty"],
+      "techniques": [],
+      "characters": ["troilus", "cressida"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 3.2.79-83",
+      "cloze": ["monstruosity", "boundless"]
+    },
+    {
+      "id": "as-false-as-cressid",
+      "text": "If I be false, or swerve a hair from truth, When time is old and hath forgot itself, When waterdrops have worn the stones of Troy…‘As false as Cressid.’",
+      "speaker": "Cressida",
+      "reference": "3.2.183",
+      "stage": "act-3",
+      "context": "In the orchard, answering Troilus's vow that lovers will swear by his name.",
+      "analysis": "She invents her own curse and gets it exactly right, which is the strangest thing in the play. The condition she sets is geological — Troy worn away by water, cities swallowed by oblivion — and the punishment is that one phrase outlives all of it. By 1602 the phrase already existed, so the audience is watching a woman coin a proverb she is standing inside.",
+      "themes": ["loyalty", "reputation", "time"],
+      "techniques": ["prophecy"],
+      "characters": ["cressida", "troilus"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 3.2.183-196",
+      "cloze": ["swerve", "false"]
+    },
+    {
+      "id": "all-brokers",
+      "text": "let all constant men be Troiluses, all false women Cressids, and all brokers between Pandars.",
+      "speaker": "Pandarus",
+      "reference": "3.2.200",
+      "stage": "act-3",
+      "context": "Witnessing the lovers' oaths and joining his own name to them before taking the pair to a bed.",
+      "analysis": "All three names had already become common nouns by the time the play was written, and Pandarus hands them over as though the language were waiting for his permission. The joke is that only his own prediction is neutral: constancy and falsehood are still to be proved, but a pander is a pander in the act of speaking.",
+      "themes": ["loyalty", "reputation"],
+      "techniques": ["prophecy"],
+      "characters": ["pandarus", "troilus", "cressida"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 3.2.198-202",
+      "cloze": ["Troiluses", "brokers"]
+    },
+    {
+      "id": "wallet",
+      "text": "Time hath, my lord, a wallet at his back, Wherein he puts alms for oblivion, A great-siz’d monster of ingratitudes.",
+      "speaker": "Ulysses",
+      "reference": "3.3.145",
+      "stage": "act-3",
+      "context": "Working on Achilles outside his tent, after the generals have walked past him without speaking.",
+      "analysis": "A wallet here is a beggar's satchel, worn behind so the owner cannot see into it, and what goes in are the good deeds already done. Ulysses is telling a soldier that his past is charity thrown to a monster who will not remember it. It is the most persuasive speech in the play and it fails: Achilles moves only when Patroclus is killed.",
+      "themes": ["reputation", "time"],
+      "techniques": [],
+      "characters": ["ulysses", "achilles"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 3.3.145-147",
+      "cloze": ["wallet", "oblivion"]
+    },
+    {
+      "id": "one-touch",
+      "text": "One touch of nature makes the whole world kin— That all with one consent praise new-born gauds, Though they are made and moulded of things past",
+      "speaker": "Ulysses",
+      "reference": "3.3.175",
+      "stage": "act-3",
+      "context": "The same speech, explaining why the Greek camp has transferred its admiration to Ajax.",
+      "analysis": "The first line is quoted at funerals as a statement about common feeling. In place it means the opposite: the trait all humanity shares is a weakness for the newest shiny thing, and the gauds are second-hand at that. Ulysses is flattering a man by telling him the world is fickle, which is itself the technique he is describing.",
+      "themes": ["reputation", "time"],
+      "techniques": ["epithets"],
+      "characters": ["ulysses", "achilles", "ajax"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 3.3.175-177",
+      "cloze": ["nature", "gauds"]
+    },
+    {
+      "id": "be-thou-true",
+      "text": "I speak not ‘Be thou true’ as fearing thee, For I will throw my glove to Death himself That there’s no maculation in thy heart",
+      "speaker": "Troilus",
+      "reference": "4.4.61",
+      "stage": "act-4",
+      "context": "Parting from Cressida at Pandarus's house, an hour before she is handed over.",
+      "analysis": "He has already said be thou true twice and will say it twice more, and each denial that he is afraid makes the fear plainer. Maculation is a stain, a word from theology rather than love talk. Cressida's exasperated reply, that she will be true, is the last promise she makes in Troy, and she keeps it for about a day.",
+      "themes": ["loyalty", "desire"],
+      "techniques": [],
+      "characters": ["troilus", "cressida"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 4.4.61-63",
+      "cloze": ["glove", "maculation"]
+    },
+    {
+      "id": "daughters-of-the-game",
+      "text": "There’s language in her eye, her cheek, her lip, Nay, her foot speaks; her wanton spirits look out At every joint and motive of her body.…Set them down For sluttish spoils of opportunity, And daughters of the game.",
+      "speaker": "Ulysses",
+      "reference": "4.5.55",
+      "stage": "act-4",
+      "context": "As Cressida is led away, immediately after the Greek commanders have kissed her one by one.",
+      "analysis": "He has just taken part in the general kissing and refused her one himself, and he now reads her body as a text anybody may open. Nestor's verdict, a woman of quick sense, is what provokes it. The speech decides Cressida's reputation for the audience four hundred lines before she does anything, and it is delivered by the play's most reliable observer.",
+      "themes": ["reputation", "desire", "value"],
+      "techniques": ["overhearing"],
+      "characters": ["ulysses", "cressida"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 4.5.55-63",
+      "cloze": ["language", "sluttish"]
+    },
+    {
+      "id": "end-crowns-all",
+      "text": "The end crowns all; And that old common arbitrator, Time, Will one day end it.",
+      "speaker": "Hector",
+      "reference": "4.5.223",
+      "stage": "act-4",
+      "context": "Answering Ulysses, who has told him the walls of Troy must kiss their own feet.",
+      "analysis": "Hector is being courteous and is also refusing the prophecy: he will not argue about the future, he will leave it to time. The audience knows Troy falls, so the calm is unbearable rather than wise. He has three scenes to live, and the end that crowns him is an unarmed man in a field being surrounded by twenty soldiers.",
+      "themes": ["time", "honour"],
+      "techniques": ["prophecy"],
+      "characters": ["hector", "ulysses"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 4.5.223-225",
+      "cloze": ["crowns", "arbitrator"]
+    },
+    {
+      "id": "one-eye",
+      "text": "Troilus, farewell! One eye yet looks on thee; But with my heart the other eye doth see. Ah, poor our sex! this fault in us I find, The error of our eye directs our mind.",
+      "speaker": "Cressida",
+      "reference": "5.2.107",
+      "stage": "act-5",
+      "context": "Alone, after Diomedes has taken the sleeve and gone.",
+      "analysis": "Her only soliloquy since the first act, and it is an admission with the terms already set: the fault is the eye's, and the eye belongs to a sex, not to her. Whether that is honesty, self-excuse or the language she has been given by the men watching her is the argument the scene exists to start. She does not appear again.",
+      "themes": ["loyalty", "desire"],
+      "techniques": ["overhearing"],
+      "characters": ["cressida", "troilus", "diomedes"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 5.2.107-112",
+      "cloze": ["eye", "error"]
+    },
+    {
+      "id": "this-is-and-is-not",
+      "text": "Bi-fold authority! where reason can revolt Without perdition, and loss assume all reason Without revolt: this is, and is not, Cressid.",
+      "speaker": "Troilus",
+      "reference": "5.2.146",
+      "stage": "act-5",
+      "context": "Still hidden with Ulysses, a few lines after watching Cressida hand the sleeve to Diomedes.",
+      "analysis": "The syntax breaks up because the thought will not close: two authorities, the eyes and the vows, each fully convincing, and no way to prefer one. It is the play's central sentence and its hardest, and it is spoken by a man who has argued for four acts that things are worth whatever we decide they are worth.",
+      "themes": ["loyalty", "value"],
+      "techniques": ["overhearing"],
+      "characters": ["troilus", "cressida", "ulysses"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 5.2.143-146",
+      "cloze": ["authority", "Cressid"]
+    },
+    {
+      "id": "wars-and-lechery",
+      "text": "Lechery, lechery! Still wars and lechery! Nothing else holds fashion.",
+      "speaker": "Thersites",
+      "reference": "5.2.194",
+      "stage": "act-5",
+      "context": "Left alone when Troilus and Ulysses have gone, at the end of the scene he has spent commenting on.",
+      "analysis": "He has watched the same scene the audience has and this is his summary of it, offered as the closing remark on the whole story. Holds fashion means stays in style, so even the two constants are being treated as a passing taste. The line is usually the one productions build their design around, and the play gives it to a man everybody hits.",
+      "themes": ["desire", "honour"],
+      "techniques": ["overhearing"],
+      "characters": ["thersites"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 5.2.192-195",
+      "cloze": ["Lechery", "fashion"]
+    },
+    {
+      "id": "honour-weather",
+      "text": "Mine honour keeps the weather of my fate. Life every man holds dear; but the dear man Holds honour far more precious dear than life.",
+      "speaker": "Hector",
+      "reference": "5.3.26",
+      "stage": "act-5",
+      "context": "Refusing Andromache and Cassandra, who have knelt to keep him from the field.",
+      "analysis": "To keep the weather is to hold the windward side in a sea fight, the advantage position. Hector is saying his honour has the better of his fate, and the play gives him four scenes before the Myrmidons prove otherwise. The lines are noble and are also the reason he dies: he has sworn an oath to appear, and the oath outranks every warning he has been given.",
+      "themes": ["honour", "time"],
+      "techniques": [],
+      "characters": ["hector", "cassandra"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 5.3.26-28",
+      "cloze": ["weather", "precious"]
+    },
+    {
+      "id": "decreed-hector",
+      "text": "Come here about me, you my Myrmidons; Mark what I say. Attend me where I wheel; Strike not a stroke, but keep yourselves in breath…It is decreed Hector the great must die.",
+      "speaker": "Achilles",
+      "reference": "5.7.1",
+      "stage": "act-5",
+      "context": "Briefing his own men in the middle of the battle, after the death of Patroclus.",
+      "analysis": "Eight lines of tactical instruction: stand round me, save your wind, and when I find him make a fence of your weapons. Decreed sounds like fate and means his own order. The single combat the whole play has been arranging, with heralds, a lottery and a trumpet, is replaced here by a squad briefing, and nobody in the camp objects afterwards.",
+      "themes": ["honour", "reputation"],
+      "techniques": ["foils"],
+      "characters": ["achilles", "hector"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 5.7.1-8",
+      "cloze": ["Myrmidons", "decreed"]
+    },
+    {
+      "id": "pandarus-diseases",
+      "text": "Brethren and sisters of the hold-door trade, Some two months hence my will shall here be made.…Till then I’ll sweat and seek about for eases, And at that time bequeath you my diseases.",
+      "speaker": "Pandarus",
+      "reference": "5.10.52",
+      "stage": "act-5",
+      "context": "The last lines of the play, spoken alone after Troilus has driven him off.",
+      "analysis": "Hold-door trade is brothel-keeping, and sweat is the sweating-tub used to treat the pox, so the will he promises is a diagnosis. He addresses the audience as colleagues, which the Bankside houses made an easy joke, and then leaves them the one thing he has. No other play of Shakespeare's ends by making the theatre a beneficiary.",
+      "themes": ["desire", "time"],
+      "techniques": ["epilogue"],
+      "characters": ["pandarus", "troilus"],
+      "source": "Complete Works (eBook 100), Troilus and Cressida 5.10.51-57",
+      "cloze": ["hold-door", "diseases"]
+    }
+  ],
+  "timeline": [
+    { "year": 1385, "label": "Chaucer finishes Troilus and Criseyde", "detail": "The long poem that gives Shakespeare the lovers, the uncle and the exchange, and treats all three with a tenderness the play removes.", "kind": "context" },
+    { "year": 1474, "label": "Caxton prints the Recuyell of the Historyes of Troye", "detail": "The first book printed in English, and the source for most of the war material, including the embassy, the duel and Hector's death.", "kind": "context" },
+    { "year": 1513, "label": "Lydgate's Troy Book printed", "detail": "Pynson's edition of a poem written a century earlier for Prince Hal; behind the play's Trojan council and the stress on Hector's courtesy.", "kind": "context" },
+    { "year": 1598, "label": "Chapman's Seven Books of the Iliads", "detail": "The first substantial Homer in English, which put the Greek heroes in front of a London reader at the moment the play was being planned.", "kind": "context" },
+    { "year": 1599, "label": "A rival Troilus for the Admiral's Men", "detail": "Henslowe pays Dekker and Chettle for a play on the same story; a fragment of its plot survives, and nothing of its text.", "kind": "context" },
+    { "year": 1602, "label": "Probably written", "detail": "The usual dating puts it with Hamlet and the other plays of the turn of the century, though no record fixes the year or a first performance.", "kind": "work" },
+    { "year": 1603, "label": "Entered in the Stationers' Register", "detail": "James Roberts enters it on 7 February as acted by the Lord Chamberlain's men, and then does not print it.", "kind": "work" },
+    { "year": 1609, "label": "The quarto, in two states", "detail": "Bonian and Walley print it; some copies advertise performance at the Globe, others replace the title page and add a preface claiming it was never staged.", "kind": "work" },
+    { "year": 1623, "label": "First Folio", "detail": "Printed among the tragedies but left out of the catalogue at the front of the volume, and carrying the Prologue for the first time.", "kind": "work" },
+    { "year": 1679, "label": "Dryden's Truth Found Too Late", "detail": "A rewriting that makes Cressida faithful and has her kill herself to prove it, and keeps the play off the stage in its own form for two centuries.", "kind": "reception" },
+    { "year": 1912, "label": "William Poel stages it in London", "detail": "The Elizabethan Stage Society production at King's Hall, Covent Garden, the first professional performance of Shakespeare's text in England since the seventeenth century.", "kind": "reception" },
+    { "year": 1938, "label": "Michael Macowan's modern dress production", "detail": "At the Westminster Theatre, with the Greeks in service uniform and Thersites as a war correspondent, opening as the Munich crisis broke.", "kind": "reception" },
+    { "year": 1960, "label": "Peter Hall and John Barton at Stratford", "detail": "Played on a square of sand with the armies half naked; the production that established the play in the modern repertory.", "kind": "reception" }
+  ],
+  "places": [
+    { "name": "Troy", "lat": 39.9575, "lon": 26.2389, "note": "The besieged city. The play ends with Troilus promising revenge and the walls still standing." },
+    { "name": "Tenedos", "lat": 39.8283, "lon": 26.0667, "note": "The island where the Prologue lands the Greek fleet before it pitches its tents on the Dardan plain." },
+    { "name": "Sparta", "lat": 37.075, "lon": 22.4297, "note": "Menelaus's kingdom and the marriage Paris broke; the Trojan council of 2.2 is about whether to send Helen back to it." },
+    { "name": "Ithaca", "lat": 38.4, "lon": 20.72, "note": "Agamemnon calls Ulysses the Prince of Ithaca. The island he spends the Odyssey getting back to is a title here and nothing else." },
+    { "name": "Bankside, London", "lat": 51.5081, "lon": -0.0972, "note": "One state of the 1609 quarto says the play was acted at the Globe; the other prints a preface swearing it never was." }
+  ],
+  "criticalViews": [
+    {
+      "position": "A play written for lawyers, not for the Globe",
+      "summary": "The preface added to some copies of the 1609 quarto boasts that the comedy was never clapper-clawed with the palms of the vulgar, and the density of the argument, the legal vocabulary and the taste for debate have suggested an audience of Inns of Court men at a private performance.",
+      "counter": "The other state of the same quarto says plainly that it was acted at the Globe by the King's men, and nothing in the staging asks for an indoor room. The preface is a bookseller's advertisement for an unsold book, and reading it as evidence about performance takes a sales pitch at its word."
+    },
+    {
+      "position": "Cressida is a woman traded, not a woman fallen",
+      "summary": "Read through the exchange for Antenor, the kissing in 4.5 and Ulysses's verdict on her body, Cressida is a piece of property moved between men who never ask her anything, and her accommodation to Diomedes is what survival looks like for someone with no standing in either camp.",
+      "counter": "The play gives her a soliloquy at the end of 5.2 in which she names the fault as her own and generalises it to her sex. A reading that makes her purely a victim has to treat her only unguarded speech as something forced into her mouth by the men watching."
+    },
+    {
+      "position": "The twentieth century made the play legible",
+      "summary": "From Macowan's uniforms in 1938 to the sandpit at Stratford in 1960, productions found that a war both sides know is pointless, run by staff officers and reported by a cynic, needed no adjustment at all. Jan Kott's reading of the play as modern in its bones followed the stagings, and set the terms for the ones after.",
+      "counter": "It flattens the play into satire. Hector's case in 2.2 and Ulysses's on degree are given real weight and real verse, and a production played only for disgust loses the debates, which is where most of the writing is."
+    }
+  ],
+  "essayQuestions": [
+    {
+      "question": "Does Troilus and Cressida have a hero?",
+      "focus": "Heroism, reputation and what the play does with famous names",
+      "plan": [
+        "Start with the armed Prologue, which says the play begins in the middle and leaves the verdict to the chance of war: the audience is told at once that it will be given no beginning and no victory.",
+        "Put Hector's two decisions side by side, the vote in 2.2 and the refusal to stay indoors in 5.3, and ask whether courtesy and honour are the same thing in him.",
+        "Set Achilles on his lazy bed in 2.3 against Achilles briefing the Myrmidons in 5.7, and work out what the ring of weapons does to the idea of single combat.",
+        "Weigh Troilus in the last act: he fights better than anyone, and the play gives him no death, no revenge and no reply from Cressida.",
+        "Decide whether Thersites's account of the war is the play's own judgement or something it keeps at arm's length by making him repellent."
+      ]
+    },
+    {
+      "question": "How free is Cressida?",
+      "focus": "Choice, exchange and who is allowed to speak",
+      "plan": [
+        "Begin with the soliloquy that closes 1.2 and the rule she sets herself there: hold off, because men prize what they have not got.",
+        "Follow the one decision she does make, in the orchard of 3.2, where she speaks first, blames herself for speaking, and asks to have her mouth stopped.",
+        "Set against that the negotiation in 3.3 and the handover in 4.3, in which she is priced against Antenor by men who never address a word to her.",
+        "Read 4.5 closely: the kissing in turn, her refusal of Menelaus, and Ulysses's ten lines of character assassination as she leaves the stage.",
+        "Finish with 5.2 as a scene with four watchers, and ask what the audience is actually given about her mind, and what it only receives through Troilus, Ulysses and Thersites."
+      ]
+    },
+    {
+      "question": "What is Ulysses's speech on degree doing in the play?",
+      "focus": "Order, rhetoric and the distance between theory and practice",
+      "plan": [
+        "Set out the argument at 1.3.109-124: untune the string and appetite becomes a wolf that eats the world and then itself.",
+        "Note the occasion. Agamemnon has asked for a remedy, and the speech is the preamble to a plan, not a sermon.",
+        "Trace the plan through the lottery at the end of 1.3, the flattery of Ajax in 2.3 and the lecture to Achilles in 3.3.",
+        "Test the results: Ajax fights nobody, Achilles returns only when Patroclus is killed, and the war's decisive act is an ambush no commander ordered.",
+        "Decide whether the speech states the play's politics or is a specimen of the disorder it describes, delivered by the man doing most to manage it."
+      ]
+    },
+    {
+      "question": "Is Hector's death the end of the play?",
+      "focus": "Structure, ending and the last speech",
+      "plan": [
+        "Describe the shape of Act V: ten scenes, most of them under fifty lines, men crossing a field shouting each other's names.",
+        "Look at 5.8 as staging. Hector disarms, Achilles arrives with a squad, the order is given, and the cry that Achilles killed Hector is arranged before the body is cold.",
+        "List what does not happen: Troy does not fall, Troilus does not die, Cressida is not seen again after 5.2, and Helen is never mentioned in the last act.",
+        "Take Troilus's flat report that Hector is dead and there is no more to say as a candidate ending, and test it against the fifty lines that follow.",
+        "Finish with Pandarus alone at the front of the stage, and ask what it does to an audience to be written into a sick man's will."
+      ]
+    }
+  ],
+  "discussionQuestions": [
+    "Troilus says a thing is worth whatever it is valued at; Hector says value does not live in the wanting. Does the play take a side?",
+    "Hector proves that Helen should go home and then votes to keep her. Is that cowardice, family loyalty, or something the play thinks is ordinary?",
+    "Cressida holds herself back for a whole act on principle. Is that coldness, tactics, or the only defence available to her?",
+    "Ajax and Hector are cousins, so the duel is called off with an embrace. What does that do to everything the camp has said about honour?",
+    "Thersites is filthy and almost always right. Why does the play need him to be both at once?",
+    "The last person on stage is a sick go-between leaving the audience his diseases. What kind of ending is that, and what would be lost by cutting it?"
+  ],
+  "related": [
+    { "href": "/books/the-iliad/", "why": "The war these names came from, told with the reverence this play strips off them." },
+    { "href": "/books/measure-for-measure/", "why": "The other play of these years that sets a hard argument running and refuses to close it." },
+    { "href": "/books/alls-well-that-ends-well/", "why": "Grouped with this one as a problem play: a courtship pushed through by bargaining, and an ending nobody on stage is glad of." },
+    { "href": "/books/timon-of-athens/", "why": "Athens instead of Troy, and the same discovery that everything and everyone turns out to have a price." },
+    { "href": "/books/antony-and-cleopatra/", "why": "Another famous love watched and priced by soldiers and politicians who keep telling us what it has cost." }
+  ],
+  "videos": []
+}

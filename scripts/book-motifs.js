@@ -72,6 +72,16 @@ const MOTIFS = {
   beetle: '<ellipse cx="12" cy="13.5" rx="4.6" ry="6.4"/><path d="M12 7.1V20M7.4 9.5 3.5 7M16.6 9.5 20.5 7M7 13.5H3M17 13.5h4M7.6 17.6 4.2 20.4M16.4 17.6l3.4 2.8"/><circle cx="12" cy="5.2" r="2"/>',
   quill: '<path d="M4.5 20.5c0-7 5-13 15-15.5-1 9-5.5 14-12 14.5"/><path d="M4.5 20.5 9 16"/><path d="M11 14.5c2.4-.4 4.2-1.6 5.4-3.6"/>',
   holly: '<path d="M12 8.5c0-3 2-5 6-5.5-.4 3.6-2.4 5.5-6 5.5Z"/><path d="M12 8.5c0-3-2-5-6-5.5.4 3.6 2.4 5.5 6 5.5Z"/><path d="M12 8.5c2.6 0 4.4 1.4 5.4 4-3.4.6-5.4-.6-5.4-4Z"/><path d="M12 8.5c-2.6 0-4.4 1.4-5.4 4 3.4.6 5.4-.6 5.4-4Z"/><circle cx="10.4" cy="17.6" r="1.7"/><circle cx="13.8" cy="19" r="1.7"/>',
+  fingerprint: '<path d="M12 21.5c-1.2-2-1.6-4.3-1.6-7.1"/><path d="M8.9 20.4c-1.1-2-1.5-4-1.5-6.2A4.6 4.6 0 0 1 12 9.6a4.6 4.6 0 0 1 4.6 4.6c0 1.3-.1 2.5-.4 3.6"/><path d="M5.8 17.9a13 13 0 0 1-.4-3.7A6.6 6.6 0 0 1 12 7.6a6.6 6.6 0 0 1 6.6 6.6"/><path d="M3.3 13.4A8.7 8.7 0 0 1 12 5.2a8.7 8.7 0 0 1 6.2 2.6"/><path d="M13.6 21c.5-1.9.7-3.9.7-6"/>',
+  eclipse: '<circle cx="10.5" cy="12" r="5.6"/><circle cx="14.4" cy="10.6" r="5.6"/><path d="M10.5 3.4V1.8M4.1 5.6 3 4.5M2.9 12H1.3M4.1 18.4 3 19.5M10.5 22.2v-1.6"/>',
+  mask: '<path d="M3.6 8.2c2.8-1 5.6-1.5 8.4-1.5s5.6.5 8.4 1.5c0 6-2.4 9.4-5.4 9.4-1.6 0-2.4-1.1-3-2.6-.6 1.5-1.4 2.6-3 2.6-3 0-5.4-3.4-5.4-9.4Z"/><path d="M7.2 11.2c.9-.5 1.9-.5 2.8 0M14 11.2c.9-.5 1.9-.5 2.8 0"/>',
+  bars: '<rect x="4" y="3.5" width="16" height="17" rx="1"/><path d="M8.7 3.5v17M12 3.5v17M15.3 3.5v17"/>',
+  ring: '<circle cx="12" cy="14.5" r="5.5"/><path d="M12 9 9.6 5.2h4.8L12 9Z"/><path d="M9.6 5.2 8.4 3.3h7.2l-1.2 1.9"/>',
+  coin: '<ellipse cx="12" cy="7.6" rx="7.2" ry="2.8"/><path d="M4.8 7.6v3.2c0 1.5 3.2 2.8 7.2 2.8s7.2-1.3 7.2-2.8V7.6"/><path d="M4.8 11.6v3.2c0 1.5 3.2 2.8 7.2 2.8s7.2-1.3 7.2-2.8v-3.2"/><path d="M4.8 15.6v3.2c0 1.5 3.2 2.8 7.2 2.8s7.2-1.3 7.2-2.8v-3.2"/>',
+  eagle: '<path d="M12 20.5V9.5"/><path d="M12 9.5 4 5.2c0 3.4 1.6 5.8 4.6 7L12 9.5Z"/><path d="M12 9.5 20 5.2c0 3.4-1.6 5.8-4.6 7L12 9.5Z"/><circle cx="12" cy="6.4" r="1.9"/><path d="M8.6 20.5h6.8"/>',
+  mirror: '<circle cx="7.6" cy="7.4" r="3.1"/><path d="M2.6 20.6c0-2.8 2.2-5 5-5s5 2.2 5 5"/><circle cx="16.4" cy="7.4" r="3.1"/><path d="M11.4 20.6c0-2.8 2.2-5 5-5s5 2.2 5 5"/>',
+  owl: '<path d="M12 21c-3.6 0-6.4-2.9-6.4-6.6 0-4.4 2-8.7 6.4-11.4 4.4 2.7 6.4 7 6.4 11.4C18.4 18.1 15.6 21 12 21Z"/><circle cx="9.4" cy="11" r="1.9"/><circle cx="14.6" cy="11" r="1.9"/><path d="m12 13.6-1.3 1.7h2.6L12 13.6Z"/>',
+  thorn: '<path d="M12 21.5V4.5"/><path d="M12 9 7.2 6.2M12 13.2l4.8-2.8M12 17.4l-4 -2.4"/><path d="m7.2 6.2 1.3 1.2M16.8 10.4l-1.3 1.2M8 15l1.3 1.2"/>',
   fleuron: '<path d="M12 21.5c0-5 3-7 6.5-7.6C18 17.4 15.4 20 12 21.5Z"/><path d="M12 21.5c0-5-3-7-6.5-7.6C6 17.4 8.6 20 12 21.5Z"/><path d="M12 14.5c0-5.5 2.2-8.6 5.5-9.9C17 9.4 15 13 12 14.5Z"/><path d="M12 14.5C12 9 9.8 5.9 6.5 4.6 7 9.4 9 13 12 14.5Z"/>'
 };
 
@@ -131,7 +141,18 @@ const BOOK_MOTIFS = {
   'sign-of-four': 'keyhole',
   'adventures-of-sherlock-holmes': 'keyhole',
   'the-rime-of-the-ancient-mariner': 'albatross',
-  'the-metamorphosis': 'beetle'
+  'the-metamorphosis': 'beetle',
+  'puddnhead-wilson': 'fingerprint',
+  'a-connecticut-yankee-in-king-arthurs-court': 'eclipse',
+  'the-man-who-was-thursday': 'mask',
+  'the-yellow-wallpaper-and-the-giant-wistaria': 'bars',
+  cymbeline: 'ring',
+  'timon-of-athens': 'coin',
+  'titus-andronicus': 'eagle',
+  'comedy-of-errors': 'mirror',
+  'loves-labours-lost': 'owl',
+  'lyrical-ballads': 'thorn',
+  'shakespeares-sonnets': 'quill'
 };
 
 const BY_GENRE = [
