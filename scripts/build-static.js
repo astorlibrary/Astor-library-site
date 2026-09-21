@@ -1350,7 +1350,9 @@ function prepareHtml(html, source) {
   html = html.replace(/<img\b[^>]*>/gi, addImageHints);
   html = promoteFirstMainImage(html);
   html = html.replace(/<img\b[^>]*>/gi, function (tag) { return useBookThumbnail(tag, source); });
-  return html;
+  // Last of all, once every script and stylesheet this page will load has been
+  // added: stamp each with a version taken from its contents.
+  return versionAssets(html);
 }
 
 function copyRecursive(source, destination) {

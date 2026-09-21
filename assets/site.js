@@ -338,12 +338,19 @@
 
   passageHubFilter();
 
-  if (!currentPath.startsWith('/books/')) return;
+  // Book pages and study editions share the same long-read furniture:
+  // a contents line, folded sections, and the shelf at the foot.
+  if (!currentPath.startsWith('/books/') && !currentPath.startsWith('/study/')) return;
 
   const main = document.querySelector('main.page-wrap');
   if (!main) return;
 
   function addPageContents() {
+    // Study editions ship their own contents line; use it rather than
+    // stacking a second one on top.
+    const existing = main.querySelector('.page-contents');
+    if (existing) return existing;
+
     const headings = [...main.querySelectorAll('.section-title h2')];
     if (headings.length < 3) return null;
 
