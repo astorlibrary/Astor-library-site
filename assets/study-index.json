@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 70,
-    "quotations": 1662,
-    "characters": 648,
+    "books": 71,
+    "quotations": 1684,
+    "characters": 654,
     "themes": 234,
     "techniques": 232,
-    "timelineEvents": 820,
-    "places": 417
+    "timelineEvents": 832,
+    "places": 422
   },
   "books": [
     {
@@ -52731,7 +52731,7 @@
         {
           "id": "sonnet-form",
           "name": "Sonnet form in dialogue",
-          "canonicalName": "Sonnet form in dialogue",
+          "canonicalName": "Sonnet form",
           "definition": "Fourteen lines of rhymed iambic pentameter, here divided between speakers rather than spoken by one voice.",
           "bookDefinition": "Fourteen lines of rhymed iambic pentameter, here divided between speakers rather than spoken by one voice.",
           "inThisBook": "The Chorus speaks a sonnet, and then Romeo and Juliet build one together at the feast, each taking a quatrain and sharing the couplet: the form itself performs the meeting."
@@ -55252,7 +55252,7 @@
         {
           "id": "sonnet-form",
           "name": "The English sonnet",
-          "canonicalName": "The English sonnet",
+          "canonicalName": "Sonnet form",
           "definition": "Fourteen lines of iambic pentameter in three quatrains and a closing couplet, rhyming abab cdcd efef gg.",
           "bookDefinition": "Fourteen lines of iambic pentameter in three quatrains and a closing couplet, rhyming abab cdcd efef gg.",
           "inThisBook": "The shape is an argument machine: three chances to state a case and two lines to settle it. Shakespeare uses the quatrains as three parallel images far more often than as three steps of logic — autumn, twilight, embers in 73 — so the couplet has to do the reasoning alone."
@@ -55276,7 +55276,7 @@
         {
           "id": "conceit",
           "name": "The extended conceit",
-          "canonicalName": "The extended conceit",
+          "canonicalName": "Extended conceit",
           "definition": "A single comparison pursued through a whole poem, often from an unpoetic field such as law, accounting or agriculture.",
           "bookDefinition": "A single comparison pursued through a whole poem, often from an unpoetic field such as law, accounting or agriculture.",
           "inThisBook": "Sonnet 87 runs entirely on contract law — dear, estimate, charter, bonds, patent, misprision — so that the end of a love affair is conducted as the discovery of a faulty deed. The procreation poems do the same with usury and husbandry."
@@ -55284,7 +55284,7 @@
         {
           "id": "antithesis",
           "name": "Balanced opposition",
-          "canonicalName": "Balanced opposition",
+          "canonicalName": "Antithesis",
           "definition": "Setting two terms against each other inside a line or across a pair of lines.",
           "bookDefinition": "Setting two terms against each other inside a line or across a pair of lines.",
           "inThisBook": "Whole poems are built from it: 'comfort and despair' in 144, the before-and-after of 129, the catalogue of what love is not in 116. The balance is what makes the couplets sound like conclusions even when they are not."
@@ -55292,7 +55292,7 @@
         {
           "id": "personification",
           "name": "Time given a body",
-          "canonicalName": "Time given a body",
+          "canonicalName": "Personification",
           "definition": "Treating an abstraction as a person who can act and be addressed.",
           "bookDefinition": "Treating an abstraction as a person who can act and be addressed.",
           "inThisBook": "Time gets a scythe, a hand, a pen, lion's paws to be blunted and a fickle glass to hold. Making the enemy visible is what allows the poems to declare war on it in 15 and to negotiate with it in 126."
@@ -55300,7 +55300,7 @@
         {
           "id": "wordplay",
           "name": "Punning in earnest",
-          "canonicalName": "Punning in earnest",
+          "canonicalName": "Wordplay",
           "definition": "Using a word's several meanings at once, for wit and for argument.",
           "bookDefinition": "Using a word's several meanings at once, for wit and for argument.",
           "inThisBook": "Sonnets 135 and 136 turn on Will — desire, the young man, the poet's own name and the thing a woman is said to have — until the joke becomes a demonstration of how little a name secures. Elsewhere the puns are quieter and harder: 'lie' in 138 means both deceive and sleep with."
@@ -87765,6 +87765,1227 @@
         {
           "href": "/books/the-turn-of-the-screw/",
           "why": "The other great case of a narrative handed to the reader as a document, with the reliability of the narrator left as the real question."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "the-yellow-wallpaper-and-the-giant-wistaria",
+      "title": "The Yellow Wall-Paper and The Giant Wistaria",
+      "author": "Charlotte Perkins Gilman",
+      "href": "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
+      "studyHref": "",
+      "playHref": "/play/?book=the-yellow-wallpaper-and-the-giant-wistaria",
+      "form": "story collection",
+      "genre": "Gothic",
+      "period": "American Classics",
+      "setting": "A colonial mansion rented for the summer, and one upstairs room with barred windows, a nailed-down bed and paper the narrator is told not to mind",
+      "written": "The Yellow Wall-Paper in two days at Pasadena in June 1890; The Giant Wistaria a little earlier",
+      "firstPublished": 1892,
+      "readingTime": 55,
+      "difficulty": 3,
+      "lengthNote": "Two short stories: about 6,000 words and 3,000 words, the first told in undated journal entries that get shorter as they go",
+      "openingLine": "It is very seldom that mere ordinary people like John and myself secure ancestral halls for the summer.",
+      "summary": "A woman is brought to a rented country house to recover from what her husband, a physician, calls a slight hysterical tendency. She is forbidden to work or write, put in a top-floor room with barred windows, and left with nothing to look at but the wallpaper. She looks at it. What begins as irritation becomes study, then a pattern, then a figure behind the pattern, then a plan. The companion story in this volume, The Giant Wistaria, puts a second silenced woman in a second old house and lets a party of summer tenants find what is left of her.",
+      "referenceStyle": "journal entry, identified by the phase of the story rather than by page",
+      "sourceText": {
+        "label": "Project Gutenberg text of The Yellow Wallpaper (eBook 1952)",
+        "url": "https://www.gutenberg.org/cache/epub/1952/pg1952.txt",
+        "note": "The Astor edition follows the New England Magazine printing of January 1892 and records where later texts differ. This transcription of a later American printing is used for checking quotations; it spells the title word without a hyphen and prints repellant for repellent. The Giant Wistaria is not in it, so the quotations here are all from The Yellow Wall-Paper."
+      },
+      "structure": [
+        {
+          "id": "arrival",
+          "label": "The house",
+          "title": "A rented mansion, and a diagnosis",
+          "summary": "The narrator arrives at a house she likes and distrusts, with a husband who has decided what is wrong with her and what she may do about it. The rules are set out early: no work, no writing, phosphates, air, and the top-floor room rather than the pretty one downstairs. Everything the story will need is established before anything happens.",
+          "scenes": [
+            {
+              "ref": "First entries",
+              "title": "Ancestral halls",
+              "summary": "Delight in the house, a joke about ghosts, and the first admission that something is wrong that nobody will name."
+            },
+            {
+              "ref": "The diagnosis",
+              "title": "Temporary nervous depression",
+              "summary": "Her husband and her brother, both physicians of high standing, agree there is nothing much the matter. The story's central problem is that she half agrees with them."
+            },
+            {
+              "ref": "The room",
+              "title": "Barred windows, a nailed bed",
+              "summary": "She wanted the downstairs room with roses at the window; she is given the old nursery at the top of the house, with rings in the wall and a gate at the stairs."
+            }
+          ]
+        },
+        {
+          "id": "the-paper",
+          "label": "The pattern",
+          "title": "Forbidden to work, she studies the wall",
+          "summary": "Deprived of company and of writing, she gives the paper the attention she would have given a book. The description sharpens as her boredom deepens: colour, then smell, then a sub-pattern visible only in certain light. Reading the wall is the only intellectual work she is allowed to do, and she does it well.",
+          "scenes": [
+            {
+              "ref": "Colour and pattern",
+              "title": "Repellant, almost revolting",
+              "summary": "The yellow is described with a precision nobody in the house will listen to. Her eye is exact; her authority is nil."
+            },
+            {
+              "ref": "Small talk",
+              "title": "John laughs at me",
+              "summary": "Affection and dismissal arrive in the same sentences, which is what makes the marriage hard to argue with."
+            },
+            {
+              "ref": "Night",
+              "title": "By moonlight it becomes bars",
+              "summary": "The sub-pattern resolves. What she sees at night is a cage, and something inside it."
+            }
+          ]
+        },
+        {
+          "id": "the-woman",
+          "label": "The figure",
+          "title": "Someone is behind the paper",
+          "summary": "The figure becomes a woman, then women, then a woman who creeps outside in daylight. The journal entries shorten and speed up, secrecy grows — she hides the writing, then hides her interest in the paper — and Jennie and John are recast as rivals who want the paper for themselves.",
+          "scenes": [
+            {
+              "ref": "The shaking pattern",
+              "title": "The woman behind shakes it",
+              "summary": "The narrator stops describing a design and starts describing an act. The front pattern moves because someone is trying to get through it."
+            },
+            {
+              "ref": "Daylight",
+              "title": "Creeping women",
+              "summary": "She sees the woman outside, on the road and in the arbours, and says she always locks the door when she creeps by daylight herself."
+            },
+            {
+              "ref": "Suspicion",
+              "title": "They are watching it too",
+              "summary": "John and Jennie are found looking at the paper. The narrator resolves that nobody else shall find it out."
+            }
+          ]
+        },
+        {
+          "id": "the-escape",
+          "label": "The last day",
+          "title": "Peeling the paper, and the man on the floor",
+          "summary": "On the last day of the tenancy she locks herself in, throws the key into the path and strips the room. The final entries are almost without hesitation: the voice that has apologised for itself throughout announces that it has got out. John faints on the threshold, and she creeps over him.",
+          "scenes": [
+            {
+              "ref": "The stripping",
+              "title": "All around the room",
+              "summary": "She peels what she can reach and rages at what she cannot, having first made sure the door is locked and the rope is ready."
+            },
+            {
+              "ref": "The announcement",
+              "title": "I've got out at last",
+              "summary": "The sentence that has divided readers for a century: an escape, a breakdown, or both at once — and the name Jane, which appears nowhere else in the story."
+            },
+            {
+              "ref": "The threshold",
+              "title": "Creeping over him",
+              "summary": "The doctor faints in the doorway, the patient keeps moving, and the story ends on the floor."
+            }
+          ]
+        },
+        {
+          "id": "wistaria",
+          "label": "The Giant Wistaria",
+          "title": "The companion story, seven months earlier",
+          "summary": "A colonial family disposes of a daughter's disgrace and sails for England; a century later a party of summer tenants rent the abandoned house, joke about ghosts, and find a body beneath the wistaria root and a small skeleton in the well. The pairing is the point: the same silencing, told once from inside the room and once from the future, after everyone has stopped listening.",
+          "scenes": [
+            {
+              "ref": "The prologue",
+              "title": "The family leaves",
+              "summary": "A father, a mother and an unnamed daughter, whose child is not to be spoken of, sail for England and leave the house shut up."
+            },
+            {
+              "ref": "The tenants",
+              "title": "A ghost story for the summer",
+              "summary": "The new party competes to invent the house's history, which is the story's joke: they narrate over the woman whose remains are under them."
+            },
+            {
+              "ref": "The discovery",
+              "title": "Under the root, in the well",
+              "summary": "The evidence arrives without commentary. The story stops as soon as it is found, and leaves the tenants' cheerful theories standing."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "narrator",
+          "name": "The narrator",
+          "role": "A young wife and new mother, under treatment in her husband's care",
+          "summary": "Observant, funny in the early entries, and systematically disbelieved. She is a good reader — her account of the paper is the most precise description in the story — and every skill she has is turned on the only object she is allowed. She is never named, unless Jane in the last line is her.",
+          "clue": "Writes in secret because writing is forbidden, and calls the journal dead paper and a great relief to her mind.",
+          "firstAppearance": "First entry",
+          "traits": [
+            "watchful",
+            "apologetic",
+            "unstoppable once she starts"
+          ],
+          "relationships": [
+            {
+              "to": "john",
+              "label": "wife of, patient of",
+              "kind": "family",
+              "stages": [
+                "arrival",
+                "the-paper",
+                "the-woman",
+                "the-escape"
+              ]
+            },
+            {
+              "to": "jennie",
+              "label": "watched by",
+              "kind": "family",
+              "stages": [
+                "the-paper",
+                "the-woman",
+                "the-escape"
+              ]
+            },
+            {
+              "to": "woman-in-paper",
+              "label": "sees, then frees, then becomes",
+              "kind": "doubling",
+              "stages": [
+                "the-woman",
+                "the-escape"
+              ]
+            },
+            {
+              "to": "baby",
+              "label": "mother of, kept from",
+              "kind": "family",
+              "stages": [
+                "arrival",
+                "the-paper"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "john",
+          "name": "John",
+          "role": "Her husband, a physician of high standing",
+          "summary": "Kind in his own account and immovable in practice. He laughs, calls her a blessed little goose, carries her upstairs, schedules her hours and will not hear of a change of room. Nothing he does is cruel by the standards he holds, which is the story's argument: the harm is in the standards.",
+          "clue": "Faints at the sight of what his treatment has produced, and is stepped over.",
+          "firstAppearance": "First entry",
+          "traits": [
+            "certain",
+            "affectionate",
+            "practical"
+          ],
+          "relationships": [
+            {
+              "to": "narrator",
+              "label": "husband of, doctor to",
+              "kind": "family",
+              "stages": [
+                "arrival",
+                "the-paper",
+                "the-woman",
+                "the-escape"
+              ]
+            },
+            {
+              "to": "jennie",
+              "label": "brother of, employer of the household",
+              "kind": "family",
+              "stages": [
+                "arrival",
+                "the-paper"
+              ]
+            },
+            {
+              "to": "mitchell",
+              "label": "threatens to send her to",
+              "kind": "ally",
+              "stages": [
+                "the-paper"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "jennie",
+          "name": "Jennie",
+          "role": "John's sister, keeping house",
+          "summary": "A perfect housekeeper who hopes for no better profession, and the narrator's warder by default. She is not unkind; she simply belongs to the arrangement. When she is found studying the paper, the narrator treats her as a competitor rather than as an ally, which is what the isolation has done.",
+          "clue": "Caught with her hand on the wallpaper, and afterwards told that the narrator can read it better alone.",
+          "firstAppearance": "Early entries",
+          "traits": [
+            "capable",
+            "watchful",
+            "conventional"
+          ],
+          "relationships": [
+            {
+              "to": "narrator",
+              "label": "sister-in-law of, keeper of",
+              "kind": "family",
+              "stages": [
+                "the-paper",
+                "the-woman",
+                "the-escape"
+              ]
+            },
+            {
+              "to": "john",
+              "label": "sister of",
+              "kind": "family",
+              "stages": [
+                "arrival"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "woman-in-paper",
+          "name": "The woman in the paper",
+          "role": "The figure behind the front pattern",
+          "summary": "First a shape, then a woman stooping and creeping, then many women, then one who gets out into the garden by daylight. Whether she is a hallucination, a self-portrait or the story's one honest witness is the question every reading has to answer.",
+          "clue": "Shakes the bars from the inside; is last seen creeping outside, fast, in the open.",
+          "firstAppearance": "Early entries",
+          "traits": [
+            "persistent",
+            "hidden",
+            "always moving"
+          ],
+          "relationships": [
+            {
+              "to": "narrator",
+              "label": "seen by, released by, merged with",
+              "kind": "doubling",
+              "stages": [
+                "the-woman",
+                "the-escape"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "baby",
+          "name": "The baby",
+          "role": "The narrator's child, kept downstairs with Mary",
+          "summary": "Mentioned rarely and always with relief that someone else has charge of him. The relief is the most painful thing in the story: she cannot be with her child, cannot say so plainly, and is grateful for a separation she never chose.",
+          "clue": "She is glad his case is not hers, and cannot be with him without getting nervous.",
+          "firstAppearance": "First entry",
+          "traits": [
+            "absent",
+            "well cared for",
+            "unmentionable"
+          ],
+          "relationships": [
+            {
+              "to": "narrator",
+              "label": "child of",
+              "kind": "family",
+              "stages": [
+                "arrival",
+                "the-paper"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitchell",
+          "name": "Weir Mitchell",
+          "role": "The physician named in the story, and the one who treated Gilman",
+          "summary": "He appears only as a threat: if she does not improve, John will send her to him in the autumn. Naming a living, famous doctor inside a piece of fiction was the story's sharpest move, and the reason its first readers took it as an accusation rather than a ghost story.",
+          "clue": "A name used to end an argument, invoked but never met.",
+          "firstAppearance": "Early entries",
+          "traits": [
+            "eminent",
+            "absent",
+            "final"
+          ],
+          "relationships": [
+            {
+              "to": "john",
+              "label": "authority cited by",
+              "kind": "ally",
+              "stages": [
+                "the-paper"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "confinement",
+          "name": "The room as treatment",
+          "canonicalName": "Confinement",
+          "summary": "Rest is prescribed and enforced: a top-floor nursery with barred windows, a bed that will not move, a gate at the stairs and a schedule for every hour. The cure and the imprisonment are the same arrangement, described by the patient in the tone of someone being looked after.",
+          "development": "She asks for the downstairs room and is refused; she asks to go home and is refused; by the last day she has locked the door herself and thrown the key into the path, which is the first time confinement is her own decision."
+        },
+        {
+          "id": "authority",
+          "name": "Two physicians and a husband",
+          "canonicalName": "Authority and obedience",
+          "summary": "Her husband is her doctor, her brother is a doctor, and the specialist is held in reserve as a threat. Disagreement is reclassified as a symptom, so there is no position from which she can be believed.",
+          "development": "The story opens with her half-accepting the diagnosis and ends with the doctor unconscious in the doorway — the only way the narrative can get him to stop talking."
+        },
+        {
+          "id": "work",
+          "name": "Forbidden to work",
+          "canonicalName": "Work",
+          "summary": "She believes congenial work would do her good and is not allowed any. The story is unusually specific about what the ban costs: company, air, occupation and the right to write down what is happening to her.",
+          "development": "Writing goes underground in the first entries, becomes exhausting by the middle, and is replaced by the only intellectual task the room offers — reading the paper."
+        },
+        {
+          "id": "gender",
+          "name": "What a wife may say",
+          "canonicalName": "Gender",
+          "summary": "Every complaint has to be softened, and the softening is audible. She calls herself unreasonably angry, blames her nervousness, praises John's care and then records the facts that contradict it, leaving the reader to do the arithmetic.",
+          "development": "The apologetic manner thins as the entries shorten, and disappears entirely in the last two pages, where the sentences are short, declarative and unhedged."
+        },
+        {
+          "id": "narration",
+          "name": "A journal that cannot be checked",
+          "canonicalName": "Narration and storytelling",
+          "summary": "Everything comes through one voice, written in secret, in gaps between visits. The form supplies both the intimacy and the doubt: there is no outside account of the room, the paper or the woman in it.",
+          "development": "Early entries are dated by events and hedged with qualifications; later ones lose their frame, until the final pages are written in the present tense with the door locked."
+        },
+        {
+          "id": "secrecy",
+          "name": "Hiding things in a house without privacy",
+          "canonicalName": "Secrecy",
+          "summary": "The journal is hidden, the interest in the paper is hidden, and by the end the discovery is hoarded like property. Secrecy starts as self-defence and becomes the shape of her thinking.",
+          "development": "She hides the writing from John, then hides the paper from Jennie, then locks the door and refuses to admit anyone — protecting a secret that has become the only thing that is hers."
+        },
+        {
+          "id": "identity",
+          "name": "Who gets out",
+          "canonicalName": "Identity",
+          "summary": "The figure in the paper begins as an object of study and ends as a first person. The last entries move from watching a woman creep to reporting her own creeping without marking the join.",
+          "development": "The name Jane in the final speech has no other use in the story; whether she has escaped her keepers, her role or herself is the question the ending deliberately leaves open."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "journal",
+          "name": "The secret journal",
+          "canonicalName": "The secret journal",
+          "definition": "A first-person narrative written in entries, in the present tense, with gaps the reader must fill.",
+          "bookDefinition": "A first-person narrative written in entries, in the present tense, with gaps the reader must fill.",
+          "inThisBook": "The form does the work an omniscient narrator would otherwise do. Entries stop when she is watched and resume when she is alone, so the silences mark the surveillance; and because writing is forbidden, the existence of the text is itself an act of disobedience."
+        },
+        {
+          "id": "unreliable-narrator",
+          "name": "A narrator who cannot be checked",
+          "canonicalName": "A narrator who cannot be checked",
+          "definition": "A first-person account the reader has reason to doubt, with no corroborating voice in the text.",
+          "bookDefinition": "A first-person account the reader has reason to doubt, with no corroborating voice in the text.",
+          "inThisBook": "The doubt is unusually double-edged: she is wrong about the paper and right about the marriage. Readers who dismiss her testimony end up agreeing with John, which is the trap the story sets."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "The furniture of the room",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative keeps returning to until it stands for the argument rather than illustrating it.",
+          "bookDefinition": "Ordinary objects that accumulate meaning by repetition rather than by explanation.",
+          "inThisBook": "The nailed-down bed, the barred windows, the gate at the stairs and the rings in the wall are introduced as the fittings of a nursery and are never glossed. The story lets the reader notice that they are also the fittings of a cell."
+        },
+        {
+          "id": "gothic",
+          "name": "The haunted-house inheritance",
+          "canonicalName": "Gothic machinery",
+          "definition": "The stock furniture of Gothic writing — the ruin, the storm, the locked room, the buried secret — put to a particular use.",
+          "bookDefinition": "Old house, isolated setting, a locked room and a figure that may or may not be there.",
+          "inThisBook": "Every gothic expectation is raised and then declined: the house is not haunted, the ghost is wallpaper, and the horror is a medical arrangement everybody in the story considers reasonable. The Giant Wistaria supplies the conventional version for comparison."
+        },
+        {
+          "id": "thresholds",
+          "name": "Doors, windows and the gate",
+          "canonicalName": "Thresholds",
+          "definition": "Doors, windows, gates and stairs used to mark what may be crossed, by whom, and at what cost.",
+          "bookDefinition": "Boundaries that mark who may pass and who may not.",
+          "inThisBook": "She is carried up the stairs, kept behind a gate, and looks out of barred windows at a garden she is not in. The last scene puts the doctor across the doorway and makes her get past him on the floor."
+        },
+        {
+          "id": "irony",
+          "name": "Praise that convicts",
+          "canonicalName": "Irony",
+          "definition": "Saying one thing in a form that invites the opposite judgement.",
+          "bookDefinition": "Saying one thing in terms that let the reader hear another.",
+          "inThisBook": "He is very careful and loving, and hardly lets me stir without special direction — the sentence means both things at once, and the story is built out of sentences like it."
+        },
+        {
+          "id": "ellipsis",
+          "name": "What the entries leave out",
+          "canonicalName": "Ellipsis",
+          "definition": "What the narrative declines to show, placed where the reader will notice the gap and fill it.",
+          "bookDefinition": "Gaps in the telling that the reader has to bridge.",
+          "inThisBook": "Nothing is said about the birth, little about the baby, and the worst days are represented by their absence from the journal. The most important events in the story are the ones no entry covers."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "ancestral-halls",
+          "text": "It is very seldom that mere ordinary people like John and myself secure ancestral halls for the summer.",
+          "speaker": "",
+          "reference": "First entry",
+          "stage": "arrival",
+          "context": "The opening sentence of the journal.",
+          "analysis": "A social joke, told by someone pleased with her luck. It establishes the voice the story will use throughout — light, self-deprecating, interested in appearances — and the gothic set-up is delivered as a piece of good fortune rather than a warning.",
+          "themes": [
+            "narration"
+          ],
+          "techniques": [
+            "journal",
+            "gothic"
+          ],
+          "characters": [
+            "narrator",
+            "john"
+          ],
+          "source": "Gutenberg text, opening",
+          "cloze": [
+            "ordinary",
+            "ancestral"
+          ]
+        },
+        {
+          "id": "dead-paper",
+          "text": "John is a physician, and perhaps—(I would not say it to a living soul, of course, but this is dead paper and a great relief to my mind)—perhaps that is one reason I do not get well faster.",
+          "speaker": "",
+          "reference": "First entry",
+          "stage": "arrival",
+          "context": "A few lines into the journal, explaining why she is not improving.",
+          "analysis": "The most important sentence in the story is delivered in a parenthesis, in a whisper, and immediately hedged with perhaps. She knows the cause, cannot say it aloud, and says it to paper — which is why the paper has to be dead before it is safe.",
+          "themes": [
+            "authority",
+            "secrecy",
+            "narration"
+          ],
+          "techniques": [
+            "journal"
+          ],
+          "characters": [
+            "narrator",
+            "john"
+          ],
+          "source": "Gutenberg text, first entry",
+          "cloze": [
+            "physician",
+            "dead"
+          ]
+        },
+        {
+          "id": "does-not-believe",
+          "text": "You see he does not believe I am sick!",
+          "speaker": "",
+          "reference": "First entry",
+          "stage": "arrival",
+          "context": "After quoting the diagnosis her husband and brother agree on.",
+          "analysis": "The exclamation mark is doing the work of an argument she is not allowed to make. Being disbelieved, not being ill, is the condition the story is about, and it is stated plainly on the first page and never taken seriously by anyone in the house.",
+          "themes": [
+            "authority",
+            "gender"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "narrator",
+            "john"
+          ],
+          "source": "Gutenberg text, first entry",
+          "cloze": [
+            "believe",
+            "sick"
+          ]
+        },
+        {
+          "id": "physician-of-high-standing",
+          "text": "If a physician of high standing, and one’s own husband, assures friends and relatives that there is really nothing the matter with one but temporary nervous depression—a slight hysterical tendency—what is one to do?",
+          "speaker": "",
+          "reference": "First entry",
+          "stage": "arrival",
+          "context": "Explaining why her own account of herself carries no weight.",
+          "analysis": "The shift to the impersonal 'one' is the sound of someone arguing in a register that might be listened to. The two roles — physician and husband — are stacked deliberately, because each is used to settle what the other cannot.",
+          "themes": [
+            "authority",
+            "gender"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "narrator",
+            "john"
+          ],
+          "source": "Gutenberg text, first entry",
+          "cloze": [
+            "standing",
+            "hysterical"
+          ]
+        },
+        {
+          "id": "forbidden-to-work",
+          "text": "So I take phosphates or phosphites—whichever it is—and tonics, and journeys, and air, and exercise, and am absolutely forbidden to “work” until I am well again.",
+          "speaker": "",
+          "reference": "First entry",
+          "stage": "arrival",
+          "context": "Listing the treatment.",
+          "analysis": "The list runs on as though the items were equivalent, then arrives at the one that matters, with 'work' in quotation marks — his word, handed back. Her uncertainty about the medicine is comic; her certainty about the ban is not.",
+          "themes": [
+            "work",
+            "authority"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "narrator"
+          ],
+          "source": "Gutenberg text, first entry",
+          "cloze": [
+            "phosphates",
+            "forbidden"
+          ]
+        },
+        {
+          "id": "congenial-work",
+          "text": "Personally, I believe that congenial work, with excitement and change, would do me good.",
+          "speaker": "",
+          "reference": "First entry",
+          "stage": "arrival",
+          "context": "Her own view of what would help, offered once.",
+          "analysis": "'Personally' is the word of someone whose opinion is a matter of personality rather than evidence. Her prescription is the opposite of his in every particular, and the story's ending is the demonstration that she was right.",
+          "themes": [
+            "work"
+          ],
+          "techniques": [
+            "journal"
+          ],
+          "characters": [
+            "narrator"
+          ],
+          "source": "Gutenberg text, first entry",
+          "cloze": [
+            "congenial",
+            "excitement"
+          ]
+        },
+        {
+          "id": "john-laughs",
+          "text": "John laughs at me, of course, but one expects that in marriage.",
+          "speaker": "",
+          "reference": "First entry",
+          "stage": "arrival",
+          "context": "After admitting she believes the house is haunted.",
+          "analysis": "Eleven words that describe a marriage and excuse it in the same breath. 'Of course' and 'one expects' are the story's method: the narrator supplies the defence before the reader can object, and the defence is the evidence.",
+          "themes": [
+            "gender",
+            "authority"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "narrator",
+            "john"
+          ],
+          "source": "Gutenberg text, first entry",
+          "cloze": [
+            "laughs",
+            "marriage"
+          ]
+        },
+        {
+          "id": "special-direction",
+          "text": "He is very careful and loving, and hardly lets me stir without special direction.",
+          "speaker": "",
+          "reference": "Early entry",
+          "stage": "arrival",
+          "context": "Describing the daily regime.",
+          "analysis": "Care and control are stated as one thing, because in this house they are. The sentence can be read as gratitude or as a description of custody, and the story never chooses — it simply keeps producing examples.",
+          "themes": [
+            "confinement",
+            "authority"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "narrator",
+            "john"
+          ],
+          "source": "Gutenberg text, early entry",
+          "cloze": [
+            "careful",
+            "direction"
+          ]
+        },
+        {
+          "id": "our-room",
+          "text": "I don’t like our room a bit. I wanted one downstairs that opened on the piazza and had roses all over the window, and such pretty old-fashioned chintz hangings! but John would not hear of it.",
+          "speaker": "",
+          "reference": "Early entry",
+          "stage": "arrival",
+          "context": "On being given the top-floor nursery instead.",
+          "analysis": "The only choice she asks to make in the whole story, and it is refused with a reason about windows and beds. Everything that follows happens because she is in this room rather than that one.",
+          "themes": [
+            "confinement"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "narrator",
+            "john"
+          ],
+          "source": "Gutenberg text, early entry",
+          "cloze": [
+            "downstairs",
+            "roses"
+          ]
+        },
+        {
+          "id": "repellant",
+          "text": "The color is repellant, almost revolting; a smouldering, unclean yellow, strangely faded by the slow-turning sunlight.",
+          "speaker": "",
+          "reference": "Early entry",
+          "stage": "the-paper",
+          "context": "Her first sustained description of the wallpaper.",
+          "analysis": "This is expert writing, and the story knows it: rhythm, three adjectives that refuse to settle, and a last clause that turns light itself into a stain. The woman who is not fit to hold a pen produces the best prose in the house.",
+          "themes": [
+            "work",
+            "narration"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "narrator"
+          ],
+          "source": "Gutenberg text, early entry",
+          "cloze": [
+            "repellant",
+            "smouldering"
+          ]
+        },
+        {
+          "id": "confuse-the-eye",
+          "text": "It is dull enough to confuse the eye in following, pronounced enough to constantly irritate and provoke study",
+          "speaker": "",
+          "reference": "Early entry",
+          "stage": "the-paper",
+          "context": "On the pattern itself.",
+          "analysis": "A description of the paper and of her situation in one clause: dull enough to be maddening, marked enough to demand attention. 'Provoke study' is the giveaway — she has been forbidden intellectual work and has found some anyway.",
+          "themes": [
+            "work",
+            "confinement"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "narrator"
+          ],
+          "source": "Gutenberg text, early entry",
+          "cloze": [
+            "confuse",
+            "study"
+          ]
+        },
+        {
+          "id": "broken-neck",
+          "text": "There is a recurrent spot where the pattern lolls like a broken neck and two bulbous eyes stare at you upside-down.",
+          "speaker": "",
+          "reference": "Middle entry",
+          "stage": "the-paper",
+          "context": "Cataloguing the pattern's features.",
+          "analysis": "The first body in the paper is a corpse, seen upside down and looking back. The observation is offered in the same matter-of-fact tone as the colour, which is how the story moves from decoration to horror without changing register.",
+          "themes": [
+            "narration"
+          ],
+          "techniques": [
+            "gothic",
+            "symbolic-objects"
+          ],
+          "characters": [
+            "narrator"
+          ],
+          "source": "Gutenberg text, middle entry",
+          "cloze": [
+            "lolls",
+            "bulbous"
+          ]
+        },
+        {
+          "id": "self-control",
+          "text": "But John says if I feel so I shall neglect proper self-control; so I take pains to control myself—before him, at least, and that makes me very tired.",
+          "speaker": "",
+          "reference": "Middle entry",
+          "stage": "the-paper",
+          "context": "After admitting she cries at nothing.",
+          "analysis": "The performance of wellness is itself exhausting, and she is the only person who can see the cost. 'Before him, at least' quietly announces that there are now two versions of her: the one in the room and the one in the journal.",
+          "themes": [
+            "gender",
+            "secrecy"
+          ],
+          "techniques": [
+            "journal"
+          ],
+          "characters": [
+            "narrator",
+            "john"
+          ],
+          "source": "Gutenberg text, middle entry",
+          "cloze": [
+            "self-control",
+            "tired"
+          ]
+        },
+        {
+          "id": "bars",
+          "text": "at night in any kind of light, in twilight, candlelight, lamplight, and worst of all by moonlight, it becomes bars!",
+          "speaker": "",
+          "reference": "Middle entry",
+          "stage": "the-paper",
+          "context": "On what the sub-pattern looks like after dark.",
+          "analysis": "Four kinds of light, listed in the order they fall on the wall, and then the word the room has been asking for. The bars are real — the windows have them — so the paper is not inventing the cage, only repeating it.",
+          "themes": [
+            "confinement"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "narrator",
+            "woman-in-paper"
+          ],
+          "source": "Gutenberg text, middle entry",
+          "cloze": [
+            "moonlight",
+            "bars"
+          ]
+        },
+        {
+          "id": "nobody-knows",
+          "text": "There are things in that paper that nobody knows but me, or ever will.",
+          "speaker": "",
+          "reference": "Middle entry",
+          "stage": "the-woman",
+          "context": "As her interest in the paper becomes private property.",
+          "analysis": "Knowledge is the one thing the household has not taken, so she hoards it. The sentence is triumphant and isolating at once, and from here on the story's secrecy is her doing rather than theirs.",
+          "themes": [
+            "secrecy",
+            "identity"
+          ],
+          "techniques": [
+            "journal"
+          ],
+          "characters": [
+            "narrator"
+          ],
+          "source": "Gutenberg text, middle entry",
+          "cloze": [
+            "nobody",
+            "knows"
+          ]
+        },
+        {
+          "id": "front-pattern",
+          "text": "The front pattern does move—and no wonder! The woman behind shakes it!",
+          "speaker": "",
+          "reference": "Late entry",
+          "stage": "the-woman",
+          "context": "The moment the pattern is explained.",
+          "analysis": "A design becomes an event: something is behind it and is trying to get out. 'No wonder' is the tone of a problem solved, which is why the sentence is frightening — she is not raving, she is concluding.",
+          "themes": [
+            "identity",
+            "confinement"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "narrator",
+            "woman-in-paper"
+          ],
+          "source": "Gutenberg text, late entry",
+          "cloze": [
+            "front",
+            "shakes"
+          ]
+        },
+        {
+          "id": "many-women",
+          "text": "Sometimes I think there are a great many women behind, and sometimes only one, and she crawls around fast, and her crawling shakes it all over.",
+          "speaker": "",
+          "reference": "Late entry",
+          "stage": "the-woman",
+          "context": "Watching the paper by daylight.",
+          "analysis": "The figure multiplies and the story widens: one woman behind a pattern is a haunting, a great many is a social fact. The sentence is the closest the story comes to naming who else is in rooms like this.",
+          "themes": [
+            "gender",
+            "identity"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "narrator",
+            "woman-in-paper"
+          ],
+          "source": "Gutenberg text, late entry",
+          "cloze": [
+            "women",
+            "crawls"
+          ]
+        },
+        {
+          "id": "creeping-by-daylight",
+          "text": "I always lock the door when I creep by daylight.",
+          "speaker": "",
+          "reference": "Late entry",
+          "stage": "the-woman",
+          "context": "Immediately after describing the woman creeping outside.",
+          "analysis": "The two figures merge here, in a subordinate clause, without announcement. The narrator has begun doing what she has been describing, and the journal records it as a sensible precaution.",
+          "themes": [
+            "identity",
+            "secrecy"
+          ],
+          "techniques": [
+            "journal",
+            "ellipsis"
+          ],
+          "characters": [
+            "narrator",
+            "woman-in-paper"
+          ],
+          "source": "Gutenberg text, late entry",
+          "cloze": [
+            "lock",
+            "creep"
+          ]
+        },
+        {
+          "id": "desperate",
+          "text": "I am getting angry enough to do something desperate.",
+          "speaker": "",
+          "reference": "Late entry",
+          "stage": "the-woman",
+          "context": "After John refuses again to leave the house early.",
+          "analysis": "The word 'angry' arrives late and is followed by a plan rather than a complaint. The story's last movement begins here: everything after this sentence is action.",
+          "themes": [
+            "gender",
+            "work"
+          ],
+          "techniques": [
+            "journal"
+          ],
+          "characters": [
+            "narrator"
+          ],
+          "source": "Gutenberg text, late entry",
+          "cloze": [
+            "angry",
+            "desperate"
+          ]
+        },
+        {
+          "id": "exciting",
+          "text": "Life is very much more exciting now than it used to be.",
+          "speaker": "",
+          "reference": "Late entry",
+          "stage": "the-woman",
+          "context": "On the change in her days since the paper began to move.",
+          "analysis": "She was told that excitement and change would harm her and has found both by herself, in a locked room, with a wall. The sentence is cheerful, and the cheerfulness is the most alarming thing in the story.",
+          "themes": [
+            "work",
+            "narration"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "narrator"
+          ],
+          "source": "Gutenberg text, late entry",
+          "cloze": [
+            "Life",
+            "exciting"
+          ]
+        },
+        {
+          "id": "got-out",
+          "text": "“I’ve got out at last,” said I, “in spite of you and Jane! And I’ve pulled off most of the paper, so you can’t put me back!”",
+          "speaker": "",
+          "reference": "Final entry",
+          "stage": "the-escape",
+          "context": "Spoken to John through the door he has just opened.",
+          "analysis": "The only speech she makes in the story, and the first sentence in it without a hedge. 'Jane' appears nowhere else: readers have taken it for her own name, for Jennie misprinted, and for the self she has just left behind. The victory and the disaster are the same act.",
+          "themes": [
+            "identity",
+            "confinement"
+          ],
+          "techniques": [
+            "journal"
+          ],
+          "characters": [
+            "narrator",
+            "john",
+            "woman-in-paper"
+          ],
+          "source": "Gutenberg text, final entry",
+          "cloze": [
+            "out",
+            "Jane"
+          ]
+        },
+        {
+          "id": "creep-over-him",
+          "text": "Now why should that man have fainted? But he did, and right across my path by the wall, so that I had to creep over him every time!",
+          "speaker": "",
+          "reference": "Final entry",
+          "stage": "the-escape",
+          "context": "The last lines of the story.",
+          "analysis": "The doctor is unconscious on the floor and the patient is still moving. Calling him 'that man' completes the reversal, and the mild puzzlement of the question is what makes the ending land: she has got past him, and does not much wonder why.",
+          "themes": [
+            "authority",
+            "identity"
+          ],
+          "techniques": [
+            "thresholds",
+            "irony"
+          ],
+          "characters": [
+            "narrator",
+            "john"
+          ],
+          "source": "Gutenberg text, final lines",
+          "cloze": [
+            "fainted",
+            "creep"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "Written",
+          "value": "June 1890",
+          "note": "In Pasadena, three years after Gilman had been treated with S. Weir Mitchell's rest cure and two years after she left her marriage."
+        },
+        {
+          "label": "First printed",
+          "value": "January 1892",
+          "note": "In The New England Magazine, which had printed The Giant Wistaria seven months earlier."
+        },
+        {
+          "label": "Form",
+          "value": "An undated journal",
+          "note": "Entries written in secret, in a house where writing is forbidden. The gaps between them are part of the story."
+        },
+        {
+          "label": "Length",
+          "value": "About 6,000 words",
+          "note": "Short enough to read at a sitting, which is how the accelerating entries are meant to be taken."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "A case against the rest cure",
+          "summary": "Gilman said in 1913 that she wrote it to reach Weir Mitchell and to keep other women out of his hands, and the story names him inside the fiction.",
+          "counter": "Her account of Mitchell changing his practice has never been corroborated, and the story is far stranger than a protest needs to be — the pattern, the smell and the creeping women do no argumentative work at all."
+        },
+        {
+          "position": "A ghost story without a ghost",
+          "summary": "Everything gothic is present: the ancestral hall, the locked room, the figure that appears at night, the last-page revelation.",
+          "counter": "The supernatural is raised and dropped on the first page, and what remains is a medical arrangement everyone in the story finds reasonable. The horror is that no rule is broken."
+        },
+        {
+          "position": "The ending as a victory",
+          "summary": "She gets out, the doctor faints, and the last sentence is hers — a reading that treats madness as the only available escape.",
+          "counter": "She is creeping in a stripped room over a man who will wake up, and the tenancy ends that day. Whatever she has escaped, the house has not stopped being the place she is in."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does the journal form shape what the reader can know?",
+          "focus": "Narration, secrecy and the gaps between entries",
+          "plan": [
+            "Establish the conditions of the writing: forbidden, hidden, done between visits, and exhausting to produce.",
+            "Show how the early entries hedge — perhaps, one expects, of course — and what those hedges tell us about the audience she imagines.",
+            "Use the gaps: the birth, the baby and the worst days are absent, so the silences carry information the sentences do not.",
+            "Track the change in tense and sentence length after the door is locked.",
+            "Conclude on the last speech, the only direct speech in the story, and what it costs the reader to take it at face value."
+          ]
+        },
+        {
+          "question": "Is John a villain?",
+          "focus": "Authority, marriage and the ordinariness of harm",
+          "plan": [
+            "Collect what he actually does: carries her upstairs, reads to her, schedules her hours, refuses the downstairs room, threatens Weir Mitchell.",
+            "Weigh the narrator's own testimony that he is careful and loving, and consider why the story has her supply it.",
+            "Set his laughter beside her exclamation that he does not believe she is sick, and examine the effect of putting them on the same page.",
+            "Consider the professional frame: two physicians and a specialist held in reserve, so that disagreement counts as symptom.",
+            "Close on the fainting: what kind of antagonist is disposed of by being stepped over?"
+          ]
+        },
+        {
+          "question": "What is the wallpaper?",
+          "focus": "Symbol, reading and the work she is not allowed",
+          "plan": [
+            "Begin with the paper as an object: colour, smell, torn patches, sub-pattern, the recurrent broken neck.",
+            "Show the narrator doing literary criticism on it — following the pattern, testing it in different lights, forming and revising a reading.",
+            "Trace the moment interpretation becomes identification, in the clause about locking the door when she creeps by daylight.",
+            "Ask what the bars owe to the real barred windows, and what that does to a symbolic reading.",
+            "Decide whether the paper is a mirror, a text or a prison, and whether the story lets you choose."
+          ]
+        },
+        {
+          "question": "Why print The Giant Wistaria alongside it?",
+          "focus": "Two silencings, told from inside and outside",
+          "plan": [
+            "Summarise the second story: a daughter's disgrace, a family's departure, and a century of ignorance above her remains.",
+            "Compare the narrators: an unnamed woman writing in secret, and a party of tenants competing to invent a history.",
+            "Note what each story withholds — the Wall-Paper never explains the figure, the Wistaria never gives the woman a voice at all.",
+            "Consider the effect of reading them in publication order, the ghost story first.",
+            "Argue for what the pairing adds that either story alone does not."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "The narrator is never named. Does the last line give her one?",
+        "She writes that John is careful and loving. Do you believe her?",
+        "At what point in the story does she stop being a reliable witness — and does the marriage stop being accurately described at the same moment?",
+        "The room was a nursery, with a gate and rings in the wall. What else could it have been?",
+        "Is the ending a breakdown, an escape, or a refusal to choose between them?",
+        "Gilman said she wrote the story to change a doctor's mind. Does knowing that make it a better or a smaller thing?"
+      ],
+      "timeline": [
+        {
+          "year": 1860,
+          "label": "Charlotte Perkins born in Hartford",
+          "detail": "Her father left the family early; she grew up moving between relatives, with an education she largely arranged herself.",
+          "kind": "context"
+        },
+        {
+          "year": 1884,
+          "label": "Marriage to Charles Walter Stetson",
+          "detail": "She had hesitated for two years, telling him she doubted she was fit for marriage.",
+          "kind": "context"
+        },
+        {
+          "year": 1885,
+          "label": "Birth of Katharine, and the depression that followed",
+          "detail": "The illness the story draws on began within weeks of the birth.",
+          "kind": "context"
+        },
+        {
+          "year": 1887,
+          "label": "The rest cure",
+          "detail": "Treated in Philadelphia by S. Weir Mitchell and sent home told to live as domestic a life as possible and never to touch pen, brush or pencil again.",
+          "kind": "context"
+        },
+        {
+          "year": 1888,
+          "label": "She leaves the marriage",
+          "detail": "Separation and a move to Pasadena, where she began to write and lecture; the divorce followed in 1894.",
+          "kind": "context"
+        },
+        {
+          "year": 1890,
+          "label": "The Yellow Wall-Paper written",
+          "detail": "Composed in June, in two days, and turned down by the Atlantic Monthly's editor, who said he could not forgive himself for making others as miserable as it had made him.",
+          "kind": "work"
+        },
+        {
+          "year": 1891,
+          "label": "The Giant Wistaria printed",
+          "detail": "Published in The New England Magazine in June, seven months before its companion piece.",
+          "kind": "work"
+        },
+        {
+          "year": 1892,
+          "label": "The Yellow Wall-Paper printed",
+          "detail": "In The New England Magazine for January, with illustrations; some readers wrote in to ask whether such a case could be real.",
+          "kind": "work"
+        },
+        {
+          "year": 1899,
+          "label": "The first book edition",
+          "detail": "Issued by Small, Maynard & Co. in Boston, the text behind most later American reprints.",
+          "kind": "work"
+        },
+        {
+          "year": 1913,
+          "label": "Why I Wrote The Yellow Wallpaper?",
+          "detail": "In her own magazine The Forerunner, Gilman said she had sent the story to Mitchell and heard that he had altered his treatment — an account no other source confirms.",
+          "kind": "reception"
+        },
+        {
+          "year": 1935,
+          "label": "Gilman's death",
+          "detail": "Facing inoperable cancer, she ended her own life, having written that a last duty is to choose one's own way out.",
+          "kind": "context"
+        },
+        {
+          "year": 1973,
+          "label": "The Feminist Press reprint",
+          "detail": "Elaine Hedges's edition returned the story to print and to teaching, where it has stayed.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Hartford, Connecticut",
+          "lat": 41.7658,
+          "lon": -72.6734,
+          "note": "Gilman's birthplace in 1860."
+        },
+        {
+          "name": "Providence, Rhode Island",
+          "lat": 41.824,
+          "lon": -71.4128,
+          "note": "Where she married, had her daughter, and first became ill."
+        },
+        {
+          "name": "Philadelphia, Pennsylvania",
+          "lat": 39.9526,
+          "lon": -75.1652,
+          "note": "S. Weir Mitchell practised here; the rest cure she was sent for in 1887."
+        },
+        {
+          "name": "Pasadena, California",
+          "lat": 34.1478,
+          "lon": -118.1445,
+          "note": "Where she wrote the story in June 1890, two years after leaving her marriage."
+        },
+        {
+          "name": "Boston, Massachusetts",
+          "lat": 42.3601,
+          "lon": -71.0589,
+          "note": "The New England Magazine, which printed both stories, and Small, Maynard & Co., which first published the Wall-Paper as a book."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/the-turn-of-the-screw/",
+          "why": "The other great American story built on a narrator you cannot check, published six years later."
+        },
+        {
+          "href": "/books/the-awakening/",
+          "why": "Kate Chopin's 1899 novel of a woman's rebellion inside marriage, met with the same critical discomfort."
+        },
+        {
+          "href": "/books/a-dolls-house/",
+          "why": "A wife managed by a husband who calls her his little creature, and the door she closes at the end of it."
+        },
+        {
+          "href": "/books/jane-eyre/",
+          "why": "The madwoman upstairs, seen from the other side of the ceiling."
+        },
+        {
+          "href": "/books/mrs-dalloway/",
+          "why": "Septimus and his doctors: the rest cure thirty years on, and the same proportion of care to control."
         }
       ],
       "videos": []
