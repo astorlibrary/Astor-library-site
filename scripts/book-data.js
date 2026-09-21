@@ -16,7 +16,7 @@ const path = require('path');
 const root = process.cwd();
 const dataDirectory = path.join(root, 'data', 'books');
 
-const FORMS = ['play', 'novel', 'novella', 'story collection', 'poem', 'memoir', 'non-fiction'];
+const FORMS = ['play', 'novel', 'novella', 'story collection', 'poem', 'poetry collection', 'memoir', 'non-fiction'];
 const TIMELINE_KINDS = ['work', 'author', 'context', 'reception'];
 const RELATIONSHIP_KINDS = ['family', 'marriage', 'love', 'friendship', 'ally', 'rival', 'enemy', 'service', 'mentor', 'doubling'];
 

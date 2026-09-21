@@ -162,6 +162,9 @@
     }
   },
   "techniques": {
+    "antithesis": {
+      "name": "Antithesis"
+    },
     "catalogue": {
       "name": "Catalogue",
       "definition": "A list allowed to run on past the point of usefulness, so that the accumulation itself becomes the effect."
@@ -169,6 +172,9 @@
     "chorus": {
       "name": "The Chorus",
       "definition": "A narrator who addresses the audience directly between the acts."
+    },
+    "conceit": {
+      "name": "Extended conceit"
     },
     "deadpan": {
       "name": "Deadpan",
@@ -236,6 +242,9 @@
       "name": "Landscape",
       "definition": "Place and weather made to press on the people living in them, rather than serving as scenery."
     },
+    "personification": {
+      "name": "Personification"
+    },
     "prophecy": {
       "name": "Prophecy",
       "definition": "A statement about the future that shapes the action by being believed, whether or not it is true."
@@ -256,6 +265,9 @@
       "name": "Song",
       "definition": "A sung passage standing outside the dialogue, free to say what the speaking characters cannot."
     },
+    "sonnet-form": {
+      "name": "Sonnet form"
+    },
     "stage-property": {
       "name": "Stage property",
       "definition": "An object handled on stage that carries far more weight than its use in the scene explains."
@@ -267,6 +279,9 @@
     "thresholds": {
       "name": "Thresholds",
       "definition": "Doors, windows, gates and stairs used to mark what may be crossed, by whom, and at what cost."
+    },
+    "wordplay": {
+      "name": "Wordplay"
     }
   }
 }

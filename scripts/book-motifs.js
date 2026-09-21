@@ -147,7 +147,7 @@ const BY_GENRE = [
   [/treatise|dialogue|slave narrative|political/i, 'column']
 ];
 
-const BY_FORM = { poem: 'laurel', 'non-fiction': 'column', memoir: 'column', 'story collection': 'quatrefoil' };
+const BY_FORM = { poem: 'laurel', 'poetry collection': 'laurel', 'non-fiction': 'column', memoir: 'column', 'story collection': 'quatrefoil' };
 const BY_PERIOD = { 'Ancient & Epic': 'meander', Shakespeare: 'fleuron' };
 
 function motifName(book) {
