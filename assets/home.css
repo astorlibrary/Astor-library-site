@@ -976,3 +976,16 @@ input:focus-visible {
 @media (max-width: 620px) {
   .home-wrap { padding-top: 54px; padding-bottom: 54px; }
 }
+
+/* What Astor publishes, in one line. */
+.home-counts { padding-top: 42px; padding-bottom: 42px; }
+.home-counts-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px; margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(17px, 2vw, 21px); }
+.home-counts-line a { color: var(--ink); text-decoration: none; border-bottom: 1px solid rgba(110, 31, 43, .3); }
+.home-counts-line a:hover { color: var(--burgundy); border-bottom-color: var(--burgundy); }
+.home-counts-line span { color: var(--muted); }
+
+/* The close reading and the study tools sit side by side rather than one
+   after the other. */
+.home-pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 0 56px; }
+.home-pair > .home-wrap { padding-top: 62px; padding-bottom: 62px; max-width: none; }
+@media (max-width: 1000px) { .home-pair { grid-template-columns: minmax(0, 1fr); gap: 0; } }

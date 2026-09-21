@@ -211,7 +211,7 @@ if (!homepage.includes('/assets/home.css')) failures.push('The homepage is missi
 if (!homepage.includes('/assets/navigation.css')) failures.push('The homepage is missing the shared navigation stylesheet');
 if (!homepage.includes('class="site-header astor-global-header')) failures.push('The homepage is missing the shared header');
 if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failures.push('The homepage is missing the grouped footer');
-for (const className of ['home-tiles', 'home-book-list', 'home-sample-grid', 'home-free-list', 'home-study-grid', 'home-browse-cols', 'home-colophon-name']) {
+for (const className of ['home-counts-line', 'home-book-list', 'home-sample-grid', 'home-free-list', 'home-study-grid', 'home-browse-cols', 'home-support']) {
   if (!homepageMain.includes('class="' + className + '"')) failures.push('The homepage is missing its ' + className + ' section');
 }
 const autumnFeature = homepageMain.match(/<section class="autumn-feature"[\s\S]*?<\/section>/i)?.[0] || '';
