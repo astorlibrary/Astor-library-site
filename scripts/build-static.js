@@ -9,6 +9,7 @@ const { seasons, booksFor, hrefFor } = require('./seasonal-helpers');
 const { loadBooks } = require('./book-data');
 const { renderToolkit } = require('./study-toolkit');
 const { accentFor, motifSvg, motifSvgByName, motifName, identityFor } = require('./book-motifs');
+const { normaliseBookOrder } = require('./normalise-book-page');
 
 const root = process.cwd();
 const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
@@ -1325,6 +1326,10 @@ function prepareHtml(html, source) {
   html = addContextImageShelf(html, source);
   html = addStudyToolkit(html, source);
   html = addPlainBookIdentity(html, source);
+  // Every book and study page ends up in the same order: the book, then the
+  // facts, then the study tools, then the book's own material, then the
+  // shelves. The pages were written by hand over a year and had drifted.
+  if (/^\/(?:books|study)\/[^/]+\/$/.test(pageHref(source))) html = normaliseBookOrder(html);
   html = addSiteIndexLink(html, source);
   html = addBookSeasonLinks(html, source);
   html = addGlobalNavigation(html, source);
