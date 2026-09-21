@@ -337,7 +337,6 @@
   }
 
   passageHubFilter();
-  foldBookSections();
 
   if (!currentPath.startsWith('/books/')) return;
 
@@ -557,6 +556,9 @@
       const note = group.head.querySelector('p');
       const fold = document.createElement('details');
       fold.className = 'book-fold';
+      // The contents line links to these sections by id. The fold takes the
+      // id with it, or the links would point at nothing.
+      if (group.head.id) fold.id = group.head.id;
       if (position === 0) fold.open = true;
       const summary = document.createElement('summary');
       const title = document.createElement('span');
@@ -573,6 +575,25 @@
       group.head.replaceWith(fold);
       for (const block of group.body) fold.append(block);
     });
+
+    // A link to a folded section opens it, whether it is followed from the
+    // contents line, from another page, or from a bookmark.
+    const openFoldAt = hash => {
+      if (!hash) return;
+      let target;
+      try { target = document.getElementById(decodeURIComponent(hash.replace('#', ''))); } catch { return; }
+      const fold = target && (target.closest('.book-fold') || null);
+      if (fold) {
+        fold.open = true;
+        window.requestAnimationFrame(() => target.scrollIntoView({ block: 'start', behavior: 'auto' }));
+      }
+    };
+    document.addEventListener('click', event => {
+      const link = event.target.closest && event.target.closest('a[href^="#"]');
+      if (link) window.setTimeout(() => openFoldAt(link.getAttribute('href')), 0);
+    });
+    window.addEventListener('hashchange', () => openFoldAt(window.location.hash));
+    openFoldAt(window.location.hash);
   }
 
   function passageHubFilter() {
@@ -630,7 +651,10 @@
     input.addEventListener('input', apply);
   }
 
+  // The contents line is built first, so it can name the sections and give
+  // them their ids; the folding then takes those ids with it.
   const contents = addPageContents();
+  foldBookSections();
   scrollToCurrentSection();
   addRelatedReading(contents);
 })();
