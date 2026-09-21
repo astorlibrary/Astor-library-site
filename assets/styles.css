@@ -252,9 +252,9 @@
   .catalog-grid{gap:9px}.catalog-card{grid-template-columns:82px minmax(0,1fr);gap:12px;padding:10px}.catalog-card h2{font-size:21px}.catalog-author{font-size:11px}.catalog-card .home-text-link{font-size:11px}.catalog-cover img{box-shadow:0 8px 17px rgba(32,28,26,.14)}
 
   .resource-hero{display:grid!important;grid-template-columns:none!important;grid-auto-flow:column;grid-auto-columns:86%;gap:10px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:inline mandatory;padding-bottom:11px}.resource-panel{min-height:240px;padding:23px;scroll-snap-align:start}.resource-panel h2{font-size:38px}.resource-panel p{font-size:14px}
-  .resource-finder{margin:28px 0 32px;padding:17px}.resource-finder h2{font-size:38px}.resource-search-row input{min-height:48px;font-size:16px}#resource-count{min-height:auto;padding:8px 0;border:0;font-size:13px}
-  .resource-section{margin:34px 0 16px;padding-top:19px}.resource-grid{gap:9px!important}.resource-card{min-height:0!important;padding:11px!important;display:grid!important;grid-template-columns:90px minmax(0,1fr)!important;grid-template-rows:auto auto 1fr auto;gap:5px 13px!important;align-items:start}
-  .resource-card .resource-thumb{grid-column:1;grid-row:1/5;width:90px!important;height:126px!important;max-height:none!important;object-fit:contain}.resource-card .tag-row,.resource-card h3,.resource-card>p,.resource-card>.button{grid-column:2}.resource-card .tag-row{gap:4px}.resource-card .tag{padding:3px 5px;font-size:8px}.resource-card h3{font-size:21px;line-height:1;margin:0}.resource-card>p{display:-webkit-box;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-size:12px;line-height:1.4}.resource-card>.button{min-height:36px;margin-top:3px;padding:0 10px;justify-self:start;font-size:11px}
+  .resource-search-row input{min-height:48px;font-size:16px}#resource-count{min-height:auto;padding:8px 0;border:0;font-size:13px}
+  
+  
 
   .study-hero{display:grid!important;grid-template-columns:none!important;grid-auto-flow:column;grid-auto-columns:88%;gap:10px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:inline mandatory;padding-bottom:11px}.study-panel{min-height:255px;padding:22px;scroll-snap-align:start}.study-panel h2{font-size:38px}.study-note-grid{grid-template-columns:1fr 1fr!important;gap:7px}.study-note{padding:9px}.study-note span{font-size:11px}
   .study-grid{gap:9px!important}.study-card{min-height:0;padding:11px;display:grid!important;grid-template-columns:90px minmax(0,1fr)!important;grid-template-rows:auto auto 1fr auto;gap:5px 13px}.study-card img{grid-column:1;grid-row:1/5;width:90px!important;height:130px!important;object-fit:contain}.study-card .mini-kicker,.study-card h3,.study-card p,.study-card .button{grid-column:2}.study-card h3{font-size:21px}.study-card p{font-size:12px;display:-webkit-box;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical}.study-card .button{min-height:36px;padding:0 10px;justify-self:start;font-size:11px}
@@ -734,7 +734,7 @@
   .page-wrap{padding-right:12px;padding-left:12px}.page-intro h1{font-size:43px}.quick-facts{grid-template-columns:1fr 1fr}
   .page-contents,.book-end-nav,.classic-hero,.classic-reading,.resource-editorial{margin-right:-12px!important;margin-left:-12px!important}
   main.page-wrap:has(> .collection-page-banner) .edition-card{grid-template-columns:80px minmax(0,1fr)}main.page-wrap:has(> .collection-page-banner) .edition-card>img{width:80px!important}
-  .resource-card,.study-card{grid-template-columns:78px minmax(0,1fr)!important}.resource-card .resource-thumb,.study-card img{width:78px!important}.resource-card h3{font-size:19px;overflow-wrap:anywhere}
+  .study-card{grid-template-columns:78px minmax(0,1fr)!important}.study-card img{width:78px!important}
 }
 
 /* Search landing page for the library as a whole. */
@@ -2028,8 +2028,8 @@
   box-shadow: none;
 }
 .catalog-card { padding-bottom: 6px; }
-.catalog-card:hover img, .study-card:hover img, .resource-card:hover img { transform: translateY(-3px); }
-.catalog-card img, .study-card img, .resource-card img { transition: transform .2s ease; box-shadow: 0 8px 20px rgba(32, 28, 26, .10); }
+.catalog-card:hover img, .study-card:hover img { transform: translateY(-3px); }
+.catalog-card img, .study-card img { transition: transform .2s ease; box-shadow: 0 8px 20px rgba(32, 28, 26, .10); }
 .passage-card { box-shadow: none; }
 .study-note, .study-panel, .resource-panel { border: 0; border-top: 1px solid var(--line); background: none; }
 

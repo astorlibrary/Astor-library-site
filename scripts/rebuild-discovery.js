@@ -292,8 +292,9 @@ for (const match of resourcesHtml.matchAll(resourcePattern)) {
   const imageMatch = block.match(/<img class="resource-thumb" src="([^"]+)" alt="([^"]*)"/);
   const titleHtml = matchText(block, /<h3>([\s\S]*?)<\/h3>/, 'resource title');
   const descriptionHtml = matchText(block, /<p>([\s\S]*?)<\/p>/, 'resource description');
-  const tags = Array.from(block.matchAll(/<span class="tag">([\s\S]*?)<\/span>/g), function (tag) { return textOnly(tag[1]); });
   const data = resourceData.find(function (resource) { return resource.route === href; });
+  // The hub lists the guides plainly; their tags come from the record.
+  const tags = data?.tags?.slice() || Array.from(block.matchAll(/<span class="tag">([\s\S]*?)<\/span>/g), function (tag) { return textOnly(tag[1]); });
   let relatedBooks = resourceBookLinks[href] || [];
   const detailFile = data?.route
     ? path.join(root, data.route.replace(/^\//, ''), 'index.html')

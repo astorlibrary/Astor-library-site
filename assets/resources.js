@@ -21,7 +21,7 @@
 
   for (const section of sections) {
     for (const card of section.cards) {
-      card.dataset.resourceSearch = normalise(card.textContent);
+      card.dataset.resourceSearch = normalise(card.textContent + ' ' + (card.dataset.resourceTags || ''));
       card.dataset.resourceCategory = section.grid.dataset.resourceCategory;
     }
   }
