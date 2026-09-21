@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 71,
-    "quotations": 1684,
-    "characters": 654,
+    "books": 72,
+    "quotations": 1705,
+    "characters": 662,
     "themes": 234,
-    "techniques": 232,
-    "timelineEvents": 832,
-    "places": 422
+    "techniques": 235,
+    "timelineEvents": 843,
+    "places": 427
   },
   "books": [
     {
@@ -51305,7 +51305,7 @@
         {
           "id": "journal",
           "name": "The interpolated journal",
-          "canonicalName": "The interpolated journal",
+          "canonicalName": "Journal narration",
           "definition": "A dated record set inside a continuous narrative, covering ground the narrative has already told.",
           "bookDefinition": "A dated record set inside a continuous narrative, covering ground the narrative has already told.",
           "inThisBook": "Chapter V begins the island story again from 30 September 1659 at a different distance, and the two accounts of the same months can be read against each other."
@@ -63822,7 +63822,7 @@
         {
           "id": "unreliable-narrator",
           "name": "The unreliable narrator",
-          "canonicalName": "The unreliable narrator",
+          "canonicalName": "Unreliable narrator",
           "definition": "A narrator whose account the reader learns to read against, because he misjudges himself or the meaning of what he reports.",
           "bookDefinition": "A narrator whose account the reader learns to read against, because he misjudges himself or the meaning of what he reports.",
           "inThisBook": "Pooter is accurate about facts and wrong about their weight. He quotes insults verbatim and files them under friendship, calls a snub a compliment, and reports his own jokes alongside the exact length of the silence that followed. Nothing is hidden and nothing is admitted, so the reader is left holding two versions of every evening — which is also, in practice, what it is like to read anybody's diary."
@@ -70758,6 +70758,1252 @@
       ]
     },
     {
+      "slug": "the-man-who-was-thursday",
+      "title": "The Man Who Was Thursday",
+      "author": "G. K. Chesterton",
+      "href": "/books/the-man-who-was-thursday/",
+      "studyHref": "",
+      "playHref": "/play/?book=the-man-who-was-thursday",
+      "form": "novel",
+      "genre": "Metaphysical thriller",
+      "period": "Modern Classics",
+      "setting": "Edwardian London — a red-brick suburb called Saffron Park, a Leicester Square balcony, the river and the Soho streets — then Dover, Calais and the French countryside, and a garden at dawn",
+      "written": "1907, in the year between Heretics and Orthodoxy",
+      "firstPublished": 1908,
+      "readingTime": 240,
+      "difficulty": 3,
+      "lengthNote": "Fifteen chapters, about 58,000 words, built as a chase that changes direction every time somebody takes off a disguise",
+      "openingLine": "The suburb of Saffron Park lay on the sunset side of London, as red and ragged as a cloud of sunset.",
+      "summary": "Gabriel Syme, a poet who has joined a secret police force of philosophers, talks his way into the Central Anarchist Council and is elected Thursday. Six men sit at the table with him under a vast president called Sunday, and one by one they turn out to be exactly what Syme is. The hunt then reverses: the conspiracy dissolves, the detectives chase the president across two countries, and the book they are in stops being a thriller. Chesterton subtitled it A Nightmare and spent the rest of his life pointing at the subtitle.",
+      "referenceStyle": "chapter number and title",
+      "sourceText": {
+        "label": "Project Gutenberg text of The Man Who Was Thursday: A Nightmare (eBook 1695)",
+        "url": "https://www.gutenberg.org/cache/epub/1695/pg1695.txt",
+        "note": "The 1908 text, including the dedicatory poem to E. C. Bentley. Its spellings are kept, including Bagdad and civilisation."
+      },
+      "structure": [
+        {
+          "id": "saffron-park",
+          "label": "Chapters I-II",
+          "title": "Two poets, and an election nobody should have won",
+          "summary": "In a red-brick suburb full of opinions, the anarchist poet Lucian Gregory loses an argument to a man who says he is a poet of law. Stung, Gregory takes his opponent underground to prove that his anarchism is real — and Syme, having sworn on his honour to say nothing, swears Gregory to the same silence and is elected to the seat Gregory wanted.",
+          "scenes": [
+            {
+              "ref": "Chapter I",
+              "title": "The Two Poets of Saffron Park",
+              "summary": "A sunset suburb, a garden argument about trains and chaos, and a red-haired poet who claims the artist and the anarchist are the same man."
+            },
+            {
+              "ref": "Chapter II",
+              "title": "The Secret of Gabriel Syme",
+              "summary": "An underground room reached through a public house, a table of loaded revolvers, and a vote that makes a policeman the anarchist called Thursday."
+            }
+          ]
+        },
+        {
+          "id": "council",
+          "label": "Chapters III-V",
+          "title": "The Council of Days",
+          "summary": "Breakfast on a Leicester Square balcony, in full view of the street, because the safest place to plot is in the open. Syme meets the six others and their president, learns how he came to be a policeman at all, and discovers that fear at this table is not of arrest but of being seen through.",
+          "scenes": [
+            {
+              "ref": "Chapter III",
+              "title": "The Man Who Was Thursday",
+              "summary": "Sunday's face grows larger as Syme approaches it, and the conspiracy turns out to eat a very good breakfast in public."
+            },
+            {
+              "ref": "Chapter IV",
+              "title": "The Tale of a Detective",
+              "summary": "The book doubles back: a policeman in a dark room, a force of philosophical detectives, and the sentence that explains the whole plot — they go to artistic tea-parties to detect pessimists."
+            },
+            {
+              "ref": "Chapter V",
+              "title": "The Feast of Fear",
+              "summary": "Sunday announces that there is a spy at the table. Every man at it has the same reason to be frightened, and none of them knows that yet."
+            }
+          ]
+        },
+        {
+          "id": "unmasking",
+          "label": "Chapters VI-X",
+          "title": "One by one, the anarchists turn out to be policemen",
+          "summary": "Gogol goes first, exposed at the table by his own beard. Then the Professor pursues Syme across London and confesses on a scrap of paper; Dr Bull takes off his black spectacles and becomes an ordinary young man; and the Marquis, fought in a French field, turns out to be an inspector in a false nose. Each unmasking is funnier than the last and leaves the plot with fewer enemies and no explanation.",
+          "scenes": [
+            {
+              "ref": "Chapter VI",
+              "title": "The Exposure",
+              "summary": "Gogol is unmasked as a Scotland Yard man, and Sunday enjoys it more than anyone."
+            },
+            {
+              "ref": "Chapter VII",
+              "title": "The Unaccountable Conduct of Professor de Worms",
+              "summary": "A chase through Soho conducted at the speed of an old man's shuffle, which is what makes it frightening."
+            },
+            {
+              "ref": "Chapter VIII",
+              "title": "The Professor Explains",
+              "summary": "Written on a scrap of paper: he is a policeman too, and has been terrified of Syme for exactly as long as Syme has been terrified of him."
+            },
+            {
+              "ref": "Chapter IX",
+              "title": "The Man in Spectacles",
+              "summary": "Dr Bull's dark glasses come off and a pleasant young man appears underneath. The lesson is repeated until it stops being a lesson: the mask, not the face, was the horror."
+            },
+            {
+              "ref": "Chapter X",
+              "title": "The Duel",
+              "summary": "A duel in France with a man who cannot be cut, because he is padded with disguise — and who is, inevitably, on the same side."
+            }
+          ]
+        },
+        {
+          "id": "chase",
+          "label": "Chapters XI-XIII",
+          "title": "The hunt turns round",
+          "summary": "With the council exposed, the countryside itself takes up the pursuit: a French town, then a mob, then what looks like the whole earth in arms against a handful of detectives. The Secretary is the last to declare himself a policeman, which leaves nobody on the other side at all — so the survivors turn and chase Sunday instead, through London, on a fire engine, on an elephant and finally in a balloon.",
+          "scenes": [
+            {
+              "ref": "Chapter XI",
+              "title": "The Criminals Chase the Police",
+              "summary": "The reversal the title of the chapter states, played straight and at speed."
+            },
+            {
+              "ref": "Chapter XII",
+              "title": "The Earth in Anarchy",
+              "summary": "Every window and hedge seems to hold an enemy, and the world takes on the logic of a dream in which nothing can be trusted to stay what it is."
+            },
+            {
+              "ref": "Chapter XIII",
+              "title": "The Pursuit of the President",
+              "summary": "Sunday escapes through London leaving absurd notes behind him, and the chase becomes a comic phantasmagoria that nobody in it can explain."
+            }
+          ]
+        },
+        {
+          "id": "accuser",
+          "label": "Chapters XIV-XV",
+          "title": "Thrones, an accusation, and waking",
+          "summary": "The six are dressed as the days of creation and seated in a garden, where Sunday tells them he is the Sabbath and the peace of God. The Secretary refuses to forgive him for it; Gregory arrives as the only real anarchist and accuses them of never having suffered; and Syme, asked whether he can drink of the cup, wakes in a lane at dawn beside the man he argued with in chapter one.",
+          "scenes": [
+            {
+              "ref": "Chapter XIV",
+              "title": "The Six Philosophers",
+              "summary": "Each man learns what he was a mask for, and the thriller reveals itself to have been a theology all along."
+            },
+            {
+              "ref": "Chapter XV",
+              "title": "The Accuser",
+              "summary": "Gregory's charge, Sunday's question, the face that fills the sky, and a girl cutting lilac before breakfast."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "syme",
+          "name": "Gabriel Syme",
+          "role": "Poet, philosophical policeman, and the Thursday of the title",
+          "summary": "A man who became a defender of order because he was brought up among people who thought disorder was interesting. He is brave in a highly specific way — terrified at every stage and never once stopping — and the book's entire plot is generated by his refusal to break a promise he should never have made.",
+          "clue": "Calls himself a poet of law, of order, and of respectability, and is elected to an anarchist council within the hour.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "stubborn",
+            "frightened",
+            "formally honourable"
+          ],
+          "relationships": [
+            {
+              "to": "gregory",
+              "label": "argues with, is sworn to, is accused by",
+              "kind": "enemy",
+              "stages": [
+                "saffron-park",
+                "accuser"
+              ]
+            },
+            {
+              "to": "sunday",
+              "label": "recruited by, hunted by, hunts",
+              "kind": "enemy",
+              "stages": [
+                "council",
+                "chase",
+                "accuser"
+              ]
+            },
+            {
+              "to": "de-worms",
+              "label": "pursued by, then allied with",
+              "kind": "ally",
+              "stages": [
+                "unmasking",
+                "chase"
+              ]
+            },
+            {
+              "to": "bull",
+              "label": "suspects, then trusts",
+              "kind": "ally",
+              "stages": [
+                "unmasking",
+                "chase"
+              ]
+            },
+            {
+              "to": "marquis",
+              "label": "duels",
+              "kind": "enemy",
+              "stages": [
+                "unmasking"
+              ]
+            },
+            {
+              "to": "rosamond",
+              "label": "sees at the beginning and the end",
+              "kind": "love",
+              "stages": [
+                "saffron-park",
+                "accuser"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sunday",
+          "name": "Sunday",
+          "role": "President of the Central Anarchist Council",
+          "summary": "Enormous, cheerful, and impossible to place. He hires the policemen and chairs the anarchists; he flees across London leaving nonsense notes; and at the end he says he is the peace of God and declines to explain the rest. Chesterton's own account was that Sunday is Nature as it appears from behind — which explains the back of the book without quite explaining the face.",
+          "clue": "A face that grows larger the nearer you come to it, like the mask of Memnon in the British Museum.",
+          "firstAppearance": "Chapter III",
+          "traits": [
+            "vast",
+            "playful",
+            "unaccountable"
+          ],
+          "relationships": [
+            {
+              "to": "syme",
+              "label": "employer and quarry of",
+              "kind": "enemy",
+              "stages": [
+                "council",
+                "chase",
+                "accuser"
+              ]
+            },
+            {
+              "to": "secretary",
+              "label": "accused by",
+              "kind": "enemy",
+              "stages": [
+                "accuser"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gregory",
+          "name": "Lucian Gregory",
+          "role": "The anarchist poet of Saffron Park",
+          "summary": "Red-haired, theatrical and, it turns out, the only person in the book who means it. He loses his seat on the council by being honest about his convictions in front of a man who is lying about his, and returns at the end as the accuser — the one figure the resolution cannot absorb.",
+          "clue": "Says the artist and the anarchist are the same man, and later stands up to say that the others have never suffered.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "theatrical",
+            "sincere",
+            "unforgiving"
+          ],
+          "relationships": [
+            {
+              "to": "syme",
+              "label": "rival of, bound by oath to",
+              "kind": "enemy",
+              "stages": [
+                "saffron-park",
+                "accuser"
+              ]
+            },
+            {
+              "to": "rosamond",
+              "label": "brother of",
+              "kind": "family",
+              "stages": [
+                "saffron-park"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "secretary",
+          "name": "The Secretary (Monday)",
+          "role": "The council's secretary, with a crooked smile",
+          "summary": "The most frightening of the six on first meeting and the most serious at the end. He is the one who will not accept the explanation: he can forgive God his anger but not his peace, which is the strongest objection the book raises against its own resolution.",
+          "clue": "A twisted smile, and a refusal to be reconciled at the moment everyone else is.",
+          "firstAppearance": "Chapter III",
+          "traits": [
+            "grim",
+            "honest",
+            "unreconciled"
+          ],
+          "relationships": [
+            {
+              "to": "sunday",
+              "label": "accuses",
+              "kind": "enemy",
+              "stages": [
+                "accuser"
+              ]
+            },
+            {
+              "to": "syme",
+              "label": "colleague of",
+              "kind": "ally",
+              "stages": [
+                "chase",
+                "accuser"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "de-worms",
+          "name": "Professor de Worms (Friday)",
+          "role": "An ancient German nihilist, pursuing Syme across London",
+          "summary": "A decaying old man who moves at a crawl and cannot be escaped, which makes the longest chase in the book also the slowest. He is a young actor in a false beard, frightened of Syme, and his unmasking is the moment the novel's method becomes clear: every terror is a colleague.",
+          "clue": "Chases a running man at walking pace, and catches him.",
+          "firstAppearance": "Chapter III",
+          "traits": [
+            "patient",
+            "theatrical",
+            "kind underneath"
+          ],
+          "relationships": [
+            {
+              "to": "syme",
+              "label": "pursues, then partners",
+              "kind": "ally",
+              "stages": [
+                "unmasking",
+                "chase"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bull",
+          "name": "Dr Bull (Saturday)",
+          "role": "The council's doctor, behind black spectacles",
+          "summary": "Sinister for exactly as long as his glasses stay on. When they come off he is a cheerful young man with an ordinary face, and Syme's terror is revealed to have been a reaction to a pair of lenses. The novel's argument about masks is nowhere neater.",
+          "clue": "Takes off his dark glasses and instantly becomes harmless.",
+          "firstAppearance": "Chapter III",
+          "traits": [
+            "practical",
+            "cheerful",
+            "decisive"
+          ],
+          "relationships": [
+            {
+              "to": "syme",
+              "label": "suspected by, then trusted",
+              "kind": "ally",
+              "stages": [
+                "unmasking",
+                "chase"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "marquis",
+          "name": "The Marquis de St. Eustache (Wednesday)",
+          "role": "A rich, insolent Frenchman with a bomb and a duel to fight",
+          "summary": "The most conventional villain in the book and therefore the one whose unmasking is funniest: he cannot be wounded because he is wearing so much disguise, and he produces his police card mid-duel. After it he is the most useful man in the pursuit.",
+          "clue": "Fights a duel in which no wound can reach him, and hands over a small blue card afterwards.",
+          "firstAppearance": "Chapter III",
+          "traits": [
+            "insolent",
+            "elegant",
+            "resourceful"
+          ],
+          "relationships": [
+            {
+              "to": "syme",
+              "label": "duels, then joins",
+              "kind": "ally",
+              "stages": [
+                "unmasking",
+                "chase"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rosamond",
+          "name": "Rosamond Gregory",
+          "role": "Gregory's sister, the girl with gold-red hair",
+          "summary": "She appears twice, at the beginning and at the very end, and says almost nothing. Her function is structural: she is the ordinary daylight the nightmare is measured against, and the last image of the book is her cutting lilac before breakfast.",
+          "clue": "Cuts lilac in a garden at dawn, with the great unconscious gravity of a girl.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "ordinary",
+            "grave",
+            "outside it all"
+          ],
+          "relationships": [
+            {
+              "to": "gregory",
+              "label": "sister of",
+              "kind": "family",
+              "stages": [
+                "saffron-park"
+              ]
+            },
+            {
+              "to": "syme",
+              "label": "remembered by",
+              "kind": "love",
+              "stages": [
+                "saffron-park",
+                "accuser"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "authority",
+          "name": "Order, and who is allowed to defend it",
+          "canonicalName": "Authority and obedience",
+          "summary": "Syme's position — that a train arriving at Victoria is more astonishing than a train going anywhere — is the book's argument in miniature. Order is treated not as the absence of adventure but as the hardest thing to achieve and the rarest thing to notice.",
+          "development": "Stated as a joke in a suburban garden, tested at a table of bombers, and finally handed to a president who turns out to have been running both sides."
+        },
+        {
+          "id": "disguise",
+          "name": "Masks, and what is under them",
+          "canonicalName": "Disguise and identity",
+          "summary": "Every terrifying figure in the book is wearing something: a beard, black glasses, a false nose, a costume. The horror is always the covering, and the face beneath it is always a colleague.",
+          "development": "The first unmasking is a relief, the second a joke, the fourth a pattern — and by the last chapter the pattern has become a question about whether anything in the world is what it appears."
+        },
+        {
+          "id": "dream",
+          "name": "A nightmare, as advertised",
+          "canonicalName": "Dreams and waking",
+          "summary": "The subtitle is not decoration. Distances stretch, pursuers move at impossible speeds, the same face appears on every stranger, and nobody can say when the dream began.",
+          "development": "Realistic satire in the first two chapters gives way to dream logic at the council table, and the ending refuses to say where Syme woke — he cannot remember coming to at all."
+        },
+        {
+          "id": "faith",
+          "name": "The theology under the thriller",
+          "canonicalName": "Faith",
+          "summary": "The chase turns into a question about suffering and a president who says he is the peace of God. The final chapters put the objections in the mouths of the sympathetic characters, which is why the book is still argued about.",
+          "development": "The Secretary refuses the reconciliation, Gregory accuses everyone of never having suffered, and the last words are a question from the Gospels rather than an answer."
+        },
+        {
+          "id": "identity",
+          "name": "Nobody is only one man",
+          "canonicalName": "Identity",
+          "summary": "Syme is a poet, a policeman and an anarchist delegate at once. The council members hold two identities each, and the question of which is the disguise is never as simple as it looks.",
+          "development": "The masks come off one by one, but the last chapter puts new ones on — the six are dressed as the days of creation — so the removal of disguise ends as another costume."
+        },
+        {
+          "id": "knowledge",
+          "name": "What can be known from the back",
+          "canonicalName": "Knowledge",
+          "summary": "Syme's speech about the back of the world is the book's own account of itself: everything looks brutal from behind, and the face may be entirely different.",
+          "development": "The idea is introduced as consolation during the balloon chase and then dramatised in the garden, where the pursued enemy turns out to be the employer."
+        },
+        {
+          "id": "respectability",
+          "name": "The comedy of ordinary things",
+          "canonicalName": "Respectability",
+          "summary": "Bradshaw's railway timetable, a good breakfast in public, a bowler hat, lilac in a garden — Chesterton's case for the ordinary is made by putting it inside a nightmare and watching it survive.",
+          "development": "The conspiracy is at its most sinister over coffee-pots, and the dream ends on a girl cutting flowers before breakfast."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "allegory",
+          "name": "An allegory that refuses to be solved",
+          "canonicalName": "An allegory that refuses to be solved",
+          "definition": "A narrative whose figures stand for ideas, without a key that fits every lock.",
+          "bookDefinition": "A narrative whose figures stand for ideas, without a key that fits every lock.",
+          "inThisBook": "Sunday plainly means something, and the book will not say what. Chesterton later offered Nature seen from behind, and also insisted the subtitle was the answer, which are not the same explanation."
+        },
+        {
+          "id": "paradox",
+          "name": "Argument by reversal",
+          "canonicalName": "Argument by reversal",
+          "definition": "A statement that contradicts expectation and turns out, on the terms set, to be exactly right.",
+          "bookDefinition": "A statement that contradicts expectation and turns out, on the terms set, to be exactly right.",
+          "inThisBook": "A poet of law, a conspiracy that hides by sitting in public, detectives who read sonnets to prevent crimes: the plot is built out of paradoxes rather than decorated with them."
+        },
+        {
+          "id": "grotesque",
+          "name": "The comic grotesque",
+          "canonicalName": "The comic grotesque",
+          "definition": "Figures exaggerated past realism into something both funny and frightening.",
+          "bookDefinition": "Figures exaggerated past realism into something both funny and frightening.",
+          "inThisBook": "A vast president, an old man who chases at a crawl, a doctor whose glasses are the only terrifying thing about him. The exaggeration is always double-edged, and the laugh arrives a second after the fear."
+        },
+        {
+          "id": "set-piece",
+          "name": "The chase",
+          "canonicalName": "The set piece",
+          "definition": "A self-contained episode built to a single effect and complete in itself, whether comic or ceremonial.",
+          "bookDefinition": "An extended action sequence that organises a long stretch of narrative.",
+          "inThisBook": "There are five, each faster and less plausible than the last, ending with a balloon. The escalation is the argument: pursuit goes on until pursuer and pursued change places."
+        },
+        {
+          "id": "irony",
+          "name": "Everybody is on the same side",
+          "canonicalName": "Irony",
+          "definition": "Saying one thing in a form that invites the opposite judgement.",
+          "bookDefinition": "A gap between what characters know and what the reader has worked out.",
+          "inThisBook": "For five chapters the reader is ahead of every character in the book, which turns terror into comedy without cancelling it — the men are genuinely frightened of people who are genuinely frightened of them."
+        },
+        {
+          "id": "epigram",
+          "name": "The portable sentence",
+          "canonicalName": "Epigram",
+          "definition": "A short balanced sentence that sounds like settled wisdom and usually turns a received idea inside out.",
+          "bookDefinition": "A compressed, quotable formulation that carries an argument.",
+          "inThisBook": "Chaos is dull; the rare, strange thing is to hit the mark; we go to artistic tea-parties to detect pessimists. The book's ideas travel in sentences short enough to be remembered by people who have not read it."
+        },
+        {
+          "id": "dream-logic",
+          "name": "Nightmare mechanics",
+          "canonicalName": "Nightmare mechanics",
+          "definition": "Narrative that follows the rules of dreams: repetition, pursuit, impossible geography, faces that will not stay still.",
+          "bookDefinition": "Narrative that follows the rules of dreams: repetition, pursuit, impossible geography, faces that will not stay still.",
+          "inThisBook": "The chase across France in which every stranger joins the mob, and the president whose face grows as you approach, belong to the logic of a bad night rather than to a plot, and the last chapter makes that explicit."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "saffron-park",
+          "text": "The suburb of Saffron Park lay on the sunset side of London, as red and ragged as a cloud of sunset.",
+          "speaker": "",
+          "reference": "Chapter I",
+          "stage": "saffron-park",
+          "context": "The first sentence of the novel.",
+          "analysis": "A real place — Bedford Park, where the aesthetes lived — described as weather rather than architecture. The simile makes the suburb look like something about to disperse, which is what happens to everything solid in the book.",
+          "themes": [
+            "dream"
+          ],
+          "techniques": [
+            "grotesque"
+          ],
+          "characters": [],
+          "source": "Gutenberg text, chapter I",
+          "cloze": [
+            "sunset",
+            "ragged"
+          ]
+        },
+        {
+          "id": "artist-anarchist",
+          "text": "An artist is identical with an anarchist… You might transpose the words anywhere. An anarchist is an artist.",
+          "speaker": "",
+          "reference": "Chapter I",
+          "stage": "saffron-park",
+          "context": "Gregory, holding forth in the garden before Syme contradicts him.",
+          "analysis": "The position Chesterton had spent two books arguing against, given to a character who means it and can phrase it. Putting the best version of the opposing case first is what stops the novel being a pamphlet.",
+          "themes": [
+            "authority"
+          ],
+          "techniques": [
+            "paradox"
+          ],
+          "characters": [
+            "gregory"
+          ],
+          "source": "Gutenberg text, chapter I",
+          "cloze": [
+            "artist",
+            "anarchist"
+          ]
+        },
+        {
+          "id": "hit-the-mark",
+          "text": "The rare, strange thing is to hit the mark; the gross, obvious thing is to miss it.",
+          "speaker": "",
+          "reference": "Chapter I",
+          "stage": "saffron-park",
+          "context": "Syme's answer to the claim that a railway timetable is unpoetic.",
+          "analysis": "The sentence that turns the book's politics into an aesthetic. If order is the improbable achievement, then defending it is the adventure and the anarchist is merely the man who has noticed nothing.",
+          "themes": [
+            "authority",
+            "respectability"
+          ],
+          "techniques": [
+            "epigram",
+            "paradox"
+          ],
+          "characters": [
+            "syme"
+          ],
+          "source": "Gutenberg text, chapter I",
+          "cloze": [
+            "rare",
+            "miss"
+          ]
+        },
+        {
+          "id": "chaos-is-dull",
+          "text": "Chaos is dull; because in chaos the train might indeed go anywhere, to Baker Street or to Bagdad. But man is a magician, and his whole magic is in this, that he does say Victoria, and lo! it is Victoria.",
+          "speaker": "",
+          "reference": "Chapter I",
+          "stage": "saffron-park",
+          "context": "Syme, still arguing about trains.",
+          "analysis": "The argument is made with a timetable, which is the joke and the point. Chesterton's defence of the ordinary never rests on the ordinary being safe — it rests on it being unlikely, and therefore worth guarding.",
+          "themes": [
+            "authority",
+            "respectability"
+          ],
+          "techniques": [
+            "paradox",
+            "epigram"
+          ],
+          "characters": [
+            "syme"
+          ],
+          "source": "Gutenberg text, chapter I",
+          "cloze": [
+            "Chaos",
+            "Victoria"
+          ]
+        },
+        {
+          "id": "poet-of-law",
+          "text": "he was a poet of respectability",
+          "speaker": "",
+          "reference": "Chapter I",
+          "stage": "saffron-park",
+          "context": "Reporting how Syme introduced himself to the Saffron Parkers.",
+          "analysis": "Three claims in a row — poet of law, of order, of respectability — each more provoking to that audience than the last. The garden reacts as though he had fallen out of the sky, which tells you what kind of suburb it is.",
+          "themes": [
+            "respectability",
+            "authority"
+          ],
+          "techniques": [
+            "paradox"
+          ],
+          "characters": [
+            "syme"
+          ],
+          "source": "Gutenberg text, chapter I",
+          "cloze": [
+            "poet",
+            "respectability"
+          ]
+        },
+        {
+          "id": "lawless-philosopher",
+          "text": "the most dangerous criminal now is the entirely lawless modern philosopher.",
+          "speaker": "",
+          "reference": "Chapter IV",
+          "stage": "council",
+          "context": "The policeman in the dark room explaining why a force of philosophical detectives exists.",
+          "analysis": "The premise of the plot, stated as policy. It also explains the book's structure: if the enemy is an idea, the detective has to be a man who can hold the idea and not be held by it, which is exactly Syme's difficulty.",
+          "themes": [
+            "knowledge",
+            "authority"
+          ],
+          "techniques": [
+            "epigram"
+          ],
+          "characters": [],
+          "source": "Gutenberg text, chapter IV",
+          "cloze": [
+            "dangerous",
+            "philosopher"
+          ]
+        },
+        {
+          "id": "tea-parties",
+          "text": "The ordinary detective goes to pot-houses to arrest thieves; we go to artistic tea-parties to detect pessimists.",
+          "speaker": "",
+          "reference": "Chapter IV",
+          "stage": "council",
+          "context": "The same speech, describing the work.",
+          "analysis": "The funniest sentence in the novel and a complete job description. It also quietly licenses the whole plot: if crimes can be detected in books of sonnets, then a poet is the right man to send.",
+          "themes": [
+            "knowledge"
+          ],
+          "techniques": [
+            "epigram",
+            "irony"
+          ],
+          "characters": [],
+          "source": "Gutenberg text, chapter IV",
+          "cloze": [
+            "pot-houses",
+            "pessimists"
+          ]
+        },
+        {
+          "id": "memnon",
+          "text": "the large face of Sunday grew larger and larger; and Syme was gripped with a fear that when he was quite close the face would be too big to be possible, and that he would scream aloud.",
+          "speaker": "",
+          "reference": "Chapter III",
+          "stage": "council",
+          "context": "Walking towards the president's breakfast table.",
+          "analysis": "A childhood fear of a museum mask, used to introduce the one character the book never explains. The threat is not violence but scale — something too large to be taken in, which is how the last chapter will describe God.",
+          "themes": [
+            "dream",
+            "faith"
+          ],
+          "techniques": [
+            "grotesque",
+            "dream-logic"
+          ],
+          "characters": [
+            "syme",
+            "sunday"
+          ],
+          "source": "Gutenberg text, chapter III",
+          "cloze": [
+            "larger",
+            "scream"
+          ]
+        },
+        {
+          "id": "still-possible",
+          "text": "His face was very large, but it was still possible to humanity.",
+          "speaker": "",
+          "reference": "Chapter III",
+          "stage": "council",
+          "context": "Syme sits down and risks a second look at Sunday.",
+          "analysis": "Reassurance with a hole in it. 'Still possible' admits the standard is being stretched, and the rest of the book is spent finding out how far — by the last page the same face fills the sky.",
+          "themes": [
+            "dream"
+          ],
+          "techniques": [
+            "grotesque"
+          ],
+          "characters": [
+            "sunday",
+            "syme"
+          ],
+          "source": "Gutenberg text, chapter III",
+          "cloze": [
+            "large",
+            "humanity"
+          ]
+        },
+        {
+          "id": "last-crusade",
+          "text": "a small blue card, on which was written, “The Last Crusade,” and a number, the sign of his official authority",
+          "speaker": "",
+          "reference": "Chapter IV",
+          "stage": "council",
+          "context": "Syme is issued with his credentials on leaving the police premises.",
+          "analysis": "The badge of a modern police force is given a crusader's name, which is the book's whole method in an object: a bureaucratic detail that turns out to be a religious claim. Four more of these cards appear before the plot is done.",
+          "themes": [
+            "faith",
+            "identity"
+          ],
+          "techniques": [
+            "allegory"
+          ],
+          "characters": [
+            "syme"
+          ],
+          "source": "Gutenberg text, chapter IV",
+          "cloze": [
+            "blue",
+            "Crusade"
+          ]
+        },
+        {
+          "id": "professor-policeman",
+          "text": "“I am a policeman,” said the Professor with his first broad smile",
+          "speaker": "",
+          "reference": "Chapter VIII",
+          "stage": "unmasking",
+          "context": "After a chase across London conducted at a shuffle.",
+          "analysis": "The line arrives as the release of a long-held breath, and it is the second time the book has played this card. From here the reader stops fearing the conspiracy and starts wondering what is left to be afraid of.",
+          "themes": [
+            "disguise",
+            "identity"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "de-worms",
+            "syme"
+          ],
+          "source": "Gutenberg text, chapter VIII",
+          "cloze": [
+            "policeman",
+            "smile"
+          ]
+        },
+        {
+          "id": "cosmos-turned",
+          "text": "Syme had for a flash the sensation that the cosmos had turned exactly upside down",
+          "speaker": "",
+          "reference": "Chapter VII",
+          "stage": "unmasking",
+          "context": "When the Professor lays a police card on the table in front of him.",
+          "analysis": "The reversal is felt as a change in the universe rather than in the facts, which is the book's characteristic scale. Nothing has happened except that a piece of card has appeared, and the world has inverted.",
+          "themes": [
+            "dream",
+            "identity"
+          ],
+          "techniques": [
+            "dream-logic"
+          ],
+          "characters": [
+            "syme",
+            "de-worms"
+          ],
+          "source": "Gutenberg text, chapter VII",
+          "cloze": [
+            "cosmos",
+            "upside"
+          ]
+        },
+        {
+          "id": "in-the-force",
+          "text": "“Yes, I’m in the force right enough,” and he flicked a blue card towards them lightly as a matter of form.",
+          "speaker": "",
+          "reference": "Chapter IX",
+          "stage": "unmasking",
+          "context": "Dr Bull, glasses off, greeting the men who had come to arrest him.",
+          "analysis": "The third revelation is delivered with a shrug, and the comedy is in the casualness. The pattern is now so established that the novel has to find something else to frighten us with, which is exactly what it does.",
+          "themes": [
+            "disguise"
+          ],
+          "techniques": [
+            "irony",
+            "set-piece"
+          ],
+          "characters": [
+            "bull"
+          ],
+          "source": "Gutenberg text, chapter IX",
+          "cloze": [
+            "force",
+            "card"
+          ]
+        },
+        {
+          "id": "detective-from-scotland-yard",
+          "text": "“I am a detective from Scotland Yard,”",
+          "speaker": "",
+          "reference": "Chapter XI",
+          "stage": "chase",
+          "context": "The Secretary, the last of the six to declare himself.",
+          "analysis": "By this point the sentence is a punchline. The Central Anarchist Council has turned out to consist entirely of the police, which leaves the book with a chase and nobody to chase but its own president.",
+          "themes": [
+            "disguise",
+            "identity"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "secretary"
+          ],
+          "source": "Gutenberg text, chapter XI",
+          "cloze": [
+            "detective",
+            "Scotland"
+          ]
+        },
+        {
+          "id": "martin-tupper",
+          "text": "“What about Martin Tupper _now?_”",
+          "speaker": "",
+          "reference": "Chapter XIII",
+          "stage": "chase",
+          "context": "One of the notes Sunday drops behind him while being pursued across London.",
+          "analysis": "The pursued god leaves nonsense messages for his hunters. The joke is aimed at a forgotten Victorian versifier, and its pointlessness is the point: the thing being chased will not engage on the chasers' terms.",
+          "themes": [
+            "dream",
+            "faith"
+          ],
+          "techniques": [
+            "grotesque",
+            "dream-logic"
+          ],
+          "characters": [
+            "sunday"
+          ],
+          "source": "Gutenberg text, chapter XIII",
+          "cloze": [
+            "Martin",
+            "Tupper"
+          ]
+        },
+        {
+          "id": "back-of-the-world",
+          "text": "Shall I tell you the secret of the whole world? It is that we have only known the back of the world. We see everything from behind, and it looks brutal.",
+          "speaker": "",
+          "reference": "Chapter XIII",
+          "stage": "chase",
+          "context": "Syme, in the balloon, trying to explain Sunday to the Secretary.",
+          "analysis": "The book's own instruction for reading it. Everything that has seemed monstrous has been a rear view of something else, and the sentence turns a chase novel into an argument about how appearances are arranged.",
+          "themes": [
+            "knowledge",
+            "faith"
+          ],
+          "techniques": [
+            "allegory"
+          ],
+          "characters": [
+            "syme",
+            "secretary"
+          ],
+          "source": "Gutenberg text, chapter XIII",
+          "cloze": [
+            "secret",
+            "back"
+          ]
+        },
+        {
+          "id": "sabbath",
+          "text": "“I am the Sabbath,” said the other without moving. “I am the peace of God.”",
+          "speaker": "",
+          "reference": "Chapter XV",
+          "stage": "accuser",
+          "context": "Sunday, asked at last who and what he is.",
+          "analysis": "The answer names the day and claims the theology. It is also the moment the thriller stops working as a thriller: no pursuit can continue once the quarry has said this, and the remaining pages are given to the objection rather than the revelation.",
+          "themes": [
+            "faith"
+          ],
+          "techniques": [
+            "allegory"
+          ],
+          "characters": [
+            "sunday"
+          ],
+          "source": "Gutenberg text, chapter XV",
+          "cloze": [
+            "Sabbath",
+            "peace"
+          ]
+        },
+        {
+          "id": "cannot-forgive",
+          "text": "I can forgive God His anger, though it destroyed nations; but I cannot forgive Him His peace.",
+          "speaker": "",
+          "reference": "Chapter XV",
+          "stage": "accuser",
+          "context": "The Secretary, refusing the reconciliation the others accept.",
+          "analysis": "The strongest sentence in the book is given to the objection, not the answer. Chesterton lets the reconciliation be refused by the character the reader has come to trust most, and does not remove the refusal.",
+          "themes": [
+            "faith"
+          ],
+          "techniques": [
+            "paradox"
+          ],
+          "characters": [
+            "secretary",
+            "sunday"
+          ],
+          "source": "Gutenberg text, chapter XV",
+          "cloze": [
+            "forgive",
+            "peace"
+          ]
+        },
+        {
+          "id": "have-you-suffered",
+          "text": "“Have you,” he cried in a dreadful voice, “have you ever suffered?”",
+          "speaker": "",
+          "reference": "Chapter XV",
+          "stage": "accuser",
+          "context": "Syme's question to Sunday, after Gregory's accusation.",
+          "analysis": "The accusation the whole allegory has been travelling towards: whatever this figure is, has it paid anything? The question is asked by the man who has been most frightened, and the answer is the last line of the vision.",
+          "themes": [
+            "faith"
+          ],
+          "techniques": [
+            "allegory"
+          ],
+          "characters": [
+            "syme",
+            "sunday"
+          ],
+          "source": "Gutenberg text, chapter XV",
+          "cloze": [
+            "suffered",
+            "dreadful"
+          ]
+        },
+        {
+          "id": "cup",
+          "text": "“Can ye drink of the cup that I drink of?”",
+          "speaker": "",
+          "reference": "Chapter XV",
+          "stage": "accuser",
+          "context": "Heard as a distant voice as the face fills the sky and everything goes black.",
+          "analysis": "A question from Mark's gospel, given to the figure who has just been accused of never suffering, and offered instead of an explanation. The novel ends its vision on a text rather than a conclusion — which is why readers have argued about Sunday ever since.",
+          "themes": [
+            "faith",
+            "dream"
+          ],
+          "techniques": [
+            "allegory"
+          ],
+          "characters": [
+            "sunday",
+            "syme"
+          ],
+          "source": "Gutenberg text, chapter XV",
+          "cloze": [
+            "drink",
+            "cup"
+          ]
+        },
+        {
+          "id": "lilac",
+          "text": "There he saw the sister of Gregory, the girl with the gold-red hair, cutting lilac before breakfast, with the great unconscious gravity of a girl.",
+          "speaker": "",
+          "reference": "Chapter XV",
+          "stage": "accuser",
+          "context": "The last sentence of the book, after Syme wakes walking in a lane.",
+          "analysis": "After a president the size of the sky, a girl with a pair of scissors. The nightmare is dismissed not by an argument but by breakfast, and the ordinary world is handed back with its gravity intact.",
+          "themes": [
+            "respectability",
+            "dream"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "rosamond",
+            "syme"
+          ],
+          "source": "Gutenberg text, chapter XV",
+          "cloze": [
+            "lilac",
+            "gravity"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "Written",
+          "value": "1907",
+          "note": "Between Heretics and Orthodoxy, the two books in which Chesterton argued the same case without a plot."
+        },
+        {
+          "label": "First printed",
+          "value": "1908",
+          "note": "Published by J. W. Arrowsmith of Bristol, with the subtitle A Nightmare on the title page."
+        },
+        {
+          "label": "Shape",
+          "value": "Fifteen chapters",
+          "note": "Two of setting up, three at the council table, five of unmasking, three of pursuit, and two that answer none of it."
+        },
+        {
+          "label": "Subtitle",
+          "value": "A Nightmare",
+          "note": "Chesterton complained for thirty years that readers dropped it and then asked him what the allegory meant."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "A religious allegory",
+          "summary": "Sunday is God, the six days are creation, and the book is Chesterton's account of providence seen from underneath.",
+          "counter": "Chesterton denied it in those terms, pointing at the subtitle and saying Sunday was Nature as we see it from behind. The allegory also leaves the Secretary's objection standing, which a devotional book would not."
+        },
+        {
+          "position": "A comedy about the intelligence state",
+          "summary": "A conspiracy composed entirely of policemen, each frightened of the others, reads as prophecy after a century of infiltration and double agency.",
+          "counter": "The book is not interested in institutions; the police force is a device for putting philosophers in a room together, and it disappears once the theology begins."
+        },
+        {
+          "position": "A nightmare, and nothing more systematic",
+          "summary": "The subtitle is the key: dream mechanics, unexplained transformations, a face that grows, and a waking that cannot be located.",
+          "counter": "Dreams do not usually argue this hard. The first two chapters are a sustained case against a philosophical position, and the last two answer it."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does the novel make order seem more adventurous than anarchy?",
+          "focus": "Authority, paradox and the defence of the ordinary",
+          "plan": [
+            "Open with the garden argument about trains, where the timetable is offered as poetry.",
+            "Show how Syme's job description reverses the usual roles: the police read sonnets, the anarchists eat a good breakfast.",
+            "Use the unmaskings to argue that the conspiracy's power is entirely theatrical.",
+            "Set the balloon speech beside the opening argument: the back of the world, and the train that arrives at Victoria.",
+            "Close on the lilac, and ask what the ordinary has had to survive to be handed back."
+          ]
+        },
+        {
+          "question": "What is gained by having every anarchist turn out to be a policeman?",
+          "focus": "Disguise, structure and the comedy of repetition",
+          "plan": [
+            "Set out the pattern and its order: Gogol, the Professor, Dr Bull, the Marquis, the Secretary.",
+            "Show how the reader moves ahead of the characters, and how that turns terror into comedy.",
+            "Examine what the joke costs: with no enemies left, the plot must find a new antagonist in its own president.",
+            "Consider whether the repetition is a structural weakness or the argument itself.",
+            "Conclude on Gregory, the one man who is not a policeman, and why the book keeps him in reserve."
+          ]
+        },
+        {
+          "question": "Is Sunday explicable?",
+          "focus": "Allegory, scale and refusal",
+          "plan": [
+            "Collect the evidence: the growing face, the two roles, the nonsense notes, the claim to be the Sabbath.",
+            "Weigh Chesterton's own gloss — Nature seen from behind — against what the text does with the figure.",
+            "Use Syme's speech about the back of the world as the book's proposed reading, and test it.",
+            "Take the Secretary's refusal seriously as the strongest objection in the text.",
+            "Decide whether the final question from the Gospels answers the accusation or replaces it."
+          ]
+        },
+        {
+          "question": "How seriously should the subtitle be taken?",
+          "focus": "Dream logic and the shape of the narrative",
+          "plan": [
+            "List the dream mechanics: impossible pursuit speeds, transforming strangers, geography that stretches, a face that fills the sky.",
+            "Note where realism ends — the council table is the hinge — and what changes in the prose after it.",
+            "Examine the waking: Syme cannot remember coming to, which is a dream's account of itself.",
+            "Set that against the novel's argumentative first chapters, which are not dreamlike at all.",
+            "Argue for what the subtitle licenses the book to leave unexplained."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Syme keeps a promise made to an anarchist and it costs him the whole plot. Was he right to keep it?",
+        "Which unmasking is the most effective, and does the effect depend on its place in the sequence?",
+        "The Secretary says he cannot forgive God his peace. Does the book answer him?",
+        "Is Gregory the villain of the novel or its conscience?",
+        "Chesterton insisted the subtitle mattered. Does calling it a nightmare let the book off anything?",
+        "The last image is a girl cutting lilac. What would be lost if the book ended in the garden with Sunday?"
+      ],
+      "timeline": [
+        {
+          "year": 1874,
+          "label": "Chesterton born in Kensington",
+          "detail": "Into the comfortable London he would spend his career defending against people who found it boring.",
+          "kind": "context"
+        },
+        {
+          "year": 1894,
+          "label": "The Slade years and the pessimism",
+          "detail": "At art school he went through the crisis of doubt and solipsism he later said the novel was written about.",
+          "kind": "context"
+        },
+        {
+          "year": 1901,
+          "label": "Marriage to Frances Blogg",
+          "detail": "The dedicatory poem to E. C. Bentley describes the period the book looks back on as ended by marriage and a creed.",
+          "kind": "context"
+        },
+        {
+          "year": 1904,
+          "label": "The Napoleon of Notting Hill",
+          "detail": "His first novel, and the first use of London suburbs as the setting for a fable about order.",
+          "kind": "context"
+        },
+        {
+          "year": 1905,
+          "label": "Heretics",
+          "detail": "The argument with the fashionable pessimists that the novel dramatises three years later.",
+          "kind": "context"
+        },
+        {
+          "year": 1908,
+          "label": "The Man Who Was Thursday published",
+          "detail": "Issued by J. W. Arrowsmith with the subtitle A Nightmare; Orthodoxy followed in the same year.",
+          "kind": "work"
+        },
+        {
+          "year": 1922,
+          "label": "Received into the Catholic Church",
+          "detail": "Fourteen years after the novel readers most often take as a statement of his faith.",
+          "kind": "context"
+        },
+        {
+          "year": 1926,
+          "label": "The stage version",
+          "detail": "Mrs Cecil Chesterton and Ralph Neale's adaptation was produced in London, and the book's afterlife as a performance piece began.",
+          "kind": "reception"
+        },
+        {
+          "year": 1936,
+          "label": "Chesterton's death, and his last word on it",
+          "detail": "The Autobiography, published that year, insists the book was a nightmare about the doubt of the eighteen-nineties rather than a theological statement.",
+          "kind": "reception"
+        },
+        {
+          "year": 1938,
+          "label": "Orson Welles broadcasts it",
+          "detail": "The Mercury Theatre on the Air adapted the novel for radio in September, two months before the War of the Worlds broadcast.",
+          "kind": "reception"
+        },
+        {
+          "year": 1984,
+          "label": "Read as a political prophecy",
+          "detail": "Cold War critics took the council of double agents as a prediction of the intelligence century; others read it as a dream about doubt. Both readings are still in print.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Bedford Park, Chiswick",
+          "lat": 51.4936,
+          "lon": -0.2589,
+          "note": "The aesthetes' red-brick suburb Chesterton renamed Saffron Park."
+        },
+        {
+          "name": "Leicester Square",
+          "lat": 51.5103,
+          "lon": -0.1301,
+          "note": "Where the Central Anarchist Council takes breakfast on a balcony, in public."
+        },
+        {
+          "name": "Soho",
+          "lat": 51.5136,
+          "lon": -0.1365,
+          "note": "The streets of the Professor's slow pursuit."
+        },
+        {
+          "name": "Dover",
+          "lat": 51.1279,
+          "lon": 1.3134,
+          "note": "The crossing point for the chase into France."
+        },
+        {
+          "name": "Calais",
+          "lat": 50.9513,
+          "lon": 1.8587,
+          "note": "Where the detectives land, and where the countryside turns against them."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/dorian-gray/",
+          "why": "The aesthetes Chesterton is arguing with in the first chapter, at their most persuasive."
+        },
+        {
+          "href": "/books/jekyll-and-hyde/",
+          "why": "The other great London story of a respectable man with a second identity."
+        },
+        {
+          "href": "/books/war-of-the-worlds/",
+          "why": "Edwardian London undone by something enormous, written a decade earlier and played entirely straight."
+        },
+        {
+          "href": "/books/adventures-of-sherlock-holmes/",
+          "why": "The detective convention Chesterton is turning inside out, by a writer he admired and parodied."
+        },
+        {
+          "href": "/books/the-turn-of-the-screw/",
+          "why": "Another story that withholds its explanation and has been argued over ever since."
+        }
+      ],
+      "videos": []
+    },
+    {
       "slug": "the-merchant-of-venice",
       "title": "The Merchant of Venice",
       "author": "William Shakespeare",
@@ -72825,7 +74071,7 @@
         {
           "id": "unreliable-narrator",
           "name": "The unreliable narrator",
-          "canonicalName": "The unreliable narrator",
+          "canonicalName": "Unreliable narrator",
           "definition": "A witness whose facts can be trusted and whose judgements cannot.",
           "bookDefinition": "A witness whose facts can be trusted and whose judgements cannot.",
           "inThisBook": "Miss Clack reports a proposal, a will and a death accurately while describing all three as tributes to her own Christian usefulness."
@@ -88168,7 +89414,7 @@
         {
           "id": "journal",
           "name": "The secret journal",
-          "canonicalName": "The secret journal",
+          "canonicalName": "Journal narration",
           "definition": "A first-person narrative written in entries, in the present tense, with gaps the reader must fill.",
           "bookDefinition": "A first-person narrative written in entries, in the present tense, with gaps the reader must fill.",
           "inThisBook": "The form does the work an omniscient narrator would otherwise do. Entries stop when she is watched and resume when she is alone, so the silences mark the surveillance; and because writing is forbidden, the existence of the text is itself an act of disobedience."
@@ -88176,7 +89422,7 @@
         {
           "id": "unreliable-narrator",
           "name": "A narrator who cannot be checked",
-          "canonicalName": "A narrator who cannot be checked",
+          "canonicalName": "Unreliable narrator",
           "definition": "A first-person account the reader has reason to doubt, with no corroborating voice in the text.",
           "bookDefinition": "A first-person account the reader has reason to doubt, with no corroborating voice in the text.",
           "inThisBook": "The doubt is unusually double-edged: she is wrong about the paper and right about the marriage. Readers who dismiss her testimony end up agreeing with John, which is the trap the story sets."
@@ -89574,7 +90820,7 @@
         {
           "id": "unreliable-narrator",
           "name": "The unreliable narrator",
-          "canonicalName": "The unreliable narrator",
+          "canonicalName": "Unreliable narrator",
           "definition": "A narrator whose account the reader learns to read against, because he misjudges himself or what he reports.",
           "bookDefinition": "A narrator whose account the reader learns to read against, because he misjudges himself or what he reports.",
           "inThisBook": "J. is honest about events and wrong about himself. He claims energy, expertise and fairness in the same sentences that show idleness, incompetence and self-interest, and the book leaves the reader to set his opinions side by side, as with the steam launches of chapters XIII and XVI."
