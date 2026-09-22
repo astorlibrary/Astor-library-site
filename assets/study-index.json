@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 86,
-    "quotations": 1986,
-    "characters": 782,
+    "books": 87,
+    "quotations": 1996,
+    "characters": 788,
     "themes": 236,
     "techniques": 243,
-    "timelineEvents": 1003,
-    "places": 501
+    "timelineEvents": 1014,
+    "places": 507
   },
   "books": [
     {
@@ -43861,6 +43861,866 @@
         {
           "href": "/books/paradise-lost/",
           "why": "The blank verse Wordsworth is answering in Tintern Abbey, and the measure of what he does differently with it."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "m-r-james-collected-ghost-stories",
+      "title": "M. R. James: Collected Ghost Stories",
+      "author": "M. R. James",
+      "href": "/books/m-r-james-collected-ghost-stories/",
+      "studyHref": "",
+      "playHref": "/play/?book=m-r-james-collected-ghost-stories",
+      "form": "story collection",
+      "genre": "Ghost story",
+      "period": "Modern Classics",
+      "setting": "Cathedral closes, college libraries, Suffolk golf links, Scandinavian country houses and the flat coast between Aldeburgh and Felixstowe",
+      "written": "Between 1893 and 1936, most of them read aloud to friends at Christmas before they were printed",
+      "firstPublished": 1904,
+      "readingTime": 600,
+      "difficulty": 3,
+      "lengthNote": "Thirty-three completed stories from four volumes, the 1931 additions and three later tales, with seven pieces by James on how the things are made",
+      "openingLine": "St Bertrand de Comminges is a decayed town on the spurs of the Pyrenees, not very far from Toulouse, and still nearer to Bagnères-de-Luchon.",
+      "summary": "A Cambridge provost wrote these to be read aloud at Christmas, and they work the same way on the page. A scholar finds a manuscript, buys a print, takes a whistle out of a Templar grave, and something that has been waiting comes for him — usually at the edge of sight, usually made of the wrong material: crumpled linen, hair, a tentacle, a mouth. James is precise about libraries, brasses and Latin abbreviations, which is exactly why the other thing lands. The collection gathers all four volumes, the 1931 additions and the last stories, with James's own writing on how to do it.",
+      "referenceStyle": "story title; the stories are short and are not numbered",
+      "sourceText": {
+        "label": "Project Gutenberg text of Ghost Stories of an Antiquary (eBook 8486)",
+        "url": "https://www.gutenberg.org/cache/epub/8486/pg8486.txt",
+        "note": "The 1904 volume, the first of the four collected here, with James's preface. Quotations are taken from it, so they come from the eight earliest stories; the Astor edition prints thirty-three."
+      },
+      "structure": [
+        {
+          "id": "antiquary-1904",
+          "label": "Ghost Stories of an Antiquary (1904)",
+          "title": "Eight stories, and the shape of all the rest",
+          "summary": "The first volume sets the method: a scholar, an object, a piece of research, and something that arrives because the research succeeded. Canon Alberic's scrap-book, the picture that moves between viewings, the whistle on the Suffolk coast, the thing in Abbot Thomas's well — all of it is here in the first eight.",
+          "scenes": [
+            {
+              "ref": "Canon Alberic's Scrap-book",
+              "title": "The purchase",
+              "summary": "An English scholar buys a manuscript from a terrified sacristan at St Bertrand de Comminges, and finds a drawing at the back of it."
+            },
+            {
+              "ref": "Lost Hearts",
+              "title": "The children on the lawn",
+              "summary": "An orphan arrives at a country house where his guardian has a scholarly interest in the transmigration of souls."
+            },
+            {
+              "ref": "The Mezzotint",
+              "title": "The picture",
+              "summary": "An engraving of a country house changes between one viewing and the next, and a group of Cambridge men watch it happen in instalments."
+            },
+            {
+              "ref": "“Oh, Whistle, and I'll Come to You, My Lad”",
+              "title": "The whistle",
+              "summary": "A professor of ontography digs an ancient whistle out of a Templar preceptory on the Suffolk coast, and blows it."
+            }
+          ]
+        },
+        {
+          "id": "more-ghost-stories",
+          "label": "More Ghost Stories (1911)",
+          "title": "Runes, cathedral stalls and a library card",
+          "summary": "The second volume is where James's machinery gets funnier and nastier at once. Casting the Runes turns a scholarly grudge into an occult contract with a deadline; The Tractate Middoth puts the horror between library shelves; the Barchester stories bring the cathedral close into the centre of his imagination.",
+          "scenes": [
+            {
+              "ref": "Casting the Runes",
+              "title": "The deadline",
+              "summary": "Karswell passes a slip of paper to a man who reviewed his book badly, and the recipient has three months to pass it back."
+            },
+            {
+              "ref": "The Tractate Middoth",
+              "title": "Between the shelves",
+              "summary": "A library assistant is asked for a Hebrew volume and finds something with cobwebs on its face waiting in the stack."
+            },
+            {
+              "ref": "The Stalls of Barchester Cathedral",
+              "title": "The carved arm",
+              "summary": "An archdeacon's diary records his discomfort with the woodwork of his own stall, and with what is under the cathedral."
+            }
+          ]
+        },
+        {
+          "id": "thin-ghost",
+          "label": "A Thin Ghost (1919) and A Warning to the Curious (1925)",
+          "title": "Flat coast, cathedral history, a crown in a barrow",
+          "summary": "The later volumes are drier and in places bleaker. An Episode of Cathedral History puts the thing behind an altar tomb; A View from a Hill invents a pair of binoculars made from boiled bones; and A Warning to the Curious, the best of them, buries one of the three crowns that guard the coast of England and lets a man dig it up.",
+          "scenes": [
+            {
+              "ref": "An Episode of Cathedral History",
+              "title": "Opening the tomb",
+              "summary": "Victorian restorers take out a pulpit and find an altar tomb nobody has looked behind."
+            },
+            {
+              "ref": "A Warning to the Curious",
+              "title": "The crown",
+              "summary": "A man digs up one of the three crowns of East Anglia, and is followed home by whatever is left of its guardian."
+            },
+            {
+              "ref": "A View from a Hill",
+              "title": "The field-glasses",
+              "summary": "Borrowed binoculars show a gallows and an abbey where neither now stands, because of what was boiled to make them."
+            }
+          ]
+        },
+        {
+          "id": "late-stories",
+          "label": "The 1931 additions and the last stories",
+          "title": "Rats, playing fields, and a vignette",
+          "summary": "The collection closes with the pieces added when the stories were first gathered in 1931 and the three that came afterwards, including Wailing Well, written for a scout camp, and A Vignette, published in the year he died, which is barely a story and one of the most frightening things he wrote.",
+          "scenes": [
+            {
+              "ref": "Rats",
+              "title": "The figure on the bed",
+              "summary": "A guest at a Suffolk inn opens a door he was told not to open."
+            },
+            {
+              "ref": "Wailing Well",
+              "title": "The red field",
+              "summary": "A scout camp, a marked map, and a boy who goes where the map says not to."
+            },
+            {
+              "ref": "A Vignette",
+              "title": "The gate in the plantation",
+              "summary": "A memory of a childhood garden, a hole in a gate, and something looking back through it."
+            }
+          ]
+        },
+        {
+          "id": "on-the-ghost-story",
+          "label": "James on the ghost story",
+          "title": "How to do it, by the man who did it",
+          "summary": "Seven short pieces set out the rules: a quiet setting and a familiar one, characters who are recognisable, no occult jargon, and the ghost malevolent rather than helpful. He also says the reader should be given a window of escape and then have it closed. They are the clearest statement anyone in the form has made about their own method.",
+          "scenes": [
+            {
+              "ref": "Preface, 1904",
+              "title": "Where they came from",
+              "summary": "The settings that are real, the books that are not, and the Christmas readings at King's."
+            },
+            {
+              "ref": "Some Remarks on Ghost Stories",
+              "title": "The rules",
+              "summary": "Malevolence, reticence, ordinary surroundings, and no explanation of the mechanism."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "antiquary",
+          "name": "The antiquary",
+          "role": "The recurring central figure: a scholar who looks too closely",
+          "summary": "He is a cataloguer, a professor, a clergyman with a hobby, a collector on holiday. He is competent, unimaginative and safe until his own expertise takes him one step further than the local people will go, and the step is always a professional one: buying, reading, digging, translating.",
+          "clue": "Is never punished for wickedness, only for curiosity carried out properly.",
+          "firstAppearance": "Canon Alberic's Scrap-book",
+          "traits": [
+            "learned",
+            "sceptical",
+            "thorough"
+          ],
+          "relationships": [
+            {
+              "to": "the-thing",
+              "label": "attracts",
+              "kind": "enemy",
+              "stages": [
+                "antiquary-1904",
+                "more-ghost-stories",
+                "thin-ghost"
+              ]
+            },
+            {
+              "to": "locals",
+              "label": "ignores the warnings of",
+              "kind": "service",
+              "stages": [
+                "antiquary-1904",
+                "thin-ghost"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parkins",
+          "name": "Parkins",
+          "role": "Professor of ontography, in “Oh, Whistle, and I'll Come to You, My Lad”",
+          "summary": "A precise, priggish young academic who announces that he does not believe in such things and then finds the sheets on the spare bed disarranged. James makes him faintly ridiculous first, so that the reader has laughed at him before being asked to be frightened for him.",
+          "clue": "Translates the Latin on a whistle, decides the best way to find out is to whistle, and does.",
+          "firstAppearance": "“Oh, Whistle, and I'll Come to You, My Lad”",
+          "traits": [
+            "fastidious",
+            "literal-minded",
+            "brave enough afterwards"
+          ],
+          "relationships": [
+            {
+              "to": "the-thing",
+              "label": "summons",
+              "kind": "enemy",
+              "stages": [
+                "antiquary-1904"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dennistoun",
+          "name": "Dennistoun",
+          "role": "The Cambridge collector of Canon Alberic's Scrap-book",
+          "summary": "He buys a manuscript from a sacristan who will not meet his eye, at a price so low it should have warned him, and takes it back to his hotel room to work through by candlelight. He is the first of the type and the luckiest of them.",
+          "clue": "Pays far too little for a scrap-book and is given a silver crucifix with it.",
+          "firstAppearance": "Canon Alberic's Scrap-book",
+          "traits": [
+            "acquisitive",
+            "methodical",
+            "fortunate"
+          ],
+          "relationships": [
+            {
+              "to": "the-thing",
+              "label": "disturbs",
+              "kind": "enemy",
+              "stages": [
+                "antiquary-1904"
+              ]
+            },
+            {
+              "to": "locals",
+              "label": "buys from",
+              "kind": "service",
+              "stages": [
+                "antiquary-1904"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "karswell",
+          "name": "Mr Karswell",
+          "role": "The abbot of Lufford, in Casting the Runes",
+          "summary": "A bad scholar with real powers and a thin skin, who answers a hostile review by passing his victim a slip of runic characters. He is James's one true villain, and the story he appears in is the only one where the trap can be reversed.",
+          "clue": "Shows the village children a magic lantern, and puts something in it that frightens them out of the room.",
+          "firstAppearance": "Casting the Runes",
+          "traits": [
+            "vain",
+            "vindictive",
+            "genuinely dangerous"
+          ],
+          "relationships": [
+            {
+              "to": "antiquary",
+              "label": "revenges himself on",
+              "kind": "enemy",
+              "stages": [
+                "more-ghost-stories"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "locals",
+          "name": "The people who live there",
+          "role": "Servants, vergers and villagers who know better",
+          "summary": "Sacristans, housekeepers, innkeepers, sextons, a boy on a golf links. They know what is in the wood, the well or the barrow, they say so once, and they are not asked again. James gives them his best dialogue, and being right never does them any good.",
+          "clue": "Tell the scholar not to go, in their own words, and are overruled by his.",
+          "firstAppearance": "Canon Alberic's Scrap-book",
+          "traits": [
+            "observant",
+            "plain-spoken",
+            "disregarded"
+          ],
+          "relationships": [
+            {
+              "to": "antiquary",
+              "label": "warn",
+              "kind": "service",
+              "stages": [
+                "antiquary-1904",
+                "thin-ghost"
+              ]
+            },
+            {
+              "to": "the-thing",
+              "label": "have always known about",
+              "kind": "enemy",
+              "stages": [
+                "antiquary-1904"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "the-thing",
+          "name": "The thing itself",
+          "role": "Whatever has been waiting: never explained, rarely seen whole",
+          "summary": "It is made of the wrong material — crumpled linen, matted hair, a tentacle, a mouth in the wrong place — and it is usually felt before it is seen. James withholds the full sight on principle, and the stories that show most are the ones that frighten least.",
+          "clue": "Is described by what it resembles and never by what it is.",
+          "firstAppearance": "Canon Alberic's Scrap-book",
+          "traits": [
+            "patient",
+            "material",
+            "malevolent"
+          ],
+          "relationships": [
+            {
+              "to": "antiquary",
+              "label": "comes for",
+              "kind": "enemy",
+              "stages": [
+                "antiquary-1904",
+                "more-ghost-stories",
+                "thin-ghost",
+                "late-stories"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "knowledge",
+          "name": "Curiosity, punished professionally",
+          "canonicalName": "Knowledge",
+          "summary": "Nobody in these stories is destroyed for wickedness. They are destroyed for doing their jobs well: cataloguing, translating, excavating, buying at the right price. The learning is the fault.",
+          "development": "The first story makes it an accident and the last make it a rule; by A Warning to the Curious the title says it outright."
+        },
+        {
+          "id": "evidence",
+          "name": "Documents, and what they let out",
+          "canonicalName": "Evidence and testimony",
+          "summary": "A manuscript, a diary, a Latin inscription, a plan of a well: the plot always runs through a piece of paper that the scholar can read and the reader is shown.",
+          "development": "James prints the evidence — ciphers, abbreviations, bad Latin — so that the reader does the research alongside the victim and reaches the answer at about the same time."
+        },
+        {
+          "id": "fear",
+          "name": "Touch before sight",
+          "canonicalName": "Fear",
+          "summary": "His frights are tactile far more often than visual: a hand under the pillow, hair, damp linen, something that is the wrong shape in the dark. Seeing it whole is nearly always withheld.",
+          "development": "The 1904 stories reach their crisis by touch; the later ones extend the method to hearing, so that A Warning to the Curious is largely footsteps on shingle."
+        },
+        {
+          "id": "religion",
+          "name": "Churches without much comfort",
+          "canonicalName": "Religion",
+          "summary": "Cathedrals, abbeys, prayer-books and Templar graves fill the stories, and the church in them is an archive rather than a refuge. Consecrated ground is where the dangerous things were put, on purpose.",
+          "development": "The clergy in the stories are scholars first; when something is finally stopped it is by a rule of the thing's own, not by prayer."
+        },
+        {
+          "id": "class",
+          "name": "Who is believed",
+          "canonicalName": "Class and money",
+          "summary": "The servants and villagers are right about the house, and the educated men in the armchairs are wrong. James was a conservative who gave the people without Latin the best information in every story.",
+          "development": "Their warnings are ignored in the early stories and acted on far too late in the later ones, which is the only real moral progress in the book."
+        },
+        {
+          "id": "nature",
+          "name": "East Anglia, exactly",
+          "canonicalName": "Nature",
+          "summary": "Flat coast, shingle, martello towers, sea fog, gorse, a golf links. The landscapes are real and specific, and the horror is put down in them like a fence post.",
+          "development": "The named places thicken as the stories go on, until A Warning to the Curious is effectively a walking route along the Suffolk coast with something behind you on it."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "frame-narrative",
+          "name": "The document produced",
+          "canonicalName": "Frame narrative",
+          "definition": "A story told inside another story, so that every account reaches the reader through somebody with an interest in it.",
+          "bookDefinition": "A story told through, or around, a manuscript, diary or letter that the narrator claims to have seen.",
+          "inThisBook": "Almost every story arrives with paperwork attached: a diary, a catalogue entry, an inscription in bad Latin. The apparatus is a joke a scholar would enjoy and a device that makes the impossible part look checkable."
+        },
+        {
+          "id": "ellipsis",
+          "name": "The thing half-seen",
+          "canonicalName": "Ellipsis",
+          "definition": "What the narrative declines to show, placed where the reader will notice the gap and fill it.",
+          "bookDefinition": "Withholding the full description of the horror.",
+          "inThisBook": "The face of crumpled linen is a face and a fabric and nothing else; James says the man could not or would not tell what expression he read on it. The refusal is the effect."
+        },
+        {
+          "id": "deadpan",
+          "name": "Scholarly understatement",
+          "canonicalName": "Deadpan",
+          "definition": "Delivering an outrage or an absurdity in the same flat tone as everything else.",
+          "bookDefinition": "Keeping the tone of a common-room anecdote over appalling material.",
+          "inThisBook": "Mr Wraxall compares it to the tentacle of a devil-fish, then continues with his notes. The flatness is what makes a reader lean in."
+        },
+        {
+          "id": "landscape",
+          "name": "Real places, named",
+          "canonicalName": "Landscape",
+          "definition": "Place and weather made to press on the people living in them, rather than serving as scenery.",
+          "bookDefinition": "Using actual towns, coasts and buildings rather than invented gothic ones.",
+          "inThisBook": "Felixstowe behind the golf links, St Bertrand de Comminges, Viborg. James says in his preface which settings are real, and the answer is most of them."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "The object that starts it",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative keeps returning to until it stands for the argument rather than illustrating it.",
+          "bookDefinition": "A small, purchasable thing that carries the whole plot.",
+          "inThisBook": "A scrap-book, a mezzotint, a whistle, a runic slip, a crown. The horror is always attached to something that can be picked up, and usually to something that has been bought."
+        },
+        {
+          "id": "dialect",
+          "name": "The servants' speech",
+          "canonicalName": "Dialect",
+          "definition": "Spelling and grammar used to mark where a speaker comes from, and what being heard that way costs them.",
+          "bookDefinition": "Writing out the pronunciation and idiom of the people who are not scholars.",
+          "inThisBook": "The housekeeper's account of the marks on the door in Lost Hearts is set down exactly as she says it. It is where James puts his best comic writing and his most reliable information."
+        },
+        {
+          "id": "gothic",
+          "name": "The old machinery, modernised",
+          "canonicalName": "Gothic machinery",
+          "definition": "The stock furniture of Gothic writing — the ruin, the storm, the locked room, the buried secret — put to a particular use.",
+          "bookDefinition": "Inherited gothic furniture — tombs, abbeys, curses — operated in a recognisably modern world.",
+          "inThisBook": "Trains, golf, hotel bills, magic lanterns and a Bradshaw sit beside Templar graves. The stories are set almost in the reader's present, which is why the medieval part bites."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "st-bertrand",
+          "text": "St Bertrand de Comminges is a decayed town on the spurs of the Pyrenees, not very far from Toulouse, and still nearer to Bagnères-de-Luchon.",
+          "speaker": "",
+          "reference": "Canon Alberic's Scrap-book",
+          "stage": "antiquary-1904",
+          "context": "The first sentence of the first story in the first volume.",
+          "analysis": "A guidebook sentence: a real town, two real reference points, a distance. James begins in the register of somebody who has been there, and the whole method of the collection is in that choice.",
+          "themes": [
+            "nature",
+            "evidence"
+          ],
+          "techniques": [
+            "landscape",
+            "deadpan"
+          ],
+          "characters": [
+            "dennistoun"
+          ],
+          "source": "1904 text, opening line",
+          "cloze": [
+            "decayed",
+            "Pyrenees"
+          ]
+        },
+        {
+          "id": "pure-invention",
+          "text": "As for the fragments of ostensible erudition which are scattered about my pages, hardly anything in them is not pure invention",
+          "speaker": "",
+          "reference": "Preface, 1904",
+          "stage": "on-the-ghost-story",
+          "context": "James accounting for the scholarship in his own stories.",
+          "analysis": "A cataloguer of medieval manuscripts admitting that his learned apparatus is fiction — and the double negative keeps a scholar's caution even here. The admission matters because the erudition is what persuades a reader to accept everything else.",
+          "themes": [
+            "evidence",
+            "knowledge"
+          ],
+          "techniques": [
+            "frame-narrative",
+            "deadpan"
+          ],
+          "characters": [],
+          "source": "1904 preface",
+          "cloze": [
+            "erudition",
+            "invention"
+          ]
+        },
+        {
+          "id": "no-such-book",
+          "text": "there never was, naturally, any such book as that which I quote in “The Treasure of Abbot Thomas”",
+          "speaker": "",
+          "reference": "Preface, 1904",
+          "stage": "on-the-ghost-story",
+          "context": "In the same paragraph, on the sources he cites.",
+          "analysis": "The word naturally is doing the work: he expects you to have believed in the book, and finds it obvious that you should not have. It is the closest thing in the preface to a conjuror explaining a trick.",
+          "themes": [
+            "evidence"
+          ],
+          "techniques": [
+            "deadpan"
+          ],
+          "characters": [],
+          "source": "1904 preface",
+          "cloze": [
+            "never",
+            "quote"
+          ]
+        },
+        {
+          "id": "felixstowe",
+          "text": "in “Oh, Whistle, and I’ll Come to You” I had Felixstowe in mind",
+          "speaker": "",
+          "reference": "Preface, 1904",
+          "stage": "on-the-ghost-story",
+          "context": "Identifying the settings that are real.",
+          "analysis": "He names the seaside town, and the story's terror is thereby attached to a place with a railway station and a hotel. James understood that a reader frightened at the right coordinates stays frightened on holiday.",
+          "themes": [
+            "nature"
+          ],
+          "techniques": [
+            "landscape"
+          ],
+          "characters": [],
+          "source": "1904 preface",
+          "cloze": [
+            "Whistle",
+            "Felixstowe"
+          ]
+        },
+        {
+          "id": "christmas-readings",
+          "text": "most of which were read to friends at Christmas-time at King’s College, Cambridge",
+          "speaker": "",
+          "reference": "Preface, 1904",
+          "stage": "on-the-ghost-story",
+          "context": "How the stories first reached an audience.",
+          "analysis": "These were written to be spoken, in a room, at night, to people who knew the author. The sentence explains the shape of every story in the book: short, spoken-paced, and building to one moment a listener could react to aloud.",
+          "themes": [
+            "fear"
+          ],
+          "techniques": [
+            "deadpan"
+          ],
+          "characters": [],
+          "source": "1904 preface",
+          "cloze": [
+            "Christmas-time",
+            "College"
+          ]
+        },
+        {
+          "id": "coarse-black-hairs",
+          "text": "coarse black hairs, longer than ever grew on a human hand; nails rising from the ends of the fingers and curving sharply down and forward, grey, horny and wrinkled",
+          "speaker": "",
+          "reference": "Canon Alberic's Scrap-book",
+          "stage": "antiquary-1904",
+          "context": "What Dennistoun sees beside him at the table, having first seen it in a drawing.",
+          "analysis": "Every detail is one a naturalist could record — length, colour, curvature, texture — and the horror is that the list is so competent. James frightens by cataloguing, which is what he did for a living.",
+          "themes": [
+            "fear"
+          ],
+          "techniques": [
+            "ellipsis",
+            "deadpan"
+          ],
+          "characters": [
+            "the-thing",
+            "dennistoun"
+          ],
+          "source": "1904 text, Canon Alberic's Scrap-book",
+          "cloze": [
+            "hairs",
+            "nails"
+          ]
+        },
+        {
+          "id": "light-shone-through",
+          "text": "the nails were fearfully long and that the light shone through them",
+          "speaker": "",
+          "reference": "Lost Hearts",
+          "stage": "antiquary-1904",
+          "context": "Stephen watching the two children on the lawn in the moonlight.",
+          "analysis": "One physical impossibility, stated in a subordinate clause: light passing through a fingernail. James gets his effect by making the whole sentence ordinary except for a single fact that cannot be true.",
+          "themes": [
+            "fear"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "the-thing"
+          ],
+          "source": "1904 text, Lost Hearts",
+          "cloze": [
+            "nails",
+            "light"
+          ]
+        },
+        {
+          "id": "devil-fish",
+          "text": "Mr Wraxall compares it to the tentacle of a devil-fish",
+          "speaker": "",
+          "reference": "Count Magnus",
+          "stage": "antiquary-1904",
+          "context": "Describing the shape emerging from the hooded figure on an engraving.",
+          "analysis": "The horror is reported at two removes — a comparison, inside a quotation, from a dead man's notebook — and the reader is left to do the seeing. The sentence is also the model for the whole collection's tact.",
+          "themes": [
+            "fear",
+            "evidence"
+          ],
+          "techniques": [
+            "frame-narrative",
+            "ellipsis"
+          ],
+          "characters": [
+            "the-thing"
+          ],
+          "source": "1904 text, Count Magnus",
+          "cloze": [
+            "tentacle",
+            "devil-fish"
+          ]
+        },
+        {
+          "id": "whistle-for-him",
+          "text": "It ought to mean, ‘Who is this who is coming?’ Well, the best way to find out is evidently to whistle for him.",
+          "speaker": "",
+          "reference": "“Oh, Whistle, and I'll Come to You, My Lad”",
+          "stage": "antiquary-1904",
+          "context": "Parkins translating the Latin on the whistle he has just dug up.",
+          "analysis": "He reads the warning correctly and treats it as a research question. That single sentence is James's whole argument about scholarship: the translation is right, the inference is professional, and it is the worst decision in the book.",
+          "themes": [
+            "knowledge"
+          ],
+          "techniques": [
+            "deadpan",
+            "symbolic-objects"
+          ],
+          "characters": [
+            "parkins"
+          ],
+          "source": "1904 text, Oh, Whistle",
+          "cloze": [
+            "coming",
+            "whistle"
+          ]
+        },
+        {
+          "id": "crumpled-linen",
+          "text": "a horrible, an intensely horrible, face of crumpled linen",
+          "speaker": "",
+          "reference": "“Oh, Whistle, and I'll Come to You, My Lad”",
+          "stage": "antiquary-1904",
+          "context": "The figure that rises from the spare bed in a hotel room at Burnstow.",
+          "analysis": "The most famous phrase James wrote, and it names a material rather than a creature. He then declines to say what expression was on it, which leaves the reader to supply the one thing the sentence has carefully withheld.",
+          "themes": [
+            "fear"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "the-thing",
+            "parkins"
+          ],
+          "source": "1904 text, Oh, Whistle",
+          "cloze": [
+            "horrible",
+            "linen"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "Written",
+          "value": "1893-1936",
+          "note": "From the first Christmas readings at King's College to a last story in the year of his death."
+        },
+        {
+          "label": "First volume",
+          "value": "1904",
+          "note": "Ghost Stories of an Antiquary, eight stories, most of them already read aloud to friends."
+        },
+        {
+          "label": "Collected here",
+          "value": "33 stories",
+          "note": "The four volumes, the additions of 1931, and three later tales, with seven pieces by James on the form."
+        },
+        {
+          "label": "Day job",
+          "value": "Provost of King's",
+          "note": "A medievalist who catalogued manuscripts for a living; the erudition in the stories is real, the books he quotes are not."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "The best ghost stories in English",
+          "summary": "James refined the form to a method — quiet setting, ordinary characters, an object, a glimpse — and nobody has improved on the execution.",
+          "counter": "The method is also a formula, and read in a single volume the thirty-three stories repeat their shape often enough that the later ones lose their power."
+        },
+        {
+          "position": "A conservative imagination",
+          "summary": "The stories punish curiosity, trust servants over scholars, and treat the past as something best left where it is; critics have read them as a don's anxiety about disturbance of any kind.",
+          "counter": "James gives the disregarded characters the accurate information in nearly every story, which is a strange move for a writer defending hierarchy."
+        },
+        {
+          "position": "Written for the voice",
+          "summary": "They were composed to be read aloud at Christmas, and their pacing, length and single-shock construction all follow from that.",
+          "counter": "The printed apparatus — ciphers, Latin, footnote-like asides — only works on the page, so the stories were never purely oral."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does James make scholarship frightening?",
+          "focus": "Research, documents and professional curiosity",
+          "plan": [
+            "Set out the pattern: an object bought or dug up, a document read, a conclusion reached correctly.",
+            "Use Parkins translating the whistle as the clearest case of right method and worst outcome.",
+            "Show how the printed apparatus — Latin, ciphers, catalogue detail — makes the reader research alongside the victim.",
+            "Weigh James's own admission that the erudition is invented.",
+            "Conclude on what the stories suggest about knowing things."
+          ]
+        },
+        {
+          "question": "Why does James refuse to describe the ghost?",
+          "focus": "Reticence, materials and the half-seen",
+          "plan": [
+            "Collect the descriptions that exist: crumpled linen, coarse hair, a tentacle, nails with light through them.",
+            "Note what they have in common — material rather than shape, touch rather than sight.",
+            "Examine the moment in Oh, Whistle where the expression on the face is explicitly not reported.",
+            "Compare a story that shows more, and test whether it frightens less.",
+            "Argue for what the withholding asks the reader to do."
+          ]
+        },
+        {
+          "question": "What do the stories do with the people who are not scholars?",
+          "focus": "Class, dialect and who has the information",
+          "plan": [
+            "Gather the warnings: sacristan, housekeeper, innkeeper, the boy on the links.",
+            "Note that they are correct in nearly every case, and are overruled every time.",
+            "Look at the dialect writing, and what James does with it that he does not do elsewhere.",
+            "Consider the reading that the stories are conservative, and test it against this evidence.",
+            "Decide whether the pattern is snobbery, self-mockery, or a joke at the expense of dons."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "James said a ghost should be malevolent. Is there a single friendly presence in the book?",
+        "The stories were written to be read aloud. What changes when you read one silently?",
+        "Why is the horror so often made of cloth, hair or paper rather than of a figure?",
+        "Nearly every victim is punished for competence. Is that a moral position or a joke about scholarship?",
+        "Which of the frights survives knowing how it is done, and why that one?",
+        "Thirty-three stories in one volume: does reading them in order help or hurt them?"
+      ],
+      "timeline": [
+        {
+          "year": 1862,
+          "label": "James born in Kent",
+          "detail": "The son of an Evangelical clergyman; he grew up in the Suffolk village of Great Livermere, which stands behind several of the stories.",
+          "kind": "context"
+        },
+        {
+          "year": 1882,
+          "label": "King's College, Cambridge",
+          "detail": "He arrived as an undergraduate and stayed for most of his life, becoming Provost in 1905.",
+          "kind": "context"
+        },
+        {
+          "year": 1893,
+          "label": "The first Christmas reading",
+          "detail": "Canon Alberic's Scrap-book and Lost Hearts were read aloud to friends at King's; the form was oral before it was printed.",
+          "kind": "work"
+        },
+        {
+          "year": 1895,
+          "label": "Cataloguing manuscripts",
+          "detail": "His catalogues of medieval manuscripts in Cambridge libraries are still in use, and supply the fiction's furniture.",
+          "kind": "context"
+        },
+        {
+          "year": 1904,
+          "label": "Ghost Stories of an Antiquary",
+          "detail": "Eight stories published by Edward Arnold, with a preface naming the real settings.",
+          "kind": "work"
+        },
+        {
+          "year": 1911,
+          "label": "More Ghost Stories",
+          "detail": "Casting the Runes and The Tractate Middoth among them; the second volume is where the method is at its most confident.",
+          "kind": "work"
+        },
+        {
+          "year": 1919,
+          "label": "A Thin Ghost and Others",
+          "detail": "Five stories written during and after the war, drier and bleaker than the earlier work.",
+          "kind": "work"
+        },
+        {
+          "year": 1925,
+          "label": "A Warning to the Curious",
+          "detail": "The title story, about a buried crown on the Suffolk coast, is the one many readers put first.",
+          "kind": "work"
+        },
+        {
+          "year": 1931,
+          "label": "The Collected Ghost Stories",
+          "detail": "Everything gathered in one volume, with four stories added; the book has never been out of print since.",
+          "kind": "work"
+        },
+        {
+          "year": 1936,
+          "label": "James's death, and A Vignette",
+          "detail": "His last piece appeared in The London Mercury in the year he died.",
+          "kind": "work"
+        },
+        {
+          "year": 1968,
+          "label": "Whistle and I'll Come to You",
+          "detail": "Jonathan Miller's television film fixed the stories in British Christmas viewing, and the BBC adaptations continued for decades.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Great Livermere, Suffolk",
+          "lat": 52.3167,
+          "lon": 0.7667,
+          "note": "The village where James grew up, and the flat country behind most of the stories."
+        },
+        {
+          "name": "King's College, Cambridge",
+          "lat": 52.2043,
+          "lon": 0.1164,
+          "note": "Where the stories were read aloud at Christmas, and where James was Provost from 1905."
+        },
+        {
+          "name": "Felixstowe, Suffolk",
+          "lat": 51.9617,
+          "lon": 1.3513,
+          "note": "The seaside town James says he had in mind for Oh, Whistle, and I'll Come to You."
+        },
+        {
+          "name": "Aldeburgh, Suffolk",
+          "lat": 52.1533,
+          "lon": 1.6029,
+          "note": "The coast of A Warning to the Curious, with its martello tower and shingle."
+        },
+        {
+          "name": "St Bertrand de Comminges",
+          "lat": 43.0281,
+          "lon": 0.5689,
+          "note": "A real Pyrenean town, and the setting of the first story in the first volume."
+        },
+        {
+          "name": "Viborg, Denmark",
+          "lat": 56.4531,
+          "lon": 9.4021,
+          "note": "Named in the preface as a real setting; Number 13 takes place in its Golden Lion hotel."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/the-turn-of-the-screw/",
+          "why": "The other classic English ghost story of the period, and the opposite method: everything withheld, including whether there is a ghost at all."
+        },
+        {
+          "href": "/books/carnacki-the-ghost-finder/",
+          "why": "Hodgson's investigator arriving with equipment, written while James was publishing the second volume."
+        },
+        {
+          "href": "/books/victorian-ghost-stories/",
+          "why": "The tradition James inherited and tightened, collected from the magazines he grew up reading."
+        },
+        {
+          "href": "/books/dracula/",
+          "why": "A supernatural threat assembled out of documents, by a writer with the same faith in paperwork."
+        },
+        {
+          "href": "/books/the-willows/",
+          "why": "Blackwood's weird tale of the same decade, with no antiquarian apparatus at all."
         }
       ],
       "videos": []

@@ -1048,8 +1048,8 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<a href="/passage-room/"><span>Annotated passages</span><p>Short extracts with notes on language, structure and context.</p></a>' +
   '<a href="/library/"><span>Main editions</span><p>Complete texts and book pages listing the material included in each edition.</p></a>' +
   '<a href="/subjects/"><span>Subject guides</span><p>Guides to comedy, Gothic, tragedy, detective fiction, epic, satire, narration, slavery and freedom.</p></a>' +
-  '<a href="/authors/"><span>Author pages</span><p>Biographical information, publication context and links to each writer’s Astor editions.</p></a>' +
-  '<a href="/study/"><span>Study editions</span><p>Summaries, context, quotations, critical interpretations and essay support.</p></a>' +
+  '<a href="/authors/"><span>Author pages</span><p>A life, the publication history, and every Astor edition by that writer.</p></a>' +
+  '<a href="/study/"><span>Study editions</span><p>The complete text, with the summaries, quotations, criticism and model paragraphs an essay needs.</p></a>' +
   '<a href="/resources/"><span>Free guides</span><p>Online guides to individual texts, passages, themes and historical contexts.</p></a>' +
   '<a href="/reading-routes/"><span>Cross-period reading lists</span><p>Book lists organised around home, freedom, fear, power, evidence, voice and knowledge.</p></a>' +
   '<a href="/explore/quotations/"><span>Quotation explorer</span><p>Every quotation in the catalogue. Filter by book, theme, character or period.</p></a>' +
