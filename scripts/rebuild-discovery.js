@@ -257,9 +257,12 @@ const authors = Array.from(books.reduce(function (groups, book) {
   const titleList = titles.length === 1
     ? titles[0]
     : titles.slice(0, -1).join(', ') + ' and ' + titles[titles.length - 1];
+  // A catalogue line, not a pitch: what the library holds by this writer.
+  const counts = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
+  const howMany = counts[authorBooks.length] || String(authorBooks.length);
   const description = authorDescriptions[name] || (authorBooks.length === 1
-    ? 'Read ' + name + ' through Astor Library\'s page for ' + titleList + '.'
-    : 'Read ' + name + ' across ' + authorBooks.length + ' Astor Library books: ' + titleList + '.');
+    ? 'One book in the catalogue: ' + titleList + '.'
+    : howMany + ' books in the catalogue: ' + titleList + '.');
 
   authorBooks.forEach(function (book) {
     const names = authorProfileData.authorNamesForBook(book);
@@ -404,7 +407,7 @@ books.forEach(function (book) {
 const passages = [
   {
     type: 'passage', typeLabel: 'Close reading', title: '“To be, or not to be”',
-    description: 'Read Hamlet’s soliloquy through its missing “I”, its impossible sea of troubles and the metaphor that changes its own answer.',
+    description: 'A speech that sounds private and never once says “I”, weighing an impossible sea of troubles until the metaphor turns its own answer round.',
     href: '/passage-room/hamlet-to-be/', image: '/Hamlet.png', imageAlt: 'Astor Library Hamlet cover',
     relatedBooks: ['/books/hamlet/'], search: 'Hamlet Shakespeare to be or not to be soliloquy death sleep dream close reading language tragedy'
   },
@@ -416,13 +419,13 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“but I done it”',
-    description: 'Read Huck’s apology to Jim through its fifteen-minute delay, its unheroic action and the racist language that Huck has not left behind.',
+    description: 'Its fifteen-minute delay, its unheroic action and the racist language that Huck has not left behind — Huck’s apology to Jim.',
     href: '/passage-room/huckleberry-finn-apology/', image: '/Huckleberry%20Finn.png', imageAlt: 'Astor Library Huckleberry Finn cover',
     relatedBooks: ['/books/adventures-of-huckleberry-finn/'], search: 'Huckleberry Finn Mark Twain Huck apologises Jim Chapter 15 conscience racism freedom close reading language'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“always the woman”',
-    description: 'Read Watson’s opening portrait of Irene Adler and the reasoning machine she has already proved incomplete.',
+    description: 'Watson’s opening portrait of Irene Adler and the reasoning machine she has already proved incomplete.',
     href: '/passage-room/sherlock-holmes-scandal/', image: '/Adventures%20of%20Sherlock%20Holmes.png', imageAlt: 'Astor Library Adventures of Sherlock Holmes cover',
     relatedBooks: ['/books/adventures-of-sherlock-holmes/'], search: 'Sherlock Holmes Irene Adler the woman Watson machine Scandal in Bohemia detective fiction close reading narration'
   },
@@ -434,19 +437,19 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“the pathway from slavery to freedom”',
-    description: 'Read how Hugh Auld’s attempt to forbid literacy gives Frederick Douglass a new understanding of power and a fixed purpose to learn.',
+    description: 'Hugh Auld’s attempt to forbid literacy gives Frederick Douglass a new understanding of power and a fixed purpose to learn.',
     href: '/passage-room/douglass-pathway-freedom/', image: '/Frederick%20Douglass.png', imageAlt: 'Astor Library Narrative of the Life of Frederick Douglass cover',
     relatedBooks: ['/books/narrative-of-the-life-of-frederick-douglass/'], search: 'Frederick Douglass Narrative literacy education slavery freedom Hugh Auld Chapter 6 close reading abolition power'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“I ought to be thy Adam”',
-    description: 'Read the creature’s appeal to Victor through creation, abandonment, Adam, the fallen angel and the disputed duties of each.',
+    description: 'The creature’s appeal to Victor: creation, abandonment, Adam, the fallen angel and the disputed duties of each.',
     href: '/passage-room/frankenstein-adam/', image: '/Frankenstein.png', imageAlt: 'Astor Library Frankenstein cover',
     relatedBooks: ['/books/frankenstein/'], search: 'Frankenstein Mary Shelley creature Adam fallen angel Paradise Lost creator responsibility abandonment Gothic close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Who has been taking my bed?”',
-    description: 'Read Penelope’s final test through craft, secret knowledge and the rooted olive bed that makes homecoming material.',
+    description: 'Penelope’s final test: craft, secret knowledge and the rooted olive bed that makes homecoming material.',
     href: '/passage-room/odyssey-olive-bed/', image: '/The%20Odyssey.png', imageAlt: 'Astor Library Odyssey cover',
     relatedBooks: ['/books/the-odyssey/'], search: 'Odyssey Homer Penelope Odysseus Ulysses bed olive tree Book 23 recognition homecoming craft close reading epic'
   },
@@ -476,7 +479,7 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“unsex me here”',
-    description: 'Read Lady Macbeth’s invocation through command, bodily imagery and the distance between imagined hardness and what the play later shows.',
+    description: 'Command, bodily imagery and the distance between imagined hardness and what the play later shows — Lady Macbeth’s invocation.',
     href: '/passage-room/macbeth-unsex-me-here/', image: '/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png', imageAlt: 'Astor Library Macbeth cover',
     relatedBooks: ['/books/macbeth/'], search: 'Macbeth Shakespeare Lady Macbeth unsex me here Act 1 Scene 5 gender body spirits close reading'
   },
@@ -488,457 +491,457 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Tomorrow, and tomorrow, and tomorrow”',
-    description: 'Read Macbeth’s final meditation through repetition, measured time and the theatrical images with which he empties life of meaning.',
+    description: 'Macbeth’s final meditation: repetition, measured time and the theatrical images with which he empties life of meaning.',
     href: '/passage-room/macbeth-tomorrow-and-tomorrow/', image: '/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png', imageAlt: 'Astor Library Macbeth cover',
     relatedBooks: ['/books/macbeth/'], search: 'Macbeth Shakespeare tomorrow tomorrow tomorrow Act 5 Scene 5 time candle player tale close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Juliet is the sun”',
-    description: 'Read Romeo beneath the window through sun and moon, green-sickness, Ptolemaic stars and the love rhetoric Juliet is about to answer.',
+    description: 'Romeo beneath the window: sun and moon, green-sickness, Ptolemaic stars and the love rhetoric Juliet is about to answer.',
     href: '/passage-room/romeo-and-juliet-light/', image: '/Romeo%20and%20Juliet.png', imageAlt: 'Astor Library Romeo and Juliet cover',
     relatedBooks: ['/books/romeo-and-juliet/'], search: 'Romeo and Juliet Shakespeare balcony scene Act 2 Scene 2 east sun light moon Petrarchan close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Blow, winds, and crack your cheeks!”',
-    description: 'Read Lear’s speech to the storm through its impossible commands, its legal language and the first true description he gives of himself.',
+    description: 'Its impossible commands, its legal language and the first true description he gives of himself — Lear’s speech to the storm.',
     href: '/passage-room/king-lear-blow-winds/', image: '/King%20Lear.png', imageAlt: 'Astor Library King Lear cover',
     relatedBooks: ['/books/king-lear/'], search: 'King Lear Shakespeare storm scene Act 3 Scene 2 blow winds cataracts hurricanoes germens Fool close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Our revels now are ended”',
-    description: 'Read Prospero’s revels speech through the interrupted masque, the great globe, the rack of cloud and the troubled mind behind the calm.',
+    description: 'Prospero’s revels speech: the interrupted masque, the great globe, the rack of cloud and the troubled mind behind the calm.',
     href: '/passage-room/tempest-our-revels/', image: '/The%20Tempest.png', imageAlt: 'Astor Library Tempest cover',
     relatedBooks: ['/books/the-tempest/'], search: 'Tempest Shakespeare Prospero revels ended Act 4 masque spirits great globe dreams rounded with a sleep close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Was this the face that launch’d a thousand ships”',
-    description: 'Read Faustus’s address to Helen through its burning imagery, the demonic kiss and the myths of mortals destroyed by divine lovers.',
+    description: 'Faustus’s address to Helen: its burning imagery, the demonic kiss and the myths of mortals destroyed by divine lovers.',
     href: '/passage-room/doctor-faustus-thousand-ships/', image: '/Doctor%20Faustus%20Cover.png', imageAlt: 'Astor Library Doctor Faustus cover',
     relatedBooks: ['/books/doctor-faustus/'], search: 'Doctor Faustus Marlowe Helen of Troy thousand ships topless towers Ilium kiss damnation close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“My mistress’ eyes are nothing like the sun”',
-    description: 'Read Sonnet 130 through the blazon it dismantles, what wires and reeks meant in 1609, and the couplet’s case against false comparison.',
+    description: 'Shakespeare takes the blazon apart comparison by comparison — wires, reeks, coral — and the couplet turns the demolition into the compliment.',
     href: '/passage-room/sonnet-130-false-compare/', image: '/Shakespeare%27s%20Sonnets%20Main%20Cover.png', imageAlt: 'Astor Library Shakespeare’s Sonnets cover',
     relatedBooks: ['/books/shakespeares-sonnets/'], search: 'Shakespeare Sonnet 130 mistress eyes blazon dark lady false compare anti-Petrarchan close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“The mind is its own place”',
-    description: 'Read Satan’s first great speech through its antitheses, its politics of reigning and serving, and the line Book IV takes back.',
+    description: 'Satan builds his case out of antitheses and a politics of reigning and serving, and Book IV takes the best line back.',
     href: '/passage-room/paradise-lost-mind-its-own-place/', image: '/Paradise%20Lost%20Main%20Cover.png', imageAlt: 'Astor Library Paradise Lost cover',
     relatedBooks: ['/books/paradise-lost/'], search: 'Paradise Lost Milton Satan mind its own place better to reign in hell Book 1 epic close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Water, water, every where”',
-    description: 'Read the becalming of the Mariner’s ship through the copper sky, the painted ocean and the rot that the blessing of the snakes will undo.',
+    description: 'Copper sky, painted ocean, and a rot in the sea that only the blessing of the snakes will undo.',
     href: '/passage-room/ancient-mariner-water-water/', image: '/Rime%20of%20the%20Ancient%20Mariner%20Main%20Cover.png', imageAlt: 'Astor Library Rime of the Ancient Mariner cover',
     relatedBooks: ['/books/the-rime-of-the-ancient-mariner/'], search: 'Rime of the Ancient Mariner Coleridge water water everywhere painted ship painted ocean albatross ballad close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“I am no bird; and no net ensnares me”',
-    description: 'Read Jane’s garden speech through the automaton, the four small adjectives, equality at God’s feet and the bird she refuses to be.',
+    description: 'Jane tells Rochester she is no automaton, in four small adjectives, and claims equality at God’s feet before refusing to be his bird.',
     href: '/passage-room/jane-eyre-i-am-no-bird/', image: '/Jane%20Eyre%20Main%20Cover.png', imageAlt: 'Astor Library Jane Eyre cover',
     relatedBooks: ['/books/jane-eyre/'], search: 'Jane Eyre Charlotte Bronte Rochester proposal Chapter 23 equal souls no bird free human being close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Nelly, I am Heathcliff!”',
-    description: 'Read Catherine’s confession through foliage and eternal rocks, the collapse of simile into identity, and the half Heathcliff never hears.',
+    description: 'Catherine compares her love to foliage and to eternal rocks, the simile collapses into identity, and Heathcliff leaves before the half that matters.',
     href: '/passage-room/wuthering-heights-i-am-heathcliff/', image: '/Wuthering%20Heights.png', imageAlt: 'Astor Library Wuthering Heights cover',
     relatedBooks: ['/books/wuthering-heights/'], search: 'Wuthering Heights Emily Bronte Catherine Heathcliff Chapter 9 foliage eternal rocks identity Nelly close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“the small bundle of shivers … was Pip”',
-    description: 'Read the churchyard opening through its one enormous sentence, the identity of things and the voice that interrupts it.',
+    description: 'One enormous sentence gives Pip the identity of things, and then a voice out of the graves interrupts it.',
     href: '/passage-room/great-expectations-marsh-country/', image: '/Great%20Expectations.png', imageAlt: 'Astor Library Great Expectations cover',
     relatedBooks: ['/books/great-expectations/'], search: 'Great Expectations Dickens Pip churchyard opening marsh country Magwitch identity Chapter 1 close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“‘Justice’ was done”',
-    description: 'Read the end of Tess through the black flag, the quotation marks around Justice, Hardy’s borrowing from Aeschylus and the two who walk on.',
+    description: 'A black flag goes up, Hardy puts Justice in quotation marks with a phrase borrowed from Aeschylus, and two people walk on.',
     href: '/passage-room/tess-president-of-the-immortals/', image: '/Tess%20of%20the%20D%27urbervilles.png', imageAlt: 'Astor Library Tess of the d’Urbervilles cover',
     relatedBooks: ['/books/tess-of-the-durbervilles/'], search: 'Tess of the dUrbervilles Hardy ending President of the Immortals black flag Wintoncester justice close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“I’ve got out at last”',
-    description: 'Read the ending of The Yellow Wallpaper through the reversal of power, the mystery of Jane and the man fainting across the creeping path.',
+    description: 'The reversal of power, the mystery of Jane and the man fainting across the creeping path — the ending of The Yellow Wallpaper.',
     href: '/passage-room/yellow-wallpaper-got-out-at-last/', image: '/The%20Yellow%20Paper%20and%20The%20Giant%20Wistaria%20Main%20Cover.png', imageAlt: 'Astor Library Yellow Wall-Paper cover',
     relatedBooks: ['/books/the-yellow-wallpaper-and-the-giant-wistaria/'], search: 'Yellow Wallpaper Gilman ending got out at last Jane rest cure creeping John fainted close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“the children of the night. What music they make!”',
-    description: 'Read Harker’s journal at Castle Dracula through the wolves, the Count’s courtesy and a modern man writing to keep his reason.',
+    description: 'Wolves outside, courtesy inside, and a modern young man writing everything down to keep hold of his reason.',
     href: '/passage-room/dracula-children-of-the-night/', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', imageAlt: 'Astor Library Dracula cover',
     relatedBooks: ['/books/dracula/'], search: 'Dracula Stoker children of the night wolves music Harker journal castle Chapter 2 Gothic close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“So we beat on, boats against the current”',
-    description: 'Read the last page of Gatsby through the green breast of the new world, the receding future and the final rowing image.',
+    description: 'Fitzgerald ends on the green breast of the new world, a future that recedes as you reach it, and a boat rowing against the current.',
     href: '/passage-room/great-gatsby-boats-against-the-current/', image: '/The%20Great%20Gatsby%20Main%20Cover.png', imageAlt: 'Astor Library Great Gatsby cover',
     relatedBooks: ['/books/the-great-gatsby/'], search: 'Great Gatsby Fitzgerald ending boats against the current green light Dutch sailors orgiastic future close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“a woman must have money and a room of her own”',
-    description: 'Read the opening argument of A Room of One’s Own through the famous minor point, the fictional I and truth told through lies.',
+    description: 'The opening argument of A Room of One’s Own: the famous minor point, the fictional I and truth told through lies.',
     href: '/passage-room/room-of-ones-own-money-and-a-room/', image: '/A%20Room%20of%20One%27s%20Own%20Main%20COver.png', imageAlt: 'Astor Library A Room of One’s Own cover',
     relatedBooks: ['/books/a-room-of-ones-own/'], search: 'A Room of Ones Own Virginia Woolf money and a room lecture women and fiction Judith Shakespeare essay close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“If music be the food of love, play on”',
-    description: 'Read Orsino’s opening speech through appetite and excess, the dying fall, and a lover who disproves his own theory in four lines.',
+    description: 'Orsino’s opening speech: appetite and excess, the dying fall, and a lover who disproves his own theory in four lines.',
     href: '/passage-room/twelfth-night-food-of-love/', image: '/Twelfth%20Night%20Main%20Cover.jpg', imageAlt: 'Astor Library Twelfth Night cover',
     relatedBooks: ['/books/twelfth-night/'], search: 'Twelfth Night Shakespeare Orsino if music be the food of love Act 1 Scene 1 appetite melancholy Illyria close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“The lunatic, the lover, and the poet”',
-    description: 'Read Theseus on imagination through airy nothing and the bush supposed a bear—and Hippolyta’s quiet rebuttal that wins the argument.',
+    description: 'Airy nothing and the bush supposed a bear—and Hippolyta’s quiet rebuttal that wins the argument — Theseus on imagination.',
     href: '/passage-room/midsummer-nights-dream-imagination/', image: '/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png', imageAlt: 'Astor Library A Midsummer Night’s Dream cover',
     relatedBooks: ['/books/a-midsummer-nights-dream/'], search: 'Midsummer Nights Dream Shakespeare Theseus Hippolyta lunatic lover poet imagination airy nothing Act 5 close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“This royal throne of kings, this sceptered isle”',
-    description: 'Read Gaunt’s deathbed speech through its suspended grammar and the accusation the famous catalogue exists to deliver.',
+    description: 'Gaunt’s deathbed speech: its suspended grammar and the accusation the famous catalogue exists to deliver.',
     href: '/passage-room/richard-ii-sceptred-isle/', image: '/Richard%20II.png', imageAlt: 'Astor Library Richard II cover',
     relatedBooks: ['/books/richard-ii/'], search: 'Richard II Shakespeare John of Gaunt sceptred isle this England Act 2 Scene 1 leased out history play close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“We few, we happy few, we band of brothers”',
-    description: 'Read the St Crispin’s Day speech through honour as arithmetic, the offer to depart, and remembering with advantages.',
+    description: 'Henry turns honour into arithmetic, offers anyone who wants it a passport home, and promises the day will be remembered with advantages.',
     href: '/passage-room/henry-v-band-of-brothers/', image: '/Henry%20V%20Main%20Cover.jpg', imageAlt: 'Astor Library Henry V cover',
     relatedBooks: ['/books/henry-v/'], search: 'Henry V Shakespeare band of brothers St Crispin Crispian Agincourt Act 4 Scene 3 rhetoric honour close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Hath not a Jew eyes?”',
-    description: 'Read Shylock’s speech through its ledger of injuries, its bodily argument for common humanity, and the turn to revenge the questions prepare.',
+    description: 'Shylock reads out a ledger of injuries, argues for common humanity from the body, and turns at the end to the revenge the questions were preparing.',
     href: '/passage-room/merchant-of-venice-hath-not-a-jew-eyes/', image: '/The%20Merchant%20of%20Venice%20Main%20Cover.jpg', imageAlt: 'Astor Library Merchant of Venice cover',
     relatedBooks: ['/books/the-merchant-of-venice/'], search: 'Merchant of Venice Shakespeare Shylock hath not a Jew eyes prick us bleed revenge Act 3 Scene 1 close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“I am Duchess of Malfi still.”',
-    description: 'Read the Duchess’s exchange with the disguised Bosola through worm-seed, the caged lark and the most debated line in Jacobean tragedy.',
+    description: 'The Duchess’s exchange with the disguised Bosola: worm-seed, the caged lark and the most debated line in Jacobean tragedy.',
     href: '/passage-room/duchess-of-malfi-still/', image: '/Duchess%20of%20Malfi%20Cover.png', imageAlt: 'Astor Library Duchess of Malfi cover',
     relatedBooks: ['/books/the-duchess-of-malfi/'], search: 'Duchess of Malfi Webster Bosola I am Duchess of Malfi still Act 4 Scene 2 identity Jacobean tragedy close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“the print of a man’s naked foot”',
-    description: 'Read the footprint scene through Defoe’s matter-of-fact realism, the forensic checking of evidence, and the fear that rewrites an island.',
+    description: 'Defoe’s matter-of-fact realism, the forensic checking of evidence, and the fear that rewrites an island — the footprint scene.',
     href: '/passage-room/robinson-crusoe-footprint/', image: '/Robinson%20Crusoe.png', imageAlt: 'Astor Library Robinson Crusoe cover',
     relatedBooks: ['/books/robinson-crusoe/'], search: 'Robinson Crusoe Defoe footprint naked foot on the shore thunderstruck island fear castle close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“a wild rose-bush”',
-    description: 'Read the opening of The Scarlet Letter through the black flower of society, the rose at the prison door and a narrator who refuses to decide.',
+    description: 'The opening of The Scarlet Letter: the black flower of society, the rose at the prison door and a narrator who refuses to decide.',
     href: '/passage-room/scarlet-letter-rose-bush/', image: '/The%20Scarlet%20Letter%20%28Main%20Cover%29%20.png', imageAlt: 'Astor Library Scarlet Letter cover',
     relatedBooks: ['/books/the-scarlet-letter/'], search: 'Scarlet Letter Hawthorne prison door rose-bush Ann Hutchinson black flower Chapter 1 symbolism close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“a sense sublime”',
-    description: 'Read the central movement of Tintern Abbey through the sounding cataract, the still sad music of humanity and what the eye half-creates.',
+    description: 'The central movement of Tintern Abbey: the sounding cataract, the still sad music of humanity and what the eye half-creates.',
     href: '/passage-room/tintern-abbey-sense-sublime/', image: '/Lyrical%20Ballads%20Main%20Cover.png', imageAlt: 'Astor Library Lyrical Ballads cover',
     relatedBooks: ['/books/lyrical-ballads/'], search: 'Tintern Abbey Wordsworth Lyrical Ballads sense sublime deeply interfused still sad music of humanity Romantic close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Who are you?”',
-    description: 'Read Alice and the Caterpillar through the puns that turn idiom into metaphysics and the chrysalis argument the child wins.',
+    description: 'The puns that turn idiom into metaphysics and the chrysalis argument the child wins — Alice and the Caterpillar.',
     href: '/passage-room/alice-in-wonderland-who-are-you/', image: '/Alice%27s%20Adventures%20in%20Wonderland%20Main%20Cover.png', imageAlt: 'Astor Library Alice in Wonderland cover',
     relatedBooks: ['/books/alices-adventures-in-wonderland/'], search: 'Alice in Wonderland Carroll Caterpillar who are you identity chrysalis explain yourself Chapter 5 nonsense logic close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“All art is quite useless.”',
-    description: 'Read Wilde’s preface through the rage of Caliban, surface and symbol, and aphorisms written as a defence and tested by their own novel.',
+    description: 'Wilde’s preface: the rage of Caliban, surface and symbol, and aphorisms written as a defence and tested by their own novel.',
     href: '/passage-room/dorian-gray-preface/', image: '/Picture%20of%20Dorian%20Gray.png', imageAlt: 'Astor Library Picture of Dorian Gray cover',
     relatedBooks: ['/books/dorian-gray/'], search: 'Picture of Dorian Gray Wilde preface all art is quite useless no moral or immoral book Caliban aestheticism close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“intellects vast and cool and unsympathetic”',
-    description: 'Read the opening of The War of the Worlds through the reversed microscope, infinite complacency and the empire over matter.',
+    description: 'The opening of The War of the Worlds: the reversed microscope, infinite complacency and the empire over matter.',
     href: '/passage-room/war-of-the-worlds-opening/', image: '/War%20of%20the%20Worlds.png', imageAlt: 'Astor Library War of the Worlds cover',
     relatedBooks: ['/books/war-of-the-worlds/'], search: 'War of the Worlds Wells opening intellects vast and cool unsympathetic Mars microscope invasion close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“safer to be feared than loved”',
-    description: 'Read Machiavelli on whether a prince should be loved or feared, through the careful hedges and the dark view of human nature beneath them.',
+    description: 'The careful hedges and the dark view of human nature beneath them — Machiavelli on whether a prince should be loved or feared,.',
     href: '/passage-room/the-prince-feared-or-loved/', image: '/The%20Prince.png', imageAlt: 'Astor Library The Prince cover',
     relatedBooks: ['/books/the-prince/'], search: 'The Prince Machiavelli feared or loved Chapter 17 fear love human nature politics realism close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“a perfect ebony, or polished jet”',
-    description: 'Read Aphra Behn’s first portrait of Oroonoko, through the European standard of beauty it applies and the contradiction at the book’s heart.',
+    description: 'Aphra Behn’s first portrait of Oroonoko,: the European standard of beauty it applies and the contradiction at the book’s heart.',
     href: '/passage-room/oroonoko-royal-slave/', image: '/Oroonoko%20Main%20Cover.png', imageAlt: 'Astor Library Oroonoko cover',
     relatedBooks: ['/books/oroonoko/'], search: 'Oroonoko Aphra Behn royal slave ebony Roman nose beauty race slavery Surinam close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“the most pernicious race of little odious vermin”',
-    description: 'Read the King of Brobdingnag’s verdict on mankind, through the mock-panegyric and the satire Swift builds by changing the scale.',
+    description: 'The King of Brobdingnag’s verdict on mankind,: the mock-panegyric and the satire Swift builds by changing the scale.',
     href: '/passage-room/gullivers-travels-odious-vermin/', image: '/Gulliver%27s%20Travels%20Replacement.jpg', imageAlt: 'Astor Library Gulliver’s Travels cover',
     relatedBooks: ['/books/gullivers-travels/'], search: 'Gullivers Travels Swift Brobdingnag odious vermin king satire scale panegyric close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“transformed… into a horrible vermin”',
-    description: 'Read the first sentence of Kafka’s Metamorphosis, through the untranslatable Ungeziefer and the flatness with which the miracle is met.',
+    description: 'The untranslatable Ungeziefer and the flatness with which the miracle is met — the first sentence of Kafka’s Metamorphosis,.',
     href: '/passage-room/metamorphosis-vermin/', image: '/The%20Metamorphosis%20Main%20Cover.png', imageAlt: 'Astor Library The Metamorphosis cover',
     relatedBooks: ['/books/the-metamorphosis/'], search: 'Metamorphosis Kafka Gregor Samsa vermin Ungeziefer transformed insect opening translation close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“scared… at the horse-hair plume”',
-    description: 'Read Hector, Andromache and the frightened child in Iliad Book VI, through the plume that scares the baby and the tenderness inside the war poem.',
+    description: 'Hector, Andromache and the frightened child in Iliad Book VI,: the plume that scares the baby and the tenderness inside the war poem.',
     href: '/passage-room/iliad-hectors-helmet/', image: '/The%20Iliad.png', imageAlt: 'Astor Library The Iliad cover',
     relatedBooks: ['/books/the-iliad/'], search: 'Iliad Homer Hector Andromache Astyanax helmet plume Book 6 farewell war tenderness Butler close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“the touch of a hand… from behind”',
-    description: 'Read Walter Hartright’s midnight meeting with the woman in white, through the stopped blood and the dread a sensation novel builds from a single touch.',
+    description: 'Walter Hartright’s midnight meeting with the woman in white,: the stopped blood and the dread a sensation novel builds from a single touch.',
     href: '/passage-room/woman-in-white-midnight-touch/', image: '/The%20Woman%20in%20White%20Main%20Cover.png', imageAlt: 'Astor Library The Woman in White cover',
     relatedBooks: ['/books/the-woman-in-white/'], search: 'Woman in White Wilkie Collins Hartright woman in white midnight road touch sensation novel Anne Catherick close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“pasted in the sky like a wafer”',
-    description: 'Read the death of Jim Conklin and Crane’s famous red sun, through the impersonal cosmos and war stripped of glory.',
+    description: 'The impersonal cosmos and war stripped of glory — the death of Jim Conklin and Crane’s famous red sun,.',
     href: '/passage-room/red-badge-sun-like-a-wafer/', image: '/Red%20Badge%20of%20Courage.png', imageAlt: 'Astor Library The Red Badge of Courage cover',
     relatedBooks: ['/books/red-badge-of-courage/'], search: 'Red Badge of Courage Stephen Crane red sun wafer Jim Conklin death naturalism indifferent universe close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“the ecstasy that marks the summit of life”',
-    description: 'Read Buck running down the rabbit in The Call of the Wild, through London’s Darwinian rapture and the joy of the hunt.',
+    description: 'Buck running down the rabbit in The Call of the Wild,: London’s Darwinian rapture and the joy of the hunt.',
     href: '/passage-room/call-of-the-wild-ecstasy/', image: '/Call%20of%20the%20Wild.png', imageAlt: 'Astor Library The Call of the Wild cover',
     relatedBooks: ['/books/call-of-the-wild/'], search: 'Call of the Wild Jack London Buck ecstasy summit of life hunt atavism womb of Time naturalism close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“such a book as Robinson Crusoe never was written”',
-    description: 'Read Gabriel Betteredge’s devotion to Robinson Crusoe at the opening of The Moonstone, through the comic narrator and the detective novel built on a voice.',
+    description: 'Gabriel Betteredge’s devotion to Robinson Crusoe at the opening of The Moonstone,: the comic narrator and the detective novel built on a voice.',
     href: '/passage-room/moonstone-robinson-crusoe/', image: '/The%20Moonstone%20Main%20Cover.png', imageAlt: 'Astor Library The Moonstone cover',
     relatedBooks: ['/books/the-moonstone/'], search: 'Moonstone Wilkie Collins Betteredge Robinson Crusoe detective novel voice narrator testimony close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Afraid! Of Him?”',
-    description: 'Read the vision of the god Pan in The Wind in the Willows, through awe fused with love and the strange gift of forgetfulness.',
+    description: 'Awe fused with love and the strange gift of forgetfulness — the vision of the god Pan in The Wind in the Willows,.',
     href: '/passage-room/wind-in-the-willows-piper/', image: '/The%20Wind%20in%20the%20Willows%20-%20Main%20Cover.png', imageAlt: 'Astor Library The Wind in the Willows cover',
     relatedBooks: ['/books/the-wind-in-the-willows/'], search: 'Wind in the Willows Grahame Pan Piper at the Gates of Dawn Rat Mole awe forgetfulness close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“the White Way of Delight”',
-    description: 'Read Anne renaming the Avenue and Barry’s pond, through imagination as survival and the child who improves the world by naming it.',
+    description: 'Anne renaming the Avenue and Barry’s pond,: imagination as survival and the child who improves the world by naming it.',
     href: '/passage-room/anne-of-green-gables-naming/', image: '/Anne%20of%20Green%20Gables%20Main%20Cover.png', imageAlt: 'Astor Library Anne of Green Gables cover',
     relatedBooks: ['/books/anne-of-green-gables/'], search: 'Anne of Green Gables Montgomery White Way of Delight Lake of Shining Waters renaming imagination Matthew close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“buy the flowers herself”',
-    description: 'Read the opening of Mrs Dalloway, through the plunge into memory, free indirect style, and a whole life opening from an errand.',
+    description: 'The opening of Mrs Dalloway,: the plunge into memory, free indirect style, and a whole life opening from an errand.',
     href: '/passage-room/mrs-dalloway-flowers-herself/', image: '/Mrs%20Dalloway%20Main%20Cover.png', imageAlt: 'Astor Library Mrs Dalloway cover',
     relatedBooks: ['/books/mrs-dalloway/'], search: 'Mrs Dalloway Virginia Woolf buy the flowers herself Clarissa Bourton Peter Walsh free indirect style memory close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Now is the winter of our discontent”',
-    description: 'Read Richard’s opening soliloquy through the sun/son pun, the body he blames and the villain who makes the audience his confidant.',
+    description: 'The sun/son pun, the body he blames and the villain who makes the audience his confidant — Richard’s opening soliloquy.',
     href: '/passage-room/richard-iii-winter-of-our-discontent/', image: '/Richard%20III.png', imageAlt: 'Astor Library Richard III cover',
     relatedBooks: ['/books/richard-iii/'], search: 'Richard III Shakespeare winter of our discontent soliloquy Act 1 Scene 1 villain deformity determined close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“All the world’s a stage”',
-    description: 'Read Jaques’s seven ages through the satirist’s eye, the sans that strips everything, and the old man carried on stage to refute him.',
+    description: 'Jaques’s seven ages: the satirist’s eye, the sans that strips everything, and the old man carried on stage to refute him.',
     href: '/passage-room/as-you-like-it-seven-ages/', image: '/As%20you%20like%20it.png', imageAlt: 'Astor Library As You Like It cover',
     relatedBooks: ['/books/as-you-like-it/'], search: 'As You Like It Shakespeare Jaques all the worlds a stage seven ages of man Act 2 Scene 7 Adam Orlando close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Ay, but to die, and go we know not where”',
-    description: 'Read Claudio’s speech on death and Isabella’s fury, through the kneaded clod, the thick-ribbed ice and the plea that darkens a comedy.',
+    description: 'Claudio’s speech on death and Isabella’s fury,: the kneaded clod, the thick-ribbed ice and the plea that darkens a comedy.',
     href: '/passage-room/measure-for-measure-to-die/', image: '/Measure%20for%20Measure%20Main%20Cover.png', imageAlt: 'Astor Library Measure for Measure cover',
     relatedBooks: ['/books/measure-for-measure/'], search: 'Measure for Measure Shakespeare Claudio Isabella ay but to die Act 3 Scene 1 death prison problem play close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“The barge she sat in, like a burnished throne”',
-    description: 'Read Enobarbus on Cleopatra at the Cydnus, through love-sick winds, fans that heat what they cool and the cynic who cannot stop describing her.',
+    description: 'Love-sick winds, fans that heat what they cool and the cynic who cannot stop describing her — Enobarbus on Cleopatra at the Cydnus,.',
     href: '/passage-room/antony-and-cleopatra-the-barge/', image: '/Antony%20and%20Cleopatra.png', imageAlt: 'Astor Library Antony and Cleopatra cover',
     relatedBooks: ['/books/antony-and-cleopatra/'], search: 'Antony and Cleopatra Shakespeare Enobarbus barge burnished throne Cydnus Act 2 Scene 2 Plutarch description close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Things fall apart; the centre cannot hold”',
-    description: 'Read Yeats’s The Second Coming as printed in 1921, through the gyre, the ceremony of innocence, Spiritus Mundi and the rough beast.',
+    description: 'Yeats’s The Second Coming as printed in 1921,: the gyre, the ceremony of innocence, Spiritus Mundi and the rough beast.',
     href: '/passage-room/yeats-the-second-coming/', image: '/Michael%20Robartes%20Main%20Cover.png', imageAlt: 'Astor Library Michael Robartes and the Dancer cover',
     relatedBooks: ['/books/michael-robartes-and-the-dancer/'], search: 'Yeats Second Coming things fall apart centre cannot hold gyre rough beast Bethlehem Michael Robartes 1921 close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Arms, and the man I sing”',
-    description: 'Read the opening of the Aeneid in Dryden’s translation, through the first three words, Juno’s hatred and the question about heavenly spite.',
+    description: 'The opening of the Aeneid in Dryden’s translation,: the first three words, Juno’s hatred and the question about heavenly spite.',
     href: '/passage-room/aeneid-arms-and-the-man/', image: '/The%20Aeneid.png', imageAlt: 'Astor Library The Aeneid cover',
     relatedBooks: ['/books/the-aeneid/'], search: 'Aeneid Virgil Dryden arms and the man I sing Book 1 opening Juno Rome epic invocation close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“your sheep… may be said now to devour men”',
-    description: 'Read More on enclosure through the mild sheep turned man-eaters, the abbots in the dock and a Tudor argument about who makes the poor.',
+    description: 'The mild sheep turned man-eaters, the abbots in the dock and a Tudor argument about who makes the poor — More on enclosure.',
     href: '/passage-room/utopia-sheep-devour-men/', image: '/Utopia.png', imageAlt: 'Astor Library Utopia cover',
     relatedBooks: ['/books/utopia/'], search: 'Utopia Thomas More sheep devour men enclosure Hythloday Book 1 Cardinal Morton theft Tudor social criticism close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“A wonderful serenity has taken possession of my entire soul”',
-    description: 'Read Werther’s letter of 10 May through the artist who cannot draw, nature as sanctuary and the longing that already contains the ending.',
+    description: 'Werther’s letter of 10 May: the artist who cannot draw, nature as sanctuary and the longing that already contains the ending.',
     href: '/passage-room/werther-wonderful-serenity/', image: '/The%20Sorrows%20of%20Young%20Werther%20Main%20Cover.png', imageAlt: 'Astor Library The Sorrows of Young Werther cover',
     relatedBooks: ['/books/the-sorrows-of-young-werther/'], search: 'Sorrows of Young Werther Goethe letter May 10 wonderful serenity nature artist Romantic epistolary close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Don’t wonder to see the paper so blotted”',
-    description: 'Read the first letter of Pamela through trouble and comfort, a servant qualified above her degree, the blotted page and the master who takes her hand.',
+    description: 'The first letter of Pamela: trouble and comfort, a servant qualified above her degree, the blotted page and the master who takes her hand.',
     href: '/passage-room/pamela-dear-father-and-mother/', image: '/Pamela.png', imageAlt: 'Astor Library Pamela cover',
     relatedBooks: ['/books/pamela/'], search: 'Pamela Richardson Letter 1 dear father and mother blotted paper epistolary writing to the moment Shamela close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“people always live for ever when there is an annuity”',
-    description: 'Read John and Fanny Dashwood talking three thousand pounds down to nothing, through the arithmetic of selfishness and Austen’s deadliest comic scene.',
+    description: 'The arithmetic of selfishness and Austen’s deadliest comic scene — John and Fanny Dashwood talking three thousand pounds down to nothing,.',
     href: '/passage-room/sense-and-sensibility-annuity/', image: '/0002_1_use-the-don-juan-cover-as-an-exact-colou_sMgaBHLlUme1jzOdjH5LaA_aUz8n_6YSzut1qW8z3QwNg_cover.png', imageAlt: 'Astor Library Sense and Sensibility cover',
     relatedBooks: ['/books/sense-and-sensibility/'], search: 'Sense and Sensibility Austen John Dashwood Fanny annuity Chapter 2 three thousand pounds money comedy close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“each time it was a different story”',
-    description: 'Read the opening of Ethan Frome through a story told in pieces, the ruin of a man, the lameness like a chain and a frame narrator who admits his doubts.',
+    description: 'The opening of Ethan Frome: a story told in pieces, the ruin of a man, the lameness like a chain and a frame narrator who admits his doubts.',
     href: '/passage-room/ethan-frome-bit-by-bit/', image: '/Ethan%20Frome%20Main%20Cover.png', imageAlt: 'Astor Library Ethan Frome cover',
     relatedBooks: ['/books/ethan-frome/'], search: 'Ethan Frome Wharton opening bit by bit Starkfield frame narrator lameness chain close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“For the life of him he could not remember”',
-    description: 'Read the ending of Mansfield’s The Fly through the boss and the inkpot, the grinding wretchedness and the forgetting that closes the story.',
+    description: 'The ending of Mansfield’s The Fly: the boss and the inkpot, the grinding wretchedness and the forgetting that closes the story.',
     href: '/passage-room/the-fly-he-could-not-remember/', image: '/The%20Doves%27%20Nest%20and%20Other%20Stories%20Main%20COver.png', imageAlt: 'Astor Library The Doves’ Nest cover',
     relatedBooks: ['/books/the-doves-nest-and-other-stories/'], search: 'The Fly Katherine Mansfield Doves Nest boss inkpot son war grief forgetting ending short story close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“What is honour? A word.”',
-    description: 'Read Falstaff’s catechism on honour before Shrewsbury, through the question-and-answer form, the man who died a Wednesday and the scutcheon that ends the argument.',
+    description: 'The question-and-answer form, the man who died a Wednesday and the scutcheon that ends the argument — Falstaff’s catechism on honour before Shrewsbury,.',
     href: '/passage-room/henry-iv-what-is-honour/', image: '/Henry%20IV,%20Part%201.png', imageAlt: 'Astor Library Henry IV Part 1 cover',
     relatedBooks: ['/books/henry-iv-part-1/', '/books/henry-iv-parts-1-and-2/'], search: 'Henry IV Part 1 Shakespeare Falstaff what is honour a word catechism Shrewsbury Act 5 Scene 1 close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“O, she’s warm!”',
-    description: 'Read the statue scene of The Winter’s Tale through awakened faith, Paulina’s spell and a resurrection the play calls an art lawful as eating.',
+    description: 'The statue scene of The Winter’s Tale: awakened faith, Paulina’s spell and a resurrection the play calls an art lawful as eating.',
     href: '/passage-room/winters-tale-she-is-warm/', image: '/The%20Winter%27s%20Tale%20Main%20COver.png', imageAlt: 'Astor Library The Winter’s Tale cover',
     relatedBooks: ['/books/the-winters-tale/'], search: 'Winters Tale Shakespeare statue scene Hermione Paulina awake your faith O shes warm Act 5 Scene 3 romance close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“This can be no trick”',
-    description: 'Read Benedick talking himself into love through the overheard trick, the appetite that alters, paper bullets of the brain and the world that must be peopled.',
+    description: 'Benedick talking himself into love: the overheard trick, the appetite that alters, paper bullets of the brain and the world that must be peopled.',
     href: '/passage-room/much-ado-this-can-be-no-trick/', image: '/Much%20Ado%20About%20Nothing.png', imageAlt: 'Astor Library Much Ado About Nothing cover',
     relatedBooks: ['/books/much-ado-about-nothing/'], search: 'Much Ado About Nothing Shakespeare Benedick this can be no trick world must be peopled gulling Act 2 Scene 3 close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“I banish you!”',
-    description: 'Read Coriolanus’s reply to his banishment through the common cry of curs, the reversal that banishes Rome and the exit line “There is a world elsewhere”.',
+    description: 'The common cry of curs, the reversal that banishes Rome and the exit line “There is a world elsewhere” — Coriolanus’s reply to his banishment.',
     href: '/passage-room/coriolanus-i-banish-you/', image: '/Coriolanus.png', imageAlt: 'Astor Library Coriolanus cover',
     relatedBooks: ['/books/coriolanus/'], search: 'Coriolanus Shakespeare I banish you world elsewhere common cry of curs Act 3 Scene 3 banishment tribunes close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Golden lads and girls all must, / As chimney-sweepers, come to dust”',
-    description: 'Read the dirge from Cymbeline through the wages of a worldly task, the reed and the oak, and a funeral song sung over someone who is not dead.',
+    description: 'The dirge from Cymbeline: the wages of a worldly task, the reed and the oak, and a funeral song sung over someone who is not dead.',
     href: '/passage-room/cymbeline-fear-no-more/', image: '/Cymbeline%20Main%20Cover.png', imageAlt: 'Astor Library Cymbeline cover',
     relatedBooks: ['/books/cymbeline/'], search: 'Cymbeline Shakespeare fear no more the heat of the sun dirge golden lads chimney-sweepers Imogen Act 4 Scene 2 close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“O tiger’s heart wrapped in a woman’s hide!”',
-    description: 'Read York’s speech to Queen Margaret through the she-wolf of France, the bloody handkerchief and the line Robert Greene turned against Shakespeare.',
+    description: 'York’s speech to Queen Margaret: the she-wolf of France, the bloody handkerchief and the line Robert Greene turned against Shakespeare.',
     href: '/passage-room/henry-vi-tigers-heart/', image: '/Henry%20VI%2C%20Part%203.png', imageAlt: 'Astor Library Henry VI Part 3 cover',
     relatedBooks: ['/books/henry-vi-part-3/', '/books/henry-vi-parts-1-2-and-3/'], search: 'Henry VI Part 3 Shakespeare York Margaret tigers heart womans hide Rutland Greene upstart crow Act 1 Scene 4 close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Time’s glory is to calm contending kings”',
-    description: 'Read Lucrece’s apostrophe to Time through the catalogue of Time’s offices, worm-holes in monuments, and a woman arguing with an abstraction because no one else will listen.',
+    description: 'The catalogue of Time’s offices, worm-holes in monuments, and a woman arguing with an abstraction because no one else will listen — Lucrece’s apostrophe to Time.',
     href: '/passage-room/lucrece-times-glory/', image: '/The%20Rape%20of%20Lucrece%20Main%20Cover.png', imageAlt: 'Astor Library The Rape of Lucrece cover',
     relatedBooks: ['/books/the-rape-of-lucrece/', '/books/the-rape-of-lucrece-and-venus-and-adonis/'], search: 'Rape of Lucrece Shakespeare Times glory calm contending kings apostrophe rhyme royal narrative poem close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Grief fills the room up of my absent child”',
-    description: 'Read Constance’s speech on grief through the empty garments stuffed out with form, the men who call her too fond of sorrow, and the unbound hair.',
+    description: 'Constance’s speech on grief: the empty garments stuffed out with form, the men who call her too fond of sorrow, and the unbound hair.',
     href: '/passage-room/king-john-grief-fills-the-room/', image: '/King%20John%20Main%20Cover.jpg', imageAlt: 'Astor Library King John cover',
     relatedBooks: ['/books/king-john/'], search: 'King John Shakespeare Constance grief fills the room up absent child Arthur Act 3 Scene 4 mourning close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Which is it to-day, morphine or cocaine?”',
-    description: 'Read the opening of The Sign of the Four through Holmes’s cocaine, Watson’s medical protest and a detective who takes drugs against the dull routine of existence.',
+    description: 'The opening of The Sign of the Four: Holmes’s cocaine, Watson’s medical protest and a detective who takes drugs against the dull routine of existence.',
     href: '/passage-room/sign-of-four-seven-per-cent/', image: '/The%20SIgn%20Of%20Four.png', imageAlt: 'Astor Library The Sign of the Four cover',
     relatedBooks: ['/books/sign-of-four/'], search: 'Sign of the Four Conan Doyle Holmes cocaine seven per cent solution Watson opening Chapter 1 detective close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“The cognomen of Crane was not inapplicable”',
-    description: 'Read Irving’s portrait of Ichabod Crane through the weather-cock head, the genius of famine and the scarecrow eloped from a cornfield.',
+    description: 'The weather-cock head, the genius of famine and the scarecrow eloped from a cornfield — Irving’s portrait of Ichabod Crane.',
     href: '/passage-room/sleepy-hollow-ichabod-crane/', image: '/Sleepy%20Hollow%20Main%20Cover.png', imageAlt: 'Astor Library Sleepy Hollow cover',
     relatedBooks: ['/books/sleepy-hollow-and-other-stories/'], search: 'Legend of Sleepy Hollow Washington Irving Ichabod Crane portrait scarecrow weather-cock caricature close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“he does say Victoria, and lo! it is Victoria”',
-    description: 'Read Syme’s defence of the railway timetable through the poetry of order, the wild arrow and the wild engine, and chaos as dullness.',
+    description: 'Syme’s defence of the railway timetable: the poetry of order, the wild arrow and the wild engine, and chaos as dullness.',
     href: '/passage-room/man-who-was-thursday-victoria/', image: '/The%20Man%20Who%20Was%20Thursday.png', imageAlt: 'Astor Library The Man Who Was Thursday cover',
     relatedBooks: ['/books/the-man-who-was-thursday/'], search: 'Man Who Was Thursday Chesterton Syme Gregory Victoria timetable Bradshaw paradox order anarchy Chapter 1 close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Lord keep my Memory green.”',
-    description: 'Read the ending of Dickens’s last Christmas book through a narrator who says nothing, the shadows that change the room, and the portrait under holly.',
+    description: 'The ending of Dickens’s last Christmas book: a narrator who says nothing, the shadows that change the room, and the portrait under holly.',
     href: '/passage-room/haunted-man-memory-green/', image: '/The%20Haunted%20Man%20and%20the%20Ghost%27s%20Bargain%20Main%20Cover.png', imageAlt: 'Astor Library The Haunted Man cover',
     relatedBooks: ['/books/the-haunted-man-and-the-ghosts-bargain/', '/books/dickens-at-christmas/'], search: 'Haunted Man Ghosts Bargain Dickens Christmas book ending Lord keep my memory green Redlaw Milly portrait holly close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Uneasy lies the head that wears a crown”',
-    description: 'Read the sleepless king’s apostrophe to sleep through the ship-boy on the mast, the watch-case and a usurper’s guilt.',
+    description: 'The ship-boy on the mast, the watch-case and a usurper’s guilt — the sleepless king’s apostrophe to sleep.',
     href: '/passage-room/henry-iv-part-2-uneasy-lies-the-head/', image: '/Henry%20IV%20part%202%20Main.jpeg', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/henry-iv-part-2/'], search: 'Henry IV Part 2 Shakespeare uneasy lies the head sleep Act 3 Scene 1 ship-boy insomnia king close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Farewell? A long farewell to all my greatness!”',
-    description: 'Read Wolsey’s fall through the three-day plant, boys on bladders, the sea of glory and the fall like Lucifer.',
+    description: 'Wolsey’s fall: the three-day plant, boys on bladders, the sea of glory and the fall like Lucifer.',
     href: '/passage-room/henry-viii-long-farewell/', image: '/Henry%20VIII%20Main%20Cover.jpg', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/henry-viii/'], search: 'Henry VIII Shakespeare Fletcher Wolsey long farewell greatness Act 3 Scene 2 fall Lucifer close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Take but degree away, untune that string”',
-    description: 'Read Ulysses on degree through the untuned string, the universal wolf and the schemer who preaches order.',
+    description: 'Ulysses on degree: the untuned string, the universal wolf and the schemer who preaches order.',
     href: '/passage-room/troilus-and-cressida-degree/', image: '/Troilus%20and%20Cressida%20Main.png', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/troilus-and-cressida/'], search: 'Troilus and Cressida Shakespeare Ulysses degree untune the string universal wolf Act 1 Scene 3 hierarchy close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Thus much of this will make black white, foul fair”',
-    description: 'Read Timon and the gold through the yellow slave, the inversions money performs and the speech Marx quoted.',
+    description: 'The yellow slave, the inversions money performs and the speech Marx quoted — Timon and the gold.',
     href: '/passage-room/timon-of-athens-gold/', image: '/Timon%20of%20Athens%20Main.png', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/timon-of-athens/'], search: 'Timon of Athens Shakespeare Middleton gold yellow slave black white Act 4 Scene 3 money Marx close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“I am the sea. Hark how her sighs doth flow!”',
-    description: 'Read Titus refusing reason through bottomless grief, the weeping welkin and a messenger with two heads and a hand.',
+    description: 'Titus refusing reason: bottomless grief, the weeping welkin and a messenger with two heads and a hand.',
     href: '/passage-room/titus-andronicus-i-am-the-sea/', image: '/Titus%20Andronicus.png', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/titus-andronicus/'], search: 'Titus Andronicus Shakespeare I am the sea reason grief Act 3 Scene 1 Lavinia revenge close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Thy husband is thy lord, thy life, thy keeper”',
-    description: 'Read Katherina’s last speech through the troubled fountain, subject and prince, and four centuries of argument about whether she means it.',
+    description: 'Katherina’s last speech: the troubled fountain, subject and prince, and four centuries of argument about whether she means it.',
     href: '/passage-room/taming-of-the-shrew-thy-husband-is-thy-lord/', image: '/The%20Taming%20of%20the%20Shrew%20Main%20Cover.jpg', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/taming-of-the-shrew/'], search: 'Taming of the Shrew Shakespeare Katherina obedience husband is thy lord Act 5 Scene 2 Kate wager close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“I to the world am like a drop of water”',
-    description: 'Read Antipholus alone in Ephesus through the drop that seeks another drop and a farce that opens on lost identity.',
+    description: 'The drop that seeks another drop and a farce that opens on lost identity — Antipholus alone in Ephesus.',
     href: '/passage-room/comedy-of-errors-drop-of-water/', image: '/Comedy%20of%20Errors%20%28Main%20Page%29.png', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/comedy-of-errors/'], search: 'Comedy of Errors Shakespeare Antipholus drop of water identity twins Act 1 Scene 2 Ephesus close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“From women’s eyes this doctrine I derive”',
-    description: 'Read Berowne’s defence of breaking the oath through Promethean fire, women as academes and a play that will not let him win.',
+    description: 'Berowne’s defence of breaking the oath: Promethean fire, women as academes and a play that will not let him win.',
     href: '/passage-room/loves-labours-lost-womens-eyes/', image: '/Love%27s%20Labour%27s%20Lost%20Main%20Cover.jpg', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/loves-labours-lost/'], search: 'Loves Labours Lost Shakespeare Berowne from womens eyes oath Promethean fire Act 4 Scene 3 sophistry close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Our remedies oft in ourselves do lie”',
-    description: 'Read Helena resolving to act through the fated sky that gives free scope and the most self-reliant heroine in the comedies.',
+    description: 'Helena resolving to act: the fated sky that gives free scope and the most self-reliant heroine in the comedies.',
     href: '/passage-room/alls-well-our-remedies/', image: '/Alls%20Well%20That%20Ends%20Well%20Main%20Cover.png', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/alls-well-that-ends-well/'], search: 'Alls Well That Ends Well Shakespeare Helena our remedies in ourselves Act 1 Scene 1 king project close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“the sourest-natured dog that lives”',
-    description: 'Read Launce’s farewell with his dog Crab through the shoes that are parents, “I am the dog”, and the first great clown speech.',
+    description: 'The shoes that are parents, “I am the dog”, and the first great clown speech — Launce’s farewell with his dog Crab.',
     href: '/passage-room/two-gentlemen-launce-and-crab/', image: '/Two%20Gentleman%20of%20Verona%20Main%20Cover.png', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/the-two-gentlemen-of-verona/'], search: 'Two Gentlemen of Verona Shakespeare Launce Crab dog Act 2 Scene 3 clown malapropism close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Hunting he lov’d, but love he laugh’d to scorn”',
-    description: 'Read the opening of Venus and Adonis through the sun taking leave, the goddess as bold-faced suitor and the poem that made Shakespeare famous.',
+    description: 'The opening of Venus and Adonis: the sun taking leave, the goddess as bold-faced suitor and the poem that made Shakespeare famous.',
     href: '/passage-room/venus-and-adonis-purple-coloured-face/', image: '/Venus%20and%20Adonis%20Main%20Cover.png', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/venus-and-adonis/'], search: 'Venus and Adonis Shakespeare narrative poem opening Adonis goddess suitor 1593 Southampton close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“The kettle began it!”',
-    description: 'Read the opening of Dickens’s third Christmas book through a narrator who argues with a character about a kettle and the Dutch clock.',
+    description: 'The opening of Dickens’s third Christmas book: a narrator who argues with a character about a kettle and the Dutch clock.',
     href: '/passage-room/cricket-on-the-hearth-the-kettle-began-it/', image: '/Cricket%20on%20the%20Hearth.png', imageAlt: 'Astor Library cover',
     relatedBooks: ['/books/cricket-on-the-hearth/'], search: 'Cricket on the Hearth Dickens kettle began it Christmas book narrator Peerybingle Dutch clock close reading'
   },
