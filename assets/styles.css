@@ -2118,3 +2118,10 @@
   .astor-motif-watermark { display: none; }
   .astor-book-cover { grid-template-columns: 112px minmax(0, 1fr); }
 }
+
+/* A closed fold must actually be closed. The browser hides the content of a
+   closed <details> with a user-agent rule, and any author rule that sets
+   display on that content — .astor-context-grid { display: grid } and its
+   relatives — overrides it, so the section was laid out at full height inside
+   a collapsed box and printed over whatever followed. */
+.book-fold:not([open]) > *:not(summary) { display: none !important; }
