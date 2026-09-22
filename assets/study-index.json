@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 84,
-    "quotations": 1959,
-    "characters": 771,
+    "books": 86,
+    "quotations": 1986,
+    "characters": 782,
     "themes": 236,
     "techniques": 243,
-    "timelineEvents": 982,
-    "places": 491
+    "timelineEvents": 1003,
+    "places": 501
   },
   "books": [
     {
@@ -14255,6 +14255,865 @@
         {
           "href": "/books/the-wind-in-the-willows/",
           "why": "Published five years later and the opposite experiment: animals given speech, manners and houses rather than instinct."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "carnacki-the-ghost-finder",
+      "title": "Carnacki, the Ghost-Finder",
+      "author": "William Hope Hodgson",
+      "href": "/books/carnacki-the-ghost-finder/",
+      "studyHref": "",
+      "playHref": "/play/?book=carnacki-the-ghost-finder",
+      "form": "story collection",
+      "genre": "Ghost story",
+      "period": "Modern Classics",
+      "setting": "A dining room at 427 Cheyne Walk, Chelsea, and whatever house Carnacki has just come back from — a Kentish manor, an Irish castle, a Galway billiard room, a Sussex chapel",
+      "written": "1910-12, for The Idler and The New Magazine",
+      "firstPublished": 1910,
+      "readingTime": 240,
+      "difficulty": 3,
+      "lengthNote": "Six cases, about 70,000 words, each told after dinner to the same four friends and each ending with the same two words",
+      "openingLine": "In response to Carnacki's usual card of invitation to have dinner and listen to a story, I arrived promptly at 427, Cheyne Walk, to find the three others who were always invited to these happy little times, there before me.",
+      "summary": "Carnacki investigates haunted houses the way a surveyor investigates subsidence: he measures the room, photographs it, seals the doors with tape, chalks a circle, and sits inside a ring of vacuum tubes he calls the Electric Pentacle. Some of the six cases turn out to be frauds and he says so; some are not, and the defences barely hold. The structure never varies — dinner, the story, and then Out you go! — and the repetition is the point, because it is the only thing in the book that can be relied on.",
+      "referenceStyle": "story number and title, following the magazine texts",
+      "sourceText": {
+        "label": "Project Gutenberg text of Carnacki, the Ghost Finder (eBook 10832)",
+        "url": "https://www.gutenberg.org/cache/epub/10832/pg10832.txt",
+        "note": "The six original cases of 1910 and 1912, in first-publication order. Hodgson's invented mediaeval spelling in the Sigsand quotations is kept exactly as printed."
+      },
+      "structure": [
+        {
+          "id": "the-dinners",
+          "label": "The frame",
+          "title": "427 Cheyne Walk, and four men who are told to leave",
+          "summary": "Every story is set inside the same evening: a card arrives, four friends dine, Carnacki refuses to be drawn until he is ready, tells the whole case without being interrupted, answers a question or two, and then throws them out. The narrator Dodgson records it. The frame gives the book its rhythm and its one joke.",
+          "scenes": [
+            {
+              "ref": "Every story",
+              "title": "The card",
+              "summary": "The usual invitation to dinner and a story, and four men who never decline it."
+            },
+            {
+              "ref": "Every story",
+              "title": "Out you go",
+              "summary": "The same genial dismissal closes each case, whatever has just been described."
+            }
+          ]
+        },
+        {
+          "id": "the-method",
+          "label": "The apparatus",
+          "title": "Chalk, tape, garlic and a battery",
+          "summary": "Carnacki's procedure is the book's real subject: measure the room, photograph everything, seal the doors and windows with tape and wax so that no human agent can enter, then build the defences — a chalk circle, a water circle, bread and garlic, and the Electric Pentacle wired to accumulators. The reader learns the drill and then watches it be tested.",
+          "scenes": [
+            {
+              "ref": "No. 1, The Gateway of the Monster",
+              "title": "The Electric Pentacle",
+              "summary": "Hodgson's invention arrives in the first case: vacuum tubes laid in a pentacle and switched on."
+            },
+            {
+              "ref": "No. 2, The House Among the Laurels",
+              "title": "Thirty-three feet",
+              "summary": "A circle measured with a tape rule, men posted inside it, and their pipes confiscated because the Sigsand MS. forbids light within the barrier."
+            },
+            {
+              "ref": "No. 1, The Gateway of the Monster",
+              "title": "The Sigsand MS.",
+              "summary": "A fourteenth-century manuscript quoted in invented spelling, and treated as a technical reference rather than as a curiosity."
+            }
+          ]
+        },
+        {
+          "id": "the-real-cases",
+          "label": "Cases that are real",
+          "title": "The room, the ring and the hoof",
+          "summary": "In three of the six, something is genuinely there. A ring and a bed-chamber produce a hand that hunts; a room in Ireland swells and whistles like a mouth; and in Galway a hoof walks through a closed door and down a passage between two men. These are the stories the book is remembered for, and in each the defences are nearly not enough.",
+          "scenes": [
+            {
+              "ref": "No. 1, The Gateway of the Monster",
+              "title": "The Grey Room",
+              "summary": "A door that unlocks itself, a hand in the pentacle, and a ring that turns out to be the gateway."
+            },
+            {
+              "ref": "No. 3, The Whistling Room",
+              "title": "The mouth",
+              "summary": "A room in an Irish castle that whistles, and that Carnacki eventually sees as a vast pair of lips."
+            },
+            {
+              "ref": "No. 4, The Horse of the Invisible",
+              "title": "The hoof in the passage",
+              "summary": "The sound of a great hoof passing between two men in the dark, after a human fraud has already been exposed."
+            }
+          ]
+        },
+        {
+          "id": "the-frauds",
+          "label": "Cases that are not",
+          "title": "Where the ghost is a man with a motive",
+          "summary": "Carnacki is as pleased to find a hoax as a haunting, and says so. A chapel dagger that stabs by itself turns out to be machinery and a butler; a house among the laurels has a human explanation running alongside the inhuman one; and a family curse is being helped along by somebody who wants a marriage stopped. The detections are fair and the clues are given.",
+          "scenes": [
+            {
+              "ref": "No. 6, The Thing Invisible",
+              "title": "The chapel dagger",
+              "summary": "A weapon that strikes on its own, explained by mechanism, timing and a man with a reason."
+            },
+            {
+              "ref": "No. 4, The Horse of the Invisible",
+              "title": "Two causes at once",
+              "summary": "A human impostor is caught, and the hoof goes on sounding afterwards."
+            },
+            {
+              "ref": "No. 5, The Searcher of the End House",
+              "title": "His mother's house",
+              "summary": "The only case in his own home, with a smell, a child's footsteps and a long dull vigil that turns."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "carnacki",
+          "name": "Thomas Carnacki",
+          "role": "The ghost-finder",
+          "summary": "A professional investigator who believes in neither ghosts nor the absence of them until he has measured the room. He is brusque about being questioned, exact about his equipment, and honest when a case collapses into fraud. What makes him unusual among occult detectives is that he is frightened, reports it, and goes back in anyway.",
+          "clue": "Seals a room with tape and wax, then sits inside a pentacle of vacuum tubes until something happens.",
+          "firstAppearance": "No. 1, The Gateway of the Monster",
+          "traits": [
+            "methodical",
+            "sceptical",
+            "openly frightened"
+          ],
+          "relationships": [
+            {
+              "to": "dodgson",
+              "label": "tells his cases to",
+              "kind": "ally",
+              "stages": [
+                "the-dinners",
+                "the-real-cases",
+                "the-frauds"
+              ]
+            },
+            {
+              "to": "arkright",
+              "label": "answers questions from",
+              "kind": "ally",
+              "stages": [
+                "the-dinners"
+              ]
+            },
+            {
+              "to": "outer-monstrosities",
+              "label": "defends against",
+              "kind": "enemy",
+              "stages": [
+                "the-real-cases",
+                "the-method"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dodgson",
+          "name": "Dodgson",
+          "role": "The narrator, one of the four guests",
+          "summary": "He records the evenings and almost never intrudes. His one function is to be the man who asks a question too early in the first story and is politely frozen out, which teaches the reader the rules of the house.",
+          "clue": "Changes the subject to a new gun when he has asked one question too many.",
+          "firstAppearance": "No. 1, The Gateway of the Monster",
+          "traits": [
+            "attentive",
+            "tactful",
+            "unobtrusive"
+          ],
+          "relationships": [
+            {
+              "to": "carnacki",
+              "label": "records",
+              "kind": "ally",
+              "stages": [
+                "the-dinners"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "arkright",
+          "name": "Arkright",
+          "role": "The guest who asks the technical questions",
+          "summary": "He is the reason the reader learns anything about the theory: at the end of a case he asks what governs the Unknown Last Line of the Saaamaaa Ritual, and gets an answer about astral vibration and a protective force. Hodgson uses him to deliver exposition without slowing the stories.",
+          "clue": "Asks about the Unknown Last Line, and is told to read Harzan's Monograph.",
+          "firstAppearance": "No. 1, The Gateway of the Monster",
+          "traits": [
+            "curious",
+            "well read",
+            "persistent"
+          ],
+          "relationships": [
+            {
+              "to": "carnacki",
+              "label": "questions",
+              "kind": "ally",
+              "stages": [
+                "the-dinners"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sigsand",
+          "name": "The Sigsand MS.",
+          "role": "A fourteenth-century manuscript, quoted as a manual",
+          "summary": "Hodgson's invented authority, written in a spelling of his own devising and cited the way an engineer cites a standard. It supplies the rules — no light within the barrier, the five hills, the properties of the circle — and its flat practicality is what makes the occult in these stories feel like a trade.",
+          "clue": "Warns that there must be no light from within the barrier, in fourteenth-century spelling.",
+          "firstAppearance": "No. 1, The Gateway of the Monster",
+          "traits": [
+            "archaic",
+            "practical",
+            "invented"
+          ],
+          "relationships": [
+            {
+              "to": "carnacki",
+              "label": "consulted by",
+              "kind": "ally",
+              "stages": [
+                "the-method"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "outer-monstrosities",
+          "name": "The Outer Monstrosities",
+          "role": "What the defences are for",
+          "summary": "Never described and barely named, they are the ab-human forces the pentacle keeps out. Hodgson gives them a theory rather than a shape: they press on the human from outside, and something inscrutable stands between them and the soul.",
+          "clue": "Their nearness produces a spiritual sickness worse than any physical pain.",
+          "firstAppearance": "No. 1, The Gateway of the Monster",
+          "traits": [
+            "formless",
+            "external",
+            "patient"
+          ],
+          "relationships": [
+            {
+              "to": "carnacki",
+              "label": "press against",
+              "kind": "enemy",
+              "stages": [
+                "the-real-cases"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "evidence",
+          "name": "Sealing the room first",
+          "canonicalName": "Evidence and testimony",
+          "summary": "Before anything supernatural is entertained, Carnacki eliminates people: tape across the doors, wax on the windows, photographs of every wall. The haunting only begins once fraud has been ruled out in front of the reader.",
+          "development": "The method is set out in the first case, tested in the middle ones, and in the last it catches a hoax instead of a ghost — which is the proof that the method was never rigged."
+        },
+        {
+          "id": "knowledge",
+          "name": "An occult trade with a literature",
+          "canonicalName": "Knowledge",
+          "summary": "The stories assume a profession: manuscripts to consult, monographs to read, rituals with numbered signs, and defences that can be built wrong. Carnacki's authority comes from reading, not from a gift.",
+          "development": "Each case adds a scrap of the system — the Saaamaaa Ritual, the Unknown Last Line, the Incantation of Raaaee — and none of it is ever explained fully enough to be checked."
+        },
+        {
+          "id": "technology",
+          "name": "A defence that needs a battery",
+          "canonicalName": "Machines and modernity",
+          "summary": "The Electric Pentacle is the book's best idea: the mediaeval figure of protection, wired with vacuum tubes and run off accumulators. Edwardian electricity meets a fourteenth-century manuscript and neither is treated as absurd.",
+          "development": "It is introduced as an improvement, relied on in every serious case, and its weakness — it can be broken by a hand reaching across it — is what makes the first story frightening."
+        },
+        {
+          "id": "performance",
+          "name": "The evening as a ritual",
+          "canonicalName": "Performance and sincerity",
+          "summary": "The card, the dinner, the refusal to be hurried, the story told without interruption, the dismissal. The frame is as fixed as the pentacle, and it does the same job: it holds a shape around something unruly.",
+          "development": "Six stories, one unvarying evening, and the reader comes to want the closing words as much as the guests do."
+        },
+        {
+          "id": "faith",
+          "name": "Something on our side",
+          "canonicalName": "Faith",
+          "summary": "The one piece of comfort in Hodgson's universe is stated in an aside: an inscrutable protective force intervenes between the human soul and what is outside. It is not called God and it does not always arrive early.",
+          "development": "It saves Carnacki in the first case, is discussed as theory in the fourth, and is never claimed as certain."
+        },
+        {
+          "id": "fear",
+          "name": "An investigator who admits it",
+          "canonicalName": "Fear",
+          "summary": "Carnacki reports his own terror as part of the evidence: the sweat, the cowed feeling, the spiritual sickness that comes with the ab-human. In a genre of unflappable experts, that is the collection's most modern quality.",
+          "development": "He is frightened in the first story and still frightened in the sixth, and never pretends the experience gets easier."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "frame-narrative",
+          "name": "The club tale",
+          "canonicalName": "Frame narrative",
+          "definition": "A story told inside another story, so that every account reaches the reader through somebody with an interest in it.",
+          "bookDefinition": "A story told aloud to a fixed audience inside another story.",
+          "inThisBook": "The dinner at Cheyne Walk supplies the audience, the interruptions and the closing question. It also lets Hodgson end a case without resolving it: a man telling a story after dinner is allowed to say he never found out."
+        },
+        {
+          "id": "refrain",
+          "name": "Out you go",
+          "canonicalName": "Refrain",
+          "definition": "A phrase brought back at intervals, so that its meaning shifts with what has happened since.",
+          "bookDefinition": "A phrase repeated at the same point in every story.",
+          "inThisBook": "Carnacki's dismissal closes all six cases. Coming after a hand in the dark or a hoof in the passage, it works as the door of the barrier closing — the evening is sealed and everyone goes home."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "Equipment as plot",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative keeps returning to until it stands for the argument rather than illustrating it.",
+          "bookDefinition": "A story advanced by the state of its tools.",
+          "inThisBook": "Chalk, tape, wax, garlic, a camera, a tape measure and a battery. Whether a case ends well depends on whether the circle is complete and the tubes are lit, which gives the supernatural something to break."
+        },
+        {
+          "id": "unreliable-narrator",
+          "name": "A single witness, telling it afterwards",
+          "canonicalName": "Unreliable narrator",
+          "definition": "An account with no corroboration beyond the teller.",
+          "bookDefinition": "An account with no corroboration beyond the teller.",
+          "inThisBook": "Carnacki's photographs are described but not shown, and his friends never visit the houses. The frame makes the whole book one man's word, which the fraud cases then quietly reinforce: he is the sort who would say so if it were a trick."
+        },
+        {
+          "id": "gothic",
+          "name": "Old houses, handled professionally",
+          "canonicalName": "Gothic machinery",
+          "definition": "The stock furniture of Gothic writing — the ruin, the storm, the locked room, the buried secret — put to a particular use.",
+          "bookDefinition": "The haunted-house tradition approached as a job of work.",
+          "inThisBook": "The manor, the castle and the chapel are all conventional, and everything Carnacki does in them is not. The contrast between inherited dread and a man with a tape measure is the collection's whole comic and dramatic engine."
+        },
+        {
+          "id": "dialect",
+          "name": "The Sigsand spelling",
+          "canonicalName": "Dialect",
+          "definition": "Spelling and grammar used to mark where a speaker comes from, and what being heard that way costs them.",
+          "bookDefinition": "Invented archaic orthography used for quoted authority.",
+          "inThisBook": "Theyre must noe lyght come from wythin the barryier. The spelling is fake and the effect is not: it turns the rules into something older than the man obeying them."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "card-of-invitation",
+          "text": "In response to Carnacki's usual card of invitation to have dinner and listen to a story, I arrived promptly at 427, Cheyne Walk",
+          "speaker": "",
+          "reference": "No. 1, The Gateway of the Monster",
+          "stage": "the-dinners",
+          "context": "The first sentence of the collection, and of five of the six stories.",
+          "analysis": "The word usual is doing the work: before we have met anyone we know this has happened many times and will happen again. Hodgson establishes a routine so that the things inside it can be as irregular as he likes.",
+          "themes": [
+            "performance"
+          ],
+          "techniques": [
+            "frame-narrative"
+          ],
+          "characters": [
+            "dodgson",
+            "carnacki"
+          ],
+          "source": "1910 text, story 1",
+          "cloze": [
+            "invitation",
+            "Cheyne"
+          ]
+        },
+        {
+          "id": "out-you-go",
+          "text": "Out you go!",
+          "speaker": "",
+          "reference": "Every story",
+          "stage": "the-dinners",
+          "context": "Carnacki's dismissal, which ends each case.",
+          "analysis": "Three words, genially delivered, immediately after something that ought to keep four grown men talking all night. The formula is a door closing on the subject, and by the third story the reader is waiting for it.",
+          "themes": [
+            "performance"
+          ],
+          "techniques": [
+            "refrain"
+          ],
+          "characters": [
+            "carnacki",
+            "dodgson"
+          ],
+          "source": "1910 text, story 2 and elsewhere",
+          "cloze": [
+            "Out",
+            "go"
+          ]
+        },
+        {
+          "id": "electric-pentacle",
+          "text": "the Electric Pentacle, which is a most marvelous 'Defense'",
+          "speaker": "",
+          "reference": "No. 1, The Gateway of the Monster",
+          "stage": "the-method",
+          "context": "Introducing his own improvement on the traditional protective circle.",
+          "analysis": "Hodgson's single best invention, and the reason these stories still feel unlike anything else: a mediaeval figure of protection rewired with vacuum tubes. The quotation marks around Defense are Carnacki's, and they are the mark of a man using a technical term from an old book.",
+          "themes": [
+            "technology",
+            "knowledge"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "carnacki"
+          ],
+          "source": "1910 text, story 1",
+          "cloze": [
+            "Electric",
+            "Pentacle"
+          ]
+        },
+        {
+          "id": "noe-lyght",
+          "text": "Theyre must noe lyght come from wythin the barryier.",
+          "speaker": "",
+          "reference": "No. 2, The House Among the Laurels",
+          "stage": "the-method",
+          "context": "Quoted from the Sigsand MS. as he takes the men's pipes away.",
+          "analysis": "An invented fourteenth-century sentence used as a safety regulation. The spelling makes it old, the context makes it operational, and the pipes being confiscated makes it real.",
+          "themes": [
+            "knowledge"
+          ],
+          "techniques": [
+            "dialect",
+            "symbolic-objects"
+          ],
+          "characters": [
+            "sigsand",
+            "carnacki"
+          ],
+          "source": "1910 text, story 2",
+          "cloze": [
+            "lyght",
+            "barryier"
+          ]
+        },
+        {
+          "id": "thirty-three-feet",
+          "text": "I got my tape measure then, and measured out a circle thirty-three feet",
+          "speaker": "",
+          "reference": "No. 2, The House Among the Laurels",
+          "stage": "the-method",
+          "context": "Setting the defences in the great hall.",
+          "analysis": "A tape measure, in a haunted house, stated without irony. The whole method is in this clause: the occult is being handled by somebody who would rather be precise than impressive.",
+          "themes": [
+            "evidence",
+            "technology"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "carnacki"
+          ],
+          "source": "1910 text, story 2",
+          "cloze": [
+            "measure",
+            "circle"
+          ]
+        },
+        {
+          "id": "no-silly-mumming",
+          "text": "this was no piece of silly mumming on my part; but done with a definite intention of erecting a barrier",
+          "speaker": "",
+          "reference": "No. 2, The House Among the Laurels",
+          "stage": "the-method",
+          "context": "Warning the men who will spend the night inside the circle.",
+          "analysis": "He anticipates the reader's scepticism and answers it in the tone of a foreman explaining a safety rule. Hodgson keeps making the characters take the ritual seriously as procedure, which is the only way the ritual can frighten anyone.",
+          "themes": [
+            "evidence",
+            "knowledge"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "carnacki"
+          ],
+          "source": "1910 text, story 2",
+          "cloze": [
+            "mumming",
+            "barrier"
+          ]
+        },
+        {
+          "id": "spiritual-sickness",
+          "text": "that feeling of spiritual sickness, as if some delicate, beautiful, inward grace had suffered, which is felt only upon the too near approach of the ab-human",
+          "speaker": "",
+          "reference": "No. 1, The Gateway of the Monster",
+          "stage": "the-real-cases",
+          "context": "In the pentacle, as the thing in the Grey Room comes close.",
+          "analysis": "The damage is moral rather than physical, and Carnacki says it is worse than pain. This is the sentence that separates Hodgson's monsters from the period's ghosts: what they threaten is not the body but something the narrator can only call grace.",
+          "themes": [
+            "fear",
+            "faith"
+          ],
+          "techniques": [
+            "unreliable-narrator"
+          ],
+          "characters": [
+            "carnacki",
+            "outer-monstrosities"
+          ],
+          "source": "1910 text, story 1",
+          "cloze": [
+            "sickness",
+            "grace"
+          ]
+        },
+        {
+          "id": "hoof-in-the-dark",
+          "text": "the sound of a hoof in the dark billiard room we had just left",
+          "speaker": "",
+          "reference": "No. 4, The Horse of the Invisible",
+          "stage": "the-real-cases",
+          "context": "Just after the rational explanation has begun to look convincing.",
+          "analysis": "Hodgson's timing is exact: the noise arrives in the sentence immediately after Carnacki has started listing commonplace possibilities. The detective story is allowed to nearly succeed before the ghost story takes it back.",
+          "themes": [
+            "evidence",
+            "fear"
+          ],
+          "techniques": [
+            "gothic"
+          ],
+          "characters": [
+            "carnacki"
+          ],
+          "source": "1910 text, story 4",
+          "cloze": [
+            "hoof",
+            "billiard"
+          ]
+        },
+        {
+          "id": "clungk-clunck",
+          "text": "The clungk clunck, clungk clunck, of the great hoof falls passed right between us",
+          "speaker": "",
+          "reference": "No. 4, The Horse of the Invisible",
+          "stage": "the-real-cases",
+          "context": "Two men flattened against opposite walls of a passage.",
+          "analysis": "An invented noise, repeated, with no creature attached to it. The onomatopoeia is faintly ridiculous on the page and works completely in the ear, which is the risk Hodgson takes throughout and usually wins.",
+          "themes": [
+            "fear"
+          ],
+          "techniques": [
+            "refrain"
+          ],
+          "characters": [
+            "carnacki"
+          ],
+          "source": "1910 text, story 4",
+          "cloze": [
+            "clungk",
+            "hoof"
+          ]
+        },
+        {
+          "id": "enormous-hoof",
+          "text": "the shape of a single enormous hoof",
+          "speaker": "",
+          "reference": "No. 4, The Horse of the Invisible",
+          "stage": "the-real-cases",
+          "context": "In a photograph taken during the haunting, examined afterwards.",
+          "analysis": "The evidence is photographic, which for 1910 is the most modern proof available, and it still shows only a shape half-formed out of shadow. Carnacki studies it for a long time without understanding it better, and says so.",
+          "themes": [
+            "evidence"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "carnacki"
+          ],
+          "source": "1910 text, story 4",
+          "cloze": [
+            "shape",
+            "hoof"
+          ]
+        },
+        {
+          "id": "protective-force",
+          "text": "there is some inscrutable Protective Force constantly intervening between the human soul",
+          "speaker": "",
+          "reference": "No. 4, The Horse of the Invisible",
+          "stage": "the-real-cases",
+          "context": "Answering Arkright's question about what governs the Unknown Last Line.",
+          "analysis": "The nearest thing to consolation in Hodgson, and it arrives as jargon at the end of a story rather than as revelation. Inscrutable is the operative word: something is on our side and nobody knows what it is.",
+          "themes": [
+            "faith",
+            "knowledge"
+          ],
+          "techniques": [
+            "frame-narrative"
+          ],
+          "characters": [
+            "carnacki",
+            "arkright"
+          ],
+          "source": "1910 text, story 4",
+          "cloze": [
+            "Protective",
+            "soul"
+          ]
+        },
+        {
+          "id": "outer-monstrosities",
+          "text": "the Outer Monstrosities",
+          "speaker": "",
+          "reference": "No. 4, The Horse of the Invisible",
+          "stage": "the-method",
+          "context": "In the same explanation, naming what the protective force stands between us and.",
+          "analysis": "Capitalised, plural, and never described. Hodgson's habit of naming forces he will not show gave later writers a whole vocabulary, and the restraint is why the phrase still carries weight.",
+          "themes": [
+            "knowledge",
+            "fear"
+          ],
+          "techniques": [
+            "gothic"
+          ],
+          "characters": [
+            "outer-monstrosities",
+            "carnacki"
+          ],
+          "source": "1910 text, story 4",
+          "cloze": [
+            "Outer",
+            "Monstrosities"
+          ]
+        },
+        {
+          "id": "unknown-last-line",
+          "text": "the Unknown Last Line of the Saaamaaa Ritual",
+          "speaker": "",
+          "reference": "No. 4, The Horse of the Invisible",
+          "stage": "the-method",
+          "context": "Arkright's question after dinner.",
+          "analysis": "A named thing that is defined as unknown, in a ritual with numbered signs and a missing eighth place. The apparatus is elaborate enough to sound like scholarship and vague enough that nothing can be checked — exactly the balance the stories need.",
+          "themes": [
+            "knowledge"
+          ],
+          "techniques": [
+            "frame-narrative"
+          ],
+          "characters": [
+            "arkright",
+            "carnacki"
+          ],
+          "source": "1910 text, story 4",
+          "cloze": [
+            "Unknown",
+            "Ritual"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "Written",
+          "value": "1910-12",
+          "note": "Five cases ran in The Idler in 1910; The Thing Invisible followed in The New Magazine in 1912."
+        },
+        {
+          "label": "First collected",
+          "value": "1913",
+          "note": "Eveleigh Nash published the six stories as a book; three more were added by Arkham House in 1947."
+        },
+        {
+          "label": "Shape",
+          "value": "Six cases, one formula",
+          "note": "A card of invitation, a dinner, a story told without interruption, and a dismissal."
+        },
+        {
+          "label": "The kit",
+          "value": "Chalk, garlic, tape and tubes",
+          "note": "The Electric Pentacle is Hodgson's own invention: an occult defence that needs a battery."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "The first modern occult detective",
+          "summary": "Carnacki investigates with equipment, photographs and a documented method, and every later ghost-hunter with a kit bag descends from him.",
+          "counter": "Le Fanu's Hesselius and Blackwood's John Silence came earlier; what is new in Hodgson is not the detective but the hardware."
+        },
+        {
+          "position": "The frauds make the hauntings credible",
+          "summary": "Because two of the six cases are exposed as human contrivance, the reader trusts Carnacki when he says the others were not.",
+          "counter": "The exposures are also where the collection is weakest as fiction: the mechanical solutions are thin, and the stories everyone remembers are the ones with no explanation at all."
+        },
+        {
+          "position": "A formula worn out in six goes",
+          "summary": "The invitation, the dinner, the uninterrupted narrative and the dismissal repeat exactly, and the later stories lean on the apparatus rather than developing it.",
+          "counter": "The repetition is the form, as it is in any club tale. It is also the only stable thing in a universe Hodgson has already shown, in his novels, running down to nothing."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "What does Carnacki's method contribute to the horror?",
+          "focus": "Procedure, evidence and the value of ruling things out",
+          "plan": [
+            "Set out the drill: photographs, tape and wax on the openings, chalk and water circles, the Electric Pentacle.",
+            "Show how eliminating human agency in front of the reader raises the cost of what is left.",
+            "Use The Thing Invisible, where the method catches a hoax, as the guarantee that it is not rigged.",
+            "Take the first story's broken circle as the moment the apparatus fails.",
+            "Argue for whether the equipment makes the stories more frightening or more comfortable."
+          ]
+        },
+        {
+          "question": "How does the club-tale frame shape what these stories can do?",
+          "focus": "Telling, audience and the unfinished case",
+          "plan": [
+            "Describe the evening and its fixed order, including the dismissal.",
+            "Note what the frame permits: no corroboration, no visit to the house, and endings without answers.",
+            "Examine Arkright's questions as the only route to the theory behind the practice.",
+            "Compare the effect with a story told directly, in the moment.",
+            "Conclude on the repetition, and whether it reassures or confines."
+          ]
+        },
+        {
+          "question": "Why does the Electric Pentacle work as an idea?",
+          "focus": "Old rules and new current",
+          "plan": [
+            "Describe the object: a mediaeval figure of protection, laid in vacuum tubes and run from accumulators.",
+            "Set it beside the Sigsand MS., with its invented fourteenth-century spelling.",
+            "Consider what Edwardian readers knew of electricity, and why that makes the join convincing.",
+            "Use the moment a hand crosses the tubes to show the device's dramatic value.",
+            "Argue for what later writers took from the combination."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Carnacki admits to being frightened in almost every case. Does that make him more or less reliable?",
+        "Two of the six turn out to be frauds. Would the book be better if all six were real?",
+        "The Sigsand MS. is invented, and quoted as though it were not. Why does that work?",
+        "What is gained by never describing the Outer Monstrosities?",
+        "Every story ends with the same two words. What do they do to the horror that came before them?",
+        "The photographs are described and never shown. Would you want to see them?"
+      ],
+      "timeline": [
+        {
+          "year": 1877,
+          "label": "Hodgson born in Essex",
+          "detail": "A clergyman's son, and the second of twelve children.",
+          "kind": "context"
+        },
+        {
+          "year": 1891,
+          "label": "Apprenticed to the sea",
+          "detail": "Eight years afloat, including a Royal Humane Society medal for a rescue in heavy weather.",
+          "kind": "context"
+        },
+        {
+          "year": 1899,
+          "label": "The gymnasium at Blackburn",
+          "detail": "He left the sea for physical culture, photography and lecturing; the practical streak in Carnacki comes from here.",
+          "kind": "context"
+        },
+        {
+          "year": 1907,
+          "label": "The first novels",
+          "detail": "The Boats of the Glen Carrig, then The House on the Borderland the following year.",
+          "kind": "context"
+        },
+        {
+          "year": 1910,
+          "label": "Five cases in The Idler",
+          "detail": "The Gateway of the Monster, The House Among the Laurels, The Whistling Room, The Horse of the Invisible and The Searcher of the End House.",
+          "kind": "work"
+        },
+        {
+          "year": 1912,
+          "label": "The Thing Invisible",
+          "detail": "The sixth case appears in The New Magazine, and is the most detective-like of them.",
+          "kind": "work"
+        },
+        {
+          "year": 1913,
+          "label": "Collected by Eveleigh Nash",
+          "detail": "The six stories are published as a book.",
+          "kind": "work"
+        },
+        {
+          "year": 1918,
+          "label": "Killed at Ypres",
+          "detail": "A shell killed him in April, aged forty; he had re-enlisted after being invalided out.",
+          "kind": "context"
+        },
+        {
+          "year": 1947,
+          "label": "Arkham House adds three",
+          "detail": "The Haunted Jarvee, The Find and The Hog are printed from manuscripts; later editions often run to nine cases.",
+          "kind": "reception"
+        },
+        {
+          "year": 1973,
+          "label": "The occult detective revived",
+          "detail": "Reprints and anthologies restore Carnacki as the ancestor of every investigator who arrives with equipment rather than intuition.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Cheyne Walk, Chelsea",
+          "lat": 51.4825,
+          "lon": -0.1721,
+          "note": "Carnacki's address, where every story is told over dinner."
+        },
+        {
+          "name": "County Galway",
+          "lat": 53.2707,
+          "lon": -9.0568,
+          "note": "The country of the Horse of the Invisible, and of the Irish castle in The Whistling Room."
+        },
+        {
+          "name": "Kent",
+          "lat": 51.2787,
+          "lon": 0.5217,
+          "note": "The manor country of the earlier cases, close enough to London for a night train."
+        },
+        {
+          "name": "Blackburn, Lancashire",
+          "lat": 53.7486,
+          "lon": -2.4864,
+          "note": "Where Hodgson taught physical culture and began photographing storms."
+        },
+        {
+          "name": "Borth, Ceredigion",
+          "lat": 52.4879,
+          "lon": -4.0508,
+          "note": "The Welsh coast where he was living when the Carnacki stories were written."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/the-house-on-the-borderland/",
+          "why": "Hodgson's own novel of a besieged house, with the same practicality and none of the reassurance."
+        },
+        {
+          "href": "/books/adventures-of-sherlock-holmes/",
+          "why": "The method Carnacki is borrowing: a specialist, a client, an examination and an explanation over dinner."
+        },
+        {
+          "href": "/books/the-turn-of-the-screw/",
+          "why": "A haunting with one witness and no corroboration, written fifteen years earlier and never resolved."
+        },
+        {
+          "href": "/books/dracula/",
+          "why": "The other Edwardian-adjacent book where men fight the supernatural with equipment, timetables and written records."
+        },
+        {
+          "href": "/books/the-willows/",
+          "why": "Blackwood in the same years, doing without any apparatus at all."
         }
       ],
       "videos": []
@@ -61112,7 +61971,7 @@
         {
           "id": "fear",
           "name": "Fear and its arithmetic",
-          "canonicalName": "Fear and its arithmetic",
+          "canonicalName": "Fear",
           "summary": "The footprint changes nothing material and everything else: the same island, the same stores, fifteen years of bad sleep. Defoe is precise about how fear reasons — it plans massacres, invents enemies, and then has to be argued down by an appeal to law and jurisdiction that Crusoe constructs himself.",
           "development": "Storms and drowning at first, then the sea, then other people; the last fear is the ordinary one of losing the money he has accumulated by post."
         },
@@ -77547,6 +78406,975 @@
           "source": "YaleCourses"
         }
       ]
+    },
+    {
+      "slug": "the-house-on-the-borderland",
+      "title": "The House on the Borderland",
+      "author": "William Hope Hodgson",
+      "href": "/books/the-house-on-the-borderland/",
+      "studyHref": "",
+      "playHref": "/play/?book=the-house-on-the-borderland",
+      "form": "novel",
+      "genre": "Weird tale",
+      "period": "Modern Classics",
+      "setting": "A grey stone house above a pit in the west of Ireland, and then the whole of space and time seen from its study window",
+      "written": "1907, in the burst of work that followed Hodgson's years at sea",
+      "firstPublished": 1908,
+      "readingTime": 200,
+      "difficulty": 4,
+      "lengthNote": "A frame, an introduction and twenty-seven short chapters, about 54,000 words, with an editor's footnotes and a manuscript that stops in the middle of a word",
+      "openingLine": "Many are the hours in which I have pondered upon the story that is set forth in the following pages.",
+      "summary": "Two anglers in the west of Ireland find a ruined house above a chasm and a damp manuscript in the rubble. It was written by a man who lived there alone with his sister and his dog, and it describes two things: a siege by swine-faced creatures that come up out of the pit, and a set of visions in which the writer sits in his own chair while the sun races across the sky, slows, dies, and goes out. The second half is one of the strangest passages in English fiction — no plot, no dialogue, one man watching the solar system end — and it stops mid-word.",
+      "referenceStyle": "chapter title, following the 1908 text",
+      "sourceText": {
+        "label": "Project Gutenberg text of The House on the Borderland (eBook 10002)",
+        "url": "https://www.gutenberg.org/cache/epub/10002/pg10002.txt",
+        "note": "The 1908 text, with Hodgson's spellings, his dedication to his father, and the sixteen footnotes signed Ed. that the fictional editor adds to the manuscript."
+      },
+      "structure": [
+        {
+          "id": "the-manuscript",
+          "label": "The frame",
+          "title": "Two anglers, a ruin and a damp book",
+          "summary": "Hodgson spends his opening pages establishing how the story reaches us: a fishing holiday in Kraighten, a village with no road to it, a house reduced to rubble above a pit, and a small thick book dug out of the debris. The narrator who reads it warns that the account is stiff and abrupt and that he has left it alone, which licenses everything strange that follows.",
+          "scenes": [
+            {
+              "ref": "Author's Introduction",
+              "title": "The pit-water smell",
+              "summary": "The editor describes handling the manuscript: damp pages, close handwriting, and the last few leaves blank."
+            },
+            {
+              "ref": "The Finding of the Manuscript",
+              "title": "Kraighten",
+              "summary": "Two men fish a river in the west of Ireland, find a garden gone wild and a house thrown down, and dig the book out of the wreck."
+            }
+          ]
+        },
+        {
+          "id": "the-arena",
+          "label": "The first vision",
+          "title": "A green jade house, in an arena of gods",
+          "summary": "The Recluse is carried out of his body across a plain and into an amphitheatre of mountains, where he finds his own house rebuilt in green jade at enormous scale, ringed by the gods and monsters of every mythology. He is shown it, and not told anything. The vision establishes what the rest of the book assumes: the house stands where two orders of reality touch.",
+          "scenes": [
+            {
+              "ref": "The Plain of Silence",
+              "title": "Out of the body",
+              "summary": "The first seizure takes him from his study to a silent plain under a red sun."
+            },
+            {
+              "ref": "The House in the Arena",
+              "title": "Built of green jade",
+              "summary": "His own house, identical in every particular except colour and size, at the centre of a ring of watching figures."
+            },
+            {
+              "ref": "The Earth",
+              "title": "The return",
+              "summary": "He is brought home to find his sister worried and himself unable to explain where he has been."
+            }
+          ]
+        },
+        {
+          "id": "the-siege",
+          "label": "The swine-things",
+          "title": "What comes up out of the pit",
+          "summary": "The middle of the novel is a straight siege story and a very good one. Creatures with human bodies and swine faces come out of the chasm, and the Recluse defends the house room by room with a rifle and a barricade while his sister is kept ignorant. Hodgson is exact about ammunition, doors, cellar trapdoors and the sound of things moving underground.",
+          "scenes": [
+            {
+              "ref": "The Thing in the Pit",
+              "title": "The first one",
+              "summary": "A face at the edge of the chasm, and a dog that will not go near it."
+            },
+            {
+              "ref": "The Swine-Things",
+              "title": "The siege begins",
+              "summary": "The creatures cross the garden at night; the windows and doors become the plot."
+            },
+            {
+              "ref": "The Trap in the Great Cellar",
+              "title": "Underneath",
+              "summary": "The pit runs under the house, and the last defence is a stone slab."
+            }
+          ]
+        },
+        {
+          "id": "the-sea-of-sleep",
+          "label": "The Sea of Sleep",
+          "title": "The woman he lost",
+          "summary": "Between the siege and the ending, the book turns quiet. The Recluse is taken to a still sea under a vast white orb and meets the woman he loved and lost, and the only tenderness in the novel is here. The darkness that comes across the orb — she calls it the Sun of Darkness — is the same darkness that will end the book.",
+          "scenes": [
+            {
+              "ref": "The Sea of Sleep",
+              "title": "Together again",
+              "summary": "A meeting with no explanation offered and none asked for."
+            },
+            {
+              "ref": "The Noise in the Night",
+              "title": "The Sun of Darkness",
+              "summary": "The light is eaten across and she has to go before it closes."
+            }
+          ]
+        },
+        {
+          "id": "the-end",
+          "label": "The end of the solar system",
+          "title": "One man in a chair, watching the sun die",
+          "summary": "Time accelerates. Days flicker, the sun becomes a band of fire, the years run out, and the Recluse sits in his study while the earth slows, the sun reddens and dies, a green star draws the system into itself, and the last light goes. His dog crumbles to dust beside him. The manuscript ends in the middle of a word, and a footnote observes that the pen has trailed off across the paper.",
+          "scenes": [
+            {
+              "ref": "The Slowing Rotation",
+              "title": "Days like a heartbeat",
+              "summary": "The sun's arc speeds up until light and dark blur into a grey band."
+            },
+            {
+              "ref": "The Green Star",
+              "title": "Pulled off course",
+              "summary": "A green sun grows in the sky and the earth's orbit begins to change."
+            },
+            {
+              "ref": "The End of the Solar System",
+              "title": "The dead sun",
+              "summary": "The sun goes out, the earth travels across its dark face, and the cold arrives."
+            },
+            {
+              "ref": "The Dark Sun",
+              "title": "The last pages",
+              "summary": "The Celestial Globes, the Dark Sun, and a sentence that stops."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "recluse",
+          "name": "The Recluse",
+          "role": "The writer of the manuscript, never named",
+          "summary": "A man who bought a house nobody would live in because it was cheap, keeps no servants, and describes himself as not superstitious on the page before the visions start. He is brave under siege, exact in his descriptions, and entirely alone with what he has seen; the diary exists because there is no one he can tell.",
+          "clue": "Says the peasantry call him mad, and starts a diary so that readers may say it too.",
+          "firstAppearance": "The Plain of Silence",
+          "traits": [
+            "solitary",
+            "exact",
+            "unshakeable until the end"
+          ],
+          "relationships": [
+            {
+              "to": "pepper",
+              "label": "keeps and loses",
+              "kind": "family",
+              "stages": [
+                "the-siege",
+                "the-end"
+              ]
+            },
+            {
+              "to": "mary",
+              "label": "lives with, protects from the truth",
+              "kind": "family",
+              "stages": [
+                "the-siege"
+              ]
+            },
+            {
+              "to": "swine-things",
+              "label": "besieged by",
+              "kind": "enemy",
+              "stages": [
+                "the-siege"
+              ]
+            },
+            {
+              "to": "the-woman",
+              "label": "loved and lost",
+              "kind": "love",
+              "stages": [
+                "the-sea-of-sleep"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pepper",
+          "name": "Pepper",
+          "role": "His dog",
+          "summary": "The only creature the Recluse says he prefers to the rest of creation, and the one that makes the ending land. Through the siege he is the alarm and the company; in the last chapters he sleeps through the acceleration of time and is touched with a foot and falls to pieces. It is the book's cruellest and best-judged paragraph.",
+          "clue": "Crumbles into a mouldering heap of bones and dust at the nudge of a boot.",
+          "firstAppearance": "The Plain of Silence",
+          "traits": [
+            "loyal",
+            "brave",
+            "mortal on a different clock"
+          ],
+          "relationships": [
+            {
+              "to": "recluse",
+              "label": "companion of",
+              "kind": "family",
+              "stages": [
+                "the-siege",
+                "the-end"
+              ]
+            },
+            {
+              "to": "swine-things",
+              "label": "warns against",
+              "kind": "enemy",
+              "stages": [
+                "the-siege"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mary",
+          "name": "Mary",
+          "role": "His sister, and the housekeeper",
+          "summary": "She keeps the house, asks few questions, and is kept out of the story by her brother's decision rather than by her own. Hodgson uses her to measure how far the Recluse has gone: the more he sees, the less he tells the one person in the building with him.",
+          "clue": "Is told nothing about the creatures in the garden, and cooks through the siege.",
+          "firstAppearance": "The Thing in the Pit",
+          "traits": [
+            "practical",
+            "uninformed",
+            "steady"
+          ],
+          "relationships": [
+            {
+              "to": "recluse",
+              "label": "sister of",
+              "kind": "family",
+              "stages": [
+                "the-siege"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "swine-things",
+          "name": "The Swine-things",
+          "role": "What climbs out of the pit",
+          "summary": "Human in shape and swine in face, they come in numbers, climb walls, and are stopped only by walls and bullets. Hodgson never explains them and never connects them to the cosmic material; that refusal is why they are frightening rather than symbolic.",
+          "clue": "The first is identified by a single sentence: it was the face of a swine.",
+          "firstAppearance": "The Thing in the Pit",
+          "traits": [
+            "numerous",
+            "patient",
+            "unexplained"
+          ],
+          "relationships": [
+            {
+              "to": "recluse",
+              "label": "besiege",
+              "kind": "enemy",
+              "stages": [
+                "the-siege"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "the-woman",
+          "name": "The woman of the Sea of Sleep",
+          "role": "The love the Recluse lost before the book began",
+          "summary": "She appears only in the quiet chapters, on a still sea under a white orb, and is given no history that the reader can hold. Her leaving, forced by a darkness crossing the light, is the emotional rehearsal for the ending, where a bigger darkness takes everything else.",
+          "clue": "Calls the advancing blackness the Sun of Darkness and goes before it closes.",
+          "firstAppearance": "The Sea of Sleep",
+          "traits": [
+            "gentle",
+            "fading",
+            "not explained"
+          ],
+          "relationships": [
+            {
+              "to": "recluse",
+              "label": "meets again, and leaves",
+              "kind": "love",
+              "stages": [
+                "the-sea-of-sleep"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "editor",
+          "name": "The editor",
+          "role": "The voice of the frame and the sixteen footnotes",
+          "summary": "He prints the manuscript, declines to interpret it, and then cannot help himself: the footnotes offer orbital mechanics, speculation about the speed of time, and finally a note on the ink trailing off the page. The apparatus of scholarship applied to the impossible is the book's quietest and best joke.",
+          "clue": "Signs his notes Ed., and ends the book with a remark about a pen.",
+          "firstAppearance": "Author's Introduction",
+          "traits": [
+            "careful",
+            "curious",
+            "out of his depth"
+          ],
+          "relationships": [
+            {
+              "to": "recluse",
+              "label": "prints and annotates",
+              "kind": "ally",
+              "stages": [
+                "the-manuscript",
+                "the-end"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "isolation",
+          "name": "A man with nobody to tell",
+          "canonicalName": "Isolation",
+          "summary": "The Recluse keeps no servants, hates his neighbours, protects his sister from the facts and talks only to a dog. The diary exists because of that, and the whole book is the record of a solitude that has no outlet except paper.",
+          "development": "He begins alone by choice, is besieged alone by necessity, and ends alone in a universe with no other living thing in it."
+        },
+        {
+          "id": "time",
+          "name": "Deep time, watched from a chair",
+          "canonicalName": "Time",
+          "summary": "Hodgson takes the geological and astronomical timescales that Victorian science had made familiar and puts one man inside them, conscious, in his own study. The horror is not an event but a rate.",
+          "development": "Days blur into a band, years into a flicker, and by the last chapters the sun is a dead face the earth crawls across."
+        },
+        {
+          "id": "knowledge",
+          "name": "An account that explains nothing",
+          "canonicalName": "Knowledge",
+          "summary": "No one in the book understands what has happened. The Recluse reports, the editor annotates, and neither offers a cause for the pit, the creatures or the visions.",
+          "development": "The footnotes get more confident as the events get less explicable, until the last one is reduced to describing the movement of a pen."
+        },
+        {
+          "id": "faith",
+          "name": "Heaven and Hell, without a church",
+          "canonicalName": "Faith",
+          "summary": "The introduction says the story carries a shadowed picture of what may be given the accepted titles of Heaven and Hell, and the arena of gods and the Sea of Sleep supply both. No religion is named and no comfort is offered.",
+          "development": "The vision of the gods comes early and is never returned to; what the book ends with instead is physics."
+        },
+        {
+          "id": "nature",
+          "name": "The pit under the house",
+          "canonicalName": "Nature",
+          "summary": "The chasm is a real feature of the ground, measured at about a hundred and fifty feet, and it is also the way through. Hodgson gets his effects by treating the supernatural as geology.",
+          "development": "It is a curiosity in the first chapters, a source in the middle, and by the cellar chapters it is directly under the floor."
+        },
+        {
+          "id": "narration",
+          "name": "A manuscript with pages missing",
+          "canonicalName": "Narration and storytelling",
+          "summary": "The text arrives damaged: damp, abrupt, gapped, and finally broken off. Every uncertainty in the story can be blamed on the document, which is exactly why the document is presented so carefully.",
+          "development": "The frame introduces the damage, the footnotes measure it, and the last word is unfinished."
+        },
+        {
+          "id": "memory",
+          "name": "The woman who is already gone",
+          "canonicalName": "Memory",
+          "summary": "The one relationship in the book is with someone lost before it starts, met again only in a vision, and lost a second time to an advancing darkness.",
+          "development": "The Sea of Sleep chapters supply the loss that the cosmic ending then repeats on the scale of a solar system."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "frame-narrative",
+          "name": "The found manuscript",
+          "canonicalName": "Frame narrative",
+          "definition": "A story told inside another story, so that every account reaches the reader through somebody with an interest in it.",
+          "bookDefinition": "A story presented as a document discovered by someone else.",
+          "inThisBook": "Two anglers, a ruin and a damp book. The frame is what allows the second half to abandon plot entirely: we are not reading a novel but a record, and records can stop."
+        },
+        {
+          "id": "ellipsis",
+          "name": "The explanation withheld",
+          "canonicalName": "Ellipsis",
+          "definition": "What the narrative declines to show, placed where the reader will notice the gap and fill it.",
+          "bookDefinition": "Refusing to supply causes for the events described.",
+          "inThisBook": "Why the house, why the pit, what the swine-things are, who the gods in the arena were — none of it is answered, and nothing in the book behaves as though an answer is owed."
+        },
+        {
+          "id": "landscape",
+          "name": "Geography given in measurements",
+          "canonicalName": "Landscape",
+          "definition": "Place and weather made to press on the people living in them, rather than serving as scenery.",
+          "bookDefinition": "Description built out of distances, depths and materials.",
+          "inThisBook": "The pit is about a hundred and fifty feet deep, the garden has a wall, the cellar has a slab. The cosmic chapters work because the domestic ones were surveyed first."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "The house itself",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative keeps returning to until it stands for the argument rather than illustrating it.",
+          "bookDefinition": "A single object carrying the book's meaning without being glossed.",
+          "inThisBook": "The same house appears in green jade at the centre of an arena of gods, identical in every particular but colour and scale. Hodgson never says what that means and never needs to."
+        },
+        {
+          "id": "retrospective-narration",
+          "name": "Written down afterwards, at speed",
+          "canonicalName": "Retrospective narration",
+          "definition": "A narrator telling their own earlier life, with the distance between the two selves doing the judging.",
+          "bookDefinition": "A first-person record composed after the events, under pressure.",
+          "inThisBook": "The prose is stiff and abrupt, as the editor warns, and the stiffness is doing work: a man writing this fast has no time to make it literary."
+        },
+        {
+          "id": "set-piece",
+          "name": "The siege",
+          "canonicalName": "The set piece",
+          "definition": "A self-contained episode built to a single effect and complete in itself, whether comic or ceremonial.",
+          "bookDefinition": "An extended action sequence in a fixed location.",
+          "inThisBook": "Doors, windows, ammunition, a cellar trap: the middle third is a practical defence story, and the practicality is what keeps the reader for the unreadable wonders on either side of it."
+        },
+        {
+          "id": "gothic",
+          "name": "The old house with a reputation",
+          "canonicalName": "Gothic machinery",
+          "definition": "The stock furniture of Gothic writing — the ruin, the storm, the locked room, the buried secret — put to a particular use.",
+          "bookDefinition": "An isolated building with a history, bought cheap by a man who should know better.",
+          "inThisBook": "Hodgson sets up the full apparatus in two paragraphs — eighty years empty, a bad name, a ridiculous price — and then spends the novel on things the gothic has no vocabulary for."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "curtains",
+          "text": "I read, and, in reading, lifted the Curtains of the Impossible that blind the mind, and looked out into the unknown.",
+          "speaker": "",
+          "reference": "Author's Introduction",
+          "stage": "the-manuscript",
+          "context": "The editor describing his first reading of the manuscript.",
+          "analysis": "The book's promise, made by a character rather than by the author. Capitalising the Curtains of the Impossible is Edwardian in the worst way and exactly right for a man who has just read something he cannot place.",
+          "themes": [
+            "knowledge",
+            "narration"
+          ],
+          "techniques": [
+            "frame-narrative"
+          ],
+          "characters": [
+            "editor"
+          ],
+          "source": "1908 text, Author's Introduction",
+          "cloze": [
+            "Curtains",
+            "unknown"
+          ]
+        },
+        {
+          "id": "pit-water",
+          "text": "I have the queer, faint, pit-water smell of it in my nostrils now as I write",
+          "speaker": "",
+          "reference": "Author's Introduction",
+          "stage": "the-manuscript",
+          "context": "Handling the manuscript before printing it.",
+          "analysis": "A smell, not a sight, and it belongs to the pit the story will turn on. Hodgson authenticates his document with one physical sensation that the editor cannot get rid of, which is worth more than any amount of insistence that the tale is true.",
+          "themes": [
+            "narration"
+          ],
+          "techniques": [
+            "frame-narrative"
+          ],
+          "characters": [
+            "editor"
+          ],
+          "source": "1908 text, Author's Introduction",
+          "cloze": [
+            "smell",
+            "nostrils"
+          ]
+        },
+        {
+          "id": "say-i-am-mad",
+          "text": "The peasantry, who inhabit the wilderness beyond, say that I am mad.",
+          "speaker": "",
+          "reference": "The Plain of Silence",
+          "stage": "the-manuscript",
+          "context": "The Recluse's first sentences in his own diary.",
+          "analysis": "He raises the charge himself, in the third line, and disposes of it by explaining that he simply will not deal with people. The manoeuvre makes him sound reliable and also tells us that the only witness we will get has a reputation.",
+          "themes": [
+            "isolation",
+            "narration"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "recluse"
+          ],
+          "source": "1908 text, opening of the manuscript",
+          "cloze": [
+            "peasantry",
+            "mad"
+          ]
+        },
+        {
+          "id": "old-pepper",
+          "text": "I have one friend, a dog; yes, I would sooner have old Pepper than the rest of Creation together.",
+          "speaker": "",
+          "reference": "The Plain of Silence",
+          "stage": "the-manuscript",
+          "context": "Explaining his household: a sister, no servants, and the dog.",
+          "analysis": "Hodgson plants the ending here, two hundred pages early. The rest of Creation is precisely what the last chapters take away, and the reader is told at the start which part of it the Recluse would have kept.",
+          "themes": [
+            "isolation",
+            "memory"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "recluse",
+            "pepper"
+          ],
+          "source": "1908 text, opening of the manuscript",
+          "cloze": [
+            "friend",
+            "Creation"
+          ]
+        },
+        {
+          "id": "bad-reputation",
+          "text": "For a couple of centuries, this house has had a reputation, a bad one",
+          "speaker": "",
+          "reference": "The Plain of Silence",
+          "stage": "the-manuscript",
+          "context": "Why the house was cheap.",
+          "analysis": "The whole gothic inheritance, disposed of in a clause and followed immediately by the price. Hodgson is signalling that he knows the convention and is not going to spend the book on it.",
+          "themes": [
+            "nature",
+            "knowledge"
+          ],
+          "techniques": [
+            "gothic"
+          ],
+          "characters": [
+            "recluse"
+          ],
+          "source": "1908 text, opening of the manuscript",
+          "cloze": [
+            "centuries",
+            "reputation"
+          ]
+        },
+        {
+          "id": "shake-their-heads",
+          "text": "the readers will but shake their heads, and be the more convinced that I was mad",
+          "speaker": "",
+          "reference": "The Plain of Silence",
+          "stage": "the-manuscript",
+          "context": "On why he is writing the diary at all.",
+          "analysis": "He anticipates his audience and writes anyway. The sentence also quietly establishes that he expects to be gone when it is read, which is the first hint that the manuscript will outlive him.",
+          "themes": [
+            "narration",
+            "isolation"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "recluse",
+            "editor"
+          ],
+          "source": "1908 text, opening of the manuscript",
+          "cloze": [
+            "readers",
+            "convinced"
+          ]
+        },
+        {
+          "id": "amphitheatre",
+          "text": "an enormous amphitheatre of mountains",
+          "speaker": "",
+          "reference": "The House in the Arena",
+          "stage": "the-arena",
+          "context": "Emerging from a chasm in the first vision.",
+          "analysis": "The scale changes without warning and the prose does not raise its voice. Hodgson's method in the visionary chapters is to describe impossible geography in the tone of a walking guide.",
+          "themes": [
+            "faith"
+          ],
+          "techniques": [
+            "landscape"
+          ],
+          "characters": [
+            "recluse"
+          ],
+          "source": "1908 text, The House in the Arena",
+          "cloze": [
+            "amphitheatre",
+            "mountains"
+          ]
+        },
+        {
+          "id": "green-jade",
+          "text": "a stupendous structure built apparently of green jade",
+          "speaker": "",
+          "reference": "The House in the Arena",
+          "stage": "the-arena",
+          "context": "The building at the centre of the arena.",
+          "analysis": "One material, one colour, and the sentence that follows makes it his own house. The vision offers no interpretation, and the book's refusal to gloss its central image is the reason the image has survived a century.",
+          "themes": [
+            "faith",
+            "knowledge"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "recluse"
+          ],
+          "source": "1908 text, The House in the Arena",
+          "cloze": [
+            "stupendous",
+            "jade"
+          ]
+        },
+        {
+          "id": "no-particular",
+          "text": "in no particular, save in color and its enormous size, did the lonely structure vary from this house in which I live",
+          "speaker": "",
+          "reference": "The House in the Arena",
+          "stage": "the-arena",
+          "context": "Realising what he is looking at.",
+          "analysis": "The clause is careful, legalistic and slightly clumsy, which is how a frightened man checks a fact. What it establishes is that the house is not merely haunted but duplicated somewhere else, and nothing in the novel ever qualifies that.",
+          "themes": [
+            "knowledge",
+            "nature"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "recluse"
+          ],
+          "source": "1908 text, The House in the Arena",
+          "cloze": [
+            "particular",
+            "structure"
+          ]
+        },
+        {
+          "id": "face-of-a-swine",
+          "text": "It was the face of a swine.",
+          "speaker": "",
+          "reference": "The Thing in the Pit",
+          "stage": "the-siege",
+          "context": "Looking down into the chasm at the first of the creatures.",
+          "analysis": "Six words, full stop, no adjective. After pages of careful approach Hodgson gives the reveal the shortest sentence available, and the plainness is what makes it land.",
+          "themes": [
+            "nature"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "recluse",
+            "swine-things"
+          ],
+          "source": "1908 text, The Thing in the Pit",
+          "cloze": [
+            "face",
+            "swine"
+          ]
+        },
+        {
+          "id": "crumbled",
+          "text": "he literally and actually crumbled into a mouldering heap of bones and dust",
+          "speaker": "",
+          "reference": "The Slowing Rotation",
+          "stage": "the-end",
+          "context": "Nudging the sleeping dog with a foot, during the acceleration of time.",
+          "analysis": "The adverbs are doing something unusual: literally and actually are a man refusing to be thought metaphorical. It is also the moment the cosmic chapters acquire a cost, because the reader was told on page one what the dog was worth.",
+          "themes": [
+            "time",
+            "memory"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "pepper",
+            "recluse"
+          ],
+          "source": "1908 text, The Slowing Rotation",
+          "cloze": [
+            "crumbled",
+            "dust"
+          ]
+        },
+        {
+          "id": "little-hill-of-ash",
+          "text": "that little hill of ash",
+          "speaker": "",
+          "reference": "The Slowing Rotation",
+          "stage": "the-end",
+          "context": "Standing over what is left of Pepper.",
+          "analysis": "Four words for a friend. The diminutive is what hurts, and it is also the book's measure of scale: against a dying sun, a life is a small heap on a study floor.",
+          "themes": [
+            "time",
+            "memory"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "recluse",
+            "pepper"
+          ],
+          "source": "1908 text, The Slowing Rotation",
+          "cloze": [
+            "little",
+            "ash"
+          ]
+        },
+        {
+          "id": "sun-of-darkness",
+          "text": "it was imperative she should leave me, before the Sun of Darkness",
+          "speaker": "",
+          "reference": "The Noise in the Night",
+          "stage": "the-sea-of-sleep",
+          "context": "The woman explaining why she must go as the white orb is eaten across.",
+          "analysis": "The phrase is hers, not his, and it is the only piece of vocabulary the book borrows from beyond. A sun that is darkness is a contradiction the novel does not resolve; it simply arrives again, larger, in the final chapters.",
+          "themes": [
+            "memory",
+            "faith"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "the-woman",
+            "recluse"
+          ],
+          "source": "1908 text, The Noise in the Night",
+          "cloze": [
+            "imperative",
+            "Darkness"
+          ]
+        },
+        {
+          "id": "pen-trailed-away",
+          "text": "the pen has trailed away over the paper; possibly, through fright and weakness",
+          "speaker": "",
+          "reference": "Editor's footnote",
+          "stage": "the-end",
+          "context": "The last footnote, on the unfinished word that ends the manuscript.",
+          "analysis": "The book closes not on a vision but on a note about handwriting. After the death of the sun, the editor's evidence-based caution — possibly, through fright and weakness — is the most frightening sentence in it, because it is the only one that sounds reasonable.",
+          "themes": [
+            "narration",
+            "knowledge"
+          ],
+          "techniques": [
+            "frame-narrative",
+            "ellipsis"
+          ],
+          "characters": [
+            "editor",
+            "recluse"
+          ],
+          "source": "1908 text, final footnote",
+          "cloze": [
+            "pen",
+            "fright"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "Written",
+          "value": "1907",
+          "note": "Dated December 1907 at the end of the author's introduction."
+        },
+        {
+          "label": "First printed",
+          "value": "1908",
+          "note": "Published by Chapman & Hall, the second of the four novels Hodgson brought out in five years."
+        },
+        {
+          "label": "Shape",
+          "value": "A manuscript in a frame",
+          "note": "Found by two anglers, printed with an editor's footnotes, and broken off mid-word at the end."
+        },
+        {
+          "label": "Reputation",
+          "value": "Lovecraft's model",
+          "note": "He called the cosmic sweep of the second half a classic of the first water, and took the method from it."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "The first cosmic horror novel in English",
+          "summary": "The second half abandons plot, character and consequence to watch the solar system end, and every later writer who put human beings against indifferent time is working in its shadow.",
+          "counter": "Its cosmology is Edwardian rather than modern — entropy as spectacle, with gods in an arena — and the visionary chapters are as much religious as scientific."
+        },
+        {
+          "position": "Two books stitched together",
+          "summary": "A competent siege story and an extraordinary cosmic reverie sit side by side, and readers regularly prefer one and skip the other.",
+          "counter": "The siege buys the reverie its credit: the reader trusts the man watching the sun die because he was exact about doors, ammunition and a cellar slab."
+        },
+        {
+          "position": "The prose is the problem",
+          "summary": "Hodgson is repetitive, fond of capitals and given to constructions no editor would pass; the book is admired in spite of its sentences.",
+          "counter": "The stiffness is built into the fiction — the editor warns of it on the first page — and the plainest sentences in it, the face of a swine and the little hill of ash, are the ones nobody forgets."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "What does the frame narrative allow the novel to do?",
+          "focus": "Found manuscripts, damage and the right to stop",
+          "plan": [
+            "Describe the frame: anglers, a ruin, a damp book, an editor who declines to interpret.",
+            "Show how the document's condition licenses the gaps in the story.",
+            "Examine the footnotes, and the way their confidence rises as the events become less explicable.",
+            "Take the final note about the pen trailing off as the book's real ending.",
+            "Argue for what would be lost if the Recluse simply told his story."
+          ]
+        },
+        {
+          "question": "How do the two halves of the novel depend on each other?",
+          "focus": "Siege and cosmos",
+          "plan": [
+            "Set out the siege: creatures, barricades, ammunition, a sister kept ignorant.",
+            "Set out the cosmic chapters: acceleration, the green star, the dead sun.",
+            "Show what the first half establishes about the narrator's reliability and precision.",
+            "Use Pepper as the hinge: comic relief in the siege, and the cost of the ending.",
+            "Decide whether the book is two stories or one argument."
+          ]
+        },
+        {
+          "question": "Why is nothing explained?",
+          "focus": "Withheld cause, and what it does to a reader",
+          "plan": [
+            "List what the novel never answers: the pit, the creatures, the arena, the jade house.",
+            "Contrast the gothic convention, where a secret is eventually produced.",
+            "Consider the editor's footnotes as the text's own attempt at explanation, and their failure.",
+            "Weigh the effect on a reader: frustration, or a dread that survives the last page.",
+            "Conclude on what later writers took from the refusal."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "The Recluse calls himself not superstitious on the page before the visions begin. Does the book agree with him?",
+        "Why does Hodgson make the house's double green jade, and never say more about it?",
+        "The swine-things are never connected to the cosmic material. Should they have been?",
+        "Is Pepper's death the most affecting moment in the novel, and if so what does that say about it?",
+        "The editor's last note explains a pen. What is he refusing to say?",
+        "Would the ending work at all without the siege that comes before it?"
+      ],
+      "timeline": [
+        {
+          "year": 1877,
+          "label": "Hodgson born in Essex",
+          "detail": "The son of an Anglican clergyman who moved the family thirteen times; two of his brothers died young.",
+          "kind": "context"
+        },
+        {
+          "year": 1891,
+          "label": "Runs away to sea",
+          "detail": "Apprenticed at fourteen after a first attempt to run away; eight years at sea gave him the horror of the ocean that runs through all his work.",
+          "kind": "context"
+        },
+        {
+          "year": 1899,
+          "label": "The School of Physical Culture",
+          "detail": "He left the sea, opened a gymnasium in Blackburn and photographed storms; the discipline shows in his fiction's practicality.",
+          "kind": "context"
+        },
+        {
+          "year": 1907,
+          "label": "The Boats of the Glen Carrig",
+          "detail": "His first novel, published the year this one was written.",
+          "kind": "context"
+        },
+        {
+          "year": 1907,
+          "label": "The manuscript dated",
+          "detail": "The author's introduction is signed December 17, 1907.",
+          "kind": "work"
+        },
+        {
+          "year": 1908,
+          "label": "Published by Chapman & Hall",
+          "detail": "Reviewers admired the siege and were baffled by the cosmic chapters.",
+          "kind": "work"
+        },
+        {
+          "year": 1912,
+          "label": "The Night Land",
+          "detail": "His last and longest novel takes the end-of-the-sun material of this book and builds a whole world on it.",
+          "kind": "context"
+        },
+        {
+          "year": 1918,
+          "label": "Killed at Ypres",
+          "detail": "He enlisted at thirty-seven, was invalided out, re-enlisted, and was killed by a shell in April 1918.",
+          "kind": "context"
+        },
+        {
+          "year": 1927,
+          "label": "Lovecraft's advocacy",
+          "detail": "Supernatural Horror in Literature calls the novel's cosmic sweep a classic of the first water and begins its rescue.",
+          "kind": "reception"
+        },
+        {
+          "year": 1946,
+          "label": "Arkham House reprint",
+          "detail": "The House on the Borderland and Other Novels put Hodgson back in print in America and fixed his reputation.",
+          "kind": "reception"
+        },
+        {
+          "year": 1963,
+          "label": "A fixture of the paperback boom",
+          "detail": "Reissued repeatedly in horror and fantasy lines, usually with the cosmic half advertised on the cover.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Ardrahan, County Galway",
+          "lat": 53.1553,
+          "lon": -8.8103,
+          "note": "The kind of western Irish country the fictional Kraighten is set in, reached by a road that stops."
+        },
+        {
+          "name": "The Burren, County Clare",
+          "lat": 53.0333,
+          "lon": -9.0667,
+          "note": "Limestone country full of sinkholes and underground rivers, the geology the pit is drawn from."
+        },
+        {
+          "name": "Blackburn, Lancashire",
+          "lat": 53.7486,
+          "lon": -2.4864,
+          "note": "Where Hodgson ran his School of Physical Culture and began writing."
+        },
+        {
+          "name": "Borth, Ceredigion",
+          "lat": 52.4879,
+          "lon": -4.0508,
+          "note": "The Welsh coast where he lived while writing his novels."
+        },
+        {
+          "name": "Ypres, Belgium",
+          "lat": 50.8514,
+          "lon": 2.8853,
+          "note": "Where he was killed in 1918, ten years after this book appeared."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/the-willows/",
+          "why": "Published a year earlier, and the other English story of its decade about a place where something else presses through."
+        },
+        {
+          "href": "/books/carnacki-the-ghost-finder/",
+          "why": "Hodgson's own ghost-finder, taking the same practicality — measurements, defences, evidence — into six short cases."
+        },
+        {
+          "href": "/books/war-of-the-worlds/",
+          "why": "Wells in the same decade, taking the other route out of the Victorian novel: an indifferent intelligence arriving rather than a universe running down."
+        },
+        {
+          "href": "/books/frankenstein/",
+          "why": "The earlier account of a solitary man writing down what he has seen, and expecting not to be believed."
+        },
+        {
+          "href": "/books/dracula/",
+          "why": "A siege told through documents, and the measure of how much apparatus Hodgson does without."
+        }
+      ],
+      "videos": []
     },
     {
       "slug": "the-iliad",

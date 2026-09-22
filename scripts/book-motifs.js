@@ -84,6 +84,8 @@ const MOTIFS = {
   thorn: '<path d="M12 21.5V4.5"/><path d="M12 9 7.2 6.2M12 13.2l4.8-2.8M12 17.4l-4 -2.4"/><path d="m7.2 6.2 1.3 1.2M16.8 10.4l-1.3 1.2M8 15l1.3 1.2"/>',
   funnel: '<path d="M3.4 17.6c2.6-1 5.5-1.5 8.6-1.5s6 .5 8.6 1.5"/><path d="M5.6 8.4h12.8L12 18.2Z"/><path d="M12 18.2v2.6"/>',
   pine: '<path d="M12 21v-3"/><path d="M12 3.2 7.4 9.4h9.2Z"/><path d="M12 8.2 5.8 14h12.4Z"/><path d="M12 12.6 4.4 18.4h15.2Z"/>',
+  pentacle: '<circle cx="12" cy="12" r="9"/><path d="M12 3.4 19 18.2 4.2 9.2h15.6L5 18.2Z"/>',
+  chasm: '<path d="M2.2 8.6h7c.5 3.4.8 7.3.8 11.8"/><path d="M21.8 8.6h-7c-.5 3.4-.8 7.3-.8 11.8"/><path d="M10.6 12.4h1.2M12.2 15.4h1.2M10.4 18.4h1.2"/>',
   fleuron: '<path d="M12 4c1.9 2.4 3.5 4.2 4.7 5.4 2 1.9 2 4.2 0 6.1-1.2 1.2-2.8 3-4.7 5.4-1.9-2.4-3.5-4.2-4.7-5.4-2-1.9-2-4.2 0-6.1C8.5 8.2 10.1 6.4 12 4Z"/><circle cx="12" cy="12.4" r="2.1"/>'
 };
 
@@ -156,7 +158,9 @@ const BOOK_MOTIFS = {
   'lyrical-ballads': 'thorn',
   'shakespeares-sonnets': 'quill',
   'the-willows': 'funnel',
-  'the-wendigo': 'pine'
+  'the-wendigo': 'pine',
+  'carnacki-the-ghost-finder': 'pentacle',
+  'the-house-on-the-borderland': 'chasm'
 };
 
 const BY_GENRE = [
