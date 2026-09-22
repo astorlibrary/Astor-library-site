@@ -75,7 +75,42 @@
     },
     "resources": [
       "/resources/modern/blackwood-the-willows/"
-    ]
+    ],
+    "home": {
+      "shelfTitle": "Six to start with",
+      "shelf": [
+        {
+          "href": "/books/sleepy-hollow-and-other-stories/",
+          "label": "American Halloween",
+          "title": "Sleepy Hollow &amp; Other Stories"
+        },
+        {
+          "href": "/books/american-ghost-stories/",
+          "label": "American ghosts",
+          "title": "American Ghost Stories"
+        },
+        {
+          "href": "/books/m-r-james-collected-ghost-stories/",
+          "label": "Modern ghost stories",
+          "title": "M. R. James: Ghost Stories"
+        },
+        {
+          "href": "/books/victorian-ghost-stories/",
+          "label": "Victorian ghosts",
+          "title": "Victorian Ghost Stories"
+        },
+        {
+          "href": "/books/a-victorian-bonfire-night/",
+          "label": "5 November",
+          "title": "A Victorian Bonfire Night"
+        },
+        {
+          "href": "/books/the-willows/",
+          "label": "Modern supernatural",
+          "title": "The Willows"
+        }
+      ]
+    }
   },
   {
     "slug": "halloween",

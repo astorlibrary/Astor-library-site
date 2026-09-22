@@ -214,11 +214,15 @@ if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failur
 for (const className of ['home-counts-line', 'home-book-list', 'home-sample-grid', 'home-free-list', 'home-study-grid', 'home-browse-cols', 'home-support']) {
   if (!homepageMain.includes('class="' + className + '"')) failures.push('The homepage is missing its ' + className + ' section');
 }
-const autumnFeature = homepageMain.match(/<section class="autumn-feature"[\s\S]*?<\/section>/i)?.[0] || '';
-if (!autumnFeature.includes('Autumn <em>at</em> Astor.')) failures.push('The homepage is missing its Autumn at Astor feature');
-if (!autumnFeature.includes('September &mdash; November')) failures.push('The homepage autumn feature is missing its seasonal context');
-const autumnShelf = autumnFeature.match(/<nav class="autumn-shelf"[\s\S]*?<\/nav>/i)?.[0] || '';
-if (countMatches(autumnShelf, /<a href=/g) !== 6) failures.push('The homepage autumn shelf must present six selected books');
+// The homepage hero is generated from seasonal-data.json by rebuild-seasons.js,
+// so these guard the shape rather than the season: a title with its own
+// flourish, the period it covers, and six editions to buy.
+const autumnFeature = homepageMain.match(/<section class="home-season[\s\S]*?<\/section>/i)?.[0] || '';
+if (!/<h1 id="home-season-title">[^<]*<em>[^<]+<\/em>[^<]*\.<\/h1>/.test(autumnFeature)) failures.push('The homepage is missing its seasonal hero');
+if (!/class="season-period">[^<]*&#10022;|class="season-period">[^<]+/.test(autumnFeature)) failures.push('The homepage seasonal hero is missing the months it covers');
+if (countMatches(autumnFeature, /class="season-cover /g) !== 3) failures.push('The homepage seasonal hero must fan three covers');
+const autumnShelf = autumnFeature.match(/<nav class="season-shelf"[\s\S]*?<\/nav>/i)?.[0] || '';
+if (countMatches(autumnShelf, /<a href=/g) !== 6) failures.push('The homepage seasonal shelf must present six selected books');
 const autumnBooks = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'content-index.json'), 'utf8')).books;
 const autumnThumbnails = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'book-thumbnails.json'), 'utf8'));
 const autumnCards = [...autumnShelf.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
@@ -247,7 +251,7 @@ for (const total of [
   if (!homepageMain.includes(total)) failures.push('The homepage is missing its current catalogue total: ' + total);
 }
 const homepageSections = Array.from(homepageMain.matchAll(/^  <section class="([^"]+)"/gm), match => match[1]);
-if (homepageSections.length !== 8 || homepageSections[0] !== 'autumn-feature') failures.push('The homepage must contain eight top-level sections beginning with the autumn feature');
+if (homepageSections.length !== 8 || !homepageSections[0].startsWith('home-season ')) failures.push('The homepage must contain eight top-level sections beginning with the seasonal hero');
 if (!homepageSections.includes('home-wrap home-study')) failures.push('The homepage is missing its study and revision section');
 for (const sample of ['/assets/samples/macbeth-sample.jpg', '/assets/samples/othello-study-sample.jpg', '/assets/samples/rime-of-the-ancient-mariner-sample.jpg', '/assets/samples/the-odyssey-sample.jpg']) {
   if (!homepageMain.includes('src="' + sample + '"')) failures.push('The homepage is missing edition sample ' + sample);

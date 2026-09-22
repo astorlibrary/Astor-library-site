@@ -20,4 +20,43 @@ for (const s of seasons) {
 }
 const home=head('The Seasonal Library','Books for Halloween, Christmas, Bonfire Night and the changing seasons, with free literature guides, close readings and study editions.')+'<main class="season-page theme-autumn" id="main-content"><section class="season-directory-hero"><div class="season-wrap"><p class="season-eyebrow">Astor Library / A year of reading</p><h1>The seasonal<br><em>library.</em></h1><p>Ghost stories for October. Dickens for Christmas. Adventures for summer. Eight collections of books and resources, ready whenever you are.</p><div class="season-calendar">'+seasons.map(s=>'<a href="'+hrefFor(s)+'">'+e(s.shortTitle||s.title)+'</a>').join('')+'</div></div></section><section class="season-wrap season-directory"><div class="season-section-head"><div class="season-section-mark">'+emblem('autumn')+'</div><p class="season-eyebrow">Choose a season or occasion</p><h2>Something to look forward to.</h2><p>Complete Astor editions, free guides and close readings brought together by season. Each collection stays open all year.</p></div><div class="season-tile-grid">'+seasons.map(seasonTile).join('')+'</div></section></main>'+footer;
 fs.writeFileSync('seasons/index.html',home);
+// The homepage carries the same hero as the season it is showing, built from
+// the same data, so the two never drift apart. Which season it shows is the
+// one with a `home` block in seasonal-data.json.
+function homeSeasonBlock(s) {
+  const covers = s.heroBooks.map((href, i) => {
+    const b = book(href);
+    return '<a class="season-cover season-cover-' + i + '" href="' + e(href) + '"><img src="' + e(b.image) + '" alt="' + e(b.imageAlt) + '" width="240" height="360"' + (i === 0 ? '' : ' loading="lazy"') + '><span class="season-sr-only">' + e(b.title) + '</span></a>';
+  }).join('');
+  const shelf = s.home.shelf.map(item => {
+    const b = book(item.href);
+    return '<a href="' + e(item.href) + '"><img src="' + e(b.image) + '" alt="' + e(b.imageAlt) + '" width="240" height="360" loading="lazy" decoding="async"><small>' + e(item.label) + '</small><strong>' + item.title + '</strong></a>';
+  }).join('');
+  const [first, ...rest] = s.title.split(' ');
+  const headline = e(first) + ' <em>' + e(rest.slice(0, -1).join(' ')) + '</em> ' + e(rest[rest.length - 1]) + '.';
+  return '<section class="home-season theme-' + e(s.theme) + '" aria-labelledby="home-season-title">' + garland(s.theme) +
+    '<div class="season-wrap"><div class="season-hero-grid"><div class="season-hero-copy">' +
+    '<p class="season-eyebrow">' + e(s.kicker) + '</p>' +
+    '<h1 id="home-season-title">' + headline + '</h1>' +
+    '<p class="season-deck">' + e(s.deck) + '</p>' +
+    '<div class="season-hero-actions"><a class="season-button" href="' + hrefFor(s) + '">Explore ' + e((s.shortTitle || s.title).toLowerCase()) + ' reading <span aria-hidden="true">&rarr;</span></a>' +
+    '<a href="/seasons/">All eight seasons</a></div>' +
+    '<p class="season-period">' + e(s.period) + ' <span aria-hidden="true">&#10022;</span> Open all year</p>' +
+    '</div><div class="season-art">' + scene(s.theme) + '<div class="season-cover-fan">' + covers + '</div>' +
+    '<p class="season-art-caption">Complete texts &middot; Astor editions</p></div></div>' +
+    '<nav class="season-shelf" aria-label="' + e(s.title) + ' reading from the Astor catalogue">' + shelf + '</nav>' +
+    '</div></section>';
+}
+
+const featured = seasons.find(x => x.home);
+if (featured) {
+  const homepage = fs.readFileSync('index.html', 'utf8');
+  const start = '<!-- seasonal-hero:start -->';
+  const end = '<!-- seasonal-hero:end -->';
+  const from = homepage.indexOf(start);
+  const to = homepage.indexOf(end);
+  if (from === -1 || to === -1) throw new Error('index.html is missing its seasonal hero markers');
+  fs.writeFileSync('index.html', homepage.slice(0, from + start.length) + '\n  ' + homeSeasonBlock(featured) + '\n  ' + homepage.slice(to));
+  console.log('Put the ' + featured.slug + ' hero on the homepage.');
+}
 console.log('Built '+seasons.length+' permanent seasonal collections and their directory.');
