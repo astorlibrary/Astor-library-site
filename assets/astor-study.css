@@ -1586,8 +1586,6 @@
    ornament chosen from its genre, so two books never look like one another.
    Where no book is in view, the house burgundy stands in. */
 
-.astor-motif { display: inline-block; vertical-align: -0.35em; margin-right: 8px; color: var(--book-accent, var(--burgundy)); }
-.kicker .astor-motif { margin-right: 10px; }
 
 .astor-toolkit { --astor-accent: var(--book-accent, var(--burgundy)); }
 .astor-toolkit .astor-toolkit-head { border-top: 3px solid var(--astor-accent); padding-top: 22px; }
@@ -1608,21 +1606,6 @@
   .astor-toolkit .astor-quote-card { border-left-color: var(--astor-accent); }
 }
 
-/* The ornament again, large and faint, behind the opening of a study page. */
-.astor-book-hero { position: relative; overflow: hidden; }
-.astor-motif-watermark {
-  position: absolute;
-  right: 8px;
-  top: -26px;
-  margin: 0;
-  opacity: .08;
-  pointer-events: none;
-}
-@media (max-width: 940px) {
-  .astor-motif-watermark { right: -22px; top: -30px; width: 132px; height: 132px; }
-}
-.astor-book-hero > div,
-.astor-book-hero > aside { position: relative; z-index: 1; }
 .astor-book-record .section-title.astor-marked > .kicker::before {
   content: '';
   display: inline-block;

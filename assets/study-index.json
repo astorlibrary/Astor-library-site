@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 82,
-    "quotations": 1925,
-    "characters": 760,
+    "books": 84,
+    "quotations": 1959,
+    "characters": 771,
     "themes": 236,
     "techniques": 243,
-    "timelineEvents": 962,
-    "places": 481
+    "timelineEvents": 982,
+    "places": 491
   },
   "books": [
     {
@@ -95090,6 +95090,2096 @@
         {
           "href": "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
           "why": "A near-contemporary American story told by a woman whose account of a room nobody else will credit."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "the-wendigo",
+      "title": "The Wendigo",
+      "author": "Algernon Blackwood",
+      "href": "/books/the-wendigo/",
+      "studyHref": "",
+      "playHref": "/play/?book=the-wendigo",
+      "form": "novella",
+      "genre": "Weird tale",
+      "period": "Modern Classics",
+      "setting": "The bush north of Rat Portage in late October: a lake called Fifty Island Water, two days from the railway by canoe, with the first snow already down",
+      "written": "Out of Blackwood's years in Canada in the 1890s, and written in the run of tales that followed The Willows",
+      "firstPublished": 1910,
+      "readingTime": 80,
+      "difficulty": 3,
+      "lengthNote": "Eight numbered sections, about 22,000 words, most of it two men in a tent and one set of footprints",
+      "openingLine": "A considerable number of hunting parties were out that year without finding so much as a fresh trail; for the moose were uncommonly shy, and the various Nimrods returned to the bosoms of their respective families with the best excuses the facts of their imaginations could suggest.",
+      "summary": "A moose-hunting party splits up, and a divinity student is sent off with a French-Canadian guide who does not want to go where they are going. In the night the guide smells something, weeps, and runs into the bush calling about his burning feet of fire. What is left behind is a set of tracks that begin as a man's and stop being one. The rest of the story is a psychologist explaining it all away while it happens to him too, and it ends with a thing walking into camp that the party's Indian cook does not stay to look at twice.",
+      "referenceStyle": "section number, following the text the Astor edition is set from",
+      "sourceText": {
+        "label": "Project Gutenberg text of The Wendigo (eBook 10897)",
+        "url": "https://www.gutenberg.org/cache/epub/10897/pg10897.txt",
+        "note": "The text the Astor edition's reading pages are set from, in eight sections. Blackwood's period spellings and the guides' written-out speech are kept; the story's terms for the Indigenous people of the region are of 1910 and are not reproduced in the quotations here."
+      },
+      "structure": [
+        {
+          "id": "the-party",
+          "label": "Sections I-II",
+          "title": "A bad season, and a guide who does not want to go",
+          "summary": "Blackwood assembles five men with five different ways of explaining things: a Scottish psychologist who has written a book on collective hallucination, his nephew who is training for the ministry, two guides, and an Indian cook. The party splits, and Défago takes Simpson towards a lake he has reasons for avoiding that he does not give.",
+          "scenes": [
+            {
+              "ref": "Section I",
+              "title": "No fresh trail",
+              "summary": "A season with no moose in it, and a doctor who comes home with something better than a trophy."
+            },
+            {
+              "ref": "Section I",
+              "title": "Défago",
+              "summary": "A guide who sings in the canoe, knows the bush better than anyone, and has fits of melancholy nobody asks about."
+            },
+            {
+              "ref": "Section II",
+              "title": "Dividing the party",
+              "summary": "Simpson goes with Défago towards Fifty Island Water; his uncle and Hank take the other direction."
+            }
+          ]
+        },
+        {
+          "id": "fifty-island-water",
+          "label": "Sections III-IV",
+          "title": "The camp, and something on the far side of the canvas",
+          "summary": "They make camp on the lake, and the guide's nerve goes. He smells something on the air, cannot say what, and by nightfall he is frightened of the dark in a country he has worked in all his life. Simpson, who is twenty-something and reads everything as a spiritual exercise, notices and does not understand.",
+          "scenes": [
+            {
+              "ref": "Section III",
+              "title": "Fifty Island Water",
+              "summary": "A lake that answers exactly to the description, and a guide who stops talking when they reach it."
+            },
+            {
+              "ref": "Section IV",
+              "title": "The smell",
+              "summary": "Faint, pungent, wrong for a forest — the odour Simpson will spend the rest of his life failing to describe."
+            },
+            {
+              "ref": "Section IV",
+              "title": "The night",
+              "summary": "Weeping in the tent, a man pressed against the canvas, and a voice outside calling his name."
+            }
+          ]
+        },
+        {
+          "id": "the-call",
+          "label": "Section V",
+          "title": "He goes",
+          "summary": "Défago is called out of the tent by something that uses his name, and goes at a speed no man runs. What Simpson hears as the sound recedes is the story's most famous sentence, and it comes down out of the sky rather than along the ground.",
+          "scenes": [
+            {
+              "ref": "Section V",
+              "title": "Out of the tent",
+              "summary": "The guide leaves in his stockinged feet, at a pace that takes him out of earshot in seconds."
+            },
+            {
+              "ref": "Section V",
+              "title": "Fiery height",
+              "summary": "The cry about burning feet of fire, heard once, from above, and then silence over the whole wilderness."
+            }
+          ]
+        },
+        {
+          "id": "the-tracks",
+          "label": "Section VI",
+          "title": "Two sets of prints, and one of them changes",
+          "summary": "Alone, in snow, Simpson follows what is left. Défago's prints run beside marks that are not a moose's and not a bear's, and as the trail goes on the distance between the man's footfalls grows until it can no longer be walked. Then his prints begin to resemble the other set.",
+          "scenes": [
+            {
+              "ref": "Section VI",
+              "title": "The other track",
+              "summary": "Big, round, ample, with no pointed outline: nothing in the bush leaves that."
+            },
+            {
+              "ref": "Section VI",
+              "title": "The lengthening stride",
+              "summary": "The gap between prints widening past any possible step, and the snow between them untouched."
+            },
+            {
+              "ref": "Section VI",
+              "title": "The change",
+              "summary": "The man's tracks losing their shape and taking on the other's — the moment the story stops being a disappearance."
+            }
+          ]
+        },
+        {
+          "id": "the-return",
+          "label": "Sections VII-VIII",
+          "title": "The doctor explains, and the thing walks in",
+          "summary": "The party reunites and Cathcart sets out the rational account: suggestion, hysteria, a legend planted in a young mind by a superstitious guide. While he is still explaining, something comes into the firelight that answers to Défago's name and does not answer to anything else. The last pages give the facts of his death, the cook's flight, and no explanation at all.",
+          "scenes": [
+            {
+              "ref": "Section VII",
+              "title": "Collective hallucination",
+              "summary": "The doctor's theory, offered with real intelligence and no effect whatever on what happens next."
+            },
+            {
+              "ref": "Section VII",
+              "title": "What came to the fire",
+              "summary": "A shape that talks about moss and fire, and that Hank swears at until it goes."
+            },
+            {
+              "ref": "Section VIII",
+              "title": "Défago, afterwards",
+              "summary": "A man found in the bush who lives a few weeks, eats moss, and complains that his feet burn."
+            },
+            {
+              "ref": "Section VIII",
+              "title": "Punk leaves",
+              "summary": "The cook smells something on the air, walks three days without stopping, and never comes back."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "simpson",
+          "name": "Simpson",
+          "role": "Cathcart's nephew, a divinity student on his first trip into the bush",
+          "summary": "Young, devout, entirely unprepared, and the only member of the party who sees the whole thing. His training gives him a vocabulary for awe and none at all for what is in front of him, and his honesty about that is what makes the account usable: he reports his terror as data rather than dressing it up.",
+          "clue": "Follows a trail alone in the snow and keeps measuring the distance between the footprints.",
+          "firstAppearance": "Section I",
+          "traits": [
+            "earnest",
+            "observant",
+            "out of his depth"
+          ],
+          "relationships": [
+            {
+              "to": "defago",
+              "label": "guided by, then searching for",
+              "kind": "ally",
+              "stages": [
+                "the-party",
+                "fifty-island-water",
+                "the-call",
+                "the-tracks"
+              ]
+            },
+            {
+              "to": "cathcart",
+              "label": "nephew of, and disbelieved by",
+              "kind": "family",
+              "stages": [
+                "the-party",
+                "the-return"
+              ]
+            },
+            {
+              "to": "wendigo",
+              "label": "hears and tracks",
+              "kind": "enemy",
+              "stages": [
+                "the-call",
+                "the-tracks"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "defago",
+          "name": "Joseph Défago",
+          "role": "A French-Canadian guide, the best woodsman in the party",
+          "summary": "Cheerful in a canoe, subject to fits of gloom nobody enquires about, and frightened of one particular lake. Blackwood makes him competent first and terrified second, so that his collapse is a fact about the place rather than about his character. What comes back wearing his name is the story's worst moment.",
+          "clue": "Goes into the bush in his stockinged feet, and afterwards complains that his feet burn like fire.",
+          "firstAppearance": "Section I",
+          "traits": [
+            "skilled",
+            "superstitious",
+            "doomed"
+          ],
+          "relationships": [
+            {
+              "to": "simpson",
+              "label": "guide to",
+              "kind": "service",
+              "stages": [
+                "the-party",
+                "fifty-island-water",
+                "the-call"
+              ]
+            },
+            {
+              "to": "wendigo",
+              "label": "called by, taken by",
+              "kind": "enemy",
+              "stages": [
+                "the-call",
+                "the-return"
+              ]
+            },
+            {
+              "to": "hank",
+              "label": "old partner of",
+              "kind": "ally",
+              "stages": [
+                "the-party",
+                "the-return"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cathcart",
+          "name": "Dr Cathcart",
+          "role": "A psychologist from Aberdeen, author of a book on collective hallucination",
+          "summary": "He arrives with the explanation already written and spends the story applying it: suggestion, hysteria, a legend planted in an impressionable mind. He is never made a fool of — his reasoning is good and his nerve holds — but the narrator notes drily that this particular case never made it into his book.",
+          "clue": "Left one experience out of his own book because he had played too intimate a part in it.",
+          "firstAppearance": "Section I",
+          "traits": [
+            "rational",
+            "courageous",
+            "quietly shaken"
+          ],
+          "relationships": [
+            {
+              "to": "simpson",
+              "label": "uncle of, and interpreter of",
+              "kind": "family",
+              "stages": [
+                "the-party",
+                "the-return"
+              ]
+            },
+            {
+              "to": "wendigo",
+              "label": "explains, and meets",
+              "kind": "enemy",
+              "stages": [
+                "the-return"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hank",
+          "name": "Hank Davis",
+          "role": "The other guide, and Défago's old partner",
+          "summary": "Profane, practical and the only man who talks about the Wendigo as a thing you might meet rather than a story you might hear. He blames himself for talking his friend into the trip, and he is the one who swears at the figure by the fire until it leaves.",
+          "clue": "Says there is no misunderstanding it, because it calls you by name.",
+          "firstAppearance": "Section I",
+          "traits": [
+            "blunt",
+            "loyal",
+            "guilt-ridden"
+          ],
+          "relationships": [
+            {
+              "to": "defago",
+              "label": "partner of, and guilty towards",
+              "kind": "ally",
+              "stages": [
+                "the-party",
+                "the-return"
+              ]
+            },
+            {
+              "to": "cathcart",
+              "label": "employed by, and unconvinced by",
+              "kind": "service",
+              "stages": [
+                "the-return"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "punk",
+          "name": "Punk",
+          "role": "The party's cook, an Indian who keeps the base camp",
+          "summary": "He has almost no lines and the story's clearest judgement. He recognises the smell before anyone else, and when the shape walks in he leaves, covering three days' travel without stopping. Blackwood gives the one man with inherited knowledge of the country no argument and no explanation — only the decision to go.",
+          "clue": "Cleaning fish when the thing comes into camp, and on the trail home within the minute.",
+          "firstAppearance": "Section I",
+          "traits": [
+            "silent",
+            "knowing",
+            "decisive"
+          ],
+          "relationships": [
+            {
+              "to": "wendigo",
+              "label": "recognises, and will not stay near",
+              "kind": "enemy",
+              "stages": [
+                "the-return"
+              ]
+            },
+            {
+              "to": "cathcart",
+              "label": "employed by",
+              "kind": "service",
+              "stages": [
+                "the-party"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wendigo",
+          "name": "The Wendigo",
+          "role": "Whatever calls Défago out of the tent",
+          "summary": "Never described except by its effects: a smell, a voice that knows your name, tracks that are not an animal's, and a man who comes back changed. Blackwood borrows an Algonquian figure and strips it of the cultural setting that gives it meaning, which is both the source of the story's power and the fairest charge against it.",
+          "clue": "Its mark is a smell like lions and a stride no legs could take.",
+          "firstAppearance": "Section IV",
+          "traits": [
+            "unseen",
+            "swift",
+            "irresistible"
+          ],
+          "relationships": [
+            {
+              "to": "defago",
+              "label": "calls and takes",
+              "kind": "enemy",
+              "stages": [
+                "the-call",
+                "the-return"
+              ]
+            },
+            {
+              "to": "simpson",
+              "label": "leaves a trail for",
+              "kind": "enemy",
+              "stages": [
+                "the-tracks"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "nature",
+          "name": "Country that does not know you are there",
+          "canonicalName": "Nature",
+          "summary": "The bush in this story is not malevolent; it is simply larger than the people in it, and the story keeps giving the exact distances — two days from the railway, a lake with fifty islands, three days' walk home.",
+          "development": "It is beautiful in the canoe chapters, indifferent by the camp, and by the tracking section it is a surface that records what happened without commenting on it."
+        },
+        {
+          "id": "isolation",
+          "name": "One man, one trail, no help",
+          "canonicalName": "Isolation",
+          "summary": "The party is divided in the second section so that the worst night can happen with only one witness, and Simpson spends the middle of the story entirely alone.",
+          "development": "Being alone is what makes his testimony doubtful, and the doubt is what the last three sections are about."
+        },
+        {
+          "id": "faith",
+          "name": "A divinity student in the bush",
+          "canonicalName": "Faith",
+          "summary": "Simpson is training for the ministry and reaches instinctively for prayer, and the story neither mocks him nor rewards him. His religion gives him a way to feel awe and no way to act on it.",
+          "development": "He prays in the tent and tracks in the snow, and by the end his account has lost its religious vocabulary altogether."
+        },
+        {
+          "id": "knowledge",
+          "name": "Four kinds of explanation",
+          "canonicalName": "Knowledge",
+          "summary": "A psychologist, a theology student, a bushman and a cook each know something about what is happening, and the story lets them contradict each other without appointing a winner.",
+          "development": "Cathcart's hallucination theory is the most sophisticated and the least useful; the cook's, which is never argued, is the one the plot obeys."
+        },
+        {
+          "id": "evidence",
+          "name": "Tracks in snow",
+          "canonicalName": "Evidence and testimony",
+          "summary": "Everything supernatural in the story arrives as a physical trace — prints, a smell, a burnt smell on the skin, a distance between footfalls that can be paced out and measured.",
+          "development": "The trail is the story's argument: it starts as evidence of a man, becomes evidence of something else, and its most frightening stretch is the part where the two sets converge."
+        },
+        {
+          "id": "self-deception",
+          "name": "What the doctor tells himself",
+          "canonicalName": "Self-deception",
+          "summary": "Cathcart is the reader's proxy, and Blackwood treats him fairly: his explanation covers most of the facts, and he keeps offering it while the thing he is explaining is in the firelight with him.",
+          "development": "The narrator's one dry remark — that this case never appeared in his book on Collective Hallucination — is all the verdict the story delivers."
+        },
+        {
+          "id": "race",
+          "name": "A borrowed figure",
+          "canonicalName": "Race",
+          "summary": "The Wendigo comes from Ojibwe and Cree tradition, where it carries meanings about famine, winter and the danger of appetite. Blackwood takes the name and the terror and leaves the meaning behind, and his Indigenous character is given knowledge but almost no speech.",
+          "development": "The story's frame treats Indigenous belief as evidence of something real and its Indigenous characters as atmosphere, and modern readers have to hold both facts at once."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "landscape",
+          "name": "The bush, measured",
+          "canonicalName": "Landscape",
+          "definition": "Place and weather made to press on the people living in them, rather than serving as scenery.",
+          "bookDefinition": "Setting described with the precision of someone who has worked in it.",
+          "inThisBook": "Distances, portages, the weight of a canoe, the behaviour of moose in a bad season: Blackwood had lived this country, and the accuracy is what makes the one impossible detail land."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "The trail as text",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative keeps returning to until it stands for the argument rather than illustrating it.",
+          "bookDefinition": "A physical record that the characters and the reader read together.",
+          "inThisBook": "Hank draws a bull's hoof on birch bark so Simpson can compare. From then on the snow is a document, and the horror is a matter of shape and spacing."
+        },
+        {
+          "id": "refrain",
+          "name": "The cry that comes back",
+          "canonicalName": "Refrain",
+          "definition": "A phrase brought back at intervals, so that its meaning shifts with what has happened since.",
+          "bookDefinition": "A line repeated at intervals, each time in a different mouth.",
+          "inThisBook": "The burning feet of fire are heard from the sky in section five, from the figure at the fire later, and finally from a dying man in a bed. Each repetition takes something away from the possibility of hallucination."
+        },
+        {
+          "id": "dialect",
+          "name": "Guides' speech written out",
+          "canonicalName": "Dialect",
+          "definition": "Spelling and grammar used to mark where a speaker comes from, and what being heard that way costs them.",
+          "bookDefinition": "Rendering pronunciation and idiom on the page.",
+          "inThisBook": "Hank's swearing and clipped consonants set him against Cathcart's careful Aberdeen sentences, so that the argument about what happened is also an argument between two kinds of English."
+        },
+        {
+          "id": "ellipsis",
+          "name": "The thing never shown",
+          "canonicalName": "Ellipsis",
+          "definition": "What the narrative declines to show, placed where the reader will notice the gap and fill it.",
+          "bookDefinition": "Keeping the central figure off the page.",
+          "inThisBook": "There is no description of the Wendigo anywhere in the story — only a smell, a voice, tracks, and what is left of a man. The reader assembles it and is responsible for the result."
+        },
+        {
+          "id": "gothic",
+          "name": "Terror in the open",
+          "canonicalName": "Gothic machinery",
+          "definition": "The stock furniture of Gothic writing — the ruin, the storm, the locked room, the buried secret — put to a particular use.",
+          "bookDefinition": "The old machinery of dread moved out of doors.",
+          "inThisBook": "A tent instead of a castle, snow instead of a crypt, and a guide instead of a servant. The pressure is gothic and the furniture is a canoe, a fire and a pair of moccasins."
+        },
+        {
+          "id": "retrospective-narration",
+          "name": "A story with witnesses",
+          "canonicalName": "Retrospective narration",
+          "definition": "A narrator telling their own earlier life, with the distance between the two selves doing the judging.",
+          "bookDefinition": "An account assembled afterwards from several people's testimony.",
+          "inThisBook": "The narrator sorts what Simpson said, what Hank admitted, what Cathcart would concede and what Punk contributed. The story is presented as a case file, which is precisely why the doctor's rejection of it matters."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "no-fresh-trail",
+          "text": "A considerable number of hunting parties were out that year without finding so much as a fresh trail",
+          "speaker": "",
+          "reference": "Section I",
+          "stage": "the-party",
+          "context": "The story's first sentence, on the season's bad hunting.",
+          "analysis": "It opens on an absence, and on men going home with stories. The whole tale is about what one party brought back instead of a trophy, and the first line quietly puts the reader among people who exaggerate.",
+          "themes": [
+            "nature"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [],
+          "source": "1910 text, section I",
+          "cloze": [
+            "hunting",
+            "trail"
+          ]
+        },
+        {
+          "id": "collective-hallucination",
+          "text": "This particular story, however, found no mention in his book on Collective Hallucination",
+          "speaker": "",
+          "reference": "Section I",
+          "stage": "the-party",
+          "context": "Introducing Dr Cathcart.",
+          "analysis": "The rationalist is given his credentials and his one omission in the same sentence, on page one. Everything he says for the next eight sections is read against a fact the reader has been handed in advance.",
+          "themes": [
+            "self-deception",
+            "knowledge"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "cathcart"
+          ],
+          "source": "1910 text, section I",
+          "cloze": [
+            "mention",
+            "Hallucination"
+          ]
+        },
+        {
+          "id": "vagaries",
+          "text": "the vagaries of the human mind",
+          "speaker": "",
+          "reference": "Section I",
+          "stage": "the-party",
+          "context": "What interests Cathcart besides moose.",
+          "analysis": "His subject is named before the case arrives, so his diagnosis is available from the start. Blackwood is playing fair: the psychological reading is offered by the text itself and not smuggled in.",
+          "themes": [
+            "knowledge"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "cathcart"
+          ],
+          "source": "1910 text, section I",
+          "cloze": [
+            "vagaries",
+            "mind"
+          ]
+        },
+        {
+          "id": "odor-of-lions",
+          "text": "the “odor of lions” is the phrase with which he usually sums it all up",
+          "speaker": "",
+          "reference": "Section IV",
+          "stage": "fifty-island-water",
+          "context": "Simpson, years later, still trying to describe the smell.",
+          "analysis": "The comparison is wrong for a Canadian forest and that is the point — the nearest thing he can reach for is an animal from another continent. Blackwood repeats the phrase three times across the story, so a smell becomes the creature's signature.",
+          "themes": [
+            "evidence"
+          ],
+          "techniques": [
+            "refrain",
+            "ellipsis"
+          ],
+          "characters": [
+            "simpson"
+          ],
+          "source": "1910 text, section IV",
+          "cloze": [
+            "odor",
+            "lions"
+          ]
+        },
+        {
+          "id": "swift-traveling",
+          "text": "Wendigo’s somewhere around, doin’ a bit of swift traveling",
+          "speaker": "",
+          "reference": "Section III",
+          "stage": "the-party",
+          "context": "Hank, explaining the smell to Simpson early in the trip.",
+          "analysis": "The name arrives casually, in a guide's idiom, as a piece of weather. Introducing the creature as workaday local knowledge rather than as revelation is what makes the later sections unbearable.",
+          "themes": [
+            "knowledge",
+            "race"
+          ],
+          "techniques": [
+            "dialect"
+          ],
+          "characters": [
+            "hank",
+            "wendigo"
+          ],
+          "source": "1910 text, section III",
+          "cloze": [
+            "Wendigo",
+            "traveling"
+          ]
+        },
+        {
+          "id": "feet-of-fire",
+          "text": "Oh! oh! This fiery height! Oh, my feet of fire! My burning feet of fire",
+          "speaker": "",
+          "reference": "Section V",
+          "stage": "the-call",
+          "context": "Défago's voice, heard once from far above the camp.",
+          "analysis": "The most quoted sentence Blackwood wrote, and it does two things at once: it tells the reader that the man is airborne, and it puts the pain of it in his own mouth. The exclamations are the only moment the prose loses its composure.",
+          "themes": [
+            "isolation",
+            "evidence"
+          ],
+          "techniques": [
+            "refrain"
+          ],
+          "characters": [
+            "defago",
+            "wendigo"
+          ],
+          "source": "1910 text, section V",
+          "cloze": [
+            "fiery",
+            "burning"
+          ]
+        },
+        {
+          "id": "big-round-ample",
+          "text": "They were big, round, ample, and with no pointed outline as of sharp hoofs",
+          "speaker": "",
+          "reference": "Section VI",
+          "stage": "the-tracks",
+          "context": "Simpson examining the second set of prints in the snow.",
+          "analysis": "A description by elimination: not a moose, not a caribou, not a bear. The adjectives are so neutral that they do the work of a scream, because the one thing the reader wants — what made them — is exactly what the sentence refuses.",
+          "themes": [
+            "evidence"
+          ],
+          "techniques": [
+            "symbolic-objects",
+            "ellipsis"
+          ],
+          "characters": [
+            "simpson",
+            "wendigo"
+          ],
+          "source": "1910 text, section VI",
+          "cloze": [
+            "round",
+            "hoofs"
+          ]
+        },
+        {
+          "id": "mysterious-writings",
+          "text": "These mysterious writings left in the snow by the unknown creature that had lured a human being away from safety",
+          "speaker": "",
+          "reference": "Section VI",
+          "stage": "the-tracks",
+          "context": "Simpson following the trail alone.",
+          "analysis": "Writings, not tracks. Once the snow is a text the story's method is clear: Simpson is reading, the reader is reading over his shoulder, and the horror is a problem of interpretation rather than of sight.",
+          "themes": [
+            "evidence",
+            "knowledge"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "simpson",
+            "wendigo"
+          ],
+          "source": "1910 text, section VI",
+          "cloze": [
+            "writings",
+            "lured"
+          ]
+        },
+        {
+          "id": "seen-the-wendigo-indians",
+          "text": "several Indians had “seen the Wendigo” along the shores of Fifty Island Water",
+          "speaker": "",
+          "reference": "Section VII",
+          "stage": "the-return",
+          "context": "Hank finally explaining why Défago did not want to hunt there.",
+          "analysis": "The information that would have changed everything arrives after the event, from the man who talked his friend into going. Blackwood puts local knowledge in quotation marks, which is both the story's method and the fairest charge against it.",
+          "themes": [
+            "race",
+            "knowledge"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "hank",
+            "defago"
+          ],
+          "source": "1910 text, section VII",
+          "cloze": [
+            "Indians",
+            "Island"
+          ]
+        },
+        {
+          "id": "call-of-the-wild",
+          "text": "for the Wendigo is simply the Call of the Wild personified, which some natures hear to their own destruction",
+          "speaker": "",
+          "reference": "Section VII",
+          "stage": "the-return",
+          "context": "Cathcart, breaking a long silence by the fire.",
+          "analysis": "The doctor's neatest formulation, offered to fill a pause rather than because he believes it settles anything. It is a good line, it is almost certainly wrong, and the story gives it to the cleverest man present.",
+          "themes": [
+            "knowledge",
+            "self-deception"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "cathcart",
+            "wendigo"
+          ],
+          "source": "1910 text, section VII",
+          "cloze": [
+            "Call",
+            "destruction"
+          ]
+        },
+        {
+          "id": "calls-you-by-name",
+          "text": "It calls you by name right ’nough",
+          "speaker": "",
+          "reference": "Section VII",
+          "stage": "the-return",
+          "context": "Hank's answer to the doctor's theory.",
+          "analysis": "Seven words that dispose of a paragraph of psychology. The bushman does not argue with the theory; he adds a detail it cannot accommodate, and the detail is the one Simpson heard outside the tent.",
+          "themes": [
+            "knowledge",
+            "evidence"
+          ],
+          "techniques": [
+            "dialect"
+          ],
+          "characters": [
+            "hank"
+          ],
+          "source": "1910 text, section VII",
+          "cloze": [
+            "calls",
+            "name"
+          ]
+        },
+        {
+          "id": "planted-the-ideas",
+          "text": "But Défago surely had already told you all these details of the Wendigo legend, my dear fellow",
+          "speaker": "",
+          "reference": "Section VII",
+          "stage": "the-return",
+          "context": "Cathcart pressing his nephew on where the images came from.",
+          "analysis": "The suggestion theory, put politely and in the form of a question. It is the explanation most readers would reach for, and Blackwood has it stated by a professional so that nobody can accuse the story of ducking it.",
+          "themes": [
+            "self-deception",
+            "knowledge"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "cathcart",
+            "simpson"
+          ],
+          "source": "1910 text, section VII",
+          "cloze": [
+            "legend",
+            "told"
+          ]
+        },
+        {
+          "id": "moss-eater",
+          "text": "It’s a moss-eater, is the Wendigo",
+          "speaker": "",
+          "reference": "Section VII",
+          "stage": "the-return",
+          "context": "Hank, after the figure at the fire has gone.",
+          "analysis": "The detail is grotesque rather than grand, and that is why it convinces: nobody inventing a terror puts moss in it. It also sets up the last section, where a man in a bed pulls wads of it out of his cheeks.",
+          "themes": [
+            "evidence",
+            "race"
+          ],
+          "techniques": [
+            "dialect",
+            "refrain"
+          ],
+          "characters": [
+            "hank",
+            "wendigo"
+          ],
+          "source": "1910 text, section VII",
+          "cloze": [
+            "moss-eater",
+            "Wendigo"
+          ]
+        },
+        {
+          "id": "damned-moss-eater",
+          "text": "a damned moss-eater",
+          "speaker": "",
+          "reference": "Section VIII",
+          "stage": "the-return",
+          "context": "What the recovered Défago says about himself before he dies.",
+          "analysis": "Hank's phrase comes back out of the mouth of the man it was used about, with an idiot smile attached. The repetition is the story's proof: the same words in two places nobody could have coordinated.",
+          "themes": [
+            "evidence"
+          ],
+          "techniques": [
+            "refrain"
+          ],
+          "characters": [
+            "defago"
+          ],
+          "source": "1910 text, section VIII",
+          "cloze": [
+            "damned",
+            "moss-eater"
+          ]
+        },
+        {
+          "id": "bereft",
+          "text": "bereft of mind, memory and soul, had gone with it",
+          "speaker": "",
+          "reference": "Section VIII",
+          "stage": "the-return",
+          "context": "The narrator's summary of what became of the guide.",
+          "analysis": "Three nouns, in order of increasing loss, and then the flat verb. For a story that refuses to describe its monster, this is as close as it comes to saying what the monster does.",
+          "themes": [
+            "isolation",
+            "faith"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "defago",
+            "wendigo"
+          ],
+          "source": "1910 text, section VIII",
+          "cloze": [
+            "memory",
+            "soul"
+          ]
+        },
+        {
+          "id": "terror-of-a-whole-race",
+          "text": "The terror of a whole race drove him",
+          "speaker": "",
+          "reference": "Section VIII",
+          "stage": "the-return",
+          "context": "Punk covering three days' travel without stopping, after the thing walks into camp.",
+          "analysis": "The cook is the only person in the story who acts on what he knows, and the narrator explains him in a single sentence that is also the story's most uncomfortable. Inherited knowledge is treated as evidence and its holder is given no voice at all.",
+          "themes": [
+            "race",
+            "knowledge"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "punk",
+            "wendigo"
+          ],
+          "source": "1910 text, closing page",
+          "cloze": [
+            "terror",
+            "drove"
+          ]
+        },
+        {
+          "id": "seen-the-wendigo",
+          "text": "Défago had “seen the Wendigo.”",
+          "speaker": "",
+          "reference": "Section VIII",
+          "stage": "the-return",
+          "context": "The last sentence of the story.",
+          "analysis": "It closes on the local phrase, in quotation marks, refusing to translate it into the doctor's language or the student's. After eight sections of competing explanations the story ends by using the one it started with and declining to gloss it.",
+          "themes": [
+            "race",
+            "faith"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "defago",
+            "punk"
+          ],
+          "source": "1910 text, closing line",
+          "cloze": [
+            "seen",
+            "Wendigo"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "Written",
+          "value": "c. 1909",
+          "note": "Three years after The Willows, from the Canadian years Blackwood spent farming, reporting and going hungry."
+        },
+        {
+          "label": "First printed",
+          "value": "1910",
+          "note": "In The Lost Valley and Other Stories."
+        },
+        {
+          "label": "Shape",
+          "value": "Eight sections",
+          "note": "Two days out, one night, and a long argument about what happened."
+        },
+        {
+          "label": "Source",
+          "value": "An Algonquian figure",
+          "note": "The windigo of Ojibwe and Cree tradition, used by an English writer from the outside; the edition's notes set out the difference."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "Blackwood's best story",
+          "summary": "Tighter than The Willows, with a stronger cast, a real plot and the most frightening sentence he ever wrote; the tracking section is often called the finest sustained passage in English weird fiction.",
+          "counter": "It gives away more than The Willows does. Once the figure has a name, a diet and a set of symptoms, it has become a creature — and creatures are less frightening than the unnameable."
+        },
+        {
+          "position": "A fair fight between explanations",
+          "summary": "The psychological reading is given to the most intelligent character and stated at full strength, so the supernatural has to earn its place against it.",
+          "counter": "The narrator tips the scale on the first page by telling us the case never appeared in Cathcart's book, and the last section supplies physical corroboration no hallucination could leave."
+        },
+        {
+          "position": "An appropriation",
+          "summary": "The windigo belongs to Algonquian peoples and carries meanings about famine, winter and cannibal appetite; Blackwood takes the name and the dread and discards the context, and his one Indigenous character is given knowledge, no speech, and an exit.",
+          "counter": "The story does place the authority with that knowledge — the cook is right and the doctor is wrong — and the edition's notes set out the tradition the fiction borrows from, which is the least a reader is owed."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does the story handle the competition between explanations?",
+          "focus": "Rationalism, testimony and who the reader believes",
+          "plan": [
+            "Set out the four positions: Cathcart's psychology, Simpson's religion, Hank's bush lore, Punk's silence.",
+            "Show the narrator's early hint about the book on Collective Hallucination and what it does to the reading.",
+            "Examine Cathcart's suggestion theory at full strength, and what it fails to cover.",
+            "Use the repetition of the burning-feet cry and the moss as physical corroboration.",
+            "Decide whether the story adjudicates or simply outlasts the argument."
+          ]
+        },
+        {
+          "question": "What makes the tracking section frightening?",
+          "focus": "Evidence, pacing and the reader's own inference",
+          "plan": [
+            "Describe the set-up: Hank's drawing on birch bark, so the reader can compare prints too.",
+            "Follow the sequence — two sets, an impossible stride, the change in the man's own prints.",
+            "Note how little is asserted and how much is measured.",
+            "Compare it with the moment of the cry, where the story does assert something.",
+            "Argue for why inference frightens more reliably than description."
+          ]
+        },
+        {
+          "question": "Is the story's use of the windigo defensible?",
+          "focus": "Borrowed belief, and who is allowed to speak",
+          "plan": [
+            "Establish what the windigo means in Algonquian tradition and what Blackwood keeps of it.",
+            "Look at how the story reports Indigenous knowledge: in quotation marks, at second hand, after the event.",
+            "Weigh the fact that this knowledge is the only account the plot vindicates.",
+            "Set Punk's three-day walk against his near-total silence in the text.",
+            "Conclude on what a modern edition owes a reader here."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Cathcart is clever, brave and wrong. Does the story treat him fairly?",
+        "The Wendigo is never described. Did you picture it anyway, and from what?",
+        "Why does Blackwood give the guide a French-Canadian name and a Scottish doctor an Aberdeen one?",
+        "Punk walks three days without stopping and says nothing. What would change if he had a speech?",
+        "Is the moss a mistake — too concrete, too odd — or the detail that makes it real?",
+        "The story ends on a phrase in quotation marks. Why not translate it?"
+      ],
+      "timeline": [
+        {
+          "year": 1869,
+          "label": "Blackwood born in Kent",
+          "detail": "Into the evangelical household whose certainties his supernatural fiction keeps testing.",
+          "kind": "context"
+        },
+        {
+          "year": 1890,
+          "label": "Canada",
+          "detail": "He emigrated at twenty, failed at dairy farming and hotel-keeping near Toronto, and learned the bush he writes about here.",
+          "kind": "context"
+        },
+        {
+          "year": 1892,
+          "label": "New York, and hunger",
+          "detail": "Years as a reporter and model, often destitute; the wilderness in his fiction is remembered from real weeks of it.",
+          "kind": "context"
+        },
+        {
+          "year": 1899,
+          "label": "Home to England",
+          "detail": "He returned at thirty and began writing the stories that used the country he had left.",
+          "kind": "context"
+        },
+        {
+          "year": 1907,
+          "label": "The Willows",
+          "detail": "The Danube story that made his reputation and set the pattern this one follows.",
+          "kind": "context"
+        },
+        {
+          "year": 1910,
+          "label": "The Wendigo published",
+          "detail": "In The Lost Valley and Other Stories, the collection that consolidated the reputation.",
+          "kind": "work"
+        },
+        {
+          "year": 1927,
+          "label": "Lovecraft's account",
+          "detail": "Supernatural Horror in Literature praises Blackwood above all his contemporaries and singles out the Canadian tales.",
+          "kind": "reception"
+        },
+        {
+          "year": 1934,
+          "label": "The ghost man of the BBC",
+          "detail": "Blackwood began broadcasting his stories and became one of the first voices people knew from the wireless.",
+          "kind": "reception"
+        },
+        {
+          "year": 1951,
+          "label": "Death",
+          "detail": "He died at eighty-two, with the Canadian stories still the work most anthologised.",
+          "kind": "reception"
+        },
+        {
+          "year": 1974,
+          "label": "The windigo reclaimed",
+          "detail": "Indigenous writers and anthropologists set out the figure's own meanings — famine, winter, the danger of appetite — against a century of outsiders' horror stories.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Rat Portage, now Kenora",
+          "lat": 49.7669,
+          "lon": -94.4892,
+          "note": "The railway town the hunting party outfits from."
+        },
+        {
+          "name": "Lake of the Woods",
+          "lat": 49.25,
+          "lon": -94.55,
+          "note": "The island-scattered water the story's Fifty Island Water is drawn from."
+        },
+        {
+          "name": "Toronto",
+          "lat": 43.6532,
+          "lon": -79.3832,
+          "note": "Where Blackwood farmed, kept a hotel and failed at both in the early 1890s."
+        },
+        {
+          "name": "Montreal",
+          "lat": 45.5019,
+          "lon": -73.5674,
+          "note": "The Quebec world Défago has strayed from, and the French-Canadian bush trade it supplied."
+        },
+        {
+          "name": "Aberdeen",
+          "lat": 57.1497,
+          "lon": -2.0943,
+          "note": "Dr Cathcart's city, and the source of the story's rationalism."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/the-willows/",
+          "why": "Its companion, three years earlier: the same method on the Danube, with nothing named at all."
+        },
+        {
+          "href": "/books/call-of-the-wild/",
+          "why": "The phrase Cathcart reaches for by the fire, and the novel that had made it a fixed idea seven years before."
+        },
+        {
+          "href": "/books/white-fang/",
+          "why": "The same northern bush treated as a place with rules, by a writer who thought it could be understood."
+        },
+        {
+          "href": "/books/frankenstein/",
+          "why": "The older story of a pursuit across a frozen landscape by something that will not be outrun."
+        },
+        {
+          "href": "/books/the-turn-of-the-screw/",
+          "why": "The other case where the rational explanation is offered inside the text and refuses to settle it."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "the-willows",
+      "title": "The Willows",
+      "author": "Algernon Blackwood",
+      "href": "/books/the-willows/",
+      "studyHref": "",
+      "playHref": "/play/?book=the-willows",
+      "form": "novella",
+      "genre": "Weird tale",
+      "period": "Modern Classics",
+      "setting": "The Danube below Vienna, where the river loses its channel and spreads for miles through a plain of willow bushes marked on the maps only as Sümpfe — marshes",
+      "written": "Out of a canoe journey Blackwood made down the Danube in the summer of 1900",
+      "firstPublished": 1907,
+      "readingTime": 75,
+      "difficulty": 3,
+      "lengthNote": "Five numbered sections, about 21,000 words, in which almost nothing happens and two men are reduced to whispering",
+      "openingLine": "After leaving Vienna, and long before you come to Budapest, the Danube enters a region of singular loneliness and desolation, where its waters spread away on all sides regardless of a main channel, and the country becomes a swamp for miles upon miles, covered by a vast sea of low willow-bushes.",
+      "summary": "Two men canoeing down the Danube camp on a sandy island in a wilderness of willows, and the island begins to shrink. A paddle goes missing, the canoe is found slit, funnel-shaped hollows appear in the sand, and a humming like a gong comes from a direction neither of them can name. The Swede works out what is happening and tells his companion the worst part of it: whatever is pressing through here has no interest in human beings at all, and the only way to survive is to keep it out of your mind. Nothing is ever shown. It is the most frightening story of its kind in English.",
+      "referenceStyle": "section number, following the 1907 text",
+      "sourceText": {
+        "label": "Project Gutenberg text of The Willows (eBook 11438)",
+        "url": "https://www.gutenberg.org/cache/epub/11438/pg11438.txt",
+        "note": "The 1907 text in five sections. Blackwood's italics for emphasis are not marked in the quotations here."
+      },
+      "structure": [
+        {
+          "id": "section-1",
+          "label": "Section I",
+          "title": "The river, the marshes, and a warning nobody takes",
+          "summary": "Fifty paragraphs of landscape before a single event: the Danube losing its channel, the willows moving like water, the sense of a country that is not meant for people. The two canoeists land on an island for the night, and a peasant in a boat shouts something across the water and crosses himself as he is swept past.",
+          "scenes": [
+            {
+              "ref": "Section I",
+              "title": "Sümpfe",
+              "summary": "The marshes as they appear on the map and as they appear from a canoe, described at length and with affection."
+            },
+            {
+              "ref": "Section I",
+              "title": "Making camp",
+              "summary": "Tent, fire, provisions hung from a willow-stem, two yellow paddles under the upturned canoe — all counted, because it will matter."
+            },
+            {
+              "ref": "Section I",
+              "title": "The man in the boat",
+              "summary": "A Hungarian peasant passes at speed, shouts a word neither man catches, and crosses himself."
+            }
+          ]
+        },
+        {
+          "id": "section-2",
+          "label": "Section II",
+          "title": "Shapes in the willows, and the first admission",
+          "summary": "The narrator wakes in the night, goes outside, and sees columns rising from the bushes — or thinks he does. He says nothing in the morning. The Swede, who has been the practical one all along, begins to let slip that he has noticed more than he has mentioned, and the island is measurably smaller than it was.",
+          "scenes": [
+            {
+              "ref": "Section II",
+              "title": "The figures",
+              "summary": "Bronze-coloured shapes rising and whirling upward out of the willows, seen while fully awake and explained away by morning."
+            },
+            {
+              "ref": "Section II",
+              "title": "The shrinking island",
+              "summary": "The bank crumbles into the flood all night; the campsite has less ground than it had at dusk."
+            }
+          ]
+        },
+        {
+          "id": "section-3",
+          "label": "Section III",
+          "title": "One paddle, and a slit in the canoe",
+          "summary": "The steering paddle is gone, the second paddle has been scraped thin, and there is a long clean tear through the bottom of the canoe. The Swede calls it an attempt to prepare a victim and corrects himself: two victims. The narrator starts whistling, which is what he does when there is nothing he is willing to say.",
+          "scenes": [
+            {
+              "ref": "Section III",
+              "title": "The steering paddle",
+              "summary": "Gone in the night, and without it the Danube in flood is not survivable."
+            },
+            {
+              "ref": "Section III",
+              "title": "The tear",
+              "summary": "A slither of wood taken neatly out of the hull, in a place with no rocks."
+            },
+            {
+              "ref": "Section III",
+              "title": "The funnels",
+              "summary": "Hollows in the sand shaped like inverted cones, and the narrator's explanation that the wind made them."
+            }
+          ]
+        },
+        {
+          "id": "section-4",
+          "label": "Section IV",
+          "title": "The gong, and what the Swede thinks it is",
+          "summary": "The humming becomes continuous and arrives from no direction, or from inside the listener. The Swede sets out his conclusion: this is not the spirit of the elements and not the old gods, because both of those have dealings with people. What is here has none. Their space touches ours at this spot by accident, and the only defence is to keep them out of your mind.",
+          "scenes": [
+            {
+              "ref": "Section IV",
+              "title": "The sound",
+              "summary": "Like an immense gong struck far up in the sky, at regular intervals, then without interval at all."
+            },
+            {
+              "ref": "Section IV",
+              "title": "Another region",
+              "summary": "The Swede's account of a lifelong awareness of somewhere adjacent to this world and wholly unlike it."
+            },
+            {
+              "ref": "Section IV",
+              "title": "To name is to reveal",
+              "summary": "His rule for the night: do not speak of them, do not think of them, because thought is visible where they are."
+            }
+          ]
+        },
+        {
+          "id": "section-5",
+          "label": "Section V",
+          "title": "A night held out, and a body in the willow roots",
+          "summary": "The Swede goes out in the dark to offer himself and is dragged back. In the morning the sound has gone, the air is ordinary, and they find a corpse caught in the roots at the water's edge. Touching it releases the humming from its surface. The current turns the body over, and its skin is pitted with the same funnels they found in the sand.",
+          "scenes": [
+            {
+              "ref": "Section V",
+              "title": "The offering",
+              "summary": "The Swede tries to give them what they want and has to be fought for."
+            },
+            {
+              "ref": "Section V",
+              "title": "The morning",
+              "summary": "Sunlight, a normal river, and two men who have stopped arguing about what happened."
+            },
+            {
+              "ref": "Section V",
+              "title": "Their mark",
+              "summary": "The last page: a face turned up to the sky, small hollows in the flesh, and a body carried off before it can be buried."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "narrator",
+          "name": "The narrator",
+          "role": "The Englishman telling the story, some years after the event",
+          "summary": "He is the story's resistance: every time something happens he supplies a cause — wind, current, tiredness, a trick of the light — and each explanation is thinner than the last. Blackwood uses him as a pressure gauge, because the reader measures the danger by how hard this sensible man is working to deny it.",
+          "clue": "Whistles when he cannot say what he is thinking, and is absolutely determined to find an explanation for everything.",
+          "firstAppearance": "Section I",
+          "traits": [
+            "reasonable",
+            "evasive",
+            "loyal"
+          ],
+          "relationships": [
+            {
+              "to": "swede",
+              "label": "travels with, doubts, then follows",
+              "kind": "ally",
+              "stages": [
+                "section-1",
+                "section-2",
+                "section-3",
+                "section-4",
+                "section-5"
+              ]
+            },
+            {
+              "to": "others",
+              "label": "explains away, then stops explaining",
+              "kind": "enemy",
+              "stages": [
+                "section-3",
+                "section-4",
+                "section-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "swede",
+          "name": "The Swede",
+          "role": "His companion, the practical one",
+          "summary": "Introduced as a man with no imagination whatever, which is exactly why his conclusions carry weight. He works out the situation by observation — the paddle, the hollows, the direction of the sound — and the theory he arrives at is stranger than anything the narrator has been suppressing. He is the only character who tries to do something, and what he tries is to be taken instead.",
+          "clue": "Tells his friend that their space touches ours at this spot by mere chance, and means it as a measurement rather than a mystery.",
+          "firstAppearance": "Section I",
+          "traits": [
+            "unimaginative",
+            "observant",
+            "willing"
+          ],
+          "relationships": [
+            {
+              "to": "narrator",
+              "label": "guide and burden to",
+              "kind": "ally",
+              "stages": [
+                "section-1",
+                "section-3",
+                "section-4",
+                "section-5"
+              ]
+            },
+            {
+              "to": "others",
+              "label": "understands, and offers himself to",
+              "kind": "enemy",
+              "stages": [
+                "section-4",
+                "section-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "others",
+          "name": "The others",
+          "role": "Whatever is in the willows, never named and never shown",
+          "summary": "They are given no shape, no motive and no face. The story's discipline is that everything the reader gets is indirect: a sound, a missing paddle, hollows in sand, marks in flesh. The Swede's one piece of information about them is the most disturbing thing in the book — they have nothing to do with mankind, and this island is a coincidence.",
+          "clue": "Leave cones in sand and the same cones in skin.",
+          "firstAppearance": "Section II",
+          "traits": [
+            "indifferent",
+            "vast",
+            "unseen"
+          ],
+          "relationships": [
+            {
+              "to": "swede",
+              "label": "recognised by",
+              "kind": "enemy",
+              "stages": [
+                "section-4",
+                "section-5"
+              ]
+            },
+            {
+              "to": "victim",
+              "label": "have taken",
+              "kind": "enemy",
+              "stages": [
+                "section-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "boatman",
+          "name": "The man in the boat",
+          "role": "A Hungarian peasant, on the river for ten seconds",
+          "summary": "He shouts a word across the water that neither canoeist catches and crosses himself as the current takes him past. He is the only local in the story, he is not asked and cannot be, and his gesture is the one piece of outside testimony the reader gets.",
+          "clue": "Crosses himself at the sight of two men making camp.",
+          "firstAppearance": "Section I",
+          "traits": [
+            "hurried",
+            "frightened",
+            "unheard"
+          ],
+          "relationships": [
+            {
+              "to": "narrator",
+              "label": "warns, unintelligibly",
+              "kind": "ally",
+              "stages": [
+                "section-1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "victim",
+          "name": "The body in the roots",
+          "role": "A drowned man, found on the last morning",
+          "summary": "He is the story's only casualty and its only evidence. Caught in the willow roots at the edge of the main stream, he hums when touched, turns over in the current, and shows the marks that prove the Swede right. Then the river takes him before he can be buried, which leaves the two men with nothing to show anybody.",
+          "clue": "Turns over and over on the waves like an otter as the current carries him off.",
+          "firstAppearance": "Section V",
+          "traits": [
+            "anonymous",
+            "marked",
+            "unburied"
+          ],
+          "relationships": [
+            {
+              "to": "others",
+              "label": "taken by",
+              "kind": "enemy",
+              "stages": [
+                "section-5"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "nature",
+          "name": "A place with no use for people",
+          "canonicalName": "Nature",
+          "summary": "The marshes are not hostile in the way a storm is hostile; they are simply not arranged around human beings. Blackwood spends his first pages making the reader love the landscape and the rest of the story showing that the affection is not returned.",
+          "development": "The willows are beautiful in section one, watchful in section two, and by section four they are described as a mask over something else entirely."
+        },
+        {
+          "id": "isolation",
+          "name": "Two men and no help",
+          "canonicalName": "Isolation",
+          "summary": "No village, no road, no second boat, no way to signal. The story removes every option in order, and the removals are physical: a paddle, a hull, dry ground, sleep.",
+          "development": "The island itself shrinks each night, so the setting is running out at the same rate as the characters' composure."
+        },
+        {
+          "id": "knowledge",
+          "name": "Understanding as the danger",
+          "canonicalName": "Knowledge",
+          "summary": "The Swede is in more trouble the more he works out, and the narrator is safer for refusing to think. The story inverts the usual arrangement in which knowledge is a defence.",
+          "development": "By section four the rule is stated outright: to name is to reveal, and thought itself leaves a trace in the other world."
+        },
+        {
+          "id": "silence",
+          "name": "What cannot be said aloud",
+          "canonicalName": "Silence",
+          "summary": "Both men see things they do not report to each other, and the plot advances through what they decide not to mention. The story's central instruction is a prohibition on speech and then on thinking.",
+          "development": "The narrator hides the second paddle from the conversation; the Swede hides his conclusions; and the night is survived by two men keeping their minds deliberately empty."
+        },
+        {
+          "id": "self-deception",
+          "name": "The wind did it",
+          "canonicalName": "Self-deception",
+          "summary": "Every unexplained thing gets an explanation from the narrator, and the explanations get worse: wind lifted the paddle, wind dug the funnels, wind tore the canoe. Blackwood lets him do it without comment, and the effect is far more frightening than any argument.",
+          "development": "He abandons the method only on the last page, when the marks in the sand and the marks in the dead man's flesh turn out to be the same."
+        },
+        {
+          "id": "faith",
+          "name": "Older explanations, and why they fail",
+          "canonicalName": "Faith",
+          "summary": "The Swede considers the spirit of the elements and then the old gods, and rejects both for the same reason: those have relations with people and can be bargained with. What is here cannot.",
+          "development": "The peasant's sign of the cross in section one is the only religious act in the story, and it is made by a man leaving at speed."
+        },
+        {
+          "id": "evidence",
+          "name": "Marks in sand, marks in skin",
+          "canonicalName": "Evidence and testimony",
+          "summary": "For a story with nothing in it, the physical detail is relentless: two paddles counted before bed, a scraped blade, a measured tear, cones in the sand described as beautifully formed. The horror is built entirely out of things that can be examined.",
+          "development": "The last of it is the body, which carries the proof and is then swept away, leaving the two men with a story nobody has any reason to believe."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "landscape",
+          "name": "Ground described until it becomes a character",
+          "canonicalName": "Landscape",
+          "definition": "Place and weather made to press on the people living in them, rather than serving as scenery.",
+          "bookDefinition": "Extended, exact description of a place, doing the work a character would usually do.",
+          "inThisBook": "The first section is almost entirely river and willows — current, sandbanks, the word on the map — and the story's threat is never separated from that description. Blackwood was a camper before he was a writer, and the detail is the detail of someone who has slept there."
+        },
+        {
+          "id": "unreliable-narrator",
+          "name": "A narrator arguing with his own story",
+          "canonicalName": "Unreliable narrator",
+          "definition": "A first-person account the reader learns to read against.",
+          "bookDefinition": "A first-person account the reader learns to read against.",
+          "inThisBook": "He is not lying; he is explaining. The wind takes the paddle, the wind digs the funnels, and each time the reader is pushed a little further ahead of him. The technique is what makes the ending land without a monster."
+        },
+        {
+          "id": "refrain",
+          "name": "The sound that keeps returning",
+          "canonicalName": "Refrain",
+          "definition": "A phrase brought back at intervals, so that its meaning shifts with what has happened since.",
+          "bookDefinition": "A recurring sensory detail that marks the progress of the story.",
+          "inThisBook": "The gong-like humming arrives at intervals, then continuously, then from inside the listener, and finally out of the surface of a corpse. It is the story's clock."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "Camp equipment as plot",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative keeps returning to until it stands for the argument rather than illustrating it.",
+          "bookDefinition": "Ordinary objects whose condition carries the narrative.",
+          "inThisBook": "Two paddles, then one; a hull with a hole; a shrinking patch of sand. The supernatural is only ever visible in what it does to kit a canoeist would check anyway."
+        },
+        {
+          "id": "ellipsis",
+          "name": "The thing not shown",
+          "canonicalName": "Ellipsis",
+          "definition": "What the narrative declines to show, placed where the reader will notice the gap and fill it.",
+          "bookDefinition": "Leaving the central event out of the telling.",
+          "inThisBook": "Nothing is ever described directly: the shapes may be mist, the sound has no source, and the beings get no adjective beyond the Swede's theory. The story's reputation rests on that refusal."
+        },
+        {
+          "id": "gothic",
+          "name": "Terror without a house",
+          "canonicalName": "Gothic machinery",
+          "definition": "The stock furniture of Gothic writing — the ruin, the storm, the locked room, the buried secret — put to a particular use.",
+          "bookDefinition": "The gothic apparatus of isolation and dread, moved outdoors.",
+          "inThisBook": "No castle, no ghost, no family curse — a tent on a sandbank. Blackwood keeps the pressure of gothic fiction and throws away its furniture, which is why the story reads as modern."
+        },
+        {
+          "id": "retrospective-narration",
+          "name": "Told long afterwards",
+          "canonicalName": "Retrospective narration",
+          "definition": "A narrator telling their own earlier life, with the distance between the two selves doing the judging.",
+          "bookDefinition": "A narrator recounting events he has had years to think about.",
+          "inThisBook": "The telling is calm, which is the most unsettling thing about it. He has had time to find a better explanation and has not found one."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "sumpfe",
+          "text": "across it may be seen in large straggling letters the word Sümpfe, meaning marshes",
+          "speaker": "",
+          "reference": "Section I",
+          "stage": "section-1",
+          "context": "Describing how the region appears on a map.",
+          "analysis": "The place is introduced as a blank with a label. Starting from cartography rather than from atmosphere is a deliberate move: the reader is told the marshes are a real, mapped, unremarkable feature before being told anything else about them.",
+          "themes": [
+            "nature"
+          ],
+          "techniques": [
+            "landscape"
+          ],
+          "characters": [],
+          "source": "1907 text, section I",
+          "cloze": [
+            "straggling",
+            "marshes"
+          ]
+        },
+        {
+          "id": "moving-and-alive",
+          "text": "they somehow give the impression that the entire plain is moving and alive",
+          "speaker": "",
+          "reference": "Section I",
+          "stage": "section-1",
+          "context": "On the willow bushes in the wind.",
+          "analysis": "An observation any camper might make, and the whole story is contained in it. Blackwood never has to claim the willows are alive; he describes what they look like and lets the impression do the work for the next twenty thousand words.",
+          "themes": [
+            "nature"
+          ],
+          "techniques": [
+            "landscape"
+          ],
+          "characters": [],
+          "source": "1907 text, section I",
+          "cloze": [
+            "plain",
+            "alive"
+          ]
+        },
+        {
+          "id": "immense-gong",
+          "text": "I can liken it to nothing so much as to the sound of an immense gong, suspended far up in the sky",
+          "speaker": "",
+          "reference": "Section IV",
+          "stage": "section-4",
+          "context": "The first sustained description of the sound over the marshes.",
+          "analysis": "The simile is reached for and admitted to be inadequate — I can liken it to nothing so much as. Every sensory detail in the story arrives with that qualification, which is how a writer builds dread out of a noise he never identifies.",
+          "themes": [
+            "evidence"
+          ],
+          "techniques": [
+            "refrain",
+            "ellipsis"
+          ],
+          "characters": [
+            "narrator"
+          ],
+          "source": "1907 text, section IV",
+          "cloze": [
+            "gong",
+            "sky"
+          ]
+        },
+        {
+          "id": "fourth-dimension",
+          "text": "the way a sound in the fourth dimension is supposed to come",
+          "speaker": "",
+          "reference": "Section IV",
+          "stage": "section-4",
+          "context": "The Swede, explaining why the humming seems to be inside him.",
+          "analysis": "Blackwood reaches for the popular science of 1907 rather than for folklore, and the borrowed phrase does something folklore could not: it makes the thing geometrical. The horror is no longer a spirit but a direction nobody can point in.",
+          "themes": [
+            "knowledge"
+          ],
+          "techniques": [
+            "refrain"
+          ],
+          "characters": [
+            "swede"
+          ],
+          "source": "1907 text, section IV",
+          "cloze": [
+            "fourth",
+            "dimension"
+          ]
+        },
+        {
+          "id": "another-region",
+          "text": "All my life, he said, I have been strangely, vividly conscious of another region—not far removed from our own world in one sense, yet wholly different in kind",
+          "speaker": "",
+          "reference": "Section IV",
+          "stage": "section-4",
+          "context": "The Swede beginning the explanation he has been holding back.",
+          "analysis": "The man introduced as having no imagination turns out to have carried this since childhood. Putting the story's cosmology in the mouth of its most literal character is the reason the reader accepts it.",
+          "themes": [
+            "knowledge",
+            "faith"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "swede"
+          ],
+          "source": "1907 text, section IV",
+          "cloze": [
+            "conscious",
+            "region"
+          ]
+        },
+        {
+          "id": "nothing-to-do-with-mankind",
+          "text": "these beings who are now about us have absolutely nothing to do with mankind, and it is mere chance that their space happens just at this spot to touch our own",
+          "speaker": "",
+          "reference": "Section IV",
+          "stage": "section-4",
+          "context": "Rejecting both the spirit of the elements and the old gods as explanations.",
+          "analysis": "The sentence that separates this story from every haunting before it. Gods and spirits can be appeased because they want something from us; these do not, and the island is not a chosen place but a coincidence. Lovecraft took his whole subject from this paragraph.",
+          "themes": [
+            "faith",
+            "nature"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "swede",
+            "others"
+          ],
+          "source": "1907 text, section IV",
+          "cloze": [
+            "mankind",
+            "chance"
+          ]
+        },
+        {
+          "id": "sacrifice",
+          "text": "A sacrifice, a victim, might save us by distracting them until we could get away",
+          "speaker": "",
+          "reference": "Section IV",
+          "stage": "section-4",
+          "context": "Answering the question of what can be done.",
+          "analysis": "He follows it with an image of wolves stopping to eat the sleigh dogs, and then with the observation that there is no other victim available. The reader works out what he is proposing about a page before the narrator does.",
+          "themes": [
+            "faith",
+            "isolation"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "swede"
+          ],
+          "source": "1907 text, section IV",
+          "cloze": [
+            "sacrifice",
+            "victim"
+          ]
+        },
+        {
+          "id": "willows-mask",
+          "text": "It’s the willows, of course. The willows mask the others, but the others are feeling about for us.",
+          "speaker": "",
+          "reference": "Section IV",
+          "stage": "section-4",
+          "context": "Explaining what the bushes have to do with it.",
+          "analysis": "A word from stagecraft: the willows are scenery hiding what is behind them. Feeling about for us is worse than searching — it makes the hunt blind, patient and impersonal, which fits everything else he has just said.",
+          "themes": [
+            "nature",
+            "knowledge"
+          ],
+          "techniques": [
+            "landscape"
+          ],
+          "characters": [
+            "swede",
+            "others"
+          ],
+          "source": "1907 text, section IV",
+          "cloze": [
+            "willows",
+            "mask"
+          ]
+        },
+        {
+          "id": "lost-utterly",
+          "text": "If we let our minds betray our fear, we’re lost, lost utterly.",
+          "speaker": "",
+          "reference": "Section IV",
+          "stage": "section-4",
+          "context": "The rule for getting through the night.",
+          "analysis": "Fear is reclassified as a leak. In most horror stories courage is a virtue; here it is a technical requirement, and the repetition of lost is the only place the Swede's own composure slips.",
+          "themes": [
+            "silence",
+            "knowledge"
+          ],
+          "techniques": [
+            "refrain"
+          ],
+          "characters": [
+            "swede",
+            "narrator"
+          ],
+          "source": "1907 text, section IV",
+          "cloze": [
+            "minds",
+            "lost"
+          ]
+        },
+        {
+          "id": "to-name-is-to-reveal",
+          "text": "Do not refer to them by name. To name is to reveal",
+          "speaker": "",
+          "reference": "Section IV",
+          "stage": "section-4",
+          "context": "Cutting his companion off mid-question.",
+          "analysis": "The oldest idea in folklore, stated as an operating procedure. It also explains the story's method: the things in the willows are never named by the narrator either, so the prohibition governs the prose as well as the characters.",
+          "themes": [
+            "silence"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "swede"
+          ],
+          "source": "1907 text, section IV",
+          "cloze": [
+            "name",
+            "reveal"
+          ]
+        },
+        {
+          "id": "spirals",
+          "text": "Our thoughts make spirals in their world",
+          "speaker": "",
+          "reference": "Section IV",
+          "stage": "section-4",
+          "context": "Asked whether they must avoid even thinking of them.",
+          "analysis": "Six words that give the other region a physics. Thought is visible there, and has a shape, which means the two men can be tracked by the one thing they cannot switch off.",
+          "themes": [
+            "silence",
+            "knowledge"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "swede"
+          ],
+          "source": "1907 text, section IV",
+          "cloze": [
+            "thoughts",
+            "spirals"
+          ]
+        },
+        {
+          "id": "steering-paddle",
+          "text": "For one thing—the steering paddle’s gone",
+          "speaker": "",
+          "reference": "Section III",
+          "stage": "section-3",
+          "context": "The Swede's first report of the morning.",
+          "analysis": "Delivered quietly, and it is the sentence that ends any possibility of leaving. Blackwood takes the escape route away with a piece of missing equipment rather than a locked door, and the practical consequence — the Danube in flood without a rudder — is spelled out at once.",
+          "themes": [
+            "isolation",
+            "evidence"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "swede",
+            "narrator"
+          ],
+          "source": "1907 text, section III",
+          "cloze": [
+            "steering",
+            "gone"
+          ]
+        },
+        {
+          "id": "prepare-a-victim",
+          "text": "There, you see an attempt to prepare a victim for the sacrifice",
+          "speaker": "",
+          "reference": "Section III",
+          "stage": "section-3",
+          "context": "Looking at the tear in the bottom of the canoe.",
+          "analysis": "He is reading the damage as intention, and the reader cannot prove him wrong. The correction that follows — two victims rather — is worse than the claim, because it means he has already counted himself in.",
+          "themes": [
+            "evidence",
+            "faith"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "swede"
+          ],
+          "source": "1907 text, section III",
+          "cloze": [
+            "victim",
+            "sacrifice"
+          ]
+        },
+        {
+          "id": "determined-to-explain",
+          "text": "absolutely determined to find an explanation for everything",
+          "speaker": "",
+          "reference": "Section III",
+          "stage": "section-3",
+          "context": "The narrator, calling after the Swede with a theory about the wind.",
+          "analysis": "He tells us his own method in one phrase, and it is not scepticism but need. Every explanation he offers is available to the reader as well, which is what makes the story unsettling rather than silly: you are invited to use the same defence and to watch it fail.",
+          "themes": [
+            "self-deception"
+          ],
+          "techniques": [
+            "unreliable-narrator"
+          ],
+          "characters": [
+            "narrator"
+          ],
+          "source": "1907 text, section III",
+          "cloze": [
+            "determined",
+            "explanation"
+          ]
+        },
+        {
+          "id": "their-mark",
+          "text": "Their mark!",
+          "speaker": "",
+          "reference": "Section V",
+          "stage": "section-5",
+          "context": "The Swede, on his knees beside the body.",
+          "analysis": "Two words, twice, and they are the only naming in the story — a possessive pronoun with nothing attached to it. The horror is that a pronoun turns out to be enough.",
+          "themes": [
+            "evidence",
+            "silence"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "swede",
+            "victim"
+          ],
+          "source": "1907 text, section V",
+          "cloze": [
+            "Their",
+            "mark"
+          ]
+        },
+        {
+          "id": "small-hollows",
+          "text": "how the skin and flesh were indented with small hollows, beautifully formed, and exactly similar in shape and kind to the sand-funnels that we had found all over the island",
+          "speaker": "",
+          "reference": "Section V",
+          "stage": "section-5",
+          "context": "As the current turns the corpse to face them.",
+          "analysis": "The proof arrives as a match between two sets of measurements, and the word beautifully is the most frightening thing in the sentence. The narrator's habit of exact observation, which has been his defence all along, is what finally convicts him.",
+          "themes": [
+            "evidence",
+            "self-deception"
+          ],
+          "techniques": [
+            "symbolic-objects",
+            "unreliable-narrator"
+          ],
+          "characters": [
+            "narrator",
+            "victim"
+          ],
+          "source": "1907 text, section V",
+          "cloze": [
+            "hollows",
+            "sand-funnels"
+          ]
+        },
+        {
+          "id": "like-an-otter",
+          "text": "turning over and over on the waves like an otter",
+          "speaker": "",
+          "reference": "Section V",
+          "stage": "section-5",
+          "context": "The last clause of the story, as the body is carried into midstream.",
+          "analysis": "The comparison returns to an animal the two men had argued about seeing days earlier, and the evidence leaves with the current. Nothing is resolved, nobody can be told, and the story ends on a simile borrowed from its own unreliable middle.",
+          "themes": [
+            "evidence",
+            "isolation"
+          ],
+          "techniques": [
+            "refrain",
+            "retrospective-narration"
+          ],
+          "characters": [
+            "victim",
+            "narrator"
+          ],
+          "source": "1907 text, closing line",
+          "cloze": [
+            "turning",
+            "otter"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "Written",
+          "value": "c. 1906",
+          "note": "Six years after the Danube trip it draws on; Blackwood had camped in the marshes himself."
+        },
+        {
+          "label": "First printed",
+          "value": "1907",
+          "note": "In The Listener and Other Stories, his second collection."
+        },
+        {
+          "label": "Shape",
+          "value": "Five sections",
+          "note": "One camp, three days, two men, and a steadily smaller island."
+        },
+        {
+          "label": "Reputation",
+          "value": "Lovecraft's first choice",
+          "note": "He called it the finest weird tale he knew, and said so in print more than once."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "The first modern cosmic horror story",
+          "summary": "The beings have no interest in humanity and the site of the haunting is an accident of geometry, which is the position Lovecraft and everyone after him built on.",
+          "counter": "Blackwood himself was a mystic rather than a materialist: elsewhere he writes about nature as something to be joined rather than survived, and the Swede's awe is closer to worship than to Lovecraft's disgust."
+        },
+        {
+          "position": "A story that works because nothing is shown",
+          "summary": "No creature appears, no explanation is confirmed, and every piece of evidence has an innocent reading available. The dread is produced entirely by omission.",
+          "counter": "There is plenty shown: the shapes rising from the willows, the marks in the corpse, the humming out of dead flesh. The restraint is real but it is not total, and the last page commits."
+        },
+        {
+          "position": "Landscape writing with a plot attached",
+          "summary": "The first section is nature writing of a high order, and readers who admire the story often admire the river rather than the incidents.",
+          "counter": "The description is the mechanism, not the decoration: every later event is a small change in something already carefully established, which is why the missing paddle frightens anybody at all."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does the story frighten a reader without showing anything?",
+          "focus": "Omission, indirect evidence and the narrator's explanations",
+          "plan": [
+            "Set out what is actually presented: a sound, missing equipment, hollows in sand, shapes that may be mist.",
+            "Show the narrator's counter-explanations and how they thin out across the sections.",
+            "Examine the one prohibition the story places on itself — to name is to reveal — and how it governs the prose.",
+            "Take the last page as the single moment of confirmation, and ask what it costs.",
+            "Conclude on whether the ending breaks the method or completes it."
+          ]
+        },
+        {
+          "question": "What is the function of the landscape?",
+          "focus": "Setting as agent",
+          "plan": [
+            "Begin with the map: Sümpfe, the fluffy blue, the absence of a main channel.",
+            "Trace the willows from beauty, through watchfulness, to the Swede's word mask.",
+            "Note the physical facts that carry the plot: flood, crumbling banks, a shrinking island.",
+            "Compare the treatment of nature here with a conventional gothic setting.",
+            "Argue for how much of the fear is produced by description rather than by event."
+          ]
+        },
+        {
+          "question": "Is the Swede's explanation the story's own?",
+          "focus": "Cosmology, authority and who the reader believes",
+          "plan": [
+            "Establish his character as introduced: practical, unimaginative, reliable.",
+            "Set out his theory and what it rules out — elemental spirits and the old gods, and why.",
+            "Weigh his proposal of a sacrifice against everything he has just said about indifference.",
+            "Consider the narrator's silence in response, and what the reader is left holding.",
+            "Decide whether the marks on the body confirm his account or merely fail to contradict it."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "The narrator explains everything away. At what point did you stop believing him, and what did it?",
+        "The Swede says the beings have nothing to do with mankind. Is that more or less frightening than a haunting aimed at you?",
+        "Why does Blackwood put the sign of the cross in the mouth of a man who is leaving at speed?",
+        "The rule is not to name them, and the story obeys it too. What would be lost if they were named?",
+        "The body is swept away before it can be buried. Why end without evidence?",
+        "How much of the fear survives a second reading, when you know nothing will be shown?"
+      ],
+      "timeline": [
+        {
+          "year": 1869,
+          "label": "Blackwood born in Kent",
+          "detail": "Into a strictly evangelical household he spent his adult life reacting against.",
+          "kind": "context"
+        },
+        {
+          "year": 1892,
+          "label": "Canada and New York",
+          "detail": "Farming, hotel-keeping, and years of poverty and reporting that gave him the wilderness settings of his best work.",
+          "kind": "context"
+        },
+        {
+          "year": 1900,
+          "label": "The Danube journey",
+          "detail": "Blackwood canoed down the river through the marshes below Vienna, the trip this story is built from.",
+          "kind": "context"
+        },
+        {
+          "year": 1906,
+          "label": "The Empty House",
+          "detail": "His first collection appears; he is thirty-seven and writing full time.",
+          "kind": "context"
+        },
+        {
+          "year": 1907,
+          "label": "The Willows published",
+          "detail": "In The Listener and Other Stories, the collection that made his reputation.",
+          "kind": "work"
+        },
+        {
+          "year": 1908,
+          "label": "John Silence",
+          "detail": "The psychic-detective stories that sold well and that Blackwood later thought less of than this one.",
+          "kind": "context"
+        },
+        {
+          "year": 1910,
+          "label": "The Wendigo",
+          "detail": "Its companion piece, doing for the Canadian bush what this does for the Danube.",
+          "kind": "work"
+        },
+        {
+          "year": 1927,
+          "label": "Lovecraft's verdict",
+          "detail": "In Supernatural Horror in Literature he names The Willows the finest weird tale he has read.",
+          "kind": "reception"
+        },
+        {
+          "year": 1934,
+          "label": "Blackwood on the wireless",
+          "detail": "He became famous all over again as a broadcaster telling ghost stories on the BBC.",
+          "kind": "reception"
+        },
+        {
+          "year": 1951,
+          "label": "Death, and a long afterlife in anthologies",
+          "detail": "The story has stayed in print in horror collections ever since, usually as the first item.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Vienna",
+          "lat": 48.2082,
+          "lon": 16.3738,
+          "note": "Where the canoe journey begins, and the last city before the marshes."
+        },
+        {
+          "name": "Bratislava, then Pressburg",
+          "lat": 48.1486,
+          "lon": 17.1077,
+          "note": "The town the canoeists pass before the river loses its channel."
+        },
+        {
+          "name": "The Danube marshes",
+          "lat": 47.85,
+          "lon": 17.25,
+          "note": "The willow-covered flood plain below Pressburg, marked Sümpfe on the old maps."
+        },
+        {
+          "name": "Budapest",
+          "lat": 47.4979,
+          "lon": 19.0402,
+          "note": "The destination they are trying to reach, named in the first sentence."
+        },
+        {
+          "name": "Shooter's Hill, Kent",
+          "lat": 51.4676,
+          "lon": 0.0603,
+          "note": "Blackwood's birthplace, and the evangelical household the story's cosmology argues with."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/the-wendigo/",
+          "why": "Blackwood's companion story, three years later, doing the same thing to the Canadian bush."
+        },
+        {
+          "href": "/books/the-house-on-the-borderland/",
+          "why": "Published the year after, and the other English book of its decade to put something indifferent on the other side of a thin wall."
+        },
+        {
+          "href": "/books/the-turn-of-the-screw/",
+          "why": "The other great story that withholds its proof and leaves the narrator's reliability with the reader."
+        },
+        {
+          "href": "/books/frankenstein/",
+          "why": "The earlier account of a man out of his depth in a landscape that dwarfs him, with ice in place of willows."
+        },
+        {
+          "href": "/books/dracula/",
+          "why": "A haunting conducted through documents and evidence, and the measure of how much apparatus Blackwood threw away."
         }
       ],
       "videos": []
