@@ -241,7 +241,7 @@ ${libraryPanel}
   <article class="resource-meta">
     <div class="tag-row">${tags}</div>
     <p class="resource-availability">${availability}</p>
-    <h2>Subject and purpose of the guide.</h2>
+    <h2>What the guide is for.</h2>
     <p>${escapeHtml(resource.description)}</p>
     <p>${override.use || escapeHtml(category.use)}</p>
     ${factsHtml}
@@ -257,7 +257,7 @@ ${contents}
 
 <section class="resource-open-band"><div><p class="kicker">${openKicker}</p><h2>Open the illustrated guide.</h2><p>${openCopy}</p></div><a class="button primary" href="${escapeHtml(resource.url)}"${linkAttributes}>${primaryAction} <span aria-hidden="true">${externalArrow}</span></a></section>
 
-<section class="resource-related"><div><p class="kicker">Related catalogue pages</p><h2>Relevant books and subject guides.</h2></div><div class="resource-related-links">${relatedLinks(resource)}</div></section>
+<section class="resource-related"><div><p class="kicker">Related catalogue pages</p><h2>Books and guides that go with it.</h2></div><div class="resource-related-links">${relatedLinks(resource)}</div></section>
 </main>
 <footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, study editions and free literature resources.</p></div><div class="footer-links"><a href="/resources/">All free resources</a><a href="/library/">Books</a><a href="/subjects/">Subjects</a><a href="/editorial/">Editorial standards</a></div></footer>
 </body>

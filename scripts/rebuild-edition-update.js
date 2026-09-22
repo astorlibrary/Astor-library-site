@@ -184,8 +184,8 @@ function bookPage(book) {
   const openingTwo = book.overview.slice(2);
   if (openingTwo.length < 2) openingTwo.push(book.editorial[0]);
   const readings = [
-    { label: 'The work', title: 'Story, argument and structure.', copy: openingOne },
-    { label: 'Reading the work', title: 'What the complete text brings into view.', copy: openingTwo }
+    { label: 'The work', title: 'What happens.', copy: openingOne },
+    { label: 'Reading the work', title: 'Reading it whole.', copy: openingTwo }
   ].map(item => '<article class="prod-card prose-card"><p class="year">' + item.label + '</p><h3>' + item.title + '</h3>' + paragraphs(item.copy) + '</article>').join('');
   const contexts = [
     { label: 'Text', title: 'Editorial method', body: book.editorial[0] },
@@ -225,7 +225,7 @@ function bookPage(book) {
   <section class="page-intro astor-book-hero"><div><p class="kicker">${escapeHtml(book.author)}</p><h1>${escapeHtml(book.title)}</h1><p class="deck">${escapeHtml(book.deck)}</p></div><aside class="source-note astor-book-cover"><img src="${assetPath(book.image)}" alt="Astor Library ${escapeHtml(book.title)} cover"><div><p><strong>${escapeHtml(book.label)}</strong><br>${editionLevel}</p>${actionButtons(book, false)}</div></aside></section>
   <nav class="page-contents" aria-label="On this page"><strong>On this page</strong><div>${pageContents}${book.counterpart ? '<a href="#edition-choice-title">Choose an edition</a>' : ''}</div></nav>
   <section class="quick-facts" aria-label="${escapeHtml(book.title)} facts">${facts}</section>
-  <section class="section-title" id="edition"><p class="kicker">Edition contents</p><h2>What this Astor edition contains.</h2><p>These features belong to the main edition represented by the cover and purchase link on this page.</p></section>
+  <section class="section-title" id="edition"><p class="kicker">Edition contents</p><h2>What this Astor edition contains.</h2><p>This list is for the edition pictured here, the one the purchase link opens.</p></section>
   <section class="timeline"><article class="edition-card new-edition"><img src="${assetPath(book.image)}" alt="Astor Library ${escapeHtml(book.title)} cover" loading="lazy"><div><p class="year">${escapeHtml(book.label)}</p><h2><em>${escapeHtml(book.shortTitle || book.title)}</em></h2><ul class="edition-includes">${includes}</ul>${actionButtons(book, true)}</div></article></section>
   ${workSections}
   ${sectionTitleBlock('editorial', 'Text and context', book.slug)}
