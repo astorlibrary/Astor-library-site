@@ -205,7 +205,7 @@ function buildPage(book, edition, titleFor) {
 ${HEADER}
 <main id="main-content" class="page-wrap astor-book-record" style="--book-accent: ${accentFor(book.slug)}" data-motif="${motifName(book)}">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/study/">Study editions</a><span aria-hidden="true">/</span><span aria-current="page">${escapeHtml(book.title)}</span></nav>
-  <section class="page-intro astor-book-hero">${motifSvg(book, 168, 'astor-motif-watermark')}
+  <section class="page-intro astor-book-hero">
     <div><p class="kicker">${motifSvg(book, 22)}${escapeHtml(book.author)}</p><h1>${escapeHtml(book.title)}</h1><p class="deck">${escapeHtml(book.summary)}</p></div>
     <aside class="source-note astor-book-cover"><img src="${escapeHtml(edition.image)}" alt="${escapeHtml(book.title)} Astor Library Study Edition cover"><div><p><strong>Astor Study Edition</strong><br>${escapeHtml(edition.description)}</p><div class="button-row"><a class="button primary" href="${escapeHtml(edition.buyUrl)}">Buy / view the Astor Study Edition</a><a class="button secondary" href="${escapeHtml(book.href)}">Explore the main edition</a></div></div></aside>
   </section>

@@ -1195,8 +1195,7 @@ function addBookIdentity(html, book) {
     if (/style=/.test(attributes)) return whole.replace(/style="([^"]*)"/, 'style="$1; --book-accent: ' + accentFor(book.slug) + '"');
     return '<main' + attributes + ' style="--book-accent: ' + accentFor(book.slug) + '" data-motif="' + motifName(book) + '">';
   });
-  // The symbol goes beside the author's name at the top of the page, and once
-  // more, large and faint, behind the opening.
+  // The symbol goes beside the author's name at the top of the page.
   let marked = false;
   html = html.replace(/(<p class="kicker">)/, (whole, open) => {
     if (marked) return whole;
@@ -1204,7 +1203,7 @@ function addBookIdentity(html, book) {
     return open + motifSvg(book, 22);
   });
   html = html.replace(/<section class="page-intro([^"]*)"([^>]*)>/, (whole, rest, attributes) =>
-    '<section class="page-intro' + rest + ' astor-marked-hero"' + attributes + '>' + motifSvg(book, 168, 'astor-motif-watermark'));
+    '<section class="page-intro' + rest + ' astor-marked-hero"' + attributes + '>');
   return html;
 }
 
@@ -1238,7 +1237,7 @@ function addPlainBookIdentity(html, source) {
     return open + motifSvgByName(motif, 22);
   });
   html = html.replace(/<section class="page-intro([^"]*)"([^>]*)>/, (whole, rest, attributes) =>
-    '<section class="page-intro' + rest + ' astor-marked-hero"' + attributes + '>' + motifSvgByName(motif, 168, 'astor-motif-watermark'));
+    '<section class="page-intro' + rest + ' astor-marked-hero"' + attributes + '>');
   return html;
 }
 

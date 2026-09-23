@@ -2088,14 +2088,12 @@
 }
 
 /* A book's ornament and colour belong to every book page, not only to the
-   ones with a study record. These rules used to live in astor-study.css,
-   which 54 of the book pages never load: the watermark had no position to
-   obey, so it sat in the grid as a 168px block, took the first column, and
-   pushed the title into the narrow one and the cover below it. */
+   ones with a study record, so they live here rather than in astor-study.css.
+   The ornament appears once, beside the author's name. A large faint copy
+   behind the hero was tried and dropped: it landed behind the edition text. */
 .astor-motif { display: inline-block; vertical-align: -0.35em; margin-right: 8px; color: var(--book-accent, var(--burgundy)); }
 .kicker .astor-motif { margin-right: 10px; }
 .astor-book-hero, .astor-marked-hero { position: relative; overflow: hidden; }
-.astor-motif-watermark { position: absolute; right: 14px; top: 16px; width: 140px; height: 140px; margin: 0; opacity: .06; pointer-events: none; }
 .astor-book-hero > div, .astor-book-hero > aside,
 .astor-marked-hero > div, .astor-marked-hero > aside { position: relative; z-index: 1; }
 
@@ -2113,9 +2111,6 @@
    long, so they get their own scale. */
 .astor-book-hero h1, .astor-marked-hero h1 { font-size: clamp(34px, 4.6vw, 62px); letter-spacing: -.04em; text-wrap: balance; }
 @media (max-width: 940px) {
-  /* On a phone the hero is one column and the mark can only sit behind the
-     title, so it goes; the small mark beside the kicker carries the book. */
-  .astor-motif-watermark { display: none; }
   .astor-book-cover { grid-template-columns: 112px minmax(0, 1fr); }
 }
 
