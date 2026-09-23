@@ -12,7 +12,7 @@ const chooser = document.querySelector('#astor-essay-chooser');
 const mount = document.querySelector('#astor-essay-forge');
 
 const STARTERS = [
-  'The play refuses to…',
+  'The text refuses to…',
   'What looks like … is in fact…',
   'The turn comes at…',
   'Against the obvious reading,…',
@@ -51,9 +51,9 @@ function render(book) {
   mount.append(el('div', { class: 'astor-toolkit' }, [
     el('div', { class: 'astor-toolkit-head' }, [
       el('div', {}, [
-        el('p', { class: 'kicker', text: 'Essay forge · ' + book.title }),
+        el('p', { class: 'kicker', text: 'Essay planner · ' + book.title }),
         el('h2', { text: 'Build the plan.' }),
-        el('p', { text: 'Pick a question, write your argument in a sentence, then build it up paragraph by paragraph.' })
+        el('p', { text: 'Write your argument in one sentence, then add paragraphs. Each needs a point, a quotation and a comment on its effect.' })
       ])
     ]),
     el('div', { class: 'astor-panel' }, [
@@ -62,7 +62,7 @@ function render(book) {
       el('div', { class: 'astor-note', id: 'astor-essay-suggestion' }),
       el('label', { class: 'astor-compare-heading', for: 'astor-essay-thesis', text: 'Your line of argument' }),
       thesis,
-      el('p', { class: 'astor-inline-note', text: 'Ways in: ' + STARTERS.join('  ·  ') }),
+      el('p', { class: 'astor-inline-note', text: 'Sentence starters: ' + STARTERS.join('  ·  ') }),
       body
     ])
   ]));
@@ -74,10 +74,10 @@ function render(book) {
   function draw() {
     const suggestion = mount.querySelector('#astor-essay-suggestion');
     clear(suggestion);
-    suggestion.append(el('h4', { text: 'A route the Astor edition suggests' }));
+    suggestion.append(el('h4', { text: 'A suggested plan' }));
     if (state.question.focus) suggestion.append(el('p', { class: 'astor-note-aside', text: state.question.focus }));
     suggestion.append(el('ol', { class: 'astor-plan' }, (state.question.plan || []).map(step => el('li', { text: step }))));
-    suggestion.append(el('p', { class: 'astor-inline-note', text: 'It is a route, not the answer. Argue against it if you can.' }));
+    suggestion.append(el('p', { class: 'astor-inline-note', text: 'One possible plan. Your argument can go a different way.' }));
 
     clear(body);
     state.paragraphs.forEach((paragraph, index) => body.append(paragraphEditor(paragraph, index)));
@@ -159,7 +159,7 @@ function render(book) {
       if (paragraph.effect.trim()) lines.push('   ' + paragraph.effect.trim());
       lines.push('');
     });
-    lines.push('Plan built with the Astor Library essay forge — ' + book.href);
+    lines.push('Plan made with the Astor Library essay planner — ' + book.href);
     const text = lines.join('\n');
 
     const panel = el('section', { class: 'astor-worksheet' });

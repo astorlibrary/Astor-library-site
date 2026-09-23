@@ -151,7 +151,7 @@ function yearPanel(book) {
     kind: 'The years around it',
     html: '<ul class="astor-feature-years">' + events.map(entry =>
       '<li><b>' + escapeHtml(String(entry.year)) + '</b> ' + escapeHtml(entry.label) + '</li>').join('') +
-      '</ul><p class="astor-feature-note"><a href="/explore/timeline/">See it against the other books</a></p>'
+      '</ul><p class="astor-feature-note"><a href="/explore/timeline/?view=events&amp;mark=' + escapeHtml(book.slug) + '">See these dates among the other books</a></p>'
   };
 }
 

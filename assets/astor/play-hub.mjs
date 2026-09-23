@@ -61,7 +61,8 @@ async function start() {
     books,
     current,
     label: 'Which book?',
-    onChange: book => { current = book; renderBookGames(book); }
+    // The tool cards carry the chosen book in their links, so they follow it too.
+    onChange: book => { current = book; renderBookGames(book); renderTools(index, () => current); }
   });
 
   renderBookGames(current);
@@ -157,8 +158,8 @@ function renderStats(index) {
       ? 'day' + (run.current === 1 ? '' : 's') + ' in a row. Longest: ' + run.longest + '.'
       : 'Play a round today to start one.'],
     ['Rounds played', String(played), played ? 'on this device.' : 'Nothing yet — start anywhere below.'],
-    ['Questions available', available.toLocaleString('en-GB'), 'generated from ' + index.counts.quotations.toLocaleString('en-GB') + ' checked quotations across ' + index.counts.books + ' titles.'],
-    ['Titles with games', String(index.counts.books), 'and every one of them adds nine more rounds.']
+    ['Questions available', available.toLocaleString('en-GB'), 'from ' + index.counts.quotations.toLocaleString('en-GB') + ' quotations in ' + index.counts.books + ' books.'],
+    ['Books with games', String(index.counts.books), 'Pick one below to start.']
   ];
 
   if (!isRemembering()) {

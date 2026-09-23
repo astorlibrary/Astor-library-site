@@ -382,7 +382,11 @@
     try {
       const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
       if (!target) return;
-      const scroll = () => target.scrollIntoView();
+      // A quotation reached from the quotation explorer is centred, as the
+      // study toolkit places it; pinned to the top it sits under the header.
+      const scroll = () => target.scrollIntoView(target.classList.contains('is-target')
+        ? { block: 'center', behavior: 'instant' }
+        : undefined);
       if (document.readyState === 'complete') scroll();
       else window.addEventListener('load', scroll, { once: true });
     } catch {

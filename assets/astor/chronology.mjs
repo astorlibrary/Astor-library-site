@@ -74,9 +74,9 @@ async function start() {
   // Arriving from a book page opens that book's line and brings it into view;
   // arriving with one book marked among all the others goes to its first date.
   if (asked && state.view === 'books') {
-    document.getElementById('astor-tl-book-' + asked)?.scrollIntoView({ block: 'start' });
+    document.getElementById('astor-tl-book-' + asked)?.scrollIntoView({ block: 'start', behavior: 'instant' });
   } else if (state.mark && state.view === 'events') {
-    list.querySelector('.is-marked')?.scrollIntoView({ block: 'center' });
+    list.querySelector('.is-marked')?.scrollIntoView({ block: 'center', behavior: 'instant' });
   }
 }
 

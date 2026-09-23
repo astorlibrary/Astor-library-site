@@ -1046,15 +1046,15 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<section class="explore-paths" aria-label="Ways into Astor Library">' +
   '<a href="/seasons/"><span>The seasonal library</span><p>Books and resources for Halloween, Christmas, Bonfire Night and the changing seasons.</p></a>' +
   '<a href="/passage-room/"><span>Annotated passages</span><p>Short extracts with notes on language, structure and context.</p></a>' +
-  '<a href="/library/"><span>Main editions</span><p>Complete texts and book pages listing the material included in each edition.</p></a>' +
+  '<a href="/library/"><span>Main editions</span><p>Every book in the catalogue, with what each edition includes.</p></a>' +
   '<a href="/subjects/"><span>Subject guides</span><p>Guides to comedy, Gothic, tragedy, detective fiction, epic, satire, narration, slavery and freedom.</p></a>' +
   '<a href="/authors/"><span>Author pages</span><p>A life, the publication history, and every Astor edition by that writer.</p></a>' +
   '<a href="/study/"><span>Study editions</span><p>The complete text, with the summaries, quotations, criticism and model paragraphs an essay needs.</p></a>' +
   '<a href="/resources/"><span>Free guides</span><p>Online guides to individual texts, passages, themes and historical contexts.</p></a>' +
   '<a href="/reading-routes/"><span>Cross-period reading lists</span><p>Book lists organised around home, freedom, fear, power, evidence, voice and knowledge.</p></a>' +
-  '<a href="/explore/quotations/"><span>Quotation explorer</span><p>Every quotation in the catalogue. Filter by book, theme, character or period.</p></a>' +
-  '<a href="/explore/timeline/"><span>Literature timeline</span><p>Every book on one scale, beside everything written at the same time.</p></a>' +
-  '<a href="/explore/characters/"><span>Character maps</span><p>Who is tied to whom, and how it changes act by act.</p></a>' +
+  '<a href="/explore/quotations/"><span>Quotation explorer</span><p>Every checked quotation. Search by word, or narrow by book, character, theme or technique.</p></a>' +
+  '<a href="/explore/timeline/"><span>Literature timeline</span><p>Every book in order of first publication, with its own dates and what else was happening.</p></a>' +
+  '<a href="/explore/characters/"><span>Character maps</span><p>How the characters in each book are linked, act by act or section by section.</p></a>' +
   '<a href="/explore/themes/"><span>Themes across the library</span><p>Themes the books share, set out book by book.</p></a>' +
   '<a href="/explore/techniques/"><span>Technique glossary</span><p>What each term means, with a line from a book using it.</p></a>' +
   '<a href="/explore/map/"><span>Map of settings</span><p>Where the books are set, from Inverness to Transylvania.</p></a>' +
@@ -1177,12 +1177,12 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
     ['/play/essay-forge/', 'Essay planner', 'Build a plan paragraph by paragraph'],
     ['/play/defend-the-reading/', 'Defend the reading', 'Argue a reading against the case on the other side'],
     ['/today/', 'Astor today', 'A passage, a book and five questions'],
-    ['/explore/quotations/', 'Quotation explorer', 'Every checked quotation, filterable'],
-    ['/explore/timeline/', 'Literature timeline', 'Each book against its historical moment'],
-    ['/explore/characters/', 'Character maps', 'Relationship diagrams, act by act'],
-    ['/explore/themes/', 'Themes across the library', 'One idea, handled many ways'],
-    ['/explore/techniques/', 'Technique glossary', 'Terms with the evidence attached'],
-    ['/explore/map/', 'Map of settings', 'Where the books happen'],
+    ['/explore/quotations/', 'Quotation explorer', 'Search and filter every quotation'],
+    ['/explore/timeline/', 'Literature timeline', 'Every book in order, with its dates'],
+    ['/explore/characters/', 'Character maps', 'Who is linked to whom in each book'],
+    ['/explore/themes/', 'Themes across the library', 'Themes the books share'],
+    ['/explore/techniques/', 'Technique glossary', 'Literary terms, with examples'],
+    ['/explore/map/', 'Map of settings', 'Where the books are set'],
     ['/explore/compare/', 'Compare two texts', 'Shared themes and techniques side by side'],
     ['/my-library/', 'My library', 'Saved books, progress, streak and commonplace book'],
     ['/for-teachers/', 'For teachers', 'Lesson starters, worksheets and projector mode']

@@ -59,7 +59,7 @@ function runDeck(book) {
     const card = el('div', { class: 'astor-flashcard' });
     card.append(el('blockquote', {}, [el('p', { text: quotation.text })]));
     if (!turned) {
-      card.append(el('p', { class: 'astor-inline-note', text: 'Who says it, where does it come, and what is it doing?' }));
+      card.append(el('p', { class: 'astor-inline-note', text: 'Who says it, where does it come in the book, and what does it show?' }));
     } else {
       card.append(el('p', { class: 'astor-quote-attribution', text: (quotation.speaker ? quotation.speaker + ' · ' : '') + book.title + ' ' + quotation.reference }));
       card.append(el('p', { class: 'astor-flashcard-answer', text: quotation.analysis }));
@@ -119,7 +119,7 @@ function runDeck(book) {
     panel.append(el('p', {
       class: 'astor-game-end-note',
       text: summary.learned + ' of ' + summary.total + ' cards in ' + book.title +
-        ' have reached the later boxes. ' +
+        ' are in box 4 or 5. ' +
         (summary.due ? summary.due + ' are due again today.' : 'Nothing else is due today — come back tomorrow.')
     }));
     const row = el('div', { class: 'button-row' });

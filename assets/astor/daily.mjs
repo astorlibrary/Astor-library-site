@@ -23,7 +23,7 @@ async function start() {
     index = await loadIndex();
   } catch {
     strip.remove();
-    return emptyState(gameMount, 'Today’s material could not be loaded. The Passage Room has ninety close readings that need nothing but a browser.', [
+    return emptyState(gameMount, 'Today’s questions didn’t load. Try reloading the page, or read a close reading in the Passage Room.', [
       { href: '/passage-room/', label: 'Open the Passage Room' }
     ]);
   }
@@ -117,8 +117,8 @@ function renderDone(result, total, day) {
   panel.append(el('p', {
     class: 'astor-game-end-note',
     text: run.live && run.current
-      ? 'That is ' + run.current + ' day' + (run.current === 1 ? '' : 's') + ' in a row. A new five arrives at midnight.'
-      : 'A new five arrives at midnight.'
+      ? 'That is ' + run.current + ' day' + (run.current === 1 ? '' : 's') + ' in a row. New questions at midnight.'
+      : 'New questions at midnight.'
   }));
 
   const shareText = 'Astor Library — today’s questions, ' + day + '\n' + grid + ' ' + result.score + '/' + (result.total || total) + '\nhttps://astorlibrary.com/today/';

@@ -142,7 +142,7 @@ const GAMES = [
     slug: 'which-book',
     name: 'Which book?',
     scope: 'library',
-    blurb: 'One line, every Astor title. Name the book it comes from.',
+    blurb: 'One line from a book in the library. Name the book it comes from.',
     deck: 'One line from anywhere in the library. Name the book.',
     why: 'Reading across titles is how a reader stops treating each book as a separate examination and starts hearing a period.'
   },
@@ -181,11 +181,11 @@ function buildPages() {
     module: 'play-hub.mjs',
     intro: `  <section class="astor-dash-grid" id="astor-play-stats" aria-label="Your revision"></section>
   <div class="astor-chooser" id="astor-play-chooser"></div>`,
-    mount: `  <section class="section-title" id="single-book"><p class="kicker">One book at a time</p><h2>Games that take a single title.</h2><p>Choose a book above and these six will draw every question from it.</p></section>
+    mount: `  <section class="section-title" id="single-book"><p class="kicker">One book at a time</p><h2>Single-book games.</h2><p>Every question comes from the book chosen above.</p></section>
   <div class="astor-play-grid" id="astor-play-book-games"></div>
-  <section class="section-title" id="whole-library"><p class="kicker">Across the whole library</p><h2>Games that range over everything.</h2><p>These three mix titles, periods and forms, which is harder and considerably more useful.</p></section>
+  <section class="section-title" id="whole-library"><p class="kicker">Across the whole library</p><h2>Whole-library games.</h2><p>Questions are drawn from books across the library.</p></section>
   <div class="astor-play-grid" id="astor-play-library-games"></div>
-  <section class="section-title" id="tools"><p class="kicker">Longer work</p><h2>Not a game, but not reading either.</h2><p>Three tools for the part of revision that a quiz cannot reach: memorising, planning and arguing.</p></section>
+  <section class="section-title" id="tools"><p class="kicker">Longer work</p><h2>Flashcards and essay tools.</h2><p>Learn quotations by heart, plan an essay, or argue for and against a reading.</p></section>
   <div class="astor-play-grid" id="astor-play-tools"></div>`,
     fallback: 'The games need JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
     tail: '',
@@ -206,7 +206,7 @@ function buildPages() {
       intro: game.scope === 'book' ? '  <div class="astor-chooser" id="astor-game-chooser"></div>' : '',
       mount: `  <div class="astor-game" id="astor-game" data-game="${escapeHtml(game.slug)}" data-scope="${game.scope}"></div>`,
       fallback: 'This game needs JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
-      tail: '  <p class="astor-inline-note">Keyboard: number keys answer, Enter checks and moves on, R restarts.</p>',
+      tail: '  <p class="astor-inline-note">Keyboard: 1 picks A, 2 picks B and so on. Enter checks and moves on. R restarts.</p>',
       links: [{ href: '/play/', label: 'All games' }, { href: '/today/', label: 'Today' }]
     }));
   }
@@ -215,7 +215,7 @@ function buildPages() {
   written.push(page({
     dir: 'play/flashcards',
     title: 'Flashcards | Astor Library',
-    description: 'Flashcards for every Astor Library title, set so the lines you keep forgetting come back sooner.',
+    description: 'Flashcards for the quotations in each Astor Library study guide, set so the lines you keep forgetting come back sooner.',
     kicker: 'Flashcards',
     heading: 'Flashcards.',
     deck: 'A deck for each book. Cards you get wrong come back sooner.',
@@ -236,7 +236,7 @@ function buildPages() {
     kicker: 'Planning tool',
     heading: 'Essay planner.',
     deck: 'Choose a question and build the plan paragraph by paragraph.',
-    breadcrumb: '<a href="/play/">Play &amp; revise</a><span aria-hidden="true">/</span><span aria-current="page">Essay forge</span>',
+    breadcrumb: '<a href="/play/">Play &amp; revise</a><span aria-hidden="true">/</span><span aria-current="page">Essay planner</span>',
     module: 'essay-forge.mjs',
     intro: '  <div class="astor-chooser" id="astor-essay-chooser"></div>',
     mount: '  <div id="astor-essay-forge"></div>',
@@ -252,7 +252,7 @@ function buildPages() {
     description: 'Argue for a reading of a book, then read the strongest case against it, with quotations for both sides.',
     kicker: 'Argument tool',
     heading: 'Defend the reading.',
-    deck: 'Pick a side, gather your evidence, then read the case against it.',
+    deck: 'Take a side on a reading of the book, choose quotations to support it, then answer the objection.',
     breadcrumb: '<a href="/play/">Play &amp; revise</a><span aria-hidden="true">/</span><span aria-current="page">Defend the reading</span>',
     module: 'defend.mjs',
     intro: '  <div class="astor-chooser" id="astor-defend-chooser"></div>',
@@ -274,7 +274,7 @@ function buildPages() {
     module: 'daily.mjs',
     intro: '  <div class="astor-daily-strip" id="astor-daily-strip"></div>',
     mount: '  <div class="astor-game" id="astor-daily-game"></div>',
-    fallback: 'Today’s questions need JavaScript. The <a href="/passage-room/">Passage Room</a> needs nothing but a browser.',
+    fallback: 'Today’s questions need JavaScript. The close readings in the <a href="/passage-room/">Passage Room</a> work without it.',
     tail: '  <p class="astor-inline-note">Everyone gets the same five questions each day.</p>',
     links: [{ href: '/play/', label: 'All games' }, { href: '/my-library/', label: 'My library' }]
   }));
@@ -283,15 +283,16 @@ function buildPages() {
   written.push(page({
     dir: 'explore/quotations',
     title: 'Quotation explorer | Astor Library',
-    description: 'Search every quotation in the Astor Library catalogue by book, theme, character, technique or period.',
+    description: 'Search every quotation in the Astor Library study guides by word or speaker, or narrow them by book, character, theme, technique or period.',
     kicker: 'Explore',
     heading: 'Every quotation.',
-    deck: 'Search the whole library. Filter by book, theme, character or period.',
+    deck: 'Every quotation in the study guides, each checked word for word against its source text. Search by word or speaker, or narrow by book, character, theme or technique.',
     breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Quotations</span>',
-    module: 'quotations.mjs',
-    mount: `  <div class="astor-explorer-layout">
-    <form class="astor-explorer-filters" id="astor-quote-filters" aria-label="Filter quotations"></form>
-    <div><p class="astor-explorer-count" id="astor-quote-count">Loading quotations&hellip;</p><div class="astor-quote-list" id="astor-quote-results"></div></div>
+    module: 'quotation-explorer.mjs',
+    mount: `  <div class="astor-qx">
+    <form class="astor-qx-controls" id="astor-quote-filters" aria-label="Filter quotations"></form>
+    <p class="astor-explorer-count" id="astor-quote-count" aria-live="polite">Loading quotations&hellip;</p>
+    <div id="astor-quote-results"></div>
   </div>`,
     fallback: 'This needs JavaScript. Every quotation is also on its own book page.',
     links: [{ href: '/explore/techniques/', label: 'Technique glossary' }, { href: '/play/', label: 'Play &amp; revise' }]
@@ -301,15 +302,15 @@ function buildPages() {
   written.push(page({
     dir: 'explore/timeline',
     title: 'Literature timeline | Astor Library',
-    description: 'A timeline of every Astor Library title: when it was written, published and first performed.',
+    description: 'Every book with an Astor Library study guide, in order of first publication, with the dates around each one: when it was written and performed, the history it came out of, and what happened to it afterwards.',
     kicker: 'Explore',
-    heading: 'The books against their moment.',
-    deck: 'Every book on one scale. Filter by period or kind of event.',
+    heading: 'When each book appeared.',
+    deck: 'Every book with a study guide, in order of first publication. Open a book to see its own dates, or switch to every date to see what else was happening at the time.',
     breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Timeline</span>',
-    module: 'timeline.mjs',
-    mount: `  <div id="astor-timeline-controls" class="astor-chooser"></div>
-  <div class="astor-timeline" id="astor-timeline"></div>
-  <div class="astor-timeline-detail" id="astor-timeline-detail" hidden></div>`,
+    module: 'chronology.mjs',
+    mount: `  <div id="astor-timeline-controls" class="astor-tl-controls"></div>
+  <nav class="astor-tl-jump" id="astor-timeline-jump" aria-label="Jump to a century" hidden></nav>
+  <div class="astor-tl" id="astor-timeline"><p class="astor-tl-summary">Loading the timeline&hellip;</p></div>`,
     fallback: 'The timeline needs JavaScript. Each book page has its own dates under “The book in its moment”.',
     links: [{ href: '/explore/map/', label: 'Map of settings' }, { href: '/classic-literature/', label: 'Periods' }]
   }));
@@ -318,10 +319,10 @@ function buildPages() {
   written.push(page({
     dir: 'explore/characters',
     title: 'Character maps | Astor Library',
-    description: 'Character maps for every Astor Library title, showing how the connections change act by act.',
+    description: 'Character maps for each Astor Library study guide, showing how the connections change act by act or section by section.',
     kicker: 'Explore',
-    heading: 'Who is connected to whom, and when.',
-    deck: 'Who is tied to whom, and how it changes act by act.',
+    heading: 'Character maps.',
+    deck: 'Pick a book to see how its characters are linked, then choose an act or section to see who is connected at that point.',
     breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Character maps</span>',
     module: 'characters.mjs',
     intro: '  <div class="astor-chooser" id="astor-character-chooser"></div>',
@@ -338,8 +339,8 @@ function buildPages() {
     title: 'Themes across the library | Astor Library',
     description: 'Every theme in the Astor Library catalogue, book by book, with the quotations that carry it.',
     kicker: 'Explore',
-    heading: 'One idea, handled many ways.',
-    deck: 'Themes the books share, set out book by book.',
+    heading: 'Themes across the library.',
+    deck: 'Search for a theme or a book. Each theme lists the books that deal with it, with a quotation from each.',
     breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Themes</span>',
     module: 'themes.mjs',
     mount: `  <div class="astor-chooser" id="astor-theme-search"></div>
@@ -354,7 +355,7 @@ function buildPages() {
     title: 'Technique glossary | Astor Library',
     description: 'A glossary of literary techniques, each explained and shown at work in a line from a book.',
     kicker: 'Explore',
-    heading: 'Literary terms, with the evidence attached.',
+    heading: 'Technique glossary.',
     deck: 'What each term means, with a line from a book using it.',
     breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Technique glossary</span>',
     module: 'techniques.mjs',
@@ -370,8 +371,8 @@ function buildPages() {
     title: 'Map of settings | Astor Library',
     description: 'Where the books are set: an interactive map of the places in the Astor Library catalogue, with what happens at each.',
     kicker: 'Explore',
-    heading: 'Where the books happen.',
-    deck: 'Where the books are set. Pick a book, or zoom in.',
+    heading: 'Map of settings.',
+    deck: 'The places where the books are set, on one map. Choose a book or a region to narrow it down.',
     breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Map of settings</span>',
     module: 'map.mjs',
     intro: '  <div class="astor-chooser" id="astor-map-controls"></div>',
@@ -388,8 +389,8 @@ function buildPages() {
     title: 'Compare two texts | Astor Library',
     description: 'Put two Astor Library titles side by side: shared themes and techniques, and paired quotations.',
     kicker: 'Explore',
-    heading: 'Two books, side by side.',
-    deck: 'Two books side by side: shared themes, techniques and paired quotations.',
+    heading: 'Compare two books.',
+    deck: 'Choose two books to see the themes and techniques they share, with a quotation from each book for every shared theme.',
     breadcrumb: '<a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Compare</span>',
     module: 'compare.mjs',
     intro: '  <div class="astor-chooser" id="astor-compare-chooser"></div>',
@@ -404,11 +405,11 @@ function buildPages() {
     title: 'Offline | Astor Library',
     description: 'What Astor Library keeps on your device for reading and revising without a connection.',
     kicker: 'Offline',
-    heading: 'No connection, but not nothing.',
-    deck: 'What this device has saved for reading without a signal.',
+    heading: 'Saved for offline reading.',
+    deck: 'These pages are saved on this device and open without a connection.',
     breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Offline</span>',
     module: 'offline.mjs',
-    mount: '  <div id="astor-offline-list"><p class="astor-inline-note">Looking at what is kept here\u2026</p></div>',
+    mount: '  <div id="astor-offline-list"><p class="astor-inline-note">Checking what is saved\u2026</p></div>',
     fallback: 'This page lists what your browser has kept, which needs JavaScript.',
     links: [{ href: '/play/', label: 'Play &amp; revise' }, { href: '/my-library/', label: 'My library' }]
   }));
@@ -420,15 +421,15 @@ function buildPages() {
     description: 'Your saved books, recent pages, reading progress, scores and kept quotations, all in your browser.',
     kicker: 'My library',
     heading: 'What you have been reading.',
-    deck: 'Your saved books, reading progress, scores and kept quotations. Saved in this browser.',
+    deck: 'Your saved books, reading progress, scores and kept quotations, all stored in this browser.',
     breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">My library</span>',
     module: 'my-library.mjs',
     mount: `  <section class="astor-dash-grid" id="astor-dash" aria-label="Your reading at a glance"></section>
   <section class="section-title" id="saved"><p class="kicker">Saved</p><h2>Books you have kept.</h2><p>Saved from any book page with the button in the study toolkit.</p></section>
   <div id="astor-saved"></div>
-  <section class="section-title" id="progress"><p class="kicker">Progress</p><h2>How far through.</h2><p>What you have ticked off, act by act.</p></section>
+  <section class="section-title" id="progress"><p class="kicker">Progress</p><h2>Reading progress.</h2><p>The acts and sections you have marked as read.</p></section>
   <div id="astor-progress"></div>
-  <section class="section-title" id="recent"><p class="kicker">Recently viewed</p><h2>Where you have been.</h2><p>The last pages you opened on this device.</p></section>
+  <section class="section-title" id="recent"><p class="kicker">Recently viewed</p><h2>Recent pages.</h2><p>The last pages you opened on this device.</p></section>
   <div id="astor-recent"></div>
   <section class="section-title" id="commonplace"><p class="kicker">Commonplace book</p><h2>Quotations you have kept.</h2><p>Add a note to any of them. The whole book exports as plain text.</p></section>
   <div id="astor-commonplace"></div>
@@ -437,8 +438,8 @@ function buildPages() {
   <section class="section-title" id="scores"><p class="kicker">Revision</p><h2>Scores and streak.</h2><p>Best results by game, and the run of days you have played.</p></section>
   <div id="astor-scores"></div>`,
     fallback: 'This page needs JavaScript to read what your browser has saved.',
-    tail: `  <section class="section-title" id="data"><p class="kicker">Your data</p><h2>Your data.</h2></section>
-  <p class="deck">Everything here is saved in this browser. Download it or clear it below.</p>
+    tail: `  <section class="section-title" id="data"><p class="kicker">Your data</p><h2>Download or clear your data.</h2></section>
+  <p class="deck">Everything here is saved in this browser only.</p>
   <div class="button-row" id="astor-data-controls"></div>`,
     links: [{ href: '/play/', label: 'Play &amp; revise' }, { href: '/today/', label: 'Today' }]
   }));
@@ -449,8 +450,8 @@ function buildPages() {
     title: 'For teachers | Astor Library',
     description: 'Lesson starters, printable worksheets, discussion questions and a projector mode, free to use in class.',
     kicker: 'For teachers',
-    heading: 'Material you can take into a room.',
-    deck: 'Lesson starters, printable worksheets and a projector mode.',
+    heading: 'Worksheets and lesson starters.',
+    deck: 'Choose a book, then print a worksheet or show its quotations and questions in projector mode.',
     breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">For teachers</span>',
     module: 'teachers.mjs',
     intro: '  <div class="astor-chooser" id="astor-teacher-chooser"></div>',

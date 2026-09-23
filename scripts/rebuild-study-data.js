@@ -128,6 +128,26 @@ const index = {
 
 fs.writeFileSync(outputFile, JSON.stringify(index, null, 2) + '\n');
 
+// The quotation explorer and the timeline each need one slice of that index.
+// The whole of it is nearly six megabytes, which on a phone is a long wait
+// before the first quotation or date appears, so each gets its own file.
+const slim = (book, extra) => ({
+  slug: book.slug, title: book.title, author: book.author, href: book.href,
+  period: book.period, form: book.form, firstPublished: book.firstPublished, ...extra
+});
+const names = list => list.map(({ id, name, canonicalName }) => ({ id, name, canonicalName }));
+fs.writeFileSync(path.join(root, 'assets', 'quotation-index.json'), JSON.stringify({
+  books: entries.map(book => slim(book, {
+    themes: names(book.themes),
+    techniques: names(book.techniques),
+    characters: book.characters.map(({ id, name }) => ({ id, name })),
+    quotations: book.quotations.map(({ cloze, source, ...quotation }) => quotation)
+  }))
+}) + '\n');
+fs.writeFileSync(path.join(root, 'assets', 'timeline-index.json'), JSON.stringify({
+  books: entries.map(book => slim(book, { written: book.written, timeline: book.timeline }))
+}) + '\n');
+
 // --- the search palette's index -------------------------------------------
 //
 // The palette opens over whatever page a reader is on, so it loads a small
@@ -186,10 +206,10 @@ for (const tool of [
   ['Tool', 'Play and revise', '/play/', 'Every revision game in one place', 'play games revise quiz revision'],
   ['Tool', 'Today’s questions', '/today/', "A passage, a book and five questions", 'daily puzzle today streak'],
   ['Tool', 'Quotation explorer', '/explore/quotations/', 'Filter every quotation by theme, character and technique', 'quotations explorer filter'],
-  ['Tool', 'Literature timeline', '/explore/timeline/', 'Every Astor title against its historical moment', 'timeline history dates'],
-  ['Tool', 'Character maps', '/explore/characters/', 'Relationship diagrams that change act by act', 'characters relationships map diagram'],
+  ['Tool', 'Literature timeline', '/explore/timeline/', 'Every book in order, with its dates', 'timeline history dates'],
+  ['Tool', 'Character maps', '/explore/characters/', 'Who is linked to whom in each book', 'characters relationships map diagram'],
   ['Tool', 'Themes across the library', '/explore/themes/', 'Each shared theme, book by book', 'themes theme explorer compare'],
-  ['Tool', 'Technique glossary', '/explore/techniques/', 'Literary terms with live examples from the texts', 'technique glossary terms devices'],
+  ['Tool', 'Technique glossary', '/explore/techniques/', 'Literary terms, with examples from the books', 'technique glossary terms devices'],
   ['Tool', 'Map of settings', '/explore/map/', 'Where the books take place', 'map places settings geography'],
   ['Tool', 'Compare two texts', '/explore/compare/', 'Shared themes and techniques, side by side', 'compare comparative essay two texts'],
   ['Tool', 'My library', '/my-library/', 'Saved books, progress, streak and commonplace book', 'my library saved progress streak commonplace'],

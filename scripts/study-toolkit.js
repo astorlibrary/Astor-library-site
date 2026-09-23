@@ -232,7 +232,7 @@ function contextPanel(book) {
   return '<section class="astor-panel" id="astor-context" data-panel="Context">' +
     '<h3>Background</h3>' +
     '<p class="astor-panel-note">Key dates and how the book has been read. ' +
-    'See other books on the <a href="/explore/timeline/">library timeline</a>.</p>' +
+    'See them among the other books on the <a href="/explore/timeline/?view=events&amp;mark=' + escapeHtml(book.slug) + '">library timeline</a>.</p>' +
     timeline + views + places +
     '</section>';
 }

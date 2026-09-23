@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quotation explorer | Astor Library</title>
-  <meta name="description" content="Search every quotation in the Astor Library catalogue by book, theme, character, technique or period.">
+  <meta name="description" content="Search every quotation in the Astor Library study guides by word or speaker, or narrow them by book, character, theme, technique or period.">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/astor-study.css">
-  <script type="module" src="/assets/astor/quotations.mjs"></script>
+  <script type="module" src="/assets/astor/quotation-explorer.mjs"></script>
 </head>
 <body>
 <header class="site-header">
@@ -17,12 +17,13 @@
 <main id="main-content" class="page-wrap">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Quotations</span></nav>
   <section class="page-intro">
-    <div><p class="kicker">Explore</p><h1>Every quotation.</h1><p class="deck">Search the whole library. Filter by book, theme, character or period.</p></div>
+    <div><p class="kicker">Explore</p><h1>Every quotation.</h1><p class="deck">Every quotation in the study guides, each checked word for word against its source text. Search by word or speaker, or narrow by book, character, theme or technique.</p></div>
   </section>
 
-  <div class="astor-explorer-layout">
-    <form class="astor-explorer-filters" id="astor-quote-filters" aria-label="Filter quotations"></form>
-    <div><p class="astor-explorer-count" id="astor-quote-count">Loading quotations&hellip;</p><div class="astor-quote-list" id="astor-quote-results"></div></div>
+  <div class="astor-qx">
+    <form class="astor-qx-controls" id="astor-quote-filters" aria-label="Filter quotations"></form>
+    <p class="astor-explorer-count" id="astor-quote-count" aria-live="polite">Loading quotations&hellip;</p>
+    <div id="astor-quote-results"></div>
   </div>
 <noscript><div class="astor-empty">This needs JavaScript. Every quotation is also on its own book page.</div></noscript>
 

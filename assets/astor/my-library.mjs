@@ -261,6 +261,7 @@ function gameName(gameId) {
     'which-book': 'Which book?',
     'context-sprint': 'Context sprint',
     'opening-lines': 'Opening lines',
+    'mixed-round': 'Mixed round',
     daily: 'Today’s questions'
   })[gameId] || gameId;
 }

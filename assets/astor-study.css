@@ -1678,3 +1678,123 @@
 @supports not (color: color-mix(in srgb, red 50%, blue)) {
   .astor-toolkit .astor-quote-card { border-left-color: var(--astor-accent, var(--burgundy)); }
 }
+
+/* ------------------------------------------------------- quotation explorer
+   One search box and six drop-downs above one column of quotations. The
+   drop-downs count what is left under the other filters, so there is no
+   choice that leads to an empty page. */
+.astor-qx { margin: 0 0 64px; }
+.astor-qx-controls { margin: 0 0 20px; padding: 0 0 22px; border-bottom: 1px solid var(--astor-line); }
+.astor-qx-search label,
+.astor-qx-field label { display: block; margin: 0 0 6px; font: 700 11px/1.2 var(--astor-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.astor-qx-search input { width: 100%; box-sizing: border-box; min-height: 48px; padding: 0 14px; border: 1px solid var(--astor-line-strong); background: #fffdfa; font: 16px var(--astor-sans); color: var(--ink); }
+.astor-qx-selects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 16px; margin-top: 16px; }
+.astor-qx-field[hidden] { display: none; }
+.astor-qx-field select { width: 100%; min-height: 42px; padding: 0 10px; border: 1px solid var(--astor-line-strong); background: #fffdfa; font: 14px var(--astor-sans); color: var(--ink); }
+.astor-qx-field.is-set select { border-color: var(--burgundy); box-shadow: inset 3px 0 0 var(--burgundy); }
+.astor-qx-search input:focus,
+.astor-qx-field select:focus { outline: 2px solid var(--burgundy); outline-offset: 1px; }
+.astor-qx .astor-chip { background: none; color: var(--burgundy); font-weight: 700; letter-spacing: 0; font-size: 13px; }
+.astor-qx .astor-chip:hover { background: var(--burgundy); color: #fff8ef; }
+.astor-qx-clear { appearance: none; border: 0; background: none; padding: 0 4px; min-height: 32px; font: 700 13px var(--astor-sans); color: var(--muted); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.astor-qx-list { display: grid; }
+.astor-qx-card { padding: 26px 0; border-top: 1px solid var(--astor-line); }
+.astor-qx-card:first-child { border-top: 0; padding-top: 4px; }
+.astor-qx-card blockquote { margin: 0 0 10px; }
+.astor-qx-card blockquote p { margin: 0; max-width: 42em; font-family: Georgia, 'Times New Roman', serif; font-size: 21px; line-height: 1.45; color: var(--ink); }
+.astor-qx-source { margin: 0 0 12px; font: 700 12px/1.5 var(--astor-sans); letter-spacing: .03em; color: var(--burgundy); }
+.astor-qx-context { margin: 0 0 6px; max-width: 46em; font: italic 14px/1.55 var(--astor-sans); color: var(--muted); }
+.astor-qx-analysis { margin: 0 0 12px; max-width: 46em; font: 15px/1.65 var(--astor-sans); color: #3f3833; }
+.astor-qx-tags p { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; margin: 0 0 6px; }
+.astor-qx-tags span { margin-right: 2px; font: 700 11px var(--astor-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.astor-qx-tag { appearance: none; border: 0; border-bottom: 1px solid var(--astor-line-strong); background: none; padding: 0 0 1px; font: 13px var(--astor-sans); color: var(--ink); cursor: pointer; }
+.astor-qx-tag:hover,
+.astor-qx-tag[aria-pressed="true"] { color: var(--burgundy); border-color: var(--burgundy); }
+.astor-qx-links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 12px 0 0; font: 700 13px var(--astor-sans); }
+.astor-qx-links a { color: var(--burgundy); }
+.astor-qx-keep { appearance: none; border: 0; background: none; padding: 0; font: inherit; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.astor-qx-keep[aria-pressed="true"] { color: var(--astor-green); }
+@media (max-width: 760px) {
+  .astor-qx-selects { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .astor-qx-card blockquote p { font-size: 19px; }
+}
+
+/* A quotation reached from the explorer is marked on its book page. */
+.astor-quote-card.is-target { background: color-mix(in srgb, var(--gold) 13%, transparent); box-shadow: 0 0 0 10px color-mix(in srgb, var(--gold) 13%, transparent); }
+
+/* ------------------------------------------------------------ timeline list
+   A column you read down: centuries as headings, the year on the left, and
+   everything that happened in that year beside it, in full. */
+.astor-tl-controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px 28px; margin: 0 0 18px; padding: 0 0 20px; border-bottom: 1px solid var(--astor-line); }
+.astor-tl-views { display: inline-flex; border: 1px solid var(--burgundy); }
+.astor-tl-view { appearance: none; border: 0; background: none; min-height: 42px; padding: 0 18px; font: 700 14px var(--astor-sans); color: var(--burgundy); cursor: pointer; }
+.astor-tl-view + .astor-tl-view { border-left: 1px solid var(--burgundy); }
+.astor-tl-view[aria-pressed="true"] { background: var(--burgundy); color: #fff8ef; }
+.astor-tl-fields { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px 20px; }
+.astor-tl-field label,
+.astor-tl-kinds legend { display: block; margin: 0 0 6px; padding: 0; font: 700 11px/1.2 var(--astor-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.astor-tl-field select { min-width: 210px; max-width: 100%; min-height: 42px; padding: 0 10px; border: 1px solid var(--astor-line-strong); background: #fffdfa; font: 14px var(--astor-sans); color: var(--ink); }
+.astor-tl-field select:focus { outline: 2px solid var(--burgundy); outline-offset: 1px; }
+.astor-tl-kinds { margin: 0; padding: 0; border: 0; }
+.astor-tl-kind { display: inline-flex; align-items: center; gap: 7px; min-height: 42px; margin-right: 18px; font: 14px var(--astor-sans); color: var(--ink); cursor: pointer; }
+.astor-tl-kind input { width: 16px; height: 16px; margin: 0; accent-color: var(--burgundy); }
+[data-kind="work"] { --kind: var(--burgundy); }
+[data-kind="author"] { --kind: var(--astor-green); }
+[data-kind="context"] { --kind: var(--navy); }
+[data-kind="reception"] { --kind: #8a6528; }
+.astor-tl-kind span::before,
+.astor-tl-kind-name::before { content: ''; display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 50%; background: var(--kind, var(--muted)); vertical-align: 1px; }
+.astor-tl-jump { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; margin: 0 0 6px; font: 14px var(--astor-sans); }
+.astor-tl-jump[hidden] { display: none; }
+.astor-tl-jump > span { font: 700 11px var(--astor-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.astor-tl-jump a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--astor-line-strong); }
+.astor-tl-jump a:hover { color: var(--burgundy); border-color: var(--burgundy); }
+.astor-tl-jump small { margin-left: 5px; font-size: 11px; color: var(--muted); }
+.astor-tl { margin: 0 0 64px; }
+.astor-tl-summary { margin: 14px 0 6px; font: 14px/1.55 var(--astor-sans); color: var(--muted); }
+.astor-tl-unmark { appearance: none; border: 0; background: none; padding: 0; font: inherit; color: var(--burgundy); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.astor-tl-century { scroll-margin-top: 110px; }
+.astor-tl-century h2 { margin: 40px 0 0; padding: 0 0 10px; border-bottom: 1px solid var(--astor-line-strong); font-size: clamp(26px, 3vw, 34px); line-height: 1.1; letter-spacing: -.02em; }
+.astor-tl-years { margin: 0; padding: 0; list-style: none; }
+.astor-tl-year { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 0 22px; padding: 16px 0; border-bottom: 1px solid var(--astor-line); }
+.astor-tl-date { font-family: Georgia, 'Times New Roman', serif; font-size: 20px; line-height: 1.3; font-variant-numeric: lining-nums tabular-nums; color: var(--ink); }
+.astor-tl-entries { display: grid; gap: 16px; margin: 0; padding: 0; list-style: none; }
+.astor-tl-title { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 20px; line-height: 1.3; }
+.astor-tl-title a { color: var(--ink); text-decoration: none; }
+.astor-tl-title a:hover { color: var(--burgundy); text-decoration: underline; text-underline-offset: 3px; }
+.astor-tl-meta { margin: 3px 0 0; font: 13px/1.5 var(--astor-sans); color: var(--muted); }
+.astor-tl-toggle { appearance: none; border: 0; background: none; margin: 6px 0 0; padding: 4px 0; font: 700 13px var(--astor-sans); color: var(--burgundy); cursor: pointer; }
+.astor-tl-toggle::before { content: '+'; display: inline-block; width: 14px; }
+.astor-tl-toggle[aria-expanded="true"]::before { content: '\2212'; }
+.astor-tl-dates { margin: 10px 0 4px; padding: 2px 0 2px 16px; border-left: 2px solid var(--astor-line-strong); }
+.astor-tl-dates[hidden] { display: none; }
+.astor-tl-written { margin: 0 0 12px; max-width: 44em; font: 14px/1.55 var(--astor-sans); color: #3f3833; }
+.astor-tl-written span { font-weight: 700; }
+.astor-tl-own { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.astor-tl-own li { display: grid; grid-template-columns: 60px minmax(0, 1fr); gap: 0 14px; }
+.astor-tl-own .astor-tl-date { font: 700 14px/1.45 var(--astor-sans); color: var(--muted); }
+.astor-tl-label { margin: 0; font: 600 15px/1.45 var(--astor-sans); color: var(--ink); }
+.astor-tl-kind-name { margin-left: 10px; font: 700 10px var(--astor-sans); letter-spacing: .09em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.astor-tl-meta .astor-tl-kind-name { margin-left: 12px; }
+.astor-tl-detail { margin: 3px 0 0; max-width: 44em; font: 14px/1.55 var(--astor-sans); color: #4a423c; }
+.astor-tl-more { margin: 14px 0 0; font: 700 13px var(--astor-sans); }
+.astor-tl-more a { color: var(--burgundy); }
+.astor-tl-event .astor-tl-label { font: 17px/1.4 Georgia, 'Times New Roman', serif; color: var(--ink); }
+.astor-tl-event .astor-tl-meta a { color: var(--burgundy); font-weight: 700; text-decoration: none; }
+.astor-tl-event .astor-tl-meta a:hover { text-decoration: underline; }
+.astor-tl-event.is-marked { margin-left: -14px; padding: 6px 0 6px 11px; border-left: 3px solid var(--burgundy); background: color-mix(in srgb, var(--gold) 10%, transparent); }
+@media (max-width: 620px) {
+  .astor-tl-controls { display: block; }
+  .astor-tl-views { display: flex; margin-bottom: 16px; }
+  .astor-tl-view { flex: 1 1 0; }
+  .astor-tl-fields { display: grid; gap: 14px; }
+  .astor-tl-field select { width: 100%; min-width: 0; }
+  .astor-tl-year { grid-template-columns: 54px minmax(0, 1fr); gap: 0 12px; }
+  .astor-tl-date { font-size: 17px; }
+  .astor-tl-title { font-size: 18px; }
+  .astor-tl-dates { padding-left: 12px; }
+  .astor-tl-own li { grid-template-columns: 46px minmax(0, 1fr); gap: 0 10px; }
+  .astor-tl-kind-name { display: block; margin: 2px 0 0; }
+  .astor-tl-meta .astor-tl-kind-name { display: inline-block; margin-left: 10px; }
+  .astor-tl-event.is-marked { margin-left: -10px; padding-left: 7px; }
+}

@@ -1078,7 +1078,7 @@ function addGlobalNavigation(html, source) {
         <div class="astor-browse-panel" id="astor-browse-panel">
           <div class="astor-browse-feature">
             <p>Open the catalogue</p>
-            <h2>Find a book, writer or way into the text.</h2>
+            <h2>Find a book, a writer or a study tool.</h2>
             <span>Move through Astor Library by literary period, subject, author or a connected reading route.</span>
             <a href="/explore/">Search every title <i aria-hidden="true">&rarr;</i></a>
           </div>
@@ -1097,12 +1097,12 @@ function addGlobalNavigation(html, source) {
             <section aria-labelledby="astor-tools-title">
               <h2 id="astor-tools-title">Study tools</h2>
               <div class="astor-browse-cards">
-                <a href="/explore/quotations/"${current(href === '/explore/quotations/')}><em aria-hidden="true">01</em><span><b>Quotation explorer</b><small>Every checked quotation, filterable</small></span></a>
-                <a href="/explore/timeline/"${current(href === '/explore/timeline/')}><em aria-hidden="true">02</em><span><b>Timeline</b><small>The books against their moment</small></span></a>
-                <a href="/explore/characters/"${current(href === '/explore/characters/')}><em aria-hidden="true">03</em><span><b>Character maps</b><small>Relationships, act by act</small></span></a>
-                <a href="/explore/themes/"${current(href === '/explore/themes/')}><em aria-hidden="true">04</em><span><b>Themes</b><small>One idea, handled many ways</small></span></a>
-                <a href="/explore/techniques/"${current(href === '/explore/techniques/')}><em aria-hidden="true">05</em><span><b>Technique glossary</b><small>Terms with the evidence attached</small></span></a>
-                <a href="/explore/map/"${current(href === '/explore/map/')}><em aria-hidden="true">06</em><span><b>Map of settings</b><small>Where the books happen</small></span></a>
+                <a href="/explore/quotations/"${current(href === '/explore/quotations/')}><em aria-hidden="true">01</em><span><b>Quotation explorer</b><small>Search and filter every quotation</small></span></a>
+                <a href="/explore/timeline/"${current(href === '/explore/timeline/')}><em aria-hidden="true">02</em><span><b>Timeline</b><small>Every book in order, with its dates</small></span></a>
+                <a href="/explore/characters/"${current(href === '/explore/characters/')}><em aria-hidden="true">03</em><span><b>Character maps</b><small>Who is linked to whom in each book</small></span></a>
+                <a href="/explore/themes/"${current(href === '/explore/themes/')}><em aria-hidden="true">04</em><span><b>Themes</b><small>Themes the books share</small></span></a>
+                <a href="/explore/techniques/"${current(href === '/explore/techniques/')}><em aria-hidden="true">05</em><span><b>Technique glossary</b><small>Literary terms, with examples</small></span></a>
+                <a href="/explore/map/"${current(href === '/explore/map/')}><em aria-hidden="true">06</em><span><b>Map of settings</b><small>Where the books are set</small></span></a>
                 <a href="/explore/compare/"${current(href === '/explore/compare/')}><em aria-hidden="true">07</em><span><b>Compare two texts</b><small>Shared themes, side by side</small></span></a>
                 <a href="/for-teachers/"${current(teachersCurrent)}><em aria-hidden="true">08</em><span><b>For teachers</b><small>Starters, worksheets, projector mode</small></span></a>
               </div>

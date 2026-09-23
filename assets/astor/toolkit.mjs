@@ -73,7 +73,7 @@ function setUpTabs(root, live) {
     });
   });
 
-  function show(index, focus) {
+  function show(index, focus, keepAddress) {
     tabs.forEach((tab, position) => {
       const selected = position === index;
       tab.setAttribute('aria-selected', String(selected));
@@ -84,25 +84,47 @@ function setUpTabs(root, live) {
     embedPlaces(panels[index]);
     if (focus) tabs[index].focus();
     const hash = '#' + panels[index].id;
-    if (window.history.replaceState) window.history.replaceState(null, '', hash);
+    if (!keepAddress && window.history.replaceState) window.history.replaceState(null, '', hash);
     announce(live, panels[index].querySelector('h3')?.textContent || '');
   }
 
   // Arriving on /books/macbeth/#astor-quotations should open that section, and
   // so should a jump from the search palette while the page is already open.
+  // A link to one quotation (the quotation explorer sends these) keeps its own
+  // address: rewriting it to the panel's would send the page's load-time
+  // scroll to the top of the panel instead of the quotation.
   function openFromHash() {
-    const target = window.location.hash.slice(1);
+    let target;
+    try { target = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
     if (!target) return;
     const direct = panels.findIndex(panel => panel.id === target);
     if (direct >= 0) return show(direct, false);
     const owner = panels.findIndex(panel => panel.querySelector('#' + CSS.escape(target)));
     if (owner >= 0) {
-      show(owner, false);
-      document.getElementById(target)?.scrollIntoView({ block: 'center' });
+      show(owner, false, true);
+      settleOn(document.getElementById(target));
     }
   }
   openFromHash();
   window.addEventListener('hashchange', openFromHash);
+}
+
+// The page is still growing when the toolkit first draws (folds close, the
+// related shelf moves down, images arrive), so one scroll lands in the wrong
+// place. Scroll now, again once everything has loaded, and once more a moment
+// later, unless the reader has started scrolling for themselves.
+function settleOn(node) {
+  if (!node) return;
+  node.classList.add('is-target');
+  let moved = false;
+  const stop = () => { moved = true; };
+  window.addEventListener('wheel', stop, { once: true, passive: true });
+  window.addEventListener('touchmove', stop, { once: true, passive: true });
+  window.addEventListener('keydown', stop, { once: true });
+  const go = () => { if (!moved) node.scrollIntoView({ block: 'center', behavior: 'instant' }); };
+  go();
+  if (document.readyState === 'complete') window.setTimeout(go, 350);
+  else window.addEventListener('load', () => { go(); window.setTimeout(go, 350); }, { once: true });
 }
 
 // --- the relationship map ---------------------------------------------------

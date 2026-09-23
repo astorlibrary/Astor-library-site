@@ -48,6 +48,8 @@ function isData(url) {
     url.pathname === '/assets/study-index.json' ||
     url.pathname === '/assets/search-index.json' ||
     url.pathname === '/assets/content-index.json' ||
+    url.pathname === '/assets/quotation-index.json' ||
+    url.pathname === '/assets/timeline-index.json' ||
     url.pathname.startsWith('/assets/astor/geo/');
 }
 
@@ -55,14 +57,19 @@ function isAsset(url) {
   return url.pathname.startsWith('/assets/') && /\.(mjs|js|css|svg|png|webp|avif|woff2?)$/.test(url.pathname);
 }
 
-async function staleWhileRevalidate(request) {
+// Data and study modules come from the network whenever there is one, with
+// the kept copy as the fallback. Serving them from the cache first meant a
+// returning reader saw the previous deploy's quotations, and could get last
+// week's module running against this week's page, until a second visit.
+async function networkFirst(request) {
   const cache = await caches.open(CACHE);
-  const cached = await cache.match(request);
-  const refresh = fetch(request).then(response => {
+  try {
+    const response = await fetch(request);
     if (response && response.ok) cache.put(request, response.clone());
     return response;
-  }).catch(() => null);
-  return cached || (await refresh) || Response.error();
+  } catch {
+    return (await cache.match(request)) || Response.error();
+  }
 }
 
 async function cacheFirst(request) {
@@ -97,7 +104,7 @@ self.addEventListener('fetch', event => {
   if (url.origin !== self.location.origin) return;
   if (NEVER.test(url.pathname)) return;
 
-  if (isData(url)) { event.respondWith(staleWhileRevalidate(request)); return; }
+  if (isData(url) || /\.m?js$/.test(url.pathname)) { event.respondWith(networkFirst(request)); return; }
   if (isAsset(url)) { event.respondWith(cacheFirst(request)); return; }
   if (request.mode === 'navigate' && STUDY_ROUTES.test(url.pathname)) {
     event.respondWith(networkFirstPage(request));

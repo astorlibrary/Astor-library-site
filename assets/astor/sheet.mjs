@@ -43,13 +43,13 @@ export function buildSheet(book) {
   const columns = el('div', { class: 'astor-sheet-columns' });
 
   columns.append(el('section', {}, [
-    el('h3', { text: 'The shape of it' }),
+    el('h3', { text: 'Structure' }),
     el('ol', { class: 'astor-sheet-list' }, book.structure.map(stage =>
       el('li', {}, [el('b', { text: stage.label }), document.createTextNode(stage.title ? ' — ' + stage.title : '')])))
   ]));
 
   columns.append(el('section', {}, [
-    el('h3', { text: 'Who is who' }),
+    el('h3', { text: 'Characters' }),
     el('ul', { class: 'astor-sheet-list' }, book.characters.map(character =>
       el('li', {}, [el('b', { text: character.name }), document.createTextNode(character.role ? ' — ' + character.role : '')])))
   ]));

@@ -117,7 +117,7 @@ async function start() {
     ...place, book, id: book.slug + '-' + position
   })));
   if (!places.length) {
-    mapMount.append(el('p', { class: 'astor-empty', text: 'No settings are plotted yet. They arrive with each title’s record.' }));
+    mapMount.append(el('p', { class: 'astor-empty', text: 'No places on the map yet.' }));
     return;
   }
 

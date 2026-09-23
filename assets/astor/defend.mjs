@@ -54,8 +54,8 @@ function render(book) {
     const inner = el('div', { class: 'astor-panel' });
 
     inner.append(el('article', { class: 'astor-note' }, [
-      el('h4', { text: 'The strongest thing against it' }),
-      el('p', { text: view.counter || 'No objection recorded. What would have to be different for this reading to fail?' })
+      el('h4', { text: 'The main objection' }),
+      el('p', { text: view.counter || 'No objection is given for this reading. What would make it fail?' })
     ]));
 
     inner.append(el('p', { class: 'astor-compare-heading', text: 'Which side are you taking?' }));
@@ -97,7 +97,7 @@ function render(book) {
     inner.append(list);
 
     if (chosen.size >= 2) {
-      inner.append(el('p', { class: 'astor-compare-heading', text: 'Now the hard part' }));
+      inner.append(el('p', { class: 'astor-compare-heading', text: 'Answer the objection' }));
       const counterQuote = pickCounterEvidence(book, chosen);
       if (counterQuote) {
         inner.append(el('article', { class: 'astor-note' }, [
@@ -116,7 +116,7 @@ function render(book) {
       inner.append(note);
       inner.append(el('div', { class: 'button-row' }, [
         el('button', {
-          class: 'button primary', type: 'button', text: 'Show me the case I have built',
+          class: 'button primary', type: 'button', text: 'Show my case',
           onclick: () => showCase(book, view, side, chosen, concession)
         })
       ]));
@@ -145,7 +145,7 @@ function render(book) {
     sheet.append(el('p', { class: 'astor-worksheet-meta', text: currentBook.title + ' · ' + quotations.length + ' pieces of evidence' }));
     sheet.append(el('pre', { class: 'astor-analysis', style: 'white-space:pre-wrap;font-family:inherit', text: lines.join('\n') }));
     if (!currentConcession.trim()) {
-      sheet.append(el('p', { class: 'astor-inline-note', text: 'The case is not finished until you have said what the objection costs it.' }));
+      sheet.append(el('p', { class: 'astor-inline-note', text: 'Answer the objection in the box above to finish the case.' }));
     }
     const existing = mount.querySelector('.astor-worksheet');
     if (existing) existing.replaceWith(sheet); else mount.append(sheet);

@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Literature timeline | Astor Library</title>
-  <meta name="description" content="A timeline of every Astor Library title: when it was written, published and first performed.">
+  <meta name="description" content="Every book with an Astor Library study guide, in order of first publication, with the dates around each one: when it was written and performed, the history it came out of, and what happened to it afterwards.">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/astor-study.css">
-  <script type="module" src="/assets/astor/timeline.mjs"></script>
+  <script type="module" src="/assets/astor/chronology.mjs"></script>
 </head>
 <body>
 <header class="site-header">
@@ -17,12 +17,12 @@
 <main id="main-content" class="page-wrap">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/explore/">Explore</a><span aria-hidden="true">/</span><span aria-current="page">Timeline</span></nav>
   <section class="page-intro">
-    <div><p class="kicker">Explore</p><h1>The books against their moment.</h1><p class="deck">Every book on one scale. Filter by period or kind of event.</p></div>
+    <div><p class="kicker">Explore</p><h1>When each book appeared.</h1><p class="deck">Every book with a study guide, in order of first publication. Open a book to see its own dates, or switch to every date to see what else was happening at the time.</p></div>
   </section>
 
-  <div id="astor-timeline-controls" class="astor-chooser"></div>
-  <div class="astor-timeline" id="astor-timeline"></div>
-  <div class="astor-timeline-detail" id="astor-timeline-detail" hidden></div>
+  <div id="astor-timeline-controls" class="astor-tl-controls"></div>
+  <nav class="astor-tl-jump" id="astor-timeline-jump" aria-label="Jump to a century" hidden></nav>
+  <div class="astor-tl" id="astor-timeline"><p class="astor-tl-summary">Loading the timeline&hellip;</p></div>
 <noscript><div class="astor-empty">The timeline needs JavaScript. Each book page has its own dates under “The book in its moment”.</div></noscript>
 
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/explore/map/">Map of settings</a><a href="/classic-literature/">Periods</a><a href="/explore/">Search the library</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></nav>
