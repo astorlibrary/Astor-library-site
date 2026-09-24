@@ -24,10 +24,10 @@ function escapeHtml(value) {
 
 const HEADER = `<header class="site-header">
   <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="Astor Library torch"><span class="word">LIBRARY</span></a>
-  <nav class="nav" aria-label="Primary navigation"><a class="nav-link" href="/library/">Books</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/resources/">Free resources</a><a class="nav-link" href="/play/">Play &amp; revise</a></nav>
+  <nav class="nav" aria-label="Primary navigation"><a class="nav-link" href="/library/">Books</a><a class="nav-link" href="/study/">Study editions</a><a class="nav-link" href="/resources/">Free resources</a><a class="nav-link" href="/play/">Revise</a></nav>
 </header>`;
 
-const FOOTER = `<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div><div class="footer-links"><a href="/library/">Books</a><a href="/study/">Study editions</a><a href="/play/">Play &amp; revise</a><a href="/explore/">Search</a></div></footer>`;
+const FOOTER = `<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div><div class="footer-links"><a href="/library/">Books</a><a href="/study/">Study editions</a><a href="/play/">Revise</a><a href="/explore/">Search</a></div></footer>`;
 
 function endNav(links) {
   const all = links.concat([
@@ -132,11 +132,11 @@ const GAMES = [
   },
   {
     slug: 'mixed-round',
-    name: 'Mixed round',
+    name: 'Mixed questions',
     scope: 'book',
     blurb: 'Every kind of question the book supports, in one run.',
     deck: 'A bit of everything from one book.',
-    why: 'Drilling one kind of question teaches the shape of the question as much as the book. A round that changes its kind every time only rewards knowing the text.'
+    why: 'Drilling one kind of question teaches the shape of the question as much as the book. A quiz that changes the kind of question every time only rewards knowing the text.'
   },
   {
     slug: 'which-book',
@@ -148,7 +148,7 @@ const GAMES = [
   },
   {
     slug: 'context-sprint',
-    name: 'Context sprint',
+    name: 'Which year?',
     scope: 'library',
     blurb: 'Place an event in the right year.',
     deck: 'Place an event in the right year.',
@@ -172,22 +172,22 @@ function buildPages() {
   // --- Play hub ---
   written.push(page({
     dir: 'play',
-    title: 'Play & revise | Astor Library',
-    description: 'Nine revision games, flashcards, an essay planner and a daily quiz for the books in the Astor Library catalogue.',
-    kicker: 'Play & revise',
-    heading: 'Play and revise.',
-    deck: 'Quick games, flashcards and two longer tools. Pick a book and start.',
-    breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Play &amp; revise</span>',
+    title: 'Revise | Astor Library',
+    description: 'Short quizzes on the quotations, characters, themes and plot of each book with a study guide, plus flashcards, an essay planner and five questions a day.',
+    kicker: 'Revise',
+    heading: 'Revise a book.',
+    deck: 'Short quizzes on the quotations, characters and plot, with flashcards and an essay planner. Choose a book to start.',
+    breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Revise</span>',
     module: 'play-hub.mjs',
     intro: `  <section class="astor-dash-grid" id="astor-play-stats" aria-label="Your revision"></section>
   <div class="astor-chooser" id="astor-play-chooser"></div>`,
-    mount: `  <section class="section-title" id="single-book"><p class="kicker">One book at a time</p><h2>Single-book games.</h2><p>Every question comes from the book chosen above.</p></section>
+    mount: `  <section class="section-title" id="single-book"><p class="kicker">One book at a time</p><h2>Quizzes on this book.</h2><p>Every question comes from the book chosen above.</p></section>
   <div class="astor-play-grid" id="astor-play-book-games"></div>
-  <section class="section-title" id="whole-library"><p class="kicker">Across the whole library</p><h2>Whole-library games.</h2><p>Questions are drawn from books across the library.</p></section>
+  <section class="section-title" id="whole-library"><p class="kicker">Across the whole library</p><h2>Quizzes across the library.</h2><p>Questions come from every book with a study guide.</p></section>
   <div class="astor-play-grid" id="astor-play-library-games"></div>
   <section class="section-title" id="tools"><p class="kicker">Longer work</p><h2>Flashcards and essay tools.</h2><p>Learn quotations by heart, plan an essay, or argue for and against a reading.</p></section>
   <div class="astor-play-grid" id="astor-play-tools"></div>`,
-    fallback: 'The games need JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
+    fallback: 'The quizzes need JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
     tail: '',
     links: [{ href: '/today/', label: 'Today' }, { href: '/my-library/', label: 'My library' }]
   }));
@@ -197,17 +197,17 @@ function buildPages() {
     written.push(page({
       dir: 'play/' + game.slug,
       title: game.name + ' | Astor Library',
-      description: game.blurb + ' A revision game from Astor Library, free to play.',
-      kicker: game.scope === 'book' ? 'Revision game · one book' : 'Revision game · whole library',
+      description: game.blurb + ' A free revision quiz from Astor Library.',
+      kicker: game.scope === 'book' ? 'Revision quiz · one book' : 'Revision quiz · every book',
       heading: game.name,
       deck: game.deck,
-      breadcrumb: '<a href="/play/">Play &amp; revise</a><span aria-hidden="true">/</span><span aria-current="page">' + escapeHtml(game.name) + '</span>',
+      breadcrumb: '<a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">' + escapeHtml(game.name) + '</span>',
       module: 'game.mjs',
       intro: game.scope === 'book' ? '  <div class="astor-chooser" id="astor-game-chooser"></div>' : '',
       mount: `  <div class="astor-game" id="astor-game" data-game="${escapeHtml(game.slug)}" data-scope="${game.scope}"></div>`,
-      fallback: 'This game needs JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
+      fallback: 'This quiz needs JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
       tail: '  <p class="astor-inline-note">Keyboard: 1 picks A, 2 picks B and so on. Enter checks and moves on. R restarts.</p>',
-      links: [{ href: '/play/', label: 'All games' }, { href: '/today/', label: 'Today' }]
+      links: [{ href: '/play/', label: 'Revise' }, { href: '/today/', label: 'Today' }]
     }));
   }
 
@@ -219,13 +219,13 @@ function buildPages() {
     kicker: 'Flashcards',
     heading: 'Flashcards.',
     deck: 'A deck for each book. Cards you get wrong come back sooner.',
-    breadcrumb: '<a href="/play/">Play &amp; revise</a><span aria-hidden="true">/</span><span aria-current="page">Flashcards</span>',
+    breadcrumb: '<a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Flashcards</span>',
     module: 'flashcards.mjs',
     intro: '  <div class="astor-chooser" id="astor-deck-chooser"></div>',
     mount: '  <div class="astor-game" id="astor-flashcards"></div>',
     fallback: 'The flashcards need JavaScript. The same quotations are on each book page.',
     tail: '  <p class="astor-inline-note">Your cards are saved in this browser only.</p>',
-    links: [{ href: '/play/', label: 'All games' }, { href: '/my-library/', label: 'My library' }]
+    links: [{ href: '/play/', label: 'Revise' }, { href: '/my-library/', label: 'My library' }]
   }));
 
   // --- essay forge ---
@@ -236,13 +236,13 @@ function buildPages() {
     kicker: 'Planning tool',
     heading: 'Essay planner.',
     deck: 'Choose a question and build the plan paragraph by paragraph.',
-    breadcrumb: '<a href="/play/">Play &amp; revise</a><span aria-hidden="true">/</span><span aria-current="page">Essay planner</span>',
+    breadcrumb: '<a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Essay planner</span>',
     module: 'essay-forge.mjs',
     intro: '  <div class="astor-chooser" id="astor-essay-chooser"></div>',
     mount: '  <div id="astor-essay-forge"></div>',
     fallback: 'The planner needs JavaScript. Every book page has essay questions with a plan for each.',
     tail: '',
-    links: [{ href: '/play/', label: 'All games' }, { href: '/for-teachers/', label: 'For teachers' }]
+    links: [{ href: '/play/', label: 'Revise' }, { href: '/for-teachers/', label: 'For teachers' }]
   }));
 
   // --- defend the reading ---
@@ -253,13 +253,13 @@ function buildPages() {
     kicker: 'Argument tool',
     heading: 'Defend the reading.',
     deck: 'Take a side on a reading of the book, choose quotations to support it, then answer the objection.',
-    breadcrumb: '<a href="/play/">Play &amp; revise</a><span aria-hidden="true">/</span><span aria-current="page">Defend the reading</span>',
+    breadcrumb: '<a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Defend the reading</span>',
     module: 'defend.mjs',
     intro: '  <div class="astor-chooser" id="astor-defend-chooser"></div>',
     mount: '  <div id="astor-defend"></div>',
     fallback: 'This needs JavaScript. The readings are on each book page under “The book in its moment”.',
     tail: '  <p class="astor-inline-note">These readings are described in Astor Library’s own words. No critic is quoted.</p>',
-    links: [{ href: '/play/', label: 'All games' }, { href: '/explore/quotations/', label: 'Quotation explorer' }]
+    links: [{ href: '/play/', label: 'Revise' }, { href: '/explore/quotations/', label: 'Quotation explorer' }]
   }));
 
   // --- today ---
@@ -276,7 +276,7 @@ function buildPages() {
     mount: '  <div class="astor-game" id="astor-daily-game"></div>',
     fallback: 'Today’s questions need JavaScript. The close readings in the <a href="/passage-room/">Passage Room</a> work without it.',
     tail: '  <p class="astor-inline-note">Everyone gets the same five questions each day.</p>',
-    links: [{ href: '/play/', label: 'All games' }, { href: '/my-library/', label: 'My library' }]
+    links: [{ href: '/play/', label: 'Revise' }, { href: '/my-library/', label: 'My library' }]
   }));
 
   // --- explore: quotations ---
@@ -295,7 +295,7 @@ function buildPages() {
     <div id="astor-quote-results"></div>
   </div>`,
     fallback: 'This needs JavaScript. Every quotation is also on its own book page.',
-    links: [{ href: '/explore/techniques/', label: 'Technique glossary' }, { href: '/play/', label: 'Play &amp; revise' }]
+    links: [{ href: '/explore/techniques/', label: 'Technique glossary' }, { href: '/play/', label: 'Revise' }]
   }));
 
   // --- explore: timeline ---
@@ -411,7 +411,7 @@ function buildPages() {
     module: 'offline.mjs',
     mount: '  <div id="astor-offline-list"><p class="astor-inline-note">Checking what is saved\u2026</p></div>',
     fallback: 'This page lists what your browser has kept, which needs JavaScript.',
-    links: [{ href: '/play/', label: 'Play &amp; revise' }, { href: '/my-library/', label: 'My library' }]
+    links: [{ href: '/play/', label: 'Revise' }, { href: '/my-library/', label: 'My library' }]
   }));
 
   // --- my library ---
@@ -435,13 +435,13 @@ function buildPages() {
   <div id="astor-commonplace"></div>
   <section class="section-title" id="plans"><p class="kicker">Reading plans</p><h2>What to read next, and when.</h2><p>Plans made from the Revise tab on a book page: the next sitting, and how far along you are.</p></section>
   <div id="astor-plans"></div>
-  <section class="section-title" id="scores"><p class="kicker">Revision</p><h2>Scores and streak.</h2><p>Best results by game, and the run of days you have played.</p></section>
+  <section class="section-title" id="scores"><p class="kicker">Revision</p><h2>Scores and streak.</h2><p>Your best score in each quiz, and how many days in a row you have revised.</p></section>
   <div id="astor-scores"></div>`,
     fallback: 'This page needs JavaScript to read what your browser has saved.',
     tail: `  <section class="section-title" id="data"><p class="kicker">Your data</p><h2>Download or clear your data.</h2></section>
   <p class="deck">Everything here is saved in this browser only.</p>
   <div class="button-row" id="astor-data-controls"></div>`,
-    links: [{ href: '/play/', label: 'Play &amp; revise' }, { href: '/today/', label: 'Today' }]
+    links: [{ href: '/play/', label: 'Revise' }, { href: '/today/', label: 'Today' }]
   }));
 
   // --- for teachers ---

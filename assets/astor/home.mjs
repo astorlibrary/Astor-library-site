@@ -40,7 +40,7 @@ async function fill(mount) {
     el('p', { class: 'home-today-attribution', text: (passage.speaker ? passage.speaker + ' · ' : '') + passage.bookTitle + ' ' + passage.reference }),
     el('p', { class: 'home-today-status', text: status }),
     el('nav', {}, [
-      el('a', { class: 'home-more', href: '/today/', text: result ? 'See today’s page →' : 'Play today’s questions →' }),
+      el('a', { class: 'home-more', href: '/today/', text: result ? 'See today’s page →' : 'Try today’s questions →' }),
       el('a', { class: 'home-more', href: passage.bookHref, text: 'Read ' + passage.bookTitle + ' →' })
     ])
   );

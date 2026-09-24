@@ -17,7 +17,7 @@ async function start(container) {
   const gameId = container.dataset.game;
   const scope = container.dataset.scope;
   const builder = GAME_BUILDERS[gameId];
-  if (!builder) return emptyState(container, 'That game isn’t available.');
+  if (!builder) return emptyState(container, 'That quiz isn’t available.');
 
   container.append(el('p', { class: 'astor-inline-note', text: 'Loading…' }));
 
@@ -25,7 +25,7 @@ async function start(container) {
   try {
     index = await loadIndex();
   } catch {
-    return emptyState(container, 'The game didn’t load. Try reloading the page.', [
+    return emptyState(container, 'The quiz didn’t load. Try reloading the page.', [
       { href: '/library/', label: 'Browse the catalogue' }
     ]);
   }
@@ -44,8 +44,8 @@ function runBook(container, gameId, index) {
     .sort((a, b) => a.title.localeCompare(b.title));
 
   if (!books.length) {
-    return emptyState(container, 'No books are ready for this game yet.', [
-      { href: '/play/', label: 'Other games' }
+    return emptyState(container, 'No books are ready for this quiz yet.', [
+      { href: '/play/', label: 'More revision' }
     ]);
   }
 
@@ -62,7 +62,7 @@ function runBook(container, gameId, index) {
       reshuffle: () => buildRound(gameId, book, { length: 10 }),
       endLinks: [
         { href: book.href, label: 'Back to ' + book.title },
-        { href: '/play/', label: 'Another game' }
+        { href: '/play/', label: 'Another quiz' }
       ]
     });
     round.start();
@@ -80,8 +80,8 @@ function runBook(container, gameId, index) {
 function runLibrary(container, gameId, index) {
   const questions = buildRound(gameId, index.books, { length: 10 });
   if (questions.length < 4) {
-    return emptyState(container, 'This game isn’t ready yet. Try another one.', [
-      { href: '/play/', label: 'Other games' }
+    return emptyState(container, 'This quiz isn’t ready yet. Try another one.', [
+      { href: '/play/', label: 'More revision' }
     ]);
   }
   clear(container);
@@ -90,7 +90,7 @@ function runLibrary(container, gameId, index) {
     reshuffle: () => buildRound(gameId, index.books, { length: 10 }),
     endLinks: [
       { href: '/today/', label: 'Today' },
-      { href: '/play/', label: 'Another game' }
+      { href: '/play/', label: 'Another quiz' }
     ]
   });
   round.start();

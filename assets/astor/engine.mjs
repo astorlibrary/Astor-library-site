@@ -326,7 +326,7 @@ export class Round {
 
     const seconds = Math.round((Date.now() - this.startedAt) / 1000);
     const panel = el('div', { class: 'astor-game-end' });
-    panel.append(el('p', { class: 'kicker', text: 'Round complete' }));
+    panel.append(el('p', { class: 'kicker', text: 'Finished' }));
     panel.append(el('h2', { text: `${score} out of ${total}` }));
     panel.append(el('p', { class: 'astor-game-end-note', text: verdict(score, total) + ` Finished in ${seconds} ${seconds === 1 ? 'second' : 'seconds'}.` }));
 
@@ -362,13 +362,13 @@ export class Round {
     }
 
     const actions = el('div', { class: 'button-row' });
-    actions.append(el('button', { class: 'button primary', type: 'button', text: 'Play again', onclick: () => this.restart() }));
+    actions.append(el('button', { class: 'button primary', type: 'button', text: 'Try again', onclick: () => this.restart() }));
     for (const link of this.options.endLinks || []) {
       actions.append(el('a', { class: 'button secondary', href: link.href, text: link.label }));
     }
     panel.append(actions);
     this.container.append(panel);
-    announce(this.live, `Round complete. ${score} out of ${total}.`);
+    announce(this.live, `Finished. ${score} out of ${total}.`);
     panel.querySelector('button')?.focus({ preventScroll: true });
   }
 }

@@ -400,7 +400,7 @@ if (!fs.existsSync(editorialFile)) {
   failures.push('The site is missing its editorial standards page');
 } else {
   const editorial = fs.readFileSync(editorialFile, 'utf8');
-  if (!editorial.includes('How Astor Library researches and edits its publications.')) failures.push('The editorial standards page is missing its opening statement');
+  if (!editorial.includes('How the pages are made and checked.')) failures.push('The editorial standards page is missing its opening statement');
   if (countMatches(editorial, /class="editorial-principles"/g) !== 1) failures.push('The editorial standards page is missing its principles');
 }
 

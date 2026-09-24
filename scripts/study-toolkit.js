@@ -265,13 +265,13 @@ const GAMES = [
   ['technique-spotter', 'Technique spotter', 'Spot the technique in each quotation.'],
   ['character-identification', 'Who is this?', 'Guess the character from a description.'],
   ['order-the-plot', 'Order the plot', 'Put the plot back in order.'],
-  ['mixed-round', 'Mixed round', 'A mix of every game.']
+  ['mixed-round', 'Mixed questions', 'A few questions of every kind.']
 ];
 
 function revisePanel(book) {
   const cards = GAMES.map(([id, title, note]) =>
     '<a class="astor-play-card" href="/play/' + id + '/?book=' + escapeHtml(book.slug) + '">' +
-    '<span class="astor-play-kind">Game</span><h4>' + escapeHtml(title) + '</h4><p>' + escapeHtml(note) + '</p></a>'
+    '<span class="astor-play-kind">Quiz</span><h4>' + escapeHtml(title) + '</h4><p>' + escapeHtml(note) + '</p></a>'
   ).join('');
   return '<section class="astor-panel" id="astor-revise" data-panel="Revise">' +
     '<h3>Revise ' + escapeHtml(book.title) + '</h3>' +
@@ -387,7 +387,7 @@ function renderToolkit(book, { heading, titleFor, passages, showGlance = true } 
     '<div class="astor-toolkit-head">' +
     '<div><p class="kicker">' + motifSvg(book, 22) + 'Astor study toolkit</p>' +
     '<h2 id="astor-toolkit-title">' + escapeHtml(heading || ('Work through ' + book.title + '.')) + '</h2>' +
-    '<p>Plot, characters, themes, quotations, language, context, essay plans and games.</p></div>' +
+    '<p>Plot, characters, themes, quotations, language, context, essay plans and quizzes.</p></div>' +
     '<div class="astor-toolkit-actions">' +
     '<button class="button secondary" type="button" data-astor-save aria-pressed="false">Save to my library</button>' +
     '<a class="button primary" href="/play/?book=' + escapeHtml(book.slug) + '">Revise this book</a>' +

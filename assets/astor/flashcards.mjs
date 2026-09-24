@@ -128,7 +128,7 @@ function runDeck(book) {
       onclick: () => { position = 0; turned = false; reviewed = 0; queue.splice(0, queue.length, ...shuffle(ids)); render(); }
     }));
     row.append(el('a', { class: 'button secondary', href: book.href, text: 'Back to ' + book.title }));
-    row.append(el('a', { class: 'button secondary', href: '/play/', text: 'Other games' }));
+    row.append(el('a', { class: 'button secondary', href: '/play/', text: 'More revision' }));
     panel.append(row);
     mount.append(panel);
     panel.querySelector('button')?.focus({ preventScroll: true });

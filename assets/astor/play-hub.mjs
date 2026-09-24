@@ -1,14 +1,14 @@
-// The Play & revise hub.
+// The Revise hub, served at /play/.
 //
-// Shows which games a chosen title can actually support, what the reader has
-// scored, and how long their revision streak is. A game that a book has no
-// material for is not offered: an empty round is worse than no link.
+// Shows which quizzes a chosen title can actually support, what the reader has
+// scored, and how long their revision streak is. A quiz that a book has no
+// material for is not offered: an empty quiz is worse than no link.
 
 import { el, clear } from './util.mjs';
 import { loadIndex } from './data.mjs';
 import { buildRound } from './questions.mjs';
 import { mountChooser, chooseBook } from './chooser.mjs';
-import { scores, streak, deckSummary, isRemembering, recentlyViewed } from './store.mjs';
+import { scores, streak, snapshot, today, isRemembering, recentlyViewed } from './store.mjs';
 import { cardId } from './data.mjs';
 
 const BOOK_GAMES = [
@@ -18,12 +18,12 @@ const BOOK_GAMES = [
   ['technique-spotter', 'Technique spotter', 'Spot the technique in each quotation.'],
   ['character-identification', 'Who is this?', 'Name the character from a description.'],
   ['order-the-plot', 'Order the plot', 'Put the story back in order.'],
-  ['mixed-round', 'Mixed round', 'A bit of every game.']
+  ['mixed-round', 'Mixed questions', 'A few questions of every kind.']
 ];
 
 const LIBRARY_GAMES = [
   ['which-book', 'Which book?', 'Name the book a line comes from.'],
-  ['context-sprint', 'Context sprint', 'Pick the year each event happened.'],
+  ['context-sprint', 'Which year?', 'Pick the year each event happened.'],
   ['opening-lines', 'Opening lines', 'Name the book from its first sentence.']
 ];
 
@@ -46,7 +46,7 @@ async function start() {
   try {
     index = await loadIndex();
   } catch {
-    bookMount.append(el('p', { class: 'astor-empty', text: 'The games didn’t load. Try reloading the page.' }));
+    bookMount.append(el('p', { class: 'astor-empty', text: 'The quizzes didn’t load. Try reloading the page.' }));
     return;
   }
 
@@ -101,14 +101,14 @@ function renderBookGames(book) {
     offered += 1;
     bookMount.append(card(
       '/play/' + id + '/?book=' + encodeURIComponent(book.slug),
-      title === 'Order the plot' ? 'Puzzle' : 'Game',
+      'Quiz',
       title,
       note,
-      [available + ' questions', bestLine(id, book.slug)].filter(Boolean).join(' · ')
+      [Math.min(10, available) + ' questions', bestLine(id, book.slug)].filter(Boolean).join(' · ')
     ));
   }
   if (!offered) {
-    bookMount.append(el('p', { class: 'astor-empty', text: 'No games for ' + book.title + ' yet. Try another book.' }));
+    bookMount.append(el('p', { class: 'astor-empty', text: 'No quizzes for ' + book.title + ' yet. Try another book.' }));
   }
 }
 
@@ -117,22 +117,27 @@ function renderLibraryGames(index) {
   for (const [id, title, note] of LIBRARY_GAMES) {
     const available = count(id, index.books);
     if (available < 4) continue;
-    libraryMount.append(card('/play/' + id + '/', 'Whole library', title, note, [available + ' questions', bestLine(id)].filter(Boolean).join(' · ')));
+    libraryMount.append(card('/play/' + id + '/', 'Quiz · every book', title, note, bestLine(id)));
   }
   libraryMount.append(card('/today/', 'Daily', 'Today’s questions', 'Five quick questions. New every day.', 'Share your score'));
   if (!libraryMount.children.length) {
-    libraryMount.append(el('p', { class: 'astor-empty', text: 'The library games aren’t ready yet.' }));
+    libraryMount.append(el('p', { class: 'astor-empty', text: 'The library quizzes aren’t ready yet.' }));
   }
 }
 
 function renderTools(index, currentBook) {
   clear(toolMount);
+  const cards = snapshot().cards || {};
+  const day = today();
   for (const [slug, title, note, kind] of TOOLS) {
     const book = currentBook();
     let stat = '';
-    if (slug === 'flashcards' && isRemembering()) {
-      const deck = deckSummary(book.quotations.map(quotation => cardId(book.slug, quotation.id)));
-      stat = deck.due + ' of ' + deck.total + ' due today';
+    if (slug === 'flashcards') {
+      const ids = book.quotations.map(quotation => cardId(book.slug, quotation.id));
+      const studied = isRemembering() ? ids.map(id => cards[id]).filter(Boolean) : [];
+      const due = studied.filter(entry => entry.due <= day).length;
+      stat = !studied.length ? ids.length + ' cards for ' + book.title
+        : due ? due + ' to review today' : 'Nothing to review today';
     }
     if (slug === 'essay-forge') stat = (book.essayQuestions?.length || 0) + ' questions for ' + book.title;
     toolMount.append(card('/play/' + slug + '/?book=' + encodeURIComponent(book.slug), kind, title, note, stat));
@@ -143,27 +148,19 @@ function renderStats(index) {
   if (!statsMount) return;
   clear(statsMount);
   const run = streak();
-  const played = Object.values(scores()).reduce((total, entry) => total + entry.played, 0);
-
-  // Count the questions rather than estimating them: the builders are cheap to
-  // run and a made-up total would be the one number on the page nobody checked.
-  let available = 0;
-  for (const [id] of [...BOOK_GAMES, ...LIBRARY_GAMES]) {
-    if (LIBRARY_GAMES.some(game => game[0] === id)) available += count(id, index.books);
-    else if (id !== 'mixed-round') for (const book of index.books) available += count(id, book);
-  }
+  const done = Object.values(scores()).reduce((total, entry) => total + entry.played, 0);
+  const revised = new Set(Object.values(scores()).flatMap(entry => Object.keys(entry.byBook || {}))).size;
 
   const tiles = [
-    ['Revision streak', run.live && run.current ? String(run.current) : '0', run.live && run.current
-      ? 'day' + (run.current === 1 ? '' : 's') + ' in a row. Longest: ' + run.longest + '.'
-      : 'Play a round today to start one.'],
-    ['Rounds played', String(played), played ? 'on this device.' : 'Nothing yet — start anywhere below.'],
-    ['Questions available', available.toLocaleString('en-GB'), 'from ' + index.counts.quotations.toLocaleString('en-GB') + ' quotations in ' + index.counts.books + ' books.'],
-    ['Books with games', String(index.counts.books), 'Pick one below to start.']
+    ['Days in a row', run.live && run.current ? String(run.current) : '0', run.live && run.current
+      ? 'Your longest run is ' + run.longest + '.'
+      : 'Do one quiz today to start a run.'],
+    ['Quizzes done', String(done), done ? 'on this device.' : 'None yet. Choose a book below.'],
+    ['Books revised', String(revised), revised ? 'with at least one quiz done.' : 'Choose one below to start.']
   ];
 
   if (!isRemembering()) {
-    tiles[0] = ['Revision streak', '—', 'Browser storage is switched off here, so nothing can be remembered between visits.'];
+    tiles[0] = ['Days in a row', '—', 'Browser storage is switched off here, so nothing can be remembered between visits.'];
   }
 
   for (const [label, value, note] of tiles) {

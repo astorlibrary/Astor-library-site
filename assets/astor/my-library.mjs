@@ -9,10 +9,9 @@ import { planSummary, nextSitting, readableDay } from './plan.mjs';
 import { loadIndex } from './data.mjs';
 import {
   isRemembering, savedBooks, recentlyViewed, allProgress, commonplace,
-  annotate, toggleCommonplace, scores, streak, exportAll, forget, deckSummary,
+  annotate, toggleCommonplace, scores, streak, exportAll, forget, snapshot, today,
   allPlans, removePlan
 } from './store.mjs';
-import { cardId } from './data.mjs';
 
 const mounts = {
   dash: document.querySelector('#astor-dash'),
@@ -61,21 +60,20 @@ function renderDash(index) {
   const readStages = Object.values(progress).reduce((total, entry) => total + entry.stages.length, 0);
   const played = Object.values(scores()).reduce((total, entry) => total + entry.played, 0);
 
-  let due = 0;
-  if (index) {
-    for (const book of index.books) {
-      const ids = book.quotations.map(quotation => cardId(book.slug, quotation.id));
-      due += deckSummary(ids).due;
-    }
-  }
+  // Only cards the reader has actually studied can be due. Counting every
+  // quotation in the library as due told a new reader they had thousands of
+  // cards waiting.
+  const studied = Object.values(snapshot().cards || {});
+  const day = today();
+  const due = studied.filter(card => card.due <= day).length;
 
   const tiles = [
     ['Saved books', String(savedBooks().length), 'on your shelf.'],
     ['Sections read', String(readStages), 'across ' + Object.keys(progress).length + ' ' + (Object.keys(progress).length === 1 ? 'title' : 'titles') + '.'],
-    ['Revision streak', run.live && run.current ? String(run.current) : '0', run.live && run.current ? 'days in a row. Longest: ' + run.longest + '.' : 'Play a round today to start one.'],
+    ['Days in a row', run.live && run.current ? String(run.current) : '0', run.live && run.current ? 'Your longest run is ' + run.longest + '.' : 'Do one quiz today to start a run.'],
     ['Quotations kept', String(commonplace().length), 'in your commonplace book.'],
-    ['Rounds played', String(played), played ? 'so far.' : 'Try a game.'],
-    ['Flashcards due', String(due), due ? 'to review today.' : 'All done for today.']
+    ['Quizzes done', String(played), played ? 'so far.' : 'Try one from Revise.'],
+    ['Flashcards to review', String(due), !studied.length ? 'You haven’t started a deck yet.' : due ? 'of the ' + studied.length + ' cards you have studied.' : 'Nothing to review today.']
   ];
 
   for (const [label, value, note] of tiles) {
@@ -235,7 +233,7 @@ function renderScores() {
   clear(mounts.scores);
   const entries = Object.entries(scores());
   if (!entries.length) {
-    mounts.scores.append(el('p', { class: 'astor-empty', text: 'No games played yet.' }));
+    mounts.scores.append(el('p', { class: 'astor-empty', text: 'No quizzes done yet.' }));
     return;
   }
   const grid = el('div', { class: 'astor-dash-grid' });
@@ -243,8 +241,8 @@ function renderScores() {
     grid.append(el('div', { class: 'astor-dash-tile' }, [
       el('b', { text: gameName(gameId) }),
       el('strong', { text: entry.bestTotal ? entry.best + '/' + entry.bestTotal : String(entry.played) }),
-      el('small', { text: entry.played + ' round' + (entry.played === 1 ? '' : 's') + ', last played ' + formatDate(entry.lastAt) + '.' }),
-      gameId === 'daily' ? null : el('small', {}, [el('a', { href: '/play/' + gameId + '/', text: 'Play again →' })])
+      el('small', { text: entry.played + (entry.played === 1 ? ' quiz' : ' quizzes') + ', last on ' + formatDate(entry.lastAt) + '.' }),
+      gameId === 'daily' ? null : el('small', {}, [el('a', { href: '/play/' + gameId + '/', text: 'Try again →' })])
     ]));
   }
   mounts.scores.append(grid);
@@ -259,9 +257,9 @@ function gameName(gameId) {
     'character-identification': 'Who is this?',
     'order-the-plot': 'Order the plot',
     'which-book': 'Which book?',
-    'context-sprint': 'Context sprint',
+    'context-sprint': 'Which year?',
     'opening-lines': 'Opening lines',
-    'mixed-round': 'Mixed round',
+    'mixed-round': 'Mixed questions',
     daily: 'Today’s questions'
   })[gameId] || gameId;
 }

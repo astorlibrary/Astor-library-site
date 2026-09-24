@@ -4,7 +4,7 @@ module.exports = [
     title: 'Gothic literature',
     navTitle: 'Gothic',
     kicker: 'Fear, knowledge and the hidden life',
-    description: 'A guide to Gothic form and history, from Frankenstein and Jekyll and Hyde to Victorian ghost stories and American supernatural fiction.',
+    description: 'Eighteen books, from Frankenstein and Dracula to M. R. James and Algernon Blackwood, with a short history of the Gothic since The Castle of Otranto and the terms used to discuss it.',
     search: 'Gothic literature Gothic novel horror supernatural uncanny double monstrosity science modernity secrecy transgression vampire ghost castle Victorian ghost stories Sleepy Hollow Yellow Wallpaper',
     facts: [
       { value: '1764', label: 'The Castle of Otranto gives the Gothic novel an early name and model' },
@@ -20,7 +20,7 @@ module.exports = [
       ]
     },
     methods: [
-      { label: 'Space', title: 'A building remembers', copy: 'Gothic houses do not merely contain action. Doors, windows, laboratories, attics and thresholds control who may know what. A place becomes a record of inheritance, exclusion or private conduct, often revealing what its occupants have tried to make unspeakable.' },
+      { label: 'Space', title: 'A building remembers', copy: 'In a Gothic house the building takes part in the plot. Doors, windows, laboratories, attics and thresholds control who may know what. A place becomes a record of inheritance, exclusion or private conduct, often revealing what its occupants have tried to make unspeakable.' },
       { label: 'Knowledge', title: 'Explanation creates new fear', copy: 'These books are full of educated people: doctors, lawyers, scientists, collectors and readers of evidence. Knowledge rarely makes terror disappear at once. It can produce the danger, misname it or arrive too late, leaving reason to confront the limits of its own methods.' },
       { label: 'The self', title: 'The monster is not safely outside', copy: 'The creature, double, portrait and vampire all trouble the boundary between threat and victim. Gothic writing asks who has been made monstrous, whose desire is being hidden and what a respectable society must disown in order to call itself orderly.' }
     ],
@@ -81,7 +81,7 @@ module.exports = [
     },
     methods: [
       { label: 'Error', title: 'Mistake reveals a working rule', copy: 'A misidentified twin or misread letter creates more than confusion. It shows what characters expect a husband, servant, woman or gentleman to look and sound like. Watch the assumption that makes each error plausible before the correction arrives.' },
-      { label: 'Performance', title: 'Disguise gives thought a body', copy: 'Rosalind does not merely hide as Ganymede; she uses the role to direct conversation and test Orlando. Comic performance can release speech that a character’s ordinary position forbids, while creating desires and obligations that cannot be dismissed as make-believe.' },
+      { label: 'Performance', title: 'Disguise gives thought a body', copy: 'Rosalind uses her disguise as Ganymede to steer the conversation and test Orlando. Comic performance can release speech that a character’s ordinary position forbids, while creating desires and obligations that cannot be dismissed as make-believe.' },
       { label: 'Settlement', title: 'The last scene distributes belonging', copy: 'Marriage, recognition and pardon decide who may join the dance, household or restored state. Count the people included, but also notice refusals, forced choices and sudden conversions. An ending can be formally happy while leaving a moral question open.' }
     ],
     books: [
@@ -132,7 +132,7 @@ module.exports = [
     title: 'History plays: kingship, succession and nation',
     navTitle: 'History plays',
     kicker: 'Crowns, claims and the making of public memory',
-    description: 'A guide to kingship, succession, civil war and national history across Shakespeare’s English history plays.',
+    description: 'Shakespeare’s ten English history plays, from King John to Henry VIII, with Macbeth and King Lear for comparison, and how Holinshed and the order of writing shaped them.',
     search: 'Shakespeare history plays histories kingship succession crown monarchy nation civil war Wars of the Roses Richard II Henry IV Henry V Henry VI Richard III Henry VIII King John chronicle Holinshed tetralogy legitimacy deposition First Folio',
     facts: [
       { value: '1577 / 1587', label: 'Holinshed’s Chronicles provides a principal source in two Elizabethan editions' },
@@ -266,7 +266,7 @@ module.exports = [
     title: 'Detective fiction',
     navTitle: 'Detection',
     kicker: 'Clues, records and the authority to explain',
-    description: 'A guide to detective method and case narration from The Moonstone to Arthur Conan Doyle’s Sherlock Holmes stories, with comparisons to the investigations in Dracula and Jekyll and Hyde.',
+    description: 'How detectives work and how their cases are written down, from Poe and The Moonstone to Sherlock Holmes, with Dracula and Jekyll and Hyde as investigations of another kind.',
     search: 'detective fiction crime mystery Wilkie Collins Moonstone Sherlock Holmes Watson clue deduction evidence investigation case record police Victorian London locked room',
     facts: [
       { value: '1841', label: 'Poe’s “The Murders in the Rue Morgue” supplies an early detective-story model' },
@@ -320,7 +320,7 @@ module.exports = [
     title: 'Epic poetry',
     navTitle: 'Epic',
     kicker: 'Journeys, foundations and inherited song',
-    description: 'A guide to epic form, oral tradition, translation, war, homecoming, rebellion and empire in The Iliad, The Odyssey, The Aeneid, Paradise Lost and Moby-Dick.',
+    description: 'The Iliad, the Odyssey, the Aeneid, Paradise Lost and Moby-Dick, with notes on oral tradition, translation and why epics come in books.',
     search: 'epic poetry Homer Iliad Odyssey Virgil Aeneid Milton Paradise Lost oral tradition hero invocation muse in medias res simile blank verse fall rebellion war Achilles homecoming nostos empire translation journey',
     facts: [
       { value: '24 books', label: 'The Odyssey is conventionally divided into twenty-four books' },
@@ -377,7 +377,7 @@ module.exports = [
     title: 'Satire and political writing',
     navTitle: 'Satire & politics',
     kicker: 'Imagined worlds, ridicule and the language of power',
-    description: 'A guide to satire, allegory and political writing in Utopia, The Prince, Gulliver’s Travels, The Man Who Was Thursday and Animal Farm.',
+    description: 'Ten books that argue about power, some by making it ridiculous: Machiavelli, More, Swift, Chesterton and Orwell among them.',
     search: 'satire political writing allegory fable utopia dystopia irony parody Swift Orwell More Machiavelli Chesterton revolution power language propaganda',
     facts: [
       { value: '1513', label: 'Machiavelli drafts The Prince after the collapse of the Florentine republic' },
@@ -494,7 +494,7 @@ module.exports = [
     title: 'Slavery, freedom and abolition',
     navTitle: 'Slavery & freedom',
     kicker: 'Law, testimony and the struggle to be recognised as a person',
-    description: 'A guide to representations of enslavement, testimony, abolitionist fiction and historical memory in works by Aphra Behn, Frederick Douglass, Harriet Beecher Stowe and Mark Twain.',
+    description: 'Behn’s Oroonoko, Douglass’s Narrative, Uncle Tom’s Cabin and four novels by Mark Twain, with the laws and dates that frame them.',
     search: 'slavery freedom abolition abolitionism Aphra Behn Oroonoko Surinam Frederick Douglass Harriet Beecher Stowe Mark Twain Uncle Tom Huckleberry Finn Fugitive Slave Act slave narrative testimony literacy family separation race law Atlantic America',
     facts: [
       { value: '1688', label: 'Oroonoko places betrayal, enslavement and revolt within England’s colony in Surinam' },
@@ -623,17 +623,17 @@ addSubjectBooks('slavery-freedom-abolition', [
 ]);
 
 const comedySubject = module.exports.find(subject => subject.slug === 'comedy');
-comedySubject.description = 'A guide to comic form, mistaken identity, social performance and narration in Shakespeare, Wilde, Jerome, the Grossmiths, Twain and Montgomery.';
+comedySubject.description = 'Sixteen Shakespeare comedies and romances, from The Comedy of Errors to The Tempest, beside Wilde, Jerome, the Grossmiths, Twain and Montgomery.';
 comedySubject.introduction.paragraphs.push('The wider selection includes stage comedy, a suburban diary, a boating narrative and novels. Their comic situations use different forms: Wilde’s invented identities are performed before an audience, while Pooter’s diary and Jerome’s travel account present the explanations of a narrator. These prose works extend the guide beyond Shakespeare without classifying all comic writing as a play.');
 const tragedySubject = module.exports.find(subject => subject.slug === 'tragedy');
-tragedySubject.description = 'Tragedy and serious drama in Shakespeare, Marlowe, Webster and Ibsen, with context on choices, authority, public action and domestic conflict.';
+tragedySubject.description = 'Fourteen tragedies, eleven of them Shakespeare’s, with Marlowe’s Doctor Faustus, Webster’s Duchess of Malfi and Ibsen’s A Doll’s House.';
 tragedySubject.introduction.paragraphs.push('Ibsen’s A Doll’s House provides a later comparison in serious domestic drama. Its ending does not follow the deaths that close many early modern tragedies; the household’s crisis instead leads to Nora’s departure. Julius Caesar extends the Shakespeare selection through assassination and the ensuing civil war.');
-module.exports.find(subject => subject.slug === 'narration-testimony').description = 'Letters, diaries, autobiography, framed manuscripts, retrospective narration and assembled documents across the Astor catalogue.';
+module.exports.find(subject => subject.slug === 'narration-testimony').description = 'Fifteen books told in letters, diaries, memoirs, framed manuscripts and collected documents, and what each way of telling can and cannot prove.';
 
 module.exports.push(
   {
     slug: 'childhood-and-education', title: 'Childhood and education', navTitle: 'Childhood', kicker: 'Families, schools and learning',
-    description: 'Childhood, schooling and family life in Tom Sawyer, The Railway Children and other Astor novels, with attention to narrators, institutions and historical settings.',
+    description: 'Six novels of childhood, from Alice and Tom Sawyer to Anne of Green Gables and The Railway Children, and how families, schools and the law shape them.',
     search: 'childhood education school family children Tom Sawyer Railway Children Anne Green Gables Alice Huckleberry Finn Jane Eyre Great Expectations',
     facts: [
       { value: 'Family', label: 'Parents, guardians and adopted households have different powers and obligations' },
@@ -679,7 +679,7 @@ module.exports.push(
   },
   {
     slug: 'travel-and-landscape', title: 'Travel and landscape', navTitle: 'Travel', kicker: 'Routes, places and the conditions of a journey',
-    description: 'Journeys and landscapes in memoir, fiction and poetry: the Thames, Danube, Yukon, Arabian campaigns and voyages at sea.',
+    description: 'Journeys on the Thames and the Danube, in the Yukon, across Arabia and at sea, in memoir, fiction and poetry.',
     search: 'travel landscape journey memoir poetry river sea voyage Thames Danube Yukon Klondike Lawrence Coleridge Blackwood London Crane Jerome',
     facts: [
       { value: 'Routes', label: 'A journey depends on distances, transport and available supplies' },
@@ -732,7 +732,7 @@ module.exports.push(
   },
   {
     slug: 'seasonal-writing', title: 'Seasonal writing and customs', navTitle: 'Seasonal', kicker: 'Christmas, Halloween and the Fifth of November',
-    description: 'Seasonal stories and historical customs across British and American collections, from Dickens’s Christmas books to Halloween and Bonfire Night.',
+    description: 'Christmas, Halloween and Bonfire Night: Dickens’s Christmas books, American Christmas and Halloween stories, and the histories of the customs.',
     search: 'Christmas Halloween Bonfire Night seasonal writing customs anthology Dickens American Victorian ghost stories holiday publishing',
     facts: [
       { value: 'Publication', label: 'A seasonal annual’s printed year may differ from the year it reached readers' },

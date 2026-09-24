@@ -107,7 +107,7 @@ function generatedStudyPages() {
 
 const HEADER = `<header class="site-header">
   <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-torch.svg" alt="Astor Library torch"><span class="word">LIBRARY</span></a>
-  <nav class="nav" aria-label="Primary navigation"><a class="nav-link" href="/library/">Books</a><a class="nav-link" href="/study/" aria-current="page">Study editions</a><a class="nav-link" href="/resources/">Free resources</a><a class="nav-link" href="/play/">Play &amp; revise</a></nav>
+  <nav class="nav" aria-label="Primary navigation"><a class="nav-link" href="/library/">Books</a><a class="nav-link" href="/study/" aria-current="page">Study editions</a><a class="nav-link" href="/resources/">Free resources</a><a class="nav-link" href="/play/">Revise</a></nav>
 </header>`;
 
 // One panel that is not on every page. Which one a book gets depends on what
@@ -222,7 +222,7 @@ ${HEADER}
 
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="${escapeHtml(book.href)}">${escapeHtml(book.title)}: the edition page</a><a href="/play/?book=${escapeHtml(book.slug)}">Revise ${escapeHtml(book.title)}</a><a href="/study/">All study editions</a><a href="/resources/">Free resources</a><a href="/explore/">Search the library <span aria-hidden="true">&rarr;</span></a></nav>
 </main>
-<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div><div class="footer-links"><a href="${escapeHtml(book.href)}">${escapeHtml(book.title)}</a><a href="/study/">Study editions</a><a href="/play/">Play &amp; revise</a><a href="/library/">Books</a></div></footer>
+<footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div><div class="footer-links"><a href="${escapeHtml(book.href)}">${escapeHtml(book.title)}</a><a href="/study/">Study editions</a><a href="/play/">Revise</a><a href="/library/">Books</a></div></footer>
 </body>
 </html>
 `;

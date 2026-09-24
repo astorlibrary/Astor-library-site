@@ -84,7 +84,7 @@ const books = [
     image: 'The Yellow Paper and The Giant Wistaria Main Cover.png',
     purchaseUrl: 'https://mybook.to/J4dveV',
     label: 'Two stories · 1891–92',
-    deck: 'Gilman’s two stories appeared seven months apart in The New England Magazine; this edition restores their shared publication world while recording important differences among surviving texts.',
+    deck: 'Gilman’s two stories appeared seven months apart in The New England Magazine; this edition prints them together and records the important differences among the surviving texts.',
     editionIncludes: [
       'Explanatory footnotes',
       'Historical and biographical context',
@@ -105,7 +105,7 @@ const books = [
     ],
     editorial: [
       'Footnotes clarify period language and references, while longer sections provide biographical, legal, medical and domestic context for the two stories.',
-      'Variant readings and reception claims are stated with their evidential limits so that readers can distinguish textual history from later anecdote.'
+      'Where the texts differ, or a story told about the stories cannot be proved, the notes say so.'
     ],
     topics: [
       { title: 'Domestic authority', body: 'Marriage, medical advice and the organisation of the home shape how each story’s events can be read.' },
@@ -140,7 +140,7 @@ const books = [
       'The edition follows the first edition in substantive wording while modernising spelling, punctuation and capitalisation. Fourteen editorial parts provide reference points in the otherwise continuous narrative.'
     ],
     editorial: [
-      'Original notes and summaries support the modernised reading text while documenting every broader historical account through a chronology, glossary and sources.',
+      'Notes and summaries accompany a modernised text, with a chronology, a glossary and sources for the history.',
       'Essays examine Behn’s disputed Surinam visit, real colonists named in the book, Willoughbyland, seventeenth-century slave trading, Coramantien and the work’s later theatrical and literary history.'
     ],
     topics: [
@@ -156,7 +156,7 @@ const books = [
     image: 'Michael Robartes Main Cover.png',
     purchaseUrl: 'https://mybook.to/1sCoD',
     label: 'Poetry collection · 1921',
-    deck: 'Yeats’s fifteen-poem collection is presented in its Cuala Press form, including Easter, 1916 and The Second Coming, with later alterations recorded rather than silently substituted.',
+    deck: 'Yeats’s fifteen poems as the Cuala Press first printed them, including Easter, 1916 and The Second Coming, with his later changes recorded rather than silently substituted.',
     editionIncludes: [
       'Original explanatory notes throughout',
       'Poem summaries and historical context',
@@ -488,7 +488,7 @@ const hardbacks = [
     paperbackImage: 'A Victorian Bonfire Night Main Cover.png',
     paperbackPurchaseUrl: 'https://mybook.to/KiZHRv',
     deck: 'Victorian writing, folklore, reporting and original historical chapters trace the changing Fifth of November.',
-    editorial: 'The hardback contains the same annotated collection and documented historical apparatus as the paperback in a casebound format.'
+    editorial: 'Bound in hardback, with the paperback’s annotated collection and historical chapters.'
   },
   {
     href: '/books/the-odyssey/',
@@ -501,8 +501,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/rwDKnWr',
     paperbackImage: 'The Odyssey.png',
     paperbackPurchaseUrl: 'https://mybook.to/uAMn',
-    deck: 'Odysseus’s return to Ithaca is presented in Samuel Butler’s complete prose translation with book-by-book reading support.',
-    editorial: 'The hardback and paperback provide the same complete translation, summaries, explanatory notes and historical context.'
+    deck: 'Odysseus’s return to Ithaca, in Samuel Butler’s complete prose translation, with notes book by book.',
+    editorial: 'The same complete translation, summaries, notes and historical context as the paperback.'
   },
   {
     href: '/books/the-iliad/',
@@ -515,8 +515,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/VHZtnd',
     paperbackImage: 'The Iliad.png',
     paperbackPurchaseUrl: 'https://mybook.to/qXcAI7T',
-    deck: 'Homer’s epic of Achilles’ anger is presented in Samuel Butler’s complete prose translation with support for all twenty-four books.',
-    editorial: 'The hardback and paperback contain the same complete text, summaries, annotations and contextual material.'
+    deck: 'Homer’s epic of the anger of Achilles, in Samuel Butler’s complete prose translation, with notes on all twenty-four books.',
+    editorial: 'The same complete text, summaries, notes and background as the paperback.'
   },
   {
     href: '/books/the-aeneid/',
@@ -529,8 +529,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/rdk9fx',
     paperbackImage: 'The Aeneid.png',
     paperbackPurchaseUrl: 'https://mybook.to/ZdOQoGv',
-    deck: 'Aeneas’s journey from Troy to Italy appears in John Dryden’s complete verse translation with notes on epic, history and Rome.',
-    editorial: 'The hardback is a casebound format of the Astor edition available alongside the existing paperback.'
+    deck: 'Aeneas’s journey from Troy to Italy, in John Dryden’s complete verse translation, with notes on epic, history and Rome.',
+    editorial: 'Dryden’s translation and the notes, as in the paperback, in a hardback binding.'
   },
   {
     href: '/books/sleepy-hollow-and-other-stories/',
@@ -543,8 +543,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/MPDvt5',
     paperbackImage: 'Sleepy Hollow Main Cover.png',
     paperbackPurchaseUrl: 'https://mybook.to/mlEu80z',
-    deck: 'Twelve complete American supernatural stories are joined by notes, publication history and a history of their later Halloween associations.',
-    editorial: 'The hardback and paperback contain the same twelve-story annotated collection, chronology, glossary and historical material.'
+    deck: 'Twelve complete American supernatural stories, with notes, publication history and an account of how they became Halloween reading.',
+    editorial: 'The same twelve stories, notes, chronology, glossary and history as the paperback.'
   },
   {
     href: '/books/shakespeares-sonnets/',
@@ -557,8 +557,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/bVlnW',
     paperbackImage: "Shakespeare's Sonnets Main Cover.png",
     paperbackPurchaseUrl: 'https://mybook.to/EPIxTc',
-    deck: 'All 154 sonnets appear in the 1609 order with a headnote and same-page explanation for every poem.',
-    editorial: 'The hardback offers the same complete sonnet sequence and page-by-page reading support as the paperback.'
+    deck: 'All 154 sonnets in the 1609 order, each with a headnote and an explanation on the same page.',
+    editorial: 'All 154 sonnets with the same notes as the paperback.'
   },
   {
     href: '/books/dorian-gray/',
@@ -571,8 +571,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/QmZR',
     paperbackImage: 'Picture of Dorian Gray.png',
     paperbackPurchaseUrl: 'https://mybook.to/zizDNb',
-    deck: 'Wilde’s novel of beauty, influence and concealed corruption is available as a casebound Astor edition.',
-    editorial: 'The hardback is presented as a format choice beside the existing Astor paperback edition.'
+    deck: 'Wilde’s only novel, with a comparison of the 1890 magazine and 1891 book texts, notes on aestheticism and its reception, and a glossary.',
+    editorial: 'Identical inside to the Astor paperback, in a hardback binding.'
   },
   {
     href: '/books/the-great-gatsby/',
@@ -585,8 +585,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/YjArgN',
     paperbackImage: 'The Great Gatsby Main Cover.png',
     paperbackPurchaseUrl: 'https://mybook.to/wj3s',
-    deck: 'Fitzgerald’s first-edition text is accompanied by footnotes, chapter recaps and historical context for New York and 1922.',
-    editorial: 'The hardback and paperback contain the same annotated text, chapter support, chronology and publication history.'
+    deck: 'Fitzgerald’s first-edition text, with footnotes, chapter recaps and background on New York in 1922.',
+    editorial: 'The same annotated text, chapter recaps, chronology and publication history as the paperback.'
   },
   {
     href: '/books/dickens-at-christmas/',
@@ -600,7 +600,7 @@ const hardbacks = [
     paperbackImage: 'Dickens at Christmas Main Cover.png',
     paperbackPurchaseUrl: 'https://mybook.to/mUpuk0',
     deck: 'Four complete Christmas books bring Scrooge, Trotty Veck, the Peerybingles and Redlaw into one annotated volume.',
-    editorial: 'The hardback and paperback contain the same four unabridged texts with headnotes, summaries, notes and historical context.'
+    editorial: 'The same four complete books, with the paperback’s headnotes, summaries, notes and historical context.'
   },
   {
     href: '/books/a-victorian-christmas/',
@@ -613,8 +613,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/Urvaf2',
     paperbackImage: 'A Victorian Christmas Main Cover.png',
     paperbackPurchaseUrl: 'https://mybook.to/NUduL',
-    deck: 'The nineteenth-century histories of trees, cards, crackers, food, carols, charity and Christmas literature are brought into one documented account.',
-    editorial: 'The hardback is a casebound format of the existing Astor cultural history, with the same chapters, primary texts and historical apparatus.'
+    deck: 'How the Victorians made Christmas: the tree, cards, crackers, food, carols, charity and Christmas books, with sources throughout.',
+    editorial: 'Identical inside to the paperback: the same chapters, period texts and sources.'
   }
 ];
 

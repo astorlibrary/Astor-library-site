@@ -210,7 +210,9 @@ function render() {
   const last = items[items.length - 1].year;
   const summary = el('p', { class: 'astor-tl-summary', text: state.view === 'books'
     ? items.length + (items.length === 1 ? ' book' : ' books') + ', first published ' + formatYear(first) + ' to ' + formatYear(last) + '. Open a book to see its own dates.'
-    : items.length + (items.length === 1 ? ' date' : ' dates') + ', ' + formatYear(first) + ' to ' + formatYear(last) + '.' });
+    : items.length > 100
+      ? 'Dates from every book, ' + formatYear(first) + ' to ' + formatYear(last) + '. Jump to a century, or untick a kind of date, to narrow the list.'
+      : items.length + (items.length === 1 ? ' date' : ' dates') + ', ' + formatYear(first) + ' to ' + formatYear(last) + '.' });
   const markedBook = state.view === 'events' && state.mark && books.find(book => book.slug === state.mark);
   if (markedBook) {
     summary.append(' The dates for ' + markedBook.title + ' are marked. ', el('button', {

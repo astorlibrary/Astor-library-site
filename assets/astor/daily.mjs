@@ -84,8 +84,8 @@ function renderStrip(index, day) {
 function renderPuzzle(index, day) {
   const questions = dailyRound(index, day);
   if (questions.length < 3) {
-    return emptyState(gameMount, 'Not enough books yet. Try the single-book games.', [
-      { href: '/play/', label: 'Play & revise' }
+    return emptyState(gameMount, 'Not enough books yet. Try a quiz on one book.', [
+      { href: '/play/', label: 'Revise' }
     ]);
   }
 
@@ -100,7 +100,7 @@ function renderPuzzle(index, day) {
       if (isRemembering()) recordDaily({ score: result.score, total: result.total, marks }, day);
       window.setTimeout(() => renderDone({ score: result.score, total: result.total, marks }, result.total, day), 0);
     },
-    endLinks: [{ href: '/play/', label: 'More games' }]
+    endLinks: [{ href: '/play/', label: 'More quizzes' }]
   });
   round.start();
 }
@@ -133,7 +133,7 @@ function renderDone(result, total, day) {
     }
   });
   row.append(share);
-  row.append(el('a', { class: 'button secondary', href: '/play/', text: 'Play something else' }));
+  row.append(el('a', { class: 'button secondary', href: '/play/', text: 'Try another quiz' }));
   row.append(el('a', { class: 'button secondary', href: '/my-library/', text: 'My library' }));
   panel.append(row);
   panel.append(el('p', { class: 'astor-inline-note', text: 'A filled square is a right answer.' }));

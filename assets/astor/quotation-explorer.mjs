@@ -213,10 +213,13 @@ function clearAll() {
 function render() {
   const shown = quotations.filter(quotation => passes(quotation));
   const titles = new Set(shown.map(quotation => quotation.bookSlug));
+  // Before anything is chosen, a total for the whole library reads as a
+  // backlog rather than a way in, so the count waits for a filter or search.
+  const narrowed = Boolean(state.query) || KEYS.some(key => state[key]);
   clear(countNode);
-  countNode.append(shown.length
-    ? shown.length + (shown.length === 1 ? ' quotation' : ' quotations') + ' from ' + titles.size + (titles.size === 1 ? ' book' : ' books')
-    : 'No quotations match');
+  countNode.append(!shown.length ? 'No quotations match'
+    : !narrowed ? 'Every quotation in the library. Choose a book, theme or technique to narrow the list.'
+    : shown.length + (shown.length === 1 ? ' quotation' : ' quotations') + ' from ' + titles.size + (titles.size === 1 ? ' book' : ' books'));
 
   clear(results);
   const chips = activeChips();
@@ -236,7 +239,7 @@ function render() {
     results.append(el('p', { class: 'astor-more' }, [
       el('button', {
         class: 'button secondary', type: 'button',
-        text: 'Show ' + Math.min(PAGE, remaining) + ' more (' + remaining + ' left)',
+        text: 'Show ' + Math.min(PAGE, remaining) + ' more',
         onclick: () => {
           const before = state.shown;
           state.shown += PAGE;

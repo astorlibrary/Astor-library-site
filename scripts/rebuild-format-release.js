@@ -16,10 +16,12 @@ const collectionOrder = [
   'Modern Classics'
 ];
 const collectionIntroductions = {
-  'Ancient & Epic': 'The <em>Iliad</em>, <em>Odyssey</em> and <em>Aeneid</em> together in the Ancient &amp; Epic series.',
-  Shakespeare: 'The complete Sonnets in the distinct cover system of The Astor Shakespeare.',
-  Victorian: 'Victorian fiction and seasonal collections, from Dorian Gray to Christmas and the Fifth of November.',
-  'American Classics': 'Fitzgerald&rsquo;s <em>The Great Gatsby</em> and a collection tracing classic American stories into the Halloween tradition.'
+  'Ancient & Epic': 'Homer&rsquo;s <em>Iliad</em> and <em>Odyssey</em> in Samuel Butler&rsquo;s prose, and Virgil&rsquo;s <em>Aeneid</em> in John Dryden&rsquo;s verse.',
+  'Renaissance & Early Modern': 'Milton&rsquo;s <em>Paradise Lost</em>, in the twelve books of 1674.',
+  Shakespeare: 'All 154 sonnets in the 1609 order, with a note beside every poem.',
+  'Romantic & Regency': 'Mary Shelley&rsquo;s <em>Frankenstein</em> and Coleridge&rsquo;s <em>Rime of the Ancient Mariner</em>.',
+  Victorian: '<em>Dracula</em>, <em>The Moonstone</em>, <em>Dorian Gray</em> and <em>The War of the Worlds</em>; Dickens&rsquo;s Christmas books, together and one by one; and three seasonal anthologies.',
+  'American Classics': '<em>Moby-Dick</em>, <em>The Great Gatsby</em>, <em>The Call of the Wild</em>, <em>The Red Badge of Courage</em> and a collection of American Halloween stories.'
 };
 
 function escapeHtml(value) {
@@ -220,8 +222,8 @@ function hardbackPage(hardbacks) {
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Hardback Editions | Astor Library</title><meta name="description" content="Browse Astor Library hardback editions across epic, Shakespeare, Victorian and American literature, with matched paperback links on every book page."><link rel="stylesheet" href="/assets/styles.css"></head>
 <body>${header()}
 <main id="main-content" class="page-wrap hardback-page">
-  <section class="hardback-hero"><div class="hardback-hero-copy"><p class="kicker">Books to keep and give</p><h1>Hardback editions.</h1><p class="deck">A separate shelf for Astor books available in hardback: annotated classics, epic poetry, Shakespeare and seasonal collections. Each cover below is the hardback artwork for that title.</p><div class="button-row"><a class="button primary" href="#hardback-shelf">Browse the hardback shelf</a><a class="button secondary" href="/library/">All Astor books</a></div></div><nav class="hardback-hero-covers" aria-label="Highlighted hardback editions">${heroCovers}</nav></section>
-  <section class="hardback-editorial-note" aria-label="About Astor hardback editions"><p><strong>Two formats, one clear route.</strong> Every hardback opens the book&rsquo;s main Astor page, where its hardback and paperback covers sit together with separate retailer links.</p><p>The section is organised by the established Astor collections so that each cover remains beside books from its own visual series.</p></section>
+  <section class="hardback-hero"><div class="hardback-hero-copy"><p class="kicker">Books to keep and give</p><h1>Hardback editions.</h1><p class="deck">${hardbacks.length} Astor books are also published in hardback. The covers on this page are the hardback covers.</p><div class="button-row"><a class="button primary" href="#hardback-shelf">Browse the hardback shelf</a><a class="button secondary" href="/library/">All Astor books</a></div></div><nav class="hardback-hero-covers" aria-label="Highlighted hardback editions">${heroCovers}</nav></section>
+  <section class="hardback-editorial-note" aria-label="About Astor hardback editions"><p>Each cover opens the book&rsquo;s own page, where the hardback and the paperback sit side by side with a buying link for each. The shelves follow the Astor collections.</p></section>
   ${sections}
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/library/">Browse all books</a><a href="/explore/">Search Astor Library <span aria-hidden="true">&rarr;</span></a></nav>
 </main>

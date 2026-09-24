@@ -1125,7 +1125,7 @@ function addGlobalNavigation(html, source) {
       <a class="nav-link" href="/resources/"${current(resourcesCurrent, href === '/resources/')}><span class="astor-nav-number" aria-hidden="true">03</span><span>Free resources</span></a>
       <a class="nav-link" href="/study/"${current(studyCurrent, href === '/study/')}><span class="astor-nav-number" aria-hidden="true">04</span><span>Study editions</span></a>
       <a class="nav-link" href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}><span class="astor-nav-number" aria-hidden="true">05</span><span>Passage Room</span></a>
-      <a class="nav-link" href="/play/"${current(playCurrent, href === '/play/')}><span class="astor-nav-number" aria-hidden="true">06</span><span>Play &amp; revise</span></a>
+      <a class="nav-link" href="/play/"${current(playCurrent, href === '/play/')}><span class="astor-nav-number" aria-hidden="true">06</span><span>Revise</span></a>
     </div>
     <div class="astor-nav-utilities">
       <a class="astor-utility-link astor-search-link" href="/explore/" data-astor-palette${current(searchCurrent, href === '/explore/')}><span aria-hidden="true"></span>Search</a>
@@ -1139,7 +1139,7 @@ function addGlobalNavigation(html, source) {
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
   <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/hardbacks/">Hardback editions</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
   <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/seasons/">The seasonal library</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
-  <div class="astor-footer-group"><h2>Play &amp; explore</h2><a href="/play/">Revision games</a><a href="/today/">Today</a><a href="/explore/quotations/">Quotation explorer</a><a href="/explore/timeline/">Timeline</a><a href="/explore/characters/">Character maps</a><a href="/explore/themes/">Themes</a><a href="/explore/techniques/">Technique glossary</a><a href="/explore/map/">Map of settings</a><a href="/explore/compare/">Compare two texts</a><a href="/for-teachers/">For teachers</a><a href="/my-library/">My library</a></div>
+  <div class="astor-footer-group"><h2>Revise &amp; explore</h2><a href="/play/">Revision quizzes</a><a href="/today/">Today</a><a href="/explore/quotations/">Quotation explorer</a><a href="/explore/timeline/">Timeline</a><a href="/explore/characters/">Character maps</a><a href="/explore/themes/">Themes</a><a href="/explore/techniques/">Technique glossary</a><a href="/explore/map/">Map of settings</a><a href="/explore/compare/">Compare two texts</a><a href="/for-teachers/">For teachers</a><a href="/my-library/">My library</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact &amp; support</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;
 

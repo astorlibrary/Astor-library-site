@@ -76,10 +76,10 @@ const collectionCopy = {
   },
   'victorian/index.html': {
     title: 'Victorian Literature | Astor Library',
-    description: 'Victorian editions by Dickens, Brontë, Hardy, Stevenson, Stoker, Wilde, Wells and Conan Doyle, including Jane Eyre and Christmas writing, with notes and context.',
+    description: 'Victorian editions by Dickens, Brontë, Hardy, Stevenson, Stoker, Wilde, Wells, Conan Doyle, Henry James and Ibsen, including Jane Eyre and Christmas writing, with notes and context.',
     kicker: 'Period',
     heading: 'Victorian.',
-    deck: 'Dickens and Bront&euml; join Hardy, Stevenson, Stoker, Wilde, Wells and Conan Doyle in a collection moving between Christmas rooms, city streets, country houses, moors, laboratories and consulting rooms. Each edition places the work beside its publication and social history.'
+    deck: 'Dickens and Bront&euml; join Hardy, Stevenson, Stoker, Wilde, Wells, Conan Doyle, Henry James and Ibsen in a collection moving between Christmas rooms, city streets, country houses, moors, laboratories and consulting rooms. Each edition places the work beside its publication and social history.'
   },
   'modern/index.html': {
     title: 'Modern Classic Literature | Astor Library',

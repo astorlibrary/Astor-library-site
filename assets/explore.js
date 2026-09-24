@@ -40,8 +40,8 @@
       if (show) shown += 1;
     }
 
-    count.textContent = matching > shown
-      ? 'Showing ' + shown + ' of ' + matching
+    count.textContent = !words.length && activeType === 'all' ? ''
+      : matching > shown ? 'Showing ' + shown + ' of ' + matching
       : matching + ' ' + (matching === 1 ? 'result' : 'results');
     empty.hidden = matching !== 0;
     more.hidden = matching <= shown;

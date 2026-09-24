@@ -203,7 +203,7 @@ for (const book of entries) {
 }
 
 for (const tool of [
-  ['Tool', 'Play and revise', '/play/', 'Every revision game in one place', 'play games revise quiz revision'],
+  ['Tool', 'Revise', '/play/', 'Quizzes, flashcards and the essay planner', 'play games revise quiz quizzes revision flashcards'],
   ['Tool', 'Today’s questions', '/today/', "A passage, a book and five questions", 'daily puzzle today streak'],
   ['Tool', 'Quotation explorer', '/explore/quotations/', 'Filter every quotation by theme, character and technique', 'quotations explorer filter'],
   ['Tool', 'Literature timeline', '/explore/timeline/', 'Every book in order, with its dates', 'timeline history dates'],

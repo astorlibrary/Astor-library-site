@@ -1031,7 +1031,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<aside class="explore-hero-note"><p>Use the search field for a title or subject. Use the filters to limit results to books, guides, study editions, authors, passages or collections.</p></aside></section>' +
   '<section class="explore-tools" aria-label="Search everything">' +
   '<label for="explore-search">What are you looking for?</label>' +
-  '<div class="explore-search-row"><input id="explore-search" type="search" autocomplete="off" placeholder="Try Austen, tragedy, quotation or Gothic"><p id="explore-count" aria-live="polite">' + entries.length + ' results</p></div>' +
+  '<div class="explore-search-row"><input id="explore-search" type="search" autocomplete="off" placeholder="Try Austen, tragedy, quotation or Gothic"><p id="explore-count" aria-live="polite"></p></div>' +
   '<div class="explore-filters">' +
   '<button type="button" class="explore-filter is-active" data-filter="all" aria-pressed="true">Everything</button>' +
   '<button type="button" class="explore-filter" data-filter="book" aria-pressed="false">Books</button>' +
@@ -1059,7 +1059,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<a href="/explore/techniques/"><span>Technique glossary</span><p>What each term means, with a line from a book using it.</p></a>' +
   '<a href="/explore/map/"><span>Map of settings</span><p>Where the books are set, from Inverness to Transylvania.</p></a>' +
   '<a href="/explore/compare/"><span>Compare two texts</span><p>Two books side by side, with paired quotations.</p></a>' +
-  '<a href="/play/"><span>Play &amp; revise</span><p>Nine revision games, flashcards and an essay planner.</p></a>' +
+  '<a href="/play/"><span>Revise</span><p>Quizzes on each book, flashcards and an essay planner.</p></a>' +
   '<a href="/for-teachers/"><span>For teachers</span><p>Lesson starters, printable worksheets, discussion sheets and a projector mode.</p></a>' +
   '</section>' +
   '<section class="explore-results" aria-label="Search results">' + entryCards + '</section>' +
@@ -1163,7 +1163,7 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
   // complete directory; they are listed by hand because there are few of them
   // and each needs a sentence rather than a category.
   '<section class="index-group" id="tools"><h2><a href="/play/">Study tools</a></h2><div class="index-links">' + [
-    ['/play/', 'Play &amp; revise', 'Nine revision games, flashcards and an essay planner'],
+    ['/play/', 'Revise', 'Quizzes on each book, flashcards and an essay planner'],
     ['/play/who-said-it/', 'Who said it?', 'Name the speaker of a line'],
     ['/play/fill-the-line/', 'Fill the line', 'Put the missing words back into a speech'],
     ['/play/theme-match/', 'Theme match', 'Decide which theme a quotation carries'],
@@ -1171,7 +1171,7 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
     ['/play/character-identification/', 'Who is this?', 'A character described without being named'],
     ['/play/order-the-plot/', 'Order the plot', 'Put acts, chapters and scenes back in sequence'],
     ['/play/which-book/', 'Which book?', 'One line, the whole library'],
-    ['/play/context-sprint/', 'Context sprint', 'Place an event in the right year'],
+    ['/play/context-sprint/', 'Which year?', 'Place an event in the right year'],
     ['/play/opening-lines/', 'Opening lines', 'Name the book from its first sentence'],
     ['/play/flashcards/', 'Flashcards', 'Spaced repetition over a title’s quotations'],
     ['/play/essay-forge/', 'Essay planner', 'Build a plan paragraph by paragraph'],
