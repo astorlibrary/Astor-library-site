@@ -1197,7 +1197,9 @@ function addBookIdentity(html, book) {
   });
   // The symbol goes beside the author's name at the top of the page.
   let marked = false;
-  html = html.replace(/(<p class="kicker">)/, (whole, open) => {
+  // The author's name may already be a link (addBookAuthorLink runs first and
+  // renames the class), and the symbol belongs beside it either way.
+  html = html.replace(/(<p class="kicker(?: book-author-kicker)?">)/, (whole, open) => {
     if (marked) return whole;
     marked = true;
     return open + motifSvg(book, 22);
@@ -1231,7 +1233,9 @@ function addPlainBookIdentity(html, source) {
     return '<main' + attributes + ' style="--book-accent: ' + accent + '" data-motif="' + motif + '">';
   });
   let marked = false;
-  html = html.replace(/(<p class="kicker">)/, (whole, open) => {
+  // The author's name may already be a link (addBookAuthorLink runs first and
+  // renames the class), and the symbol belongs beside it either way.
+  html = html.replace(/(<p class="kicker(?: book-author-kicker)?">)/, (whole, open) => {
     if (marked) return whole;
     marked = true;
     return open + motifSvgByName(motif, 22);

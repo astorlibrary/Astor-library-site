@@ -33,7 +33,17 @@ const cards = additions.map(function (edition) {
     '</a>';
 }).join('');
 
-html = html.replace(/<a class="study-card" href="https:\/\/mybook\.to\/lhbh"[^>]*>[\s\S]*?(?=<\/section><section class="section-title" id="paired-editions")/g, '');
+// The added cards sit between two comments so that a rerun replaces them. The
+// first version found them by the first card's retailer link, and when that
+// book gained its own study page the link changed, nothing was removed and
+// every card went in twice.
+const START = '<!-- study-additions:start -->';
+const END = '<!-- study-additions:end -->';
+if (html.includes(START)) {
+  html = html.slice(0, html.indexOf(START)) + html.slice(html.indexOf(END) + END.length);
+} else {
+  html = html.replace(/<a class="study-card" href="https:\/\/mybook\.to\/lhbh"[^>]*>[\s\S]*?(?=<\/section><section class="section-title" id="paired-editions")/g, '');
+}
 // Baseline hub cards whose study edition has an on-site page: link the page,
 // keep the retailer link as data-buy-url, and label the button accordingly.
 // Baseline hub cards that open an on-site page. The hand-written pages are
@@ -61,7 +71,7 @@ html = html.replace(
   '$1Open the study page$2'
 );
 if (!html.includes(marker)) throw new Error('Could not find the paired-editions marker in study/index.html');
-html = html.replace(marker, cards + marker);
+html = html.replace(marker, START + cards + END + marker);
 fs.writeFileSync(file, html);
 
 console.log('Added ' + additions.length + ' current study editions to study/index.html');

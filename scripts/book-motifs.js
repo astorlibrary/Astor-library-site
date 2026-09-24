@@ -90,6 +90,15 @@ const MOTIFS = {
   pumpkin: '<path d="M12 7.4C9.8 6.4 6.3 6.7 4.4 8.7 2.7 10.5 2.5 14.6 3.9 17.1c1.4 2.5 5 3.5 8.1 2.5 3.1 1 6.7 0 8.1-2.5 1.4-2.5 1.2-6.6-.5-8.4-1.9-2-5.4-2.3-7.6-1.3Z"/><path d="M9.3 7.1c-1.9 2.6-2.1 9.6.1 12.8"/><path d="M14.7 7.1c1.9 2.6 2.1 9.6-.1 12.8"/><path d="M12 7.4c-.1-1.5.3-2.7 1.3-3.6"/><path d="M13.3 4.8c1.1-.8 2.5-.9 3.6-.2-1.1.9-2.4 1-3.6.2Z"/>',
   // A roof over walls that are only dotted in: the house that is not there.
   hauntedhouse: '<path d="M3.5 11.5 12 4.5l8.5 7"/><path d="M16.6 8.3V5.3h2v4.3"/><path d="M5.5 10.3v10.2h13V10.3" stroke-dasharray="0 2.25"/><path d="M10.6 13.4h2.8v2.8h-2.8z"/>',
+  // Eight for the Dickens Christmas books and the Shakespeare records of September 2026.
+  bell: '<path d="M12 6.6V4.2"/><path d="M10.4 4.2h3.2"/><path d="M5.5 17.2 7 16c1-1.5 1-3.5 1-5 0-2.6 1.8-4.4 4-4.4s4 1.8 4 4.4c0 1.5 0 3.5 1 5l1.5 1.2Z"/><circle cx="12" cy="19.3" r="1.3"/>',
+  retort: '<path d="M6.3 10.9C6.6 6.9 10.3 5.4 12.9 7.1L21 12.9"/><path d="M10.6 10.6c-.2-1.4.8-2.1 1.9-1.4l7.9 5"/><path d="M21 12.9c.4.5.1 1.1-.6 1.3"/><path d="M11 11.1a4.4 4.4 0 1 1-4.7-.2"/><path d="M4.4 16c2.4.9 5.2.9 7.6 0"/><path d="M8.2 19.4v1.6"/><path d="M4.8 21h6.8"/>',
+  kettle: '<path d="M6 19.8h12"/><path d="M6.8 19.8c-.8-3.4-.3-6.9 2.3-8.6h6c2.6 1.7 3.1 5.2 2.3 8.6"/><path d="M11 11.2v-.9a1 1 0 0 1 2 0v.9"/><path d="M8.6 11.2c0-4.3 6.8-4.3 6.8 0"/><path d="M7.1 14.3 3.8 11.6l-.5 1.5 3.4 3.2"/><path d="M3.4 9.4c-.6-.8-.1-1.6.5-2.2.6-.6.9-1.4.4-2.1"/>',
+  anemone: '<ellipse cx="12" cy="6.3" rx="2.2" ry="1.5" transform="rotate(-90 12 6.3)"/><ellipse cx="14.68" cy="7.85" rx="2.2" ry="1.5" transform="rotate(-30 14.68 7.85)"/><ellipse cx="14.68" cy="10.95" rx="2.2" ry="1.5" transform="rotate(30 14.68 10.95)"/><ellipse cx="12" cy="12.5" rx="2.2" ry="1.5" transform="rotate(90 12 12.5)"/><ellipse cx="9.32" cy="10.95" rx="2.2" ry="1.5" transform="rotate(150 9.32 10.95)"/><ellipse cx="9.32" cy="7.85" rx="2.2" ry="1.5" transform="rotate(210 9.32 7.85)"/><circle cx="12" cy="9.4" r="1.6" fill="currentColor" fill-opacity=".35"/><path d="M12 13.9V21"/><path d="M12 18.1c-2.1-.2-3.5-1.4-4.1-3.1 2.1 0 3.5 1.1 4.1 3.1Z"/>',
+  tankard: '<path d="M7 7.2h8.5v12.3a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1Z"/><path d="M15.5 9.6h1.7a2 2 0 0 1 2 2v3.4a2 2 0 0 1-2 2h-1.7"/><path d="M6.4 7.2h9.7c0-1.6-1.2-2.6-2.6-2.6H9c-1.4 0-2.6 1-2.6 2.6Z"/><path d="M7 11h8.5"/><path d="M7 16.6h8.5"/>',
+  basket: '<path d="M3.5 10.5h17"/><path d="M4.6 10.5 6.2 20h11.6l1.6-9.5"/><path d="M9.2 10.5l.4 9.5"/><path d="M12 10.5V20"/><path d="M14.8 10.5l-.4 9.5"/><path d="M5.4 15.2h13.2"/><path d="M7.5 10.5c.2-2.6 1.5-4 3-4"/><path d="M16.5 10.5c-.2-2.6-1.5-4-3-4"/><path d="M10.5 6.5h3"/>',
+  mortar: '<path d="M4.5 12h15c0 4.3-3.2 7-7.5 7s-7.5-2.7-7.5-7Z"/><path d="M9.2 19l-.9 1.8h7.4l-.9-1.8"/><path d="M13 12l5.6-7.6a1.3 1.3 0 0 1 2.1 1.5L14.6 12"/>',
+  ladder: '<path d="M4.5 4.5h15"/><path d="M8 4.5V20.5"/><path d="M16 4.5V20.5"/><path d="M8 8.4h8"/><path d="M8 12.2h8"/><path d="M8 16h8"/><path d="M8 19.8h8"/><path d="M8 4.5c-.9.6-.9 1.6 0 2.2"/><path d="M16 4.5c.9.6.9 1.6 0 2.2"/>',
   fleuron: '<path d="M12 4c1.9 2.4 3.5 4.2 4.7 5.4 2 1.9 2 4.2 0 6.1-1.2 1.2-2.8 3-4.7 5.4-1.9-2.4-3.5-4.2-4.7-5.4-2-1.9-2-4.2 0-6.1C8.5 8.2 10.1 6.4 12 4Z"/><circle cx="12" cy="12.4" r="2.1"/>'
 };
 
@@ -167,7 +176,15 @@ const BOOK_MOTIFS = {
   'the-house-on-the-borderland': 'chasm',
   'm-r-james-collected-ghost-stories': 'whistle',
   'sleepy-hollow-and-other-stories': 'pumpkin',
-  'american-ghost-stories': 'hauntedhouse'
+  'american-ghost-stories': 'hauntedhouse',
+  'the-chimes': 'bell',
+  'the-haunted-man-and-the-ghosts-bargain': 'retort',
+  'cricket-on-the-hearth': 'kettle',
+  'venus-and-adonis': 'anemone',
+  'henry-iv-part-2': 'tankard',
+  'merry-wives-of-windsor': 'basket',
+  'alls-well-that-ends-well': 'mortar',
+  'the-two-gentlemen-of-verona': 'ladder'
 };
 
 const BY_GENRE = [
