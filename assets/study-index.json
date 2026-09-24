@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 93,
-    "quotations": 2088,
-    "characters": 844,
+    "books": 94,
+    "quotations": 2111,
+    "characters": 858,
     "themes": 236,
     "techniques": 244,
-    "timelineEvents": 1076,
-    "places": 539
+    "timelineEvents": 1088,
+    "places": 545
   },
   "books": [
     {
@@ -33959,8 +33959,8 @@
         {
           "id": "disease-imagery",
           "name": "Disease and rot",
-          "canonicalName": "Disease and rot",
-          "definition": "A sustained figurative field that describes a political situation as a body's illness.",
+          "canonicalName": "Disease imagery",
+          "definition": "Figurative language that describes a state or a society as a sick body.",
           "bookDefinition": "A sustained figurative field that describes a political situation as a body's illness.",
           "inThisBook": "Denmark is rotten, an unweeded garden, an ulcer with a skin over it; the murder itself is a poison poured into a body, so the metaphor and the plot share a mechanism."
         },
@@ -36178,6 +36178,1477 @@
         {
           "href": "/books/merry-wives-of-windsor/",
           "why": "Falstaff transplanted into a citizen comedy, and a useful test of how much of him belongs to the history plays."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "henry-iv-part-2",
+      "title": "Henry IV, Part 2",
+      "author": "William Shakespeare",
+      "href": "/books/henry-iv-part-2/",
+      "studyHref": "",
+      "playHref": "/play/?book=henry-iv-part-2",
+      "form": "play",
+      "genre": "History play",
+      "period": "Shakespeare",
+      "setting": "England after the battle of Shrewsbury: Northumberland's castle at Warkworth, the Boar's Head in Eastcheap, the King's palace at Westminster, Gaultree Forest in Yorkshire, and Justice Shallow's house and orchard in Gloucestershire",
+      "written": "c. 1597-98",
+      "firstPublished": 1600,
+      "readingTime": 170,
+      "difficulty": 3,
+      "lengthNote": "About 3,300 lines in five acts, with a speech by Rumour before the first act and an epilogue after the last",
+      "openingLine": "Open your ears; for which of you will stop",
+      "summary": "The rebellion Hotspur led has failed at Shrewsbury, but the war goes on. Northumberland, Hotspur's father, raises a second rising with the Archbishop of York and then withdraws to Scotland, and Prince John ends it at Gaultree Forest by promising the rebels redress and arresting them once their army has gone home. King Henry, sleepless and ill, fears what his son will be as king. Prince Hal keeps company with Falstaff less and less; Falstaff, older and poorer, recruits soldiers in Gloucestershire, borrows a thousand pounds from an old acquaintance, Justice Shallow, and rides to London when the King dies, expecting to be made great. The new King Henry V keeps the Lord Chief Justice who once sent him to prison, and in the street after his coronation tells Falstaff he does not know him.",
+      "referenceStyle": "act.scene.line, Globe line numbering; Rumour's induction is numbered as 1.0",
+      "sourceText": {
+        "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
+        "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
+        "note": "Every quotation here is taken word for word from this text, and act, scene and line references follow the traditional Globe numbering, from which modern editions vary by a line or two. Rumour's induction is counted as scene 0 of the first act."
+      },
+      "structure": [
+        {
+          "id": "act-1",
+          "label": "Induction and Act I",
+          "title": "False news and true",
+          "summary": "Rumour boasts that he has spread word of a rebel victory at Shrewsbury. At Warkworth, Northumberland hears it from Lord Bardolph, then hears the truth from Morton: his son Hotspur is dead. He rages, then is told the Archbishop of York has risen. In London Falstaff, with a page the Prince has given him, dodges the Lord Chief Justice, who reminds him of the robbery at Gad's Hill, and complains that he cannot rid his purse of its consumption. At York the Archbishop and his allies debate whether they can fight without Northumberland.",
+          "scenes": [
+            {
+              "ref": "1.0",
+              "title": "Rumour",
+              "summary": "A figure painted full of tongues explains that he runs before the truth and has spread a false report of Hotspur's victory."
+            },
+            {
+              "ref": "1.1",
+              "title": "Warkworth",
+              "summary": "Northumberland reads Morton's face before Morton speaks, and turns his grief into a call for order to die."
+            },
+            {
+              "ref": "1.2",
+              "title": "Falstaff and the Chief Justice",
+              "summary": "A duel of insults about age and illness, a refused loan of a thousand pounds, and Falstaff's plan to turn diseases to commodity."
+            },
+            {
+              "ref": "1.3",
+              "title": "The rebels at York",
+              "summary": "Lord Bardolph argues from the builder who draws a house he cannot afford; the Archbishop condemns the fickle crowd that turned from Richard to Bolingbroke."
+            }
+          ]
+        },
+        {
+          "id": "act-2",
+          "label": "Act II",
+          "title": "Eastcheap and Warkworth",
+          "summary": "Mistress Quickly has Falstaff arrested for debt; he talks her out of the action and into lending him more. Prince Hal, tired and ashamed to admit he is sad at his father's sickness, reads a letter from Falstaff and plans to spy on him. Lady Percy persuades Northumberland not to join the Archbishop, reminding him that he left his own son to die. At the Boar's Head Doll Tearsheet quarrels with Pistol and makes up with Falstaff, while Hal and Poins, disguised as drawers, overhear Falstaff call the Prince a shallow young fellow. News of the war calls them all away.",
+          "scenes": [
+            {
+              "ref": "2.1",
+              "title": "The arrest",
+              "summary": "Fang and Snare try to arrest Falstaff; the Hostess recalls the day he promised to marry her; the Chief Justice tells him to pay."
+            },
+            {
+              "ref": "2.2",
+              "title": "Hal and Poins",
+              "summary": "The Prince talks of small beer and Poins's shirts, and says his heart bleeds inwardly for his father."
+            },
+            {
+              "ref": "2.3",
+              "title": "Lady Percy",
+              "summary": "Hotspur's widow describes him as the glass the young men of England dressed by, and Northumberland decides for Scotland."
+            },
+            {
+              "ref": "2.4",
+              "title": "The Boar's Head",
+              "summary": "Pistol's swaggering, Doll's tenderness to an old man, the disguised Prince, and the knock at the door that ends the night."
+            }
+          ]
+        },
+        {
+          "id": "act-3",
+          "label": "Act III",
+          "title": "The sleepless King and the old justice",
+          "summary": "At one in the morning the King envies his poorest subjects their sleep and remembers Richard's prophecy that Northumberland would turn against him. Warwick tells him the rebels' numbers are exaggerated and that Glendower is dead. In Gloucestershire Falstaff reaches Justice Shallow, who talks of the wild days he and Falstaff had at the Inns of Court and presents recruits named Mouldy, Shadow, Wart, Feeble and Bullcalf. The two strongest pay Bardolph to be released, and Falstaff lets them go. Alone, he mocks Shallow's lies about his youth and plans to fleece him.",
+          "scenes": [
+            {
+              "ref": "3.1",
+              "title": "Uneasy lies the head",
+              "summary": "The King's address to sleep, his memory of Richard's prophecy, and Warwick's reply that history has a pattern."
+            },
+            {
+              "ref": "3.2",
+              "title": "Shallow's recruits",
+              "summary": "Old Double is dead, the chimes at midnight are remembered, Feeble says a man can die but once, and money changes hands."
+            }
+          ]
+        },
+        {
+          "id": "act-4",
+          "label": "Act IV",
+          "title": "Gaultree and the Jerusalem Chamber",
+          "summary": "At Gaultree Forest Westmoreland and Prince John meet the rebels. John agrees that their grievances shall be redressed, drinks with their leaders, and waits until their army has dispersed before arresting the Archbishop, Mowbray and Hastings for treason. Falstaff takes a surrendering knight, Colevile, and praises sherris-sack. At Westminster the King collapses on hearing the news. The Prince, sitting by him, thinks him dead, takes the crown from his pillow and puts it on. The King wakes, accuses him of wishing his death, and is reconciled when Hal explains himself; he advises his son to keep the country busy with foreign wars, and dies in the chamber called Jerusalem.",
+          "scenes": [
+            {
+              "ref": "4.1-4.2",
+              "title": "Gaultree",
+              "summary": "The Archbishop's case for rebellion, John's promise, the rebels' army sent home, and the arrests."
+            },
+            {
+              "ref": "4.3",
+              "title": "Colevile and sack",
+              "summary": "A rebel yields to Falstaff's reputation; John is unimpressed; Falstaff explains why sober young men never come to anything."
+            },
+            {
+              "ref": "4.4",
+              "title": "The King's collapse",
+              "summary": "The King tells Clarence how to manage his brother and faints as good news arrives."
+            },
+            {
+              "ref": "4.5",
+              "title": "The crown",
+              "summary": "Hal takes the crown from the pillow; the King's rebuke, Hal's defence, and the last advice of a man who knows how he came by the crown."
+            }
+          ]
+        },
+        {
+          "id": "act-5",
+          "label": "Act V",
+          "title": "Harry Harry",
+          "summary": "In Gloucestershire Shallow entertains Falstaff, whose servant Davy asks favours for a friend who is a knave. At Westminster the Lord Chief Justice expects to be ruined by the new King; instead Henry V confirms him in office and tells his brothers that his wildness has died with his father. In Shallow's orchard Pistol brings the news of the old King's death and Falstaff sets out for London, declaring the laws of England at his command. The Hostess and Doll are arrested after a man is killed. At the coronation procession Falstaff calls out to the King, who banishes him and his companions from within ten miles of his person; the Chief Justice sends them to the Fleet.",
+          "scenes": [
+            {
+              "ref": "5.1",
+              "title": "Shallow's house",
+              "summary": "Davy's household business and his plea for William Visor; Falstaff plans to make Hal laugh at Shallow for six fashions."
+            },
+            {
+              "ref": "5.2",
+              "title": "The Chief Justice",
+              "summary": "The justice's defence of the day he sent the Prince to prison, and the new King's reply."
+            },
+            {
+              "ref": "5.3",
+              "title": "The orchard",
+              "summary": "Silence sings, Pistol arrives with his news, and Falstaff calls himself Fortune's steward."
+            },
+            {
+              "ref": "5.4-5.5",
+              "title": "The rejection",
+              "summary": "The beadles take away the Hostess and Doll; the procession passes; I know thee not, old man."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "hal",
+          "name": "Prince Hal",
+          "role": "Prince of Wales, then King Henry V",
+          "summary": "Less often on stage than in Part 1, and less easy in the tavern. He tells Poins his heart bleeds for his father but that weeping would look like hypocrisy, spies on Falstaff in disguise, and leaves the moment the news of war arrives. At his father's bedside he takes the crown too soon and has to explain himself. As king he keeps the justice who once imprisoned him and turns away Falstaff in public.",
+          "clue": "He speaks to a crown on a pillow as if it could hear him, and puts it on because he thinks the man beside it is dead.",
+          "firstAppearance": "2.2",
+          "traits": [
+            "guarded",
+            "self-aware",
+            "watchful",
+            "decisive"
+          ],
+          "relationships": [
+            {
+              "to": "king-henry",
+              "label": "son and heir of",
+              "kind": "family",
+              "stages": [
+                "act-4"
+              ]
+            },
+            {
+              "to": "falstaff",
+              "label": "outgrows and banishes",
+              "kind": "friendship",
+              "stages": [
+                "act-2",
+                "act-5"
+              ]
+            },
+            {
+              "to": "chief-justice",
+              "label": "was sent to prison by, then keeps as a father",
+              "kind": "mentor",
+              "stages": [
+                "act-1",
+                "act-5"
+              ]
+            },
+            {
+              "to": "lancaster",
+              "label": "brother of",
+              "kind": "family",
+              "stages": [
+                "act-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "falstaff",
+          "name": "Sir John Falstaff",
+          "role": "An old knight, Hal's companion",
+          "summary": "Older, poorer and more often ill than in Part 1. He owes the Hostess a hundred marks and borrows more, is refused a thousand pounds by the Chief Justice and gets one from Shallow, lets the fittest recruits buy their way out, and claims a knight who surrenders to his reputation. He still talks better than anyone, but the play keeps reminding him of his age: Doll's death's-head, Shallow's dead friends, the chimes at midnight. He expects the new king to make his fortune, and is sent to prison.",
+          "clue": "He sends his water to a doctor, a letter to an old woman he has sworn weekly to marry, and a page to the Prince who gave him the boy.",
+          "firstAppearance": "1.2",
+          "traits": [
+            "witty",
+            "ageing",
+            "resourceful",
+            "unscrupulous"
+          ],
+          "relationships": [
+            {
+              "to": "hal",
+              "label": "hopes to rise with",
+              "kind": "friendship",
+              "stages": [
+                "act-2",
+                "act-5"
+              ]
+            },
+            {
+              "to": "chief-justice",
+              "label": "spars with",
+              "kind": "rival",
+              "stages": [
+                "act-1",
+                "act-2",
+                "act-5"
+              ]
+            },
+            {
+              "to": "shallow",
+              "label": "borrows a thousand pounds from",
+              "kind": "friendship",
+              "stages": [
+                "act-3",
+                "act-5"
+              ]
+            },
+            {
+              "to": "hostess",
+              "label": "owes money to, and promised to marry",
+              "kind": "love",
+              "stages": [
+                "act-2"
+              ]
+            },
+            {
+              "to": "doll",
+              "label": "is loved by",
+              "kind": "love",
+              "stages": [
+                "act-2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "king-henry",
+          "name": "King Henry IV",
+          "role": "The dying king",
+          "summary": "He does not appear until the third act, awake at one in the morning and sick. He remembers Richard II's prophecy that Northumberland would turn on him, fears the reign his son will lead, and on his deathbed admits that he came by the crown by by-paths and indirect ways. His last advice is to keep restless minds busy with wars abroad.",
+          "clue": "He envies the ship-boy asleep on the mast, and learns too late that the Jerusalem he was to die in is a room in his own palace.",
+          "firstAppearance": "3.1",
+          "traits": [
+            "sleepless",
+            "guilty",
+            "politic",
+            "sick"
+          ],
+          "relationships": [
+            {
+              "to": "hal",
+              "label": "fears for, then blesses",
+              "kind": "family",
+              "stages": [
+                "act-4"
+              ]
+            },
+            {
+              "to": "northumberland",
+              "label": "was raised to the throne by, now fights",
+              "kind": "enemy",
+              "stages": [
+                "act-3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chief-justice",
+          "name": "The Lord Chief Justice",
+          "role": "Chief Justice of the King's Bench",
+          "summary": "He once sent the Prince to prison for striking him in court. He spends the play trying to bring Falstaff to account, and after the old King's death expects to lose everything. His defence, that he acted for the King's own law, persuades Henry V to keep him in office as a father to his youth. It is he who sends Falstaff to the Fleet.",
+          "clue": "He tells an old man that there is not a white hair in his face but should have its effect of gravity, and is answered with gravy.",
+          "firstAppearance": "1.2",
+          "traits": [
+            "stern",
+            "upright",
+            "patient",
+            "fearless"
+          ],
+          "relationships": [
+            {
+              "to": "falstaff",
+              "label": "tries to reform",
+              "kind": "rival",
+              "stages": [
+                "act-1",
+                "act-2",
+                "act-5"
+              ]
+            },
+            {
+              "to": "hal",
+              "label": "imprisoned, then counsels",
+              "kind": "mentor",
+              "stages": [
+                "act-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lancaster",
+          "name": "Prince John of Lancaster",
+          "role": "The King's younger son, general at Gaultree",
+          "summary": "Cold, capable and sober. He promises the rebels at Gaultree that their grievances will be redressed, and once their army has scattered he arrests their leaders, keeping to the letter of his word and giving God the credit. Falstaff says he drinks no wine and cannot be made to laugh.",
+          "clue": "He tells an archbishop that he pawned him no faith, only a promise about grievances.",
+          "firstAppearance": "4.2",
+          "traits": [
+            "cold",
+            "calculating",
+            "loyal"
+          ],
+          "relationships": [
+            {
+              "to": "archbishop",
+              "label": "tricks and arrests",
+              "kind": "enemy",
+              "stages": [
+                "act-4"
+              ]
+            },
+            {
+              "to": "falstaff",
+              "label": "does not like",
+              "kind": "rival",
+              "stages": [
+                "act-4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "northumberland",
+          "name": "Earl of Northumberland",
+          "role": "Hotspur's father",
+          "summary": "He lay crafty-sick while his son fought at Shrewsbury. Told of Hotspur's death he tears off his nightcap and calls for order to die, then lets his wife and daughter-in-law persuade him to Scotland, and sends the Archbishop letters instead of men. The sheriff of Yorkshire defeats him in the end.",
+          "clue": "He reads a messenger's face like the title-page of a tragedy before the man has said a word.",
+          "firstAppearance": "1.1",
+          "traits": [
+            "wavering",
+            "proud",
+            "self-protective"
+          ],
+          "relationships": [
+            {
+              "to": "lady-percy",
+              "label": "is reproached by his son's widow",
+              "kind": "family",
+              "stages": [
+                "act-2"
+              ]
+            },
+            {
+              "to": "archbishop",
+              "label": "promises to join, then fails",
+              "kind": "ally",
+              "stages": [
+                "act-1",
+                "act-4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "archbishop",
+          "name": "Archbishop of York (Scroop)",
+          "role": "Leader of the second rebellion",
+          "summary": "He turns rebellion into a religious cause, gathering followers with the blood of King Richard, and argues at Gaultree that the commonwealth is sick and he means only to purge it. He trusts Prince John's word, sends his army home, and is arrested for treason.",
+          "clue": "He calls the English crowd a common dog that has vomited up one king and now howls to eat him again.",
+          "firstAppearance": "1.3",
+          "traits": [
+            "eloquent",
+            "trusting",
+            "principled"
+          ],
+          "relationships": [
+            {
+              "to": "lancaster",
+              "label": "is betrayed by",
+              "kind": "enemy",
+              "stages": [
+                "act-4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "shallow",
+          "name": "Justice Shallow",
+          "role": "A country justice in Gloucestershire",
+          "summary": "A thin old man who knew Falstaff at Clement's Inn fifty-five years ago, by his cousin Silence's count, and talks endlessly of the wild days they had. Falstaff says that every third word is a lie. He presents the recruits, entertains Falstaff twice, and lends him a thousand pounds in the hope of advancement at court.",
+          "clue": "He asks in one breath whether an old archer is dead and what a yoke of bullocks fetches at Stamford fair.",
+          "firstAppearance": "3.2",
+          "traits": [
+            "garrulous",
+            "nostalgic",
+            "gullible"
+          ],
+          "relationships": [
+            {
+              "to": "falstaff",
+              "label": "lends a thousand pounds to",
+              "kind": "friendship",
+              "stages": [
+                "act-3",
+                "act-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hostess",
+          "name": "Mistress Quickly",
+          "role": "Hostess of the Boar's Head in Eastcheap",
+          "summary": "A poor widow, she has Falstaff arrested for a hundred marks and remembers, in exact domestic detail, the day he swore to marry her. Within minutes she has agreed to pawn her plate to lend him more. She has known him twenty-nine years. At the end she is dragged off by the beadles with Doll.",
+          "clue": "She says he has eaten her out of house and home, and cannot finish a sentence about an honest man without breaking off.",
+          "firstAppearance": "2.1",
+          "traits": [
+            "loyal",
+            "muddled",
+            "warm-hearted"
+          ],
+          "relationships": [
+            {
+              "to": "falstaff",
+              "label": "is owed money by",
+              "kind": "love",
+              "stages": [
+                "act-2"
+              ]
+            },
+            {
+              "to": "doll",
+              "label": "keeps company with",
+              "kind": "friendship",
+              "stages": [
+                "act-2",
+                "act-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "doll",
+          "name": "Doll Tearsheet",
+          "role": "Falstaff's companion at the Boar's Head",
+          "summary": "She fights Pistol with better insults than he has, calls Falstaff a muddy conger, and then sits on his knee and tells him she loves him better than any young man. She is arrested in the last act after a man has been killed.",
+          "clue": "She tells an old man to begin patching up his body for heaven, and is told not to speak like a death's-head.",
+          "firstAppearance": "2.4",
+          "traits": [
+            "fierce",
+            "affectionate",
+            "outspoken"
+          ],
+          "relationships": [
+            {
+              "to": "falstaff",
+              "label": "loves",
+              "kind": "love",
+              "stages": [
+                "act-2"
+              ]
+            },
+            {
+              "to": "pistol",
+              "label": "fights",
+              "kind": "rival",
+              "stages": [
+                "act-2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pistol",
+          "name": "Pistol",
+          "role": "Falstaff's ancient (ensign)",
+          "summary": "A swaggerer who talks in scraps of old plays, Latin and Italian. He is thrown downstairs at the Boar's Head, rides to Gloucestershire with the news of the King's death, and goes to the Fleet with Falstaff.",
+          "clue": "He asks 'Under which king?' and quotes the playhouse on hollow pampered jades of Asia.",
+          "firstAppearance": "2.4",
+          "traits": [
+            "bombastic",
+            "cowardly",
+            "comic"
+          ],
+          "relationships": [
+            {
+              "to": "falstaff",
+              "label": "follows",
+              "kind": "service",
+              "stages": [
+                "act-2",
+                "act-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lady-percy",
+          "name": "Lady Percy",
+          "role": "Hotspur's widow",
+          "summary": "In one speech she remembers her husband so vividly that the young men of England copied even the thickness of his speech, and tells his father that he broke his word to his son. She persuades Northumberland not to fight.",
+          "clue": "She says her husband was the glass in which the noble youth did dress themselves.",
+          "firstAppearance": "2.3",
+          "traits": [
+            "grieving",
+            "eloquent",
+            "reproachful"
+          ],
+          "relationships": [
+            {
+              "to": "northumberland",
+              "label": "daughter-in-law of",
+              "kind": "family",
+              "stages": [
+                "act-2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "feeble",
+          "name": "Francis Feeble",
+          "role": "A woman's tailor, recruited by Falstaff",
+          "summary": "The one recruit who does not try to buy his way out. He answers Falstaff's jokes about his trade with plain courage.",
+          "clue": "He says a man can die but once and that he that dies this year is quit for the next.",
+          "firstAppearance": "3.2",
+          "traits": [
+            "humble",
+            "brave",
+            "plain-spoken"
+          ],
+          "relationships": [
+            {
+              "to": "falstaff",
+              "label": "is pressed into service by",
+              "kind": "service",
+              "stages": [
+                "act-3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rumour",
+          "name": "Rumour",
+          "role": "The speaker of the induction",
+          "summary": "A figure painted full of tongues who announces that he has spread false news of a rebel victory at Shrewsbury. The play that follows is full of wrong reports, exaggerated numbers and people who believe what they fear.",
+          "clue": "He calls himself a pipe that the many-headed crowd can play upon.",
+          "firstAppearance": "1.0",
+          "traits": [
+            "boastful",
+            "false",
+            "self-aware"
+          ],
+          "relationships": [
+            {
+              "to": "northumberland",
+              "label": "deceives",
+              "kind": "enemy",
+              "stages": [
+                "act-1"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "time",
+          "name": "Age, sickness and time",
+          "canonicalName": "Time",
+          "summary": "The play is full of old and ill men: a dying king, a gouty knight, a thin justice counting his dead friends. Falstaff is told his age to his face in the first act, and every scene afterwards reminds someone of it.",
+          "development": "It moves from Falstaff's jokes about his youth in 1.2 to Shallow's list of the dead, the King's deathbed and the new king's order to fall to his prayers."
+        },
+        {
+          "id": "legitimacy",
+          "name": "How the crown was come by",
+          "canonicalName": "Legitimacy",
+          "summary": "Henry IV took the throne from Richard II, and the play keeps paying for it: rebels invoke Richard's blood, the King remembers Richard's prophecy, and on his deathbed he admits to by-paths and indirect crooked ways.",
+          "development": "The crown passes to Hal with, as his father says, better quiet; Hal's answer is that his possession must be plain and right because his father won it and gave it him."
+        },
+        {
+          "id": "fathers-and-sons",
+          "name": "Fathers and sons",
+          "canonicalName": "Fathers and sons",
+          "summary": "Northumberland failed his son, the King fears his son, and the Chief Justice once punished the King's son on his father's behalf. Hal has to choose between a real father, a false one in Falstaff, and a legal one in the Chief Justice.",
+          "development": "The choice is made in two scenes: Hal names the Chief Justice a father to his youth in 5.2, and turns away Falstaff in 5.5."
+        },
+        {
+          "id": "justice",
+          "name": "The law and the tavern",
+          "canonicalName": "Justice and mercy",
+          "summary": "The Lord Chief Justice stands for the law that Falstaff expects the new reign to set aside. Falstaff's cry that the laws of England are at his commandment meets the justice who sends him to the Fleet.",
+          "development": "Justice is tested in the middle too: at Gaultree Prince John keeps the letter of his promise and breaks its meaning."
+        },
+        {
+          "id": "reputation",
+          "name": "Rumour and report",
+          "canonicalName": "Reputation",
+          "summary": "Rumour opens the play with false news, and false or exaggerated reports keep arriving: Northumberland's messengers contradict each other, Warwick says rumour doubles the rebels' numbers, Colevile surrenders to Falstaff's name.",
+          "development": "By the end the question is Hal's reputation, and he promises to frustrate the prophecies and raze out rotten opinion."
+        },
+        {
+          "id": "memory",
+          "name": "Remembering the past",
+          "canonicalName": "Memory",
+          "summary": "Shallow lives in his memories of Clement's Inn, the King in his memory of Richard, Lady Percy in her memory of Hotspur. Falstaff says Shallow's are lies.",
+          "development": "The new king asks whether the wrongs done to him can be washed in Lethe and forgotten, and decides to use them instead."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "prose-and-verse",
+          "name": "Prose against verse",
+          "canonicalName": "Prose against verse",
+          "definition": "The switch between prose and verse as a signal of status, mood or place.",
+          "bookDefinition": "The switch between prose and verse as a signal of status, mood or place.",
+          "inThisBook": "Eastcheap and Gloucestershire speak prose; Westminster, Warkworth and Gaultree speak verse. Hal moves between them, and he rejects Falstaff in verse; once the procession has gone, Falstaff talks to Shallow in prose again."
+        },
+        {
+          "id": "soliloquy",
+          "name": "Soliloquy",
+          "canonicalName": "Soliloquy",
+          "definition": "A character alone on stage speaking thoughts aloud.",
+          "bookDefinition": "A character alone on stage speaking thoughts aloud.",
+          "inThisBook": "The King's address to sleep, Hal's speech to the crown, and Falstaff's two prose soliloquies, on Shallow and on sherris-sack, give each of the three men a private voice."
+        },
+        {
+          "id": "foils",
+          "name": "Foils",
+          "canonicalName": "Foils",
+          "definition": "A character constructed to throw another's choices into relief by making different ones.",
+          "bookDefinition": "Characters placed side by side so that each shows up the other.",
+          "inThisBook": "Falstaff and the Chief Justice, Falstaff and Prince John, Shallow and Falstaff: each pairing shows a different side of the old knight, and the Chief Justice wins in the end."
+        },
+        {
+          "id": "personification",
+          "name": "Rumour and other abstractions",
+          "canonicalName": "Personification",
+          "definition": "Giving human form to an idea.",
+          "bookDefinition": "Giving human form to an idea.",
+          "inThisBook": "Rumour appears in person to open the play, and the King speaks to sleep as a god who prefers the poor, while Hal addresses the crown as polished perturbation and golden care."
+        },
+        {
+          "id": "disease-imagery",
+          "name": "Disease imagery",
+          "canonicalName": "Disease imagery",
+          "definition": "Figurative language that describes a state or a society as a sick body.",
+          "bookDefinition": "Imagery of illness and medicine applied to politics.",
+          "inThisBook": "The commonwealth is sick, the rebels will purge it, the King's body mirrors the kingdom's. Falstaff turns the idea into business: a good wit will turn diseases to commodity."
+        },
+        {
+          "id": "dramatic-irony",
+          "name": "Dramatic irony",
+          "canonicalName": "Dramatic irony",
+          "definition": "The audience knowing more than a character does.",
+          "bookDefinition": "The audience knowing more than a character does.",
+          "inThisBook": "Falstaff talks about the Prince to Doll while the Prince listens in disguise, and rides to London certain of favour while the audience has just heard Hal promise the Chief Justice the opposite."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "rumour-pipe",
+          "text": "Rumour is a pipe Blown by surmises, jealousies, conjectures",
+          "speaker": "Rumour",
+          "reference": "1.0.15",
+          "stage": "act-1",
+          "context": "The induction, as Rumour explains how easily he is played.",
+          "analysis": "The image makes rumour an instrument that anyone can blow and the crowd can play upon. The list of three nouns says where false news comes from: guesses, suspicions and fears, not facts.",
+          "themes": [
+            "reputation"
+          ],
+          "techniques": [
+            "personification"
+          ],
+          "characters": [
+            "rumour"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "Rumour",
+            "pipe"
+          ]
+        },
+        {
+          "id": "title-leaf",
+          "text": "Yea, this man’s brow, like to a title-leaf, Foretells the nature of a tragic volume.",
+          "speaker": "Northumberland",
+          "reference": "1.1.70",
+          "stage": "act-1",
+          "context": "Morton arrives from Shrewsbury, and Northumberland reads the news in his face.",
+          "analysis": "Northumberland already knows his son is dead, and says so through a simile from a bookshop. He reads the news in Morton's face and still tells him to say not that Percy's dead, which is the play's first case of someone believing and disbelieving a report at once.",
+          "themes": [
+            "reputation",
+            "fathers-and-sons"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "northumberland"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "brow",
+            "tragic"
+          ]
+        },
+        {
+          "id": "witty-in-myself",
+          "text": "I am not only witty in myself, but the cause that wit is in other men.",
+          "speaker": "Falstaff",
+          "reference": "1.2.6",
+          "stage": "act-1",
+          "context": "To his page, after complaining that men of all sorts gird at him.",
+          "analysis": "It is a boast, and an accurate description of the character. Falstaff's jokes provoke jokes, and the play is full of people, including the Prince, who are funniest when they are talking about him.",
+          "themes": [
+            "reputation"
+          ],
+          "techniques": [
+            "foils"
+          ],
+          "characters": [
+            "falstaff"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "witty",
+            "cause"
+          ]
+        },
+        {
+          "id": "gravy",
+          "text": "His effect of gravy, gravy, gravy.",
+          "speaker": "Falstaff",
+          "reference": "1.2.125",
+          "stage": "act-1",
+          "context": "The Chief Justice says every white hair in Falstaff's face should have its effect of gravity.",
+          "analysis": "Falstaff turns dignity into dripping with one pun. Falstaff's answer to every mention of his age is to change the subject to his body and his appetite.",
+          "themes": [
+            "time"
+          ],
+          "techniques": [
+            "foils"
+          ],
+          "characters": [
+            "falstaff",
+            "chief-justice"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "gravy",
+            "effect"
+          ]
+        },
+        {
+          "id": "diseases-to-commodity",
+          "text": "A good wit will make use of anything. I will turn diseases to commodity.",
+          "speaker": "Falstaff",
+          "reference": "1.2.187",
+          "stage": "act-1",
+          "context": "Alone, after the Chief Justice has refused him a thousand pounds, planning to pass off his gout as a war wound.",
+          "analysis": "Commodity means profit. The play treats sickness as the condition of England; Falstaff treats it as a business opportunity, and says so in a line that sums up his method.",
+          "themes": [
+            "time"
+          ],
+          "techniques": [
+            "disease-imagery",
+            "soliloquy"
+          ],
+          "characters": [
+            "falstaff"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "wit",
+            "diseases"
+          ]
+        },
+        {
+          "id": "past-and-to-come",
+          "text": "Past and to come seems best; things present, worst.",
+          "speaker": "Archbishop",
+          "reference": "1.3.111",
+          "stage": "act-1",
+          "context": "Ending his attack on the crowd that cheered Bolingbroke and now longs for Richard.",
+          "analysis": "Both halves of the line balance, and together they describe a country that cannot be satisfied with its present king. The Archbishop is describing the crowd, but the sentiment runs through the play: Shallow's past, the King's fear of the future.",
+          "themes": [
+            "memory",
+            "legitimacy"
+          ],
+          "techniques": [
+            "disease-imagery"
+          ],
+          "characters": [
+            "archbishop"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "Past",
+            "present"
+          ]
+        },
+        {
+          "id": "house-and-home",
+          "text": "He hath eaten me out of house and home.",
+          "speaker": "Hostess",
+          "reference": "2.1.55",
+          "stage": "act-2",
+          "context": "Explaining to the Chief Justice why she has had Falstaff arrested.",
+          "analysis": "The phrase became proverbial. Here it is literal: she means the money he owes her for years of food and drink, and within the scene she agrees to lend him more.",
+          "themes": [
+            "justice"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "hostess",
+            "falstaff"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "eaten",
+            "home"
+          ]
+        },
+        {
+          "id": "heart-bleeds",
+          "text": "my heart bleeds inwardly that my father is so sick",
+          "speaker": "Prince Hal",
+          "reference": "2.2.36",
+          "stage": "act-2",
+          "context": "Talking to Poins, who assumes the Prince cares nothing for his father.",
+          "analysis": "He admits real grief, then explains why he cannot show it: in his company, weeping would look like hypocrisy. The line shows how much his reputation now weighs on him.",
+          "themes": [
+            "fathers-and-sons",
+            "reputation"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "hal"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "heart",
+            "sick"
+          ]
+        },
+        {
+          "id": "glass-of-youth",
+          "text": "He was indeed the glass Wherein the noble youth did dress themselves.",
+          "speaker": "Lady Percy",
+          "reference": "2.3.21",
+          "stage": "act-2",
+          "context": "Reproaching Northumberland for leaving Hotspur to fight alone at Shrewsbury.",
+          "analysis": "The dead man is remembered as a mirror of fashion that others copied, down to his stammer. The praise is also an accusation: this is the son his father failed to support.",
+          "themes": [
+            "memory",
+            "fathers-and-sons"
+          ],
+          "techniques": [
+            "foils"
+          ],
+          "characters": [
+            "lady-percy",
+            "northumberland"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "glass",
+            "youth"
+          ]
+        },
+        {
+          "id": "deaths-head",
+          "text": "Peace, good Doll, do not speak like a death’s-head; do not bid me remember mine end.",
+          "speaker": "Falstaff",
+          "reference": "2.4.181",
+          "stage": "act-2",
+          "context": "Doll has asked him when he will patch up his old body for heaven.",
+          "analysis": "A death's-head is a skull kept as a reminder of mortality. Falstaff asks the one person who loves him not to remind him of the one thing the whole play keeps reminding him of.",
+          "themes": [
+            "time"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "falstaff",
+            "doll"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "death’s-head",
+            "end"
+          ]
+        },
+        {
+          "id": "desire-outlive",
+          "text": "Is it not strange that desire should so many years outlive performance?",
+          "speaker": "Poins",
+          "reference": "2.4.202",
+          "stage": "act-2",
+          "context": "Watching Falstaff with Doll, in disguise beside the Prince.",
+          "analysis": "Poins whispers a cruel joke that is also a true observation about age. The audience sees the tenderness between the old man and Doll at the same moment as the young men mock it.",
+          "themes": [
+            "time"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "falstaff",
+            "hal"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "desire",
+            "performance"
+          ]
+        },
+        {
+          "id": "uneasy-head",
+          "text": "Uneasy lies the head that wears a crown.",
+          "speaker": "King Henry",
+          "reference": "3.1.31",
+          "stage": "act-3",
+          "context": "The end of the King's soliloquy on sleep, at one in the morning.",
+          "analysis": "The line closes a long speech envying the poor and the ship-boy their sleep. The crown the King has won keeps him awake, which is the price of how he won it.",
+          "themes": [
+            "legitimacy",
+            "time"
+          ],
+          "techniques": [
+            "soliloquy",
+            "personification"
+          ],
+          "characters": [
+            "king-henry"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "Uneasy",
+            "crown"
+          ]
+        },
+        {
+          "id": "history-in-lives",
+          "text": "There is a history in all men’s lives",
+          "speaker": "Warwick",
+          "reference": "3.1.80",
+          "stage": "act-3",
+          "context": "Answering the King's memory of Richard's prophecy about Northumberland.",
+          "analysis": "Warwick explains prophecy away as pattern: a man who knows the past can guess the future. It is the play's view of history, and the new king will later use the same idea to promise he can change.",
+          "themes": [
+            "memory",
+            "legitimacy"
+          ],
+          "techniques": [
+            "foils"
+          ],
+          "characters": [
+            "king-henry"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "history",
+            "lives"
+          ]
+        },
+        {
+          "id": "chimes-at-midnight",
+          "text": "We have heard the chimes at midnight, Master Shallow.",
+          "speaker": "Falstaff",
+          "reference": "3.2.169",
+          "stage": "act-3",
+          "context": "Shallow has been remembering the nights they spent together as young men at the Inns of Court.",
+          "analysis": "It sounds like shared nostalgia, and Falstaff's soliloquy a few minutes later calls most of Shallow's memories lies. The line was used as the title of Orson Welles's film about Falstaff.",
+          "themes": [
+            "memory",
+            "time"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "falstaff",
+            "shallow"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "chimes",
+            "midnight"
+          ]
+        },
+        {
+          "id": "owe-god-a-death",
+          "text": "A man can die but once. We owe God a death.",
+          "speaker": "Feeble",
+          "reference": "3.2.184",
+          "stage": "act-3",
+          "context": "The recruits bribe Bardolph to be let off; Feeble will not.",
+          "analysis": "The weakest-named man in the scene has the plainest courage. His fatalism answers Falstaff's own joke in Part 1 that he did not want to pay death before it was due.",
+          "themes": [
+            "time"
+          ],
+          "techniques": [
+            "foils"
+          ],
+          "characters": [
+            "feeble"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "die",
+            "death"
+          ]
+        },
+        {
+          "id": "vice-of-lying",
+          "text": "Lord, Lord, how subject we old men are to this vice of lying!",
+          "speaker": "Falstaff",
+          "reference": "3.2.237",
+          "stage": "act-3",
+          "context": "Alone, after Shallow has gone in.",
+          "analysis": "He means Shallow, and says we old men. The line is funny because the audience has watched Falstaff lie for two plays, and sad because it is the first time he has put himself among the old.",
+          "themes": [
+            "time",
+            "memory"
+          ],
+          "techniques": [
+            "soliloquy"
+          ],
+          "characters": [
+            "falstaff",
+            "shallow"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "lying",
+            "old"
+          ]
+        },
+        {
+          "id": "god-not-we",
+          "text": "God, and not we, hath safely fought today.",
+          "speaker": "Prince John",
+          "reference": "4.2.127",
+          "stage": "act-4",
+          "context": "Having arrested the rebel leaders after their army has gone home.",
+          "analysis": "Rhyme and piety dress up a trick. John has kept to the words of his promise and broken its sense, and he gives the credit to God.",
+          "themes": [
+            "justice",
+            "legitimacy"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "lancaster",
+            "archbishop"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "God",
+            "fought"
+          ]
+        },
+        {
+          "id": "thin-potations",
+          "text": "the first humane principle I would teach them should be to forswear thin potations and to addict themselves to sack.",
+          "speaker": "Falstaff",
+          "reference": "4.3.99",
+          "stage": "act-4",
+          "context": "The end of his speech in praise of sherris-sack, after Prince John has left.",
+          "analysis": "Falstaff ends his mock sermon with a mock moral. Falstaff credits sack for Hal's courage, which is his way of claiming a share in the Prince's future.",
+          "themes": [
+            "fathers-and-sons"
+          ],
+          "techniques": [
+            "soliloquy"
+          ],
+          "characters": [
+            "falstaff",
+            "lancaster"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "potations",
+            "sack"
+          ]
+        },
+        {
+          "id": "golden-care",
+          "text": "O polish’d perturbation! golden care!",
+          "speaker": "Prince Hal",
+          "reference": "4.5.23",
+          "stage": "act-4",
+          "context": "Alone with his sleeping father and the crown on the pillow.",
+          "analysis": "Two oxymorons: the crown is bright and troubling, precious and a burden. Hal's first words to the crown already know what his father learned by wearing it.",
+          "themes": [
+            "legitimacy"
+          ],
+          "techniques": [
+            "personification",
+            "soliloquy"
+          ],
+          "characters": [
+            "hal",
+            "king-henry"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "perturbation",
+            "care"
+          ]
+        },
+        {
+          "id": "wish-father",
+          "text": "Thy wish was father, Harry, to that thought.",
+          "speaker": "King Henry",
+          "reference": "4.5.93",
+          "stage": "act-4",
+          "context": "Hal says he never thought to hear his father speak again.",
+          "analysis": "The King turns a son's grief into a son's ambition in one line. The phrase has become proverbial for believing what we want to believe.",
+          "themes": [
+            "fathers-and-sons"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "king-henry",
+            "hal"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "wish",
+            "thought"
+          ]
+        },
+        {
+          "id": "giddy-minds",
+          "text": "Be it thy course to busy giddy minds With foreign quarrels",
+          "speaker": "King Henry",
+          "reference": "4.5.214",
+          "stage": "act-4",
+          "context": "The last advice of the dying King to his son.",
+          "analysis": "Politics at its plainest: keep the nobles occupied abroad so they do not look too closely at the crown. The advice prepares for the war with France in Henry V.",
+          "themes": [
+            "legitimacy"
+          ],
+          "techniques": [
+            "disease-imagery"
+          ],
+          "characters": [
+            "king-henry",
+            "hal"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "giddy",
+            "quarrels"
+          ]
+        },
+        {
+          "id": "harry-harry",
+          "text": "Not Amurath an Amurath succeeds, But Harry Harry.",
+          "speaker": "King Henry V",
+          "reference": "5.2.49",
+          "stage": "act-5",
+          "context": "To his brothers, who fear the new reign.",
+          "analysis": "Amurath was a Turkish sultan whose successor had his brothers killed. Hal promises an English succession instead, and the doubled name insists on continuity with his father.",
+          "themes": [
+            "legitimacy",
+            "fathers-and-sons"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "hal",
+            "lancaster"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "Amurath",
+            "Harry"
+          ]
+        },
+        {
+          "id": "know-thee-not",
+          "text": "I know thee not, old man. Fall to thy prayers.",
+          "speaker": "King Henry V",
+          "reference": "5.5.43",
+          "stage": "act-5",
+          "context": "Falstaff calls out to the new king in the street after the coronation.",
+          "analysis": "These are the new reign's first words to its old companion. It picks up the Chief Justice's list of Falstaff's signs of age in the first act, and Hal now speaks as the law.",
+          "themes": [
+            "time",
+            "justice"
+          ],
+          "techniques": [
+            "prose-and-verse"
+          ],
+          "characters": [
+            "hal",
+            "falstaff"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "know",
+            "prayers"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "Written",
+          "value": "c. 1597-98",
+          "note": "After Henry IV Part 1 and before Henry V, with which it forms the second half of a four-play sequence beginning with Richard II."
+        },
+        {
+          "label": "First printed",
+          "value": "1600",
+          "note": "A quarto whose first copies left out the whole of 3.1; the scene was added in a reissue the same year."
+        },
+        {
+          "label": "Frame",
+          "value": "Rumour and a dancer",
+          "note": "Rumour, painted full of tongues, opens the play with false news of Shrewsbury; a dancer speaks the epilogue and promises more of Falstaff."
+        },
+        {
+          "label": "Ending",
+          "value": "I know thee not, old man",
+          "note": "The new king's first public words to Falstaff, in the street after the coronation."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "The rejection is necessary",
+          "summary": "Hal has promised since the first part that he would throw off his loose behaviour, and a king cannot keep a companion who says the laws of England are at his commandment. The play prepares the audience for it scene by scene.",
+          "counter": "A. C. Bradley and many since have found the public humiliation cruel, and the play gives Falstaff too much life for the audience to share the new king's view of him."
+        },
+        {
+          "position": "A darker second part",
+          "summary": "Where Part 1 has battles and energy, Part 2 has sickness, age, debts and deaths. Falstaff is poorer and more often alone, and even the comedy of Shallow's orchard is about old men.",
+          "counter": "The Gloucestershire scenes are among the funniest Shakespeare wrote, and the play's gentleness toward Shallow, Silence and Doll is as strong as its melancholy."
+        },
+        {
+          "position": "Gaultree as policy",
+          "summary": "Prince John's trick shows how the House of Lancaster actually holds power: through the letter of the law and the appearance of piety. It prepares the ground for Hal's own careful public image.",
+          "counter": "Some productions and readers treat it simply as treachery that the play condemns; the rebels' own cause was not clean either, as Westmoreland points out."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does the play prepare the audience for the rejection of Falstaff?",
+          "focus": "Hal and Falstaff",
+          "plan": [
+            "Begin with how little Hal and Falstaff share the stage compared with Part 1.",
+            "Examine 2.2 and 2.4: Hal's weariness, his reasons for not weeping, and his exit when the news of war arrives.",
+            "Consider 5.2, where Hal takes the Chief Justice as a father.",
+            "Analyse the language of 5.5, including old man and fall to thy prayers.",
+            "Conclude on whether the play makes the rejection feel just, cruel or both."
+          ]
+        },
+        {
+          "question": "What does Henry IV Part 2 say about the cost of power?",
+          "focus": "Crown and conscience",
+          "plan": [
+            "Start with the King's soliloquy on sleep and its last line.",
+            "Set it beside Richard's prophecy as the King remembers it.",
+            "Analyse Hal's speech to the crown in 4.5.",
+            "Weigh the King's deathbed advice about foreign quarrels.",
+            "Conclude with Hal's promise that the crown will pass with better quiet."
+          ]
+        },
+        {
+          "question": "How does Shakespeare use age and memory in the Gloucestershire scenes?",
+          "focus": "Shallow, Silence and Falstaff",
+          "plan": [
+            "Examine Shallow's recollections of Clement's Inn and his list of the dead.",
+            "Consider the chimes at midnight and Falstaff's soliloquy on Shallow's lies.",
+            "Look at the recruits, especially Feeble.",
+            "Discuss the orchard scene and Silence's songs.",
+            "Connect them to the King's and Falstaff's ageing elsewhere in the play."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Why does Shakespeare open with Rumour, when the audience already knows how Shrewsbury ended?",
+        "Is Prince John's trick at Gaultree clever, dishonest or both?",
+        "Does Hal mean what he says to the crown when he thinks his father is dead?",
+        "Who is the better father to Hal: the King, Falstaff or the Lord Chief Justice?",
+        "Is the rejection of Falstaff cruel?",
+        "What do Shallow and Silence add to a history play?"
+      ],
+      "timeline": [
+        {
+          "year": 1399,
+          "label": "Richard II deposed",
+          "detail": "Henry Bolingbroke took the throne as Henry IV with the help of the Percys, the debt the rebels of this play keep recalling.",
+          "kind": "context"
+        },
+        {
+          "year": 1403,
+          "label": "Battle of Shrewsbury",
+          "detail": "Hotspur was killed. The play opens with the false and true reports of the battle.",
+          "kind": "context"
+        },
+        {
+          "year": 1405,
+          "label": "Archbishop Scrope executed",
+          "detail": "The Archbishop of York and Mowbray were seized after a parley in Yorkshire and beheaded at York.",
+          "kind": "context"
+        },
+        {
+          "year": 1408,
+          "label": "Northumberland killed at Bramham Moor",
+          "detail": "Defeated by the sheriff of Yorkshire, the victory reported to the King in 4.4.",
+          "kind": "context"
+        },
+        {
+          "year": 1413,
+          "label": "Henry IV dies in the Jerusalem Chamber",
+          "detail": "He died on 20 March in the room of that name at Westminster Abbey.",
+          "kind": "context"
+        },
+        {
+          "year": 1587,
+          "label": "Holinshed's Chronicles, second edition",
+          "detail": "Shakespeare's main source for the history.",
+          "kind": "context"
+        },
+        {
+          "year": 1598,
+          "label": "The Famous Victories of Henry the Fifth printed",
+          "detail": "An older play about the wild prince and the Lord Chief Justice, which Shakespeare drew on.",
+          "kind": "context"
+        },
+        {
+          "year": 1600,
+          "label": "First quarto printed",
+          "detail": "The first copies left out the whole of 3.1, the King's sleepless night; a reissue that year added it.",
+          "kind": "work"
+        },
+        {
+          "year": 1623,
+          "label": "First Folio",
+          "detail": "The Folio text, with passages not in the quarto.",
+          "kind": "work"
+        },
+        {
+          "year": 1777,
+          "label": "Maurice Morgann's essay on Falstaff",
+          "detail": "An Essay on the Dramatic Character of Sir John Falstaff argued that he is not a coward.",
+          "kind": "reception"
+        },
+        {
+          "year": 1909,
+          "label": "A. C. Bradley on the rejection of Falstaff",
+          "detail": "Oxford Lectures on Poetry reprinted his lecture The Rejection of Falstaff, the classic statement of the case against Hal.",
+          "kind": "reception"
+        },
+        {
+          "year": 1965,
+          "label": "Orson Welles's Chimes at Midnight",
+          "detail": "A film built from both parts of Henry IV, with Welles as Falstaff, taking its title from 3.2.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Warkworth Castle",
+          "lat": 55.3453,
+          "lon": -1.6106,
+          "note": "Northumberland's castle, where the induction and first scene are set."
+        },
+        {
+          "name": "Eastcheap, London",
+          "lat": 51.5107,
+          "lon": -0.0845,
+          "note": "The Boar's Head tavern."
+        },
+        {
+          "name": "Westminster",
+          "lat": 51.4995,
+          "lon": -0.1273,
+          "note": "The palace, the Jerusalem Chamber and the coronation route."
+        },
+        {
+          "name": "Gaultree Forest, Yorkshire",
+          "lat": 54.05,
+          "lon": -1.07,
+          "note": "The royal forest north of York where the rebels are tricked."
+        },
+        {
+          "name": "York",
+          "lat": 53.9599,
+          "lon": -1.0873,
+          "note": "The Archbishop's palace, where the rebels plan in 1.3."
+        },
+        {
+          "name": "Gloucestershire",
+          "lat": 51.83,
+          "lon": -2.05,
+          "note": "Justice Shallow's house and orchard."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/henry-iv-part-1/",
+          "why": "The first part, with Hotspur, Gad's Hill and Shrewsbury."
+        },
+        {
+          "href": "/books/henry-v/",
+          "why": "What Hal does as king, and how Falstaff's death is reported."
+        },
+        {
+          "href": "/books/richard-ii/",
+          "why": "How Bolingbroke came by the crown that keeps his son awake."
+        },
+        {
+          "href": "/books/merry-wives-of-windsor/",
+          "why": "Falstaff in a comedy of his own, among the Windsor wives."
+        },
+        {
+          "href": "/books/henry-iv-parts-1-and-2/",
+          "why": "Both parts together in one volume."
         }
       ],
       "videos": []
