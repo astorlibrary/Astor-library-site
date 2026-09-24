@@ -12,7 +12,7 @@ const collectionCopy = {
     description: 'Astor editions of Webster, Marlowe, More, Machiavelli and Milton, with material on early modern theatre, tragedy, humanism, epic, political prose, print and power.',
     kicker: 'Period',
     heading: 'Renaissance &amp; Early Modern.',
-    deck: 'Theatre, political prose and epic meet in a period preoccupied with power: who possesses it, how it is performed and what it costs. Webster and Marlowe place ambition, conscience and private choice on stage; More, Machiavelli and Milton test government, freedom and social order on the page.'
+    deck: 'Tudor verse, political thought, tragedy and epic: Skelton&rsquo;s poems, More&rsquo;s <em>Utopia</em>, Machiavelli&rsquo;s <em>The Prince</em>, Marlowe&rsquo;s <em>Doctor Faustus</em>, Webster&rsquo;s <em>The Duchess of Malfi</em>, Milton&rsquo;s <em>Paradise Lost</em> and the writings of Charles I. Most of them are about power: who holds it, and what it costs.'
   },
   'shakespeare/index.html': {
     title: 'Shakespeare Plays, Poems, Editions and Study Guides | Astor Library',
@@ -26,14 +26,14 @@ const collectionCopy = {
     description: 'Astor editions of Defoe, Swift and Richardson, with material on travel, survival, satire, letters, print culture, commerce and the developing English novel.',
     kicker: 'Period',
     heading: 'Restoration &amp; Enlightenment.',
-    deck: 'Defoe turns travel, shipwreck and colonial commerce into a new kind of fictional life; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power. Together, these works show prose fiction and public argument finding new forms.'
+    deck: 'Behn&rsquo;s <em>Oroonoko</em>, Defoe&rsquo;s <em>Robinson Crusoe</em>, Swift&rsquo;s <em>Gulliver&rsquo;s Travels</em> and Richardson&rsquo;s <em>Pamela</em>: an enslaved prince, a castaway, a satire dressed as a travel book, and a servant&rsquo;s letters. Between them they show the English novel taking shape.'
   },
   'american/index.html': {
     title: 'American Classic Literature | Astor Library',
     description: 'Astor editions of American classics by Hawthorne, Stowe, Douglass, Melville, Twain, Crane and London, with notes, context and study material.',
     kicker: 'Period',
     heading: 'American.',
-    deck: 'Hawthorne&rsquo;s romance of public punishment joins abolitionist argument, autobiography, whaling, river satire, Civil War and the Klondike. These books do not offer one account of America: they show who could claim freedom, who was denied it and what survival asked of a person.'
+    deck: 'American books from Hawthorne and Poe to Fitzgerald: slavery and freedom in Douglass, Stowe and Twain, the sea in <em>Moby-Dick</em>, the Civil War in <em>The Red Badge of Courage</em>, the Klondike in Jack London, and ghost stories and Christmas stories from American magazines.'
   }
 };
 

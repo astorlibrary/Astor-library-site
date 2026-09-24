@@ -148,6 +148,51 @@ fs.writeFileSync(path.join(root, 'assets', 'timeline-index.json'), JSON.stringif
   books: entries.map(book => slim(book, { written: book.written, timeline: book.timeline }))
 }) + '\n');
 
+// The Revise pages open on one book at a time, so they read a small index for
+// the chooser (title, author, cover, colour, drawing) and then fetch only the
+// chosen book's record, rather than the whole study index above.
+{
+  const { identityFor, MOTIFS } = require('./book-motifs');
+  const thumbnails = fs.existsSync(path.join(root, 'assets', 'book-thumbnails.json'))
+    ? JSON.parse(fs.readFileSync(path.join(root, 'assets', 'book-thumbnails.json'), 'utf8')) : {};
+  const discoveryBooks = fs.existsSync(path.join(root, 'assets', 'content-index.json'))
+    ? (JSON.parse(fs.readFileSync(path.join(root, 'assets', 'content-index.json'), 'utf8')).books || []) : [];
+  // Which quizzes each book can fill (four questions or more), worked out with
+  // the same builders the browser uses, so the book page never offers a quiz
+  // that would open empty. Node 22 and later can require the ES module.
+  const QUIZ_IDS = ['who-said-it', 'fill-the-line', 'theme-match', 'technique-spotter', 'character-identification', 'order-the-plot'];
+  let quizzesFor = () => QUIZ_IDS;
+  try {
+    const { GAME_BUILDERS } = require('../assets/astor/questions.mjs');
+    const { seededRandom } = require('../assets/astor/util.mjs');
+    quizzesFor = book => QUIZ_IDS.filter(id => {
+      try { return GAME_BUILDERS[id].build(book, seededRandom(1)).length >= 4; } catch { return false; }
+    });
+  } catch (error) {
+    console.warn('Could not load the quiz builders, so every quiz is listed: ' + error.message);
+  }
+  const coverFor = href => {
+    const image = discoveryBooks.find(item => item.href === href)?.image || '';
+    const thumb = thumbnails[image] || '';
+    return thumb ? thumb.replace(/\.jpg$/, '-360.jpg') : '';
+  };
+  fs.writeFileSync(path.join(root, 'assets', 'revise-index.json'), JSON.stringify({
+    icons: require('./revise-icons'),
+    books: entries.map(book => {
+      const identity = identityFor(book.slug, book.title);
+      return {
+        slug: book.slug, title: book.title, author: book.author, href: book.href,
+        accent: identity.accent, motif: MOTIFS[identity.motif] || '', cover: coverFor(book.href),
+        quotations: book.quotations.length, characters: book.characters.length,
+        stages: book.structure.length, essays: book.essayQuestions.length,
+        openingLine: book.openingLine || '',
+        views: book.criticalViews.length,
+        quizzes: quizzesFor(book)
+      };
+    })
+  }) + '\n');
+}
+
 // --- the search palette's index -------------------------------------------
 //
 // The palette opens over whatever page a reader is on, so it loads a small

@@ -7,7 +7,7 @@
   <meta name="description" content="Short quizzes on the quotations, characters, themes and plot of each book with a study guide, plus flashcards, an essay planner and five questions a day.">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/astor-study.css">
-  <script type="module" src="/assets/astor/play-hub.mjs"></script>
+  <script type="module" src="/assets/astor/revise-hub.mjs"></script>
 </head>
 <body>
 <header class="site-header">
@@ -16,17 +16,10 @@
 </header>
 <main id="main-content" class="page-wrap">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Revise</span></nav>
-  <section class="page-intro">
-    <div><p class="kicker">Revise</p><h1>Revise a book.</h1><p class="deck">Short quizzes on the quotations, characters and plot, with flashcards and an essay planner. Choose a book to start.</p></div>
+  <section class="rv-title" id="rv-title" aria-label="The book you are revising">
+    <div class="rv-title-words"><p class="kicker">Revise</p><h1>Revise a book.</h1><p class="rv-status">Short quizzes on the quotations, characters and plot of each book with a study guide, with flashcards and an essay planner.</p></div>
   </section>
-  <section class="astor-dash-grid" id="astor-play-stats" aria-label="Your revision"></section>
-  <div class="astor-chooser" id="astor-play-chooser"></div>
-  <section class="section-title" id="single-book"><p class="kicker">One book at a time</p><h2>Quizzes on this book.</h2><p>Every question comes from the book chosen above.</p></section>
-  <div class="astor-play-grid" id="astor-play-book-games"></div>
-  <section class="section-title" id="whole-library"><p class="kicker">Across the whole library</p><h2>Quizzes across the library.</h2><p>Questions come from every book with a study guide.</p></section>
-  <div class="astor-play-grid" id="astor-play-library-games"></div>
-  <section class="section-title" id="tools"><p class="kicker">Longer work</p><h2>Flashcards and essay tools.</h2><p>Learn quotations by heart, plan an essay, or argue for and against a reading.</p></section>
-  <div class="astor-play-grid" id="astor-play-tools"></div>
+  <div class="rv-hub" id="rv-hub"><p class="rv-loading">Finding your book…</p></div>
 <noscript><div class="astor-empty">The quizzes need JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.</div></noscript>
 
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/today/">Today</a><a href="/my-library/">My library</a><a href="/explore/">Search the library</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></nav>

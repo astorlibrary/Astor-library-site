@@ -44,35 +44,35 @@ const collectionCopy = {
     description: 'Astor editions of the Iliad, Odyssey and Aeneid, with material on epic form, oral tradition, war, homecoming, exile, translation and empire.',
     kicker: 'Period',
     heading: 'Ancient &amp; Epic.',
-    deck: 'Homer&rsquo;s <em>Iliad</em> begins with anger inside a war; the <em>Odyssey</em> asks what survives war and wandering. Virgil&rsquo;s <em>Aeneid</em> turns the refugee from Troy towards a future Rome while keeping the cost of that future in view.'
+    deck: 'Homer&rsquo;s <em>Iliad</em> and <em>Odyssey</em> in Samuel Butler&rsquo;s prose, and Virgil&rsquo;s <em>Aeneid</em> in John Dryden&rsquo;s verse. The <em>Iliad</em> covers a few weeks of the Trojan War and the anger of Achilles; the <em>Odyssey</em> is the long way home; the <em>Aeneid</em> follows Aeneas from burning Troy to Italy.'
   },
   'renaissance-early-modern/index.html': {
     title: 'Renaissance and Early Modern Literature | Astor Library',
     description: 'Astor editions of Skelton, More, Machiavelli, Marlowe, Webster and Milton, with material on Tudor poetry, humanism, drama, epic, print and political power.',
     kicker: 'Period',
     heading: 'Renaissance &amp; Early Modern.',
-    deck: 'Skelton&rsquo;s quick, irregular verse joins theatre, political prose and epic in a period preoccupied with power. More and Machiavelli test government on the page; Marlowe and Webster stage ambition and conscience; Milton makes freedom and obedience the matter of epic.'
+    deck: 'Tudor verse, political thought, tragedy and epic: Skelton&rsquo;s poems, More&rsquo;s <em>Utopia</em>, Machiavelli&rsquo;s <em>The Prince</em>, Marlowe&rsquo;s <em>Doctor Faustus</em>, Webster&rsquo;s <em>The Duchess of Malfi</em>, Milton&rsquo;s <em>Paradise Lost</em> and the writings of Charles I. Most of them are about power: who holds it, and what it costs.'
   },
   'shakespeare/index.html': {
     title: 'Shakespeare Standard Editions, Scholarly Editions and Apocrypha | Astor Library',
     description: 'Browse Astor standard editions of all 37 Shakespeare plays and the poetry, with separate collections for The Astor Shakespeare scholarly editions and Shakespeare Apocrypha.',
     kicker: 'Shakespeare',
     heading: 'Shakespeare.',
-    deck: 'The main shelf brings together the regular Astor editions of all thirty-seven plays and the poetry. The Astor Shakespeare scholarly editions and the Shakespeare Apocrypha have their own collections, so each range keeps its character and remains easy to browse.'
+    deck: 'All thirty-seven plays and the poems in the standard Astor editions. The longer scholarly editions, and the plays once printed under Shakespeare&rsquo;s name (the Apocrypha), have shelves of their own.'
   },
   'restoration-enlightenment/index.html': {
     title: 'Restoration and Enlightenment Literature | Astor Library',
     description: 'Astor editions of Defoe, Swift and Richardson, with material on travel, survival, satire, letters, print culture, commerce and the developing English novel.',
     kicker: 'Period',
     heading: 'Restoration &amp; Enlightenment.',
-    deck: 'Defoe turns shipwreck, survival and colonial commerce into a new kind of fictional life; Swift turns the travel book against human pride; Richardson builds a novel from private letters and unequal power. Together, these works show prose fiction and public argument finding new forms.'
+    deck: 'Behn&rsquo;s <em>Oroonoko</em>, Defoe&rsquo;s <em>Robinson Crusoe</em>, Swift&rsquo;s <em>Gulliver&rsquo;s Travels</em> and Richardson&rsquo;s <em>Pamela</em>: an enslaved prince, a castaway, a satire dressed as a travel book, and a servant&rsquo;s letters. Between them they show the English novel taking shape.'
   },
   'romantic-regency/index.html': {
     title: 'Romantic and Regency Literature | Astor Library',
     description: 'Astor editions of Goethe, Coleridge, Austen and Shelley, with material on Romantic poetry and fiction, courtship, inheritance, nature, guilt, science and the Gothic.',
     kicker: 'Period',
     heading: 'Romantic &amp; Regency.',
-    deck: 'Goethe and Coleridge turn desire, isolation, guilt and the supernatural into Romantic experiments. Austen makes courtship answer to money, inheritance and self-knowledge; Shelley gives scientific ambition a voice, a body and the power to accuse its creator.'
+    deck: 'Goethe&rsquo;s <em>Werther</em>, Wordsworth and Coleridge&rsquo;s <em>Lyrical Ballads</em>, Coleridge&rsquo;s poems and <em>Ancient Mariner</em>, two of Austen&rsquo;s novels and Mary Shelley&rsquo;s <em>Frankenstein</em>. Austen&rsquo;s courtships answer to money and inheritance; Shelley&rsquo;s creature learns to speak, and accuses the man who made him.'
   },
   'victorian/index.html': {
     title: 'Victorian Literature | Astor Library',
@@ -86,7 +86,7 @@ const collectionCopy = {
     description: 'Astor editions of Virginia Woolf, G. K. Chesterton and George Orwell, with material on modernism, London, consciousness, political language, conspiracy and revolution.',
     kicker: 'Period',
     heading: 'Modern.',
-    deck: 'Woolf turns one June day in London into an intricate movement through memory and consciousness. Chesterton makes political conspiracy a strange metropolitan chase; Orwell follows a revolution whose language changes as thoroughly as its promises.'
+    deck: 'Books from the turn of the twentieth century onwards: Kafka&rsquo;s <em>The Metamorphosis</em>, Woolf&rsquo;s <em>Mrs Dalloway</em> and <em>A Room of One&rsquo;s Own</em>, Chesterton, Yeats, Mansfield and Orwell&rsquo;s <em>Animal Farm</em>, with ghost stories by M. R. James and Algernon Blackwood and children&rsquo;s classics from <em>The Railway Children</em> to <em>The Wind in the Willows</em>.'
   }
 };
 

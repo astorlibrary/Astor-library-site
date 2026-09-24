@@ -259,7 +259,7 @@ function gameName(gameId) {
     'which-book': 'Which book?',
     'context-sprint': 'Which year?',
     'opening-lines': 'Opening lines',
-    'mixed-round': 'Mixed questions',
+    'mixed-round': 'Ten questions',
     daily: 'Today’s questions'
   })[gameId] || gameId;
 }

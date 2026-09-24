@@ -113,6 +113,14 @@ test('the commonplace book keeps quotations and the notes on them', async () => 
   assert.equal(store.inCommonplace('macbeth:tomorrow'), false);
 });
 
+// Moves a card's due date into the past, as if its interval had run out.
+function makeDue(id) {
+  const key = 'astor-library-v1';
+  const state = JSON.parse(globalThis.window.localStorage.getItem(key));
+  state.cards[id].due = '2000-01-01';
+  globalThis.window.localStorage.setItem(key, JSON.stringify(state));
+}
+
 test('the flashcard schedule moves a known card up and a missed card back to tomorrow', async () => {
   const store = await freshStore();
   const id = 'macbeth:tomorrow';
@@ -122,7 +130,9 @@ test('the flashcard schedule moves a known card up and a missed card back to tom
   assert.equal(store.cardState(id).box, 1);
   assert.deepEqual(store.dueCards([id]), [], 'a card just answered should not be due again today');
 
+  makeDue(id);
   store.reviewCard(id, true);
+  makeDue(id);
   store.reviewCard(id, true);
   assert.equal(store.cardState(id).box, 3);
 
@@ -134,8 +144,24 @@ test('the flashcard schedule moves a known card up and a missed card back to tom
 test('the schedule never climbs past the last box', async () => {
   const store = await freshStore();
   const id = 'macbeth:dagger';
-  for (let index = 0; index < 12; index += 1) store.reviewCard(id, true);
+  for (let index = 0; index < 12; index += 1) {
+    store.reviewCard(id, true);
+    makeDue(id);
+  }
   assert.equal(store.cardState(id).box, 4);
+});
+
+test('answering a line right again before it is due does not move it up', async () => {
+  const store = await freshStore();
+  const id = 'macbeth:spot';
+  store.reviewCard(id, true);
+  const due = store.cardState(id).due;
+  store.reviewCard(id, true);
+  store.reviewCard(id, true);
+  assert.equal(store.cardState(id).box, 1, 'three right answers in one sitting made a line known');
+  assert.equal(store.cardState(id).due, due);
+  store.reviewCard(id, false);
+  assert.equal(store.cardState(id).box, 0, 'a wrong answer before the line was due did not send it back');
 });
 
 test('a deck summary counts what is learned and what is due', async () => {
@@ -143,7 +169,10 @@ test('a deck summary counts what is learned and what is due', async () => {
   const ids = ['a', 'b', 'c'];
   const summary = store.deckSummary(ids);
   assert.deepEqual(summary, { total: 3, learned: 0, due: 3 });
-  for (let index = 0; index < 4; index += 1) store.reviewCard('a', true);
+  for (let index = 0; index < 4; index += 1) {
+    store.reviewCard('a', true);
+    if (index < 3) makeDue('a');
+  }
   const after = store.deckSummary(ids);
   assert.equal(after.learned, 1);
   assert.equal(after.due, 2);

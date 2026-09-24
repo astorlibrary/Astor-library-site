@@ -180,8 +180,12 @@ export function fillTheLine(book, random = Math.random) {
     // word, but only one of them puts the line back together.
     const answers = [];
     for (const word of hidden) {
-      const at = remaining.toLowerCase().indexOf(word.toLowerCase());
-      if (at < 0) return null;
+      // A whole word only: "woo" must not blank the start of "woo'd", nor
+      // "self" the end of "myself". A possessive is fine: "The game's afoot".
+      const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const match = new RegExp('(?<![\\p{L}\\p{N}])(?<!\\p{L}[\'’])' + escaped + '(?![\\p{L}\\p{N}])(?![\'’](?!s(?!\\p{L}))\\p{L})', 'iu').exec(remaining);
+      if (!match) return null;
+      const at = match.index;
       segments.push(remaining.slice(0, at));
       answers.push(remaining.slice(at, at + word.length));
       remaining = remaining.slice(at + word.length);

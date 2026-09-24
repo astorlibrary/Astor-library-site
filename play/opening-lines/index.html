@@ -7,7 +7,7 @@
   <meta name="description" content="Name the book from its first sentence. A free revision quiz from Astor Library.">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/astor-study.css">
-  <script type="module" src="/assets/astor/game.mjs"></script>
+  <script type="module" src="/assets/astor/quiz-page.mjs"></script>
 </head>
 <body>
 <header class="site-header">
@@ -16,13 +16,15 @@
 </header>
 <main id="main-content" class="page-wrap">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Opening lines</span></nav>
-  <section class="page-intro">
-    <div><p class="kicker">Revision quiz · every book</p><h1>Opening lines</h1><p class="deck">Name the book from its first line.</p></div>
-  </section>
-
-  <div class="astor-game" id="astor-game" data-game="opening-lines" data-scope="library"></div>
+  <header class="rv-head">
+    
+    <p class="kicker">Quiz · every book</p>
+    <h1>Opening lines</h1>
+    <p class="rv-head-deck">Name the book from its first line.</p>
+  </header>
+  <div class="rv-quiz" id="astor-game" data-game="opening-lines" data-scope="library"></div>
 <noscript><div class="astor-empty">This quiz needs JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.</div></noscript>
-  <p class="astor-inline-note">Keyboard: 1 picks A, 2 picks B and so on. Enter checks and moves on. R restarts.</p>
+  <aside class="rv-why"><h2>Why this helps</h2><p>First sentences carry more of a book than almost any other line in it, and they are the easiest thing in literature to half-know.</p><p class="rv-keys">On a keyboard, press 1 to 4 or A to D to answer, Enter to go on, and R at the end to start again.</p></aside>
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/play/">Revise</a><a href="/today/">Today</a><a href="/explore/">Search the library</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></nav>
 </main>
 <footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div><div class="footer-links"><a href="/library/">Books</a><a href="/study/">Study editions</a><a href="/play/">Revise</a><a href="/explore/">Search</a></div></footer>

@@ -223,3 +223,16 @@ test('who said it never offers two names for one person', () => {
     }
   }
 });
+
+test('fill the line only ever blanks whole words', () => {
+  for (const book of books) {
+    for (const question of fillTheLine(book, seededRandom(1))) {
+      question.answer.forEach((word, position) => {
+        const before = question.segments[position];
+        const after = question.segments[position + 1] || '';
+        assert.ok(!/\p{L}$/u.test(before) && !/^\p{L}/u.test(after),
+          book.slug + ': "' + word + '" is blanked inside a longer word in ' + question.id);
+      });
+    }
+  }
+});

@@ -7,7 +7,7 @@
   <meta name="description" content="Build an essay plan: choose a question, take a line of argument and attach quotations to each paragraph.">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/astor-study.css">
-  <script type="module" src="/assets/astor/essay-forge.mjs"></script>
+  <script type="module" src="/assets/astor/essay-planner.mjs"></script>
 </head>
 <body>
 <header class="site-header">
@@ -16,11 +16,13 @@
 </header>
 <main id="main-content" class="page-wrap">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Essay planner</span></nav>
-  <section class="page-intro">
-    <div><p class="kicker">Planning tool</p><h1>Essay planner.</h1><p class="deck">Choose a question and build the plan paragraph by paragraph.</p></div>
-  </section>
-  <div class="astor-chooser" id="astor-essay-chooser"></div>
-  <div id="astor-essay-forge"></div>
+  <header class="rv-head">
+    <div class="rv-head-book" id="rv-head-book"></div>
+    <p class="kicker">Revise</p>
+    <h1>Essay planner</h1>
+    <p class="rv-head-deck">Choose a question and build the plan a paragraph at a time, with the evidence and what it shows.</p>
+  </header>
+  <div class="rv-tool" id="astor-essay-forge"><p class="rv-loading">Finding the questions…</p></div>
 <noscript><div class="astor-empty">The planner needs JavaScript. Every book page has essay questions with a plan for each.</div></noscript>
 
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/play/">Revise</a><a href="/for-teachers/">For teachers</a><a href="/explore/">Search the library</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></nav>

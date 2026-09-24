@@ -199,6 +199,10 @@ export function recordScore(gameId, { score, total, bookSlug }) {
     if (bookSlug) {
       const book = entry.byBook[bookSlug] || { best: 0, total: 0, played: 0 };
       book.played += 1;
+      // The last result and when, so the Revise page can say "7 of 10, Tuesday".
+      book.last = score;
+      book.lastTotal = total;
+      book.lastAt = Date.now();
       if (total && score / total >= (book.total ? book.best / book.total : 0)) { book.best = score; book.total = total; }
       entry.byBook[bookSlug] = book;
     }
@@ -268,15 +272,23 @@ export function annotate(id, note) {
 
 const INTERVALS = [1, 2, 4, 8, 16];
 
+// Quizzes and flashcards both review lines, often the same line several
+// times in one evening. A right answer only moves a line up when it is new or
+// due, so four quizzes in a row cannot make a line "known" in a night; a wrong
+// answer always sends it back to the start.
 export function reviewCard(cardId, correct) {
   update(state => {
-    const card = state.cards[cardId] || { box: 0, due: today(), lapses: 0, reviews: 0 };
+    const existing = state.cards[cardId];
+    const card = existing || { box: 0, due: today(), lapses: 0, reviews: 0 };
     card.reviews += 1;
-    if (correct) card.box = Math.min(card.box + 1, INTERVALS.length - 1);
-    else { card.box = 0; card.lapses += 1; }
-    const due = new Date();
-    due.setDate(due.getDate() + INTERVALS[card.box]);
-    card.due = today(due);
+    const ready = !existing || card.due <= today();
+    if (correct && ready) card.box = Math.min(card.box + 1, INTERVALS.length - 1);
+    else if (!correct) { card.box = 0; card.lapses += 1; }
+    if (!correct || ready) {
+      const due = new Date();
+      due.setDate(due.getDate() + INTERVALS[card.box]);
+      card.due = today(due);
+    }
     card.lastAt = Date.now();
     state.cards[cardId] = card;
     return state;

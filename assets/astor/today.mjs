@@ -1,5 +1,5 @@
 // Astor today: a passage for the day, a title for the day, an anniversary the
-// current year carries, and the Daily Five puzzle.
+// current year carries, and five questions, the same for everyone.
 //
 // Everything is chosen from the date itself. Two readers on opposite sides of
 // the world run the same arithmetic on the same string and see the same five
@@ -9,7 +9,7 @@
 import { el, clear, seededRandom, hashString, pick, formatDate } from './util.mjs';
 import { loadIndex, allQuotations } from './data.mjs';
 import { dailyRound, resultGrid, dailyPassage } from './questions.mjs';
-import { Round, emptyState } from './engine.mjs';
+import { QuizRound, emptyState } from './quiz-round.mjs';
 import { today, dailyResult, recordDaily, streak, isRemembering } from './store.mjs';
 
 const strip = document.querySelector('#astor-daily-strip');
@@ -93,14 +93,14 @@ function renderPuzzle(index, day) {
   if (already) return renderDone(already, questions.length, day);
 
   clear(gameMount);
-  const round = new Round(gameMount, questions, {
+  const round = new QuizRound(gameMount, questions, {
     gameId: 'daily',
+    ownEnd: true,
     onFinish: result => {
       const marks = result.answers.slice();
       if (isRemembering()) recordDaily({ score: result.score, total: result.total, marks }, day);
       window.setTimeout(() => renderDone({ score: result.score, total: result.total, marks }, result.total, day), 0);
-    },
-    endLinks: [{ href: '/play/', label: 'More quizzes' }]
+    }
   });
   round.start();
 }
@@ -110,14 +110,14 @@ function renderDone(result, total, day) {
   const grid = resultGrid(result.marks || []);
   const run = streak();
 
-  const panel = el('div', { class: 'astor-game-end' });
-  panel.append(el('p', { class: 'kicker', text: 'Today · ' + day }));
-  panel.append(el('h2', { text: result.score + ' out of ' + (result.total || total) }));
+  const panel = el('div', { class: 'rv-end' });
+  panel.append(el('p', { class: 'rv-end-what', text: 'Today’s questions · ' + formatDate(new Date()) }));
+  panel.append(el('h2', { class: 'rv-end-score', tabindex: '-1', text: result.score + ' of ' + (result.total || total) }));
   panel.append(el('p', { class: 'astor-share-grid', text: grid }));
   panel.append(el('p', {
-    class: 'astor-game-end-note',
+    class: 'rv-end-note',
     text: run.live && run.current
-      ? 'That is ' + run.current + ' day' + (run.current === 1 ? '' : 's') + ' in a row. New questions at midnight.'
+      ? (run.current >= 2 ? run.current + ' days running. ' : '') + 'New questions at midnight.'
       : 'New questions at midnight.'
   }));
 
@@ -133,9 +133,10 @@ function renderDone(result, total, day) {
     }
   });
   row.append(share);
-  row.append(el('a', { class: 'button secondary', href: '/play/', text: 'Try another quiz' }));
+  row.append(el('a', { class: 'button secondary', href: '/play/', text: 'Revise a book' }));
   row.append(el('a', { class: 'button secondary', href: '/my-library/', text: 'My library' }));
   panel.append(row);
   panel.append(el('p', { class: 'astor-inline-note', text: 'A filled square is a right answer.' }));
   gameMount.append(panel);
+  panel.querySelector('.rv-end-score')?.focus({ preventScroll: true });
 }

@@ -7,7 +7,7 @@
   <meta name="description" content="Argue for a reading of a book, then read the strongest case against it, with quotations for both sides.">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/astor-study.css">
-  <script type="module" src="/assets/astor/defend.mjs"></script>
+  <script type="module" src="/assets/astor/defend-reading.mjs"></script>
 </head>
 <body>
 <header class="site-header">
@@ -16,11 +16,13 @@
 </header>
 <main id="main-content" class="page-wrap">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Defend the reading</span></nav>
-  <section class="page-intro">
-    <div><p class="kicker">Argument tool</p><h1>Defend the reading.</h1><p class="deck">Take a side on a reading of the book, choose quotations to support it, then answer the objection.</p></div>
-  </section>
-  <div class="astor-chooser" id="astor-defend-chooser"></div>
-  <div id="astor-defend"></div>
+  <header class="rv-head">
+    <div class="rv-head-book" id="rv-head-book"></div>
+    <p class="kicker">Revise</p>
+    <h1>Defend the reading</h1>
+    <p class="rv-head-deck">Take a side on a reading of the book, choose the lines that support it, then answer the case against.</p>
+  </header>
+  <div class="rv-tool" id="astor-defend"><p class="rv-loading">Finding the readings…</p></div>
 <noscript><div class="astor-empty">This needs JavaScript. The readings are on each book page under “The book in its moment”.</div></noscript>
   <p class="astor-inline-note">These readings are described in Astor Library’s own words. No critic is quoted.</p>
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/play/">Revise</a><a href="/explore/quotations/">Quotation explorer</a><a href="/explore/">Search the library</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></nav>

@@ -6,9 +6,9 @@
 // copies out as plain text or prints.
 
 import { el, clear } from './util.mjs';
-import { withBooks } from './chooser.mjs';
+import { openBookPage } from './revise-kit.mjs';
 
-const chooser = document.querySelector('#astor-essay-chooser');
+const head = document.querySelector('#rv-head-book');
 const mount = document.querySelector('#astor-essay-forge');
 
 const STARTERS = [
@@ -20,7 +20,7 @@ const STARTERS = [
 ];
 
 if (mount) {
-  withBooks(chooser, { label: 'Which book?', filter: book => (book.essayQuestions || []).length }, book => render(book));
+  openBookPage({ head, mount, filter: book => book.essays > 0, render: book => render(book) });
 }
 
 function render(book) {

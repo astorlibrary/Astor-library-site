@@ -258,43 +258,59 @@ function essaysPanel(book) {
     '</section>';
 }
 
+const REVISE_ICONS = require('./revise-icons');
+
+// The quizzes each book can fill, as worked out in rebuild-study-data.js.
+const REVISE_QUIZZES = (() => {
+  try {
+    const index = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '..', 'assets', 'revise-index.json'), 'utf8'));
+    return new Map(index.books.map(book => [book.slug, new Set(book.quizzes || [])]));
+  } catch {
+    return new Map();
+  }
+})();
+
 const GAMES = [
   ['who-said-it', 'Who said it?', 'Read a line and name who says it.'],
-  ['fill-the-line', 'Fill the line', 'Fill in the missing words.'],
-  ['theme-match', 'Theme match', 'Match each quotation to its theme.'],
-  ['technique-spotter', 'Technique spotter', 'Spot the technique in each quotation.'],
-  ['character-identification', 'Who is this?', 'Guess the character from a description.'],
-  ['order-the-plot', 'Order the plot', 'Put the plot back in order.'],
-  ['mixed-round', 'Mixed questions', 'A few questions of every kind.']
+  ['fill-the-line', 'Fill the line', 'Put the missing words back.'],
+  ['theme-match', 'Theme match', 'Match a line to the theme it carries.'],
+  ['technique-spotter', 'Technique spotter', 'Name the technique doing the work.'],
+  ['character-identification', 'Who is this?', 'Name a character from a description.'],
+  ['order-the-plot', 'Order the plot', 'Put the story back in order.']
 ];
 
+function reviseRow(href, icon, title, note) {
+  return '<li><a class="rv-row" href="' + href + '">' +
+    '<span class="rv-row-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" focusable="false">' + (REVISE_ICONS[icon] || '') + '</svg></span>' +
+    '<span class="rv-row-main"><span class="rv-row-name">' + escapeHtml(title) + '</span><span class="rv-row-sample">' + escapeHtml(note) + '</span></span></a></li>';
+}
+
 function revisePanel(book) {
-  const cards = GAMES.map(([id, title, note]) =>
-    '<a class="astor-play-card" href="/play/' + id + '/?book=' + escapeHtml(book.slug) + '">' +
-    '<span class="astor-play-kind">Quiz</span><h4>' + escapeHtml(title) + '</h4><p>' + escapeHtml(note) + '</p></a>'
-  ).join('');
+  const slug = escapeHtml(book.slug);
+  const offered = REVISE_QUIZZES.get(book.slug);
+  const rows = GAMES.filter(([id]) => !offered || offered.has(id))
+    .map(([id, title, note]) => reviseRow('/play/' + id + '/?book=' + slug, id, title, note)).join('') +
+    reviseRow('/play/flashcards/?book=' + slug, 'flashcards', 'Flashcards', 'The ' + book.quotations.length + ' key lines, ten at a time.') +
+    reviseRow('/today/', 'today', 'Today’s questions', 'Five questions from across the library, the same for everyone.');
   return '<section class="astor-panel" id="astor-revise" data-panel="Revise">' +
     '<h3>Revise ' + escapeHtml(book.title) + '</h3>' +
-    '<p class="astor-panel-note">Test yourself on this book. ' +
-    'Scores are saved in this browser.</p>' +
+    '<p class="astor-panel-note">Answers are kept in this browser, and the lines you miss come back first next time.</p>' +
+    '<div class="rv-session"><a class="rv-start" href="/play/mixed-round/?book=' + slug + '">' +
+    '<span class="rv-start-label">Ten questions on ' + escapeHtml(String(book.title).split(';')[0].trim()) + '</span><span class="rv-start-arrow" aria-hidden="true">→</span></a>' +
+    '<p class="rv-start-note">A mix of every kind, starting with the lines due for another look and the ones you haven’t met yet. <a href="/play/?book=' + slug + '">See how you are getting on</a>.</p></div>' +
     '<div class="astor-revise-tools">' +
-    '<div class="astor-plan" data-astor-plan="' + escapeHtml(book.slug) + '">' +
+    '<div class="astor-plan" data-astor-plan="' + slug + '">' +
     '<h4>Plan your reading</h4>' +
     '<p>Pick a finish date and the days you can read, and the ' + (book.form === 'play' ? 'acts' : 'sections') +
     ' are split between them.</p>' +
     '</div>' +
-    '<div class="astor-sheet-box" data-astor-sheet="' + escapeHtml(book.slug) + '">' +
+    '<div class="astor-sheet-box" data-astor-sheet="' + slug + '">' +
     '<h4>Revision sheet</h4>' +
     '<p>Plot, characters, themes and ' + Math.min(8, book.quotations.length) + ' key quotations on one page to print.</p>' +
     '</div>' +
     '</div>' +
-    '<div class="astor-play-grid">' + cards +
-    '<a class="astor-play-card" href="/play/flashcards/?book=' + escapeHtml(book.slug) + '">' +
-    '<span class="astor-play-kind">Flashcards</span><h4>Learn the quotations</h4>' +
-    '<p>' + book.quotations.length + ' cards. The ones you get wrong come back sooner.</p></a>' +
-    '<a class="astor-play-card" href="/today/"><span class="astor-play-kind">Daily</span><h4>Today’s questions</h4>' +
-    '<p>Five questions. New every day.</p></a>' +
-    '</div>' +
+    '<h4 class="rv-group">Practise one thing</h4>' +
+    '<ul class="rv-rows">' + rows + '</ul>' +
     '</section>';
 }
 

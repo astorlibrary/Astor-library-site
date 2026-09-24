@@ -10,16 +10,13 @@
 // into a named critic's mouth.
 
 import { el, clear, shuffle } from './util.mjs';
-import { withBooks } from './chooser.mjs';
+import { openBookPage } from './revise-kit.mjs';
 
-const chooser = document.querySelector('#astor-defend-chooser');
+const head = document.querySelector('#rv-head-book');
 const mount = document.querySelector('#astor-defend');
 
 if (mount) {
-  withBooks(chooser, {
-    label: 'Argue about which book?',
-    filter: book => (book.criticalViews || []).length >= 2 && book.quotations.length >= 6
-  }, book => render(book));
+  openBookPage({ head, mount, filter: book => book.views >= 2 && book.quotations >= 6, render: book => render(book) });
 }
 
 function render(book) {

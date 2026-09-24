@@ -7,7 +7,7 @@
   <meta name="description" content="Flashcards for the quotations in each Astor Library study guide, set so the lines you keep forgetting come back sooner.">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/astor-study.css">
-  <script type="module" src="/assets/astor/flashcards.mjs"></script>
+  <script type="module" src="/assets/astor/flashcard-deck.mjs"></script>
 </head>
 <body>
 <header class="site-header">
@@ -16,11 +16,13 @@
 </header>
 <main id="main-content" class="page-wrap">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Flashcards</span></nav>
-  <section class="page-intro">
-    <div><p class="kicker">Flashcards</p><h1>Flashcards.</h1><p class="deck">A deck for each book. Cards you get wrong come back sooner.</p></div>
-  </section>
-  <div class="astor-chooser" id="astor-deck-chooser"></div>
-  <div class="astor-game" id="astor-flashcards"></div>
+  <header class="rv-head">
+    <div class="rv-head-book" id="rv-head-book"></div>
+    <p class="kicker">Revise</p>
+    <h1>Flashcards</h1>
+    <p class="rv-head-deck">Ten cards at a time. The lines you forget come back sooner.</p>
+  </header>
+  <div class="rv-quiz" id="astor-flashcards"></div>
 <noscript><div class="astor-empty">The flashcards need JavaScript. The same quotations are on each book page.</div></noscript>
   <p class="astor-inline-note">Your cards are saved in this browser only.</p>
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/play/">Revise</a><a href="/my-library/">My library</a><a href="/explore/">Search the library</a><a href="/library/">All books</a><a href="/study/">Study editions</a><a href="/resources/">Free resources</a></nav>
