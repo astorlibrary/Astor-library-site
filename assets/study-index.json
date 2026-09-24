@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 95,
-    "quotations": 2129,
-    "characters": 872,
+    "books": 96,
+    "quotations": 2161,
+    "characters": 885,
     "themes": 236,
     "techniques": 244,
-    "timelineEvents": 1097,
-    "places": 551
+    "timelineEvents": 1106,
+    "places": 554
   },
   "books": [
     {
@@ -107558,6 +107558,1742 @@
         {
           "href": "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
           "why": "A near-contemporary American story told by a woman whose account of a room nobody else will credit."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "the-two-gentlemen-of-verona",
+      "title": "The Two Gentlemen of Verona",
+      "author": "William Shakespeare",
+      "href": "/books/the-two-gentlemen-of-verona/",
+      "studyHref": "",
+      "playHref": "/play/?book=the-two-gentlemen-of-verona",
+      "form": "play",
+      "genre": "Comedy",
+      "period": "Shakespeare",
+      "setting": "Verona, the Duke's court at Milan, and a forest near Mantua where banished men live as outlaws",
+      "written": "c. 1589-1593",
+      "firstPublished": 1623,
+      "readingTime": 120,
+      "difficulty": 2,
+      "lengthNote": "About 2,200 lines in five acts, one of Shakespeare's shortest plays; the gentlemen speak verse and their servants prose",
+      "openingLine": "Cease to persuade, my loving Proteus.",
+      "summary": "Valentine leaves Verona for the Duke's court at Milan, teasing his friend Proteus for staying at home for love of Julia. Proteus is soon sent after him, and exchanges rings with Julia before he goes. In Milan, Valentine has fallen in love with the Duke's daughter Silvia and plans to elope with her by a rope ladder. Proteus falls for Silvia on sight, betrays the plan to the Duke, and Valentine is banished; in the forest he is made captain of a band of outlaws. Julia follows Proteus disguised as a page, and he hires her to carry his gifts to Silvia, who refuses them. When Silvia runs away to find Valentine, Proteus rescues her from the outlaws and then tries to force her. Valentine stops him and forgives him, Julia reveals herself, and the play ends with two marriages planned. Beside the lovers, the servants Speed and Lance, and Lance's dog Crab, keep up a running commentary on love and loyalty.",
+      "referenceStyle": "act.scene.line, Globe line numbering",
+      "sourceText": {
+        "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
+        "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
+        "note": "Every quotation here is taken word for word from this text, and act, scene and line references follow the traditional Globe numbering, from which modern editions vary by a line or two. This text spells Proteus's servant Lance and Antonio's servant Pantino, where many editions have Launce and Panthino, and at 2.5.1 it reads Milan where the Folio has Padua."
+      },
+      "structure": [
+        {
+          "id": "act-1",
+          "label": "Act I",
+          "title": "Leaving home",
+          "summary": "Valentine sets off from Verona for the Emperor's court at Milan, teasing Proteus for staying at home for love of Julia. Julia, alone with her waiting-woman Lucetta, pretends to be offended by Proteus's letter, tears it up, and then kisses the pieces that carry his name. Proteus's father Antonio, told that his son should see the world, orders him to follow Valentine the next day. Proteus, caught reading Julia's reply, pretends it is from Valentine, and so gives his father the excuse for the parting he dreads.",
+          "scenes": [
+            {
+              "ref": "1.1",
+              "title": "Two friends part",
+              "summary": "Valentine leaves for Milan, Proteus stays, and Speed trades sheep jokes with Proteus over a letter."
+            },
+            {
+              "ref": "1.2",
+              "title": "The torn letter",
+              "summary": "Julia reviews her suitors with Lucetta, tears up Proteus's letter, and kisses the pieces."
+            },
+            {
+              "ref": "1.3",
+              "title": "Sent away",
+              "summary": "Antonio orders his son to Milan, and a lie about a letter hurries the parting on."
+            }
+          ]
+        },
+        {
+          "id": "act-2",
+          "label": "Act II",
+          "title": "Milan",
+          "summary": "In Milan, Valentine is in love with the Duke's daughter Silvia, who has him write a love letter to a nameless friend and then gives it back to him. In Verona, Proteus and Julia exchange rings and part, and Lance weeps over his family's farewell while his dog Crab does not. Proteus arrives in Milan, meets Silvia, and hears from Valentine that they are betrothed and plan to elope by a ladder of cords. Alone, Proteus decides to abandon Julia and betray his friend to the Duke. In Verona, Julia decides to follow Proteus dressed as a page.",
+          "scenes": [
+            {
+              "ref": "2.1",
+              "title": "Silvia's letter",
+              "summary": "Speed lists the signs of love and sees a joke his master misses."
+            },
+            {
+              "ref": "2.2-2.3",
+              "title": "Two farewells",
+              "summary": "Rings and a silent exit for the lovers, then a weeping servant with a dry-eyed dog."
+            },
+            {
+              "ref": "2.4",
+              "title": "Proteus in Milan",
+              "summary": "Valentine praises his friend to the Duke, and Proteus forgets Julia before the scene is out."
+            },
+            {
+              "ref": "2.6-2.7",
+              "title": "Two decisions",
+              "summary": "Proteus resolves to betray Valentine, and Julia resolves to follow Proteus."
+            }
+          ]
+        },
+        {
+          "id": "act-3",
+          "label": "Act III",
+          "title": "Banishment",
+          "summary": "Proteus tells the Duke about the elopement. The Duke, pretending he needs advice on wooing a lady of Verona, gets Valentine to recommend a ladder of cords and to lend him his cloak, under which he finds the ladder and a letter to Silvia. Valentine is banished on pain of death, and Proteus, feigning friendship, sees him to the city gate. Lance and Speed read through the list of virtues and vices of the milkmaid Lance loves. The Duke and Thurio then enlist Proteus to slander Valentine to Silvia, and Proteus advises Thurio to serenade her.",
+          "scenes": [
+            {
+              "ref": "3.1",
+              "title": "The cloak",
+              "summary": "The Duke's invented lady, Valentine's advice on ladders, and the letter under the cloak."
+            },
+            {
+              "ref": "3.1",
+              "title": "Banished",
+              "summary": "Valentine's lament that to be banished from Silvia is death, and Proteus's false comfort."
+            },
+            {
+              "ref": "3.1",
+              "title": "The milkmaid",
+              "summary": "Lance's list of his sweetheart's qualities, read out by Speed."
+            },
+            {
+              "ref": "3.2",
+              "title": "The slander",
+              "summary": "Proteus agrees to speak against his friend and teaches Thurio how to woo."
+            }
+          ]
+        },
+        {
+          "id": "act-4",
+          "label": "Act IV",
+          "title": "Disguises",
+          "summary": "In the forest, outlaws capture Valentine and, pleased by his looks and his languages, make him their captain. In Milan, Julia, disguised as the page Sebastian, hears Proteus serenade Silvia and hears Silvia reject him. Silvia asks Sir Eglamour to escort her to Valentine. Lance explains how he took a whipping for Crab's misbehaviour. Proteus hires Sebastian and sends the page to Silvia with the ring Julia gave him. Silvia refuses the ring for Julia's sake and gives the page her portrait, which Julia compares with her own face.",
+          "scenes": [
+            {
+              "ref": "4.1",
+              "title": "The outlaws",
+              "summary": "Valentine claims a killing to impress the outlaws and becomes their captain."
+            },
+            {
+              "ref": "4.2",
+              "title": "Who is Silvia?",
+              "summary": "Proteus's serenade, Julia listening in disguise, and Silvia's refusal from her window."
+            },
+            {
+              "ref": "4.3",
+              "title": "Eglamour",
+              "summary": "Silvia plans her escape with a gentleman she trusts."
+            },
+            {
+              "ref": "4.4",
+              "title": "The dog and the ring",
+              "summary": "Lance and Crab, Julia hired by the man she loves, and two women who meet over a ring."
+            }
+          ]
+        },
+        {
+          "id": "act-5",
+          "label": "Act V",
+          "title": "The forest",
+          "summary": "Silvia escapes with Eglamour, and the Duke, Thurio, Proteus and Julia follow. Outlaws capture Silvia and Eglamour runs away. Proteus rescues her, and when she still refuses him he tries to force her. Valentine, who has been watching, steps in and denounces him. Proteus repents, and Valentine forgives him and offers him all that was his in Silvia. Julia faints, hands Proteus the wrong ring and reveals herself, and Proteus returns to her. The outlaws bring in the Duke and Thurio. Thurio gives up Silvia, the Duke accepts Valentine and pardons the outlaws, and the two couples are to marry on the same day.",
+          "scenes": [
+            {
+              "ref": "5.1-5.3",
+              "title": "Flight",
+              "summary": "Silvia escapes at evening, the court follows, and the outlaws take her."
+            },
+            {
+              "ref": "5.4",
+              "title": "The rescue",
+              "summary": "Valentine alone in the forest, Proteus's assault, and the private wound."
+            },
+            {
+              "ref": "5.4",
+              "title": "The rings",
+              "summary": "Forgiveness, an offer, a fainting page, and Julia revealed."
+            },
+            {
+              "ref": "5.4",
+              "title": "Pardons",
+              "summary": "Thurio yields, the Duke relents, and the outlaws are forgiven."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "valentine",
+          "name": "Valentine",
+          "role": "A gentleman of Verona",
+          "summary": "He leaves Verona scorning love, and in Milan falls for the Duke's daughter Silvia, who loves him in return. They plan to elope by a rope ladder, but Proteus betrays the plan and the Duke tricks Valentine into revealing it. Banished, he becomes captain of a band of outlaws in the forest. There he stops Proteus attacking Silvia, forgives him at once, and wins Silvia and a pardon for the outlaws from the Duke.",
+          "clue": "Banished for planning an elopement, he tells a band of forest thieves that he killed a man, and they make him their captain.",
+          "firstAppearance": "1.1",
+          "traits": [
+            "romantic",
+            "trusting",
+            "impulsive",
+            "forgiving"
+          ],
+          "relationships": [
+            {
+              "to": "proteus",
+              "label": "friend of, betrayed by, forgives",
+              "kind": "friendship",
+              "stages": [
+                "act-1",
+                "act-2",
+                "act-3",
+                "act-5"
+              ]
+            },
+            {
+              "to": "silvia",
+              "label": "loves and is betrothed to",
+              "kind": "love",
+              "stages": [
+                "act-2",
+                "act-3",
+                "act-5"
+              ]
+            },
+            {
+              "to": "thurio",
+              "label": "mocks and outfaces",
+              "kind": "rival",
+              "stages": [
+                "act-2",
+                "act-5"
+              ]
+            },
+            {
+              "to": "outlaws",
+              "label": "becomes captain of",
+              "kind": "ally",
+              "stages": [
+                "act-4",
+                "act-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "proteus",
+          "name": "Proteus",
+          "role": "A gentleman of Verona, Valentine's friend",
+          "summary": "He stays in Verona for love of Julia until his father sends him to Milan, where he falls for Silvia on sight. In three soliloquies he talks himself out of his vows to Julia and his friendship with Valentine. He betrays Valentine's elopement to the Duke, and courts Silvia while pretending to plead for Thurio. In the forest he tries to force her, is caught by Valentine, repents, and returns to Julia when she reveals herself.",
+          "clue": "He tells a duke about his best friend's plan to elope, then tells the duke's daughter that his first love is dead.",
+          "firstAppearance": "1.1",
+          "traits": [
+            "changeable",
+            "articulate",
+            "self-serving",
+            "persuasive"
+          ],
+          "relationships": [
+            {
+              "to": "julia",
+              "label": "swears love to, abandons, returns to",
+              "kind": "love",
+              "stages": [
+                "act-1",
+                "act-2",
+                "act-5"
+              ]
+            },
+            {
+              "to": "silvia",
+              "label": "pursues, then tries to force",
+              "kind": "enemy",
+              "stages": [
+                "act-4",
+                "act-5"
+              ]
+            },
+            {
+              "to": "valentine",
+              "label": "betrays, then asks pardon of",
+              "kind": "rival",
+              "stages": [
+                "act-2",
+                "act-3",
+                "act-5"
+              ]
+            },
+            {
+              "to": "duke",
+              "label": "informs on his friend to",
+              "kind": "ally",
+              "stages": [
+                "act-3"
+              ]
+            },
+            {
+              "to": "lance",
+              "label": "master of",
+              "kind": "service",
+              "stages": [
+                "act-2",
+                "act-4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "julia",
+          "name": "Julia",
+          "role": "A lady of Verona, loved by Proteus",
+          "summary": "She pretends indifference to Proteus's letter, then pieces it back together, and exchanges rings with him when he leaves. Following him to Milan dressed as the page Sebastian, she overhears him court Silvia, is hired as his servant, and is sent to give Silvia the ring she gave him. In the forest she reveals herself by producing the rings, and wins him back.",
+          "clue": "She tears a love letter into pieces and then kisses them; later, dressed as a page, she is sent to give her own ring to another woman.",
+          "firstAppearance": "1.2",
+          "traits": [
+            "devoted",
+            "witty",
+            "resourceful"
+          ],
+          "relationships": [
+            {
+              "to": "proteus",
+              "label": "loves, follows, serves in disguise",
+              "kind": "love",
+              "stages": [
+                "act-1",
+                "act-2",
+                "act-4",
+                "act-5"
+              ]
+            },
+            {
+              "to": "lucetta",
+              "label": "confides in",
+              "kind": "service",
+              "stages": [
+                "act-1",
+                "act-2"
+              ]
+            },
+            {
+              "to": "silvia",
+              "label": "carries Proteus's ring to, and is pitied by",
+              "kind": "doubling",
+              "stages": [
+                "act-4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "silvia",
+          "name": "Silvia",
+          "role": "The Duke of Milan's daughter",
+          "summary": "She is secretly betrothed to Valentine, refuses Thurio, whom her father favours, and rejects Proteus with scorn, reminding him of Julia and of his friend. After Valentine's banishment she escapes to find him with Sir Eglamour's help. She is captured by outlaws, rescued by Proteus and then attacked by him, and she does not speak again after Valentine intervenes.",
+          "clue": "She makes her suitor write a love letter to himself, and later refuses a ring because she knows who first gave it.",
+          "firstAppearance": "2.1",
+          "traits": [
+            "steadfast",
+            "quick-witted",
+            "courageous"
+          ],
+          "relationships": [
+            {
+              "to": "valentine",
+              "label": "loves",
+              "kind": "love",
+              "stages": [
+                "act-2",
+                "act-3",
+                "act-4",
+                "act-5"
+              ]
+            },
+            {
+              "to": "duke",
+              "label": "daughter of",
+              "kind": "family",
+              "stages": [
+                "act-2",
+                "act-3",
+                "act-5"
+              ]
+            },
+            {
+              "to": "thurio",
+              "label": "refuses",
+              "kind": "rival",
+              "stages": [
+                "act-2",
+                "act-3",
+                "act-4"
+              ]
+            },
+            {
+              "to": "eglamour",
+              "label": "escapes with",
+              "kind": "ally",
+              "stages": [
+                "act-4",
+                "act-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "speed",
+          "name": "Speed",
+          "role": "Valentine's page",
+          "summary": "A quick-tongued page who argues in puns and mock logic. He diagnoses his master's love, sees through Silvia's letter trick when Valentine cannot, reads out Lance's list of his sweetheart's qualities, and goes into exile with Valentine.",
+          "clue": "He lists the signs of a man in love, from sighing like a schoolboy to fasting like one on a diet.",
+          "firstAppearance": "1.1",
+          "traits": [
+            "quick",
+            "mocking",
+            "practical"
+          ],
+          "relationships": [
+            {
+              "to": "valentine",
+              "label": "page to",
+              "kind": "service",
+              "stages": [
+                "act-2",
+                "act-4"
+              ]
+            },
+            {
+              "to": "lance",
+              "label": "drinks and trades jokes with",
+              "kind": "friendship",
+              "stages": [
+                "act-2",
+                "act-3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lance",
+          "name": "Lance",
+          "role": "Proteus's servant, owner of the dog Crab",
+          "summary": "He acts out his family's tearful farewell with his shoes, staff and hat, judges his master a knave, and keeps a written list of the virtues and vices of the milkmaid he loves. He has sat in the stocks and stood in the pillory for his dog's offences. Sent to give Silvia a little dog from Proteus, he loses it and offers her Crab instead.",
+          "clue": "He plays his whole family with two shoes, a staff and a hat, and takes a whipping to save his dog.",
+          "firstAppearance": "2.3",
+          "traits": [
+            "loyal",
+            "literal-minded",
+            "tender-hearted"
+          ],
+          "relationships": [
+            {
+              "to": "crab",
+              "label": "suffers for",
+              "kind": "friendship",
+              "stages": [
+                "act-2",
+                "act-4"
+              ]
+            },
+            {
+              "to": "proteus",
+              "label": "serves, and sees through",
+              "kind": "service",
+              "stages": [
+                "act-2",
+                "act-3",
+                "act-4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "crab",
+          "name": "Crab",
+          "role": "Lance's dog",
+          "summary": "He watches Lance's whole family weep at his master's departure without shedding a tear. Presented to Silvia as a gift, he steals a capon's leg from her plate and disgraces himself under the Duke's table, and Lance takes the whipping for him.",
+          "clue": "He sheds no tear when a whole household weeps at a parting, and steals a capon's leg from a lady's plate.",
+          "firstAppearance": "2.3",
+          "traits": [
+            "unmoved",
+            "greedy",
+            "unruly"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "lucetta",
+          "name": "Lucetta",
+          "role": "Julia's waiting-woman",
+          "summary": "She brings Proteus's letter to her mistress, rates the suitors frankly, advises Julia on the page's costume, and warns her that oaths and tears are servants to deceitful men.",
+          "clue": "Asked why she prefers one suitor, she says she thinks him so because she thinks him so.",
+          "firstAppearance": "1.2",
+          "traits": [
+            "shrewd",
+            "frank",
+            "teasing"
+          ],
+          "relationships": [
+            {
+              "to": "julia",
+              "label": "serves and advises",
+              "kind": "service",
+              "stages": [
+                "act-1",
+                "act-2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "duke",
+          "name": "The Duke of Milan",
+          "role": "Silvia's father, also called the Emperor",
+          "summary": "He wants his daughter to marry the wealthy Thurio. Warned by Proteus, he traps Valentine by asking his advice on wooing a lady and borrowing his cloak, under which he finds the rope ladder and a letter to Silvia. He banishes Valentine and recruits Proteus to slander him. At the end, brought in by the outlaws, he accepts Valentine as a gentleman worthy of his daughter.",
+          "clue": "He pretends to need advice on wooing a lady, borrows a young man's cloak, and finds a rope ladder under it.",
+          "firstAppearance": "2.4",
+          "traits": [
+            "suspicious",
+            "cunning",
+            "authoritative"
+          ],
+          "relationships": [
+            {
+              "to": "valentine",
+              "label": "banishes",
+              "kind": "enemy",
+              "stages": [
+                "act-3"
+              ]
+            },
+            {
+              "to": "thurio",
+              "label": "favours as a son-in-law",
+              "kind": "ally",
+              "stages": [
+                "act-2",
+                "act-3",
+                "act-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thurio",
+          "name": "Thurio",
+          "role": "A rich, foolish suitor to Silvia",
+          "summary": "Favoured by Silvia's father and no match for Valentine's wit, he follows Proteus's advice to serenade her. When Valentine threatens him in the forest he gives up his claim at once, saying only a fool would risk his body for a girl who does not love him.",
+          "clue": "He hires musicians to sing under a lady's window, and gives her up as soon as a rival threatens him.",
+          "firstAppearance": "2.4",
+          "traits": [
+            "foolish",
+            "vain",
+            "cowardly"
+          ],
+          "relationships": [
+            {
+              "to": "proteus",
+              "label": "trusts as his go-between",
+              "kind": "ally",
+              "stages": [
+                "act-3",
+                "act-4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "eglamour",
+          "name": "Sir Eglamour",
+          "role": "A gentleman who helps Silvia escape",
+          "summary": "A gentleman who vowed chastity on the grave of the woman he loved. Silvia trusts him to escort her to Valentine and he agrees without hesitation, but when outlaws attack in the forest he outruns them and leaves her behind.",
+          "clue": "He vowed chastity on the grave of the woman he loved, and runs off when thieves attack the lady he is escorting.",
+          "firstAppearance": "4.3",
+          "traits": [
+            "chivalrous",
+            "grieving",
+            "fleet-footed"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "antonio",
+          "name": "Antonio",
+          "role": "Proteus's father",
+          "summary": "Told by his servant Pantino that his son should see the world, he orders Proteus to the Emperor's court in Milan the next day and refuses him even a day or two's delay, which sets the plot moving.",
+          "clue": "He sends his son abroad at a day's notice, saying that what he wills he wills, and there an end.",
+          "firstAppearance": "1.3",
+          "traits": [
+            "decisive",
+            "peremptory"
+          ],
+          "relationships": [
+            {
+              "to": "proteus",
+              "label": "father of",
+              "kind": "family",
+              "stages": [
+                "act-1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "outlaws",
+          "name": "The Outlaws",
+          "role": "Banished men living in the forest",
+          "summary": "Some are gentlemen, banished for crimes of their own, among them plotting to carry off a lady and stabbing a man. They capture Valentine, and, impressed by his looks and his languages, make him their captain on condition that they do no outrages on women or poor travellers. At the end the Duke pardons them at Valentine's request.",
+          "clue": "Banished gentlemen themselves, they swear by the bare scalp of Robin Hood's fat friar.",
+          "firstAppearance": "4.1",
+          "traits": [
+            "rough",
+            "well-born",
+            "loyal to their captain"
+          ],
+          "relationships": [
+            {
+              "to": "silvia",
+              "label": "capture",
+              "kind": "enemy",
+              "stages": [
+                "act-5"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "friendship",
+          "name": "Friendship and betrayal",
+          "canonicalName": "Friendship",
+          "summary": "The play opens with two friends parting and ends with them reconciled, and in between one betrays the other to his mistress's father. Proteus decides in soliloquy that he is dearer to himself than a friend, and Valentine, betrayed, calls the private wound the deepest.",
+          "development": "The last scene tests the ideal to its limit. Valentine forgives at once and offers Proteus all that was his in Silvia, a gesture older stories of friendship admired and many modern audiences cannot accept."
+        },
+        {
+          "id": "loyalty",
+          "name": "Constancy and broken vows",
+          "canonicalName": "Loyalty",
+          "summary": "Proteus swears constancy to Julia with a ring and breaks the vow as soon as he sees Silvia, while Julia and Silvia keep their vows under pressure. The word forsworn runs through his soliloquies, and his name, borrowed from a sea god who could change shape at will, labels him from the start.",
+          "development": "Near the end Proteus states the point himself: were man but constant, he were perfect."
+        },
+        {
+          "id": "love-conventions",
+          "name": "Love and its conventions",
+          "canonicalName": "Love and its conventions",
+          "summary": "Valentine mocks love and then falls into every habit he mocked: sighing, fasting, and calling his lady divine. Speed lists the symptoms, Lance parodies the lover's praise with a list of a milkmaid's virtues and vices, and Proteus teaches Thurio to write wailful sonnets.",
+          "development": "Courtly love appears as a set of learned behaviours that anyone, sincere or false, can perform, which is why Proteus performs them so well."
+        },
+        {
+          "id": "disguise",
+          "name": "Disguise and gender",
+          "canonicalName": "Disguise and identity",
+          "summary": "Julia travels to Milan dressed as the page Sebastian. In disguise she hears Proteus court Silvia, is hired as his servant, and is sent to give Silvia her own ring.",
+          "development": "The disguise gives her knowledge no one else has, and her last speech turns the costume into a charge against Proteus: it is a lesser blot for women to change their shapes than for men to change their minds."
+        },
+        {
+          "id": "service",
+          "name": "Masters and servants",
+          "canonicalName": "Service",
+          "summary": "Speed and Lance see through their masters faster than the masters see through each other. Lance takes whippings for his dog, and Julia, as a page, has to serve the man who has abandoned her.",
+          "development": "Lance's question, how many masters would do this for his servant, sets a servant's loyalty to a dog against a gentleman's loyalty to his friend."
+        },
+        {
+          "id": "exile",
+          "name": "Court, exile and the forest",
+          "canonicalName": "Exile",
+          "summary": "Valentine is banished from Milan and made captain of outlaws, some of them gentlemen exiled for crimes of their own. Nearly all the main characters end up in the forest, and the play's crisis is settled there rather than at court.",
+          "development": "Valentine comes to prefer the shadowy desert to peopled towns, and the Duke's pardon at the end brings the outlaws back with him."
+        },
+        {
+          "id": "silence",
+          "name": "Silvia's silence",
+          "canonicalName": "Silence",
+          "summary": "After Proteus tries to force her and Valentine offers him his claim in her, Silvia does not speak again. Her future is settled by men: her rescuer, her father, and the rival who gives her up.",
+          "development": "The text leaves her reaction open, so every production has to decide what her silence means. It has become the most discussed question about the play."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "soliloquy",
+          "name": "Soliloquy",
+          "canonicalName": "Soliloquy",
+          "definition": "A speech in which a character alone on stage thinks aloud.",
+          "bookDefinition": "A speech in which a character alone on stage thinks aloud.",
+          "inThisBook": "Proteus talks himself into betrayal in soliloquies in 2.4 and 2.6, and in a third, in 4.2, reckons up what he has done. Julia's soliloquies in 1.2 and 4.4 are where she says what pride or disguise stops her saying aloud."
+        },
+        {
+          "id": "letters",
+          "name": "Letters",
+          "canonicalName": "Letters",
+          "definition": "Written messages carried on stage that drive or complicate the action.",
+          "bookDefinition": "Written messages carried on stage that drive or complicate the action.",
+          "inThisBook": "Almost every letter in the play goes astray. Julia tears up Proteus's letter and pieces it together, Silvia makes Valentine write a letter to himself, the Duke finds a letter under Valentine's cloak, and Julia hands Silvia the wrong paper."
+        },
+        {
+          "id": "disguise",
+          "name": "Disguise",
+          "canonicalName": "Disguise",
+          "definition": "A character concealing their identity, so that the audience knows more than the people on stage do.",
+          "bookDefinition": "A character concealing their identity, so that the audience knows more than the people on stage do.",
+          "inThisBook": "Julia as the page Sebastian hears Proteus's courtship of Silvia, carries her own ring to her rival, and describes her own grief as a part she once played in Julia's gown."
+        },
+        {
+          "id": "parody-subplot",
+          "name": "Parody subplot",
+          "canonicalName": "Parody subplot",
+          "definition": "Comic scenes, often among servants, that repeat the main plot's concerns at a lower level.",
+          "bookDefinition": "Comic scenes, often among servants, that repeat the main plot's concerns at a lower level.",
+          "inThisBook": "Lance's tearful farewell follows straight after Proteus and Julia's parting, his milkmaid list mocks the lovers' praise of their ladies, and his loyalty to Crab shows up Proteus's disloyalty to Valentine."
+        },
+        {
+          "id": "dramatic-irony",
+          "name": "Dramatic irony",
+          "canonicalName": "Dramatic irony",
+          "definition": "The audience knowing more than a character does.",
+          "bookDefinition": "The audience knowing more than a character does.",
+          "inThisBook": "Valentine praises Proteus to the Duke just before Proteus betrays him, Julia praises Proteus's truth after he has abandoned her, and in disguise she comments on his courtship in asides while he stands beside her."
+        },
+        {
+          "id": "wordplay",
+          "name": "Wordplay",
+          "canonicalName": "Wordplay",
+          "definition": "Puns and double meanings.",
+          "bookDefinition": "Puns and double meanings.",
+          "inThisBook": "Sheep and ship, tide and tied, stand-under and understand, false as out of tune and false as faithless, and habit as both custom and clothing."
+        },
+        {
+          "id": "antithesis",
+          "name": "Antithesis",
+          "canonicalName": "Antithesis",
+          "definition": "Opposed ideas set against each other in balanced phrases.",
+          "bookDefinition": "Opposed ideas set against each other in balanced phrases.",
+          "inThisBook": "The gentlemen's verse is built from balanced halves: he after honour hunts, I after love. Julia's lines on serving Proteus set true against false, and her last couplet sets women's shapes against men's minds."
+        },
+        {
+          "id": "rhymed-couplets",
+          "name": "Rhymed couplets",
+          "canonicalName": "Rhymed couplets",
+          "definition": "Pairs of rhyming lines, often used to close a speech or scene.",
+          "bookDefinition": "Pairs of rhyming lines, often used to close a speech or scene.",
+          "inThisBook": "The play's sharpest turns close on a couplet: Proteus's decision to pursue Silvia, Valentine's cry that a friend should be the worst of foes, his offer to Proteus, and Julia's reproach."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "Rings and a picture",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative keeps returning to until it stands for the argument rather than illustrating it.",
+          "bookDefinition": "An object the narrative keeps returning to until it stands for the argument rather than illustrating it.",
+          "inThisBook": "The rings Proteus and Julia exchange in 2.2 come back in 4.4 and reveal her in 5.4. Silvia's portrait is what Proteus asks for when he cannot have her, and what Julia studies to see what he prefers."
+        },
+        {
+          "id": "animal-imagery",
+          "name": "Animal imagery",
+          "canonicalName": "Animal imagery",
+          "definition": "Comparisons between people and animals.",
+          "bookDefinition": "Comparisons between people and animals.",
+          "inThisBook": "Speed and Proteus argue over who is the sheep and who the shepherd, Proteus calls his love spaniel-like, and Julia calls herself a fox set to guard lambs, all in a play with a real dog on stage."
+        },
+        {
+          "id": "epithets",
+          "name": "Epithets",
+          "canonicalName": "Epithets",
+          "definition": "Descriptive words or phrases attached to a name.",
+          "bookDefinition": "Descriptive words or phrases attached to a name.",
+          "inThisBook": "Characters sum each other up in strings of adjectives. Silvia calls Proteus subtle, perjured, false and disloyal, and the Duke calls his daughter peevish, sullen, froward, proud, disobedient and stubborn."
+        },
+        {
+          "id": "verse-breakdown",
+          "name": "Breaking verse",
+          "canonicalName": "Breaking verse",
+          "definition": "Verse lines split, cut short or broken off, so that the metre shows strain.",
+          "bookDefinition": "Verse lines split, cut short or broken off, so that the metre shows strain.",
+          "inThisBook": "In the forest in 5.4 the lines between Silvia and Proteus break into short pieces, and a half-line question gives away his whole position."
+        },
+        {
+          "id": "song",
+          "name": "Song",
+          "canonicalName": "Song",
+          "definition": "A sung passage standing outside the dialogue, free to say what the speaking characters cannot.",
+          "bookDefinition": "A sung passage standing outside the dialogue, free to say what the speaking characters cannot.",
+          "inThisBook": "Who is Silvia? is sung under Silvia's window for Thurio while Proteus courts her for himself and Julia listens in disguise."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "homely-wits",
+          "text": "Home-keeping youth have ever homely wits.",
+          "speaker": "Valentine",
+          "reference": "1.1.2",
+          "stage": "act-1",
+          "context": "Leaving Verona for Milan, he teases Proteus for staying at home for love.",
+          "analysis": "Valentine puns on home and homely, which meant plain or dull. He speaks up for travel and experience, and within a few scenes he is as lovesick as the friend he mocks.",
+          "themes": [
+            "love-conventions",
+            "friendship"
+          ],
+          "techniques": [
+            "wordplay"
+          ],
+          "characters": [
+            "valentine",
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "Home-keeping",
+            "homely"
+          ]
+        },
+        {
+          "id": "honour-hunts",
+          "text": "He after honour hunts, I after love.",
+          "speaker": "Proteus",
+          "reference": "1.1.64",
+          "stage": "act-1",
+          "context": "Alone, after Valentine has gone.",
+          "analysis": "The line splits into matching halves, one for each friend. Proteus sets honour and love against each other, and the rest of the play shows him giving up his honour for a love he then changes.",
+          "themes": [
+            "friendship",
+            "love-conventions"
+          ],
+          "techniques": [
+            "antithesis",
+            "soliloquy"
+          ],
+          "characters": [
+            "proteus",
+            "valentine"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "honour",
+            "love"
+          ]
+        },
+        {
+          "id": "hateful-hands",
+          "text": "O hateful hands, to tear such loving words!",
+          "speaker": "Julia",
+          "reference": "1.2.111",
+          "stage": "act-1",
+          "context": "Alone, having torn up Proteus's letter in front of Lucetta.",
+          "analysis": "Julia tore the letter to look indifferent, and now she scolds her own hands. She goes on to kiss the scraps that carry Proteus's name and throw away her own, acting out what she was too proud to tell her maid.",
+          "themes": [
+            "love-conventions"
+          ],
+          "techniques": [
+            "letters",
+            "soliloquy"
+          ],
+          "characters": [
+            "julia"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "hateful",
+            "loving"
+          ]
+        },
+        {
+          "id": "april-day",
+          "text": "O, how this spring of love resembleth The uncertain glory of an April day,",
+          "speaker": "Proteus",
+          "reference": "1.3.85",
+          "stage": "act-1",
+          "context": "His father has just ordered him to Milan the next day.",
+          "analysis": "Spring weather, bright one moment and clouded the next, stands for his luck in love. The image fits his character better than he knows, because his own feelings turn out to be as changeable as April.",
+          "themes": [
+            "loyalty"
+          ],
+          "techniques": [
+            "soliloquy"
+          ],
+          "characters": [
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "spring",
+            "April"
+          ]
+        },
+        {
+          "id": "schoolboy-abc",
+          "text": "to walk alone, like one that had the pestilence; to sigh, like a schoolboy that had lost his ABC",
+          "speaker": "Speed",
+          "reference": "2.1.19",
+          "stage": "act-2",
+          "context": "Telling Valentine how he knows his master is in love.",
+          "analysis": "Speed's run of similes turns the fashionable signs of love into symptoms of plague and childishness. Valentine mocked Proteus for these same habits in the first scene.",
+          "themes": [
+            "love-conventions"
+          ],
+          "techniques": [
+            "parody-subplot"
+          ],
+          "characters": [
+            "speed",
+            "valentine"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "pestilence",
+            "ABC"
+          ]
+        },
+        {
+          "id": "nose-on-a-face",
+          "text": "O jest unseen, inscrutable, invisible, As a nose on a man’s face, or a weathercock on a steeple!",
+          "speaker": "Speed",
+          "reference": "2.1.114",
+          "stage": "act-2",
+          "context": "Aside, after Silvia hands Valentine back the love letter she asked him to write.",
+          "analysis": "Silvia has made Valentine write a love letter to himself, and he has not noticed. Speed piles up three grand words for invisibility and then undercuts them with the most obvious things he can think of.",
+          "themes": [
+            "love-conventions"
+          ],
+          "techniques": [
+            "letters",
+            "dramatic-irony"
+          ],
+          "characters": [
+            "speed",
+            "silvia",
+            "valentine"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "inscrutable",
+            "weathercock"
+          ]
+        },
+        {
+          "id": "gone-without-a-word",
+          "text": "What, gone without a word? Ay, so true love should do. It cannot speak, For truth hath better deeds than words to grace it.",
+          "speaker": "Proteus",
+          "reference": "2.2.17",
+          "stage": "act-2",
+          "context": "Julia has left without speaking after they exchange rings.",
+          "analysis": "Proteus praises deeds over words moments after swearing a vow. His deeds in Milan will betray every word of it, and the audience finds out within two scenes.",
+          "themes": [
+            "loyalty"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "proteus",
+            "julia"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "word",
+            "deeds"
+          ]
+        },
+        {
+          "id": "pebblestone",
+          "text": "yet did not this cruel-hearted cur shed one tear. He is a stone, a very pebblestone, and has no more pity in him than a dog.",
+          "speaker": "Lance",
+          "reference": "2.3.6",
+          "stage": "act-2",
+          "context": "Describing his family's tearful farewell, which his dog Crab watched dry-eyed.",
+          "analysis": "The joke is in the last words: Lance complains that his dog has no more pity than a dog. The scene comes straight after Proteus and Julia's parting and gives a comic version of it, with more tears.",
+          "themes": [
+            "service",
+            "loyalty"
+          ],
+          "techniques": [
+            "parody-subplot"
+          ],
+          "characters": [
+            "lance",
+            "crab"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "cur",
+            "pebblestone"
+          ]
+        },
+        {
+          "id": "one-nail",
+          "text": "Even as one heat another heat expels, Or as one nail by strength drives out another, So the remembrance of my former love Is by a newer object quite forgotten.",
+          "speaker": "Proteus",
+          "reference": "2.4.191",
+          "stage": "act-2",
+          "context": "Alone, minutes after meeting Silvia and hearing Valentine's plan to elope with her.",
+          "analysis": "Proteus explains his change of heart with two proverbs, as if one love replacing another were a law of nature. He calls Julia his former love in the same scene in which he first meets Silvia.",
+          "themes": [
+            "loyalty"
+          ],
+          "techniques": [
+            "soliloquy"
+          ],
+          "characters": [
+            "proteus",
+            "julia",
+            "silvia"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "nail",
+            "forgotten"
+          ]
+        },
+        {
+          "id": "forsworn",
+          "text": "To leave my Julia, shall I be forsworn; To love fair Silvia, shall I be forsworn; To wrong my friend, I shall be much forsworn.",
+          "speaker": "Proteus",
+          "reference": "2.6.1",
+          "stage": "act-2",
+          "context": "Opening the soliloquy in which he decides to betray Valentine.",
+          "analysis": "Each line ends on the same word, and the third makes it worse: much forsworn. Proteus counts his broken oaths clearly, and then argues his way past every one of them.",
+          "themes": [
+            "loyalty",
+            "friendship"
+          ],
+          "techniques": [
+            "soliloquy"
+          ],
+          "characters": [
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "forsworn",
+            "wrong"
+          ]
+        },
+        {
+          "id": "dearer-than-a-friend",
+          "text": "I to myself am dearer than a friend, For love is still most precious in itself,",
+          "speaker": "Proteus",
+          "reference": "2.6.23",
+          "stage": "act-2",
+          "context": "Later in the same soliloquy.",
+          "analysis": "This is the turning point of the friendship plot. Proteus puts himself above his friend in so many words, and a few lines later he resolves to tell the Duke about the elopement.",
+          "themes": [
+            "friendship"
+          ],
+          "techniques": [
+            "soliloquy"
+          ],
+          "characters": [
+            "proteus",
+            "valentine"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "dearer",
+            "precious"
+          ]
+        },
+        {
+          "id": "words-are-bonds",
+          "text": "His words are bonds, his oaths are oracles, His love sincere, his thoughts immaculate,",
+          "speaker": "Julia",
+          "reference": "2.7.75",
+          "stage": "act-2",
+          "context": "Lucetta has warned her that oaths and tears are servants to deceitful men.",
+          "analysis": "Julia's praise runs in balanced pairs, and the audience knows every item is false, since Proteus has already decided to abandon her. Her faith in him makes the betrayal look worse.",
+          "themes": [
+            "loyalty"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "julia",
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "bonds",
+            "oracles"
+          ]
+        },
+        {
+          "id": "banished-from-myself",
+          "text": "To die is to be banished from myself, And Silvia is myself; banished from her Is self from self—a deadly banishment.",
+          "speaker": "Valentine",
+          "reference": "3.1.172",
+          "stage": "act-3",
+          "context": "Alone, just banished by the Duke.",
+          "analysis": "Valentine reasons that since Silvia is himself, exile from her is exile from himself, and so is death. Romeo argues the same way when he is banished from Verona.",
+          "themes": [
+            "exile",
+            "love-conventions"
+          ],
+          "techniques": [
+            "soliloquy"
+          ],
+          "characters": [
+            "valentine",
+            "silvia"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "banished",
+            "self"
+          ]
+        },
+        {
+          "id": "kind-of-knave",
+          "text": "I am but a fool, look you, and yet I have the wit to think my master is a kind of a knave",
+          "speaker": "Lance",
+          "reference": "3.1.261",
+          "stage": "act-3",
+          "context": "Alone, after watching Proteus comfort the banished Valentine.",
+          "analysis": "Lance has just seen Proteus offer comfort to the friend he betrayed. The servant who calls himself a fool judges his master correctly, and tells only the audience.",
+          "themes": [
+            "service",
+            "friendship"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "lance",
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "fool",
+            "knave"
+          ]
+        },
+        {
+          "id": "cate-log",
+          "text": "Here is the cate-log of her condition.",
+          "speaker": "Lance",
+          "reference": "3.1.269",
+          "stage": "act-3",
+          "context": "Producing a paper that lists the virtues and vices of the milkmaid he loves.",
+          "analysis": "Cate-log is Lance's version of catalogue. The list Speed reads out sets her milking, brewing and sewing against bad breath and no teeth, a parody of the lovers' itemised praise of their ladies.",
+          "themes": [
+            "love-conventions"
+          ],
+          "techniques": [
+            "parody-subplot",
+            "wordplay"
+          ],
+          "characters": [
+            "lance",
+            "speed"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "cate-log",
+            "condition"
+          ]
+        },
+        {
+          "id": "spaniel-like",
+          "text": "Yet, spaniel-like, the more she spurns my love, The more it grows and fawneth on her still.",
+          "speaker": "Proteus",
+          "reference": "4.2.14",
+          "stage": "act-4",
+          "context": "Alone before the serenade, admitting that Silvia rejects him.",
+          "analysis": "Proteus compares his love to a spaniel that fawns harder the more it is kicked. In the play's real dog story the loyal one is Lance, who takes beatings for Crab.",
+          "themes": [
+            "love-conventions",
+            "loyalty"
+          ],
+          "techniques": [
+            "animal-imagery",
+            "soliloquy"
+          ],
+          "characters": [
+            "proteus",
+            "silvia"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "spaniel-like",
+            "fawneth"
+          ]
+        },
+        {
+          "id": "who-is-silvia",
+          "text": "Who is Silvia? What is she, That all our swains commend her?",
+          "speaker": "Song",
+          "reference": "4.2.37",
+          "stage": "act-4",
+          "context": "Sung under Silvia's window by the musicians Thurio has hired. This text gives the song to Proteus, and Julia, disguised, is listening.",
+          "analysis": "The song praises Silvia as holy, fair and wise in the language of pastoral, and Schubert later set it as An Silvia. On stage its meaning depends on who is listening: Julia hears the man she loves serenade another woman.",
+          "themes": [
+            "love-conventions",
+            "loyalty"
+          ],
+          "techniques": [
+            "song",
+            "dramatic-irony"
+          ],
+          "characters": [
+            "silvia",
+            "julia",
+            "thurio"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "Silvia",
+            "swains"
+          ]
+        },
+        {
+          "id": "plays-false",
+          "text": "He plays false, father.",
+          "speaker": "Julia",
+          "reference": "4.2.56",
+          "stage": "act-4",
+          "context": "Disguised as a boy, answering the Host, who asks why the music does not please her.",
+          "analysis": "False means both out of tune and unfaithful. The Host hears a complaint about the playing; the audience hears Julia's verdict on Proteus.",
+          "themes": [
+            "disguise",
+            "loyalty"
+          ],
+          "techniques": [
+            "wordplay",
+            "dramatic-irony"
+          ],
+          "characters": [
+            "julia",
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "plays",
+            "false"
+          ]
+        },
+        {
+          "id": "perjured-false",
+          "text": "Thou subtle, perjured, false, disloyal man,",
+          "speaker": "Silvia",
+          "reference": "4.2.90",
+          "stage": "act-4",
+          "context": "From her window, answering Proteus's courtship after the serenade.",
+          "analysis": "Silvia answers the love song with four accusations in a single line. She has refused Proteus from the first, and she goes on to tell him to return and make amends to his first love.",
+          "themes": [
+            "loyalty"
+          ],
+          "techniques": [
+            "epithets"
+          ],
+          "characters": [
+            "silvia",
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "perjured",
+            "disloyal"
+          ]
+        },
+        {
+          "id": "substance-and-shadow",
+          "text": "If ’twere a substance you would sure deceive it And make it but a shadow, as I am.",
+          "speaker": "Julia",
+          "reference": "4.2.122",
+          "stage": "act-4",
+          "context": "Aside, when Proteus says that since he cannot have Silvia he will love her picture.",
+          "analysis": "Proteus has just called himself a shadow and asked for Silvia's portrait. Julia turns his words against him: anything real that he loves, he empties, as he has emptied her.",
+          "themes": [
+            "disguise",
+            "loyalty"
+          ],
+          "techniques": [
+            "dramatic-irony",
+            "antithesis"
+          ],
+          "characters": [
+            "julia",
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "substance",
+            "shadow"
+          ]
+        },
+        {
+          "id": "how-many-masters",
+          "text": "How many masters would do this for his servant?",
+          "speaker": "Lance",
+          "reference": "4.4.21",
+          "stage": "act-4",
+          "context": "Describing how he took a whipping in the Duke's dining chamber for his dog's offence.",
+          "analysis": "Lance turns the usual order round and casts himself as the master who suffers for his servant, Crab. The question hangs over Proteus, who enters a few lines later having betrayed his friend.",
+          "themes": [
+            "service",
+            "loyalty"
+          ],
+          "techniques": [
+            "parody-subplot"
+          ],
+          "characters": [
+            "lance",
+            "crab"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "masters",
+            "servant"
+          ]
+        },
+        {
+          "id": "fox-and-lambs",
+          "text": "Alas, poor Proteus, thou hast entertained A fox to be the shepherd of thy lambs.",
+          "speaker": "Julia",
+          "reference": "4.4.80",
+          "stage": "act-4",
+          "context": "Alone, after Proteus has hired her as his page and sent her to Silvia with the ring she gave him.",
+          "analysis": "Julia calls herself the fox: the page Proteus trusts to plead his case is the person least likely to plead it well. She pities him even as she says it.",
+          "themes": [
+            "disguise",
+            "service"
+          ],
+          "techniques": [
+            "animal-imagery",
+            "dramatic-irony"
+          ],
+          "characters": [
+            "julia",
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "fox",
+            "lambs"
+          ]
+        },
+        {
+          "id": "true-servant",
+          "text": "I am my master’s true confirmed love, But cannot be true servant to my master Unless I prove false traitor to myself.",
+          "speaker": "Julia",
+          "reference": "4.4.92",
+          "stage": "act-4",
+          "context": "The same soliloquy.",
+          "analysis": "True and false pull against each other through three lines. Serving Proteus faithfully would mean betraying herself, because the job he has given her is to win Silvia for him.",
+          "themes": [
+            "service",
+            "disguise",
+            "loyalty"
+          ],
+          "techniques": [
+            "antithesis",
+            "soliloquy"
+          ],
+          "characters": [
+            "julia"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "confirmed",
+            "traitor"
+          ]
+        },
+        {
+          "id": "ariadne",
+          "text": "Madam, ’twas Ariadne, passioning For Theseus’ perjury and unjust flight,",
+          "speaker": "Julia",
+          "reference": "4.4.156",
+          "stage": "act-4",
+          "context": "Still disguised, telling Silvia that she once played a woman's part at Pentecost, wearing Julia's own gown.",
+          "analysis": "Julia describes her own grief as a part the page once acted, and chooses a heroine deserted by a faithless lover. On Shakespeare's stage a boy actor played Julia, so the layers of pretence reach all the way out to the audience.",
+          "themes": [
+            "disguise",
+            "loyalty"
+          ],
+          "techniques": [
+            "disguise",
+            "dramatic-irony"
+          ],
+          "characters": [
+            "julia",
+            "silvia"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "Ariadne",
+            "perjury"
+          ]
+        },
+        {
+          "id": "use-breeds-habit",
+          "text": "How use doth breed a habit in a man!",
+          "speaker": "Valentine",
+          "reference": "5.4.1",
+          "stage": "act-5",
+          "context": "Alone in the forest, where he now leads the outlaws.",
+          "analysis": "Habit means custom and also clothing. Valentine has grown used to the forest and now prefers it to crowded towns, a thought the banished Duke of As You Like It develops in the Forest of Arden.",
+          "themes": [
+            "exile"
+          ],
+          "techniques": [
+            "wordplay",
+            "soliloquy"
+          ],
+          "characters": [
+            "valentine"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "use",
+            "habit"
+          ]
+        },
+        {
+          "id": "plural-faith",
+          "text": "Thou hast no faith left now, unless thou’dst two, And that’s far worse than none; better have none Than plural faith, which is too much by one.",
+          "speaker": "Silvia",
+          "reference": "5.4.50",
+          "stage": "act-5",
+          "context": "In the forest, refusing Proteus after he has rescued her from the outlaws.",
+          "analysis": "Silvia's arithmetic is exact: a man with two faiths has none. This is her last long speech, and within a few lines Proteus tries to force her.",
+          "themes": [
+            "loyalty",
+            "silence"
+          ],
+          "techniques": [
+            "antithesis"
+          ],
+          "characters": [
+            "silvia",
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "faith",
+            "plural"
+          ]
+        },
+        {
+          "id": "who-respects-friend",
+          "text": "In love Who respects friend?",
+          "speaker": "Proteus",
+          "reference": "5.4.54",
+          "stage": "act-5",
+          "context": "Silvia has just called him a counterfeit to his true friend.",
+          "analysis": "The short question breaks the verse into pieces and states Proteus's position with no disguise at all. Silvia's reply completes the line: all men but Proteus.",
+          "themes": [
+            "friendship"
+          ],
+          "techniques": [
+            "verse-breakdown"
+          ],
+          "characters": [
+            "proteus",
+            "silvia"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "love",
+            "friend"
+          ]
+        },
+        {
+          "id": "force-ye",
+          "text": "I’ll woo you like a soldier, at arms’ end, And love you ’gainst the nature of love—force ye.",
+          "speaker": "Proteus",
+          "reference": "5.4.59",
+          "stage": "act-5",
+          "context": "Silvia has refused him for the last time.",
+          "analysis": "Proteus admits that what he intends is against the nature of love, and the line ends in a threat of rape. Valentine, watching unseen, steps forward only now, at the darkest moment in the comedy.",
+          "themes": [
+            "silence",
+            "love-conventions"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "proteus",
+            "silvia",
+            "valentine"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "soldier",
+            "force"
+          ]
+        },
+        {
+          "id": "private-wound",
+          "text": "The private wound is deepest. O time most accurst, ’Mongst all foes that a friend should be the worst!",
+          "speaker": "Valentine",
+          "reference": "5.4.75",
+          "stage": "act-5",
+          "context": "Confronting Proteus after stopping the assault.",
+          "analysis": "Valentine closes his speech with a rhyme on accurst and worst. What hurts him most is that the attack came from a friend, and the speech says more about Proteus than about Silvia.",
+          "themes": [
+            "friendship"
+          ],
+          "techniques": [
+            "rhymed-couplets"
+          ],
+          "characters": [
+            "valentine",
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "private",
+            "worst"
+          ]
+        },
+        {
+          "id": "plain-and-free",
+          "text": "And that my love may appear plain and free, All that was mine in Silvia I give thee.",
+          "speaker": "Valentine",
+          "reference": "5.4.87",
+          "stage": "act-5",
+          "context": "Accepting Proteus's apology a few lines after stopping him.",
+          "analysis": "This couplet is the most disputed line in the play. Some read it as handing Silvia over, others as offering Proteus the love Valentine had given her; either way Silvia is not asked, and Julia faints at once.",
+          "themes": [
+            "friendship",
+            "silence"
+          ],
+          "techniques": [
+            "rhymed-couplets",
+            "dramatic-irony"
+          ],
+          "characters": [
+            "valentine",
+            "proteus",
+            "silvia",
+            "julia"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "plain",
+            "Silvia"
+          ]
+        },
+        {
+          "id": "change-their-shapes",
+          "text": "It is the lesser blot, modesty finds, Women to change their shapes than men their minds.",
+          "speaker": "Julia",
+          "reference": "5.4.113",
+          "stage": "act-5",
+          "context": "Having revealed herself to Proteus, still in her page's clothes.",
+          "analysis": "Julia defends her disguise by comparing it with his inconstancy. Shape means outward form, and the couplet weighs a woman's costume against a man's changed heart, to his disadvantage.",
+          "themes": [
+            "disguise",
+            "loyalty"
+          ],
+          "techniques": [
+            "rhymed-couplets",
+            "antithesis"
+          ],
+          "characters": [
+            "julia",
+            "proteus"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "shapes",
+            "minds"
+          ]
+        },
+        {
+          "id": "one-feast",
+          "text": "One feast, one house, one mutual happiness.",
+          "speaker": "Valentine",
+          "reference": "5.4.179",
+          "stage": "act-5",
+          "context": "The last line of the play, announcing a double wedding.",
+          "analysis": "Repeating one gathers both couples into a single celebration. The promise of unity comes very quickly after the assault, and productions differ over whether Silvia and Julia share the mood.",
+          "themes": [
+            "friendship",
+            "silence"
+          ],
+          "techniques": [],
+          "characters": [
+            "valentine"
+          ],
+          "source": "Project Gutenberg eBook 100",
+          "cloze": [
+            "feast",
+            "mutual"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "Written",
+          "value": "c. 1589-1593",
+          "note": "Often counted among Shakespeare's first plays; no exact date is secure."
+        },
+        {
+          "label": "First printed",
+          "value": "1623",
+          "note": "In the First Folio, second among the comedies after The Tempest. Francis Meres named it in 1598."
+        },
+        {
+          "label": "Source",
+          "value": "Montemayor's Diana",
+          "note": "The Spanish romance's story of Felismena, who follows her lover to court disguised as a page."
+        },
+        {
+          "label": "Cast",
+          "value": "Includes a dog",
+          "note": "Crab, Lance's dog, appears in three scenes, and Lance's two long speeches are about him."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "An early comedy full of later ones",
+          "summary": "The play holds, in simple form, devices Shakespeare used again: a woman disguised as a page carrying her master's love to another woman, as in Twelfth Night; exiles in a forest, as in As You Like It; and a rope ladder and a banished lover, as in Romeo and Juliet.",
+          "counter": "Reading it only as a rehearsal misses what it does well on its own terms. Lance and Crab, and Julia's scenes in disguise, have always worked on stage."
+        },
+        {
+          "position": "The ending as a test of friendship",
+          "summary": "Valentine's instant forgiveness and his offer to Proteus follow a Renaissance ideal of friendship between men, found in stories such as Titus and Gisippus in Thomas Elyot's Governour, where one friend gives up his bride to the other.",
+          "counter": "Many modern critics and directors find the ending impossible to play straight: Silvia is silent after an attempted rape, and Proteus is forgiven in a few lines. Productions often use her silence to question the settlement."
+        },
+        {
+          "position": "Clowns who judge their masters",
+          "summary": "Speed and Lance see through the gentlemen, and Lance's devotion to an ungrateful dog gives the play its clearest picture of loyalty.",
+          "counter": "Others treat the servants' scenes as detachable turns for the company's clown, loosely attached to the plot, and point out that Lance's best speeches could be cut without changing the story."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does Shakespeare present friendship between men in the play?",
+          "focus": "Valentine and Proteus",
+          "plan": [
+            "Start with the parting in 1.1 and the balanced line 'He after honour hunts, I after love'.",
+            "Trace Proteus's soliloquies in 2.4 and 2.6 to his conclusion, 'I to myself am dearer than a friend'.",
+            "Examine the betrayal to the Duke in 3.1 and Proteus's pretended help.",
+            "Analyse Valentine's reaction in 5.4, from 'The private wound is deepest' to his offer to Proteus.",
+            "Conclude on whether the play endorses or questions the ideal of male friendship."
+          ]
+        },
+        {
+          "question": "How does Julia's disguise shape the audience's view of Proteus?",
+          "focus": "Julia as Sebastian",
+          "plan": [
+            "Begin with Julia's praise of Proteus in 2.7 and the dramatic irony it creates.",
+            "Look at her asides during the serenade in 4.2.",
+            "Analyse her soliloquy in 4.4 after she is sent with her own ring.",
+            "Consider the Ariadne speech and the layers of performance in it.",
+            "Conclude on the couplet about women changing their shapes and men their minds."
+          ]
+        },
+        {
+          "question": "What do the servants add to a play about gentlemen?",
+          "focus": "Speed, Lance and Crab",
+          "plan": [
+            "Show how Speed exposes Valentine's love and Silvia's letter trick in 2.1.",
+            "Compare Lance's farewell in 2.3 with Proteus and Julia's in 2.2.",
+            "Examine Lance's milkmaid list as a parody of courtly praise.",
+            "Analyse the Crab speech in 4.4 and the question of who serves whom.",
+            "Conclude on how the servants' scenes change the meaning of the title."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Is Valentine's forgiveness of Proteus generous or careless?",
+        "Why does Silvia say nothing after Proteus's attack?",
+        "Does Proteus deserve Julia at the end?",
+        "What does Crab add to the play besides laughs?",
+        "Why does Julia pity Proteus even while he wrongs her?",
+        "Which of the two gentlemen, if either, earns the title?"
+      ],
+      "timeline": [
+        {
+          "year": 1559,
+          "label": "Montemayor's Diana",
+          "detail": "The Spanish pastoral romance that contains the story of Felismena, who follows her lover to court disguised as a page. Its undated first edition is usually placed about 1559.",
+          "kind": "context"
+        },
+        {
+          "year": 1585,
+          "label": "Felix and Philiomena at court",
+          "detail": "A lost play of this title was performed at court by the Queen's Men in January 1585, probably drawn from the same story.",
+          "kind": "context"
+        },
+        {
+          "year": 1590,
+          "label": "Probable date of writing",
+          "detail": "Often counted among Shakespeare's first plays; estimates run from the late 1580s to about 1593.",
+          "kind": "work"
+        },
+        {
+          "year": 1598,
+          "label": "Named by Francis Meres",
+          "detail": "His Palladis Tamia lists Gentlemen of Verona first among Shakespeare's comedies.",
+          "kind": "reception"
+        },
+        {
+          "year": 1598,
+          "label": "Diana in English",
+          "detail": "Bartholomew Yong's translation of Montemayor was printed, though he said he had finished it many years before.",
+          "kind": "context"
+        },
+        {
+          "year": 1623,
+          "label": "First Folio",
+          "detail": "The first printing, second among the comedies after The Tempest. No earlier edition survives.",
+          "kind": "work"
+        },
+        {
+          "year": 1762,
+          "label": "Benjamin Victor's adaptation",
+          "detail": "Staged at Drury Lane; the earliest recorded performance of any version of the play.",
+          "kind": "reception"
+        },
+        {
+          "year": 1826,
+          "label": "Schubert's An Silvia",
+          "detail": "Schubert set Who is Silvia? in a German translation by Eduard von Bauernfeld.",
+          "kind": "reception"
+        },
+        {
+          "year": 1971,
+          "label": "The musical",
+          "detail": "A rock musical version with music by Galt MacDermot and lyrics by John Guare, first staged by the New York Shakespeare Festival. It won the Tony Award for Best Musical in 1972.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Verona",
+          "lat": 45.4384,
+          "lon": 10.9916,
+          "note": "Home of Valentine, Proteus and Julia, where the play begins."
+        },
+        {
+          "name": "Milan",
+          "lat": 45.4642,
+          "lon": 9.19,
+          "note": "The Duke's court, where Valentine meets Silvia and Proteus betrays him."
+        },
+        {
+          "name": "Mantua",
+          "lat": 45.1564,
+          "lon": 10.7914,
+          "note": "Silvia hears Valentine is living here; the last scenes are set in a forest on its borders."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/romeo-and-juliet/",
+          "why": "Another Verona play, with a ladder of cords, a banished lover and a Friar Lawrence."
+        },
+        {
+          "href": "/books/twelfth-night/",
+          "why": "A woman disguised as a page carries her master's love to another woman."
+        },
+        {
+          "href": "/books/as-you-like-it/",
+          "why": "Exiles in a forest, and a heroine in disguise."
+        },
+        {
+          "href": "/books/a-midsummer-nights-dream/",
+          "why": "Two young men whose love shifts from one woman to another."
         }
       ],
       "videos": []
