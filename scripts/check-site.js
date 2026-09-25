@@ -1373,7 +1373,7 @@ if (fs.existsSync(distDir)) {
       failures.push('dist is missing the post-preview presentation assets required by the authenticated viewer');
     }
     const wrangler = fs.readFileSync(path.join(root, 'wrangler.toml'), 'utf8');
-    if (!/run_worker_first\s*=\s*\["\/api\/\*", "\/assets\/presentations\/\*"\]/.test(wrangler)) {
+    if (!['/api/*', '/assets/presentations/*', '/go/*'].every(route => (wrangler.match(/run_worker_first\s*=\s*\[([^\]]+)\]/)?.[1] || '').includes(JSON.stringify(route)))) {
       failures.push('presentation assets are not routed through the account Worker');
     }
   }

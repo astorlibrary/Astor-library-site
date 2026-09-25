@@ -71,7 +71,7 @@ test('protected slide access checks live users so account deletion revokes outst
 
 test('publishable slides use the gated Static Assets namespace without an R2 subscription', () => {
   assert.doesNotMatch(workerConfiguration, /\[\[r2_buckets\]\]|PRESENTATIONS/);
-  assert.match(workerConfiguration, /run_worker_first\s*=\s*\["\/api\/\*", "\/assets\/presentations\/\*"\]/);
+  assert.match(workerConfiguration, /run_worker_first\s*=\s*\["\/go\/\*", "\/api\/\*", "\/assets\/presentations\/\*"\]/);
   assert.doesNotMatch(workerSource, /readSlideFromR2|env\.PRESENTATIONS/);
   assert.match(workerSource, /const slide = await readSlideFromAssets\(request, env, route\.deck, route\.number\)/);
   assert.doesNotMatch(buildSource, /Number\(presentationAsset\[1\]\)\s*>\s*3/);

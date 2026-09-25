@@ -1,0 +1,80 @@
+{
+  "associates": {},
+  "aliases": {
+    "great-gatsby": "the-great-gatsby"
+  },
+  "books": {
+    "jane-eyre": {
+      "title": "Jane Eyre",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GSZBK2YP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GSZBK2YP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GSZBK2YP",
+          "kind": "product"
+        }
+      }
+    },
+    "macbeth": {
+      "title": "Macbeth",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GPHPD6BN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GPHPD6BN",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GPHPD6BN",
+          "kind": "product"
+        }
+      }
+    },
+    "the-great-gatsby-hardback": {
+      "title": "The Great Gatsby",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFV58Y11",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFV58Y11",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFV58Y11",
+          "kind": "product"
+        }
+      }
+    },
+    "the-great-gatsby": {
+      "title": "The Great Gatsby",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFDGDZNB",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFDGDZNB",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFDGDZNB",
+          "kind": "product"
+        }
+      }
+    }
+  }
+}

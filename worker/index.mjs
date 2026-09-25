@@ -1,3 +1,4 @@
+import { handleBookRedirect } from './book-redirects.mjs';
 import { createServerClient } from '@supabase/ssr';
 import { parseCookie, stringifySetCookie } from 'cookie';
 import { presentations } from '../assets/presentation-data.js';
@@ -764,6 +765,8 @@ async function servePresentationSlide(request, env, route) {
 
 export default {
   async fetch(request, env) {
+    const bookRedirect = handleBookRedirect(request);
+    if (bookRedirect) return bookRedirect;
     const url = new URL(request.url);
     try {
       const pathname = normalisedPathname(url);
