@@ -70,7 +70,7 @@
     {
       "id": "hawthorne",
       "label": "Nathaniel Hawthorne",
-      "title": "The forest, and the thing over the face",
+      "title": "Young Goodman Brown and The Minister’s Black Veil",
       "summary": "Hawthorne makes the New England past a moral problem with no way out. Young Goodman Brown goes into the woods on one night's errand and never recovers from what he may only have dreamed; The Minister's Black Veil puts a piece of crape between one man and his parish and lets the parish supply the meaning.",
       "scenes": [
         {
@@ -88,7 +88,7 @@
     {
       "id": "poe",
       "label": "Edgar Allan Poe",
-      "title": "A house, a cat, a heart",
+      "title": "Usher, The Black Cat and The Tell-Tale Heart",
       "summary": "Three of the most quoted stories in American literature, all told by men explaining themselves. Usher is atmosphere and collapse; The Black Cat and The Tell-Tale Heart are confessions from narrators who begin by insisting on their sanity and end by producing the evidence against themselves.",
       "scenes": [
         {
@@ -111,7 +111,7 @@
     {
       "id": "the-1890s",
       "label": "Bierce, Gilman and Freeman",
-      "title": "The generation that stopped explaining",
+      "title": "Stories from the 1890s",
       "summary": "Four stories from the 1890s and after, written by people who had seen a civil war and a rest cure. Bierce's horrors are reported flatly, by soldiers and coroners; Gilman's room is a medical arrangement; Freeman's haunting arrives as a domestic detail that the women of the house discuss over their work.",
       "scenes": [
         {
@@ -139,7 +139,7 @@
     {
       "id": "lovecraft-and-after",
       "label": "Lovecraft, and the holiday",
-      "title": "The Outsider, and how October claimed them all",
+      "title": "The Outsider, and how the stories became Halloween reading",
       "summary": "Lovecraft’s story closes the century of writing the book covers, and the introduction then does the other half of the job: how jack-o’-lanterns, postcards, shop decorations and repeated anthologies made a set of unrelated tales into Halloween reading.",
       "scenes": [
         {
@@ -377,19 +377,19 @@
   "themes": [
     {
       "id": "fear",
-      "name": "What frightens an American village",
+      "name": "Village superstition",
       "summary": "The collection's hundred years runs from a community's shared ghost to a single mind's private one. Irving's horseman belongs to everyone in the Hollow; Poe's heart is audible to one man; Gilman's woman is behind one room's paper.",
       "development": "The fear moves steadily indoors and inward, and the later stories have no village left to consult."
     },
     {
       "id": "narration",
-      "name": "Who is telling you this",
+      "name": "Narrators",
       "summary": "Nearly every story arrives through a teller with an interest: a chronicler quoting a village, a murderer insisting on his sanity, a coroner's court reading from a dead man's diary, a woman writing where she has been told not to.",
       "development": "Irving's narrator is amused and detached; by the 1890s the tellers are inside the events, and by The Outsider the teller does not know what he is."
     },
     {
       "id": "guilt",
-      "name": "The thing under the floor",
+      "name": "Concealment",
       "summary": "Hawthorne’s veil, Poe’s floorboards and plastered wall, Bierce’s boarded window: again and again the volume hides something and then listens to it. Concealment is the plot of at least half these stories.",
       "development": "In Hawthorne the guilt is general and unnameable; in Poe it is specific and buried; in Bierce it is a fact the narrator withholds until the final line."
     },
@@ -401,13 +401,13 @@
     },
     {
       "id": "nature",
-      "name": "American ground",
+      "name": "American settings",
       "summary": "A Dutch valley, a swamp, a forest, a tarn, a frontier clearing. The settings are local, named and recent, and the supernatural in them belongs to a particular soil, not to old castles.",
       "development": "Lovecraft's castle at the end is the one European setting in the book, and even that turns out to be somewhere else."
     },
     {
       "id": "class",
-      "name": "Money, land and who gets the farm",
+      "name": "Money and land",
       "summary": "Irving's ghost story is also a story about a poor schoolmaster's designs on a rich man's barns, and The Devil and Tom Walker is about usury. The supernatural keeps arriving where property is at stake.",
       "development": "The theme fades as the stories move indoors: by Gilman and Freeman the question is authority inside a household, no longer property."
     }
@@ -415,43 +415,43 @@
   "techniques": [
     {
       "id": "frame-narrative",
-      "name": "Found among the papers",
+      "name": "Found manuscripts",
       "definition": "Presenting a tale as something recorded, inherited or overheard.",
       "inThisBook": "Irving attributes Sleepy Hollow to the papers of Diedrich Knickerbocker and ends with a note on a man who told it at a corporation meeting. Bierce uses a coroner's inquest and a dead man's diary. The distance is part of the joke and part of the fright."
     },
     {
       "id": "unreliable-narrator",
-      "name": "The teller who gives himself away",
+      "name": "Unreliable narrators",
       "definition": "A first-person account the reader is meant to read against.",
       "inThisBook": "Poe's three stories open with a denial of madness and close with a confession. Gilman's narrator is wrong about the paper and right about the marriage, which is the harder version of the same device."
     },
     {
       "id": "deadpan",
-      "name": "Comedy next to horror",
+      "name": "Comedy and horror",
       "definition": "Keeping a light, ironic tone over frightening material.",
       "inThisBook": "Irving spends pages on pies and dancing before anything appears on the road, and describes an heiress in the same breath as her father's poultry. The laughter is what makes the ride home work."
     },
     {
       "id": "landscape",
-      "name": "Named American ground",
+      "name": "American settings",
       "definition": "Using real, local geography instead of generic gothic scenery.",
       "inThisBook": "The Tappan Zee, Tarry Town, the Dutch burying ground, a Missouri clearing. Each story puts its horror somewhere a reader could drive to."
     },
     {
       "id": "symbolic-objects",
-      "name": "One object per story",
+      "name": "Symbolic objects",
       "definition": "A single physical thing that carries the whole tale.",
       "inThisBook": "A pumpkin, a veil, a heart, a cat, a boarded window, a pattern on a wall, a mirror. The collection can almost be indexed by its objects."
     },
     {
       "id": "ellipsis",
-      "name": "The withheld last fact",
+      "name": "Withheld endings",
       "definition": "Keeping the decisive piece of information out of the story, or until the final sentence.",
       "inThisBook": "Irving never says what happened to Ichabod; Bierce's Boarded Window holds its explanation to the last line; Hawthorne refuses to say whether the forest meeting was a dream."
     },
     {
       "id": "gothic",
-      "name": "The American version",
+      "name": "American Gothic",
       "definition": "Gothic machinery adapted to a country without ruins.",
       "inThisBook": "No abbeys, no hereditary curses older than the colony. What these writers use instead is recent history — a Revolutionary cavalryman, a witch trial, a frontier cabin — which is why the stories still feel close."
     }

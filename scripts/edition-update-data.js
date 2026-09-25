@@ -565,7 +565,7 @@ const editionUpdateBooks = [
     topics: [
       { title: 'Strangers and civic order', body: 'In the Ill May Day scene More stops a riot by asking the rioters to imagine themselves as foreigners.' },
       { title: 'Conscience and office', body: 'More’s rise and fall show how far public service can answer to private conscience.' },
-      { title: 'A manuscript in motion', body: 'Revision, censorship and multiple hands make the physical document part of the play’s meaning.' }
+      { title: 'The manuscript', body: 'Revision, censorship and multiple hands make the physical document part of the play’s meaning.' }
     ]
   }),
   inCollection('shakespeare', {
@@ -757,7 +757,7 @@ const editionUpdateBooks = [
       'Forty key passages sit within essays on a divided Britain, revision, Lear, Edmund, Edgar, the Fool, the three daughters, madness, blindness, social justice, dramatic form, criticism and performance.'
     ],
     topics: [
-      { title: 'Authority after surrender', body: 'Lear discovers that title and command cannot be retained unchanged after territory and power are given away.' },
+      { title: 'Authority', body: 'Lear discovers that title and command cannot be retained unchanged after territory and power are given away.' },
       { title: 'Two texts', body: 'The possibility of Shakespearean revision changes how editors and theatres understand the play’s shape.' },
       { title: 'Sight and justice', body: 'Physical blindness and moral recognition do not produce a simple providential order.' }
     ]

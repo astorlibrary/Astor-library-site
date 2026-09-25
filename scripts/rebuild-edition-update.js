@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const books = require('./edition-update-data');
-// Book-specific section headings live outside the template so the editorial
-// guide's rule against interchangeable headings survives every rebuild.
+// Section headings and notes live outside the template so each book's plain,
+// navigational headings survive every rebuild.
 const sectionOverrides = require('./edition-section-overrides.json');
 const bookEnrichments = require('./book-enrichment-data');
 
@@ -10,7 +10,7 @@ function sectionOverride(id, slug) {
   const section = sectionOverrides[slug]?.[id];
   if (!section || !section.heading) {
     throw new Error('Missing "' + id + '" section heading for "' + slug + '" in scripts/edition-section-overrides.json. ' +
-      'Write a book-specific heading and note (EDITORIAL_GUIDE.md forbids template headings).');
+      'Write a plain heading and a note for this book (see Page structure in EDITORIAL_GUIDE.md).');
   }
   return section;
 }

@@ -1,6 +1,6 @@
 module.exports = {
   'alices-adventures-in-wonderland': {
-    heading: 'A child tests a world made out of rules, riddles and sudden change.',
+    heading: 'A child in a world of rules and riddles.',
     introduction: [
       'Alice’s Adventures in Wonderland is often remembered as a sequence of marvellous creatures, but its movement is unusually exact. Alice follows the White Rabbit because curiosity interrupts an ordinary afternoon; once underground, every attempt to regain control produces another problem of scale, language or manners. Doors are too small, keys are left on tables, food changes the body that must use them, and apparently simple instructions refuse to stay simple. Wonderland is not without rules. Its comedy comes from the discovery that each creature treats a private rule as universal and expects Alice to understand it immediately.',
       'Alice remains the book’s centre because she observes, argues and revises. She tries school knowledge, polite introductions, recitation and common sense, then notices when each method fails. Carroll plays with the verse, lessons and improving talk every Victorian child knew: poems come out wrong when Alice recites them, words are taken literally, and people in authority give orders with no reason behind them. Readers who no longer recognise every poem being parodied can still follow the larger pattern. Alice is learning to distinguish a rule that helps people live together from a rule that merely protects the person shouting it.'
@@ -9,9 +9,9 @@ module.exports = {
     movementDeck: 'The twelve chapters form an enlarging test of identity, conversation and public authority.',
     archiveHeading: 'Carroll’s camera and the manuscript made for Alice Liddell.',
     archiveDeck: 'A self-portrait and the decorated opening of Under Ground show the author at work in two media before the printed Wonderland.',
-    closeReadingHeading: 'Grammar, identity and a court unmasked.',
+    closeReadingHeading: 'Grammar, identity and the trial.',
     closeReadingDeck: 'Three short phrases show Alice testing words, measuring herself and finally telling the court, ‘You’re nothing but a pack of cards!’',
-    sourcesHeading: 'Read the manuscript and publication record.',
+    sourcesHeading: 'The manuscript and publication record.',
     sourcesDeck: 'The surviving manuscript, library chronology and public-domain text make the book’s route from river story to revised edition unusually visible.',
     movements: [
       {
@@ -39,7 +39,7 @@ module.exports = {
     closeReadings: [
       {
         phrase: 'curiouser and curiouser',
-        title: 'A mistake that describes the experience',
+        title: 'Alice’s grammar',
         body: [
           'Alice immediately knows that the comparative is non-standard and explains that surprise has made her forget how to speak properly. So the phrase does two things: it records her body changing, and the grammar changes with her. Carroll does not place nonsense outside language; he makes it by applying familiar habits one step beyond their usual limits.',
           'The doubled word also gives the sentence its upward motion. Wonder is not a fixed quality of Wonderland. It increases as Alice tries to measure it.'
@@ -47,7 +47,7 @@ module.exports = {
       },
       {
         phrase: 'Who in the world am I?',
-        title: 'Scale becomes a question of self',
+        title: 'Size and identity',
         body: [
           'Alice wonders whether she has been changed for Mabel or Ada, and tests herself on her times tables and geography. The scene is comic, but its logic is serious: if the body, voice and remembered lessons alter, what evidence of continuity remains?',
           'Carroll keeps the question grounded in a child’s available comparisons. Alice does not offer an abstract philosophy of identity. She thinks of other girls, school lessons and the life she might have to inhabit if she is no longer herself.'
@@ -55,7 +55,7 @@ module.exports = {
       },
       {
         phrase: 'nothing but a pack of cards',
-        title: 'Authority loses its imaginative hold',
+        title: 'The court dismissed',
         body: [
           'The word “but” reduces the whole court from sovereign spectacle to ordinary material. Alice can do this only after she has grown large enough to resist its threats and watched its rules collapse. Naming becomes an act of judgement: the court is dangerous while everyone agrees to treat it as a court.',
           'The cards fly at Alice at the instant of exposure, joining the trial to the waking leaves on the riverbank. The ending preserves both explanations—the vivid danger of the dream and the paper-thin basis of its power.'
@@ -122,18 +122,18 @@ module.exports = {
   },
 
   'the-moonstone': {
-    heading: 'A country-house mystery whose evidence arrives in human voices.',
+    heading: 'A country-house mystery told by its witnesses.',
     introduction: [
       'The Moonstone opens before its English country-house plot, during the British storming of Seringapatam in 1799. A sacred diamond is taken in an act of military violence and later reaches Rachel Verinder as an eighteenth-birthday gift. When it disappears from her room, the household becomes an investigative archive: servants, relatives, visitors and professionals supply accounts written from different positions and at different times. The case is therefore never separate from the people telling it.',
       'Collins gives each narrator a method and a blind spot. Gabriel Betteredge trusts habit, his place in the household and Robinson Crusoe; Miss Clack mostly displays her own piety; Franklin Blake puts the record together and finds that his own memory cannot be trusted; Ezra Jennings runs an experiment to recover what no witness can tell. Sergeant Cuff is important, but the novel is larger than a single detective. Its solution depends on reading character, medicine, objects, documents and imperial history together.'
     ],
-    movementHeading: 'The diamond crosses borders, rooms and accounts.',
+    movementHeading: 'The diamond’s journey.',
     movementDeck: 'A prologue of imperial seizure becomes a domestic investigation and finally a question of restitution.',
     archiveHeading: 'Collins beside the first three-volume Moonstone.',
     archiveDeck: 'The author’s portrait and the 1868 title page place the many-voiced investigation beside the form in which its first book readers encountered it.',
-    closeReadingHeading: 'Property, detection and the books witnesses carry.',
+    closeReadingHeading: 'Property, detection and books.',
     closeReadingDeck: 'The novel’s recurring words keep the stone’s geography, the risks of investigative certainty and Betteredge’s habits of reading in view.',
-    sourcesHeading: 'Follow the serial, first edition and documentary record.',
+    sourcesHeading: 'The serial, the first edition and the documents.',
     sourcesDeck: 'Publication histories, Collins’s letters and the searchable text distinguish the novel’s documented making from later genre shorthand.',
     movements: [
       {
@@ -161,7 +161,7 @@ module.exports = {
     closeReadings: [
       {
         phrase: 'the Indian Diamond',
-        title: 'An object is given a geography',
+        title: 'The Indian diamond',
         body: [
           'The repeated adjective prevents the Moonstone from becoming merely an English heirloom. Even when it sits in a Yorkshire cabinet or a London bank, its name recalls another history of custody and worship. The word ‘Indian’ in these passages keeps reminding readers where the diamond came from, and how.',
           'The wording also exposes the limits of possession. Characters can inherit, steal, pledge or recover the stone under English law while the narrative continues to ask how it entered that system.'
@@ -169,7 +169,7 @@ module.exports = {
       },
       {
         phrase: 'detective-fever',
-        title: 'Investigation becomes contagious',
+        title: 'Detective-fever',
         body: [
           'Betteredge’s comic phrase catches a formal change in the novel. Once Sergeant Cuff starts asking questions, every detail looks like a clue and everyone in the house is a possible suspect. Detection is not confined to the police officer; it reorganises the household’s attention.',
           '“Fever” also implies distortion. An appetite for solutions can produce premature certainty, especially when class prejudice supplies an easy explanation for difficult behaviour.'
@@ -177,7 +177,7 @@ module.exports = {
       },
       {
         phrase: 'Robinson Crusoe',
-        title: 'A book used as oracle and habit',
+        title: 'Betteredge’s Robinson Crusoe',
         body: [
           'Betteredge returns to Defoe’s novel for guidance, opening it as though any page will comment on the present crisis. The running joke establishes his distinctive voice, but it also places one foundational story of English trade, mastery and colonial possession inside another.',
           'His reading practice is affectionate and absurd. It reminds us that witnesses do not approach events empty-handed: they carry favourite books, assumptions and phrases that decide what counts as sense.'
@@ -197,7 +197,7 @@ module.exports = {
       },
       {
         label: 'Empire',
-        title: 'Seringapatam is not a detachable prologue',
+        title: 'Seringapatam',
         body: [
           'British forces captured Seringapatam in 1799 during the Fourth Anglo-Mysore War. Collins uses that recognisable imperial event as the point at which the diamond enters an English family history. The prologue makes violence abroad structurally necessary to comfort and inheritance at home.',
           'The novel’s Indian guardians are often filtered through Victorian conventions of mystery and stereotype. A responsible reading can recognise those conventions while also noticing that the English claim begins in theft and that the final movement returns the stone to a religious setting beyond English control.'
@@ -205,7 +205,7 @@ module.exports = {
       },
       {
         label: 'Detection and medicine',
-        title: 'Clues do not belong to one discipline',
+        title: 'Science and detection',
         body: [
           'The Moonstone is frequently described as a foundational detective novel, though prose mysteries and investigating figures existed before it. Its importance lies partly in the density with which it combines professional detection, documentary testimony, physical traces, false inference and a final reconstruction.',
           'The opium experiment joins that method to nineteenth-century debates about drugs, consciousness and memory. Collins, who used laudanum while suffering from painful illness, does not make medicine a simple answer: Jennings must design, observe and interpret the reenactment.'
@@ -244,29 +244,29 @@ module.exports = {
   },
 
   'anne-of-green-gables': {
-    heading: 'A mistake at Bright River becomes a study of belonging.',
+    heading: 'The mistake at Bright River, and belonging.',
     introduction: [
       'Anne of Green Gables begins with a practical error: Matthew and Marilla Cuthbert ask for a boy who can help on the farm and receive eleven-year-old Anne Shirley instead. Montgomery gives that premise emotional weight by letting every decision take time. Anne has already passed through institutions and households in which usefulness determined security. At Green Gables she talks because language is one of the few resources she completely controls; Marilla listens while insisting that affection must answer to work, truth and consequence.',
       'The novel then makes belonging visible through repetition. Anne walks the same roads, enters the same school, offends and reconciles with neighbours, learns household tasks and renames pieces of landscape. Comic disasters are not loose episodes. After each one, Avonlea has to decide whether Anne is bad or just young. In the last chapters, after Matthew dies, Anne gives up her scholarship to Redmond College to stay with Marilla at Green Gables.'
     ],
-    movementHeading: 'Arrival, apprenticeship and a future with a bend in it.',
+    movementHeading: 'Arrival, growing up and the bend in the road.',
     movementDeck: 'The novel follows Anne from conditional welcome to an adult choice made in grief and hope.',
     archiveHeading: 'Montgomery and Anne in the first edition.',
     archiveDeck: 'A signed portrait and the 1908 frontispiece place the author beside the earliest illustrated form of the book.',
-    closeReadingHeading: 'A name, imagination and the road after loss.',
+    closeReadingHeading: 'Names, imagination and loss.',
     closeReadingDeck: 'Anne’s characteristic phrases connect self-naming and invention with the difficult adult choice made at the close.',
-    sourcesHeading: 'Read Montgomery’s working manuscript and first edition.',
+    sourcesHeading: 'Montgomery’s manuscript and first edition.',
     sourcesDeck: 'The digitised manuscript, publishing record and Cavendish history show what Montgomery planned, revised and transformed.',
     movements: [
       {
-        title: 'A mistake becomes a home',
+        title: 'Arrival at Green Gables',
         body: [
           'Matthew’s journey to Bright River is organised around expectation: he looks for a boy and cannot reconcile the talkative girl on the platform with his errand. Anne’s delight in the drive to Green Gables makes the possible rejection more painful. She reads landscape as promise before Marilla has decided she may stay.',
           'The early apology to Mrs Lynde shows Montgomery’s method. Anne’s anger is real, the demanded apology is theatrical, and Marilla must decide whether performance can still contain sincerity. Marilla’s discipline slowly becomes affection, and the threat of sending Anne back fades.'
         ]
       },
       {
-        title: 'Belonging through error',
+        title: 'Mistakes and belonging',
         body: [
           'School, church, Diana’s friendship and the rivalry with Gilbert bring Anne into public life. In the currant-wine mistake, the green hair dye and other episodes, Anne’s imagination has consequences. Anne learns practical judgement without losing the energy that first made Avonlea strange and beautiful to her.',
           'The community changes too. People who initially reduce Anne to appearance, orphanhood or temperament begin to recognise persistence and generosity. Montgomery’s comedy therefore measures the education of neighbours as well as the education of the child.'
@@ -283,7 +283,7 @@ module.exports = {
     closeReadings: [
       {
         phrase: 'Anne spelled with an E',
-        title: 'Naming as self-authorship',
+        title: 'Naming',
         body: [
           'Anne insists on the final letter because a spoken name also has a visual life in her imagination. The preference is funny in its intensity, but it is not trivial. A child whose clothes, placements and destination have been decided by institutions claims authority over how she will be represented.',
           'The letter cannot change her circumstances, yet the insistence establishes a habit that runs through the book: Anne answers other people’s descriptions by supplying language of her own.'
@@ -291,7 +291,7 @@ module.exports = {
       },
       {
         phrase: 'scope for imagination',
-        title: 'Imagination as resource and risk',
+        title: 'Imagination',
         body: [
           'Anne uses the phrase when an ordinary place or object seems too narrow. Renaming lets her perceive colour, weather and possibility in a landscape other people take for granted. Imagination is a way of making a life inside material limits, not simply an escape from them.',
           'The comic plots also test that gift. Fantasy can lead to expectation, vanity or inattention; real cordial can be mistaken for raspberry cordial, and a hoped-for hair colour can become green. Maturity means learning when imagination clarifies the world and when it conceals a fact that needs attention.'
@@ -299,7 +299,7 @@ module.exports = {
       },
       {
         phrase: 'kindred spirits',
-        title: 'A chosen language of relationship',
+        title: 'Kindred spirits',
         body: [
           'Anne’s phrase names immediate imaginative sympathy, especially with Diana. It allows her to describe affinity outside the structures that have repeatedly failed her. Friendship becomes neither consolation prize nor childish decoration; it is one of the social forms through which she gains stability.',
           'The novel later widens the idea. Matthew understands Anne with few words, Marilla’s guarded care deepens, and even Gilbert’s long rivalry can become friendship. Kindred feeling is discovered, but it is also proved through continued action.'
@@ -319,7 +319,7 @@ module.exports = {
       },
       {
         label: 'Place',
-        title: 'Cavendish is a source, not a key',
+        title: 'Cavendish and Avonlea',
         body: [
           'Green Gables was inspired by the Macneill farm near the home where Montgomery grew up with her grandparents. She knew its fields, woods and paths, and Parks Canada preserves the cultural landscape associated with her early life. Montgomery did not live in the Green Gables farmhouse itself.',
           'That distinction matters. Avonlea is not a disguised map in which every fiction has one documentary equivalent. Real roads, shorelines, farms and community practices are selected, renamed and reorganised by the novel’s imagination.'
@@ -366,7 +366,7 @@ module.exports = {
   },
 
   'oroonoko': {
-    heading: 'A “true history” in which every claim to authority must be tested.',
+    heading: 'A “true history” and its claims to authority.',
     introduction: [
       'Oroonoko: or, The Royal Slave moves between Coramantien on the West African coast and the English colony of Surinam. Its hero is a prince and military leader who falls in love with Imoinda, loses her through royal power, encounters her again in enslavement and leads a rising after repeated promises of freedom fail. The story moves as fast as a romance or a tragedy, but the narrator insists again and again that she saw it happen.',
       'That claim makes the work more complicated, not less. The narrative includes precise colonial names and landscapes alongside idealised description, political invention and an exceptional hero fashioned through European conventions of rank. It condemns treachery and the violence inflicted on Oroonoko while remaining entangled in the social hierarchy and slave economy it represents. Behn attacks the dishonesty of the colonists, but the book is not an abolitionist tract; organised British abolitionism came a century later.'
@@ -377,7 +377,7 @@ module.exports = {
     archiveDeck: 'The portrait and seventeenth-century map restore a writer and colonial geography that the narrator’s confident first-person account cannot by itself verify.',
     closeReadingHeading: 'Honour, witness and the language of enslavement.',
     closeReadingDeck: 'Three phrases show how the narrative talks about truth, trade and the promises made again and again to Oroonoko and Imoinda.',
-    sourcesHeading: 'Place the narrative beside the colonial record.',
+    sourcesHeading: 'The narrative and the colonial record.',
     sourcesDeck: 'First-edition text, archive catalogues and histories of Surinam help separate Behn’s literary authority from claims that remain disputed.',
     movements: [
       {
@@ -405,7 +405,7 @@ module.exports = {
     closeReadings: [
       {
         phrase: 'A True History',
-        title: 'A genre claim, not a certificate',
+        title: '“A True History”',
         body: [
           'The subtitle asks seventeenth-century readers to approach the narrative as history, a word that could cover forms of factual and exemplary narration broader than modern documentary history. The narrator’s confidence creates immediacy, but it does not remove the need to test the account against other records.',
           'Behn was already an accomplished dramatist. Scenes, speeches and carefully staged recognition can produce the effect of testimony while remaining shaped literary art.'
@@ -413,7 +413,7 @@ module.exports = {
       },
       {
         phrase: 'The Royal Slave',
-        title: 'The title exposes selective sympathy',
+        title: 'The title',
         body: [
           '“Royal” and “slave” are forced together as incompatible identities. The contradiction gives Oroonoko tragic distinction and makes his enslavement appear as a violation of natural hierarchy. It also raises a harder question: does the narrative oppose human bondage, or does it especially oppose the bondage of someone represented as born to rule?',
           'Imoinda and the unnamed enslaved community widen that question beyond the prince. Their presence prevents rank from settling the ethical problem, even when the narrator’s language repeatedly returns to nobility.'
@@ -421,7 +421,7 @@ module.exports = {
       },
       {
         phrase: 'an eye-witness',
-        title: 'Presence and power in the narrator’s voice',
+        title: 'The narrator’s voice',
         body: [
           'The narrator claims direct knowledge of much that happened in Surinam and explains absences from crucial moments. Those statements organise trust, but they also make her position visible: she moves within the colonial society that can observe Oroonoko without freeing him.',
           'Modern scholarship disputes details of Behn’s biography and the extent of any visit. The most useful reading keeps both facts in view—the text insistently performs eyewitness authority, and that performance is not the same thing as independent proof.'
@@ -488,7 +488,7 @@ module.exports = {
   },
 
   'the-woman-in-white': {
-    heading: 'A sensation novel built as a dossier of unequal witnesses.',
+    heading: 'A sensation novel told by many witnesses.',
     introduction: [
       'The Woman in White begins when Walter Hartright meets a distressed woman on the road to London and helps her shortly before learning that she has escaped from an asylum. At Limmeridge House he encounters Laura Fairlie, whose resemblance to the stranger joins romance to investigation. The novel’s conspiracy depends on that likeness, but also on contracts, money, medical authority and the willingness of respectable people to accept an official identity over a woman’s own account.',
       'Collins tells the story through statements arranged after the events, as though evidence were being prepared for a legal case. That design produces suspense while showing that no testimony is neutral. Walter controls the completed record; Marian Halcombe supplies the most daring observation but is excluded from several forms of power; Count Fosco writes with theatrical self-command; servants and minor witnesses reveal details unavailable to the principals. The reader solves the case by comparing voices, dates, omissions and material traces.'
@@ -499,7 +499,7 @@ module.exports = {
     archiveDeck: 'The author’s portrait and an early frontispiece place the documentary narrative beside the visual identity it acquired in print.',
     closeReadingHeading: 'Evidence, identity and the terms of confinement.',
     closeReadingDeck: 'The novel’s own language reveals how testimony becomes public fact and how institutions can make a false name legally persuasive.',
-    sourcesHeading: 'Follow the serial, revised text and legal world.',
+    sourcesHeading: 'The serial, the revised text and the law.',
     sourcesDeck: 'Library records, Collins scholarship and the public-domain text support the dates, textual history and short phrases used on this page.',
     movements: [
       {
@@ -527,7 +527,7 @@ module.exports = {
     closeReadings: [
       {
         phrase: 'told by more than one pen',
-        title: 'A novel announces its evidential method',
+        title: 'The opening statement',
         body: [
           'Walter’s preamble presents the narrative as a sequence of contributions by those best placed to describe each event. The phrase promises breadth, yet one person still selects and orders the pens. The novel is made of many witnesses’ accounts, and Walter, who collects them, decides how the case is presented.',
           'Handwriting, diaries, letters and copied statements remain physical parts of the plot. Writing does not merely report action after the fact; it can preserve what surveillance attempted to suppress.'
@@ -535,7 +535,7 @@ module.exports = {
       },
       {
         phrase: 'a Woman’s patience',
-        title: 'The opening formula and its limits',
+        title: 'A woman’s patience',
         body: [
           'The preamble pairs a woman’s endurance with a man’s resolution, apparently assigning passive and active virtues by gender. The story that follows immediately complicates that formula. Marian investigates, climbs, travels and organises; Walter also waits, listens and depends on records made by others.',
           'Keeping the phrase in view helps readers test the novel’s own framing. Restoration may be narrated as male achievement, but it cannot occur without women’s observation, memory and care.'
@@ -543,7 +543,7 @@ module.exports = {
       },
       {
         phrase: 'the Woman in White',
-        title: 'Description replaces a personal name',
+        title: 'The woman in white',
         body: [
           'Walter first knows Anne through appearance and mystery. The descriptive label is memorable enough to title the novel, but it also demonstrates the danger of seeing a figure before hearing a history. White clothing makes Anne conspicuous while her legal and social identity remains vulnerable.',
           'Laura’s resemblance allows the label to move between women. Clothes, names and documents can all be swapped or forged in this plot, and so can a person’s identity.'
@@ -571,7 +571,7 @@ module.exports = {
       },
       {
         label: 'Law and confinement',
-        title: 'The conspiracy needs institutions',
+        title: 'Asylums, registers and the law',
         body: [
           'Laura’s vulnerability is not explained by villainy alone. Marriage settlements determine control of money; married women’s legal and economic powers were restricted; private asylum admission depended on certificates and testimony that could be abused when a patient’s own account was discounted.',
           'The novel intensifies these conditions for sensation, but it does not invent their basic imbalance. Its most frightening substitution works because name, property and sanity are recognised through systems controlled by people who may accept the wrong witness.'
@@ -610,12 +610,12 @@ module.exports = {
   },
 
   'the-wind-in-the-willows': {
-    heading: 'A river book in which home, travel and appetite keep changing places.',
+    heading: 'Home, travel and appetite.',
     introduction: [
       'The Wind in the Willows joins several kinds of book without forcing them into one tone. Mole’s discovery of the river is pastoral and comic; Toad’s motor-car career becomes farce, crime story and escape narrative; “Dulce Domum” turns towards the ache of remembered domestic detail; “The Piper at the Gates of Dawn” enters a numinous register unlike the courtroom or banquet scenes around it. The variety is structural. Friendship has to work across different appetites for safety, movement, excitement and wonder.',
       'The landscape has changed since Grahame’s day. Boats, horse-drawn vehicles, trains and motor cars occupy the same Edwardian world, and the new machine changes how older road users experience distance and danger. Toad treats transport as fashion and self-display; Rat treats the river as a practised way of life; Mole gradually learns that exploration and attachment need not cancel one another. Retaking Toad Hall defeats the stoats and weasels; whether Toad has learned anything is another matter.'
     ],
-    movementHeading: 'Riverbank discovery, winter depth and the return to Toad Hall.',
+    movementHeading: 'The River Bank, the Wild Wood and Toad Hall.',
     movementDeck: 'The twelve chapters alternate outward adventure with increasingly exact accounts of home.',
     archiveHeading: 'Grahame and the book as it first appeared.',
     archiveDeck: 'Frederick Hollyer’s portrait and the restrained 1908 cover keep the book’s author and first material form distinct from its later illustrated afterlife.',
@@ -625,7 +625,7 @@ module.exports = {
     sourcesDeck: 'Manuscript catalogues, the Bank of England archive and early-edition records trace the book from private storytelling into print.',
     movements: [
       {
-        title: 'The river opens a world',
+        title: 'The River Bank',
         body: [
           'Mole abandons spring-cleaning, reaches the river and meets Rat. The picnic establishes a life organised by water, weather and competent routine. Toad immediately offers a rival ideal in the gipsy caravan, then abandons it when the motor car passes in dust and noise.',
           'The sequence distinguishes curiosity from mere novelty. Mole wants to learn a world and its practices; Toad wants the next object intensely enough to forget the previous one. Their different forms of desire shape everything that follows.'
@@ -649,7 +649,7 @@ module.exports = {
     closeReadings: [
       {
         phrase: 'simply messing about in boats',
-        title: 'Pleasure turned into a philosophy',
+        title: 'Messing about in boats',
         body: [
           'Rat’s sentence stretches and circles as though language itself were drifting on the water. “Messing about” dignifies activity without a productive goal: handling the boat, watching weather and sharing food are enough. The speech is affectionate but not solemn, because distraction promptly sends the boat into the bank.',
           'That interruption keeps the river ideal practical. Rat’s love of the river involves skill, accidents and upkeep.'
@@ -657,7 +657,7 @@ module.exports = {
       },
       {
         phrase: 'Poop-poop!',
-        title: 'A machine occupies Toad’s language',
+        title: 'Toad and the motor car',
         body: [
           'The motor car first arrives as sound: a rising hum and brazen warning that displaces the caravan. Toad repeats its horn-call until imitation becomes possession. Before he can drive responsibly, the machine has already reorganised his attention and speech.',
           'The childish syllables make the obsession funny, yet the plot records material consequences—damaged vehicles, frightened road users, court proceedings and prison. Sound bridges fantasy and danger.'
@@ -665,7 +665,7 @@ module.exports = {
       },
       {
         phrase: 'the Friend and Helper',
-        title: 'Wonder without possession',
+        title: 'The Piper at the Gates of Dawn',
         body: [
           'In the Piper chapter the animals meet a presence that frightens them and makes them feel safe. The title avoids a fixed proper name inside the scene, allowing the experience to remain larger than a single explanatory system.',
           'They find Portly, but cannot retain the revelation as a usable story. Forgetfulness protects them from longing that ordinary life could not satisfy. Afterwards Pan lets them forget what they saw.'
@@ -732,7 +732,7 @@ module.exports = {
   },
 
   'the-yellow-wallpaper-and-the-giant-wistaria': {
-    heading: 'Two houses preserve what domestic authority tries to suppress.',
+    heading: 'Two stories about houses and what they hide.',
     introduction: [
       'The Yellow Wall-Paper and The Giant Wistaria have a precise reason to share a volume. They appeared in The New England Magazine seven months apart, under Gilman’s married byline, Charlotte Perkins Stetson. Each puts a woman’s hidden suffering inside a house; each has a confident male doctor who misses the truth; and in each, the decoration is part of the evidence. Wallpaper, vine, well, barred window, damaged floor and hidden writing are not interchangeable symbols. They are material things through which power leaves a trace.',
       'The stories use very different forms. The Yellow Wall-Paper is a secret first-person record whose gaps mark interruption and surveillance. As the narrator’s world contracts, her reading of the room becomes more intricate. The Giant Wistaria begins in colonial New England, jumps forward more than a century and briefly adopts the sociable manner of a summer house-party ghost story. Its characters receive separate fragments of a buried history, and physical repair finally becomes excavation. Reading the pair together reveals two ways a house can function as an archive.'
@@ -741,9 +741,9 @@ module.exports = {
     movementDeck: 'One story follows consciousness from the inside; the other distributes clues across time, witnesses and objects.',
     archiveHeading: 'Gilman, the paper and the magazine page.',
     archiveDeck: 'The portrait, period wallpaper and illustrated New England Magazine page recover the people and printed surfaces surrounding both stories.',
-    closeReadingHeading: 'Writing, pattern and truth drawn from the well.',
+    closeReadingHeading: 'Writing, pattern and the well.',
     closeReadingDeck: 'The paired phrases show the paper as a refuge and a trap, and a joking proverb leading to the discovery of a household’s history.',
-    sourcesHeading: 'Compare the stories, the medical record and Gilman’s account.',
+    sourcesHeading: 'The stories, the medical record and Gilman’s account.',
     sourcesDeck: 'Periodical text, manuscript comparison and institutional histories keep direct evidence separate from anecdotes repeated after publication.',
     movements: [
       {
@@ -771,7 +771,7 @@ module.exports = {
     closeReadings: [
       {
         phrase: 'dead paper and a great relief',
-        title: 'Two papers and two kinds of reading',
+        title: 'Two kinds of reading',
         body: [
           'The narrator can confide in writing because the page cannot diagnose, contradict or report her. “Dead” paper temporarily protects a living account. The room contains another paper that appears increasingly animate, until the narrator spends more energy deciphering the wall than recording herself.',
           'The exchange is formal as well as psychological. As surveillance and exhaustion shorten the journal entries, the wallpaper’s imagined narrative expands. A private medium of agency is gradually displaced by the surface imposed upon her.'
@@ -787,14 +787,14 @@ module.exports = {
       },
       {
         phrase: 'Truth lies hid in a well',
-        title: 'A joke becomes the method of the story',
+        title: 'The opening joke',
         body: [
           'In The Giant Wistaria, George’s proverb begins as playful Gothic talk. “Truth” is grammatically female before the household discovers the child in the well and the woman in the roots. The sentence thus predicts evidence the speaker does not yet take seriously.',
           'The vine at the end is a handsome ornament with a ‘strangling’ grip. Gilman makes inherited beauty depend on a concealed domestic history, then uses repair work—opening, clearing and dismantling—to bring that history back into view.'
         ]
       }
     ],
-    contextHeading: 'Periodical neighbours, medical history and texts that changed in print.',
+    contextHeading: 'The magazine, medical history and the text.',
     contextDeck: 'The paired edition can separate surviving evidence from anecdotes that have hardened into certainty.',
     contexts: [
       {
@@ -807,7 +807,7 @@ module.exports = {
       },
       {
         label: 'Medicine and memory',
-        title: 'What Gilman’s 1913 account does—and does not—prove',
+        title: 'Gilman’s 1913 account',
         body: [
           'Gilman connected The Yellow Wall-Paper with her experience of S. Weir Mitchell’s rest cure. In a 1913 essay she recalled instructions to restrict intellectual work and avoid pen, brush or pencil, and described abandoning that regimen after her condition worsened. She also insisted that the fiction contained embellishment and that she had not experienced its hallucinations.',
           'Her claim that Mitchell later changed his treatment was something she said she had been told, not an event she documented directly. The distinction matters: the retrospective essay is valuable primary evidence for Gilman’s stated purpose without becoming infallible proof of every later anecdote.'
@@ -863,18 +863,18 @@ module.exports = {
   },
 
   'the-great-gatsby': {
-    heading: 'A nine-chapter retrospective built from distance, delay and return.',
+    heading: 'Nick’s account, told in nine chapters.',
     introduction: [
       'The Great Gatsby is not a neutral window onto the Jazz Age. Nick Carraway tells the story after leaving the East, arranging a summer of encounters into a retrospective judgement. Information arrives out of order: Gatsby first appears as a silhouette, then as rumour, host and former lover, and only later as James Gatz. The delay lets readers experience the social invention before meeting the history underneath it. Nick’s selection—what he withholds, reconstructs and finally condemns—is part of the novel’s action.',
       'Place performs an equally exact function. East Egg, West Egg, Manhattan, the valley of ashes and the Midwest distinguish inherited position, new money, labour, spectacle and retreat. Cars, trains, telephones, advertising and illicit alcohol keep those spaces connected while distributing risk unequally. Gatsby can cross the bay and fill a house, but he cannot make Daisy’s intervening life disappear. The tragedy grows from treating time as something wealth and performance ought to be able to purchase.'
     ],
-    movementHeading: 'From the green light to an almost empty funeral.',
+    movementHeading: 'The story, chapter by chapter.',
     movementDeck: 'Fitzgerald discloses Gatsby in layers, then makes the retrospective narrator judge what the summer revealed.',
-    archiveHeading: 'Fitzgerald and New York in the novel’s dated summer.',
+    archiveHeading: 'Fitzgerald and New York in 1922.',
     archiveDeck: 'A 1917 portrait and a Fifth Avenue roof garden photographed in 1922 place the retrospective story beside its author’s generation and urban setting.',
-    closeReadingHeading: 'Judgement, distance and the sound of class.',
+    closeReadingHeading: 'Judgement, distance and class.',
     closeReadingDeck: 'Nick’s opening claim, the changing scale of the green light and Daisy’s voice show how the novel makes interpretation part of its action.',
-    sourcesHeading: 'Read the manuscript, first edition and legal setting.',
+    sourcesHeading: 'The manuscript, the first edition and the law.',
     sourcesDeck: 'Princeton’s drafts, the public-domain text and primary records for Prohibition and copyright provide the evidence behind this account.',
     movements: [
       {
@@ -892,14 +892,14 @@ module.exports = {
         ]
       },
       {
-        title: 'The past demanded in full',
+        title: 'The Plaza and the accident',
         body: [
           'The history of James Gatz arrives only after Gatsby’s performances have been established. On the hottest day of the summer they drive to the Plaza Hotel, where Gatsby demands that Daisy tell Tom she never loved him. Tom’s inherited position proves harder to displace than Gatsby’s possessions suggest.',
           'The exchanged cars carry that struggle back through the valley of ashes. Myrtle’s death depends on ownership, mistaken recognition and transferred responsibility, binding the novel’s social geography to its fatal mechanics.'
         ]
       },
       {
-        title: 'Aftermath and backward current',
+        title: 'Aftermath',
         body: [
           'Gatsby waits for a telephone call that does not come. Nick reconstructs the first courtship after its failure, then confronts Gatsby’s death, the nearly empty funeral and the return of people able to retreat into money. His judgement becomes explicit only when action can no longer be repaired.',
           'The final shore enlarges one man’s backward-looking project into a meditation on beginnings and repetition. Gatsby is not simply the American Dream in person; he wants a fresh start, and what he means by it is recovering a past he has partly invented.'
@@ -909,7 +909,7 @@ module.exports = {
     closeReadings: [
       {
         phrase: 'reserve all judgments',
-        title: 'Nick’s claim is a test, not a guarantee',
+        title: 'Nick’s claim to reserve judgement',
         body: [
           'The opening presents suspended judgement as advice and personal habit. Yet Nick’s narration assigns moral, aesthetic and social value constantly. The contradiction is productive: reserving judgement makes him a receiver of confidences, while writing later allows him to order those confidences into a verdict.',
           'Readers can ask where Nick’s patience turns into complicity, where his disgust becomes insight, and which characters he describes only from the outside.'
@@ -917,7 +917,7 @@ module.exports = {
       },
       {
         phrase: 'minute and far away',
-        title: 'The green light changes scale',
+        title: 'The green light',
         body: [
           'At first the light is real, small and barely distinguishable before Nick knows what it means to Gatsby. After the reunion, it becomes simply a light on Daisy’s dock and one of Gatsby’s enchanted objects has diminished. The final page enlarges it again within Nick’s historical meditation.',
           'Its function changes because distance changes. The object does not carry one fixed symbolic definition; it measures the relation between desire, knowledge and reach.'
@@ -925,14 +925,14 @@ module.exports = {
       },
       {
         phrase: 'Her voice is full of money',
-        title: 'Class is heard before it is explained',
+        title: 'Daisy’s voice',
         body: [
           'Gatsby identifies inherited ease as a quality of sound. Daisy’s attraction cannot be separated from protection, continuity and a confidence formed by wealth. The sentence is more exact than a catalogue of expensive objects because it makes class appear embodied and apparently effortless.',
           'Gatsby can acquire a mansion, shirts and a spectacular car, but the voice exposes why accumulation cannot reproduce Daisy’s position. His performance remains audible as performance to those secure enough to dismiss it.'
         ]
       }
     ],
-    contextHeading: 'Manuscript revision, Prohibition geography and a posthumous revival.',
+    contextHeading: 'Revision, Prohibition and the novel’s revival.',
     contextDeck: 'The finished novel emerged from radical rewriting and reached its present reputation only after its first readership had passed.',
     contexts: [
       {

@@ -23,20 +23,20 @@ module.exports = [
       'The complete play comes first in this edition. Scene summaries and explanatory notes make the action easier to follow, while longer material opens Webster’s sources, the Jacobean theatre, court service, tragedy, language and performance.',
       'The study material leaves the Duchess more than an emblem and Bosola more than a puzzle with one answer. It gives readers the evidence needed to argue about freedom, rank, secrecy, conscience and what remains of identity when public power has been stripped away.'
     ],
-    movementTitle: 'A secret household inside a watched court.',
+    movementTitle: 'The Duchess’s secret household.',
     movementIntro: 'Five turns take the play from self-directed marriage to the final attempt to answer violence with violence.',
     movements: [
-      { label: 'Marriage', title: 'The Duchess chooses', body: 'Ordered never to remarry, the Duchess proposes to Antonio herself. Cariola witnesses a ceremony that is loving, legally serious and dangerously private.' },
-      { label: 'Surveillance', title: 'Bosola reads the body', body: 'Ferdinand places Bosola in the household as a spy. Bosola uses apricots, a pregnancy and a dropped horoscope as evidence.' },
-      { label: 'Exposure', title: 'Confidence becomes betrayal', body: 'Years pass and the couple have children. The Duchess trusts Bosola with Antonio’s supposed dismissal; he carries the truth to her brothers.' },
-      { label: 'Imprisonment', title: 'Power becomes theatre', body: 'Ferdinand uses wax figures, darkness and a dance of madmen to assault the Duchess’s mind before executioners kill her, Cariola and two children.' },
-      { label: 'Reckoning', title: 'Revenge misses its mark', body: 'Bosola turns against the brothers but kills Antonio by mistake. The Cardinal, Ferdinand and Bosola die, leaving the surviving son to carry the family forward.' }
+      { label: 'Marriage', title: 'The secret marriage', body: 'Ordered never to remarry, the Duchess proposes to Antonio herself. Cariola witnesses a ceremony that is loving, legally serious and dangerously private.' },
+      { label: 'Surveillance', title: 'Bosola’s spying', body: 'Ferdinand places Bosola in the household as a spy. Bosola uses apricots, a pregnancy and a dropped horoscope as evidence.' },
+      { label: 'Exposure', title: 'Discovery', body: 'Years pass and the couple have children. The Duchess trusts Bosola with Antonio’s supposed dismissal; he carries the truth to her brothers.' },
+      { label: 'Imprisonment', title: 'The torment of the Duchess', body: 'Ferdinand uses wax figures, darkness and a dance of madmen to assault the Duchess’s mind before executioners kill her, Cariola and two children.' },
+      { label: 'Reckoning', title: 'The deaths in the last act', body: 'Bosola turns against the brothers but kills Antonio by mistake. The Cardinal, Ferdinand and Bosola die, leaving the surviving son to carry the family forward.' }
     ],
-    readingTitle: 'Three places where authority is tested.',
+    readingTitle: 'Three key scenes.',
     readings: [
       {
         label: 'Marriage',
-        title: 'The Duchess writes her own scene',
+        title: 'The wooing scene',
         paragraphs: [
           '“The misery of us that are born great,” the Duchess observes: because nobody dares approach her, she must do the wooing. Rank gives her authority over Antonio, but also makes ordinary courtship impossible. She produces the ring and leads a wooing that is romantic, legal and ceremonial all together.',
           'Her insistence that she is “flesh and blood” rejects the cold monument of the permanently mourning widow. Yet Cariola’s unease keeps danger in view. This act of self-determination has begun inside the same hidden world that will later let her brothers act without restraint.'
@@ -44,7 +44,7 @@ module.exports = [
       },
       {
         label: 'Service',
-        title: 'Bosola reads bodies for powerful men',
+        title: 'Bosola',
         paragraphs: [
           'As a spy Bosola watches her appetite, her sickness, her childbirth and her looks, and reports them. The apricot scene can be funny in performance, but its comedy is invasive: a woman’s pregnant body is being interpreted without her permission.',
           'He understands the court’s ugliness better than almost anyone, yet continues to serve it. Poverty and neglected merit explain something about his position; they do not settle responsibility. His late revenge cannot restore the people he helped destroy and produces another fatal error.'
@@ -61,11 +61,11 @@ module.exports = [
     ],
     contextTitle: 'History, theatre and service.',
     contexts: [
-      { label: 'Source', title: 'History reshaped', body: 'The real Giovanna d’Aragona secretly married Antonio Beccadelli after her first husband’s death. Webster inherited the story through European retellings and gives the Duchess a dramatic presence stronger than the surviving record affords her.' },
-      { label: 'Stage', title: 'A tragedy for two theatres', body: 'Blackfriars could intensify darkness, music and close psychological pressure; the Globe offered a larger public space for ceremonies and sudden reversals. The play’s effects belong to bodies and voices, not darkness on the page alone.' },
+      { label: 'Source', title: 'Sources', body: 'The real Giovanna d’Aragona secretly married Antonio Beccadelli after her first husband’s death. Webster inherited the story through European retellings and gives the Duchess a dramatic presence stronger than the surviving record affords her.' },
+      { label: 'Stage', title: 'Blackfriars and the Globe', body: 'Blackfriars could intensify darkness, music and close psychological pressure; the Globe offered a larger public space for ceremonies and sudden reversals. The play’s effects belong to bodies and voices, not darkness on the page alone.' },
       { label: 'Court', title: 'Service and surveillance', body: 'Antonio and Bosola depend upon aristocratic employment. Offices, rewards and patronage shape moral choices throughout a court where access to power is bought through usefulness.' }
     ],
-    figuresTitle: 'The people carrying the pressure.',
+    figuresTitle: 'Characters.',
     figures: [
       { name: 'The Duchess', body: 'A widowed ruler whose private marriage challenges patriarchal and dynastic control.' },
       { name: 'Antonio Bologna', body: 'Her steward and husband: thoughtful and honourable, but increasingly vulnerable after exposure.' },
@@ -110,20 +110,20 @@ module.exports = [
       'This Astor Library edition presents the complete play with summaries and explanatory notes, then places the A-text and B-text, the Faust-book source, morality drama, Reformation argument and the play’s extraordinary stage life in view.',
       'The longer study material follows knowledge, spectacle, repentance, despair and the changing relation between Faustus and Mephistopheles. It treats the play’s theological questions seriously without pretending that performance can settle them once and for all.'
     ],
-    movementTitle: 'Twenty-four years narrowing towards one hour.',
+    movementTitle: 'Faustus’s twenty-four years.',
     movementIntro: 'The play begins with global fantasies and ends by making every minute audible.',
     movements: [
-      { label: 'Choice', title: 'Learning is declared too small', body: 'Faustus reviews the university disciplines and values each only by whether it can grant absolute power. Valdes and Cornelius encourage magic.' },
-      { label: 'Bargain', title: 'A warning becomes a contract', body: 'Mephistopheles explains hell, but Faustus negotiates with Lucifer, signs in blood and ignores the command “Homo, fuge”—fly, man.' },
-      { label: 'Diversion', title: 'Questions become spectacles', body: 'Good and Evil Angels compete for him. When his questions reach creation, Lucifer distracts him with the Seven Deadly Sins.' },
-      { label: 'Diminishment', title: 'Empire becomes entertainment', body: 'Faustus travels and performs tricks for the Pope, Emperor, duke and lesser customers. His imagined command of nations contracts into display.' },
-      { label: 'Last hour', title: 'Time becomes the antagonist', body: 'An Old Man makes a final appeal. Faustus asks for Helen, then for time, concealment and extinction as the clock moves towards midnight.' }
+      { label: 'Choice', title: 'Faustus turns from his studies to magic', body: 'Faustus reviews the university disciplines and values each only by whether it can grant absolute power. Valdes and Cornelius encourage magic.' },
+      { label: 'Bargain', title: 'Mephistopheles, and the contract signed in blood', body: 'Mephistopheles explains hell, but Faustus negotiates with Lucifer, signs in blood and ignores the command “Homo, fuge”—fly, man.' },
+      { label: 'Diversion', title: 'Faustus wavers, and the Seven Deadly Sins', body: 'Good and Evil Angels compete for him. When his questions reach creation, Lucifer distracts him with the Seven Deadly Sins.' },
+      { label: 'Diminishment', title: 'The Emperor’s court, the ostlers and the horse-courser', body: 'Faustus travels and performs tricks for the Pope, Emperor, duke and lesser customers. His imagined command of nations contracts into display.' },
+      { label: 'Last hour', title: 'The Old Man, Helen, and the last hour', body: 'An Old Man makes a final appeal. Faustus asks for Helen, then for time, concealment and extinction as the clock moves towards midnight.' }
     ],
-    readingTitle: 'Read the warning inside the wish.',
+    readingTitle: 'Reading the play.',
     readings: [
       {
         label: 'Opening',
-        title: 'Faustus begins by misreading',
+        title: 'Faustus misreads scripture',
         paragraphs: [
           'The opening soliloquy looks like an orderly survey of learning, but Faustus has decided its verdict in advance. Medicine is useless because it cannot grant immortality; law is petty; theology is reduced to selected statements about sin and death.',
           'When he imagines the magician as “a mighty god”, scholarship becomes a fantasy of domination. His learning supplies magnificent language, but not the patience or humility needed to read accurately.'
@@ -131,7 +131,7 @@ module.exports = [
       },
       {
         label: 'Hell',
-        title: 'Mephistopheles knows more',
+        title: 'Mephistopheles',
         paragraphs: [
           '“Why, this is hell, nor am I out of it,” Mephistopheles tells him. The statement overturns Faustus’s assumption that hell is merely a distant place or an old story intended to frighten people. For the fallen spirit, memory itself has become punishment.',
           'Faustus speaks as though he has gained a servant, but Mephistopheles serves Lucifer and draws him towards the loss he already suffers. The supposed master repeatedly ignores the clearest witness available to him.'
@@ -139,7 +139,7 @@ module.exports = [
       },
       {
         label: 'Midnight',
-        title: 'The final hour changes time',
+        title: 'The final hour',
         paragraphs: [
           'The last soliloquy compresses twenty-four years into minutes and seconds. Faustus hears the clock and imagines escape through earth, cloud, water or non-existence. Each proposed refuge fails before the next can be completed.',
           'Even here he often wants delay or oblivion more than forgiveness. “I’ll burn my books” comes only at the end, when the knowledge he pursued can no longer protect him.'
@@ -152,7 +152,7 @@ module.exports = [
       { label: 'Text', title: 'Two early versions', body: 'The 1604 A-text and 1616 B-text differ in length, wording and incident. Theatre records also show payments for additions in 1602. Every modern performance must choose among versions.' },
       { label: 'Form', title: 'Morality meets tragedy', body: 'Good and Evil Angels, devils and personified sins come from morality drama. Marlowe places them beside a Renaissance scholar, classical reference and ambitious blank verse.' }
     ],
-    figuresTitle: 'Voices around Faustus.',
+    figuresTitle: 'Characters.',
     figures: [
       { name: 'Doctor Faustus', body: 'A celebrated scholar whose appetite for limitless power steadily narrows his life.' },
       { name: 'Mephistopheles', body: 'Lucifer’s agent: tempter, servant and deeply informed witness to damnation.' },
@@ -197,20 +197,20 @@ module.exports = [
       'This Astor Library edition presents the complete poem with a clear account of each movement, explanatory notes and material on rhyme royal, complaint, Roman history, Shakespeare’s sources, the Troy painting, testimony and the poem’s political ending.',
       'The additional material treats sexual violence with care and keeps responsibility with Tarquin. It also shows how inherited codes of chastity and family honour make Lucrece carry the public burden of a crime committed against her.'
     ],
-    movementTitle: 'From a boast at war to a revolution at home.',
+    movementTitle: 'The story.',
     movementIntro: 'The crime occupies one part of the poem; its aftermath, interpretation and public use occupy far more.',
     movements: [
-      { label: 'Ardea', title: 'Praise becomes competition', body: 'Collatine praises Lucrece before Roman commanders. Tarquin hears her virtue described as treasure and leaves the camp to see her.' },
-      { label: 'Collatium', title: 'Hospitality is betrayed', body: 'Lucrece receives a kinsman and prince. Tarquin debates with himself, enters her chamber and uses force together with a threat to fabricate adultery.' },
-      { label: 'Morning', title: 'The world looks unchanged', body: 'Tarquin flees. Lucrece addresses Night, Opportunity and Time while trying to decide how the crime can be spoken.' },
-      { label: 'Troy', title: 'A painting becomes a witness', body: 'Lucrece studies a painting of the fall of Troy, sees her own grief in Hecuba’s and turns her anger on Sinon, whose honest face hid his lies.' },
-      { label: 'Rome', title: 'Testimony becomes revolt', body: 'She names Tarquin, demands an oath and dies. Brutus takes command of the response and leads the movement that expels the Tarquins.' }
+      { label: 'Ardea', title: 'Collatine’s boast', body: 'Collatine praises Lucrece before Roman commanders. Tarquin hears her virtue described as treasure and leaves the camp to see her.' },
+      { label: 'Collatium', title: 'Tarquin’s visit', body: 'Lucrece receives a kinsman and prince. Tarquin debates with himself, enters her chamber and uses force together with a threat to fabricate adultery.' },
+      { label: 'Morning', title: 'The morning after', body: 'Tarquin flees. Lucrece addresses Night, Opportunity and Time while trying to decide how the crime can be spoken.' },
+      { label: 'Troy', title: 'Lucrece and the painting', body: 'Lucrece studies a painting of the fall of Troy, sees her own grief in Hecuba’s and turns her anger on Sinon, whose honest face hid his lies.' },
+      { label: 'Rome', title: 'Lucrece’s testimony', body: 'She names Tarquin, demands an oath and dies. Brutus takes command of the response and leads the movement that expels the Tarquins.' }
     ],
-    readingTitle: 'Praise, consent and the control of a story.',
+    readingTitle: 'Praise, consent and storytelling.',
     readings: [
       {
         label: 'Possession',
-        title: 'When praise becomes dangerous',
+        title: 'Praise',
         paragraphs: [
           'Collatine’s praise seems to honour Lucrece, but the narrator gives it the language of wealth and display. Tarquin wants what another man has described as incomparable. The first danger lies in a culture of comparison, ownership and competitive boasting.',
           'The imagery of siege continues that culture. Tarquin approaches a body as another city to be entered. Rome’s soldiers claim to defend the state abroad, yet the habits of conquest return with him into a Roman household.'
@@ -218,7 +218,7 @@ module.exports = [
       },
       {
         label: 'Responsibility',
-        title: 'Tarquin knows what he is doing',
+        title: 'Tarquin',
         paragraphs: [
           'Before entering the chamber, Tarquin supplies almost every argument against the crime. He knows the claims of kinship, hospitality, law and reputation. He is not unable to distinguish right from wrong; he keeps reasoning until reason serves the decision he wants.',
           'His threat to stage evidence of adultery joins sexual violence to narrative violence. He means to assault Lucrece and also to decide what other people will think the assault means.'
@@ -226,7 +226,7 @@ module.exports = [
       },
       {
         label: 'Testimony',
-        title: 'The Troy painting makes a witness',
+        title: 'The Troy painting',
         paragraphs: [
           'The painting gives Lucrece a field of faces when her own grief exceeds language. She finds Hecuba’s sorrow and studies Sinon, whose credible appearance concealed betrayal. She wonders how a picture can make suffering visible, and how a face can hide what a man intends.',
           'Soon she has to find words for what happened, for her family. Her naming of Tarquin is clear, but Brutus then converts testimony and body into a political emblem. Justice begins, yet control of the story moves quickly back to men.'
@@ -239,7 +239,7 @@ module.exports = [
       { label: 'History', title: 'A Roman founding story', body: 'Livy and Ovid connect Lucretia’s death with the overthrow of the Tarquins. Shakespeare delays that political end for hundreds of lines in order to remain with Lucrece.' },
       { label: 'Code', title: 'Chastity and family honour', body: 'Lucrece insists that her mind did not consent, yet fears Tarquin’s act will attach to her name. The poem exposes a system in which innocence can be inwardly certain and publicly fragile.' }
     ],
-    figuresTitle: 'People and voices in the poem.',
+    figuresTitle: 'Characters.',
     figures: [
       { name: 'Lucrece', body: 'The poem’s central consciousness, separating bodily violation from inward consent and making suffering public.' },
       { name: 'Sextus Tarquinius', body: 'The king’s son, who understands the obligations he breaks and threatens to control the evidence.' },
@@ -276,7 +276,7 @@ module.exports = [
     facts: [
       { label: '1593', text: 'Richard Field printed Shakespeare’s first published work, dedicated to the Earl of Southampton.' },
       { label: '1,194 lines', text: 'The poem uses 199 six-line stanzas rhyming ababcc.' },
-      { label: 'Ovid changed', text: 'Shakespeare expands Book 10 of the Metamorphoses and makes Adonis resist Venus.' },
+      { label: 'Ovid', text: 'Shakespeare expands Book 10 of the Metamorphoses and makes Adonis resist Venus.' },
       { label: 'Ten editions', text: 'Its frequent reprinting by 1616 shows a substantial readership beyond the public theatres.' }
     ],
     edition: [
@@ -284,20 +284,20 @@ module.exports = [
       'This Astor Library edition presents the complete poem with summaries and notes, then follows Shakespeare’s Ovidian source, the six-line stanza, the 1590s minor epic, arguments about procreation, animal appetite, hunting, metamorphosis and reception.',
       'The study material keeps the gender reversal and consent in view together. It looks at how changing the usual pursuer alters our response, why it does not cancel the coercion, and what Venus does with her grief after the boar ends a courtship Adonis never wanted.'
     ],
-    movementTitle: 'An interrupted hunt becomes an argument about desire.',
+    movementTitle: 'The hunt interrupted.',
     movementIntro: 'Five movements carry the poem from comic pursuit to death, flower and prophecy.',
     movements: [
       { label: 'Interruption', title: 'Venus stops the hunt', body: 'She seizes Adonis’s horse, pulls him down, praises his beauty and tries to keep him with her.' },
-      { label: 'Refusal', title: 'Every argument meets a no', body: 'Venus moves through command, flattery, tears, fainting and procreation. Adonis tries to distinguish love from appetite.' },
-      { label: 'Animals', title: 'The horses answer differently', body: 'The stallion follows a jennet. Venus says that instant attraction is proof of what nature wants; Adonis does not accept the argument.' },
-      { label: 'Warning', title: 'The boar enters the language', body: 'Adonis plans the dangerous hunt. Venus urges the harmless hare and imagines wounds the boar may inflict.' },
-      { label: 'Metamorphosis', title: 'A body becomes a flower', body: 'Venus finds Adonis killed. A purple-and-white flower rises in his place, and she prophesies pain in future love.' }
+      { label: 'Refusal', title: 'Adonis refuses', body: 'Venus moves through command, flattery, tears, fainting and procreation. Adonis tries to distinguish love from appetite.' },
+      { label: 'Animals', title: 'The horses', body: 'The stallion follows a jennet. Venus says that instant attraction is proof of what nature wants; Adonis does not accept the argument.' },
+      { label: 'Warning', title: 'The boar', body: 'Adonis plans the dangerous hunt. Venus urges the harmless hare and imagines wounds the boar may inflict.' },
+      { label: 'Metamorphosis', title: 'The flower', body: 'Venus finds Adonis killed. A purple-and-white flower rises in his place, and she prophesies pain in future love.' }
     ],
     readingTitle: 'Pursuit, analogy and the wound.',
     readings: [
       {
         label: 'Consent',
-        title: 'Reversal does not remove coercion',
+        title: 'Reversal and coercion',
         paragraphs: [
           'The desiring speaker is an older, powerful woman and the beautiful reluctant object a young man. The reversal can be comic, especially when the goddess of love cannot secure love. Her verbal abundance makes his refusal small on the page without making it less real.',
           'Venus removes Adonis from his horse, pins him, steals kisses and treats resistance as an invitation to try again. Changing the expected gender pattern does not cancel the pursued person’s repeated no.'
@@ -305,7 +305,7 @@ module.exports = [
       },
       {
         label: 'Nature',
-        title: 'What the horses cannot prove',
+        title: 'The horses as argument',
         paragraphs: [
           'The stallion and jennet enact the spontaneous appetite Venus wants Adonis to accept. She points to the horses as proof that beautiful creatures owe their beauty to breeding.',
           'Adonis is not persuaded because analogy is not consent. The animals show appetite exists; they cannot decide what one human owes another person’s desire. Her language of use and waste makes beauty sound like capital that must be invested.'
@@ -313,7 +313,7 @@ module.exports = [
       },
       {
         label: 'Death',
-        title: 'The boar changes the poem’s tone',
+        title: 'The boar and the change of tone',
         paragraphs: [
           'Venus has imagined Adonis’s body as something to kiss, possess and preserve. When she finds it wounded, the tusk is described through the language of a fatal kiss. The image makes final violence answer earlier pursuit.',
           'Her prophecy enlarges one frustrated desire into a history of love itself: affection will be unstable, jealous and liable to loss. At the end her prophecy that love will always bring sorrow sounds partly like wisdom and partly like her own disappointment.'
@@ -322,11 +322,11 @@ module.exports = [
     ],
     contextTitle: 'Ovid, print and the six-line stanza.',
     contexts: [
-      { label: 'Source', title: 'Ovid changed', body: 'In the Metamorphoses, Venus and Adonis are lovers before the fatal hunt. Shakespeare puts Adonis’s refusal at the centre, so the poem is a love story with only one willing lover.' },
+      { label: 'Source', title: 'Ovid', body: 'In the Metamorphoses, Venus and Adonis are lovers before the fatal hunt. Shakespeare puts Adonis’s refusal at the centre, so the poem is a love story with only one willing lover.' },
       { label: 'Genre', title: 'The Elizabethan minor epic', body: 'The fashionable 1590s form joins classical erotic narrative to worked rhetoric and changing tone. The poem appeared during prolonged closures of London’s theatres.' },
-      { label: 'Stanza', title: 'Six lines at a time', body: 'Alternating rhyme creates movement and counterargument; the couplet clinches a joke or sharpens an image. Venus repeatedly believes her case is complete, only for refusal to begin it again.' }
+      { label: 'Stanza', title: 'The stanza', body: 'Alternating rhyme creates movement and counterargument; the couplet clinches a joke or sharpens an image. Venus repeatedly believes her case is complete, only for refusal to begin it again.' }
     ],
-    figuresTitle: 'Desire, refusal and the speaking world.',
+    figuresTitle: 'Characters.',
     figures: [
       { name: 'Venus', body: 'Goddess of love, but not master of another person’s desire; witty, forceful, inventive and finally grief-stricken.' },
       { name: 'Adonis', body: 'A beautiful young hunter whose brief responses remain a consistent refusal of Venus and the future she proposes.' },
@@ -371,20 +371,20 @@ module.exports = [
       'This Astor Library edition presents the complete novel with chapter summaries and contextual notes. Longer material follows the Custom House, Puritan Boston, romance, the three scaffold scenes, the unstable A, symbolism, narration, character and reception.',
       'Hawthorne’s ambiguity is left open; no object in the book is given a single meaning. The aim is to help readers distinguish evidence from interpretation and see why public certainty becomes one of the book’s most dangerous forms of power.'
     ],
-    movementTitle: 'Three public scenes and seven years of concealment.',
+    movementTitle: 'Seven years in Boston.',
     movementIntro: 'The scaffold returns each time the relation between secrecy and public knowledge changes.',
     movements: [
       { label: 'Exposure', title: 'Prison door and first scaffold', body: 'Hester emerges with Pearl and the A. She refuses to name the father and recognises her absent husband in the crowd.' },
-      { label: 'Edge', title: 'A life beyond the town', body: 'Hester supports herself through needlework. Chillingworth assumes a new name and binds her to secrecy while seeking Pearl’s father.' },
+      { label: 'Edge', title: 'Hester at the edge of town', body: 'Hester supports herself through needlework. Chillingworth assumes a new name and binds her to secrecy while seeking Pearl’s father.' },
       { label: 'Surveillance', title: 'Physician and minister', body: 'Chillingworth moves into Dimmesdale’s household. A midnight scaffold vigil imitates confession without accepting daylight.' },
-      { label: 'Forest', title: 'Escape is imagined', body: 'Hester reveals Chillingworth’s identity to Dimmesdale and plans Europe. Pearl will not cross the brook until the A is restored.' },
+      { label: 'Forest', title: 'The forest meeting', body: 'Hester reveals Chillingworth’s identity to Dimmesdale and plans Europe. Pearl will not cross the brook until the A is restored.' },
       { label: 'Confession', title: 'The last scaffold', body: 'After the Election Sermon, Dimmesdale acknowledges Hester and Pearl, confesses and dies. Hester later returns and resumes the letter.' }
     ],
-    readingTitle: 'A sign, a stage and a child.',
+    readingTitle: 'The letter, the scaffold and Pearl.',
     readings: [
       {
         label: 'The A',
-        title: 'A letter that will not keep one meaning',
+        title: 'The letter',
         paragraphs: [
           'The authorities intend the A as a fixed public sentence. Hester’s elaborate embroidery changes it before she reaches the scaffold. Later neighbours read “Able”, while an A-shaped light is interpreted as “Angel” and Dimmesdale sees judgement.',
           'The letter still governs where Hester lives and how strangers see her. Meaning is not limitless; it is disputed. The book shows communities and individuals forcing stories onto marks, bodies and events.'
@@ -392,7 +392,7 @@ module.exports = [
       },
       {
         label: 'The scaffold',
-        title: 'Daylight, midnight, daylight',
+        title: 'The scaffold',
         paragraphs: [
           'The first scaffold makes Hester visible, protects Dimmesdale behind his office and lets Chillingworth watch without disclosure. The midnight return gives Dimmesdale the form of confession without its public cost.',
           'The final scene occurs in daylight, yet witnesses later disagree about what appeared on Dimmesdale’s chest and some deny confession. Revelation ends his secrecy but cannot control the accounts made from it.'
@@ -400,20 +400,20 @@ module.exports = [
       },
       {
         label: 'Pearl',
-        title: 'A symbol who is also a child',
+        title: 'Pearl',
         paragraphs: [
           'Adults repeatedly make Pearl carry meanings she did not choose. She is called the living scarlet letter, treated as evidence of sin and examined to see whether Hester may keep her. Her questions expose what the adults will not say.',
           'The ending partly releases her from that work. Dimmesdale’s recognition, Chillingworth’s inheritance and a life only inferred elsewhere allow the child once treated as a symbol to possess a future beyond the narrator’s interpretation.'
         ]
       }
     ],
-    contextTitle: 'Puritan Boston inside an American romance.',
+    contextTitle: 'Puritan Boston.',
     contexts: [
-      { label: 'History', title: 'The seventeenth century from 1850', body: 'Historical figures appear, but the romance is not a documentary reconstruction. Hawthorne uses Puritan Boston to examine punishment, authority and inherited guilt from nineteenth-century America.' },
+      { label: 'History', title: 'Hawthorne and the 1640s', body: 'Historical figures appear, but the romance is not a documentary reconstruction. Hawthorne uses Puritan Boston to examine punishment, authority and inherited guilt from nineteenth-century America.' },
       { label: 'Form', title: 'Romance and uncertainty', body: 'The Custom-House invents archival origins. Within the story, the narrator offers natural and supernatural explanations without deciding between them, making readers experience the desire for verdicts.' },
       { label: 'Inheritance', title: 'Ancestry and office', body: 'Hawthorne’s ancestors included a Salem witch-trial judge. His own Custom House employment adds another history of institutions, patronage and judgement to the frame.' }
     ],
-    figuresTitle: 'The people made to carry meanings.',
+    figuresTitle: 'Characters.',
     figures: [
       { name: 'Hester Prynne', body: 'A skilled needleworker, mother and object of discipline who develops an independent life without escaping the letter’s history.' },
       { name: 'Pearl', body: 'Hester’s observant daughter, repeatedly made to serve as a symbol while asking the clearest questions.' },
@@ -458,20 +458,20 @@ module.exports = [
       'This Astor Library edition presents the complete poem with book-by-book summaries and explanatory notes. Longer material opens the biblical and epic traditions, Milton’s politics and blindness, the 1667 and 1674 editions, blank verse, character, imagery, criticism and reception.',
       'The support helps readers follow long sentences without flattening them and read Satan’s rhetoric without mistaking force for truth. It connects the cosmic scale to the poem’s most personal question: how two people speak to each other before and after trust fails.'
     ],
-    movementTitle: 'From defeated rebellion to a world outside Eden.',
+    movementTitle: 'The twelve books.',
     movementIntro: 'Five large movements hold the twelve-book poem together.',
     movements: [
-      { label: 'Books I–II', title: 'Hell reorganises defeat', body: 'Satan and the fallen angels wake, build Pandemonium and debate their next action. Satan crosses Chaos towards the new world.' },
-      { label: 'Books III–IV', title: 'Heaven and Eden come into view', body: 'God foresees the Fall, the Son offers redemption, and Satan enters Eden to watch Adam and Eve.' },
-      { label: 'Books V–VIII', title: 'Raphael tells the larger history', body: 'The angel recounts revolt, war, the Son’s victory and creation; Adam describes awakening and meeting Eve.' },
-      { label: 'Books IX–X', title: 'Persuasion becomes blame', body: 'Eve and Adam eat by different paths. Judgement, shame and accusation follow while Sin and Death build their road.' },
-      { label: 'Books XI–XII', title: 'History enters the garden', body: 'Michael shows Adam future violence, the Flood and redemption. Adam and Eve leave together with grief and responsibility.' }
+      { label: 'Books I–II', title: 'Hell', body: 'Satan and the fallen angels wake, build Pandemonium and debate their next action. Satan crosses Chaos towards the new world.' },
+      { label: 'Books III–IV', title: 'Heaven and Eden', body: 'God foresees the Fall, the Son offers redemption, and Satan enters Eden to watch Adam and Eve.' },
+      { label: 'Books V–VIII', title: 'Raphael’s story', body: 'The angel recounts revolt, war, the Son’s victory and creation; Adam describes awakening and meeting Eve.' },
+      { label: 'Books IX–X', title: 'The Fall', body: 'Eve and Adam eat by different paths. Judgement, shame and accusation follow while Sin and Death build their road.' },
+      { label: 'Books XI–XII', title: 'Michael’s visions', body: 'Michael shows Adam future violence, the Flood and redemption. Adam and Eve leave together with grief and responsibility.' }
     ],
     readingTitle: 'Sentence, persuasion and conversation.',
     readings: [
       {
         label: 'Invocation',
-        title: 'The opening sentence declares its scale',
+        title: 'The opening sentence',
         paragraphs: [
           'The poem begins “Of Man’s first disobedience”, but its governing verb—“Sing”—does not arrive until line six. Before stating its action, the sentence has moved through forbidden fruit, death, suffering and promised restoration.',
           'The “Heavenly Muse” belongs to Sinai and biblical creation as well as classical epic. Milton’s purpose to “justify the ways of God to men” gives readers a standard against which to test every account of liberty, obedience and justice.'
@@ -479,7 +479,7 @@ module.exports = [
       },
       {
         label: 'Rhetoric',
-        title: 'Satan’s language is powerful because unstable',
+        title: 'Satan’s language',
         paragraphs: [
           'Satan talks about defeat in the language of courage. He names permanent loss as a campaign and calls Heaven tyrannical because he cannot possess its throne. The speeches are memorable because grievance sounds like principle.',
           'Milton’s similes can make him gigantic or heroic, then introduce hidden diminishment. “Darkness visible” captures the method: language still has brilliance, but what it reveals is misery.'
@@ -487,20 +487,20 @@ module.exports = [
       },
       {
         label: 'The Fall',
-        title: 'Conversation fails before appetite wins',
+        title: 'Adam and Eve’s argument',
         paragraphs: [
           'Book IX first separates Adam and Eve through an argument about work, trust and untested virtue. Satan turns Eve’s reasoning, independence and desire for knowledge towards a conclusion she had not first sought.',
           'Adam is not deceived about the command. “To lose thee were to lose myself” sounds loving but places attachment above judgement. After they eat, speech moves rapidly from intimacy to concealment and blame.'
         ]
       }
     ],
-    contextTitle: 'Epic, politics and a poem made by voice.',
+    contextTitle: 'Epic, politics and dictation.',
     contexts: [
       { label: 'Genre', title: 'A biblical epic', body: 'Milton adopts invocation, councils, catalogues, warfare, journeys and extended similes from Homer and Virgil, then revises heroism around patience, sacrifice and inward government.' },
       { label: 'History', title: 'Written after political defeat', body: 'Milton defended republican government before the Restoration. Arguments about liberty, tyranny, kingship and counsel carry that history without becoming a simple political key.' },
       { label: 'Voice', title: 'Dictation and revision', body: 'Milton was blind and dictated the epic to assistants. Its long sentences and changing pauses reward reading aloud; the move from ten books to twelve records major revision.' }
     ],
-    figuresTitle: 'The voices inside the argument.',
+    figuresTitle: 'Characters.',
     figures: [
       { name: 'The narrator', body: 'An ambitious poetic voice invoking divine aid and reflecting on blindness, vocation and the act of telling.' },
       { name: 'Satan', body: 'A defeated rebel whose rhetorical command coexists with envy, self-deception and diminishing freedom.' },

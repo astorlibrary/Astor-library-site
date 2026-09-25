@@ -22,6 +22,24 @@ Avoid phrases such as:
 - “cover expected” or “placeholder”
 - “built for” when a direct description would be clearer
 
+## Stock constructions
+
+The September 2026 copy review removed thousands of sentences that followed the same few formulas. Each is fine once; repeated across a catalogue they make every page sound machine-made. Do not reintroduce them:
+
+- a book, play, poem or scene that “refuses to” do something, or “keeps” doing it (people can refuse; texts cannot)
+- “turns X into Y”, “makes room for”, “built on”
+- “the human cost”, “the cost of”
+- “without looking away”, “while refusing to let”
+- “not X but Y”, “rather than”, “both X and Y”, “at once”, “never quite”
+- the text “asks”, “tests” or “explores” something
+- decorative adverbs such as “quietly”, and adjectives such as “unsettling” or “haunting”
+
+Write the plain sentence instead, with a person as the subject where one is doing something: “Hester will not name the father”, not “the novel refuses to let the letter keep one settled meaning”. Quotations from the works themselves are exempt. `node scripts/check-site.js` fails on the worst of these.
+
+## Openings
+
+Give every book page its own way in. Do not start each introduction with the same sequence of author, complete text, list of apparatus and then plot. Begin with whatever is most concrete and interesting about this book: a fact of its writing, a scene, a problem readers have argued about.
+
 ## Accuracy
 
 - Check dates, titles, names, venues and publication details before publishing.
@@ -43,7 +61,7 @@ Avoid phrases such as:
 
 Not every work needs every section. Do not pad a page to fit the template.
 
-Long pages should help readers find their place. Keep section headings specific to the book, and make sure the automatically generated contents links still read naturally out of context.
+Long pages should help readers find their place. Headings are for navigation, so keep them plain: “Act III”, “Themes”, “Characters”, “The 1847 text”, “Hamlet’s delay”. Name the thing the section is about. Do not use headings as taglines or arguments (“Four days, two houses, one failed message”, “The killing, and the funeral that undoes it”, “Observation is not magic”); put the argument in the paragraph underneath. Make sure the automatically generated contents links still read naturally out of context.
 
 ## Images
 

@@ -31,7 +31,7 @@
     {
       "id": "act-1",
       "label": "Act I",
-      "title": "A brawl, a feast, and a sonnet between strangers",
+      "title": "The brawl, and the Capulet feast",
       "summary": "Two servants start a street fight over nothing, the Prince threatens death for the next offence, and Romeo is in love with a woman who will not have him. At the Capulet feast he meets Juliet, and the two build a sonnet between them before either learns the other's name.",
       "scenes": [
         { "ref": "1.0", "title": "Prologue", "summary": "The Chorus announces the feud, the lovers and their deaths in fourteen lines." },
@@ -45,7 +45,7 @@
     {
       "id": "act-2",
       "label": "Act II",
-      "title": "A marriage arranged in a night and a morning",
+      "title": "The balcony, and the secret wedding",
       "summary": "Romeo climbs the orchard wall and hears Juliet say aloud what she would never have told him. She proposes marriage herself, and by the following afternoon Friar Laurence has performed it, hoping a secret wedding will do what the Prince's threats cannot.",
       "scenes": [
         { "ref": "2.0", "title": "Prologue", "summary": "A second Chorus sonnet marks the change from old love to new." },
@@ -60,7 +60,7 @@
     {
       "id": "act-3",
       "label": "Act III",
-      "title": "Two deaths at noon and a banishment",
+      "title": "Mercutio and Tybalt killed, and Romeo banished",
       "summary": "Mercutio dies under Romeo's arm, Romeo kills Tybalt within minutes, and the Prince commutes death to exile. Juliet spends her wedding night with a husband who must leave at dawn, and wakes to a father who will disown her if she does not marry Paris on Thursday.",
       "scenes": [
         { "ref": "3.1", "title": "The street at noon", "summary": "Mercutio and Tybalt are killed in quick succession; Romeo is banished, not executed." },
@@ -73,7 +73,7 @@
     {
       "id": "act-4",
       "label": "Act IV",
-      "title": "A drug, a false death and a house of mourning",
+      "title": "The Friar’s potion, and Juliet’s false death",
       "summary": "Juliet takes the Friar's vial without telling anyone, and the scene in which she swallows it is the longest she is ever left alone. The Capulets wake to find her cold, and in the space of one scene the household’s wedding preparations become a funeral.",
       "scenes": [
         { "ref": "4.1", "title": "The plan", "summary": "Juliet meets Paris at the Friar's cell and is given a potion and a forty-two-hour lie." },
@@ -86,7 +86,7 @@
     {
       "id": "act-5",
       "label": "Act V",
-      "title": "The message that does not arrive",
+      "title": "The lost letter, and the tomb",
       "summary": "Romeo in Mantua hears of Juliet's death from a servant before the Friar's letter can reach him, because the messenger is shut up in a plague house. He buys poison from a starving apothecary, kills Paris at the tomb door, and dies minutes before Juliet wakes.",
       "scenes": [
         { "ref": "5.1", "title": "Mantua", "summary": "Balthasar brings the wrong news; Romeo remembers an apothecary poor enough to break the law." },
@@ -251,7 +251,7 @@
     },
     {
       "id": "love",
-      "name": "Love, desire and its languages",
+      "name": "Love and desire",
       "summary": "Verona offers several competing accounts of what love is: Mercutio's obscenity, the Nurse's memory of bruised knees, Paris's negotiation with a father, Romeo's Petrarchan sighing over Rosaline. The lovers have to invent something that fits none of them, and they do it inside fourteen lines.",
       "development": "Romeo's borrowed oxymorons in Act I give way to shared speech in 1.5 and plain future-tense planning in 2.2."
     },
@@ -269,8 +269,8 @@
     },
     {
       "id": "death",
-      "name": "Death as bridegroom",
-      "summary": "Juliet says her grave will be her wedding bed within minutes of meeting Romeo, and the play keeps the equation going: a bride laid out for a funeral, a tomb described as a lantern, a husband who imagines Death keeping his wife for a lover.",
+      "name": "Love and death",
+      "summary": "Juliet says her grave will be her wedding bed within minutes of meeting Romeo, and the play sustains the equation: a bride laid out for a funeral, a tomb described as a lantern, a husband who imagines Death keeping his wife for a lover.",
       "development": "What begins as courtly hyperbole in 1.5 is literalised in 4.5 when the wedding music is turned to a dirge, and again in 5.3."
     }
   ],
@@ -289,7 +289,7 @@
     },
     {
       "id": "light-dark",
-      "name": "Light against dark",
+      "name": "Light and dark imagery",
       "definition": "A repeated contrast of brightness and night used to organise a play's images.",
       "inThisBook": "Every declaration happens at night and every catastrophe in daylight: torches, a jewel in an ear, the sun at the window, and a tomb that Romeo says is full of light because Juliet is in it."
     },

@@ -47,7 +47,7 @@
     {
       "id": "advertisement",
       "label": "The Advertisement and the Marinere",
-      "title": "A warning to the reader, and a ghost ship",
+      "title": "The Advertisement, and Coleridge’s ballad",
       "summary": "The book opens by telling its readers that they may not think these are poems at all, and then hands them the strangest thing in it. Coleridge's Marinere is in archaic spelling and ballad stanzas, and it takes up nearly a quarter of the volume — a supernatural sea voyage placed at the front of a book that is otherwise about Somerset paupers.",
       "scenes": [
         {
@@ -70,7 +70,7 @@
     {
       "id": "experiments-in-speech",
       "label": "The talking poems",
-      "title": "Plain words, awkward metre, real people",
+      "title": "Wordsworth’s narrative poems",
       "summary": "Wordsworth's contribution begins with poems that sound like someone telling you a story at a gate. The diction is deliberately flat, the narrators are unreliable or obtuse, and the incidents are so slight that reviewers thought the book a joke. The Thorn is narrated by a garrulous retired sea captain; The Idiot Boy spends four hundred lines on a boy who is never in any danger.",
       "scenes": [
         {
@@ -98,7 +98,7 @@
     {
       "id": "children-and-the-poor",
       "label": "The dispossessed",
-      "title": "Children who will not be corrected, and the people on the road",
+      "title": "We Are Seven, The Last of the Flock and other poems of loss",
       "summary": "A cluster of poems about people who have lost something and will not be talked out of the loss: a girl who counts her dead siblings among the living, a shepherd down to his last sheep, a mother without a home. They are the most political poems in the book, and none of them argues.",
       "scenes": [
         {
@@ -126,7 +126,7 @@
     {
       "id": "the-doctrine",
       "label": "The arguing poems",
-      "title": "Books, woods, and what teaches",
+      "title": "Expostulation and Reply, and The Tables Turned",
       "summary": "Two short poems in dialogue set out the book's position more baldly than the Advertisement dares: reading is not the only way of learning, and dissection destroys what it examines. They are quotable to the point of being misquoted, and they are the reason the volume is treated as a manifesto.",
       "scenes": [
         {
@@ -149,7 +149,7 @@
     {
       "id": "tintern-abbey",
       "label": "Tintern Abbey",
-      "title": "Five years, and a sister on the bank",
+      "title": "Wordsworth returns to the Wye",
       "summary": "The last poem in the volume is unlike everything before it: unrhymed, unhurried, and built out of one long act of remembering. Wordsworth composed it in his head walking back to Bristol and wrote nothing down until he arrived. It states the whole Romantic argument about memory, landscape and consolation, and then hands it to his sister as insurance.",
       "scenes": [
         {
@@ -419,31 +419,31 @@
     },
     {
       "id": "nature",
-      "name": "What a wood can teach",
+      "name": "Nature as teacher",
       "summary": "Nature in this volume is not scenery. It is a source of instruction that the poems set directly against books, sermons and analysis, and it is credited with the moral education the schoolroom claims.",
       "development": "Stated as a joke against study in The Tables Turned, complicated in Lines written in early spring, and turned into something far stranger in Tintern Abbey, where the teacher is a presence the poet cannot name."
     },
     {
       "id": "memory",
-      "name": "Five years, and the mind checking itself",
+      "name": "Memory",
       "summary": "The book’s last poem makes remembering an activity: a man measures his present feeling against one five years old and finds the loss and the compensation in the same landscape.",
       "development": "Memory is a burden in the Marinere, a comfort in Tintern Abbey, and in both cases something that has to be told to another person before it can be borne."
     },
     {
       "id": "class",
-      "name": "The people in the road",
+      "name": "Vagrants and the poor",
       "summary": "Discharged soldiers, evicted tenants, shepherds selling their last sheep, old women gathering sticks from a hedge. Poetry had used such figures for pathos or comedy; this book gives them the grammar of the poem and lets them speak first.",
       "development": "The 1798 poems report the poor without moralising; the war, the enclosures and the parish system are visible in the background of nearly every one and are never named as causes."
     },
     {
       "id": "knowledge",
-      "name": "Reading against looking",
+      "name": "Books and nature",
       "summary": "Two poems stage a straight argument about how a person learns, and the book's most quoted line accuses science of killing what it examines. The position is more careful than the slogan: the poems attack dissection, not attention.",
       "development": "Expostulation and Reply raises it, The Tables Turned pushes it to an extreme, and Tintern Abbey then describes a kind of seeing that is neither idleness nor analysis."
     },
     {
       "id": "isolation",
-      "name": "People who cannot be reached",
+      "name": "Isolation",
       "summary": "A child who will not revise her count, a woman who sits on a mountain saying the same two words, a sailor nobody can help, a man cursed with a cold that no fire touches. The volume keeps arriving at someone who cannot be argued out of their condition.",
       "development": "Early poems treat the isolation as a puzzle for the observer; by Tintern Abbey the poet has accepted that the only remedy on offer is another person's presence."
     }
@@ -457,7 +457,7 @@
     },
     {
       "id": "refrain",
-      "name": "Lines that come back",
+      "name": "Refrain",
       "definition": "A phrase repeated at intervals, often without change.",
       "inThisBook": "Martha Ray's cry and the thorn's measurements return again and again, so that the poem behaves like the mind of its narrator. The repetition irritated the first reviewers, which was the price of the effect."
     },
@@ -469,25 +469,25 @@
     },
     {
       "id": "dialogue",
-      "name": "Poems that argue",
+      "name": "Dialogue poems",
       "definition": "A poem built as an exchange between two speakers.",
       "inThisBook": "Expostulation and Reply and The Tables Turned are two halves of one conversation; We are seven and Anecdote for Fathers are arguments the adult loses. Putting the opposition inside the poem stops the doctrine becoming a sermon."
     },
     {
       "id": "direct-address",
-      "name": "Speaking to someone in the poem",
+      "name": "Address",
       "definition": "Turning from the reader to a named listener inside the text.",
       "inThisBook": "The Marinere fixes the wedding guest; Tintern Abbey turns to a sister who never speaks. Both poems need a listener present, so that the reader is watching someone else being told."
     },
     {
       "id": "landscape",
-      "name": "Places given exactly",
+      "name": "Precise settings",
       "definition": "Naming and describing real ground, not generic scenery.",
       "inThisBook": "Hedge-rows run wild, the smoke rises from among the trees, the thorn stands a certain number of paces from a pond. The precision is what makes the argument about nature something other than a preference."
     },
     {
       "id": "retrospective-narration",
-      "name": "Telling it afterwards",
+      "name": "Retrospective narration",
       "definition": "A narrator recounting events that are already over, with the ending known.",
       "inThisBook": "Almost every poem here is a report: the Marinere's voyage, the vagrant's ruin, the huntsman's better days. The distance between the event and the telling is where the feeling collects."
     }

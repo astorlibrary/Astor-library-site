@@ -252,8 +252,8 @@ const books = [
       'Notes and essays explain rural work and debt, Berkshire geography, winter transport, patent medicines, healthcare, marriage, divorce, obligation, adaptations and reception.'
     ],
     topics: [
-      { title: 'No practical exit', body: 'Farm debt, work, marriage and dependence give material force to the novel’s emotional confinement.' },
-      { title: 'A reconstructed past', body: 'The engineer pieces Ethan’s history together from what different people tell him.' },
+      { title: 'Confinement', body: 'Farm debt, work, marriage and dependence give material force to the novel’s emotional confinement.' },
+      { title: 'The narrator’s reconstruction', body: 'The engineer pieces Ethan’s history together from what different people tell him.' },
       { title: 'Starkfield winter', body: 'Roads, weather, farms and declining mills make place an active pressure on every available choice.' }
     ]
   }),
@@ -758,9 +758,9 @@ const remainingBooks = [
       'Supporting essays examine German-speaking Prague, work and bureaucracy, the Samsa household, illness and disability, publication, Kafka’s instruction that Gregor’s transformed body must not appear on the original cover, and the translation history of ungeheueres Ungeziefer.'
     ],
     topics: [
-      { title: 'Work before wonder', body: 'Gregor responds to transformation through timetables, debt and the disciplinary reach of his employer.' },
+      { title: 'Work', body: 'Gregor responds to transformation through timetables, debt and the disciplinary reach of his employer.' },
       { title: 'A household economy', body: 'The family’s roles and judgements change as Gregor moves from sole provider to financial burden.' },
-      { title: 'A translated creature', body: 'The German phrase behind Gregor’s new body has produced a difficult and revealing English translation history.' }
+      { title: 'Translation', body: 'The German phrase behind Gregor’s new body has produced a difficult and revealing English translation history.' }
     ]
   }),
   inCollection('american', {

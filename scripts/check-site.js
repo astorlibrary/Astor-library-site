@@ -130,6 +130,25 @@ const editorialPhrases = [
   'classic texts, properly presented'
 ];
 
+// Stock constructions the copy review removed. They read as formula, and
+// once they creep back they spread from page to page.
+const stockPhrases = [
+  /\bmakes? room for\b/,
+  /\bmade room for\b/,
+  /\bhuman cost\b/,
+  /\bwithout looking away\b/,
+  /\brefusing to let\b/,
+  /\b(?:the|this) (?:play|novel|poem|book|story|text|narrative|sequence|collection|scene|chapter|ending|sentence|line|image|stanza|speech) refuses\b/
+];
+function stockPhraseFailures(fileName, text) {
+  const found = [];
+  for (const pattern of stockPhrases) {
+    const match = text.match(pattern);
+    if (match) found.push(fileName + ' contains the stock phrase "' + match[0] + '"; say it plainly instead');
+  }
+  return found;
+}
+
 for (const file of htmlFiles) {
   const html = fs.readFileSync(file, 'utf8');
   const fileName = relative(file);
@@ -203,6 +222,7 @@ for (const file of htmlFiles) {
   for (const phrase of editorialPhrases) {
     if (text.includes(phrase)) failures.push(fileName + ' contains build wording: "' + phrase + '"');
   }
+  failures.push(...stockPhraseFailures(fileName, text));
 }
 
 // One catalogue total everywhere: a stale "all 97 books" on one page and
@@ -1400,6 +1420,8 @@ for (const book of studyBooks) {
   for (const phrase of editorialPhrases) {
     if (text.includes(phrase)) failures.push(fileName + ' contains build wording: "' + phrase + '"');
   }
+  // Quotations are the authors' own words; the stock-phrase rule applies to ours.
+  failures.push(...stockPhraseFailures(fileName, dataText({ ...book, openingLine: '', quotations: (book.quotations || []).map(({ text, cloze, ...rest }) => rest) })));
   if (/\bsizes="auto"/i.test(text)) failures.push(fileName + ' contains sizes="auto"');
   // Exam specifications change; the site does not claim to track them.
   for (const board of ['aqa', 'edexcel', 'eduqas', 'wjec', ' ocr ']) {

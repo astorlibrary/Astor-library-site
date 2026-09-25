@@ -21,11 +21,11 @@ module.exports = [
       { label: "Chronicles and theatre", text: "Shakespeare drew on Holinshed, Edward Hall and the anonymous play The Famous Victories of Henry the Fifth." },
     ],
     movements: [
-      { label: "Claim", title: "A war is made to sound lawful", body: "Canterbury’s account of Salic law gives Henry the answer he wants, and in the scene before, the Church has been worrying about a bill that would take away its lands. The Dauphin’s gift of tennis balls then lets the proposed invasion be presented as an answer to personal insult as well as dynastic right." },
-      { label: "Departure", title: "The crown severs old loyalties", body: "Henry exposes Cambridge, Scroop and Grey before they can assassinate him, and sends all three to death. In Eastcheap, Falstaff dies offstage and Pistol, Nym and Bardolph leave for France, carrying the remains of Prince Hal’s earlier world into the king’s war." },
-      { label: "Harfleur", title: "Eloquence turns from fellowship to terror", body: "‘Once more unto the breach’ creates a shared martial body out of tired soldiers. When Harfleur still resists, Henry’s next speech threatens rape, infanticide and indiscriminate destruction, forcing the audience to hear what conquest may require." },
-      { label: "Agincourt", title: "The king walks among those who must fight", body: "Disguised on the eve of battle, Henry hears Bates and Williams question how much of a soldier’s death belongs on a king’s conscience. By morning he has answered fear with the Saint Crispin’s Day speech; the victory that follows is accompanied by the order to kill French prisoners." },
-      { label: "Settlement", title: "A marriage closes the campaign, not the history", body: "The Treaty of Troyes recognises Henry as heir to France and makes Katherine part of the settlement. The Epilogue immediately breaks the triumphal frame: their son will lose France and England will descend into the conflicts dramatised in the Henry VI plays." },
+      { label: "Claim", title: "The claim to France", body: "Canterbury’s account of Salic law gives Henry the answer he wants, and in the scene before, the Church has been worrying about a bill that would take away its lands. The Dauphin’s gift of tennis balls then lets the proposed invasion be presented as an answer to personal insult as well as dynastic right." },
+      { label: "Departure", title: "The traitors and Falstaff’s death", body: "Henry exposes Cambridge, Scroop and Grey before they can assassinate him, and sends all three to death. In Eastcheap, Falstaff dies offstage and Pistol, Nym and Bardolph leave for France, carrying the remains of Prince Hal’s earlier world into the king’s war." },
+      { label: "Harfleur", title: "Harfleur", body: "‘Once more unto the breach’ creates a shared martial body out of tired soldiers. When Harfleur still resists, Henry’s next speech threatens rape, infanticide and indiscriminate destruction, forcing the audience to hear what conquest may require." },
+      { label: "Agincourt", title: "The night before Agincourt", body: "Disguised on the eve of battle, Henry hears Bates and Williams question how much of a soldier’s death belongs on a king’s conscience. By morning he has answered fear with the Saint Crispin’s Day speech; the victory that follows is accompanied by the order to kill French prisoners." },
+      { label: "Settlement", title: "The wooing of Katherine", body: "The Treaty of Troyes recognises Henry as heir to France and makes Katherine part of the settlement. The Epilogue immediately breaks the triumphal frame: their son will lose France and England will descend into the conflicts dramatised in the Henry VI plays." },
     ],
     readings: [
       {
@@ -38,7 +38,7 @@ module.exports = [
       },
       {
         label: "Kingship",
-        title: "Public certainty, private argument",
+        title: "Public and private",
         paragraphs: [
           "Henry’s authority depends upon an extraordinary ability to change register. He can speak legal precision to ambassadors, violent prophecy to Harfleur, intimacy to his troops and plain awkwardness to Katherine. These are not ornamental speeches added to a fixed character. They are how the king wins consent and makes a shaky claim into a cause his army will fight for.",
           "At night before Agincourt, disguise removes the automatic obedience attached to his crown. Bates and Williams insist that ordinary men must answer for their own souls but leave Henry with a harder question about the cause in which they die. His long reply separates royal duty from private guilt; his following prayer reveals that the legitimacy of his father’s crown still troubles him. The scene makes leadership look less secure than it sounds in daylight.",
@@ -46,7 +46,7 @@ module.exports = [
       },
       {
         label: "Language",
-        title: "A nation heard in several accents",
+        title: "Four nations",
         paragraphs: [
           "The army called ‘English’ includes the Welsh Fluellen, the Irish Macmorris and the Scottish Jamy. Their accents can be used for cheap caricature, but the scene also exposes the labour required to imagine Britain as a single military nation. Fluellen’s persistent attention to ‘the disciplines of the wars’ offers a professional standard against which Pistol’s empty swagger can be measured.",
           "French is not merely the language of the defeated. Katherine’s lesson with Alice lets her test English words before she becomes part of an English treaty, and the wooing scene never grants Henry complete linguistic control. Jokes, mistranslations and pauses keep negotiation visible. What looks in political terms like possession can therefore remain, in performance, an encounter between people who do not fully share a language.",
@@ -54,9 +54,9 @@ module.exports = [
       },
     ],
     contexts: [
-      { label: "1599", title: "A play written beside a live campaign", body: "The fifth Chorus imagines a victorious English general returning from Ireland, almost certainly Robert Devereux, Earl of Essex. Essex departed in March 1599 and returned in disgrace that September, so the allusion catches a brief moment of public expectation. A play about an earlier French campaign was speaking to an audience watching another war unfold." },
-      { label: "Text", title: "The quarto and Folio do not tell precisely the same play", body: "The 1600 quarto is much shorter than the 1623 Folio, omitting the Choruses, the night-time debate and much else. Editors disagree over how the shorter text came into being, but modern editions normally take the Folio as their principal basis. Comparing the versions shows how strongly the Chorus and the common soldiers shape the play’s moral range." },
-      { label: "Performance", title: "Patriotism has never been the only way to stage it", body: "Henry V has repeatedly been recruited in wartime, most famously in Laurence Olivier’s 1944 film. Later productions and Kenneth Branagh’s 1989 film made mud, fatigue and grief harder to overlook. The text sustains both traditions because its ceremonies of national unity are repeatedly interrupted by the damage required to create them." },
+      { label: "1599", title: "Essex in Ireland", body: "The fifth Chorus imagines a victorious English general returning from Ireland, almost certainly Robert Devereux, Earl of Essex. Essex departed in March 1599 and returned in disgrace that September, so the allusion catches a brief moment of public expectation. A play about an earlier French campaign was speaking to an audience watching another war unfold." },
+      { label: "Text", title: "Quarto and Folio", body: "The 1600 quarto is much shorter than the 1623 Folio, omitting the Choruses, the night-time debate and much else. Editors disagree over how the shorter text came into being, but modern editions normally take the Folio as their principal basis. Comparing the versions shows how strongly the Chorus and the common soldiers shape the play’s moral range." },
+      { label: "Performance", title: "Productions", body: "Henry V has repeatedly been recruited in wartime, most famously in Laurence Olivier’s 1944 film. Later productions and Kenneth Branagh’s 1989 film made mud, fatigue and grief harder to overlook. The text sustains both traditions because its ceremonies of national unity are repeatedly interrupted by the damage required to create them." },
     ],
     characters: [
       { name: "Henry V", body: "A newly established king whose command of language can unite an army, intimidate a town and conceal unresolved questions about legitimacy and responsibility." },
@@ -99,16 +99,16 @@ module.exports = [
       { label: "1422–71", text: "The trilogy compresses almost fifty years, from Henry V’s death to the Yorkist victory and the murder of Henry VI." },
     ],
     movements: [
-      { label: "Part 1", title: "The French conquests begin to disappear", body: "The child Henry inherits his father’s crowns while English commanders try to hold France against Charles and Joan la Pucelle. Talbot becomes the emblem of a heroic order that York and Somerset’s quarrel fatally fails to support." },
-      { label: "Part 1 to Part 2", title: "A marriage carries the next struggle into court", body: "Suffolk arranges Henry’s marriage to Margaret of Anjou and plans to govern through her. Gloucester’s fall, Suffolk’s influence and Winchester’s ambition leave the gentle king surrounded by people who understand power better than he does." },
-      { label: "Part 2", title: "Rebellion rehearses the coming civil war", body: "York encourages Jack Cade’s rising while keeping his own claim at a distance. Cade’s assault on literacy, law and hierarchy produces a violent counterfeit of political reform; when York returns from Ireland, aristocratic rebellion replaces popular revolt." },
-      { label: "Part 3", title: "The crown changes hands faster than loyalty can follow", body: "Henry agrees that York’s heirs may succeed him, disinheriting his own son. Margaret raises an army, York is killed, Edward wins at Towton and becomes king, and Warwick’s break with Edward restores Henry only briefly." },
-      { label: "Part 3", title: "The war ends by preparing another tragedy", body: "Warwick falls at Barnet and Margaret’s son is killed after Tewkesbury. Richard of Gloucester murders Henry in the Tower, then turns towards the throne; the Yorkist victory closes the trilogy but opens the path to Richard III." },
+      { label: "Part 1", title: "Losing France", body: "The child Henry inherits his father’s crowns while English commanders try to hold France against Charles and Joan la Pucelle. Talbot becomes the emblem of a heroic order that York and Somerset’s quarrel fatally fails to support." },
+      { label: "Part 1 to Part 2", title: "Margaret at court", body: "Suffolk arranges Henry’s marriage to Margaret of Anjou and plans to govern through her. Gloucester’s fall, Suffolk’s influence and Winchester’s ambition leave the gentle king surrounded by people who understand power better than he does." },
+      { label: "Part 2", title: "Cade’s rebellion", body: "York encourages Jack Cade’s rising while keeping his own claim at a distance. Cade’s assault on literacy, law and hierarchy produces a violent counterfeit of political reform; when York returns from Ireland, aristocratic rebellion replaces popular revolt." },
+      { label: "Part 3", title: "The crown changes hands", body: "Henry agrees that York’s heirs may succeed him, disinheriting his own son. Margaret raises an army, York is killed, Edward wins at Towton and becomes king, and Warwick’s break with Edward restores Henry only briefly." },
+      { label: "Part 3", title: "Towards Richard III", body: "Warwick falls at Barnet and Margaret’s son is killed after Tewkesbury. Richard of Gloucester murders Henry in the Tower, then turns towards the throne; the Yorkist victory closes the trilogy but opens the path to Richard III." },
     ],
     readings: [
       {
         label: "Division",
-        title: "England loses France before it loses itself",
+        title: "England and France",
         paragraphs: [
           "Part 1 explains military defeat through political fracture. The opening funeral praises Henry V as if one commanding body held the nation together; almost immediately, messengers report losses caused by shortage, delay and quarrelling leaders. Talbot’s death at Bordeaux is therefore more than a battlefield reverse. York and Somerset’s refusal to reinforce him makes faction visible as a form of national self-harm.",
           "By Parts 2 and 3, the enemy is no longer safely foreign. The same titles, genealogies and appeals to honour are used by English speakers against one another, while victories alter possession without establishing consent. The trilogy’s repeated entrances from battle create a rhythm of unstable news: every triumph is temporary because force can seize the crown but cannot make its history undisputed.",
@@ -116,7 +116,7 @@ module.exports = [
       },
       {
         label: "Henry",
-        title: "A good man in an office that goodness cannot fill",
+        title: "Henry VI as king",
         paragraphs: [
           "Henry’s instinct is to pray, reconcile and forgive. Those qualities are not treated as worthless: amid political calculation and revenge, his pity can sound like the only language not already corrupted. Yet a king’s withdrawal is never private. When Henry leaves rule to favourites and rival nobles, his aversion to conflict gives conflict room to grow.",
           "Part 3 makes the contradiction unbearable. Henry envies the shepherd’s life while fathers and sons die for his title, and when he disinherits Prince Edward to buy peace, he breaks faith again. The trilogy does not simply ask whether Henry is weak. Shakespeare shows a king whose holiness becomes negligence, in a country that depends on his judgement.",
@@ -124,7 +124,7 @@ module.exports = [
       },
       {
         label: "Margaret",
-        title: "From diplomatic prize to maker of history",
+        title: "Margaret of Anjou’s rise",
         paragraphs: [
           "Margaret enters near the end of Part 1 as a captive whom Suffolk selects for Henry and desires for himself. In Part 2 she learns the machinery of favour, alliance and removal at the English court. The men around her attack her as a woman and a Frenchwoman, while depending on the alliance her marriage brought.",
           "In Part 3 she commands armies, preserves her son’s claim and subjects York to a deliberately theatrical revenge. The paper crown and the cloth stained with Rutland’s blood make cruelty into spectacle, but York’s attack on her as a ‘tiger’s heart wrapped in a woman’s hide’ also shows how female military authority is made to seem unnatural. Her ferocity should be read beside the killings committed and celebrated by men, not outside them.",
@@ -132,9 +132,9 @@ module.exports = [
       },
     ],
     contexts: [
-      { label: "Early career", title: "The trilogy was not necessarily written in story order", body: "The plays now numbered 1, 2 and 3 acquired those familiar titles in the First Folio. The earlier printed versions of Parts 2 and 3 were called The First Part of the Contention and The True Tragedy of Richard Duke of York. Many scholars think those plays came first and that Part 1 was added as a successful story’s prequel." },
-      { label: "Authorship", title: "‘Shakespeare’ does not mean a solitary manuscript", body: "Scholarly work has long detected more than one dramatist, most confidently in Part 1, where Thomas Nashe is often suggested for the Talbot material. Some modern editions also attribute sections of Parts 2 and 3 to Christopher Marlowe or other writers. The evidence is real but its exact division remains contested, so a responsible page should acknowledge collaboration without presenting one disputed map as fact." },
-      { label: "History", title: "Chronicles that compress decades", body: "Hall’s Union and Holinshed’s Chronicles supplied much of the historical narrative. The dramatists compress dates, ages and relationships, and the rose-picking in the Temple Garden is invented; the name ‘Wars of the Roses’ came much later. What matters onstage is the accumulating logic: neglected grievances become badges, badges become armies, and memory becomes a reason to kill." },
+      { label: "Early career", title: "Order of composition", body: "The plays now numbered 1, 2 and 3 acquired those familiar titles in the First Folio. The earlier printed versions of Parts 2 and 3 were called The First Part of the Contention and The True Tragedy of Richard Duke of York. Many scholars think those plays came first and that Part 1 was added as a successful story’s prequel." },
+      { label: "Authorship", title: "Authorship", body: "Scholarly work has long detected more than one dramatist, most confidently in Part 1, where Thomas Nashe is often suggested for the Talbot material. Some modern editions also attribute sections of Parts 2 and 3 to Christopher Marlowe or other writers. The evidence is real but its exact division remains contested, so a responsible page should acknowledge collaboration without presenting one disputed map as fact." },
+      { label: "History", title: "The chronicles", body: "Hall’s Union and Holinshed’s Chronicles supplied much of the historical narrative. The dramatists compress dates, ages and relationships, and the rose-picking in the Temple Garden is invented; the name ‘Wars of the Roses’ came much later. What matters onstage is the accumulating logic: neglected grievances become badges, badges become armies, and memory becomes a reason to kill." },
     ],
     characters: [
       { name: "Henry VI", body: "A devout and contemplative king who dislikes coercion but cannot escape the political consequences of surrendering judgment to stronger wills." },
@@ -177,10 +177,10 @@ module.exports = [
       { label: "1623", text: "Henry VIII was first printed in the First Folio, where it appears as the last of the histories." },
     ],
     movements: [
-      { label: "Buckingham", title: "The first fall establishes the rules of court", body: "Buckingham attacks Wolsey’s ambition and is swiftly arrested for treason on his surveyor’s testimony. Queen Katherine questions both the case and Wolsey’s taxation, but Henry accepts the machinery that condemns the duke." },
-      { label: "Anne", title: "A masque becomes a political beginning", body: "Henry meets Anne Bullen at Wolsey’s feast and later grants her the title Marchioness of Pembroke. Her sympathy for Katherine sits beside her own advance, making the movement from lady-in-waiting to future queen deliberately uneasy." },
-      { label: "Katherine", title: "Katherine walks out of the court", body: "At Blackfriars, Katherine appeals directly to Henry, challenges Wolsey and walks out before the hearing can proceed. Her marriage is nevertheless annulled, and the public world moves towards Anne’s coronation." },
-      { label: "Wolsey", title: "The keeper of secrets is undone by papers", body: "An inventory of Wolsey’s immense wealth and a letter revealing his double dealing reach the king by accident. Stripped of office, Wolsey recognises how completely he placed ambition and royal favour before spiritual service." },
+      { label: "Buckingham", title: "Buckingham’s fall", body: "Buckingham attacks Wolsey’s ambition and is swiftly arrested for treason on his surveyor’s testimony. Queen Katherine questions both the case and Wolsey’s taxation, but Henry accepts the machinery that condemns the duke." },
+      { label: "Anne", title: "The masque", body: "Henry meets Anne Bullen at Wolsey’s feast and later grants her the title Marchioness of Pembroke. Her sympathy for Katherine sits beside her own advance, making the movement from lady-in-waiting to future queen deliberately uneasy." },
+      { label: "Katherine", title: "Katherine’s trial", body: "At Blackfriars, Katherine appeals directly to Henry, challenges Wolsey and walks out before the hearing can proceed. Her marriage is nevertheless annulled, and the public world moves towards Anne’s coronation." },
+      { label: "Wolsey", title: "Wolsey’s fall", body: "An inventory of Wolsey’s immense wealth and a letter revealing his double dealing reach the king by accident. Stripped of office, Wolsey recognises how completely he placed ambition and royal favour before spiritual service." },
       { label: "Elizabeth", title: "The christening of Elizabeth", body: "After Henry protects Cranmer from his council enemies, the archbishop baptises Anne’s daughter. His prophecy carries the story beyond the play, praising Elizabeth and then James I, while the losses that made the birth possible remain close behind." },
     ],
     readings: [
@@ -194,7 +194,7 @@ module.exports = [
       },
       {
         label: "Falling",
-        title: "Farewell speeches outlast official verdicts",
+        title: "Farewell speeches",
         paragraphs: [
           "Buckingham, Katherine and Wolsey are each removed by structures of power they cannot finally resist. Once condemned or displaced, however, they receive unusually spacious scenes in which to interpret what has happened. Their language slows the forward motion of state business and replaces the court’s charge sheet with memory, self-knowledge and judgment.",
           "The three falls are not morally identical. Buckingham maintains innocence, Katherine defends faithful service, and Wolsey recognises the ambition through which he harmed others. Reading the speeches together prevents the play from becoming a simple procession of victims. Their last speeches show what a fallen man can see once his rank has gone, and whether a fine repentance makes up for a career of bullying.",
@@ -202,7 +202,7 @@ module.exports = [
       },
       {
         label: "Succession",
-        title: "Women bear the future and pay for its uncertainty",
+        title: "Katherine and Anne",
         paragraphs: [
           "Katherine’s marriage is discussed as a problem because it has produced no surviving son, though the play gives her the clearest moral authority at court. She speaks for taxpayers, questions witnesses and insists upon the history of her marriage. The state treats her body as a failed route to succession while the drama gives her words an afterlife stronger than the judgment against her.",
           "Anne’s relative silence is therefore significant. She is pitied, promoted, crowned and delivered of a daughter within a public story largely spoken by others. At the baptism, Cranmer converts the baby’s unexpected sex into providential promise. The prophecy honours Elizabeth, but it also reveals how retrospect changes value: the daughter who disappoints immediate hopes becomes the reason this whole sequence can be presented as national destiny.",
@@ -210,9 +210,9 @@ module.exports = [
       },
     ],
     contexts: [
-      { label: "Collaboration", title: "The play belongs to Shakespeare and Fletcher", body: "Since the nineteenth century, scholars have identified marked changes in metre, vocabulary and dramatic habit across the play. Exact scene divisions remain open to argument, but collaborative authorship with John Fletcher is now the prevailing view. The First Folio’s inclusion of the work among Shakespeare’s histories and its collaborative making are compatible facts." },
-      { label: "Playhouse", title: "Its first spectacular production destroyed the Globe", body: "During a performance on 29 June 1613, wadding from a cannon used for Henry’s entrance lodged in the thatch. The Globe burned to the ground in roughly an hour. Contemporary accounts stress both the production’s extraordinary pomp and the absence of serious injury, giving the play an unusually vivid first-performance history." },
-      { label: "Memory", title: "Tudor history was also Stuart succession politics", body: "The writers drew chiefly on Holinshed, with material also associated with John Stow and John Speed. By 1613, Elizabeth had been dead for a decade and James I occupied the throne. So Cranmer’s prophecy looks back to Elizabeth’s reign and forward to James, and presents a disputed marriage and the birth of a girl as a smooth national story." },
+      { label: "Collaboration", title: "Shakespeare and Fletcher", body: "Since the nineteenth century, scholars have identified marked changes in metre, vocabulary and dramatic habit across the play. Exact scene divisions remain open to argument, but collaborative authorship with John Fletcher is now the prevailing view. The First Folio’s inclusion of the work among Shakespeare’s histories and its collaborative making are compatible facts." },
+      { label: "Playhouse", title: "The Globe fire", body: "During a performance on 29 June 1613, wadding from a cannon used for Henry’s entrance lodged in the thatch. The Globe burned to the ground in roughly an hour. Contemporary accounts stress both the production’s extraordinary pomp and the absence of serious injury, giving the play an unusually vivid first-performance history." },
+      { label: "Memory", title: "Tudor history and Stuart politics", body: "The writers drew chiefly on Holinshed, with material also associated with John Stow and John Speed. By 1613, Elizabeth had been dead for a decade and James I occupied the throne. So Cranmer’s prophecy looks back to Elizabeth’s reign and forward to James, and presents a disputed marriage and the birth of a girl as a smooth national story." },
     ],
     characters: [
       { name: "Henry VIII", body: "A commanding but difficult centre: capable of correcting abuses and protecting Cranmer, yet willing to trust destructive evidence and let desire take the language of conscience." },
@@ -258,13 +258,13 @@ module.exports = [
       { label: "Claim", title: "France challenges John in Arthur’s name", body: "A French ambassador demands the crown for Arthur, son of John’s elder brother Geoffrey. John refuses, while his mother Eleanor privately admits that possession supports him more firmly than right." },
       { label: "Angers", title: "A marriage at Angers", body: "After an indecisive battle, the citizens of Angers will not choose between John and Philip of France. Blanche of Castile is married to the Dauphin Louis, and territory changes hands so that a political marriage can achieve what combat has not." },
       { label: "Rome", title: "Pandulph breaks the wedding-day peace", body: "The papal legate excommunicates John for rejecting Rome’s choice of Archbishop of Canterbury and orders France to resume the war. Blanche and Louis discover that their new marriage cannot protect them from the loyalties imposed by church and crown." },
-      { label: "Arthur", title: "The command that is withdrawn still kills", body: "John hints that Hubert should remove Arthur, then recoils when he thinks the murder has damaged him politically. Hubert spares the boy, but Arthur dies while attempting to escape; the nobles read the body as proof of the king’s guilt." },
-      { label: "Invasion", title: "The kingdom survives the king", body: "English nobles join Louis, John submits to the papal legate and the Bastard tries to hold resistance together. Warned that Louis plans to kill his English allies, the nobles return; John dies after being poisoned, and Prince Henry succeeds him as the French withdraw." },
+      { label: "Arthur", title: "Arthur’s death", body: "John hints that Hubert should remove Arthur, then recoils when he thinks the murder has damaged him politically. Hubert spares the boy, but Arthur dies while attempting to escape; the nobles read the body as proof of the king’s guilt." },
+      { label: "Invasion", title: "John’s death", body: "English nobles join Louis, John submits to the papal legate and the Bastard tries to hold resistance together. Warned that Louis plans to kill his English allies, the nobles return; John dies after being poisoned, and Prince Henry succeeds him as the French withdraw." },
     ],
     readings: [
       {
         label: "Commodity",
-        title: "The Bastard learns the market price of honour",
+        title: "The Bastard and commodity",
         paragraphs: [
           "At Angers, the Bastard watches two kings abandon their declared principles once marriage and territory make peace profitable. His soliloquy names ‘Commodity’—self-interest—as the force that turns the world. The speech is exhilarating because he sees through public language, but its final turn is not morally clean: having little fortune, he decides to worship advantage too.",
           "That choice gives his later loyalty weight. The Bastard continues to mock pretension, yet Arthur’s death makes service to John ethically difficult and the French invasion makes desertion dangerous. By the final act he speaks with a national authority the king has lost. A production must decide whether this is moral growth, hard political necessity or the success of another powerful performance.",
@@ -272,7 +272,7 @@ module.exports = [
       },
       {
         label: "Arthur",
-        title: "A child’s body becomes political evidence",
+        title: "Arthur’s body",
         paragraphs: [
           "Arthur is surrounded by adults who speak for his right: Constance lives for his inheritance, France takes it up as a cause, and John sees it as a threat. In the scene with Hubert, the boy must speak for himself. His appeals do not contest dynastic law; they use intimacy, sight and touch to make the contemplated violence impossible to keep abstract.",
           "Hubert relents, but mercy does not restore safety. Arthur’s attempt to escape ends in a fall, and the nobles encounter his body without knowing what the audience knows. Politically, intention and fact become indistinguishable: John wanted the death, tried to conceal the wish and profits from no correction. The play makes a dead child both an irreducible loss and an object others immediately turn into proof.",
@@ -280,7 +280,7 @@ module.exports = [
       },
       {
         label: "Legitimacy",
-        title: "‘Strong possession’ is not the same as right",
+        title: "Possession and right",
         paragraphs: [
           "Eleanor’s opening aside gives away the constitutional problem: John’s strongest title is that he already rules. The drama then tests competing ways of making authority visible—genealogy, victory, coronation, oath, papal judgment and the consent of a city. None is sufficient on its own, and several can be bought or reversed.",
           "John is most forceful while answering the first challenge and weakest after Arthur’s disappearance exposes the insecurity beneath his rule. The Bastard travels in the opposite direction, beginning without legitimate name or land and ending as the clearest voice of national resistance. The contrast does not solve the succession question; it separates inherited right from the capacity to command belief.",
@@ -288,9 +288,9 @@ module.exports = [
       },
     ],
     contexts: [
-      { label: "Source", title: "Shakespeare rewrote an already theatrical king", body: "The anonymous Troublesome Reign of King John shares the plot’s unusual sequence and is usually treated as the earlier play, though the relationship has been debated. Shakespeare also drew upon chronicle traditions associated with Holinshed and John Foxe, reducing the source play’s more insistent anti-Catholic argument while preserving John’s confrontation with Rome." },
-      { label: "Magna Carta", title: "The event modern audiences expect is absent", body: "John sealed Magna Carta in 1215 after rebellion by his barons, but the play gives their defection a different cause: Arthur’s apparent murder. For an Elizabethan dramatist, staging subjects compelling a monarch to accept limits was politically difficult; just as importantly, the source tradition found dynastic succession and papal conflict more theatrically urgent." },
-      { label: "Afterlife", title: "A former stage favourite became a rarity", body: "King John’s pageantry and religious politics supported regular revivals in the eighteenth and nineteenth centuries. Herbert Beerbohm Tree’s spectacular 1899 production yielded a short surviving film fragment often described as the earliest Shakespeare film. As spectacle faded from fashion the play was staged less often, though recent productions have rediscovered its abrupt, transactional politics." },
+      { label: "Source", title: "The Troublesome Reign", body: "The anonymous Troublesome Reign of King John shares the plot’s unusual sequence and is usually treated as the earlier play, though the relationship has been debated. Shakespeare also drew upon chronicle traditions associated with Holinshed and John Foxe, reducing the source play’s more insistent anti-Catholic argument while preserving John’s confrontation with Rome." },
+      { label: "Magna Carta", title: "No Magna Carta", body: "John sealed Magna Carta in 1215 after rebellion by his barons, but the play gives their defection a different cause: Arthur’s apparent murder. For an Elizabethan dramatist, staging subjects compelling a monarch to accept limits was politically difficult; just as importantly, the source tradition found dynastic succession and papal conflict more theatrically urgent." },
+      { label: "Afterlife", title: "Stage history", body: "King John’s pageantry and religious politics supported regular revivals in the eighteenth and nineteenth centuries. Herbert Beerbohm Tree’s spectacular 1899 production yielded a short surviving film fragment often described as the earliest Shakespeare film. As spectacle faded from fashion the play was staged less often, though recent productions have rediscovered its abrupt, transactional politics." },
     ],
     characters: [
       { name: "King John", body: "A king who holds the crown and has no clear title to it. His attempt to secure the crown by removing Arthur accelerates its collapse." },
@@ -334,16 +334,16 @@ module.exports = [
       { label: "A year and a day", text: "The four proposed marriages are postponed while the men undertake separate tests, leaving their promises outside the time covered by the play." },
     ],
     movements: [
-      { label: "The oath", title: "Navarre builds an academy against ordinary life", body: "The King, Longaville and Dumaine sign away sleep, food and women for three years; Berowne points out that the rules are impossible before signing too. Costard’s arrest for seeing Jaquenetta immediately shows desire surviving beneath the decree." },
-      { label: "The embassy", title: "The women are kept outside—and take command there", body: "The Princess arrives to recover Aquitaine for her father but must camp beyond the court because of the men’s vow. Each man picks out one woman, and the negotiation over Aquitaine becomes four uneven courtships." },
-      { label: "The letters", title: "Private performances become public evidence", body: "Costard confuses Armado’s letter to Jaquenetta with Berowne’s poem to Rosaline. In the park, each lord hides and overhears the next confessing love until Berowne, last to be exposed, argues that women’s eyes are the books from which true knowledge comes." },
-      { label: "The Muscovites", title: "The women rewrite the men’s disguise", body: "Warned that the men will arrive masked as Russians, the women exchange favours so that each suitor addresses the wrong person. When the lords return as themselves, the women make them confront how little their elaborate performance recognised its supposed beloved." },
-      { label: "The ending", title: "Death changes the measure of every promise", body: "The Nine Worthies pageant is mocked until Marcade brings news that the Princess’s father has died. The women leave, assigning the men a year of service, solitude or care; spring and winter sing, but the marriages remain beyond the play." },
+      { label: "The oath", title: "Navarre’s academy", body: "The King, Longaville and Dumaine sign away sleep, food and women for three years; Berowne points out that the rules are impossible before signing too. Costard’s arrest for seeing Jaquenetta immediately shows desire surviving beneath the decree." },
+      { label: "The embassy", title: "The women outside the gates", body: "The Princess arrives to recover Aquitaine for her father but must camp beyond the court because of the men’s vow. Each man picks out one woman, and the negotiation over Aquitaine becomes four uneven courtships." },
+      { label: "The letters", title: "The four men exposed", body: "Costard confuses Armado’s letter to Jaquenetta with Berowne’s poem to Rosaline. In the park, each lord hides and overhears the next confessing love until Berowne, last to be exposed, argues that women’s eyes are the books from which true knowledge comes." },
+      { label: "The Muscovites", title: "The Muscovite masque", body: "Warned that the men will arrive masked as Russians, the women exchange favours so that each suitor addresses the wrong person. When the lords return as themselves, the women make them confront how little their elaborate performance recognised its supposed beloved." },
+      { label: "The ending", title: "Marcadé’s news", body: "The Nine Worthies pageant is mocked until Marcade brings news that the Princess’s father has died. The women leave, assigning the men a year of service, solitude or care; spring and winter sing, but the marriages remain beyond the play." },
     ],
     readings: [
       {
         label: "Language",
-        title: "A great feast of words—and the scraps",
+        title: "Wordplay",
         paragraphs: [
           "Nearly everyone in the play wants language to prove rank, learning or emotional distinction. Holofernes shows off his Latin and his corrections, Armado writes love letters in heroic prose, and the lords compose sonnets that make private feeling sound conventionally exquisite. Moth, Costard and the women hear the gaps between those performances and the realities they claim to master.",
           "The comedy is not simply against difficult words. Berowne and Rosaline can use wit to think quickly and to defend themselves, and the final songs achieve force through precise verbal pattern. The dividing line falls between language that attends to another person and language that treats the listener as an audience for the speaker’s cleverness. That distinction makes delivery, pace and genuine listening central performance choices.",
@@ -351,7 +351,7 @@ module.exports = [
       },
       {
         label: "Reading",
-        title: "The women control interpretation",
+        title: "The women",
         paragraphs: [
           "Navarre’s men begin by writing the law and assuming they can later write its exceptions. The Princess and her ladies occupy a less comfortable position outside the court, yet they become the better readers: they identify evasions, exchange love tokens, read the Muscovite performance in advance and refuse to accept costume as inward truth.",
           "Their superiority is not based on indifference to desire. Rosaline is engaged by Berowne, and the Princess’s final condition leaves open the possibility of return. What the women reject is a courtship whose language has not yet been tested by time or service. The women judge the poems by the men who wrote them.",
@@ -367,9 +367,9 @@ module.exports = [
       },
     ],
     contexts: [
-      { label: "Date and print", title: "A court performance enters the public book trade", body: "The 1598 quarto says the play had been presented before Elizabeth I during the previous Christmas season, while a poem from the same year also refers to seeing it in a public theatre. Its language and verse connect it to Shakespeare’s mid-1590s comedies, though no record fixes a first performance." },
-      { label: "Culture", title: "Borrowed forms, no borrowed plot", body: "The imagined academy, visiting embassy, Muscovite masque and Nine Worthies pageant draw on aristocratic education and royal entertainment. Shakespeare also uses the fashionable vocabulary of sonnet sequences and courtly compliment. The comedy comes from watching imported forms meet bodies, business and feelings they cannot organise." },
-      { label: "Performance", title: "Clarity depends upon social relations, not paraphrase", body: "The play’s density once helped earn it a reputation as a learned early experiment, but modern performance has restored its emotional precision. Directors often give each courtship a distinct rhythm and make the subplots part of the same struggle over status and speech. The ending works best when the news of the King’s death leaves the comedy in place and shows what its games failed to prove." },
+      { label: "Date and print", title: "The 1598 quarto", body: "The 1598 quarto says the play had been presented before Elizabeth I during the previous Christmas season, while a poem from the same year also refers to seeing it in a public theatre. Its language and verse connect it to Shakespeare’s mid-1590s comedies, though no record fixes a first performance." },
+      { label: "Culture", title: "Sources", body: "The imagined academy, visiting embassy, Muscovite masque and Nine Worthies pageant draw on aristocratic education and royal entertainment. Shakespeare also uses the fashionable vocabulary of sonnet sequences and courtly compliment. The comedy comes from watching imported forms meet bodies, business and feelings they cannot organise." },
+      { label: "Performance", title: "Language", body: "The play’s density once helped earn it a reputation as a learned early experiment, but modern performance has restored its emotional precision. Directors often give each courtship a distinct rhythm and make the subplots part of the same struggle over status and speech. The ending works best when the news of the King’s death leaves the comedy in place and shows what its games failed to prove." },
     ],
     characters: [
       { name: "Berowne", body: "The oath’s sharpest critic and most gifted breaker. His wit detects other people’s pretence but must learn that exposing folly does not exempt him from it." },

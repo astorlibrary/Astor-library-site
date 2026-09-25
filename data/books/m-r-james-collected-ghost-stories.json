@@ -47,7 +47,7 @@
     {
       "id": "antiquary-1904",
       "label": "Ghost Stories of an Antiquary (1904)",
-      "title": "Eight stories, and the shape of all the rest",
+      "title": "Canon Alberic, the whistle and the other first stories",
       "summary": "The first volume sets the method: a scholar, an object, a piece of research, and something that arrives because the research succeeded. Canon Alberic's scrap-book, the picture that moves between viewings, the whistle on the Suffolk coast, the thing in Abbot Thomas's well — all of it is here in the first eight.",
       "scenes": [
         {
@@ -144,7 +144,7 @@
     {
       "id": "on-the-ghost-story",
       "label": "James on the ghost story",
-      "title": "How to do it, by the man who did it",
+      "title": "James’s rules for the ghost story",
       "summary": "Seven short pieces set out the rules: a quiet, familiar setting, recognisable characters, no occult jargon, and a ghost that means harm. He also says the reader should be given a window of escape and then have it closed. They are the clearest statement anyone in the form has made about their own method.",
       "scenes": [
         {
@@ -334,37 +334,37 @@
   "themes": [
     {
       "id": "knowledge",
-      "name": "Curiosity, punished professionally",
+      "name": "Curiosity",
       "summary": "Nobody in these stories is destroyed for wickedness. They are destroyed for doing their jobs well: cataloguing, translating, excavating, buying at the right price. The learning is the fault.",
       "development": "The first story makes it an accident and the last make it a rule; by A Warning to the Curious the title says it outright."
     },
     {
       "id": "evidence",
-      "name": "Documents, and what they let out",
+      "name": "Documents",
       "summary": "A manuscript, a diary, a Latin inscription, a plan of a well: the plot always runs through a piece of paper that the scholar can read and the reader is shown.",
       "development": "James prints the evidence — ciphers, abbreviations, bad Latin — so that the reader does the research alongside the victim and reaches the answer at about the same time."
     },
     {
       "id": "fear",
-      "name": "Touch before sight",
+      "name": "Touch",
       "summary": "His frights are tactile far more often than visual: a hand under the pillow, hair, damp linen, something that is the wrong shape in the dark. Seeing it whole is nearly always withheld.",
       "development": "The 1904 stories reach their crisis by touch; the later ones extend the method to hearing, so that A Warning to the Curious is largely footsteps on shingle."
     },
     {
       "id": "religion",
-      "name": "Churches without much comfort",
+      "name": "Churches",
       "summary": "Cathedrals, abbeys, prayer-books and Templar graves fill the stories, and the church in them is an archive, never a refuge. Consecrated ground is where the dangerous things were put, on purpose.",
       "development": "The clergy in the stories are scholars first; when something is finally stopped it is by a rule of the thing's own, not by prayer."
     },
     {
       "id": "class",
-      "name": "Who is believed",
+      "name": "Belief",
       "summary": "The servants and villagers are right about the house, and the educated men in the armchairs are wrong. James was a conservative who gave the people without Latin the best information in every story.",
       "development": "Their warnings are ignored in the early stories and acted on far too late in the later ones, which is the only real moral progress in the book."
     },
     {
       "id": "nature",
-      "name": "East Anglia, exactly",
+      "name": "East Anglia",
       "summary": "Flat coast, shingle, martello towers, sea fog, gorse, a golf links. The landscapes are real and specific, and the horror is put down in them like a fence post.",
       "development": "The named places thicken as the stories go on, until A Warning to the Curious is effectively a walking route along the Suffolk coast with something behind you on it."
     }
@@ -372,13 +372,13 @@
   "techniques": [
     {
       "id": "frame-narrative",
-      "name": "The document produced",
+      "name": "Documents",
       "definition": "A story told through, or around, a manuscript, diary or letter that the narrator claims to have seen.",
       "inThisBook": "Almost every story arrives with paperwork attached: a diary, a catalogue entry, an inscription in bad Latin. The apparatus is a joke a scholar would enjoy and a device that makes the impossible part look checkable."
     },
     {
       "id": "ellipsis",
-      "name": "The thing half-seen",
+      "name": "Partial glimpses",
       "definition": "Withholding the full description of the horror.",
       "inThisBook": "The face of crumpled linen is a face and a fabric and nothing else; James says the man could not or would not tell what expression he read on it. The refusal is the effect."
     },
@@ -390,25 +390,25 @@
     },
     {
       "id": "landscape",
-      "name": "Real places, named",
+      "name": "Landscape",
       "definition": "Using real towns, coasts and buildings instead of invented Gothic ones.",
       "inThisBook": "Felixstowe behind the golf links, St Bertrand de Comminges, Viborg. James says in his preface which settings are real, and the answer is most of them."
     },
     {
       "id": "symbolic-objects",
-      "name": "The object that starts it",
+      "name": "The trigger object",
       "definition": "A small, purchasable thing that carries the whole plot.",
       "inThisBook": "A scrap-book, a mezzotint, a whistle, a runic slip, a crown. The horror is always attached to something that can be picked up, and usually to something that has been bought."
     },
     {
       "id": "dialect",
-      "name": "The servants' speech",
+      "name": "Servants’ dialect",
       "definition": "Writing out the pronunciation and idiom of the people who are not scholars.",
       "inThisBook": "The housekeeper's account of the marks on the door in Lost Hearts is set down exactly as she says it. It is where James puts his best comic writing and his most reliable information."
     },
     {
       "id": "gothic",
-      "name": "The old machinery, modernised",
+      "name": "Gothic conventions updated",
       "definition": "Inherited gothic furniture — tombs, abbeys, curses — operated in a recognisably modern world.",
       "inThisBook": "Trains, golf, hotel bills, magic lanterns and a Bradshaw sit beside Templar graves. The stories are set almost in the reader's present, which is why the medieval part bites."
     }
