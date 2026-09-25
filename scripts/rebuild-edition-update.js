@@ -51,7 +51,7 @@ const collectionCopy = {
     description: 'Astor editions of Skelton, More, Machiavelli, Marlowe, Webster and Milton, with material on Tudor poetry, humanism, drama, epic, print and political power.',
     kicker: 'Period',
     heading: 'Renaissance &amp; Early Modern.',
-    deck: 'Tudor verse, political thought, tragedy and epic: Skelton&rsquo;s poems, More&rsquo;s <em>Utopia</em>, Machiavelli&rsquo;s <em>The Prince</em>, Marlowe&rsquo;s <em>Doctor Faustus</em>, Webster&rsquo;s <em>The Duchess of Malfi</em>, Milton&rsquo;s <em>Paradise Lost</em> and the writings of Charles I. Most of them are about power: who holds it, and what it costs.'
+    deck: 'Tudor verse, political thought, tragedy and epic: Skelton&rsquo;s poems, More&rsquo;s <em>Utopia</em>, Machiavelli&rsquo;s <em>The Prince</em>, Marlowe&rsquo;s <em>Doctor Faustus</em>, Webster&rsquo;s <em>The Duchess of Malfi</em>, Milton&rsquo;s <em>Paradise Lost</em> and the writings of Charles I. Most of them are about power: who holds it, and how.'
   },
   'shakespeare/index.html': {
     title: 'Shakespeare Standard Editions, Scholarly Editions and Apocrypha | Astor Library',

@@ -104,7 +104,7 @@ const GAMES = [
     scope: 'book',
     blurb: 'Decide which theme a quotation is carrying.',
     deck: 'Read a quotation and pick the theme it carries.',
-    why: 'Most essays lose marks not for missing a theme but for attaching the wrong evidence to it. This is the drill for that specific habit.'
+    why: 'Essays more often lose marks for attaching the wrong evidence to a theme than for missing the theme. This is the drill for that specific habit.'
   },
   {
     slug: 'technique-spotter',
@@ -120,7 +120,7 @@ const GAMES = [
     scope: 'book',
     blurb: 'Identify a character from a description that never names them.',
     deck: 'Work out who is being described.',
-    why: 'It forces you to hold a character as a set of actions and functions rather than a name attached to a plot summary.'
+    why: 'It makes you think of a character as a set of actions and functions, not a name attached to a plot summary.'
   },
   {
     slug: 'order-the-plot',
