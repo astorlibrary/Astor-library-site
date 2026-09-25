@@ -116,7 +116,7 @@ const HEADER = `<header class="site-header">
 function openingPanel(book) {
   if (!book.openingLine) return null;
   return {
-    kind: 'It opens',
+    kind: 'Opening line',
     html: '<blockquote class="astor-feature-line">' + escapeHtml(book.openingLine) + '</blockquote>' +
       '<p class="astor-feature-note">The first sentence of ' + escapeHtml(book.title) + '.</p>'
   };
@@ -126,7 +126,7 @@ function placesPanel(book) {
   const places = (book.places || []).slice(0, 5);
   if (places.length < 4) return null;
   return {
-    kind: 'Where it happens',
+    kind: 'Places',
     html: '<ul class="astor-feature-list">' + places.map(place =>
       '<li><b>' + escapeHtml(place.name) + '</b>' + (place.note ? ' ' + escapeHtml(place.note) : '') + '</li>').join('') +
       '</ul><p class="astor-feature-note"><a href="/explore/map/?book=' + escapeHtml(book.slug) + '">See these on the map</a></p>'
@@ -137,7 +137,7 @@ function castPanel(book) {
   const cast = (book.characters || []).slice(0, 5);
   if (cast.length < 4) return null;
   return {
-    kind: 'Who to watch',
+    kind: 'Characters',
     html: '<ul class="astor-feature-list">' + cast.map(character =>
       '<li><b>' + escapeHtml(character.name) + '</b> ' + escapeHtml(character.role || '') + '</li>').join('') +
       '</ul><p class="astor-feature-note"><a href="/explore/characters/?book=' + escapeHtml(book.slug) + '">See how they connect</a></p>'
@@ -148,7 +148,7 @@ function yearPanel(book) {
   const events = (book.timeline || []).filter(entry => entry.year).slice(0, 4);
   if (events.length < 3) return null;
   return {
-    kind: 'The years around it',
+    kind: 'Dates',
     html: '<ul class="astor-feature-years">' + events.map(entry =>
       '<li><b>' + escapeHtml(String(entry.year)) + '</b> ' + escapeHtml(entry.label) + '</li>').join('') +
       '</ul><p class="astor-feature-note"><a href="/explore/timeline/?view=events&amp;mark=' + escapeHtml(book.slug) + '">See these dates among the other books</a></p>'
@@ -214,10 +214,10 @@ ${HEADER}
 
   ${featureBlock(book)}
 
-  <section class="section-title astor-marked" id="edition"><p class="kicker">Edition contents</p><h2>What the study edition contains.</h2><p>The complete text, with a summary for every scene or chapter, notes on the same page, essays on the context, the characters and themes set out, passage work and essay questions.</p></section>
-  <section class="timeline"><article class="edition-card new-edition"><img src="${escapeHtml(edition.image)}" alt="${escapeHtml(book.title)} Study Edition cover"><div><p class="year">Astor Study Edition</p><h2><em>${escapeHtml(book.title)}</em>, ${escapeHtml(book.author)}</h2><p>${escapeHtml(book.summary)}</p><p>Everything below this card is worked out on the page rather than kept for the book: the plot ${escapeHtml(stageWord)}, the characters and how they are connected, the themes with the evidence attached, ${quotationCount} quotations checked against ${escapeHtml(book.sourceText.label)}, the language, the context and four essay questions with a route through each.</p><div class="button-row"><a class="button primary" href="${escapeHtml(edition.buyUrl)}">Buy / view the Astor Study Edition</a></div></div></article></section>
+  <section class="section-title astor-marked" id="edition"><p class="kicker">Edition contents</p><h2>What the study edition contains</h2><p>The complete text, a summary of every scene or chapter, notes on the same page, essays on the context, characters and themes, passage work and essay questions.</p></section>
+  <section class="timeline"><article class="edition-card new-edition"><img src="${escapeHtml(edition.image)}" alt="${escapeHtml(book.title)} Study Edition cover"><div><p class="year">Astor Study Edition</p><h2><em>${escapeHtml(book.title)}</em>, ${escapeHtml(book.author)}</h2><p>${escapeHtml(book.summary)}</p><p>Below: the plot ${escapeHtml(stageWord)}, the characters and how they are connected, the themes, ${quotationCount} quotations, the language, the context and four essay questions with plans.</p><div class="button-row"><a class="button primary" href="${escapeHtml(edition.buyUrl)}">Buy / view the Astor Study Edition</a></div></div></article></section>
 
-  <section class="section-title astor-marked" id="sources"><p class="kicker">Go further</p><h2>Where the quotations come from.</h2><p>Every quotation on this page was located in ${escapeHtml(book.sourceText.label)} before it was published, and carries its ${escapeHtml(book.referenceStyle)}.${book.sourceText.note ? ' ' + escapeHtml(book.sourceText.note) : ''} The edition page for <em>${escapeHtml(book.title)}</em> holds the archives, theatre records and library catalogues behind its publication and performance history.</p></section>
+  <section class="section-title astor-marked" id="sources"><p class="kicker">Go further</p><h2>Sources</h2><p>Quotations are taken from the ${escapeHtml(book.sourceText.label)}, with the ${escapeHtml(book.referenceStyle)} for each.${book.sourceText.note ? ' ' + escapeHtml(book.sourceText.note) : ''} The <a href="${escapeHtml(book.href)}">edition page</a> lists the archives, theatre records and library catalogues used for the publication and performance history.</p></section>
   <section class="astor-context-grid">${relatedCards(book, titleFor)}</section>
 
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="${escapeHtml(book.href)}">${escapeHtml(book.title)}: the edition page</a><a href="/play/?book=${escapeHtml(book.slug)}">Revise ${escapeHtml(book.title)}</a><a href="/study/">All study editions</a><a href="/resources/">Free resources</a><a href="/explore/">Search the library <span aria-hidden="true">&rarr;</span></a></nav>

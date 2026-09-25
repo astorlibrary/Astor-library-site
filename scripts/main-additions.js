@@ -11,7 +11,7 @@ module.exports = [
     year: 'c. 1612–14',
     genre: 'Jacobean tragedy',
     editionKind: 'Complete play with summaries, notes, context and material for further study.',
-    deck: 'A young widow chooses to marry again, and the men who believe they own her life answer with surveillance, imprisonment and murder. Webster sets the Duchess’s constancy against Bosola’s compromised conscience and the destructive obsessions of Ferdinand and the Cardinal.',
+    deck: 'The widowed Duchess of Malfi secretly marries Antonio, her steward, and has three children by him. Her brothers, Ferdinand and the Cardinal, have forbidden her to marry again, and they pay Bosola to spy on her. John Webster’s tragedy was first acted by the King’s Men around 1613 and printed in 1623.',
     facts: [
       { label: 'c. 1612–14', text: 'Webster probably wrote the play in these years; the King’s Men performed it at the Blackfriars and the Globe.' },
       { label: '1623', text: 'Nicholas Okes printed the first edition for the bookseller John Waterson.' },
@@ -98,7 +98,7 @@ module.exports = [
     year: 'c. 1592–93',
     genre: 'Tragedy',
     editionKind: 'Complete play with summaries, notes, textual history and material for further study.',
-    deck: 'Faustus has mastered the recognised branches of university learning, but mastery has not satisfied him. He bargains away his soul for twenty-four years of service from Mephistopheles, then finds that limitless ambition can shrink into entertainment, evasion and fear.',
+    deck: 'Faustus, a scholar at Wittenberg, has read logic, medicine, law and divinity and is bored with all of them. He signs his soul over to Lucifer in his own blood in return for twenty-four years with Mephistopheles as his servant, and spends them mostly on tricks: pranks on the Pope, grapes out of season for a duchess, a sight of Helen of Troy.',
     facts: [
       { label: 'c. 1592–93', text: 'The play was probably being performed by the Admiral’s Men around these years, although its exact date remains disputed.' },
       { label: '1604 / 1616', text: 'The shorter A-text and substantially longer B-text preserve different early versions of the play.' },
@@ -185,7 +185,7 @@ module.exports = [
     year: '1594',
     genre: 'Narrative poem',
     editionKind: 'Complete poem with summaries, notes, Roman sources and material for further study.',
-    deck: 'A boast about Lucrece’s chastity sends Tarquin from the Roman camp to her home, where hospitality becomes the opening for sexual violence. Shakespeare gives far more space to the aftermath: testimony, imposed shame, the fall of Troy and the transformation of private catastrophe into revolt.',
+    deck: 'Collatine boasts in camp about his wife’s virtue, and Tarquin, the king’s son, rides to her house, is received as a guest, and rapes her in the night. Most of Shakespeare’s poem of 1594 comes after that: Lucrece’s long argument with herself, her letter to her husband, and her death, which leads to the expulsion of the kings from Rome.',
     facts: [
       { label: '1594', text: 'Richard Field printed the first quarto for John Harrison under the shorter title Lucrece.' },
       { label: '1,855 lines', text: 'The poem uses 265 seven-line rhyme-royal stanzas with the pattern ababbcc.' },
@@ -272,7 +272,7 @@ module.exports = [
     year: '1593',
     genre: 'Narrative poem',
     editionKind: 'Complete poem with summaries, notes, Ovidian context and material for further study.',
-    deck: 'Venus pulls the young hunter Adonis from his horse and tries every language of praise, argument and physical persuasion she possesses. His refusal makes the poem comic, uneasy and alert to consent; his death turns appetite into grief, metamorphosis and a dark prophecy about love.',
+    deck: 'Venus pulls the young Adonis off his horse and spends a summer’s day trying to make him love her. He wants to go hunting, and the next morning a boar kills him. It was the first work Shakespeare published, in 1593, and it was reprinted more often in his lifetime than anything else he wrote.',
     facts: [
       { label: '1593', text: 'Richard Field printed Shakespeare’s first published work, dedicated to the Earl of Southampton.' },
       { label: '1,194 lines', text: 'The poem uses 199 six-line stanzas rhyming ababcc.' },
@@ -359,7 +359,7 @@ module.exports = [
     year: '1850',
     genre: 'American romance',
     editionKind: 'Complete novel with chapter summaries, notes, historical context and material for further study.',
-    deck: 'Hester Prynne leaves prison carrying her infant daughter and wearing the scarlet A, but refuses to name Pearl’s father. Across seven years, Hawthorne follows public punishment, private guilt and revenge while refusing to let the letter keep one settled meaning.',
+    deck: 'In Puritan Boston in the 1640s, Hester Prynne is made to stand on the scaffold with her baby and to wear a scarlet A on her dress for the rest of her life. She will not say who the father is. The minister who urges her to name him is Arthur Dimmesdale, and her husband, who has arrived in the town that day under a false name, is watching from the crowd.',
     facts: [
       { label: '1850', text: 'Ticknor, Reed and Fields published the novel in Boston; Hawthorne called it “A Romance”.' },
       { label: '24 chapters', text: 'The main narrative follows the long introductory sketch “The Custom-House”.' },
@@ -446,7 +446,7 @@ module.exports = [
     year: '1667 / 1674',
     genre: 'Epic poem',
     editionKind: 'Complete poem with book summaries, notes, historical context and material for further study.',
-    deck: 'Milton’s epic begins after a war in Heaven and ends with two people walking out of the only home they have known. Cosmic rebellion, political argument, marriage, temptation, grief and the possibility of renewal are held within one immense blank-verse design.',
+    deck: 'Satan wakes in Hell after losing the war in Heaven and decides to take his revenge through God’s new creatures, Adam and Eve. Milton, blind by then, dictated the poem. It was published in ten books in 1667, and the second edition of 1674 divided it into twelve.',
     facts: [
       { label: '1667', text: 'The first edition arranged the poem in ten books.' },
       { label: '1674', text: 'Milton revised the ten-book poem into twelve books for the second edition.' },

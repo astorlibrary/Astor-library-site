@@ -48,7 +48,7 @@ const books = [
     image: 'Victorian Ghost Stories Main Cover.png',
     purchaseUrl: 'https://mybook.to/SzGnyfD',
     label: 'Annotated collection · 1844–1901',
-    deck: 'Eight complete stories, four poems and documentary material follow the Victorian supernatural from haunted houses and phantom coaches to séances, railway disasters and psychical research.',
+    deck: 'Elizabeth Gaskell was paid £10 for ‘The Old Nurse’s Story’, written for the Christmas number of Household Words in 1852. It opens this collection of eight Victorian ghost stories and four poems, which ends with Bram Stoker’s ‘The Judge’s House’, alongside documents from the séances and the Society for Psychical Research.',
     editionIncludes: [
       'Eight complete stories and four complete poems',
       'Explanatory notes and historical context',
@@ -84,7 +84,7 @@ const books = [
     image: 'The Yellow Paper and The Giant Wistaria Main Cover.png',
     purchaseUrl: 'https://mybook.to/J4dveV',
     label: 'Two stories · 1891–92',
-    deck: 'Gilman’s two stories appeared seven months apart in The New England Magazine; this edition prints them together and records the important differences among the surviving texts.',
+    deck: 'Charlotte Perkins Gilman’s two stories appeared in the New England Magazine seven months apart, ‘The Giant Wistaria’ in June 1891 and ‘The Yellow Wall-Paper’ in January 1892. One is a ghost story about an old colonial house; the other is about a woman shut in a nursery on her doctor-husband’s orders. The notes record where the surviving texts differ.',
     editionIncludes: [
       'Explanatory footnotes',
       'Historical and biographical context',
@@ -120,7 +120,7 @@ const books = [
     image: 'Oroonoko Main Cover.png',
     purchaseUrl: 'https://mybook.to/LYA4Ds',
     label: 'Novel · 1688',
-    deck: 'Behn’s narrative follows an African prince betrayed by an English slave-trading captain, transported to Surinam and repeatedly denied the freedom promised to him and Imoinda.',
+    deck: 'Oroonoko, an African prince, is tricked aboard an English ship, sold into slavery in Surinam and reunited there with Imoinda, the wife he thought was dead. Aphra Behn published the story in 1688 and claimed to have seen much of it herself, in the colony, as a young woman.',
     editionIncludes: [
       'Original explanatory notes throughout',
       'Story summaries and historical context',
@@ -156,7 +156,7 @@ const books = [
     image: 'Michael Robartes Main Cover.png',
     purchaseUrl: 'https://mybook.to/1sCoD',
     label: 'Poetry collection · 1921',
-    deck: 'Yeats’s fifteen poems as the Cuala Press first printed them, including Easter, 1916 and The Second Coming, with his later changes recorded rather than silently substituted.',
+    deck: 'Fifteen poems by Yeats, printed by the Cuala Press, which his sisters ran, in a small edition dated 1920. ‘Easter, 1916’ and ‘The Second Coming’ are among them. This edition follows the Cuala text and puts the changes Yeats made later in the notes.',
     editionIncludes: [
       'Original explanatory notes throughout',
       'Poem summaries and historical context',
@@ -192,7 +192,7 @@ const books = [
     image: 'Lyrical Ballads Main Cover.png',
     purchaseUrl: 'https://mybook.to/k5ZCt',
     label: 'Selected poetry · 1798 / 1800',
-    deck: 'Thirty-six poems from the 1798 and 1800 editions preserve the forms in which Wordsworth and Coleridge first published them, including the original Rime of the Ancyent Marinere.',
+    deck: 'In 1798 Wordsworth and Coleridge published a small book of poems in Bristol without their names on it. It opened with ‘The Rime of the Ancyent Marinere’ and closed with ‘Tintern Abbey’. This edition prints thirty-six poems from the 1798 and 1800 editions as they first appeared, including Coleridge’s original spelling of the Mariner.',
     editionIncludes: [
       'Thirty-six poems selected from the 1798 and 1800 editions',
       'Original explanatory notes and poem summaries',
@@ -228,7 +228,7 @@ const books = [
     image: 'Ethan Frome Main Cover.png',
     purchaseUrl: 'https://mybook.to/MN2KL',
     label: 'Novel · 1911',
-    deck: 'An engineer reconstructs the history behind Ethan Frome’s injuries, returning twenty-four years to a failing Starkfield farm, a constricted marriage and Mattie Silver’s arrival.',
+    deck: 'A young engineer spending a winter in the Massachusetts village of Starkfield notices Ethan Frome, lame and bent at fifty-two, and wants to know what happened to him. The story he pieces together goes back twenty-four years, to Ethan’s sickly wife, Zeena, and her young cousin, Mattie Silver. Edith Wharton published it in 1911.',
     editionIncludes: [
       'Original explanatory footnotes throughout',
       'Chapter summaries and researched historical context',
@@ -264,7 +264,7 @@ const books = [
     image: 'Dickens at Christmas Main Cover.png',
     purchaseUrl: 'https://mybook.to/mUpuk0',
     label: 'Four Christmas books · 1843–48',
-    deck: 'Four complete Dickens Christmas books bring A Christmas Carol together with The Chimes, The Cricket on the Hearth and The Haunted Man and the Ghost’s Bargain.',
+    deck: 'Dickens wrote five Christmas books between 1843 and 1848. Four are here: A Christmas Carol, The Chimes, The Cricket on the Hearth and The Haunted Man. The fifth, The Battle of Life (1846), is the only one without a supernatural visitor, and it is not included.',
     editionIncludes: [
       'Four complete and unabridged Dickens Christmas books',
       'An original introduction and individual book headnotes',
@@ -300,7 +300,7 @@ const books = [
     image: 'Charles I selected Writings Main Cover.png',
     purchaseUrl: 'https://mybook.to/KLGFCM',
     label: 'Primary documents · 1620s–1649',
-    deck: 'Seventeen documents trace the disputed reign of Charles I from the conflicts of the 1620s to trial and execution, with authorship and provenance stated for each selection.',
+    deck: 'Seventeen documents from the reign of Charles I: letters to Henrietta Maria, his answers to the Petition of Right, papers captured at Naseby, the death warrant and the speech he made on the scaffold in January 1649. A last section asks whether he really wrote Eikon Basilike, the book published in his name after his death.',
     editionIncludes: [
       'Seventeen primary documents from the reign',
       'Original notes and historical context',
@@ -336,7 +336,7 @@ const books = [
     image: 'Anne of Green Gables Main Cover.png',
     purchaseUrl: 'https://mybook.to/rcbWae',
     label: 'Novel · 1908',
-    deck: 'Eleven-year-old Anne Shirley is sent by mistake to Matthew and Marilla Cuthbert at Green Gables in Montgomery’s Prince Edward Island novel.',
+    deck: 'Matthew and Marilla Cuthbert, a brother and sister who have never married, send for a boy from an orphanage to help on their Prince Edward Island farm. They get Anne Shirley, eleven, red-haired and unable to stop talking. It was L. M. Montgomery’s first novel, published in 1908.',
     editionIncludes: [
       'Explanatory footnotes throughout',
       'Chapter summaries and historical context',
@@ -372,7 +372,7 @@ const books = [
     image: "Alice's Adventures in Wonderland Main Cover.png",
     purchaseUrl: 'https://mybook.to/dWqdpw',
     label: 'Novel · 1865',
-    deck: 'Carroll’s final revised text is supported by notes on Victorian language, customs, poems and references, together with the Oxford and manuscript history behind Wonderland.',
+    deck: 'Charles Dodgson first told the story to the three Liddell sisters on a boat trip up the Thames on 4 July 1862, and later wrote it out for Alice as Alice’s Adventures Under Ground. This edition prints his final revised text, with notes on the Victorian poems he parodies and the Oxford people behind the characters.',
     editionIncludes: [
       'Explanatory footnotes throughout',
       'Chapter recaps and Victorian context',
@@ -408,7 +408,7 @@ const books = [
     image: 'A Victorian Bonfire Night Main Cover.png',
     purchaseUrl: 'https://mybook.to/KiZHRv',
     label: 'Annotated cultural history',
-    deck: 'Victorian fiction, essays, folklore and newspaper reporting trace the Fifth of November as statutory Protestant observance gave way to children’s customs, bonfire societies and public entertainment.',
+    deck: 'Until 1859 the Fifth of November was a holiday fixed by Act of Parliament, with its own service in the Prayer Book. This collection gathers Victorian stories, essays, folklore and newspaper reports from the years when it became something else: children with guys, bonfire societies, fireworks and bonfire toffee.',
     editionIncludes: [
       'Original historical notes and context throughout',
       'A Bonfire Night chronology and glossary',
@@ -444,7 +444,7 @@ const books = [
     image: "A Room of One's Own Main COver.png",
     purchaseUrl: 'https://mybook.to/tCPKV5l',
     label: 'Essay · 1929',
-    deck: 'Woolf asks what material conditions a woman needs in order to write, moving through Oxbridge, Fernham, the British Museum and literary history by way of fact, fiction and speculation.',
+    deck: '‘A woman must have money and a room of her own if she is to write fiction.’ Woolf first made the argument in two lectures at Newnham and Girton in October 1928 and published it the following year. On the way she gives Shakespeare a gifted sister, Judith, and asks what would have become of her.',
     editionIncludes: [
       'Original explanatory notes throughout',
       'Chapter summaries and historical context',
@@ -487,8 +487,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/uF2n4LW',
     paperbackImage: 'A Victorian Bonfire Night Main Cover.png',
     paperbackPurchaseUrl: 'https://mybook.to/KiZHRv',
-    deck: 'Victorian writing, folklore, reporting and original historical chapters trace the changing Fifth of November.',
-    editorial: 'Bound in hardback, with the paperback’s annotated collection and historical chapters.'
+    deck: 'Guy Fawkes Night in Victorian stories, folklore and newspaper reports, with chapters on the Plot, the Guy, fireworks and bonfire toffee.',
+    editorial: 'The same contents as the paperback, bound in hardback.'
   },
   {
     href: '/books/the-odyssey/',
@@ -501,8 +501,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/rwDKnWr',
     paperbackImage: 'The Odyssey.png',
     paperbackPurchaseUrl: 'https://mybook.to/uAMn',
-    deck: 'Odysseus’s return to Ithaca, in Samuel Butler’s complete prose translation, with notes book by book.',
-    editorial: 'The same complete translation, summaries, notes and historical context as the paperback.'
+    deck: 'Odysseus’s ten years trying to get home to Ithaca, in Samuel Butler’s prose translation.',
+    editorial: 'The paperback’s translation, summaries and notes.'
   },
   {
     href: '/books/the-iliad/',
@@ -515,8 +515,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/VHZtnd',
     paperbackImage: 'The Iliad.png',
     paperbackPurchaseUrl: 'https://mybook.to/qXcAI7T',
-    deck: 'Homer’s epic of the anger of Achilles, in Samuel Butler’s complete prose translation, with notes on all twenty-four books.',
-    editorial: 'The same complete text, summaries, notes and background as the paperback.'
+    deck: 'The anger of Achilles in the tenth year of the Trojan War, in Samuel Butler’s prose translation.',
+    editorial: 'The same text and notes as the paperback.'
   },
   {
     href: '/books/the-aeneid/',
@@ -529,8 +529,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/rdk9fx',
     paperbackImage: 'The Aeneid.png',
     paperbackPurchaseUrl: 'https://mybook.to/ZdOQoGv',
-    deck: 'Aeneas’s journey from Troy to Italy, in John Dryden’s complete verse translation, with notes on epic, history and Rome.',
-    editorial: 'Dryden’s translation and the notes, as in the paperback, in a hardback binding.'
+    deck: 'Aeneas’s journey from Troy to Italy, in John Dryden’s verse translation of 1697.',
+    editorial: 'Dryden’s translation with the paperback’s notes.'
   },
   {
     href: '/books/sleepy-hollow-and-other-stories/',
@@ -543,8 +543,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/MPDvt5',
     paperbackImage: 'Sleepy Hollow Main Cover.png',
     paperbackPurchaseUrl: 'https://mybook.to/mlEu80z',
-    deck: 'Twelve complete American supernatural stories, with notes, publication history and an account of how they became Halloween reading.',
-    editorial: 'The same twelve stories, notes, chronology, glossary and history as the paperback.'
+    deck: 'Twelve American stories, from Irving’s headless horseman to Lovecraft’s ‘The Outsider’, that Halloween later adopted.',
+    editorial: 'The paperback’s stories, notes and history.'
   },
   {
     href: '/books/shakespeares-sonnets/',
@@ -557,8 +557,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/bVlnW',
     paperbackImage: "Shakespeare's Sonnets Main Cover.png",
     paperbackPurchaseUrl: 'https://mybook.to/EPIxTc',
-    deck: 'All 154 sonnets in the 1609 order, each with a headnote and an explanation on the same page.',
-    editorial: 'All 154 sonnets with the same notes as the paperback.'
+    deck: 'All 154 sonnets in the 1609 order, one to a page, with notes underneath.',
+    editorial: 'The same notes as the paperback.'
   },
   {
     href: '/books/dorian-gray/',
@@ -571,8 +571,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/QmZR',
     paperbackImage: 'Picture of Dorian Gray.png',
     paperbackPurchaseUrl: 'https://mybook.to/zizDNb',
-    deck: 'Wilde’s only novel, with a comparison of the 1890 magazine and 1891 book texts, notes on aestheticism and its reception, and a glossary.',
-    editorial: 'Identical inside to the Astor paperback, in a hardback binding.'
+    deck: 'Wilde’s only novel, with the differences between the 1890 magazine text and the 1891 book.',
+    editorial: 'Identical inside to the paperback.'
   },
   {
     href: '/books/the-great-gatsby/',
@@ -585,8 +585,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/YjArgN',
     paperbackImage: 'The Great Gatsby Main Cover.png',
     paperbackPurchaseUrl: 'https://mybook.to/wj3s',
-    deck: 'Fitzgerald’s first-edition text, with footnotes, chapter recaps and background on New York in 1922.',
-    editorial: 'The same annotated text, chapter recaps, chronology and publication history as the paperback.'
+    deck: 'Fitzgerald’s first-edition text, with footnotes and chapter recaps.',
+    editorial: 'The same annotated text as the paperback.'
   },
   {
     href: '/books/dickens-at-christmas/',
@@ -599,8 +599,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/8V5r',
     paperbackImage: 'Dickens at Christmas Main Cover.png',
     paperbackPurchaseUrl: 'https://mybook.to/mUpuk0',
-    deck: 'Four complete Christmas books bring Scrooge, Trotty Veck, the Peerybingles and Redlaw into one annotated volume.',
-    editorial: 'The same four complete books, with the paperback’s headnotes, summaries, notes and historical context.'
+    deck: 'A Christmas Carol, The Chimes, The Cricket on the Hearth and The Haunted Man in one volume.',
+    editorial: 'The paperback’s headnotes, summaries and notes.'
   },
   {
     href: '/books/a-victorian-christmas/',
@@ -613,8 +613,8 @@ const hardbacks = [
     purchaseUrl: 'https://mybook.to/Urvaf2',
     paperbackImage: 'A Victorian Christmas Main Cover.png',
     paperbackPurchaseUrl: 'https://mybook.to/NUduL',
-    deck: 'How the Victorians made Christmas: the tree, cards, crackers, food, carols, charity and Christmas books, with sources throughout.',
-    editorial: 'Identical inside to the paperback: the same chapters, period texts and sources.'
+    deck: 'How the Victorians made Christmas, from the first card in 1843 to the Christmas numbers of the magazines.',
+    editorial: 'Identical inside to the paperback.'
   }
 ];
 
@@ -626,7 +626,7 @@ const remainingBooks = [
     image: 'The Woman in White Main Cover.png',
     purchaseUrl: 'https://mybook.to/OepTu',
     label: 'Novel · 1859–60 / 1861 text',
-    deck: 'Walter Hartright investigates a mysterious woman, a hidden identity and a conspiracy involving marriage, inheritance and power in Collins’s multiple-narrator novel.',
+    deck: 'Walking back to London late at night, the drawing master Walter Hartright meets a young woman dressed entirely in white who has escaped from an asylum. She looks very like his new pupil, Laura Fairlie, who is engaged to Sir Percival Glyde. Wilkie Collins’s novel ran in All the Year Round in 1859–60.',
     editionIncludes: [
       'Explanatory footnotes throughout',
       'Historical context and original essays',
@@ -662,7 +662,7 @@ const remainingBooks = [
     image: 'The Wind in the Willows - Main Cover.png',
     purchaseUrl: 'https://mybook.to/wYAk',
     label: 'Novel · 1908',
-    deck: 'Mole, Rat, Badger and Toad move between riverbank picnics, the Wild Wood, motor-car disasters and the battle for Toad Hall in Grahame’s Edwardian classic.',
+    deck: 'Mole gives up his spring-cleaning, meets the Water Rat on the riverbank and goes for a row. Before long they are trying to save Toad from his passion for motor cars. Kenneth Grahame, Secretary of the Bank of England, began the stories as bedtime tales for his son, and the book came out in 1908.',
     editionIncludes: [
       'Explanatory footnotes throughout',
       'Chapter summaries and historical context',
@@ -698,7 +698,7 @@ const remainingBooks = [
     image: 'The Moonstone Main Cover.png',
     purchaseUrl: 'https://mybook.to/49eJP',
     label: 'Novel · 1868',
-    deck: 'The disappearance of a priceless diamond is investigated through the testimonies of people connected to the case in Collins’s Victorian detective novel.',
+    deck: 'On her eighteenth birthday Rachel Verinder is given a great yellow diamond, taken from India when Seringapatam was stormed in 1799. By the next morning it has gone from her room. The story is told by a series of witnesses, starting with the family’s old steward, Gabriel Betteredge, who consults Robinson Crusoe in every crisis.',
     editionIncludes: [
       'Explanatory footnotes throughout',
       'Historical context and original essays',
@@ -734,7 +734,7 @@ const remainingBooks = [
     image: 'The Metamorphosis Main Cover.png',
     purchaseUrl: 'https://mybook.to/evF1',
     label: 'Novella · 1915',
-    deck: 'Gregor Samsa wakes transformed into what Ian Johnston calls a “monstrous verminous bug”, yet his first fear concerns work, debt and the employer whose authority reaches into the family home.',
+    deck: 'Gregor Samsa, a travelling salesman, wakes one morning changed into a huge insect, and his first worry is that he has missed his train. Kafka’s story was published in 1915. Astor uses Ian Johnston’s translation, which calls the creature a ‘monstrous verminous bug’.',
     editionIncludes: [
       'Original explanatory footnotes throughout',
       'Historical and biographical context',
@@ -770,7 +770,7 @@ const remainingBooks = [
     image: 'The Great Gatsby Main Cover.png',
     purchaseUrl: 'https://mybook.to/wj3s',
     label: 'Novel · 1925',
-    deck: 'Set during the summer of 1922 between Long Island’s Gold Coast and Prohibition-era New York, Fitzgerald’s novel is presented in its first-edition text with notes and chapter support.',
+    deck: 'Nick Carraway rents a small house in West Egg, Long Island, in the summer of 1922, next door to the mansion where Jay Gatsby gives parties for hundreds of people he does not know. Across the bay lives Nick’s cousin Daisy, whom Gatsby has loved for five years. Fitzgerald published the novel in April 1925; this edition follows the first-edition text.',
     editionIncludes: [
       'Explanatory footnotes throughout',
       'Chapter-by-chapter summaries and historical context',
@@ -806,7 +806,7 @@ const remainingBooks = [
     image: "The Doves' Nest and Other Stories Main COver.png",
     purchaseUrl: 'https://mybook.to/qUG2t',
     label: 'Stories and fragments · 1923',
-    deck: 'Six completed stories and four significant unfinished pieces from Mansfield’s posthumous 1923 collection are presented with notes on their status, publication and final context.',
+    deck: 'Katherine Mansfield died in January 1923, and John Middleton Murry published this collection later that year. Six of the stories are finished and four are pieces she left unfinished; the notes say which is which and what state each one was in.',
     editionIncludes: [
       'Ten selected stories and fragments from the 1923 collection',
       'Original explanatory notes and historical context',
@@ -842,7 +842,7 @@ const remainingBooks = [
     image: 'The Chimes Main Cover.png',
     purchaseUrl: 'https://mybook.to/7iJP',
     label: 'Christmas book · 1844',
-    deck: 'Dickens’s supernatural Christmas story follows Trotty Veck as respectable arguments about poverty teach him to despise his own class, before the bells show where those beliefs can lead.',
+    deck: 'Trotty Veck, a London ticket-porter, reads in the newspaper that the poor have no right to a New Year, and half believes it. On New Year’s Eve the goblins of the church bells show him what will happen to his daughter and her friends. Dickens wrote it in Genoa in 1844, the year after A Christmas Carol.',
     editionIncludes: [
       'Original explanatory notes throughout',
       'Chapter summaries and historical context',
@@ -878,7 +878,7 @@ const remainingBooks = [
     image: 'Sleepy Hollow Main Cover.png',
     purchaseUrl: 'https://mybook.to/mlEu80z',
     label: 'Annotated collection · twelve stories',
-    deck: 'Twelve complete American stories are placed back in their original settings and then followed into the later Halloween tradition that gathered ghosts, witches, haunted houses and black cats around October.',
+    deck: 'None of these twelve stories was written for Halloween. Irving’s headless horseman, Hawthorne’s Goodman Brown, Poe’s black cat and Gilman’s yellow wallpaper were reprinted in so many October anthologies that they now belong to the season, and the introduction traces how that happened.',
     editionIncludes: [
       'Twelve complete classic American stories',
       'Original story notes and historical context',

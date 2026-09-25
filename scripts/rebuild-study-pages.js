@@ -384,7 +384,7 @@ function buildPages() {
     module: 'techniques.mjs',
     mount: `  <div class="astor-chooser" id="astor-technique-search"></div>
   <div id="astor-technique-list"></div>`,
-    fallback: 'The glossary needs JavaScript. Each book page has a “How it is written” section.',
+    fallback: 'The glossary needs JavaScript. Each book page has a “Form and language” section.',
     links: [{ href: '/play/technique-spotter/', label: 'Technique spotter' }, { href: '/explore/quotations/', label: 'Quotation explorer' }]
   }));
 

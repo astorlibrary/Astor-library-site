@@ -114,7 +114,7 @@ function charactersPanel(book) {
       '</article>';
   }).join('');
   return '<section class="astor-panel" id="astor-characters" data-panel="Characters">' +
-    '<h3>Who is who</h3>' +
+    '<h3>Characters</h3>' +
     '<p class="astor-panel-note">' +
     'The map shows how their connections change across the ' + (book.form === 'play' ? 'acts' : 'sections') + '.</p>' +
     '<div class="astor-character-map" data-astor-character-map="' + escapeHtml(book.slug) + '">' +
@@ -133,7 +133,7 @@ function themesPanel(book) {
     '</article>'
   ).join('');
   return '<section class="astor-panel" id="astor-themes" data-panel="Themes">' +
-    '<h3>What the book keeps coming back to</h3>' +
+    '<h3>Themes</h3>' +
     '<p class="astor-panel-note">' +
     'Compare these with other books in the <a href="/explore/themes/">themes explorer</a>.</p>' +
     '<div class="astor-note-grid">' + notes + '</div>' +
@@ -195,7 +195,7 @@ function techniquesPanel(book) {
     '</article>'
   ).join('');
   return '<section class="astor-panel" id="astor-techniques" data-panel="Form &amp; language">' +
-    '<h3>How it is written</h3>' +
+    '<h3>Form and language</h3>' +
     '<p class="astor-panel-note">' +
     'The <a href="/explore/techniques/">technique glossary</a> shows these terms across the library.</p>' +
     '<div class="astor-note-grid">' + notes + '</div>' +
@@ -211,7 +211,7 @@ function contextPanel(book) {
     ).join('') + '</ol>'
     : '';
   const views = (book.criticalViews || []).length
-    ? '<h4 class="astor-subhead">Ways the book has been read</h4><div class="astor-note-grid">' +
+    ? '<h4 class="astor-subhead">Critical views</h4><div class="astor-note-grid">' +
     book.criticalViews.map(view =>
       '<article class="astor-note"><h4>' + escapeHtml(view.position) + '</h4>' +
       '<p>' + escapeHtml(view.summary) + '</p>' +
@@ -220,7 +220,7 @@ function contextPanel(book) {
     ).join('') + '</div>'
     : '';
   const places = (book.places || []).length
-    ? '<h4 class="astor-subhead">Where it happens</h4>' +
+    ? '<h4 class="astor-subhead">Places</h4>' +
     '<div class="astor-book-map-box" data-astor-book-map="' + escapeHtml(book.slug) + '">' +
     '<ul class="astor-place-plain">' + book.places.map(place =>
       '<li><strong>' + escapeHtml(place.name) + '</strong>' + (place.note ? ' — ' + escapeHtml(place.note) : '') + '</li>').join('') + '</ul>' +
@@ -230,7 +230,7 @@ function contextPanel(book) {
     : '';
   if (!timeline && !views) return '';
   return '<section class="astor-panel" id="astor-context" data-panel="Context">' +
-    '<h3>Background</h3>' +
+    '<h3>Context</h3>' +
     '<p class="astor-panel-note">Key dates and how the book has been read. ' +
     'See them among the other books on the <a href="/explore/timeline/?view=events&amp;mark=' + escapeHtml(book.slug) + '">library timeline</a>.</p>' +
     timeline + views + places +
@@ -246,7 +246,7 @@ function essaysPanel(book) {
     '</article>'
   ).join('');
   const discussion = (book.discussionQuestions || []).length
-    ? '<h4 class="astor-subhead">For discussion</h4><ul class="astor-question-list">' +
+    ? '<h4 class="astor-subhead">Discussion questions</h4><ul class="astor-question-list">' +
     book.discussionQuestions.map(question => '<li>' + escapeHtml(question) + '</li>').join('') + '</ul>'
     : '';
   if (!questions && !discussion) return '';
@@ -300,7 +300,7 @@ function revisePanel(book) {
     '<p class="rv-start-note">A mix of every kind, starting with the lines due for another look and the ones you haven’t met yet. <a href="/play/?book=' + slug + '">See how you are getting on</a>.</p></div>' +
     '<div class="astor-revise-tools">' +
     '<div class="astor-plan" data-astor-plan="' + slug + '">' +
-    '<h4>Plan your reading</h4>' +
+    '<h4>Reading plan</h4>' +
     '<p>Pick a finish date and the days you can read, and the ' + (book.form === 'play' ? 'acts' : 'sections') +
     ' are split between them.</p>' +
     '</div>' +
@@ -309,7 +309,7 @@ function revisePanel(book) {
     '<p>Plot, characters, themes and ' + Math.min(8, book.quotations.length) + ' key quotations on one page to print.</p>' +
     '</div>' +
     '</div>' +
-    '<h4 class="rv-group">Practise one thing</h4>' +
+    '<h4 class="rv-group">Quizzes</h4>' +
     '<ul class="rv-rows">' + rows + '</ul>' +
     '</section>';
 }
@@ -334,7 +334,7 @@ function videosPanel(book) {
     '</article>'
   ).join('');
   return '<section class="astor-panel" id="astor-watch" data-panel="Watch">' +
-    '<h3>Worth watching</h3>' +
+    '<h3>Videos</h3>' +
     '<p class="astor-panel-note">Nothing loads until you press play.</p>' +
     '<div class="astor-note-grid">' + cards + '</div>' +
     '</section>';
@@ -343,8 +343,7 @@ function videosPanel(book) {
 function relatedPanel(book, titleFor, passages = []) {
   if (!(book.related || []).length && !passages.length) return '';
   const readings = passages.length
-    ? '<h4 class="astor-subhead">Close readings of this book</h4>' +
-      '<p class="astor-panel-note">Close readings of single passages from this book.</p>' +
+    ? '<h4 class="astor-subhead">Close readings</h4>' +
       '<div class="astor-note-grid">' + passages.map(passage =>
         '<article class="astor-note"><h4><a href="' + escapeHtml(passage.href) + '">' + escapeHtml(passage.title) + '</a></h4>' +
         '<p>' + escapeHtml(passage.description || '') + '</p></article>'
@@ -355,12 +354,11 @@ function relatedPanel(book, titleFor, passages = []) {
     '<p>' + escapeHtml(related.why) + '</p></article>'
   ).join('');
   const related = cards
-    ? (readings ? '<h4 class="astor-subhead">Where to go from here</h4>' : '') +
-      '<p class="astor-panel-note">Where to go next.</p>' +
+    ? (readings ? '<h4 class="astor-subhead">Related books</h4>' : '') +
       '<div class="astor-note-grid">' + cards + '</div>'
     : '';
   return '<section class="astor-panel" id="astor-related" data-panel="Read next">' +
-    '<h3>' + (readings ? 'Closer, and further' : 'Where to go from here') + '</h3>' +
+    '<h3>Read next</h3>' +
     readings + related +
     '</section>';
 }

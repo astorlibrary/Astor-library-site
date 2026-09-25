@@ -53,7 +53,7 @@ const editionUpdateBooks = [
     image: 'A Victorian Christmas Main Cover.png',
     purchaseUrl: 'https://mybook.to/NUduL',
     label: 'Cultural history',
-    deck: 'A history of the nineteenth-century changes that created much of the Christmas culture inherited by later generations, from trees, cards and crackers to family gatherings, charity, carols and ghost stories.',
+    deck: 'Henry Cole had the first Christmas card printed in 1843, the year of A Christmas Carol, and in 1848 the Illustrated London News showed the royal family round a decorated tree. This is a history of how the Victorians made the Christmas that is still kept, with three pieces by Dickens printed complete.',
     editionIncludes: [
       'The Christmas tree and its royal associations',
       'The first commercial Christmas card and the rise of cheaper post',
@@ -89,7 +89,7 @@ const editionUpdateBooks = [
     image: 'Jane Eyre Main Cover.png',
     purchaseUrl: 'https://mybook.to/miA8uf',
     label: 'Novel · 1847',
-    deck: 'Charlotte Brontë’s novel of independence, conscience and love follows Jane from an abused childhood through Lowood School and Thornfield Hall to the point at which she can determine the terms of her own life.',
+    deck: 'Jane Eyre is an orphan at Gateshead, shut in the red room by her aunt, and then a pupil at Lowood, a charity school where the girls go hungry. At eighteen she becomes governess at Thornfield Hall, where Mr Rochester lives and where she hears laughter from the third storey. Charlotte Brontë published the novel in 1847 as Currer Bell.',
     editionIncludes: [
       'Original introduction and critical essays',
       'Chapter summaries and historical context boxes',
@@ -125,7 +125,7 @@ const editionUpdateBooks = [
     image: "The Haunted Man and the Ghost's Bargain Main Cover.png",
     purchaseUrl: 'https://mybook.to/QEY98GQ',
     label: 'Christmas book · 1848',
-    deck: 'Dickens’s final Christmas book is a ghost story about memory, suffering and the cost of erasing the past: when Redlaw forgets sorrow, he also loses the compassion that sorrow had taught him.',
+    deck: 'Redlaw, a chemist and lecturer, is visited by a phantom that looks exactly like him and offers to take away his painful memories. He accepts, and finds that he now passes the same forgetting to everyone he meets. It was the last of Dickens’s five Christmas books, published in December 1848.',
     editionIncludes: [
       'Original introduction and historical context',
       'Chapter summaries and contextual annotations',
@@ -161,7 +161,7 @@ const editionUpdateBooks = [
     image: 'Mrs Dalloway Main Cover.png',
     purchaseUrl: 'https://mybook.to/9Dqzs',
     label: 'Novel · 1925',
-    deck: 'Across one June day in London, Woolf connects Clarissa Dalloway’s preparations for a party with the final hours of Septimus Warren Smith, a veteran failed by the doctors appointed to treat him.',
+    deck: 'On a Wednesday in June 1923, Clarissa Dalloway walks through Westminster to buy flowers for the party she is giving that evening. In Regent’s Park, Septimus Warren Smith, who fought in the war and hears the dead talking, waits with his Italian wife for an appointment with a Harley Street doctor. The two never meet.',
     editionIncludes: [
       'Original introduction and contextual essays',
       'Explanatory footnotes throughout the novel',
@@ -197,7 +197,7 @@ const editionUpdateBooks = [
     image: 'Rime of the Ancient Mariner Main Cover.png',
     purchaseUrl: 'https://mybook.to/YRS5',
     label: 'Poem · 1798 / 1834 text',
-    deck: 'Coleridge’s mariner tells of an albatross killed without explanation, a motionless sea, supernatural punishment and a compulsion to repeat a story whose redemption never becomes simple.',
+    deck: 'An old sailor stops one of three guests on the way to a wedding and makes him listen to the story of how he shot an albatross, and what happened to his ship afterwards. Coleridge published the poem in Lyrical Ballads in 1798 and added the prose gloss in the margin for the version of 1817.',
     editionIncludes: [
       'Complete 1834 text, Coleridge’s final lifetime version',
       'The full marginal gloss first added in 1817',
@@ -233,7 +233,7 @@ const editionUpdateBooks = [
     image: 'The Sorrows of Young Werther Main Cover.png',
     purchaseUrl: 'https://mybook.to/yL7H8U3',
     label: 'Novel · 1774 / 1787',
-    deck: 'Goethe’s epistolary novel confines the reader largely to Werther’s increasingly unstable account of his love for Charlotte, who is already engaged to Albert.',
+    deck: 'Werther writes to his friend Wilhelm about Lotte, whom he meets at a country dance already knowing that she is engaged to Albert. Goethe was twenty-four when he wrote the novel in 1774, and it made him famous across Europe.',
     editionIncludes: [
       'Original explanatory notes throughout',
       'Chapter summaries and historical context',
@@ -269,7 +269,7 @@ const editionUpdateBooks = [
     image: 'Robinson Crusoe.png',
     purchaseUrl: 'https://mybook.to/hfTU',
     label: 'Novel · 1719',
-    deck: 'Defoe’s novel follows Crusoe from restless commercial voyages to twenty-eight years on an island, where survival, Providence, labour, property and colonial authority become inseparable.',
+    deck: 'Robinson Crusoe goes to sea against his father’s advice, is taken by pirates, becomes a planter in Brazil and in 1659 is shipwrecked alone on an island near the mouth of the Orinoco. He stays twenty-eight years. Defoe published the book in 1719 as Crusoe’s own story, with no author’s name.',
     editionIncludes: [
       'Original introduction and critical commentary',
       'Explanatory footnotes and chapter-end notes',
@@ -305,7 +305,7 @@ const editionUpdateBooks = [
     image: 'Skelton Main Cover.png',
     purchaseUrl: 'https://mybook.to/rwdfP',
     label: 'Early Tudor poetry',
-    deck: 'Fourteen poems and sequences display Skelton’s range from formal elegy and devotion to court satire, comic portraiture and the rapid-fire rhyming line that took his name.',
+    deck: 'John Skelton, priest and tutor to the young Henry VIII, wrote in short, tumbling rhymed lines that are still called Skeltonics. The fourteen poems here run from his elegy on the Earl of Northumberland to ‘Philip Sparrow’, a schoolgirl’s lament for her pet bird, and his attacks on Cardinal Wolsey. The text is Alexander Dyce’s of 1843, and every cut is marked.',
     editionIncludes: [
       'Original footnotes and poem-by-poem headnotes',
       'Historical and literary context throughout',
@@ -340,7 +340,7 @@ const editionUpdateBooks = [
     image: 'The Iliad.png',
     purchaseUrl: 'https://mybook.to/qXcAI7T',
     label: 'Epic · Butler translation, 1898',
-    deck: 'Homer’s epic concentrates on the anger of Achilles during a short period of the Trojan War, moving from his quarrel with Agamemnon to the recovery of Hector’s body by Priam.',
+    deck: 'In the tenth year of the Trojan War, Agamemnon takes the captive woman Briseis from Achilles, and Achilles stays out of the fighting until Hector kills his friend Patroclus. The poem ends with Priam coming to Achilles by night to ransom his son’s body. Astor uses Samuel Butler’s prose translation of 1898.',
     editionIncludes: [
       'Samuel Butler’s complete 1898 prose translation',
       'Footnotes on vocabulary, names and Homeric terms',
@@ -376,7 +376,7 @@ const editionUpdateBooks = [
     image: "Shakespeare's Sonnets Main Cover.png",
     purchaseUrl: 'https://mybook.to/EPIxTc',
     label: 'Poetry · 1609',
-    deck: 'All 154 sonnets in the 1609 order, with a complete poem, concise headnote and same-page explanation designed to make each argument readable without a separate reference book.',
+    deck: 'All 154 sonnets, in the order Thomas Thorpe printed them in 1609. Each page holds one complete poem, with a short headnote and notes underneath, so the argument can be followed without a second book open.',
     editionIncludes: [
       'All 154 sonnets in the 1609 order',
       'One complete sonnet on each page',
@@ -411,7 +411,7 @@ const editionUpdateBooks = [
     image: 'The Rape of Lucrece and Venus and Adonis Main Cover.png',
     purchaseUrl: 'https://mybook.to/Xsfo',
     label: 'Two narrative poems · 1593–94',
-    deck: 'Shakespeare’s two long narrative poems are presented complete in one edition, with line-by-line same-page notes and material on desire, resistance, violence, grief, testimony and political change.',
+    deck: 'Shakespeare’s two long poems, written while plague had closed the London theatres in 1592–94 and both dedicated to the young Earl of Southampton. In Venus and Adonis the goddess tries to seduce a boy who only wants to go hunting; in Lucrece a Roman wife is raped by the king’s son. Both are here complete, with notes on the same page.',
     editionIncludes: [
       'Complete texts of both narrative poems',
       'Line-by-line notes printed on the same page',
@@ -449,7 +449,7 @@ const editionUpdateBooks = [
     label: 'Shakespeare Apocrypha · Volume I',
     range: 'apocrypha',
     volume: 'I',
-    deck: 'A specialist annotated edition of the anonymous 1596 history play now generally understood to contain a substantial contribution by Shakespeare, although the identity of his collaborator remains unsettled.',
+    deck: 'Edward III was printed without an author’s name in 1596 and left out of collected Shakespeare until the 1990s. The scenes in which the king tries to seduce the Countess of Salisbury are now generally given to Shakespeare. Who wrote the rest is still argued over.',
     editionIncludes: ['Complete play edited from the 1596 quarto', 'Scene summaries before every scene', 'Explanatory notes at the foot of each page', 'Introductions to authorship, sources and performance'],
     facts: [
       { label: '1596 quarto', text: 'The play was printed anonymously and did not enter the First Folio.' },
@@ -481,7 +481,7 @@ const editionUpdateBooks = [
     label: 'Shakespeare Apocrypha · Volume II',
     range: 'apocrypha',
     volume: 'II',
-    deck: 'An annotated edition of the 1592 domestic tragedy based on a Kent murder of 1551, with the competing cases for Shakespeare, Thomas Kyd and unresolved collaboration presented without false certainty.',
+    deck: 'In February 1551 Thomas Arden of Faversham was murdered in his own house by men his wife, Alice, had hired. Holinshed’s Chronicles told the story, and an anonymous play printed in 1592 put it on stage. Some scholars find Shakespeare in the scene where Alice quarrels with her lover, Mosby; the introduction sets out the cases for him, for Thomas Kyd and for several hands.',
     editionIncludes: ['Modernised text of the 1592 first quarto', 'Scene summaries before each scene', 'Line numbers and same-page explanatory notes', 'Introductions to authorship, sources and performance'],
     facts: [
       { label: '1551 crime', text: 'The plot transforms the murder of Thomas Arden at Faversham into domestic tragedy.' },
@@ -513,7 +513,7 @@ const editionUpdateBooks = [
     label: 'Shakespeare Apocrypha · Volume III',
     range: 'apocrypha',
     volume: 'III',
-    deck: 'A complete annotated text of the 1595 legendary British tragedy, whose title-page initials W. S. later drew it into Shakespeare’s apocryphal canon despite the absence of a secure author.',
+    deck: 'Locrine, eldest son of Brutus, the legendary founder of Britain, defeats the invading Huns and then falls for their captive princess, Estrild. The play was printed in 1595 as ‘overseen and corrected’ by W. S., which was enough to get it into the Third Folio of Shakespeare in 1664. Nobody knows who wrote it.',
     editionIncludes: ['Complete modern-spelling text of the 1595 quarto', 'Scene summaries and line-numbered text', 'Same-page explanatory notes', 'Introductions to authorship, sources and performance'],
     facts: [
       { label: '1595 quarto', text: 'The title page said the play was overseen and corrected by W. S.' },
@@ -545,7 +545,7 @@ const editionUpdateBooks = [
     label: 'Shakespeare Apocrypha · Volume IV',
     range: 'apocrypha',
     volume: 'IV',
-    deck: 'The complete surviving collaborative play and additions, including the three manuscript pages known as Hand D and widely accepted as Shakespeare’s only surviving dramatic writing in his own hand.',
+    deck: 'The only literary manuscript that may be in Shakespeare’s handwriting is three pages of this play, the scene in which More talks down the London rioters of 1517, who want foreigners driven out. The rest was written by Anthony Munday and others, revised by several hands and marked for cuts by the Master of the Revels. Astor prints the whole surviving play with its additions.',
     editionIncludes: ['The complete play and surviving additions', 'The scene preserved in the hand attributed to Shakespeare', 'Scene summaries and line-numbered text', 'Explanatory notes on the relevant page'],
     facts: [
       { label: 'Working manuscript', text: 'The play survives through composition, revision, censorship and recopying by several hands.' },
@@ -577,7 +577,7 @@ const editionUpdateBooks = [
     label: 'Shakespeare Apocrypha · Volume V',
     range: 'apocrypha',
     volume: 'V',
-    deck: 'A complete annotated edition of the chronicle play printed in 1602 as written by W. S., following Cromwell from a Putney blacksmith’s house to power under Henry VIII and execution by attainder.',
+    deck: 'Thomas Cromwell, a blacksmith’s son from Putney, travels through Europe, serves Cardinal Wolsey, rises to be Henry VIII’s chief minister and is executed in 1540. The play was printed in 1602 as by ‘W. S.’, which later got it into the Shakespeare apocrypha.',
     editionIncludes: ['The complete play in modernised spelling', 'Scene summaries and line-numbered text', 'Explanatory notes on the relevant page', 'Introductions to authorship, history and performance'],
     facts: [
       { label: '1602 quarto', text: 'The title page used the attribution W. S. and named the Lord Chamberlain’s Men.' },
@@ -609,7 +609,7 @@ const editionUpdateBooks = [
     label: 'Shakespeare Apocrypha · Volume VI',
     range: 'apocrypha',
     volume: 'VI',
-    deck: 'The complete 1605 city comedy about debt, false inheritance, marriage and reform, printed under Shakespeare’s name but not accepted as his work.',
+    deck: 'Young Flowerdale wastes his money and lies his way into a rich marriage, while his father, thought to be dead, watches him disguised as a servant. The play was printed in 1605 with William Shakespeare’s name on the title page. It is not now thought to be his.',
     editionIncludes: ['The complete text of the 1605 quarto', 'Scene summaries and line-numbered text', 'Explanatory notes on the relevant page', 'Introductions to authorship, context and performance'],
     facts: [
       { label: '1605 quarto', text: 'The title page named Shakespeare and claimed performance by the King’s Men.' },
@@ -641,7 +641,7 @@ const editionUpdateBooks = [
     label: 'Shakespeare Apocrypha · Volume VII',
     range: 'apocrypha',
     volume: 'VII',
-    deck: 'A complete modern-spelling edition of the fast Jacobean city comedy printed as written by W. S. but now generally attributed to Thomas Middleton.',
+    deck: 'A rich widow in Watling Street swears she will never marry again, and a crew of penniless London tricksters set out to change her mind and marry her daughters. The play was printed in 1607 as by ‘W. S.’ and ended up in the Shakespeare apocrypha; it is now generally given to Thomas Middleton. The spelling is modernised.',
     editionIncludes: ['Complete modern-spelling text of the 1607 quarto', 'Scene summaries and line-numbered text', 'Same-page notes on language, satire and London life', 'Introductions to authorship, context and performance'],
     facts: [
       { label: '1607 quarto', text: 'The Stationers’ Register and title page used the initials W. S.' },
@@ -673,7 +673,7 @@ const editionUpdateBooks = [
     label: 'Shakespeare Apocrypha · Volume VIII',
     range: 'apocrypha',
     volume: 'VIII',
-    deck: 'A concentrated ten-scene domestic tragedy based on Walter Calverley’s 1605 attack on his family, printed under Shakespeare’s name but now most strongly attributed to Thomas Middleton.',
+    deck: 'In April 1605 Walter Calverley, a Yorkshire gentleman deep in debt, killed two of his young sons and stabbed his wife. A ten-scene play about the murders was acted by the King’s Men and printed in 1608 with Shakespeare’s name on the title page. Most scholars now give it to Thomas Middleton.',
     editionIncludes: ['The complete text of the 1608 quarto', 'Summaries of all ten scenes', 'Line numbers and same-page explanatory notes', 'Introductions to authorship, context and performance'],
     facts: [
       { label: '1605 case', text: 'Walter Calverley killed two sons, wounded his wife and was stopped before reaching a third child.' },
@@ -706,7 +706,7 @@ const editionUpdateBooks = [
     label: 'Expanded Scholarly Edition',
     range: 'expanded',
     counterpart: '/books/hamlet/',
-    deck: 'A premium, substantially expanded edition of Hamlet with a complete conflated text, same-page commentary and extensive material on textual history, criticism, performance and interpretation.',
+    deck: 'Hamlet survives in three early texts, the quartos of 1603 and 1604–5 and the 1623 Folio, and they differ by hundreds of lines. This larger Astor edition prints a conflated text with commentary on the same page, followed by long sections on the three texts, the criticism and four centuries of performance.',
     editionIncludes: ['Complete conflated modern-spelling text', 'Scene summaries and line-numbered text', 'Same-page notes and full commentary', 'Critical essays, glossary and performance history'],
     facts: [
       { label: 'Three early texts', text: 'The First Quarto, Second Quarto and First Folio preserve significantly different versions of the play.' },
@@ -739,7 +739,7 @@ const editionUpdateBooks = [
     label: 'Expanded Scholarly Edition',
     range: 'expanded',
     counterpart: '/books/king-lear/',
-    deck: 'A premium conflated edition of King Lear with full commentary and an extended account of the Quarto and Folio, political context, double plot, criticism and performance history.',
+    deck: 'King Lear exists in two versions, the 1608 Quarto and the 1623 Folio, and many scholars think Shakespeare revised the play between them. This larger edition prints a conflated text with full commentary and explains the differences, with chapters on the double plot, the politics of the time and the play on stage.',
     editionIncludes: ['Complete modern-spelling conflated text', 'Scene summaries and line-numbered text', 'Same-page notes and full commentary', 'Critical essays, glossary and performance history'],
     facts: [
       { label: '1608 Quarto', text: 'The first printed text contains hundreds of lines absent from the Folio.' },
@@ -772,7 +772,7 @@ const editionUpdateBooks = [
     label: 'Expanded Scholarly Edition',
     range: 'expanded',
     counterpart: '/books/a-midsummer-nights-dream/',
-    deck: 'A premium complete edition with same-page commentary and extensive scholarship on the early texts, fairies and folklore, marriage law, the lovers, mechanicals, performance and adaptation.',
+    deck: 'The larger of Astor’s two editions of the Dream. The commentary runs on the same page as the play, and the introduction covers the 1600 Quarto and the 1623 Folio, Elizabethan fairy lore, marriage law, the mechanicals, and the play on stage and screen.',
     editionIncludes: ['Complete modern-spelling text of the play', 'Scene summaries and line-numbered text', 'Same-page explanatory notes and commentary', 'Critical essays, key passages and performance history'],
     facts: [
       { label: '1600 first quarto', text: 'The edition principally follows the authoritative first quarto and records second-quarto evidence.' },
@@ -805,7 +805,7 @@ const editionUpdateBooks = [
     label: 'Expanded Scholarly Edition',
     range: 'expanded',
     counterpart: '/books/othello/',
-    deck: 'A premium complete edition of Othello with same-page commentary and extended scholarship on text, Venice and Cyprus, race, evidence, dramatic time, criticism and performance.',
+    deck: 'The larger Astor Othello. The commentary sits on the same page as the text, and the introduction covers the Quarto and Folio, Venice and Cyprus, race in Shakespeare’s London, the play’s double time scheme and its stage history.',
     editionIncludes: ['Extended critical introduction', 'Scene summaries and line-numbered text', 'Same-page notes and full commentary', 'Glossary, criticism and performance history'],
     facts: [
       { label: '1622 Quarto', text: 'The first printed text differs significantly from the Folio published the following year.' },
@@ -838,7 +838,7 @@ const editionUpdateBooks = [
     label: 'Expanded Scholarly Edition',
     range: 'expanded',
     counterpart: '/books/macbeth/',
-    deck: 'A premium complete edition of Macbeth with same-page commentary and extensive essays on the Folio text, Middleton, James I, witchcraft, equivocation, psychology, criticism and performance.',
+    deck: 'Macbeth survives only in the 1623 Folio, probably in a version adapted by Thomas Middleton, whose songs for the witches are called for in the stage directions. The larger Astor edition has commentary on the same page as the text and essays on the Folio, Middleton, James I, witchcraft, equivocation and the play on stage.',
     editionIncludes: ['Complete modern-spelling text of the play', 'Scene summaries and line-numbered text', 'Same-page explanatory notes and commentary', 'Critical essays, key passages and performance history'],
     facts: [
       { label: '1623 Folio', text: 'The First Folio supplies the only authoritative early printed text.' },

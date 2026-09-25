@@ -7,7 +7,7 @@ module.exports = [
     url: "https://mybook.to/gBzAv",
     genre: "Late romance / tragicomedy",
     date: "c. 1613–14",
-    deck: "Two devoted cousins become rivals for Emilia in Shakespeare and John Fletcher’s strange, searching drama of friendship, desire, ceremony and fate.",
+    deck: "Palamon and Arcite, cousins and prisoners of Theseus, see Emilia from their prison window and fall out over her on the spot. Theseus rules that they will fight for her, and the loser will die. Shakespeare wrote the play with John Fletcher in about 1613; it was printed in 1634 and was not in the Folio.",
     edition: [
       "This Astor Library Edition presents the complete play with scene summaries, line numbering and explanatory notes. The support is designed to make the action clear without smoothing away its oddness: this is a play in which solemn ritual sits beside broad comedy, chivalric courtesy beside sudden violence, and apparent choice beside the rule of gods and circumstance.",
       "The introductory material places the play within the late collaborative phase of Shakespeare’s career and explains John Fletcher’s part in its composition. It also follows the story back through Chaucer’s ‘Knight’s Tale’ to Boccaccio, showing what the dramatists retained, what they altered and why the newly invented story of the Jailer’s Daughter changes the weight of the whole play.",
@@ -168,7 +168,7 @@ module.exports = [
     url: "https://mybook.to/lhMCrD8",
     genre: "Problem play / tragedy",
     date: "c. 1601–02",
-    deck: "Inside and outside Troy, declarations of love and honour are tested against exchange, appetite, political calculation and a war that has forgotten how to end.",
+    deck: "Seven years into the Trojan War, the Trojan prince Troilus spends one night with Cressida, and the next morning she is handed over to the Greeks in exchange for a prisoner. In the Greek camp, Achilles sulks in his tent and Thersites insults everyone.",
     edition: [
       "This Astor Library Edition presents the complete play with scene summaries, line numbering and explanatory notes. The guidance distinguishes the Trojan and Greek plots, follows the rapid movement between the city and the military camp, and identifies the mythological and historical names that Shakespeare expects his audience to recognise.",
       "The contextual material explains how Shakespeare brought together two different inheritances: the celebrated warriors of the Trojan War and the medieval love story of Troilus and Cressida. Attention is also given to the difficult publication history of the 1609 quarto, the play’s unusual position in the 1623 First Folio and the continuing argument over whether it should be approached as comedy, history, tragedy or satire.",
@@ -330,7 +330,7 @@ module.exports = [
     studyUrl: "https://mybook.to/l4zC9",
     genre: "Comedy",
     date: "c. 1601",
-    deck: "After a shipwreck, Viola enters Illyria in borrowed clothes and finds herself carrying another man’s love to the woman who will fall in love with her.",
+    deck: "Shipwrecked on the coast of Illyria, and believing her twin brother drowned, Viola dresses as a young man and goes to work for Duke Orsino, who sends her to woo the Countess Olivia for him. Olivia falls for Viola. Meanwhile Olivia’s uncle, Sir Toby Belch, and her maid, Maria, trick the steward Malvolio into wearing yellow stockings, cross-gartered.",
     edition: [
       "This Astor Library Edition presents the complete play with scene summaries, line numbering and explanatory notes. Its guidance keeps track of the twin plot and the movement between Orsino’s court and Olivia’s household, while giving songs, jokes and shifts in address the attention they require in performance.",
       "The contextual sections explain the festive associations of Twelfth Night, the first recorded performance at the Middle Temple in 1602 and the theatrical effect of Viola’s disguise on a stage where female roles were originally played by boys. The play’s chief narrative source is set beside Shakespeare’s changes to Olivia, Malvolio, Feste and the disorderly household plot.",
@@ -491,7 +491,7 @@ module.exports = [
     url: "https://mybook.to/4FNSkai",
     genre: "Comedy",
     date: "c. 1590–94",
-    deck: "Two friends leave Verona for the court of Milan, where first love, betrayal, disguise and a journey into the forest test what the word ‘gentleman’ is worth.",
+    deck: "Valentine goes to the Duke’s court in Milan and falls in love with the Duke’s daughter, Silvia. His friend Proteus follows, forgets his own girl, Julia, and betrays Valentine to get Silvia for himself. Julia comes after him dressed as a boy, and Proteus’s servant Launce has a sour-natured dog called Crab.",
     edition: [
       "This Astor Library Edition presents the complete play with scene summaries, line numbering and explanatory notes. The support follows the movements between Verona, Milan and the forest, clarifies the traffic in letters, rings and disguises, and gives the servants’ prose comedy its place beside the unsettled story of their masters.",
       "The introductory material considers the play as an early experiment in patterns Shakespeare would revisit: friends divided by desire, a woman travelling in male disguise, lovers banished into green space and recognition delayed until the final scene. Its debt to the story of Felismena in Jorge de Montemayor’s Diana is explained without treating the play as a mere rehearsal for later comedies.",

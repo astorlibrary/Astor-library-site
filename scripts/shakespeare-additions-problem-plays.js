@@ -8,7 +8,7 @@ module.exports = [
     studyUrl: "https://mybook.to/x8aiiFG",
     genre: "Comedy / problem play",
     date: "c. 1603–1604",
-    deck: "Vienna is placed under the rule of a man who treats severity as proof of his own purity—until desire exposes him. The play moves from prison and convent gate to a crowded public tribunal, reaching marriages without offering the comfort of an uncomplicated happy ending.",
+    deck: "The Duke of Vienna hands power to his deputy, Angelo, and stays in the city disguised as a friar. Angelo revives an old law and sentences Claudio to death for getting his fiancée pregnant. When Claudio’s sister Isabella, about to become a nun, pleads for him, Angelo offers to spare him if she will sleep with him.",
     edition: [
       "Duke Vincentio announces that he is leaving Vienna and gives Angelo temporary authority, but secretly remains in the city disguised as a friar. Angelo revives a neglected sexual law and sentences Claudio to death for making Juliet pregnant before their marriage has been formally completed. Claudio's sister Isabella, preparing to enter a convent, pleads for mercy. Angelo answers by offering her a corrupt bargain: Claudio may live if Isabella submits to him.",
       "The Duke devises a bed trick in which Mariana, once betrothed to Angelo and then abandoned by him, takes Isabella's place. He also prevents Claudio's execution and substitutes the head of another prisoner. These devices lead to the final scene, where private crimes are made public and Angelo is forced to confront his own judgement. Yet the Duke controls nearly every revelation, Mariana must beg to marry the man who wronged her, and Isabella gives no spoken answer to the Duke's proposal.",
@@ -87,7 +87,7 @@ module.exports = [
     studyUrl: "https://mybook.to/2QzQqmh",
     genre: "Comedy",
     date: "c. 1596–1597",
-    deck: "A loan, a marriage test and an elopement meet in a trial whose celebrated rescue is also an act of dispossession. The play can be funny, intimate and formally comic, but no responsible reading can ignore the antisemitism voiced by its Christians or the forced conversion imposed upon Shylock.",
+    deck: "Antonio borrows three thousand ducats from Shylock so that his friend Bassanio can court Portia, and signs a bond: a pound of his flesh if he cannot repay in three months. His ships are lost. At the trial Portia, disguised as a young lawyer, saves him, and Shylock loses his money and is ordered to become a Christian.",
     edition: [
       "Bassanio wants to court the wealthy Portia but needs money to present himself as a suitable suitor. His friend Antonio agrees to help, although his capital is tied up in ships at sea. Antonio therefore borrows three thousand ducats from Shylock, a Jewish moneylender whom he has repeatedly insulted. If the debt is not repaid within three months, Shylock's bond allows him to claim a pound of Antonio's flesh.",
       "At Belmont, Portia's suitors must choose among gold, silver and lead caskets. Bassanio chooses correctly and marries her, while Shylock's daughter Jessica leaves her father's house with Lorenzo. When Antonio's ships are reported lost, the action converges upon a Venetian court. Portia enters disguised as a lawyer, defeats Shylock through an exacting reading of the bond and then uses another law to place his life and property at the court's mercy. The victory ends with confiscation and compulsory conversion.",
@@ -153,7 +153,7 @@ module.exports = [
     url: "https://mybook.to/DcuS",
     genre: "Romance",
     date: "c. 1607–1608",
-    deck: "A prince flees a death sentence and spends years at the mercy of seas, rulers and chance. Its extraordinary reunions are not merely convenient surprises: the play makes loss last long enough for recognition itself to become a test of patience, memory and attention.",
+    deck: "Pericles solves a riddle that exposes King Antiochus’s incest with his daughter, and has to run for his life. In the years that follow he is shipwrecked, marries, loses his wife at sea in childbirth and leaves his baby daughter, Marina, to be brought up in Tarsus. The medieval poet John Gower tells the story as Chorus.",
     edition: [
       "Pericles solves the riddle by which King Antiochus conceals an incestuous relationship with his daughter, and the correct answer places him in mortal danger. His flight carries him through famine-stricken Tarsus to Pentapolis, where he survives a shipwreck, wins a tournament and marries Thaisa. On the voyage home, Thaisa appears to die while giving birth to Marina and is placed in a chest cast into the sea.",
       "Thaisa is revived by the physician Cerimon at Ephesus, while Marina grows up in the care of Cleon and Dionyza. Dionyza orders her murder, but pirates abduct Marina and sell her to a brothel in Mytilene, where her intelligence and moral authority repeatedly frustrate those who hope to profit from her. Years later, Marina restores the grief-stricken Pericles through conversation. A vision of Diana then directs him to Ephesus, where Thaisa is also recovered.",
@@ -219,7 +219,7 @@ module.exports = [
     url: "https://mybook.to/0Yw8iYt",
     genre: "Late romance",
     date: "c. 1609–1611",
-    deck: "A king's groundless jealousy destroys his household; sixteen years later, another generation begins the work of repair. The play travels from trial and bereavement to festivity and wonder, but its recovered family must still live with the people who cannot return.",
+    deck: "Leontes, King of Sicilia, decides without evidence that his wife Hermione has slept with his oldest friend, puts her on trial, and orders their newborn daughter abandoned. His son dies and Hermione is reported dead. Sixteen years pass, a bear chases a courtier offstage, and the play moves to a sheep-shearing feast in Bohemia.",
     edition: [
       "Leontes, King of Sicilia, becomes convinced that his pregnant wife Hermione is having an affair with his lifelong friend Polixenes. His certainty arrives without proof and quickly becomes state policy. He orders Camillo to poison Polixenes, imprisons Hermione, rejects the newborn Perdita and puts his wife on trial. Even Apollo's oracle cannot stop him. Only the reported deaths of his son Mamillius and Hermione break the force of his delusion.",
       "Perdita is carried to Bohemia by Antigonus, who is killed after abandoning her. Sixteen years pass. Raised by a shepherd, Perdita falls in love with Polixenes's son Florizel, while the rogue Autolycus steals, sings and trades among the sheep-shearing celebrations. When Polixenes violently opposes the match, the young couple flee to Sicilia. There Perdita's identity is recovered, the two kings are reconciled and Paulina reveals what appears to be a statue of Hermione, which moves and speaks.",
@@ -285,7 +285,7 @@ module.exports = [
     url: "https://mybook.to/23Ok",
     genre: "Tragedy / dark satire",
     date: "c. 1604–1606",
-    deck: "Timon gives as though friendship could never reach a limit, then discovers that his generosity has built a market in praise rather than a community. His answer is as absolute as his error: the lavish host becomes a furious exile who would rather condemn humankind than learn to live among imperfect people.",
+    deck: "Timon of Athens gives money, feasts and jewels to anyone who flatters him, until the money runs out. When he asks his friends for help, every one of them has an excuse. He invites them to a last banquet, serves them warm water, and goes to live in a cave outside the city, where he digs up gold.",
     edition: [
       "Timon is a wealthy Athenian patron surrounded by poets, artists, merchants, senators and dependants. He pays a prisoner's debt, supplies a dowry and gives extravagant gifts without examining his accounts. His steward Flavius knows that the estate has already been exhausted, but Timon assumes that the people enriched by his generosity will gladly return it. When creditors arrive, that faith is tested one door at a time.",
       "Lucullus, Lucius and Sempronius all refuse help, finding different language for the same betrayal. Timon invites his circle to a second banquet and serves warm water and stones before cursing Athens and withdrawing to the wilderness. There he discovers buried gold, the substance that first made false friendship possible. Instead of reclaiming his old life, he uses it to fund Alcibiades's march against the city and to expose every visitor's appetite.",

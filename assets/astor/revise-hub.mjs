@@ -183,7 +183,7 @@ function drawContents(book, state) {
   const available = new Set(availableQuizzes(book).map(quiz => quiz.id));
   const section = el('section', { class: 'rv-contents', 'aria-labelledby': 'rv-contents-title' });
   section.append(el('div', { class: 'rv-section-head' }, [
-    el('h2', { id: 'rv-contents-title', text: 'Practise one thing' }),
+    el('h2', { id: 'rv-contents-title', text: 'Quizzes' }),
     el('p', { text: 'Questions of one kind, all from ' + shortTitle(book) + '.' })
   ]));
   for (const group of GROUPS) {

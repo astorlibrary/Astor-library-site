@@ -61,7 +61,7 @@ export function buildSheet(book) {
   ]));
 
   columns.append(el('section', {}, [
-    el('h3', { text: 'How it is written' }),
+    el('h3', { text: 'Form and language' }),
     el('ul', { class: 'astor-sheet-list' }, book.techniques.slice(0, 5).map(technique =>
       el('li', {}, [el('b', { text: technique.name }), document.createTextNode(' — ' + firstSentence(technique.inThisBook || technique.definition))])))
   ]));

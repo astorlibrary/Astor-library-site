@@ -8,7 +8,7 @@ module.exports = [
     studyUrl: "https://mybook.to/HPiX",
     genre: "History",
     date: "1599",
-    deck: "A young king crosses the Channel to enforce a disputed claim and discovers that victory has a human cost. Around Henry’s great public speeches, the play keeps other voices audible: soldiers who question responsibility, civilians threatened by invasion and a Chorus who asks the audience to turn a bare stage into France.",
+    deck: "Henry V claims the French crown, takes Harfleur and, with a sick and outnumbered army, beats the French at Agincourt on St Crispin’s Day, 1415. On the way he has his old drinking companion Bardolph hanged for robbing a church, and during the battle he orders the French prisoners killed.",
     edition: [
       "Henry V begins in the council chamber, where churchmen turn a difficult genealogy into a case for war, and ends with a diplomatic marriage meant to bind England and France together. Between those scenes Shakespeare places conspiracy, siege, exhaustion, argument and the startling English victory at Agincourt.",
       "Henry can inspire a frightened army and speak privately with uncommon directness, yet the play never lets eloquence settle the moral questions around him. His threat at Harfleur, the execution of former friends, the killing of prisoners and his night-time debate with ordinary soldiers all complicate the heroic story told by the Chorus.",
@@ -86,7 +86,7 @@ module.exports = [
     url: "https://mybook.to/foeGy6",
     genre: "History trilogy",
     date: "c.1591–92",
-    deck: "Three plays follow a kingdom coming apart: first in France, then at court, and finally across the battlefields of civil war. Henry inherits two crowns as a child, but while nobles turn government into faction, Joan, Talbot, Margaret, York, Warwick and the future Richard III fight to decide what England will become.",
+    deck: "All three parts of Henry VI, the plays that made Shakespeare’s name in the early 1590s. They cover nearly fifty years, from Henry V’s funeral in 1422 to the murder of Henry VI in the Tower in 1471: the loss of France, and the Wars of the Roses as far as Tewkesbury.",
     edition: [
       "The Henry VI trilogy begins at Henry V’s funeral and ends with his son murdered in the Tower. Across the three plays, English rule in France collapses, the houses of Lancaster and York convert private claims into public war, and each apparent settlement produces the grievance that will destroy it.",
       "Reading the plays together makes their design clearer. Talbot’s abandoned army anticipates a country defeated by its own divisions; the Temple Garden roses turn an argument into an inherited badge; Jack Cade’s revolt distorts York’s aristocratic claim; and the killing of fathers and sons strips the language of honour from civil combat.",
@@ -164,7 +164,7 @@ module.exports = [
     url: "https://mybook.to/ssHU",
     genre: "History",
     date: "1613",
-    deck: "At a court built on display, favour can raise a servant to magnificence and remove a queen from history. Shakespeare and John Fletcher’s late history follows the falls of Buckingham, Katherine and Wolsey before turning towards Anne, Cranmer and the birth of the future Elizabeth I.",
+    deck: "Shakespeare’s last history play, written with John Fletcher in 1613. It follows the falls of the Duke of Buckingham, Queen Katherine and Cardinal Wolsey, and ends with the christening of the baby Elizabeth. On 29 June 1613 a cannon fired during a performance set fire to the Globe’s thatch, and the theatre burned down.",
     edition: [
       "Henry VIII moves through trials, processions, private reckonings and public ceremonies. The Duke of Buckingham is condemned on disputed testimony; Cardinal Wolsey’s wealth and influence collapse; Queen Katherine refuses to let a church court define her marriage; and Anne Bullen’s rise answers Henry’s desire for a new succession.",
       "The play is less a continuous royal biography than a sequence of ‘principal pieces’ from the reign. Its structure makes political life feel ceremonial and precarious: each great entrance may be followed by an exit, each official account by a speaker who remembers events differently. Even Wolsey, the architect of other people’s ruin, is granted an exacting recognition of his own.",
@@ -242,7 +242,7 @@ module.exports = [
     url: "https://mybook.to/gNJYoc",
     genre: "History",
     date: "c.1595–96",
-    deck: "John holds the crown; his young nephew Arthur may have the better claim. As England and France change allies, the papal legate overturns a wedding-day peace and a child becomes the prize of adult ambition, the Bastard watches principle give way to advantage—and must decide what loyalty is still worth.",
+    deck: "King John holds the English throne, and the King of France backs the claim of John’s young nephew, Arthur. A marriage patches up a peace, the Pope’s legate breaks it, and Arthur is captured. John orders Hubert to kill the boy, while Philip the Bastard, Richard the Lionheart’s illegitimate son, comments on everyone’s motives.",
     edition: [
       "King John opens with a challenge to the king’s ‘borrowed majesty’ and never allows possession to become secure right. France backs Arthur’s claim, John answers with war, and the citizens of Angers refuse to recognise either monarch until force has proved which one deserves obedience.",
       "The play’s sharpest political observer is Philip Faulconbridge, the illegitimate son of Richard the Lionheart. Free from a lawful inheritance, he sees how quickly kings, nobles and churchmen rename self-interest as honour. Yet Arthur’s fate tests the distance between seeing corruption and serving a compromised king.",
@@ -321,7 +321,7 @@ module.exports = [
     studyUrl: "https://mybook.to/ENJxO",
     genre: "Comedy",
     date: "c.1595–96",
-    deck: "The King of Navarre and three friends swear off women just before four women arrive on state business. Their academy collapses into secret sonnets, mixed-up letters and inept disguises, but the women refuse to let brilliant language count as proof of love—and the comedy ends with waiting rather than weddings.",
+    deck: "The King of Navarre and three of his lords swear to study for three years without seeing women. The Princess of France arrives on business the next day, with three ladies. The men write sonnets in secret, send them to the wrong people and visit the ladies disguised as Russians, and at the end the women give them a year to prove they mean it.",
     edition: [
       "Love’s Labour’s Lost turns an impossible oath into a test of how people use words. Navarre’s men plan to win fame through study and abstinence; the Princess of France and her ladies expose how quickly that programme depends upon exceptions, and how easily intellectual display becomes another form of vanity.",
       "Around the two courts, Armado, Moth, Costard, Jaquenetta and Holofernes create a second world of letters, errors and extravagant speech. The play’s verbal difficulty is part of its subject: Latin tags, fashionable rhetoric, puns and misread messages continually ask whether language makes contact or merely advertises the speaker.",
