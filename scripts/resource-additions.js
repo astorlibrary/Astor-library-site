@@ -48,7 +48,7 @@ module.exports = [
     readings: [
       { label: 'Rome and Egypt', title: 'The opposition keeps changing', copy: 'Roman characters call Egypt excessive and undisciplined, yet Rome is also theatrical, competitive and ruthless. The contrast tells us as much about the speaker as it does about either place.' },
       { label: 'Source and stage', title: 'History becomes performance', copy: 'Shakespeare draws heavily on North’s Plutarch but gives public history an unstable theatrical life. Messengers, reports and ceremonies compete to determine what the audience believes.' },
-      { label: 'The final acts', title: 'Defeat does not settle meaning', copy: 'Caesar wins the political contest, but Cleopatra contests his control of the story. Her last performance asks whether imperial victory can ever fully command memory, image or desire.' }
+      { label: 'The final acts', title: 'Defeat does not settle meaning', copy: 'Caesar wins the political contest, but Cleopatra contests his control of the story. Her death leaves open whether a victory in war can ever control how people remember and imagine her.' }
     ],
     note: 'When a character describes Rome, Egypt, Antony or Cleopatra, treat the description as an argument. The play rarely allows one voice to provide its final judgement.',
     relatedBooks: [{ href: '/books/antony-and-cleopatra/', label: 'Read the Antony and Cleopatra book page' }]
@@ -57,7 +57,7 @@ module.exports = [
     route: 'resources/american/langston-hughes-dont-turn-back',
     title: 'Don’t Turn Back: Langston Hughes, Martin Luther King Jr and Barack Obama',
     titleHtml: 'Don’t Turn Back',
-    description: 'Explore the afterlife of Langston Hughes’s Mother to Son in the speeches of Martin Luther King Jr and Barack Obama, with close attention to quotation, echo and political history.',
+    description: 'How Langston Hughes’s ‘Mother to Son’ turns up in the speeches of Martin Luther King Jr and Barack Obama: the quotations, the echoes and the political history.',
     deck: 'W. Jason Miller follows “Mother to Son” across twentieth- and twenty-first-century political speech, showing how Langston Hughes’s staircase reached audiences even when his name was left unspoken.',
     image: '03_dont_turn_back.png',
     url: '/presentations/?presentation=dont-turn-back',
@@ -71,9 +71,9 @@ module.exports = [
       'The Red Scare, HUAC and the pressures surrounding Hughes’s public name.'
     ],
     sectionHeading: 'A poem inside public speech',
-    sectionIntro: 'The resource asks what happens when a poem is remembered through cadence and image rather than announced as a quotation.',
+    sectionIntro: 'The guide looks at what happens when a poem is remembered through its rhythm and its images and never announced as a quotation.',
     readings: [
-      { label: 'Langston Hughes', title: 'The staircase carries a voice', copy: '“Mother to Son” turns perseverance into a spoken journey. Its power lies not only in the staircase metaphor but in the mother’s intimate, insistent act of address.' },
+      { label: 'Langston Hughes', title: 'The staircase carries a voice', copy: 'In ‘Mother to Son’ a mother describes her life as a staircase she has kept climbing. The staircase is the famous part, but the poem’s force is also in the way the mother talks straight to her son.' },
       { label: 'Martin Luther King Jr', title: 'Echo becomes shared language', copy: 'King repeatedly returned to the poem’s movement and phrasing. The borrowing is not merely decorative: it lets different voices and histories meet within a living tradition of speech.' },
       { label: 'Barack Obama', title: 'The image travels again', copy: 'Obama’s 2008 language renews the ascent for another political moment. Following that return reveals how literary influence can survive through memory, rhythm and communal recognition.' }
     ],
@@ -130,9 +130,9 @@ module.exports = [
     sectionHeading: 'The portrait keeps the history.',
     sectionIntro: 'Dorian’s wish separates appearance from consequence, but the novel never lets that separation become secure.',
     readings: [
-      { label: 'Influence', title: 'Language acts upon a life', copy: 'Lord Henry’s conversation gives Dorian ways to imagine youth, pleasure and loss. The novel asks whether influence excuses a choice or makes responsibility more difficult to understand.' },
+      { label: 'Influence', title: 'Language acts upon a life', copy: 'Lord Henry’s conversation gives Dorian ways to imagine youth, pleasure and loss. Does Lord Henry’s influence excuse what Dorian does, or does it make his responsibility harder to pin down?' },
       { label: 'Art and secrecy', title: 'The surface does not stay innocent', copy: 'Basil’s portrait begins as art and becomes evidence. Its changing body records the history that Dorian’s unchanged face allows society to ignore.' },
-      { label: 'Oscar Wilde', title: 'Biography matters, and has limits', copy: 'The novel’s revisions, reception and Wilde’s later trials belong to its history. They deepen the context without turning every character or desire into a disguised fact about the author.' }
+      { label: 'Oscar Wilde', title: 'Biography matters, and has limits', copy: 'The novel’s revisions, reception and Wilde’s later trials belong to its history. They add to the context without making every character or desire into a coded fact about Wilde.' }
     ],
     note: 'Track each moment when somebody looks: at Dorian, at the portrait, at a performance or at another person. Seeing in this novel is never the same as knowing.',
     relatedBooks: [{ href: '/books/dorian-gray/', label: 'Read the Picture of Dorian Gray book page' }]
@@ -157,8 +157,8 @@ module.exports = [
     sectionHeading: 'How certainty is manufactured',
     sectionIntro: 'The play’s predictions matter because characters interpret them, act upon them and mistake riddling language for safety.',
     readings: [
-      { label: 'The witches', title: 'A greeting is not an instruction', copy: 'The sisters name possible futures, but Macbeth turns possibility into a private demand. The space between prophecy and action is where responsibility remains.' },
-      { label: 'After Duncan', title: 'Power cannot finish the crime', copy: 'The crown does not end Macbeth’s fear. Blood, sleep and the imagined return of the dead show that possession of power creates new dangers rather than closing the old ones.' },
+      { label: 'The witches', title: 'A greeting is not an instruction', copy: 'The sisters name possible futures, and Macbeth hears one of them as an order. The space between prophecy and action is where responsibility remains.' },
+      { label: 'After Duncan', title: 'Power cannot finish the crime', copy: 'The crown does not end Macbeth’s fear. Blood, sleeplessness and the return of the dead show that holding power brings new dangers and does not end the old ones.' },
       { label: 'Equivocation', title: 'Words become traps', copy: 'The later apparitions tell truths in forms designed to mislead. Macbeth hears guarantees because he has learned to choose the meaning that best protects his confidence.' }
     ],
     note: 'For each prophecy, write down its exact words, Macbeth’s interpretation and what actually happens. The differences reveal how the tragedy uses language.',
@@ -168,7 +168,7 @@ module.exports = [
     route: 'resources/pamela/psychological-analysis',
     title: 'Pamela’s Psyche: A Psychological Analysis',
     titleHtml: '<em>Pamela’s</em> Psyche',
-    description: 'A free psychological analysis of Samuel Richardson’s Pamela, exploring its epistolary form, disputed reception, class, gender, virtue and the heroine’s contradictory inner life.',
+    description: 'A free guide to the psychology of Samuel Richardson’s Pamela: the letters, the arguments it started, class, gender, virtue and a heroine who contradicts herself.',
     deck: 'A study of Pamela’s inner life and epistolary narration, covering fear, hesitation, divided feelings, class, gender and the novel’s disputed reception.',
     image: '07_pamelas_psyche.png',
     url: '/presentations/?presentation=pamelas-psyche',
@@ -211,11 +211,11 @@ module.exports = [
     sectionHeading: 'Voice is part of the argument',
     sectionIntro: 'The poems do not only describe communities under pressure. Their language and performance create a public space in which those communities speak for themselves.',
     readings: [
-      { label: 'Language', title: 'Creole refuses a borrowed centre', copy: 'Johnson’s spelling and grammar are not departures from an imagined neutral English. They carry history, sound and authority, asking the reader to meet the poem on its own linguistic ground.' },
-      { label: 'Performance', title: 'Rhythm gathers an audience', copy: 'The printed line is one part of the work. Repetition, pace and dub performance turn individual testimony into an address that can be heard and answered collectively.' },
-      { label: 'Policing', title: 'Power enters ordinary space', copy: 'Streets, homes and workplaces become political through surveillance and confrontation. The poems measure not an abstract institution but its daily effect upon movement, safety and belonging.' }
+      { label: 'Language', title: 'Writing in Creole', copy: 'Johnson’s spelling and grammar are not departures from an imagined neutral English. They carry history, sound and authority, asking the reader to meet the poem on its own linguistic ground.' },
+      { label: 'Performance', title: 'Rhythm gathers an audience', copy: 'The printed line is one part of the work. Repetition, pace and dub performance make one person’s testimony into something a crowd can hear and answer.' },
+      { label: 'Policing', title: 'Power enters ordinary space', copy: 'Streets, homes and workplaces become political through surveillance and confrontation. The poems show what the institution does to people day by day: where they can go, whether they are safe, whether they belong.' }
     ],
-    note: 'Read the lines aloud before paraphrasing them. Sound will not replace analysis, but it will reveal emphasis, pace and collective address that the page alone can hide.',
+    note: 'Read the lines aloud before paraphrasing them. Listening will not replace analysis, but it brings out emphasis, pace and the sense of a crowd being addressed, which the page can hide.',
     relatedBooks: []
   },
   {
@@ -236,7 +236,7 @@ module.exports = [
       'Language, imagery, staging and useful routes into essays.'
     ],
     sectionHeading: 'Who can make a king?',
-    sectionIntro: 'The play tests the difference between possessing a title and persuading a country that the title still carries authority.',
+    sectionIntro: 'The play shows the difference between holding a title and persuading a country that the title still means something.',
     readings: [
       { label: 'Richard', title: 'Language becomes a kingdom', copy: 'As Richard loses practical command, his verbal power grows more elaborate. His self-dramatisation can reveal suffering while also showing why performance alone cannot recover political control.' },
       { label: 'Bolingbroke', title: 'Action looks like necessity', copy: 'Bolingbroke presents each advance as a limited response to injustice. The accumulation of those apparently practical steps makes a revolution without requiring him to name it at the beginning.' },
@@ -266,7 +266,7 @@ module.exports = [
     sectionIntro: 'The play changes country, generation and dramatic form, but it does not pretend that time simply erases what Leontes has done.',
     readings: [
       { label: 'Sicilia', title: 'Jealousy becomes government', copy: 'Leontes converts a private certainty into public law. Because the accusation comes from a king, misreading damages a marriage, a court, a child and the future of the state.' },
-      { label: 'Bohemia', title: 'Another kind of play begins', copy: 'The pastoral world makes room for youth, music, disguise and comic energy. Yet class and paternal authority remain active, so the change of tone is an experiment rather than an escape.' },
+      { label: 'Bohemia', title: 'Another kind of play begins', copy: 'In the countryside there is room for youth, music, disguise and comedy. But class and fathers still have power there, so the change of tone is an experiment, not an escape.' },
       { label: 'The statue', title: 'Wonder does not cancel loss', copy: 'The final scene offers restoration while keeping its mechanism uncertain. Hermione can return; Mamillius cannot. Reconciliation matters because the play preserves that difference.' }
     ],
     note: 'When the play changes tone, do not leave the earlier acts behind. Ask what Bohemia remembers from Sicilia and what the final wonder is unable to restore.',
@@ -274,7 +274,7 @@ module.exports = [
   },
   {
     "url": "/presentations/?presentation=pope-lock-and-criticism",
-    "deck": "Explore Pope’s two poems through their versions, reception, poetic machinery and close reading.",
+    "deck": "Pope’s two poems: the versions, how they were received, the poetic machinery, and close readings.",
     "includes": [
       "The structure and reception of An Essay on Criticism.",
       "The incident behind The Rape of the Lock and its successive versions.",
@@ -334,7 +334,7 @@ module.exports = [
   },
   {
     "url": "/presentations/?presentation=arden-of-faversham-1592",
-    "deck": "Explore the murder records, domestic tragedy, characters and authorship questions behind Arden of Faversham.",
+    "deck": "The records of the Faversham murder, domestic tragedy as a form, the characters, and the question of who wrote the play.",
     "includes": [
       "The killing, its aftermath and Holinshed’s account.",
       "Petty treason, chronology and domestic tragedy.",
@@ -364,7 +364,7 @@ module.exports = [
   },
   {
     "url": "/presentations/?presentation=dracula-1897-origins",
-    "deck": "Explore Dracula’s composition through Whitby, Stoker’s reading and notes, narrative form and publication history.",
+    "deck": "How Dracula was written: Whitby, Stoker’s reading and notes, the form of the story, and its publication.",
     "includes": [
       "Whitby and Stoker’s documented reading.",
       "The notes and misconceptions about Vlad the Impaler.",
@@ -514,7 +514,7 @@ module.exports = [
   },
   {
     "url": "/presentations/?presentation=iliad-samuel-butler",
-    "deck": "Explore Butler’s translation choices alongside the Iliad’s scope, composition and transmission.",
+    "deck": "Butler’s choices as a translator, set beside the scope of the Iliad and how it was composed and handed down.",
     "includes": [
       "The base text and Samuel Butler’s approach to translation.",
       "English prose style and the use of Roman names.",
@@ -544,7 +544,7 @@ module.exports = [
   },
   {
     "url": "/presentations/?presentation=white-fang-1906",
-    "deck": "Explore White Fang through London’s northern experience, animal perspective and the nature-fakers controversy.",
+    "deck": "London’s time in the north, the story told from an animal’s point of view, and the row over the ‘nature fakers’.",
     "includes": [
       "The book and its relationship to London’s other animal fiction.",
       "London’s North and writing from an animal’s perspective.",
@@ -574,7 +574,7 @@ module.exports = [
   },
   {
     "url": "/presentations/?presentation=paradise-lost-publication-and-form",
-    "deck": "Explore Paradise Lost through Milton’s circumstances, manuscript, publishing contract, revisions and verse.",
+    "deck": "Milton’s circumstances when he wrote Paradise Lost, the manuscript, the contract for it, his revisions and his verse.",
     "includes": [
       "Milton’s circumstances and blindness.",
       "The surviving manuscript and publishing contract.",
@@ -604,7 +604,7 @@ module.exports = [
   },
   {
     "url": "/presentations/?presentation=duchess-of-malfi-1623",
-    "deck": "Explore Webster’s play through its title page, historical sources, cast list, indoor staging and tragic structure.",
+    "deck": "Webster’s play through its title page, its historical sources, the cast list, indoor staging and the shape of the tragedy.",
     "includes": [
       "The printed book and its title-page claims.",
       "The historical Duchess and the story’s route to London.",
@@ -694,7 +694,7 @@ module.exports = [
   },
   {
     "url": "/presentations/?presentation=puddnhead-wilson-1894",
-    "deck": "Explore Pudd’nhead Wilson’s composition, racial classifications, fingerprints, courtroom and unsettled justice.",
+    "deck": "How Pudd’nhead Wilson was written, the racial categories of the time, fingerprints, the courtroom, and a verdict that does not feel like justice.",
     "includes": [
       "The novel’s origins and the physical book.",
       "Roxy and the language of racial fractions.",
@@ -754,7 +754,7 @@ module.exports = [
   },
   {
     "url": "/presentations/?presentation=sir-thomas-more-manuscript",
-    "deck": "Explore the Sir Thomas More manuscript through its hands, censorship, riot scenes and attribution evidence.",
+    "deck": "The Sir Thomas More manuscript: the different hands, the censor, the riot scenes and the evidence for Shakespeare.",
     "includes": [
       "The manuscript as an object and its different hands.",
       "The censor and the Ill May Day riot.",
@@ -784,7 +784,7 @@ module.exports = [
   },
   {
     "url": "/presentations/?presentation=moonstone-1868",
-    "deck": "Explore The Moonstone through its composition, narrators, historical prologue, detection and reception.",
+    "deck": "How The Moonstone was written, its narrators, the historical prologue, the detection and how readers received it.",
     "includes": [
       "The book’s composition and its narrators.",
       "Narrative structure and the historical prologue.",

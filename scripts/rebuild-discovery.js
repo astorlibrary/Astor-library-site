@@ -413,7 +413,7 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“man is not truly one”',
-    description: 'Follow Jekyll’s theory of two selves as his own vocabulary turns that tidy pair into a crowd of inhabitants.',
+    description: 'Jekyll’s theory of two selves, and the sentence where he guesses there may be many more.',
     href: '/passage-room/jekyll-duality/', image: '/Jekyll%20and%20Hyde.png', imageAlt: 'Astor Library Jekyll and Hyde cover',
     relatedBooks: ['/books/jekyll-and-hyde/'], search: 'Jekyll Hyde Stevenson duality divided self truly two confession Gothic close reading language'
   },
@@ -455,7 +455,7 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Are there no prisons?”',
-    description: 'Scrooge turns a request for direct help into a cold question about prisons, workhouses and the Poor Law.',
+    description: 'The charity collectors visit Scrooge: ‘Are there no prisons?’, the workhouses and the Poor Law.',
     href: '/passage-room/christmas-carol-prisons/', image: '/A%20Christmas%20Carol.png', imageAlt: 'Astor Library A Christmas Carol cover',
     relatedBooks: ['/books/a-christmas-carol/'], search: 'Christmas Carol Dickens Scrooge prisons workhouses Poor Law poverty charity Stave One close reading'
   },
@@ -521,7 +521,7 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“My mistress’ eyes are nothing like the sun”',
-    description: 'Shakespeare takes the blazon apart comparison by comparison — wires, reeks, coral — and the couplet turns the demolition into the compliment.',
+    description: 'Shakespeare takes the blazon apart comparison by comparison, wires, reeks, coral, and the couplet says that this is the real compliment.',
     href: '/passage-room/sonnet-130-false-compare/', image: '/Shakespeare%27s%20Sonnets%20Main%20Cover.png', imageAlt: 'Astor Library Shakespeare’s Sonnets cover',
     relatedBooks: ['/books/shakespeares-sonnets/'], search: 'Shakespeare Sonnet 130 mistress eyes blazon dark lady false compare anti-Petrarchan close reading'
   },
@@ -533,7 +533,7 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Water, water, every where”',
-    description: 'Copper sky, painted ocean, and a rot in the sea that only the blessing of the snakes will undo.',
+    description: 'Copper sky, painted ocean, and a sea that rots until the Mariner blesses the water-snakes.',
     href: '/passage-room/ancient-mariner-water-water/', image: '/Rime%20of%20the%20Ancient%20Mariner%20Main%20Cover.png', imageAlt: 'Astor Library Rime of the Ancient Mariner cover',
     relatedBooks: ['/books/the-rime-of-the-ancient-mariner/'], search: 'Rime of the Ancient Mariner Coleridge water water everywhere painted ship painted ocean albatross ballad close reading'
   },
@@ -605,7 +605,7 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“We few, we happy few, we band of brothers”',
-    description: 'Henry turns honour into arithmetic, offers anyone who wants it a passport home, and promises the day will be remembered with advantages.',
+    description: 'Henry says that the fewer men, the greater share of honour, offers any man who wants it a passport home, and promises the day will be remembered with advantages.',
     href: '/passage-room/henry-v-band-of-brothers/', image: '/Henry%20V%20Main%20Cover.jpg', imageAlt: 'Astor Library Henry V cover',
     relatedBooks: ['/books/henry-v/'], search: 'Henry V Shakespeare band of brothers St Crispin Crispian Agincourt Act 4 Scene 3 rhetoric honour close reading'
   },
@@ -629,7 +629,7 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“a wild rose-bush”',
-    description: 'The opening of The Scarlet Letter: the black flower of society, the rose at the prison door and a narrator who refuses to decide.',
+    description: 'The opening of The Scarlet Letter: the black flower of society, the rose at the prison door and a narrator who hands the reader a flower.',
     href: '/passage-room/scarlet-letter-rose-bush/', image: '/The%20Scarlet%20Letter%20%28Main%20Cover%29%20.png', imageAlt: 'Astor Library Scarlet Letter cover',
     relatedBooks: ['/books/the-scarlet-letter/'], search: 'Scarlet Letter Hawthorne prison door rose-bush Ann Hutchinson black flower Chapter 1 symbolism close reading'
   },
@@ -641,7 +641,7 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Who are you?”',
-    description: 'The puns that turn idiom into metaphysics and the chrysalis argument the child wins — Alice and the Caterpillar.',
+    description: 'Alice and the Caterpillar: ‘Who are YOU?’, the puns, and the argument about chrysalises that Alice wins.',
     href: '/passage-room/alice-in-wonderland-who-are-you/', image: '/Alice%27s%20Adventures%20in%20Wonderland%20Main%20Cover.png', imageAlt: 'Astor Library Alice in Wonderland cover',
     relatedBooks: ['/books/alices-adventures-in-wonderland/'], search: 'Alice in Wonderland Carroll Caterpillar who are you identity chrysalis explain yourself Chapter 5 nonsense logic close reading'
   },
@@ -707,7 +707,7 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“such a book as Robinson Crusoe never was written”',
-    description: 'Gabriel Betteredge’s devotion to Robinson Crusoe at the opening of The Moonstone,: the comic narrator and the detective novel built on a voice.',
+    description: 'Gabriel Betteredge and his Robinson Crusoe at the opening of The Moonstone: a comic narrator, and a detective novel told in voices.',
     href: '/passage-room/moonstone-robinson-crusoe/', image: '/The%20Moonstone%20Main%20Cover.png', imageAlt: 'Astor Library The Moonstone cover',
     relatedBooks: ['/books/the-moonstone/'], search: 'Moonstone Wilkie Collins Betteredge Robinson Crusoe detective novel voice narrator testimony close reading'
   },

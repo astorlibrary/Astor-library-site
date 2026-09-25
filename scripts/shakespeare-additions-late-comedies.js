@@ -11,7 +11,7 @@ module.exports = [
     edition: [
       "This Astor Library Edition presents the complete play with scene summaries, line numbering and explanatory notes. The support is designed to make the action clear without smoothing away its oddness: this is a play in which solemn ritual sits beside broad comedy, chivalric courtesy beside sudden violence, and apparent choice beside the rule of gods and circumstance.",
       "The introductory material places the play within the late collaborative phase of Shakespeare’s career and explains John Fletcher’s part in its composition. It also follows the story back through Chaucer’s ‘Knight’s Tale’ to Boccaccio, showing what the dramatists retained, what they altered and why the newly invented story of the Jailer’s Daughter changes the weight of the whole play.",
-      "Further sections examine the language of kinship, the uneasy treatment of Emilia, the contrast between courtly and popular worlds, the three temple scenes and the play’s complicated ending. Questions for reading and performance encourage readers to test the claims made about nobility rather than simply accepting the judgements pronounced by Theseus and his court."
+      "Further sections examine the language of kinship, the uneasy treatment of Emilia, the contrast between courtly and popular worlds, the three temple scenes and the play’s complicated ending. Questions for reading and performance help readers judge the claims made about nobility for themselves, whatever Theseus and his court pronounce."
     ],
     facts: [
       {
@@ -35,12 +35,12 @@ module.exports = [
       {
         label: "Movement one",
         title: "A wedding halted by grief",
-        body: "Theseus and Hippolyta’s wedding procession is interrupted by three queens whose husbands have been killed by Creon and denied burial. Their appeal turns celebration into military action. Theseus defeats Thebes, and the wounded cousins Palamon and Arcite are found on the battlefield and carried to an Athenian prison."
+        body: "Theseus and Hippolyta’s wedding procession is interrupted by three queens whose husbands have been killed by Creon and denied burial. The queens’ appeal sends the wedding party off to war. Theseus defeats Thebes, and the wounded cousins Palamon and Arcite are found on the battlefield and carried to an Athenian prison."
       },
       {
         label: "Movement two",
         title: "The prison window",
-        body: "From their cell, the cousins see Emilia walking in a garden. Their sworn unity collapses almost at once as each claims that his love is prior and more honourable. Arcite is released but banished from Athens; he returns in disguise and enters Emilia’s service. The Jailer’s Daughter, meanwhile, frees Palamon because she believes her devotion will be returned."
+        body: "From their cell, the cousins see Emilia walking in a garden. Their sworn friendship collapses within minutes, as each claims that he loved her first and more honourably. Arcite is released but banished from Athens; he returns in disguise and enters Emilia’s service. The Jailer’s Daughter, meanwhile, frees Palamon because she believes her devotion will be returned."
       },
       {
         label: "Movement three",
@@ -50,12 +50,12 @@ module.exports = [
       {
         label: "Movement four",
         title: "Desire, illness and preparation",
-        body: "Each knight is allowed to gather three companions for the contest. Emilia studies portraits of the cousins but cannot make the choice that the men and Theseus demand. Away from the court, the Daughter’s disordered speech and behaviour are treated by a Doctor who instructs her former Wooer to impersonate Palamon, turning imagined love into a proposed cure."
+        body: "Each knight is allowed to gather three companions for the contest. Emilia studies portraits of the cousins but cannot make the choice that the men and Theseus demand. Away from the court, the Jailer’s Daughter is treated by a Doctor who tells her former Wooer to pretend to be Palamon, as a cure for her madness."
       },
       {
         label: "Movement five",
         title: "Three prayers and one broken victory",
-        body: "Palamon prays to Venus for Emilia, Arcite asks Mars for victory, and Emilia asks Diana to remain unmarried or be given to the man who loves her best. Arcite wins the tournament, yet a divinely disturbed horse throws and fatally injures him. Before dying, he gives Emilia to Palamon, allowing every prayer to be answered while leaving the cost of that settlement painfully visible."
+        body: "Palamon prays to Venus for Emilia, Arcite asks Mars for victory, and Emilia asks Diana to remain unmarried or be given to the man who loves her best. Arcite wins the tournament, yet a divinely disturbed horse throws and fatally injures him. Before he dies he gives Emilia to Palamon, so that every prayer is answered and the victory is also a funeral."
       }
     ],
     readings: [
@@ -64,14 +64,14 @@ module.exports = [
         title: "What happens to the cousins’ friendship?",
         paragraphs: [
           "Palamon and Arcite first describe their kinship as something stronger than imprisonment, defeat or fortune. Their language imagines two lives joined in a single honour. The sight of Emilia does not gently weaken that bond; it converts intimacy into possession and makes each man reinterpret the other as a traitor.",
-          "Their later duel preserves the manners of friendship even as it attempts to destroy the friend. They feed, dress and arm one another before fighting. On stage, that mixture of tenderness and aggression can make their rivalry look heroic, absurd or both at once. The play repeatedly asks whether chivalric form dignifies violence or merely decorates it."
+          "Their later duel preserves the manners of friendship even as it attempts to destroy the friend. They feed, dress and arm one another before fighting. On stage the mixture of tenderness and aggression can make their rivalry look heroic, absurd or both. The tournament is chivalry at its most formal, and it is still a fight to the death."
         ]
       },
       {
         label: "Close reading",
         title: "Emilia and the language of choice",
         paragraphs: [
-          "The court speaks as though Emilia were the reward that gives male combat its meaning, but she is far less certain than the tournament requires. Her memory of Flavina, the girl she loved in childhood, establishes an emotional history untouched by either cousin. Her prayer to Diana expresses not indecision alone but a wish to escape the terms on which others have framed her future.",
+          "The court speaks as though Emilia were the reward that gives male combat its meaning, but she is far less certain than the tournament requires. Her memory of Flavina, the girl she loved in childhood, establishes an emotional history untouched by either cousin. Her prayer to Diana shows that she would rather have neither of them, and would like to escape the future others have planned for her.",
           "Productions must decide how much freedom Emilia has at the end. She can receive Palamon as the survivor chosen by providence, or appear trapped by a sequence of decisions made around her. Her silences, reactions and physical place during the tournament therefore matter as much as the formal speeches of the men."
         ]
       },
@@ -79,8 +79,8 @@ module.exports = [
         label: "Close reading",
         title: "The Jailer’s Daughter outside the romance",
         paragraphs: [
-          "The unnamed Daughter gives the play a second account of consuming love. Unlike the aristocratic knights, she cannot turn desire into an authorised contest. Helping Palamon escape endangers both her life and her father’s, while Palamon scarcely recognises that she has acted for him. Rank makes her devotion invisible to the courtly story.",
-          "Her songs, fragments and shifting images have often been compared with Ophelia’s language in Hamlet, but the surrounding action is different. Her suffering becomes material for diagnosis, performance and substitution when the Wooer is told to pretend to be Palamon. The proposed cure can seem compassionate, unsettling or brutally convenient, and the play never supplies an easy answer."
+          "The unnamed Daughter gives the play a second account of consuming love. Unlike the knights, she has no tournament in which to fight for the man she loves. Helping Palamon escape endangers both her life and her father’s, while Palamon scarcely recognises that she has acted for him. Rank makes her devotion invisible to the courtly story.",
+          "Her songs, fragments and shifting images have often been compared with Ophelia’s language in Hamlet, but the surrounding action is different. Her suffering becomes material for diagnosis, performance and substitution when the Wooer is told to pretend to be Palamon. The cure can seem kind, disturbing or brutally convenient, and the play gives no easy answer."
         ]
       }
     ],
@@ -93,7 +93,7 @@ module.exports = [
       {
         label: "Authorship",
         title: "A play made by two dramatists",
-        body: "The 1634 quarto attributes the play to Fletcher and Shakespeare, and modern scholarship broadly accepts the collaboration. Differences in vocabulary, metre and dramatic habit allow editors to propose divisions of labour, although performance turns those separate contributions into one continuous event. The collaboration belongs to the period in which Fletcher was becoming a leading dramatist for the King’s Men."
+        body: "The 1634 quarto attributes the play to Fletcher and Shakespeare, and modern scholarship broadly accepts the collaboration. Differences in vocabulary, metre and dramatic habit let editors divide the play between the two writers, although in performance it runs as one. The collaboration belongs to the period in which Fletcher was becoming a leading dramatist for the King’s Men."
       },
       {
         label: "Performance",
@@ -225,7 +225,7 @@ module.exports = [
         title: "Cressida watched and judged",
         paragraphs: [
           "Cressida is often described by other characters before she can define herself. Pandarus advertises her, Troilus idealises her, the Trojan council exchanges her, and the Greek commanders test her in public. Even the scene most often taken as proof of her betrayal is watched and interpreted by Troilus, Ulysses and Thersites from concealment.",
-          "None of this erases her promise to Troilus or the pain caused by its breaking, but it changes the conditions under which judgement is made. Her wit is partly defence, and her rapid accommodation to the Greek camp may be read as appetite, fear or the work of survival. The scene refuses to grant the audience a private access to her mind."
+          "None of this erases her promise to Troilus or the pain caused by its breaking, but it changes the conditions under which judgement is made. Her wit is partly defence, and her rapid accommodation to the Greek camp may be read as appetite, fear or the work of survival. The scene gives the audience no way into her thoughts."
         ]
       },
       {
@@ -238,10 +238,10 @@ module.exports = [
       },
       {
         label: "Close reading",
-        title: "The undoing of heroic language",
+        title: "Heroic language falls apart",
         paragraphs: [
           "Both armies possess famous names, yet the play repeatedly places reputation beside bodily appetite, commercial exchange and disease. Thersites describes the war as lust dressed up as honour, while Helen herself becomes a disputed object whose value is measured against the lives already lost.",
-          "Hector understands that keeping Helen cannot be morally defended, but he supports the war after appealing to honour. Achilles secures fame through an ambush rather than the fair fight associated with epic heroism. The play does not merely replace noble heroes with villains; it shows intelligent people continuing to serve standards that their own actions have emptied out."
+          "Hector understands that keeping Helen cannot be morally defended, but he supports the war after appealing to honour. Achilles wins fame by having his Myrmidons surround Hector when he is unarmed. The play does not merely replace noble heroes with villains; it shows intelligent people continuing to serve standards that their own actions have emptied out."
         ]
       }
     ],
@@ -259,7 +259,7 @@ module.exports = [
       {
         label: "Genre",
         title: "Comedy without release, tragedy without closure",
-        body: "The play has been called a problem play, satire, comedy, tragedy and history. It contains comic mediation and sexual intrigue, but no marriage or restored community; it includes the death of Hector, but does not end with Troy’s fall or Troilus’s death. Its resistance to a satisfying finish is part of its judgement on a culture that keeps talking after its values have failed."
+        body: "The play has been called a problem play, satire, comedy, tragedy and history. It contains comic mediation and sexual intrigue, but no marriage or restored community; it includes the death of Hector, but does not end with Troy’s fall or Troilus’s death. It has no neat ending, and the characters go on talking after everything they believed in has failed."
       }
     ],
     characters: [
@@ -273,7 +273,7 @@ module.exports = [
       },
       {
         name: "Pandarus",
-        body: "Cressida’s uncle and the tireless intermediary between the lovers. Comic, intrusive and increasingly unwell, he turns private desire into social transaction and leaves the audience with the play’s bitter final address."
+        body: "Cressida’s uncle and the tireless intermediary between the lovers. Comic, meddling and increasingly ill, he treats love as a deal and speaks the play’s bitter last lines to the audience."
       },
       {
         name: "Hector",
@@ -334,7 +334,7 @@ module.exports = [
     edition: [
       "This Astor Library Edition presents the complete play with scene summaries, line numbering and explanatory notes. Its guidance keeps track of the twin plot and the movement between Orsino’s court and Olivia’s household, while giving songs, jokes and shifts in address the attention they require in performance.",
       "The contextual sections explain the festive associations of Twelfth Night, the first recorded performance at the Middle Temple in 1602 and the theatrical effect of Viola’s disguise on a stage where female roles were originally played by boys. The play’s chief narrative source is set beside Shakespeare’s changes to Olivia, Malvolio, Feste and the disorderly household plot.",
-      "Close readings explore desire, mourning, gender, self-knowledge and the cruelty within festivity. The page also follows what the final recognitions do not settle: Antonio’s isolation, Malvolio’s vow of revenge and the shadows carried by Feste’s last song after the marriages have been arranged."
+      "Close readings of desire, mourning, gender, self-knowledge and the cruelty in the festivities. The page also follows what the final recognitions do not settle: Antonio’s isolation, Malvolio’s vow of revenge and the shadows carried by Feste’s last song after the marriages have been arranged."
     ],
     facts: [
       {
@@ -363,7 +363,7 @@ module.exports = [
       {
         label: "Movement two",
         title: "The messenger becomes the message",
-        body: "Orsino sends Cesario to plead his cause, but Olivia responds to the messenger rather than the master. A ring sent after Cesario reveals the new love to Viola, who has herself fallen for Orsino. Elsewhere, Sebastian is alive and travelling with Antonio, the sailor who rescued him and whose attachment places him in danger."
+        body: "Orsino sends Cesario to plead his cause, and Olivia falls for the messenger. A ring sent after Cesario reveals the new love to Viola, who has herself fallen for Orsino. Elsewhere, Sebastian is alive and travelling with Antonio, the sailor who rescued him and whose attachment places him in danger."
       },
       {
         label: "Movement three",
@@ -387,14 +387,14 @@ module.exports = [
         title: "Viola, Cesario and the words between identities",
         paragraphs: [
           "Viola’s disguise is practical before it becomes emotional: alone in an unfamiliar country, she creates Cesario as a means of work and protection. Yet the role soon places her inside other people’s desires. Orsino trusts Cesario with an intimacy he does not offer elsewhere, while Olivia’s attraction makes the supposed boundary between male and female unstable.",
-          "Viola does not simply remove a costume and return to an unchanged self. Her language frequently holds several meanings at once, allowing her to speak as Cesario, as Viola and as the absent woman she cannot safely declare. In performance, voice, clothing and gesture determine how much Orsino or Olivia senses before the formal recognition."
+          "Viola does not simply remove a costume and return to an unchanged self. Her lines often mean more than one thing, so that she can speak as Cesario, as Viola, and as the woman she cannot safely admit to being. In performance, voice, clothing and gesture determine how much Orsino or Olivia senses before the formal recognition."
         ]
       },
       {
         label: "Close reading",
         title: "A comedy about imagined lovers",
         paragraphs: [
-          "Orsino delights in the experience of loving Olivia before he knows her closely. Olivia turns an eloquent stranger into the object of immediate passion. Malvolio reads a manufactured letter as confirmation of the future he already wants. Each character believes desire reveals a truth, while the audience can see how often it produces an attractive fiction.",
+          "Orsino delights in the experience of loving Olivia before he knows her closely. Olivia falls in love with an eloquent stranger after one interview. Malvolio reads a manufactured letter as confirmation of the future he already wants. Each character believes desire reveals a truth, while the audience can see how often it produces an attractive fiction.",
           "Viola’s patience appears to offer a contrast, but even she imagines time solving a knot she cannot untie. The comedy works by allowing longing to circulate through messengers, tokens, costumes and mistaken bodies. Its final pairings bring social order, though they do not prove that every character has fully understood the person beside them."
         ]
       },
@@ -403,7 +403,7 @@ module.exports = [
         title: "Where festivity becomes punishment",
         paragraphs: [
           "Malvolio is vain, censorious and eager to imagine himself above the household. Those faults make the forged letter persuasive, but they do not by themselves explain the severity of his confinement. Feste’s disguise as Sir Topas allows the licensed fool to control what counts as sanity, and the joke becomes darkest when Malvolio is denied ordinary evidence about his surroundings.",
-          "The final scene exposes the trick but does not absorb its victim into the comic settlement. Malvolio’s promise of revenge is both an interruption and a judgement. Alongside Antonio’s uncertain place and Feste’s weather-beaten song, it prevents celebration from becoming a simple claim that all loss has been repaired."
+          "The final scene exposes the trick but does not absorb its victim into the comic settlement. Malvolio’s ‘I’ll be revenged on the whole pack of you’ interrupts the celebrations and judges them. Alongside Antonio’s uncertain place and Feste’s weather-beaten song, it prevents celebration from becoming a simple claim that all loss has been repaired."
         ]
       }
     ],
@@ -411,7 +411,7 @@ module.exports = [
       {
         label: "Festivity",
         title: "The last night of Christmas",
-        body: "Twelfth Night was associated with the end of Christmas celebration, when music, drinking, disguise and role reversal could suspend ordinary discipline. Sir Toby’s household embodies that festive licence, while Malvolio attempts to impose sobriety and hierarchy. The play enjoys disorder but also asks who pays when a temporary holiday grants one group power over another."
+        body: "Twelfth Night was associated with the end of Christmas celebration, when music, drinking, disguise and role reversal could suspend ordinary discipline. Sir Toby’s household embodies that festive licence, while Malvolio attempts to impose sobriety and hierarchy. The play enjoys disorder, and it also shows who suffers when a holiday gives one group power over another."
       },
       {
         label: "Performance",
@@ -439,7 +439,7 @@ module.exports = [
       },
       {
         name: "Sebastian",
-        body: "Viola’s twin, rescued by Antonio and equally convinced that his sibling has died. His resemblance to Viola resolves the comic confusions, although his rapid marriage to Olivia gives him a happiness built upon mistaken identity."
+        body: "Viola’s twin, rescued by Antonio and equally convinced that his sibling has died. His likeness to Viola clears up the confusions, though he marries Olivia within a day, and she thought she was marrying Cesario."
       },
       {
         name: "Malvolio",
@@ -495,7 +495,7 @@ module.exports = [
     edition: [
       "This Astor Library Edition presents the complete play with scene summaries, line numbering and explanatory notes. The support follows the movements between Verona, Milan and the forest, clarifies the traffic in letters, rings and disguises, and gives the servants’ prose comedy its place beside the unsettled story of their masters.",
       "The introductory material considers the play as an early experiment in patterns Shakespeare would revisit: friends divided by desire, a woman travelling in male disguise, lovers banished into green space and recognition delayed until the final scene. Its debt to the story of Felismena in Jorge de Montemayor’s Diana is explained without treating the play as a mere rehearsal for later comedies.",
-      "Close-reading sections concentrate on constancy, male friendship, Julia and Silvia’s acts of resistance, and the troubling speed of the final reconciliation. The ending is addressed plainly, including Proteus’s threat of sexual violence and Valentine’s apparent offer of Silvia, so that readers can distinguish a conventional comic finish from the difficult actions the text asks a company to stage."
+      "Close-reading sections concentrate on constancy, male friendship, Julia and Silvia’s acts of resistance, and the troubling speed of the final reconciliation. The ending is discussed plainly, including Proteus’s threat of rape and Valentine’s apparent offer of Silvia to him, so that readers can separate the conventional comic finish from what the text asks a company to stage."
     ],
     facts: [
       {
@@ -512,7 +512,7 @@ module.exports = [
       },
       {
         label: "Dramatic geography",
-        text: "The action moves from Verona to an imagined imperial court at Milan and then into a forest ruled by outlaws; its Italian geography is theatrically flexible rather than realistic."
+        text: "The action moves from Verona to an imagined court at Milan and then into a forest held by outlaws; the Italian geography is loose, and at one point Speed welcomes Launce to Padua."
       }
     ],
     movements: [
@@ -524,7 +524,7 @@ module.exports = [
       {
         label: "Movement two",
         title: "A new love and an old betrayal",
-        body: "At Milan, Valentine has fallen for Silvia, the Duke’s daughter, and plans to elope with her rather than yield to the favoured suitor Turio. Proteus arrives and immediately desires Silvia. In a private argument with himself, he chooses the new pursuit over both Julia and Valentine, then informs the Duke of the planned escape."
+        body: "At Milan, Valentine has fallen for Silvia, the Duke’s daughter, and plans to elope with her before her father can marry her to Thurio. Proteus arrives and immediately desires Silvia. In a private argument with himself, he chooses the new pursuit over both Julia and Valentine, then informs the Duke of the planned escape."
       },
       {
         label: "Movement three",
@@ -538,7 +538,7 @@ module.exports = [
       },
       {
         label: "Movement five",
-        title: "A reconciliation that will not sit quietly",
+        title: "An uneasy reconciliation",
         body: "Silvia flees Milan to find Valentine but is captured by the outlaws. Proteus intervenes, then threatens to force her when she still refuses him. Valentine stops the assault. Proteus repents, yet Valentine appears to offer him his claim in Silvia; Julia faints and reveals herself. Proteus returns to Julia, the Duke accepts Valentine, and two marriages are proposed with striking speed."
       }
     ],
@@ -548,7 +548,7 @@ module.exports = [
         title: "Proteus and the failure of constancy",
         paragraphs: [
           "Proteus carries the name of a shape-changing sea god, and his language repeatedly remakes betrayal as necessity. He knows that pursuing Silvia requires him to be false to Julia, Valentine and his own former self. The soliloquies do not hide this knowledge; they show intelligence being used to license appetite.",
-          "Valentine, whose name suggests steadfast devotion, appears more constant but is also capable of treating Silvia as part of an exchange between men. The title’s ‘gentlemen’ therefore invites examination rather than simple respect. Birth, education and courtly speech do not guarantee the ethical conduct the word is supposed to describe."
+          "Valentine, whose name suggests steadfast devotion, appears more constant but is also capable of treating Silvia as part of an exchange between men. So the ‘gentlemen’ of the title deserve a close look. Birth, education and courtly speech do not guarantee the ethical conduct the word is supposed to describe."
         ]
       },
       {
@@ -563,7 +563,7 @@ module.exports = [
         label: "Close reading",
         title: "Why Crab matters",
         paragraphs: [
-          "Launce’s scenes with Crab can look detached from the main plot, yet they turn loyalty into something physical and costly. Launce takes the blame for the dog’s behaviour and describes a devotion that survives embarrassment, punishment and the complete absence of gratitude.",
+          "Launce’s scenes with Crab can look detached from the main plot, yet his loyalty to a dog who shames him in public is the most faithful love in the play. Launce takes the blame for the dog’s behaviour and describes a devotion that survives embarrassment, punishment and the complete absence of gratitude.",
           "That comic fidelity exposes Proteus more sharply than another moral lecture would. It also gives performance an unpredictable living presence: Crab may ignore cues, steal attention or make Launce’s claims about him visibly doubtful. The play’s most famous joke therefore depends on the gap between an idealised story of loyalty and the creature actually standing on stage."
         ]
       }
@@ -592,7 +592,7 @@ module.exports = [
       },
       {
         name: "Proteus",
-        body: "Valentine’s friend and Julia’s pledged lover. Brilliant at turning change into argument, he abandons both relationships to pursue Silvia and becomes the play’s most direct test of what gentlemanly language can conceal."
+        body: "Valentine’s friend and Julia’s pledged lover. He can argue his way round any change of heart, abandons Julia and Valentine to pursue Silvia, and shows how much gentlemanly language can hide."
       },
       {
         name: "Julia",

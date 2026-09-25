@@ -33,7 +33,7 @@ module.exports = [
     title: 'Cymbeline',
     image: 'Cymbeline Study Cover.png',
     url: 'https://mybook.to/ySSywz',
-    description: 'The wager, the trunk in Imogen’s bedroom, the lost princes in Wales, and a last scene that unties every knot at once.'
+    description: 'The wager, the trunk in Imogen’s bedroom, the lost princes in Wales, and a last scene that unties every knot.'
   },
   {
     title: 'Henry IV, Parts 1 and 2',
@@ -52,7 +52,7 @@ module.exports = [
     image: 'Henry V Study Cover.png',
     url: 'https://mybook.to/HPiX',
     pageHref: '/study/henry-v/',
-    description: 'The legal case for the war, the night before Agincourt, the speeches everyone quotes, and the cost the play keeps in view.'
+    description: 'The legal case for the war, the night before Agincourt, the speeches everyone quotes, and Bardolph’s hanging.'
   },
   {
     title: 'Love’s Labour’s Lost',

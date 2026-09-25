@@ -67,14 +67,14 @@ const editionUpdateBooks = [
       { label: 'Dickens in full', text: 'Three Christmas pieces by Charles Dickens are reproduced, including A Christmas Tree and A Child’s Dream of a Star.' }
     ],
     overview: [
-      'The modern British Christmas is often described as a collection of timeless traditions. This book asks where those traditions came from and shows that many can be traced to particular nineteenth-century changes in transport, print, commerce and family life.',
+      'People often talk about the British Christmas as a set of ancient traditions. This book traces where they came from, and shows that many began with nineteenth-century changes in transport, print, shopping and family life.',
       'The history begins before Victoria’s accession with customs already becoming less common: kissing boughs, Twelfth Night celebrations, New Year gift-giving, wassailing and seasonal charity. It then follows the rapid Victorian reshaping of the festival through cheaper postage, railway travel, mass publishing and a growing consumer culture.',
-      'Individual chapters examine the Christmas tree, the first commercial card, Tom Smith and the cracker, goose clubs and dinner, familiar carols, urban and rural celebration, servants below stairs and Christmas inside the workhouse. Charity is placed beside the New Poor Law rather than treated as a purely sentimental custom.',
+      'Individual chapters examine the Christmas tree, the first commercial card, Tom Smith and the cracker, goose clubs and dinner, familiar carols, urban and rural celebration, servants below stairs and Christmas inside the workhouse. Christmas charity is set beside the New Poor Law and the workhouse.',
       'Literature is part of this social history. The book reproduces three Dickens pieces and discusses A Christmas Carol, The Chimes, Trollope’s Christmas at Thompson Hall and Gabriel Grub in The Pickwick Papers, as well as the Victorian Christmas number and ghost-story tradition.'
     ],
     editorial: [
       'The edition brings material culture, legislation, labour and literature into one chronology. Familiar objects are treated as historical developments whose meanings changed as they moved through royal example, commercial manufacture and domestic use.',
-      'Readers can follow a single custom or read across the whole period to see how Christmas became at once more domestic, more commercial and more publicly visible.'
+      'Readers can follow a single custom or read across the whole period to see Christmas become more domestic, more commercial and more public.'
     ],
     topics: [
       { title: 'Tradition and invention', body: 'The book distinguishes older seasonal customs from nineteenth-century practices that quickly acquired the authority of tradition.' },
@@ -104,8 +104,8 @@ const editionUpdateBooks = [
     ],
     overview: [
       'Jane begins as an orphan dependent on the Reed family at Gateshead. Punished for resisting her bullying cousin and treated as an unwelcome burden, she is sent to Lowood School, where deprivation, disease and harsh discipline shape the principles that govern her adult life.',
-      'As a governess at Thornfield Hall, Jane meets Edward Fairfax Rochester. Their attachment offers a home and equality she has never possessed, but a concealed truth about Rochester’s existing marriage makes their wedding impossible. Jane leaves with almost nothing rather than accept security at the cost of conscience.',
-      'Her later life with the Rivers family, an unexpected inheritance and St John Rivers’s proposal present different forms of dependence. The novel repeatedly asks how much of herself Jane should surrender for love, duty, respectability or safety.',
+      'As a governess at Thornfield Hall, Jane meets Edward Fairfax Rochester. Their attachment offers a home and equality she has never possessed, but a concealed truth about Rochester’s existing marriage makes their wedding impossible. Jane leaves Thornfield with almost nothing, because staying would mean living with Rochester as his mistress.',
+      'Her later life with the Rivers family, an unexpected inheritance and St John Rivers’s proposal present different forms of dependence. Again and again Jane has to decide how much of herself to give up for love, duty, respectability or safety.',
       'The supporting material follows the Gothic inheritance of Thornfield, Victorian class and the governess, marriage and property law, madness and confinement, Jamaica and empire, religion, gender and the novel’s direct address to its reader.'
     ],
     editorial: [
@@ -141,7 +141,7 @@ const editionUpdateBooks = [
     overview: [
       'Redlaw, a solitary chemistry teacher, is haunted by memories of neglect, lost love and his sister’s death. On Christmas Eve a phantom in his own likeness offers what he believes he wants: the power to forget every sorrow, wrong and trouble he has known.',
       'The bargain carries a second gift. The same loss of memory passes to those Redlaw meets. Pain disappears, but gratitude, tenderness and fellow-feeling disappear with it. Dickens makes suffering neither desirable nor easily redeeming; its moral value lies in what people learn to recognise in one another.',
-      'Milly Swidger provides the counterexample. Her grief has enlarged sympathy rather than destroyed it. A neglected child remains immune because he possesses no loving memories to lose, making absence itself a terrible form of protection.',
+      'Milly Swidger provides the counterexample. Her grief has made her kinder. A neglected child remains immune because he possesses no loving memories to lose, making absence itself a terrible form of protection.',
       'The concluding stage-history essay follows Dickens’s permission for Pepper to use a scene from the book in the optical illusion later called Pepper’s Ghost. Pepper recorded that the scene ran for fifteen months.'
     ],
     editorial: [
@@ -149,8 +149,8 @@ const editionUpdateBooks = [
       'Chapter-end material explains Victorian chemistry, poverty, ragged schools, Christmas customs, structure, character, important passages, critical interpretations and the book’s reception.'
     ],
     topics: [
-      { title: 'Memory and sympathy', body: 'The supernatural bargain tests whether moral feeling can survive when painful experience has been erased.' },
-      { title: 'Knowledge and experiment', body: 'Redlaw’s chemistry and the phantom’s gift turn emotional life into an experiment whose consequences spread beyond its subject.' },
+      { title: 'Memory and sympathy', body: 'The bargain is an experiment: what happens to a man’s feelings when his painful memories are taken away?' },
+      { title: 'Knowledge and experiment', body: 'Redlaw is a chemist, and the phantom’s gift works like an experiment that gets out of the laboratory.' },
       { title: 'Stage afterlife', body: 'Pepper’s Ghost joins literary history to Victorian science, theatre and optical entertainment.' }
     ]
   }),
@@ -176,7 +176,7 @@ const editionUpdateBooks = [
     ],
     overview: [
       'Clarissa walks through Westminster and St James’s to buy flowers, remembering Peter Walsh, Sally Seton and the choices that produced her present life with Richard Dalloway. The party gathers private memory, social performance and public London into one evening.',
-      'Elsewhere in the same city, Septimus Warren Smith suffers hallucinations after returning from the First World War unable to grieve the death of his officer and friend Evans. Doctors interpret his distress as a failure of proportion and prescribe isolation rather than sympathy.',
+      'Elsewhere in the same city, Septimus Warren Smith suffers hallucinations after returning from the First World War unable to grieve the death of his officer and friend Evans. His doctors tell him he has lost his sense of proportion and prescribe rest in the country, away from Rezia.',
       'Motor cars, aeroplanes, bells, crowds and the repeated striking of clocks move the narrative from one consciousness to another. When news of Septimus reaches Clarissa’s party, the separate stories become different responses to life, death, isolation and survival.',
       'The edition explains historical and literary references while preserving the punctuation that carries Woolf’s rhythms and transitions between minds.'
     ],
@@ -187,7 +187,7 @@ const editionUpdateBooks = [
     topics: [
       { title: 'Time and consciousness', body: 'Public clocks measure the day while memory opens private histories within a single moment.' },
       { title: 'War and medicine', body: 'Septimus’s story records trauma and exposes the authority, distance and coercion of his doctors.' },
-      { title: 'Privacy and society', body: 'Clarissa’s party is both social performance and an attempt to bring separate lives briefly into relation.' }
+      { title: 'Privacy and society', body: 'Clarissa’s party is a social performance, and it also brings separate lives together for an evening.' }
     ]
   }),
   inCollection('romantic', {
@@ -223,7 +223,7 @@ const editionUpdateBooks = [
     topics: [
       { title: 'Crime without motive', body: 'The unexplained killing makes guilt and interpretation more difficult than a simple moral fable would allow.' },
       { title: 'Verse and gloss', body: 'Poem and commentary occupy the page together but do not always tell exactly the same story.' },
-      { title: 'Compelled narration', body: 'The Mariner survives by repeating the voyage, turning storytelling into both punishment and relation.' }
+      { title: 'Compelled narration', body: 'The Mariner survives by telling his story again and again, as a punishment and as a way of reaching other people.' }
     ]
   }),
   inCollection('romantic', {
@@ -248,17 +248,17 @@ const editionUpdateBooks = [
     ],
     overview: [
       'Werther retreats to the countryside and finds temporary peace in nature, drawing and Homer. He falls in love with Charlotte, the eldest daughter of a widowed official, who cares for her younger siblings and is already promised to Albert.',
-      'Told principally through letters to Wilhelm, the novel keeps the reader close to Werther’s intense and increasingly unreliable point of view. Love becomes fixation, admiration becomes despair, and a period in government service fails to loosen the attachment.',
+      'Told mostly through letters to Wilhelm, the novel stays close to Werther’s intense and increasingly unreliable view of things. Love becomes fixation, admiration becomes despair, and a period in government service fails to loosen the attachment.',
       'Goethe drew on events from 1772: his own love for Charlotte Buff, who was engaged to Johann Christian Kestner, and the death of Karl Wilhelm Jerusalem with pistols borrowed from Kestner. Details from both experiences entered the fiction.',
       'Near the end, a fictional editor takes over to reconstruct events Werther can no longer narrate. That formal change makes the limits of his letters newly visible.'
     ],
     editorial: [
-      'The edition keeps the dates and order of the eighty-eight letters and fragments while grouping them into thirty chapters for reference. Footnotes explain literature, vocabulary, history and eighteenth-century culture.',
+      'The edition keeps the dates and order of the eighty-eight letters and fragments, and groups them into thirty chapters for reference. Footnotes explain literature, vocabulary, history and eighteenth-century culture.',
       'Supporting material covers the two versions, epistolary form, Homer, Ossian, Klopstock, Sturm und Drang, class convention, censorship, imitation, the disputed Werther effect and the international afterlife of the book.'
     ],
     topics: [
       { title: 'Feeling and perspective', body: 'The letters make Werther’s intensity immediate while limiting what the reader can know beyond his interpretation.' },
-      { title: 'Life and fiction', body: 'Goethe combines distinct biographical events rather than simply transcribing one experience.' },
+      { title: 'Life and fiction', body: 'Goethe combined events from his own life with the suicide of a young man he had known.' },
       { title: 'A European phenomenon', body: 'Translation, imitation, fashion, criticism and censorship made Werther a cultural event as well as a novel.' }
     ]
   }),
@@ -289,7 +289,7 @@ const editionUpdateBooks = [
       'The edition places the survival narrative inside maritime travel, Atlantic commerce, slavery, colonial expansion and the development of the English novel.'
     ],
     editorial: [
-      'Spelling and punctuation are modernised where clarity requires it, while Defoe’s long sentences and dated journal entries are preserved. The familiar twenty-chapter structure is editorial rather than original.',
+      'Spelling and punctuation are modernised where clarity requires it, while Defoe’s long sentences and dated journal entries are preserved. Defoe did not divide the book into chapters; the familiar twenty were added by later editors.',
       'Footnotes clarify nautical and archaic language; Story So Far and Context sections support each chapter. Longer material covers Defoe, Alexander Selkirk, Providence, property, Friday, realism, criticism and adaptation.'
     ],
     topics: [
@@ -350,12 +350,12 @@ const editionUpdateBooks = [
     ],
     facts: [
       { label: 'Twenty-four books', text: 'The poem’s inherited division is retained throughout the edition.' },
-      { label: 'A short span', text: 'The Iliad does not narrate the entire Trojan War but a crisis in its final year.' },
+      { label: 'A short span', text: 'The Iliad covers a few weeks in the last year of the Trojan War.' },
       { label: '1898', text: 'Samuel Butler published the complete prose translation used here.' },
       { label: 'Roman names', text: 'Notes explain Butler’s Victorian vocabulary and his use of Roman names for Greek gods and heroes.' }
     ],
     overview: [
-      'The poem begins with the quarrel between Achilles and Agamemnon. When Achilles withdraws from battle, the conflict tests honour, command and the cost of a heroic code that makes public recognition inseparable from identity.',
+      'The poem begins with the quarrel between Achilles and Agamemnon. When Achilles withdraws from the battle, the Greeks start losing, and the poem shows what a code of honour costs when a man’s whole identity depends on public recognition.',
       'Hector’s defence of Troy, Patroclus’s decision to enter battle and Achilles’ return after his friend’s death move the poem from anger towards catastrophic revenge. The ending does not celebrate the city’s fall; it pauses over Priam’s appeal and the funeral of Hector.',
       'Butler’s prose prioritises clarity and narrative movement. The notes explain unfamiliar language, the social and religious world of the poem and the terminology of Homeric warfare without requiring readers to know ancient Greek.'
     ],
@@ -365,8 +365,8 @@ const editionUpdateBooks = [
     ],
     topics: [
       { title: 'Anger and honour', body: 'Achilles’ withdrawal makes the demands of heroic status visible through the suffering that follows.' },
-      { title: 'Mortality and glory', body: 'The poem asks what lasting fame can mean to people whose bodies remain vulnerable and whose families endure their loss.' },
-      { title: 'A human ending', body: 'Priam and Achilles meet across enemy lines, and the epic ends with mourning rather than conquest.' }
+      { title: 'Mortality and glory', body: 'The heroes want lasting fame, and the poem never forgets that their bodies can be broken and that their families will grieve.' },
+      { title: 'A human ending', body: 'Priam comes to Achilles in the enemy camp, and the poem ends with a funeral.' }
     ]
   }),
   inCollection('shakespeare', {
@@ -391,7 +391,7 @@ const editionUpdateBooks = [
     ],
     overview: [
       'From Sonnet 18, poetry becomes another defence against age and death. The central sequence follows an unequal relationship through admiration, absence, jealousy, betrayal, forgiveness and rivalry with another poet.',
-      'The poems examine love, beauty, mortality, rank, desire and the claim that verse may outlast the people it represents. Familiar individual lyrics remain part of a changing sequence rather than isolated statements.',
+      'The poems examine love, beauty, mortality, rank, desire and the claim that verse may outlast the people it represents. Even the best-known sonnets are parts of a sequence that changes as it goes.',
       'One sonnet appears complete on every page. A short headnote explains the direction of its argument; notes at the foot of that page define difficult words, clarify passages and identify genuine textual uncertainty.'
     ],
     editorial: [
@@ -427,7 +427,7 @@ const editionUpdateBooks = [
     overview: [
       'In Venus and Adonis, the goddess of love pursues a young hunter who repeatedly refuses her. Shakespeare moves between erotic comedy, rhetorical display, physical coercion and the grief that follows Adonis’s fatal hunt.',
       'The Rape of Lucrece follows Tarquin’s assault and its aftermath through power, shame, testimony and the language by which Lucrece tries to understand a crime committed against her. Her public naming of Tarquin and death become the catalyst for the overthrow of the Roman monarchy.',
-      'Read together, the poems form a deliberate pair. Both concern desire that refuses reason and an attempt to possess another person through language and description. Both end with death and transformation, but their tonal and political consequences are sharply different.',
+      'Read together, the poems form a deliberate pair. Both are about a desire that will not listen to reason, and about trying to possess another person through words and description. Both end with death and transformation, but their tonal and political consequences are sharply different.',
       'Every difficult word, image and allusion is explained on the same page as the relevant line, allowing the poetry and commentary to remain in continuous relation.'
     ],
     editorial: [
@@ -468,7 +468,7 @@ const editionUpdateBooks = [
     ],
     topics: [
       { title: 'Kingship and self-command', body: 'The Countess episode measures political authority against the king’s ability to restrain private desire.' },
-      { title: 'Father and prince', body: 'The battle plot asks how honour is earned and how far a father should protect an heir from danger.' },
+      { title: 'Father and prince', body: 'The battle scenes are about how honour is earned, and how far a father should keep his heir out of danger.' },
       { title: 'A disputed canon', body: 'The play’s changing attribution reveals how evidence, style and collaboration complicate the boundary of Shakespeare’s works.' }
     ]
   }),
@@ -500,7 +500,7 @@ const editionUpdateBooks = [
     ],
     topics: [
       { title: 'Crime at home', body: 'Domestic tragedy relocates catastrophic action from the court or battlefield to an ordinary household.' },
-      { title: 'Providence and accident', body: 'Repeated failures can appear comic, practical or morally ordered, and the play refuses to settle the balance.' },
+      { title: 'Providence and accident', body: 'The repeated failures can look comic, practical or morally deserved, and the play leaves the balance open.' },
       { title: 'Attribution and evidence', body: 'The quarrel scene has become a test case for the possibilities and limits of stylistic authorship study.' }
     ]
   }),
@@ -531,7 +531,7 @@ const editionUpdateBooks = [
       'The introduction separates the later Shakespeare claim from current evidence and examines W. S., Charles Tilney, proposals for Greene and Peele, source history, textual layering and limited performance.'
     ],
     topics: [
-      { title: 'Legendary Britain', body: 'Dynastic division, invasion and civil war turn national origin into a story of broken settlement.' },
+      { title: 'Legendary Britain', body: 'Dynastic division, invasion and civil war make the story of Britain’s founding a story of broken settlements.' },
       { title: 'Dumb show and tragedy', body: 'Ate’s classical emblems forecast ruin and frame the action through inherited dramatic forms.' },
       { title: 'Initials and attribution', body: 'Two letters on a title page became the basis for centuries of inclusion, doubt and rejection.' }
     ]
@@ -559,12 +559,12 @@ const editionUpdateBooks = [
       'Later scenes present wit, scholarship, hospitality and conscience before More refuses articles required by the king. Arrest and execution turn the play from civic comedy towards tragedy.'
     ],
     editorial: [
-      'The modernised text includes additions, damaged passages and unfinished material rather than hiding the manuscript’s working state.',
+      'The modernised text includes the additions, damaged passages and unfinished material, so the manuscript’s working state can be seen.',
       'Introductions cover the six hands, Hand D, Edmund Tilney’s censorship, the historical More, sources, verse and prose, textual problems and modern performance.'
     ],
     topics: [
-      { title: 'Strangers and civic order', body: 'The Ill May Day scene joins public violence to an appeal built on imaginative reversal.' },
-      { title: 'Conscience and office', body: 'More’s rise and fall test whether public service can remain answerable to private conviction.' },
+      { title: 'Strangers and civic order', body: 'In the Ill May Day scene More stops a riot by asking the rioters to imagine themselves as foreigners.' },
+      { title: 'Conscience and office', body: 'More’s rise and fall show how far public service can answer to private conscience.' },
       { title: 'A manuscript in motion', body: 'Revision, censorship and multiple hands make the physical document part of the play’s meaning.' }
     ]
   }),
@@ -586,16 +586,16 @@ const editionUpdateBooks = [
       { label: 'Volume V', text: 'The fifth Astor Shakespeare Apocrypha volume.' }
     ],
     overview: [
-      'Young Cromwell refuses the limits of birth and seeks learning, travel and advancement. Service with English merchants at Antwerp begins a European journey that eventually leads through Wolsey’s household into royal government.',
+      'Young Cromwell will not accept the limits of his birth, and goes after learning, travel and advancement. Service with English merchants at Antwerp begins a European journey that eventually leads through Wolsey’s household into royal government.',
       'As his influence grows, Cromwell repays earlier generosity: Friskiball, an innkeeper and the Banister family receive help in return for help once given. Debts and gifts become the play’s measure of character.',
-      'Gardiner arranges false testimony, and Cromwell is condemned without trial. The royal reprieve arrives too late. The drama alters offices, omissions and events to turn a political career into an exemplary rise and fall.'
+      'Gardiner arranges false testimony, and Cromwell is condemned without trial. The royal reprieve arrives too late. The play changes offices, leaves things out and alters events to make Cromwell’s career a model rise and fall.'
     ],
     editorial: [
       'The complete play is modernised and supplied with scene summaries, lineation and same-page commentary.',
       'The introduction distinguishes dramatic invention from Cromwell’s history and covers the quartos, disputed attribution, religion, commerce, sources and performance.'
     ],
     topics: [
-      { title: 'Fortune and advancement', body: 'Cromwell’s movement through Europe and court repeatedly tests whether merit can master political change.' },
+      { title: 'Fortune and advancement', body: 'Cromwell travels through Europe and rises at court, and his merit carries him only so far.' },
       { title: 'Debt and gratitude', body: 'Money, hospitality and repayment provide the moral structure that official history cannot.' },
       { title: 'History reshaped', body: 'The invented conspiracy and reprieve show the difference between a chronicle drama and a reliable biography.' }
     ]
@@ -684,7 +684,7 @@ const editionUpdateBooks = [
     overview: [
       'An unnamed gentleman has squandered land and money through gambling. His wife conceals his cruelty, protects the household and secures him a court position, but he reads help as humiliation and control.',
       'He murders his eldest son, attacks another child and wounds his wife before riding towards the third. A fall from his horse leads to capture and a return past the house where he finally confronts the bodies and the logic of his violence collapses.',
-      'The play’s speed comes from its compressed form and proximity to the real case. The absence of personal names turns one notorious crime into a stark domestic structure of Husband, Wife, children, debt and inheritance.'
+      'The play’s speed comes from its compressed form and proximity to the real case. No one has a personal name, so a notorious crime is reduced to its parts: Husband, Wife, children, debt and inheritance.'
     ],
     editorial: [
       'The edition follows the 1608 quarto, preserving original spelling, correcting evident errors and explaining uncertainty. Verse and prose remain distinct, with notes on the relevant page.',
@@ -712,20 +712,20 @@ const editionUpdateBooks = [
       { label: 'Three early texts', text: 'The First Quarto, Second Quarto and First Folio preserve significantly different versions of the play.' },
       { label: 'Conflated text', text: 'The edition principally follows Q2 while incorporating important Folio readings and passages.' },
       { label: 'Seven soliloquies', text: 'Extended analysis follows the sequence, dramatic situation and changing purpose of Hamlet’s major soliloquies.' },
-      { label: 'Paired choice', text: 'This expanded edition sits beside the standard Astor Hamlet rather than replacing it.' }
+      { label: 'Paired choice', text: 'This expanded edition sits beside the standard Astor Hamlet.' }
     ],
     overview: [
       'Hamlet returns to Denmark after his father’s death and finds Claudius on the throne and married to Gertrude. A Ghost resembling the dead king claims that Claudius murdered him and commands revenge.',
       'Hamlet adopts an antic disposition, tests the court and uses travelling actors to stage a murder resembling the Ghost’s account. Claudius’s reaction appears to confirm guilt, but action continues to produce uncertainty, accidental killing and wider revenge.',
-      'By Hamlet’s return from England, Ophelia is dead, Laertes seeks vengeance and Claudius has prepared a poisoned fencing match. The play turns private grief into a crisis of evidence, surveillance, performance and political succession.'
+      'By Hamlet’s return from England, Ophelia is dead, Laertes seeks vengeance and Claudius has prepared a poisoned fencing match. A son’s grief for his father becomes a question of evidence, spying, acting and who should be king.'
     ],
     editorial: [
-      'Significant textual disputes are identified rather than silently hidden. Line numbers restart in every scene; summaries and footnotes keep difficult language, action and interpretive choice on the page where they arise.',
+      'Significant textual disputes are pointed out. Line numbers restart in every scene; summaries and footnotes keep difficult language, action and interpretive choice on the page where they arise.',
       'Extended essays cover Shakespeare, sources, Denmark, Elizabethan politics, ghosts and Purgatory, the Reformation, delay, Hamlet’s age, Claudius, Gertrude, Ophelia, language, criticism, theatre and cinema.'
     ],
     topics: [
       { title: 'Evidence and action', body: 'Ghost, play, confession and intercepted documents never make knowledge independent of interpretation.' },
-      { title: 'Text and version', body: 'Quarto and Folio difference is treated as a central part of the play’s history rather than editorial noise.' },
+      { title: 'Text and version', body: 'The differences between Quarto and Folio are treated as a central part of the play’s history.' },
       { title: 'Four centuries on stage', body: 'Performance history records how actors, theatres and films make fresh choices about motive, age, politics and ending.' }
     ]
   }),
@@ -749,11 +749,11 @@ const editionUpdateBooks = [
     ],
     overview: [
       'Lear divides Britain according to public declarations of love. Goneril and Regan provide the performance he expects; Cordelia refuses and is disinherited. Having surrendered territory and authority, Lear attempts to retain the title, household and obedience of a king.',
-      'Gloucester is deceived by Edmund into rejecting Edgar. The two family tragedies meet in storm, civil conflict, blinding and madness as the play tests authority, inheritance, nature and justice.',
+      'Gloucester is deceived by Edmund into rejecting Edgar. The two family tragedies meet in the storm, civil war, the blinding and madness, and the play puts authority, inheritance, nature and justice through all of them.',
       'The Quarto and Folio are substantially different works as well as witnesses to a shared play. This edition follows the received conflated tradition while identifying important version-specific material.'
     ],
     editorial: [
-      'Scene-based line numbering, summaries and same-page notes support the complete modern-spelling text. Quarto-only and Folio-only passages are signalled rather than absorbed invisibly.',
+      'Scene-based line numbering, summaries and same-page notes support the complete modern-spelling text. Passages found only in the Quarto or only in the Folio are marked.',
       'Forty key passages sit within essays on a divided Britain, revision, Lear, Edmund, Edgar, the Fool, the three daughters, madness, blindness, social justice, dramatic form, criticism and performance.'
     ],
     topics: [
@@ -777,13 +777,13 @@ const editionUpdateBooks = [
     facts: [
       { label: '1600 first quarto', text: 'The edition principally follows the authoritative first quarto and records second-quarto evidence.' },
       { label: '1623 Folio', text: 'Important Folio readings and later editorial choices are explained.' },
-      { label: 'Philostrate retained', text: 'The final act keeps Philostrate rather than adopting the Folio’s reassignment of his lines to Egeus.' },
+      { label: 'Philostrate retained', text: 'In the final act Philostrate keeps his lines; the Folio gives them to Egeus.' },
       { label: 'Paired choice', text: 'The expanded volume appears beside the standard Astor edition.' }
     ],
     overview: [
       'Hermia is ordered to marry Demetrius or face death or permanent chastity. Her escape with Lysander draws Demetrius and Helena into a wood already disturbed by Oberon and Titania’s dispute over a changeling child.',
       'Puck misapplies the flower that causes love at first sight, while Bottom receives an ass’s head and becomes the enchanted Titania’s beloved. The confusion joins desire, coercion, theatre and metamorphosis before dawn rearranges the lovers.',
-      'Back in Athens, the mechanicals perform Pyramus and Thisbe. Their play within the play tests courtly spectatorship and makes amateur theatre central to Shakespeare’s comedy.'
+      'Back in Athens, the mechanicals perform Pyramus and Thisbe. Their play within the play gives the court a chance to show how badly it can behave as an audience, and puts amateur theatre at the centre of the comedy.'
     ],
     editorial: [
       'The complete text uses modern spelling with scene summaries, restarting line numbers and footnotes. Quarto and Folio differences are recorded without allowing textual history to obstruct the action.',
@@ -815,7 +815,7 @@ const editionUpdateBooks = [
     ],
     overview: [
       'Othello secretly marries Desdemona and answers Brabantio’s accusation of witchcraft before the Venetian Senate. The state sends the couple to Cyprus, where a Turkish fleet is destroyed by storm before battle.',
-      'With the public war removed, Iago conducts a private campaign. He engineers Cassio’s dismissal, turns Desdemona’s advocacy into apparent adultery and uses a stolen handkerchief, overheard talk and controlled silence as manufactured evidence.',
+      'With the public war removed, Iago conducts a private campaign. He gets Cassio dismissed, makes Desdemona’s pleading for Cassio look like adultery, and builds false evidence from a stolen handkerchief, overheard talk and well-timed silence.',
       'The play contracts from republic to island to bedroom, asking how trust is dismantled through suggestion, prejudice and the desire for certainty.'
     ],
     editorial: [
@@ -844,10 +844,10 @@ const editionUpdateBooks = [
       { label: '1623 Folio', text: 'The First Folio supplies the only authoritative early printed text.' },
       { label: 'Middleton question', text: 'Possible later contributions, especially around Hecate and song, are examined.' },
       { label: 'Compressed action', text: 'The play’s unusual speed makes political change and psychological consequence arrive almost together.' },
-      { label: 'Paired choice', text: 'The expanded edition adds to rather than replaces the standard Astor Macbeth.' }
+      { label: 'Paired choice', text: 'The expanded edition sits beside the standard Astor Macbeth.' }
     ],
     overview: [
-      'Three witches greet Macbeth as future king. When their first prediction is confirmed, Lady Macbeth and Macbeth turn possibility into a plan to murder Duncan as a guest in their castle.',
+      'Three witches greet Macbeth as future king. When the first prediction comes true, Lady Macbeth and Macbeth plan to murder Duncan while he is a guest in their castle.',
       'The crown cannot contain the crime. Macbeth orders Banquo’s death, attacks Macduff’s family and returns to the witches for assurances he interprets as guarantees. Lady Macbeth, once resolute, walks in her sleep and relives the violence she believed could be washed away.',
       'Birnam Wood and Macduff fulfil the prophecies through meanings Macbeth refused to hear. The tragedy makes equivocation effective because a listener chooses the interpretation that protects desire.'
     ],

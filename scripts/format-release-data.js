@@ -57,7 +57,7 @@ const books = [
     ],
     facts: [
       { label: 'Eight stories', text: 'The collection runs from The Old Nurse’s Story to The Judge’s House.' },
-      { label: 'Four poems', text: 'Complete poems sit beside the prose rather than appearing only as extracts.' },
+      { label: 'Four poems', text: 'Complete poems sit beside the prose.' },
       { label: '1844–1901', text: 'The collection brings together stories, poems and documents across these years.' },
       { label: 'Documentary context', text: 'Spiritualism and psychical research are represented through historical documents.' }
     ],
@@ -69,10 +69,10 @@ const books = [
     ],
     editorial: [
       'Explanatory notes identify unfamiliar references and supply historical context without interrupting the complete literary texts.',
-      'The collection keeps fiction, poetry and documents distinct while allowing readers to compare literary ghosts with contemporary discussion of séances and psychical inquiry.'
+      'The fiction, poetry and documents are kept apart, and readers can set literary ghosts beside what people were writing about séances and psychical research at the time.'
     ],
     topics: [
-      { title: 'Haunted places', body: 'Houses, roads and railway lines turn familiar Victorian spaces into sites of uncertainty and danger.' },
+      { title: 'Haunted places', body: 'Houses, roads and railway lines, the most familiar Victorian places, are where the danger comes from.' },
       { title: 'Seeing and believing', body: 'The stories test testimony and perception while the documents show how supernatural claims were discussed outside fiction.' },
       { title: 'A changing tradition', body: 'The chronology makes it possible to follow the ghost story across more than half a century of Victorian publishing.' }
     ]
@@ -212,7 +212,7 @@ const books = [
       'Original notes and summaries trace unfamiliar words, people, books, landscapes and events, while supporting essays explain the collaboration, publication, reception and later history of the poems.'
     ],
     editorial: [
-      'Spelling, punctuation and capitalisation are retained from the relevant 1798 or 1800 text rather than replaced by the poets’ later revisions.',
+      'Spelling, punctuation and capitals follow the 1798 or 1800 text; the poets’ later revisions are not used.',
       'The introduction and apparatus state clearly that this is a thirty-six-poem selection, with documented sources and historical context for the two early editions.'
     ],
     topics: [
@@ -253,7 +253,7 @@ const books = [
     ],
     topics: [
       { title: 'No practical exit', body: 'Farm debt, work, marriage and dependence give material force to the novel’s emotional confinement.' },
-      { title: 'A reconstructed past', body: 'The engineer’s account reaches Ethan through partial testimony rather than direct access to a settled history.' },
+      { title: 'A reconstructed past', body: 'The engineer pieces Ethan’s history together from what different people tell him.' },
       { title: 'Starkfield winter', body: 'Roads, weather, farms and declining mills make place an active pressure on every available choice.' }
     ]
   }),
@@ -289,7 +289,7 @@ const books = [
     ],
     topics: [
       { title: 'Four Christmas forms', body: 'The volume makes it possible to compare structures and supernatural devices across Dickens’s short seasonal books.' },
-      { title: 'Poverty and judgement', body: 'A Christmas Carol and The Chimes ask how respectable opinion turns material hardship into moral accusation.' },
+      { title: 'Poverty and judgement', body: 'A Christmas Carol and The Chimes show respectable people blaming the poor for being poor.' },
       { title: 'Memory and sympathy', body: 'Recollection supports change in Scrooge’s story and becomes the explicit subject of Redlaw’s bargain.' }
     ]
   }),
@@ -300,7 +300,7 @@ const books = [
     image: 'Charles I selected Writings Main Cover.png',
     purchaseUrl: 'https://mybook.to/KLGFCM',
     label: 'Primary documents · 1620s–1649',
-    deck: 'Seventeen documents from the reign of Charles I: letters to Henrietta Maria, his answers to the Petition of Right, papers captured at Naseby, the death warrant and the speech he made on the scaffold in January 1649. A last section asks whether he really wrote Eikon Basilike, the book published in his name after his death.',
+    deck: 'Seventeen documents from the reign of Charles I: letters to Henrietta Maria, his answers to the Petition of Right, papers captured at Naseby, the death warrant and the speech he made on the scaffold in January 1649. A last section looks at whether he really wrote Eikon Basilike, the book published in his name after his death.',
     editionIncludes: [
       'Seventeen primary documents from the reign',
       'Original notes and historical context',
@@ -317,7 +317,7 @@ const books = [
       'Charles I: Selected Writings presents a documentary history of a contested reign from the disputes of the 1620s to the king’s execution in 1649.',
       'The seventeen selections include private letters to Henrietta Maria, two royal answers to the Petition of Right and the Declaration of Sports.',
       'Later documents include the Answer to the Nineteen Propositions, instructions captured at Naseby, exchanges from the High Court of Justice, the death warrant and the scaffold speech.',
-      'A final section considers the disputed authorship of Eikon Basilike rather than treating the book as securely Charles’s own composition.'
+      'A final section looks at the disputed authorship of Eikon Basilike.'
     ],
     editorial: [
       'Each document is identified as personal writing, a formal text drafted for the king, reported speech or doubtful attribution, with provenance stated openly.',
@@ -387,7 +387,7 @@ const books = [
     ],
     overview: [
       'First published in 1865, Alice’s Adventures in Wonderland became one of the defining works of children’s fantasy.',
-      'This edition follows Carroll’s final revised text rather than silently combining different states of the book.',
+      'This edition follows Carroll’s final revised text.',
       'Explanatory notes identify Victorian language, customs, poems and references whose original familiarity can no longer be assumed.',
       'Original essays follow the unusual publication history, Oxford setting, John Tenniel’s illustrations and Alice’s Adventures Under Ground, the earlier manuscript from which the published novel developed.'
     ],
@@ -458,7 +458,7 @@ const books = [
       { label: 'Notes distinguished', text: 'Woolf’s own notes remain separate from the additional editorial annotations.' }
     ],
     overview: [
-      'A Room of One’s Own asks what conditions are necessary for a woman to write. It grew from papers Woolf delivered to women students at Cambridge in October 1928.',
+      'A Room of One’s Own is about the conditions a woman needs in order to write. It grew from papers Woolf delivered to women students at Cambridge in October 1928.',
       'An unnamed narrator moves through the invented Oxbridge, the women’s college of Fernham, the British Museum and English literary history. Fact, fiction, biography and speculation are deliberately combined.',
       'The argument joins intellectual freedom to material circumstances: independent income and private space. It considers women’s exclusion from universities, libraries, property, earnings and much of the historical record.',
       'Woolf invents Judith Shakespeare and turns to Aphra Behn, Austen, the Brontës, George Eliot and contemporary women novelists before ending with the androgynous mind and an appeal to her student audience to write.'
@@ -469,7 +469,7 @@ const books = [
     ],
     topics: [
       { title: 'Material freedom', body: 'Money, rooms, education and legal rights determine who has time, privacy and authority to write.' },
-      { title: 'Fact mixed with fiction', body: 'The unnamed narrator and invented figures allow Woolf to test the limits of conventional academic argument.' },
+      { title: 'Fact mixed with fiction', body: 'The unnamed narrator and invented figures let Woolf go beyond the limits of an ordinary academic argument.' },
       { title: 'Women in literary history', body: 'Libraries, historical records and publishing structures shape which lives and works can be recovered.' }
     ]
   })
@@ -641,7 +641,7 @@ const remainingBooks = [
     ],
     overview: [
       'Walter Hartright’s encounter with a mysterious woman begins an investigation into concealed identity and a conspiracy organised through marriage, inheritance and unequal power.',
-      'The story moves through the testimonies of people connected to the case. Its multiple narrators make evidence, memory and self-interest part of the novel’s method rather than a neutral frame around the plot.',
+      'The story moves through the testimonies of people connected to the case. Each of its narrators has a memory and an interest of their own, and the novel uses that.',
       'First published in 1859–60, the novel was subsequently revised by Collins. This edition follows the revised 1861 text and records relevant publication and textual history.',
       'Notes and essays explain Victorian society, law, language and institutions, including the property rules and asylum practices behind the novel’s central conflicts.'
     ],
@@ -822,7 +822,7 @@ const remainingBooks = [
     overview: [
       'The Doves’ Nest and Other Stories appeared shortly after Katherine Mansfield’s death in 1923, bringing completed stories together with work she left unfinished.',
       'This edition contains all six completed stories from the original collection: The Doll’s House, Honeymoon, A Cup of Tea, Taking the Veil, The Fly and The Canary.',
-      'It also includes four significant unfinished pieces: A Married Man’s Story, The Doves’ Nest, Six Years After and Weak Heart. Their fragmentary status is identified rather than concealed.',
+      'It also includes four significant unfinished pieces: A Married Man’s Story, The Doves’ Nest, Six Years After and Weak Heart. The edition says which pieces are unfinished.',
       'The selection moves between New Zealand childhood, European domestic life, marriage, class, bereavement and illness, with context on Mansfield’s final years and John Middleton Murry’s assembly of the posthumous book.'
     ],
     editorial: [
@@ -868,7 +868,7 @@ const remainingBooks = [
     topics: [
       { title: 'Who defines poverty?', body: 'Statistics, law and paternal benevolence all claim authority over lives they do not adequately understand.' },
       { title: 'A possible future', body: 'The supernatural vision tests the social consequences of ideas Trotty has been taught to accept.' },
-      { title: 'The quarters', body: 'Clock time gives the book its four-part structure and turns the chimes into an organising voice.' }
+      { title: 'The quarters', body: 'The book is divided into four ‘quarters’, like the striking of a clock, and the chimes speak in it.' }
     ]
   }),
   inCollection('american', {

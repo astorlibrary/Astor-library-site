@@ -16,13 +16,13 @@ module.exports = [
       heading: 'The past returns because the present is not secure.',
       paragraphs: [
         'Gothic writing is often recognised by its surfaces: a ruined building, a locked door, a storm, a secret room, an unexplained sound. Those details matter, but the form is not a box of gloomy properties. It makes something that a culture would rather keep hidden become physically or psychologically impossible to ignore.',
-        'In the books held here, terror moves steadily closer. Frankenstein crosses mountains and frozen seas, yet its deepest fear begins in a private act of creation. Wuthering Heights turns a house and its inheritance into an emotional weather system. Victorian and American supernatural stories make the ordinary house, road and railway uncanny; Gilman makes domestic decoration an instrument of confinement. Stevenson divides a respectable London professional; Wilde gives a beautiful public life a concealed record; Stoker brings the vampire into bedrooms, railway timetables and typewritten case notes.'
+        'In the books held here, terror moves steadily closer. Frankenstein crosses mountains and frozen seas, yet its deepest fear begins in a private act of creation. In Wuthering Heights, who owns the house and who will inherit it decide almost everything that happens. Victorian and American supernatural stories make the ordinary house, road and railway uncanny; Gilman makes domestic decoration an instrument of confinement. Stevenson divides a respectable London professional; Wilde gives a beautiful public life a concealed record; Stoker brings the vampire into bedrooms, railway timetables and typewritten case notes.'
       ]
     },
     methods: [
       { label: 'Space', title: 'A building remembers', copy: 'In a Gothic house the building takes part in the plot. Doors, windows, laboratories, attics and thresholds control who may know what. A place becomes a record of inheritance, exclusion or private conduct, often revealing what its occupants have tried to make unspeakable.' },
-      { label: 'Knowledge', title: 'Explanation creates new fear', copy: 'These books are full of educated people: doctors, lawyers, scientists, collectors and readers of evidence. Knowledge rarely makes terror disappear at once. It can produce the danger, misname it or arrive too late, leaving reason to confront the limits of its own methods.' },
-      { label: 'The self', title: 'The monster is not safely outside', copy: 'The creature, double, portrait and vampire all trouble the boundary between threat and victim. Gothic writing asks who has been made monstrous, whose desire is being hidden and what a respectable society must disown in order to call itself orderly.' }
+      { label: 'Knowledge', title: 'Explanation creates new fear', copy: 'These books are full of educated people: doctors, lawyers, scientists, collectors and readers of evidence. Knowing more rarely makes the terror go away straight away. It can produce the danger, misname it or arrive too late, leaving reason to confront the limits of its own methods.' },
+      { label: 'The self', title: 'The monster is not safely outside', copy: 'The creature, double, portrait and vampire all trouble the boundary between threat and victim. Gothic writing is interested in who gets called a monster, whose desire is hidden, and what a respectable society has to disown in order to call itself orderly.' }
     ],
     books: [
       { href: '/books/frankenstein/', title: 'Frankenstein', author: 'Mary Shelley', year: '1818', image: '/Frankenstein.png', copy: 'Creation, abandonment and the danger of treating life as an experiment without obligation.' },
@@ -35,15 +35,15 @@ module.exports = [
       { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'Ancient predation meets blood science, transport, recording technology and a fragile archive of evidence.' }
     ],
     reading: {
-      heading: 'Watch what the narrative refuses to show directly.',
+      heading: 'Watch for what the story will not show directly.',
       paragraphs: [
         'Gothic plots are full of delayed accounts. A witness faints, a manuscript breaks off, a confession arrives after the damage, or one narrator places another person’s words inside a frame. Instead of treating that delay as mere suspense, ask who is allowed to tell the event and what kind of evidence the reader has actually received.',
         'Then follow changes in ordinary objects. A mirror, letter, window, key or medical instrument may begin as part of a recognisable world and become disturbing without changing its physical form. The Gothic often works at exactly that point: the familiar remains visible, but can no longer be trusted to mean what it meant before.'
       ]
     },
     terms: [
-      { term: 'The uncanny', copy: 'Something feels frightening because it is both strange and disturbingly familiar.' },
-      { term: 'The double', copy: 'A second figure carries desires, guilt or violence that another self refuses to own.' },
+      { term: 'The uncanny', copy: 'Something frightens us because it is strange and also uncomfortably familiar.' },
+      { term: 'The double', copy: 'A second figure carries the desires, guilt or violence that the first will not admit to.' },
       { term: 'Frame narrative', copy: 'One account encloses another, making the route by which a story reaches us part of its meaning.' },
       { term: 'The sublime', copy: 'Vastness, danger or power produces awe that exceeds comfortable control.' }
     ],
@@ -75,7 +75,7 @@ module.exports = [
     introduction: {
       heading: 'A comic ending does not make every problem disappear.',
       paragraphs: [
-        'Shakespearean comedy often begins by making ordinary identity unstable. Twins arrive in the wrong city, a woman takes a male name, lovers transfer their devotion overnight, or a household turns a jealous husband into the subject of its own play. Confusion is entertaining, but it also exposes how readily rank, gender and reputation depend on performance and recognition.',
+        'Shakespearean comedy often begins by making ordinary identity unstable. Twins arrive in the wrong city, a woman takes a man’s name, lovers change partners overnight, or a whole household plays a trick on a jealous husband. Confusion is entertaining, but it also exposes how readily rank, gender and reputation depend on performance and recognition.',
         'The endings usually gather people into marriages, pardons and restored families. Those settlements matter, yet they do not erase everything that came before. Malvolio is not reconciled in Twelfth Night; Jaques leaves the dance in As You Like It; Helena wins Bertram under conditions audiences still argue about. Comedy is therefore more than laughter. It is a way of testing what a community can repair, what it chooses to forgive and who remains awkwardly outside the final picture.'
       ]
     },
@@ -87,14 +87,14 @@ module.exports = [
     books: [
       { href: '/books/comedy-of-errors/', title: 'The Comedy of Errors', author: 'William Shakespeare', year: 'c.1590s', image: '/Comedy%20of%20Errors%20%28Main%20Page%29.png', copy: 'Separated twins, mistaken identity and a farce whose first scene begins under a sentence of death.' },
       { href: '/books/taming-of-the-shrew/', title: 'The Taming of the Shrew', author: 'William Shakespeare', year: 'c.1590–94', image: '/The%20Taming%20of%20the%20Shrew%20Main%20Cover.jpg', copy: 'Courtship, household power and performed obedience in a comedy whose final speech remains contested.' },
-      { href: '/books/the-two-gentlemen-of-verona/', title: 'The Two Gentlemen of Verona', author: 'William Shakespeare', year: 'c.1590–94', image: '/Two%20Gentleman%20of%20Verona%20Main%20Cover.png', copy: 'Friendship, betrayal and Julia’s disguise test what the word gentleman is worth.' },
+      { href: '/books/the-two-gentlemen-of-verona/', title: 'The Two Gentlemen of Verona', author: 'William Shakespeare', year: 'c.1590–94', image: '/Two%20Gentleman%20of%20Verona%20Main%20Cover.png', copy: 'Friendship, betrayal and Julia’s disguise put the word ‘gentleman’ under scrutiny.' },
       { href: '/books/a-midsummer-nights-dream/', title: 'A Midsummer Night’s Dream', author: 'William Shakespeare', year: 'c.1595–96', image: '/4A5A73B5-A856-4507-94DD-FC862EC2F9A7.png', copy: 'Athenian law, fairy interference and amateur theatre meet in a night of unstable desire.' },
       { href: '/books/loves-labours-lost/', title: 'Love’s Labour’s Lost', author: 'William Shakespeare', year: 'c.1595–96', image: '/Love%27s%20Labour%27s%20Lost%20Main%20Cover.jpg', copy: 'An impossible academy collapses into courtship, verbal display and a year of waiting.' },
       { href: '/books/the-merchant-of-venice/', title: 'The Merchant of Venice', author: 'William Shakespeare', year: 'c.1596–97', image: '/The%20Merchant%20of%20Venice%20Main%20Cover.jpg', copy: 'Contracts, prejudice and a trial complicate the movement towards marriage at Belmont.' },
       { href: '/books/much-ado-about-nothing/', title: 'Much Ado About Nothing', author: 'William Shakespeare', year: 'c.1598–99', image: '/Much%20Ado%20About%20Nothing.png', copy: 'Wit, surveillance and slander place two very different courtships under public pressure.' },
       { href: '/books/as-you-like-it/', title: 'As You Like It', author: 'William Shakespeare', year: 'c.1599', image: '/As%20you%20like%20it.png', copy: 'Exile and disguise let Rosalind test romantic language while Arden keeps labour and inequality in sight.' },
       { href: '/books/twelfth-night/', title: 'Twelfth Night', author: 'William Shakespeare', year: 'c.1601', image: '/Twelfth%20Night%20Main%20Cover.jpg', copy: 'Viola’s borrowed identity redirects desire while festivity shades into punishment.' },
-      { href: '/books/merry-wives-of-windsor/', title: 'The Merry Wives of Windsor', author: 'William Shakespeare', year: 'c.1597–1601', image: '/Merry%20Wives%20of%20Windsor.png', copy: 'Mistress Ford and Mistress Page turn Falstaff’s scheme into a sequence of traps and community theatre.' },
+      { href: '/books/merry-wives-of-windsor/', title: 'The Merry Wives of Windsor', author: 'William Shakespeare', year: 'c.1597–1601', image: '/Merry%20Wives%20of%20Windsor.png', copy: 'Mistress Ford and Mistress Page answer Falstaff’s scheme with a series of traps, and in the end the whole town joins in.' },
       { href: '/books/measure-for-measure/', title: 'Measure for Measure', author: 'William Shakespeare', year: 'c.1603–04', image: '/Measure%20for%20Measure%20Main%20Cover.png', copy: 'Law, sexual coercion and disguised rule lead to an ending whose silences matter.' },
       { href: '/books/alls-well-that-ends-well/', title: 'All’s Well That Ends Well', author: 'William Shakespeare', year: 'c.1604–05', image: '/Alls%20Well%20That%20Ends%20Well%20Main%20Cover.png', copy: 'A brilliant healer pursues a resistant husband through a plot whose title invites argument about its settlement.' },
       { href: '/books/pericles-prince-of-tyre/', title: 'Pericles, Prince of Tyre', author: 'William Shakespeare', year: 'c.1607–08', image: '/Pericles%2C%20Prince%20of%20Tyre%20Main%20COver.png', copy: 'Shipwreck, apparent death and recognition turn an old story towards family recovery.' },
@@ -106,7 +106,7 @@ module.exports = [
       heading: 'Follow who controls the scene—and when that control changes hands.',
       paragraphs: [
         'Begin with the obstruction. A father controls a marriage, an older brother blocks an inheritance, jealousy governs a household or a law threatens an outsider. Comedy needs a pressure strong enough to make another space, name or performance necessary. The forest, disguise and practical joke are responses to a social arrangement, not decorative detours from it.',
-        'Then read the ending backwards. Which earlier mistake must be retold? Who produces proof, recognises a face or accepts a new account? A final embrace may depend on an improbable arrival, but stage action makes that improbability visible and communal. The audience watches knowledge become shared—even when one character refuses the terms on which the sharing occurs.'
+        'Then read the ending backwards. Which earlier mistake must be retold? Who produces proof, recognises a face or accepts a new account? A final embrace may depend on an improbable arrival, but stage action makes that improbability visible and communal. The audience watches knowledge being shared, even when one character does not accept the terms.'
       ]
     },
     terms: [
@@ -148,29 +148,29 @@ module.exports = [
       ]
     },
     methods: [
-      { label: 'Chronicle', title: 'A source is material, not a verdict', copy: 'Holinshed and other chroniclers had already selected causes, repeated traditions and arranged rulers into meaningful sequences. Shakespeare selects again. Compare what the play keeps, moves or invents, then ask whose claim becomes stronger or weaker through that decision. Source study should reveal a dramatic argument, not reduce reading to catching errors.' },
+      { label: 'Chronicle', title: 'A source is material, not a verdict', copy: 'Holinshed and other chroniclers had already selected causes, repeated traditions and arranged rulers into meaningful sequences. Shakespeare selects again. Compare what the play keeps, moves or invents, and ask whose claim is strengthened or weakened by each change. Source study should reveal a dramatic argument, not reduce reading to catching errors.' },
       { label: 'Performance', title: 'A king must be recognised in public', copy: 'The crown does not make authority self-executing. Oaths, processions, titles, costumes and speeches persuade other people to behave as though a claim is settled. Watch who stands near the king, who answers and whether a public role survives private doubt. Kingship is repeatedly shown as an office that bodies and audiences must perform together.' },
-      { label: 'Sequence', title: 'One reign leaves the next play unfinished business', copy: 'A deposition, pardon, rebellion or conquest returns as another generation’s inheritance. Read endings with the next opening in view. Henry V’s triumph is followed by a child king and lost territory; Richard III’s ascent gathers violence begun long before his first soliloquy. Sequence turns consequence into a form of historical memory.' }
+      { label: 'Sequence', title: 'One reign leaves the next play unfinished business', copy: 'A deposition, pardon, rebellion or conquest returns as another generation’s inheritance. Read endings with the next opening in view. Henry V’s triumph is followed by a child king and lost territory; Richard III’s ascent gathers violence begun long before his first soliloquy. Read in order, the plays show one generation paying for what the last one did.' }
     ],
     books: [
       { href: '/books/king-john/', title: 'King John', author: 'William Shakespeare', year: 'c.1594–96', image: '/King%20John%20Main%20Cover.jpg', copy: 'A disputed succession pulls inheritance, papal authority, France and the fate of Arthur into a war whose claimants all speak law.' },
-      { href: '/books/richard-ii/', title: 'Richard II', author: 'William Shakespeare', year: 'c.1595', image: '/Richard%20II.png', copy: 'Ceremony, land and language are tested when Bolingbroke turns grievance into deposition and a new royal title.' },
+      { href: '/books/richard-ii/', title: 'Richard II', author: 'William Shakespeare', year: 'c.1595', image: '/Richard%20II.png', copy: 'Ceremony, land and language are put to the test when Bolingbroke comes back to claim his inheritance and leaves with the crown.' },
       { href: '/books/henry-iv-part-1/', title: 'Henry IV, Part 1', author: 'William Shakespeare', year: 'c.1596–97', image: '/Henry%20IV,%20Part%201.png', copy: 'Rebellion sets Hotspur beside Prince Hal, while Falstaff tests the honour and political education expected of an heir.' },
       { href: '/books/henry-iv-part-2/', title: 'Henry IV, Part 2', author: 'William Shakespeare', year: 'c.1597–98', image: '/Henry%20IV%20part%202%20Main.jpeg', copy: 'An ageing king and an exhausted realm wait for succession as Hal prepares to make his first public judgement as Henry V.' },
-      { href: '/books/henry-v/', title: 'Henry V', author: 'William Shakespeare', year: 'c.1599', image: '/Henry%20V%20Main%20Cover.jpg', copy: 'Chorus and king construct national unity around the French campaign while soldiers and conquered civilians reveal its cost.' },
+      { href: '/books/henry-v/', title: 'Henry V', author: 'William Shakespeare', year: 'c.1599', image: '/Henry%20V%20Main%20Cover.jpg', copy: 'The Chorus and the king build a picture of national unity around the French campaign, and soldiers and French civilians show what it costs.' },
       { href: '/books/henry-vi-part-1/', title: 'Henry VI, Part 1', author: 'William Shakespeare and collaborators', year: 'c.1591–92', image: '/Henry%20VI%2C%20Part%201%20%28Main%20cover%29.jpg', copy: 'Henry V’s funeral opens a fractured realm: France is lost while rivalry at home begins to divide the English claim.' },
       { href: '/books/henry-vi-part-2/', title: 'Henry VI, Part 2', author: 'William Shakespeare', year: 'c.1590–91', image: '/Henry%20VI%2C%20Part%202.png', copy: 'Faction, popular rebellion and York’s concealed claim move political disagreement towards open civil war.' },
-      { href: '/books/henry-vi-part-3/', title: 'Henry VI, Part 3', author: 'William Shakespeare', year: 'c.1590–91', image: '/Henry%20VI%2C%20Part%203.png', copy: 'The crown changes hands amid the Wars of the Roses, turning dynastic argument into violence between parents and children.' },
+      { href: '/books/henry-vi-part-3/', title: 'Henry VI, Part 3', author: 'William Shakespeare', year: 'c.1590–91', image: '/Henry%20VI%2C%20Part%203.png', copy: 'The crown changes hands in the Wars of the Roses, and in one scene a son finds he has killed his father and a father his son.' },
       { href: '/books/richard-iii/', title: 'Richard III', author: 'William Shakespeare', year: 'c.1592–94', image: '/Richard%20III.png', copy: 'Richard performs villainy and entitlement before an audience while the dead of the earlier plays challenge his version of history.' },
-      { href: '/books/henry-viii/', title: 'Henry VIII', author: 'William Shakespeare, probably with John Fletcher', year: 'c.1613', image: '/Henry%20VIII%20Main%20Cover.jpg', copy: 'Trials, falls and royal marriage lead towards Elizabeth’s birth in a late spectacle that keeps historical closure under pressure.' },
+      { href: '/books/henry-viii/', title: 'Henry VIII', author: 'William Shakespeare, probably with John Fletcher', year: 'c.1613', image: '/Henry%20VIII%20Main%20Cover.jpg', copy: 'Trials, falls and a royal marriage lead up to Elizabeth’s christening, in a late play that makes a happy ending look carefully arranged.' },
       { href: '/books/macbeth/', title: 'Macbeth', author: 'William Shakespeare', year: 'c.1606 · chronicle tragedy', image: '/FB3AE04E-B2F3-4AB6-96D5-49BF6CF4C298.png', copy: 'Holinshed’s Scottish history becomes a tragedy of regicide, prophecy and a succession that violence cannot securely command.' },
-      { href: '/books/king-lear/', title: 'King Lear', author: 'William Shakespeare', year: 'c.1605–06 · chronicle tragedy', image: '/King%20Lear.png', copy: 'A legendary British king divides his realm, treating succession as a love test and turning family judgement into national ruin.' }
+      { href: '/books/king-lear/', title: 'King Lear', author: 'William Shakespeare', year: 'c.1605–06 · chronicle tragedy', image: '/King%20Lear.png', copy: 'A legendary British king divides his kingdom by a test of love, and his family’s quarrel ruins the country.' }
     ],
     reading: {
       heading: 'Make a succession table, then return to the people on stage.',
       paragraphs: [
         'A simple family tree helps: write down who claims the crown, through which relative and under what rule of inheritance. Keep legality and control in separate columns. Richard II is an anointed king who loses practical obedience; Bolingbroke acquires obedience before he can make his title feel secure. The table should clarify the claim, not decide the play. Watch the moment when a room accepts, refuses or remains silent before a new political fact.',
-        'For each play, place one ceremonial speech beside one scene of ordinary cost. Henry V’s Chorus makes a nation in language, while Williams asks what a king owes the soldiers who die for him. Jack Cade’s rebellion mixes real grievance with grotesque violence; the gardeners in Richard II describe order from outside the court. These changes of scale show who is included in the word England, who is spoken for, and whose body pays when royal history becomes a public story.'
+        'For each play, place one ceremonial speech beside one scene of ordinary cost. Henry V’s Chorus makes a nation out of words, while the soldier Williams wants to know what a king owes the men who die for him. Jack Cade’s rebellion mixes real grievance with grotesque violence; the gardeners in Richard II describe order from outside the court. These changes of scale show who is included in the word England, who is spoken for, and whose body pays when royal history becomes a public story.'
       ]
     },
     terms: [
@@ -204,7 +204,7 @@ module.exports = [
       { value: 'c.335 BCE', label: 'Aristotle’s Poetics gives an influential early account of tragic action' },
       { value: '1590s', label: 'Doctor Faustus, Titus Andronicus and Romeo and Juliet test different early tragic forms' },
       { value: '1600–06', label: 'Hamlet, Othello, King Lear and Macbeth transform the mature form' },
-      { value: 'c.1612–14', label: 'The Duchess of Malfi turns a woman’s private choice into a tragedy of court power' }
+      { value: 'c.1612–14', label: 'The Duchess of Malfi makes a woman’s private choice into a tragedy of court power' }
     ],
     introduction: {
       heading: 'A tragic ending is known. Its meaning is not.',
@@ -215,13 +215,13 @@ module.exports = [
     },
     methods: [
       { label: 'Action', title: 'A choice changes the field', copy: 'Tragic characters do not simply receive a fate. They interpret, decide and act inside pressures they did not create. A decision alters what everyone else can do, so private error becomes political, familial or military consequence.' },
-      { label: 'Knowledge', title: 'The audience sees an unequal world', copy: 'Dramatic irony gives spectators knowledge that a character lacks, but never perfect control. We may know that Iago lies or that Macbeth’s confidence is false while remaining unable to stop the scene. Tragedy turns understanding into a form of helpless participation.' },
-      { label: 'Language', title: 'Speech can reveal and conceal at once', copy: 'Soliloquies do not provide a simple key to a stable inner self. A speaker may persuade, evade, rehearse or discover a thought while speaking it. The language is an event, not a label placed over the action.' }
+      { label: 'Knowledge', title: 'The audience sees an unequal world', copy: 'Dramatic irony gives spectators knowledge that a character lacks, but never perfect control. We may know that Iago lies or that Macbeth’s confidence is false while remaining unable to stop the scene. In tragedy the audience often understands what is happening and can do nothing to stop it.' },
+      { label: 'Language', title: 'Speech can reveal and conceal in the same breath', copy: 'Soliloquies do not provide a simple key to a stable inner self. A speaker may persuade, evade, rehearse or discover a thought while speaking it. The language is an event, not a label placed over the action.' }
     ],
     books: [
       { href: '/books/doctor-faustus/', title: 'Doctor Faustus', author: 'Christopher Marlowe', year: 'c.1592–93', image: '/Doctor%20Faustus%20Cover.png', copy: 'A scholar trades his soul for twenty-four years of service, then discovers how quickly boundless ambition can narrow into delay and fear.' },
       { href: '/books/romeo-and-juliet/', title: 'Romeo and Juliet', author: 'William Shakespeare', year: 'c.1595', image: '/Romeo%20and%20Juliet.png', copy: 'Love, family violence, public time and the fatal speed of interpretation.' },
-      { href: '/books/hamlet/', title: 'Hamlet', author: 'William Shakespeare', year: 'c.1600–01', image: '/Hamlet.png', copy: 'Revenge, performance and the difficulty of turning uncertain knowledge into action.' },
+      { href: '/books/hamlet/', title: 'Hamlet', author: 'William Shakespeare', year: 'c.1600–01', image: '/Hamlet.png', copy: 'Revenge, performance, and the difficulty of acting on uncertain knowledge.' },
       { href: '/books/troilus-and-cressida/', title: 'Troilus and Cressida', author: 'William Shakespeare', year: 'c.1601–02', image: '/Troilus%20and%20Cressida%20Main.png', copy: 'Love and heroic reputation are tested inside a war that has forgotten how to end.' },
       { href: '/books/othello/', title: 'Othello', author: 'William Shakespeare', year: 'c.1603–04', image: '/Othello.png', copy: 'A marriage destroyed by insinuation, manufactured proof and the demand for certainty.' },
       { href: '/books/king-lear/', title: 'King Lear', author: 'William Shakespeare', year: 'c.1605–06', image: '/King%20Lear.png', copy: 'A divided kingdom, failed recognition and the stripping away of political protection.' },
@@ -278,20 +278,20 @@ module.exports = [
       heading: 'A case is solved twice: by the detective and by the storyteller.',
       paragraphs: [
         'Detective fiction creates a double movement. Someone inside the story gathers traces and constructs an explanation; the narrative decides when the reader may see those traces and what they appear to mean. A solution can be logically sound and still owe its force to delay, selection and performance.',
-        'The Moonstone distributes its evidence among witnesses whose voices reveal character as well as fact. Conan Doyle’s most important formal decision is Watson. Holmes can observe a cuff, footprint or timetable, but Watson turns the observation into a case with weather, rooms, clients, uncertainty and a final account. Both forms make the record of an investigation part of the mystery.'
+        'The Moonstone distributes its evidence among witnesses whose voices reveal character as well as fact. Conan Doyle’s most important formal decision is Watson. Holmes notices a cuff, a footprint or a timetable, but it is Watson who writes the case up, with weather, rooms, clients, doubt and a final account. Both forms make the record of an investigation part of the mystery.'
       ]
     },
     methods: [
       { label: 'The clue', title: 'Visible does not mean understood', copy: 'A good clue usually appears before it is explained. The reader sees an object or hears a statement but assigns it the wrong weight. Detection depends on arrangement: which detail is ordinary, which is planted and which has been dismissed too quickly.' },
-      { label: 'The record', title: 'Narration is part of the evidence', copy: 'Watson writes after the case, chooses what to withhold and converts reasoning into drama. His honesty does not make the record neutral. Detective fiction asks us to trust an account while noticing how that trust is made.' },
+      { label: 'The record', title: 'Narration is part of the evidence', copy: 'Watson writes after the case, chooses what to withhold and converts reasoning into drama. His honesty does not make the record neutral. Detective fiction wants us to trust an account while we watch how that trust is earned.' },
       { label: 'The verdict', title: 'Explanation is a form of power', copy: 'To solve a case is to decide which story becomes public. Holmes sometimes protects a client, lets an offender leave or withholds a name. The genre therefore tests the detective’s judgment as well as the accuracy of the deduction.' }
     ],
     books: [
       { href: '/books/the-moonstone/', title: 'The Moonstone', author: 'Wilkie Collins', year: '1868', image: '/The%20Moonstone%20Main%20Cover.png', copy: 'A stolen diamond is investigated through connected testimonies that make voice, empire and possession part of the case.' },
       { href: '/books/sign-of-four/', title: 'The Sign of Four', author: 'Arthur Conan Doyle', year: '1890', image: '/The%20SIgn%20Of%20Four.png', copy: 'A novel-length case in which a missing treasure opens questions of empire, possession and testimony.' },
       { href: '/books/adventures-of-sherlock-holmes/', title: 'The Adventures of Sherlock Holmes', author: 'Arthur Conan Doyle', year: '1892', image: '/Adventures%20of%20Sherlock%20Holmes.png', copy: 'Twelve stories that make the client, the clue, Watson’s delay and Holmes’s explanation endlessly adaptable.' },
-      { href: '/books/jekyll-and-hyde/', title: 'Jekyll and Hyde', author: 'Robert Louis Stevenson', year: '1886 · investigative Gothic', image: '/Jekyll%20and%20Hyde.png', copy: 'Not a detective novel, but a lawyer’s inquiry, witness statements and sealed documents govern how its secret emerges.' },
-      { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897 · documentary Gothic', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'Not detective fiction, but a collected archive turns several partial witnesses into a shared investigation.' }
+      { href: '/books/jekyll-and-hyde/', title: 'Jekyll and Hyde', author: 'Robert Louis Stevenson', year: '1886 · investigative Gothic', image: '/Jekyll%20and%20Hyde.png', copy: 'It is not a detective novel, yet a lawyer’s inquiry, witness statements and sealed documents decide how its secret comes out.' },
+      { href: '/books/dracula/', title: 'Dracula', author: 'Bram Stoker', year: '1897 · documentary Gothic', image: '/0194_1_like-the-one-attached-match-background-c_8YvDNXceV1S2geaPKOSiFg_oMVpLDveSW6UbY4s9hlomg_cover.png', copy: 'It is not detective fiction, yet it is built as an archive of partial witnesses who investigate together.' }
     ],
     reading: {
       heading: 'Separate observation, inference and proof.',
@@ -331,13 +331,13 @@ module.exports = [
     introduction: {
       heading: 'Epic makes one life answer to a much larger history.',
       paragraphs: [
-        'Epic scale does not come only from length, gods or battles. An epic joins an individual action to the fate of a household, people or future state. Achilles’s anger changes the course of the war at Troy; Odysseus’s return tests whether Ithaca can become a home again. Aeneas’s journey is burdened by a city and empire that do not yet exist.',
-        'These poems also remember other tellings. Virgil writes with Homer in view; Milton invokes both classical epic and the book of Genesis while making the Fall unfold in English blank verse. Moby-Dick is a novel, not an ancient epic, but its invocations, catalogues, voyage and immense adversary deliberately reach towards epic ways of making scale.'
+        'Epic scale does not come only from length, gods or battles. An epic joins an individual action to the fate of a household, people or future state. Achilles’s anger changes the course of the war at Troy; Odysseus comes home to find out whether Ithaca can be his home again. Aeneas’s journey is burdened by a city and empire that do not yet exist.',
+        'These poems also remember other tellings. Virgil writes with Homer in view; Milton invokes both classical epic and the book of Genesis while making the Fall unfold in English blank verse. Moby-Dick is a novel, not an ancient epic, but its invocations, catalogues, voyage and enormous adversary reach deliberately for the scale of epic.'
       ]
     },
     methods: [
       { label: 'Beginning', title: 'The story opens in the middle', copy: 'Epic often begins after decisive events have already occurred. The missing past returns through song, memory and report. This makes storytelling part of survival: a hero must understand and narrate what has happened in order to move forward.' },
-      { label: 'Repetition', title: 'A repeated scene is never merely repeated', copy: 'Feasts, arrivals, councils, recognitions and acts of hospitality recur with variations. The pattern teaches a reader what to expect; the difference reveals whether a household or ruler honours the obligations of the world.' },
+      { label: 'Repetition', title: 'A repeated scene always changes something', copy: 'Feasts, arrivals, councils, recognitions and acts of hospitality recur with variations. The pattern teaches a reader what to expect; the difference reveals whether a household or ruler honours the obligations of the world.' },
       { label: 'Scale', title: 'The ordinary and cosmic share a line', copy: 'A meal, wound, garment or door may stand beside divine action and national history. Epic does not abandon material detail. It enlarges consequence until an object can carry memory across generations.' }
     ],
     books: [
@@ -382,26 +382,26 @@ module.exports = [
     facts: [
       { value: '1513', label: 'Machiavelli drafts The Prince after the collapse of the Florentine republic' },
       { value: '1516', label: 'Utopia gives an imagined island a name that still shapes political argument' },
-      { value: '1726', label: 'Gulliver’s Travels turns the voyage narrative into sustained satirical pressure' },
+      { value: '1726', label: 'Gulliver’s Travels uses the voyage narrative for satire from beginning to end' },
       { value: '1945', label: 'Animal Farm publishes political history as a compressed animal fable' }
     ],
     introduction: {
       heading: 'A made-up world can make ordinary language look newly strange.',
       paragraphs: [
-        'Satire rarely announces a safe position outside the foolish world it describes. It imitates a travel report, proposal, scientific debate or public slogan until the borrowed form begins to expose itself. The reader must judge not only what is said but the voice, scale and assumptions that make it sound reasonable.',
+        'Satire rarely announces a safe position outside the foolish world it describes. It imitates a travel report, proposal, scientific debate or public slogan until the borrowed form begins to expose itself. The reader has to judge what is said, and also the voice, scale and assumptions that make it sound reasonable.',
         'The shelf here includes works that must be distinguished. Utopia is a dialogue and imagined commonwealth; The Prince is political analysis, not fiction or a simple handbook of wickedness; Gulliver’s Travels is a satirical voyage; The Man Who Was Thursday is a philosophical nightmare wearing the clothes of a chase; Animal Farm is a political fable and allegory. Their methods cross without making their genres identical.'
       ]
     },
     methods: [
-      { label: 'Voice', title: 'The speaker may be part of the joke', copy: 'A satirical narrator can be confident, precise and badly wrong. Literal reading is not enough. Notice what the speaker normalises, which human cost disappears from the vocabulary and where the text creates a gap between fluency and judgment.' },
-      { label: 'Scale', title: 'A distorted world clarifies a real one', copy: 'Giants, tiny rulers, talking horses and farm animals alter proportion. The distance allows institutions and habits to be seen as constructed rather than natural, while preventing the reader from settling into a single easy equivalence.' },
+      { label: 'Voice', title: 'The speaker may be part of the joke', copy: 'A satirical narrator can be confident, precise and badly wrong. Literal reading is not enough. Notice what the speaker treats as normal, which human suffering drops out of the vocabulary, and where the text sounds fluent and judges badly.' },
+      { label: 'Scale', title: 'A distorted world clarifies a real one', copy: 'Giants, tiny rulers, talking horses and farm animals alter proportion. The distance lets institutions and habits be seen as made by people, and keeps the reader from settling on any one easy comparison.' },
       { label: 'Language', title: 'Power revises the dictionary', copy: 'Political writing pays close attention to names, maxims, laws and slogans. A phrase can compress thought until repetition replaces argument. The struggle over power is also a struggle over which words remain available.' }
     ],
     books: [
       { href: '/books/the-prince/', title: 'The Prince', author: 'Niccolò Machiavelli', year: 'written 1513', image: '/The%20Prince.png', copy: 'A political treatise that studies how rulers gain, secure and lose power under unstable conditions.' },
       { href: '/books/utopia/', title: 'Utopia', author: 'Thomas More', year: '1516', image: '/Utopia.png', copy: 'Dialogue, traveller’s report and imagined society held together without a final instruction about what to believe.' },
       { href: '/books/gullivers-travels/', title: 'Gulliver’s Travels', author: 'Jonathan Swift', year: '1726', image: '/Gulliver%27s%20Travels%20Replacement.jpg', copy: 'Four voyages that keep changing the scale from which politics, knowledge and human pride are judged.' },
-      { href: '/books/the-man-who-was-thursday/', title: 'The Man Who Was Thursday', author: 'G. K. Chesterton', year: '1908', image: '/The%20Man%20Who%20Was%20Thursday.png', copy: 'Anarchists, policemen and disguises turn political certainty into a comic and metaphysical nightmare.' },
+      { href: '/books/the-man-who-was-thursday/', title: 'The Man Who Was Thursday', author: 'G. K. Chesterton', year: '1908', image: '/The%20Man%20Who%20Was%20Thursday.png', copy: 'Anarchists, policemen and disguises make a comic, metaphysical nightmare out of political certainty.' },
       { href: '/books/animal-farm/', title: 'Animal Farm', author: 'George Orwell', year: '1945', image: '/Animal%20Farm.png', copy: 'A revolution becomes a regime through memory, force and the repeated alteration of public language.' }
     ],
     reading: {
@@ -414,7 +414,7 @@ module.exports = [
     terms: [
       { term: 'Satire', copy: 'Writing that exposes vice, folly or abuse through irony, ridicule, distortion or imitation.' },
       { term: 'Allegory', copy: 'A narrative whose figures and actions sustain a further field of political, moral or historical meaning.' },
-      { term: 'Utopia', copy: 'An imagined society used to test how actual societies organise property, work, law and belief.' },
+      { term: 'Utopia', copy: 'An imagined society used to examine how real societies organise property, work, law and belief.' },
       { term: 'Fable', copy: 'A compressed tale, often using animals, that makes conduct and power visible through a simplified world.' }
     ],
     resources: [
@@ -435,7 +435,7 @@ module.exports = [
     description: 'A guide to letters, autobiography, framed manuscripts, retrospective narration and assembled documents across seven Astor books.',
     search: 'narration narrator testimony witness first person autobiography memoir frame narrative framed manuscript Custom House Scarlet Letter Hawthorne epistolary letters diary documents retrospective voice reliability evidence perspective archive',
     facts: [
-      { value: '1740', label: 'Pamela turns private letters into the immediate action of a novel' },
+      { value: '1740', label: 'In Pamela, private letters are the action of the novel' },
       { value: '1845', label: 'Frederick Douglass publishes an autobiography written under the danger of recapture' },
       { value: '1847', label: 'Wuthering Heights places most of its history inside Nelly Dean’s account to Lockwood' },
       { value: '1897', label: 'Dracula assembles diaries, letters, telegrams and clippings into a shared record' }
@@ -511,7 +511,7 @@ module.exports = [
     },
     methods: [
       { label: 'Voice', title: 'Ask who can make a public record', copy: 'Douglass’s authorship is itself part of his argument. Stowe creates and directs several fictional voices. Twain gives Huck a limited first-person account whose ordinary words expose what his society has taught him. The form changes whose knowledge the reader receives and how it must be judged.' },
-      { label: 'Law', title: 'Follow what the law calls property', copy: 'Bills of sale, inheritance, pursuit and fugitive law turn human relationships into enforceable claims. Keep legal language beside the bodily and domestic consequences it produces. The gap between lawful conduct and justice is one of the shelf’s central pressures.' },
+      { label: 'Law', title: 'Follow what the law calls property', copy: 'Bills of sale, inheritance, pursuit and the Fugitive Slave Law make human relationships into claims a court can enforce. Keep legal language beside the bodily and domestic consequences it produces. The gap between lawful conduct and justice is one of the shelf’s central pressures.' },
       { label: 'Freedom', title: 'Movement is only the beginning', copy: 'Crossing a river or reaching a free state may change immediate danger without repairing every loss. Literacy, chosen names, reunited families, paid work and control over one’s story give freedom social and intellectual dimensions as well as geographical ones.' }
     ],
     books: [
@@ -737,7 +737,7 @@ module.exports.push(
     facts: [
       { value: 'Publication', label: 'A seasonal annual’s printed year may differ from the year it reached readers' },
       { value: 'Contents', label: 'An anthology may combine fiction, poetry and historical documents' },
-      { value: 'Custom', label: 'Holiday practices have specific histories rather than one universal origin' },
+      { value: 'Custom', label: 'Each holiday custom has its own history' },
       { value: 'Afterlives', label: 'Stories can acquire a seasonal association after their first publication' }
     ],
     introduction: { heading: 'Distinguish the holiday from the history of the text.', paragraphs: [
