@@ -14,7 +14,7 @@
   "difficulty": 2,
   "lengthNote": "Twelve stories, each written to fill a single issue of a monthly magazine",
   "openingLine": "To Sherlock Holmes she is always the woman.",
-  "summary": "Twelve cases written to a monthly deadline, and the book that taught detective fiction its shape: a client with a story they have already misread, a detective who reads the room instead, and a narrator who withholds. Doyle's London runs on railway timetables, newspaper advertisements and rented lodgings, and the crimes are mostly about money and respectability rather than murder. Four of the twelve end without an arrest.",
+  "summary": "Twelve cases written to a monthly deadline, and the book that taught detective fiction its shape: a client with a story they have already misread, a detective who reads the room instead, and a narrator who withholds. Doyle’s London runs on railway timetables, newspaper advertisements and rented lodgings, and the crimes are mostly about money and respectability; there is little murder. Four of the twelve end without an arrest.",
   "referenceStyle": "story title",
   "sourceText": {
     "label": "Standard Ebooks text of The Adventures of Sherlock Holmes",
@@ -101,7 +101,7 @@
       "id": "noble-bachelor",
       "label": "The Adventure of the Noble Bachelor",
       "title": "A bride who leaves during the wedding breakfast",
-      "summary": "An aristocrat marries American money and the bride disappears before the meal. Holmes works it out from a discarded dress and a note written on a hotel bill, and the solution is a first husband rather than a crime."
+      "summary": "An aristocrat marries American money and the bride disappears before the meal. Holmes works it out from a discarded dress and a note written on a hotel bill, and the answer is a first husband, with no crime at all."
     },
     {
       "id": "beryl-coronet",
@@ -121,7 +121,7 @@
       "id": "sherlock-holmes",
       "name": "Sherlock Holmes",
       "role": "Consulting detective, 221B Baker Street",
-      "summary": "He works for interest rather than money, refuses cases that bore him, and treats the law as one option among several. The stories are careful to show his conclusions resting on specialist knowledge, correspondence, disguise and paid informants as much as on the famous glance at a sleeve.",
+      "summary": "He works for interest, not money, turns down cases that bore him, and treats the law as one option among several. The stories are careful to show his conclusions resting on specialist knowledge, correspondence, disguise and paid informants as much as on the famous glance at a sleeve.",
       "clue": "He keeps his tobacco in a slipper, can tell a man's trade from his cuffs, and once let a thief run out of the door on Christmas because gaol would have finished him.",
       "firstAppearance": "A Scandal in Bohemia",
       "traits": [
@@ -166,8 +166,8 @@
       "id": "john-watson",
       "name": "Dr John Watson",
       "role": "Army surgeon, friend, narrator",
-      "summary": "He decides what the reader is told and when, which makes him the collection's most important technical device. His admiration shapes every portrait of Holmes, and his bafflement is what keeps a chain of inference feeling like a story rather than a demonstration.",
-      "clue": "An army surgeon invalided home, newly married in the middle of the book, who turns his friend's demonstrations into the thing his friend claims to despise.",
+      "summary": "He decides what the reader is told and when, which makes him the collection's most important technical device. His admiration colours every portrait of Holmes, and his bafflement keeps a chain of inference feeling like a story.",
+      "clue": "An army surgeon invalided home, newly married in the middle of the book, who makes his friend’s demonstrations into the very thing his friend claims to despise: popular stories.",
       "firstAppearance": "A Scandal in Bohemia",
       "traits": [
         "loyal",
@@ -283,7 +283,7 @@
       "name": "Violet Hunter",
       "role": "Governess at the Copper Beeches",
       "summary": "She is asked to cut her hair, wear a particular blue dress and sit with her back to a window, and she does all three while keeping a record. By the time Holmes arrives she has found the locked wing, tested the length of the ladder and worked out roughly what is being concealed.",
-      "clue": "A governess who accepts a post with impossible conditions, sits where she is told, and quietly uses a hand-mirror to see what is behind her.",
+      "clue": "A governess who accepts a post with impossible conditions, sits where she is told, and secretly uses a hand-mirror to see what is behind her.",
       "firstAppearance": "The Adventure of the Copper Beeches",
       "traits": [
         "observant",
@@ -396,7 +396,7 @@
       "id": "marriage",
       "name": "Marriage as a market",
       "summary": "Weddings in these stories are transactions with documents attached. A stepfather invents a fiancé to keep his stepdaughter's income at home; a doctor needs his stepdaughters unmarried; a peer marries American mining money; a bride walks out of her own wedding breakfast.",
-      "development": "The collection keeps returning to the moment just before or just after a marriage, which is when money moves and when someone therefore becomes dangerous."
+      "development": "The collection comes back again and again to the moment just before or just after a marriage, which is when money moves and someone becomes dangerous."
     },
     {
       "id": "disguise",
@@ -451,7 +451,7 @@
       "reference": "A Scandal in Bohemia",
       "stage": "scandal-in-bohemia",
       "context": "The first sentence of the collection.",
-      "analysis": "The present tense is the surprising part: Watson is writing long afterwards and the habit still holds. Naming her by a definite article rather than a name turns a person into a category of one, and the sentence works as an announcement that the book will begin with the case its hero lost.",
+      "analysis": "The present tense is the surprising part: Watson is writing long afterwards and the habit still holds. Calling her by a definite article instead of a name makes a person a category of one, and the sentence announces that the book will begin with the case its hero lost.",
       "themes": [
         "respectability"
       ],
@@ -523,7 +523,7 @@
       "reference": "A Scandal in Bohemia",
       "stage": "scandal-in-bohemia",
       "context": "Refusing to speculate about an anonymous note before reading it properly.",
-      "analysis": "The second sentence is the useful one, and it describes an error of character rather than of method — 'insensibly' concedes that nobody notices themselves doing it. Doyle, trained as a doctor, is describing diagnosis, and the collection's guilty parties are usually people who decided early what a fact meant.",
+      "analysis": "The second sentence is the useful one, and it describes a fault of character, not of method: ‘insensibly’ admits that nobody notices themselves doing it. Doyle, trained as a doctor, is describing diagnosis, and the collection's guilty parties are usually people who decided early what a fact meant.",
       "themes": [
         "evidence"
       ],
@@ -596,7 +596,7 @@
       "reference": "The Red-Headed League",
       "stage": "red-headed-league",
       "context": "In the stalls at a concert, before the night's work at the bank.",
-      "analysis": "Thinking is given a unit of measurement and a duration, which is a very Victorian way of describing genius — as a quantity of labour rather than a flash. The fifty minutes also buys Doyle a scene break, and the reader is kept outside the reasoning until the cellar.",
+      "analysis": "Thinking is given a unit of measurement and a duration, a very Victorian way of describing genius, as a quantity of labour. The fifty minutes also buys Doyle a scene break, and the reader is kept outside the reasoning until the cellar.",
       "themes": [
         "evidence"
       ],
@@ -619,7 +619,7 @@
       "reference": "The Red-Headed League",
       "stage": "red-headed-league",
       "context": "After the arrest, yawning, as the case ends.",
-      "analysis": "The motive stated here is not justice, money or curiosity but boredom, and it is offered as the ordinary condition of his life rather than an affectation. 'Little problems' reduces a bank robbery and a ruined pawnbroker to a distraction, which is the coldest thing Holmes says in the collection.",
+      "analysis": "The motive stated here is boredom, not justice, money or curiosity, and it is offered as the ordinary condition of his life. ‘Little problems’ reduces a bank robbery and a ruined pawnbroker to a distraction, the coldest thing Holmes says in the collection.",
       "themes": [
         "evidence",
         "justice"
@@ -643,7 +643,7 @@
       "reference": "A Case of Identity",
       "stage": "case-of-identity",
       "context": "Arguing that ordinary life is stranger than anything a novelist would invent.",
-      "analysis": "It inverts the usual defence of realism: the commonplace is not the safe ground but the anomaly. Placed at the head of the collection's least violent case — a stepfather in false whiskers protecting an annuity — the remark functions as a working instruction for reading the rest.",
+      "analysis": "It inverts the usual defence of realism: the commonplace is where the anomaly lies. Placed at the head of the collection's least violent case — a stepfather in false whiskers protecting an annuity — the remark functions as a working instruction for reading the rest.",
       "themes": [
         "evidence",
         "class"
@@ -718,7 +718,7 @@
       "reference": "The Boscombe Valley Mystery",
       "stage": "boscombe-valley",
       "context": "Explaining to Watson how he read the ground by the pool.",
-      "analysis": "'Founded upon' is a builder's phrase, and the claim is that the small things are the foundation rather than the ornament. The sentence is also a piece of brand management — Holmes speaks of his method as an established system, to a man whose published accounts are what established it.",
+      "analysis": "‘Founded upon’ is a builder’s phrase, and the claim is that the small things are the foundation, not the ornament. The sentence is also a piece of brand management — Holmes speaks of his method as an established system, to a man whose published accounts are what established it.",
       "themes": [
         "evidence"
       ],
@@ -743,7 +743,7 @@
       "reference": "The Five Orange Pips",
       "stage": "five-orange-pips",
       "context": "Answering a client who says his case is no ordinary one.",
-      "analysis": "He describes himself in the language of a legal hierarchy while standing entirely outside it, and the claim is about position rather than skill: people reach him when the institutions have already failed. The story then makes the boast unbearable, since this client is dead within hours.",
+      "analysis": "He describes himself in the language of a legal hierarchy while standing entirely outside it, and the claim is about his position: people reach him when the institutions have already failed. The story then makes the boast unbearable, since this client is dead within hours.",
       "themes": [
         "justice"
       ],
@@ -962,7 +962,7 @@
       "reference": "The Adventure of the Beryl Coronet",
       "stage": "beryl-coronet",
       "context": "To Alexander Holder, who has had his son arrested for the theft.",
-      "analysis": "The case is solved by physical evidence but judged on character, and the judgement falls on the client rather than the thief. The closing clause is the one glimpse of a private life the collection allows Holmes, and he offers it as a measure of someone else's conduct rather than a confidence.",
+      "analysis": "The case is solved by physical evidence and judged on character, and the judgement falls on the client, not the thief. The closing clause is the one glimpse of a private life the collection allows Holmes, offered as a measure of someone else’s conduct.",
       "themes": [
         "respectability",
         "justice",
@@ -987,7 +987,7 @@
       "reference": "The Adventure of the Copper Beeches",
       "stage": "copper-beeches",
       "context": "Waiting for Violet Hunter's next letter, with nothing to work on.",
-      "analysis": "He has just barked the same word three times, and the sentence that follows turns detection into a trade with raw materials and a supplier. The clay comes from a governess who is already inside the house, which makes her the working investigator of the story's first half.",
+      "analysis": "He has just barked the same word three times, and the sentence that follows makes detection a trade with raw materials and a supplier. The clay comes from a governess who is already inside the house, which makes her the working investigator of the story's first half.",
       "themes": [
         "evidence"
       ],
@@ -1011,7 +1011,7 @@
       "reference": "The Adventure of the Copper Beeches",
       "stage": "copper-beeches",
       "context": "Looking out of a train window at isolated houses in Hampshire.",
-      "analysis": "The reason he gives is not moral but architectural: isolation, and the impunity it grants. It closes the collection by reversing the expected geography of Victorian crime fiction — the city is dangerous because it is crowded, the country because nobody is near enough to hear.",
+      "analysis": "The reason he gives is architectural: isolation, and the impunity it grants. It closes the collection by reversing the expected geography of Victorian crime fiction — the city is dangerous because it is crowded, the country because nobody is near enough to hear.",
       "themes": [
         "respectability",
         "class",
@@ -1134,7 +1134,7 @@
       "name": "Boscombe Valley, Herefordshire",
       "lat": 52.08,
       "lon": -2.72,
-      "note": "The estate and pool of the Boscombe case, where the ground rather than the witnesses gives the answer."
+      "note": "The estate and pool of the Boscombe case, where the ground gives the answer that the witnesses cannot."
     }
   ],
   "criticalViews": [
@@ -1145,13 +1145,13 @@
     },
     {
       "position": "Watson as the essential device",
-      "summary": "Criticism has long argued that the interest lies in the narration rather than the deduction: the reader's pleasure depends on a narrator who possesses the clues without understanding them, and whose affection colours every description of Holmes.",
+      "summary": "Criticism has long argued that the interest lies in the narration more than the deduction: the reader’s pleasure depends on a narrator who has the clues without understanding them, and whose affection colours every description of Holmes.",
       "counter": "Pushed far, it makes Holmes a projection, which the stories resist — his impatience with Watson's storytelling is one of their running jokes."
     },
     {
       "position": "The collection as social record",
-      "summary": "Later readings attend to what the cases are about rather than how they are solved: annuities, wills, mortgages, professional respectability, the economics of begging, and the vulnerability of women who depend on male relatives for an income.",
-      "counter": "Doyle is not a reformer, and the stories usually restore the arrangements they have exposed rather than question them."
+      "summary": "Later readings look at what the cases are about: annuities, wills, mortgages, professional respectability, the economics of begging, and the vulnerability of women who depend on male relatives for an income.",
+      "counter": "Doyle is no reformer, and the stories usually restore the arrangements they have exposed."
     }
   ],
   "essayQuestions": [
@@ -1218,7 +1218,7 @@
     },
     {
       "href": "/books/the-woman-in-white/",
-      "why": "An earlier sensation novel built on the same Victorian fears — disputed identity, a woman's income, and documents that can be forged."
+      "why": "An earlier sensation novel that draws on the same Victorian fears: disputed identity, a woman’s income, and documents that can be forged."
     },
     {
       "href": "/books/jekyll-and-hyde/",

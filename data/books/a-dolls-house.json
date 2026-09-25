@@ -12,10 +12,10 @@
   "setting": "One room in the Helmers' flat in a Norwegian town, across Christmas Eve, Christmas Day and the evening after",
   "readingTime": 150,
   "difficulty": 3,
-  "lengthNote": "Three acts in prose, all in the same room, with every decisive event of the past reported rather than shown",
+  "lengthNote": "Three acts in prose, all in the same room, with every decisive event of the past reported and none shown",
   "openingLine": "Hide the Christmas tree carefully, Helen. Be sure the children do not see it until this evening, when it is dressed.",
-  "summary": "Nora Helmer forged her dying father's signature to borrow money that saved her husband's life, and has been paying it back in secret for years out of the housekeeping. Over three days at Christmas the loan comes due socially rather than financially: the man who holds the bond wants a job, the letter reaches the letterbox, and Nora waits for her husband to do the thing she has always assumed he would do. He does not, and the play ends with the most consequential exit in modern theatre.",
-  "referenceStyle": "act. The translation checked against runs as continuous prose dialogue without line numbers, so quotations are placed by act and by the moment in the action rather than by line.",
+  "summary": "Nora Helmer forged her dying father's signature to borrow money that saved her husband's life, and has been paying it back in secret for years out of the housekeeping. Over three days at Christmas the loan comes due in another way: the man who holds the bond wants his job back, the letter reaches the letterbox, and Nora waits for her husband to do the thing she has always assumed he would do. He does not, and the play ends with the most consequential exit in modern theatre.",
+  "referenceStyle": "act. The translation used runs as continuous prose dialogue without line numbers, so quotations are placed by act and by the moment in the action.",
   "sourceText": {
     "label": "Standard Ebooks text of A Doll's House, in R. Farquharson Sharp's English translation",
     "note": "Ibsen wrote in Danish-Norwegian; every English quotation here is a translator's wording. Sharp anglicises some of the money, so the Porter is paid in shillings where Ibsen's has krone. The text carries no line numbering, so references give the act."
@@ -220,7 +220,7 @@
       "name": "Nils Krogstad",
       "role": "A subordinate at the bank, and Nora's creditor",
       "summary": "He committed one forgery, was never prosecuted and has been paying for it socially ever since, which makes him the play's best witness on how respectability actually works. He is threatening for two acts and then, given one thing he wants, becomes reasonable in a page.",
-      "clue": "He did once what Nora has done, and has spent years finding out what it costs afterwards.",
+      "clue": "He did once what Nora has done, and has spent years finding out what happens afterwards.",
       "firstAppearance": "Act I",
       "traits": [
         "blackmailing",
@@ -352,13 +352,13 @@
     {
       "id": "law-and-money",
       "name": "Money, law and a woman's signature",
-      "summary": "The plot depends on a legal fact rather than a moral one: Nora could not borrow without a man's name, so she wrote her dying father's. Krogstad's answer, that the law cares nothing about motives, is not cruelty but an accurate statement of the position, and the play lets it stand unrefuted.",
+      "summary": "The plot depends on a legal fact: Nora could not borrow without a man’s name, so she wrote her dying father’s. Krogstad’s answer, that the law cares nothing about motives, is an accurate statement of the position, and the play lets it stand.",
       "development": "A secret debt repaid out of housekeeping in Act I, a bond in a letterbox in Act II, and in Act III a woman announcing that she will find out whether the law or she is right."
     },
     {
       "id": "reputation",
       "name": "Reputation and what a man will risk",
-      "summary": "Helmer's whole conduct is governed by how things look to the bank. He will not keep Krogstad because the man addresses him familiarly in front of the staff, and when the letter arrives his first thought is not for his wife but for whether he might be suspected of prompting her.",
+      "summary": "Helmer's whole conduct is governed by how things look to the bank. He will not keep Krogstad because the man speaks to him familiarly in front of the staff, and when the letter arrives his first thought is for whether he might be suspected of prompting her.",
       "development": "A promotion in Act I, a refusal on a point of manners in Act II, and in Act III a proposal that the marriage continue in the eyes of the world while ceasing in every other respect."
     },
     {
@@ -426,7 +426,7 @@
       "reference": "Act I",
       "stage": "act-1",
       "context": "His first words in the play, called from the study without coming out.",
-      "analysis": "The first thing said to Nora is not her name, and it is a question about a noise rather than a person. Ibsen puts the whole marriage in the opening exchange: a man who addresses his wife as wildlife, from another room, and a woman who answers in the character he has named.",
+      "analysis": "The first thing said to Nora is a question about a noise; nobody uses her name. Ibsen puts the whole marriage in the opening exchange: a man who addresses his wife as wildlife, from another room, and a woman who answers in the character he has named.",
       "themes": [
         "doll"
       ],
@@ -498,7 +498,7 @@
       "reference": "Act I",
       "stage": "act-1",
       "context": "Her immediate reply to Krogstad.",
-      "analysis": "She dismisses the entire legal code in eight words and then changes the subject, which in Act I reads as childishness. The last act picks the same sentence up and turns it into a programme: she will go away and find out whether the law is right or she is.",
+      "analysis": "She dismisses the entire legal code in eight words and then changes the subject, which in Act I reads as childishness. The last act picks the same sentence up and makes it a programme: she will go away and find out whether the law is right or she is.",
       "themes": [
         "law-and-money",
         "duty"
@@ -521,7 +521,7 @@
       "reference": "Act I",
       "stage": "act-1",
       "context": "Explaining to Nora, minutes after Krogstad has left the house, why a dishonest parent ruins children.",
-      "analysis": "He delivers it as professional experience and it lands on the woman standing in front of him, who has just been threatened over a forged signature. The scene ends with Nora refusing to let the children in, which is the first thing she decides entirely on her own.",
+      "analysis": "He delivers it as professional experience and it lands on the woman standing in front of him, who has just been threatened over a forged signature. The scene ends with Nora keeping the children out, the first thing she decides entirely on her own.",
       "themes": [
         "inheritance",
         "reputation"
@@ -569,7 +569,7 @@
       "reference": "Act II",
       "stage": "act-2",
       "context": "Refusing to reinstate Krogstad at his wife's request.",
-      "analysis": "The reason he gives is not that Krogstad is dishonest but that reversing himself would look like being led by someone. A few lines later he admits the real objection is that the man calls him by his first name in front of the clerks, and a marriage is destroyed on that point of etiquette.",
+      "analysis": "His reason is that changing his mind would look like being led by someone; he does not say Krogstad is dishonest. A few lines later he admits the real objection is that the man calls him by his first name in front of the clerks, and a marriage is destroyed on that point of etiquette.",
       "themes": [
         "reputation"
       ],
@@ -688,7 +688,7 @@
       "reference": "Act III",
       "stage": "act-3",
       "context": "Stopping Krogstad from asking for his letter back.",
-      "analysis": "She takes the decision that ends the marriage, and she takes it on a principle rather than out of malice: a household running on a secret is worse off than one facing a scandal. Everything Nora suffers in the last twenty minutes is set in motion by the only person in the play who has been supporting herself.",
+      "analysis": "She takes the decision that ends the marriage on a principle: a household run on a secret is worse off than one facing a scandal. Everything Nora suffers in the last twenty minutes is set in motion by the only person in the play who has been supporting herself.",
       "themes": [
         "reputation",
         "duty"
@@ -737,7 +737,7 @@
       "reference": "Act III",
       "stage": "act-3",
       "context": "Opening the second letter, which encloses the bond.",
-      "analysis": "He says it twice and both times in the first person singular, then adds her name as an afterthought rather than as a subject. Nora's question in reply, what about her, gets the answer that she is saved too, and the pronouns have already decided the end of the play.",
+      "analysis": "He says it twice, both times in the first person singular, then adds her name as an afterthought. Nora's question in reply, what about her, gets the answer that she is saved too, and the pronouns have already decided the end of the play.",
       "themes": [
         "reputation",
         "doll"
@@ -761,7 +761,7 @@
       "reference": "Act III",
       "stage": "act-3",
       "context": "At the table, explaining how she came to have no opinions of her own.",
-      "analysis": "The word the play is named for is used by Nora only in the last ten minutes, and she applies it first to her father. What she is describing is not cruelty but an inheritance of arrangements, which is why the speech is delivered flatly rather than as an accusation.",
+      "analysis": "The word the play is named for is used by Nora only in the last ten minutes, and she applies it first to her father. What she is describing is an inheritance of arrangements, which is why the speech is delivered flatly and accuses no one.",
       "themes": [
         "doll",
         "inheritance"
@@ -809,7 +809,7 @@
       "reference": "Act III",
       "stage": "act-3",
       "context": "Answering Nora's claim that she has duties to herself.",
-      "analysis": "He states it as a definition rather than an argument, which is what makes it answerable. The phrase before all else is then taken from him word for word in Nora's reply, and the theft of the construction is the point at which she stops being managed.",
+      "analysis": "He states it as a definition, which is what makes it possible to answer. The phrase before all else is then taken from him word for word in Nora's reply, and the theft of the construction is the point at which she stops being managed.",
       "themes": [
         "duty"
       ],
@@ -852,7 +852,7 @@
       "reference": "Act III",
       "stage": "act-3",
       "context": "Rejecting the definition of herself as wife and mother first.",
-      "analysis": "She does not claim that most people are wrong, only that she can no longer take their word or a book's for it. The demand is not for rights but for the chance to find out what she thinks, which is a smaller and much harder thing to refuse.",
+      "analysis": "She does not claim that most people are wrong, only that she can no longer take their word or a book's for it. She asks for the chance to find out what she thinks, which is smaller than a demand for rights and much harder to refuse.",
       "themes": [
         "duty",
         "work"
@@ -875,7 +875,7 @@
       "reference": "Act III",
       "stage": "act-3",
       "context": "Explaining what she has learned about the law since Krogstad explained it to her.",
-      "analysis": "She has taken Krogstad's legal lesson from Act I and turned it into a test the law has to pass, not one she has to. The last four words do all the work: not a claim about what the law is, but a refusal to accept it, which is where the play leaves the question.",
+      "analysis": "She has taken Krogstad’s legal lesson from Act I and made it a test the law has to pass. The last four words do all the work: not a claim about what the law is, but a refusal to accept it, which is where the play leaves the question.",
       "themes": [
         "law-and-money",
         "duty"
@@ -946,7 +946,7 @@
       "reference": "Act III",
       "stage": "act-3",
       "context": "Asked whether they might ever be more than strangers.",
-      "analysis": "The phrase has been running through the play attached to a rescue she expected from her husband, and here it is transferred to something neither of them can arrange: a change in both of them. She says two lines later that she no longer believes in wonderful things happening, which is what makes the ending a departure rather than an ultimatum.",
+      "analysis": "The phrase has been running through the play attached to a rescue she expected from her husband, and here it is transferred to something neither of them can arrange: a change in both of them. Two lines later she says she no longer believes in wonderful things happening, which makes the ending a departure and not an ultimatum.",
       "themes": [
         "doll",
         "duty"
@@ -969,7 +969,7 @@
       "reference": "Act III",
       "stage": "act-3",
       "context": "The last line of the play, printed as a stage direction after Helmer's final half-sentence.",
-      "analysis": "Ibsen gives the curtain to a noise offstage rather than to a speech, and to a door that the audience never sees. The sentence is passive and impersonal, which leaves Helmer alone on stage with a hope he has just voiced and a sound that answers it.",
+      "analysis": "Ibsen gives the curtain to a noise offstage, and to a door the audience never sees. The sentence is passive and impersonal, which leaves Helmer alone on stage with a hope he has just voiced and a sound that answers it.",
       "themes": [
         "doll",
         "duty"
@@ -1029,7 +1029,7 @@
     {
       "year": 1881,
       "label": "Ibsen's Ghosts published",
-      "detail": "Often read as his reply to those who had wanted Nora to stay: a marriage nobody leaves, and what it costs.",
+      "detail": "Often read as his reply to those who had wanted Nora to stay: a marriage nobody leaves, and what happens in it.",
       "kind": "author"
     },
     {
@@ -1103,7 +1103,7 @@
     },
     {
       "position": "A play about being a self at all",
-      "summary": "A broader reading takes the subject to be the duty of any person to become something other than what their household has made them, with Nora's sex as the circumstance that makes the demand visible rather than its cause.",
+      "summary": "A broader reading takes the subject to be every person’s duty to become more than their household has made them, with Nora’s sex as the circumstance that makes the demand visible.",
       "counter": "It risks making the legal details of the forgery decorative, when the plot depends entirely on what a married woman could and could not sign."
     },
     {
@@ -1129,7 +1129,7 @@
       "focus": "Law, motive and the forgery",
       "plan": [
         "Set out the legal facts: what Nora signed, why she could not sign her own name, and what the bond is worth.",
-        "Read Krogstad's statement about motives as an accurate account rather than a threat.",
+        "Read Krogstad’s statement about motives as an accurate account, not a threat.",
         "Trace Nora's answer from her dismissal of a foolish law in Act I to her decision in Act III to test it.",
         "Consider Krogstad's own history as evidence of what the law does after it has finished with someone.",
         "Weigh what the play settles and what it deliberately leaves to the audience."

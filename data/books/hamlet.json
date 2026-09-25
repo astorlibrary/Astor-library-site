@@ -13,12 +13,12 @@
   "period": "Shakespeare",
   "written": "c. 1599-1601",
   "firstPublished": 1603,
-  "setting": "Elsinore, the Danish royal castle, with journeys to Paris, Wittenberg and England reported rather than shown",
+  "setting": "Elsinore, the Danish royal castle, with journeys to Paris, Wittenberg and England reported but never shown",
   "readingTime": 240,
   "difficulty": 4,
   "lengthNote": "The longest play in the canon; no surviving early text has ever been performed uncut as a matter of routine",
   "openingLine": "Who's there?",
-  "summary": "A prince comes home to a court that has already buried his father and married his mother, and a ghost tells him the new king is the murderer. What follows is not a hunt but an investigation: Hamlet has to decide what would count as proof of something no witness saw, and every answer he reaches arrives late or costs a life he did not mean to spend.",
+  "summary": "A prince comes home to a court that has already buried his father and married his mother, and a ghost tells him the new king is the murderer. What follows is an investigation: Hamlet has to decide what would count as proof of something no witness saw, and every answer he reaches comes late or costs a life he did not mean to spend.",
   "referenceStyle": "act.scene.line, Globe/Moby line numbering",
   "sourceText": {
     "label": "Globe/Moby text of Hamlet",
@@ -61,7 +61,7 @@
         {
           "ref": "1.2",
           "title": "The court",
-          "summary": "Claudius performs state business fluently; Hamlet refuses the performance, and hears that his father has been seen."
+          "summary": "Claudius does the state business fluently; Hamlet will not join the performance, and hears that his father has been seen."
         },
         {
           "ref": "1.3",
@@ -130,7 +130,7 @@
       "id": "act-4",
       "label": "Act IV",
       "title": "Grief is converted into political weapons",
-      "summary": "Hamlet is exported. In his absence the play shows what happens to the people he has damaged: Ophelia goes mad and drowns, Laertes comes home with a mob behind him, and Claudius spends one long scene turning a young man's grief into a poisoned foil. The act runs on offstage events reported by letters and messengers.",
+      "summary": "Hamlet is exported. While he is away the play shows what happens to the people he has damaged: Ophelia goes mad and drowns, Laertes comes home with a mob behind him, and Claudius spends one long scene making a young man’s grief into a poisoned foil. The act runs on offstage events reported by letters and messengers.",
       "scenes": [
         {
           "ref": "4.1",
@@ -173,7 +173,7 @@
       "id": "act-5",
       "label": "Act V",
       "title": "Death becomes ordinary work, then arrives",
-      "summary": "A man who digs graves for a living sings at it, and Hamlet finally talks about death without metaphor, holding the skull of somebody he knew. The duel is a rigged fencing match that goes wrong in every direction at once; four people die of a plot designed to kill one, and the last Danish voice in the play gives the throne to a Norwegian.",
+      "summary": "A man who digs graves for a living sings at it, and Hamlet finally talks about death without metaphor, holding the skull of somebody he knew. The duel is a rigged fencing match that goes wrong in every direction; four people die of a plot meant to kill one, and the last Danish voice in the play gives the throne to a Norwegian.",
       "scenes": [
         {
           "ref": "5.1",
@@ -193,13 +193,13 @@
       "id": "hamlet",
       "name": "Hamlet",
       "role": "Prince of Denmark, son of the murdered king",
-      "summary": "A student called home into a job he has no evidence for and no appetite for. His delay is usually described as a flaw, but the play keeps showing him doing the work of proof: testing the Ghost, staging the play, reading the commission. What he cannot do is act while he is still thinking, and the two things almost never stop at the same time.",
+      "summary": "A student called home into a job he has no evidence for and no appetite for. His delay is usually called a flaw, but again and again the play shows him doing the work of proof: testing the Ghost, staging the play, reading the commission. What he cannot do is act while he is still thinking, and the two things almost never stop at the same time.",
       "clue": "He wears black at a wedding, talks to a skull, and stages a play in order to watch one man's face.",
       "firstAppearance": "1.2",
       "traits": [
         "sceptical",
         "theatrical",
-        "unable to act and think at once"
+        "unable to act and think at the same time"
       ],
       "relationships": [
         {
@@ -613,7 +613,7 @@
     {
       "id": "revenge",
       "name": "Revenge and delay",
-      "summary": "The play takes a genre in which a son is told to kill and asks what would have to be true before killing were justified. Hamlet's problem is not nerve — he stabs through a curtain without hesitating — but the standard of proof. The Ghost is testimony, not evidence, and no court in Denmark is going to hear it.",
+      "summary": "The play takes a kind of story in which a son is told to kill, and asks what would have to be true before killing were justified. Hamlet's problem is not nerve — he stabs through a curtain without hesitating — but the standard of proof. The Ghost is testimony, not evidence, and no court in Denmark is going to hear it.",
       "development": "Commanded in 1.5, doubted through Act II, tested in 3.2, deferred in 3.3, and finally performed in 5.2 by a man who is already dying and no longer choosing."
     },
     {
@@ -664,7 +664,7 @@
       "id": "foils",
       "name": "Foils",
       "definition": "A character constructed to throw another's choices into relief by making different ones.",
-      "inThisBook": "Laertes and Fortinbras are both sons of dead fathers who act at once. The play puts one in Act IV and the other in Act V so that Hamlet's hesitation is measured twice."
+      "inThisBook": "Laertes and Fortinbras are both sons of dead fathers, and both act straight away. The play puts one in Act IV and the other in Act V so that Hamlet's hesitation is measured twice."
     },
     {
       "id": "prose-and-verse",
@@ -682,7 +682,7 @@
       "id": "hendiadys",
       "name": "Hendiadys",
       "definition": "Joining two nouns with 'and' where grammar would expect one noun modifying another.",
-      "inThisBook": "'The book and volume of my brain' and 'the expectancy and rose of the fair state' are typical: the figure doubles a thought instead of completing it, and the play's language keeps hesitating in the same way its hero does."
+      "inThisBook": "‘The book and volume of my brain’ and ‘the expectancy and rose of the fair state’ are typical: the figure doubles a thought instead of completing it, and the language hesitates the way its hero does."
     }
   ],
   "quotations": [
@@ -716,7 +716,7 @@
       "reference": "1.2.131",
       "stage": "act-1",
       "context": "The first soliloquy, immediately after the court has left the stage.",
-      "analysis": "Three verbs of dissolving in a row, each one weaker than the last, so the wish loses force as it is spoken. Nothing here is about revenge or a ghost: the speech happens before he knows anything, which means the despair is prior to the plot rather than caused by it.",
+      "analysis": "Three verbs of dissolving in a row, each one weaker than the last, so the wish loses force as it is spoken. Nothing here is about revenge or a ghost: the speech comes before he knows anything, so the despair is there before the plot begins.",
       "themes": [
         "mortality",
         "madness"
@@ -764,7 +764,7 @@
       "reference": "1.3.81",
       "stage": "act-1",
       "context": "The end of a long farewell lecture to Laertes, who is trying to catch a ship.",
-      "analysis": "The most quoted piece of wisdom in the play belongs to its most tiresome speaker, and he contradicts it within a scene by sending Reynaldo to lie about Laertes abroad. Read in context it is advice about self-interest rather than integrity, which is why the court repeats it and nobody follows it.",
+      "analysis": "The most quoted piece of wisdom in the play belongs to its most tiresome speaker, and he contradicts it within a scene by sending Reynaldo to lie about Laertes abroad. In context it is advice about self-interest, which is why the court repeats it and nobody follows it.",
       "themes": [
         "seeming",
         "surveillance"
@@ -909,7 +909,7 @@
       "reference": "2.2.258",
       "stage": "act-2",
       "context": "To Rosencrantz and Guildenstern, moments after working out that they were sent for.",
-      "analysis": "Three words of prose, offered as a flat statement of fact to two men who have just been hired as warders without quite realising it. The exchange that follows turns it into a philosophical game about thinking making it so, which is exactly how Hamlet avoids being pinned down by people fishing for symptoms.",
+      "analysis": "Three words of prose, offered as a flat statement of fact to two men who have just been hired as warders without quite realising it. The exchange that follows makes it a philosophical game about thinking making it so, which is exactly how Hamlet avoids being pinned down by people fishing for symptoms.",
       "themes": [
         "surveillance",
         "madness"
@@ -958,7 +958,7 @@
       "reference": "2.2.559",
       "stage": "act-2",
       "context": "Alone after the First Player's speech about Hecuba.",
-      "analysis": "The trigger is not the murder but a professional actor crying about a woman dead for centuries. Hamlet's self-disgust is comparative and aesthetic: somebody else produced a convincing performance of grief and he has not, which is a strange thing to punish yourself for and a precise clue to what he thinks feeling is.",
+      "analysis": "What sets him off is a professional actor crying about a woman dead for centuries. Hamlet's self-disgust is comparative and aesthetic: somebody else produced a convincing performance of grief and he has not, which is a strange thing to punish yourself for and a precise clue to what he thinks feeling is.",
       "themes": [
         "seeming",
         "revenge"
@@ -1033,7 +1033,7 @@
       "reference": "3.1.91",
       "stage": "act-3",
       "context": "The close of the same soliloquy, before he sees Ophelia.",
-      "analysis": "'Conscience' here means consciousness as much as moral scruple, and the metaphor is a complexion: thought spreads over resolve like an illness over a face. It is the play's own diagnosis of its hero, offered by the hero, which is one reason the diagnosis has never quite been improved on.",
+      "analysis": "'Conscience' here means consciousness as much as moral scruple, and the metaphor is a complexion: thought spreads over resolve like an illness over a face. It is the play’s own diagnosis of its hero, offered by the hero, one reason nobody has done much better since.",
       "themes": [
         "revenge",
         "madness"
@@ -1058,7 +1058,7 @@
       "reference": "3.1.163",
       "stage": "act-3",
       "context": "Alone on stage after Hamlet's exit, before the watchers come out.",
-      "analysis": "She is the only character who mourns Hamlet as a loss rather than assessing him as a problem, and she does it in a formal lament built from three-part lists — eye, tongue, sword. The speech also establishes what he was like before the play began, information the audience has no other way of getting.",
+      "analysis": "She is the only character who mourns Hamlet as a loss, and she does it in a formal lament built of three-part lists: eye, tongue, sword. The speech also establishes what he was like before the play began, information the audience has no other way of getting.",
       "themes": [
         "madness",
         "memory"
@@ -1081,7 +1081,7 @@
       "reference": "3.2.227",
       "stage": "act-3",
       "context": "Watching the Player Queen swear she will never remarry.",
-      "analysis": "Asked to judge a play about a widow's promise, Gertrude gives a critic's verdict on the acting rather than a wife's answer to the charge. Whether that is composure or blindness is the closest the play comes to telling us what she knows, and it declines to decide.",
+      "analysis": "Asked to judge a play about a widow’s promise, Gertrude gives a critic’s verdict on the acting, and not a wife’s answer to the charge. Whether that is composure or blindness is the closest the play comes to telling us what she knows, and it declines to decide.",
       "themes": [
         "seeming",
         "memory"
@@ -1131,7 +1131,7 @@
       "reference": "3.3.100",
       "stage": "act-3",
       "context": "Rising from his knees, seconds after Hamlet has left without killing him.",
-      "analysis": "The couplet is a joke at Hamlet's expense that Hamlet never hears: he spared a man whose prayer was not working. The chiastic arrangement of words and thoughts — up, below, words, thoughts — makes the failure sound like a law of physics rather than a moral judgement.",
+      "analysis": "The couplet is a joke at Hamlet's expense that Hamlet never hears: he spared a man whose prayer was not working. The crossed pattern of words and thoughts, up, below, words, thoughts, makes the failure sound like a law of physics.",
       "themes": [
         "revenge",
         "seeming"
@@ -1207,7 +1207,7 @@
       "reference": "5.2.10",
       "stage": "act-5",
       "context": "Telling Horatio how he found and rewrote the sealed commission on board ship.",
-      "analysis": "He credits providence in the middle of an account of his own forgery, seal and all. The Hamlet of Act V explains his actions after he has taken them rather than before, and the change in tense is the change in the man: less deliberation, more report.",
+      "analysis": "He credits providence in the middle of an account of his own forgery, seal and all. The Hamlet of Act V explains his actions after he has taken them, and the change of tense is the change in the man: less deliberation, more report.",
       "themes": [
         "revenge",
         "memory"
@@ -1230,7 +1230,7 @@
       "reference": "5.2.216",
       "stage": "act-5",
       "context": "To Horatio, who has offered to call off the fencing match.",
-      "analysis": "Set this against 'To be, or not to be': the same question about dying, answered now in prose, in one sentence, with no metaphors. He has stopped arguing, and the calm is not peace but a kind of exhaustion that the plot immediately exploits.",
+      "analysis": "Set this against 'To be, or not to be': the same question about dying, answered now in prose, in one sentence, with no metaphors. He has stopped arguing, and the calm is closer to exhaustion than to peace, and the plot takes advantage of it at once.",
       "themes": [
         "mortality",
         "revenge"
@@ -1318,7 +1318,7 @@
     {
       "year": 1623,
       "label": "The First Folio text",
-      "detail": "Prints material the Second Quarto lacks and omits material it has, so the two are witnesses rather than drafts.",
+      "detail": "It prints material the Second Quarto lacks and leaves out material the Quarto has, so the two are independent witnesses, not drafts.",
       "kind": "work"
     },
     {
@@ -1342,7 +1342,7 @@
     {
       "year": 1996,
       "label": "Kenneth Branagh films a full-text Hamlet",
-      "detail": "A four-hour screen version that keeps the material most productions have to lose.",
+      "detail": "A four-hour film that includes the material most productions have to cut.",
       "kind": "reception"
     }
   ],
@@ -1386,7 +1386,7 @@
     },
     {
       "position": "Hamlet as a play about proof",
-      "summary": "On this account the delay is rational. The only evidence is a ghost of uncertain origin; Hamlet designs a test, gets a reaction rather than a confession, and has to decide what a reaction is worth.",
+      "summary": "On this account the delay is rational. The only evidence is a ghost of uncertain origin; Hamlet designs a test, gets a reaction but no confession, and has to decide what a reaction is worth.",
       "counter": "It struggles with 3.4, where he kills a concealed listener without checking who it is — a man careful about evidence has just behaved as carelessly as possible."
     },
     {
@@ -1413,7 +1413,7 @@
       "plan": [
         "Open with Reynaldo in 2.1: the court's method stated in its purest form, applied by a father to his own son.",
         "Map the arranged scenes — 3.1 with two men concealed, 3.2 with the whole court watching a king watch a play, 3.4 with a listener behind the arras.",
-        "Show how Hamlet adopts the method rather than rejecting it: the play, the rewritten commission, the friends he tests.",
+        "Show how Hamlet takes up the method himself: the play, the rewritten commission, the friends he tests.",
         "Consider what the play makes private: the soliloquies, Claudius's prayer, and the fact that the audience is always the extra watcher.",
         "Decide whether the arrival of Fortinbras ends the surveillance or simply changes who is doing it."
       ]

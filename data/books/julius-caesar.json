@@ -70,7 +70,7 @@
       "id": "act-2",
       "label": "Act II",
       "title": "Two households, one decision",
-      "summary": "Brutus reasons himself into the murder in an orchard at night, on the basis of what Caesar might do rather than anything he has done. The act is built from private scenes: a wife who asks to be told, another wife who has dreamt the assassination, and a group of men refusing an oath because Romans should not need one.",
+      "summary": "Brutus reasons himself into the murder in an orchard at night, on the basis of what Caesar might do; Caesar has done nothing yet. The act is built from private scenes: a wife who asks to be told, another wife who has dreamt the assassination, and a group of men who will not swear an oath because Romans should not need one.",
       "scenes": [
         {
           "ref": "2.1",
@@ -97,8 +97,8 @@
     {
       "id": "act-3",
       "label": "Act III",
-      "title": "The killing, and the funeral that undoes it",
-      "summary": "Caesar refuses a petition with a speech about being constant as the northern star and is stabbed by eight men. Brutus then makes two mistakes in one scene: he lets Antony live and lets him speak. The crowd that applauded Brutus's prose walks out of the Forum carrying torches, and kills a poet for having the wrong name.",
+      "title": "The assassination and Antony’s funeral speech",
+      "summary": "Caesar turns down a petition with a speech about being constant as the northern star, and is stabbed by eight men. Brutus then makes two mistakes in one scene: he lets Antony live and lets him speak. The crowd that applauded Brutus's prose walks out of the Forum carrying torches, and kills a poet for having the wrong name.",
       "scenes": [
         {
           "ref": "3.1",
@@ -179,8 +179,8 @@
       "id": "caesar",
       "name": "Julius Caesar",
       "role": "Dictator of Rome",
-      "summary": "He is on stage for a fraction of the play and dominates the rest of it. Shakespeare is careful to make him both formidable and physically ordinary — deaf in one ear, prone to fits, superstitious enough to change his mind twice in one morning — so that the question of whether he would have become a tyrant can never be answered.",
-      "clue": "He refuses a crown three times, ignores a warning about a date, and is more powerful after his death than before it.",
+      "summary": "He is on stage for a fraction of the play and dominates the rest of it. Shakespeare is careful to make him formidable and physically ordinary, deaf in one ear, prone to fits, superstitious enough to change his mind twice in one morning, so that whether he would have become a tyrant can never be settled.",
+      "clue": "He is offered a crown three times and pushes it away, ignores a warning about a date, and is more powerful after his death than before it.",
       "firstAppearance": "1.2",
       "traits": [
         "imperious",
@@ -412,7 +412,7 @@
       "id": "casca",
       "name": "Casca",
       "role": "A senator, and the first to strike",
-      "summary": "His account of the crown scene in 1.2 is the play's funniest piece of writing and its most useful: a bored, contemptuous eyewitness is worth more than a ceremony. He is terrified by the storm in the next scene, which makes his blunt prose a pose rather than a temperament, and Cassius recruits him in about forty lines.",
+      "summary": "His account of the crown scene in 1.2 is the play's funniest piece of writing and its most useful: a bored, contemptuous eyewitness is worth more than a ceremony. He is terrified by the storm in the next scene, which makes his blunt prose a pose, and Cassius recruits him in about forty lines.",
       "clue": "He describes a crown being refused as if it were bad theatre, and later strikes the first blow.",
       "firstAppearance": "1.2",
       "traits": [
@@ -476,19 +476,19 @@
     {
       "id": "tyranny",
       "name": "Tyranny and the republic",
-      "summary": "The conspirators kill for what Caesar might do, not for anything he has done, and the play refuses to tell us whether they were right. Nothing on stage shows Caesar acting as a tyrant; nothing shows he would not have. The murder is committed on a forecast, and Acts IV and V are the bill.",
+      "summary": "The conspirators kill for what Caesar might do, not for anything he has done, and the play does not tell us whether they were right. Nothing on stage shows Caesar acting as a tyrant; nothing shows he would not have. The murder is committed on a forecast, and Acts IV and V are the bill.",
       "development": "Argued in 1.2, decided in the orchard in 2.1, and answered by 4.1, where three men divide the empire and mark relatives for death across a table."
     },
     {
       "id": "rhetoric",
       "name": "Rhetoric and the crowd",
       "summary": "Two funeral speeches, delivered from the same pulpit within minutes of each other, produce opposite results, and the play writes the crowd's replies into the scene so that the effect can be watched happening. Brutus argues in prose from principle; Antony works in verse, from objects, and never states his conclusion.",
-      "development": "Rehearsed in Cassius's persuasion of Brutus in 1.2, performed in 3.2, and shown at its cost in 3.3, where the mob kills a man for his name."
+      "development": "Rehearsed in Cassius’s persuasion of Brutus in 1.2, performed in 3.2, and shown at its worst in 3.3, where the mob kills a man for his name."
     },
     {
       "id": "honour",
       "name": "Honour and self-image",
-      "summary": "Brutus does everything because of the kind of man he believes himself to be, and the belief is sincere and repeatedly catastrophic. Cassius appeals to it to recruit him; Antony turns the word 'honourable' into a weapon by repeating it; and the play lets Antony's eulogy grant him the title in the end, sincerely.",
+      "summary": "Brutus does everything because of the kind of man he believes himself to be, and the belief is sincere and repeatedly catastrophic. Cassius appeals to it to recruit him; Antony makes the word ‘honourable’ a weapon by repeating it; and in the end Antony’s eulogy grants Brutus the title, sincerely.",
       "development": "Invoked in 1.2, acted on in 2.1, satirised in 3.2, tested against money in 4.3, and finally conceded in 5.5."
     },
     {
@@ -500,7 +500,7 @@
     {
       "id": "friendship",
       "name": "Friendship and betrayal",
-      "summary": "Caesar's last words are about a friend, not about Rome. The play keeps setting political necessity against personal loyalty — Brutus and Caesar, Brutus and Cassius, Antony and his own nephew — and the quarrel scene in the tent is more concerned with a broken friendship than with the money that starts it.",
+      "summary": "Caesar's last words are about a friend, not about Rome. The play sets political necessity against personal loyalty again and again, Brutus and Caesar, Brutus and Cassius, Antony and his own nephew, and the quarrel in the tent is more about a broken friendship than about the money that starts it.",
       "development": "Exploited in 1.2, broken in 3.1, repaired briefly in 4.3, and mourned on the battlefield in 5.3 and 5.5."
     },
     {
@@ -532,7 +532,7 @@
     {
       "id": "portents",
       "name": "Portents and prophecy",
-      "definition": "Signs staged as events rather than reported as background.",
+      "definition": "Signs staged as events, not reported as background.",
       "inThisBook": "The storm of 1.3 is a scene, not a stage direction: men walk about in it disagreeing about what it means, which is the play's method for everything else as well."
     },
     {
@@ -606,7 +606,7 @@
       "reference": "1.2.145",
       "stage": "act-1",
       "context": "The same speech, a few lines later.",
-      "analysis": "It is an argument against destiny made in a play stiff with accurate omens, which is one of the things that keeps the tragedy unsettled. 'At some time' is the hedge that makes it honest, and 'underlings' is the word that does the recruiting — he is offering Brutus a rank, not a philosophy.",
+      "analysis": "It is an argument against destiny made in a play full of accurate omens, one of the things that keeps the tragedy unsettled. ‘At some time’ is the hedge that makes it honest, and ‘underlings’ is the word that does the recruiting: he is offering Brutus a rank, not a philosophy.",
       "themes": [
         "tyranny",
         "omens"
@@ -758,7 +758,7 @@
       "reference": "3.1.1",
       "stage": "act-3",
       "context": "Passing the soothsayer on the way into the Capitol.",
-      "analysis": "A joke at the prophet's expense, answered in four words — 'Ay, Caesar; but not gone' — that turn the whole day into a countdown. It is the last exchange Caesar wins and the last he has any time to enjoy.",
+      "analysis": "A joke at the soothsayer’s expense, answered in four words, ‘Ay, Caesar; but not gone’, that make the whole day a countdown. It is the last exchange Caesar wins and the last he has any time to enjoy.",
       "themes": [
         "omens"
       ],
@@ -805,7 +805,7 @@
       "reference": "3.1.84",
       "stage": "act-3",
       "context": "Seeing Brutus among the men stabbing him.",
-      "analysis": "He stops resisting the moment he identifies his friend, so the cause of death in the play is recognition rather than the wounds. Shakespeare gives him Latin for the accusation and English for the surrender, and then has him speak of himself in the third person for the last time.",
+      "analysis": "He stops resisting the moment he recognises his friend, so what kills him in the play is recognition. Shakespeare gives him Latin for the accusation and English for the surrender, and then has him speak of himself in the third person for the last time.",
       "themes": [
         "friendship",
         "tyranny"
@@ -905,7 +905,7 @@
       "reference": "3.2.82",
       "stage": "act-3",
       "context": "Taking the pulpit under Brutus's permission, with the body beside him.",
-      "analysis": "Three nouns in ascending order of obligation, then a denial of the thing he is about to do. The opening asks only for attention — the cheapest possible request — and the proposition about evil outliving good is a general truth that will shortly be applied to the men standing in front of him.",
+      "analysis": "Three nouns in ascending order of obligation, then a denial of the thing he is about to do. The opening asks only for attention, the cheapest possible request, and the proposition about evil outliving good is a general truth that he will shortly apply to the men standing in front of him.",
       "themes": [
         "rhetoric",
         "friendship"
@@ -1027,8 +1027,8 @@
       "speaker": "Brutus",
       "reference": "4.3.244",
       "stage": "act-4",
-      "context": "Arguing that the army should march to Philippi rather than let the enemy come to them.",
-      "analysis": "A superb image attached to a disastrous instruction: Cassius wants to make the enemy march and is overruled by a metaphor. Brutus wins every argument in this play by sounding right, and the play keeps the two things — being persuasive and being correct — carefully apart.",
+      "context": "Arguing that the army should march to Philippi instead of waiting for the enemy to come to them.",
+      "analysis": "A superb image attached to a disastrous instruction: Cassius wants to make the enemy march and is overruled by a metaphor. Brutus wins every argument in this play by sounding right, and the play keeps being persuasive and being correct carefully apart.",
       "themes": [
         "honour",
         "friendship"
@@ -1112,7 +1112,7 @@
     {
       "year": 1579,
       "label": "North's translation of Plutarch's Lives",
-      "detail": "The English prose Shakespeare worked from, sometimes turning whole passages into verse with few changes.",
+      "detail": "The English prose Shakespeare worked from, sometimes putting whole passages into verse with few changes.",
       "kind": "context"
     },
     {
@@ -1157,7 +1157,7 @@
       "name": "The Tiber",
       "lat": 41.8906,
       "lon": 12.4667,
-      "note": "The river Cassius says he pulled Caesar out of, in the story that turns a general into a man who can drown."
+      "note": "The river Cassius says he pulled Caesar out of, in the story that makes a general into a man who can drown."
     },
     {
       "name": "Sardis",
@@ -1182,12 +1182,12 @@
     {
       "position": "A tragedy of Brutus",
       "summary": "The oldest reading treats the play as the study of a good man who does a terrible thing for defensible reasons. On this account the title is a misdirection: Caesar dies halfway through, and the moral interest belongs to the man who cannot live with what he has done.",
-      "counter": "It has to explain away Act I, where Brutus is recruited rather than convinced, and the play's persistent interest in the crowd, who decide more than any individual does."
+      "counter": "It has to explain away Act I, where Brutus is recruited more than convinced, and the play’s steady interest in the crowd, who decide more than any individual does."
     },
     {
       "position": "A political play about rhetoric",
-      "summary": "The play can be read as an argument about language and power: two speeches from one pulpit produce opposite results, and the crowd's replies are written into the scene so that persuasion can be examined as a technique rather than admired as an effect.",
-      "counter": "Read only this way, the private material — Portia's wound, Calpurnia's dream, the quarrel in the tent — becomes decoration rather than the place where the play's decisions are actually made."
+      "summary": "The play can be read as an argument about language and power: two speeches from one pulpit produce opposite results, and the crowd’s replies are written into the scene so that persuasion can be examined as a technique.",
+      "counter": "Read only this way, the private material, Portia’s wound, Calpurnia’s dream, the quarrel in the tent, becomes decoration, when it is where the play’s decisions are really made."
     },
     {
       "position": "A play about republicanism",
@@ -1202,7 +1202,7 @@
       "plan": [
         "Start with 2.1, where the conclusion precedes the argument and the case rests on what Caesar might become.",
         "List the decisions he takes on principle and loses by: sparing Antony, permitting the funeral speech, refusing to raise money, marching to Philippi.",
-        "Consider how consistently the play attributes his errors to virtue rather than vanity — and whether that distinction holds in 4.3.",
+        "Consider how consistently the play puts his errors down to virtue, not vanity, and whether that distinction holds in 4.3.",
         "Weigh Antony's eulogy in 5.5: is 'the noblest Roman' a verdict, or the last piece of rhetoric in a play made of it?",
         "Decide whether the tragedy lies in the man's character or in the situation's refusal to reward it."
       ]
@@ -1214,7 +1214,7 @@
         "Compare form first: Brutus in prose, from principle; Antony in verse, from objects — a will, a mantle, a body.",
         "Analyse Antony's refrain of 'honourable' as a technique for making an accusation the crowd believes it has reached itself.",
         "Use the citizens' interjections as evidence: the scene records its own effect line by line.",
-        "Take 3.3, the murder of Cinna the poet, as the result rather than an aside.",
+        "Take 3.3, the murder of Cinna the poet, as the result of the speeches, not an aside.",
         "Assess what the sequence implies about political speech: that it works by permission, timing and property, not by argument."
       ]
     },
@@ -1226,14 +1226,14 @@
         "Show that the signs are never wrong and are always explained away by somebody with a motive — Decius in 2.2 is the clearest case.",
         "Set Cassius's 'not in our stars' against the play's supernatural machinery and ask which the drama endorses.",
         "Use 5.3 to make the point structurally: Cassius dies of a misread cheer, not of a misread omen.",
-        "Conclude that the play's subject is interpretation rather than fate."
+        "Conclude that the play is about interpretation more than fate."
       ]
     },
     {
       "question": "'The play is about friendship, not politics.' Discuss.",
       "focus": "Private bonds and public acts",
       "plan": [
-        "Begin with Caesar's last words, which name a friend rather than a cause.",
+        "Begin with Caesar’s last words, which name a friend and not a cause.",
         "Follow Cassius's recruitment of Brutus in 1.2 as an exploitation of intimacy — the flattery is personal, the argument is not.",
         "Read 4.3 closely: an argument that starts about bribery and is settled by an embrace and a bowl of wine.",
         "Weigh the domestic scenes — Portia and Calpurnia — as the places where the political decisions are actually contested.",

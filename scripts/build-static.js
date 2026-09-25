@@ -603,6 +603,14 @@ function addPassageRelated(html, source) {
   return html.replace('<nav class="passage-end-nav"', section + '<nav class="passage-end-nav"');
 }
 
+const ASTOR_FOUNDER = {
+  '@type': 'Person',
+  name: 'Haydn Wood',
+  jobTitle: 'Founder and editor',
+  url: SITE_URL + '/about/#editor',
+  image: SITE_URL + '/assets/about/haydn-wood-480.jpg'
+};
+
 function addGlobalMetadata(html, source) {
   if (/http-equiv="refresh"/i.test(html)) return html;
   const href = pageHref(source);
@@ -663,6 +671,7 @@ function addGlobalMetadata(html, source) {
           description: 'Astor Library is an independent publisher of classic literature editions, study editions and free literature resources.',
           sameAs: ['https://ko-fi.com/astorlibrary'],
           publishingPrinciples: absoluteUrl('/editorial/'),
+          founder: ASTOR_FOUNDER,
           knowsAbout: ['Classic literature', 'English literature', 'Shakespeare', 'Literature study guides', 'Literature teaching resources']
         },
         {
@@ -705,7 +714,8 @@ function addGlobalMetadata(html, source) {
         url: SITE_URL + '/',
         logo: absoluteUrl('/icon-512.png'),
         sameAs: ['https://ko-fi.com/astorlibrary'],
-        publishingPrinciples: absoluteUrl('/editorial/')
+        publishingPrinciples: absoluteUrl('/editorial/'),
+        founder: ASTOR_FOUNDER
       }
     };
     metadata += '<script type="application/ld+json" data-astor-identity-schema>' + JSON.stringify(identitySchema).replace(/</g, '\\u003c') + '</script>';

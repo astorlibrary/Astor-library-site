@@ -14,7 +14,7 @@
   "difficulty": 2,
   "lengthNote": "Twelve chapters, around 27,000 words — roughly twice the length of the manuscript it grew from",
   "openingLine": "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do",
-  "summary": "A child follows a rabbit underground and spends an afternoon among creatures who each treat a private rule as though it were the law. Alice grows, shrinks, is asked who she is by a caterpillar, and is sentenced before she is tried. The comedy is exact rather than woolly: almost every joke turns on someone taking a word at its face value, and the book ends when Alice stops agreeing to the fiction that the court is a court.",
+  "summary": "A child follows a rabbit underground and spends an afternoon among creatures who each treat a private rule as though it were the law. Alice grows, shrinks, is asked who she is by a caterpillar, and is sentenced before she is tried. The comedy is exact: almost every joke depends on someone taking a word at face value, and the book ends when Alice stops going along with the pretence that the court is a court.",
   "referenceStyle": "chapter",
   "sourceText": {
     "label": "Standard Ebooks text of Alice’s Adventures in Wonderland",
@@ -88,7 +88,7 @@
         {
           "ref": "Chapter V",
           "title": "Advice from a Caterpillar",
-          "summary": "Alice recites ‘You are old, Father William’ wrongly and is told she is wrong; the mushroom becomes a tool rather than an accident."
+          "summary": "Alice recites ‘You are old, Father William’ wrongly and is told so; the mushroom becomes a tool she can use."
         },
         {
           "ref": "Chapter VI",
@@ -147,7 +147,7 @@
         {
           "ref": "Chapter XII",
           "title": "Alice’s Evidence",
-          "summary": "A nonsense poem is read as proof, sentence is demanded before verdict, and Alice refuses the whole performance."
+          "summary": "A nonsense poem is read as proof, sentence is demanded before verdict, and Alice will have none of it."
         }
       ]
     }
@@ -239,7 +239,7 @@
       "id": "mouse",
       "name": "The Mouse",
       "role": "The first creature Alice tries to talk to",
-      "summary": "He is offended twice over by Alice’s cat and her neighbour’s terrier before he can begin his history, which is then delivered as the driest paragraph of Norman constitutional record Carroll could find. His long tale is the book’s first joke about a word doing two jobs at once.",
+      "summary": "He is offended twice over by Alice’s cat and her neighbour’s terrier before he can begin his history, which is then delivered as the driest paragraph of Norman constitutional record Carroll could find. His long tale is the book’s first joke about a word doing two jobs.",
       "firstAppearance": "Chapter II",
       "traits": [
         "easily wounded",
@@ -316,7 +316,7 @@
       "id": "duchess",
       "name": "The Duchess",
       "role": "A peeress with a kitchen full of pepper",
-      "summary": "In her own house she shakes a baby, sings about beating it, and is under sentence of execution; released, she becomes affectionate and turns every remark Alice makes into a moral. The two performances are the same person, which is the point: her manners have no connection to her conduct.",
+      "summary": "In her own house she shakes a baby, sings about beating it, and is under sentence of execution; released, she becomes affectionate and finds a moral in everything Alice says. The two performances are the same person, which is the point: her manners have no connection to her conduct.",
       "firstAppearance": "Chapter VI",
       "traits": [
         "violent",
@@ -346,7 +346,7 @@
       "id": "hatter",
       "name": "The Hatter",
       "role": "Host of a tea-party that never moves on",
-      "summary": "He quarrelled with Time while performing at a concert and has been stuck at six o’clock ever since, which turns his rudeness into a kind of grievance. He asks a riddle he cannot answer, corrects Alice’s grammar while ignoring her meaning, and later gives evidence in court shaking too hard to stand.",
+      "summary": "He quarrelled with Time while singing at a concert and has been stuck at six o’clock ever since, which gives his rudeness a grievance behind it. He asks a riddle he cannot answer, corrects Alice’s grammar while ignoring her meaning, and later gives evidence in court shaking too hard to stand.",
       "clue": "He fell out with Time at a concert and has been stuck at tea ever since, and he asks a riddle to which he admits he has not the slightest idea of the answer.",
       "firstAppearance": "Chapter VII",
       "traits": [
@@ -377,7 +377,7 @@
       "id": "queen-of-hearts",
       "name": "The Queen of Hearts",
       "role": "Sovereign of the croquet ground and the court",
-      "summary": "She has one procedure for every difficulty, and it is beheading. Nothing she orders is ever carried out, because the King quietly pardons everybody, so her power is pure noise — which is exactly what makes it frightening until somebody notices.",
+      "summary": "She has one procedure for every difficulty, and it is beheading. Nothing she orders is ever carried out, because the King secretly pardons everybody, so her power is pure noise, which is what makes it frightening until somebody notices.",
       "clue": "Her answer to every difficulty is the same three words, and the King pardons everyone behind her back so that none of her sentences is ever carried out.",
       "firstAppearance": "Chapter VIII",
       "traits": [
@@ -433,8 +433,8 @@
     {
       "id": "identity",
       "name": "Identity and size",
-      "summary": "Alice’s height changes eleven times, and each change is treated as a question about who she is rather than how tall she is. Carroll keeps the enquiry in a child’s terms — other girls she knows, lessons she can or cannot recite — so that the philosophical problem arrives without any philosophical vocabulary.",
-      "development": "Panic in Chapter II, cross-examination in Chapter V, deliberate use of the mushroom afterwards, and finally a growth in Chapter XII that is an act of judgement rather than an accident."
+      "summary": "Alice’s height changes eleven times, and each change raises the question of who she is, as well as how tall. Carroll keeps the enquiry in a child’s terms — other girls she knows, lessons she can or cannot recite — so that the philosophical problem arrives without any philosophical vocabulary.",
+      "development": "Panic in Chapter II, cross-examination in Chapter V, deliberate use of the mushroom afterwards, and finally a growth in Chapter XII that is an act of judgement."
     },
     {
       "id": "authority",
@@ -446,12 +446,12 @@
       "id": "language",
       "name": "Language taken literally",
       "summary": "Wonderland’s creatures are excellent close readers and terrible listeners. They hear the word and not the sentence, so ‘I mean what I say’ and ‘I say what I mean’ become different propositions, a tale becomes a tail, and a lesson is what lessens from day to day.",
-      "development": "The Mouse’s tale sets the pattern; the tea-party makes it a method; the trial turns it into a way of convicting somebody."
+      "development": "The Mouse’s tale sets the pattern; the tea-party makes it a method; at the trial it becomes a way of convicting somebody."
     },
     {
       "id": "manners",
       "name": "Manners and violence",
-      "summary": "Politeness in Wonderland is not the opposite of cruelty but its packaging. A baby is shaken in time to a lullaby, a cook throws fire-irons during a conversation, and executions are ordered between croquet strokes, always in the correct register.",
+      "summary": "Politeness in Wonderland is the wrapping cruelty comes in. A baby is shaken in time to a lullaby, a cook throws fire-irons during a conversation, and executions are ordered between croquet strokes, always in the correct register.",
       "development": "Domestic in the Duchess’s kitchen, ceremonial on the croquet ground, and judicial by the trial, with the violence growing more formal as it grows less real."
     },
     {
@@ -463,7 +463,7 @@
     {
       "id": "dream",
       "name": "The dream and the waking",
-      "summary": "The frame is not a get-out. Carroll lets the dream be dangerous while it lasts and then hands it to Alice’s sister, who dreams it again knowingly, so the book ends by describing the act of rereading rather than dismissing what was read.",
+      "summary": "The frame is not a get-out. Carroll lets the dream be dangerous while it lasts and then gives it to Alice’s sister, who dreams it again knowingly, so the book ends by describing a rereading, and does not dismiss what was read.",
       "development": "The fall, the afternoon underground, and a waking in which the cards become leaves and the Queen’s shrieks become a shepherd boy’s voice."
     }
   ],
@@ -472,13 +472,13 @@
       "id": "nonsense-logic",
       "name": "Nonsense logic",
       "definition": "Reasoning that is formally valid but proceeds from premises nobody has agreed to.",
-      "inThisBook": "The Cat’s proof that it is mad, and its directions to Alice, are both watertight; the trouble is entirely with the starting point."
+      "inThisBook": "The Cat’s proof that it is mad, and its directions to Alice, are both watertight; the trouble is entirely in the starting point."
     },
     {
       "id": "parody",
       "name": "Parody",
       "definition": "Reproducing the shape of a known text while emptying or reversing its content.",
-      "inThisBook": "Alice’s recitations deform improving verse into crocodiles and lobsters, and the joke works even for readers who no longer know the originals, because the failure is Alice’s memory rather than the poem."
+      "inThisBook": "Alice’s recitations bend improving verse into crocodiles and lobsters, and the joke works even for readers who no longer know the originals, because the failure lies in Alice’s memory."
     },
     {
       "id": "literalism",
@@ -496,13 +496,13 @@
       "id": "dream-frame",
       "name": "Dream frame",
       "definition": "A narrative enclosed by a falling asleep and a waking.",
-      "inThisBook": "The frame is used to end the book rather than to explain it: the sister’s second dream repeats Wonderland deliberately, which is not what waking up from a nightmare normally does."
+      "inThisBook": "The frame ends the book without explaining it: the sister’s second dream repeats Wonderland on purpose, which is not what waking from a nightmare normally does."
     },
     {
       "id": "comic-repetition",
       "name": "Comic repetition",
       "definition": "A phrase or event repeated until the repetition itself becomes the joke.",
-      "inThisBook": "‘Down, down, down’, the Queen’s standing order for beheadings and the Dormouse’s treacle all work by recurrence rather than by any single funny line."
+      "inThisBook": "‘Down, down, down’, the Queen’s standing order for beheadings and the Dormouse’s treacle all work by recurrence, not by any single funny line."
     }
   ],
   "quotations": [
@@ -535,7 +535,7 @@
       "reference": "Chapter I",
       "stage": "down-the-hole",
       "context": "Falling down the rabbit-hole, growing sleepy.",
-      "analysis": "The question reverses because Alice is going to sleep, and the reversal is the first sign that Wonderland runs on grammar rather than on events. She herself supplies the reason it does not matter which way round it is put — she cannot answer either — which is the exact logic the Hatter will later use against her.",
+      "analysis": "The question reverses because Alice is falling asleep, and the reversal is the first sign that Wonderland runs on grammar. She herself supplies the reason it does not matter which way round it is put — she cannot answer either — which is the exact logic the Hatter will later use against her.",
       "themes": [
         "language",
         "dream"
@@ -558,7 +558,7 @@
       "reference": "Chapter II",
       "stage": "down-the-hole",
       "context": "Immediately after eating the cake, as she shoots up to nine feet.",
-      "analysis": "Alice knows the comparative is wrong and says so in the same breath, so the nonsense is not outside language but one step past its usual limit. The doubling also gives the sentence an upward motion that matches what her body is doing, which is why no other word would serve.",
+      "analysis": "Alice knows the comparative is wrong and says so in the same breath, so the nonsense sits one step past the usual limit of language, not outside it. The doubling also gives the sentence an upward motion that matches what her body is doing, which is why no other word would serve.",
       "themes": [
         "identity",
         "language"
@@ -718,7 +718,7 @@
       "reference": "Chapter VI",
       "stage": "caterpillar-and-kitchen",
       "context": "Answering Alice’s request for directions from the fork in the wood.",
-      "analysis": "The Cat gives the only genuinely sound advice in the book, and it is useless to Alice because she has no destination. The exchange quietly names the book’s method: nothing underground can be navigated by a traveller who has not decided what she wants.",
+      "analysis": "The Cat gives the only genuinely sound advice in the book, and it is useless to Alice because she has no destination. The exchange names the book’s method: nothing underground can be navigated by a traveller who has not decided what she wants.",
       "themes": [
         "authority",
         "language"
@@ -742,7 +742,7 @@
       "reference": "Chapter VI",
       "stage": "caterpillar-and-kitchen",
       "context": "Watching the Cat vanish slowly, ending with the smile.",
-      "analysis": "Alice separates a property from the thing that has it and notices that the result is impossible rather than merely odd. Her method here is the book’s in miniature: she states the ordinary case first, then the departure from it, and treats the gap as evidence worth recording.",
+      "analysis": "Alice separates a property from the thing that has it and notices that the result is impossible, which is more than odd. Her method here is the book’s in miniature: she states the ordinary case first, then the departure from it, and treats the gap as evidence worth recording.",
       "themes": [
         "language",
         "identity"
@@ -766,7 +766,7 @@
       "reference": "Chapter VII",
       "stage": "tea-table",
       "context": "Arriving at the tea-party, where three creatures are crowded into one corner of a large table.",
-      "analysis": "The lie is contradicted by the furniture in the same sentence, and Alice answers it with a fact rather than an argument. Carroll establishes in two lines that this table runs on assertion, which is why the riddle that follows is allowed to have no answer.",
+      "analysis": "The lie is contradicted by the furniture in the same sentence, and Alice answers it with a fact. Carroll establishes in two lines that this table runs on assertion, which is why the riddle that follows is allowed to have no answer.",
       "themes": [
         "manners",
         "authority"
@@ -789,7 +789,7 @@
       "reference": "Chapter VII",
       "stage": "tea-table",
       "context": "The Hatter’s first remark to Alice, dropped into a conversation about hair-cutting.",
-      "analysis": "A riddle is a contract: you ask, I try, you tell me. The Hatter breaks it at every stage, and when Alice asks for the answer he says he has not the slightest idea. The joke is not the raven; it is a form of words that keeps its shape after its purpose has been removed.",
+      "analysis": "A riddle is a contract: you ask, I try, you tell me. The Hatter breaks it at every stage, and when Alice asks for the answer he says he has not the slightest idea. The joke is a form of words that keeps its shape after its purpose has gone; the raven hardly matters.",
       "themes": [
         "language",
         "manners"
@@ -836,7 +836,7 @@
       "reference": "Chapter VIII",
       "stage": "croquet-ground",
       "context": "During the croquet game, in which the hoops keep walking away.",
-      "analysis": "Carroll gives the rate rather than the drama: about once a minute. Turning a death sentence into a statistic drains it of menace, and the reader learns before Alice does that these orders are noise — the King has been quietly pardoning everybody behind the Queen’s back.",
+      "analysis": "Carroll gives the rate: about once a minute. Making a death sentence into a statistic drains the menace out of it, and the reader learns before Alice does that these orders are noise; the King has been pardoning everybody behind the Queen’s back.",
       "themes": [
         "authority",
         "manners"
@@ -955,7 +955,7 @@
       "reference": "Chapter XII",
       "stage": "the-trial",
       "context": "The Queen’s response to the King’s call for the jury to consider its verdict.",
-      "analysis": "Every element of due process is present in the trial and only the order has gone; the Queen’s correction is procedural rather than mad. Alice’s reply, that the idea is stuff and nonsense, is the first time she names the problem instead of arguing inside it.",
+      "analysis": "Every element of due process is present in the trial and only the order has gone; the Queen’s correction is procedural, and not mad at all. Alice’s reply, that the idea is stuff and nonsense, is the first time she names the problem instead of arguing inside it.",
       "themes": [
         "authority"
       ],
@@ -1062,7 +1062,7 @@
     {
       "year": 1907,
       "label": "The book comes out of copyright in Britain",
-      "detail": "New illustrated editions follow at once, among them Arthur Rackham’s.",
+      "detail": "New illustrated editions followed straight away, among them Arthur Rackham’s.",
       "kind": "reception"
     },
     {
@@ -1123,20 +1123,20 @@
     },
     {
       "position": "A book made twice over",
-      "summary": "Because the 1864 manuscript survives, Wonderland can be read against the shorter story Carroll first wrote out, and the most famous episodes — the tea-party, the Cheshire Cat, the Duchess’s kitchen — turn out to be additions made for a public rather than for one child.",
+      "summary": "Because the 1864 manuscript survives, Wonderland can be read against the shorter story Carroll first wrote out, and the most famous episodes, the tea-party, the Cheshire Cat, the Duchess’s kitchen, turn out to be additions made for the public.",
       "counter": "Treating the manuscript as the ‘real’ version mistakes a private gift for a draft; the two texts were made for different readers and do different work."
     }
   ],
   "essayQuestions": [
     {
-      "question": "How does Carroll use changes of size to explore who Alice is?",
+      "question": "How does Carroll use changes of size to show who Alice is?",
       "focus": "Identity, the body and the limits of self-knowledge",
       "plan": [
-        "Establish the pattern: eleven changes of height, each of them answered with a question about identity rather than about measurement.",
+        "Establish the pattern: eleven changes of height, each answered with a question about identity.",
         "Read Chapter II closely — Ada’s ringlets, Mabel’s ignorance, the multiplication table — as an attempt to prove identity from evidence.",
-        "Set the Caterpillar’s interrogation against that failure, and note that Alice’s answer is an admission rather than a solution.",
+        "Set the Caterpillar’s questioning against that failure, and note that Alice’s answer is an admission.",
         "Turn the argument at the mushroom: from Chapter V onwards size is a tool she uses, not an accident she suffers.",
-        "Close on Chapter XII, where growing large is an act of judgement about the court rather than a physical event."
+        "Close on Chapter XII, where growing large is an act of judgement about the court."
       ]
     },
     {
@@ -1146,7 +1146,7 @@
         "Distinguish the two claims: disorder, or an excess of rules that nobody has agreed to.",
         "Use the Caucus-race as the first case — a complete procedure with no contest inside it.",
         "Read the croquet ground for the relation between ceremony and effect: sentences are passed about once a minute and nothing is carried out.",
-        "Examine the trial for order rather than content: judge, jury, evidence and verdict are all present and only the sequence has gone.",
+        "Examine the order of the trial: judge, jury, evidence and verdict are all present and only the sequence has gone.",
         "Decide what Alice’s final refusal shows — that authority here depends on the consent of everybody who agrees to be frightened."
       ]
     },
@@ -1156,9 +1156,9 @@
       "plan": [
         "Set out what is being parodied: improving verse of the kind children were made to learn by heart.",
         "Show how the parodies are staged as failures of memory, not as literary jokes — Alice sets out to recite and something else comes out.",
-        "Compare the Mock Turtle’s account of his schooling, where the joke is on the curriculum rather than on any one poem.",
+        "Compare the Mock Turtle’s account of his schooling, where the joke is on the curriculum.",
         "Test the question directly: what survives for a reader with no original in mind, and what is lost.",
-        "Conclude on what recitation is for in the book — a proof of identity that keeps failing."
+        "Conclude on what recitation is for in the book: a proof of identity that keeps failing."
       ]
     },
     {
@@ -1167,7 +1167,7 @@
       "plan": [
         "Describe the frame precisely: a drowsy afternoon, a fall, and a waking with leaves on the face.",
         "Ask whether the dream is used to explain the impossibilities, and note how little of the book depends on their being explained.",
-        "Read the transformations at the waking — cards into leaves, shrieks into a shepherd boy — as a translation rather than a cancellation.",
+        "Read the changes at the waking, cards into leaves, shrieks into a shepherd boy, as a translation of the dream.",
         "Examine the sister’s deliberate re-dreaming, and what it says about rereading a book you already know.",
         "Weigh the ending against the fear the middle chapters generate: is the frame a comfort, or an admission that none was needed?"
       ]

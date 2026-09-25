@@ -37,7 +37,7 @@
     {
       "label": "Sources",
       "value": "No single source",
-      "note": "Ovid, Chaucer, English fairy lore and Shakespeare's own theatre, combined rather than adapted."
+      "note": "Ovid, Chaucer, English fairy lore and Shakespeare’s own theatre, combined."
     },
     {
       "label": "Shape",
@@ -85,7 +85,7 @@
     {
       "id": "act-3",
       "label": "Act III",
-      "title": "Everything wrong at once",
+      "title": "Puck’s mistakes in the wood",
       "summary": "Bottom acquires an ass's head, his friends run, and the fairy queen wakes and falls in love with him. In the other half of the wood both men now love Helena, who is certain she is being mocked, and the two women who grew up together insult each other's height until the men go off to fight. Oberon has Puck fog the wood and put them all to sleep.",
       "scenes": [
         {
@@ -122,7 +122,7 @@
       "id": "act-5",
       "label": "Act V",
       "title": "The worst play ever performed, and a blessing",
-      "summary": "Three couples watch Pyramus and Thisbe, a tragedy of forbidden love and mistaken death performed by men who explain the wall and apologise for the lion. The court heckles it; the play they are mocking is the story they have just escaped. The fairies then come indoors to bless the marriages, and Puck asks the audience to call the whole thing a dream.",
+      "summary": "Three couples watch Pyramus and Thisbe, a tragedy of forbidden love and mistaken death performed by men who explain the wall and apologise for the lion. The court heckles it; the play they are mocking is the story they have just escaped. The fairies then come indoors to bless the marriages, and Puck invites the audience to call the whole thing a dream.",
       "scenes": [
         {
           "ref": "5.1",
@@ -194,7 +194,7 @@
       "id": "egeus",
       "name": "Egeus",
       "role": "Hermia's father",
-      "summary": "He appears twice, asks for his daughter's death both times, and is then simply overruled and forgotten. Shakespeare gives the comedy's opening crisis to a man with no interior life at all, so that the law he invokes looks like a piece of machinery rather than a feeling.",
+      "summary": "He appears twice, asks for his daughter's death both times, and is then simply overruled and forgotten. Shakespeare gives the opening crisis to a man with no inner life at all, so the law he invokes looks like machinery.",
       "firstAppearance": "1.1",
       "traits": [
         "legalistic",
@@ -423,8 +423,8 @@
       "id": "puck",
       "name": "Puck",
       "role": "Robin Goodfellow, Oberon's servant",
-      "summary": "He belongs to English village folklore rather than to Athens, and he is brought into the play as both an employee and a hazard: he does what he is told and enjoys what goes wrong with it. He is given the last word, and uses it to offer the audience a way out of everything they have seen.",
-      "clue": "He frightens village girls, curdles the milk, mistakes one Athenian for another, and finally asks the audience to pretend they were asleep.",
+      "summary": "He comes from English village folklore, not from Athens, and he is both an employee and a hazard: he does what he is told and enjoys what goes wrong. He is given the last word, and uses it to offer the audience a way out of everything they have seen.",
+      "clue": "He frightens village girls, curdles the milk, mistakes one Athenian for another, and finally invites the audience to pretend they were asleep.",
       "firstAppearance": "2.1",
       "traits": [
         "mischievous",
@@ -484,7 +484,7 @@
     {
       "id": "love",
       "name": "Love without reason",
-      "summary": "The play's working definition of love is that it cannot be argued with and cannot be trusted: Helena says it looks with the mind rather than the eyes, Bottom observes that reason and love keep little company, and a flower produces the same effect as a lifetime's devotion. What the drug does is not unnatural; it is only quicker.",
+      "summary": "The play’s working definition of love is that it cannot be argued with and cannot be trusted: Helena says it looks with the mind, not the eyes, Bottom observes that reason and love keep little company, and a flower does the work of a lifetime’s devotion. What the drug does is not unnatural; it is only quicker.",
       "development": "Stated as theory in 1.1, demonstrated on the lovers in Acts II and III, and left standing at the end with Demetrius still under the influence."
     },
     {
@@ -509,12 +509,12 @@
       "id": "theatre",
       "name": "Theatre about theatre",
       "summary": "The mechanicals worry about the things real companies worry about — casting, props, whether the audience will be frightened, whether a boy can play a woman — and solve them by explaining everything aloud. Their failure demonstrates the conventions the surrounding play is relying on at that exact moment.",
-      "development": "Rehearsal in 1.2 and 3.1, performance in 5.1, and an epilogue that asks the same indulgence the mechanicals begged for in their prologue."
+      "development": "Rehearsal in 1.2 and 3.1, performance in 5.1, and an epilogue that begs the same indulgence the mechanicals begged for in their prologue."
     },
     {
       "id": "power",
       "name": "Who is allowed to decide",
-      "summary": "Fathers, dukes and fairy kings all get what they want, and each of them frames it as correction rather than force. The play lets that pattern show by repeating it at three social levels within an hour of stage time.",
+      "summary": "Fathers, dukes and fairy kings all get what they want, and each of them calls it correction. The play lets that pattern show by repeating it at three social levels within an hour of stage time.",
       "development": "Egeus invokes the law, Theseus invokes his sword and his wedding, Oberon invokes a flower; the changeling boy changes hands offstage and is never mentioned again."
     }
   ],
@@ -535,7 +535,7 @@
       "id": "doubling",
       "name": "Doubling",
       "definition": "One actor taking two parts, so that the audience sees a resemblance the text does not state.",
-      "inThisBook": "Theseus and Oberon, Hippolyta and Titania, and Philostrate and Puck have often been doubled since Peter Brook's 1970 production, which turns the fairy quarrel into the same marriage seen at night."
+      "inThisBook": "Theseus and Oberon, Hippolyta and Titania, and Philostrate and Puck have often been doubled since Peter Brook’s 1970 production, so the fairy quarrel looks like the same marriage seen at night."
     },
     {
       "id": "bathos",
@@ -587,7 +587,7 @@
       "reference": "1.1.17",
       "stage": "act-1",
       "context": "To his bride, in the same opening speech.",
-      "analysis": "He describes a conquest as a courtship without appearing to notice the difference, and 'doing thee injuries' is left in the sentence as a plain fact. 'In another key' is a musical term, so the change he promises is one of tone rather than of relation — which is precisely the question Oberon and Titania will act out in the wood.",
+      "analysis": "He describes a conquest as a courtship without seeming to notice the difference, and ‘doing thee injuries’ stays in the sentence as a plain fact. ‘In another key’ is a musical term, so the change he promises is one of tone, and the relation stays the same, which is exactly what Oberon and Titania will act out in the wood.",
       "themes": [
         "love",
         "power"
@@ -634,7 +634,7 @@
       "reference": "1.1.48",
       "stage": "act-1",
       "context": "Advising Hermia to obey, before setting out her choices.",
-      "analysis": "The image makes a daughter a seal impression rather than a person, and the pun on figure and disfigure lets destruction sound like a matter of craft. It is offered as kindly counsel, which is the point: the play's cruelty is spoken in the register of good sense.",
+      "analysis": "The image makes a daughter a seal impression, and the pun on figure and disfigure makes destroying her sound like a matter of craft. It is offered as kindly counsel, which is the point: the play's cruelty is spoken in the register of good sense.",
       "themes": [
         "law",
         "power"
@@ -658,7 +658,7 @@
       "reference": "1.1.136",
       "stage": "act-1",
       "context": "Comforting Hermia after the duke's judgement.",
-      "analysis": "The most quoted line in the play is a young man consoling his girlfriend by telling her that their situation is an old story, and he is about to list the ways love goes wrong as if reciting from a book. What follows is not comfort but a catalogue of obstacles, ending in the image of darkness swallowing light.",
+      "analysis": "The most quoted line in the play is a young man consoling his girlfriend by telling her that their situation is an old story, and he is about to list the ways love goes wrong as if reciting from a book. What follows is a list of obstacles, not comfort, ending in the image of darkness swallowing light.",
       "themes": [
         "love"
       ],
@@ -799,7 +799,7 @@
       "reference": "2.1.123",
       "stage": "act-2",
       "context": "Refusing to hand over the changeling boy.",
-      "analysis": "Her reason for keeping the child is not possessiveness but a promise to a dead friend, and the speech that follows is the warmest thing in the play — two women laughing on a beach at the shape of the sails. The boy himself never appears, and after Act IV nobody mentions him again.",
+      "analysis": "She keeps the child because of a promise to a dead friend, and the speech that follows is the warmest thing in the play: two women laughing on a beach at the shape of the sails. The boy himself never appears, and after Act IV nobody mentions him again.",
       "themes": [
         "power",
         "love"
@@ -822,7 +822,7 @@
       "reference": "2.1.169",
       "stage": "act-2",
       "context": "Describing how Cupid's arrow missed an imperial votaress and struck a flower.",
-      "analysis": "The drug that drives the rest of the plot is given an origin story in three lines, and its colour is a wound. 'Love-in-idleness' is a real country name for the wild pansy, so the enchantment arrives dressed as folklore rather than as sorcery — which is how the play prefers its magic.",
+      "analysis": "The drug that drives the rest of the plot gets an origin story in three lines, and its colour is a wound. ‘Love-in-idleness’ is a real country name for the wild pansy, so the enchantment arrives as folklore, which is how the play likes its magic.",
       "themes": [
         "love",
         "transformation"
@@ -844,7 +844,7 @@
       "reference": "2.1.178",
       "stage": "act-2",
       "context": "Sent to fetch the flower from wherever it grows.",
-      "analysis": "The boast fixes the scale of the wood: the errand crosses the world and takes less time than an act. It also quietly sets the play's clock against the audience's, since forty minutes is roughly how long the fairies are then offstage.",
+      "analysis": "The boast fixes the scale of the wood: the errand crosses the world and takes less time than an act. It also sets the play’s clock against the audience’s, since forty minutes is roughly how long the fairies are then offstage.",
       "themes": [
         "dream"
       ],
@@ -866,7 +866,7 @@
       "reference": "2.1.207",
       "stage": "act-2",
       "context": "Pursuing Demetrius into the wood after he has told her to go away.",
-      "analysis": "Four imperatives in a row, all of them asking to be hurt, and the one thing she requests is permission rather than affection. Oberon overhears this, which is why he intervenes — the play's only act of supernatural kindness is provoked by a woman debasing herself in front of a stranger.",
+      "analysis": "Four imperatives in a row, all of them asking to be hurt, and the one thing she requests is permission; she does not ask for affection. Oberon overhears this, which is why he intervenes — the play's only act of supernatural kindness is provoked by a woman debasing herself in front of a stranger.",
       "themes": [
         "love",
         "power"
@@ -890,7 +890,7 @@
       "reference": "2.1.244",
       "stage": "act-2",
       "context": "After Demetrius threatens to do her mischief in the wood.",
-      "analysis": "She identifies the rule she is breaking and states the cost of breaking it in one couplet. 'Wood' puns on wooed and on the old word for mad, and also names the place she is standing in — three meanings in a monosyllable, all of them about a woman who has come to the wrong place to do the wrong thing.",
+      "analysis": "She names the rule she is breaking and what breaking it will cost, in one couplet. ‘Wood’ puns on wooed and on the old word for mad, and also names the place she is standing in: three meanings in one syllable, all of them about a woman who has come to the wrong place to do the wrong thing.",
       "themes": [
         "love",
         "law"
@@ -1012,7 +1012,7 @@
       "reference": "4.1.77",
       "stage": "act-4",
       "context": "Waking after Oberon has taken the changeling boy and released her.",
-      "analysis": "She calls it a vision, he says nothing about what he did, and the boy is never mentioned again by either of them. Her next line — that her eyes now loathe his visage — is aimed at a man asleep three feet away, and the comedy depends on the audience finding that funny rather than looking at it too closely.",
+      "analysis": "She calls it a vision, he says nothing about what he did, and the boy is never mentioned again by either of them. Her next line, that her eyes now loathe his face, is aimed at a man asleep three feet away, and the comedy depends on the audience laughing without looking at it too closely.",
       "themes": [
         "transformation",
         "power",
@@ -1061,7 +1061,7 @@
       "reference": "5.1.8",
       "stage": "act-5",
       "context": "Dismissing the lovers' account of the night before the entertainment begins.",
-      "analysis": "'All compact' means made entirely of, so the three are not compared but identified. The speech is the rational case against everything the audience has just watched, delivered by a character out of Greek myth in a play with fairies in it, and Hippolyta's reply — that all four tell the same story — is the only answer it gets.",
+      "analysis": "‘All compact’ means made entirely of, so the three are identified with each other, not compared. The speech is the rational case against everything the audience has just watched, delivered by a character out of Greek myth in a play with fairies in it, and Hippolyta's reply — that all four tell the same story — is the only answer it gets.",
       "themes": [
         "dream",
         "theatre"
@@ -1131,7 +1131,7 @@
       "reference": "5.1.413",
       "stage": "act-5",
       "context": "The epilogue, spoken after the fairies have blessed the house.",
-      "analysis": "'Shadows' is Theseus's word for actors four hundred lines earlier, so the epilogue picks up the court's own dismissal and turns it into an apology. The offer is the one the characters have already accepted about themselves — call it a dream — and the rhymed tetrameter is the fairies' metre, which means the excuse is being made by the people who caused the trouble.",
+      "analysis": "‘Shadows’ is Theseus’s word for actors four hundred lines earlier, so the epilogue picks up the court’s own dismissal and uses it as an apology. The offer is the one the characters have already accepted about themselves — call it a dream — and the rhymed tetrameter is the fairies' metre, which means the excuse is being made by the people who caused the trouble.",
       "themes": [
         "dream",
         "theatre"
@@ -1214,7 +1214,7 @@
     {
       "year": 1960,
       "label": "Britten's opera premieres at Aldeburgh",
-      "detail": "The libretto begins in the wood rather than in Athens, shifting the balance from law to enchantment.",
+      "detail": "The libretto begins in the wood, not in Athens, shifting the balance from law to enchantment.",
       "kind": "reception"
     },
     {
@@ -1271,12 +1271,12 @@
     {
       "position": "A darker wood",
       "summary": "Criticism and production since the middle of the twentieth century have emphasised the coercion in the play: a father demanding a death sentence, a husband drugging his wife, a woman asking to be beaten, and an ending that leaves one man enchanted.",
-      "counter": "Pushed far enough it makes the last act unplayable, and has to treat the mechanicals' comedy as an interruption rather than as the answer the play gives."
+      "counter": "Pushed far enough it makes the last act unplayable, and has to treat the mechanicals’ comedy as an interruption, when it is the play’s answer."
     },
     {
       "position": "A play about theatre",
       "summary": "A third reading takes Pyramus and Thisbe as the centre: the comedy examines what an audience agrees to do, and the epilogue makes that agreement explicit.",
-      "counter": "It can turn the lovers into a device and leave the fairy marriage — the one quarrel with consequences for crops and weather — as decoration."
+      "counter": "It can reduce the lovers to a device and leave the fairy marriage, the one quarrel with consequences for crops and weather, as decoration."
     }
   ],
   "essayQuestions": [
@@ -1329,7 +1329,7 @@
     "Demetrius is still under the spell at the end. Does that spoil the comedy, or is it the point of it?",
     "Oberon drugs his wife into loving a man with an ass's head in order to win a custody dispute. Can the play be staged without that being cruel?",
     "Helena asks to be treated like a dog. What is an audience supposed to feel during that speech?",
-    "The mechanicals perform the tragedy the lovers only just avoided. Why does Shakespeare put it at the end rather than the beginning?",
+    "The mechanicals perform the tragedy the lovers only just avoided. Why does Shakespeare put it at the end, and not at the beginning?",
     "Theseus says imagination cannot be trusted, in a play with fairies in it. Who wins that argument?"
   ],
   "related": [
