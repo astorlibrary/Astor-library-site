@@ -14,7 +14,7 @@
   "difficulty": 3,
   "lengthNote": "A poem of about 12,000 lines of Greek hexameter verse in twenty-four books. Butler translates it into continuous English prose, so it reads like a novel, but it is recorded here as a poem because that is what Homer made.",
   "openingLine": "Tell me, O Muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy.",
-  "summary": "A war poem has a sequel about getting home, and it turns out that getting home is the harder job. Odysseus has been gone twenty years; his son has grown up without him, his wife is holding off a hundred and eight suitors with a piece of weaving, and he himself is sitting on a beach crying. The poem spends half its length on the voyage everyone remembers and the other half in one house on one island, where a man dressed as a beggar has to find out who is still loyal to him before anybody finds out who he is. Its hero wins by lying, and the poem admires him for it; its last great test is set not by a monster but by his wife.",
+  "summary": "A war poem has a sequel about getting home, and it turns out that getting home is the harder job. Odysseus has been gone twenty years; his son has grown up without him, his wife is holding off a hundred and eight suitors with a piece of weaving, and he himself is sitting on a beach crying. The poem spends half its length on the voyage everyone remembers and the other half in one house on one island, where a man dressed as a beggar has to find out who is still loyal to him before anybody finds out who he is. Its hero wins by lying, and the poem admires him for it; the last great test is set by his wife, after all the monsters.",
   "referenceStyle": "book — Butler's prose translation carries no line numbers, so quotations are placed by book alone (Book 1 to Book 24)",
   "sourceText": {
     "label": "Samuel Butler's prose translation of the Odyssey (1900), Project Gutenberg eBook 1727",
@@ -188,7 +188,7 @@
       "id": "books-21-24",
       "label": "Books 21–24",
       "title": "The bow, the bed and the truce",
-      "summary": "The beggar strings the bow nobody else can bend, and the hall becomes a battlefield with the doors locked. The killing is followed by a second test, which Odysseus does not set but sits: Penelope's trick about the bed. The final book goes down to the dead and out to Laertes' farm, and stops a civil war by divine order.",
+      "summary": "The beggar strings the bow nobody else can bend, and the hall becomes a battlefield with the doors locked. After the killing comes a second test, and this time Odysseus is the one who has to pass it: Penelope’s trick about the bed. The final book goes down to the dead and out to Laertes' farm, and stops a civil war by divine order.",
       "scenes": [
         {
           "ref": "Book 21",
@@ -218,7 +218,7 @@
       "id": "odysseus",
       "name": "Odysseus (Butler's Ulysses)",
       "role": "King of Ithaca, ten years at Troy and ten more getting back",
-      "summary": "The Iliad's heroes are strong; this one is clever, and the poem treats cleverness as a kind of endurance. He can build a raft, a bed and a lie with equal care, and he tells five separate false life-stories once he is home. He is also the only survivor of his expedition, a fact he narrates himself and for which he never quite takes the blame.",
+      "summary": "The Iliad's heroes are strong; this one is clever, and the poem treats cleverness as a kind of endurance. He can build a raft, a bed and a lie with equal care, and he tells five separate false life-stories once he is home. He is also the only survivor of his expedition, a fact he narrates himself and for which he never fully takes the blame.",
       "clue": "He gives a giant a false name and gets away with it, then cannot resist shouting the real one, and pays ten years for the pleasure.",
       "firstAppearance": "Book 5",
       "traits": [
@@ -295,7 +295,7 @@
       "id": "penelope",
       "name": "Penelope",
       "role": "Wife of Odysseus, besieged in her own house",
-      "summary": "She has no army, no husband and a son too young to help, and she holds a hundred-odd men off for three years with a loom. The poem never quite says when she recognises the beggar, and her decision to set the bow contest on the very day he arrives can be read as despair, luck or collusion. She is the only person in the poem who out-tricks Odysseus.",
+      "summary": "She has no army, no husband and a son too young to help, and she holds a hundred-odd men off for three years with a loom. The poem never says exactly when she recognises the beggar, and her decision to set the bow contest on the very day he arrives can be read as despair, luck or collusion. She is the only person in the poem who out-tricks Odysseus.",
       "clue": "She weaves by day, unpicks by night, and at the end orders a bed moved that she knows cannot be moved.",
       "firstAppearance": "Book 1",
       "traits": [
@@ -543,7 +543,7 @@
       "id": "nausicaa",
       "name": "Nausicaa",
       "role": "Daughter of Alcinous, king of the Phaeacians",
-      "summary": "She is the only person on the beach who does not run away from the salt-caked stranger, and she manages the encounter better than he could have hoped, down to the instruction to walk behind her wagon so that nobody gossips. The poem lets her think of him as a husband and then quietly sends him home to someone else.",
+      "summary": "She is the only person on the beach who does not run away from the salt-caked stranger, and she manages the encounter better than he could have hoped, down to the instruction to walk behind her wagon so that nobody gossips. The poem lets her think of him as a husband and then sends him home to someone else.",
       "clue": "She goes to the river to wash her brothers' clothes and comes back with the hero of the Trojan war.",
       "firstAppearance": "Book 6",
       "traits": [
@@ -672,7 +672,7 @@
       "id": "home",
       "name": "Homecoming",
       "summary": "The Greek word is nostos, and the poem measures its hero against other men's returns: Agamemnon got home quickly and was murdered at dinner; Menelaus got home rich and sits beside a wife he cannot quite trust. Arriving is the easy part. Home has to be re-entered carefully, in disguise, and won back room by room.",
-      "development": "A longing on Calypso's beach in Book 5, a coastline glimpsed and lost in Book 10, an unrecognised shore in Book 13, and finally an olive-tree bedpost in Book 23 — after which Tiresias's prophecy quietly says he must leave again."
+      "development": "A longing on Calypso’s beach in Book 5, a coastline glimpsed and lost in Book 10, an unrecognised shore in Book 13, and finally an olive-tree bedpost in Book 23 — after which Tiresias’s prophecy says he must leave again."
     },
     {
       "id": "hospitality",
@@ -728,7 +728,7 @@
       "id": "epithets",
       "name": "Epithets and formulae",
       "definition": "Fixed descriptive phrases attached to a person or thing and repeated whenever they recur, a working tool of poetry composed in performance.",
-      "inThisBook": "Dawn is 'rosy-fingered' every time she appears, and whole blocks of lines — arming, washing, serving a meal — recur word for word. Butler keeps many of these in his prose. The repetitions are not padding: they make each dawn and each dinner the same ritual, so a breach of the ritual shows at once."
+      "inThisBook": "Dawn is 'rosy-fingered' every time she appears, and whole blocks of lines — arming, washing, serving a meal — recur word for word. Butler keeps many of these in his prose. The repetitions are there for a reason: every dawn and every dinner follows the same ritual, so any breach of it shows immediately."
     },
     {
       "id": "epic-simile",
@@ -768,7 +768,7 @@
       "reference": "Book 1",
       "stage": "books-1-4",
       "context": "The opening of the poem.",
-      "analysis": "The Iliad's first noun is anger; this poem's is a man, and an unnamed one. 'Ingenious' is Butler's word for the Greek polytropos, 'of many turns', which can mean much-travelled or much-twisting, and the sentence allows both. Note too what he is credited with: not killing, but visiting cities and learning customs. The hero is introduced as a kind of tourist with a sack of Troy behind him.",
+      "analysis": "The Iliad's first noun is anger; this poem's is a man, and an unnamed one. 'Ingenious' is Butler's word for the Greek polytropos, 'of many turns', which can mean much-travelled or much-twisting, and the sentence allows both. Note too what he is credited with: visiting cities and learning customs, with no mention of killing. The hero is introduced as a kind of tourist with a sack of Troy behind him.",
       "themes": [
         "identity",
         "disguise"
@@ -792,7 +792,7 @@
       "reference": "Book 1",
       "stage": "books-1-4",
       "context": "Zeus opens the council of the gods, thinking of Aegisthus, who was warned not to murder Agamemnon and did.",
-      "analysis": "The first speech in the poem is a complaint about being misjudged, and it sets the moral rules for everything after. People are warned; people ignore the warning; people pay. The crew and the suitors will both fit the pattern exactly. What the speech leaves out is Poseidon, whose persecution of Odysseus is about to be discussed and is not obviously anybody's folly but a god's temper.",
+      "analysis": "The first speech in the poem is a complaint about being misjudged, and it sets the moral rules for everything after. People are warned; people ignore the warning; people pay. The crew and the suitors will both fit the pattern exactly. What the speech leaves out is Poseidon, whose persecution of Odysseus is about to be discussed and looks more like a god’s temper than anybody’s folly.",
       "themes": [
         "justice"
       ],
@@ -813,7 +813,7 @@
       "reference": "Book 1",
       "stage": "books-1-4",
       "context": "Penelope has asked the bard to stop singing about the Greeks' homecoming. Her son overrules her in front of the suitors.",
-      "analysis": "It is the first time Telemachus has asserted himself and he does it against the wrong target, which is both comic and sad. The lines are nearly those Hector speaks to Andromache in the Iliad, with 'war' changed to 'speech': in this poem talk is the weapon. Penelope goes upstairs 'wondering', and keeps weaving — the loom he sends her back to is where the real resistance is happening.",
+      "analysis": "It is the first time Telemachus has asserted himself and he does it against the wrong target, which is comic and also sad. The lines are nearly those Hector speaks to Andromache in the Iliad, with 'war' changed to 'speech': in this poem talk is the weapon. Penelope goes upstairs 'wondering', and keeps weaving — the loom he sends her back to is where the real resistance is happening.",
       "themes": [
         "identity",
         "narration"
@@ -864,7 +864,7 @@
       "reference": "Book 5",
       "stage": "books-5-8",
       "context": "Calypso, ordered to let him go, asks whether she is really less attractive than his wife and reminds him that she can make him immortal.",
-      "analysis": "This is diplomacy — he is speaking to a goddess who could still drown him — but it is also the poem's central choice, made in three sentences. He concedes every point of comparison and then says 'Nevertheless'. What he chooses is not the better woman but the mortal life: ageing, a particular island, a death. After the Iliad's heroes, who trade life for fame, here is one who turns down eternity for home.",
+      "analysis": "This is diplomacy — he is speaking to a goddess who could still drown him — but it is also the poem's central choice, made in three sentences. He concedes every point of comparison and then says 'Nevertheless'. He is choosing the mortal life more than the better woman: ageing, a particular island, a death. After the Iliad's heroes, who trade life for fame, here is one who turns down eternity for home.",
       "themes": [
         "home",
         "loyalty"
@@ -1091,7 +1091,7 @@
       "reference": "Book 12",
       "stage": "books-9-12",
       "context": "The crew row past with wax in their ears; Odysseus, tied to the mast, hears the song.",
-      "analysis": "What the Sirens offer is not pleasure but knowledge: they go on to say they know everything that happened at Troy. In other words they offer to sing him the Iliad, with himself in it, for ever. The temptation is precisely fitted to a man who wept at Demodocus's song. The meadow around them is heaped with bones, and the danger is the one the whole poem worries at — a story so good you never go home.",
+      "analysis": "What the Sirens offer is knowledge, more than pleasure: they go on to say they know everything that happened at Troy. In other words they offer to sing him the Iliad, with himself in it, for ever. The temptation is precisely fitted to a man who wept at Demodocus's song. The meadow around them is heaped with bones, and the danger is the one the whole poem worries at — a story so good you never go home.",
       "themes": [
         "narration",
         "home"
@@ -1115,7 +1115,7 @@
       "reference": "Book 13",
       "stage": "books-13-16",
       "context": "On the beach in Ithaca, Odysseus has refused to believe even Athene that he is really home.",
-      "analysis": "A goddess explains her loyalty, and the reasons are three words a moralist would use as charges. Butler's 'shifty' is sharper than most translators allow themselves and catches the tone: affectionate, amused, professional. She has just listened to him lie to her face and enjoyed it. The line tells us what kind of virtue this poem rewards — not honesty but wariness, the refusal to take even a homecoming on trust.",
+      "analysis": "A goddess explains her loyalty, and the reasons are three words a moralist would use as charges. Butler's 'shifty' is sharper than most translators allow themselves and catches the tone: affectionate, amused, professional. She has just listened to him lie to her face and enjoyed it. The line tells us what kind of virtue this poem rewards: wariness, more than honesty, and an unwillingness to take even a homecoming on trust.",
       "themes": [
         "disguise",
         "loyalty"
@@ -1290,7 +1290,7 @@
       "reference": "Book 22",
       "stage": "books-21-24",
       "context": "Eurycleia comes into the hall, sees the heaped corpses and her master spattered like a lion, and begins to cry out in triumph.",
-      "analysis": "Iliadic heroes vaunt over the fallen as a matter of course, and Odysseus vaunted over the Cyclops to his cost. Here he has learnt, or the poem has: the suitors died by 'heaven's doom and their own evil deeds', and the killer presents himself as an instrument. It is a scruple of piety rather than mercy, though. His very next sentence asks the nurse which of the women have been disloyal.",
+      "analysis": "Iliadic heroes vaunt over the fallen as a matter of course, and Odysseus vaunted over the Cyclops to his cost. Here he has learnt, or the poem has: the suitors died by 'heaven's doom and their own evil deeds', and the killer presents himself as an instrument. It is a scruple of piety, though, not of mercy. His very next sentence asks the nurse which of the women have been disloyal.",
       "themes": [
         "justice"
       ],
@@ -1484,7 +1484,7 @@
     {
       "year": 1842,
       "label": "Tennyson publishes 'Ulysses'",
-      "detail": "A dramatic monologue for the hero in old age, restless in Ithaca and ready to sail again. It takes its cue from Tiresias's prophecy and from Dante rather than from Homer's ending.",
+      "detail": "A dramatic monologue for the hero in old age, restless in Ithaca and ready to sail again. It takes its cue from Tiresias’s prophecy and from Dante, not from Homer’s ending.",
       "kind": "reception"
     },
     {
@@ -1553,7 +1553,7 @@
       "name": "Corfu",
       "lat": 39.62,
       "lon": 19.92,
-      "note": "Traditionally identified with Scheria, the island of the Phaeacians, since at least the fifth century BCE. Homer's Scheria is a place at the edge of the real, and the identification is ancient local pride rather than geography."
+      "note": "Traditionally identified with Scheria, the island of the Phaeacians, since at least the fifth century BCE. Homer’s Scheria is a place at the edge of the real, and the identification comes from ancient local pride, not geography."
     },
     {
       "name": "Strait of Messina",
@@ -1576,8 +1576,8 @@
     },
     {
       "position": "Penelope knows: the second half as a collaboration",
-      "summary": "Some readers hold that Penelope recognises the beggar, or at least suspects him, during the interview in Book 19, and that her decision to stage the bow contest the next day is a move in a game both are playing. It makes her the poem's second strategist rather than a prize waiting to be claimed, and it accounts for the odd timing.",
-      "counter": "The text never says so, and says several things against it: she weeps for her husband in his presence, prays for death in Book 20, and is genuinely resistant in Book 23. It may be truer to the poem to say that it keeps her mind deliberately closed to us, as she keeps it closed to everyone else."
+      "summary": "Some readers hold that Penelope recognises the beggar, or at least suspects him, during the interview in Book 19, and that her decision to stage the bow contest the next day is a move in a game both are playing. On this reading she is the poem’s second strategist, not a prize waiting to be claimed, and the odd timing is explained.",
+      "counter": "The text never says so, and says several things against it: she weeps for her husband in his presence, prays for death in Book 20, and is genuinely resistant in Book 23. It may be truer to the poem to say that it deliberately closes her mind to us, as she closes it to everyone else."
     },
     {
       "position": "The untrustworthy hero",
@@ -1590,11 +1590,11 @@
       "question": "Is Odysseus a hero to be admired?",
       "focus": "Cunning, endurance and the cost to others",
       "plan": [
-        "Start from the first adjective, 'ingenious', and establish that this poem's idea of excellence is intelligence and staying power rather than strength.",
-        "Take the Cyclops episode as the test case: the Noman trick shows the quality at its best, and the boast from the ship shows the older heroic appetite for fame undoing it.",
+        "Start from the first adjective, ‘ingenious’, and establish that this poem’s idea of excellence is intelligence and staying power, more than strength.",
+        "Take the Cyclops episode as the test case: the Noman trick shows the quality at its best, and the boast from the ship shows the older heroic appetite for fame throwing it away.",
         "Count the cost — twelve ships, every companion — and weigh his own narration of those losses against the proem's insistence that the men died by their own folly.",
         "Set against this the refusal of Calypso's offer and the patience in the hall, where he absorbs blows he could return.",
-        "Close on Book 24: he lies to his grieving father out of habit and has to be stopped from slaughter by a thunderbolt. Admiration is what the poem asks for; decide how much it qualifies the request."
+        "Close on Book 24: he lies to his grieving father out of habit and has to be stopped from slaughter by a thunderbolt. The poem wants admiration; decide how far it qualifies that."
       ]
     },
     {
@@ -1603,8 +1603,8 @@
       "plan": [
         "Set out the rule as the poem shows it working at Pylos and Sparta: welcome, bath, food, and only then the question of a name.",
         "Treat Polyphemus as the deliberate inversion, point by point, including the parody of a guest-gift — while noting that Odysseus entered uninvited.",
-        "Use Eumaeus to show that the standard is moral rather than social: 'all strangers and beggars are from Jove' is said in a hut.",
-        "Read the suitors as bad guests rather than bad hosts, whose crime is put in terms of eating, and connect them to the crew on Thrinacia.",
+        "Use Eumaeus to show that the standard is moral, not social: ‘all strangers and beggars are from Jove’ is said in a hut.",
+        "Read the suitors as bad guests, whose crime is put in terms of eating, and connect them to the crew on Thrinacia.",
         "Finish with the Phaeacians, turned to stone for giving a stranger passage, and ask whether the poem's gods uphold the code as reliably as its mortals are expected to."
       ]
     },

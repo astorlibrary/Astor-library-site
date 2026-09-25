@@ -14,7 +14,7 @@
   "difficulty": 5,
   "lengthNote": "Over ten thousand lines of unrhymed iambic pentameter, arranged in twelve books",
   "openingLine": "Of Man’s first disobedience, and the fruit Of that forbidden Tree, whose mortal taste Brought death into the world, and all our woe",
-  "summary": "A blind republican, on the losing side of a revolution, writes an epic about the first defeat. Milton gives the rebel angel the best speeches and then spends twelve books showing what those speeches cost, and the crisis of the poem is not a battle but a conversation between a husband and a wife about whether to work apart for a morning. It ends with two people walking into an unmapped world, holding hands.",
+  "summary": "A blind republican, on the losing side of a revolution, writes an epic about the first defeat. Milton gives the rebel angel the best speeches and then spends twelve books showing what those speeches lead to, and the crisis of the poem is a conversation between a husband and a wife about whether to work apart for a morning. It ends with two people walking into an unmapped world, holding hands.",
   "referenceStyle": "book — the source text carries no line numbers, so quotations are placed by book alone",
   "sourceText": {
     "label": "Standard Ebooks text of Paradise Lost",
@@ -47,7 +47,7 @@
       "id": "book-1",
       "label": "Book I",
       "title": "Defeat reorganised as policy",
-      "summary": "The fallen angels come to on a burning lake, and Satan turns the worst news imaginable into a programme. The roll-call of the devils doubles as a catalogue of the gods later worshipped on earth, and Pandemonium rises out of the ground in the time it takes to describe it."
+      "summary": "The fallen angels come to on a burning lake, and Satan makes the worst news imaginable into a programme. The roll-call of the devils doubles as a catalogue of the gods later worshipped on earth, and Pandemonium rises out of the ground in the time it takes to describe it."
     },
     {
       "id": "book-2",
@@ -95,7 +95,7 @@
       "id": "book-9",
       "label": "Book IX",
       "title": "The morning apart, and the fruit",
-      "summary": "The crisis is a disagreement about how to spend a working day. Eve wants a virtue that has been tested; Adam yields rather than command her; the serpent finds her alone and argues her into eating, and Adam eats knowing exactly what he is doing. The book ends in mutual accusation."
+      "summary": "The crisis is a disagreement about how to spend a working day. Eve wants a virtue that has been tested; Adam gives way sooner than command her; the serpent finds her alone and argues her into eating, and Adam eats knowing exactly what he is doing. The book ends in mutual accusation."
     },
     {
       "id": "book-10",
@@ -199,7 +199,7 @@
       "id": "adam",
       "name": "Adam",
       "role": "The first man",
-      "summary": "He is told the whole truth in advance by an archangel and falls anyway, not from ignorance but from an unwillingness to live without her. Milton is careful about this: Adam is not deceived, which makes his eating the more deliberate act and the harder one to condemn cleanly.",
+      "summary": "An archangel tells him the whole truth in advance and he falls anyway, because he will not live without her; ignorance has nothing to do with it. Milton is careful about this: Adam is not deceived, which makes his eating the more deliberate act and the harder one to condemn cleanly.",
       "clue": "Warned in person, at length, by an angel over dinner, he still swallows the fruit within seconds of learning what she has done.",
       "firstAppearance": "Book IV",
       "traits": [
@@ -239,7 +239,7 @@
       "id": "god-the-father",
       "name": "God the Father",
       "role": "Creator, and the poem's defendant",
-      "summary": "Milton puts him on the stand in Book III and has him argue his own case: the angels and man were made free, freedom that cannot fail is not freedom, and therefore the blame is not his. Readers have found the voice cold ever since, which may be the price of making an argument rather than an atmosphere.",
+      "summary": "Milton puts him on the stand in Book III and has him argue his own case: the angels and man were made free, freedom that cannot fail is not freedom, and therefore the blame is not his. Readers have found the voice cold ever since, which may be the price of making an argument instead of an atmosphere.",
       "firstAppearance": "Book III",
       "traits": [
         "forensic",
@@ -378,7 +378,7 @@
       "id": "sin-and-death",
       "name": "Sin and Death",
       "role": "The keepers of Hell's gate",
-      "summary": "Half allegory and half family, they are Satan's daughter and his son by her, and they guard the door he needs opened. Once the Fall has happened they build a bridge from Hell to earth, which turns a moral idea into a piece of civil engineering.",
+      "summary": "Half allegory and half family, they are Satan's daughter and his son by her, and they guard the door he needs opened. Once the Fall has happened they build a bridge from Hell to earth, and a moral idea becomes a piece of civil engineering.",
       "firstAppearance": "Book II",
       "traits": [
         "allegorical",
@@ -402,7 +402,7 @@
     {
       "id": "freedom",
       "name": "Freedom, foreknowledge and fault",
-      "summary": "The poem's stated purpose is to justify the ways of God to men, and its argument is entirely about liberty: obedience that could not have been withheld would prove nothing, so the possibility of the Fall is the price of everything good in Eden. God knows what will happen and insists this is not the same as causing it.",
+      "summary": "The poem’s stated purpose is to justify the ways of God to men, and its argument is all about liberty: obedience that could not have been withheld would prove nothing, so the possibility of the Fall is the price of everything good in Eden. God knows what will happen and insists this is not the same as causing it.",
       "development": "Set out as doctrine in Book III, dramatised as a marital argument in Book IX, and left with Adam in Book XII as a choice about how to live in a world where the worst has already happened."
     },
     {
@@ -420,19 +420,19 @@
     {
       "id": "gender",
       "name": "Manhood and gender",
-      "summary": "The poem states a hierarchy plainly and then writes scenes that strain against it. Eve is described as made for Adam, and it is Eve who produces the argument nobody refutes, who eats first, and who ends the quarrel after the Fall. Milton's hierarchy is doctrine; his drama keeps handing the initiative to the wrong person.",
-      "development": "Declared in Book IV, accepted by Eve in her own voice, contested in the separation scene of Book IX, and quietly reversed at the end of Book X."
+      "summary": "The poem states a hierarchy plainly and then writes scenes that strain against it. Eve is described as made for Adam, and it is Eve who produces the argument nobody refutes, who eats first, and who ends the quarrel after the Fall. Milton’s hierarchy is doctrine; his drama keeps handing the initiative to the wrong person.",
+      "development": "Declared in Book IV, accepted by Eve in her own voice, contested in the separation scene of Book IX, and reversed without comment at the end of Book X."
     },
     {
       "id": "knowledge",
       "name": "Knowledge and its limits",
-      "summary": "The forbidden tree is a tree of knowledge, and the poem is full of people asking questions they are told not to press: Adam on astronomy, Eve on what the fruit might do, Satan on whether he was created at all. Raphael's answer is not that curiosity is wicked but that some knowledge has no use to the person wanting it.",
-      "development": "Raphael's warning in Book VIII is repeated in the serpent's temptation as its exact inversion — knowledge offered as promotion — and settled in Book XII, where what Adam needs turns out to be practice rather than information."
+      "summary": "The forbidden tree is a tree of knowledge, and the poem is full of people asking questions they are told not to press: Adam on astronomy, Eve on what the fruit might do, Satan on whether he was created at all. Raphael’s answer is that some knowledge is no use to the person who wants it; he does not call curiosity wicked.",
+      "development": "Raphael’s warning in Book VIII comes back in the serpent’s temptation as its exact opposite, knowledge offered as promotion, and is settled in Book XII, where what Adam needs turns out to be practice, not information."
     },
     {
       "id": "exile",
       "name": "Loss, exile and what can be carried out",
-      "summary": "Everyone in the poem has been thrown out of somewhere. The angels lose Heaven, Adam and Eve lose the garden, and Milton — blind, out of favour, on the wrong side of a restored monarchy — writes the loss from the inside. What the ending offers is not the place back but a portable version of it.",
+      "summary": "Everyone in the poem has been thrown out of somewhere. The angels lose Heaven, Adam and Eve lose the garden, and Milton — blind, out of favour, on the wrong side of a restored monarchy — writes the loss from the inside. What the ending offers is a version of paradise they can carry with them.",
       "development": "Hell in Book I is exile as rage; Book IV is exile as homesickness watching other people's happiness; Book XII makes it a journey with a direction, undertaken hand in hand."
     }
   ],
@@ -447,7 +447,7 @@
       "id": "in-medias-res",
       "name": "Beginning in the middle",
       "definition": "Opening an epic after the decisive events, and supplying the earlier history later through a character's narration.",
-      "inThisBook": "The war in Heaven has been over for nine days when the poem starts. Books V to VIII are Raphael filling in the past, which turns exposition into a warning delivered to the two people it concerns."
+      "inThisBook": "The war in Heaven has been over for nine days when the poem starts. Books V to VIII are Raphael filling in the past, so the exposition is a warning delivered to the two people it concerns."
     },
     {
       "id": "epic-simile",
@@ -465,7 +465,7 @@
       "id": "catalogue",
       "name": "Catalogue",
       "definition": "A long list of objects or names used in place of narrative.",
-      "inThisBook": "The roll-call of devils in Book I names them by the gods they will later become in Canaan, Egypt and Greece, so that the list of the defeated is simultaneously a history of idolatry to come."
+      "inThisBook": "The roll-call of devils in Book I names them by the gods they will later become in Canaan, Egypt and Greece, so the list of the defeated is also a history of idolatry to come."
     },
     {
       "id": "allegory",
@@ -503,7 +503,7 @@
       "reference": "Book I",
       "stage": "book-1",
       "context": "The close of the invocation to the heavenly muse.",
-      "analysis": "'Argument' means both the poem's subject and a case put to a court, and Milton takes the second sense seriously enough to have God testify in Book III. 'Justify' is a legal verb: he is not proposing to praise God but to answer a charge, which is a startling thing to promise in a poem's first thirty lines.",
+      "analysis": "‘Argument’ means the poem’s subject and also a case put to a court, and Milton takes the second sense seriously enough to have God testify in Book III. ‘Justify’ is a legal verb: he is proposing to answer a charge, which is a startling thing to promise in a poem’s first thirty lines.",
       "themes": [
         "freedom"
       ],
@@ -545,7 +545,7 @@
       "reference": "Book I",
       "stage": "book-1",
       "context": "Satan's first speech to Beelzebub on the burning lake.",
-      "analysis": "Read the list rather than the tone: an unconquerable will, a course of study in revenge, and hate described as immortal. Three of the four items are heroic virtues and one is simply a refusal to stop, and the speech works on the reader exactly as it works on the legions — by sounding like resolve before it can be inspected as a programme.",
+      "analysis": "Read the list, not the tone: an unconquerable will, a course of study in revenge, and hate described as immortal. Three of the four items are heroic virtues and one is simply a refusal to stop, and the speech works on the reader exactly as it works on the legions — by sounding like resolve before it can be inspected as a programme.",
       "themes": [
         "rhetoric",
         "power"
@@ -704,7 +704,7 @@
       "reference": "Book III",
       "stage": "book-3",
       "context": "The invocation opening Book III, as the poem leaves Hell for Heaven.",
-      "analysis": "A blind man greets the one thing he cannot have, and the greeting is a formal salutation rather than a lament. The passage that follows turns the poem's structure into biography: he has just come up out of darkness in the narrative, and has not come up out of it at all.",
+      "analysis": "A blind man greets the one thing he cannot have, and the greeting is a formal salutation, not a lament. The passage that follows makes the poem’s structure into biography: he has just come up out of darkness in the story, and has not come up out of it at all.",
       "themes": [
         "knowledge",
         "exile"
@@ -772,7 +772,7 @@
       "reference": "Book IV",
       "stage": "book-4",
       "context": "Alone on Mount Niphates, in sight of Eden, before entering the garden.",
-      "analysis": "This is the answer to his own boast in Book I: the mind being its own place is the trap, not the escape. The geometry is the frightening part — a lowest deep that keeps opening a lower one means there is no floor, and Milton gives the idea in four monosyllables before the sentence stops.",
+      "analysis": "This is the answer to his own boast in Book I: the mind being its own place is the trap, not the escape. The geometry is the frightening part: a lowest deep that opens on a lower one means there is no floor, and Milton gives the idea in four monosyllables before the sentence stops.",
       "themes": [
         "exile",
         "power"
@@ -819,7 +819,7 @@
       "reference": "Book IV",
       "stage": "book-4",
       "context": "The narrator's first description of Adam and Eve, seen through Satan's eyes.",
-      "analysis": "The doctrine is stated in the most memorable line available, with the parallel structure doing the work of proof. It is worth noticing who is looking: the description is placed inside Satan's field of view, and the poem's own drama spends five more books quietly declining to behave as the line prescribes.",
+      "analysis": "The doctrine is stated in the most memorable line available, with the parallel structure doing the work of proof. Notice who is looking: the description is placed inside Satan’s view, and the poem’s own drama spends five more books declining to behave as the line prescribes.",
       "themes": [
         "gender",
         "power"
@@ -893,7 +893,7 @@
       "reference": "Book IV",
       "stage": "book-4",
       "context": "Satan, discovered in the garden, faced down by the young angel Zephon.",
-      "analysis": "The verb comes first and the subject second, so the shame arrives before the person it belongs to. 'Awful' still means awe-producing here, and the moment matters because it is the one place where Satan is shown recognising good as attractive rather than as an obstacle — and then walking on.",
+      "analysis": "The verb comes first and the subject second, so the shame arrives before the person it belongs to. ‘Awful’ still means awe-inspiring here, and the moment matters because it is the one place where Satan is shown finding good attractive, and then walking on.",
       "themes": [
         "power",
         "rhetoric"
@@ -964,7 +964,7 @@
       "reference": "Book VIII",
       "stage": "book-8",
       "context": "Raphael closing down Adam's questions about the motion of the heavens.",
-      "analysis": "'Lowly wise' is not an instruction to be ignorant but to be wise about the right things, and the test of it is that the angel has just spent three books answering questions. The serpent will offer Adam's wife the exact opposite bargain — knowledge as promotion — and the phrasing of this warning is what makes the offer recognisable.",
+      "analysis": "‘Lowly wise’ means wise about the right things, not ignorant, and the proof is that the angel has just spent three books answering questions. The serpent will offer Adam's wife the exact opposite bargain — knowledge as promotion — and the phrasing of this warning is what makes the offer recognisable.",
       "themes": [
         "knowledge",
         "freedom"
@@ -1088,7 +1088,7 @@
       "reference": "Book XI",
       "stage": "book-11",
       "context": "Michael answering Adam, after the vision of the lazar-house of diseases.",
-      "analysis": "Adam has just asked how to meet death and been shown every way it arrives. The answer refuses both available postures, clinging and despair, and puts the emphasis on an adverb: the question is not the length of the life but the manner of it, which is the first piece of advice in the poem that applies to a reader.",
+      "analysis": "Adam has just asked how to meet death and been shown every way it arrives. The answer rejects both obvious postures, clinging and despair, and puts the weight on an adverb: what matters is the manner of the life, not its length, the first piece of advice in the poem that applies to a reader.",
       "themes": [
         "exile",
         "freedom"
@@ -1113,7 +1113,7 @@
       "reference": "Book XII",
       "stage": "book-12",
       "context": "Michael's summary of what Adam is to add to his knowledge before leaving.",
-      "analysis": "The offer is comparative — happier far — which is a startling thing to say to a man being evicted from the best place there has ever been. The list that leads up to it is all practice rather than information: faith, virtue, patience, temperance, love. Paradise becomes something done, not somewhere lived.",
+      "analysis": "The offer is comparative — happier far — which is a startling thing to say to a man being evicted from the best place there has ever been. The list that leads up to it is all practice: faith, virtue, patience, temperance, love. Paradise becomes something done, not somewhere lived.",
       "themes": [
         "exile",
         "knowledge"
@@ -1137,7 +1137,7 @@
       "reference": "Book XII",
       "stage": "book-12",
       "context": "The last four lines of the poem.",
-      "analysis": "Every phrase pulls two ways at once: a whole world to choose from and nowhere in particular to go; guided, and wandering; hand in hand, and solitary. Milton refuses either a triumph or a lament, and the final rhythm — slow, with a caesura in each of the last two lines — makes the reader walk out at their pace.",
+      "analysis": "Every phrase pulls two ways: a whole world to choose from and nowhere in particular to go; guided, and wandering; hand in hand, and solitary. Milton refuses either a triumph or a lament, and the final rhythm — slow, with a caesura in each of the last two lines — makes the reader walk out at their pace.",
       "themes": [
         "exile",
         "freedom"
@@ -1220,7 +1220,7 @@
     {
       "year": 1688,
       "label": "Tonson's illustrated folio",
-      "detail": "The first grand edition, published by subscription, which established the poem as a national monument rather than a recent book.",
+      "detail": "The first grand edition, published by subscription, which made the poem a national monument.",
       "kind": "reception"
     },
     {
@@ -1282,12 +1282,12 @@
     {
       "position": "The political reading: a defeated republican writing after the Restoration",
       "summary": "Milton wrote for a revolution, served its government, and finished the poem under the monarchy it had killed. Read this way, the questions of who deserves to rule, what service means and how a lone dissenter behaves are not decoration.",
-      "counter": "The parallels do not line up neatly: the poem's rebel against a monarch is Satan, which makes any simple mapping of Milton's politics onto the plot collapse at once."
+      "counter": "The parallels do not line up neatly: the poem’s rebel against a monarch is Satan, which wrecks any simple mapping of Milton’s politics onto the plot."
     },
     {
       "position": "Feminist readings of Eden",
       "summary": "Criticism since the 1970s has examined the gap between the hierarchy the poem asserts and the initiative it repeatedly gives to Eve — the strongest argument in Book IX is hers, and so is the first step towards reconciliation in Book X.",
-      "counter": "The poem also gives her the fall, and states the subordination in its own narrating voice rather than leaving it to a character."
+      "counter": "The poem also gives her the fall, and states her subordination in its own narrating voice, not only through a character."
     }
   ],
   "essayQuestions": [

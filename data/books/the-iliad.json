@@ -14,7 +14,7 @@
   "difficulty": 4,
   "lengthNote": "A poem of about 15,700 lines of Greek hexameter verse in twenty-four books, nearly a third as long again as the Odyssey. Butler translates it into continuous English prose, so it reads like a novel, but it is recorded here as a poem because that is what Homer made.",
   "openingLine": "Sing, O goddess, the anger of Achilles son of Peleus, that brought countless ills upon the Achaeans.",
-  "summary": "The most famous war poem ever made leaves out the war's beginning and its end. It covers some fifty days in the tenth year of the siege of Troy, and its subject, named in its first line, is one man's anger. Achilles, publicly shamed by his commander over a captive woman, withdraws from the fighting and asks the gods to let his own side be beaten until they beg for him. They are beaten, and the price is his closest friend. His anger then turns on Hector, the Trojan prince who killed Patroclus, and the poem follows it through a river choked with bodies to the point where it burns out. The last book is not a victory but a supper: the old king of Troy kisses the hands that killed his son, and the man who killed him weeps with him.",
+  "summary": "The most famous war poem ever made leaves out the war's beginning and its end. It covers some fifty days in the tenth year of the siege of Troy, and its subject, named in its first line, is one man's anger. Achilles, publicly shamed by his commander over a captive woman, withdraws from the fighting and asks the gods to let his own side be beaten until they beg for him. They are beaten, and the price is his closest friend. His anger then turns on Hector, the Trojan prince who killed Patroclus, and the poem follows it through a river choked with bodies to the point where it burns out. The last book ends with a supper, and no victory: the old king of Troy kisses the hands that killed his son, and the man who killed him weeps with him.",
   "referenceStyle": "book — Butler's prose translation carries no line numbers, so quotations are placed by book alone (Book 1 to Book 24)",
   "sourceText": {
     "label": "Samuel Butler's prose translation of the Iliad (1898), Project Gutenberg eBook 2199",
@@ -122,7 +122,7 @@
       "id": "achilles",
       "name": "Achilles",
       "role": "Son of Peleus and the sea-goddess Thetis, the best fighter at Troy",
-      "summary": "He knows two things the other heroes can only suspect: that he will die young if he stays, and that the honour he is dying for can be taken from him by a worse man with a bigger army. The poem is about what that knowledge does to him. His anger is justified in Book 1, excessive by Book 9, catastrophic in Book 16 and monstrous in Book 22, and it ends not in triumph but in a meal shared with his enemy's father.",
+      "summary": "He knows two things the other heroes can only suspect: that he will die young if he stays, and that the honour he is dying for can be taken from him by a worse man with a bigger army. The poem is about what that knowledge does to him. His anger is justified in Book 1, excessive by Book 9, catastrophic in Book 16 and monstrous in Book 22, and it ends in a meal shared with his enemy’s father.",
       "clue": "He refuses a king's fortune in Book 9 and accepts an old man's ransom in Book 24.",
       "firstAppearance": "Book 1",
       "traits": ["proud", "clear-sighted", "implacable"],
@@ -140,7 +140,7 @@
       "id": "hector",
       "name": "Hector",
       "role": "Eldest son of Priam and the chief defender of Troy",
-      "summary": "The poem's most sympathetic fighter is on the losing side, and it gives him what it never gives Achilles: a wife, a baby and a city of people who depend on him. He knows Troy will fall and fights anyway, from shame rather than hope. His judgement slips as his success grows. He overrules sound advice, puts on the armour he stripped from Patroclus, and when Achilles finally comes for him, he runs.",
+      "summary": "The poem's most sympathetic fighter is on the losing side, and it gives him what it never gives Achilles: a wife, a baby and a city of people who depend on him. He knows Troy will fall and fights anyway, out of shame and without hope. His judgement slips as his success grows. He overrules sound advice, puts on the armour he stripped from Patroclus, and when Achilles finally comes for him, he runs.",
       "clue": "He takes off his helmet so that his baby son will stop crying, and dies wearing armour stripped from a man he killed.",
       "firstAppearance": "Book 2",
       "traits": ["dutiful", "tender", "overconfident"],
@@ -171,7 +171,7 @@
       "id": "patroclus",
       "name": "Patroclus",
       "role": "Achilles' companion and squire, son of Menoetius",
-      "summary": "He is the gentlest man in the Greek camp — Briseis remembers him as the one who told her not to weep — and the poem makes him the price of Achilles' anger. Sent out in borrowed armour to frighten the Trojans away from the ships, he forgets his orders and chases them to the walls. The narrator speaks to him directly as he goes, as if he could still be warned.",
+      "summary": "He is the gentlest man in the Greek camp — Briseis remembers him as the one who told her not to weep — and he is the one who dies for Achilles’ anger. Sent out in borrowed armour to frighten the Trojans away from the ships, he forgets his orders and chases them to the walls. The narrator speaks to him directly as he goes, as if he could still be warned.",
       "clue": "He came to Achilles' father as a child refugee, after killing another boy in a quarrel over dice.",
       "firstAppearance": "Book 1",
       "traits": ["gentle", "loyal", "reckless in victory"],
@@ -228,7 +228,7 @@
       "name": "Paris (Butler's Alexandrus)",
       "role": "Son of Priam, whose seizure of Helen began the war",
       "summary": "Beautiful, capable and absent whenever it matters. He challenges the best of the Greeks and then shrinks from Menelaus, and Aphrodite lifts him out of the duel to his bed. The poem does not simply despise him: he takes Hector's rebukes gracefully, fights well enough when he chooses, and is named in Hector's dying words as the man who will kill Achilles.",
-      "clue": "Told off by his brother, he agrees at once, then asks him to wait while he puts his armour on.",
+      "clue": "Told off by his brother, he agrees straight away, then asks him to wait while he puts his armour on.",
       "firstAppearance": "Book 3",
       "traits": ["charming", "careless", "unashamed"],
       "relationships": [
@@ -253,7 +253,7 @@
       "id": "zeus",
       "name": "Zeus (Butler's Jove)",
       "role": "King of the gods",
-      "summary": "He has promised Thetis to honour Achilles, and he keeps his word at the cost of thousands of lives. He also feels pity — for Hector, for his own son Sarpedon, for Achilles' horses — and in each case lets the pity go. His golden scales weigh out deaths he could apparently prevent and chooses not to. The poem's highest power is capable of sympathy and unwilling to spend it.",
+      "summary": "He has promised Thetis to honour Achilles, and he keeps his word, though it costs thousands of lives. He also feels pity — for Hector, for his own son Sarpedon, for Achilles' horses — and in each case lets the pity go. His golden scales weigh out deaths he could apparently prevent and chooses not to. The poem's highest power is capable of sympathy and unwilling to spend it.",
       "clue": "He nods, and Olympus reels; he weighs two fates, and one sinks.",
       "firstAppearance": "Book 1",
       "traits": ["sovereign", "compassionate", "detached"],
@@ -295,7 +295,7 @@
     {
       "id": "anger",
       "name": "The anger of Achilles",
-      "summary": "The poem announces its subject in its first word, and the word means a lasting, almost divine rage rather than a burst of temper. It is justified at first: Achilles has been publicly robbed. The poem's interest is in what happens when a just grievance outlives its cause, becomes a pleasure in itself, and is transferred, when Patroclus dies, from a commander to an enemy.",
+      "summary": "The poem announces its subject in its first word, and the word means a lasting, almost divine rage, far more than a burst of temper. It is justified at first: Achilles has been publicly robbed. The poem's interest is in what happens when a just grievance outlives its cause, becomes a pleasure in itself, and is transferred, when Patroclus dies, from a commander to an enemy.",
       "development": "Provoked in Book 1, hardened into refusal in Book 9, released on Hector from Book 18, glutted at the river in Book 21 and on Hector's corpse in Book 22, and exhausted, not conquered, in Book 24."
     },
     {
@@ -319,7 +319,7 @@
     {
       "id": "home",
       "name": "Home, and the city behind the wall",
-      "summary": "The Greeks are far from home and the Trojans are fighting in front of theirs, and the poem keeps showing what the war is being fought across: washing-troughs where women did laundry in peacetime, a baby frightened by a helmet, a bath heating for a man already dead. Achilles gives up his homecoming for glory. Hector dies within sight of his.",
+      "summary": "The Greeks are far from home and the Trojans are fighting in front of theirs, and again and again the poem shows what the war is being fought across: washing-troughs where women did laundry in peacetime, a baby frightened by a helmet, a bath heating for a man already dead. Achilles gives up his homecoming for glory. Hector dies within sight of his.",
       "development": "Hector's visit to the city in Book 6, Achilles' choice between Phthia and fame in Book 9, the lost peace of the springs in Book 22, and the body brought home through the gates in Book 24."
     },
     {
@@ -331,7 +331,7 @@
     {
       "id": "gender",
       "name": "Prizes, captives and mourners",
-      "summary": "In a poem about men at war, women are the prizes the quarrel is about, the captives the sack of a city produces, and the mourners who have the last word. The heroes send their wives back to the loom; the poem keeps following them there. Andromache, Hecuba, Helen and Briseis speak its most searching lines about what the fighting is for.",
+      "summary": "In a poem about men at war, women are the prizes the quarrel is about, the captives the sack of a city produces, and the mourners who have the last word. The heroes send their wives back to the loom, and the poem follows them there. Andromache, Hecuba, Helen and Briseis speak its most searching lines about what the fighting is for.",
       "development": "Briseis led away in Book 1, Helen weaving the war in Book 3, Andromache at the gate in Book 6, the captive women's double mourning in Book 19, and the three formal laments that end Book 24."
     }
   ],
@@ -340,7 +340,7 @@
       "id": "invocation",
       "name": "Invocation",
       "definition": "An opening address to a muse or god, asking for the song and announcing its subject.",
-      "inThisBook": "The goddess is asked to sing 'the anger of Achilles', and the invocation plunges straight into the tenth year of the war with the quarrel already under way. Nothing of the ten years before is narrated. The poem calls on the Muses again before the catalogue of ships in Book 2, and at later crises, when it needs names and numbers rather than inspiration."
+      "inThisBook": "The goddess is asked to sing 'the anger of Achilles', and the invocation plunges straight into the tenth year of the war with the quarrel already under way. Nothing of the ten years before is narrated. The poem calls on the Muses again before the catalogue of ships in Book 2, and at later crises, when what it needs is names and numbers, more than inspiration."
     },
     {
       "id": "epithets",
@@ -392,7 +392,7 @@
       "reference": "Book 1",
       "stage": "books-1-4",
       "context": "The opening of the poem.",
-      "analysis": "The first noun is anger, and the sentence cares about its consequences rather than its cause: souls sent to Hades, bodies left for dogs and vultures. That last threat is not decoration. Whether a corpse is buried or eaten becomes the question the whole poem turns on, up to the ransoming of Hector. And 'the counsels of Jove' are fulfilled through this anger: the first sentence already puts a god's plan and a man's temper inside the same machine.",
+      "analysis": "The first noun is anger, and the sentence is interested in its consequences, not its cause: souls sent to Hades, bodies left for dogs and vultures. That last threat is not decoration. Whether a corpse is buried or eaten becomes the question the whole poem turns on, up to the ransoming of Hector. And 'the counsels of Jove' are fulfilled through this anger: the first sentence already puts a god's plan and a man's temper inside the same machine.",
       "themes": ["anger", "mortality", "fate"],
       "techniques": ["invocation", "epithets"],
       "characters": ["achilles", "zeus"],
@@ -489,7 +489,7 @@
       "reference": "Book 6",
       "stage": "books-5-8",
       "context": "Hector's last words to Andromache before he goes back to the fighting.",
-      "analysis": "Andromache has just given him sound advice about the weak point in the wall, and he answers by sending her to her loom. The sentence is a formula: the Odyssey gives it almost word for word to Telemachus, with 'war' changed to 'speech'. Here it is tender rather than rude, since he has just told her not to grieve before her time, but it draws the line the poem keeps. Men decide; women mourn the decisions. Book 24 gives the women the last word.",
+      "analysis": "Andromache has just given him sound advice about the weak point in the wall, and he answers by sending her to her loom. The sentence is a formula: the Odyssey gives it almost word for word to Telemachus, with 'war' changed to 'speech'. Here it is tender, not rude, since he has just told her not to grieve before her time, but it draws the line the poem holds to throughout. Men decide; women mourn the decisions. Book 24 gives the women the last word.",
       "themes": ["gender", "honour"],
       "techniques": ["epithets"],
       "characters": ["hector", "andromache"],
@@ -559,7 +559,7 @@
       "reference": "Book 16",
       "stage": "books-13-16",
       "context": "The Trojans are setting fire to the Greek ships. Patroclus comes to Achilles in tears and begs to be allowed to fight.",
-      "analysis": "Patroclus disowns Achilles' parents on his behalf: no man and no goddess could have produced this, only rocks and the sea. It is the harshest thing said to Achilles by anyone who loves him, and it works where the embassy's gifts did not. Achilles gives way — not by fighting, but by lending his armour. The cruelty Patroclus names here is the quality that will make Achilles' revenge for him so terrible.",
+      "analysis": "Patroclus disowns Achilles' parents on his behalf: no man and no goddess could have produced this, only rocks and the sea. It is the harshest thing said to Achilles by anyone who loves him, and it works where the embassy's gifts did not. Achilles gives way: he lends his armour and stays out of the fighting. The cruelty Patroclus names here is the quality that will make Achilles' revenge for him so terrible.",
       "themes": ["anger"],
       "techniques": [],
       "characters": ["patroclus", "achilles", "thetis"],
@@ -626,7 +626,7 @@
       "speaker": "Agamemnon",
       "reference": "Book 19",
       "stage": "books-17-20",
-      "context": "At the formal reconciliation, Agamemnon speaks from his place rather than stepping into the middle of the assembly.",
+      "context": "At the formal reconciliation, Agamemnon speaks from his place, without stepping into the middle of the assembly.",
       "analysis": "Agamemnon apologises by explaining that he is not to blame, and goes on to tell a long story about Folly deceiving Zeus himself. In the poem's theology this is not simply an excuse: gods do cloud men's minds. But it is convenient, and it is addressed to an army that has paid for his mistake with its dead. The Odyssey opens with Zeus complaining about precisely this kind of speech.",
       "themes": ["fate"],
       "techniques": [],
@@ -708,7 +708,7 @@
       "reference": "Book 24",
       "stage": "books-21-24",
       "context": "The end of Priam's plea, after he has asked Achilles to think of his own old father, Peleus.",
-      "analysis": "Priam rests his claim to pity on an act rather than a loss: he has done what no man has done before. The last clause holds the whole horror of the scene — a father's lips on the hand that killed his son. It also mirrors the poem's opening, where another old father, Chryses, came to the Greek camp with ransom for his child and was sent roughly away. This time the ransom is taken, and the father is fed.",
+      "analysis": "Priam rests his claim to pity on an act, not a loss: he has done what no man has done before. The last clause holds the whole horror of the scene — a father's lips on the hand that killed his son. It also mirrors the poem's opening, where another old father, Chryses, came to the Greek camp with ransom for his child and was sent roughly away. This time the ransom is taken, and the father is fed.",
       "themes": ["hospitality", "home"],
       "techniques": ["patterned-scenes"],
       "characters": ["priam", "achilles"],
@@ -722,7 +722,7 @@
       "reference": "Book 24",
       "stage": "books-21-24",
       "context": "After the two men have wept together, Achilles raises Priam from the ground and tells him to sit.",
-      "analysis": "The youngest great man at Troy offers the oldest a philosophy, and it is not a comforting one. Zeus gives some men a mixture and some men only evil; nobody receives only good. Achilles applies it at once to Peleus and to Priam, which is the point: the speech is how he comes to see his enemy's father as his own. Grief is shared by everyone. Justice is not on offer.",
+      "analysis": "The youngest great man at Troy offers the oldest a philosophy, and it is not a comforting one. Zeus gives some men a mixture and some men only evil; nobody receives only good. Achilles applies it to Peleus and to Priam together, which is the point: the speech is how he comes to see his enemy’s father as his own. Grief is shared by everyone. Justice is not on offer.",
       "themes": ["fate", "mortality", "hospitality"],
       "techniques": ["symbolic-objects"],
       "characters": ["achilles", "priam"],
@@ -735,7 +735,7 @@
       "reference": "Book 24",
       "stage": "books-21-24",
       "context": "The last sentence of the poem, after Hector's bones have been gathered into a golden urn and buried under a barrow.",
-      "analysis": "A poem that began with the anger of Achilles ends with the funeral of the man he killed, and gives Hector the plainest of his fixed epithets, one that belongs to peacetime skill rather than battle. The fall of Troy, which everyone knows is coming, is left out. The poem stops at the one thing its first sentence feared would be denied: a body properly burned, mourned and buried.",
+      "analysis": "A poem that began with the anger of Achilles ends with the funeral of the man he killed, and gives Hector the plainest of his fixed epithets, one that belongs to peacetime skill, not battle. The fall of Troy, which everyone knows is coming, is left out. The poem stops at the one thing its first sentence feared would be denied: a body properly burned, mourned and buried.",
       "themes": ["mortality", "honour"],
       "techniques": ["epithets"],
       "characters": ["hector"],
@@ -870,7 +870,7 @@
   "criticalViews": [
     {
       "position": "A poem against war",
-      "summary": "On this reading the Iliad's sympathies lie with the victims. It gives nameless spearmen fathers and fields they will never see again, fills its battles with similes of peacetime work, lets the Trojans be as human as the Greeks, and ends not in victory but in lament. Its real subject is force, and what force does to the people who use it as well as to those it destroys.",
+      "summary": "On this reading the Iliad's sympathies lie with the victims. It gives nameless spearmen fathers and fields they will never see again, fills its battles with similes of peacetime work, lets the Trojans be as human as the Greeks, and ends in lament, not victory. Its real subject is force, and what force does to the people who use it as well as to those it destroys.",
       "counter": "The poem also relishes killing, describing wounds with a connoisseur's precision, and its heroes want nothing more than glory won in battle. It never imagines a world without war: even the shield, its picture of civil life, has a city under siege on it. Pity and delight in prowess sit side by side, and neither cancels the other."
     },
     {
@@ -879,7 +879,7 @@
       "counter": "Achilles in Book 24 is still dangerous: he warns Priam not to provoke him in case he kills him, and he gives up the body partly because the gods have ordered it. The truce lasts eleven days and Troy will still burn. It may be truer to say the poem shows a moment of understanding than a changed man."
     },
     {
-      "position": "The work of a tradition rather than an author",
+      "position": "The work of a tradition, not an author",
       "summary": "The repeated epithets and whole repeated scenes, the loose ends and inconsistencies, point to poetry composed in performance and built up by generations of singers. On this view there is no single author in the modern sense, and parts of the poem — Book 10, the night raid, has been suspected since ancient times — may be later additions to an older core.",
       "counter": "Whatever the tradition behind it, the poem's large design argues for one controlling intelligence. The mirroring of Books 1 and 24, the long foreshadowing of Patroclus's death from Book 11, and the passing of Achilles' armour from body to body are architecture, not accumulation."
     }
@@ -890,7 +890,7 @@
       "focus": "Honour, compensation and the limits of the heroic code",
       "plan": [
         "Set out the offence in Book 1: honour in this poem is a prize won in public, so taking Briseis is a public stripping of status, not a private slight.",
-        "Weigh the offer. It is enormous, but Odysseus has quietly left out Agamemnon's demand that Achilles yield to him as the kinglier man, and Achilles' hatred of a man who 'hides another in his heart' may be a response to that.",
+        "Weigh the offer. It is enormous, but Odysseus has left out Agamemnon’s demand that Achilles yield to him as the kinglier man, and Achilles’ hatred of a man who ‘hides another in his heart’ may be a response to that.",
         "Examine the argument of the refusal: if coward and hero are honoured alike, and life cannot be bought back, the whole exchange of risk for reward is exposed.",
         "Count the cost. Phoenix's warning and Patroclus's reproach in Book 16 show others paying for Achilles' principle, and his own words in Book 18 admit the anger was a pleasure.",
         "Conclude by comparing Book 24, where he accepts a ransom he could refuse. Consider whether the poem judges him wrong to refuse in Book 9, or wrong only in what he did next."
@@ -923,7 +923,7 @@
       "focus": "Extended simile and the world beyond the battlefield",
       "plan": [
         "Explain the form: a comparison developed into a small scene of its own, often drawn from farming, weather, hunting or family life.",
-        "Take Glaucus's leaves in Book 6 as a simile that turns a battlefield boast into a meditation on mortality.",
+        "Take Glaucus’s leaves in Book 6, a simile in which a battlefield boast becomes a meditation on mortality.",
         "Show how similes bring peacetime into war: the washing-troughs beside the springs in Book 22 and the scenes of harvest and dancing on the shield work in the same way.",
         "Analyse the reversed simile in Book 24, where Priam is compared to a murderer seeking refuge, and link it to Patroclus's history.",
         "Conclude that the similes are where the poem's sympathy is most visible, while noting that many similes also glorify the killer as a lion or a fire."
@@ -936,7 +936,7 @@
     "The narrator speaks directly to Patroclus as he goes to his death. How does that change your experience of the scene?",
     "Zeus pities Hector, Sarpedon and even Achilles' horses, and saves none of them. What kind of gods does this poem believe in?",
     "Is the meeting of Priam and Achilles in Book 24 a reconciliation, or only a pause before Troy burns?",
-    "The poem ends with Hector's funeral rather than the fall of Troy. Why stop there?"
+    "The poem ends with Hector’s funeral, not the fall of Troy. Why stop there?"
   ],
   "related": [
     {

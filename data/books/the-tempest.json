@@ -14,7 +14,7 @@
   "difficulty": 3,
   "lengthNote": "Around 2,000 lines — one of the shortest plays in the Folio",
   "openingLine": "Boatswain!",
-  "summary": "A magician who was once Duke of Milan raises a storm to bring his enemies ashore on the island where he has lived in exile for twelve years. He has the whole afternoon planned before the play begins, and the interest lies in watching a man with absolute power discover what he actually wants to do with it. Almost alone among Shakespeare's plays it keeps to a single place and a few hours, so that the action and the performance take roughly the same time.",
+  "summary": "A magician who was once Duke of Milan raises a storm to bring his enemies ashore on the island where he has lived in exile for twelve years. He has the whole afternoon planned before the play begins, and the interest lies in watching a man with absolute power discover what he actually wants to do with it. Almost alone among Shakespeare’s plays it stays in a single place over a few hours, so the action and the performance take roughly the same time.",
   "referenceStyle": "act.scene.line, Globe/Moby line numbering",
   "sourceText": {
     "label": "Globe/Moby text of The Tempest",
@@ -23,7 +23,7 @@
   "atAGlance": [
     { "label": "Written", "value": "c. 1610-11", "note": "After reports of the 1609 Sea Venture wreck reached London, and before the recorded court performance of November 1611." },
     { "label": "First printed", "value": "1623", "note": "No quarto exists. The First Folio prints it first in the volume, at the head of the comedies." },
-    { "label": "Sources", "value": "No single narrative source", "note": "Shipwreck pamphlets, Florio's Montaigne, Ovid and the court masque, combined rather than adapted." },
+    { "label": "Sources", "value": "No single narrative source", "note": "Shipwreck pamphlets, Florio’s Montaigne, Ovid and the court masque, combined, with no single source followed." },
     { "label": "Shape", "value": "Five acts, nine scenes", "note": "Act I Scene 2 alone runs to about a third of the play." }
   ],
   "structure": [
@@ -82,7 +82,7 @@
       "id": "prospero",
       "name": "Prospero",
       "role": "The exiled Duke of Milan, and the island's magician",
-      "summary": "He lost a dukedom by preferring his library to government and has spent twelve years acquiring a power no government could match. Almost every event in the play is something he has arranged, which makes the one decision he has not rehearsed — to forgive rather than punish — the only genuine action in it.",
+      "summary": "He lost a dukedom by preferring his library to government and has spent twelve years acquiring a power no government could match. Almost every event in the play is something he has arranged, which makes the one decision he has not rehearsed — to forgive, when he could punish — the only genuine action in it.",
       "clue": "A scholar who lost a dukedom to his own reading, and who runs an island the way a director runs a rehearsal room, down to the storm.",
       "firstAppearance": "1.2",
       "traits": ["controlling", "learned", "unforgiving until he is not"],
@@ -97,7 +97,7 @@
       "id": "miranda",
       "name": "Miranda",
       "role": "Prospero's daughter, aged about fifteen",
-      "summary": "She has met three people in her life and remembers none of her own history until her father decides she should. Her instincts are consistently better than his: she pities the shipwrecked before she knows who they are, and she proposes marriage herself rather than waiting to be arranged into it.",
+      "summary": "She has met three people in her life and remembers none of her own history until her father decides she should. Her instincts are consistently better than his: she pities the shipwrecked before she knows who they are, and she proposes marriage herself before anyone can arrange it for her.",
       "clue": "She has seen three human faces in her life, weeps for strangers drowning, and asks a log-carrier to marry her before he can ask her.",
       "firstAppearance": "1.2",
       "traits": ["compassionate", "direct", "kept ignorant"],
@@ -124,7 +124,7 @@
       "id": "caliban",
       "name": "Caliban",
       "role": "Son of the witch Sycorax; the island's earlier inhabitant",
-      "summary": "He welcomed Prospero, showed him the fresh water and the fertile ground, and was enslaved for it after attempting to rape Miranda. The play gives him the case against his master and the best verse about the island, and then refuses to let either cancel the other out.",
+      "summary": "He welcomed Prospero, showed him the fresh water and the fertile ground, and was enslaved for it after attempting to rape Miranda. The play gives him the case against his master and the best verse about the island, and then does not let either cancel the other out.",
       "clue": "He showed the newcomer where the fresh springs were and has been carrying his firewood ever since; he speaks the loveliest lines about the island he says is his.",
       "firstAppearance": "1.2",
       "traits": ["dispossessed", "eloquent", "dangerous"],
@@ -176,7 +176,7 @@
       "id": "sebastian",
       "name": "Sebastian",
       "role": "Alonso's brother",
-      "summary": "A mocker of other men's speeches who turns out to need only one conversation to be talked into killing his sleeping brother. He is the proof that Antonio's crime was not a single aberration but a piece of ordinary political reasoning.",
+      "summary": "A mocker of other men's speeches who turns out to need only one conversation to be talked into killing his sleeping brother. He is the proof that Antonio’s crime was a piece of ordinary political reasoning, and no single aberration.",
       "firstAppearance": "1.1",
       "traits": ["sardonic", "easily led"],
       "relationships": [
@@ -251,13 +251,13 @@
     {
       "id": "exposition",
       "name": "Retrospective exposition",
-      "definition": "Putting the backstory into a single long scene of telling rather than showing.",
+      "definition": "Putting the backstory into a single long scene of telling, not showing.",
       "inThisBook": "Act I Scene 2 is nearly a third of the play and consists largely of Prospero explaining the past to people who interrupt him. Because he controls what is told and when, the exposition is also a demonstration of his character."
     },
     {
       "id": "masque",
       "name": "The court masque",
-      "definition": "A courtly entertainment of gods, song, dance and blessing, staged for an occasion rather than a plot.",
+      "definition": "A courtly entertainment of gods, song, dance and blessing, staged for an occasion, with little plot.",
       "inThisBook": "The betrothal masque of 4.1 imports an entire Jacobean art form into the play and then breaks it off in the middle, which no masque at court would ever have done."
     },
     {
@@ -307,7 +307,7 @@
       "reference": "1.2.1",
       "stage": "act-1",
       "context": "Her first words in the play, watching the wreck from the shore.",
-      "analysis": "She knows at once that the storm is her father's doing, which tells the audience more about the household than any description could. The conditional 'if' is politeness rather than doubt, and the sentence ends in an imperative: the only person on the island who gives Prospero orders is fifteen.",
+      "analysis": "She knows immediately that the storm is her father’s doing, which tells the audience more about the household than any description could. The conditional ‘if’ is politeness, not doubt, and the sentence ends in an imperative: the only person on the island who gives Prospero orders is fifteen.",
       "themes": ["art", "power"],
       "techniques": ["exposition"],
       "characters": ["miranda", "prospero"],
@@ -349,7 +349,7 @@
       "reference": "1.2.282",
       "stage": "act-1",
       "context": "After performing the storm, before being sent out again.",
-      "analysis": "The complaint is contractual rather than emotional: work has been done, a promise was made, the promise is outstanding. Prospero's answer is to recite the rescue from the cloven pine, which is the standard reply of an employer who would rather discuss gratitude than terms.",
+      "analysis": "The complaint is contractual, not emotional: work has been done, a promise was made, the promise is outstanding. Prospero's answer is to recite the rescue from the cloven pine, which is the standard reply of an employer who would rather discuss gratitude than terms.",
       "themes": ["freedom", "power"],
       "techniques": [],
       "characters": ["ariel", "prospero"],
@@ -377,7 +377,7 @@
       "reference": "1.2.425",
       "stage": "act-1",
       "context": "The end of his argument with Prospero and Miranda about his education.",
-      "analysis": "The complaint is delivered in fluent blank verse, which quietly contradicts it: he has plainly got more from the lessons than curses. 'Profit' is a merchant's word, and 'learning' here means teaching — the exchange is being audited, and the pupil finds it a bad bargain.",
+      "analysis": "The complaint is delivered in fluent blank verse, which contradicts it: he has plainly got more from the lessons than curses. ‘Profit’ is a merchant’s word, and ‘learning’ here means teaching — the exchange is being audited, and the pupil finds it a bad bargain.",
       "themes": ["possession", "nature-nurture"],
       "techniques": [],
       "characters": ["caliban", "prospero", "miranda"],
@@ -391,7 +391,7 @@
       "reference": "1.2.461",
       "stage": "act-1",
       "context": "Sung invisibly to Ferdinand, who believes his father has drowned.",
-      "analysis": "The song tells a lie — Alonso is alive — in the gentlest possible form, turning a corpse into jewellery so that grief arrives already consoled. 'Sea-change' enters English here, and the whole lyric is an argument that loss can be transformation, which is the claim the last act will have to make good.",
+      "analysis": "The song tells a lie — Alonso is alive — in the gentlest possible form: the corpse becomes jewellery, so grief arrives already consoled. ‘Sea-change’ enters English here, and the whole lyric argues that loss can be transformation, which is the claim the last act will have to make good.",
       "themes": ["art", "forgiveness"],
       "techniques": ["song"],
       "characters": ["ariel", "ferdinand", "alonso"],
@@ -489,7 +489,7 @@
       "reference": "4.1.171",
       "stage": "act-4",
       "context": "The close of the same speech, before he admits his mind is troubled.",
-      "analysis": "'Made on' means made of, so human beings are built out of the same material as the vanished spirits — not that life resembles a dream but that it is cut from it. 'Rounded' can mean surrounded or finished off, and the line declines to choose, which is why it can be read as consolation or as the bleakest sentence in the play.",
+      "analysis": "‘Made on’ means made of, so human beings are made of the same material as the vanished spirits: life does not just resemble a dream; it is cut from one. ‘Rounded’ can mean surrounded or finished off, and the line does not choose, which is why it can be read as consolation or as the bleakest sentence in the play.",
       "themes": ["art"],
       "techniques": ["metatheatre"],
       "characters": ["prospero"],
@@ -517,7 +517,7 @@
       "reference": "5.1.29",
       "stage": "act-5",
       "context": "Immediately after Ariel says that he would pity the charmed courtiers if he were human.",
-      "analysis": "The decision that ends twelve years of planning is made in four lines and prompted by a spirit. 'Rarer' means both more unusual and finer, which concedes that mercy is the less natural response; and the reason he gives is not that they deserve it but that it is the better piece of work.",
+      "analysis": "The decision that ends twelve years of planning is made in four lines and prompted by a spirit. ‘Rarer’ means more unusual and also finer, which concedes that mercy is the less natural response; and the reason he gives is that it is the better piece of work, not that they deserve it.",
       "themes": ["forgiveness"],
       "techniques": [],
       "characters": ["prospero", "ariel"],
@@ -573,7 +573,7 @@
       "reference": "5.1.382",
       "stage": "act-5",
       "context": "The last two lines of the epilogue, spoken alone to the audience.",
-      "analysis": "The man who has spent the play releasing or refusing to release other people ends by asking to be released himself, and the currency is applause. 'Indulgence' was also the word for a remission of punishment granted by the Church, so the audience is being asked to perform an absolution that the play's own theology could not quite supply.",
+      "analysis": "The man who has spent the play releasing other people, or declining to, ends by asking to be released himself, and the currency is applause. ‘Indulgence’ was also the word for a remission of punishment granted by the Church, so the audience is being asked to perform an absolution that the play’s own theology could not fully supply.",
       "themes": ["freedom", "forgiveness", "art"],
       "techniques": ["metatheatre"],
       "characters": ["prospero"],
@@ -584,14 +584,14 @@
   "timeline": [
     { "year": 1603, "label": "Florio's translation of Montaigne published", "detail": "The English 'Of the Cannibals' behind Gonzalo's commonwealth speech becomes available.", "kind": "context" },
     { "year": 1609, "label": "The Sea Venture wrecked on Bermuda", "detail": "Bound for Virginia, the ship broke up on the reefs; the survivors reached Jamestown the following year.", "kind": "context" },
-    { "year": 1610, "label": "Jourdain's A Discovery of the Barmudas printed", "detail": "One of the pamphlets that turned the wreck into a London story of storm, survival and abundant islands.", "kind": "context" },
+    { "year": 1610, "label": "Jourdain's A Discovery of the Barmudas printed", "detail": "One of the pamphlets through which the wreck became a London story of storm, survival and abundant islands.", "kind": "context" },
     { "year": 1611, "label": "Performed before James I at Whitehall on 1 November", "detail": "The Revels record is the earliest firm evidence that the play existed and was being acted.", "kind": "work" },
     { "year": 1613, "label": "Played at court during the festivities for Princess Elizabeth's marriage", "detail": "One of a group of plays given by the King's Men that winter for the betrothal and wedding celebrations.", "kind": "reception" },
     { "year": 1623, "label": "First Folio", "detail": "The only early text, and the volume opens with it — unusually well printed, with full stage directions and a cast list.", "kind": "work" },
     { "year": 1667, "label": "Dryden and Davenant's The Enchanted Island", "detail": "A Restoration rewriting that gave Miranda a sister and Caliban a mate, and held the stage for well over a century.", "kind": "reception" },
-    { "year": 1957, "label": "Peter Brook directs John Gielgud as Prospero", "detail": "At the Shakespeare Memorial Theatre; remembered for a Prospero of severity rather than serenity.", "kind": "reception" },
+    { "year": 1957, "label": "Peter Brook directs John Gielgud as Prospero", "detail": "At the Shakespeare Memorial Theatre; remembered for a Prospero of severity, not serenity.", "kind": "reception" },
     { "year": 1970, "label": "Jonathan Miller's colonial production", "detail": "Casting made the island's politics explicit, and helped establish a reading British theatre has not since put down.", "kind": "reception" },
-    { "year": 1991, "label": "Peter Greenaway's Prospero's Books", "detail": "A film that takes the library rather than the island as the centre of the play.", "kind": "reception" },
+    { "year": 1991, "label": "Peter Greenaway's Prospero's Books", "detail": "A film that puts the library, not the island, at the centre of the play.", "kind": "reception" },
     { "year": 2010, "label": "Julie Taymor's film, with Helen Mirren as Prospera", "detail": "Changing the magician's sex reorganises the play's questions about parenthood, exile and authority.", "kind": "reception" }
   ],
   "places": [
@@ -615,7 +615,7 @@
     },
     {
       "position": "The play as a study of service",
-      "summary": "A third approach puts Ariel rather than Caliban at the centre and reads the island as a workplace: promised wages, deferred release, labour that is invisible because it is magical.",
+      "summary": "A third approach puts Ariel, not Caliban, at the centre and reads the island as a workplace: promised wages, deferred release, labour that is invisible because it is magical.",
       "counter": "It risks flattening the difference between a spirit who is freed in the last scene and a man whose future the play never mentions."
     }
   ],
@@ -673,11 +673,11 @@
     "If a production cuts the epilogue, what is lost?"
   ],
   "related": [
-    { "href": "/books/the-winters-tale/", "why": "The other late play in which a ruler's damage is repaired after years, though there the miracle is a statue rather than a storm." },
+    { "href": "/books/the-winters-tale/", "why": "The other late play in which a ruler’s damage is repaired after years, though there the miracle is a statue, not a storm." },
     { "href": "/books/cymbeline/", "why": "Written at about the same time, and just as willing to let romance conventions do work that tragedy would not allow." },
     { "href": "/books/pericles-prince-of-tyre/", "why": "Shipwreck, a lost daughter and reunion at sea: the pattern The Tempest compresses into one afternoon." },
     { "href": "/books/utopia/", "why": "More's island commonwealth stands behind the tradition Gonzalo is drawing on, and being mocked for." },
-    { "href": "/books/a-midsummer-nights-dream/", "why": "The earlier play of spirits, spells and interrupted entertainments, with the magic used for comedy rather than government." }
+    { "href": "/books/a-midsummer-nights-dream/", "why": "The earlier play of spirits, spells and interrupted entertainments, with the magic used for comedy, not government." }
   ],
   "videos": [
     {

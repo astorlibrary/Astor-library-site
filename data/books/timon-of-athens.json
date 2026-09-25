@@ -56,10 +56,10 @@
       "id": "act-3",
       "label": "Act III",
       "title": "Three doors, three refusals",
-      "summary": "Lucullus comes downstairs expecting a present, hears the request and tries to buy the messenger's silence with three coins. Lucius performs astonishment at Lucullus's meanness and then refuses in the same breath. Sempronius, asked fourth, is not ashamed but insulted that he was not asked first. In the same act the senate condemns a soldier and banishes Alcibiades for pleading mercy, and Timon invites the whole circle back for a second dinner.",
+      "summary": "Lucullus comes downstairs expecting a present, hears the request and tries to buy the messenger's silence with three coins. Lucius performs astonishment at Lucullus's meanness and then refuses in the same breath. Sempronius, asked fourth, is insulted, not ashamed, that he was not asked first. In the same act the senate condemns a soldier and banishes Alcibiades for pleading mercy, and Timon invites the whole circle back for a second dinner.",
       "scenes": [
         { "ref": "3.1", "title": "Lucullus and the three solidares", "summary": "Flaminius is welcomed as the bearer of a gift. When the box under his cloak turns out to be empty, Lucullus explains that friendship is no security for a loan and offers him coins to say he saw nobody. Flaminius throws the money back." },
-        { "ref": "3.2-3.3", "title": "Lucius and Sempronius", "summary": "Lucius tells three strangers how little honour Lucullus showed, and then discovers that he unluckily spent everything the day before. Sempronius turns the order of asking into a grievance and sends Timon's servant away with a couplet about honour and coin." },
+        { "ref": "3.2-3.3", "title": "Lucius and Sempronius", "summary": "Lucius tells three strangers how little honour Lucullus showed, and then discovers that he unluckily spent everything the day before. Sempronius makes a grievance of the order of asking and sends Timon’s servant away with a couplet about honour and coin." },
         { "ref": "3.4", "title": "The bills at the door", "summary": "Titus, Hortensius, Philotus and the servants of Varro compare sums in Timon's hall, several of them collecting for lords who are still wearing his jewels. Timon breaks out among them and tells them to cut his heart into sums." },
         { "ref": "3.5", "title": "The senate banishes Alcibiades", "summary": "Alcibiades asks the senate to spare a soldier who killed a man in hot blood. The senators answer that to bear is valour and to revenge is none, sentence the man to die, and banish Alcibiades for pressing them twice." },
         { "ref": "3.6", "title": "Smoke and lukewarm water", "summary": "The guests come back, telling one another that the first request must have been a trial of their friendship. Timon says a grace asking the gods to bless nobody, uncovers the dishes, throws the water in their faces and beats them out of the room." }
@@ -73,7 +73,7 @@
       "scenes": [
         { "ref": "4.1", "title": "The curse at the wall", "summary": "Alone outside Athens, Timon asks that obedience fail in children, that bound servants steal and that the wrinkled senate be pulled from the bench, and prays that his own hatred may grow as he grows." },
         { "ref": "4.2", "title": "The household breaks up", "summary": "The servants ask where their master is. Flavius calls them broken implements of a ruined house, shares out what money he has left among them, and sets off to find Timon and serve him still." },
-        { "ref": "4.3.1-47", "title": "Roots and gold", "summary": "Timon digs for a root and turns up gold, and names at once what it will do: make black white, foul fair and the coward valiant. A drum sounds in the distance and he buries most of it, keeping some out for earnest." },
+        { "ref": "4.3.1-47", "title": "Roots and gold", "summary": "Timon digs for a root and turns up gold, and names straight away what it will do: make black white, foul fair and the coward valiant. A drum sounds in the distance and he buries most of it, keeping some out for earnest." },
         { "ref": "4.3.48-194", "title": "The general and the two women", "summary": "Alcibiades arrives with drum and fife on his way to Athens. Timon gives him gold for the war and tells him to spare neither age nor virgin nor babe, then pays Phrynia and Timandra to carry disease back into the city." },
         { "ref": "4.3.195-539", "title": "Apemantus, the thieves and the steward", "summary": "Apemantus accuses Timon of taking up misanthropy only when the money ran out, and they trade insults until a stone is thrown. Three bandits get gold and a lecture proving the sun and moon are thieves. Flavius arrives, weeps, and is named the one honest man alive." }
       ]
@@ -97,7 +97,7 @@
       "id": "timon",
       "name": "Timon",
       "role": "A rich Athenian, afterwards a hermit in the woods",
-      "summary": "He gives without keeping accounts and believes the giving has bought him a circle of brothers. The play tests that belief three times in one act and it fails three times, after which he cannot revise it by degrees. The same appetite for absolutes that had him dealing kingdoms to his friends has him wishing leprosy on every Athenian, and it never softens, not even for the steward he calls honest.",
+      "summary": "He gives without keeping accounts and believes the giving has bought him a circle of brothers. The belief is put to the test three times in one act and fails three times, after which he cannot revise it by degrees. The same appetite for absolutes that had him dealing kingdoms to his friends has him wishing leprosy on every Athenian, and it never softens, not even for the steward he calls honest.",
       "clue": "He frees a stranger from a debtors' prison in his first scene, serves his friends warm water at his last dinner, and digs his own grave at the edge of the sea.",
       "firstAppearance": "1.1",
       "traits": ["open-handed", "unmeasured", "absolute"],
@@ -179,7 +179,7 @@
       "id": "sempronius",
       "name": "Sempronius",
       "role": "A lord of Athens, and the last friend asked",
-      "summary": "Told that the others have already said no, he is not ashamed but affronted: he was the first man who ever took a gift from Timon and should have been approached first. The refusal comes dressed as injured honour, and the servant left alone on stage calls it a goodly villainy and a man striving hard to appear foul.",
+      "summary": "Told that the others have already said no, he is affronted, not ashamed: he was the first man who ever took a gift from Timon and should have been approached first. The refusal comes dressed as injured honour, and the servant left alone on stage calls it a goodly villainy and a man striving hard to appear foul.",
       "clue": "He refuses because he was asked fourth, and sends back a rhyme about honour and coin.",
       "firstAppearance": "3.3",
       "traits": ["touchy", "vain", "last in the queue"],
@@ -232,7 +232,7 @@
       "id": "class",
       "name": "Money and what it buys",
       "summary": "Talents, solidares, crowns, bonds, interest, dowries, jewels and horses are counted out all through the play, and every relationship in it has a figure attached. The gold Timon finds in the wood does openly what his generosity did quietly: it brings people to him.",
-      "development": "Act I turns gifts into a currency of love; Act III prices that love at fifty talents and finds it will not pay; Act IV digs the metal out of the ground and Timon names its powers one by one."
+      "development": "In Act I gifts are a currency of love; Act III prices that love at fifty talents and finds it will not pay; in Act IV the metal is dug out of the ground and Timon names its powers one by one."
     },
     {
       "id": "friendship",
@@ -268,7 +268,7 @@
       "id": "self-deception",
       "name": "Knowing the answer and not using it",
       "summary": "Everybody in the play can state its moral. The Poet has written it as an allegory, Apemantus says it at the table, Flavius works it out in the corner with the bills in his hand, and Timon hears all three and goes on giving until there is nothing left to give.",
-      "development": "The Fortune speech of 1.1 forecasts the fall, the asides of 1.2 cost it, the fall arrives in 3.4, and Timon's conclusion is not that he misjudged some men but that mankind is vile."
+      "development": "The Fortune speech of 1.1 forecasts the fall, the asides of 1.2 count what it will cost, the fall arrives in 3.4, and Timon concludes that mankind is vile, not merely that he misjudged some men."
     }
   ],
   "techniques": [
@@ -323,7 +323,7 @@
       "reference": "1.1.84",
       "stage": "act-1",
       "context": "Describing to the Painter the poem he has brought to the house to sell.",
-      "analysis": "The Poet summarises the next four acts before any of them have happened, then hands the manuscript to the man who will fall. 'Let him slip down' is the exact verb: nobody pushes, everyone simply stops holding on. What the scene refuses is a clean division between corrupt flatterers and honest art, because the diagnosis is itself for sale.",
+      "analysis": "The Poet summarises the next four acts before any of them have happened, then hands the manuscript to the man who will fall. 'Let him slip down' is the exact verb: nobody pushes, everyone simply stops holding on. The scene offers no clean division between corrupt flatterers and honest art, because the diagnosis is itself for sale.",
       "themes": ["class", "self-deception", "performance"],
       "techniques": [],
       "characters": ["poet", "painter", "timon"],
@@ -351,7 +351,7 @@
       "reference": "1.2.39",
       "stage": "act-1",
       "context": "At his own table at the first banquet, refusing Timon's food.",
-      "analysis": "Apemantus turns the dinner into cannibalism with one verb: not eat with Timon but eat Timon. It is the play's governing image of consumption and it is literally true of the estate, which the guests are working through course by course. He says it aloud, at the table, in front of everyone, and nothing whatever follows.",
+      "analysis": "In Apemantus’s line the dinner becomes cannibalism with one verb: the guests do not eat with Timon, they eat Timon. It is the play's governing image of consumption and it is literally true of the estate, which the guests are working through course by course. He says it aloud, at the table, in front of everyone, and nothing whatever follows.",
       "themes": ["friendship", "class", "self-deception"],
       "techniques": ["set-piece"],
       "characters": ["apemantus", "timon"],
@@ -477,7 +477,7 @@
       "reference": "3.4.89",
       "stage": "act-3",
       "context": "Breaking out of his own house among the creditors' servants and their bills.",
-      "analysis": "Three short answers to three bills, each turning a sum into an injury to the body. 'Tell out' means count out, so blood is being reckoned in the units that money is reckoned in: the metaphor the play has been building since the first banquet is finally spoken by the man it is about. Within twenty lines he has ordered another dinner.",
+      "analysis": "Three short answers to three bills, and in each a sum becomes an injury to the body. ‘Tell out’ means count out, so blood is being reckoned in the units that money is reckoned in: the metaphor the play has been building since the first banquet is finally spoken by the man it is about. Within twenty lines he has ordered another dinner.",
       "themes": ["class", "isolation"],
       "techniques": ["antithesis", "catalogue"],
       "characters": ["timon"],
@@ -617,7 +617,7 @@
       "reference": "5.1.185",
       "stage": "act-5",
       "context": "Refusing the senators who have come to the cave to offer him command of Athens.",
-      "analysis": "Health and living are the disease and dying is the cure, and the inversion is held perfectly steady across three lines. 'Nothing brings me all things' is the last of his reversals and the calmest of them: he has stopped cursing and started arranging. It is also the only preparation the play gives for a death it keeps offstage.",
+      "analysis": "Health and living are the disease and dying is the cure, and the inversion is held perfectly steady across three lines. 'Nothing brings me all things' is the last of his reversals and the calmest of them: he has stopped cursing and started arranging. It is also the only preparation the play gives for a death that happens offstage.",
       "themes": ["isolation", "self-deception"],
       "techniques": ["antithesis", "epigram"],
       "characters": ["timon"],
@@ -683,7 +683,7 @@
     {
       "position": "The play as an unfinished draft",
       "summary": "The loose ends support it: the sums Timon owes do not agree from one scene to the next, a Fool arrives with Apemantus and is never accounted for, and some of the Folio's directions read like notes an author was still working from.",
-      "counter": "The same features work in performance. A world that goes from crowded luxury to an empty wood does not need consistent bookkeeping, and productions since 1965 have found the breaks useful rather than awkward."
+      "counter": "The same features work in performance. A world that goes from crowded luxury to an empty wood does not need consistent bookkeeping, and productions since 1965 have found the breaks useful, not awkward."
     },
     {
       "position": "Shakespeare's book about money",

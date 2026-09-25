@@ -25,7 +25,7 @@
     { "label": "Written", "value": "c. 1594–1596", "note": "Usually placed in Shakespeare's early to mid-1590s work, close to A Midsummer Night's Dream and Richard II." },
     { "label": "First printed", "value": "1597", "note": "An Excellent conceited Tragedie of Romeo and Iuliet, printed by John Danter — much shorter than the text that followed." },
     { "label": "The fuller text", "value": "1599 quarto", "note": "Advertised as newly corrected, augmented and amended; it is the basis of later quartos, the Folio and most modern editions." },
-    { "label": "Chief English source", "value": "Arthur Brooke, 1562", "note": "The Tragical History of Romeus and Juliet supplies the plot, the Friar, the Nurse, the potion and the tomb, spread over months rather than days." }
+    { "label": "Chief English source", "value": "Arthur Brooke, 1562", "note": "The Tragical History of Romeus and Juliet supplies the plot, the Friar, the Nurse, the potion and the tomb, spread over months, not days." }
   ],
   "structure": [
     {
@@ -74,7 +74,7 @@
       "id": "act-4",
       "label": "Act IV",
       "title": "A drug, a false death and a house of mourning",
-      "summary": "Juliet takes the Friar's vial without telling anyone, and the scene in which she swallows it is the longest she is ever left alone. The Capulets wake to find her cold, and the household turns its wedding preparations into a funeral in the space of one scene.",
+      "summary": "Juliet takes the Friar's vial without telling anyone, and the scene in which she swallows it is the longest she is ever left alone. The Capulets wake to find her cold, and in the space of one scene the household’s wedding preparations become a funeral.",
       "scenes": [
         { "ref": "4.1", "title": "The plan", "summary": "Juliet meets Paris at the Friar's cell and is given a potion and a forty-two-hour lie." },
         { "ref": "4.2", "title": "Obedience", "summary": "Juliet apologises to her father, who joyfully brings the wedding forward a day." },
@@ -144,7 +144,7 @@
       "id": "tybalt",
       "name": "Tybalt",
       "role": "Nephew to Lady Capulet",
-      "summary": "He treats the feud as an identity rather than a grievance, and he is the only character who states a preference for hatred over peace. Capulet's refusal to let him act at the feast stores up the violence that arrives in the next act.",
+      "summary": "For him the feud is an identity, not a grievance, and he is the only character who says he prefers hatred to peace. Capulet's refusal to let him act at the feast stores up the violence that arrives in the next act.",
       "clue": "He hates the word peace as he hates hell, and is sent back to his seat at a party by an old man who wants no fuss.",
       "firstAppearance": "1.1",
       "traits": ["punctilious", "spoiling for it"],
@@ -226,7 +226,7 @@
       "name": "Paris",
       "role": "A young nobleman, kinsman to the Prince",
       "summary": "He is not a villain, and that is the difficulty: he courts Juliet through her father because that is how it is done, speaks to her kindly when they meet, and comes to her tomb with flowers. He dies asking to be laid beside her.",
-      "clue": "He asks the father rather than the daughter, brings flowers to a tomb, and is killed at its door by a man he takes for a vandal.",
+      "clue": "He asks the father, not the daughter, brings flowers to a tomb, and is killed at its door by a man he takes for a vandal.",
       "firstAppearance": "1.2",
       "traits": ["conventional", "decent", "in the way"],
       "relationships": [
@@ -240,7 +240,7 @@
     {
       "id": "haste",
       "name": "Haste and timing",
-      "summary": "The play is built on a clock. Brooke's poem takes months; Shakespeare takes four days, and then fills them with deadlines — Thursday, the dawn, forty-two hours, three hours of waiting for a Nurse. Almost every disaster is a matter of minutes rather than of malice.",
+      "summary": "The play runs on a clock. Brooke's poem takes months; Shakespeare takes four days, and then fills them with deadlines — Thursday, the dawn, forty-two hours, three hours of waiting for a Nurse. Almost every disaster is a matter of minutes, not malice.",
       "development": "The Friar's warnings against speed in 2.3 and 2.6 are ignored by everyone including himself, and by Act V the plot has been reduced to a race between a letter and a horse."
     },
     {
@@ -278,7 +278,7 @@
     {
       "id": "sonnet-form",
       "name": "Sonnet form in dialogue",
-      "definition": "Fourteen lines of rhymed iambic pentameter, here divided between speakers rather than spoken by one voice.",
+      "definition": "Fourteen lines of rhymed iambic pentameter, here divided between two speakers.",
       "inThisBook": "The Chorus speaks a sonnet, and then Romeo and Juliet build one together at the feast, each taking a quatrain and sharing the couplet: the form itself performs the meeting."
     },
     {
@@ -320,7 +320,7 @@
       "reference": "1.0.5",
       "stage": "act-1",
       "context": "The Prologue, spoken before any character appears.",
-      "analysis": "'Take their life' means both to be born and to kill themselves, so the sentence contains the whole plot in three words. Shakespeare gives away the ending on purpose: the audience is not being asked what happens but how long it takes, which is the question the rest of the play answers in days and hours.",
+      "analysis": "'Take their life' means both to be born and to kill themselves, so the sentence contains the whole plot in three words. Shakespeare gives away the ending on purpose: the audience knows what happens and is asked how long it takes, a question the rest of the play answers in days and hours.",
       "themes": ["fate", "feud"],
       "techniques": ["sonnet-form", "dramatic-irony"],
       "characters": ["romeo", "juliet"],
@@ -334,7 +334,7 @@
       "reference": "1.1.63",
       "stage": "act-1",
       "context": "To Benvolio, who has drawn his sword only to separate the fighting servants.",
-      "analysis": "He hates a word, not a person — the grammar puts 'peace', 'hell', 'all Montagues' and 'thee' into the same list, as though they were the same kind of thing. It is the clearest statement in the play that the feud is not about a grievance but about an identity somebody would have to give up.",
+      "analysis": "He hates a word, not a person — the grammar puts 'peace', 'hell', 'all Montagues' and 'thee' into the same list, as though they were the same kind of thing. It is the clearest statement in the play that the feud is an identity somebody would have to give up, more than a grievance.",
       "themes": ["feud"],
       "techniques": [],
       "characters": ["tybalt", "benvolio"],
@@ -404,7 +404,7 @@
       "reference": "2.2.3",
       "stage": "act-2",
       "context": "In the Capulet orchard, seeing a light at the window above.",
-      "analysis": "Nine monosyllables and one name, which is unusually plain for a man who has spent Act I in elaborate paradoxes. The metaphor also quietly reverses the scene's conditions: it is the middle of the night, and he is describing a sunrise.",
+      "analysis": "Nine monosyllables and one name, which is unusually plain for a man who has spent Act I in elaborate paradoxes. The metaphor also reverses the scene’s conditions: it is the middle of the night, and he is describing a sunrise.",
       "themes": ["love"],
       "techniques": ["light-dark"],
       "characters": ["romeo", "juliet"],
@@ -474,7 +474,7 @@
       "reference": "2.2.198",
       "stage": "act-2",
       "context": "The end of the orchard scene, after three false exits.",
-      "analysis": "The couplet is a joke about its own form: she says good night twice and then promises to keep saying it until morning, which is exactly what the preceding hundred lines have been doing. The oxymoron is conventional, but the staging makes it literal — she cannot leave, and the scene keeps restarting.",
+      "analysis": "The couplet is a joke about its own form: she says good night twice and then promises to keep saying it until morning, which is exactly what the preceding hundred lines have been doing. The oxymoron is conventional, but the staging makes it literal: she cannot leave, and the scene keeps starting again.",
       "themes": ["love", "haste"],
       "techniques": ["oxymoron"],
       "characters": ["juliet", "romeo"],
@@ -586,7 +586,7 @@
       "reference": "4.3.16",
       "stage": "act-4",
       "context": "Alone in her chamber with the Friar's vial, having sent the Nurse away.",
-      "analysis": "She describes the drug's effect before she has taken it, which is the point of the speech: she has already imagined waking among her ancestors' bones and is going through with it anyway. It is the longest she is left alone on stage, and she uses the time to test the plan for flaws rather than to hesitate.",
+      "analysis": "She describes the drug's effect before she has taken it, which is the point of the speech: she has already imagined waking among her ancestors' bones and is going through with it anyway. It is the longest she is left alone on stage, and she uses the time to check the plan for flaws, not to hesitate.",
       "themes": ["death", "authority"],
       "techniques": [],
       "characters": ["juliet", "friar-laurence"],
@@ -614,7 +614,7 @@
       "reference": "5.3.121",
       "stage": "act-5",
       "context": "In the tomb, having drunk the poison beside Juliet's body.",
-      "analysis": "He praises the tradesman for the quality of the goods, which is a startling thing to do in the middle of a suicide, and the compliment is about speed. The last words turn the poison into the kiss, so that the drug and the marriage meet in one action.",
+      "analysis": "He praises the tradesman for the quality of the goods, which is a startling thing to do in the middle of a suicide, and the compliment is about speed. The last words make the poison a kiss, so the drug and the marriage meet in one action.",
       "themes": ["death", "haste", "love"],
       "techniques": [],
       "characters": ["romeo", "juliet"],
@@ -681,7 +681,7 @@
     {
       "position": "A tragedy of haste and accident",
       "summary": "Shakespeare's most conspicuous change to Brooke was compression: months become four days. Read that way, the play is an experiment in what happens to ordinary bad decisions when nobody has time to reconsider them.",
-      "counter": "It can make the feud incidental, when the play's first and last scenes are both about a quarrel between households rather than a mistake between lovers."
+      "counter": "It can make the feud incidental, when the play’s first and last scenes are both about a quarrel between households, not a mistake between lovers."
     },
     {
       "position": "A play about patriarchal households",
@@ -694,7 +694,7 @@
       "question": "How far is the tragedy of Romeo and Juliet caused by chance rather than by character?",
       "focus": "Fate, accident and decision",
       "plan": [
-        "Start with the Prologue: the audience is told the ending, so the play's question is mechanism rather than outcome.",
+        "Start with the Prologue: the audience is told the ending, so the play’s question is how it happens.",
         "List the accidents honestly — the illiterate servant in 1.2, the plague quarantine in 5.2, the Friar's late arrival — and note that none of them is supernatural.",
         "Set against them the decisions: Romeo's choice to answer Tybalt's challenge in 3.1, Juliet's choice to take the vial in 4.3.",
         "Use 3.1.138 and 5.1.25 to show Romeo describing as fortune two things he has just done himself.",
@@ -718,7 +718,7 @@
       "plan": [
         "Establish that nobody in the play ever states the cause of the quarrel, and that the first fight is started by servants.",
         "Track the Prince's three interventions and show that his authority lasts only as long as he is on stage.",
-        "Use Tybalt at 1.1.63 to show hatred presented as an identity rather than a grievance.",
+        "Use Tybalt at 1.1.63 to show hatred presented as an identity, not a grievance.",
         "Argue that Mercutio's death is the hinge, because it kills a man related to neither house and drags Romeo in.",
         "End with the gold statues in 5.3 and ask what the reconciliation actually costs the fathers."
       ]
@@ -745,7 +745,7 @@
   "related": [
     { "href": "/books/a-midsummer-nights-dream/", "why": "Written around the same time, and containing a parody of exactly this plot in the Pyramus and Thisbe interlude." },
     { "href": "/books/the-two-gentlemen-of-verona/", "why": "The same city, the same rope-ladder elopement machinery, played for comedy instead." },
-    { "href": "/books/hamlet/", "why": "The later tragedy of a young person trapped inside an adult household, and the opposite problem: too much delay rather than too little." },
+    { "href": "/books/hamlet/", "why": "The later tragedy of a young person trapped inside an adult household, with the opposite problem: too much delay, where here there is too little." },
     { "href": "/books/othello/", "why": "Another marriage made in secret against a father's will, and another catastrophe that turns on evidence arriving too late." },
     { "href": "/books/twelfth-night/", "why": "Shipwreck, disguise and mistaken identity handled as comedy, with the same interest in how quickly people fall in love with an idea." }
   ],

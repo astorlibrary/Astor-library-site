@@ -18,7 +18,7 @@
   "referenceStyle": "period and narrative, with the chapter where a narrative is divided",
   "sourceText": {
     "label": "Standard Ebooks text of The Moonstone",
-    "note": "A proofed transcription of Collins’s text. References follow the book’s own divisions — Prologue, First Period, the numbered Narratives of the Second Period, and Epilogue — rather than a running chapter count."
+    "note": "A proofed transcription of Collins’s text. References follow the book’s own divisions — Prologue, First Period, the numbered Narratives of the Second Period, and Epilogue — with no running chapter count."
   },
   "atAGlance": [
     {
@@ -134,7 +134,7 @@
       "id": "blake",
       "label": "Second Period, Third Narrative",
       "title": "Contributed by Franklin Blake",
-      "summary": "Blake returns, commissions the whole record, and follows Rosanna’s posthumous letter to a tin box buried under the Shivering Sand. In it is a paint-stained nightgown marked with his own name. He then hears from Rachel that she watched him take the diamond with her own eyes, and the novel’s central problem becomes a contradiction rather than a mystery.",
+      "summary": "Blake returns, commissions the whole record, and follows Rosanna’s posthumous letter to a tin box buried under the Shivering Sand. In it is a paint-stained nightgown marked with his own name. He then hears from Rachel that she watched him take the diamond with her own eyes, and from then on the novel’s central problem is a contradiction, not a mystery.",
       "scenes": [
         {
           "ref": "Second Period, Third Narrative, Chapters I–III",
@@ -414,7 +414,7 @@
       "id": "sergeant-cuff",
       "name": "Sergeant Cuff",
       "role": "A detective officer from Scotland Yard",
-      "summary": "Grizzled, softly spoken and interested chiefly in roses, he reads a smear of paint faster than anybody and misreads a young woman completely. Collins makes him formidable and wrong at once, which is unusual in the genre he helped invent: the great detective leaves the case with three predictions, two of which come true for reasons he never understood.",
+      "summary": "Grizzled, softly spoken and interested chiefly in roses, he reads a smear of paint faster than anybody and misreads a young woman completely. Collins makes him formidable and also wrong, which is unusual in the genre he helped invent: the great detective leaves the case with three predictions, two of which come true for reasons he never understood.",
       "clue": "He whistles ‘The Last Rose of Summer’ when he is thinking, and means to give up catching thieves for a nursery garden.",
       "firstAppearance": "First Period, Chapter XII",
       "traits": [
@@ -532,7 +532,7 @@
       "id": "ezra-jennings",
       "name": "Ezra Jennings",
       "role": "Mr. Candy’s assistant, and the designer of the experiment",
-      "summary": "Of mixed birth, piebald hair, dying of an incurable disease and ruined years ago by an accusation he will not describe, he is the only person willing to test an idea rather than assert one. He reconstructs the birthday night as a controlled trial and insists that Rachel’s consent be freely given, and he asks for nothing except to be remembered.",
+      "summary": "Of mixed birth, piebald hair, dying of an incurable disease and ruined years ago by an accusation he will not describe, he is the only person who will try an idea out before asserting it. He reconstructs the birthday night as a controlled trial and insists that Rachel’s consent be freely given, and he asks for nothing except to be remembered.",
       "clue": "His hair is black on one side and white on the other, the town will not speak to him, and he keeps himself alive on the drug that solves the case.",
       "firstAppearance": "Second Period, Third Narrative, Chapter IX",
       "traits": [
@@ -660,7 +660,7 @@
       "id": "lady-verinder",
       "name": "Lady Julia Verinder",
       "role": "Rachel’s mother, mistress of the house",
-      "summary": "She refuses to have her daughter questioned, sends Cuff away rather than let him proceed, and dies before the case is reopened. Her judgement is the one the household runs on, and it is exercised in the teeth of the professional advice she is paying for.",
+      "summary": "She will not have her daughter questioned, sends Cuff away before he can go further, and dies before the case is reopened. Her judgement is the one the household runs on, and it is exercised in the teeth of the professional advice she is paying for.",
       "firstAppearance": "First Period, Chapter II",
       "traits": [
         "decisive",
@@ -706,13 +706,13 @@
     {
       "id": "empire",
       "name": "Empire and possession",
-      "summary": "The stone is stolen twice — from Somnauth in the eleventh century and from Seringapatam in 1799 — before it becomes an English birthday present. Collins keeps the adjective ‘Indian’ attached to it through every drawing room and bank vault, so English law can hold the diamond but never quite naturalise it.",
+      "summary": "The stone is stolen twice — from Somnauth in the eleventh century and from Seringapatam in 1799 — before it becomes an English birthday present. Collins attaches the adjective ‘Indian’ to it in every drawing room and bank vault, so English law can hold the diamond but cannot naturalise it.",
       "development": "A private letter of accusation in the Prologue, a legacy designed as a weapon in the First Period, and a restitution in the Epilogue that the English narrators can record but not control."
     },
     {
       "id": "detection",
       "name": "Detection and its blind spots",
-      "summary": "Cuff reads objects brilliantly and people badly, and the case is finally opened not by inference but by an experiment. The novel insists that clues belong to several disciplines at once — policing, medicine, law, household routine — and that a detective who owns only one of them will get it wrong.",
+      "summary": "Cuff reads objects brilliantly and people badly, and in the end the case is opened by an experiment, not by inference. The novel insists that clues belong to several disciplines — policing, medicine, law, household routine — and that a detective who owns only one of them will get it wrong.",
       "development": "Local incompetence, then professional inference, then a collapse of the professional theory, and finally a reconstruction under laboratory conditions."
     },
     {
@@ -763,12 +763,12 @@
       "id": "serial-suspense",
       "name": "Serial suspense",
       "definition": "Structure shaped by weekly publication — withheld information, instalment endings, deliberate recurrence.",
-      "inThisBook": "Thirty-two weeks meant readers had to carry a detail for months, so Collins repeats the quicksand, the paint and the Indians at intervals rather than relying on memory."
+      "inThisBook": "Thirty-two weeks meant readers had to carry a detail for months, so Collins brings back the quicksand, the paint and the Indians at intervals, since readers could not be relied on to remember."
     },
     {
       "id": "idiolect",
       "name": "Written voice",
-      "definition": "Characterisation carried by the habits of a narrator’s prose rather than by description.",
+      "definition": "Characterisation carried by the habits of a narrator’s prose, not by description.",
       "inThisBook": "Betteredge digresses and quotes Defoe, Clack italicises her own virtues, Bruff numbers his points, and Jennings writes in dated fragments between doses."
     }
   ],
@@ -779,7 +779,7 @@
       "reference": "Prologue",
       "stage": "prologue",
       "context": "The family legend of the diamond, as the letter-writer has heard it in camp.",
-      "analysis": "The theft the English commit in 1799 is not the first: Collins puts an eleventh-century sack at the head of the book so that the stone arrives with a history of plunder already attached. The Epilogue returns to exactly this city, which turns the novel’s shape into a circle rather than a chase.",
+      "analysis": "The theft the English commit in 1799 is not the first: Collins puts an eleventh-century sack at the head of the book so that the stone arrives with a history of plunder already attached. The Epilogue returns to exactly this city, so the novel’s shape is a circle, not a chase.",
       "themes": [
         "empire"
       ],
@@ -847,7 +847,7 @@
       "reference": "First Period, Chapter I",
       "stage": "first-period",
       "context": "Betteredge explaining what the book is for.",
-      "analysis": "The list runs from low spirits to marital trouble to drink, and the remedy never changes; six worn-out copies is the detail that turns a joke into a portrait of a life. It also plants a foundational story of English trade and mastery inside a novel about stolen colonial property, and Collins leaves the reader to notice.",
+      "analysis": "The list runs from low spirits to marital trouble to drink, and the remedy never changes; with six worn-out copies the joke becomes a portrait of a life. It also plants a foundational story of English trade and mastery inside a novel about stolen colonial property, and Collins leaves the reader to notice.",
       "themes": [
         "testimony",
         "empire"
@@ -870,7 +870,7 @@
       "reference": "First Period, Chapter IV",
       "stage": "first-period",
       "context": "Betteredge describing the quicksand in the little bay below the house.",
-      "analysis": "The name comes from the local people rather than from a map, which is how Collins keeps the place both real and slightly outside ordinary jurisdiction. The sand does the work a Gothic castle would once have done: it swallows a woman, hides the only physical evidence, and gives it back a year later intact.",
+      "analysis": "The name comes from the local people, not from a map, so the place is real but slightly outside ordinary jurisdiction. The sand does the work a Gothic castle would once have done: it swallows a woman, hides the only physical evidence, and gives it back a year later intact.",
       "themes": [
         "class",
         "detection"
@@ -942,7 +942,7 @@
       "reference": "First Period, Chapter XII",
       "stage": "first-period",
       "context": "The Sergeant’s first conversation on arriving, conducted with the gardener about grass walks.",
-      "analysis": "Collins gives his detective a private life before he gives him a theory, and the roses are not a quirk but a measure: Cuff is at his most attentive and most accurate when the subject is not human. The same man will shortly read Rachel Verinder as a young woman in debt.",
+      "analysis": "Collins gives his detective a private life before he gives him a theory, and the roses measure something: Cuff is at his most attentive and most accurate when the subject is not human. The same man will shortly read Rachel Verinder as a young woman in debt.",
       "themes": [
         "detection"
       ],
@@ -965,7 +965,7 @@
       "reference": "First Period, Chapter XII",
       "stage": "first-period",
       "context": "Overheard by Betteredge at the threshold, in reply to Franklin Blake’s question.",
-      "analysis": "The line is the first statement of the book’s real problem: not who took it, but whether taking it was a theft at all. Cuff means that Rachel has removed her own property to raise money; he is wrong about the person and right about the grammar, since the man who carried the diamond out of the room had no criminal intention either.",
+      "analysis": "The line is the first statement of the book’s real problem, which is less who took it than whether taking it was a theft at all. Cuff means that Rachel has removed her own property to raise money; he is wrong about the person and right about the grammar, since the man who carried the diamond out of the room had no criminal intention either.",
       "themes": [
         "detection",
         "memory"
@@ -1036,7 +1036,7 @@
       "reference": "Second Period, First Narrative, Chapter IV",
       "stage": "clack",
       "context": "Describing the book she leaves for Lady Verinder to find.",
-      "analysis": "The comedy is in the domestic inventory — brush, looking glass, tea table, window — which turns the devil into a fixture of the furniture. Collins is also making a point about method: Clack finds significance in ordinary household objects with exactly the confidence Sergeant Cuff brings to a smear of paint.",
+      "analysis": "The comedy is in the domestic inventory — brush, looking glass, tea table, window — where the devil becomes one more piece of furniture. Collins is also making a point about method: Clack finds significance in ordinary household objects with exactly the confidence Sergeant Cuff brings to a smear of paint.",
       "themes": [
         "respectability"
       ],
@@ -1059,7 +1059,7 @@
       "reference": "Second Period, First Narrative, Chapter VI",
       "stage": "clack",
       "context": "One of the letters Collins prints inside Clack’s own narrative, refusing her extracts.",
-      "analysis": "The editor of the record appears inside the record, and the reader watches the dossier being assembled and trimmed. Blake’s courtesy is lethal — he declines to mention his personal objection while mentioning it — and the exchange quietly tells us that every narrative in the book has passed through one man’s hands.",
+      "analysis": "The editor of the record appears inside the record, and the reader watches the dossier being assembled and trimmed. Blake’s courtesy is lethal — he declines to mention his personal objection while mentioning it — and the exchange tells us, in passing, that every narrative in the book has passed through one man’s hands.",
       "themes": [
         "testimony",
         "respectability"
@@ -1179,7 +1179,7 @@
       "reference": "Second Period, Third Narrative, Chapter IX",
       "stage": "blake",
       "context": "Jennings explaining his own illness to Franklin Blake.",
-      "analysis": "The drug that lost Blake a night of his life is the same drug keeping Jennings alive, and the man who explains it is speaking from inside the experiment he is about to run. Collins, who took laudanum himself for years, refuses to let opium be either a poison or a miracle: it is a treatment with a stated limit.",
+      "analysis": "The drug that lost Blake a night of his life is the same drug keeping Jennings alive, and the man who explains it is speaking from inside the experiment he is about to run. Collins, who took laudanum himself for years, presents opium as neither a poison nor a miracle: it is a treatment with a stated limit.",
       "themes": [
         "memory"
       ],
@@ -1248,7 +1248,7 @@
       "reference": "Epilogue, III",
       "stage": "epilogue",
       "context": "The last sentences of the book.",
-      "analysis": "A detective novel ends on an open question, and the question is not who did it but what happens next. The cycle Collins describes is the one the Prologue began — conquest, theft, restitution, conquest — and by refusing to close it he keeps the English portion of the story a single episode rather than the whole account.",
+      "analysis": "A detective novel ends on an open question, and the question is what happens next; who did it is settled. The cycle Collins describes is the one the Prologue began — conquest, theft, restitution, conquest — and because he leaves it open, the English part of the story is one episode, not the whole account.",
       "themes": [
         "empire",
         "testimony"
@@ -1312,7 +1312,7 @@
     {
       "year": 1877,
       "label": "Collins’s own dramatisation staged",
-      "detail": "He adapted the novel for the theatre himself, cutting the many-narrator structure the book was built on.",
+      "detail": "He adapted the novel for the theatre himself, cutting the many narrators that give the book its structure.",
       "kind": "reception"
     },
     {
@@ -1379,7 +1379,7 @@
       "counter": "Prose mysteries and investigating figures existed before 1868, and the claim can flatten what is unusual here — a detective who is wrong, and a solution nobody deduces."
     },
     {
-      "position": "A novel about testimony rather than crime",
+      "position": "A novel about testimony, more than crime",
       "summary": "On this reading the subject is how evidence is produced: who is asked, what they are allowed to say, and how religion, class and vanity shape what a witness notices. The structure does the arguing, since no single document is sufficient.",
       "counter": "It risks treating the plot as a pretext, when Collins plainly took great care to make the mechanism of the theft work in medical and legal detail."
     },
@@ -1398,7 +1398,7 @@
         "Use Betteredge to show the method’s strength — visible prejudice makes the omissions legible.",
         "Read Miss Clack as the limiting case, where accurate facts arrive wrapped in judgements nobody can accept.",
         "Weigh the cost: Rachel, the person who knows most, is never given a narrative, and the Indians none at all.",
-        "Conclude on what the form asks of a reader that a single detective’s account would not."
+        "Conclude on the work the form gives a reader that a single detective’s account would not."
       ]
     },
     {
@@ -1417,10 +1417,10 @@
       "focus": "Empire, framing and the ending",
       "plan": [
         "Describe what the Prologue establishes: an eleventh-century sack, a documented 1799 assault, a private accusation, a curse.",
-        "Trace how Herncastle’s legacy works as a weapon rather than a gift, and what that makes of the birthday.",
+        "Trace how Herncastle’s legacy works as a weapon, not a gift, and what that does to the birthday.",
         "Follow the adjective ‘Indian’ through the English chapters, where the stone is repeatedly given a geography.",
         "Read the Epilogue as the Prologue completed, and note that no English narrator is present for the restitution.",
-        "Decide whether the frame is a moral argument, an exotic device, or both at once."
+        "Decide whether the frame is a moral argument, an exotic device, or both."
       ]
     },
     {
@@ -1457,7 +1457,7 @@
     },
     {
       "href": "/books/great-expectations/",
-      "why": "Another All the Year Round serial built on a concealed benefactor and a fortune whose origins will not bear examination."
+      "why": "Another All the Year Round serial with a concealed benefactor and a fortune whose origins will not bear examination."
     },
     {
       "href": "/books/dracula/",

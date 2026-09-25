@@ -14,7 +14,7 @@
   "difficulty": 3,
   "lengthNote": "A dedicatory letter and twenty-six short chapters, some of them under a page; chapters 3, 7, 12 and 19 are the long ones, and each is long because it is full of cases",
   "openingLine": "All states, all powers, that have held and hold rule over men have been and are either republics or principalities.",
-  "summary": "A dismissed Florentine official sets down what fourteen years of embassies taught him about how states are won and lost, and sends it to the family that dismissed him. The book sorts principalities into kinds, tests each kind against a ruler who succeeded or failed, and keeps returning to one man, Cesare Borgia, who did everything right and lost anyway. Its notorious chapters on cruelty, fear and broken promises take up five of the twenty-six; most of the rest is about armies, and the last is a plea for somebody to drive the foreigners out of Italy.",
+  "summary": "A dismissed Florentine official sets down what fourteen years of embassies taught him about how states are won and lost, and sends it to the family that dismissed him. Machiavelli sorts principalities into kinds, measures each kind against a ruler who succeeded or failed, and comes back again and again to one man, Cesare Borgia, who did everything right and lost anyway. Its notorious chapters on cruelty, fear and broken promises take up five of the twenty-six; most of the rest is about armies, and the last is a plea for somebody to drive the foreigners out of Italy.",
   "referenceStyle": "chapter, by the book’s own twenty-six numbered chapters; the opening letter to Lorenzo de’ Medici is cited as Dedication",
   "sourceText": {
     "label": "Project Gutenberg text of The Prince, translated by W. K. Marriott",
@@ -35,7 +35,7 @@
     {
       "label": "Original title",
       "value": "De Principatibus",
-      "note": "Of Principalities: a Latin title and Latin chapter headings on a book written in Italian, and a title about kinds of state rather than about a person."
+      "note": "Of Principalities: a Latin title and Latin chapter headings on a book written in Italian, and a title about kinds of state, not a person."
     },
     {
       "label": "Shape",
@@ -649,7 +649,7 @@
     {
       "id": "fate",
       "name": "Fortune and ability",
-      "summary": "Fortune in this book is not chance in general but the world’s habit of changing faster than men do. Ability, which is the translation’s usual word for virtù, is the capacity to be ready for the change or to change with it. Machiavelli gives fortune half of human affairs and then spends a chapter showing that her half falls hardest on those who built nothing in calm weather, which shifts a good deal of what looks like bad luck back on to the unlucky.",
+      "summary": "Fortune in this book means something narrower than chance: the world’s habit of changing faster than men do. Ability, which is the translation’s usual word for virtù, is the capacity to be ready for the change or to change with it. Machiavelli gives fortune half of human affairs and then spends a chapter showing that her half falls hardest on those who built nothing in calm weather, which shifts a good deal of what looks like bad luck back on to the unlucky.",
       "development": "The founders owe fortune only an opening; Borgia is broken by an extreme malignity of it; chapter 25 tries two images, a river and a woman, and they do not give quite the same advice."
     },
     {
@@ -667,13 +667,13 @@
     {
       "id": "performance",
       "name": "Seeming and being",
-      "summary": "A prince need not have the virtues, but he must seem to have them, and religion above all. The reason given is about audiences rather than ethics: everyone can see a ruler and very few can touch him, so his reputation is made by people judging at a distance and by results. Machiavelli adds that it is best actually to be merciful and faithful, provided the mind is ready to turn when it must, which asks for a harder discipline than hypocrisy.",
+      "summary": "A prince need not have the virtues, but he must seem to have them, and religion above all. The reason given is about audiences, not ethics: everyone can see a ruler and very few can touch him, so his reputation is made by people judging at a distance and by results. Machiavelli adds that it is best actually to be merciful and faithful, provided the mind is ready to turn when it must, which requires a harder discipline than hypocrisy.",
       "development": "Prepared by the staged execution in chapter 7, stated outright in chapter 18, and extended in chapter 21 to Ferdinand, whose piety is an instrument of foreign policy."
     },
     {
       "id": "necessity",
       "name": "What is done and what ought to be done",
-      "summary": "Chapter 15 sets aside the long tradition of books describing the perfect ruler and proposes to describe rulers as they are. The claim is not that goodness is worthless but that a man who insists on it among so many who are not good will be destroyed, and his state with him. Necessity is the word that carries the weight: the prince must know how to do wrong and use the knowledge or not as the case requires.",
+      "summary": "Chapter 15 sets aside the long tradition of books describing the perfect ruler and proposes to describe rulers as they are. Machiavelli does not say goodness is worthless; he says that a man who insists on it among so many who are not good will be destroyed, and his state with him. Necessity is the word that carries the weight: the prince must know how to do wrong and use the knowledge or not as the case requires.",
       "development": "Implicit from the first cold sentence about crushing men, declared as a method in chapter 15, and given its most uncomfortable form in chapter 19: good works can make a prince hated as surely as bad ones."
     },
     {
@@ -734,7 +734,7 @@
       "reference": "Dedication",
       "stage": "kinds-of-state",
       "context": "Machiavelli answers in advance the charge that a man of low condition has no business instructing princes.",
-      "analysis": "The comparison turns his lack of rank into his qualification: distance is what makes a subject visible. It is politely symmetrical, and the symmetry hides a cost to Lorenzo, since it implies that a prince cannot see what princes are like and needs somebody on the plain to tell him. The job application is folded inside the theory of knowledge.",
+      "analysis": "In the comparison his lack of rank becomes his qualification: distance is what makes a subject visible. It is politely symmetrical, and the symmetry hides a cost to Lorenzo, since it implies that a prince cannot see what princes are like and needs somebody on the plain to tell him. The job application is folded inside the theory of knowledge.",
       "themes": [
         "power"
       ],
@@ -758,7 +758,7 @@
       "reference": "Chapter 3",
       "stage": "kinds-of-state",
       "context": "From the argument that colonies are better than garrisons, because colonies injure only a few people and leave them too poor to retaliate.",
-      "analysis": "This is the first sentence in the book likely to shock, and it arrives as an aside in a discussion of costs. The reasoning is actuarial: the question is not what men deserve but which injuries come back. The either and or leave no room for the ordinary middle course of governing, mild unfairness, which the sentence identifies as the dangerous one.",
+      "analysis": "This is the first sentence in the book likely to shock, and it arrives as an aside in a discussion of costs. The reasoning is actuarial: the question is which injuries come back, whatever men deserve. The either and or leave no room for the ordinary middle course of governing, mild unfairness, which the sentence identifies as the dangerous one.",
       "themes": [
         "cruelty",
         "power"
@@ -827,7 +827,7 @@
       "reference": "Chapter 6",
       "stage": "new-princes",
       "context": "Explaining why even the greatest founders had trouble at the start.",
-      "analysis": "The explanation that follows is an analysis of interests, not of courage: those who did well under the old arrangement fight hard, and those who may do well under the new one help lukewarmly because they have not seen it work yet. It is one of the few passages in the book about reform rather than rule, and it accounts for why reformers so often turn to force.",
+      "analysis": "The explanation that follows is an analysis of interests, not of courage: those who did well under the old arrangement fight hard, and those who may do well under the new one help lukewarmly because they have not seen it work yet. It is one of the few passages in the book about reform, not rule, and it explains why reformers so often turn to force.",
       "themes": [
         "power",
         "fate"
@@ -952,7 +952,7 @@
       "reference": "Chapter 8",
       "stage": "new-princes",
       "context": "The practical conclusion about cruelty well used, drawn from Agathocles’ long and secure reign.",
-      "analysis": "Harm and kindness are both described as things tasted, so the subjects are imagined as palates and government as a matter of dosage. The balance of the two clauses makes an unsettling idea sound like household economy. It is also a rule about time, which is this book’s real medium: the same quantity of pain is a different political fact when it is spread out.",
+      "analysis": "Harm and kindness are both described as things tasted, so the subjects are imagined as palates and government as a matter of dosage. The balance of the two clauses makes a brutal idea sound like household economy. It is also a rule about time, which is this book’s real medium: the same quantity of pain is a different political fact when it is spread out.",
       "themes": [
         "cruelty",
         "power"
@@ -999,7 +999,7 @@
       "reference": "Chapter 12",
       "stage": "arms",
       "context": "On how easily Charles VIII overran Italy in 1494; the preacher is not named, and is usually taken to be Savonarola.",
-      "analysis": "A sermon is accepted and rewritten in one sentence. Sin keeps its name and changes its content: the offence was not luxury or impiety but the hiring of other men to do the fighting. The following sentence sharpens it by saying that these were the sins of princes, so the moral vocabulary of the pulpit is kept and pointed at a political class.",
+      "analysis": "A sermon is accepted and rewritten in one sentence. The word ‘sin’ stays and its content changes: the offence was hiring other men to do the fighting, not luxury or impiety. The following sentence sharpens it by saying that these were the sins of princes, so the moral vocabulary of the pulpit is kept and pointed at a political class.",
       "themes": [
         "arms",
         "religion"
@@ -1068,8 +1068,8 @@
       "text": "Hence it is necessary for a prince wishing to hold his own to know how to do wrong, and to make use of it or not according to necessity.",
       "reference": "Chapter 15",
       "stage": "conduct",
-      "context": "The conclusion drawn at once from the gap between how men live and how they ought to.",
-      "analysis": "Wrong is still called wrong. The sentence does not redefine evil as good, which would have been the easier and more comfortable course; it asks the prince to keep the ordinary moral names and act against them knowingly. Or not matters as much as the rest: what is recommended is a capacity held in reserve, governed by a necessity the prince must judge for himself.",
+      "context": "The conclusion drawn immediately from the gap between how men live and how they ought to.",
+      "analysis": "Wrong is still called wrong. Machiavelli does not redefine evil as good, which would have been the easier and more comfortable course; the prince is to keep the ordinary moral names and act against them knowingly. Or not matters as much as the rest: what is recommended is a capacity held in reserve, governed by a necessity the prince must judge for himself.",
       "themes": [
         "necessity",
         "cruelty"
@@ -1294,7 +1294,7 @@
       "reference": "Chapter 26",
       "stage": "fortune-and-italy",
       "context": "After listing signs borrowed from Exodus, the divided sea, the cloud, the rock and the manna, as omens favouring the Medici.",
-      "analysis": "The miracles are produced and then told to stand aside, because the point is that the rest is up to the reader. It is the theology of chapter 25 restated for a devout audience: half is given, half must be taken. Glory, which was refused to Agathocles, returns as the prize, and the plural our quietly puts the author in the company that will share it.",
+      "analysis": "The miracles are produced and then told to stand aside, because the point is that the rest is up to the reader. It is the theology of chapter 25 restated for a devout audience: half is given, half must be taken. Glory, which was refused to Agathocles, returns as the prize, and the plural ‘our’ puts the author in the company that will share it.",
       "themes": [
         "fate",
         "religion"
@@ -1473,7 +1473,7 @@
     {
       "position": "The founding text of political realism",
       "summary": "The most familiar reading takes chapter 15 as the key: politics is cut loose from the moral philosophy that had governed advice to rulers, and judged instead by what preserves a state. On this account the book describes how power works and is no more wicked than a textbook of anatomy.",
-      "counter": "The book does not stay neutral. It refuses Agathocles glory, praises and blames on every page, and ends in a sermon; a purely descriptive work would have no use for the word ought, which it uses constantly."
+      "counter": "The book does not stay neutral. It denies Agathocles glory, praises and blames on every page, and ends in a sermon; a purely descriptive work would have no use for the word ‘ought’, which it uses constantly."
     },
     {
       "position": "A republican’s book that does not mean what it says",
@@ -1487,7 +1487,7 @@
     },
     {
       "position": "An occasional piece written to get a job",
-      "summary": "A more biographical approach stresses the circumstances: an unemployed expert, recently tortured, turning his dispatches into a gift for the new regime. The chapters on secretaries and on patrons of ability read as direct self-advertisement.",
+      "summary": "A more biographical approach stresses the circumstances: an unemployed expert, recently tortured, reworking his dispatches as a gift for the new regime. The chapters on secretaries and on patrons of ability read as direct self-advertisement.",
       "counter": "A book meant only to please would not tell its patron that he who raises another is ruined, or choose a pope as its example of a liar. The occasion explains the dedication better than it explains the risks."
     }
   ],
