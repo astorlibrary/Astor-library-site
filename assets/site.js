@@ -26,9 +26,7 @@
 
   if (siteHeader && siteNavigation) {
     siteNavigation.id = siteNavigation.id || 'site-navigation';
-    const browseMenu = siteNavigation.querySelector('.astor-browse-menu');
-    const browseSummary = browseMenu?.querySelector('summary');
-    const browsePanel = browseMenu?.querySelector('.astor-browse-panel');
+    const menus = [...siteNavigation.querySelectorAll('.astor-browse-menu')];
     let toggle = siteHeader.querySelector('.site-nav-toggle');
     if (!toggle) {
       toggle = document.createElement('button');
@@ -52,28 +50,30 @@
     window.addEventListener('resize', setHeaderHeight, { passive: true });
     if ('ResizeObserver' in window) new ResizeObserver(setHeaderHeight).observe(siteHeader);
 
-    const setBrowseState = () => {
-      if (!browseMenu || !browseSummary) return;
-      browseSummary.setAttribute('aria-expanded', String(browseMenu.open));
-    };
-    setBrowseState();
-    browseMenu?.addEventListener('toggle', setBrowseState);
-
-    browseSummary?.addEventListener('keydown', event => {
-      if (!['ArrowDown', 'ArrowUp'].includes(event.key)) return;
-      const links = [...(browsePanel?.querySelectorAll('a[href]') || [])];
-      if (!links.length) return;
-      event.preventDefault();
-      browseMenu.open = true;
-      setBrowseState();
-      window.requestAnimationFrame(() => (event.key === 'ArrowDown' ? links[0] : links[links.length - 1]).focus());
-    });
+    // Books, Study and Explore are <details> menus; only one is open at a time.
+    for (const menu of menus) {
+      const summary = menu.querySelector('summary');
+      const setState = () => summary?.setAttribute('aria-expanded', String(menu.open));
+      setState();
+      menu.addEventListener('toggle', () => {
+        setState();
+        if (menu.open) for (const other of menus) if (other !== menu && other.open) other.open = false;
+      });
+      summary?.addEventListener('keydown', event => {
+        if (!['ArrowDown', 'ArrowUp'].includes(event.key)) return;
+        const links = [...menu.querySelectorAll('.astor-browse-panel a[href]')];
+        if (!links.length) return;
+        event.preventDefault();
+        menu.open = true;
+        window.requestAnimationFrame(() => (event.key === 'ArrowDown' ? links[0] : links[links.length - 1]).focus());
+      });
+    }
 
     const closeBrowseMenu = returnFocus => {
-      if (!browseMenu?.open) return false;
-      browseMenu.open = false;
-      setBrowseState();
-      if (returnFocus) browseSummary?.focus();
+      const open = menus.find(menu => menu.open);
+      if (!open) return false;
+      open.open = false;
+      if (returnFocus) open.querySelector('summary')?.focus();
       return true;
     };
 
@@ -97,7 +97,7 @@
     });
 
     document.addEventListener('click', event => {
-      if (browseMenu?.open && !browseMenu.contains(event.target)) closeBrowseMenu(false);
+      for (const menu of menus) if (menu.open && !menu.contains(event.target)) menu.open = false;
       if (siteHeader.classList.contains('is-site-menu-open') && !siteHeader.contains(event.target)) {
         closeSiteMenu(false);
       }

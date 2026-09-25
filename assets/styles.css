@@ -2120,3 +2120,28 @@
    relatives — overrides it, so the section was laid out at full height inside
    a collapsed box and printed over whatever followed. */
 .book-fold:not([open]) > *:not(summary) { display: none !important; }
+
+/* Buying box: every format of the book that can be bought, near the top of
+   the page. The one boxed element on a book page, because it is the one a
+   reader needs to find quickly. */
+.astor-buy{margin:0 0 40px;padding:18px 22px 8px;border:1px solid var(--line);border-top:3px solid var(--book-accent,#6e1f2b);background:#fffaf3}
+.astor-buy h2{margin:0 0 6px;font:400 22px/1.2 Georgia,'Times New Roman',serif;letter-spacing:-.01em}
+.astor-buy-list{margin:0;padding:0;list-style:none}
+.astor-buy-item{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:18px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.astor-buy-item:first-child{border-top:0}
+.astor-buy-item img{width:56px;height:auto;aspect-ratio:2/3;object-fit:cover;background:#e7dacb;box-shadow:0 4px 12px rgba(33,29,26,.18)}
+.astor-buy-format{margin:0;font:700 16px/1.3 Georgia,'Times New Roman',serif;color:#211d1a}
+.astor-buy-format span{font-weight:400;color:#5b514a}
+.astor-buy-note{margin:3px 0 0;font:14px/1.5 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#5b514a}
+.astor-buy-actions{margin:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:8px 16px}
+.astor-buy-button{display:inline-flex;align-items:center;min-height:42px;padding:0 18px;background:#6e1f2b;color:#fffaf3;font:700 12px/1 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+.astor-buy-button:hover,.astor-buy-button:focus-visible{background:#10263b;color:#fffaf3}
+.astor-buy-more{color:#6e1f2b;font:700 13px/1.3 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-decoration:none;border-bottom:1px solid currentColor}
+.astor-page-credit a+a{margin-left:18px}
+@media(max-width:620px){
+  .astor-buy{padding:16px 14px 6px}
+  .astor-buy-item{grid-template-columns:48px minmax(0,1fr);gap:8px 14px}
+  .astor-buy-item img{width:48px}
+  .astor-buy-actions{grid-column:2;justify-content:flex-start}
+  .astor-page-credit a+a{margin-left:14px}
+}

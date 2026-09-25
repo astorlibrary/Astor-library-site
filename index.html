@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Astor Library Editions | Classic Literature, Study Editions and Free Guides</title>
-  <meta name="description" content="Astor Library Editions publish complete classic texts with summaries, context and analysis, alongside study editions and free literature guides for readers, students and teachers.">
+  <title>Astor Library | Annotated Editions of Classic Literature</title>
+  <meta name="description" content="Classic novels, plays and poems in annotated paperback and hardback editions, with a free page for every book: plot, characters, background and study guides.">
   <link rel="stylesheet" href="/assets/home.css">
 <link rel="stylesheet" href="/assets/seasons.css">
   <link rel="stylesheet" href="/assets/navigation.css">
@@ -13,137 +13,154 @@
 <body>
 <header class="site-header astor-global-header">
   <div class="astor-header-identity">
-    <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
-    <p>Independent editions of classic literature</p>
+    <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img decoding="async" loading="lazy" class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
+    <p class="astor-header-strap"><span>Independent literary editions</span><small>For readers, students &amp; teachers</small></p>
     <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span></button>
   </div>
   <nav class="nav astor-primary-nav" id="site-navigation" aria-label="Primary navigation">
     <div class="astor-primary-links">
-      <a class="nav-link" href="/library/">Books</a>
-      <details class="astor-browse-menu">
-        <summary>Browse</summary>
-        <div class="astor-browse-panel">
-          <a href="/shakespeare/"><b>Shakespeare</b><span>Plays, poems and editions</span></a>
-          <a href="/classic-literature/"><b>Periods</b><span>Collections across literary history</span></a>
-          <a href="/authors/"><b>Writers</b><span>Authors and their Astor editions</span></a>
-          <a href="/subjects/"><b>Subjects</b><span>Genres, themes and contexts</span></a>
-          <a href="/reading-routes/"><b>Reading routes</b><span>Books connected by a question</span></a>
+      <details class="astor-browse-menu astor-menu">
+        <summary aria-controls="astor-menu-books"><span>Books</span></summary>
+        <div class="astor-browse-panel astor-menu-panel is-two" id="astor-menu-books">
+          <div class="astor-menu-col">
+            <h2>Books</h2>
+            <a href="/library/">All books</a>
+            <a href="/shakespeare/">Shakespeare</a>
+            <a href="/hardbacks/">Hardbacks</a>
+            <a href="/authors/">Writers</a>
+            <a href="/subjects/">Subjects</a>
+            <a href="/seasons/">Seasons</a>
+          </div>
+          <div class="astor-menu-col">
+            <h2>By period</h2>
+            <a href="/ancient-epic/">Ancient &amp; Epic</a>
+            <a href="/renaissance-early-modern/">Renaissance</a>
+            <a href="/restoration-enlightenment/">Restoration</a>
+            <a href="/romantic-regency/">Romantic &amp; Regency</a>
+            <a href="/victorian/">Victorian</a>
+            <a href="/american/">American</a>
+            <a href="/modern/">Modern</a>
+          </div>
         </div>
       </details>
-      <a class="nav-link" href="/resources/">Resources</a>
-      <a class="nav-link" href="/study/">Study editions</a>
-      <a class="nav-link" href="/passage-room/">Passage Room</a>
+      <details class="astor-browse-menu astor-menu">
+        <summary aria-controls="astor-menu-study"><span>Study</span></summary>
+        <div class="astor-browse-panel astor-menu-panel" id="astor-menu-study">
+          <div class="astor-menu-col">
+            <h2>Study</h2>
+            <a href="/study/">Study editions</a>
+            <a href="/resources/">Free guides</a>
+            <a href="/passage-room/">Passage Room</a>
+            <a href="/play/">Revise</a>
+            <a href="/today/">Today’s questions</a>
+            <a href="/for-teachers/">For teachers</a>
+          </div>
+        </div>
+      </details>
+      <details class="astor-browse-menu astor-menu">
+        <summary aria-controls="astor-menu-explore"><span>Explore</span></summary>
+        <div class="astor-browse-panel astor-menu-panel is-two" id="astor-menu-explore">
+          <div class="astor-menu-col">
+            <h2>Explore</h2>
+            <a href="/explore/">Search the library</a>
+            <a href="/explore/quotations/">Quotations</a>
+            <a href="/explore/timeline/">Timeline</a>
+            <a href="/explore/characters/">Character maps</a>
+            <a href="/explore/themes/">Themes</a>
+          </div>
+          <div class="astor-menu-col is-continued">
+            <a href="/explore/techniques/">Technique glossary</a>
+            <a href="/explore/map/">Map of settings</a>
+            <a href="/explore/compare/">Compare two books</a>
+            <a href="/reading-routes/">Reading routes</a>
+          </div>
+        </div>
+      </details>
+      <a class="nav-link" href="/about/"><span>About</span></a>
     </div>
     <div class="astor-nav-utilities">
-      <a class="astor-utility-link" href="/explore/">Search</a>
+      <a class="astor-utility-link astor-search-link" href="/explore/" data-astor-palette><span aria-hidden="true"></span>Search</a>
+      <a class="astor-utility-link astor-mylibrary-link" href="/my-library/">My library</a>
       <a class="astor-utility-link astor-account-link" href="/account/" data-auth-link>Sign in</a>
     </div>
   </nav>
 </header>
 
 <main class="home">
-  <!-- seasonal-hero:start -->
-  <section class="home-season theme-autumn" aria-labelledby="home-season-title"><svg class="season-garland" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMin slice"><path d="M0 1Q180 53 360 1T720 1T1080 1T1440 1" fill="none" stroke="#9f713f" stroke-width="2"/><g transform="translate(16 35) rotate(0) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#c87738"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(129 70) rotate(79) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#dca752"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(254 35) rotate(38) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#d9a64d"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(367 70) rotate(97) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#bd663c"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(492 35) rotate(76) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#bd603d"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(605 70) rotate(115) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#9d763b"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(730 35) rotate(114) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#c87738"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(843 70) rotate(133) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#dca752"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(968 35) rotate(152) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#d9a64d"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(1081 70) rotate(151) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#bd663c"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(1206 35) rotate(190) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#bd603d"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(1319 70) rotate(169) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#9d763b"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(1444 35) rotate(228) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#c87738"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g></svg><div class="season-wrap"><div class="season-hero-grid"><div class="season-hero-copy"><p class="season-eyebrow">Ghost stories · October customs · November fires</p><h1 id="home-season-title">Autumn <em>at</em> Astor.</h1><p class="season-deck">Sleepy Hollow, ghost-story collections and the history of Bonfire Night: reading for the weeks when the evenings draw in.</p><div class="season-hero-actions"><a class="season-button" href="/seasons/autumn/">Explore autumn reading <span aria-hidden="true">&rarr;</span></a><a href="/seasons/">All eight seasons</a></div><p class="season-period">September–November <span aria-hidden="true">&#10022;</span> Open all year</p></div><div class="season-art"><svg class="season-scene" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" ><circle cx="302" cy="289" r="215" fill="#cf813f" opacity=".065"/><path d="M94 494C14 314 76 143 196 90M505 497C582 319 536 169 427 93" fill="none" stroke="#9d7044" stroke-width="3"/><g transform="translate(122 131) rotate(-34) scale(0.82)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#c86c37"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(84 247) rotate(-28) scale(1.05)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#d5a14b"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(53 383) rotate(-8) scale(0.72)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#b95b3d"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(156 528) rotate(-60) scale(0.9)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#bd893e"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(470 128) rotate(39) scale(0.78)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#dfad55"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(543 267) rotate(28) scale(0.85)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#c3663d"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(528 427) rotate(25) scale(0.79)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#d98d42"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(459 530) rotate(68) scale(0.9)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#b17646"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(78 447) rotate(-24) scale(0.76)"><path d="M-18 0C-22 26-7 40 0 43C7 40 22 26 18 0Z" fill="#ddab65"/><path d="M-24 1Q-25-23 0-23Q25-23 24 1Z" fill="#71492b"/><path d="m0-23 4-13" stroke="#99643b" stroke-width="6"/><path d="m-16-9 8 7 8-7 8 7 8-7" fill="none" stroke="#a67b4e" stroke-width="3"/></g><g transform="translate(493 342) rotate(21) scale(0.58)"><path d="M-18 0C-22 26-7 40 0 43C7 40 22 26 18 0Z" fill="#ddab65"/><path d="M-24 1Q-25-23 0-23Q25-23 24 1Z" fill="#71492b"/><path d="m0-23 4-13" stroke="#99643b" stroke-width="6"/><path d="m-16-9 8 7 8-7 8 7 8-7" fill="none" stroke="#a67b4e" stroke-width="3"/></g><g transform="translate(338 521) rotate(25) scale(0.64)"><path d="M-18 0C-22 26-7 40 0 43C7 40 22 26 18 0Z" fill="#ddab65"/><path d="M-24 1Q-25-23 0-23Q25-23 24 1Z" fill="#71492b"/><path d="m0-23 4-13" stroke="#99643b" stroke-width="6"/><path d="m-16-9 8 7 8-7 8 7 8-7" fill="none" stroke="#a67b4e" stroke-width="3"/></g><g transform="translate(232 537) rotate(-7) scale(0.55)"><path d="M0-45q-5-20 10-28" fill="none" stroke="#78954d" stroke-width="9"/><ellipse cx="-20" cy="0" rx="37" ry="47" fill="#dd641f"/><ellipse cx="20" cy="0" rx="37" ry="47" fill="#ef8c2a"/><ellipse cy="0" rx="28" ry="49" fill="#f5a741"/><path d="M-13-43q-17 47 0 86M13-43q17 47 0 86" stroke="#d77629" stroke-width="2" fill="none"/></g><g transform="translate(303 547) rotate(7) scale(0.39)"><path d="M0-45q-5-20 10-28" fill="none" stroke="#78954d" stroke-width="9"/><ellipse cx="-20" cy="0" rx="37" ry="47" fill="#dd641f"/><ellipse cx="20" cy="0" rx="37" ry="47" fill="#ef8c2a"/><ellipse cy="0" rx="28" ry="49" fill="#f5a741"/><path d="M-13-43q-17 47 0 86M13-43q17 47 0 86" stroke="#d77629" stroke-width="2" fill="none"/></g><circle cx="54" cy="217" r="2" fill="#d8b87e" opacity=".8"/><circle cx="101" cy="301" r="2" fill="#d8b87e" opacity=".8"/><circle cx="524" cy="265" r="3" fill="#d8b87e" opacity=".8"/><circle cx="458" cy="72" r="2" fill="#d8b87e" opacity=".8"/><circle cx="363" cy="60" r="2" fill="#d8b87e" opacity=".8"/><circle cx="249" cy="95" r="3" fill="#d8b87e" opacity=".8"/><circle cx="189" cy="491" r="2" fill="#d8b87e" opacity=".8"/><circle cx="415" cy="514" r="3" fill="#d8b87e" opacity=".8"/><circle cx="551" cy="379" r="2" fill="#d8b87e" opacity=".8"/><circle cx="69" cy="383" r="3" fill="#d8b87e" opacity=".8"/><circle cx="380" cy="116" r="2" fill="#d8b87e" opacity=".8"/><circle cx="158" cy="80" r="2" fill="#d8b87e" opacity=".8"/><circle cx="521" cy="105" r="2" fill="#d8b87e" opacity=".8"/><path d="M284 85q16 0 16-16q0 16 16 16q-16 0-16 16q0-16-16-16Z" fill="#e3c284"/><path d="M115 559q185 15 370 0" fill="none" stroke="#ac8353" stroke-width="1"/></svg><div class="season-cover-fan"><a class="season-cover season-cover-0" href="/books/sleepy-hollow-and-other-stories/"><img src="/Sleepy%20Hollow%20Main%20Cover.png" alt="Astor Library Sleepy Hollow and Other American Halloween Stories cover" width="240" height="360"><span class="season-sr-only">Sleepy Hollow and Other American Halloween Stories</span></a><a class="season-cover season-cover-1" href="/books/the-willows/"><img src="/The%20Willows%20Main%20Cover.png" alt="The Willows — Astor paperback cover" width="240" height="360" loading="lazy"><span class="season-sr-only">The Willows</span></a><a class="season-cover season-cover-2" href="/books/a-victorian-bonfire-night/"><img src="/A%20Victorian%20Bonfire%20Night%20Main%20Cover.png" alt="Astor Library A Victorian Bonfire Night cover" width="240" height="360" loading="lazy"><span class="season-sr-only">A Victorian Bonfire Night</span></a></div><p class="season-art-caption">Complete texts &middot; Astor editions</p></div></div><nav class="season-shelf" aria-label="Autumn at Astor reading from the Astor catalogue"><a href="/books/sleepy-hollow-and-other-stories/"><img src="/Sleepy%20Hollow%20Main%20Cover.png" alt="Astor Library Sleepy Hollow and Other American Halloween Stories cover" width="240" height="360" loading="lazy" decoding="async"><small>American Halloween</small><strong>Sleepy Hollow &amp; Other Stories</strong></a><a href="/books/american-ghost-stories/"><img src="/American%20Ghost%20Stories%20Main%20Cover.png" alt="American Ghost Stories — Astor paperback cover" width="240" height="360" loading="lazy" decoding="async"><small>American ghosts</small><strong>American Ghost Stories</strong></a><a href="/books/m-r-james-collected-ghost-stories/"><img src="/M.R.%20James%20Ghost%20Stories%20Main%20Cover.png" alt="M. R. James: Collected Ghost Stories — Astor paperback cover" width="240" height="360" loading="lazy" decoding="async"><small>Modern ghost stories</small><strong>M. R. James: Ghost Stories</strong></a><a href="/books/victorian-ghost-stories/"><img src="/Victorian%20Ghost%20Stories%20Main%20Cover.png" alt="Astor Library Victorian Ghost Stories cover" width="240" height="360" loading="lazy" decoding="async"><small>Victorian ghosts</small><strong>Victorian Ghost Stories</strong></a><a href="/books/a-victorian-bonfire-night/"><img src="/A%20Victorian%20Bonfire%20Night%20Main%20Cover.png" alt="Astor Library A Victorian Bonfire Night cover" width="240" height="360" loading="lazy" decoding="async"><small>5 November</small><strong>A Victorian Bonfire Night</strong></a><a href="/books/the-willows/"><img src="/The%20Willows%20Main%20Cover.png" alt="The Willows — Astor paperback cover" width="240" height="360" loading="lazy" decoding="async"><small>Modern supernatural</small><strong>The Willows</strong></a></nav></div></section>
-  <!-- seasonal-hero:end -->
-
-  <section class="home-wrap home-counts" aria-label="What Astor Library publishes">
-    <p class="home-counts-line"><a href="/library/">141 complete novels, plays and poems</a><span aria-hidden="true">·</span><a href="/study/">41 editions with summaries</a><span aria-hidden="true">·</span><a href="/resources/">62 guides and 90 annotated passages</a></p>
+  <section class="home-intro" aria-labelledby="home-title">
+    <div class="home-wrap home-intro-grid">
+      <div class="home-intro-copy">
+        <p class="home-kicker">Astor Library</p>
+        <h1 id="home-title">Classic novels, plays and poems, with the notes on the page</h1>
+        <p class="home-intro-deck">Complete texts in paperback and hardback, each with a summary of every chapter or scene, footnotes where the language needs them, and the history of the book. Every title also has a free page on this site.</p>
+        <div class="home-intro-actions"><a class="home-button" href="/library/">See the books</a><a class="home-intro-link" href="/about/">Who makes them</a></div>
+      </div>
+      <div class="home-intro-covers" aria-label="Five Astor editions">
+        <a href="/books/macbeth/"><img src="/assets/home/macbeth.jpg" alt="Macbeth, Astor Library annotated edition" width="160" height="240" decoding="async"></a>
+        <a href="/books/great-expectations/"><img src="/assets/home/great-expectations.jpg" alt="Great Expectations, Astor Library annotated edition" width="160" height="240" decoding="async"></a>
+        <a href="/books/paradise-lost/"><img src="/assets/home/paradise-lost.jpg" alt="Paradise Lost, Astor Library annotated edition" width="160" height="240" decoding="async"></a>
+        <a href="/books/pride-and-prejudice/"><img src="/assets/home/pride-prejudice.jpg" alt="Pride and Prejudice, Astor Library annotated edition" width="160" height="240" decoding="async"></a>
+        <a href="/books/the-odyssey/"><img src="/assets/home/odyssey.jpg" alt="The Odyssey, Astor Library annotated edition" width="160" height="240" decoding="async"></a>
+      </div>
+    </div>
+    <div class="home-wrap home-intro-counts">
+      <p class="home-counts-line"><a href="/library/">141 complete novels, plays and poems</a><span aria-hidden="true">·</span><a href="/study/">41 editions with summaries</a><span aria-hidden="true">·</span><a href="/resources/">62 guides and 90 annotated passages</a></p>
+    </div>
   </section>
 
   <section class="home-wrap home-selected" aria-labelledby="selected-title">
     <header class="home-section-head is-ruled">
-      <h2 id="selected-title">Selected editions</h2>
+      <h2 id="selected-title">From the catalogue</h2>
       <a class="home-more" href="/library/">All 141 books &rarr;</a>
     </header>
     <div class="home-book-list">
-      <a href="/books/paradise-lost/"><img src="/assets/home/paradise-lost.jpg" alt="" width="96" height="144" loading="lazy" decoding="async"><span><small>Restoration &middot; Epic poem</small><strong>Paradise Lost</strong><span class="author">John Milton</span><span class="blurb">Milton&rsquo;s twelve-book epic of the Fall, from the war in Heaven to the expulsion from Eden.</span></span></a>
-      <a href="/books/the-duchess-of-malfi/"><img src="/assets/home/duchess-of-malfi.jpg" alt="" width="96" height="144" loading="lazy" decoding="async"><span><small>Renaissance &middot; Drama</small><strong>The Duchess of Malfi</strong><span class="author">John Webster</span><span class="blurb">A widowed duchess marries in secret; her brothers&rsquo; revenge follows in one of the darkest Jacobean tragedies.</span></span></a>
-      <a href="/books/the-scarlet-letter/"><img src="/assets/home/scarlet-letter.jpg" alt="" width="96" height="144" loading="lazy" decoding="async"><span><small>American &middot; Novel</small><strong>The Scarlet Letter</strong><span class="author">Nathaniel Hawthorne</span><span class="blurb">Hester Prynne, her hidden lover and the Puritan Boston that judges them both.</span></span></a>
-      <a href="/books/pride-and-prejudice/"><img src="/assets/home/pride-prejudice.jpg" alt="" width="96" height="144" loading="lazy" decoding="async"><span><small>Regency &middot; Novel</small><strong>Pride and Prejudice</strong><span class="author">Jane Austen</span><span class="blurb">Elizabeth Bennet, Mr Darcy and the marriage market of a country neighbourhood.</span></span></a>
-      <a href="/books/narrative-of-the-life-of-frederick-douglass/"><img src="/assets/home/frederick-douglass.jpg" alt="" width="96" height="144" loading="lazy" decoding="async"><span><small>American &middot; Autobiography</small><strong>Narrative of the Life of Frederick Douglass</strong><span class="author">Frederick Douglass</span><span class="blurb">The 1845 account of enslavement, literacy and escape that made Douglass a national voice.</span></span></a>
-      <a href="/books/great-expectations/"><img src="/assets/home/great-expectations.jpg" alt="" width="96" height="144" loading="lazy" decoding="async"><span><small>Victorian &middot; Novel</small><strong>Great Expectations</strong><span class="author">Charles Dickens</span><span class="blurb">Pip&rsquo;s rise from the forge to London, and the convict and the jilted bride behind it.</span></span></a>
+      <a href="/books/the-scarlet-letter/"><img src="/The%20Scarlet%20Letter%20%28Main%20Cover%29%20.png" alt="" width="180" height="270" loading="lazy" decoding="async"><strong>The Scarlet Letter</strong><span class="author">Nathaniel Hawthorne</span></a>
+      <a href="/books/frankenstein/"><img src="/Frankenstein%201831%20replacement%20cover.jpg" alt="" width="180" height="270" loading="lazy" decoding="async"><strong>Frankenstein</strong><span class="author">Mary Shelley</span></a>
+      <a href="/books/jane-eyre/"><img src="/Jane%20Eyre%20Main%20Cover.png" alt="" width="180" height="270" loading="lazy" decoding="async"><strong>Jane Eyre</strong><span class="author">Charlotte Brontë</span></a>
+      <a href="/books/hamlet/"><img src="/Hamlet.png" alt="" width="180" height="270" loading="lazy" decoding="async"><strong>Hamlet</strong><span class="author">William Shakespeare</span></a>
+      <a href="/books/narrative-of-the-life-of-frederick-douglass/"><img src="/Frederick%20Douglass.png" alt="" width="180" height="270" loading="lazy" decoding="async"><strong>Narrative of the Life of Frederick Douglass</strong><span class="author">Frederick Douglass</span></a>
+      <a href="/books/the-great-gatsby/"><img src="/The%20Great%20Gatsby%20Main%20Cover.png" alt="" width="180" height="270" loading="lazy" decoding="async"><strong>The Great Gatsby</strong><span class="author">F. Scott Fitzgerald</span></a>
     </div>
   </section>
+
+  <!-- seasonal-hero:start -->
+  <section class="home-season theme-autumn" aria-labelledby="home-season-title"><svg class="season-garland" viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" preserveAspectRatio="xMidYMin slice"><path d="M0 1Q180 53 360 1T720 1T1080 1T1440 1" fill="none" stroke="#9f713f" stroke-width="2"/><g transform="translate(16 35) rotate(0) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#c87738"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(129 70) rotate(79) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#dca752"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(254 35) rotate(38) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#d9a64d"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(367 70) rotate(97) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#bd663c"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(492 35) rotate(76) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#bd603d"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(605 70) rotate(115) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#9d763b"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(730 35) rotate(114) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#c87738"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(843 70) rotate(133) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#dca752"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(968 35) rotate(152) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#d9a64d"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(1081 70) rotate(151) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#bd663c"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(1206 35) rotate(190) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#bd603d"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(1319 70) rotate(169) scale(0.67)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#9d763b"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(1444 35) rotate(228) scale(0.56)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#c87738"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g></svg><div class="season-wrap"><div class="season-hero-grid"><div class="season-hero-copy"><p class="season-eyebrow">Ghost stories · October customs · November fires</p><h2 class="home-season-title" id="home-season-title">Autumn <em>at</em> Astor.</h2><p class="season-deck">Sleepy Hollow, ghost-story collections and the history of Bonfire Night: reading for the weeks when the evenings draw in.</p><div class="season-hero-actions"><a class="season-button" href="/seasons/autumn/">Explore autumn reading <span aria-hidden="true">&rarr;</span></a><a href="/seasons/">All eight seasons</a></div><p class="season-period">September–November <span aria-hidden="true">&#10022;</span> Open all year</p></div><div class="season-art"><svg class="season-scene" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" ><circle cx="302" cy="289" r="215" fill="#cf813f" opacity=".065"/><path d="M94 494C14 314 76 143 196 90M505 497C582 319 536 169 427 93" fill="none" stroke="#9d7044" stroke-width="3"/><g transform="translate(122 131) rotate(-34) scale(0.82)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#c86c37"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(84 247) rotate(-28) scale(1.05)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#d5a14b"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(53 383) rotate(-8) scale(0.72)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#b95b3d"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(156 528) rotate(-60) scale(0.9)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#bd893e"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(470 128) rotate(39) scale(0.78)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#dfad55"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(543 267) rotate(28) scale(0.85)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#c3663d"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(528 427) rotate(25) scale(0.79)"><path d="m0-69 12 22 14-9-2 25 23-8-7 19 16 6-37 28 3 18-22-6-22 6 3-18-37-28 16-6-7-19 23 8-2-25 14 9Z" fill="#d98d42"/><path d="M0 41V-50M0 15-30-8M0 15 30-8" fill="none" stroke="#703426" stroke-width="2" opacity=".6"/></g><g transform="translate(459 530) rotate(68) scale(0.9)"><path d="M0 0C-32-16-35-51 0-78C35-51 32-16 0 0Z" fill="#b17646"/><path d="M0 3V-64M0-20-15-37M0-37 14-52" fill="none" stroke="#694022" stroke-width="2" opacity=".52"/></g><g transform="translate(78 447) rotate(-24) scale(0.76)"><path d="M-18 0C-22 26-7 40 0 43C7 40 22 26 18 0Z" fill="#ddab65"/><path d="M-24 1Q-25-23 0-23Q25-23 24 1Z" fill="#71492b"/><path d="m0-23 4-13" stroke="#99643b" stroke-width="6"/><path d="m-16-9 8 7 8-7 8 7 8-7" fill="none" stroke="#a67b4e" stroke-width="3"/></g><g transform="translate(493 342) rotate(21) scale(0.58)"><path d="M-18 0C-22 26-7 40 0 43C7 40 22 26 18 0Z" fill="#ddab65"/><path d="M-24 1Q-25-23 0-23Q25-23 24 1Z" fill="#71492b"/><path d="m0-23 4-13" stroke="#99643b" stroke-width="6"/><path d="m-16-9 8 7 8-7 8 7 8-7" fill="none" stroke="#a67b4e" stroke-width="3"/></g><g transform="translate(338 521) rotate(25) scale(0.64)"><path d="M-18 0C-22 26-7 40 0 43C7 40 22 26 18 0Z" fill="#ddab65"/><path d="M-24 1Q-25-23 0-23Q25-23 24 1Z" fill="#71492b"/><path d="m0-23 4-13" stroke="#99643b" stroke-width="6"/><path d="m-16-9 8 7 8-7 8 7 8-7" fill="none" stroke="#a67b4e" stroke-width="3"/></g><g transform="translate(232 537) rotate(-7) scale(0.55)"><path d="M0-45q-5-20 10-28" fill="none" stroke="#78954d" stroke-width="9"/><ellipse cx="-20" cy="0" rx="37" ry="47" fill="#dd641f"/><ellipse cx="20" cy="0" rx="37" ry="47" fill="#ef8c2a"/><ellipse cy="0" rx="28" ry="49" fill="#f5a741"/><path d="M-13-43q-17 47 0 86M13-43q17 47 0 86" stroke="#d77629" stroke-width="2" fill="none"/></g><g transform="translate(303 547) rotate(7) scale(0.39)"><path d="M0-45q-5-20 10-28" fill="none" stroke="#78954d" stroke-width="9"/><ellipse cx="-20" cy="0" rx="37" ry="47" fill="#dd641f"/><ellipse cx="20" cy="0" rx="37" ry="47" fill="#ef8c2a"/><ellipse cy="0" rx="28" ry="49" fill="#f5a741"/><path d="M-13-43q-17 47 0 86M13-43q17 47 0 86" stroke="#d77629" stroke-width="2" fill="none"/></g><circle cx="54" cy="217" r="2" fill="#d8b87e" opacity=".8"/><circle cx="101" cy="301" r="2" fill="#d8b87e" opacity=".8"/><circle cx="524" cy="265" r="3" fill="#d8b87e" opacity=".8"/><circle cx="458" cy="72" r="2" fill="#d8b87e" opacity=".8"/><circle cx="363" cy="60" r="2" fill="#d8b87e" opacity=".8"/><circle cx="249" cy="95" r="3" fill="#d8b87e" opacity=".8"/><circle cx="189" cy="491" r="2" fill="#d8b87e" opacity=".8"/><circle cx="415" cy="514" r="3" fill="#d8b87e" opacity=".8"/><circle cx="551" cy="379" r="2" fill="#d8b87e" opacity=".8"/><circle cx="69" cy="383" r="3" fill="#d8b87e" opacity=".8"/><circle cx="380" cy="116" r="2" fill="#d8b87e" opacity=".8"/><circle cx="158" cy="80" r="2" fill="#d8b87e" opacity=".8"/><circle cx="521" cy="105" r="2" fill="#d8b87e" opacity=".8"/><path d="M284 85q16 0 16-16q0 16 16 16q-16 0-16 16q0-16-16-16Z" fill="#e3c284"/><path d="M115 559q185 15 370 0" fill="none" stroke="#ac8353" stroke-width="1"/></svg><div class="season-cover-fan"><a class="season-cover season-cover-0" href="/books/sleepy-hollow-and-other-stories/"><img src="/Sleepy%20Hollow%20Main%20Cover.png" alt="Astor Library Sleepy Hollow and Other American Halloween Stories cover" width="240" height="360" loading="lazy"><span class="season-sr-only">Sleepy Hollow and Other American Halloween Stories</span></a><a class="season-cover season-cover-1" href="/books/the-willows/"><img src="/The%20Willows%20Main%20Cover.png" alt="The Willows — Astor paperback cover" width="240" height="360" loading="lazy"><span class="season-sr-only">The Willows</span></a><a class="season-cover season-cover-2" href="/books/a-victorian-bonfire-night/"><img src="/A%20Victorian%20Bonfire%20Night%20Main%20Cover.png" alt="Astor Library A Victorian Bonfire Night cover" width="240" height="360" loading="lazy"><span class="season-sr-only">A Victorian Bonfire Night</span></a></div><p class="season-art-caption">Complete texts &middot; Astor editions</p></div></div><nav class="season-shelf" aria-label="Autumn at Astor reading from the Astor catalogue"><a href="/books/sleepy-hollow-and-other-stories/"><img src="/Sleepy%20Hollow%20Main%20Cover.png" alt="Astor Library Sleepy Hollow and Other American Halloween Stories cover" width="240" height="360" loading="lazy" decoding="async"><small>American Halloween</small><strong>Sleepy Hollow &amp; Other Stories</strong></a><a href="/books/american-ghost-stories/"><img src="/American%20Ghost%20Stories%20Main%20Cover.png" alt="American Ghost Stories — Astor paperback cover" width="240" height="360" loading="lazy" decoding="async"><small>American ghosts</small><strong>American Ghost Stories</strong></a><a href="/books/m-r-james-collected-ghost-stories/"><img src="/M.R.%20James%20Ghost%20Stories%20Main%20Cover.png" alt="M. R. James: Collected Ghost Stories — Astor paperback cover" width="240" height="360" loading="lazy" decoding="async"><small>Modern ghost stories</small><strong>M. R. James: Ghost Stories</strong></a><a href="/books/victorian-ghost-stories/"><img src="/Victorian%20Ghost%20Stories%20Main%20Cover.png" alt="Astor Library Victorian Ghost Stories cover" width="240" height="360" loading="lazy" decoding="async"><small>Victorian ghosts</small><strong>Victorian Ghost Stories</strong></a><a href="/books/a-victorian-bonfire-night/"><img src="/A%20Victorian%20Bonfire%20Night%20Main%20Cover.png" alt="Astor Library A Victorian Bonfire Night cover" width="240" height="360" loading="lazy" decoding="async"><small>5 November</small><strong>A Victorian Bonfire Night</strong></a><a href="/books/the-willows/"><img src="/The%20Willows%20Main%20Cover.png" alt="The Willows — Astor paperback cover" width="240" height="360" loading="lazy" decoding="async"><small>Modern supernatural</small><strong>The Willows</strong></a></nav></div></section>
+  <!-- seasonal-hero:end -->
 
   <section class="home-samples" aria-labelledby="samples-title">
     <div class="home-wrap">
       <header class="home-samples-head">
-        <div><p class="home-kicker">Sample pages</p><h2 id="samples-title">What is on an Astor page?</h2></div>
-        <p>The pictures below are pages from Astor editions. A main edition gives you the complete work with summaries, notes and line numbers on the page. A study edition adds what an essay needs: quotations with analysis, the critics, and model paragraphs.</p>
+        <div><p class="home-kicker">Inside the books</p><h2 id="samples-title">What an Astor page looks like</h2></div>
+        <p>Pages from four editions. A main edition has the complete work with summaries, notes and line numbers on the page. A study edition adds quotations with analysis, the critics and model paragraphs.</p>
       </header>
       <div class="home-sample-grid">
-        <a href="/study/othello/">
-<img src="/assets/samples/othello-study-sample.jpg" width="1200" height="900" alt="Two sample pages from the Othello study edition showing key quotations with analysis and critical interpretations" loading="lazy" decoding="async">
-<span>
-<strong>
-<em>Othello</em> &middot; Study Edition</strong>
-<span>Key quotations with analysis, critical readings and essay support beside the text.</span>
-</span>
-</a>
-        <a href="/books/macbeth/"><img src="/assets/samples/macbeth-sample.jpg" width="1200" height="914" alt="Two sample pages from Macbeth showing the complete play, scene summary, line numbers and explanatory footnotes" loading="lazy" decoding="async"><span><strong><em>Macbeth</em> &middot; Astor Edition</strong><span>Complete play, scene summaries, line numbers and explanatory footnotes on the same page as the text.</span></span></a>
-        <a href="/study/rime-of-the-ancient-mariner/"><img src="/assets/samples/rime-of-the-ancient-mariner-sample.jpg" width="1200" height="896" alt="Two sample pages from The Rime of the Ancient Mariner showing the poem, marginal glosses, line numbers and footnotes" loading="lazy" decoding="async"><span><strong><em>The Rime of the Ancient Mariner</em> &middot; Study Edition</strong><span>Complete poem, marginal glosses, line numbers and explanatory footnotes.</span></span></a>
-        <a href="/books/the-odyssey/"><img src="/assets/samples/the-odyssey-sample.jpg" width="1200" height="893" alt="Two sample pages from The Odyssey showing the prose text, a Story so far summary and a contextual note panel" loading="lazy" decoding="async"><span><strong><em>The Odyssey</em> &middot; Astor Edition</strong><span>Complete prose text, chapter summaries, short notes and contextual panels.</span></span></a>
+        <a href="/books/macbeth/"><img src="/assets/samples/macbeth-sample.jpg" width="1200" height="914" alt="Two pages from the Astor Macbeth: the play text with line numbers, a scene summary and footnotes" loading="lazy" decoding="async"><span><strong><em>Macbeth</em></strong><span>The complete play, scene summaries, line numbers and footnotes on the same page as the text.</span></span></a>
+        <a href="/study/othello/"><img src="/assets/samples/othello-study-sample.jpg" width="1200" height="900" alt="Two pages from the Othello study edition: key quotations with analysis and critical readings" loading="lazy" decoding="async"><span><strong><em>Othello</em>, study edition</strong><span>Key quotations with analysis, and the critics, beside the text.</span></span></a>
+        <a href="/study/rime-of-the-ancient-mariner/"><img src="/assets/samples/rime-of-the-ancient-mariner-sample.jpg" width="1200" height="896" alt="Two pages from The Rime of the Ancient Mariner: the poem with Coleridge’s marginal gloss, line numbers and footnotes" loading="lazy" decoding="async"><span><strong><em>The Rime of the Ancient Mariner</em></strong><span>The poem with Coleridge’s marginal gloss, line numbers and footnotes.</span></span></a>
+        <a href="/books/the-odyssey/"><img src="/assets/samples/the-odyssey-sample.jpg" width="1200" height="893" alt="Two pages from The Odyssey: the prose text, a summary of the story so far and a note on the background" loading="lazy" decoding="async"><span><strong><em>The Odyssey</em></strong><span>Butler’s prose translation, a summary before each book and short notes on the background.</span></span></a>
       </div>
-      <p class="home-samples-foot"><a href="/about/">Read the full description of each edition type &rarr;</a></p>
+      <p class="home-samples-foot"><a href="/about/">How the editions are made &rarr;</a></p>
     </div>
   </section>
 
-  <div class="home-pair">
-  <section class="home-wrap home-free" aria-labelledby="free-title">
-    <div>
-      <p class="home-kicker">Passage Room &middot; Free close reading</p>
-      <h2 id="free-title">How does Iago turn a handkerchief into proof?</h2>
-      <blockquote>&ldquo;Trifles light as air / Are to the jealous confirmations strong / As proofs of holy writ.&rdquo;</blockquote>
-      <p class="lead">This close reading follows the speech line by line, showing how Iago makes a lost handkerchief look like evidence and tying each claim to the wording of the passage. One of ninety annotated passages you can read on the site.</p>
-      <a class="home-more" href="/passage-room/othello-trifles-proof/">Read the annotated passage &rarr;</a>
-    </div>
-    <div>
-      <div class="home-free-head"><h3>Free guides and study material</h3><a class="home-more" href="/resources/">All 62 &rarr;</a></div>
-      <div class="home-free-list">
-        <a href="/resources/victorian/how-literature-shaped-halloween/"><img src="/assets/book-thumbs/how-literature-shaped-halloween-597bd755.jpg" alt="" width="64" height="96" loading="lazy" decoding="async"><span><small>Free guide &middot; Read online</small><strong>How Literature Shaped Halloween</strong></span></a>
-        <a href="/resources/winters-tale/complete-study-guide/"><img src="/assets/home/winters-tale-guide.jpg" alt="" width="64" height="96" loading="lazy" decoding="async"><span><small>Free guide &middot; Read online</small><strong>The Winter&rsquo;s Tale: complete study guide</strong></span></a>
-        <a href="/resources/macbeth/quick-guide/"><img src="/assets/home/macbeth.jpg" alt="" width="64" height="96" loading="lazy" decoding="async"><span><small>Free guide &middot; Read online</small><strong>Macbeth: quick guide</strong></span></a>
-        <a href="/study/rime-of-the-ancient-mariner/"><img src="/assets/home/rime-study.jpg" alt="" width="64" height="96" loading="lazy" decoding="async"><span><small>New study edition</small><strong>The Rime of the Ancient Mariner</strong></span></a>
-      </div>
-    </div>
-  </section>
   <section class="home-wrap home-study" aria-labelledby="study-tools-title">
     <header class="home-section-head is-ruled">
-      <h2 id="study-tools-title">Read the book, then put it to work</h2>
-      <a class="home-more" href="/play/">Revise &rarr;</a>
+      <h2 id="study-tools-title">Free on the site</h2>
     </header>
-    <p class="lead">Many books here come with study tools on their own page: the plot act by act, who is who, the themes, and <span data-astor-count="quotations">2194</span> quotations across <span data-astor-count="titles">97</span> books. The same lines are used in the quizzes, the flashcards and the daily questions.</p>
-    <aside class="home-today" data-astor-home-today aria-label="Today on Astor">
-      <p class="home-kicker">Today on Astor</p>
-      <p class="home-today-status">A passage for the day and five quick questions. New every morning.</p>
-      <nav><a class="home-more" href="/today/">Open today&rsquo;s page &rarr;</a></nav>
-    </aside>
+    <p class="lead">Every book has a page with its plot, characters and background. For <span data-astor-count="titles">97</span> of them there is a full study guide as well: the plot act by act, the themes, and <span data-astor-count="quotations">2,194</span> quotations with notes.</p>
     <div class="home-study-grid">
-      <a href="/play/"><small>Revise</small><strong>Quizzes on each book</strong><span>Who said it, fill the line, order the plot, theme match, technique spotter and more. Every question is built from the book&rsquo;s study guide, and your scores stay on your own device.</span></a>
-      <a href="/today/"><small>Today</small><strong>Today’s questions</strong><span>Five questions drawn from across the library. The same five for everybody, changing at midnight, with a result grid that gives nothing away.</span></a>
-      <a href="/explore/quotations/"><small>Explore</small><strong>Every quotation, searchable</strong><span>Search by word or speaker, or narrow by book, character, theme or technique. Each quotation comes with its analysis and a link to the study guide it belongs to.</span></a>
-      <a href="/my-library/"><small>My library</small><strong>What you have been reading</strong><span>Saved books, progress you marked yourself, your revision streak and a commonplace book you can export. No account, nothing sent anywhere.</span></a>
+      <a href="/play/"><small>Revise</small><strong>Quizzes and flashcards</strong><span>Ten questions at a time on the book you are studying.</span></a>
+      <a href="/passage-room/"><small>Passage Room</small><strong>Close readings</strong><span>Ninety passages read line by line, from Hamlet to The Yellow Wall-Paper.</span></a>
+      <a href="/resources/"><small>Free guides</small><strong>Illustrated guides</strong><span>Sixty-two guides to read online.</span></a>
+      <a href="/explore/quotations/"><small>Explore</small><strong>Quotations</strong><span>Search by word, speaker, book or theme.</span></a>
     </div>
-  </section>
-  </div>
-
-  <section class="home-browse" aria-labelledby="browse-title">
-    <div class="home-wrap">
-      <h2 id="browse-title">Browse by period, writer, subject or question</h2>
-      <div class="home-browse-cols">
-        <div><h3>By period</h3><a href="/ancient-epic/">Ancient &amp; Epic</a><a href="/renaissance-early-modern/">Renaissance &amp; Early Modern</a><a href="/restoration-enlightenment/">Restoration &amp; Enlightenment</a><a href="/romantic-regency/">Romantic &amp; Regency</a><a href="/victorian/">Victorian</a><a href="/american/">American</a><a href="/modern/">Modern</a><a class="home-more" href="/classic-literature/">All periods &rarr;</a></div>
-        <div><h3>By writer</h3><a href="/authors/#jane-austen">Jane Austen</a><a href="/authors/#charles-dickens">Charles Dickens</a><a href="/authors/#frederick-douglass">Frederick Douglass</a><a href="/authors/#nathaniel-hawthorne">Nathaniel Hawthorne</a><a href="/authors/#christopher-marlowe">Christopher Marlowe</a><a href="/authors/#john-milton">John Milton</a><a href="/authors/#william-shakespeare">William Shakespeare</a><a class="home-more" href="/authors/">All writers &rarr;</a></div>
-        <div><h3>By subject</h3><a href="/subjects/gothic-literature/">Gothic</a><a href="/subjects/tragedy/">Tragedy</a><a href="/subjects/epic-poetry/">Epic</a><a href="/subjects/satire-political-writing/">Satire</a><a href="/subjects/detective-fiction/">Detective fiction</a><a href="/subjects/slavery-freedom-abolition/">Freedom</a><a class="home-more" href="/subjects/">All subjects &rarr;</a></div>
-        <div><h3>By question &middot; Reading routes</h3><a class="is-question" href="/reading-routes/">What makes a home?</a><a class="is-question" href="/reading-routes/">Who is allowed freedom?</a><a class="is-question" href="/reading-routes/">What counts as evidence?</a><a class="home-more" href="/reading-routes/">All reading routes &rarr;</a></div>
-      </div>
-    </div>
+    <p class="home-account-note">You do not need an account for the books, study guides, close readings or quizzes. The illustrated guides show three slides, then ask for a free account. Quiz scores and saved books stay in your own browser.</p>
   </section>
 
   <section class="home-wrap home-colophon" aria-label="Support the free library">
     <div class="home-support">
-      <p class="home-kicker">Support the free library</p>
-      <h2>Guides, passages and presentations stay free to read</h2>
-      <p>Buying an Astor edition, or making a small contribution, keeps the free resources online for students and teachers.</p>
+      <h2>Keep the free pages free</h2>
+      <p>Buying an Astor edition, or a small contribution, pays for the free guides and study pages.</p>
       <nav><a class="home-support-button" href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a class="home-more" href="mailto:support@astorlibrary.com">Contact &amp; support &rarr;</a></nav>
     </div>
   </section>
@@ -155,6 +172,5 @@
   <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact &amp; support</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>
-<script type="module" src="/assets/astor/home.mjs"></script>
 </body>
 </html>

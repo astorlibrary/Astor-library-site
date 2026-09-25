@@ -755,3 +755,51 @@ input:focus-visible {
 .home-pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 0 56px; }
 .home-pair > .home-wrap { padding-top: 62px; padding-bottom: 62px; max-width: none; }
 @media (max-width: 1000px) { .home-pair { grid-template-columns: minmax(0, 1fr); gap: 0; } }
+
+/* ---------------------------------------------------------- the introduction
+
+   What Astor is and a row of real covers come first; the season, the sample
+   pages and the free material follow. */
+.home-intro { background: var(--catalogue-cream); border-bottom: 1px solid var(--catalogue-line); }
+.home-intro .home-wrap { padding-top: clamp(40px, 6vw, 84px); padding-bottom: clamp(44px, 6vw, 84px); }
+.home-intro-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
+.home-intro .home-kicker { font-size: 12px; }
+.home-intro h1 { margin: 0 0 20px; max-width: 16ch; font-size: clamp(36px, 4.4vw, 60px); line-height: 1.05; letter-spacing: -0.03em; text-wrap: balance; }
+.home-intro-deck { max-width: 36em; margin: 0 0 28px; color: var(--catalogue-body); font-size: clamp(17px, 1.45vw, 19px); line-height: 1.6; }
+.home-intro-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; margin: 0 0 30px; }
+.home-button { display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; background: var(--catalogue-wine); color: var(--catalogue-cream); font: 700 13px/1 var(--catalogue-sans); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; }
+.home-button:hover, .home-button:focus-visible { background: var(--catalogue-navy); }
+.home-intro-link { padding-bottom: 4px; border-bottom: 1px solid currentColor; color: var(--catalogue-wine); font: 700 13px/1 var(--catalogue-sans); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; }
+.home-intro-link:hover, .home-intro-link:focus-visible { color: var(--catalogue-navy); }
+.home-intro .home-intro-grid.home-wrap { padding-bottom: 28px; }
+.home-intro .home-intro-counts { padding-top: 0; padding-bottom: clamp(36px, 5vw, 64px); }
+.home-intro .home-counts-line { font-size: 15.5px; }
+@media (max-width: 620px) {
+  .home-intro .home-counts-line { flex-direction: column; gap: 8px; }
+  .home-intro .home-counts-line span { display: none; }
+}
+.home-intro-covers { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(8px, 1.2vw, 16px); align-items: end; padding-top: 18px; }
+.home-intro-covers a { display: block; }
+.home-intro-covers img { width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: cover; background: var(--catalogue-sand); box-shadow: 0 14px 26px rgba(33, 29, 26, 0.26); transition: transform 0.2s ease; }
+.home-intro-covers a:nth-child(2) img, .home-intro-covers a:nth-child(4) img { transform: translateY(-18px); }
+.home-intro-covers a:nth-child(3) img { transform: translateY(-30px); }
+.home-intro-covers a:hover img, .home-intro-covers a:focus-visible img { transform: translateY(-36px); }
+
+@media (max-width: 900px) {
+  .home-intro-grid { grid-template-columns: minmax(0, 1fr); }
+  .home-intro-covers { max-width: 560px; padding-top: 30px; }
+}
+
+/* From the catalogue: covers first, a title and an author under each. */
+.home-book-list { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 38px clamp(16px, 2.2vw, 30px); }
+.home-book-list > a { display: flex; flex-direction: column; gap: 4px; padding: 0; border: 0; }
+.home-book-list img { width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: cover; margin-bottom: 12px; box-shadow: 0 12px 24px rgba(33, 29, 26, 0.2); }
+.home-book-list strong { margin: 0; font: italic 400 19px/1.2 var(--catalogue-serif); }
+.home-book-list .author { font-size: 14px; }
+@media (max-width: 1000px) { .home-book-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .home-book-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 16px; } }
+
+.home-account-note { max-width: 74ch; margin: 30px 0 0; padding-top: 18px; border-top: 1px solid var(--catalogue-line); color: var(--catalogue-muted); font: 15px/1.6 var(--catalogue-sans); }
+.home-support { max-width: 720px; }
+.home-study-grid { border: 0; }
+.home-study .lead { font-size: 17px; line-height: 1.6; }

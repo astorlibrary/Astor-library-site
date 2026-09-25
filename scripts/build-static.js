@@ -844,9 +844,44 @@ function addEditorialCredit(html, source) {
   const copy = book
     ? 'Dates, publication details and historical claims are checked against the sources listed on this page.'
     : 'This free guide contains summaries, context or analysis for reading, teaching and independent study.';
-  const credit = '<aside class="astor-page-credit" aria-label="About this page"><span><b>' + (book ? 'Astor Library reading page' : 'Astor Library free guide') + '</b>' + copy + '</span><a href="/editorial/">How we work <span aria-hidden="true">&rarr;</span></a></aside>';
+  const sourcesLink = book && /\bid="sources"/.test(html) ? '<a href="#sources">The sources <span aria-hidden="true">&darr;</span></a>' : '';
+  const credit = book
+    ? '<aside class="astor-page-credit" aria-label="About this page"><span><b>Edited by Haydn Wood</b>' + copy + '</span>' + sourcesLink + '<a href="/about/#editor">About the editor <span aria-hidden="true">&rarr;</span></a></aside>'
+    : '<aside class="astor-page-credit" aria-label="About this page"><span><b>Astor Library free guide</b>' + copy + '</span><a href="/editorial/">How we work <span aria-hidden="true">&rarr;</span></a></aside>';
   const withIntro = html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>)/i, '$1' + credit);
   return withIntro === html ? html.replace(/(<main\b[^>]*>)/i, '$1' + credit) : withIntro;
+}
+
+// One box near the top of every book page with each format that can be
+// bought: paperback, any second paperback edition, hardback, study edition.
+// scripts/book-formats.json is the only list of formats and links.
+const bookFormats = JSON.parse(fs.readFileSync(path.join(root, 'scripts', 'book-formats.json'), 'utf8'));
+
+function addProductBox(html, source) {
+  const context = bookContext(source);
+  if (!context || html.includes('class="astor-buy"')) return html;
+  const slug = context.book.href.split('/')[2];
+  const formats = bookFormats[slug];
+  if (!formats || !formats.length) return html;
+  const rows = formats.map(format => {
+    const edition = format.edition ? '<span> · ' + escapeHtml(format.edition) + '</span>' : '';
+    const note = format.note ? '<p class="astor-buy-note">' + escapeHtml(format.note) + '</p>' : '';
+    const more = format.page ? ' <a class="astor-buy-more" href="' + escapeHtml(format.page) + '">What is in it</a>' : '';
+    return '<li class="astor-buy-item"><img src="' + escapeHtml(format.image) + '" alt="" width="56" height="84" loading="lazy" decoding="async">' +
+      '<div class="astor-buy-text"><p class="astor-buy-format">' + escapeHtml(format.format) + edition + '</p>' + note + '</div>' +
+      '<p class="astor-buy-actions"><a class="astor-buy-button" href="' + escapeHtml(format.url) + '" rel="noopener">Buy on Amazon</a>' + more + '</p></li>';
+  }).join('');
+  const box = '<section class="astor-buy" id="buy" aria-labelledby="astor-buy-title"><h2 id="astor-buy-title">Buy the Astor edition</h2><ul class="astor-buy-list">' + rows + '</ul></section>';
+  // The buttons that used to sit beside the hero cover are replaced by the box.
+  html = html.replace(/(<aside class="[^"]*astor-book-cover[^"]*"(?:(?!<\/aside>)[\s\S])*?)<div class="button-row">(?:(?!<\/aside>)[\s\S])*?<\/div>(\s*<\/div>\s*<\/aside>)/, '$1$2');
+  // So are the retailer buttons in the other hero asides; links to
+  // presentations, study pages and indexes stay.
+  html = html.replace(/<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>/i, intro => intro
+    .replace(/<a class="button [^"]*" href="https:\/\/mybook\.to\/[^"]*"[^>]*>[\s\S]*?<\/a>/g, '')
+    .replace(/<div class="button-row">\s*<\/div>/g, ''));
+  const afterCredit = html.replace(/(<aside class="astor-page-credit"[\s\S]*?<\/aside>)/, '$1' + box);
+  if (afterCredit !== html) return afterCredit;
+  return html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>)/i, '$1' + box);
 }
 
 function addEditionSample(html, source) {
@@ -1062,7 +1097,10 @@ function addGlobalNavigation(html, source) {
   ].some(route => href === route);
   const accountCurrent = href === '/account/' || href.startsWith('/account/');
   const seasonsCurrent = inRoute('/seasons/');
-  const browseCurrent = seasonsCurrent || hardbacksCurrent || shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent || readingRoutesCurrent || exploreToolsCurrent || teachersCurrent;
+  const aboutCurrent = href === '/about/' || href === '/editorial/';
+  const booksSection = booksCurrent || seasonsCurrent || hardbacksCurrent || shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent;
+  const studySection = studyCurrent || resourcesCurrent || passageCurrent || playCurrent || teachersCurrent;
+  const exploreSection = searchCurrent || exploreToolsCurrent || readingRoutesCurrent;
 
   const header = `<header class="site-header astor-global-header">
   <div class="astor-header-identity">
@@ -1072,60 +1110,64 @@ function addGlobalNavigation(html, source) {
   </div>
   <nav class="nav astor-primary-nav" id="site-navigation" aria-label="Primary navigation">
     <div class="astor-primary-links">
-      <a class="nav-link" href="/library/"${current(booksCurrent, href === '/library/')}><span class="astor-nav-number" aria-hidden="true">01</span><span>Books</span></a>
-      <details class="astor-browse-menu${browseCurrent ? ' is-current-section' : ''}">
-        <summary aria-controls="astor-browse-panel"><span class="astor-nav-number" aria-hidden="true">02</span><span>Browse library</span></summary>
-        <div class="astor-browse-panel" id="astor-browse-panel">
-          <div class="astor-browse-feature">
-            <p>Open the catalogue</p>
-            <h2>Find a book, a writer or a study tool.</h2>
-            <span>Move through Astor Library by literary period, subject, author or a connected reading route.</span>
-            <a href="/explore/">Search every title <i aria-hidden="true">&rarr;</i></a>
+      <details class="astor-browse-menu astor-menu${booksSection ? ' is-current-section' : ''}">
+        <summary aria-controls="astor-menu-books"><span>Books</span></summary>
+        <div class="astor-browse-panel astor-menu-panel is-two" id="astor-menu-books">
+          <div class="astor-menu-col">
+            <h2>Books</h2>
+            <a href="/library/"${current(href === '/library/')}>All books</a>
+            <a href="/shakespeare/"${current(shakespeareCurrent, href === '/shakespeare/')}>Shakespeare</a>
+            <a href="/hardbacks/"${current(hardbacksCurrent, href === '/hardbacks/')}>Hardbacks</a>
+            <a href="/authors/"${current(authorsCurrent, href === '/authors/')}>Writers</a>
+            <a href="/subjects/"${current(subjectsCurrent, href === '/subjects/')}>Subjects</a>
+            <a href="/seasons/"${current(seasonsCurrent, href === '/seasons/')}>Seasons</a>
           </div>
-          <div class="astor-browse-directory">
-            <section aria-labelledby="astor-browse-by-title">
-              <h2 id="astor-browse-by-title">Browse by</h2>
-              <div class="astor-browse-cards">
-                <a href="/shakespeare/"${current(shakespeareCurrent, href === '/shakespeare/')}><em aria-hidden="true">01</em><span><b>Shakespeare</b><small>Plays, poems and editions</small></span></a>
-                <a href="/hardbacks/"${current(hardbacksCurrent, href === '/hardbacks/')}><em aria-hidden="true">02</em><span><b>Hardbacks</b><small>Gift and casebound editions</small></span></a>
-                <a href="/authors/"${current(authorsCurrent, href === '/authors/')}><em aria-hidden="true">03</em><span><b>Writers</b><small>Authors and their Astor editions</small></span></a>
-                <a href="/subjects/"${current(subjectsCurrent, href === '/subjects/')}><em aria-hidden="true">04</em><span><b>Subjects</b><small>Genres, themes and contexts</small></span></a>
-                <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}><em aria-hidden="true">05</em><span><b>Reading routes</b><small>Books connected by a question</small></span></a>
-                <a href="/seasons/"${current(seasonsCurrent, href === '/seasons/')}><em aria-hidden="true">06</em><span><b>Seasons &amp; occasions</b><small>Festive books and reading rooms</small></span></a>
-              </div>
-            </section>
-            <section aria-labelledby="astor-tools-title">
-              <h2 id="astor-tools-title">Study tools</h2>
-              <div class="astor-browse-cards">
-                <a href="/explore/quotations/"${current(href === '/explore/quotations/')}><em aria-hidden="true">01</em><span><b>Quotation explorer</b><small>Search and filter every quotation</small></span></a>
-                <a href="/explore/timeline/"${current(href === '/explore/timeline/')}><em aria-hidden="true">02</em><span><b>Timeline</b><small>Every book in order, with its dates</small></span></a>
-                <a href="/explore/characters/"${current(href === '/explore/characters/')}><em aria-hidden="true">03</em><span><b>Character maps</b><small>Who is linked to whom in each book</small></span></a>
-                <a href="/explore/themes/"${current(href === '/explore/themes/')}><em aria-hidden="true">04</em><span><b>Themes</b><small>Themes the books share</small></span></a>
-                <a href="/explore/techniques/"${current(href === '/explore/techniques/')}><em aria-hidden="true">05</em><span><b>Technique glossary</b><small>Literary terms, with examples</small></span></a>
-                <a href="/explore/map/"${current(href === '/explore/map/')}><em aria-hidden="true">06</em><span><b>Map of settings</b><small>Where the books are set</small></span></a>
-                <a href="/explore/compare/"${current(href === '/explore/compare/')}><em aria-hidden="true">07</em><span><b>Compare two texts</b><small>Shared themes, side by side</small></span></a>
-                <a href="/for-teachers/"${current(teachersCurrent)}><em aria-hidden="true">08</em><span><b>For teachers</b><small>Starters, worksheets, projector mode</small></span></a>
-              </div>
-            </section>
-            <section class="astor-period-directory" aria-labelledby="astor-period-title">
-              <div class="astor-directory-heading"><h2 id="astor-period-title">Literary periods</h2><a href="/classic-literature/"${current(href === '/classic-literature/')}>View the overview <span aria-hidden="true">&rarr;</span></a></div>
-              <div class="astor-period-links">
-                <a href="/ancient-epic/"${current(inRoute('/ancient-epic/'))}><b>Ancient &amp; Epic</b><span>Epic, myth and classical inheritance</span></a>
-                <a href="/renaissance-early-modern/"${current(inRoute('/renaissance-early-modern/'))}><b>Renaissance</b><span>Drama, poetry and early modern prose</span></a>
-                <a href="/restoration-enlightenment/"${current(inRoute('/restoration-enlightenment/'))}><b>Restoration</b><span>Satire, reason and eighteenth-century writing</span></a>
-                <a href="/romantic-regency/"${current(inRoute('/romantic-regency/'))}><b>Romantic &amp; Regency</b><span>Revolution, nature and the imagination</span></a>
-                <a href="/victorian/"${current(inRoute('/victorian/'))}><b>Victorian</b><span>Industry, empire and the modern city</span></a>
-                <a href="/american/"${current(inRoute('/american/'))}><b>American</b><span>Nation, freedom and American voices</span></a>
-                <a href="/modern/"${current(inRoute('/modern/'))}><b>Modern</b><span>Modernism, politics and new forms</span></a>
-              </div>
-            </section>
+          <div class="astor-menu-col">
+            <h2>By period</h2>
+            <a href="/ancient-epic/"${current(inRoute('/ancient-epic/'))}>Ancient &amp; Epic</a>
+            <a href="/renaissance-early-modern/"${current(inRoute('/renaissance-early-modern/'))}>Renaissance</a>
+            <a href="/restoration-enlightenment/"${current(inRoute('/restoration-enlightenment/'))}>Restoration</a>
+            <a href="/romantic-regency/"${current(inRoute('/romantic-regency/'))}>Romantic &amp; Regency</a>
+            <a href="/victorian/"${current(inRoute('/victorian/'))}>Victorian</a>
+            <a href="/american/"${current(inRoute('/american/'))}>American</a>
+            <a href="/modern/"${current(inRoute('/modern/'))}>Modern</a>
           </div>
         </div>
       </details>
-      <a class="nav-link" href="/resources/"${current(resourcesCurrent, href === '/resources/')}><span class="astor-nav-number" aria-hidden="true">03</span><span>Free resources</span></a>
-      <a class="nav-link" href="/study/"${current(studyCurrent, href === '/study/')}><span class="astor-nav-number" aria-hidden="true">04</span><span>Study editions</span></a>
-      <a class="nav-link" href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}><span class="astor-nav-number" aria-hidden="true">05</span><span>Passage Room</span></a>
-      <a class="nav-link" href="/play/"${current(playCurrent, href === '/play/')}><span class="astor-nav-number" aria-hidden="true">06</span><span>Revise</span></a>
+      <details class="astor-browse-menu astor-menu${studySection ? ' is-current-section' : ''}">
+        <summary aria-controls="astor-menu-study"><span>Study</span></summary>
+        <div class="astor-browse-panel astor-menu-panel" id="astor-menu-study">
+          <div class="astor-menu-col">
+            <h2>Study</h2>
+            <a href="/study/"${current(studyCurrent, href === '/study/')}>Study editions</a>
+            <a href="/resources/"${current(resourcesCurrent, href === '/resources/')}>Free guides</a>
+            <a href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}>Passage Room</a>
+            <a href="/play/"${current(playCurrent && href !== '/today/', href === '/play/')}>Revise</a>
+            <a href="/today/"${current(href === '/today/')}>Today’s questions</a>
+            <a href="/for-teachers/"${current(teachersCurrent)}>For teachers</a>
+          </div>
+        </div>
+      </details>
+      <details class="astor-browse-menu astor-menu${exploreSection ? ' is-current-section' : ''}">
+        <summary aria-controls="astor-menu-explore"><span>Explore</span></summary>
+        <div class="astor-browse-panel astor-menu-panel is-two" id="astor-menu-explore">
+          <div class="astor-menu-col">
+            <h2>Explore</h2>
+            <a href="/explore/"${current(href === '/explore/')}>Search the library</a>
+            <a href="/explore/quotations/"${current(href === '/explore/quotations/')}>Quotations</a>
+            <a href="/explore/timeline/"${current(href === '/explore/timeline/')}>Timeline</a>
+            <a href="/explore/characters/"${current(href === '/explore/characters/')}>Character maps</a>
+            <a href="/explore/themes/"${current(href === '/explore/themes/')}>Themes</a>
+          </div>
+          <div class="astor-menu-col is-continued">
+            <a href="/explore/techniques/"${current(href === '/explore/techniques/')}>Technique glossary</a>
+            <a href="/explore/map/"${current(href === '/explore/map/')}>Map of settings</a>
+            <a href="/explore/compare/"${current(href === '/explore/compare/')}>Compare two books</a>
+            <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}>Reading routes</a>
+          </div>
+        </div>
+      </details>
+      <a class="nav-link" href="/about/"${current(aboutCurrent, href === '/about/')}><span>About</span></a>
     </div>
     <div class="astor-nav-utilities">
       <a class="astor-utility-link astor-search-link" href="/explore/" data-astor-palette${current(searchCurrent, href === '/explore/')}><span aria-hidden="true"></span>Search</a>
@@ -1305,7 +1347,13 @@ function addStudyToolkit(html, source) {
   return html;
 }
 
+// The number of books is counted, never typed: any page can write
+// <span data-count="books">N</span> and the build puts the real figure in.
+const catalogueBookCount = fs.readdirSync(path.join(root, 'books'))
+  .filter(slug => fs.existsSync(path.join(root, 'books', slug, 'index.html'))).length;
+
 function prepareHtml(html, source) {
+  html = html.replace(/(<span data-count="books">)\d+(<\/span>)/g, '$1' + catalogueBookCount + '$2');
   // The site publishes British English and stamps en-GB metadata everywhere;
   // normalise the bare lang="en" used by older source pages to match.
   html = html.replace(/(<html\b[^>]*\blang=")en(")/i, '$1en-GB$2');
@@ -1325,6 +1373,7 @@ function prepareHtml(html, source) {
   html = addBookReadingNavigation(html, source);
   html = addResourceReadingNavigation(html, source);
   html = addEditorialCredit(html, source);
+  html = addProductBox(html, source);
   html = addEditionSample(html, source);
   html = addContextImageShelf(html, source);
   html = addStudyToolkit(html, source);

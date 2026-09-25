@@ -205,20 +205,35 @@ for (const file of htmlFiles) {
   }
 }
 
+// One catalogue total everywhere: a stale "all 97 books" on one page and
+// "141" on another makes a publisher look careless.
+const countedDistFiles = [];
+if (fs.existsSync(path.join(root, 'dist'))) walk(path.join(root, 'dist'), countedDistFiles);
+for (const fileName of countedDistFiles) {
+  const text = fs.readFileSync(fileName, 'utf8').replace(/<[^>]+>/g, ' ');
+  for (const match of text.matchAll(/\b(?:all|All)\s+(\d{2,3})\s+books\b|\b(\d{2,3})\s+complete novels, plays and poems\b|\b(\d{2,3})\s+books across\b/g)) {
+    const figure = Number(match[1] || match[2] || match[3]);
+    if (figure !== sourceBookFiles.length) failures.push(path.relative(root, fileName) + ' says ' + match[0].trim() + ' but the catalogue has ' + sourceBookFiles.length);
+  }
+}
+
 const homepage = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 const homepageMain = homepage.match(/<main class="home"[\s\S]*?<\/main>/i)?.[0] || '';
 if (!homepage.includes('/assets/home.css')) failures.push('The homepage is missing its lightweight stylesheet');
 if (!homepage.includes('/assets/navigation.css')) failures.push('The homepage is missing the shared navigation stylesheet');
 if (!homepage.includes('class="site-header astor-global-header')) failures.push('The homepage is missing the shared header');
 if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failures.push('The homepage is missing the grouped footer');
-for (const className of ['home-counts-line', 'home-book-list', 'home-sample-grid', 'home-free-list', 'home-study-grid', 'home-browse-cols', 'home-support']) {
+for (const className of ['home-counts-line', 'home-intro-covers', 'home-book-list', 'home-sample-grid', 'home-study-grid', 'home-account-note', 'home-support']) {
   if (!homepageMain.includes('class="' + className + '"')) failures.push('The homepage is missing its ' + className + ' section');
 }
-// The homepage hero is generated from seasonal-data.json by rebuild-seasons.js,
+// The homepage opens with what Astor is (the only h1) and a row of covers.
+if (countMatches(homepageMain, /<h1\b/g) !== 1 || !/<h1 id="home-title">[^<]+<\/h1>/.test(homepageMain)) failures.push('The homepage must open with its own h1 saying what Astor publishes');
+if (countMatches(homepageMain.match(/<div class="home-intro-covers"[\s\S]*?<\/div>/)?.[0] || '', /<img\b/g) < 4) failures.push('The homepage introduction must show real covers');
+// The seasonal feature is generated from seasonal-data.json by rebuild-seasons.js,
 // so these guard the shape rather than the season: a title with its own
 // flourish, the period it covers, and six editions to buy.
 const autumnFeature = homepageMain.match(/<section class="home-season[\s\S]*?<\/section>/i)?.[0] || '';
-if (!/<h1 id="home-season-title">[^<]*<em>[^<]+<\/em>[^<]*\.<\/h1>/.test(autumnFeature)) failures.push('The homepage is missing its seasonal hero');
+if (!/<h2 class="home-season-title" id="home-season-title">[^<]*<em>[^<]+<\/em>[^<]*\.<\/h2>/.test(autumnFeature)) failures.push('The homepage is missing its seasonal feature');
 if (!/class="season-period">[^<]*&#10022;|class="season-period">[^<]+/.test(autumnFeature)) failures.push('The homepage seasonal hero is missing the months it covers');
 if (countMatches(autumnFeature, /class="season-cover /g) !== 3) failures.push('The homepage seasonal hero must fan three covers');
 const autumnShelf = autumnFeature.match(/<nav class="season-shelf"[\s\S]*?<\/nav>/i)?.[0] || '';
@@ -245,13 +260,12 @@ for (const total of [
   sourceBookFiles.length + ' complete novels, plays and poems',
   'All ' + sourceBookFiles.length + ' books &rarr;',
   studyEditionCount + ' editions with summaries',
-  resourceData.length + ' guides and ' + closeReadingCount + ' annotated passages',
-  'href="/resources/">All ' + resourceData.length + ' &rarr;'
+  resourceData.length + ' guides and ' + closeReadingCount + ' annotated passages'
 ]) {
   if (!homepageMain.includes(total)) failures.push('The homepage is missing its current catalogue total: ' + total);
 }
 const homepageSections = Array.from(homepageMain.matchAll(/^  <section class="([^"]+)"/gm), match => match[1]);
-if (homepageSections.length !== 8 || !homepageSections[0].startsWith('home-season ')) failures.push('The homepage must contain eight top-level sections beginning with the seasonal hero');
+if (homepageSections.length !== 6 || homepageSections[0] !== 'home-intro' || !homepageSections.some(name => name.startsWith('home-season '))) failures.push('The homepage must contain six top-level sections: the introduction first, then the books, the season, the sample pages, the free material and support');
 if (!homepageSections.includes('home-wrap home-study')) failures.push('The homepage is missing its study and revision section');
 for (const sample of ['/assets/samples/macbeth-sample.jpg', '/assets/samples/othello-study-sample.jpg', '/assets/samples/rime-of-the-ancient-mariner-sample.jpg', '/assets/samples/the-odyssey-sample.jpg']) {
   if (!homepageMain.includes('src="' + sample + '"')) failures.push('The homepage is missing edition sample ' + sample);
@@ -260,7 +274,7 @@ if (!homepage.includes('mailto:support@astorlibrary.com')) failures.push('The ho
 for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/', '/account/', '/privacy/']) {
   if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
 }
-if (!homepage.includes('class="astor-browse-menu"')) failures.push('The homepage is missing its grouped Browse disclosure');
+if (countMatches(homepage, /class="astor-browse-menu astor-menu/g) !== 3) failures.push('The homepage header must have the Books, Study and Explore menus');
 if (!homepage.includes('data-auth-link')) failures.push('The homepage is missing its account-aware sign-in link');
 if (homepage.includes('class="home-reading-desk"') || homepage.includes('class="home-library-doors"')) failures.push('The homepage still contains an older duplicate section');
 

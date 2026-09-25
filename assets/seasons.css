@@ -94,12 +94,12 @@
 .home-season::before{content:"";position:absolute;inset:18px;border:1px solid color-mix(in srgb,var(--accent) 34%,transparent);pointer-events:none;z-index:2}
 .home-season::after{content:"";position:absolute;inset:auto 0 0;height:10px;background:repeating-linear-gradient(135deg,var(--ribbon) 0 20px,var(--accent) 20px 23px,var(--night) 23px 43px,var(--accent) 43px 46px);z-index:2}
 .home-season a{color:inherit}
-.home-season>.season-wrap{position:relative;z-index:1;padding-top:104px;padding-bottom:46px}
+.home-season>.season-wrap{position:relative;z-index:1;padding-top:72px;padding-bottom:46px}
 .home-season .season-hero-grid{min-height:0;padding-bottom:14px;gap:20px;align-items:center}
 .home-season .season-eyebrow{color:var(--accent);display:flex;gap:12px;align-items:center}
 .home-season .season-eyebrow::before{content:"";width:33px;height:2px;background:var(--accent)}
-.home-season h1{font-size:clamp(56px,6.6vw,96px);font-weight:500;line-height:.94;letter-spacing:-.055em;margin:0 0 22px;max-width:640px;text-wrap:balance;text-shadow:0 3px 18px #0002}
-.home-season h1 em{color:var(--accent);font-style:italic;font-weight:400}
+.home-season .home-season-title{font-size:clamp(40px,4.8vw,68px);font-weight:500;line-height:.94;letter-spacing:-.055em;margin:0 0 22px;max-width:640px;text-wrap:balance;text-shadow:0 3px 18px #0002}
+.home-season .home-season-title em{color:var(--accent);font-style:italic;font-weight:400}
 .home-season .season-deck{font-size:20px;max-width:520px}
 .home-season .season-art{min-height:430px}
 .home-season .season-cover-fan{inset:12% 5% 20%}
@@ -110,14 +110,14 @@
 .home-season .season-shelf small{font:800 9px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-transform:uppercase;letter-spacing:.13em;color:var(--accent)}
 .home-season .season-shelf strong{font:400 15px/1.18 Georgia,'Times New Roman',serif}
 @media(max-width:1000px){
-  .home-season>.season-wrap{padding-top:92px}
+  .home-season>.season-wrap{padding-top:64px}
   .home-season .season-hero-grid{grid-template-columns:1fr}
   .home-season .season-art{min-height:360px;max-width:460px;width:100%;margin:0 auto}
   .home-season .season-shelf{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 }
 @media(max-width:620px){
-  .home-season>.season-wrap{padding-top:78px;padding-bottom:34px}
-  .home-season h1{font-size:clamp(46px,12vw,68px)}
+  .home-season>.season-wrap{padding-top:56px;padding-bottom:34px}
+  .home-season .home-season-title{font-size:clamp(36px,10vw,52px)}
   .home-season .season-deck{font-size:18px}
   .home-season .season-art{min-height:300px}
   .home-season .season-shelf{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:4px;padding-top:22px}

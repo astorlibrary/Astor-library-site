@@ -39,6 +39,7 @@ const ORDER = [
   { rank: 0, test: b => /^<nav[^>]*class="[^"]*book-breadcrumb/.test(b) },
   { rank: 1, test: b => /^<section[^>]*class="[^"]*page-intro/.test(b) },
   { rank: 2, test: b => /^<aside[^>]*class="[^"]*astor-page-credit/.test(b) },
+  { rank: 2.5, test: b => /^<section[^>]*class="astor-buy"/.test(b) },
   { rank: 3, test: b => /^<section[^>]*class="[^"]*quick-facts/.test(b) },
   { rank: 4, test: b => /^<nav[^>]*class="[^"]*page-contents/.test(b) },
   { rank: 5, test: b => /^<section[^>]*class="astor-toolkit"/.test(b) },

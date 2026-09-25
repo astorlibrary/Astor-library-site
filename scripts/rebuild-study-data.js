@@ -269,9 +269,9 @@ const homepageFile = path.join(root, 'index.html');
 if (fs.existsSync(homepageFile)) {
   let homepage = fs.readFileSync(homepageFile, 'utf8');
   for (const [key, value] of [['quotations', index.counts.quotations], ['titles', index.counts.books]]) {
-    const pattern = new RegExp('(<span data-astor-count="' + key + '">)\\d+(<\\/span>)', 'g');
+    const pattern = new RegExp('(<span data-astor-count="' + key + '">)[\\d,]+(<\\/span>)', 'g');
     if (!pattern.test(homepage)) throw new Error('The homepage has no ' + key + ' counter');
-    homepage = homepage.replace(pattern, '$1' + value + '$2');
+    homepage = homepage.replace(pattern, '$1' + Number(value).toLocaleString('en-GB') + '$2');
   }
   fs.writeFileSync(homepageFile, homepage);
 }

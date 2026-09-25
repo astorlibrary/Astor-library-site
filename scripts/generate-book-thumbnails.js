@@ -17,6 +17,14 @@ const formatImages = formatReleaseData.hardbacks.map(function (hardback) {
     image: '/' + encodeURIComponent(hardback.image).replace(/'/g, '%27')
   };
 });
+// Covers that appear only in the buying box on a book page (second editions,
+// study editions not yet in the index).
+const formatBoxImages = Object.entries(JSON.parse(fs.readFileSync(path.join(root, 'scripts', 'book-formats.json'), 'utf8')))
+  .flatMap(([slug, formats]) => formats.map(format => ({
+    type: 'format',
+    title: [slug, format.format, format.edition].filter(Boolean).join(' '),
+    image: format.image
+  })));
 const items = [
   ...(index.books || []),
   ...(index.studyEditions || []),
@@ -26,7 +34,8 @@ const items = [
   ...(index.subjects || []),
   ...(index.authors || []),
   ...(index.collections || []),
-  ...formatImages
+  ...formatImages,
+  ...formatBoxImages
 ];
 const seenSources = new Set();
 
@@ -55,6 +64,8 @@ for (const item of items) {
   // catalogue and explore grid cells. Consumers derive the -360 name from the
   // mapped path, so both files must always exist together.
   for (const [maxSize, quality, name] of [[720, '78', fileName], [360, '74', smallFileName]]) {
+    // A thumbnail is named after its source path, so an existing file is current.
+    if (fs.existsSync(path.join(outputDirectory, name))) continue;
     childProcess.execFileSync('/usr/bin/sips', [
       '-s', 'format', 'jpeg',
       '-s', 'formatOptions', quality,

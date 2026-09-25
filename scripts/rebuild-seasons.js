@@ -26,7 +26,7 @@ fs.writeFileSync('seasons/index.html',home);
 function homeSeasonBlock(s) {
   const covers = s.heroBooks.map((href, i) => {
     const b = book(href);
-    return '<a class="season-cover season-cover-' + i + '" href="' + e(href) + '"><img src="' + e(b.image) + '" alt="' + e(b.imageAlt) + '" width="240" height="360"' + (i === 0 ? '' : ' loading="lazy"') + '><span class="season-sr-only">' + e(b.title) + '</span></a>';
+    return '<a class="season-cover season-cover-' + i + '" href="' + e(href) + '"><img src="' + e(b.image) + '" alt="' + e(b.imageAlt) + '" width="240" height="360" loading="lazy"><span class="season-sr-only">' + e(b.title) + '</span></a>';
   }).join('');
   const shelf = s.home.shelf.map(item => {
     const b = book(item.href);
@@ -37,7 +37,7 @@ function homeSeasonBlock(s) {
   return '<section class="home-season theme-' + e(s.theme) + '" aria-labelledby="home-season-title">' + garland(s.theme) +
     '<div class="season-wrap"><div class="season-hero-grid"><div class="season-hero-copy">' +
     '<p class="season-eyebrow">' + e(s.kicker) + '</p>' +
-    '<h1 id="home-season-title">' + headline + '</h1>' +
+    '<h2 class="home-season-title" id="home-season-title">' + headline + '</h2>' +
     '<p class="season-deck">' + e(s.deck) + '</p>' +
     '<div class="season-hero-actions"><a class="season-button" href="' + hrefFor(s) + '">Explore ' + e((s.shortTitle || s.title).toLowerCase()) + ' reading <span aria-hidden="true">&rarr;</span></a>' +
     '<a href="/seasons/">All eight seasons</a></div>' +
