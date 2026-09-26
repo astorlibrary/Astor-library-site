@@ -420,7 +420,7 @@ if (!fs.existsSync(macbethStudyFile)) {
   failures.push('The detailed Macbeth study page is missing');
 } else {
   const macbethStudy = fs.readFileSync(macbethStudyFile, 'utf8');
-  if (!macbethStudy.includes('href="https://mybook.to/cntRBz"')) failures.push('The Macbeth study page is missing its edition link');
+  if (!macbethStudy.includes('href="https://astorlibrary.com/go/macbeth-study"')) failures.push('The Macbeth study page is missing its edition link');
   for (const route of ['macbeth-unsex-me-here', 'macbeth-is-this-a-dagger', 'macbeth-tomorrow-and-tomorrow']) {
     if (!macbethStudy.includes('href="/passage-room/' + route + '/"')) failures.push('The Macbeth study page is missing its close reading: ' + route);
   }
@@ -872,12 +872,12 @@ for (const slug of newShakespeareSlugs) {
 }
 
 const mainAdditionLinks = {
-  'the-duchess-of-malfi': 'https://mybook.to/gxHx',
-  'the-rape-of-lucrece': 'https://mybook.to/Nbx2',
-  'venus-and-adonis': 'https://mybook.to/PDmxAYg',
-  'doctor-faustus': 'https://mybook.to/B3XgneK',
-  'the-scarlet-letter': 'https://mybook.to/3HYxB',
-  'paradise-lost': 'https://mybook.to/d36s3bi'
+  'the-duchess-of-malfi': 'https://astorlibrary.com/go/the-duchess-of-malfi',
+  'the-rape-of-lucrece': 'https://astorlibrary.com/go/the-rape-of-lucrece',
+  'venus-and-adonis': 'https://astorlibrary.com/go/venus-and-adonis',
+  'doctor-faustus': 'https://astorlibrary.com/go/doctor-faustus',
+  'the-scarlet-letter': 'https://astorlibrary.com/go/the-scarlet-letter',
+  'paradise-lost': 'https://astorlibrary.com/go/paradise-lost'
 };
 for (const [slug, purchaseUrl] of Object.entries(mainAdditionLinks)) {
   const file = path.join(root, 'books', slug, 'index.html');
@@ -916,7 +916,7 @@ for (const book of [...apocryphaBooks, ...expandedBooks]) {
 const studyHub = fs.readFileSync(path.join(root, 'study', 'index.html'), 'utf8');
 const expectedStudyCards = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'content-index.json'), 'utf8')).studyEditions.length;
 if (countMatches(studyHub, /class="study-card(?: dual)?"/g) !== expectedStudyCards) failures.push('The study collection must contain ' + expectedStudyCards + ' editions');
-for (const studyUrl of ['https://mybook.to/HPiX', 'https://mybook.to/ENJxO', 'https://mybook.to/x8aiiFG', 'https://mybook.to/2QzQqmh', 'https://mybook.to/M4c6K', 'https://mybook.to/o0Am2j', 'https://mybook.to/2mR1', 'https://mybook.to/gf9uZE', 'https://mybook.to/l4zC9']) {
+for (const studyUrl of ['https://astorlibrary.com/go/henry-v-study', 'https://astorlibrary.com/go/loves-labours-lost-study', 'https://astorlibrary.com/go/measure-for-measure-study', 'https://astorlibrary.com/go/the-merchant-of-venice-study', 'https://astorlibrary.com/go/mrs-dalloway-study', 'https://astorlibrary.com/go/richard-ii-study', 'https://astorlibrary.com/go/the-taming-of-the-shrew-study', 'https://astorlibrary.com/go/titus-andronicus-study', 'https://astorlibrary.com/go/twelfth-night-study']) {
   if (!studyHub.includes('href="' + studyUrl + '"') && !studyHub.includes('data-buy-url="' + studyUrl + '"')) failures.push('The study collection is missing ' + studyUrl);
 }
 for (const slug of ['henry-v', 'the-merchant-of-venice', 'the-taming-of-the-shrew', 'rime-of-the-ancient-mariner']) {
@@ -932,8 +932,8 @@ for (const slug of ['henry-v', 'the-merchant-of-venice', 'the-taming-of-the-shre
   if (wordCount < 900) failures.push(slug + ' study page is too thin at ' + wordCount + ' visible words');
 }
 const tamingPage = fs.readFileSync(path.join(root, 'books', 'taming-of-the-shrew', 'index.html'), 'utf8');
-if (!tamingPage.includes('href="https://mybook.to/SjnG"')) failures.push('The Taming of the Shrew page is missing its main edition');
-if (!tamingPage.includes('href="https://mybook.to/2mR1"')) failures.push('The Taming of the Shrew page is missing its study edition');
+if (!tamingPage.includes('href="https://astorlibrary.com/go/taming-of-the-shrew"')) failures.push('The Taming of the Shrew page is missing its main edition');
+if (!tamingPage.includes('href="https://astorlibrary.com/go/the-taming-of-the-shrew-study"')) failures.push('The Taming of the Shrew page is missing its study edition');
 
 const redirectFile = path.join(root, '_redirects');
 if (!fs.existsSync(redirectFile)) {

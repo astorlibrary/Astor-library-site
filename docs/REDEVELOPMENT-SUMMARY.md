@@ -107,7 +107,7 @@ field is a field that will drift.
   "author": "William Shakespeare",
   "href": "/books/macbeth/",          // must resolve to a real page
   "studyHref": "/study/macbeth/",     // optional
-  "buyUrl": "https://mybook.to/...",  // copied from the book page, never invented
+  "buyUrl": "https://astorlibrary.com/go/book-slug",  // copied from the book page, never invented
   "form": "play",                     // play | novel | novella | story collection | poem | memoir | non-fiction
   "genre": "Tragedy",
   "period": "Shakespeare",            // one of the eight collection names

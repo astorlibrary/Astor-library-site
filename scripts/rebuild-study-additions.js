@@ -42,7 +42,7 @@ const END = '<!-- study-additions:end -->';
 if (html.includes(START)) {
   html = html.slice(0, html.indexOf(START)) + html.slice(html.indexOf(END) + END.length);
 } else {
-  html = html.replace(/<a class="study-card" href="https:\/\/mybook\.to\/lhbh"[^>]*>[\s\S]*?(?=<\/section><section class="section-title" id="paired-editions")/g, '');
+  html = html.replace(/<a class="study-card" href="https:\/\/astorlibrary\.com\/go\/alls-well-that-ends-well-study"[^>]*>[\s\S]*?(?=<\/section><section class="section-title" id="paired-editions")/g, '');
 }
 // Baseline hub cards whose study edition has an on-site page: link the page,
 // keep the retailer link as data-buy-url, and label the button accordingly.
@@ -51,13 +51,13 @@ if (html.includes(START)) {
 // card follows its page into the site the moment the page exists.
 const studyPages = {
   ...generatedPages,
-  'https://mybook.to/cntRBz': '/study/macbeth/',
-  'https://mybook.to/Q1lrp8': '/study/hamlet/',
-  'https://mybook.to/A8uO': '/study/othello/',
-  'https://mybook.to/wwhLC': '/study/romeo-and-juliet/',
-  'https://mybook.to/OS3XKr': '/study/a-christmas-carol/',
-  'https://mybook.to/ddk9RnO': '/study/jekyll-and-hyde/',
-  'https://mybook.to/uGEUdh': '/study/frankenstein/'
+  'https://astorlibrary.com/go/macbeth-study': '/study/macbeth/',
+  'https://astorlibrary.com/go/hamlet-study': '/study/hamlet/',
+  'https://astorlibrary.com/go/othello-study': '/study/othello/',
+  'https://astorlibrary.com/go/romeo-and-juliet-study': '/study/romeo-and-juliet/',
+  'https://astorlibrary.com/go/a-christmas-carol-study': '/study/a-christmas-carol/',
+  'https://astorlibrary.com/go/jekyll-and-hyde-study': '/study/jekyll-and-hyde/',
+  'https://astorlibrary.com/go/frankenstein-study': '/study/frankenstein/'
 };
 for (const [buyUrl, pageHref] of Object.entries(studyPages)) {
   html = html.replace(

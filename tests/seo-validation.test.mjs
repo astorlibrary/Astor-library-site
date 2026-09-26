@@ -45,8 +45,8 @@ test('sitemap checks exact URL membership, including equal-count errors and dupl
 
 test('edition schema keeps the cover and purchase target attached to the right physical format', () => {
   const record = {
-    title: 'Example book', image: 'Example Hard Cover.png', purchaseUrl: 'https://mybook.to/hardback',
-    paperbackImage: 'Example Main Cover.png', paperbackPurchaseUrl: 'https://mybook.to/paperback'
+    title: 'Example book', image: 'Example Hard Cover.png', purchaseUrl: 'https://astorlibrary.com/go/hardback',
+    paperbackImage: 'Example Main Cover.png', paperbackPurchaseUrl: 'https://astorlibrary.com/go/paperback'
   };
   const editions = bookEditionSchemas(record, url, image => 'https://astorlibrary.com/' + encodeURIComponent(image));
   assert.equal(editions[0].bookFormat, 'https://schema.org/Paperback');
@@ -68,7 +68,7 @@ test('cover format recognition follows all supplied filename conventions without
 });
 
 test('a supplied paperback has one exact edition entity and cannot use hardcover artwork', () => {
-  const record = { title: 'Example', image: 'Example Main Cover.png', purchaseUrl: 'https://mybook.to/example' };
+  const record = { title: 'Example', image: 'Example Main Cover.png', purchaseUrl: 'https://astorlibrary.com/go/example' };
   const edition = paperbackEditionSchema(record, url, image => '/' + image);
   assert.equal(edition.bookFormat, 'https://schema.org/Paperback');
   assert.equal(edition.potentialAction.target, record.purchaseUrl);

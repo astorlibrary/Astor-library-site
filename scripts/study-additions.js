@@ -2,112 +2,112 @@ module.exports = [
   {
     title: "All’s Well That Ends Well",
     image: "All's Well That Ends Well Study.png",
-    url: 'https://mybook.to/lhbh',
+    url: 'https://astorlibrary.com/go/alls-well-that-ends-well-study',
     description: 'Helena’s cure, the husband she is granted, the bed trick, and an ending nobody on stage calls happy.'
   },
   {
     title: 'Antony and Cleopatra',
     image: 'Antony and Cleopatra Study.png',
-    url: 'https://mybook.to/VgUfa',
+    url: 'https://astorlibrary.com/go/antony-and-cleopatra-study',
     description: 'Rome against Egypt, a battle Antony loses twice, Cleopatra staging her own death, and Plutarch underneath it all.'
   },
   {
     title: 'As You Like It',
     image: 'As You Like It Study.png',
-    url: 'https://mybook.to/3EoUR',
+    url: 'https://astorlibrary.com/go/as-you-like-it-study',
     description: 'A court, a forest, Rosalind in disguise teaching Orlando how to love, and some very bad poetry pinned to trees.'
   },
   {
     title: 'The Comedy of Errors',
     image: 'Comedy of Errors Study.png',
-    url: 'https://mybook.to/x08hp4o',
+    url: 'https://astorlibrary.com/go/comedy-of-errors-study',
     description: 'Two sets of twins, one gold chain, a single day in Ephesus, and a family reunited in the last hundred lines.'
   },
   {
     title: 'Coriolanus',
     image: 'Coriolanus Study.png',
-    url: 'https://mybook.to/x4F6rs',
+    url: 'https://astorlibrary.com/go/coriolanus-study',
     description: 'A soldier who will not ask for votes, the tribunes who use that against him, and the mother who talks him out of burning Rome.'
   },
   {
     title: 'Cymbeline',
     image: 'Cymbeline Study Cover.png',
-    url: 'https://mybook.to/ySSywz',
+    url: 'https://astorlibrary.com/go/cymbeline-study',
     description: 'The wager, the trunk in Imogen’s bedroom, the lost princes in Wales, and a last scene that unties every knot.'
   },
   {
     title: 'Henry IV, Parts 1 and 2',
     image: 'Henry IV parts 1 and 2 Study.png',
-    url: 'https://mybook.to/3xXPCSy',
+    url: 'https://astorlibrary.com/go/henry-iv-parts-1-and-2-study',
     description: 'Hal’s two fathers, the tavern against the court, Hotspur and Falstaff, and the rejection both plays are moving towards.'
   },
   {
     title: 'Henry IV, Part 2',
     image: 'Henry IV, Part 2 Study Cover.png',
-    url: 'https://mybook.to/a6b3c',
+    url: 'https://astorlibrary.com/go/henry-iv-part-2-study',
     description: 'A king who cannot sleep, a prince waiting, Falstaff recruiting in Gloucestershire, and the first act of the new reign.'
   },
   {
     title: 'Henry V',
     image: 'Henry V Study Cover.png',
-    url: 'https://mybook.to/HPiX',
+    url: 'https://astorlibrary.com/go/henry-v-study',
     pageHref: '/study/henry-v/',
     description: 'The legal case for the war, the night before Agincourt, the speeches everyone quotes, and Bardolph’s hanging.'
   },
   {
     title: 'Love’s Labour’s Lost',
     image: "Love's Labour's Lost Study Cover.png",
-    url: 'https://mybook.to/ENJxO',
+    url: 'https://astorlibrary.com/go/loves-labours-lost-study',
     description: 'An oath four men cannot keep, a year of penance in place of a wedding, and a comedy that argues about words.'
   },
   {
     title: 'Measure for Measure',
     image: 'Measure for Measure Study Cover.png',
-    url: 'https://mybook.to/x8aiiFG',
+    url: 'https://astorlibrary.com/go/measure-for-measure-study',
     description: 'Angelo’s revived law, Isabella’s choice, the Duke in disguise, and the silence she is left in at the end.'
   },
   {
     title: 'The Merchant of Venice',
     image: 'Merchant of Venice Study Cover.png',
-    url: 'https://mybook.to/2QzQqmh',
+    url: 'https://astorlibrary.com/go/the-merchant-of-venice-study',
     pageHref: '/study/the-merchant-of-venice/',
     description: 'The bond, the three caskets, the trial, and a conversion the play stages as mercy.'
   },
   {
     title: 'Mrs Dalloway',
     image: 'Mrs Dalloway Study Cover.png',
-    url: 'https://mybook.to/M4c6K',
+    url: 'https://astorlibrary.com/go/mrs-dalloway-study',
     description: 'One day in June, a party being prepared, Septimus and his doctors, and the moment the two stories touch.'
   },
   {
     title: 'Richard II',
     image: 'Richard II Study Cover.png',
-    url: 'https://mybook.to/o0Am2j',
+    url: 'https://astorlibrary.com/go/richard-ii-study',
     description: 'A king who believes the crown is divine, a cousin who takes it anyway, and the language each uses about the ground itself.'
   },
   {
     title: 'The Taming of the Shrew',
     image: 'The Taming of the Shrew Study Cover.png',
-    url: 'https://mybook.to/2mR1',
+    url: 'https://astorlibrary.com/go/the-taming-of-the-shrew-study',
     pageHref: '/study/the-taming-of-the-shrew/',
     description: 'The induction most productions cut, Petruchio’s method, Katherina’s last speech, and the argument that will not settle.'
   },
   {
     title: 'Titus Andronicus',
     image: 'Titus Andronicus Study Cover.png',
-    url: 'https://mybook.to/gf9uZE',
+    url: 'https://astorlibrary.com/go/titus-andronicus-study',
     description: 'Rome’s ceremonies and what happens underneath them, Lavinia’s silence and how she breaks it, and a revenge served at table.'
   },
   {
     title: 'Twelfth Night',
     image: 'Twelfth Night Study Cover.png',
-    url: 'https://mybook.to/l4zC9',
+    url: 'https://astorlibrary.com/go/twelfth-night-study',
     description: 'A shipwreck, a disguise, a household in mourning, a forged letter — and the shadows at the edge of the ending.'
   },
   {
     title: 'The Rime of the Ancient Mariner',
     image: 'Rime of the Ancient Mariner Study Cover.png',
-    url: 'https://mybook.to/1TqZ',
+    url: 'https://astorlibrary.com/go/rime-of-the-ancient-mariner-study',
     pageHref: '/study/rime-of-the-ancient-mariner/',
     description: 'The voyage, the bird, a punishment out of all proportion, and the marginal gloss Coleridge added twenty years later.'
   }

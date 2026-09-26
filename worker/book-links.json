@@ -4,6 +4,1656 @@
     "great-gatsby": "the-great-gatsby"
   },
   "books": {
+    "a-christmas-carol": {
+      "title": "A Christmas Carol",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FXTLXTGN",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FXTLXTGN",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FXTLXTGN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FXTLXTGN",
+          "kind": "product"
+        }
+      }
+    },
+    "a-christmas-carol-study": {
+      "title": "A Christmas Carol",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FF2HNM5Q",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FF2HNM5Q",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FF2HNM5Q",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FF2HNM5Q",
+          "kind": "product"
+        }
+      }
+    },
+    "a-connecticut-yankee-in-king-arthurs-court": {
+      "title": "A Connecticut Yankee in King Arthur’s Court",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHYF3PCD",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHYF3PCD",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHYF3PCD",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHYF3PCD",
+          "kind": "product"
+        }
+      }
+    },
+    "a-dolls-house": {
+      "title": "A Doll’s House",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHBZDN25",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHBZDN25",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHBZDN25",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHBZDN25",
+          "kind": "product"
+        }
+      }
+    },
+    "a-midsummer-nights-dream": {
+      "title": "A Midsummer Night's Dream",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GMHJZC67",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GMHJZC67",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GMHJZC67",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GMHJZC67",
+          "kind": "product"
+        }
+      }
+    },
+    "a-midsummer-nights-dream-expanded-scholarly-edition": {
+      "title": "A Midsummer Night’s Dream — Expanded Scholarly Edition",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCPKGM4D",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCPKGM4D",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCPKGM4D",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCPKGM4D",
+          "kind": "product"
+        }
+      }
+    },
+    "a-midsummer-nights-dream-study": {
+      "title": "A Midsummer Night’s Dream",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FJ2DYHXK",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FJ2DYHXK",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FJ2DYHXK",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FJ2DYHXK",
+          "kind": "product"
+        }
+      }
+    },
+    "a-room-of-ones-own": {
+      "title": "A Room of One’s Own",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G4V4WQNK",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G4V4WQNK",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G4V4WQNK",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G4V4WQNK",
+          "kind": "product"
+        }
+      }
+    },
+    "a-victorian-bonfire-night": {
+      "title": "A Victorian Bonfire Night",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFB66SGC",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFB66SGC",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFB66SGC",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFB66SGC",
+          "kind": "product"
+        }
+      }
+    },
+    "a-victorian-bonfire-night-hardback": {
+      "title": "A Victorian Bonfire Night",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFWBM1H1",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFWBM1H1",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFWBM1H1",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFWBM1H1",
+          "kind": "product"
+        }
+      }
+    },
+    "a-victorian-christmas": {
+      "title": "A Victorian Christmas",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G4LNC66J",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G4LNC66J",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G4LNC66J",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G4LNC66J",
+          "kind": "product"
+        }
+      }
+    },
+    "a-victorian-christmas-hardback": {
+      "title": "A Victorian Christmas",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G4LTB75S",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G4LTB75S",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G4LTB75S",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G4LTB75S",
+          "kind": "product"
+        }
+      }
+    },
+    "a-yorkshire-tragedy": {
+      "title": "A Yorkshire Tragedy",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCJT7FRQ",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCJT7FRQ",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCJT7FRQ",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCJT7FRQ",
+          "kind": "product"
+        }
+      }
+    },
+    "adventures-of-huckleberry-finn": {
+      "title": "Adventures of Huckleberry Finn",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GT4K68LB",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GT4K68LB",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GT4K68LB",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GT4K68LB",
+          "kind": "product"
+        }
+      }
+    },
+    "adventures-of-sherlock-holmes": {
+      "title": "The Adventures of Sherlock Holmes",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GSF14Z9D",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GSF14Z9D",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GSF14Z9D",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GSF14Z9D",
+          "kind": "product"
+        }
+      }
+    },
+    "alices-adventures-in-wonderland": {
+      "title": "Alice’s Adventures in Wonderland",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG5RQCNG",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG5RQCNG",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG5RQCNG",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG5RQCNG",
+          "kind": "product"
+        }
+      }
+    },
+    "alls-well-that-ends-well": {
+      "title": "All's Well That Ends Well",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GMW2J1SC",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GMW2J1SC",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GMW2J1SC",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GMW2J1SC",
+          "kind": "product"
+        }
+      }
+    },
+    "alls-well-that-ends-well-study": {
+      "title": "All’s Well That Ends Well",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGWGCQ17",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGWGCQ17",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGWGCQ17",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGWGCQ17",
+          "kind": "product"
+        }
+      }
+    },
+    "american-christmas-stories": {
+      "title": "American Christmas Stories",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHY692JH",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHY692JH",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHY692JH",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHY692JH",
+          "kind": "product"
+        }
+      }
+    },
+    "american-ghost-stories": {
+      "title": "American Ghost Stories",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHTKX3C8",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHTKX3C8",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHTKX3C8",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHTKX3C8",
+          "kind": "product"
+        }
+      }
+    },
+    "animal-farm": {
+      "title": "Animal Farm",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/s?k=Animal+Farm+Haydn+Wood",
+          "kind": "search"
+        },
+        "US": {
+          "url": "https://www.amazon.com/s?k=Animal+Farm+Haydn+Wood",
+          "kind": "search"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/s?k=Animal+Farm+Haydn+Wood",
+          "kind": "search"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/s?k=Animal+Farm+Haydn+Wood",
+          "kind": "search"
+        }
+      }
+    },
+    "anne-of-green-gables": {
+      "title": "Anne of Green Gables",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFDFM78S",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFDFM78S",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFDFM78S",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFDFM78S",
+          "kind": "product"
+        }
+      }
+    },
+    "antony-and-cleopatra": {
+      "title": "Antony and Cleopatra",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGD18XMR",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGD18XMR",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGD18XMR",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGD18XMR",
+          "kind": "product"
+        }
+      }
+    },
+    "antony-and-cleopatra-study": {
+      "title": "Antony and Cleopatra",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H1QYPD8X",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H1QYPD8X",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H1QYPD8X",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H1QYPD8X",
+          "kind": "product"
+        }
+      }
+    },
+    "arden-of-faversham": {
+      "title": "Arden of Faversham",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCJC5NRG",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCJC5NRG",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCJC5NRG",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCJC5NRG",
+          "kind": "product"
+        }
+      }
+    },
+    "as-you-like-it": {
+      "title": "As You Like It",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GKM1LXQR",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GKM1LXQR",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GKM1LXQR",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GKM1LXQR",
+          "kind": "product"
+        }
+      }
+    },
+    "as-you-like-it-study": {
+      "title": "As You Like It",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGQ665VP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGQ665VP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGQ665VP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGQ665VP",
+          "kind": "product"
+        }
+      }
+    },
+    "call-of-the-wild": {
+      "title": "The Call of the Wild",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GQGLDNTN",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GQGLDNTN",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GQGLDNTN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GQGLDNTN",
+          "kind": "product"
+        }
+      }
+    },
+    "call-of-the-wild-hardback": {
+      "title": "The Call of the Wild",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHWQCNCF",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHWQCNCF",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHWQCNCF",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHWQCNCF",
+          "kind": "product"
+        }
+      }
+    },
+    "carnacki-the-ghost-finder": {
+      "title": "Carnacki, the Ghost-Finder",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJ7XLJN5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJ7XLJN5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJ7XLJN5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJ7XLJN5",
+          "kind": "product"
+        }
+      }
+    },
+    "charles-i-selected-writings": {
+      "title": "Charles I: Selected Writings",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFC4M7WF",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFC4M7WF",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFC4M7WF",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFC4M7WF",
+          "kind": "product"
+        }
+      }
+    },
+    "comedy-of-errors": {
+      "title": "The Comedy of Errors",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGWHYR3G",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGWHYR3G",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGWHYR3G",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGWHYR3G",
+          "kind": "product"
+        }
+      }
+    },
+    "comedy-of-errors-study": {
+      "title": "The Comedy of Errors",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H1HF491C",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H1HF491C",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H1HF491C",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H1HF491C",
+          "kind": "product"
+        }
+      }
+    },
+    "coriolanus": {
+      "title": "Coriolanus",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GL7KGKCK",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GL7KGKCK",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GL7KGKCK",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GL7KGKCK",
+          "kind": "product"
+        }
+      }
+    },
+    "coriolanus-study": {
+      "title": "Coriolanus",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FHH1XX4Z",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FHH1XX4Z",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FHH1XX4Z",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FHH1XX4Z",
+          "kind": "product"
+        }
+      }
+    },
+    "cricket-on-the-hearth": {
+      "title": "The Cricket on the Hearth",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G3B6S77L",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G3B6S77L",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G3B6S77L",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G3B6S77L",
+          "kind": "product"
+        }
+      }
+    },
+    "cricket-on-the-hearth-hardback": {
+      "title": "The Cricket on the Hearth",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHSBG4Q4",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHSBG4Q4",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHSBG4Q4",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHSBG4Q4",
+          "kind": "product"
+        }
+      }
+    },
+    "cymbeline": {
+      "title": "Cymbeline",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HBBJWF4B",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HBBJWF4B",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HBBJWF4B",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HBBJWF4B",
+          "kind": "product"
+        }
+      }
+    },
+    "cymbeline-study": {
+      "title": "Cymbeline",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FHBD8VC9",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FHBD8VC9",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FHBD8VC9",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FHBD8VC9",
+          "kind": "product"
+        }
+      }
+    },
+    "dickens-at-christmas": {
+      "title": "Dickens at Christmas",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G4RBFT1L",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G4RBFT1L",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G4RBFT1L",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G4RBFT1L",
+          "kind": "product"
+        }
+      }
+    },
+    "dickens-at-christmas-hardback": {
+      "title": "Dickens at Christmas",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G4QF7KZB",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G4QF7KZB",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G4QF7KZB",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G4QF7KZB",
+          "kind": "product"
+        }
+      }
+    },
+    "doctor-faustus": {
+      "title": "Doctor Faustus",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FHQPPYS5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FHQPPYS5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FHQPPYS5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FHQPPYS5",
+          "kind": "product"
+        }
+      }
+    },
+    "dorian-gray": {
+      "title": "The Picture of Dorian Gray",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GQLTYW8S",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GQLTYW8S",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GQLTYW8S",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GQLTYW8S",
+          "kind": "product"
+        }
+      }
+    },
+    "dorian-gray-hardback": {
+      "title": "The Picture of Dorian Gray",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGBQM3QQ",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGBQM3QQ",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGBQM3QQ",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGBQM3QQ",
+          "kind": "product"
+        }
+      }
+    },
+    "dorian-gray-study": {
+      "title": "The Picture of Dorian Gray",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FKTG429Z",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FKTG429Z",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FKTG429Z",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FKTG429Z",
+          "kind": "product"
+        }
+      }
+    },
+    "dracula": {
+      "title": "Dracula",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G72SB1TR",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G72SB1TR",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G72SB1TR",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G72SB1TR",
+          "kind": "product"
+        }
+      }
+    },
+    "dracula-hardback": {
+      "title": "Dracula",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGSF68ZS",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGSF68ZS",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGSF68ZS",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGSF68ZS",
+          "kind": "product"
+        }
+      }
+    },
+    "dracula-introduced": {
+      "title": "Dracula",
+      "format": "Paperback · introduced edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H4KV4Y59",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H4KV4Y59",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H4KV4Y59",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H4KV4Y59",
+          "kind": "product"
+        }
+      }
+    },
+    "dracula-study": {
+      "title": "Dracula",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H4G2HNTG",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H4G2HNTG",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H4G2HNTG",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H4G2HNTG",
+          "kind": "product"
+        }
+      }
+    },
+    "edgar-allan-poe-selected-tales": {
+      "title": "Edgar Allan Poe: Selected Tales",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGZ2HMBN",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGZ2HMBN",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGZ2HMBN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGZ2HMBN",
+          "kind": "product"
+        }
+      }
+    },
+    "edward-iii": {
+      "title": "Edward III",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCJV5FDP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCJV5FDP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCJV5FDP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCJV5FDP",
+          "kind": "product"
+        }
+      }
+    },
+    "ethan-frome": {
+      "title": "Ethan Frome",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G63RJJ1Y",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G63RJJ1Y",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G63RJJ1Y",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G63RJJ1Y",
+          "kind": "product"
+        }
+      }
+    },
+    "frankenstein": {
+      "title": "Frankenstein",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FY3C6YHP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FY3C6YHP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FY3C6YHP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FY3C6YHP",
+          "kind": "product"
+        }
+      }
+    },
+    "frankenstein-hardback": {
+      "title": "Frankenstein",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGTM3KYQ",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGTM3KYQ",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGTM3KYQ",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGTM3KYQ",
+          "kind": "product"
+        }
+      }
+    },
+    "frankenstein-introduced": {
+      "title": "Frankenstein; or, The Modern Prometheus",
+      "format": "Paperback · introduced edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H2YF2TMV",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H2YF2TMV",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H2YF2TMV",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H2YF2TMV",
+          "kind": "product"
+        }
+      }
+    },
+    "frankenstein-study": {
+      "title": "Frankenstein",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FFT7L2WP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FFT7L2WP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FFT7L2WP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FFT7L2WP",
+          "kind": "product"
+        }
+      }
+    },
+    "great-expectations": {
+      "title": "Great Expectations",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GSN3Z277",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GSN3Z277",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GSN3Z277",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GSN3Z277",
+          "kind": "product"
+        }
+      }
+    },
+    "great-expectations-introduced": {
+      "title": "Great Expectations",
+      "format": "Paperback · introduced edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H4SFZRLF",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H4SFZRLF",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H4SFZRLF",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H4SFZRLF",
+          "kind": "product"
+        }
+      }
+    },
+    "great-expectations-study": {
+      "title": "Great Expectations",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FF4WFQW3",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FF4WFQW3",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FF4WFQW3",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FF4WFQW3",
+          "kind": "product"
+        }
+      }
+    },
+    "gullivers-travels": {
+      "title": "Gulliver’s Travels",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GRGPY9GN",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GRGPY9GN",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GRGPY9GN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GRGPY9GN",
+          "kind": "product"
+        }
+      }
+    },
+    "hamlet": {
+      "title": "Hamlet",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GJZTSS79",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GJZTSS79",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GJZTSS79",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GJZTSS79",
+          "kind": "product"
+        }
+      }
+    },
+    "hamlet-expanded-scholarly-edition": {
+      "title": "Hamlet — Expanded Scholarly Edition",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCQKQ3ZY",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCQKQ3ZY",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCQKQ3ZY",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCQKQ3ZY",
+          "kind": "product"
+        }
+      }
+    },
+    "hamlet-study": {
+      "title": "Hamlet",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FG1B2TVD",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FG1B2TVD",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FG1B2TVD",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FG1B2TVD",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-iv-part-1": {
+      "title": "Henry IV, Part 1",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GCHWM449",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GCHWM449",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GCHWM449",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GCHWM449",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-iv-part-2": {
+      "title": "Henry IV, Part 2",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GCHXGWVF",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GCHXGWVF",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GCHXGWVF",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GCHXGWVF",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-iv-part-2-study": {
+      "title": "Henry IV, Part 2",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H1GWRJKC",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H1GWRJKC",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H1GWRJKC",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H1GWRJKC",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-iv-parts-1-and-2": {
+      "title": "Henry IV, Parts 1 and 2",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GMX18NMY",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GMX18NMY",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GMX18NMY",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GMX18NMY",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-iv-parts-1-and-2-study": {
+      "title": "Henry IV, Parts 1 and 2",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FH6FYCL7",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FH6FYCL7",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FH6FYCL7",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FH6FYCL7",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-v": {
+      "title": "Henry V",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GKPJTSYK",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GKPJTSYK",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GKPJTSYK",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GKPJTSYK",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-v-study": {
+      "title": "Henry V",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FH5G887G",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FH5G887G",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FH5G887G",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FH5G887G",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-vi-part-1": {
+      "title": "Henry VI, Part 1",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GCP9QDPJ",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GCP9QDPJ",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GCP9QDPJ",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GCP9QDPJ",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-vi-part-2": {
+      "title": "Henry VI, Part 2",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GXF2H62R",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GXF2H62R",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GXF2H62R",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GXF2H62R",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-vi-part-3": {
+      "title": "Henry VI, Part 3",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GCPKKWCC",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GCPKKWCC",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GCPKKWCC",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GCPKKWCC",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-vi-parts-1-2-and-3": {
+      "title": "Henry VI, Parts 1, 2 and 3",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FH4W8SZ9",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FH4W8SZ9",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FH4W8SZ9",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FH4W8SZ9",
+          "kind": "product"
+        }
+      }
+    },
+    "henry-viii": {
+      "title": "Henry VIII",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GN2YXX5R",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GN2YXX5R",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GN2YXX5R",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GN2YXX5R",
+          "kind": "product"
+        }
+      }
+    },
     "jane-eyre": {
       "title": "Jane Eyre",
       "format": "Paperback",
@@ -12,12 +1662,302 @@
           "url": "https://www.amazon.co.uk/dp/B0GSZBK2YP",
           "kind": "product"
         },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GSZBK2YP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GSZBK2YP",
+          "kind": "product"
+        },
         "AU": {
           "url": "https://www.amazon.com.au/dp/B0GSZBK2YP",
           "kind": "product"
+        }
+      }
+    },
+    "jekyll-and-hyde": {
+      "title": "Strange Case of Dr Jekyll and Mr Hyde",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FF3569ZL",
+          "kind": "product"
         },
         "US": {
-          "url": "https://www.amazon.com/dp/B0GSZBK2YP",
+          "url": "https://www.amazon.com/dp/B0FF3569ZL",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FF3569ZL",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FF3569ZL",
+          "kind": "product"
+        }
+      }
+    },
+    "jekyll-and-hyde-study": {
+      "title": "Jekyll and Hyde",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H6N32H3Q",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H6N32H3Q",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H6N32H3Q",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H6N32H3Q",
+          "kind": "product"
+        }
+      }
+    },
+    "julius-caesar": {
+      "title": "Julius Caesar",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FXV8R7R1",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FXV8R7R1",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FXV8R7R1",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FXV8R7R1",
+          "kind": "product"
+        }
+      }
+    },
+    "julius-caesar-study": {
+      "title": "Julius Caesar",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H1H4PJ85",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H1H4PJ85",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H1H4PJ85",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H1H4PJ85",
+          "kind": "product"
+        }
+      }
+    },
+    "king-john": {
+      "title": "King John",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GN1VTTG6",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GN1VTTG6",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GN1VTTG6",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GN1VTTG6",
+          "kind": "product"
+        }
+      }
+    },
+    "king-lear": {
+      "title": "King Lear",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FG84KTS9",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FG84KTS9",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FG84KTS9",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FG84KTS9",
+          "kind": "product"
+        }
+      }
+    },
+    "king-lear-expanded-scholarly-edition": {
+      "title": "King Lear — Expanded Scholarly Edition",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCPT3V5N",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCPT3V5N",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCPT3V5N",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCPT3V5N",
+          "kind": "product"
+        }
+      }
+    },
+    "king-lear-study": {
+      "title": "King Lear",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H1HFW2GP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H1HFW2GP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H1HFW2GP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H1HFW2GP",
+          "kind": "product"
+        }
+      }
+    },
+    "locrine": {
+      "title": "Locrine",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCN82THN",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCN82THN",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCN82THN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCN82THN",
+          "kind": "product"
+        }
+      }
+    },
+    "loves-labours-lost": {
+      "title": "Love’s Labour’s Lost",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GM5VMH9X",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GM5VMH9X",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GM5VMH9X",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GM5VMH9X",
+          "kind": "product"
+        }
+      }
+    },
+    "loves-labours-lost-study": {
+      "title": "Love’s Labour’s Lost",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G4GCP1MF",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G4GCP1MF",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G4GCP1MF",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G4GCP1MF",
+          "kind": "product"
+        }
+      }
+    },
+    "lyrical-ballads": {
+      "title": "Lyrical Ballads",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HF6VT14P",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HF6VT14P",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HF6VT14P",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HF6VT14P",
+          "kind": "product"
+        }
+      }
+    },
+    "m-r-james-collected-ghost-stories": {
+      "title": "M. R. James: Collected Ghost Stories",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HH9YVGYV",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HH9YVGYV",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HH9YVGYV",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HH9YVGYV",
           "kind": "product"
         }
       }
@@ -30,30 +1970,1402 @@
           "url": "https://www.amazon.co.uk/dp/B0GPHPD6BN",
           "kind": "product"
         },
-        "AU": {
-          "url": "https://www.amazon.com.au/dp/B0GPHPD6BN",
-          "kind": "product"
-        },
         "US": {
           "url": "https://www.amazon.com/dp/B0GPHPD6BN",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GPHPD6BN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GPHPD6BN",
           "kind": "product"
         }
       }
     },
-    "the-great-gatsby-hardback": {
-      "title": "The Great Gatsby",
-      "format": "Hardback",
+    "macbeth-and-a-christmas-carol-study": {
+      "title": "Macbeth and A Christmas Carol",
+      "format": "Paperback · study edition",
       "destinations": {
         "GB": {
-          "url": "https://www.amazon.co.uk/dp/B0HFV58Y11",
-          "kind": "product"
-        },
-        "AU": {
-          "url": "https://www.amazon.com.au/dp/B0HFV58Y11",
+          "url": "https://www.amazon.co.uk/dp/B0FSKC563V",
           "kind": "product"
         },
         "US": {
-          "url": "https://www.amazon.com/dp/B0HFV58Y11",
+          "url": "https://www.amazon.com/dp/B0FSKC563V",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FSKC563V",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FSKC563V",
+          "kind": "product"
+        }
+      }
+    },
+    "macbeth-and-jekyll-and-hyde-study": {
+      "title": "Macbeth and Jekyll and Hyde",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FS6MVCBX",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FS6MVCBX",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FS6MVCBX",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FS6MVCBX",
+          "kind": "product"
+        }
+      }
+    },
+    "macbeth-expanded-scholarly-edition": {
+      "title": "Macbeth — Expanded Scholarly Edition",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HD5X6BJY",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HD5X6BJY",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HD5X6BJY",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HD5X6BJY",
+          "kind": "product"
+        }
+      }
+    },
+    "macbeth-study": {
+      "title": "Macbeth",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FF37JDCP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FF37JDCP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FF37JDCP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FF37JDCP",
+          "kind": "product"
+        }
+      }
+    },
+    "measure-for-measure": {
+      "title": "Measure for Measure",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FH2HZTCH",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FH2HZTCH",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FH2HZTCH",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FH2HZTCH",
+          "kind": "product"
+        }
+      }
+    },
+    "measure-for-measure-study": {
+      "title": "Measure for Measure",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H1HMSP8P",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H1HMSP8P",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H1HMSP8P",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H1HMSP8P",
+          "kind": "product"
+        }
+      }
+    },
+    "merry-wives-of-windsor": {
+      "title": "The Merry Wives of Windsor",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GKXY17L8",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GKXY17L8",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GKXY17L8",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GKXY17L8",
+          "kind": "product"
+        }
+      }
+    },
+    "merry-wives-of-windsor-study": {
+      "title": "The Merry Wives of Windsor",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGY8CSSL",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGY8CSSL",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGY8CSSL",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGY8CSSL",
+          "kind": "product"
+        }
+      }
+    },
+    "michael-robartes-and-the-dancer": {
+      "title": "Michael Robartes and the Dancer",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFGGNCPV",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFGGNCPV",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFGGNCPV",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFGGNCPV",
+          "kind": "product"
+        }
+      }
+    },
+    "moby-dick": {
+      "title": "Moby-Dick; or, The Whale",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GSFJQHWZ",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GSFJQHWZ",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GSFJQHWZ",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GSFJQHWZ",
+          "kind": "product"
+        }
+      }
+    },
+    "moby-dick-hardback": {
+      "title": "Moby-Dick; or, The Whale",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHXZ44BS",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHXZ44BS",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHXZ44BS",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHXZ44BS",
+          "kind": "product"
+        }
+      }
+    },
+    "moby-dick-introduced": {
+      "title": "Moby-Dick",
+      "format": "Paperback · introduced edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H3VWGSKC",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H3VWGSKC",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H3VWGSKC",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H3VWGSKC",
+          "kind": "product"
+        }
+      }
+    },
+    "moby-dick-study": {
+      "title": "Moby-Dick",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FL25V5YL",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FL25V5YL",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FL25V5YL",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FL25V5YL",
+          "kind": "product"
+        }
+      }
+    },
+    "mrs-dalloway": {
+      "title": "Mrs Dalloway",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GSZN5R94",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GSZN5R94",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GSZN5R94",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GSZN5R94",
+          "kind": "product"
+        }
+      }
+    },
+    "mrs-dalloway-study": {
+      "title": "Mrs Dalloway",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FMRJ1DS2",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FMRJ1DS2",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FMRJ1DS2",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FMRJ1DS2",
+          "kind": "product"
+        }
+      }
+    },
+    "much-ado-about-nothing": {
+      "title": "Much Ado About Nothing",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GK1K4H8W",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GK1K4H8W",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GK1K4H8W",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GK1K4H8W",
+          "kind": "product"
+        }
+      }
+    },
+    "much-ado-about-nothing-study": {
+      "title": "Much Ado About Nothing",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FL825SGY",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FL825SGY",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FL825SGY",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FL825SGY",
+          "kind": "product"
+        }
+      }
+    },
+    "narrative-of-the-life-of-frederick-douglass": {
+      "title": "Narrative of the Life of Frederick Douglass",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GQLGJB4T",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GQLGJB4T",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GQLGJB4T",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GQLGJB4T",
+          "kind": "product"
+        }
+      }
+    },
+    "oroonoko": {
+      "title": "Oroonoko",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFCV5LYN",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFCV5LYN",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFCV5LYN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFCV5LYN",
+          "kind": "product"
+        }
+      }
+    },
+    "othello": {
+      "title": "Othello",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H6QSQN5W",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H6QSQN5W",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H6QSQN5W",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H6QSQN5W",
+          "kind": "product"
+        }
+      }
+    },
+    "othello-expanded-scholarly-edition": {
+      "title": "Othello — Expanded Scholarly Edition",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCNZK3ZB",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCNZK3ZB",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCNZK3ZB",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCNZK3ZB",
+          "kind": "product"
+        }
+      }
+    },
+    "othello-study": {
+      "title": "Othello",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FXWGHMP5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FXWGHMP5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FXWGHMP5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FXWGHMP5",
+          "kind": "product"
+        }
+      }
+    },
+    "pamela": {
+      "title": "Pamela; or, Virtue Rewarded",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GHHRMK9C",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GHHRMK9C",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GHHRMK9C",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GHHRMK9C",
+          "kind": "product"
+        }
+      }
+    },
+    "paradise-lost": {
+      "title": "Paradise Lost",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GS9D26CG",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GS9D26CG",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GS9D26CG",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GS9D26CG",
+          "kind": "product"
+        }
+      }
+    },
+    "paradise-lost-hardback": {
+      "title": "Paradise Lost",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHSM8C1H",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHSM8C1H",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHSM8C1H",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHSM8C1H",
+          "kind": "product"
+        }
+      }
+    },
+    "pericles-prince-of-tyre": {
+      "title": "Pericles, Prince of Tyre",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GMGRYT9S",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GMGRYT9S",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GMGRYT9S",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GMGRYT9S",
+          "kind": "product"
+        }
+      }
+    },
+    "pride-and-prejudice": {
+      "title": "Pride and Prejudice",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GQ4721S1",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GQ4721S1",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GQ4721S1",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GQ4721S1",
+          "kind": "product"
+        }
+      }
+    },
+    "puddnhead-wilson": {
+      "title": "The Tragedy of Pudd’nhead Wilson",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHY9VYRS",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHY9VYRS",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHY9VYRS",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHY9VYRS",
+          "kind": "product"
+        }
+      }
+    },
+    "red-badge-of-courage": {
+      "title": "The Red Badge of Courage",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GQGTSMVL",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GQGTSMVL",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GQGTSMVL",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GQGTSMVL",
+          "kind": "product"
+        }
+      }
+    },
+    "red-badge-of-courage-hardback": {
+      "title": "The Red Badge of Courage",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHS9HKDT",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHS9HKDT",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHS9HKDT",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHS9HKDT",
+          "kind": "product"
+        }
+      }
+    },
+    "richard-ii": {
+      "title": "Richard II",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GL2CHRCM",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GL2CHRCM",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GL2CHRCM",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GL2CHRCM",
+          "kind": "product"
+        }
+      }
+    },
+    "richard-ii-study": {
+      "title": "Richard II",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FH2TM2XH",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FH2TM2XH",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FH2TM2XH",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FH2TM2XH",
+          "kind": "product"
+        }
+      }
+    },
+    "richard-iii": {
+      "title": "Richard III",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GPVLT9CD",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GPVLT9CD",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GPVLT9CD",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GPVLT9CD",
+          "kind": "product"
+        }
+      }
+    },
+    "richard-iii-study": {
+      "title": "Richard III",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGJV2WTH",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGJV2WTH",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGJV2WTH",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGJV2WTH",
+          "kind": "product"
+        }
+      }
+    },
+    "rime-of-the-ancient-mariner-study": {
+      "title": "The Rime of the Ancient Mariner",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G6S1T9W7",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G6S1T9W7",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G6S1T9W7",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G6S1T9W7",
+          "kind": "product"
+        }
+      }
+    },
+    "robinson-crusoe": {
+      "title": "Robinson Crusoe",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GS1B78VN",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GS1B78VN",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GS1B78VN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GS1B78VN",
+          "kind": "product"
+        }
+      }
+    },
+    "romeo-and-juliet": {
+      "title": "Romeo and Juliet",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FXVB26WT",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FXVB26WT",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FXVB26WT",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FXVB26WT",
+          "kind": "product"
+        }
+      }
+    },
+    "romeo-and-juliet-and-a-christmas-carol-study": {
+      "title": "Romeo and Juliet and A Christmas Carol",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FSKKNR22",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FSKKNR22",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FSKKNR22",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FSKKNR22",
+          "kind": "product"
+        }
+      }
+    },
+    "romeo-and-juliet-and-jekyll-and-hyde-study": {
+      "title": "Romeo and Juliet and Jekyll and Hyde",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FSKJQ98N",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FSKJQ98N",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FSKJQ98N",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FSKJQ98N",
+          "kind": "product"
+        }
+      }
+    },
+    "romeo-and-juliet-study": {
+      "title": "Romeo and Juliet",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FF2ZQX9Q",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FF2ZQX9Q",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FF2ZQX9Q",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FF2ZQX9Q",
+          "kind": "product"
+        }
+      }
+    },
+    "selected-poems-of-john-skelton": {
+      "title": "Selected Poems of John Skelton",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GDLQCDM6",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GDLQCDM6",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GDLQCDM6",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GDLQCDM6",
+          "kind": "product"
+        }
+      }
+    },
+    "selected-poems-of-samuel-taylor-coleridge": {
+      "title": "Selected Poems of Samuel Taylor Coleridge",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJFB53FH",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJFB53FH",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJFB53FH",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJFB53FH",
+          "kind": "product"
+        }
+      }
+    },
+    "sense-and-sensibility": {
+      "title": "Sense and Sensibility",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GRMXMLWB",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GRMXMLWB",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GRMXMLWB",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GRMXMLWB",
+          "kind": "product"
+        }
+      }
+    },
+    "seven-pillars-of-wisdom": {
+      "title": "Seven Pillars of Wisdom",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJ6GGGWD",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJ6GGGWD",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJ6GGGWD",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJ6GGGWD",
+          "kind": "product"
+        }
+      }
+    },
+    "shakespeares-sonnets": {
+      "title": "Shakespeare’s Sonnets",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCLRXC71",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCLRXC71",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCLRXC71",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCLRXC71",
+          "kind": "product"
+        }
+      }
+    },
+    "shakespeares-sonnets-hardback": {
+      "title": "Shakespeare’s Sonnets",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG87M1ZK",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG87M1ZK",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG87M1ZK",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG87M1ZK",
+          "kind": "product"
+        }
+      }
+    },
+    "sign-of-four": {
+      "title": "The Sign of the Four",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GQGFJNZC",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GQGFJNZC",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GQGFJNZC",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GQGFJNZC",
+          "kind": "product"
+        }
+      }
+    },
+    "sir-thomas-more": {
+      "title": "Sir Thomas More",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCJ9YKDN",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCJ9YKDN",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCJ9YKDN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCJ9YKDN",
+          "kind": "product"
+        }
+      }
+    },
+    "sleepy-hollow-and-other-stories": {
+      "title": "Sleepy Hollow and Other American Halloween Stories",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HF6PFHZR",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HF6PFHZR",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HF6PFHZR",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HF6PFHZR",
+          "kind": "product"
+        }
+      }
+    },
+    "sleepy-hollow-and-other-stories-hardback": {
+      "title": "Sleepy Hollow and Other American Halloween Stories",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFDYBWL7",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFDYBWL7",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFDYBWL7",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFDYBWL7",
+          "kind": "product"
+        }
+      }
+    },
+    "taming-of-the-shrew": {
+      "title": "The Taming of the Shrew",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGQ6XJNV",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGQ6XJNV",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGQ6XJNV",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGQ6XJNV",
+          "kind": "product"
+        }
+      }
+    },
+    "tess-of-the-durbervilles": {
+      "title": "Tess of the d’Urbervilles",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGM1WS4R",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGM1WS4R",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGM1WS4R",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGM1WS4R",
+          "kind": "product"
+        }
+      }
+    },
+    "tess-of-the-durbervilles-study": {
+      "title": "Tess of the d’Urbervilles",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H7SM4DKC",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H7SM4DKC",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H7SM4DKC",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H7SM4DKC",
+          "kind": "product"
+        }
+      }
+    },
+    "the-adventures-of-tom-sawyer": {
+      "title": "The Adventures of Tom Sawyer",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHBTR1SX",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHBTR1SX",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHBTR1SX",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHBTR1SX",
+          "kind": "product"
+        }
+      }
+    },
+    "the-aeneid": {
+      "title": "The Aeneid",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GQPG762X",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GQPG762X",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GQPG762X",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GQPG762X",
+          "kind": "product"
+        }
+      }
+    },
+    "the-aeneid-hardback": {
+      "title": "The Aeneid",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG82BBL3",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG82BBL3",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG82BBL3",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG82BBL3",
+          "kind": "product"
+        }
+      }
+    },
+    "the-awakening": {
+      "title": "The Awakening",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGYPQPP3",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGYPQPP3",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGYPQPP3",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGYPQPP3",
+          "kind": "product"
+        }
+      }
+    },
+    "the-blue-castle": {
+      "title": "The Blue Castle",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGSJF55X",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGSJF55X",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGSJF55X",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGSJF55X",
+          "kind": "product"
+        }
+      }
+    },
+    "the-chimes": {
+      "title": "The Chimes",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G1HRCBFG",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G1HRCBFG",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G1HRCBFG",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G1HRCBFG",
+          "kind": "product"
+        }
+      }
+    },
+    "the-chimes-hardback": {
+      "title": "The Chimes",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHSV1LFY",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHSV1LFY",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHSV1LFY",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHSV1LFY",
+          "kind": "product"
+        }
+      }
+    },
+    "the-diary-of-a-nobody": {
+      "title": "The Diary of a Nobody",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJ922B9T",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJ922B9T",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJ922B9T",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJ922B9T",
+          "kind": "product"
+        }
+      }
+    },
+    "the-doves-nest-and-other-stories": {
+      "title": "The Doves’ Nest and Other Stories",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HF7TMZWK",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HF7TMZWK",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HF7TMZWK",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HF7TMZWK",
+          "kind": "product"
+        }
+      }
+    },
+    "the-duchess-of-malfi": {
+      "title": "The Duchess of Malfi",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FHQLTMFQ",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FHQLTMFQ",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FHQLTMFQ",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FHQLTMFQ",
           "kind": "product"
         }
       }
@@ -66,12 +3378,1226 @@
           "url": "https://www.amazon.co.uk/dp/B0HFDGDZNB",
           "kind": "product"
         },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFDGDZNB",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFDGDZNB",
+          "kind": "product"
+        },
         "AU": {
           "url": "https://www.amazon.com.au/dp/B0HFDGDZNB",
           "kind": "product"
+        }
+      }
+    },
+    "the-great-gatsby-hardback": {
+      "title": "The Great Gatsby",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFV58Y11",
+          "kind": "product"
         },
         "US": {
-          "url": "https://www.amazon.com/dp/B0HFDGDZNB",
+          "url": "https://www.amazon.com/dp/B0HFV58Y11",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFV58Y11",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFV58Y11",
+          "kind": "product"
+        }
+      }
+    },
+    "the-haunted-man-and-the-ghosts-bargain": {
+      "title": "The Haunted Man and the Ghost’s Bargain",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G3K5TGB9",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G3K5TGB9",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G3K5TGB9",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G3K5TGB9",
+          "kind": "product"
+        }
+      }
+    },
+    "the-haunted-man-and-the-ghosts-bargain-hardback": {
+      "title": "The Haunted Man and the Ghost’s Bargain",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHSN48F1",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHSN48F1",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHSN48F1",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHSN48F1",
+          "kind": "product"
+        }
+      }
+    },
+    "the-house-on-the-borderland": {
+      "title": "The House on the Borderland",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHY3XSWW",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHY3XSWW",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHY3XSWW",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHY3XSWW",
+          "kind": "product"
+        }
+      }
+    },
+    "the-iliad": {
+      "title": "The Iliad",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GS16JQM5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GS16JQM5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GS16JQM5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GS16JQM5",
+          "kind": "product"
+        }
+      }
+    },
+    "the-iliad-hardback": {
+      "title": "The Iliad",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG8C8PWX",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG8C8PWX",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG8C8PWX",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG8C8PWX",
+          "kind": "product"
+        }
+      }
+    },
+    "the-importance-of-being-earnest": {
+      "title": "The Importance of Being Earnest",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGYJCRMP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGYJCRMP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGYJCRMP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGYJCRMP",
+          "kind": "product"
+        }
+      }
+    },
+    "the-london-prodigal": {
+      "title": "The London Prodigal",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCKZFJSW",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCKZFJSW",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCKZFJSW",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCKZFJSW",
+          "kind": "product"
+        }
+      }
+    },
+    "the-man-who-was-thursday": {
+      "title": "The Man Who Was Thursday",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GR91PRQN",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GR91PRQN",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GR91PRQN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GR91PRQN",
+          "kind": "product"
+        }
+      }
+    },
+    "the-merchant-of-venice": {
+      "title": "The Merchant of Venice",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GKF5CG6K",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GKF5CG6K",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GKF5CG6K",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GKF5CG6K",
+          "kind": "product"
+        }
+      }
+    },
+    "the-merchant-of-venice-study": {
+      "title": "The Merchant of Venice",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGPXL9QQ",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGPXL9QQ",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGPXL9QQ",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGPXL9QQ",
+          "kind": "product"
+        }
+      }
+    },
+    "the-metamorphosis": {
+      "title": "The Metamorphosis",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G6X67ZWR",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G6X67ZWR",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G6X67ZWR",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G6X67ZWR",
+          "kind": "product"
+        }
+      }
+    },
+    "the-moonstone": {
+      "title": "The Moonstone",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG68CKWR",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG68CKWR",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG68CKWR",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG68CKWR",
+          "kind": "product"
+        }
+      }
+    },
+    "the-moonstone-hardback": {
+      "title": "The Moonstone",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGYWGZDD",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGYWGZDD",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGYWGZDD",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGYWGZDD",
+          "kind": "product"
+        }
+      }
+    },
+    "the-odyssey": {
+      "title": "The Odyssey",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GRTYRSFB",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GRTYRSFB",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GRTYRSFB",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GRTYRSFB",
+          "kind": "product"
+        }
+      }
+    },
+    "the-odyssey-hardback": {
+      "title": "The Odyssey",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG7W7DKC",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG7W7DKC",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG7W7DKC",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG7W7DKC",
+          "kind": "product"
+        }
+      }
+    },
+    "the-open-boat-and-other-stories": {
+      "title": "The Open Boat and Other Stories",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJDM8FLD",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJDM8FLD",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJDM8FLD",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJDM8FLD",
+          "kind": "product"
+        }
+      }
+    },
+    "the-prince": {
+      "title": "The Prince",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GDPK5R7S",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GDPK5R7S",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GDPK5R7S",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GDPK5R7S",
+          "kind": "product"
+        }
+      }
+    },
+    "the-puritan": {
+      "title": "The Puritan",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCLH6CRV",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCLH6CRV",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCLH6CRV",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCLH6CRV",
+          "kind": "product"
+        }
+      }
+    },
+    "the-railway-children": {
+      "title": "The Railway Children",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HH7JJXPJ",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HH7JJXPJ",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HH7JJXPJ",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HH7JJXPJ",
+          "kind": "product"
+        }
+      }
+    },
+    "the-rape-of-lucrece": {
+      "title": "The Rape of Lucrece",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GNMB1J11",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GNMB1J11",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GNMB1J11",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GNMB1J11",
+          "kind": "product"
+        }
+      }
+    },
+    "the-rape-of-lucrece-and-venus-and-adonis": {
+      "title": "Venus and Adonis and The Rape of Lucrece",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCJ7RY69",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCJ7RY69",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCJ7RY69",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCJ7RY69",
+          "kind": "product"
+        }
+      }
+    },
+    "the-rime-of-the-ancient-mariner": {
+      "title": "The Rime of the Ancient Mariner",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCM7DQPH",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCM7DQPH",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCM7DQPH",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCM7DQPH",
+          "kind": "product"
+        }
+      }
+    },
+    "the-rime-of-the-ancient-mariner-hardback": {
+      "title": "The Rime of the Ancient Mariner",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HH9VL27T",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HH9VL27T",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HH9VL27T",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HH9VL27T",
+          "kind": "product"
+        }
+      }
+    },
+    "the-scarlet-letter": {
+      "title": "The Scarlet Letter",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FTFCYHZM",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FTFCYHZM",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FTFCYHZM",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FTFCYHZM",
+          "kind": "product"
+        }
+      }
+    },
+    "the-sorrows-of-young-werther": {
+      "title": "The Sorrows of Young Werther",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0G6SH86NW",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0G6SH86NW",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0G6SH86NW",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0G6SH86NW",
+          "kind": "product"
+        }
+      }
+    },
+    "the-taming-of-the-shrew-study": {
+      "title": "The Taming of the Shrew",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H1HRNN82",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H1HRNN82",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H1HRNN82",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H1HRNN82",
+          "kind": "product"
+        }
+      }
+    },
+    "the-tempest": {
+      "title": "The Tempest",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GK6J2M4L",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GK6J2M4L",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GK6J2M4L",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GK6J2M4L",
+          "kind": "product"
+        }
+      }
+    },
+    "the-tempest-study": {
+      "title": "The Tempest",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FG7XBKLL",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FG7XBKLL",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FG7XBKLL",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FG7XBKLL",
+          "kind": "product"
+        }
+      }
+    },
+    "the-turn-of-the-screw": {
+      "title": "The Turn of the Screw",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GD8Q4XV5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GD8Q4XV5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GD8Q4XV5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GD8Q4XV5",
+          "kind": "product"
+        }
+      }
+    },
+    "the-two-gentlemen-of-verona": {
+      "title": "The Two Gentlemen of Verona",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GM5JDLF5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GM5JDLF5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GM5JDLF5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GM5JDLF5",
+          "kind": "product"
+        }
+      }
+    },
+    "the-two-noble-kinsmen": {
+      "title": "The Two Noble Kinsmen",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GNKDXB4D",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GNKDXB4D",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GNKDXB4D",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GNKDXB4D",
+          "kind": "product"
+        }
+      }
+    },
+    "the-wendigo": {
+      "title": "The Wendigo",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHB3BRCT",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHB3BRCT",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHB3BRCT",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHB3BRCT",
+          "kind": "product"
+        }
+      }
+    },
+    "the-willows": {
+      "title": "The Willows",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHB6X236",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHB6X236",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHB6X236",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHB6X236",
+          "kind": "product"
+        }
+      }
+    },
+    "the-wind-in-the-willows": {
+      "title": "The Wind in the Willows",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG65QC4Y",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG65QC4Y",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG65QC4Y",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG65QC4Y",
+          "kind": "product"
+        }
+      }
+    },
+    "the-winters-tale": {
+      "title": "The Winter's Tale",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GKVGDLYL",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GKVGDLYL",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GKVGDLYL",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GKVGDLYL",
+          "kind": "product"
+        }
+      }
+    },
+    "the-woman-in-white": {
+      "title": "The Woman in White",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG6GMPXX",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG6GMPXX",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG6GMPXX",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG6GMPXX",
+          "kind": "product"
+        }
+      }
+    },
+    "the-yellow-wallpaper-and-the-giant-wistaria": {
+      "title": "The Yellow Wall-Paper and The Giant Wistaria",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG7MBK3Z",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG7MBK3Z",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG7MBK3Z",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG7MBK3Z",
+          "kind": "product"
+        }
+      }
+    },
+    "thomas-lord-cromwell": {
+      "title": "Thomas Lord Cromwell",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HCLY157B",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HCLY157B",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HCLY157B",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HCLY157B",
+          "kind": "product"
+        }
+      }
+    },
+    "three-men-in-a-boat": {
+      "title": "Three Men in a Boat",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGYSD5TW",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGYSD5TW",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGYSD5TW",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGYSD5TW",
+          "kind": "product"
+        }
+      }
+    },
+    "timon-of-athens": {
+      "title": "Timon of Athens",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GN8GSFN3",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GN8GSFN3",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GN8GSFN3",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GN8GSFN3",
+          "kind": "product"
+        }
+      }
+    },
+    "titus-andronicus": {
+      "title": "Titus Andronicus",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GMQ5MTG5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GMQ5MTG5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GMQ5MTG5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GMQ5MTG5",
+          "kind": "product"
+        }
+      }
+    },
+    "titus-andronicus-study": {
+      "title": "Titus Andronicus",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGDRDHCK",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGDRDHCK",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGDRDHCK",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGDRDHCK",
+          "kind": "product"
+        }
+      }
+    },
+    "troilus-and-cressida": {
+      "title": "Troilus and Cressida",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GMBPVKNM",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GMBPVKNM",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GMBPVKNM",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GMBPVKNM",
+          "kind": "product"
+        }
+      }
+    },
+    "twelfth-night": {
+      "title": "Twelfth Night",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GK5ZWK48",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GK5ZWK48",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GK5ZWK48",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GK5ZWK48",
+          "kind": "product"
+        }
+      }
+    },
+    "twelfth-night-study": {
+      "title": "Twelfth Night",
+      "format": "Paperback · study edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FXTFDV5R",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FXTFDV5R",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FXTFDV5R",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FXTFDV5R",
+          "kind": "product"
+        }
+      }
+    },
+    "uncle-toms-cabin": {
+      "title": "Uncle Tom’s Cabin",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GTDM7SK3",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GTDM7SK3",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GTDM7SK3",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GTDM7SK3",
+          "kind": "product"
+        }
+      }
+    },
+    "utopia": {
+      "title": "Utopia",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GRMJ44CR",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GRMJ44CR",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GRMJ44CR",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GRMJ44CR",
+          "kind": "product"
+        }
+      }
+    },
+    "venus-and-adonis": {
+      "title": "Venus and Adonis",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GT8TZS4M",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GT8TZS4M",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GT8TZS4M",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GT8TZS4M",
+          "kind": "product"
+        }
+      }
+    },
+    "victorian-ghost-stories": {
+      "title": "Victorian Ghost Stories",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG6HSMBW",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG6HSMBW",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG6HSMBW",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG6HSMBW",
+          "kind": "product"
+        }
+      }
+    },
+    "victorian-ghost-stories-hardback": {
+      "title": "Victorian Ghost Stories",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HH5GJLXP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HH5GJLXP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HH5GJLXP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HH5GJLXP",
+          "kind": "product"
+        }
+      }
+    },
+    "war-of-the-worlds": {
+      "title": "The War of the Worlds",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/s?k=B0GTHHS2PS",
+          "kind": "search"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GTHHS2PS",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GTHHS2PS",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GTHHS2PS",
+          "kind": "product"
+        }
+      }
+    },
+    "war-of-the-worlds-hardback": {
+      "title": "The War of the Worlds",
+      "format": "Hardback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HH8XFQKB",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HH8XFQKB",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HH8XFQKB",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HH8XFQKB",
+          "kind": "product"
+        }
+      }
+    },
+    "white-fang": {
+      "title": "White Fang",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHFDBWT1",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHFDBWT1",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHFDBWT1",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHFDBWT1",
+          "kind": "product"
+        }
+      }
+    },
+    "wuthering-heights": {
+      "title": "Wuthering Heights",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GQX9S8S2",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GQX9S8S2",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GQX9S8S2",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GQX9S8S2",
           "kind": "product"
         }
       }

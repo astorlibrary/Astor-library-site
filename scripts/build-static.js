@@ -887,7 +887,7 @@ function addProductBox(html, source) {
   // So are the retailer buttons in the other hero asides; links to
   // presentations, study pages and indexes stay.
   html = html.replace(/<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>/i, intro => intro
-    .replace(/<a class="button [^"]*" href="https:\/\/mybook\.to\/[^"]*"[^>]*>[\s\S]*?<\/a>/g, '')
+    .replace(/<a class="button [^"]*" href="https:\/\/astorlibrary\.com\/go\/[^"]*"[^>]*>[\s\S]*?<\/a>/g, '')
     .replace(/<div class="button-row">\s*<\/div>/g, ''));
   const afterCredit = html.replace(/(<aside class="astor-page-credit"[\s\S]*?<\/aside>)/, '$1' + box);
   if (afterCredit !== html) return afterCredit;

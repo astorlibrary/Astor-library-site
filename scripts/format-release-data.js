@@ -46,7 +46,7 @@ const books = [
     title: 'Victorian Ghost Stories',
     author: 'Elizabeth Gaskell, Charles Dickens and others',
     image: 'Victorian Ghost Stories Main Cover.png',
-    purchaseUrl: 'https://mybook.to/SzGnyfD',
+    purchaseUrl: 'https://astorlibrary.com/go/victorian-ghost-stories',
     label: 'Annotated collection · 1844–1901',
     deck: 'Elizabeth Gaskell was paid £10 for ‘The Old Nurse’s Story’, written for the Christmas number of Household Words in 1852. It opens this collection of eight Victorian ghost stories and four poems, which ends with Bram Stoker’s ‘The Judge’s House’, alongside documents from the séances and the Society for Psychical Research.',
     editionIncludes: [
@@ -82,7 +82,7 @@ const books = [
     title: 'The Yellow Wall-Paper and The Giant Wistaria',
     author: 'Charlotte Perkins Gilman',
     image: 'The Yellow Paper and The Giant Wistaria Main Cover.png',
-    purchaseUrl: 'https://mybook.to/J4dveV',
+    purchaseUrl: 'https://astorlibrary.com/go/the-yellow-wallpaper-and-the-giant-wistaria',
     label: 'Two stories · 1891–92',
     deck: 'Charlotte Perkins Gilman’s two stories appeared in the New England Magazine seven months apart, ‘The Giant Wistaria’ in June 1891 and ‘The Yellow Wall-Paper’ in January 1892. One is a ghost story about an old colonial house; the other is about a woman shut in a nursery on her doctor-husband’s orders. The notes record where the surviving texts differ.',
     editionIncludes: [
@@ -118,7 +118,7 @@ const books = [
     title: 'Oroonoko',
     author: 'Aphra Behn',
     image: 'Oroonoko Main Cover.png',
-    purchaseUrl: 'https://mybook.to/LYA4Ds',
+    purchaseUrl: 'https://astorlibrary.com/go/oroonoko',
     label: 'Novel · 1688',
     deck: 'Oroonoko, an African prince, is tricked aboard an English ship, sold into slavery in Surinam and reunited there with Imoinda, the wife he thought was dead. Aphra Behn published the story in 1688 and claimed to have seen much of it herself, in the colony, as a young woman.',
     editionIncludes: [
@@ -154,7 +154,7 @@ const books = [
     title: 'Michael Robartes and the Dancer',
     author: 'W. B. Yeats',
     image: 'Michael Robartes Main Cover.png',
-    purchaseUrl: 'https://mybook.to/1sCoD',
+    purchaseUrl: 'https://astorlibrary.com/go/michael-robartes-and-the-dancer',
     label: 'Poetry collection · 1921',
     deck: 'Fifteen poems by Yeats, printed by the Cuala Press, which his sisters ran, in a small edition dated 1920. ‘Easter, 1916’ and ‘The Second Coming’ are among them. This edition follows the Cuala text and puts the changes Yeats made later in the notes.',
     editionIncludes: [
@@ -190,7 +190,7 @@ const books = [
     title: 'Lyrical Ballads',
     author: 'William Wordsworth and Samuel Taylor Coleridge',
     image: 'Lyrical Ballads Main Cover.png',
-    purchaseUrl: 'https://mybook.to/k5ZCt',
+    purchaseUrl: 'https://astorlibrary.com/go/lyrical-ballads',
     label: 'Selected poetry · 1798 / 1800',
     deck: 'In 1798 Wordsworth and Coleridge published a small book of poems in Bristol without their names on it. It opened with ‘The Rime of the Ancyent Marinere’ and closed with ‘Tintern Abbey’. This edition prints thirty-six poems from the 1798 and 1800 editions as they first appeared, including Coleridge’s original spelling of the Mariner.',
     editionIncludes: [
@@ -226,7 +226,7 @@ const books = [
     title: 'Ethan Frome',
     author: 'Edith Wharton',
     image: 'Ethan Frome Main Cover.png',
-    purchaseUrl: 'https://mybook.to/MN2KL',
+    purchaseUrl: 'https://astorlibrary.com/go/ethan-frome',
     label: 'Novel · 1911',
     deck: 'A young engineer spending a winter in the Massachusetts village of Starkfield notices Ethan Frome, lame and bent at fifty-two, and wants to know what happened to him. The story he pieces together goes back twenty-four years, to Ethan’s sickly wife, Zeena, and her young cousin, Mattie Silver. Edith Wharton published it in 1911.',
     editionIncludes: [
@@ -262,7 +262,7 @@ const books = [
     title: 'Dickens at Christmas',
     author: 'Charles Dickens',
     image: 'Dickens at Christmas Main Cover.png',
-    purchaseUrl: 'https://mybook.to/mUpuk0',
+    purchaseUrl: 'https://astorlibrary.com/go/dickens-at-christmas',
     label: 'Four Christmas books · 1843–48',
     deck: 'Dickens wrote five Christmas books between 1843 and 1848. Four are here: A Christmas Carol, The Chimes, The Cricket on the Hearth and The Haunted Man. The fifth, The Battle of Life (1846), is the only one without a supernatural visitor, and it is not included.',
     editionIncludes: [
@@ -298,7 +298,7 @@ const books = [
     title: 'Charles I: Selected Writings',
     author: 'Charles I and contemporaries',
     image: 'Charles I selected Writings Main Cover.png',
-    purchaseUrl: 'https://mybook.to/KLGFCM',
+    purchaseUrl: 'https://astorlibrary.com/go/charles-i-selected-writings',
     label: 'Primary documents · 1620s–1649',
     deck: 'Seventeen documents from the reign of Charles I: letters to Henrietta Maria, his answers to the Petition of Right, papers captured at Naseby, the death warrant and the speech he made on the scaffold in January 1649. A last section looks at whether he really wrote Eikon Basilike, the book published in his name after his death.',
     editionIncludes: [
@@ -334,7 +334,7 @@ const books = [
     title: 'Anne of Green Gables',
     author: 'L. M. Montgomery',
     image: 'Anne of Green Gables Main Cover.png',
-    purchaseUrl: 'https://mybook.to/rcbWae',
+    purchaseUrl: 'https://astorlibrary.com/go/anne-of-green-gables',
     label: 'Novel · 1908',
     deck: 'Matthew and Marilla Cuthbert, a brother and sister who have never married, send for a boy from an orphanage to help on their Prince Edward Island farm. They get Anne Shirley, eleven, red-haired and unable to stop talking. It was L. M. Montgomery’s first novel, published in 1908.',
     editionIncludes: [
@@ -370,7 +370,7 @@ const books = [
     title: 'Alice’s Adventures in Wonderland',
     author: 'Lewis Carroll',
     image: "Alice's Adventures in Wonderland Main Cover.png",
-    purchaseUrl: 'https://mybook.to/dWqdpw',
+    purchaseUrl: 'https://astorlibrary.com/go/alices-adventures-in-wonderland',
     label: 'Novel · 1865',
     deck: 'Charles Dodgson first told the story to the three Liddell sisters on a boat trip up the Thames on 4 July 1862, and later wrote it out for Alice as Alice’s Adventures Under Ground. This edition prints his final revised text, with notes on the Victorian poems he parodies and the Oxford people behind the characters.',
     editionIncludes: [
@@ -406,7 +406,7 @@ const books = [
     title: 'A Victorian Bonfire Night',
     author: 'James Orchard Halliwell, Douglas Jerrold and others',
     image: 'A Victorian Bonfire Night Main Cover.png',
-    purchaseUrl: 'https://mybook.to/KiZHRv',
+    purchaseUrl: 'https://astorlibrary.com/go/a-victorian-bonfire-night',
     label: 'Annotated cultural history',
     deck: 'Until 1859 the Fifth of November was a holiday fixed by Act of Parliament, with its own service in the Prayer Book. This collection gathers Victorian stories, essays, folklore and newspaper reports from the years when it became something else: children with guys, bonfire societies, fireworks and bonfire toffee.',
     editionIncludes: [
@@ -442,7 +442,7 @@ const books = [
     title: 'A Room of One’s Own',
     author: 'Virginia Woolf',
     image: "A Room of One's Own Main COver.png",
-    purchaseUrl: 'https://mybook.to/tCPKV5l',
+    purchaseUrl: 'https://astorlibrary.com/go/a-room-of-ones-own',
     label: 'Essay · 1929',
     deck: '‘A woman must have money and a room of her own if she is to write fiction.’ Woolf first made the argument in two lectures at Newnham and Girton in October 1928 and published it the following year. On the way she gives Shakespeare a gifted sister, Judith, and asks what would have become of her.',
     editionIncludes: [
@@ -484,9 +484,9 @@ const hardbacks = [
     collection: 'Victorian',
     collectionHref: '/victorian/',
     image: 'Victorian Bonfire Night Hardcover.png',
-    purchaseUrl: 'https://mybook.to/uF2n4LW',
+    purchaseUrl: 'https://astorlibrary.com/go/a-victorian-bonfire-night-hardback',
     paperbackImage: 'A Victorian Bonfire Night Main Cover.png',
-    paperbackPurchaseUrl: 'https://mybook.to/KiZHRv',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/a-victorian-bonfire-night',
     deck: 'Guy Fawkes Night in Victorian stories, folklore and newspaper reports, with chapters on the Plot, the Guy, fireworks and bonfire toffee.',
     editorial: 'The same contents as the paperback, bound in hardback.'
   },
@@ -498,9 +498,9 @@ const hardbacks = [
     collection: 'Ancient & Epic',
     collectionHref: '/ancient-epic/',
     image: 'The Odyssey Hardcover.png',
-    purchaseUrl: 'https://mybook.to/rwDKnWr',
+    purchaseUrl: 'https://astorlibrary.com/go/the-odyssey-hardback',
     paperbackImage: 'The Odyssey.png',
-    paperbackPurchaseUrl: 'https://mybook.to/uAMn',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/the-odyssey',
     deck: 'Odysseus’s ten years trying to get home to Ithaca, in Samuel Butler’s prose translation.',
     editorial: 'The paperback’s translation, summaries and notes.'
   },
@@ -512,9 +512,9 @@ const hardbacks = [
     collection: 'Ancient & Epic',
     collectionHref: '/ancient-epic/',
     image: 'The Iliad Hardcover.png',
-    purchaseUrl: 'https://mybook.to/VHZtnd',
+    purchaseUrl: 'https://astorlibrary.com/go/the-iliad-hardback',
     paperbackImage: 'The Iliad.png',
-    paperbackPurchaseUrl: 'https://mybook.to/qXcAI7T',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/the-iliad',
     deck: 'The anger of Achilles in the tenth year of the Trojan War, in Samuel Butler’s prose translation.',
     editorial: 'The same text and notes as the paperback.'
   },
@@ -526,9 +526,9 @@ const hardbacks = [
     collection: 'Ancient & Epic',
     collectionHref: '/ancient-epic/',
     image: 'The Aeneid Hardcover.png',
-    purchaseUrl: 'https://mybook.to/rdk9fx',
+    purchaseUrl: 'https://astorlibrary.com/go/the-aeneid-hardback',
     paperbackImage: 'The Aeneid.png',
-    paperbackPurchaseUrl: 'https://mybook.to/ZdOQoGv',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/the-aeneid',
     deck: 'Aeneas’s journey from Troy to Italy, in John Dryden’s verse translation of 1697.',
     editorial: 'Dryden’s translation with the paperback’s notes.'
   },
@@ -540,9 +540,9 @@ const hardbacks = [
     collection: 'American Classics',
     collectionHref: '/american/',
     image: 'Sleepy Hollow and other American Halloween Stories Hardcover.png',
-    purchaseUrl: 'https://mybook.to/MPDvt5',
+    purchaseUrl: 'https://astorlibrary.com/go/sleepy-hollow-and-other-stories-hardback',
     paperbackImage: 'Sleepy Hollow Main Cover.png',
-    paperbackPurchaseUrl: 'https://mybook.to/mlEu80z',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/sleepy-hollow-and-other-stories',
     deck: 'Twelve American stories, from Irving’s headless horseman to Lovecraft’s ‘The Outsider’, that Halloween later adopted.',
     editorial: 'The paperback’s stories, notes and history.'
   },
@@ -554,9 +554,9 @@ const hardbacks = [
     collection: 'Shakespeare',
     collectionHref: '/shakespeare/',
     image: "Shakespeare's Sonnets Hardback.png",
-    purchaseUrl: 'https://mybook.to/bVlnW',
+    purchaseUrl: 'https://astorlibrary.com/go/shakespeares-sonnets-hardback',
     paperbackImage: "Shakespeare's Sonnets Main Cover.png",
-    paperbackPurchaseUrl: 'https://mybook.to/EPIxTc',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/shakespeares-sonnets',
     deck: 'All 154 sonnets in the 1609 order, one to a page, with notes underneath.',
     editorial: 'The same notes as the paperback.'
   },
@@ -568,9 +568,9 @@ const hardbacks = [
     collection: 'Victorian',
     collectionHref: '/victorian/',
     image: 'Picture of Dorian Gray Hardcover.png',
-    purchaseUrl: 'https://mybook.to/QmZR',
+    purchaseUrl: 'https://astorlibrary.com/go/dorian-gray-hardback',
     paperbackImage: 'Picture of Dorian Gray.png',
-    paperbackPurchaseUrl: 'https://mybook.to/zizDNb',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/dorian-gray',
     deck: 'Wilde’s only novel, with the differences between the 1890 magazine text and the 1891 book.',
     editorial: 'Identical inside to the paperback.'
   },
@@ -582,9 +582,9 @@ const hardbacks = [
     collection: 'American Classics',
     collectionHref: '/american/',
     image: 'Great Gatsby Hardcover.png',
-    purchaseUrl: 'https://mybook.to/YjArgN',
+    purchaseUrl: 'https://astorlibrary.com/go/the-great-gatsby-hardback',
     paperbackImage: 'The Great Gatsby Main Cover.png',
-    paperbackPurchaseUrl: 'https://mybook.to/wj3s',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/the-great-gatsby',
     deck: 'Fitzgerald’s first-edition text, with footnotes and chapter recaps.',
     editorial: 'The same annotated text as the paperback.'
   },
@@ -596,9 +596,9 @@ const hardbacks = [
     collection: 'Victorian',
     collectionHref: '/victorian/',
     image: 'Dickens at Christmas Hardcover.png',
-    purchaseUrl: 'https://mybook.to/8V5r',
+    purchaseUrl: 'https://astorlibrary.com/go/dickens-at-christmas-hardback',
     paperbackImage: 'Dickens at Christmas Main Cover.png',
-    paperbackPurchaseUrl: 'https://mybook.to/mUpuk0',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/dickens-at-christmas',
     deck: 'A Christmas Carol, The Chimes, The Cricket on the Hearth and The Haunted Man in one volume.',
     editorial: 'The paperback’s headnotes, summaries and notes.'
   },
@@ -610,9 +610,9 @@ const hardbacks = [
     collection: 'Victorian',
     collectionHref: '/victorian/',
     image: 'A Victorian Christmas Hardcover.png',
-    purchaseUrl: 'https://mybook.to/Urvaf2',
+    purchaseUrl: 'https://astorlibrary.com/go/a-victorian-christmas-hardback',
     paperbackImage: 'A Victorian Christmas Main Cover.png',
-    paperbackPurchaseUrl: 'https://mybook.to/NUduL',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/a-victorian-christmas',
     deck: 'How the Victorians made Christmas, from the first card in 1843 to the Christmas numbers of the magazines.',
     editorial: 'Identical inside to the paperback.'
   }
@@ -624,7 +624,7 @@ const remainingBooks = [
     title: 'The Woman in White',
     author: 'Wilkie Collins',
     image: 'The Woman in White Main Cover.png',
-    purchaseUrl: 'https://mybook.to/OepTu',
+    purchaseUrl: 'https://astorlibrary.com/go/the-woman-in-white',
     label: 'Novel · 1859–60 / 1861 text',
     deck: 'Walking back to London late at night, the drawing master Walter Hartright meets a young woman dressed entirely in white who has escaped from an asylum. She looks very like his new pupil, Laura Fairlie, who is engaged to Sir Percival Glyde. Wilkie Collins’s novel ran in All the Year Round in 1859–60.',
     editionIncludes: [
@@ -660,7 +660,7 @@ const remainingBooks = [
     title: 'The Wind in the Willows',
     author: 'Kenneth Grahame',
     image: 'The Wind in the Willows - Main Cover.png',
-    purchaseUrl: 'https://mybook.to/wYAk',
+    purchaseUrl: 'https://astorlibrary.com/go/the-wind-in-the-willows',
     label: 'Novel · 1908',
     deck: 'Mole gives up his spring-cleaning, meets the Water Rat on the riverbank and goes for a row. Before long they are trying to save Toad from his passion for motor cars. Kenneth Grahame, Secretary of the Bank of England, began the stories as bedtime tales for his son, and the book came out in 1908.',
     editionIncludes: [
@@ -696,7 +696,7 @@ const remainingBooks = [
     title: 'The Moonstone',
     author: 'Wilkie Collins',
     image: 'The Moonstone Main Cover.png',
-    purchaseUrl: 'https://mybook.to/49eJP',
+    purchaseUrl: 'https://astorlibrary.com/go/the-moonstone',
     label: 'Novel · 1868',
     deck: 'On her eighteenth birthday Rachel Verinder is given a great yellow diamond, taken from India when Seringapatam was stormed in 1799. By the next morning it has gone from her room. The story is told by a series of witnesses, starting with the family’s old steward, Gabriel Betteredge, who consults Robinson Crusoe in every crisis.',
     editionIncludes: [
@@ -732,7 +732,7 @@ const remainingBooks = [
     title: 'The Metamorphosis',
     author: 'Franz Kafka, translated by Ian Johnston',
     image: 'The Metamorphosis Main Cover.png',
-    purchaseUrl: 'https://mybook.to/evF1',
+    purchaseUrl: 'https://astorlibrary.com/go/the-metamorphosis',
     label: 'Novella · 1915',
     deck: 'Gregor Samsa, a travelling salesman, wakes one morning changed into a huge insect, and his first worry is that he has missed his train. Kafka’s story was published in 1915. Astor uses Ian Johnston’s translation, which calls the creature a ‘monstrous verminous bug’.',
     editionIncludes: [
@@ -768,7 +768,7 @@ const remainingBooks = [
     title: 'The Great Gatsby',
     author: 'F. Scott Fitzgerald',
     image: 'The Great Gatsby Main Cover.png',
-    purchaseUrl: 'https://mybook.to/wj3s',
+    purchaseUrl: 'https://astorlibrary.com/go/the-great-gatsby',
     label: 'Novel · 1925',
     deck: 'Nick Carraway rents a small house in West Egg, Long Island, in the summer of 1922, next door to the mansion where Jay Gatsby gives parties for hundreds of people he does not know. Across the bay lives Nick’s cousin Daisy, whom Gatsby has loved for five years. Fitzgerald published the novel in April 1925; this edition follows the first-edition text.',
     editionIncludes: [
@@ -804,7 +804,7 @@ const remainingBooks = [
     title: 'The Doves’ Nest and Other Stories',
     author: 'Katherine Mansfield',
     image: "The Doves' Nest and Other Stories Main COver.png",
-    purchaseUrl: 'https://mybook.to/qUG2t',
+    purchaseUrl: 'https://astorlibrary.com/go/the-doves-nest-and-other-stories',
     label: 'Stories and fragments · 1923',
     deck: 'Katherine Mansfield died in January 1923, and John Middleton Murry published this collection later that year. Six of the stories are finished and four are pieces she left unfinished; the notes say which is which and what state each one was in.',
     editionIncludes: [
@@ -840,7 +840,7 @@ const remainingBooks = [
     title: 'The Chimes',
     author: 'Charles Dickens',
     image: 'The Chimes Main Cover.png',
-    purchaseUrl: 'https://mybook.to/7iJP',
+    purchaseUrl: 'https://astorlibrary.com/go/the-chimes',
     label: 'Christmas book · 1844',
     deck: 'Trotty Veck, a London ticket-porter, reads in the newspaper that the poor have no right to a New Year, and half believes it. On New Year’s Eve the goblins of the church bells show him what will happen to his daughter and her friends. Dickens wrote it in Genoa in 1844, the year after A Christmas Carol.',
     editionIncludes: [
@@ -876,7 +876,7 @@ const remainingBooks = [
     title: 'Sleepy Hollow and Other American Halloween Stories',
     author: 'Washington Irving, Edgar Allan Poe and others',
     image: 'Sleepy Hollow Main Cover.png',
-    purchaseUrl: 'https://mybook.to/mlEu80z',
+    purchaseUrl: 'https://astorlibrary.com/go/sleepy-hollow-and-other-stories',
     label: 'Annotated collection · twelve stories',
     deck: 'None of these twelve stories was written for Halloween. Irving’s headless horseman, Hawthorne’s Goodman Brown, Poe’s black cat and Gilman’s yellow wallpaper were reprinted in so many October anthologies that they now belong to the season, and the introduction traces how that happened.',
     editionIncludes: [

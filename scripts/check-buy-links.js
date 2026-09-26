@@ -1,4 +1,4 @@
-// Checks every outbound purchase link (mybook.to, amazon, ko-fi) used by the
+// Checks every outbound purchase link (Amazon and Ko-fi) used by the
 // source pages and data files. Run with: npm run check:links
 // Network-dependent, so it is not part of predeploy; run it before releases
 // and whenever a listing changes. Exit code 1 means at least one hard failure.
@@ -7,7 +7,7 @@ const path = require('path');
 
 const root = process.cwd();
 const skipDirs = new Set(['dist', 'node_modules', '.git', '.wrangler', '.github']);
-const linkPattern = /https:\/\/(?:mybook\.to|ko-fi\.com|(?:www\.)?amazon\.[a-z.]+)\/[^"'\s<>)]+/g;
+const linkPattern = /https:\/\/(?:ko-fi\.com|(?:www\.)?amazon\.[a-z.]+)\/[^"'\s<>)]+/g;
 
 const sources = new Map(); // url -> [files]
 (function collect(directory) {
@@ -41,8 +41,7 @@ async function checkUrl(url) {
     try {
       const response = await fetch(url, { headers: HEADERS, redirect: 'follow', signal: AbortSignal.timeout(20000) });
       const finalUrl = response.url || url;
-      // Amazon storefronts bot-check with 405/503; reaching one still proves
-      // the mybook.to slug resolves to a live listing route.
+      // Retailer bot checks are inconclusive; they do not verify the listing.
       if (response.ok) return { url, status: response.status, finalUrl, verdict: 'ok' };
       if (/amazon\./.test(finalUrl) && [403, 405, 429, 503].includes(response.status)) {
         return { url, status: response.status, finalUrl, verdict: 'unverifiable (retailer bot check)' };

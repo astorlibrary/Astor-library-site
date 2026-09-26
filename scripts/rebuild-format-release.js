@@ -68,8 +68,8 @@ function validatePurchaseUrl(value, label) {
   } catch {
     throw new Error(`${label} is not a valid URL: ${value}`);
   }
-  if (parsed.protocol !== 'https:' || parsed.hostname !== 'mybook.to' || parsed.pathname === '/' || parsed.username || parsed.password) {
-    throw new Error(`${label} must be a complete https://mybook.to/ link: ${value}`);
+  if (parsed.protocol !== 'https:' || parsed.hostname !== 'astorlibrary.com' || !/^\/go\/[a-z0-9]+(?:-[a-z0-9]+)*$/.test(parsed.pathname) || parsed.username || parsed.password) {
+    throw new Error(`${label} must be a complete https://astorlibrary.com/go/ link: ${value}`);
   }
 }
 

@@ -28,7 +28,7 @@ function sourceLinks(author) {
   const sources = author.books.flatMap(book => {
     const edition = septemberBooks.find(entry => entry.href === book.href);
     return (edition?.sources || []).map(source => ({ href: source.href || source.url, label: source.label || source.title }));
-  }).filter(source => source.href && /^https:\/\//.test(source.href) && !source.href.includes('mybook.to/') && !seen.has(source.href) && seen.add(source.href)).slice(0, 5);
+  }).filter(source => source.href && /^https:\/\//.test(source.href) && !source.href.includes('astorlibrary.com/go/') && !seen.has(source.href) && seen.add(source.href)).slice(0, 5);
   if (!sources.length) return author.books.map(book => `<a href="${escapeHtml(book.href)}">${escapeHtml(book.title)}: text and edition information</a>`).join('');
   return sources.map(source => `<a href="${escapeHtml(source.href)}">${escapeHtml(source.label)}</a>`).join('');
 }
