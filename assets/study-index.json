@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 100,
-    "quotations": 2278,
-    "characters": 916,
-    "themes": 243,
-    "techniques": 247,
-    "timelineEvents": 1154,
-    "places": 574
+    "books": 101,
+    "quotations": 2308,
+    "characters": 924,
+    "themes": 244,
+    "techniques": 248,
+    "timelineEvents": 1166,
+    "places": 579
   },
   "books": [
     {
@@ -84657,6 +84657,1469 @@
       "videos": []
     },
     {
+      "slug": "the-death-of-ivan-ilyich",
+      "title": "The Death of Ivan Ilyich",
+      "author": "Leo Tolstoy",
+      "href": "/books/the-death-of-ivan-ilyich/",
+      "studyHref": "",
+      "playHref": "/play/?book=the-death-of-ivan-ilyich",
+      "form": "novella",
+      "genre": "Novella",
+      "period": "Russian",
+      "setting": "A Russian provincial town and a city with law courts, in the 1860s to 1882: government offices, courtrooms, a newly furnished house, and the sofa on which Ivan Ilych dies",
+      "written": "1884–1886",
+      "firstPublished": 1886,
+      "readingTime": 80,
+      "difficulty": 2,
+      "lengthNote": "Twelve short chapters, about 22,000 words in the Maudes’ English; the chapters get shorter as the end approaches",
+      "openingLine": "During an interval in the Melvinski trial in the large building of the Law Courts the members and public prosecutor met in Ivan Egorovich Shebek’s private room, where the conversation turned on the celebrated Krasovski case.",
+      "summary": "The story begins with the news of a judge’s death and his colleagues’ first thought, which is of the promotions it will bring. Then it goes back over his life: a correct, agreeable career in the law, a marriage kept at arm’s length, a new house furnished to look like everyone else’s, and a knock against a window frame while he is hanging curtains. The pain in his side becomes the centre of his existence. Doctors talk of kidneys and appendixes, his family pretend he is not dying, and only the peasant servant Gerasim treats him honestly. In his last days Ivan Ilych asks whether his whole life has been wrong, and two hours before he dies he finds light where he expected death.",
+      "referenceStyle": "chapter, as the story numbers its twelve chapters I to XII",
+      "sourceText": {
+        "label": "The Louise and Aylmer Maude translation, from an Internet Archive transcription checked against the Oxford printing of 1935",
+        "url": "https://archive.org/download/TheDeathOfIvanIlych/the%20Death%20of%20Ivan%20Ilych.txt",
+        "note": "The Maudes’ translation appeared in the Oxford Centenary Edition of Tolstoy they edited, in the volume Iván Ilých and Hadji Murád (1935). The transcription used for checking drops Maude’s accents (Ilych for Ilých) and has a few typing errors, so every quotation here was also compared with a scan of the 1935 volume. The Maudes spell the name Ilych; the Astor edition’s title uses Ilyich."
+      },
+      "structure": [
+        {
+          "id": "funeral",
+          "label": "Chapter I",
+          "title": "The funeral",
+          "summary": "In a break at the Law Courts, Peter Ivanovich reads out a newspaper notice: Ivan Ilych Golovin, Member of the Court of Justice, has died. Each colleague thinks first of the transfers and promotions. Peter Ivanovich goes to the house, crosses himself uncertainly by the coffin, fights a springy pouffe while the widow asks how to get more money from the government, hears that Ivan Ilych screamed for three days, and escapes in time for a game of bridge. Only the servant Gerasim speaks plainly about death.",
+          "scenes": [
+            {
+              "ref": "Chapter I",
+              "title": "The notice",
+              "summary": "An interval in the Melvinski trial, the black-bordered announcement, and thoughts of eight hundred roubles more a year."
+            },
+            {
+              "ref": "Chapter I",
+              "title": "The widow’s drawing-room",
+              "summary": "Schwartz’s wink, the corpse’s reproachful face, the pouffe, the price of a grave, and a pension."
+            }
+          ]
+        },
+        {
+          "id": "career",
+          "label": "Chapters II–III",
+          "title": "A life easy, pleasant and decorous",
+          "summary": "Ivan Ilych’s life, the narrator says, had been most simple and most ordinary and therefore most terrible. A capable, sociable graduate of the School of Law, he rises through the provinces and the new courts of 1864, marries a suitable girl, withdraws from her into his work when marriage becomes unpleasant, and in 1880, passed over and short of money, lands a better post through a change of minister. He furnishes a new house himself, and while showing an upholsterer how to hang the curtains he slips and knocks his side.",
+          "scenes": [
+            {
+              "ref": "Chapter II",
+              "title": "The School of Law",
+              "summary": "A medallion reading respice finem, affairs in the province, and the reformed courts."
+            },
+            {
+              "ref": "Chapter II",
+              "title": "Marriage",
+              "summary": "Praskovya Fedorovna, the first pregnancy, and a separate, fenced-off world of official duties."
+            },
+            {
+              "ref": "Chapter III",
+              "title": "The new house",
+              "summary": "Five thousand roubles, a lucky conversation on a train, antiques, and a fall from a step-ladder."
+            }
+          ]
+        },
+        {
+          "id": "illness",
+          "label": "Chapters IV–V",
+          "title": "The doctors",
+          "summary": "A queer taste in his mouth and a discomfort in his left side grow into constant pain and bad temper. A celebrated doctor treats him as he treats prisoners in court and will not say whether the case is serious. Other doctors disagree, his wife blames him, his colleagues joke, and at cards he misses a grand slam. When his brother-in-law’s face tells him how much he has changed, he lies awake thinking of the appendix, and suddenly sees that the question is life and death.",
+          "scenes": [
+            {
+              "ref": "Chapter IV",
+              "title": "The celebrated doctor",
+              "summary": "Floating kidney, chronic catarrh or appendicitis, and one question the doctor will not answer."
+            },
+            {
+              "ref": "Chapter V",
+              "title": "The brother-in-law",
+              "summary": "A look in the glass, a conversation overheard, an evening of hope, and a night of terror."
+            }
+          ]
+        },
+        {
+          "id": "it",
+          "label": "Chapters VI–VIII",
+          "title": "It",
+          "summary": "He knows that all men are mortal but cannot believe it applies to him. Death, which he calls It, looks at him from behind the flowers in the drawing-room and through every screen he puts up. His family and doctors keep up the lie that he is only ill; the young peasant Gerasim alone tells the truth, carries out his excretions without disgust and holds his legs on his shoulders at night. The doctor calls, a specialist gives some hope, and his wife and daughter go to see Sarah Bernhardt.",
+          "scenes": [
+            {
+              "ref": "Chapter VI",
+              "title": "Caius",
+              "summary": "The syllogism from the logic book, the striped leather ball, and a life lost over a curtain."
+            },
+            {
+              "ref": "Chapter VII",
+              "title": "Gerasim",
+              "summary": "The commode, the legs held up, and the lie everyone else insists on."
+            },
+            {
+              "ref": "Chapter VIII",
+              "title": "A day",
+              "summary": "Tea, morphine, the doctor warming his hands, the specialist, and the family dressed for the theatre."
+            }
+          ]
+        },
+        {
+          "id": "reckoning",
+          "label": "Chapters IX–XI",
+          "title": "What if my whole life has been wrong?",
+          "summary": "In the night he weeps at the cruelty of God and hears an inner voice ask what he wants. Reviewing his life, he finds that everything good lies in childhood and that since then he has been going downhill while he thought he was rising. He lies facing the back of the sofa, living in memories. His daughter becomes engaged, he looks at Gerasim’s face and asks whether his whole life has been wrong, and after taking communion to please his wife he sends her away with a scream.",
+          "scenes": [
+            {
+              "ref": "Chapter IX",
+              "title": "The inner voice",
+              "summary": "The black sack, what do you want?, and the thought that he did not live as he ought, dismissed."
+            },
+            {
+              "ref": "Chapter X",
+              "title": "The back of the sofa",
+              "summary": "French plums of childhood, morocco leather, and a stone falling faster."
+            },
+            {
+              "ref": "Chapter XI",
+              "title": "Communion",
+              "summary": "The proposal, the question, the priest, the brief hope, and Go away!"
+            }
+          ]
+        },
+        {
+          "id": "light",
+          "label": "Chapter XII",
+          "title": "The light",
+          "summary": "He screams for three days, struggling in the black sack and held back by his belief that his life was a good one. At the end of the third day he falls through and sees a light. His son kisses his hand; he feels sorry for the boy and for his wife, tries to ask forgiveness, and finds that his fear of death has gone. In place of death there is light. Someone says It is finished, and he dies two hours later.",
+          "scenes": []
+        }
+      ],
+      "characters": [
+        {
+          "id": "ivan-ilych",
+          "name": "Ivan Ilych Golovin",
+          "role": "A Member of the Court of Justice, forty-five",
+          "summary": "The second son of a Petersburg official, capable, cheerful and correct, he did at every stage what people of good position considered right. He is a good judge who never abuses his power but enjoys having it, a husband who manages his marriage like an office, and a man whose greatest pleasure is bridge. Illness strips all this away. He rages, lies to himself, clings to hope, envies the healthy and longs to be pitied like a sick child, and at the very end he pities others and dies without fear.",
+          "clue": "He wore a medallion inscribed respice finem on his watch-chain as a young lawyer, and bruised his side on a window-frame showing an upholsterer how to drape curtains.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "correct",
+            "ambitious",
+            "sociable",
+            "afraid"
+          ],
+          "relationships": [
+            {
+              "to": "praskovya",
+              "label": "husband of",
+              "kind": "marriage",
+              "stages": [
+                "funeral",
+                "career",
+                "illness",
+                "it",
+                "reckoning",
+                "light"
+              ]
+            },
+            {
+              "to": "gerasim",
+              "label": "comforted by",
+              "kind": "service",
+              "stages": [
+                "it",
+                "reckoning",
+                "light"
+              ]
+            },
+            {
+              "to": "peter-ivanovich",
+              "label": "schoolfellow and colleague of",
+              "kind": "friendship",
+              "stages": [
+                "funeral",
+                "career",
+                "illness"
+              ]
+            },
+            {
+              "to": "lisa",
+              "label": "father of",
+              "kind": "family",
+              "stages": [
+                "career",
+                "it",
+                "reckoning"
+              ]
+            },
+            {
+              "to": "vasya",
+              "label": "father of",
+              "kind": "family",
+              "stages": [
+                "it",
+                "light"
+              ]
+            },
+            {
+              "to": "doctor",
+              "label": "examined by",
+              "kind": "service",
+              "stages": [
+                "illness",
+                "it",
+                "reckoning"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "praskovya",
+          "name": "Praskovya Fedorovna",
+          "role": "Ivan Ilych’s wife, née Mikhel",
+          "summary": "The most attractive girl in the set when Ivan Ilych married her, she became jealous, demanding and quarrelsome once the children came, and husband and wife settled into veiled hostility broken by short truces. In his illness she decides that it is his own fault, wishes him dead and fears losing his salary, and takes charge of doctors and communion. At the funeral she weeps, chooses a grave plot at two hundred roubles, and asks how to get more from the government.",
+          "clue": "At her husband’s funeral she chooses a cemetery plot by price, then asks a mourner whether any more money can be got out of the government.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "practical",
+            "self-pitying",
+            "managing"
+          ],
+          "relationships": [
+            {
+              "to": "ivan-ilych",
+              "label": "wife of",
+              "kind": "marriage",
+              "stages": [
+                "funeral",
+                "career",
+                "illness",
+                "it",
+                "reckoning",
+                "light"
+              ]
+            },
+            {
+              "to": "lisa",
+              "label": "mother of",
+              "kind": "family",
+              "stages": [
+                "it",
+                "reckoning"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gerasim",
+          "name": "Gerasim",
+          "role": "The butler’s young assistant, a peasant",
+          "summary": "Clean, fresh and cheerful, grown stout on town food, he carries out his master’s excretions without a sign of disgust, lifts him easily, and holds his legs on his shoulders through whole nights. He is the only person who does not lie about Ivan Ilych’s dying. We shall all come to it, he says, so why grudge a little trouble? At the funeral he is still briskly doing what needs to be done.",
+          "clue": "A young peasant who smells of tar and fresh winter air, he sits up all night with his sick master’s feet on his shoulders and says he will get sleep enough later on.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "cheerful",
+            "honest",
+            "strong",
+            "kind"
+          ],
+          "relationships": [
+            {
+              "to": "ivan-ilych",
+              "label": "nurses",
+              "kind": "service",
+              "stages": [
+                "it",
+                "reckoning",
+                "light"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "peter-ivanovich",
+          "name": "Peter Ivanovich",
+          "role": "Ivan Ilych’s colleague and old schoolfellow",
+          "summary": "He studied law with Ivan Ilych and considers himself under obligations to him, but his first thought on hearing of the death is a transfer for his brother-in-law. At the funeral he crosses himself in an intermediate direction, struggles with the pouffe, feels a moment of terror that the same could happen to him, reassures himself that it happens only to other people, and gets to his bridge after all.",
+          "clue": "At a funeral he wrestles with the springs of a pouffe while the widow detaches her shawl, and still arrives in time to cut in at cards.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "conventional",
+            "uneasy",
+            "self-protective"
+          ],
+          "relationships": [
+            {
+              "to": "ivan-ilych",
+              "label": "old friend of",
+              "kind": "friendship",
+              "stages": [
+                "funeral",
+                "career",
+                "illness"
+              ]
+            },
+            {
+              "to": "schwartz",
+              "label": "bridge partner of",
+              "kind": "friendship",
+              "stages": [
+                "funeral"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "schwartz",
+          "name": "Schwartz",
+          "role": "A colleague, elegant and playful",
+          "summary": "With his Piccadilly whiskers and slim figure in evening dress he wears an air of elegant solemnity that contrasts with his playfulness. At the funeral his wink says that Ivan Ilych has made a mess of things, not like you and me, and his whole bearing says that a death is no reason to miss an evening’s bridge. During the illness his jocularity reminds Ivan Ilych of what he himself was ten years before.",
+          "clue": "At a colleague’s funeral he winks from the stairs and whispers where the evening’s card game will be.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "elegant",
+            "flippant"
+          ],
+          "relationships": [
+            {
+              "to": "peter-ivanovich",
+              "label": "plays cards with",
+              "kind": "friendship",
+              "stages": [
+                "funeral"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lisa",
+          "name": "Lisa",
+          "role": "Ivan Ilych’s daughter",
+          "summary": "Handsome, healthy and in love with the examining magistrate Petrishchev, she is impatient with illness, suffering and death because they interfere with her happiness. She comes in to say goodbye before the theatre in full evening dress, breaks an unbearable silence by looking at her watch, and after he tells her he will soon free them all of himself she asks her mother why they should be tortured. At the funeral she looks at Peter Ivanovich as if he were to blame.",
+          "clue": "Dressed for Sarah Bernhardt, she ends an awkward silence at her sick father’s bedside by looking at the watch he gave her.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "healthy",
+            "impatient",
+            "self-absorbed"
+          ],
+          "relationships": [
+            {
+              "to": "ivan-ilych",
+              "label": "daughter of",
+              "kind": "family",
+              "stages": [
+                "career",
+                "it",
+                "reckoning"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vasya",
+          "name": "Vasya",
+          "role": "Ivan Ilych’s schoolboy son, called Volodya in chapter I",
+          "summary": "A frightened boy of thirteen or fourteen with dark shadows under his eyes, whose schooling has been a subject of dispute. His father sees that he is the only one besides Gerasim who understands and pities him. At the very end the boy catches his father’s flailing hand and kisses it, and that is the moment Ivan Ilych falls through into the light. The story calls him Volodya (Vladimir) and also Vasya, an inconsistency Tolstoy left in and the translation keeps.",
+          "clue": "At the last he catches his dying father’s waving hand, presses it to his lips and cries.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "frightened",
+            "pitying"
+          ],
+          "relationships": [
+            {
+              "to": "ivan-ilych",
+              "label": "son of",
+              "kind": "family",
+              "stages": [
+                "it",
+                "light"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "doctor",
+          "name": "The doctor",
+          "role": "The celebrated doctor, and the others who follow him",
+          "summary": "He puts on with Ivan Ilych the air of importance Ivan Ilych puts on with prisoners, discusses floating kidney, chronic catarrh and appendicitis, and will not answer the one question that matters. Later the regular doctor arrives fresh and cheerful, warms his hands, and asks what sort of a night the patient has had. Ivan Ilych knows all of it is pretence and submits to it as he used to submit to lawyers’ speeches.",
+          "clue": "He looks over his spectacles at a patient as a judge looks at a prisoner who will not keep to the questions put to him.",
+          "firstAppearance": "Chapter IV",
+          "traits": [
+            "important",
+            "evasive",
+            "professional"
+          ],
+          "relationships": [
+            {
+              "to": "ivan-ilych",
+              "label": "treats",
+              "kind": "service",
+              "stages": [
+                "illness",
+                "it",
+                "reckoning"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "mortality",
+          "name": "Death and the body",
+          "canonicalName": "Death and the body",
+          "summary": "Everyone knows that men are mortal, and nobody in the story believes it about himself. The colleagues feel it is he who is dead and not I; Peter Ivanovich’s moment of terror at the funeral passes as soon as he remembers it happened to Ivan Ilych; and Ivan Ilych himself, who learned the syllogism about Caius at school, finds it true of Caius and impossible for little Vanya. The story makes the reader live through the months in which an ordinary man is forced to believe it.",
+          "development": "The notice in the Gazette; the corpse’s reproach; It behind the flowers; the black sack; In place of death there was light."
+        },
+        {
+          "id": "falsehood",
+          "name": "The lie",
+          "canonicalName": "The lie",
+          "summary": "What torments Ivan Ilych most is the deception, which everyone accepts, that he is not dying but only ill and needs to keep quiet and follow his treatment. The lie degrades his death to the level of their visits, curtains and sturgeon, and it is kept up by the decorum he has served all his life. He longs to shout at them to stop lying and never does. Only Gerasim and, silently, his son do not lie, and at the end he sees that his whole life has been a deception hiding life and death from him.",
+          "development": "Believe me at the funeral; the doctors’ important air; You feel better, don’t you?; the conventional deception at the theatre party; all you have lived for is falsehood."
+        },
+        {
+          "id": "respectability",
+          "name": "Propriety",
+          "canonicalName": "Respectability",
+          "summary": "Ivan Ilych’s rule of life is that everything should be done easily, pleasantly and decorously, and done as the most highly placed people do it. His youthful sins were committed with clean hands, in clean linen and with French phrases. His house is furnished to be refined and resembles every other house of its class. Propriety governs the funeral too: Peter Ivanovich knows to cross himself and to press the widow’s hand. At the end the correctness of his whole life is exactly what holds him back from the light.",
+          "development": "Il faut que jeunesse se passe; the drawing-room; the dinners that resemble all other dinners; I did everything properly; the justification of his life held him fast."
+        },
+        {
+          "id": "work",
+          "name": "The law and official life",
+          "canonicalName": "Work",
+          "summary": "A gifted lawyer, Ivan Ilych reduces every case to what can be written on stamped paper and keeps human relations out of official business; his work is the fenced-off world he retreats to from his marriage. The story turns his profession against him: the celebrated doctor treats him exactly as he treated prisoners, his colleagues treat his death as a vacancy, and in his last reckoning he hears an usher announce the judge and protests that he is not guilty.",
+          "development": "The new courts of 1864; examining magistrate, prosecutor, member of the court; five thousand roubles; the doctor as judge; The judge is coming!"
+        },
+        {
+          "id": "marriage",
+          "name": "Marriage",
+          "canonicalName": "Marriage",
+          "summary": "Marriage gives Ivan Ilych satisfaction and the right people approve of it, so he marries, and within a year he decides that marriage must be managed like an official duty: dinner at home, a housewife and a bed, and propriety in public. Husband and wife live in an ocean of veiled hostility with occasional islets of amorousness. In his illness she makes his dying another of the annoyances he causes her, and he hates her with his whole soul, until at the very end he feels sorry for her.",
+          "development": "Why shouldn’t I marry?; the first pregnancy; the forty-five-rouble quarrel over cakes; Jean, my dear; sorry for you too."
+        },
+        {
+          "id": "compassion",
+          "name": "Pity",
+          "canonicalName": "Pity",
+          "summary": "What Ivan Ilych wants most, and would be ashamed to confess, is to be pitied as a sick child is pitied. Nobody around him can give it except Gerasim, who pities him without lying, and his son, whose frightened look he recognises. At the end the direction reverses: it is Ivan Ilych who feels sorry for his son and his wife, and in acting for their sake he is released from his suffering and his fear.",
+          "development": "Gerasim holding his legs; the wish to be petted and cried over; Shebek’s visit; the boy kissing his hand; sorry for him, sorry for you too."
+        },
+        {
+          "id": "self-knowledge",
+          "name": "Self-knowledge",
+          "canonicalName": "Self-knowledge",
+          "summary": "For most of the story Ivan Ilych dismisses the thought that he did not live as he ought, because he did everything properly. The question returns in the night voices of chapter IX and in chapter XI becomes unavoidable: what if my whole life has been wrong? The light comes with the admission that it was not the right thing, and the question of what the right thing is. The story’s argument is that self-knowledge comes late and cannot be reached through correctness.",
+          "development": "What do you want?; going downhill while I imagined I was going up; What if my whole life has been wrong?; it was not the right thing, but that’s no matter."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "ending-first",
+          "name": "Beginning with the death",
+          "canonicalName": "Beginning with the death",
+          "definition": "A narrative that shows how a life ends before telling how it was lived.",
+          "bookDefinition": "A narrative that shows how a life ends before telling how it was lived.",
+          "inThisBook": "Chapter I is the funeral, seen by colleagues who are thinking about promotions and bridge. The title has already announced the death, so the reader follows Ivan Ilych’s life knowing what it is heading towards and watching how little the people around him care."
+        },
+        {
+          "id": "narratorial-intrusion",
+          "name": "The intruding narrator",
+          "canonicalName": "The intruding narrator",
+          "definition": "A narrator who interrupts the story to comment, digress or talk about the telling.",
+          "bookDefinition": "A narrator who interrupts the story to comment, digress or talk about the telling.",
+          "inThisBook": "Tolstoy’s narrator passes sentence at the start of chapter II: most simple and most ordinary and therefore most terrible. He adds dry verdicts throughout, on the house that resembled all others and the pleasures that were those of vanity, and the comments hold the reader to a judgement Ivan Ilych reaches only at the end."
+        },
+        {
+          "id": "free-indirect-style",
+          "name": "Free indirect style",
+          "canonicalName": "Free indirect style",
+          "definition": "Third-person narration that takes on a character’s own thoughts and phrasing without quotation marks.",
+          "bookDefinition": "Third-person narration that takes on a character’s own thoughts and phrasing without quotation marks.",
+          "inThisBook": "The narration slips into Ivan Ilych’s mind with the Caius syllogism, the screens, It, and the thoughts about the kidney, so that the reader shares his evasions before seeing through them. In chapter VIII the tense shifts to the present, and a single day is lived through with him."
+        },
+        {
+          "id": "leitmotif",
+          "name": "The repeated sentence",
+          "canonicalName": "The repeated sentence",
+          "definition": "A phrase or image that comes back through a work and gathers meaning.",
+          "bookDefinition": "A phrase or image that comes back through a work and gathers meaning.",
+          "inThisBook": "Easily, pleasantly and decorously describes his life again and again until it becomes a charge against it. It, with a capital letter, stands for death. The black sack, the screens and the light recur, and Gerasim’s we shall all come to it is said at the funeral and again at the sickbed."
+        },
+        {
+          "id": "analogy",
+          "name": "Analogy",
+          "canonicalName": "Analogy",
+          "definition": "An extended comparison that explains one thing by another.",
+          "bookDefinition": "An extended comparison that explains one thing by another.",
+          "inThisBook": "Three comparisons carry the story: the doctor treats the patient as a judge treats a prisoner; Ivan Ilych’s decline is a stone falling faster as it nears the ground; his last discovery is like the feeling in a railway carriage when you think you are going backwards and suddenly realise you are going forwards."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "Things in the house",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative comes back to until it stands for the argument itself.",
+          "bookDefinition": "Objects that carry meaning beyond their use in the plot.",
+          "inThisBook": "The pouffe whose springs keep rising at the funeral, the pink cretonne Ivan Ilych chose, the curtains he died for, the scratched table and the album in the drawing-room, the medallion reading respice finem: the story’s things show a life spent on appearances."
+        },
+        {
+          "id": "light-dark",
+          "name": "Light and dark imagery",
+          "canonicalName": "Light and dark imagery",
+          "definition": "Contrasts of light and darkness used to carry meaning.",
+          "bookDefinition": "Contrasts of light and darkness used to carry meaning.",
+          "inThisBook": "There was light and now there is darkness, he thinks in chapter V; he struggles in a black sack and a black hole, and falls through to a light at the bottom. The contrast is simple and structural, and the last chapter resolves it."
+        },
+        {
+          "id": "irony",
+          "name": "Irony",
+          "canonicalName": "Irony",
+          "definition": "Saying one thing in a form that invites the opposite judgement.",
+          "bookDefinition": "Saying one thing in words whose real meaning is different, or letting events contradict what characters expect.",
+          "inThisBook": "He dies of a fall from a step-ladder while arranging a drawing-room to impress people; he wore respice finem, look to the end, on his watch-chain; he boasts that another man might have been killed; the doctor looks at him as if he were a prisoner who will not keep to the questions put to him."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "has-died",
+          "text": "“Gentlemen,” he said, “Ivan Ilych has died!”",
+          "speaker": "Peter Ivanovich",
+          "reference": "Chapter I",
+          "stage": "funeral",
+          "context": "An interval in a trial; he has been reading the Gazette while his colleagues argue about jurisdiction.",
+          "analysis": "Death arrives as office news, read out from a newspaper in the middle of a legal argument. The next paragraphs show what the news means to the listeners: a vacancy, a chain of promotions and eight hundred roubles more a year. Tolstoy starts from the world’s view of the event, so that the rest of the book can show it from the inside.",
+          "themes": [
+            "mortality",
+            "work"
+          ],
+          "techniques": [
+            "ending-first"
+          ],
+          "characters": [
+            "peter-ivanovich",
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter I",
+          "cloze": [
+            "Gentlemen",
+            "died"
+          ]
+        },
+        {
+          "id": "he-not-i",
+          "text": "the mere fact of the death of a near acquaintance aroused, as usual, in all who heard of it the complacent feeling that, “it is he who is dead and not I.”",
+          "speaker": "",
+          "reference": "Chapter I",
+          "stage": "funeral",
+          "context": "The colleagues’ response, after their thoughts about promotions.",
+          "analysis": "As usual is the sharpest word: this is the normal human reaction, and the narrator reports it without surprise. The complacency is the attitude the story will dismantle. Ivan Ilych will spend his last months discovering that he, too, had always assumed death was something that happened to other people.",
+          "themes": [
+            "mortality",
+            "self-knowledge"
+          ],
+          "techniques": [
+            "narratorial-intrusion"
+          ],
+          "characters": [],
+          "source": "Maude translation, chapter I",
+          "cloze": [
+            "complacent",
+            "dead"
+          ]
+        },
+        {
+          "id": "mess-of-things",
+          "text": "he stopped and winked at him, as if to say: “Ivan Ilych has made a mess of things—not like you and me.”",
+          "speaker": "",
+          "reference": "Chapter I",
+          "stage": "funeral",
+          "context": "Schwartz on the stairs, as Peter Ivanovich arrives at the house.",
+          "analysis": "Dying is treated as a failure of management, the sort of blunder a sensible man avoids. Schwartz’s wink is a joke shared among the living, and it is also the whole creed of Ivan Ilych’s class. His playful elegance refreshes Peter Ivanovich, who takes it as proof that the evening’s bridge need not be spoiled.",
+          "themes": [
+            "mortality",
+            "respectability"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "schwartz",
+            "peter-ivanovich"
+          ],
+          "source": "Maude translation, chapter I",
+          "cloze": [
+            "mess",
+            "winked"
+          ]
+        },
+        {
+          "id": "the-pouffe",
+          "text": "the springs of the pouffe, relieved of his weight, rose also and gave him a push.",
+          "speaker": "",
+          "reference": "Chapter I",
+          "stage": "funeral",
+          "context": "The widow’s shawl has caught on a table, and Peter Ivanovich stands to free it.",
+          "analysis": "Tolstoy stages the scene of condolence as farce. The pouffe rebels, creaks and quivers while the widow weeps and asks about money, and the comedy cools Peter Ivanovich’s feelings entirely. The furniture Ivan Ilych chose so carefully has become an obstacle to mourning him.",
+          "themes": [
+            "respectability"
+          ],
+          "techniques": [
+            "symbolic-objects",
+            "irony"
+          ],
+          "characters": [
+            "peter-ivanovich"
+          ],
+          "source": "Maude translation, chapter I",
+          "cloze": [
+            "pouffe",
+            "springs"
+          ]
+        },
+        {
+          "id": "an-affectation",
+          "text": "I consider it an affectation to say that my grief prevents my attending to practical affairs.",
+          "speaker": "Praskovya Fedorovna",
+          "reference": "Chapter I",
+          "stage": "funeral",
+          "context": "She has just settled the price of a grave plot and passes Peter Ivanovich an ash-tray.",
+          "analysis": "Her grief and her practicality are equally performed. She means to seem admirably sensible, and she does attend to everything: the plot, the choir, and above all how much can be got from the government. The line shows a widow whose attention was never really on her husband, and prepares us for the marriage the next chapter describes.",
+          "themes": [
+            "marriage",
+            "falsehood"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "praskovya",
+            "peter-ivanovich"
+          ],
+          "source": "Maude translation, chapter I",
+          "cloze": [
+            "affectation",
+            "grief"
+          ]
+        },
+        {
+          "id": "gods-will",
+          "text": "“It’s God’s will. We shall all come to it some day,” said Gerasim, displaying his teeth",
+          "speaker": "Gerasim",
+          "reference": "Chapter I",
+          "stage": "funeral",
+          "context": "Helping Peter Ivanovich into his coat as he leaves.",
+          "analysis": "Gerasim says plainly what everyone else in the house has been avoiding. He says it cheerfully, showing the white teeth of a healthy peasant, and goes briskly back to work. The reader does not yet know that he nursed the dying man; when we find out in chapter VII, these words take on their full weight.",
+          "themes": [
+            "mortality",
+            "falsehood"
+          ],
+          "techniques": [
+            "leitmotif"
+          ],
+          "characters": [
+            "gerasim",
+            "peter-ivanovich"
+          ],
+          "source": "Maude translation, chapter I",
+          "cloze": [
+            "will",
+            "come"
+          ]
+        },
+        {
+          "id": "most-terrible",
+          "text": "Ivan Ilych’s life had been most simple and most ordinary and therefore most terrible.",
+          "speaker": "",
+          "reference": "Chapter II",
+          "stage": "career",
+          "context": "The first sentence of the account of his life.",
+          "analysis": "Therefore is the scandalous word. Tolstoy does not say the life was terrible in spite of being ordinary; he says ordinariness is what made it terrible. The verdict comes before the evidence, and the chapter that follows reads like the case for the prosecution, told in a calm, almost admiring voice.",
+          "themes": [
+            "respectability",
+            "self-knowledge"
+          ],
+          "techniques": [
+            "narratorial-intrusion"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter II",
+          "cloze": [
+            "ordinary",
+            "terrible"
+          ]
+        },
+        {
+          "id": "duty",
+          "text": "he considered his duty to be what was so considered by those in authority.",
+          "speaker": "",
+          "reference": "Chapter II",
+          "stage": "career",
+          "context": "A description of the young Ivan Ilych at the School of Law.",
+          "analysis": "His conscience is borrowed from his superiors. The narrator adds that he was never a toady, only drawn to people of high station as a fly is to the light, and that things which once disgusted him stopped troubling him when he saw good people do them. The sentence explains how a decent man can live a false life without ever doing anything wrong.",
+          "themes": [
+            "respectability",
+            "work"
+          ],
+          "techniques": [
+            "narratorial-intrusion"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter II",
+          "cloze": [
+            "duty",
+            "authority"
+          ]
+        },
+        {
+          "id": "respice-finem",
+          "text": "hung a medallion inscribed respice finem on his watch-chain",
+          "speaker": "",
+          "reference": "Chapter II",
+          "stage": "career",
+          "context": "Among his purchases on leaving the School of Law, with clothes from a fashionable tailor.",
+          "analysis": "Respice finem is Latin for look to the end, an old reminder of death, and he wears it as a fashionable ornament. It is the story’s most compact irony. The young man who carries the motto round with him will not look at his own end until it is staring at him from behind the drawing-room flowers.",
+          "themes": [
+            "mortality",
+            "respectability"
+          ],
+          "techniques": [
+            "irony",
+            "symbolic-objects"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter II",
+          "cloze": [
+            "medallion",
+            "watch-chain"
+          ]
+        },
+        {
+          "id": "clean-hands",
+          "text": "It was all done with clean hands, in clean linen, with French phrases, and above all among people of the best society and consequently with the approval of people of rank.",
+          "speaker": "",
+          "reference": "Chapter II",
+          "stage": "career",
+          "context": "Summing up his affairs and carousals as a young official in the province.",
+          "analysis": "Here is the moral system of his class in one sentence. The affair, the milliner and the obsequiousness are excused by the manner in which they were carried out and by the company in which they occurred. Consequently carries the whole argument: approval follows from rank, and conscience follows from approval.",
+          "themes": [
+            "respectability"
+          ],
+          "techniques": [
+            "narratorial-intrusion",
+            "irony"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter II",
+          "cloze": [
+            "linen",
+            "rank"
+          ]
+        },
+        {
+          "id": "fenced-off",
+          "text": "he at once retired into his separate fenced-off world of official duties, where he found satisfaction.",
+          "speaker": "",
+          "reference": "Chapter II",
+          "stage": "career",
+          "context": "He has worked out what attitude to take towards married life.",
+          "analysis": "Work becomes a fortress against home. The phrase fenced-off world describes his whole method of living: keep each part of life in its compartment, admit only official relations, and let nothing fresh or vital disturb the arrangement. Illness is the one thing that cannot be kept outside the fence.",
+          "themes": [
+            "marriage",
+            "work"
+          ],
+          "techniques": [],
+          "characters": [
+            "ivan-ilych",
+            "praskovya"
+          ],
+          "source": "Maude translation, chapter II",
+          "cloze": [
+            "fenced-off",
+            "satisfaction"
+          ]
+        },
+        {
+          "id": "resembling-others",
+          "text": "In reality it was just what is usually seen in the houses of people of moderate means who want to appear rich, and therefore succeed only in resembling others like themselves",
+          "speaker": "",
+          "reference": "Chapter III",
+          "stage": "career",
+          "context": "After describing Ivan Ilych’s delight in the house he has furnished.",
+          "analysis": "The narrator steps in to deflate him. Every antique and damask that Ivan Ilych thinks exceptional is exactly what his class buys in order to resemble itself. The house is his masterpiece, the place where he receives his injury, and a picture of a life lived to look like other lives.",
+          "themes": [
+            "respectability"
+          ],
+          "techniques": [
+            "narratorial-intrusion",
+            "symbolic-objects"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter III",
+          "cloze": [
+            "moderate",
+            "resembling"
+          ]
+        },
+        {
+          "id": "bit-of-an-athlete",
+          "text": "It’s a good thing I’m a bit of an athlete. Another man might have been killed, but I merely knocked myself, just here; it hurts when it’s touched, but it’s passing off already—it’s only a bruise.",
+          "speaker": "Ivan Ilych",
+          "reference": "Chapter III",
+          "stage": "career",
+          "context": "At tea on the first evening in the new house, his wife asks about his fall from the step-ladder.",
+          "analysis": "He laughs about the knock that will kill him. The boast about being an athlete and the dismissive only a bruise are the last carefree words he speaks. Readers know from the title, and he does not, that the spot he points to is where the story is heading.",
+          "themes": [
+            "mortality"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "ivan-ilych",
+            "praskovya"
+          ],
+          "source": "Maude translation, chapter III",
+          "cloze": [
+            "athlete",
+            "bruise"
+          ]
+        },
+        {
+          "id": "accused-person",
+          "text": "The doctor put on just the same air towards him as he himself put on towards an accused person.",
+          "speaker": "",
+          "reference": "Chapter IV",
+          "stage": "illness",
+          "context": "His first visit to a celebrated doctor.",
+          "analysis": "Ivan Ilych recognises his own professional manner in the doctor, and for the first time he is on the wrong side of it. The doctor sums up brilliantly, weighs floating kidney against appendicitis, and ignores the only question that matters to the patient. The story turns the courtroom around, and he cannot appeal.",
+          "themes": [
+            "work",
+            "falsehood"
+          ],
+          "techniques": [
+            "analogy"
+          ],
+          "characters": [
+            "doctor",
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter IV",
+          "cloze": [
+            "accused",
+            "air"
+          ]
+        },
+        {
+          "id": "only-one-question",
+          "text": "To Ivan Ilych only one question was important: was his case serious or not?",
+          "speaker": "",
+          "reference": "Chapter IV",
+          "stage": "illness",
+          "context": "The doctor is speculating about what so-and-so inside the patient might indicate.",
+          "analysis": "The patient’s question and the doctor’s question are different questions, and only one of them gets asked. When Ivan Ilych finally puts his, apologising for it, the doctor looks at him over his spectacles as if to say that a prisoner must keep to the questions put to him. Much of the story turns on this gap between the professional’s problem and the sufferer’s.",
+          "themes": [
+            "falsehood",
+            "mortality"
+          ],
+          "techniques": [
+            "free-indirect-style"
+          ],
+          "characters": [
+            "ivan-ilych",
+            "doctor"
+          ],
+          "source": "Maude translation, chapter IV",
+          "cloze": [
+            "serious",
+            "question"
+          ]
+        },
+        {
+          "id": "life-and-death",
+          "text": "“It’s not a question of appendix or kidney, but of life and . . . death.”",
+          "speaker": "Ivan Ilych",
+          "reference": "Chapter V",
+          "stage": "illness",
+          "context": "Alone at night, after an evening in which he felt sure the appendix was improving, the pain returns.",
+          "analysis": "The medical vocabulary collapses. For weeks he has thought in terms of organs that could be corrected, and in one night he sees the real subject. The hesitation before death, marked by the dots, is the first time he lets himself say the word, and within minutes he is lying in the dark expecting to die.",
+          "themes": [
+            "mortality",
+            "self-knowledge"
+          ],
+          "techniques": [
+            "free-indirect-style"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter V",
+          "cloze": [
+            "appendix",
+            "life"
+          ]
+        },
+        {
+          "id": "caius",
+          "text": "“Caius is a man, men are mortal, therefore Caius is mortal,” had always seemed to him correct as applied to Caius, but certainly not as applied to himself.",
+          "speaker": "",
+          "reference": "Chapter VI",
+          "stage": "it",
+          "context": "The syllogism he learned from a school logic book.",
+          "analysis": "Logic cannot reach him. Caius is man in the abstract; Ivan Ilych is little Vanya, with a mother, a nurse and a striped leather ball, and a particular person cannot believe that a general law applies to him. Nearly every reader recognises the same refusal in himself, which is why the passage is so often quoted.",
+          "themes": [
+            "mortality",
+            "self-knowledge"
+          ],
+          "techniques": [
+            "free-indirect-style"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter VI",
+          "cloze": [
+            "Caius",
+            "mortal"
+          ]
+        },
+        {
+          "id": "striped-ball",
+          "text": "What did Caius know of the smell of that striped leather ball Vanya had been so fond of?",
+          "speaker": "",
+          "reference": "Chapter VI",
+          "stage": "it",
+          "context": "Following the syllogism, he remembers his childhood.",
+          "analysis": "Against the abstract man of the syllogism he sets the concrete details of one life: a ball, a smell, the rustle of his mother’s silk dress. The details are what make him feel exempt from death, and they are also the only things in his life that later seem worth anything. The childhood he recalls here returns in chapter IX as the one good place in his past.",
+          "themes": [
+            "mortality",
+            "self-knowledge"
+          ],
+          "techniques": [
+            "free-indirect-style"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter VI",
+          "cloze": [
+            "striped",
+            "ball"
+          ]
+        },
+        {
+          "id": "storming-a-fort",
+          "text": "I lost my life over that curtain as I might have done when storming a fort.",
+          "speaker": "Ivan Ilych",
+          "reference": "Chapter VI",
+          "stage": "it",
+          "context": "In the drawing-room, his wife tells him to let the servants move things in case he hurts himself again.",
+          "analysis": "A soldier’s death would at least have been for something. His was for a curtain, and he sees the absurdity immediately: how terrible and how stupid. The comparison measures the whole life he chose, since the room that injured him was the height of his ambitions.",
+          "themes": [
+            "mortality",
+            "respectability"
+          ],
+          "techniques": [
+            "irony",
+            "symbolic-objects"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter VI",
+          "cloze": [
+            "curtain",
+            "fort"
+          ]
+        },
+        {
+          "id": "gerasim-alone",
+          "text": "Gerasim alone did not lie; everything showed that he alone understood the facts of the case and did not consider it necessary to disguise them, but simply felt sorry for his emaciated and enfeebled master.",
+          "speaker": "",
+          "reference": "Chapter VII",
+          "stage": "it",
+          "context": "After the account of the lie the rest of the household insists on.",
+          "analysis": "Tolstoy’s moral hero is a peasant lad who does the dirtiest job in the house. He is healthy, as the others are, but his health does not offend Ivan Ilych, because he does not pretend. The facts of the case is a lawyer’s phrase, and it is the servant who understands them.",
+          "themes": [
+            "falsehood",
+            "compassion"
+          ],
+          "techniques": [
+            "narratorial-intrusion"
+          ],
+          "characters": [
+            "gerasim",
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter VII",
+          "cloze": [
+            "lie",
+            "sorry"
+          ]
+        },
+        {
+          "id": "stop-lying",
+          "text": "“Stop lying! You know and I know that I am dying. Then at least stop lying about it!”",
+          "speaker": "Ivan Ilych",
+          "reference": "Chapter VII",
+          "stage": "it",
+          "context": "What he has many times been within a hairbreadth of calling out, and never does.",
+          "analysis": "Ivan Ilych never says these words; he imagines them. The decorum he served all his life silences him in his own death, and the lie degrades his dying to the level of their visits, curtains and sturgeon for dinner. The unspoken shout is the story’s clearest statement of what the family’s kindness really is.",
+          "themes": [
+            "falsehood",
+            "mortality"
+          ],
+          "techniques": [
+            "free-indirect-style"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter VII",
+          "cloze": [
+            "lying",
+            "dying"
+          ]
+        },
+        {
+          "id": "sick-child",
+          "text": "he wished most of all (though he would have been ashamed to confess it) for someone to pity him as a sick child is pitied.",
+          "speaker": "",
+          "reference": "Chapter VII",
+          "stage": "it",
+          "context": "After the account of Gerasim’s care.",
+          "analysis": "The important functionary with a greying beard wants to be petted and cried over. When his colleague Shebek arrives, he puts on a severe face and gives an opinion on a decision of the Court of Cassation instead. The contrast between what he needs and what his dignity lets him show is the falsity within him, matching the falsity around him.",
+          "themes": [
+            "compassion"
+          ],
+          "techniques": [
+            "free-indirect-style"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter VII",
+          "cloze": [
+            "pity",
+            "child"
+          ]
+        },
+        {
+          "id": "black-sack",
+          "text": "It seemed to him that he and his pain were being thrust into a narrow, deep black sack, but though they were pushed further and further in they could not be pushed to the bottom.",
+          "speaker": "",
+          "reference": "Chapter IX",
+          "stage": "reckoning",
+          "context": "Under opium, between his wife’s visit and three in the morning.",
+          "analysis": "The image is physical and dreamlike, and it becomes the story’s map of dying. He is frightened of falling through and yet wants to, struggles and co-operates. In chapter XII the same sack returns, and what keeps him from reaching the bottom turns out to be his belief that his life was a good one.",
+          "themes": [
+            "mortality"
+          ],
+          "techniques": [
+            "light-dark",
+            "leitmotif"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter IX",
+          "cloze": [
+            "sack",
+            "bottom"
+          ]
+        },
+        {
+          "id": "going-downhill",
+          "text": "It is as if I had been going downhill while I imagined I was going up.",
+          "speaker": "Ivan Ilych",
+          "reference": "Chapter IX",
+          "stage": "reckoning",
+          "context": "Reviewing his life, he finds that only childhood contained anything really good.",
+          "analysis": "His career has been one long ascent in rank, and he now reads it as a descent. The next sentence explains the paradox: he was going up in public opinion, but to the same extent life was ebbing away. The image anticipates the stone falling faster in chapter X and the railway carriage in chapter XII.",
+          "themes": [
+            "self-knowledge",
+            "work"
+          ],
+          "techniques": [
+            "analogy"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter IX",
+          "cloze": [
+            "downhill",
+            "imagined"
+          ]
+        },
+        {
+          "id": "did-not-live",
+          "text": "“Maybe I did not live as I ought to have done,” it suddenly occurred to him. “But how could that be, when I did everything properly?”",
+          "speaker": "Ivan Ilych",
+          "reference": "Chapter IX",
+          "stage": "reckoning",
+          "context": "The night the inner voice asks him what he wants.",
+          "analysis": "The truth arrives, and he dismisses it straight away as impossible; the narrator calls it the sole solution of all the riddles of life and death. Properly is the word that blocks it. Two chapters later he will not be able to push the thought away, and in the last chapter it is what sets him free.",
+          "themes": [
+            "self-knowledge",
+            "respectability"
+          ],
+          "techniques": [
+            "free-indirect-style"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter IX",
+          "cloze": [
+            "properly",
+            "ought"
+          ]
+        },
+        {
+          "id": "tortured",
+          "text": "“Is it our fault?” Lisa said to her mother. “It’s as if we were to blame! I am sorry for papa, but why should we be tortured?”",
+          "speaker": "Lisa",
+          "reference": "Chapter XI",
+          "stage": "reckoning",
+          "context": "Her father has told her dryly that he will soon free them all of himself.",
+          "analysis": "Lisa is not cruel, only young, healthy and in love, and her father’s suffering interferes with her happiness. Her complaint shows how the family experiences his dying: as something being done to them. The reader has just seen, from his side, the look of animosity that prompted it.",
+          "themes": [
+            "compassion",
+            "falsehood"
+          ],
+          "techniques": [],
+          "characters": [
+            "lisa",
+            "praskovya"
+          ],
+          "source": "Maude translation, chapter XI",
+          "cloze": [
+            "fault",
+            "tortured"
+          ]
+        },
+        {
+          "id": "whole-life-wrong",
+          "text": "It occurred to him that what had appeared perfectly impossible before, namely that he had not spent his life as he should have done, might after all be true.",
+          "speaker": "",
+          "reference": "Chapter XI",
+          "stage": "reckoning",
+          "context": "In the night, looking at Gerasim’s sleepy, good-natured face, he has asked himself what would happen if his whole life had been wrong.",
+          "analysis": "Everything in the story has led to this admission. The thought he dismissed in chapter IX as impossible now seems possible, and it arrives as he looks at the face of the one honest person in the house. He tries to defend his career, his family and his interests and finds there is nothing to defend. The discovery multiplies his suffering before it relieves it.",
+          "themes": [
+            "self-knowledge"
+          ],
+          "techniques": [
+            "free-indirect-style"
+          ],
+          "characters": [
+            "ivan-ilych",
+            "gerasim"
+          ],
+          "source": "Maude translation, chapter XI",
+          "cloze": [
+            "impossible",
+            "true"
+          ]
+        },
+        {
+          "id": "railway-carriage",
+          "text": "What had happened to him was like the sensation one sometimes experiences in a railway carriage when one thinks one is going backwards while one is really going forwards and suddenly becomes aware of the real direction.",
+          "speaker": "",
+          "reference": "Chapter XII",
+          "stage": "light",
+          "context": "At the end of three days of screaming, he falls through the hole and sees a light at the bottom.",
+          "analysis": "An ordinary modern experience describes his spiritual turn. All his life he thought he was going up and was going down; now, dying, he thought he was going backwards into nothing and was going forward. The comparison is exact and undramatic, which is why it carries such conviction.",
+          "themes": [
+            "self-knowledge",
+            "mortality"
+          ],
+          "techniques": [
+            "analogy"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter XII",
+          "cloze": [
+            "railway",
+            "direction"
+          ]
+        },
+        {
+          "id": "place-of-death",
+          "text": "In place of death there was light.",
+          "speaker": "",
+          "reference": "Chapter XII",
+          "stage": "light",
+          "context": "He has sought his accustomed fear of death and not found it.",
+          "analysis": "The sentence is as plain as the story’s first line about his ordinary life. It follows directly from his pity for his wife and son: once he acts for their sake, the pain and the fear drop away. Readers argue whether the light is grace, a dying man’s vision or Tolstoy’s doctrine, and the story does not settle it.",
+          "themes": [
+            "mortality",
+            "compassion"
+          ],
+          "techniques": [
+            "light-dark"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter XII",
+          "cloze": [
+            "death",
+            "light"
+          ]
+        },
+        {
+          "id": "death-is-finished",
+          "text": "“Death is finished,” he said to himself. “It is no more!”",
+          "speaker": "Ivan Ilych",
+          "reference": "Chapter XII",
+          "stage": "light",
+          "context": "Someone at the bedside has said It is finished, the last words of Christ in St John’s Gospel.",
+          "analysis": "He hears the words about himself and turns them round: it is death, not his life, that is finished. For those present his agony lasts two more hours; for him the change happened in a single instant. The last sentence then records his death with complete physical plainness.",
+          "themes": [
+            "mortality"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "ivan-ilych"
+          ],
+          "source": "Maude translation, chapter XII",
+          "cloze": [
+            "finished",
+            "Death"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "Written",
+          "value": "1884–1886",
+          "note": "Planned from 1881 as the death of a judge, begun as Ivan Ilych’s own diary, and recast in the third person in the autumn of 1885; the manuscript is dated 25 March 1886."
+        },
+        {
+          "label": "First published",
+          "value": "1886",
+          "note": "In the twelfth volume of Tolstoy’s collected Works, published by his wife Sofia Tolstaya."
+        },
+        {
+          "label": "The man behind it",
+          "value": "Ivan Ilyich Mechnikov",
+          "note": "A judicial official in Tula and brother of the biologist Ilya Mechnikov, who died in 1881 aged forty-five."
+        },
+        {
+          "label": "Ivan Ilych dies",
+          "value": "4 February 1882",
+          "note": "The date in the notice his colleagues read at the start; he is forty-five."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "A parable of conversion",
+          "summary": "The story belongs with A Confession and the religious writings of Tolstoy’s crisis. A life lived for propriety is a kind of death; illness strips away its falsehood; the peasant Gerasim embodies the simple faith Tolstoy admired; and the light at the end is grace given to a man who at last pities others. On this reading the realism serves a moral argument.",
+          "counter": "The story never names God as the source of the light, and its force comes from the physical and social detail, not the doctrine. Readers who share none of Tolstoy’s beliefs still find it true, which suggests it cannot be reduced to a parable."
+        },
+        {
+          "position": "A satire on professional life",
+          "summary": "Some readers stress the story’s attack on the educated classes: lawyers who reduce people to stamped paper, doctors who talk of organs and ignore patients, colleagues who count vacancies, and a family that treats a death as an inconvenience. The funeral chapter and the doctor who behaves like a judge are the centre of this reading.",
+          "counter": "Satire alone would not account for the last chapters, where the subject is the fear of death in anybody, whatever his class. Ivan Ilych is shown from inside with great sympathy, and his redemption concerns him, not his profession."
+        },
+        {
+          "position": "A study of dying",
+          "summary": "Doctors, nurses and philosophers have read the story as an unsparing account of what dying is like and of how the living fail the dying: the evasions, the lie, the isolation, the longing to be pitied, and the relief of one person who tells the truth. It is still taught to students of medicine for this reason.",
+          "counter": "Treating it as a case history can miss Tolstoy’s insistence that the physical suffering is less than the mental, and that the crisis is about how Ivan Ilych lived. The story is less interested in dying well than in having lived badly."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "Why does Tolstoy begin The Death of Ivan Ilyich with the funeral?",
+          "focus": "Structure and point of view",
+          "plan": [
+            "Describe what chapter I shows: the colleagues’ promotions, Schwartz’s wink, the pouffe, the widow’s questions about money, Gerasim at the door.",
+            "Explain what the reader knows from the start, and how that knowledge changes the account of Ivan Ilych’s life in chapters II and III.",
+            "Show how the funeral’s attitudes (it is he who is dead and not I) return in Ivan Ilych’s own thinking about Caius.",
+            "Consider Gerasim’s we shall all come to it, and what it means once we reach chapter VII.",
+            "Conclude on how the ending, seen from inside, answers the opening, seen from outside."
+          ]
+        },
+        {
+          "question": "How does Tolstoy present falsehood and truth in the story?",
+          "focus": "The lie, propriety and Gerasim",
+          "plan": [
+            "Begin with the lie that he is only ill, and why it torments him more than the pain.",
+            "Trace the falsity in his life before his illness: duty borrowed from authority, the house, the marriage run like an office.",
+            "Analyse the doctors and the family as keepers of the lie, and the theatre evening in chapter VIII.",
+            "Contrast Gerasim, and the son’s frightened look of pity.",
+            "End with his recognition in chapter XI that his whole life was a deception, and what replaces it."
+          ]
+        },
+        {
+          "question": "Is the ending of The Death of Ivan Ilyich convincing?",
+          "focus": "The light, pity and self-knowledge",
+          "plan": [
+            "Set out what happens in chapter XII: the black sack, the railway carriage, the son’s kiss, pity for his wife, the light.",
+            "Consider what prepares it: the inner voice, going downhill, the question about his whole life.",
+            "Weigh the religious reading against the psychological one.",
+            "Ask whether the two hours of agony seen by the others undercut the single instant he experiences.",
+            "Reach a judgement, using the story’s plainness of style as evidence either way."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Why is Peter Ivanovich’s struggle with the pouffe in the first chapter funny, and what is the joke for?",
+        "Is Praskovya Fedorovna a villain?",
+        "What does Gerasim give Ivan Ilych that nobody else can?",
+        "Why can Ivan Ilych accept that Caius is mortal but not that he is?",
+        "Where in the story does Ivan Ilych begin to change?",
+        "Does the light at the end make the story hopeful?"
+      ],
+      "timeline": [
+        {
+          "year": 1828,
+          "label": "Leo Tolstoy is born at Yasnaya Polyana",
+          "detail": "His family estate near Tula, where he lived for most of his life.",
+          "kind": "author"
+        },
+        {
+          "year": 1864,
+          "label": "The judicial reforms of Alexander II",
+          "detail": "The statutes of 1864 created courts independent of the administration, with public trials and juries. Ivan Ilych is among the new men recruited to them.",
+          "kind": "context"
+        },
+        {
+          "year": 1869,
+          "label": "War and Peace completed",
+          "detail": "Published in parts from 1865; Anna Karenina followed in 1875–1877.",
+          "kind": "author"
+        },
+        {
+          "year": 1880,
+          "label": "The story’s hardest year",
+          "detail": "Ivan Ilych is passed over for promotion, falls into debt, and then obtains a post worth five thousand roubles through a change at the ministry.",
+          "kind": "work"
+        },
+        {
+          "year": 1881,
+          "label": "Ivan Ilyich Mechnikov dies at Tula",
+          "detail": "A judicial official in Tula and brother of the biologist Ilya Mechnikov. Accounts of his reflections on his deathbed reached Tolstoy through his sister-in-law Tatyana Kuzminskaya.",
+          "kind": "context"
+        },
+        {
+          "year": 1882,
+          "label": "A Confession",
+          "detail": "Tolstoy’s account of the crisis that made him ask what meaning his life had, written 1879–1882; banned in Russia, it was first printed in Geneva in 1884.",
+          "kind": "author"
+        },
+        {
+          "year": 1882,
+          "label": "Ivan Ilych dies on 4 February, in the story",
+          "detail": "The date on the black-bordered notice in chapter I.",
+          "kind": "work"
+        },
+        {
+          "year": 1884,
+          "label": "Tolstoy notes a plan for the death of a judge",
+          "detail": "His diary for 27 April records that he wants to begin something new: either the death of a judge or the notes of a madman.",
+          "kind": "work"
+        },
+        {
+          "year": 1886,
+          "label": "The Death of Ivan Ilyich is published",
+          "detail": "The manuscript was dated 25 March; the story appeared that year in the twelfth volume of Tolstoy’s Works, published by Sofia Tolstaya.",
+          "kind": "work"
+        },
+        {
+          "year": 1927,
+          "label": "Heidegger’s Being and Time",
+          "detail": "A footnote in the discussion of death points to Tolstoy’s story as a picture of the collapse of the everyday assumption that dying is what happens to someone else.",
+          "kind": "reception"
+        },
+        {
+          "year": 1935,
+          "label": "The Maudes’ translation in the Oxford Centenary Edition",
+          "detail": "In the volume Iván Ilých and Hadji Murád, with an introduction by Aylmer Maude.",
+          "kind": "reception"
+        },
+        {
+          "year": 1952,
+          "label": "Kurosawa’s Ikiru",
+          "detail": "Akira Kurosawa’s film about a Tokyo official with stomach cancer, which borrows the story’s situation and moves it to post-war Japan.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Yasnaya Polyana",
+          "lat": 54.0697,
+          "lon": 37.5256,
+          "note": "Tolstoy’s estate, where the family spent the summers in the years he wrote the story."
+        },
+        {
+          "name": "Tula",
+          "lat": 54.1931,
+          "lon": 37.6173,
+          "note": "Where Ivan Ilyich Mechnikov, the judicial official whose death lies behind the story, served and died in 1881."
+        },
+        {
+          "name": "Khamovniki, Moscow",
+          "lat": 55.731,
+          "lon": 37.585,
+          "note": "The Tolstoys’ Moscow house, where the family spent winters from 1882."
+        },
+        {
+          "name": "Kursk",
+          "lat": 51.7373,
+          "lon": 36.1873,
+          "note": "Where an acquaintance gets into Ivan Ilych’s railway carriage with the news of a change at the ministry that makes his fortune."
+        },
+        {
+          "name": "St Petersburg",
+          "lat": 59.9343,
+          "lon": 30.3351,
+          "note": "The capital of ministries, where Ivan Ilych goes in 1880 to find a post with a salary of five thousand roubles."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/the-overcoat/",
+          "why": "Gogol’s poor clerk, forty years earlier, is the other end of the ladder Ivan Ilych climbs, and dies just as unnoticed by his colleagues."
+        },
+        {
+          "href": "/books/notes-from-underground/",
+          "why": "Dostoevsky’s retired official, twenty years earlier, also discovers that a life lived by the rules of his class has been wasted, and says so furiously."
+        },
+        {
+          "href": "/books/the-brothers-karamazov/",
+          "why": "The other great Russian novel of the early 1880s about how to live and how to die, with its own dying elder and its own questions about faith."
+        },
+        {
+          "href": "/books/a-christmas-carol/",
+          "why": "Another comfortable man made to look at his own death, and changed by it in time to pity the people around him."
+        },
+        {
+          "href": "/books/hamlet/",
+          "why": "The play most often quoted about the fear of death, and about what dreams may come when we have shuffled off this mortal coil."
+        }
+      ],
+      "videos": []
+    },
+    {
       "slug": "the-diary-of-a-nobody",
       "title": "The Diary of a Nobody",
       "author": "George and Weedon Grossmith",
@@ -100791,7 +102254,7 @@
         {
           "id": "compassion",
           "name": "Pity and mockery",
-          "canonicalName": "Pity and mockery",
+          "canonicalName": "Pity",
           "summary": "The office laughs at Akaki and the narrator often laughs with it. One paragraph goes the other way: a young clerk hears in Akaki’s voice the words Am I not your brother? and hides his face at the memory years later. Readers have divided over which of these the story means. Critics in the 1840s read it as a plea for the poor clerk, and Dostoevsky’s first novel answered it in those terms; in 1919 Boris Eikhenbaum argued that the humane paragraph is one more voice in a comic performance. Both responses can be supported from the text.",
           "development": "Paper snowflakes; the young clerk’s memory; a collection that raises almost nothing; some colleagues laughing and most sorry; the important personage’s pang of conscience."
         },
