@@ -9,6 +9,7 @@ const editionSectionOverrides = require('./edition-section-overrides.json');
 const { metadata: pageMetadata, validatePageSeo, validateSitemapUrls } = require('./seo-validation');
 const { coverFormat } = require('./book-edition-schema');
 const septemberCatalogue = require('./september-catalogue-data.json');
+const conciseCatalogue = require('./concise-catalogue-data.json');
 
 const root = process.cwd();
 const SITE_URL = 'https://astorlibrary.com';
@@ -25,7 +26,8 @@ const collectionFiles = [
   'romantic-regency/index.html',
   'victorian/index.html',
   'american/index.html',
-  'modern/index.html'
+  'modern/index.html',
+  'russian/index.html'
 ];
 const specialistCollectionFiles = [
   'shakespeare/apocrypha/index.html',
@@ -509,7 +511,7 @@ for (const resource of resourceData) {
 
 const classicLiterature = fs.readFileSync(path.join(root, 'classic-literature', 'index.html'), 'utf8');
 if (!classicLiterature.includes('<h1>Classic literature editions.</h1>')) failures.push('The classic literature landing page is missing its main heading');
-if (countMatches(classicLiterature, /class="classic-period"/g) !== 8) failures.push('The classic literature landing page must link all eight literary collections');
+if (countMatches(classicLiterature, /class="classic-period"/g) !== collectionFiles.length) failures.push('The classic literature landing page must link all literary collections');
 for (const href of ['/library/', '/reading-routes/', '/resources/']) {
   if (!classicLiterature.includes('href="' + href + '"')) failures.push('The classic literature landing page is missing ' + href);
 }
@@ -754,6 +756,19 @@ for (const book of septemberCatalogue) {
 }
 if (new Set(formatReleaseData.books.map(book => book.slug)).size !== formatReleaseData.books.length) failures.push('The format release data repeats a paperback book');
 if (new Set(formatReleaseData.hardbacks.map(book => book.href)).size !== formatReleaseData.hardbacks.length) failures.push('The format release data repeats a hardback book');
+
+for (const book of conciseCatalogue) {
+  const file = path.join(root, book.href.slice(1), 'index.html');
+  const html = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : '';
+  if (!html) failures.push('A supplied book page is missing: ' + book.title);
+  if (memberships.get(book.href) !== book.collectionFile) failures.push(book.href + ' has the wrong literary collection');
+  if (!html.includes('src="/' + encodeURIComponent(book.image).replace(/'/g, '%27') + '"')) failures.push(book.href + ' is missing its supplied paperback cover');
+  if (!html.includes('href="' + book.purchaseUrl + '"')) failures.push(book.href + ' is missing its paperback purchase link');
+  if (!html.includes('class="edition-includes"') || countMatches(html, /<li>/g) !== book.editionIncludes.length) failures.push(book.href + ' is missing its supplied edition contents');
+}
+const russianBooks = conciseCatalogue.filter(book => book.collection === 'Russian');
+if (russianBooks.length !== 5 || russianBooks.some(book => memberships.get(book.href) !== 'russian/index.html')) failures.push('The five supplied Russian texts must be in the Russian collection');
+if (memberships.get('/books/common-sense-and-the-american-crisis/') !== 'romantic-regency/index.html') failures.push('Common Sense and The American Crisis must be in Romantic & Regency');
 
 const hardbackFile = path.join(root, hardbackCollectionFile);
 const hardbackHtml = fs.existsSync(hardbackFile) ? fs.readFileSync(hardbackFile, 'utf8') : '';
@@ -1136,7 +1151,7 @@ if (fs.existsSync(distDir)) {
         }
       }
     }
-    if (/^(?:(?:authors|subjects|passage-room|teach|classic-literature|library|resources|study|explore|reading-routes|site-index|hardbacks|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern)\/index\.html|shakespeare\/(?:apocrypha|expanded-scholarly-editions)\/index\.html)$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
+    if (/^(?:(?:authors|subjects|passage-room|teach|classic-literature|library|resources|study|explore|reading-routes|site-index|hardbacks|ancient-epic|renaissance-early-modern|shakespeare|restoration-enlightenment|romantic-regency|victorian|american|modern|russian)\/index\.html|shakespeare\/(?:apocrypha|expanded-scholarly-editions)\/index\.html)$/.test(fileName) && !html.includes('data-astor-collection-schema')) {
       failures.push('dist/' + fileName + ' is missing its collection description for search engines');
     }
     if (specialistCollectionFiles.includes(fileName)) {

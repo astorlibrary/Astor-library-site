@@ -1,14 +1,14 @@
 {
   "counts": {
-    "books": 141,
-    "authors": 97,
+    "books": 153,
+    "authors": 106,
     "subjects": 12,
     "resources": 62,
     "studyEditions": 41,
-    "collections": 11,
+    "collections": 12,
     "passages": 90,
     "seasons": 8,
-    "entries": 462
+    "entries": 484
   },
   "books": [
     {
@@ -366,6 +366,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Carmilla",
+      "author": "Sheridan Le Fanu",
+      "collection": "Victorian",
+      "description": "First serialised in The Dark Blue from December 1871 to March 1872, Carmilla follows Laura’s encounter with the beautiful and increasingly disturbing guest who arrives at her isolated Styrian home.",
+      "href": "/books/carmilla/",
+      "image": "/Carmilla%20Main%20Cover.png",
+      "imageAlt": "Carmilla — Astor paperback cover",
+      "search": "Carmilla Sheridan Le Fanu Victorian First serialised in The Dark Blue from December 1871 to March 1872, Carmilla follows Laura’s encounter with the beautiful and increasingly disturbing guest who arrives at her isolated Styrian home. Text and supporting material",
+      "authorHref": "/authors/sheridan-le-fanu/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Carnacki, the Ghost-Finder",
       "author": "William Hope Hodgson",
       "collection": "Modern Classics",
@@ -398,6 +412,20 @@
       "imageAlt": "Astor Library Charles I: Selected Writings cover",
       "search": "Charles I: Selected Writings Charles I and contemporaries Renaissance & Early Modern Seventeen documents from the reign of Charles I: letters to Henrietta Maria, his answers to the Petition of Right, papers captured at Naseby, the death warrant and the speech he made on the scaffold in January 1649. What this Astor edition contains. Charles I: Selected Writings Seventeen documents, from private letters to the scaffold. What happens. Reading it whole. Authorship and provenance stated for every document. Editorial method Context and interpretation Primary documents · 1620s–1649 The king’s hand, the conflict and the contest for memory. Royal voice and drafting Crown and Parliament Trial and memory Publication, text and historical context. The Petition of Right and constitutional disagreement Private correspondence made public Trial, execution and the royal image",
       "authorHref": "/authors/#charles-i-and-contemporaries",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Common Sense and The American Crisis",
+      "author": "Thomas Paine",
+      "collection": "Romantic & Regency",
+      "description": "Common Sense first appeared anonymously in Philadelphia on 10 January 1776.",
+      "href": "/books/common-sense-and-the-american-crisis/",
+      "image": "/Common%20sense%20and%20The%20American%20Tragedy%20Main%20Cover.png",
+      "imageAlt": "Common Sense and The American Crisis — Astor paperback cover",
+      "search": "Common Sense and The American Crisis Thomas Paine Romantic & Regency Common Sense first appeared anonymously in Philadelphia on 10 January 1776. Text and supporting material",
+      "authorHref": "/authors/thomas-paine/",
       "subjects": []
     },
     {
@@ -497,6 +525,20 @@
           "href": "/subjects/narration-testimony/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "E. F. Benson Ghost Stories",
+      "author": "E. F. Benson",
+      "collection": "Modern Classics",
+      "description": "Combining The Room in the Tower and Other Stories (1912) and Visible and Invisible (1923), this volume brings together two of E. F. Benson’s major supernatural collections in full.",
+      "href": "/books/e-f-benson-ghost-stories/",
+      "image": "/E.F%20Benson%20Ghost%20Stories%20Main%20Cover.png",
+      "imageAlt": "E. F. Benson Ghost Stories — Astor paperback cover",
+      "search": "E. F. Benson Ghost Stories E. F. Benson Modern Classics Combining The Room in the Tower and Other Stories (1912) and Visible and Invisible (1923), this volume brings together two of E. F. Benson’s major supernatural collections in full. Text and supporting material",
+      "authorHref": "/authors/e-f-benson/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -645,6 +687,20 @@
       "imageAlt": "Astor Library Hamlet — Expanded Scholarly Edition cover",
       "search": "Hamlet — Expanded Scholarly Edition William Shakespeare Shakespeare Hamlet survives in three early texts, the quartos of 1603 and 1604–5 and the 1623 Folio, and they differ by hundreds of lines. What this Astor edition contains. Hamlet From the Ghost’s command to the poisoned match. What happens. Reading it whole. A conflated text built openly from Quarto and Folio. Editorial method Context and interpretation Expanded Scholarly Edition Evidence, versions and four centuries on stage. Evidence and action Text and version Four centuries on stage Publication, text and historical context. Dating the three printed witnesses The conflated text Letters and documents Standard or expanded scholarship.",
       "authorHref": "/shakespeare/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "Heart of Darkness",
+      "author": "Joseph Conrad",
+      "collection": "Modern Classics",
+      "description": "First published in three instalments in Blackwood’s Edinburgh Magazine from February to April 1899, Heart of Darkness appeared in book form in Youth: A Narrative, and Two Other Stories on 13 November 1902.",
+      "href": "/books/heart-of-darkness/",
+      "image": "/Heart%20of%20Darkness%20main%20cover.png",
+      "imageAlt": "Heart of Darkness — Astor paperback cover",
+      "search": "Heart of Darkness Joseph Conrad Modern Classics First published in three instalments in Blackwood’s Edinburgh Magazine from February to April 1899, Heart of Darkness appeared in book form in Youth: A Narrative, and Two Other Stories on 13 November 1902. Text and supporting material",
+      "authorHref": "/authors/joseph-conrad/",
       "subjects": []
     },
     {
@@ -1119,6 +1175,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Notes from Underground",
+      "author": "Fyodor Dostoevsky",
+      "collection": "Russian",
+      "description": "First published in 1864, Notes from Underground combines a furious attack on rational utopianism with the confession of an isolated, self-defeating narrator.",
+      "href": "/books/notes-from-underground/",
+      "image": "/Notes%20from%20Underground%20Main%20Cover.png",
+      "imageAlt": "Notes from Underground — Astor paperback cover",
+      "search": "Notes from Underground Fyodor Dostoevsky Russian First published in 1864, Notes from Underground combines a furious attack on rational utopianism with the confession of an isolated, self-defeating narrator. Text and supporting material",
+      "authorHref": "/authors/fyodor-dostoevsky/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Oroonoko",
       "author": "Aphra Behn",
       "collection": "Restoration & Enlightenment",
@@ -1438,6 +1508,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "Songs of Innocence and of Experience",
+      "author": "William Blake",
+      "collection": "Romantic & Regency",
+      "description": "First issued separately as Songs of Innocence in 1789 and Songs of Experience in 1794, Blake later brought the two together under the subtitle Shewing the Two Contrary States of the Human Soul.",
+      "href": "/books/songs-of-innocence-and-of-experience/",
+      "image": "/Somgs%20of%20Innocence%20and%20Experience%20Main%20Cover.png",
+      "imageAlt": "Songs of Innocence and of Experience — Astor paperback cover",
+      "search": "Songs of Innocence and of Experience William Blake Romantic & Regency First issued separately as Songs of Innocence in 1789 and Songs of Experience in 1794, Blake later brought the two together under the subtitle Shewing the Two Contrary States of the Human Soul. Text and supporting material",
+      "authorHref": "/authors/william-blake/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Strange Case of Dr Jekyll and Mr Hyde",
       "author": "Robert Louis Stevenson",
       "collection": "Victorian",
@@ -1578,6 +1662,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "collection": "Russian",
+      "description": "First published serially between 1879 and 1880, The Brothers Karamazov centres on the murder of Fyodor Pavlovitch Karamazov and the lives of his sons Dmitri, Ivan and Alyosha.",
+      "href": "/books/the-brothers-karamazov/",
+      "image": "/Bothers%20Karamazov%20Main%20Cover.png",
+      "imageAlt": "The Brothers Karamazov — Astor paperback cover",
+      "search": "The Brothers Karamazov Fyodor Dostoevsky Russian First published serially between 1879 and 1880, The Brothers Karamazov centres on the murder of Fyodor Pavlovitch Karamazov and the lives of his sons Dmitri, Ivan and Alyosha. Text and supporting material",
+      "authorHref": "/authors/fyodor-dostoevsky/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "The Call of the Wild",
       "author": "Jack London",
       "collection": "American Classics",
@@ -1654,6 +1752,20 @@
           "href": "/subjects/seasonal-writing/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Death of Ivan Ilyich",
+      "author": "Leo Tolstoy",
+      "collection": "Russian",
+      "description": "First published in 1886, The Death of Ivan Ilyich follows a successful Russian official whose apparently ordinary life is overturned by illness and the knowledge of his approaching death.",
+      "href": "/books/the-death-of-ivan-ilyich/",
+      "image": "/Death%20of%20Ivan%20Ilych%20Main%20Cover.png",
+      "imageAlt": "The Death of Ivan Ilyich — Astor paperback cover",
+      "search": "The Death of Ivan Ilyich Leo Tolstoy Russian First published in 1886, The Death of Ivan Ilyich follows a successful Russian official whose apparently ordinary life is overturned by illness and the knowledge of his approaching death. Text and supporting material",
+      "authorHref": "/authors/leo-tolstoy/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -1743,6 +1855,20 @@
           "href": "/subjects/seasonal-writing/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Hound of the Baskervilles",
+      "author": "Arthur Conan Doyle",
+      "collection": "Victorian",
+      "description": "When Sir Charles Baskerville dies on the edge of Dartmoor, the evidence points towards an old family legend: a monstrous hound said to pursue the Baskerville line.",
+      "href": "/books/the-hound-of-the-baskervilles/",
+      "image": "/Hound%20of%20the%20Baskervilles%20Main%20Cover.png",
+      "imageAlt": "The Hound of the Baskervilles — Astor paperback cover",
+      "search": "The Hound of the Baskervilles Arthur Conan Doyle Victorian When Sir Charles Baskerville dies on the edge of Dartmoor, the evidence points towards an old family legend: a monstrous hound said to pursue the Baskerville line. Text and supporting material",
+      "authorHref": "/authors/arthur-conan-doyle/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -1954,6 +2080,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "The Overcoat",
+      "author": "Nikolai Gogol",
+      "collection": "Russian",
+      "description": "First published in Gogol’s collected Works in 1842, The Overcoat follows the obscure clerk Akaki Akakievitch from his copying desk to the purchase, loss and strange afterlife of a new greatcoat.",
+      "href": "/books/the-overcoat/",
+      "image": "/The%20Overcoat%20Main%20Cover.png",
+      "imageAlt": "The Overcoat — Astor paperback cover",
+      "search": "The Overcoat Nikolai Gogol Russian First published in Gogol’s collected Works in 1842, The Overcoat follows the obscure clerk Akaki Akakievitch from his copying desk to the purchase, loss and strange afterlife of a new greatcoat. Text and supporting material",
+      "authorHref": "/authors/nikolai-gogol/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "The Picture of Dorian Gray",
       "author": "Oscar Wilde",
       "collection": "Victorian",
@@ -2054,6 +2194,20 @@
           "href": "/subjects/narration-testimony/"
         }
       ]
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
+      "title": "The Rape of the Lock and An Essay on Criticism",
+      "author": "Alexander Pope",
+      "collection": "Restoration & Enlightenment",
+      "description": "The Rape of the Lock turns the cutting of Arabella Fermor’s hair into an elaborate mock-epic of sylphs, fashionable society, ombre and heroic combat.",
+      "href": "/books/the-rape-of-the-lock-and-an-essay-on-criticism/",
+      "image": "/The%20rape%20of%20the%20lock%20and%20essay%20on%20criticism%20main%20cover.png",
+      "imageAlt": "The Rape of the Lock and An Essay on Criticism — Astor paperback cover",
+      "search": "The Rape of the Lock and An Essay on Criticism Alexander Pope Restoration & Enlightenment The Rape of the Lock turns the cutting of Arabella Fermor’s hair into an elaborate mock-epic of sylphs, fashionable society, ombre and heroic combat. Text and supporting material",
+      "authorHref": "/authors/alexander-pope/",
+      "subjects": []
     },
     {
       "type": "book",
@@ -2612,6 +2766,20 @@
     {
       "type": "book",
       "typeLabel": "Book",
+      "title": "White Nights",
+      "author": "Fyodor Dostoevsky",
+      "collection": "Russian",
+      "description": "First published in 1848 and revised by Dostoevsky in 1860, White Nights follows an isolated young dreamer through four meetings with Nastenka during St Petersburg’s luminous summer nights.",
+      "href": "/books/white-nights/",
+      "image": "/White%20Nights%20Main%20Cover.png",
+      "imageAlt": "White Nights — Astor paperback cover",
+      "search": "White Nights Fyodor Dostoevsky Russian First published in 1848 and revised by Dostoevsky in 1860, White Nights follows an isolated young dreamer through four meetings with Nastenka during St Petersburg’s luminous summer nights. Text and supporting material",
+      "authorHref": "/authors/fyodor-dostoevsky/",
+      "subjects": []
+    },
+    {
+      "type": "book",
+      "typeLabel": "Book",
       "title": "Wuthering Heights",
       "author": "Emily Brontë",
       "collection": "Victorian",
@@ -2634,6 +2802,27 @@
     }
   ],
   "authors": [
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Alexander Pope",
+      "description": "The Rape of the Lock and An Essay on Criticism presents both poems complete, with line numbering, explanatory footnotes and historical context.",
+      "href": "/authors/alexander-pope/",
+      "image": "/The%20rape%20of%20the%20lock%20and%20essay%20on%20criticism%20main%20cover.png",
+      "imageAlt": "The Rape of the Lock and An Essay on Criticism — Astor paperback cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Rape of the Lock and An Essay on Criticism",
+          "href": "/books/the-rape-of-the-lock-and-an-essay-on-criticism/",
+          "image": "/The%20rape%20of%20the%20lock%20and%20essay%20on%20criticism%20main%20cover.png",
+          "imageAlt": "The Rape of the Lock and An Essay on Criticism — Astor paperback cover",
+          "collection": "Restoration & Enlightenment",
+          "description": "The Rape of the Lock turns the cutting of Arabella Fermor’s hair into an elaborate mock-epic of sylphs, fashionable society, ombre and heroic combat."
+        }
+      ],
+      "search": "Alexander Pope The Rape of the Lock and An Essay on Criticism Restoration & Enlightenment"
+    },
     {
       "type": "author",
       "typeLabel": "Writer",
@@ -2834,7 +3023,7 @@
       "href": "/authors/arthur-conan-doyle/",
       "image": "/Adventures%20of%20Sherlock%20Holmes.png",
       "imageAlt": "Astor Library The Adventures of Sherlock Holmes cover",
-      "bookCount": 2,
+      "bookCount": 3,
       "books": [
         {
           "title": "The Adventures of Sherlock Holmes",
@@ -2845,6 +3034,14 @@
           "description": "The first twelve Holmes short stories, printed in the Strand Magazine between July 1891 and June 1892 and collected that October."
         },
         {
+          "title": "The Hound of the Baskervilles",
+          "href": "/books/the-hound-of-the-baskervilles/",
+          "image": "/Hound%20of%20the%20Baskervilles%20Main%20Cover.png",
+          "imageAlt": "The Hound of the Baskervilles — Astor paperback cover",
+          "collection": "Victorian",
+          "description": "When Sir Charles Baskerville dies on the edge of Dartmoor, the evidence points towards an old family legend: a monstrous hound said to pursue the Baskerville line."
+        },
+        {
           "title": "The Sign of the Four",
           "href": "/books/sign-of-four/",
           "image": "/The%20SIgn%20Of%20Four.png",
@@ -2853,7 +3050,7 @@
           "description": "Mary Morstan has received a pearl in the post every year for six years, and now a letter asks her to a meeting."
         }
       ],
-      "search": "Arthur Conan Doyle The Adventures of Sherlock Holmes The Sign of the Four Victorian Victorian"
+      "search": "Arthur Conan Doyle The Adventures of Sherlock Holmes The Hound of the Baskervilles The Sign of the Four Victorian Victorian Victorian"
     },
     {
       "type": "author",
@@ -3174,6 +3371,27 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "E. F. Benson",
+      "description": "Ghost Stories combines The Room in the Tower and Other Stories and Visible and Invisible: twenty-nine complete supernatural stories with summaries and notes.",
+      "href": "/authors/e-f-benson/",
+      "image": "/E.F%20Benson%20Ghost%20Stories%20Main%20Cover.png",
+      "imageAlt": "E. F. Benson Ghost Stories — Astor paperback cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "E. F. Benson Ghost Stories",
+          "href": "/books/e-f-benson-ghost-stories/",
+          "image": "/E.F%20Benson%20Ghost%20Stories%20Main%20Cover.png",
+          "imageAlt": "E. F. Benson Ghost Stories — Astor paperback cover",
+          "collection": "Modern Classics",
+          "description": "Combining The Room in the Tower and Other Stories (1912) and Visible and Invisible (1923), this volume brings together two of E. F. Benson’s major supernatural collections in full."
+        }
+      ],
+      "search": "E. F. Benson E. F. Benson Ghost Stories Modern Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "E. Nesbit",
       "description": "The Railway Children is available with chapter summaries and context on Edwardian railways, family life, publication and adaptation.",
       "href": "/authors/e-nesbit/",
@@ -3488,6 +3706,43 @@
         }
       ],
       "search": "Frederick Douglass Narrative of the Life of Frederick Douglass American Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Fyodor Dostoevsky",
+      "description": "The Brothers Karamazov, White Nights and Notes from Underground are available in Constance Garnett’s translations, with explanatory notes and historical context.",
+      "href": "/authors/fyodor-dostoevsky/",
+      "image": "/Notes%20from%20Underground%20Main%20Cover.png",
+      "imageAlt": "Notes from Underground — Astor paperback cover",
+      "bookCount": 3,
+      "books": [
+        {
+          "title": "Notes from Underground",
+          "href": "/books/notes-from-underground/",
+          "image": "/Notes%20from%20Underground%20Main%20Cover.png",
+          "imageAlt": "Notes from Underground — Astor paperback cover",
+          "collection": "Russian",
+          "description": "First published in 1864, Notes from Underground combines a furious attack on rational utopianism with the confession of an isolated, self-defeating narrator."
+        },
+        {
+          "title": "The Brothers Karamazov",
+          "href": "/books/the-brothers-karamazov/",
+          "image": "/Bothers%20Karamazov%20Main%20Cover.png",
+          "imageAlt": "The Brothers Karamazov — Astor paperback cover",
+          "collection": "Russian",
+          "description": "First published serially between 1879 and 1880, The Brothers Karamazov centres on the murder of Fyodor Pavlovitch Karamazov and the lives of his sons Dmitri, Ivan and Alyosha."
+        },
+        {
+          "title": "White Nights",
+          "href": "/books/white-nights/",
+          "image": "/White%20Nights%20Main%20Cover.png",
+          "imageAlt": "White Nights — Astor paperback cover",
+          "collection": "Russian",
+          "description": "First published in 1848 and revised by Dostoevsky in 1860, White Nights follows an isolated young dreamer through four meetings with Nastenka during St Petersburg’s luminous summer nights."
+        }
+      ],
+      "search": "Fyodor Dostoevsky Notes from Underground The Brothers Karamazov White Nights Russian Russian Russian"
     },
     {
       "type": "author",
@@ -3915,6 +4170,27 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "Joseph Conrad",
+      "description": "Heart of Darkness contains the complete 1902 book text, explanatory footnotes, historical context on the Congo Free State and critical perspectives.",
+      "href": "/authors/joseph-conrad/",
+      "image": "/Heart%20of%20Darkness%20main%20cover.png",
+      "imageAlt": "Heart of Darkness — Astor paperback cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Heart of Darkness",
+          "href": "/books/heart-of-darkness/",
+          "image": "/Heart%20of%20Darkness%20main%20cover.png",
+          "imageAlt": "Heart of Darkness — Astor paperback cover",
+          "collection": "Modern Classics",
+          "description": "First published in three instalments in Blackwood’s Edinburgh Magazine from February to April 1899, Heart of Darkness appeared in book form in Youth: A Narrative, and Two Other Stories on 13 November 1902."
+        }
+      ],
+      "search": "Joseph Conrad Heart of Darkness Modern Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "Kate Chopin",
       "description": "The Awakening follows the 1899 first-edition text, with chapter-end context and material on Louisiana, publication and reception.",
       "href": "/authors/kate-chopin/",
@@ -4045,6 +4321,27 @@
         }
       ],
       "search": "L. M. Montgomery Anne of Green Gables The Blue Castle Modern Classics Modern Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Leo Tolstoy",
+      "description": "The Death of Ivan Ilyich follows Louise and Aylmer Maude’s translation, with chapter summaries, explanatory footnotes and historical context.",
+      "href": "/authors/leo-tolstoy/",
+      "image": "/Death%20of%20Ivan%20Ilych%20Main%20Cover.png",
+      "imageAlt": "The Death of Ivan Ilyich — Astor paperback cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Death of Ivan Ilyich",
+          "href": "/books/the-death-of-ivan-ilyich/",
+          "image": "/Death%20of%20Ivan%20Ilych%20Main%20Cover.png",
+          "imageAlt": "The Death of Ivan Ilyich — Astor paperback cover",
+          "collection": "Russian",
+          "description": "First published in 1886, The Death of Ivan Ilyich follows a successful Russian official whose apparently ordinary life is overturned by illness and the knowledge of his approaching death."
+        }
+      ],
+      "search": "Leo Tolstoy The Death of Ivan Ilyich Russian"
     },
     {
       "type": "author",
@@ -4299,6 +4596,27 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "Nikolai Gogol",
+      "description": "The Overcoat follows Claud Field’s translation, with forty-nine explanatory footnotes, summaries and historical context.",
+      "href": "/authors/nikolai-gogol/",
+      "image": "/The%20Overcoat%20Main%20Cover.png",
+      "imageAlt": "The Overcoat — Astor paperback cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "The Overcoat",
+          "href": "/books/the-overcoat/",
+          "image": "/The%20Overcoat%20Main%20Cover.png",
+          "imageAlt": "The Overcoat — Astor paperback cover",
+          "collection": "Russian",
+          "description": "First published in Gogol’s collected Works in 1842, The Overcoat follows the obscure clerk Akaki Akakievitch from his copying desk to the purchase, loss and strange afterlife of a new greatcoat."
+        }
+      ],
+      "search": "Nikolai Gogol The Overcoat Russian"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "O. Henry",
       "description": "One book in the catalogue: American Christmas Stories.",
       "href": "/authors/#o-henry",
@@ -4491,6 +4809,27 @@
     {
       "type": "author",
       "typeLabel": "Writer",
+      "title": "Sheridan Le Fanu",
+      "description": "Carmilla includes the complete 1872 text with the Hesselius Prologue, chapter summaries, explanatory notes and historical context.",
+      "href": "/authors/sheridan-le-fanu/",
+      "image": "/Carmilla%20Main%20Cover.png",
+      "imageAlt": "Carmilla — Astor paperback cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Carmilla",
+          "href": "/books/carmilla/",
+          "image": "/Carmilla%20Main%20Cover.png",
+          "imageAlt": "Carmilla — Astor paperback cover",
+          "collection": "Victorian",
+          "description": "First serialised in The Dark Blue from December 1871 to March 1872, Carmilla follows Laura’s encounter with the beautiful and increasingly disturbing guest who arrives at her isolated Styrian home."
+        }
+      ],
+      "search": "Sheridan Le Fanu Carmilla Victorian"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
       "title": "Stephen Crane",
       "description": "The catalogue pairs The Red Badge of Courage with the complete seventeen-story 1898 London collection The Open Boat and Other Stories.",
       "href": "/authors/stephen-crane/",
@@ -4629,6 +4968,27 @@
         }
       ],
       "search": "Thomas More Utopia Renaissance & Early Modern"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "Thomas Paine",
+      "description": "Common Sense and The American Crisis brings together the enlarged 1776 text of Common Sense and all sixteen Crisis pieces, with summaries and explanatory footnotes.",
+      "href": "/authors/thomas-paine/",
+      "image": "/Common%20sense%20and%20The%20American%20Tragedy%20Main%20Cover.png",
+      "imageAlt": "Common Sense and The American Crisis — Astor paperback cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Common Sense and The American Crisis",
+          "href": "/books/common-sense-and-the-american-crisis/",
+          "image": "/Common%20sense%20and%20The%20American%20Tragedy%20Main%20Cover.png",
+          "imageAlt": "Common Sense and The American Crisis — Astor paperback cover",
+          "collection": "Romantic & Regency",
+          "description": "Common Sense first appeared anonymously in Philadelphia on 10 January 1776."
+        }
+      ],
+      "search": "Thomas Paine Common Sense and The American Crisis Romantic & Regency"
     },
     {
       "type": "author",
@@ -4792,6 +5152,27 @@
         }
       ],
       "search": "Willa Cather American Christmas Stories American Classics"
+    },
+    {
+      "type": "author",
+      "typeLabel": "Writer",
+      "title": "William Blake",
+      "description": "Songs of Innocence and of Experience includes the complete collection, fifty-five reproductions of Blake’s illuminated plates, explanatory footnotes and textual notes.",
+      "href": "/authors/william-blake/",
+      "image": "/Somgs%20of%20Innocence%20and%20Experience%20Main%20Cover.png",
+      "imageAlt": "Songs of Innocence and of Experience — Astor paperback cover",
+      "bookCount": 1,
+      "books": [
+        {
+          "title": "Songs of Innocence and of Experience",
+          "href": "/books/songs-of-innocence-and-of-experience/",
+          "image": "/Somgs%20of%20Innocence%20and%20Experience%20Main%20Cover.png",
+          "imageAlt": "Songs of Innocence and of Experience — Astor paperback cover",
+          "collection": "Romantic & Regency",
+          "description": "First issued separately as Songs of Innocence in 1789 and Songs of Experience in 1794, Blake later brought the two together under the subtitle Shewing the Two Contrary States of the Human Soul."
+        }
+      ],
+      "search": "William Blake Songs of Innocence and of Experience Romantic & Regency"
     },
     {
       "type": "author",
@@ -8012,6 +8393,17 @@
       "imageAlt": "Modern Classics illustrated banner",
       "relatedBooks": [],
       "search": "Modern Classics Books from the turn of the twentieth century onwards: Kafka’s The Metamorphosis, Woolf’s Mrs Dalloway and A Room of One’s Own, Chesterton, Yeats, Mansfield and Orwell’s Animal Farm, with ghost stories by M. R. James and Algernon Blackwood and children’s classics from The Railway Children to The Wind in the Willows."
+    },
+    {
+      "type": "collection",
+      "typeLabel": "Collection",
+      "title": "Russian",
+      "description": "Complete works by Fyodor Dostoevsky, Leo Tolstoy and Nikolai Gogol, with explanatory notes and historical context.",
+      "href": "/russian/",
+      "image": "/Bothers%20Karamazov%20Main%20Cover.png",
+      "imageAlt": "Russian illustrated banner",
+      "relatedBooks": [],
+      "search": "Russian Complete works by Fyodor Dostoevsky, Leo Tolstoy and Nikolai Gogol, with explanatory notes and historical context."
     }
   ],
   "passages": [

@@ -581,7 +581,7 @@ const hardbacks = [
     author: 'F. Scott Fitzgerald',
     collection: 'American Classics',
     collectionHref: '/american/',
-    image: 'Great Gatsby Hardcover.png',
+    image: 'The Great gatsby Hardcover (Replacement).png',
     purchaseUrl: 'https://astorlibrary.com/go/the-great-gatsby-hardback',
     paperbackImage: 'The Great Gatsby Main Cover.png',
     paperbackPurchaseUrl: 'https://astorlibrary.com/go/the-great-gatsby',

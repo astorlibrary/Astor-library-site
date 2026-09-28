@@ -157,6 +157,20 @@ module.exports.push(
   { name: 'Jerome K. Jerome', href: '/authors/jerome-k-jerome/', birthDate: '1859', deathDate: '1927', profileType: 'catalogue', description: 'Three Men in a Boat preserves the 1889 text and A. Frederics illustrations, with context on the Victorian Thames and the book’s publication.' }
 );
 
+
+// New book pages keep their writers discoverable without adding biographies.
+module.exports.push(
+  { name: 'Fyodor Dostoevsky', href: '/authors/fyodor-dostoevsky/', birthDate: '1821', deathDate: '1881', profileType: 'catalogue', description: 'The Brothers Karamazov, White Nights and Notes from Underground are available in Constance Garnett’s translations, with explanatory notes and historical context.' },
+  { name: 'Sheridan Le Fanu', href: '/authors/sheridan-le-fanu/', birthDate: '1814', deathDate: '1873', profileType: 'catalogue', description: 'Carmilla includes the complete 1872 text with the Hesselius Prologue, chapter summaries, explanatory notes and historical context.' },
+  { name: 'Thomas Paine', href: '/authors/thomas-paine/', birthDate: '1737', deathDate: '1809', profileType: 'catalogue', description: 'Common Sense and The American Crisis brings together the enlarged 1776 text of Common Sense and all sixteen Crisis pieces, with summaries and explanatory footnotes.' },
+  { name: 'Leo Tolstoy', href: '/authors/leo-tolstoy/', birthDate: '1828', deathDate: '1910', profileType: 'catalogue', description: 'The Death of Ivan Ilyich follows Louise and Aylmer Maude’s translation, with chapter summaries, explanatory footnotes and historical context.' },
+  { name: 'E. F. Benson', href: '/authors/e-f-benson/', birthDate: '1867', deathDate: '1940', profileType: 'catalogue', description: 'Ghost Stories combines The Room in the Tower and Other Stories and Visible and Invisible: twenty-nine complete supernatural stories with summaries and notes.' },
+  { name: 'Joseph Conrad', href: '/authors/joseph-conrad/', birthDate: '1857', deathDate: '1924', profileType: 'catalogue', description: 'Heart of Darkness contains the complete 1902 book text, explanatory footnotes, historical context on the Congo Free State and critical perspectives.' },
+  { name: 'Alexander Pope', href: '/authors/alexander-pope/', birthDate: '1688', deathDate: '1744', profileType: 'catalogue', description: 'The Rape of the Lock and An Essay on Criticism presents both poems complete, with line numbering, explanatory footnotes and historical context.' },
+  { name: 'Nikolai Gogol', href: '/authors/nikolai-gogol/', birthDate: '1809', deathDate: '1852', profileType: 'catalogue', description: 'The Overcoat follows Claud Field’s translation, with forty-nine explanatory footnotes, summaries and historical context.' },
+  { name: 'William Blake', href: '/authors/william-blake/', birthDate: '1757', deathDate: '1827', profileType: 'catalogue', description: 'Songs of Innocence and of Experience includes the complete collection, fifty-five reproductions of Blake’s illuminated plates, explanatory footnotes and textual notes.' }
+);
+
 const updatedDescriptions = {
   'Charles Dickens': 'The catalogue includes Great Expectations and Dickens’s Christmas books, separately and in a collection, with publication history, contextual notes and study material.',
   'Mark Twain': 'Four Twain novels — Huckleberry Finn, Tom Sawyer, A Connecticut Yankee and Pudd’nhead Wilson — each with its own publication history and notes.',

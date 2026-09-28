@@ -19,7 +19,8 @@ const collectionFiles = [
   { file: 'romantic-regency/index.html', name: 'Romantic & Regency', href: '/romantic-regency/', image: '/assets/home/romantic-regency.jpg' },
   { file: 'victorian/index.html', name: 'Victorian', href: '/victorian/', image: '/assets/home/victorian.jpg' },
   { file: 'american/index.html', name: 'American Classics', href: '/american/', image: '/assets/home/american-classics.jpg' },
-  { file: 'modern/index.html', name: 'Modern Classics', href: '/modern/', image: '/assets/home/modern-classics.jpg' }
+  { file: 'modern/index.html', name: 'Modern Classics', href: '/modern/', image: '/assets/home/modern-classics.jpg' },
+  { file: 'russian/index.html', name: 'Russian', href: '/russian/', image: '/Bothers%20Karamazov%20Main%20Cover.png' }
 ];
 
 const studyBookLinks = {

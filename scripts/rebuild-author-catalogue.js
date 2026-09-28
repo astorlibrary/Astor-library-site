@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const profiles = require('./author-profiles');
-const septemberBooks = require('./september-catalogue-data.json');
+const septemberBooks = [...require('./september-catalogue-data.json'), ...require('./concise-catalogue-data.json')];
 
 function escapeHtml(value) {
   return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');

@@ -19,6 +19,22 @@ The first command rebuilds the full catalogue, the Explore page and the site-wid
 
 `dist/` is the generated version of the site used for publishing. It is ignored by Git. Edit the source pages, rebuild it, then run the site check before publishing.
 
+## Publishing and book links
+
+Start each update from the current GitHub `main` branch and merge any newer work
+before publishing. A cover-image upload must not be deployed from an older local
+checkout. The September restoration brings the newer About page, book-led homepage
+and one-book revision layout into `main` along with the catalogue updates.
+
+Publish the complete checked source with `wrangler deploy --keep-vars`, retaining
+both Astor domains and the `/go/*`, `/api/*` and `/assets/presentations/*` Worker
+routes. Verify the homepage, `/about/`, `/play/` and a `/go/` link on the live site
+afterwards. Keep the published source on GitHub so the next editor starts from it.
+
+Permanent Amazon destinations are in `worker/book-links.json`; format buttons are
+in `scripts/book-formats.json`. See [docs/BOOK-LINKS.md](docs/BOOK-LINKS.md) for new
+titles, Kindle editions, country fallbacks and the supplied September descriptions.
+
 ## Study data
 
 `data/books/<slug>.json` holds one structured record per title: plot, characters,

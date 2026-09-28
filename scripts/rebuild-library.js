@@ -8,6 +8,7 @@ require('./rebuild-shakespeare-additions');
 require('./rebuild-main-additions');
 require('./rebuild-edition-update');
 require('./rebuild-september-catalogue');
+require('./rebuild-concise-catalogue');
 require('./rebuild-format-release');
 require('./rebuild-book-depth');
 require('./rebuild-resources');
@@ -33,7 +34,8 @@ const collections = [
   ['romantic-regency/index.html', 'Romantic & Regency'],
   ['victorian/index.html', 'Victorian'],
   ['american/index.html', 'American Classics'],
-  ['modern/index.html', 'Modern Classics']
+  ['modern/index.html', 'Modern Classics'],
+  ['russian/index.html', 'Russian']
 ];
 
 function decodeEntities(value) {
@@ -118,7 +120,7 @@ for (const [relative, collection] of collections) {
 
   for (const card of cards) {
     const hrefMatch = card.match(/<a class="button primary" href="([^"]+)">Open page<\/a>/);
-    const imageMatch = card.match(/<img src="([^"]+)" alt="([^"]+)">/);
+    const imageMatch = card.match(/<img src="([^"]+)" alt="([^"]+)"[^>]*>/);
 
     if (!hrefMatch || !imageMatch) {
       throw new Error(`Could not read a catalogue card in ${relative}`);
@@ -206,7 +208,7 @@ const html = `<!doctype html>
   </nav>
 </header>
 <main class="page-wrap catalog-page">
-  <section class="catalog-hero"><div><p class="kicker">The complete catalogue</p><h1>Astor Library books.</h1><p class="deck">${sorted.length} books across eight collections, from ancient epic and Shakespeare to Victorian, American and modern classics. Search by title, author or subject.</p></div><div class="catalog-hero-covers" aria-hidden="true"><img src="/The%20Aeneid.png" alt="" width="160" height="240"><img src="/Pride%20and%20Prejudice.png" alt="" width="160" height="240"><img src="/Moby%20Dick.png" alt="" width="160" height="240"></div></section>
+  <section class="catalog-hero"><div><p class="kicker">The complete catalogue</p><h1>Astor Library books.</h1><p class="deck">${sorted.length} books across nine collections, from ancient epic and Shakespeare to Victorian, American, modern and Russian classics. Search by title, author or subject.</p></div><div class="catalog-hero-covers" aria-hidden="true"><img src="/The%20Aeneid.png" alt="" width="160" height="240"><img src="/Pride%20and%20Prejudice.png" alt="" width="160" height="240"><img src="/Moby%20Dick.png" alt="" width="160" height="240"></div></section>
   <section class="catalog-tools" aria-label="Filter the catalogue"><label for="catalog-search">Search by title, author or subject</label><div class="catalog-search-row"><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Hamlet, Dickens or Gothic"><p id="catalog-count" aria-live="polite">${sorted.length} books</p></div><div class="catalog-filters">${filterButtons}</div></section>
   <section class="catalog-grid" aria-label="Astor Library books">${cards}
   </section>

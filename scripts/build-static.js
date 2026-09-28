@@ -5,6 +5,7 @@ const { metadata: pageMetadata } = require('./seo-validation');
 const { hardbacks } = require('./format-release-data');
 const { bookEditionSchemas, paperbackEditionSchema } = require('./book-edition-schema');
 const septemberCatalogue = require('./september-catalogue-data.json');
+const conciseCatalogue = require('./concise-catalogue-data.json');
 const { seasons, booksFor, hrefFor } = require('./seasonal-helpers');
 const { loadBooks } = require('./book-data');
 const { renderToolkit } = require('./study-toolkit');
@@ -251,7 +252,7 @@ function addBookStructuredData(html, source) {
   const { book, collection } = context;
   if (!book) return html;
   const pairedFormats = hardbacks.find(edition => edition.href === book.href);
-  const suppliedPaperback = septemberCatalogue.find(edition => edition.href === book.href && edition.format === 'paperback');
+  const suppliedPaperback = [...septemberCatalogue, ...conciseCatalogue].find(edition => edition.href === book.href && edition.format === 'paperback');
   const editionImageUrl = filename => absoluteUrl(optimisedImage('/' + encodeURIComponent(filename).replace(/'/g, '%27')));
   const bookAuthors = authorProfileData.authorNamesForBook(book).map(name => ({
     '@type': name === 'Astor Library' ? 'Organization' : 'Person',
@@ -851,7 +852,9 @@ function addEditorialCredit(html, source) {
   const book = bookContext(source)?.book;
   const resource = resourceContext(source)?.resource;
   if ((!book && !resource) || html.includes('class="astor-page-credit"')) return html;
-  const copy = book
+  const copy = book && conciseCatalogue.some(edition => edition.href === book.href)
+    ? 'Edition contents and description supplied by Astor Library.'
+    : book
     ? 'Dates, publication details and historical claims are checked against the sources listed on this page.'
     : 'This free guide contains summaries, context or analysis for reading, teaching and independent study.';
   const sourcesLink = book && /\bid="sources"/.test(html) ? '<a href="#sources">The sources <span aria-hidden="true">&darr;</span></a>' : '';
@@ -1089,7 +1092,8 @@ function addGlobalNavigation(html, source) {
     '/romantic-regency/',
     '/victorian/',
     '/american/',
-    '/modern/'
+    '/modern/',
+    '/russian/'
   ].some(route => href === route || href.startsWith(route));
   const authorsCurrent = href === '/authors/' || href.startsWith('/authors/');
   const subjectsCurrent = href === '/subjects/' || href.startsWith('/subjects/');
@@ -1141,6 +1145,7 @@ function addGlobalNavigation(html, source) {
             <a href="/victorian/"${current(inRoute('/victorian/'))}>Victorian</a>
             <a href="/american/"${current(inRoute('/american/'))}>American</a>
             <a href="/modern/"${current(inRoute('/modern/'))}>Modern</a>
+            <a href="/russian/"${current(inRoute('/russian/'))}>Russian</a>
           </div>
         </div>
       </details>

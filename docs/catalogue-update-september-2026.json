@@ -1,0 +1,4143 @@
+{
+  "updated_at": "2026-09-28T15:53:13.060153+00:00",
+  "identity_source": "Owner-supplied ASINs and Kindle-to-print pairings, 27 September 2026; Amazon product title and selected format checked.",
+  "policy": "Only confirmed local product pages redirect automatically. Other regions show the Astor country chooser with a labelled exact-ASIN Amazon search. No affiliate tracking.",
+  "scholarly_rule": "A Scholarly Edition belongs only on the corresponding expanded scholarly page.",
+  "books": [
+    {
+      "slug": "animal-farm",
+      "asin": "B0FG1P495G",
+      "title": "Animal Farm",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/s?k=B0FG1P495G",
+          "kind": "search"
+        },
+        "US": {
+          "url": "https://www.amazon.com/s?k=B0FG1P495G",
+          "kind": "search"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FG1P495G",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FG1P495G",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page HTTP",
+          "verified": false,
+          "product_title": "",
+          "selected_format": "",
+          "format_confirmed": false,
+          "unconfirmed_reason": "No readable product title"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": false,
+          "unconfirmed_reason": "HTTP Error 404: Not Found"
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Animal Farm: Annotated Student & Teacher Edition: The Complete Text with “What’s Just Happened?” Summaries, Key Context, and Quote Analysis - Ideal for GCSE, A-Level, University and Independent Study",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001048+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-brothers-karamazov",
+      "asin": "B0HK661R4V",
+      "title": "The Brothers Karamazov",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HK661R4V",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HK661R4V",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HK661R4V",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HK661R4V",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Brothers Karamazov (Astor Annotated Edition): The Complete Constance Garnett Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": true
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Brothers Karamazov (Astor Annotated Edition): The Complete Constance Garnett Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Brothers Karamazov (Astor Annotated Edition): The Complete Constance Garnett Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001577+00:00"
+        }
+      }
+    },
+    {
+      "slug": "carmilla",
+      "asin": "B0HL4P8164",
+      "title": "Carmilla",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HL4P8164",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HL4P8164",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HL4P8164",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HL4P8164",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Carmilla (Astor Annotated Edition): The Complete Novella with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Carmilla (Astor Annotated Edition): The Complete Novella with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Carmilla (Astor Annotated Edition): The Complete Novella with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001579+00:00"
+        }
+      }
+    },
+    {
+      "slug": "common-sense-and-the-american-crisis",
+      "asin": "B0HK8QNL3S",
+      "title": "Common Sense and The American Crisis",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HK8QNL3S",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HK8QNL3S",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HK8QNL3S",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HK8QNL3S",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Common Sense & The American Crisis (Astor Annotated Edition): The Complete 1776 Pamphlet and 16 Crisis Papers with Section Summaries, Explanatory Notes and Historical Context",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Common Sense & The American Crisis (Astor Annotated Edition): The Complete 1776 Pamphlet and 16 Crisis Papers with Section Summaries, Explanatory Notes and Historical Context",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Common Sense & The American Crisis (Astor Annotated Edition): The Complete 1776 Pamphlet and 16 Crisis Papers with Section Summaries, Explanatory Notes and Historical Context",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001581+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-death-of-ivan-ilyich",
+      "asin": "B0HK4ZGYHH",
+      "title": "The Death of Ivan Ilyich",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HK4ZGYHH",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HK4ZGYHH",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HK4ZGYHH",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HK4ZGYHH",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Death of Ivan Ilyich (Astor Annotated Edition): The Complete Louise and Aylmer Maude Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Death of Ivan Ilyich (Astor Annotated Edition): The Complete Louise and Aylmer Maude Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Death of Ivan Ilyich (Astor Annotated Edition): The Complete Louise and Aylmer Maude Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001583+00:00"
+        }
+      }
+    },
+    {
+      "slug": "e-f-benson-ghost-stories",
+      "asin": "B0HJMPMNC6",
+      "title": "E. F. Benson Ghost Stories",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJMPMNC6",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJMPMNC6",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJMPMNC6",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJMPMNC6",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Ghost Stories (Astor Annotated Edition): 29 Complete Stories from the 1912 and 1923 Collections, with Story Summaries, Historical Context and Explanatory Notes",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Ghost Stories (Astor Annotated Edition): 29 Complete Stories from the 1912 and 1923 Collections, with Story Summaries, Historical Context and Explanatory Notes",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Ghost Stories (Astor Annotated Edition): 29 Complete Stories from the 1912 and 1923 Collections, with Story Summaries, Historical Context and Explanatory Notes",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001584+00:00"
+        }
+      }
+    },
+    {
+      "slug": "heart-of-darkness",
+      "asin": "B0HKSG36BL",
+      "title": "Heart of Darkness",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HKSG36BL",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HKSG36BL",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HKSG36BL",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HKSG36BL",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Heart of Darkness (Astor Annotated Edition): The Complete Novella with Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Heart of Darkness (Astor Annotated Edition): The Complete Novella with Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Heart of Darkness (Astor Annotated Edition): The Complete Novella with Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001586+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-hound-of-the-baskervilles",
+      "asin": "B0HKT4NTJ5",
+      "title": "The Hound of the Baskervilles",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HKT4NTJ5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HKT4NTJ5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HKT4NTJ5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HKT4NTJ5",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Hound of the Baskervilles (Astor Annotated Edition): The Complete 1902 Novel with Chapter Summaries, Explanatory Notes, Historical Context and Reception History",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Hound of the Baskervilles (Astor Annotated Edition): The Complete 1902 Novel with Chapter Summaries, Explanatory Notes, Historical Context and Reception History",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Hound of the Baskervilles (Astor Annotated Edition): The Complete 1902 Novel with Chapter Summaries, Explanatory Notes, Historical Context and Reception History",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001587+00:00"
+        }
+      }
+    },
+    {
+      "slug": "white-nights",
+      "asin": "B0HJNRY13P",
+      "title": "White Nights",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJNRY13P",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJNRY13P",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJNRY13P",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJNRY13P",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "White Nights (Astor Annotated Edition): The Complete Constance Garnett Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": true
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "White Nights (Astor Annotated Edition): The Complete Constance Garnett Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "White Nights (Astor Annotated Edition): The Complete Constance Garnett Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001589+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-rape-of-the-lock-and-an-essay-on-criticism",
+      "asin": "B0HKJQS78G",
+      "title": "The Rape of the Lock and An Essay on Criticism",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HKJQS78G",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HKJQS78G",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HKJQS78G",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HKJQS78G",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Rape of the Lock and An Essay on Criticism (Astor Annotated Edition): Two Complete Poems with Line Numbering, Explanatory Footnotes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Rape of the Lock and An Essay on Criticism (Astor Annotated Edition): Two Complete Poems with Line Numbering, Explanatory Footnotes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Rape of the Lock and An Essay on Criticism (Astor Annotated Edition): Two Complete Poems with Line Numbering, Explanatory Footnotes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001590+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-overcoat",
+      "asin": "B0HKB423N6",
+      "title": "The Overcoat",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HKB423N6",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HKB423N6",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HKB423N6",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HKB423N6",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Overcoat (Astor Annotated Edition): The Complete Claud Field Translation with Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Overcoat (Astor Annotated Edition): The Complete Claud Field Translation with Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Overcoat (Astor Annotated Edition): The Complete Claud Field Translation with Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001592+00:00"
+        }
+      }
+    },
+    {
+      "slug": "songs-of-innocence-and-of-experience",
+      "asin": "B0HKKBWBP6",
+      "title": "Songs of Innocence and of Experience",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HKKBWBP6",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HKKBWBP6",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HKKBWBP6",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HKKBWBP6",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Songs of Innocence and of Experience (Astor Annotated Edition): The Complete Collection with 55 Blake Plate Reproductions, Line Numbering, Explanatory Notes and Historical Context",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Songs of Innocence and of Experience (Astor Annotated Edition): The Complete Collection with 55 Blake Plate Reproductions, Line Numbering, Explanatory Notes and Historical Context",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Songs of Innocence and of Experience (Astor Annotated Edition): The Complete Collection with 55 Blake Plate Reproductions, Line Numbering, Explanatory Notes and Historical Context",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Songs of Innocence and of Experience (Astor Annotated Edition): The Complete Collection with 55 Blake Plate Reproductions, Line Numbering, Explanatory Notes and Historical Context",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        }
+      }
+    },
+    {
+      "slug": "notes-from-underground",
+      "asin": "B0HJMY6M2R",
+      "title": "Notes from Underground",
+      "format": "Paperback",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJMY6M2R",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJMY6M2R",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJMY6M2R",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJMY6M2R",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Notes from Underground: The Complete Constance Garnett Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Notes from Underground: The Complete Constance Garnett Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Notes from Underground: The Complete Constance Garnett Translation with Chapter Summaries, Explanatory Notes, Historical Context and Critical Perspectives",
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Paperback",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001593+00:00"
+        }
+      }
+    },
+    {
+      "slug": "romeo-and-juliet-kindle",
+      "asin": "B0FFZDQV3B",
+      "title": "Romeo and Juliet",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FFZDQV3B",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FFZDQV3B",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FFZDQV3B",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FFZDQV3B",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Romeo and Juliet (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Romeo and Juliet (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Romeo and Juliet (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001595+00:00"
+        }
+      }
+    },
+    {
+      "slug": "troilus-and-cressida-kindle",
+      "asin": "B0FH5GD7X9",
+      "title": "Troilus and Cressida",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FH5GD7X9",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FH5GD7X9",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FH5GD7X9",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FH5GD7X9",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Troilus and Cressida (Astor Annotated Edition): The Full Play with Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Troilus and Cressida (Astor Annotated Edition): The Full Play with Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Troilus and Cressida (Astor Annotated Edition): The Full Play with Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001596+00:00"
+        }
+      }
+    },
+    {
+      "slug": "seven-pillars-of-wisdom-kindle",
+      "asin": "B0HJN181ZH",
+      "title": "Seven Pillars of Wisdom",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJN181ZH",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJN181ZH",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJN181ZH",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJN181ZH",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Seven Pillars of Wisdom (Astor Annotated Edition): The Complete 1926 Subscribers’ Text with Book Summaries, Historical Context, Explanatory Notes and Critical Perspectives",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Seven Pillars of Wisdom (Astor Annotated Edition): The Complete 1926 Subscribers’ Text with Book Summaries, Historical Context, Explanatory Notes and Critical Perspectives",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Seven Pillars of Wisdom (Astor Annotated Edition): The Complete 1926 Subscribers’ Text with Book Summaries, Historical Context, Explanatory Notes and Critical Perspectives",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001598+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-open-boat-and-other-stories-kindle",
+      "asin": "B0HJLKSH9R",
+      "title": "The Open Boat and Other Stories",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJLKSH9R",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJLKSH9R",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJLKSH9R",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJLKSH9R",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Open Boat and Other Stories (Astor Annotated Edition): The Complete 1898 London Collection with Story Summaries, Historical Context and Explanatory Notes",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Open Boat and Other Stories (Astor Annotated Edition): The Complete 1898 London Collection with Story Summaries, Historical Context and Explanatory Notes",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Open Boat and Other Stories (Astor Annotated Edition): The Complete 1898 London Collection with Story Summaries, Historical Context and Explanatory Notes",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001599+00:00"
+        }
+      }
+    },
+    {
+      "slug": "king-lear-kindle",
+      "asin": "B0FG888TS4",
+      "title": "King Lear",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FG888TS4",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FG888TS4",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FG888TS4",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FG888TS4",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "King Lear (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "King Lear (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "King Lear (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001601+00:00"
+        }
+      }
+    },
+    {
+      "slug": "venus-and-adonis-kindle",
+      "asin": "B0HFG1KMX5",
+      "title": "Venus and Adonis",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFG1KMX5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFG1KMX5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFG1KMX5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFG1KMX5",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Venus and Adonis (Astor Annotated Edition): The Complete Text with Scholarly Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Venus and Adonis (Astor Annotated Edition): The Complete Text with Scholarly Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Venus and Adonis (Astor Annotated Edition): The Complete Text with Scholarly Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001602+00:00"
+        }
+      }
+    },
+    {
+      "slug": "othello-expanded-scholarly-edition-kindle",
+      "asin": "B0FFYMGLR8",
+      "title": "Othello — Expanded Scholarly Edition",
+      "format": "Kindle · expanded scholarly edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FFYMGLR8",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FFYMGLR8",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FFYMGLR8",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FFYMGLR8",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Othello (Annotated): A Scholarly Edition with an Extended Critical Introduction, Scene Summaries and Full Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Othello (Annotated): A Scholarly Edition with an Extended Critical Introduction, Scene Summaries and Full Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Othello (Annotated): A Scholarly Edition with an Extended Critical Introduction, Scene Summaries and Full Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001603+00:00"
+        }
+      }
+    },
+    {
+      "slug": "robinson-crusoe-kindle",
+      "asin": "B0GRWL95P5",
+      "title": "Robinson Crusoe",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GRWL95P5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GRWL95P5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GRWL95P5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GRWL95P5",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Robinson Crusoe (Annotated) - Astor Edition: The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Robinson Crusoe (Annotated) - Astor Edition: The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Robinson Crusoe (Annotated) - Astor Edition: The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001605+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-iliad-kindle",
+      "asin": "B0HHG58J4F",
+      "title": "The Iliad",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHG58J4F",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHG58J4F",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHG58J4F",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHG58J4F",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Iliad (Astor Annotated Edition): Translated by Samuel Butler | The Complete Text with Commentary, Context, and Translation History",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Iliad (Astor Annotated Edition): Translated by Samuel Butler | The Complete Text with Commentary, Context, and Translation History",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Iliad (Astor Annotated Edition): Translated by Samuel Butler | The Complete Text with Commentary, Context, and Translation History",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001606+00:00"
+        }
+      }
+    },
+    {
+      "slug": "sense-and-sensibility-kindle",
+      "asin": "B0HHFMQ89Y",
+      "title": "Sense and Sensibility",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHFMQ89Y",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHFMQ89Y",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHFMQ89Y",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHFMQ89Y",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Sense and Sensibility (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Sense and Sensibility (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Sense and Sensibility (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001608+00:00"
+        }
+      }
+    },
+    {
+      "slug": "alls-well-that-ends-well-kindle",
+      "asin": "B0FGVT1792",
+      "title": "All's Well That Ends Well",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGVT1792",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGVT1792",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGVT1792",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGVT1792",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "All’s Well That Ends Well (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "All’s Well That Ends Well (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "All’s Well That Ends Well (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001609+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-duchess-of-malfi-kindle",
+      "asin": "B0FHN973P5",
+      "title": "The Duchess of Malfi",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FHN973P5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FHN973P5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FHN973P5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FHN973P5",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Duchess of Malfi (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Duchess of Malfi (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Duchess of Malfi (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001611+00:00"
+        }
+      }
+    },
+    {
+      "slug": "macbeth-kindle",
+      "asin": "B0HFH2GK8N",
+      "title": "Macbeth",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFH2GK8N",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFH2GK8N",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFH2GK8N",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFH2GK8N",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Macbeth (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Macbeth (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Macbeth (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001612+00:00"
+        }
+      }
+    },
+    {
+      "slug": "jane-eyre-kindle",
+      "asin": "B0HGRCBL8V",
+      "title": "Jane Eyre",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGRCBL8V",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGRCBL8V",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGRCBL8V",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGRCBL8V",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Jane Eyre (Astor Edition): The Complete Novel with Literary, Historical, and Social Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Jane Eyre (Astor Edition): The Complete Novel with Literary, Historical, and Social Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Jane Eyre (Astor Edition): The Complete Novel with Literary, Historical, and Social Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001613+00:00"
+        }
+      }
+    },
+    {
+      "slug": "king-john-kindle",
+      "asin": "B0FGYH95J8",
+      "title": "King John",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGYH95J8",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGYH95J8",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGYH95J8",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGYH95J8",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "King John (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "King John (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "King John (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001615+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-aeneid-kindle",
+      "asin": "B0HHG6V91X",
+      "title": "The Aeneid",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHG6V91X",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHG6V91X",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHG6V91X",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHG6V91X",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Aeneid (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Aeneid (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Aeneid (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001616+00:00"
+        }
+      }
+    },
+    {
+      "slug": "adventures-of-sherlock-holmes-kindle",
+      "asin": "B0H22HH8FX",
+      "title": "The Adventures of Sherlock Holmes",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H22HH8FX",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H22HH8FX",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H22HH8FX",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H22HH8FX",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Adventures of Sherlock Holmes - An Annotated Astor Edition: The Complete Collection with Commentary, Context, and Literary Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Adventures of Sherlock Holmes - An Annotated Astor Edition: The Complete Collection with Commentary, Context, and Literary Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Adventures of Sherlock Holmes - An Annotated Astor Edition: The Complete Collection with Commentary, Context, and Literary Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001617+00:00"
+        }
+      }
+    },
+    {
+      "slug": "timon-of-athens-kindle",
+      "asin": "B0FV98ZX3Y",
+      "title": "Timon of Athens",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FV98ZX3Y",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FV98ZX3Y",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FV98ZX3Y",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FV98ZX3Y",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Timon of Athens (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Timon of Athens (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Timon of Athens (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001619+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-two-gentlemen-of-verona-kindle",
+      "asin": "B0FGZ5R9J7",
+      "title": "The Two Gentlemen of Verona",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGZ5R9J7",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGZ5R9J7",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGZ5R9J7",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGZ5R9J7",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Two Gentleman of Verona (Astor Annotated Edition): The Full Play with Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Two Gentleman of Verona (Astor Annotated Edition): The Full Play with Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Two Gentleman of Verona (Astor Annotated Edition): The Full Play with Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001620+00:00"
+        }
+      }
+    },
+    {
+      "slug": "gullivers-travels-kindle",
+      "asin": "B0HGR4VJYR",
+      "title": "Gulliver’s Travels",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGR4VJYR",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGR4VJYR",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGR4VJYR",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGR4VJYR",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Gulliver's Travels (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Gulliver's Travels (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Gulliver's Travels (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001621+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-two-noble-kinsmen-kindle",
+      "asin": "B0FHBHVJK5",
+      "title": "The Two Noble Kinsmen",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FHBHVJK5",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FHBHVJK5",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FHBHVJK5",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FHBHVJK5",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Two Noble Kinsmen (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Two Noble Kinsmen (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Two Noble Kinsmen (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001623+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-haunted-man-and-the-ghosts-bargain-kindle",
+      "asin": "B0HHFM2HQ7",
+      "title": "The Haunted Man and the Ghost’s Bargain",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHFM2HQ7",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHFM2HQ7",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHFM2HQ7",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHFM2HQ7",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Haunted Man and the Ghost’s Bargain (Astor Annotated Edition): A Seasonal Dickens Ghost Story Set at Christmas",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Haunted Man and the Ghost’s Bargain (Astor Annotated Edition): A Seasonal Dickens Ghost Story Set at Christmas",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Haunted Man and the Ghost’s Bargain (Astor Annotated Edition): A Seasonal Dickens Ghost Story Set at Christmas",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001624+00:00"
+        }
+      }
+    },
+    {
+      "slug": "pride-and-prejudice-kindle",
+      "asin": "B0HG5NKXJ6",
+      "title": "Pride and Prejudice",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG5NKXJ6",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG5NKXJ6",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG5NKXJ6",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG5NKXJ6",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Pride and Prejudice (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Pride and Prejudice (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Pride and Prejudice (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001626+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-rape-of-lucrece-kindle",
+      "asin": "B0HFGW2DNP",
+      "title": "The Rape of Lucrece",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFGW2DNP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFGW2DNP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFGW2DNP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFGW2DNP",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Rape of Lucrece (Astor Annotated Edition): The Complete Poem with Footnotes, Commentary, Literary Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Rape of Lucrece (Astor Annotated Edition): The Complete Poem with Footnotes, Commentary, Literary Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Rape of Lucrece (Astor Annotated Edition): The Complete Poem with Footnotes, Commentary, Literary Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001627+00:00"
+        }
+      }
+    },
+    {
+      "slug": "narrative-of-the-life-of-frederick-douglass-kindle",
+      "asin": "B0HG5HD1T9",
+      "title": "Narrative of the Life of Frederick Douglass",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG5HD1T9",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG5HD1T9",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG5HD1T9",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG5HD1T9",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Narrative of the Life of Frederick Douglass, an American Slave (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Narrative of the Life of Frederick Douglass, an American Slave (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Narrative of the Life of Frederick Douglass, an American Slave (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001628+00:00"
+        }
+      }
+    },
+    {
+      "slug": "wuthering-heights-kindle",
+      "asin": "B0HFDS8Q54",
+      "title": "Wuthering Heights",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFDS8Q54",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFDS8Q54",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFDS8Q54",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFDS8Q54",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Wuthering Heights (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Wuthering Heights (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Wuthering Heights (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001630+00:00"
+        }
+      }
+    },
+    {
+      "slug": "dracula-kindle",
+      "asin": "B0HGV16HYB",
+      "title": "Dracula",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGV16HYB",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGV16HYB",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGV16HYB",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGV16HYB",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Dracula (Annotated) - Astor Edition: The Complete Text with Chapter Summaries, Historical Context and Critical Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Dracula (Annotated) - Astor Edition: The Complete Text with Chapter Summaries, Historical Context and Critical Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Dracula (Annotated) - Astor Edition: The Complete Text with Chapter Summaries, Historical Context and Critical Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001631+00:00"
+        }
+      }
+    },
+    {
+      "slug": "adventures-of-huckleberry-finn-kindle",
+      "asin": "B0HG5NLTH1",
+      "title": "Adventures of Huckleberry Finn",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HG5NLTH1",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HG5NLTH1",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HG5NLTH1",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HG5NLTH1",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Adventures of Huckleberry Finn (Astor Edition): The Complete Novel with Literary, Historical, and Social Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Adventures of Huckleberry Finn (Astor Edition): The Complete Novel with Literary, Historical, and Social Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Adventures of Huckleberry Finn (Astor Edition): The Complete Novel with Literary, Historical, and Social Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001633+00:00"
+        }
+      }
+    },
+    {
+      "slug": "comedy-of-errors-kindle",
+      "asin": "B0FGVVHLDP",
+      "title": "The Comedy of Errors",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FGVVHLDP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FGVVHLDP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FGVVHLDP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FGVVHLDP",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Comedy of Errors (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Comedy of Errors (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Comedy of Errors (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001634+00:00"
+        }
+      }
+    },
+    {
+      "slug": "loves-labours-lost-kindle",
+      "asin": "B0F849BJPY",
+      "title": "Love’s Labour’s Lost",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0F849BJPY",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0F849BJPY",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0F849BJPY",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0F849BJPY",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Love's Labour's Lost (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Love's Labour's Lost (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Love's Labour's Lost (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001635+00:00"
+        }
+      }
+    },
+    {
+      "slug": "cricket-on-the-hearth-kindle",
+      "asin": "B0HHFPNDQJ",
+      "title": "The Cricket on the Hearth",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHFPNDQJ",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHFPNDQJ",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHFPNDQJ",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHFPNDQJ",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Cricket on the Hearth (Astor Annotated Edition): A Ghostly Christmas Tale by Charles Dickens",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Cricket on the Hearth (Astor Annotated Edition): A Ghostly Christmas Tale by Charles Dickens",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Cricket on the Hearth (Astor Annotated Edition): A Ghostly Christmas Tale by Charles Dickens",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001637+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-man-who-was-thursday-kindle",
+      "asin": "B0HHFK31S6",
+      "title": "The Man Who Was Thursday",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHFK31S6",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHFK31S6",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHFK31S6",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHFK31S6",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Man Who Was Thursday (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Man Who Was Thursday (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Man Who Was Thursday (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001638+00:00"
+        }
+      }
+    },
+    {
+      "slug": "doctor-faustus-kindle",
+      "asin": "B0FHQB9QPM",
+      "title": "Doctor Faustus",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FHQB9QPM",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FHQB9QPM",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FHQB9QPM",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FHQB9QPM",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Doctor Faustus (Astor Annotated Edition): Full A-Text with Scholarly Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Doctor Faustus (Astor Annotated Edition): Full A-Text with Scholarly Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Doctor Faustus (Astor Annotated Edition): Full A-Text with Scholarly Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001639+00:00"
+        }
+      }
+    },
+    {
+      "slug": "paradise-lost-kindle",
+      "asin": "B0H4X39M7B",
+      "title": "Paradise Lost",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H4X39M7B",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H4X39M7B",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H4X39M7B",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H4X39M7B",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Paradise Lost (Astor Annotated Edition): The Complete Epic with Literary, Historical, and Theological Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Paradise Lost (Astor Annotated Edition): The Complete Epic with Literary, Historical, and Theological Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Paradise Lost (Astor Annotated Edition): The Complete Epic with Literary, Historical, and Theological Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001641+00:00"
+        }
+      }
+    },
+    {
+      "slug": "henry-iv-part-2-kindle",
+      "asin": "B0FFDLHQX8",
+      "title": "Henry IV, Part 2",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FFDLHQX8",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FFDLHQX8",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FFDLHQX8",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FFDLHQX8",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Henry IV, Part 2 (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Henry IV, Part 2 (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Henry IV, Part 2 (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001642+00:00"
+        }
+      }
+    },
+    {
+      "slug": "great-expectations-kindle",
+      "asin": "B0HGRKDL2P",
+      "title": "Great Expectations",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGRKDL2P",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGRKDL2P",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGRKDL2P",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGRKDL2P",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Great Expectations (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Great Expectations (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Great Expectations (Astor Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001644+00:00"
+        }
+      }
+    },
+    {
+      "slug": "pericles-prince-of-tyre-kindle",
+      "asin": "B0FH78Z79Q",
+      "title": "Pericles, Prince of Tyre",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FH78Z79Q",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FH78Z79Q",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FH78Z79Q",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FH78Z79Q",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Pericles, Prince of Tyre (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Pericles, Prince of Tyre (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Pericles, Prince of Tyre (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001645+00:00"
+        }
+      }
+    },
+    {
+      "slug": "uncle-toms-cabin-kindle",
+      "asin": "B0HGRF8VRM",
+      "title": "Uncle Tom’s Cabin",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGRF8VRM",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGRF8VRM",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGRF8VRM",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGRF8VRM",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Uncle Tom's Cabin (Astor Annotated Edition): The Complete Novel with Literary, Historical, and Social Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "currently_unavailable": false
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Uncle Tom's Cabin (Astor Annotated Edition): The Complete Novel with Literary, Historical, and Social Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Uncle Tom's Cabin (Astor Annotated Edition): The Complete Novel with Literary, Historical, and Social Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001646+00:00"
+        }
+      }
+    },
+    {
+      "slug": "mrs-dalloway-kindle",
+      "asin": "B0HGTM5LQY",
+      "title": "Mrs Dalloway",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGTM5LQY",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGTM5LQY",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGTM5LQY",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGTM5LQY",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Mrs Dalloway (Astor Annotated Edition): The Complete Novel with Literary, Historical, and Modernist Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.583870+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Mrs Dalloway (Astor Annotated Edition): The Complete Novel with Literary, Historical, and Modernist Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Mrs Dalloway (Astor Annotated Edition): The Complete Novel with Literary, Historical, and Modernist Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001648+00:00"
+        }
+      }
+    },
+    {
+      "slug": "frankenstein-kindle",
+      "asin": "B0HGLYR5F8",
+      "title": "Frankenstein",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGLYR5F8",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGLYR5F8",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGLYR5F8",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGLYR5F8",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Frankenstein: The full, unabridged 1831 text with 1818–1831 Comparison, Chapter Recaps, Context Snacks, Quotes, Themes, Critical Commentary, & Character Profiles",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584517+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Frankenstein: The full, unabridged 1831 text with 1818–1831 Comparison, Chapter Recaps, Context Snacks, Quotes, Themes, Critical Commentary, & Character Profiles",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Frankenstein: The full, unabridged 1831 text with 1818–1831 Comparison, Chapter Recaps, Context Snacks, Quotes, Themes, Critical Commentary, & Character Profiles",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001649+00:00"
+        }
+      }
+    },
+    {
+      "slug": "moby-dick-kindle",
+      "asin": "B0H4YMGNCQ",
+      "title": "Moby-Dick; or, The Whale",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0H4YMGNCQ",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0H4YMGNCQ",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0H4YMGNCQ",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0H4YMGNCQ",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Moby-Dick; or, The Whale (Astor Edition): The Complete Text with Literary and Historical Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584520+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Moby-Dick; or, The Whale (Astor Edition): The Complete Text with Literary and Historical Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Moby-Dick; or, The Whale (Astor Edition): The Complete Text with Literary and Historical Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001650+00:00"
+        }
+      }
+    },
+    {
+      "slug": "ethan-frome-kindle",
+      "asin": "B0HJN4YK1C",
+      "title": "Ethan Frome",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJN4YK1C",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJN4YK1C",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJN4YK1C",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJN4YK1C",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Ethan Frome (Astor Annotated Edition): Full Original Text with Chapter Summaries, Key Context, Themes, Quotes & Critical Perspectives",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584522+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Ethan Frome (Astor Annotated Edition): Full Original Text with Chapter Summaries, Key Context, Themes, Quotes & Critical Perspectives",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Ethan Frome (Astor Annotated Edition): Full Original Text with Chapter Summaries, Key Context, Themes, Quotes & Critical Perspectives",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001652+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-winters-tale-kindle",
+      "asin": "B0FH7R46MR",
+      "title": "The Winter's Tale",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FH7R46MR",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FH7R46MR",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FH7R46MR",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FH7R46MR",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Winter’s Tale (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584523+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Winter’s Tale (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Winter’s Tale (Astor Annotated Edition): The Full Play with Footnotes, Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001653+00:00"
+        }
+      }
+    },
+    {
+      "slug": "dorian-gray-kindle",
+      "asin": "B0HFH4FZYY",
+      "title": "The Picture of Dorian Gray",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFH4FZYY",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFH4FZYY",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFH4FZYY",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFH4FZYY",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Picture of Dorian Gray (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584525+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Picture of Dorian Gray (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Picture of Dorian Gray (Astor Annotated Edition): The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001654+00:00"
+        }
+      }
+    },
+    {
+      "slug": "shakespeares-sonnets-kindle",
+      "asin": "B0HFGX3SCM",
+      "title": "Shakespeare’s Sonnets",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFGX3SCM",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFGX3SCM",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFGX3SCM",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFGX3SCM",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Complete Collection of Shakespeare’s Sonnets (Astor Annotated Edition): With Headnotes, Same-Page Notes and Full Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584527+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Complete Collection of Shakespeare’s Sonnets (Astor Annotated Edition): With Headnotes, Same-Page Notes and Full Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Complete Collection of Shakespeare’s Sonnets (Astor Annotated Edition): With Headnotes, Same-Page Notes and Full Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001656+00:00"
+        }
+      }
+    },
+    {
+      "slug": "sleepy-hollow-and-other-stories-kindle",
+      "asin": "B0HFDRCWSQ",
+      "title": "Sleepy Hollow and Other American Halloween Stories",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFDRCWSQ",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFDRCWSQ",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFDRCWSQ",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFDRCWSQ",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Sleepy Hollow and Other American Halloween Stories (An Annotated Astor Edition)",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584529+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Sleepy Hollow and Other American Halloween Stories (An Annotated Astor Edition)",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Sleepy Hollow and Other American Halloween Stories (An Annotated Astor Edition)",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001657+00:00"
+        }
+      }
+    },
+    {
+      "slug": "a-midsummer-nights-dream-expanded-scholarly-edition-kindle",
+      "asin": "B0FZXLQBKM",
+      "title": "A Midsummer Night’s Dream — Expanded Scholarly Edition",
+      "format": "Kindle · expanded scholarly edition",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FZXLQBKM",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FZXLQBKM",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FZXLQBKM",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FZXLQBKM",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "A Midsummer Night's Dream (Astor Annotated Edition): A Scholarly Edition with Scene Summaries, Critical Introduction, Footnotes and Full Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584530+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "A Midsummer Night's Dream (Astor Annotated Edition): A Scholarly Edition with Scene Summaries, Critical Introduction, Footnotes and Full Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "A Midsummer Night's Dream (Astor Annotated Edition): A Scholarly Edition with Scene Summaries, Critical Introduction, Footnotes and Full Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001658+00:00"
+        }
+      }
+    },
+    {
+      "slug": "othello-kindle",
+      "asin": "B0F4M4QDYN",
+      "title": "Othello",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0F4M4QDYN",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0F4M4QDYN",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0F4M4QDYN",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0F4M4QDYN",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Othello (Astor Annotated Edition): with Footnotes, Summaries, Critical Context and Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584532+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Othello (Astor Annotated Edition): with Footnotes, Summaries, Critical Context and Commentary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Othello (Astor Annotated Edition): with Footnotes, Summaries, Critical Context and Commentary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001660+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-prince-kindle",
+      "asin": "B0HHSH51W4",
+      "title": "The Prince",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHSH51W4",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHSH51W4",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHSH51W4",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHSH51W4",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Prince (Astor Annotated Edition): with Chapter Summaries, Historical Context, Political Commentary, Themes, and Critical Perspectives",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584533+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Prince (Astor Annotated Edition): with Chapter Summaries, Historical Context, Political Commentary, Themes, and Critical Perspectives",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Prince (Astor Annotated Edition): with Chapter Summaries, Historical Context, Political Commentary, Themes, and Critical Perspectives",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001661+00:00"
+        }
+      }
+    },
+    {
+      "slug": "call-of-the-wild-kindle",
+      "asin": "B0HHFRSJRK",
+      "title": "The Call of the Wild",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HHFRSJRK",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HHFRSJRK",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HHFRSJRK",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HHFRSJRK",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Call of the Wild (Astor Annotated Edition) : The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584535+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Call of the Wild (Astor Annotated Edition) : The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Call of the Wild (Astor Annotated Edition) : The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001664+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-house-on-the-borderland-kindle",
+      "asin": "B0HKVT5CHH",
+      "title": "The House on the Borderland",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HKVT5CHH",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HKVT5CHH",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HKVT5CHH",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HKVT5CHH",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The House on the Borderland (Astor Annotated Edition): The Complete Novel with Chapter Summaries, Historical Context, Critical Perspectives and Glossary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584537+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The House on the Borderland (Astor Annotated Edition): The Complete Novel with Chapter Summaries, Historical Context, Critical Perspectives and Glossary",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The House on the Borderland (Astor Annotated Edition): The Complete Novel with Chapter Summaries, Historical Context, Critical Perspectives and Glossary",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001665+00:00"
+        }
+      }
+    },
+    {
+      "slug": "the-odyssey-kindle",
+      "asin": "B0HGQYF6RC",
+      "title": "The Odyssey",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HGQYF6RC",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HGQYF6RC",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HGQYF6RC",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HGQYF6RC",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Odyssey (Astor Edition): Translated by Samuel Butler | The Complete Text with Commentary, Context, and Translation History",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584538+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Odyssey (Astor Edition): Translated by Samuel Butler | The Complete Text with Commentary, Context, and Translation History",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Odyssey (Astor Edition): Translated by Samuel Butler | The Complete Text with Commentary, Context, and Translation History",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001667+00:00"
+        }
+      }
+    },
+    {
+      "slug": "henry-vi-part-2-kindle",
+      "asin": "B0FXT1N45S",
+      "title": "Henry VI, Part 2",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0FXT1N45S",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0FXT1N45S",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0FXT1N45S",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0FXT1N45S",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Henry VI, Part 2 (Astor Annotated Edition): The Full Play with Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584540+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Henry VI, Part 2 (Astor Annotated Edition): The Full Play with Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Henry VI, Part 2 (Astor Annotated Edition): The Full Play with Commentary, Dramatic Analysis and Context",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001668+00:00"
+        }
+      }
+    },
+    {
+      "slug": "pamela-kindle",
+      "asin": "B0GQSY558F",
+      "title": "Pamela; or, Virtue Rewarded",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0GQSY558F",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0GQSY558F",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0GQSY558F",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0GQSY558F",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "Pamela; or, Virtue Rewarded (Annotated) - Astor Edition: The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584542+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Pamela; or, Virtue Rewarded (Annotated) - Astor Edition: The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "Pamela; or, Virtue Rewarded (Annotated) - Astor Edition: The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001670+00:00"
+        }
+      }
+    },
+    {
+      "slug": "red-badge-of-courage-kindle",
+      "asin": "B0HJMT6YWP",
+      "title": "The Red Badge of Courage",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HJMT6YWP",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HJMT6YWP",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HJMT6YWP",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HJMT6YWP",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "The Red Badge of Courage (Astor Annotated Edition) : The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584544+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Red Badge of Courage (Astor Annotated Edition) : The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "The Red Badge of Courage (Astor Annotated Edition) : The Complete Text with Commentary, Context, and Analysis",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001671+00:00"
+        }
+      }
+    },
+    {
+      "slug": "a-victorian-christmas-kindle",
+      "asin": "B0HFC74XHM",
+      "title": "A Victorian Christmas",
+      "format": "Kindle",
+      "destinations": {
+        "GB": {
+          "url": "https://www.amazon.co.uk/dp/B0HFC74XHM",
+          "kind": "product"
+        },
+        "US": {
+          "url": "https://www.amazon.com/dp/B0HFC74XHM",
+          "kind": "product"
+        },
+        "CA": {
+          "url": "https://www.amazon.ca/dp/B0HFC74XHM",
+          "kind": "product"
+        },
+        "AU": {
+          "url": "https://www.amazon.com.au/dp/B0HFC74XHM",
+          "kind": "product"
+        }
+      },
+      "checks": {
+        "GB": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "product_title": "A Victorian Christmas (Annotated): Stories, Traditions and Ghostly Tales That Shaped the Christmas We Know Today",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "checked_at": "2026-09-28T15:48:52.584545+00:00"
+        },
+        "US": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "A Victorian Christmas (Annotated): Stories, Traditions and Ghostly Tales That Shaped the Christmas We Know Today",
+          "selected_format": "Kindle",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "CA": {
+          "source": "Amazon product page HTTP",
+          "verified": true,
+          "product_title": "A Victorian Christmas (Annotated): Stories, Traditions and Ghostly Tales That Shaped the Christmas We Know Today",
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true
+        },
+        "AU": {
+          "source": "Amazon product page visible browser DOM",
+          "verified": true,
+          "selected_format": "Kindle Edition",
+          "format_confirmed": true,
+          "identity_confirmed": true,
+          "note": "Visible product title and selected format matched the supplied edition; publisher/editor attribution checked where displayed.",
+          "checked_at": "2026-09-28T15:53:13.001672+00:00"
+        }
+      }
+    }
+  ]
+}
