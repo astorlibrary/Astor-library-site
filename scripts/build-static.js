@@ -852,7 +852,10 @@ function addEditorialCredit(html, source) {
   const book = bookContext(source)?.book;
   const resource = resourceContext(source)?.resource;
   if ((!book && !resource) || html.includes('class="astor-page-credit"')) return html;
-  const copy = book && conciseCatalogue.some(edition => edition.href === book.href)
+  // A short catalogue page that has not yet been written up lists no sources
+  // to check its claims against, so it says only where its copy came from.
+  const conciseEdition = book && conciseCatalogue.find(edition => edition.href === book.href);
+  const copy = conciseEdition && !(conciseEdition.sources || []).length
     ? 'Edition contents and description supplied by Astor Library.'
     : book
     ? 'Dates, publication details and historical claims are checked against the sources listed on this page.'
