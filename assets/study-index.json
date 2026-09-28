@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 99,
-    "quotations": 2248,
-    "characters": 907,
-    "themes": 240,
+    "books": 100,
+    "quotations": 2278,
+    "characters": 916,
+    "themes": 243,
     "techniques": 247,
-    "timelineEvents": 1141,
-    "places": 567
+    "timelineEvents": 1154,
+    "places": 574
   },
   "books": [
     {
@@ -59342,6 +59342,1523 @@
         {
           "href": "/books/a-room-of-ones-own/",
           "why": "A later argument about who is allowed the conditions to write, and what the absence of a record does to a life."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "notes-from-underground",
+      "title": "Notes from Underground",
+      "author": "Fyodor Dostoevsky",
+      "href": "/books/notes-from-underground/",
+      "studyHref": "",
+      "playHref": "/play/?book=notes-from-underground",
+      "form": "novella",
+      "genre": "Philosophical novella",
+      "period": "Russian",
+      "setting": "St Petersburg: the narrator’s corner on the outskirts in the 1860s, and, in memory, the city of the 1840s, with the Nevsky, a restaurant dinner, a brothel and his lodging in the wet snow",
+      "written": "1863–1864",
+      "firstPublished": 1864,
+      "readingTime": 160,
+      "difficulty": 4,
+      "lengthNote": "About 44,000 words in Garnett’s English: eleven chapters of argument, then ten chapters of story set some sixteen years earlier",
+      "openingLine": "I am a sick man.... I am a spiteful man. I am an unattractive man.",
+      "summary": "A retired official of forty, living on a small legacy in a corner of St Petersburg, writes notes that he says nobody will read. In the first part he argues, with spite and brilliance, against the belief that people would behave well if only they understood their own interests: a man will choose to harm himself, he says, simply to prove that he is a man and not a piano-key. In the second he remembers what happened when he was twenty-four: a feud with an officer on the Nevsky, a disastrous farewell dinner, and a night with a young woman called Liza, whom he moves with a speech and then humiliates. He calls himself an anti-hero, and many later writers recognised themselves in him.",
+      "referenceStyle": "part and chapter, as the book numbers them: Part I (Underground), chapters I to XI; Part II (À Propos of the Wet Snow), chapters I to X",
+      "sourceText": {
+        "label": "Project Gutenberg text of White Nights and Other Stories, translated by Constance Garnett (eBook 36034)",
+        "url": "https://www.gutenberg.org/cache/epub/36034/pg36034.txt",
+        "note": "Garnett’s translation of 1918, in the tenth volume of her Novels of Fyodor Dostoevsky, where Notes from Underground follows White Nights. It keeps Dostoevsky’s footnote to the title, Nekrasov’s verses at the head of Part II in Juliet Soskice’s translation, and the closing note from an editor. Garnett calls the crystal palace the Palace of Crystal."
+      },
+      "structure": [
+        {
+          "id": "sick-man",
+          "label": "Part I, I–IV",
+          "title": "A sick man, a mouse and a stone wall",
+          "summary": "The narrator introduces himself as sick, spiteful and unattractive, then admits he was lying. He is forty, retired, and living in his corner. Too much consciousness, he argues, is a disease: it makes action impossible, stretches every insult into years of brooding and finds pleasure even in humiliation. The man of action runs into the stone wall of the laws of nature and stops; the conscious man, a mouse beside him, cannot accept the wall and cannot break it.",
+          "scenes": [
+            {
+              "ref": "Part I, chapter I",
+              "title": "I am a sick man",
+              "summary": "Spite towards petitioners, a feud with an officer over a sword, and a man who could not become anything."
+            },
+            {
+              "ref": "Part I, chapter II",
+              "title": "Too conscious",
+              "summary": "Consciousness as illness, and the secret enjoyment of one’s own degradation."
+            },
+            {
+              "ref": "Part I, chapter III",
+              "title": "The stone wall",
+              "summary": "The man of action, the conscious mouse, and twice two makes four."
+            },
+            {
+              "ref": "Part I, chapter IV",
+              "title": "Toothache",
+              "summary": "The educated man’s malicious moans, and whether a man of perception can respect himself."
+            }
+          ]
+        },
+        {
+          "id": "free-will",
+          "label": "Part I, V–IX",
+          "title": "The most advantageous advantage",
+          "summary": "He attacks the theory that people act badly only because they misunderstand their interests and would be good once enlightened. History is full of people choosing against their advantage. There is one advantage every list leaves out: the freedom to choose, even to choose harm, simply to prove that one is a man and not a piano-key or an organ-stop. Twice two makes four, he says, is the beginning of death, and twice two makes five is sometimes a charming thing too.",
+          "scenes": [
+            {
+              "ref": "Part I, chapters V–VI",
+              "title": "Inertia",
+              "summary": "Invented quarrels, love tried twice from boredom, and the dream of being a respected sluggard."
+            },
+            {
+              "ref": "Part I, chapter VII",
+              "title": "Advantage",
+              "summary": "Buckle, blood spilt like champagne, tables of logarithms, and a gentleman who kicks over the whole show."
+            },
+            {
+              "ref": "Part I, chapters VIII–IX",
+              "title": "Piano-keys",
+              "summary": "The ungrateful biped, the ant-heap, and the love of building roads more than arriving."
+            }
+          ]
+        },
+        {
+          "id": "crystal-palace",
+          "label": "Part I, X–XI",
+          "title": "The palace of crystal, and why he writes",
+          "summary": "He will not accept a hen-house as a palace, and he fears the crystal palace because nobody could put out his tongue at it. Better to do nothing: hurrah for underground! Then he admits that he is lying, that he wants something else that he cannot find, and that he believes none of what he has written. He explains that he writes for himself alone, in the form of an address to readers because it is easier, and that the wet snow falling today has brought back a memory he means to write down.",
+          "scenes": [
+            {
+              "ref": "Part I, chapter X",
+              "title": "The hen-house and the mansion",
+              "summary": "A building one cannot put one’s tongue out at; the chapter the censor cut."
+            },
+            {
+              "ref": "Part I, chapter XI",
+              "title": "Damn underground!",
+              "summary": "Conscious inertia, the imagined readers’ accusations, Heine on lying autobiographies, and the snow."
+            }
+          ]
+        },
+        {
+          "id": "the-officer",
+          "label": "Part II, I–II",
+          "title": "The officer on the Nevsky, and the dreams",
+          "summary": "At twenty-four he is a clerk who hates and fears his colleagues and lives by reading and furtive vice. An officer in a tavern moves him out of the way by the shoulders without noticing him, and he spends years planning revenge: a satirical story, an unsent letter, a new beaver collar bought on borrowed money, and at last a collision on the Nevsky in which he does not give way. Between bouts of dissipation he dreams for months of being a hero, and when the dreams require it he visits his superior Anton Antonitch on Tuesdays.",
+          "scenes": [
+            {
+              "ref": "Part II, chapter I",
+              "title": "The billiard room",
+              "summary": "Moved like a piece of furniture, then two years of stalking, gloves, a collar and a shoulder."
+            },
+            {
+              "ref": "Part II, chapter II",
+              "title": "The good and the beautiful",
+              "summary": "Dreams of Austerlitz and Lake Como, Tuesdays at Anton Antonitch’s, and a visit to Simonov."
+            }
+          ]
+        },
+        {
+          "id": "the-dinner",
+          "label": "Part II, III–V",
+          "title": "The farewell dinner",
+          "summary": "At Simonov’s he learns that three old schoolfellows are giving a dinner for Zverkov, whom he has always hated, and invites himself. He arrives an hour early because nobody told him the time had changed, quarrels, makes an insulting toast, challenges Ferfitchkin, and then walks up and down the room from table to stove for three hours while the others ignore him. When they leave for a brothel he borrows six roubles from Simonov and follows them in a sledge through the wet snow, meaning to slap Zverkov’s face.",
+          "scenes": [
+            {
+              "ref": "Part II, chapter III",
+              "title": "At Simonov’s",
+              "summary": "Seven roubles each, an uninvited guest, and memories of a hateful school."
+            },
+            {
+              "ref": "Part II, chapter IV",
+              "title": "The Hôtel de Paris",
+              "summary": "Five o’clock instead of six, a toast against phrasemongers, and three hours from the table to the stove."
+            },
+            {
+              "ref": "Part II, chapter V",
+              "title": "The sledge",
+              "summary": "Silvio and Masquerade in his head, a blow to the driver’s neck, and an empty drawing-room."
+            }
+          ]
+        },
+        {
+          "id": "liza",
+          "label": "Part II, VI–VIII",
+          "title": "Liza",
+          "summary": "The others have gone, and he spends two hours with a young woman without speaking to her. Waking in the dark, he learns that she is Liza, twenty, from Riga, and in the house a fortnight, and he sets out to move her: a coffin carried from a basement, the future waiting for her, a home, a husband and a child. She weeps and bites her hand, shows him a respectful love letter from a student, and promises to come to his address. For days afterwards he dreads her coming and quarrels with his servant Apollon over seven roubles of wages.",
+          "scenes": [
+            {
+              "ref": "Part II, chapter VI",
+              "title": "In the dark",
+              "summary": "A wheezing clock, a coffin in the Haymarket, and pictures of family happiness; she says he speaks like a book."
+            },
+            {
+              "ref": "Part II, chapter VII",
+              "title": "The speech",
+              "summary": "Her future in the Haymarket, her grief, the student’s letter, and his address."
+            },
+            {
+              "ref": "Part II, chapter VIII",
+              "title": "Apollon",
+              "summary": "A letter of excuses to Simonov, a war of stares over wages, and Liza at the door at seven o’clock."
+            }
+          ]
+        },
+        {
+          "id": "liza-visit",
+          "label": "Part II, IX–X",
+          "title": "Liza’s visit, and the five roubles",
+          "summary": "Liza finds him in a ragged dressing-gown, shouting at his servant. He weeps, then tells her that he was laughing at her that night, that he wanted power over her, and that he will never forgive her for seeing him like this. She understands that he is unhappy and embraces him. Afterwards, from spite, he presses a five-rouble note into her hand; she leaves it on the table and goes. He runs after her into the snow, stops, and goes home. He never sees her again, and he ends his notes, though an editor adds that the paradoxalist could not stop writing.",
+          "scenes": [
+            {
+              "ref": "Part II, chapter IX",
+              "title": "The dressing-gown",
+              "summary": "Tea and rusks, hysterics, a confession of cruelty, and Liza’s embrace."
+            },
+            {
+              "ref": "Part II, chapter X",
+              "title": "The note on the table",
+              "summary": "The five roubles, the empty street, cheap happiness or exalted suffering, and the anti-hero’s last words."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "underground-man",
+          "name": "The Underground Man",
+          "role": "The narrator: forty, a retired collegiate assessor living on a small legacy",
+          "summary": "Intelligent, well read, spiteful and acutely aware of all of it. At forty he writes that consciousness is a disease and argues that people will always choose freedom over their own advantage. At twenty-four he nursed grudges for years, dreamed of being a hero, forced himself on people who despised him and humiliated the one person who was kind to him. He contradicts himself on principle, admits to lying and then lies about the admission, and he is funnier than most readers expect. Dostoevsky’s footnote calls him a type who must exist in Russian society.",
+          "clue": "At twenty-four he spent a long time planning to bump into an officer on the Nevsky, and at forty he writes that twice two makes five is sometimes charming.",
+          "firstAppearance": "Part I, chapter I",
+          "traits": [
+            "hyper-conscious",
+            "spiteful",
+            "self-contradicting",
+            "lonely"
+          ],
+          "relationships": [
+            {
+              "to": "liza",
+              "label": "moves, then humiliates",
+              "kind": "love",
+              "stages": [
+                "liza",
+                "liza-visit"
+              ]
+            },
+            {
+              "to": "officer",
+              "label": "stalks and collides with",
+              "kind": "enemy",
+              "stages": [
+                "the-officer"
+              ]
+            },
+            {
+              "to": "zverkov",
+              "label": "has hated since school",
+              "kind": "enemy",
+              "stages": [
+                "the-dinner"
+              ]
+            },
+            {
+              "to": "simonov",
+              "label": "old schoolfellow of",
+              "kind": "friendship",
+              "stages": [
+                "the-officer",
+                "the-dinner"
+              ]
+            },
+            {
+              "to": "apollon",
+              "label": "at war with his servant",
+              "kind": "service",
+              "stages": [
+                "the-dinner",
+                "liza",
+                "liza-visit"
+              ]
+            },
+            {
+              "to": "anton-antonitch",
+              "label": "borrows from his superior",
+              "kind": "service",
+              "stages": [
+                "the-officer",
+                "liza"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "liza",
+          "name": "Liza",
+          "role": "Twenty, from Riga, a fortnight in a Petersburg brothel",
+          "summary": "She says little at first and answers his questions curtly. Moved by his pictures of home, marriage and a lonely death, she breaks down, then shows him her one treasure, a respectful love letter from a student who knew her as a child in Riga. When she comes to his lodging she sees his poverty and his rage, understands better than he does that he is unhappy, and embraces him. She leaves his five roubles on the table. Many readers take her as the moral centre of the book.",
+          "clue": "She keeps a respectful letter from a medical student as her one treasure, and leaves a crumpled five-rouble note behind on a table.",
+          "firstAppearance": "Part II, chapter V",
+          "traits": [
+            "guarded",
+            "proud",
+            "compassionate"
+          ],
+          "relationships": [
+            {
+              "to": "underground-man",
+              "label": "pities and loves",
+              "kind": "love",
+              "stages": [
+                "liza",
+                "liza-visit"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apollon",
+          "name": "Apollon",
+          "role": "The narrator’s elderly servant, part-time tailor",
+          "summary": "Dignified, pedantic, vain of his lisp and of every button on his coat, he works for seven roubles a month and despises his master. He reads psalms aloud behind his partition, stares the narrator into submission over his wages and wins every battle. He arrives with Liza at the worst moment and fetches the tea. The narrator says he ended up reading psalms over the dead and killing rats.",
+          "clue": "He fights every battle over his seven roubles in silence, with long stares and deep sighs, and always wins.",
+          "firstAppearance": "Part II, chapter III",
+          "traits": [
+            "dignified",
+            "contemptuous",
+            "unshakeable"
+          ],
+          "relationships": [
+            {
+              "to": "underground-man",
+              "label": "despises his master",
+              "kind": "service",
+              "stages": [
+                "the-dinner",
+                "liza",
+                "liza-visit"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "zverkov",
+          "name": "Zverkov",
+          "role": "An old schoolfellow, now an officer, leaving for a distant province",
+          "summary": "Handsome, lucky and stupid, according to the narrator, who hated him at school for being a pretty, playful boy everybody liked. He boasted of the village girls on his estate, and now he treats the uninvited guest with a general’s condescension. When the narrator tries to apologise, Zverkov tells him that he could never insult him, and goes off to the brothel.",
+          "clue": "He inherited two hundred serfs in his last year at school and later tells a former classmate that a person like him could never offend him.",
+          "firstAppearance": "Part II, chapter III",
+          "traits": [
+            "swaggering",
+            "complacent",
+            "popular"
+          ],
+          "relationships": [
+            {
+              "to": "underground-man",
+              "label": "patronises",
+              "kind": "enemy",
+              "stages": [
+                "the-dinner"
+              ]
+            },
+            {
+              "to": "trudolyubov",
+              "label": "distant relation of",
+              "kind": "family",
+              "stages": [
+                "the-dinner"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "simonov",
+          "name": "Simonov",
+          "role": "A schoolfellow and the narrator’s last acquaintance from school",
+          "summary": "Quiet, honest and not stupid, he tolerates the narrator’s visits and is plainly uncomfortable with them. He arranges the dinner, forgets to tell the narrator the time has changed, and at the end of the evening flings six roubles at him with contempt. The narrator repays him the next day with a letter of excuses he is very proud of.",
+          "clue": "He forgets to tell one guest that a farewell dinner has moved from five to six, and later hands him six roubles in disgust.",
+          "firstAppearance": "Part II, chapter II",
+          "traits": [
+            "equable",
+            "embarrassed",
+            "decent"
+          ],
+          "relationships": [
+            {
+              "to": "underground-man",
+              "label": "puts up with",
+              "kind": "friendship",
+              "stages": [
+                "the-officer",
+                "the-dinner"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ferfitchkin",
+          "name": "Ferfitchkin",
+          "role": "A schoolfellow, Zverkov’s toady",
+          "summary": "A Russianised German with the face of a monkey, a bitter enemy of the narrator since the lower forms, who sniggers at every humiliation and borrows money from Zverkov. The narrator challenges him to a duel at the dinner, to general laughter.",
+          "clue": "He accepts a challenge to a duel at a restaurant table while everyone, himself included, laughs at the man making it.",
+          "firstAppearance": "Part II, chapter III",
+          "traits": [
+            "sneering",
+            "servile",
+            "cowardly"
+          ],
+          "relationships": [
+            {
+              "to": "zverkov",
+              "label": "flatters",
+              "kind": "ally",
+              "stages": [
+                "the-dinner"
+              ]
+            },
+            {
+              "to": "underground-man",
+              "label": "mocks",
+              "kind": "enemy",
+              "stages": [
+                "the-dinner"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "trudolyubov",
+          "name": "Trudolyubov",
+          "role": "A schoolfellow in the army, Zverkov’s distant relation",
+          "summary": "Tall, cold and fairly honest, he worships success and thinks of nothing but promotion. He takes the narrator’s side for a moment when the dinner hour is changed, and then orders him to stop spoiling the evening.",
+          "clue": "Tall and cold-faced, he proposes seven roubles a head for a dinner and later tells an uninvited guest not to spoil the general harmony.",
+          "firstAppearance": "Part II, chapter III",
+          "traits": [
+            "cold",
+            "ambitious",
+            "blunt"
+          ],
+          "relationships": [
+            {
+              "to": "zverkov",
+              "label": "related to",
+              "kind": "family",
+              "stages": [
+                "the-dinner"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "officer",
+          "name": "The officer",
+          "role": "A six-foot officer from a tavern billiard room",
+          "summary": "He moves the narrator out of his way by the shoulders without a word and without noticing him, which the narrator finds worse than a blow. For two years the narrator follows him, learns his name, writes a story about him and drafts a challenge, and at last collides with him on the Nevsky. The officer does not look round.",
+          "clue": "In a billiard room he once moved a stranger aside by the shoulders without a word, and years later did not look round when the stranger shouldered him on the Nevsky.",
+          "firstAppearance": "Part II, chapter I",
+          "traits": [
+            "tall",
+            "oblivious"
+          ],
+          "relationships": [
+            {
+              "to": "underground-man",
+              "label": "ignores",
+              "kind": "enemy",
+              "stages": [
+                "the-officer"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "anton-antonitch",
+          "name": "Anton Antonitch Syetotchkin",
+          "role": "The narrator’s superior at the office",
+          "summary": "Grave, judicious and unassuming, he never lends money to anyone but twice lends to the narrator, against his salary. He receives on Tuesdays, with two giggling daughters and their aunt pouring tea, and talks of salaries and promotions. The narrator calls him the only permanent acquaintance of his life.",
+          "clue": "On his at-home Tuesdays near Five Corners he talks of excise duties and promotions, and he lends money only against the borrower’s salary.",
+          "firstAppearance": "Part II, chapter I",
+          "traits": [
+            "grave",
+            "careful"
+          ],
+          "relationships": [
+            {
+              "to": "underground-man",
+              "label": "lends money to",
+              "kind": "service",
+              "stages": [
+                "the-officer",
+                "liza"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "consciousness",
+          "name": "Consciousness as a disease",
+          "canonicalName": "Consciousness as a disease",
+          "summary": "To be too conscious is an illness: that is the narrator’s first idea. A man who sees every side of every question cannot act, cannot revenge himself honestly and cannot even become an insect; he broods in his hole for forty years, and he learns to enjoy his own degradation because he understands it so well. The whole book is a demonstration: at forty he analyses himself without mercy, and at twenty-four his self-consciousness wrecks every encounter he has.",
+          "development": "The sick man; the conscious mouse and the man of action; the pleasure in toothache; three hours from the table to the stove; I cannot be good."
+        },
+        {
+          "id": "freedom",
+          "name": "Free will against reason",
+          "canonicalName": "Freedom",
+          "summary": "Against the belief that science will one day tabulate every desire, the narrator sets the freedom to choose, even to choose what is harmful and stupid. A man, he says, will do something perverse simply to prove he is a man and not a piano-key, and would go mad to escape reason if madness were calculated too. The argument is serious and extreme at the same time, and Part II shows what this freedom looks like in the life of the man who defends it.",
+          "development": "Advantage and the advantage every list leaves out; the organ-stop; twice two makes four as the beginning of death; the ungrateful biped; caprice guaranteed when necessary."
+        },
+        {
+          "id": "utopia",
+          "name": "The palace of crystal",
+          "canonicalName": "The palace of crystal",
+          "summary": "The crystal palace was a real building, the glass hall of the Great Exhibition of 1851, which Dostoevsky saw in London in 1862. Chernyshevsky’s novel What Is to Be Done? (1863) made a palace of iron and glass the home of a rational socialist future, and Part I answers it. The narrator fears a building that can never be destroyed and at which nobody could put out his tongue, and he refuses to call a hen-house a mansion. It was in the chapter about it that the censor made his cuts.",
+          "development": "Tables of logarithms and encyclopaedic lexicons; the Palace of Crystal will be built; the ant-heap; the hen-house and the mansion; I would rather my hand were withered off than bring one brick."
+        },
+        {
+          "id": "humiliation",
+          "name": "Humiliation and spite",
+          "canonicalName": "Humiliation and spite",
+          "summary": "Everything in Part II turns on being noticed or not noticed. The officer moves him like furniture, the schoolfellows treat him as a fly, Zverkov says he is incapable of insulting anybody, and Apollon stares him down. Each humiliation produces spite, and each piece of spite is passed downward, until he tells Liza plainly that because he had been humiliated he wanted to humiliate someone else.",
+          "development": "The sword clanking in his office; moved without being noticed; the collision on the Nevsky; the dinner; the war over wages; the five-rouble note."
+        },
+        {
+          "id": "books",
+          "name": "Reading and romance",
+          "canonicalName": "Reading and romance",
+          "summary": "Without books, the narrator says, we would not know what to love or hate. He lives by them: his revenge fantasies come from Pushkin and Lermontov, his dreams of heroism from Byron and Napoleon, his speech to Liza from the novels of the day. Liza sees it at once and says he speaks like a book. At the end he says that all of us agree privately that life is better in books.",
+          "development": "A satirical story sent to Otechestvennye zapiski; the challenge written like a novel; Silvio and Masquerade in the sledge; he speaks somehow like a book; it is better in books."
+        },
+        {
+          "id": "love",
+          "name": "Love and power",
+          "canonicalName": "Love",
+          "summary": "Liza offers him the only real feeling anyone shows him in the book, and he can only treat it as a contest. He wins her tears with a speech, confesses that what he wanted was power, and afterwards writes that for him loving meant tyrannising and showing his moral superiority. Liza understands his unhappiness and loves him anyway, and her leaving the money on the table is the one act in the book he cannot answer.",
+          "development": "The speech in the dark; the student’s letter; the dressing-gown; the embrace; the five roubles; cheap happiness or exalted sufferings."
+        },
+        {
+          "id": "isolation",
+          "name": "The underground",
+          "canonicalName": "Isolation",
+          "summary": "The underground is his corner, his room on the outskirts, and the state of mind he calls his underground world. He has been listening to the world for forty years through a crack under the floor. At twenty-four he had no friends, avoided schoolfellows and visited his superior only when a dream required a human being. He hails the underground, curses it and admits he wants something he cannot name, and his last word is that he does not want to write any more from it.",
+          "development": "Settled in his corner; the mouse-hole; hurrah for underground! Damn underground!; my shell, my cave; the empty street after Liza."
+        },
+        {
+          "id": "petersburg",
+          "name": "St Petersburg",
+          "canonicalName": "St Petersburg",
+          "summary": "Petersburg, the narrator says, is the most theoretical and intentional town on the whole terrestrial globe, a city planned by decree and full of people who live in their heads. Part II is set in its wet snow, which a critic of the 1840s had already called a stock feature of Petersburg stories, and among its landmarks: the Nevsky where he stalks the officer, the Haymarket and the waterlogged Volkovo Cemetery he describes to Liza, and the Five Corners where his superior lives.",
+          "development": "The Petersburg climate that is bad for him; the Nevsky at four o’clock; Gostiny Dvor and the German beaver; the Hôtel de Paris; the Haymarket; snow falling almost perpendicularly on an empty street."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "unreliable-narrator",
+          "name": "The self-contradicting narrator",
+          "canonicalName": "Unreliable narrator",
+          "definition": "A narrator whose account cannot be taken at face value.",
+          "bookDefinition": "A narrator whose account cannot be taken at face value.",
+          "inThisBook": "He lies from spite in his first paragraph and says so in his third. He calls his jokes bad and keeps them, claims to write only for himself while arguing with readers, and ends Part I by saying he believes nothing he has written. Part II is more reliable in its facts, and he is at his most honest when he admits the worst of what he did."
+        },
+        {
+          "id": "direct-address",
+          "name": "Arguing with imagined readers",
+          "canonicalName": "Direct address",
+          "definition": "A narrator or speaker turning outward to address the reader or the audience by name.",
+          "bookDefinition": "A speaker turning to address the reader, or someone within the story, directly.",
+          "inThisBook": "Gentlemen, he calls them, and he answers their laughter, their objections and their contempt before they have been expressed. In chapter XI he admits that he has invented every one of their remarks himself, listening through a crack under the floor."
+        },
+        {
+          "id": "objection-and-reply",
+          "name": "Objection and reply",
+          "canonicalName": "Objection and reply",
+          "definition": "An argument that states the opponent’s case in order to answer it.",
+          "bookDefinition": "An argument that states the opponent’s case in order to answer it.",
+          "inThisBook": "Part I is built as a quarrel: you will say that science has proved there is no free will; you will laugh; you will scream at me. The narrator gives the rationalist position its best form, in quotation marks, and then tears it down, which is why the argument still reads as alive."
+        },
+        {
+          "id": "paradox",
+          "name": "Argument by reversal",
+          "canonicalName": "Argument by reversal",
+          "definition": "An argument that turns an accepted idea on its head.",
+          "bookDefinition": "An argument that turns an accepted idea on its head.",
+          "inThisBook": "Even in toothache there is enjoyment; the conscious man is a mouse; it is better to do nothing; twice two makes five is sometimes a charming thing; suffering is the sole origin of consciousness. The editor’s last note calls him a paradoxalist."
+        },
+        {
+          "id": "retrospective-narration",
+          "name": "Remembering at forty",
+          "canonicalName": "Retrospective narration",
+          "definition": "A narrator telling their own earlier life, with the distance between the two selves doing the judging.",
+          "bookDefinition": "An account given after the event by a narrator who already knows how it ends.",
+          "inThisBook": "Part II is written by the man of Part I about himself at twenty-four, and he interrupts it to judge himself, to say what he learned fifteen years later, and to insist on the loathsome truth. The two parts show the ideas first and the life that produced them second."
+        },
+        {
+          "id": "frame-narrative",
+          "name": "The editor’s frame",
+          "canonicalName": "Frame narrative",
+          "definition": "A story told inside another story, so that every account reaches the reader through somebody with an interest in it.",
+          "bookDefinition": "A story placed inside another story or presented by an outside voice.",
+          "inThisBook": "A footnote signed by the author opens the book, saying that the diarist is imaginary but a type who must exist; an unnamed editor closes it, saying that the paradoxalist’s notes go on but that we may stop here. The frame keeps Dostoevsky at a distance from his narrator."
+        },
+        {
+          "id": "leitmotif",
+          "name": "The repeated sentence",
+          "canonicalName": "The repeated sentence",
+          "definition": "A phrase or image that comes back through a work and gathers meaning.",
+          "bookDefinition": "A phrase or image that comes back through a work and gathers meaning.",
+          "inThisBook": "Twice two makes four returns through Part I as the figure of every closed system. The good and the beautiful comes back as mockery of Romantic idealism, and the wet snow falls at the end of Part I and all through Part II."
+        },
+        {
+          "id": "allusion",
+          "name": "Allusion",
+          "canonicalName": "Allusion",
+          "definition": "A reference to another work, person or event that the reader is expected to recognise.",
+          "bookDefinition": "A reference to another work, person or event that the reader is expected to recognise.",
+          "inThisBook": "Chernyshevsky’s palace, Buckle’s History of Civilization, Diderot’s piano-keys, Heine on Rousseau’s lying confessions, Gogol’s Lieutenant Pirogov and his madman who thought he was King of Spain, Pushkin’s Silvio, Lermontov’s Masquerade, Byron’s Manfred, and Nekrasov’s poem about a fallen woman, which Part II quotes and then turns upside down."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "sick-man",
+          "text": "I am a sick man.... I am a spiteful man. I am an unattractive man. I believe my liver is diseased.",
+          "speaker": "",
+          "reference": "Part I, chapter I",
+          "stage": "sick-man",
+          "context": "The first lines of the book.",
+          "analysis": "The book opens with four short sentences, each a confession and each a provocation. He introduces himself by his flaws, as if daring the reader to disagree, and within a page he admits that the second one was a lie told from spite. The voice is sick, clever and theatrical, and it does not change for the rest of the book.",
+          "themes": [
+            "consciousness"
+          ],
+          "techniques": [
+            "unreliable-narrator"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter I",
+          "cloze": [
+            "spiteful",
+            "liver"
+          ]
+        },
+        {
+          "id": "hero-nor-insect",
+          "text": "It was not only that I could not become spiteful, I did not know how to become anything: neither spiteful nor kind, neither a rascal nor an honest man, neither a hero nor an insect.",
+          "speaker": "",
+          "reference": "Part I, chapter I",
+          "stage": "sick-man",
+          "context": "A few lines after admitting that he was never really a spiteful official.",
+          "analysis": "Here is his condition in one sentence: every opposite cancels the other, and nothing is left. He goes on to argue that an intelligent man cannot become anything and only fools can, which makes his paralysis a proof of intelligence. The insect returns in the next chapter, where he says he has many times tried to become one and failed.",
+          "themes": [
+            "consciousness"
+          ],
+          "techniques": [
+            "paradox"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter I",
+          "cloze": [
+            "insect",
+            "rascal"
+          ]
+        },
+        {
+          "id": "of-himself",
+          "text": "But what can a decent man speak of with most pleasure? Answer: Of himself.",
+          "speaker": "",
+          "reference": "Part I, chapter I",
+          "stage": "sick-man",
+          "context": "The end of the first chapter.",
+          "analysis": "Self-absorption is announced as a joke about everyone, decent men included. The question-and-answer form mimics a catechism. It is also a fair description of the whole book, which never leaves his head, and of the genre of confession Dostoevsky is writing inside and against.",
+          "themes": [
+            "isolation"
+          ],
+          "techniques": [
+            "objection-and-reply"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter I",
+          "cloze": [
+            "decent",
+            "himself"
+          ]
+        },
+        {
+          "id": "too-conscious",
+          "text": "I swear, gentlemen, that to be too conscious is an illness—a real thorough-going illness.",
+          "speaker": "",
+          "reference": "Part I, chapter II",
+          "stage": "sick-man",
+          "context": "He begins to explain why he could not even become an insect.",
+          "analysis": "Gentlemen, the imagined audience, appears as he makes his central claim. Consciousness, the faculty the nineteenth century was proudest of, is presented as a disease that makes action and even character impossible. Much of Part I is a clinical history of that illness, written by the patient.",
+          "themes": [
+            "consciousness"
+          ],
+          "techniques": [
+            "direct-address",
+            "paradox"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter II",
+          "cloze": [
+            "conscious",
+            "illness"
+          ]
+        },
+        {
+          "id": "intentional-town",
+          "text": "Petersburg, the most theoretical and intentional town on the whole terrestrial globe.",
+          "speaker": "",
+          "reference": "Part I, chapter II",
+          "stage": "sick-man",
+          "context": "Describing the fatal ill-luck of being a cultivated man in the nineteenth century.",
+          "analysis": "Peter the Great built Petersburg on a marsh by decree, and the narrator makes the city a symptom: a town planned in theory produces citizens who live in their heads. He adds in brackets that there are intentional and unintentional towns. The joke places his disease in a real place and a real history.",
+          "themes": [
+            "petersburg",
+            "consciousness"
+          ],
+          "techniques": [
+            "paradox"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter II",
+          "cloze": [
+            "theoretical",
+            "intentional"
+          ]
+        },
+        {
+          "id": "conscious-mouse",
+          "text": "It may be an acutely conscious mouse, yet it is a mouse, while the other is a man",
+          "speaker": "",
+          "reference": "Part I, chapter III",
+          "stage": "sick-man",
+          "context": "A comparison of the man of acute consciousness with the direct man of action.",
+          "analysis": "Humiliating on purpose, the image makes him a mouse. The man of action charges at his object like a bull and stops only at a wall; the conscious man, whom he calls retort-made, surrounds every insult with doubts until all he can do is creep into his hole and nurse his spite for forty years. The mouse is the ancestor of the underground.",
+          "themes": [
+            "consciousness",
+            "isolation"
+          ],
+          "techniques": [
+            "paradox"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter III",
+          "cloze": [
+            "mouse",
+            "conscious"
+          ]
+        },
+        {
+          "id": "stone-wall",
+          "text": "The impossible means the stone wall! What stone wall? Why, of course, the laws of nature, the deductions of natural science, mathematics.",
+          "speaker": "",
+          "reference": "Part I, chapter III",
+          "stage": "sick-man",
+          "context": "Men of strong nerves, he says, subside immediately when they meet the impossible.",
+          "analysis": "The wall is the book’s first great image of necessity. Other people accept it with relief; the narrator refuses to be reconciled to it simply because it is a wall and he is not strong enough to knock it down. His rebellion is hopeless and he knows it, and the knowledge becomes part of the ache.",
+          "themes": [
+            "freedom"
+          ],
+          "techniques": [
+            "objection-and-reply"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter III",
+          "cloze": [
+            "wall",
+            "mathematics"
+          ]
+        },
+        {
+          "id": "toothache",
+          "text": "“Well? Even in toothache there is enjoyment,” I answer.",
+          "speaker": "",
+          "reference": "Part I, chapter IV",
+          "stage": "sick-man",
+          "context": "His imagined readers have laughed that he will find enjoyment in toothache next.",
+          "analysis": "He accepts the reductio and runs with it. The educated man with toothache moans maliciously, knowing his moans do no good and irritate everyone, and he enjoys exactly that. The example is comic and grotesque, and it makes his theory of pleasure in humiliation concrete in a way nobody could miss.",
+          "themes": [
+            "consciousness",
+            "humiliation"
+          ],
+          "techniques": [
+            "paradox",
+            "objection-and-reply"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter IV",
+          "cloze": [
+            "toothache",
+            "enjoyment"
+          ]
+        },
+        {
+          "id": "independent-choice",
+          "text": "What man wants is simply independent choice, whatever that independence may cost and wherever it may lead.",
+          "speaker": "",
+          "reference": "Part I, chapter VII",
+          "stage": "free-will",
+          "context": "The end of his attack on the idea that enlightened people will always act in their own interest.",
+          "analysis": "This is the heart of Part I. The most advantageous advantage, the one that fits no classification, is choice itself, and it matters more than any benefit it could bring. Readers have taken the sentence as a founding statement of modern individualism; the story that follows shows how badly independent choice can serve the man who claims it.",
+          "themes": [
+            "freedom"
+          ],
+          "techniques": [],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter VII",
+          "cloze": [
+            "independent",
+            "choice"
+          ]
+        },
+        {
+          "id": "palace-of-crystal",
+          "text": "Then the “Palace of Crystal” will be built. Then.... In fact, those will be halcyon days.",
+          "speaker": "",
+          "reference": "Part I, chapter VII",
+          "stage": "free-will",
+          "context": "He is describing the future his opponents promise, when every desire has been calculated.",
+          "analysis": "The crystal palace arrives as the crowning building of the rational future, and the narrator trails off before describing it. Readers in 1864 would recognise Chernyshevsky’s palace of iron and glass from What Is to Be Done?, and behind it the real Crystal Palace in London. He adds straight away that such halcyon days might be frightfully dull.",
+          "themes": [
+            "utopia"
+          ],
+          "techniques": [
+            "allusion"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter VII",
+          "cloze": [
+            "Palace",
+            "halcyon"
+          ]
+        },
+        {
+          "id": "ungrateful-biped",
+          "text": "In fact, I believe that the best definition of man is the ungrateful biped.",
+          "speaker": "",
+          "reference": "Part I, chapter VIII",
+          "stage": "free-will",
+          "context": "For argument’s sake he has supposed that man is not stupid.",
+          "analysis": "This definition of man parodies the philosophers’ featherless biped, and it is also his thesis in miniature. Give people every blessing, he argues, and out of sheer ingratitude they will play some nasty trick, because a man would sooner be perverse than be satisfied like a machine.",
+          "themes": [
+            "freedom"
+          ],
+          "techniques": [
+            "paradox"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter VIII",
+          "cloze": [
+            "ungrateful",
+            "biped"
+          ]
+        },
+        {
+          "id": "piano-key",
+          "text": "the whole work of man really seems to consist in nothing but proving to himself every minute that he is a man and not a piano-key!",
+          "speaker": "",
+          "reference": "Part I, chapter VIII",
+          "stage": "free-will",
+          "context": "The climax of his argument against a science of desire.",
+          "analysis": "Piano-keys come from Diderot, who described people as instruments played on by nature. For the narrator, freedom is not a means to happiness at all: it is a proof, repeated every minute, that one is not a mechanism. He goes on to say that man would go mad on purpose to escape reason, and the exclamation marks show how much depends on it for him.",
+          "themes": [
+            "freedom"
+          ],
+          "techniques": [
+            "allusion",
+            "leitmotif"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter VIII",
+          "cloze": [
+            "piano-key",
+            "proving"
+          ]
+        },
+        {
+          "id": "twice-two-five",
+          "text": "I admit that twice two makes four is an excellent thing, but if we are to give everything its due, twice two makes five is sometimes a very charming thing too.",
+          "speaker": "",
+          "reference": "Part I, chapter IX",
+          "stage": "free-will",
+          "context": "He has just called twice two makes four a pert coxcomb barring one’s path.",
+          "analysis": "Twice two makes four has stood throughout Part I for every closed system, and here he defends error for its own sake. The line is provocative and funny, and it has been quoted ever since as a slogan for the rights of the irrational. Orwell’s Nineteen Eighty-Four later reversed the values: there, holding that two and two make four is the last freedom.",
+          "themes": [
+            "freedom",
+            "utopia"
+          ],
+          "techniques": [
+            "leitmotif",
+            "paradox"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter IX",
+          "cloze": [
+            "charming",
+            "five"
+          ]
+        },
+        {
+          "id": "hen-house",
+          "text": "You see, if it were not a palace, but a hen-house, I might creep into it to avoid getting wet, and yet I would not call the hen-house a palace out of gratitude to it for keeping me dry.",
+          "speaker": "",
+          "reference": "Part I, chapter X",
+          "stage": "crystal-palace",
+          "context": "In the chapter the censor cut, he explains why he fears the crystal palace.",
+          "analysis": "What he objects to in the utopia is that it asks him to accept a shelter as a fulfilment. He will take shelter if he must, but he will not call it the crown of his desires, and he demands a better ideal. Dostoevsky told his brother that the censors had cut the passages in this chapter where he drew from all this the need for faith and Christ.",
+          "themes": [
+            "utopia",
+            "freedom"
+          ],
+          "techniques": [
+            "paradox"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter X",
+          "cloze": [
+            "hen-house",
+            "gratitude"
+          ]
+        },
+        {
+          "id": "hurrah-for-underground",
+          "text": "The long and the short of it is, gentlemen, that it is better to do nothing! Better conscious inertia! And so hurrah for underground!",
+          "speaker": "",
+          "reference": "Part I, chapter XI",
+          "stage": "crystal-palace",
+          "context": "The last chapter of Part I opens.",
+          "analysis": "Part I concludes with a cheer for paralysis. It lasts a few sentences: he admits he is lying, that he is thirsting for something quite different that he cannot find, and ends with damn underground! The swing from hurrah to damn is the book’s rhythm, and it prevents any reader from taking the underground as a philosophy to live by.",
+          "themes": [
+            "isolation",
+            "consciousness"
+          ],
+          "techniques": [
+            "direct-address",
+            "unreliable-narrator"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter XI",
+          "cloze": [
+            "inertia",
+            "underground"
+          ]
+        },
+        {
+          "id": "empty-form",
+          "text": "It is a form, an empty form—I shall never have readers.",
+          "speaker": "",
+          "reference": "Part I, chapter XI",
+          "stage": "crystal-palace",
+          "context": "Why, he asks himself, address gentlemen who do not exist?",
+          "analysis": "He insists that the audience is a convenience, and a moment later imagines someone catching him out: why explain yourself, then? The book is full of people he claims not to care about and cannot stop talking to. Dostoevsky, who did have readers, printed the notes in his own journal.",
+          "themes": [
+            "isolation"
+          ],
+          "techniques": [
+            "direct-address",
+            "unreliable-narrator"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part I, chapter XI",
+          "cloze": [
+            "form",
+            "readers"
+          ]
+        },
+        {
+          "id": "moved-me",
+          "text": "I could have forgiven blows, but I could not forgive his having moved me without noticing me.",
+          "speaker": "",
+          "reference": "Part II, chapter I",
+          "stage": "the-officer",
+          "context": "An officer in a tavern billiard room has shifted him out of the way.",
+          "analysis": "The insult is invisibility. A blow would at least have treated him as an opponent; being moved like a chair treats him as nothing. Years of stalking, planning and dreaming follow from this moment, which is the clearest case in the book of a small wound becoming a way of life.",
+          "themes": [
+            "humiliation"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "underground-man",
+            "officer"
+          ],
+          "source": "Garnett translation, Part II, chapter I",
+          "cloze": [
+            "forgiven",
+            "noticing"
+          ]
+        },
+        {
+          "id": "full-tilt",
+          "text": "I closed my eyes, and we ran full tilt, shoulder to shoulder, against one another!",
+          "speaker": "",
+          "reference": "Part II, chapter I",
+          "stage": "the-officer",
+          "context": "After many failures, he at last refuses to step aside for the officer on the Nevsky.",
+          "analysis": "All this revenge comes down to a shove on a pavement, prepared with borrowed money, new gloves and a beaver collar. He goes home triumphant and sings Italian arias; the officer does not even look round. The comedy is exact, and so is the sadness of a man whose victories have to be this small.",
+          "themes": [
+            "humiliation",
+            "petersburg"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "underground-man",
+            "officer"
+          ],
+          "source": "Garnett translation, Part II, chapter I",
+          "cloze": [
+            "tilt",
+            "shoulder"
+          ]
+        },
+        {
+          "id": "hero-or-mud",
+          "text": "Either to be a hero or to grovel in the mud—there was nothing between.",
+          "speaker": "",
+          "reference": "Part II, chapter II",
+          "stage": "the-officer",
+          "context": "He describes the dreams of the good and the beautiful that followed his bouts of dissipation.",
+          "analysis": "His inner life has two settings, grandeur and degradation, and each excuses the other. When he was in the mud he comforted himself that at other times he was a hero, and the hero was a cloak for the mud. The sentence describes a trap many readers recognise, and the dinner in the next chapters shows it at work.",
+          "themes": [
+            "consciousness",
+            "books"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part II, chapter II",
+          "cloze": [
+            "hero",
+            "mud"
+          ]
+        },
+        {
+          "id": "never-insult-me",
+          "text": "Insulted? You insulted me? Understand, sir, that you never, under any circumstances, could possibly insult me.",
+          "speaker": "Zverkov",
+          "reference": "Part II, chapter IV",
+          "stage": "the-dinner",
+          "context": "At the end of the evening the narrator tries to apologise.",
+          "analysis": "Zverkov’s reply is the cruellest thing said at the dinner because it is not meant to be cruel. To be incapable of insulting someone is to be beneath consideration, and it echoes the officer who moved him without noticing him. The narrator stands, he says, as though spat upon.",
+          "themes": [
+            "humiliation"
+          ],
+          "techniques": [],
+          "characters": [
+            "zverkov",
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part II, chapter IV",
+          "cloze": [
+            "insult",
+            "circumstances"
+          ]
+        },
+        {
+          "id": "table-to-stove",
+          "text": "I had the patience to walk up and down in front of them from eight o’clock till eleven, in the same place, from the table to the stove and back again.",
+          "speaker": "",
+          "reference": "Part II, chapter IV",
+          "stage": "the-dinner",
+          "context": "His schoolfellows have moved to the sofa and ignore him.",
+          "analysis": "Three hours of pacing, thumping his heels so they will notice him, is the book’s great image of spite that hurts only the spiteful. He knows that he will remember it with loathing for forty years, and he does: the forty-year-old writing the notes is proof. The scene makes humiliation long, repetitive and physical.",
+          "themes": [
+            "humiliation",
+            "consciousness"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part II, chapter IV",
+          "cloze": [
+            "patience",
+            "stove"
+          ]
+        },
+        {
+          "id": "silvio-masquerade",
+          "text": "I was actually on the point of tears, though I knew perfectly well at that moment that all this was out of Pushkin’s Silvio and Lermontov’s Masquerade.",
+          "speaker": "",
+          "reference": "Part II, chapter V",
+          "stage": "the-dinner",
+          "context": "In the sledge, he imagines coming back after fifteen years in Siberia to forgive Zverkov.",
+          "analysis": "Pushkin’s story The Shot and Lermontov’s play supply the revenge fantasy ready-made, and he weeps at it while knowing where it came from. Consciousness does not stop the fantasy; it only adds shame. He gets out of the sledge, stands in the snow, and then gets back in.",
+          "themes": [
+            "books",
+            "consciousness"
+          ],
+          "techniques": [
+            "allusion"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part II, chapter V",
+          "cloze": [
+            "tears",
+            "Masquerade"
+          ]
+        },
+        {
+          "id": "like-a-book",
+          "text": "“Why, you ... speak somehow like a book,” she said, and again there was a note of irony in her voice.",
+          "speaker": "Liza",
+          "reference": "Part II, chapter VI",
+          "stage": "liza",
+          "context": "He has painted a long picture of the happiness of married life and a baby at the breast.",
+          "analysis": "Liza sees through him, but not as he thinks. The narrator writes that he did not understand then that her irony was a shield for feelings she was ashamed to show. Wounded, he decides to go further, and the speech that follows is crueller and far more effective.",
+          "themes": [
+            "books",
+            "love"
+          ],
+          "techniques": [],
+          "characters": [
+            "liza",
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part II, chapter VI",
+          "cloze": [
+            "book",
+            "irony"
+          ]
+        },
+        {
+          "id": "exercise-of-power",
+          "text": "It was the exercise of my power that attracted me most.",
+          "speaker": "",
+          "reference": "Part II, chapter VI",
+          "stage": "liza",
+          "context": "Liza has just agreed, sharply, that their encounter was hideous.",
+          "analysis": "He admits his motive in a single flat sentence in the middle of his most eloquent performance. Power over another person’s feelings is the one thing he has never had, and he finds it with the most vulnerable person in the book. The honesty of the admission is real, and it does not make the act any better.",
+          "themes": [
+            "love",
+            "humiliation"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "underground-man",
+            "liza"
+          ],
+          "source": "Garnett translation, Part II, chapter VI",
+          "cloze": [
+            "power",
+            "exercise"
+          ]
+        },
+        {
+          "id": "humiliated-so-humiliate",
+          "text": "I had been humiliated, so I wanted to humiliate; I had been treated like a rag, so I wanted to show my power....",
+          "speaker": "The Underground Man",
+          "reference": "Part II, chapter IX",
+          "stage": "liza-visit",
+          "context": "Liza has come to his lodging and found him shouting at Apollon; he tells her why he spoke to her as he did.",
+          "analysis": "The chain of humiliation is laid bare in two clauses. Everything done to him by the officer and the schoolfellows has been passed down to someone weaker. He says it to her face, with tears, and it is a confession and also a new cruelty, since he tells her the speech that moved her was mockery.",
+          "themes": [
+            "humiliation",
+            "love"
+          ],
+          "techniques": [],
+          "characters": [
+            "underground-man",
+            "liza"
+          ],
+          "source": "Garnett translation, Part II, chapter IX",
+          "cloze": [
+            "humiliated",
+            "rag"
+          ]
+        },
+        {
+          "id": "loving-meant-tyrannizing",
+          "text": "In the first place, by then I was incapable of love, for I repeat, with me loving meant tyrannizing and showing my moral superiority.",
+          "speaker": "",
+          "reference": "Part II, chapter X",
+          "stage": "liza-visit",
+          "context": "Looking back, he explains why he could not love Liza though she loved him.",
+          "analysis": "Merciless as a diagnosis, the sentence then becomes a generalisation, suggesting that love may really be the right, freely given, to tyrannise over the beloved. The reader has just seen what that means for Liza. The same chapter shows her understanding him better than he understands himself.",
+          "themes": [
+            "love"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "underground-man",
+            "liza"
+          ],
+          "source": "Garnett translation, Part II, chapter X",
+          "cloze": [
+            "tyrannizing",
+            "superiority"
+          ]
+        },
+        {
+          "id": "five-rouble-note",
+          "text": "I saw a crumpled blue five-rouble note, the one I had thrust into her hand a minute before.",
+          "speaker": "",
+          "reference": "Part II, chapter X",
+          "stage": "liza-visit",
+          "context": "Liza has left, and he goes back to the table where she sat.",
+          "analysis": "Payment makes their meeting a transaction again, which is the worst insult he can offer, and Liza refuses it without a word. The note on the table is her answer to everything he has said. He runs out into the snow after her, stops at the crossroads, and goes home.",
+          "themes": [
+            "love",
+            "humiliation"
+          ],
+          "techniques": [],
+          "characters": [
+            "underground-man",
+            "liza"
+          ],
+          "source": "Garnett translation, Part II, chapter X",
+          "cloze": [
+            "crumpled",
+            "note"
+          ]
+        },
+        {
+          "id": "cheap-happiness",
+          "text": "which is better—cheap happiness or exalted sufferings? Well, which is better?",
+          "speaker": "",
+          "reference": "Part II, chapter X",
+          "stage": "liza-visit",
+          "context": "At home that night he persuades himself that her resentment will purify her.",
+          "analysis": "He calls it an idle question, and it is the question of Part I asked again in a real life. He has chosen suffering for her as well as for himself, and dressed the choice in philosophy. The repeated which is better? shows he cannot quite believe his own answer.",
+          "themes": [
+            "consciousness",
+            "love"
+          ],
+          "techniques": [
+            "paradox"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part II, chapter X",
+          "cloze": [
+            "happiness",
+            "sufferings"
+          ]
+        },
+        {
+          "id": "anti-hero",
+          "text": "a novel needs a hero, and all the traits for an anti-hero are expressly gathered together here",
+          "speaker": "",
+          "reference": "Part II, chapter X",
+          "stage": "liza-visit",
+          "context": "In his closing reflections he wonders whether to end his notes.",
+          "analysis": "Anti-hero is a word critics would use for a century and more, and here the narrator applies it to himself. The traits are gathered on purpose, he says, and he then turns on his readers: he has only carried to an extreme what they have not dared to carry half-way. The book ends by implicating everyone who has been judging him.",
+          "themes": [
+            "books",
+            "isolation"
+          ],
+          "techniques": [
+            "direct-address"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, Part II, chapter X",
+          "cloze": [
+            "anti-hero",
+            "novel"
+          ]
+        },
+        {
+          "id": "paradoxalist",
+          "text": "The notes of this paradoxalist do not end here, however. He could not refrain from going on with them, but it seems to us that we may stop here.",
+          "speaker": "",
+          "reference": "Part II, chapter X",
+          "stage": "liza-visit",
+          "context": "An editor’s note after the narrator says he wants to write no more.",
+          "analysis": "A second voice takes the book away from him. The narrator could not stop, the editor says, so someone else has to. The note matches the author’s footnote at the start and closes the frame, and it tells the reader that the underground has no natural end, only an interruption.",
+          "themes": [
+            "isolation"
+          ],
+          "techniques": [
+            "frame-narrative"
+          ],
+          "characters": [
+            "underground-man"
+          ],
+          "source": "Garnett translation, closing note",
+          "cloze": [
+            "paradoxalist",
+            "refrain"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "First published",
+          "value": "1864",
+          "note": "In Epokha, the journal Dostoevsky ran with his brother Mikhail: Part I in the double first issue, which came out at the end of March, and Part II in April."
+        },
+        {
+          "label": "Cut by the censor",
+          "value": "Part I, chapter X",
+          "note": "Dostoevsky complained to his brother that the censors had let his mockery through and struck out the passages where he drew from it the need for faith and Christ."
+        },
+        {
+          "label": "The narrator",
+          "value": "Forty, unnamed",
+          "note": "A collegiate assessor who retired from the service when a distant relation left him six thousand roubles."
+        },
+        {
+          "label": "Two parts",
+          "value": "Argument, then story",
+          "note": "Underground, written at forty, and À Propos of the Wet Snow, about his life at twenty-four."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "A reply to Chernyshevsky",
+          "summary": "Part I is a direct polemic against the rational egoism of the radicals of the 1860s, above all Chernyshevsky’s What Is to Be Done?, with its crystal palace and its promise that enlightened self-interest will make people good. The narrator’s freedom, caprice and ingratitude are Dostoevsky’s objections to a society designed on paper.",
+          "counter": "The narrator is no spokesman. Dostoevsky’s own footnote makes him a product of the society he attacks, and Part II shows his freedom as spite, cruelty and paralysis. The censored chapter suggests the positive answer Dostoevsky wanted was faith, which the published text does not give."
+        },
+        {
+          "position": "The first existentialist hero",
+          "summary": "From Nietzsche’s excitement in 1887 to Kaufmann’s anthology of 1956, many readers have seen in the narrator the modern individual: alone, self-conscious, refusing every system, choosing his own freedom at any cost. On this reading Part I is a manifesto and the underground a condition of modern life.",
+          "counter": "The book does not celebrate the condition it describes. The narrator himself curses the underground and says he wants something different which he cannot find, and the only person who acts freely and generously is Liza."
+        },
+        {
+          "position": "Liza’s moral victory",
+          "summary": "Russian critics have often read Part II as the book’s answer to Part I. Liza, the living life the narrator keeps talking about, understands his unhappiness, loves him and refuses his money, and in that refusal the anti-hero is judged. The structure, argument first and story second, is designed to show the theory failing a real person.",
+          "counter": "Her victory is uncertain: she disappears into the snow, the narrator never sees her again, and he goes on writing. Some readers find her too idealised, a figure from Nekrasov’s poem that the book set out to overturn."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "Is the Underground Man right about human nature?",
+          "focus": "Reason, freedom and the argument of Part I",
+          "plan": [
+            "Set out the position he attacks: enlightened self-interest, tables of logarithms, the palace of crystal.",
+            "Present his counter-argument: the most advantageous advantage, the piano-key, twice two makes five.",
+            "Test it against Part II: what does free choice look like in his own conduct with the officer, the schoolfellows and Liza?",
+            "Consider Liza as a different kind of freedom, one that acts for another person.",
+            "Conclude on how far the book endorses him, using the footnote, the editor’s note and the curse on the underground."
+          ]
+        },
+        {
+          "question": "How are the two parts of Notes from Underground connected?",
+          "focus": "Structure, time and narration",
+          "plan": [
+            "Describe the shape: eleven chapters of argument at forty, ten of story at twenty-four.",
+            "Show how Part II illustrates Part I: consciousness and inertia in the billiard room, spite at the dinner, the pleasure of humiliation.",
+            "Trace the wet snow and the Nekrasov epigraph as links between them.",
+            "Consider Dostoevsky’s own explanation to his brother: chatter resolved in a catastrophe, like a transition in music.",
+            "Conclude on why the ideas come before the life that produced them."
+          ]
+        },
+        {
+          "question": "What does Liza represent, and why does the narrator treat her as he does?",
+          "focus": "Love, power and the ending",
+          "plan": [
+            "Begin in the dark: his questions, her curt answers, and why he chooses to move her.",
+            "Analyse the speech and his admission that it was the exercise of power that attracted him most.",
+            "Look at the student’s letter and at her visit: what she understands that he does not.",
+            "Discuss the five-rouble note and her answer to it.",
+            "Weigh the claim that she is the book’s moral centre against the objection that she is idealised."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Why does the narrator begin by calling himself spiteful and then say that he was lying?",
+        "Is twice two makes five a serious argument or a joke?",
+        "Why does being moved aside without being noticed hurt him more than a blow would?",
+        "Why does he invite himself to a dinner with people he hates?",
+        "What does Liza understand about him that he does not understand about himself?",
+        "The editor says the notes go on. Why stop the book where it stops?"
+      ],
+      "timeline": [
+        {
+          "year": 1821,
+          "label": "Fyodor Dostoevsky is born in Moscow",
+          "detail": "The son of a doctor at the Mariinsky Hospital for the poor.",
+          "kind": "author"
+        },
+        {
+          "year": 1845,
+          "label": "Nekrasov’s poem When from dark error’s subjugation",
+          "detail": "A poem about a fallen woman redeemed by a man’s words. Part II takes it as an epigraph and quotes its last lines again, when Liza arrives at the narrator’s door.",
+          "kind": "context"
+        },
+        {
+          "year": 1849,
+          "label": "Arrest, mock execution and Siberia",
+          "detail": "Dostoevsky was arrested with the Petrashevsky circle, reprieved at the place of execution in December, and sent to hard labour.",
+          "kind": "author"
+        },
+        {
+          "year": 1851,
+          "label": "The Crystal Palace is built in Hyde Park",
+          "detail": "Joseph Paxton’s iron and glass hall for the Great Exhibition; it was later moved to Sydenham in south London.",
+          "kind": "context"
+        },
+        {
+          "year": 1862,
+          "label": "Dostoevsky visits London",
+          "detail": "On his first journey to Western Europe he saw the Crystal Palace and the International Exhibition, and wrote about them in the chapter called Baal in Winter Notes on Summer Impressions (1863).",
+          "kind": "author"
+        },
+        {
+          "year": 1863,
+          "label": "Chernyshevsky’s What Is to Be Done?",
+          "detail": "Written in prison and published in Sovremennik: a novel of rational egoism in which the heroine’s fourth dream shows the socialist future in a palace of iron and glass.",
+          "kind": "context"
+        },
+        {
+          "year": 1864,
+          "label": "Notes from Underground in Epokha",
+          "detail": "Part I in the double first issue, which appeared at the end of March, and Part II in the April issue. The censor cut the passages in Part I, chapter X, where Dostoevsky drew the need for faith and Christ.",
+          "kind": "work"
+        },
+        {
+          "year": 1864,
+          "label": "Two deaths",
+          "detail": "Dostoevsky’s wife Maria died of consumption in April, in the months he was writing the book, and his brother Mikhail in July.",
+          "kind": "author"
+        },
+        {
+          "year": 1866,
+          "label": "Crime and Punishment",
+          "detail": "Raskolnikov’s theory and its collapse take up many questions the underground man had raised.",
+          "kind": "author"
+        },
+        {
+          "year": 1886,
+          "label": "L’Esprit souterrain",
+          "detail": "A French adaptation by Ely Halpérine-Kaminsky and Charles Morice, which joined Dostoevsky’s The Landlady to the second part of Notes from Underground.",
+          "kind": "reception"
+        },
+        {
+          "year": 1887,
+          "label": "Nietzsche finds the book in Nice",
+          "detail": "Picking up L’Esprit souterrain by chance in a bookshop, he wrote to Franz Overbeck in February that he had felt an immediate kinship with its author.",
+          "kind": "reception"
+        },
+        {
+          "year": 1918,
+          "label": "Constance Garnett’s translation",
+          "detail": "Printed after White Nights in the tenth volume of her Novels of Fyodor Dostoevsky.",
+          "kind": "reception"
+        },
+        {
+          "year": 1956,
+          "label": "Kaufmann’s Existentialism from Dostoevsky to Sartre",
+          "detail": "Walter Kaufmann’s anthology began its history of existentialism with Notes from Underground.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Nevsky Prospect, St Petersburg",
+          "lat": 59.9343,
+          "lon": 30.3351,
+          "note": "Where the narrator walks on holidays at four o’clock, stepping aside for everybody, until he collides with the officer."
+        },
+        {
+          "name": "Sennaya Square (the Haymarket), St Petersburg",
+          "lat": 59.9267,
+          "lon": 30.3176,
+          "note": "The basements where he tells Liza she will end up, and where he says he saw a coffin carried out."
+        },
+        {
+          "name": "Volkovo Cemetery, St Petersburg",
+          "lat": 59.9019,
+          "lon": 30.3589,
+          "note": "The waterlogged cemetery he describes to Liza, though he admits he had never been there."
+        },
+        {
+          "name": "Five Corners, St Petersburg",
+          "lat": 59.927,
+          "lon": 30.344,
+          "note": "Where Anton Antonitch lives on the fourth floor and receives on Tuesdays."
+        },
+        {
+          "name": "Yusupov Garden, St Petersburg",
+          "lat": 59.923,
+          "lon": 30.31,
+          "note": "One of the crowded evening streets and gardens he walks through, restless, before Liza comes."
+        },
+        {
+          "name": "Crystal Palace, Sydenham, London",
+          "lat": 51.4226,
+          "lon": -0.0753,
+          "note": "The rebuilt glass palace Dostoevsky saw in 1862, model for the palace of crystal in Part I."
+        },
+        {
+          "name": "Riga",
+          "lat": 56.9496,
+          "lon": 24.1052,
+          "note": "Liza’s home town, where the student who writes to her knew her as a child."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/white-nights/",
+          "why": "Garnett printed them in the same volume: an earlier and gentler Petersburg dreamer, who blesses the young woman the underground man humiliates."
+        },
+        {
+          "href": "/books/the-brothers-karamazov/",
+          "why": "Dostoevsky’s last novel takes up the argument again in Ivan Karamazov and the Grand Inquisitor, and gives the answer the censor cut here."
+        },
+        {
+          "href": "/books/the-overcoat/",
+          "why": "The Gogol story behind the downtrodden clerks of Russian fiction; the underground man quotes Gogol’s Lieutenant Pirogov and his madman who thought he was King of Spain."
+        },
+        {
+          "href": "/books/the-metamorphosis/",
+          "why": "The narrator says he tried many times to become an insect and could not; Kafka’s clerk wakes up as one."
+        },
+        {
+          "href": "/books/hamlet/",
+          "why": "The first great hero of too much consciousness, whom Russian writers of the 1850s and 1860s kept rewriting as the superfluous man."
         }
       ],
       "videos": []
@@ -132391,9 +133908,9 @@
       "setting": "St Petersburg in the season of the white nights: a canal embankment and a bench, the dreamer’s green-walled room and the grandmother’s little wooden house",
       "written": "1848",
       "firstPublished": 1848,
-      "readingTime": 65,
+      "readingTime": 75,
       "difficulty": 2,
-      "lengthNote": "Four nights and a morning, about 17,000 words; the second night gives way to Nastenka’s own story",
+      "lengthNote": "Four nights and a morning, about 20,000 words in Garnett’s English; the second night gives way to Nastenka’s own story",
       "openingLine": "It was a wonderful night, such a night as is only possible when we are young, dear reader.",
       "summary": "A lonely young man who has lived in Petersburg for eight years without making a friend walks home one night along a canal and finds a girl crying at the railing. Over four nights he tells Nastenka what a dreamer is, she tells him about the lodger who promised to come back for her in a year, and he delivers her letter and falls in love with her. On the fourth night she agrees to marry him, and a minute later the lodger walks past. Dostoevsky called it a sentimental novel. It is a love story, and a close portrait of a man who has lived almost entirely on daydreams.",
       "referenceStyle": "the story’s own divisions: First Night, Second Night, Nastenka’s History, Third Night, Fourth Night and Morning",
