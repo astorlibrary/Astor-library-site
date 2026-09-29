@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 102,
-    "quotations": 2335,
-    "characters": 934,
-    "themes": 245,
-    "techniques": 248,
-    "timelineEvents": 1179,
-    "places": 583
+    "books": 103,
+    "quotations": 2370,
+    "characters": 947,
+    "themes": 247,
+    "techniques": 249,
+    "timelineEvents": 1195,
+    "places": 589
   },
   "books": [
     {
@@ -28610,7 +28610,7 @@
         {
           "id": "women",
           "name": "Women, desire and protection",
-          "canonicalName": "Women, desire and protection",
+          "canonicalName": "Women",
           "summary": "The novel separates its two women and treats them very differently. Lucy’s appetite is punished in a tomb; Mina is useful and is therefore shielded from the work, which is exactly how she is reached. The men’s protectiveness is presented as chivalry and shown, repeatedly, to be the tactical error that costs most.",
           "development": "Lucy’s question about marrying three men, the three women in the castle, and the decision in Chapter XVIII to keep Mina out of the council."
         },
@@ -36302,6 +36302,1870 @@
           "source": "National Theatre"
         }
       ]
+    },
+    {
+      "slug": "heart-of-darkness",
+      "title": "Heart of Darkness",
+      "author": "Joseph Conrad",
+      "href": "/books/heart-of-darkness/",
+      "studyHref": "",
+      "playHref": "/play/?book=heart-of-darkness",
+      "form": "novella",
+      "genre": "Modernist novella",
+      "period": "Modern Classics",
+      "setting": "The Thames at dusk, aboard the yawl Nellie; in Marlow’s tale, an unnamed European city and an unnamed African river, followed upstream to the Inner Station",
+      "written": "1898–1899",
+      "firstPublished": 1899,
+      "readingTime": 140,
+      "difficulty": 4,
+      "lengthNote": "Three parts, about 39,000 words; almost all of it is Marlow’s tale, told aloud one evening on the Thames and reported by one of his listeners",
+      "openingLine": "The Nellie, a cruising yawl, swung to her anchor without a flutter of the sails, and was at rest.",
+      "summary": "Waiting for the tide on a yawl in the Thames estuary, the seaman Marlow tells four friends how he once got command of a river steamer for a Continental trading company in Africa. He finds chained labourers, a grove where sick workers are left to die, agents who talk of nothing but ivory, and a steamer sunk at the bottom of the river. Everyone speaks of Mr Kurtz, the chief of the Inner Station, who sends down more ivory than all the rest together. After months of repairs and a slow journey upstream, an attack from the bank and the death of his helmsman, Marlow finds Kurtz dying in a station ringed with heads on stakes. He brings him away, hears his last words, and, back in Europe, lies about them to the woman Kurtz was to marry.",
+      "referenceStyle": "part (I, II, III), as the 1902 text divides the story",
+      "sourceText": {
+        "label": "Youth: A Narrative, and Two Other Stories (Edinburgh and London: William Blackwood and Sons, 1902), Internet Archive scan; with Project Gutenberg eBook 526",
+        "url": [
+          "https://archive.org/download/youthnarrativetw00conrrich/youthnarrativetw00conrrich_djvu.txt",
+          "https://www.gutenberg.org/cache/epub/526/pg526.txt"
+        ],
+        "note": "The 1902 book text, which this edition prints, with its British spelling; quotations follow the first-edition scan. The Gutenberg transcription follows an American printing and serves only as a check on wording where the scan’s optical reading breaks a word. Gutenberg eBook 219 departs from the 1902 wording in places and is not used."
+      },
+      "structure": [
+        {
+          "id": "the-nellie",
+          "label": "Part I, opening",
+          "title": "On the Thames",
+          "summary": "Five old friends wait on the yawl Nellie for the tide to turn below Gravesend. As the sun sets over London, Marlow says that this too has been one of the dark places of the earth, and imagines a Roman commander sent up the Thames nineteen hundred years ago. Conquest, he says, is robbery with violence, redeemed only by the idea behind it. Then he begins the story of the time he turned fresh-water sailor.",
+          "scenes": [
+            {
+              "ref": "Part I",
+              "title": "The yawl Nellie",
+              "summary": "The Director of Companies, the Lawyer, the Accountant, the first narrator, and Marlow sitting like an idol."
+            },
+            {
+              "ref": "Part I",
+              "title": "The Romans",
+              "summary": "A trireme on the Thames, the fascination of the abomination, and the idea that redeems conquest."
+            }
+          ]
+        },
+        {
+          "id": "the-company",
+          "label": "Part I",
+          "title": "The Company",
+          "summary": "As a boy Marlow put his finger on the blank spaces of the map. Now the blankest has become a place of darkness, with a river like a snake. His aunt gets him the command of a steamer whose last captain was killed in a quarrel over two hens. In a city like a whited sepulchre he signs his contract, passes two women knitting black wool, and has his skull measured by the Company doctor. A French steamer carries him down the coast, past a man-of-war firing into the continent.",
+          "scenes": [
+            {
+              "ref": "Part I",
+              "title": "The map and the aunt",
+              "summary": "A blank space turned dark, Fresleven and the hens, and a lady who talks of weaning the ignorant millions."
+            },
+            {
+              "ref": "Part I",
+              "title": "The sepulchral city",
+              "summary": "The knitters guarding the door of Darkness, forty-five seconds with the great man, and a doctor with calipers."
+            },
+            {
+              "ref": "Part I",
+              "title": "Along the coast",
+              "summary": "Soldiers and custom-house clerks landed in the surf, and a warship shelling the bush."
+            }
+          ]
+        },
+        {
+          "id": "the-stations",
+          "label": "Part I",
+          "title": "The Company’s stations",
+          "summary": "At the Company’s station Marlow sees a chain gang, pointless blasting, and a grove where worn-out labourers have crawled away to die. The immaculate chief accountant first mentions Mr Kurtz. After a two-hundred-mile march Marlow reaches the Central Station, where the manager has wrecked his steamer. For months he waits for rivets that never come, while the agents intrigue for posts where ivory is to be had, the brickmaker pumps him for news of Europe, and the Eldorado Exploring Expedition passes through on its way to plunder.",
+          "scenes": [
+            {
+              "ref": "Part I",
+              "title": "The grove of death",
+              "summary": "A chain gang, a hole with no purpose, and a boy with a bit of white worsted round his neck."
+            },
+            {
+              "ref": "Part I",
+              "title": "The chief accountant",
+              "summary": "Starched collars, correct entries, and the first mention of Mr Kurtz."
+            },
+            {
+              "ref": "Part I",
+              "title": "The Central Station",
+              "summary": "A sunken steamer, a manager who is never ill, a brickmaker with no bricks, and no rivets."
+            }
+          ]
+        },
+        {
+          "id": "upriver",
+          "label": "Part II",
+          "title": "Up the river",
+          "summary": "Lying on his steamer, Marlow overhears the manager and his uncle hoping the climate will do away with Kurtz. The journey upriver takes two months, with a crew of cannibals and a few pilgrims with their staves. Fifty miles below the Inner Station Marlow finds a woodpile, a warning and an old book on seamanship annotated in what looks like cipher. After a night of fog he is attacked from the bank; his helmsman is killed by a spear, and Marlow throws his bloodied shoes overboard. Here he breaks off to tell his listeners what he later learned of Kurtz: the ivory, the Intended, and the report that ends Exterminate all the brutes!",
+          "scenes": [
+            {
+              "ref": "Part II",
+              "title": "The uncle and the nephew",
+              "summary": "A conversation overheard, and a short arm flung out towards the forest."
+            },
+            {
+              "ref": "Part II",
+              "title": "Towson’s Inquiry",
+              "summary": "The woodpile, the warning, and a book that feels like something unmistakably real."
+            },
+            {
+              "ref": "Part II",
+              "title": "The attack",
+              "summary": "Fog, restraint among the starving crew, sticks that are arrows, and the helmsman’s last look."
+            },
+            {
+              "ref": "Part II",
+              "title": "A voice",
+              "summary": "The report for the International Society for the Suppression of Savage Customs and its postscript."
+            }
+          ]
+        },
+        {
+          "id": "inner-station",
+          "label": "Parts II–III",
+          "title": "The Inner Station",
+          "summary": "A young Russian in patched clothes greets the steamer and talks of Kurtz as a man who has enlarged his mind. Through his glasses Marlow sees that the knobs on the fence posts are human heads. Kurtz is carried down on a stretcher, and a magnificent woman walks along the shore and raises her arms to the sky. The manager calls Kurtz’s method unsound; the Russian confesses that Kurtz ordered the attack. That night Kurtz crawls off towards the fires in the forest, and Marlow goes after him alone and brings him back.",
+          "scenes": [
+            {
+              "ref": "Part II",
+              "title": "The harlequin",
+              "summary": "A Russian in motley, Towson’s book returned, and a man who must be listened to."
+            },
+            {
+              "ref": "Part III",
+              "title": "Heads on stakes",
+              "summary": "Round knobs that are symbolic, a man hollow at the core, and rebels."
+            },
+            {
+              "ref": "Part III",
+              "title": "The stretcher",
+              "summary": "Kurtz carried down, the woman on the shore, and a choice of nightmares."
+            },
+            {
+              "ref": "Part III",
+              "title": "In the forest",
+              "summary": "A trail through wet grass, a horned sorcerer by the fire, and a soul that has gone mad."
+            }
+          ]
+        },
+        {
+          "id": "downriver",
+          "label": "Part III",
+          "title": "Downriver",
+          "summary": "The steamer leaves at noon while the crowd on the shore calls after Kurtz; Marlow scatters them with the steam-whistle, though the pilgrims fire into the bush anyway. Kurtz talks of his Intended, his station and his career, gives Marlow a packet of papers and a photograph, and one night, lying in the dark waiting for death, cries out twice, The horror! The horror! The manager’s boy announces his death at dinner. Marlow falls ill and nearly dies, and concludes that Kurtz’s cry was a moral victory.",
+          "scenes": [
+            {
+              "ref": "Part III",
+              "title": "Departure",
+              "summary": "Three men painted red, a woman stretching out her arms, and the steam-whistle."
+            },
+            {
+              "ref": "Part III",
+              "title": "The last words",
+              "summary": "Papers and a photograph, a candle, and a cry that was no more than a breath."
+            },
+            {
+              "ref": "Part III",
+              "title": "Wrestling with death",
+              "summary": "An impalpable greyness, and why Kurtz was a remarkable man."
+            }
+          ]
+        },
+        {
+          "id": "the-intended",
+          "label": "Part III, ending",
+          "title": "The sepulchral city",
+          "summary": "Back in Europe, Marlow resents the people in the streets. A Company man demands Kurtz’s papers, a cousin says Kurtz was a great musician, and a journalist says he would have led an extreme party. More than a year after the death, Marlow visits Kurtz’s Intended, still in mourning, and when she begs for his last words he tells her it was her name. On the Nellie the tide has turned, and the waterway seems to lead into the heart of an immense darkness.",
+          "scenes": [
+            {
+              "ref": "Part III",
+              "title": "Papers",
+              "summary": "The report without its postscript, a cousin, a journalist, and a portrait."
+            },
+            {
+              "ref": "Part III",
+              "title": "The Intended",
+              "summary": "A drawing-room at dusk, a woman in black, and a lie."
+            },
+            {
+              "ref": "Part III",
+              "title": "The first of the ebb",
+              "summary": "Marlow in the pose of a meditating Buddha, and a black bank of clouds."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "marlow",
+          "name": "Marlow",
+          "role": "A seaman, telling the story aboard the Nellie",
+          "summary": "Charlie Marlow is an English merchant seaman, restless between voyages, who gets command of a river steamer through an aunt’s connections. He is ironic, practical and full of contempt for the agents he meets, and he holds on to work, rivets and the surface-truth of steering as a defence against what he sees. He says he hates lies, yet he lets the brickmaker believe he has influence and ends by lying to Kurtz’s Intended. Telling the story later, he admits that it is not very clear to him even now.",
+          "clue": "An unemployed sailor who gets a command through his aunt, spends months raising a sunken steamer, and throws his shoes into a river.",
+          "firstAppearance": "Part I",
+          "traits": [
+            "ironic",
+            "practical",
+            "loyal",
+            "troubled"
+          ],
+          "relationships": [
+            {
+              "to": "kurtz",
+              "label": "stays loyal to",
+              "kind": "doubling",
+              "stages": [
+                "upriver",
+                "inner-station",
+                "downriver",
+                "the-intended"
+              ]
+            },
+            {
+              "to": "manager",
+              "label": "distrusts",
+              "kind": "rival",
+              "stages": [
+                "the-stations",
+                "upriver",
+                "inner-station",
+                "downriver"
+              ]
+            },
+            {
+              "to": "aunt",
+              "label": "nephew of",
+              "kind": "family",
+              "stages": [
+                "the-company",
+                "the-intended"
+              ]
+            },
+            {
+              "to": "helmsman",
+              "label": "captain of",
+              "kind": "service",
+              "stages": [
+                "upriver"
+              ]
+            },
+            {
+              "to": "intended",
+              "label": "lies to",
+              "kind": "friendship",
+              "stages": [
+                "the-intended"
+              ]
+            },
+            {
+              "to": "narrator",
+              "label": "tells the story to",
+              "kind": "friendship",
+              "stages": [
+                "the-nellie",
+                "the-intended"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kurtz",
+          "name": "Kurtz",
+          "role": "Chief of the Inner Station, the Company’s most successful agent",
+          "summary": "Kurtz went out with moral ideas and a gift for eloquence: a painter, a writer for the papers, a musician, according to whom one asks, and the author of a report on the suppression of savage customs. His mother was half English and his father half French, and he is a man to whom all Europe contributed. At the Inner Station he raids the country for ivory, is worshipped by the people of the lake, and decorates his fence with heads. Dying, he talks of his Intended and his career, and at the end pronounces a judgement: The horror! The horror!",
+          "clue": "His report for a society devoted to suppressing savage customs runs to seventeen pages and ends with a scrawled postscript.",
+          "firstAppearance": "Part I (by name); Part III (in person)",
+          "traits": [
+            "eloquent",
+            "ambitious",
+            "hollow",
+            "ruthless"
+          ],
+          "relationships": [
+            {
+              "to": "intended",
+              "label": "engaged to",
+              "kind": "love",
+              "stages": [
+                "upriver",
+                "downriver",
+                "the-intended"
+              ]
+            },
+            {
+              "to": "african-woman",
+              "label": "companion of",
+              "kind": "love",
+              "stages": [
+                "inner-station",
+                "downriver"
+              ]
+            },
+            {
+              "to": "russian",
+              "label": "worshipped by",
+              "kind": "mentor",
+              "stages": [
+                "inner-station"
+              ]
+            },
+            {
+              "to": "manager",
+              "label": "resented by",
+              "kind": "rival",
+              "stages": [
+                "the-stations",
+                "upriver",
+                "inner-station",
+                "downriver"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "manager",
+          "name": "The manager",
+          "role": "General manager of the Central Station",
+          "summary": "Commonplace in complexion, feature and voice, he has risen because he is never ill. He inspires uneasiness, seals his sentences with a smile that gives nothing away, and says that men who come out should have no entrails. Marlow’s steamer was sunk on a trip he ordered, perhaps on purpose, and he delays the relief of the Inner Station, and hopes with his uncle that the climate will remove Kurtz. When Kurtz is found, he objects only that his method is unsound.",
+          "clue": "His one distinction is triumphant health, and he had a round table built so that nobody could quarrel about precedence.",
+          "firstAppearance": "Part I",
+          "traits": [
+            "cold",
+            "cautious",
+            "mediocre",
+            "scheming"
+          ],
+          "relationships": [
+            {
+              "to": "kurtz",
+              "label": "schemes against",
+              "kind": "rival",
+              "stages": [
+                "the-stations",
+                "upriver",
+                "inner-station",
+                "downriver"
+              ]
+            },
+            {
+              "to": "brickmaker",
+              "label": "served by",
+              "kind": "service",
+              "stages": [
+                "the-stations"
+              ]
+            },
+            {
+              "to": "boy",
+              "label": "master of",
+              "kind": "service",
+              "stages": [
+                "the-stations",
+                "downriver"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "brickmaker",
+          "name": "The brickmaker",
+          "role": "An agent at the Central Station, said to be the manager’s spy",
+          "summary": "Young, gentlemanly and stand-offish, with a forked beard and mica eyes, he is supposed to make bricks but has made none in a year. He keeps a whole candle to himself, pumps Marlow for news of his connections in Europe, and assumes Marlow belongs to the new gang of virtue that sent Kurtz. Marlow calls him a papier-mâché Mephistopheles, with nothing inside but a little loose dirt.",
+          "clue": "He has waited more than a year for materials that never come, and he has a painting by Kurtz on his wall.",
+          "firstAppearance": "Part I",
+          "traits": [
+            "envious",
+            "prying",
+            "idle"
+          ],
+          "relationships": [
+            {
+              "to": "marlow",
+              "label": "pumps",
+              "kind": "rival",
+              "stages": [
+                "the-stations"
+              ]
+            },
+            {
+              "to": "kurtz",
+              "label": "envies",
+              "kind": "rival",
+              "stages": [
+                "the-stations"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "accountant",
+          "name": "The chief accountant",
+          "role": "The Company’s book-keeper at its coastal station",
+          "summary": "In starched collars, white cuffs and varnished boots, he keeps his books in apple-pie order a few yards from the grove where labourers lie dying. Marlow respects his backbone, the achievement of looking correct in the middle of chaos. It is from him that Marlow first hears the name of Kurtz, whom he predicts will be a somebody in the Administration.",
+          "clue": "He looks like a hairdresser’s dummy, has taught a local woman to starch his linen, and complains that a sick man’s groans distract him.",
+          "firstAppearance": "Part I",
+          "traits": [
+            "fastidious",
+            "diligent",
+            "callous"
+          ],
+          "relationships": [
+            {
+              "to": "kurtz",
+              "label": "admires",
+              "kind": "ally",
+              "stages": [
+                "the-stations"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "helmsman",
+          "name": "The helmsman",
+          "role": "Marlow’s steersman on the river",
+          "summary": "A man from the coast, trained by Marlow’s predecessor, who wears brass earrings and a blue wrapper and steers with a swagger while he is watched. When the steamer is attacked he drops the wheel, throws open the shutter and fires into the bush, and a spear kills him. His last look at Marlow, like a claim of distant kinship, stays in Marlow’s memory to the day he tells the story.",
+          "clue": "He thought all the world of himself, steered with a swagger when watched, and was killed by a spear thrown through a shutter he had opened.",
+          "firstAppearance": "Part II",
+          "traits": [
+            "proud",
+            "impulsive"
+          ],
+          "relationships": [
+            {
+              "to": "marlow",
+              "label": "steers for",
+              "kind": "service",
+              "stages": [
+                "upriver"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "russian",
+          "name": "The Russian",
+          "role": "A young wanderer in patched clothes, Kurtz’s disciple",
+          "summary": "The son of an arch-priest from Tambov, twenty-five, who ran away to sea and has wandered alone on the river for two years. Dressed in patches like a harlequin, he is all glamour and audacity, and his devotion to Kurtz is total: Kurtz has enlarged his mind, talked to him all night of everything, and once threatened to shoot him for his ivory. He leaves the Inner Station at night with Marlow’s cartridges, an old pair of shoes and Towson’s book.",
+          "clue": "His clothes are patched in blue, red and yellow, and the notes in his sailor’s manual are in his own language, not in cipher.",
+          "firstAppearance": "Part II",
+          "traits": [
+            "devoted",
+            "naïve",
+            "brave",
+            "talkative"
+          ],
+          "relationships": [
+            {
+              "to": "kurtz",
+              "label": "disciple of",
+              "kind": "mentor",
+              "stages": [
+                "inner-station"
+              ]
+            },
+            {
+              "to": "marlow",
+              "label": "brother sailor to",
+              "kind": "friendship",
+              "stages": [
+                "inner-station"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "african-woman",
+          "name": "The African woman",
+          "role": "A woman at the Inner Station, apparently Kurtz’s companion",
+          "summary": "She walks along the shore in fringed cloths, brass leggings and glass beads worth several elephant tusks, faces the steamer, and raises her arms to the sky. The Russian says she argued with Kurtz and that he risked his life to keep her out of the house. As the steamer leaves she stretches her arms after it. She never speaks a word Marlow can understand, and Marlow sees her again in the Intended’s gesture.",
+          "clue": "Hung with brass and glass beads, she faces the steamer and throws her arms up rigid above her head.",
+          "firstAppearance": "Part III",
+          "traits": [
+            "proud",
+            "grieving",
+            "silent"
+          ],
+          "relationships": [
+            {
+              "to": "kurtz",
+              "label": "companion of",
+              "kind": "love",
+              "stages": [
+                "inner-station",
+                "downriver"
+              ]
+            },
+            {
+              "to": "intended",
+              "label": "mirrored by",
+              "kind": "doubling",
+              "stages": [
+                "the-intended"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "intended",
+          "name": "The Intended",
+          "role": "Kurtz’s fiancée in Europe",
+          "summary": "A fair-haired woman, no longer girlish, whose family disapproved of the engagement because Kurtz was poor. More than a year after his death she is still in black, sure that she knew him best and that his goodness shone in every act. She asks Marlow for his last words so that she will have something to live with, and Marlow gives her a lie she can keep.",
+          "clue": "More than a year after the death she is still in black, and she asks the visitor to repeat the last words he heard.",
+          "firstAppearance": "Part II (mentioned); Part III",
+          "traits": [
+            "faithful",
+            "grieving",
+            "trusting"
+          ],
+          "relationships": [
+            {
+              "to": "kurtz",
+              "label": "engaged to",
+              "kind": "love",
+              "stages": [
+                "upriver",
+                "downriver",
+                "the-intended"
+              ]
+            },
+            {
+              "to": "marlow",
+              "label": "deceived by",
+              "kind": "friendship",
+              "stages": [
+                "the-intended"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aunt",
+          "name": "Marlow’s aunt",
+          "role": "His well-connected relation on the Continent",
+          "summary": "A dear enthusiastic soul who knows the wife of a high personage in the Administration and gets Marlow his appointment. She believes the Company’s talk of civilising mission and speaks of weaning the ignorant millions from their horrid ways, until Marlow ventures that the Company is run for profit. After his return she tries to nurse up his strength.",
+          "clue": "She gives the traveller the last decent cup of tea he will have for many days, and tells him to wear flannel.",
+          "firstAppearance": "Part I",
+          "traits": [
+            "enthusiastic",
+            "idealistic",
+            "kind"
+          ],
+          "relationships": [
+            {
+              "to": "marlow",
+              "label": "aunt of",
+              "kind": "family",
+              "stages": [
+                "the-company",
+                "the-intended"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "doctor",
+          "name": "The Company doctor",
+          "role": "The doctor who examines men going out",
+          "summary": "An unshaven little man in slippers who measures the skulls of those going out, in the interests of science, and asks whether there is madness in the family. He never sees them come back, and in any case, he says, the changes take place inside. Marlow remembers him on the march when his companion faints.",
+          "clue": "He measures the heads of men going out with calipers and advises them, above all, to keep calm.",
+          "firstAppearance": "Part I",
+          "traits": [
+            "eccentric",
+            "detached"
+          ],
+          "relationships": [
+            {
+              "to": "marlow",
+              "label": "examines",
+              "kind": "service",
+              "stages": [
+                "the-company"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "narrator",
+          "name": "The first narrator",
+          "role": "An unnamed listener aboard the Nellie",
+          "summary": "One of four friends of the Director of Companies, all men bound by the sea, who hears Marlow’s story on the Nellie and reports it. He opens with the Thames as the river of Drake and Franklin and the germs of empires, stays awake while the others may be asleep, and ends by seeing the same river lead into the heart of an immense darkness.",
+          "clue": "He stays awake on the yawl, listening for the word that would give him the clue to his faint uneasiness.",
+          "firstAppearance": "Part I",
+          "traits": [
+            "attentive",
+            "reflective"
+          ],
+          "relationships": [
+            {
+              "to": "marlow",
+              "label": "listens to",
+              "kind": "friendship",
+              "stages": [
+                "the-nellie",
+                "the-intended"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "boy",
+          "name": "The manager’s boy",
+          "role": "The manager’s servant",
+          "summary": "An overfed young man from the coast whom the manager allows to treat the white agents with insolence. He announces Kurtz’s death at dinner, putting his head round the door, in a tone of scathing contempt.",
+          "clue": "An overfed young servant from the coast, he interrupts a dinner with one sentence of scathing contempt.",
+          "firstAppearance": "Part I",
+          "traits": [
+            "insolent"
+          ],
+          "relationships": [
+            {
+              "to": "manager",
+              "label": "servant of",
+              "kind": "service",
+              "stages": [
+                "the-stations",
+                "downriver"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "empire",
+          "name": "Empire and trade",
+          "canonicalName": "Empire and discovery",
+          "summary": "Conquest, Marlow says, is robbery with violence, redeemed only by the idea behind it, and the story shows the Company’s idea in practice: soldiers landed in the surf, a warship firing into a continent, men in chains, a grove of the dying, and agents who pray to ivory. The trade goes one way, rubbishy cottons and brass wire going in, a precious trickle of ivory coming out. The book is also compromised by empire: Marlow finds the red of the British Empire good to see, and his contempt is kept for the Continental company.",
+          "development": "Robbery with violence; the map’s red; firing into a continent; criminals; the grove of death; the word ivory; Exterminate all the brutes; unsound method."
+        },
+        {
+          "id": "civilisation",
+          "name": "Civilisation",
+          "canonicalName": "Civilisation",
+          "summary": "Conrad keeps putting pressure on the word. The Romans once found Britain one of the dark places of the earth; Kurtz wanted each station to be a centre for humanising, improving, instructing; the brickmaker calls him an emissary of pity, science and progress. Marlow sees the civilising mission as a pretence, and he suggests that civilisation is less a quality of people than a set of neighbours, butchers and policemen who keep them in line. Take those away, as Kurtz did, and nothing inside holds.",
+          "development": "Dark places of the earth; weaning the ignorant millions; the brickmaker’s gang of virtue; the butcher and the policeman; hollow at the core."
+        },
+        {
+          "id": "restraint",
+          "name": "Restraint",
+          "canonicalName": "Restraint",
+          "summary": "The starving cannibals in Marlow’s crew do not eat the five white men, and Marlow cannot account for their restraint. Kurtz, by contrast, lacked restraint in the gratification of his various lusts, and so did the helmsman who opened the shutter. What restrains a man, Marlow suggests, is either neighbours and police or something inside: work, a deliberate belief, attention to rivets and the surface-truth of steering.",
+          "development": "What saves us is efficiency; the chance to find yourself; Restraint! What possible restraint?; no restraint, just like Kurtz; heads on the stakes."
+        },
+        {
+          "id": "language",
+          "name": "Eloquence",
+          "canonicalName": "Language and naming",
+          "summary": "Kurtz presents himself to Marlow as a voice, and his gift of expression is the most exalted and the most contemptible thing about him. His report soars through seventeen pages of noble words and ends in a scrawl calling for extermination. Around him language breaks down: agents speak in fragments, Marlow cannot convey the dream-sensation of his story, and the most important words, The horror!, are the least explained.",
+          "development": "You don’t talk with that man, you listen to him; the report and its postscript; a voice! a voice!; the horror; his words will remain."
+        },
+        {
+          "id": "falsehood",
+          "name": "The lie",
+          "canonicalName": "The lie",
+          "summary": "Marlow says he hates a lie because it has a taint of death and a flavour of mortality, yet the story is framed by lies: the Company’s philanthropic pretence, his own silence when the brickmaker overrates his influence, and the final lie to the Intended. He tells her that Kurtz’s last word was her name because the truth would have been too dark altogether. Readers disagree whether this is mercy, cowardice or a last loyalty to the illusions of Europe.",
+          "development": "A flavour of mortality in lies; near enough to a lie; the report with its postscript torn off; the last word he pronounced was your name."
+        },
+        {
+          "id": "race",
+          "name": "Race",
+          "canonicalName": "Race",
+          "summary": "Like most Europeans of his day, Marlow uses the racial language of his time, and he describes Africans mainly as bodies, noise and shadows, with almost no speech of their own. Yet he also records what the Company did to them, admits a remote kinship with the people on the shore, and is moved by his helmsman’s dying look. How far the book examines the prejudices of its narrator, and how far it repeats them, is the central argument about it since Chinua Achebe’s lecture of 1975.",
+          "development": "Criminals and enemies; black shadows of disease and starvation; remote kinship; a claim of distant kinship; the woman on the shore; rebels."
+        },
+        {
+          "id": "women",
+          "name": "Women",
+          "canonicalName": "Women",
+          "summary": "Women, Marlow says, are out of touch with truth and must be kept out of it, in a beautiful world of their own. The women of the story are nonetheless placed at its thresholds: the two knitters guarding the door of Darkness, the aunt who believes the Company’s rhetoric, the proud woman on the shore, and the Intended in her dark drawing-room. The book ends on a woman’s belief, which Marlow protects with a lie.",
+          "development": "Out of touch with truth; knitting black wool; the woman on the shore; the Intended’s outstretched arms; your name."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "frame-narrative",
+          "name": "The listener on the Nellie",
+          "canonicalName": "Frame narrative",
+          "definition": "A story told inside another story, so that every account reaches the reader through somebody with an interest in it.",
+          "bookDefinition": "A story told inside another story, so that every account reaches the reader through somebody with an interest in it.",
+          "inThisBook": "An unnamed listener reports Marlow’s tale as it is told on the Thames at dusk, and his own images of the river begin and end the book. The frame sets the story in London, among a Director of Companies, a Lawyer and an Accountant, and lets the reader watch Marlow struggle to tell it."
+        },
+        {
+          "id": "light-dark",
+          "name": "Light and dark imagery",
+          "canonicalName": "Light and dark imagery",
+          "definition": "Light and darkness used as images, often with shifting or reversed values.",
+          "bookDefinition": "Light and darkness used as images, often with shifting or reversed values.",
+          "inThisBook": "Light and dark do not stay where the reader expects them. London broods under a mournful gloom; the Company’s city is a whited sepulchre; Kurtz is an ivory face in the dark; the Intended’s forehead holds the last light in the room while the darkness deepens round her. The title’s darkness belongs as much to Europe as to Africa."
+        },
+        {
+          "id": "irony",
+          "name": "Marlow’s irony",
+          "canonicalName": "Irony",
+          "definition": "Saying one thing in a form that invites the opposite judgement.",
+          "bookDefinition": "Saying one thing in a form that invites the opposite judgement.",
+          "inThisBook": "Marlow repeats the Company’s language in order to empty it: the noble cause, the jolly pioneers of progress, criminals, the outraged law, a permanent improvement. The irony is his defence against what he sees, and a way of making his listeners feel the gap between the words and the facts."
+        },
+        {
+          "id": "delayed-decoding",
+          "name": "Delayed decoding",
+          "canonicalName": "Delayed decoding",
+          "definition": "Presenting an impression before its cause is understood, so that the reader shares the moment of perception.",
+          "bookDefinition": "Presenting an impression before its cause is understood, so that the reader shares the moment of perception.",
+          "inThisBook": "Marlow gives things as he first saw them and explains them only afterwards: sticks, little sticks, flying about, which turn out to be arrows; round knobs on the fence posts, which are heads. The critic Ian Watt named the method delayed decoding. It places the reader inside Marlow’s confusion."
+        },
+        {
+          "id": "ellipsis",
+          "name": "The unspeakable",
+          "canonicalName": "Ellipsis",
+          "definition": "What the narrative declines to show, placed where the reader will notice the gap and fill it.",
+          "bookDefinition": "What the narrative declines to show, placed where the reader will notice the gap and fill it.",
+          "inThisBook": "Some of the worst things are withheld: the unspeakable rites offered up to Kurtz, the ceremonies used when approaching him, the content of The horror! Marlow’s adjectives (inscrutable, unspeakable, incomprehensible) point at what he will not describe. Some critics admire the method; others find it an evasion."
+        },
+        {
+          "id": "allusion",
+          "name": "Allusion",
+          "canonicalName": "Allusion",
+          "definition": "A reference to another text, story or belief that the reader is expected to recognise.",
+          "bookDefinition": "A reference to another text, story or belief that the reader is expected to recognise.",
+          "inThisBook": "Marlow’s allusions give his journey the shape of a descent to the underworld. The Company’s city is a whited sepulchre, Christ’s image for hypocrites in Matthew; the grove of death is the gloomy circle of some Inferno; the knitters recall the Fates, saluted by those about to die; the brickmaker is a papier-mâché Mephistopheles."
+        },
+        {
+          "id": "personification",
+          "name": "The wilderness personified",
+          "canonicalName": "Personification",
+          "definition": "Giving human qualities to something that is not human.",
+          "bookDefinition": "Giving human qualities to something that is not human.",
+          "inThisBook": "The wilderness watches, waits, whispers and takes vengeance. It pats Kurtz on the head, caresses him, loves him and seals his soul to its own. The personification lets Marlow blame the land for what the men did, a habit of thought many readers now question."
+        },
+        {
+          "id": "leitmotif",
+          "name": "The repeated sentence",
+          "canonicalName": "The repeated sentence",
+          "definition": "A phrase that returns across a work, gathering meaning each time.",
+          "bookDefinition": "A phrase that returns across a work, gathering meaning each time.",
+          "inThisBook": "The horror! The horror! is spoken twice and heard again in Europe, whispered by the dusk in the Intended’s drawing-room. Other phrases return the same way: a voice, restraint, the fantastic invasion, and heart of darkness itself, which comes back in the middle of the journey, on the way downstream and in the last sentence."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "Ivory and rivets",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative comes back to until it stands for the argument itself.",
+          "bookDefinition": "An object the narrative comes back to until it stands for the argument itself.",
+          "inThisBook": "Ivory is the object of every agent’s prayers and the colour of Kurtz’s bald head and dying face. Rivets, which never come, stand for honest work. Other objects carry the same weight: the knitters’ black wool, the painted woman with the torch, Towson’s book, the helmsman’s blood in Marlow’s shoes."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "dark-places",
+          "text": "And this also ... has been one of the dark places of the earth.",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-nellie",
+          "context": "Marlow’s first words, spoken as the sun sets over London and the lights come out on the Thames.",
+          "analysis": "Marlow opens by turning the darkness back on his listeners. London, the greatest town on earth, was once the frontier where Roman soldiers died like flies. Before the story reaches Africa, the book has suggested that darkness is a condition any place can be in, and that conquerors always see it in someone else’s country.",
+          "themes": [
+            "civilisation",
+            "empire"
+          ],
+          "techniques": [
+            "light-dark",
+            "frame-narrative"
+          ],
+          "characters": [
+            "marlow",
+            "narrator"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "dark",
+            "earth"
+          ]
+        },
+        {
+          "id": "kernel",
+          "text": "to him the meaning of an episode was not inside like a kernel but outside, enveloping the tale which brought it out only as a glow brings out a haze",
+          "speaker": "",
+          "reference": "Part I",
+          "stage": "the-nellie",
+          "context": "The first narrator explains how Marlow differs from ordinary seamen who spin yarns.",
+          "analysis": "Here the frame narrator warns us how to read what follows. Meaning will not be found at the centre of the story, as in a nut, but in the atmosphere around it, like a halo in mist. The image fits a book that withholds its central facts and leaves its readers arguing about the horror.",
+          "themes": [
+            "language"
+          ],
+          "techniques": [
+            "frame-narrative"
+          ],
+          "characters": [
+            "narrator",
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "kernel",
+            "haze"
+          ]
+        },
+        {
+          "id": "conquest",
+          "text": "The conquest of the earth, which mostly means the taking it away from those who have a different complexion or slightly flatter noses than ourselves, is not a pretty thing when you look into it too much.",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-nellie",
+          "context": "The Roman conquerors of Britain are on Marlow’s mind.",
+          "analysis": "This is the book’s plainest statement about empire, and it is blunt about race. Marlow sees that conquest depends on deciding that other people are different, and his understatement, not a pretty thing, lets the listeners draw the conclusion. The next sentence will try to save conquest by an idea.",
+          "themes": [
+            "empire",
+            "race"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "conquest",
+            "complexion"
+          ]
+        },
+        {
+          "id": "the-idea",
+          "text": "What redeems it is the idea only. An idea at the back of it; not a sentimental pretence but an idea; and an unselfish belief in the idea",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-nellie",
+          "context": "He goes on from the Romans, and then breaks off.",
+          "analysis": "Marlow defends conquest by the idea behind it, and his next words undo the defence: the idea is something you can set up, bow down before and offer a sacrifice to. That is the language of idolatry, and the story will show a man who is literally worshipped and an ideal of progress that ends in extermination. Marlow breaks off as if he has heard himself.",
+          "themes": [
+            "empire",
+            "civilisation"
+          ],
+          "techniques": [
+            "irony",
+            "allusion"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "redeems",
+            "unselfish"
+          ]
+        },
+        {
+          "id": "blank-space",
+          "text": "It had ceased to be a blank space of delightful mystery—a white patch for a boy to dream gloriously over. It had become a place of darkness.",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-company",
+          "context": "As a boy he loved the blank spaces on the map of Africa.",
+          "analysis": "Europeans called it blank, but the space on the map was never empty; it was only unknown to them. Now filled with names by explorers and traders, it has become dark in the moral sense. Conrad reverses the usual colour-coding: exploration has brought darkness to the place, and the white patch was the innocence of a boy’s map.",
+          "themes": [
+            "empire"
+          ],
+          "techniques": [
+            "light-dark"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "blank",
+            "darkness"
+          ]
+        },
+        {
+          "id": "whited-sepulchre",
+          "text": "In a very few hours I arrived in a city that always makes me think of a whited sepulchre.",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-company",
+          "context": "Within forty-eight hours of his appointment he crosses the Channel to sign the contract.",
+          "analysis": "Conrad never names the city, though he had signed on in Brussels. A whited sepulchre is Christ’s image in Matthew for hypocrites, clean outside and full of dead men’s bones within. The Company’s headquarters, all respectability and silence, is where the killing is planned and paid for.",
+          "themes": [
+            "empire",
+            "civilisation"
+          ],
+          "techniques": [
+            "allusion",
+            "light-dark"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "sepulchre",
+            "city"
+          ]
+        },
+        {
+          "id": "knitting-black-wool",
+          "text": "Often far away there I thought of these two, guarding the door of Darkness, knitting black wool as for a warm pall",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-company",
+          "context": "The two women in the Company’s outer office, one introducing, one watching.",
+          "analysis": "Two women at their knitting recall the Fates, who spin and cut the thread of life, and Marlow salutes them as gladiators saluted Caesar, as men about to die. They also work in an office. Conrad lets the mythic and the bureaucratic sit in the same room, so that an office becomes the door to an underworld.",
+          "themes": [
+            "women",
+            "empire"
+          ],
+          "techniques": [
+            "allusion",
+            "light-dark"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "knitting",
+            "pall"
+          ]
+        },
+        {
+          "id": "worthy-of-his-hire",
+          "text": "You forget, dear Charlie, that the labourer is worthy of his hire",
+          "speaker": "Marlow’s aunt",
+          "reference": "Part I",
+          "stage": "the-company",
+          "context": "Marlow has ventured that the Company is run for profit.",
+          "analysis": "Answering a point about profit with a verse from the Gospels, the aunt makes an irony she cannot hear. The labourers the story will show are chained, unpaid or paid in brass wire, and dying in a grove. Her piety is sincere, and it is exactly the rhetoric that made the Company respectable at home.",
+          "themes": [
+            "empire",
+            "women"
+          ],
+          "techniques": [
+            "irony",
+            "allusion"
+          ],
+          "characters": [
+            "aunt",
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "labourer",
+            "hire"
+          ]
+        },
+        {
+          "id": "out-of-touch",
+          "text": "It's queer how out of touch with truth women are. They live in a world of their own, and there had never been anything like it, and never can be.",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-company",
+          "context": "Marlow’s comment on his aunt’s enthusiasm.",
+          "analysis": "Marlow’s generalisation about women is condescending, and the story does not bear it out. The aunt is deceived by men’s rhetoric, not by her own nature, and at the end it is Marlow who keeps a woman out of touch with the truth, by choice. His remark prepares the lie he will tell the Intended.",
+          "themes": [
+            "women",
+            "falsehood"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "marlow",
+            "aunt"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "queer",
+            "truth"
+          ]
+        },
+        {
+          "id": "firing-into-a-continent",
+          "text": "In the empty immensity of earth, sky, and water, there she was, incomprehensible, firing into a continent.",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-company",
+          "context": "Sailing down the coast, Marlow sees a French warship shelling the bush.",
+          "analysis": "A warship firing at a continent is absurd and deadly, and Marlow sees both. The tiny projectiles vanish and nothing happens, while someone on board insists there is a camp of enemies out of sight. The image is Conrad’s whole account of empire in miniature: force, futility and a word, enemies, to justify it.",
+          "themes": [
+            "empire"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "incomprehensible",
+            "continent"
+          ]
+        },
+        {
+          "id": "called-criminals",
+          "text": "They were called criminals, and the outraged law, like the bursting shells, had come to them, an insoluble mystery from over the sea.",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-stations",
+          "context": "A file of chained men passes Marlow on the path at the Company’s station.",
+          "analysis": "Marlow puts the Company’s word, criminals, in doubt by noting that it is only what they were called. The law they are supposed to have broken arrived from over the sea, as mysterious to them as shellfire. His irony connects the chain gang with the warship: both are violence given an official name.",
+          "themes": [
+            "empire",
+            "race"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "criminals",
+            "mystery"
+          ]
+        },
+        {
+          "id": "dying-slowly",
+          "text": "They were dying slowly—it was very clear. They were not enemies, they were not criminals, they were nothing earthly now,—nothing but black shadows of disease and starvation, lying confusedly in the greenish gloom.",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-stations",
+          "context": "Stepping into the shade of a grove, Marlow finds sick labourers who have crawled away to die.",
+          "analysis": "Enemies, criminals: the Company’s labels fall away, and what is left is starvation. The grove is the most direct picture of colonial cruelty in the book, and critics have pointed out that it still shows the dying as shadows and shapes. Marlow can only offer a biscuit.",
+          "themes": [
+            "empire",
+            "race"
+          ],
+          "techniques": [
+            "light-dark"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "shadows",
+            "starvation"
+          ]
+        },
+        {
+          "id": "correct-entries",
+          "text": "When one has got to make correct entries, one comes to hate those savages—hate them to the death.",
+          "speaker": "The chief accountant",
+          "reference": "Part I",
+          "stage": "the-stations",
+          "context": "A noisy caravan arrives outside the accountant’s office.",
+          "analysis": "Immaculate in his collars, the book-keeper hates the people whose labour fills his books because their noise disturbs his arithmetic. His hatred is bureaucratic, and all the more chilling for it. Conrad makes the correct entry, like the starched collar, into the face of an enterprise that does not look at what it records.",
+          "themes": [
+            "empire",
+            "race"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "accountant",
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "entries",
+            "hate"
+          ]
+        },
+        {
+          "id": "no-entrails",
+          "text": "Men who come out here should have no entrails.",
+          "speaker": "The manager",
+          "reference": "Part I",
+          "stage": "the-stations",
+          "context": "Said when tropical diseases have laid low almost every agent at the Central Station.",
+          "analysis": "Spoken as a joke, the line states the manager’s qualifications: he has survived because nothing inside him is affected. Marlow suspects there may be nothing inside him at all. The line prepares the image of Kurtz as hollow at the core, the other man the wilderness finds empty.",
+          "themes": [
+            "civilisation",
+            "restraint"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "manager",
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "entrails",
+            "come"
+          ]
+        },
+        {
+          "id": "praying-to-ivory",
+          "text": "The word 'ivory' rang in the air, was whispered, was sighed. You would think they were praying to it.",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-stations",
+          "context": "At the Central Station the agents stroll about with their long staves.",
+          "analysis": "Ivory is the agents’ god, and Marlow calls them pilgrims, with their long staves and their faith in percentages. The religious image makes the Company’s greed look like a corrupt worship, and it prepares the literal worship Kurtz will receive at the Inner Station.",
+          "themes": [
+            "empire"
+          ],
+          "techniques": [
+            "symbolic-objects",
+            "irony"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "ivory",
+            "praying"
+          ]
+        },
+        {
+          "id": "taint-of-death",
+          "text": "There is a taint of death, a flavour of mortality in lies,—which is exactly what I hate and detest in the world—what I want to forget.",
+          "speaker": "Marlow",
+          "reference": "Part I",
+          "stage": "the-stations",
+          "context": "He has just let the brickmaker believe he has influence in Europe.",
+          "analysis": "Marlow’s hatred of lies is stated here, in the middle of confessing one, and the book ends with him telling a far greater lie. Linking lies to death makes the ending harder: in lying to the Intended, Marlow touches the mortality he says he wants to forget, and chooses it to protect her.",
+          "themes": [
+            "falsehood"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "marlow",
+            "brickmaker"
+          ],
+          "source": "1902 text, part I",
+          "cloze": [
+            "lies",
+            "mortality"
+          ]
+        },
+        {
+          "id": "earliest-beginnings",
+          "text": "Going up that river was like travelling back to the earliest beginnings of the world, when vegetation rioted on the earth and the big trees were kings.",
+          "speaker": "Marlow",
+          "reference": "Part II",
+          "stage": "upriver",
+          "context": "The steamer begins its two-month journey to the Inner Station.",
+          "analysis": "Travelling upstream, Marlow feels he is travelling back in time. The idea that Africa belonged to the beginning of history was a commonplace of Conrad’s Europe, and Achebe objected to it. Within the story it also makes the voyage an inward one, towards whatever lies before civilisation in Marlow and his listeners.",
+          "themes": [
+            "civilisation",
+            "race"
+          ],
+          "techniques": [
+            "personification"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part II",
+          "cloze": [
+            "travelling",
+            "kings"
+          ]
+        },
+        {
+          "id": "remote-kinship",
+          "text": "what thrilled you was just the thought of their humanity—like yours—the thought of your remote kinship with this wild and passionate uproar.",
+          "speaker": "Marlow",
+          "reference": "Part II",
+          "stage": "upriver",
+          "context": "From the steamer Marlow sees people on the bank shouting and dancing.",
+          "analysis": "Marlow’s thrill is at recognising kinship, and the sentence is double-edged. It admits common humanity where his listeners expect none, and it still calls the people on the bank an uproar. The passage is at the centre of the debate about whether the book challenges its age’s racism or repeats it.",
+          "themes": [
+            "race",
+            "civilisation"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part II",
+          "cloze": [
+            "humanity",
+            "kinship"
+          ]
+        },
+        {
+          "id": "restraint",
+          "text": "Restraint! What possible restraint? Was it superstition, disgust, patience, fear—or some kind of primitive honour?",
+          "speaker": "Marlow",
+          "reference": "Part II",
+          "stage": "upriver",
+          "context": "His crew are starving, and they outnumber the white men on board thirty to five.",
+          "analysis": "Men whom Europe would call savages show the restraint that the Europeans lack. Marlow cannot explain it and can only list the explanations that fail. The word returns for the manager, the helmsman and Kurtz, and it becomes the book’s measure of a person.",
+          "themes": [
+            "restraint",
+            "civilisation"
+          ],
+          "techniques": [
+            "leitmotif"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part II",
+          "cloze": [
+            "Restraint",
+            "honour"
+          ]
+        },
+        {
+          "id": "little-sticks",
+          "text": "Sticks, little sticks, were flying about—thick: they were whizzing before my nose, dropping below me, striking behind me against my pilot-house.",
+          "speaker": "Marlow",
+          "reference": "Part II",
+          "stage": "upriver",
+          "context": "The first moments of the attack on the steamer.",
+          "analysis": "Marlow reports what he saw before he understood it: sticks, then arrows. The method puts the reader inside the moment of perception, with the sense catching up a second late. The attack is described as confusion, and the violence feels stranger for it.",
+          "themes": [
+            "language"
+          ],
+          "techniques": [
+            "delayed-decoding"
+          ],
+          "characters": [
+            "marlow"
+          ],
+          "source": "1902 text, part II",
+          "cloze": [
+            "sticks",
+            "whizzing"
+          ]
+        },
+        {
+          "id": "distant-kinship",
+          "text": "like a claim of distant kinship affirmed in a supreme moment.",
+          "speaker": "Marlow",
+          "reference": "Part II",
+          "stage": "upriver",
+          "context": "His helmsman is dead, speared through the shutter he had opened.",
+          "analysis": "Without a word, the helmsman gives the book its most human moment. Marlow, who has called him a fool, recognises a bond only when it is broken. The phrase returns to the kinship Marlow felt on the river, now as grief for one man.",
+          "themes": [
+            "race",
+            "restraint"
+          ],
+          "techniques": [
+            "leitmotif"
+          ],
+          "characters": [
+            "marlow",
+            "helmsman"
+          ],
+          "source": "1902 text, part II",
+          "cloze": [
+            "kinship",
+            "supreme"
+          ]
+        },
+        {
+          "id": "a-voice",
+          "text": "The man presented himself as a voice.",
+          "speaker": "Marlow",
+          "reference": "Part II",
+          "stage": "upriver",
+          "context": "Believing Kurtz dead, Marlow realises that he had always imagined him talking.",
+          "analysis": "Kurtz exists for Marlow as eloquence long before he appears. His gift of expression is the pulsating stream of light or the deceitful flow from the heart of an impenetrable darkness. When Marlow meets him the voice is still enormous in a body wasted to ivory, and at the end the voice is all that the Intended wants back.",
+          "themes": [
+            "language"
+          ],
+          "techniques": [
+            "leitmotif"
+          ],
+          "characters": [
+            "marlow",
+            "kurtz"
+          ],
+          "source": "1902 text, part II",
+          "cloze": [
+            "presented",
+            "voice"
+          ]
+        },
+        {
+          "id": "ivory-ball",
+          "text": "The wilderness had patted him on the head, and, behold, it was like a ball—an ivory ball",
+          "speaker": "Marlow",
+          "reference": "Part II",
+          "stage": "upriver",
+          "context": "A digression jumps ahead to Kurtz’s bald head and his ivory.",
+          "analysis": "In Marlow’s image the wilderness is a lover and Kurtz its pampered favourite, and the ivory he hunted has become his own body. The grotesque image blames the land for seducing the man, which is how Marlow tends to see it. The sentences that follow, my ivory, my station, show whose possession Kurtz really was.",
+          "themes": [
+            "empire",
+            "civilisation"
+          ],
+          "techniques": [
+            "personification",
+            "symbolic-objects"
+          ],
+          "characters": [
+            "marlow",
+            "kurtz"
+          ],
+          "source": "1902 text, part II",
+          "cloze": [
+            "wilderness",
+            "ivory"
+          ]
+        },
+        {
+          "id": "all-europe",
+          "text": "All Europe contributed to the making of Kurtz",
+          "speaker": "Marlow",
+          "reference": "Part II",
+          "stage": "upriver",
+          "context": "Kurtz’s mother was half English, his father half French, and he was educated partly in England.",
+          "analysis": "Kurtz is no aberration from Europe, the sentence insists; he is its product. His idealism, his education, his eloquence and his greed are European, and so is the report that ends in a call to exterminate. The line forbids the listeners on the Nellie to treat Kurtz as someone else’s problem.",
+          "themes": [
+            "civilisation",
+            "empire"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "marlow",
+            "kurtz"
+          ],
+          "source": "1902 text, part II",
+          "cloze": [
+            "Europe",
+            "making"
+          ]
+        },
+        {
+          "id": "exterminate",
+          "text": "Exterminate all the brutes!",
+          "speaker": "Kurtz",
+          "reference": "Part II",
+          "stage": "upriver",
+          "context": "A postscript scrawled at the foot of Kurtz’s report for the International Society for the Suppression of Savage Customs.",
+          "analysis": "Seventeen pages of noble language end in four words that reveal its logic. If Europeans appear to Africans as gods, the report begins, they can do unbounded good; the postscript shows what unbounded power wants. Marlow later tears it off before giving the report away, the first of his acts to protect Kurtz’s memory.",
+          "themes": [
+            "empire",
+            "language",
+            "race"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "kurtz",
+            "marlow"
+          ],
+          "source": "1902 text, part II",
+          "cloze": [
+            "Exterminate",
+            "brutes"
+          ]
+        },
+        {
+          "id": "listen-to-him",
+          "text": "You don't talk with that man—you listen to him",
+          "speaker": "The Russian",
+          "reference": "Part II",
+          "stage": "inner-station",
+          "context": "Marlow has asked the young Russian whether he talks with Mr Kurtz.",
+          "analysis": "Kurtz’s disciple admires him without reserve, and describes his power exactly. Kurtz does not converse; he performs, and his listeners are transformed. Marlow, who is also Kurtz’s listener, mocks the Russian and feels the same pull.",
+          "themes": [
+            "language"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "russian",
+            "marlow"
+          ],
+          "source": "1902 text, part II",
+          "cloze": [
+            "talk",
+            "listen"
+          ]
+        },
+        {
+          "id": "round-knobs",
+          "text": "These round knobs were not ornamental but symbolic",
+          "speaker": "Marlow",
+          "reference": "Part III",
+          "stage": "inner-station",
+          "context": "Through his binoculars Marlow looks again at the posts around Kurtz’s house.",
+          "analysis": "Marlow first saw ornaments on the posts; now, through his glass, he sees heads. The delayed recognition is followed by a joke, symbolic, so dry that it barely covers the shock. The heads face the house, and Marlow says they show that Kurtz lacked restraint.",
+          "themes": [
+            "restraint",
+            "empire"
+          ],
+          "techniques": [
+            "delayed-decoding",
+            "irony"
+          ],
+          "characters": [
+            "marlow",
+            "kurtz"
+          ],
+          "source": "1902 text, part III",
+          "cloze": [
+            "knobs",
+            "symbolic"
+          ]
+        },
+        {
+          "id": "hollow-at-the-core",
+          "text": "It echoed loudly within him because he was hollow at the core.",
+          "speaker": "Marlow",
+          "reference": "Part III",
+          "stage": "inner-station",
+          "context": "What, Marlow asks, had the wilderness whispered to Kurtz?",
+          "analysis": "Kurtz’s eloquence and ideals had no inner substance to resist the whisper of absolute power. The image of hollowness links him to the manager, who may have nothing within him. T. S. Eliot’s poem The Hollow Men (1925) carries an epigraph from this book.",
+          "themes": [
+            "restraint",
+            "civilisation"
+          ],
+          "techniques": [
+            "personification"
+          ],
+          "characters": [
+            "marlow",
+            "kurtz"
+          ],
+          "source": "1902 text, part III",
+          "cloze": [
+            "echoed",
+            "hollow"
+          ]
+        },
+        {
+          "id": "savage-and-superb",
+          "text": "She was savage and superb, wild-eyed and magnificent; there was something ominous and stately in her deliberate progress.",
+          "speaker": "Marlow",
+          "reference": "Part III",
+          "stage": "inner-station",
+          "context": "A woman walks along the shore as Kurtz is carried aboard.",
+          "analysis": "Marlow admires the woman and sees her as the image of the wilderness itself, which is a tribute and also a reduction. She never speaks words he understands, and she has no name. Her raised arms will be echoed by the Intended’s outstretched arms in Europe, so the two women who mourn Kurtz mirror each other.",
+          "themes": [
+            "women",
+            "race"
+          ],
+          "techniques": [
+            "personification"
+          ],
+          "characters": [
+            "marlow",
+            "african-woman"
+          ],
+          "source": "1902 text, part III",
+          "cloze": [
+            "superb",
+            "stately"
+          ]
+        },
+        {
+          "id": "the-horror",
+          "text": "The horror! The horror!",
+          "speaker": "Kurtz",
+          "reference": "Part III",
+          "stage": "downriver",
+          "context": "Kurtz’s last words, cried in a whisper as Marlow stands over him with a candle.",
+          "analysis": "The most famous words in the book name nothing in particular. Kurtz may mean his own deeds, the wilderness, the human heart or the whole of life, and Marlow chooses to read them as a judgement and a moral victory. Their power comes from what they leave unsaid.",
+          "themes": [
+            "language",
+            "restraint"
+          ],
+          "techniques": [
+            "ellipsis",
+            "leitmotif"
+          ],
+          "characters": [
+            "kurtz",
+            "marlow"
+          ],
+          "source": "1902 text, part III",
+          "cloze": [
+            "horror"
+          ]
+        },
+        {
+          "id": "mistah-kurtz",
+          "text": "Mistah Kurtz—he dead.",
+          "speaker": "The manager’s boy",
+          "reference": "Part III",
+          "stage": "downriver",
+          "context": "The manager’s servant puts his head in at the mess-room door.",
+          "analysis": "Four contemptuous words announce the death of the great voice, spoken by a servant the manager lets insult the agents. The flatness is deliberate after the grandeur of Kurtz’s last cry. Eliot used the sentence as the epigraph to The Hollow Men in 1925.",
+          "themes": [
+            "language",
+            "race"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "boy",
+            "kurtz"
+          ],
+          "source": "1902 text, part III",
+          "cloze": [
+            "dead"
+          ]
+        },
+        {
+          "id": "summed-up",
+          "text": "He had summed up—he had judged. 'The horror!'",
+          "speaker": "Marlow",
+          "reference": "Part III",
+          "stage": "downriver",
+          "context": "After his own illness, Marlow explains why he remains loyal to Kurtz.",
+          "analysis": "Having nearly died with nothing to say, Marlow honours Kurtz for saying something, even if it was a condemnation. He reads the cry as a verdict on Kurtz’s own life and calls it a moral victory. Whether that reading is wisdom or wishful loyalty is left to the listeners.",
+          "themes": [
+            "language",
+            "restraint"
+          ],
+          "techniques": [
+            "leitmotif",
+            "ellipsis"
+          ],
+          "characters": [
+            "marlow",
+            "kurtz"
+          ],
+          "source": "1902 text, part III",
+          "cloze": [
+            "summed",
+            "judged"
+          ]
+        },
+        {
+          "id": "your-name",
+          "text": "The last word he pronounced was—your name.",
+          "speaker": "Marlow",
+          "reference": "Part III",
+          "stage": "the-intended",
+          "context": "The Intended begs Marlow to repeat Kurtz’s last words, something to live with.",
+          "analysis": "Marlow, who hates lies, tells the story’s decisive one. The dash marks his hesitation between the horror and the illusion, and he chooses the illusion. The lie keeps the Intended’s world intact and repeats, in private, the Company’s habit of covering the truth with beautiful words.",
+          "themes": [
+            "falsehood",
+            "women"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "marlow",
+            "intended"
+          ],
+          "source": "1902 text, part III",
+          "cloze": [
+            "pronounced",
+            "name"
+          ]
+        },
+        {
+          "id": "too-dark",
+          "text": "It would have been too dark—too dark altogether....",
+          "speaker": "Marlow",
+          "reference": "Part III",
+          "stage": "the-intended",
+          "context": "The end of Marlow’s tale, explaining why he could not tell the Intended the truth.",
+          "analysis": "Marlow’s justification leaves the truth unspoken. Darkness here is knowledge itself, too much for a person to live with, and Marlow’s trailing dots leave his listeners as unsure as he is whether he did right.",
+          "themes": [
+            "falsehood"
+          ],
+          "techniques": [
+            "light-dark",
+            "ellipsis"
+          ],
+          "characters": [
+            "marlow",
+            "intended"
+          ],
+          "source": "1902 text, part III",
+          "cloze": [
+            "dark",
+            "altogether"
+          ]
+        },
+        {
+          "id": "immense-darkness",
+          "text": "the tranquil waterway leading to the uttermost ends of the earth flowed sombre under an overcast sky—seemed to lead into the heart of an immense darkness.",
+          "speaker": "",
+          "reference": "Part III",
+          "stage": "the-intended",
+          "context": "The last words of the book, as the first narrator looks out from the Nellie.",
+          "analysis": "The first narrator repeats his opening description of the Thames, the waterway to the ends of the earth, but the heroic river of Drake and Franklin now leads into darkness. The story has changed how he sees his own country. The heart of darkness is no longer only in Africa.",
+          "themes": [
+            "civilisation",
+            "empire"
+          ],
+          "techniques": [
+            "frame-narrative",
+            "light-dark",
+            "leitmotif"
+          ],
+          "characters": [
+            "narrator"
+          ],
+          "source": "1902 text, part III",
+          "cloze": [
+            "waterway",
+            "immense"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "First published",
+          "value": "1899",
+          "note": "In three monthly parts in Blackwood’s Edinburgh Magazine, February to April 1899, as The Heart of Darkness, beginning in the magazine’s thousandth number."
+        },
+        {
+          "label": "In book form",
+          "value": "1902",
+          "note": "In Youth: A Narrative, and Two Other Stories, published by William Blackwood and Sons on 13 November 1902."
+        },
+        {
+          "label": "The narrator",
+          "value": "Marlow",
+          "note": "Told by Charlie Marlow, the seaman who first appeared in Conrad’s story Youth, to four friends on the Thames, and reported by one of them."
+        },
+        {
+          "label": "The journey",
+          "value": "1890",
+          "note": "Conrad went up the Congo in 1890 as second in command of a company steamer; he later called the story experience pushed a little beyond the actual facts."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "A racist book",
+          "summary": "In a lecture of 1975, published in 1977, the novelist Chinua Achebe argued that the book uses Africa as a backdrop for a European’s breakdown and denies its African characters speech and full humanity, and that a book which does so should not be called a great work of art. His challenge changed how the book is read and taught.",
+          "counter": "Defenders reply that the racist views belong to Marlow and his age, that the frame keeps him at a distance, and that the book’s attack on imperialism was radical in 1899. Others accept much of Achebe’s case and still teach the book as a revealing record of European attitudes."
+        },
+        {
+          "position": "An indictment of empire",
+          "summary": "Many readers see the book as one of the first literary exposures of the Congo Free State, written from Conrad’s own experience before the reform campaign of the 1900s. Marlow calls conquest robbery with violence, and the chain gang, the grove of death and the heads on stakes make the Company’s philanthropy look like a pretence.",
+          "counter": "The attack is aimed at a Continental company, and the British red on the map is good to see. Marlow still believes in efficiency and the idea, and the book says little about the Africans’ own point of view, so its critique of empire has clear limits."
+        },
+        {
+          "position": "A journey into the self",
+          "summary": "Psychological and mythic readings treat the voyage as a descent into the unconscious or the underworld, with Kurtz as Marlow’s double: what any civilised man might become without neighbours and police. The frame and the impressionist method, meaning outside like a haze, support a reading about the limits of knowing and telling.",
+          "counter": "This reading can reduce Africa and Africans to symbols of a European’s inner life, which is exactly what Achebe objected to. It also lets the historical Congo, and the real people who died there, drop out of the story."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does Conrad use Marlow’s narration to shape our view of Kurtz?",
+          "focus": "Narrator, frame and judgement",
+          "plan": [
+            "Start with the frame: the listener on the Nellie, and meaning outside like a haze.",
+            "Show Kurtz built up by rumour: the accountant, the brickmaker, the manager and the Russian.",
+            "Analyse Kurtz as a voice: the report, its postscript, and his talk on the steamer.",
+            "Discuss Marlow’s loyalty and his reading of The horror! as a judgement.",
+            "Conclude with the lie to the Intended, and what it shows about Marlow himself."
+          ]
+        },
+        {
+          "question": "To what extent is Heart of Darkness a critique of imperialism?",
+          "focus": "Empire, race and the debate since Achebe",
+          "plan": [
+            "Begin with Marlow’s Romans: robbery with violence redeemed by an idea.",
+            "Examine the Company in action: the warship, the chain gang, the grove of death, the pilgrims and ivory.",
+            "Consider the limits: the red on the map, efficiency, and how Africans are presented.",
+            "Set out Achebe’s argument and the replies to it.",
+            "Weigh the evidence and reach a judgement of your own."
+          ]
+        },
+        {
+          "question": "How does Conrad use light and darkness in Heart of Darkness?",
+          "focus": "Imagery and its reversals",
+          "plan": [
+            "Look at the opening and closing images of the Thames.",
+            "Show how Europe is darkened: the whited sepulchre and the knitters of black wool.",
+            "Analyse Kurtz: the painting of the blindfolded woman with a torch, and the ivory face in the dark.",
+            "Examine the Intended’s room, where the light gathers on her forehead as the darkness deepens.",
+            "Conclude on what the book finally means by darkness."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Why does Conrad frame Marlow’s story with a listener on the Thames?",
+        "Why does the story never name the Congo, Belgium or Brussels?",
+        "Is Marlow right to lie to the Intended?",
+        "What does Marlow mean by restraint, and who in the story has it?",
+        "What might Kurtz mean by The horror! The horror!?",
+        "Can a book attack empire and still be racist?"
+      ],
+      "timeline": [
+        {
+          "year": 1857,
+          "label": "Józef Teodor Konrad Korzeniowski is born",
+          "detail": "On 3 December in Berdychiv, then in the Russian Empire, to a Polish family; his father was imprisoned for nationalist activity, and he was orphaned at eleven.",
+          "kind": "author"
+        },
+        {
+          "year": 1874,
+          "label": "To sea from Marseilles",
+          "detail": "Conrad joins French merchant ships; in 1878 he moves to British ships, where he serves for sixteen years.",
+          "kind": "author"
+        },
+        {
+          "year": 1885,
+          "label": "The Congo Free State",
+          "detail": "The great powers recognise a vast territory in central Africa as the personal possession of King Leopold II of the Belgians.",
+          "kind": "context"
+        },
+        {
+          "year": 1886,
+          "label": "British subject",
+          "detail": "Conrad is naturalised as a British subject.",
+          "kind": "author"
+        },
+        {
+          "year": 1890,
+          "label": "Conrad in the Congo",
+          "detail": "He keeps a diary from Matadi in June, walks overland to Stanley Pool, and goes up the river as second in command of the steamer Roi des Belges towards Stanley Falls.",
+          "kind": "author"
+        },
+        {
+          "year": 1895,
+          "label": "Almayer’s Folly",
+          "detail": "Conrad’s first novel, set in Borneo.",
+          "kind": "author"
+        },
+        {
+          "year": 1898,
+          "label": "Youth",
+          "detail": "Marlow makes his first appearance, in a story Conrad wrote for Blackwood’s Magazine.",
+          "kind": "author"
+        },
+        {
+          "year": 1899,
+          "label": "The Heart of Darkness in Blackwood’s",
+          "detail": "Three monthly parts, February to April, beginning in the magazine’s thousandth number.",
+          "kind": "work"
+        },
+        {
+          "year": 1902,
+          "label": "Youth: A Narrative, and Two Other Stories",
+          "detail": "Heart of Darkness appears in book form on 13 November, between Youth and The End of the Tether.",
+          "kind": "work"
+        },
+        {
+          "year": 1904,
+          "label": "The Casement Report",
+          "detail": "The British consul Roger Casement’s report on abuses in the rubber regions of the Congo Free State is published, and the Congo Reform Association is founded.",
+          "kind": "context"
+        },
+        {
+          "year": 1908,
+          "label": "Belgium annexes the Congo",
+          "detail": "The Congo Free State ends and becomes the Belgian Congo.",
+          "kind": "context"
+        },
+        {
+          "year": 1917,
+          "label": "The Author’s Note",
+          "detail": "For a new edition Conrad describes the story as experience pushed a little beyond the actual facts, to bring it home to the reader.",
+          "kind": "author"
+        },
+        {
+          "year": 1924,
+          "label": "Conrad dies",
+          "detail": "On 3 August, at his home in Kent.",
+          "kind": "author"
+        },
+        {
+          "year": 1925,
+          "label": "The Hollow Men",
+          "detail": "T. S. Eliot takes the epigraph of his poem from the book: Mistah Kurtz, he dead.",
+          "kind": "reception"
+        },
+        {
+          "year": 1975,
+          "label": "Achebe’s lecture",
+          "detail": "Chinua Achebe’s lecture at the University of Massachusetts, published in 1977 as An Image of Africa, attacks the book’s picture of Africans and changes how it is taught.",
+          "kind": "reception"
+        },
+        {
+          "year": 1979,
+          "label": "Apocalypse Now",
+          "detail": "Francis Ford Coppola moves the story to the Vietnam War.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "The Thames estuary, off Gravesend",
+          "lat": 51.4416,
+          "lon": 0.3709,
+          "note": "Where the Nellie waits for the tide, and where Marlow tells the story."
+        },
+        {
+          "name": "Brussels",
+          "lat": 50.8503,
+          "lon": 4.3517,
+          "note": "Where Conrad signed on in 1890; in the story an unnamed city like a whited sepulchre."
+        },
+        {
+          "name": "Matadi",
+          "lat": -5.8167,
+          "lon": 13.45,
+          "note": "The company station below the rapids, where Conrad’s Congo diary begins in June 1890; the model for Marlow’s first station."
+        },
+        {
+          "name": "Stanley Pool (Kinshasa)",
+          "lat": -4.3217,
+          "lon": 15.3125,
+          "note": "The end of Conrad’s overland march from Matadi in 1890, where he joined the Roi des Belges; the model for the Central Station."
+        },
+        {
+          "name": "Stanley Falls (Kisangani)",
+          "lat": 0.5153,
+          "lon": 25.191,
+          "note": "The last navigable reach of the upper river, which the Roi des Belges reached in 1890; the model for the Inner Station."
+        },
+        {
+          "name": "Berdychiv",
+          "lat": 49.8994,
+          "lon": 28.6022,
+          "note": "Where Conrad was born in 1857, then in the Russian Empire, now in Ukraine."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/the-tempest/",
+          "why": "An island, a European magician and the native he calls a savage: a play that critics, like readers of Conrad, have read as a story of empire."
+        },
+        {
+          "href": "/books/the-rime-of-the-ancient-mariner/",
+          "why": "Another tale told by a sailor to listeners who cannot leave, about a voyage that changes the teller for ever."
+        },
+        {
+          "href": "/books/the-aeneid/",
+          "why": "Critics have compared Marlow’s journey upriver with Aeneas’s descent to the underworld in Book VI."
+        },
+        {
+          "href": "/books/the-great-gatsby/",
+          "why": "Nick Carraway, like Marlow, tells the story of a man he half admires and ends by protecting his memory."
+        },
+        {
+          "href": "/books/the-open-boat-and-other-stories/",
+          "why": "Stories by Stephen Crane, Conrad’s friend in the years when he wrote Heart of Darkness."
+        }
+      ],
+      "videos": []
     },
     {
       "slug": "henry-iv-part-1",
