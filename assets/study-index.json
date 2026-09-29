@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 101,
-    "quotations": 2308,
-    "characters": 924,
-    "themes": 244,
+    "books": 102,
+    "quotations": 2335,
+    "characters": 934,
+    "themes": 245,
     "techniques": 248,
-    "timelineEvents": 1166,
-    "places": 579
+    "timelineEvents": 1179,
+    "places": 583
   },
   "books": [
     {
@@ -16595,6 +16595,1502 @@
         {
           "href": "/books/the-wind-in-the-willows/",
           "why": "Published five years later and the opposite experiment: animals given speech, manners and houses in place of instinct."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "carmilla",
+      "title": "Carmilla",
+      "author": "Sheridan Le Fanu",
+      "href": "/books/carmilla/",
+      "studyHref": "",
+      "playHref": "/play/?book=carmilla",
+      "form": "novella",
+      "genre": "Gothic novella",
+      "period": "Victorian",
+      "setting": "A lonely schloss in the forests of Styria, in the Austrian Empire, and the ruined village and chapel of the Karnsteins three miles to the west",
+      "written": "1871",
+      "firstPublished": 1871,
+      "readingTime": 100,
+      "difficulty": 2,
+      "lengthNote": "A prologue and sixteen short chapters, about 28,000 words; from chapter X to chapter XIV the General tells his own story, on the drive to Karnstein and in the ruined chapel",
+      "openingLine": "Upon a paper attached to the Narrative which follows, Doctor Hesselius has written a rather elaborate note, which he accompanies with a reference to his Essay on the strange subject which the MS. illuminates.",
+      "summary": "Laura, nineteen, lives with her English father and two governesses in an isolated castle in Styria. One moonlit evening a carriage overturns at their gate, and a lady in black velvet, pleading a journey of life and death, leaves her lovely, languid daughter in their care. Carmilla becomes Laura’s passionate friend. She comes down at one in the afternoon, avoids prayers, will not say who she is, and looks exactly like a portrait dated 1698. Young women in the district begin to die, and Laura sickens. Then General Spielsdorf arrives with the story of how his ward died, and in a ruined chapel the three of them meet her. Laura tells the story years later, to a correspondent, and Le Fanu presents it as one of the papers of a German physician, Doctor Hesselius.",
+      "referenceStyle": "chapter, as the 1872 text numbers them, with the unnumbered Prologue",
+      "sourceText": {
+        "label": "Project Gutenberg text of In a Glass Darkly, volume 3 (London: Richard Bentley and Son, 1872) (eBook 37174)",
+        "url": "https://www.gutenberg.org/cache/epub/37174/pg37174.txt",
+        "note": "The 1872 book text, with its Prologue and British spelling. The volume opens with the last chapters of The Room in the Dragon Volant and then prints Carmilla complete. Its small inconsistencies are kept: the governess is Perrodon everywhere except chapter VII, where she is Paradon, and Laura’s mother is a Styrian lady in chapter I and of an old Hungarian family in chapter V."
+      },
+      "structure": [
+        {
+          "id": "arrival",
+          "label": "Prologue and Chapters I–III",
+          "title": "A guest at the schloss",
+          "summary": "An editor explains that the narrative comes from Doctor Hesselius’s papers and that the lady who wrote it has since died. Laura remembers waking at six to find a beautiful young woman in her bed and feeling two needles in her breast. At nineteen, on the evening her father tells her that General Spielsdorf’s ward has died, a carriage overturns at the gate, a stately lady leaves her stunned daughter in their care, and Laura recognises the girl’s face from her childhood night. Carmilla says she dreamed of Laura’s face at the same age.",
+          "scenes": [
+            {
+              "ref": "Prologue",
+              "title": "The paper",
+              "summary": "Doctor Hesselius’s note, and an editor who publishes the case for the laity."
+            },
+            {
+              "ref": "Chapter I",
+              "title": "An Early Fright",
+              "summary": "The schloss, the ruined village of Karnstein, and the face by the bed."
+            },
+            {
+              "ref": "Chapter II",
+              "title": "A Guest",
+              "summary": "The General’s distracted letter, the moon, the runaway carriage, and a mother in black velvet."
+            },
+            {
+              "ref": "Chapter III",
+              "title": "We Compare Notes",
+              "summary": "A woman in a turban in the carriage, a dream the two girls share, and a key turned in the lock."
+            }
+          ]
+        },
+        {
+          "id": "intimacy",
+          "label": "Chapters IV–VI",
+          "title": "Carmilla",
+          "summary": "Carmilla will give only three facts about herself. She is languid, rarely comes down before one o’clock, and alternates girlish chatter with passionate embraces that Laura finds thrilling and repellent. She is angry when Laura joins in a funeral hymn and when a hunchbacked pedlar offers to file down her sharp tooth. A cleaned portrait of Mircalla, Countess Karnstein, dated 1698, turns out to be her exact likeness. That night Laura dreams of a monstrous black cat that springs on the bed, and wakes to see a woman’s figure at its foot.",
+          "scenes": [
+            {
+              "ref": "Chapter IV",
+              "title": "Her Habits: A Saunter",
+              "summary": "Three facts, rhapsodies of love and death, a peasant girl’s funeral, and the mountebank’s charms."
+            },
+            {
+              "ref": "Chapter V",
+              "title": "A Wonderful Likeness",
+              "summary": "Pictures from Gratz, the portrait with the mole on the throat, and a moonlit declaration."
+            },
+            {
+              "ref": "Chapter VI",
+              "title": "A Very Strange Agony",
+              "summary": "Love that is always selfish, a ball long ago, and the sooty-black beast in the dark."
+            }
+          ]
+        },
+        {
+          "id": "descent",
+          "label": "Chapters VII–IX",
+          "title": "Laura’s illness",
+          "summary": "Laura pins the pedlar’s charm to her pillow and begins to fail: deep sleep, an almost luxurious lassitude, dreams of a caress that fixes at the throat, then strangulation and unconsciousness. One night a voice says that her mother warns her to beware of the assassin, and she sees Carmilla bathed in blood. Carmilla vanishes from her locked room and is found at one o’clock the next day; Laura’s father explains it as sleepwalking. The doctor finds a small blue spot below Laura’s throat and orders that she never be left alone. On the road to Karnstein they meet the General.",
+          "scenes": [
+            {
+              "ref": "Chapter VII",
+              "title": "Descending",
+              "summary": "The figure in the lime-tree walk, the charm, the descent of Avernus, and the stain of blood."
+            },
+            {
+              "ref": "Chapter VIII",
+              "title": "Search",
+              "summary": "An empty locked room, a morning of alarm, and a theory of sleepwalking."
+            },
+            {
+              "ref": "Chapter IX",
+              "title": "The Doctor",
+              "summary": "Two needles near the throat, a small blue spot, a delayed letter, and a drive towards Karnstein."
+            }
+          ]
+        },
+        {
+          "id": "generals-story",
+          "label": "Chapters X–XIV",
+          "title": "The General’s story",
+          "summary": "The General, aged by grief and anger, tells how at a masked ball a countess persuaded him to take charge of her daughter Millarca, and how his ward Bertha then sickened with Laura’s symptoms. In the ruined chapel a woodman tells how a Moravian nobleman once freed the village from a vampire and removed the tomb of Mircalla. The General finishes his story: a doctor from Gratz diagnosed a vampire, and watching by Bertha’s bed he saw a black mass swell at her throat, then saw Millarca standing by the bed. Then Carmilla walks in. The General swings a woodman’s hatchet at her; she seizes his wrist and vanishes.",
+          "scenes": [
+            {
+              "ref": "Chapter X",
+              "title": "Bereaved",
+              "summary": "The General’s fury, a pious sacrilege, and the extinct house of Karnstein."
+            },
+            {
+              "ref": "Chapters XI–XII",
+              "title": "The Story; A Petition",
+              "summary": "Count Carlsfeld’s masquerade, a pale man in black, a mission of life and death, and Millarca left behind."
+            },
+            {
+              "ref": "Chapters XIII–XIV",
+              "title": "The Wood-man; The Meeting",
+              "summary": "Bertha’s decline, the Moravian nobleman, the black mass at the throat, and the hatchet in the chapel."
+            }
+          ]
+        },
+        {
+          "id": "execution",
+          "label": "Chapters XV–XVI",
+          "title": "The tomb, and afterwards",
+          "summary": "Baron Vordenburg, a shabby scholar of vampirism, finds Mircalla’s lost tomb from his ancestor’s notes: that ancestor was the Moravian nobleman, who had loved her and hid her grave. Laura’s sufferings have stopped since Carmilla vanished. An Imperial Commission opens the coffin, finds the body warm and floating in blood, drives a stake through the heart, cuts off the head and burns the remains. Laura sets out what the Baron taught about the laws of vampires, and ends by admitting that Carmilla still returns to her memory in two forms, girl and fiend.",
+          "scenes": [
+            {
+              "ref": "Chapter XV",
+              "title": "Ordeal and Execution",
+              "summary": "The Baron’s plan of the chapel, the marble tablet, and the official report."
+            },
+            {
+              "ref": "Chapter XVI",
+              "title": "Conclusion",
+              "summary": "The Baron’s library, the anagram, a lover’s deception confessed, more than a year in Italy, and a light step at the door."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "laura",
+          "name": "Laura",
+          "role": "The narrator, nineteen at the time",
+          "summary": "The motherless daughter of an Englishman, brought up in a remote Styrian castle by two governesses, with only occasional visitors of her own age. She is lonely, romantic and honest about her own confusion: she feels attraction and repulsion towards Carmilla, and says so. Her name is first spoken in chapter VIII, by her father, as she begins to fade. She writes the story years later for a correspondent, and by the time the Prologue is written she has died.",
+          "clue": "At six she woke to find a strange young woman lying beside her in the nursery; at nineteen she recognises the same face in a guest’s bed.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "lonely",
+            "impressionable",
+            "candid"
+          ],
+          "relationships": [
+            {
+              "to": "carmilla",
+              "label": "loves and fears",
+              "kind": "love",
+              "stages": [
+                "arrival",
+                "intimacy",
+                "descent",
+                "generals-story",
+                "execution"
+              ]
+            },
+            {
+              "to": "father",
+              "label": "daughter of",
+              "kind": "family",
+              "stages": [
+                "arrival",
+                "intimacy",
+                "descent",
+                "generals-story",
+                "execution"
+              ]
+            },
+            {
+              "to": "perrodon",
+              "label": "cared for by",
+              "kind": "service",
+              "stages": [
+                "arrival",
+                "descent",
+                "generals-story",
+                "execution"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "carmilla",
+          "name": "Carmilla",
+          "role": "The guest; also Millarca, and Mircalla, Countess Karnstein",
+          "summary": "Beautiful, languid and secretive, she will say only that her name is Carmilla, that her family is ancient and noble, and that her home lies to the west. She takes a cup of chocolate and eats nothing, never joins the family prayers, hates funerals and is fierce when crossed. Her love for Laura is sincere by its own lights and inseparable from her need to feed on her: she talks of Laura dying into her, of a cruelty that is also love, of Laura coming with her to death. She is a Karnstein countess buried a century and a half before, who became a vampire, the Baron explains, after one had preyed on her.",
+          "clue": "She will reveal only that her family is ancient and noble and that her home lies to the west, and a pedlar remarks on her long, sharp tooth.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "languid",
+            "passionate",
+            "secretive",
+            "predatory"
+          ],
+          "relationships": [
+            {
+              "to": "laura",
+              "label": "loves and feeds on",
+              "kind": "love",
+              "stages": [
+                "arrival",
+                "intimacy",
+                "descent",
+                "generals-story",
+                "execution"
+              ]
+            },
+            {
+              "to": "bertha",
+              "label": "killed, as Millarca",
+              "kind": "enemy",
+              "stages": [
+                "generals-story"
+              ]
+            },
+            {
+              "to": "countess",
+              "label": "left in care by",
+              "kind": "ally",
+              "stages": [
+                "arrival",
+                "generals-story"
+              ]
+            },
+            {
+              "to": "general",
+              "label": "hunted by",
+              "kind": "enemy",
+              "stages": [
+                "generals-story",
+                "execution"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "father",
+          "name": "Laura’s father",
+          "role": "An Englishman retired from the Austrian service",
+          "summary": "Kind and growing old, he retired on a pension and bought the schloss as a bargain. He reads Shakespeare aloud to keep up the family’s English, prides himself on being something of a physician, and at Laura’s pleading offers the stranger’s daughter a home. He explains the local deaths by natural causes and Carmilla’s disappearance by sleepwalking, and keeps what the doctor tells him from Laura. His late wife was descended from the Karnsteins.",
+          "clue": "An Englishman who reads Shakespeare aloud in a Styrian castle and assures the household that the peasants’ deaths are strictly referable to natural causes.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "kind",
+            "rational",
+            "hospitable"
+          ],
+          "relationships": [
+            {
+              "to": "laura",
+              "label": "father of",
+              "kind": "family",
+              "stages": [
+                "arrival",
+                "intimacy",
+                "descent",
+                "generals-story",
+                "execution"
+              ]
+            },
+            {
+              "to": "general",
+              "label": "old friend of",
+              "kind": "friendship",
+              "stages": [
+                "arrival",
+                "descent",
+                "generals-story",
+                "execution"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "general",
+          "name": "General Spielsdorf",
+          "role": "An old soldier, guardian of Bertha Rheinfeldt",
+          "summary": "An old friend of Laura’s father, childless, and a man who generally requires proof. At a masked ball he let himself be charmed into taking charge of a stranger’s daughter, and he curses his own conceited incredulity for what followed. When he reaches the schloss, ten months have aged him by years, and he is bent on the pious sacrilege of finding the vampire’s grave. He tells his story on the drive to Karnstein and finishes it in the ruined chapel.",
+          "clue": "At Count Carlsfeld’s masquerade he agreed to look after a masked lady’s daughter; months later he swings a woodman’s hatchet in a ruined chapel.",
+          "firstAppearance": "Chapter II",
+          "traits": [
+            "soldierly",
+            "grieving",
+            "vengeful"
+          ],
+          "relationships": [
+            {
+              "to": "bertha",
+              "label": "guardian of",
+              "kind": "family",
+              "stages": [
+                "arrival",
+                "generals-story"
+              ]
+            },
+            {
+              "to": "carmilla",
+              "label": "hunts",
+              "kind": "enemy",
+              "stages": [
+                "generals-story",
+                "execution"
+              ]
+            },
+            {
+              "to": "vordenburg",
+              "label": "guided by",
+              "kind": "ally",
+              "stages": [
+                "execution"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bertha",
+          "name": "Bertha Rheinfeldt",
+          "role": "The General’s niece and ward",
+          "summary": "A charming girl whom Laura never meets. She was to have come to the schloss with the General for a visit of some weeks; instead he writes that she is dead. His story shows her meeting Millarca at the ball, taken with her at first sight and begging him to invite her home, and then suffering exactly the dreams and sensations that Laura is suffering as she listens. She died without suspecting the cause.",
+          "clue": "She was expected at the castle that summer as a companion for the narrator, and the visit is cancelled by a letter written very nearly in distraction.",
+          "firstAppearance": "Chapter II",
+          "traits": [
+            "charming",
+            "trusting"
+          ],
+          "relationships": [
+            {
+              "to": "general",
+              "label": "ward of",
+              "kind": "family",
+              "stages": [
+                "arrival",
+                "generals-story"
+              ]
+            },
+            {
+              "to": "carmilla",
+              "label": "befriended by, as Millarca",
+              "kind": "friendship",
+              "stages": [
+                "generals-story"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "countess",
+          "name": "The Countess",
+          "role": "The lady in black velvet who poses as Carmilla’s mother",
+          "summary": "Stately, commanding and theatrical, she appears twice: at Count Carlsfeld’s masquerade, where she intrigues the General with incidents from his past, and at Laura’s gate after the carriage accident. Each time she pleads urgent business of life and death, leaves her daughter with strangers and insists on secrecy. A grinning woman in a turban watches from her carriage window, and at the ball she is attended by a gentleman in black whose face is the palest the General has ever seen.",
+          "clue": "Twice she leaves her daughter with a stranger, each time on urgent business of life and death, and each time demands secrecy.",
+          "firstAppearance": "Chapter II",
+          "traits": [
+            "stately",
+            "persuasive",
+            "mysterious"
+          ],
+          "relationships": [
+            {
+              "to": "carmilla",
+              "label": "poses as the mother of",
+              "kind": "ally",
+              "stages": [
+                "arrival",
+                "generals-story"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "perrodon",
+          "name": "Madame Perrodon",
+          "role": "Laura’s governess, from Berne",
+          "summary": "Fat, middle-aged, good-natured and romantic, she has looked after Laura since infancy and in part made up to her for the loss of her mother. She thinks Carmilla the prettiest creature she ever saw. The doctor tells her never to leave Laura alone, and she is standing in the chapel passage when Carmilla vanishes, and sitting up in Laura’s room that night.",
+          "clue": "A good-natured woman from Berne with a fat, benignant face, who has been the narrator’s nearest thing to a mother since infancy.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "kindly",
+            "romantic"
+          ],
+          "relationships": [
+            {
+              "to": "laura",
+              "label": "governess to",
+              "kind": "service",
+              "stages": [
+                "arrival",
+                "descent",
+                "generals-story",
+                "execution"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lafontaine",
+          "name": "Mademoiselle De Lafontaine",
+          "role": "The finishing governess",
+          "summary": "Her father was German, and so she is assumed to be psychological, metaphysical and something of a mystic. She believes that the full moon acts on dreams, on lunacy and on nervous people. She alone noticed the grinning woman in the carriage, and she passes on a servant’s story of a female figure in the lime-tree walk.",
+          "clue": "She tells of a cousin whose face was drawn to one side after he slept on deck in the full moon.",
+          "firstAppearance": "Chapter I",
+          "traits": [
+            "fanciful",
+            "observant"
+          ],
+          "relationships": [
+            {
+              "to": "laura",
+              "label": "teaches",
+              "kind": "service",
+              "stages": [
+                "arrival",
+                "descent"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vordenburg",
+          "name": "Baron Vordenburg",
+          "role": "A scholar of vampirism living on a pittance in Gratz",
+          "summary": "Tall, narrow-chested and stooping, with gold spectacles and old black gloves far too wide for his hands, he knows every work on vampires and has drawn rules from a digest of the judicial cases. His ancestor was the Moravian nobleman, in truth a native of Upper Styria, who had loved Mircalla in his youth and hid her tomb to save her body from outrage. That ancestor’s tracings, notes and confession lead the Baron to the grave.",
+          "clue": "Living on a pittance, he finds a lost marble tablet in a ruined chapel by pacing out distances from an ancestor’s notes.",
+          "firstAppearance": "Chapter XV",
+          "traits": [
+            "learned",
+            "eccentric",
+            "methodical"
+          ],
+          "relationships": [
+            {
+              "to": "general",
+              "label": "guides",
+              "kind": "ally",
+              "stages": [
+                "execution"
+              ]
+            },
+            {
+              "to": "carmilla",
+              "label": "finds the tomb of",
+              "kind": "enemy",
+              "stages": [
+                "execution"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hunchback",
+          "name": "The hunchback",
+          "role": "A travelling pedlar and showman",
+          "summary": "He comes to the schloss about twice a year with his fiddle, his magic-lantern, a salamander and a mandrake stitched together from the dried parts of animals, and a dog that will not cross the drawbridge. He sells the girls charms against the oupire and offers to file down Carmilla’s sharp tooth, which provokes the second and last show of temper Laura ever sees in her.",
+          "clue": "His dog howls and will not follow him over the drawbridge, and he sells slips of vellum to pin to the pillow.",
+          "firstAppearance": "Chapter IV",
+          "traits": [
+            "voluble",
+            "sharp-eyed"
+          ],
+          "relationships": [
+            {
+              "to": "laura",
+              "label": "sells a charm to",
+              "kind": "service",
+              "stages": [
+                "intimacy"
+              ]
+            },
+            {
+              "to": "carmilla",
+              "label": "angers",
+              "kind": "enemy",
+              "stages": [
+                "intimacy"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "desire",
+          "name": "Desire between women",
+          "canonicalName": "Desire",
+          "summary": "Carmilla’s love for Laura is written in the language of romance: embraces, kisses, murmured declarations, breathing so fast that her dress rises and falls. Laura feels a pleasurable, tumultuous excitement mingled with fear and disgust, and describes a love growing into adoration and also into abhorrence. She even wonders whether a boyish lover is visiting in disguise. The story links the desire to predation and death, and it never pretends that the attraction is anything but real.",
+          "development": "The first night’s embrace; You are mine, you shall be mine; I live in you; love is always selfish; the vampire’s passion resembling the passion of love; the light step at the door."
+        },
+        {
+          "id": "vampirism",
+          "name": "The vampire",
+          "canonicalName": "The vampire",
+          "summary": "Le Fanu’s vampire is beautiful, aristocratic and languid, with the look of healthy life: the Baron dismisses deathly pallor as a melodramatic fiction. She must return to her grave for some hours every day, appears as a monstrous cat, passes through locked doors, is bound to anagrams of her own name, and courts a chosen victim slowly. The peasants call it the oupire. The lore comes from eighteenth-century reports and treatises, several of which Laura names from the Baron’s library.",
+          "development": "Two needles in the breast; the sharp tooth; a portrait of 1698; the cat; the stain of blood; the coffin floating in blood; the laws of vampires in chapter XVI."
+        },
+        {
+          "id": "isolation",
+          "name": "Isolation",
+          "canonicalName": "Isolation",
+          "summary": "From the castle gate the forest runs fifteen miles one way and twelve the other, the nearest inhabited village is seven miles off, and Laura’s friends of her own age are only occasional visitors. Her loneliness is why she begs her father to keep the stranger, why the General’s cancelled visit hurts, and why Carmilla’s fondness flatters her. Solitude is the vampire’s opportunity, and years afterwards Laura still finds solitude insupportably terrific.",
+          "development": "A small income goes a great way; you, who live in towns; a guest; a father quite out of hearing at the far side of the house; more than a year in Italy."
+        },
+        {
+          "id": "evidence",
+          "name": "Testimony and proof",
+          "canonicalName": "Evidence and testimony",
+          "summary": "The story comes to us as a document: a paper from a doctor’s collection, written with conscientious particularity, containing a general’s eyewitness account, a woodman’s tradition, an ancestor’s written confession and the report of an Imperial Commission signed by all present. Laura argues that human testimony gathered judicially makes the vampire difficult to doubt. The piling up of evidence is how Le Fanu makes the supernatural credible to a sceptical reader.",
+          "development": "Hesselius’s note; the General’s letter; the Gratz doctor’s letter, to be opened before a priest; the Moravian’s journals; the report of the Imperial Commission; the Baron’s digest of judicial cases."
+        },
+        {
+          "id": "superstition",
+          "name": "Superstition",
+          "canonicalName": "Superstition",
+          "summary": "Laura’s father explains everything by natural causes: the peasants infect one another with their superstitions, Carmilla walked in her sleep, and a doctor who hints at something else is teased about hippogriffs and dragons. Carmilla herself talks like a materialist. All things proceed from Nature, she says, and the charm works because it is simply natural. The story then proves the superstition true, and the father’s rationalism, like the General’s former incredulity, is what gives the vampire her chance.",
+          "development": "The charm against the oupire; strictly referable to natural causes; hippogriffs and dragons; my conceited incredulity; the ancient and well-attested belief of the country."
+        },
+        {
+          "id": "memory",
+          "name": "Memory",
+          "canonicalName": "Memory",
+          "summary": "Laura writes years after the events, and she warns that the scenes in which our passions were most wildly roused are the ones most dimly remembered. The story begins with a memory from the age of six that was never effaced, and ends with her admitting that Carmilla still returns to her memory in two forms, the playful girl and the writhing fiend. What the vampire leaves behind is a memory that will not settle.",
+          "development": "The face at six; Eight years have passed; after an interval of more than ten years; the portrait; ambiguous alternations; a light step at the drawing-room door."
+        },
+        {
+          "id": "inheritance",
+          "name": "Ancestry",
+          "canonicalName": "Inheritance and succession",
+          "summary": "The Karnsteins were a bad family whose blood-stained annals were written in their castle, and Laura’s mother was descended from them. The portrait of Mircalla comes to the schloss among the pictures inherited through her mother, Carmilla claims the same long descent, and the Baron who ends the story bears the title of the man who loved Mircalla and hid her. The past of great families does not stay buried here.",
+          "development": "The ruined village; Marcia Karnstein on the picture list; I am descended from the Karnsteins; the Moravian nobleman’s confession; the heir of Vordenburg."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "frame-narrative",
+          "name": "The Hesselius frame",
+          "canonicalName": "Frame narrative",
+          "definition": "A story told inside another story, so that every account reaches the reader through somebody with an interest in it.",
+          "bookDefinition": "A story placed inside another story or presented by an outside voice.",
+          "inThisBook": "An unnamed editor introduces the narrative as a paper from the collection of Doctor Hesselius and declines to summarise the Doctor’s reasoning about it. The frame promises a learned explanation and withholds it, and it tells us before the story starts that the narrator has died."
+        },
+        {
+          "id": "retrospective-narration",
+          "name": "Laura’s retrospect",
+          "canonicalName": "Retrospective narration",
+          "definition": "A narrator telling their own earlier life, with the distance between the two selves doing the judging.",
+          "bookDefinition": "An account given after the event by a narrator who already knows how it ends.",
+          "inThisBook": "Laura writes knowing the outcome and lets it colour the telling: Heavens! If I had but known all! Her sense of time wavers, eight years since the events in chapter I and more than ten in chapter IV, and she admits that the moments of strongest feeling are the ones she remembers least clearly."
+        },
+        {
+          "id": "direct-address",
+          "name": "Address to a town lady",
+          "canonicalName": "Direct address",
+          "definition": "A narrator or speaker turning outward to address the reader or the audience by name.",
+          "bookDefinition": "A speaker turning to address the reader, or someone within the story, directly.",
+          "inThisBook": "Laura writes to a correspondent who lives in a town and cannot imagine her solitude: you, who live in towns; a town lady like you. Her last chapter says she wrote only because this reader asked her so often. The address makes the story a confession to a particular listener, and explains why she dwells on how lonely the schloss was."
+        },
+        {
+          "id": "embedded-history",
+          "name": "Embedded histories",
+          "canonicalName": "Embedded histories",
+          "definition": "A second, older story told by a character to explain the present one.",
+          "bookDefinition": "A second, older story told by a character to explain the present one.",
+          "inThisBook": "The General’s story, begun on the drive to Karnstein and finished in the chapel, repeats Laura’s own in every detail: a stranger’s daughter left in care, languor, locked doors, dreams, needles, strangulation. Laura hears her own symptoms described as those of a girl who died, and by the time he has finished she knows who her guest is."
+        },
+        {
+          "id": "doubling",
+          "name": "Doubles and anagrams",
+          "canonicalName": "Doubling",
+          "definition": "Characters or situations that mirror one another.",
+          "bookDefinition": "Characters or situations that mirror one another.",
+          "inThisBook": "Carmilla, Millarca and Mircalla are one person under three arrangements of the same letters. Laura and Bertha are doubled victims, and the portrait of 1698 doubles the living guest. Carmilla’s dream of Laura mirrors Laura’s memory of her."
+        },
+        {
+          "id": "gothic",
+          "name": "Gothic conventions",
+          "canonicalName": "Gothic machinery",
+          "definition": "The stock furniture of Gothic writing — the ruin, the storm, the locked room, the buried secret — put to a particular use.",
+          "bookDefinition": "The furniture of Gothic fiction: ruins, tombs, castles, moonlight and secrets.",
+          "inThisBook": "Le Fanu uses the full furniture of the Gothic: a schloss with a moat and a Gothic chapel, moonlight on the mist, a ruined village and a roofless church full of tombs, a portrait restored from the dark. He uses it with restraint, and sets it against a cosy household of tea, cards and governesses."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "Objects and omens",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative comes back to until it stands for the argument itself.",
+          "bookDefinition": "Objects that carry meaning beyond their use in the plot.",
+          "inThisBook": "The portrait that lives, the pedlar’s charm pinned to the pillow, the key always turned in Carmilla’s lock, the hatchet that falls from the General’s hand and the Commission’s signed report each stand for a way of knowing, or of warding off, what cannot be known."
+        },
+        {
+          "id": "prophecy",
+          "name": "Foreshadowing",
+          "canonicalName": "Prophecy",
+          "definition": "A statement about the future that shapes the action by being believed, whether or not it is true.",
+          "bookDefinition": "Hints early in a story of what is to come.",
+          "inThisBook": "Needles in the nursery, the father’s feeling that some great misfortune is hanging over them, the General’s letter about a fiend, the dying peasants, the hunchback’s remark about the sharp tooth: the reader knows long before Laura does, and the suspense lies in her not knowing."
+        },
+        {
+          "id": "register",
+          "name": "Shifts of register",
+          "canonicalName": "Shifts of register",
+          "definition": "A move from one kind of language to another, such as from the intimate to the official.",
+          "bookDefinition": "A move from one kind of language to another, such as from the intimate to the official.",
+          "inThisBook": "Laura’s narrative moves from the language of romance and dream to the language of the law. The last two chapters summarise an official report, cite commissions and judicial cases, and set out the vampire’s condition as a system of principles. The dry, measured prose makes the horrors seem certified."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "dual-existence",
+          "text": "involving, not improbably, some of the profoundest arcana of our dual existence, and its intermediates.",
+          "speaker": "",
+          "reference": "Prologue",
+          "stage": "arrival",
+          "context": "The editor quotes Doctor Hesselius’s description of the subject the narrative illustrates.",
+          "analysis": "Hesselius’s phrase promises a learned explanation, and the editor then declines to give it. The words are grand and vague, suggesting that vampirism belongs to a borderland between body and spirit. Le Fanu hints at a scientific account of the supernatural and leaves the reader alone with the narrative.",
+          "themes": [
+            "evidence"
+          ],
+          "techniques": [
+            "frame-narrative"
+          ],
+          "characters": [],
+          "source": "1872 text, Prologue",
+          "cloze": [
+            "arcana",
+            "dual"
+          ]
+        },
+        {
+          "id": "two-needles",
+          "text": "I was wakened by a sensation as if two needles ran into my breast very deep at the same moment, and I cried loudly.",
+          "speaker": "",
+          "reference": "Chapter I",
+          "stage": "arrival",
+          "context": "At six, Laura has been soothed to sleep by a beautiful young woman who lay down beside her in the nursery.",
+          "analysis": "Laura’s first wound comes years before her first meeting with Carmilla. A child is comforted, embraced and then pierced, and the servants find no mark and fetch a priest to pray. Two needles return in the dream of the cat, in the doctor’s questions and in Bertha’s illness, so this memory, which she says was never effaced, holds the key to everything that follows.",
+          "themes": [
+            "vampirism",
+            "memory"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "laura"
+          ],
+          "source": "1872 text, chapter I",
+          "cloze": [
+            "needles",
+            "breast"
+          ]
+        },
+        {
+          "id": "fiend-betrayed",
+          "text": "The fiend who betrayed our infatuated hospitality has done it all.",
+          "speaker": "General Spielsdorf",
+          "reference": "Chapter II",
+          "stage": "arrival",
+          "context": "The General’s letter announcing Bertha’s death, which Laura reads aloud to her father.",
+          "analysis": "Laura and her father take the letter for the ravings of grief, and on that same evening they open their own door to a stranger. Infatuated hospitality is exactly what they are about to practise. The General’s self-reproach for his conceited incredulity warns the reader to distrust the father’s calm good sense.",
+          "themes": [
+            "superstition",
+            "isolation"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "general",
+            "bertha"
+          ],
+          "source": "1872 text, chapter II",
+          "cloze": [
+            "fiend",
+            "hospitality"
+          ]
+        },
+        {
+          "id": "twelve-years-ago",
+          "text": "Twelve years ago, I saw your face in a dream, and it has haunted me ever since.",
+          "speaker": "Carmilla",
+          "reference": "Chapter III",
+          "stage": "arrival",
+          "context": "Laura has recoiled on recognising, in her guest’s bed, the face from her childhood night.",
+          "analysis": "Carmilla answers Laura’s horror with a romance of destiny. She claims to have dreamed the same night from the other side, and her account matches Laura’s in every detail, down to the room and the scream. Her strange fixed smile of recognition suggests she remembers more than a dream, and she goes on to claim a right to Laura’s intimacy.",
+          "themes": [
+            "memory",
+            "desire"
+          ],
+          "techniques": [
+            "doubling"
+          ],
+          "characters": [
+            "carmilla",
+            "laura"
+          ],
+          "source": "1872 text, chapter III",
+          "cloze": [
+            "dream",
+            "haunted"
+          ]
+        },
+        {
+          "id": "drawn-towards",
+          "text": "I did feel, as she said, “drawn towards her,” but there was also something of repulsion.",
+          "speaker": "",
+          "reference": "Chapter III",
+          "stage": "arrival",
+          "context": "After their first conversation, Laura tries to describe her feelings for the stranger.",
+          "analysis": "Here is the story’s emotional formula, stated at the start: attraction and repulsion together, with attraction immensely prevailing. Laura is scrupulous about naming each feeling, and her honesty makes her a convincing witness. Everything that follows keeps the two feelings alive side by side.",
+          "themes": [
+            "desire"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "laura",
+            "carmilla"
+          ],
+          "source": "1872 text, chapter III",
+          "cloze": [
+            "drawn",
+            "repulsion"
+          ]
+        },
+        {
+          "id": "three-facts",
+          "text": "First.—Her name was Carmilla. Second.—Her family was very ancient and noble. Third.—Her home lay in the direction of the west.",
+          "speaker": "",
+          "reference": "Chapter IV",
+          "stage": "intimacy",
+          "context": "All Carmilla will reveal about herself, however Laura presses her.",
+          "analysis": "Each fact is true, and each is a joke at Laura’s expense. Her name is an anagram of her real one, her family is so ancient that it is extinct, and west is the direction of the Karnstein ruins, three miles away. Laura sets the facts out like numbered evidence, and it is evidence she cannot yet read.",
+          "themes": [
+            "inheritance",
+            "evidence"
+          ],
+          "techniques": [
+            "doubling",
+            "prophecy"
+          ],
+          "characters": [
+            "carmilla"
+          ],
+          "source": "1872 text, chapter IV",
+          "cloze": [
+            "ancient",
+            "west"
+          ]
+        },
+        {
+          "id": "die-into-mine",
+          "text": "In the rapture of my enormous humiliation I live in your warm life, and you shall die—die, sweetly die—into mine.",
+          "speaker": "Carmilla",
+          "reference": "Chapter IV",
+          "stage": "intimacy",
+          "context": "One of the rhapsodies Carmilla murmurs with her cheek against Laura’s.",
+          "analysis": "In the language of romance, Carmilla tells the literal truth. She does live on Laura’s life, and Laura is dying into hers. The humiliation she speaks of is her subjection to what she calls the irresistible law of her strength and weakness. Laura hears only a strange intensity; the reader hears a confession.",
+          "themes": [
+            "desire",
+            "vampirism"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "carmilla",
+            "laura"
+          ],
+          "source": "1872 text, chapter IV",
+          "cloze": [
+            "rapture",
+            "humiliation"
+          ]
+        },
+        {
+          "id": "adoration-abhorrence",
+          "text": "I was conscious of a love growing into adoration, and also of abhorrence. This I know is paradox, but I can make no other attempt to explain the feeling.",
+          "speaker": "",
+          "reference": "Chapter IV",
+          "stage": "intimacy",
+          "context": "Laura describes her feelings during Carmilla’s passionate moods.",
+          "analysis": "Laura does not tidy her feelings. She admits pleasure, fear and disgust together, and calls the result a paradox. This candour is why the story has been read as one of the first frank accounts of desire between women in English fiction, and why the question of what Laura felt stays open to the last page.",
+          "themes": [
+            "desire"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "laura",
+            "carmilla"
+          ],
+          "source": "1872 text, chapter IV",
+          "cloze": [
+            "adoration",
+            "abhorrence"
+          ]
+        },
+        {
+          "id": "you-are-mine",
+          "text": "“You are mine, you shall be mine, you and I are one for ever.”",
+          "speaker": "Carmilla",
+          "reference": "Chapter IV",
+          "stage": "intimacy",
+          "context": "Whispered almost in sobs, as her hot lips travel along Laura’s cheek.",
+          "analysis": "Possession is what lovers and vampires alike claim. Laura is embarrassed and overpowered and asks whether they are related. In a sense they are, since Laura’s mother was descended from the Karnsteins, and one for ever is also the vampire’s promise to make her victim what she is.",
+          "themes": [
+            "desire",
+            "vampirism",
+            "inheritance"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "carmilla",
+            "laura"
+          ],
+          "source": "1872 text, chapter IV",
+          "cloze": [
+            "mine",
+            "ever"
+          ]
+        },
+        {
+          "id": "everyone-must-die",
+          "text": "Why you must die—everyone must die; and all are happier when they do. Come home.",
+          "speaker": "Carmilla",
+          "reference": "Chapter IV",
+          "stage": "intimacy",
+          "context": "A peasant girl’s funeral passes, and Laura joins in the hymn.",
+          "analysis": "Death, for Carmilla, is simply what everyone does, and all are happier after it: the view of someone who has been dead a long time. The hymn hurts her ears, and her fit on the bench afterwards is the first sign Laura sees of the delicate health her mother spoke of, and of what she really is.",
+          "themes": [
+            "vampirism"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "carmilla",
+            "laura"
+          ],
+          "source": "1872 text, chapter IV",
+          "cloze": [
+            "die",
+            "happier"
+          ]
+        },
+        {
+          "id": "sharpest-tooth",
+          "text": "Your noble friend, the young lady at your right, has the sharpest tooth,—long, thin, pointed, like an awl, like a needle; ha, ha!",
+          "speaker": "The hunchback",
+          "reference": "Chapter IV",
+          "stage": "intimacy",
+          "context": "The travelling pedlar, having sold them charms against the oupire, offers his services as a dentist.",
+          "analysis": "An outsider sees at a glance what the household will not. Like a needle recalls Laura’s childhood wound, and the offer to file the tooth round and blunt provokes the second and last show of temper Laura ever sees in Carmilla: she would have him flogged and branded. The comic pedlar, whose dog will not cross the drawbridge, is the story’s best detective.",
+          "themes": [
+            "vampirism",
+            "superstition"
+          ],
+          "techniques": [
+            "prophecy",
+            "symbolic-objects"
+          ],
+          "characters": [
+            "hunchback",
+            "carmilla"
+          ],
+          "source": "1872 text, chapter IV",
+          "cloze": [
+            "tooth",
+            "needle"
+          ]
+        },
+        {
+          "id": "all-things-nature",
+          "text": "And this disease that invades the country is natural. Nature. All things proceed from Nature—don’t they?",
+          "speaker": "Carmilla",
+          "reference": "Chapter IV",
+          "stage": "intimacy",
+          "context": "Laura’s father has said that nothing can happen without God’s permission, since He is our faithful creator. She answers: Creator! Nature!",
+          "analysis": "Le Fanu puts the age’s rationalism into the mouth of its oldest superstition. Carmilla scorns the Creator, which fits what she is, and agrees with the father that the epidemic is natural, which is exactly the belief that protects her.",
+          "themes": [
+            "superstition"
+          ],
+          "techniques": [
+            "doubling"
+          ],
+          "characters": [
+            "carmilla",
+            "father"
+          ],
+          "source": "1872 text, chapter IV",
+          "cloze": [
+            "Nature",
+            "disease"
+          ]
+        },
+        {
+          "id": "effigy",
+          "text": "It was quite beautiful; it was startling; it seemed to live. It was the effigy of Carmilla!",
+          "speaker": "",
+          "reference": "Chapter V",
+          "stage": "intimacy",
+          "context": "A restored portrait, listed as Marcia Karnstein and inscribed Mircalla, Countess Karnstein, 1698, is unpacked in the hall.",
+          "analysis": "The painting seems to live because its sitter does. Laura notices even the mole on the throat, and her father, oddly, looks away. The picture came to the family through Laura’s mother, and Laura asks to hang it in her own room: the past moves into her bedroom with her blessing.",
+          "themes": [
+            "inheritance",
+            "vampirism"
+          ],
+          "techniques": [
+            "doubling",
+            "symbolic-objects"
+          ],
+          "characters": [
+            "carmilla",
+            "laura",
+            "father"
+          ],
+          "source": "1872 text, chapter V",
+          "cloze": [
+            "effigy",
+            "startling"
+          ]
+        },
+        {
+          "id": "i-live-in-you",
+          "text": "“Darling, darling,” she murmured, “I live in you; and you would die for me, I love you so.”",
+          "speaker": "Carmilla",
+          "reference": "Chapter V",
+          "stage": "intimacy",
+          "context": "Walking by moonlight to the drawbridge, the night the portrait arrives.",
+          "analysis": "Straight after the portrait has identified her, Carmilla makes a declaration that is again literally true. Laura starts away and finds her eyes emptied of all fire and meaning, as if the words had come from somewhere else. The switch from passion to apathy is the pattern of her moods throughout.",
+          "themes": [
+            "desire",
+            "vampirism"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "carmilla",
+            "laura"
+          ],
+          "source": "1872 text, chapter V",
+          "cloze": [
+            "live",
+            "die"
+          ]
+        },
+        {
+          "id": "love-is-selfish",
+          "text": "You will think me cruel, very selfish, but love is always selfish; the more ardent the more selfish.",
+          "speaker": "Carmilla",
+          "reference": "Chapter VI",
+          "stage": "intimacy",
+          "context": "Laura has asked whether she will ever confide in her fully.",
+          "analysis": "Carmilla’s theory of love is her own nature stated as a general truth. She goes on to say that Laura must come with her, loving her, to death, or hating her through death and after, since there is no such word as indifference in her nature. It is the plainest warning she gives, and Laura calls it wild nonsense.",
+          "themes": [
+            "desire"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "carmilla",
+            "laura"
+          ],
+          "source": "1872 text, chapter VI",
+          "cloze": [
+            "selfish",
+            "ardent"
+          ]
+        },
+        {
+          "id": "laugh-at-locksmiths",
+          "text": "But dreams come through stone walls, light up dark rooms, or darken light ones, and their persons make their exits and their entrances as they please, and laugh at locksmiths.",
+          "speaker": "",
+          "reference": "Chapter VI",
+          "stage": "intimacy",
+          "context": "Laura has taken up Carmilla’s habit of locking her door and searching her room before bed.",
+          "analysis": "Wit and menace sit together in this sentence, which borrows its exits and entrances from Shakespeare. Laura thinks she is talking about dreams; the reader suspects that what visits her is no dream. Locked doors run through the story, and none of them stops anything.",
+          "themes": [
+            "vampirism"
+          ],
+          "techniques": [
+            "prophecy",
+            "symbolic-objects"
+          ],
+          "characters": [
+            "laura"
+          ],
+          "source": "1872 text, chapter VI",
+          "cloze": [
+            "locksmiths",
+            "walls"
+          ]
+        },
+        {
+          "id": "descent-of-avernus",
+          "text": "The first change I experienced was rather agreeable. It was very near the turning point from which began the descent of Avernus.",
+          "speaker": "",
+          "reference": "Chapter VII",
+          "stage": "descent",
+          "context": "Laura describes the early stages of her illness.",
+          "analysis": "Avernus is the classical entrance to the underworld, and Virgil wrote that the descent is easy. Laura’s illness begins as pleasure: a cold thrill like bathing against a river’s current, deep sleep, an almost luxurious lassitude. By placing the pleasure so near the turning point, she makes the seduction part of the harm.",
+          "themes": [
+            "vampirism",
+            "desire"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "laura"
+          ],
+          "source": "1872 text, chapter VII",
+          "cloze": [
+            "agreeable",
+            "Avernus"
+          ]
+        },
+        {
+          "id": "poor-laura",
+          "text": "I wish my poor Laura was looking more like herself",
+          "speaker": "Laura’s father",
+          "reference": "Chapter VIII",
+          "stage": "descent",
+          "context": "He has just explained Carmilla’s disappearance as sleepwalking, and looks at the two girls side by side.",
+          "analysis": "For the first time the narrator is named, just as she begins to fade. Carmilla looks charming, with beautiful colour; Laura does not look like herself. Her father makes the comparison without understanding it, and it is the vampire’s arithmetic: one girl’s bloom is paid for by the other’s.",
+          "themes": [
+            "vampirism"
+          ],
+          "techniques": [
+            "doubling"
+          ],
+          "characters": [
+            "father",
+            "laura",
+            "carmilla"
+          ],
+          "source": "1872 text, chapter VIII",
+          "cloze": [
+            "poor",
+            "herself"
+          ]
+        },
+        {
+          "id": "preternatural-conspiracy",
+          "text": "I have been made the dupe of a preternatural conspiracy.",
+          "speaker": "General Spielsdorf",
+          "reference": "Chapter X",
+          "stage": "generals-story",
+          "context": "On the road to Karnstein, the General prepares his old friend for his story.",
+          "analysis": "A soldier who requires proof uses the language of a court martial for the supernatural. Laura’s father glances at him with suspicion of his sanity, the same suspicion the General once felt about the doctor from Gratz. The sceptics stay in play until the evidence overwhelms them.",
+          "themes": [
+            "evidence",
+            "superstition"
+          ],
+          "techniques": [
+            "embedded-history"
+          ],
+          "characters": [
+            "general",
+            "father"
+          ],
+          "source": "1872 text, chapter X",
+          "cloze": [
+            "dupe",
+            "conspiracy"
+          ]
+        },
+        {
+          "id": "pious-sacrilege",
+          "text": "I mean to unearth some of those fine people. I hope, by God’s blessing, to accomplish a pious sacrilege here",
+          "speaker": "General Spielsdorf",
+          "reference": "Chapter X",
+          "stage": "generals-story",
+          "context": "Laura’s father has joked that the General must be thinking of claiming the Karnstein title and estates.",
+          "analysis": "Pious sacrilege is the story’s oxymoron for the vampire hunt: opening graves in God’s name. The General’s fierce joke about fine people aims his anger at the aristocracy of the dead as well as at one vampire. The Commission in chapter XV will carry out his sacrilege with official signatures.",
+          "themes": [
+            "inheritance",
+            "vampirism"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "general",
+            "father"
+          ],
+          "source": "1872 text, chapter X",
+          "cloze": [
+            "pious",
+            "sacrilege"
+          ]
+        },
+        {
+          "id": "not-so-dead",
+          "text": "Not so dead as you fancy, I am told",
+          "speaker": "General Spielsdorf",
+          "reference": "Chapter XIII",
+          "stage": "generals-story",
+          "context": "Laura’s father has objected that Countess Mircalla has been dead more than a century.",
+          "analysis": "The General’s grim quip is also the plainest statement of the plot so far. He has just called the Karnsteins a bad family whose blood-stained annals were written in this castle, and before he has finished his story the countess walks into the chapel.",
+          "themes": [
+            "inheritance",
+            "vampirism"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "general",
+            "father"
+          ],
+          "source": "1872 text, chapter XIII",
+          "cloze": [
+            "dead",
+            "fancy"
+          ]
+        },
+        {
+          "id": "palpitating-mass",
+          "text": "I saw a large black object, very ill-defined, crawl, as it seemed to me, over the foot of the bed, and swiftly spread itself up to the poor girl’s throat, where it swelled, in a moment, into a great, palpitating mass.",
+          "speaker": "General Spielsdorf",
+          "reference": "Chapter XIV",
+          "stage": "generals-story",
+          "context": "Watching from a dark dressing-room on the Gratz doctor’s instructions, the night his ward died.",
+          "analysis": "Only once is the vampire seen feeding, and then it has no clear shape at all. Le Fanu keeps the horror formless, a black mass that swells, and only when the General springs forward with his sword does he see Millarca. The formlessness is more frightening than fangs would be, and it matches Laura’s dream of the sooty-black beast.",
+          "themes": [
+            "vampirism"
+          ],
+          "techniques": [
+            "embedded-history",
+            "gothic"
+          ],
+          "characters": [
+            "general",
+            "carmilla",
+            "bertha"
+          ],
+          "source": "1872 text, chapter XIV",
+          "cloze": [
+            "palpitating",
+            "throat"
+          ]
+        },
+        {
+          "id": "floated-with-blood",
+          "text": "the leaden coffin floated with blood, in which to a depth of seven inches, the body lay immersed.",
+          "speaker": "",
+          "reference": "Chapter XV",
+          "stage": "execution",
+          "context": "The Imperial Commission opens the grave of Mircalla, Countess Karnstein.",
+          "analysis": "Laura summarises the scene from an official report, and the flat, measured tone makes it worse: seven inches of blood, recorded as a fact. The body is warm, breathing and flexible, all the admitted signs and proofs of vampirism. The execution that follows is carried out according to ancient practice and signed by every witness.",
+          "themes": [
+            "evidence",
+            "vampirism"
+          ],
+          "techniques": [
+            "register",
+            "gothic"
+          ],
+          "characters": [
+            "carmilla"
+          ],
+          "source": "1872 text, chapter XV",
+          "cloze": [
+            "coffin",
+            "blood"
+          ]
+        },
+        {
+          "id": "human-testimony",
+          "text": "If human testimony, taken with every care and solemnity, judicially, before commissions innumerable ... is worth anything, it is difficult to deny, or even to doubt the existence of such a phenomenon as the Vampire.",
+          "speaker": "",
+          "reference": "Chapter XV",
+          "stage": "execution",
+          "context": "Laura explains why she now believes what she once called superstition.",
+          "analysis": "Like a lawyer, Laura appeals to the number and solemnity of the witnesses. The vampire panics of the eighteenth-century Habsburg lands really did produce official reports, and the argument makes the tale feel documented. It also shows how testimony can prove almost anything if enough solemn men agree.",
+          "themes": [
+            "evidence",
+            "superstition"
+          ],
+          "techniques": [
+            "register",
+            "frame-narrative"
+          ],
+          "characters": [
+            "laura"
+          ],
+          "source": "1872 text, chapter XV",
+          "cloze": [
+            "testimony",
+            "Vampire"
+          ]
+        },
+        {
+          "id": "passion-of-love",
+          "text": "The vampire is prone to be fascinated with an engrossing vehemence, resembling the passion of love, by particular persons.",
+          "speaker": "",
+          "reference": "Chapter XVI",
+          "stage": "execution",
+          "context": "Laura summarises the laws of the vampire as Baron Vordenburg taught them.",
+          "analysis": "The Baron’s rule explains Carmilla’s love for Laura by comparison: something resembling love. The next sentences describe an artful courtship that seems to yearn for sympathy and consent. The lore gives Laura a way of understanding what happened to her that neither denies the feeling nor calls it love outright.",
+          "themes": [
+            "desire",
+            "vampirism"
+          ],
+          "techniques": [
+            "register"
+          ],
+          "characters": [
+            "vordenburg",
+            "carmilla"
+          ],
+          "source": "1872 text, chapter XVI",
+          "cloze": [
+            "vehemence",
+            "passion"
+          ]
+        },
+        {
+          "id": "anagram",
+          "text": "Mircalla seemed to be limited to a name which, if not her real one, should at least reproduce, without the omission or addition of a single letter, those, as we say, anagrammatically, which compose it.",
+          "speaker": "",
+          "reference": "Chapter XVI",
+          "stage": "execution",
+          "context": "One of the special conditions the Baron’s study of vampires has discovered.",
+          "analysis": "A rule of spelling binds the vampire. Carmilla and Millarca are anagrams of Mircalla, so her disguises are also her signature. The detail is a puzzle a reader could have solved, and it is typical of the story’s pleasure in documents, names and evidence hidden in plain sight.",
+          "themes": [
+            "vampirism",
+            "evidence"
+          ],
+          "techniques": [
+            "doubling"
+          ],
+          "characters": [
+            "carmilla"
+          ],
+          "source": "1872 text, chapter XVI",
+          "cloze": [
+            "anagrammatically",
+            "letter"
+          ]
+        },
+        {
+          "id": "ambiguous-alternations",
+          "text": "to this hour the image of Carmilla returns to memory with ambiguous alternations—sometimes the playful, languid, beautiful girl; sometimes the writhing fiend I saw in the ruined church",
+          "speaker": "",
+          "reference": "Chapter XVI",
+          "stage": "execution",
+          "context": "The last paragraph, after more than a year spent travelling in Italy.",
+          "analysis": "Nothing here ends in relief. Laura cannot settle which Carmilla was real, the girl she loved or the fiend in the chapel, and she still starts from reveries fancying she hears Carmilla’s light step at the door. The last image is of desire and fear alive in memory long after the stake.",
+          "themes": [
+            "memory",
+            "desire"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "laura",
+            "carmilla"
+          ],
+          "source": "1872 text, chapter XVI",
+          "cloze": [
+            "ambiguous",
+            "fiend"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "First published",
+          "value": "1871–1872",
+          "note": "In four monthly parts in The Dark Blue, a London magazine, from December 1871 to March 1872, with illustrations by D. H. Friston and Michael Fitzgerald."
+        },
+        {
+          "label": "In book form",
+          "value": "1872",
+          "note": "As the last of five tales in In a Glass Darkly, three volumes, published by Richard Bentley and Son."
+        },
+        {
+          "label": "The frame",
+          "value": "Doctor Hesselius",
+          "note": "Every tale in the book comes from the papers of Doctor Martin Hesselius, a German physician. Carmilla is a lady’s account of her own case, and the editor finds that she has since died."
+        },
+        {
+          "label": "The name",
+          "value": "An anagram",
+          "note": "Carmilla, Millarca and Mircalla use the same eight letters, a condition the vampire cannot escape."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "A love story between women",
+          "summary": "Many readers put the story’s account of desire between women at its centre. Carmilla’s courtship is written in the language of romantic love; Laura admits to adoration as well as abhorrence; and the ending leaves her still haunted by the girl as well as the fiend. On this view the vampire plot is a way of writing, in 1872, about a love that could not be named.",
+          "counter": "The story makes the desire predatory and deadly, and ends with a stake and a burning, which can be read as punishment of the thing it describes. Le Fanu’s Victorian readers could enjoy the frisson while the plot restores order, and some critics see the story as policing desire more than expressing it."
+        },
+        {
+          "position": "A case history",
+          "summary": "The Hesselius frame invites a psychological reading. Laura is a lonely, motherless girl in an isolated house, and her story, full of dreams, trances, lassitude and a childhood memory that shapes everything, reads like the kind of case a doctor like Hesselius would collect. The editor’s silence about the Doctor’s theory leaves a natural explanation open.",
+          "counter": "Too much in the story is witnessed by others for it to be only Laura’s mind: the General’s account, the doctor’s blue spot, the Commission’s report and the opened coffin. Le Fanu assembles the supernatural out of many testimonies precisely to close off the purely psychological reading."
+        },
+        {
+          "position": "An Anglo-Irish Gothic of decline",
+          "summary": "Some critics connect the story with Le Fanu’s Irish Protestant background: an old aristocratic family that survives by feeding on the living, a ruined estate, ancestral guilt, and English-speaking settlers in a foreign country who cannot see what is happening in their own house. The vampire becomes a figure for a dying class and its hold on the present.",
+          "counter": "The allegory has to be brought in from outside the text, which is set in Austria among German, French and English speakers and never mentions Ireland. Readers who find it persuasive rely on Le Fanu’s biography more than on anything Carmilla says."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does Le Fanu present the relationship between Laura and Carmilla?",
+          "focus": "Desire, fear and narration",
+          "plan": [
+            "Begin with the first meeting and the shared dream: destiny, recognition, attraction and repulsion.",
+            "Analyse Carmilla’s language of love in chapters IV to VI: I live in you, you shall be mine, love is always selfish.",
+            "Look at Laura’s account of her own feelings: adoration and abhorrence, the boyish lover in masquerade.",
+            "Consider how the vampire lore of chapter XVI describes the passion as something resembling love.",
+            "End with the ambiguous alternations of the last paragraph, and what they suggest about Laura’s feelings."
+          ]
+        },
+        {
+          "question": "How does Le Fanu make the supernatural convincing in Carmilla?",
+          "focus": "Frames, testimony and evidence",
+          "plan": [
+            "Examine the Prologue and the Hesselius frame: a case paper, an editor, a narrator who has died.",
+            "Show the accumulation of witnesses: the servants, the doctor, the General, the woodman, the Baron.",
+            "Analyse the doubling of Laura’s and Bertha’s stories, and the portrait and the anagram as clues.",
+            "Discuss the Imperial Commission, the official register of the last chapters, and Laura’s argument from human testimony.",
+            "Decide whether any doubt survives the evidence, and where."
+          ]
+        },
+        {
+          "question": "What is the role of reason and superstition in Carmilla?",
+          "focus": "The father, the General and the vampire",
+          "plan": [
+            "Start with the father’s natural causes and the pedlar’s charms.",
+            "Look at Carmilla’s own speeches on Nature, and why a vampire might prefer materialists.",
+            "Trace the General’s journey from conceited incredulity to pious sacrilege.",
+            "Consider the doctors: the father’s joke about hippogriffs and dragons, the physician who laughs, and the doctor from Gratz whose letter must be opened before a priest.",
+            "Evaluate what the story finally says about the limits of reason."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Why might Le Fanu frame the story as one of Doctor Hesselius’s cases and then withhold the Doctor’s explanation?",
+        "Is Carmilla’s love for Laura real?",
+        "Why does Laura’s father fail to see what is happening in his own house?",
+        "What does the hunchbacked pedlar notice that nobody else does?",
+        "Does the execution in chapter XV bring the story to an end?",
+        "How is Carmilla different from the vampires of later fiction and film?"
+      ],
+      "timeline": [
+        {
+          "year": 1725,
+          "label": "Peter Plogojowitz",
+          "detail": "An imperial official in Habsburg Serbia reports the opening of a peasant’s grave at Kisiljevo and the staking of a body believed to be a vampire.",
+          "kind": "context"
+        },
+        {
+          "year": 1732,
+          "label": "Visum et Repertum",
+          "detail": "An Austrian army surgeon’s report on the vampire cases at Medveđa, in Serbia, is reprinted and discussed across Europe. Laura’s commissions innumerable draw on this kind of record.",
+          "kind": "context"
+        },
+        {
+          "year": 1746,
+          "label": "Calmet’s treatise on revenants and vampires",
+          "detail": "Dom Augustin Calmet’s Dissertations on apparitions and on the revenants and vampires of Hungary, Bohemia, Moravia and Silesia, a source Le Fanu drew on. It tells of a Moravian village, Liebava, freed from a vampire by a Hungarian stranger who watched from the church tower and took its linen, as the woodman’s story does. Henry Christmas’s English translation, The Phantom World, appeared in 1850.",
+          "kind": "context"
+        },
+        {
+          "year": 1814,
+          "label": "Joseph Sheridan Le Fanu is born in Dublin",
+          "detail": "Into a family of Huguenot descent; he later owned and edited the Dublin University Magazine.",
+          "kind": "author"
+        },
+        {
+          "year": 1816,
+          "label": "Coleridge publishes Christabel",
+          "detail": "A poem in which a mysterious lady, taken in by a motherless girl and her father, casts a spell over her. Critics have long compared it with Carmilla.",
+          "kind": "context"
+        },
+        {
+          "year": 1864,
+          "label": "Uncle Silas",
+          "detail": "Le Fanu’s best-known novel, another story of an isolated young woman and a menacing guardian.",
+          "kind": "author"
+        },
+        {
+          "year": 1871,
+          "label": "Carmilla begins in The Dark Blue",
+          "detail": "The first of four monthly parts appears in December 1871 in a new London magazine, illustrated by D. H. Friston and Michael Fitzgerald.",
+          "kind": "work"
+        },
+        {
+          "year": 1872,
+          "label": "In a Glass Darkly",
+          "detail": "The serial ends in March, and Carmilla is collected with Green Tea, The Familiar, Mr Justice Harbottle and The Room in the Dragon Volant as cases from the papers of Doctor Hesselius.",
+          "kind": "work"
+        },
+        {
+          "year": 1873,
+          "label": "Le Fanu dies in Dublin",
+          "detail": "In February, the year after In a Glass Darkly appeared.",
+          "kind": "author"
+        },
+        {
+          "year": 1897,
+          "label": "Bram Stoker’s Dracula",
+          "detail": "The most famous vampire novel came a quarter of a century later, from another Dublin writer, whose early notes for it set the story in Styria.",
+          "kind": "reception"
+        },
+        {
+          "year": 1914,
+          "label": "Dracula’s Guest",
+          "detail": "A story from Stoker’s papers, published after his death, in which a traveller finds the tomb of a Countess Dolingen of Gratz in Styria.",
+          "kind": "reception"
+        },
+        {
+          "year": 1932,
+          "label": "Carl Theodor Dreyer’s Vampyr",
+          "detail": "A film based on In a Glass Darkly, which takes the bones of its vampire plot from Carmilla and a burial alive from The Room in the Dragon Volant.",
+          "kind": "reception"
+        },
+        {
+          "year": 1970,
+          "label": "The Vampire Lovers",
+          "detail": "Hammer Films’ adaptation, the first of three loosely based on the story.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Graz (Gratz), Styria",
+          "lat": 47.0707,
+          "lon": 15.4395,
+          "note": "The little capital from which the picture cleaner’s son brings the portrait of Mircalla, where the doctor who diagnoses Bertha lives, and where Baron Vordenburg lives on a pittance."
+        },
+        {
+          "name": "The Styrian forest",
+          "lat": 47.2,
+          "lon": 15.2,
+          "note": "An imagined landscape: the schloss, the ruined village of Karnstein three miles west, and General Spielsdorf’s schloss nearly twenty miles away."
+        },
+        {
+          "name": "Dublin",
+          "lat": 53.3498,
+          "lon": -6.2603,
+          "note": "Where Le Fanu was born, worked as a journalist and editor, and died in 1873."
+        },
+        {
+          "name": "London",
+          "lat": 51.5074,
+          "lon": -0.1278,
+          "note": "Where The Dark Blue was published, and where Richard Bentley and Son issued In a Glass Darkly."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/dracula/",
+          "why": "The vampire novel that followed twenty-five years later, by another Dublin writer, with a countess’s tomb in its cut opening and a learned vampire-hunter at its centre."
+        },
+        {
+          "href": "/books/selected-poems-of-samuel-taylor-coleridge/",
+          "why": "Christabel, the poem most often set beside Carmilla: a motherless girl, her father, and a beautiful stranger taken in at night."
+        },
+        {
+          "href": "/books/the-turn-of-the-screw/",
+          "why": "Another ghost story narrated in retrospect by a young woman in an isolated house, where the question is how far to trust what she saw."
+        },
+        {
+          "href": "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
+          "why": "A young woman confined and weakened in a house run by kindly, rational men who will not believe what is happening to her."
+        },
+        {
+          "href": "/books/m-r-james-collected-ghost-stories/",
+          "why": "M. R. James collected Le Fanu’s forgotten stories in Madam Crowl’s Ghost (1923) and ranked him among the best of all ghost-story writers."
         }
       ],
       "videos": []
