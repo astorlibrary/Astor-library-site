@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 107,
-    "quotations": 2511,
-    "characters": 1005,
-    "themes": 261,
-    "techniques": 262,
-    "timelineEvents": 1242,
-    "places": 610
+    "books": 108,
+    "quotations": 2553,
+    "characters": 1027,
+    "themes": 262,
+    "techniques": 264,
+    "timelineEvents": 1258,
+    "places": 620
   },
   "books": [
     {
@@ -31297,6 +31297,2045 @@
           "source": "British Library"
         }
       ]
+    },
+    {
+      "slug": "e-f-benson-ghost-stories",
+      "title": "E. F. Benson Ghost Stories",
+      "author": "E. F. Benson",
+      "href": "/books/e-f-benson-ghost-stories/",
+      "studyHref": "",
+      "playHref": "/play/?book=e-f-benson-ghost-stories",
+      "form": "story collection",
+      "genre": "Ghost story",
+      "period": "Modern Classics",
+      "setting": "Country houses, London and the Tube, the Highlands, Cornwall, the Alps, Luxor and Tilling",
+      "written": "About 1905–1923",
+      "firstPublished": 1912,
+      "readingTime": 620,
+      "difficulty": 2,
+      "lengthNote": "Twenty-nine stories, seventeen from The Room in the Tower (1912) and twelve from Visible and Invisible (1923), about 155,000 words in all. The shortest, The Terror by Night, runs to under 3,000 words; the longest, The Man Who Went Too Far, to more than 8,000",
+      "openingLine": "It is probable that everybody who is at all a constant dreamer has had at least one experience of an event or a sequence of circumstances which have come to his mind in sleep being subsequently realised in the material world.",
+      "summary": "E. F. Benson wrote these stories, he said in 1912, to give their readers some pleasant qualms and a few uncomfortable moments before bed. The Room in the Tower and Other Stories (1912) and Visible and Invisible (1923) bring the ghost story up to date: a phantom motor on a Norfolk road, a hanged man confessing down a telephone, a scientist’s gramophone that plays back the memories of the dead, a suicide foreseen and then re-enacted in the Tube. Older horrors are there too: a vampire in a tower room, a slug-like Thing from a carved church panel, Pan in the New Forest, a witch at a Highland pool. Many stories borrow the language of the psychical research of the day, with its sensitives, mediums and theories of telepathy, and several are comic, from a house whose ghosts are as ordinary as the post to a dead man who catches his medium cheating. The last, Roderick’s Story, closes the collection with a dying man who finds the other side delightful.",
+      "referenceStyle": "story title; the stories are short and are not numbered",
+      "sourceText": {
+        "label": "The Room in the Tower and Other Stories (London: Mills & Boon, 1912), Project Gutenberg eBook 72421; Visible and Invisible (London: Hutchinson, 1923), Project Gutenberg eBook 60339",
+        "url": [
+          "https://www.gutenberg.org/cache/epub/72421/pg72421.txt",
+          "https://www.gutenberg.org/cache/epub/60339/pg60339.txt"
+        ],
+        "note": "Gutenberg’s text of The Room in the Tower was made from the second edition of 1912, and its Visible and Invisible from a scan of the Hutchinson printing; the transcribers corrected obvious misprints and made hyphenation consistent. Quotations keep the spelling of these texts, such as to-night and realised. Two titles in the 1923 book trail off in the original, “And the Dead Spake----” and “Negotium Perambulans....”; they are given here without the dashes and dots."
+      },
+      "structure": [
+        {
+          "id": "tower-1912",
+          "label": "The Room in the Tower, stories 1–4",
+          "title": "Dreams, motors and a confession",
+          "summary": "The title story is told by a man who has dreamed for fifteen years of a silent tea-party in a garden with a tower, where Mrs Stone tells him that Jack will show him his room. Staying with friends in the Ashdown Forest, he hears the same sentence, sleeps in the tower room under the portrait of Julia Stone, and wakes to find something at his bedside. In The Dust-Cloud a driver who ran over a child and then crashed into his own gates haunts a straight Norfolk road in a phantom motor. Gavon’s Eve takes a fishing party in Sutherland to the Picts’ pool, where a reputed witch calls a drowned girl up out of the water, and in The Confession of Charles Linkworth a hanged murderer’s whisper comes down the prison doctor’s telephone.",
+          "scenes": [
+            {
+              "ref": "The Room in the Tower",
+              "title": "Jack will show you your room",
+              "summary": "A fifteen-year dream comes true in a house in the Ashdown Forest, and a suicide’s coffin will not stay buried."
+            },
+            {
+              "ref": "The Dust-Cloud",
+              "title": "The ghost of a motor-car",
+              "summary": "A dust-cloud on the straight road by Bircham, a frightened siren, and a child who will not play."
+            },
+            {
+              "ref": "Gavon’s Eve",
+              "title": "The Picts’ pool",
+              "summary": "On the night of 15 September a witch raises the drowned Catrine Gordon, and her lover goes into the river after her."
+            },
+            {
+              "ref": "The Confession of Charles Linkworth",
+              "title": "A call from the condemned cell",
+              "summary": "Whispers down the telephone, a missing rope, and the words of the Absolution."
+            }
+          ]
+        },
+        {
+          "id": "abdul-1912",
+          "label": "The Room in the Tower, stories 5–8",
+          "title": "Luxor, the Highlands, a Yorkshire house and an Italian villa",
+          "summary": "At Abdul Ali’s Grave is set at Luxor in June, when the tourists have gone: a boy’s ink-mirror shows a black magician preparing to rob a newly buried man, and the narrator and his friend Weston, a member of the Society for Psychical Research, go to the grave that night, Weston disguised in orange peel as the spirit of Black Magic. In The Shootings of Achnaleish the English tenants of a Highland shoot find that the villagers believe the black hares are their own neighbours. How Fear Departed from the Long Gallery visits Church-Peveril, a Yorkshire house whose family treat its ghosts as calmly as the post, except for two murdered twins whose appearance brings death, and Caterpillars sends the narrator to a villa on the Italian coast, where he sees luminous crab-footed caterpillars heaped on a bed in an empty room.",
+          "scenes": [
+            {
+              "ref": "At Abdul Ali’s Grave",
+              "title": "White Magic and Black",
+              "summary": "Machmout’s ink-mirror, Weston’s orange-peel disguise, and lips that move in an opened coffin."
+            },
+            {
+              "ref": "The Shootings of Achnaleish",
+              "title": "Black hares",
+              "summary": "A hare killed on the road, a keeper’s dead mother, and a house wired up to be burned."
+            },
+            {
+              "ref": "How Fear Departed from the Long Gallery",
+              "title": "The Peveril twins",
+              "summary": "A family’s familiar ghosts, the twins burned in 1602, and Madge Dalrymple’s pity on New Year’s Eve."
+            },
+            {
+              "ref": "Caterpillars",
+              "title": "Cancer Inglisensis",
+              "summary": "The Villa Cascana, a pill-box on a counterpane, and news from England six months later."
+            }
+          ]
+        },
+        {
+          "id": "cat-1912",
+          "label": "The Room in the Tower, stories 9–12",
+          "title": "Portraits, premonitions and Pan",
+          "summary": "In The Cat a painter jilted by a woman he thinks of as feline paints the eyes of a big grey cat into her portrait, and is found dead in front of it in his garden, his throat mangled and his nails full of paint. The Bus-Conductor is Hugh Grainger’s account of an empty hearse that stopped outside his friend’s house before dawn, and of the driver’s face, which he saw again a month later on the step of a bus. In The Man Who Went Too Far, the longest story in the book, Frank Halton gives his life to joy in the New Forest and hears the pipes of Pan; his friend Darcy warns him that he has left suffering out, and that the last revelation will be one of horror. Between the Lights is told by the fire at Christmas, and concerns a vision that comes true in a ruined Pictish fort.",
+          "scenes": [
+            {
+              "ref": "The Cat",
+              "title": "Eyes for a portrait",
+              "summary": "Dick Alingham, Lady Madingley and a big grey cat among the sweet-peas."
+            },
+            {
+              "ref": "The Bus-Conductor",
+              "title": "Just room for one inside",
+              "summary": "An empty hearse before dawn, and the same face on a bus in Sloane Square a month later."
+            },
+            {
+              "ref": "The Man Who Went Too Far",
+              "title": "The pipes of Pan",
+              "summary": "Frank Halton’s gospel of joy, Darcy’s objection, and the marks on a dead man’s chest."
+            },
+            {
+              "ref": "Between the Lights",
+              "title": "The round room",
+              "summary": "A vision on a croquet lawn, and the Picts’ castle in the Highland mist nine months later."
+            }
+          ]
+        },
+        {
+          "id": "door-1912",
+          "label": "The Room in the Tower, stories 13–17",
+          "title": "Places that remember",
+          "summary": "The last five stories of the 1912 book test theories about how strong feeling can outlast the people who felt it. In Outside the Door a hostess on the Norfolk coast compares a haunted room to a phonograph record, and the house answers with the steps of Helen Denison, murdered there in 1610. The Terror by Night likens the passing of emotion from mind to mind to wireless telegraphy, and follows a death at Davos that is felt in London as a sudden bitter cold. In The Other Bed a Swiss hotel room passes a suicide’s terror on to its next guest; The Thing in the Hall is a brain specialist’s statement, read back to him just before he died, about the slug-like Elemental his friend let into their house; and in The House with the Brick-Kiln two friends take a house near Lewes where a murderer’s pictures still hang.",
+          "scenes": [
+            {
+              "ref": "Outside the Door",
+              "title": "The phonograph theory",
+              "summary": "Table-turning on the Norfolk coast, and footsteps in the passage in the small hours."
+            },
+            {
+              "ref": "The Terror by Night",
+              "title": "Receivers",
+              "summary": "A girl dying at Davos, and a cold that comes into a London room."
+            },
+            {
+              "ref": "The Other Bed",
+              "title": "Two beds in a Swiss hotel",
+              "summary": "A razor in a dream, a waiter who brings whisky nobody ordered, and a newspaper paragraph about the last guest."
+            },
+            {
+              "ref": "The Thing in the Hall",
+              "title": "An Elemental",
+              "summary": "Dr Assheton’s dictated account of Louis Fielder’s experiments, and the shadow on the wall."
+            },
+            {
+              "ref": "The House with the Brick-Kiln",
+              "title": "Pictures signed F. A.",
+              "summary": "Watercolours of a kiln, a smoking chimney, and the ghost of a man who burned his wife."
+            }
+          ]
+        },
+        {
+          "id": "spake-1923",
+          "label": "Visible and Invisible, stories 1–4",
+          "title": "Science at the edge of death",
+          "summary": "The second book opens on the evening of 4 August 1914, with a reclusive physicist who believes the brain keeps a record of speech like a gramophone plate, and who builds a needle to play back the memories of the dead; his subject is his housekeeper, once acquitted of cutting her husband’s throat. In The Outcast a young widow whom every animal fears dies at sea, is washed ashore at the town that shunned her, and cannot be kept in her grave, and a medieval Latin treatise suggests whose spirit she carries. The Horror-Horn is set at a winter resort in the Engadine, where a physiologist reading about the Everest expedition says he has seen the half-human creatures that leave such footprints, and in Machaon a medium’s messages about a swallow-tail butterfly lead the narrator to a treatment that cures his servant’s cancer.",
+          "scenes": [
+            {
+              "ref": "And the Dead Spake",
+              "title": "The brain-gramophone",
+              "summary": "Sir James Horton’s needle, a soldier’s memory of Tipperary, and a confession from dead lips."
+            },
+            {
+              "ref": "The Outcast",
+              "title": "Bertha Acres",
+              "summary": "A bulldog that bolts from her, flowers that wilt on her coffin, and a grave dug too short."
+            },
+            {
+              "ref": "The Horror-Horn",
+              "title": "The Ungeheuerhorn",
+              "summary": "Footprints on Everest, Professor Ingram’s story, and a hag in the pine woods."
+            },
+            {
+              "ref": "Machaon",
+              "title": "Swallow-tail",
+              "summary": "A medium in Tilling, the son of Asclepios, and a surgeon’s letter about X-rays."
+            }
+          ]
+        },
+        {
+          "id": "negotium-1923",
+          "label": "Visible and Invisible, stories 5–8",
+          "title": "Crimes and their avengers",
+          "summary": "Negotium Perambulans brings a London barrister back to the Cornish village of Polearn, where a carved panel in the church shows a priest facing a huge slug-like creature, and where the owners of a house built from the stones of an older church die drained of blood. At the Farmhouse follows a painter through a gale on his way to strangle his wife, a drunkard from a family reputed to be witches, and to burn the house over her. Inscrutable Decrees is Archie Rorke’s account of why he broke off his engagement to the brilliant Sybil, and in The Gardener a planchette writes that the gardener wants to come in, while a jealous man who killed his wife and himself searches a rented house for her.",
+          "scenes": [
+            {
+              "ref": "Negotium Perambulans",
+              "title": "The pestilence that walketh in darkness",
+              "summary": "The fourth panel of the altar-rails, the quarry-house, and the painter John Evans."
+            },
+            {
+              "ref": "At the Farmhouse",
+              "title": "The whipcord",
+              "summary": "John Aylsford’s walk, his wife Ellen, and the girl who stands in the burning doorway."
+            },
+            {
+              "ref": "Inscrutable Decrees",
+              "title": "A thrush and a dentist’s waiting-room",
+              "summary": "Lady Rorke’s pleasure in suffering, the drained lake at Lincote, and a séance with one sitter."
+            },
+            {
+              "ref": "The Gardener",
+              "title": "Planchette",
+              "summary": "An empty cottage by a foot-bridge, a rocking-chair still moving, and a man with a rust-coloured beard."
+            }
+          ]
+        },
+        {
+          "id": "tilly-1923",
+          "label": "Visible and Invisible, stories 9–12",
+          "title": "Mediums, a vampire and the borderland",
+          "summary": "Mr Tilly, run over by a traction-engine at Hyde Park Corner, goes on to his medium’s séance anyway, catches her cheating, and discovers how much of what the spirits say is the medium’s own twaddle. In Mrs. Amworth a jolly widow back from India brings dinner parties and piquet to a Sussex village on the Brighton road, and a retired Cambridge physiologist who has been watching her recognises the vampire. In the Tube is Anthony Carling’s story of a man he saw twice before the man threw himself under a train, and of the ghost that came to him afterwards for help. In Roderick’s Story a friend with a failing heart comes to stay in Tilling, reads the narrator’s spook stories, calls them false, and tells what he saw when the woman he loved was dying in the same room.",
+          "scenes": [
+            {
+              "ref": "Mr. Tilly’s Séance",
+              "title": "Under the traction-engine",
+              "summary": "Mr Tilly’s servants, Miss Soulsby, and Mrs Cumberbatch’s trumpet."
+            },
+            {
+              "ref": "Mrs. Amworth",
+              "title": "Maxley",
+              "summary": "Gnats in a hot summer, a sick boy, a face at a window twenty feet up, and a pick in the cemetery at dawn."
+            },
+            {
+              "ref": "In the Tube",
+              "title": "Dover Street",
+              "summary": "A passenger who vanishes between stations, a lunch party, and a message for Lady Payle."
+            },
+            {
+              "ref": "Roderick’s Story",
+              "title": "The room over the garden",
+              "summary": "A golf shot, a criticism of ghost stories, and Margaret’s veil."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "julia-stone",
+          "name": "Julia Stone",
+          "role": "The hostess of the narrator’s dream in The Room in the Tower",
+          "summary": "In the narrator’s dream she is Mrs Stone, silent at tea on the lawn until she tells him that Jack will show him the room in the tower. In the waking story she is a portrait, signed Julia Stone by Julia Stone, whose face is alive with secret mirth. She had killed herself in the tower room; three burials failed to keep her coffin in the ground at West Fawley, and when it was dug up again it was full of blood.",
+          "clue": "Painted her own portrait, and the churchyard at West Fawley gave her coffin back three times.",
+          "firstAppearance": "The Room in the Tower",
+          "traits": [
+            "silent",
+            "malignant",
+            "patient"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "charles-linkworth",
+          "name": "Charles Linkworth",
+          "role": "The hanged murderer of The Confession of Charles Linkworth",
+          "summary": "Keeper of a small stationery shop in Sheffield, he strangled his mother for the five hundred pounds she had drawn from the bank, buried her in the back garden and went to the gallows without confessing. The prison doctor had never seen a man cling so hard to life. After the execution his whisper comes down the doctor’s telephone, and at last he confesses to the chaplain and hears the words of absolution.",
+          "clue": "Telephones a doctor after his own execution, asking to be forgiven.",
+          "firstAppearance": "The Confession of Charles Linkworth",
+          "traits": [
+            "greedy",
+            "desperate",
+            "penitent"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "madge-dalrymple",
+          "name": "Madge Dalrymple",
+          "role": "The girl who pities the twins in How Fear Departed from the Long Gallery",
+          "summary": "Blanche Peveril’s cousin hurts her knee on the ice on New Year’s Eve, stays behind in the long gallery while the others skate, and falls asleep there at dusk, the hour when the burned twins walk. Everyone who had seen them before had feared or mocked them. Waking to find them coming towards her, she is only sorry for them, and her pity dissolves the curse.",
+          "clue": "Wakes in a darkening gallery, sees the Peveril twins, and tells them God bless you.",
+          "firstAppearance": "How Fear Departed from the Long Gallery",
+          "traits": [
+            "cheerful",
+            "tender-hearted",
+            "brave"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "arthur-inglis",
+          "name": "Arthur Inglis",
+          "role": "The artist at the Villa Cascana in Caterpillars",
+          "summary": "An artist with a bedroom and studio at the Italian villa where the narrator sees a heap of luminous caterpillars in an empty room. He finds a small one crawling on his counterpane, keeps it in a pill-box and, because its feet are like a crab’s, christens it with the Latin for crab and his own name. Six months later the narrator hears that he has incurable cancer.",
+          "clue": "Names a new species of caterpillar after himself, with the Latin word for crab.",
+          "firstAppearance": "Caterpillars",
+          "traits": [
+            "curious",
+            "jocular"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "hugh-grainger",
+          "name": "Hugh Grainger",
+          "role": "The narrator’s friend in The Bus-Conductor, and again in The Gardener",
+          "summary": "A steady man who had long ago decided he would never see a ghost, Hugh explains why his nerves once went to pieces: an empty hearse stopping outside his friend’s house before dawn, and a driver with a mole on his cheek who, a month later, is the conductor of a bus. The name returns in The Gardener of 1923, where Hugh Grainger and his wife Margaret take a house in which a dead man searches the rooms, and Hugh admits he has never felt less comfortable in his life.",
+          "clue": "Will not board a bus at Sloane Square, and watches it crash.",
+          "firstAppearance": "The Bus-Conductor",
+          "traits": [
+            "level-headed",
+            "sceptical",
+            "shaken"
+          ],
+          "relationships": [
+            {
+              "to": "bus-conductor",
+              "label": "is warned by",
+              "kind": "ally",
+              "stages": [
+                "cat-1912"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bus-conductor",
+          "name": "The bus conductor",
+          "role": "The figure in The Bus-Conductor, first seen driving a hearse",
+          "summary": "He comes up an empty street before dawn driving a glass hearse drawn by black horses, dressed in grey trousers, brown boots and a straw hat, with a strap over his shoulder, and when he looks up his long thin face has a hairy mole on the left cheek. A month later the same face appears on the step of a crowded bus in Sloane Square, with the same words. Hugh Grainger calls him a most useful and friendly ghost.",
+          "clue": "Wears a straw hat and a ticket-punch, and has a mole on his left cheek.",
+          "firstAppearance": "The Bus-Conductor",
+          "traits": [
+            "prosaic",
+            "sinister",
+            "punctual"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "frank-halton",
+          "name": "Frank Halton",
+          "role": "The man who went too far",
+          "summary": "Thirty-five but looking like a boy, he has left London to live in the New Forest village of St Faith’s and devote himself to joy, and he believes that nature is beginning to answer him with the sound of Pan’s pipes. He waits eagerly for a final revelation. It comes in a thunderstorm, with a scream to God and a little bleating laugh, and leaves him dead with the marks of hoofs on his chest.",
+          "clue": "Bathes in the river Fawn, hears pipes in the reeds, and dies with hoof-marks on his skin.",
+          "firstAppearance": "The Man Who Went Too Far",
+          "traits": [
+            "radiant",
+            "reckless",
+            "self-absorbed"
+          ],
+          "relationships": [
+            {
+              "to": "darcy",
+              "label": "old friend of",
+              "kind": "friendship",
+              "stages": [
+                "cat-1912"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "darcy",
+          "name": "Darcy",
+          "role": "Frank Halton’s friend in The Man Who Went Too Far",
+          "summary": "An old friend who comes to St Faith’s after an illness and listens to Frank’s gospel of joy with growing unease. After some days he finds the flaw in it: all nature is crammed full of suffering, and a man who wants to be one with nature and leaves suffering out may find that the last revelation is a revelation of horror. He carries Frank in from the garden on the night of the storm.",
+          "clue": "Tells his friend that he has left suffering altogether out.",
+          "firstAppearance": "The Man Who Went Too Far",
+          "traits": [
+            "thoughtful",
+            "loyal",
+            "uneasy"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "francis-assheton",
+          "name": "Francis Assheton",
+          "role": "The brain specialist whose statement makes up The Thing in the Hall",
+          "summary": "Trained under Charcot and now a specialist in the brain, he dictated this account of his friend Louis Fielder’s experiments and heard it read back just before he died, insisting that he was completely sane and that the things he described happened in the external world. At the inquest on Fielder he had called the death suicide while of unsound mind; he now wants it known that he would give different evidence.",
+          "clue": "A student of Charcot, who says he would now give different evidence at his friend’s inquest.",
+          "firstAppearance": "The Thing in the Hall",
+          "traits": [
+            "exact",
+            "sceptical",
+            "frightened"
+          ],
+          "relationships": [
+            {
+              "to": "louis-fielder",
+              "label": "Cambridge friend of",
+              "kind": "friendship",
+              "stages": [
+                "door-1912"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "louis-fielder",
+          "name": "Louis Fielder",
+          "role": "The experimenter of The Thing in the Hall",
+          "summary": "Assheton’s friend since Cambridge, he takes up spiritualism impartially, learns to throw open the door of his soul and says that anyone may come in. What comes in, he suspects, is an Elemental, one of the servants of the evil principle in the world, and he wants to know what it is even in the name of Satan. He changes for the worse, and dies, like Assheton after him, with his throat torn.",
+          "clue": "Throws open the door into his soul and says that anyone may come in.",
+          "firstAppearance": "The Thing in the Hall",
+          "traits": [
+            "curious",
+            "reckless",
+            "corrupted"
+          ],
+          "relationships": [
+            {
+              "to": "francis-assheton",
+              "label": "dies as his friend will die",
+              "kind": "doubling",
+              "stages": [
+                "door-1912"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "james-horton",
+          "name": "Sir James Horton",
+          "role": "The scientist of And the Dead Spake",
+          "summary": "A reclusive physicist of Newsome Terrace in Kensington, said to have made an artificial creature from living animal tissue, he thinks of the brain as a record office, where every vivid experience leaves a mark like the groove of a gramophone plate. He spends the war building a needle fine enough to play those marks back. When his housekeeper Mrs Gabriel dies, he puts the current through her dead brain, hears her confess to the murder of her husband, and is killed by his own apparatus a moment later.",
+          "clue": "Sprays a dead woman’s brain to keep his record warm, and hears her confess.",
+          "firstAppearance": "And the Dead Spake",
+          "traits": [
+            "brilliant",
+            "impatient",
+            "ruthless"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "john-aylsford",
+          "name": "John Aylsford",
+          "role": "The painter of At the Farmhouse",
+          "summary": "Twenty years ago he fell in love with a fisher-girl who sat for him, married her against every warning about her family and bought the farmhouse where they met. She took to drink, and he came to believe in the spells he had once laughed at. One November night he walks out in a gale with whipcord and matches, strangles her and sets the house on fire, and finds himself trapped in the studio with a radiant young woman pointing at him.",
+          "clue": "Buys whipcord in the village, and pours paraffin like a careful gardener watering a flower-bed.",
+          "firstAppearance": "At the Farmhouse",
+          "traits": [
+            "embittered",
+            "calculating",
+            "haunted"
+          ],
+          "relationships": [
+            {
+              "to": "ellen-trenair",
+              "label": "married, and murders",
+              "kind": "marriage",
+              "stages": [
+                "negotium-1923"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ellen-trenair",
+          "name": "Ellen Trenair",
+          "role": "The wife in At the Farmhouse",
+          "summary": "Once a beautiful fisher-girl with a smile for the young painter who lodged at her uncle’s farm, she comes of a dark family whose women go mad or hang themselves, and in whose blood runs the Methodist preacher who learned a darker gospel one All-Hallows’ Eve. Drink leaves her bloated and withered, and her husband believes she has bound him by witchcraft. After he strangles her she comes back to him young again, radiant with revenge.",
+          "clue": "Comes of a family whose ancestor, a Methodist preacher, learned a darker gospel on All-Hallows’ Eve.",
+          "firstAppearance": "At the Farmhouse",
+          "traits": [
+            "beautiful",
+            "degraded",
+            "vengeful"
+          ],
+          "relationships": [
+            {
+              "to": "john-aylsford",
+              "label": "takes her revenge on",
+              "kind": "enemy",
+              "stages": [
+                "negotium-1923"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sybil-rorke",
+          "name": "Sybil Rorke",
+          "role": "The widow in Inscrutable Decrees",
+          "summary": "Tall, splendid and the queen of a London season, she dazzles everyone who meets her, yet the narrator keeps catching her enjoying pain: a dying thrush, a frightened child at the dentist’s, a newspaper sketch of an execution kept in her blotter. She plays with her husband’s cousin Archie while her husband is dying. A girl drowned in the lake at Lincote returns at a séance to say that Sybil watched her struggle and did nothing.",
+          "clue": "Borrows a shilling to turn at the new moon, then watches a wounded thrush die in her hands.",
+          "firstAppearance": "Inscrutable Decrees",
+          "traits": [
+            "dazzling",
+            "cruel",
+            "mediumistic"
+          ],
+          "relationships": [
+            {
+              "to": "archie-rorke",
+              "label": "torments, then is engaged to",
+              "kind": "love",
+              "stages": [
+                "negotium-1923"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "archie-rorke",
+          "name": "Archie Rorke",
+          "role": "The teller of the story in Inscrutable Decrees",
+          "summary": "The narrator’s oldest friend, desperately in love with his cousin’s wife, inherits the title and the house at Lincote and becomes engaged to her. A week or two before the wedding the lake is drained and a missing village girl is found in the mud; at a séance he asks Sybil to hold, the girl’s phantom accuses her. He breaks off the engagement without a word, and tells the story only after Sybil’s death.",
+          "clue": "Inherits a house with a lake, and learns at a séance who watched a child drown in it.",
+          "firstAppearance": "Inscrutable Decrees",
+          "traits": [
+            "devoted",
+            "reticent",
+            "honourable"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "mr-tilly",
+          "name": "Mr Tilly",
+          "role": "The dead man of Mr. Tilly’s Séance",
+          "summary": "A fussy, good-natured little spiritualist, he slips at Hyde Park Corner, is flattened by a traction-engine, and goes on to Mrs Cumberbatch’s séance as a spirit, pleased to find himself on the newsboards. There he catches the medium reaching for the trumpet, agrees to speak through her, and finds that everything he says comes out as the stale talk of busy happy spirits.",
+          "clue": "Takes his ticket for the séance out of a policeman’s fingers after being run over.",
+          "firstAppearance": "Mr. Tilly’s Séance",
+          "traits": [
+            "fussy",
+            "vain",
+            "good-natured"
+          ],
+          "relationships": [
+            {
+              "to": "mrs-cumberbatch",
+              "label": "exposes, then speaks through",
+              "kind": "rival",
+              "stages": [
+                "tilly-1923"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mrs-cumberbatch",
+          "name": "Mrs Cumberbatch",
+          "role": "The medium of Mr. Tilly’s Séance",
+          "summary": "With her long spoon-shaped face and an antique chair that had belonged to Madame Blavatsky, she charges guineas for messages from Abibel, Sapphire and Napoleon, and hides Lord Rosebery’s book on Napoleon in an old cover. She is a fraud, but not entirely: she can see and hear the dead Mr Tilly when nobody else can, and begs him to make her fortune.",
+          "clue": "Sits in a chair that belonged to Madame Blavatsky, and keeps phosphorescent paint by the chimney-piece.",
+          "firstAppearance": "Mr. Tilly’s Séance",
+          "traits": [
+            "fraudulent",
+            "genuine",
+            "pleading"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "mrs-amworth",
+          "name": "Mrs Amworth",
+          "role": "The widow of Mrs. Amworth",
+          "summary": "Big, energetic and jolly, the widow of a judge in the North-West Provinces who died at Peshawar, she settles in Maxley, where her ancestors the Chastons are buried, and wakes the village up with lunches, music and piquet. Everyone likes her except Francis Urcombe, who watches. A gardener’s boy begins to waste away, and the narrator dreams of her face floating outside his bedroom window.",
+          "clue": "Says she is forty-five, loves grubbing in the soil, and wants no leaden casket.",
+          "firstAppearance": "Mrs. Amworth",
+          "traits": [
+            "jovial",
+            "hospitable",
+            "predatory"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "francis-urcombe",
+          "name": "Francis Urcombe",
+          "role": "The retired professor of Mrs. Amworth",
+          "summary": "He gave up his professorship of physiology at Cambridge to study the borderland between body and spirit, and wanted medical students examined in mesmerism, haunted houses and vampirism. Opposite the narrator’s house in Maxley he watches Mrs Amworth closely, moves the sick boy into his own house, bangs down a window on her finger, and ends the story in the cemetery with a pick.",
+          "clue": "Wanted a university paper set on haunted houses and vampirism, and carries a pick to the cemetery.",
+          "firstAppearance": "Mrs. Amworth",
+          "traits": [
+            "grim",
+            "learned",
+            "resolute"
+          ],
+          "relationships": [
+            {
+              "to": "mrs-amworth",
+              "label": "unmasks and destroys",
+              "kind": "enemy",
+              "stages": [
+                "tilly-1923"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "anthony-carling",
+          "name": "Anthony Carling",
+          "role": "The teller of In the Tube",
+          "summary": "A generous host in Brompton Square with a great zest for life, he believes that time and space are conventions and that eternity is a quality, and he has the strangest clairvoyances. He tells a friend how he saw a man in an otherwise empty tube carriage, met him at lunch the next day, saw him in a vision throw himself in front of a train, and read of the suicide a few days later. The ghost of that man comes back to the fireside, and Anthony takes on its message.",
+          "clue": "Offers to stop the clock so that his guest can escape the illusion of time.",
+          "firstAppearance": "In the Tube",
+          "traits": [
+            "hospitable",
+            "mystical",
+            "courageous"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "roderick-cardew",
+          "name": "Roderick Cardew",
+          "role": "The dying friend of Roderick’s Story",
+          "summary": "Told by his doctor that his heart may stop without warning, he makes jokes about the bad manners of dying in other people’s houses, then accepts his friend’s invitation to Tilling when he learns it is the house where Margaret Alton died. He asks for her room, hits one last perfect drive on the golf links, calls his host’s ghost stories false, and tells what he saw at her deathbed.",
+          "clue": "Snatches a friend’s driver on the links and carries the ridge, though any exertion may kill him.",
+          "firstAppearance": "Roderick’s Story",
+          "traits": [
+            "gallant",
+            "witty",
+            "serene"
+          ],
+          "relationships": [
+            {
+              "to": "margaret-alton",
+              "label": "loved all his life",
+              "kind": "love",
+              "stages": [
+                "tilly-1923"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "margaret-alton",
+          "name": "Margaret Alton",
+          "role": "The woman Roderick loved, in Roderick’s Story",
+          "summary": "Dazzling as a girl, she gave up Roderick to marry the heir to a barony, was treated with cruelty and then deserted, lost both her sons in France within a few days, and died of a disfiguring disease in the house at Tilling, veiled. When Roderick lifted the veil he saw her as she truly was, lovelier than ever, with her two boys come to fetch her.",
+          "clue": "Wears a dark veil in her last hours, and kisses the man she jilted good-bye, just for a little while.",
+          "firstAppearance": "Roderick’s Story",
+          "traits": [
+            "ambitious",
+            "remorseful",
+            "transfigured"
+          ],
+          "relationships": []
+        }
+      ],
+      "themes": [
+        {
+          "id": "dream",
+          "name": "Dreams and premonitions",
+          "canonicalName": "Dreams and waking",
+          "summary": "Several stories depend on seeing what has not happened yet. The narrator of The Room in the Tower dreams of a house for fifteen years before he sleeps in it; Hugh Grainger sees the face of a bus conductor a month before the bus crashes; Everard Chandler sees a round room full of dwarfish savages nine months before he stumbles into it; Anthony Carling watches a man throw himself under a train days before he does it. Benson’s characters argue over whether such things are coincidence or a glimpse down the tunnel of time.",
+          "development": "Jack will show you your room; Just room for one inside, sir; the round room in the Picts’ castle; Time is a sort of tunnel."
+        },
+        {
+          "id": "haunting",
+          "name": "Ghosts",
+          "canonicalName": "Ghosts",
+          "summary": "Benson’s ghosts come back for reasons. Some repeat what was done to them, like the girl whose steps still run down the passage in Outside the Door; some are looking for something, like the gardener who searches the house for his wife; some want to confess or to be forgiven, like Charles Linkworth and Sir Henry Payle. The twins in How Fear Departed from the Long Gallery need only to be pitied, and in Roderick’s Story the dead return in love.",
+          "development": "The appearance of a ghost and the appearance of the post; I am the gardener. I want to come in; a soul in the hell of remorse; two boys at the other side of the bed."
+        },
+        {
+          "id": "psychical-research",
+          "name": "Psychical research",
+          "canonicalName": "Psychical research",
+          "summary": "The Society for Psychical Research was founded in 1882, with Benson’s uncle Henry Sidgwick as its first president, to investigate thought-transference, apparitions, mediums and hypnotism, and Benson’s stories are full of its vocabulary: sensitives, planchette, trance, controls, materialisation, phantoms of the living. Weston in At Abdul Ali’s Grave is a member who once exposed a fraudulent medium; Dr Teesdale knows himself to be a sensitive; the control in Machaon talks platitudes until something else comes through. Mr. Tilly’s Séance mocks the whole business, down to investigators who reject the only genuine phenomena they ever meet, and yet most of the stories treat the evidence as if it might be real.",
+          "development": "A “sensitive”; a member of the Society for Psychical Research; the analogy of wireless telegraphy; Starlight’s clap-trap; for once, the phenomena were absolutely genuine."
+        },
+        {
+          "id": "guilt",
+          "name": "Guilt and confession",
+          "canonicalName": "Guilt",
+          "summary": "Murderers crowd these books, and their crimes do not stay hidden. Linkworth confesses by telephone after his hanging; Mrs Gabriel’s dead lips describe how she lathered her husband’s chin after cutting his throat; the gardener searches for the wife he strangled; Sybil Rorke is accused by the child she watched drown; Sir Henry Payle re-enacts his suicide until a living man will carry his message. Anthony Carling asks when a crime is really committed, in the planning or the act, and John Aylsford finds that the murder he planned for months does not set him free.",
+          "development": "I killed her, I confess it. I want to be forgiven; a tale for dead lips to tell; you watched me struggling till I sank; the hell of remorse, which is the only possible hell."
+        },
+        {
+          "id": "compassion",
+          "name": "Pity",
+          "canonicalName": "Pity",
+          "summary": "Against the cruelty in these books Benson sets a few acts of pity that change what happens. Madge Dalrymple, sorry for the murdered twins, breaks a curse that fear and mockery had kept alive for three centuries; in The Outcast another Madge makes a wreath for a woman no one else mourns; Margaret Grainger, face to face with the gardener’s ghost, asks God to have mercy on him. Roderick’s Story ends the second book with a love that outlasts disfigurement and death.",
+          "development": "I am only sorry for you; a little wreath of the spring-flowers; God have mercy on him!; I bless every pang of it."
+        },
+        {
+          "id": "technology",
+          "name": "Motors, telephones and the Tube",
+          "canonicalName": "Machines and modernity",
+          "summary": "Ghosts in these stories use the newest machinery. A dead man’s motor raises dust on a Norfolk road and sounds its siren; a hanged man speaks down the telephone; a scientist tries to play a dead brain like a gramophone record; a bus and a speeding motor crash at Sloane Square; a suicide happens at the Dover Street tube station. Benson’s theorists borrow their images from the same world, the phonograph, the Marconi apparatus and the receiver in tune, so that the supernatural sounds like the next invention.",
+          "development": "The ghost of his motor-car; the telephone bell; your gramophone plate all ready; the analogy of wireless telegraphy; X-rays."
+        },
+        {
+          "id": "nature",
+          "name": "Nature and the old gods",
+          "canonicalName": "Nature",
+          "summary": "Outside the drawing-rooms, older powers are still at work. Frank Halton seeks joy in the New Forest and hears Pan’s pipes, and Darcy warns him that nature is crammed full of suffering; Professor Ingram has seen half-human creatures on an Alpine peak, a remnant of the abyss out of which mankind crawled; the villagers of Achnaleish take hares for their neighbours, and at Polearn the storms and seasons have taught the people a spell. Benson sets many of these stories in wild country, the Highlands, Cornwall and the Engadine, and lets the landscape carry the menace.",
+          "development": "Pan playing on his pipes, the voice of Nature; crammed full of suffering; the hoofs of some monstrous goat; a being more nearly a man than anything else."
+        },
+        {
+          "id": "cruelty",
+          "name": "Cruelty and evil",
+          "canonicalName": "Cruelty",
+          "summary": "Benson’s worst figures enjoy pain. The portrait of Julia Stone laughs with appalling mirth; Sybil Rorke licks her lips over a dying thrush and keeps a sketch of an execution in her blotter; Mrs Amworth feeds on a gardener’s son while bringing him delicate food. Evil can also be a force without a face, like the Elemental that Louis Fielder invites in, or the Thing on the Polearn panel, which the narrator’s uncle calls a minister of God’s wrath.",
+          "development": "Evil beamed from the narrow, leering eyes; kind to be demoniacally cruel; the Thing is an Elemental; a minister of God’s wrath on the unrighteous."
+        },
+        {
+          "id": "illness",
+          "name": "Illness and the body",
+          "canonicalName": "Illness and the body",
+          "summary": "Disease runs through the stories, and sometimes the ghost is a way of looking at it. The luminous caterpillars of the Villa Cascana are lumpy, crab-footed and malignant, and the man who names one Cancer Inglisensis is later found to have incurable cancer; in Machaon a medium’s message leads to X-ray treatment that cures a servant’s growth. Mrs Amworth’s victims waste away with anaemia, Roderick Cardew lives under sentence of sudden heart failure, and Margaret Alton hides the ravages of a disfiguring disease behind a veil.",
+          "development": "Cancer Inglisensis; irregular lumps and swellings; X-rays; an anæmic pallor; heart-disease."
+        },
+        {
+          "id": "superstition",
+          "name": "Superstition",
+          "canonicalName": "Superstition",
+          "summary": "Benson likes to set educated English visitors among people whose beliefs they laugh at, and then prove the people right. Hugh Graham half believes in witches; Jim Armytage calls the hare-lore of Achnaleish cock-and-bull stories; John Aylsford laughed at the spells of his wife’s family before he came to fear them. At Polearn the narrator’s aunt tells him he has been in London too long, and in Mrs. Amworth a Cambridge physiologist complains that the medical profession threw vampirism on the dust-heap without studying it.",
+          "development": "Whether I suspected I believed in them; a belief as sober and commonplace as our own; you have been in London so long; Thou shalt not suffer a witch to live."
+        },
+        {
+          "id": "religion",
+          "name": "Sacrilege and judgement",
+          "canonicalName": "Religion",
+          "summary": "The son of an Archbishop of Canterbury, Benson gives the church a large place in his horrors. The Polearn panel shows a priest holding up a cross against the Thing, and the men who live in a house built from a ruined church, with its altar for a table, die drained of blood; the chaplain in The Confession of Charles Linkworth pronounces absolution into a telephone; The Outcast ends with a medieval treatise on the wandering spirit of Judas. The narrator of Gavon’s Eve speaks of the inscrutable designs of God, and Inscrutable Decrees takes its title from the same thought eleven years later.",
+          "development": "Negotium perambulans in tenebris; the words of the Absolution; Judas Iscariot; the inscrutable designs of God; Inscrutable decrees."
+        },
+        {
+          "id": "death",
+          "name": "Love and death",
+          "canonicalName": "Love and death",
+          "summary": "The second book ends with a story in which death is welcome. Roderick Cardew, told that his heart may stop at any moment, jokes that death is a train that always waits for you, and chooses the room where the woman he loved died, because he saw her there as she really was, with her dead sons come to fetch her. Elsewhere a death at Davos reaches a London room as a sudden cold, and at the end of At the Farmhouse the wife John Aylsford has murdered comes back as the girl he first loved.",
+          "development": "That’s a train which we are all sure to catch; I couldn’t die without seeing you; Good-bye, just for a little while; Oh, Margaret, my dear."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "frame-narrative",
+          "name": "Frame narrative",
+          "canonicalName": "Frame narrative",
+          "definition": "A story told inside another story, so that every account reaches the reader through somebody with an interest in it.",
+          "bookDefinition": "A story set inside another, so that the reader hears it from a character telling it to someone else.",
+          "inThisBook": "Many of these stories are told aloud after dinner or by the fire: Hugh Grainger’s bus conductor, Everard Chandler’s round room, Archie Rorke’s broken engagement, Anthony Carling’s night in the Tube, Roderick’s last visit to Margaret. The Thing in the Hall is a dead man’s dictated statement, read back to him before he died. The frames put the tellers in warm, lit rooms, and make the listener, often a sceptic, the reader’s stand-in."
+        },
+        {
+          "id": "refrain",
+          "name": "Refrain",
+          "canonicalName": "Refrain",
+          "definition": "A phrase brought back at intervals, so that its meaning shifts with what has happened since.",
+          "bookDefinition": "A phrase brought back at intervals, so that its meaning changes with what has happened since.",
+          "inThisBook": "Several stories hang on one repeated sentence. Jack will show you your room recurs through fifteen years of dreams before a waking hostess says it; Just room for one inside, sir is spoken first by a hearse-driver and then by a bus conductor; the planchette writes gardener, gardener; and the Latin under the Polearn panel is the last thing the first owner of the quarry-house screams. With each return the reader knows more of what it means."
+        },
+        {
+          "id": "ellipsis",
+          "name": "The unseen",
+          "canonicalName": "Ellipsis",
+          "definition": "What the narrative declines to show, placed where the reader will notice the gap and fill it.",
+          "bookDefinition": "What the narrative declines to show, placed where the reader will notice the gap and fill it.",
+          "inThisBook": "For all his monsters, Benson knows the force of what is not seen. The dreamer in The Room in the Tower never sees what is in the room; in The Gardener an invisible man pushes past on a doorstep and leaves a rocking-chair moving in an empty kitchen; in In the Tube the narrator feels an ice-cold presence and hears only one side of Anthony’s conversation with it. Any vision, he says, would have been more tolerable than knowing the thing was there."
+        },
+        {
+          "id": "grotesque",
+          "name": "The grotesque",
+          "canonicalName": "Grotesque",
+          "definition": "Bodies distorted past the natural, so that disgust and fear arrive together.",
+          "bookDefinition": "Bodies distorted past the natural, so that disgust and fear arrive together.",
+          "inThisBook": "When Benson does show his monsters he makes them fleshy and wrong: caterpillars a foot long covered in lumps and swellings, an Elemental like a legless slug with a seal’s head, the Polearn Thing with a puckered orifice that slavers at the edges, Ellen’s bloated crimson face set on a withered neck. Several are slug-like, and many suggest disease."
+        },
+        {
+          "id": "analogy",
+          "name": "Analogy",
+          "canonicalName": "Analogy",
+          "definition": "Explaining something strange by comparing it with something familiar.",
+          "bookDefinition": "Explaining something strange by comparing it with something familiar.",
+          "inThisBook": "Theorists in these stories explain the supernatural with the newest machines. Mrs Aldwych compares a haunted room to a phonograph and passing feeling to a Marconi message; the narrator of The Terror by Night calls us all receivers of a kind of wireless telegraphy; Sir James Horton treats the brain as a gramophone plate waiting for its needle; Anthony Carling calls time a tunnel we believe we are travelling through. Hugh Grainger’s two revolving sheets of cardboard, each with a spy-hole, are homelier, and the narrator hopes his ghost will be more original than his theory."
+        },
+        {
+          "id": "dramatic-irony",
+          "name": "Dramatic irony",
+          "canonicalName": "Dramatic irony",
+          "definition": "When the reader understands more than a character does, so that the character’s words carry a meaning they cannot hear.",
+          "bookDefinition": "When the reader understands more than a character does, so that the character’s words carry a meaning they cannot hear.",
+          "inThisBook": "Characters here often say more than they know. Arthur Inglis christens his caterpillar Cancer Inglisensis; Charles Alington jokes about how awful it would be to learn you had been Judas Iscariot; Mrs Amworth delights in having her blood curdled and advises the narrator to sleep with his windows open; Sir James Horton promises more from dead lips a moment before he dies himself. Readers who know the genre are usually a step ahead, and part of the pleasure is watching the characters catch up."
+        },
+        {
+          "id": "comedy",
+          "name": "Comedy",
+          "canonicalName": "Comedy",
+          "definition": "Humour set beside horror, or used to deflate it.",
+          "bookDefinition": "Humour set beside horror, or used to deflate it.",
+          "inThisBook": "Benson made his name with a comic novel, Dodo, and the comedy comes into the ghost stories too. The Peverils treat their ghosts like the post; Weston’s orange-peel disguise frightens a grave-robber backwards into the grave; Mr Tilly, flattened by a traction-engine, minds most about his new clothes and what his servants say of him. Even Roderick Cardew, dying, makes jokes about manners and hotels."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "Haunted objects",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative comes back to until it stands for the argument itself.",
+          "bookDefinition": "An object the story keeps returning to until it stands for the whole.",
+          "inThisBook": "Each story fixes on a thing: the portrait signed Julia Stone by Julia Stone, the hangman’s missing rope, the carved panel at Polearn and the altar used as a painter’s table, the whipcord in John Aylsford’s pocket, Margaret Alton’s veil. The telephone in Dr Teesdale’s study serves as a confessional, and the rocking-chair in The Gardener shows a presence better than a ghost could."
+        },
+        {
+          "id": "deadpan",
+          "name": "The flat last line",
+          "canonicalName": "Deadpan",
+          "definition": "Delivering an outrage or an absurdity in the same flat tone as everything else.",
+          "bookDefinition": "Delivering an outrage or an absurdity in the same flat tone as everything else.",
+          "inThisBook": "The endings are often a single plain sentence that states the worst without comment: the coffin was found to be full of blood; Bircham, sir; There is no rope, sir; Yes, that’s right. Roderick’s Story closes with a man who draws a couple of short breaths and falls back. The understatement leaves the reader to supply the shudder."
+        },
+        {
+          "id": "rival-explanations",
+          "name": "Rival explanations",
+          "canonicalName": "Rival explanations",
+          "definition": "A natural and a supernatural account offered side by side, with the reader left to choose between them.",
+          "bookDefinition": "A natural and a supernatural account offered side by side, with the reader left to choose between them.",
+          "inThisBook": "Almost every story offers the reader a way out. Machmout’s visions may be thought-reading, White Magic or Pure Coincidence; Everard Chandler says there are hundreds of ways to explain his vision; the narrator of The Outcast invites anyone who likes to recline on the cushion of coincidence; the surgeon in Machaon cannot believe in the cure he is watching. The endings usually lean one way, and The Gardener says outright that nobody is so obstinately unreasonable as a materialist."
+        },
+        {
+          "id": "allusion",
+          "name": "Allusion",
+          "canonicalName": "Allusion",
+          "definition": "A reference to another text or story, which the reader is expected to recognise.",
+          "bookDefinition": "A reference to another text or story, which the reader is expected to recognise.",
+          "inThisBook": "Educated narrators quote as they talk. The Polearn legend comes from the ninety-first Psalm; John Aylsford justifies murder with Thou shalt not suffer a witch to live; Sybil Rorke is kind to be cruel in a reversal of Hamlet, and John Evans means to hold the mirror up to Nature, as that old lunatic said; Anthony Carling quotes Browning on playing with souls. Machaon depends on the narrator’s knowledge of Greek myth and of the precinct of Asclepios in Athens, which Benson himself had studied."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "corners-of-the-room",
+          "text": "he may perhaps cast an occasional glance into the corners and dark places of the room where he sits, to make sure that nothing unusual lurks in the shadow … The author therefore fervently wishes his readers a few uncomfortable moments.",
+          "speaker": "",
+          "reference": "Preface, 1912",
+          "stage": "tower-1912",
+          "context": "Benson’s one-paragraph preface to The Room in the Tower, which goes on to say that some of the tales had appeared in magazines and the rest were new.",
+          "analysis": "Benson promises nothing grander than a pleasant fright before bed, and pictures his reader in an armchair checking the corners. The courteous last sentence is a joke about the genre, wishing discomfort as other writers wish enjoyment. Eleven years later Roderick’s Story shows a reader doing exactly what this preface hopes.",
+          "themes": [
+            "haunting"
+          ],
+          "techniques": [
+            "comedy"
+          ],
+          "characters": [],
+          "source": "The Room in the Tower and Other Stories, 1912, Preface",
+          "cloze": [
+            "corners",
+            "uncomfortable"
+          ]
+        },
+        {
+          "id": "room-in-the-tower",
+          "text": "Jack will show you your room: I have given you the room in the tower.",
+          "speaker": "Julia Stone",
+          "reference": "The Room in the Tower",
+          "stage": "tower-1912",
+          "context": "Mrs Stone speaks this sentence, and no other, in the dream that visits the narrator for fifteen years; years later a real hostess says it to him in the Ashdown Forest.",
+          "analysis": "Everything in the sentence is hospitable: a son to show the way, a room prepared. Its menace comes from repetition and from the silence around it. By the time the narrator hears it awake, the reader has learned to dread a friendly invitation.",
+          "themes": [
+            "dream"
+          ],
+          "techniques": [
+            "refrain"
+          ],
+          "characters": [
+            "julia-stone"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, The Room in the Tower",
+          "cloze": [
+            "show",
+            "tower"
+          ]
+        },
+        {
+          "id": "feast-together",
+          "text": "I knew you would come to the room in the tower … I have been long waiting for you. At last you have come. To-night I shall feast; before long we will feast together.",
+          "speaker": "Julia Stone",
+          "reference": "The Room in the Tower",
+          "stage": "tower-1912",
+          "context": "In the tower room at night, in a thunderstorm, the narrator feels a hand on his neck and hears a voice he knows from his dreams.",
+          "analysis": "Here the phrase from the dream returns with its meaning filled in. The vampire speaks with the patience of a hostess, and the second feast is the worst of it: she means that her victim will become like her. The narrator’s blow and his escape are all that stand between him and that future.",
+          "themes": [
+            "haunting",
+            "cruelty"
+          ],
+          "techniques": [
+            "refrain"
+          ],
+          "characters": [
+            "julia-stone"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, The Room in the Tower",
+          "cloze": [
+            "waiting",
+            "feast"
+          ]
+        },
+        {
+          "id": "ghost-of-a-motor-car",
+          "text": "Yes, the ghost of his motor-car. Seems almost too up-to-date, doesn’t it?",
+          "speaker": "",
+          "reference": "The Dust-Cloud",
+          "stage": "tower-1912",
+          "context": "After dinner on the Suffolk coast, the narrator’s host Harry Combe-Martin tells the village story about Guy Elphinstone, who ran over a child and then smashed into his own park gates.",
+          "analysis": "Benson lets his own character notice the novelty of a ghost that is a motor-car. The joke disarms the reader before the story puts the narrator in a car on the same stretch of road, and its climax is made of motoring things: dust, speed, a hooter and a siren.",
+          "themes": [
+            "technology",
+            "haunting"
+          ],
+          "techniques": [
+            "comedy"
+          ],
+          "characters": [],
+          "source": "The Room in the Tower and Other Stories, 1912, The Dust-Cloud",
+          "cloze": [
+            "ghost",
+            "up-to-date"
+          ]
+        },
+        {
+          "id": "believed-in-witches",
+          "text": "Supposing you asked me, on oath, whether I believed in witches, I should say ‘No.’ But if you asked me again, on oath, whether I suspected I believed in them, I should, I think, say ‘Yes.’",
+          "speaker": "",
+          "reference": "Gavon’s Eve",
+          "stage": "tower-1912",
+          "context": "Walking back from the river with his guest, Hugh Graham explains that the old woman the gillie visits is supposed to be a witch, and that tomorrow is Gavon’s Eve.",
+          "analysis": "Hugh’s careful distinction between belief and suspicion describes the state of mind these stories want to produce. An educated man cannot admit to believing in witches, and cannot quite stop. The sworn oath makes a joke of it, and the night at the Picts’ pool settles the question.",
+          "themes": [
+            "superstition"
+          ],
+          "techniques": [
+            "rival-explanations"
+          ],
+          "characters": [],
+          "source": "The Room in the Tower and Other Stories, 1912, Gavon’s Eve",
+          "cloze": [
+            "witches",
+            "suspected"
+          ]
+        },
+        {
+          "id": "i-confess-it",
+          "text": "I killed her, I confess it. I want to be forgiven.",
+          "speaker": "Charles Linkworth",
+          "reference": "The Confession of Charles Linkworth",
+          "stage": "tower-1912",
+          "context": "Sceptical of Dr Teesdale’s spiritualistic leanings, the prison chaplain takes the telephone receiver and reports the faint whisper he hears.",
+          "analysis": "Linkworth went to the gallows without confessing, and his words arrive by the most modern route available, a telephone that nobody at the prison has rung. Three short clauses give the whole of a penitent’s business: the act, the admission, the need. The chaplain suspects a hoax, and the story needs his doubt to make the absolution count.",
+          "themes": [
+            "guilt",
+            "religion",
+            "technology"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "charles-linkworth"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, The Confession of Charles Linkworth",
+          "cloze": [
+            "confess",
+            "forgiven"
+          ]
+        },
+        {
+          "id": "pure-coincidence",
+          "text": "with Machmout I have to put it down to White Magic, which should be a very inclusive term, or to Pure Coincidence, which is even more inclusive, and will cover all the inexplicable phenomena of the world, taken singly.",
+          "speaker": "",
+          "reference": "At Abdul Ali’s Grave",
+          "stage": "abdul-1912",
+          "context": "Just before this, the narrator has said that Weston, a member of the Society for Psychical Research, calls the boy Machmout’s visions thought-reading.",
+          "analysis": "Three explanations are offered in one sentence, and each is mocked a little. The capital letters make Pure Coincidence sound like a spirit of its own, and the last two words say what is wrong with it: coincidence works one event at a time and never adds them up. The story then piles up events that are hard to take singly.",
+          "themes": [
+            "psychical-research",
+            "superstition"
+          ],
+          "techniques": [
+            "rival-explanations",
+            "comedy"
+          ],
+          "characters": [],
+          "source": "The Room in the Tower and Other Stories, 1912, At Abdul Ali’s Grave",
+          "cloze": [
+            "Coincidence",
+            "inexplicable"
+          ]
+        },
+        {
+          "id": "sober-belief",
+          "text": "At present it was no superstition--the terror and incredulous horror on Sandie’s face when Jim raised his gun to fire at the hare told me that--it was a belief as sober and commonplace as our own belief that the hares were not incarnations of living folk in Achnaleish.",
+          "speaker": "",
+          "reference": "The Shootings of Achnaleish",
+          "stage": "abdul-1912",
+          "context": "The gillie Sandie has just stopped Jim Armytage from shooting a black hare, and the narrator thinks over what their rights of shooting amount to.",
+          "analysis": "The narrator sets the two beliefs level. To the villagers the English view is as strange as theirs is to the English, and neither side can argue the other out of it. It would take, he thinks, a couple of generations of education even to make the local belief into a superstition.",
+          "themes": [
+            "superstition"
+          ],
+          "techniques": [
+            "rival-explanations"
+          ],
+          "characters": [],
+          "source": "The Room in the Tower and Other Stories, 1912, The Shootings of Achnaleish",
+          "cloze": [
+            "sober",
+            "incarnations"
+          ]
+        },
+        {
+          "id": "ghost-and-post",
+          "text": "For to the Peverils the appearance of a ghost is a matter of hardly greater significance than is the appearance of the post to those who live in more ordinary houses.",
+          "speaker": "",
+          "reference": "How Fear Departed from the Long Gallery",
+          "stage": "abdul-1912",
+          "context": "Church-Peveril is introduced in the story’s first paragraph as a house so full of spectres that its family take psychical phenomena lightly.",
+          "analysis": "Benson opens with a joke about scale: ghosts arrive daily, knock, and come up the drive like letters. The comic calm matters to the story, because it makes the one apparition the family does fear, the twins in the long gallery, stand out sharply. Mrs Peveril worries that the Blue Lady might frighten the dog.",
+          "themes": [
+            "haunting"
+          ],
+          "techniques": [
+            "comedy",
+            "deadpan"
+          ],
+          "characters": [],
+          "source": "The Room in the Tower and Other Stories, 1912, How Fear Departed from the Long Gallery",
+          "cloze": [
+            "ghost",
+            "post"
+          ]
+        },
+        {
+          "id": "only-sorry",
+          "text": "It is not your fault that you must bring me what you must bring, but I am not afraid any longer. I am only sorry for you. God bless you, you poor darlings.",
+          "speaker": "Madge Dalrymple",
+          "reference": "How Fear Departed from the Long Gallery",
+          "stage": "abdul-1912",
+          "context": "Waking at dusk in the long gallery, Madge sees the two murdered twins coming towards her, and kneels.",
+          "analysis": "Madge speaks to the ghosts as children, with none of the dread or mockery of those who saw them before. She accepts that they bring death and blames them for nothing. Her pity is what dissolves the curse, and the story’s title turns out to be literal.",
+          "themes": [
+            "compassion",
+            "religion"
+          ],
+          "techniques": [
+            "refrain"
+          ],
+          "characters": [
+            "madge-dalrymple"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, How Fear Departed from the Long Gallery",
+          "cloze": [
+            "afraid",
+            "sorry"
+          ]
+        },
+        {
+          "id": "lumps-and-swellings",
+          "text": "In colour these dreadful insects were yellowish-grey, and they were covered with irregular lumps and swellings.",
+          "speaker": "",
+          "reference": "Caterpillars",
+          "stage": "abdul-1912",
+          "context": "Coming downstairs at night for a book, the narrator looks into the unoccupied bedroom of the Villa Cascana and sees the bed covered with caterpillars a foot long.",
+          "analysis": "Every detail of these caterpillars is diseased: the grey-yellow colour, the lumps, the swellings, and elsewhere the crab-like pincers. Benson describes a tumour in the shape of an insect well before the story reveals that someone died of cancer in that room.",
+          "themes": [
+            "illness"
+          ],
+          "techniques": [
+            "grotesque"
+          ],
+          "characters": [],
+          "source": "The Room in the Tower and Other Stories, 1912, Caterpillars",
+          "cloze": [
+            "lumps",
+            "swellings"
+          ]
+        },
+        {
+          "id": "cancer-inglisensis",
+          "text": "What’s the Latin for crab? Oh, yes, Cancer. So in case it is unique, let’s christen it: ‘Cancer Inglisensis.’",
+          "speaker": "Arthur Inglis",
+          "reference": "Caterpillars",
+          "stage": "abdul-1912",
+          "context": "Inglis shows the narrator a small caterpillar he found on his counterpane and keeps in a pill-box.",
+          "analysis": "Inglis’s joke is a naturalist’s habit, naming a species after its finder. The reader who has seen the pyramid of caterpillars hears the other meaning of the Latin word immediately, and the name comes true six months later when Inglis is found to have incurable cancer.",
+          "themes": [
+            "illness"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "arthur-inglis"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, Caterpillars",
+          "cloze": [
+            "crab",
+            "christen"
+          ]
+        },
+        {
+          "id": "just-room",
+          "text": "Just room for one inside, sir,",
+          "speaker": "The bus conductor",
+          "reference": "The Bus-Conductor",
+          "stage": "cat-1912",
+          "context": "Leaning from his friend’s window before dawn, Hugh Grainger sees an empty hearse stop at the door, and its driver looks up and jerks his thumb over his shoulder.",
+          "analysis": "The words are a conductor’s everyday patter, which is why they are so frightening from a hearse. A month later, on a bus in Sloane Square, the same face says them again, and Hugh’s refusal saves his life. The line was later spoken by the hearse driver in the Ealing film Dead of Night.",
+          "themes": [
+            "dream"
+          ],
+          "techniques": [
+            "refrain"
+          ],
+          "characters": [
+            "bus-conductor",
+            "hugh-grainger"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, The Bus-Conductor",
+          "cloze": [
+            "room",
+            "inside"
+          ]
+        },
+        {
+          "id": "two-holes",
+          "text": "these two holes, the one through which we are always looking, and the other in the spiritual plane, come opposite one another, we see through, and then only do the sights and sounds of the spiritual world become visible or audible to us.",
+          "speaker": "Hugh Grainger",
+          "reference": "The Bus-Conductor",
+          "stage": "cat-1912",
+          "context": "Before telling his story, Hugh explains his theory of ghost-seeing with an image of two revolving sheets of cardboard, each with a tiny hole.",
+          "analysis": "Hugh’s theory makes ghost-seeing a matter of chance alignment, which explains why a steady man with no mediumistic powers might see one. The narrator finds it neither convincing nor practical, and hopes Hugh’s ghost is more original than his theory. It is: a straw-hatted conductor with a mole on his cheek.",
+          "themes": [
+            "psychical-research"
+          ],
+          "techniques": [
+            "analogy"
+          ],
+          "characters": [
+            "hugh-grainger"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, The Bus-Conductor",
+          "cloze": [
+            "holes",
+            "spiritual"
+          ]
+        },
+        {
+          "id": "pan-playing",
+          "text": "It was, my dear Darcy, as the Greeks would have said, it was Pan playing on his pipes, the voice of Nature.",
+          "speaker": "Frank Halton",
+          "reference": "The Man Who Went Too Far",
+          "stage": "cat-1912",
+          "context": "Frank describes to Darcy the day in the meadow by the river when he first heard a music that came from the reeds, the sky and the trees.",
+          "analysis": "Frank reaches for Greek myth to name what he heard, and makes Pan a figure for the life-force he has been chasing. The allusion carries more than he intends, since Pan brought panic as well as music. The village already has its legend of a monstrous goat.",
+          "themes": [
+            "nature",
+            "religion"
+          ],
+          "techniques": [
+            "allusion"
+          ],
+          "characters": [
+            "frank-halton",
+            "darcy"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, The Man Who Went Too Far",
+          "cloze": [
+            "Pan",
+            "Nature"
+          ]
+        },
+        {
+          "id": "suffering-left-out",
+          "text": "All Nature from highest to lowest is full, crammed full of suffering; every living organism in nature preys on another, yet in your aim to get close to, to be one with nature, you leave suffering altogether out",
+          "speaker": "Darcy",
+          "reference": "The Man Who Went Too Far",
+          "stage": "cat-1912",
+          "context": "After days of listening to Frank’s gospel of joy, Darcy announces that he has found the radical unsoundness of the idea.",
+          "analysis": "Darcy’s objection is the moral centre of the story: a man who wants to be one with nature cannot choose only its joy. He predicts that the final revelation will be one of horror, and the storm proves him right. His argument gives the ending its weight, so that the hoof-prints read as a judgement.",
+          "themes": [
+            "nature",
+            "cruelty"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "darcy",
+            "frank-halton"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, The Man Who Went Too Far",
+          "cloze": [
+            "suffering",
+            "preys"
+          ]
+        },
+        {
+          "id": "monstrous-goat",
+          "text": "the marks were pointed prints, as if caused by the hoofs of some monstrous goat that had leaped and stamped upon him.",
+          "speaker": "",
+          "reference": "The Man Who Went Too Far",
+          "stage": "cat-1912",
+          "context": "The last sentence of the story, after Darcy and the servants carry Frank’s body in from the garden and see strange marks darkening on his chest and arms.",
+          "analysis": "Benson ends on physical evidence, described like a medical finding. The face of the dead man is smiling like a tired boy’s, but his body carries the marks of the god he wanted to see. The phrase monstrous goat picks up the village legend told at the start.",
+          "themes": [
+            "nature"
+          ],
+          "techniques": [
+            "deadpan",
+            "grotesque"
+          ],
+          "characters": [
+            "frank-halton"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, The Man Who Went Too Far",
+          "cloze": [
+            "hoofs",
+            "goat"
+          ]
+        },
+        {
+          "id": "second-sight",
+          "text": "Yes, there are hundreds of ways in which you may explain it. But the coincidence was an odd one, and those who believe in second sight might find an instance of their hobby in it.",
+          "speaker": "",
+          "reference": "Between the Lights",
+          "stage": "cat-1912",
+          "context": "Everard Chandler finishes telling his Christmas guests about the vision on the croquet lawn and the Picts’ castle where it came true.",
+          "analysis": "Everard offers the sceptics their explanations, sleep and a sheep in a ruin among them, and then keeps the coincidence. Calling second sight a hobby makes him sound reasonable. His last remark, that the experience was nearly too much for him, carries more weight than all the explanations.",
+          "themes": [
+            "dream"
+          ],
+          "techniques": [
+            "rival-explanations"
+          ],
+          "characters": [],
+          "source": "The Room in the Tower and Other Stories, 1912, Between the Lights",
+          "cloze": [
+            "coincidence",
+            "hobby"
+          ]
+        },
+        {
+          "id": "phonograph",
+          "text": "The atmosphere has somehow been charged with the scene, and the scene in whole or part repeats itself, though under what laws we do not know, just as a phonograph will repeat, when properly handled, what has been said into it.",
+          "speaker": "",
+          "reference": "Outside the Door",
+          "stage": "door-1912",
+          "context": "After an evening of table-turning in her house on the Norfolk coast, Mrs Aldwych explains her theory of haunted places.",
+          "analysis": "Mrs Aldwych’s theory needs no spirits at all: a violent scene leaves a recording in a place, and the right listener plays it back. The phonograph makes the idea sound modern and almost mechanical. The narrator calls it all theory, and that night he hears the recording.",
+          "themes": [
+            "haunting",
+            "technology"
+          ],
+          "techniques": [
+            "analogy"
+          ],
+          "characters": [],
+          "source": "The Room in the Tower and Other Stories, 1912, Outside the Door",
+          "cloze": [
+            "charged",
+            "phonograph"
+          ]
+        },
+        {
+          "id": "receivers",
+          "text": "For, to take the analogy of wireless telegraphy, we are all of us probably ‘receivers’ to some extent, and catch now and then a message or part of a message that the eternal waves of emotion are ceaselessly shouting aloud to those who have ears to hear",
+          "speaker": "",
+          "reference": "The Terror by Night",
+          "stage": "door-1912",
+          "context": "From the narrator’s introduction, which argues that feeling passes between minds by means that may be as material as a newspaper sent by wireless to a ship in mid-Atlantic.",
+          "analysis": "Here the narrator borrows the language of wireless to make telepathy sound like engineering. Messages arrive in fragments because most of us are not perfectly tuned. The phrase those who have ears to hear, from the Gospels, slips an older authority in beside the new science.",
+          "themes": [
+            "psychical-research",
+            "technology"
+          ],
+          "techniques": [
+            "analogy",
+            "allusion"
+          ],
+          "characters": [],
+          "source": "The Room in the Tower and Other Stories, 1912, The Terror by Night",
+          "cloze": [
+            "wireless",
+            "receivers"
+          ]
+        },
+        {
+          "id": "completely-sane",
+          "text": "I am quite certain as a brain specialist that I am completely sane, and that these things happened not merely in my imagination, but in the external world.",
+          "speaker": "Francis Assheton",
+          "reference": "The Thing in the Hall",
+          "stage": "door-1912",
+          "context": "Dr Assheton’s words at the end of the narrator’s reading of his statement, which he asks to have put at the beginning or the end of the account.",
+          "analysis": "The witness is an expert in exactly the kind of madness that would explain his story away. By speaking as a brain specialist, Assheton closes that escape route for the reader. That he died, probably within the hour, gives the claim the force of a deathbed statement.",
+          "themes": [
+            "psychical-research"
+          ],
+          "techniques": [
+            "frame-narrative",
+            "rival-explanations"
+          ],
+          "characters": [
+            "francis-assheton"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, The Thing in the Hall",
+          "cloze": [
+            "sane",
+            "external"
+          ]
+        },
+        {
+          "id": "anyone-may-come-in",
+          "text": "I learned to “expect,” to throw open the door into the soul, and I said, “Anyone may come in.” And I think Something has applied for admission",
+          "speaker": "Louis Fielder",
+          "reference": "The Thing in the Hall",
+          "stage": "door-1912",
+          "context": "Fielder explains to Assheton why he thinks the knocking and table-turning in his house come from an Elemental.",
+          "analysis": "Fielder describes spiritualism as open house for the soul, and the carelessness of Anyone is his mistake. He adds that he does not want good spirits playing hymn tunes on a musical box, only to know what has come. Assheton watches what follows as a slow corruption: Fielder turns cruel, cheats at cards and tortures his cat.",
+          "themes": [
+            "psychical-research",
+            "cruelty"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "louis-fielder"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, The Thing in the Hall",
+          "cloze": [
+            "door",
+            "admission"
+          ]
+        },
+        {
+          "id": "enormous-slug",
+          "text": "It was like the shadow of some enormous slug, legless and fat, some two feet high by about four feet long. Only at one end of it was a head shaped like the head of a seal, with open mouth and panting tongue.",
+          "speaker": "",
+          "reference": "The Thing in the Hall",
+          "stage": "door-1912",
+          "context": "During an evening at Fielder’s house, he points with a shaking finger at the pale grey wall.",
+          "analysis": "Benson measures his monster like a naturalist, two feet by four, and so makes it harder to dismiss. The slug body will return in Negotium Perambulans eleven years later. Its seal’s head, panting, adds the one animal touch that makes it hungry.",
+          "themes": [
+            "cruelty"
+          ],
+          "techniques": [
+            "grotesque"
+          ],
+          "characters": [
+            "francis-assheton",
+            "louis-fielder"
+          ],
+          "source": "The Room in the Tower and Other Stories, 1912, The Thing in the Hall",
+          "cloze": [
+            "slug",
+            "seal"
+          ]
+        },
+        {
+          "id": "gramophone-plate",
+          "text": "There’s your record, your gramophone plate all ready. What we want, and what I’m trying to arrive at, is a needle which, as it traces its minute way over these dots, will come across words or sentences which the dead have uttered, and will reproduce them.",
+          "speaker": "Sir James Horton",
+          "reference": "And the Dead Spake",
+          "stage": "spake-1923",
+          "context": "Horton explains to the narrator his theory that every vivid experience leaves a mark on the brain, like a dot on a record.",
+          "analysis": "Horton makes memory a kind of hardware. The analogy makes the resurrection of speech sound like a matter of finding the right needle. The phrase the dead have uttered gives the story its title and its dread.",
+          "themes": [
+            "technology",
+            "psychical-research"
+          ],
+          "techniques": [
+            "analogy"
+          ],
+          "characters": [
+            "james-horton"
+          ],
+          "source": "Visible and Invisible, 1923, And the Dead Spake",
+          "cloze": [
+            "gramophone",
+            "needle"
+          ]
+        },
+        {
+          "id": "judas-iscariot",
+          "text": "Fancy knowing you had been Judas Iscariot! You couldn’t get over it! you would commit suicide, or cause everybody who was connected with you to commit suicide from their horror of you.",
+          "speaker": "",
+          "reference": "The Outcast",
+          "stage": "spake-1923",
+          "context": "Over the chess-board at Tarleton, the narrator’s brother-in-law Charles Alington, an enthusiast for every new theory, is explaining reincarnation.",
+          "analysis": "Alington’s joke describes the plot of the story before it happens. Bertha Acres’s husband shoots himself in horror of her, the animals flee her, and the closing Latin treatise points to the soul inside her. The flippant tone makes the eventual meaning land harder.",
+          "themes": [
+            "religion",
+            "guilt"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [],
+          "source": "Visible and Invisible, 1923, The Outcast",
+          "cloze": [
+            "Judas",
+            "horror"
+          ]
+        },
+        {
+          "id": "footprints",
+          "text": "In all probability the human footprints were real human footprints. I expect that they were the footprints, anyhow, of a being more nearly a man than anything else. My reason for saying so is that I know such beings exist.",
+          "speaker": "",
+          "reference": "The Horror-Horn",
+          "stage": "spake-1923",
+          "context": "At a hotel in the Engadine, Professor Ingram has been reading a report of the Mount Everest expedition, whose climbers thought they saw the tracks of a naked foot.",
+          "analysis": "A physiologist first argues that altitude could cause hallucinations, then reverses himself on the strength of what he has seen. The flat scientific phrasing makes the claim more alarming. The story that follows is his own, told in the hotel hall, and then the narrator’s.",
+          "themes": [
+            "nature"
+          ],
+          "techniques": [
+            "frame-narrative"
+          ],
+          "characters": [],
+          "source": "Visible and Invisible, 1923, The Horror-Horn",
+          "cloze": [
+            "footprints",
+            "beings"
+          ]
+        },
+        {
+          "id": "cushion-of-coincidence",
+          "text": "So, if you reject the last incident here recorded, or account for it by some local disturbance, an earthquake, or the breaking of a spring just below the grave, you can comfortably recline on the cushion of coincidence",
+          "speaker": "",
+          "reference": "The Outcast",
+          "stage": "spake-1923",
+          "context": "Near the end of the story, after the grave dug for Bertha Acres has proved too short and her coffin has risen out of it.",
+          "analysis": "The narrator hands the sceptical reader a list of natural explanations, each more strained than the last, down to an earthquake. The cushion of coincidence mocks the comfort they offer. Benson’s narrators often play fair in this way while making plain which way they lean.",
+          "themes": [
+            "haunting"
+          ],
+          "techniques": [
+            "rival-explanations"
+          ],
+          "characters": [],
+          "source": "Visible and Invisible, 1923, The Outcast",
+          "cloze": [
+            "earthquake",
+            "coincidence"
+          ]
+        },
+        {
+          "id": "curing-him",
+          "text": "I don’t believe in such a treatment, but I believe it is curing him.",
+          "speaker": "",
+          "reference": "Machaon",
+          "stage": "spake-1923",
+          "context": "In a letter to the narrator, the surgeon Godfrey Symes reports that Parkes’s growth is shrinking under the X-ray treatment the narrator asked him to try.",
+          "analysis": "Symes’s sentence balances what he believes about the treatment against what he sees it doing. He is honest enough to report a result his training cannot account for, and asks, half joking, for the medium’s name. The story ends without deciding whether a Greek physician’s son really came to Tilling.",
+          "themes": [
+            "illness",
+            "psychical-research"
+          ],
+          "techniques": [
+            "rival-explanations"
+          ],
+          "characters": [],
+          "source": "Visible and Invisible, 1923, Machaon",
+          "cloze": [
+            "treatment",
+            "curing"
+          ]
+        },
+        {
+          "id": "pestilence",
+          "text": "Below ran the legend “Negotium perambulans in tenebris” from the ninety-first Psalm. We should find it translated there, “the pestilence that walketh in darkness,” which but feebly rendered the Latin.",
+          "speaker": "",
+          "reference": "Negotium Perambulans",
+          "stage": "negotium-1923",
+          "context": "Looking back, the narrator recalls his uncle, the vicar of Polearn, coming down from the pulpit to explain the fourth carved panel of the altar-rails.",
+          "analysis": "The Latin names the monster better than the English Bible does: negotium is business, a thing with work to do. The vicar makes it a minister of God’s wrath, and the story never contradicts him. The panel shows the Polearn lych-gate, so the legend belongs to the village itself.",
+          "themes": [
+            "religion"
+          ],
+          "techniques": [
+            "symbolic-objects",
+            "allusion"
+          ],
+          "characters": [],
+          "source": "Visible and Invisible, 1923, Negotium Perambulans",
+          "cloze": [
+            "pestilence",
+            "darkness"
+          ]
+        },
+        {
+          "id": "puckered-skin",
+          "text": "It seemed to have no head, but on the front of it was an orifice of puckered skin which opened and shut and slavered at the edges. It was hairless, and slug-like in shape and in texture.",
+          "speaker": "",
+          "reference": "Negotium Perambulans",
+          "stage": "negotium-1923",
+          "context": "The painter John Evans, caught by darkness, has run home to light his lamps, and the Thing slides in through the open door towards him.",
+          "analysis": "Benson gives his monster no face at all, only a mouth, described with clinical exactness. Slug-like, hairless and phosphorescent, it is the Elemental of The Thing in the Hall made solid. The narrator tries to grab it and his hands sink in as in thick mud.",
+          "themes": [
+            "cruelty",
+            "religion"
+          ],
+          "techniques": [
+            "grotesque"
+          ],
+          "characters": [],
+          "source": "Visible and Invisible, 1923, Negotium Perambulans",
+          "cloze": [
+            "orifice",
+            "slug-like"
+          ]
+        },
+        {
+          "id": "fire-in-her-bedroom",
+          "text": "She always liked a fire in her bedroom; she shall have it now.",
+          "speaker": "John Aylsford",
+          "reference": "At the Farmhouse",
+          "stage": "negotium-1923",
+          "context": "Having strangled his wife and soaked the bedroom and studio in paraffin, Aylsford climbs the stairs with the matches, his second glass of whisky singing in his head.",
+          "analysis": "Aylsford finds his own words comical, and the grin tells the reader how far he has gone. The joke dresses murder as a husband’s kindness. A moment later he sees that the bed is empty.",
+          "themes": [
+            "cruelty",
+            "guilt"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "john-aylsford",
+            "ellen-trenair"
+          ],
+          "source": "Visible and Invisible, 1923, At the Farmhouse",
+          "cloze": [
+            "fire",
+            "bedroom"
+          ]
+        },
+        {
+          "id": "kind-to-be-cruel",
+          "text": "She was not “cruel to be kind”; she was kind to be demoniacally cruel.",
+          "speaker": "",
+          "reference": "Inscrutable Decrees",
+          "stage": "negotium-1923",
+          "context": "Here the narrator remembers how Sybil Rorke treated her husband’s cousin Archie, who was desperately in love with her, in the season before her husband died.",
+          "analysis": "The narrator borrows Hamlet’s line about being cruel only to be kind and turns it round. The word demoniacally is a strong one for a society beauty, and it prepares for the drowned child. Throughout, the narrator keeps doubting his own reading of her, and the story proves him right.",
+          "themes": [
+            "cruelty"
+          ],
+          "techniques": [
+            "allusion"
+          ],
+          "characters": [
+            "sybil-rorke",
+            "archie-rorke"
+          ],
+          "source": "Visible and Invisible, 1923, Inscrutable Decrees",
+          "cloze": [
+            "kind",
+            "cruel"
+          ]
+        },
+        {
+          "id": "watched-me-struggling",
+          "text": "You might have saved me … or you might have tried to save me; but you watched me struggling till I sank.",
+          "speaker": "",
+          "reference": "Inscrutable Decrees",
+          "stage": "negotium-1923",
+          "context": "At the séance Archie asked Sybil to hold, the phantom of Ellen Davenport, the village girl found in the drained lake, turns to her.",
+          "analysis": "The child accuses Sybil of watching, the sin the whole story has prepared. The sentence corrects itself as it goes, from might have saved to might have tried, so that the charge becomes more exact and more terrible. Sybil says nothing, and Archie takes her silence as an answer.",
+          "themes": [
+            "guilt"
+          ],
+          "techniques": [
+            "frame-narrative"
+          ],
+          "characters": [
+            "sybil-rorke",
+            "archie-rorke"
+          ],
+          "source": "Visible and Invisible, 1923, Inscrutable Decrees",
+          "cloze": [
+            "saved",
+            "struggling"
+          ]
+        },
+        {
+          "id": "i-am-the-gardener",
+          "text": "I am the gardener. I want to come in. I can’t find her here.",
+          "speaker": "",
+          "reference": "The Gardener",
+          "stage": "negotium-1923",
+          "context": "Margaret Grainger falls asleep over her planchette, and her hand writes a level line across the paper.",
+          "analysis": "Margaret’s planchette usually produces loops and curves; this message is plain and urgent, and every sentence makes sense once Margaret hears about the gardener who strangled his wife. Later the planchette writes that he has come in, and he stands in the doorway searching the room.",
+          "themes": [
+            "haunting",
+            "guilt"
+          ],
+          "techniques": [
+            "refrain"
+          ],
+          "characters": [
+            "hugh-grainger"
+          ],
+          "source": "Visible and Invisible, 1923, The Gardener",
+          "cloze": [
+            "gardener",
+            "find"
+          ]
+        },
+        {
+          "id": "twaddle",
+          "text": "You make me talk such twaddle. Do get your stupid mind out of the way.",
+          "speaker": "Mr Tilly",
+          "reference": "Mr. Tilly’s Séance",
+          "stage": "tilly-1923",
+          "context": "Speaking through Mrs Cumberbatch, Mr Tilly has just told the circle about the sunshine and happiness of the other side, and death as the gate of life.",
+          "analysis": "Benson gives a comic answer to a real question: why are the messages from the dead so banal? The spirit’s thought has to pass through the medium’s mind, and comes out in her words. Mr Tilly, who used to love such messages, now hears them from the inside.",
+          "themes": [
+            "psychical-research"
+          ],
+          "techniques": [
+            "comedy"
+          ],
+          "characters": [
+            "mr-tilly",
+            "mrs-cumberbatch"
+          ],
+          "source": "Visible and Invisible, 1923, Mr. Tilly’s Séance",
+          "cloze": [
+            "twaddle",
+            "stupid"
+          ]
+        },
+        {
+          "id": "absolutely-genuine",
+          "text": "So they rejected the whole thing, which was a pity, since, for once, the phenomena were absolutely genuine.",
+          "speaker": "",
+          "reference": "Mr. Tilly’s Séance",
+          "stage": "tilly-1923",
+          "context": "The Psychical Research Society sends investigators, who find phosphorescent paint on the panels above the chimney-piece.",
+          "analysis": "The joke cuts both ways. The investigators are right about the medium, who cheats, and wrong about the one séance that was real. The words for once concede that most séances are fraud, while insisting that this one was not.",
+          "themes": [
+            "psychical-research"
+          ],
+          "techniques": [
+            "dramatic-irony",
+            "deadpan"
+          ],
+          "characters": [
+            "mr-tilly"
+          ],
+          "source": "Visible and Invisible, 1923, Mr. Tilly’s Séance",
+          "cloze": [
+            "rejected",
+            "genuine"
+          ]
+        },
+        {
+          "id": "kind-earth",
+          "text": "Positively I look forward to death, for then I shall be buried and have the kind earth all round me. No leaden caskets for me--I have given explicit directions.",
+          "speaker": "Mrs Amworth",
+          "reference": "Mrs. Amworth",
+          "stage": "tilly-1923",
+          "context": "Walking the narrator home on a summer night, Mrs Amworth praises night air and gardening, and borrows a magazine.",
+          "analysis": "Mrs Amworth’s love of earth sounds like a gardener’s hearty good sense. After Urcombe’s lecture on vampires, who rest in the grave by day, it reads as a plan. Her directions are obeyed at her funeral, and Urcombe needs only a pick, a shovel and a screwdriver to reach her.",
+          "themes": [
+            "death",
+            "cruelty"
+          ],
+          "techniques": [
+            "dramatic-irony"
+          ],
+          "characters": [
+            "mrs-amworth"
+          ],
+          "source": "Visible and Invisible, 1923, Mrs. Amworth",
+          "cloze": [
+            "earth",
+            "caskets"
+          ]
+        },
+        {
+          "id": "time-tunnel",
+          "text": "At the most, Time is a sort of tunnel through which we are accustomed to believe that we are travelling.",
+          "speaker": "Anthony Carling",
+          "reference": "In the Tube",
+          "stage": "tilly-1923",
+          "context": "Anthony is arguing, after dinner in Brompton Square, that time is a convention; these are almost the first words of the story.",
+          "analysis": "Anthony’s metaphor anticipates the setting of his story. A suicide in the Tube, foreseen before it happens and re-enacted after it, fits a philosophy in which before and after are illusions. His own story will test the idea.",
+          "themes": [
+            "dream"
+          ],
+          "techniques": [
+            "analogy"
+          ],
+          "characters": [
+            "anthony-carling"
+          ],
+          "source": "Visible and Invisible, 1923, In the Tube",
+          "cloze": [
+            "tunnel",
+            "travelling"
+          ]
+        },
+        {
+          "id": "hell-of-remorse",
+          "text": "I have talked to a soul in the hell of remorse, which is the only possible hell.",
+          "speaker": "Anthony Carling",
+          "reference": "In the Tube",
+          "stage": "tilly-1923",
+          "context": "The icy presence has left the room, and Anthony tells his shaken guest what he was talking to.",
+          "analysis": "Anthony gives hell a psychological definition, and one that allows for hope, since remorse points towards repentance. The narrator heard only one side of the conversation and saw the spectre for a moment. The message Anthony carries away is for a woman he has never met, from the contrite.",
+          "themes": [
+            "guilt",
+            "religion"
+          ],
+          "techniques": [
+            "ellipsis"
+          ],
+          "characters": [
+            "anthony-carling"
+          ],
+          "source": "Visible and Invisible, 1923, In the Tube",
+          "cloze": [
+            "remorse",
+            "hell"
+          ]
+        },
+        {
+          "id": "train-always-waits",
+          "text": "No proper person fusses about death; that’s a train which we are all sure to catch. It always waits for you.",
+          "speaker": "Roderick Cardew",
+          "reference": "Roderick’s Story",
+          "stage": "tilly-1923",
+          "context": "Pressed by his friend, Roderick admits that his doctor has told him he may die at any moment.",
+          "analysis": "Roderick makes the fear of death a joke about railway timetables, and the joke is sincere. He believes something delightful follows, and the story is built to prove him right. His manners about dying in other people’s houses are part of the same gallantry.",
+          "themes": [
+            "death"
+          ],
+          "techniques": [
+            "comedy"
+          ],
+          "characters": [
+            "roderick-cardew"
+          ],
+          "source": "Visible and Invisible, 1923, Roderick’s Story",
+          "cloze": [
+            "death",
+            "train"
+          ]
+        },
+        {
+          "id": "all-shadows",
+          "text": "you will make a book that not only is inartistic, all shadows and no light, but a false book. Fiction can be false, you know, inherently false.",
+          "speaker": "Roderick Cardew",
+          "reference": "Roderick’s Story",
+          "stage": "tilly-1923",
+          "context": "Roderick has spent the afternoon reading the narrator’s typescripts, stories about a vampire, an elemental and the reincarnation of an execrable personage.",
+          "analysis": "Benson ends his book with a character criticising it. The three stories Roderick has read sound like Mrs. Amworth, one of the elemental stories, and The Outcast, and his objection is that they present the borderland as wholly terrible. The story that follows is the light he says is missing.",
+          "themes": [
+            "haunting"
+          ],
+          "techniques": [
+            "frame-narrative"
+          ],
+          "characters": [
+            "roderick-cardew"
+          ],
+          "source": "Visible and Invisible, 1923, Roderick’s Story",
+          "cloze": [
+            "shadows",
+            "false"
+          ]
+        },
+        {
+          "id": "fell-back",
+          "text": "“Oh, Margaret, my dear....” he cried. He drew a couple of short breaths, and fell back.",
+          "speaker": "",
+          "reference": "Roderick’s Story",
+          "stage": "tilly-1923",
+          "context": "The last lines of the book. Hearing a tap on the wall in the night, the narrator goes into Roderick’s room and finds him sitting up, smiling at something a few feet away.",
+          "analysis": "Everything Roderick hoped for is in the four words he cries, and the narrator reports his death in a single plain sentence. The couple of short breaths were what his doctor predicted. Benson leaves the reader to see what Roderick saw, and closes the collection on a welcome.",
+          "themes": [
+            "death",
+            "compassion"
+          ],
+          "techniques": [
+            "deadpan"
+          ],
+          "characters": [
+            "roderick-cardew",
+            "margaret-alton"
+          ],
+          "source": "Visible and Invisible, 1923, Roderick’s Story",
+          "cloze": [
+            "breaths",
+            "fell"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "First published",
+          "value": "1912",
+          "note": "The Room in the Tower and Other Stories: seventeen stories, published in London by Mills & Boon."
+        },
+        {
+          "label": "Second book",
+          "value": "1923",
+          "note": "Visible and Invisible: twelve stories, published in London by Hutchinson."
+        },
+        {
+          "label": "Stories",
+          "value": "29",
+          "note": "From under 3,000 words (The Terror by Night) to more than 8,000 (The Man Who Went Too Far)."
+        },
+        {
+          "label": "In a magazine",
+          "value": "1906",
+          "note": "The Dust-Cloud appeared in the Pall Mall Magazine in January 1906, and The Bus-Conductor in December."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "Ghost stories brought up to date",
+          "summary": "Benson’s distinctive move is to set the supernatural among motor cars, telephones, gramophones, X-rays and the Tube, and among comfortable modern people who talk about telepathy over the port. The Pall Mall Magazine billed The Bus-Conductor as a modern ghost story in 1906, and the modern furniture makes the old terrors feel near.",
+          "counter": "Underneath the machinery the stories are often very old: a vampire, a witch, a curse, a god in the woods, a murdered woman’s revenge. The modern detail can be seen as dressing for traditional plots."
+        },
+        {
+          "position": "The language of psychical research",
+          "summary": "Benson’s uncle Henry Sidgwick was the first president of the Society for Psychical Research, and the stories draw on its vocabulary of sensitives, thought-transference, phantoms of the living and materialisation. Characters theorise like investigators, and several stories are shaped like case reports.",
+          "counter": "Benson also mocks the business freely, in Weston, in Starlight’s platitudes and above all in Mr. Tilly’s Séance, and he uses the theories when they suit the story. The psychical research is a source of plots and atmosphere more than a creed."
+        },
+        {
+          "position": "Horror or consolation?",
+          "summary": "Lovecraft, writing in 1927, admired the most horrible of these tales, singling out The Man Who Went Too Far, Negotium Perambulans and The Horror-Horn, and Benson’s reputation in the genre rests largely on his monsters.",
+          "counter": "The collection is more varied than that. How Fear Departed from the Long Gallery and Roderick’s Story are about pity and love, several stories are comic, and the second book ends with a character calling horror stories false."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does Benson bring the ghost story into the modern world?",
+          "focus": "Technology, setting and the modern reader",
+          "plan": [
+            "Begin with the 1906 magazine versions of The Dust-Cloud and The Bus-Conductor, a motor story and a modern ghost story.",
+            "Analyse the machines used by ghosts: the phantom motor, the telephone in The Confession of Charles Linkworth, the gramophone needle in And the Dead Spake.",
+            "Examine the theorists’ analogies with the phonograph, wireless and X-rays.",
+            "Weigh the modern settings against the old plots underneath them.",
+            "Conclude on why modern detail makes the supernatural more or less believable."
+          ]
+        },
+        {
+          "question": "How far do Benson’s stories take psychical research seriously?",
+          "focus": "Evidence, mediums and rival explanations",
+          "plan": [
+            "Set out the vocabulary of the Society for Psychical Research in the stories, from sensitives to materialisation.",
+            "Compare the satire of Mr. Tilly’s Séance and Starlight in Machaon with the seriousness of The Thing in the Hall.",
+            "Analyse how the endings offer natural explanations, and how they lean.",
+            "Consider Roderick’s criticism of mediums and of the narrator’s own stories.",
+            "Conclude on whether belief or doubt has the last word."
+          ]
+        },
+        {
+          "question": "What do Benson’s ghosts want?",
+          "focus": "Guilt, revenge, pity and love",
+          "plan": [
+            "Group the ghosts by what brings them back: confession, revenge, search, re-enactment, love.",
+            "Examine the guilty dead in The Confession of Charles Linkworth, The Gardener and In the Tube.",
+            "Examine the avengers in At the Farmhouse, Inscrutable Decrees and Negotium Perambulans.",
+            "Discuss pity in How Fear Departed from the Long Gallery and love in Roderick’s Story.",
+            "Conclude on what the stories suggest about the living’s duty to the dead."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Which story frightened you most, and was it the one that showed most or least?",
+        "Why might Benson make so many of his narrators sceptical at the start?",
+        "Does the comedy in Mr. Tilly’s Séance or How Fear Departed from the Long Gallery weaken the ghost stories around it, or strengthen them?",
+        "Is Roderick right that stories which are all shadows and no light are false?",
+        "Why do machines like the telephone and the gramophone suit ghosts so well?",
+        "Which of the rival explanations offered at the end of a story do you find most convincing?"
+      ],
+      "timeline": [
+        {
+          "year": 1867,
+          "label": "E. F. Benson is born",
+          "detail": "On 24 July, at Wellington College in Berkshire, where his father, Edward White Benson, was the first headmaster.",
+          "kind": "author"
+        },
+        {
+          "year": 1882,
+          "label": "The Society for Psychical Research is founded",
+          "detail": "Its first president is Henry Sidgwick, the brother of Benson’s mother; it sets out to investigate thought-transference, apparitions, mediums and hypnotism.",
+          "kind": "context"
+        },
+        {
+          "year": 1886,
+          "label": "Phantasms of the Living",
+          "detail": "Edmund Gurney, F. W. H. Myers and Frank Podmore publish their two-volume study of telepathy and of apparitions seen at a moment of crisis, especially death.",
+          "kind": "context"
+        },
+        {
+          "year": 1893,
+          "label": "Dodo",
+          "detail": "Benson’s first novel, a society comedy, comes out in the spring, while Benson is in Athens studying the precinct of Asclepios below the Acropolis.",
+          "kind": "author"
+        },
+        {
+          "year": 1895,
+          "label": "Winters in Egypt",
+          "detail": "In the early months of 1895 and 1896 Benson joins his sister Margaret at Luxor, where she has leave to excavate the temple of Mut at Karnak.",
+          "kind": "author"
+        },
+        {
+          "year": 1896,
+          "label": "Archbishop Benson dies",
+          "detail": "Benson’s father dies of heart failure on 11 October in the church at Hawarden, where he is staying with Gladstone.",
+          "kind": "author"
+        },
+        {
+          "year": 1905,
+          "label": "The Angel of Pain",
+          "detail": "Benson’s novel grew, he wrote in 1912, from the story The Man Who Went Too Far.",
+          "kind": "author"
+        },
+        {
+          "year": 1906,
+          "label": "Two stories in the Pall Mall Magazine",
+          "detail": "The Dust-Cloud appears in January, announced as E. F. Benson’s Motor Story, and The Bus-Conductor in December, subtitled A Modern Ghost Story.",
+          "kind": "work"
+        },
+        {
+          "year": 1912,
+          "label": "The Room in the Tower and Other Stories",
+          "detail": "Seventeen stories published by Mills & Boon, some reprinted from magazines and the rest new; a second edition follows the same year.",
+          "kind": "work"
+        },
+        {
+          "year": 1914,
+          "label": "Britain declares war on Germany",
+          "detail": "On 4 August. The first story of Visible and Invisible begins that evening.",
+          "kind": "context"
+        },
+        {
+          "year": 1920,
+          "label": "Lamb House, Rye",
+          "detail": "Benson takes a sub-lease of Henry James’s old house in Rye, where he had first stayed in the winter of 1916–17. Rye becomes Tilling in his comic novels and in two of these stories.",
+          "kind": "author"
+        },
+        {
+          "year": 1923,
+          "label": "Visible and Invisible",
+          "detail": "Twelve stories published by Hutchinson; Machaon and Roderick’s Story are set in Tilling.",
+          "kind": "work"
+        },
+        {
+          "year": 1927,
+          "label": "Lovecraft’s survey",
+          "detail": "In Supernatural Horror in Literature, H. P. Lovecraft picks out The Man Who Went Too Far and, from Visible and Invisible, Negotium Perambulans and The Horror-Horn.",
+          "kind": "reception"
+        },
+        {
+          "year": 1934,
+          "label": "Mayor of Rye",
+          "detail": "Benson is elected mayor of the town, and serves three years running.",
+          "kind": "author"
+        },
+        {
+          "year": 1940,
+          "label": "Benson dies",
+          "detail": "On 29 February, in London; he is buried in Rye.",
+          "kind": "author"
+        },
+        {
+          "year": 1945,
+          "label": "Dead of Night",
+          "detail": "Ealing’s film credits Benson among the authors of its stories, and its hearse driver speaks the conductor’s line, just room for one inside.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Wellington College, Berkshire",
+          "lat": 51.3624,
+          "lon": -0.8017,
+          "note": "Where Benson was born in 1867, while his father was headmaster."
+        },
+        {
+          "name": "Athens",
+          "lat": 37.9715,
+          "lon": 23.7267,
+          "note": "Where Benson studied at the British School of Archaeology in the 1890s; Machaon draws on the precinct of Asclepios below the Acropolis."
+        },
+        {
+          "name": "Luxor",
+          "lat": 25.6872,
+          "lon": 32.6396,
+          "note": "Where Benson spent winters with his sister Margaret, and the setting of At Abdul Ali’s Grave."
+        },
+        {
+          "name": "Rye, East Sussex",
+          "lat": 50.9502,
+          "lon": 0.7333,
+          "note": "Benson’s home at Lamb House from 1920, and the Tilling of Machaon and Roderick’s Story."
+        },
+        {
+          "name": "Forest Row, Ashdown Forest",
+          "lat": 51.0957,
+          "lon": 0.0328,
+          "note": "Where the narrator of The Room in the Tower is met at the station before his stay in the Ashdown Forest."
+        },
+        {
+          "name": "Dunwich, Suffolk",
+          "lat": 52.277,
+          "lon": 1.63,
+          "note": "The crumbling cliffs near the Combe-Martins’ house in The Dust-Cloud."
+        },
+        {
+          "name": "Brora, Sutherland",
+          "lat": 58.0118,
+          "lon": -3.8527,
+          "note": "The post-town of Gavon, where Sandy and Catrine are buried in Gavon’s Eve."
+        },
+        {
+          "name": "Sloane Square, London",
+          "lat": 51.4924,
+          "lon": -0.1565,
+          "note": "Where the bus crashes at the end of The Bus-Conductor."
+        },
+        {
+          "name": "Dover Street, Piccadilly",
+          "lat": 51.5067,
+          "lon": -0.1428,
+          "note": "The tube station of In the Tube."
+        },
+        {
+          "name": "Penzance, Cornwall",
+          "lat": 50.1186,
+          "lon": -5.5371,
+          "note": "Polearn, the imaginary village of Negotium Perambulans, lies two miles off the road from Penzance to the Land’s End."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/m-r-james-collected-ghost-stories/",
+          "why": "The other great Edwardian ghost-story writer from King’s College, Cambridge, whose antiquaries meet older and quieter terrors."
+        },
+        {
+          "href": "/books/carnacki-the-ghost-finder/",
+          "why": "William Hope Hodgson’s investigator uses an electric pentacle against the unseen, another meeting of new machines and old horrors."
+        },
+        {
+          "href": "/books/carmilla/",
+          "why": "Le Fanu’s vampire, an ancestor of Julia Stone and Mrs Amworth."
+        },
+        {
+          "href": "/books/the-turn-of-the-screw/",
+          "why": "A ghost story by Henry James, who lived at Lamb House in Rye before Benson."
+        }
+      ],
+      "videos": []
     },
     {
       "slug": "ethan-frome",
@@ -105276,7 +107315,7 @@
         {
           "id": "grotesque",
           "name": "The comic grotesque",
-          "canonicalName": "The comic grotesque",
+          "canonicalName": "Grotesque",
           "definition": "Figures exaggerated past realism into something both funny and frightening.",
           "bookDefinition": "Figures exaggerated past realism into something both funny and frightening.",
           "inThisBook": "A vast president, an old man who chases at a crawl, a doctor whose glasses are the only terrifying thing about him. The exaggeration is always double-edged, and the laugh arrives a second after the fear."
@@ -111050,7 +113089,7 @@
         {
           "id": "grotesque",
           "name": "The comic grotesque",
-          "canonicalName": "The comic grotesque",
+          "canonicalName": "Grotesque",
           "definition": "Exaggerated, often physical detail that makes a person or thing ridiculous and strange together.",
           "bookDefinition": "Exaggerated, often physical detail that makes a person or thing ridiculous and strange together.",
           "inThisBook": "A neck stretched like the toy cats with movable heads sold on trays in villages, a tailor’s thumbnail as hard as a tortoise shell, a general on a snuff-box whose face has been patched with paper, orange peel on a hat. The details belittle, and Gogol’s reader has to look for the man behind them."
@@ -112646,7 +114685,7 @@
         {
           "id": "cruelty",
           "name": "Cruelty, fear and hatred",
-          "canonicalName": "Cruelty, fear and hatred",
+          "canonicalName": "Cruelty",
           "summary": "The scandal is smaller than its reputation and more exact. Cruelty is well used when it is done once, for security, and then stopped; it is badly used when it grows. Fear is safer than love because the prince controls it, but fear is not hatred, and hatred is the one thing the book treats as fatal. The practical rule that follows is almost mild: leave your subjects’ property and their women alone.",
           "development": "First weighed over Agathocles in chapter 8, made a policy in chapter 17, and tested in chapter 19 against ten emperors, where the ones who die are those who were hated or despised."
         },
