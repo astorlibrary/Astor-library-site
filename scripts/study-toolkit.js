@@ -51,11 +51,20 @@ function glance(book) {
       note: book.lengthNote || ''
     });
   }
+  // `written` is when the work was composed and `firstPublished` the year it
+  // reached print. Before 1700 editors speak of a work being first printed
+  // (a Shakespeare quarto, the first printed Homer), so the label follows suit.
   if (book.written || book.firstPublished) {
-    cells.push({
-      label: book.form === 'play' ? 'Written / printed' : 'First published',
-      value: book.written || String(book.firstPublished),
-      note: book.written && book.firstPublished ? 'First printed ' + book.firstPublished + '.' : ''
+    const printed = Number(book.firstPublished) < 1700;
+    const verb = printed ? 'First printed' : 'First published';
+    cells.push(book.written ? {
+      label: 'Written',
+      value: book.written,
+      note: book.firstPublished ? verb + ' ' + formatYear(book.firstPublished) + '.' : ''
+    } : {
+      label: verb,
+      value: formatYear(book.firstPublished),
+      note: ''
     });
   }
   if (book.readingTime) {

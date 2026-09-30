@@ -285,7 +285,7 @@ function bookLine(book) {
 function fillDates(panel, book, dates) {
   clear(panel);
   if (book.written && String(book.written).trim() !== String(book.year)) {
-    panel.append(el('p', { class: 'astor-tl-written' }, [el('span', { text: 'Written ' }), String(book.written)]));
+    panel.append(el('p', { class: 'astor-tl-written' }, [el('span', { text: 'Written: ' }), String(book.written)]));
   }
   panel.append(el('ol', { class: 'astor-tl-own' }, dates.map(event => el('li', { 'data-kind': event.kind }, [
     el('span', { class: 'astor-tl-date', text: formatYear(event.year) }),

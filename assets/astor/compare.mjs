@@ -88,7 +88,8 @@ function facts(book) {
     el('ul', { class: 'astor-question-list' }, [
       el('li', { text: 'Form: ' + (book.genre || book.form) }),
       el('li', { text: 'Period: ' + book.period }),
-      book.written || book.firstPublished ? el('li', { text: 'Date: ' + (book.written || book.firstPublished) }) : null,
+      book.written ? el('li', { text: 'Written: ' + book.written }) : null,
+      book.firstPublished ? el('li', { text: (book.firstPublished < 1700 ? 'First printed: ' : 'First published: ') + book.firstPublished }) : null,
       book.setting ? el('li', { text: 'Setting: ' + book.setting }) : null,
       el('li', { text: 'Structure: ' + book.structure.length + ' ' + (book.form === 'play' ? 'acts' : 'sections') })
     ].filter(Boolean))
