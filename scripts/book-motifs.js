@@ -99,6 +99,18 @@ const MOTIFS = {
   basket: '<path d="M3.5 10.5h17"/><path d="M4.6 10.5 6.2 20h11.6l1.6-9.5"/><path d="M9.2 10.5l.4 9.5"/><path d="M12 10.5V20"/><path d="M14.8 10.5l-.4 9.5"/><path d="M5.4 15.2h13.2"/><path d="M7.5 10.5c.2-2.6 1.5-4 3-4"/><path d="M16.5 10.5c-.2-2.6-1.5-4-3-4"/><path d="M10.5 6.5h3"/>',
   mortar: '<path d="M4.5 12h15c0 4.3-3.2 7-7.5 7s-7.5-2.7-7.5-7Z"/><path d="M9.2 19l-.9 1.8h7.4l-.9-1.8"/><path d="M13 12l5.6-7.6a1.3 1.3 0 0 1 2.1 1.5L14.6 12"/>',
   ladder: '<path d="M4.5 4.5h15"/><path d="M8 4.5V20.5"/><path d="M16 4.5V20.5"/><path d="M8 8.4h8"/><path d="M8 12.2h8"/><path d="M8 16h8"/><path d="M8 19.8h8"/><path d="M8 4.5c-.9.6-.9 1.6 0 2.2"/><path d="M16 4.5c.9.6.9 1.6 0 2.2"/>',
+  // Eleven for the books added in September 2026, each drawn from an image on its own cover.
+  overcoat: '<path d="M9.3 3.8 5 6.3 3.6 15.8h2.6l1.1-5.9-.7 11h12.8l-.7-11 1.1 5.9h2.6L19 6.3l-4.3-2.5"/><path d="M9.3 3.8 12 8.4l2.7-4.6"/><path d="M12 8.4v12.5"/><circle cx="13.4" cy="11.6" r=".5" fill="currentColor"/><circle cx="13.4" cy="14.6" r=".5" fill="currentColor"/><circle cx="13.4" cy="17.6" r=".5" fill="currentColor"/>',
+  bridge: '<path d="M2.5 11.5h19"/><path d="M2.5 8.7h13.9"/><path d="M5.5 8.7v2.8M9 8.7v2.8M12.5 8.7v2.8"/><path d="M4.4 16.8c.9-3.4 3.9-5.3 7.6-5.3s6.7 1.9 7.6 5.3"/><path d="M2.5 16.8h1.9M19.6 16.8h1.9"/><path d="M8.6 19.4h6.8M6.2 21.6h3.4M14.4 21.6h3.4"/><path d="M18.4 11.5V5.4"/><path d="M17.3 5.4h2.2l-.45-1.9h-1.3Z"/>',
+  mouse: '<path d="M3.6 14.8c1-3.4 3.9-5.6 7.6-5.6 4.1 0 7 2.8 7 6.1v.5H6.4c-1.4 0-2.4-.4-2.8-1Z"/><circle cx="9.6" cy="9.4" r="1.9"/><circle cx="6.4" cy="12.6" r=".45" fill="currentColor"/><path d="M18.2 15.2c2.2.3 3.3 1.6 3 3.1-.3 1.6-1.9 2.1-3.5 1.6"/><path d="M8.2 15.8v1.5M13.8 15.8v1.5"/>',
+  bed: '<path d="M4.5 5.8v14M19.5 10.2v9.6"/><path d="M4.5 13.2h15M4.5 16.2h15"/><path d="M4.5 8.2c1.6-.9 3.2-.9 4.6 0"/><path d="M6.3 13.2c0-1.4.8-2.1 2.2-2.1h1.9c1 0 1.6.7 1.6 2.1"/>',
+  rose: '<path d="M8.2 8.4c0-2.6 1.8-4.4 3.8-4.4s3.8 1.8 3.8 4.4c0 2.4-1.7 4.1-3.8 4.1S8.2 10.8 8.2 8.4Z"/><path d="M12 6.2c-1.2.3-1.9 1.2-1.9 2.2 0 1 .9 1.8 1.9 1.8s1.8-.7 1.8-1.6"/><path d="M12 12.5v9"/><path d="M12 16.2c-2.6-.2-4-1.4-4.5-3.3 2.4 0 4 1.1 4.5 3.3Z"/><path d="M12 18.6c2.3-.3 3.6-1.5 4-3.3-2.2.1-3.6 1.2-4 3.3Z"/>',
+  libertybell: '<path d="M6.5 4.5h11"/><path d="M12 4.5v1.8"/><path d="M7 17.5c1-1.6 1.4-3.6 1.4-6.1 0-2.8 1.6-4.8 3.6-4.8s3.6 2 3.6 4.8c0 2.5.4 4.5 1.4 6.1Z"/><path d="M5.8 17.5h12.4"/><path d="M12.7 10.2l-.9 1.8 1 1.5-.8 2"/><circle cx="12" cy="19.6" r="1.1"/>',
+  steamboat: '<path d="M3 15.6h15.4l-1.6 2.9H4.8Z"/><circle cx="19" cy="14.6" r="2.4"/><path d="M19 12.2v4.8M16.6 14.6h4.8"/><path d="M5.6 15.6v-3.4h9.4v3.4"/><path d="M11.4 12.2V9.6h2.8v2.6"/><path d="M8.2 12.2V6.6"/><path d="M8.2 6.6c0-1.5 1.1-2.4 2.6-2.4.9 0 1.5.5 1.5 1.2"/><path d="M2.5 21c1.6-.9 3.2-.9 4.8 0s3.2.9 4.8 0 3.2-.9 4.8 0 3-.9 4.6 0"/>',
+  lamb: '<path d="M8 15.2c-1.3 0-2.2-1-2-2.3.2-1 1-1.6 2-1.6 0-1.5 1.2-2.6 2.7-2.4.5-1 1.6-1.5 2.7-1.2 1-.9 2.6-.8 3.4.3 1.4-.2 2.6.8 2.6 2.2 1.1.4 1.6 1.6 1.2 2.7-.3.8-1.1 1.3-2 1.3Z"/><ellipse cx="4.8" cy="10.6" rx="1.9" ry="1.4" transform="rotate(-20 4.8 10.6)"/><path d="M5.9 9.5l1.4-1.3"/><path d="M9 15.2v4.3M12.2 15.2v4.3M15.2 15.2v4.3M18 15.2v4.3"/>',
+  scissors: '<circle cx="7" cy="18" r="2.6"/><circle cx="17" cy="18" r="2.6"/><path d="M8.8 16.1 16.5 3.5l-2.6 7.1"/><path d="M15.2 16.1 7.5 3.5l2.6 7.1"/><circle cx="12" cy="10.9" r=".6" fill="currentColor"/>',
+  tower: '<path d="M7.5 21V8.5h9V21"/><path d="M6.5 8.5v-3h2v1.4h2V5.5h3v1.4h2V5.5h2v3Z"/><path d="M11 13.4v-1.5a1 1 0 0 1 2 0v1.5Z"/><path d="M10.4 21v-2.8a1.6 1.6 0 0 1 3.2 0V21"/><path d="M5 21h14"/>',
+  onion: '<path d="M12 2.2v4M10.6 3.6h2.8"/><path d="M12 6.2c-1 1.7-4.4 3-4.4 6.3 0 1.6 1 2.7 2 3.1h4.8c1-.4 2-1.5 2-3.1 0-3.3-3.4-4.6-4.4-6.3Z"/><path d="M8.8 15.6v5h6.4v-5"/><path d="M11 17.8v1.4M13 17.8v1.4"/><path d="M6.5 20.6h11"/>',
   fleuron: '<path d="M12 4c1.9 2.4 3.5 4.2 4.7 5.4 2 1.9 2 4.2 0 6.1-1.2 1.2-2.8 3-4.7 5.4-1.9-2.4-3.5-4.2-4.7-5.4-2-1.9-2-4.2 0-6.1C8.5 8.2 10.1 6.4 12 4Z"/><circle cx="12" cy="12.4" r="2.1"/>'
 };
 
@@ -184,7 +196,19 @@ const BOOK_MOTIFS = {
   'henry-iv-part-2': 'tankard',
   'merry-wives-of-windsor': 'basket',
   'alls-well-that-ends-well': 'mortar',
-  'the-two-gentlemen-of-verona': 'ladder'
+  'the-two-gentlemen-of-verona': 'ladder',
+  'the-overcoat': 'overcoat',
+  'white-nights': 'bridge',
+  'notes-from-underground': 'mouse',
+  'the-death-of-ivan-ilyich': 'bed',
+  'carmilla': 'rose',
+  'heart-of-darkness': 'steamboat',
+  'the-hound-of-the-baskervilles': 'paw',
+  'songs-of-innocence-and-of-experience': 'lamb',
+  'the-rape-of-the-lock-and-an-essay-on-criticism': 'scissors',
+  'common-sense-and-the-american-crisis': 'libertybell',
+  'e-f-benson-ghost-stories': 'tower',
+  'the-brothers-karamazov': 'onion'
 };
 
 const BY_GENRE = [
