@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 108,
-    "quotations": 2553,
-    "characters": 1027,
+    "books": 109,
+    "quotations": 2595,
+    "characters": 1048,
     "themes": 262,
-    "techniques": 264,
-    "timelineEvents": 1258,
-    "places": 620
+    "techniques": 268,
+    "timelineEvents": 1270,
+    "places": 626
   },
   "books": [
     {
@@ -92338,6 +92338,2353 @@
         {
           "href": "/books/the-scarlet-letter/",
           "why": "The American novel of a woman judged publicly for a private life, half a century before Chopin's reviewers reached for the same vocabulary."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "the-brothers-karamazov",
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "href": "/books/the-brothers-karamazov/",
+      "studyHref": "",
+      "playHref": "/play/?book=the-brothers-karamazov",
+      "form": "novel",
+      "genre": "Philosophical novel",
+      "period": "Russian",
+      "setting": "Skotoprigonyevsk, a small Russian town, and the monastery near it, in the mid-1860s",
+      "written": "1878–1880",
+      "firstPublished": 1879,
+      "readingTime": 1400,
+      "difficulty": 4,
+      "lengthNote": "Four parts of three books each and an epilogue: ninety-six chapters, about 350,000 words in Constance Garnett’s translation",
+      "openingLine": "Alexey Fyodorovitch Karamazov was the third son of Fyodor Pavlovitch Karamazov, a land owner well known in our district in his own day, and still remembered among us owing to his gloomy and tragic death, which happened thirteen years ago, and which I shall describe in its proper place.",
+      "summary": "Fyodor Pavlovitch Karamazov, a rich old buffoon who neglected all his children, is murdered in his house one night, and his eldest son Dmitri, who had quarrelled with him over money and over the same woman, Grushenka, is tried for the crime. Around the murder Dostoevsky sets the three brothers and what each believes: Dmitri, violent, generous and ashamed; Ivan, the clever unbeliever who returns his ticket to a world where children suffer and tells the legend of the Grand Inquisitor; and Alyosha, a novice sent out into the world by his dying elder, Father Zossima. The servant Smerdyakov, rumoured to be Fyodor Pavlovitch’s son, has learned from Ivan that everything is lawful. Around them are the women who love and torment the brothers, a poor captain and his dying son, a band of schoolboys, a monastery and a small town that watches it all. The trial ends in what Dostoevsky calls a judicial error, and the novel closes with Alyosha speaking to the boys at a funeral about the power of a good memory.",
+      "referenceStyle": "book and chapter, as Book V, chapter 5 for The Grand Inquisitor; the Epilogue’s three chapters as Epilogue, chapter 1 to 3",
+      "sourceText": {
+        "label": "The Brothers Karamazov, translated by Constance Garnett, Project Gutenberg eBook 28054",
+        "url": "https://www.gutenberg.org/cache/epub/28054/pg28054.txt",
+        "note": "Gutenberg’s text follows an American printing of Garnett’s translation (New York: The Lowell Press). It lacks the epigraph from St John’s Gospel and the translator’s preface found in Heinemann’s first English edition of 1912, and, like Garnett’s translation, it leaves out Dostoevsky’s short preface, From the Author. Garnett’s spellings are kept in quotations: Zossima, Alyosha, Grushenka, Hohlakov, Ilusha."
+      },
+      "structure": [
+        {
+          "id": "book-1",
+          "label": "Book I",
+          "title": "The History of a Family",
+          "summary": "The narrator, a townsman writing thirteen years after the events, introduces the family. Fyodor Pavlovitch Karamazov, a buffoon and a sensualist who began with next to nothing and died with a hundred thousand roubles, married twice and forgot all three of his sons. Dmitri, the son of the first marriage, was looked after by the servant Grigory and then by relations, served in the army, and has come back to settle accounts over his mother’s property. Ivan and Alexey, sons of the second wife, a meek orphan who suffered from hysterical fits, were educated at the expense of a stranger. Ivan has become a clever young writer whose article on the church courts has puzzled both sides; Alyosha, the youngest, is twenty and a novice at the monastery near the town, drawn there by the elder Zossima.",
+          "scenes": [
+            {
+              "ref": "Book I, chapter 1",
+              "title": "Fyodor Pavlovitch Karamazov",
+              "summary": "A landowner who hardly lived on his land, an elopement, and a first wife who ran away."
+            },
+            {
+              "ref": "Book I, chapter 2",
+              "title": "He gets rid of his eldest son",
+              "summary": "Three-year-old Mitya forgotten in the servants’ cottage, and taken up by his mother’s cousin Miüsov."
+            },
+            {
+              "ref": "Book I, chapter 3",
+              "title": "The second marriage and the second family",
+              "summary": "A meek orphan bride, two more sons, and a general’s widow who carries them off in a rug."
+            },
+            {
+              "ref": "Book I, chapters 4–5",
+              "title": "Alyosha and the elders",
+              "summary": "The narrator’s hero, a novice of twenty, and what an elder is."
+            }
+          ]
+        },
+        {
+          "id": "book-2",
+          "label": "Book II",
+          "title": "An Unfortunate Gathering",
+          "summary": "To settle the quarrel over Dmitri’s money the family meets in Father Zossima’s cell, with Miüsov and his young relation Kalganov. Fyodor Pavlovitch plays the buffoon, and the elder tells him above all not to lie to himself. Between the sessions Zossima blesses the peasant women who have come to him, among them a mother grieving for her little son Alexey, dead before he was three, and tells the rich widow Madame Hohlakov that love in action is harsh and dreadful beside love in dreams. The talk turns to Ivan’s argument that without belief in immortality everything would be lawful. When Dmitri arrives late and quarrels with his father over Grushenka, the elder bows down to the ground at his feet, and the young seminarist Rakitin tells Alyosha that the old man has sniffed a crime.",
+          "scenes": [
+            {
+              "ref": "Book II, chapter 2",
+              "title": "The old buffoon",
+              "summary": "Fyodor Pavlovitch performs, and the elder tells him not to lie to himself."
+            },
+            {
+              "ref": "Book II, chapters 3–4",
+              "title": "Peasant women who have faith, and a lady of little faith",
+              "summary": "A mother who has lost her son, and Madame Hohlakov’s dream of loving humanity."
+            },
+            {
+              "ref": "Book II, chapter 5",
+              "title": "So be it! So be it!",
+              "summary": "Ivan’s article on the church courts, and his claim that without immortality everything is lawful."
+            },
+            {
+              "ref": "Book II, chapters 6–8",
+              "title": "Why is such a man alive?",
+              "summary": "Dmitri against his father, the elder’s bow, Rakitin’s theory, and a scandal at the Father Superior’s dinner."
+            }
+          ]
+        },
+        {
+          "id": "book-3",
+          "label": "Book III",
+          "title": "The Sensualists",
+          "summary": "The narrator explains how Smerdyakov, the cook, was born to Lizaveta, a homeless holy fool whom Fyodor Pavlovitch was rumoured to have seduced, and was brought up by Grigory and his wife. In a summer-house Dmitri makes Alyosha the confession of a passionate heart: how Katerina Ivanovna came to his lodging to save her father’s honour, and he handed her five thousand roubles and bowed; how they became engaged; and how he has squandered the three thousand roubles she asked him to post to Moscow on a spree with Grushenka. Over the brandy the father asks his sons whether there is a God, and that evening Dmitri bursts in looking for Grushenka, knocks the old man down and kicks him in the face. Alyosha then watches Grushenka humiliate Katerina Ivanovna.",
+          "scenes": [
+            {
+              "ref": "Book III, chapters 1–2",
+              "title": "In the servants’ quarters",
+              "summary": "Grigory, his six-fingered baby, and Lizaveta’s child born in the bath-house."
+            },
+            {
+              "ref": "Book III, chapters 3–5",
+              "title": "The confession of a passionate heart",
+              "summary": "Schiller, beauty and Sodom, the five thousand roubles, and the three thousand spent at Mokroe."
+            },
+            {
+              "ref": "Book III, chapters 6–8",
+              "title": "Smerdyakov, and over the brandy",
+              "summary": "The cook’s argument about faith, and the father’s question whether there is a God."
+            },
+            {
+              "ref": "Book III, chapters 9–11",
+              "title": "The sensualists, and both together",
+              "summary": "Dmitri’s attack on his father, and Grushenka’s refusal to kiss Katerina Ivanovna’s hand."
+            }
+          ]
+        },
+        {
+          "id": "book-4",
+          "label": "Book IV",
+          "title": "Lacerations",
+          "summary": "Father Ferapont, an ascetic who hates the elders, sees devils everywhere in the monastery. Out in the town Alyosha meets schoolboys throwing stones at a sickly boy of about nine, who bites his finger to the bone. At the Hohlakovs’ Katerina Ivanovna declares that she will be a god to whom Dmitri can pray, and Ivan, who loves her, says he is leaving. Alyosha takes two hundred roubles from her to Captain Snegiryov, the boy’s father, whom Dmitri had dragged out of a tavern by his beard in front of his son Ilusha. The captain, overjoyed, dreams aloud of what the money will do for his family, then crumples the notes and stamps them into the sand.",
+          "scenes": [
+            {
+              "ref": "Book IV, chapter 1",
+              "title": "Father Ferapont",
+              "summary": "A monk who eats little but bread and quarrels with the elders."
+            },
+            {
+              "ref": "Book IV, chapter 3",
+              "title": "A meeting with the schoolboys",
+              "summary": "Stones across a ditch, and a bitten finger."
+            },
+            {
+              "ref": "Book IV, chapter 5",
+              "title": "A laceration in the drawing-room",
+              "summary": "Katerina Ivanovna’s resolve, and Ivan’s departure."
+            },
+            {
+              "ref": "Book IV, chapters 6–7",
+              "title": "In the cottage and in the open air",
+              "summary": "The captain’s family, the wisp of tow, and two hundred roubles trampled in the sand."
+            }
+          ]
+        },
+        {
+          "id": "book-5",
+          "label": "Book V",
+          "title": "Pro and Contra",
+          "summary": "Lise Hohlakov, a girl of fourteen who cannot walk, has written Alyosha a love letter, and they agree to marry one day. Alyosha overhears Smerdyakov with his guitar telling a neighbour’s daughter that he hates Russia, then finds Ivan in the Metropolis tavern, and the brothers talk properly for the first time. Ivan loves life and the sticky little leaves of spring, but cannot accept a world in which children are tortured, and gives back his ticket. He then tells the poem he has composed, The Grand Inquisitor, in which Christ returns to Seville in the time of the Inquisition and an old cardinal imprisons him and explains why the Church has corrected his work. At home Smerdyakov hints that Ivan had better be away, and as Ivan drives off next morning he says that it is always worth while speaking to a clever man.",
+          "scenes": [
+            {
+              "ref": "Book V, chapter 1",
+              "title": "The engagement",
+              "summary": "Lise’s letter, and a promise to marry when she can walk."
+            },
+            {
+              "ref": "Book V, chapters 3–4",
+              "title": "The brothers make friends, and Rebellion",
+              "summary": "Sticky little leaves, tortured children, and a ticket returned."
+            },
+            {
+              "ref": "Book V, chapter 5",
+              "title": "The Grand Inquisitor",
+              "summary": "Christ in Seville, the three temptations, and a kiss."
+            },
+            {
+              "ref": "Book V, chapters 6–7",
+              "title": "It’s always worth while speaking to a clever man",
+              "summary": "Smerdyakov’s hints about a fit and the envelope, and Ivan’s journey."
+            }
+          ]
+        },
+        {
+          "id": "book-6",
+          "label": "Book VI",
+          "title": "The Russian Monk",
+          "summary": "On the last evening of his life Father Zossima talks to his friends, and Alyosha later wrote down what he said. The notes tell how Zossima’s elder brother Markel died at seventeen, telling their mother that everyone is responsible to all men for all; how Zossima, a young officer, struck his servant the night before a duel, then let his opponent fire, threw away his own pistol and asked forgiveness, and left the army for the monastery; and how a respected man of the town confessed to him a murder committed fourteen years before. The conversations and exhortations that follow speak of prayer, of the Russian people, of loving all God’s creation, and of hell as the suffering of being unable to love. The elder dies that night.",
+          "scenes": [
+            {
+              "ref": "Book VI, chapter 1",
+              "title": "Father Zossima and his visitors",
+              "summary": "The elder’s last evening, and why Alyosha’s face reminds him of his brother."
+            },
+            {
+              "ref": "Book VI, chapter 2",
+              "title": "The duel",
+              "summary": "Markel, the blows to the servant Afanasy, a pistol thrown into the wood, and the mysterious visitor."
+            },
+            {
+              "ref": "Book VI, chapter 3",
+              "title": "Conversations and exhortations",
+              "summary": "The Russian monk, masters and servants, prayer and love, and hell."
+            }
+          ]
+        },
+        {
+          "id": "book-7",
+          "label": "Book VII",
+          "title": "Alyosha",
+          "summary": "The monks and townspeople expect a miracle from the elder’s body; instead, before three in the afternoon, it begins to smell, and Father Ferapont and the elder’s enemies triumph. Shaken, Alyosha lets Rakitin take him to Grushenka, who has promised Rakitin twenty-five roubles for bringing him. She is waiting for word from the Polish officer who seduced her five years before, and meaning at first to seduce Alyosha she learns that Zossima has died; Alyosha calls her a true sister, and she tells the fable of the onion. Back at the coffin, while Father Païssy reads the Gospel of the marriage at Cana, Alyosha dreams that Zossima is at the feast, then goes out, falls on the earth and kisses it.",
+          "scenes": [
+            {
+              "ref": "Book VII, chapter 1",
+              "title": "The breath of corruption",
+              "summary": "A body that does not stay sweet, and Father Ferapont’s triumph."
+            },
+            {
+              "ref": "Book VII, chapter 2",
+              "title": "A critical moment",
+              "summary": "Alyosha’s rebellion against the injustice of it, and Rakitin’s sausage and vodka."
+            },
+            {
+              "ref": "Book VII, chapter 3",
+              "title": "An onion",
+              "summary": "Grushenka on Alyosha’s knee, the news of the elder’s death, and the fable."
+            },
+            {
+              "ref": "Book VII, chapter 4",
+              "title": "Cana of Galilee",
+              "summary": "The first miracle, the elder at the feast, and the starry sky over the monastery."
+            }
+          ]
+        },
+        {
+          "id": "book-8",
+          "label": "Book VIII",
+          "title": "Mitya",
+          "summary": "Desperate to repay Katerina Ivanovna before he goes to Grushenka, Dmitri spends a day trying to raise three thousand roubles: from the merchant Samsonov, who sends him on a fool’s errand to a timber-dealer called Lyagavy, and from Madame Hohlakov, who recommends the gold-mines. Believing that Grushenka has gone to his father, he takes a brass pestle, climbs into Fyodor Pavlovitch’s garden and watches him at the window; running away, he strikes down Grigory on the fence. Learning that Grushenka has gone to Mokroe to meet her first lover, he buys wine and food with a bundle of notes and drives there, meaning to see her once more and shoot himself at dawn. The Pole turns out to be a petty cheat, Grushenka says it is Dmitri she loves, and in the early morning the police arrive.",
+          "scenes": [
+            {
+              "ref": "Book VIII, chapters 1–3",
+              "title": "Kuzma Samsonov, Lyagavy and the gold-mines",
+              "summary": "A day of borrowing that raises nothing."
+            },
+            {
+              "ref": "Book VIII, chapter 4",
+              "title": "In the dark",
+              "summary": "The garden, the lighted window, the pestle, and Grigory on the fence."
+            },
+            {
+              "ref": "Book VIII, chapters 5–6",
+              "title": "A sudden resolution",
+              "summary": "Pistols redeemed, champagne ordered, and a driver told that one must make way."
+            },
+            {
+              "ref": "Book VIII, chapters 7–8",
+              "title": "The first and rightful lover",
+              "summary": "Cards with the Poles at Mokroe, a night of revelry, and the arrival of the police."
+            }
+          ]
+        },
+        {
+          "id": "book-9",
+          "label": "Book IX",
+          "title": "The Preliminary Investigation",
+          "summary": "Fyodor Pavlovitch has been found murdered, and the envelope that held the three thousand roubles lies torn open and empty on the floor. At Mokroe the police captain, the prosecutor Ippolit Kirillovitch and the investigating lawyer Nikolay Parfenovitch question Dmitri through the night. He admits that he hated his father and meant perhaps to kill him, but swears he did not. At last, as his great secret, he tells them that the money he spent came from a rag sewn round his neck: fifteen hundred roubles kept back from Katerina Ivanovna’s three thousand, which made him, he says, a scoundrel but not a thief. Nobody believes him. Dozing, he dreams of a starving baby in a burnt-out village, and wakes to find that someone has put a pillow under his head; then he is taken away to prison.",
+          "scenes": [
+            {
+              "ref": "Book IX, chapters 1–2",
+              "title": "Perhotin’s official career, and the alarm",
+              "summary": "Bloodstained hands, a borrowed pistol, and the news from Fyodor Pavlovitch’s house."
+            },
+            {
+              "ref": "Book IX, chapters 3–6",
+              "title": "The ordeals",
+              "summary": "Dmitri’s story told, doubted and pressed by the prosecutor."
+            },
+            {
+              "ref": "Book IX, chapter 7",
+              "title": "Mitya’s great secret",
+              "summary": "The fifteen hundred roubles in the rag, received with hisses."
+            },
+            {
+              "ref": "Book IX, chapters 8–9",
+              "title": "The babe",
+              "summary": "Witnesses, a dream of a burnt village, and the carts that take Mitya away."
+            }
+          ]
+        },
+        {
+          "id": "book-10",
+          "label": "Book X",
+          "title": "The Boys",
+          "summary": "Two months later the story turns to the schoolboys. Kolya Krassotkin, thirteen, clever and proud of calling himself a socialist, once lay between the rails while a train passed over him to win a bet. He was Ilusha’s protector until they quarrelled over the dog Zhutchka, which Ilusha, taught by Smerdyakov, had fed a piece of bread with a pin in it. Now Ilusha is dying, and Alyosha has reconciled him with the other boys. Kolya at last visits the sick boy with a dog called Perezvon, who turns out to be Zhutchka. A famous doctor from Moscow says there is no hope, and Kolya, who had meant to be superior, runs out into the passage in tears.",
+          "scenes": [
+            {
+              "ref": "Book X, chapters 1–3",
+              "title": "Kolya Krassotkin",
+              "summary": "The train, the widow’s son, and the little children he minds."
+            },
+            {
+              "ref": "Book X, chapter 4",
+              "title": "The lost dog",
+              "summary": "The pin in the bread, and why Kolya stayed away."
+            },
+            {
+              "ref": "Book X, chapters 5–6",
+              "title": "By Ilusha’s bedside",
+              "summary": "Perezvon’s tricks, a cannon, and Kolya showing off to Alyosha."
+            },
+            {
+              "ref": "Book X, chapter 7",
+              "title": "Ilusha",
+              "summary": "The doctor from Moscow, and a father who cannot bear it."
+            }
+          ]
+        },
+        {
+          "id": "book-11",
+          "label": "Book XI",
+          "title": "Ivan",
+          "summary": "On the day before the trial Alyosha visits Grushenka, ill and jealous of Katerina Ivanovna; Lise, who has broken off their engagement, tells him her cruel fantasies and crushes her own finger in the door; and Dmitri, in prison, tells him that a new man has risen up in him and that he means to sing a hymn to God underground. That evening Alyosha tells Ivan that it was not he who killed their father. Ivan has been to Smerdyakov twice, and now goes a third time: Smerdyakov takes three thousand roubles out of his stocking, tells how he killed Fyodor Pavlovitch with an iron paper-weight, and says that Ivan, who taught him that everything is lawful, is the real murderer. At home Ivan is visited by the devil, a shabby gentleman who talks like a poor relation, until Alyosha knocks with the news that Smerdyakov has hanged himself.",
+          "scenes": [
+            {
+              "ref": "Book XI, chapters 1–3",
+              "title": "Grushenka, the injured foot, and a little demon",
+              "summary": "Madame Hohlakov’s news, and Lise’s pineapple compote."
+            },
+            {
+              "ref": "Book XI, chapters 4–5",
+              "title": "A hymn and a secret; Not you, not you!",
+              "summary": "Dmitri’s new man, and Alyosha’s words to Ivan under the lamp-post."
+            },
+            {
+              "ref": "Book XI, chapters 6–8",
+              "title": "The three interviews with Smerdyakov",
+              "summary": "The fit on the cellar stairs, the apple-tree, and the money in the stocking."
+            },
+            {
+              "ref": "Book XI, chapters 9–10",
+              "title": "The devil. Ivan’s nightmare",
+              "summary": "A visitor in check trousers, and a knock at the window."
+            }
+          ]
+        },
+        {
+          "id": "book-12",
+          "label": "Book XII",
+          "title": "A Judicial Error",
+          "summary": "The trial draws interest from all over Russia. The witnesses tell against Dmitri, the doctors disagree about his sanity, and old Dr Herzenstube remembers giving him a pound of nuts when he was a neglected child. Ivan, delirious, produces the three thousand roubles and says that Smerdyakov killed their father and he incited him; to save Ivan, Katerina Ivanovna hands the court the drunken letter in which Dmitri swore to kill his father. The prosecutor makes the speech of his life about the Karamazov family and the galloping troika of Russia, and the defending counsel from Petersburg, Fetyukovitch, argues that there was no robbery and no murder, and that such a father is no father. The jury of peasants and clerks answers yes, guilty, to every question.",
+          "scenes": [
+            {
+              "ref": "Book XII, chapters 1–4",
+              "title": "Witnesses and experts",
+              "summary": "Grigory, Rakitin, the doctors, and a pound of nuts."
+            },
+            {
+              "ref": "Book XII, chapter 5",
+              "title": "A sudden catastrophe",
+              "summary": "Ivan’s evidence, and Katerina Ivanovna’s letter."
+            },
+            {
+              "ref": "Book XII, chapters 6–9",
+              "title": "The prosecutor’s speech",
+              "summary": "Sketches of character, a treatise on Smerdyakov, and the galloping troika."
+            },
+            {
+              "ref": "Book XII, chapters 10–14",
+              "title": "The speech for the defence, and the verdict",
+              "summary": "No money, no robbery, no murder, a corrupter of thought, and peasants who stand firm."
+            }
+          ]
+        },
+        {
+          "id": "epilogue",
+          "label": "Epilogue",
+          "title": "The escape plan and the stone",
+          "summary": "Five days after the trial Ivan lies in a fever at Katerina Ivanovna’s, and she and Alyosha talk over the plan he has made for Dmitri to escape at the third halting-place on the road to Siberia and go to America with Grushenka. Katerina Ivanovna visits Dmitri in the prison hospital, and for a moment, as the chapter title says, the lie becomes truth: they tell each other they will love each other all their lives. Then comes Ilusha’s funeral. By the big stone where Ilusha wanted to be buried, Alyosha asks the boys to remember this day and one another all their lives, since a good memory from childhood may save a man, and the boys cheer for Karamazov.",
+          "scenes": [
+            {
+              "ref": "Epilogue, chapter 1",
+              "title": "Plans for Mitya’s escape",
+              "summary": "Ivan’s scheme, and Katerina Ivanovna’s jealousy of Grushenka."
+            },
+            {
+              "ref": "Epilogue, chapter 2",
+              "title": "For a moment the lie becomes truth",
+              "summary": "Katya at the prison hospital."
+            },
+            {
+              "ref": "Epilogue, chapter 3",
+              "title": "Ilusha’s funeral. The speech at the stone",
+              "summary": "Bread for the sparrows, the boys’ promise, and pancakes at the funeral dinner."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "fyodor",
+          "name": "Fyodor Pavlovitch Karamazov",
+          "role": "The father, murdered in his own house",
+          "summary": "Fifty-five, rich and greedy for life, he began as a sponger at other men’s tables and ended with a hundred thousand roubles. He married twice, abandoned all three sons as children, and plays the buffoon on purpose, because, as he says, he always feels that people take him for one. He keeps three thousand roubles in an envelope for Grushenka, and is killed on the night he expects her.",
+          "clue": "Writes on a sealed envelope of banknotes, To my angel, when she will come to me.",
+          "firstAppearance": "Book I, chapter 1",
+          "traits": [
+            "sensual",
+            "cynical",
+            "shrewd"
+          ],
+          "relationships": [
+            {
+              "to": "dmitri",
+              "label": "father and rival of",
+              "kind": "family",
+              "stages": [
+                "book-1",
+                "book-2",
+                "book-3"
+              ]
+            },
+            {
+              "to": "ivan",
+              "label": "father of",
+              "kind": "family",
+              "stages": [
+                "book-1",
+                "book-3",
+                "book-5"
+              ]
+            },
+            {
+              "to": "alyosha",
+              "label": "father of",
+              "kind": "family",
+              "stages": [
+                "book-1",
+                "book-3",
+                "book-4"
+              ]
+            },
+            {
+              "to": "smerdyakov",
+              "label": "employs, and is said to have fathered",
+              "kind": "service",
+              "stages": [
+                "book-3",
+                "book-5"
+              ]
+            },
+            {
+              "to": "grushenka",
+              "label": "tries to buy",
+              "kind": "love",
+              "stages": [
+                "book-3",
+                "book-8"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dmitri",
+          "name": "Dmitri Karamazov",
+          "role": "The eldest son, called Mitya, accused of the murder",
+          "summary": "A retired army officer of twenty-seven, violent, generous and ashamed of himself, he calls himself an insect and quotes Schiller. He is engaged to Katerina Ivanovna but mad for Grushenka, and believes his father has cheated him of his mother’s money. He threatened to kill his father, was in the garden that night and struck down Grigory, but swears he is not a murderer. Arrested, he decides to accept his suffering for the babe, and for having wished the crime.",
+          "clue": "Sews fifteen hundred roubles into a rag and wears it round his neck, calling himself a scoundrel but not a thief.",
+          "firstAppearance": "Book I, chapter 2",
+          "traits": [
+            "passionate",
+            "reckless",
+            "honest"
+          ],
+          "relationships": [
+            {
+              "to": "grushenka",
+              "label": "loves",
+              "kind": "love",
+              "stages": [
+                "book-3",
+                "book-8",
+                "book-9",
+                "epilogue"
+              ]
+            },
+            {
+              "to": "katerina",
+              "label": "engaged to, and betrays",
+              "kind": "love",
+              "stages": [
+                "book-3",
+                "book-4",
+                "book-12",
+                "epilogue"
+              ]
+            },
+            {
+              "to": "snegiryov",
+              "label": "drags by the beard",
+              "kind": "enemy",
+              "stages": [
+                "book-4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ivan",
+          "name": "Ivan Karamazov",
+          "role": "The second son, a writer and unbeliever",
+          "summary": "Twenty-three, proud and brilliant, he has made his name with articles and has come home for reasons nobody can explain. He loves life and cannot accept God’s world because of the suffering of children, and he tells Alyosha his poem of the Grand Inquisitor. His saying that without immortality everything is lawful reaches Smerdyakov, who acts on it. Ivan’s discovery that he is morally the murderer brings on a breakdown, a visit from the devil and a collapse in court.",
+          "clue": "Composes a poem about a cardinal of Seville, and most respectfully returns his ticket.",
+          "firstAppearance": "Book I, chapter 3",
+          "traits": [
+            "proud",
+            "intellectual",
+            "tormented"
+          ],
+          "relationships": [
+            {
+              "to": "katerina",
+              "label": "loves",
+              "kind": "love",
+              "stages": [
+                "book-4",
+                "book-5",
+                "book-12",
+                "epilogue"
+              ]
+            },
+            {
+              "to": "smerdyakov",
+              "label": "is taken at his word by",
+              "kind": "doubling",
+              "stages": [
+                "book-5",
+                "book-11"
+              ]
+            },
+            {
+              "to": "devil",
+              "label": "is visited by",
+              "kind": "doubling",
+              "stages": [
+                "book-11"
+              ]
+            },
+            {
+              "to": "grand-inquisitor",
+              "label": "invents",
+              "kind": "doubling",
+              "stages": [
+                "book-5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "alyosha",
+          "name": "Alyosha Karamazov",
+          "role": "The youngest son, a novice, and the narrator’s hero",
+          "summary": "Twenty, healthy, cheerful and loved by everyone, he joined the monastery because Father Zossima seemed to him the way out of darkness into the light of love. The elder sends him out into the world, and he spends the novel going between his brothers, the women who love them, the Snegiryovs and the schoolboys. His faith is shaken when the elder’s body decays, and restored by Grushenka’s pity and a dream of Cana.",
+          "clue": "Kisses his brother in the tavern, and is told he has stolen the gesture from a poem.",
+          "firstAppearance": "Book I, chapter 1",
+          "traits": [
+            "gentle",
+            "chaste",
+            "perceptive"
+          ],
+          "relationships": [
+            {
+              "to": "zossima",
+              "label": "disciple of",
+              "kind": "mentor",
+              "stages": [
+                "book-1",
+                "book-2",
+                "book-6",
+                "book-7"
+              ]
+            },
+            {
+              "to": "lise",
+              "label": "engaged to",
+              "kind": "love",
+              "stages": [
+                "book-5",
+                "book-11"
+              ]
+            },
+            {
+              "to": "kolya",
+              "label": "befriends",
+              "kind": "friendship",
+              "stages": [
+                "book-10",
+                "epilogue"
+              ]
+            },
+            {
+              "to": "rakitin",
+              "label": "is sold for twenty-five roubles by",
+              "kind": "rival",
+              "stages": [
+                "book-7"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "smerdyakov",
+          "name": "Smerdyakov",
+          "role": "Fyodor Pavlovitch’s cook and valet",
+          "summary": "Born in the bath-house to Lizaveta, a homeless holy fool, and widely thought to be Fyodor Pavlovitch’s son, he was brought up by Grigory and his wife. As a child he hanged cats; now he is an epileptic, a fastidious cook trained in Moscow, contemptuous of Russia and fond of arguing about faith. He admires Ivan and takes his ideas literally, and on the night of the murder he fakes a fit on the cellar stairs.",
+          "clue": "Taught a boy to hide a pin in a piece of bread for a hungry dog, and keeps a large sum of money in his stocking.",
+          "firstAppearance": "Book III, chapter 6",
+          "traits": [
+            "resentful",
+            "cunning",
+            "servile"
+          ],
+          "relationships": [
+            {
+              "to": "ivan",
+              "label": "calls himself the instrument of",
+              "kind": "doubling",
+              "stages": [
+                "book-5",
+                "book-11"
+              ]
+            },
+            {
+              "to": "grigory",
+              "label": "brought up by",
+              "kind": "family",
+              "stages": [
+                "book-3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "grushenka",
+          "name": "Grushenka",
+          "role": "The woman Dmitri and his father both want",
+          "summary": "Twenty-two, beautiful and sharp-tongued, she was seduced at seventeen by a Polish officer and then kept by an old merchant, Samsonov, and has made money of her own. She plays father and son against each other while she waits for her first lover to send for her. When the Pole turns out to be a petty cheat, she chooses Dmitri and follows him into his punishment. Her pity for Alyosha on the night of the elder’s death shows the good in her.",
+          "clue": "Tells a fable of a wicked woman who once gave a beggar an onion.",
+          "firstAppearance": "Book III, chapter 10",
+          "traits": [
+            "proud",
+            "capricious",
+            "warm-hearted"
+          ],
+          "relationships": [
+            {
+              "to": "mussyalovitch",
+              "label": "waits five years for",
+              "kind": "love",
+              "stages": [
+                "book-7",
+                "book-8"
+              ]
+            },
+            {
+              "to": "katerina",
+              "label": "humiliates",
+              "kind": "rival",
+              "stages": [
+                "book-3",
+                "epilogue"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "katerina",
+          "name": "Katerina Ivanovna",
+          "role": "Dmitri’s betrothed",
+          "summary": "The proud daughter of a colonel, she once went to Dmitri’s lodging for money to save her father, and was given it without conditions; later a rich relation in Moscow gave her a fortune. She insists on being engaged to Dmitri out of gratitude and wounded pride, while loving Ivan and tormenting him. At the trial she first testifies to Dmitri’s generosity, then, to save Ivan, produces the letter that convicts him.",
+          "clue": "Received a banknote for five thousand roubles from a young officer, and bowed to the floor before him.",
+          "firstAppearance": "Book III, chapter 10",
+          "traits": [
+            "proud",
+            "self-tormenting",
+            "loyal"
+          ],
+          "relationships": [
+            {
+              "to": "ivan",
+              "label": "loves and torments",
+              "kind": "love",
+              "stages": [
+                "book-4",
+                "book-12",
+                "epilogue"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "zossima",
+          "name": "Father Zossima",
+          "role": "The elder of the monastery",
+          "summary": "Sixty-five and near death, he is revered by pilgrims who come for his blessing and resented by monks who distrust elders. As a young officer he was cruel and quarrelsome, until he struck his servant on the eve of a duel and was converted. He teaches that each of us is responsible to all for all and that hell is the inability to love. His body decays quickly after his death, to the scandal of the monastery.",
+          "clue": "Bows down to the ground before a guest, and later tells a novice to leave the monastery and go into the world.",
+          "firstAppearance": "Book I, chapter 5",
+          "traits": [
+            "loving",
+            "perceptive",
+            "humble"
+          ],
+          "relationships": [
+            {
+              "to": "ferapont",
+              "label": "is opposed by",
+              "kind": "rival",
+              "stages": [
+                "book-4",
+                "book-7"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "grigory",
+          "name": "Grigory",
+          "role": "Fyodor Pavlovitch’s old servant",
+          "summary": "Gloomy, stubborn, honest and devoted, he looked after all three boys when their father forgot them, and took in Lizaveta’s baby after his own six-fingered child died. He sees the garden door open on the night of the murder, and Dmitri strikes him down on the fence with the brass pestle. His evidence about the open door weighs heavily against Dmitri at the trial.",
+          "clue": "Swears at the trial that he saw the garden door open, and was struck down on a fence.",
+          "firstAppearance": "Book I, chapter 2",
+          "traits": [
+            "stubborn",
+            "faithful",
+            "severe"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "rakitin",
+          "name": "Rakitin",
+          "role": "A seminarist on the make",
+          "summary": "An ambitious young divinity student with liberal opinions and an eye for money, he explains everyone’s motives cynically, and predicts a crime in the Karamazov family on the first day. He takes Alyosha to Grushenka for twenty-five roubles on the night of the elder’s death, writes about the case, and gives evidence at the trial, where the defence exposes him.",
+          "clue": "Is paid twenty-five roubles for bringing a novice to a young woman’s house.",
+          "firstAppearance": "Book II, chapter 2",
+          "traits": [
+            "ambitious",
+            "envious",
+            "clever"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "lise",
+          "name": "Lise Hohlakov",
+          "role": "Madame Hohlakov’s daughter",
+          "summary": "Fourteen, clever and unable to walk, she writes Alyosha a love letter and they agree to marry one day. By Book XI she has broken it off, and tells him about her wish to be destroyed and to torment, her dreams of devils, and a story of a crucified child, before she crushes her finger in the door.",
+          "clue": "Imagines eating pineapple compote beside a crucified child.",
+          "firstAppearance": "Book II, chapter 4",
+          "traits": [
+            "mischievous",
+            "sharp",
+            "self-destructive"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "madame-hohlakov",
+          "name": "Madame Hohlakov",
+          "role": "A rich widow of the town",
+          "summary": "Thirty-three and fond of new ideas, she tells Father Zossima that she dreams of becoming a sister of mercy but could not bear ingratitude. She receives everyone, gossips about everything, and when Dmitri comes to her for three thousand roubles advises him to go to the gold-mines.",
+          "clue": "Offers a desperate man a little ikon and advice about the gold-mines instead of a loan.",
+          "firstAppearance": "Book II, chapter 3",
+          "traits": [
+            "sentimental",
+            "talkative",
+            "vain"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "snegiryov",
+          "name": "Captain Snegiryov",
+          "role": "A poor retired captain, Ilusha’s father",
+          "summary": "A clownish, desperate man of forty-five with a beard like a wisp of tow, he lives in a hut with a mad wife, a hunchbacked daughter and a sick son. Dmitri dragged him out of a tavern by the beard in front of Ilusha. He refuses Katerina Ivanovna’s money for the boy’s sake, and at Ilusha’s funeral crumbles bread on the grave for the sparrows.",
+          "clue": "Stamps two hundred-rouble notes into the sand, asking what he could say to his boy.",
+          "firstAppearance": "Book IV, chapter 6",
+          "traits": [
+            "humiliated",
+            "clownish",
+            "loving"
+          ],
+          "relationships": [
+            {
+              "to": "ilusha",
+              "label": "father of",
+              "kind": "family",
+              "stages": [
+                "book-4",
+                "book-10",
+                "epilogue"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ilusha",
+          "name": "Ilusha",
+          "role": "Captain Snegiryov’s son",
+          "summary": "About nine, fierce and proud, he saw his father humiliated and decided to punish the Karamazovs, fighting the schoolboys and biting Alyosha’s finger. He is tormented by guilt over the dog he hurt, falls ill, and dies. His funeral and the speech at the stone end the novel.",
+          "clue": "Asks his father to crumble bread on his grave so the sparrows will keep him company.",
+          "firstAppearance": "Book IV, chapter 3",
+          "traits": [
+            "proud",
+            "loyal",
+            "brave"
+          ],
+          "relationships": [
+            {
+              "to": "kolya",
+              "label": "hero-worships",
+              "kind": "friendship",
+              "stages": [
+                "book-10"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kolya",
+          "name": "Kolya Krassotkin",
+          "role": "A schoolboy of thirteen",
+          "summary": "Thirteen and a widow’s son, clever, conceited and brave, he argues about Voltaire and calls himself a socialist, and once lay between the rails under a train for a bet. He trains a dog called Perezvon and brings it to Ilusha’s bedside. Won over by Alyosha, he leads the boys in the cheer that ends the book.",
+          "clue": "Lay between the rails at night while the eleven o’clock train passed over him.",
+          "firstAppearance": "Book X, chapter 1",
+          "traits": [
+            "precocious",
+            "vain",
+            "generous"
+          ],
+          "relationships": [
+            {
+              "to": "alyosha",
+              "label": "is won over by",
+              "kind": "mentor",
+              "stages": [
+                "book-10",
+                "epilogue"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ferapont",
+          "name": "Father Ferapont",
+          "role": "An old ascetic monk",
+          "summary": "Seventy-five or more, a great faster and a great enemy of the elders, he lives alone in a cell beyond the monastery apiary, sees devils in every corner, and claims to talk with the Holy Spirit in the form of a bird. When Zossima’s body begins to smell he bursts into the cell crying, Casting out I cast out!",
+          "clue": "Says he trapped a devil’s tail in a door and caught him.",
+          "firstAppearance": "Book IV, chapter 1",
+          "traits": [
+            "fanatical",
+            "rigid",
+            "fierce"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "mussyalovitch",
+          "name": "Pan Mussyalovitch",
+          "role": "Grushenka’s first lover",
+          "summary": "The Polish officer who seduced Grushenka five years before, now a retired official who served in Siberia as a veterinary surgeon. He summons her to Mokroe, speaks of her proudly and grandly, cheats at cards with his companion, and will take Dmitri’s money to leave.",
+          "clue": "Uses a marked pack at the inn at Mokroe, and was once a veterinary surgeon in Siberia.",
+          "firstAppearance": "Book VIII, chapter 7",
+          "traits": [
+            "pompous",
+            "greedy",
+            "shabby"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "grand-inquisitor",
+          "name": "The Grand Inquisitor",
+          "role": "The cardinal of Ivan’s poem",
+          "summary": "An old man of almost ninety, tall and erect, he has burned heretics in Seville and has Christ arrested when he returns. In a long speech in the prison he argues that men cannot bear freedom and will give it up for bread, and that the Church has corrected Christ’s work with miracle, mystery and authority. Christ answers him with a kiss, and he lets him go.",
+          "clue": "Has a hundred heretics burned in Seville, and releases his prisoner into the dark streets after a kiss.",
+          "firstAppearance": "Book V, chapter 5",
+          "traits": [
+            "austere",
+            "clear-sighted",
+            "despairing"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "devil",
+          "name": "The devil",
+          "role": "Ivan’s visitor in his nightmare",
+          "summary": "He appears as a shabby Russian gentleman of about fifty, in check trousers and a threadbare scarf, a poor relation who has sunk to living off old friends. He repeats Ivan’s own ideas back to him with mockery, talks of rheumatism and the public baths, while Ivan insists that he is only the embodiment of his own worst thoughts.",
+          "clue": "Wears check trousers too light for the fashion, and calls himself x in an indeterminate equation.",
+          "firstAppearance": "Book XI, chapter 9",
+          "traits": [
+            "ingratiating",
+            "mocking",
+            "shabby"
+          ],
+          "relationships": []
+        },
+        {
+          "id": "fetyukovitch",
+          "name": "Fetyukovitch",
+          "role": "The defending counsel from Petersburg",
+          "summary": "A celebrated lawyer brought from Petersburg partly at Katerina Ivanovna’s instance, he undermines the witnesses one by one, argues that there was no robbery and no murder, and ends by saying that a father like Fyodor Pavlovitch is no father at all.",
+          "clue": "Quotes the apostle, Fathers, provoke not your children to wrath, on behalf of all fathers.",
+          "firstAppearance": "Book XII, chapter 1",
+          "traits": [
+            "eloquent",
+            "clever",
+            "theatrical"
+          ],
+          "relationships": [
+            {
+              "to": "prosecutor",
+              "label": "answers",
+              "kind": "rival",
+              "stages": [
+                "book-12"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prosecutor",
+          "name": "Ippolit Kirillovitch",
+          "role": "The public prosecutor",
+          "summary": "A clever, sensitive man who has never been properly heard, he takes part in the investigation at Mokroe and at the trial makes the speech of his life, an account of the Karamazov family as a picture of Russia. He is applauded for the first time, and dies of consumption nine months later.",
+          "clue": "Compares Russia to a galloping troika drawn by Gogol’s rogues.",
+          "firstAppearance": "Book IX, chapter 2",
+          "traits": [
+            "ambitious",
+            "sensitive",
+            "eloquent"
+          ],
+          "relationships": []
+        }
+      ],
+      "themes": [
+        {
+          "id": "faith",
+          "name": "Faith and doubt",
+          "canonicalName": "Faith",
+          "summary": "Whether there is a God, and what follows if there is not, is the question at the centre of the book. Fyodor Pavlovitch asks his sons over the brandy; Ivan accepts God but returns his ticket to God’s world; Smerdyakov and the devil draw the conclusion that everything is lawful. Against them stand Zossima’s teaching, Alyosha’s shaken and restored faith, and Dmitri’s hymn from underground. Dostoevsky meant Book VI, The Russian Monk, as the answer to Ivan, given, he said, as an artistic picture and not point by point.",
+          "development": "Is there a God, or not?; I most respectfully return Him the ticket; What is hell?; a glorious hymn to God; I am x in an indeterminate equation."
+        },
+        {
+          "id": "freedom",
+          "name": "Freedom",
+          "canonicalName": "Freedom",
+          "summary": "Ivan’s Grand Inquisitor argues that men cannot bear the freedom Christ gave them and will gladly hand it over for bread, miracle and authority. The novel tests the claim everywhere: in the elder to whom a monk surrenders his will in order to find freedom, in Dmitri’s longing to be free of Katerina Ivanovna’s money, and in Ivan’s freedom from all law, which ends in delirium.",
+          "development": "An elder was one who took your soul, your will; freedom of choice in the knowledge of good and evil; miracle, mystery and authority; everything is lawful."
+        },
+        {
+          "id": "guilt",
+          "name": "Guilt and responsibility",
+          "canonicalName": "Guilt",
+          "summary": "One man strikes the blow, but the novel spreads the guilt. Smerdyakov kills; Ivan taught him that everything is lawful and left the house; Dmitri wished his father dead and nearly killed him. Zossima’s teaching, that each of us is responsible to all for all, answers the question of who is guilty with a claim on everyone. Dmitri accepts his punishment for the thought he did not act on.",
+          "development": "Each is responsible to all for all; I only know one thing, it wasn’t you killed father; you are the real murderer; I accept my punishment, not because I killed him."
+        },
+        {
+          "id": "fathers-and-sons",
+          "name": "Fathers and sons",
+          "canonicalName": "Fathers and sons",
+          "summary": "A father who forgot his children is killed, and every son is implicated. Beside the Karamazovs Dostoevsky sets other fathers and sons: Captain Snegiryov and Ilusha, whose love survives humiliation; Grigory, who raised other men’s sons; the elder as a spiritual father to Alyosha. At the trial the defence argues that a father who does not love is no father, and Ivan asks the court who does not desire his father’s death.",
+          "development": "He gets rid of his eldest son; One reptile will devour the other; What should I say to my boy?; Who doesn’t desire his father’s death?; Fathers, provoke not your children."
+        },
+        {
+          "id": "childhood",
+          "name": "Children and their suffering",
+          "canonicalName": "Childhood",
+          "summary": "Suffering children stand at the centre of the argument. Ivan collects true stories of tortured children and says that no future harmony is worth a child’s tears; Dmitri dreams of a starving baby and decides to go to Siberia for it; Ilusha dies after defending his father. The schoolboys of Book X, clever, cruel and loyal, are the audience for Alyosha’s last speech.",
+          "development": "The truth is not worth such a price; Why is the babe poor?; a pin in the bread; crumble a piece of bread on it; a good memory, especially a memory of childhood."
+        },
+        {
+          "id": "love",
+          "name": "Active love",
+          "canonicalName": "Love",
+          "summary": "Zossima distinguishes love in dreams, eager for applause, from active love, which is labour and patience. Madame Hohlakov loves humanity in general; Katerina Ivanovna loves out of pride and gratitude; Grushenka gives an onion; Alyosha’s love is practical and constant. The novel also asks whether one can love one’s neighbour at all, as Ivan doubts.",
+          "development": "Love in action is a harsh and dreadful thing; Love all God’s creation; I’ve found a true sister; the suffering of being unable to love."
+        },
+        {
+          "id": "justice",
+          "name": "Justice and the law",
+          "canonicalName": "Justice and mercy",
+          "summary": "The novel is set just after Russia’s court reforms of the 1860s brought in public trials, professional advocates and juries, and Books IX and XII follow an investigation and a trial in detail. The court convicts the wrong man by honest reasoning from false inference. Behind it Dostoevsky raises other justice: Ivan’s demand for retribution for children, the elder’s forgiveness, and Dmitri’s acceptance of a punishment he has not earned in law.",
+          "development": "The prosecutor catches Mitya; The galloping troika; an argument that cuts both ways; the peasants have stood firm; A Judicial Error."
+        },
+        {
+          "id": "desire",
+          "name": "The Karamazov nature",
+          "canonicalName": "Desire",
+          "summary": "The family’s inheritance is appetite: for women, money, drink, argument and life itself. Fyodor Pavlovitch is a sensualist to the end; Dmitri knows that God and the devil fight in his heart over beauty; Ivan confesses a thirst for life that he calls Karamazov; even Alyosha, Rakitin taunts him, has it in him. The novel treats this vitality as dangerous and precious.",
+          "development": "The battlefield is the heart of man; the sticky little leaves; the sensualists; Hurrah for Karamazov!"
+        },
+        {
+          "id": "memory",
+          "name": "Memory",
+          "canonicalName": "Memory",
+          "summary": "Alyosha remembers his mother in a slanting ray of the setting sun; Zossima remembers his brother Markel; Dmitri remembers Dr Herzenstube’s pound of nuts. The novel ends with Alyosha’s speech to the boys at the stone: a good memory from childhood may be the best education, and may save a man from evil.",
+          "development": "A good memory, especially a memory of childhood; let us never forget one another; the pound of nuts."
+        },
+        {
+          "id": "religion",
+          "name": "The monastery and the elders",
+          "canonicalName": "Religion",
+          "summary": "At the monastery near the town, the elders, spiritual guides whom some monks distrust as an innovation, are opposed by ascetics like Father Ferapont. Pilgrims come for Zossima’s blessing, the monks expect miracles from his body, and his quick decay causes a scandal. Dostoevsky visited the monastery of Optina Pustyn in 1878, and drew on it for the setting.",
+          "development": "What was such an elder?; Peasant women who have faith; the breath of corruption; Cana of Galilee."
+        },
+        {
+          "id": "money-and-inheritance",
+          "name": "Money and inheritance",
+          "canonicalName": "Money and inheritance",
+          "summary": "Money drives the plot: the inheritance Dmitri believes his father owes him, the three thousand roubles in the envelope, the three thousand Katerina Ivanovna gave Dmitri to post, the fifteen hundred sewn in a rag, and the two hundred Snegiryov stamps into the sand. Almost every character has a price, and the few who refuse to be bought stand out.",
+          "development": "To my angel, Grushenka; a scoundrel but not a thief; for our shame; the money in the stocking."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "retrospective-narration",
+          "name": "The town chronicler",
+          "canonicalName": "Retrospective narration",
+          "definition": "A narrator telling their own earlier life, with the distance between the two selves doing the judging.",
+          "bookDefinition": "A narrator telling past events from a later point, with the distance between then and now shaping the telling.",
+          "inThisBook": "The story is told thirteen years later by an unnamed townsman who knew the family, heard the gossip and attended the trial. He calls Alyosha his hero, admits what he does not know, apologises for his digressions, and only in Book XI reveals the name of the town. His modest, chatty voice makes the extremes of the characters seem more real."
+        },
+        {
+          "id": "dialogue",
+          "name": "Argument in dialogue",
+          "canonicalName": "Dialogue",
+          "definition": "Ideas worked out in conversation between characters, each speaking with a voice of their own.",
+          "bookDefinition": "Ideas worked out in conversation between characters, each speaking with a voice of their own.",
+          "inThisBook": "Most of the great ideas arrive in talk: the elder’s cell, the brandy at dinner, the brothers in the tavern, Ivan with Smerdyakov and then with the devil. Dostoevsky lets opponents speak at full strength, so that Ivan’s case against God is as powerful as anything said against it."
+        },
+        {
+          "id": "inset-stories",
+          "name": "Inset stories",
+          "canonicalName": "Inset stories",
+          "definition": "Complete stories or texts set inside the main narrative and told by characters.",
+          "bookDefinition": "Complete stories or texts set inside the main narrative and told by characters.",
+          "inThisBook": "The novel contains a poem in prose, The Grand Inquisitor; a saint’s life, Alyosha’s notes of Father Zossima; the fable of the onion; Ivan’s collection of true stories about children; and Mitya’s confession in verse, anecdote and heels up. Each inset works as a parable that the main plot then tests."
+        },
+        {
+          "id": "doubling",
+          "name": "Doubles",
+          "canonicalName": "Doubling",
+          "definition": "Characters who mirror each other, so that one seems to act out what the other thinks.",
+          "bookDefinition": "Characters who mirror each other, so that one seems to act out what the other thinks.",
+          "inThisBook": "Smerdyakov carries out Ivan’s idea, and the devil speaks Ivan’s worst thoughts in a shabby gentleman’s voice. Dmitri is his father’s rival in appetite; Alyosha repeats Christ’s silent kiss from the Grand Inquisitor. Ivan sees himself in each double with horror."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "Symbolic objects",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative comes back to until it stands for the argument itself.",
+          "bookDefinition": "An object the story keeps returning to until it stands for the whole.",
+          "inThisBook": "The plot turns on things: the envelope addressed to Grushenka, the brass pestle, the rag with the fifteen hundred roubles, the paper-weight, the notes in Smerdyakov’s stocking. Other objects carry the moral argument, like the onion in Grushenka’s fable, the bread crumbled for the sparrows and the stone where Alyosha speaks."
+        },
+        {
+          "id": "irony",
+          "name": "Irony",
+          "canonicalName": "Irony",
+          "definition": "Saying one thing in a form that invites the opposite judgement.",
+          "bookDefinition": "Saying one thing in a form that invites the opposite judgement.",
+          "inThisBook": "Chapter titles are often ironic: The Prosecutor Catches Mitya, Fortune Smiles on Mitya, An Argument That Cuts Both Ways, The Peasants Stand Firm. The trial reaches a wrong verdict by careful argument, and the book calls itself A Judicial Error."
+        },
+        {
+          "id": "allusion",
+          "name": "Allusion",
+          "canonicalName": "Allusion",
+          "definition": "A reference to another text or story, which the reader is expected to recognise.",
+          "bookDefinition": "A reference to another text or story, which the reader is expected to recognise.",
+          "inThisBook": "Scripture runs through the book, from Job, which Zossima loved as a child, to the marriage at Cana read over his coffin. Dmitri quotes Schiller, Ivan’s poem retells the temptations in the wilderness, and the prosecutor borrows Gogol’s troika to describe Russia."
+        },
+        {
+          "id": "dream-vision",
+          "name": "Dreams and visions",
+          "canonicalName": "Dreams and visions",
+          "definition": "Dreams and hallucinations that show a character what he cannot yet say.",
+          "bookDefinition": "Dreams and hallucinations that show a character what he cannot yet say.",
+          "inThisBook": "At three turning points a character dreams: Alyosha sees Zossima at the feast at Cana, Dmitri dreams of the starving babe in a burnt village, and Ivan receives the devil in a nightmare. Each vision changes the dreamer."
+        },
+        {
+          "id": "courtroom-rhetoric",
+          "name": "Courtroom rhetoric",
+          "canonicalName": "Courtroom rhetoric",
+          "definition": "Speeches in court designed to persuade a jury, studied for how they argue.",
+          "bookDefinition": "Speeches in court designed to persuade a jury, studied for how they argue.",
+          "inThisBook": "Book XII gives the two closing speeches almost in full. The prosecutor builds a psychological portrait and a picture of Russia; the defence answers him point by point, then turns to emotion, and finally to the claim that such a father is no father. Dostoevsky shows how both clever speeches miss the truth the reader knows."
+        },
+        {
+          "id": "prophecy",
+          "name": "Foreshadowing",
+          "canonicalName": "Prophecy",
+          "definition": "A statement about the future that shapes the action by being believed, whether or not it is true.",
+          "bookDefinition": "Hints early in a story that prepare for later events.",
+          "inThisBook": "From its first sentence the narrator promises to describe the father’s death in its proper place. Zossima bows to Dmitri as to future suffering, Rakitin predicts a crime, Ivan says one reptile will devour the other, and Smerdyakov foresees his own fit."
+        },
+        {
+          "id": "confession",
+          "name": "Confession",
+          "canonicalName": "Confession",
+          "definition": "A character laying bare his own guilt or desire at length to a listener.",
+          "bookDefinition": "A character laying bare his own guilt or desire at length to a listener.",
+          "inThisBook": "Almost everyone confesses: Dmitri to Alyosha in the summer-house, Zossima’s mysterious visitor to him, Smerdyakov to Ivan, Ivan to the court, Lise to Alyosha. Confession is both a relief and a performance, and the elder’s rule is the test: above all, do not lie to yourself."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "early-lover",
+          "text": "He was simply an early lover of humanity, and that he adopted the monastic life was simply because at that time it struck him, so to say, as the ideal escape for his soul struggling from the darkness of worldly wickedness to the light of love.",
+          "speaker": "",
+          "reference": "Book I, chapter 4",
+          "stage": "book-1",
+          "context": "The narrator insists that his hero, twenty and a novice, is neither a fanatic nor a mystic.",
+          "analysis": "Before the novel shows Alyosha doing anything, the narrator defends him against being thought odd. The word simply appears twice, as if love of humanity needed no explanation. The phrase darkness of worldly wickedness looks ahead to the family we are about to meet.",
+          "themes": [
+            "faith",
+            "love"
+          ],
+          "techniques": [
+            "retrospective-narration"
+          ],
+          "characters": [
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book I, chapter 4",
+          "cloze": [
+            "humanity",
+            "escape"
+          ]
+        },
+        {
+          "id": "an-elder",
+          "text": "An elder was one who took your soul, your will, into his soul and his will. When you choose an elder, you renounce your own will and yield it to him in complete submission, complete self-abnegation.",
+          "speaker": "",
+          "reference": "Book I, chapter 5",
+          "stage": "book-1",
+          "context": "The narrator explains the institution of elders at the monastery, and why Alyosha was drawn there.",
+          "analysis": "Obedience is chosen here in order to reach freedom, which the narrator says is the aim of this terrible school. The same trade will be made on a vast scale in the Grand Inquisitor, where men give up their freedom for bread. Dostoevsky sets the two surrenders side by side, one chosen and one sold.",
+          "themes": [
+            "religion",
+            "freedom"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "zossima",
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book I, chapter 5",
+          "cloze": [
+            "elder",
+            "submission"
+          ]
+        },
+        {
+          "id": "lie-to-yourself",
+          "text": "Above all, don’t lie to yourself. The man who lies to himself and listens to his own lie comes to such a pass that he cannot distinguish the truth within him, or around him, and so loses all respect for himself and for others.",
+          "speaker": "Father Zossima",
+          "reference": "Book II, chapter 2",
+          "stage": "book-2",
+          "context": "Fyodor Pavlovitch has just clowned his way through a story about Diderot, and asks the elder what he must do.",
+          "analysis": "Zossima takes the buffoon seriously and names his sickness. The sentence follows lying step by step to its end, loss of respect, then of love, then coarse pleasures. Every Karamazov will face this test, and Ivan’s nightmare shows what happens when a man cannot tell his own lie from the truth.",
+          "themes": [
+            "faith",
+            "love"
+          ],
+          "techniques": [
+            "confession"
+          ],
+          "characters": [
+            "zossima",
+            "fyodor"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book II, chapter 2",
+          "cloze": [
+            "lie",
+            "respect"
+          ]
+        },
+        {
+          "id": "love-in-action",
+          "text": "love in action is a harsh and dreadful thing compared with love in dreams. Love in dreams is greedy for immediate action, rapidly performed and in the sight of all.",
+          "speaker": "Father Zossima",
+          "reference": "Book II, chapter 4",
+          "stage": "book-2",
+          "context": "Madame Hohlakov confesses that she dreams of becoming a sister of mercy, but could not love people who were ungrateful.",
+          "analysis": "Zossima does not flatter her; he tells her that real love is labour and fortitude. Love in dreams wants an audience, and the novel is full of it, in Katerina Ivanovna’s grand sacrifices and Madame Hohlakov’s enthusiasms. Alyosha’s quiet visits to the Snegiryovs show the other kind.",
+          "themes": [
+            "love"
+          ],
+          "techniques": [
+            "dialogue"
+          ],
+          "characters": [
+            "zossima",
+            "madame-hohlakov"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book II, chapter 4",
+          "cloze": [
+            "harsh",
+            "dreams"
+          ]
+        },
+        {
+          "id": "everything-lawful",
+          "text": "Moreover, nothing then would be immoral, everything would be lawful, even cannibalism.",
+          "speaker": "",
+          "reference": "Book II, chapter 6",
+          "stage": "book-2",
+          "context": "Miüsov tells the company in the elder’s cell of an argument Ivan made at a party: if men lost their belief in immortality, the moral law would lose its force.",
+          "analysis": "Here the novel’s most dangerous idea arrives as second-hand gossip, with cannibalism added for shock. Ivan does not deny it. Smerdyakov will later repeat it to Ivan as the reason for the murder, and the devil will mock it.",
+          "themes": [
+            "faith",
+            "freedom"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "ivan"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book II, chapter 6",
+          "cloze": [
+            "immoral",
+            "lawful"
+          ]
+        },
+        {
+          "id": "bowed-down",
+          "text": "The elder distinctly and deliberately bowed down at Dmitri’s feet till his forehead touched the floor.",
+          "speaker": "",
+          "reference": "Book II, chapter 6",
+          "stage": "book-2",
+          "context": "The meeting in the cell has ended in a quarrel between Dmitri and his father over Grushenka, and the elder rises to leave.",
+          "analysis": "Nobody understands the bow, and the narrator reports it without explanation. Rakitin says the elder sniffed a crime; Zossima later tells Alyosha he bowed to the great suffering in store for Dmitri. The gesture stands over the whole plot.",
+          "themes": [
+            "religion",
+            "guilt"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "zossima",
+            "dmitri"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book II, chapter 6",
+          "cloze": [
+            "bowed",
+            "forehead"
+          ]
+        },
+        {
+          "id": "battlefield",
+          "text": "The awful thing is that beauty is mysterious as well as terrible. God and the devil are fighting there and the battlefield is the heart of man.",
+          "speaker": "Dmitri Karamazov",
+          "reference": "Book III, chapter 3",
+          "stage": "book-3",
+          "context": "In the summer-house, Dmitri begins his confession to Alyosha by talking about beauty, which a man can see as the ideal of the Madonna and of Sodom together.",
+          "analysis": "Dmitri makes beauty the ground of a war inside himself. His images are sensual, and the struggle is moral and religious. The confession that follows, with its five thousand roubles and its bow, shows both sides of the fight in one man.",
+          "themes": [
+            "desire",
+            "faith"
+          ],
+          "techniques": [
+            "confession"
+          ],
+          "characters": [
+            "dmitri",
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book III, chapter 3",
+          "cloze": [
+            "beauty",
+            "battlefield"
+          ]
+        },
+        {
+          "id": "is-there-a-god",
+          "text": "Speak, all the same, is there a God, or not? Only, be serious. I want you to be serious now.” “No, there is no God.” “Alyosha, is there a God?” “There is.”",
+          "speaker": "",
+          "reference": "Book III, chapter 8",
+          "stage": "book-3",
+          "context": "Over the brandy after dinner, Fyodor Pavlovitch asks each of his younger sons in turn.",
+          "analysis": "A drunk father puts the book’s central question in its barest form and gets two answers in three words each. The scene is comic and serious at the same moment, because the old man really wants to know. He goes on to ask about immortality, and Ivan says there is none.",
+          "themes": [
+            "faith",
+            "fathers-and-sons"
+          ],
+          "techniques": [
+            "dialogue"
+          ],
+          "characters": [
+            "fyodor",
+            "ivan",
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book III, chapter 8",
+          "cloze": [
+            "God",
+            "serious"
+          ]
+        },
+        {
+          "id": "reptile",
+          "text": "One reptile will devour the other. And serve them both right, too.",
+          "speaker": "Ivan Karamazov",
+          "reference": "Book III, chapter 9",
+          "stage": "book-3",
+          "context": "Dmitri has just burst in, knocked his father down and kicked him in the face, and Ivan whispers to Alyosha.",
+          "analysis": "Ivan speaks of his father and brother as animals, and seems almost to wish the outcome. Alyosha shudders. The phrase returns to haunt Ivan, since his indifference to what happens between the reptiles is the moral ground of his guilt.",
+          "themes": [
+            "fathers-and-sons",
+            "guilt"
+          ],
+          "techniques": [
+            "prophecy"
+          ],
+          "characters": [
+            "ivan",
+            "dmitri",
+            "fyodor"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book III, chapter 9",
+          "cloze": [
+            "reptile",
+            "devour"
+          ]
+        },
+        {
+          "id": "to-my-angel",
+          "text": "On the envelope is written: ‘To my angel, Grushenka, when she will come to me.’",
+          "speaker": "Dmitri Karamazov",
+          "reference": "Book III, chapter 5",
+          "stage": "book-3",
+          "context": "Dmitri tells Alyosha about the three thousand roubles his father keeps in a sealed envelope as a bribe for Grushenka.",
+          "analysis": "No object matters more to the plot: the envelope motivates Dmitri, tempts Smerdyakov, and lies torn and empty beside the murdered man. The endearment on it shows the father buying love as he buys everything.",
+          "themes": [
+            "money-and-inheritance",
+            "desire"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "dmitri",
+            "fyodor",
+            "grushenka"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book III, chapter 5",
+          "cloze": [
+            "envelope",
+            "angel"
+          ]
+        },
+        {
+          "id": "for-our-shame",
+          "text": "What should I say to my boy if I took money from you for our shame?",
+          "speaker": "Captain Snegiryov",
+          "reference": "Book IV, chapter 7",
+          "stage": "book-4",
+          "context": "Having talked joyfully of what two hundred roubles would do for his family, the captain crumples the notes, stamps them into the sand and runs off.",
+          "analysis": "Snegiryov saves his dignity and loses his family’s bread, and he knows it. The money would have been payment for the beating in front of his son, and Ilusha’s love for him will not allow it. Alyosha sees that the man did not know until the last moment that he would throw it away.",
+          "themes": [
+            "money-and-inheritance",
+            "fathers-and-sons"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "snegiryov",
+            "ilusha",
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book IV, chapter 7",
+          "cloze": [
+            "money",
+            "shame"
+          ]
+        },
+        {
+          "id": "sticky-leaves",
+          "text": "Though I may not believe in the order of the universe, yet I love the sticky little leaves as they open in spring.",
+          "speaker": "Ivan Karamazov",
+          "reference": "Book V, chapter 3",
+          "stage": "book-5",
+          "context": "In the Metropolis tavern Ivan tells Alyosha about his thirst for life, which he calls Karamazov.",
+          "analysis": "Before arguing against God’s world, Ivan confesses that he loves it. The image is small and physical, young leaves still sticky from the bud. Alyosha says that he must love life before its meaning, and in parting Ivan promises to love the leaves by remembering him.",
+          "themes": [
+            "desire",
+            "faith"
+          ],
+          "techniques": [
+            "dialogue"
+          ],
+          "characters": [
+            "ivan",
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book V, chapter 3",
+          "cloze": [
+            "sticky",
+            "spring"
+          ]
+        },
+        {
+          "id": "not-worth-the-price",
+          "text": "And if the sufferings of children go to swell the sum of sufferings which was necessary to pay for truth, then I protest that the truth is not worth such a price.",
+          "speaker": "Ivan Karamazov",
+          "reference": "Book V, chapter 4",
+          "stage": "book-5",
+          "context": "Ivan has told Alyosha true stories of cruelty to children, including a small girl shut in a privy by her parents and a boy torn apart by a general’s hounds.",
+          "analysis": "Ivan’s rebellion is moral: he will not buy harmony with a child’s tears. The argument is made from love, and that is what makes it so hard to answer. Dostoevsky drew several of the cases from real trials he had written about in his journal.",
+          "themes": [
+            "childhood",
+            "faith"
+          ],
+          "techniques": [
+            "dialogue"
+          ],
+          "characters": [
+            "ivan",
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book V, chapter 4",
+          "cloze": [
+            "children",
+            "price"
+          ]
+        },
+        {
+          "id": "return-the-ticket",
+          "text": "Besides, too high a price is asked for harmony; it’s beyond our means to pay so much to enter on it. And so I hasten to give back my entrance ticket, and if I am an honest man I am bound to give it back as soon as possible. And that I am doing. It’s not God that I don’t accept, Alyosha, only I most respectfully return Him the ticket.",
+          "speaker": "Ivan Karamazov",
+          "reference": "Book V, chapter 4",
+          "stage": "book-5",
+          "context": "The end of Ivan’s case against God’s world, at the close of the chapter called Rebellion.",
+          "analysis": "Ivan’s image of the ticket makes salvation a purchase he will not make: he does not deny God, he declines to enter. The irony of most respectfully keeps his anger polite. Alyosha calls it rebellion, and Ivan answers that one cannot live in rebellion.",
+          "themes": [
+            "faith",
+            "childhood"
+          ],
+          "techniques": [
+            "dialogue"
+          ],
+          "characters": [
+            "ivan",
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book V, chapter 4",
+          "cloze": [
+            "harmony",
+            "ticket"
+          ]
+        },
+        {
+          "id": "freedom-of-choice",
+          "text": "Didst Thou forget that man prefers peace, and even death, to freedom of choice in the knowledge of good and evil? Nothing is more seductive for man than his freedom of conscience, but nothing is a greater cause of suffering.",
+          "speaker": "The Grand Inquisitor",
+          "reference": "Book V, chapter 5",
+          "stage": "book-5",
+          "context": "In the prison, the old cardinal reproaches Christ for rejecting the three temptations in the wilderness.",
+          "analysis": "The Inquisitor’s charge is that Christ asked too much of human beings. He speaks as one who loves weak men and will relieve them of a burden they cannot carry. The argument has troubled readers ever since, and Ivan offers it without any answer except a kiss.",
+          "themes": [
+            "freedom",
+            "faith"
+          ],
+          "techniques": [
+            "inset-stories"
+          ],
+          "characters": [
+            "grand-inquisitor"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book V, chapter 5",
+          "cloze": [
+            "peace",
+            "conscience"
+          ]
+        },
+        {
+          "id": "miracle-mystery-authority",
+          "text": "There are three powers, three powers alone, able to conquer and to hold captive for ever the conscience of these impotent rebels for their happiness—those forces are miracle, mystery and authority.",
+          "speaker": "The Grand Inquisitor",
+          "reference": "Book V, chapter 5",
+          "stage": "book-5",
+          "context": "The cardinal explains how the Church has corrected Christ’s work by accepting what he rejected.",
+          "analysis": "The three powers answer the three temptations: bread, the leap from the pinnacle, the kingdoms of the world. The phrase for their happiness shows how completely the Inquisitor believes in his kindness. Readers soon compared him to real rulers of church and state.",
+          "themes": [
+            "freedom",
+            "religion"
+          ],
+          "techniques": [
+            "inset-stories",
+            "allusion"
+          ],
+          "characters": [
+            "grand-inquisitor"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book V, chapter 5",
+          "cloze": [
+            "miracle",
+            "authority"
+          ]
+        },
+        {
+          "id": "kiss-glows",
+          "text": "The kiss glows in his heart, but the old man adheres to his idea.",
+          "speaker": "Ivan Karamazov",
+          "reference": "Book V, chapter 5",
+          "stage": "book-5",
+          "context": "Alyosha asks what became of the Inquisitor after Christ kissed him and was released.",
+          "analysis": "Ivan’s poem ends with a gesture that argument cannot touch, and a man who keeps his idea anyway. The sentence describes Ivan as well as his cardinal. Alyosha cries, And you with him, you too?, and Ivan laughs it off.",
+          "themes": [
+            "freedom",
+            "love"
+          ],
+          "techniques": [
+            "inset-stories"
+          ],
+          "characters": [
+            "grand-inquisitor",
+            "ivan"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book V, chapter 5",
+          "cloze": [
+            "kiss",
+            "idea"
+          ]
+        },
+        {
+          "id": "plagiarism",
+          "text": "Alyosha got up, went to him and softly kissed him on the lips. “That’s plagiarism,” cried Ivan, highly delighted. “You stole that from my poem.",
+          "speaker": "",
+          "reference": "Book V, chapter 5",
+          "stage": "book-5",
+          "context": "Ivan has just said he will not renounce the formula that all is lawful, and asked whether Alyosha will renounce him for it.",
+          "analysis": "Alyosha answers his brother the way Christ answered the Inquisitor, with love where argument fails. Ivan’s joke shows he understands, and that he is moved. The repetition makes the poem’s ending into the brothers’ real parting.",
+          "themes": [
+            "love",
+            "faith"
+          ],
+          "techniques": [
+            "doubling"
+          ],
+          "characters": [
+            "alyosha",
+            "ivan"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book V, chapter 5",
+          "cloze": [
+            "kissed",
+            "plagiarism"
+          ]
+        },
+        {
+          "id": "clever-man",
+          "text": "It’s a true saying then, that ‘it’s always worth while speaking to a clever man,’",
+          "speaker": "Smerdyakov",
+          "reference": "Book V, chapter 7",
+          "stage": "book-5",
+          "context": "As Ivan drives away next morning, he tells Smerdyakov that he is going to Tchermashnya, as his father asked.",
+          "analysis": "Smerdyakov’s proverb seals an agreement that Ivan never consciously made. By going away he has left the house open to whatever happens. Ivan remembers the words for the rest of the novel, and they return in each of his interviews with Smerdyakov.",
+          "themes": [
+            "guilt"
+          ],
+          "techniques": [
+            "prophecy",
+            "irony"
+          ],
+          "characters": [
+            "smerdyakov",
+            "ivan"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book V, chapter 7",
+          "cloze": [
+            "saying",
+            "clever"
+          ]
+        },
+        {
+          "id": "responsible-to-all",
+          "text": "little heart of mine, my joy, believe me, every one is really responsible to all men for all men and for everything. I don’t know how to explain it to you, but I feel it is so, painfully even.",
+          "speaker": "",
+          "reference": "Book VI, chapter 2",
+          "stage": "book-6",
+          "context": "Zossima’s notes recall his elder brother Markel, dying of consumption at seventeen, speaking to their mother.",
+          "analysis": "Zossima’s central idea comes first from a dying boy who cannot explain it. Responsibility here is a way of seeing that makes each person answerable for all; it has nothing to do with sharing out blame. Zossima says his brother’s face was a prophecy for him, and sees it again in Alyosha.",
+          "themes": [
+            "guilt",
+            "love"
+          ],
+          "techniques": [
+            "inset-stories"
+          ],
+          "characters": [
+            "zossima"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book VI, chapter 2",
+          "cloze": [
+            "responsible",
+            "painfully"
+          ]
+        },
+        {
+          "id": "what-is-hell",
+          "text": "Fathers and teachers, I ponder, “What is hell?” I maintain that it is the suffering of being unable to love.",
+          "speaker": "Father Zossima",
+          "reference": "Book VI, chapter 3",
+          "stage": "book-6",
+          "context": "Among the elder’s last exhortations, as Alyosha recorded them, is a mystic reflection on hell and hell fire.",
+          "analysis": "Zossima moves hell from a place of punishment to a state of the soul. The definition answers Ivan indirectly, as Dostoevsky intended Book VI to do: the lost suffer because they cannot love. Ivan’s devil, who suffers but does not live, might be its illustration.",
+          "themes": [
+            "love",
+            "religion"
+          ],
+          "techniques": [
+            "inset-stories"
+          ],
+          "characters": [
+            "zossima"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book VI, chapter 3",
+          "cloze": [
+            "hell",
+            "love"
+          ]
+        },
+        {
+          "id": "every-grain-of-sand",
+          "text": "Love all God’s creation, the whole and every grain of sand in it. Love every leaf, every ray of God’s light. Love the animals, love the plants, love everything.",
+          "speaker": "Father Zossima",
+          "reference": "Book VI, chapter 3",
+          "stage": "book-6",
+          "context": "From the elder’s teaching on prayer and love, which Alyosha wrote down after his death.",
+          "analysis": "The sentences widen from a grain of sand to everything, each beginning with the same command. They answer Ivan’s sticky leaves: Ivan and Alyosha each love the earth, and only one of them can accept it. Alyosha will act this teaching out when he kisses the earth.",
+          "themes": [
+            "love",
+            "faith"
+          ],
+          "techniques": [
+            "inset-stories"
+          ],
+          "characters": [
+            "zossima"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book VI, chapter 3",
+          "cloze": [
+            "creation",
+            "sand"
+          ]
+        },
+        {
+          "id": "breath-of-corruption",
+          "text": "from their humble coffins, too, the breath of corruption had come, naturally, as from all dead bodies, but that had caused no scandal nor even the slightest excitement.",
+          "speaker": "",
+          "reference": "Book VII, chapter 1",
+          "stage": "book-7",
+          "context": "The narrator tries to explain why the smell from Zossima’s coffin caused such a scandal, when other holy monks had decayed without remark.",
+          "analysis": "The narrator’s calm reasonableness exposes the crowd’s hunger for a miracle. Nature takes its course with the saint as with anyone, and the scandal lies in the watchers. Alyosha’s grief at it becomes a crisis of faith.",
+          "themes": [
+            "religion",
+            "faith"
+          ],
+          "techniques": [
+            "retrospective-narration",
+            "irony"
+          ],
+          "characters": [
+            "zossima"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book VII, chapter 1",
+          "cloze": [
+            "corruption",
+            "scandal"
+          ]
+        },
+        {
+          "id": "onion",
+          "text": "So her guardian angel stood and wondered what good deed of hers he could remember to tell to God; ‘She once pulled up an onion in her garden,’ said he, ‘and gave it to a beggar woman.’",
+          "speaker": "Grushenka",
+          "reference": "Book VII, chapter 3",
+          "stage": "book-7",
+          "context": "Moved by Alyosha’s grief, Grushenka tells him a fable she heard as a child from her cook.",
+          "analysis": "One small gift is almost enough to save a wicked woman, until she kicks the other sinners away. Grushenka applies the fable to herself, and Alyosha takes her pity as an onion given to him. The book turns on such small acts.",
+          "themes": [
+            "love",
+            "faith"
+          ],
+          "techniques": [
+            "inset-stories",
+            "symbolic-objects"
+          ],
+          "characters": [
+            "grushenka",
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book VII, chapter 3",
+          "cloze": [
+            "angel",
+            "onion"
+          ]
+        },
+        {
+          "id": "resolute-champion",
+          "text": "He had fallen on the earth a weak boy, but he rose up a resolute champion, and he knew and felt it suddenly at the very moment of his ecstasy.",
+          "speaker": "",
+          "reference": "Book VII, chapter 4",
+          "stage": "book-7",
+          "context": "After dreaming of the elder at the marriage feast of Cana, Alyosha goes out under the stars, falls on the earth and kisses it.",
+          "analysis": "Alyosha’s conversion is marked by the simple contrast of weak boy and resolute champion. It is a physical act, falling and rising, and it comes after doubt. Within three days he leaves the monastery, as the elder told him to.",
+          "themes": [
+            "faith"
+          ],
+          "techniques": [
+            "dream-vision"
+          ],
+          "characters": [
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book VII, chapter 4",
+          "cloze": [
+            "earth",
+            "champion"
+          ]
+        },
+        {
+          "id": "make-way",
+          "text": "What would you say to a driver who wouldn’t make way for any one, but would just drive on and crush people? No, a driver mustn’t run over people.",
+          "speaker": "Dmitri Karamazov",
+          "reference": "Book VIII, chapter 6",
+          "stage": "book-8",
+          "context": "On the road to Mokroe at night, meaning to see Grushenka once more and then shoot himself, Dmitri talks to the driver Andrey.",
+          "analysis": "Dmitri talks of making way for Grushenka and her first lover, but his words point back to Grigory, whom he has just struck down. The simple image of a driver shows his conscience at work under the excitement. The troika he rides in returns in the prosecutor’s speech.",
+          "themes": [
+            "guilt",
+            "love"
+          ],
+          "techniques": [
+            "confession"
+          ],
+          "characters": [
+            "dmitri"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book VIII, chapter 6",
+          "cloze": [
+            "driver",
+            "crush"
+          ]
+        },
+        {
+          "id": "devil-conquered",
+          "text": "Whether it was some one’s tears, or my mother prayed to God, or a good angel kissed me at that instant, I don’t know. But the devil was conquered.",
+          "speaker": "Dmitri Karamazov",
+          "reference": "Book IX, chapter 5",
+          "stage": "book-9",
+          "context": "Under questioning, Dmitri describes the moment at his father’s window when he held the pestle.",
+          "analysis": "Dmitri cannot say what stopped him, and offers three answers, all spiritual. The lawyers hear only a gap in his story. The reader, who knows from Book VIII that he ran from the window, sees the truth told in the only way Dmitri can tell it.",
+          "themes": [
+            "guilt",
+            "faith"
+          ],
+          "techniques": [
+            "confession"
+          ],
+          "characters": [
+            "dmitri"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book IX, chapter 5",
+          "cloze": [
+            "tears",
+            "conquered"
+          ]
+        },
+        {
+          "id": "not-a-thief",
+          "text": "I should be a beast and a scoundrel, and whatever you like; but not a thief, not altogether a thief, or I should not have brought back what was left",
+          "speaker": "Dmitri Karamazov",
+          "reference": "Book IX, chapter 7",
+          "stage": "book-9",
+          "context": "Dmitri explains his great secret: he had kept fifteen hundred of Katerina Ivanovna’s roubles sewn in a rag, meaning to return them.",
+          "analysis": "Dmitri’s distinction between scoundrel and thief is his whole sense of honour, and it sounds absurd to the lawyers. It is also true, and it explains the money he spent at Mokroe. The prosecutors find his shame about theft harder to believe than a murder.",
+          "themes": [
+            "money-and-inheritance",
+            "guilt"
+          ],
+          "techniques": [
+            "confession"
+          ],
+          "characters": [
+            "dmitri"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book IX, chapter 7",
+          "cloze": [
+            "scoundrel",
+            "thief"
+          ]
+        },
+        {
+          "id": "why-is-the-babe-poor",
+          "text": "Why are people poor? Why is the babe poor? Why is the steppe barren? Why don’t they hug each other and kiss? Why don’t they sing songs of joy?",
+          "speaker": "Dmitri Karamazov",
+          "reference": "Book IX, chapter 8",
+          "stage": "book-9",
+          "context": "Dozing after the questioning, Dmitri dreams he is driving through a burnt-out village where thin women stand holding a crying baby.",
+          "analysis": "Dmitri’s questions echo Ivan’s about suffering children, but where Ivan withdrew, Dmitri wants to act. He wakes with a pillow under his head that someone has put there, and he feels ready to go to Siberia for the babe.",
+          "themes": [
+            "childhood",
+            "guilt"
+          ],
+          "techniques": [
+            "dream-vision"
+          ],
+          "characters": [
+            "dmitri"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book IX, chapter 8",
+          "cloze": [
+            "babe",
+            "barren"
+          ]
+        },
+        {
+          "id": "purified",
+          "text": "I accept the torture of accusation, and my public shame, I want to suffer and by suffering I shall be purified.",
+          "speaker": "Dmitri Karamazov",
+          "reference": "Book IX, chapter 9",
+          "stage": "book-9",
+          "context": "Before he is taken away, Dmitri speaks to the officials and the witnesses at Mokroe.",
+          "analysis": "Dmitri takes on his punishment as a moral cleansing while insisting that he did not kill. He is ready to suffer for what he wished, and in this Zossima’s teaching reaches him through the babe dream.",
+          "themes": [
+            "guilt",
+            "justice"
+          ],
+          "techniques": [
+            "confession"
+          ],
+          "characters": [
+            "dmitri"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book IX, chapter 9",
+          "cloze": [
+            "accusation",
+            "purified"
+          ]
+        },
+        {
+          "id": "incurable-socialist",
+          "text": "I am a Socialist, Karamazov, I am an incurable Socialist,",
+          "speaker": "Kolya Krassotkin",
+          "reference": "Book X, chapter 6",
+          "stage": "book-10",
+          "context": "At Ilusha’s bedside Kolya tries to impress Alyosha with his advanced opinions.",
+          "analysis": "Kolya’s announcement comes apropos of nothing, and Alyosha laughs, reminding him he is only thirteen. The comedy is affectionate. His borrowed opinions echo Ivan and Rakitin in miniature, and Alyosha treats him as a person worth arguing with.",
+          "themes": [
+            "childhood"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "kolya",
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book X, chapter 6",
+          "cloze": [
+            "Socialist",
+            "incurable"
+          ]
+        },
+        {
+          "id": "hymn",
+          "text": "And then we men underground will sing from the bowels of the earth a glorious hymn to God, with Whom is joy. Hail to God and His joy! I love Him!",
+          "speaker": "Dmitri Karamazov",
+          "reference": "Book XI, chapter 4",
+          "stage": "book-11",
+          "context": "In prison, the day before the trial, Dmitri tells Alyosha of the new man risen up in him.",
+          "analysis": "Dmitri answers Ivan’s rebellion with joy, and imagines the convicts in the mines singing to God. His religion is physical and exultant, the Karamazov nature turned to praise. He trembles with it, and in the same breath tells Alyosha he fears Ivan’s ideas.",
+          "themes": [
+            "faith",
+            "desire"
+          ],
+          "techniques": [
+            "confession"
+          ],
+          "characters": [
+            "dmitri",
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book XI, chapter 4",
+          "cloze": [
+            "hymn",
+            "joy"
+          ]
+        },
+        {
+          "id": "not-you",
+          "text": "It was not you killed father, not you!",
+          "speaker": "Alyosha Karamazov",
+          "reference": "Book XI, chapter 5",
+          "stage": "book-11",
+          "context": "Under a lamp-post in the dark street, Ivan asks who killed their father, and Alyosha answers.",
+          "analysis": "Alyosha speaks to the accusation Ivan has been making against himself in secret. The denial wounds Ivan as much as it comforts him, because it shows that Alyosha knows. Ivan breaks off their friendship on the spot.",
+          "themes": [
+            "guilt"
+          ],
+          "techniques": [
+            "dialogue"
+          ],
+          "characters": [
+            "alyosha",
+            "ivan"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book XI, chapter 5",
+          "cloze": [
+            "killed",
+            "father"
+          ]
+        },
+        {
+          "id": "real-murderer",
+          "text": "You murdered him; you are the real murderer, I was only your instrument, your faithful servant, and it was following your words I did it.",
+          "speaker": "Smerdyakov",
+          "reference": "Book XI, chapter 8",
+          "stage": "book-11",
+          "context": "At their third meeting, Smerdyakov stops pretending, and tells Ivan that he killed Fyodor Pavlovitch.",
+          "analysis": "Smerdyakov makes Ivan the author and himself the tool. The servant’s words, instrument and faithful servant, turn the relation of master and valet against the master. Ivan’s horror comes from recognising part of the truth.",
+          "themes": [
+            "guilt",
+            "fathers-and-sons"
+          ],
+          "techniques": [
+            "doubling"
+          ],
+          "characters": [
+            "smerdyakov",
+            "ivan"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book XI, chapter 8",
+          "cloze": [
+            "murderer",
+            "instrument"
+          ]
+        },
+        {
+          "id": "indeterminate-equation",
+          "text": "I suffer, but still, I don’t live. I am x in an indeterminate equation. I am a sort of phantom in life who has lost all beginning and end, and who has even forgotten his own name.",
+          "speaker": "The devil",
+          "reference": "Book XI, chapter 9",
+          "stage": "book-11",
+          "context": "Ivan’s visitor explains his existence, and complains that suffering is life and he is denied it.",
+          "analysis": "The devil’s mathematics makes him an unknown that cannot be solved, a being without a story. He is comic, shabby and self-pitying, and he says what Ivan thinks. The claim that suffering is life echoes Zossima from the other side.",
+          "themes": [
+            "faith"
+          ],
+          "techniques": [
+            "doubling",
+            "dream-vision"
+          ],
+          "characters": [
+            "devil",
+            "ivan"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book XI, chapter 9",
+          "cloze": [
+            "equation",
+            "phantom"
+          ]
+        },
+        {
+          "id": "who-doesnt",
+          "text": "It was he, not my brother, killed our father. He murdered him and I incited him to do it ... Who doesn’t desire his father’s death?",
+          "speaker": "Ivan Karamazov",
+          "reference": "Book XII, chapter 5",
+          "stage": "book-12",
+          "context": "Called as a witness, Ivan produces the three thousand roubles in court and names Smerdyakov, who is already dead.",
+          "analysis": "Ivan tells the truth, and it sounds like madness. His question to the court turns the accusation on everyone watching, and they take it as proof of delirium. The court’s reaction is the novel’s judgement on how people hear an unwelcome truth.",
+          "themes": [
+            "fathers-and-sons",
+            "guilt"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "ivan"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book XII, chapter 5",
+          "cloze": [
+            "incited",
+            "desire"
+          ]
+        },
+        {
+          "id": "troika",
+          "text": "For if the troika were drawn by his heroes, Sobakevitch, Nozdryov, Tchitchikov, it could reach no rational goal, whoever might be driving it.",
+          "speaker": "",
+          "reference": "Book XII, chapter 6",
+          "stage": "book-12",
+          "context": "The prosecutor, Ippolit Kirillovitch, quotes the end of Gogol’s Dead Souls, where Russia is a troika galloping to an unknown goal.",
+          "analysis": "The prosecutor borrows Gogol’s famous image and puts Gogol’s rogues in the harness. It wins him applause, the first of his career, and sets the Karamazovs up as a picture of Russia. The trial becomes a national allegory, and Dmitri disappears behind it.",
+          "themes": [
+            "justice"
+          ],
+          "techniques": [
+            "courtroom-rhetoric",
+            "allusion"
+          ],
+          "characters": [
+            "prosecutor"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book XII, chapter 6",
+          "cloze": [
+            "troika",
+            "rational"
+          ]
+        },
+        {
+          "id": "filial-love",
+          "text": "Filial love for an unworthy father is an absurdity, an impossibility. Love cannot be created from nothing: only God can create something from nothing.",
+          "speaker": "Fetyukovitch",
+          "reference": "Book XII, chapter 13",
+          "stage": "book-12",
+          "context": "In the last part of his speech, the counsel for the defence argues that Fyodor Pavlovitch was no father to the prisoner.",
+          "analysis": "Fetyukovitch’s argument is clever and dangerous, and the narrator calls the chapter A Corrupter of Thought. If love is owed only to the lovable, the ground of Zossima’s teaching goes. The jury is not persuaded, and the reader may not be either.",
+          "themes": [
+            "fathers-and-sons",
+            "justice"
+          ],
+          "techniques": [
+            "courtroom-rhetoric"
+          ],
+          "characters": [
+            "fetyukovitch",
+            "fyodor"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book XII, chapter 13",
+          "cloze": [
+            "Filial",
+            "absurdity"
+          ]
+        },
+        {
+          "id": "stood-firm",
+          "text": "“Well, our peasants have stood firm.” “And have done for our Mitya.”",
+          "speaker": "",
+          "reference": "Book XII, chapter 14",
+          "stage": "book-12",
+          "context": "The last words of the trial, overheard by the narrator on the court steps after the jury has found Dmitri guilty on every count.",
+          "analysis": "Two anonymous voices give the verdict its meaning in a single exchange. The jury has stood firm against a clever Petersburg lawyer, and in doing so has convicted an innocent man. The narrator leaves it there, without comment.",
+          "themes": [
+            "justice"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "dmitri"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Book XII, chapter 14",
+          "cloze": [
+            "peasants",
+            "firm"
+          ]
+        },
+        {
+          "id": "love-is-over",
+          "text": "Love is over, Mitya! … but the past is painfully dear to me.",
+          "speaker": "Katerina Ivanovna",
+          "reference": "Epilogue, chapter 2",
+          "stage": "epilogue",
+          "context": "Katerina Ivanovna visits Dmitri in the prison hospital, where they have not met since she produced his letter in court.",
+          "analysis": "For a moment the two speak with a tenderness they could not manage while engaged. The chapter title warns that this is the lie becoming truth: each loves someone else. Grushenka comes in, and the moment breaks.",
+          "themes": [
+            "love"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "katerina",
+            "dmitri"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Epilogue, chapter 2",
+          "cloze": [
+            "Love",
+            "past"
+          ]
+        },
+        {
+          "id": "good-memory",
+          "text": "You must know that there is nothing higher and stronger and more wholesome and good for life in the future than some good memory, especially a memory of childhood, of home.",
+          "speaker": "Alyosha Karamazov",
+          "reference": "Epilogue, chapter 3",
+          "stage": "epilogue",
+          "context": "After Ilusha’s funeral, by the big stone where the boy wanted to be buried, Alyosha speaks to the twelve schoolboys.",
+          "analysis": "Alyosha ends the book with an exhortation to remember. His claim is modest and practical: one good memory may keep a man from evil. His audience is children, the people for whom Ivan returned his ticket.",
+          "themes": [
+            "memory",
+            "childhood"
+          ],
+          "techniques": [
+            "dialogue"
+          ],
+          "characters": [
+            "alyosha",
+            "kolya"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Epilogue, chapter 3",
+          "cloze": [
+            "memory",
+            "childhood"
+          ]
+        },
+        {
+          "id": "hurrah",
+          "text": "And always so, all our lives hand in hand! Hurrah for Karamazov!",
+          "speaker": "Kolya Krassotkin",
+          "reference": "Epilogue, chapter 3",
+          "stage": "epilogue",
+          "context": "The last words of the novel, as the boys go off with Alyosha to Ilusha’s funeral dinner of pancakes.",
+          "analysis": "The family name, a byword for vice and a subject of scandal all over Russia, becomes a cheer. The boys are cheering Alyosha. Dostoevsky ends a novel about a murder on a note of joy.",
+          "themes": [
+            "childhood",
+            "desire"
+          ],
+          "techniques": [
+            "irony"
+          ],
+          "characters": [
+            "kolya",
+            "alyosha"
+          ],
+          "source": "The Brothers Karamazov, trans. Constance Garnett, Epilogue, chapter 3",
+          "cloze": [
+            "hand",
+            "Hurrah"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "First published",
+          "value": "1879–1880",
+          "note": "In instalments in the monthly Russian Messenger, from January 1879 to November 1880."
+        },
+        {
+          "label": "Book edition",
+          "value": "December 1880",
+          "note": "Two volumes, published in Petersburg and dated 1881 on their title pages."
+        },
+        {
+          "label": "In English",
+          "value": "1912",
+          "note": "Constance Garnett’s translation, the first in English, published in London by Heinemann."
+        },
+        {
+          "label": "Length",
+          "value": "12 books",
+          "note": "Four parts of three books each, and an epilogue: ninety-six chapters."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "The Grand Inquisitor and its answer",
+          "summary": "Ivan’s rebellion and the Grand Inquisitor have often seemed stronger than anything the novel says against them. Pobedonostsev, reading the instalments, worried that the atheist arguments had not yet been answered, and many later readers have treated Book V as the heart of the book.",
+          "counter": "Dostoevsky meant Book VI, The Russian Monk, as the answer, and said it would be indirect: an artistic picture of lives like Zossima’s, Markel’s and Alyosha’s, answering the argument with examples, not a refutation point by point."
+        },
+        {
+          "position": "A novel about parricide",
+          "summary": "Freud and his followers read the murder as the confession of a writer tormented by guilt towards his own father, and this reading became popular in the West.",
+          "counter": "The editors of the Russian Academy edition argue that this legend has no real biographical basis. They point instead to the case of Dmitri Ilyinsky, the innocent prisoner Dostoevsky knew at Omsk, whose supposed parricide gave the novel its plot."
+        },
+        {
+          "position": "A new kind of novel in English",
+          "summary": "Constance Garnett’s translation of 1912 made the book widely read in England and America, and changed an older view of it as chaotic. Virginia Woolf, Katherine Mansfield and E. M. Forster welcomed it, and later American writers from Fitzgerald to Faulkner admired it.",
+          "counter": "Not everyone was won over: Henry James, Joseph Conrad and D. H. Lawrence were among its critics, and complaints about its length and its apparent disorder never disappeared."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does Dostoevsky answer Ivan’s rebellion?",
+          "focus": "Rebellion, the Grand Inquisitor and The Russian Monk",
+          "plan": [
+            "Set out Ivan’s argument in Rebellion: the suffering of children and the returned ticket.",
+            "Analyse the Grand Inquisitor’s case about freedom, bread and authority, and Christ’s silent kiss.",
+            "Examine Book VI as an indirect answer: Markel, the duel, responsibility for all, hell as the inability to love.",
+            "Consider Alyosha’s kiss, the onion and the speech at the stone as answers in action.",
+            "Conclude on whether the novel’s answer matches the strength of the question."
+          ]
+        },
+        {
+          "question": "Who is guilty of Fyodor Pavlovitch’s death?",
+          "focus": "Guilt, responsibility and the law",
+          "plan": [
+            "Distinguish the legal verdict from the moral question of guilt.",
+            "Examine Smerdyakov’s act and his claim to be Ivan’s instrument.",
+            "Consider Ivan’s everything is lawful and his departure for Tchermashnya.",
+            "Discuss Dmitri’s wish, his night at the window, and his acceptance of punishment.",
+            "Conclude with Zossima’s teaching that each is responsible to all for all."
+          ]
+        },
+        {
+          "question": "What part do children play in The Brothers Karamazov?",
+          "focus": "Childhood, suffering and memory",
+          "plan": [
+            "Begin with the neglected Karamazov boys in Book I.",
+            "Analyse Ivan’s stories of tortured children and Dmitri’s dream of the babe.",
+            "Examine Ilusha, Captain Snegiryov and the humiliation in the square.",
+            "Discuss Kolya and the schoolboys in Book X.",
+            "Conclude with the speech at the stone and the power of a good memory."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Is Ivan right that no future harmony could be worth the suffering of a child?",
+        "Why does Christ answer the Grand Inquisitor with a kiss instead of an argument?",
+        "Does Dmitri deserve his punishment, even though he did not kill his father?",
+        "Why does the narrator call Alyosha his hero, when Dmitri and Ivan have more of the action?",
+        "Why does Dostoevsky end a novel about a murder with a boy’s funeral and a cheer?",
+        "Is Smerdyakov a person in his own right, or chiefly Ivan’s double?"
+      ],
+      "timeline": [
+        {
+          "year": 1821,
+          "label": "Fyodor Dostoevsky is born in Moscow",
+          "detail": "The second son of an army doctor.",
+          "kind": "author"
+        },
+        {
+          "year": 1849,
+          "label": "Arrest and mock execution",
+          "detail": "Arrested in April with members of the Petrashevsky circle, Dostoevsky is condemned to death on 22 December, taken to the scaffold, and reprieved at the last moment.",
+          "kind": "author"
+        },
+        {
+          "year": 1850,
+          "label": "The prison at Omsk",
+          "detail": "In four years of penal servitude Dostoevsky meets Dmitri Ilyinsky, a nobleman wrongly convicted of killing his father, whose story he tells in Notes from the House of the Dead.",
+          "kind": "context"
+        },
+        {
+          "year": 1864,
+          "label": "Russia’s new court statutes",
+          "detail": "The judicial reform brings public trials, professional advocates and juries; the novel is set soon afterwards, in the mid-1860s.",
+          "kind": "context"
+        },
+        {
+          "year": 1878,
+          "label": "The death of Dostoevsky’s son Alyosha",
+          "detail": "On 16 May. Dostoevsky could not work for a long time afterwards.",
+          "kind": "author"
+        },
+        {
+          "year": 1878,
+          "label": "A visit to Optina Pustyn",
+          "detail": "In June Dostoevsky travels with the philosopher Vladimir Solovyov to the monastery of Optina Pustyn and meets the elder Amvrosy, some of whose sayings passed to Zossima.",
+          "kind": "context"
+        },
+        {
+          "year": 1879,
+          "label": "Serialisation begins",
+          "detail": "The first books appear in the Russian Messenger in January; the novel runs in instalments until November 1880.",
+          "kind": "work"
+        },
+        {
+          "year": 1879,
+          "label": "Pro and Contra, and The Russian Monk",
+          "detail": "Dostoevsky calls Book V the culminating point of the novel in letters to his editor, Lyubimov, and tells Pobedonostsev in August that Book VI is meant as the answer to its negative side.",
+          "kind": "work"
+        },
+        {
+          "year": 1880,
+          "label": "The Pushkin speech",
+          "detail": "In June, at the unveiling of the Pushkin monument in Moscow, Dostoevsky’s speech is received with extraordinary enthusiasm.",
+          "kind": "author"
+        },
+        {
+          "year": 1880,
+          "label": "The novel is finished",
+          "detail": "On 8 November Dostoevsky tells Lyubimov that the Epilogue has been sent: three years’ work, two years in print. The book edition appears in December, in two volumes dated 1881.",
+          "kind": "work"
+        },
+        {
+          "year": 1881,
+          "label": "Dostoevsky dies",
+          "detail": "In St Petersburg, on 9 February by the Western calendar, a few months after the book edition. His preface had promised a second novel about Alyosha.",
+          "kind": "author"
+        },
+        {
+          "year": 1912,
+          "label": "Constance Garnett’s translation",
+          "detail": "Published in London by Heinemann, the first English translation, which her preface calls complete, unaltered and unabridged, unlike the French and American versions.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "Staraya Russa",
+          "lat": 57.9905,
+          "lon": 31.3549,
+          "note": "The small town where the Dostoevskys spent their summers, which gave its streets and manners to Skotoprigonyevsk."
+        },
+        {
+          "name": "Optina Pustyn",
+          "lat": 54.0508,
+          "lon": 35.8367,
+          "note": "The monastery Dostoevsky visited in 1878, a model for the monastery and its elders."
+        },
+        {
+          "name": "Moscow",
+          "lat": 55.7558,
+          "lon": 37.6173,
+          "note": "Dostoevsky’s birthplace; Ivan studies there, and Smerdyakov is trained there as a cook."
+        },
+        {
+          "name": "St Petersburg",
+          "lat": 59.9343,
+          "lon": 30.3351,
+          "note": "Where Dostoevsky wrote much of the novel and died in 1881; Fetyukovitch is brought from there for the defence."
+        },
+        {
+          "name": "Omsk",
+          "lat": 54.9885,
+          "lon": 73.3242,
+          "note": "The prison where Dostoevsky knew Dmitri Ilyinsky, wrongly convicted of parricide."
+        },
+        {
+          "name": "Seville",
+          "lat": 37.3891,
+          "lon": -5.9845,
+          "note": "The setting of Ivan’s poem, The Grand Inquisitor, in the time of the Inquisition."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/notes-from-underground/",
+          "why": "Dostoevsky’s earlier underground man argues, like Ivan, that people will choose freedom over their own advantage."
+        },
+        {
+          "href": "/books/white-nights/",
+          "why": "An early Dostoevsky story of a dreamer, from the other end of his career."
+        },
+        {
+          "href": "/books/the-death-of-ivan-ilyich/",
+          "why": "Tolstoy’s short novel of a judge facing death, another Russian inquiry into how to live."
+        },
+        {
+          "href": "/books/the-overcoat/",
+          "why": "Gogol’s story of a poor clerk, from the tradition Dostoevsky grew out of; the prosecutor quotes Gogol’s troika at the trial."
         }
       ],
       "videos": []
