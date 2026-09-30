@@ -1,12 +1,12 @@
 {
   "counts": {
-    "books": 104,
-    "quotations": 2403,
-    "characters": 961,
-    "themes": 248,
-    "techniques": 249,
-    "timelineEvents": 1204,
-    "places": 594
+    "books": 105,
+    "quotations": 2437,
+    "characters": 977,
+    "themes": 251,
+    "techniques": 254,
+    "timelineEvents": 1215,
+    "places": 599
   },
   "books": [
     {
@@ -81652,6 +81652,1747 @@
         {
           "href": "/books/edgar-allan-poe-selected-tales/",
           "why": "More of the three Poe stories' neighbours, in the Astor selection."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "slug": "songs-of-innocence-and-of-experience",
+      "title": "Songs of Innocence and of Experience",
+      "author": "William Blake",
+      "href": "/books/songs-of-innocence-and-of-experience/",
+      "studyHref": "",
+      "playHref": "/play/?book=songs-of-innocence-and-of-experience",
+      "form": "poetry collection",
+      "genre": "Illuminated lyric poems",
+      "period": "Romantic & Regency",
+      "setting": "No single place: valleys, echoing greens and nurseries in Innocence; the streets of London, a church, a walled garden and the forests of the night in Experience",
+      "written": "About 1784–1794",
+      "firstPublished": 1789,
+      "readingTime": 20,
+      "difficulty": 2,
+      "lengthNote": "Forty-five songs on fifty-four plates in a complete copy, nineteen of Innocence and twenty-six of Experience, with A Divine Image often printed as a forty-sixth; the order of the plates varies from copy to copy",
+      "openingLine": "Piping down the valleys wild,",
+      "summary": "Blake wrote, etched, printed and coloured these short songs himself. The Songs of Innocence of 1789 are sung by a Piper at a child’s request: lambs and shepherds, children at play, a little black boy, a chimney sweeper who dreams of an angel, and a God who shares every sorrow. In 1794 Blake joined them to the darker Songs of Experience under a new title, Shewing the Two Contrary States of the Human Soul. A Bard calls to a fallen Earth, a sweep in the snow blames God, Priest and King, a rose is sick, a garden of love is full of graves, a tiger burns in the forests of the night, and London’s streets echo with mind-forg’d manacles. Many poems answer one another across the two books.",
+      "referenceStyle": "poem title, with Innocence or Experience where two poems share a title",
+      "sourceText": {
+        "label": "The Poetical Works of William Blake, ed. John Sampson (Oxford: Clarendon Press, 1905), a verbatim text of the engraved originals, Internet Archive scan; with Project Gutenberg eBook 574",
+        "url": [
+          "https://archive.org/download/poeticalworksofw00blakuoft/poeticalworksofw00blakuoft_djvu.txt",
+          "https://www.gutenberg.org/cache/epub/574/pg574.txt"
+        ],
+        "note": "Sampson’s text follows Blake’s own plates, keeping his spellings (Tyger, wooly, reduc’d) and capitals, and quotations follow it; its line numbers are left out. Blake’s punctuation varies from copy to copy, and the famous opening of The Tyger is given here as the plates have it. Gutenberg eBook 574 is a modernised text used only as a check on wording."
+      },
+      "structure": [
+        {
+          "id": "piper",
+          "label": "Songs of Innocence",
+          "title": "The Piper’s songs",
+          "summary": "A Piper, asked by a child on a cloud for a song about a Lamb, pipes, sings and then writes his songs in a book for every child to hear. The first songs are pastoral and joyful: a shepherd watching his flock, children playing on an echoing green until the sun goes down, a child asking a lamb who made it, a laughing song, a spring song, and a newborn baby who calls itself Joy.",
+          "scenes": [
+            {
+              "ref": "Introduction",
+              "title": "Piping down the valleys wild",
+              "summary": "The child on the cloud, the song about a Lamb, and a pen made from a hollow reed."
+            },
+            {
+              "ref": "The Lamb",
+              "title": "Little Lamb who made thee?",
+              "summary": "A child’s catechism: the maker of the lamb calls himself a Lamb."
+            },
+            {
+              "ref": "The Ecchoing Green; Spring; Laughing Song",
+              "title": "Play",
+              "summary": "Old John under the oak, a lamb that licks a child’s neck, and a chorus of Ha, Ha, He!"
+            },
+            {
+              "ref": "Infant Joy",
+              "title": "Two days old",
+              "summary": "A baby without a name who calls itself Joy."
+            }
+          ]
+        },
+        {
+          "id": "innocence-children",
+          "label": "Songs of Innocence",
+          "title": "Children and their guardians",
+          "summary": "Some Songs of Innocence already look at children in the care of adults. A little black boy repeats his mother’s lesson that his black body is a cloud that will vanish. A small chimney sweeper, sold by his father, tells how his friend Tom Dacre dreamed of an angel who freed the sweepers from coffins of black. Charity children flow into St Paul’s like Thames waters, a nurse lets the children play until dark, and a lost boy is led home by God.",
+          "scenes": [
+            {
+              "ref": "The Little Black Boy",
+              "title": "The southern wild",
+              "summary": "A mother’s lesson under a tree, and a boy who will shade the English child from the heat."
+            },
+            {
+              "ref": "The Chimney Sweeper (Innocence)",
+              "title": "Weep! weep!",
+              "summary": "Tom Dacre’s shaved head, a dream of coffins of black, and an angel with a bright key."
+            },
+            {
+              "ref": "Holy Thursday (Innocence)",
+              "title": "The high dome of Paul’s",
+              "summary": "Thousands of children in red and blue and green, and their aged guardians."
+            },
+            {
+              "ref": "Nurse’s Song (Innocence); The Little Boy Lost and Found",
+              "title": "Watching children",
+              "summary": "Play until the light fades, and a child led through the fen by God in white."
+            }
+          ]
+        },
+        {
+          "id": "innocence-comfort",
+          "label": "Songs of Innocence",
+          "title": "Divine care",
+          "summary": "The last group of Innocence imagines a world held together by love. Mercy, Pity, Peace and Love are God, and also the human form. Angels move through the night guarding the sleeping animals, and the lion weeps tears of gold. A glow-worm lights a lost ant home, and the maker of all sits by every cradle and weeps with every weeping child.",
+          "scenes": [
+            {
+              "ref": "The Divine Image",
+              "title": "Mercy, Pity, Peace and Love",
+              "summary": "The human form divine, in heathen, Turk or Jew."
+            },
+            {
+              "ref": "Night",
+              "title": "The lion’s tears",
+              "summary": "Angels by every bed, and a lion guarding the fold."
+            },
+            {
+              "ref": "A Cradle Song; A Dream; On Another’s Sorrow",
+              "title": "Comfort",
+              "summary": "A mother’s lullaby, a lost emmet, and a God who becomes a man of woe."
+            }
+          ]
+        },
+        {
+          "id": "bard",
+          "label": "Songs of Experience",
+          "title": "The Bard and Earth",
+          "summary": "Experience opens with a prophetic Bard calling the lapsed soul and the fallen Earth to return. Earth answers that she is chained by a jealous, selfish father of men who binds free love. A Clod of Clay and a Pebble sing two opposite songs about love. Lyca, a seven-year-old lost in the desert, is carried by lions to their caves, and the Voice of the Ancient Bard calls youth to see the opening morn.",
+          "scenes": [
+            {
+              "ref": "Introduction (Experience)",
+              "title": "Hear the voice of the Bard!",
+              "summary": "The Holy Word among the ancient trees, and Earth called to arise."
+            },
+            {
+              "ref": "Earth’s Answer",
+              "title": "Prison’d on watry shore",
+              "summary": "Starry Jealousy, a heavy chain, and free Love bound."
+            },
+            {
+              "ref": "The Clod and the Pebble",
+              "title": "Two songs of love",
+              "summary": "A Heaven in Hell’s despair, and a Hell in Heaven’s despite."
+            },
+            {
+              "ref": "The Little Girl Lost and Found; The Voice of the Ancient Bard",
+              "title": "Lyca and the lions",
+              "summary": "A child asleep in the desert, a lion’s palace, and the image of truth new-born."
+            }
+          ]
+        },
+        {
+          "id": "answering",
+          "label": "Songs of Experience",
+          "title": "The answering poems",
+          "summary": "Several Songs of Experience take the title or situation of a song of Innocence and answer it. Holy Thursday asks how children fed with a cold and usurous hand can be holy. The Chimney Sweeper’s parents have gone to church while he cries in the snow. The nurse’s face turns green and pale as she watches children play. A newborn leaps into a dangerous world and sulks on its mother’s breast. The Human Abstract shows pity itself depending on poverty.",
+          "scenes": [
+            {
+              "ref": "Holy Thursday (Experience)",
+              "title": "A land of poverty",
+              "summary": "Babes reduced to misery in a rich and fruitful land."
+            },
+            {
+              "ref": "The Chimney Sweeper (Experience)",
+              "title": "Notes of woe",
+              "summary": "A child clothed in the clothes of death, and God, Priest and King."
+            },
+            {
+              "ref": "Nurse’s Song (Experience); Infant Sorrow",
+              "title": "Growing up",
+              "summary": "A nurse’s bitter memory, and a baby like a fiend hid in a cloud."
+            },
+            {
+              "ref": "The Human Abstract; A Divine Image",
+              "title": "The virtues undone",
+              "summary": "Pity that needs the poor, and Cruelty with a human heart."
+            }
+          ]
+        },
+        {
+          "id": "love",
+          "label": "Songs of Experience",
+          "title": "Love, jealousy and the garden",
+          "summary": "Many Songs of Experience show love damaged by secrecy, jealousy and prohibition. An invisible worm destroys a rose with its dark secret love. A garden of love has become a chapel with Thou shalt not written over the door and graves where the flowers were. A sunflower longs for the sun, a girl is punished for loving in the open, and a man waters his secret anger until it bears a poisoned apple.",
+          "scenes": [
+            {
+              "ref": "The Sick Rose",
+              "title": "The invisible worm",
+              "summary": "Crimson joy, and dark secret love."
+            },
+            {
+              "ref": "The Garden of Love",
+              "title": "Thou shalt not",
+              "summary": "A chapel on the green, and priests binding joys and desires."
+            },
+            {
+              "ref": "A Poison Tree",
+              "title": "My wrath did grow",
+              "summary": "Anger watered with tears and sunned with smiles."
+            },
+            {
+              "ref": "Ah! Sun-flower; My Pretty Rose Tree; The Lilly; A Little Girl Lost; To Tirzah",
+              "title": "Desire",
+              "summary": "A sweet golden clime, a thorny rose, and love called a crime."
+            }
+          ]
+        },
+        {
+          "id": "city",
+          "label": "Songs of Experience",
+          "title": "The Tyger and London",
+          "summary": "The Tyger asks what kind of maker could frame a creature of such fearful symmetry, and whether he who made the Lamb made the tiger too. London walks through chartered streets hearing mind-forg’d manacles in every voice, the sweeper’s cry blackening the church and the soldier’s sigh running in blood down palace walls. A little vagabond prefers the warm ale-house to the cold church, and a boy who questions the priest is burned.",
+          "scenes": [
+            {
+              "ref": "The Tyger",
+              "title": "Fearful symmetry",
+              "summary": "Forests of the night, a furnace, an anvil, and stars throwing down their spears."
+            },
+            {
+              "ref": "London",
+              "title": "Charter’d streets",
+              "summary": "Marks of weakness, marks of woe, and the Marriage hearse."
+            },
+            {
+              "ref": "The Little Vagabond; A Little Boy Lost",
+              "title": "Church and ale-house",
+              "summary": "A pleasant fire for the soul, and a child burned in a holy place."
+            }
+          ]
+        }
+      ],
+      "characters": [
+        {
+          "id": "piper",
+          "name": "The Piper",
+          "role": "The singer and writer of the Songs of Innocence",
+          "summary": "Piping down the valleys, this shepherd-musician is pictured on the frontispiece with a child floating above him. At the child’s request he plays a song about a Lamb, sings it, and then writes his songs in a book with a pen made from a hollow reed, so that every child may hear them. The staining of the clear water with ink is often read as the first loss of innocence.",
+          "clue": "He cuts a hollow reed for a pen and stains the water clear to write down songs a child has asked for.",
+          "firstAppearance": "Introduction (Innocence)",
+          "traits": [
+            "joyful",
+            "obedient",
+            "creative"
+          ],
+          "relationships": [
+            {
+              "to": "child-on-cloud",
+              "label": "inspired by",
+              "kind": "mentor",
+              "stages": [
+                "piper"
+              ]
+            },
+            {
+              "to": "bard",
+              "label": "answered by",
+              "kind": "doubling",
+              "stages": [
+                "bard"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "child-on-cloud",
+          "name": "The child on the cloud",
+          "role": "The Piper’s visionary listener",
+          "summary": "A laughing child who appears on a cloud and asks the Piper to pipe a song about a Lamb, weeps with joy to hear it, tells him to write it down, and vanishes. The child is both audience and muse for the Songs of Innocence.",
+          "clue": "Laughing, weeping with joy, then vanishing, this figure asks for a song about a Lamb and orders it written in a book.",
+          "firstAppearance": "Introduction (Innocence)",
+          "traits": [
+            "joyful",
+            "commanding"
+          ],
+          "relationships": [
+            {
+              "to": "piper",
+              "label": "asks for songs from",
+              "kind": "mentor",
+              "stages": [
+                "piper"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bard",
+          "name": "The Bard",
+          "role": "The prophetic voice of the Songs of Experience",
+          "summary": "Poet and prophet, he sees present, past and future and has heard the Holy Word that walked among the ancient trees in Eden. In the Introduction to Experience he calls the lapsed soul and the fallen Earth to arise before daybreak. As the Ancient Bard he invites youth to see the opening morn, where doubt and reason’s clouds have fled.",
+          "clue": "His ears have heard the Holy Word walking among the ancient trees, and he calls a lapsed soul to return before the break of day.",
+          "firstAppearance": "Introduction (Experience)",
+          "traits": [
+            "prophetic",
+            "grave",
+            "hopeful"
+          ],
+          "relationships": [
+            {
+              "to": "earth",
+              "label": "calls",
+              "kind": "love",
+              "stages": [
+                "bard"
+              ]
+            },
+            {
+              "to": "piper",
+              "label": "answers",
+              "kind": "doubling",
+              "stages": [
+                "bard"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "earth",
+          "name": "Earth",
+          "role": "The fallen, chained Earth who answers the Bard",
+          "summary": "Raising her head from darkness with her locks covered in grey despair, she answers the Bard’s call with anger. She is imprisoned on a watery shore by Starry Jealousy, a cruel, selfish father of men who makes love hide in darkness, and she asks him to break the heavy chain that binds free love.",
+          "clue": "Her locks are covered with grey despair, and she is kept on a watery shore by Starry Jealousy.",
+          "firstAppearance": "Earth’s Answer",
+          "traits": [
+            "angry",
+            "imprisoned",
+            "desiring"
+          ],
+          "relationships": [
+            {
+              "to": "bard",
+              "label": "answers",
+              "kind": "love",
+              "stages": [
+                "bard"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "black-boy",
+          "name": "The little black boy",
+          "role": "Speaker of The Little Black Boy",
+          "summary": "Born in the southern wild, he has learned from his mother that God lives in the sun and that black bodies are only a cloud that will vanish when souls have learned to bear the beams of love. He imagines shading the English boy from God’s heat until he can bear it, so that the white boy will love him at last. His hope and his wish to be loved are among the most debated lines in the book.",
+          "clue": "His mother taught him under a tree that the body is a cloud, and he hopes to shade an English child until he can bear God’s heat.",
+          "firstAppearance": "The Little Black Boy",
+          "traits": [
+            "hopeful",
+            "loving",
+            "humble"
+          ],
+          "relationships": [
+            {
+              "to": "mother",
+              "label": "taught by",
+              "kind": "family",
+              "stages": [
+                "innocence-children"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mother",
+          "name": "The little black boy’s mother",
+          "role": "The teacher in The Little Black Boy",
+          "summary": "She sits with her son under a tree before the heat of day and teaches him that God gives his light and heat away, that we are put on earth to learn to bear the beams of love, and that black bodies and sunburnt faces are a cloud, like a shady grove.",
+          "clue": "Sitting down before the heat of day, she points to the rising sun and says that God lives there.",
+          "firstAppearance": "The Little Black Boy",
+          "traits": [
+            "tender",
+            "devout"
+          ],
+          "relationships": [
+            {
+              "to": "black-boy",
+              "label": "teaches",
+              "kind": "family",
+              "stages": [
+                "innocence-children"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sweep-innocence",
+          "name": "Tom Dacre’s friend",
+          "role": "Speaker of The Chimney Sweeper in Innocence",
+          "summary": "A child sold by his father before he could say sweep, so that he could only cry weep! He comforts little Tom Dacre when his curly head is shaved, tells Tom’s dream of an angel freeing the sweepers, and ends with the lesson that if all do their duty they need not fear harm, a moral the poem leaves the reader to judge.",
+          "clue": "Sold by his father before his tongue could say sweep, he sleeps in soot and tells a friend’s dream of coffins of black.",
+          "firstAppearance": "The Chimney Sweeper (Innocence)",
+          "traits": [
+            "kind",
+            "resigned",
+            "dutiful"
+          ],
+          "relationships": [
+            {
+              "to": "tom",
+              "label": "comforts",
+              "kind": "friendship",
+              "stages": [
+                "innocence-children"
+              ]
+            },
+            {
+              "to": "sweep-experience",
+              "label": "answered by",
+              "kind": "doubling",
+              "stages": [
+                "answering"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tom",
+          "name": "Tom Dacre",
+          "role": "A little chimney sweeper",
+          "summary": "A small boy who cries when his head, curled like a lamb’s back, is shaved. That night he dreams that thousands of sweepers locked in coffins of black are freed by an angel with a bright key, to run down a green plain and wash in a river. He wakes happy and warm on a cold morning.",
+          "clue": "His head curled like a lamb’s back before it was shaved, and he dreams of an angel with a bright key.",
+          "firstAppearance": "The Chimney Sweeper (Innocence)",
+          "traits": [
+            "young",
+            "trusting"
+          ],
+          "relationships": [
+            {
+              "to": "sweep-innocence",
+              "label": "comforted by",
+              "kind": "friendship",
+              "stages": [
+                "innocence-children"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sweep-experience",
+          "name": "The sweep in the snow",
+          "role": "Speaker of The Chimney Sweeper in Experience",
+          "summary": "A little black thing among the snow crying weep! in notes of woe. His parents have gone to church to pray; because he was happy on the heath they clothed him in the clothes of death. Because he still dances and sings they think they have done him no injury, and have gone to praise God and his Priest and King, who make up a heaven of our misery.",
+          "clue": "His parents have gone up to church to pray, and he says they clothed him in the clothes of death because he was happy on the heath.",
+          "firstAppearance": "The Chimney Sweeper (Experience)",
+          "traits": [
+            "bitter",
+            "clear-sighted"
+          ],
+          "relationships": [
+            {
+              "to": "sweep-innocence",
+              "label": "answers",
+              "kind": "doubling",
+              "stages": [
+                "answering"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nurse-innocence",
+          "name": "The nurse of Innocence",
+          "role": "Speaker of Nurse’s Song in Innocence",
+          "summary": "Her heart is at rest while the children laugh on the green. When the sun goes down she calls them home, and when they beg to play while it is still light she lets them play until the light fades.",
+          "clue": "Her heart is at rest within her breast while children laugh, and she lets them play till the light fades away.",
+          "firstAppearance": "Nurse’s Song (Innocence)",
+          "traits": [
+            "gentle",
+            "indulgent"
+          ],
+          "relationships": [
+            {
+              "to": "nurse-experience",
+              "label": "answered by",
+              "kind": "doubling",
+              "stages": [
+                "answering"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nurse-experience",
+          "name": "The nurse of Experience",
+          "role": "Speaker of Nurse’s Song in Experience",
+          "summary": "Hearing whisperings in the dale, she remembers her own youth and her face turns green and pale. She calls the children home in the same words as her counterpart, and then tells them their spring and day are wasted in play, their winter and night in disguise.",
+          "clue": "The days of her youth rise fresh in her mind, and her face turns green and pale.",
+          "firstAppearance": "Nurse’s Song (Experience)",
+          "traits": [
+            "envious",
+            "bitter"
+          ],
+          "relationships": [
+            {
+              "to": "nurse-innocence",
+              "label": "answers",
+              "kind": "doubling",
+              "stages": [
+                "answering"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "infant-joy",
+          "name": "The two-day-old infant",
+          "role": "The baby of Infant Joy",
+          "summary": "Only two days old and without a name, this baby answers its mother that it is happy and its name is Joy. The poem is a dialogue of blessing.",
+          "clue": "It has no name and is but two days old, and it gives itself a name for happiness.",
+          "firstAppearance": "Infant Joy",
+          "traits": [
+            "happy",
+            "new"
+          ],
+          "relationships": [
+            {
+              "to": "infant-sorrow",
+              "label": "answered by",
+              "kind": "doubling",
+              "stages": [
+                "answering"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "infant-sorrow",
+          "name": "The struggling infant",
+          "role": "The baby of Infant Sorrow",
+          "summary": "Born while its mother groans and its father weeps, it leaps into a dangerous world like a fiend hid in a cloud, struggles against its swaddling bands, and decides to sulk upon its mother’s breast. It is Infant Joy seen from the other side.",
+          "clue": "Helpless, naked and piping loud, it strives against its swaddling bands and thinks it best to sulk.",
+          "firstAppearance": "Infant Sorrow",
+          "traits": [
+            "rebellious",
+            "bound"
+          ],
+          "relationships": [
+            {
+              "to": "infant-joy",
+              "label": "answers",
+              "kind": "doubling",
+              "stages": [
+                "answering"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "clod",
+          "name": "The Clod of Clay",
+          "role": "The first singer in The Clod and the Pebble",
+          "summary": "Trodden by cattle’s feet, the clod sings that love seeks not itself to please but gives its ease for another and builds a Heaven in Hell’s despair.",
+          "clue": "Trodden with the cattle’s feet, it sings of a love that builds a Heaven in Hell’s despair.",
+          "firstAppearance": "The Clod and the Pebble",
+          "traits": [
+            "selfless",
+            "humble"
+          ],
+          "relationships": [
+            {
+              "to": "pebble",
+              "label": "answered by",
+              "kind": "rival",
+              "stages": [
+                "bard"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pebble",
+          "name": "The Pebble",
+          "role": "The second singer in The Clod and the Pebble",
+          "summary": "Lying in the brook, it warbles that love seeks only self to please, binds another to its delight, and builds a Hell in Heaven’s despite. The poem gives the two views equal stanzas and no verdict.",
+          "clue": "It warbles in the brook that love binds another to its delight and builds a Hell in Heaven’s despite.",
+          "firstAppearance": "The Clod and the Pebble",
+          "traits": [
+            "selfish",
+            "hard"
+          ],
+          "relationships": [
+            {
+              "to": "clod",
+              "label": "answers",
+              "kind": "rival",
+              "stages": [
+                "bard"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vagabond",
+          "name": "The little vagabond",
+          "role": "Speaker of The Little Vagabond",
+          "summary": "Poor and cold, this child tells his mother that the church is cold and the ale-house warm, and that if the church gave ale and a pleasant fire the congregation would sing and pray all day, and God would rejoice like a father and make peace with the Devil and the Barrel.",
+          "clue": "He tells his mother that the ale-house is healthy and pleasant and warm, and that God would kiss the Devil if the church gave ale.",
+          "firstAppearance": "The Little Vagabond",
+          "traits": [
+            "cheeky",
+            "cold",
+            "hopeful"
+          ],
+          "relationships": [
+            {
+              "to": "sweep-experience",
+              "label": "fellow outcast of",
+              "kind": "ally",
+              "stages": [
+                "city"
+              ]
+            }
+          ]
+        }
+      ],
+      "themes": [
+        {
+          "id": "contraries",
+          "name": "Contrary states",
+          "canonicalName": "Contrary states",
+          "summary": "Blake’s subtitle calls innocence and experience two contrary states of the human soul, and the book keeps them in tension. Innocence is trusting and joyful, and also open to exploitation; experience sees through cruelty and hypocrisy, and is also soured by jealousy and fear. Neither book is the whole truth, and many poems only make full sense beside their counterparts.",
+          "development": "The Piper and the Bard; The Lamb and The Tyger; the two Chimney Sweepers, Nurse’s Songs, Holy Thursdays and Infant songs; The Divine Image and The Human Abstract."
+        },
+        {
+          "id": "childhood",
+          "name": "Childhood",
+          "canonicalName": "Childhood",
+          "summary": "Almost every poem involves a child: playing, lost, sold, shaved, fed by charity, taught by a mother, blessed or bound. In Innocence children are protected by nurses, mothers, angels and God; in Experience the same adults become the agents of misery, and the newborn leaps into a dangerous world. Blake presents the child as a figure of vision and as a victim of the society that uses children’s labour.",
+          "development": "Infant Joy and Infant Sorrow; Tom Dacre and the sweep in the snow; the charity children; the school boy’s cage; the little vagabond."
+        },
+        {
+          "id": "religion",
+          "name": "The Church and the priests",
+          "canonicalName": "Religion",
+          "summary": "Innocence imagines a God who is present in mercy, pity, peace and love and who weeps with every child. Experience attacks the Church that preaches that God while children freeze: parents pray while their son sweeps, priests in black gowns bind joys and desires, Thou shalt not is written over a chapel door, and the church blackens with the sweeper’s cry. The target is institutional religion, not the divine image in humankind.",
+          "development": "The Divine Image; On Another’s Sorrow; God and his Priest and King; The Garden of Love; every black’ning Church; The Little Vagabond; A Little Boy Lost."
+        },
+        {
+          "id": "class",
+          "name": "Poverty and labour",
+          "canonicalName": "Class and money",
+          "summary": "The songs name the poverty of Blake’s London: climbing boys sold to sweep chimneys, charity children paraded through St Paul’s, soldiers and harlots in the streets, a rich and fruitful land where babes are reduced to misery. The Human Abstract suggests that the virtues of pity and mercy depend on the poverty that calls them out.",
+          "development": "So your chimneys I sweep; Holy Thursday; Pity would be no more; the hapless Soldier’s sigh; the youthful Harlot’s curse."
+        },
+        {
+          "id": "authority",
+          "name": "Authority and the mind-forg’d manacles",
+          "canonicalName": "Authority and obedience",
+          "summary": "Parents, priests, kings, schoolmasters and a jealous father of men all keep others bound, and Blake’s images of chains, bands, cages, charters and nets recur. In London he hears mind-forg’d manacles in every voice: the most powerful constraints are the ones people make and accept in their own minds.",
+          "development": "Earth’s heavy chain; the swaddling bands; the caged bird of The School Boy; charter’d streets; mind-forg’d manacles; the snare of The Human Abstract."
+        },
+        {
+          "id": "love",
+          "name": "Love and repression",
+          "canonicalName": "Love",
+          "summary": "Experience shows love hidden, forbidden or poisoned: a worm’s dark secret love destroys a rose, a garden of love is filled with graves, anger kept secret grows into a poison tree, and a girl who loved in the open is called a crime. Blake treats the repression of desire as the source of cruelty, and the free expression of love as holy.",
+          "development": "The Clod and the Pebble; Earth’s free Love with bondage bound; The Sick Rose; The Garden of Love; A Poison Tree; A Little Girl Lost."
+        },
+        {
+          "id": "creation",
+          "name": "Creation",
+          "canonicalName": "Creation",
+          "summary": "The Lamb and The Tyger ask the same question from opposite sides: who made thee? In Innocence the answer comes in the next stanza: the gentle Lamb of God. In Experience the question is asked again and again, about a burning creature forged in a furnace, and the poem ends by asking whether the same maker made both. Blake leaves the answer open.",
+          "development": "Little Lamb who made thee?; What immortal hand or eye; Did he who made the Lamb make thee?; Dare frame thy fearful symmetry."
+        },
+        {
+          "id": "london",
+          "name": "London",
+          "canonicalName": "London",
+          "summary": "Blake’s city is present in the dome of St Paul’s, the Thames, the chimneys, the palace walls and the charter’d streets. London, the most concentrated poem in the book, compresses a whole society, church, army, marriage and the sale of sex, into sixteen lines heard on a night walk.",
+          "development": "The high dome of Paul’s; the charter’d Thames; black’ning Church; Palace walls; midnight streets."
+        }
+      ],
+      "techniques": [
+        {
+          "id": "illuminated-printing",
+          "name": "Illuminated printing",
+          "canonicalName": "Illuminated printing",
+          "definition": "Blake’s method of etching words and pictures together on copper, printing them and colouring each copy by hand.",
+          "bookDefinition": "Blake’s method of etching words and pictures together on copper, printing them and colouring each copy by hand.",
+          "inThisBook": "Every song was designed as a picture as well as a poem, with vines, figures and scenes growing round the text. The designs sometimes reinforce the words and sometimes complicate them, and because each copy was coloured separately, no two readers of Blake’s own copies saw quite the same book."
+        },
+        {
+          "id": "paired-poems",
+          "name": "Paired poems",
+          "canonicalName": "Paired poems",
+          "definition": "Poems that share a title or situation and answer each other.",
+          "bookDefinition": "Poems that share a title or situation and answer each other.",
+          "inThisBook": "Holy Thursday, The Chimney Sweeper and Nurse’s Song appear in both books, and Infant Joy, The Divine Image and The Lamb have clear counterparts in Infant Sorrow, The Human Abstract and The Tyger. Reading the pairs together shows each state limiting the other."
+        },
+        {
+          "id": "symbolic-objects",
+          "name": "Symbols",
+          "canonicalName": "Symbolic objects",
+          "definition": "An object the narrative comes back to until it stands for the argument itself.",
+          "bookDefinition": "An object or creature that carries a meaning beyond itself.",
+          "inThisBook": "Lamb, tiger, rose, worm, sunflower, chains and charters work as symbols that gather meaning across the book without being pinned to one sense. The Sick Rose can be read as love, sexuality, the soul or England, and its brevity keeps all the readings open."
+        },
+        {
+          "id": "questions",
+          "name": "Questions",
+          "canonicalName": "Questions",
+          "definition": "Questions that the poem does not answer, or answers only in part.",
+          "bookDefinition": "Questions that the poem does not answer, or answers only in part.",
+          "inThisBook": "The Lamb asks a question and answers it; The Tyger asks question after question and answers none. Holy Thursday in Experience and On Another’s Sorrow are built of questions too. The shift from answered to unanswered questions is one of the clearest differences between the two states."
+        },
+        {
+          "id": "refrain",
+          "name": "Refrain and repetition",
+          "canonicalName": "Refrain",
+          "definition": "A phrase brought back at intervals, so that its meaning shifts with what has happened since.",
+          "bookDefinition": "A phrase brought back at intervals, so that its meaning shifts with what has happened since.",
+          "inThisBook": "Blake borrows the repetitions of hymns and nursery rhymes: Little Lamb, God bless thee!; Merrily, merrily, to welcome in the year; the repeated every of London. The first stanza of The Tyger returns at the end with one word changed, could becoming dare."
+        },
+        {
+          "id": "hymn-metre",
+          "name": "Hymn and nursery metres",
+          "canonicalName": "Hymn and nursery metres",
+          "definition": "Short, strongly rhythmic lines and simple rhymes drawn from children’s verse and hymns.",
+          "bookDefinition": "Short, strongly rhythmic lines and simple rhymes drawn from children’s verse and hymns.",
+          "inThisBook": "Isaac Watts’s hymns for children and the forms of nursery rhymes echo through the songs, which makes them easy to remember and deceptively simple. In Experience the same metres carry bitterness and horror, and the gap between the tune and the content does much of the work."
+        },
+        {
+          "id": "irony",
+          "name": "Irony",
+          "canonicalName": "Irony",
+          "definition": "Saying one thing in a form that invites the opposite judgement.",
+          "bookDefinition": "Saying one thing in a form that invites the opposite judgement.",
+          "inThisBook": "Some songs of Innocence end on a moral that many readers find hard to accept: if all do their duty they need not fear harm, cherish pity, lest you drive an angel from your door. The speakers mean them; Blake invites us to see who benefits from them."
+        },
+        {
+          "id": "persona",
+          "name": "Voices and speakers",
+          "canonicalName": "Voices and speakers",
+          "definition": "Poems spoken in the voice of a character distinct from the poet.",
+          "bookDefinition": "Poems spoken in the voice of a character distinct from the poet.",
+          "inThisBook": "Most songs are spoken by someone other than Blake: a piper, a bard, a black child, sweeps, nurses, a vagabond, a clod and a pebble, Earth herself. Each voice has its own limits, and the meaning often lies in what the speaker cannot see."
+        }
+      ],
+      "quotations": [
+        {
+          "id": "happy-songs",
+          "text": "And I wrote my happy songs / Every child may joy to hear.",
+          "speaker": "The Piper",
+          "reference": "Introduction (Innocence)",
+          "stage": "piper",
+          "context": "Closing lines of the Introduction, after the Piper has made a pen from a hollow reed.",
+          "analysis": "Writing the songs down is the Piper’s last act, and it is ambiguous. The songs are for every child, but to write them he has plucked a reed and stained the clear water, and many readers see the first mark of experience in that stain. Blake himself wrote, etched and coloured every page.",
+          "themes": [
+            "contraries",
+            "childhood"
+          ],
+          "techniques": [
+            "persona",
+            "illuminated-printing"
+          ],
+          "characters": [
+            "piper",
+            "child-on-cloud"
+          ],
+          "source": "Sampson 1905, Songs of Innocence",
+          "cloze": [
+            "happy",
+            "joy"
+          ]
+        },
+        {
+          "id": "little-lamb",
+          "text": "Little Lamb who made thee? / Dost thou know who made thee?",
+          "speaker": "",
+          "reference": "The Lamb",
+          "stage": "piper",
+          "context": "A child speaks to a lamb in a meadow by a stream.",
+          "analysis": "A child asks the lamb a catechism question and then answers it: the maker is the Lamb of God, who became a little child. The question is simple and the answer is certain, which is the mark of Innocence. Its companion in Experience, The Tyger, asks the same question and gets no answer.",
+          "themes": [
+            "creation",
+            "childhood"
+          ],
+          "techniques": [
+            "questions",
+            "refrain"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, The Lamb",
+          "cloze": [
+            "Lamb",
+            "made"
+          ]
+        },
+        {
+          "id": "calls-himself",
+          "text": "He is called by thy name, / For he calls himself a Lamb.",
+          "speaker": "",
+          "reference": "The Lamb",
+          "stage": "piper",
+          "context": "In the second stanza the child answers its own question.",
+          "analysis": "Maker, lamb and child share one name, so creation is a family. The child, the creature and Christ are made equal by gentleness. The Tyger will break this circle by asking what kind of maker could frame a creature of fearful symmetry.",
+          "themes": [
+            "creation",
+            "religion"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, The Lamb",
+          "cloze": [
+            "called",
+            "Lamb"
+          ]
+        },
+        {
+          "id": "no-name",
+          "text": "I have no name: / I am but two days old.",
+          "speaker": "The two-day-old infant",
+          "reference": "Infant Joy",
+          "stage": "piper",
+          "context": "At the start of Infant Joy the newborn answers its mother.",
+          "analysis": "Before it can speak, the baby names itself Joy. The poem is a dialogue of blessing between mother and child. Infant Sorrow in Experience gives the same moment a different voice: a baby who leaps into a dangerous world and struggles against its bands.",
+          "themes": [
+            "childhood",
+            "contraries"
+          ],
+          "techniques": [
+            "paired-poems",
+            "persona"
+          ],
+          "characters": [
+            "infant-joy"
+          ],
+          "source": "Sampson 1905, Infant Joy",
+          "cloze": [
+            "name",
+            "days"
+          ]
+        },
+        {
+          "id": "soul-is-white",
+          "text": "And I am black, but O my soul is white; / White as an angel is the English child, / But I am black, as if bereav'd of light.",
+          "speaker": "The little black boy",
+          "reference": "The Little Black Boy",
+          "stage": "innocence-children",
+          "context": "Opening stanza, in which the boy describes himself.",
+          "analysis": "Already this child has absorbed a language in which white means goodness and black means loss. Blake gives him real dignity and a real hope, and he also lets the reader hear how the speaker has been taught to see himself. Whether the poem criticises that teaching or shares it is still debated.",
+          "themes": [
+            "childhood",
+            "religion"
+          ],
+          "techniques": [
+            "persona",
+            "irony"
+          ],
+          "characters": [
+            "black-boy"
+          ],
+          "source": "Sampson 1905, The Little Black Boy",
+          "cloze": [
+            "soul",
+            "light"
+          ]
+        },
+        {
+          "id": "sunburnt-face",
+          "text": "And these black bodies and this sun-burnt face / Is but a cloud, and like a shady grove.",
+          "speaker": "The little black boy’s mother",
+          "reference": "The Little Black Boy",
+          "stage": "innocence-children",
+          "context": "His mother’s teaching, which the boy repeats.",
+          "analysis": "His mother reverses the boy’s shame: the dark body is a shelter from the sun of God’s love, which will be shed when souls can bear the heat. By the end the boy imagines protecting the English child in heaven, so the poem makes the colour of the skin a matter of how much love a soul can bear.",
+          "themes": [
+            "religion",
+            "childhood"
+          ],
+          "techniques": [
+            "symbolic-objects",
+            "persona"
+          ],
+          "characters": [
+            "mother",
+            "black-boy"
+          ],
+          "source": "Sampson 1905, The Little Black Boy",
+          "cloze": [
+            "bodies",
+            "cloud"
+          ]
+        },
+        {
+          "id": "soot-i-sleep",
+          "text": "So your chimneys I sweep, & in soot I sleep.",
+          "speaker": "Tom Dacre’s friend",
+          "reference": "The Chimney Sweeper (Innocence)",
+          "stage": "innocence-children",
+          "context": "He has just told how his father sold him.",
+          "analysis": "Speaking straight to the reader, the line says your chimneys: a child addresses the householders who pay for his labour, with a nursery-rhyme internal rhyme of sweep and sleep. The cheerful rhythm makes the fact harder to bear.",
+          "themes": [
+            "class",
+            "childhood"
+          ],
+          "techniques": [
+            "hymn-metre",
+            "persona"
+          ],
+          "characters": [
+            "sweep-innocence"
+          ],
+          "source": "Sampson 1905, The Chimney Sweeper",
+          "cloze": [
+            "chimneys",
+            "soot"
+          ]
+        },
+        {
+          "id": "fear-harm",
+          "text": "So if all do their duty they need not fear harm.",
+          "speaker": "Tom Dacre’s friend",
+          "reference": "The Chimney Sweeper (Innocence)",
+          "stage": "innocence-children",
+          "context": "Last line, as the boys go to work in the cold dark.",
+          "analysis": "Here is the moral the boy has been taught, and he means it. The reader knows that the adults have not done their duty and that sweeps came to terrible harm. The line shows innocence being used, and Blake’s Experience sweeper answers it directly.",
+          "themes": [
+            "class",
+            "authority"
+          ],
+          "techniques": [
+            "irony",
+            "paired-poems"
+          ],
+          "characters": [
+            "sweep-innocence",
+            "tom"
+          ],
+          "source": "Sampson 1905, The Chimney Sweeper",
+          "cloze": [
+            "duty",
+            "harm"
+          ]
+        },
+        {
+          "id": "come-come",
+          "text": "Come, come, leave off play, and let us away / Till the morning appears in the skies.",
+          "speaker": "The nurse of Innocence",
+          "reference": "Nurse’s Song (Innocence)",
+          "stage": "innocence-children",
+          "context": "Sunset: the nurse calls the children home.",
+          "analysis": "Calling the children in, the nurse is persuaded to let them play until the light fades. Authority here is gentle and gives way. Her counterpart in Experience speaks some of the same words with a face turned green and pale.",
+          "themes": [
+            "childhood",
+            "contraries"
+          ],
+          "techniques": [
+            "paired-poems",
+            "persona"
+          ],
+          "characters": [
+            "nurse-innocence"
+          ],
+          "source": "Sampson 1905, Nurse’s Song",
+          "cloze": [
+            "play",
+            "morning"
+          ]
+        },
+        {
+          "id": "drive-an-angel",
+          "text": "Then cherish pity, lest you drive an angel from your door.",
+          "speaker": "",
+          "reference": "Holy Thursday (Innocence)",
+          "stage": "innocence-children",
+          "context": "After the charity children have sung in St Paul’s, the poem ends with this line.",
+          "analysis": "Hebrews tells Christians to be kind to strangers, since some have entertained angels unawares, and the moral recalls it. It praises the charity children as angels, and it also warns the comfortable to be kind. The Experience Holy Thursday asks what kind of pity leaves children in misery.",
+          "themes": [
+            "religion",
+            "class"
+          ],
+          "techniques": [
+            "irony",
+            "paired-poems"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, Holy Thursday",
+          "cloze": [
+            "pity",
+            "angel"
+          ]
+        },
+        {
+          "id": "divine-image",
+          "text": "For Mercy has a human heart, / Pity a human face, / And Love, the human form divine, / And Peace, the human dress.",
+          "speaker": "",
+          "reference": "The Divine Image",
+          "stage": "innocence-comfort",
+          "context": "Third stanza of The Divine Image.",
+          "analysis": "In four lines Blake sets out his theology: the virtues men pray to are God, and they have a human shape. The next stanzas extend the divine image to heathen, Turk and Jew. A Divine Image, etched later and rarely printed, answers it line for line with Cruelty, Jealousy, Terror and Secrecy.",
+          "themes": [
+            "religion",
+            "contraries"
+          ],
+          "techniques": [
+            "paired-poems",
+            "refrain"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, The Divine Image",
+          "cloze": [
+            "Mercy",
+            "divine"
+          ]
+        },
+        {
+          "id": "ruddy-eyes",
+          "text": "And there the lion's ruddy eyes / Shall flow with tears of gold",
+          "speaker": "",
+          "reference": "Night",
+          "stage": "innocence-comfort",
+          "context": "In the world beyond this one, the lion guards the fold.",
+          "analysis": "Even the predator weeps and guards the lamb, recalling Isaiah’s prophecy of the wolf dwelling with the lamb. Innocence can imagine violence healed as well as denied. The Tyger’s burning eyes in Experience make a sharp contrast with these golden tears.",
+          "themes": [
+            "creation",
+            "religion"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, Night",
+          "cloze": [
+            "ruddy",
+            "gold"
+          ]
+        },
+        {
+          "id": "anothers-woe",
+          "text": "Can I see another's woe, / And not be in sorrow too?",
+          "speaker": "",
+          "reference": "On Another’s Sorrow",
+          "stage": "innocence-comfort",
+          "context": "Opening of On Another’s Sorrow, the last song of Innocence.",
+          "analysis": "Questions that answer themselves make up the poem: no, never can it be. Human sympathy is the model for God’s, who sits by every cradle weeping. It is Innocence’s strongest statement, and Experience’s poems of indifference are its counterweight.",
+          "themes": [
+            "religion",
+            "contraries"
+          ],
+          "techniques": [
+            "questions",
+            "refrain"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, On Another’s Sorrow",
+          "cloze": [
+            "woe",
+            "sorrow"
+          ]
+        },
+        {
+          "id": "bard-sees",
+          "text": "Who Present, Past, & Future, sees; / Whose ears have heard / The Holy Word / That walk'd among the ancient trees,",
+          "speaker": "",
+          "reference": "Introduction (Experience)",
+          "stage": "bard",
+          "context": "Readers are told to hear the voice of the Bard, who is then described.",
+          "analysis": "Experience begins with a prophet, where Innocence began with a piper. The Bard has heard the voice of God walking in Eden, and he calls the fallen world to return. The shift from song to prophecy sets the tone for the second book.",
+          "themes": [
+            "contraries",
+            "religion"
+          ],
+          "techniques": [
+            "persona",
+            "paired-poems"
+          ],
+          "characters": [
+            "bard"
+          ],
+          "source": "Sampson 1905, Introduction (Experience)",
+          "cloze": [
+            "Future",
+            "ancient"
+          ]
+        },
+        {
+          "id": "selfish-father",
+          "text": "Selfish father of men! / Cruel, jealous, selfish fear!",
+          "speaker": "Earth",
+          "reference": "Earth’s Answer",
+          "stage": "bard",
+          "context": "Earth names the power that imprisons her.",
+          "analysis": "Earth answers the Bard by blaming the very god he seems to speak for, a jealous father who keeps love in darkness. Blake gives her the book’s most direct indictment of a religion founded on fear.",
+          "themes": [
+            "authority",
+            "love"
+          ],
+          "techniques": [
+            "persona"
+          ],
+          "characters": [
+            "earth",
+            "bard"
+          ],
+          "source": "Sampson 1905, Earth’s Answer",
+          "cloze": [
+            "Selfish",
+            "jealous"
+          ]
+        },
+        {
+          "id": "heavy-chain",
+          "text": "Break this heavy chain / That does freeze my bones around.",
+          "speaker": "Earth",
+          "reference": "Earth’s Answer",
+          "stage": "bard",
+          "context": "Earth’s last stanza.",
+          "analysis": "Earth’s chain stands for everything that binds free love, and its cold makes the bondage physical. Chains, bands and manacles recur through Experience, and this is one of the image’s first appearances.",
+          "themes": [
+            "authority",
+            "love"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [
+            "earth"
+          ],
+          "source": "Sampson 1905, Earth’s Answer",
+          "cloze": [
+            "chain",
+            "bones"
+          ]
+        },
+        {
+          "id": "clod",
+          "text": "Nor for itself hath any care, / But for another gives its ease, / And builds a Heaven in Hell's despair.",
+          "speaker": "The Clod of Clay",
+          "reference": "The Clod and the Pebble",
+          "stage": "bard",
+          "context": "Trodden by cattle, the Clod begins: Love seeketh not itself to please.",
+          "analysis": "Self-sacrificing love is beautiful in the Clod’s song, and it belongs to something trodden underfoot. The Pebble’s answer uses the same rhymes for the opposite view, and the poem gives neither the last word, so the reader must hold both kinds of love in mind.",
+          "themes": [
+            "love",
+            "contraries"
+          ],
+          "techniques": [
+            "persona",
+            "paired-poems"
+          ],
+          "characters": [
+            "clod",
+            "pebble"
+          ],
+          "source": "Sampson 1905, The Clod and the Pebble",
+          "cloze": [
+            "Heaven",
+            "despair"
+          ]
+        },
+        {
+          "id": "pebble",
+          "text": "Love seeketh only Self to please, / To bind another to Its delight, / Joys in another's loss of ease, / And builds a Hell in Heaven's despite.",
+          "speaker": "The Pebble",
+          "reference": "The Clod and the Pebble",
+          "stage": "bard",
+          "context": "From the brook, the Pebble sings its answer.",
+          "analysis": "Every term of the Clod’s song is reversed by the Pebble: self for another, bind for give, Hell for Heaven. Its love is possessive, and it is honest about it. Blake sets two truths about love side by side in identical forms.",
+          "themes": [
+            "love",
+            "contraries"
+          ],
+          "techniques": [
+            "paired-poems",
+            "refrain"
+          ],
+          "characters": [
+            "pebble",
+            "clod"
+          ],
+          "source": "Sampson 1905, The Clod and the Pebble",
+          "cloze": [
+            "bind",
+            "Hell"
+          ]
+        },
+        {
+          "id": "youth-of-delight",
+          "text": "Youth of delight, come hither, / And see the opening morn, / Image of truth new-born.",
+          "speaker": "The Bard",
+          "reference": "The Voice of the Ancient Bard",
+          "stage": "bard",
+          "context": "A song Blake moved between the two books opens with these lines.",
+          "analysis": "Doubt and the clouds of reason have fled in the dawn the Ancient Bard promises. Blake placed the poem at times in Innocence and at times in Experience, which suggests that its hope belongs to both states.",
+          "themes": [
+            "contraries"
+          ],
+          "techniques": [
+            "persona"
+          ],
+          "characters": [
+            "bard"
+          ],
+          "source": "Sampson 1905, The Voice of the Ancient Bard",
+          "cloze": [
+            "delight",
+            "truth"
+          ]
+        },
+        {
+          "id": "holy-thursday",
+          "text": "In a rich and fruitful land, / Babes reduc'd to misery, / Fed with cold and usurous hand?",
+          "speaker": "",
+          "reference": "Holy Thursday (Experience)",
+          "stage": "answering",
+          "context": "Is this a holy thing to see, the poem begins.",
+          "analysis": "Experience answers the charity-children song with questions about the economics behind it. The same children are seen as the products of a wealthy country that starves them, and charity itself is called usurous, lending at interest.",
+          "themes": [
+            "class",
+            "religion"
+          ],
+          "techniques": [
+            "questions",
+            "paired-poems"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, Holy Thursday",
+          "cloze": [
+            "fruitful",
+            "misery"
+          ]
+        },
+        {
+          "id": "priest-and-king",
+          "text": "And are gone to praise God & his Priest & King, / Who make up a heaven of our misery.",
+          "speaker": "The sweep in the snow",
+          "reference": "The Chimney Sweeper (Experience)",
+          "stage": "answering",
+          "context": "Asked where his parents are, the sweep explains.",
+          "analysis": "Church and state are named together as beneficiaries of the child’s suffering. The Innocence sweep hoped for a heaven after death; this one sees that others build their heaven out of his misery now. It is one of the angriest lines in the book.",
+          "themes": [
+            "religion",
+            "class",
+            "authority"
+          ],
+          "techniques": [
+            "paired-poems",
+            "persona"
+          ],
+          "characters": [
+            "sweep-experience"
+          ],
+          "source": "Sampson 1905, The Chimney Sweeper",
+          "cloze": [
+            "Priest",
+            "misery"
+          ]
+        },
+        {
+          "id": "wasted-in-play",
+          "text": "Your spring & your day are wasted in play, / And your winter and night in disguise.",
+          "speaker": "The nurse of Experience",
+          "reference": "Nurse’s Song (Experience)",
+          "stage": "answering",
+          "context": "Calling the children home in the Innocence nurse’s words, she then adds this.",
+          "analysis": "Play looks like waste to this nurse, and adulthood like disguise. Her bitterness comes from her own memories, and the poem shows how experience can poison the way adults look at children.",
+          "themes": [
+            "childhood",
+            "contraries"
+          ],
+          "techniques": [
+            "paired-poems",
+            "persona"
+          ],
+          "characters": [
+            "nurse-experience"
+          ],
+          "source": "Sampson 1905, Nurse’s Song",
+          "cloze": [
+            "wasted",
+            "disguise"
+          ]
+        },
+        {
+          "id": "dangerous-world",
+          "text": "Into the dangerous world I leapt; / Helpless, naked, piping loud, / Like a fiend hid in a cloud.",
+          "speaker": "The struggling infant",
+          "reference": "Infant Sorrow",
+          "stage": "answering",
+          "context": "A newborn describes its birth.",
+          "analysis": "Birth is a fall into danger, and the baby is already a small fiend, rebellious and bound. Piping loud recalls the Piper of Innocence, now as a baby’s cry. The poem is the dark counterpart of Infant Joy.",
+          "themes": [
+            "childhood",
+            "authority"
+          ],
+          "techniques": [
+            "paired-poems",
+            "persona"
+          ],
+          "characters": [
+            "infant-sorrow"
+          ],
+          "source": "Sampson 1905, Infant Sorrow",
+          "cloze": [
+            "dangerous",
+            "fiend"
+          ]
+        },
+        {
+          "id": "pity-poor",
+          "text": "Pity would be no more / If we did not make somebody Poor;",
+          "speaker": "",
+          "reference": "The Human Abstract",
+          "stage": "answering",
+          "context": "First lines of The Human Abstract, which answers The Divine Image.",
+          "analysis": "Innocence’s virtues are shown to depend on injustice: pity needs the poor, mercy needs the unhappy. Blake does not dismiss the virtues; he asks what social arrangements they rest on, which makes this one of his most radical couplets.",
+          "themes": [
+            "class",
+            "contraries"
+          ],
+          "techniques": [
+            "paired-poems",
+            "irony"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, The Human Abstract",
+          "cloze": [
+            "Pity",
+            "Poor"
+          ]
+        },
+        {
+          "id": "cruelty",
+          "text": "And Jealousy a Human Face; / Terror the Human Form Divine, / And Secrecy the Human Dress.",
+          "speaker": "",
+          "reference": "A Divine Image",
+          "stage": "answering",
+          "context": "Cruelty has a Human Heart, the poem begins.",
+          "analysis": "Blake etched this answer to The Divine Image and then left it out of every copy of the Songs issued in his lifetime. Printed here as in most editions, it matches each human virtue with a vice that has the same human features.",
+          "themes": [
+            "contraries",
+            "authority"
+          ],
+          "techniques": [
+            "paired-poems"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, A Divine Image",
+          "cloze": [
+            "Jealousy",
+            "Secrecy"
+          ]
+        },
+        {
+          "id": "sick-rose",
+          "text": "O Rose, thou art sick! / The invisible worm, / That flies in the night, / In the howling storm,",
+          "speaker": "",
+          "reference": "The Sick Rose",
+          "stage": "love",
+          "context": "First stanza of the eight-line poem.",
+          "analysis": "Sickness comes before any explanation, and the destroyer is invisible. In the second stanza the worm’s dark secret love destroys the rose’s crimson joy. The poem’s brevity lets it stand for sexual shame, disease, jealousy or corrupted love, and Blake does not choose among them.",
+          "themes": [
+            "love"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, The Sick Rose",
+          "cloze": [
+            "Rose",
+            "worm"
+          ]
+        },
+        {
+          "id": "golden-clime",
+          "text": "Seeking after that sweet golden clime, / Where the traveller's journey is done;",
+          "speaker": "",
+          "reference": "Ah! Sun-flower",
+          "stage": "love",
+          "context": "Weary of time, the sunflower counts the steps of the sun.",
+          "analysis": "Longing for a heaven where desire ends, the sunflower is joined by the youth and virgin who denied their desires, rising from their graves to aspire there too. Blake leaves open whether that heaven rewards denial or simply defers life.",
+          "themes": [
+            "love",
+            "religion"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, Ah! Sun-flower",
+          "cloze": [
+            "golden",
+            "journey"
+          ]
+        },
+        {
+          "id": "black-gowns",
+          "text": "And Priests in black gowns were walking their rounds, / And binding with briars my joys & desires.",
+          "speaker": "",
+          "reference": "The Garden of Love",
+          "stage": "love",
+          "context": "Returning to the green where he used to play, the speaker finds a chapel and graves.",
+          "analysis": "Long lines slow the poem into a lament, and the internal rhymes of gowns and rounds, briars and desires, bind the final line as the priests bind joy. Religion here is prohibition, with Thou shalt not written over the chapel door.",
+          "themes": [
+            "religion",
+            "love",
+            "authority"
+          ],
+          "techniques": [
+            "hymn-metre",
+            "symbolic-objects"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, The Garden of Love",
+          "cloze": [
+            "Priests",
+            "desires"
+          ]
+        },
+        {
+          "id": "poison-tree",
+          "text": "I was angry with my friend: / I told my wrath, my wrath did end. / I was angry with my foe: / I told it not, my wrath did grow.",
+          "speaker": "",
+          "reference": "A Poison Tree",
+          "stage": "love",
+          "context": "A Poison Tree begins with this quatrain.",
+          "analysis": "Two couplets set out a psychology in nursery-rhyme form. Anger spoken ends; anger hidden grows, watered with fears and sunned with smiles, until it bears an apple that kills the foe. The echo of Eden makes secret resentment a kind of original sin.",
+          "themes": [
+            "love",
+            "authority"
+          ],
+          "techniques": [
+            "hymn-metre",
+            "refrain"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, A Poison Tree",
+          "cloze": [
+            "wrath",
+            "grow"
+          ]
+        },
+        {
+          "id": "tyger",
+          "text": "Tyger Tyger, burning bright, / In the forests of the night; / What immortal hand or eye, / Could frame thy fearful symmetry?",
+          "speaker": "",
+          "reference": "The Tyger",
+          "stage": "city",
+          "context": "Blake drafted The Tyger in his Notebook; this is its first stanza.",
+          "analysis": "Burning in the dark, the tiger prompts a question about its maker. The drumming trochaic metre and the forge imagery of the next stanzas make creation a violent labour. In the final stanza, could becomes dare, and the question turns from ability to audacity.",
+          "themes": [
+            "creation"
+          ],
+          "techniques": [
+            "questions",
+            "refrain",
+            "symbolic-objects"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, The Tyger",
+          "cloze": [
+            "burning",
+            "symmetry"
+          ]
+        },
+        {
+          "id": "made-the-lamb",
+          "text": "Did he smile his work to see? / Did he who made the Lamb make thee?",
+          "speaker": "",
+          "reference": "The Tyger",
+          "stage": "city",
+          "context": "Fifth stanza, after the stars throw down their spears.",
+          "analysis": "At this point The Tyger addresses The Lamb directly. If one maker made the two creatures, gentleness and ferocity have the same source, and the poem cannot decide whether that is terrible or wonderful. The question is the book’s central contrary in two lines.",
+          "themes": [
+            "creation",
+            "contraries"
+          ],
+          "techniques": [
+            "questions",
+            "paired-poems"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, The Tyger",
+          "cloze": [
+            "smile",
+            "Lamb"
+          ]
+        },
+        {
+          "id": "manacles",
+          "text": "In every voice, in every ban, / The mind-forg'd manacles I hear.",
+          "speaker": "",
+          "reference": "London",
+          "stage": "city",
+          "context": "Second stanza of London, after every cry of every man and every infant.",
+          "analysis": "Repeated, the word every makes the oppression universal, and the ban may be a curse, a proclamation or a banns of marriage. The manacles are forged in the mind: people have made and accepted their own chains. It is Blake’s most quoted image of how power works.",
+          "themes": [
+            "authority",
+            "london"
+          ],
+          "techniques": [
+            "refrain",
+            "symbolic-objects"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, London",
+          "cloze": [
+            "voice",
+            "manacles"
+          ]
+        },
+        {
+          "id": "marriage-hearse",
+          "text": "How the youthful Harlot's curse / Blasts the new born Infant's tear, / And blights with plagues the Marriage hearse.",
+          "speaker": "",
+          "reference": "London",
+          "stage": "city",
+          "context": "Most of all, through midnight streets, the speaker hears the harlot’s curse.",
+          "analysis": "London ends with its fiercest compression. Prostitution and disease pass from the streets into marriage and infancy, and Marriage hearse fuses a wedding with a funeral. London’s moral economy destroys life at its beginning.",
+          "themes": [
+            "london",
+            "love",
+            "class"
+          ],
+          "techniques": [
+            "symbolic-objects"
+          ],
+          "characters": [],
+          "source": "Sampson 1905, London",
+          "cloze": [
+            "Harlot's",
+            "hearse"
+          ]
+        },
+        {
+          "id": "ale-house",
+          "text": "But the Ale-house is healthy & pleasant & warm; / Besides I can tell where I am used well, / Such usage in heaven will never do well.",
+          "speaker": "The little vagabond",
+          "reference": "The Little Vagabond",
+          "stage": "city",
+          "context": "Dear Mother, dear Mother, the Church is cold, the poem begins.",
+          "analysis": "Comic as he is, the vagabond carries a serious charge: a church that offers no warmth loses its people to the ale-house. His dream of a God rejoicing like a father, reconciled even with the Devil, is closer to Innocence than the Church’s doctrine is.",
+          "themes": [
+            "religion",
+            "class"
+          ],
+          "techniques": [
+            "persona",
+            "irony"
+          ],
+          "characters": [
+            "vagabond"
+          ],
+          "source": "Sampson 1905, The Little Vagabond",
+          "cloze": [
+            "Ale-house",
+            "heaven"
+          ]
+        }
+      ],
+      "atAGlance": [
+        {
+          "label": "First published",
+          "value": "1789",
+          "note": "Songs of Innocence, printed by Blake from copper plates he etched himself; he added a combined title-page in 1794."
+        },
+        {
+          "label": "Illuminated printing",
+          "value": "Relief etching",
+          "note": "Words and pictures were drawn together on small copper plates, etched so that they stood in relief, printed, and coloured by hand, with help from Catherine Blake."
+        },
+        {
+          "label": "The subtitle",
+          "value": "Two Contrary States",
+          "note": "The combined title-page of 1794 reads Shewing the Two Contrary States of the Human Soul."
+        },
+        {
+          "label": "No two alike",
+          "value": "Copies vary",
+          "note": "There was never an edition in the ordinary sense; Blake printed copies as they were wanted until his death in 1827, and colouring and order differ from copy to copy."
+        }
+      ],
+      "criticalViews": [
+        {
+          "position": "Two contrary states",
+          "summary": "Following Blake’s subtitle, many readers treat innocence and experience as states of the soul, each partial. Innocence is joy and trust, and also vulnerability to exploitation; experience is disillusion, and also jealousy and fear. The pairs of poems are meant to correct each other, and the aim is a higher innocence that has passed through experience.",
+          "counter": "Some readers resist the idea that the Innocence songs are merely naive or ironic. Their joy is genuine, and The Lamb, The Divine Image and On Another’s Sorrow express a faith Blake held all his life."
+        },
+        {
+          "position": "Social protest",
+          "summary": "Read in the context of the 1790s, the Songs are radical protest: against child labour, the charity system, the Church, the monarchy and the war, from an engraver in revolutionary London. The Chimney Sweeper, Holy Thursday and London name specific abuses of Blake’s city.",
+          "counter": "Blake’s targets are also mental and spiritual, the mind-forg’d manacles, and his remedy is visionary, not political reform. Reading the poems only as protest can flatten their religious imagination and their ambiguities."
+        },
+        {
+          "position": "Word and image",
+          "summary": "Many critics insist that the Songs cannot be understood apart from Blake’s designs, which frame, extend and sometimes contradict the words. The tiger in Blake’s own plate, for example, has struck many readers as mild, even comical, which complicates the poem’s terror.",
+          "counter": "Most readers, then and now, meet the poems as printed text, and the designs differ from copy to copy. The poems stand on their own as some of the most memorable lyrics in English."
+        }
+      ],
+      "essayQuestions": [
+        {
+          "question": "How does Blake use paired poems to show the two contrary states of the human soul?",
+          "focus": "Innocence, experience and their answers",
+          "plan": [
+            "Begin with the subtitle and the two Introductions: the Piper and the Bard.",
+            "Compare the two Chimney Sweepers, with attention to their morals and their speakers.",
+            "Compare the two Holy Thursdays and the two Nurse’s Songs.",
+            "Analyse The Lamb and The Tyger as questions about creation.",
+            "Conclude on whether one state is truer than the other."
+          ]
+        },
+        {
+          "question": "How does Blake present childhood in the Songs?",
+          "focus": "Children, guardians and society",
+          "plan": [
+            "Look at children as visionary figures: the child on the cloud and Infant Joy.",
+            "Examine children used by adults: the sweeps, the charity children.",
+            "Consider teachers and guardians: the black boy’s mother, the nurses, the parents in church.",
+            "Discuss Infant Sorrow and The School Boy: birth and education as bondage.",
+            "Evaluate what the book says about how adults see children."
+          ]
+        },
+        {
+          "question": "How does Blake criticise authority in Songs of Experience?",
+          "focus": "Church, state and the mind-forg’d manacles",
+          "plan": [
+            "Start with Earth’s Answer and the selfish father of men.",
+            "Analyse the Church in The Garden of Love, The Chimney Sweeper and The Little Vagabond.",
+            "Discuss London as a portrait of a whole society.",
+            "Consider The Human Abstract and A Poison Tree: authority inside the mind.",
+            "Assess whether Blake offers any alternative."
+          ]
+        }
+      ],
+      "discussionQuestions": [
+        "Why might Blake have made the Songs of Innocence so simple in form?",
+        "Is the moral at the end of the Innocence Chimney Sweeper sincere or ironic?",
+        "Which of the Songs of Experience is angriest, and why?",
+        "Why does The Tyger ask questions and never answer them?",
+        "What difference does it make to read the poems with Blake’s pictures?",
+        "Why might Blake have moved some poems between the two books?"
+      ],
+      "timeline": [
+        {
+          "year": 1757,
+          "label": "William Blake is born",
+          "detail": "On 28 November, at 28 Broad Street, Golden Square, London, the son of a hosier.",
+          "kind": "author"
+        },
+        {
+          "year": 1772,
+          "label": "Apprenticed to an engraver",
+          "detail": "At fourteen Blake is apprenticed to the engraver James Basire, and spends much of his time drawing tombs in Westminster Abbey.",
+          "kind": "author"
+        },
+        {
+          "year": 1787,
+          "label": "Robert Blake dies",
+          "detail": "In February Blake’s younger brother and pupil dies; Blake inherits his notebook, and later says Robert’s spirit revealed to him the method of relief etching.",
+          "kind": "author"
+        },
+        {
+          "year": 1789,
+          "label": "Songs of Innocence",
+          "detail": "The first book produced by what Blake called illuminated printing, etched, printed and coloured by hand.",
+          "kind": "work"
+        },
+        {
+          "year": 1793,
+          "label": "Songs of Experience and the prospectus",
+          "detail": "Blake completes the etching of Songs of Experience and advertises both books, at five shillings each, from 13 Hercules Buildings, Lambeth.",
+          "kind": "work"
+        },
+        {
+          "year": 1794,
+          "label": "The combined Songs",
+          "detail": "A general title-page joins the two books: Songs of Innocence and of Experience, Shewing the Two Contrary States of the Human Soul.",
+          "kind": "work"
+        },
+        {
+          "year": 1818,
+          "label": "Blake’s own order",
+          "detail": "Around this time Blake writes out the order in which the Songs ought to be paged and placed; copies still vary.",
+          "kind": "work"
+        },
+        {
+          "year": 1824,
+          "label": "Charles Lamb hears The Tyger",
+          "detail": "Lamb writes that he has heard of Blake’s poems but never seen them, and calls the tiger poem glorious.",
+          "kind": "reception"
+        },
+        {
+          "year": 1827,
+          "label": "Blake dies",
+          "detail": "On 12 August, at Fountain Court off the Strand; he is buried in Bunhill Fields.",
+          "kind": "author"
+        },
+        {
+          "year": 1839,
+          "label": "The first printed edition",
+          "detail": "Twelve years after Blake’s death, J. J. Garth Wilkinson prints the Songs in ordinary type for the first time, leaving out The Little Vagabond.",
+          "kind": "reception"
+        },
+        {
+          "year": 1863,
+          "label": "Gilchrist’s Life of Blake",
+          "detail": "Alexander Gilchrist’s biography, finished after his death, revives interest in Blake and reprints plates of the Songs.",
+          "kind": "reception"
+        }
+      ],
+      "places": [
+        {
+          "name": "28 Broad Street, Soho",
+          "lat": 51.5133,
+          "lon": -0.1369,
+          "note": "Where Blake was born in 1757, the son of a hosier."
+        },
+        {
+          "name": "13 Hercules Buildings, Lambeth",
+          "lat": 51.496,
+          "lon": -0.1135,
+          "note": "The address on Blake’s prospectus of 1793, where the Songs of Experience were finished."
+        },
+        {
+          "name": "St Paul’s Cathedral",
+          "lat": 51.5138,
+          "lon": -0.0984,
+          "note": "The high dome of Paul’s, into which the charity children flow like Thames waters in Holy Thursday."
+        },
+        {
+          "name": "Fountain Court, Strand",
+          "lat": 51.5104,
+          "lon": -0.1195,
+          "note": "Where Blake lived from 1821 and died in 1827."
+        },
+        {
+          "name": "Bunhill Fields",
+          "lat": 51.5236,
+          "lon": -0.0885,
+          "note": "The Dissenters’ burial ground where Blake was buried."
+        }
+      ],
+      "related": [
+        {
+          "href": "/books/lyrical-ballads/",
+          "why": "Wordsworth and Coleridge’s collection of 1798, which also gave poetry to children, the poor and simple forms."
+        },
+        {
+          "href": "/books/paradise-lost/",
+          "why": "Milton’s Eden and fall, which Blake read all his life and argued with in his own prophetic books."
+        },
+        {
+          "href": "/books/selected-poems-of-samuel-taylor-coleridge/",
+          "why": "Coleridge’s visionary poems of the 1790s, written in the same revolutionary decade."
+        },
+        {
+          "href": "/books/michael-robartes-and-the-dancer/",
+          "why": "Poems by W. B. Yeats, who co-edited Blake’s works in 1893 and learned from his symbolism."
         }
       ],
       "videos": []
