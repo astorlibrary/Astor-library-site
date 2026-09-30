@@ -18,7 +18,7 @@
   "lengthNote": "Around 3,300 lines in a conflated text; the quarto and the Folio each contain several hundred lines the other lacks",
   "openingLine": "I thought the king had more affected the Duke of Albany than Cornwall.",
   "summary": "An old king asks his three daughters to say how much they love him, and disinherits the one who will not perform. Within two acts he has no soldiers, no roof and no title, and the play spends the next three watching what is left of a man when the offices are taken away. A second family repeats the mistake with sons, and by the end both fathers have learned to see and neither survives the knowledge.",
-  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
     "label": "Globe/Moby text of King Lear",
     "note": "The Globe numbering follows a conflated text. The 1608 quarto and the 1623 Folio differ in hundreds of readings, and the Folio omits a whole scene that many editions print as 4.3."
@@ -26,8 +26,8 @@
   "atAGlance": [
     {
       "label": "Written",
-      "value": "c. 1605-06",
-      "note": "After Harsnett's Declaration of 1603, which supplied Edgar's fiends, and before the recorded court performance of 1606."
+      "value": "c. 1605–06",
+      "note": "After Harsnett’s Declaration of 1603, which supplied Edgar’s fiends, and before the recorded court performance of 1606."
     },
     {
       "label": "First printed",
@@ -42,7 +42,7 @@
     {
       "label": "Shape",
       "value": "Five acts, twenty-six scenes",
-      "note": "Two full plots — Lear's daughters and Gloucester's sons — running in parallel and colliding on the heath."
+      "note": "Two full plots — Lear’s daughters and Gloucester’s sons — running in parallel and colliding on the heath."
     }
   ],
   "structure": [
@@ -75,7 +75,7 @@
         {
           "ref": "1.5",
           "title": "Leaving for Regan",
-          "summary": "The Fool works on Lear's mistake; Lear names the fear that will occupy the rest of the play."
+          "summary": "The Fool works on Lear’s mistake; Lear names the fear that will occupy the rest of the play."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "id": "act-2",
       "label": "Act II",
       "title": "Kent in the stocks, and Lear’s knights taken away",
-      "summary": "Edmund stages an attack on himself and inherits his brother's place. Kent is put in the stocks — an insult to the king through his servant — and Lear arrives to find the two sisters auctioning his household downwards from a hundred knights to none. He walks out into the weather sooner than accept the last offer.",
+      "summary": "Edmund stages an attack on himself and inherits his brother’s place. Kent is put in the stocks — an insult to the king through his servant — and Lear arrives to find the two sisters auctioning his household downwards from a hundred knights to none. He walks out into the weather sooner than accept the last offer.",
       "scenes": [
         {
           "ref": "2.1",
@@ -93,7 +93,7 @@
         {
           "ref": "2.2",
           "title": "Kent in the stocks",
-          "summary": "A servant of the king is punished by a duke, and Gloucester's protest is overruled."
+          "summary": "A servant of the king is punished by a duke, and Gloucester’s protest is overruled."
         },
         {
           "ref": "2.3",
@@ -111,7 +111,7 @@
       "id": "act-3",
       "label": "Act III",
       "title": "The storm on the heath, and Gloucester’s blinding",
-      "summary": "Lear shouts at the elements, then does something he has never done before: he thinks about people who have no shelter on any night of the year. The scenes alternate between the heath and Gloucester's castle, so the king's disintegration is cut against the machinery of a coup, and the act ends with a duke pulling out an old man's eyes in his own house.",
+      "summary": "Lear shouts at the elements, then does something he has never done before: he thinks about people who have no shelter on any night of the year. The scenes alternate between the heath and Gloucester’s castle, so the king’s disintegration is cut against the machinery of a coup, and the act ends with a duke pulling out an old man’s eyes in his own house.",
       "scenes": [
         {
           "ref": "3.1",
@@ -146,7 +146,7 @@
         {
           "ref": "3.7",
           "title": "The blinding",
-          "summary": "Cornwall puts out Gloucester's eyes; a servant kills him for it and is killed."
+          "summary": "Cornwall puts out Gloucester’s eyes; a servant kills him for it and is killed."
         }
       ]
     },
@@ -154,7 +154,7 @@
       "id": "act-4",
       "label": "Act IV",
       "title": "Dover: Gloucester’s fall, and Lear and Cordelia",
-      "summary": "A blind man is guided towards a cliff by the son he disowned, and survives a fall that never happens. A mad king wanders through a field preaching about justice to a man with no eyes. The act ends with the one scene of repair the play allows: Cordelia's army has landed, and Lear wakes up in clean clothes not sure whether he is dead.",
+      "summary": "A blind man is guided towards a cliff by the son he disowned, and survives a fall that never happens. A mad king wanders through a field preaching about justice to a man with no eyes. The act ends with the one scene of repair the play allows: Cordelia’s army has landed, and Lear wakes up in clean clothes not sure whether he is dead.",
       "scenes": [
         {
           "ref": "4.1",
@@ -164,7 +164,7 @@
         {
           "ref": "4.2",
           "title": "Albany turns",
-          "summary": "Albany names his wife a fiend; news arrives of Cornwall's death."
+          "summary": "Albany names his wife a fiend; news arrives of Cornwall’s death."
         },
         {
           "ref": "4.3",
@@ -197,7 +197,7 @@
       "id": "act-5",
       "label": "Act V",
       "title": "The battle, and the deaths of Cordelia and Lear",
-      "summary": "The British army defeats the French, so the reunion of Act IV lasts one scene. Edmund's counter-order for Cordelia's death outlives the duel that kills him, by minutes. The play gives no consolation: the last thing Lear does is ask five people to look at his daughter’s lips.",
+      "summary": "The British army defeats the French, so the reunion of Act IV lasts one scene. Edmund’s counter-order for Cordelia’s death outlives the duel that kills him, by minutes. The play gives no consolation: the last thing Lear does is ask five people to look at his daughter’s lips.",
       "scenes": [
         {
           "ref": "5.1",
@@ -212,7 +212,7 @@
         {
           "ref": "5.3",
           "title": "The end",
-          "summary": "Prison, a challenge, a duel, two dead sisters, a reprieve too late, and Lear with Cordelia's body."
+          "summary": "Prison, a challenge, a duel, two dead sisters, a reprieve too late, and Lear with Cordelia’s body."
         }
       ]
     }
@@ -286,7 +286,7 @@
     {
       "id": "cordelia",
       "name": "Cordelia",
-      "role": "Lear's youngest daughter",
+      "role": "Lear’s youngest daughter",
       "summary": "She speaks about a hundred lines in the whole play and is absent from the middle three acts, which is part of the design: the play takes her away again and again. In the first scene she will not put a price on love, which is not the same as defiance, and it costs her a kingdom in under fifty lines.",
       "clue": "Asked to bid for a third of a kingdom, she offers a word that means nothing, and is believed.",
       "firstAppearance": "1.1",
@@ -327,8 +327,8 @@
     {
       "id": "goneril",
       "name": "Goneril",
-      "role": "Lear's eldest daughter, Duchess of Albany",
-      "summary": "She wins the first scene by saying what is wanted and spends the rest of the play being right about her father's knights and wrong about everything else. The play gives her a real grievance and then lets her overrun it: by Act IV she is poisoning her sister and writing to a man about killing her husband.",
+      "role": "Lear’s eldest daughter, Duchess of Albany",
+      "summary": "She wins the first scene by saying what is wanted and spends the rest of the play being right about her father’s knights and wrong about everything else. The play gives her a real grievance and then lets her overrun it: by Act IV she is poisoning her sister and writing to a man about killing her husband.",
       "clue": "She tells her steward to grow cold to the old man on purpose, and later poisons her own sister.",
       "firstAppearance": "1.1",
       "traits": [
@@ -370,8 +370,8 @@
     {
       "id": "regan",
       "name": "Regan",
-      "role": "Lear's second daughter, Duchess of Cornwall",
-      "summary": "She follows her sister's lead in Act I and outruns her afterwards. It is Regan who suggests plucking out the second eye, and Regan who kills the servant who objects. Widowed in the same scene, she immediately begins competing for Edmund, and dies of her sister's poison without ever suspecting it.",
+      "role": "Lear’s second daughter, Duchess of Cornwall",
+      "summary": "She follows her sister’s lead in Act I and outruns her afterwards. It is Regan who suggests plucking out the second eye, and Regan who kills the servant who objects. Widowed in the same scene, she immediately begins competing for Edmund, and dies of her sister’s poison without ever suspecting it.",
       "clue": "She asks what need her father has of even one attendant, and later calls for the other eye.",
       "firstAppearance": "1.1",
       "traits": [
@@ -410,8 +410,8 @@
     {
       "id": "gloucester",
       "name": "Earl of Gloucester",
-      "role": "Lear's courtier, father of Edgar and Edmund",
-      "summary": "He jokes about his illegitimate son's conception in the play's opening exchange and never notices that the son is listening. His plot rhymes with Lear's without repeating it: Lear cannot read speech, Gloucester cannot read a document, and it is Gloucester who is punished physically for a loyalty he only just found the nerve to act on.",
+      "role": "Lear’s courtier, father of Edgar and Edmund",
+      "summary": "He jokes about his illegitimate son’s conception in the play’s opening exchange and never notices that the son is listening. His plot rhymes with Lear’s without repeating it: Lear cannot read speech, Gloucester cannot read a document, and it is Gloucester who is punished physically for a loyalty he only just found the nerve to act on.",
       "clue": "He believes a forged letter, loses both eyes in his own house, and asks a beggar to lead him to a cliff.",
       "firstAppearance": "1.1",
       "traits": [
@@ -454,8 +454,8 @@
     {
       "id": "edmund",
       "name": "Edmund",
-      "role": "Gloucester's illegitimate son",
-      "summary": "The only character who tells the audience his plan and keeps to it. He argues that the law's distinction between his brother and himself is arbitrary, which is true, and then uses the point to justify anything at all. His attempt to do one good thing arrives about ninety seconds too late to save Cordelia.",
+      "role": "Gloucester’s illegitimate son",
+      "summary": "The only character who tells the audience his plan and keeps to it. He argues that the law’s distinction between his brother and himself is arbitrary, which is true, and then uses the point to justify anything at all. His attempt to do one good thing arrives about ninety seconds too late to save Cordelia.",
       "clue": "He forges a letter in his brother’s hand, cuts his own arm to prove his loyalty, and is loved by two sisters together.",
       "firstAppearance": "1.1",
       "traits": [
@@ -507,8 +507,8 @@
     {
       "id": "edgar",
       "name": "Edgar",
-      "role": "Gloucester's legitimate son",
-      "summary": "He is tricked out of his name in Act I and spends four acts wearing other people's, of which Poor Tom is only the first. His care for his father is real and strangely cruel (he lets Gloucester believe in a miracle and does not tell him who is holding his arm), and he ends the play holding a kingdom nobody would want.",
+      "role": "Gloucester’s legitimate son",
+      "summary": "He is tricked out of his name in Act I and spends four acts wearing other people’s, of which Poor Tom is only the first. His care for his father is real and strangely cruel (he lets Gloucester believe in a miracle and does not tell him who is holding his arm), and he ends the play holding a kingdom nobody would want.",
       "clue": "He blackens his face, takes the name of a Bedlam beggar, and leads his blind father to a cliff that is not there.",
       "firstAppearance": "1.1",
       "traits": [
@@ -548,7 +548,7 @@
     {
       "id": "kent",
       "name": "Earl of Kent",
-      "role": "Lear's banished servant, disguised as Caius",
+      "role": "Lear’s banished servant, disguised as Caius",
       "summary": "He contradicts the king to his face in the first scene, is banished for it, and comes back in disguise the same week to carry on doing the job. His loyalty is not sentimental: he trips Oswald, insults Cornwall and gets himself locked in the stocks. At the end he declines the kingdom because he has an appointment elsewhere.",
       "clue": "Banished for telling the truth, he shaves his beard, changes his voice and takes service with the man who banished him.",
       "firstAppearance": "1.1",
@@ -582,7 +582,7 @@
     {
       "id": "fool",
       "name": "The Fool",
-      "role": "Lear's licensed jester",
+      "role": "Lear’s licensed jester",
       "summary": "He arrives after Cordelia leaves and vanishes after the mock trial, which has made some readers connect them. His jokes are all one joke, repeated until it stops being funny: you gave away the thing that made you worth obeying. He is the only person allowed to say it, and he keeps saying it through the worst of the weather.",
       "clue": "He tells the king that he is an O without a figure, and disappears from the play after a trial held in a hovel.",
       "firstAppearance": "1.4",
@@ -617,14 +617,14 @@
     {
       "id": "nothing",
       "name": "The word ‘nothing’",
-      "summary": "The word runs through both plots like a fault line: Cordelia's answer, Lear's reply, Edmund's 'nothing' as he pockets a forged letter, the Fool's arithmetic of noughts. The play sets speech that performs feeling against speech that measures it, and shows a state making irreversible decisions on the strength of the first.",
+      "summary": "The word runs through both plots like a fault line: Cordelia’s answer, Lear’s reply, Edmund’s ‘nothing’ as he pockets a forged letter, the Fool’s arithmetic of noughts. The play sets speech that performs feeling against speech that measures it, and shows a state making irreversible decisions on the strength of the first.",
       "development": "A refusal in 1.1, a joke through Act I, a fact by Act III, when Lear has nothing left to compare with, and an answer in 5.3 where a father asks a dead daughter to speak."
     },
     {
       "id": "sight",
       "name": "Sight, blindness and judgement",
       "summary": "Kent tells Lear to see better in the first scene, and the play spends five acts taking the metaphor literally. Gloucester says he stumbled when he saw; Lear, mad, tells a blind man that a man may see how this world goes with no eyes. Understanding in this play is consistently something that arrives after the organ of understanding has been destroyed.",
-      "development": "Figurative in Act I, appallingly literal in 3.7, and reversed in 4.6, where the blind man and the mad king conduct the play's clearest analysis of power."
+      "development": "Figurative in Act I, appallingly literal in 3.7, and reversed in 4.6, where the blind man and the mad king conduct the play’s clearest analysis of power."
     },
     {
       "id": "nature",
@@ -641,13 +641,13 @@
     {
       "id": "age",
       "name": "Age, need and dependence",
-      "summary": "The quarrel that drives Lear onto the heath is about a number: a hundred knights, then fifty, then twenty-five, then what need one. The daughters' case is not obviously wrong, and the play knows it. What Lear finds in answer is that need is not the measure of a life, an argument he can only make once he has lost the argument.",
+      "summary": "The quarrel that drives Lear onto the heath is about a number: a hundred knights, then fifty, then twenty-five, then what need one. The daughters’ case is not obviously wrong, and the play knows it. What Lear finds in answer is that need is not the measure of a life, an argument he can only make once he has lost the argument.",
       "development": "Negotiated downwards through Act II, answered in 2.4, and turned outwards in 3.4, where the same reasoning is applied to people who never had anything to lose."
     },
     {
       "id": "service",
       "name": "Service and loyalty",
-      "summary": "The play's decency is almost entirely in its servants. Kent takes a beating for a master who sacked him; an unnamed servant of Cornwall's draws a sword to stop a blinding and dies for it; an old tenant leads Gloucester when his family cannot. Rank organises the tragedy, but obligation runs the other way.",
+      "summary": "The play’s decency is almost entirely in its servants. Kent takes a beating for a master who sacked him; an unnamed servant of Cornwall’s draws a sword to stop a blinding and dies for it; an old tenant leads Gloucester when his family cannot. Rank organises the tragedy, but obligation runs the other way.",
       "development": "Punished in 2.2, fatal in 3.7, and finally the only bond left standing in 5.3, where Kent follows his master out of the play."
     }
   ],
@@ -662,7 +662,7 @@
       "id": "animal-imagery",
       "name": "Animal imagery",
       "definition": "Language that reduces people to beasts, appetite or prey.",
-      "inThisBook": "Pelicans, kites, wolves, serpent's teeth, a dog obeyed in office, and finally the bare forked animal: the play measures how far a person can be stripped by how much animal vocabulary is used about them."
+      "inThisBook": "Pelicans, kites, wolves, serpent’s teeth, a dog obeyed in office, and finally the bare forked animal: the play measures how far a person can be stripped by how much animal vocabulary is used about them."
     },
     {
       "id": "disguise",
@@ -674,7 +674,7 @@
       "id": "prose-and-verse",
       "name": "Prose against verse",
       "definition": "Shifting between metre and prose to mark status, sanity or intimacy.",
-      "inThisBook": "Lear's verse breaks down into prose on the heath and in the Dover fields, so the collapse can be heard before it is stated; the Fool works almost entirely in prose and rhyme."
+      "inThisBook": "Lear’s verse breaks down into prose on the heath and in the Dover fields, so the collapse can be heard before it is stated; the Fool works almost entirely in prose and rhyme."
     },
     {
       "id": "storm",
@@ -686,7 +686,7 @@
       "id": "aside-and-riddle",
       "name": "Riddle and aside",
       "definition": "Speech aimed past its apparent hearer, at the audience or at nobody.",
-      "inThisBook": "The Fool's riddles say to the theatre what nobody at court may say to the king; Edgar's asides during 4.1 let the audience hold a piece of knowledge that would change everything if it were spoken aloud."
+      "inThisBook": "The Fool’s riddles say to the theatre what nobody at court may say to the king; Edgar’s asides during 4.1 let the audience hold a piece of knowledge that would change everything if it were spoken aloud."
     }
   ],
   "quotations": [
@@ -697,7 +697,7 @@
       "reference": "1.1.94",
       "stage": "act-1",
       "context": "Her explanation after answering the love test with a single word.",
-      "analysis": "'Bond' is a legal term, and she uses it deliberately: she is offering an obligation that can be relied on instead of a quantity that cannot be checked. 'Nor more nor less' is the sentence her father hears as coldness and the play treats as the only honest accounting in the scene.",
+      "analysis": "‘Bond’ is a legal term, and she uses it deliberately: she is offering an obligation that can be relied on instead of a quantity that cannot be checked. ‘Nor more nor less’ is the sentence her father hears as coldness and the play treats as the only honest accounting in the scene.",
       "themes": [
         "nothing",
         "age"
@@ -707,7 +707,7 @@
         "cordelia",
         "lear"
       ],
-      "source": "Globe/Moby text, 1.1.94-96",
+      "source": "Globe/Moby text, 1.1.94–96",
       "cloze": [
         "heart",
         "bond"
@@ -719,7 +719,7 @@
       "speaker": "King Lear",
       "reference": "1.1.93",
       "stage": "act-1",
-      "context": "After Cordelia has twice said 'Nothing'.",
+      "context": "After Cordelia has twice said ‘Nothing’.",
       "analysis": "He states a law of physics and applies it to affection, which is exactly the category error the play is about. The second half of the line matters most: he gives her another turn, so the disaster that follows is a decision taken with a chance to reconsider.",
       "themes": [
         "nothing",
@@ -742,8 +742,8 @@
       "speaker": "Kent",
       "reference": "1.1.167",
       "stage": "act-1",
-      "context": "Refusing to leave after being told to get out of the king's sight.",
-      "analysis": "The blank is the white centre of an archery target, so Kent is asking to be the thing his master aims at — a servant volunteering to be a mark. He also drops the royal address and uses the king's name, which in this court is the offence.",
+      "context": "Refusing to leave after being told to get out of the king’s sight.",
+      "analysis": "The blank is the white centre of an archery target, so Kent is asking to be the thing his master aims at — a servant volunteering to be a mark. He also drops the royal address and uses the king’s name, which in this court is the offence.",
       "themes": [
         "sight",
         "service"
@@ -753,7 +753,7 @@
         "kent",
         "lear"
       ],
-      "source": "Globe/Moby text, 1.1.167-168",
+      "source": "Globe/Moby text, 1.1.167–168",
       "cloze": [
         "See",
         "blank"
@@ -778,7 +778,7 @@
         "edmund",
         "gloucester"
       ],
-      "source": "Globe/Moby text, 1.2.1-4",
+      "source": "Globe/Moby text, 1.2.1–4",
       "cloze": [
         "nature",
         "custom"
@@ -813,8 +813,8 @@
       "speaker": "King Lear",
       "reference": "1.4.222",
       "stage": "act-1",
-      "context": "In Goneril's house, finding that his own knights are being treated as an inconvenience.",
-      "analysis": "The Fool answers 'Lear's shadow', and the answer is exact: without the retinue, the ceremony and the obedience, there is no test he can apply to himself. The question is asked in irony and turns out to be the play's real subject by the third act.",
+      "context": "In Goneril’s house, finding that his own knights are being treated as an inconvenience.",
+      "analysis": "The Fool answers ‘Lear’s shadow’, and the answer is exact: without the retinue, the ceremony and the obedience, there is no test he can apply to himself. The question is asked in irony and turns out to be the play’s real subject by the third act.",
       "themes": [
         "age",
         "nothing"
@@ -839,7 +839,7 @@
       "reference": "1.4.285",
       "stage": "act-1",
       "context": "The end of the curse he lays on Goneril, before storming out.",
-      "analysis": "He has just asked nature to make her barren, and this is the sentence he finishes on — a father's grievance dressed as a proverb. The comparison is with a bite, which keeps the whole speech inside the play’s animal vocabulary, and he goes out without waiting for a reply.",
+      "analysis": "He has just asked nature to make her barren, and this is the sentence he finishes on — a father’s grievance dressed as a proverb. The comparison is with a bite, which keeps the whole speech inside the play’s animal vocabulary, and he goes out without waiting for a reply.",
       "themes": [
         "age",
         "nature"
@@ -851,7 +851,7 @@
         "lear",
         "goneril"
       ],
-      "source": "Globe/Moby text, 1.4.285-286",
+      "source": "Globe/Moby text, 1.4.285–286",
       "cloze": [
         "serpent's",
         "thankless"
@@ -863,7 +863,7 @@
       "speaker": "King Lear",
       "reference": "2.4.291",
       "stage": "act-2",
-      "context": "Answering Regan's question, 'What need one?'",
+      "context": "Answering Regan’s question, ‘What need one?’",
       "analysis": "It is the best argument he makes in the play and he makes it in defence of a hundred armed men he does not need. The reasoning, though, is general and survives the occasion: measure a person by need and you have already agreed they are livestock. Two acts later he applies it to people with no roof at all.",
       "themes": [
         "age",
@@ -877,7 +877,7 @@
         "regan",
         "goneril"
       ],
-      "source": "Globe/Moby text, 2.4.291-294",
+      "source": "Globe/Moby text, 2.4.291–294",
       "cloze": [
         "reason",
         "beggars"
@@ -925,7 +925,7 @@
       "characters": [
         "lear"
       ],
-      "source": "Globe/Moby text, 3.2.60-61",
+      "source": "Globe/Moby text, 3.2.60–61",
       "cloze": [
         "sinn'd",
         "sinning"
@@ -950,7 +950,7 @@
         "lear",
         "fool"
       ],
-      "source": "Globe/Moby text, 3.4.32-33",
+      "source": "Globe/Moby text, 3.4.32–33",
       "cloze": [
         "naked",
         "pitiless"
@@ -976,7 +976,7 @@
         "lear",
         "edgar"
       ],
-      "source": "Globe/Moby text, 3.4.107-109",
+      "source": "Globe/Moby text, 3.4.107–109",
       "cloze": [
         "unaccommodated",
         "forked"
@@ -988,7 +988,7 @@
       "speaker": "Cornwall",
       "reference": "3.7.91",
       "stage": "act-3",
-      "context": "Putting out Gloucester's second eye, after his own servant has been killed trying to stop him.",
+      "context": "Putting out Gloucester’s second eye, after his own servant has been killed trying to stop him.",
       "analysis": "The reason given is precautionary, which makes it worse: an eye is destroyed because of what it might otherwise witness. Calling it jelly makes an organ a substance, and Shakespeare puts the whole thing on stage, so the audience has to sit in the room.",
       "themes": [
         "sight",
@@ -1012,7 +1012,7 @@
       "reference": "4.1.19",
       "stage": "act-4",
       "context": "Blinded, told by an old tenant that he cannot see his way.",
-      "analysis": "‘Want’ means lack and need, and he uses it to argue himself out of pitying his own condition. The line states the play's central reversal as a plain past tense: the error happened while the eyes were working, so the eyes were never the instrument he needed.",
+      "analysis": "‘Want’ means lack and need, and he uses it to argue himself out of pitying his own condition. The line states the play’s central reversal as a plain past tense: the error happened while the eyes were working, so the eyes were never the instrument he needed.",
       "themes": [
         "sight"
       ],
@@ -1021,7 +1021,7 @@
         "gloucester",
         "edgar"
       ],
-      "source": "Globe/Moby text, 4.1.19-20",
+      "source": "Globe/Moby text, 4.1.19–20",
       "cloze": [
         "eyes",
         "stumbled"
@@ -1034,7 +1034,7 @@
       "reference": "4.1.42",
       "stage": "act-4",
       "context": "Spoken to the man he has just hired to lead him, who is his son.",
-      "analysis": "The most quoted theology in the play is a man's response to a private disaster, not a conclusion the play endorses; forty lines earlier he was blaming eclipses, and by Act V he dies of joy. Note who hears it: Edgar, in disguise, who could disprove at least part of it by saying his own name.",
+      "analysis": "The most quoted theology in the play is a man’s response to a private disaster, not a conclusion the play endorses; forty lines earlier he was blaming eclipses, and by Act V he dies of joy. Note who hears it: Edgar, in disguise, who could disprove at least part of it by saying his own name.",
       "themes": [
         "nature",
         "justice"
@@ -1047,7 +1047,7 @@
         "gloucester",
         "edgar"
       ],
-      "source": "Globe/Moby text, 4.1.42-43",
+      "source": "Globe/Moby text, 4.1.42–43",
       "cloze": [
         "flies",
         "sport"
@@ -1060,7 +1060,7 @@
       "reference": "4.6.173",
       "stage": "act-4",
       "context": "Mad, crowned with weeds, talking to the blinded Gloucester in the fields near Dover.",
-      "analysis": "Authority is reduced to a reflex in a beggar's legs, and the argument is built from a scene anyone in the audience would have watched in a street. It is prose, spoken by a king who has lost his reason, and it is the most exact political sentence in the play — which is the point of putting it there.",
+      "analysis": "Authority is reduced to a reflex in a beggar’s legs, and the argument is built from a scene anyone in the audience would have watched in a street. It is prose, spoken by a king who has lost his reason, and it is the most exact political sentence in the play — which is the point of putting it there.",
       "themes": [
         "justice",
         "sight"
@@ -1073,7 +1073,7 @@
         "lear",
         "gloucester"
       ],
-      "source": "Globe/Moby text, 4.6.173-175",
+      "source": "Globe/Moby text, 4.6.173–175",
       "cloze": [
         "authority",
         "office"
@@ -1086,7 +1086,7 @@
       "reference": "4.7.52",
       "stage": "act-4",
       "context": "Waking in the French camp, seeing Cordelia for the first time since Act I.",
-      "analysis": "He wakes into a private hell and assumes his daughter is in heaven, so his first response to rescue is to apologise for being alive near her. The wheel is a torture from an older iconography than this play's Britain, and his own tears are the instrument — nothing is being done to him from outside.",
+      "analysis": "He wakes into a private hell and assumes his daughter is in heaven, so his first response to rescue is to apologise for being alive near her. The wheel is a torture from an older iconography than this play’s Britain, and his own tears are the instrument — nothing is being done to him from outside.",
       "themes": [
         "age",
         "justice"
@@ -1096,7 +1096,7 @@
         "lear",
         "cordelia"
       ],
-      "source": "Globe/Moby text, 4.7.52-55",
+      "source": "Globe/Moby text, 4.7.52–55",
       "cloze": [
         "wheel",
         "tears"
@@ -1109,7 +1109,7 @@
       "reference": "4.7.70",
       "stage": "act-4",
       "context": "Kneeling to Cordelia, who has told him not to.",
-      "analysis": "Three admissions in four lines, each one plainer than anything he has said before: his age, his foolishness, the state of his mind. 'To deal plainly' is the manner he punished Cordelia for in the first scene, and he has arrived at it by way of a heath, a hovel and a field.",
+      "analysis": "Three admissions in four lines, each one plainer than anything he has said before: his age, his foolishness, the state of his mind. ‘To deal plainly’ is the manner he punished Cordelia for in the first scene, and he has arrived at it by way of a heath, a hovel and a field.",
       "themes": [
         "age",
         "nothing"
@@ -1119,7 +1119,7 @@
         "lear",
         "cordelia"
       ],
-      "source": "Globe/Moby text, 4.7.70-73",
+      "source": "Globe/Moby text, 4.7.70–73",
       "cloze": [
         "foolish",
         "plainly"
@@ -1144,7 +1144,7 @@
         "edgar",
         "gloucester"
       ],
-      "source": "Globe/Moby text, 5.2.10-12",
+      "source": "Globe/Moby text, 5.2.10–12",
       "cloze": [
         "endure",
         "Ripeness"
@@ -1192,7 +1192,7 @@
         "lear",
         "cordelia"
       ],
-      "source": "Globe/Moby text, 5.3.302-304",
+      "source": "Globe/Moby text, 5.3.302–304",
       "cloze": [
         "Howl",
         "stones"
@@ -1204,8 +1204,8 @@
       "speaker": "King Lear",
       "reference": "5.3.362",
       "stage": "act-5",
-      "context": "His last speech, over Cordelia's body.",
-      "analysis": "Five stressed nevers make a line of pure trochaic beats, the only one like it in Shakespeare, and it works because the metre has stopped doing anything except repeat. The question before it is the play's animal vocabulary turned inside out: the beasts are alive and the daughter is not, and no account of nature explains it.",
+      "context": "His last speech, over Cordelia’s body.",
+      "analysis": "Five stressed nevers make a line of pure trochaic beats, the only one like it in Shakespeare, and it works because the metre has stopped doing anything except repeat. The question before it is the play’s animal vocabulary turned inside out: the beasts are alive and the daughter is not, and no account of nature explains it.",
       "themes": [
         "nothing",
         "nature"
@@ -1217,7 +1217,7 @@
         "lear",
         "cordelia"
       ],
-      "source": "Globe/Moby text, 5.3.362-364",
+      "source": "Globe/Moby text, 5.3.362–364",
       "cloze": [
         "dog",
         "Never"
@@ -1227,13 +1227,13 @@
   "timeline": [
     {
       "year": 1587,
-      "label": "The second edition of Holinshed's Chronicles",
+      "label": "The second edition of Holinshed’s Chronicles",
       "detail": "Carries the story of King Leir and his three daughters, drawn from Geoffrey of Monmouth, with a restoration that Shakespeare removes.",
       "kind": "context"
     },
     {
       "year": 1590,
-      "label": "Sidney's Arcadia",
+      "label": "Sidney’s Arcadia",
       "detail": "Supplies the blinded father and the wronged son that Shakespeare builds into the Gloucester plot.",
       "kind": "context"
     },
@@ -1245,20 +1245,20 @@
     },
     {
       "year": 1603,
-      "label": "Harsnett's Declaration of Egregious Popish Impostures",
+      "label": "Harsnett’s Declaration of Egregious Popish Impostures",
       "detail": "The source of the fiends Poor Tom names, and evidence that the play was written after it appeared.",
       "kind": "context"
     },
     {
       "year": 1606,
       "label": "Performed before King James at Whitehall",
-      "detail": "The Stationers' Register record and the quarto title page both point to St Stephen's night in the Christmas holidays.",
+      "detail": "The Stationers’ Register record and the quarto title page both point to St Stephen’s night in the Christmas holidays.",
       "kind": "work"
     },
     {
       "year": 1608,
       "label": "The First Quarto printed",
-      "detail": "Printed for Nathaniel Butter as a True Chronicle Historie, and linking the play to the King's Men at the Globe.",
+      "detail": "Printed for Nathaniel Butter as a True Chronicle Historie, and linking the play to the King’s Men at the Globe.",
       "kind": "work"
     },
     {
@@ -1270,30 +1270,30 @@
     {
       "year": 1623,
       "label": "The First Folio text",
-      "detail": "Printed as The Tragedie of King Lear, with over a hundred lines the quarto lacks and around three hundred fewer of the quarto's.",
+      "detail": "Printed as The Tragedie of King Lear, with over a hundred lines the quarto lacks and around three hundred fewer of the quarto’s.",
       "kind": "work"
     },
     {
       "year": 1681,
-      "label": "Nahum Tate's History of King Lear",
+      "label": "Nahum Tate’s History of King Lear",
       "detail": "Removes the Fool, marries Cordelia to Edgar and lets Lear live. It held the English stage for more than a century.",
       "kind": "reception"
     },
     {
       "year": 1838,
       "label": "Macready restores the Fool and the tragic ending",
-      "detail": "Priscilla Horton played the restored Fool; Shakespeare's ending returned to public stage memory.",
+      "detail": "Priscilla Horton played the restored Fool; Shakespeare’s ending returned to public stage memory.",
       "kind": "reception"
     },
     {
       "year": 1971,
-      "label": "Peter Brook's film",
+      "label": "Peter Brook’s film",
       "detail": "Made from his 1962 Stratford production, with Paul Scofield as Lear and almost every trace of comfort stripped out.",
       "kind": "reception"
     },
     {
       "year": 2007,
-      "label": "Trevor Nunn's RSC production with Ian McKellen",
+      "label": "Trevor Nunn’s RSC production with Ian McKellen",
       "detail": "A stormy, thrust-stage staging that included an on-stage hanging of the Fool.",
       "kind": "reception"
     }
@@ -1303,7 +1303,7 @@
       "name": "Dover",
       "lat": 51.1279,
       "lon": 1.3134,
-      "note": "The cliff Gloucester means to die from, and the coast where Cordelia's army lands."
+      "note": "The cliff Gloucester means to die from, and the coast where Cordelia’s army lands."
     },
     {
       "name": "Gloucester",
@@ -1315,7 +1315,7 @@
       "name": "Cornwall",
       "lat": 50.4,
       "lon": -4.8,
-      "note": "Regan's dukedom, and the source of the play's most casual cruelty."
+      "note": "Regan’s dukedom, and the source of the play’s most casual cruelty."
     },
     {
       "name": "Kent",
@@ -1327,30 +1327,30 @@
       "name": "Albany",
       "lat": 56.8,
       "lon": -4.2,
-      "note": "The old name for the land north of the Forth, and Goneril's husband's title — a duke who slowly changes sides."
+      "note": "The old name for the land north of the Forth, and Goneril’s husband’s title — a duke who slowly changes sides."
     },
     {
       "name": "Burgundy",
       "lat": 47.322,
       "lon": 5.0415,
-      "note": "The suitor who withdraws when Cordelia's dowry disappears, leaving France to take her without one."
+      "note": "The suitor who withdraws when Cordelia’s dowry disappears, leaving France to take her without one."
     }
   ],
   "criticalViews": [
     {
       "position": "The play as a Christian pattern of suffering",
-      "summary": "A long tradition reads Lear's progress as a purgation: pride stripped away by storm and loss until, in 4.7, the king kneels and is reconciled. On this account the tragedy is a form of instruction.",
-      "counter": "The ending resists it. Cordelia dies after the reprieve has been sent, for no reason the plot requires, and Lear's last words are a demand that four men look at her lips."
+      "summary": "A long tradition reads Lear’s progress as a purgation: pride stripped away by storm and loss until, in 4.7, the king kneels and is reconciled. On this account the tragedy is a form of instruction.",
+      "counter": "The ending resists it. Cordelia dies after the reprieve has been sent, for no reason the plot requires, and Lear’s last words are a demand that four men look at her lips."
     },
     {
       "position": "The play as a political and material tragedy",
-      "summary": "Criticism since the mid-twentieth century has emphasised the play's interest in property, need and power: a division of land, a negotiation over how many servants a pensioner deserves, and a king who works out that office is what makes obedience happen.",
+      "summary": "Criticism since the mid-twentieth century has emphasised the play’s interest in property, need and power: a division of land, a negotiation over how many servants a pensioner deserves, and a king who works out that office is what makes obedience happen.",
       "counter": "It can flatten the family material, which the play stages with as much care as the politics — the arithmetic of 2.4 only devastates because it is done by daughters."
     },
     {
       "position": "Two plays, Quarto and Folio",
       "summary": "Because the 1608 quarto and the 1623 Folio differ so widely, many textual scholars argue that the Folio represents a later revision and that conflating the two produces a text no early audience heard.",
-      "counter": "The conflated tradition is what four centuries of readers and actors have worked with, and some of the play's best-known material survives only because editors refused to choose."
+      "counter": "The conflated tradition is what four centuries of readers and actors have worked with, and some of the play’s best-known material survives only because editors refused to choose."
     }
   ],
   "essayQuestions": [
@@ -1366,21 +1366,21 @@
       ]
     },
     {
-      "question": "'The play is about sight, not madness.' Discuss.",
+      "question": "‘The play is about sight, not madness.’ Discuss.",
       "focus": "Seeing, knowing and judgement",
       "plan": [
-        "Start with Kent's 'See better, Lear' and the eye imagery running through the first scene.",
+        "Start with Kent’s ‘See better, Lear’ and the eye imagery running through the first scene.",
         "Follow the metaphor into literal action at 3.7, and note what reason Cornwall gives for the second eye.",
-        "Read 4.1: Gloucester's claim that he stumbled when he saw, and what it implies about the value of evidence in this play.",
+        "Read 4.1: Gloucester’s claim that he stumbled when he saw, and what it implies about the value of evidence in this play.",
         "Set 4.6 against both — a blind man and a mad king conducting the clearest analysis of authority in the text.",
-        "Weigh the counter-case: Lear's madness produces insight that his sanity never did, so the two strands may not be separable."
+        "Weigh the counter-case: Lear’s madness produces insight that his sanity never did, so the two strands may not be separable."
       ]
     },
     {
       "question": "Are Goneril and Regan given a case?",
       "focus": "Justice, need and the presentation of the sisters",
       "plan": [
-        "Reconstruct their argument from 1.3, 1.4 and 2.4: a hundred armed men in someone else's house, and a father who curses one daughter with sterility.",
+        "Reconstruct their argument from 1.3, 1.4 and 2.4: a hundred armed men in someone else’s house, and a father who curses one daughter with sterility.",
         "Notice how much of their behaviour before 3.7 is administrative, and where exactly the line into cruelty is crossed.",
         "Use ‘O, reason not the need’ to show the play answering them on principle.",
         "Consider the later plot — the poisoning, the letters to Edmund — and ask whether it convicts them or simply disposes of them.",
@@ -1392,9 +1392,9 @@
       "focus": "The ending, justice and the gods",
       "plan": [
         "Collect the appeals to the gods across the play and note that none of them is answered on stage.",
-        "Treat 4.7 as the play's best offer: reconciliation, clean clothes, a kneeling king, a daughter who says no cause.",
+        "Treat 4.7 as the play’s best offer: reconciliation, clean clothes, a kneeling king, a daughter who says no cause.",
         "Show how 5.3 dismantles it — the reprieve is sent, and arrives too late by a matter of lines.",
-        "Weigh Edgar's 'Ripeness is all' and Albany's closing couplet as attempts to supply a moral that the stage picture contradicts.",
+        "Weigh Edgar’s ‘Ripeness is all’ and Albany’s closing couplet as attempts to supply a moral that the stage picture contradicts.",
         "Compare Tate’s ending, and use it to say exactly what Shakespeare’s ending will not do."
       ]
     }

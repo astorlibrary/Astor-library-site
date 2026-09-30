@@ -14,8 +14,8 @@
   "difficulty": 4,
   "lengthNote": "Around 2,800 lines, and not one of them in prose",
   "openingLine": "Old John of Gaunt, time-honour'd Lancaster, Hast thou, according to thy oath and band, Brought hither Henry Hereford thy bold son?",
-  "summary": "A king who believes the crown was fixed on him by God seizes his cousin's inheritance to pay for a war in Ireland, and finds that the cousin comes home for the land and stays for the throne. Bolingbroke wins without a battle; Richard loses without a defeat. The play is written entirely in verse, so the man who cannot hold a kingdom can still out-speak everyone in it, and the deposition turns into an argument about what words a king is made of.",
-  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "summary": "A king who believes the crown was fixed on him by God seizes his cousin’s inheritance to pay for a war in Ireland, and finds that the cousin comes home for the land and stays for the throne. Bolingbroke wins without a battle; Richard loses without a defeat. The play is written entirely in verse, so the man who cannot hold a kingdom can still out-speak everyone in it, and the deposition turns into an argument about what words a king is made of.",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
     "label": "Globe/Moby text of Richard II",
     "note": "Line numbers follow the traditional Globe numbering. Modern editions vary by a line or two, and quarto and Folio witnesses differ over the deposition passage in 4.1."
@@ -33,7 +33,7 @@
     },
     {
       "label": "Chief source",
-      "value": "Holinshed's Chronicles",
+      "value": "Holinshed’s Chronicles",
       "note": "Shakespeare keeps the chronicle sequence and invents the interior life that goes with it."
     },
     {
@@ -47,7 +47,7 @@
       "id": "act-1",
       "label": "Act I",
       "title": "The quarrel, and the banishments",
-      "summary": "Bolingbroke accuses Mowbray of treason and of Gloucester's murder, a charge that leads back towards Richard himself. Richard first orders trial by combat and then stops it mid-ceremony, banishing both men. The interruption saves him from a verdict and costs him the only two men who could have given one.",
+      "summary": "Bolingbroke accuses Mowbray of treason and of Gloucester’s murder, a charge that leads back towards Richard himself. Richard first orders trial by combat and then stops it mid-ceremony, banishing both men. The interruption saves him from a verdict and costs him the only two men who could have given one.",
       "scenes": [
         {
           "ref": "1.1",
@@ -57,7 +57,7 @@
         {
           "ref": "1.2",
           "title": "Gloucester's widow",
-          "summary": "The Duchess asks Gaunt for revenge; he answers that the quarrel is God's, because the king ordered the murder."
+          "summary": "The Duchess asks Gaunt for revenge; he answers that the quarrel is God’s, because the king ordered the murder."
         },
         {
           "ref": "1.3",
@@ -67,7 +67,7 @@
         {
           "ref": "1.4",
           "title": "Farming the realm",
-          "summary": "Alone with his favourites, Richard mocks Bolingbroke's popularity and decides to lease out England to fund the Irish wars."
+          "summary": "Alone with his favourites, Richard mocks Bolingbroke’s popularity and decides to lease out England to fund the Irish wars."
         }
       ]
     },
@@ -80,7 +80,7 @@
         {
           "ref": "2.1",
           "title": "Ely House",
-          "summary": "Gaunt's dying speech on England; Richard seizes his lands, and York warns him what that means."
+          "summary": "Gaunt’s dying speech on England; Richard seizes his lands, and York warns him what that means."
         },
         {
           "ref": "2.2",
@@ -118,7 +118,7 @@
         {
           "ref": "3.3",
           "title": "Flint Castle",
-          "summary": "Northumberland delivers Bolingbroke's terms; Richard comes down to the base court and is taken to London."
+          "summary": "Northumberland delivers Bolingbroke’s terms; Richard comes down to the base court and is taken to London."
         },
         {
           "ref": "3.4",
@@ -136,7 +136,7 @@
         {
           "ref": "4.1",
           "title": "The deposition",
-          "summary": "Gages fly over Gloucester's death, Carlisle prophesies, Richard resigns the crown and smashes the glass."
+          "summary": "Gages fly over Gloucester’s death, Carlisle prophesies, Richard resigns the crown and smashes the glass."
         }
       ]
     },
@@ -164,7 +164,7 @@
         {
           "ref": "5.4",
           "title": "Exton hears a wish",
-          "summary": "Exton repeats the king's question about a living fear and decides it was an order."
+          "summary": "Exton repeats the king’s question about a living fear and decides it was an order."
         },
         {
           "ref": "5.5",
@@ -174,7 +174,7 @@
         {
           "ref": "5.6",
           "title": "Windsor",
-          "summary": "Henry receives the rebels' heads and then Richard's coffin, banishes Exton and vows a crusade."
+          "summary": "Henry receives the rebels’ heads and then Richard’s coffin, banishes Exton and vows a crusade."
         }
       ]
     }
@@ -233,7 +233,7 @@
       "name": "Henry Bolingbroke",
       "role": "Duke of Hereford, later King Henry IV",
       "summary": "He says very little about what he wants and gets all of it. The play never gives him a soliloquy, so an audience must judge him by timing alone: he lands to claim an inheritance, accepts a crown he never demands, and ends by disowning the murder he asked for out loud.",
-      "clue": "He comes home for his father's land, says nothing about the throne, and is king within two acts.",
+      "clue": "He comes home for his father’s land, says nothing about the throne, and is king within two acts.",
       "firstAppearance": "1.1",
       "traits": [
         "patient",
@@ -279,8 +279,8 @@
     {
       "id": "gaunt",
       "name": "John of Gaunt",
-      "role": "Duke of Lancaster, Richard's uncle",
-      "summary": "He refuses to avenge his brother's murder because the king ordered it, and then spends his last scene saying everything he has held back. His speech on England is a complaint about leases and parchment bonds, not a patriotic anthem, and the play takes his estate away before his body is cold.",
+      "role": "Duke of Lancaster, Richard’s uncle",
+      "summary": "He refuses to avenge his brother’s murder because the king ordered it, and then spends his last scene saying everything he has held back. His speech on England is a complaint about leases and parchment bonds, not a patriotic anthem, and the play takes his estate away before his body is cold.",
       "clue": "Dying, he puns on his own name, calls the king a landlord, and says England has conquered itself.",
       "firstAppearance": "1.1",
       "traits": [
@@ -318,8 +318,8 @@
     {
       "id": "york",
       "name": "Duke of York",
-      "role": "Edmund of Langley, Richard's uncle and Lord Governor of England",
-      "summary": "Left to hold the kingdom with no troops and no instructions, he changes sides slowly and in public, which makes him the play's honest measure of how fast legitimacy moves. By Act V he is denouncing his own son to prove a loyalty nobody asked him for.",
+      "role": "Edmund of Langley, Richard’s uncle and Lord Governor of England",
+      "summary": "Left to hold the kingdom with no troops and no instructions, he changes sides slowly and in public, which makes him the play’s honest measure of how fast legitimacy moves. By Act V he is denouncing his own son to prove a loyalty nobody asked him for.",
       "clue": "He is told to defend a kingdom with an empty treasury, meets the invader on the road, and cannot decide whether to arrest him or dine with him.",
       "firstAppearance": "2.1",
       "traits": [
@@ -358,7 +358,7 @@
       "id": "mowbray",
       "name": "Thomas Mowbray",
       "role": "Duke of Norfolk",
-      "summary": "Accused of Gloucester's murder, he defends himself without ever explaining what happened, because the truth would implicate the king who is judging him. His farewell is about losing English, not England, and he dies offstage in Venice, the first of the play's exiles.",
+      "summary": "Accused of Gloucester’s murder, he defends himself without ever explaining what happened, because the truth would implicate the king who is judging him. His farewell is about losing English, not England, and he dies offstage in Venice, the first of the play’s exiles.",
       "clue": "Banished for life, he grieves for his mother tongue and compares his own speech to a viol with the strings taken off.",
       "firstAppearance": "1.1",
       "traits": [
@@ -387,7 +387,7 @@
     {
       "id": "northumberland",
       "name": "Earl of Northumberland",
-      "role": "Henry Percy, Bolingbroke's chief supporter",
+      "role": "Henry Percy, Bolingbroke’s chief supporter",
       "summary": "He does the work Bolingbroke will not be seen doing: carrying the demands to Flint, pressing Richard to read the list of crimes aloud, ordering him to the Tower. The Henry IV plays begin with the bill for his service arriving.",
       "clue": "He never asks for the crown himself, but he is the man sent up to the castle wall to say what its terms will be.",
       "firstAppearance": "2.1",
@@ -421,7 +421,7 @@
     {
       "id": "queen",
       "name": "The Queen",
-      "role": "Richard's wife, Isabel of Valois",
+      "role": "Richard’s wife, Isabel of Valois",
       "summary": "Shakespeare ages a child bride into an adult woman so that the fall has a private witness. Her grief arrives before its cause does, and she is the only character who tells Richard to fight instead of talk, which he cannot do.",
       "clue": "She feels a sorrow with no name in it before any messenger arrives, and later hears the worst news of her life from a gardener.",
       "firstAppearance": "2.1",
@@ -476,7 +476,7 @@
     {
       "id": "gardener",
       "name": "The Gardener",
-      "role": "A servant in the Duke of York's garden",
+      "role": "A servant in the Duke of York’s garden",
       "summary": "He has no name, one scene and the clearest political analysis in the play: a state is a plot of ground that needs pruning, and Richard has let the weeds take the light. He also knows about the deposition before the Queen does, which says something about how news travels.",
       "clue": "He tells his man to bind up the apricocks, and makes a day’s weeding into a verdict on the reign.",
       "firstAppearance": "3.4",
@@ -508,13 +508,13 @@
     {
       "id": "divine-right",
       "name": "Divine right and the anointed body",
-      "summary": "Richard's whole defence is that kingship is a physical fact done to him with holy oil, not an office he holds on conditions. The play does not simply refute him: Bolingbroke wins, but the crown he takes never stops being described as stolen, and the next four plays pay for it.",
+      "summary": "Richard’s whole defence is that kingship is a physical fact done to him with holy oil, not an office he holds on conditions. The play does not simply refute him: Bolingbroke wins, but the crown he takes never stops being described as stolen, and the next four plays pay for it.",
       "development": "Asserted at full length in 3.2, tested against a landing army in 3.3, formally undone in 4.1, and mourned by the man who broke it in 5.6."
     },
     {
       "id": "inheritance",
       "name": "Inheritance and the law of succession",
-      "summary": "Seizing Gaunt's estate is the hinge of the plot because Richard's own title comes from exactly the rule he breaks. York says so to his face: take away the right of an heir to succeed, and you have taken away the argument for being king. The play makes constitutional law a matter of personal cash flow.",
+      "summary": "Seizing Gaunt’s estate is the hinge of the plot because Richard’s own title comes from exactly the rule he breaks. York says so to his face: take away the right of an heir to succeed, and you have taken away the argument for being king. The play makes constitutional law a matter of personal cash flow.",
       "development": "Richard leases the realm in 1.4, confiscates Lancaster in 2.1, and by 2.3 Bolingbroke is back claiming only what the law says is his."
     },
     {
@@ -527,7 +527,7 @@
       "id": "england",
       "name": "England",
       "summary": "The country is never an abstraction here. It is soil Richard greets by hand, a lease signed on rotten parchment, a sea-walled garden full of weeds, and a plot whose caterpillars Bolingbroke promises to pluck away. The metaphor lets servants pass judgement on kings without leaving their own subject.",
-      "development": "Gaunt's blessed plot in 2.1 is answered by the gardener's choked-up beds in 3.4, and by Carlisle's ground manured with English blood in 4.1."
+      "development": "Gaunt’s blessed plot in 2.1 is answered by the gardener’s choked-up beds in 3.4, and by Carlisle’s ground manured with English blood in 4.1."
     },
     {
       "id": "time",
@@ -571,7 +571,7 @@
       "id": "prophecy",
       "name": "Prophecy",
       "definition": "A speech that predicts consequences the audience can check against history.",
-      "inThisBook": "Gaunt foretells Richard's burn-out and Carlisle foretells civil war; an Elizabethan audience knew the second prophecy had a hundred years of fulfilment behind it."
+      "inThisBook": "Gaunt foretells Richard’s burn-out and Carlisle foretells civil war; an Elizabethan audience knew the second prophecy had a hundred years of fulfilment behind it."
     },
     {
       "id": "stage-property",
@@ -587,7 +587,7 @@
       "speaker": "Bolingbroke",
       "reference": "1.3.214",
       "stage": "act-1",
-      "context": "Richard has just cut Bolingbroke's banishment from ten years to six.",
+      "context": "Richard has just cut Bolingbroke’s banishment from ten years to six.",
       "analysis": "Four years are measured in seasons, not numbers, so the mercy is felt as weather before it is understood as arithmetic. The couplet closes on ‘breath’, which makes royal authority a matter of moving air, a definition Bolingbroke will spend the play disproving by using armies instead.",
       "themes": [
         "language",
@@ -600,7 +600,7 @@
         "bolingbroke",
         "richard"
       ],
-      "source": "Globe/Moby text, 1.3.214-216",
+      "source": "Globe/Moby text, 1.3.214–216",
       "cloze": [
         "word",
         "breath"
@@ -625,7 +625,7 @@
         "mowbray",
         "richard"
       ],
-      "source": "Globe/Moby text, 1.3.159-162",
+      "source": "Globe/Moby text, 1.3.159–162",
       "cloze": [
         "English",
         "tongue"
@@ -638,7 +638,7 @@
       "reference": "1.3.278",
       "stage": "act-1",
       "context": "Gaunt tries to console his banished son at the gate.",
-      "analysis": "The advice is to argue backwards from what cannot be changed until it looks like a choice, and Bolingbroke refuses it outright in the lines that follow. It is worth noticing that Richard adopts precisely this habit of mind from Act III onwards, at which point Gaunt's consolation reads as a description of political defeat.",
+      "analysis": "The advice is to argue backwards from what cannot be changed until it looks like a choice, and Bolingbroke refuses it outright in the lines that follow. It is worth noticing that Richard adopts precisely this habit of mind from Act III onwards, at which point Gaunt’s consolation reads as a description of political defeat.",
       "themes": [
         "language",
         "performance"
@@ -648,7 +648,7 @@
         "gaunt",
         "bolingbroke"
       ],
-      "source": "Globe/Moby text, 1.3.278-279",
+      "source": "Globe/Moby text, 1.3.278–279",
       "cloze": [
         "necessity",
         "virtue"
@@ -661,7 +661,7 @@
       "reference": "2.1.31",
       "stage": "act-2",
       "context": "Dying at Ely House, waiting for the king to arrive.",
-      "analysis": "'Expiring' does double duty: it means dying and it means breathing out, so the prophecy and the last breath are the same event. Gaunt claims authority from his nearness to death, not from office, the only position from which anyone in this play tells Richard the truth to his face.",
+      "analysis": "‘Expiring’ does double duty: it means dying and it means breathing out, so the prophecy and the last breath are the same event. Gaunt claims authority from his nearness to death, not from office, the only position from which anyone in this play tells Richard the truth to his face.",
       "themes": [
         "divine-right",
         "time"
@@ -673,7 +673,7 @@
         "gaunt",
         "richard"
       ],
-      "source": "Globe/Moby text, 2.1.31-34",
+      "source": "Globe/Moby text, 2.1.31–34",
       "cloze": [
         "prophet",
         "fires"
@@ -685,8 +685,8 @@
       "speaker": "John of Gaunt",
       "reference": "2.1.40",
       "stage": "act-2",
-      "context": "The opening of Gaunt's speech on England, still waiting for Richard.",
-      "analysis": "The famous passage is a single sentence that does not reach its main verb for more than twenty lines, and when it arrives the verb is 'Is now leased out'. Quoted on its own the speech sounds like praise; read to the end of its grammar it is a complaint about a property transaction, and the delay is the point.",
+      "context": "The opening of Gaunt’s speech on England, still waiting for Richard.",
+      "analysis": "The famous passage is a single sentence that does not reach its main verb for more than twenty lines, and when it arrives the verb is ‘Is now leased out’. Quoted on its own the speech sounds like praise; read to the end of its grammar it is a complaint about a property transaction, and the delay is the point.",
       "themes": [
         "england",
         "inheritance"
@@ -697,7 +697,7 @@
       "characters": [
         "gaunt"
       ],
-      "source": "Globe/Moby text, 2.1.40-44",
+      "source": "Globe/Moby text, 2.1.40–44",
       "cloze": [
         "scepter'd",
         "Eden"
@@ -710,7 +710,7 @@
       "reference": "2.1.65",
       "stage": "act-2",
       "context": "The close of the England speech, moments before Richard enters.",
-      "analysis": "The couplet turns a war verb inwards, so the country is both the army and the territory. It is also the play's structural thesis in two lines: nobody invades England here, and every wound in the next four acts is administered by an Englishman to another Englishman's title.",
+      "analysis": "The couplet turns a war verb inwards, so the country is both the army and the territory. It is also the play’s structural thesis in two lines: nobody invades England here, and every wound in the next four acts is administered by an Englishman to another Englishman’s title.",
       "themes": [
         "england",
         "divine-right"
@@ -719,7 +719,7 @@
       "characters": [
         "gaunt"
       ],
-      "source": "Globe/Moby text, 2.1.65-66",
+      "source": "Globe/Moby text, 2.1.65–66",
       "cloze": [
         "conquer",
         "itself"
@@ -742,7 +742,7 @@
         "gaunt",
         "richard"
       ],
-      "source": "Globe/Moby text, 2.1.113-114",
+      "source": "Globe/Moby text, 2.1.113–114",
       "cloze": [
         "Landlord",
         "king"
@@ -754,8 +754,8 @@
       "speaker": "King Richard II",
       "reference": "2.1.154",
       "stage": "act-2",
-      "context": "Richard's response to the news that Gaunt is dead.",
-      "analysis": "Two lines of decorous condolence, then 'So much for that', and the tone drops from elegy to agenda inside a single verse line. The switch is the seizure of the Lancastrian estate happening at the level of style, several seconds before Richard says the word 'seize'.",
+      "context": "Richard’s response to the news that Gaunt is dead.",
+      "analysis": "Two lines of decorous condolence, then ‘So much for that’, and the tone drops from elegy to agenda inside a single verse line. The switch is the seizure of the Lancastrian estate happening at the level of style, several seconds before Richard says the word ‘seize’.",
       "themes": [
         "inheritance",
         "time"
@@ -765,7 +765,7 @@
         "richard",
         "gaunt"
       ],
-      "source": "Globe/Moby text, 2.1.154-156",
+      "source": "Globe/Moby text, 2.1.154–156",
       "cloze": [
         "ripest",
         "Irish"
@@ -778,7 +778,7 @@
       "reference": "2.3.167",
       "stage": "act-2",
       "context": "Explaining to York, on the road in Gloucestershire, why he has come back armed.",
-      "analysis": "Bolingbroke gives his invasion a horticultural justification: he is not raising an army, he is doing the weeding the owner has neglected. The gardener in 3.4 will use exactly this vocabulary without knowing it has already been used as a war aim, and the repetition is how the play checks Bolingbroke's claim against a disinterested witness.",
+      "analysis": "Bolingbroke gives his invasion a horticultural justification: he is not raising an army, he is doing the weeding the owner has neglected. The gardener in 3.4 will use exactly this vocabulary without knowing it has already been used as a war aim, and the repetition is how the play checks Bolingbroke’s claim against a disinterested witness.",
       "themes": [
         "england",
         "inheritance"
@@ -790,7 +790,7 @@
         "bolingbroke",
         "york"
       ],
-      "source": "Globe/Moby text, 2.3.167-168",
+      "source": "Globe/Moby text, 2.3.167–168",
       "cloze": [
         "caterpillars",
         "weed"
@@ -814,7 +814,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 3.2.54-57",
+      "source": "Globe/Moby text, 3.2.54–57",
       "cloze": [
         "balm",
         "anointed"
@@ -838,7 +838,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 3.2.155-158",
+      "source": "Globe/Moby text, 3.2.155–158",
       "cloze": [
         "ground",
         "kings"
@@ -862,7 +862,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 3.2.160-163",
+      "source": "Globe/Moby text, 3.2.160–163",
       "cloze": [
         "hollow",
         "Death"
@@ -884,7 +884,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 3.2.175-177",
+      "source": "Globe/Moby text, 3.2.175–177",
       "cloze": [
         "bread",
         "subjected"
@@ -896,7 +896,7 @@
       "speaker": "King Richard II",
       "reference": "3.3.145",
       "stage": "act-3",
-      "context": "On the walls at Flint Castle, after Northumberland brings Bolingbroke's demands.",
+      "context": "On the walls at Flint Castle, after Northumberland brings Bolingbroke’s demands.",
       "analysis": "Richard refers to himself in the third person throughout, as though reading the part of a king from a script someone else is writing. The questions are rhetorical but the answers are real concessions, so the speech gives away the kingdom in the grammar while the surface sounds like defiance.",
       "themes": [
         "performance",
@@ -909,7 +909,7 @@
         "richard",
         "northumberland"
       ],
-      "source": "Globe/Moby text, 3.3.145-148",
+      "source": "Globe/Moby text, 3.3.145–148",
       "cloze": [
         "submit",
         "deposed"
@@ -922,7 +922,7 @@
       "reference": "3.3.180",
       "stage": "act-3",
       "context": "Descending from the castle wall to meet Bolingbroke in the lower courtyard.",
-      "analysis": "Richard narrates his own stage movement, and a walk downstairs becomes the fall of a boy who could not hold his father’s horses. The pun on 'base' — the name of the yard, and a moral judgement — lets him lose the high ground physically while claiming it verbally, which is the whole tactic of his last three acts.",
+      "analysis": "Richard narrates his own stage movement, and a walk downstairs becomes the fall of a boy who could not hold his father’s horses. The pun on ‘base’ — the name of the yard, and a moral judgement — lets him lose the high ground physically while claiming it verbally, which is the whole tactic of his last three acts.",
       "themes": [
         "performance",
         "divine-right"
@@ -935,7 +935,7 @@
         "richard",
         "bolingbroke"
       ],
-      "source": "Globe/Moby text, 3.3.180-183",
+      "source": "Globe/Moby text, 3.3.180–183",
       "cloze": [
         "Phaethon",
         "base"
@@ -947,8 +947,8 @@
       "speaker": "A gardener's man",
       "reference": "3.4.45",
       "stage": "act-3",
-      "context": "In the Duke of York's garden at Langley, while the Queen listens unseen.",
-      "analysis": "A servant asks why he should tend one garden when the larger one is ruined, and in doing so repeats Gaunt's sea-wall and Bolingbroke's caterpillars from a position with nothing to gain. The play's political analysis is given to people with no rank at all, and delivered as a question about work.",
+      "context": "In the Duke of York’s garden at Langley, while the Queen listens unseen.",
+      "analysis": "A servant asks why he should tend one garden when the larger one is ruined, and in doing so repeats Gaunt’s sea-wall and Bolingbroke’s caterpillars from a position with nothing to gain. The play’s political analysis is given to people with no rank at all, and delivered as a question about work.",
       "themes": [
         "england",
         "inheritance"
@@ -960,7 +960,7 @@
         "gardener",
         "queen"
       ],
-      "source": "Globe/Moby text, 3.4.45-49",
+      "source": "Globe/Moby text, 3.4.45–49",
       "cloze": [
         "garden",
         "caterpillars"
@@ -986,7 +986,7 @@
         "carlisle",
         "bolingbroke"
       ],
-      "source": "Globe/Moby text, 4.1.138-141",
+      "source": "Globe/Moby text, 4.1.138–141",
       "cloze": [
         "prophesy",
         "manure"
@@ -1010,7 +1010,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 4.1.175-176",
+      "source": "Globe/Moby text, 4.1.175–176",
       "cloze": [
         "amen",
         "priest"
@@ -1036,7 +1036,7 @@
         "richard",
         "bolingbroke"
       ],
-      "source": "Globe/Moby text, 4.1.187-190",
+      "source": "Globe/Moby text, 4.1.187–190",
       "cloze": [
         "buckets",
         "emptier"
@@ -1049,7 +1049,7 @@
       "reference": "4.1.204",
       "stage": "act-4",
       "context": "Asked directly whether he is content to resign the crown.",
-      "analysis": "The line will not settle into an answer: 'Ay' and 'I' sounded alike, so 'Ay, no' is also 'I, no', a man agreeing and cancelling himself in the same breath. It is the shortest statement in the play of what deposition does to a person whose identity was an office.",
+      "analysis": "The line will not settle into an answer: ‘Ay’ and ‘I’ sounded alike, so ‘Ay, no’ is also ‘I, no’, a man agreeing and cancelling himself in the same breath. It is the shortest statement in the play of what deposition does to a person whose identity was an office.",
       "themes": [
         "language",
         "divine-right"
@@ -1059,7 +1059,7 @@
         "richard",
         "bolingbroke"
       ],
-      "source": "Globe/Moby text, 4.1.204-206",
+      "source": "Globe/Moby text, 4.1.204–206",
       "cloze": [
         "nothing",
         "undo"
@@ -1072,7 +1072,7 @@
       "reference": "4.1.289",
       "stage": "act-4",
       "context": "Looking into the mirror he has demanded, immediately before smashing it.",
-      "analysis": "'Face' is used as noun and verb within one line, so the word for a countenance becomes the word for bluffing, and the pun diagnoses his reign. Breaking the glass is meant to prove that grief has changed him; Bolingbroke's reply, that he has only destroyed the shadow of his face, is the coldest line in the play.",
+      "analysis": "‘Face’ is used as noun and verb within one line, so the word for a countenance becomes the word for bluffing, and the pun diagnoses his reign. Breaking the glass is meant to prove that grief has changed him; Bolingbroke’s reply, that he has only destroyed the shadow of his face, is the coldest line in the play.",
       "themes": [
         "language",
         "performance"
@@ -1084,7 +1084,7 @@
         "richard",
         "bolingbroke"
       ],
-      "source": "Globe/Moby text, 4.1.289-292",
+      "source": "Globe/Moby text, 4.1.289–292",
       "cloze": [
         "face",
         "brittle"
@@ -1097,7 +1097,7 @@
       "reference": "5.5.1",
       "stage": "act-5",
       "context": "Alone in the cell at Pomfret Castle.",
-      "analysis": "This is the only soliloquy Richard has, and it opens by admitting that the comparison he wants to make does not work. 'Hammer it out' is a smith's phrase for beating metal into shape, so the thinking is presented as manual labour — the first honest work the play lets him do.",
+      "analysis": "This is the only soliloquy Richard has, and it opens by admitting that the comparison he wants to make does not work. ‘Hammer it out’ is a smith’s phrase for beating metal into shape, so the thinking is presented as manual labour — the first honest work the play lets him do.",
       "themes": [
         "language",
         "time"
@@ -1108,7 +1108,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 5.5.1-5",
+      "source": "Globe/Moby text, 5.5.1–5",
       "cloze": [
         "prison",
         "hammer"
@@ -1121,7 +1121,7 @@
       "reference": "5.5.49",
       "stage": "act-5",
       "context": "Hearing music played badly in time, in the cell at Pomfret.",
-      "analysis": "The chiasmus puts the same two words on either side of the verb and swaps who is doing what, which is the play's plot in nine syllables. What follows is mechanism, not self-pity: a man listing his own body as clockwork, down to the finger wiping tears off a dial.",
+      "analysis": "The chiasmus puts the same two words on either side of the verb and swaps who is doing what, which is the play’s plot in nine syllables. What follows is mechanism, not self-pity: a man listing his own body as clockwork, down to the finger wiping tears off a dial.",
       "themes": [
         "time",
         "language"
@@ -1132,7 +1132,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 5.5.49-52",
+      "source": "Globe/Moby text, 5.5.49–52",
       "cloze": [
         "wasted",
         "clock"
@@ -1155,7 +1155,7 @@
         "bolingbroke",
         "richard"
       ],
-      "source": "Globe/Moby text, 5.4.2-3",
+      "source": "Globe/Moby text, 5.4.2–3",
       "cloze": [
         "friend",
         "living"
@@ -1167,8 +1167,8 @@
       "speaker": "Bolingbroke, now King Henry IV",
       "reference": "5.6.49",
       "stage": "act-5",
-      "context": "The last lines of the play, spoken over Richard's coffin.",
-      "analysis": "The new reign opens with a promise of expiation that the two parts of Henry IV never allow him to keep; he is still planning the same crusade, and still failing to leave, in the play that follows. Washing also picks up Richard's claim that no water could remove the balm of kingship, and applies the image to a stain instead of a blessing.",
+      "context": "The last lines of the play, spoken over Richard’s coffin.",
+      "analysis": "The new reign opens with a promise of expiation that the two parts of Henry IV never allow him to keep; he is still planning the same crusade, and still failing to leave, in the play that follows. Washing also picks up Richard’s claim that no water could remove the balm of kingship, and applies the image to a stain instead of a blessing.",
       "themes": [
         "divine-right",
         "england"
@@ -1177,7 +1177,7 @@
       "characters": [
         "bolingbroke"
       ],
-      "source": "Globe/Moby text, 5.6.49-50",
+      "source": "Globe/Moby text, 5.6.49–50",
       "cloze": [
         "voyage",
         "guilty"
@@ -1199,7 +1199,7 @@
     },
     {
       "year": 1381,
-      "label": "The Peasants' Revolt",
+      "label": "The Peasants’ Revolt",
       "detail": "The young king faces the rebels in person, an episode Shakespeare leaves out of a play that begins seventeen years later.",
       "kind": "context"
     },
@@ -1223,7 +1223,7 @@
     },
     {
       "year": 1587,
-      "label": "Holinshed's Chronicles reissued",
+      "label": "Holinshed’s Chronicles reissued",
       "detail": "The second edition gave Shakespeare the sequence of events for this play and the ones that follow it.",
       "kind": "context"
     },
@@ -1242,7 +1242,7 @@
     {
       "year": 1601,
       "label": "A Richard II play is staged before the Essex rising",
-      "detail": "Supporters of the Earl of Essex paid for a performance of a play about Richard II on the eve of the revolt; the record does not name Shakespeare's text outright, but the subject was enough to make it dangerous.",
+      "detail": "Supporters of the Earl of Essex paid for a performance of a play about Richard II on the eve of the revolt; the record does not name Shakespeare’s text outright, but the subject was enough to make it dangerous.",
       "kind": "reception"
     },
     {
@@ -1269,13 +1269,13 @@
       "name": "Westminster Hall, London",
       "lat": 51.4995,
       "lon": -0.1248,
-      "note": "The single scene of Act IV: Carlisle's prophecy, the resignation of the crown and the broken mirror."
+      "note": "The single scene of Act IV: Carlisle’s prophecy, the resignation of the crown and the broken mirror."
     },
     {
       "name": "Ravenspurgh, Humber estuary",
       "lat": 53.5786,
       "lon": 0.1131,
-      "note": "Bolingbroke's landing place, long since lost to the sea near Spurn Head."
+      "note": "Bolingbroke’s landing place, long since lost to the sea near Spurn Head."
     },
     {
       "name": "Flint Castle",
@@ -1293,7 +1293,7 @@
       "name": "Berkeley Castle",
       "lat": 51.6905,
       "lon": -2.4572,
-      "note": "Where York meets Bolingbroke's advancing force and fails to arrest it."
+      "note": "Where York meets Bolingbroke’s advancing force and fails to arrest it."
     }
   ],
   "criticalViews": [
@@ -1303,9 +1303,9 @@
       "counter": "It tends to leave Bolingbroke a blank, when the play’s silences around him look deliberate."
     },
     {
-      "position": "A play about the king's two bodies",
-      "summary": "Legal and constitutional readings take Richard's insistence on anointing seriously, and follow what happens when the sacred person and the political office are pulled apart in public.",
-      "counter": "Richard's own behaviour undermines the doctrine before Bolingbroke does: he breaks the law of inheritance that makes him king in the first place."
+      "position": "A play about the king’s two bodies",
+      "summary": "Legal and constitutional readings take Richard’s insistence on anointing seriously, and follow what happens when the sacred person and the political office are pulled apart in public.",
+      "counter": "Richard’s own behaviour undermines the doctrine before Bolingbroke does: he breaks the law of inheritance that makes him king in the first place."
     },
     {
       "position": "A play read for its politics in its own time",
@@ -1318,7 +1318,7 @@
       "question": "Is Richard deposed by Bolingbroke, or does he depose himself?",
       "focus": "Agency, ceremony and the deposition scene",
       "plan": [
-        "Establish the legal position first: the seizure of Gaunt's estate in 2.1 breaks the inheritance rule that Richard's own title depends on, and York says so on stage.",
+        "Establish the legal position first: the seizure of Gaunt’s estate in 2.1 breaks the inheritance rule that Richard’s own title depends on, and York says so on stage.",
         "Show Bolingbroke never stating a claim: track what he actually says in 2.3 and 3.3 against what his army achieves.",
         "Read 3.3 as staging — the descent to the base court happens before any terms are agreed.",
         "Take 4.1 slowly: Richard runs the ceremony, supplies the responses, calls for the mirror and narrates his own fall.",
@@ -1330,19 +1330,19 @@
       "focus": "Allegory, class and political judgement",
       "plan": [
         "Set the scene in its place: 3.4 sits between the surrender at Flint and the deposition at Westminster, and nothing in the plot happens in it.",
-        "Trace the garden imagery backwards to Gaunt's sea-wall in 2.1 and Bolingbroke's caterpillars in 2.3.",
+        "Trace the garden imagery backwards to Gaunt’s sea-wall in 2.1 and Bolingbroke’s caterpillars in 2.3.",
         "Note that the gardener has no rank and no interest, which is what gives his judgement its authority.",
         "Look at how the Queen, overhearing, changes political analysis into personal grief in the same scene.",
         "Close on the fact that the servants speak verse: the play offers no comic underclass, so this is as far outside the court as it can reach."
       ]
     },
     {
-      "question": "How does the play's language change once Richard stops being king?",
+      "question": "How does the play’s language change once Richard stops being king?",
       "focus": "Style, self-knowledge and the limits of eloquence",
       "plan": [
-        "Compare Richard's public style in Act I — royal plural, third person, crisp sentences of command — with his speech after 3.2.",
+        "Compare Richard’s public style in Act I — royal plural, third person, crisp sentences of command — with his speech after 3.2.",
         "Use the hollow crown speech to show the conceits lengthening as his options shorten.",
-        "Examine 4.1 for wordplay that works against him: 'face' as noun and verb, 'Ay, no' heard as 'I, no'.",
+        "Examine 4.1 for wordplay that works against him: ‘face’ as noun and verb, ‘Ay, no’ heard as ‘I, no’.",
         "Turn to 5.5 and the prison soliloquy, where he admits at the start that the comparison will not hold.",
         "Judge whether the eloquence is compensation, self-deception, or the only form of understanding the play allows him."
       ]
@@ -1351,10 +1351,10 @@
       "question": "Does the play take sides between an incompetent king and a capable usurper?",
       "focus": "Legitimacy and order",
       "plan": [
-        "Set out Richard's record honestly: the murder of Gloucester behind the action, the farming of the realm in 1.4, the confiscation in 2.1.",
-        "Set out Bolingbroke's: no soliloquy, no stated claim, and a competence the play never denies.",
+        "Set out Richard’s record honestly: the murder of Gloucester behind the action, the farming of the realm in 1.4, the confiscation in 2.1.",
+        "Set out Bolingbroke’s: no soliloquy, no stated claim, and a competence the play never denies.",
         "Weigh Carlisle’s prophecy in 4.1, which is treasonous and, on the historical record, correct.",
-        "Consider Aumerle's plot in 5.2 and 5.3 as the first instalment of the disorder Carlisle predicted.",
+        "Consider Aumerle’s plot in 5.2 and 5.3 as the first instalment of the disorder Carlisle predicted.",
         "Finish on the last twenty lines, where the new king inherits a corpse, a guilt and a crusade he will never make."
       ]
     }
@@ -1363,13 +1363,13 @@
     "Bolingbroke is given no soliloquy at all. Does that make him unreadable, or is the silence itself the characterisation?",
     "Gaunt calls England a blessed plot and then says it has conquered itself. Which half of the speech does the rest of the play support?",
     "Richard smashes the mirror to prove that sorrow has changed his face. What does it mean that the face is unchanged?",
-    "Why does Shakespeare give the clearest account of the kingdom's condition to a gardener with no name?",
+    "Why does Shakespeare give the clearest account of the kingdom’s condition to a gardener with no name?",
     "The play never lets anyone speak prose. What would be gained, and what lost, if the gardeners or the grooms did?"
   ],
   "related": [
     {
       "href": "/books/henry-iv-part-1/",
-      "why": "The direct sequel: Bolingbroke on the throne, paying for this play's bargains with Northumberland and the Percys."
+      "why": "The direct sequel: Bolingbroke on the throne, paying for this play’s bargains with Northumberland and the Percys."
     },
     {
       "href": "/books/henry-iv-part-2/",
@@ -1377,7 +1377,7 @@
     },
     {
       "href": "/books/henry-v/",
-      "why": "The end of the sequence, in which Richard's murder is still being prayed about on the night before Agincourt."
+      "why": "The end of the sequence, in which Richard’s murder is still being prayed about on the night before Agincourt."
     },
     {
       "href": "/books/richard-iii/",

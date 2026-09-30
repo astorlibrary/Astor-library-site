@@ -14,18 +14,18 @@
   "difficulty": 3,
   "lengthNote": "About 2,500 lines, nearly all verse. Act I is a single scene of some 495 lines, played without a break.",
   "openingLine": "Noble patricians, patrons of my right",
-  "summary": "Titus comes home from ten years of war against the Goths with four surviving sons, two in coffins, and a captive queen. Before the funeral is over he has Tamora's eldest boy hacked apart and burned on the family tomb, and every horror in the next four acts answers that one decision. Tamora marries the new emperor, her sons kill Lavinia's husband and cut out her tongue and hands, Titus loses a hand and two more sons to a trick, and the play ends with a queen eating her children at dinner. It is Shakespeare's first tragedy and his most extreme.",
-  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "summary": "Titus comes home from ten years of war against the Goths with four surviving sons, two in coffins, and a captive queen. Before the funeral is over he has Tamora’s eldest boy hacked apart and burned on the family tomb, and every horror in the next four acts answers that one decision. Tamora marries the new emperor, her sons kill Lavinia’s husband and cut out her tongue and hands, Titus loses a hand and two more sons to a trick, and the play ends with a queen eating her children at dinner. It is Shakespeare’s first tragedy and his most extreme.",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
     "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
-    "note": "Every quotation here is checked word for word against this text, and act, scene and line references follow the traditional Globe numbering, which modern editions vary from by a line or two."
+    "note": "Line numbers follow the traditional Globe numbering, from which modern editions vary by a line or two."
   },
   "atAGlance": [
     {
       "label": "Written",
       "value": "c. 1592",
-      "note": "Early, and possibly the earliest of the tragedies. Ben Jonson's 1614 joke about the play's admirers implies a first audience around 1589."
+      "note": "Early, and possibly the earliest of the tragedies. Ben Jonson’s 1614 joke about the play’s admirers implies a first audience around 1589."
     },
     {
       "label": "First staged",
@@ -35,12 +35,12 @@
     {
       "label": "First printed",
       "value": "1594",
-      "note": "John Danter's quarto for Edward White and Thomas Millington, the first printing of any Shakespeare play. One copy survives, in the Folger."
+      "note": "John Danter’s quarto for Edward White and Thomas Millington, the first printing of any Shakespeare play. One copy survives, in the Folger."
     },
     {
       "label": "Sources",
       "value": "No single narrative source",
-      "note": "Ovid's Philomela, Seneca's Thyestes, the Lucrece story and a mass of Roman material, combined by Shakespeare himself."
+      "note": "Ovid’s Philomela, Seneca’s Thyestes, the Lucrece story and a mass of Roman material, combined by Shakespeare himself."
     },
     {
       "label": "Shape",
@@ -53,7 +53,7 @@
       "id": "act-1",
       "label": "Act I",
       "title": "A funeral, an election and a sacrifice",
-      "summary": "Everything is set in motion in a single unbroken scene of nearly five hundred lines. Two brothers fight over the empire, the people offer it to Titus, and Titus hands it to Saturninus. Between those decisions he burns Tamora's eldest son on his family tomb, stabs his own son Mutius for blocking a doorway, and watches the woman he has just wronged crowned Empress of Rome. By the end of the act every later murder has a cause.",
+      "summary": "Everything is set in motion in a single unbroken scene of nearly five hundred lines. Two brothers fight over the empire, the people offer it to Titus, and Titus hands it to Saturninus. Between those decisions he burns Tamora’s eldest son on his family tomb, stabs his own son Mutius for blocking a doorway, and watches the woman he has just wronged crowned Empress of Rome. By the end of the act every later murder has a cause.",
       "scenes": [
         {
           "ref": "1.1",
@@ -66,7 +66,7 @@
       "id": "act-2",
       "label": "Act II",
       "title": "The hunt, the pit and the forest",
-      "summary": "The court rides out to hunt and the play moves into the woods, where Aaron has buried a bag of gold and written a letter that will hang two innocent men. Bassianus is stabbed and dropped into a pit, Titus's sons Quintus and Martius fall in after him and are arrested for the murder, and Lavinia is taken away by Chiron and Demetrius. Marcus finds her at the end, and cannot say what he sees.",
+      "summary": "The court rides out to hunt and the play moves into the woods, where Aaron has buried a bag of gold and written a letter that will hang two innocent men. Bassianus is stabbed and dropped into a pit, Titus’s sons Quintus and Martius fall in after him and are arrested for the murder, and Lavinia is taken away by Chiron and Demetrius. Marcus finds her at the end, and cannot say what he sees.",
       "scenes": [
         {
           "ref": "2.1",
@@ -94,17 +94,17 @@
       "id": "act-3",
       "label": "Act III",
       "title": "The hand, and the fly",
-      "summary": "Titus pleads for his condemned sons to a street that has already emptied, then lies down and tells his griefs to the stones. Aaron arrives with the emperor's offer: a hand for two lives. Titus lets him cut it off and gets back two heads and his own hand in scorn. He stops weeping, laughs, and takes his vow. The act closes on a family dinner and a killed fly.",
+      "summary": "Titus pleads for his condemned sons to a street that has already emptied, then lies down and tells his griefs to the stones. Aaron arrives with the emperor’s offer: a hand for two lives. Titus lets him cut it off and gets back two heads and his own hand in scorn. He stops weeping, laughs, and takes his vow. The act closes on a family dinner and a killed fly.",
       "scenes": [
         {
           "ref": "3.1",
           "title": "A hand for two heads",
-          "summary": "Titus pleads, loses the argument to an empty street, gives his hand to Aaron, receives his sons' heads, laughs, and swears revenge; Lucius is banished and goes to raise an army among the Goths."
+          "summary": "Titus pleads, loses the argument to an empty street, gives his hand to Aaron, receives his sons’ heads, laughs, and swears revenge; Lucius is banished and goes to raise an army among the Goths."
         },
         {
           "ref": "3.2",
           "title": "The fly",
-          "summary": "At a banquet Titus reads Lavinia's signs aloud, then attacks Marcus for killing a fly, and forgives him once Marcus says the fly looked like the empress's Moor."
+          "summary": "At a banquet Titus reads Lavinia’s signs aloud, then attacks Marcus for killing a fly, and forgives him once Marcus says the fly looked like the empress’s Moor."
         }
       ]
     },
@@ -112,7 +112,7 @@
       "id": "act-4",
       "label": "Act IV",
       "title": "Names in the sand, a black child, arrows to the gods",
-      "summary": "Lavinia chases her nephew for his copy of Ovid, turns to the story of Philomela, and writes her attackers' names in the sand with a staff held in her mouth. Tamora's child is born black and Aaron kills the nurse to keep it. Titus, apparently mad, shoots petitions to the gods over the palace wall, and in secret begins to arrange what he intends to do.",
+      "summary": "Lavinia chases her nephew for his copy of Ovid, turns to the story of Philomela, and writes her attackers’ names in the sand with a staff held in her mouth. Tamora’s child is born black and Aaron kills the nurse to keep it. Titus, apparently mad, shoots petitions to the gods over the palace wall, and in secret begins to arrange what he intends to do.",
       "scenes": [
         {
           "ref": "4.1",
@@ -122,17 +122,17 @@
         {
           "ref": "4.2",
           "title": "Aaron and his son",
-          "summary": "The nurse brings Tamora's black baby with orders to kill it. Aaron kills her instead, refuses his accomplices, and carries the child away to raise among the Goths."
+          "summary": "The nurse brings Tamora’s black baby with orders to kill it. Aaron kills her instead, refuses his accomplices, and carries the child away to raise among the Goths."
         },
         {
           "ref": "4.3",
           "title": "The arrows",
-          "summary": "Titus sends his kinsmen to dig for Justice in the underworld and to fish for her at sea, then has them shoot letters addressed to the gods into the emperor's court."
+          "summary": "Titus sends his kinsmen to dig for Justice in the underworld and to fish for her at sea, then has them shoot letters addressed to the gods into the emperor’s court."
         },
         {
           "ref": "4.4",
           "title": "Saturninus reads",
-          "summary": "The emperor rages over the arrows and orders the Clown who delivered a letter to be hanged. Tamora calms him and goes off to play Revenge at Titus's house."
+          "summary": "The emperor rages over the arrows and orders the Clown who delivered a letter to be hanged. Tamora calms him and goes off to play Revenge at Titus’s house."
         }
       ]
     },
@@ -140,22 +140,22 @@
       "id": "act-5",
       "label": "Act V",
       "title": "The banquet",
-      "summary": "Lucius returns at the head of a Gothic army, takes Aaron prisoner, and buys a full confession with a promise to keep the baby alive. Tamora arrives at Titus's study disguised as Revenge and leaves her sons behind as hostages to his madness. He cuts their throats, bakes them, serves them to their mother, kills Lavinia and then Tamora, and the survivors count what is left of Rome.",
+      "summary": "Lucius returns at the head of a Gothic army, takes Aaron prisoner, and buys a full confession with a promise to keep the baby alive. Tamora arrives at Titus’s study disguised as Revenge and leaves her sons behind as hostages to his madness. He cuts their throats, bakes them, serves them to their mother, kills Lavinia and then Tamora, and the survivors count what is left of Rome.",
       "scenes": [
         {
           "ref": "5.1",
           "title": "Aaron on the ladder",
-          "summary": "Caught with the child, Aaron trades the whole plot for the baby's life and then lists his crimes with relish, wishing only that he had done ten thousand more."
+          "summary": "Caught with the child, Aaron trades the whole plot for the baby’s life and then lists his crimes with relish, wishing only that he had done ten thousand more."
         },
         {
           "ref": "5.2",
           "title": "Revenge, Rape and Murder",
-          "summary": "Tamora comes disguised to Titus's study; he plays along, keeps Chiron and Demetrius when she goes, binds them, and cuts their throats over a basin Lavinia holds between her stumps."
+          "summary": "Tamora comes disguised to Titus’s study; he plays along, keeps Chiron and Demetrius when she goes, binds them, and cuts their throats over a basin Lavinia holds between her stumps."
         },
         {
           "ref": "5.3",
           "title": "The banquet",
-          "summary": "Titus serves the pie, kills Lavinia, names the pie's contents, stabs Tamora and is killed by Saturninus, who is killed by Lucius. Lucius is made emperor, sentences Aaron to be buried alive, and orders Tamora thrown to the birds."
+          "summary": "Titus serves the pie, kills Lavinia, names the pie’s contents, stabs Tamora and is killed by Saturninus, who is killed by Lucius. Lucius is made emperor, sentences Aaron to be buried alive, and orders Tamora thrown to the birds."
         }
       ]
     }
@@ -165,7 +165,7 @@
       "id": "titus",
       "name": "Titus Andronicus",
       "role": "Roman general, back from ten years of war",
-      "summary": "He has buried twenty-one sons for Rome and cannot imagine an argument that Rome's forms will not settle. He gives away the empire, sacrifices a prisoner because the rite requires it, and kills his own son for standing in a doorway. When the forms stop working he goes to the stones, then to the gods by arrow, and finally does the arithmetic himself with a knife and a pie dish.",
+      "summary": "He has buried twenty-one sons for Rome and cannot imagine an argument that Rome’s forms will not settle. He gives away the empire, sacrifices a prisoner because the rite requires it, and kills his own son for standing in a doorway. When the forms stop working he goes to the stones, then to the gods by arrow, and finally does the arithmetic himself with a knife and a pie dish.",
       "clue": "Refuses the empire, then kills his own son for blocking a door, and ends the play dressed as a cook.",
       "firstAppearance": "1.1",
       "traits": [
@@ -216,7 +216,7 @@
     {
       "id": "lavinia",
       "name": "Lavinia",
-      "role": "Titus's daughter, betrothed to Bassianus",
+      "role": "Titus’s daughter, betrothed to Bassianus",
       "summary": "She is bargained over by two men in the first scene and has her tongue and hands cut off in the second act so that she can name nobody. What follows is the hardest thing in Shakespeare to stage: forty lines in which her uncle describes her, scene after scene in which her family guesses at her meaning, and then the moment she takes a staff in her mouth and writes two names in the sand.",
       "clue": "Writes the names of her attackers in sand with a staff held in her mouth, guided by her stumps.",
       "firstAppearance": "1.1",
@@ -262,8 +262,8 @@
       "id": "tamora",
       "name": "Tamora",
       "role": "Queen of the Goths, then Empress of Rome",
-      "summary": "She begins the play kneeling in the street to beg for her son's life and is refused in the name of piety. Within two hundred lines she is empress, and she spends the rest of the play making Rome pay. The play lets her be right about the sacrifice and monstrous about everything after it, and she never pretends the two are connected by anything but appetite.",
-      "clue": "Kneels in the street for her eldest son's life, is refused, and is crowned empress in the same scene.",
+      "summary": "She begins the play kneeling in the street to beg for her son’s life and is refused in the name of piety. Within two hundred lines she is empress, and she spends the rest of the play making Rome pay. The play lets her be right about the sacrifice and monstrous about everything after it, and she never pretends the two are connected by anything but appetite.",
+      "clue": "Kneels in the street for her eldest son’s life, is refused, and is crowned empress in the same scene.",
       "firstAppearance": "1.1",
       "traits": [
         "eloquent",
@@ -308,7 +308,7 @@
     {
       "id": "aaron",
       "name": "Aaron",
-      "role": "A Moor, Tamora's lover, and the engineer of the plot",
+      "role": "A Moor, Tamora’s lover, and the engineer of the plot",
       "summary": "He buries the gold, writes the letter, guides the brothers to the pit, talks Titus out of his hand and watches through a crack in the wall while the heads come back. He is also the only parent in the play who protects a child: when his black son is born he kills the nurse, refuses the empress and carries the baby off. On the ladder he confesses everything and regrets one good deed.",
       "clue": "Laughs until his own eyes are wet at the sight of Titus getting two heads back for his hand, then risks everything for his newborn son.",
       "firstAppearance": "1.1",
@@ -362,8 +362,8 @@
     {
       "id": "saturninus",
       "name": "Saturninus",
-      "role": "The late emperor's elder son, and Rome's new emperor",
-      "summary": "He is given the empire by the man he immediately insults, and loses Lavinia to his brother within a hundred lines of claiming her. Everything he does afterwards is reaction: he marries Tamora on the spot, condemns Titus's sons on evidence Aaron arranged for him, orders a clown hanged for carrying a letter, and dies at his own banquet without ever understanding who was moving him.",
+      "role": "The late emperor’s elder son, and Rome’s new emperor",
+      "summary": "He is given the empire by the man he immediately insults, and loses Lavinia to his brother within a hundred lines of claiming her. Everything he does afterwards is reaction: he marries Tamora on the spot, condemns Titus’s sons on evidence Aaron arranged for him, orders a clown hanged for carrying a letter, and dies at his own banquet without ever understanding who was moving him.",
       "clue": "Chooses a new bride mid-scene when the first one is carried off, and never asks who arranged the evidence he sentences men on.",
       "firstAppearance": "1.1",
       "traits": [
@@ -403,7 +403,7 @@
     {
       "id": "lucius",
       "name": "Lucius",
-      "role": "Titus's eldest surviving son, exile, and the last emperor standing",
+      "role": "Titus’s eldest surviving son, exile, and the last emperor standing",
       "summary": "He asks for the sacrifice in the first scene, which makes him the cause of the revenge as much as his father. Banished for trying to rescue his brothers, he comes back at the head of the army of the people whose prince he had burned. He swears by a god Aaron does not believe in to keep a baby alive, and keeps the promise while sentencing its father to starve in the ground.",
       "clue": "Calls for the sacrifice in Act I, then returns with a Gothic army to avenge what it caused.",
       "firstAppearance": "1.1",
@@ -444,8 +444,8 @@
     {
       "id": "marcus",
       "name": "Marcus Andronicus",
-      "role": "Tribune of the People, and Titus's brother",
-      "summary": "He offers Rome to Titus, argues him into burying Mutius, and finds Lavinia in the wood. His long speech over her has been the play's most argued-about passage for two centuries: it is beautiful, it is about Ovid, and it does nothing for her. He kills the fly, thinks of the staff in the sand, and is left at the end trying to talk a city back into one piece.",
+      "role": "Tribune of the People, and Titus’s brother",
+      "summary": "He offers Rome to Titus, argues him into burying Mutius, and finds Lavinia in the wood. His long speech over her has been the play’s most argued-about passage for two centuries: it is beautiful, it is about Ovid, and it does nothing for her. He kills the fly, thinks of the staff in the sand, and is left at the end trying to talk a city back into one piece.",
       "clue": "Speaks forty lines of elegant verse to a niece who cannot answer, and later kills a fly at dinner.",
       "firstAppearance": "1.1",
       "traits": [
@@ -486,8 +486,8 @@
     {
       "id": "demetrius",
       "name": "Demetrius",
-      "role": "Tamora's elder surviving son",
-      "summary": "He and his brother open Act II with swords drawn over Lavinia and are still finishing each other's sentences when Titus cuts their throats. Demetrius supplies the reasoning: she is a woman, therefore may be won; she is Lavinia, therefore must be loved. He puts the first knife into Bassianus, talks Tamora out of killing Lavinia on the spot — thrash the corn first, burn the straw after — and jeers at her to go and tell.",
+      "role": "Tamora’s elder surviving son",
+      "summary": "He and his brother open Act II with swords drawn over Lavinia and are still finishing each other’s sentences when Titus cuts their throats. Demetrius supplies the reasoning: she is a woman, therefore may be won; she is Lavinia, therefore must be loved. He puts the first knife into Bassianus, talks Tamora out of killing Lavinia on the spot — thrash the corn first, burn the straw after — and jeers at her to go and tell.",
       "clue": "Tells his brother that more water goes by the mill than the miller knows of, and strikes Bassianus first.",
       "firstAppearance": "1.1",
       "traits": [
@@ -528,8 +528,8 @@
     {
       "id": "chiron",
       "name": "Chiron",
-      "role": "Tamora's younger son",
-      "summary": "The younger and touchier of the pair, mocked by his brother for the dancing-rapier their mother gave him in the quarrel that opens Act II. He orders Bassianus's body dragged to a secret hole, then tells Lavinia to write her meaning down if her stumps will let her, a joke the play turns into the instrument of his death. Watching Alarbus led away in 1.1, he says Scythia was never half so barbarous, and he is not counting himself.",
+      "role": "Tamora’s younger son",
+      "summary": "The younger and touchier of the pair, mocked by his brother for the dancing-rapier their mother gave him in the quarrel that opens Act II. He orders Bassianus’s body dragged to a secret hole, then tells Lavinia to write her meaning down if her stumps will let her, a joke the play turns into the instrument of his death. Watching Alarbus led away in 1.1, he says Scythia was never half so barbarous, and he is not counting himself.",
       "clue": "Jeers that Lavinia should write with her stumps, and is bound and bled over a basin she holds.",
       "firstAppearance": "1.1",
       "traits": [
@@ -570,7 +570,7 @@
     {
       "id": "young-lucius",
       "name": "Young Lucius",
-      "role": "Lucius's son, a boy",
+      "role": "Lucius’s son, a boy",
       "summary": "He carries the books his aunt chases him for, and his copy of Ovid is what lets the family finally learn who attacked her. He offers to stab Chiron and Demetrius with a dagger and is told there is a better way. At the end he cannot get a word out for crying, which in this play is the only honest response anyone manages to the sight of the dead.",
       "clue": "Drops his schoolbooks running from his aunt, and one of them is the Metamorphoses.",
       "firstAppearance": "3.2",
@@ -611,7 +611,7 @@
       "id": "revenge",
       "name": "Revenge",
       "summary": "Nobody in the play invents revenge; they all inherit it. Alarbus dies because Lucius asks for a sacrifice, Bassianus dies because Tamora was refused, Chiron and Demetrius die because Lavinia was attacked, and Tamora dies at a table. Each killing is presented by its author as the settling of an account, which is why the play can keep going after the point at which grief should have stopped it.",
-      "development": "The sacrifice at 1.1 sets the rate; Tamora's aside at 1.1.451 promises a day; Titus takes his vow over two severed heads in 3.1; and 5.3 collects everything owed in nine lines."
+      "development": "The sacrifice at 1.1 sets the rate; Tamora’s aside at 1.1.451 promises a day; Titus takes his vow over two severed heads in 3.1; and 5.3 collects everything owed in nine lines."
     },
     {
       "id": "justice",
@@ -628,7 +628,7 @@
     {
       "id": "silence",
       "name": "Lavinia",
-      "summary": "The play cuts out its heroine's tongue at the end of Act II and then spends three acts on the problem of what she still means. Her family talk at her, over her and for her. Titus claims he can read every sign she makes and promises to wrest an alphabet out of her stumps, which is devotion and also another way of speaking on her behalf.",
+      "summary": "The play cuts out its heroine’s tongue at the end of Act II and then spends three acts on the problem of what she still means. Her family talk at her, over her and for her. Titus claims he can read every sign she makes and promises to wrest an alphabet out of her stumps, which is devotion and also another way of speaking on her behalf.",
       "development": "She argues fluently with Tamora at 2.3; Marcus describes her for forty lines at 2.4; Titus interprets her at 3.2; she writes for herself at 4.1, and her father kills her at 5.3 without asking."
     },
     {
@@ -673,7 +673,7 @@
       "id": "personification",
       "name": "Personification",
       "definition": "An abstract idea given a body, a costume and lines to speak.",
-      "inThisBook": "Revenge, Rape and Murder knock at Titus's study door in 5.2, which is what an old morality play would do in earnest. They are a queen and her two sons in costume, and Titus has already named her to her face by the evidence of his own stump, so the allegory is a lie both sides keep up until he cuts two of its throats."
+      "inThisBook": "Revenge, Rape and Murder knock at Titus’s study door in 5.2, which is what an old morality play would do in earnest. They are a queen and her two sons in costume, and Titus has already named her to her face by the evidence of his own stump, so the allegory is a lie both sides keep up until he cuts two of its throats."
     },
     {
       "id": "hyperbole",
@@ -685,13 +685,13 @@
       "id": "set-piece",
       "name": "The set piece",
       "definition": "A long formal speech that halts the action and asks to be admired on its own terms.",
-      "inThisBook": "Marcus's forty lines over the mutilated Lavinia at 2.4 stop the play dead. Lutes, conduits, Titan's face, Cerberus: the verse is exquisite and it leaves her standing there bleeding while he finishes."
+      "inThisBook": "Marcus’s forty lines over the mutilated Lavinia at 2.4 stop the play dead. Lutes, conduits, Titan’s face, Cerberus: the verse is exquisite and it leaves her standing there bleeding while he finishes."
     },
     {
       "id": "black-comedy",
       "name": "Black comedy",
       "definition": "Jokes placed where an audience expects horror, so that laughter and disgust arrive together.",
-      "inThisBook": "Titus laughs on hearing he has no tears left, Marcus explains that the fly resembled the empress's Moor, and a clown is hanged for delivering a letter with two pigeons. Productions discover the play is funny and then have to decide what to do about it."
+      "inThisBook": "Titus laughs on hearing he has no tears left, Marcus explains that the fly resembled the empress’s Moor, and a clown is hanged for delivering a letter with two pigeons. Productions discover the play is funny and then have to decide what to do about it."
     }
   ],
   "quotations": [
@@ -702,7 +702,7 @@
       "reference": "1.1.117",
       "stage": "act-1",
       "context": "Kneeling in the street, begging Titus to spare her eldest son Alarbus.",
-      "analysis": "She argues in Rome's own vocabulary, and she argues well: nobility, the gods, mercy as a mark of rank. Titus answers with the word religiously and burns the boy anyway. Everything Tamora does for the rest of the play is licensed by the fact that she asked properly first and was refused on a technicality of rite.",
+      "analysis": "She argues in Rome’s own vocabulary, and she argues well: nobility, the gods, mercy as a mark of rank. Titus answers with the word religiously and burns the boy anyway. Everything Tamora does for the rest of the play is licensed by the fact that she asked properly first and was refused on a technicality of rite.",
       "themes": [
         "honour",
         "justice",
@@ -713,7 +713,7 @@
         "tamora",
         "titus"
       ],
-      "source": "Project Gutenberg eBook 100, 1.1.117-119",
+      "source": "Project Gutenberg eBook 100, 1.1.117–119",
       "cloze": [
         "mercy",
         "badge"
@@ -726,7 +726,7 @@
       "reference": "1.1.130",
       "stage": "act-1",
       "context": "As her son is led off to be hacked apart and burned on the Andronici tomb.",
-      "analysis": "Four words that hold the play's whole difficulty. Titus has just used the word religiously to justify the killing, and she hands it straight back with cruel attached. The line concedes that the sacrifice is genuinely pious and insists that piety is what makes it monstrous, which is the charge Rome never answers.",
+      "analysis": "Four words that hold the play’s whole difficulty. Titus has just used the word religiously to justify the killing, and she hands it straight back with cruel attached. The line concedes that the sacrifice is genuinely pious and insists that piety is what makes it monstrous, which is the charge Rome never answers.",
       "themes": [
         "honour",
         "justice"
@@ -748,7 +748,7 @@
       "speaker": "Marcus",
       "reference": "1.1.379",
       "stage": "act-1",
-      "context": "Kneeling with Titus's sons, begging him to let Mutius be buried in the family tomb.",
+      "context": "Kneeling with Titus’s sons, begging him to let Mutius be buried in the family tomb.",
       "analysis": "Marcus means it as a compliment and the play hears it as a question. Roman and barbarous have been opposed since the first scene, where Chiron said Scythia was never half so barbarous as this. The distinction has already collapsed: the Roman thing and the barbarous thing were the same act, performed at the same tomb, an hour earlier.",
       "themes": [
         "honour",
@@ -773,7 +773,7 @@
       "speaker": "Titus",
       "reference": "1.1.315",
       "stage": "act-1",
-      "context": "After Saturninus has sneered at Lavinia as a changing piece and at Titus's sons as lawless.",
+      "context": "After Saturninus has sneered at Lavinia as a changing piece and at Titus’s sons as lawless.",
       "analysis": "The first blade in a play full of them, and it is only a figure of speech. By Act III the metaphors have all come true: hands actually come off, tongues actually go, and the razor is a real knife held by a father over two bound men. Again and again Titus’s language predicts the stage business that arrives to replace it.",
       "themes": [
         "language"
@@ -809,7 +809,7 @@
         "saturninus",
         "titus"
       ],
-      "source": "Project Gutenberg eBook 100, 1.1.451-454",
+      "source": "Project Gutenberg eBook 100, 1.1.451–454",
       "cloze": [
         "massacre",
         "faction"
@@ -821,7 +821,7 @@
       "speaker": "Aaron",
       "reference": "2.3.38",
       "stage": "act-2",
-      "context": "Refusing Tamora's invitation to lie down with her in the wood.",
+      "context": "Refusing Tamora’s invitation to lie down with her in the wood.",
       "analysis": "Tamora has just spent twenty lines on birds, shade and a golden slumber. Aaron cuts across her pastoral with three body parts and a verb from a forge. Hammering makes revenge a trade with tools and a rhythm, and it tells the audience who is actually running the plot: the man turning her down for a morning’s work, not the empress.",
       "themes": [
         "revenge"
@@ -831,7 +831,7 @@
         "aaron",
         "tamora"
       ],
-      "source": "Project Gutenberg eBook 100, 2.3.38-39",
+      "source": "Project Gutenberg eBook 100, 2.3.38–39",
       "cloze": [
         "Vengeance",
         "hammering"
@@ -843,8 +843,8 @@
       "speaker": "Tamora",
       "reference": "2.3.161",
       "stage": "act-2",
-      "context": "Answering Lavinia, who has begged her in the name of Titus's mercy to Tamora herself.",
-      "analysis": "Lavinia's argument is that Titus spared Tamora's life, so Tamora owes the daughter something. The reply concedes the debt and converts it: precisely because Titus is the father, the daughter is the payment. Hadst thou in person is the cruellest part. Tamora states outright that Lavinia has done nothing, and will suffer for that reason.",
+      "context": "Answering Lavinia, who has begged her in the name of Titus’s mercy to Tamora herself.",
+      "analysis": "Lavinia’s argument is that Titus spared Tamora’s life, so Tamora owes the daughter something. The reply concedes the debt and converts it: precisely because Titus is the father, the daughter is the payment. Hadst thou in person is the cruellest part. Tamora states outright that Lavinia has done nothing, and will suffer for that reason.",
       "themes": [
         "revenge",
         "justice"
@@ -855,7 +855,7 @@
         "lavinia",
         "titus"
       ],
-      "source": "Project Gutenberg eBook 100, 2.3.161-162",
+      "source": "Project Gutenberg eBook 100, 2.3.161–162",
       "cloze": [
         "offended",
         "pitiless"
@@ -881,7 +881,7 @@
         "demetrius",
         "lavinia"
       ],
-      "source": "Project Gutenberg eBook 100, 2.4.1-2",
+      "source": "Project Gutenberg eBook 100, 2.4.1–2",
       "cloze": [
         "tongue",
         "ravished"
@@ -893,7 +893,7 @@
       "speaker": "Chiron",
       "reference": "2.4.3",
       "stage": "act-2",
-      "context": "Joining his brother's mockery before they leave her alone.",
+      "context": "Joining his brother’s mockery before they leave her alone.",
       "analysis": "The play takes the joke literally: it becomes the instrument of his death. Two acts later Lavinia does play the scribe, guiding a staff with her stumps and her mouth, and writes his name. Chiron names the method by which he will be identified, bound, gagged and bled over a basin. Few taunts in Shakespeare are repaid so exactly.",
       "themes": [
         "silence",
@@ -907,7 +907,7 @@
         "chiron",
         "lavinia"
       ],
-      "source": "Project Gutenberg eBook 100, 2.4.3-4",
+      "source": "Project Gutenberg eBook 100, 2.4.3–4",
       "cloze": [
         "stumps",
         "scribe"
@@ -933,7 +933,7 @@
         "marcus",
         "lavinia"
       ],
-      "source": "Project Gutenberg eBook 100, 2.4.38-40",
+      "source": "Project Gutenberg eBook 100, 2.4.38–40",
       "cloze": [
         "Philomela",
         "sampler"
@@ -958,7 +958,7 @@
         "titus",
         "lucius"
       ],
-      "source": "Project Gutenberg eBook 100, 3.1.53-56",
+      "source": "Project Gutenberg eBook 100, 3.1.53–56",
       "cloze": [
         "wilderness",
         "tigers"
@@ -970,8 +970,8 @@
       "speaker": "Aaron",
       "reference": "3.1.205",
       "stage": "act-3",
-      "context": "Leaving with Titus's severed hand, having just told the audience the sons are already dead.",
-      "analysis": "He takes Rome's insult and makes it a rhyme and a policy. Fair men call for grace pins the hypocrisy: the same city that equates whiteness with virtue has just cheated an old man out of his hand. Aaron takes the identity Rome has assigned him and makes it his own, which is not the same as agreeing with it.",
+      "context": "Leaving with Titus’s severed hand, having just told the audience the sons are already dead.",
+      "analysis": "He takes Rome’s insult and makes it a rhyme and a policy. Fair men call for grace pins the hypocrisy: the same city that equates whiteness with virtue has just cheated an old man out of his hand. Aaron takes the identity Rome has assigned him and makes it his own, which is not the same as agreeing with it.",
       "themes": [
         "race",
         "revenge"
@@ -983,7 +983,7 @@
         "aaron",
         "titus"
       ],
-      "source": "Project Gutenberg eBook 100, 3.1.205-206",
+      "source": "Project Gutenberg eBook 100, 3.1.205–206",
       "cloze": [
         "black",
         "face"
@@ -995,7 +995,7 @@
       "speaker": "Marcus",
       "reference": "3.1.266",
       "stage": "act-3",
-      "context": "Immediately after Titus responds to the arrival of his sons' heads with laughter.",
+      "context": "Immediately after Titus responds to the arrival of his sons’ heads with laughter.",
       "analysis": "Marcus speaks for the part of the audience still trying to keep the genre steady. Titus’s answer is that he has no tears left, which is accountancy, not madness: grief has a supply and it has run out. The laugh is the moment the play stops being a tragedy of suffering and becomes a tragedy of planning.",
       "themes": [
         "revenge"
@@ -1030,7 +1030,7 @@
         "titus",
         "lavinia"
       ],
-      "source": "Project Gutenberg eBook 100, 3.2.42-44",
+      "source": "Project Gutenberg eBook 100, 3.2.42–44",
       "cloze": [
         "stumps",
         "alphabet"
@@ -1043,7 +1043,7 @@
       "reference": "3.2.66",
       "stage": "act-3",
       "context": "Explaining himself after Titus has accused him of murder for swatting a fly at dinner.",
-      "analysis": "Marcus invents the excuse on the spot and it works instantly: Titus takes the knife and stabs the dead fly twice more, once for Aaron and once for Tamora. The scene shows grief turning into method, and it shows the family's racism in its most casual form, offered as a joke to calm a distressed old man.",
+      "analysis": "Marcus invents the excuse on the spot and it works instantly: Titus takes the knife and stabs the dead fly twice more, once for Aaron and once for Tamora. The scene shows grief turning into method, and it shows the family’s racism in its most casual form, offered as a joke to calm a distressed old man.",
       "themes": [
         "race",
         "revenge"
@@ -1056,7 +1056,7 @@
         "titus",
         "aaron"
       ],
-      "source": "Project Gutenberg eBook 100, 3.2.66-67",
+      "source": "Project Gutenberg eBook 100, 3.2.66–67",
       "cloze": [
         "fly",
         "Moor"
@@ -1069,7 +1069,7 @@
       "reference": "4.1.79",
       "stage": "act-4",
       "context": "Reading aloud what Lavinia has written in the sand with a staff held in her mouth.",
-      "analysis": "Three words, one of them Latin, and the play's only piece of direct testimony. Stuprum is the legal term, not a cry: she names the crime in the language of the courts that failed her, then names the men. After two acts of other people describing her, this is Lavinia speaking, and it takes a stick, a patch of sand and both her stumps.",
+      "analysis": "Three words, one of them Latin, and the play’s only piece of direct testimony. Stuprum is the legal term, not a cry: she names the crime in the language of the courts that failed her, then names the men. After two acts of other people describing her, this is Lavinia speaking, and it takes a stick, a patch of sand and both her stumps.",
       "themes": [
         "evidence",
         "silence",
@@ -1109,7 +1109,7 @@
         "chiron",
         "demetrius"
       ],
-      "source": "Project Gutenberg eBook 100, 4.2.99-102",
+      "source": "Project Gutenberg eBook 100, 4.2.99–102",
       "cloze": [
         "Coal-black",
         "swan"
@@ -1131,7 +1131,7 @@
         "aaron",
         "tamora"
       ],
-      "source": "Project Gutenberg eBook 100, 4.2.107-110",
+      "source": "Project Gutenberg eBook 100, 4.2.107–110",
       "cloze": [
         "prefer",
         "maugre"
@@ -1143,7 +1143,7 @@
       "speaker": "Titus",
       "reference": "4.3.50",
       "stage": "act-4",
-      "context": "Handing out bows and arrows with letters tied to them, to be shot into the emperor's court.",
+      "context": "Handing out bows and arrows with letters tied to them, to be shot into the emperor’s court.",
       "analysis": "He has already sent men to dig for Justice underground and to drag the sea for her. The logic is perfectly sound and the method is ridiculous, which is how this play does madness: a rational man following a failed system to its last address, with no confusion at all. The arrows land in the palace, and Saturninus reads them as libel.",
       "themes": [
         "justice"
@@ -1157,7 +1157,7 @@
         "marcus",
         "saturninus"
       ],
-      "source": "Project Gutenberg eBook 100, 4.3.50-52",
+      "source": "Project Gutenberg eBook 100, 4.3.50–52",
       "cloze": [
         "justice",
         "heaven"
@@ -1170,7 +1170,7 @@
       "reference": "5.1.141",
       "stage": "act-5",
       "context": "On a ladder with a rope round his neck, having just listed his crimes to Lucius.",
-      "analysis": "The comparison reaches back to Act III, where a killed fly reduced Titus to fury and then to knife-work. Aaron uses the same insect to measure indifference. He has bought his son's life with this confession and spends the rest of it refusing the remorse that would make the bargain look like repentance.",
+      "analysis": "The comparison reaches back to Act III, where a killed fly reduced Titus to fury and then to knife-work. Aaron uses the same insect to measure indifference. He has bought his son’s life with this confession and spends the rest of it refusing the remorse that would make the bargain look like repentance.",
       "themes": [
         "race",
         "revenge",
@@ -1183,7 +1183,7 @@
         "aaron",
         "lucius"
       ],
-      "source": "Project Gutenberg eBook 100, 5.1.141-144",
+      "source": "Project Gutenberg eBook 100, 5.1.141–144",
       "cloze": [
         "dreadful",
         "fly"
@@ -1195,7 +1195,7 @@
       "speaker": "Tamora",
       "reference": "5.2.28",
       "stage": "act-5",
-      "context": "At the door of Titus's study, dressed as Revenge with her sons as Rape and Murder.",
+      "context": "At the door of Titus’s study, dressed as Revenge with her sons as Rape and Murder.",
       "analysis": "She thinks she is exploiting his madness and she is walking into his kitchen. Titus has already told her he knows her by his own stump, and he lets the disguise stand because it hands him her sons. The old morality figures knock at the door, the play lets them in, and then butchers two of them behind it.",
       "themes": [
         "revenge",
@@ -1210,7 +1210,7 @@
         "chiron",
         "demetrius"
       ],
-      "source": "Project Gutenberg eBook 100, 5.2.28-30",
+      "source": "Project Gutenberg eBook 100, 5.2.28–30",
       "cloze": [
         "Tamora",
         "Revenge"
@@ -1239,7 +1239,7 @@
         "demetrius",
         "saturninus"
       ],
-      "source": "Project Gutenberg eBook 100, 5.3.60-62",
+      "source": "Project Gutenberg eBook 100, 5.3.60–62",
       "cloze": [
         "baked",
         "daintily"
@@ -1252,7 +1252,7 @@
       "reference": "5.3.185",
       "stage": "act-5",
       "context": "Sentenced by Lucius to be set breast-deep in earth and starved.",
-      "analysis": "His last speech gives no sign of the scaffold conversion an Elizabethan audience expected and an Elizabethan gallows usually produced. The final couplet is a joke with a real fact inside it: he did do one good deed, and everyone on stage is looking at it, because the baby he saved is alive in Lucius's household while he goes into the ground.",
+      "analysis": "His last speech gives no sign of the scaffold conversion an Elizabethan audience expected and an Elizabethan gallows usually produced. The final couplet is a joke with a real fact inside it: he did do one good deed, and everyone on stage is looking at it, because the baby he saved is alive in Lucius’s household while he goes into the ground.",
       "themes": [
         "race",
         "revenge"
@@ -1264,7 +1264,7 @@
         "aaron",
         "lucius"
       ],
-      "source": "Project Gutenberg eBook 100, 5.3.185-190",
+      "source": "Project Gutenberg eBook 100, 5.3.185–190",
       "cloze": [
         "repent",
         "deed"
@@ -1290,7 +1290,7 @@
         "marcus",
         "lucius"
       ],
-      "source": "Project Gutenberg eBook 100, 5.3.70-72",
+      "source": "Project Gutenberg eBook 100, 5.3.70–72",
       "cloze": [
         "knit",
         "sheaf"
@@ -1307,24 +1307,24 @@
     {
       "year": 1581,
       "label": "Seneca His Tenne Tragedies printed in English",
-      "detail": "Thomas Newton's collection put Thyestes and its banquet of children into the hands of English playwrights and their audiences.",
+      "detail": "Thomas Newton’s collection put Thyestes and its banquet of children into the hands of English playwrights and their audiences.",
       "kind": "context"
     },
     {
       "year": 1592,
       "label": "Titus Andronicus written",
-      "detail": "Usually dated to the early 1590s, and often called Shakespeare's first tragedy. Some arguments for an earlier start rest on Jonson's later joke about the play's ageing admirers.",
+      "detail": "Usually dated to the early 1590s, and often called Shakespeare’s first tragedy. Some arguments for an earlier start rest on Jonson’s later joke about the play’s ageing admirers.",
       "kind": "work"
     },
     {
       "year": 1594,
       "label": "Performed at the Rose on 24 January",
-      "detail": "Philip Henslowe recorded the takings for Titus & ondronicus in his account book, marking it as a new play for Sussex's Men.",
+      "detail": "Philip Henslowe recorded the takings for Titus & ondronicus in his account book, marking it as a new play for Sussex’s Men.",
       "kind": "work"
     },
     {
       "year": 1594,
-      "label": "Entered in the Stationers' Register and printed",
+      "label": "Entered in the Stationers’ Register and printed",
       "detail": "John Danter entered A Noble Roman Historye of Tytus Andronicus on 6 February and printed the quarto for Edward White and Thomas Millington. It is the first printing of any Shakespeare play, and one copy survives.",
       "kind": "work"
     },
@@ -1348,7 +1348,7 @@
     },
     {
       "year": 1687,
-      "label": "Ravenscroft's adaptation",
+      "label": "Ravenscroft’s adaptation",
       "detail": "Edward Ravenscroft rewrote it as Titus Andronicus, or The Rape of Lavinia, and his preface began the long tradition of doubting that Shakespeare wrote all of it.",
       "kind": "reception"
     },
@@ -1366,8 +1366,8 @@
     },
     {
       "year": 1999,
-      "label": "Julie Taymor's film Titus",
-      "detail": "Anthony Hopkins and Jessica Lange, in a design that mixes Roman architecture with twentieth-century fascism. Harry Lennix's Aaron brought the part to a wide audience.",
+      "label": "Julie Taymor’s film Titus",
+      "detail": "Anthony Hopkins and Jessica Lange, in a design that mixes Roman architecture with twentieth-century fascism. Harry Lennix’s Aaron brought the part to a wide audience.",
       "kind": "reception"
     }
   ],
@@ -1376,7 +1376,7 @@
       "name": "Rome",
       "lat": 41.9028,
       "lon": 12.4964,
-      "note": "The Capitol, the Pantheon and the Andronici tomb. The play's Rome belongs to no datable reign, which leaves it a city of rites, elections and burials with no year attached."
+      "note": "The Capitol, the Pantheon and the Andronici tomb. The play’s Rome belongs to no datable reign, which leaves it a city of rites, elections and burials with no year attached."
     },
     {
       "name": "The Rose, Bankside",
@@ -1410,14 +1410,14 @@
       "counter": "The tests disagree with each other about where the seams fall, and the scenes credited to Peele include the sacrifice of Alarbus, which every later act depends on. A collaborator who set up the whole machine is hard to distinguish from an author writing early."
     },
     {
-      "position": "Aaron is the play's clearest moral intelligence",
-      "summary": "He sees Rome accurately when nobody else does, names the hypocrisy of fair men calling for grace, and is the only character who protects a child instead of avenging one. Readings since the 1980s have moved him out of the villain's slot and into the centre of the play.",
+      "position": "Aaron is the play’s clearest moral intelligence",
+      "summary": "He sees Rome accurately when nobody else does, names the hypocrisy of fair men calling for grace, and is the only character who protects a child instead of avenging one. Readings since the 1980s have moved him out of the villain’s slot and into the centre of the play.",
       "counter": "He also invents the pit, the letter and the severed-hand trick, and tells Lucius he wishes he had done ten thousand worse things. A reading that rescues him has to explain why the play gives him so much pleasure in the suffering we are also meant to condemn."
     },
     {
       "position": "The play is about who is permitted to speak for a victim",
-      "summary": "Lavinia is described, interpreted, wept over and finally killed, and the one time she testifies she has to do it with a stick in her teeth. Feminist criticism from the 1980s on has read the play as an exposure of how a woman's injury becomes everyone else's material.",
-      "counter": "The exposure and the exploitation use the same forty lines. Marcus's speech is written to be admired, and a production that plays it for beauty reproduces the appropriation the reading objects to; one that plays it for embarrassment loses the verse the play actually wrote."
+      "summary": "Lavinia is described, interpreted, wept over and finally killed, and the one time she testifies she has to do it with a stick in her teeth. Feminist criticism from the 1980s on has read the play as an exposure of how a woman’s injury becomes everyone else’s material.",
+      "counter": "The exposure and the exploitation use the same forty lines. Marcus’s speech is written to be admired, and a production that plays it for beauty reproduces the appropriation the reading objects to; one that plays it for embarrassment loses the verse the play actually wrote."
     }
   ],
   "essayQuestions": [
@@ -1425,20 +1425,20 @@
       "question": "How far is Titus responsible for what happens to his family?",
       "focus": "Ritual, choice and consequence in Act I",
       "plan": [
-        "Start with the sacrifice of Alarbus at 1.1 and note that Lucius asks for it, Titus grants it, and Tamora argues against it in Rome's own terms and loses.",
-        "Follow the decisions of the rest of the scene: refusing the empire, giving it to Saturninus, killing Mutius, and then accepting Tamora's public reconciliation at face value.",
-        "Set Tamora's aside at 1.1.451 beside her answer to Lavinia at 2.3.161, and show that she names the refusal in the street as the exact debt she is collecting.",
-        "Weigh the counter-case: the trap at the pit, the forged letter and the bargain for his hand are Aaron's inventions, and Titus could not have foreseen any of them.",
+        "Start with the sacrifice of Alarbus at 1.1 and note that Lucius asks for it, Titus grants it, and Tamora argues against it in Rome’s own terms and loses.",
+        "Follow the decisions of the rest of the scene: refusing the empire, giving it to Saturninus, killing Mutius, and then accepting Tamora’s public reconciliation at face value.",
+        "Set Tamora’s aside at 1.1.451 beside her answer to Lavinia at 2.3.161, and show that she names the refusal in the street as the exact debt she is collecting.",
+        "Weigh the counter-case: the trap at the pit, the forged letter and the bargain for his hand are Aaron’s inventions, and Titus could not have foreseen any of them.",
         "Close by asking what the fly scene at 3.2 shows about how much of his later method was in him from the first act."
       ]
     },
     {
-      "question": "'The play makes Lavinia's body do the work of speech.' Discuss.",
+      "question": "‘The play makes Lavinia’s body do the work of speech.’ Discuss.",
       "focus": "Silence, testimony and staging",
       "plan": [
         "Establish that she speaks freely and sharply in 2.3, arguing with Tamora, so the silence that follows is something done to her and not a character trait.",
-        "Examine Marcus's speech at 2.4 in detail, including the word but at 2.4.38, and decide whether the verse attends to her or replaces her.",
-        "Read Titus's promise to wrest an alphabet at 3.2.42 as both devotion and a claim on her meaning.",
+        "Examine Marcus’s speech at 2.4 in detail, including the word but at 2.4.38, and decide whether the verse attends to her or replaces her.",
+        "Read Titus’s promise to wrest an alphabet at 3.2.42 as both devotion and a claim on her meaning.",
         "Treat 4.1.79 as the turning point: Lavinia names the crime in legal Latin and the men in plain Roman letters, using a staff and her stumps.",
         "Finish with her death at 5.3.46, where her father asks Saturninus for a precedent and kills her without asking her anything."
       ]
@@ -1448,27 +1448,27 @@
       "focus": "Race, fatherhood and the limits of sympathy",
       "plan": [
         "List what he actually engineers: the gold, the letter, the pit, the hand, the heads, and his own delight at the crack in the wall in 5.1.",
-        "Set against it the language Rome uses about him, from the nurse's loathsome as a toad to Lucius's incarnate devil, and note how much of it is about colour.",
-        "Work through 4.2, where he kills the nurse, defies Tamora and takes the child, and compare his defence of his son with Titus's treatment of Mutius and Lavinia.",
+        "Set against it the language Rome uses about him, from the nurse’s loathsome as a toad to Lucius’s incarnate devil, and note how much of it is about colour.",
+        "Work through 4.2, where he kills the nurse, defies Tamora and takes the child, and compare his defence of his son with Titus’s treatment of Mutius and Lavinia.",
         "Use 3.1.205 and 4.2.99 to show how he converts an imposed insult into a claim, and ask whether that is defiance or self-hatred taking a proud form.",
         "End on 5.3.185 and the fact that the one good deed he repents is the child who is alive and safe while he is buried to the chest."
       ]
     },
     {
       "question": "Does the ending of Titus Andronicus restore order?",
-      "focus": "Revenge, settlement and Lucius's Rome",
+      "focus": "Revenge, settlement and Lucius’s Rome",
       "plan": [
         "Count what is settled in 5.3: four deaths in nine lines, an emperor acclaimed, burials assigned and a sentence passed on Aaron.",
-        "Read Marcus's sheaf-and-body speech at 5.3.70 and ask whether the civic vocabulary has earned its return after three acts in which limbs came off for real.",
-        "Test Lucius's credentials: he demanded the sacrifice in Act I, he returns with the army of the people whose prince he burned, and he swears by a god to a man who has none.",
+        "Read Marcus’s sheaf-and-body speech at 5.3.70 and ask whether the civic vocabulary has earned its return after three acts in which limbs came off for real.",
+        "Test Lucius’s credentials: he demanded the sacrifice in Act I, he returns with the army of the people whose prince he burned, and he swears by a god to a man who has none.",
         "Look at the final orders, which reward and punish through burial, and note that this is precisely the currency the play opened with.",
-        "Decide what the last two lines about the birds do to the ending's claim to have finished with cruelty."
+        "Decide what the last two lines about the birds do to the ending’s claim to have finished with cruelty."
       ]
     }
   ],
   "discussionQuestions": [
-    "Tamora asks for mercy in Rome's own language and is refused on a point of rite. Is Titus wrong at 1.1, or only unlucky?",
-    "Marcus's forty lines over Lavinia are some of the finest verse in the play. Should a production let them be beautiful?",
+    "Tamora asks for mercy in Rome’s own language and is refused on a point of rite. Is Titus wrong at 1.1, or only unlucky?",
+    "Marcus’s forty lines over Lavinia are some of the finest verse in the play. Should a production let them be beautiful?",
     "Titus laughs when the heads arrive. What has to have happened to a person for that to be the response?",
     "Aaron saves his son and regrets nothing else. Does that one act change how you read everything he does before it?",
     "Chiron jeers that Lavinia should write with her stumps, and two acts later she does. Is the play satisfying here, or merely neat?",
@@ -1477,7 +1477,7 @@
   "related": [
     {
       "href": "/books/the-rape-of-lucrece/",
-      "why": "The play names Lucrece three times and swears its revenge oath on Brutus's example; the poem is the story Titus and Marcus keep reaching for when they need a precedent."
+      "why": "The play names Lucrece three times and swears its revenge oath on Brutus’s example; the poem is the story Titus and Marcus keep reaching for when they need a precedent."
     },
     {
       "href": "/books/hamlet/",
@@ -1485,7 +1485,7 @@
     },
     {
       "href": "/books/coriolanus/",
-      "why": "Shakespeare's other Roman tragedy of a general the city honours and then cannot live with, ending again with a soldier leading an enemy army home."
+      "why": "Shakespeare’s other Roman tragedy of a general the city honours and then cannot live with, ending again with a soldier leading an enemy army home."
     },
     {
       "href": "/books/othello/",

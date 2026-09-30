@@ -19,7 +19,7 @@
   "referenceStyle": "stave",
   "sourceText": {
     "label": "Standard Ebooks text of A Christmas Carol",
-    "note": "A proofed transcription of Dickens's text. References give the stave, which is the only division the book itself uses."
+    "note": "A proofed transcription of Dickens’s text. References give the stave, which is the only division the book itself uses."
   },
   "atAGlance": [
     {
@@ -40,7 +40,7 @@
     {
       "label": "Time span",
       "value": "One night",
-      "note": "Everything between Marley's arrival and the Christmas morning bells happens in a few hours of story time."
+      "note": "Everything between Marley’s arrival and the Christmas morning bells happens in a few hours of story time."
     }
   ],
   "structure": [
@@ -48,7 +48,7 @@
       "id": "stave-1",
       "label": "Stave I",
       "title": "Marley's Ghost",
-      "summary": "Scrooge is defined entirely by what he turns away: his nephew's invitation, two charity collectors, his clerk's fire. Then his dead partner arrives dragging the cash-boxes and ledgers he accumulated instead of a life, and promises three more visitors.",
+      "summary": "Scrooge is defined entirely by what he turns away: his nephew’s invitation, two charity collectors, his clerk’s fire. Then his dead partner arrives dragging the cash-boxes and ledgers he accumulated instead of a life, and promises three more visitors.",
       "scenes": [
         {
           "ref": "Counting house",
@@ -56,11 +56,11 @@
         },
         {
           "ref": "The knocker",
-          "summary": "Marley's face appears in the door knocker, and Scrooge explains it away by arguing with his own digestion."
+          "summary": "Marley’s face appears in the door knocker, and Scrooge explains it away by arguing with his own digestion."
         },
         {
-          "ref": "Marley's chain",
-          "summary": "The ghost states the book's thesis — that mankind, not the ledger, was his business — and names the terms of the visitations."
+          "ref": "Marley’s chain",
+          "summary": "The ghost states the book’s thesis — that mankind, not the ledger, was his business — and names the terms of the visitations."
         }
       ]
     },
@@ -68,18 +68,18 @@
       "id": "stave-2",
       "label": "Stave II",
       "title": "The First of the Three Spirits",
-      "summary": "The Ghost of Christmas Past shows scenes Scrooge cannot alter and does not dispute: the boy left at school, Fezziwig's ball, and Belle releasing him from an engagement he has already broken in everything but name. The spirit never argues; it simply declines to stop.",
+      "summary": "The Ghost of Christmas Past shows scenes Scrooge cannot alter and does not dispute: the boy left at school, Fezziwig’s ball, and Belle releasing him from an engagement he has already broken in everything but name. The spirit never argues; it simply declines to stop.",
       "scenes": [
         {
           "ref": "The schoolroom",
           "summary": "A solitary child left behind at the holidays, and an old man crying at the sight of himself."
         },
         {
-          "ref": "Fezziwig's ball",
+          "ref": "Fezziwig’s ball",
           "summary": "An employer who spends a small sum and buys enormous happiness, which Scrooge himself points out."
         },
         {
-          "ref": "Belle's release",
+          "ref": "Belle’s release",
           "summary": "She names the golden idol that has taken her place, and wonders whether he would choose her now."
         }
       ]
@@ -88,19 +88,19 @@
       "id": "stave-3",
       "label": "Stave III",
       "title": "The Second of the Three Spirits",
-      "summary": "The present is shown as a series of doors opening: the Cratchits' dinner in Camden Town, Fred's party, miners, lighthouse keepers and sailors all keeping the day. The spirit quotes Scrooge's own words about the surplus population back at him, and then lifts his robe on two starved children.",
+      "summary": "The present is shown as a series of doors opening: the Cratchits’ dinner in Camden Town, Fred’s party, miners, lighthouse keepers and sailors all keeping the day. The spirit quotes Scrooge’s own words about the surplus population back at him, and then lifts his robe on two starved children.",
       "scenes": [
         {
-          "ref": "The Cratchits' dinner",
-          "summary": "A small goose made to go round, and Tiny Tim's blessing, immediately shadowed by the spirit's answer about the empty seat."
+          "ref": "The Cratchits’ dinner",
+          "summary": "A small goose made to go round, and Tiny Tim’s blessing, immediately shadowed by the spirit’s answer about the empty seat."
         },
         {
-          "ref": "Fred's party",
+          "ref": "Fred’s party",
           "summary": "Scrooge watches himself become a parlour game and laughs before he can stop himself."
         },
         {
           "ref": "Ignorance and Want",
-          "summary": "Two children under the robe, named as Man's and not the spirit's, with a warning about which of them is the more dangerous."
+          "summary": "Two children under the robe, named as Man’s and not the spirit’s, with a warning about which of them is the more dangerous."
         }
       ]
     },
@@ -111,12 +111,12 @@
       "summary": "The final spirit says nothing at all, so Scrooge has to do the interpreting himself: businessmen bargaining over whether to attend a cheap funeral, a laundress selling bed-curtains stripped from a corpse, an unwatched body, and a family relieved by a death. Only at the grave is the name supplied.",
       "scenes": [
         {
-          "ref": "On 'Change",
+          "ref": "On ’Change",
           "summary": "Merchants treat a death as a minor scheduling question, and Scrooge listens without recognising the subject."
         },
         {
-          "ref": "Old Joe's shop",
-          "summary": "The dead man's curtains, shirt and blankets are haggled over by the people who were nearest him at the end."
+          "ref": "Old Joe’s shop",
+          "summary": "The dead man’s curtains, shirt and blankets are haggled over by the people who were nearest him at the end."
         },
         {
           "ref": "The churchyard",
@@ -198,7 +198,7 @@
     {
       "id": "marley",
       "name": "Jacob Marley",
-      "role": "Scrooge's dead partner",
+      "role": "Scrooge’s dead partner",
       "summary": "Seven years dead and still doing the accounts. He is punished for a narrow idea of business, not for cruelty, and his chain is made of the objects of his trade, so we see the moral before anyone states it.",
       "clue": "He wears cash-boxes, ledgers and keys as a chain, and corrects the meaning of one word in a way that sets up the whole book.",
       "firstAppearance": "Stave I",
@@ -221,7 +221,7 @@
     {
       "id": "bob-cratchit",
       "name": "Bob Cratchit",
-      "role": "Scrooge's clerk",
+      "role": "Scrooge’s clerk",
       "summary": "Fifteen shillings a week, a white comforter instead of a greatcoat, and a coal-box he is not allowed to reach. Dickens is careful to show him sliding on the ice at Cornhill on the way home, so that his goodness is not simply the patience of a man too tired to object.",
       "clue": "He tries to warm himself at a candle, drinks a toast to the man who underpays him, and slides down a lane of boys on his way back to Camden Town.",
       "firstAppearance": "Stave I",
@@ -246,14 +246,14 @@
     {
       "id": "tiny-tim",
       "name": "Tiny Tim",
-      "role": "Bob Cratchit's youngest son",
+      "role": "Bob Cratchit’s youngest son",
       "summary": "He has very few lines and one of them has escaped the book entirely. Dickens stops him being merely pathetic by giving him a thought of his own about being seen in church: he has decided how to use the fact that people notice him.",
-      "clue": "He is carried on his father's shoulder, hopes the congregation notices his crutch for a reason of his own, and speaks the last four words of the book.",
+      "clue": "He is carried on his father’s shoulder, hopes the congregation notices his crutch for a reason of his own, and speaks the last four words of the book.",
       "firstAppearance": "Stave III",
       "traits": [
         "thoughtful",
         "ill",
-        "the book's measure"
+        "the book’s measure"
       ],
       "relationships": [
         {
@@ -274,7 +274,7 @@
     {
       "id": "fred",
       "name": "Fred",
-      "role": "Scrooge's nephew",
+      "role": "Scrooge’s nephew",
       "summary": "He makes the case for Christmas in one long unbroken sentence and admits within it that the season has never earned him a penny, which is the strongest argument available. He keeps inviting his uncle to dinner every year and is refused every year, and goes on asking.",
       "clue": "He comes in glowing from the frost, argues that a season which has never made him any money has still done him good, and never stops inviting his uncle to dinner.",
       "firstAppearance": "Stave I",
@@ -364,7 +364,7 @@
       "id": "ghost-present",
       "name": "The Ghost of Christmas Present",
       "role": "The second of the three spirits",
-      "summary": "A giant among heaped food who greets Scrooge as a man to be known better, and then spends the stave withholding comfort. He gives Scrooge's own words about the surplus population back to him unaltered, and finishes by opening his robe on two children he insists belong to mankind.",
+      "summary": "A giant among heaped food who greets Scrooge as a man to be known better, and then spends the stave withholding comfort. He gives Scrooge’s own words about the surplus population back to him unaltered, and finishes by opening his robe on two children he insists belong to mankind.",
       "clue": "He sits on a throne of turkeys, geese and chestnuts, ages visibly in a single night, and keeps two starved children under his skirts.",
       "firstAppearance": "Stave III",
       "traits": [
@@ -423,20 +423,20 @@
     {
       "id": "memory",
       "name": "Memory and time",
-      "summary": "The three spirits are three tenses, and the book's structure is a grammar lesson. The past gives him evidence, not nostalgia: Scrooge weeps at the schoolboy because he has been given the one point of view he has always avoided, his own.",
+      "summary": "The three spirits are three tenses, and the book’s structure is a grammar lesson. The past gives him evidence, not nostalgia: Scrooge weeps at the schoolboy because he has been given the one point of view he has always avoided, his own.",
       "development": "Past explains, present accuses, future threatens; Stave V gathers all three into a single morning in which Scrooge says he will live in all of them."
     },
     {
       "id": "business",
       "name": "Business and the meaning of a word",
-      "summary": "Marley's correction of one noun is the hinge of the whole book. Scrooge and Marley have treated business as a trade; the ghost redefines it as everything a person is answerable for, and the rest of the story puts the new definition to work on a turkey, a coal-box and a salary.",
+      "summary": "Marley’s correction of one noun is the hinge of the whole book. Scrooge and Marley have treated business as a trade; the ghost redefines it as everything a person is answerable for, and the rest of the story puts the new definition to work on a turkey, a coal-box and a salary.",
       "development": "Stated as doctrine by Marley, dramatised by Fezziwig as something an employer may actually do, and settled in Stave V when Scrooge raises a wage."
     },
     {
       "id": "community",
       "name": "Christmas and community",
-      "summary": "Christmas in the book is a set of open doors: dinners, parties, toasts, games, the ship’s crew and the lighthouse keepers. Its power over Scrooge is that it is happening whether or not he attends, and the spirits' argument is largely just to show him the attendance.",
-      "development": "Fred's speech puts the case; Stave III proves it across an absurd range of places; Stave IV shows the alternative, a death nobody feels obliged to attend."
+      "summary": "Christmas in the book is a set of open doors: dinners, parties, toasts, games, the ship’s crew and the lighthouse keepers. Its power over Scrooge is that it is happening whether or not he attends, and the spirits’ argument is largely just to show him the attendance.",
+      "development": "Fred’s speech puts the case; Stave III proves it across an absurd range of places; Stave IV shows the alternative, a death nobody feels obliged to attend."
     },
     {
       "id": "isolation",
@@ -462,7 +462,7 @@
       "id": "allegory",
       "name": "Allegory",
       "definition": "Abstractions given bodies and names so an argument can be seen.",
-      "inThisBook": "Ignorance and Want are children with names on them, and Marley's chain is a balance sheet made wearable; the technique lets Dickens put a social argument on stage without stopping the story."
+      "inThisBook": "Ignorance and Want are children with names on them, and Marley’s chain is a balance sheet made wearable; the technique lets Dickens put a social argument on stage without stopping the story."
     },
     {
       "id": "gothic",
@@ -558,8 +558,8 @@
       "speaker": "Fred",
       "reference": "Stave I",
       "stage": "stave-1",
-      "context": "Fred answering his uncle's demand to know what reason he has to be merry.",
-      "analysis": "Fred's whole defence arrives as a single unbroken sentence with the clauses piling up, which is the opposite of Scrooge's clipped questions and refusals. He then concedes the accounting point — Christmas has never put gold or silver in his pocket — and argues that it has done him good anyway, meeting his uncle on his own ground and declining to stay there.",
+      "context": "Fred answering his uncle’s demand to know what reason he has to be merry.",
+      "analysis": "Fred’s whole defence arrives as a single unbroken sentence with the clauses piling up, which is the opposite of Scrooge’s clipped questions and refusals. He then concedes the accounting point — Christmas has never put gold or silver in his pocket — and argues that it has done him good anyway, meeting his uncle on his own ground and declining to stay there.",
       "themes": [
         "community",
         "business"
@@ -628,7 +628,7 @@
       "speaker": "Scrooge",
       "reference": "Stave I",
       "stage": "stave-1",
-      "context": "Explaining to Marley's ghost why he will not believe in it.",
+      "context": "Explaining to Marley’s ghost why he will not believe in it.",
       "analysis": "A pun under that much pressure is a sign of nerve, and it tells us the man is not stupid, only committed. Dickens needs this joke: a Scrooge with no wit could be frightened into reform, and reform by fright alone is exactly what the last stave has to disprove.",
       "themes": [
         "change"
@@ -653,7 +653,7 @@
       "speaker": "Marley's Ghost",
       "reference": "Stave I",
       "stage": "stave-1",
-      "context": "Answering Scrooge's question about why he is fettered.",
+      "context": "Answering Scrooge’s question about why he is fettered.",
       "analysis": "Free will is named twice in one sentence, which removes any suggestion that this is a punishment imposed from outside. The chain is made of cash-boxes, ledgers and keys, so what he wears is his trade itself, weighed.",
       "themes": [
         "business",
@@ -679,7 +679,7 @@
       "reference": "Stave I",
       "stage": "stave-1",
       "context": "After Scrooge says that Marley was always a good man of business.",
-      "analysis": "The argument is won by repeating a single word until its meaning shifts under it: five uses of 'business' in three sentences, each one widening the term. Marley does not tell Scrooge to stop being a man of business; he tells him he has been doing a small part of the job and calling it the whole.",
+      "analysis": "The argument is won by repeating a single word until its meaning shifts under it: five uses of ‘business’ in three sentences, each one widening the term. Marley does not tell Scrooge to stop being a man of business; he tells him he has been doing a small part of the job and calling it the whole.",
       "themes": [
         "business",
         "poverty"
@@ -727,7 +727,7 @@
       "speaker": "The Ghost of Christmas Past",
       "reference": "Stave II",
       "stage": "stave-2",
-      "context": "Arriving at the schoolroom of Scrooge's boyhood.",
+      "context": "Arriving at the schoolroom of Scrooge’s boyhood.",
       "analysis": "The ghost describes the boy in the present tense and the third person, so Scrooge hears his own childhood reported as news about a stranger. ‘Solitary’ has already been used of the adult oyster, and the repetition makes loneliness his permanent condition.",
       "themes": [
         "memory",
@@ -753,7 +753,7 @@
       "reference": "Stave II",
       "stage": "stave-2",
       "context": "Defending Fezziwig after the spirit remarks that the ball cost only a few pounds.",
-      "analysis": "Dickens notes that Scrooge says this 'speaking unconsciously like his former, not his latter self' — the argument for decent employment comes out of Scrooge's own mouth before he has agreed to it. It also states the case in the vocabulary of power and service, not charity, which is why it will hold in the final stave.",
+      "analysis": "Dickens notes that Scrooge says this ‘speaking unconsciously like his former, not his latter self’ — the argument for decent employment comes out of Scrooge’s own mouth before he has agreed to it. It also states the case in the vocabulary of power and service, not charity, which is why it will hold in the final stave.",
       "themes": [
         "business",
         "change"
@@ -778,7 +778,7 @@
       "reference": "Stave II",
       "stage": "stave-2",
       "context": "Releasing the young Scrooge from their engagement.",
-      "analysis": "She accuses him of idolatry and then immediately withdraws her own standing to complain about it, which leaves him nothing to push against. 'Idol' is the strongest word in the sentence and the only religious one in a scene otherwise conducted entirely in the language of contracts.",
+      "analysis": "She accuses him of idolatry and then immediately withdraws her own standing to complain about it, which leaves him nothing to push against. ‘Idol’ is the strongest word in the sentence and the only religious one in a scene otherwise conducted entirely in the language of contracts.",
       "themes": [
         "memory",
         "business"
@@ -802,8 +802,8 @@
       "speaker": "The Ghost of Christmas Present",
       "reference": "Stave III",
       "stage": "stave-3",
-      "context": "Scrooge's first sight of the second spirit, among heaped food.",
-      "analysis": "An invitation, not a summons — the opposite of Stave I, where Scrooge spent the whole evening refusing to come in or let anyone else. The word 'man' at the end is a greeting between equals, and it is the first time anyone in the book has addressed him with that kind of warmth.",
+      "context": "Scrooge’s first sight of the second spirit, among heaped food.",
+      "analysis": "An invitation, not a summons — the opposite of Stave I, where Scrooge spent the whole evening refusing to come in or let anyone else. The word ‘man’ at the end is a greeting between equals, and it is the first time anyone in the book has addressed him with that kind of warmth.",
       "themes": [
         "community",
         "change"
@@ -827,7 +827,7 @@
       "reference": "Stave III",
       "stage": "stave-3",
       "context": "Bob reporting what Tiny Tim said on the way back from church.",
-      "analysis": "Tim has thought about how people look at him and decided what he wants their looking to do, which makes him an agent in the scene, not an object of pity. The thought reaches the reader at two removes — the child told his father, the father tells his wife — so the boy's dignity is never staged for effect.",
+      "analysis": "Tim has thought about how people look at him and decided what he wants their looking to do, which makes him an agent in the scene, not an object of pity. The thought reaches the reader at two removes — the child told his father, the father tells his wife — so the boy’s dignity is never staged for effect.",
       "themes": [
         "poverty",
         "community"
@@ -851,8 +851,8 @@
       "speaker": "Tiny Tim",
       "reference": "Stave III",
       "stage": "stave-3",
-      "context": "The end of the Cratchits' Christmas toast.",
-      "analysis": "'The last of all' places him at the end of a queue of speakers, the smallest voice in the room, and Dickens gives the line no emphasis whatever. It returns as the last sentence of the book, by which time the reader has been shown a future in which it was not said.",
+      "context": "The end of the Cratchits’ Christmas toast.",
+      "analysis": "‘The last of all’ places him at the end of a queue of speakers, the smallest voice in the room, and Dickens gives the line no emphasis whatever. It returns as the last sentence of the book, by which time the reader has been shown a future in which it was not said.",
       "themes": [
         "community",
         "poverty"
@@ -876,7 +876,7 @@
       "reference": "Stave III",
       "stage": "stave-3",
       "context": "Revealing the two children clinging beneath his robe.",
-      "analysis": "The spirit has just said the children are Man's, not his, which places the responsibility before the allegory arrives. Ignorance is ranked above Want as the greater danger, a specific political claim about schooling, and ‘unless the writing be erased’ leaves the sentence open in a book whose whole subject is whether a foreseen end can be changed.",
+      "analysis": "The spirit has just said the children are Man’s, not his, which places the responsibility before the allegory arrives. Ignorance is ranked above Want as the greater danger, a specific political claim about schooling, and ‘unless the writing be erased’ leaves the sentence open in a book whose whole subject is whether a foreseen end can be changed.",
       "themes": [
         "poverty",
         "change"
@@ -899,8 +899,8 @@
       "speaker": "The Ghost of Christmas Present",
       "reference": "Stave III",
       "stage": "stave-3",
-      "context": "The spirit's final words, immediately after showing Ignorance and Want.",
-      "analysis": "Nothing is added and nothing is explained; the whole rebuke consists of Scrooge's own sentences handed back at the right moment. Dickens has waited two staves to use them, and the delay is what gives the repetition its force — the reader recognises the words before Scrooge does.",
+      "context": "The spirit’s final words, immediately after showing Ignorance and Want.",
+      "analysis": "Nothing is added and nothing is explained; the whole rebuke consists of Scrooge’s own sentences handed back at the right moment. Dickens has waited two staves to use them, and the delay is what gives the repetition its force — the reader recognises the words before Scrooge does.",
       "themes": [
         "poverty"
       ],
@@ -924,7 +924,7 @@
       "reference": "Stave IV",
       "stage": "stave-4",
       "context": "At the neglected grave, before he is made to read the name on it.",
-      "analysis": "The question the whole book turns on, and the silent spirit refuses to answer it. Scrooge is asking about grammar — the difference between a future tense and a conditional — and the novella's position is that the difference is entirely made of what he does on Christmas morning.",
+      "analysis": "The question the whole book turns on, and the silent spirit refuses to answer it. Scrooge is asking about grammar — the difference between a future tense and a conditional — and the novella’s position is that the difference is entirely made of what he does on Christmas morning.",
       "themes": [
         "change",
         "memory"
@@ -995,8 +995,8 @@
       "text": "Scrooge was better than his word. He did it all, and infinitely more; and to Tiny Tim, who did not die, he was a second father.",
       "reference": "Stave V",
       "stage": "stave-5",
-      "context": "The narrator's account of what followed.",
-      "analysis": "'Who did not die' is slipped in as a subordinate clause, as though it were incidental, and it is the single most important fact in the book. Dickens measures the conversion by what happens to other people, which is why the sentence says what Scrooge was to somebody.",
+      "context": "The narrator’s account of what followed.",
+      "analysis": "‘Who did not die’ is slipped in as a subordinate clause, as though it were incidental, and it is the single most important fact in the book. Dickens measures the conversion by what happens to other people, which is why the sentence says what Scrooge was to somebody.",
       "themes": [
         "change",
         "business"
@@ -1020,7 +1020,7 @@
       "reference": "Stave V",
       "stage": "stave-5",
       "context": "The last sentence of the novella.",
-      "analysis": "The book closes by handing its last words to its smallest character, and by putting them in the past tense of reported speech — 'observed' — as though the blessing were a settled matter of record. The capitals are new since Stave III: the same four words, now printed as a title.",
+      "analysis": "The book closes by handing its last words to its smallest character, and by putting them in the past tense of reported speech — ‘observed’ — as though the blessing were a settled matter of record. The capitals are new since Stave III: the same four words, now printed as a title.",
       "themes": [
         "community",
         "change"
@@ -1042,7 +1042,7 @@
     {
       "year": 1812,
       "label": "Dickens born in Portsmouth",
-      "detail": "The family's later collapse into debt gave him the clerk's-eye view of London money that runs through the novella.",
+      "detail": "The family’s later collapse into debt gave him the clerk’s-eye view of London money that runs through the novella.",
       "kind": "author"
     },
     {
@@ -1060,13 +1060,13 @@
     {
       "year": 1843,
       "label": "A Christmas Carol published",
-      "detail": "Chapman and Hall issued it on 19 December as a gift book with gilt edges and John Leech's illustrations; the production costs cut deeply into Dickens's profit.",
+      "detail": "Chapman and Hall issued it on 19 December as a gift book with gilt edges and John Leech’s illustrations; the production costs cut deeply into Dickens’s profit.",
       "kind": "work"
     },
     {
       "year": 1844,
       "label": "Stage versions within weeks",
-      "detail": "Edward Stirling's adaptation opened at the Adelphi Theatre in February, one of several unauthorised dramatisations.",
+      "detail": "Edward Stirling’s adaptation opened at the Adelphi Theatre in February, one of several unauthorised dramatisations.",
       "kind": "reception"
     },
     {
@@ -1083,26 +1083,26 @@
     },
     {
       "year": 1870,
-      "label": "Dickens dies at Gad's Hill",
+      "label": "Dickens dies at Gad’s Hill",
       "detail": "By then the public readings had made Scrooge a role as much as a character.",
       "kind": "author"
     },
     {
       "year": 1901,
-      "label": "R. W. Paul's film Scrooge; or, Marley's Ghost",
-      "detail": "R. W. Paul's short film, among the earliest screen versions of any Dickens work.",
+      "label": "R. W. Paul’s film Scrooge; or, Marley’s Ghost",
+      "detail": "R. W. Paul’s short film, among the earliest screen versions of any Dickens work.",
       "kind": "reception"
     },
     {
       "year": 1951,
       "label": "Alastair Sim stars in the film Scrooge",
-      "detail": "Brian Desmond Hurst's British film became one of the standard screen reference points for the part.",
+      "detail": "Brian Desmond Hurst’s British film became one of the standard screen reference points for the part.",
       "kind": "reception"
     },
     {
       "year": 1992,
       "label": "The Muppet Christmas Carol",
-      "detail": "Brian Henson's film with Michael Caine keeps much of Dickens's narration by putting Gonzo on screen as the author.",
+      "detail": "Brian Henson’s film with Michael Caine keeps much of Dickens’s narration by putting Gonzo on screen as the author.",
       "kind": "reception"
     }
   ],
@@ -1111,7 +1111,7 @@
       "name": "City of London",
       "lat": 51.5155,
       "lon": -0.0922,
-      "note": "Scrooge's counting house and the Exchange, where Stave IV opens among merchants discussing a funeral."
+      "note": "Scrooge’s counting house and the Exchange, where Stave IV opens among merchants discussing a funeral."
     },
     {
       "name": "Cornhill",
@@ -1123,7 +1123,7 @@
       "name": "Camden Town",
       "lat": 51.539,
       "lon": -0.1426,
-      "note": "The Cratchits' house, and the address the prize turkey has to be sent to by cab."
+      "note": "The Cratchits’ house, and the address the prize turkey has to be sent to by cab."
     },
     {
       "name": "Manchester",
@@ -1135,13 +1135,13 @@
       "name": "Portsmouth",
       "lat": 50.8198,
       "lon": -1.088,
-      "note": "Dickens's birthplace."
+      "note": "Dickens’s birthplace."
     }
   ],
   "criticalViews": [
     {
       "position": "A social argument in the shape of a fable",
-      "summary": "Read alongside Dickens's public speaking of 1843 and the reports on child labour he had been reading, the book looks like an intervention in the poor-relief debate that chose allegory because allegory sells at Christmas.",
+      "summary": "Read alongside Dickens’s public speaking of 1843 and the reports on child labour he had been reading, the book looks like an intervention in the poor-relief debate that chose allegory because allegory sells at Christmas.",
       "counter": "It leaves the remedy with individual generosity: Scrooge raises one salary, and nothing in the system he defended in Stave I has been touched."
     },
     {
@@ -1152,17 +1152,17 @@
     {
       "position": "The book that made Christmas",
       "summary": "A long-running argument in cultural history holds that the novella fixed one version of the festival, domestic, charitable and sentimental, just when Christmas printing and present-giving were growing fastest.",
-      "counter": "The claim is easy to overstate: carols, feasting and seasonal charity long predate 1843, and the book's popularity may record a change as much as cause it."
+      "counter": "The claim is easy to overstate: carols, feasting and seasonal charity long predate 1843, and the book’s popularity may record a change as much as cause it."
     }
   ],
   "essayQuestions": [
     {
-      "question": "How does Dickens present Scrooge's transformation?",
+      "question": "How does Dickens present Scrooge’s transformation?",
       "focus": "Character, structure and proof",
       "plan": [
         "Start with the Stave I portrait and note that the flint image already concedes the fire is present and unstruck.",
         "Show the ghosts working by different methods: the past supplies evidence, the present indicts, the future threatens and says nothing.",
-        "Use the moment in Stave II where Scrooge defends Fezziwig 'unconsciously like his former, not his latter self' as the first sign of movement.",
+        "Use the moment in Stave II where Scrooge defends Fezziwig ‘unconsciously like his former, not his latter self’ as the first sign of movement.",
         "Argue about the mechanism: is he reformed by pity at the schoolroom, or by terror at the grave, and does the book need both?",
         "Close on Stave V, where Dickens measures the change in turkeys, cab fares, coal and a salary."
       ]
@@ -1173,37 +1173,37 @@
       "plan": [
         "Open with the charity collectors: Scrooge answers a request for money with a question about institutions.",
         "Track the phrase about the surplus population from Stave I to the moment the Ghost of Christmas Present returns it in Stave III.",
-        "Read Ignorance and Want closely, noting that the spirit calls them Man's and ranks Ignorance as the greater danger.",
+        "Read Ignorance and Want closely, noting that the spirit calls them Man’s and ranks Ignorance as the greater danger.",
         "Set the Cratchit scenes against the Stave IV visit to old Joe’s shop, where poverty produces theft and not loyalty.",
-        "Weigh the ending: one employer improves, which may be the book's answer or the limit of it."
+        "Weigh the ending: one employer improves, which may be the book’s answer or the limit of it."
       ]
     },
     {
       "question": "How does Dickens use the supernatural in the novella?",
       "focus": "Gothic form doing moral work",
       "plan": [
-        "Establish the ground rules: the narrator insists on Marley's death so that the return can mean something.",
+        "Establish the ground rules: the narrator insists on Marley’s death so that the return can mean something.",
         "Compare the three spirits as three kinds of evidence — shown, opened and withheld.",
         "Examine why the silent spirit frightens Scrooge most, and what work the silence forces him to do.",
-        "Look at Marley's chain as an allegory that is also a stage property, visible to an audience at a public reading.",
+        "Look at Marley’s chain as an allegory that is also a stage property, visible to an audience at a public reading.",
         "Decide whether the supernatural machinery makes the social argument sharper or lets the reader off it."
       ]
     },
     {
-      "question": "'The book's real subject is time, not money.' Discuss.",
+      "question": "‘The book’s real subject is time, not money.’ Discuss.",
       "focus": "Past, present and future as structure",
       "plan": [
         "Set out the design: three spirits, three tenses, and a story that takes one night to cover a lifetime.",
         "Use the schoolroom and Belle’s release to show the past working as evidence.",
         "Note how Stave III insists that everyone keeps the day together: miners, sailors, lighthouse keepers.",
-        "Test the case on Scrooge's question at the grave about shadows of what will be and what may be only.",
+        "Test the case on Scrooge’s question at the grave about shadows of what will be and what may be only.",
         "Answer with Stave IV’s vow to live in the Past, the Present and the Future, and ask whether it is money or time that he has been wasting."
       ]
     }
   ],
   "discussionQuestions": [
     "The last spirit never speaks. Does that make it more frightening than Marley, and if so why?",
-    "Scrooge raises one clerk's wages. Is that a solution to anything the book has described?",
+    "Scrooge raises one clerk’s wages. Is that a solution to anything the book has described?",
     "Dickens calls the divisions staves and the book a carol. What does the musical framing change about how you read it?",
     "Tiny Tim has very few lines. Is he a character or a device, and does the distinction matter?",
     "Would the conversion be as convincing if Stave V ended in the bedroom, and never reached the street?"
@@ -1219,11 +1219,11 @@
     },
     {
       "href": "/books/great-expectations/",
-      "why": "Dickens twenty years later on the same question of what money does to a person's judgement of the people who raised them."
+      "why": "Dickens twenty years later on the same question of what money does to a person’s judgement of the people who raised them."
     },
     {
       "href": "/books/cricket-on-the-hearth/",
-      "why": "The domestic side of the Christmas books, and a useful contrast with the Carol's social sharpness."
+      "why": "The domestic side of the Christmas books, and a useful contrast with the Carol’s social sharpness."
     },
     {
       "href": "/books/a-victorian-christmas/",

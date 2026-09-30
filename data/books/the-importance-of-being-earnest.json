@@ -15,7 +15,7 @@
   "lengthNote": "Three acts of continuous prose dialogue, reduced by Wilde from an earlier four-act version",
   "openingLine": "Did you hear what I was playing, Lane?",
   "summary": "Two young men have each invented a person who does not exist in order to get out of obligations, and both find themselves engaged to women who will only marry a man called Ernest. Wilde builds a farce in which the plot is entirely conventional and the sentences are not: every line of feeling arrives inverted, and the discovery that resolves everything is produced out of a hand-bag left in a railway cloakroom.",
-  "referenceStyle": "act. The play is continuous prose dialogue and the text checked against carries no line numbers, so quotations are placed by act and by the point in the action they belong to.",
+  "referenceStyle": "act and the point in the action, since the play is continuous prose dialogue and the text has no line numbers",
   "sourceText": {
     "label": "Standard Ebooks text of The Importance of Being Earnest",
     "note": "The three-act text, following the first book edition of 1899. Because it is prose without line numbering, references give the act alone."
@@ -24,7 +24,7 @@
     {
       "label": "First performed",
       "value": "14 February 1895",
-      "note": "At the St James's Theatre, London, managed by George Alexander, who played Jack."
+      "note": "At the St James’s Theatre, London, managed by George Alexander, who played Jack."
     },
     {
       "label": "First book edition",
@@ -55,7 +55,7 @@
         },
         {
           "ref": "Act I, Bunbury explained",
-          "summary": "Jack's imaginary brother is matched against Algernon's imaginary invalid."
+          "summary": "Jack’s imaginary brother is matched against Algernon’s imaginary invalid."
         },
         {
           "ref": "Act I, the proposal",
@@ -63,7 +63,7 @@
         },
         {
           "ref": "Act I, the interview",
-          "summary": "Lady Bracknell's examination of income, politics, property and parentage ends at the hand-bag."
+          "summary": "Lady Bracknell’s examination of income, politics, property and parentage ends at the hand-bag."
         }
       ]
     },
@@ -79,7 +79,7 @@
         },
         {
           "ref": "Act II, Ernest arrives",
-          "summary": "Algernon presents himself as Jack's brother and Cecily produces the record of their engagement."
+          "summary": "Algernon presents himself as Jack’s brother and Cecily produces the record of their engagement."
         },
         {
           "ref": "Act II, mourning",
@@ -99,11 +99,11 @@
       "id": "act-3",
       "label": "Act III",
       "title": "The drawing room: a hand-bag, and a christening cancelled",
-      "summary": "Lady Bracknell arrives, approves of Cecily's money and forbids Algernon's engagement until Jack forbids Cecily's, at which point Miss Prism is recognised, the hand-bag is produced and Jack turns out to be Algernon's elder brother. His father's name is looked up in an Army List and is, inevitably, Ernest.",
+      "summary": "Lady Bracknell arrives, approves of Cecily’s money and forbids Algernon’s engagement until Jack forbids Cecily’s, at which point Miss Prism is recognised, the hand-bag is produced and Jack turns out to be Algernon’s elder brother. His father’s name is looked up in an Army List and is, inevitably, Ernest.",
       "scenes": [
         {
           "ref": "Act III, the fortune",
-          "summary": "Lady Bracknell's objections to Cecily evaporate on hearing the figure in the Funds."
+          "summary": "Lady Bracknell’s objections to Cecily evaporate on hearing the figure in the Funds."
         },
         {
           "ref": "Act III, deadlock",
@@ -115,7 +115,7 @@
         },
         {
           "ref": "Act III, the Army Lists",
-          "summary": "Jack's real name is found in print, and the title of the play is spoken as its last line."
+          "summary": "Jack’s real name is found in print, and the title of the play is spoken as its last line."
         }
       ]
     }
@@ -124,7 +124,7 @@
     {
       "id": "jack",
       "name": "John Worthing, J.P.",
-      "role": "A country landowner and magistrate, Cecily's guardian",
+      "role": "A country landowner and magistrate, Cecily’s guardian",
       "summary": "He maintains a wicked younger brother in town so that he can be respectable in Hertfordshire, and takes the high moral tone in the country because he has invented somewhere else to be immoral. He is the only character who wants a settled identity, and the plot hands him one he has been using by accident for years.",
       "clue": "He was found in a hand-bag at a railway cloakroom, is a magistrate in one county and a scoundrel in another, and turns out to have been telling the truth all along.",
       "firstAppearance": "Act I",
@@ -183,8 +183,8 @@
     {
       "id": "algernon",
       "name": "Algernon Moncrieff",
-      "role": "Lady Bracknell's nephew, of Half-Moon Street",
-      "summary": "He eats continuously, owes money everywhere, and has invented a permanently ill friend whose relapses can be timed to avoid any dinner he does not want. He is the play's theorist, supplying most of its paradoxes, and the only person in it who is entirely unembarrassed by his own behaviour.",
+      "role": "Lady Bracknell’s nephew, of Half-Moon Street",
+      "summary": "He eats continuously, owes money everywhere, and has invented a permanently ill friend whose relapses can be timed to avoid any dinner he does not want. He is the play’s theorist, supplying most of its paradoxes, and the only person in it who is entirely unembarrassed by his own behaviour.",
       "clue": "He keeps an invalid friend whose health fails precisely when a family dinner is proposed, and eats every muffin in the dish while a crisis is going on.",
       "firstAppearance": "Act I",
       "traits": [
@@ -225,14 +225,14 @@
     {
       "id": "gwendolen",
       "name": "Hon. Gwendolen Fairfax",
-      "role": "Lady Bracknell's daughter",
-      "summary": "She speaks in her mother's cadences about entirely different things, and she has settled the question of whom she will marry before meeting anyone: it must be a man called Ernest. Her certainty is unshakeable and her reasoning is decorative, which makes her a comic character and also, in the tea scene, a formidable one.",
+      "role": "Lady Bracknell’s daughter",
+      "summary": "She speaks in her mother’s cadences about entirely different things, and she has settled the question of whom she will marry before meeting anyone: it must be a man called Ernest. Her certainty is unshakeable and her reasoning is decorative, which makes her a comic character and also, in the tea scene, a formidable one.",
       "clue": "She will only marry a man with one particular name, and travels with a diary so that she always has something sensational to read.",
       "firstAppearance": "Act I",
       "traits": [
         "decided",
         "metropolitan",
-        "her mother's daughter"
+        "her mother’s daughter"
       ],
       "relationships": [
         {
@@ -267,7 +267,7 @@
     {
       "id": "cecily",
       "name": "Cecily Cardew",
-      "role": "Jack's ward, at the Manor House",
+      "role": "Jack’s ward, at the Manor House",
       "summary": "She has been conducting an engagement to a man she has never met for three months in a diary, including the letters he wrote her and the week they were broken off. Wilde gives the country ingenue the most thoroughly fictional inner life in the play, and it is entirely in writing.",
       "clue": "She waters roses to avoid German grammar and has already recorded, in her diary, the proposal she is about to receive.",
       "firstAppearance": "Act II",
@@ -317,7 +317,7 @@
     {
       "id": "lady-bracknell",
       "name": "Lady Bracknell",
-      "role": "Gwendolen's mother, Algernon's aunt",
+      "role": "Gwendolen’s mother, Algernon’s aunt",
       "summary": "She conducts marriage as a matter of lists, incomes and addresses, and delivers her most outrageous positions in the tone of settled common sense. She was herself without fortune when she married, which she mentions once, and that single admission is the crack in an otherwise seamless piece of masonry.",
       "clue": "She keeps a list of eligible young men, disapproves of education on the grounds that ignorance is a delicate fruit, and changes her mind about a girl the moment she hears the figure.",
       "firstAppearance": "Act I",
@@ -367,8 +367,8 @@
     {
       "id": "miss-prism",
       "name": "Miss Prism",
-      "role": "Cecily's governess",
-      "summary": "She wrote a three-volume novel of more than usually revolting sentimentality, mislaid it in a perambulator and deposited the baby in a hand-bag at Victoria Station. The play's entire machinery of discovery rests on a woman who has spent two acts recommending moral fiction and disapproving of everybody.",
+      "role": "Cecily’s governess",
+      "summary": "She wrote a three-volume novel of more than usually revolting sentimentality, mislaid it in a perambulator and deposited the baby in a hand-bag at Victoria Station. The play’s entire machinery of discovery rests on a woman who has spent two acts recommending moral fiction and disapproving of everybody.",
       "clue": "She once put a manuscript where a baby should have been, and has been giving German lessons ever since.",
       "firstAppearance": "Act II",
       "traits": [
@@ -439,8 +439,8 @@
     {
       "id": "lane",
       "name": "Lane",
-      "role": "Algernon's manservant",
-      "summary": "He drinks the champagne, keeps the accounts of the cucumber sandwiches and declines to have opinions in a way that is itself an opinion. His handful of lines are placed where they will deflate his employer's, and they do it without ever ceasing to be perfectly correct.",
+      "role": "Algernon’s manservant",
+      "summary": "He drinks the champagne, keeps the accounts of the cucumber sandwiches and declines to have opinions in a way that is itself an opinion. His handful of lines are placed where they will deflate his employer’s, and they do it without ever ceasing to be perfectly correct.",
       "clue": "He did not think it polite to listen to the piano, and explains that in married households the champagne is rarely of a first-rate brand.",
       "firstAppearance": "Act I",
       "traits": [
@@ -476,19 +476,19 @@
     {
       "id": "marriage-market",
       "name": "Marriage and money",
-      "summary": "Lady Bracknell conducts courtship as due diligence: income, investments, town address, politics, parentage. Wilde's joke is not that she is wrong about how it works but that she says so out loud, and her objections to Cecily disappear the instant a number is mentioned.",
+      "summary": "Lady Bracknell conducts courtship as due diligence: income, investments, town address, politics, parentage. Wilde’s joke is not that she is wrong about how it works but that she says so out loud, and her objections to Cecily disappear the instant a number is mentioned.",
       "development": "A list of eligible young men in Act I, a valuation of a Hertfordshire estate, and an about-turn in Act III on the strength of a figure in the Funds."
     },
     {
       "id": "town-and-country",
       "name": "The double life",
-      "summary": "Bunburying is the play's word for the arrangement that lets a respectable life continue: a place where one is not, and a person one is not, held in reserve. The comedy's geography is moral, and the two halves have to be kept from meeting, which is exactly what Act II arranges.",
+      "summary": "Bunburying is the play’s word for the arrangement that lets a respectable life continue: a place where one is not, and a person one is not, held in reserve. The comedy’s geography is moral, and the two halves have to be kept from meeting, which is exactly what Act II arranges.",
       "development": "Two invented people in Act I, both physically present in Act II, and both killed off before the christenings can be booked."
     },
     {
       "id": "writing",
       "name": "Diaries, letters and the written record",
-      "summary": "Nearly every fact in the play is documented before it happens. Cecily's engagement exists in her diary, Gwendolen carries hers for the sensational reading, Miss Prism's novel is lost in a perambulator and Jack's name is confirmed by the Army Lists. Writing here does not record events; it creates them.",
+      "summary": "Nearly every fact in the play is documented before it happens. Cecily’s engagement exists in her diary, Gwendolen carries hers for the sensational reading, Miss Prism’s novel is lost in a perambulator and Jack’s name is confirmed by the Army Lists. Writing here does not record events; it creates them.",
       "development": "An inscription inside a cigarette case in Act I, two diaries in conflict in Act II, and a shelf of Army Lists settling the plot in Act III."
     },
     {
@@ -533,7 +533,7 @@
       "id": "deflating-servant",
       "name": "The comic servant",
       "definition": "A subordinate whose brief, correct replies undercut the speaker above them.",
-      "inThisBook": "Lane's refusal to have listened to the piano, and his account of married households and champagne, set the play's tone before Jack has entered."
+      "inThisBook": "Lane’s refusal to have listened to the piano, and his account of married households and champagne, set the play’s tone before Jack has entered."
     }
   ],
   "quotations": [
@@ -543,7 +543,7 @@
       "speaker": "Lane",
       "reference": "Act I",
       "stage": "act-1",
-      "context": "Answering Algernon's question about the piano, in the play's fourth line.",
+      "context": "Answering Algernon’s question about the piano, in the play’s fourth line.",
       "analysis": "The servant declines to have heard something everyone in the theatre has just heard, and his grounds are manners, not fact. Within four lines Wilde has established the rule the whole play runs on: politeness is a technique for not knowing things.",
       "themes": [
         "earnestness",
@@ -569,7 +569,7 @@
       "reference": "Act I",
       "stage": "act-1",
       "context": "Pressing Jack to admit that Cecily exists.",
-      "analysis": "The line is an epigram in defence of an interrogation, which is a peculiar use for it. Wilde puts the play's most quotable statement about truth in the mouth of the man currently telling the fewest lies, and follows it immediately with a joke about modern literature.",
+      "analysis": "The line is an epigram in defence of an interrogation, which is a peculiar use for it. Wilde puts the play’s most quotable statement about truth in the mouth of the man currently telling the fewest lies, and follows it immediately with a joke about modern literature.",
       "themes": [
         "earnestness"
       ],
@@ -618,8 +618,8 @@
       "speaker": "Algernon",
       "reference": "Act I",
       "stage": "act-1",
-      "context": "Naming Jack's deception and matching it with his own.",
-      "analysis": "The two fictions are laid out in parallel clauses, and the symmetry is the play's architecture in advance: town and country, brother and invalid, each man needing somewhere he is not. Note that both inventions are described as useful, which is the only virtue either man claims for them.",
+      "context": "Naming Jack’s deception and matching it with his own.",
+      "analysis": "The two fictions are laid out in parallel clauses, and the symmetry is the play’s architecture in advance: town and country, brother and invalid, each man needing somewhere he is not. Note that both inventions are described as useful, which is the only virtue either man claims for them.",
       "themes": [
         "town-and-country",
         "names"
@@ -669,7 +669,7 @@
       "speaker": "Algernon",
       "reference": "Act I",
       "stage": "act-1",
-      "context": "Interrupting a discussion of the evening's arrangements.",
+      "context": "Interrupting a discussion of the evening’s arrangements.",
       "analysis": "Seriousness, the quality the whole play is named for, is transferred to dinner, and shallowness becomes a charge against people who are not hungry. The joke works because Algernon means it entirely: his appetite is the one sincere thing in the comedy.",
       "themes": [
         "earnestness",
@@ -796,8 +796,8 @@
       "speaker": "Lady Bracknell",
       "reference": "Act I",
       "stage": "act-1",
-      "context": "Assessing Jack's Hertfordshire estate during the interview.",
-      "analysis": "This is the play's one piece of genuine economics, spoken by its least reflective character: agricultural land in the 1890s really had stopped paying, and estates really were maintained for the position they conferred. The joke is that she states the whole agricultural depression as a social inconvenience.",
+      "context": "Assessing Jack’s Hertfordshire estate during the interview.",
+      "analysis": "This is the play’s one piece of genuine economics, spoken by its least reflective character: agricultural land in the 1890s really had stopped paying, and estates really were maintained for the position they conferred. The joke is that she states the whole agricultural depression as a social inconvenience.",
       "themes": [
         "marriage-market"
       ],
@@ -821,7 +821,7 @@
       "reference": "Act II",
       "stage": "act-2",
       "context": "Leaving Cecily to her lessons while she walks with Dr Chasuble.",
-      "analysis": "The collapse of the rupee had ruined real fortunes and salaries across the Empire, which is precisely why it is too sensational for a schoolroom. Wilde's governess protects her pupil from the one subject in the curriculum that describes the world she actually lives in.",
+      "analysis": "The collapse of the rupee had ruined real fortunes and salaries across the Empire, which is precisely why it is too sensational for a schoolroom. Wilde’s governess protects her pupil from the one subject in the curriculum that describes the world she actually lives in.",
       "themes": [
         "writing",
         "earnestness"
@@ -846,7 +846,7 @@
       "reference": "Act II",
       "stage": "act-2",
       "context": "Describing the three-volume novel she once wrote.",
-      "analysis": "A whole theory of the improving Victorian novel in fourteen words, delivered by the woman whose own carelessness with a perambulator will supply this play's ending. The capital letter on Fiction is doing the work: she is defining a genre, not describing a book.",
+      "analysis": "A whole theory of the improving Victorian novel in fourteen words, delivered by the woman whose own carelessness with a perambulator will supply this play’s ending. The capital letter on Fiction is doing the work: she is defining a genre, not describing a book.",
       "themes": [
         "writing",
         "earnestness"
@@ -994,8 +994,8 @@
       "speaker": "Gwendolen",
       "reference": "Act III",
       "stage": "act-3",
-      "context": "Agreeing with Cecily on how to receive the men's explanations.",
-      "analysis": "This is the play's own defence, stated by a character as a rule of etiquette. It also inverts the usual hierarchy under which sincerity excuses a clumsy apology, and it arrives just before both women accept explanations they know to be worthless.",
+      "context": "Agreeing with Cecily on how to receive the men’s explanations.",
+      "analysis": "This is the play’s own defence, stated by a character as a rule of etiquette. It also inverts the usual hierarchy under which sincerity excuses a clumsy apology, and it arrives just before both women accept explanations they know to be worthless.",
       "themes": [
         "earnestness"
       ],
@@ -1080,7 +1080,7 @@
     },
     {
       "year": 1892,
-      "label": "Lady Windermere's Fan opens at the St James's Theatre",
+      "label": "Lady Windermere’s Fan opens at the St James’s Theatre",
       "detail": "The first of the society comedies, and the play the title page of the 1899 Earnest uses to identify its author.",
       "kind": "author"
     },
@@ -1093,7 +1093,7 @@
     {
       "year": 1894,
       "label": "Earnest written, largely at Worthing",
-      "detail": "Wilde took a house on the Sussex coast with his family for the late summer; the hero's surname comes from the town.",
+      "detail": "Wilde took a house on the Sussex coast with his family for the late summer; the hero’s surname comes from the town.",
       "kind": "work"
     },
     {
@@ -1105,7 +1105,7 @@
     {
       "year": 1895,
       "label": "First performance, 14 February",
-      "detail": "At the St James's Theatre, with George Alexander as Jack; the run ended within months when Wilde was tried and imprisoned.",
+      "detail": "At the St James’s Theatre, with George Alexander as Jack; the run ended within months when Wilde was tried and imprisoned.",
       "kind": "work"
     },
     {
@@ -1128,7 +1128,7 @@
     },
     {
       "year": 1952,
-      "label": "Anthony Asquith's film released",
+      "label": "Anthony Asquith’s film released",
       "detail": "With Edith Evans as Lady Bracknell, whose reading of the hand-bag line has shaped every performance since.",
       "kind": "reception"
     }
@@ -1138,13 +1138,13 @@
       "name": "Half-Moon Street, Mayfair",
       "lat": 51.5065,
       "lon": -0.1455,
-      "note": "Algernon's flat, and the setting of the whole first act."
+      "note": "Algernon’s flat, and the setting of the whole first act."
     },
     {
       "name": "St James's Theatre, King Street",
       "lat": 51.5064,
       "lon": -0.1371,
-      "note": "Where the play opened on 14 February 1895 under George Alexander's management; the building was demolished in 1957."
+      "note": "Where the play opened on 14 February 1895 under George Alexander’s management; the building was demolished in 1957."
     },
     {
       "name": "Victoria Station",
@@ -1162,23 +1162,23 @@
       "name": "Dublin",
       "lat": 53.3498,
       "lon": -6.2603,
-      "note": "Wilde's birthplace and the city of his education before Oxford."
+      "note": "Wilde’s birthplace and the city of his education before Oxford."
     }
   ],
   "criticalViews": [
     {
       "position": "A perfect farce and nothing more",
-      "summary": "The oldest account, and Wilde's own framing in the subtitle: a comedy whose subject is its own construction, where the plotting is symmetrical, the dialogue is polished and the pleasure is entirely formal.",
+      "summary": "The oldest account, and Wilde’s own framing in the subtitle: a comedy whose subject is its own construction, where the plotting is symmetrical, the dialogue is polished and the pleasure is entirely formal.",
       "counter": "It has to ignore how much of the laughter comes from money, rank and the machinery of a marriage market that the play describes with considerable accuracy."
     },
     {
       "position": "A comedy about the double life",
-      "summary": "Criticism since the middle of the twentieth century has read Bunburying as a figure for lives lived in two places at once, written months before Wilde's own prosecution made the arrangement a matter of public record.",
+      "summary": "Criticism since the middle of the twentieth century has read Bunburying as a figure for lives lived in two places at once, written months before Wilde’s own prosecution made the arrangement a matter of public record.",
       "counter": "Read too directly, a play whose whole method is surface becomes a coded confession, the one thing its style never is."
     },
     {
       "position": "A satire of the late-Victorian ruling class",
-      "summary": "Lady Bracknell's interview, the agricultural depression, the Funds, the London season and the servants' commentary place the comedy precisely in a class whose income and confidence were both under pressure in the 1890s.",
+      "summary": "Lady Bracknell’s interview, the agricultural depression, the Funds, the London season and the servants’ commentary place the comedy precisely in a class whose income and confidence were both under pressure in the 1890s.",
       "counter": "The satire is affectionate enough to be enjoyed by its targets, and the play ends by rewarding everyone in it with money and a title."
     }
   ],
@@ -1188,20 +1188,20 @@
       "focus": "The title, the name and the Victorian virtue",
       "plan": [
         "Separate the two senses straight away, the moral quality and the proper noun, and show how often the play makes them collide.",
-        "Use Jack's high moral tone in Act I, adopted precisely so that he can misbehave elsewhere.",
-        "Examine the two women's requirement that a husband be called Ernest, and the fact that neither offers a reason.",
+        "Use Jack’s high moral tone in Act I, adopted precisely so that he can misbehave elsewhere.",
+        "Examine the two women’s requirement that a husband be called Ernest, and the fact that neither offers a reason.",
         "Set the christenings against the discovery in the Army Lists: one is a decision, the other a fact.",
         "Close on the last line and decide what Wilde has proved about sincerity by making it a question of spelling."
       ]
     },
     {
-      "question": "Discuss Lady Bracknell's function in the comedy.",
+      "question": "Discuss Lady Bracknell’s function in the comedy.",
       "focus": "Authority, money and the sound of common sense",
       "plan": [
         "Analyse the interview in Act I as a procedure: income, investments, address, politics, parentage, in that order.",
         "Show how Wilde gives outrageous positions the cadence of settled wisdom, using the lines on ignorance and on land.",
         "Note the single admission that she married without a fortune, and what it does to her authority.",
-        "Track the reversal in Act III when Cecily's money is mentioned, and how quickly the objections dissolve.",
+        "Track the reversal in Act III when Cecily’s money is mentioned, and how quickly the objections dissolve.",
         "Assess whether she is a satirical target, a comic engine, or the only character who tells the truth about the system."
       ]
     },
@@ -1209,15 +1209,15 @@
       "question": "What part do written documents play in the plot?",
       "focus": "Diaries, inscriptions, novels and lists",
       "plan": [
-        "Start with the cigarette case, whose inscription begins the exposure of Jack's arrangement.",
-        "Compare Cecily's diary, which records an engagement that has not happened, with Gwendolen's, which is carried for entertainment.",
-        "Consider Miss Prism's three-volume novel and the perambulator, the play's most consequential piece of writing.",
+        "Start with the cigarette case, whose inscription begins the exposure of Jack’s arrangement.",
+        "Compare Cecily’s diary, which records an engagement that has not happened, with Gwendolen’s, which is carried for entertainment.",
+        "Consider Miss Prism’s three-volume novel and the perambulator, the play’s most consequential piece of writing.",
         "Examine the Army Lists as the instrument of resolution, and what it means that a fact is settled by looking it up.",
         "Conclude on the pattern: in this play writing does not record events, it authorises them."
       ]
     },
     {
-      "question": "'A play in which nobody is sincere and nobody suffers for it.' Discuss.",
+      "question": "‘A play in which nobody is sincere and nobody suffers for it.’ Discuss.",
       "focus": "Morality, consequence and the shape of the ending",
       "plan": [
         "List the deceptions in play by the end of Act II and note that none of them is punished.",
@@ -1238,7 +1238,7 @@
   "related": [
     {
       "href": "/books/dorian-gray/",
-      "why": "Wilde's novel of the same decade, with the same epigrams put to an entirely unfunny purpose."
+      "why": "Wilde’s novel of the same decade, with the same epigrams put to an entirely unfunny purpose."
     },
     {
       "href": "/books/much-ado-about-nothing/",

@@ -16,22 +16,22 @@
   "lengthNote": "625 lines in seven parts, mostly four-line ballad stanzas that stretch to five, six and once nine lines when the tale needs room",
   "openingLine": "It is an ancient Mariner, And he stoppeth one of three.",
   "summary": "An old sailor stops a man on his way into a wedding and will not let him go. The story he tells has a crime in it that takes two lines and no explanation, a punishment that falls hardest on two hundred men who did not commit it, and a release that arrives while he is not trying for it. It ends with a neat moral about loving all creatures, spoken by a man who is still, decades later, compelled to seize strangers, and heard by one who goes home stunned and skips the party.",
-  "referenceStyle": "part — the source text prints the seven parts without line numbers, so quotations are placed by part alone",
+  "referenceStyle": "part, since the source text prints the seven parts without line numbers",
   "sourceText": {
     "label": "Project Gutenberg text of The Rime of the Ancient Mariner (eBook #151)",
     "url": "https://www.gutenberg.org/cache/epub/151/pg151.txt",
-    "note": "Quotations follow this transcription of the late text in seven parts, the version Coleridge settled in his collected editions and the one the Astor edition prints as the 1834 text. It is the verse only: it carries no line numbers, and it omits the Latin epigraph and the prose marginal gloss added in 1817, so the gloss is described here but never quoted. The spelling is the revised spelling, not the mock-antique 'Ancyent Marinere' of 1798, and readers comparing the first printing will find stanzas there that Coleridge later cut."
+    "note": "Quotations follow this transcription of the late text in seven parts, the version Coleridge settled in his collected editions and the one the Astor edition prints as the 1834 text. It is the verse only: it carries no line numbers, and it omits the Latin epigraph and the prose marginal gloss added in 1817, so the gloss is described here but never quoted. The spelling is the revised spelling, not the mock-antique ‘Ancyent Marinere’ of 1798, and readers comparing the first printing will find stanzas there that Coleridge later cut."
   },
   "atAGlance": [
     {
       "label": "First published",
       "value": "1798",
-      "note": "Anonymously, as the opening poem of Lyrical Ballads, under the title 'The Rime of the Ancyent Marinere'."
+      "note": "Anonymously, as the opening poem of Lyrical Ballads, under the title ‘The Rime of the Ancyent Marinere’."
     },
     {
       "label": "Marginal gloss added",
       "value": "1817",
-      "note": "In Sibylline Leaves, where the poem first appeared under Coleridge's own name, with a Latin epigraph in place of the old prose Argument."
+      "note": "In Sibylline Leaves, where the poem first appeared under Coleridge’s own name, with a Latin epigraph in place of the old prose Argument."
     },
     {
       "label": "Text followed here",
@@ -49,7 +49,7 @@
       "id": "part-1",
       "label": "Part I",
       "title": "The guest is stopped, the ship goes south, the bird is shot",
-      "summary": "The Mariner picks one man out of three and holds him first by the hand and then, more effectively, by the eye. The voyage runs south past the equator into a storm and then into ice, where an albatross arrives, is fed, and seems to bring a wind. The part ends on the Wedding-Guest's alarm at the teller's face and the flat confession it draws out."
+      "summary": "The Mariner picks one man out of three and holds him first by the hand and then, more effectively, by the eye. The voyage runs south past the equator into a storm and then into ice, where an albatross arrives, is fed, and seems to bring a wind. The part ends on the Wedding-Guest’s alarm at the teller’s face and the flat confession it draws out."
     },
     {
       "id": "part-2",
@@ -67,7 +67,7 @@
       "id": "part-4",
       "label": "Part IV",
       "title": "Seven days alone, and the water-snakes",
-      "summary": "The Wedding-Guest fears he is talking to a ghost and is told, not very comfortingly, that this body did not drop. Alone among the corpses, unable to pray or die, the Mariner watches the moon go up and then the water-snakes moving in the ship's shadow. He blesses them without meaning to, finds he can pray, and the albatross falls from his neck into the sea."
+      "summary": "The Wedding-Guest fears he is talking to a ghost and is told, not very comfortingly, that this body did not drop. Alone among the corpses, unable to pray or die, the Mariner watches the moon go up and then the water-snakes moving in the ship’s shadow. He blesses them without meaning to, finds he can pray, and the albatross falls from his neck into the sea."
     },
     {
       "id": "part-5",
@@ -157,7 +157,7 @@
       "id": "wedding-guest",
       "name": "The Wedding-Guest",
       "role": "The listener, next of kin to the bridegroom",
-      "summary": "He is the reader's stand-in and the poem's control experiment: a cheerful man with somewhere to be, who protests, beats his breast at the sound of the bassoon, and still cannot get up. His interruptions mark the moments at which the tale becomes hardest to bear, and his last state is the only evidence the poem offers of what the story does to a person who hears it.",
+      "summary": "He is the reader’s stand-in and the poem’s control experiment: a cheerful man with somewhere to be, who protests, beats his breast at the sound of the bassoon, and still cannot get up. His interruptions mark the moments at which the tale becomes hardest to bear, and his last state is the only evidence the poem offers of what the story does to a person who hears it.",
       "clue": "He sits on a stone within earshot of the music, twice says that he is afraid of the man talking to him, and never goes in.",
       "firstAppearance": "Part I",
       "traits": [
@@ -183,7 +183,7 @@
       "name": "The Albatross",
       "role": "The bird that comes through the fog",
       "summary": "In the verse it does very little: it arrives, eats what the sailors give it, circles the ship and perches on the rigging for nine evenings. Everything else is put on it by other people. The crew hail it as if it were a Christian soul, then decide it brought the wind, then decide it brought the fog; a spirit is said to have loved it; and it ends as a weight hung where a cross should be.",
-      "clue": "It comes to the sailors' call for food or play, and the last thing said about it is that it sank like lead.",
+      "clue": "It comes to the sailors’ call for food or play, and the last thing said about it is that it sank like lead.",
       "firstAppearance": "Part I",
       "traits": [
         "sociable",
@@ -213,7 +213,7 @@
       "id": "crew",
       "name": "The crew",
       "role": "Two hundred shipmates, living and then dead",
-      "summary": "They judge the killing by its results, condemning it while the luck holds and praising it when the sun comes out, and the poem makes that change of mind their share in the crime. Their deaths are nonetheless out of all proportion, which is one of the difficulties the poem leaves standing. After death they are its strangest image: bodies that work the ropes in silence, among them the Mariner's own nephew, and whose open eyes go on cursing him.",
+      "summary": "They judge the killing by its results, condemning it while the luck holds and praising it when the sun comes out, and the poem makes that change of mind their share in the crime. Their deaths are nonetheless out of all proportion, which is one of the difficulties the poem leaves standing. After death they are its strangest image: bodies that work the ropes in silence, among them the Mariner’s own nephew, and whose open eyes go on cursing him.",
       "clue": "They say he was wrong to kill the bird, then right, then hang it round his neck, and later pull on the same rope as him without a word.",
       "firstAppearance": "Part I",
       "traits": [
@@ -279,7 +279,7 @@
       "name": "Death",
       "role": "Her companion on the skeleton ship",
       "summary": "He is hardly described at all in the late text, which cut the grisly portrait that the 1798 version gave him, so that he survives mainly as a question the Mariner asks on seeing the ship. He loses the throw for the Mariner and, by implication, takes the rest: two hundred men, who go down with a thump while the poem looks the other way at the rising moon.",
-      "clue": "He is the woman's mate, he plays dice on a ship with no planking, and he is never heard to speak.",
+      "clue": "He is the woman’s mate, he plays dice on a ship with no planking, and he is never heard to speak.",
       "firstAppearance": "Part III",
       "traits": [
         "silent",
@@ -301,7 +301,7 @@
       "id": "polar-spirit",
       "name": "The Polar Spirit",
       "role": "The spirit from the land of mist and snow",
-      "summary": "The verse never names him; the title comes from the prose gloss of 1817. He is known only at second hand, through the crew's dreams, which place him nine fathoms under the keel, and through two voices who say he loved the bird. He both avenges the albatross and, under orders the poem does not explain, carries the ship north as far as the equator, where his reach ends and the ship jolts free.",
+      "summary": "The verse never names him; the title comes from the prose gloss of 1817. He is known only at second hand, through the crew’s dreams, which place him nine fathoms under the keel, and through two voices who say he loved the bird. He both avenges the albatross and, under orders the poem does not explain, carries the ship north as far as the equator, where his reach ends and the ship jolts free.",
       "clue": "He follows nine fathom deep, is reported by dreamers and overheard voices, and is never seen by anybody.",
       "firstAppearance": "Part II",
       "traits": [
@@ -333,8 +333,8 @@
       "id": "hermit",
       "name": "The Hermit",
       "role": "The holy man of the wood by the harbour",
-      "summary": "He is the poem's picture of religion lived at ease in nature: he sings hymns of his own making, kneels on a mossy oak-stump and likes talking to sailors. The Mariner expects him to wash the blood away. What the Hermit actually does is cross himself and ask a question, and the answer to that question is the first telling of the tale, so the confessor, far from ending the compulsion, starts it.",
-      "clue": "He compares the ship's sails to dead leaves in his forest brook, urges the boat on when the Pilot is afraid, and can scarcely stand when he steps ashore.",
+      "summary": "He is the poem’s picture of religion lived at ease in nature: he sings hymns of his own making, kneels on a mossy oak-stump and likes talking to sailors. The Mariner expects him to wash the blood away. What the Hermit actually does is cross himself and ask a question, and the answer to that question is the first telling of the tale, so the confessor, far from ending the compulsion, starts it.",
+      "clue": "He compares the ship’s sails to dead leaves in his forest brook, urges the boat on when the Pilot is afraid, and can scarcely stand when he steps ashore.",
       "firstAppearance": "Part VI",
       "traits": [
         "cheerful",
@@ -388,7 +388,7 @@
       "id": "pilots-boy",
       "name": "The Pilot's boy",
       "role": "The lad in the rescue boat",
-      "summary": "He has the poem's most disturbing line after the shooting itself. Watching the Mariner take the oars, he laughs long and loud with his eyes going to and fro, and says what the adults are too frightened or too pious to say. The Mariner adds, in passing and in the present tense, that the boy is mad now, which is what the homecoming has cost somebody who only came out in a boat.",
+      "summary": "He has the poem’s most disturbing line after the shooting itself. Watching the Mariner take the oars, he laughs long and loud with his eyes going to and fro, and says what the adults are too frightened or too pious to say. The Mariner adds, in passing and in the present tense, that the boy is mad now, which is what the homecoming has cost somebody who only came out in a boat.",
       "clue": "He laughs, names the Devil as the oarsman, and is mentioned once more as one who now goes crazy.",
       "firstAppearance": "Part VI",
       "traits": [
@@ -412,19 +412,19 @@
     {
       "id": "guilt",
       "name": "The crime",
-      "summary": "The shooting is given one clause and no reason, and the poem never goes back to supply one. That omission is the centre of the work: guilt here is not the consequence of a bad intention that can be examined and repented, but a fact that attaches to a man and has to be carried, first as a dead bird and then as a story. The crew's guilt is different in kind, a matter of approving after the event, and is punished more severely.",
+      "summary": "The shooting is given one clause and no reason, and the poem never goes back to supply one. That omission is the centre of the work: guilt here is not the consequence of a bad intention that can be examined and repented, but a fact that attaches to a man and has to be carried, first as a dead bird and then as a story. The crew’s guilt is different in kind, a matter of approving after the event, and is punished more severely.",
       "development": "Stated in a line at the end of Part I, made visible as a burden at the end of Part II, lifted from the neck in Part IV, and shown in Part VII to have moved inwards, where it returns at uncertain hours."
     },
     {
       "id": "nature",
       "name": "Nature",
-      "summary": "The same sea creatures appear twice. In Part II they are slimy things crawling on a rotting sea, and in Part IV they are water-snakes in blue, green and velvet black, shedding light as they rear. Nothing about them has altered except the way they are looked at, and the poem locates the Mariner's release in that change of looking. The sun in this poem tends to preside over suffering and the moon over relief, a pattern too consistent to be accidental and too loose to be a code.",
+      "summary": "The same sea creatures appear twice. In Part II they are slimy things crawling on a rotting sea, and in Part IV they are water-snakes in blue, green and velvet black, shedding light as they rear. Nothing about them has altered except the way they are looked at, and the poem locates the Mariner’s release in that change of looking. The sun in this poem tends to preside over suffering and the moon over relief, a pattern too consistent to be accidental and too loose to be a code.",
       "development": "From the bird treated as a guest and then as a target in Part I, through disgust in Part II and unwilled love in Part IV, to the closing claim that prayer and the love of creatures are one act."
     },
     {
       "id": "isolation",
       "name": "Isolation",
-      "summary": "The Mariner's punishment is solitude in company: two hundred bodies on deck, every one with its eyes open, and nobody to speak to. The poem treats loneliness as a spiritual condition as well as a physical one, since at its worst he cannot pray either. His later longing is touchingly modest. He does not ask for the wedding feast, only to walk to church in a crowd.",
+      "summary": "The Mariner’s punishment is solitude in company: two hundred bodies on deck, every one with its eyes open, and nobody to speak to. The poem treats loneliness as a spiritual condition as well as a physical one, since at its worst he cannot pray either. His later longing is touchingly modest. He does not ask for the wedding feast, only to walk to church in a crowd.",
       "development": "Introduced when the ship breaks into a sea nobody has entered, brought to its extreme in Part IV, and carried home in Part VII, where the man who praises company passes like night from land to land and belongs nowhere."
     },
     {
@@ -442,8 +442,8 @@
     {
       "id": "faith",
       "name": "Prayer and providence",
-      "summary": "The Mariner's world is thick with Christian reference, from vespers and the Virgin to the holy rood and guardian saints, and he reads his rescue as grace. But the poem also shows his fate settled by a throw of dice between two spectres, and a sea so lonely that God himself scarcely seemed to be there. It holds both pictures without choosing, which is why it has been read as an orthodox parable and as a nightmare with a parable pinned to it.",
-      "development": "The bird is greeted in God's name in Part I; the dice fall in Part III; prayer fails and then succeeds in Part IV; and Part VII ends with a creed whose comfort the listener's condition does not quite confirm."
+      "summary": "The Mariner’s world is thick with Christian reference, from vespers and the Virgin to the holy rood and guardian saints, and he reads his rescue as grace. But the poem also shows his fate settled by a throw of dice between two spectres, and a sea so lonely that God himself scarcely seemed to be there. It holds both pictures without choosing, which is why it has been read as an orthodox parable and as a nightmare with a parable pinned to it.",
+      "development": "The bird is greeted in God’s name in Part I; the dice fall in Part III; prayer fails and then succeeds in Part IV; and Part VII ends with a creed whose comfort the listener’s condition does not quite confirm."
     }
   ],
   "techniques": [
@@ -469,7 +469,7 @@
       "id": "refrain",
       "name": "Refrain",
       "definition": "A phrase brought back at intervals, so that its meaning shifts with what has happened since.",
-      "inThisBook": "Repetition works at every scale, from doubled words within a line to whole stanzas that return altered. The sun that came up upon the left in Part I rises upon the right in Part II, which is how the poem says the ship has rounded the ice; the lighthouse, hill and kirk of the departure come back in reverse order at the homecoming; and the word 'alone' is struck five times in two lines."
+      "inThisBook": "Repetition works at every scale, from doubled words within a line to whole stanzas that return altered. The sun that came up upon the left in Part I rises upon the right in Part II, which is how the poem says the ship has rounded the ice; the lighthouse, hill and kirk of the departure come back in reverse order at the homecoming; and the word ‘alone’ is struck five times in two lines."
     },
     {
       "id": "archaism",
@@ -487,7 +487,7 @@
       "id": "unstable-symbol",
       "name": "Ambiguous symbols",
       "definition": "An object placed at the centre of a work whose meaning is never settled by it.",
-      "inThisBook": "The albatross is hailed as a soul, credited with the wind, blamed for the fog, hung in the place of a cross and mourned by a spirit, all by characters with reasons of their own. The verse itself never says what the bird means, only what is done with it. Readings that make it Christ, nature, the imagination or an innocent stranger are all continuing the crew's habit of deciding after the fact."
+      "inThisBook": "The albatross is hailed as a soul, credited with the wind, blamed for the fog, hung in the place of a cross and mourned by a spirit, all by characters with reasons of their own. The verse itself never says what the bird means, only what is done with it. Readings that make it Christ, nature, the imagination or an innocent stranger are all continuing the crew’s habit of deciding after the fact."
     }
   ],
   "quotations": [
@@ -497,7 +497,7 @@
       "reference": "Part I",
       "stage": "part-1",
       "context": "The opening couplet, before anybody has spoken.",
-      "analysis": "'It is', not 'there was': the present tense puts the Mariner in front of us as something encountered, almost as a thing, and the same tense will return at the end when we learn he is still doing this. 'One of three' is never explained. Two men walk on into the wedding, and the poem’s first act is a selection without a stated reason, which prepares for a story whose central act also has no stated reason.",
+      "analysis": "‘It is’, not ‘there was’: the present tense puts the Mariner in front of us as something encountered, almost as a thing, and the same tense will return at the end when we learn he is still doing this. ‘One of three’ is never explained. Two men walk on into the wedding, and the poem’s first act is a selection without a stated reason, which prepares for a story whose central act also has no stated reason.",
       "themes": [
         "narration"
       ],
@@ -522,7 +522,7 @@
       "reference": "Part I",
       "stage": "part-1",
       "context": "The Mariner has been told to take his hand away, and does; this is what he uses instead.",
-      "analysis": "The hand fails and the eye succeeds, so the hold is not physical and the guest's consent is not asked. Comparing a grown man to a three years child makes listening a return to helplessness. 'Hath his will' is a phrase of mastery, and it sits oddly on a man we later learn has no will of his own in the matter, since the tale compels him as he compels the guest.",
+      "analysis": "The hand fails and the eye succeeds, so the hold is not physical and the guest’s consent is not asked. Comparing a grown man to a three years child makes listening a return to helplessness. ‘Hath his will’ is a phrase of mastery, and it sits oddly on a man we later learn has no will of his own in the matter, since the tale compels him as he compels the guest.",
       "themes": [
         "narration"
       ],
@@ -546,7 +546,7 @@
       "reference": "Part I",
       "stage": "part-1",
       "context": "The albatross comes through the fog to a ship surrounded by ice, where no living thing has been seen.",
-      "analysis": "The sailors greet the first creature they have met in the ice as one greets a person, and the 'as if' keeps the comparison honest: nobody claims the bird is a soul. What the line establishes is hospitality. The bird is received as a guest, fed, and called to, so that the shooting nine evenings later is a breach of welcome before it is anything more mysterious.",
+      "analysis": "The sailors greet the first creature they have met in the ice as one greets a person, and the ‘as if’ keeps the comparison honest: nobody claims the bird is a soul. What the line establishes is hospitality. The bird is received as a guest, fed, and called to, so that the shooting nine evenings later is a breach of welcome before it is anything more mysterious.",
       "themes": [
         "nature",
         "faith"
@@ -570,8 +570,8 @@
       "text": "\"God save thee, ancient Mariner! From the fiends, that plague thee thus!-- Why look'st thou so?\"--With my cross-bow I shot the ALBATROSS.",
       "reference": "Part I",
       "stage": "part-1",
-      "context": "The Wedding-Guest breaks in at the sight of the Mariner's face, and the answer closes the first part.",
-      "analysis": "The confession is made in reply to a question about his expression, not about his conduct, and it answers 'why' with 'what'. The instrument comes first and the verb is the plainest available. There is no because, then or afterwards. Placing the act at the very end of the part, after a stanza of moonshine and vespers, gives it the abruptness of the thing itself, and the capitals are the text's way of letting the word ring.",
+      "context": "The Wedding-Guest breaks in at the sight of the Mariner’s face, and the answer closes the first part.",
+      "analysis": "The confession is made in reply to a question about his expression, not about his conduct, and it answers ‘why’ with ‘what’. The instrument comes first and the verb is the plainest available. There is no because, then or afterwards. Placing the act at the very end of the part, after a stanza of moonshine and vespers, gives it the abruptness of the thing itself, and the capitals are the text’s way of letting the word ring.",
       "themes": [
         "guilt",
         "narration"
@@ -597,7 +597,7 @@
       "reference": "Part II",
       "stage": "part-2",
       "context": "The first verdict of the shipmates, while the wind still holds but the bird no longer follows.",
-      "analysis": "'Averred' is a word for sworn testimony, and the crew use it twice, a stanza apart, for opposite findings: that he killed the bird that brought the breeze, and that he killed the bird that brought the fog. Their morality is a weather report. The poem treats the second verdict as the fatal one, since approving the act afterwards is the only thing the two hundred ever do to deserve what follows.",
+      "analysis": "‘Averred’ is a word for sworn testimony, and the crew use it twice, a stanza apart, for opposite findings: that he killed the bird that brought the breeze, and that he killed the bird that brought the fog. Their morality is a weather report. The poem treats the second verdict as the fatal one, since approving the act afterwards is the only thing the two hundred ever do to deserve what follows.",
       "themes": [
         "guilt"
       ],
@@ -623,7 +623,7 @@
       "reference": "Part II",
       "stage": "part-2",
       "context": "The ship, running north with a fair wind, enters waters no ship has sailed.",
-      "analysis": "For two lines the poem sounds like the voyage narratives Coleridge had been reading, with the explorer's boast of priority. 'Burst' is a violent verb for an arrival, and it rhymes inside the line with 'first', so that discovery and intrusion are heard as one sound. The silence they break into is about to become their own: in the next stanza the wind drops, and they speak only to hear something.",
+      "analysis": "For two lines the poem sounds like the voyage narratives Coleridge had been reading, with the explorer’s boast of priority. ‘Burst’ is a violent verb for an arrival, and it rhymes inside the line with ‘first’, so that discovery and intrusion are heard as one sound. The silence they break into is about to become their own: in the next stanza the wind drops, and they speak only to hear something.",
       "themes": [
         "isolation",
         "nature"
@@ -694,7 +694,7 @@
       "reference": "Part II",
       "stage": "part-2",
       "context": "The close of Part II: the crew, too parched to speak, express themselves in an act.",
-      "analysis": "The rhyme of 'cross' and 'Albatross' falls inside one line and makes the substitution audible. The passive voice matters: he does not take the bird up, it is hung on him by men who have themselves approved the killing, which makes this a scapegoating as much as a penance. Whether the bird is thereby likened to Christ, or whether the emblem of forgiveness has simply been replaced by the evidence of the offence, the line declines to say.",
+      "analysis": "The rhyme of ‘cross’ and ‘Albatross’ falls inside one line and makes the substitution audible. The passive voice matters: he does not take the bird up, it is hung on him by men who have themselves approved the killing, which makes this a scapegoating as much as a penance. Whether the bird is thereby likened to Christ, or whether the emblem of forgiveness has simply been replaced by the evidence of the offence, the line declines to say.",
       "themes": [
         "guilt",
         "faith"
@@ -743,7 +743,7 @@
       "reference": "Part III",
       "stage": "part-3",
       "context": "The Mariner sees the two figures on the skeleton ship as it comes alongside.",
-      "analysis": "The first two lines are the stock portrait of a ballad heroine, and the third spoils it with a single noun. Red, gold and white are the colours of beauty, and white is also the colour of the disease, so the portrait turns on its own palette. The stanza runs to five lines because the name needs a line to itself. 'Thicks' is used as a verb, an old usage that makes the cold seem to act inside the listener's own veins.",
+      "analysis": "The first two lines are the stock portrait of a ballad heroine, and the third spoils it with a single noun. Red, gold and white are the colours of beauty, and white is also the colour of the disease, so the portrait turns on its own palette. The stanza runs to five lines because the name needs a line to itself. ‘Thicks’ is used as a verb, an old usage that makes the cold seem to act inside the listener’s own veins.",
       "themes": [
         "faith",
         "guilt"
@@ -768,7 +768,7 @@
       "reference": "Part III",
       "stage": "part-3",
       "context": "Death and Life-in-Death have been casting dice on the deck of the hulk; this is her cry.",
-      "analysis": "The poem's only glimpse of how sentences are passed in its universe is a game of chance, and the winner's glee is a child's. If the Mariner's survival is a prize in a dice game, then the moral economy of sin, penance and grace that he later describes has a rival explanation underneath it. The gloss of 1817 tidies this scene into a judgement; the verse leaves it as a throw.",
+      "analysis": "The poem’s only glimpse of how sentences are passed in its universe is a game of chance, and the winner’s glee is a child’s. If the Mariner’s survival is a prize in a dice game, then the moral economy of sin, penance and grace that he later describes has a rival explanation underneath it. The gloss of 1817 tidies this scene into a judgement; the verse leaves it as a throw.",
       "themes": [
         "faith",
         "guilt"
@@ -817,7 +817,7 @@
       "reference": "Part IV",
       "stage": "part-4",
       "context": "The Mariner has just reassured the Wedding-Guest that he is not a ghost, and resumes.",
-      "analysis": "The first two lines contain almost nothing but one word and its near-rhymes: 'alone', 'all', 'a'. Long open vowels and the doubled 'wide wide' stretch the line out to the horizon it describes. The loneliness is then made vertical as well as horizontal, since no saint looks down either. He is not literally alone, as the next stanza cruelly points out; he has two hundred companions on deck.",
+      "analysis": "The first two lines contain almost nothing but one word and its near-rhymes: ‘alone’, ‘all’, ‘a’. Long open vowels and the doubled ‘wide wide’ stretch the line out to the horizon it describes. The loneliness is then made vertical as well as horizontal, since no saint looks down either. He is not literally alone, as the next stanza cruelly points out; he has two hundred companions on deck.",
       "themes": [
         "isolation",
         "faith"
@@ -865,8 +865,8 @@
       "text": "The moving Moon went up the sky, And no where did abide: Softly she was going up, And a star or two beside.",
       "reference": "Part IV",
       "stage": "part-4",
-      "context": "After seven days and nights under the dead men's curse, the Mariner looks up.",
-      "analysis": "After stanzas clogged with rot, reek and curses, this one is almost empty, and the change of pace is the change of heart beginning. The moon is 'moving' and the Mariner is stuck; she abides nowhere and yet is accompanied, a star or two beside her, while he is fixed and alone. Nothing is asked of the image. It simply turns his eyes outward, and the water-snakes come two stanzas later.",
+      "context": "After seven days and nights under the dead men’s curse, the Mariner looks up.",
+      "analysis": "After stanzas clogged with rot, reek and curses, this one is almost empty, and the change of pace is the change of heart beginning. The moon is ‘moving’ and the Mariner is stuck; she abides nowhere and yet is accompanied, a star or two beside her, while he is fixed and alone. Nothing is asked of the image. It simply turns his eyes outward, and the water-snakes come two stanzas later.",
       "themes": [
         "nature",
         "isolation"
@@ -889,7 +889,7 @@
       "reference": "Part IV",
       "stage": "part-4",
       "context": "The Mariner has been watching the water-snakes coil and swim in the shadow of the ship.",
-      "analysis": "The turning point of the poem is an action its agent does not know he is performing. 'Unaware' is said twice in the stanza, and it matches the unexplained shooting exactly: he did not decide to kill and he does not decide to bless. 'A spring of love gushed' is water imagery arriving in a drought, and it comes from inside him before any rain falls. Note too that no tongue can declare their beauty, from a man whose whole later life is declaring.",
+      "analysis": "The turning point of the poem is an action its agent does not know he is performing. ‘Unaware’ is said twice in the stanza, and it matches the unexplained shooting exactly: he did not decide to kill and he does not decide to bless. ‘A spring of love gushed’ is water imagery arriving in a drought, and it comes from inside him before any rain falls. Note too that no tongue can declare their beauty, from a man whose whole later life is declaring.",
       "themes": [
         "nature",
         "forgiveness"
@@ -912,7 +912,7 @@
       "reference": "Part IV",
       "stage": "part-4",
       "context": "The end of Part IV, immediately after the blessing.",
-      "analysis": "Prayer is the sign of the release, not its cause: the blessing came first and was not a prayer at all. The bird, which flew and perched and came to a call, leaves the poem as dead weight, and 'like lead' will be used once more, of the ship itself going down in Part VII. Both burdens sink, and neither sinking ends the matter, which is why this stanza closes a part and not the poem.",
+      "analysis": "Prayer is the sign of the release, not its cause: the blessing came first and was not a prayer at all. The bird, which flew and perched and came to a call, leaves the poem as dead weight, and ‘like lead’ will be used once more, of the ship itself going down in Part VII. Both burdens sink, and neither sinking ends the matter, which is why this stanza closes a part and not the poem.",
       "themes": [
         "forgiveness",
         "faith",
@@ -938,7 +938,7 @@
       "reference": "Part V",
       "stage": "part-5",
       "context": "The dead sailors rise without speaking and work the ship as it moves without wind.",
-      "analysis": "In the simile the men become the equipment they are handling, and then the pronoun does something worse: ‘we’. The Mariner counts himself among them, hauling on a rope beside his own nephew's body. Life-in-Death has won him, and here the phrase is shown from the inside, as a living man doing a shift with corpses and unable to tell himself apart from the gang.",
+      "analysis": "In the simile the men become the equipment they are handling, and then the pronoun does something worse: ‘we’. The Mariner counts himself among them, hauling on a rope beside his own nephew’s body. Life-in-Death has won him, and here the phrase is shown from the inside, as a living man doing a shift with corpses and unable to tell himself apart from the gang.",
       "themes": [
         "isolation",
         "guilt"
@@ -986,7 +986,7 @@
       "text": "Like one that on a lonesome road Doth walk in fear and dread, And having once turned round walks on, And turns no more his head; Because he knows, a frightful fiend Doth close behind him tread.",
       "reference": "Part VI",
       "stage": "part-6",
-      "context": "The spell of the dead men's eyes has just snapped, and the Mariner looks out over the sea again, but sees little.",
+      "context": "The spell of the dead men’s eyes has just snapped, and the Mariner looks out over the sea again, but sees little.",
       "analysis": "The simile leaves the sea for a road on land, the place where we first met the Mariner, and describes a man who has looked once and will not look again. The fiend is never seen; knowledge of it is enough. The stanza takes six lines instead of four, so the reader, like the walker, is kept going past the point where rest was expected. Mary Shelley has Frankenstein quote it as he flees his creature.",
       "themes": [
         "guilt",
@@ -1011,7 +1011,7 @@
       "reference": "Part VII",
       "stage": "part-7",
       "context": "The Pilot has fainted and the Hermit is praying, so the Mariner takes the oars of the rescue boat himself.",
-      "analysis": "The boy's joke is the judgement of the ordinary world on the returning Mariner, and it is delivered in laughter by a child who is losing his mind as he speaks. The poem reports his madness in the present tense, in a subordinate clause, as a casualty nobody stops to count. It is a reminder that the tale harms those it touches, which bears on how we read the Wedding-Guest's condition at the end.",
+      "analysis": "The boy’s joke is the judgement of the ordinary world on the returning Mariner, and it is delivered in laughter by a child who is losing his mind as he speaks. The poem reports his madness in the present tense, in a subordinate clause, as a casualty nobody stops to count. It is a reminder that the tale harms those it touches, which bears on how we read the Wedding-Guest’s condition at the end.",
       "themes": [
         "guilt",
         "narration"
@@ -1035,8 +1035,8 @@
       "text": "Since then, at an uncertain hour, That agony returns; And till my ghastly tale is told, This heart within me burns.",
       "reference": "Part VII",
       "stage": "part-7",
-      "context": "The Mariner has described how the Hermit's question forced the tale out of him, and explains what has happened since.",
-      "analysis": "'Uncertain' removes the last comfort of routine: the penance has no calendar. The burning has moved from the sky and the sea of Part II into his chest, so the tropics are now internal. 'Ghastly' is the word he used of the dead crew at the ropes, and he applies it to his own story. Telling brings relief, which means every listener is being used as medicine, and the Wedding-Guest is only the latest dose.",
+      "context": "The Mariner has described how the Hermit’s question forced the tale out of him, and explains what has happened since.",
+      "analysis": "‘Uncertain’ removes the last comfort of routine: the penance has no calendar. The burning has moved from the sky and the sea of Part II into his chest, so the tropics are now internal. ‘Ghastly’ is the word he used of the dead crew at the ropes, and he applies it to his own story. Telling brings relief, which means every listener is being used as medicine, and the Wedding-Guest is only the latest dose.",
       "themes": [
         "narration",
         "forgiveness",
@@ -1061,7 +1061,7 @@
       "reference": "Part VII",
       "stage": "part-7",
       "context": "The Mariner describes his life since the voyage and how he chooses, or is given, his listeners.",
-      "analysis": "He compares himself to night, the thing that fell at one stride when the crew died, and the comparison makes him a natural force that arrives everywhere and stays nowhere. 'Strange power of speech' is as close as the poem comes to describing itself. Coleridge, a famous talker who held rooms for hours, gives the gift of eloquence to a man for whom it is a symptom.",
+      "analysis": "He compares himself to night, the thing that fell at one stride when the crew died, and the comparison makes him a natural force that arrives everywhere and stays nowhere. ‘Strange power of speech’ is as close as the poem comes to describing itself. Coleridge, a famous talker who held rooms for hours, gives the gift of eloquence to a man for whom it is a symptom.",
       "themes": [
         "narration",
         "isolation"
@@ -1084,7 +1084,7 @@
       "text": "He prayeth best, who loveth best All things both great and small; For the dear God who loveth us He made and loveth all.",
       "reference": "Part VII",
       "stage": "part-7",
-      "context": "The Mariner's farewell to the Wedding-Guest.",
+      "context": "The Mariner’s farewell to the Wedding-Guest.",
       "analysis": "The rhythm goes nursery-simple and the diction could be a hymn for children, which is either the hard-won plainness of a man who has been to the bottom or a formula too small for what it follows. The poem gives grounds for both. The creed says God loves all; the narrative has shown two hundred men killed for a change of opinion. It is worth asking who needs this stanza more, the listener or the speaker.",
       "themes": [
         "faith",
@@ -1110,8 +1110,8 @@
       "text": "A sadder and a wiser man, He rose the morrow morn.",
       "reference": "Part VII",
       "stage": "part-7",
-      "context": "The last two lines of the poem; the Mariner has gone, and the Wedding-Guest has turned from the bridegroom's door.",
-      "analysis": "The poem ends on the listener, and the order of the adjectives is the verdict: sadder first. The stanza before says he went like one stunned and of sense forlorn, language closer to injury than to enlightenment. He has missed the wedding of his own kin to acquire this wisdom. If the Mariner's moral were the whole meaning, the guest ought to be gladder, and that gap is where the poem's interpretation properly begins.",
+      "context": "The last two lines of the poem; the Mariner has gone, and the Wedding-Guest has turned from the bridegroom’s door.",
+      "analysis": "The poem ends on the listener, and the order of the adjectives is the verdict: sadder first. The stanza before says he went like one stunned and of sense forlorn, language closer to injury than to enlightenment. He has missed the wedding of his own kin to acquire this wisdom. If the Mariner’s moral were the whole meaning, the guest ought to be gladder, and that gap is where the poem’s interpretation properly begins.",
       "themes": [
         "narration",
         "isolation"
@@ -1132,32 +1132,32 @@
   "timeline": [
     {
       "year": 1726,
-      "label": "George Shelvocke's A Voyage Round the World published",
+      "label": "George Shelvocke’s A Voyage Round the World published",
       "detail": "Its account of a rough passage round Cape Horn includes an officer shooting a black albatross in the hope of better weather. Wordsworth later recalled suggesting the incident to Coleridge.",
       "kind": "context"
     },
     {
       "year": 1772,
       "label": "Samuel Taylor Coleridge born at Ottery St Mary, Devon",
-      "detail": "The youngest child of the vicar and schoolmaster of the town; he was sent to school at Christ's Hospital in London after his father's death.",
+      "detail": "The youngest child of the vicar and schoolmaster of the town; he was sent to school at Christ’s Hospital in London after his father’s death.",
       "kind": "author"
     },
     {
       "year": 1773,
-      "label": "Cook's Resolution crosses the Antarctic Circle",
-      "detail": "The expedition's astronomer, William Wales, afterwards taught mathematics at Christ's Hospital while Coleridge was a pupil there, a possible route by which descriptions of polar ice reached the poem.",
+      "label": "Cook’s Resolution crosses the Antarctic Circle",
+      "detail": "The expedition’s astronomer, William Wales, afterwards taught mathematics at Christ’s Hospital while Coleridge was a pupil there, a possible route by which descriptions of polar ice reached the poem.",
       "kind": "context"
     },
     {
       "year": 1797,
       "label": "The poem is planned on a November walk in Somerset",
-      "detail": "Coleridge, living at Nether Stowey, set out with William and Dorothy Wordsworth from Alfoxden towards the coast. A joint ballad was proposed to pay for the trip, and soon became Coleridge's alone.",
+      "detail": "Coleridge, living at Nether Stowey, set out with William and Dorothy Wordsworth from Alfoxden towards the coast. A joint ballad was proposed to pay for the trip, and soon became Coleridge’s alone.",
       "kind": "work"
     },
     {
       "year": 1798,
       "label": "Finished in March and published in Lyrical Ballads",
-      "detail": "The anonymous volume, printed in Bristol, opened with 'The Rime of the Ancyent Marinere' in deliberately antique spelling, prefaced by a short prose Argument.",
+      "detail": "The anonymous volume, printed in Bristol, opened with ‘The Rime of the Ancyent Marinere’ in deliberately antique spelling, prefaced by a short prose Argument.",
       "kind": "work"
     },
     {
@@ -1175,13 +1175,13 @@
     {
       "year": 1817,
       "label": "Sibylline Leaves adds the marginal gloss",
-      "detail": "The poem appeared under Coleridge's name for the first time, with a Latin epigraph from Thomas Burnet and a prose commentary in the margin. Biographia Literaria, with his retrospective account of the Lyrical Ballads plan, came out the same year.",
+      "detail": "The poem appeared under Coleridge’s name for the first time, with a Latin epigraph from Thomas Burnet and a prose commentary in the margin. Biographia Literaria, with his retrospective account of the Lyrical Ballads plan, came out the same year.",
       "kind": "work"
     },
     {
       "year": 1818,
       "label": "Frankenstein quotes the poem",
-      "detail": "Mary Shelley's novel gives Walton an allusion to the albatross and has Victor recite the stanza of the lonesome road, an early sign of the poem's hold on the Gothic imagination.",
+      "detail": "Mary Shelley’s novel gives Walton an allusion to the albatross and has Victor recite the stanza of the lonesome road, an early sign of the poem’s hold on the Gothic imagination.",
       "kind": "reception"
     },
     {
@@ -1192,8 +1192,8 @@
     },
     {
       "year": 1876,
-      "label": "Gustave Doré's illustrated edition",
-      "detail": "Doré's large engravings of the ice, the becalmed ship and the spectre-bark fixed the poem's look for generations of readers.",
+      "label": "Gustave Doré’s illustrated edition",
+      "detail": "Doré’s large engravings of the ice, the becalmed ship and the spectre-bark fixed the poem’s look for generations of readers.",
       "kind": "reception"
     }
   ],
@@ -1202,13 +1202,13 @@
       "name": "Nether Stowey, Somerset",
       "lat": 51.1517,
       "lon": -3.1553,
-      "note": "Coleridge's cottage from the end of 1796, where the poem was written."
+      "note": "Coleridge’s cottage from the end of 1796, where the poem was written."
     },
     {
       "name": "Alfoxden, near Holford",
       "lat": 51.164,
       "lon": -3.226,
-      "note": "The house William and Dorothy Wordsworth rented in 1797 and 1798, a few miles' walk from Stowey; the November walk began here."
+      "note": "The house William and Dorothy Wordsworth rented in 1797 and 1798, a few miles’ walk from Stowey; the November walk began here."
     },
     {
       "name": "Watchet harbour",
@@ -1226,48 +1226,48 @@
       "name": "Cape Horn",
       "lat": -55.9833,
       "lon": -67.2667,
-      "note": "The poem gives no bearings, but a ship driven south to the ice that then runs north into an unvisited sea follows the Horn route of Shelvocke's voyage, and the gloss calls the second sea the Pacific."
+      "note": "The poem gives no bearings, but a ship driven south to the ice that then runs north into an unvisited sea follows the Horn route of Shelvocke’s voyage, and the gloss calls the second sea the Pacific."
     },
     {
       "name": "Ottery St Mary, Devon",
       "lat": 50.752,
       "lon": -3.279,
-      "note": "Coleridge's birthplace, where his father was vicar."
+      "note": "Coleridge’s birthplace, where his father was vicar."
     },
     {
       "name": "Highgate, London",
       "lat": 51.571,
       "lon": -0.149,
-      "note": "Coleridge's home from 1816 until his death in 1834, and where the later revisions of the poem were made."
+      "note": "Coleridge’s home from 1816 until his death in 1834, and where the later revisions of the poem were made."
     }
   ],
   "criticalViews": [
     {
       "position": "The sacramental reading: a coherent parable of sin, penance and grace",
       "summary": "On this view the poem means what its Mariner says it means. The killing is a breach of the bond between all living things; the becalming and the deaths are its consequences; the blessing of the water-snakes is an act of love that restores the bond; and the homecoming and the moral complete a pattern of fall and redemption. The gloss of 1817 is Coleridge making that pattern explicit.",
-      "counter": "It has to pass over the dice game, the wildly unequal punishment of the crew, the Hermit's failure to absolve, and a penance explicitly said to have no end. It also takes the gloss as the poem's own voice, when the gloss is written in a different persona and sometimes asserts what the verse leaves open."
+      "counter": "It has to pass over the dice game, the wildly unequal punishment of the crew, the Hermit’s failure to absolve, and a penance explicitly said to have no end. It also takes the gloss as the poem’s own voice, when the gloss is written in a different persona and sometimes asserts what the verse leaves open."
     },
     {
       "position": "The nightmare reading: a universe without reliable justice",
-      "summary": "Here the poem's power lies in the mismatch between act and consequence. A thoughtless shot brings cosmic retribution; chance decides who lives; spirits pursue their own quarrels; and the pious moral at the end is a frightened man's attempt to make sense of what happened to him. The poem is closer to a bad dream than to a sermon, and its terror is that of guilt felt without a crime understood.",
+      "summary": "Here the poem’s power lies in the mismatch between act and consequence. A thoughtless shot brings cosmic retribution; chance decides who lives; spirits pursue their own quarrels; and the pious moral at the end is a frightened man’s attempt to make sense of what happened to him. The poem is closer to a bad dream than to a sermon, and its terror is that of guilt felt without a crime understood.",
       "counter": "The release in Part IV is too carefully prepared and too exactly mirrors the shooting to be arbitrary, and the Christian imagery is in the structure of events as well as in the Mariner’s mouth. To call the moral mere consolation is to decide in advance that the poem cannot mean what it says."
     },
     {
       "position": "The double-text reading: verse and gloss as rival narrators",
-      "summary": "A third position takes the 1817 page, with ballad in the centre and learned commentary in the margin, as the real work. The gloss names the spirits, assigns motives and draws lessons; the verse does none of these things. The poem thereby stages the act of interpretation itself, and shows a later, tidier mind trying to master an older and wilder story, much as the Mariner's moral tries to master his experience.",
+      "summary": "A third position takes the 1817 page, with ballad in the centre and learned commentary in the margin, as the real work. The gloss names the spirits, assigns motives and draws lessons; the verse does none of these things. The poem thereby stages the act of interpretation itself, and shows a later, tidier mind trying to master an older and wilder story, much as the Mariner’s moral tries to master his experience.",
       "counter": "For nineteen years the poem existed and was read without any gloss, and it was already strange and already complete. A reading that depends on the margin risks treating an afterthought as the design, and cannot explain the force of the 1798 text."
     }
   ],
   "essayQuestions": [
     {
-      "question": "How far does the Mariner's closing moral account for the poem that precedes it?",
+      "question": "How far does the Mariner’s closing moral account for the poem that precedes it?",
       "focus": "The relation between the stated lesson and the narrated events",
       "plan": [
         "Set out the moral exactly: prayer and love of all creatures are one thing, because God made and loves them all. Note its hymn-like simplicity and who speaks it.",
         "Show what it does explain: the hospitality shown to the bird in Part I, its violation, and the unwilled blessing of the water-snakes in Part IV, where love precedes prayer.",
-        "Turn to what it leaves out: the dice game in Part III, the deaths of two hundred men for approving an act, and the Pilot's boy driven mad.",
-        "Consider the speaker's situation. A man told that more penance is to come, and still seized by agony at uncertain hours, has reasons to want a simple creed.",
-        "Conclude with the Wedding-Guest, stunned, forlorn and sadder before he is wiser, as the poem's own evidence that the tale outweighs its moral."
+        "Turn to what it leaves out: the dice game in Part III, the deaths of two hundred men for approving an act, and the Pilot’s boy driven mad.",
+        "Consider the speaker’s situation. A man told that more penance is to come, and still seized by agony at uncertain hours, has reasons to want a simple creed.",
+        "Conclude with the Wedding-Guest, stunned, forlorn and sadder before he is wiser, as the poem’s own evidence that the tale outweighs its moral."
       ]
     },
     {
@@ -1275,21 +1275,21 @@
       "focus": "Frame narrative, interruption and the effects of listening",
       "plan": [
         "Begin with the opening as an act of selection and restraint: one of three, the hand and then the eye, the guest who cannot choose but hear.",
-        "Track the interruptions in Parts I, IV and V, and show that each comes where the tale is most frightening, so the frame regulates the reader's fear.",
-        "Set the wedding against the voyage: music, kin and company within earshot of a story about total solitude, and the Mariner's preference for the kirk over the feast.",
-        "Use Part VII to show that the frame is also the subject: the origin of the telling in the Hermit's question, and the mechanism of compulsion.",
+        "Track the interruptions in Parts I, IV and V, and show that each comes where the tale is most frightening, so the frame regulates the reader’s fear.",
+        "Set the wedding against the voyage: music, kin and company within earshot of a story about total solitude, and the Mariner’s preference for the kirk over the feast.",
+        "Use Part VII to show that the frame is also the subject: the origin of the telling in the Hermit’s question, and the mechanism of compulsion.",
         "End on the last stanza, which belongs to the guest, and weigh whether the poem presents storytelling as gift, contagion or both."
       ]
     },
     {
-      "question": "'The albatross means whatever the characters need it to mean.' Discuss Coleridge's handling of the bird.",
-      "focus": "Symbolism, interpretation and the crew's changing verdicts",
+      "question": "‘The albatross means whatever the characters need it to mean.’ Discuss Coleridge’s handling of the bird.",
+      "focus": "Symbolism, interpretation and the crew’s changing verdicts",
       "plan": [
         "Establish what the verse actually shows the bird doing, which is little: arriving, eating, circling, perching, answering a call.",
         "Follow the meanings laid on it in sequence: a Christian soul in simile, the bringer of the breeze, the bringer of the fog, a substitute for the cross, the beloved of a spirit.",
-        "Argue that the crew's two sworn verdicts in Part II make interpretation itself a moral act with consequences.",
+        "Argue that the crew’s two sworn verdicts in Part II make interpretation itself a moral act with consequences.",
         "Consider the falling of the bird in Part IV, where it becomes pure weight and sinks like lead, and what is and is not resolved by that.",
-        "Relate this to the gloss and to later readings, each of which repeats the crew's gesture of deciding afterwards what the bird was."
+        "Relate this to the gloss and to later readings, each of which repeats the crew’s gesture of deciding afterwards what the bird was."
       ]
     },
     {
@@ -1300,7 +1300,7 @@
         "Show internal rhyme and repetition producing both momentum, in the storm and the homecoming, and paralysis, in the becalmed stanzas of Part II.",
         "Examine the stanzas that overrun four lines, such as the portrait of Life-in-Death and the lonesome road, and what the delay of the rhyme does to the reader.",
         "Look at how plainly the uncanny is stated: the shooting, the dead men rising, the ship sinking are each given in the flattest syntax available.",
-        "Conclude that the form's refusal to comment is what lets the natural and the supernatural share a single tone, so that neither can be dismissed."
+        "Conclude that the form’s refusal to comment is what lets the natural and the supernatural share a single tone, so that neither can be dismissed."
       ]
     }
   ],
@@ -1315,11 +1315,11 @@
   "related": [
     {
       "href": "/books/lyrical-ballads/",
-      "why": "The 1798 volume the poem opened, where it sits beside Wordsworth's poems of ordinary life and shows how odd a companion it was."
+      "why": "The 1798 volume the poem opened, where it sits beside Wordsworth’s poems of ordinary life and shows how odd a companion it was."
     },
     {
       "href": "/books/selected-poems-of-samuel-taylor-coleridge/",
-      "why": "For 'Christabel', 'Kubla Khan' and the conversation poems written in the same Somerset months."
+      "why": "For ‘Christabel’, ‘Kubla Khan’ and the conversation poems written in the same Somerset months."
     },
     {
       "href": "/passage-room/ancient-mariner-water-water/",
@@ -1327,7 +1327,7 @@
     },
     {
       "href": "/books/frankenstein/",
-      "why": "Mary Shelley's novel borrows the poem's frame of a compelled teller and a captive listener, and quotes it twice."
+      "why": "Mary Shelley’s novel borrows the poem’s frame of a compelled teller and a captive listener, and quotes it twice."
     },
     {
       "href": "/books/moby-dick/",
@@ -1335,7 +1335,7 @@
     },
     {
       "href": "/passage-room/tintern-abbey-sense-sublime/",
-      "why": "The poem that closed the 1798 Lyrical Ballads, and Wordsworth's very different account of how nature acts on the mind."
+      "why": "The poem that closed the 1798 Lyrical Ballads, and Wordsworth’s very different account of how nature acts on the mind."
     }
   ],
   "videos": []

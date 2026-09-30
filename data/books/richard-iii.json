@@ -15,8 +15,8 @@
   "difficulty": 3,
   "lengthNote": "Around 3,600 lines — after Hamlet, the longest play in the Folio",
   "openingLine": "Now is the winter of our discontent Made glorious summer by this sun of York;",
-  "summary": "A man tells the audience in the first forty lines exactly what he intends to do, and then does it while everyone on stage fails to notice. Richard's method is not secrecy but performance: he grieves for the brother he has imprisoned, refuses a crown he has arranged to be offered, and takes the audience into a confidence he offers nobody else. The play's problem is that the confidence works — and that it stops working in Act IV, when the jokes dry up and the women take over the stage.",
-  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "summary": "A man tells the audience in the first forty lines exactly what he intends to do, and then does it while everyone on stage fails to notice. Richard’s method is not secrecy but performance: he grieves for the brother he has imprisoned, refuses a crown he has arranged to be offered, and takes the audience into a confidence he offers nobody else. The play’s problem is that the confidence works — and that it stops working in Act IV, when the jokes dry up and the women take over the stage.",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
     "label": "Globe/Moby text of Richard III",
     "note": "The quarto and Folio texts differ substantially; line numbers here follow the traditional Globe numbering of the conflated text."
@@ -30,12 +30,12 @@
     {
       "label": "First printed",
       "value": "1597",
-      "note": "A quarto printed by Valentine Simmes for Andrew Wise, with no author named. The 1598 second quarto adds Shakespeare's name."
+      "note": "A quarto printed by Valentine Simmes for Andrew Wise, with no author named. The 1598 second quarto adds Shakespeare’s name."
     },
     {
       "label": "Chief sources",
       "value": "More, Hall and Holinshed",
-      "note": "Thomas More's hostile life of Richard reached Shakespeare through the Tudor chronicles, already shaped into a villain."
+      "note": "Thomas More’s hostile life of Richard reached Shakespeare through the Tudor chronicles, already shaped into a villain."
     },
     {
       "label": "Two texts",
@@ -58,7 +58,7 @@
         {
           "ref": "1.2",
           "title": "The wooing of Anne",
-          "summary": "Interrupting Henry VI's funeral procession, Richard talks the dead king's daughter-in-law into accepting his ring."
+          "summary": "Interrupting Henry VI’s funeral procession, Richard talks the dead king’s daughter-in-law into accepting his ring."
         },
         {
           "ref": "1.3",
@@ -76,17 +76,17 @@
       "id": "act-2",
       "label": "Act II",
       "title": "Edward IV’s death, and the princes brought to London",
-      "summary": "Edward IV has just reconciled his court when Richard tells him Clarence is dead, and the news kills him. The queen's relatives are arrested on the road, the citizens in the street can see what is coming, and the young heir is brought to London under escort by the man who intends to take his place.",
+      "summary": "Edward IV has just reconciled his court when Richard tells him Clarence is dead, and the news kills him. The queen’s relatives are arrested on the road, the citizens in the street can see what is coming, and the young heir is brought to London under escort by the man who intends to take his place.",
       "scenes": [
         {
           "ref": "2.1",
           "title": "The broken reconciliation",
-          "summary": "Edward makes his court swear friendship; Richard announces Clarence's death and lets the guilt settle where it falls."
+          "summary": "Edward makes his court swear friendship; Richard announces Clarence’s death and lets the guilt settle where it falls."
         },
         {
           "ref": "2.2",
           "title": "Three grieving women",
-          "summary": "The Duchess of York, Queen Elizabeth and Clarence's children compete in mourning while Richard proposes a quiet escort for the prince."
+          "summary": "The Duchess of York, Queen Elizabeth and Clarence’s children compete in mourning while Richard proposes a quiet escort for the prince."
         },
         {
           "ref": "2.3",
@@ -104,22 +104,22 @@
       "id": "act-3",
       "label": "Act III",
       "title": "Hastings executed, and Richard offered the crown",
-      "summary": "The princes are lodged in the Tower with courteous menace, Hastings is executed between one sentence and the next, and the crown is offered to a man who has rehearsed his reluctance with Buckingham beforehand. The theatre here is public and cynical, and the citizens' silence is part of the record.",
+      "summary": "The princes are lodged in the Tower with courteous menace, Hastings is executed between one sentence and the next, and the crown is offered to a man who has rehearsed his reluctance with Buckingham beforehand. The theatre here is public and cynical, and the citizens’ silence is part of the record.",
       "scenes": [
         {
           "ref": "3.1",
           "title": "The princes lodged",
-          "summary": "The young Duke of York jokes about his uncle's shoulders; both boys are sent to the Tower for their safety."
+          "summary": "The young Duke of York jokes about his uncle’s shoulders; both boys are sent to the Tower for their safety."
         },
         {
           "ref": "3.2",
           "title": "Hastings ignores a dream",
-          "summary": "Warned by Stanley's nightmare, Hastings decides that his standing with Richard makes him safe."
+          "summary": "Warned by Stanley’s nightmare, Hastings decides that his standing with Richard makes him safe."
         },
         {
           "ref": "3.3",
           "title": "Pomfret",
-          "summary": "Rivers, Grey and Vaughan are executed, and remember Margaret's curse as they go."
+          "summary": "Rivers, Grey and Vaughan are executed, and remember Margaret’s curse as they go."
         },
         {
           "ref": "3.4",
@@ -185,7 +185,7 @@
         {
           "ref": "5.1",
           "title": "Buckingham at Salisbury",
-          "summary": "Led to execution on All-Souls' day, he recalls the oath he swore and the curse Margaret laid."
+          "summary": "Led to execution on All-Souls’ day, he recalls the oath he swore and the curse Margaret laid."
         },
         {
           "ref": "5.2",
@@ -260,7 +260,7 @@
     {
       "id": "buckingham",
       "name": "The Duke of Buckingham",
-      "role": "Richard's chief accomplice",
+      "role": "Richard’s chief accomplice",
       "summary": "The only person who is let into part of the plan, and he is good at it: the staged emergency and the bogus refusal of the crown are largely his productions. He hesitates exactly once, over the princes, and discovers that there was never a second place in the arrangement.",
       "clue": "He boasts that he can counterfeit the deep tragedian, stage-manages a fake coronation appeal, and is dropped the moment he pauses over a murder.",
       "firstAppearance": "1.3",
@@ -322,8 +322,8 @@
     {
       "id": "elizabeth",
       "name": "Queen Elizabeth",
-      "role": "Edward IV's widow, mother of the princes",
-      "summary": "She begins as a court politician anxious about her relatives' standing and ends as the one person who holds a long conversation with Richard and gives nothing away. Whether she agrees to give him her daughter or plays for time is a question the text leaves genuinely open.",
+      "role": "Edward IV’s widow, mother of the princes",
+      "summary": "She begins as a court politician anxious about her relatives’ standing and ends as the one person who holds a long conversation with Richard and gives nothing away. Whether she agrees to give him her daughter or plays for time is a question the text leaves genuinely open.",
       "clue": "She loses a husband, two sons and most of her family, then talks for two hundred lines with the man who took them and leaves him thinking he has won.",
       "firstAppearance": "1.3",
       "traits": [
@@ -353,7 +353,7 @@
     {
       "id": "anne",
       "name": "Lady Anne",
-      "role": "Widow of Prince Edward, later Richard's queen",
+      "role": "Widow of Prince Edward, later Richard’s queen",
       "summary": "She is given one great scene, in which she out-argues Richard line for line and then takes his ring anyway, and one short scene four acts later in which she explains what the marriage has cost her. The play never accounts for the change, which is why the scene is still argued about.",
       "clue": "She spits at him over a coffin, calls him a fouler toad than any poison ever hung on, and is wearing his ring before the corpse has been carried off.",
       "firstAppearance": "1.2",
@@ -378,7 +378,7 @@
       "id": "duchess-of-york",
       "name": "The Duchess of York",
       "role": "Mother of Edward IV, Clarence and Richard",
-      "summary": "She has outlived a husband and is watching her sons destroy one another, and the play gives her the one curse that is delivered by someone with an unquestionable right to it. Her farewell to Richard is a mother's formal withdrawal of blessing, and he asks the drums to drown it.",
+      "summary": "She has outlived a husband and is watching her sons destroy one another, and the play gives her the one curse that is delivered by someone with an unquestionable right to it. Her farewell to Richard is a mother’s formal withdrawal of blessing, and he asks the drums to drown it.",
       "clue": "Three of her sons appear in this play; she buries two of them and sends the third to Bosworth with her heaviest curse instead of a blessing.",
       "firstAppearance": "2.2",
       "traits": [
@@ -404,7 +404,7 @@
     {
       "id": "clarence",
       "name": "George, Duke of Clarence",
-      "role": "Richard's elder brother",
+      "role": "Richard’s elder brother",
       "summary": "He is imprisoned on the strength of a prophecy his brother invented and killed on the strength of a warrant his brother sent, and he spends his last scene describing a dream in which the dead he betrayed at Tewkesbury come for him. He is not innocent, and the murder is still shocking.",
       "clue": "A letter of the alphabet sends him to the Tower, where he dreams of drowning among jewels and wakes to two men arguing about conscience.",
       "firstAppearance": "1.1",
@@ -427,8 +427,8 @@
       "id": "hastings",
       "name": "Lord Hastings",
       "role": "Lord Chamberlain",
-      "summary": "He celebrates the execution of his enemies in the morning and is executed himself after lunch, having explained an hour earlier that he knows Richard's face too well to be in danger. His speech on the block is the play's plainest statement about reading the powerful.",
-      "clue": "He laughs at a warning dream, rejoices at his rivals' deaths at Pomfret, and loses his head between the strawberries and dinner.",
+      "summary": "He celebrates the execution of his enemies in the morning and is executed himself after lunch, having explained an hour earlier that he knows Richard’s face too well to be in danger. His speech on the block is the play’s plainest statement about reading the powerful.",
+      "clue": "He laughs at a warning dream, rejoices at his rivals’ deaths at Pomfret, and loses his head between the strawberries and dinner.",
       "firstAppearance": "1.1",
       "traits": [
         "complacent",
@@ -485,7 +485,7 @@
     {
       "id": "curses",
       "name": "Curses, prophecy and memory",
-      "summary": "Margaret's curses in 1.3 function as a programme for the rest of the play, and the play's dead are its most reliable record-keepers. Whether this is providence or simply the way the guilty are made to remember is left unsettled.",
+      "summary": "Margaret’s curses in 1.3 function as a programme for the rest of the play, and the play’s dead are its most reliable record-keepers. Whether this is providence or simply the way the guilty are made to remember is left unsettled.",
       "development": "Named in Act I, quoted by Rivers at Pomfret, by Hastings on the block and by Buckingham at Salisbury, and finally embodied by the ghosts at Bosworth."
     },
     {
@@ -503,7 +503,7 @@
     {
       "id": "legitimacy",
       "name": "History and legitimacy",
-      "summary": "The play inherits a Richard already blackened by Tudor chroniclers writing for the dynasty his defeat created, and it ends by announcing that dynasty as the end of civil war. Any reading has to hold both the play's theatrical delight in Richard and its political obligation to bury him.",
+      "summary": "The play inherits a Richard already blackened by Tudor chroniclers writing for the dynasty his defeat created, and it ends by announcing that dynasty as the end of civil war. Any reading has to hold both the play’s theatrical delight in Richard and its political obligation to bury him.",
       "development": "Yorkist triumph in 1.1, usurpation staged as election in 3.7, and in 5.5 a marriage that joins the roses and closes the sequence begun in the Henry VI plays."
     }
   ],
@@ -524,19 +524,19 @@
       "id": "anaphora",
       "name": "Anaphora",
       "definition": "Beginning successive clauses with the same word or phrase.",
-      "inThisBook": "Margaret's curses and the women's laments rely on hammered repetition — 'Thou that... Thou slander... Thou loathed’: grief and hatred made into something closer to ritual than conversation."
+      "inThisBook": "Margaret’s curses and the women’s laments rely on hammered repetition — ‘Thou that... Thou slander... Thou loathed’: grief and hatred made into something closer to ritual than conversation."
     },
     {
       "id": "vice-tradition",
       "name": "The Vice",
       "definition": "The joking, confiding tempter of the medieval morality plays, who explains his tricks to the audience as he performs them.",
-      "inThisBook": "Richard names the inheritance himself in 3.1, comparing his own double meanings to 'the formal vice, Iniquity' — the play's clearest signal about where its hero's charm comes from."
+      "inThisBook": "Richard names the inheritance himself in 3.1, comparing his own double meanings to ‘the formal vice, Iniquity’ — the play’s clearest signal about where its hero’s charm comes from."
     },
     {
       "id": "dramatic-irony",
       "name": "Dramatic irony",
       "definition": "The audience holding information a character on stage does not.",
-      "inThisBook": "Because Richard briefs us in advance, almost every scene is watched from inside his plan: Clarence's trust, Hastings's confidence and the citizens' silence are all things we can price and they cannot."
+      "inThisBook": "Because Richard briefs us in advance, almost every scene is watched from inside his plan: Clarence’s trust, Hastings’s confidence and the citizens’ silence are all things we can price and they cannot."
     },
     {
       "id": "patterned-scenes",
@@ -553,7 +553,7 @@
       "reference": "1.1.1",
       "stage": "act-1",
       "context": "The first lines of the play, spoken alone on an empty stage.",
-      "analysis": "The famous first clause is only half a sentence, and the half that follows reverses it: the winter is over. 'Sun of York' is a pun on son and on Edward's badge, and the whole passage is a victory speech delivered by the one man in the family who has no use for victory.",
+      "analysis": "The famous first clause is only half a sentence, and the half that follows reverses it: the winter is over. ‘Sun of York’ is a pun on son and on Edward’s badge, and the whole passage is a victory speech delivered by the one man in the family who has no use for victory.",
       "themes": [
         "performance",
         "complicity"
@@ -564,7 +564,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 1.1.1-4",
+      "source": "Globe/Moby text, 1.1.1–4",
       "cloze": [
         "winter",
         "discontent"
@@ -587,7 +587,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 1.1.24-27",
+      "source": "Globe/Moby text, 1.1.24–27",
       "cloze": [
         "shadow",
         "descant"
@@ -612,7 +612,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 1.1.28-31",
+      "source": "Globe/Moby text, 1.1.28–31",
       "cloze": [
         "determined",
         "villain"
@@ -624,7 +624,7 @@
       "speaker": "Lady Anne",
       "reference": "1.2.157",
       "stage": "act-1",
-      "context": "Beside the coffin of Henry VI, answering Richard's compliment on her spitting.",
+      "context": "Beside the coffin of Henry VI, answering Richard’s compliment on her spitting.",
       "analysis": "She wins this exchange and every other one in the scene, which is what makes the ending of it so hard to explain away. Her images are all of contagion — poison, infection, basilisks — and by the end of the scene she has accepted a ring from the source.",
       "themes": [
         "performance"
@@ -636,7 +636,7 @@
         "anne",
         "richard"
       ],
-      "source": "Globe/Moby text, 1.2.157-158",
+      "source": "Globe/Moby text, 1.2.157–158",
       "cloze": [
         "poison",
         "toad"
@@ -672,7 +672,7 @@
       "reference": "1.2.240",
       "stage": "act-1",
       "context": "Alone, the moment Anne has left the stage.",
-      "analysis": "Two rhetorical questions to us, and then the third line disposes of her in eleven words. The rhyme of woo'd and won makes the whole seduction sound like a completed piece of business, and the audience is being invited to applaud a performance whose victim has only just walked off.",
+      "analysis": "Two rhetorical questions to us, and then the third line disposes of her in eleven words. The rhyme of woo’d and won makes the whole seduction sound like a completed piece of business, and the audience is being invited to applaud a performance whose victim has only just walked off.",
       "themes": [
         "complicity",
         "performance"
@@ -684,7 +684,7 @@
         "richard",
         "anne"
       ],
-      "source": "Globe/Moby text, 1.2.240-242",
+      "source": "Globe/Moby text, 1.2.240–242",
       "cloze": [
         "woo'd",
         "won"
@@ -697,7 +697,7 @@
       "reference": "1.2.276",
       "stage": "act-1",
       "context": "The couplet that closes the wooing scene.",
-      "analysis": "The shadow he could only 'descant on' in the first scene is now something he wants to look at, and he intends to buy a mirror to do it. Success has not altered how he sees his body; it has simply made him curious about the man who could pull this off.",
+      "analysis": "The shadow he could only ‘descant on’ in the first scene is now something he wants to look at, and he intends to buy a mirror to do it. Success has not altered how he sees his body; it has simply made him curious about the man who could pull this off.",
       "themes": [
         "performance"
       ],
@@ -708,7 +708,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 1.2.276-277",
+      "source": "Globe/Moby text, 1.2.276–277",
       "cloze": [
         "shadow",
         "sun"
@@ -721,7 +721,7 @@
       "reference": "1.3.229",
       "stage": "act-1",
       "context": "Cursing Richard in front of the whole Yorkist court, which has been trying to ignore her.",
-      "analysis": "'Rooting hog' is his own badge, the white boar, turned into an insult, and 'seal'd in thy nativity' claims that his body was a signature written at birth. Richard's answer is to wait for her to finish and then substitute her name for his at the end of the curse — the only way anyone in the play ever interrupts her.",
+      "analysis": "‘Rooting hog’ is his own badge, the white boar, turned into an insult, and ‘seal’d in thy nativity’ claims that his body was a signature written at birth. Richard’s answer is to wait for her to finish and then substitute her name for his at the end of the curse — the only way anyone in the play ever interrupts her.",
       "themes": [
         "curses",
         "legitimacy"
@@ -733,7 +733,7 @@
         "margaret",
         "richard"
       ],
-      "source": "Globe/Moby text, 1.3.229-231",
+      "source": "Globe/Moby text, 1.3.229–231",
       "cloze": [
         "abortive",
         "nativity"
@@ -759,7 +759,7 @@
         "elizabeth",
         "richard"
       ],
-      "source": "Globe/Moby text, 1.3.246-248",
+      "source": "Globe/Moby text, 1.3.246–248",
       "cloze": [
         "spider",
         "web"
@@ -772,7 +772,7 @@
       "reference": "1.3.341",
       "stage": "act-1",
       "context": "Alone after the quarrel scene, explaining his method to the audience.",
-      "analysis": "He describes piety as a costume made of offcuts, and the verb 'play' places the whole performance in a theatre. This is a confession no other character will ever hear, and it arrives fifty lines after he has publicly forgiven his enemies for the injuries he invented.",
+      "analysis": "He describes piety as a costume made of offcuts, and the verb ‘play’ places the whole performance in a theatre. This is a confession no other character will ever hear, and it arrives fifty lines after he has publicly forgiven his enemies for the injuries he invented.",
       "themes": [
         "performance",
         "complicity"
@@ -784,7 +784,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 1.3.341-343",
+      "source": "Globe/Moby text, 1.3.341–343",
       "cloze": [
         "villany",
         "saint"
@@ -809,7 +809,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 3.1.83-84",
+      "source": "Globe/Moby text, 3.1.83–84",
       "cloze": [
         "vice",
         "meanings"
@@ -822,7 +822,7 @@
       "reference": "3.4.80",
       "stage": "act-3",
       "context": "At the council table, moments after asking the Bishop of Ely for strawberries.",
-      "analysis": "The domestic detail is the horror: an execution is fitted into the gap before lunch, and the oath is sworn on a saint. Hastings has spoken one cautious conditional — 'if they have done this thing' — and the word 'if' is treated as the treason.",
+      "analysis": "The domestic detail is the horror: an execution is fitted into the gap before lunch, and the oath is sworn on a saint. Hastings has spoken one cautious conditional — ‘if they have done this thing’ — and the word ‘if’ is treated as the treason.",
       "themes": [
         "performance",
         "conscience"
@@ -834,7 +834,7 @@
         "richard",
         "hastings"
       ],
-      "source": "Globe/Moby text, 3.4.80-81",
+      "source": "Globe/Moby text, 3.4.80–81",
       "cloze": [
         "head",
         "dine"
@@ -847,7 +847,7 @@
       "reference": "3.4.100",
       "stage": "act-3",
       "context": "On the way to the block, an hour after gloating over the executions at Pomfret.",
-      "analysis": "The image is exact about what he got wrong: a sailor high on a mast can see further than anybody on deck and is still the first to fall. 'Nod' does double work — the roll of the ship and the small movement of a great man's head — so favour and shipwreck become the same gesture.",
+      "analysis": "The image is exact about what he got wrong: a sailor high on a mast can see further than anybody on deck and is still the first to fall. ‘Nod’ does double work — the roll of the ship and the small movement of a great man’s head — so favour and shipwreck become the same gesture.",
       "themes": [
         "curses",
         "performance"
@@ -859,7 +859,7 @@
         "hastings",
         "richard"
       ],
-      "source": "Globe/Moby text, 3.4.100-105",
+      "source": "Globe/Moby text, 3.4.100–105",
       "cloze": [
         "grace",
         "sailor"
@@ -871,8 +871,8 @@
       "speaker": "Buckingham",
       "reference": "3.5.5",
       "stage": "act-3",
-      "context": "Answering Richard's question about whether he can act frightened, just before the mayor arrives.",
-      "analysis": "Two men openly rehearse a piece of political theatre in front of the audience, and then perform it badly on purpose so that the citizens will believe it. 'Intending' here means stretching or pretending, and the vocabulary throughout is an actor's: counterfeit, tragedian, offices, stratagems.",
+      "context": "Answering Richard’s question about whether he can act frightened, just before the mayor arrives.",
+      "analysis": "Two men openly rehearse a piece of political theatre in front of the audience, and then perform it badly on purpose so that the citizens will believe it. ‘Intending’ here means stretching or pretending, and the vocabulary throughout is an actor’s: counterfeit, tragedian, offices, stratagems.",
       "themes": [
         "performance"
       ],
@@ -883,7 +883,7 @@
         "buckingham",
         "richard"
       ],
-      "source": "Globe/Moby text, 3.5.5-8",
+      "source": "Globe/Moby text, 3.5.5–8",
       "cloze": [
         "counterfeit",
         "tragedian"
@@ -919,7 +919,7 @@
       "reference": "4.3.9",
       "stage": "act-4",
       "context": "Reporting the murder of the princes, which he arranged but did not watch.",
-      "analysis": "The play's most terrible act is reported at two removes, by a man quoting the murderers quoting each other, and the language is the prettiest in the play. 'Four red roses on a stalk' puts the Lancastrian emblem on two Yorkist children, which is the civil war reduced to the size of two sleeping boys.",
+      "analysis": "The play’s most terrible act is reported at two removes, by a man quoting the murderers quoting each other, and the language is the prettiest in the play. ‘Four red roses on a stalk’ puts the Lancastrian emblem on two Yorkist children, which is the civil war reduced to the size of two sleeping boys.",
       "themes": [
         "curses",
         "legitimacy"
@@ -930,7 +930,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 4.3.9-13",
+      "source": "Globe/Moby text, 4.3.9–13",
       "cloze": [
         "babes",
         "roses"
@@ -942,7 +942,7 @@
       "speaker": "Duchess of York",
       "reference": "4.4.199",
       "stage": "act-4",
-      "context": "The last words Richard's mother speaks to him, as he marches out to meet Richmond.",
+      "context": "The last words Richard’s mother speaks to him, as he marches out to meet Richmond.",
       "analysis": "A rhymed couplet from a mother is a formal withdrawal of blessing, and the chiasmus of blood at either end of the first line makes his beginning and his end the same substance. He has had the drums sounded through her speech, so the audience hears it over noise he ordered.",
       "themes": [
         "curses",
@@ -955,7 +955,7 @@
         "duchess-of-york",
         "richard"
       ],
-      "source": "Globe/Moby text, 4.4.199-200",
+      "source": "Globe/Moby text, 4.4.199–200",
       "cloze": [
         "Bloody",
         "Shame"
@@ -979,7 +979,7 @@
         "richard",
         "richmond"
       ],
-      "source": "Globe/Moby text, 4.4.488-490",
+      "source": "Globe/Moby text, 4.4.488–490",
       "cloze": [
         "chair",
         "empty"
@@ -992,7 +992,7 @@
       "reference": "5.3.202",
       "stage": "act-5",
       "context": "Waking in his tent at midnight after the ghosts have visited.",
-      "analysis": "The soliloquy that was always a performance for us becomes a quarrel with no audience at all, and the syntax splits into question and answer as though two people were speaking. 'I am I' should be the most secure sentence in the language; here it is the last thing he can get to hold still.",
+      "analysis": "The soliloquy that was always a performance for us becomes a quarrel with no audience at all, and the syntax splits into question and answer as though two people were speaking. ‘I am I’ should be the most secure sentence in the language; here it is the last thing he can get to hold still.",
       "themes": [
         "conscience",
         "complicity"
@@ -1004,7 +1004,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 5.3.202-205",
+      "source": "Globe/Moby text, 5.3.202–205",
       "cloze": [
         "murderer",
         "myself"
@@ -1028,7 +1028,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 5.3.213-215",
+      "source": "Globe/Moby text, 5.3.213–215",
       "cloze": [
         "conscience",
         "tongues"
@@ -1050,7 +1050,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 5.3.332-334",
+      "source": "Globe/Moby text, 5.3.332–334",
       "cloze": [
         "Conscience",
         "cowards"
@@ -1084,7 +1084,7 @@
       "speaker": "Richmond",
       "reference": "5.5.19",
       "stage": "act-5",
-      "context": "The closing speech, with the crown newly taken from Richard's body.",
+      "context": "The closing speech, with the crown newly taken from Richard’s body.",
       "analysis": "The settlement is announced, never shown: the bride is a woman who never appears, and the peace is described in the future tense throughout. After five acts of a man who told the audience the truth and lied to everyone else, the play ends with a public statement nobody is invited to examine.",
       "themes": [
         "legitimacy"
@@ -1095,7 +1095,7 @@
       "characters": [
         "richmond"
       ],
-      "source": "Globe/Moby text, 5.5.19-21",
+      "source": "Globe/Moby text, 5.5.19–21",
       "cloze": [
         "unite",
         "rose"
@@ -1119,7 +1119,7 @@
       "characters": [
         "richmond"
       ],
-      "source": "Globe/Moby text, 5.5.23-26",
+      "source": "Globe/Moby text, 5.5.23–26",
       "cloze": [
         "mad",
         "brother"
@@ -1147,14 +1147,14 @@
     },
     {
       "year": 1557,
-      "label": "Thomas More's history of Richard III printed",
+      "label": "Thomas More’s history of Richard III printed",
       "detail": "Written decades earlier and left unfinished, it supplied the Tudor chroniclers with the calculating, theatrical Richard Shakespeare inherited.",
       "kind": "context"
     },
     {
       "year": 1587,
-      "label": "Holinshed's Chronicles reissued",
-      "detail": "Shakespeare's immediate source, which carries More's account through Hall into the material of the play.",
+      "label": "Holinshed’s Chronicles reissued",
+      "detail": "Shakespeare’s immediate source, which carries More’s account through Hall into the material of the play.",
       "kind": "context"
     },
     {
@@ -1183,32 +1183,32 @@
     },
     {
       "year": 1699,
-      "label": "Colley Cibber's adaptation",
+      "label": "Colley Cibber’s adaptation",
       "detail": "A shortened rewriting that cut Margaret altogether and held the English stage for the best part of two centuries.",
       "kind": "reception"
     },
     {
       "year": 1741,
-      "label": "Garrick's debut as Richard",
-      "detail": "The role made his name in London, and made the part an actor's proving ground.",
+      "label": "Garrick’s debut as Richard",
+      "detail": "The role made his name in London, and made the part an actor’s proving ground.",
       "kind": "reception"
     },
     {
       "year": 1814,
-      "label": "Edmund Kean's Richard at Drury Lane",
+      "label": "Edmund Kean’s Richard at Drury Lane",
       "detail": "A fast, unheroic reading that became the standard against which nineteenth-century Richards were measured.",
       "kind": "reception"
     },
     {
       "year": 1955,
-      "label": "Laurence Olivier's film",
-      "detail": "Still using much of Cibber's shape, it fixed the opening soliloquy in the popular ear for a century of listeners.",
+      "label": "Laurence Olivier’s film",
+      "detail": "Still using much of Cibber’s shape, it fixed the opening soliloquy in the popular ear for a century of listeners.",
       "kind": "reception"
     },
     {
       "year": 2012,
-      "label": "Richard III's remains found in Leicester",
-      "detail": "The skeleton showed severe scoliosis, reopening old arguments about how much of the play's body is Tudor invention.",
+      "label": "Richard III’s remains found in Leicester",
+      "detail": "The skeleton showed severe scoliosis, reopening old arguments about how much of the play’s body is Tudor invention.",
       "kind": "context"
     }
   ],
@@ -1217,31 +1217,31 @@
       "name": "The Tower of London",
       "lat": 51.5081,
       "lon": -0.0759,
-      "note": "Clarence's cell, the princes' lodging, and the council chamber where Hastings is condemned."
+      "note": "Clarence’s cell, the princes’ lodging, and the council chamber where Hastings is condemned."
     },
     {
       "name": "London",
       "lat": 51.5074,
       "lon": -0.1278,
-      "note": "The streets, the palace and Baynard's Castle, where Richard performs his refusal of the crown."
+      "note": "The streets, the palace and Baynard’s Castle, where Richard performs his refusal of the crown."
     },
     {
       "name": "Pontefract Castle",
       "lat": 53.6913,
       "lon": -1.305,
-      "note": "Pomfret, where Rivers, Grey and Vaughan are executed remembering Margaret's curse."
+      "note": "Pomfret, where Rivers, Grey and Vaughan are executed remembering Margaret’s curse."
     },
     {
       "name": "Salisbury",
       "lat": 51.0688,
       "lon": -1.7945,
-      "note": "Where Buckingham is taken to execution on All-Souls' day."
+      "note": "Where Buckingham is taken to execution on All-Souls’ day."
     },
     {
       "name": "Milford Haven",
       "lat": 51.7136,
       "lon": -5.0403,
-      "note": "Richmond's landing place, reported to Richard as the invasion begins."
+      "note": "Richmond’s landing place, reported to Richard as the invasion begins."
     },
     {
       "name": "Bosworth Field",
@@ -1253,8 +1253,8 @@
   "criticalViews": [
     {
       "position": "A providential history",
-      "summary": "The reading that takes Margaret's curses at face value: the play traces a pattern of retribution running back through the Henry VI plays and closing with the Tudor marriage, so that Richard is the instrument by which England is scourged and cleansed.",
-      "counter": "It has to explain why the scourge gets the best lines, the jokes and the audience's attention for four acts."
+      "summary": "The reading that takes Margaret’s curses at face value: the play traces a pattern of retribution running back through the Henry VI plays and closing with the Tudor marriage, so that Richard is the instrument by which England is scourged and cleansed.",
+      "counter": "It has to explain why the scourge gets the best lines, the jokes and the audience’s attention for four acts."
     },
     {
       "position": "A play about political theatre",
@@ -1268,8 +1268,8 @@
     },
     {
       "position": "Deformity, and who is doing the describing",
-      "summary": "Disability criticism has examined how consistently the play lets Richard's body be read as a moral text — by Margaret, by the Duchess, and by Richard himself — and asked whether the play endorses that reading or exhibits it.",
-      "counter": "Richard supplies most of the descriptions himself, which makes it hard to separate the play's view from his performance of one."
+      "summary": "Disability criticism has examined how consistently the play lets Richard’s body be read as a moral text — by Margaret, by the Duchess, and by Richard himself — and asked whether the play endorses that reading or exhibits it.",
+      "counter": "Richard supplies most of the descriptions himself, which makes it hard to separate the play’s view from his performance of one."
     }
   ],
   "essayQuestions": [
@@ -1286,20 +1286,20 @@
     },
     {
       "question": "What is the function of the women in the play?",
-      "focus": "Lament, memory and the limits of Richard's method",
+      "focus": "Lament, memory and the limits of Richard’s method",
       "plan": [
-        "Begin with Margaret's anomalous presence: historically absent, dramatically indispensable as the play's memory.",
+        "Begin with Margaret’s anomalous presence: historically absent, dramatically indispensable as the play’s memory.",
         "Trace the curses of 1.3 through Rivers at Pomfret, Hastings on the block and Buckingham at Salisbury.",
         "Read 4.4 as a formal set piece — matched laments, shared arithmetic of dead sons — that Richard cannot interrupt.",
         "Compare the two wooing scenes, and weigh the case that Elizabeth is playing for time and has not consented.",
-        "Decide whether the women are the play's moral centre or its chorus, and what difference that makes to the ending."
+        "Decide whether the women are the play’s moral centre or its chorus, and what difference that makes to the ending."
       ]
     },
     {
-      "question": "'The play is about theatre, not about history.' Discuss.",
+      "question": "‘The play is about theatre, not about history.’ Discuss.",
       "focus": "Performance, staging and the Tudor settlement",
       "plan": [
-        "Collect the play's own theatrical vocabulary: counterfeit, tragedian, vice, plot, induction, stratagem.",
+        "Collect the play’s own theatrical vocabulary: counterfeit, tragedian, vice, plot, induction, stratagem.",
         "Analyse 3.5 and 3.7 as staged productions with scripts, props, cues and a silent audience of citizens.",
         "Set against this the historical apparatus — the chroniclers, the tetralogy, the marriage that closes it.",
         "Test the claim on Act V, which replaces performance with dreams, ghosts and a battle.",
@@ -1310,9 +1310,9 @@
       "question": "How far does the play invite sympathy for Richard?",
       "focus": "Deformity, self-description and the nightmare",
       "plan": [
-        "Open with the problem of evidence: nearly everything said about Richard's body is said by Richard or by his enemies.",
+        "Open with the problem of evidence: nearly everything said about Richard’s body is said by Richard or by his enemies.",
         "Read the opening soliloquy as self-presentation, not confession, noting ‘descant’ and ‘determined’.",
-        "Weigh Margaret's and the Duchess's language against his own, and ask whether the play shares their view.",
+        "Weigh Margaret’s and the Duchess’s language against his own, and ask whether the play shares their view.",
         "Examine 5.3 closely: the first speech in which he is not in control of who is talking.",
         "Conclude on the difference between sympathy, fascination and complicity, and which of the three the play actually produces."
       ]
@@ -1322,13 +1322,13 @@
     "Richard tells us his plan in the first forty lines. Why is the play still suspenseful?",
     "Anne accepts the ring of the man who killed her husband and her father-in-law. Is that scene believable, and does it need to be?",
     "Margaret has no legal standing, no power and no business being in England. What does the play lose if a production cuts her, as many have?",
-    "The princes are murdered offstage and described in some of the play's loveliest language. Why that choice?",
+    "The princes are murdered offstage and described in some of the play’s loveliest language. Why that choice?",
     "Richmond has almost no interiority at all. Is that a failure of the writing or a deliberate contrast?"
   ],
   "related": [
     {
       "href": "/books/henry-vi-part-3/",
-      "why": "Richard's first long soliloquy is there, and this play begins in the middle of a conversation started in it."
+      "why": "Richard’s first long soliloquy is there, and this play begins in the middle of a conversation started in it."
     },
     {
       "href": "/books/richard-ii/",
@@ -1336,7 +1336,7 @@
     },
     {
       "href": "/books/macbeth/",
-      "why": "A later study of the same material — a usurper, a prophecy and a battlefield — with the jokes and the audience's company taken away."
+      "why": "A later study of the same material — a usurper, a prophecy and a battlefield — with the jokes and the audience’s company taken away."
     },
     {
       "href": "/books/king-john/",

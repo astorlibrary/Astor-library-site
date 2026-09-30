@@ -10,13 +10,13 @@
   "period": "Shakespeare",
   "written": "c. 1599",
   "firstPublished": 1623,
-  "setting": "A usurped French dukedom and the Forest of Arden, where the exiles have set up a court without a court's powers",
+  "setting": "A usurped French dukedom and the Forest of Arden, where the exiles have set up a court without a court’s powers",
   "readingTime": 150,
   "difficulty": 3,
   "lengthNote": "Around 2,700 lines, a large part of them in prose",
   "openingLine": "As I remember, Adam, it was upon this fashion bequeathed me by will but poor a thousand crowns",
-  "summary": "Two women leave a court where one of them is about to be killed, walk into a wood and stay there for three acts. Rosalind, in a young man's clothes, meets the man who is writing poems about her and offers to cure him of love by playing the part of herself. Almost nothing happens in Arden except talking, which is exactly the point: the play is about what people become when the machinery of rank stops holding them in place.",
-  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "summary": "Two women leave a court where one of them is about to be killed, walk into a wood and stay there for three acts. Rosalind, in a young man’s clothes, meets the man who is writing poems about her and offers to cure him of love by playing the part of herself. Almost nothing happens in Arden except talking, which is exactly the point: the play is about what people become when the machinery of rank stops holding them in place.",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
     "label": "Globe/Moby text of As You Like It",
     "note": "Line numbers follow the traditional Globe numbering. Much of the play is prose, and prose line numbers vary widely between editions."
@@ -30,12 +30,12 @@
     {
       "label": "First printed",
       "value": "1623",
-      "note": "No quarto. The play was entered in the Stationers' Register in 1600 with a note staying publication."
+      "note": "No quarto. The play was entered in the Stationers’ Register in 1600 with a note staying publication."
     },
     {
       "label": "Chief source",
-      "value": "Lodge's Rosalynde",
-      "note": "Thomas Lodge's prose romance of 1590, which supplies the plot; Touchstone, Jaques and Audrey are Shakespeare's additions."
+      "value": "Lodge’s Rosalynde",
+      "note": "Thomas Lodge’s prose romance of 1590, which supplies the plot; Touchstone, Jaques and Audrey are Shakespeare’s additions."
     },
     {
       "label": "Shape",
@@ -48,7 +48,7 @@
       "id": "act-1",
       "label": "Act I",
       "title": "The wrestling match, and the flight to Arden",
-      "summary": "Orlando has been kept as a servant by the brother who was told to educate him, and wins a wrestling match he was meant to lose. Duke Frederick, who has already usurped his own brother, turns on Rosalind for being her father's daughter, and the two cousins leave together with the court fool and a plan involving a doublet and hose.",
+      "summary": "Orlando has been kept as a servant by the brother who was told to educate him, and wins a wrestling match he was meant to lose. Duke Frederick, who has already usurped his own brother, turns on Rosalind for being her father’s daughter, and the two cousins leave together with the court fool and a plan involving a doublet and hose.",
       "scenes": [
         {
           "ref": "1.1",
@@ -63,7 +63,7 @@
         {
           "ref": "1.3",
           "title": "Banishment",
-          "summary": "Frederick exiles Rosalind on ten days' notice; Celia decides to go too, and Rosalind decides to go as a man."
+          "summary": "Frederick exiles Rosalind on ten days’ notice; Celia decides to go too, and Rosalind decides to go as a man."
         }
       ]
     },
@@ -81,12 +81,12 @@
         {
           "ref": "2.2",
           "title": "The search",
-          "summary": "Frederick discovers his daughter gone and blames Orlando's brother for it."
+          "summary": "Frederick discovers his daughter gone and blames Orlando’s brother for it."
         },
         {
           "ref": "2.3",
           "title": "Adam's savings",
-          "summary": "The old servant warns Orlando that Oliver means to burn his lodging, and offers him his own life's wages."
+          "summary": "The old servant warns Orlando that Oliver means to burn his lodging, and offers him his own life’s wages."
         },
         {
           "ref": "2.4",
@@ -124,7 +124,7 @@
         {
           "ref": "3.2",
           "title": "The bad poems",
-          "summary": "Touchstone parodies Orlando's verses, Corin and Touchstone debate court and country, and Ganymede proposes the cure."
+          "summary": "Touchstone parodies Orlando’s verses, Corin and Touchstone debate court and country, and Ganymede proposes the cure."
         },
         {
           "ref": "3.3",
@@ -170,7 +170,7 @@
       "id": "act-5",
       "label": "Act V",
       "title": "Four weddings",
-      "summary": "Four couples, one god of marriage and a conversion offstage: the play gathers every thread together and knows how implausible it is being. Jaques declines the dance, Duke Frederick meets a religious man on the edge of the wood and gives back a dukedom, and Rosalind steps out of the play to ask for applause in a woman's clothes and a boy actor's body.",
+      "summary": "Four couples, one god of marriage and a conversion offstage: the play gathers every thread together and knows how implausible it is being. Jaques declines the dance, Duke Frederick meets a religious man on the edge of the wood and gives back a dukedom, and Rosalind steps out of the play to ask for applause in a woman’s clothes and a boy actor’s body.",
       "scenes": [
         {
           "ref": "5.1",
@@ -190,7 +190,7 @@
         {
           "ref": "5.4",
           "title": "Hymen",
-          "summary": "Rosalind returns as herself, four marriages are made, news arrives of Frederick's conversion, and Jaques leaves for a cave."
+          "summary": "Rosalind returns as herself, four marriages are made, news arrives of Frederick’s conversion, and Jaques leaves for a cave."
         }
       ]
     }
@@ -201,7 +201,7 @@
       "name": "Rosalind",
       "role": "Daughter of the banished duke; in the forest, Ganymede",
       "summary": "She has more lines than any other woman in Shakespeare and uses most of them to conduct her own courtship from behind a disguise. The wit is not decoration: playing Ganymede playing Rosalind lets her ask Orlando the questions a betrothed woman could not, and hear the answers before she commits.",
-      "clue": "She takes a boy's name and a boar-spear, and then teaches the man who loves her to woo a version of herself she can correct as he goes.",
+      "clue": "She takes a boy’s name and a boar-spear, and then teaches the man who loves her to woo a version of herself she can correct as he goes.",
       "firstAppearance": "1.2",
       "traits": [
         "quick",
@@ -272,9 +272,9 @@
     {
       "id": "celia",
       "name": "Celia",
-      "role": "Duke Frederick's daughter; in the forest, Aliena",
-      "summary": "She gives up a dukedom for a cousin without a moment's discussion, which is the most decisive act anyone performs in the play. As the disguise takes over she is edged out of the dialogue, and her dry interruptions in Acts III and IV are the closest the play comes to noticing the cost.",
-      "clue": "She is the usurper's daughter and leaves with the usurped one, buys a cottage under a false name, and falls in love in the time it takes to read a letter.",
+      "role": "Duke Frederick’s daughter; in the forest, Aliena",
+      "summary": "She gives up a dukedom for a cousin without a moment’s discussion, which is the most decisive act anyone performs in the play. As the disguise takes over she is edged out of the dialogue, and her dry interruptions in Acts III and IV are the closest the play comes to noticing the cost.",
+      "clue": "She is the usurper’s daughter and leaves with the usurped one, buys a cottage under a false name, and falls in love in the time it takes to read a letter.",
       "firstAppearance": "1.2",
       "traits": [
         "loyal",
@@ -373,7 +373,7 @@
     {
       "id": "duke-senior",
       "name": "Duke Senior",
-      "role": "The banished duke, Rosalind's father",
+      "role": "The banished duke, Rosalind’s father",
       "summary": "He runs a court in the woods with all the ceremony and none of the power, and his first speech is an argument that the cold is honest. Whether this is philosophy or a way of making exile bearable, the play does not say, and Jaques is there to keep the question open.",
       "clue": "He finds books in brooks and sermons in stones, and proposes a deer hunt four lines later.",
       "firstAppearance": "2.1",
@@ -403,9 +403,9 @@
     {
       "id": "duke-frederick",
       "name": "Duke Frederick",
-      "role": "The usurping duke, Celia's father",
+      "role": "The usurping duke, Celia’s father",
       "summary": "He banishes his niece because she is well liked, which is the only reason he gives and probably the true one. He never sets foot in Arden: the play sends him to its edge, has him meet a religious man, and converts him offstage in a single reported sentence.",
-      "clue": "He took his brother's dukedom, exiles a young woman for being popular, and gives everything back after a conversation nobody in the play witnesses.",
+      "clue": "He took his brother’s dukedom, exiles a young woman for being popular, and gives everything back after a conversation nobody in the play witnesses.",
       "firstAppearance": "1.2",
       "traits": [
         "arbitrary",
@@ -439,9 +439,9 @@
     {
       "id": "oliver",
       "name": "Oliver",
-      "role": "Orlando's eldest brother",
+      "role": "Orlando’s eldest brother",
       "summary": "He admits in his first scene that he hates his brother for being better liked and cannot say why. His rescue from a lioness and his conversion happen offstage and he reports them himself, which asks a good deal of an audience, the kind of demand the last act makes again and again.",
-      "clue": "He plots his brother's death by wrestler and by fire, and is saved by that brother from a snake and a lioness in the same morning.",
+      "clue": "He plots his brother’s death by wrestler and by fire, and is saved by that brother from a snake and a lioness in the same morning.",
       "firstAppearance": "1.1",
       "traits": [
         "envious",
@@ -467,7 +467,7 @@
       "id": "corin",
       "name": "Corin",
       "role": "An old shepherd",
-      "summary": "He is the one person in the forest who works there, and he answers a courtier's philosophical needling with a list of things he knows: rain wets, fire burns, good pasture makes fat sheep. His account of being a hired man on another's land keeps the pastoral honest.",
+      "summary": "He is the one person in the forest who works there, and he answers a courtier’s philosophical needling with a list of things he knows: rain wets, fire burns, good pasture makes fat sheep. His account of being a hired man on another’s land keeps the pastoral honest.",
       "clue": "He cannot offer hospitality because the flock is not his, and his philosophy is entirely made of things he has had to learn on a hillside.",
       "firstAppearance": "2.4",
       "traits": [
@@ -498,7 +498,7 @@
       "id": "phebe",
       "name": "Phebe",
       "role": "A shepherdess",
-      "summary": "She refuses Silvius in the language of a Petrarchan mistress and then falls for a boy who has just told her she is nothing special. Her instant love at the sight of Ganymede is the play's demonstration that the conventions it laughs at are also how people actually behave.",
+      "summary": "She refuses Silvius in the language of a Petrarchan mistress and then falls for a boy who has just told her she is nothing special. Her instant love at the sight of Ganymede is the play’s demonstration that the conventions it laughs at are also how people actually behave.",
       "clue": "She has been told her eyes cannot kill, disproves nothing, and writes a love letter to a young man who is a woman.",
       "firstAppearance": "3.5",
       "traits": [
@@ -524,7 +524,7 @@
       "id": "pastoral",
       "name": "Pastoral and work",
       "summary": "The forest is introduced as freedom from flattery and immediately shown to contain cold, hunger and wage labour. Shakespeare keeps a real shepherd on stage throughout, one who does not own his flock and cannot offer hospitality, so the idyll never closes over completely.",
-      "development": "Duke Senior's praise in 2.1 is answered within twenty lines by Touchstone's arrival, and again in 2.4 by Corin's explanation of who owns the sheep."
+      "development": "Duke Senior’s praise in 2.1 is answered within twenty lines by Touchstone’s arrival, and again in 2.4 by Corin’s explanation of who owns the sheep."
     },
     {
       "id": "disguise",
@@ -535,7 +535,7 @@
     {
       "id": "love-conventions",
       "name": "Love and its conventions",
-      "summary": "The play sets four courtships side by side — Rosalind and Orlando, Silvius and Phebe, Touchstone and Audrey, Oliver and Celia — and lets each expose the others. Rosalind's cure is a course in the difference between the poetry of love and the twenty years that follow it.",
+      "summary": "The play sets four courtships side by side — Rosalind and Orlando, Silvius and Phebe, Touchstone and Audrey, Oliver and Celia — and lets each expose the others. Rosalind’s cure is a course in the difference between the poetry of love and the twenty years that follow it.",
       "development": "Verses on trees in 3.2, a demolition of dying for love in 4.1, and a formal round in 5.2 in which four people say the same thing and mean four different things."
     },
     {
@@ -548,13 +548,13 @@
       "id": "time",
       "name": "Time",
       "summary": "There is no hurry in Arden at all, and the play makes that its subject: Touchstone’s dial marks ripening and rotting in the same sentence, Rosalind lectures a stranger on how differently time moves for different people, and Jaques cuts a life into seven scenes and an exit.",
-      "development": "A fool's dial in 2.7, the seven ages in the same scene, and Rosalind's divers paces in 3.2 — three separate accounts of time within one act of each other."
+      "development": "A fool’s dial in 2.7, the seven ages in the same scene, and Rosalind’s divers paces in 3.2 — three separate accounts of time within one act of each other."
     },
     {
       "id": "melancholy",
       "name": "Melancholy and folly",
-      "summary": "Jaques and Touchstone are the play's two professionals: one is paid to be foolish and is frequently wise, the other is sad by choice and frequently ridiculous. Between them they supply a running commentary that the lovers neither hear nor need.",
-      "development": "Jaques wants the fool's coat in 2.7, catalogues his own sadness in 4.1, and in 5.4 leaves the wedding for a cave."
+      "summary": "Jaques and Touchstone are the play’s two professionals: one is paid to be foolish and is frequently wise, the other is sad by choice and frequently ridiculous. Between them they supply a running commentary that the lovers neither hear nor need.",
+      "development": "Jaques wants the fool’s coat in 2.7, catalogues his own sadness in 4.1, and in 5.4 leaves the wedding for a cave."
     }
   ],
   "techniques": [
@@ -562,7 +562,7 @@
       "id": "prose",
       "name": "Prose",
       "definition": "Unmetred speech used for argument, wit and social ease, not just for low comedy.",
-      "inThisBook": "Rosalind conducts the courtship almost entirely in prose while Orlando writes verse at her, and the play's intelligence is largely on the prose side of that divide."
+      "inThisBook": "Rosalind conducts the courtship almost entirely in prose while Orlando writes verse at her, and the play’s intelligence is largely on the prose side of that divide."
     },
     {
       "id": "disguise-irony",
@@ -614,7 +614,7 @@
         "rosalind",
         "celia"
       ],
-      "source": "Globe/Moby text, 1.3.118-122",
+      "source": "Globe/Moby text, 1.3.118–122",
       "cloze": [
         "swashing",
         "semblances"
@@ -627,7 +627,7 @@
       "reference": "1.3.124",
       "stage": "act-1",
       "context": "Choosing a name for the disguise, immediately after Celia asks what to call her.",
-      "analysis": "Ganymede is the boy Jove carried off, and by 1599 the name was ordinary slang for a young male favourite — so Rosalind picks the most charged alias available and the play never explains it. Celia's answering choice, Aliena, simply means the estranged one, which makes the pair a comment on each other.",
+      "analysis": "Ganymede is the boy Jove carried off, and by 1599 the name was ordinary slang for a young male favourite — so Rosalind picks the most charged alias available and the play never explains it. Celia’s answering choice, Aliena, simply means the estranged one, which makes the pair a comment on each other.",
       "themes": [
         "disguise"
       ],
@@ -638,7 +638,7 @@
         "rosalind",
         "celia"
       ],
-      "source": "Globe/Moby text, 1.3.124-125",
+      "source": "Globe/Moby text, 1.3.124–125",
       "cloze": [
         "Ganymede",
         "page"
@@ -662,7 +662,7 @@
       "characters": [
         "duke-senior"
       ],
-      "source": "Globe/Moby text, 2.1.12-14",
+      "source": "Globe/Moby text, 2.1.12–14",
       "cloze": [
         "adversity",
         "jewel"
@@ -675,7 +675,7 @@
       "reference": "2.1.15",
       "stage": "act-2",
       "context": "The end of the same speech.",
-      "analysis": "Each clause puts a court accomplishment into a natural object — speech, learning, preaching — so the forest is praised for being a better version of what he has lost. The last phrase, 'good in every thing', is exactly the kind of generalisation the rest of the play spends five acts testing.",
+      "analysis": "Each clause puts a court accomplishment into a natural object — speech, learning, preaching — so the forest is praised for being a better version of what he has lost. The last phrase, ‘good in every thing’, is exactly the kind of generalisation the rest of the play spends five acts testing.",
       "themes": [
         "pastoral",
         "exile"
@@ -686,7 +686,7 @@
       "characters": [
         "duke-senior"
       ],
-      "source": "Globe/Moby text, 2.1.15-17",
+      "source": "Globe/Moby text, 2.1.15–17",
       "cloze": [
         "tongues",
         "Sermons"
@@ -699,7 +699,7 @@
       "reference": "2.4.13",
       "stage": "act-2",
       "context": "The moment the three exiles arrive in the forest, exhausted.",
-      "analysis": "This is the first thing said about Arden by somebody who has just walked there, and it flatly contradicts the speech the audience heard two scenes ago. 'Travellers must be content' is a proverb used as a shrug, and the prose rhythm — three short clauses and a resigned fourth — is the opposite of the duke's expansive verse.",
+      "analysis": "This is the first thing said about Arden by somebody who has just walked there, and it flatly contradicts the speech the audience heard two scenes ago. ‘Travellers must be content’ is a proverb used as a shrug, and the prose rhythm — three short clauses and a resigned fourth — is the opposite of the duke’s expansive verse.",
       "themes": [
         "pastoral",
         "melancholy"
@@ -711,7 +711,7 @@
         "touchstone",
         "rosalind"
       ],
-      "source": "Globe/Moby text, 2.4.13-15",
+      "source": "Globe/Moby text, 2.4.13–15",
       "cloze": [
         "Arden",
         "content"
@@ -724,7 +724,7 @@
       "reference": "2.7.26",
       "stage": "act-2",
       "context": "Quoting the fool he met in the forest, to the duke and his lords.",
-      "analysis": "Jaques is reporting Touchstone, so the play's bleakest formulation reaches us at second hand from a professional joker. The repeated verbs make growth and decay the same mechanical process, and the tag at the end — 'thereby hangs a tale' — refuses to draw any moral at all.",
+      "analysis": "Jaques is reporting Touchstone, so the play’s bleakest formulation reaches us at second hand from a professional joker. The repeated verbs make growth and decay the same mechanical process, and the tag at the end — ‘thereby hangs a tale’ — refuses to draw any moral at all.",
       "themes": [
         "time",
         "melancholy"
@@ -736,7 +736,7 @@
         "jaques",
         "touchstone"
       ],
-      "source": "Globe/Moby text, 2.7.26-28",
+      "source": "Globe/Moby text, 2.7.26–28",
       "cloze": [
         "ripe",
         "rot"
@@ -748,8 +748,8 @@
       "speaker": "Jaques",
       "reference": "2.7.142",
       "stage": "act-2",
-      "context": "Picking up the duke's remark that their misery is only one scene in a universal theatre.",
-      "analysis": "The speech is not Jaques's idea: the duke has just used the theatre image and Jaques takes it off him and runs. 'Merely' means entirely, not slightly, and the seven parts that follow are all masculine and all solitary — there is no scene in his account in which two people are together.",
+      "context": "Picking up the duke’s remark that their misery is only one scene in a universal theatre.",
+      "analysis": "The speech is not Jaques’s idea: the duke has just used the theatre image and Jaques takes it off him and runs. ‘Merely’ means entirely, not slightly, and the seven parts that follow are all masculine and all solitary — there is no scene in his account in which two people are together.",
       "themes": [
         "time",
         "melancholy"
@@ -762,7 +762,7 @@
         "jaques",
         "duke-senior"
       ],
-      "source": "Globe/Moby text, 2.7.142-146",
+      "source": "Globe/Moby text, 2.7.142–146",
       "cloze": [
         "stage",
         "players"
@@ -775,7 +775,7 @@
       "reference": "2.7.166",
       "stage": "act-2",
       "context": "The end of the seven ages, as Orlando carries the starving Adam onto the stage.",
-      "analysis": "The staging answers the speech: Jaques finishes describing old age as an empty room and an actual old man is carried in and fed. Four repetitions of 'sans' — a French word in an English line — strip the sentence down as they go, and 'everything' arrives where a noun should be.",
+      "analysis": "The staging answers the speech: Jaques finishes describing old age as an empty room and an actual old man is carried in and fed. Four repetitions of ‘sans’ — a French word in an English line — strip the sentence down as they go, and ‘everything’ arrives where a noun should be.",
       "themes": [
         "time",
         "melancholy"
@@ -786,7 +786,7 @@
       "characters": [
         "jaques"
       ],
-      "source": "Globe/Moby text, 2.7.166-169",
+      "source": "Globe/Moby text, 2.7.166–169",
       "cloze": [
         "childishness",
         "Sans"
@@ -798,8 +798,8 @@
       "speaker": "Amiens",
       "reference": "2.7.179",
       "stage": "act-2",
-      "context": "Sung at the duke's table while Orlando and Adam eat.",
-      "analysis": "The song makes the argument of the whole forest in six lines: weather is cruel but impersonal, and therefore easier to bear than people. 'Because thou art not seen' is the hinge — the wind has no face to be hurt by, which is precisely what Orlando and Adam have just escaped from at home.",
+      "context": "Sung at the duke’s table while Orlando and Adam eat.",
+      "analysis": "The song makes the argument of the whole forest in six lines: weather is cruel but impersonal, and therefore easier to bear than people. ‘Because thou art not seen’ is the hinge — the wind has no face to be hurt by, which is precisely what Orlando and Adam have just escaped from at home.",
       "themes": [
         "pastoral",
         "exile"
@@ -811,7 +811,7 @@
         "duke-senior",
         "orlando"
       ],
-      "source": "Globe/Moby text, 2.7.179-184",
+      "source": "Globe/Moby text, 2.7.179–184",
       "cloze": [
         "winter",
         "ingratitude"
@@ -823,7 +823,7 @@
       "speaker": "Touchstone",
       "reference": "3.2.12",
       "stage": "act-3",
-      "context": "Answering Corin's polite question about how he likes the shepherd's life.",
+      "context": "Answering Corin’s polite question about how he likes the shepherd’s life.",
       "analysis": "Six clauses, each cancelling the last, and the joke is that the form is a parody of scholastic argument aimed at a man who has never been to school. It also happens to be a fair description of pastoral itself — charming in the abstract, poor in the particular.",
       "themes": [
         "pastoral"
@@ -836,7 +836,7 @@
         "touchstone",
         "corin"
       ],
-      "source": "Globe/Moby text, 3.2.12-16",
+      "source": "Globe/Moby text, 3.2.12–16",
       "cloze": [
         "shepherd",
         "naught"
@@ -861,7 +861,7 @@
         "corin",
         "touchstone"
       ],
-      "source": "Globe/Moby text, 3.2.25-27",
+      "source": "Globe/Moby text, 3.2.25–27",
       "cloze": [
         "pasture",
         "sun"
@@ -874,7 +874,7 @@
       "reference": "3.2.239",
       "stage": "act-3",
       "context": "To Celia, while dressed as Ganymede and desperate for news of Orlando.",
-      "analysis": "She is wearing a doublet and hose and claiming a woman's licence to talk, which is the disguise's whole comedy in one sentence. The line is also a conventional joke about women's speech, put in the mouth of the character who has more lines than any other woman Shakespeare wrote.",
+      "analysis": "She is wearing a doublet and hose and claiming a woman’s licence to talk, which is the disguise’s whole comedy in one sentence. The line is also a conventional joke about women’s speech, put in the mouth of the character who has more lines than any other woman Shakespeare wrote.",
       "themes": [
         "disguise",
         "love-conventions"
@@ -887,7 +887,7 @@
         "rosalind",
         "celia"
       ],
-      "source": "Globe/Moby text, 3.2.239-240",
+      "source": "Globe/Moby text, 3.2.239–240",
       "cloze": [
         "woman",
         "speak"
@@ -911,7 +911,7 @@
         "rosalind",
         "orlando"
       ],
-      "source": "Globe/Moby text, 3.2.377-381",
+      "source": "Globe/Moby text, 3.2.377–381",
       "cloze": [
         "madness",
         "lunacy"
@@ -924,7 +924,7 @@
       "reference": "3.5.82",
       "stage": "act-3",
       "context": "Alone with Silvius, after Ganymede has told her to take the offer she has.",
-      "analysis": "The quotation is Marlowe's, from Hero and Leander, and the 'dead shepherd' is Marlowe himself, killed six years before — the only such tribute in Shakespeare. Phebe uses a borrowed line to describe a feeling she is convinced is original, which is the play's method for handling love poetry throughout.",
+      "analysis": "The quotation is Marlowe’s, from Hero and Leander, and the ‘dead shepherd’ is Marlowe himself, killed six years before — the only such tribute in Shakespeare. Phebe uses a borrowed line to describe a feeling she is convinced is original, which is the play’s method for handling love poetry throughout.",
       "themes": [
         "love-conventions",
         "pastoral"
@@ -936,7 +936,7 @@
         "phebe",
         "rosalind"
       ],
-      "source": "Globe/Moby text, 3.5.82-83",
+      "source": "Globe/Moby text, 3.5.82–83",
       "cloze": [
         "Shepherd",
         "sight"
@@ -948,8 +948,8 @@
       "speaker": "Jaques",
       "reference": "4.1.15",
       "stage": "act-4",
-      "context": "Explaining to Rosalind why his sadness is not like anyone else's.",
-      "analysis": "The vocabulary is a pharmacist's — simples, compounded, extracted — so he presents his own temperament as a recipe he has made up himself. Rosalind's reply prices it exactly: a traveller who has sold his lands to see other men's has rich eyes and poor hands.",
+      "context": "Explaining to Rosalind why his sadness is not like anyone else’s.",
+      "analysis": "The vocabulary is a pharmacist’s — simples, compounded, extracted — so he presents his own temperament as a recipe he has made up himself. Rosalind’s reply prices it exactly: a traveller who has sold his lands to see other men’s has rich eyes and poor hands.",
       "themes": [
         "melancholy"
       ],
@@ -960,7 +960,7 @@
         "jaques",
         "rosalind"
       ],
-      "source": "Globe/Moby text, 4.1.15-18",
+      "source": "Globe/Moby text, 4.1.15–18",
       "cloze": [
         "melancholy",
         "simples"
@@ -973,7 +973,7 @@
       "reference": "4.1.94",
       "stage": "act-4",
       "context": "Ending a survey of Troilus and Leander, after Orlando has said he will die if refused.",
-      "analysis": "She has just spent ten lines rewriting two famous love-deaths as a club to the head and an attack of cramp, and the summary sentence is flat, unornamented and final. The word 'worms' does the work: it puts the plain physical fact where the literature was, and it is spoken by someone who is very much in love.",
+      "analysis": "She has just spent ten lines rewriting two famous love-deaths as a club to the head and an attack of cramp, and the summary sentence is flat, unornamented and final. The word ‘worms’ does the work: it puts the plain physical fact where the literature was, and it is spoken by someone who is very much in love.",
       "themes": [
         "love-conventions"
       ],
@@ -984,7 +984,7 @@
         "rosalind",
         "orlando"
       ],
-      "source": "Globe/Moby text, 4.1.94-95",
+      "source": "Globe/Moby text, 4.1.94–95",
       "cloze": [
         "worms",
         "love"
@@ -996,7 +996,7 @@
       "speaker": "Rosalind",
       "reference": "4.1.130",
       "stage": "act-4",
-      "context": "Answering Orlando's 'For ever and a day' during the mock marriage.",
+      "context": "Answering Orlando’s ‘For ever and a day’ during the mock marriage.",
       "analysis": "The warning is aimed at both parties, which is what makes it more than a joke about husbands. She then promises to be jealous as a cock-pigeon and to weep for nothing, so the prediction includes herself — she is letting him see the whole marriage before he agrees to it.",
       "themes": [
         "love-conventions",
@@ -1010,7 +1010,7 @@
         "rosalind",
         "orlando"
       ],
-      "source": "Globe/Moby text, 4.1.130-132",
+      "source": "Globe/Moby text, 4.1.130–132",
       "cloze": [
         "April",
         "December"
@@ -1049,7 +1049,7 @@
       "reference": "5.4.55",
       "stage": "act-5",
       "context": "Presenting Audrey to the duke among the couples about to be married.",
-      "analysis": "Four uses of 'poor' in one sentence, and the woman is introduced as a bargain nobody else bid for. It is the only marriage in the last scene described in terms of money, and Shakespeare puts it just before Hymen arrives to bless the rest.",
+      "analysis": "Four uses of ‘poor’ in one sentence, and the woman is introduced as a bargain nobody else bid for. It is the only marriage in the last scene described in terms of money, and Shakespeare puts it just before Hymen arrives to bless the rest.",
       "themes": [
         "love-conventions",
         "melancholy"
@@ -1061,7 +1061,7 @@
         "touchstone",
         "duke-senior"
       ],
-      "source": "Globe/Moby text, 5.4.55-57",
+      "source": "Globe/Moby text, 5.4.55–57",
       "cloze": [
         "virgin",
         "own"
@@ -1074,7 +1074,7 @@
       "reference": "5.4.182",
       "stage": "act-5",
       "context": "Leaving the wedding party to join the converted Duke Frederick.",
-      "analysis": "He distributes futures to each couple in turn, like a man reading a will, and keeps nothing for himself. 'I am for other than for dancing measures,' he says a few lines later, and the play lets him go — a comedy that ends with one guest walking out is making a claim about what its settlement does not cover.",
+      "analysis": "He distributes futures to each couple in turn, like a man reading a will, and keeps nothing for himself. ‘I am for other than for dancing measures,’ he says a few lines later, and the play lets him go — a comedy that ends with one guest walking out is making a claim about what its settlement does not cover.",
       "themes": [
         "melancholy",
         "exile"
@@ -1086,7 +1086,7 @@
         "jaques",
         "duke-senior"
       ],
-      "source": "Globe/Moby text, 5.4.182-183",
+      "source": "Globe/Moby text, 5.4.182–183",
       "cloze": [
         "honour",
         "bequeath"
@@ -1099,7 +1099,7 @@
       "reference": "5.4.196",
       "stage": "act-5",
       "context": "Alone on stage after the dance, speaking the epilogue.",
-      "analysis": "A bush of ivy was the sign hung outside a tavern, so the proverb means that quality advertises itself — and she is standing there advertising. The epilogue's first move is to point out that a woman is not supposed to be doing this, which prepares the ground for the last joke about what she is underneath.",
+      "analysis": "A bush of ivy was the sign hung outside a tavern, so the proverb means that quality advertises itself — and she is standing there advertising. The epilogue’s first move is to point out that a woman is not supposed to be doing this, which prepares the ground for the last joke about what she is underneath.",
       "themes": [
         "disguise"
       ],
@@ -1110,7 +1110,7 @@
       "characters": [
         "rosalind"
       ],
-      "source": "Globe/Moby text, 5.4.196-199",
+      "source": "Globe/Moby text, 5.4.196–199",
       "cloze": [
         "epilogue",
         "bush"
@@ -1134,7 +1134,7 @@
       "characters": [
         "rosalind"
       ],
-      "source": "Globe/Moby text, 5.4.212-214",
+      "source": "Globe/Moby text, 5.4.212–214",
       "cloze": [
         "woman",
         "beards"
@@ -1144,26 +1144,26 @@
   "timeline": [
     {
       "year": 1590,
-      "label": "Lodge's Rosalynde published",
+      "label": "Lodge’s Rosalynde published",
       "detail": "The prose romance that supplies almost all of the plot, including the wrestling, the disguise and the shepherds.",
       "kind": "context"
     },
     {
       "year": 1593,
       "label": "Christopher Marlowe killed at Deptford",
-      "detail": "Phebe's 'Dead Shepherd' in 3.5 is the play's direct salute to him, and the line she quotes is his.",
+      "detail": "Phebe’s ‘Dead Shepherd’ in 3.5 is the play’s direct salute to him, and the line she quotes is his.",
       "kind": "context"
     },
     {
       "year": 1598,
-      "label": "Marlowe's Hero and Leander published",
-      "detail": "The poem Phebe quotes, and the source of the play's one open tribute to another writer.",
+      "label": "Marlowe’s Hero and Leander published",
+      "detail": "The poem Phebe quotes, and the source of the play’s one open tribute to another writer.",
       "kind": "context"
     },
     {
       "year": 1599,
       "label": "The Globe opens on Bankside",
-      "detail": "The theatre for which the play was almost certainly written, and the setting of the joke behind 'All the world's a stage'.",
+      "detail": "The theatre for which the play was almost certainly written, and the setting of the joke behind ‘All the world’s a stage’.",
       "kind": "context"
     },
     {
@@ -1174,7 +1174,7 @@
     },
     {
       "year": 1600,
-      "label": "Entered in the Stationers' Register",
+      "label": "Entered in the Stationers’ Register",
       "detail": "The entry orders publication to be stayed, and no quarto ever appeared.",
       "kind": "work"
     },
@@ -1192,7 +1192,7 @@
     },
     {
       "year": 1936,
-      "label": "Paul Czinner's film",
+      "label": "Paul Czinner’s film",
       "detail": "With Elisabeth Bergner as Rosalind and Laurence Olivier as Orlando; the first sound film of the play.",
       "kind": "reception"
     },
@@ -1208,7 +1208,7 @@
       "name": "Forest of Arden, Warwickshire",
       "lat": 52.28,
       "lon": -1.7,
-      "note": "The wooded country north of Stratford, and the English name behind the play's forest."
+      "note": "The wooded country north of Stratford, and the English name behind the play’s forest."
     },
     {
       "name": "The Ardennes",
@@ -1220,7 +1220,7 @@
       "name": "Stratford-upon-Avon",
       "lat": 52.1919,
       "lon": -1.7083,
-      "note": "Shakespeare's mother was Mary Arden, from a family of the Warwickshire woodland."
+      "note": "Shakespeare’s mother was Mary Arden, from a family of the Warwickshire woodland."
     },
     {
       "name": "The Globe, Bankside",
@@ -1232,13 +1232,13 @@
       "name": "Deptford",
       "lat": 51.4787,
       "lon": -0.0261,
-      "note": "Where Marlowe, the play's dead shepherd, was killed in 1593."
+      "note": "Where Marlowe, the play’s dead shepherd, was killed in 1593."
     }
   ],
   "criticalViews": [
     {
       "position": "A pastoral that argues with pastoral",
-      "summary": "The forest is offered as an alternative to the court and then furnished with cold, hunger, wage labour and an old shepherd who cannot afford hospitality. On this reading the play's real subject is the distance between the literary countryside and the economic one.",
+      "summary": "The forest is offered as an alternative to the court and then furnished with cold, hunger, wage labour and an old shepherd who cannot afford hospitality. On this reading the play’s real subject is the distance between the literary countryside and the economic one.",
       "counter": "It risks making the play sound sour, when Arden also plainly works: three of the four couples are made there and a usurper is converted on its edge."
     },
     {
@@ -1252,7 +1252,7 @@
       "counter": "The suspension is paid for in the last act, where two conversions and a lioness have to be reported, not shown."
     },
     {
-      "position": "Jaques as the play's dissenting voice",
+      "position": "Jaques as the play’s dissenting voice",
       "summary": "A long tradition reads Jaques as the character who keeps the comedy honest: the one who weeps for the deer, doubts the songs and will not dance.",
       "counter": "The play also treats him as a pose: Rosalind prices his travels in a sentence, and his great speech is contradicted by the stage as he finishes it."
     }
@@ -1262,8 +1262,8 @@
       "question": "How does Shakespeare use the Forest of Arden?",
       "focus": "Pastoral, labour and the limits of the green world",
       "plan": [
-        "Set Duke Senior's praise in 2.1 against Touchstone's arrival in 2.4 and read them as a deliberate pair.",
-        "Use Corin throughout as the play's control: he works there, he does not own the flock, and his philosophy is entirely practical.",
+        "Set Duke Senior’s praise in 2.1 against Touchstone’s arrival in 2.4 and read them as a deliberate pair.",
+        "Use Corin throughout as the play’s control: he works there, he does not own the flock, and his philosophy is entirely practical.",
         "Examine what the forest actually permits — disguise, argument, courtship — and what it does not change.",
         "Consider the weather: the songs about ingratitude and winter wind are sung by people who are cold.",
         "Conclude on the ending, which returns almost everybody to the court and sends the two dissenters into a cave and a religious life."
@@ -1282,23 +1282,23 @@
     },
     {
       "question": "What does the play gain from Jaques and Touchstone, neither of whom is in Lodge?",
-      "focus": "Commentary, folly and the play's own scepticism",
+      "focus": "Commentary, folly and the play’s own scepticism",
       "plan": [
-        "Establish that both are Shakespeare's additions, and that neither is required by the plot.",
-        "Read 2.7 as their joint scene: Jaques envying the fool's licence and then taking a set piece for himself.",
-        "Set Touchstone's economic exactness against Jaques's cultivated sadness, and note who the play lets be right.",
+        "Establish that both are Shakespeare’s additions, and that neither is required by the plot.",
+        "Read 2.7 as their joint scene: Jaques envying the fool’s licence and then taking a set piece for himself.",
+        "Set Touchstone’s economic exactness against Jaques’s cultivated sadness, and note who the play lets be right.",
         "Examine the marriages: one refuses to take place, the other is presented as a poor bargain.",
         "Decide whether they undermine the comedy or make its optimism worth having."
       ]
     },
     {
-      "question": "'A play in which nothing happens.' How far is that a fair description, and is it a criticism?",
+      "question": "‘A play in which nothing happens.’ How far is that a fair description, and is it a criticism?",
       "focus": "Structure, prose and the suspension of plot",
       "plan": [
         "Chart the plot: it is all but finished by the end of Act II and does not resume until 4.3.",
         "Show what fills the gap — courtship lessons, debates, songs, set pieces — and why prose is the medium for it.",
         "Look at how much the last act has to do offstage: a lioness, two conversions, a restored dukedom.",
-        "Compare the play's use of time with Jaques's seven ages and Rosalind's divers paces: the form is about duration.",
+        "Compare the play’s use of time with Jaques’s seven ages and Rosalind’s divers paces: the form is about duration.",
         "Argue a conclusion about what a comedy is for, if not for events."
       ]
     }
@@ -1307,13 +1307,13 @@
     "Duke Senior says the woods are freer from peril than the court. Does the play agree with him?",
     "Rosalind does far more of the courting than Orlando. Why does she keep the disguise on for so long after the danger has passed?",
     "Celia gives up a dukedom in a single scene and then gradually stops speaking. What has happened to her?",
-    "Touchstone's marriage is the one nobody expects to last. Why does Shakespeare put it in the middle of the final celebration?",
+    "Touchstone’s marriage is the one nobody expects to last. Why does Shakespeare put it in the middle of the final celebration?",
     "Duke Frederick is converted by a man we never meet, offstage, in one reported sentence. Is that a weakness or a joke?"
   ],
   "related": [
     {
       "href": "/books/twelfth-night/",
-      "why": "The other great disguise comedy, written within a year or two, with a woman in men's clothes and a considerably colder ending."
+      "why": "The other great disguise comedy, written within a year or two, with a woman in men’s clothes and a considerably colder ending."
     },
     {
       "href": "/books/much-ado-about-nothing/",

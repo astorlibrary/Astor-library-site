@@ -10,22 +10,22 @@
   "period": "Shakespeare",
   "written": "1599",
   "firstPublished": 1600,
-  "setting": "England and northern France, 1414-1420",
+  "setting": "England and northern France, 1414–1420",
   "readingTime": 150,
   "difficulty": 4,
   "lengthNote": "Around 3,200 lines in the Folio — the quarto of 1600 is barely half that",
   "openingLine": "O for a Muse of fire, that would ascend The brightest heaven of invention",
   "summary": "A king takes an army across the Channel on a claim that churchmen have built for him, sacks a town by threatening its children, and wins a battle he had no business winning. Shakespeare frames it with a Chorus who describes a national epic, and then writes scenes that will not quite fit inside it: a soldier who asks whose fault it will be if the cause is bad, a boy who would trade his fame for a pot of ale, an epilogue that hands the conquest straight back.",
-  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
     "label": "Globe/Moby text of Henry V",
-    "note": "Line numbers follow the traditional Globe numbering, in which each act's Chorus is numbered as scene 0. The 1600 quarto contains none of the Chorus speeches."
+    "note": "Line numbers follow the traditional Globe numbering, in which each act’s Chorus is numbered as scene 0. The 1600 quarto contains none of the Chorus speeches."
   },
   "atAGlance": [
     {
       "label": "Written",
       "value": "1599",
-      "note": "The fifth Chorus imagines a general returning in triumph from Ireland, which points to the months of the Earl of Essex's expedition."
+      "note": "The fifth Chorus imagines a general returning in triumph from Ireland, which points to the months of the Earl of Essex’s expedition."
     },
     {
       "label": "Early texts",
@@ -40,7 +40,7 @@
     {
       "label": "The battle",
       "value": "25 October 1415",
-      "note": "Saint Crispin's Day, which Henry turns into a bond between everyone who survives it."
+      "note": "Saint Crispin’s Day, which Henry turns into a bond between everyone who survives it."
     }
   ],
   "structure": [
@@ -48,7 +48,7 @@
       "id": "act-1",
       "label": "Act I",
       "title": "The bishops, and the claim to France",
-      "summary": "Two bishops discuss a bill that would strip the Church of its land and agree that a French war would be a useful distraction. Canterbury then delivers a sixty-line genealogy proving Henry's right to France, and takes the sin of it on his own head when the king asks. The Dauphin’s gift of tennis balls makes a legal argument personal.",
+      "summary": "Two bishops discuss a bill that would strip the Church of its land and agree that a French war would be a useful distraction. Canterbury then delivers a sixty-line genealogy proving Henry’s right to France, and takes the sin of it on his own head when the king asks. The Dauphin’s gift of tennis balls makes a legal argument personal.",
       "scenes": [
         {
           "ref": "1.0",
@@ -114,7 +114,7 @@
         {
           "ref": "3.1",
           "title": "The breach",
-          "summary": "'Once more unto the breach': the most famous exhortation in English drama."
+          "summary": "‘Once more unto the breach’: the most famous exhortation in English drama."
         },
         {
           "ref": "3.2",
@@ -152,12 +152,12 @@
       "id": "act-4",
       "label": "Act IV",
       "title": "The night before Agincourt, and the battle",
-      "summary": "Disguised in a borrowed cloak, Henry argues with two soldiers about whether a king answers for the souls of the men he leads, loses the argument in substance, and prays alone about his father's usurpation. In the morning he answers the shortage of men with the Crispin’s Day speech. The victory is followed immediately by an order to kill the prisoners.",
+      "summary": "Disguised in a borrowed cloak, Henry argues with two soldiers about whether a king answers for the souls of the men he leads, loses the argument in substance, and prays alone about his father’s usurpation. In the morning he answers the shortage of men with the Crispin’s Day speech. The victory is followed immediately by an order to kill the prisoners.",
       "scenes": [
         {
           "ref": "4.0",
           "title": "Prologue",
-          "summary": "The Chorus's night-piece: two camps, the hum of either army, and a little touch of Harry in the night."
+          "summary": "The Chorus’s night-piece: two camps, the hum of either army, and a little touch of Harry in the night."
         },
         {
           "ref": "4.1",
@@ -230,7 +230,7 @@
       "id": "henry",
       "name": "King Henry V",
       "role": "King of England",
-      "summary": "He can produce whatever voice a situation needs, legal, terrifying, brotherly, awkwardly amorous, and the play never lets the audience behind all of them. The one scene in which nobody knows he is the king is the one in which he is contradicted and cannot answer, and it is followed immediately by a prayer about his father's stolen crown.",
+      "summary": "He can produce whatever voice a situation needs, legal, terrifying, brotherly, awkwardly amorous, and the play never lets the audience behind all of them. The one scene in which nobody knows he is the king is the one in which he is contradicted and cannot answer, and it is followed immediately by a prayer about his father’s stolen crown.",
       "clue": "He asks a bishop whether his claim is lawful, threatens a town with the murder of its infants, and borrows a cloak so that he can hear what his soldiers really think.",
       "firstAppearance": "1.2",
       "traits": [
@@ -273,8 +273,8 @@
     {
       "id": "chorus",
       "name": "The Chorus",
-      "role": "The play's narrator and apologist",
-      "summary": "It appears before every act to apologise for the theatre and to recruit the audience into supplying what the stage cannot. Its Henry is a mirror of all Christian kings moving through a clean epic; the scenes that follow are consistently more complicated, and the gap between the two is the play's method.",
+      "role": "The play’s narrator and apologist",
+      "summary": "It appears before every act to apologise for the theatre and to recruit the audience into supplying what the stage cannot. Its Henry is a mirror of all Christian kings moving through a clean epic; the scenes that follow are consistently more complicated, and the gap between the two is the play’s method.",
       "clue": "It begs pardon for the wooden stage, tells the audience to imagine the horses, and promises a king the following scenes do not quite deliver.",
       "firstAppearance": "1.0",
       "traits": [
@@ -395,7 +395,7 @@
       "id": "pistol",
       "name": "Pistol",
       "role": "An ancient, formerly of Eastcheap",
-      "summary": "He speaks in fragments of old plays and treats the campaign as a business opportunity, ransoming a terrified Frenchman he cannot understand. What is left of Falstaff's world goes to France and comes back as a man planning to pass off his beating as war wounds.",
+      "summary": "He speaks in fragments of old plays and treats the campaign as a business opportunity, ransoming a terrified Frenchman he cannot understand. What is left of Falstaff’s world goes to France and comes back as a man planning to pass off his beating as war wounds.",
       "firstAppearance": "2.1",
       "traits": [
         "bombastic",
@@ -450,8 +450,8 @@
     {
       "id": "exeter",
       "name": "Exeter",
-      "role": "The king's uncle",
-      "summary": "He carries the ultimatum to Paris and returns with the tennis balls' reply, and it is he who tells the French king that the coming widows and orphans will be laid at his door. He functions as the war's clear voice: no argument about the claim, only a statement of what refusing it will cost.",
+      "role": "The king’s uncle",
+      "summary": "He carries the ultimatum to Paris and returns with the tennis balls’ reply, and it is he who tells the French king that the coming widows and orphans will be laid at his door. He functions as the war’s clear voice: no argument about the claim, only a statement of what refusing it will cost.",
       "firstAppearance": "1.2",
       "traits": [
         "blunt",
@@ -478,7 +478,7 @@
       "id": "dauphin",
       "name": "The Dauphin",
       "role": "Heir to the French throne",
-      "summary": "He sends the tennis balls, spends the night before Agincourt praising his own horse, and is the play's argument that aristocratic confidence is a military weakness. His contempt for the English is the engine of the first act and the reason the French lose the fourth.",
+      "summary": "He sends the tennis balls, spends the night before Agincourt praising his own horse, and is the play’s argument that aristocratic confidence is a military weakness. His contempt for the English is the engine of the first act and the reason the French lose the fourth.",
       "firstAppearance": "2.4",
       "traits": [
         "scornful",
@@ -508,37 +508,37 @@
       "id": "kingship",
       "name": "Kingship",
       "summary": "Again and again the play comes back to what the crown actually consists of, and the answer Henry reaches alone at night is ceremony: forms that buy obedience and cost sleep. Nothing in the victory revises that answer; it is simply not spoken of again once there are people watching.",
-      "development": "Set out in the bishops' account of the reformed prince in 1.1, tested in the dark in 4.1, and closed off by an Epilogue that reduces the whole reign to a short time greatly lived."
+      "development": "Set out in the bishops’ account of the reformed prince in 1.1, tested in the dark in 4.1, and closed off by an Epilogue that reduces the whole reign to a short time greatly lived."
     },
     {
       "id": "just-war",
       "name": "The justice of the war",
       "summary": "The claim is manufactured in Act I by men with a financial motive, blessed by a churchman who offers to bear the sin, and never examined again by anyone at court. It is a common soldier, in the dark, who asks the question the archbishop was paid to settle.",
-      "development": "Canterbury's genealogy in 1.2; Williams's objection in 4.1; the order to kill the prisoners in 4.6, which nobody on stage condemns."
+      "development": "Canterbury’s genealogy in 1.2; Williams’s objection in 4.1; the order to kill the prisoners in 4.6, which nobody on stage condemns."
     },
     {
       "id": "nation",
       "name": "England, Wales, Scotland and Ireland",
-      "summary": "The English army contains a Welshman, an Irishman and a Scot who cannot agree on anything except that they are fighting the French, and the play both laughs at their accents and takes their professionalism seriously. On the French side, Katharine's English lesson makes the conquest audible as a problem of language.",
-      "development": "The captains' quarrel in 3.2, the lesson in 3.4, Fluellen's leek in 5.1 and Henry's claim in 4.7 that he is Welsh himself."
+      "summary": "The English army contains a Welshman, an Irishman and a Scot who cannot agree on anything except that they are fighting the French, and the play both laughs at their accents and takes their professionalism seriously. On the French side, Katharine’s English lesson makes the conquest audible as a problem of language.",
+      "development": "The captains’ quarrel in 3.2, the lesson in 3.4, Fluellen’s leek in 5.1 and Henry’s claim in 4.7 that he is Welsh himself."
     },
     {
       "id": "rhetoric",
       "name": "Persuasion",
-      "summary": "Henry's speeches are not decoration; they are the mechanism by which a tired, outnumbered army agrees to fight. The play stages the same skill turned in four directions — law, terror, fellowship and courtship — so that the audience can see it working and notice that it is a technique.",
+      "summary": "Henry’s speeches are not decoration; they are the mechanism by which a tired, outnumbered army agrees to fight. The play stages the same skill turned in four directions — law, terror, fellowship and courtship — so that the audience can see it working and notice that it is a technique.",
       "development": "Legal argument in 1.2, terror at Harfleur in 3.3, fellowship at Agincourt in 4.3, and a deliberately clumsy plainness at Troyes in 5.2."
     },
     {
       "id": "ceremony",
       "name": "Ceremony and the private man",
-      "summary": "Stripped of recognition by a borrowed cloak, Henry discovers that the difference between a king and a soldier is a set of observances that cannot cure a fever or buy an hour's sleep. The speech is delivered to nobody, and the play never returns to it in company.",
-      "development": "4.1: the disguise, the argument, the soliloquy on ceremony and the prayer about his father's crown, all in one unbroken scene."
+      "summary": "Stripped of recognition by a borrowed cloak, Henry discovers that the difference between a king and a soldier is a set of observances that cannot cure a fever or buy an hour’s sleep. The speech is delivered to nobody, and the play never returns to it in company.",
+      "development": "4.1: the disguise, the argument, the soliloquy on ceremony and the prayer about his father’s crown, all in one unbroken scene."
     },
     {
       "id": "memory",
       "name": "Memory and fame",
-      "summary": "The Crispin's Day speech is about the future tense: old men forgetting, names remembered with advantages, a story taught to a son. The play is interested in the making of the legend as much as in the battle, which is why it ends by pointing out that everything won here was lost within a generation.",
-      "development": "The Chorus builds the legend across five acts; 4.3 predicts its transmission; the Epilogue's sonnet takes it all back in fourteen lines."
+      "summary": "The Crispin’s Day speech is about the future tense: old men forgetting, names remembered with advantages, a story taught to a son. The play is interested in the making of the legend as much as in the battle, which is why it ends by pointing out that everything won here was lost within a generation.",
+      "development": "The Chorus builds the legend across five acts; 4.3 predicts its transmission; the Epilogue’s sonnet takes it all back in fourteen lines."
     }
   ],
   "techniques": [
@@ -552,7 +552,7 @@
       "id": "anaphora",
       "name": "Anaphora",
       "definition": "Beginning successive clauses with the same word.",
-      "inThisBook": "The battle speeches run on it — 'Once more... once more', 'mock out of their dear husbands; Mock mothers from their sons, mock castles down' — and the repetition does the work of an argument the speeches never actually make."
+      "inThisBook": "The battle speeches run on it — ‘Once more... once more’, ‘mock out of their dear husbands; Mock mothers from their sons, mock castles down’ — and the repetition does the work of an argument the speeches never actually make."
     },
     {
       "id": "juxtaposition",
@@ -576,7 +576,7 @@
       "id": "sonnet",
       "name": "The sonnet epilogue",
       "definition": "A fourteen-line rhymed poem used to close a play.",
-      "inThisBook": "The Epilogue is a sonnet, and it spends its last six lines explaining that Henry's son lost France and bled England — the tightest form in English used to cancel five acts of triumph."
+      "inThisBook": "The Epilogue is a sonnet, and it spends its last six lines explaining that Henry’s son lost France and bled England — the tightest form in English used to cancel five acts of triumph."
     }
   ],
   "quotations": [
@@ -598,7 +598,7 @@
       "characters": [
         "chorus"
       ],
-      "source": "Globe/Moby text, 1.0.1-4",
+      "source": "Globe/Moby text, 1.0.1–4",
       "cloze": [
         "Muse",
         "invention"
@@ -611,7 +611,7 @@
       "reference": "1.0.11",
       "stage": "act-1",
       "context": "The Prologue, apologising for the theatre.",
-      "analysis": "The question is rhetorical and the answer is no, which is the point: the play will do it anyway, and the audience will have agreed to let it. 'Wooden O' describes the playhouse the first spectators were standing in, and the word for helmets, casques, is doing the work of an entire army.",
+      "analysis": "The question is rhetorical and the answer is no, which is the point: the play will do it anyway, and the audience will have agreed to let it. ‘Wooden O’ describes the playhouse the first spectators were standing in, and the word for helmets, casques, is doing the work of an entire army.",
       "themes": [
         "memory"
       ],
@@ -621,7 +621,7 @@
       "characters": [
         "chorus"
       ],
-      "source": "Globe/Moby text, 1.0.11-14",
+      "source": "Globe/Moby text, 1.0.11–14",
       "cloze": [
         "cockpit",
         "wooden"
@@ -634,7 +634,7 @@
       "reference": "1.0.17",
       "stage": "act-1",
       "context": "Asking the audience to supply what the stage cannot.",
-      "analysis": "A cipher is a zero, worth nothing alone and everything in the right column, and the actors are cheerfully calling themselves nothings. 'Forces' is the play's first use of a military word, and it is applied to the audience — the invasion of France begins with the people watching being conscripted.",
+      "analysis": "A cipher is a zero, worth nothing alone and everything in the right column, and the actors are cheerfully calling themselves nothings. ‘Forces’ is the play’s first use of a military word, and it is applied to the audience — the invasion of France begins with the people watching being conscripted.",
       "themes": [
         "memory",
         "rhetoric"
@@ -645,7 +645,7 @@
       "characters": [
         "chorus"
       ],
-      "source": "Globe/Moby text, 1.0.17-18",
+      "source": "Globe/Moby text, 1.0.17–18",
       "cloze": [
         "ciphers",
         "imaginary"
@@ -657,7 +657,7 @@
       "speaker": "King Henry V",
       "reference": "1.2.98",
       "stage": "act-1",
-      "context": "After Canterbury's long genealogical argument for the French crown.",
+      "context": "After Canterbury’s long genealogical argument for the French crown.",
       "analysis": "It is the right question, asked of the one man in England with a financial interest in the answer. Canterbury does not say yes: he says ‘The sin upon my head, dread sovereign’, offering to take the blame without removing it, and Henry accepts the offer without pressing further.",
       "themes": [
         "just-war",
@@ -668,7 +668,7 @@
         "henry",
         "canterbury"
       ],
-      "source": "Globe/Moby text, 1.2.98-99",
+      "source": "Globe/Moby text, 1.2.98–99",
       "cloze": [
         "conscience",
         "claim"
@@ -680,8 +680,8 @@
       "speaker": "King Henry V",
       "reference": "1.2.289",
       "stage": "act-1",
-      "context": "Replying to the Dauphin's present of tennis balls.",
-      "analysis": "He is answering an insult, and he answers it by itemising the dead in advance: widows, then mothers, then buildings, in descending order of grief. 'Mock' is used five times in three lines, so a joke about tennis turns into the word for the whole war — and the responsibility is carefully assigned to the man who made the joke.",
+      "context": "Replying to the Dauphin’s present of tennis balls.",
+      "analysis": "He is answering an insult, and he answers it by itemising the dead in advance: widows, then mothers, then buildings, in descending order of grief. ‘Mock’ is used five times in three lines, so a joke about tennis turns into the word for the whole war — and the responsibility is carefully assigned to the man who made the joke.",
       "themes": [
         "just-war",
         "rhetoric"
@@ -693,7 +693,7 @@
         "henry",
         "dauphin"
       ],
-      "source": "Globe/Moby text, 1.2.289-291",
+      "source": "Globe/Moby text, 1.2.289–291",
       "cloze": [
         "widows",
         "Mock"
@@ -705,8 +705,8 @@
       "speaker": "Hostess",
       "reference": "2.3.15",
       "stage": "act-2",
-      "context": "Describing Falstaff's death to Pistol, Bardolph and Nym.",
-      "analysis": "The greatest comic character in English drama dies offstage, between scenes, in a hostess's muddled prose, and is given one unforgettable image by a woman who is not trying to be eloquent. Eastcheap is being closed down: within forty lines the survivors are on their way to France to steal what they can.",
+      "context": "Describing Falstaff’s death to Pistol, Bardolph and Nym.",
+      "analysis": "The greatest comic character in English drama dies offstage, between scenes, in a hostess’s muddled prose, and is given one unforgettable image by a woman who is not trying to be eloquent. Eastcheap is being closed down: within forty lines the survivors are on their way to France to steal what they can.",
       "themes": [
         "memory"
       ],
@@ -714,7 +714,7 @@
         "juxtaposition"
       ],
       "characters": [],
-      "source": "Globe/Moby text, 2.3.15-16",
+      "source": "Globe/Moby text, 2.3.15–16",
       "cloze": [
         "nose",
         "babbled"
@@ -727,7 +727,7 @@
       "reference": "3.1.1",
       "stage": "act-3",
       "context": "At Harfleur, rallying an assault that has already failed once.",
-      "analysis": "The two alternatives offered are to go forward or to become masonry, and the second is presented as an equally good outcome. 'Once more' admits that this has already been tried and failed, which is the fact the speech has to convert into a reason — and the whole of the rest of it is about ancestry, because the present tense is not helping.",
+      "analysis": "The two alternatives offered are to go forward or to become masonry, and the second is presented as an equally good outcome. ‘Once more’ admits that this has already been tried and failed, which is the fact the speech has to convert into a reason — and the whole of the rest of it is about ancestry, because the present tense is not helping.",
       "themes": [
         "rhetoric",
         "just-war"
@@ -738,7 +738,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 3.1.1-2",
+      "source": "Globe/Moby text, 3.1.1–2",
       "cloze": [
         "breach",
         "dead"
@@ -751,7 +751,7 @@
       "reference": "3.1.5",
       "stage": "act-3",
       "context": "The continuation of the breach speech.",
-      "analysis": "‘Imitate’ and ‘disguise’ are theatre words: he is asking his soldiers to act ferocity, whether or not they feel it, and giving them stage directions for the face. The speech assumes that fair nature is what men are actually made of, which makes the ferocity a costume — and raises the question of what is underneath Henry's own.",
+      "analysis": "‘Imitate’ and ‘disguise’ are theatre words: he is asking his soldiers to act ferocity, whether or not they feel it, and giving them stage directions for the face. The speech assumes that fair nature is what men are actually made of, which makes the ferocity a costume — and raises the question of what is underneath Henry’s own.",
       "themes": [
         "rhetoric",
         "kingship"
@@ -762,7 +762,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 3.1.5-8",
+      "source": "Globe/Moby text, 3.1.5–8",
       "cloze": [
         "tiger",
         "Disguise"
@@ -786,7 +786,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 3.1.32-34",
+      "source": "Globe/Moby text, 3.1.32–34",
       "cloze": [
         "game",
         "England"
@@ -811,7 +811,7 @@
         "the-boy",
         "pistol"
       ],
-      "source": "Globe/Moby text, 3.2.11-12",
+      "source": "Globe/Moby text, 3.2.11–12",
       "cloze": [
         "fame",
         "safety"
@@ -835,7 +835,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 3.3.10-14",
+      "source": "Globe/Moby text, 3.3.10–14",
       "cloze": [
         "mercy",
         "infants"
@@ -848,7 +848,7 @@
       "reference": "4.0.22",
       "stage": "act-4",
       "context": "The night before Agincourt.",
-      "analysis": "'Condemned' and 'sacrifices' are the Chorus's own words for an army it otherwise celebrates, and the tone of the fourth Prologue is quite unlike the first. It is the one place where the narrator's version and the play's version agree — and the scene that follows immediately puts the king among those fires in a borrowed cloak.",
+      "analysis": "‘Condemned’ and ‘sacrifices’ are the Chorus’s own words for an army it otherwise celebrates, and the tone of the fourth Prologue is quite unlike the first. It is the one place where the narrator’s version and the play’s version agree — and the scene that follows immediately puts the king among those fires in a borrowed cloak.",
       "themes": [
         "memory",
         "just-war"
@@ -859,7 +859,7 @@
       "characters": [
         "chorus"
       ],
-      "source": "Globe/Moby text, 4.0.22-25",
+      "source": "Globe/Moby text, 4.0.22–25",
       "cloze": [
         "condemned",
         "sacrifices"
@@ -872,7 +872,7 @@
       "reference": "4.1.138",
       "stage": "act-4",
       "context": "To a stranger by the fire, who is the king.",
-      "analysis": "The objection is not about the politics of the claim but about dying unprepared, which in 1599 was a real and specific fear. 'Blood is their argument' compresses the case: men killing cannot also be settling their affairs, and someone has put them in that position — which is the sentence Henry spends the next forty lines not answering.",
+      "analysis": "The objection is not about the politics of the claim but about dying unprepared, which in 1599 was a real and specific fear. ‘Blood is their argument’ compresses the case: men killing cannot also be settling their affairs, and someone has put them in that position — which is the sentence Henry spends the next forty lines not answering.",
       "themes": [
         "just-war",
         "kingship"
@@ -882,7 +882,7 @@
         "williams",
         "henry"
       ],
-      "source": "Globe/Moby text, 4.1.138-141",
+      "source": "Globe/Moby text, 4.1.138–141",
       "cloze": [
         "battle",
         "argument"
@@ -895,7 +895,7 @@
       "reference": "4.1.175",
       "stage": "act-4",
       "context": "The conclusion of his long reply to Williams and Bates.",
-      "analysis": "It is a clean and quotable separation, and it answers a question nobody asked: Williams had raised the guilt of the man who ordered the battle, not the state of each soldier's conscience. The neatness is the evasion, and the prayer that follows a hundred lines later shows that Henry knows it.",
+      "analysis": "It is a clean and quotable separation, and it answers a question nobody asked: Williams had raised the guilt of the man who ordered the battle, not the state of each soldier’s conscience. The neatness is the evasion, and the prayer that follows a hundred lines later shows that Henry knows it.",
       "themes": [
         "kingship",
         "just-war"
@@ -905,7 +905,7 @@
         "henry",
         "williams"
       ],
-      "source": "Globe/Moby text, 4.1.175-177",
+      "source": "Globe/Moby text, 4.1.175–177",
       "cloze": [
         "duty",
         "soul"
@@ -918,7 +918,7 @@
       "reference": "4.1.226",
       "stage": "act-4",
       "context": "Alone, immediately after the soldiers leave.",
-      "analysis": "He is mimicking his subjects' voices, piling their possessions onto himself in a list that starts with lives and ends with sins. The pronoun slips from 'us' to 'we' without settling whose side he is arguing from, which is the closest the play comes to showing the man inside the office losing track of the boundary.",
+      "analysis": "He is mimicking his subjects’ voices, piling their possessions onto himself in a list that starts with lives and ends with sins. The pronoun slips from ‘us’ to ‘we’ without settling whose side he is arguing from, which is the closest the play comes to showing the man inside the office losing track of the boundary.",
       "themes": [
         "kingship",
         "ceremony"
@@ -930,7 +930,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.1.226-229",
+      "source": "Globe/Moby text, 4.1.226–229",
       "cloze": [
         "souls",
         "sins"
@@ -943,7 +943,7 @@
       "reference": "4.1.236",
       "stage": "act-4",
       "context": "The centre of the soliloquy on what a king has that a private man has not.",
-      "analysis": "He addresses ceremony as a person and then as a deity, and finds it a god that suffers more than the people who pray to it. The speech is an audit: rents, comings in, place, degree and form on one side, and a slave's untroubled sleep on the other, with the balance clearly against the crown.",
+      "analysis": "He addresses ceremony as a person and then as a deity, and finds it a god that suffers more than the people who pray to it. The speech is an audit: rents, comings in, place, degree and form on one side, and a slave’s untroubled sleep on the other, with the balance clearly against the crown.",
       "themes": [
         "ceremony",
         "kingship"
@@ -954,7 +954,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.1.236-238",
+      "source": "Globe/Moby text, 4.1.236–238",
       "cloze": [
         "ceremony",
         "worshippers"
@@ -978,7 +978,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.1.290-292",
+      "source": "Globe/Moby text, 4.1.290–292",
       "cloze": [
         "fault",
         "crown"
@@ -990,7 +990,7 @@
       "speaker": "King Henry V",
       "reference": "4.3.37",
       "stage": "act-4",
-      "context": "Answering Westmoreland's wish for ten thousand more men from England.",
+      "context": "Answering Westmoreland’s wish for ten thousand more men from England.",
       "analysis": "The offer of a passport and travelling money is safe to make because nobody can now accept it, which is the trick of the whole speech: he converts a shortage into a privilege before naming the day. Note that he does not say such a man is a coward — only that he would be poor company to die with.",
       "themes": [
         "rhetoric",
@@ -1000,7 +1000,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.3.37-41",
+      "source": "Globe/Moby text, 4.3.37–41",
       "cloze": [
         "stomach",
         "passport"
@@ -1012,7 +1012,7 @@
       "speaker": "King Henry V",
       "reference": "4.3.60",
       "stage": "act-4",
-      "context": "The Saint Crispin's Day speech, before the battle.",
+      "context": "The Saint Crispin’s Day speech, before the battle.",
       "analysis": "The tense is the engine: almost the whole speech is in the future, describing old men in flowing cups remembering a day that has not happened. Brotherhood is offered as payment, and the play checks it straight away: Williams, who was promised gentling, spends the next scenes in a quarrel over a glove with the man who promised it.",
       "themes": [
         "memory",
@@ -1025,7 +1025,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.3.60-64",
+      "source": "Globe/Moby text, 4.3.60–64",
       "cloze": [
         "remember'd",
         "brothers"
@@ -1049,7 +1049,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.6.37-39",
+      "source": "Globe/Moby text, 4.6.37–39",
       "cloze": [
         "prisoners",
         "word"
@@ -1062,7 +1062,7 @@
       "reference": "4.8.117",
       "stage": "act-4",
       "context": "Permitting Fluellen to announce the casualty figures.",
-      "analysis": "The numbers just read out are wildly lopsided, and the king's response is to forbid any English explanation of them. It is genuine piety and excellent policy together: giving the victory to God puts it beyond the reach of anyone who might ask harder questions about the campaign that produced it.",
+      "analysis": "The numbers just read out are wildly lopsided, and the king’s response is to forbid any English explanation of them. It is genuine piety and excellent policy together: giving the victory to God puts it beyond the reach of anyone who might ask harder questions about the campaign that produced it.",
       "themes": [
         "kingship",
         "memory"
@@ -1072,7 +1072,7 @@
         "henry",
         "fluellen"
       ],
-      "source": "Globe/Moby text, 4.8.117-118",
+      "source": "Globe/Moby text, 4.8.117–118",
       "cloze": [
         "acknowledgement",
         "God"
@@ -1095,7 +1095,7 @@
         "henry",
         "katharine"
       ],
-      "source": "Globe/Moby text, 5.2.150-153",
+      "source": "Globe/Moby text, 5.2.150–153",
       "cloze": [
         "plain",
         "love"
@@ -1121,7 +1121,7 @@
         "chorus",
         "henry"
       ],
-      "source": "Globe/Moby text, 5.2.377-380",
+      "source": "Globe/Moby text, 5.2.377–380",
       "cloze": [
         "Fortune",
         "garden"
@@ -1145,7 +1145,7 @@
       "characters": [
         "chorus"
       ],
-      "source": "Globe/Moby text, 5.2.381-384",
+      "source": "Globe/Moby text, 5.2.381–384",
       "cloze": [
         "infant",
         "bleed"
@@ -1162,7 +1162,7 @@
     {
       "year": 1415,
       "label": "The Battle of Agincourt, 25 October",
-      "detail": "Fought on Saint Crispin's Day after the siege of Harfleur and a long, sick march towards Calais.",
+      "detail": "Fought on Saint Crispin’s Day after the siege of Harfleur and a long, sick march towards Calais.",
       "kind": "context"
     },
     {
@@ -1179,8 +1179,8 @@
     },
     {
       "year": 1587,
-      "label": "Holinshed's Chronicles reissued",
-      "detail": "Shakespeare's principal source for the campaign, alongside Edward Hall.",
+      "label": "Holinshed’s Chronicles reissued",
+      "detail": "Shakespeare’s principal source for the campaign, alongside Edward Hall.",
       "kind": "context"
     },
     {
@@ -1192,7 +1192,7 @@
     {
       "year": 1599,
       "label": "Henry V written and first performed",
-      "detail": "The fifth Chorus's general returning from Ireland is almost certainly the Earl of Essex, who left in March and came home disgraced in September.",
+      "detail": "The fifth Chorus’s general returning from Ireland is almost certainly the Earl of Essex, who left in March and came home disgraced in September.",
       "kind": "work"
     },
     {
@@ -1209,13 +1209,13 @@
     },
     {
       "year": 1944,
-      "label": "Laurence Olivier's film",
+      "label": "Laurence Olivier’s film",
       "detail": "Made during the Second World War, and shaped throughout by that purpose: the Harfleur threat and the order to kill the prisoners are not in it.",
       "kind": "reception"
     },
     {
       "year": 1989,
-      "label": "Kenneth Branagh's film",
+      "label": "Kenneth Branagh’s film",
       "detail": "A muddier, more exhausted Agincourt, which restored much of what the 1944 version had removed.",
       "kind": "reception"
     }
@@ -1261,18 +1261,18 @@
       "name": "Monmouth",
       "lat": 51.8117,
       "lon": -2.7167,
-      "note": "Henry's birthplace, and the town Fluellen compares to Macedon on the grounds that both have a river."
+      "note": "Henry’s birthplace, and the town Fluellen compares to Macedon on the grounds that both have a river."
     }
   ],
   "criticalViews": [
     {
       "position": "The play as national epic",
-      "summary": "The oldest and most durable reading takes the Chorus at its word and the Crispin's Day speech at face value: a study of successful leadership and the making of a nation out of four quarrelling countries.",
-      "counter": "It has to work around the bishops' motives in Act I, the threat at Harfleur, the order in 4.6 and an Epilogue that says the whole thing was undone within a generation."
+      "summary": "The oldest and most durable reading takes the Chorus at its word and the Crispin’s Day speech at face value: a study of successful leadership and the making of a nation out of four quarrelling countries.",
+      "counter": "It has to work around the bishops’ motives in Act I, the threat at Harfleur, the order in 4.6 and an Epilogue that says the whole thing was undone within a generation."
     },
     {
       "position": "The play as an interrogation of the war",
-      "summary": "A reading that has dominated British theatre since the 1960s treats the heroic scenes as the surface and Williams, the Boy, Bardolph's hanging and the prisoners as the evidence underneath it.",
+      "summary": "A reading that has dominated British theatre since the 1960s treats the heroic scenes as the surface and Williams, the Boy, Bardolph’s hanging and the prisoners as the evidence underneath it.",
       "counter": "Pushed too far it makes the Crispin’s Day speech unplayable, when the play plainly wants an audience to be moved by it before it asks them to think again."
     },
     {
@@ -1286,9 +1286,9 @@
       "question": "Does Henry V celebrate its king or put him on trial?",
       "focus": "Heroism, evidence and the structure of the play",
       "plan": [
-        "Establish the Chorus's version first — mirror of all Christian kings — so that the later scenes have something to be measured against.",
+        "Establish the Chorus’s version first — mirror of all Christian kings — so that the later scenes have something to be measured against.",
         "Set the breach speech in 3.1 beside the threat at the gates in 3.3: the same voice, ten minutes apart, doing two entirely different things.",
-        "Use 4.1 as the play's own cross-examination, and note that Williams is never answered on the point he actually raised.",
+        "Use 4.1 as the play’s own cross-examination, and note that Williams is never answered on the point he actually raised.",
         "Weigh 4.6 carefully: the order comes before the killing of the boys, not after it.",
         "Conclude with the Epilogue, which is a sonnet, and which gives the last word to loss instead of Agincourt."
       ]
@@ -1297,7 +1297,7 @@
       "question": "What does the Chorus do to the play?",
       "focus": "Narration, imagination and unreliability",
       "plan": [
-        "Describe the Chorus's stated job: apologising for the stage and recruiting the audience's imaginary forces.",
+        "Describe the Chorus’s stated job: apologising for the stage and recruiting the audience’s imaginary forces.",
         "Show the pattern of contradiction — a heroic prologue followed by bishops counting money, or by Pistol refusing to advance.",
         "Identify the fourth Prologue as the exception, where narrator and play agree on condemned men by their fires.",
         "Consider the 1600 quarto, which has no Choruses at all, and what a performance without them would be like.",
@@ -1309,20 +1309,20 @@
       "focus": "Class, responsibility and the cost of the campaign",
       "plan": [
         "Begin with the Eastcheap survivors in Act II and what they say they have come to France for.",
-        "Use the Boy's speech at 3.2 as the deliberate reply to the breach speech that precedes it.",
+        "Use the Boy’s speech at 3.2 as the deliberate reply to the breach speech that precedes it.",
         "Read the Williams and Bates exchange in 4.1 as a real argument, not a lapse in morale, and track what Henry concedes.",
-        "Follow the glove quarrel through to 4.8, and ask what the gentling promised in the Crispin's Day speech actually amounts to.",
-        "Close with the killing of the luggage-boys and the fact that the play never shows the Boy's death."
+        "Follow the glove quarrel through to 4.8, and ask what the gentling promised in the Crispin’s Day speech actually amounts to.",
+        "Close with the killing of the luggage-boys and the fact that the play never shows the Boy’s death."
       ]
     },
     {
-      "question": "'A play about language as much as about war.' Discuss.",
+      "question": "‘A play about language as much as about war.’ Discuss.",
       "focus": "Rhetoric, dialect and translation",
       "plan": [
-        "Set out Henry's four registers: the legal argument of 1.2, the terror of 3.3, the fellowship of 4.3 and the plainness of 5.2.",
-        "Examine the captains' scene at 3.2 as an attempt to make one army out of four kinds of English.",
-        "Read Katharine's lesson in 3.4 as conquest happening in vocabulary before it happens in the treaty.",
-        "Use Pistol's borrowed theatrical rant as the play's example of rhetoric with nothing behind it.",
+        "Set out Henry’s four registers: the legal argument of 1.2, the terror of 3.3, the fellowship of 4.3 and the plainness of 5.2.",
+        "Examine the captains’ scene at 3.2 as an attempt to make one army out of four kinds of English.",
+        "Read Katharine’s lesson in 3.4 as conquest happening in vocabulary before it happens in the treaty.",
+        "Use Pistol’s borrowed theatrical rant as the play’s example of rhetoric with nothing behind it.",
         "Return to the Chorus, whose whole function is to say that words must do the work the stage cannot."
       ]
     }
@@ -1332,7 +1332,7 @@
     "Henry orders the prisoners killed before he hears about the boys in the camp. Does the order of those scenes change how you read him?",
     "Williams argues with a man he does not know is the king, and is never told he won. What would change if he were?",
     "The Epilogue spends its last lines explaining that everything won here was lost. Why end a triumph that way?",
-    "Olivier's 1944 film cuts the Harfleur threat and the prisoners. Is a production that keeps them telling the truth, or making a different argument?"
+    "Olivier’s 1944 film cuts the Harfleur threat and the prisoners. Is a production that keeps them telling the truth, or making a different argument?"
   ],
   "related": [
     {

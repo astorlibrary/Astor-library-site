@@ -9,16 +9,16 @@
   "period": "Victorian",
   "written": "1879",
   "firstPublished": 1879,
-  "setting": "One room in the Helmers' flat in a Norwegian town, across Christmas Eve, Christmas Day and the evening after",
+  "setting": "One room in the Helmers’ flat in a Norwegian town, across Christmas Eve, Christmas Day and the evening after",
   "readingTime": 150,
   "difficulty": 3,
   "lengthNote": "Three acts in prose, all in the same room, with every decisive event of the past reported and none shown",
   "openingLine": "Hide the Christmas tree carefully, Helen. Be sure the children do not see it until this evening, when it is dressed.",
-  "summary": "Nora Helmer forged her dying father's signature to borrow money that saved her husband's life, and has been paying it back in secret for years out of the housekeeping. Over three days at Christmas the loan comes due in another way: the man who holds the bond wants his job back, the letter reaches the letterbox, and Nora waits for her husband to do the thing she has always assumed he would do. He does not, and the play ends with the most consequential exit in modern theatre.",
-  "referenceStyle": "act. The translation used runs as continuous prose dialogue without line numbers, so quotations are placed by act and by the moment in the action.",
+  "summary": "Nora Helmer forged her dying father’s signature to borrow money that saved her husband’s life, and has been paying it back in secret for years out of the housekeeping. Over three days at Christmas the loan comes due in another way: the man who holds the bond wants his job back, the letter reaches the letterbox, and Nora waits for her husband to do the thing she has always assumed he would do. He does not, and the play ends with the most consequential exit in modern theatre.",
+  "referenceStyle": "act and the moment in the action, since the translation is continuous prose dialogue without line numbers",
   "sourceText": {
-    "label": "Standard Ebooks text of A Doll's House, in R. Farquharson Sharp's English translation",
-    "note": "Ibsen wrote in Danish-Norwegian; every English quotation here is a translator's wording. Sharp anglicises some of the money, so the Porter is paid in shillings where Ibsen's has krone. The text carries no line numbering, so references give the act."
+    "label": "Standard Ebooks text of A Doll’s House, in R. Farquharson Sharp’s English translation",
+    "note": "Ibsen wrote in Danish-Norwegian; every English quotation here is a translator’s wording. Sharp anglicises some of the money, so the Porter is paid in shillings where Ibsen’s has krone. The text carries no line numbering, so references give the act."
   },
   "atAGlance": [
     {
@@ -34,12 +34,12 @@
     {
       "label": "English text here",
       "value": "R. Farquharson Sharp",
-      "note": "His translation was published by J. M. Dent in Everyman's Library in 1910."
+      "note": "His translation was published by J. M. Dent in Everyman’s Library in 1910."
     },
     {
       "label": "Shape",
       "value": "Three acts, one room",
-      "note": "The forgery, the illness, the father's death and the journey to Italy all happen before the curtain rises."
+      "note": "The forgery, the illness, the father’s death and the journey to Italy all happen before the curtain rises."
     }
   ],
   "structure": [
@@ -58,7 +58,7 @@
           "summary": "Nora tells Mrs Linde that the journey to Italy was paid for by her, not by her father."
         },
         {
-          "ref": "Act I, Krogstad's call",
+          "ref": "Act I, Krogstad’s call",
           "summary": "The lender explains what the forged signature is worth to him."
         },
         {
@@ -71,7 +71,7 @@
       "id": "act-2",
       "label": "Act II",
       "title": "Christmas Day: Doctor Rank, and the letter in the box",
-      "summary": "The tree stands bare in the corner and the letter has not yet come. Nora tries to get Krogstad's dismissal reversed and fails on a point of Helmer's pride; Doctor Rank makes his declaration at the worst possible moment; and the letter goes into the box, which Helmer keeps the key to. Nora dances the tarantella to stop him opening it.",
+      "summary": "The tree stands bare in the corner and the letter has not yet come. Nora tries to get Krogstad’s dismissal reversed and fails on a point of Helmer’s pride; Doctor Rank makes his declaration at the worst possible moment; and the letter goes into the box, which Helmer keeps the key to. Nora dances the tarantella to stop him opening it.",
       "scenes": [
         {
           "ref": "Act II, the costume",
@@ -87,7 +87,7 @@
         },
         {
           "ref": "Act II, the letter",
-          "summary": "Krogstad drops his letter in the box; Nora dances to hold her husband's attention for twenty-four hours."
+          "summary": "Krogstad drops his letter in the box; Nora dances to hold her husband’s attention for twenty-four hours."
         }
       ]
     },
@@ -103,7 +103,7 @@
         },
         {
           "ref": "Act III, the first letter",
-          "summary": "Helmer's fear for his own position, and his plan to keep up appearances."
+          "summary": "Helmer’s fear for his own position, and his plan to keep up appearances."
         },
         {
           "ref": "Act III, the second letter",
@@ -120,9 +120,9 @@
     {
       "id": "nora",
       "name": "Nora Helmer",
-      "role": "Torvald's wife, mother of three",
-      "summary": "She has run a secret business for eight years, copying documents at night behind a locked door and calling it fun, while playing the spendthrift child her husband finds charming. The play's argument is that the performance and the competence are the same woman, and that nobody in the house has ever been curious enough to notice.",
-      "clue": "She eats macaroons in secret, saved her husband's life with a forged signature, and dances a tarantella to stop a letter being read.",
+      "role": "Torvald’s wife, mother of three",
+      "summary": "She has run a secret business for eight years, copying documents at night behind a locked door and calling it fun, while playing the spendthrift child her husband finds charming. The play’s argument is that the performance and the competence are the same woman, and that nobody in the house has ever been curious enough to notice.",
+      "clue": "She eats macaroons in secret, saved her husband’s life with a forged signature, and dances a tarantella to stop a letter being read.",
       "firstAppearance": "Act I",
       "traits": [
         "capable in secret",
@@ -218,8 +218,8 @@
     {
       "id": "krogstad",
       "name": "Nils Krogstad",
-      "role": "A subordinate at the bank, and Nora's creditor",
-      "summary": "He committed one forgery, was never prosecuted and has been paying for it socially ever since, which makes him the play's best witness on how respectability actually works. He is threatening for two acts and then, given one thing he wants, becomes reasonable in a page.",
+      "role": "A subordinate at the bank, and Nora’s creditor",
+      "summary": "He committed one forgery, was never prosecuted and has been paying for it socially ever since, which makes him the play’s best witness on how respectability actually works. He is threatening for two acts and then, given one thing he wants, becomes reasonable in a page.",
       "clue": "He did once what Nora has done, and has spent years finding out what happens afterwards.",
       "firstAppearance": "Act I",
       "traits": [
@@ -258,7 +258,7 @@
     {
       "id": "mrs-linde",
       "name": "Mrs Linde",
-      "role": "Nora's old schoolfriend, a widow looking for work",
+      "role": "Nora’s old schoolfriend, a widow looking for work",
       "summary": "She married for money to keep a mother and two brothers alive, was widowed with nothing, and is the only character in the play who has supported herself. Her decision to let the letter stand is the hinge of the last act, and she takes it for a reason she states plainly: this house has been living on concealment.",
       "clue": "She gave up the man she loved to support her family, and now asks a favour that turns out to cost her friend everything.",
       "firstAppearance": "Act I",
@@ -290,14 +290,14 @@
     {
       "id": "doctor-rank",
       "name": "Doctor Rank",
-      "role": "The family's friend and daily visitor",
-      "summary": "He is dying of a disease he attributes to his father's manner of living, and he keeps the fact from Helmer because Helmer cannot bear ugliness. His declaration to Nora removes the one source of money she had left, and his exit is arranged by visiting card so that nobody has to watch.",
+      "role": "The family’s friend and daily visitor",
+      "summary": "He is dying of a disease he attributes to his father’s manner of living, and he keeps the fact from Helmer because Helmer cannot bear ugliness. His declaration to Nora removes the one source of money she had left, and his exit is arranged by visiting card so that nobody has to watch.",
       "clue": "He will send a card with a black cross on it when the end begins, and asks to be allowed to die out of sight.",
       "firstAppearance": "Act I",
       "traits": [
         "dying",
         "unsentimental",
-        "in love with his friend's wife"
+        "in love with his friend’s wife"
       ],
       "relationships": [
         {
@@ -321,14 +321,14 @@
     {
       "id": "anne",
       "name": "Anne",
-      "role": "The children's nurse, formerly Nora's",
+      "role": "The children’s nurse, formerly Nora’s",
       "summary": "She gave up her own child to take a position, which is the same transaction Nora is about to make and the play puts them side by side without comment. She has two short scenes and they carry the entire cost of the ending in advance.",
       "clue": "She nursed the mistress of the house when she was small, and left her own daughter behind to do it.",
       "firstAppearance": "Act I",
       "traits": [
         "kind",
         "unremarked",
-        "the play's quiet precedent"
+        "the play’s quiet precedent"
       ],
       "relationships": [
         {
@@ -358,7 +358,7 @@
     {
       "id": "reputation",
       "name": "Reputation",
-      "summary": "Helmer's whole conduct is governed by how things look to the bank. He will not keep Krogstad because the man speaks to him familiarly in front of the staff, and when the letter arrives his first thought is for whether he might be suspected of prompting her.",
+      "summary": "Helmer’s whole conduct is governed by how things look to the bank. He will not keep Krogstad because the man speaks to him familiarly in front of the staff, and when the letter arrives his first thought is for whether he might be suspected of prompting her.",
       "development": "A promotion in Act I, a refusal on a point of manners in Act II, and in Act III a proposal that the marriage continue in the eyes of the world while ceasing in every other respect."
     },
     {
@@ -370,8 +370,8 @@
     {
       "id": "inheritance",
       "name": "Inheritance, sickness and the sins of fathers",
-      "summary": "Helmer believes moral corruption passes from parent to child and says so at length in Act I, not knowing whose household he is describing. Rank's spinal disease is attributed to his father's amusements, so the play sets a medical inheritance beside a moral one and declines to separate them cleanly.",
-      "development": "A lawyer's theory of deceitful mothers in Act I, a dying man's account of his father in Act II, and a mother in Act III who concludes that she is unfit to bring up children until she has educated herself."
+      "summary": "Helmer believes moral corruption passes from parent to child and says so at length in Act I, not knowing whose household he is describing. Rank’s spinal disease is attributed to his father’s amusements, so the play sets a medical inheritance beside a moral one and declines to separate them cleanly.",
+      "development": "A lawyer’s theory of deceitful mothers in Act I, a dying man’s account of his father in Act II, and a mother in Act III who concludes that she is unfit to bring up children until she has educated herself."
     },
     {
       "id": "work",
@@ -385,7 +385,7 @@
       "id": "analytic-structure",
       "name": "Analytic structure",
       "definition": "A play whose decisive events all happened before the curtain rose and reach the audience as disclosure.",
-      "inThisBook": "The forgery, the illness, the journey to Italy and the father's death are all in the past; the three acts are the process by which they come out, which is why so much of the play is people telling each other things."
+      "inThisBook": "The forgery, the illness, the journey to Italy and the father’s death are all in the past; the three acts are the process by which they come out, which is why so much of the play is people telling each other things."
     },
     {
       "id": "single-set",
@@ -403,7 +403,7 @@
       "id": "pet-names",
       "name": "Pet names",
       "definition": "Characterising a relationship through the names one person is allowed to use for another.",
-      "inThisBook": "Lark, squirrel, skylark, spendthrift, little person: Helmer almost never uses his wife's name in the first two acts, and the moment he starts to she has stopped answering."
+      "inThisBook": "Lark, squirrel, skylark, spendthrift, little person: Helmer almost never uses his wife’s name in the first two acts, and the moment he starts to she has stopped answering."
     },
     {
       "id": "tarantella",
@@ -450,7 +450,7 @@
       "reference": "Act I",
       "stage": "act-1",
       "context": "Pulling Mrs Linde down beside her on the sofa, after being told she knows nothing of real trouble.",
-      "analysis": "The emphasis is placed on the pronoun, and it is the first sentence in the play in which Nora is the subject of a serious verb. She has been treated as an expense for two scenes and now produces the one fact that would reverse the household's opinion of her, and immediately makes her friend promise to keep it.",
+      "analysis": "The emphasis is placed on the pronoun, and it is the first sentence in the play in which Nora is the subject of a serious verb. She has been treated as an expense for two scenes and now produces the one fact that would reverse the household’s opinion of her, and immediately makes her friend promise to keep it.",
       "themes": [
         "work",
         "law-and-money"
@@ -475,8 +475,8 @@
       "speaker": "Krogstad",
       "reference": "Act I",
       "stage": "act-1",
-      "context": "Answering Nora's claim that saving a life must count for something.",
-      "analysis": "Six words, and they are the play's legal position stated correctly by its least admired character. Ibsen gives the blackmailer the accurate account of how the statute works, so that Nora's outrage has nothing to push against except the law itself.",
+      "context": "Answering Nora’s claim that saving a life must count for something.",
+      "analysis": "Six words, and they are the play’s legal position stated correctly by its least admired character. Ibsen gives the blackmailer the accurate account of how the statute works, so that Nora’s outrage has nothing to push against except the law itself.",
       "themes": [
         "law-and-money"
       ],
@@ -546,7 +546,7 @@
       "reference": "Act I",
       "stage": "act-1",
       "context": "Explaining who else is waiting to see Helmer.",
-      "analysis": "A dying physician diagnoses a man's ethics as a medical condition, and the sentence turns on the word but: even the morally diseased want to go on living. Ibsen is putting Rank's spine and Krogstad's reputation into the same vocabulary, which is the play's quiet joke about inheritance.",
+      "analysis": "A dying physician diagnoses a man’s ethics as a medical condition, and the sentence turns on the word but: even the morally diseased want to go on living. Ibsen is putting Rank’s spine and Krogstad’s reputation into the same vocabulary, which is the play’s quiet joke about inheritance.",
       "themes": [
         "inheritance",
         "reputation"
@@ -568,7 +568,7 @@
       "speaker": "Helmer",
       "reference": "Act II",
       "stage": "act-2",
-      "context": "Refusing to reinstate Krogstad at his wife's request.",
+      "context": "Refusing to reinstate Krogstad at his wife’s request.",
       "analysis": "His reason is that changing his mind would look like being led by someone; he does not say Krogstad is dishonest. A few lines later he admits the real objection is that the man calls him by his first name in front of the clerks, and a marriage is destroyed on that point of etiquette.",
       "themes": [
         "reputation"
@@ -592,7 +592,7 @@
       "reference": "Act II",
       "stage": "act-2",
       "context": "Telling Nora how she will know that he is dying.",
-      "analysis": "He arranges his own death as a piece of correspondence, so that nobody has to be present for it. The card with the black cross is the play's most economical stage property: it converts a man into a piece of paper in a letterbox, which is precisely what Krogstad's letter does to Nora.",
+      "analysis": "He arranges his own death as a piece of correspondence, so that nobody has to be present for it. The card with the black cross is the play’s most economical stage property: it converts a man into a piece of paper in a letterbox, which is precisely what Krogstad’s letter does to Nora.",
       "themes": [
         "inheritance",
         "reputation"
@@ -662,7 +662,7 @@
       "speaker": "Mrs Linde",
       "reference": "Act III",
       "stage": "act-3",
-      "context": "Proposing to Krogstad in the Helmers' sitting room while the dance goes on upstairs.",
+      "context": "Proposing to Krogstad in the Helmers’ sitting room while the dance goes on upstairs.",
       "analysis": "A proposal expressed as arithmetic, offered by a woman who has already once chosen security over love and does not pretend otherwise. This is the only negotiation in the play conducted by two people who tell each other the truth, and Ibsen stages it in the same room that has held eight years of concealment.",
       "themes": [
         "work",
@@ -713,7 +713,7 @@
       "speaker": "Helmer",
       "reference": "Act III",
       "stage": "act-3",
-      "context": "Moments after reading Krogstad's letter.",
+      "context": "Moments after reading Krogstad’s letter.",
       "analysis": "Count the possessives: my happiness, my future, my house. The forgery was committed to keep him alive and his response is a list of his own losses, which is the exact information Nora has been waiting eight years to receive.",
       "themes": [
         "reputation",
@@ -737,7 +737,7 @@
       "reference": "Act III",
       "stage": "act-3",
       "context": "Opening the second letter, which encloses the bond.",
-      "analysis": "He says it twice, both times in the first person singular, then adds her name as an afterthought. Nora's question in reply, what about her, gets the answer that she is saved too, and the pronouns have already decided the end of the play.",
+      "analysis": "He says it twice, both times in the first person singular, then adds her name as an afterthought. Nora’s question in reply, what about her, gets the answer that she is saved too, and the pronouns have already decided the end of the play.",
       "themes": [
         "reputation",
         "doll"
@@ -808,8 +808,8 @@
       "speaker": "Helmer",
       "reference": "Act III",
       "stage": "act-3",
-      "context": "Answering Nora's claim that she has duties to herself.",
-      "analysis": "He states it as a definition, which is what makes it possible to answer. The phrase before all else is then taken from him word for word in Nora's reply, and the theft of the construction is the point at which she stops being managed.",
+      "context": "Answering Nora’s claim that she has duties to herself.",
+      "analysis": "He states it as a definition, which is what makes it possible to answer. The phrase before all else is then taken from him word for word in Nora’s reply, and the theft of the construction is the point at which she stops being managed.",
       "themes": [
         "duty"
       ],
@@ -852,7 +852,7 @@
       "reference": "Act III",
       "stage": "act-3",
       "context": "Rejecting the definition of herself as wife and mother first.",
-      "analysis": "She does not claim that most people are wrong, only that she can no longer take their word or a book's for it. She asks for the chance to find out what she thinks, which is smaller than a demand for rights and much harder to refuse.",
+      "analysis": "She does not claim that most people are wrong, only that she can no longer take their word or a book’s for it. She asks for the chance to find out what she thinks, which is smaller than a demand for rights and much harder to refuse.",
       "themes": [
         "duty",
         "work"
@@ -968,7 +968,7 @@
       "speaker": "Stage direction",
       "reference": "Act III",
       "stage": "act-3",
-      "context": "The last line of the play, printed as a stage direction after Helmer's final half-sentence.",
+      "context": "The last line of the play, printed as a stage direction after Helmer’s final half-sentence.",
       "analysis": "Ibsen gives the curtain to a noise offstage, and to a door the audience never sees. The sentence is passive and impersonal, which leaves Helmer alone on stage with a hope he has just voiced and a sound that answers it.",
       "themes": [
         "doll",
@@ -993,7 +993,7 @@
     {
       "year": 1828,
       "label": "Henrik Ibsen born at Skien",
-      "detail": "His father's business failed when he was a boy, and money and social standing recur throughout his work.",
+      "detail": "His father’s business failed when he was a boy, and money and social standing recur throughout his work.",
       "kind": "author"
     },
     {
@@ -1028,14 +1028,14 @@
     },
     {
       "year": 1881,
-      "label": "Ibsen's Ghosts published",
+      "label": "Ibsen’s Ghosts published",
       "detail": "Often read as his reply to those who had wanted Nora to stay: a marriage nobody leaves, and what happens in it.",
       "kind": "author"
     },
     {
       "year": 1889,
       "label": "First public British production",
-      "detail": "At the Novelty Theatre, London, on 7 June, with Janet Achurch as Nora and Charles Charrington as Helmer, in William Archer's translation.",
+      "detail": "At the Novelty Theatre, London, on 7 June, with Janet Achurch as Nora and Charles Charrington as Helmer, in William Archer’s translation.",
       "kind": "reception"
     },
     {
@@ -1052,8 +1052,8 @@
     },
     {
       "year": 1910,
-      "label": "R. Farquharson Sharp's translation published",
-      "detail": "Issued by J. M. Dent in Everyman's Library; it is the English text these quotations are checked against.",
+      "label": "R. Farquharson Sharp’s translation published",
+      "detail": "Issued by J. M. Dent in Everyman’s Library; it is the English text these quotations are checked against.",
       "kind": "reception"
     }
   ],
@@ -1062,7 +1062,7 @@
       "name": "Skien, Norway",
       "lat": 59.2081,
       "lon": 9.6089,
-      "note": "Ibsen's birthplace, and the town whose commercial collapse shaped his sense of respectability and debt."
+      "note": "Ibsen’s birthplace, and the town whose commercial collapse shaped his sense of respectability and debt."
     },
     {
       "name": "Rome",
@@ -1099,7 +1099,7 @@
     {
       "position": "A play about the position of women",
       "summary": "The reading the play has carried since 1879, and the reason it was banned, rewritten and imitated: a wife discovers that the law, her marriage and her upbringing have all treated her as a minor, and leaves to find out what she thinks.",
-      "counter": "Ibsen himself resisted being enrolled as a campaigner, and the play is at least as interested in Helmer's fear of his colleagues as in Nora's rights."
+      "counter": "Ibsen himself resisted being enrolled as a campaigner, and the play is at least as interested in Helmer’s fear of his colleagues as in Nora’s rights."
     },
     {
       "position": "A play about being a self at all",
@@ -1114,52 +1114,52 @@
   ],
   "essayQuestions": [
     {
-      "question": "How does Ibsen present the Helmers' marriage before the crisis breaks?",
+      "question": "How does Ibsen present the Helmers’ marriage before the crisis breaks?",
       "focus": "Language, pet names and performance in Acts I and II",
       "plan": [
         "Open on the first exchange: a husband addressing a bird from another room and a wife answering in character.",
-        "Collect the vocabulary of ownership and smallness, and note how rarely Helmer uses his wife's name.",
+        "Collect the vocabulary of ownership and smallness, and note how rarely Helmer uses his wife’s name.",
         "Set against it what Nora has actually been doing: night work, secret repayments and eight years of accounts.",
         "Use the tarantella as the moment the performance becomes literal, with Helmer correcting the steps.",
         "Conclude on Act III, where Nora describes the arrangement in her own words and the vocabulary stops working."
       ]
     },
     {
-      "question": "'Krogstad is right about the law and Nora is right about everything else.' Discuss.",
+      "question": "‘Krogstad is right about the law and Nora is right about everything else.’ Discuss.",
       "focus": "Law, motive and the forgery",
       "plan": [
         "Set out the legal facts: what Nora signed, why she could not sign her own name, and what the bond is worth.",
         "Read Krogstad’s statement about motives as an accurate account, not a threat.",
-        "Trace Nora's answer from her dismissal of a foolish law in Act I to her decision in Act III to test it.",
-        "Consider Krogstad's own history as evidence of what the law does after it has finished with someone.",
+        "Trace Nora’s answer from her dismissal of a foolish law in Act I to her decision in Act III to test it.",
+        "Consider Krogstad’s own history as evidence of what the law does after it has finished with someone.",
         "Weigh what the play settles and what it deliberately leaves to the audience."
       ]
     },
     {
       "question": "What is the function of Mrs Linde and Doctor Rank?",
-      "focus": "The parallel plot and the play's other lives",
+      "focus": "The parallel plot and the play’s other lives",
       "plan": [
-        "Establish Mrs Linde's history: a marriage for money, a widowhood with nothing, and work as survival.",
-        "Examine her decision to let Krogstad's letter stand, and the principle she gives for it.",
+        "Establish Mrs Linde’s history: a marriage for money, a widowhood with nothing, and work as survival.",
+        "Examine her decision to let Krogstad’s letter stand, and the principle she gives for it.",
         "Set the Linde and Krogstad conversation beside any conversation the Helmers have before Act III.",
-        "Read Rank as the play's other inheritance, and his removal of Nora's last financial option.",
+        "Read Rank as the play’s other inheritance, and his removal of Nora’s last financial option.",
         "Assess whether the subplots comment on the marriage, cause its collapse, or both."
       ]
     },
     {
-      "question": "Is the ending of A Doll's House earned?",
+      "question": "Is the ending of A Doll’s House earned?",
       "focus": "The last act, the argument about duty, and the door",
       "plan": [
         "Describe what changes in the staging of the final act: ordinary clothes, a table, two chairs and a conversation.",
         "Track the argument through the words sacred, duty and religion, and note who keeps redefining them.",
         "Weigh the objection that Nora changes too fast against the evidence of her competence in Acts I and II.",
         "Consider the children, whom she leaves, and her own reason for doing so.",
-        "Close on Ibsen's alternative German ending and what its existence shows about how the original was received."
+        "Close on Ibsen’s alternative German ending and what its existence shows about how the original was received."
       ]
     }
   ],
   "discussionQuestions": [
-    "Nora has run a secret loan for eight years without anyone noticing. Does the play's ending come out of nowhere, or has it been in front of us all along?",
+    "Nora has run a secret loan for eight years without anyone noticing. Does the play’s ending come out of nowhere, or has it been in front of us all along?",
     "Helmer will not keep Krogstad because the man uses his first name in front of the staff. Is that a small thing or the whole diagnosis?",
     "Mrs Linde stops Krogstad withdrawing the letter. Is she right to?",
     "Nora leaves her children with the nurse who once left her own child to look after Nora. What is Ibsen doing by putting those two facts in the same play?",
@@ -1172,7 +1172,7 @@
     },
     {
       "href": "/books/tess-of-the-durbervilles/",
-      "why": "The same decade's argument about a woman judged by a law and a reputation that take no interest in her circumstances."
+      "why": "The same decade’s argument about a woman judged by a law and a reputation that take no interest in her circumstances."
     },
     {
       "href": "/books/mrs-dalloway/",

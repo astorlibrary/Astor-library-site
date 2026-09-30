@@ -14,18 +14,18 @@
   "difficulty": 3,
   "lengthNote": "Thirty-three completed stories from four volumes, the 1931 additions and three later tales, with seven pieces by James on how the things are made",
   "openingLine": "St Bertrand de Comminges is a decayed town on the spurs of the Pyrenees, not very far from Toulouse, and still nearer to Bagnères-de-Luchon.",
-  "summary": "A Cambridge provost wrote these to be read aloud at Christmas, and they work the same way on the page. A scholar finds a manuscript, buys a print, takes a whistle out of a Templar grave, and something that has been waiting comes for him — usually at the edge of sight, usually made of the wrong material: crumpled linen, hair, a tentacle, a mouth. James is precise about libraries, brasses and Latin abbreviations, which is exactly why the other thing lands. The collection gathers all four volumes, the 1931 additions and the last stories, with James's own writing on how to do it.",
-  "referenceStyle": "story title; the stories are short and are not numbered",
+  "summary": "A Cambridge provost wrote these to be read aloud at Christmas, and they work the same way on the page. A scholar finds a manuscript, buys a print, takes a whistle out of a Templar grave, and something that has been waiting comes for him — usually at the edge of sight, usually made of the wrong material: crumpled linen, hair, a tentacle, a mouth. James is precise about libraries, brasses and Latin abbreviations, which is exactly why the other thing lands. The collection gathers all four volumes, the 1931 additions and the last stories, with James’s own writing on how to do it.",
+  "referenceStyle": "story title, since the stories are short and not numbered",
   "sourceText": {
     "label": "Project Gutenberg text of Ghost Stories of an Antiquary (eBook 8486)",
     "url": "https://www.gutenberg.org/cache/epub/8486/pg8486.txt",
-    "note": "The 1904 volume, the first of the four collected here, with James's preface. Quotations are taken from it, so they come from the eight earliest stories; the Astor edition prints thirty-three."
+    "note": "The 1904 volume, the first of the four collected here, with James’s preface. Quotations are taken from it, so they come from the eight earliest stories; the Astor edition prints thirty-three."
   },
   "atAGlance": [
     {
       "label": "Written",
-      "value": "1893-1936",
-      "note": "From the first Christmas readings at King's College to a last story in the year of his death."
+      "value": "1893–1936",
+      "note": "From the first Christmas readings at King’s College to a last story in the year of his death."
     },
     {
       "label": "First volume",
@@ -39,7 +39,7 @@
     },
     {
       "label": "Day job",
-      "value": "Provost of King's",
+      "value": "Provost of King’s",
       "note": "A medievalist who catalogued manuscripts for a living; the erudition in the stories is real, the books he quotes are not."
     }
   ],
@@ -48,10 +48,10 @@
       "id": "antiquary-1904",
       "label": "Ghost Stories of an Antiquary (1904)",
       "title": "Canon Alberic, the whistle and the other first stories",
-      "summary": "The first volume sets the method: a scholar, an object, a piece of research, and something that arrives because the research succeeded. Canon Alberic's scrap-book, the picture that moves between viewings, the whistle on the Suffolk coast, the thing in Abbot Thomas's well — all of it is here in the first eight.",
+      "summary": "The first volume sets the method: a scholar, an object, a piece of research, and something that arrives because the research succeeded. Canon Alberic’s scrap-book, the picture that moves between viewings, the whistle on the Suffolk coast, the thing in Abbot Thomas’s well — all of it is here in the first eight.",
       "scenes": [
         {
-          "ref": "Canon Alberic's Scrap-book",
+          "ref": "Canon Alberic’s Scrap-book",
           "title": "The purchase",
           "summary": "An English scholar buys a manuscript from a terrified sacristan at St Bertrand de Comminges, and finds a drawing at the back of it."
         },
@@ -66,7 +66,7 @@
           "summary": "An engraving of a country house changes between one viewing and the next, and a group of Cambridge men watch it happen in instalments."
         },
         {
-          "ref": "“Oh, Whistle, and I'll Come to You, My Lad”",
+          "ref": "“Oh, Whistle, and I’ll Come to You, My Lad”",
           "title": "The whistle",
           "summary": "A professor of ontography digs an ancient whistle out of a Templar preceptory on the Suffolk coast, and blows it."
         }
@@ -91,7 +91,7 @@
         {
           "ref": "The Stalls of Barchester Cathedral",
           "title": "The carved arm",
-          "summary": "An archdeacon's diary records his discomfort with the woodwork of his own stall, and with what is under the cathedral."
+          "summary": "An archdeacon’s diary records his discomfort with the woodwork of his own stall, and with what is under the cathedral."
         }
       ]
     },
@@ -150,7 +150,7 @@
         {
           "ref": "Preface, 1904",
           "title": "Where they came from",
-          "summary": "The settings that are real, the books that are not, and the Christmas readings at King's."
+          "summary": "The settings that are real, the books that are not, and the Christmas readings at King’s."
         },
         {
           "ref": "Some Remarks on Ghost Stories",
@@ -167,7 +167,7 @@
       "role": "The recurring central figure: a scholar who looks too closely",
       "summary": "He is a cataloguer, a professor, a clergyman with a hobby, a collector on holiday. He is competent, unimaginative and safe until his own expertise takes him one step further than the local people will go, and the step is always a professional one: buying, reading, digging, translating.",
       "clue": "Is never punished for wickedness, only for curiosity carried out properly.",
-      "firstAppearance": "Canon Alberic's Scrap-book",
+      "firstAppearance": "Canon Alberic’s Scrap-book",
       "traits": [
         "learned",
         "sceptical",
@@ -198,10 +198,10 @@
     {
       "id": "parkins",
       "name": "Parkins",
-      "role": "Professor of ontography, in “Oh, Whistle, and I'll Come to You, My Lad”",
+      "role": "Professor of ontography, in “Oh, Whistle, and I’ll Come to You, My Lad”",
       "summary": "A precise, priggish young academic who announces that he does not believe in such things and then finds the sheets on the spare bed disarranged. James makes him faintly ridiculous first, so that the reader has laughed at him before being asked to be frightened for him.",
       "clue": "Translates the Latin on a whistle, decides the best way to find out is to whistle, and does.",
-      "firstAppearance": "“Oh, Whistle, and I'll Come to You, My Lad”",
+      "firstAppearance": "“Oh, Whistle, and I’ll Come to You, My Lad”",
       "traits": [
         "fastidious",
         "literal-minded",
@@ -221,10 +221,10 @@
     {
       "id": "dennistoun",
       "name": "Dennistoun",
-      "role": "The Cambridge collector of Canon Alberic's Scrap-book",
+      "role": "The Cambridge collector of Canon Alberic’s Scrap-book",
       "summary": "He buys a manuscript from a sacristan who will not meet his eye, at a price so low it should have warned him, and takes it back to his hotel room to work through by candlelight. He is the first of the type and the luckiest of them.",
       "clue": "Pays far too little for a scrap-book and is given a silver crucifix with it.",
-      "firstAppearance": "Canon Alberic's Scrap-book",
+      "firstAppearance": "Canon Alberic’s Scrap-book",
       "traits": [
         "acquisitive",
         "methodical",
@@ -253,7 +253,7 @@
       "id": "karswell",
       "name": "Mr Karswell",
       "role": "The abbot of Lufford, in Casting the Runes",
-      "summary": "A bad scholar with real powers and a thin skin, who answers a hostile review by passing his victim a slip of runic characters. He is James's one true villain, and the story he appears in is the only one where the trap can be reversed.",
+      "summary": "A bad scholar with real powers and a thin skin, who answers a hostile review by passing his victim a slip of runic characters. He is James’s one true villain, and the story he appears in is the only one where the trap can be reversed.",
       "clue": "Shows the village children a magic lantern, and puts something in it that frightens them out of the room.",
       "firstAppearance": "Casting the Runes",
       "traits": [
@@ -278,7 +278,7 @@
       "summary": "Sacristans, housekeepers, innkeepers, sextons, a boy on a golf links. They know what is in the wood, the well or the barrow, they say so once, and they are not asked again. James gives them his best dialogue, and being right never does them any good.",
       "role": "Servants, vergers and villagers who know better",
       "clue": "Tell the scholar not to go, in their own words, and are overruled by his.",
-      "firstAppearance": "Canon Alberic's Scrap-book",
+      "firstAppearance": "Canon Alberic’s Scrap-book",
       "traits": [
         "observant",
         "plain-spoken",
@@ -310,7 +310,7 @@
       "role": "Whatever has been waiting: never explained, rarely seen whole",
       "summary": "It is made of the wrong material — crumpled linen, matted hair, a tentacle, a mouth in the wrong place — and it is usually felt before it is seen. James withholds the full sight on principle, and the stories that show most are the ones that frighten least.",
       "clue": "Is described by what it resembles and never by what it is.",
-      "firstAppearance": "Canon Alberic's Scrap-book",
+      "firstAppearance": "Canon Alberic’s Scrap-book",
       "traits": [
         "patient",
         "material",
@@ -354,7 +354,7 @@
       "id": "religion",
       "name": "Churches",
       "summary": "Cathedrals, abbeys, prayer-books and Templar graves fill the stories, and the church in them is an archive, never a refuge. Consecrated ground is where the dangerous things were put, on purpose.",
-      "development": "The clergy in the stories are scholars first; when something is finally stopped it is by a rule of the thing's own, not by prayer."
+      "development": "The clergy in the stories are scholars first; when something is finally stopped it is by a rule of the thing’s own, not by prayer."
     },
     {
       "id": "class",
@@ -404,20 +404,20 @@
       "id": "dialect",
       "name": "Servants’ dialect",
       "definition": "Writing out the pronunciation and idiom of the people who are not scholars.",
-      "inThisBook": "The housekeeper's account of the marks on the door in Lost Hearts is set down exactly as she says it. It is where James puts his best comic writing and his most reliable information."
+      "inThisBook": "The housekeeper’s account of the marks on the door in Lost Hearts is set down exactly as she says it. It is where James puts his best comic writing and his most reliable information."
     },
     {
       "id": "gothic",
       "name": "Gothic conventions updated",
       "definition": "Inherited gothic furniture — tombs, abbeys, curses — operated in a recognisably modern world.",
-      "inThisBook": "Trains, golf, hotel bills, magic lanterns and a Bradshaw sit beside Templar graves. The stories are set almost in the reader's present, which is why the medieval part bites."
+      "inThisBook": "Trains, golf, hotel bills, magic lanterns and a Bradshaw sit beside Templar graves. The stories are set almost in the reader’s present, which is why the medieval part bites."
     }
   ],
   "quotations": [
     {
       "id": "st-bertrand",
       "text": "St Bertrand de Comminges is a decayed town on the spurs of the Pyrenees, not very far from Toulouse, and still nearer to Bagnères-de-Luchon.",
-      "reference": "Canon Alberic's Scrap-book",
+      "reference": "Canon Alberic’s Scrap-book",
       "stage": "antiquary-1904",
       "context": "The first sentence of the first story in the first volume.",
       "analysis": "James writes it like a guidebook: a real town, two real reference points, a distance. James begins in the register of somebody who has been there, and the whole method of the collection is in that choice.",
@@ -444,7 +444,7 @@
       "reference": "Preface, 1904",
       "stage": "on-the-ghost-story",
       "context": "James accounting for the scholarship in his own stories.",
-      "analysis": "A cataloguer of medieval manuscripts admitting that his learned apparatus is fiction — and the double negative keeps a scholar's caution even here. The admission matters because the erudition is what persuades a reader to accept everything else.",
+      "analysis": "A cataloguer of medieval manuscripts admitting that his learned apparatus is fiction — and the double negative keeps a scholar’s caution even here. The admission matters because the erudition is what persuades a reader to accept everything else.",
       "themes": [
         "evidence",
         "knowledge"
@@ -486,7 +486,7 @@
       "reference": "Preface, 1904",
       "stage": "on-the-ghost-story",
       "context": "Identifying the settings that are real.",
-      "analysis": "He names the seaside town, and the story's terror is thereby attached to a place with a railway station and a hotel. James understood that a reader frightened at the right coordinates stays frightened on holiday.",
+      "analysis": "He names the seaside town, and the story’s terror is thereby attached to a place with a railway station and a hotel. James understood that a reader frightened at the right coordinates stays frightened on holiday.",
       "themes": [
         "nature"
       ],
@@ -523,7 +523,7 @@
     {
       "id": "coarse-black-hairs",
       "text": "coarse black hairs, longer than ever grew on a human hand; nails rising from the ends of the fingers and curving sharply down and forward, grey, horny and wrinkled",
-      "reference": "Canon Alberic's Scrap-book",
+      "reference": "Canon Alberic’s Scrap-book",
       "stage": "antiquary-1904",
       "context": "What Dennistoun sees beside him at the table, having first seen it in a drawing.",
       "analysis": "Every detail is one a naturalist could record — length, colour, curvature, texture — and the horror is that the list is so competent. James frightens by cataloguing, which is what he did for a living.",
@@ -538,7 +538,7 @@
         "the-thing",
         "dennistoun"
       ],
-      "source": "1904 text, Canon Alberic's Scrap-book",
+      "source": "1904 text, Canon Alberic’s Scrap-book",
       "cloze": [
         "hairs",
         "nails"
@@ -572,7 +572,7 @@
       "reference": "Count Magnus",
       "stage": "antiquary-1904",
       "context": "Describing the shape emerging from the hooded figure on an engraving.",
-      "analysis": "The horror is reported at two removes — a comparison, inside a quotation, from a dead man's notebook — and the reader is left to do the seeing. The sentence is also the model for the whole collection's tact.",
+      "analysis": "The horror is reported at two removes — a comparison, inside a quotation, from a dead man’s notebook — and the reader is left to do the seeing. The sentence is also the model for the whole collection’s tact.",
       "themes": [
         "fear",
         "evidence"
@@ -593,10 +593,10 @@
     {
       "id": "whistle-for-him",
       "text": "It ought to mean, ‘Who is this who is coming?’ Well, the best way to find out is evidently to whistle for him.",
-      "reference": "“Oh, Whistle, and I'll Come to You, My Lad”",
+      "reference": "“Oh, Whistle, and I’ll Come to You, My Lad”",
       "stage": "antiquary-1904",
       "context": "Parkins translating the Latin on the whistle he has just dug up.",
-      "analysis": "He reads the warning correctly and treats it as a research question. That single sentence is James's whole argument about scholarship: the translation is right, the inference is professional, and it is the worst decision in the book.",
+      "analysis": "He reads the warning correctly and treats it as a research question. That single sentence is James’s whole argument about scholarship: the translation is right, the inference is professional, and it is the worst decision in the book.",
       "themes": [
         "knowledge"
       ],
@@ -616,7 +616,7 @@
     {
       "id": "crumpled-linen",
       "text": "a horrible, an intensely horrible, face of crumpled linen",
-      "reference": "“Oh, Whistle, and I'll Come to You, My Lad”",
+      "reference": "“Oh, Whistle, and I’ll Come to You, My Lad”",
       "stage": "antiquary-1904",
       "context": "The figure that rises from the spare bed in a hotel room at Burnstow.",
       "analysis": "The most famous phrase James wrote, and it names a material, not a creature. He then declines to say what expression was on it, which leaves the reader to supply the one thing the sentence has carefully withheld.",
@@ -646,20 +646,20 @@
     },
     {
       "year": 1882,
-      "label": "M. R. James goes up to King's College, Cambridge",
+      "label": "M. R. James goes up to King’s College, Cambridge",
       "detail": "He arrived as an undergraduate and stayed for most of his life, becoming Provost in 1905.",
       "kind": "author"
     },
     {
       "year": 1893,
       "label": "First two stories read aloud at Cambridge",
-      "detail": "Canon Alberic's Scrap-book and Lost Hearts were read aloud to friends at King's; the form was oral before it was printed.",
+      "detail": "Canon Alberic’s Scrap-book and Lost Hearts were read aloud to friends at King’s; the form was oral before it was printed.",
       "kind": "work"
     },
     {
       "year": 1895,
       "label": "M. R. James publishes his first manuscript catalogue",
-      "detail": "His catalogues of medieval manuscripts in Cambridge libraries are still in use, and supply the fiction's furniture.",
+      "detail": "His catalogues of medieval manuscripts in Cambridge libraries are still in use, and supply the fiction’s furniture.",
       "kind": "author"
     },
     {
@@ -700,8 +700,8 @@
     },
     {
       "year": 1968,
-      "label": "Jonathan Miller's BBC film Whistle and I'll Come to You",
-      "detail": "Jonathan Miller's television film fixed the stories in British Christmas viewing, and the BBC adaptations continued for decades.",
+      "label": "Jonathan Miller’s BBC film Whistle and I’ll Come to You",
+      "detail": "Jonathan Miller’s television film fixed the stories in British Christmas viewing, and the BBC adaptations continued for decades.",
       "kind": "reception"
     }
   ],
@@ -722,7 +722,7 @@
       "name": "Felixstowe, Suffolk",
       "lat": 51.9617,
       "lon": 1.3513,
-      "note": "The seaside town James says he had in mind for Oh, Whistle, and I'll Come to You."
+      "note": "The seaside town James says he had in mind for Oh, Whistle, and I’ll Come to You."
     },
     {
       "name": "Aldeburgh, Suffolk",
@@ -751,7 +751,7 @@
     },
     {
       "position": "A conservative imagination",
-      "summary": "The stories punish curiosity, trust servants over scholars, and treat the past as something best left where it is; critics have read them as a don's anxiety about disturbance of any kind.",
+      "summary": "The stories punish curiosity, trust servants over scholars, and treat the past as something best left where it is; critics have read them as a don’s anxiety about disturbance of any kind.",
       "counter": "James gives the disregarded characters the accurate information in nearly every story, which is a strange move for a writer defending hierarchy."
     },
     {
@@ -768,7 +768,7 @@
         "Set out the pattern: an object bought or dug up, a document read, a conclusion reached correctly.",
         "Use Parkins translating the whistle as the clearest case of right method and worst outcome.",
         "Show how the printed apparatus — Latin, ciphers, catalogue detail — makes the reader research alongside the victim.",
-        "Weigh James's own admission that the erudition is invented.",
+        "Weigh James’s own admission that the erudition is invented.",
         "Conclude on what the stories suggest about knowing things."
       ]
     },
@@ -810,7 +810,7 @@
     },
     {
       "href": "/books/carnacki-the-ghost-finder/",
-      "why": "Hodgson's investigator arriving with equipment, written while James was publishing the second volume."
+      "why": "Hodgson’s investigator arriving with equipment, written while James was publishing the second volume."
     },
     {
       "href": "/books/victorian-ghost-stories/",
@@ -822,7 +822,7 @@
     },
     {
       "href": "/books/the-willows/",
-      "why": "Blackwood's weird tale of the same decade, with no antiquarian apparatus at all."
+      "why": "Blackwood’s weird tale of the same decade, with no antiquarian apparatus at all."
     }
   ],
   "videos": []

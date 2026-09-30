@@ -16,7 +16,7 @@
   "lengthNote": "Around 2,600 lines, of which the first 270 belong to a drunk who then disappears",
   "openingLine": "I'll pheeze you, in faith.",
   "summary": "A tinker is picked up drunk outside an alehouse and persuaded by a bored lord that he is a nobleman recovering from madness. The play performed for him is about a man who marries a woman for her dowry and then starves and contradicts her into agreement, and about a younger sister whose suitors buy their way into her house disguised as tutors. Shakespeare never returns to the tinker, so the audience is left holding a frame with nothing on the other end of it.",
-  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
     "label": "Globe/Moby text of The Taming of the Shrew",
     "note": "Line numbers follow the traditional Globe numbering. The two Induction scenes are numbered 0.1 and 0.2 in the digital text used for checking, and are cited here as Induction 1 and Induction 2."
@@ -24,13 +24,13 @@
   "atAGlance": [
     {
       "label": "Written",
-      "value": "c. 1590-92",
+      "value": "c. 1590–92",
       "note": "Usually placed among the earliest comedies; no document fixes the year."
     },
     {
       "label": "First printed",
       "value": "1623",
-      "note": "There is no quarto of Shakespeare's Shrew before the First Folio; a 1631 quarto was set from the Folio text."
+      "note": "There is no quarto of Shakespeare’s Shrew before the First Folio; a 1631 quarto was set from the Folio text."
     },
     {
       "label": "The other Shrew",
@@ -39,8 +39,8 @@
     },
     {
       "label": "Chief source",
-      "value": "Gascoigne's Supposes",
-      "note": "The Bianca plot comes from Gascoigne's 1566 translation of Ariosto; the taming plot has analogues but no single source."
+      "value": "Gascoigne’s Supposes",
+      "note": "The Bianca plot comes from Gascoigne’s 1566 translation of Ariosto; the taming plot has analogues but no single source."
     }
   ],
   "structure": [
@@ -76,7 +76,7 @@
         {
           "ref": "1.2",
           "title": "The suitor from Verona",
-          "summary": "Petruchio states his price, hears about Katherina's temper, and is undeterred; Hortensio disguises himself as a music master."
+          "summary": "Petruchio states his price, hears about Katherina’s temper, and is undeterred; Hortensio disguises himself as a music master."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "id": "act-3",
       "label": "Act III",
       "title": "The lessons, and the wedding",
-      "summary": "Two disguised suitors compete for Bianca's attention under cover of a Latin lesson and a music lesson. Petruchio arrives hours late for his own wedding in deliberately ridiculous clothes, behaves outrageously in church, and then removes his wife before the dinner, announcing that she is his property and pretending to rescue her from thieves.",
+      "summary": "Two disguised suitors compete for Bianca’s attention under cover of a Latin lesson and a music lesson. Petruchio arrives hours late for his own wedding in deliberately ridiculous clothes, behaves outrageously in church, and then removes his wife before the dinner, announcing that she is his property and pretending to rescue her from thieves.",
       "scenes": [
         {
           "ref": "3.1",
@@ -115,7 +115,7 @@
       "id": "act-4",
       "label": "Act IV",
       "title": "Petruchio’s house, and the false Vincentio",
-      "summary": "At Petruchio's house the food is sent back, the bed is pulled apart and a tailor is abused, all in the name of Katherina's comfort. Petruchio explains the method to the audience in falconry terms. On the road back to Padua he makes her agree that the sun is the moon; in Padua a passing pedant is recruited to impersonate Lucentio's father, and the real one arrives.",
+      "summary": "At Petruchio’s house the food is sent back, the bed is pulled apart and a tailor is abused, all in the name of Katherina’s comfort. Petruchio explains the method to the audience in falconry terms. On the road back to Padua he makes her agree that the sun is the moon; in Padua a passing pedant is recruited to impersonate Lucentio’s father, and the real one arrives.",
       "scenes": [
         {
           "ref": "4.1",
@@ -130,7 +130,7 @@
         {
           "ref": "4.3",
           "title": "The cap and the gown",
-          "summary": "Katherina insists on her right to speak; the tailor's work is destroyed; the journey is cancelled over the time of day."
+          "summary": "Katherina insists on her right to speak; the tailor’s work is destroyed; the journey is cancelled over the time of day."
         },
         {
           "ref": "4.4",
@@ -148,7 +148,7 @@
       "id": "act-5",
       "label": "Act V",
       "title": "The wager",
-      "summary": "The real Vincentio meets his impostor and is nearly arrested; the secret marriage is revealed and forgiven. At the wedding feast the three husbands bet on which wife will come when sent for. Katherina comes, fetches the other two, and delivers forty-four lines on a wife's duty to a room of men who have just staked money on her behaviour.",
+      "summary": "The real Vincentio meets his impostor and is nearly arrested; the secret marriage is revealed and forgiven. At the wedding feast the three husbands bet on which wife will come when sent for. Katherina comes, fetches the other two, and delivers forty-four lines on a wife’s duty to a room of men who have just staked money on her behaviour.",
       "scenes": [
         {
           "ref": "5.1",
@@ -167,9 +167,9 @@
     {
       "id": "katherina",
       "name": "Katherina",
-      "role": "Baptista's elder daughter",
-      "summary": "She is called a devil, a fiend and a shrew before she has done anything on stage except resent being auctioned second. Her wit is faster than anyone else's in Padua and she is never once allowed to use it without being punished for it, which is the strongest argument the play makes on her side.",
-      "clue": "The elder sister nobody will bid for, who ties up the younger one, matches a stranger joke for joke, and ends by telling a room of men to put their hands under their husbands' feet.",
+      "role": "Baptista’s elder daughter",
+      "summary": "She is called a devil, a fiend and a shrew before she has done anything on stage except resent being auctioned second. Her wit is faster than anyone else’s in Padua and she is never once allowed to use it without being punished for it, which is the strongest argument the play makes on her side.",
+      "clue": "The elder sister nobody will bid for, who ties up the younger one, matches a stranger joke for joke, and ends by telling a room of men to put their hands under their husbands’ feet.",
       "firstAppearance": "1.1",
       "traits": [
         "quick-tongued",
@@ -259,9 +259,9 @@
     {
       "id": "bianca",
       "name": "Bianca",
-      "role": "Baptista's younger daughter",
-      "summary": "She is silent and obedient for as long as it is useful, and the moment she has tutors alone in a room she tells them she will learn as she pleases. By the last scene she has married in secret, refuses to come when sent for, and calls her husband a fool for betting on her — the play's quietest joke at the taming plot's expense.",
-      "clue": "Everyone's idea of a good daughter, who arranges her own marriage behind her father's back and then will not come when her husband calls.",
+      "role": "Baptista’s younger daughter",
+      "summary": "She is silent and obedient for as long as it is useful, and the moment she has tutors alone in a room she tells them she will learn as she pleases. By the last scene she has married in secret, refuses to come when sent for, and calls her husband a fool for betting on her — the play’s quietest joke at the taming plot’s expense.",
+      "clue": "Everyone’s idea of a good daughter, who arranges her own marriage behind her father’s back and then will not come when her husband calls.",
       "firstAppearance": "1.1",
       "traits": [
         "demure in public",
@@ -370,8 +370,8 @@
     {
       "id": "tranio",
       "name": "Tranio",
-      "role": "Lucentio's servant, impersonating his master",
-      "summary": "Given his master’s clothes, he negotiates with Baptista, outbids a rich old man, hires an impostor father and keeps three deceptions going at the same time. The play's most competent social performer is a servant, and it lets him get away with all of it.",
+      "role": "Lucentio’s servant, impersonating his master",
+      "summary": "Given his master’s clothes, he negotiates with Baptista, outbids a rich old man, hires an impostor father and keeps three deceptions going at the same time. The play’s most competent social performer is a servant, and it lets him get away with all of it.",
       "firstAppearance": "1.1",
       "traits": [
         "quick",
@@ -404,7 +404,7 @@
       "id": "hortensio",
       "name": "Hortensio",
       "role": "A suitor to Bianca, disguised as the music master Litio",
-      "summary": "He disguises himself, is beaten over the head with his own lute, gives up on Bianca when he sees her flirting with a Latin tutor, and marries a widow out of pique. He then loses the wager in the last scene, which is the play's verdict on choosing a wife in a temper.",
+      "summary": "He disguises himself, is beaten over the head with his own lute, gives up on Bianca when he sees her flirting with a Latin tutor, and marries a widow out of pique. He then loses the wager in the last scene, which is the play’s verdict on choosing a wife in a temper.",
       "firstAppearance": "1.2",
       "traits": [
         "persistent",
@@ -436,7 +436,7 @@
       "id": "gremio",
       "name": "Gremio",
       "role": "An elderly, rich suitor to Bianca",
-      "summary": "He is the pantaloon of Italian comedy, bidding his plate and his hangings and his ships against a young man's invented inheritance. Beaten in the auction, he is left to report on the wedding — and his account of Petruchio in church is the only description of it the play gives.",
+      "summary": "He is the pantaloon of Italian comedy, bidding his plate and his hangings and his ships against a young man’s invented inheritance. Beaten in the auction, he is left to report on the wedding — and his account of Petruchio in church is the only description of it the play gives.",
       "firstAppearance": "1.1",
       "traits": [
         "old",
@@ -466,8 +466,8 @@
     {
       "id": "grumio",
       "name": "Grumio",
-      "role": "Petruchio's servant",
-      "summary": "He is beaten in the first scene for misunderstanding an instruction and spends the rest of the play as the taming's foot soldier: withholding food, describing the journey, playing along with a master he plainly finds frightening. His account of the ride to the country house is the closest the play comes to showing what the marriage looks like from outside.",
+      "role": "Petruchio’s servant",
+      "summary": "He is beaten in the first scene for misunderstanding an instruction and spends the rest of the play as the taming’s foot soldier: withholding food, describing the journey, playing along with a master he plainly finds frightening. His account of the ride to the country house is the closest the play comes to showing what the marriage looks like from outside.",
       "firstAppearance": "1.2",
       "traits": [
         "put-upon",
@@ -494,7 +494,7 @@
       "id": "sly",
       "name": "Christopher Sly",
       "role": "A tinker, and the audience for the Padua play",
-      "summary": "He is talked out of his own identity in under a hundred lines by people who find it funny, which is the experiment the rest of the play repeats on a wife. Shakespeare's text drops him after the first act and never brings him back, and every production has to decide what to do about that.",
+      "summary": "He is talked out of his own identity in under a hundred lines by people who find it funny, which is the experiment the rest of the play repeats on a wife. Shakespeare’s text drops him after the first act and never brings him back, and every production has to decide what to do about that.",
       "clue": "A tinker who will not pay for the glasses he has broken, claims the family came in with Richard Conqueror, and wakes up being offered sack and a wife.",
       "firstAppearance": "Induction 1",
       "traits": [
@@ -518,8 +518,8 @@
     {
       "id": "marriage",
       "name": "Marriage and money",
-      "summary": "Nobody in Padua marries without a negotiation. Baptista will not release Bianca until Katherina is sold, Gremio bids his tapestries against Tranio's imaginary ships, Petruchio states his price in his first scene, and the last act is a wager laid on wives. The romance is real but it is always conducted over a contract.",
-      "development": "Baptista's condition in 1.1, the dowry settled in 2.1, the auction for Bianca in the same scene, and twenty thousand crowns added as a second dowry in 5.2."
+      "summary": "Nobody in Padua marries without a negotiation. Baptista will not release Bianca until Katherina is sold, Gremio bids his tapestries against Tranio’s imaginary ships, Petruchio states his price in his first scene, and the last act is a wager laid on wives. The romance is real but it is always conducted over a contract.",
+      "development": "Baptista’s condition in 1.1, the dowry settled in 2.1, the auction for Bianca in the same scene, and twenty thousand crowns added as a second dowry in 5.2."
     },
     {
       "id": "taming",
@@ -531,18 +531,18 @@
       "id": "disguise",
       "name": "Disguise and substitution",
       "summary": "A servant becomes his master, a master becomes a tutor, a suitor becomes a music teacher, a passing pedant becomes a father, and a tinker becomes a lord. Identity in this play is a matter of clothes and repetition, the same assumption the taming plot depends on.",
-      "development": "Lucentio and Tranio change places in 1.1; the false Vincentio is recruited in 4.2 and exposed in 5.1; Sly's transformation in the Induction sets the pattern for all of them."
+      "development": "Lucentio and Tranio change places in 1.1; the false Vincentio is recruited in 4.2 and exposed in 5.1; Sly’s transformation in the Induction sets the pattern for all of them."
     },
     {
       "id": "obedience",
       "name": "The obedience speech",
-      "summary": "Forty-four lines on a wife's duty to her lord, delivered in front of men who have just bet money on whether she would come when called. Nothing in the text settles the tone, which is why the speech has been played as surrender, as irony, as a private arrangement between two people and as a public humiliation.",
+      "summary": "Forty-four lines on a wife’s duty to her lord, delivered in front of men who have just bet money on whether she would come when called. Nothing in the text settles the tone, which is why the speech has been played as surrender, as irony, as a private arrangement between two people and as a public humiliation.",
       "development": "Katherina refuses to be silenced in 4.3, agrees to call the sun the moon in 4.5, and in 5.2 tells two other women that their lances are but straws."
     },
     {
       "id": "language",
       "name": "Naming and contradiction",
-      "summary": "Petruchio's chief weapon is insisting on his own version of the words: she is Kate, the food is burnt, the cap is a bauble, the sun is the moon. Katherina’s resistance is also verbal, and the marriage is settled by who gets to decide what things are called, not by force.",
+      "summary": "Petruchio’s chief weapon is insisting on his own version of the words: she is Kate, the food is burnt, the cap is a bauble, the sun is the moon. Katherina’s resistance is also verbal, and the marriage is settled by who gets to decide what things are called, not by force.",
       "development": "The wit duel of 2.1 is fought on equal terms; by 4.5 one party is naming and the other assenting; the last speech is the naming done in her own voice."
     },
     {
@@ -557,7 +557,7 @@
       "id": "frame-narrative",
       "name": "The frame",
       "definition": "A story enclosing another story, here left open at one end.",
-      "inThisBook": "Sly is set up as the play's audience and then simply dropped. The related 1594 quarto A Shrew brings him back at the end, which is why eighteenth-century editors borrowed that ending and why modern directors still have to choose."
+      "inThisBook": "Sly is set up as the play’s audience and then simply dropped. The related 1594 quarto A Shrew brings him back at the end, which is why eighteenth-century editors borrowed that ending and why modern directors still have to choose."
     },
     {
       "id": "disguise",
@@ -575,7 +575,7 @@
       "id": "stichomythia",
       "name": "Stichomythia",
       "definition": "Rapid exchange of single lines between two speakers.",
-      "inThisBook": "The wooing scene in 2.1 runs on it for over eighty lines: joined-stool, ass, jade, buzzard, each answer taking the previous line's word and turning it round. It is the only sustained conversation in which Katherina is a match for anyone."
+      "inThisBook": "The wooing scene in 2.1 runs on it for over eighty lines: joined-stool, ass, jade, buzzard, each answer taking the previous line’s word and turning it round. It is the only sustained conversation in which Katherina is a match for anyone."
     },
     {
       "id": "soliloquy",
@@ -598,7 +598,7 @@
       "reference": "Induction 1.3",
       "stage": "induction",
       "context": "Outside the alehouse, refusing to pay for the glasses he has broken.",
-      "analysis": "He defends his family's standing by appealing to a history book he has never read and getting the Conqueror's name wrong. The play's first words are therefore a man insisting on an identity he cannot support — which is exactly the trick the lord is about to play on him from the other direction.",
+      "analysis": "He defends his family’s standing by appealing to a history book he has never read and getting the Conqueror’s name wrong. The play’s first words are therefore a man insisting on an identity he cannot support — which is exactly the trick the lord is about to play on him from the other direction.",
       "themes": [
         "disguise",
         "spectatorship"
@@ -610,7 +610,7 @@
       "characters": [
         "sly"
       ],
-      "source": "Globe/Moby text, Induction 1, lines 3-4 (numbered 0.1.3-4 in the digital text)",
+      "source": "Globe/Moby text, Induction 1, lines 3–4 (numbered 0.1.3–4 in the digital text)",
       "cloze": [
         "rogues",
         "Conqueror"
@@ -634,7 +634,7 @@
       "characters": [
         "sly"
       ],
-      "source": "Globe/Moby text, Induction 2, lines 143-144 (numbered 0.2.143-144 in the digital text)",
+      "source": "Globe/Moby text, Induction 2, lines 143–144 (numbered 0.2.143–144 in the digital text)",
       "cloze": [
         "slip",
         "younger"
@@ -647,7 +647,7 @@
       "reference": "1.1.2",
       "stage": "act-1",
       "context": "Arriving in the city to study.",
-      "analysis": "The play he has walked into is about prices, not arts, and within forty lines he abandons the university for a disguise and a marriage. Padua's reputation is set up in the second line of the main plot precisely so that everything that follows can ignore it.",
+      "analysis": "The play he has walked into is about prices, not arts, and within forty lines he abandons the university for a disguise and a marriage. Padua’s reputation is set up in the second line of the main plot precisely so that everything that follows can ignore it.",
       "themes": [
         "marriage",
         "disguise"
@@ -668,7 +668,7 @@
       "speaker": "Tranio",
       "reference": "1.1.180",
       "stage": "act-1",
-      "context": "Explaining the household's rules to Lucentio.",
+      "context": "Explaining the household’s rules to Lucentio.",
       "analysis": "Katherina is introduced to the audience as a problem of logistics: a thing the father must be rid of before the real business can start. ‘Curst’ and ‘shrewd’ are standard terms of abuse for women, not descriptions, and a servant who has seen her once applies them.",
       "themes": [
         "marriage"
@@ -679,7 +679,7 @@
         "katherina",
         "lucentio"
       ],
-      "source": "Globe/Moby text, 1.1.180-182",
+      "source": "Globe/Moby text, 1.1.180–182",
       "cloze": [
         "curst",
         "rid"
@@ -702,7 +702,7 @@
         "petruchio",
         "hortensio"
       ],
-      "source": "Globe/Moby text, 1.2.73-74",
+      "source": "Globe/Moby text, 1.2.73–74",
       "cloze": [
         "wealthily",
         "happily"
@@ -725,7 +725,7 @@
         "baptista",
         "bianca"
       ],
-      "source": "Globe/Moby text, 2.1.32-35",
+      "source": "Globe/Moby text, 2.1.32–35",
       "cloze": [
         "treasure",
         "bare-foot"
@@ -738,7 +738,7 @@
       "reference": "2.1.205",
       "stage": "act-2",
       "context": "In the middle of the wit duel, after Petruchio invites her to sit on him.",
-      "analysis": "She takes his innuendo and returns it as an insult in the same number of syllables, which is what the whole scene consists of. His reply — 'Women are made to bear, and so are you' — changes bearing weight into bearing children, and the exchange shows the two of them evenly matched at the only game either of them is playing.",
+      "analysis": "She takes his innuendo and returns it as an insult in the same number of syllables, which is what the whole scene consists of. His reply — ‘Women are made to bear, and so are you’ — changes bearing weight into bearing children, and the exchange shows the two of them evenly matched at the only game either of them is playing.",
       "themes": [
         "language"
       ],
@@ -773,7 +773,7 @@
         "petruchio",
         "katherina"
       ],
-      "source": "Globe/Moby text, 2.1.277-279",
+      "source": "Globe/Moby text, 2.1.277–279",
       "cloze": [
         "consented",
         "dowry"
@@ -798,7 +798,7 @@
         "petruchio",
         "katherina"
       ],
-      "source": "Globe/Moby text, 2.1.284-286",
+      "source": "Globe/Moby text, 2.1.284–286",
       "cloze": [
         "tame",
         "Conformable"
@@ -811,7 +811,7 @@
       "reference": "3.1.16",
       "stage": "act-3",
       "context": "To her two disguised suitors, who are arguing about who teaches her first.",
-      "analysis": "The obedient daughter, alone with two men and out of her father's hearing, says that the choice rests with her and sets the timetable herself. A breeching scholar is a schoolboy still young enough to be whipped, and she will not take the place the whole household has given her.",
+      "analysis": "The obedient daughter, alone with two men and out of her father’s hearing, says that the choice rests with her and sets the timetable herself. A breeching scholar is a schoolboy still young enough to be whipped, and she will not take the place the whole household has given her.",
       "themes": [
         "obedience",
         "disguise"
@@ -822,7 +822,7 @@
         "lucentio",
         "hortensio"
       ],
-      "source": "Globe/Moby text, 3.1.16-20",
+      "source": "Globe/Moby text, 3.1.16–20",
       "cloze": [
         "choice",
         "breeching"
@@ -868,7 +868,7 @@
         "katherina",
         "petruchio"
       ],
-      "source": "Globe/Moby text, 3.2.222-223",
+      "source": "Globe/Moby text, 3.2.222–223",
       "cloze": [
         "fool",
         "resist"
@@ -881,7 +881,7 @@
       "reference": "3.2.231",
       "stage": "act-3",
       "context": "Removing Katherina from her own wedding feast, pretending to defend her from thieves.",
-      "analysis": "The list descends from buildings to livestock to 'my any thing', and the legal terms are accurate: a wife's goods did pass to her husband. What makes the speech theatre, and not doctrine, is the pantomime around it: he draws a weapon on an imaginary gang so that he can carry her off as a rescue.",
+      "analysis": "The list descends from buildings to livestock to ‘my any thing’, and the legal terms are accurate: a wife’s goods did pass to her husband. What makes the speech theatre, and not doctrine, is the pantomime around it: he draws a weapon on an imaginary gang so that he can carry her off as a rescue.",
       "themes": [
         "marriage",
         "taming"
@@ -891,7 +891,7 @@
         "petruchio",
         "katherina"
       ],
-      "source": "Globe/Moby text, 3.2.231-234",
+      "source": "Globe/Moby text, 3.2.231–234",
       "cloze": [
         "chattels",
         "household"
@@ -916,7 +916,7 @@
         "petruchio",
         "katherina"
       ],
-      "source": "Globe/Moby text, 4.1.178-180",
+      "source": "Globe/Moby text, 4.1.178–180",
       "cloze": [
         "falcon",
         "stoop"
@@ -940,7 +940,7 @@
       "characters": [
         "petruchio"
       ],
-      "source": "Globe/Moby text, 4.1.196-199",
+      "source": "Globe/Moby text, 4.1.196–199",
       "cloze": [
         "kindness",
         "tame"
@@ -963,7 +963,7 @@
         "katherina",
         "petruchio"
       ],
-      "source": "Globe/Moby text, 4.3.77-80",
+      "source": "Globe/Moby text, 4.3.77–80",
       "cloze": [
         "speak",
         "babe"
@@ -989,7 +989,7 @@
         "katherina",
         "petruchio"
       ],
-      "source": "Globe/Moby text, 4.5.19-21",
+      "source": "Globe/Moby text, 4.5.19–21",
       "cloze": [
         "blessed",
         "moon"
@@ -1011,7 +1011,7 @@
       "characters": [
         "petruchio"
       ],
-      "source": "Globe/Moby text, 5.2.120-122",
+      "source": "Globe/Moby text, 5.2.120–122",
       "cloze": [
         "peace",
         "supremacy"
@@ -1036,7 +1036,7 @@
         "katherina",
         "petruchio"
       ],
-      "source": "Globe/Moby text, 5.2.124-127",
+      "source": "Globe/Moby text, 5.2.124–127",
       "cloze": [
         "wager",
         "dowry"
@@ -1048,7 +1048,7 @@
       "speaker": "Katherina",
       "reference": "5.2.158",
       "stage": "act-5",
-      "context": "Instructing Bianca and the Widow on a wife's duty.",
+      "context": "Instructing Bianca and the Widow on a wife’s duty.",
       "analysis": "The argument is contractual: he labours by sea and land, she keeps warm at home, and obedience is the payment due. It is also a description of a marriage that is not hers — Petruchio has been at no sea, and the man who earned his wife by refusing her food is standing in the room while she says it.",
       "themes": [
         "obedience",
@@ -1060,7 +1060,7 @@
         "petruchio",
         "bianca"
       ],
-      "source": "Globe/Moby text, 5.2.158-161",
+      "source": "Globe/Moby text, 5.2.158–161",
       "cloze": [
         "husband",
         "sovereign"
@@ -1073,7 +1073,7 @@
       "reference": "5.2.182",
       "stage": "act-5",
       "context": "Near the end of the obedience speech.",
-      "analysis": "The past tense is doing something the rest of the speech does not: she tells the other women that she was their equal in mind and their superior in reason, and then says the weapons were never real. 'Bandy word for word' is an exact description of what she did to Petruchio in 2.1, so the speech remembers the wit duel even as it disowns it.",
+      "analysis": "The past tense is doing something the rest of the speech does not: she tells the other women that she was their equal in mind and their superior in reason, and then says the weapons were never real. ‘Bandy word for word’ is an exact description of what she did to Petruchio in 2.1, so the speech remembers the wit duel even as it disowns it.",
       "themes": [
         "obedience",
         "language"
@@ -1083,7 +1083,7 @@
         "katherina",
         "bianca"
       ],
-      "source": "Globe/Moby text, 5.2.182-185",
+      "source": "Globe/Moby text, 5.2.182–185",
       "cloze": [
         "reason",
         "lances"
@@ -1106,7 +1106,7 @@
         "katherina",
         "petruchio"
       ],
-      "source": "Globe/Moby text, 5.2.188-191",
+      "source": "Globe/Moby text, 5.2.188–191",
       "cloze": [
         "vail",
         "foot"
@@ -1116,8 +1116,8 @@
   "timeline": [
     {
       "year": 1566,
-      "label": "Gascoigne's Supposes performed at Gray's Inn",
-      "detail": "An English version of Ariosto's I Suppositi, and the source of the Bianca plot's disguises and substituted fathers.",
+      "label": "Gascoigne’s Supposes performed at Gray’s Inn",
+      "detail": "An English version of Ariosto’s I Suppositi, and the source of the Bianca plot’s disguises and substituted fathers.",
       "kind": "context"
     },
     {
@@ -1129,7 +1129,7 @@
     {
       "year": 1591,
       "label": "The Taming of the Shrew probably written",
-      "detail": "Usually placed around 1590-92 among the earliest comedies; nothing fixes the year.",
+      "detail": "Usually placed around 1590–92 among the earliest comedies; nothing fixes the year.",
       "kind": "work"
     },
     {
@@ -1140,14 +1140,14 @@
     },
     {
       "year": 1610,
-      "label": "Fletcher's The Woman's Prize, or The Tamer Tamed",
-      "detail": "Usually dated around 1609-11. Petruchio remarries after Katherina's death and is resisted by a second wife, which shows the play was being answered within its own generation.",
+      "label": "Fletcher’s The Woman’s Prize, or The Tamer Tamed",
+      "detail": "Usually dated around 1609–11. Petruchio remarries after Katherina’s death and is resisted by a second wife, which shows the play was being answered within its own generation.",
       "kind": "reception"
     },
     {
       "year": 1623,
       "label": "First Folio",
-      "detail": "The first secure printed text of Shakespeare's Shrew, with the Induction and no return to Sly.",
+      "detail": "The first secure printed text of Shakespeare’s Shrew, with the Induction and no return to Sly.",
       "kind": "work"
     },
     {
@@ -1158,37 +1158,37 @@
     },
     {
       "year": 1667,
-      "label": "John Lacy's Sauny the Scot",
+      "label": "John Lacy’s Sauny the Scot",
       "detail": "A Restoration adaptation in prose that expanded Grumio into a Scottish servant and made Petruchio harsher.",
       "kind": "reception"
     },
     {
       "year": 1754,
-      "label": "Garrick's Catharine and Petruchio",
+      "label": "Garrick’s Catharine and Petruchio",
       "detail": "Three acts, no Sly, almost no Bianca — and the version most audiences saw for well over a century.",
       "kind": "reception"
     },
     {
       "year": 1929,
-      "label": "Sam Taylor's film with Mary Pickford and Douglas Fairbanks",
-      "detail": "Widely cited as the first sound Shakespeare film; Pickford's wink during the last speech became part of the play's argument with itself.",
+      "label": "Sam Taylor’s film with Mary Pickford and Douglas Fairbanks",
+      "detail": "Widely cited as the first sound Shakespeare film; Pickford’s wink during the last speech became part of the play’s argument with itself.",
       "kind": "reception"
     },
     {
       "year": 1948,
       "label": "Kiss Me, Kate opens on Broadway",
-      "detail": "Cole Porter's musical puts the play inside a backstage quarrel — a twentieth-century replacement for the abandoned Sly frame.",
+      "detail": "Cole Porter’s musical puts the play inside a backstage quarrel — a twentieth-century replacement for the abandoned Sly frame.",
       "kind": "reception"
     },
     {
       "year": 1978,
-      "label": "Michael Bogdanov's RSC production",
+      "label": "Michael Bogdanov’s RSC production",
       "detail": "Sly disrupted the auditorium before the Padua story began, so the taming plot came across as a problem and not a farce.",
       "kind": "reception"
     },
     {
       "year": 2019,
-      "label": "Justin Audibert's gender-reversed RSC production",
+      "label": "Justin Audibert’s gender-reversed RSC production",
       "detail": "Set in a matriarchal Elizabethan England, with Petruchia and Katherine, so that the hierarchy itself became visible as a construction.",
       "kind": "reception"
     }
@@ -1198,19 +1198,19 @@
       "name": "Padua",
       "lat": 45.4064,
       "lon": 11.8768,
-      "note": "Baptista's city, described as a nursery of arts and run as a marriage market."
+      "note": "Baptista’s city, described as a nursery of arts and run as a marriage market."
     },
     {
       "name": "Verona",
       "lat": 45.4384,
       "lon": 10.9916,
-      "note": "Petruchio's home, which he leaves in the first scene of Act I to find a wealthy wife."
+      "note": "Petruchio’s home, which he leaves in the first scene of Act I to find a wealthy wife."
     },
     {
       "name": "Pisa",
       "lat": 43.716,
       "lon": 10.3966,
-      "note": "Lucentio's city, and Vincentio's — the identity a passing pedant is hired to counterfeit."
+      "note": "Lucentio’s city, and Vincentio’s — the identity a passing pedant is hired to counterfeit."
     },
     {
       "name": "Venice",
@@ -1222,61 +1222,61 @@
       "name": "Mantua",
       "lat": 45.1564,
       "lon": 10.7914,
-      "note": "The pedant's home, and the city he is told it is dangerous to have come from."
+      "note": "The pedant’s home, and the city he is told it is dangerous to have come from."
     },
     {
       "name": "Barton-on-the-Heath",
       "lat": 51.9723,
       "lon": -1.6367,
-      "note": "Sly's Burtonheath: a Warwickshire village a few miles from Stratford, where Shakespeare had relatives by marriage."
+      "note": "Sly’s Burtonheath: a Warwickshire village a few miles from Stratford, where Shakespeare had relatives by marriage."
     }
   ],
   "criticalViews": [
     {
       "position": "The play as farce",
-      "summary": "One long tradition treats the taming as broad comic business in the manner of commedia dell'arte: exaggerated, unreal and not to be examined for a theory of marriage.",
+      "summary": "One long tradition treats the taming as broad comic business in the manner of commedia dell’arte: exaggerated, unreal and not to be examined for a theory of marriage.",
       "counter": "The falconry soliloquy is not farcical in tone, and the deprivation it describes is precise, not cartoonish."
     },
     {
       "position": "The play as ironic",
-      "summary": "A widespread modern reading takes the obedience speech as performance: Katherina has learned Petruchio's own game of saying what the occasion requires, and is playing it in public for the couple's joint profit.",
+      "summary": "A widespread modern reading takes the obedience speech as performance: Katherina has learned Petruchio’s own game of saying what the occasion requires, and is playing it in public for the couple’s joint profit.",
       "counter": "Nothing in the text marks the irony, and the reading relies on staging decisions the words do not require; it can also make a very long speech into a wink."
     },
     {
       "position": "The play as a study of coercion",
-      "summary": "A third position takes the Induction seriously: a man is talked out of his identity for other people's amusement, and the play then repeats the experiment on a wife, with a wager at the end to confirm the result.",
+      "summary": "A third position takes the Induction seriously: a man is talked out of his identity for other people’s amusement, and the play then repeats the experiment on a wife, with a wager at the end to confirm the result.",
       "counter": "It has to account for the comedy actually working in performance, and for Bianca and the Widow, who refuse to come when called and are not punished for it."
     }
   ],
   "essayQuestions": [
     {
-      "question": "How should Katherina's final speech be played?",
+      "question": "How should Katherina’s final speech be played?",
       "focus": "Obedience, irony and the evidence in the text",
       "plan": [
         "Set out the staging facts first: forty-four lines, delivered in public, to two women, in a room where money has just changed hands on her conduct.",
         "Trace her earlier language — the refusal to be silenced in 4.3 and the account of his changing mind in 4.5 — as the material an actor has to build on.",
-        "Read the speech's own past tense: my mind hath been as big as one of yours, my reason haply more.",
-        "Test the ironic reading against 'place your hands below your husband's foot', and the sincere reading against the wager that produced it.",
-        "Conclude with what follows: Petruchio's reply, Lucentio's last line about froward women, and Katherina's silence."
+        "Read the speech’s own past tense: my mind hath been as big as one of yours, my reason haply more.",
+        "Test the ironic reading against ‘place your hands below your husband’s foot’, and the sincere reading against the wager that produced it.",
+        "Conclude with what follows: Petruchio’s reply, Lucentio’s last line about froward women, and Katherina’s silence."
       ]
     },
     {
       "question": "What does the Induction do to the rest of the play?",
       "focus": "Frames, spectatorship and the missing ending",
       "plan": [
-        "Describe what happens to Sly: an identity dismantled and replaced by repetition, clothes and other people's insistence.",
-        "Show that the Padua plot repeats the method on a wife, and that Petruchio's technique is the lord's technique.",
+        "Describe what happens to Sly: an identity dismantled and replaced by repetition, clothes and other people’s insistence.",
+        "Show that the Padua plot repeats the method on a wife, and that Petruchio’s technique is the lord’s technique.",
         "Note that the Folio never returns to Sly, and that the 1594 A Shrew does — and that editors once borrowed that ending.",
         "Consider the wager scene as a reinstated frame: husbands watching, a woman performing, money on the outcome.",
         "Decide whether a production that cuts the Induction is playing a different play."
       ]
     },
     {
-      "question": "'Every courtship in the play is a negotiation.' Discuss.",
+      "question": "‘Every courtship in the play is a negotiation.’ Discuss.",
       "focus": "Money, contracts and consent",
       "plan": [
         "Begin with Baptista’s condition in 1.1, which makes one daughter’s marriage the price of the other’s.",
-        "Use Petruchio's 'wive it wealthily' and the settlement of the dowry in 2.1 before any consent is sought.",
+        "Use Petruchio’s ‘wive it wealthily’ and the settlement of the dowry in 2.1 before any consent is sought.",
         "Set the auction for Bianca — plate, hangings, an argosy — against the romance Lucentio believes he is conducting.",
         "Examine what Bianca actually does: takes the tutor, marries in secret, and refuses to come when called.",
         "Close on 5.2, where a second dowry is paid for a change in behaviour."
@@ -1287,9 +1287,9 @@
       "focus": "Identity, clothes and the Supposes plot",
       "plan": [
         "List the disguises and note how many of them change social rank, not sex: servant as master, gentleman as tutor, stranger as father.",
-        "Connect the machinery to Gascoigne's Supposes, and to the comic tradition of substitution the audience would have recognised.",
+        "Connect the machinery to Gascoigne’s Supposes, and to the comic tradition of substitution the audience would have recognised.",
         "Show that Tranio is better at being a gentleman than Lucentio, and ask what the play does with that.",
-        "Set the disguises against Petruchio's wedding clothes and his claim that she is married to him and not to his clothes.",
+        "Set the disguises against Petruchio’s wedding clothes and his claim that she is married to him and not to his clothes.",
         "Return to Sly, whose transformation is achieved with nothing but a gown and a consistent story."
       ]
     }
@@ -1316,7 +1316,7 @@
     },
     {
       "href": "/books/twelfth-night/",
-      "why": "Disguise used to court on someone else's behalf, with the consequences taken seriously."
+      "why": "Disguise used to court on someone else’s behalf, with the consequences taken seriously."
     },
     {
       "href": "/books/as-you-like-it/",

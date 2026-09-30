@@ -9,13 +9,13 @@
   "period": "Shakespeare",
   "written": "c. 1598–1599",
   "firstPublished": 1600,
-  "setting": "Messina, in and around Leonato's house, over about a week",
+  "setting": "Messina, in and around Leonato’s house, over about a week",
   "readingTime": 140,
   "difficulty": 3,
   "lengthNote": "Around 2,500 lines, the greater part of them in prose",
   "openingLine": "I learn in this letter that Don Peter of Arragon comes this night to Messina.",
-  "summary": "Two couples are made by the same method. Beatrice and Benedick are talked into love by friends who arrange for them to overhear flattering lies; Claudio is talked out of it by a stranger at a window. The play's comedy and its near-catastrophe run on identical machinery, and it takes a pair of incompetent constables to notice the difference.",
-  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "summary": "Two couples are made by the same method. Beatrice and Benedick are talked into love by friends who arrange for them to overhear flattering lies; Claudio is talked out of it by a stranger at a window. The play’s comedy and its near-catastrophe run on identical machinery, and it takes a pair of incompetent constables to notice the difference.",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
     "label": "Globe/Moby text of Much Ado About Nothing",
     "note": "Line numbers follow the traditional Globe numbering, which counts the prose scenes continuously. Modern editions vary."
@@ -24,7 +24,7 @@
     {
       "label": "Written",
       "value": "c. 1598–1599",
-      "note": "Placed by its style and by the company's records at the end of the 1590s."
+      "note": "Placed by its style and by the company’s records at the end of the 1590s."
     },
     {
       "label": "First printed",
@@ -34,7 +34,7 @@
     {
       "label": "Source tradition",
       "value": "The slandered bride",
-      "note": "The Hero plot belongs to a European story family found in Ariosto and in Bandello; Beatrice and Benedick are Shakespeare's own."
+      "note": "The Hero plot belongs to a European story family found in Ariosto and in Bandello; Beatrice and Benedick are Shakespeare’s own."
     },
     {
       "label": "Title",
@@ -47,7 +47,7 @@
       "id": "act-1",
       "label": "Act I",
       "title": "The soldiers’ return, and Claudio falls for Hero",
-      "summary": "Don Pedro's company returns from a war that cost almost nothing, and the house fills with young men with time on their hands. Claudio decides within minutes that he loves Hero; Beatrice and Benedick resume a quarrel that predates the play; and Don John, newly and unconvincingly reconciled to his brother, announces that he would rather be disliked than pretend.",
+      "summary": "Don Pedro’s company returns from a war that cost almost nothing, and the house fills with young men with time on their hands. Claudio decides within minutes that he loves Hero; Beatrice and Benedick resume a quarrel that predates the play; and Don John, newly and unconvincingly reconciled to his brother, announces that he would rather be disliked than pretend.",
       "scenes": [
         {
           "ref": "1.1",
@@ -85,7 +85,7 @@
         {
           "ref": "2.3",
           "title": "Benedick in the arbour",
-          "summary": "A song, then three men loudly discussing Beatrice's hopeless love, and a bachelor converted."
+          "summary": "A song, then three men loudly discussing Beatrice’s hopeless love, and a bachelor converted."
         }
       ]
     },
@@ -113,7 +113,7 @@
         {
           "ref": "3.4",
           "title": "Dressing",
-          "summary": "Hero's women joke about husbands and heaviness on the morning of the wedding."
+          "summary": "Hero’s women joke about husbands and heaviness on the morning of the wedding."
         },
         {
           "ref": "3.5",
@@ -131,7 +131,7 @@
         {
           "ref": "4.1",
           "title": "The church",
-          "summary": "The public shaming, the swoon, the Friar's plan, and 'Kill Claudio'."
+          "summary": "The public shaming, the swoon, the Friar’s plan, and ‘Kill Claudio’."
         },
         {
           "ref": "4.2",
@@ -173,7 +173,7 @@
     {
       "id": "beatrice",
       "name": "Beatrice",
-      "role": "Leonato's niece",
+      "role": "Leonato’s niece",
       "summary": "She has the fastest tongue in Shakespearean comedy and uses it, by her own admission, as armour: the play hints at an earlier hurt from Benedick that she will not describe. Her anger after the wedding is the point at which the comedy nearly stops being one.",
       "clue": "She would rather hear her dog bark at a crow than a man swear he loves her, and her first request of the man she finally admits loving is that he kill his friend.",
       "firstAppearance": "1.1",
@@ -220,9 +220,9 @@
     {
       "id": "benedick",
       "name": "Benedick",
-      "role": "A lord of Padua, of Don Pedro's company",
-      "summary": "His anti-marriage act is loud enough to be a performance, and the gulling scene works by letting him surrender without losing face. He is the only man in the play who takes Beatrice's account of the wedding seriously, and he changes sides for her at real cost.",
-      "clue": "He swears he will die a bachelor, is talked out of it by three friends shouting in a garden, and ends up challenging his commander's favourite.",
+      "role": "A lord of Padua, of Don Pedro’s company",
+      "summary": "His anti-marriage act is loud enough to be a performance, and the gulling scene works by letting him surrender without losing face. He is the only man in the play who takes Beatrice’s account of the wedding seriously, and he changes sides for her at real cost.",
+      "clue": "He swears he will die a bachelor, is talked out of it by three friends shouting in a garden, and ends up challenging his commander’s favourite.",
       "firstAppearance": "1.1",
       "traits": [
         "witty",
@@ -264,8 +264,8 @@
     {
       "id": "hero",
       "name": "Hero",
-      "role": "Leonato's daughter",
-      "summary": "She speaks little in the first half and is discussed constantly, which is precisely what makes her vulnerable: her reputation exists entirely in other people's mouths. In 3.1 she runs the trick that catches Beatrice, so the play does show her capable of managing a scene when she is given one.",
+      "role": "Leonato’s daughter",
+      "summary": "She speaks little in the first half and is discussed constantly, which is precisely what makes her vulnerable: her reputation exists entirely in other people’s mouths. In 3.1 she runs the trick that catches Beatrice, so the play does show her capable of managing a scene when she is given one.",
       "clue": "Her value is agreed by everyone before she has said fifty words, and it is destroyed in public by a man who never asks her a question.",
       "firstAppearance": "1.1",
       "traits": [
@@ -349,8 +349,8 @@
       "id": "don-pedro",
       "name": "Don Pedro",
       "role": "Prince of Arragon",
-      "summary": "He arranges everything: Claudio's marriage, the gulling of two friends, and, without meaning to, the conditions in which a lie about Hero can be believed. He ends the play with no partner and one line of consolation offered to him, which several productions have made the quietest moment in the last scene.",
-      "clue": "He courts one woman on another man's behalf, invents the plot that marries two enemies, and is left standing alone at the end of it.",
+      "summary": "He arranges everything: Claudio’s marriage, the gulling of two friends, and, without meaning to, the conditions in which a lie about Hero can be believed. He ends the play with no partner and one line of consolation offered to him, which several productions have made the quietest moment in the last scene.",
+      "clue": "He courts one woman on another man’s behalf, invents the plot that marries two enemies, and is left standing alone at the end of it.",
       "firstAppearance": "1.1",
       "traits": [
         "generous",
@@ -389,7 +389,7 @@
     {
       "id": "don-john",
       "name": "Don John",
-      "role": "Don Pedro's illegitimate brother",
+      "role": "Don Pedro’s illegitimate brother",
       "summary": "He announces that he is a villain in his third scene and offers no reason beyond his position, which is the interesting thing about him: a defeated bastard brother in a household where legitimacy is everything. He needs to invent almost nothing, because the men around him are ready to believe it.",
       "clue": "He calls himself a plain-dealing villain and says he is trusted with a muzzle; his whole plot amounts to arranging for two people to be seen at a window.",
       "firstAppearance": "1.1",
@@ -422,7 +422,7 @@
     {
       "id": "leonato",
       "name": "Leonato",
-      "role": "Governor of Messina, Hero's father",
+      "role": "Governor of Messina, Hero’s father",
       "summary": "Hospitable, pleased with his household, and the first person in the church to believe the accusation against his own daughter. His grief in 5.1 produces the best serious verse in the play, and it is directed at the men who wronged her only after a friar has told him she is innocent.",
       "clue": "He welcomes a prince, gives away a daughter, and at the altar wishes aloud that somebody would lend him a dagger.",
       "firstAppearance": "1.1",
@@ -460,7 +460,7 @@
       "id": "dogberry",
       "name": "Dogberry",
       "role": "Constable of the watch",
-      "summary": "He reverses almost every word he uses and is right about almost every fact. The play's crime is solved by men the gentry cannot be bothered to listen to, and the running joke about being written down an ass carries a real grievance about who is believed.",
+      "summary": "He reverses almost every word he uses and is right about almost every fact. The play’s crime is solved by men the gentry cannot be bothered to listen to, and the running joke about being written down an ass carries a real grievance about who is believed.",
       "clue": "He tells his watchmen to let thieves go sooner than risk a scuffle, and then demands to be written down, on record, as an ass.",
       "firstAppearance": "3.3",
       "traits": [
@@ -491,9 +491,9 @@
     {
       "id": "margaret",
       "name": "Margaret",
-      "role": "One of Hero's gentlewomen",
-      "summary": "She stands at the window in her mistress's clothes and is the physical cause of the catastrophe, and the play excuses her in a line and a half without asking what she thought she was doing. Her bawdy jokes on the wedding morning are the last cheerful thing said before the church scene.",
-      "clue": "She wears her mistress's gown at a window one night, and the play forgives her in half a sentence without ever letting her explain.",
+      "role": "One of Hero’s gentlewomen",
+      "summary": "She stands at the window in her mistress’s clothes and is the physical cause of the catastrophe, and the play excuses her in a line and a half without asking what she thought she was doing. Her bawdy jokes on the wedding morning are the last cheerful thing said before the church scene.",
+      "clue": "She wears her mistress’s gown at a window one night, and the play forgives her in half a sentence without ever letting her explain.",
       "firstAppearance": "2.1",
       "traits": [
         "bawdy",
@@ -524,13 +524,13 @@
     {
       "id": "noting",
       "name": "Noting, overhearing and evidence",
-      "summary": "Nobody in this play learns anything by being told it directly. Information arrives by eavesdropping, by report, by a scene arranged for a particular watcher, and the play's title puns on the word for it. Both love plots and the slander plot use exactly the same device, which is the argument the comedy is making.",
+      "summary": "Nobody in this play learns anything by being told it directly. Information arrives by eavesdropping, by report, by a scene arranged for a particular watcher, and the play’s title puns on the word for it. Both love plots and the slander plot use exactly the same device, which is the argument the comedy is making.",
       "development": "Two staged overhearings in Act II and Act III produce a marriage; a third staged sight in Act III nearly produces a death."
     },
     {
       "id": "reputation",
       "name": "Reputation and public honour",
-      "summary": "Hero's worth is established by other people's praise and destroyed by other people's testimony; she is never asked to give an account of herself until it is too late to matter. Messina is a small enough world for a name to be the whole of a person's estate.",
+      "summary": "Hero’s worth is established by other people’s praise and destroyed by other people’s testimony; she is never asked to give an account of herself until it is too late to matter. Messina is a small enough world for a name to be the whole of a person’s estate.",
       "development": "The accusation is deliberately staged at the altar, and the repair is staged there too — the second wedding is as public as the first because the damage was."
     },
     {
@@ -548,14 +548,14 @@
     {
       "id": "deception",
       "name": "Benign and malicious deception",
-      "summary": "The play does not draw a clean line between a kind lie and a cruel one. Don Pedro's trick is a gift and Don John's is an attack, but both rely on the target's existing self-image, and both work because being watched makes people believe what they are shown.",
+      "summary": "The play does not draw a clean line between a kind lie and a cruel one. Don Pedro’s trick is a gift and Don John’s is an attack, but both rely on the target’s existing self-image, and both work because being watched makes people believe what they are shown.",
       "development": "The Friar’s plan in 4.1 is a third kind: a false report used to cancel the effect of another false report."
     },
     {
       "id": "forgiveness",
       "name": "Repair",
       "summary": "The comedy ends with the right people married and the villain caught, but Shakespeare does not pretend the wedding scene never happened. Claudio is given a penance, not an argument, and Hero’s first words to him afterwards correct him about who she is.",
-      "development": "The tomb scene, the second veiled bride and Benedick's call for a dance are three separate attempts to close the play, and the last one has to talk over Don John's arrest."
+      "development": "The tomb scene, the second veiled bride and Benedick’s call for a dance are three separate attempts to close the play, and the last one has to talk over Don John’s arrest."
     }
   ],
   "techniques": [
@@ -563,7 +563,7 @@
       "id": "prose-comedy",
       "name": "Prose as the main medium",
       "definition": "Unmetred speech carrying the substance of a play, not just its low comedy.",
-      "inThisBook": "Most of the play is prose, and the lovers' most important exchanges are in it; verse arrives for ceremony, grief and the moment Beatrice surrenders in rhyme at the end of 3.1."
+      "inThisBook": "Most of the play is prose, and the lovers’ most important exchanges are in it; verse arrives for ceremony, grief and the moment Beatrice surrenders in rhyme at the end of 3.1."
     },
     {
       "id": "eavesdropping",
@@ -575,13 +575,13 @@
       "id": "malapropism",
       "name": "Malapropism",
       "definition": "Using a word that sounds like the intended one and means something else, usually the opposite.",
-      "inThisBook": "Dogberry's comparisons are odorous and his suspects are full of piety; the joke works because the errors keep accidentally telling the truth about Messina."
+      "inThisBook": "Dogberry’s comparisons are odorous and his suspects are full of piety; the joke works because the errors keep accidentally telling the truth about Messina."
     },
     {
       "id": "wordplay-nothing",
       "name": "The pun on nothing and noting",
       "definition": "A double meaning carried by two words that sounded almost identical in early modern English.",
-      "inThisBook": "The title names both the fuss over a non-event and the play's real mechanism, observation; the same pun runs through Balthasar's scene about musical notes in 2.3."
+      "inThisBook": "The title names both the fuss over a non-event and the play’s real mechanism, observation; the same pun runs through Balthasar’s scene about musical notes in 2.3."
     },
     {
       "id": "offstage-crime",
@@ -592,8 +592,8 @@
     {
       "id": "song",
       "name": "Song as commentary",
-      "definition": "A lyric that states the play's theme from outside the action.",
-      "inThisBook": "Balthasar's 'Sigh no more, ladies' advises women to expect men to be deceivers, and it is sung to distract Benedick immediately before he is deceived."
+      "definition": "A lyric that states the play’s theme from outside the action.",
+      "inThisBook": "Balthasar’s ‘Sigh no more, ladies’ advises women to expect men to be deceivers, and it is sung to distract Benedick immediately before he is deceived."
     }
   ],
   "quotations": [
@@ -617,7 +617,7 @@
         "beatrice",
         "benedick"
       ],
-      "source": "Globe/Moby text, 1.1.52-55",
+      "source": "Globe/Moby text, 1.1.52–55",
       "cloze": [
         "merry",
         "skirmish"
@@ -630,7 +630,7 @@
       "reference": "1.1.104",
       "stage": "act-1",
       "context": "His first words to Beatrice in the play, after she has interrupted him.",
-      "analysis": "He greets her with an allegorical title, as though she were a figure in a morality play, and she takes the personification off him in her reply and feeds it. Neither of them uses the other's name in this whole exchange, which is the shape of the defence they have both agreed to.",
+      "analysis": "He greets her with an allegorical title, as though she were a figure in a morality play, and she takes the personification off him in her reply and feeds it. Neither of them uses the other’s name in this whole exchange, which is the shape of the defence they have both agreed to.",
       "themes": [
         "wit"
       ],
@@ -653,7 +653,7 @@
       "speaker": "Beatrice",
       "reference": "1.1.115",
       "stage": "act-1",
-      "context": "Agreeing, competitively, with Benedick's claim that he loves no woman.",
+      "context": "Agreeing, competitively, with Benedick’s claim that he loves no woman.",
       "analysis": "The comparison is precise: both are noise made by a creature that does not mean anything by it. She says this in front of her uncle and a room of guests, which makes it a position she will have to be seen to abandon — and the friends who trick her know it.",
       "themes": [
         "wit",
@@ -666,7 +666,7 @@
         "beatrice",
         "benedick"
       ],
-      "source": "Globe/Moby text, 1.1.115-117",
+      "source": "Globe/Moby text, 1.1.115–117",
       "cloze": [
         "dog",
         "swear"
@@ -679,7 +679,7 @@
       "reference": "1.1.158",
       "stage": "act-1",
       "context": "Asking Benedick what he thinks of Hero, minutes after arriving in Messina.",
-      "analysis": "Benedick has just asked whether he means to buy her, and Claudio's answer accepts the vocabulary without noticing it. He values Hero as a possession whose worth is set by general agreement, which is why a general agreement that she is worthless can destroy her in one scene.",
+      "analysis": "Benedick has just asked whether he means to buy her, and Claudio’s answer accepts the vocabulary without noticing it. He values Hero as a possession whose worth is set by general agreement, which is why a general agreement that she is worthless can destroy her in one scene.",
       "themes": [
         "reputation"
       ],
@@ -715,7 +715,7 @@
         "don-john",
         "don-pedro"
       ],
-      "source": "Globe/Moby text, 1.3.28-30",
+      "source": "Globe/Moby text, 1.3.28–30",
       "cloze": [
         "villain",
         "muzzle"
@@ -727,8 +727,8 @@
       "speaker": "Balthasar",
       "reference": "2.3.63",
       "stage": "act-2",
-      "context": "The song sung in Leonato's orchard while Benedick hides in the arbour.",
-      "analysis": "The song tells women to stop grieving over men who are unreliable by nature, and it is performed as cover for three men about to tell an elaborate lie. Its advice is also the play's plot in advance: Claudio will be exactly the deceiver described, and the ladies will be told to let him go.",
+      "context": "The song sung in Leonato’s orchard while Benedick hides in the arbour.",
+      "analysis": "The song tells women to stop grieving over men who are unreliable by nature, and it is performed as cover for three men about to tell an elaborate lie. Its advice is also the play’s plot in advance: Claudio will be exactly the deceiver described, and the ladies will be told to let him go.",
       "themes": [
         "gender",
         "deception"
@@ -739,7 +739,7 @@
       "characters": [
         "benedick"
       ],
-      "source": "Globe/Moby text, 2.3.63-66",
+      "source": "Globe/Moby text, 2.3.63–66",
       "cloze": [
         "Sigh",
         "deceivers"
@@ -765,7 +765,7 @@
         "benedick",
         "beatrice"
       ],
-      "source": "Globe/Moby text, 2.3.227-229",
+      "source": "Globe/Moby text, 2.3.227–229",
       "cloze": [
         "peopled",
         "bachelor"
@@ -792,7 +792,7 @@
         "benedick",
         "hero"
       ],
-      "source": "Globe/Moby text, 3.1.113-116",
+      "source": "Globe/Moby text, 3.1.113–116",
       "cloze": [
         "Contempt",
         "requite"
@@ -830,7 +830,7 @@
       "reference": "3.5.14",
       "stage": "act-3",
       "context": "Trying to tell Leonato what his watch has arrested, on the morning of the wedding.",
-      "analysis": "He means odious, and the mistake is funnier than the word he wanted; but the scene is also the play's most painful piece of timing, because Leonato is in a hurry and sends him away. The catastrophe of Act IV is entirely preventable, and it is prevented by nobody because of who is speaking.",
+      "analysis": "He means odious, and the mistake is funnier than the word he wanted; but the scene is also the play’s most painful piece of timing, because Leonato is in a hurry and sends him away. The catastrophe of Act IV is entirely preventable, and it is prevented by nobody because of who is speaking.",
       "themes": [
         "noting",
         "reputation"
@@ -854,7 +854,7 @@
       "speaker": "Claudio",
       "reference": "4.1.16",
       "stage": "act-4",
-      "context": "In the church, beginning the accusation, having so far refused to say the word 'marry'.",
+      "context": "In the church, beginning the accusation, having so far refused to say the word ‘marry’.",
       "analysis": "The exclamation is about men, not about Hero, and it is the nearest the scene comes to self-knowledge: what men dare do is precisely what Claudio is about to do to a girl in front of her father. The line breaks off mid-sentence, and the completed thought never arrives.",
       "themes": [
         "gender",
@@ -889,7 +889,7 @@
         "hero",
         "leonato"
       ],
-      "source": "Globe/Moby text, 4.1.29-30",
+      "source": "Globe/Moby text, 4.1.29–30",
       "cloze": [
         "rotten",
         "semblance"
@@ -912,7 +912,7 @@
         "claudio",
         "hero"
       ],
-      "source": "Globe/Moby text, 4.1.104-105",
+      "source": "Globe/Moby text, 4.1.104–105",
       "cloze": [
         "foul",
         "purity"
@@ -925,7 +925,7 @@
       "reference": "4.1.274",
       "stage": "act-4",
       "context": "Alone with Beatrice in the empty church after Hero has been carried out.",
-      "analysis": "The declaration arrives in the wreckage of somebody else's wedding, and he ends it with a question because he cannot say it without a shrug. 'Nothing' is the title word, and here it is doing honest work for once: he loves nothing so well, in a play where nothing has been the cause of all the trouble.",
+      "analysis": "The declaration arrives in the wreckage of somebody else’s wedding, and he ends it with a question because he cannot say it without a shrug. ‘Nothing’ is the title word, and here it is doing honest work for once: he loves nothing so well, in a play where nothing has been the cause of all the trouble.",
       "themes": [
         "wit",
         "noting"
@@ -938,7 +938,7 @@
         "benedick",
         "beatrice"
       ],
-      "source": "Globe/Moby text, 4.1.274-275",
+      "source": "Globe/Moby text, 4.1.274–275",
       "cloze": [
         "nothing",
         "strange"
@@ -951,7 +951,7 @@
       "reference": "4.1.295",
       "stage": "act-4",
       "context": "Her answer when Benedick tells her to bid him do anything for her.",
-      "analysis": "Two words, immediately after a page of elaborate prose, and the shortest speech either of them makes in the play. It is the point where the comedy's machinery — a lover offering extravagant service — is taken literally, and the audience's laughter, which almost always comes, is part of what the scene is testing.",
+      "analysis": "Two words, immediately after a page of elaborate prose, and the shortest speech either of them makes in the play. It is the point where the comedy’s machinery — a lover offering extravagant service — is taken literally, and the audience’s laughter, which almost always comes, is part of what the scene is testing.",
       "themes": [
         "gender",
         "forgiveness"
@@ -977,7 +977,7 @@
       "reference": "4.1.311",
       "stage": "act-4",
       "context": "Explaining to Benedick why Claudio is her enemy.",
-      "analysis": "She says it three times in twenty lines, which is a measure of how completely her wit has failed her. 'In the market-place' is the detail that matters: Hero was destroyed in public, so the revenge Beatrice imagines is public too, and it has to be carried out by a man because the law and the sword both belong to men.",
+      "analysis": "She says it three times in twenty lines, which is a measure of how completely her wit has failed her. ‘In the market-place’ is the detail that matters: Hero was destroyed in public, so the revenge Beatrice imagines is public too, and it has to be carried out by a man because the law and the sword both belong to men.",
       "themes": [
         "gender",
         "reputation"
@@ -989,7 +989,7 @@
         "beatrice",
         "claudio"
       ],
-      "source": "Globe/Moby text, 4.1.311-312",
+      "source": "Globe/Moby text, 4.1.311–312",
       "cloze": [
         "man",
         "market-place"
@@ -1002,7 +1002,7 @@
       "reference": "4.1.321",
       "stage": "act-4",
       "context": "Continuing the same speech, on the men of Messina.",
-      "analysis": "It is a complaint about talk from the play's best talker, and it convicts her own weapon: wit is what the men have instead of action. The verbs are all of liquefaction and exchange — melted, turned — as though a substance had been swapped for a currency.",
+      "analysis": "It is a complaint about talk from the play’s best talker, and it convicts her own weapon: wit is what the men have instead of action. The verbs are all of liquefaction and exchange — melted, turned — as though a substance had been swapped for a currency.",
       "themes": [
         "gender",
         "wit"
@@ -1014,7 +1014,7 @@
         "beatrice",
         "benedick"
       ],
-      "source": "Globe/Moby text, 4.1.321-324",
+      "source": "Globe/Moby text, 4.1.321–324",
       "cloze": [
         "manhood",
         "valour"
@@ -1039,7 +1039,7 @@
       "characters": [
         "dogberry"
       ],
-      "source": "Globe/Moby text, 4.2.69-72",
+      "source": "Globe/Moby text, 4.2.69–72",
       "cloze": [
         "written",
         "ass"
@@ -1051,7 +1051,7 @@
       "speaker": "Leonato",
       "reference": "5.1.36",
       "stage": "act-5",
-      "context": "Refusing his brother's advice to bear his daughter's disgrace calmly.",
+      "context": "Refusing his brother’s advice to bear his daughter’s disgrace calmly.",
       "analysis": "He answers moral consolation with dentistry, and the deflation is the point: the men who counsel patience have not been in the chair. It is the best serious writing in the play, and it is given to the man who, one scene earlier, wished his daughter dead sooner than shamed.",
       "themes": [
         "forgiveness",
@@ -1061,7 +1061,7 @@
       "characters": [
         "leonato"
       ],
-      "source": "Globe/Moby text, 5.1.36-37",
+      "source": "Globe/Moby text, 5.1.36–37",
       "cloze": [
         "philosopher",
         "toothache"
@@ -1073,7 +1073,7 @@
       "speaker": "Claudio",
       "reference": "5.3.4",
       "stage": "act-5",
-      "context": "Reading the epitaph at Leonato's monument, believing Hero dead.",
+      "context": "Reading the epitaph at Leonato’s monument, believing Hero dead.",
       "analysis": "The penance is a poem, hung on a tomb containing nobody, read by the man whose tongue did most of the slandering — and the epitaph does not name him. Shakespeare gives the scene formal rhymed stanzas and a ritual, which is either the repair Messina needs or an exact measure of how cheap its rituals are.",
       "themes": [
         "reputation",
@@ -1086,7 +1086,7 @@
         "claudio",
         "hero"
       ],
-      "source": "Globe/Moby text, 5.3.4-5",
+      "source": "Globe/Moby text, 5.3.4–5",
       "cloze": [
         "slanderous",
         "tongues"
@@ -1099,7 +1099,7 @@
       "reference": "5.4.112",
       "stage": "act-5",
       "context": "Explaining why nobody should mock him for marrying after swearing he never would.",
-      "analysis": "He does not defend the reversal; he generalises it into a fact about the species and calls that a conclusion. It is the play's answer to its own machinery — people are talked into things, and the sensible response is to marry, dance, and not examine it too closely.",
+      "analysis": "He does not defend the reversal; he generalises it into a fact about the species and calls that a conclusion. It is the play’s answer to its own machinery — people are talked into things, and the sensible response is to marry, dance, and not examine it too closely.",
       "themes": [
         "wit",
         "forgiveness"
@@ -1121,13 +1121,13 @@
   "timeline": [
     {
       "year": 1516,
-      "label": "Ariosto's Orlando Furioso first published",
-      "detail": "Its story of Ginevra, falsely accused after a maid is seen at her window in her mistress's clothes, is the closest analogue to the Hero plot.",
+      "label": "Ariosto’s Orlando Furioso first published",
+      "detail": "Its story of Ginevra, falsely accused after a maid is seen at her window in her mistress’s clothes, is the closest analogue to the Hero plot.",
       "kind": "context"
     },
     {
       "year": 1554,
-      "label": "Bandello's Novelle",
+      "label": "Bandello’s Novelle",
       "detail": "Another version of the slandered bride, set in Messina, which brings the story to the city Shakespeare uses.",
       "kind": "context"
     },
@@ -1146,7 +1146,7 @@
     {
       "year": 1600,
       "label": "First Quarto",
-      "detail": "Printed by Valentine Simmes for Andrew Wise and William Aspley; its title page links the play to the Lord Chamberlain's Men.",
+      "detail": "Printed by Valentine Simmes for Andrew Wise and William Aspley; its title page links the play to the Lord Chamberlain’s Men.",
       "kind": "work"
     },
     {
@@ -1158,7 +1158,7 @@
     {
       "year": 1623,
       "label": "First Folio",
-      "detail": "Printed among the comedies, with some of the quarto's confusing speech prefixes regularised.",
+      "detail": "Printed among the comedies, with some of the quarto’s confusing speech prefixes regularised.",
       "kind": "work"
     },
     {
@@ -1170,12 +1170,12 @@
     {
       "year": 1976,
       "label": "Judi Dench and Donald Sinden for the RSC",
-      "detail": "One of the best remembered of the company's many Beatrice and Benedick pairings.",
+      "detail": "One of the best remembered of the company’s many Beatrice and Benedick pairings.",
       "kind": "reception"
     },
     {
       "year": 1993,
-      "label": "Kenneth Branagh's film",
+      "label": "Kenneth Branagh’s film",
       "detail": "Shot at the Villa Vignamaggio in Tuscany, with Emma Thompson as Beatrice; one of the most commercially successful Shakespeare films.",
       "kind": "reception"
     },
@@ -1187,7 +1187,7 @@
     },
     {
       "year": 2019,
-      "label": "Kenny Leon's Public Theater production is filmed",
+      "label": "Kenny Leon’s Public Theater production is filmed",
       "detail": "An all-Black cast in a contemporary American political setting, recorded for broadcast.",
       "kind": "reception"
     }
@@ -1197,37 +1197,37 @@
       "name": "Messina",
       "lat": 38.1938,
       "lon": 15.554,
-      "note": "The whole play: Leonato's house, its orchard and garden, a church and a prison."
+      "note": "The whole play: Leonato’s house, its orchard and garden, a church and a prison."
     },
     {
       "name": "Padua",
       "lat": 45.4064,
       "lon": 11.8768,
-      "note": "Benedick's city, named in the first scene along with the reputation that precedes him."
+      "note": "Benedick’s city, named in the first scene along with the reputation that precedes him."
     },
     {
       "name": "Florence",
       "lat": 43.7696,
       "lon": 11.2558,
-      "note": "Claudio's city; the first scene introduces him as a young Florentine who has fought beyond the promise of his age."
+      "note": "Claudio’s city; the first scene introduces him as a young Florentine who has fought beyond the promise of his age."
     },
     {
       "name": "Zaragoza",
       "lat": 41.6488,
       "lon": -0.8891,
-      "note": "Chief city of Aragon, the kingdom Don Pedro is prince of and the source of the company's rank."
+      "note": "Chief city of Aragon, the kingdom Don Pedro is prince of and the source of the company’s rank."
     },
     {
       "name": "London",
       "lat": 51.5074,
       "lon": -0.1278,
-      "note": "Where the 1600 quarto was printed and where the Lord Chamberlain's Men first played it."
+      "note": "Where the 1600 quarto was printed and where the Lord Chamberlain’s Men first played it."
     }
   ],
   "criticalViews": [
     {
       "position": "The play belongs to Beatrice and Benedick",
-      "summary": "On this reading the inherited slandered-bride plot is the frame and the invented couple are the picture: the comedy's real subject is two intelligent people arguing themselves out of a defence.",
+      "summary": "On this reading the inherited slandered-bride plot is the frame and the invented couple are the picture: the comedy’s real subject is two intelligent people arguing themselves out of a defence.",
       "counter": "It leaves Act IV hard to account for, since the church scene is the longest and most serious writing in the play and Hero is at the centre of it."
     },
     {
@@ -1237,7 +1237,7 @@
     },
     {
       "position": "A play about what men are permitted to do",
-      "summary": "Recent stage practice and criticism have concentrated on Claudio's public shaming of Hero, Leonato's readiness to believe it, and Beatrice's fury that revenge is a man's office. The second wedding leaves the comedy open.",
+      "summary": "Recent stage practice and criticism have concentrated on Claudio’s public shaming of Hero, Leonato’s readiness to believe it, and Beatrice’s fury that revenge is a man’s office. The second wedding leaves the comedy open.",
       "counter": "Hero herself is given no scene in which to judge Claudio, which makes it difficult to say what the play thinks the right ending would be."
     }
   ],
@@ -1248,8 +1248,8 @@
       "plan": [
         "Establish the pattern: nobody in this play learns anything except by watching or being told.",
         "Compare the two gulling scenes, 2.3 and 3.1, and note that each accuses its target of the fault they most fear.",
-        "Set Don John's window scene against them, and observe that Shakespeare never stages it.",
-        "Add the Friar's false report of Hero's death as a third kind of lie, used as medicine.",
+        "Set Don John’s window scene against them, and observe that Shakespeare never stages it.",
+        "Add the Friar’s false report of Hero’s death as a third kind of lie, used as medicine.",
         "Conclude on the watch: the truth arrives from the people nobody bothered to listen to in 3.5."
       ]
     },
@@ -1261,7 +1261,7 @@
         "Read her wit as defence, not temperament, using her hint at an earlier hurt.",
         "Use the rhymed verse of 3.1.113 to show how completely the trick works, and how much she concedes in the image of the tamed bird.",
         "Turn to 4.1: the repeated wish to be a man, and the demand that Benedick act because she cannot.",
-        "Close by asking whether the last scene's discovered sonnet restores the comedy or simply puts the armour back on."
+        "Close by asking whether the last scene’s discovered sonnet restores the comedy or simply puts the armour back on."
       ]
     },
     {
@@ -1282,15 +1282,15 @@
         "Set out the joke first: a constable who reverses his words and instructs his men to avoid arresting anyone.",
         "Show that the watch nevertheless overhear the confession that solves the plot, in 3.3.",
         "Make 3.5 the centre of the argument — Leonato is in a hurry and will not listen, and the wedding proceeds.",
-        "Read the 'write me down an ass' joke as a grievance about record and testimony as well as a gag.",
+        "Read the ‘write me down an ass’ joke as a grievance about record and testimony as well as a gag.",
         "Conclude on the reversal: the gentlemen read signs badly and the fools take statements accurately."
       ]
     }
   ],
   "discussionQuestions": [
     "Both love plots are begun by a lie. Does the play think that matters?",
-    "Shakespeare never shows the scene at Hero's window. What does the play gain by keeping it offstage?",
-    "'Kill Claudio' usually gets a laugh. Should it?",
+    "Shakespeare never shows the scene at Hero’s window. What does the play gain by keeping it offstage?",
+    "‘Kill Claudio’ usually gets a laugh. Should it?",
     "Leonato believes the accusation against his own daughter before anyone else does. Is he forgiven too easily?",
     "Don Pedro ends the play without a partner. What should a production do with him in the final dance?"
   ],
@@ -1313,7 +1313,7 @@
     },
     {
       "href": "/books/a-midsummer-nights-dream/",
-      "why": "Shakespeare's other comedy of people made to love on someone else's instruction, with the trickery done by magic instead of gossip."
+      "why": "Shakespeare’s other comedy of people made to love on someone else’s instruction, with the trickery done by magic instead of gossip."
     }
   ],
   "videos": [

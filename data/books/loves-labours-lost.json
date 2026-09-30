@@ -15,16 +15,16 @@
   "lengthNote": "About 2,800 lines. Act V Scene 2 takes up some 900 of them, the longest scene in Shakespeare, and Berowne speaks more than anyone else in the play",
   "openingLine": "Let fame, that all hunt after in their lives,",
   "summary": "Four men swear off women, food and sleep for three years, and break the oath within a day of four women arriving on state business. What follows is made almost entirely of language: sonnets read aloud in a park while three men hide in the bushes, two letters delivered to the wrong hands, a schoolmaster’s Latin, a Spaniard’s prose, a masque of counterfeit Russians. The women win every exchange, and when a messenger brings news of a death in the last minutes they set the men a year of waiting instead of marrying them. It is the only Shakespeare comedy that ends with nobody married.",
-  "referenceStyle": "act.scene.line, Globe line numbering",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
     "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
-    "note": "This is the text the quotations were checked against, and act, scene and line references follow the traditional Globe numbering, which modern editions vary from by a line or two."
+    "note": "Line numbers follow the traditional Globe numbering, from which modern editions vary by a line or two."
   },
   "atAGlance": [
     {
       "label": "Written",
-      "value": "c. 1595-96",
+      "value": "c. 1595–96",
       "note": "The verse and the rhyming put it beside A Midsummer Night’s Dream and Romeo and Juliet; no record fixes a first performance."
     },
     {
@@ -722,7 +722,7 @@
       "characters": [
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.1-2",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.1–2",
       "cloze": [
         "fame",
         "tombs"
@@ -746,7 +746,7 @@
       "characters": [
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.12-13",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.12–13",
       "cloze": [
         "wonder",
         "academe"
@@ -771,7 +771,7 @@
         "berowne",
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.86-87",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.86–87",
       "cloze": [
         "plodders",
         "books"
@@ -795,7 +795,7 @@
       "characters": [
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.149-150",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.149–150",
       "cloze": [
         "Necessity",
         "forsworn"
@@ -820,7 +820,7 @@
         "berowne",
         "costard"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.274-275",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.274–275",
       "cloze": [
         "oaths",
         "scorn"
@@ -846,7 +846,7 @@
         "armado",
         "jaquenetta"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.2.141-142",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.2.141–142",
       "cloze": [
         "extemporal",
         "sonnet"
@@ -872,7 +872,7 @@
         "princess-of-france",
         "boyet"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 2.1.15-16",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 2.1.15–16",
       "cloze": [
         "Beauty",
         "chapmen"
@@ -897,7 +897,7 @@
         "princess-of-france",
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 2.1.106-107",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 2.1.106–107",
       "cloze": [
         "deadly",
         "oath"
@@ -949,7 +949,7 @@
         "king-of-navarre",
         "princess-of-france"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 2.1.241-242",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 2.1.241–242",
       "cloze": [
         "behaviours",
         "desire"
@@ -976,7 +976,7 @@
         "armado",
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 3.1.114-115",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 3.1.114–115",
       "cloze": [
         "Latin",
         "farthings"
@@ -1001,7 +1001,7 @@
       "characters": [
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 3.1.152-153",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 3.1.152–153",
       "cloze": [
         "purblind",
         "Cupid"
@@ -1025,7 +1025,7 @@
       "characters": [
         "princess-of-france"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 4.1.32-34",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 4.1.32–34",
       "cloze": [
         "Glory",
         "fame"
@@ -1077,7 +1077,7 @@
       "characters": [
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 4.3.332-335",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 4.3.332–335",
       "cloze": [
         "Promethean",
         "academes"
@@ -1102,7 +1102,7 @@
         "berowne",
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 4.3.343-344",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 4.3.343–344",
       "cloze": [
         "oaths",
         "ourselves"
@@ -1130,7 +1130,7 @@
         "holofernes",
         "armado"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.1.30-31",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.1.30–31",
       "cloze": [
         "feast",
         "scraps"
@@ -1181,7 +1181,7 @@
         "berowne",
         "rosaline"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.435-436",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.435–436",
       "cloze": [
         "russet",
         "kersey"
@@ -1205,7 +1205,7 @@
       "characters": [
         "princess-of-france"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.718-719",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.718–719",
       "cloze": [
         "heavy",
         "father"
@@ -1231,7 +1231,7 @@
         "princess-of-france",
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.790-791",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.790–791",
       "cloze": [
         "bargain",
         "short"
@@ -1257,7 +1257,7 @@
         "rosaline",
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.859-861",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.859–861",
       "cloze": [
         "jest",
         "ear"
@@ -1282,7 +1282,7 @@
         "berowne",
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.872-873",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.872–873",
       "cloze": [
         "wooing",
         "Jill"
@@ -1307,7 +1307,7 @@
         "armado",
         "holofernes"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.908-909",
+      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.908–909",
       "cloze": [
         "icicles",
         "shepherd"

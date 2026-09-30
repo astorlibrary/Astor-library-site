@@ -15,13 +15,13 @@
   "lengthNote": "Around 2,000 lines — one of the shortest plays in the Folio",
   "openingLine": "Boatswain!",
   "summary": "A magician who was once Duke of Milan raises a storm to bring his enemies ashore on the island where he has lived in exile for twelve years. He has the whole afternoon planned before the play begins, and the interest lies in watching a man with absolute power discover what he actually wants to do with it. Almost alone among Shakespeare’s plays it stays in a single place over a few hours, so the action and the performance take roughly the same time.",
-  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
     "label": "Globe/Moby text of The Tempest",
-    "note": "Line numbers follow the traditional Globe numbering; modern editions differ by a line or two. Ariel's songs are printed inside another speaker's text in some settings, and are attributed here to Ariel."
+    "note": "Line numbers follow the traditional Globe numbering; modern editions differ by a line or two. Some editions print Ariel’s songs inside another speaker’s part; here they are given to Ariel."
   },
   "atAGlance": [
-    { "label": "Written", "value": "c. 1610-11", "note": "After reports of the 1609 Sea Venture wreck reached London, and before the recorded court performance of November 1611." },
+    { "label": "Written", "value": "c. 1610–11", "note": "After reports of the 1609 Sea Venture wreck reached London, and before the recorded court performance of November 1611." },
     { "label": "First printed", "value": "1623", "note": "No quarto exists. The First Folio prints it first in the volume, at the head of the comedies." },
     { "label": "Sources", "value": "No single narrative source", "note": "Shipwreck pamphlets, Florio’s Montaigne, Ovid and the court masque, combined, with no single source followed." },
     { "label": "Shape", "value": "Five acts, nine scenes", "note": "Act I Scene 2 alone runs to about a third of the play." }
@@ -34,7 +34,7 @@
       "summary": "The shipwreck is staged first and explained second. Prospero then tells Miranda the history she has never been told, wakes and dispatches Ariel, insults Caliban, and steers Ferdinand into meeting his daughter — four interviews in one scene, each conducted by a man who already knows how it ends.",
       "scenes": [
         { "ref": "1.1", "title": "The ship", "summary": "Courtiers get in the way of the crew; the Boatswain tells them rank means nothing to the weather." },
-        { "ref": "1.2", "title": "The island", "summary": "Prospero recounts the usurpation to Miranda, sets Ariel back to work, curses Caliban and arranges Ferdinand's arrival." }
+        { "ref": "1.2", "title": "The island", "summary": "Prospero recounts the usurpation to Miranda, sets Ariel back to work, curses Caliban and arranges Ferdinand’s arrival." }
       ]
     },
     {
@@ -43,15 +43,15 @@
       "title": "Antonio’s plot, and Caliban’s new master",
       "summary": "On one part of the island Gonzalo imagines a commonwealth with no trade, law or labour and is mocked for it; within fifty lines Antonio has talked Sebastian into murdering his brother. On another, Caliban meets a butler with a bottle and decides that a new master is the same thing as freedom.",
       "scenes": [
-        { "ref": "2.1", "title": "The courtiers", "summary": "Gonzalo's utopia is laughed down; Antonio persuades Sebastian to kill the sleeping Alonso, and Ariel wakes them." },
-        { "ref": "2.2", "title": "The bottle", "summary": "Trinculo shelters under Caliban's cloak, Stephano arrives with wine, and Caliban swears allegiance to a drunkard." }
+        { "ref": "2.1", "title": "The courtiers", "summary": "Gonzalo’s utopia is laughed down; Antonio persuades Sebastian to kill the sleeping Alonso, and Ariel wakes them." },
+        { "ref": "2.2", "title": "The bottle", "summary": "Trinculo shelters under Caliban’s cloak, Stephano arrives with wine, and Caliban swears allegiance to a drunkard." }
       ]
     },
     {
       "id": "act-3",
       "label": "Act III",
       "title": "A betrothal, a plot and a banquet that vanishes",
-      "summary": "Miranda proposes marriage to Ferdinand while her father watches unseen. Caliban lays out a workable murder — take the books first — and is repeatedly interrupted by Ariel's mimicry. The act ends with the courtiers accused of their old crime by a spirit dressed as a harpy.",
+      "summary": "Miranda proposes marriage to Ferdinand while her father watches unseen. Caliban lays out a workable murder — take the books first — and is repeatedly interrupted by Ariel’s mimicry. The act ends with the courtiers accused of their old crime by a spirit dressed as a harpy.",
       "scenes": [
         { "ref": "3.1", "title": "The log-pile", "summary": "Ferdinand carries wood; Miranda offers herself as wife, and Prospero approves from a distance." },
         { "ref": "3.2", "title": "The conspiracy", "summary": "Caliban explains how to kill Prospero; Ariel sows confusion by throwing his voice." },
@@ -81,7 +81,7 @@
     {
       "id": "prospero",
       "name": "Prospero",
-      "role": "The exiled Duke of Milan, and the island's magician",
+      "role": "The exiled Duke of Milan, and the island’s magician",
       "summary": "He lost a dukedom by preferring his library to government and has spent twelve years acquiring a power no government could match. Almost every event in the play is something he has arranged, which makes the one decision he has not rehearsed — to forgive, when he could punish — the only genuine action in it.",
       "clue": "A scholar who lost a dukedom to his own reading, and who runs an island the way a director runs a rehearsal room, down to the storm.",
       "firstAppearance": "1.2",
@@ -96,7 +96,7 @@
     {
       "id": "miranda",
       "name": "Miranda",
-      "role": "Prospero's daughter, aged about fifteen",
+      "role": "Prospero’s daughter, aged about fifteen",
       "summary": "She has met three people in her life and remembers none of her own history until her father decides she should. Her instincts are consistently better than his: she pities the shipwrecked before she knows who they are, and she proposes marriage herself before anyone can arrange it for her.",
       "clue": "She has seen three human faces in her life, weeps for strangers drowning, and asks a log-carrier to marry her before he can ask her.",
       "firstAppearance": "1.2",
@@ -110,9 +110,9 @@
     {
       "id": "ariel",
       "name": "Ariel",
-      "role": "A spirit of the air, bound to Prospero's service",
-      "summary": "Everything the audience calls Prospero's magic is in fact Ariel's labour: the storm, the songs, the harpy, the masque, the invisible mischief. The relationship runs on a promise of freedom that is repeatedly deferred, and the play's most surprising moment is Ariel telling a human what pity would look like.",
-      "clue": "Invisible, tireless and unpaid: the one who actually raises the storm, sings the drowned father's song and asks, again, when the promise will be kept.",
+      "role": "A spirit of the air, bound to Prospero’s service",
+      "summary": "Everything the audience calls Prospero’s magic is in fact Ariel’s labour: the storm, the songs, the harpy, the masque, the invisible mischief. The relationship runs on a promise of freedom that is repeatedly deferred, and the play’s most surprising moment is Ariel telling a human what pity would look like.",
+      "clue": "Invisible, tireless and unpaid: the one who actually raises the storm, sings the drowned father’s song and asks, again, when the promise will be kept.",
       "firstAppearance": "1.2",
       "traits": ["exact", "musical", "wanting out"],
       "relationships": [
@@ -123,7 +123,7 @@
     {
       "id": "caliban",
       "name": "Caliban",
-      "role": "Son of the witch Sycorax; the island's earlier inhabitant",
+      "role": "Son of the witch Sycorax; the island’s earlier inhabitant",
       "summary": "He welcomed Prospero, showed him the fresh water and the fertile ground, and was enslaved for it after attempting to rape Miranda. The play gives him the case against his master and the best verse about the island, and then does not let either cancel the other out.",
       "clue": "He showed the newcomer where the fresh springs were and has been carrying his firewood ever since; he speaks the loveliest lines about the island he says is his.",
       "firstAppearance": "1.2",
@@ -136,7 +136,7 @@
     {
       "id": "ferdinand",
       "name": "Ferdinand",
-      "role": "Prince of Naples, Alonso's son",
+      "role": "Prince of Naples, Alonso’s son",
       "summary": "He is separated from the ship, told his father has drowned, and set to carrying logs — a trial that has no purpose except to make Miranda seem hard-won. He accepts the labour without complaint, which is the only test Prospero can devise and the only one he passes.",
       "firstAppearance": "1.2",
       "traits": ["courteous", "grieving", "put to work"],
@@ -150,7 +150,7 @@
       "id": "alonso",
       "name": "Alonso",
       "role": "King of Naples",
-      "summary": "He put Antonio into Prospero's dukedom and spends the play believing he has lost his son as a consequence. Grief, not argument, is what breaks him: by Act V he is the only one of the three guilty men who says anything resembling an apology.",
+      "summary": "He put Antonio into Prospero’s dukedom and spends the play believing he has lost his son as a consequence. Grief, not argument, is what breaks him: by Act V he is the only one of the three guilty men who says anything resembling an apology.",
       "firstAppearance": "1.1",
       "traits": ["bereaved", "penitent"],
       "relationships": [
@@ -162,9 +162,9 @@
     {
       "id": "antonio",
       "name": "Antonio",
-      "role": "Prospero's brother, the usurping Duke of Milan",
-      "summary": "He took a dukedom once and, within an hour of washing ashore, is arranging a second murder for someone else's benefit. He is forgiven in the last scene and does not reply, a silence that most productions have to make a decision about.",
-      "clue": "He took his brother's title while the man was reading, and washes ashore only to start talking another younger brother into the same crime.",
+      "role": "Prospero’s brother, the usurping Duke of Milan",
+      "summary": "He took a dukedom once and, within an hour of washing ashore, is arranging a second murder for someone else’s benefit. He is forgiven in the last scene and does not reply, a silence that most productions have to make a decision about.",
+      "clue": "He took his brother’s title while the man was reading, and washes ashore only to start talking another younger brother into the same crime.",
       "firstAppearance": "1.1",
       "traits": ["fluent", "unrepentant", "silent at the end"],
       "relationships": [
@@ -175,8 +175,8 @@
     {
       "id": "sebastian",
       "name": "Sebastian",
-      "role": "Alonso's brother",
-      "summary": "A mocker of other men's speeches who turns out to need only one conversation to be talked into killing his sleeping brother. He is the proof that Antonio’s crime was a piece of ordinary political reasoning, and no single aberration.",
+      "role": "Alonso’s brother",
+      "summary": "A mocker of other men’s speeches who turns out to need only one conversation to be talked into killing his sleeping brother. He is the proof that Antonio’s crime was a piece of ordinary political reasoning, and no single aberration.",
       "firstAppearance": "1.1",
       "traits": ["sardonic", "easily led"],
       "relationships": [
@@ -199,8 +199,8 @@
     {
       "id": "stephano",
       "name": "Stephano",
-      "role": "Alonso's butler, washed ashore with a butt of wine",
-      "summary": "Given a bottle and a worshipper, he declares himself king of the island within a scene. His plot against Prospero is the same plot as Antonio's, played by a drunk, and the parallel is the play's sharpest joke about how little ambition requires.",
+      "role": "Alonso’s butler, washed ashore with a butt of wine",
+      "summary": "Given a bottle and a worshipper, he declares himself king of the island within a scene. His plot against Prospero is the same plot as Antonio’s, played by a drunk, and the parallel is the play’s sharpest joke about how little ambition requires.",
       "firstAppearance": "2.2",
       "traits": ["drunken", "instantly regal"],
       "relationships": [
@@ -219,32 +219,32 @@
     {
       "id": "possession",
       "name": "Ownership of the island",
-      "summary": "Caliban's claim is stated plainly in the first act and never refuted, only overruled. Shakespeare gives the dispossessed party the historical facts and the finest description of the place, and gives the occupier the power, which is why the play has been unignorable in the century of decolonisation.",
-      "development": "'This island's mine' in 1.2 sets the terms; Gonzalo's commonwealth in 2.1 imagines an island belonging to nobody; the play ends without saying who is left on it."
+      "summary": "Caliban’s claim is stated plainly in the first act and never refuted, only overruled. Shakespeare gives the dispossessed party the historical facts and the finest description of the place, and gives the occupier the power, which is why the play has been unignorable in the century of decolonisation.",
+      "development": "‘This island’s mine’ in 1.2 sets the terms; Gonzalo’s commonwealth in 2.1 imagines an island belonging to nobody; the play ends without saying who is left on it."
     },
     {
       "id": "art",
       "name": "Magic and theatre",
-      "summary": "Prospero's art is indistinguishable from stagecraft: costumes, music, entrances, illusions, an interrupted masque. When he describes his own show dissolving he uses the words 'the great globe itself', spoken in a theatre of that name, and the metaphor stops being a metaphor.",
+      "summary": "Prospero’s art is indistinguishable from stagecraft: costumes, music, entrances, illusions, an interrupted masque. When he describes his own show dissolving he uses the words ‘the great globe itself’, spoken in a theatre of that name, and the metaphor stops being a metaphor.",
       "development": "The storm is staged in 1.1, exposed as a production in 1.2, perfected in the masque of 4.1, renounced in 5.1, and handed to the audience in the epilogue."
     },
     {
       "id": "freedom",
       "name": "Freedom",
-      "summary": "Three characters want to be free and each means something different by it: Ariel wants release from service, Caliban wants his island back, and Stephano's crew want a bottle and a crown. The play is careful to make the drunkards' freedom song ridiculous without making Caliban's demand ridiculous.",
+      "summary": "Three characters want to be free and each means something different by it: Ariel wants release from service, Caliban wants his island back, and Stephano’s crew want a bottle and a crown. The play is careful to make the drunkards’ freedom song ridiculous without making Caliban’s demand ridiculous.",
       "development": "Ariel asks in 1.2 and is refused; Caliban sings of a new master in 2.2; Ariel is released in the last twenty lines, and Prospero then asks to be freed himself."
     },
     {
       "id": "forgiveness",
       "name": "Forgiveness",
       "summary": "Prospero has the power to do anything he likes to the men who ruined him, and the decisive scene is the one in which he decides not to. What makes it strange is the timing: he chooses mercy after a spirit has described their suffering to him, and before any of them has asked for it.",
-      "development": "Twelve years of grievance are recited in 1.2; the harpy indicts the guilty in 3.3; 5.1 turns on Ariel's remark that he would feel pity if he were human."
+      "development": "Twelve years of grievance are recited in 1.2; the harpy indicts the guilty in 3.3; 5.1 turns on Ariel’s remark that he would feel pity if he were human."
     },
     {
       "id": "nature-nurture",
       "name": "Nature and nurture",
       "summary": "Prospero insists that Caliban is a devil on whom nurture will never stick, having spent years teaching him. Miranda, raised on the same island by the same man with the same books, is his counter-example, and the play leaves the argument standing unresolved between them.",
-      "development": "Caliban is taught language in 1.2 and uses it to curse; Prospero's verdict comes in 4.1; the masque of Ceres and Juno makes fertility itself a thing to be blessed and supervised."
+      "development": "Caliban is taught language in 1.2 and uses it to curse; Prospero’s verdict comes in 4.1; the masque of Ceres and Juno makes fertility itself a thing to be blessed and supervised."
     }
   ],
   "techniques": [
@@ -264,18 +264,18 @@
       "id": "metatheatre",
       "name": "Metatheatre",
       "definition": "A play drawing attention to the fact that it is a play.",
-      "inThisBook": "Prospero's actors are spirits, his revels end, the great globe dissolves, and the last speech asks the audience to release him with their hands. The illusion is dismantled in front of the people it was made for."
+      "inThisBook": "Prospero’s actors are spirits, his revels end, the great globe dissolves, and the last speech asks the audience to release him with their hands. The illusion is dismantled in front of the people it was made for."
     },
     {
       "id": "song",
       "name": "Song",
       "definition": "Sung lyric used to carry information a speech cannot.",
-      "inThisBook": "Ariel's songs lead Ferdinand ashore, tell him his father is dead in language too beautiful to be grief, and wake Gonzalo in time to prevent a murder. The music does the work the plot would otherwise need scenes for."
+      "inThisBook": "Ariel’s songs lead Ferdinand ashore, tell him his father is dead in language too beautiful to be grief, and wake Gonzalo in time to prevent a murder. The music does the work the plot would otherwise need scenes for."
     },
     {
       "id": "parody-subplot",
       "name": "Parody subplot",
-      "definition": "A low plot that repeats the main plot's action in a debased form.",
+      "definition": "A low plot that repeats the main plot’s action in a debased form.",
       "inThisBook": "Stephano, Trinculo and Caliban plan exactly the crime Antonio and Sebastian plan, one scene apart, with a bottle in place of a sword — and are treated as a farce while the courtiers are treated as a threat."
     },
     {
@@ -293,11 +293,11 @@
       "reference": "1.1.17",
       "stage": "act-1",
       "context": "In the storm, ordering the king and his councillors below deck.",
-      "analysis": "The play's first political statement is made by a working sailor to a monarch, and it is about the limits of titles. Within a hundred lines the audience learns that the storm was manufactured, so the one moment when rank genuinely counts for nothing turns out to have been arranged by a duke.",
+      "analysis": "The play’s first political statement is made by a working sailor to a monarch, and it is about the limits of titles. Within a hundred lines the audience learns that the storm was manufactured, so the one moment when rank genuinely counts for nothing turns out to have been arranged by a duke.",
       "themes": ["power"],
       "techniques": [],
       "characters": [],
-      "source": "Globe/Moby text, 1.1.17-18",
+      "source": "Globe/Moby text, 1.1.17–18",
       "cloze": ["roarers", "king"]
     },
     {
@@ -311,7 +311,7 @@
       "themes": ["art", "power"],
       "techniques": ["exposition"],
       "characters": ["miranda", "prospero"],
-      "source": "Globe/Moby text, 1.2.1-2",
+      "source": "Globe/Moby text, 1.2.1–2",
       "cloze": ["art", "allay"]
     },
     {
@@ -321,11 +321,11 @@
       "reference": "1.2.58",
       "stage": "act-1",
       "context": "Testing how much Miranda remembers of her life before the island.",
-      "analysis": "'Backward' is used as a noun, which is not ordinary English then or now; the phrase makes the past a place you could fall into. He is checking the extent of her ignorance before deciding how much of it to repair, and the grandeur of the image conceals a piece of information management.",
+      "analysis": "‘Backward’ is used as a noun, which is not ordinary English then or now; the phrase makes the past a place you could fall into. He is checking the extent of her ignorance before deciding how much of it to repair, and the grandeur of the image conceals a piece of information management.",
       "themes": ["power"],
       "techniques": ["exposition"],
       "characters": ["prospero", "miranda"],
-      "source": "Globe/Moby text, 1.2.58-59",
+      "source": "Globe/Moby text, 1.2.58–59",
       "cloze": ["backward", "abysm"]
     },
     {
@@ -339,7 +339,7 @@
       "themes": ["art"],
       "techniques": [],
       "characters": ["ariel", "ferdinand"],
-      "source": "Globe/Moby text, 1.2.247-248",
+      "source": "Globe/Moby text, 1.2.247–248",
       "cloze": ["Hell", "devils"]
     },
     {
@@ -349,11 +349,11 @@
       "reference": "1.2.282",
       "stage": "act-1",
       "context": "After performing the storm, before being sent out again.",
-      "analysis": "The complaint is contractual, not emotional: work has been done, a promise was made, the promise is outstanding. Prospero's answer is to recite the rescue from the cloven pine, which is the standard reply of an employer who would rather discuss gratitude than terms.",
+      "analysis": "The complaint is contractual, not emotional: work has been done, a promise was made, the promise is outstanding. Prospero’s answer is to recite the rescue from the cloven pine, which is the standard reply of an employer who would rather discuss gratitude than terms.",
       "themes": ["freedom", "power"],
       "techniques": [],
       "characters": ["ariel", "prospero"],
-      "source": "Globe/Moby text, 1.2.282-284",
+      "source": "Globe/Moby text, 1.2.282–284",
       "cloze": ["toil", "promised"]
     },
     {
@@ -362,12 +362,12 @@
       "speaker": "Caliban",
       "reference": "1.2.390",
       "stage": "act-1",
-      "context": "Answering Prospero's summons, before the quarrel about his attempt on Miranda.",
+      "context": "Answering Prospero’s summons, before the quarrel about his attempt on Miranda.",
       "analysis": "The claim is made in the language of inheritance law — by his mother, therefore his — which is exactly how Prospero would argue for Milan. Nobody on stage disputes the facts; they change the subject to his conduct, and the play never returns to settle the question of title.",
       "themes": ["possession", "power"],
       "techniques": [],
       "characters": ["caliban", "prospero"],
-      "source": "Globe/Moby text, 1.2.390-391",
+      "source": "Globe/Moby text, 1.2.390–391",
       "cloze": ["island", "mother"]
     },
     {
@@ -381,7 +381,7 @@
       "themes": ["possession", "nature-nurture"],
       "techniques": [],
       "characters": ["caliban", "prospero", "miranda"],
-      "source": "Globe/Moby text, 1.2.425-427",
+      "source": "Globe/Moby text, 1.2.425–427",
       "cloze": ["language", "curse"]
     },
     {
@@ -395,7 +395,7 @@
       "themes": ["art", "forgiveness"],
       "techniques": ["song"],
       "characters": ["ariel", "ferdinand", "alonso"],
-      "source": "Globe/Moby text, 1.2.461-466; sung by Ariel within Ferdinand's scene",
+      "source": "Globe/Moby text, 1.2.461–466; sung by Ariel within Ferdinand’s scene",
       "cloze": ["fathom", "sea-change"]
     },
     {
@@ -405,11 +405,11 @@
       "reference": "2.1.151",
       "stage": "act-2",
       "context": "Imagining what he would do if he were king of the island.",
-      "analysis": "The speech follows Florio's translation of Montaigne closely enough that the borrowing is visible, and Shakespeare stages it as a joke: Antonio and Sebastian point out that a commonwealth with no sovereignty has just been proposed by a man who began by saying he would be king of it. The mockery does not dispose of the idea, and the contradiction is the play's own.",
+      "analysis": "The speech follows Florio’s translation of Montaigne closely enough that the borrowing is visible, and Shakespeare stages it as a joke: Antonio and Sebastian point out that a commonwealth with no sovereignty has just been proposed by a man who began by saying he would be king of it. The mockery does not dispose of the idea, and the contradiction is the play’s own.",
       "themes": ["possession", "power"],
       "techniques": [],
       "characters": ["gonzalo", "antonio", "sebastian"],
-      "source": "Globe/Moby text, 2.1.151-153",
+      "source": "Globe/Moby text, 2.1.151–153",
       "cloze": ["commonwealth", "magistrate"]
     },
     {
@@ -419,11 +419,11 @@
       "reference": "2.1.277",
       "stage": "act-2",
       "context": "Persuading Sebastian to murder the sleeping Alonso.",
-      "analysis": "The line is now quoted as though it were wisdom about history; in the play it is a murderer's argument that the past is merely the warm-up and the killing is the real performance. 'Prologue' and 'act' are theatre words, put into the mouth of the man whose plot competes with Prospero's for control of the island's plot.",
+      "analysis": "The line is now quoted as though it were wisdom about history; in the play it is a murderer’s argument that the past is merely the warm-up and the killing is the real performance. ‘Prologue’ and ‘act’ are theatre words, put into the mouth of the man whose plot competes with Prospero’s for control of the island’s plot.",
       "themes": ["power", "art"],
       "techniques": ["metatheatre"],
       "characters": ["antonio", "sebastian"],
-      "source": "Globe/Moby text, 2.1.277-279",
+      "source": "Globe/Moby text, 2.1.277–279",
       "cloze": ["prologue", "discharge"]
     },
     {
@@ -433,11 +433,11 @@
       "reference": "3.2.134",
       "stage": "act-3",
       "context": "Reassuring Stephano and Trinculo, who have heard Ariel playing on an invisible pipe.",
-      "analysis": "The drunkards are frightened and the so-called monster is the one who knows the island is safe. Shakespeare gives the play's most delicate verse to the character everyone on stage calls a beast, three minutes after he has explained how to drive a nail into a man's skull.",
+      "analysis": "The drunkards are frightened and the so-called monster is the one who knows the island is safe. Shakespeare gives the play’s most delicate verse to the character everyone on stage calls a beast, three minutes after he has explained how to drive a nail into a man’s skull.",
       "themes": ["possession", "art"],
       "techniques": [],
       "characters": ["caliban", "stephano"],
-      "source": "Globe/Moby text, 3.2.134-135",
+      "source": "Globe/Moby text, 3.2.134–135",
       "cloze": ["afeard", "noises"]
     },
     {
@@ -451,7 +451,7 @@
       "themes": ["power", "art"],
       "techniques": [],
       "characters": ["caliban", "prospero", "stephano"],
-      "source": "Globe/Moby text, 3.2.89-92",
+      "source": "Globe/Moby text, 3.2.89–92",
       "cloze": ["books", "spirit"]
     },
     {
@@ -465,7 +465,7 @@
       "themes": ["freedom", "power"],
       "techniques": [],
       "characters": ["miranda", "ferdinand", "prospero"],
-      "source": "Globe/Moby text, 3.1.98-101",
+      "source": "Globe/Moby text, 3.1.98–101",
       "cloze": ["wife", "servant"]
     },
     {
@@ -474,12 +474,12 @@
       "speaker": "Prospero",
       "reference": "4.1.163",
       "stage": "act-4",
-      "context": "Breaking off the wedding masque on remembering Caliban's conspiracy.",
-      "analysis": "He is apologising to his son-in-law for a cancelled entertainment, and the apology grows into the play's largest statement about existence within eight lines. Note that he says 'as I foretold you': the consolation is that the disappearance was always in the design, which is true of a masque and is what he needs to believe about a dukedom.",
+      "context": "Breaking off the wedding masque on remembering Caliban’s conspiracy.",
+      "analysis": "He is apologising to his son-in-law for a cancelled entertainment, and the apology grows into the play’s largest statement about existence within eight lines. Note that he says ‘as I foretold you’: the consolation is that the disappearance was always in the design, which is true of a masque and is what he needs to believe about a dukedom.",
       "themes": ["art"],
       "techniques": ["masque", "metatheatre"],
       "characters": ["prospero", "ferdinand"],
-      "source": "Globe/Moby text, 4.1.163-165",
+      "source": "Globe/Moby text, 4.1.163–165",
       "cloze": ["revels", "actors"]
     },
     {
@@ -493,7 +493,7 @@
       "themes": ["art"],
       "techniques": ["metatheatre"],
       "characters": ["prospero"],
-      "source": "Globe/Moby text, 4.1.171-173",
+      "source": "Globe/Moby text, 4.1.171–173",
       "cloze": ["dreams", "rounded"]
     },
     {
@@ -503,11 +503,11 @@
       "reference": "4.1.208",
       "stage": "act-4",
       "context": "Alone, immediately after breaking off the masque.",
-      "analysis": "The verdict is delivered by a man who has just spent years teaching the creature he says cannot be taught, and the repetitions — 'all, all lost, quite lost' — are those of someone arguing with himself. It is also the play's clearest statement of the position Miranda's existence contradicts.",
+      "analysis": "The verdict is delivered by a man who has just spent years teaching the creature he says cannot be taught, and the repetitions — ‘all, all lost, quite lost’ — are those of someone arguing with himself. It is also the play’s clearest statement of the position Miranda’s existence contradicts.",
       "themes": ["nature-nurture", "possession"],
       "techniques": [],
       "characters": ["prospero", "caliban"],
-      "source": "Globe/Moby text, 4.1.208-210",
+      "source": "Globe/Moby text, 4.1.208–210",
       "cloze": ["devil", "Nurture"]
     },
     {
@@ -521,7 +521,7 @@
       "themes": ["forgiveness"],
       "techniques": [],
       "characters": ["prospero", "ariel"],
-      "source": "Globe/Moby text, 5.1.29-32",
+      "source": "Globe/Moby text, 5.1.29–32",
       "cloze": ["virtue", "vengeance"]
     },
     {
@@ -535,7 +535,7 @@
       "themes": ["art", "power", "forgiveness"],
       "techniques": ["metatheatre"],
       "characters": ["prospero"],
-      "source": "Globe/Moby text, 5.1.55-62",
+      "source": "Globe/Moby text, 5.1.55–62",
       "cloze": ["abjure", "staff"]
     },
     {
@@ -545,11 +545,11 @@
       "reference": "5.1.205",
       "stage": "act-5",
       "context": "On seeing the assembled courtiers for the first time.",
-      "analysis": "The people she is admiring include the two men who set her adrift to die and a third who tried to murder his brother two days ago. Prospero's reply — three words, 'Tis new to thee — is the most economical piece of irony in Shakespeare, and it is the last thing he says to his daughter in the play.",
+      "analysis": "The people she is admiring include the two men who set her adrift to die and a third who tried to murder his brother two days ago. Prospero’s reply — three words, ’Tis new to thee — is the most economical piece of irony in Shakespeare, and it is the last thing he says to his daughter in the play.",
       "themes": ["forgiveness", "power"],
       "techniques": [],
       "characters": ["miranda", "prospero", "antonio", "alonso"],
-      "source": "Globe/Moby text, 5.1.205-207",
+      "source": "Globe/Moby text, 5.1.205–207",
       "cloze": ["brave", "people"]
     },
     {
@@ -559,11 +559,11 @@
       "reference": "5.1.312",
       "stage": "act-5",
       "context": "Presenting the three conspirators to Alonso.",
-      "analysis": "The sentence is built to balance: two servants belong to the king, one belongs to me. 'Acknowledge' is doing a great deal of work — it can mean simply claiming a possession, or admitting a kinship, and the entire modern performance history of the play turns on which of those an actor decides to play.",
+      "analysis": "The sentence is built to balance: two servants belong to the king, one belongs to me. ‘Acknowledge’ is doing a great deal of work — it can mean simply claiming a possession, or admitting a kinship, and the entire modern performance history of the play turns on which of those an actor decides to play.",
       "themes": ["possession", "nature-nurture", "forgiveness"],
       "techniques": [],
       "characters": ["prospero", "caliban", "alonso"],
-      "source": "Globe/Moby text, 5.1.312-314",
+      "source": "Globe/Moby text, 5.1.312–314",
       "cloze": ["darkness", "Acknowledge"]
     },
     {
@@ -577,40 +577,40 @@
       "themes": ["freedom", "forgiveness", "art"],
       "techniques": ["metatheatre"],
       "characters": ["prospero"],
-      "source": "Globe/Moby text, 5.1.382-383",
+      "source": "Globe/Moby text, 5.1.382–383",
       "cloze": ["indulgence", "free"]
     }
   ],
   "timeline": [
-    { "year": 1603, "label": "Florio's translation of Montaigne published", "detail": "The English 'Of the Cannibals' behind Gonzalo's commonwealth speech becomes available.", "kind": "context" },
+    { "year": 1603, "label": "Florio’s translation of Montaigne published", "detail": "The English ‘Of the Cannibals’ behind Gonzalo’s commonwealth speech becomes available.", "kind": "context" },
     { "year": 1609, "label": "The Sea Venture wrecked on Bermuda", "detail": "Bound for Virginia, the ship broke up on the reefs; the survivors reached Jamestown the following year.", "kind": "context" },
-    { "year": 1610, "label": "Jourdain's A Discovery of the Barmudas printed", "detail": "One of the pamphlets through which the wreck became a London story of storm, survival and abundant islands.", "kind": "context" },
+    { "year": 1610, "label": "Jourdain’s A Discovery of the Barmudas printed", "detail": "One of the pamphlets through which the wreck became a London story of storm, survival and abundant islands.", "kind": "context" },
     { "year": 1611, "label": "Performed before James I at Whitehall on 1 November", "detail": "The Revels record is the earliest firm evidence that the play existed and was being acted.", "kind": "work" },
-    { "year": 1613, "label": "Played at court during the festivities for Princess Elizabeth's marriage", "detail": "One of a group of plays given by the King's Men that winter for the betrothal and wedding celebrations.", "kind": "reception" },
+    { "year": 1613, "label": "Played at court during the festivities for Princess Elizabeth’s marriage", "detail": "One of a group of plays given by the King’s Men that winter for the betrothal and wedding celebrations.", "kind": "reception" },
     { "year": 1623, "label": "First Folio", "detail": "The only early text, and the volume opens with it — unusually well printed, with full stage directions and a cast list.", "kind": "work" },
-    { "year": 1667, "label": "Dryden and Davenant's The Enchanted Island", "detail": "A Restoration rewriting that gave Miranda a sister and Caliban a mate, and held the stage for well over a century.", "kind": "reception" },
+    { "year": 1667, "label": "Dryden and Davenant’s The Enchanted Island", "detail": "A Restoration rewriting that gave Miranda a sister and Caliban a mate, and held the stage for well over a century.", "kind": "reception" },
     { "year": 1957, "label": "Peter Brook directs John Gielgud as Prospero", "detail": "At the Shakespeare Memorial Theatre; remembered for a Prospero of severity, not serenity.", "kind": "reception" },
-    { "year": 1970, "label": "Jonathan Miller's colonial production", "detail": "Casting made the island's politics explicit, and helped establish a reading British theatre has not since put down.", "kind": "reception" },
-    { "year": 1991, "label": "Peter Greenaway's Prospero's Books", "detail": "A film that puts the library, not the island, at the centre of the play.", "kind": "reception" },
-    { "year": 2010, "label": "Julie Taymor's film, with Helen Mirren as Prospera", "detail": "Changing the magician's sex reorganises the play's questions about parenthood, exile and authority.", "kind": "reception" }
+    { "year": 1970, "label": "Jonathan Miller’s colonial production", "detail": "Casting made the island’s politics explicit, and helped establish a reading British theatre has not since put down.", "kind": "reception" },
+    { "year": 1991, "label": "Peter Greenaway’s Prospero’s Books", "detail": "A film that puts the library, not the island, at the centre of the play.", "kind": "reception" },
+    { "year": 2010, "label": "Julie Taymor’s film, with Helen Mirren as Prospera", "detail": "Changing the magician’s sex reorganises the play’s questions about parenthood, exile and authority.", "kind": "reception" }
   ],
   "places": [
     { "name": "Milan", "lat": 45.4642, "lon": 9.19, "note": "The dukedom Prospero lost to his brother while he studied." },
-    { "name": "Naples", "lat": 40.8518, "lon": 14.2681, "note": "Alonso's kingdom, and the wedding party the shipwrecked court was returning from." },
+    { "name": "Naples", "lat": 40.8518, "lon": 14.2681, "note": "Alonso’s kingdom, and the wedding party the shipwrecked court was returning from." },
     { "name": "Tunis", "lat": 36.8065, "lon": 10.1815, "note": "Where Claribel was married, and the voyage home from which the storm interrupts." },
     { "name": "Algiers", "lat": 36.7538, "lon": 3.0588, "note": "Argier in the text: the city from which Sycorax was banished to the island." },
-    { "name": "Bermuda", "lat": 32.3078, "lon": -64.7505, "note": "The still-vex'd Bermoothes of Ariel's speech, and the site of the 1609 wreck behind the play's storm." },
+    { "name": "Bermuda", "lat": 32.3078, "lon": -64.7505, "note": "The still-vex’d Bermoothes of Ariel’s speech, and the site of the 1609 wreck behind the play’s storm." },
     { "name": "Whitehall Palace, London", "lat": 51.5045, "lon": -0.126, "note": "Where the first recorded performance was given before James I on 1 November 1611." }
   ],
   "criticalViews": [
     {
-      "position": "The play as Shakespeare's farewell",
-      "summary": "The oldest popular reading takes Prospero's renunciation of magic as the dramatist laying down his own art, and the epilogue as a retirement speech.",
+      "position": "The play as Shakespeare’s farewell",
+      "summary": "The oldest popular reading takes Prospero’s renunciation of magic as the dramatist laying down his own art, and the epilogue as a retirement speech.",
       "counter": "It sits badly with the facts of the career: Shakespeare went on to collaborate on at least two more plays, and the epilogue is a conventional appeal for applause of a kind other plays also make."
     },
     {
       "position": "The play as a colonial document",
-      "summary": "Read beside the Bermuda pamphlets and the Virginia venture, the island becomes a place with an inhabitant, a claim and an occupation, and Caliban's case is the one the drama cannot dispose of.",
+      "summary": "Read beside the Bermuda pamphlets and the Virginia venture, the island becomes a place with an inhabitant, a claim and an occupation, and Caliban’s case is the one the drama cannot dispose of.",
       "counter": "The Mediterranean geography is insistent — Milan, Naples, Tunis, Algiers — and a reading built entirely on the Atlantic has to work around it."
     },
     {
@@ -621,25 +621,25 @@
   ],
   "essayQuestions": [
     {
-      "question": "How far does The Tempest endorse Prospero's rule of the island?",
+      "question": "How far does The Tempest endorse Prospero’s rule of the island?",
       "focus": "Authority, service and the limits of art",
       "plan": [
         "Begin with the fact that the audience is shown the storm before it is told who made it, so the first experience of his power is as a catastrophe.",
-        "Set Ariel's petition in 1.2 beside Caliban's claim in the same scene: two servants, two grievances, two completely different answers from the same master.",
+        "Set Ariel’s petition in 1.2 beside Caliban’s claim in the same scene: two servants, two grievances, two completely different answers from the same master.",
         "Use the breaking of the masque in 4.1 to show that his control is dependent on his attention, and collapses the moment he remembers a threat.",
         "Weigh the decision in 5.1: mercy chosen freely, but only after a spirit has had to describe what pity is.",
         "Close on the epilogue, where a man who has ruled everything asks an audience for the power to leave."
       ]
     },
     {
-      "question": "'The most eloquent character in the play is its slave.' Discuss Caliban.",
+      "question": "‘The most eloquent character in the play is its slave.’ Discuss Caliban.",
       "focus": "Language, dispossession and sympathy",
       "plan": [
         "Establish what Caliban actually claims in 1.2 and note that nobody on stage denies the history, only changes the subject.",
-        "Examine the verse of 'the isle is full of noises' and ask why Shakespeare gives this speech to this character at this point in a conspiracy scene.",
+        "Examine the verse of ‘the isle is full of noises’ and ask why Shakespeare gives this speech to this character at this point in a conspiracy scene.",
         "Balance the sympathy against 1.2 and the attempt on Miranda, which the play states plainly and does not excuse.",
-        "Compare his understanding of Prospero's power — take the books first — with the courtiers' failure to understand anything.",
-        "Finish with 'this thing of darkness', and with the play's silence about what becomes of him."
+        "Compare his understanding of Prospero’s power — take the books first — with the courtiers’ failure to understand anything.",
+        "Finish with ‘this thing of darkness’, and with the play’s silence about what becomes of him."
       ]
     },
     {
@@ -648,8 +648,8 @@
       "plan": [
         "Describe what a Jacobean masque was for: blessing, order, flattery of the ruler who paid for it.",
         "Show how the Ceres and Juno masque fits that description exactly, down to the banishing of Venus and Cupid from the betrothal.",
-        "Identify the interruption as the only point where Prospero's plan is affected by something outside it.",
-        "Read the 'revels' speech as an attempt to convert a failure of stage management into a philosophy.",
+        "Identify the interruption as the only point where Prospero’s plan is affected by something outside it.",
+        "Read the ‘revels’ speech as an attempt to convert a failure of stage management into a philosophy.",
         "Consider the staging consequences: how a production makes the spirits vanish determines how seriously it takes the speech."
       ]
     },
@@ -658,9 +658,9 @@
       "focus": "Forgiveness, silence and what is left unresolved",
       "plan": [
         "List what is settled in 5.1: the dukedom restored, the marriage arranged, Ariel freed, the ship repaired.",
-        "Set against it what is not: Antonio says nothing, Sebastian jokes, Caliban's future is never mentioned.",
-        "Look closely at Miranda's 'brave new world' and Prospero's reply as a test of how much the audience is being asked to believe.",
-        "Use Gonzalo's summary at 5.1.235-241 — all of us found ourselves when no man was his own — and ask whether the play has earned it.",
+        "Set against it what is not: Antonio says nothing, Sebastian jokes, Caliban’s future is never mentioned.",
+        "Look closely at Miranda’s ‘brave new world’ and Prospero’s reply as a test of how much the audience is being asked to believe.",
+        "Use Gonzalo’s summary at 5.1.235–241 — all of us found ourselves when no man was his own — and ask whether the play has earned it.",
         "Decide what the epilogue changes: a character stepping out of the fiction to ask for pardon from people who have not been wronged."
       ]
     }
@@ -676,7 +676,7 @@
     { "href": "/books/the-winters-tale/", "why": "The other late play in which a ruler’s damage is repaired after years, though there the miracle is a statue, not a storm." },
     { "href": "/books/cymbeline/", "why": "Written at about the same time, and just as willing to let romance conventions do work that tragedy would not allow." },
     { "href": "/books/pericles-prince-of-tyre/", "why": "Shipwreck, a lost daughter and reunion at sea: the pattern The Tempest compresses into one afternoon." },
-    { "href": "/books/utopia/", "why": "More's island commonwealth stands behind the tradition Gonzalo is drawing on, and being mocked for." },
+    { "href": "/books/utopia/", "why": "More’s island commonwealth stands behind the tradition Gonzalo is drawing on, and being mocked for." },
     { "href": "/books/a-midsummer-nights-dream/", "why": "The earlier play of spirits, spells and interrupted entertainments, with the magic used for comedy, not government." }
   ],
   "videos": [

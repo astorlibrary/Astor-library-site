@@ -19,7 +19,7 @@
   "lengthNote": "The longest play in the canon; no surviving early text has ever been performed uncut as a matter of routine",
   "openingLine": "Who's there?",
   "summary": "A prince comes home to a court that has already buried his father and married his mother, and a ghost tells him the new king is the murderer. What follows is an investigation: Hamlet has to decide what would count as proof of something no witness saw, and every answer he reaches comes late or costs a life he did not mean to spend.",
-  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
     "label": "Globe/Moby text of Hamlet",
     "note": "Line numbers follow the traditional Globe numbering of a conflated text. The three early witnesses — Q1, Q2 and the Folio — differ, and modern editions number accordingly."
@@ -27,7 +27,7 @@
   "atAGlance": [
     {
       "label": "Written",
-      "value": "c. 1599-1601",
+      "value": "c. 1599–1601",
       "note": "Close in date to Julius Caesar, which the play itself remembers when Polonius says he once played Caesar."
     },
     {
@@ -56,7 +56,7 @@
         {
           "ref": "1.1",
           "title": "The watch",
-          "summary": "Sentries and Horatio see the Ghost and connect it to Denmark's rearmament against Fortinbras."
+          "summary": "Sentries and Horatio see the Ghost and connect it to Denmark’s rearmament against Fortinbras."
         },
         {
           "ref": "1.2",
@@ -71,7 +71,7 @@
         {
           "ref": "1.4",
           "title": "The platform",
-          "summary": "Hamlet meets the Ghost in the cold and follows it against his friends' advice."
+          "summary": "Hamlet meets the Ghost in the cold and follows it against his friends’ advice."
         },
         {
           "ref": "1.5",
@@ -89,7 +89,7 @@
         {
           "ref": "2.1",
           "title": "Reynaldo and the report",
-          "summary": "Polonius teaches an informer to invent small vices; Ophelia describes Hamlet's silent visit."
+          "summary": "Polonius teaches an informer to invent small vices; Ophelia describes Hamlet’s silent visit."
         },
         {
           "ref": "2.2",
@@ -102,12 +102,12 @@
       "id": "act-3",
       "label": "Act III",
       "title": "The Mousetrap, and the killing of Polonius",
-      "summary": "Two scenes of arranged watching sit either side of the Mousetrap. Claudius reacts, which Hamlet reads as proof, and then kneels to pray, which Hamlet reads as a bad moment to kill him. Within a hundred lines Hamlet does kill, through a curtain, without looking, and the man behind it is Ophelia's father.",
+      "summary": "Two scenes of arranged watching sit either side of the Mousetrap. Claudius reacts, which Hamlet reads as proof, and then kneels to pray, which Hamlet reads as a bad moment to kill him. Within a hundred lines Hamlet does kill, through a curtain, without looking, and the man behind it is Ophelia’s father.",
       "scenes": [
         {
           "ref": "3.1",
           "title": "The nunnery scene",
-          "summary": "Hamlet's most famous soliloquy is spoken into a trap, and Ophelia is the bait he then turns on."
+          "summary": "Hamlet’s most famous soliloquy is spoken into a trap, and Ophelia is the bait he then turns on."
         },
         {
           "ref": "3.2",
@@ -178,7 +178,7 @@
         {
           "ref": "5.1",
           "title": "The graveyard",
-          "summary": "Gravediggers argue law and precedence; Yorick's skull; a funeral turns into a fight in the grave."
+          "summary": "Gravediggers argue law and precedence; Yorick’s skull; a funeral turns into a fight in the grave."
         },
         {
           "ref": "5.2",
@@ -194,7 +194,7 @@
       "name": "Hamlet",
       "role": "Prince of Denmark, son of the murdered king",
       "summary": "A student called home into a job he has no evidence for and no appetite for. His delay is usually called a flaw, but again and again the play shows him doing the work of proof: testing the Ghost, staging the play, reading the commission. What he cannot do is act while he is still thinking, and the two things almost never stop at the same time.",
-      "clue": "He wears black at a wedding, talks to a skull, and stages a play in order to watch one man's face.",
+      "clue": "He wears black at a wedding, talks to a skull, and stages a play in order to watch one man’s face.",
       "firstAppearance": "1.2",
       "traits": [
         "sceptical",
@@ -259,7 +259,7 @@
     {
       "id": "claudius",
       "name": "Claudius",
-      "role": "King of Denmark, the dead king's brother",
+      "role": "King of Denmark, the dead king’s brother",
       "summary": "The most competent politician in the play and the only character who tells the audience outright that he is guilty. He settles a foreign crisis by letter, manages a rebellion by talking to it, and never once mishandles a room — which is what makes the prayer scene devastating, because it is the single thing he cannot negotiate.",
       "clue": "He opens with a speech that makes a funeral and a wedding sound like one piece of administration, and later cannot pray.",
       "firstAppearance": "1.2",
@@ -308,7 +308,7 @@
       "id": "gertrude",
       "name": "Gertrude",
       "role": "Queen of Denmark",
-      "summary": "She is given very few lines in which to be anything other than the subject of other people's speeches about her. The play never says whether she knew about the murder, and the closet scene is the one place where she is asked directly and answers in a way that settles nothing. Her clearest moment is the speech describing Ophelia's drowning.",
+      "summary": "She is given very few lines in which to be anything other than the subject of other people’s speeches about her. The play never says whether she knew about the murder, and the closet scene is the one place where she is asked directly and answers in a way that settles nothing. Her clearest moment is the speech describing Ophelia’s drowning.",
       "clue": "Her marriage is the scandal the play opens on, and her longest speech is a description of a drowning she did not witness.",
       "firstAppearance": "1.2",
       "traits": [
@@ -345,9 +345,9 @@
     {
       "id": "ophelia",
       "name": "Ophelia",
-      "role": "Polonius's daughter",
+      "role": "Polonius’s daughter",
       "summary": "Every scene she appears in before her madness has been arranged by a man: her father tells her what to feel, her brother tells her what to fear, and she is placed in a corridor with a book to be watched. When she loses her reason she is finally allowed to speak first and at length, and the court cannot stop her singing.",
-      "clue": "Told to return a suitor's letters, she is later the only person at court who can say anything she likes, and does it in songs and flowers.",
+      "clue": "Told to return a suitor’s letters, she is later the only person at court who can say anything she likes, and does it in songs and flowers.",
       "firstAppearance": "1.3",
       "traits": [
         "obedient",
@@ -432,8 +432,8 @@
     {
       "id": "laertes",
       "name": "Laertes",
-      "role": "Polonius's son",
-      "summary": "He does in one scene what Hamlet cannot do in four acts: hears of his father's death, raises a mob and breaks into the palace. The play uses him to show that speed is not the same as justice — he is willing to cut throats in a church, and Claudius steers him within minutes of his arrival.",
+      "role": "Polonius’s son",
+      "summary": "He does in one scene what Hamlet cannot do in four acts: hears of his father’s death, raises a mob and breaks into the palace. The play uses him to show that speed is not the same as justice — he is willing to cut throats in a church, and Claudius steers him within minutes of his arrival.",
       "clue": "He storms the castle with a crowd at his back and is talked into poisoning a fencing sword instead.",
       "firstAppearance": "1.2",
       "traits": [
@@ -483,9 +483,9 @@
     {
       "id": "horatio",
       "name": "Horatio",
-      "role": "Hamlet's fellow student",
+      "role": "Hamlet’s fellow student",
       "summary": "The only person in Elsinore who wants nothing from Hamlet, and therefore the only one told the truth. He is a sceptic in the first scene who has to concede that the Ghost is real, and a survivor in the last who is ordered to stay alive and tell the story — a job the play leaves him doing after the lights go down.",
-      "clue": "He doubts the ghost, watches the king's face on Hamlet's behalf, and is talked out of drinking the poison so that someone can report what happened.",
+      "clue": "He doubts the ghost, watches the king’s face on Hamlet’s behalf, and is talked out of drinking the poison so that someone can report what happened.",
       "firstAppearance": "1.1",
       "traits": [
         "steady",
@@ -544,7 +544,7 @@
     {
       "id": "rosencrantz-and-guildenstern",
       "name": "Rosencrantz and Guildenstern",
-      "role": "Hamlet's schoolfellows, hired by the king",
+      "role": "Hamlet’s schoolfellows, hired by the king",
       "summary": "They are summoned by name, given a task neither of them quite admits to, and are never separated by the text into two distinguishable people. Their function is to show that friendship at this court is a form of employment; their deaths are reported in a single line by a messenger who has no idea who they were.",
       "clue": "Two old friends sent for by the king, who cannot play a recorder but agree to play a prince.",
       "firstAppearance": "2.2",
@@ -613,13 +613,13 @@
     {
       "id": "revenge",
       "name": "Revenge and delay",
-      "summary": "The play takes a kind of story in which a son is told to kill, and asks what would have to be true before killing were justified. Hamlet's problem is not nerve — he stabs through a curtain without hesitating — but the standard of proof. The Ghost is testimony, not evidence, and no court in Denmark is going to hear it.",
+      "summary": "The play takes a kind of story in which a son is told to kill, and asks what would have to be true before killing were justified. Hamlet’s problem is not nerve — he stabs through a curtain without hesitating — but the standard of proof. The Ghost is testimony, not evidence, and no court in Denmark is going to hear it.",
       "development": "Commanded in 1.5, doubted through Act II, tested in 3.2, deferred in 3.3, and finally performed in 5.2 by a man who is already dying and no longer choosing."
     },
     {
       "id": "seeming",
       "name": "Seeming and performance",
-      "summary": "Hamlet's first substantial line rejects the word 'seems', and he spends the rest of the play acting: a feigned madness, a play staged as an experiment, a rewritten commission sealed with a stolen signet. Claudius is doing the same thing from the other side of the throne, and only the audience gets to see both scripts.",
+      "summary": "Hamlet’s first substantial line rejects the word ‘seems’, and he spends the rest of the play acting: a feigned madness, a play staged as an experiment, a rewritten commission sealed with a stolen signet. Claudius is doing the same thing from the other side of the throne, and only the audience gets to see both scripts.",
       "development": "Set out in 1.2, adopted as policy in 1.5, professionalised in 3.2, and abandoned in Act V, where Hamlet stops performing and starts reporting."
     },
     {
@@ -631,19 +631,19 @@
     {
       "id": "mortality",
       "name": "Death and the body",
-      "summary": "The play is unusually interested in what happens to bodies: poison in an ear, a corpse dragged to a lobby, a king going on progress through the guts of a beggar, a skull with earth in its jaw. Hamlet's metaphysics stay unresolved, but his physiology is exact, and the graveyard is where the two finally meet.",
+      "summary": "The play is unusually interested in what happens to bodies: poison in an ear, a corpse dragged to a lobby, a king going on progress through the guts of a beggar, a skull with earth in its jaw. Hamlet’s metaphysics stay unresolved, but his physiology is exact, and the graveyard is where the two finally meet.",
       "development": "Abstract in the soliloquies of Acts I and III; literal from 3.4 onwards, and entirely material by 5.1, where death is a trade with tools and songs."
     },
     {
       "id": "madness",
       "name": "Madness, real and performed",
-      "summary": "Hamlet announces in advance that he will pretend, which ought to settle the question and does not: the pretence gives him licence to say things that are far too accurate to be mad and far too wild to be safe. Ophelia's madness is not announced, not strategic and not interpretable, and the court's response to it is to keep watching.",
+      "summary": "Hamlet announces in advance that he will pretend, which ought to settle the question and does not: the pretence gives him licence to say things that are far too accurate to be mad and far too wild to be safe. Ophelia’s madness is not announced, not strategic and not interpretable, and the court’s response to it is to keep watching.",
       "development": "Declared in 1.5, diagnosed by Polonius in Act II, weaponised in 3.1, and set beside the real thing in 4.5."
     },
     {
       "id": "memory",
       "name": "Memory and record",
-      "summary": "The Ghost's actual demand is 'Remember me', and Hamlet answers by treating his mind as a notebook to be wiped and rewritten. The play is full of records: tables, letters, commissions, songs, an old jester remembered by a skull. Its last act of business is arranging for the story to be told correctly.",
+      "summary": "The Ghost’s actual demand is ‘Remember me’, and Hamlet answers by treating his mind as a notebook to be wiped and rewritten. The play is full of records: tables, letters, commissions, songs, an old jester remembered by a skull. Its last act of business is arranging for the story to be told correctly.",
       "development": "A vow in 1.5, a joke about writing it down moments later, and a formal commission to Horatio in 5.2 — the play ends by appointing its own narrator."
     }
   ],
@@ -663,25 +663,25 @@
     {
       "id": "foils",
       "name": "Foils",
-      "definition": "A character constructed to throw another's choices into relief by making different ones.",
-      "inThisBook": "Laertes and Fortinbras are both sons of dead fathers, and both act straight away. The play puts one in Act IV and the other in Act V so that Hamlet's hesitation is measured twice."
+      "definition": "A character constructed to throw another’s choices into relief by making different ones.",
+      "inThisBook": "Laertes and Fortinbras are both sons of dead fathers, and both act straight away. The play puts one in Act IV and the other in Act V so that Hamlet’s hesitation is measured twice."
     },
     {
       "id": "prose-and-verse",
       "name": "Prose against verse",
       "definition": "Shifting between metrical speech and prose to mark status, sanity or intimacy.",
-      "inThisBook": "Hamlet drops into prose with the players, the spies and the gravediggers, and rises into verse when he is alone; Ophelia's madness arrives as prose broken by snatches of song."
+      "inThisBook": "Hamlet drops into prose with the players, the spies and the gravediggers, and rises into verse when he is alone; Ophelia’s madness arrives as prose broken by snatches of song."
     },
     {
       "id": "disease-imagery",
       "name": "Disease imagery",
-      "definition": "A sustained figurative field that describes a political situation as a body's illness.",
+      "definition": "A sustained figurative field that describes a political situation as a body’s illness.",
       "inThisBook": "Denmark is rotten, an unweeded garden, an ulcer with a skin over it; the murder itself is a poison poured into a body, so the metaphor and the plot share a mechanism."
     },
     {
       "id": "hendiadys",
       "name": "Hendiadys",
-      "definition": "Joining two nouns with 'and' where grammar would expect one noun modifying another.",
+      "definition": "Joining two nouns with ‘and’ where grammar would expect one noun modifying another.",
       "inThisBook": "‘The book and volume of my brain’ and ‘the expectancy and rose of the fair state’ are typical: the figure doubles a thought instead of completing it, and the language hesitates the way its hero does."
     }
   ],
@@ -692,7 +692,7 @@
       "speaker": "Hamlet",
       "reference": "1.2.78",
       "stage": "act-1",
-      "context": "His first extended speech, answering Gertrude's question about why his grief looks so particular.",
+      "context": "His first extended speech, answering Gertrude’s question about why his grief looks so particular.",
       "analysis": "He objects to a verb, which tells you what kind of hero this is going to be. The irony is scheduled three scenes later, when he decides to put on an appearance deliberately, and the play never lets him have the word back.",
       "themes": [
         "seeming",
@@ -727,7 +727,7 @@
       "characters": [
         "hamlet"
       ],
-      "source": "Globe/Moby text, 1.2.131-132",
+      "source": "Globe/Moby text, 1.2.131–132",
       "cloze": [
         "melt",
         "dew"
@@ -739,8 +739,8 @@
       "speaker": "Hamlet",
       "reference": "1.2.148",
       "stage": "act-1",
-      "context": "In the same soliloquy, on his mother's remarriage.",
-      "analysis": "He generalises from one woman to half the species in five words, and the grammar does the work: an abstract noun is addressed directly, then given a name. The line is quoted as if it were the play's verdict, but it is spoken by a man who has just told us he cannot bear to think about it.",
+      "context": "In the same soliloquy, on his mother’s remarriage.",
+      "analysis": "He generalises from one woman to half the species in five words, and the grammar does the work: an abstract noun is addressed directly, then given a name. The line is quoted as if it were the play’s verdict, but it is spoken by a man who has just told us he cannot bear to think about it.",
       "themes": [
         "seeming"
       ],
@@ -774,7 +774,7 @@
         "polonius",
         "laertes"
       ],
-      "source": "Globe/Moby text, 1.3.81-83",
+      "source": "Globe/Moby text, 1.3.81–83",
       "cloze": [
         "ownself",
         "false"
@@ -787,7 +787,7 @@
       "reference": "1.4.99",
       "stage": "act-1",
       "context": "Watching Hamlet follow the Ghost away along the platform.",
-      "analysis": "It is given to a minor soldier, not to the prince, which matters: the corruption is visible from the guard post before anyone at court admits it. 'Something' is doing a great deal of work — nobody on stage yet knows what, and the audience has not been told either.",
+      "analysis": "It is given to a minor soldier, not to the prince, which matters: the corruption is visible from the guard post before anyone at court admits it. ‘Something’ is doing a great deal of work — nobody on stage yet knows what, and the audience has not been told either.",
       "themes": [
         "surveillance",
         "seeming"
@@ -824,7 +824,7 @@
         "hamlet",
         "claudius"
       ],
-      "source": "Globe/Moby text, 1.5.112-113",
+      "source": "Globe/Moby text, 1.5.112–113",
       "cloze": [
         "tables",
         "villain"
@@ -837,7 +837,7 @@
       "reference": "1.5.185",
       "stage": "act-1",
       "context": "To Horatio, who has just been asked to swear on the sword while the Ghost calls from under the stage.",
-      "analysis": "It is usually quoted as mysticism; in position it is an argument with a sceptic who has already seen the ghost and is still reasoning. Note the address: Hamlet uses his friend's name to make the rebuke personal, and the line's authority depends on a spirit shouting from beneath the floorboards.",
+      "analysis": "It is usually quoted as mysticism; in position it is an argument with a sceptic who has already seen the ghost and is still reasoning. Note the address: Hamlet uses his friend’s name to make the rebuke personal, and the line’s authority depends on a spirit shouting from beneath the floorboards.",
       "themes": [
         "revenge",
         "mortality"
@@ -848,7 +848,7 @@
         "horatio",
         "ghost"
       ],
-      "source": "Globe/Moby text, 1.5.185-186",
+      "source": "Globe/Moby text, 1.5.185–186",
       "cloze": [
         "heaven",
         "philosophy"
@@ -861,7 +861,7 @@
       "reference": "1.5.188",
       "stage": "act-1",
       "context": "Swearing his friends to secrecy about anything they may see him do.",
-      "analysis": "The madness is announced in advance, under oath, as a wardrobe decision — 'put on' is the verb used for clothes. That advance notice is what keeps the question alive for four acts: everything strange Hamlet does afterwards has been pre-authorised, so nothing he does can settle the matter.",
+      "analysis": "The madness is announced in advance, under oath, as a wardrobe decision — ‘put on’ is the verb used for clothes. That advance notice is what keeps the question alive for four acts: everything strange Hamlet does afterwards has been pre-authorised, so nothing he does can settle the matter.",
       "themes": [
         "madness",
         "seeming"
@@ -871,7 +871,7 @@
         "hamlet",
         "horatio"
       ],
-      "source": "Globe/Moby text, 1.5.188-190",
+      "source": "Globe/Moby text, 1.5.188–190",
       "cloze": [
         "antic",
         "disposition"
@@ -884,7 +884,7 @@
       "reference": "2.2.221",
       "stage": "act-2",
       "context": "An aside during the conversation about words, words, words.",
-      "analysis": "Polonius is right and cannot use it. He detects the design under the nonsense and then draws the wrong conclusion about what the design is for, which is the court's characteristic failure: good observation, bad inference. The line is spoken aside, so the audience is invited to grade his reading against theirs.",
+      "analysis": "Polonius is right and cannot use it. He detects the design under the nonsense and then draws the wrong conclusion about what the design is for, which is the court’s characteristic failure: good observation, bad inference. The line is spoken aside, so the audience is invited to grade his reading against theirs.",
       "themes": [
         "madness",
         "surveillance"
@@ -896,7 +896,7 @@
         "polonius",
         "hamlet"
       ],
-      "source": "Globe/Moby text, 2.2.221-222",
+      "source": "Globe/Moby text, 2.2.221–222",
       "cloze": [
         "madness",
         "method"
@@ -945,7 +945,7 @@
         "hamlet",
         "rosencrantz-and-guildenstern"
       ],
-      "source": "Globe/Moby text, 2.2.317-318",
+      "source": "Globe/Moby text, 2.2.317–318",
       "cloze": [
         "reason",
         "faculty"
@@ -957,8 +957,8 @@
       "speaker": "Hamlet",
       "reference": "2.2.559",
       "stage": "act-2",
-      "context": "Alone after the First Player's speech about Hecuba.",
-      "analysis": "What sets him off is a professional actor crying about a woman dead for centuries. Hamlet's self-disgust is comparative and aesthetic: somebody else produced a convincing performance of grief and he has not, which is a strange thing to punish yourself for and a precise clue to what he thinks feeling is.",
+      "context": "Alone after the First Player’s speech about Hecuba.",
+      "analysis": "What sets him off is a professional actor crying about a woman dead for centuries. Hamlet’s self-disgust is comparative and aesthetic: somebody else produced a convincing performance of grief and he has not, which is a strange thing to punish yourself for and a precise clue to what he thinks feeling is.",
       "themes": [
         "seeming",
         "revenge"
@@ -996,7 +996,7 @@
         "hamlet",
         "claudius"
       ],
-      "source": "Globe/Moby text, 2.2.615-616",
+      "source": "Globe/Moby text, 2.2.615–616",
       "cloze": [
         "play",
         "conscience"
@@ -1020,7 +1020,7 @@
       "characters": [
         "hamlet"
       ],
-      "source": "Globe/Moby text, 3.1.64-68",
+      "source": "Globe/Moby text, 3.1.64–68",
       "cloze": [
         "question",
         "nobler"
@@ -1033,7 +1033,7 @@
       "reference": "3.1.91",
       "stage": "act-3",
       "context": "The close of the same soliloquy, before he sees Ophelia.",
-      "analysis": "'Conscience' here means consciousness as much as moral scruple, and the metaphor is a complexion: thought spreads over resolve like an illness over a face. It is the play’s own diagnosis of its hero, offered by the hero, one reason nobody has done much better since.",
+      "analysis": "‘Conscience’ here means consciousness as much as moral scruple, and the metaphor is a complexion: thought spreads over resolve like an illness over a face. It is the play’s own diagnosis of its hero, offered by the hero, one reason nobody has done much better since.",
       "themes": [
         "revenge",
         "madness"
@@ -1045,7 +1045,7 @@
       "characters": [
         "hamlet"
       ],
-      "source": "Globe/Moby text, 3.1.91-93",
+      "source": "Globe/Moby text, 3.1.91–93",
       "cloze": [
         "conscience",
         "cowards"
@@ -1057,7 +1057,7 @@
       "speaker": "Ophelia",
       "reference": "3.1.163",
       "stage": "act-3",
-      "context": "Alone on stage after Hamlet's exit, before the watchers come out.",
+      "context": "Alone on stage after Hamlet’s exit, before the watchers come out.",
       "analysis": "She is the only character who mourns Hamlet as a loss, and she does it in a formal lament built of three-part lists: eye, tongue, sword. The speech also establishes what he was like before the play began, information the audience has no other way of getting.",
       "themes": [
         "madness",
@@ -1131,7 +1131,7 @@
       "reference": "3.3.100",
       "stage": "act-3",
       "context": "Rising from his knees, seconds after Hamlet has left without killing him.",
-      "analysis": "The couplet is a joke at Hamlet's expense that Hamlet never hears: he spared a man whose prayer was not working. The crossed pattern of words and thoughts, up, below, words, thoughts, makes the failure sound like a law of physics.",
+      "analysis": "The couplet is a joke at Hamlet’s expense that Hamlet never hears: he spared a man whose prayer was not working. The crossed pattern of words and thoughts, up, below, words, thoughts, makes the failure sound like a law of physics.",
       "themes": [
         "revenge",
         "seeming"
@@ -1143,7 +1143,7 @@
         "claudius",
         "hamlet"
       ],
-      "source": "Globe/Moby text, 3.3.100-101",
+      "source": "Globe/Moby text, 3.3.100–101",
       "cloze": [
         "words",
         "thoughts"
@@ -1155,8 +1155,8 @@
       "speaker": "Hamlet",
       "reference": "4.4.34",
       "stage": "act-4",
-      "context": "On a plain in Denmark, watching Fortinbras's army march towards Poland.",
-      "analysis": "'Inform against' is legal language for turning informer, so Hamlet describes the world as a witness giving evidence against him. It is his last soliloquy, and the resolution it reaches is immediately undercut by the fact that he is being escorted onto a ship to England as he speaks it.",
+      "context": "On a plain in Denmark, watching Fortinbras’s army march towards Poland.",
+      "analysis": "‘Inform against’ is legal language for turning informer, so Hamlet describes the world as a witness giving evidence against him. It is his last soliloquy, and the resolution it reaches is immediately undercut by the fact that he is being escorted onto a ship to England as he speaks it.",
       "themes": [
         "revenge",
         "surveillance"
@@ -1169,7 +1169,7 @@
         "hamlet",
         "fortinbras"
       ],
-      "source": "Globe/Moby text, 4.4.34-35",
+      "source": "Globe/Moby text, 4.4.34–35",
       "cloze": [
         "occasions",
         "revenge"
@@ -1182,7 +1182,7 @@
       "reference": "5.1.181",
       "stage": "act-5",
       "context": "In the churchyard, holding a skull the gravedigger has identified.",
-      "analysis": "It is the first death in the play he can speak about without a theory, and the reason is that he has a name and a memory to attach to the bone. The scene is in prose, and the joking goes on around him: the play's most affecting moment about mortality is set in a workplace where corpses are routine.",
+      "analysis": "It is the first death in the play he can speak about without a theory, and the reason is that he has a name and a memory to attach to the bone. The scene is in prose, and the joking goes on around him: the play’s most affecting moment about mortality is set in a workplace where corpses are routine.",
       "themes": [
         "mortality",
         "memory"
@@ -1194,7 +1194,7 @@
         "hamlet",
         "horatio"
       ],
-      "source": "Globe/Moby text, 5.1.181-182",
+      "source": "Globe/Moby text, 5.1.181–182",
       "cloze": [
         "Yorick",
         "jest"
@@ -1217,7 +1217,7 @@
         "hamlet",
         "horatio"
       ],
-      "source": "Globe/Moby text, 5.2.10-11",
+      "source": "Globe/Moby text, 5.2.10–11",
       "cloze": [
         "divinity",
         "Rough-hew"
@@ -1230,7 +1230,7 @@
       "reference": "5.2.216",
       "stage": "act-5",
       "context": "To Horatio, who has offered to call off the fencing match.",
-      "analysis": "Set this against 'To be, or not to be': the same question about dying, answered now in prose, in one sentence, with no metaphors. He has stopped arguing, and the calm is closer to exhaustion than to peace, and the plot takes advantage of it at once.",
+      "analysis": "Set this against ‘To be, or not to be’: the same question about dying, answered now in prose, in one sentence, with no metaphors. He has stopped arguing, and the calm is closer to exhaustion than to peace, and the plot takes advantage of it at once.",
       "themes": [
         "mortality",
         "revenge"
@@ -1242,7 +1242,7 @@
         "hamlet",
         "horatio"
       ],
-      "source": "Globe/Moby text, 5.2.216-218",
+      "source": "Globe/Moby text, 5.2.216–218",
       "cloze": [
         "readiness",
         "betimes"
@@ -1255,7 +1255,7 @@
       "reference": "5.2.374",
       "stage": "act-5",
       "context": "Dying, having given his vote for the succession and told Horatio to report the circumstances.",
-      "analysis": "His last act is administrative: a vote, a request for an accurate account, and then nothing. 'The rest' means both what remains to be said and what remains of him, and the man who could not stop talking hands the talking over and stops.",
+      "analysis": "His last act is administrative: a vote, a request for an accurate account, and then nothing. ‘The rest’ means both what remains to be said and what remains of him, and the man who could not stop talking hands the talking over and stops.",
       "themes": [
         "memory",
         "mortality"
@@ -1288,18 +1288,18 @@
     {
       "year": 1599,
       "label": "The Globe opens on Bankside",
-      "detail": "The playhouse the Lord Chamberlain's Men built for themselves, and the theatre Hamlet was written for.",
+      "detail": "The playhouse the Lord Chamberlain’s Men built for themselves, and the theatre Hamlet was written for.",
       "kind": "context"
     },
     {
       "year": 1601,
       "label": "Hamlet most likely completed",
-      "detail": "Usually dated to about 1599-1601, close to Julius Caesar and Twelfth Night.",
+      "detail": "Usually dated to about 1599–1601, close to Julius Caesar and Twelfth Night.",
       "kind": "work"
     },
     {
       "year": 1602,
-      "label": "Entered in the Stationers' Register by James Roberts",
+      "label": "Entered in the Stationers’ Register by James Roberts",
       "detail": "The entry precedes the first printing by a year.",
       "kind": "work"
     },
@@ -1335,7 +1335,7 @@
     },
     {
       "year": 1948,
-      "label": "Laurence Olivier's film",
+      "label": "Laurence Olivier’s film",
       "detail": "Heavily cut, and the first Shakespeare film to win the Academy Award for Best Picture.",
       "kind": "reception"
     },
@@ -1397,11 +1397,11 @@
   ],
   "essayQuestions": [
     {
-      "question": "Is Hamlet's delay a failure of character or a problem of evidence?",
+      "question": "Is Hamlet’s delay a failure of character or a problem of evidence?",
       "focus": "Revenge, proof and the status of the Ghost",
       "plan": [
         "Establish what Hamlet actually has at the end of Act I: unverifiable testimony from a spirit whose nature he says he cannot classify.",
-        "Trace the design of the Mousetrap in 2.2 and 3.2 as an experiment, and ask precisely what Claudius's reaction proves.",
+        "Trace the design of the Mousetrap in 2.2 and 3.2 as an experiment, and ask precisely what Claudius’s reaction proves.",
         "Turn the argument at 3.3: the refusal to kill a praying man is a theological calculation, not hesitation — and the audience knows the prayer failed.",
         "Test the counter-case with 3.4, where he stabs a concealed listener without identifying him.",
         "Close on Act V, where the killing finally happens under conditions Hamlet did not arrange and cannot control."
@@ -1411,10 +1411,10 @@
       "question": "How does Shakespeare use watching and being watched in Hamlet?",
       "focus": "Surveillance, privacy and the court",
       "plan": [
-        "Open with Reynaldo in 2.1: the court's method stated in its purest form, applied by a father to his own son.",
+        "Open with Reynaldo in 2.1: the court’s method stated in its purest form, applied by a father to his own son.",
         "Map the arranged scenes — 3.1 with two men concealed, 3.2 with the whole court watching a king watch a play, 3.4 with a listener behind the arras.",
         "Show how Hamlet takes up the method himself: the play, the rewritten commission, the friends he tests.",
-        "Consider what the play makes private: the soliloquies, Claudius's prayer, and the fact that the audience is always the extra watcher.",
+        "Consider what the play makes private: the soliloquies, Claudius’s prayer, and the fact that the audience is always the extra watcher.",
         "Decide whether the arrival of Fortinbras ends the surveillance or simply changes who is doing it."
       ]
     },
@@ -1425,24 +1425,24 @@
         "Count what each is allowed to say, and note how much of it is answering a question put by a man.",
         "Read 1.3 and 3.1 as a sequence in which Ophelia is instructed, positioned and then abused for being where she was told to stand.",
         "Examine 4.5: madness as the first occasion on which she speaks first, at length, and without being interrupted.",
-        "Weigh Gertrude's silences — her refusal to answer directly in 3.4, and the strangely detailed drowning speech in 4.7.",
+        "Weigh Gertrude’s silences — her refusal to answer directly in 3.4, and the strangely detailed drowning speech in 4.7.",
         "Assess two readings: a play that exposes the constraints on these women, or one that shares them."
       ]
     },
     {
-      "question": "'Hamlet is a play about acting.' Discuss.",
+      "question": "‘Hamlet is a play about acting.’ Discuss.",
       "focus": "Performance, theatre and the antic disposition",
       "plan": [
-        "Begin with 1.2, where Hamlet rejects 'seems', and 1.5, where he schedules a performance of madness.",
+        "Begin with 1.2, where Hamlet rejects ‘seems’, and 1.5, where he schedules a performance of madness.",
         "Use the players in 2.2: a professional weeping for Hecuba shames a son who cannot produce feeling on demand.",
-        "Take the advice to the players in 3.2 as the play's own theory of acting, then watch it applied to an audience of one.",
+        "Take the advice to the players in 3.2 as the play’s own theory of acting, then watch it applied to an audience of one.",
         "Set Claudius beside Hamlet as a rival performer whose public manner never slips until he is alone in 3.3.",
         "Conclude with Act V, where Hamlet stops performing, and ask what he loses and gains by it."
       ]
     }
   ],
   "discussionQuestions": [
-    "The Ghost's account of the murder has no other witness. What would it take for Hamlet to know it is true?",
+    "The Ghost’s account of the murder has no other witness. What would it take for Hamlet to know it is true?",
     "Hamlet announces his madness before he performs it. Does that settle the question of whether any of it is real?",
     "Is Claudius a good king? Consider how he handles Norway, the rebellion and the succession.",
     "Why does Shakespeare keep Hamlet offstage for so much of Act IV?",

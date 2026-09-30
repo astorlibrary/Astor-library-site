@@ -15,9 +15,9 @@
   "lengthNote": "Around 3,000 lines, with a sixteen-year gap opened in the middle of them",
   "openingLine": "If you shall chance, Camillo, to visit Bohemia, on the like occasion whereon my services are now on foot",
   "summary": "A king watches his wife be courteous to his oldest friend and decides, in the space of nine lines, that she has betrayed him. Three acts later a bear has eaten a nobleman, a baby has been left on a beach and sixteen years have gone past in a speech. What returns is a second world built beside the one he broke, and in the last scene the audience is asked to believe a thing it has been told twice is impossible.",
-  "referenceStyle": "act.scene.line, Globe/Moby line numbering",
+  "referenceStyle": "act, scene and line",
   "sourceText": {
-    "label": "Globe/Moby text of The Winter's Tale",
+    "label": "Globe/Moby text of The Winter’s Tale",
     "note": "Line numbers follow the traditional Globe numbering. The only early text is the First Folio, generally thought to have been set from a scribal transcript."
   },
   "atAGlance": [
@@ -33,8 +33,8 @@
     },
     {
       "label": "Chief source",
-      "value": "Greene's Pandosto",
-      "note": "Robert Greene's prose romance of 1588, whose jealous king dies at the end. Shakespeare keeps the plot and changes the ending."
+      "value": "Greene’s Pandosto",
+      "note": "Robert Greene’s prose romance of 1588, whose jealous king dies at the end. Shakespeare keeps the plot and changes the ending."
     },
     {
       "label": "Shape",
@@ -57,7 +57,7 @@
         {
           "ref": "1.2",
           "title": "Too hot, too hot",
-          "summary": "Hermione wins the argument her husband could not, and Leontes watches her hand in another man's and goes mad in public."
+          "summary": "Hermione wins the argument her husband could not, and Leontes watches her hand in another man’s and goes mad in public."
         }
       ]
     },
@@ -70,7 +70,7 @@
         {
           "ref": "2.1",
           "title": "The sad tale",
-          "summary": "Mamillius begins a winter's tale and is interrupted by his father's guards; Hermione is charged and taken away."
+          "summary": "Mamillius begins a winter’s tale and is interrupted by his father’s guards; Hermione is charged and taken away."
         },
         {
           "ref": "2.2",
@@ -80,7 +80,7 @@
         {
           "ref": "2.3",
           "title": "The infant refused",
-          "summary": "Paulina lays the baby at the king's feet and argues; Antigonus is sworn to carry it to a desert place and leave it."
+          "summary": "Paulina lays the baby at the king’s feet and argues; Antigonus is sworn to carry it to a desert place and leave it."
         }
       ]
     },
@@ -111,7 +111,7 @@
       "id": "act-4",
       "label": "Act IV",
       "title": "Sixteen years, a sheep-shearing and a pedlar",
-      "summary": "Time appears as a chorus, turns the glass and moves the play on. In Bohemia the foundling is a shepherd's daughter presiding over a feast, a prince is courting her under a false name, and a thief with a ballad-sheet is working the crowd. Then Polixenes tears off his disguise and threatens everyone, and the young couple run for Sicilia with the help of the man who fled it.",
+      "summary": "Time appears as a chorus, turns the glass and moves the play on. In Bohemia the foundling is a shepherd’s daughter presiding over a feast, a prince is courting her under a false name, and a thief with a ballad-sheet is working the crowd. Then Polixenes tears off his disguise and threatens everyone, and the young couple run for Sicilia with the help of the man who fled it.",
       "scenes": [
         {
           "ref": "4.1",
@@ -121,12 +121,12 @@
         {
           "ref": "4.2",
           "title": "Camillo asks to go home",
-          "summary": "Polixenes refuses, and they agree to go in disguise to the shepherd's cottage where the prince keeps disappearing."
+          "summary": "Polixenes refuses, and they agree to go in disguise to the shepherd’s cottage where the prince keeps disappearing."
         },
         {
           "ref": "4.3",
           "title": "Autolycus",
-          "summary": "A pedlar and former courtier sings on the road, picks the Clown's pocket by pretending to be robbed, and goes to the feast."
+          "summary": "A pedlar and former courtier sings on the road, picks the Clown’s pocket by pretending to be robbed, and goes to the feast."
         },
         {
           "ref": "4.4",
@@ -139,7 +139,7 @@
       "id": "act-5",
       "label": "Act V",
       "title": "The recognitions, and the statue",
-      "summary": "Leontes has spent sixteen years doing penance under Paulina's supervision. The lovers arrive, the pursuing king arrives, the tokens are produced and the reunion of father and daughter is deliberately kept offstage and reported by gentlemen. The play saves its one visible wonder for last, in a chapel, with a curtain and a piece of music.",
+      "summary": "Leontes has spent sixteen years doing penance under Paulina’s supervision. The lovers arrive, the pursuing king arrives, the tokens are produced and the reunion of father and daughter is deliberately kept offstage and reported by gentlemen. The play saves its one visible wonder for last, in a chapel, with a curtain and a piece of music.",
       "scenes": [
         {
           "ref": "5.1",
@@ -149,7 +149,7 @@
         {
           "ref": "5.2",
           "title": "The reunion, reported",
-          "summary": "Three gentlemen describe the discovery of Perdita's identity to one another, and the Clown becomes a gentleman born."
+          "summary": "Three gentlemen describe the discovery of Perdita’s identity to one another, and the Clown becomes a gentleman born."
         },
         {
           "ref": "5.3",
@@ -208,7 +208,7 @@
       "name": "Hermione",
       "role": "Queen of Sicilia",
       "summary": "She is witty and entirely at ease in the first scene, which is what condemns her, and at the trial she argues from honour, not innocence, because innocence has already been ruled inadmissible. She has perhaps eighty lines after the trial and none at all to her husband in the final scene.",
-      "clue": "She wins an argument on her husband's behalf and is charged with adultery for it; sixteen years later she is a statue with wrinkles.",
+      "clue": "She wins an argument on her husband’s behalf and is charged with adultery for it; sixteen years later she is a statue with wrinkles.",
       "firstAppearance": "1.2",
       "traits": [
         "warm",
@@ -239,14 +239,14 @@
     {
       "id": "paulina",
       "name": "Paulina",
-      "role": "A lady of the Sicilian court, Antigonus's wife",
+      "role": "A lady of the Sicilian court, Antigonus’s wife",
       "summary": "She says the unsayable to a king in Act III and then organises the next sixteen years of his life. Whether she hid a living woman for that long or performed a miracle is left deliberately unresolved, and she loses a husband to a bear and is handed a new one in the last thirty lines.",
       "clue": "She calls a king a tyrant to his face, keeps something behind a curtain for sixteen years, and tells a court that it is required to awake its faith.",
       "firstAppearance": "2.2",
       "traits": [
         "fearless",
         "managing",
-        "the play's stage manager"
+        "the play’s stage manager"
       ],
       "relationships": [
         {
@@ -273,7 +273,7 @@
     {
       "id": "perdita",
       "name": "Perdita",
-      "role": "Leontes and Hermione's lost daughter, raised as a shepherd's child",
+      "role": "Leontes and Hermione’s lost daughter, raised as a shepherd’s child",
       "summary": "She presides over the sheep-shearing in borrowed finery and is uncomfortable in it, and she holds her own in an argument about grafting against a king. The play is careful that her authority looks natural without ever settling whether that is breeding, upbringing or the pastoral convention doing its work.",
       "clue": "She is dressed as a goddess for a feast she thinks is above her, refuses to grow streaked flowers, and wants spring flowers for a living lover, not a corpse.",
       "firstAppearance": "4.4",
@@ -310,8 +310,8 @@
       "id": "polixenes",
       "name": "Polixenes",
       "role": "King of Bohemia",
-      "summary": "He begins as the innocent party and ends the fourth act threatening to have a shepherd's daughter's face scratched with briars. The play gives him the elegant argument that art is itself a part of nature, and then has him forbid exactly the kind of grafting he has just defended.",
-      "clue": "He argues that crossing a noble bud with a baser stock is nature's own art, and forty lines later threatens death to anyone who lets his son marry a shepherdess.",
+      "summary": "He begins as the innocent party and ends the fourth act threatening to have a shepherd’s daughter’s face scratched with briars. The play gives him the elegant argument that art is itself a part of nature, and then has him forbid exactly the kind of grafting he has just defended.",
+      "clue": "He argues that crossing a noble bud with a baser stock is nature’s own art, and forty lines later threatens death to anyone who lets his son marry a shepherdess.",
       "firstAppearance": "1.2",
       "traits": [
         "courteous",
@@ -341,7 +341,7 @@
     {
       "id": "camillo",
       "name": "Camillo",
-      "role": "A Sicilian lord, later Polixenes's counsellor",
+      "role": "A Sicilian lord, later Polixenes’s counsellor",
       "summary": "Ordered to commit a murder, he warns the victim and leaves with him, which is the one action in the first half that prevents a death. He then spends sixteen years homesick and engineers the escape to Sicilia largely because he wants to see the place again.",
       "clue": "Told to poison a king, he takes him abroad instead, and later sends a prince and a shepherdess to the country he is longing for.",
       "firstAppearance": "1.1",
@@ -379,7 +379,7 @@
       "name": "Florizel",
       "role": "Prince of Bohemia, courting as Doricles",
       "summary": "He is in the same disguise Rosalind and Viola wear, and he uses it only to be poorer than he is. His praise of Perdita dancing is the most beautiful speech in the play and also, read carefully, a wish that she would never do anything else.",
-      "clue": "He courts under a false name in shepherd's clothes and tells his love he wishes she could dance for ever, which is a compliment with a door in it.",
+      "clue": "He courts under a false name in shepherd’s clothes and tells his love he wishes she could dance for ever, which is a compliment with a door in it.",
       "firstAppearance": "4.4",
       "traits": [
         "ardent",
@@ -403,8 +403,8 @@
       "id": "autolycus",
       "name": "Autolycus",
       "role": "A pedlar, ballad-seller and pickpocket",
-      "summary": "He arrives after the interval of sixteen years and changes the play's weather entirely, singing, cheating and selling printed ballads about impossible events to people who buy them because they are printed. He is the only character who profits from the happy ending without contributing anything to it.",
-      "clue": "Named after the son of Mercury, littered under the same planet, he picks a pocket by pretending to have been robbed and sells ballads of fish and usurers' wives.",
+      "summary": "He arrives after the interval of sixteen years and changes the play’s weather entirely, singing, cheating and selling printed ballads about impossible events to people who buy them because they are printed. He is the only character who profits from the happy ending without contributing anything to it.",
+      "clue": "Named after the son of Mercury, littered under the same planet, he picks a pocket by pretending to have been robbed and sells ballads of fish and usurers’ wives.",
       "firstAppearance": "4.3",
       "traits": [
         "musical",
@@ -463,8 +463,8 @@
     {
       "id": "antigonus",
       "name": "Antigonus",
-      "role": "A Sicilian lord, Paulina's husband",
-      "summary": "He argues for the queen, is bullied into swearing an oath, and then keeps it — which is the play's clearest illustration of how obedience does the damage that tyranny orders. His death is the most famous stage direction in the language, and his last line is one of the quietest.",
+      "role": "A Sicilian lord, Paulina’s husband",
+      "summary": "He argues for the queen, is bullied into swearing an oath, and then keeps it — which is the play’s clearest illustration of how obedience does the damage that tyranny orders. His death is the most famous stage direction in the language, and his last line is one of the quietest.",
       "clue": "He carries a baby to a beach because he swore he would, says he is gone for ever, and is right.",
       "firstAppearance": "2.1",
       "traits": [
@@ -498,13 +498,13 @@
       "id": "jealousy",
       "name": "Jealousy",
       "summary": "Shakespeare had already written the version with a tempter; here he removes him. Leontes supplies his own evidence, his own interpretation and his own verdict inside a single speech, and the play shows the process in the grammar — clauses that start over, brackets inside brackets, words that turn obscene as he handles them.",
-      "development": "It arrives fully formed in 1.2, hardens into law in 2.1 and 2.3, and survives even the oracle in 3.2 until a child's death breaks it in a single line."
+      "development": "It arrives fully formed in 1.2, hardens into law in 2.1 and 2.3, and survives even the oracle in 3.2 until a child’s death breaks it in a single line."
     },
     {
       "id": "time",
       "name": "Time",
-      "summary": "The play's hinge is a chorus who turns an hourglass and moves the action on sixteen years, and everything after that is about what can and cannot be recovered. The daughter comes back and the wife comes back; the son does not, and neither does Antigonus.",
-      "development": "A boy's unfinished tale in 2.1, the leap of Act IV, and in 5.3 a statue deliberately carved with sixteen years of age on it so that the time cannot be pretended away."
+      "summary": "The play’s hinge is a chorus who turns an hourglass and moves the action on sixteen years, and everything after that is about what can and cannot be recovered. The daughter comes back and the wife comes back; the son does not, and neither does Antigonus.",
+      "development": "A boy’s unfinished tale in 2.1, the leap of Act IV, and in 5.3 a statue deliberately carved with sixteen years of age on it so that the time cannot be pretended away."
     },
     {
       "id": "art-and-nature",
@@ -522,13 +522,13 @@
       "id": "authority-of-women",
       "name": "Women",
       "summary": "Hermione argues for her honour in a court that has already convicted her; Paulina tells a king he is a tyrant and then runs his conscience for sixteen years; Perdita rejects a king’s argument about breeding to his face. The men in this play give orders and the women decide what will actually happen.",
-      "development": "Hermione's defence in 3.2, Paulina's denunciation a hundred lines later, and in 5.3 a woman directing every other character on stage, including two kings."
+      "development": "Hermione’s defence in 3.2, Paulina’s denunciation a hundred lines later, and in 5.3 a woman directing every other character on stage, including two kings."
     },
     {
       "id": "two-worlds",
       "name": "Court and country, tragedy and comedy",
-      "summary": "The play is built in two unequal halves and refuses to blend them: a claustrophobic court where a man watches his wife's hands, and an open field with a pedlar, a dance and a cheat. The famous impossible bear stands exactly between them.",
-      "development": "Three acts of tragedy, an exit pursued by a bear, and a shepherd's remark about things dying and things newborn — which is the play describing its own form."
+      "summary": "The play is built in two unequal halves and refuses to blend them: a claustrophobic court where a man watches his wife’s hands, and an open field with a pedlar, a dance and a cheat. The famous impossible bear stands exactly between them.",
+      "development": "Three acts of tragedy, an exit pursued by a bear, and a shepherd’s remark about things dying and things newborn — which is the play describing its own form."
     }
   ],
   "techniques": [
@@ -536,7 +536,7 @@
       "id": "broken-syntax",
       "name": "Broken syntax",
       "definition": "Sentences that fracture, restart or bury themselves in parenthesis to show a mind under strain.",
-      "inThisBook": "Leontes's speeches in 1.2 and 2.1 are among the hardest passages Shakespeare wrote, and the difficulty is the point: the audience has to work out the thought at the same speed he is failing to."
+      "inThisBook": "Leontes’s speeches in 1.2 and 2.1 are among the hardest passages Shakespeare wrote, and the difficulty is the point: the audience has to work out the thought at the same speed he is failing to."
     },
     {
       "id": "chorus",
@@ -554,12 +554,12 @@
       "id": "pastoral-festival",
       "name": "Festival and song",
       "definition": "A set-piece of country celebration, with dance, ballads and the giving of flowers.",
-      "inThisBook": "The sheep-shearing in 4.4 is the longest scene in Shakespeare, and it is built of ballads, a pedlar's pack and a flower speech that turns into a lament halfway through."
+      "inThisBook": "The sheep-shearing in 4.4 is the longest scene in Shakespeare, and it is built of ballads, a pedlar’s pack and a flower speech that turns into a lament halfway through."
     },
     {
       "id": "stage-image",
       "name": "The statue scene",
-      "definition": "A piece of staging held long enough to become the play's argument.",
+      "definition": "A piece of staging held long enough to become the play’s argument.",
       "inThisBook": "A woman standing motionless behind a curtain for eighty lines while a court talks about her: the last scene works because nobody is allowed to touch her until she moves."
     },
     {
@@ -577,7 +577,7 @@
       "reference": "1.2.134",
       "stage": "act-1",
       "context": "An aside, the instant Hermione succeeds in persuading Polixenes to stay.",
-      "analysis": "This is the whole onset of the jealousy, and it occupies four lines. 'Tremor cordis' is a physician's term, so he reaches for a diagnosis before he reaches for an accusation; the repetitions — too hot, mingle and mingling, not for joy, not joy — are a man arguing with something already decided.",
+      "analysis": "This is the whole onset of the jealousy, and it occupies four lines. ‘Tremor cordis’ is a physician’s term, so he reaches for a diagnosis before he reaches for an accusation; the repetitions — too hot, mingle and mingling, not for joy, not joy — are a man arguing with something already decided.",
       "themes": [
         "jealousy"
       ],
@@ -589,7 +589,7 @@
         "hermione",
         "polixenes"
       ],
-      "source": "Globe/Moby text, 1.2.134-137",
+      "source": "Globe/Moby text, 1.2.134–137",
       "cloze": [
         "hot",
         "tremor"
@@ -602,7 +602,7 @@
       "reference": "1.2.141",
       "stage": "act-1",
       "context": "Continuing the aside, describing what he can see across the stage.",
-      "analysis": "Everything he lists is something the audience can watch happening, which is what makes the scene so uncomfortable to stage: a director must decide how much of this is true. The hunting horn blown at a deer's death was a stock image for the sigh after sex, so the innuendo is doing the work that evidence cannot.",
+      "analysis": "Everything he lists is something the audience can watch happening, which is what makes the scene so uncomfortable to stage: a director must decide how much of this is true. The hunting horn blown at a deer’s death was a stock image for the sigh after sex, so the innuendo is doing the work that evidence cannot.",
       "themes": [
         "jealousy"
       ],
@@ -614,7 +614,7 @@
         "hermione",
         "polixenes"
       ],
-      "source": "Globe/Moby text, 1.2.141-144",
+      "source": "Globe/Moby text, 1.2.141–144",
       "cloze": [
         "paddling",
         "practised"
@@ -627,7 +627,7 @@
       "reference": "2.1.33",
       "stage": "act-2",
       "context": "Beginning a story for his mother and her ladies, moments before the guards arrive.",
-      "analysis": "The play takes its title from a child's game and then interrupts it for good: he gets two lines further before his father walks in. The phrase comes here, not in the happy fifth act, so the title describes Acts I to III and not the ending.",
+      "analysis": "The play takes its title from a child’s game and then interrupts it for good: he gets two lines further before his father walks in. The phrase comes here, not in the happy fifth act, so the title describes Acts I to III and not the ending.",
       "themes": [
         "time",
         "two-worlds"
@@ -637,7 +637,7 @@
         "mamillius",
         "hermione"
       ],
-      "source": "Globe/Moby text, 2.1.33-34",
+      "source": "Globe/Moby text, 2.1.33–34",
       "cloze": [
         "sad",
         "winter"
@@ -650,7 +650,7 @@
       "reference": "2.1.51",
       "stage": "act-2",
       "context": "On being told that Polixenes and Camillo have fled by ship.",
-      "analysis": "It is a brilliant image and it proves nothing whatever: the argument is that knowing makes the poison work, which conveniently means his own conviction is itself the evidence. He ends the sentence with 'I have drunk, and seen the spider', having drunk nothing and seen only two men leaving in a hurry.",
+      "analysis": "It is a brilliant image and it proves nothing whatever: the argument is that knowing makes the poison work, which conveniently means his own conviction is itself the evidence. He ends the sentence with ‘I have drunk, and seen the spider’, having drunk nothing and seen only two men leaving in a hurry.",
       "themes": [
         "jealousy"
       ],
@@ -660,7 +660,7 @@
       "characters": [
         "leontes"
       ],
-      "source": "Globe/Moby text, 2.1.51-57",
+      "source": "Globe/Moby text, 2.1.51–57",
       "cloze": [
         "spider",
         "venom"
@@ -673,7 +673,7 @@
       "reference": "3.2.83",
       "stage": "act-3",
       "context": "At her trial, answering the charge of conspiracy.",
-      "analysis": "'In the level of' is an archery term — she is standing in the line of his aim — and the aim is a dream. Leontes answers by taking the word off her: 'Your actions are my dreams', which is the play's most compact statement of how a delusion defends itself.",
+      "analysis": "‘In the level of’ is an archery term — she is standing in the line of his aim — and the aim is a dream. Leontes answers by taking the word off her: ‘Your actions are my dreams’, which is the play’s most compact statement of how a delusion defends itself.",
       "themes": [
         "jealousy",
         "authority-of-women"
@@ -683,7 +683,7 @@
         "hermione",
         "leontes"
       ],
-      "source": "Globe/Moby text, 3.2.83-85",
+      "source": "Globe/Moby text, 3.2.83–85",
       "cloze": [
         "language",
         "dreams"
@@ -696,7 +696,7 @@
       "reference": "3.2.28",
       "stage": "act-3",
       "context": "The opening of her defence, before the court.",
-      "analysis": "She makes blushing and trembling the business of the accusers, not the accused, which reverses the whole physical vocabulary of a trial. The conditional at the start — 'if powers divine behold' — is the risk she is taking, and within a hundred lines Apollo answers it, and Leontes refuses the answer.",
+      "analysis": "She makes blushing and trembling the business of the accusers, not the accused, which reverses the whole physical vocabulary of a trial. The conditional at the start — ‘if powers divine behold’ — is the risk she is taking, and within a hundred lines Apollo answers it, and Leontes refuses the answer.",
       "themes": [
         "authority-of-women",
         "faith"
@@ -706,7 +706,7 @@
         "hermione",
         "leontes"
       ],
-      "source": "Globe/Moby text, 3.2.28-32",
+      "source": "Globe/Moby text, 3.2.28–32",
       "cloze": [
         "innocence",
         "tyranny"
@@ -719,7 +719,7 @@
       "reference": "3.2.139",
       "stage": "act-3",
       "context": "Reading the sealed oracle aloud in the courtroom.",
-      "analysis": "Five flat verdicts and then one condition, and the condition is the plot of the last two acts. Everything before the final clause is in the present tense and settled; the play's whole second half hangs on the word 'if', which is the only uncertainty Apollo allows.",
+      "analysis": "Five flat verdicts and then one condition, and the condition is the plot of the last two acts. Everything before the final clause is in the present tense and settled; the play’s whole second half hangs on the word ‘if’, which is the only uncertainty Apollo allows.",
       "themes": [
         "faith",
         "time"
@@ -731,7 +731,7 @@
         "perdita",
         "camillo"
       ],
-      "source": "Globe/Moby text, 3.2.139-143",
+      "source": "Globe/Moby text, 3.2.139–143",
       "cloze": [
         "tyrant",
         "lost"
@@ -744,7 +744,7 @@
       "reference": "3.2.158",
       "stage": "act-3",
       "context": "One line after a servant reports that his son is dead.",
-      "analysis": "The delusion that survived a god's direct testimony collapses the moment a child dies, which is a brutal piece of arithmetic on the play's part. Note that he still makes the news about himself — the heavens are striking at his injustice, not at Mamillius.",
+      "analysis": "The delusion that survived a god’s direct testimony collapses the moment a child dies, which is a brutal piece of arithmetic on the play’s part. Note that he still makes the news about himself — the heavens are striking at his injustice, not at Mamillius.",
       "themes": [
         "jealousy",
         "faith"
@@ -754,7 +754,7 @@
         "leontes",
         "mamillius"
       ],
-      "source": "Globe/Moby text, 3.2.158-159",
+      "source": "Globe/Moby text, 3.2.158–159",
       "cloze": [
         "angry",
         "injustice"
@@ -767,7 +767,7 @@
       "reference": "3.2.192",
       "stage": "act-3",
       "context": "Returning to the court with the news that the queen is dead.",
-      "analysis": "She lists the punishments before she delivers the news, which is a way of making it impossible to silence her: every torment has already been named and accepted. The word 'tyrant' is placed inside the first question, where a king's title would go.",
+      "analysis": "She lists the punishments before she delivers the news, which is a way of making it impossible to silence her: every torment has already been named and accepted. The word ‘tyrant’ is placed inside the first question, where a king’s title would go.",
       "themes": [
         "authority-of-women",
         "jealousy"
@@ -777,7 +777,7 @@
         "paulina",
         "leontes"
       ],
-      "source": "Globe/Moby text, 3.2.192-196",
+      "source": "Globe/Moby text, 3.2.192–196",
       "cloze": [
         "torments",
         "tyrant"
@@ -790,7 +790,7 @@
       "reference": "3.3.59",
       "stage": "act-3",
       "context": "On the Bohemian coast, having just laid the baby down; the next line of the text is the stage direction.",
-      "analysis": "'A lullaby too rough' is addressed to an infant he is abandoning in a storm, and it is the gentlest thing said in three acts. The last four words are a cry of terror and also a piece of plain information, and the stage direction that follows them is the most famous in the language.",
+      "analysis": "‘A lullaby too rough’ is addressed to an infant he is abandoning in a storm, and it is the gentlest thing said in three acts. The last four words are a cry of terror and also a piece of plain information, and the stage direction that follows them is the most famous in the language.",
       "themes": [
         "two-worlds",
         "time"
@@ -802,7 +802,7 @@
         "antigonus",
         "perdita"
       ],
-      "source": "Globe/Moby text, 3.3.59-63",
+      "source": "Globe/Moby text, 3.3.59–63",
       "cloze": [
         "lullaby",
         "chase"
@@ -815,7 +815,7 @@
       "reference": "3.3.116",
       "stage": "act-3",
       "context": "To his son, who has just described the shipwreck and the bear, while holding the baby he has found.",
-      "analysis": "The play's structure is stated out loud by a man who has no idea he is describing it: one half of the stage has a wreck on it and the other half a child. It is also the only line in Shakespeare that could serve as a definition of tragicomedy, and it is given to a shepherd in prose.",
+      "analysis": "The play’s structure is stated out loud by a man who has no idea he is describing it: one half of the stage has a wreck on it and the other half a child. It is also the only line in Shakespeare that could serve as a definition of tragicomedy, and it is given to a shepherd in prose.",
       "themes": [
         "two-worlds",
         "time"
@@ -826,7 +826,7 @@
       "characters": [
         "perdita"
       ],
-      "source": "Globe/Moby text, 3.3.116-118",
+      "source": "Globe/Moby text, 3.3.116–118",
       "cloze": [
         "dying",
         "newborn"
@@ -839,7 +839,7 @@
       "reference": "4.3.24",
       "stage": "act-4",
       "context": "Introducing himself to the audience on the road to the sheep-shearing.",
-      "analysis": "Mercury was the god of thieves and of eloquence, and Autolycus in Homer was his son; the name is a joke for anyone who has it and a good name for a pedlar for anyone who has not. 'Littered' is a word for animals, and he applies it to himself without complaint.",
+      "analysis": "Mercury was the god of thieves and of eloquence, and Autolycus in Homer was his son; the name is a joke for anyone who has it and a good name for a pedlar for anyone who has not. ‘Littered’ is a word for animals, and he applies it to himself without complaint.",
       "themes": [
         "two-worlds"
       ],
@@ -849,7 +849,7 @@
       "characters": [
         "autolycus"
       ],
-      "source": "Globe/Moby text, 4.3.24-26",
+      "source": "Globe/Moby text, 4.3.24–26",
       "cloze": [
         "Mercury",
         "trifles"
@@ -862,7 +862,7 @@
       "reference": "4.4.109",
       "stage": "act-4",
       "context": "Disguised at the sheep-shearing, arguing with Perdita about grafted flowers.",
-      "analysis": "The argument is that human art is one of nature's own methods, and it is unanswerable — Perdita simply says 'So it is' and then refuses to do it anyway. The joke is savage: within forty lines the same speaker will forbid his noble son to marry a baser stock and threaten the girl with death.",
+      "analysis": "The argument is that human art is one of nature’s own methods, and it is unanswerable — Perdita simply says ‘So it is’ and then refuses to do it anyway. The joke is savage: within forty lines the same speaker will forbid his noble son to marry a baser stock and threaten the girl with death.",
       "themes": [
         "art-and-nature"
       ],
@@ -873,7 +873,7 @@
         "polixenes",
         "perdita"
       ],
-      "source": "Globe/Moby text, 4.4.109-114",
+      "source": "Globe/Moby text, 4.4.109–114",
       "cloze": [
         "scion",
         "nature"
@@ -897,7 +897,7 @@
       "characters": [
         "perdita"
       ],
-      "source": "Globe/Moby text, 4.4.137-141",
+      "source": "Globe/Moby text, 4.4.137–141",
       "cloze": [
         "Proserpina",
         "daffodils"
@@ -922,7 +922,7 @@
         "florizel",
         "perdita"
       ],
-      "source": "Globe/Moby text, 4.4.163-166",
+      "source": "Globe/Moby text, 4.4.163–166",
       "cloze": [
         "wave",
         "dance"
@@ -934,7 +934,7 @@
       "speaker": "Leontes",
       "reference": "5.1.67",
       "stage": "act-5",
-      "context": "Refusing, in front of Paulina, the court's suggestion that he remarry.",
+      "context": "Refusing, in front of Paulina, the court’s suggestion that he remarry.",
       "analysis": "He imagines his dead wife returning to reproach him, in a theatre, on a stage — and two scenes later she does return, without reproaching him at all. With ‘Where we’re offenders now’ the court becomes a playhouse and the living become the guilty party, which is exactly the arrangement of the final scene.",
       "themes": [
         "time",
@@ -948,7 +948,7 @@
         "paulina",
         "hermione"
       ],
-      "source": "Globe/Moby text, 5.1.67-71",
+      "source": "Globe/Moby text, 5.1.67–71",
       "cloze": [
         "wives",
         "stage"
@@ -973,7 +973,7 @@
         "leontes",
         "hermione"
       ],
-      "source": "Globe/Moby text, 5.3.28-31",
+      "source": "Globe/Moby text, 5.3.28–31",
       "cloze": [
         "Chide",
         "stone"
@@ -986,7 +986,7 @@
       "reference": "5.3.35",
       "stage": "act-5",
       "context": "Explaining why the statue looks older than the queen Leontes remembers.",
-      "analysis": "The wrinkles are the play's proof that the reconciliation is not a reversal: the sixteen years are carved into the object everyone is looking at. It is also a very good lie, and the audience is invited to notice that a sculptor who aged his subject would be doing something no sculptor does.",
+      "analysis": "The wrinkles are the play’s proof that the reconciliation is not a reversal: the sixteen years are carved into the object everyone is looking at. It is also a very good lie, and the audience is invited to notice that a sculptor who aged his subject would be doing something no sculptor does.",
       "themes": [
         "time",
         "art-and-nature"
@@ -999,7 +999,7 @@
         "leontes",
         "hermione"
       ],
-      "source": "Globe/Moby text, 5.3.35-37",
+      "source": "Globe/Moby text, 5.3.35–37",
       "cloze": [
         "carver's",
         "sixteen"
@@ -1012,7 +1012,7 @@
       "reference": "5.3.114",
       "stage": "act-5",
       "context": "Before calling for music and telling the statue to descend.",
-      "analysis": "The instruction is given to the people on stage and, unavoidably, to the people watching them: a theatre audience is always being asked to do this, and here the request is made out loud. 'Required' is the hardest word in the sentence — not invited, not encouraged, and with an exit offered to anyone who will not.",
+      "analysis": "The instruction is given to the people on stage and, unavoidably, to the people watching them: a theatre audience is always being asked to do this, and here the request is made out loud. ‘Required’ is the hardest word in the sentence — not invited, not encouraged, and with an exit offered to anyone who will not.",
       "themes": [
         "faith",
         "authority-of-women"
@@ -1023,7 +1023,7 @@
       "characters": [
         "paulina"
       ],
-      "source": "Globe/Moby text, 5.3.114-117",
+      "source": "Globe/Moby text, 5.3.114–117",
       "cloze": [
         "required",
         "faith"
@@ -1035,7 +1035,7 @@
       "speaker": "Leontes",
       "reference": "5.3.132",
       "stage": "act-5",
-      "context": "Taking Hermione's hand as she steps down from the pedestal.",
+      "context": "Taking Hermione’s hand as she steps down from the pedestal.",
       "analysis": "Three words settle a question the whole scene has hung on, and they are about temperature, not identity. The comparison he reaches for is eating — the most ordinary bodily fact available — which sets aside the supernatural reading while leaving it standing.",
       "themes": [
         "faith",
@@ -1048,7 +1048,7 @@
         "leontes",
         "hermione"
       ],
-      "source": "Globe/Moby text, 5.3.132-134",
+      "source": "Globe/Moby text, 5.3.132–134",
       "cloze": [
         "warm",
         "Lawful"
@@ -1074,7 +1074,7 @@
         "paulina",
         "hermione"
       ],
-      "source": "Globe/Moby text, 5.3.140-143",
+      "source": "Globe/Moby text, 5.3.140–143",
       "cloze": [
         "living",
         "tale"
@@ -1098,7 +1098,7 @@
         "perdita",
         "leontes"
       ],
-      "source": "Globe/Moby text, 5.3.147-149",
+      "source": "Globe/Moby text, 5.3.147–149",
       "cloze": [
         "graces",
         "daughter's"
@@ -1108,19 +1108,19 @@
   "timeline": [
     {
       "year": 1588,
-      "label": "Robert Greene's Pandosto published",
+      "label": "Robert Greene’s Pandosto published",
       "detail": "The prose romance Shakespeare follows closely, and whose jealous king kills himself at the end.",
       "kind": "context"
     },
     {
       "year": 1592,
       "label": "Greene dies, having attacked Shakespeare in print",
-      "detail": "The pamphlet that calls him an upstart crow appeared in the same year; twenty years later Shakespeare took Greene's plot.",
+      "detail": "The pamphlet that calls him an upstart crow appeared in the same year; twenty years later Shakespeare took Greene’s plot.",
       "kind": "context"
     },
     {
       "year": 1610,
-      "label": "The Winter's Tale most likely written",
+      "label": "The Winter’s Tale most likely written",
       "detail": "Usually dated 1609–11, among the late plays and close to Cymbeline and The Tempest.",
       "kind": "work"
     },
@@ -1132,8 +1132,8 @@
     },
     {
       "year": 1613,
-      "label": "Played at court for Princess Elizabeth's wedding festivities",
-      "detail": "The King's Men gave a long series of plays for the marriage of James's daughter, and this was among them.",
+      "label": "Played at court for Princess Elizabeth’s wedding festivities",
+      "detail": "The King’s Men gave a long series of plays for the marriage of James’s daughter, and this was among them.",
       "kind": "reception"
     },
     {
@@ -1145,12 +1145,12 @@
     {
       "year": 1623,
       "label": "First Folio",
-      "detail": "The only early text, printed last among the comedies and generally thought to have been set from a scribe's transcript.",
+      "detail": "The only early text, printed last among the comedies and generally thought to have been set from a scribe’s transcript.",
       "kind": "work"
     },
     {
       "year": 1756,
-      "label": "Garrick's Florizel and Perdita",
+      "label": "Garrick’s Florizel and Perdita",
       "detail": "An adaptation that kept the pastoral and cut most of the first three acts, and held the stage for decades.",
       "kind": "reception"
     },
@@ -1166,13 +1166,13 @@
       "name": "Sicily",
       "lat": 38.1157,
       "lon": 13.3615,
-      "note": "Leontes's court, the trial, and the chapel in Paulina's house."
+      "note": "Leontes’s court, the trial, and the chapel in Paulina’s house."
     },
     {
       "name": "Bohemia",
       "lat": 50.0755,
       "lon": 14.4378,
-      "note": "Polixenes's kingdom and the sheep-shearing — given a sea-coast by the play, which Bohemia has never had."
+      "note": "Polixenes’s kingdom and the sheep-shearing — given a sea-coast by the play, which Bohemia has never had."
     },
     {
       "name": "Delphi",
@@ -1184,7 +1184,7 @@
       "name": "Delos",
       "lat": 37.3936,
       "lon": 25.2686,
-      "note": "The Aegean island sacred to Apollo, routinely confused with Delphi in Shakespeare's day and the reason the ambassadors go by sea."
+      "note": "The Aegean island sacred to Apollo, routinely confused with Delphi in Shakespeare’s day and the reason the ambassadors go by sea."
     },
     {
       "name": "The Globe, Bankside",
@@ -1196,7 +1196,7 @@
   "criticalViews": [
     {
       "position": "A play about repentance and grace",
-      "summary": "The oldest reading takes the last scene at its word: sixteen years of penance are answered by something that looks like resurrection, and the language of faith, awakening and redemption is the play's own.",
+      "summary": "The oldest reading takes the last scene at its word: sixteen years of penance are answered by something that looks like resurrection, and the language of faith, awakening and redemption is the play’s own.",
       "counter": "Mamillius and Antigonus stay dead, and the play makes a point of the wrinkles — nothing is given back unaltered."
     },
     {
@@ -1211,29 +1211,29 @@
     },
     {
       "position": "The women and the recovery",
-      "summary": "Feminist criticism has noted how completely the second half depends on women — Paulina's management, Perdita's authority, Hermione's silence — and how little the restored marriage is allowed to say for itself.",
+      "summary": "Feminist criticism has noted how completely the second half depends on women — Paulina’s management, Perdita’s authority, Hermione’s silence — and how little the restored marriage is allowed to say for itself.",
       "counter": "The same reading has to account for Paulina being handed a new husband in the last thirty lines, with no line of her own to answer it."
     }
   ],
   "essayQuestions": [
     {
-      "question": "How does Shakespeare present Leontes's jealousy, and what is the effect of giving it no cause?",
+      "question": "How does Shakespeare present Leontes’s jealousy, and what is the effect of giving it no cause?",
       "focus": "Language, evidence and the absence of an Iago",
       "plan": [
         "Compare the opening with Othello: there is no tempter here, and the suspicion takes nine lines.",
         "Analyse the syntax of 1.2.134 onward — the restarts, the parentheses, the sexual punning that arrives before the accusation.",
         "Use the spider speech at 2.1.51 to show the jealousy generating its own proof.",
-        "Examine 3.2: the oracle is denied, and only a child's death breaks the delusion.",
+        "Examine 3.2: the oracle is denied, and only a child’s death breaks the delusion.",
         "Conclude on what the missing motive does to an audience, which is left with nothing to blame but a mind."
       ]
     },
     {
-      "question": "Discuss the function of the play's two halves.",
+      "question": "Discuss the function of the play’s two halves.",
       "focus": "Structure, genre and the bear",
       "plan": [
         "Set out the shape: three acts of tragedy, a chorus, two acts of pastoral comedy.",
-        "Read 3.3 closely — the abandonment, the bear, the Clown's comic account of a drowning — as the point where the genres change hands.",
-        "Use the Shepherd's 'things dying, I with things newborn' as the play's own description of its form.",
+        "Read 3.3 closely — the abandonment, the bear, the Clown’s comic account of a drowning — as the point where the genres change hands.",
+        "Use the Shepherd’s ‘things dying, I with things newborn’ as the play’s own description of its form.",
         "Show how the second half keeps the first in view: sixteen years, an aged statue, a dead son never replaced.",
         "Argue whether the join is a flaw the play survives or the whole point of it."
       ]
@@ -1246,23 +1246,23 @@
         "Analyse the denunciation at 3.2.192 and note that she lists the tortures before delivering the news.",
         "Trace her control of the sixteen years: the daily visits to the grave, the veto on remarriage in 5.1.",
         "Read 5.3 as a piece of direction — the curtain, the standstill, the music, the instruction about faith.",
-        "Weigh the ending, in which the play's most independent character is given a husband in a single line."
+        "Weigh the ending, in which the play’s most independent character is given a husband in a single line."
       ]
     },
     {
-      "question": "'The last scene works because the audience is asked to do something.' Discuss.",
+      "question": "‘The last scene works because the audience is asked to do something.’ Discuss.",
       "focus": "Faith, wonder and the reported reunion",
       "plan": [
         "Note first what the play declines to show: the recognition of Perdita is handed to three gentlemen in 5.2.",
         "Establish what the audience knows and does not know going into 5.3, and what a production can choose to signal.",
-        "Analyse 'It is required You do awake your faith' as an instruction aimed past the stage.",
-        "Consider 'O, she's warm' and the comparison to eating — the wonder is confirmed by the most ordinary evidence available.",
-        "Decide what Hermione's silence towards her husband does to the effect, and whether the scene is a reward or a question."
+        "Analyse ‘It is required You do awake your faith’ as an instruction aimed past the stage.",
+        "Consider ‘O, she’s warm’ and the comparison to eating — the wonder is confirmed by the most ordinary evidence available.",
+        "Decide what Hermione’s silence towards her husband does to the effect, and whether the scene is a reward or a question."
       ]
     }
   ],
   "discussionQuestions": [
-    "Leontes becomes jealous in nine lines with no evidence at all. Is that harder or easier to watch than Othello's slow poisoning?",
+    "Leontes becomes jealous in nine lines with no evidence at all. Is that harder or easier to watch than Othello’s slow poisoning?",
     "The reunion of father and daughter happens offstage and is described by strangers. Why give away the scene most plays would build to?",
     "Was Hermione alive for sixteen years, or restored? Does a production have to decide?",
     "Mamillius never comes back, and nobody in the last scene mentions him. What does that silence do to the ending?",
