@@ -16,10 +16,10 @@ const cards = JSON.parse(fs.readFileSync(cardsFile, 'utf8'));
 
 const ROOMS = [
   ['playhouse', 'The playhouse', 'Speeches with their cues and line numbers.', 'Drama from Marlowe, Shakespeare and Webster: soliloquies, set-pieces and exchanges, set as a prompt-book with speaker cues and numbered lines.'],
-  ['verse', 'The verse room', 'Poems, numbered.', 'Sonnet, epic and lyric, with line numbers in the gutter—and, for the Mariner, Coleridge’s own marginal gloss.'],
+  ['verse', 'The verse room', 'Poems, numbered.', 'Sonnet, epic and lyric, with line numbers in the gutter and, for the Mariner, Coleridge’s own marginal gloss.'],
   ['manuscripts', 'The manuscript room', 'Journals, letters, statements, narratives.', 'Texts that are written documents inside their fiction: a shorthand journal, a confession, a slave narrative, a first letter home.'],
   ['openings', 'Openings', 'First pages.', 'The first sentences of great books, read for what they promise and what they already know.'],
-  ['endings', 'Endings', 'Last pages.', 'Final paragraphs and the weight they carry: a black flag, a boat against the current, a fly in the waste-paper basket.'],
+  ['endings', 'Endings', 'Last pages.', 'Final paragraphs: a black flag, a boat against the current, a fly in the waste-paper basket.'],
   ['prose', 'The prose room', 'Scenes, arguments, portraits.', 'Novels, epics in prose, a treatise, a preface: passages where a scene or an argument turns.']
 ];
 const FORM = [
