@@ -31,7 +31,7 @@ module.exports = {
       {
         title: 'Croquet, trial and waking',
         body: [
-          'The Queen’s croquet ground enlarges the disorder into government. Living equipment will not hold its shape, the Queen substitutes sentences for decisions, and courtiers survive by anticipating her temper. In the trial of the Knave of Hearts, legal forms remain visible—judge, jury, evidence and verdict—but their order is reversed or ignored.',
+          'The Queen’s croquet ground enlarges the disorder into government. Living equipment will not hold its shape, the Queen substitutes sentences for decisions, and courtiers survive by anticipating her temper. In the trial of the Knave of Hearts, legal forms remain visible (judge, jury, evidence and verdict), but their order is reversed or ignored.',
           'At the trial Alice grows in size and in confidence. She can name the court as a pack of cards because its authority has ceased to persuade her. The waking does not cancel what came before; it lets the book return the sister and reader to the riverbank with a sharper sense of how a child hears adult language.'
         ]
       }
@@ -58,7 +58,7 @@ module.exports = {
         title: 'The court dismissed',
         body: [
           'The word “but” reduces the whole court from sovereign spectacle to ordinary material. Alice can do this only after she has grown large enough to resist its threats and watched its rules collapse. Naming becomes an act of judgement: the court is dangerous while everyone agrees to treat it as a court.',
-          'The cards fly at Alice at the instant of exposure, joining the trial to the waking leaves on the riverbank. The ending preserves both explanations—the vivid danger of the dream and the paper-thin basis of its power.'
+          'The cards fly at Alice at the instant of exposure, joining the trial to the waking leaves on the riverbank. The ending preserves both explanations: the vivid danger of the dream and the paper-thin basis of its power.'
         ]
       }
     ],
@@ -86,7 +86,7 @@ module.exports = {
         title: 'Lessons, recitations and remembered poems',
         body: [
           'Several of Alice’s recitations reshape poems associated with moral instruction or schoolroom memory. The joke was especially sharp for readers who knew the expected lines, but recognition is not required for the scenes to work: Alice expects memorised language to prove who she is, and Wonderland sends back altered versions.',
-          'That pattern helps explain the book’s mixed address. Children can follow the reversals and interruptions; adults are invited to hear institutional habits—schooling, etiquette, courts and commands—through the child’s effort to make sense of them.'
+          'That pattern helps explain the book’s mixed address. Children can follow the reversals and interruptions; adults are invited to hear institutional habits (schooling, etiquette, courts and commands) through the child’s effort to make sense of them.'
         ]
       }
     ],
@@ -313,7 +313,7 @@ module.exports = {
         label: 'Composition',
         title: 'From notebook premise to working manuscript',
         body: [
-          'Montgomery’s surviving notes preserve the seed of the plot: an elderly couple ask an orphanage for a boy and receive a girl. The official Anne manuscript project shows how she surrounded that premise with advance planning—what she called “spade work”—before beginning composition in June 1905.',
+          'Montgomery’s surviving notes preserve the seed of the plot: an elderly couple ask an orphanage for a boy and receive a girl. The official Anne manuscript project shows how she surrounded that premise with advance planning (what she called “spade work”) before beginning composition in June 1905.',
           'The manuscript is full of changes, insertions and reused paper. It demonstrates that Anne’s apparently effortless voice was revised into shape. A facsimile shows how much physical work went into writing the book.'
         ]
       },
@@ -330,7 +330,7 @@ module.exports = {
         title: 'Boston publication and a Canadian world',
         body: [
           'Montgomery signed with the Boston firm L. C. Page in April 1907, and the novel appeared in June 1908. Its American publication helps explain why the first edition uses forms that later British printings sometimes regularised. Preserving that spelling and punctuation keeps the chosen base text visible.',
-          'The success was international very quickly: a Swedish translation appeared in 1909. Yet the novel’s material world remains local—farm labour, district school, church, roads and household economies give Anne’s imaginative language something definite to transform.'
+          'The success was international very quickly: a Swedish translation appeared in 1909. Yet the novel’s material world remains local: farm labour, district school, church, roads and household economies give Anne’s imaginative language something definite to transform.'
         ]
       }
     ],
@@ -424,7 +424,7 @@ module.exports = {
         title: 'The narrator’s voice',
         body: [
           'The narrator claims direct knowledge of much that happened in Surinam and explains absences from crucial moments. Those statements organise trust, but they also make her position visible: she moves within the colonial society that can observe Oroonoko without freeing him.',
-          'Modern scholarship disputes details of Behn’s biography and the extent of any visit. The most useful reading keeps both facts in view—the text insistently performs eyewitness authority, and that performance is not the same thing as independent proof.'
+          'Modern scholarship disputes details of Behn’s biography and the extent of any visit. The most useful reading keeps both facts in view: the text insistently performs eyewitness authority, and that performance is no independent proof.'
         ]
       }
     ],
@@ -660,7 +660,7 @@ module.exports = {
         title: 'Toad and the motor car',
         body: [
           'The motor car first arrives as sound: a rising hum and brazen warning that displaces the caravan. Toad repeats its horn-call until imitation becomes possession. Before he can drive responsibly, the machine has already reorganised his attention and speech.',
-          'The childish syllables make the obsession funny, yet the plot records material consequences—damaged vehicles, frightened road users, court proceedings and prison. Sound bridges fantasy and danger.'
+          'The childish syllables make the obsession funny, yet the plot records material consequences: damaged vehicles, frightened road users, court proceedings and prison. Sound bridges fantasy and danger.'
         ]
       },
       {
@@ -696,7 +696,7 @@ module.exports = {
         title: 'Road law, speed and the first edition',
         body: [
           'The Motor Car Act 1903 introduced national registration and driving licences and set a twenty-mile-per-hour maximum. Toad’s offences are exaggerated for comedy, but arguments about speed and road danger were already current in 1908.',
-          'The 1908 Methuen edition had a frontispiece by W. Graham Robertson. Later illustrations—especially E. H. Shepard’s—became central to the book’s public image, but they belong to its afterlife. The restrained first cover helps recover how the earliest readers first met it.'
+          'The 1908 Methuen edition had a frontispiece by W. Graham Robertson. Later illustrations, especially E. H. Shepard’s, became central to the book’s public image, but they belong to its afterlife. The restrained first cover helps recover how the earliest readers first met it.'
         ]
       }
     ],
@@ -790,7 +790,7 @@ module.exports = {
         title: 'The opening joke',
         body: [
           'In The Giant Wistaria, George’s proverb begins as playful Gothic talk. “Truth” is grammatically female before the household discovers the child in the well and the woman in the roots. The sentence thus predicts evidence the speaker does not yet take seriously.',
-          'The vine at the end is a handsome ornament with a ‘strangling’ grip. Gilman makes inherited beauty depend on a concealed domestic history, then uses repair work—opening, clearing and dismantling—to bring that history back into view.'
+          'The vine at the end is a handsome ornament with a “strangling” grip. Gilman makes inherited beauty depend on a concealed domestic history, then uses repair work (opening, clearing and dismantling) to bring that history back into view.'
         ]
       }
     ],
@@ -818,7 +818,7 @@ module.exports = {
         title: 'Hyphen, manuscript and magazine',
         body: [
           'The January 1892 heading prints The Yellow Wall-Paper with a hyphen, while later editions often use Wallpaper. A surviving manuscript and the periodical text contain differences that can affect pace and interpretation. The edition records the variants, instead of printing one tidied online version as if it were final.',
-          'The Giant Wistaria also has a layered history. Gilman revised an earlier, now-lost ghost-story project and added the colonial prelude. Its wisteria contains an anachronism—the plant reached Europe after the colonial period imagined in the opening—so atmosphere and botanical history do not align neatly.'
+          'The Giant Wistaria also has a layered history. Gilman revised an earlier, now-lost ghost-story project and added the colonial prelude. Its wisteria contains an anachronism (the plant reached Europe after the colonial period imagined in the opening), so atmosphere and botanical history do not align neatly.'
         ]
       }
     ],
@@ -865,7 +865,7 @@ module.exports = {
   'the-great-gatsby': {
     heading: 'Nick’s account, told in nine chapters.',
     introduction: [
-      'The Great Gatsby is not a neutral window onto the Jazz Age. Nick Carraway tells the story after leaving the East, arranging a summer of encounters into a retrospective judgement. Information arrives out of order: Gatsby first appears as a silhouette, then as rumour, host and former lover, and only later as James Gatz. The delay lets readers experience the social invention before meeting the history underneath it. Nick’s selection—what he withholds, reconstructs and finally condemns—is part of the novel’s action.',
+      'The Great Gatsby gives no neutral view of the Jazz Age. Nick Carraway tells the story after leaving the East, arranging a summer of encounters into a retrospective judgement. Information arrives out of order: Gatsby first appears as a silhouette, then as rumour, host and former lover, and only later as James Gatz. The delay lets readers experience the social invention before meeting the history underneath it. Nick’s selection (what he withholds, reconstructs and finally condemns) is part of the novel’s action.',
       'Place performs an equally exact function. East Egg, West Egg, Manhattan, the valley of ashes and the Midwest distinguish inherited position, new money, labour, spectacle and retreat. Cars, trains, telephones, advertising and illicit alcohol keep those spaces connected while distributing risk unequally. Gatsby can cross the bay and fill a house, but he cannot make Daisy’s intervening life disappear. The tragedy grows from treating time as something wealth and performance ought to be able to purchase.'
     ],
     movementHeading: 'The story, chapter by chapter.',

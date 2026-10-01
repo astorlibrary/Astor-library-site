@@ -266,7 +266,7 @@ module.exports = [
         label: "Commodity",
         title: "The Bastard and commodity",
         paragraphs: [
-          "At Angers, the Bastard watches two kings abandon their declared principles once marriage and territory make peace profitable. His soliloquy names ‘Commodity’—self-interest—as the force that turns the world. The speech is exhilarating because he sees through public language, but its final turn is not morally clean: having little fortune, he decides to worship advantage too.",
+          "At Angers, the Bastard watches two kings abandon their declared principles once marriage and territory make peace profitable. His soliloquy names “Commodity” (self-interest) as the force that turns the world. The speech is exhilarating because he sees through public language, but its final turn is not morally clean: having little fortune, he decides to worship advantage too.",
           "That choice gives his later loyalty weight. The Bastard continues to mock pretension, yet Arthur’s death makes service to John ethically difficult and the French invasion makes desertion dangerous. By the final act he speaks with a national authority the king has lost. A production must decide whether this is moral growth, hard political necessity or the success of another powerful performance.",
         ],
       },
@@ -282,7 +282,7 @@ module.exports = [
         label: "Legitimacy",
         title: "Possession and right",
         paragraphs: [
-          "Eleanor’s opening aside gives away the constitutional problem: John’s strongest title is that he already rules. The drama then tests competing ways of making authority visible—genealogy, victory, coronation, oath, papal judgment and the consent of a city. None is sufficient on its own, and several can be bought or reversed.",
+          "Eleanor’s opening aside gives away the constitutional problem: John’s strongest title is that he already rules. The drama then tests competing ways of making authority visible: genealogy, victory, coronation, oath, papal judgment and the consent of a city. None is sufficient on its own, and several can be bought or reversed.",
           "John is most forceful while answering the first challenge and weakest after Arthur’s disappearance exposes the insecurity beneath his rule. The Bastard travels in the opposite direction, beginning without legitimate name or land and ending as the clearest voice of national resistance. The contrast does not solve the succession question; it separates inherited right from the capacity to command belief.",
         ],
       },

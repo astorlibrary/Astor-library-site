@@ -17,7 +17,7 @@ module.exports = [
       'Questions about recovery, authorship and the lives preserved in archives.'
     ],
     sectionHeading: 'A story with two recoveries',
-    sectionIntro: 'The essay follows a document back through the people, journeys and institutions that made it visible—and invisible.',
+    sectionIntro: 'The essay follows a document back through the people, journeys and institutions that made it visible, and invisible.',
     readings: [
       { label: '1927', title: 'A meeting on the road', copy: 'Travelling with Zora Neale Hurston, Hughes encountered an escaped chain-gang prisoner. That meeting linked a private act of survival to a much wider history of forced labour in the South.' },
       { label: '1933', title: 'A foreword crosses languages', copy: 'Hughes supplied a foreword for Walter Wilson’s book. It appeared in Russian, but not in the English-language editions through which most later readers knew the work.' },
@@ -104,7 +104,7 @@ module.exports = [
       { label: 'Maqbool', title: 'Desire is politically dangerous', copy: 'Nimmi’s position is not a copy of Lady Macbeth’s. Her vulnerability and agency emerge from the criminal household in which intimacy and command cannot be separated.' },
       { label: 'Film form', title: 'The camera redistributes knowledge', copy: 'Close-ups, cuts, music and landscape decide what the audience can read in a face or body. Those choices can give women a presence that spoken dialogue alone does not measure.' }
     ],
-    note: 'For comparative writing, begin with one precise change—an object, setting, shot or action—and explain what the new form allows Bhardwaj to ask about Shakespeare’s play.',
+    note: 'For comparative writing, begin with one precise change (an object, setting, shot or action) and explain what the new form allows Bhardwaj to ask about Shakespeare’s play.',
     relatedBooks: [
       { href: '/books/othello/', label: 'Read the Othello book page' },
       { href: '/books/macbeth/', label: 'Read the Macbeth book page' }
@@ -262,7 +262,7 @@ module.exports = [
       'The movement from Sicilian court to Bohemian pastoral.',
       'Critical perspectives, key passages and preparation for essays and exams.'
     ],
-    sectionHeading: 'What sixteen years can—and cannot—repair',
+    sectionHeading: 'What sixteen years can and cannot repair',
     sectionIntro: 'The play changes country, generation and dramatic form, but it does not pretend that time simply erases what Leontes has done.',
     readings: [
       { label: 'Sicilia', title: 'Jealousy becomes government', copy: 'Leontes converts a private certainty into public law. Because the accusation comes from a king, misreading damages a marriage, a court, a child and the future of the state.' },

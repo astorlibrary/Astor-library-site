@@ -792,7 +792,7 @@ const editionUpdateBooks = [
     topics: [
       { title: 'Desire and control', body: 'Law, magic and theatrical direction repeatedly attempt to organise attachments that remain unstable.' },
       { title: 'Fairy disturbance', body: 'The quarrel over the changeling links private possession to weather, season and ecological disorder.' },
-      { title: 'Watching a play', body: 'Pyramus and Thisbe makes the Athenian court—and the audience—responsible for how performance is received.' }
+      { title: 'Watching a play', body: 'Pyramus and Thisbe makes the Athenian court, and the audience, responsible for how performance is received.' }
     ]
   }),
   inCollection('shakespeare', {

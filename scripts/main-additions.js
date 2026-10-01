@@ -114,7 +114,7 @@ module.exports = [
     movementIntro: 'The play begins with global fantasies and ends by making every minute audible.',
     movements: [
       { label: 'Choice', title: 'Faustus turns from his studies to magic', body: 'Faustus reviews the university disciplines and values each only by whether it can grant absolute power. Valdes and Cornelius encourage magic.' },
-      { label: 'Bargain', title: 'Mephistopheles, and the contract signed in blood', body: 'Mephistopheles explains hell, but Faustus negotiates with Lucifer, signs in blood and ignores the command “Homo, fuge”—fly, man.' },
+      { label: 'Bargain', title: 'Mephistopheles, and the contract signed in blood', body: 'Mephistopheles explains hell, but Faustus negotiates with Lucifer, signs in blood and ignores the command “Homo, fuge” (fly, man).' },
       { label: 'Diversion', title: 'Faustus wavers, and the Seven Deadly Sins', body: 'Good and Evil Angels compete for him. When his questions reach creation, Lucifer distracts him with the Seven Deadly Sins.' },
       { label: 'Diminishment', title: 'The Emperor’s court, the ostlers and the horse-courser', body: 'Faustus travels and performs tricks for the Pope, Emperor, duke and lesser customers. His imagined command of nations contracts into display.' },
       { label: 'Last hour', title: 'The Old Man, Helen, and the last hour', body: 'An Old Man makes a final appeal. Faustus asks for Helen, then for time, concealment and extinction as the clock moves towards midnight.' }
@@ -473,7 +473,7 @@ module.exports = [
         label: 'Invocation',
         title: 'The opening sentence',
         paragraphs: [
-          'The poem begins “Of Man’s first disobedience”, but its governing verb—“Sing”—does not arrive until line six. Before stating its action, the sentence has moved through forbidden fruit, death, suffering and promised restoration.',
+          'The poem begins “Of Man’s first disobedience”, but its governing verb, “Sing”, does not arrive until line six. Before stating its action, the sentence has moved through forbidden fruit, death, suffering and promised restoration.',
           'The “Heavenly Muse” belongs to Sinai and biblical creation as well as classical epic. Milton’s purpose to “justify the ways of God to men” gives readers a standard against which to test every account of liberty, obedience and justice.'
         ]
       },

@@ -153,7 +153,7 @@ module.exports.push(
   { name: 'Wilkie Collins', href: '/authors/wilkie-collins/', birthDate: '1824', deathDate: '1889', profileType: 'catalogue', description: 'The Woman in White and The Moonstone are available with complete texts, publication history and material on their multiple narrators and investigations.' },
   { name: 'Stephen Crane', href: '/authors/stephen-crane/', birthDate: '1871', deathDate: '1900', profileType: 'catalogue', description: 'The catalogue pairs The Red Badge of Courage with the complete seventeen-story 1898 London collection The Open Boat and Other Stories.' },
   { name: 'E. Nesbit', href: '/authors/e-nesbit/', birthDate: '1858', deathDate: '1924', profileType: 'catalogue', description: 'The Railway Children is available with chapter summaries and context on Edwardian railways, family life, publication and adaptation.' },
-  { name: 'Algernon Blackwood', href: '/authors/algernon-blackwood/', birthDate: '1869', deathDate: '1951', profileType: 'catalogue', description: 'The Willows and The Wendigo, each with material on the real journeys behind them — the Danube marshes and the Canadian bush — and on how the stories were first printed.' },
+  { name: 'Algernon Blackwood', href: '/authors/algernon-blackwood/', birthDate: '1869', deathDate: '1951', profileType: 'catalogue', description: 'The Willows and The Wendigo, each with material on the real journeys behind them (the Danube marshes and the Canadian bush) and on how the stories were first printed.' },
   { name: 'Jerome K. Jerome', href: '/authors/jerome-k-jerome/', birthDate: '1859', deathDate: '1927', profileType: 'catalogue', description: 'Three Men in a Boat preserves the 1889 text and A. Frederics illustrations, with context on the Victorian Thames and the book’s publication.' }
 );
 
@@ -173,7 +173,7 @@ module.exports.push(
 
 const updatedDescriptions = {
   'Charles Dickens': 'The catalogue includes Great Expectations and Dickens’s Christmas books, separately and in a collection, with publication history, contextual notes and study material.',
-  'Mark Twain': 'Four Twain novels — Huckleberry Finn, Tom Sawyer, A Connecticut Yankee and Pudd’nhead Wilson — each with its own publication history and notes.',
+  'Mark Twain': 'Four Twain novels (Huckleberry Finn, Tom Sawyer, A Connecticut Yankee and Pudd’nhead Wilson), each with its own publication history and notes.',
   'Oscar Wilde': 'The catalogue includes The Picture of Dorian Gray and The Importance of Being Earnest, with publication, textual and performance history.',
   'William Shakespeare': 'The Shakespeare catalogue includes the plays, Sonnets and narrative poems, with standard, expanded scholarly and specialist editions identified separately.'
 };

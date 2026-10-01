@@ -103,7 +103,7 @@ module.exports = [
       { href: '/books/the-tempest/', title: 'The Tempest', author: 'William Shakespeare', year: 'c.1610–11', image: '/The%20Tempest.png', copy: 'A staged shipwreck gives Prospero the power to punish, educate, forgive and finally release his audience.' }
     ],
     reading: {
-      heading: 'Follow who controls the scene—and when that control changes hands.',
+      heading: 'Follow who controls the scene, and when that control changes hands.',
       paragraphs: [
         'Begin with the obstruction. A father controls a marriage, an older brother blocks an inheritance, jealousy governs a household or a law threatens an outsider. Comedy needs a pressure strong enough to make another space, name or performance necessary. The forest, disguise and practical joke are responses to a social arrangement, not decorative detours from it.',
         'Then read the ending backwards. Which earlier mistake must be retold? Who produces proof, recognises a face or accepts a new account? A final embrace may depend on an improbable arrival, but stage action makes that improbability visible and communal. The audience watches knowledge being shared, even when one character does not accept the terms.'
@@ -235,7 +235,7 @@ module.exports = [
     reading: {
       heading: 'Read the scene before judging the character.',
       paragraphs: [
-        'A tragic figure is often reduced to one noun—ambition, jealousy, pride, indecision. Those words can begin a discussion, but they cannot explain a play. Ask what has happened immediately before the speech, who is present, what the speaker wants from them and which action the language is trying to make possible.',
+        'A tragic figure is often reduced to one noun: ambition, jealousy, pride, indecision. Those words can begin a discussion, but they cannot explain a play. Ask what has happened immediately before the speech, who is present, what the speaker wants from them and which action the language is trying to make possible.',
         'Keep the audience in view as well. A soliloquy creates temporary intimacy; an aside divides knowledge inside a scene; an entrance may expose a lie; a body on stage can contradict the official account of a death. Tragedy is made from what spectators are asked to know, wait for and witness together.'
       ]
     },
@@ -407,7 +407,7 @@ module.exports = [
     reading: {
       heading: 'Ask who is allowed to sound reasonable.',
       paragraphs: [
-        'Begin with the form the passage imitates: law, travel account, political advice, scientific argument, commandment or song. What authority normally belongs to that form? Then identify the detail that puts pressure on it—a disproportion, contradiction, bodily fact or excluded person the formal language cannot comfortably contain.',
+        'Begin with the form the passage imitates: law, travel account, political advice, scientific argument, commandment or song. What authority normally belongs to that form? Then identify the detail that puts pressure on it: a disproportion, contradiction, bodily fact or excluded person the formal language cannot comfortably contain.',
         'Avoid reducing allegory to a one-for-one code. Historical reference matters greatly in Animal Farm, but the fable remains powerful because appetite, fear, labour, education and memory create relations that exceed a simple key. Good political reading moves between the specific history and the wider mechanism without abandoning either.'
       ]
     },

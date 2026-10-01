@@ -102,7 +102,7 @@ module.exports = [
     title: 'Twelfth Night',
     image: 'Twelfth Night Study Cover.png',
     url: 'https://astorlibrary.com/go/twelfth-night-study',
-    description: 'A shipwreck, a disguise, a household in mourning, a forged letter — and the shadows at the edge of the ending.'
+    description: 'A shipwreck, a disguise, a household in mourning, a forged letter, and the shadows at the edge of the ending.'
   },
   {
     title: 'The Rime of the Ancient Mariner',

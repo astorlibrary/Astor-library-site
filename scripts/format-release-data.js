@@ -859,7 +859,7 @@ const remainingBooks = [
       'Toby “Trotty” Veck is an elderly ticket-porter who waits for work outside a London church. Poor but good-natured, he begins to accept the claim that people like him are born bad.',
       'Mr Filer uses statistics against the poor, Alderman Cute proposes punishment as social policy and Sir Joseph Bowley presents dependence on wealthy patrons as benevolence. By nightfall, Trotty has lost faith in himself and his class.',
       'The bells call him into the church tower and show a possible future in which those arguments govern ordinary lives. Meg, Richard, Lilian and Will Fern bear the consequences.',
-      'First published on 16 December 1844, The Chimes was Dickens’s second Christmas book. Its four divisions—First Quarter through Fourth Quarter—are Dickens’s own.'
+      'First published on 16 December 1844, The Chimes was Dickens’s second Christmas book. Its four divisions (First Quarter through Fourth Quarter) are Dickens’s own.'
     ],
     editorial: [
       'The complete story retains Dickens’s spelling, punctuation, capitalisation and dialect. Footnotes and chapter-end material explain the Poor Law, political economy, poverty, needlework, suicide law and reform debate.',
