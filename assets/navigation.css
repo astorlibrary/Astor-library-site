@@ -48,8 +48,8 @@ body {
   padding: 0;
   display: block;
   border: 1px solid var(--astor-nav-line);
-  border-top: 3px solid var(--astor-nav-wine);
-  background: var(--astor-nav-paper);
+  border-top: 3px solid var(--wine-text,var(--astor-nav-wine));
+  background: var(--surface,var(--astor-nav-paper));
   box-shadow: 0 16px 44px rgba(33, 29, 26, 0.11);
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
@@ -65,7 +65,7 @@ body {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(216, 184, 111, 0.08), transparent 34%),
-    var(--astor-nav-paper);
+    var(--surface,var(--astor-nav-paper));
 }
 
 .astor-global-header.site-header .brand {
@@ -260,7 +260,7 @@ body {
   grid-template-columns: minmax(270px, 0.72fr) minmax(0, 2.28fr);
   overflow: auto;
   border: 1px solid rgba(16, 38, 59, 0.42);
-  background: var(--astor-nav-paper);
+  background: var(--surface,var(--astor-nav-paper));
   box-shadow: 0 30px 74px rgba(16, 38, 59, 0.25);
   color: var(--astor-nav-ink);
   animation: astor-browse-in 0.2s ease-out;
@@ -348,14 +348,14 @@ body {
   min-width: 0;
   padding: 27px 29px 30px;
   background:
-    linear-gradient(rgba(110, 31, 43, 0.025), rgba(110, 31, 43, 0.025)),
-    var(--astor-nav-paper);
+    linear-gradient(rgba(var(--wine-rgb,110,31,43),0.025), rgba(var(--wine-rgb,110,31,43),0.025)),
+    var(--surface,var(--astor-nav-paper));
 }
 
 .astor-browse-directory section > h2,
 .astor-directory-heading > h2 {
   margin: 0 0 13px;
-  color: var(--astor-nav-wine);
+  color: var(--wine-text,var(--astor-nav-wine));
   font: 900 9px/1.2 var(--astor-nav-sans);
   letter-spacing: 0.17em;
   text-transform: uppercase;
@@ -394,7 +394,7 @@ body {
 
 .astor-browse-cards em {
   display: none;
-  color: var(--astor-nav-wine);
+  color: var(--wine-text,var(--astor-nav-wine));
   font: 800 9px/1.45 var(--astor-nav-sans);
   letter-spacing: 0.07em;
 }
@@ -428,7 +428,7 @@ body {
 }
 
 .astor-directory-heading > a {
-  color: var(--astor-nav-wine);
+  color: var(--wine-text,var(--astor-nav-wine));
   font: 800 10px/1.3 var(--astor-nav-sans);
   text-decoration: none;
 }
@@ -516,8 +516,8 @@ body {
 .astor-global-header .astor-account-link:hover,
 .astor-global-header .astor-account-link:focus-visible,
 .astor-global-header .astor-account-link[aria-current] {
-  background: var(--astor-nav-paper);
-  color: var(--astor-nav-wine);
+  background: var(--surface,var(--astor-nav-paper));
+  color: var(--wine-text,var(--astor-nav-wine));
 }
 
 .astor-global-header a:focus-visible,
@@ -528,12 +528,12 @@ body {
 }
 
 .astor-browse-panel a:focus-visible {
-  outline-color: var(--astor-nav-wine);
+  outline-color: var(--wine-text,var(--astor-nav-wine));
 }
 
 .astor-global-header .astor-header-identity a:focus-visible,
 .astor-global-header .astor-header-identity button:focus-visible {
-  outline-color: var(--astor-nav-wine);
+  outline-color: var(--wine-text,var(--astor-nav-wine));
   outline-offset: 3px;
 }
 
@@ -741,7 +741,7 @@ body.is-site-menu-open {
     border-top: 1px solid var(--astor-nav-line);
     background:
       linear-gradient(90deg, rgba(216, 184, 111, 0.08), transparent 38%),
-      var(--astor-nav-paper);
+      var(--surface,var(--astor-nav-paper));
     color: var(--astor-nav-ink);
     -webkit-overflow-scrolling: touch;
   }
@@ -783,7 +783,7 @@ body.is-site-menu-open {
     width: 31px;
     display: inline-block;
     flex: 0 0 31px;
-    color: var(--astor-nav-wine);
+    color: var(--wine-text,var(--astor-nav-wine));
     font: 850 8px/1 var(--astor-nav-sans);
     letter-spacing: 0.12em;
   }
@@ -803,7 +803,7 @@ body.is-site-menu-open {
   .astor-global-header.site-header.site-nav-ready .astor-browse-menu.is-current-section > summary {
     padding-left: 15px;
     background: var(--astor-nav-paper-deep);
-    color: var(--astor-nav-wine);
+    color: var(--wine-text,var(--astor-nav-wine));
   }
 
   .astor-global-header.site-header.site-nav-ready .astor-primary-nav .nav-link[aria-current]::after,
@@ -892,7 +892,7 @@ body.is-site-menu-open {
   }
 
   .astor-global-header.site-header.site-nav-ready .astor-account-link {
-    border-color: var(--astor-nav-wine);
+    border-color: var(--wine-text,var(--astor-nav-wine));
     background: var(--astor-nav-wine);
     color: var(--astor-nav-paper);
   }
@@ -929,7 +929,7 @@ body.is-site-menu-open {
 
   .astor-global-header.site-header.site-nav-ready .astor-primary-nav a:focus-visible,
   .astor-global-header.site-header.site-nav-ready .astor-primary-nav summary:focus-visible {
-    outline-color: var(--astor-nav-wine);
+    outline-color: var(--wine-text,var(--astor-nav-wine));
   }
 }
 
@@ -1056,12 +1056,12 @@ body.is-site-menu-open {
 .astor-palette::backdrop { background: transparent; }
 body:has(.astor-palette[open]) { overflow: hidden; }
 .astor-palette-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 20px 0; font: 700 16px/1.4 var(--astor-nav-serif); }
-.astor-palette-close { min-height: 44px; padding: 8px 12px; border: 0; background: transparent; color: var(--astor-nav-wine); cursor: pointer; font: 700 13px var(--astor-nav-sans); }
-.astor-palette-close:focus-visible { outline: 2px solid var(--astor-nav-wine); }
+.astor-palette-close { min-height: 44px; padding: 8px 12px; border: 0; background: transparent; color: var(--wine-text,var(--astor-nav-wine)); cursor: pointer; font: 700 13px var(--astor-nav-sans); }
+.astor-palette-close:focus-visible { outline: 2px solid var(--wine-text,var(--astor-nav-wine)); }
 
 .astor-palette-box {
   width: min(680px, 100%);
-  background: var(--astor-nav-paper);
+  background: var(--surface,var(--astor-nav-paper));
   border: 1px solid var(--astor-nav-line);
   box-shadow: 0 24px 60px rgba(16, 38, 59, .3);
   max-height: 80dvh;
@@ -1102,12 +1102,12 @@ body:has(.astor-palette[open]) { overflow: hidden; }
 
 .astor-palette-results li a:hover,
 .astor-palette-results li a:focus,
-.astor-palette-results li[aria-selected="true"] a { background: rgba(110, 31, 43, .1); outline: none; }
+.astor-palette-results li[aria-selected="true"] a { background: rgba(var(--wine-rgb,110,31,43),0.1); outline: none; }
 
-.astor-palette-kind { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; font-weight: 800; color: var(--astor-nav-wine); }
+.astor-palette-kind { font-size: 10px; letter-spacing: .14em; text-transform: uppercase; font-weight: 800; color: var(--wine-text,var(--astor-nav-wine)); }
 .astor-palette-title { font-size: 15px; line-height: 1.4; }
-.astor-palette-title small { display: block; color: #5a514c; font-size: 13px; }
-.astor-palette-hint { margin: 0; padding: 12px 20px; border-top: 1px solid var(--astor-nav-line); font-family: var(--astor-nav-sans); font-size: 12px; color: #5a514c; }
+.astor-palette-title small { display: block; color: var(--text-muted,#5a514c); font-size: 13px; }
+.astor-palette-hint { margin: 0; padding: 12px 20px; border-top: 1px solid var(--astor-nav-line); font-family: var(--astor-nav-sans); font-size: 12px; color: var(--text-muted,#5a514c); }
 
 
 @media (max-width: 680px) {
@@ -1176,14 +1176,14 @@ body:has(.astor-palette[open]) { overflow: hidden; }
   max-width: min(560px, calc(100vw - 40px));
   grid-template-columns: minmax(0, 1fr);
   padding: 18px 8px 20px;
-  border-top: 3px solid var(--astor-nav-wine);
+  border-top: 3px solid var(--wine-text,var(--astor-nav-wine));
 }
 .astor-menu .astor-menu-panel.is-two { grid-template-columns: repeat(2, minmax(210px, 1fr)); }
 .astor-menu-col { padding: 0 18px; }
 .astor-menu-col + .astor-menu-col { border-left: 1px solid var(--astor-nav-line); }
 .astor-menu-col > h2 {
   margin: 0 0 8px;
-  color: var(--astor-nav-wine);
+  color: var(--wine-text,var(--astor-nav-wine));
   font: 700 12px/1.3 var(--astor-nav-sans);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1197,8 +1197,8 @@ body:has(.astor-palette[open]) { overflow: hidden; }
   text-decoration: none;
 }
 .astor-menu-col > a:hover,
-.astor-menu-col > a:focus-visible { color: var(--astor-nav-wine); text-decoration: underline; text-underline-offset: 3px; }
-.astor-menu-col > a[aria-current] { color: var(--astor-nav-wine); font-weight: 700; }
+.astor-menu-col > a:focus-visible { color: var(--wine-text,var(--astor-nav-wine)); text-decoration: underline; text-underline-offset: 3px; }
+.astor-menu-col > a[aria-current] { color: var(--wine-text,var(--astor-nav-wine)); font-weight: 700; }
 
 @media (max-width: 1040px) {
   .astor-global-header.site-header.site-nav-ready .astor-menu .astor-menu-panel,

@@ -53,12 +53,12 @@ input {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
-  outline: 3px solid var(--catalogue-wine);
+  outline: 3px solid var(--wine-text,var(--catalogue-wine));
   outline-offset: 3px;
 }
 
 ::selection {
-  background: rgba(110, 31, 43, 0.18);
+  background: rgba(var(--wine-rgb,110,31,43),0.18);
 }
 
 .home {
@@ -92,14 +92,14 @@ input:focus-visible {
 
 .home-kicker {
   margin: 0 0 12px;
-  color: var(--catalogue-wine);
+  color: var(--wine-text,var(--catalogue-wine));
   font: 700 10px/1.3 var(--catalogue-sans);
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .home-more {
-  color: var(--catalogue-wine);
+  color: var(--wine-text,var(--catalogue-wine));
   font: 700 11px/1 var(--catalogue-sans);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -185,7 +185,7 @@ input:focus-visible {
 
 .home-tiles a:hover strong,
 .home-tiles a:focus-visible strong {
-  color: var(--catalogue-wine);
+  color: var(--wine-text,var(--catalogue-wine));
 }
 
 /* Selected editions */
@@ -225,7 +225,7 @@ input:focus-visible {
 
 .home-book-list small {
   display: block;
-  color: var(--catalogue-wine);
+  color: var(--wine-text,var(--catalogue-wine));
   font: 700 9px/1.3 var(--catalogue-sans);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -254,7 +254,7 @@ input:focus-visible {
 
 .home-book-list a:hover strong,
 .home-book-list a:focus-visible strong {
-  color: var(--catalogue-wine);
+  color: var(--wine-text,var(--catalogue-wine));
 }
 
 /* Sample pages */
@@ -314,7 +314,7 @@ input:focus-visible {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: top center;
-  background: #fff;
+  background: var(--surface,#fff);
 }
 
 .home-sample-grid strong {
@@ -379,8 +379,8 @@ input:focus-visible {
 .home-free blockquote {
   margin: 0 0 18px;
   padding: 18px 0;
-  border-top: 1px solid rgba(33, 29, 26, 0.3);
-  border-bottom: 1px solid rgba(33, 29, 26, 0.3);
+  border-top: 1px solid rgba(var(--line-rgb,33,29,26),0.3);
+  border-bottom: 1px solid rgba(var(--line-rgb,33,29,26),0.3);
   font: italic 400 clamp(20px, 2.2vw, 27px)/1.3 var(--catalogue-serif);
 }
 
@@ -432,7 +432,7 @@ input:focus-visible {
 
 .home-free-list small {
   display: block;
-  color: var(--catalogue-wine);
+  color: var(--wine-text,var(--catalogue-wine));
   font: 700 9px/1.3 var(--catalogue-sans);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -446,14 +446,14 @@ input:focus-visible {
 
 .home-free-list a:hover strong,
 .home-free-list a:focus-visible strong {
-  color: var(--catalogue-wine);
+  color: var(--wine-text,var(--catalogue-wine));
 }
 
 /* Browse */
 .home-browse {
-  background: var(--catalogue-cream);
-  border-top: 1px solid rgba(33, 29, 26, 0.15);
-  border-bottom: 1px solid rgba(33, 29, 26, 0.15);
+  background: var(--surface,var(--catalogue-cream));
+  border-top: 1px solid rgba(var(--line-rgb,33,29,26),0.15);
+  border-bottom: 1px solid rgba(var(--line-rgb,33,29,26),0.15);
 }
 
 .home-browse .home-wrap {
@@ -483,7 +483,7 @@ input:focus-visible {
   margin: 0 0 8px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--catalogue-ink);
-  color: var(--catalogue-wine);
+  color: var(--wine-text,var(--catalogue-wine));
   font: 700 10px/1.3 var(--catalogue-sans);
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -498,7 +498,7 @@ input:focus-visible {
 
 .home-browse-cols a:hover,
 .home-browse-cols a:focus-visible {
-  color: var(--catalogue-wine);
+  color: var(--wine-text,var(--catalogue-wine));
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -642,10 +642,10 @@ input:focus-visible {
   color: inherit;
   border-right: 1px solid var(--line, rgba(32, 28, 26, .14));
   border-bottom: 1px solid var(--line, rgba(32, 28, 26, .14));
-  background: rgba(255, 248, 239, .6);
+  background: rgba(var(--surface-rgb,255,248,239),0.6);
 }
 
-.home-study-grid a:hover { background: rgba(255, 248, 239, 1); }
+.home-study-grid a:hover { background: var(--surface,rgba(255, 248, 239, 1)); }
 
 .home-study-grid small {
   display: block;
@@ -654,7 +654,7 @@ input:focus-visible {
   letter-spacing: .16em;
   text-transform: uppercase;
   font-weight: 800;
-  color: var(--burgundy, #6E1F2B);
+  color: var(--wine-text,var(--burgundy, #6E1F2B));
   margin-bottom: 10px;
 }
 
@@ -672,7 +672,7 @@ input:focus-visible {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 14px;
   line-height: 1.6;
-  color: #5a514c;
+  color: var(--text-muted,#5a514c);
 }
 
 @media (max-width: 620px) {
@@ -685,8 +685,8 @@ input:focus-visible {
   margin: 0 0 26px;
   padding: 22px 24px 20px;
   border: 1px solid var(--line, rgba(32, 28, 26, .14));
-  border-left: 4px solid var(--burgundy, #6E1F2B);
-  background: rgba(255, 248, 239, .8);
+  border-left: 4px solid var(--wine-text,var(--burgundy, #6E1F2B));
+  background: rgba(var(--surface-rgb,255,248,239),0.8);
 }
 
 .home-today .home-kicker { margin-bottom: 10px; }
@@ -707,7 +707,7 @@ input:focus-visible {
   letter-spacing: .08em;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--burgundy, #6E1F2B);
+  color: var(--wine-text,var(--burgundy, #6E1F2B));
 }
 
 .home-today-status {
@@ -715,7 +715,7 @@ input:focus-visible {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 15px;
   line-height: 1.6;
-  color: #423b36;
+  color: var(--text-soft,#423b36);
 }
 
 .home-today nav { display: flex; flex-wrap: wrap; gap: 8px 22px; }
@@ -733,7 +733,7 @@ input:focus-visible {
 .home-wrap { padding-top: 78px; padding-bottom: 78px; }
 .home-wrap + .home-wrap { padding-top: 0; }
 .home-section-head.is-ruled { border-top: 1px solid var(--line); padding-top: 26px; }
-.home-today { border: 0; border-left: 2px solid var(--book-accent, var(--burgundy)); border-radius: 0; padding: 4px 0 4px 20px; background: none; }
+.home-today { border: 0; border-left: 2px solid var(--book-accent-ink,var(--book-accent, var(--burgundy))); border-radius: 0; padding: 4px 0 4px 20px; background: none; }
 .home-book-list img { box-shadow: none; }
 .home-free-item, .home-study-grid > a, .home-browse-cols > div { border: 0; background: none; }
 .home-study-grid { gap: 30px 34px; }
@@ -746,9 +746,9 @@ input:focus-visible {
 /* What Astor publishes, in one line. */
 .home-counts { padding-top: 42px; padding-bottom: 42px; }
 .home-counts-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px; margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(17px, 2vw, 21px); }
-.home-counts-line a { color: var(--ink); text-decoration: none; border-bottom: 1px solid rgba(110, 31, 43, .3); }
-.home-counts-line a:hover { color: var(--burgundy); border-bottom-color: var(--burgundy); }
-.home-counts-line span { color: var(--muted); }
+.home-counts-line a { color: var(--text,var(--ink)); text-decoration: none; border-bottom: 1px solid rgba(var(--wine-rgb,110,31,43),0.3); }
+.home-counts-line a:hover { color: var(--wine-text,var(--burgundy)); border-bottom-color: var(--wine-text,var(--burgundy)); }
+.home-counts-line span { color: var(--text-muted,var(--muted)); }
 
 /* The close reading and the study tools sit side by side rather than one
    after the other. */
@@ -760,7 +760,7 @@ input:focus-visible {
 
    What Astor is and a row of real covers come first; the season, the sample
    pages and the free material follow. */
-.home-intro { background: var(--catalogue-cream); border-bottom: 1px solid var(--catalogue-line); }
+.home-intro { background: var(--surface,var(--catalogue-cream)); border-bottom: 1px solid var(--catalogue-line); }
 .home-intro .home-wrap { padding-top: clamp(40px, 6vw, 84px); padding-bottom: clamp(44px, 6vw, 84px); }
 .home-intro-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
 .home-intro .home-kicker { font-size: 12px; }
@@ -769,8 +769,8 @@ input:focus-visible {
 .home-intro-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; margin: 0 0 30px; }
 .home-button { display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; background: var(--catalogue-wine); color: var(--catalogue-cream); font: 700 13px/1 var(--catalogue-sans); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; }
 .home-button:hover, .home-button:focus-visible { background: var(--catalogue-navy); }
-.home-intro-link { padding-bottom: 4px; border-bottom: 1px solid currentColor; color: var(--catalogue-wine); font: 700 13px/1 var(--catalogue-sans); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; }
-.home-intro-link:hover, .home-intro-link:focus-visible { color: var(--catalogue-navy); }
+.home-intro-link { padding-bottom: 4px; border-bottom: 1px solid currentColor; color: var(--wine-text,var(--catalogue-wine)); font: 700 13px/1 var(--catalogue-sans); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; }
+.home-intro-link:hover, .home-intro-link:focus-visible { color: var(--text,var(--catalogue-navy)); }
 .home-intro .home-intro-grid.home-wrap { padding-bottom: 28px; }
 .home-intro .home-intro-counts { padding-top: 0; padding-bottom: clamp(36px, 5vw, 64px); }
 .home-intro .home-counts-line { font-size: 15.5px; }
