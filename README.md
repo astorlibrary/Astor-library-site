@@ -35,6 +35,27 @@ Permanent Amazon destinations are in `worker/book-links.json`; format buttons ar
 in `scripts/book-formats.json`. See [docs/BOOK-LINKS.md](docs/BOOK-LINKS.md) for new
 titles, Kindle editions, country fallbacks and the supplied September descriptions.
 
+## Light and dark themes
+
+The site has its original light theme and a warm-charcoal dark one. A reader's
+choice is kept in `localStorage` (`astor-theme`); until they make one, the page
+follows the system setting.
+
+- `assets/theme.css` holds the whole dark palette and the toggle's styles.
+  `build-static.js` adds it as the last stylesheet, puts a few lines ahead of every
+  stylesheet that set `data-theme` on `<html>` before first paint, and builds the
+  toggle into the shared header. `assets/site.js` wires it up.
+- The other stylesheets keep their light colours where they were. A colour that
+  needs a dark counterpart is written `var(--token, <light colour>)`. The token is
+  defined only in dark mode, so light mode takes the fallback and is unchanged. For
+  new work use the tokens listed at the top of the dark block in `theme.css`
+  (`--surface`, `--text`, `--wine-text` and so on) and always give them a light
+  fallback; `tests/theme.test.mjs` fails on a bare token.
+- Navy bands, wine buttons, book covers and the seasonal artwork look the same in
+  both themes, so do not put a `filter` on images. Seasonal pages keep their night
+  heroes and take only a dark reading area tinted with their own colour.
+- Print is always light.
+
 ## Study data
 
 `data/books/<slug>.json` holds one structured record per title: plot, characters,

@@ -17,6 +17,7 @@ const CORE = [
   '/offline/',
   '/assets/styles.css',
   '/assets/navigation.css',
+  '/assets/theme.css',
   '/assets/astor-study.css',
   '/assets/study-index.json',
   '/assets/search-index.json'
