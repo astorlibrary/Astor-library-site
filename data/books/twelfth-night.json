@@ -222,7 +222,7 @@
       "name": "Olivia",
       "role": "A countess of Illyria",
       "summary": "Her seven-year mourning is a position, and it lasts until somebody argues with her. Once she falls, she is the most decisive person in the play: she declares herself, sends after the messenger and marries a stranger within three days of meeting his face on somebody else.",
-      "clue": "She vows to weep for a brother for seven years, and is engaged to a man she has spoken to twice — and who is not the man she thinks.",
+      "clue": "She vows to weep for a brother for seven years, and is engaged to a man she has spoken to twice, and he is not the man she thinks.",
       "firstAppearance": "1.5",
       "traits": [
         "formal",
@@ -307,13 +307,13 @@
       "id": "malvolio",
       "name": "Malvolio",
       "role": "Olivia’s steward",
-      "summary": "Humourless, ambitious and correct about the drinking, which is what makes him unbearable. The trick works because the letter tells him what he already believes; the punishment goes far beyond the joke, and the play lets him leave without being forgiven or forgiving.",
+      "summary": "Humourless, ambitious and right about the drinking, which makes him unbearable. The trick works because the letter tells him what he already believes; the punishment goes far beyond the joke, and the play lets him leave without being forgiven or forgiving.",
       "clue": "A steward who practises behaviour to his own shadow, appears before a woman in mourning in yellow stockings, and is shut in a dark room for smiling.",
       "firstAppearance": "1.5",
       "traits": [
         "self-loving",
         "censorious",
-        "genuinely wronged"
+        "wronged"
       ],
       "relationships": [
         {
@@ -432,8 +432,8 @@
       "id": "andrew",
       "name": "Sir Andrew Aguecheek",
       "role": "A foolish knight, Olivia’s supposed suitor",
-      "summary": "He is being robbed in plain sight and is happy about it. Shakespeare gives him one line of real pathos — that he was adored once too — and then has him beaten by a stranger and cast off by the man who has been living on his money.",
-      "clue": "He is kept in the house as a suitor and a source of funds, is frightened into a duel he cannot fight, and says quietly that he was adored once.",
+      "summary": "He is being robbed in plain sight and is happy about it. Shakespeare gives him one line of real pathos (“I was adored once too”) and then has him beaten by a stranger and cast off by the man who has been living on his money.",
+      "clue": "He is kept in the house as a suitor and a source of funds, is frightened into a duel he cannot fight, and says, almost to himself, that he was adored once.",
       "firstAppearance": "1.3",
       "traits": [
         "vain",
@@ -585,20 +585,20 @@
     {
       "id": "desire",
       "name": "Desire and the imagined lover",
-      "summary": "Orsino has never met Olivia, Olivia falls for a messenger she sees for ten minutes, and Malvolio builds a marriage out of a letter with no name on it. The play’s joke is that every one of them is in love with something they have made up, and that being right about the object is not what makes the feeling real.",
+      "summary": "Orsino has never met Olivia, Olivia falls for a messenger she sees for ten minutes, and Malvolio builds a marriage out of a letter with no name on it. The play’s joke is that every one of them is in love with something they have made up, and that the feeling is real whether or not they are right about the object.",
       "development": "Orsino’s abstract appetite in 1.1 becomes a proposal to a servant in 5.1, and the play does not stop to explain the transfer."
     },
     {
       "id": "disguise",
       "name": "Disguise and identity",
       "summary": "Viola’s costume is a practical solution that turns into a trap: it earns her the intimacy she wants and makes the declaration impossible. On a stage where the women were played by boys, a boy playing a girl playing a boy is a machine for saying true things under cover, more than a complication.",
-      "development": "She calls disguise a wickedness in 2.2, tells Olivia in 3.1 that she is not what she is, and never removes the clothes — the play ends with Orsino still calling her Cesario."
+      "development": "She calls disguise a wickedness in 2.2, tells Olivia in 3.1 that she is not what she is, and never removes the clothes, and the play ends with Orsino still calling her Cesario."
     },
     {
       "id": "mourning",
       "name": "Mourning and its uses",
       "summary": "Two households are organised around a dead brother. Olivia’s grief is public and performed for seven years; Viola’s is private and she goes to work. The play is interested in the difference between grief you can display and grief you have to earn a living through.",
-      "development": "Both brothers turn out to be a matter of report — Sebastian is not dead, and Olivia’s mourning ends the moment something more interesting arrives."
+      "development": "Both brothers turn out to be a matter of report: Sebastian is not dead, and Olivia’s mourning ends the moment something more interesting arrives."
     },
     {
       "id": "festivity",
@@ -623,7 +623,7 @@
     {
       "id": "song",
       "name": "Song",
-      "definition": "Sung lyric used to carry mood, comment or structure, not plot.",
+      "definition": "Sung lyric used to carry mood, comment or structure.",
       "inThisBook": "There are more songs here than in any other Shakespeare comedy, and they go in one direction: from ‘O mistress mine’ through ‘Come away, death’ to a closing ballad about wind and rain that darkens the happy ending."
     },
     {
@@ -642,13 +642,13 @@
       "id": "twins",
       "name": "Identical twins",
       "definition": "A plot device by which one actor’s part is doubled by another body.",
-      "inThisBook": "The device is old, but Shakespeare makes the twins brother and sister, so the resemblance depends on clothes, not nature — and that is the play’s point about gender, more than a mechanical convenience."
+      "inThisBook": "The device is old, but Shakespeare makes the twins brother and sister, so the resemblance depends on clothes more than nature, and that makes it a point about gender as well as a mechanical convenience."
     },
     {
       "id": "fools-licence",
       "name": "The licensed fool",
       "definition": "A professional entertainer permitted to say what others may not.",
-      "inThisBook": "Feste’s wordplay on corruption and sentences is a job, not a temperament; Olivia defends him by saying there is no slander in an allowed fool, and he uses the permission to torment the one man who cannot laugh."
+      "inThisBook": "Feste’s wordplay on corruption and sentences is his job more than his temperament; Olivia defends him by saying there is no slander in an allowed fool, and he uses the permission to torment the one man who cannot laugh."
     },
     {
       "id": "prose-verse",

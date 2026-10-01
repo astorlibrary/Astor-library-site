@@ -150,7 +150,7 @@
       "id": "scrooge",
       "name": "Ebenezer Scrooge",
       "role": "Moneylender, surviving partner of Scrooge and Marley",
-      "summary": "A man whose coldness is described as a climate he carries about with him, not a mood. Dickens gives him wit, arguing with his own hallucination about undigested beef, which is why his conversion can be believed: the intelligence was never missing, only the use he put it to.",
+      "summary": "A man whose coldness is described as a climate he carries about with him. Dickens gives him wit, arguing with his own hallucination about undigested beef, which is why his conversion can be believed: the intelligence was never missing, only the use he put it to.",
       "clue": "He argues that a ghost may be a crumb of cheese, reads his own name on a headstone, and ends by buying a turkey too big for a boy to carry.",
       "firstAppearance": "Stave I",
       "traits": [
@@ -199,7 +199,7 @@
       "id": "marley",
       "name": "Jacob Marley",
       "role": "Scrooge’s dead partner",
-      "summary": "Seven years dead and still doing the accounts. He is punished for a narrow idea of business, not for cruelty, and his chain is made of the objects of his trade, so we see the moral before anyone states it.",
+      "summary": "Seven years dead and still doing the accounts. He is punished for a narrow idea of business more than for any cruelty, and his chain is made of the objects of his trade, so we see the moral before anyone states it.",
       "clue": "He wears cash-boxes, ledgers and keys as a chain, and corrects the meaning of one word in a way that sets up the whole book.",
       "firstAppearance": "Stave I",
       "traits": [
@@ -222,7 +222,7 @@
       "id": "bob-cratchit",
       "name": "Bob Cratchit",
       "role": "Scrooge’s clerk",
-      "summary": "Fifteen shillings a week, a white comforter instead of a greatcoat, and a coal-box he is not allowed to reach. Dickens is careful to show him sliding on the ice at Cornhill on the way home, so that his goodness is not simply the patience of a man too tired to object.",
+      "summary": "Fifteen shillings a week, a white comforter instead of a greatcoat, and a coal-box he is not allowed to reach. Dickens is careful to show him sliding on the ice at Cornhill on the way home, so that his goodness reads as more than the patience of a man too tired to object.",
       "clue": "He tries to warm himself at a candle, drinks a toast to the man who underpays him, and slides down a lane of boys on his way back to Camden Town.",
       "firstAppearance": "Stave I",
       "traits": [
@@ -295,7 +295,7 @@
       "id": "belle",
       "name": "Belle",
       "role": "The woman Scrooge was engaged to",
-      "summary": "She releases him in the gentlest possible terms and the terms are devastating: they made their contract when they were both poor, he is a different man now, and she doubts he would choose her today. She is right, and he cannot answer.",
+      "summary": "She releases him in the gentlest possible terms and the terms are final: they made their contract when they were both poor, he is a different man now, and she doubts he would choose her today. She is right, and he cannot answer.",
       "clue": "She hands back an engagement without raising her voice, naming the golden idol that has taken her place.",
       "firstAppearance": "Stave II",
       "traits": [
@@ -411,19 +411,19 @@
     {
       "id": "change",
       "name": "Whether a person can change",
-      "summary": "The book stakes everything on a claim most Victorian fiction makes slowly: that a settled character can be remade in one night. Dickens protects the claim by letting the evidence build up, and by ending with actions, not resolutions.",
+      "summary": "The book stakes everything on a claim most Victorian fiction makes slowly: that a settled character can be remade in one night. Dickens protects the claim by letting the evidence build up, and by ending with actions: the turkey, the raise, the dinner at Fred’s.",
       "development": "Scrooge argues with the first ghost, watches the second in silence, and by the fourth is on the ground asking whether what he has seen is fixed. The last stave answers in errands."
     },
     {
       "id": "poverty",
       "name": "Poverty and responsibility",
-      "summary": "Dickens attacks a habit of thought, not wealth as such. Scrooge objects to charity because institutions already exist, and the book takes him to the places where the institutional answer runs out.",
+      "summary": "Dickens attacks a habit of thought more than wealth itself. Scrooge objects to charity because institutions already exist, and the book takes him to the places where the institutional answer runs out.",
       "development": "The collectors are refused in Stave I; the same language is turned round on Scrooge in Stave III; Ignorance and Want make the argument visible before Stave IV shows what the refusal costs."
     },
     {
       "id": "memory",
       "name": "Memory and time",
-      "summary": "The three spirits are three tenses, and the book’s structure is a grammar lesson. The past gives him evidence, not nostalgia: Scrooge weeps at the schoolboy because he has been given the one point of view he has always avoided, his own.",
+      "summary": "The three spirits are three tenses, and the book’s structure is a grammar lesson. The past gives him evidence: Scrooge weeps at the schoolboy because he has been given the one point of view he has always avoided, his own.",
       "development": "Past explains, present accuses, future threatens; Stave V gathers all three into a single morning in which Scrooge says he will live in all of them."
     },
     {
@@ -450,7 +450,7 @@
       "id": "direct-address",
       "name": "Direct address",
       "definition": "A narrator who speaks openly to the reader, arguing, joking and insisting.",
-      "inThisBook": "The book opens by haggling with the reader about a simile — what exactly is dead about a doornail — and only then explains that the point must be conceded or nothing wonderful can follow."
+      "inThisBook": "The book opens by haggling with the reader about a simile (what exactly is dead about a doornail) and only then explains that the point must be conceded or nothing wonderful can follow."
     },
     {
       "id": "simile",
@@ -479,8 +479,8 @@
     {
       "id": "cold-imagery",
       "name": "Cold imagery",
-      "definition": "Weather and temperature used to describe a person, not a setting.",
-      "inThisBook": "Scrooge carries his own low temperature about with him, ices his office in the dog-days and cannot be chilled by any wind — the metaphor is established before a single ghost appears."
+      "definition": "Weather and temperature used to describe a person.",
+      "inThisBook": "Scrooge carries his own low temperature about with him, ices his office in the dog-days and cannot be chilled by any wind. The metaphor is established before a single ghost appears."
     }
   ],
   "quotations": [
