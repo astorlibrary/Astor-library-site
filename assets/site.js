@@ -669,3 +669,58 @@
   scrollToCurrentSection();
   addRelatedReading(contents);
 })();
+
+// Light / dark theme. A small script at the top of every page has already set
+// data-theme on <html> from the saved choice, or from the system setting, so
+// the page paints in the right colours. This wires up the toggle, saves an
+// explicit choice, and follows the system setting until there is one.
+(() => {
+  const root = document.documentElement;
+  const KEY = 'astor-theme';
+  const toggles = [...document.querySelectorAll('[data-theme-toggle]')];
+  const dark = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+
+  function saved() {
+    try {
+      const value = localStorage.getItem(KEY);
+      return value === 'light' || value === 'dark' ? value : null;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function apply(theme) {
+    root.setAttribute('data-theme', theme);
+    root.style.colorScheme = theme;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#1b1714' : '#fffaf4');
+    for (const toggle of toggles) toggle.setAttribute('aria-pressed', String(theme === 'dark'));
+  }
+
+  const current = () => (root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
+  apply(saved() || current());
+
+  for (const toggle of toggles) {
+    toggle.addEventListener('click', () => {
+      const next = current() === 'dark' ? 'light' : 'dark';
+      apply(next);
+      try {
+        localStorage.setItem(KEY, next);
+      } catch (error) {
+        // Private browsing: the choice lasts for this page only.
+      }
+    });
+  }
+
+  // No explicit choice yet: follow the system as it changes.
+  if (dark && dark.addEventListener) {
+    dark.addEventListener('change', event => {
+      if (!saved()) apply(event.matches ? 'dark' : 'light');
+    });
+  }
+
+  // A choice made in another tab applies here too.
+  window.addEventListener('storage', event => {
+    if (event.key === KEY && (event.newValue === 'light' || event.newValue === 'dark')) apply(event.newValue);
+  });
+})();

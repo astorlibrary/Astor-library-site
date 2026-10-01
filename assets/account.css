@@ -120,7 +120,7 @@
   padding: 0 14px;
   border: 1px solid var(--account-line);
   border-radius: 0;
-  background: #fff;
+  background: var(--surface,#fff);
   color: var(--account-ink);
   font: 16px/1 var(--account-sans);
 }
@@ -146,7 +146,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--account-wine);
+  border: 1px solid var(--wine-text,var(--account-wine));
   background: var(--account-wine);
   color: #fff;
   font: 850 12px/1 var(--account-sans);
@@ -159,7 +159,7 @@
 .account-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .account-actions-spaced { margin-top: 24px; }
 .account-help { margin-top: 18px; font: 13px/1.5 var(--account-sans); }
-.account-help a { color: var(--account-wine); font-weight: 750; }
+.account-help a { color: var(--wine-text,var(--account-wine)); font-weight: 750; }
 
 .account-turnstile {
   width: 100%;
@@ -174,15 +174,15 @@
 .account-status {
   margin: 18px 0 0;
   padding: 13px 14px;
-  border-left: 4px solid var(--account-navy);
-  background: #e8eef3;
+  border-left: 4px solid var(--navy-rule,var(--account-navy));
+  background: color-mix(in srgb,#e8eef3 var(--tint-amount,100%),var(--tint-ground,#e8eef3));
   color: var(--account-ink);
   font: 13px/1.5 var(--account-sans);
 }
 
-.account-status[data-kind="error"] { border-color: #a12632; background: #f7e7e6; }
-.account-status[data-kind="success"] { border-color: #34614c; background: #e7f1eb; }
-.account-status:focus { outline: 3px solid var(--account-wine); outline-offset: 2px; }
+.account-status[data-kind="error"] { border-color: var(--red-text,#a12632); background: color-mix(in srgb,#f7e7e6 var(--tint-amount,100%),var(--tint-ground,#f7e7e6)); }
+.account-status[data-kind="success"] { border-color: var(--green-text,#34614c); background: color-mix(in srgb,#e7f1eb var(--tint-amount,100%),var(--tint-ground,#e7f1eb)); }
+.account-status:focus { outline: 3px solid var(--wine-text,var(--account-wine)); outline-offset: 2px; }
 .account-loading { min-height: 210px; display: grid; place-items: center; font: 700 14px/1.5 var(--account-sans); }
 
 .account-detail {
@@ -192,7 +192,7 @@
   font: 14px/1.65 var(--account-sans);
 }
 
-.account-detail strong { display: block; margin-bottom: 5px; color: var(--account-wine); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; }
+.account-detail strong { display: block; margin-bottom: 5px; color: var(--wine-text,var(--account-wine)); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; }
 .account-single-panel .account-main { min-height: 420px; }
 .account-form fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
 
@@ -222,14 +222,14 @@
   font: 15px/1.75 var(--account-sans);
 }
 
-.privacy-notice a { color: var(--account-wine); font-weight: 750; }
+.privacy-notice a { color: var(--wine-text,var(--account-wine)); font-weight: 750; }
 
 .account-form input:focus-visible,
 .account-tabs button:focus-visible,
 .account-submit:focus-visible,
 .account-secondary:focus-visible,
 .account-consent:has(input:focus-visible) {
-  outline: 3px solid var(--account-wine);
+  outline: 3px solid var(--wine-text,var(--account-wine));
   outline-offset: 3px;
 }
 
@@ -274,7 +274,7 @@
   overflow: hidden;
   border: 1px solid var(--account-line);
   background:
-    linear-gradient(100deg, rgba(255, 250, 243, .98) 0 68%, rgba(232, 218, 202, .82) 100%),
+    linear-gradient(100deg, rgba(var(--surface-rgb,255,250,243),0.98) 0 68%, rgba(232, 218, 202, .82) 100%),
     var(--account-paper);
 }
 
@@ -283,7 +283,7 @@
   position: absolute;
   right: clamp(18px, 5vw, 58px);
   bottom: -18px;
-  color: rgba(110, 31, 43, .07);
+  color: rgba(var(--wine-rgb,110,31,43),0.07);
   font: 700 clamp(90px, 17vw, 190px)/.8 var(--account-serif);
   letter-spacing: -.08em;
   pointer-events: none;
@@ -322,7 +322,7 @@
   margin: 18px 0 0;
   padding: 16px 18px;
   border: 1px dashed var(--account-line);
-  background: rgba(255, 250, 243, .68);
+  background: rgba(var(--surface-rgb,255,250,243),0.68);
   color: var(--account-muted);
   font: 13px/1.6 var(--account-sans);
 }
@@ -330,22 +330,22 @@
 .account-library-status[data-kind="error"] {
   border-style: solid;
   border-color: rgba(161, 38, 50, .42);
-  background: #f7e7e6;
-  color: #711b25;
+  background: color-mix(in srgb,#f7e7e6 var(--tint-amount,100%),var(--tint-ground,#f7e7e6));
+  color: var(--red-text,#711b25);
 }
 
 .account-library-status[data-kind="success"] {
   border-style: solid;
   border-color: rgba(52, 97, 76, .4);
-  background: #e7f1eb;
-  color: #244c39;
+  background: color-mix(in srgb,#e7f1eb var(--tint-amount,100%),var(--tint-ground,#e7f1eb));
+  color: var(--green-text,#244c39);
 }
 
 .account-library-section {
   margin-top: 22px;
   padding: clamp(28px, 5vw, 50px);
   border: 1px solid var(--account-line);
-  background: rgba(255, 250, 243, .94);
+  background: rgba(var(--surface-rgb,255,250,243),0.94);
 }
 
 .account-library-section > header {
@@ -381,7 +381,7 @@
   display: flex;
   flex-direction: column;
   border: 1px solid var(--account-line);
-  background: #fff;
+  background: var(--surface,#fff);
 }
 
 .account-resource-card-media {
@@ -428,7 +428,7 @@
 
 .account-resource-kind {
   margin: 0 0 9px;
-  color: var(--account-wine);
+  color: var(--wine-text,var(--account-wine));
   font: 900 9px/1.25 var(--account-sans);
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -452,7 +452,7 @@
 .account-resource-card h4 a:focus-visible,
 .account-recent-card h4 a:hover,
 .account-recent-card h4 a:focus-visible {
-  color: var(--account-wine);
+  color: var(--wine-text,var(--account-wine));
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -491,7 +491,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--account-wine);
+  border: 1px solid var(--wine-text,var(--account-wine));
   background: var(--account-wine);
   color: #fff;
   font: 800 11px/1.2 var(--account-sans);
@@ -507,8 +507,8 @@
 
 .account-card-remove:hover,
 .account-card-remove:focus-visible {
-  border-color: var(--account-wine);
-  color: var(--account-wine);
+  border-color: var(--wine-text,var(--account-wine));
+  color: var(--wine-text,var(--account-wine));
 }
 
 .account-card-remove:disabled {
@@ -533,7 +533,7 @@
   gap: 17px;
   align-items: center;
   border: 1px solid var(--account-line);
-  background: #fff;
+  background: var(--surface,#fff);
 }
 
 .account-recent-card img {
@@ -553,7 +553,7 @@
 }
 
 .account-settings-section {
-  background: #eadcca;
+  background: var(--surface-sand,#eadcca);
 }
 
 .account-settings-grid {
@@ -592,7 +592,7 @@
   gap: 16px;
   align-items: center;
   border: 1px solid var(--account-line);
-  background: #fff;
+  background: var(--surface,#fff);
   cursor: pointer;
 }
 
@@ -627,7 +627,7 @@
   height: 28px;
   border: 1px solid var(--account-line);
   border-radius: 999px;
-  background: #d8d0c8;
+  background: var(--surface-sand,#d8d0c8);
   transition: background .16s ease;
 }
 
@@ -639,7 +639,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--surface,#fff);
   box-shadow: 0 2px 6px rgba(33, 29, 26, .2);
   transition: transform .16s ease;
 }
@@ -653,19 +653,19 @@
 }
 
 .account-toggle:has(input:focus-visible) {
-  outline: 3px solid var(--account-wine);
+  outline: 3px solid var(--wine-text,var(--account-wine));
   outline-offset: 3px;
 }
 
 .account-toggle input:focus-visible + i {
-  outline: 3px solid var(--account-wine);
+  outline: 3px solid var(--wine-text,var(--account-wine));
   outline-offset: 3px;
 }
 
 .account-danger-zone {
   margin-top: 20px;
-  border: 1px solid rgba(110, 31, 43, .4);
-  background: #fffaf3;
+  border: 1px solid rgba(var(--wine-rgb,110,31,43),0.4);
+  background: var(--surface,#fffaf3);
 }
 
 .account-danger-zone > summary {
@@ -674,7 +674,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--account-wine);
+  color: var(--wine-text,var(--account-wine));
   font: 850 12px/1.3 var(--account-sans);
   cursor: pointer;
   list-style: none;
@@ -686,7 +686,7 @@
 
 .account-danger-content {
   padding: 24px;
-  border-top: 1px solid rgba(110, 31, 43, .28);
+  border-top: 1px solid rgba(var(--wine-rgb,110,31,43),0.28);
 }
 
 .account-delete-form label {
@@ -702,7 +702,7 @@
   padding: 0 13px;
   border: 1px solid var(--account-line);
   border-radius: 0;
-  background: #fff;
+  background: var(--surface,#fff);
   color: var(--account-ink);
   font: 16px/1 var(--account-sans);
 }
@@ -729,7 +729,7 @@
 .account-danger-zone > summary:focus-visible,
 .account-delete-form input:focus-visible,
 .account-danger-button:focus-visible {
-  outline: 3px solid var(--account-wine);
+  outline: 3px solid var(--wine-text,var(--account-wine));
   outline-offset: 3px;
 }
 

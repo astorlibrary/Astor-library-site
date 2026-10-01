@@ -33,7 +33,8 @@ function versionOf(assetPath) {
 const VERSIONED_ASSETS = [
   '/assets/styles.css', '/assets/astor-study.css', '/assets/home.css', '/assets/seasons.css',
   '/assets/account.css', '/assets/presentation-viewer.css', '/assets/site.js', '/assets/catalogue.js',
-  '/assets/explore.js', '/assets/resources.js', '/assets/resource-library.js', '/assets/seasonal-theme.css'
+  '/assets/explore.js', '/assets/resources.js', '/assets/resource-library.js', '/assets/seasonal-theme.css',
+  '/assets/theme.css'
 ];
 
 function versionAssets(html) {
@@ -1128,6 +1129,27 @@ function addSeasonalTheme(html, source) {
   return versionAssets(html);
 }
 
+// Light and dark themes. Before anything is painted, a few lines read the
+// reader's saved choice (astor-theme) or, failing that, the system setting, and
+// put data-theme on <html>. They sit ahead of every stylesheet so a dark page
+// never starts light. assets/theme.css holds the dark palette and site.js the
+// toggle; the theme-color meta tells the phone's address bar which to wear.
+const themeInit = '<meta name="color-scheme" content="light dark"><meta name="theme-color" content="#fffaf4">' +
+  '<script data-theme-init>(function(d){var t,m;try{t=localStorage.getItem("astor-theme")}catch(e){}' +
+  'if(t!=="light"&&t!=="dark"){try{t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}catch(e){t="light"}}' +
+  'd.setAttribute("data-theme",t);d.style.colorScheme=t;m=d.querySelector("meta[name=theme-color]");' +
+  'if(m&&t==="dark")m.setAttribute("content","#1b1714")})(document.documentElement)</script>';
+
+function addThemeSupport(html) {
+  if (/http-equiv=["']refresh["']/i.test(html) || !/<\/head>/i.test(html) || html.includes('data-theme-init')) return html;
+  html = html.replace(/<meta\b[^>]*name=["']theme-color["'][^>]*>/gi, '');
+  html = /<meta charset="utf-8">/i.test(html)
+    ? html.replace(/<meta charset="utf-8">/i, match => match + themeInit)
+    : html.replace(/<head>/i, match => match + themeInit);
+  // Last stylesheet in <head>, so the dark palette follows everything it overrides.
+  return html.replace('</head>', '<link rel="stylesheet" href="/assets/theme.css"></head>');
+}
+
 function addGlobalNavigation(html, source) {
   const href = pageHref(source);
   const inRoute = route => href === route || href.startsWith(route);
@@ -1171,6 +1193,7 @@ function addGlobalNavigation(html, source) {
   <div class="astor-header-identity">
     <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
     <p class="astor-header-strap"><span>Independent literary editions</span><small>For readers, students &amp; teachers</small></p>
+    <button class="astor-theme-toggle-compact" type="button" data-theme-toggle aria-pressed="false" aria-label="Dark mode"><span class="astor-theme-icon" aria-hidden="true"></span></button>
     <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span></button>
   </div>
   <nav class="nav astor-primary-nav" id="site-navigation" aria-label="Primary navigation">
@@ -1238,6 +1261,7 @@ function addGlobalNavigation(html, source) {
     <div class="astor-nav-utilities">
       <a class="astor-utility-link astor-search-link" href="/explore/" data-astor-palette${current(searchCurrent, href === '/explore/')}><span aria-hidden="true"></span>Search</a>
       <a class="astor-utility-link astor-mylibrary-link" href="/my-library/"${current(myLibraryCurrent)}>My library</a>
+      <button class="astor-utility-link astor-theme-toggle" type="button" data-theme-toggle aria-pressed="false"><span class="astor-theme-switch" aria-hidden="true"></span>Dark mode</button>
       <a class="astor-utility-link astor-account-link" href="/account/" data-auth-link${current(accountCurrent, href === '/account/')}>Sign in</a>
     </div>
   </nav>
@@ -1452,6 +1476,7 @@ function prepareHtml(html, source) {
   html = addBookSeasonLinks(html, source);
   html = addGlobalNavigation(html, source);
   html = addSeasonalTheme(html, source);
+  html = addThemeSupport(html);
   html = html.replace(/href="\/assets\/seasons\.css"/g, 'href="/assets/seasons.css?v=' + seasonalStylesVersion + '"');
 
   if (!html.includes('/assets/site.js')) {

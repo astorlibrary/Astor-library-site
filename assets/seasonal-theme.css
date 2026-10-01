@@ -87,7 +87,7 @@ html[data-season="halloween"] .astor-header-identity {
   background:
     radial-gradient(ellipse at 3% 50%, rgba(255, 166, 74, 0.18), transparent 30%),
     linear-gradient(90deg, rgba(222, 129, 47, 0.07), transparent 40%),
-    var(--astor-nav-paper);
+    var(--surface, var(--astor-nav-paper));
 }
 
 html[data-season="halloween"] .astor-global-header .brand .torch-mark {
