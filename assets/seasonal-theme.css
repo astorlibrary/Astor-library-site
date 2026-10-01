@@ -1,0 +1,230 @@
+/* Seasonal dress for the whole site.
+
+   build-static.js adds a ribbon above the header, a badge on the book pages
+   in a seasonal collection and a marker on their catalogue cards. All of it
+   stays hidden until the small script at the top of each page sets
+   data-season on <html>, which it does only between the dates given in the
+   season's siteTheme block in scripts/seasonal-data.json. The dress comes off
+   by itself when the dates pass; ?season=halloween previews it out of season. */
+
+.astor-season-ribbon,
+.astor-season-badge {
+  display: none;
+}
+
+/* Halloween, 1–31 October ------------------------------------------------- */
+
+html[data-season="halloween"] {
+  --halloween-night: #1d1126;
+  --halloween-plum: #3c2343;
+  --halloween-amber: #ffb658;
+  --halloween-pumpkin: #de812f;
+  --halloween-ember: #b15123;
+  --halloween-paper: #fff2de;
+}
+
+html[data-season="halloween"] .astor-season-ribbon[data-season-ribbon="halloween"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 9px 18px 10px;
+  background:
+    radial-gradient(ellipse at 50% -40%, rgba(255, 182, 88, 0.2), transparent 60%),
+    linear-gradient(90deg, var(--halloween-night), #32203c 50%, var(--halloween-night));
+  border-bottom: 2px solid var(--halloween-ember);
+  color: var(--halloween-paper);
+  font: 500 13px/1.35 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+html[data-season="halloween"] .astor-season-ribbon svg {
+  width: 30px;
+  height: 13px;
+  flex: none;
+  color: var(--halloween-amber);
+}
+
+html[data-season="halloween"] .astor-season-ribbon strong {
+  color: var(--halloween-amber);
+  font: italic 400 16px/1.2 Georgia, "Times New Roman", serif;
+  white-space: nowrap;
+}
+
+html[data-season="halloween"] .astor-season-ribbon-note {
+  color: #e9dcea;
+}
+
+html[data-season="halloween"] .astor-season-ribbon-link {
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(255, 182, 88, 0.55);
+  color: var(--halloween-amber);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+html[data-season="halloween"] .astor-season-ribbon:hover .astor-season-ribbon-link,
+html[data-season="halloween"] .astor-season-ribbon:focus-visible .astor-season-ribbon-link {
+  border-bottom-color: var(--halloween-amber);
+}
+
+html[data-season="halloween"] .astor-season-ribbon:focus-visible {
+  outline: 2px solid var(--halloween-amber);
+  outline-offset: -4px;
+}
+
+/* The header keeps its paper, with a pumpkin rule, a lit torch and a few bats. */
+html[data-season="halloween"] .astor-global-header.site-header {
+  border-top-color: var(--halloween-pumpkin);
+}
+
+html[data-season="halloween"] .astor-header-identity {
+  position: relative;
+  background:
+    radial-gradient(ellipse at 3% 50%, rgba(255, 166, 74, 0.18), transparent 30%),
+    linear-gradient(90deg, rgba(222, 129, 47, 0.07), transparent 40%),
+    var(--astor-nav-paper);
+}
+
+html[data-season="halloween"] .astor-global-header .brand .torch-mark {
+  filter: drop-shadow(0 0 5px rgba(255, 150, 60, 0.6));
+}
+
+@media (min-width: 1100px) {
+  html[data-season="halloween"] .astor-header-identity::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 330px;
+    width: 96px;
+    height: 32px;
+    background: url("/assets/seasonal/halloween-bats.svg") center / contain no-repeat;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+
+/* The footer becomes a night sky over a churchyard. */
+html[data-season="halloween"] .astor-global-footer.site-footer {
+  position: relative;
+  padding-top: 158px;
+  border-top: 0;
+  background:
+    radial-gradient(ellipse at 62% 0, rgba(85, 48, 92, 0.9), transparent 58%),
+    var(--halloween-night);
+}
+
+html[data-season="halloween"] .astor-global-footer.site-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: url("/assets/seasonal/halloween-skyline.svg") center bottom / 1320px 120px no-repeat;
+  pointer-events: none;
+}
+
+html[data-season="halloween"] .astor-global-footer.site-footer .astor-footer-group h2 {
+  color: var(--halloween-amber);
+}
+
+html[data-season="halloween"] .astor-global-footer.site-footer .astor-footer-group a:hover,
+html[data-season="halloween"] .astor-global-footer.site-footer .astor-footer-group a:focus-visible {
+  color: var(--halloween-amber);
+}
+
+/* Book pages on the Halloween shelf say so above the author's name. */
+html[data-season="halloween"] .astor-season-badge[data-season-badge="halloween"] {
+  display: block;
+  margin: 0 0 14px;
+}
+
+html[data-season="halloween"] .astor-season-badge a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 13px 5px 8px;
+  border: 1px solid rgba(255, 182, 88, 0.45);
+  border-radius: 999px;
+  background: var(--halloween-night);
+  color: var(--halloween-amber);
+  font: 800 10.5px/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.13em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+html[data-season="halloween"] .astor-season-badge a:hover,
+html[data-season="halloween"] .astor-season-badge a:focus-visible {
+  background: var(--halloween-plum);
+}
+
+html[data-season="halloween"] .astor-season-badge svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
+
+/* Catalogue cards for the same books carry a small pumpkin. */
+html[data-season="halloween"] .catalog-card[data-season-shelf~="halloween"] .catalog-cover {
+  position: relative;
+}
+
+html[data-season="halloween"] .catalog-card[data-season-shelf~="halloween"] .catalog-cover::after {
+  content: "";
+  position: absolute;
+  right: -9px;
+  bottom: -9px;
+  width: 34px;
+  height: 34px;
+  background: url("/assets/seasonal/halloween-pumpkin.svg") center / contain no-repeat;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.28));
+  pointer-events: none;
+}
+
+/* The seasonal library puts Halloween first while it is Halloween. */
+html[data-season="halloween"] .season-directory .season-tile.theme-halloween {
+  order: -1;
+}
+
+html[data-season="halloween"] .season-calendar a[href="/seasons/halloween/"] {
+  border-color: var(--halloween-amber);
+  background: var(--halloween-amber);
+  color: var(--halloween-night);
+}
+
+@media (max-width: 720px) {
+  html[data-season="halloween"] .astor-season-ribbon[data-season-ribbon="halloween"] {
+    gap: 10px;
+    padding: 8px 14px 9px;
+  }
+
+  html[data-season="halloween"] .astor-season-ribbon-note {
+    display: none;
+  }
+
+  html[data-season="halloween"] .astor-season-ribbon strong {
+    font-size: 15px;
+  }
+
+  html[data-season="halloween"] .astor-global-footer.site-footer {
+    padding-top: 136px;
+  }
+
+  html[data-season="halloween"] .astor-global-footer.site-footer::before {
+    height: 108px;
+    background-size: 1188px 108px;
+  }
+}
+
+@media print {
+  .astor-season-ribbon,
+  .astor-season-badge {
+    display: none !important;
+  }
+}

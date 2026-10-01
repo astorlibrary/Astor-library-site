@@ -121,14 +121,59 @@
     "period": "31 October",
     "theme": "halloween",
     "intro": [
-      "Start with Sleepy Hollow and Other American Halloween Stories: twelve complete stories whose later seasonal associations are explained alongside their original publication histories. Add Victorian and American anthologies, M. R. James’s collected ghosts, Poe’s tales and Hodgson’s Carnacki investigations.",
-      "The longer-reading shelves include Dracula, Frankenstein and works in which the evidence of a haunting remains contested. The free guides below cover Halloween’s literary history, ghost stories, Gothic fiction and individual works. Close readings offer shorter starting points for a class, reading group or evening at home."
+      "Start with Sleepy Hollow and Other American Halloween Stories: twelve complete stories whose later seasonal associations are explained alongside their original publication histories. Add Victorian and American anthologies, the ghost stories of M. R. James and E. F. Benson, Poe’s tales and Hodgson’s Carnacki investigations.",
+      "The longer-reading shelves include Dracula, Carmilla, Frankenstein and works in which the evidence of a haunting remains contested. The free guides below cover Halloween’s literary history, ghost stories, Gothic fiction and individual works. Close readings offer shorter starting points for a class, reading group or evening at home."
     ],
     "heroBooks": [
       "/books/sleepy-hollow-and-other-stories/",
       "/books/dracula/",
       "/books/m-r-james-collected-ghost-stories/"
     ],
+    "home": {
+      "from": "10-01",
+      "to": "10-31",
+      "shelfTitle": "Six for October",
+      "shelf": [
+        {
+          "href": "/books/edgar-allan-poe-selected-tales/",
+          "label": "American Gothic",
+          "title": "Poe: Selected Tales"
+        },
+        {
+          "href": "/books/carmilla/",
+          "label": "Vampires",
+          "title": "Carmilla"
+        },
+        {
+          "href": "/books/frankenstein/",
+          "label": "The Gothic novel",
+          "title": "Frankenstein"
+        },
+        {
+          "href": "/books/the-turn-of-the-screw/",
+          "label": "A ghost novella",
+          "title": "The Turn of the Screw"
+        },
+        {
+          "href": "/books/e-f-benson-ghost-stories/",
+          "label": "English ghosts",
+          "title": "E. F. Benson: Ghost Stories"
+        },
+        {
+          "href": "/books/american-ghost-stories/",
+          "label": "American ghosts",
+          "title": "American Ghost Stories"
+        }
+      ]
+    },
+    "siteTheme": {
+      "from": "10-01",
+      "to": "10-31",
+      "ribbon": "Halloween at Astor",
+      "ribbonNote": "Ghost stories, Gothic novels and the history of 31 October",
+      "ribbonLink": "Open the collection",
+      "badge": "On the Halloween shelf"
+    },
     "sections": [
       {
         "title": "The Halloween story shelf",
@@ -139,6 +184,7 @@
           "/books/victorian-ghost-stories/",
           "/books/edgar-allan-poe-selected-tales/",
           "/books/m-r-james-collected-ghost-stories/",
+          "/books/e-f-benson-ghost-stories/",
           "/books/carnacki-the-ghost-finder/"
         ]
       },
@@ -155,9 +201,10 @@
       },
       {
         "title": "Gothic novels and transformations",
-        "description": "Vampirism, scientific creation, divided identity and the supernatural portrait provide four different routes into Gothic fiction. Wuthering Heights adds a haunting bound to family history and competing narrators.",
+        "description": "Two vampire stories, a scientific creation, a divided identity and a supernatural portrait give five ways into Gothic fiction. Wuthering Heights adds a ghost bound up with family history and with competing narrators.",
         "books": [
           "/books/dracula/",
+          "/books/carmilla/",
           "/books/frankenstein/",
           "/books/jekyll-and-hyde/",
           "/books/dorian-gray/",
@@ -179,6 +226,7 @@
       "/books/victorian-ghost-stories/",
       "/books/edgar-allan-poe-selected-tales/",
       "/books/m-r-james-collected-ghost-stories/",
+      "/books/e-f-benson-ghost-stories/",
       "/books/carnacki-the-ghost-finder/",
       "/books/the-turn-of-the-screw/",
       "/books/the-willows/",
@@ -186,6 +234,7 @@
       "/books/the-house-on-the-borderland/",
       "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
       "/books/dracula/",
+      "/books/carmilla/",
       "/books/frankenstein/",
       "/books/jekyll-and-hyde/",
       "/books/dorian-gray/",

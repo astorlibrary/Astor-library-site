@@ -264,20 +264,29 @@ const autumnBooks = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'conten
 const autumnThumbnails = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'book-thumbnails.json'), 'utf8'));
 const autumnCards = [...autumnShelf.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
 const autumnCollections = [];
-if (new Set(autumnCards.map(card => card[1])).size !== autumnCards.length) failures.push('The autumn shelf repeats a selected book');
+if (new Set(autumnCards.map(card => card[1])).size !== autumnCards.length) failures.push('The homepage seasonal shelf repeats a selected book');
 for (const card of autumnCards) {
   const book = autumnBooks.find(item => item.href === card[1]);
   if (!book) {
-    failures.push('The autumn shelf links to a book missing from the catalogue: ' + card[1]);
+    failures.push('The homepage seasonal shelf links to a book missing from the catalogue: ' + card[1]);
     continue;
   }
   autumnCollections.push(book.collection);
   const image = card[2].match(/<img\b[^>]*src="([^"]+)"/)?.[1];
-  if (image !== book.image && image !== autumnThumbnails[book.image]) failures.push('The autumn shelf has a mismatched cover for ' + book.href);
+  if (image !== book.image && image !== autumnThumbnails[book.image]) failures.push('The homepage seasonal shelf has a mismatched cover for ' + book.href);
 }
-if (new Set(autumnCollections).size < 3) failures.push('The autumn shelf must represent at least three catalogue collections');
-if (autumnCollections.filter(collection => collection === 'Victorian').length > 2) failures.push('The autumn shelf is dominated by Victorian titles');
+if (new Set(autumnCollections).size < 3) failures.push('The homepage seasonal shelf must represent at least three catalogue collections');
+if (autumnCollections.filter(collection => collection === 'Victorian').length > 2) failures.push('The homepage seasonal shelf is dominated by Victorian titles');
 if (/Summer at Astor|class="seasonal-feature"|class="academic-feature"/i.test(homepageMain)) failures.push('The homepage still contains a retired seasonal feature');
+// The seasonal dress is switched on in the browser by date, so every page
+// needs the switch and its stylesheet, and the ribbon must never be visible
+// without them.
+{
+  const builtHome = path.join(root, 'dist', 'index.html');
+  const built = fs.existsSync(builtHome) ? fs.readFileSync(builtHome, 'utf8') : '';
+  if (built && (!built.includes('data-season-switch') || !built.includes('/assets/seasonal-theme.css'))) failures.push('The built homepage is missing the seasonal switch or its stylesheet');
+}
+if (!/^\.astor-season-ribbon,\s*\.astor-season-badge \{\s*display: none;/m.test(fs.readFileSync(path.join(root, 'assets', 'seasonal-theme.css'), 'utf8'))) failures.push('The seasonal ribbon and badges must be hidden out of season');
 for (const total of [
   sourceBookFiles.length + ' complete novels, plays and poems',
   'All ' + sourceBookFiles.length + ' books &rarr;',

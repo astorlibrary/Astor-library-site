@@ -33,7 +33,7 @@ function versionOf(assetPath) {
 const VERSIONED_ASSETS = [
   '/assets/styles.css', '/assets/astor-study.css', '/assets/home.css', '/assets/seasons.css',
   '/assets/account.css', '/assets/presentation-viewer.css', '/assets/site.js', '/assets/catalogue.js',
-  '/assets/explore.js', '/assets/resources.js', '/assets/resource-library.js'
+  '/assets/explore.js', '/assets/resources.js', '/assets/resource-library.js', '/assets/seasonal-theme.css'
 ];
 
 function versionAssets(html) {
@@ -1080,6 +1080,54 @@ function addBookSeasonLinks(html, source) {
   return html.replace(/<nav class="book-end-nav"|<\/main>/, match => links + match);
 }
 
+// Seasonal dress. A season with a siteTheme block in seasonal-data.json gets
+// a ribbon above the header on every page, a badge on the book pages in its
+// collection and a marker on their catalogue cards. The reader's browser
+// decides whether to show them: the script below sets data-season on <html>
+// only between the season's dates, so the dress comes off on its own when
+// the season ends, with no deploy. Out of season, ?season=<slug> previews it.
+const themedSeasons = seasons.filter(season => season.siteTheme);
+const seasonSwitch = '<script data-season-switch>(function(h){var t=' +
+  JSON.stringify(themedSeasons.map(season => [season.slug, season.siteTheme.from, season.siteTheme.to])) +
+  ',d=new Date(),k=("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2),q=/[?&]season=([a-z-]+)/.exec(location.search),i,f,e;' +
+  'for(i=0;i<t.length;i++){f=t[i][1];e=t[i][2];if(q?q[1]===t[i][0]:(f<=e?k>=f&&k<=e:k>=f||k<=e)){h.setAttribute("data-season",t[i][0]);break}}})(document.documentElement)</script>';
+const SEASON_BAT = '<svg viewBox="-60 -30 120 52" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0-7 5-17 10-7Q26-28 58-26Q43-8 40 9Q24-4 17 13Q6 6 0 20Q-6 6-17 13Q-24-4-40 9Q-43-8-58-26Q-26-28-10-7L-5-17Z"/></svg>';
+const SEASON_PUMPKIN = '<svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 8.5c0-3 1.4-4.6 4.2-5.4" stroke="#7c9a4c" stroke-width="2.6" fill="none" stroke-linecap="round"/><ellipse cx="10.6" cy="19" rx="8" ry="9.6" fill="#d2611c"/><ellipse cx="21.4" cy="19" rx="8" ry="9.6" fill="#e9852b"/><ellipse cx="16" cy="19" rx="6.2" ry="10.2" fill="#f4a03f"/><path d="M12.6 9.6q-3.6 9.4 0 18.8M19.4 9.6q3.6 9.4 0 18.8" stroke="#c96a22" stroke-width="1" fill="none"/></svg>';
+
+function addSeasonalTheme(html, source) {
+  if (!themedSeasons.length || /http-equiv=["']refresh["']/i.test(html) || !/<\/head>/i.test(html)) return html;
+  const href = pageHref(source);
+  if (!html.includes('data-season-switch')) {
+    html = /<meta charset="utf-8">/i.test(html)
+      ? html.replace(/<meta charset="utf-8">/i, match => match + seasonSwitch)
+      : html.replace(/<head>/i, match => match + seasonSwitch);
+  }
+  if (!html.includes('/assets/seasonal-theme.css')) {
+    html = html.replace('</head>', '<link rel="stylesheet" href="/assets/seasonal-theme.css"></head>');
+  }
+  for (const season of themedSeasons) {
+    const theme = season.siteTheme;
+    const seasonHref = hrefFor(season);
+    // The homepage and the season's own page already wear the season.
+    if (href !== '/' && href !== seasonHref && html.includes('<header class="site-header astor-global-header">') && !html.includes('data-season-ribbon="' + season.slug + '"')) {
+      const ribbon = '<a class="astor-season-ribbon" data-season-ribbon="' + season.slug + '" href="' + seasonHref + '">' + SEASON_BAT +
+        '<strong>' + escapeHtml(theme.ribbon) + '</strong><span class="astor-season-ribbon-note">' + escapeHtml(theme.ribbonNote) + '</span>' +
+        '<span class="astor-season-ribbon-link">' + escapeHtml(theme.ribbonLink) + ' <span aria-hidden="true">&rarr;</span></span></a>\n';
+      html = html.replace('<header class="site-header astor-global-header">', ribbon + '<header class="site-header astor-global-header">');
+    }
+    const shelf = new Set(booksFor(season));
+    if (shelf.has(href) && !html.includes('data-season-badge="' + season.slug + '"')) {
+      const badge = '<p class="astor-season-badge" data-season-badge="' + season.slug + '"><a href="' + seasonHref + '">' + SEASON_PUMPKIN + escapeHtml(theme.badge) + '</a></p>';
+      html = html.replace(/(<section class="page-intro[^"]*">\s*<div>)/, '$1' + badge);
+    }
+    if (href === '/library/') {
+      html = html.replace(/<article class="catalog-card"([^>]*)>(\s*<a class="catalog-cover" href="([^"]+)")/g, (match, attributes, rest, cardHref) =>
+        shelf.has(cardHref) && !attributes.includes('data-season-shelf') ? '<article class="catalog-card"' + attributes + ' data-season-shelf="' + season.slug + '">' + rest : match);
+    }
+  }
+  return versionAssets(html);
+}
+
 function addGlobalNavigation(html, source) {
   const href = pageHref(source);
   const inRoute = route => href === route || href.startsWith(route);
@@ -1403,6 +1451,7 @@ function prepareHtml(html, source) {
   html = addSiteIndexLink(html, source);
   html = addBookSeasonLinks(html, source);
   html = addGlobalNavigation(html, source);
+  html = addSeasonalTheme(html, source);
   html = html.replace(/href="\/assets\/seasons\.css"/g, 'href="/assets/seasons.css?v=' + seasonalStylesVersion + '"');
 
   if (!html.includes('/assets/site.js')) {

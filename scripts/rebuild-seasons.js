@@ -23,6 +23,12 @@ fs.writeFileSync('seasons/index.html',home);
 // The homepage carries the same hero as the season it is showing, built from
 // the same data, so the two never drift apart. Which season it shows is the
 // one with a `home` block in seasonal-data.json.
+// "Explore autumn reading", but "Explore Halloween reading": the seasons of
+// the year are common nouns and the festivals are names.
+function seasonName(s) {
+  const name = s.shortTitle || s.title;
+  return /^(spring|summer|autumn|winter)$/i.test(name) ? name.toLowerCase() : name;
+}
 function homeSeasonBlock(s) {
   const covers = s.heroBooks.map((href, i) => {
     const b = book(href);
@@ -39,7 +45,7 @@ function homeSeasonBlock(s) {
     '<p class="season-eyebrow">' + e(s.kicker) + '</p>' +
     '<h2 class="home-season-title" id="home-season-title">' + headline + '</h2>' +
     '<p class="season-deck">' + e(s.deck) + '</p>' +
-    '<div class="season-hero-actions"><a class="season-button" href="' + hrefFor(s) + '">Explore ' + e((s.shortTitle || s.title).toLowerCase()) + ' reading <span aria-hidden="true">&rarr;</span></a>' +
+    '<div class="season-hero-actions"><a class="season-button" href="' + hrefFor(s) + '">Explore ' + e(seasonName(s)) + ' reading <span aria-hidden="true">&rarr;</span></a>' +
     '<a href="/seasons/">All eight seasons</a></div>' +
     '<p class="season-period">' + e(s.period) + ' <span aria-hidden="true">&#10022;</span> Open all year</p>' +
     '</div><div class="season-art">' + scene(s.theme) + '<div class="season-cover-fan">' + covers + '</div>' +
@@ -48,7 +54,29 @@ function homeSeasonBlock(s) {
     '</div></section>';
 }
 
-const featured = seasons.find(x => x.home);
+// Which season the homepage shows. A `home` block can carry a from/to window
+// in month-day form ("10-01" to "10-31"); the narrowest window containing the
+// build date wins, and a season whose `home` block has no window is the one
+// shown the rest of the year. ASTOR_HOME_SEASON=<slug> overrides both.
+function dayKey(date) {
+  return String(date.getMonth() + 1).padStart(2, '0') + '-' + String(date.getDate()).padStart(2, '0');
+}
+function windowLength(from, to) {
+  const days = key => { const [m, d] = key.split('-').map(Number); return (m - 1) * 31 + d; };
+  return (days(to) - days(from) + 372) % 372;
+}
+function inWindow(key, from, to) {
+  return from <= to ? key >= from && key <= to : key >= from || key <= to;
+}
+function homeSeason(today = new Date()) {
+  if (process.env.ASTOR_HOME_SEASON) return seasons.find(x => x.slug === process.env.ASTOR_HOME_SEASON && x.home);
+  const key = dayKey(today);
+  const dated = seasons.filter(x => x.home && x.home.from && x.home.to && inWindow(key, x.home.from, x.home.to))
+    .sort((a, b) => windowLength(a.home.from, a.home.to) - windowLength(b.home.from, b.home.to));
+  return dated[0] || seasons.find(x => x.home && !x.home.from);
+}
+
+const featured = homeSeason();
 if (featured) {
   const homepage = fs.readFileSync('index.html', 'utf8');
   const start = '<!-- seasonal-hero:start -->';
