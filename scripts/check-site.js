@@ -296,7 +296,7 @@ for (const total of [
   if (!homepageMain.includes(total)) failures.push('The homepage is missing its current catalogue total: ' + total);
 }
 const homepageSections = Array.from(homepageMain.matchAll(/^  <section class="([^"]+)"/gm), match => match[1]);
-if (homepageSections.length !== 6 || homepageSections[0] !== 'home-intro' || !homepageSections.some(name => name.startsWith('home-season '))) failures.push('The homepage must contain six top-level sections: the introduction first, then the books, the season, the sample pages, the free material and support');
+if (homepageSections.length !== 6 || homepageSections[0] !== 'home-intro' || !homepageSections.some(name => name.startsWith('home-season '))) failures.push('The homepage must contain six top-level sections: the introduction first, then the season, the books, the sample pages, the free material and support');
 if (!homepageSections.includes('home-wrap home-study')) failures.push('The homepage is missing its study and revision section');
 for (const sample of ['/assets/samples/macbeth-sample.jpg', '/assets/samples/othello-study-sample.jpg', '/assets/samples/rime-of-the-ancient-mariner-sample.jpg', '/assets/samples/the-odyssey-sample.jpg']) {
   if (!homepageMain.includes('src="' + sample + '"')) failures.push('The homepage is missing edition sample ' + sample);
