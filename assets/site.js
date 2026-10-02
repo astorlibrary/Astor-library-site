@@ -487,7 +487,7 @@
 
       const heading = tools.length ? 'More on ' + book.title : 'Keep reading';
       const intro = tools.length
-        ? 'The guides and editions here stay close to the text. The shelf below continues through the writer or the wider collection.'
+        ? 'Guides for this book first, then more books from the same writer or collection.'
         : authorBooks.length
           ? 'Continue with ' + book.author + ', then move into the wider ' + book.collection + ' collection.'
           : 'Three more books from the ' + book.collection + ' collection.';

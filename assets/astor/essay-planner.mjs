@@ -12,7 +12,7 @@ const head = document.querySelector('#rv-head-book');
 const mount = document.querySelector('#astor-essay-forge');
 
 const STARTERS = [
-  'The text refuses to…',
+  'The word that matters most here is…',
   'What looks like … is in fact…',
   'The turn comes at…',
   'Against the obvious reading,…',
