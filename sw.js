@@ -58,7 +58,7 @@ function isAsset(url) {
   return url.pathname.startsWith('/assets/') && /\.(mjs|js|css|svg|png|webp|avif|woff2?)$/.test(url.pathname);
 }
 
-// Data and study modules come from the network whenever there is one, with
+// Data, study modules and stylesheets come from the network whenever there is one, with
 // the kept copy as the fallback. Serving them from the cache first meant a
 // returning reader saw the previous deploy's quotations, and could get last
 // week's module running against this week's page, until a second visit.
@@ -105,7 +105,7 @@ self.addEventListener('fetch', event => {
   if (url.origin !== self.location.origin) return;
   if (NEVER.test(url.pathname)) return;
 
-  if (isData(url) || /\.m?js$/.test(url.pathname)) { event.respondWith(networkFirst(request)); return; }
+  if (isData(url) || /\.(m?js|css)$/.test(url.pathname)) { event.respondWith(networkFirst(request)); return; }
   if (isAsset(url)) { event.respondWith(cacheFirst(request)); return; }
   if (request.mode === 'navigate' && STUDY_ROUTES.test(url.pathname)) {
     event.respondWith(networkFirstPage(request));

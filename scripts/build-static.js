@@ -1140,6 +1140,9 @@ const themeInit = '<meta name="color-scheme" content="light dark"><meta name="th
   'd.setAttribute("data-theme",t);d.style.colorScheme=t;m=d.querySelector("meta[name=theme-color]");' +
   'if(m&&t==="dark")m.setAttribute("content","#1b1714")})(document.documentElement)</script>';
 
+const themeGuard = '<script data-theme-guard>(function(d){if(d.getAttribute("data-theme")&&!getComputedStyle(d).getPropertyValue("--theme-aware").trim()){' +
+  'd.removeAttribute("data-theme");d.style.colorScheme=""}})(document.documentElement)</script>';
+
 function addThemeSupport(html) {
   if (/http-equiv=["']refresh["']/i.test(html) || !/<\/head>/i.test(html) || html.includes('data-theme-init')) return html;
   html = html.replace(/<meta\b[^>]*name=["']theme-color["'][^>]*>/gi, '');
@@ -1147,7 +1150,10 @@ function addThemeSupport(html) {
     ? html.replace(/<meta charset="utf-8">/i, match => match + themeInit)
     : html.replace(/<head>/i, match => match + themeInit);
   // Last stylesheet in <head>, so the dark palette follows everything it overrides.
-  return html.replace('</head>', '<link rel="stylesheet" href="/assets/theme.css"></head>');
+  // The guard runs once the stylesheets are in and before anything is painted: the
+  // base stylesheets carry --theme-aware, so if a page ever meets an older cached
+  // one it drops back to the light theme instead of showing dark text on dark.
+  return html.replace('</head>', '<link rel="stylesheet" href="/assets/theme.css">' + themeGuard + '</head>');
 }
 
 function addGlobalNavigation(html, source) {

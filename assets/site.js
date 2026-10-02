@@ -678,6 +678,11 @@
   const root = document.documentElement;
   const KEY = 'astor-theme';
   const toggles = [...document.querySelectorAll('[data-theme-toggle]')];
+  // The page's stylesheets could not do themes (see the guard in <head>): stay light.
+  if (!root.getAttribute('data-theme')) {
+    for (const toggle of toggles) toggle.hidden = true;
+    return;
+  }
   const dark = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
 
   function saved() {
