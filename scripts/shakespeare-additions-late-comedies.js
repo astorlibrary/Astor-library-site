@@ -156,7 +156,7 @@ module.exports = [
       },
       {
         href: "https://www.rsc.org.uk/the-two-noble-kinsmen/about-the-play/dates-and-sources",
-        label: "Royal Shakespeare Company: Dates and sources"
+        label: "Royal Shakespeare Company: The Two Gentlemen of Verona"
       }
     ]
   },
@@ -317,7 +317,7 @@ module.exports = [
       },
       {
         href: "https://www.rsc.org.uk/troilus-and-cressida/about-the-play/dates-and-sources",
-        label: "Royal Shakespeare Company: Dates and sources"
+        label: "Royal Shakespeare Company: The Two Gentlemen of Verona"
       }
     ]
   },
@@ -635,8 +635,8 @@ module.exports = [
         label: "Folger Shakespeare Library: Read the play"
       },
       {
-        href: "https://www.rsc.org.uk/the-two-gentlemen-of-verona/about-the-play/dates-and-sources",
-        label: "Royal Shakespeare Company: Dates and sources"
+        href: "https://www.rsc.org.uk/the-two-gentlemen-of-verona",
+        label: "Royal Shakespeare Company: The Two Gentlemen of Verona"
       },
       {
         href: "https://www.rsc.org.uk/the-two-gentlemen-of-verona/about-the-play/key-moments",
