@@ -14,3 +14,13 @@ test('catalogue excerpts preserve initials, titles and the complete first senten
     ['What happened? Read the account.', 'What happened?']
   ]) assert.equal(excerpts.firstSentence(input), expected);
 });
+
+test('search descriptions keep whole sentences and fill out a one-line description from the deck', () => {
+  const long = 'Years ago Nora Helmer forged her dead father’s signature to borrow the money that saved her husband’s life. She has kept the secret from Torvald ever since, paying the debt in instalments out of her housekeeping, and now the man who lent it wants his job back.';
+  assert.equal(excerpts.searchDescription(long), 'Years ago Nora Helmer forged her dead father’s signature to borrow the money that saved her husband’s life.');
+  const deck = 'The larger Astor Othello. The commentary sits on the same page as the text, with notes on the Quarto and the Folio. The introduction covers Venice and Cyprus, race in Shakespeare’s London and the play on stage.';
+  assert.equal(excerpts.searchDescription('The larger Astor Othello.', deck), 'The larger Astor Othello. The commentary sits on the same page as the text, with notes on the Quarto and the Folio.');
+  assert.equal(excerpts.searchDescription('Choose a new password.', 'An unrelated deck.'), 'Choose a new password.');
+  assert.equal(excerpts.searchDescription('M. R. James wrote the stories for Christmas Eve. They were read aloud.'), 'M. R. James wrote the stories for Christmas Eve. They were read aloud.');
+  assert.deepEqual(excerpts.sentences('Mr. Pooter writes. Carrie laughs! Does Lupin care?'), ['Mr. Pooter writes.', 'Carrie laughs!', 'Does Lupin care?']);
+});

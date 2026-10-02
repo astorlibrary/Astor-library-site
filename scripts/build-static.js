@@ -11,6 +11,7 @@ const { loadBooks } = require('./book-data');
 const { renderToolkit } = require('./study-toolkit');
 const { accentFor, motifSvg, motifSvgByName, motifName, identityFor } = require('./book-motifs');
 const { normaliseBookOrder } = require('./normalise-book-page');
+const { searchDescription } = require('./text-excerpt');
 
 const root = process.cwd();
 const seasonalStylesVersion = require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root, 'assets/seasons.css'))).digest('hex').slice(0, 10);
@@ -613,8 +614,22 @@ const ASTOR_FOUNDER = {
   image: SITE_URL + '/assets/about/haydn-wood-480.jpg'
 };
 
+// Search descriptions are cut to whole sentences, and a one-sentence description
+// borrows the next sentence of the page's deck, so results pages show a complete thought.
+function tightenSearchDescription(html) {
+  const tag = html.match(/<meta\b[^>]*name="description"[^>]*content="([^"]*)"[^>]*>/i);
+  if (!tag) return html;
+  const current = plainText(tag[1]);
+  const deck = plainText(html.match(/<p class="deck">([\s\S]*?)<\/p>/i)?.[1] || '');
+  const tightened = searchDescription(current, deck);
+  if (tightened === current) return html;
+  const replacement = tag[0].replace(/content="[^"]*"/, 'content="' + escapeHtml(tightened) + '"');
+  return html.replace(tag[0], () => replacement);
+}
+
 function addGlobalMetadata(html, source) {
   if (/http-equiv="refresh"/i.test(html)) return html;
+  html = tightenSearchDescription(html);
   const href = pageHref(source);
   const title = plainText(html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || 'Astor Library');
   const description = plainText(html.match(/<meta\b[^>]*name="description"[^>]*content="([^"]+)"/i)?.[1] || 'Complete classic texts, study editions, explanatory notes and free literature resources from Astor Library.');
