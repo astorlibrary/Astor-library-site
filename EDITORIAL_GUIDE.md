@@ -5,7 +5,7 @@ This guide is for every future page and revision.
 ## Voice
 
 - Write for an intelligent reader, not for a search engine or a build log.
-- Use clear British English and concrete nouns and verbs.
+- Use clear British English and concrete nouns and verbs. The house spellings are “towards”, “judgement”, “grey”, “colour”, “centre”, “theatre”, “catalogue”, “defence”, “sceptical” and “-ise” (“recognise”, “organisation”). Quotations, titles and proper names keep their own spelling (“The Picture of Dorian Gray”, the Public Theater).
 - Prefer a useful fact or interpretation to promotional language.
 - Keep introductions short enough to read before scrolling.
 - Do not describe the machinery of the website.

@@ -284,7 +284,7 @@ module.exports = [
     methods: [
       { label: 'The clue', title: 'Visible does not mean understood', copy: 'A good clue usually appears before it is explained. The reader sees an object or hears a statement but assigns it the wrong weight. Detection depends on arrangement: which detail is ordinary, which is planted and which has been dismissed too quickly.' },
       { label: 'The record', title: 'Narration is part of the evidence', copy: 'Watson writes after the case, chooses what to withhold and converts reasoning into drama. His honesty does not make the record neutral. Detective fiction wants us to trust an account while we watch how that trust is earned.' },
-      { label: 'The verdict', title: 'Explanation is a form of power', copy: 'To solve a case is to decide which story becomes public. Holmes sometimes protects a client, lets an offender leave or withholds a name. The genre therefore tests the detective’s judgment as well as the accuracy of the deduction.' }
+      { label: 'The verdict', title: 'Explanation is a form of power', copy: 'To solve a case is to decide which story becomes public. Holmes sometimes protects a client, lets an offender leave or withholds a name. The genre therefore tests the detective’s judgement as well as the accuracy of the deduction.' }
     ],
     books: [
       { href: '/books/the-moonstone/', title: 'The Moonstone', author: 'Wilkie Collins', year: '1868', image: '/The%20Moonstone%20Main%20Cover.png', copy: 'A stolen diamond is investigated through connected testimonies that make voice, empire and possession part of the case.' },

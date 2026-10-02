@@ -432,7 +432,7 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“I never knew myself”',
-    description: 'Follow Elizabeth Bennet as she unfolds Darcy’s letter again, tests its evidence and discovers how vanity has shaped her judgment.',
+    description: 'Follow Elizabeth Bennet as she unfolds Darcy’s letter again, tests its evidence and discovers how vanity has shaped her judgement.',
     href: '/passage-room/pride-prejudice-self-knowledge/', image: '/Pride%20and%20Prejudice.png', imageAlt: 'Astor Library Pride and Prejudice cover',
     relatedBooks: ['/books/pride-and-prejudice/'], search: 'Pride and Prejudice Jane Austen Elizabeth Bennet Darcy letter Chapter 36 rereading self knowledge judgement vanity close reading'
   },

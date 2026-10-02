@@ -137,7 +137,7 @@ module.exports = [
       { label: "History", title: "The chronicles", body: "Hall’s Union and Holinshed’s Chronicles supplied much of the historical narrative. The dramatists compress dates, ages and relationships, and the rose-picking in the Temple Garden is invented; the name ‘Wars of the Roses’ came much later. What matters onstage is the accumulating logic: neglected grievances become badges, badges become armies, and memory becomes a reason to kill." },
     ],
     characters: [
-      { name: "Henry VI", body: "A devout and contemplative king who dislikes coercion but cannot escape the political consequences of surrendering judgment to stronger wills." },
+      { name: "Henry VI", body: "A devout and contemplative king who dislikes coercion but cannot escape the political consequences of surrendering judgement to stronger wills." },
       { name: "Margaret of Anjou", body: "French princess, queen, lover, strategist and military leader. Across the trilogy she moves from being exchanged by men to directing the Lancastrian cause herself." },
       { name: "Richard Plantagenet, Duke of York", body: "A claimant who first conceals his ambition, uses Cade to test the state and eventually reaches for the crown openly; father of Edward, Clarence and Richard." },
       { name: "Richard, Duke of Gloucester", body: "York’s formidable son and the future Richard III. His battlefield courage hardens into an announced willingness to smile, deceive and murder his way to power." },
@@ -196,7 +196,7 @@ module.exports = [
         label: "Falling",
         title: "Farewell speeches",
         paragraphs: [
-          "Buckingham, Katherine and Wolsey are each removed by structures of power they cannot finally resist. Once condemned or displaced, however, they receive unusually spacious scenes in which to interpret what has happened. Their language slows the forward motion of state business and replaces the court’s charge sheet with memory, self-knowledge and judgment.",
+          "Buckingham, Katherine and Wolsey are each removed by structures of power they cannot finally resist. Once condemned or displaced, however, they receive unusually spacious scenes in which to interpret what has happened. Their language slows the forward motion of state business and replaces the court’s charge sheet with memory, self-knowledge and judgement.",
           "The three falls are not morally identical. Buckingham maintains innocence, Katherine defends faithful service, and Wolsey recognises the ambition through which he harmed others. Reading the speeches together prevents the play from becoming a simple procession of victims. Their last speeches show what a fallen man can see once his rank has gone, and whether a fine repentance makes up for a career of bullying.",
         ],
       },
@@ -204,7 +204,7 @@ module.exports = [
         label: "Succession",
         title: "Katherine and Anne",
         paragraphs: [
-          "Katherine’s marriage is discussed as a problem because it has produced no surviving son, though the play gives her the clearest moral authority at court. She speaks for taxpayers, questions witnesses and insists upon the history of her marriage. The state treats her body as a failed route to succession while the drama gives her words an afterlife stronger than the judgment against her.",
+          "Katherine’s marriage is discussed as a problem because it has produced no surviving son, though the play gives her the clearest moral authority at court. She speaks for taxpayers, questions witnesses and insists upon the history of her marriage. The state treats her body as a failed route to succession while the drama gives her words an afterlife stronger than the judgement against her.",
           "Anne’s relative silence is therefore significant. She is pitied, promoted, crowned and delivered of a daughter within a public story largely spoken by others. At the baptism, Cranmer converts the baby’s unexpected sex into providential promise. The prophecy honours Elizabeth, but it also reveals how retrospect changes value: the daughter who disappoints immediate hopes becomes the reason this whole sequence can be presented as national destiny.",
         ],
       },
@@ -224,7 +224,7 @@ module.exports = [
     ],
     questions: [
       { title: "Whose version of events earns the name ‘true’?", body: "Compare accusations, legal proceedings, farewell speeches and staged ceremonies. The play makes official authority powerful without making it automatically reliable." },
-      { title: "How should Wolsey’s repentance change our judgment of him?", body: "Set his final recognition beside the taxation, manipulation and deaths enabled by his power. A moving speech may reveal a self without erasing a record." },
+      { title: "How should Wolsey’s repentance change our judgement of him?", body: "Set his final recognition beside the taxation, manipulation and deaths enabled by his power. A moving speech may reveal a self without erasing a record." },
       { title: "Does the Elizabeth prophecy resolve the play or rewrite it?", body: "Read the baptism against Katherine’s treatment and Anne’s limited voice. The ending knows the future, and that knowledge changes how a politically uncertain birth is made to signify." },
     ],
     sources: [
@@ -282,7 +282,7 @@ module.exports = [
         label: "Legitimacy",
         title: "Possession and right",
         paragraphs: [
-          "Eleanor’s opening aside gives away the constitutional problem: John’s strongest title is that he already rules. The drama then tests competing ways of making authority visible: genealogy, victory, coronation, oath, papal judgment and the consent of a city. None is sufficient on its own, and several can be bought or reversed.",
+          "Eleanor’s opening aside gives away the constitutional problem: John’s strongest title is that he already rules. The drama then tests competing ways of making authority visible: genealogy, victory, coronation, oath, papal judgement and the consent of a city. None is sufficient on its own, and several can be bought or reversed.",
           "John is most forceful while answering the first challenge and weakest after Arthur’s disappearance exposes the insecurity beneath his rule. The Bastard travels in the opposite direction, beginning without legitimate name or land and ending as the clearest voice of national resistance. The contrast does not solve the succession question; it separates inherited right from the capacity to command belief.",
         ],
       },

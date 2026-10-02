@@ -190,8 +190,15 @@ function quotationsPanel(book) {
     '<p class="astor-panel-note">' + book.quotations.length + ' quotations, each with the place it comes from.</p>' +
     '<div class="astor-quote-filters" role="group" aria-label="Filter quotations by theme">' + filters + '</div>' +
     '<div class="astor-quote-list">' + cards + '</div>' +
-    '<p class="astor-inline-note">Quoted from the ' + escapeHtml(book.sourceText.label) + '.</p>' +
+    '<p class="astor-inline-note">Quoted from ' + escapeHtml(sourceLabel(book.sourceText.label)) + '.</p>' +
     '</section>';
+}
+
+// "the Project Gutenberg text of…", but a named edition or translation
+// ("The Brothers Karamazov, translated by…", "Samuel Butler’s prose translation…")
+// carries its own article or needs none.
+function sourceLabel(label) {
+  return /^(Project Gutenberg|Standard Ebooks|Globe\/Moby) /.test(label) ? 'the ' + label : label;
 }
 
 function techniquesPanel(book) {
@@ -422,4 +429,4 @@ function renderToolkit(book, { heading, titleFor, passages, showGlance = true } 
     '</section>';
 }
 
-module.exports = { renderToolkit, escapeHtml, readingTimeLabel, formatYear, fallbackTitle, DIFFICULTY_WORDS };
+module.exports = { renderToolkit, escapeHtml, readingTimeLabel, formatYear, fallbackTitle, sourceLabel, DIFFICULTY_WORDS };

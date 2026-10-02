@@ -18,7 +18,7 @@ module.exports = {
         title: 'Down the hole: body and identity',
         body: [
           'In the opening chapters Alice’s curiosity gets her into practical trouble: she is too small to reach the key, then too big for the door. Alice falls, finds the little door and repeatedly changes size after drinking and eating. Her body will not remain a stable measure of the world, so questions of height become questions of selfhood. The pool of tears then carries the problem outward: Alice’s private distress becomes the environment through which a mixed company of animals must swim.',
-          'The Caucus-race offers the first public solution, but it is a procedure without a meaningful contest. Everyone runs, everyone stops when the Dodo says so, and everyone receives a prize. Carroll’s joke is about official language, which can can make an arbitrary performance sound settled and fair.'
+          'The Caucus-race offers the first public solution, but it is a procedure without a meaningful contest. Everyone runs, everyone stops when the Dodo says so, and everyone receives a prize. Carroll’s joke is about official language, which can make an arbitrary performance sound settled and fair.'
         ]
       },
       {
@@ -398,7 +398,7 @@ module.exports = {
         title: 'Broken promises, rising and execution',
         body: [
           'Trefry treats Oroonoko with relative respect, yet the promised freedom never arrives. Oroonoko’s speech to the enslaved exposes the logic of endless postponement: labour and obedience offer no route out when the people making the promise benefit from breaking it. The rising is defeated after another offer of terms.',
-          'The conclusion refuses rescue. Oroonoko kills Imoinda before his own capture and is publicly dismembered. Behn’s prose directs horror toward colonial cruelty, but the hero’s choices remain available for moral scrutiny. Tragedy does not require every act of its central figure to become exemplary.'
+          'The conclusion refuses rescue. Oroonoko kills Imoinda before his own capture and is publicly dismembered. Behn’s prose directs horror towards colonial cruelty, but the hero’s choices remain available for moral scrutiny. Tragedy does not require every act of its central figure to become exemplary.'
         ]
       }
     ],
@@ -443,7 +443,7 @@ module.exports = {
         label: 'Atlantic systems',
         title: 'Coramantien and the trade in captives',
         body: [
-          '“Coramantien” points toward the English trading world around Kormantin on the Gold Coast. The narrative joins warfare and captive sale in West Africa to European shipping and American plantation slavery. Oroonoko can occupy both sides of that commerce before betrayal makes him its victim.',
+          '“Coramantien” points towards the English trading world around Kormantin on the Gold Coast. The narrative joins warfare and captive sale in West Africa to European shipping and American plantation slavery. Oroonoko can occupy both sides of that commerce before betrayal makes him its victim.',
           'That double position is not an incidental inconsistency to be explained away. It is one reason the work remains important for studying how early English fiction could condemn cruelty while retaining assumptions about hierarchy, conquest and who most visibly deserved liberty.'
         ]
       },
@@ -627,7 +627,7 @@ module.exports = {
       {
         title: 'The River Bank',
         body: [
-          'Mole abandons spring-cleaning, reaches the river and meets Rat. The picnic establishes a life organised by water, weather and competent routine. Toad immediately offers a rival ideal in the gipsy caravan, then abandons it when the motor car passes in dust and noise.',
+          'Mole abandons spring-cleaning, reaches the river and meets Rat. The picnic establishes a life organised by water, weather and competent routine. Toad immediately offers a rival ideal, the open road in a canary-yellow caravan, then abandons it when the motor car passes in dust and noise.',
           'The sequence distinguishes curiosity from mere novelty. Mole wants to learn a world and its practices; Toad wants the next object intensely enough to forget the previous one. Their different forms of desire shape everything that follows.'
         ]
       },
@@ -880,7 +880,7 @@ module.exports = {
       {
         title: 'Arrival and social division',
         body: [
-          'Nick rents in West Egg, visits Tom and Daisy Buchanan across the bay and sees Gatsby reaching toward a distant light. The next journey crosses the valley of ashes to George Wilson’s garage and then to Tom and Myrtle’s Manhattan apartment. The movement from polished dinner to violent party makes class power spatial before the plot explains it.',
+          'Nick rents in West Egg, visits Tom and Daisy Buchanan across the bay and sees Gatsby reaching towards a distant light. The next journey crosses the valley of ashes to George Wilson’s garage and then to Tom and Myrtle’s Manhattan apartment. The movement from polished dinner to violent party makes class power spatial before the plot explains it.',
           'Nick claims reserve while recording gestures, voices, rooms and racial talk with sharp evaluation. The reader’s first task is therefore not to label him reliable or unreliable once and for all, but to notice how declared tolerance gives him access to other people’s confidences.'
         ]
       },
