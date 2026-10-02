@@ -427,6 +427,9 @@ for (const route of passageRoutes) {
   if (noteCount !== markCount) failures.push(route + ' margin notes must match its marked phrases');
   if (!passage.includes('class="passage-question"')) failures.push(route + ' is missing its closing reading question');
   if (!passage.includes('Texts consulted')) failures.push(route + ' is missing its source note');
+  const position = passageRoutes.indexOf(route) + 1;
+  const kicker = passage.match(/<p class="kicker">Close reading (\d+)/);
+  if (!kicker || Number(kicker[1]) !== position) failures.push(route + ' should be labelled close reading ' + String(position).padStart(2, '0'));
 }
 
 const macbethStudyFile = path.join(root, 'study', 'macbeth', 'index.html');
