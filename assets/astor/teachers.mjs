@@ -52,7 +52,7 @@ function render(book) {
 
 function sheetShell(book, title, meta) {
   const sheet = el('section', { class: 'astor-worksheet' });
-  sheet.append(el('h3', { text: title }));
+  sheet.append(el('h2', { class: 'astor-worksheet-title', text: title }));
   sheet.append(el('p', { class: 'astor-worksheet-meta', text: book.title + ' · ' + book.author + ' · ' + meta }));
   return sheet;
 }

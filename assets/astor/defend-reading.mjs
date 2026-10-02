@@ -51,7 +51,7 @@ function render(book) {
     const inner = el('div', { class: 'astor-panel' });
 
     inner.append(el('article', { class: 'astor-note' }, [
-      el('h4', { text: 'The main objection' }),
+      el('h3', { class: 'astor-note-title', text: 'The main objection' }),
       el('p', { text: view.counter || 'No objection is given for this reading. What would make it fail?' })
     ]));
 
@@ -98,7 +98,7 @@ function render(book) {
       const counterQuote = pickCounterEvidence(book, chosen);
       if (counterQuote) {
         inner.append(el('article', { class: 'astor-note' }, [
-          el('h4', { text: 'Evidence you have not used' }),
+          el('h3', { class: 'astor-note-title', text: 'Evidence you have not used' }),
           el('blockquote', { class: 'astor-game-quote' }, [el('p', { text: counterQuote.text })]),
           el('p', { class: 'astor-quote-attribution', text: (counterQuote.speaker ? counterQuote.speaker + ' · ' : '') + book.title + ' ' + counterQuote.reference }),
           el('p', { class: 'astor-note-aside', text: counterQuote.analysis })

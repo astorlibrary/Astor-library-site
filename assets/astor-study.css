@@ -388,7 +388,8 @@
   padding-top: 14px;
 }
 
-.astor-note h4 { margin: 0 0 8px; font-size: 21px; letter-spacing: -.015em; }
+.astor-note h4,
+.astor-note .astor-note-title { margin: 0 0 8px; font-size: 21px; letter-spacing: -.015em; }
 
 .astor-note p {
   margin: 0 0 10px;
@@ -1170,7 +1171,8 @@
 /* ---------------------------------------------------------------- teachers */
 
 .astor-worksheet { border: 1px solid var(--astor-line); background: var(--surface,#fffdfa); padding: 26px; margin: 24px 0; }
-.astor-worksheet h3 { margin: 0 0 6px; font-size: 24px; }
+.astor-worksheet h3,
+.astor-worksheet .astor-worksheet-title { margin: 0 0 6px; font-size: 24px; }
 .astor-worksheet .astor-worksheet-meta { font-family: var(--astor-sans); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--wine-text,var(--burgundy)); margin: 0 0 18px; }
 .astor-worksheet ol { font-family: var(--astor-sans); font-size: 15px; line-height: 1.7; color: var(--text-soft,#423b36); padding-left: 22px; }
 .astor-worksheet .astor-rule { border-bottom: 1px solid var(--astor-line-strong); height: 26px; margin: 8px 0; }

@@ -112,7 +112,8 @@ function entry(theme, open) {
   const grid = el('div', { class: 'astor-note-grid' });
   for (const book of theme.books) {
     const block = el('article', { class: 'astor-note' });
-    block.append(el('h4', {}, [el('a', { href: book.href + '#astor-theme-' + theme.id, text: book.title })]));
+    // h2: the theme names sit in <summary>, so these are the first headings under the page's h1.
+    block.append(el('h2', { class: 'astor-note-title' }, [el('a', { href: book.href + '#astor-theme-' + theme.id, text: book.title })]));
     if (book.name && book.name !== theme.name) {
       block.append(el('p', { class: 'astor-quote-attribution', text: 'Also called ' + book.name }));
     }

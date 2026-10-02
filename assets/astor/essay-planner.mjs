@@ -74,7 +74,7 @@ function render(book) {
   function draw() {
     const suggestion = mount.querySelector('#astor-essay-suggestion');
     clear(suggestion);
-    suggestion.append(el('h4', { text: 'A suggested plan' }));
+    suggestion.append(el('h3', { class: 'astor-note-title', text: 'A suggested plan' }));
     if (state.question.focus) suggestion.append(el('p', { class: 'astor-note-aside', text: state.question.focus }));
     suggestion.append(el('ol', { class: 'astor-plan' }, (state.question.plan || []).map(step => el('li', { text: step }))));
     suggestion.append(el('p', { class: 'astor-inline-note', text: 'One possible plan. Your argument can go a different way.' }));
@@ -100,7 +100,7 @@ function render(book) {
 
   function paragraphEditor(paragraph, index) {
     const wrap = el('article', { class: 'astor-note' });
-    wrap.append(el('h4', { text: 'Paragraph ' + (index + 1) }));
+    wrap.append(el('h3', { class: 'astor-note-title', text: 'Paragraph ' + (index + 1) }));
 
     const point = el('textarea', {
       value: paragraph.point,

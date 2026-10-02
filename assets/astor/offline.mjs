@@ -39,7 +39,7 @@ async function listKept(mount) {
   const books = pages.filter(page => page.startsWith('/books/') || page.startsWith('/study/'));
   const tools = pages.filter(page => !books.includes(page));
   const group = (title, items) => items.length ? el('section', { class: 'astor-note' }, [
-    el('h4', { text: title }),
+    el('h2', { class: 'astor-note-title', text: title }),
     el('ul', { class: 'astor-question-list' }, items.map(page => el('li', {}, [el('a', { href: page, text: page })])))
   ]) : null;
   mount.append(el('div', { class: 'astor-note-grid' }, [group('Books and study pages', books), group('Tools', tools)]));

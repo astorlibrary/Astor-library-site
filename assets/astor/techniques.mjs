@@ -112,7 +112,7 @@ function entry(technique, open) {
   const grid = el('div', { class: 'astor-note-grid' });
   for (const example of technique.examples) {
     const block = el('article', { class: 'astor-note' });
-    block.append(el('h4', {}, [el('a', { href: example.href, text: example.title })]));
+    block.append(el('h3', { class: 'astor-note-title' }, [el('a', { href: example.href, text: example.title })]));
     if (example.bookName && example.bookName !== technique.name) {
       block.append(el('p', { class: 'astor-quote-attribution', text: 'Also called ' + example.bookName }));
     }
