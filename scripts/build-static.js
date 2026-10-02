@@ -1545,6 +1545,14 @@ function copyRecursive(source, destination) {
     if (path.extname(source) === '.html') {
       const html = prepareHtml(fs.readFileSync(source, 'utf8'), source);
       fs.writeFileSync(destination, html);
+    } else if (path.extname(source) === '.json' && /^(?:assets|data)\//.test(path.relative(root, source).split(path.sep).join('/'))) {
+      // Published data is minified, which the explorers parse faster; the
+      // repository keeps the readable copy.
+      const text = fs.readFileSync(source, 'utf8');
+      let minified = null;
+      try { minified = JSON.stringify(JSON.parse(text)); } catch { minified = null; }
+      if (minified === null) fs.copyFileSync(source, destination);
+      else fs.writeFileSync(destination, minified);
     } else {
       fs.copyFileSync(source, destination);
     }
@@ -1572,7 +1580,7 @@ if (fs.existsSync(distDiscoveryFile)) {
       if (item && typeof item.image === 'string') item.image = optimisedImage(item.image);
     }
   }
-  fs.writeFileSync(distDiscoveryFile, JSON.stringify(distDiscovery, null, 2) + '\n');
+  fs.writeFileSync(distDiscoveryFile, JSON.stringify(distDiscovery));
 }
 
 const sitemapUrls = [];
