@@ -32,6 +32,26 @@ function normalise(text) {
     .trim();
 }
 
+// Standard Ebooks and the MIT (Moby) Shakespeare publish their texts as web
+// pages, so their markup is dropped before the comparison.
+const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“', mdash: '—', ndash: '–', hellip: '…' };
+
+function textOf(body, url) {
+  if (!/<(?:html|body)\b/i.test(body)) return body;
+  let text = body.replace(/<(script|style|head)\b[\s\S]*?<\/\1>/gi, ' ');
+  // In the MIT Shakespeare a stage direction is a paragraph in italics, and
+  // quotations from the plays leave it out.
+  if (/shakespeare\.mit\.edu/.test(url)) text = text.replace(/<p>\s*<i>[\s\S]*?<\/i>\s*<\/p>/gi, ' ');
+  return text
+    // Block elements part words; inline ones (an italic title, emphasis on a
+    // syllable) can sit inside a word, so they are removed without a space.
+    .replace(/<\/?(?:p|br|div|h[1-6]|li|ul|ol|dl|dt|dd|table|tr|td|th|section|article|header|footer|blockquote|figure|figcaption|hr|title|body|html)\b[^>]*>/gi, ' ')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, decimal) => String.fromCodePoint(Number(decimal)))
+    .replace(/&([a-z]+);/gi, (entity, name) => ENTITIES[name.toLowerCase()] ?? ' ');
+}
+
 async function sourceFor(url) {
   fs.mkdirSync(cacheDir, { recursive: true });
   const file = path.join(cacheDir, url.replace(/[^a-z0-9]+/gi, '_').slice(-120));
@@ -40,7 +60,7 @@ async function sourceFor(url) {
     if (!response.ok) throw new Error('could not fetch ' + url + ' (' + response.status + ')');
     fs.writeFileSync(file, await response.text());
   }
-  return normalise(fs.readFileSync(file, 'utf8'));
+  return normalise(textOf(fs.readFileSync(file, 'utf8'), url));
 }
 
 // Every part of the quotation, in order, each starting within a few hundred
