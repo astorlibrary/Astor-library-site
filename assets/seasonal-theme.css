@@ -12,7 +12,17 @@
   display: none;
 }
 
+/* The ribbon sits in a labelled region so screen readers can find it; the
+   region is hidden with the ribbon out of season. */
+.astor-season-ribbon-region {
+  display: none;
+}
+
 /* Halloween, 1–31 October ------------------------------------------------- */
+
+html[data-season="halloween"] .astor-season-ribbon-region[data-season-ribbon-region="halloween"] {
+  display: block;
+}
 
 html[data-season="halloween"] {
   --halloween-night: #1d1126;
@@ -224,6 +234,7 @@ html[data-season="halloween"] .season-calendar a[href="/seasons/halloween/"] {
 
 @media print {
   .astor-season-ribbon,
+  .astor-season-ribbon-region,
   .astor-season-badge {
     display: none !important;
   }

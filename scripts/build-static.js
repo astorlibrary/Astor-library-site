@@ -1126,9 +1126,10 @@ function addSeasonalTheme(html, source) {
     const seasonHref = hrefFor(season);
     // The homepage and the season's own page already wear the season.
     if (href !== '/' && href !== seasonHref && html.includes('<header class="site-header astor-global-header">') && !html.includes('data-season-ribbon="' + season.slug + '"')) {
-      const ribbon = '<a class="astor-season-ribbon" data-season-ribbon="' + season.slug + '" href="' + seasonHref + '">' + SEASON_BAT +
+      const ribbon = '<div class="astor-season-ribbon-region" data-season-ribbon-region="' + season.slug + '" role="region" aria-label="' + escapeHtml(theme.ribbon) + '">' +
+        '<a class="astor-season-ribbon" data-season-ribbon="' + season.slug + '" href="' + seasonHref + '">' + SEASON_BAT +
         '<strong>' + escapeHtml(theme.ribbon) + '</strong><span class="astor-season-ribbon-note">' + escapeHtml(theme.ribbonNote) + '</span>' +
-        '<span class="astor-season-ribbon-link">' + escapeHtml(theme.ribbonLink) + ' <span aria-hidden="true">&rarr;</span></span></a>\n';
+        '<span class="astor-season-ribbon-link">' + escapeHtml(theme.ribbonLink) + ' <span aria-hidden="true">&rarr;</span></span></a></div>\n';
       html = html.replace('<header class="site-header astor-global-header">', ribbon + '<header class="site-header astor-global-header">');
     }
     const shelf = new Set(booksFor(season));
