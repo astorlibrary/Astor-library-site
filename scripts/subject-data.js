@@ -129,7 +129,7 @@ module.exports = [
   },
   {
     slug: 'history-plays',
-    title: 'History plays: kingship, succession and nation',
+    title: 'History plays',
     navTitle: 'History plays',
     kicker: 'Crowns, claims and the making of public memory',
     description: 'Shakespeare’s ten English history plays, from King John to Henry VIII, with Macbeth and King Lear for comparison, and how Holinshed and the order of writing shaped them.',
