@@ -114,3 +114,58 @@ test('every built page picks its theme before any stylesheet and offers the togg
 test('the offline cache keeps the dark palette', () => {
   assert.ok(read('sw.js').includes("'/assets/theme.css'"));
 });
+
+test('the base stylesheets announce that they know about themes', () => {
+  assert.match(read('assets/styles.css'), /:root\{--theme-aware:1;/);
+  assert.match(read('assets/home.css'), /:root\s*\{\s*--theme-aware:\s*1;/);
+});
+
+// The guard, exactly as built: if the stylesheets the page ended up with do not
+// carry --theme-aware (an older copy from a cache, say), it must drop back to the
+// light theme rather than leave dark text on a dark page.
+function runGuard({ theme, aware }) {
+  const html = read('dist/index.html');
+  const script = html.match(/<script data-theme-guard>([\s\S]*?)<\/script>/)[1];
+  const attributes = theme ? { 'data-theme': theme } : {};
+  const style = { colorScheme: theme || '' };
+  const root = {
+    getAttribute: name => attributes[name] ?? null,
+    removeAttribute: name => { delete attributes[name]; },
+    style
+  };
+  vm.runInNewContext(script, {
+    document: { documentElement: root },
+    getComputedStyle: () => ({ getPropertyValue: name => (name === '--theme-aware' && aware ? ' 1' : '') })
+  });
+  return { theme: attributes['data-theme'] ?? null, scheme: style.colorScheme };
+}
+
+test('a page whose stylesheets cannot do themes falls back to light', () => {
+  assert.deepEqual(runGuard({ theme: 'dark', aware: true }), { theme: 'dark', scheme: 'dark' });
+  assert.deepEqual(runGuard({ theme: 'light', aware: true }), { theme: 'light', scheme: 'light' });
+  assert.deepEqual(runGuard({ theme: 'dark', aware: false }), { theme: null, scheme: '' });
+  assert.deepEqual(runGuard({ theme: 'light', aware: false }), { theme: null, scheme: '' });
+});
+
+test('every built page runs the guard after its stylesheets and before the body', () => {
+  const pages = [];
+  const walk = directory => {
+    for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+      const full = path.join(directory, entry.name);
+      if (entry.isDirectory()) { if (entry.name !== 'assets') walk(full); } else if (entry.name.endsWith('.html')) pages.push(full);
+    }
+  };
+  walk('dist');
+  for (const page of pages) {
+    const html = read(page);
+    if (/http-equiv=["']refresh["']/i.test(html)) continue;
+    const guard = html.indexOf('data-theme-guard');
+    const lastSheet = html.lastIndexOf('<link rel="stylesheet"');
+    assert.ok(guard > lastSheet, `${page}: guard must come after the last stylesheet`);
+    assert.ok(guard < html.indexOf('<body'), `${page}: guard must run before the body is painted`);
+  }
+});
+
+test('the service worker takes stylesheets from the network first', () => {
+  assert.match(read('sw.js'), /\(m\?js\|css\)\$\/\.test\(url\.pathname\)\) \{ event\.respondWith\(networkFirst/);
+});
