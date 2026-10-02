@@ -98,14 +98,14 @@ module.exports = {
     ],
     gallery: [
       {
-        src: '/assets/book-context/lewis-carroll-1857.jpg', width: 957, height: 1353,
+        src: '/assets/book-context/lewis-carroll-1857.jpg', width: 707, height: 1000,
         alt: 'Lewis Carroll in a self-portrait photograph from 1857',
         caption: 'Charles Lutwidge Dodgson, who published as Lewis Carroll, in a self-portrait made in June 1857.',
         credit: 'Lewis Carroll, 1857; Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:LewisCarrollSelfPhoto.jpg', license: 'Public domain'
       },
       {
-        src: '/assets/book-context/alice-under-ground-manuscript-1864.png', width: 1280, height: 1951,
+        src: '/assets/book-context/alice-under-ground-manuscript-1864.png', width: 656, height: 1000,
         alt: 'First page of Lewis Carroll’s handwritten Alice’s Adventures Under Ground manuscript',
         caption: 'The decorated opening of Alice’s Adventures Under Ground, the manuscript Carroll gave to Alice Liddell in 1864.',
         credit: 'Lewis Carroll, 1864; British Library manuscript reproduced via Wikimedia Commons',
@@ -220,14 +220,14 @@ module.exports = {
     ],
     gallery: [
       {
-        src: '/assets/book-context/wilkie-collins-1880.jpg', width: 1280, height: 1606,
+        src: '/assets/book-context/wilkie-collins-1880.jpg', width: 797, height: 1000,
         alt: 'Portrait of Wilkie Collins by Rudolph Lehmann in 1880',
         caption: 'Wilkie Collins, who tells the mystery through several narrators and their documents.',
         credit: 'Rudolph Lehmann, 1880; National Portrait Gallery image via Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:(William)_Wilkie_Collins_by_Rudolph_Lehmann.jpg', license: 'Public domain'
       },
       {
-        src: '/assets/book-context/moonstone-first-edition-1868.jpg', width: 949, height: 1600,
+        src: '/assets/book-context/moonstone-first-edition-1868.jpg', width: 593, height: 1000,
         alt: 'Title page of the 1868 first edition of The Moonstone',
         caption: 'The title page of the first London edition, published by Tinsley Brothers in three volumes in 1868.',
         credit: 'Wilkie Collins, The Moonstone, 1868; Internet Archive scan via Wikimedia Commons',
@@ -349,7 +349,7 @@ module.exports = {
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:LMM_signed_photo.jpg', license: 'Public domain'
       },
       {
-        src: '/assets/book-context/anne-green-gables-frontispiece-1908.jpg', width: 1280, height: 1857,
+        src: '/assets/book-context/anne-green-gables-frontispiece-1908.jpg', width: 689, height: 1000,
         alt: 'Diana admiring Anne in the frontispiece to the 1908 first edition',
         caption: 'The first-edition frontispiece shows Diana admiring Anne, an early visual interpretation published with the novel in 1908.',
         credit: 'M. A. and W. A. J. Claus, 1908; Wikimedia Commons',
@@ -464,14 +464,14 @@ module.exports = {
     ],
     gallery: [
       {
-        src: '/assets/book-context/aphra-behn-c1670.jpg', width: 1280, height: 1528,
+        src: '/assets/book-context/aphra-behn-c1670.jpg', width: 837, height: 1000,
         alt: 'Portrait traditionally identified as Aphra Behn, painted by Peter Lely',
         caption: 'Peter Lely’s portrait traditionally identified as Aphra Behn, a professional writer of drama, poetry and prose in Restoration England.',
         credit: 'Peter Lely, c. 1670; Yale Center for British Art via Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Peter_Lely_-_Aphra_Behn_-_Google_Art_Project.jpg', license: 'Public domain'
       },
       {
-        src: '/assets/book-context/guiana-map-1656.jpg', width: 1280, height: 997,
+        src: '/assets/book-context/guiana-map-1656.jpg', width: 1000, height: 779,
         alt: 'Nicolas Sanson’s 1656 map of Guiana including the coast of Surinam',
         caption: 'A 1656 European map of Guiana made during the period in which English, Dutch and French colonial interests competed along the coast.',
         credit: 'Nicolas Sanson, 1656; Wikimedia Commons',
@@ -586,7 +586,7 @@ module.exports = {
     ],
     gallery: [
       {
-        src: '/assets/book-context/wilkie-collins-1880.jpg', width: 1280, height: 1606,
+        src: '/assets/book-context/wilkie-collins-1880.jpg', width: 797, height: 1000,
         alt: 'Portrait of Wilkie Collins by Rudolph Lehmann in 1880',
         caption: 'Wilkie Collins, photographed through the formal portrait style of the period in which his sensation novels remained widely read.',
         credit: 'Rudolph Lehmann, 1880; National Portrait Gallery image via Wikimedia Commons',
@@ -708,14 +708,14 @@ module.exports = {
     ],
     gallery: [
       {
-        src: '/assets/book-context/kenneth-grahame-hollyer.jpg', width: 725, height: 1169,
+        src: '/assets/book-context/kenneth-grahame-hollyer.jpg', width: 620, height: 1000,
         alt: 'Portrait photograph of Kenneth Grahame by Frederick Hollyer',
         caption: 'Kenneth Grahame in a portrait by Frederick Hollyer published by 1901, before the animal-story letters and finished novel.',
         credit: 'Frederick Hollyer, by 1901; Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Portrait_of_Kenneth_Grahame.jpg', license: 'Public domain'
       },
       {
-        src: '/assets/book-context/wind-willows-first-edition-1908.jpg', width: 1024, height: 1599,
+        src: '/assets/book-context/wind-willows-first-edition-1908.jpg', width: 640, height: 1000,
         alt: 'Dark blue cover of the 1908 first edition of The Wind in the Willows',
         caption: 'The restrained first-edition cover, before later illustrated editions fixed the familiar appearances of Rat, Mole, Badger and Toad.',
         credit: 'The Wind in the Willows, 1908; Wikimedia Commons',
@@ -830,21 +830,21 @@ module.exports = {
     ],
     gallery: [
       {
-        src: '/assets/book-context/charlotte-perkins-gilman-c1900.jpg', width: 1153, height: 1400,
+        src: '/assets/book-context/charlotte-perkins-gilman-c1900.jpg', width: 823, height: 1000,
         alt: 'Profile portrait of Charlotte Perkins Gilman around 1900',
         caption: 'Charlotte Perkins Gilman around 1900. Both stories first appeared under her married name, Charlotte Perkins Stetson.',
         credit: 'Charles Fletcher Lummis, c. 1900; restored by Adam Cuerden; Library of Congress via Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Charlotte_Perkins_Gilman_c._1900.jpg', license: 'Public domain'
       },
       {
-        src: '/assets/book-context/american-wallpaper-1890s.jpg', width: 1185, height: 1600,
+        src: '/assets/book-context/american-wallpaper-1890s.jpg', width: 740, height: 1000,
         alt: 'American wallpaper sample from 1890 to 1900 with metallic-gold ornament, birds and foliage',
         caption: 'A surviving American sidewall paper dated 1890–1900. It is not the paper in Gilman’s story, but it shows the kind of dense repeating pattern her first readers had on their walls.',
         credit: 'Unknown American maker, 1890–1900; Cooper Hewitt, Smithsonian Design Museum',
         sourceUrl: 'https://collection.cooperhewitt.org/objects/18319189', license: 'Public domain'
       },
       {
-        src: '/assets/book-context/giant-wistaria-new-england-magazine-1891.jpg', width: 1400, height: 1364,
+        src: '/assets/book-context/giant-wistaria-new-england-magazine-1891.jpg', width: 1000, height: 974,
         alt: 'Illustrated page from the 1891 New England Magazine publication of The Giant Wistaria',
         caption: 'An illustrated page from The Giant Wistaria in The New England Magazine, preserving the story’s first periodical setting.',
         credit: 'The New England Magazine, June 1891; Internet Archive Book Images via Wikimedia Commons',
@@ -968,14 +968,14 @@ module.exports = {
     ],
     gallery: [
       {
-        src: '/assets/book-context/f-scott-fitzgerald-1917.jpg', width: 1000, height: 1400,
+        src: '/assets/book-context/f-scott-fitzgerald-1917.jpg', width: 714, height: 1000,
         alt: 'F. Scott Fitzgerald in a First World War United States Army officer’s uniform in 1917',
         caption: 'F. Scott Fitzgerald in uniform in 1917. Military service and the postwar return form part of Nick and Gatsby’s shared background.',
         credit: 'Unknown photographer, 1917; F. Scott Fitzgerald Archives via Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:F._Scott_Fitzgerald_-_World_War_I_Uniform_-_1917.jpg', license: 'Public domain'
       },
       {
-        src: '/assets/book-context/new-york-roof-garden-1922.jpg', width: 1400, height: 1148,
+        src: '/assets/book-context/new-york-roof-garden-1922.jpg', width: 1000, height: 820,
         alt: 'A 1922 composite of photographs and a plan showing a roof garden at 53 Fifth Avenue, New York',
         caption: 'A Fifth Avenue roof garden photographed in 1922, the year in which Fitzgerald sets Gatsby’s summer.',
         credit: 'Frances Benjamin Johnston, 1922; Library of Congress',
