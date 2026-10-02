@@ -19,7 +19,7 @@
   "sourceText": {
     "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
-    "note": "Line numbers follow the traditional Globe numbering, from which modern editions vary by a line or two."
+    "note": "Line numbers follow the traditional Globe numbering, from which modern editions vary by a line or two. Line references were checked against the MIT Shakespeare."
   },
   "atAGlance": [
     {
@@ -611,7 +611,7 @@
       "id": "revenge",
       "name": "Revenge",
       "summary": "Nobody in the play invents revenge; they all inherit it. Alarbus dies because Lucius asks for a sacrifice, Bassianus dies because Tamora was refused, Chiron and Demetrius die because Lavinia was attacked, and Tamora dies at a table. Each killing is presented by its author as the settling of an account, which is why the play can keep going after the point at which grief should have stopped it.",
-      "development": "The sacrifice at 1.1 sets the rate; Tamora’s aside at 1.1.451 promises a day; Titus takes his vow over two severed heads in 3.1; and 5.3 collects everything owed in nine lines."
+      "development": "The sacrifice at 1.1 sets the rate; Tamora’s aside at 1.1.457 promises a day; Titus takes his vow over two severed heads in 3.1; and 5.3 collects everything owed in nine lines."
     },
     {
       "id": "justice",
@@ -746,7 +746,7 @@
       "id": "be-not-barbarous",
       "text": "Thou art a Roman; be not barbarous.",
       "speaker": "Marcus",
-      "reference": "1.1.379",
+      "reference": "1.1.384",
       "stage": "act-1",
       "context": "Kneeling with Titus’s sons, begging him to let Mutius be buried in the family tomb.",
       "analysis": "Marcus means it as a compliment and the play hears it as a question. Roman and barbarous have been opposed since the first scene, where Chiron said Scythia was never half so barbarous as this. The distinction has already collapsed: the Roman thing and the barbarous thing were the same act, performed at the same tomb, an hour earlier.",
@@ -761,7 +761,7 @@
         "marcus",
         "titus"
       ],
-      "source": "Project Gutenberg eBook 100, 1.1.379",
+      "source": "Project Gutenberg eBook 100, 1.1.384",
       "cloze": [
         "Roman",
         "barbarous"
@@ -771,7 +771,7 @@
       "id": "razors",
       "text": "These words are razors to my wounded heart.",
       "speaker": "Titus",
-      "reference": "1.1.315",
+      "reference": "1.1.319",
       "stage": "act-1",
       "context": "After Saturninus has sneered at Lavinia as a changing piece and at Titus’s sons as lawless.",
       "analysis": "The first blade in a play full of them, and it is only a figure of speech. By Act III the metaphors have all come true: hands actually come off, tongues actually go, and the razor is a real knife held by a father over two bound men. Again and again Titus’s language predicts the stage business that arrives to replace it.",
@@ -785,7 +785,7 @@
         "titus",
         "saturninus"
       ],
-      "source": "Project Gutenberg eBook 100, 1.1.315",
+      "source": "Project Gutenberg eBook 100, 1.1.319",
       "cloze": [
         "razors",
         "wounded"
@@ -795,7 +795,7 @@
       "id": "massacre-them-all",
       "text": "I'll find a day to massacre them all, And raze their faction and their family, The cruel father and his traitorous sons, To whom I sued for my dear son's life",
       "speaker": "Tamora",
-      "reference": "1.1.451",
+      "reference": "1.1.457",
       "stage": "act-1",
       "context": "Aside to Saturninus, while publicly urging him to forgive Titus.",
       "analysis": "The double voice is the whole of her method: aloud she is reconciling the court, under her breath she is naming a date. Notice what she lists as the grievance. It is not the war, the captivity or the yoke; it is the refusal of a kneeling woman in the street. She is exact about the debt, and she collects on that account.",
@@ -809,7 +809,7 @@
         "saturninus",
         "titus"
       ],
-      "source": "Project Gutenberg eBook 100, 1.1.451–454",
+      "source": "Project Gutenberg eBook 100, 1.1.457–460",
       "cloze": [
         "massacre",
         "faction"
@@ -841,7 +841,7 @@
       "id": "pitiless",
       "text": "Hadst thou in person ne'er offended me, Even for his sake am I pitiless.",
       "speaker": "Tamora",
-      "reference": "2.3.161",
+      "reference": "2.3.162",
       "stage": "act-2",
       "context": "Answering Lavinia, who has begged her in the name of Titus’s mercy to Tamora herself.",
       "analysis": "Lavinia’s argument is that Titus spared Tamora’s life, so Tamora owes the daughter something. The reply concedes the debt and reverses it: because Titus is the father, the daughter is the payment. ‘Hadst thou in person ne’er offended me’ is the cruellest part: Lavinia’s own insults a few minutes earlier hardly matter, since she would suffer for her father anyway.",
@@ -855,7 +855,7 @@
         "lavinia",
         "titus"
       ],
-      "source": "Project Gutenberg eBook 100, 2.3.161–162",
+      "source": "Project Gutenberg eBook 100, 2.3.162–163",
       "cloze": [
         "offended",
         "pitiless"
@@ -943,7 +943,7 @@
       "id": "wilderness-of-tigers",
       "text": "Why, foolish Lucius, dost thou not perceive That Rome is but a wilderness of tigers? Tigers must prey, and Rome affords no prey But me and mine.",
       "speaker": "Titus",
-      "reference": "3.1.53",
+      "reference": "3.1.52",
       "stage": "act-3",
       "context": "Telling his banished son that exile is good fortune.",
       "analysis": "Titus gave this city his sons, his arm and the empire, and here he sees it plainly for the first time. Wilderness is the sharp word: it means no Rome at all, a wood with animals in it, far worse than a corrupt Rome to be reformed. He has just come from the forest where his daughter was attacked, and he no longer distinguishes the two places.",
@@ -958,7 +958,7 @@
         "titus",
         "lucius"
       ],
-      "source": "Project Gutenberg eBook 100, 3.1.53–56",
+      "source": "Project Gutenberg eBook 100, 3.1.52–55",
       "cloze": [
         "wilderness",
         "tigers"
@@ -993,7 +993,7 @@
       "id": "why-dost-thou-laugh",
       "text": "Why dost thou laugh? It fits not with this hour.",
       "speaker": "Marcus",
-      "reference": "3.1.266",
+      "reference": "3.1.267",
       "stage": "act-3",
       "context": "Immediately after Titus responds to the arrival of his sons’ heads with laughter.",
       "analysis": "Marcus speaks for the part of the audience still trying to keep the genre steady. Titus’s answer is that he has no tears left, which is a kind of accountancy: grief has a supply, and it has run out. The laugh is the moment the play stops being a tragedy of suffering and becomes a tragedy of planning.",
@@ -1007,7 +1007,7 @@
         "marcus",
         "titus"
       ],
-      "source": "Project Gutenberg eBook 100, 3.1.266",
+      "source": "Project Gutenberg eBook 100, 3.1.267",
       "cloze": [
         "laugh",
         "hour"
@@ -1040,7 +1040,7 @@
       "id": "black-ill-favoured-fly",
       "text": "Pardon me, sir; 'twas a black ill-favoured fly, Like to the empress' Moor; therefore I killed him.",
       "speaker": "Marcus",
-      "reference": "3.2.66",
+      "reference": "3.2.67",
       "stage": "act-3",
       "context": "Explaining himself after Titus has accused him of murder for swatting a fly at dinner.",
       "analysis": "Marcus invents the excuse on the spot and it works instantly: Titus takes the knife and stabs the dead fly twice more, once for Aaron and once for Tamora. The scene shows grief turning into method, and it shows the family’s racism in its most casual form, offered as a joke to calm a distressed old man.",
@@ -1056,7 +1056,7 @@
         "titus",
         "aaron"
       ],
-      "source": "Project Gutenberg eBook 100, 3.2.66–67",
+      "source": "Project Gutenberg eBook 100, 3.2.67–68",
       "cloze": [
         "fly",
         "Moor"
@@ -1094,7 +1094,7 @@
       "id": "coal-black",
       "text": "Coal-black is better than another hue In that it scorns to bear another hue; For all the water in the ocean Can never turn the swan's black legs to white",
       "speaker": "Aaron",
-      "reference": "4.2.99",
+      "reference": "4.2.102",
       "stage": "act-4",
       "context": "Defending his newborn son against Chiron, Demetrius and the nurse sent to kill it.",
       "analysis": "The argument is that black keeps its own colour and white cannot. Fifteen lines later Chiron says he blushes at the family shame, and Aaron pounces: a treacherous hue that betrays the counsels of the heart. It is the one speech in the play where blackness is a boast, made by a man holding a newborn in one arm and a scimitar in the other.",
@@ -1109,7 +1109,7 @@
         "chiron",
         "demetrius"
       ],
-      "source": "Project Gutenberg eBook 100, 4.2.99–102",
+      "source": "Project Gutenberg eBook 100, 4.2.102–105",
       "cloze": [
         "Coal-black",
         "swan"
@@ -1119,7 +1119,7 @@
       "id": "keep-safe",
       "text": "My mistress is my mistress; this my self; The vigour and the picture of my youth. This before all the world do I prefer; This maugre all the world will I keep safe",
       "speaker": "Aaron",
-      "reference": "4.2.107",
+      "reference": "4.2.110",
       "stage": "act-4",
       "context": "Asked whether he will betray Tamora to protect the child.",
       "analysis": "He drops the empress in half a line and never mentions her again with any warmth. The repetition of this, three times, keeps pointing at the baby in his arms while the sentence gets shorter and harder. Aaron is the only character in the play who chooses a living child over an inherited quarrel, and he is the one buried alive for it.",
@@ -1131,7 +1131,7 @@
         "aaron",
         "tamora"
       ],
-      "source": "Project Gutenberg eBook 100, 4.2.107–110",
+      "source": "Project Gutenberg eBook 100, 4.2.110–113",
       "cloze": [
         "prefer",
         "maugre"
@@ -1141,7 +1141,7 @@
       "id": "no-justice",
       "text": "And sith there's no justice in earth nor hell, We will solicit heaven and move the gods To send down Justice for to wreak our wrongs.",
       "speaker": "Titus",
-      "reference": "4.3.50",
+      "reference": "4.3.49",
       "stage": "act-4",
       "context": "Handing out bows and arrows with letters tied to them, to be shot into the emperor’s court.",
       "analysis": "He has already sent men to dig for Justice underground and to drag the sea for her. The logic is perfectly sound and the method is ridiculous, which is how this play does madness: a rational man following a failed system to its last address, with no confusion at all. The arrows land in the palace, and Saturninus reads them as libel.",
@@ -1157,7 +1157,7 @@
         "marcus",
         "saturninus"
       ],
-      "source": "Project Gutenberg eBook 100, 4.3.50–52",
+      "source": "Project Gutenberg eBook 100, 4.3.49–51",
       "cloze": [
         "justice",
         "heaven"
@@ -1167,7 +1167,7 @@
       "id": "kill-a-fly",
       "text": "But I have done a thousand dreadful things As willingly as one would kill a fly, And nothing grieves me heartily indeed But that I cannot do ten thousand more.",
       "speaker": "Aaron",
-      "reference": "5.1.141",
+      "reference": "5.1.143",
       "stage": "act-5",
       "context": "On a ladder with a rope round his neck, having just listed his crimes to Lucius.",
       "analysis": "The comparison reaches back to Act III, where a killed fly reduced Titus to fury and then to knife-work. Aaron uses the same insect to measure indifference. He has bought his son’s life with this confession and spends the rest of it refusing the remorse that would make the bargain look like repentance.",
@@ -1183,7 +1183,7 @@
         "aaron",
         "lucius"
       ],
-      "source": "Project Gutenberg eBook 100, 5.1.141–144",
+      "source": "Project Gutenberg eBook 100, 5.1.143–146",
       "cloze": [
         "dreadful",
         "fly"
@@ -1220,7 +1220,7 @@
       "id": "baked-in-that-pie",
       "text": "Why, there they are, both baked in that pie, Whereof their mother daintily hath fed, Eating the flesh that she herself hath bred.",
       "speaker": "Titus",
-      "reference": "5.3.60",
+      "reference": "5.3.61",
       "stage": "act-5",
       "context": "Asked by Saturninus to fetch Chiron and Demetrius to the banquet.",
       "analysis": "The line is delivered as information, in answer to a polite request, by a man dressed as a cook. Daintily does the damage: it makes Tamora a guest with manners while she finishes her sons. Three lines later he stabs her, and the revenge that began with a boy burned on a tomb is settled over dinner in under thirty seconds.",
@@ -1239,7 +1239,7 @@
         "demetrius",
         "saturninus"
       ],
-      "source": "Project Gutenberg eBook 100, 5.3.60–62",
+      "source": "Project Gutenberg eBook 100, 5.3.61–63",
       "cloze": [
         "baked",
         "daintily"
@@ -1249,7 +1249,7 @@
       "id": "repent-one-good-deed",
       "text": "I am no baby, I, that with base prayers I should repent the evils I have done. Ten thousand worse than ever yet I did Would I perform, if I might have my will. If one good deed in all my life I did, I do repent it from my very soul.",
       "speaker": "Aaron",
-      "reference": "5.3.185",
+      "reference": "5.3.186",
       "stage": "act-5",
       "context": "Sentenced by Lucius to be set breast-deep in earth and starved.",
       "analysis": "His last speech gives no sign of the scaffold conversion an Elizabethan audience expected and an Elizabethan gallows usually produced. The final couplet is a joke with a real fact inside it: he did do one good deed, and everyone on stage is looking at it, because the baby he saved is alive in Lucius’s household while he goes into the ground.",
@@ -1264,7 +1264,7 @@
         "aaron",
         "lucius"
       ],
-      "source": "Project Gutenberg eBook 100, 5.3.185–190",
+      "source": "Project Gutenberg eBook 100, 5.3.186–191",
       "cloze": [
         "repent",
         "deed"
@@ -1274,7 +1274,7 @@
       "id": "knit-again",
       "text": "O, let me teach you how to knit again This scattered corn into one mutual sheaf, These broken limbs again into one body",
       "speaker": "Marcus",
-      "reference": "5.3.70",
+      "reference": "5.3.71",
       "stage": "act-5",
       "context": "Speaking down to the people of Rome from the upper stage, with four fresh bodies below.",
       "analysis": "The old civic language comes back for the ending: the state as a sheaf, the state as a body. Broken limbs is a metaphor that has been literal for three acts, and an audience that has watched hands and heads come off cannot hear it as figure any more. Marcus asks Rome to reassemble itself using the vocabulary that failed it.",
@@ -1290,7 +1290,7 @@
         "marcus",
         "lucius"
       ],
-      "source": "Project Gutenberg eBook 100, 5.3.70–72",
+      "source": "Project Gutenberg eBook 100, 5.3.71–73",
       "cloze": [
         "knit",
         "sheaf"
@@ -1427,7 +1427,7 @@
       "plan": [
         "Start with the sacrifice of Alarbus at 1.1 and note that Lucius asks for it, Titus grants it, and Tamora argues against it in Rome’s own terms and loses.",
         "Follow the decisions of the rest of the scene: refusing the empire, giving it to Saturninus, killing Mutius, and then accepting Tamora’s public reconciliation at face value.",
-        "Set Tamora’s aside at 1.1.451 beside her answer to Lavinia at 2.3.161, and show that she names the refusal in the street as the exact debt she is collecting.",
+        "Set Tamora’s aside at 1.1.457 beside her answer to Lavinia at 2.3.162, and show that she names the refusal in the street as the exact debt she is collecting.",
         "Weigh the counter-case: the trap at the pit, the forged letter and the bargain for his hand are Aaron’s inventions, and Titus could not have foreseen any of them.",
         "Close by asking what the fly scene at 3.2 shows about how much of his later method was in him from the first act."
       ]
@@ -1450,8 +1450,8 @@
         "List what he actually engineers: the gold, the letter, the pit, the hand, the heads, and his own delight at the crack in the wall in 5.1.",
         "Set against it the language Rome uses about him, from the nurse’s loathsome as a toad to Lucius’s incarnate devil, and note how much of it is about colour.",
         "Work through 4.2, where he kills the nurse, defies Tamora and takes the child, and compare his defence of his son with Titus’s treatment of Mutius and Lavinia.",
-        "Use 3.1.205 and 4.2.99 to show how he converts an imposed insult into a claim, and ask whether that is defiance or self-hatred taking a proud form.",
-        "End on 5.3.185 and the fact that the one good deed he repents is the child who is alive and safe while he is buried to the chest."
+        "Use 3.1.205 and 4.2.102 to show how he converts an imposed insult into a claim, and ask whether that is defiance or self-hatred taking a proud form.",
+        "End on 5.3.186 and the fact that the one good deed he repents is the child who is alive and safe while he is buried to the chest."
       ]
     },
     {
@@ -1459,7 +1459,7 @@
       "focus": "Revenge, settlement and Lucius’s Rome",
       "plan": [
         "Count what is settled in 5.3: four deaths in nine lines, an emperor acclaimed, burials assigned and a sentence passed on Aaron.",
-        "Read Marcus’s sheaf-and-body speech at 5.3.70 and ask whether the civic vocabulary has earned its return after three acts in which limbs came off for real.",
+        "Read Marcus’s sheaf-and-body speech at 5.3.71 and ask whether the civic vocabulary has earned its return after three acts in which limbs came off for real.",
         "Test Lucius’s credentials: he demanded the sacrifice in Act I, he returns with the army of the people whose prince he burned, and he swears by a god to a man who has none.",
         "Look at the final orders, which reward and punish through burial, and note that burial is the currency the play opened with.",
         "Decide what the last two lines about the birds do to the ending’s claim to have finished with cruelty."

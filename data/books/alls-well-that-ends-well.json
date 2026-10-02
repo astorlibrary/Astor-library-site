@@ -19,7 +19,7 @@
   "sourceText": {
     "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
-    "note": "This text spells the Countess’s county Rossillon. Line numbers follow the traditional Globe numbering, from which modern editions vary by a few lines, most of all in the prose scenes."
+    "note": "This text spells the Countess’s county Rossillon. Line numbers follow the traditional Globe numbering, from which modern editions vary by a few lines, most of all in the prose scenes. Line references were checked against the MIT Shakespeare."
   },
   "atAGlance": [
     {
@@ -756,7 +756,7 @@
       "id": "love-all",
       "text": "Love all, trust a few, Do wrong to none.",
       "speaker": "Countess",
-      "reference": "1.1.74",
+      "reference": "1.1.59",
       "stage": "act-1",
       "context": "Blessing Bertram as he leaves Rossillon to become the King’s ward in Paris.",
       "analysis": "Nine words of a mother’s advice, and the rest of the play shows her son getting every clause wrong. He trusts Parolles, the one companion everyone warns him about, and before the end he has wronged his wife and lied to the King. The same speech hopes his goodness will share with his birthright, which is exactly what Bertram fails to manage.",
@@ -769,7 +769,7 @@
         "countess",
         "bertram"
       ],
-      "source": "Project Gutenberg eBook 100, 1.1.74–75",
+      "source": "Project Gutenberg eBook 100, 1.1.59–60",
       "cloze": [
         "trust",
         "wrong"
@@ -779,7 +779,7 @@
       "id": "bright-star",
       "text": "'Twere all one That I should love a bright particular star, And think to wed it, he is so above me.",
       "speaker": "Helena",
-      "reference": "1.1.97",
+      "reference": "1.1.82",
       "stage": "act-1",
       "context": "Alone after Bertram has left for Paris, admitting that her tears are for him and not for her father.",
       "analysis": "Helena measures the social distance between them in astronomy. Bertram is a star, she may be comforted only by his collateral light, and marrying him would be as absurd as wedding a star. The image gives his rank the fixed order of the heavens, and by the end of the same scene she will argue that the sky leaves people free to act.",
@@ -794,7 +794,7 @@
         "helena",
         "bertram"
       ],
-      "source": "Project Gutenberg eBook 100, 1.1.97–99",
+      "source": "Project Gutenberg eBook 100, 1.1.82–84",
       "cloze": [
         "particular",
         "above"
@@ -804,7 +804,7 @@
       "id": "virginity",
       "text": "Virginity, by being once lost, may be ten times found; by being ever kept, it is ever lost.",
       "speaker": "Parolles",
-      "reference": "1.1.142",
+      "reference": "1.1.127",
       "stage": "act-1",
       "context": "Bantering with Helena, who has asked how a virgin might defend herself against men.",
       "analysis": "Parolles talks about virginity the way a merchant talks about hoarding: goods kept lose value and goods spent multiply. The paradox is glib, and the play then carries it out in earnest, since Helena’s virginity is given up in a dark room in Florence and comes back as a child and a husband. His prose joke turns into her method.",
@@ -818,7 +818,7 @@
         "parolles",
         "helena"
       ],
-      "source": "Project Gutenberg eBook 100, 1.1.142–144",
+      "source": "Project Gutenberg eBook 100, 1.1.127–129",
       "cloze": [
         "Virginity",
         "kept"
@@ -828,7 +828,7 @@
       "id": "our-remedies",
       "text": "Our remedies oft in ourselves do lie, Which we ascribe to heaven: the fated sky Gives us free scope",
       "speaker": "Helena",
-      "reference": "1.1.235",
+      "reference": "1.1.209",
       "stage": "act-1",
       "context": "Alone again after Parolles leaves, closing the first scene.",
       "analysis": "Earlier in the scene the star was out of reach; here it becomes a fated sky that gives her free scope, and the verse turns to rhyming couplets as her mind is made up. Her last words in the scene name the plan before anyone else knows it: the king’s disease. From this point the plot runs on what she decides to do.",
@@ -843,7 +843,7 @@
       "characters": [
         "helena"
       ],
-      "source": "Project Gutenberg eBook 100, 1.1.235–237",
+      "source": "Project Gutenberg eBook 100, 1.1.209–211",
       "cloze": [
         "remedies",
         "scope"
@@ -853,7 +853,7 @@
       "id": "weakest-minister",
       "text": "He that of greatest works is finisher Oft does them by the weakest minister.",
       "speaker": "Helena",
-      "reference": "2.1.137",
+      "reference": "2.1.145",
       "stage": "act-2",
       "context": "Refusing to accept the King’s dismissal after he tells her his learned doctors have given him up.",
       "analysis": "A proverb about Providence is Helena’s answer to the whole college of physicians, and her lack of standing becomes the evidence for her claim. A young woman carrying a dead father’s prescription becomes, in this couplet, the kind of instrument heaven prefers. The King had just refused to prostitute his malady to empirics, and within fifty lines he agrees to try her.",
@@ -868,7 +868,7 @@
         "helena",
         "king"
       ],
-      "source": "Project Gutenberg eBook 100, 2.1.137–138",
+      "source": "Project Gutenberg eBook 100, 2.1.145–146",
       "cloze": [
         "finisher",
         "weakest"
@@ -878,7 +878,7 @@
       "id": "poor-physicians-daughter",
       "text": "A poor physician's daughter my wife! Disdain Rather corrupt me ever!",
       "speaker": "Bertram",
-      "reference": "2.3.119",
+      "reference": "2.3.121",
       "stage": "act-2",
       "context": "Told by the King, in front of the assembled lords, that Helena has chosen him.",
       "analysis": "His objection is purely one of rank, and he makes it in front of the man she has just cured. Poor and physician’s are the insults; he says nothing against her looks or her honesty. He would rather be corrupted by disdain for ever than accept her, and the line hands the King the argument he answers for the next thirty lines.",
@@ -892,7 +892,7 @@
         "helena",
         "king"
       ],
-      "source": "Project Gutenberg eBook 100, 2.3.119–120",
+      "source": "Project Gutenberg eBook 100, 2.3.121–122",
       "cloze": [
         "physician's",
         "Disdain"
@@ -902,7 +902,7 @@
       "id": "lowest-place",
       "text": "From lowest place when virtuous things proceed, The place is dignified by the doer's deed.",
       "speaker": "King",
-      "reference": "2.3.129",
+      "reference": "2.3.131",
       "stage": "act-2",
       "context": "Answering Bertram’s refusal of Helena.",
       "analysis": "Worth lies in what people do and titles are only words, the King argues, and he puts it in rhymed couplets that give it the finish of a proverb. When Bertram is still unpersuaded, the King drops the argument and threatens to throw him into the staggers. Merit is defended in principle and enforced by royal command, which leaves the audience unsure which of the two has won.",
@@ -918,7 +918,7 @@
         "bertram",
         "helena"
       ],
-      "source": "Project Gutenberg eBook 100, 2.3.129–130",
+      "source": "Project Gutenberg eBook 100, 2.3.131–132",
       "cloze": [
         "lowest",
         "dignified"
@@ -928,7 +928,7 @@
       "id": "dark-house",
       "text": "War is no strife To the dark house and the detested wife.",
       "speaker": "Bertram",
-      "reference": "2.3.305",
+      "reference": "2.3.293",
       "stage": "act-2",
       "context": "Moments after the wedding, telling Parolles that he will go to the Tuscan wars and send Helena home.",
       "analysis": "The couplet weighs a marriage against a battlefield and finds the battlefield easier. A dark house suggests both mourning and confinement, and the line makes Helena a place to escape from. In 2.1 Bertram was kept from the war as too young; now the marriage gives him his excuse to go.",
@@ -944,7 +944,7 @@
         "helena",
         "parolles"
       ],
-      "source": "Project Gutenberg eBook 100, 2.3.305–306",
+      "source": "Project Gutenberg eBook 100, 2.3.293–294",
       "cloze": [
         "strife",
         "detested"
@@ -954,7 +954,7 @@
       "id": "kernal-and-clothes",
       "text": "there can be no kernal in this light nut; the soul of this man is his clothes",
       "speaker": "Lafew",
-      "reference": "2.5.41",
+      "reference": "2.5.40",
       "stage": "act-2",
       "context": "Warning Bertram about Parolles on the day of his departure.",
       "analysis": "Lafew has spent two scenes mocking Parolles’s scarves and garters, and here he reduces the man to an empty shell and a wardrobe. The drum plot proves him right in 4.3, when the blindfold comes off and nothing is left under the costume. Bertram hears the warning and ignores it, which tells the audience as much about his judgement as about Parolles.",
@@ -970,7 +970,7 @@
         "parolles",
         "bertram"
       ],
-      "source": "Project Gutenberg eBook 100, 2.5.41–43",
+      "source": "Project Gutenberg eBook 100, 2.5.40–42",
       "cloze": [
         "nut",
         "clothes"
@@ -980,7 +980,7 @@
       "id": "ring-upon-my-finger",
       "text": "When thou canst get the ring upon my finger, which never shall come off, and show me a child begotten of thy body that I am father to, then call me husband",
       "speaker": "Bertram (in a letter read by Helena)",
-      "reference": "3.2.58",
+      "reference": "3.2.55",
       "stage": "act-3",
       "context": "Helena reads Bertram’s letter aloud at Rossillon, in front of his mother and the two lords who carried it.",
       "analysis": "Bertram writes his refusal as a pair of conditions he believes impossible, and signs it off with a pun, in such a then I write a never. Without meaning to he has drafted a contract. Helena reads it as one and meets each clause to the letter, which is how his refusal becomes the plan for the rest of the plot.",
@@ -996,7 +996,7 @@
         "bertram",
         "helena"
       ],
-      "source": "Project Gutenberg eBook 100, 3.2.58–61",
+      "source": "Project Gutenberg eBook 100, 3.2.55–58",
       "cloze": [
         "ring",
         "husband"
@@ -1006,7 +1006,7 @@
       "id": "wash-his-name",
       "text": "He was my son, But I do wash his name out of my blood, And thou art all my child.",
       "speaker": "Countess",
-      "reference": "3.2.69",
+      "reference": "3.2.65",
       "stage": "act-3",
       "context": "Comforting Helena after both of them have read Bertram’s letters.",
       "analysis": "Disowning her son in favour of her ward, the Countess completes the adoption she offered in 1.3. Wash and blood treat kinship as a stain that can be cleaned away, a startling claim from the character who cares most about family in the play. The past tense of He was my son does the disowning before the rest of the sentence explains it.",
@@ -1020,7 +1020,7 @@
         "bertram",
         "helena"
       ],
-      "source": "Project Gutenberg eBook 100, 3.2.69–71",
+      "source": "Project Gutenberg eBook 100, 3.2.65–67",
       "cloze": [
         "wash",
         "child"
@@ -1030,7 +1030,7 @@
       "id": "wicked-meaning",
       "text": "Is wicked meaning in a lawful deed, And lawful meaning in a lawful act, Where both not sin, and yet a sinful fact.",
       "speaker": "Helena",
-      "reference": "3.7.45",
+      "reference": "3.7.51",
       "stage": "act-3",
       "context": "Closing the scene in which she pays the Widow and plans to take Diana’s place in Bertram’s bed that night.",
       "analysis": "In a riddle, Helena works through the ethics of the bed trick. Bertram intends adultery and will in fact sleep with his wife; she intends something lawful and still takes part in a deception. The balanced clauses keep both sides in view without settling the question, and the last phrase, a sinful fact, concedes that something about the deed remains wrong.",
@@ -1047,7 +1047,7 @@
         "bertram",
         "diana"
       ],
-      "source": "Project Gutenberg eBook 100, 3.7.45–47",
+      "source": "Project Gutenberg eBook 100, 3.7.51–53",
       "cloze": [
         "wicked",
         "sinful"
@@ -1057,7 +1057,7 @@
       "id": "honours-such-a-ring",
       "text": "Mine honour's such a ring; My chastity's the jewel of our house, Bequeathed down from many ancestors",
       "speaker": "Diana",
-      "reference": "4.2.46",
+      "reference": "4.2.54",
       "stage": "act-4",
       "context": "Bertram has just refused to give up his ring, calling it an honour of his house bequeathed down from many ancestors.",
       "analysis": "Diana repeats Bertram’s own sentence back to him with one noun changed, so that his reason for keeping the ring becomes her reason for keeping her chastity. He has no answer that does not give way, and six lines later he hands the ring over. The exchange states the bargain the plot depends on: a man’s heirloom against a woman’s body, and both of them called honour.",
@@ -1073,7 +1073,7 @@
         "diana",
         "bertram"
       ],
-      "source": "Project Gutenberg eBook 100, 4.2.46–48",
+      "source": "Project Gutenberg eBook 100, 4.2.54–56",
       "cloze": [
         "ring",
         "chastity"
@@ -1083,7 +1083,7 @@
       "id": "mingled-yarn",
       "text": "The web of our life is of a mingled yarn, good and ill together",
       "speaker": "First Lord",
-      "reference": "4.3.76",
+      "reference": "4.3.66",
       "stage": "act-4",
       "context": "The two French lords, waiting for Bertram in the camp, have been discussing his seduction of Diana and the news of Helena’s death.",
       "analysis": "Plain prose from a minor character at the edge of the plot gives the play’s summary of itself. Bertram has won honour in battle and disgrace at home in the same weeks, and the image of one cloth woven from two threads declines to sort him into good or bad. The sentence goes on to say that our virtues would be proud if our faults did not whip them, a fair description of the scene about to follow.",
@@ -1097,7 +1097,7 @@
         "french-lords",
         "bertram"
       ],
-      "source": "Project Gutenberg eBook 100, 4.3.76–77",
+      "source": "Project Gutenberg eBook 100, 4.3.66–67",
       "cloze": [
         "web",
         "yarn"
@@ -1107,7 +1107,7 @@
       "id": "the-thing-i-am",
       "text": "Simply the thing I am Shall make me live.",
       "speaker": "Parolles",
-      "reference": "4.3.361",
+      "reference": "4.3.314",
       "stage": "act-4",
       "context": "Alone, after the blindfold is removed and his captors have each taken leave of him in mockery.",
       "analysis": "Exposed as a coward, a liar and a traitor, Parolles neither apologises nor collapses. He gives up the title of captain and resolves to eat, drink and sleep as the thing he is. The line is comic and oddly dignified, and it gives the plain account of himself that Bertram never gives, even in the last scene.",
@@ -1122,7 +1122,7 @@
       "characters": [
         "parolles"
       ],
-      "source": "Project Gutenberg eBook 100, 4.3.361–362",
+      "source": "Project Gutenberg eBook 100, 4.3.314–315",
       "cloze": [
         "Simply",
         "live"
@@ -1132,7 +1132,7 @@
       "id": "the-fines-the-crown",
       "text": "All's well that ends well; still the fine's the crown. Whate'er the course, the end is the renown.",
       "speaker": "Helena",
-      "reference": "4.4.35",
+      "reference": "4.4.39",
       "stage": "act-4",
       "context": "Setting out with the Widow and Diana to find the King, who she has heard is at Marseilles.",
       "analysis": "Here the play’s title arrives as a proverb, and Helena explains it straight away. Fine means the end, and the end is what earns the crown, so an action is judged by how it turns out. It is a defence of her own methods, spoken just after the bed trick, and she repeats the proverb in 5.1 when the King has moved on and her plan looks as if it may fail.",
@@ -1148,7 +1148,7 @@
         "diana",
         "widow"
       ],
-      "source": "Project Gutenberg eBook 100, 4.4.35–36",
+      "source": "Project Gutenberg eBook 100, 4.4.39–40",
       "cloze": [
         "crown",
         "renown"
@@ -1158,7 +1158,7 @@
       "id": "shadow-of-a-wife",
       "text": "'Tis but the shadow of a wife you see, The name, and not the thing.",
       "speaker": "Helena",
-      "reference": "5.3.304",
+      "reference": "5.3.344",
       "stage": "act-5",
       "context": "Entering at the end of Diana’s riddle, when the King wonders whether what he sees is real.",
       "analysis": "Calling herself a shadow, as if she were a ghost, Helena then puts the whole history of her marriage in six words: she has been Bertram’s wife in title only. His answer, Both, both, grants her the thing as well as the name. How much he means by it the text leaves to the actor, since it gives him two words and no stage direction.",
@@ -1174,7 +1174,7 @@
         "bertram",
         "king"
       ],
-      "source": "Project Gutenberg eBook 100, 5.3.304–305",
+      "source": "Project Gutenberg eBook 100, 5.3.344–345",
       "cloze": [
         "shadow",
         "name"
@@ -1184,7 +1184,7 @@
       "id": "ever-ever-dearly",
       "text": "If she, my liege, can make me know this clearly, I'll love her dearly, ever, ever dearly.",
       "speaker": "Bertram",
-      "reference": "5.3.312",
+      "reference": "5.3.353",
       "stage": "act-5",
       "context": "Bertram’s last words in the play, after Helena has shown the ring and read back his letter.",
       "analysis": "His promise begins with If. He addresses the King and speaks of Helena in the third person, as though the marriage were still a case awaiting proof. The chime of clearly and dearly makes the couplet sound settled, and the repeated ever sounds eager, yet the condition stands, and Helena immediately offers ‘deadly divorce’ if her proof fails.",
@@ -1200,7 +1200,7 @@
         "helena",
         "king"
       ],
-      "source": "Project Gutenberg eBook 100, 5.3.312–313",
+      "source": "Project Gutenberg eBook 100, 5.3.353–354",
       "cloze": [
         "clearly",
         "dearly"

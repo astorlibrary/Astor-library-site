@@ -19,7 +19,7 @@
   "sourceText": {
     "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
-    "note": "Line numbers follow the traditional Globe numbering, from which modern editions vary by a line or two."
+    "note": "Line numbers follow the traditional Globe numbering, from which modern editions vary by a line or two. Line references were checked against the MIT Shakespeare."
   },
   "atAGlance": [
     {
@@ -701,7 +701,7 @@
       "id": "drop-of-water",
       "text": "I to the world am like a drop of water That in the ocean seeks another drop, Who, failing there to find his fellow forth, Unseen, inquisitive, confounds himself.",
       "speaker": "Antipholus of Syracuse",
-      "reference": "1.2.35",
+      "reference": "1.2.39",
       "stage": "act-1",
       "context": "Alone on the mart, having sent his servant to the inn.",
       "analysis": "‘Confounds’ means defeats and also mingles, so the drop searching the sea is lost in the same motion that dissolves it. He states the play’s problem before any error has happened: a man looking for his double risks becoming indistinguishable from what he is looking for. Adriana will take the same image back off him in 2.2 and use it about marriage.",
@@ -713,7 +713,7 @@
       "characters": [
         "antipholus-syracuse"
       ],
-      "source": "Project Gutenberg eBook 100, 1.2.35–38",
+      "source": "Project Gutenberg eBook 100, 1.2.39–42",
       "cloze": [
         "ocean",
         "confounds"
@@ -723,7 +723,7 @@
       "id": "clock-cheek",
       "text": "The clock hath strucken twelve upon the bell; My mistress made it one upon my cheek.",
       "speaker": "Dromio of Ephesus",
-      "reference": "1.2.45",
+      "reference": "1.2.49",
       "stage": "act-1",
       "context": "Explaining to the wrong master why dinner is spoiling.",
       "analysis": "Two strokes, two meanings, one word. The joke makes a household bell into a slap and gets a laugh, and it also tells the audience exactly what this servant’s day is like. Shakespeare keeps the pun running: the blows are marks, the marks are money, and the money is what everyone is shouting about.",
@@ -738,7 +738,7 @@
         "dromio-ephesus",
         "adriana"
       ],
-      "source": "Project Gutenberg eBook 100, 1.2.45–46",
+      "source": "Project Gutenberg eBook 100, 1.2.49–50",
       "cloze": [
         "strucken",
         "cheek"
@@ -748,7 +748,7 @@
       "id": "cozenage",
       "text": "They say this town is full of cozenage, As nimble jugglers that deceive the eye, Dark-working sorcerers that change the mind, Soul-killing witches that deform the body",
       "speaker": "Antipholus of Syracuse",
-      "reference": "1.2.97",
+      "reference": "1.2.108",
       "stage": "act-1",
       "context": "After his first encounter with the wrong Dromio, who has apparently stolen his gold.",
       "analysis": "Ephesus had this reputation in Acts 19, where converts burn their books of magic, and Shakespeare cashes it in early so that every later mistake has an explanation waiting. The three trades are graded by what they work on (eye, mind, body), and the play goes on to deceive the eye, change the mind and, in Pinch’s hands, get at the body.",
@@ -762,7 +762,7 @@
       "characters": [
         "antipholus-syracuse"
       ],
-      "source": "Project Gutenberg eBook 100, 1.2.97–100",
+      "source": "Project Gutenberg eBook 100, 1.2.108–111",
       "cloze": [
         "cozenage",
         "witches"
@@ -821,7 +821,7 @@
       "id": "so-round",
       "text": "Am I so round with you, as you with me, That like a football you do spurn me thus? You spurn me hence, and he will spurn me hither.",
       "speaker": "Dromio of Ephesus",
-      "reference": "2.1.80",
+      "reference": "2.1.82",
       "stage": "act-2",
       "context": "Sent back to the mart by Adriana, after a beating from the master he takes for his own.",
       "analysis": "‘Round’ means plain-spoken and also spherical, and the pun holds the whole complaint: he is spoken to bluntly and kicked like a ball between two houses. In his next line he asks to be cased in leather, which is what a football was made of, so the joke ends with a servant requesting armour.",
@@ -836,7 +836,7 @@
         "adriana",
         "antipholus-ephesus"
       ],
-      "source": "Project Gutenberg eBook 100, 2.1.80–82",
+      "source": "Project Gutenberg eBook 100, 2.1.82–84",
       "cloze": [
         "football",
         "spurn"
@@ -846,7 +846,7 @@
       "id": "breaking-gulf",
       "text": "For know, my love, as easy mayst thou fall A drop of water in the breaking gulf, And take unmingled thence that drop again Without addition or diminishing, As take from me thyself, and not me too.",
       "speaker": "Adriana",
-      "reference": "2.2.112",
+      "reference": "2.2.146",
       "stage": "act-2",
       "context": "Addressing a man she believes is her husband, in the street.",
       "analysis": "She picks up the image her brother-in-law used about himself an hour earlier and makes it a marriage argument: two people mixed like water cannot be separated out by weight. The speech is the most serious thing in the play and it is delivered, without anyone knowing, to the wrong man, which is the cruellest joke Shakespeare plays on anybody here.",
@@ -861,7 +861,7 @@
         "adriana",
         "antipholus-syracuse"
       ],
-      "source": "Project Gutenberg eBook 100, 2.2.112–116",
+      "source": "Project Gutenberg eBook 100, 2.2.146–150",
       "cloze": [
         "unmingled",
         "diminishing"
@@ -871,7 +871,7 @@
       "id": "earth-heaven-hell",
       "text": "Am I in earth, in heaven, or in hell? Sleeping or waking, mad, or well-advis'd? Known unto these, and to myself disguis'd!",
       "speaker": "Antipholus of Syracuse",
-      "reference": "2.2.200",
+      "reference": "2.2.243",
       "stage": "act-2",
       "context": "Being led indoors to dine as another woman’s husband.",
       "analysis": "‘Known unto these, and to myself disguis’d’ is the exact reverse of every other disguise plot on the Elizabethan stage. Nobody is hiding; their certainty hides him from himself. Three lines later he decides to go along with it, and that keeps the play running: the one man who could stop the errors chooses the dinner.",
@@ -886,7 +886,7 @@
         "antipholus-syracuse",
         "adriana"
       ],
-      "source": "Project Gutenberg eBook 100, 2.2.200–202",
+      "source": "Project Gutenberg eBook 100, 2.2.243–245",
       "cloze": [
         "disguis'd",
         "waking"
@@ -896,7 +896,7 @@
       "id": "parchment",
       "text": "If the skin were parchment, and the blows you gave were ink, Your own handwriting would tell you what I think.",
       "speaker": "Dromio of Ephesus",
-      "reference": "3.1.13",
+      "reference": "3.1.14",
       "stage": "act-3",
       "context": "Insisting to his master that he really was beaten at the mart earlier that day.",
       "analysis": "The servant offers his body as legal evidence, in a city where documents settle everything. Parchment, ink and handwriting are the instruments of the bonds and bills that drive the middle of the play, and he turns them on his master: the marks are a signed statement, and the signature is his master’s.",
@@ -911,7 +911,7 @@
         "dromio-ephesus",
         "antipholus-ephesus"
       ],
-      "source": "Project Gutenberg eBook 100, 3.1.13–14",
+      "source": "Project Gutenberg eBook 100, 3.1.14–15",
       "cloze": [
         "parchment",
         "handwriting"
@@ -921,7 +921,7 @@
       "id": "slander",
       "text": "For slander lives upon succession, For ever hous'd where it gets possession.",
       "speaker": "Balthasar",
-      "reference": "3.1.112",
+      "reference": "3.1.146",
       "stage": "act-3",
       "context": "Persuading Antipholus of Ephesus not to break down his own door.",
       "analysis": "‘Hous’d’ and ‘possession’ are chosen with care by a man standing outside a house he cannot get into. Balthasar’s point is practical: force the door and the street will invent a reason. It is also the moment the play turns, because taking the advice sends Antipholus to a courtesan and puts the chain into the wrong hands.",
@@ -933,7 +933,7 @@
       "characters": [
         "antipholus-ephesus"
       ],
-      "source": "Project Gutenberg eBook 100, 3.1.112–113",
+      "source": "Project Gutenberg eBook 100, 3.1.146–147",
       "cloze": [
         "slander",
         "possession"
@@ -968,7 +968,7 @@
       "id": "mermaid",
       "text": "O, train me not, sweet mermaid, with thy note To drown me in thy sister's flood of tears.",
       "speaker": "Antipholus of Syracuse",
-      "reference": "3.2.45",
+      "reference": "3.2.46",
       "stage": "act-3",
       "context": "Answering Luciana’s advice with a declaration of love.",
       "analysis": "He comes back to water: a drop looking for a drop in the first act, and now a mermaid whose song would drown him in another woman’s weeping. ‘Train’ means to lure. The man who came to Ephesus searching has stopped searching, and the play never says whether he has found anything or merely stopped caring.",
@@ -982,7 +982,7 @@
         "luciana",
         "adriana"
       ],
-      "source": "Project Gutenberg eBook 100, 3.2.45–46",
+      "source": "Project Gutenberg eBook 100, 3.2.46–47",
       "cloze": [
         "mermaid",
         "drown"
@@ -992,7 +992,7 @@
       "id": "spherical",
       "text": "She is spherical, like a globe. I could find out countries in her.",
       "speaker": "Dromio of Syracuse",
-      "reference": "3.2.104",
+      "reference": "3.2.127",
       "stage": "act-3",
       "context": "Describing the kitchen maid who has claimed him as her husband.",
       "analysis": "What follows is a geography lesson conducted over a woman’s body: Ireland in the bogs, Spain in her hot breath, America on a nose set with rubies. It is the longest joke in the play and the least comfortable one now, and the man making it is terrified: he is describing someone who knew the moles and warts on his body without being told.",
@@ -1007,7 +1007,7 @@
         "dromio-syracuse",
         "antipholus-syracuse"
       ],
-      "source": "Project Gutenberg eBook 100, 3.2.104–105",
+      "source": "Project Gutenberg eBook 100, 3.2.127–128",
       "cloze": [
         "spherical",
         "countries"
@@ -1017,7 +1017,7 @@
       "id": "bankrupt-time",
       "text": "Time is a very bankrupt, and owes more than he's worth to season.",
       "speaker": "Dromio of Syracuse",
-      "reference": "4.2.61",
+      "reference": "4.2.65",
       "stage": "act-4",
       "context": "Explaining to Adriana why the clock has struck one after striking two.",
       "analysis": "Everything in Ephesus can be put on account, including the hours. Dromio has just come from watching his master arrested for debt, and the joke is that the afternoon itself has run out of credit and is turning back to avoid the sergeant. It is nonsense, and it is also an exact description of a day in which nothing is paid for on time.",
@@ -1032,7 +1032,7 @@
         "dromio-syracuse",
         "adriana"
       ],
-      "source": "Project Gutenberg eBook 100, 4.2.61",
+      "source": "Project Gutenberg eBook 100, 4.2.65",
       "cloze": [
         "bankrupt",
         "owes"
@@ -1042,7 +1042,7 @@
       "id": "wander-in-illusions",
       "text": "The fellow is distract, and so am I, And here we wander in illusions. Some blessed power deliver us from hence!",
       "speaker": "Antipholus of Syracuse",
-      "reference": "4.3.35",
+      "reference": "4.3.45",
       "stage": "act-4",
       "context": "After being greeted by name, offered goods and handed a purse of gold all over town.",
       "analysis": "What unnerves him is kindness. He is not being robbed: he is greeted by name, shown silk cut to his measure and handed a purse of gold. A whole city has taken him for somebody, he cannot find out who, and the prayer is the point at which he stops trying to explain it.",
@@ -1055,7 +1055,7 @@
         "antipholus-syracuse",
         "dromio-syracuse"
       ],
-      "source": "Project Gutenberg eBook 100, 4.3.35–37",
+      "source": "Project Gutenberg eBook 100, 4.3.45–47",
       "cloze": [
         "distract",
         "illusions"
@@ -1065,7 +1065,7 @@
       "id": "long-ears",
       "text": "I am an ass indeed; you may prove it by my long ears. … When I am cold, he heats me with beating; when I am warm he cools me with beating.",
       "speaker": "Dromio of Ephesus",
-      "reference": "4.4.25",
+      "reference": "4.4.33",
       "stage": "act-4",
       "context": "Beaten for bringing back the rope’s end he was sent to buy, by a master who meant to send him for bail.",
       "analysis": "The speech starts as a pun and turns into an account of a whole life, from the hour of his nativity to the day he expects to beg at doors with a limp his master gave him. Both Dromios call themselves asses repeatedly, and this is the point at which the audience is invited to hear the word as a job description.",
@@ -1079,7 +1079,7 @@
         "dromio-ephesus",
         "antipholus-ephesus"
       ],
-      "source": "Project Gutenberg eBook 100, 4.4.25–28",
+      "source": "Project Gutenberg eBook 100, 4.4.33–36",
       "cloze": [
         "beating",
         "ears"
@@ -1089,7 +1089,7 @@
       "id": "venom-clamours",
       "text": "The venom clamours of a jealous woman Poisons more deadly than a mad dog's tooth.",
       "speaker": "Abbess",
-      "reference": "5.1.71",
+      "reference": "5.1.74",
       "stage": "act-5",
       "context": "Having questioned Adriana about how she treated her husband.",
       "analysis": "The Abbess presses the same point several times (‘Ay, but not rough enough’, ‘Haply in private’, ‘Ay, but not enough’) until Adriana boasts of how hard she nagged, and then the Abbess makes the boast a diagnosis. Luciana protests; Adriana says she was betrayed to her own reproof. Nothing later withdraws the charge, and it is spoken, though nobody on stage yet knows it, by Adriana’s own mother-in-law.",
@@ -1105,7 +1105,7 @@
         "adriana",
         "luciana"
       ],
-      "source": "Project Gutenberg eBook 100, 5.1.71–72",
+      "source": "Project Gutenberg eBook 100, 5.1.74–75",
       "cloze": [
         "venom",
         "jealous"
@@ -1115,7 +1115,7 @@
       "id": "circes-cup",
       "text": "Why, what an intricate impeach is this! I think you all have drunk of Circe's cup.",
       "speaker": "Duke",
-      "reference": "5.1.272",
+      "reference": "5.1.280",
       "stage": "act-5",
       "context": "After hearing two sworn accounts of the day that cannot both be true.",
       "analysis": "‘Impeach’ is an accusation and ‘intricate’ means tangled, so the Duke names the problem exactly: this is a legal tangle more than a mystery. Circe changed men into swine, and his guess is that everyone has been transformed. He is wrong about the cause and right about the effect, which is roughly where the audience has been sitting for four acts.",
@@ -1131,7 +1131,7 @@
         "antipholus-ephesus",
         "angelo"
       ],
-      "source": "Project Gutenberg eBook 100, 5.1.272–273",
+      "source": "Project Gutenberg eBook 100, 5.1.280–281",
       "cloze": [
         "impeach",
         "Circe's"
@@ -1141,7 +1141,7 @@
       "id": "defeatures",
       "text": "O! grief hath chang'd me since you saw me last, And careful hours with time's deformed hand, Have written strange defeatures in my face.",
       "speaker": "Egeon",
-      "reference": "5.1.300",
+      "reference": "5.1.309",
       "stage": "act-5",
       "context": "Recognising a son who says he has never seen him before.",
       "analysis": "‘Defeatures’ means disfigurements, and the writing image returns from Dromio’s parchment joke in a register nobody is laughing at. The old man has been condemned, reprieved for a day, and now denied by his own child, who is telling the truth. Shakespeare lets that stand for some fifty lines before the Abbess comes back through the priory gate.",
@@ -1154,7 +1154,7 @@
         "egeon",
         "antipholus-ephesus"
       ],
-      "source": "Project Gutenberg eBook 100, 5.1.300–302",
+      "source": "Project Gutenberg eBook 100, 5.1.309–311",
       "cloze": [
         "defeatures",
         "grief"
@@ -1164,7 +1164,7 @@
       "id": "genius",
       "text": "One of these men is genius to the other; And so of these, which is the natural man, And which the spirit? Who deciphers them?",
       "speaker": "Duke",
-      "reference": "5.1.335",
+      "reference": "5.1.347",
       "stage": "act-5",
       "context": "Seeing both pairs of twins together for the first time.",
       "analysis": "A ‘genius’ was a person’s attendant spirit, so the Duke’s first thought is that one of each pair must be a spirit and not a man. ‘Deciphers’ treats the two bodies as a code somebody must read. It is the question the whole play has been asking, put by the one person with the authority to settle it, and he cannot.",
@@ -1180,7 +1180,7 @@
         "antipholus-syracuse",
         "antipholus-ephesus"
       ],
-      "source": "Project Gutenberg eBook 100, 5.1.335–337",
+      "source": "Project Gutenberg eBook 100, 5.1.347–349",
       "cloze": [
         "genius",
         "deciphers"
@@ -1190,7 +1190,7 @@
       "id": "thirty-three-years",
       "text": "Thirty-three years have I but gone in travail Of you, my sons, and till this present hour My heavy burden ne'er delivered.",
       "speaker": "Abbess",
-      "reference": "5.1.404",
+      "reference": "5.1.429",
       "stage": "act-5",
       "context": "Inviting the whole company into the abbey after recognising her husband and sons.",
       "analysis": "‘Travail’ is both labour and hardship, and she takes the metaphor all the way: the day’s confusion has been a delivery, and it has taken thirty-three years. The number does not fit the rest of the play, which points to twenty-five or so, and editors have argued about it since the eighteenth century without agreeing on a fix.",
@@ -1204,7 +1204,7 @@
         "antipholus-syracuse",
         "antipholus-ephesus"
       ],
-      "source": "Project Gutenberg eBook 100, 5.1.404–406",
+      "source": "Project Gutenberg eBook 100, 5.1.429–431",
       "cloze": [
         "travail",
         "burden"
@@ -1214,7 +1214,7 @@
       "id": "hand-in-hand",
       "text": "We came into the world like brother and brother, And now let's go hand in hand, not one before another.",
       "speaker": "Dromio of Ephesus",
-      "reference": "5.1.428",
+      "reference": "5.1.455",
       "stage": "act-5",
       "context": "The last two lines of the play, settling which twin should walk first.",
       "analysis": "Shakespeare gives the final couplet to a servant, who uses it to set aside the question the whole play has been about: which of the two is which, and which comes first. The Antipholuses have gone off to a feast with their parents. The Dromios, who own nothing and were bought as infants, decide seniority by walking in together.",
@@ -1229,7 +1229,7 @@
         "dromio-ephesus",
         "dromio-syracuse"
       ],
-      "source": "Project Gutenberg eBook 100, 5.1.428–429",
+      "source": "Project Gutenberg eBook 100, 5.1.455–456",
       "cloze": [
         "brother",
         "another"
@@ -1393,9 +1393,9 @@
       "focus": "Adriana, Luciana and the Abbess",
       "plan": [
         "Start with the couplet debate at the opening of 2.1 and state each sister’s position exactly.",
-        "Read Adriana’s speech at 2.2.112 as an argument as much as a complaint, and note who she is actually speaking to.",
+        "Read Adriana’s speech at 2.2.146 as an argument as much as a complaint, and note who she is actually speaking to.",
         "Turn to Luciana at 3.2, where the defender of obedience recommends concealment, and ask what has changed.",
-        "Set the Abbess’s verdict at 5.1.71 against everything the audience knows about the husband’s afternoon at the Porpentine.",
+        "Set the Abbess’s verdict at 5.1.74 against everything the audience knows about the husband’s afternoon at the Porpentine.",
         "Decide what the reunion settles: the play ends with a feast and a restored family, and says nothing more about Adriana’s marriage."
       ]
     },
