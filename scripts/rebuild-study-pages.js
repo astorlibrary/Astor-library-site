@@ -120,7 +120,7 @@ const GAMES = [
     scope: 'book',
     blurb: 'Identify a character from a description that never names them.',
     deck: 'Work out who is being described.',
-    why: 'It makes you think of a character as a set of actions and functions, not a name attached to a plot summary.'
+    why: 'It makes you think of a character as a set of actions and functions.'
   },
   {
     slug: 'order-the-plot',
@@ -128,7 +128,7 @@ const GAMES = [
     scope: 'book',
     blurb: 'Put acts, chapters and scenes back into sequence.',
     deck: 'Put the acts, chapters and scenes back in order.',
-    why: 'Knowing what happens before and after a scene lets you write about cause, not just list events. It is also the fastest way to find a quotation you half remember.'
+    why: 'Knowing what happens before and after a scene lets you write about cause and effect. It is also the fastest way to find a quotation you half remember.'
   },
   {
     slug: 'mixed-round',
@@ -152,7 +152,7 @@ const GAMES = [
     scope: 'library',
     blurb: 'Place an event in the right year.',
     deck: 'Place an event in the right year.',
-    why: 'Context marks are lost on decades, not on centuries. The wrong answers here are deliberately close.'
+    why: 'Context marks are usually lost by getting the decade wrong; the century is rarely the problem. The wrong answers here are deliberately close.'
   },
   {
     slug: 'opening-lines',

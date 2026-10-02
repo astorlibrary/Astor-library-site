@@ -105,7 +105,7 @@ module.exports = [
     reading: {
       heading: 'Follow who controls the scene, and when that control changes hands.',
       paragraphs: [
-        'Begin with the obstruction. A father controls a marriage, an older brother blocks an inheritance, jealousy governs a household or a law threatens an outsider. Comedy needs a pressure strong enough to make another space, name or performance necessary. The forest, disguise and practical joke are responses to a social arrangement, not decorative detours from it.',
+        'Begin with the obstruction. A father controls a marriage, an older brother blocks an inheritance, jealousy governs a household or a law threatens an outsider. Comedy needs a pressure strong enough to make another space, name or performance necessary. The forest, disguise and practical joke are responses to a social arrangement.',
         'Then read the ending backwards. Which earlier mistake must be retold? Who produces proof, recognises a face or accepts a new account? A final embrace may depend on an improbable arrival, but stage action makes that improbability visible and communal. The audience watches knowledge being shared, even when one character does not accept the terms.'
       ]
     },
@@ -143,12 +143,12 @@ module.exports = [
     introduction: {
       heading: 'History reaches the stage after somebody has already shaped the record.',
       paragraphs: [
-        'The ten plays printed as histories in the 1623 First Folio move from King John to Henry VIII, with their greatest concentration on the troubled succession between Richard II and Richard III. They draw upon chronicles, earlier plays, genealogies and public memory, but they are not transcripts of the past. Years contract into a scene, several people may be combined into one dramatic role, and a private encounter can be invented to make political pressure visible. The useful question is not simply whether Shakespeare is accurate. It is what a particular change allows an audience to see about authority, inheritance and national story.',
+        'The ten plays printed as histories in the 1623 First Folio move from King John to Henry VIII, with their greatest concentration on the troubled succession between Richard II and Richard III. They draw upon chronicles, earlier plays, genealogies and public memory, but they are not transcripts of the past. Years contract into a scene, several people may be combined into one dramatic role, and a private encounter can be invented to make political pressure visible. A more useful question than whether Shakespeare is accurate is what a particular change allows an audience to see about authority, inheritance and national story.',
         'Writing order complicates historical order. The early Henry VI plays and Richard III begin after Henry V’s death and follow the realm into the Wars of the Roses; the later Richard II, two Henry IV plays and Henry V go back to the deposition and inheritance that precede that collapse. Read one sequence and victory can look like an ending. Continue into the other and it becomes a fragile legacy. Macbeth and King Lear sit at the edge of this shelf as chronicle tragedies: neither belongs to the Folio’s history section, but each turns an inherited account of British kingship and succession into tragic action.'
       ]
     },
     methods: [
-      { label: 'Chronicle', title: 'A source is material, not a verdict', copy: 'Holinshed and other chroniclers had already selected causes, repeated traditions and arranged rulers into meaningful sequences. Shakespeare selects again. Compare what the play keeps, moves or invents, and ask whose claim is strengthened or weakened by each change. Source study should reveal a dramatic argument, not reduce reading to catching errors.' },
+      { label: 'Chronicle', title: 'Using the chronicles', copy: 'Holinshed and other chroniclers had already selected causes, repeated traditions and arranged rulers into meaningful sequences. Shakespeare selects again. Compare what the play keeps, moves or invents, and ask whose claim is strengthened or weakened by each change. Source study should reveal a dramatic argument; catching errors is the least of it.' },
       { label: 'Performance', title: 'A king must be recognised in public', copy: 'The crown does not make authority self-executing. Oaths, processions, titles, costumes and speeches persuade other people to behave as though a claim is settled. Watch who stands near the king, who answers and whether a public role survives private doubt. Kingship is repeatedly shown as an office that bodies and audiences must perform together.' },
       { label: 'Sequence', title: 'One reign leaves the next play unfinished business', copy: 'A deposition, pardon, rebellion or conquest returns as another generation’s inheritance. Read endings with the next opening in view. Henry V’s triumph is followed by a child king and lost territory; Richard III’s ascent gathers violence begun long before his first soliloquy. Read in order, the plays show one generation paying for what the last one did.' }
     ],
@@ -169,7 +169,7 @@ module.exports = [
     reading: {
       heading: 'Make a succession table, then return to the people on stage.',
       paragraphs: [
-        'A simple family tree helps: write down who claims the crown, through which relative and under what rule of inheritance. Keep legality and control in separate columns. Richard II is an anointed king who loses practical obedience; Bolingbroke acquires obedience before he can make his title feel secure. The table should clarify the claim, not decide the play. Watch the moment when a room accepts, refuses or remains silent before a new political fact.',
+        'A simple family tree helps: write down who claims the crown, through which relative and under what rule of inheritance. Keep legality and control in separate columns. Richard II is an anointed king who loses practical obedience; Bolingbroke acquires obedience before he can make his title feel secure. The table should clarify the claim; it cannot decide how to read the play. Watch the moment when a room accepts, refuses or remains silent before a new political fact.',
         'For each play, place one ceremonial speech beside one scene of ordinary cost. Henry V’s Chorus makes a nation out of words, while the soldier Williams wants to know what a king owes the men who die for him. Jack Cade’s rebellion mixes real grievance with grotesque violence; the gardeners in Richard II describe order from outside the court. These changes of scale show who is included in the word England, who is spoken for, and whose body pays when royal history becomes a public story.'
       ]
     },
@@ -214,9 +214,9 @@ module.exports = [
       ]
     },
     methods: [
-      { label: 'Action', title: 'A choice changes the field', copy: 'Tragic characters do not simply receive a fate. They interpret, decide and act inside pressures they did not create. A decision alters what everyone else can do, so private error becomes political, familial or military consequence.' },
+      { label: 'Action', title: 'A choice changes the field', copy: 'Tragic characters interpret, decide and act inside pressures they did not create. A decision alters what everyone else can do, so private error becomes political, familial or military consequence.' },
       { label: 'Knowledge', title: 'The audience sees an unequal world', copy: 'Dramatic irony gives spectators knowledge that a character lacks, but never perfect control. We may know that Iago lies or that Macbeth’s confidence is false while remaining unable to stop the scene. In tragedy the audience often understands what is happening and can do nothing to stop it.' },
-      { label: 'Language', title: 'Speech can reveal and conceal in the same breath', copy: 'Soliloquies do not provide a simple key to a stable inner self. A speaker may persuade, evade, rehearse or discover a thought while speaking it. The language is an event, not a label placed over the action.' }
+      { label: 'Language', title: 'Speech can reveal and conceal in the same breath', copy: 'Soliloquies do not provide a simple key to a stable inner self. A speaker may persuade, evade, rehearse or discover a thought while speaking it. The language is itself an event in the play.' }
     ],
     books: [
       { href: '/books/doctor-faustus/', title: 'Doctor Faustus', author: 'Christopher Marlowe', year: 'c.1592–93', image: '/Doctor%20Faustus%20Cover.png', copy: 'A scholar trades his soul for twenty-four years of service, then discovers how quickly boundless ambition can narrow into delay and fear.' },
@@ -297,7 +297,7 @@ module.exports = [
       heading: 'Separate observation, inference and proof.',
       paragraphs: [
         'When Holmes speaks rapidly, it is easy to treat every sentence as one act of deduction. Slow the passage down. Mark what can be directly seen, what depends on specialist knowledge and what remains a hypothesis until another fact confirms it. The method becomes more interesting when its joins are visible.',
-        'Then read Watson’s timing. Does he report the clue when Holmes sees it, when Watson notices it or only when the solution is given? A mystery is not simply a set of facts concealed from the reader. It is an argument about the order in which facts become meaningful.'
+        'Then read Watson’s timing. Does he report the clue when Holmes sees it, when Watson notices it or only when the solution is given? A mystery conceals facts from the reader, and it is also an argument about the order in which they become meaningful.'
       ]
     },
     terms: [
@@ -332,7 +332,7 @@ module.exports = [
       heading: 'Epic makes one life answer to a much larger history.',
       paragraphs: [
         'Epic scale does not come only from length, gods or battles. An epic joins an individual action to the fate of a household, people or future state. Achilles’s anger changes the course of the war at Troy; Odysseus comes home to find out whether Ithaca can be his home again. Aeneas’s journey is burdened by a city and empire that do not yet exist.',
-        'These poems also remember other tellings. Virgil writes with Homer in view; Milton invokes both classical epic and the book of Genesis while making the Fall unfold in English blank verse. Moby-Dick is a novel, not an ancient epic, but its invocations, catalogues, voyage and enormous adversary reach deliberately for the scale of epic.'
+        'These poems also remember other tellings. Virgil writes with Homer in view; Milton invokes both classical epic and the book of Genesis while making the Fall unfold in English blank verse. Moby-Dick is a novel, but its invocations, catalogues, voyage and enormous adversary reach deliberately for the scale of epic.'
       ]
     },
     methods: [

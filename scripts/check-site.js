@@ -140,7 +140,10 @@ const stockPhrases = [
   /\bhuman cost\b/,
   /\bwithout looking away\b/,
   /\brefusing to let\b/,
-  /\b(?:the|this) (?:play|novel|poem|book|story|text|narrative|sequence|collection|scene|chapter|ending|sentence|line|image|stanza|speech) refuses\b/
+  /\b(?:the|this) (?:play|novel|poem|book|story|text|narrative|sequence|collection|scene|chapter|ending|sentence|line|image|stanza|speech) refuses\b/,
+  /\bnot (?:simply|merely)\b/,
+  /\b(?:is|was) the (?:whole )?point\b(?! (?:at|of|where|when)\b)/,
+  /\bis a study (?:in|of)\b/
 ];
 function stockPhraseFailures(fileName, text) {
   const found = [];

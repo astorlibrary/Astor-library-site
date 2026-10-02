@@ -190,7 +190,7 @@ function bookPage(book) {
   const contexts = [
     { label: 'Text', title: 'Editorial method', body: book.editorial[0] },
     { label: 'Supporting material', title: 'Context and interpretation', body: book.editorial[1] },
-    { label: book.range ? 'Specialist range' : 'Astor edition', title: book.label, body: book.range === 'apocrypha' ? 'One of eight numbered specialist editions gathered in the Shakespeare Apocrypha collection.' : book.range === 'expanded' ? 'A premium scholarly range presented alongside, not in place of, the standard Astor Shakespeare editions.' : 'A main Astor edition placed in the catalogue’s ' + book.collection + ' collection.' }
+    { label: book.range ? 'Specialist range' : 'Astor edition', title: book.label, body: book.range === 'apocrypha' ? 'One of eight numbered specialist editions gathered in the Shakespeare Apocrypha collection.' : book.range === 'expanded' ? 'A premium scholarly range published alongside the standard Astor Shakespeare editions, which remain available.' : 'A main Astor edition placed in the catalogue’s ' + book.collection + ' collection.' }
   ].map(item => '<article><span>' + escapeHtml(item.label) + '</span><h3>' + escapeHtml(item.title) + '</h3><p>' + escapeHtml(item.body) + '</p></article>').join('');
   const topics = book.topics.map((topic, index) => '<article><span>' + String(index + 1).padStart(2, '0') + '</span><h3>' + escapeHtml(topic.title) + '</h3><p>' + escapeHtml(topic.body) + '</p></article>').join('');
   const rangeCrumb = book.range === 'apocrypha'

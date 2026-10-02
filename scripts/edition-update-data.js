@@ -392,7 +392,7 @@ const editionUpdateBooks = [
     overview: [
       'From Sonnet 18, poetry becomes another defence against age and death. The central sequence follows an unequal relationship through admiration, absence, jealousy, betrayal, forgiveness and rivalry with another poet.',
       'The poems examine love, beauty, mortality, rank, desire and the claim that verse may outlast the people it represents. Even the best-known sonnets are parts of a sequence that changes as it goes.',
-      'One sonnet appears complete on every page. A short headnote explains the direction of its argument; notes at the foot of that page define difficult words, clarify passages and identify genuine textual uncertainty.'
+      'One sonnet appears complete on every page. A short headnote explains the direction of its argument; notes at the foot of that page define difficult words, clarify passages and identify real textual uncertainty.'
     ],
     editorial: [
       'The introduction covers Shakespeare’s life, the 1609 quarto, Thomas Thorpe’s dedication to Mr W. H., the probable dating of the poems, the development of the English sonnet and Shakespeare’s formal choices.',

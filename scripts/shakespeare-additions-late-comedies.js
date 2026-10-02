@@ -98,7 +98,7 @@ module.exports = [
       {
         label: "Performance",
         title: "Ceremony and dance",
-        body: "The play requires processions, battles, a prison, woodland scenes, madness, temples and a formal tournament. Its rural entertainment draws on contemporary morris dancing and briefly places working people at the centre of the stage. A production can emphasise spectacular romance, expose the coercion beneath its ceremonies, or let the court and country plots unsettle one another."
+        body: "The play requires processions, battles, a prison, woodland scenes, madness, temples and a formal tournament. Its rural entertainment draws on contemporary morris dancing and briefly places working people at the centre of the stage. A production can emphasise spectacular romance, expose the coercion beneath its ceremonies, or let the court and country plots disturb one another."
       }
     ],
     characters: [
@@ -241,7 +241,7 @@ module.exports = [
         title: "Language",
         paragraphs: [
           "Both armies possess famous names, yet the play repeatedly places reputation beside bodily appetite, commercial exchange and disease. Thersites describes the war as lust dressed up as honour, while Helen herself becomes a disputed object whose value is measured against the lives already lost.",
-          "Hector understands that keeping Helen cannot be morally defended, but he supports the war after appealing to honour. Achilles wins fame by having his Myrmidons surround Hector when he is unarmed. The play does not merely replace noble heroes with villains; it shows intelligent people continuing to serve standards that their own actions have emptied out."
+          "Hector understands that keeping Helen cannot be morally defended, but he supports the war after appealing to honour. Achilles wins fame by having his Myrmidons surround Hector when he is unarmed. Shakespeare shows intelligent people continuing to serve standards that their own actions have emptied out."
         ]
       }
     ],
@@ -249,12 +249,12 @@ module.exports = [
       {
         label: "Sources",
         title: "Homeric war and Chaucerian love",
-        body: "Shakespeare does not simply dramatise the Iliad. He draws the lovers from Chaucer’s Troilus and Criseyde and takes much of the war narrative from later histories of Troy, including material available through Caxton and Lydgate. By joining traditions that had treated their subjects with great seriousness, he creates a drama in which inherited fame is continually subjected to doubt."
+        body: "The Iliad is only one of Shakespeare’s sources. He draws the lovers from Chaucer’s Troilus and Criseyde and takes much of the war narrative from later histories of Troy, including material available through Caxton and Lydgate. By joining traditions that had treated their subjects with great seriousness, he creates a drama in which inherited fame is continually subjected to doubt."
       },
       {
         label: "Printing",
         title: "The 1609 quarto",
-        body: "The 1609 quarto exists with different preliminary matter. One title page associates the play with performance at the Globe, while an address to the reader in some copies presents it as a work untouched by the ordinary stage. The First Folio prints it among the tragedies, but its position and absence from the preliminary catalogue add to its unsettled textual history."
+        body: "The 1609 quarto exists with different preliminary matter. One title page associates the play with performance at the Globe, while an address to the reader in some copies presents it as a work untouched by the ordinary stage. The First Folio prints it among the tragedies, but its position and absence from the preliminary catalogue add to the uncertainties of its textual history."
       },
       {
         label: "Genre",
@@ -387,7 +387,7 @@ module.exports = [
         title: "Viola",
         paragraphs: [
           "Viola’s disguise is practical before it becomes emotional: alone in an unfamiliar country, she creates Cesario as a means of work and protection. Yet the role soon places her inside other people’s desires. Orsino trusts Cesario with an intimacy he does not offer elsewhere, while Olivia’s attraction makes the supposed boundary between male and female unstable.",
-          "Viola does not simply remove a costume and return to an unchanged self. Her lines often mean more than one thing, so that she can speak as Cesario, as Viola, and as the woman she cannot safely admit to being. In performance, voice, clothing and gesture determine how much Orsino or Olivia senses before the formal recognition."
+          "Taking off the costume will not return Viola to an unchanged self. Her lines often mean more than one thing, so that she can speak as Cesario, as Viola, and as the woman she cannot safely admit to being. In performance, voice, clothing and gesture determine how much Orsino or Olivia senses before the formal recognition."
         ]
       },
       {
@@ -493,9 +493,9 @@ module.exports = [
     date: "c. 1590–94",
     deck: "Valentine goes to the Duke’s court in Milan and falls in love with the Duke’s daughter, Silvia. His friend Proteus follows, forgets his own girl, Julia, and betrays Valentine to get Silvia for himself. Julia comes after him dressed as a boy, and Proteus’s servant Launce has a sour-natured dog called Crab.",
     edition: [
-      "This Astor Library Edition presents the complete play with scene summaries, line numbering and explanatory notes. The support follows the movements between Verona, Milan and the forest, clarifies the traffic in letters, rings and disguises, and gives the servants’ prose comedy its place beside the unsettled story of their masters.",
+      "This Astor Library Edition presents the complete play with scene summaries, line numbering and explanatory notes. The support follows the movements between Verona, Milan and the forest, clarifies the traffic in letters, rings and disguises, and gives the servants’ prose comedy its place beside the troubled story of their masters.",
       "The introductory material considers the play as an early experiment in patterns Shakespeare would revisit: friends divided by desire, a woman travelling in male disguise, lovers banished into green space and recognition delayed until the final scene. Its debt to the story of Felismena in Jorge de Montemayor’s Diana is explained without treating the play as a mere rehearsal for later comedies.",
-      "Close-reading sections concentrate on constancy, male friendship, Julia and Silvia’s acts of resistance, and the troubling speed of the final reconciliation. The ending is discussed plainly, including Proteus’s threat of rape and Valentine’s apparent offer of Silvia to him, so that readers can separate the conventional comic finish from what the text asks a company to stage."
+      "Close-reading sections concentrate on constancy, male friendship, Julia and Silvia’s acts of resistance, and the troubling speed of the final reconciliation. The ending is discussed plainly, including Proteus’s threat of rape and Valentine’s apparent offer of Silvia to him, so that readers can separate the conventional comic finish from what the text requires a company to stage."
     ],
     facts: [
       {
@@ -613,7 +613,7 @@ module.exports = [
     ],
     questions: [
       {
-        title: "What makes a gentleman?",
+        title: "The idea of a gentleman",
         body: "Gather the qualities attached to education, birth, friendship and conduct across the play. Which characters behave according to those standards, and how far does the title become ironic by the final scene?"
       },
       {

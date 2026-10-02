@@ -44,7 +44,7 @@ module.exports = [
       'Critical approaches to Antony, Cleopatra and the ending.'
     ],
     sectionHeading: 'Two worlds, neither simple',
-    sectionIntro: 'Rome and Egypt organise the play, but Shakespeare repeatedly unsettles the judgements attached to each place.',
+    sectionIntro: 'Rome and Egypt organise the play, but Shakespeare keeps disturbing the judgements attached to each place.',
     readings: [
       { label: 'Rome and Egypt', title: 'The opposition keeps changing', copy: 'Roman characters call Egypt excessive and undisciplined, yet Rome is also theatrical, competitive and ruthless. The contrast tells us as much about the speaker as it does about either place.' },
       { label: 'Source and stage', title: 'History becomes performance', copy: 'Shakespeare draws heavily on North’s Plutarch but gives public history an unstable theatrical life. Messengers, reports and ceremonies compete to determine what the audience believes.' },
@@ -74,7 +74,7 @@ module.exports = [
     sectionIntro: 'The guide looks at what happens when a poem is remembered through its rhythm and its images and never announced as a quotation.',
     readings: [
       { label: 'Langston Hughes', title: 'The staircase carries a voice', copy: 'In ‘Mother to Son’ a mother describes her life as a staircase she has kept climbing. The staircase is the famous part, but the poem’s force is also in the way the mother talks straight to her son.' },
-      { label: 'Martin Luther King Jr', title: 'Echo becomes shared language', copy: 'King repeatedly returned to the poem’s movement and phrasing. The borrowing is not merely decorative: it lets different voices and histories meet within a living tradition of speech.' },
+      { label: 'Martin Luther King Jr', title: 'Echo becomes shared language', copy: 'King repeatedly returned to the poem’s movement and phrasing. The borrowing lets different voices and histories meet within a living tradition of speech.' },
       { label: 'Barack Obama', title: 'The image travels again', copy: 'Obama’s 2008 language renews the ascent for another political moment. Following that return reveals how literary influence can survive through memory, rhythm and communal recognition.' }
     ],
     note: 'Place the poem beside the speeches and listen for structure as well as repeated words. Influence can be audible even where there is no formal citation.',
@@ -98,7 +98,7 @@ module.exports = [
       'The handkerchief, the cummerbund and the translation of dramatic objects into film.'
     ],
     sectionHeading: 'Adaptation changes the question',
-    sectionIntro: 'Bhardwaj does not simply relocate Shakespeare. Film form and Indian political worlds alter who can see, speak and act.',
+    sectionIntro: 'Bhardwaj relocates Shakespeare, and film form and Indian political worlds alter who can see, speak and act.',
     readings: [
       { label: 'Omkara', title: 'Evidence enters another culture', copy: 'The handkerchief becomes a jewelled cummerbund, carrying ideas of marriage, possession and sexual suspicion into a different material and social world.' },
       { label: 'Maqbool', title: 'Desire is politically dangerous', copy: 'Nimmi’s position is not a copy of Lady Macbeth’s. Her vulnerability and agency emerge from the criminal household in which intimacy and command cannot be separated.' },
@@ -185,7 +185,7 @@ module.exports = [
     sectionIntro: 'Pamela’s letters do not give us a finished self looking backwards. They record thought while pressure, hope and fear are still changing it.',
     readings: [
       { label: 'Epistolary form', title: 'Feeling has no safe distance', copy: 'Letters place the reader close to uncertainty. Pamela repeats herself, revises a judgement and records danger before she can know how an episode will end.' },
-      { label: 'Reception', title: 'Readers have always disagreed', copy: 'The early debate over sincerity, calculation and social ambition is not an obstacle around the novel. It is evidence of how urgently the book unsettled assumptions about virtue and class.' },
+      { label: 'Reception', title: 'Readers have always disagreed', copy: 'The early debate over sincerity, calculation and social ambition is evidence of how urgently the book disturbed assumptions about virtue and class.' },
       { label: 'Power', title: 'Contradiction needs context', copy: 'Pamela’s feelings cannot be separated from dependence, confinement and unequal authority. A psychological reading becomes stronger when it measures the conditions under which a choice is made.' }
     ],
     note: 'Avoid forcing Pamela into a choice between perfect sincerity and complete calculation. Follow when her language changes and what has made another response possible.',
@@ -266,7 +266,7 @@ module.exports = [
     sectionIntro: 'The play changes country, generation and dramatic form, but it does not pretend that time simply erases what Leontes has done.',
     readings: [
       { label: 'Sicilia', title: 'Jealousy becomes government', copy: 'Leontes converts a private certainty into public law. Because the accusation comes from a king, misreading damages a marriage, a court, a child and the future of the state.' },
-      { label: 'Bohemia', title: 'Another kind of play begins', copy: 'In the countryside there is room for youth, music, disguise and comedy. But class and fathers still have power there, so the change of tone is an experiment, not an escape.' },
+      { label: 'Bohemia', title: 'Another kind of play begins', copy: 'In the countryside there is room for youth, music, disguise and comedy. But class and fathers still have power there, so the change of tone is an experiment, and Bohemia is no escape.' },
       { label: 'The statue', title: 'Wonder does not cancel loss', copy: 'The final scene offers restoration while keeping its mechanism uncertain. Hermione can return; Mamillius cannot. Reconciliation matters because the play preserves that difference.' }
     ],
     note: 'When the play changes tone, do not leave the earlier acts behind. Ask what Bohemia remembers from Sicilia and what the final wonder is unable to restore.',
@@ -327,7 +327,7 @@ module.exports = [
       {
         "label": "Genre",
         "title": "Consider the weird",
-        "copy": "Use the genre discussion to ask what kind of explanation the story invites, withholds or makes impossible."
+        "copy": "Use the genre discussion to ask what kind of explanation the story allows, withholds or makes impossible."
       }
     ],
     "note": "Track the descriptions of the river, islands and willows. Which details make the landscape difficult for the travellers to interpret?"
@@ -477,7 +477,7 @@ module.exports = [
       {
         "label": "Editing",
         "title": "Name your version",
-        "copy": "Use Q1, Q2 and F1 precisely when discussing a textual difference. Avoid treating the three witnesses as interchangeable."
+        "copy": "Name Q1, Q2 or F1 exactly when discussing a textual difference. Avoid treating the three witnesses as interchangeable."
       }
     ],
     "note": "Read the Q1 speech beside the version you know. Note differences in wording and placement before judging their effects."

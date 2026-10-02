@@ -62,7 +62,7 @@ module.exports = [
     contextTitle: 'History, theatre and service.',
     contexts: [
       { label: 'Source', title: 'Sources', body: 'The real Giovanna d’Aragona secretly married Antonio Beccadelli after her first husband’s death. Webster inherited the story through European retellings and gives the Duchess a dramatic presence stronger than the surviving record affords her.' },
-      { label: 'Stage', title: 'Blackfriars and the Globe', body: 'Blackfriars could intensify darkness, music and close psychological pressure; the Globe offered a larger public space for ceremonies and sudden reversals. The play’s effects belong to bodies and voices, not darkness on the page alone.' },
+      { label: 'Stage', title: 'Blackfriars and the Globe', body: 'Blackfriars could intensify darkness, music and close psychological pressure; the Globe offered a larger public space for ceremonies and sudden reversals. The play’s effects belong to bodies and voices in a theatre, and the page alone cannot supply them.' },
       { label: 'Court', title: 'Service and surveillance', body: 'Antonio and Bosola depend upon aristocratic employment. Offices, rewards and patronage shape moral choices throughout a court where access to power is bought through usefulness.' }
     ],
     figuresTitle: 'Characters.',
@@ -162,7 +162,7 @@ module.exports = [
       { name: 'The Old Man', body: 'A late human counterexample whose faith survives the threats that overwhelm Faustus.' }
     ],
     questions: [
-      { title: 'Can he still repent?', body: 'Is repentance genuinely possible for Faustus until the final moment, and what makes possibility feel unavailable?' },
+      { title: 'Can he still repent?', body: 'Is repentance really possible for Faustus until the final moment, and why does it feel out of his reach?' },
       { title: 'Who controls whom?', body: 'Does Mephistopheles control Faustus, or does Faustus choose the interpretation he most wants to hear?' },
       { title: 'Why does ambition shrink?', body: 'Why do dreams of universal command end in tricks and entertainments for the powerful?' },
       { title: 'Which play do we see?', body: 'How does the tragedy change when a production follows the A-text, B-text or a combination?' }
@@ -237,7 +237,7 @@ module.exports = [
     contexts: [
       { label: 'Form', title: 'Rhyme royal and complaint', body: 'The seven-line stanza carries serious narrative and complaint. Its couplet can sound conclusive, but Shakespeare often makes one argument spill into the next, fitting a mind unable to settle imposed injury.' },
       { label: 'History', title: 'A Roman founding story', body: 'Livy and Ovid connect Lucretia’s death with the overthrow of the Tarquins. Shakespeare delays that political end for hundreds of lines in order to remain with Lucrece.' },
-      { label: 'Code', title: 'Chastity and family honour', body: 'Lucrece insists that her mind did not consent, yet fears Tarquin’s act will attach to her name. The poem exposes a system in which innocence can be inwardly certain and publicly fragile.' }
+      { label: 'Code', title: 'Chastity and family honour', body: 'Lucrece insists that her mind did not consent, yet fears Tarquin’s act will attach to her name. The poem shows a system in which innocence can be inwardly certain and publicly fragile.' }
     ],
     figuresTitle: 'Characters.',
     figures: [

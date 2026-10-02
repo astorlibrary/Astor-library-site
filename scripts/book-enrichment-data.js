@@ -2,7 +2,7 @@ module.exports = {
   'alices-adventures-in-wonderland': {
     heading: 'A child in a world of rules and riddles.',
     introduction: [
-      'Alice’s Adventures in Wonderland is often remembered as a sequence of marvellous creatures, but its movement is unusually exact. Alice follows the White Rabbit because curiosity interrupts an ordinary afternoon; once underground, every attempt to regain control produces another problem of scale, language or manners. Doors are too small, keys are left on tables, food changes the body that must use them, and apparently simple instructions refuse to stay simple. Wonderland is not without rules. Its comedy comes from the discovery that each creature treats a private rule as universal and expects Alice to understand it immediately.',
+      'Alice’s Adventures in Wonderland is often remembered as a sequence of marvellous creatures, but its movement is unusually exact. Alice follows the White Rabbit because curiosity interrupts an ordinary afternoon; once underground, every attempt to regain control produces another problem of scale, language or manners. Doors are too small, keys are left on tables, food changes the body that must use them, and apparently simple instructions stop being simple. Wonderland is not without rules. Its comedy comes from the discovery that each creature treats a private rule as universal and expects Alice to understand it immediately.',
       'Alice remains the book’s centre because she observes, argues and revises. She tries school knowledge, polite introductions, recitation and common sense, then notices when each method fails. Carroll plays with the verse, lessons and improving talk every Victorian child knew: poems come out wrong when Alice recites them, words are taken literally, and people in authority give orders with no reason behind them. Readers who no longer recognise every poem being parodied can still follow the larger pattern. Alice is learning to distinguish a rule that helps people live together from a rule that merely protects the person shouting it.'
     ],
     movementHeading: 'From a locked door to a pack of cards.',
@@ -18,7 +18,7 @@ module.exports = {
         title: 'Down the hole: body and identity',
         body: [
           'In the opening chapters Alice’s curiosity gets her into practical trouble: she is too small to reach the key, then too big for the door. Alice falls, finds the little door and repeatedly changes size after drinking and eating. Her body will not remain a stable measure of the world, so questions of height become questions of selfhood. The pool of tears then carries the problem outward: Alice’s private distress becomes the environment through which a mixed company of animals must swim.',
-          'The Caucus-race offers the first public solution, but it is a procedure without a meaningful contest. Everyone runs, everyone stops when the Dodo says so, and everyone receives a prize. Carroll’s joke is not simply that the animals are foolish. It shows how official language can make an arbitrary performance sound settled and fair.'
+          'The Caucus-race offers the first public solution, but it is a procedure without a meaningful contest. Everyone runs, everyone stops when the Dodo says so, and everyone receives a prize. Carroll’s joke is about official language, which can can make an arbitrary performance sound settled and fair.'
         ]
       },
       {
@@ -70,7 +70,7 @@ module.exports = {
         title: 'From a river story to Under Ground',
         body: [
           'The British Library manuscript record connects the story’s first shape with the Oxford river excursion of 4 July 1862 involving Charles Dodgson, Robinson Duckworth and the three Liddell sisters. Dodgson then wrote and illustrated Alice’s Adventures Under Ground, giving the finished manuscript to Alice Liddell in November 1864.',
-          'The published Wonderland more than doubled the shorter manuscript. For publication Carroll added new episodes, among them the Mad Tea-Party and the Cheshire Cat, and John Tenniel drew the pictures. Comparing the two texts reveals revision as invention, not merely correction.'
+          'The published Wonderland more than doubled the shorter manuscript. For publication Carroll added new episodes, among them the Mad Tea-Party and the Cheshire Cat, and John Tenniel drew the pictures. Comparing the two texts shows that Carroll’s revisions added new material as well as correcting the old.'
         ]
       },
       {
@@ -191,7 +191,7 @@ module.exports = {
         label: 'Serial form',
         title: 'Thirty-two weekly instalments',
         body: [
-          'The Moonstone ran in Dickens’s All the Year Round and in Harper’s Weekly from 4 January to 8 August 1868. Weekly divisions had to sustain memory and expectation across months. Changes of narrator, withheld letters and discoveries at the ends of instalments are therefore part of the novel’s first reading conditions, not later packaging.',
+          'The Moonstone ran in Dickens’s All the Year Round and in Harper’s Weekly from 4 January to 8 August 1868. Weekly divisions had to sustain memory and expectation across months. Changes of narrator, withheld letters and discoveries at the ends of instalments are therefore part of the conditions in which the novel was first read.',
           'The three-volume London edition appeared before the serial had finished. Reading in a bound volume changes pace, but the work still carries the architecture of recurrence, delay and partial disclosure built for serial readers.'
         ]
       },
@@ -293,7 +293,7 @@ module.exports = {
         phrase: 'scope for imagination',
         title: 'Imagination',
         body: [
-          'Anne uses the phrase when an ordinary place or object seems too narrow. Renaming lets her perceive colour, weather and possibility in a landscape other people take for granted. Imagination is a way of making a life inside material limits, not simply an escape from them.',
+          'Anne uses the phrase when an ordinary place or object seems too narrow. Renaming lets her perceive colour, weather and possibility in a landscape other people take for granted. Imagination is a way of making a life inside material limits as well as an escape from them.',
           'The comic plots also test that gift. Fantasy can lead to expectation, vanity or inattention; real cordial can be mistaken for raspberry cordial, and a hoped-for hair colour can become green. Maturity means learning when imagination clarifies the world and when it conceals a fact that needs attention.'
         ]
       },
@@ -369,7 +369,7 @@ module.exports = {
     heading: 'A “true history” and its claims to authority.',
     introduction: [
       'Oroonoko: or, The Royal Slave moves between Coramantien on the West African coast and the English colony of Surinam. Its hero is a prince and military leader who falls in love with Imoinda, loses her through royal power, encounters her again in enslavement and leads a rising after repeated promises of freedom fail. The story moves as fast as a romance or a tragedy, but the narrator insists again and again that she saw it happen.',
-      'That claim makes the work more complicated, not less. The narrative includes precise colonial names and landscapes alongside idealised description, political invention and an exceptional hero fashioned through European conventions of rank. It condemns treachery and the violence inflicted on Oroonoko while remaining entangled in the social hierarchy and slave economy it represents. Behn attacks the dishonesty of the colonists, but the book is not an abolitionist tract; organised British abolitionism came a century later.'
+      'That claim makes the work more complicated. The narrative includes precise colonial names and landscapes alongside idealised description, political invention and an exceptional hero fashioned through European conventions of rank. It condemns treachery and the violence inflicted on Oroonoko while remaining entangled in the social hierarchy and slave economy it represents. Behn attacks the dishonesty of the colonists, but the book is not an abolitionist tract; organised British abolitionism came a century later.'
     ],
     movementHeading: 'Love, sale and resistance across the Atlantic.',
     movementDeck: 'The narrative’s two geographies are joined by commerce, broken oaths and competing ideas of honour.',
@@ -530,7 +530,7 @@ module.exports = {
         title: 'The opening statement',
         body: [
           'Walter’s preamble presents the narrative as a sequence of contributions by those best placed to describe each event. The phrase promises breadth, yet one person still selects and orders the pens. The novel is made of many witnesses’ accounts, and Walter, who collects them, decides how the case is presented.',
-          'Handwriting, diaries, letters and copied statements remain physical parts of the plot. Writing does not merely report action after the fact; it can preserve what surveillance attempted to suppress.'
+          'Handwriting, diaries, letters and copied statements remain physical parts of the plot. Writing reports action after the fact, and it can also preserve what surveillance attempted to suppress.'
         ]
       },
       {
@@ -680,7 +680,7 @@ module.exports = {
         title: 'Fifteen letters and a finished manuscript',
         body: [
           'In 1907 Grahame sent a series of animal-story letters to his seven-year-old son Alastair, known in the family as Mouse. The Bodleian preserves fifteen letters together with manuscript material for The Wind in the Willows. They show an origin in serial family storytelling without making the printed book a mere transcription.',
-          'Episodes were selected, expanded and arranged into a work capable of moving between Toad’s comic career and the quieter river chapters. Publication history helps readers see tonal variety as made structure, not inconsistency.'
+          'Episodes were selected, expanded and arranged into a work capable of moving between Toad’s comic career and the quieter river chapters. Publication history helps readers see the changes of tone as deliberate structure.'
         ]
       },
       {
@@ -902,7 +902,7 @@ module.exports = {
         title: 'Aftermath',
         body: [
           'Gatsby waits for a telephone call that does not come. Nick reconstructs the first courtship after its failure, then confronts Gatsby’s death, the nearly empty funeral and the return of people able to retreat into money. His judgement becomes explicit only when action can no longer be repaired.',
-          'The final shore enlarges one man’s backward-looking project into a meditation on beginnings and repetition. Gatsby is not simply the American Dream in person; he wants a fresh start, and what he means by it is recovering a past he has partly invented.'
+          'The final shore enlarges one man’s backward-looking project into a meditation on beginnings and repetition. Gatsby is often taken as the American Dream in person, but what he wants is a fresh start, and what he means by it is recovering a past he has partly invented.'
         ]
       }
     ],

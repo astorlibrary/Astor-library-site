@@ -49,7 +49,7 @@ module.exports = [
         title: "Four nations",
         paragraphs: [
           "The army called ‘English’ includes the Welsh Fluellen, the Irish Macmorris and the Scottish Jamy. Their accents can be used for cheap caricature, but the scene also exposes the labour required to imagine Britain as a single military nation. Fluellen’s persistent attention to ‘the disciplines of the wars’ offers a professional standard against which Pistol’s empty swagger can be measured.",
-          "French is not merely the language of the defeated. Katherine’s lesson with Alice lets her test English words before she becomes part of an English treaty, and the wooing scene never grants Henry complete linguistic control. Jokes, mistranslations and pauses keep negotiation visible. What looks in political terms like possession can therefore remain, in performance, an encounter between people who do not fully share a language.",
+          "French is the language of the defeated, but Katherine’s lesson with Alice lets her test English words before she becomes part of an English treaty, and the wooing scene never grants Henry complete linguistic control. Jokes, mistranslations and pauses keep negotiation visible. What looks in political terms like possession can therefore remain, in performance, an encounter between people who do not fully share a language.",
         ],
       },
     ],
@@ -119,7 +119,7 @@ module.exports = [
         title: "Henry VI as king",
         paragraphs: [
           "Henry’s instinct is to pray, reconcile and forgive. Those qualities are not treated as worthless: amid political calculation and revenge, his pity can sound like the only language not already corrupted. Yet a king’s withdrawal is never private. When Henry leaves rule to favourites and rival nobles, his aversion to conflict gives conflict room to grow.",
-          "Part 3 makes the contradiction unbearable. Henry envies the shepherd’s life while fathers and sons die for his title, and when he disinherits Prince Edward to buy peace, he breaks faith again. The trilogy does not simply ask whether Henry is weak. Shakespeare shows a king whose holiness becomes negligence, in a country that depends on his judgement.",
+          "Part 3 makes the contradiction unbearable. Henry envies the shepherd’s life while fathers and sons die for his title, and when he disinherits Prince Edward to buy peace, he breaks faith again. Henry is weak, but Shakespeare also shows a king whose holiness becomes negligence, in a country that depends on his judgement.",
         ],
       },
       {
@@ -127,7 +127,7 @@ module.exports = [
         title: "Margaret of Anjou’s rise",
         paragraphs: [
           "Margaret enters near the end of Part 1 as a captive whom Suffolk selects for Henry and desires for himself. In Part 2 she learns the machinery of favour, alliance and removal at the English court. The men around her attack her as a woman and a Frenchwoman, while depending on the alliance her marriage brought.",
-          "In Part 3 she commands armies, preserves her son’s claim and subjects York to a deliberately theatrical revenge. The paper crown and the cloth stained with Rutland’s blood make cruelty into spectacle, but York’s attack on her as a ‘tiger’s heart wrapped in a woman’s hide’ also shows how female military authority is made to seem unnatural. Her ferocity should be read beside the killings committed and celebrated by men, not outside them.",
+          "In Part 3 she commands armies, preserves her son’s claim and subjects York to a deliberately theatrical revenge. The paper crown and the cloth stained with Rutland’s blood stage cruelty as spectacle, but York’s attack on her as a ‘tiger’s heart wrapped in a woman’s hide’ also shows how female military authority is made to seem unnatural. Her ferocity should be read beside the killings committed and celebrated by men.",
         ],
       },
     ],
@@ -325,7 +325,7 @@ module.exports = [
     edition: [
       "In Love’s Labour’s Lost an impossible oath shows how people use words, and misuse them. Navarre’s men plan to win fame through study and abstinence; the Princess of France and her ladies expose how quickly that programme depends upon exceptions, and how easily intellectual display becomes another form of vanity.",
       "Around the two courts, Armado, Moth, Costard, Jaquenetta and Holofernes create a second world of letters, errors and extravagant speech. The play’s verbal difficulty is part of its subject: Latin tags, fashionable rhetoric, puns and misread messages continually ask whether language makes contact or merely advertises the speaker.",
-      "This Astor Library edition presents the complete play with scene summaries, line numbering and explanatory notes. Further material follows the 1598 quarto, courtly entertainment, rhetorical fashion, the play’s French names and setting, its unsettled ending, the songs of spring and winter, and the performance choices that can make its dense wit clear without thinning it out.",
+      "This Astor Library edition presents the complete play with scene summaries, line numbering and explanatory notes. Further material follows the 1598 quarto, courtly entertainment, rhetorical fashion, the play’s French names and setting, its open ending, the songs of spring and winter, and the performance choices that can make its dense wit clear without thinning it out.",
     ],
     facts: [
       { label: "c.1595–96", text: "Most scholars place the comedy in the mid-1590s, near A Midsummer Night’s Dream, Romeo and Juliet and Richard II." },
@@ -346,7 +346,7 @@ module.exports = [
         title: "Wordplay",
         paragraphs: [
           "Nearly everyone in the play wants language to prove rank, learning or emotional distinction. Holofernes shows off his Latin and his corrections, Armado writes love letters in heroic prose, and the lords compose sonnets that make private feeling sound conventionally exquisite. Moth, Costard and the women hear the gaps between those performances and the realities they claim to master.",
-          "The comedy is not simply against difficult words. Berowne and Rosaline can use wit to think quickly and to defend themselves, and the final songs achieve force through precise verbal pattern. The dividing line falls between language that attends to another person and language that treats the listener as an audience for the speaker’s cleverness. That distinction makes delivery, pace and genuine listening central performance choices.",
+          "The comedy has no quarrel with difficult words in themselves. Berowne and Rosaline can use wit to think quickly and to defend themselves, and the final songs achieve force through precise verbal pattern. The dividing line falls between language that attends to another person and language that treats the listener as an audience for the speaker’s cleverness. That distinction makes delivery, pace and real listening central performance choices.",
         ],
       },
       {
@@ -362,7 +362,7 @@ module.exports = [
         title: "‘Our wooing doth not end like an old play’",
         paragraphs: [
           "Marcade’s entrance does more than interrupt a comic ending. News of death changes the Princess’s office, the value of time and the tone in which every preceding vow must be heard. Berowne’s observation that the ending is unlike an old play is accurate, but Rosaline’s answer matters more: the men’s own behaviour has helped prevent the expected conclusion.",
-          "The assigned tasks are carefully fitted to the suitors. Berowne, whose wit can wound, must use it among the sick and dying; the King must live the withdrawal he treated as a route to fame. The songs of the cuckoo and owl then set desire beside labour, weather, marriage and seasonal recurrence. The ending keeps its comedy, and asks what has to happen after the fun if the promises are to last a year.",
+          "The assigned tasks are carefully fitted to the suitors. Berowne, whose wit can wound, must use it among the sick and dying; the King must live the withdrawal he treated as a route to fame. The songs of the cuckoo and owl then set desire beside labour, weather, marriage and seasonal recurrence. There is still comedy at the end, and a question about what has to happen after the fun if the promises are to last a year.",
         ],
       },
     ],

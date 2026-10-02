@@ -31,6 +31,8 @@ The September 2026 copy review removed thousands of sentences that followed the 
 - “the human cost”, “the cost of”
 - “without looking away”, “while refusing to let”
 - “not X but Y”, “rather than”, “both X and Y”, “at once”, “never quite”
+- “X is not simply Y. It is Z”, “not merely”, “not just”, and the reflexive “, not X” tag on the end of a sentence (“a plan, not an outburst”); keep “not” for correcting a real misconception (“It lives!” belongs to Peake’s play, not to the novel)
+- “that is the point”, “is a study in”, “what makes X so Y”, “precisely”, “genuinely”, sentences opening “Note that”
 - the text “asks”, “tests” or “explores” something
 - decorative adverbs such as “quietly”, and adjectives such as “unsettling” or “haunting”
 
