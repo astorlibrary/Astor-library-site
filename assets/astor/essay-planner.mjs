@@ -159,7 +159,7 @@ function render(book) {
       if (paragraph.effect.trim()) lines.push('   ' + paragraph.effect.trim());
       lines.push('');
     });
-    lines.push('Plan made with the Astor Library essay planner — ' + book.href);
+    lines.push('Plan made with the Astor Library essay planner: ' + new URL(book.href, window.location.origin).href);
     const text = lines.join('\n');
 
     const panel = el('section', { class: 'astor-worksheet' });
