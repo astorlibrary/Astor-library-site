@@ -33,6 +33,7 @@ The September 2026 copy review removed thousands of sentences that followed the 
 - “not X but Y”, “rather than”, “both X and Y”, “at once”, “never quite”
 - “X is not simply Y. It is Z”, “not merely”, “not just”, and the reflexive “, not X” tag on the end of a sentence (“a plan, not an outburst”); keep “not” for correcting a real misconception (“It lives!” belongs to Peake’s play, not to the novel)
 - “that is the point”, “is a study in”, “what makes X so Y”, “precisely”, “genuinely”, sentences opening “Note that”
+- “the novel’s method in miniature” and other “X in miniature” summings-up, paragraphs closing on “Read together, these works show…”, and “less like X and more like Y”
 - the text “asks”, “tests” or “explores” something
 - decorative adverbs such as “quietly”, and adjectives such as “unsettling” or “haunting”
 
