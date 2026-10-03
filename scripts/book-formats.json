@@ -177,7 +177,12 @@
   {
    "format": "Paperback",
    "url": "https://astorlibrary.com/go/animal-farm",
-   "image": "/Animal%20Farm.png"
+   "image": "/Animal%20Farm.png",
+   "note": "Not sold on Amazon UK or Amazon US: Animal Farm is still in copyright in the United States, and Amazon does not sell this edition in the UK. Amazon Canada and Amazon Australia have it.",
+   "unavailableIn": [
+    "GB",
+    "US"
+   ]
   }
  ],
  "anne-of-green-gables": [
@@ -1614,13 +1619,20 @@
   {
    "format": "Paperback",
    "url": "https://astorlibrary.com/go/war-of-the-worlds",
-   "image": "/War%20of%20the%20Worlds.png"
+   "image": "/War%20of%20the%20Worlds.png",
+   "note": "Not sold on Amazon UK, where Amazon does not list this edition. Amazon US, Canada and Australia have it.",
+   "unavailableIn": [
+    "GB"
+   ]
   },
   {
    "format": "Hardback",
    "url": "https://astorlibrary.com/go/war-of-the-worlds-hardback",
    "image": "/War%20of%20the%20Worlds%20Hardcover.png",
-   "note": "The complete novel with commentary."
+   "note": "The complete novel with commentary. Not sold on Amazon UK.",
+   "unavailableIn": [
+    "GB"
+   ]
   }
  ],
  "the-wendigo": [

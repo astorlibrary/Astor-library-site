@@ -46,7 +46,7 @@ const presentationRecords = {
     slideCount: 21
   },
   'ghost-stories': {
-    title: 'Ghost Stories: A Window into Human Belief',
+    title: 'Ghost Stories and Belief',
     folder: '/assets/presentations/ghost-stories/',
     backdrop: '/assets/presentation-backdrops/ghost-stories.webp',
     slideCount: 15

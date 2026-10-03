@@ -208,11 +208,13 @@ const resources = [
   },
   {
     category: 'victorian',
-    title: 'Ghost Stories in Literature: A Window into Human Belief',
-    titleHtml: 'Ghost Stories in Literature: A Window into Human Belief',
+    title: 'Ghost Stories and Belief',
+    titleHtml: 'Ghost Stories and Belief',
     description: 'What ghost stories reveal about the people telling them: burial, mourning, the returning dead, and the beliefs under the conventions.',
     image: 'Literature and Ghost Stories.png',
     url: 'https://ghost-stories-a-window-i-5hwf1y6.gamma.site/',
+    // Renamed in October 2026; the address stays so saved links keep working.
+    legacyRoute: '/resources/victorian/ghost-stories-in-literature-a-window-into-human-belief/',
     relatedBooks: ['/books/victorian-ghost-stories/', '/books/the-yellow-wallpaper-and-the-giant-wistaria/', '/books/sleepy-hollow-and-other-stories/', '/books/the-haunted-man-and-the-ghosts-bargain/', '/books/dracula/', '/books/frankenstein/'],
     tags: ['Ghost stories', 'Supernatural belief']
   },

@@ -557,14 +557,13 @@
     "animal-farm": {
       "title": "Animal Farm",
       "format": "Paperback",
+      "note": "Animal Farm is still in copyright in the United States, and Amazon does not sell this edition in the UK.",
       "destinations": {
         "GB": {
-          "url": "https://www.amazon.co.uk/s?k=B0FG1P495G",
-          "kind": "search"
+          "kind": "unavailable"
         },
         "US": {
-          "url": "https://www.amazon.com/s?k=B0FG1P495G",
-          "kind": "search"
+          "kind": "unavailable"
         },
         "CA": {
           "url": "https://www.amazon.ca/dp/B0FG1P495G",
@@ -3921,7 +3920,7 @@
       }
     },
     "sign-of-four": {
-      "title": "The Sign of the Four",
+      "title": "The Sign of Four",
       "format": "Paperback",
       "destinations": {
         "GB": {
@@ -5969,10 +5968,10 @@
     "war-of-the-worlds": {
       "title": "The War of the Worlds",
       "format": "Paperback",
+      "note": "Amazon does not sell this edition in the UK.",
       "destinations": {
         "GB": {
-          "url": "https://www.amazon.co.uk/s?k=B0GTHHS2PS",
-          "kind": "search"
+          "kind": "unavailable"
         },
         "US": {
           "url": "https://www.amazon.com/dp/B0GTHHS2PS",
@@ -5991,10 +5990,10 @@
     "war-of-the-worlds-hardback": {
       "title": "The War of the Worlds",
       "format": "Hardback",
+      "note": "Amazon does not sell this edition in the UK.",
       "destinations": {
         "GB": {
-          "url": "https://www.amazon.co.uk/dp/B0HH8XFQKB",
-          "kind": "product"
+          "kind": "unavailable"
         },
         "US": {
           "url": "https://www.amazon.com/dp/B0HH8XFQKB",

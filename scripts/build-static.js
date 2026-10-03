@@ -899,7 +899,9 @@ function addProductBox(html, source) {
     const edition = format.edition ? '<span> · ' + escapeHtml(format.edition) + '</span>' : '';
     const note = format.note ? '<p class="astor-buy-note">' + escapeHtml(format.note) + '</p>' : '';
     const more = format.page ? ' <a class="astor-buy-more" href="' + escapeHtml(format.page) + '">What is in it</a>' : '';
-    return '<li class="astor-buy-item"><img src="' + escapeHtml(format.image) + '" alt="" width="56" height="84" loading="lazy" decoding="async">' +
+    // Countries where Amazon does not sell this format; site.js greys out the button there.
+    const unavailable = format.unavailableIn ? ' data-unavailable-in="' + escapeHtml(format.unavailableIn.join(' ')) + '"' : '';
+    return '<li class="astor-buy-item"' + unavailable + '><img src="' + escapeHtml(format.image) + '" alt="" width="56" height="84" loading="lazy" decoding="async">' +
       '<div class="astor-buy-text"><p class="astor-buy-format">' + escapeHtml(format.format) + edition + '</p>' + note + '</div>' +
       '<p class="astor-buy-actions"><a class="astor-buy-button" href="' + escapeHtml(format.url) + '" rel="noopener">Buy on Amazon</a>' + more + '</p></li>';
   }).join('');

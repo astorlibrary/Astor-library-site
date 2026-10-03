@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { handleBookRedirect } from '../worker/book-redirects.mjs';
+import { handleBookRedirect, handleStoreCountry } from '../worker/book-redirects.mjs';
 import catalogue from '../worker/book-links.json' with { type: 'json' };
 const sample = { associates: {}, aliases: { shorter: 'sample' }, books: { sample: { title: 'An edition', format: 'Paperback', destinations: {
   GB: { url: 'https://www.amazon.co.uk/dp/B0GPHPD6BN', kind: 'product' },
@@ -57,10 +57,36 @@ test('catalogue destinations use explicit Amazon stores and no inherited trackin
     assert.match(slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
     assert.ok(book.title && book.format && Object.keys(book.destinations).length);
     for (const [country, destination] of Object.entries(book.destinations)) {
+      assert.ok(Object.hasOwn(hosts, country), `${slug}/${country}`);
+      if (destination.kind === 'unavailable') { assert.equal(destination.url, undefined, `${slug}/${country}`); continue; }
       const url = new URL(destination.url);
       assert.equal(url.hostname, hosts[country]); assert.equal(url.protocol, 'https:');
       assert.equal(url.searchParams.has('tag'), false); assert.equal(url.searchParams.has('geniuslink'), false);
       if (destination.kind === 'product') assert.match(url.pathname, /^\/dp\/[A-Z0-9]{10}$/);
     }
   }
+});
+test('a store marked unavailable is named as unavailable and never linked', async () => {
+  const data = { associates: {}, aliases: {}, books: { sample: { title: 'An edition', format: 'Paperback', note: 'Not sold in the UK.', destinations: {
+    GB: { kind: 'unavailable' },
+    US: { url: 'https://www.amazon.com/dp/B0GPHPD6BN', kind: 'product' }
+  } } } };
+  const response = handleBookRedirect(request('/go/sample', 'GB'), data);
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Not sold on Amazon UK\./);
+  assert.match(html, /Not sold in the UK\./);
+  assert.match(html, /href="https:\/\/www\.amazon\.com\/dp\/B0GPHPD6BN"/);
+  assert.doesNotMatch(html, /amazon\.co\.uk/);
+  assert.equal(handleBookRedirect(request('/go/sample?country=UK', 'US'), data).status, 200);
+  assert.equal(handleBookRedirect(request('/go/sample', 'US'), data).status, 302);
+});
+test('the store-country endpoint gives only a two-letter country and is never cached', async () => {
+  const response = handleStoreCountry(request('/api/store-country', 'GB'));
+  assert.deepEqual(await response.json(), { country: 'GB' });
+  assert.match(response.headers.get('Cache-Control'), /no-store/);
+  assert.deepEqual(await handleStoreCountry(request('/api/store-country')).json(), { country: null });
+  assert.deepEqual(await handleStoreCountry(request('/api/store-country', 'T1')).json(), { country: null });
+  assert.equal(handleStoreCountry(request('/api/store-country', 'GB', 'POST')).status, 405);
+  assert.equal(handleStoreCountry(request('/go/sample', 'GB')), null);
 });

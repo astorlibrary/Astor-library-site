@@ -337,6 +337,7 @@
   }
 
   passageHubFilter();
+  markUnavailableFormats();
 
   // Book pages and study editions share the same long-read furniture:
   // a contents line, folded sections, and the shelf at the foot.
@@ -605,6 +606,31 @@
     });
     window.addEventListener('hashchange', () => openFoldAt(window.location.hash));
     openFoldAt(window.location.hash);
+  }
+
+  // Some formats are not sold in some Amazon stores (scripts/book-formats.json
+  // lists them). Ask which store this visitor's links go to and, if it is one
+  // of those, grey the button out; the note beside it says why.
+  function markUnavailableFormats() {
+    const items = document.querySelectorAll('.astor-buy-item[data-unavailable-in]');
+    if (!items.length || !window.fetch) return;
+    const stores = { GB: 'Amazon UK', US: 'Amazon US', CA: 'Amazon Canada', AU: 'Amazon Australia' };
+    fetch('/api/store-country', { headers: { Accept: 'application/json' } })
+      .then(response => (response.ok ? response.json() : null))
+      .then(data => {
+        const country = data && data.country;
+        if (!country) return;
+        for (const item of items) {
+          const button = item.querySelector('a.astor-buy-button');
+          if (!button || !item.dataset.unavailableIn.split(' ').includes(country)) continue;
+          const off = document.createElement('span');
+          off.className = 'astor-buy-button is-unavailable';
+          off.textContent = 'Not on ' + (stores[country] || 'Amazon here');
+          button.replaceWith(off);
+          item.classList.add('is-unavailable');
+        }
+      })
+      .catch(() => {});
   }
 
   function passageHubFilter() {

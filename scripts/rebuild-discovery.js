@@ -852,9 +852,9 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Which is it to-day, morphine or cocaine?”',
-    description: 'The opening of The Sign of the Four: Holmes’s cocaine, Watson’s medical protest and a detective who takes drugs against the dull routine of existence.',
-    href: '/passage-room/sign-of-four-seven-per-cent/', image: '/The%20SIgn%20Of%20Four.png', imageAlt: 'Astor Library The Sign of the Four cover',
-    relatedBooks: ['/books/sign-of-four/'], search: 'Sign of the Four Conan Doyle Holmes cocaine seven per cent solution Watson opening Chapter 1 detective close reading'
+    description: 'The opening of The Sign of Four: Holmes’s cocaine, Watson’s medical protest and a detective who takes drugs against the dull routine of existence.',
+    href: '/passage-room/sign-of-four-seven-per-cent/', image: '/The%20SIgn%20Of%20Four.png', imageAlt: 'Astor Library The Sign of Four cover',
+    relatedBooks: ['/books/sign-of-four/'], search: 'Sign of Four Sign of the Four Conan Doyle Holmes cocaine seven per cent solution Watson opening Chapter 1 detective close reading'
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“The cognomen of Crane was not inapplicable”',
