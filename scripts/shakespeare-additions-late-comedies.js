@@ -181,7 +181,7 @@ module.exports = [
       },
       {
         label: "Early texts",
-        text: "First printed in 1609 and later included among the tragedies in the 1623 First Folio; the quarto survives with strikingly contradictory claims about performance."
+        text: "First printed in 1609 and later placed between the histories and the tragedies in the 1623 First Folio; the quarto survives with strikingly contradictory claims about performance."
       },
       {
         label: "Principal sources",
@@ -254,7 +254,7 @@ module.exports = [
       {
         label: "Printing",
         title: "The 1609 quarto",
-        body: "The 1609 quarto exists with different preliminary matter. One title page associates the play with performance at the Globe, while an address to the reader in some copies presents it as a work untouched by the ordinary stage. The First Folio prints it among the tragedies, but its position and absence from the preliminary catalogue add to the uncertainties of its textual history."
+        body: "The 1609 quarto exists with different preliminary matter. One title page associates the play with performance at the Globe, while an address to the reader in some copies presents it as a work untouched by the ordinary stage. The First Folio calls it a tragedy but prints it between the histories and the tragedies, and leaves it out of the preliminary catalogue, which adds to the uncertainties of its textual history."
       },
       {
         label: "Genre",
