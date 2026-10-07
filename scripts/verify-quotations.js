@@ -11,7 +11,11 @@
 // ellipsis in a quotation splits it into parts that must appear in order and
 // close together. The same check runs on `openingLine`.
 //
-// Exit code 1 if anything is missing, so it can gate a build.
+// Standard Ebooks texts mark each chapter with a section id, so for those
+// records the quotation's reference is checked too: a quotation filed under
+// "Chapter XII" or "Book II, Chapter 3" has to be found in that chapter.
+//
+// Exit code 1 if anything is missing or misfiled, so it can gate a build.
 
 const fs = require('fs');
 const path = require('path');
@@ -42,6 +46,9 @@ function textOf(body, url) {
   // In the MIT Shakespeare a stage direction is a paragraph in italics, and
   // quotations from the plays leave it out.
   if (/shakespeare\.mit\.edu/.test(url)) text = text.replace(/<p>\s*<i>[\s\S]*?<\/i>\s*<\/p>/gi, ' ');
+  // A chapter's section id (chapter-12, chapter-1-3, letter-2, book-9)
+  // becomes a word that survives normalising, for the reference check.
+  text = text.replace(/<section\b[^>]*\bid="((?:chapter|letter|book)-\d+(?:-\d+)*)"[^>]*>/gi, (_, id) => ' qzq' + id.replace(/-/g, 'x') + 'qzq ');
   return text
     // Block elements part words; inline ones (an italic title, emphasis on a
     // syllable) can sit inside a word, so they are removed without a space.
@@ -65,10 +72,9 @@ async function sourceFor(url) {
 
 // Every part of the quotation, in order, each starting within a few hundred
 // words of the last.
-function found(source, text) {
+function locate(source, text) {
   const parts = String(text).split(/\s*(?:…|\.\.\.|\[\.\.\.\]|\[…\])\s*/).map(normalise).filter(Boolean);
-  if (!parts.length) return false;
-  let from = 0;
+  if (!parts.length) return -1;
   for (let start = source.indexOf(parts[0]); start !== -1; start = source.indexOf(parts[0], start + 1)) {
     let at = start + parts[0].length;
     let ok = true;
@@ -77,10 +83,46 @@ function found(source, text) {
       if (next === -1 || next - at > 2500) { ok = false; break; }
       at = next + part.length;
     }
-    if (ok) return true;
-    from = start + 1;
+    if (ok) return start;
   }
-  return false;
+  return -1;
+}
+
+const ROMAN = { i: 1, v: 5, x: 10, l: 50, c: 100 };
+const ORDINAL = { first: 1, second: 2, third: 3, fourth: 4, fifth: 5, sixth: 6 };
+function numberOf(value) {
+  if (/^\d+$/.test(value)) return Number(value);
+  const digits = value.toLowerCase().split('').map(letter => ROMAN[letter]);
+  return digits.reduce((total, digit, index) => total + (digit < (digits[index + 1] || 0) ? -digit : digit), 0);
+}
+
+// The section id a reference points to, in the marker form textOf leaves:
+// "Chapter XII" -> chapterx12, "Book II, Chapter 3" -> chapterx2x3.
+function sectionFor(reference) {
+  const ref = String(reference || '').trim();
+  const n = '([IVXLC]+|\\d+)';
+  let match;
+  if ((match = ref.match(new RegExp('^(?:Chapter|Stave) ' + n + '$')))) return 'chapterx' + numberOf(match[1]);
+  if ((match = ref.match(new RegExp('^(?:Part|Book|Volume) ' + n + ', [Cc]hapter ' + n + '$')))) return 'chapterx' + numberOf(match[1]) + 'x' + numberOf(match[2]);
+  if ((match = ref.match(/^(First|Second|Third) Period, Chapter ([IVXLC]+)$/))) return 'chapterx' + ORDINAL[match[1].toLowerCase()] + 'x' + numberOf(match[2]);
+  if ((match = ref.match(/^(First|Second|Third) Period, (\w+) Narrative, Chapter ([IVXLC]+)$/))) return 'chapterx' + ORDINAL[match[1].toLowerCase()] + 'x' + ORDINAL[match[2].toLowerCase()] + 'x' + numberOf(match[3]);
+  if ((match = ref.match(new RegExp('^Letter ' + n + '$')))) return 'letterx' + numberOf(match[1]);
+  if ((match = ref.match(new RegExp('^Book ' + n + '$')))) return 'bookx' + numberOf(match[1]);
+  return null;
+}
+
+// The last section marker before a position in the source.
+function sectionAt(markers, index) {
+  let last = null;
+  for (const marker of markers) {
+    if (marker.index > index) break;
+    last = marker.id;
+  }
+  return last;
+}
+
+function found(source, text) {
+  return locate(source, text) !== -1;
 }
 
 async function main() {
@@ -91,6 +133,8 @@ async function main() {
   let checked = 0;
   let missing = 0;
   let skipped = 0;
+  let misfiled = 0;
+  let placed = 0;
   for (const name of files) {
     const book = JSON.parse(fs.readFileSync(path.join(dir, name), 'utf8'));
     const urls = [].concat(book.sourceText?.url || []);
@@ -100,15 +144,30 @@ async function main() {
       ...(book.openingLine ? [{ id: 'openingLine', text: book.openingLine }] : []),
       ...(book.quotations || [])
     ];
-    const failures = lines.filter(line => !found(source, line.text));
+    const markers = [...source.matchAll(/qzq([a-z0-9]+?)qzq/g)].map(match => ({ index: match.index, id: match[1] }));
+    const failures = [];
+    for (const line of lines) {
+      const index = locate(source, line.text);
+      if (index === -1) { failures.push(line); continue; }
+      const wantedSection = markers.length ? sectionFor(line.reference) : null;
+      const actualSection = wantedSection && sectionAt(markers, index);
+      // Compare only like with like: a "Chapter 12" reference against a
+      // chapter-12 marker, not against a book's chapter-2-12.
+      if (!wantedSection || !actualSection || actualSection.replace(/\d+/g, 'n') !== wantedSection.replace(/\d+/g, 'n')) continue;
+      placed += 1;
+      if (actualSection !== wantedSection) {
+        misfiled += 1;
+        console.log('  WRONG PLACE ' + line.id + ': filed under ' + line.reference + ', found in ' + actualSection.replace(/^([a-z]+)x/, '$1 ').replace(/x/g, '-'));
+      }
+    }
     checked += lines.length;
     missing += failures.length;
     console.log(book.slug + ': ' + (lines.length - failures.length) + '/' + lines.length + ' found');
     for (const line of failures) console.log('  NOT FOUND ' + line.id + ': ' + String(line.text).slice(0, 90));
   }
-  console.log(checked + ' checked, ' + missing + ' missing' + (skipped ? ', ' + skipped + ' records name no source URL' : ''));
+  console.log(checked + ' checked, ' + missing + ' missing; ' + placed + ' chapter references checked, ' + misfiled + ' wrong' + (skipped ? ', ' + skipped + ' records name no source URL' : ''));
   if (wanted.length && !files.length) { console.error('No such record.'); process.exit(1); }
-  if (missing) process.exit(1);
+  if (missing || misfiled) process.exit(1);
 }
 
 main().catch(error => { console.error(error.message); process.exit(1); });
