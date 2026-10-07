@@ -143,7 +143,9 @@ const stockPhrases = [
   /\b(?:the|this) (?:play|novel|poem|book|story|text|narrative|sequence|collection|scene|chapter|ending|sentence|line|image|stanza|speech) refuses\b/,
   /\bnot (?:simply|merely)\b/,
   /\b(?:is|was) the (?:whole )?point\b(?! (?:at|of|where|when)\b)/,
-  /\bis a study (?:in|of)\b/
+  /\bis a study (?:in|of)\b/,
+  // A sentence that opens by telling the reader to notice something; say the thing.
+  /(?:^|[.!?] )(?:note|notice) (?:also |too )?that\b/i
 ];
 function stockPhraseFailures(fileName, text) {
   const found = [];
