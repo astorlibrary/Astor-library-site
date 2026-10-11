@@ -20,6 +20,14 @@ import { quotationKey, quotationFor, firstSentence, drawing, quizName, shortTitl
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
 
+// In Order the plot the labels (1.2, Chapter III, Act I) would give the order
+// away, so rows show their current position until the answer is checked and
+// the move buttons are named by the start of each event.
+const brief = text => {
+  const words = String(text).split(/\s+/);
+  return words.length > 6 ? words.slice(0, 6).join(' ') + '…' : words.join(' ');
+};
+
 export class QuizRound {
   // options: { gameId, book (full record or null), meta (shelf entry), practice,
   //            reshuffle(), onFinish(result), ownEnd, next(book) }
@@ -204,18 +212,18 @@ export class QuizRound {
       clear(list);
       this.order.forEach((item, position) => {
         list.append(el('li', { class: 'rv-order-row' }, [
-          el('span', { class: 'rv-order-label', text: item.label }),
+          el('span', { class: 'rv-order-label', text: String(position + 1) }),
           el('span', { class: 'rv-order-text', text: item.text }),
           el('span', { class: 'rv-order-moves' }, [
             el('button', {
-              class: 'astor-game-move', type: 'button', 'aria-label': 'Move "' + item.label + '" earlier',
+              class: 'astor-game-move', type: 'button', 'aria-label': 'Move "' + brief(item.text) + '" earlier',
               disabled: position === 0, html: '&uarr;',
-              onclick: () => { [this.order[position - 1], this.order[position]] = [this.order[position], this.order[position - 1]]; draw(item.id, 'up'); announce(this.live, item.label + ' moved to position ' + position); }
+              onclick: () => { [this.order[position - 1], this.order[position]] = [this.order[position], this.order[position - 1]]; draw(item.id, 'up'); announce(this.live, brief(item.text) + ' moved to position ' + position); }
             }),
             el('button', {
-              class: 'astor-game-move', type: 'button', 'aria-label': 'Move "' + item.label + '" later',
+              class: 'astor-game-move', type: 'button', 'aria-label': 'Move "' + brief(item.text) + '" later',
               disabled: position === this.order.length - 1, html: '&darr;',
-              onclick: () => { [this.order[position + 1], this.order[position]] = [this.order[position], this.order[position + 1]]; draw(item.id, 'down'); announce(this.live, item.label + ' moved to position ' + (position + 2)); }
+              onclick: () => { [this.order[position + 1], this.order[position]] = [this.order[position], this.order[position + 1]]; draw(item.id, 'down'); announce(this.live, brief(item.text) + ' moved to position ' + (position + 2)); }
             })
           ])
         ]));
@@ -276,6 +284,8 @@ export class QuizRound {
       [...this.container.querySelectorAll('.rv-order-row')].forEach((row, position) => {
         const right = correct || this.order[position].id === question.answer[position];
         row.classList.add(right ? 'is-right' : 'is-wrong');
+        const label = row.querySelector('.rv-order-label');
+        if (label) label.textContent = this.order[position].label;
         row.querySelector('.rv-order-moves')?.replaceWith(el('span', {
           class: 'rv-order-verdict', text: right ? 'Right place' : 'Belongs ' + ordinal(question.answer.indexOf(this.order[position].id) + 1)
         }));
