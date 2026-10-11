@@ -37,7 +37,11 @@ const pennants = (width,y,colourList,dip=65) => {
 };
 const moon = (x,y,r,colour='#f4d89a') => `<circle cx="${x}" cy="${y}" r="${r+15}" fill="${colour}" opacity=".05"/><circle cx="${x}" cy="${y}" r="${r+7}" fill="${colour}" opacity=".08"/><circle cx="${x}" cy="${y}" r="${r}" fill="${colour}"/><circle cx="${x-r*.35}" cy="${y-r*.13}" r="${r*.19}" fill="#caa876" opacity=".28"/><circle cx="${x+r*.2}" cy="${y+r*.43}" r="${r*.24}" fill="#caa876" opacity=".25"/>`;
 const wave = (y,colour) => `<path d="M8 ${y}q42-28 84 0t84 0t84 0t84 0t84 0t84 0t84 0v75H8Z" fill="${colour}"/>`;
-const themes = new Set(['autumn','halloween','bonfire-night','christmas','winter','summer','valentines-day','fourth-of-july']);
+const blossom = (x,y,scale,colour='#f5cbd3',centre='#e0a243',angle=0) => group(x,y,scale,Array.from({length:5},(_,i)=>`<ellipse cx="0" cy="-12" rx="8.5" ry="12" fill="${colour}" transform="rotate(${i*72})"/>`).join('')+`<circle r="4.5" fill="${centre}"/>`,angle);
+const daffodil = (x,y,scale,angle=0) => group(x,y,scale,`<path d="M0 0V-118" stroke="#5c8c4c" stroke-width="5"/><path d="M-3 0Q-31-52-13-98" stroke="#6d9b57" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M3 0Q27-44 16-84" stroke="#4f7f45" stroke-width="6" fill="none" stroke-linecap="round"/>${Array.from({length:6},(_,i)=>`<ellipse cx="0" cy="-137" rx="9" ry="18" fill="${i%2?'#f2cf54':'#f7dd6f'}" transform="rotate(${i*60} 0 -120)"/>`).join('')}<circle cx="0" cy="-120" r="11" fill="#ea9630"/><circle cx="0" cy="-120" r="5.5" fill="#cf7420"/>`,angle);
+const bird = (x,y,scale,colour='#35574a') => group(x,y,scale,`<path d="M-16 0Q-8-9 0 0Q8-9 16 0" stroke="${colour}" stroke-width="3" fill="none" stroke-linecap="round"/>`);
+const poppy = (x,y,scale,angle=0,stem=true) => group(x,y,scale,`${stem?'<path d="M0 6Q4 40 0 74" stroke="#5d6b4a" stroke-width="3.5" fill="none"/>':''}${Array.from({length:4},(_,i)=>`<ellipse cx="0" cy="-11" rx="15" ry="13" fill="${i%2?'#b3302b':'#c93a31'}" transform="rotate(${i*90+20})"/>`).join('')}<circle r="6.5" fill="#1f1c1d"/><circle r="2.2" fill="#3a3532"/>`,angle);
+const themes = new Set(['autumn','halloween','bonfire-night','christmas','winter','spring','summer','valentines-day','fourth-of-july','remembrance']);
 const normalise = theme => themes.has(theme) ? theme : 'autumn';
 
 function scene(theme) {
@@ -54,6 +58,12 @@ function scene(theme) {
       break;
     case 'winter':
       body = `${moon(432,111,57,'#e6f0e7')}${snowflake(106,107,1,'#d0e5e8',15)}${snowflake(518,283,.73)}${snowflake(80,353,.64)}${snowflake(295,63,.48)}${flecks('#f4faf2')}${fir(494,505,1.33,'#3b7282',true)}${fir(545,526,.87,'#5b8a95',true)}${fir(83,521,1.09,'#447f8a',true)}${fir(36,526,.58,'#789fa6',true)}<path d="M12 525Q138 494 293 529T588 522V552H12Z" fill="#accbd0"/><path d="M12 549Q154 524 318 547T588 537V567H12Z" fill="#e5efeb"/>${snowflake(393,536,.4,'#588897')}${snowflake(166,548,.3,'#588897')}${spark(510,177,8,'#f3f6e8')}`;
+      break;
+    case 'spring':
+      body = `<circle cx="452" cy="116" r="78" fill="#f4dc8c" opacity=".12"/><circle cx="452" cy="116" r="52" fill="#f3d983"/><path d="M-4 58Q120 70 196 150T300 236" fill="none" stroke="#7a5a3e" stroke-width="9" stroke-linecap="round"/><path d="M118 82Q160 50 214 52M196 150Q236 128 262 92M88 66Q96 30 132 14" fill="none" stroke="#7a5a3e" stroke-width="5" stroke-linecap="round"/>${[[44,62,.95],[96,92,.8],[132,22,.75],[162,74,.9],[214,54,.7],[206,140,.95],[262,94,.72],[252,196,.85],[296,232,.8],[150,118,.6]].map(([x,y,r],i)=>blossom(x,y,r,i%3?'#f5cbd3':'#fbe7ea',i%2?'#e0a243':'#d98c3a',i*23)).join('')}${bird(388,206,1.2)}${bird(434,236,.85)}${bird(522,214,.7)}${flecks('#f9dfe4')}<path d="M8 548Q160 498 300 532T592 512V600H8Z" fill="#4f8a5d"/><path d="M8 572Q170 540 330 566T592 556V600H8Z" fill="#6aa56f"/>${daffodil(70,560,.9,-6)}${daffodil(122,566,.72,7)}${daffodil(476,560,.86,5)}${daffodil(530,570,.66,-8)}${daffodil(424,572,.58,-4)}${blossom(300,566,.55,'#fbf1e2','#e0a243')}${blossom(214,578,.45,'#fbf1e2','#e0a243')}`;
+      break;
+    case 'remembrance':
+      body = `${moon(448,330,52,'#e9dcc2')}<circle cx="448" cy="330" r="120" fill="#e9dcc2" opacity=".035"/>${flecks('#d9ccb5')}<path d="M8 452Q170 428 300 446T592 430V600H8Z" fill="#2e2a29"/><path d="M8 500Q190 470 330 494T592 482V600H8Z" fill="#383231"/>${Array.from({length:26},(_,i)=>`<path d="M${(24+i*22).toFixed(0)} ${(474+(i%3)*6).toFixed(0)}l${i%2?4:-4}-${18+(i%4)*6}" stroke="#7d7457" stroke-width="2" stroke-linecap="round"/>`).join('')}${poppy(84,486,1.05,-8)}${poppy(150,512,.82,6)}${poppy(214,494,.68,-4)}${poppy(398,500,.74,5)}${poppy(472,486,1,-6)}${poppy(540,510,.84,8)}${poppy(300,528,.6,0)}`;
       break;
     case 'summer':
       body = `<circle cx="448" cy="108" r="64" fill="#edc968"/>${Array.from({length:12},(_,i)=>`<path d="M448 17v-16" stroke="#edc968" stroke-width="4" transform="rotate(${i*30} 448 108)"/>`).join('')}${group(20,15,.94,pennants(590,0,['#edc968','#e88972','#e8eed8','#71b7b1'],53))}<path d="M45 294q25-28 47 0q24-28 48 0m346-53q17-20 35 0q18-20 35 0" stroke="#f9edca" stroke-width="3" fill="none"/>${wave(480,'#468f94')}${wave(509,'#73b6b3')}${wave(541,'#a8d6c7')}<path d="M452 498V361" stroke="#f1ddb4" stroke-width="4"/><path d="m443 375-69 104h69Z" fill="#f5e7c8"/><path d="m461 395 49 84h-49Z" fill="#e9ac74"/><path d="m370 487 153 0-20 25H394Z" fill="#e9d6af"/><path d="M65 564q196-15 431 5" stroke="#eadcb2" stroke-width="2" fill="none"/>${star(93,542,26,'#eed79b')}`;
@@ -77,6 +87,8 @@ function emblem(theme) {
     case 'halloween':body=pumpkin(50,37,.46,true);break;
     case 'bonfire-night':body='<path d="M50 60C15 46 32 21 39 15C37 35 48 23 50 1C60 13 70 24 63 37C71 31 75 30 75 22C93 48 65 63 50 60Z" fill="#d05e30"/><path d="M50 59C32 49 47 34 51 27C51 41 70 49 50 59Z" fill="#f1bc5a"/>';break;
     case 'winter':body=snowflake(50,32,.89,'#4b8495');break;
+    case 'spring':body=blossom(50,32,1.15,'#e9a5b5','#d9922f');break;
+    case 'remembrance':body=poppy(50,32,1.1,0,false);break;
     case 'summer':body='<circle cx="50" cy="29" r="17" fill="#dca944"/>'+Array.from({length:10},(_,i)=>'<path d="M50 4V-1" stroke="#dca944" stroke-width="2" transform="rotate('+(i*36)+' 50 29)"/>').join('')+'<path d="M9 52q10-8 20 0t20 0t20 0t20 0" stroke="#338991" stroke-width="3" fill="none"/>';break;
     case 'valentines-day':body=rose(50,33,.66,'#bd405b');break;
     case 'fourth-of-july':body=star(50,30,27,'#345e82')+star(19,37,10,'#c74b57')+star(81,37,10,'#c74b57');break;
@@ -101,6 +113,14 @@ function garland(theme) {
     case 'winter':
       body=`<path d="M0 0H1440V9Q1320 38 1200 9T960 9T720 9T480 9T240 9T0 9Z" fill="#d9e9e7"/>`;
       for(let i=0;i<13;i++)body+=snowflake(20+i*117,23+(i%3)*14,.35+(i%2)*.2,'#c5e0e2',i*13);break;
+    case 'spring':
+      body='<path d="M0 6Q180 70 360 6T720 6T1080 6T1440 6" fill="none" stroke="#8a6a4a" stroke-width="2"/>';
+      for(let i=0;i<16;i++){const x=24+i*93,t=(x%360)/360,y=6+128*t*(1-t);body+=blossom(x,y,.62+(i%3)*.12,i%2?'#f2c4cf':'#fbe5e9',i%2?'#d9922f':'#e0a243',i*17);}
+      break;
+    case 'remembrance':
+      body='<path d="M0 4H1440" stroke="#7d6e5a" stroke-width="1.5"/>';
+      for(let i=0;i<9;i++)body+=poppy(80+i*160,30+(i%2)*10,.62,(i%2?7:-7),false);
+      break;
     case 'summer':
       body=pennants(1440,-29,['#e6c05e','#f1e6cb','#dd9174','#7fbbb1'],48);break;
     case 'valentines-day':

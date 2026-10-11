@@ -23,6 +23,8 @@
 .theme-summer{--night:#065460;--ink:#204b4d;--accent:#ffe095;--ribbon:#c9553b;--glow:#208884;--stripe:#f0bc48;--paper:#fff9e9;--stage:#e1ecdf}
 .theme-valentines-day{--night:#681b37;--ink:#642740;--accent:#ffd5ca;--ribbon:#ac3555;--glow:#a64460;--stripe:#cf6f85;--stage:#f5dfdf}
 .theme-fourth-of-july{--night:#14345b;--ink:#253d59;--accent:#fff0cb;--ribbon:#b13240;--glow:#315b84;--stripe:#ba3d4a;--paper:#fff9ee;--stage:#e0e6ed}
+.theme-spring{--night:#24503f;--ink:#2b4a3a;--accent:#f4d77c;--paper:#fbf8ee;--soft:#e4ecd8;--light:#fbf8e9;--muted:#52665a;--ribbon:#c46a86;--glow:#3c7a5a;--stripe:#eab7c4;--stage:#e3eedb}
+.theme-remembrance{--night:#262427;--ink:#352f2c;--accent:#e2c9a0;--paper:#f7f2ea;--soft:#e5dccf;--light:#f6efe3;--muted:#5e564f;--ribbon:#a8322b;--glow:#4a3c35;--stripe:#a8322b;--stage:#e6dfd4}
 .season-hero{background:radial-gradient(ellipse at 85% 35%,var(--glow),transparent 60%),var(--night);border-bottom:0}
 .season-hero::before{inset:18px;border-color:color-mix(in srgb,var(--accent) 38%,transparent);z-index:1}
 .season-hero::after{content:"";position:absolute;inset:auto 0 0;height:10px;background:repeating-linear-gradient(135deg,var(--ribbon) 0 20px,var(--accent) 20px 23px,var(--night) 23px 43px,var(--accent) 43px 46px)}
@@ -76,12 +78,13 @@
 .season-directory .season-tile-covers img{height:100%;max-width:none}
 .season-directory .season-tile>.season-garland{height:67px}
 .season-directory-hero{background:radial-gradient(ellipse at 10% 20%,#79432466,transparent 40%),radial-gradient(ellipse at 90% 80%,#28644788,transparent 40%),#302219}
-.season-directory-hero::after{content:"";position:absolute;inset:auto 0 0;height:8px;background:repeating-linear-gradient(90deg,#e79b42 0 12.5%,#9050a1 12.5% 25%,#d05c3d 25% 37.5%,#599772 37.5% 50%,#add3e6 50% 62.5%,#e9c863 62.5% 75%,#d88297 75% 87.5%,#587eab 87.5% 100%)}
+.season-directory-hero::after{content:"";position:absolute;inset:auto 0 0;height:8px;background:repeating-linear-gradient(90deg,#e79b42 0 11.11%,#9050a1 11.11% 22.22%,#d05c3d 22.22% 33.33%,#599772 33.33% 44.44%,#add3e6 44.44% 55.56%,#9cc78a 55.56% 66.67%,#e9c863 66.67% 77.78%,#d88297 77.78% 88.89%,#587eab 88.89% 100%)}
 .theme-christmas .season-book-image{background-image:radial-gradient(ellipse at 50% 60%,rgba(var(--surface-rgb,255,248,233),0.8745),transparent 65%),repeating-linear-gradient(90deg,transparent 0 33px,#1a60440a 33px 36px),repeating-linear-gradient(0deg,transparent 0 33px,#1a604409 33px 36px)}
 .theme-halloween .season-book-image{background-image:radial-gradient(circle at 90% 8%,#ffb65880,transparent 28%),radial-gradient(ellipse at 50% 100%,color-mix(in srgb,#d8c8d1 var(--tint-amount,100%),var(--tint-ground,#d8c8d1)),transparent 80%)}
 .theme-winter .season-book-image{background-image:radial-gradient(circle,rgba(var(--surface-rgb,255,255,255),0.6863) 1.3px,transparent 1.6px),linear-gradient(160deg,color-mix(in srgb,#c8dee7 var(--tint-amount,100%),var(--tint-ground,#c8dee7)),color-mix(in srgb,#edf5f5 var(--tint-amount,100%),var(--tint-ground,#edf5f5)));background-size:26px 30px,100% 100%}
 .theme-summer .season-book-image{background-image:repeating-linear-gradient(90deg,#ffffff4d 0 20px,transparent 20px 40px)}
 .theme-fourth-of-july .season-book-image{background-image:repeating-linear-gradient(0deg,#fff9ee 0 21px,#b1324017 21px 42px)}
+.theme-spring .season-book-image{background-image:radial-gradient(circle at 18% 14%,#f5cbd366,transparent 30%),radial-gradient(circle at 84% 86%,#f4d77c4d,transparent 34%)}
 @media(max-width:1000px){.season-hero-grid{min-height:510px}.season-art{min-height:510px}.season-breadcrumb{padding-top:100px}.season-note{padding:85px 32px 32px}.season-book-image{padding:28px}.season-tile-stage{max-width:400px;align-self:center}}
 @media(max-width:650px){.season-hero::before{inset:9px}.season-hero>.season-garland{height:90px}.season-breadcrumb{padding:91px 0 22px;font-size:9px;gap:9px}.season-hero-grid{gap:8px;padding-top:0;padding-bottom:44px}.season-hero h1{font-size:clamp(57px,12vw,76px)}.season-art{min-height:0;aspect-ratio:1/1;width:100%;max-width:430px;margin-top:2px}.season-cover-fan{inset:24% 5% 22%}.season-cover{flex-basis:34%}.season-art-caption{bottom:-18px;font-size:8px}.season-period{margin-bottom:2px}.season-introduction{padding:34px 0}.season-section-mark{margin-bottom:16px}.season-section-mark .season-emblem{height:48px;width:75px}.season-book-image{padding:26px 14px 20px}.season-book-image>.season-emblem{width:48px;height:33px;right:4px;top:4px;opacity:.75}.season-book-image img{height:180px}.season-book-image::after{inset:5px}.season-note{padding:80px 23px 28px;gap:20px}.season-note>.season-garland{height:65px}.season-tile{padding-top:64px}.season-directory .season-tile{padding:70px 27px 27px}.season-tile-stage{min-height:0}.season-tile-covers img{height:100%}.season-note p{font-size:16px}.season-jump a{line-height:1.7}.season-section-head h2{font-size:38px}}
 @media(max-width:374px){.season-book-image{padding:16px 10px}.season-book-image img{height:auto}.season-book-image>.season-emblem{width:36px;height:24px;opacity:.6}.season-breadcrumb{font-size:8px}.season-hero-actions{gap:18px}.season-art{min-height:0}.season-art-caption{letter-spacing:.08em}.season-tile{padding-left:22px;padding-right:22px}.season-directory .season-tile{padding-left:23px;padding-right:23px}.season-directory .season-tile h3{font-size:43px}.season-note{outline-width:3px}}
@@ -109,6 +112,16 @@
 .home-season .season-shelf a:hover img,.home-season .season-shelf a:focus-visible img{transform:translateY(-6px)}
 .home-season .season-shelf small{font:800 9px/1.4 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-transform:uppercase;letter-spacing:.13em;color:var(--accent)}
 .home-season .season-shelf strong{font:400 15px/1.18 Georgia,'Times New Roman',serif}
+/* A one-line note for a smaller occasion on the day. The calendar script
+   fills it in; without the script it stays hidden. */
+.home-season .home-occasion{display:inline-block;max-width:600px;margin:0 0 20px;padding:7px 14px;border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);border-radius:18px;font:500 14px/1.45 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--light)}
+.home-season .home-occasion[hidden]{display:none}
+.home-season .home-occasion a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.home-season .home-occasion-line{display:block}
+@media(max-width:620px){.home-season .home-occasion{font-size:13px;margin-bottom:16px}.home-season .home-occasion-line+.home-occasion-line{display:none}}
+/* While the calendar swaps in the right hero for the day, the old one is
+   kept out of sight so it never flashes past. */
+.home-season.is-switching{visibility:hidden}
 @media(max-width:1000px){
   .home-season>.season-wrap{padding-top:64px}
   .home-season .season-hero-grid{grid-template-columns:1fr}

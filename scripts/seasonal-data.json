@@ -130,8 +130,6 @@
       "/books/m-r-james-collected-ghost-stories/"
     ],
     "home": {
-      "from": "10-01",
-      "to": "10-31",
       "shelfTitle": "Six for October",
       "shelf": [
         {
@@ -307,6 +305,46 @@
           "href": "https://www.parliament.uk/about/faqs/house-of-commons-faqs/gunpowder-plot/"
         }
       ]
+    },
+    "home": {
+      "shelfTitle": "Six for the Fifth",
+      "heroBooks": [
+        "/books/a-victorian-bonfire-night/",
+        "/books/macbeth/",
+        "/books/the-man-who-was-thursday/"
+      ],
+      "shelf": [
+        {
+          "href": "/books/a-victorian-bonfire-night/",
+          "label": "The history of the Fifth",
+          "title": "A Victorian Bonfire Night"
+        },
+        {
+          "href": "/books/macbeth/",
+          "label": "The Porter’s equivocator",
+          "title": "Macbeth"
+        },
+        {
+          "href": "/books/julius-caesar/",
+          "label": "A conspiracy in Rome",
+          "title": "Julius Caesar"
+        },
+        {
+          "href": "/books/henry-v/",
+          "label": "The Southampton plot",
+          "title": "Henry V"
+        },
+        {
+          "href": "/books/the-man-who-was-thursday/",
+          "label": "Anarchists and dynamite",
+          "title": "The Man Who Was Thursday"
+        },
+        {
+          "href": "/books/the-prince/",
+          "label": "Machiavelli on conspiracies",
+          "title": "The Prince"
+        }
+      ]
     }
   },
   {
@@ -395,7 +433,42 @@
     },
     "excludedResources": [
       "/resources/victorian/how-literature-shaped-halloween/"
-    ]
+    ],
+    "home": {
+      "shelfTitle": "Six for Christmas",
+      "shelf": [
+        {
+          "href": "/books/a-christmas-carol/",
+          "label": "Dickens, 1843",
+          "title": "A Christmas Carol"
+        },
+        {
+          "href": "/books/a-victorian-christmas/",
+          "label": "Customs and carols",
+          "title": "A Victorian Christmas"
+        },
+        {
+          "href": "/books/american-christmas-stories/",
+          "label": "American Christmas",
+          "title": "American Christmas Stories"
+        },
+        {
+          "href": "/books/m-r-james-collected-ghost-stories/",
+          "label": "Ghost stories for Christmas",
+          "title": "M. R. James: Ghost Stories"
+        },
+        {
+          "href": "/books/the-wind-in-the-willows/",
+          "label": "Carol-singers at Mole End",
+          "title": "The Wind in the Willows"
+        },
+        {
+          "href": "/books/twelfth-night/",
+          "label": "The end of the season",
+          "title": "Twelfth Night"
+        }
+      ]
+    }
   },
   {
     "slug": "winter",
@@ -468,7 +541,150 @@
     ],
     "excludedResources": [
       "/resources/victorian/how-literature-shaped-halloween/"
-    ]
+    ],
+    "home": {
+      "shelfTitle": "Six for winter",
+      "shelf": [
+        {
+          "href": "/books/ethan-frome/",
+          "label": "A New England winter",
+          "title": "Ethan Frome"
+        },
+        {
+          "href": "/books/call-of-the-wild/",
+          "label": "The Yukon trail",
+          "title": "The Call of the Wild"
+        },
+        {
+          "href": "/books/frankenstein/",
+          "label": "Walton’s Arctic",
+          "title": "Frankenstein"
+        },
+        {
+          "href": "/books/the-wind-in-the-willows/",
+          "label": "Snow in the Wild Wood",
+          "title": "The Wind in the Willows"
+        },
+        {
+          "href": "/books/selected-poems-of-samuel-taylor-coleridge/",
+          "label": "Frost at Midnight",
+          "title": "Coleridge: Selected Poems"
+        },
+        {
+          "href": "/books/the-winters-tale/",
+          "label": "A sad tale for winter",
+          "title": "The Winter’s Tale"
+        }
+      ]
+    }
+  },
+  {
+    "slug": "spring",
+    "title": "Spring at Astor",
+    "shortTitle": "Spring",
+    "kicker": "Spring-cleaning · Spring songs · May mornings",
+    "deck": "The Mole’s spring-cleaning, Wordsworth’s first mild day of March, the spring song that ends Love’s Labour’s Lost and Tess walking to Talbothays on a May morning.",
+    "period": "March–May",
+    "theme": "spring",
+    "intro": [
+      "Spring in these books is usually a particular day. The Mole abandons his spring-cleaning for the river bank; Wordsworth writes to his sister on the first mild day of March; Anne of Green Gables lives through a reluctant Canadian spring; Tess sets out for Talbothays on a thyme-scented May morning; Elizabeth Bennet is at Hunsford, a short walk from Rosings, over Easter.",
+      "The poems and plays use the season as a convention to play with. Shakespeare ends Love’s Labour’s Lost with a song for spring and another for winter; Blake’s ‘Spring’ belongs to Songs of Innocence; Milton’s Eden has a perpetual spring that the Fall brings to an end. The pages below gather the editions with the guides and close readings that go with them."
+    ],
+    "heroBooks": [
+      "/books/the-wind-in-the-willows/",
+      "/books/lyrical-ballads/",
+      "/books/tess-of-the-durbervilles/"
+    ],
+    "sections": [
+      {
+        "title": "The season in the novels",
+        "description": "Grahame opens with the Mole’s spring-cleaning, Montgomery gives a chapter to the Canadian spring, Hardy sends Tess to the dairy in May and Austen brings Darcy to Rosings for Easter. Werther’s first letter is dated 4 May.",
+        "books": [
+          "/books/the-wind-in-the-willows/",
+          "/books/anne-of-green-gables/",
+          "/books/tess-of-the-durbervilles/",
+          "/books/pride-and-prejudice/",
+          "/books/the-sorrows-of-young-werther/"
+        ]
+      },
+      {
+        "title": "Spring in poetry",
+        "description": "Wordsworth’s ‘Lines Written in Early Spring’ and ‘To My Sister’, Blake’s ‘Spring’ and ‘The Echoing Green’, Shakespeare’s sonnet of absence in spring, and the perpetual spring of Milton’s Eden.",
+        "books": [
+          "/books/lyrical-ballads/",
+          "/books/songs-of-innocence-and-of-experience/",
+          "/books/shakespeares-sonnets/",
+          "/books/paradise-lost/"
+        ]
+      },
+      {
+        "title": "Shakespeare in spring",
+        "description": "The spring song that closes Love’s Labour’s Lost, the pages’ song of a lover and his lass in As You Like It, Perdita’s daffodils in The Winter’s Tale and the rite of May in A Midsummer Night’s Dream.",
+        "books": [
+          "/books/loves-labours-lost/",
+          "/books/as-you-like-it/",
+          "/books/the-winters-tale/",
+          "/books/a-midsummer-nights-dream/"
+        ]
+      }
+    ],
+    "resourceBooks": [
+      "/books/the-wind-in-the-willows/",
+      "/books/anne-of-green-gables/",
+      "/books/tess-of-the-durbervilles/",
+      "/books/pride-and-prejudice/",
+      "/books/the-sorrows-of-young-werther/",
+      "/books/lyrical-ballads/",
+      "/books/songs-of-innocence-and-of-experience/",
+      "/books/shakespeares-sonnets/",
+      "/books/paradise-lost/",
+      "/books/loves-labours-lost/",
+      "/books/as-you-like-it/",
+      "/books/the-winters-tale/",
+      "/books/a-midsummer-nights-dream/"
+    ],
+    "readingNote": {
+      "title": "Two springs side by side",
+      "paragraphs": [
+        "Read Wordsworth’s ‘Lines Written in Early Spring’ beside Blake’s ‘Spring’. Wordsworth sits in a grove and turns the season into a complaint about what man has made of man; Blake gives it to a child and a lamb and leaves the argument out.",
+        "For a longer route, follow the Mole out of his burrow in the first chapter of The Wind in the Willows, then read the Talbothays chapters of Tess, where the spring and summer at the dairy are the happiest stretch of her life."
+      ]
+    },
+    "home": {
+      "shelfTitle": "Six for spring",
+      "shelf": [
+        {
+          "href": "/books/the-wind-in-the-willows/",
+          "label": "Spring-cleaning",
+          "title": "The Wind in the Willows"
+        },
+        {
+          "href": "/books/lyrical-ballads/",
+          "label": "Lines Written in Early Spring",
+          "title": "Lyrical Ballads"
+        },
+        {
+          "href": "/books/songs-of-innocence-and-of-experience/",
+          "label": "Blake’s ‘Spring’",
+          "title": "Songs of Innocence and of Experience"
+        },
+        {
+          "href": "/books/tess-of-the-durbervilles/",
+          "label": "May at Talbothays",
+          "title": "Tess of the d’Urbervilles"
+        },
+        {
+          "href": "/books/anne-of-green-gables/",
+          "label": "A Canadian spring",
+          "title": "Anne of Green Gables"
+        },
+        {
+          "href": "/books/loves-labours-lost/",
+          "label": "The spring song",
+          "title": "Love’s Labour’s Lost"
+        }
+      ]
+    }
   },
   {
     "slug": "summer",
@@ -542,6 +758,41 @@
       "paragraphs": [
         "A river sequence can begin with Three Men in a Boat and continue with The Wind in the Willows or Adventures of Huckleberry Finn. Compare the work of travelling, the relation between river and shore, and the narrator’s treatment of the people encountered along the way.",
         "For a shorter group programme, place the opening of Mrs Dalloway beside the summer gathering in The Great Gatsby or the Grand Isle chapters of The Awakening. The seasonal setting can then be studied through specific details of weather, visiting, clothing, leisure and social expectation."
+      ]
+    },
+    "home": {
+      "shelfTitle": "Six for summer",
+      "shelf": [
+        {
+          "href": "/books/three-men-in-a-boat/",
+          "label": "The Thames",
+          "title": "Three Men in a Boat"
+        },
+        {
+          "href": "/books/the-wind-in-the-willows/",
+          "label": "The river bank",
+          "title": "The Wind in the Willows"
+        },
+        {
+          "href": "/books/the-adventures-of-tom-sawyer/",
+          "label": "A Missouri summer",
+          "title": "The Adventures of Tom Sawyer"
+        },
+        {
+          "href": "/books/anne-of-green-gables/",
+          "label": "Prince Edward Island",
+          "title": "Anne of Green Gables"
+        },
+        {
+          "href": "/books/the-great-gatsby/",
+          "label": "Long Island, 1922",
+          "title": "The Great Gatsby"
+        },
+        {
+          "href": "/books/a-midsummer-nights-dream/",
+          "label": "Midsummer",
+          "title": "A Midsummer Night’s Dream"
+        }
       ]
     }
   },
@@ -628,6 +879,41 @@
         "A Valentine’s reading can be brief without becoming vague. Sonnet 130 is a useful starting point for examining what a love poem actually says about conventional praise. In Much Ado About Nothing, the overhearing scenes show how a character changes when presented with an account of another person’s feelings.",
         "For the novels and later drama, follow the practical conditions of a relationship: income, inheritance, marriage law, work and the authority of relatives. The Astor book pages identify the particular historical and editorial material supplied with each edition."
       ]
+    },
+    "home": {
+      "shelfTitle": "Six for 14 February",
+      "shelf": [
+        {
+          "href": "/books/shakespeares-sonnets/",
+          "label": "Love poems",
+          "title": "Shakespeare’s Sonnets"
+        },
+        {
+          "href": "/books/pride-and-prejudice/",
+          "label": "Elizabeth and Darcy",
+          "title": "Pride and Prejudice"
+        },
+        {
+          "href": "/books/much-ado-about-nothing/",
+          "label": "Beatrice and Benedick",
+          "title": "Much Ado About Nothing"
+        },
+        {
+          "href": "/books/jane-eyre/",
+          "label": "Jane and Rochester",
+          "title": "Jane Eyre"
+        },
+        {
+          "href": "/books/the-blue-castle/",
+          "label": "A Muskoka romance",
+          "title": "The Blue Castle"
+        },
+        {
+          "href": "/books/romeo-and-juliet/",
+          "label": "Star-crossed lovers",
+          "title": "Romeo and Juliet"
+        }
+      ]
     }
   },
   {
@@ -708,6 +994,42 @@
       "/resources/american/puddnhead-wilson-1894/",
       "/resources/american/langston-hughes-chain-gang-essay/",
       "/resources/american/langston-hughes-dont-turn-back/"
-    ]
+    ],
+    "home": {
+      "shelfTitle": "Six for the Fourth",
+      "varied": false,
+      "shelf": [
+        {
+          "href": "/books/narrative-of-the-life-of-frederick-douglass/",
+          "label": "Douglass, 1845",
+          "title": "Narrative of the Life of Frederick Douglass"
+        },
+        {
+          "href": "/books/common-sense-and-the-american-crisis/",
+          "label": "Paine, 1776",
+          "title": "Common Sense and The American Crisis"
+        },
+        {
+          "href": "/books/adventures-of-huckleberry-finn/",
+          "label": "The Mississippi",
+          "title": "Adventures of Huckleberry Finn"
+        },
+        {
+          "href": "/books/uncle-toms-cabin/",
+          "label": "Stowe, 1852",
+          "title": "Uncle Tom’s Cabin"
+        },
+        {
+          "href": "/books/the-scarlet-letter/",
+          "label": "Puritan Boston",
+          "title": "The Scarlet Letter"
+        },
+        {
+          "href": "/books/the-great-gatsby/",
+          "label": "Long Island, 1922",
+          "title": "The Great Gatsby"
+        }
+      ]
+    }
   }
 ]

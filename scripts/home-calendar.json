@@ -1,0 +1,202 @@
+{
+  "themes": [
+    {
+      "slug": "new-year",
+      "when": [{ "from": "12-27", "to": "01-06" }],
+      "feature": {
+        "visual": "winter",
+        "headline": "New Year *at* Astor",
+        "kicker": "31 December · 1 January · Twelfth Night",
+        "deck": "Dickens set The Chimes on New Year’s Eve, and Twelfth Night takes its name from the last night of the Christmas season. The winter collection carries on into January.",
+        "period": "27 December–6 January",
+        "cta": { "href": "/seasons/winter/", "text": "Explore winter reading" },
+        "heroBooks": ["/books/the-chimes/", "/books/twelfth-night/", "/books/ethan-frome/"],
+        "shelfTitle": "Six for the new year",
+        "shelf": [
+          { "href": "/books/the-chimes/", "label": "New Year’s Eve", "title": "The Chimes" },
+          { "href": "/books/twelfth-night/", "label": "The last night of Christmas", "title": "Twelfth Night" },
+          { "href": "/books/ethan-frome/", "label": "A New England winter", "title": "Ethan Frome" },
+          { "href": "/books/call-of-the-wild/", "label": "The Yukon trail", "title": "The Call of the Wild" },
+          { "href": "/books/the-wind-in-the-willows/", "label": "Snow in the Wild Wood", "title": "The Wind in the Willows" },
+          { "href": "/books/frankenstein/", "label": "Walton’s Arctic", "title": "Frankenstein" }
+        ]
+      }
+    },
+    { "slug": "winter", "when": [{ "from": "01-01", "to": "02-29" }], "season": "winter" },
+    { "slug": "valentines-day", "when": [{ "from": "02-01", "to": "02-14" }], "season": "valentines-day" },
+    {
+      "slug": "world-book-day",
+      "when": [{ "from": "03-01", "to": "03-07" }],
+      "feature": {
+        "visual": "spring",
+        "headline": "World *Book* Day",
+        "kicker": "The first Thursday in March",
+        "deck": "In the UK and Ireland, World Book Day falls on the first Thursday in March and is about children’s reading. The library’s novels of childhood include Alice, Tom Sawyer, Anne of Green Gables and The Railway Children.",
+        "period": "1–7 March",
+        "cta": { "href": "/subjects/childhood-and-education/", "text": "Explore books about childhood" },
+        "heroBooks": ["/books/alices-adventures-in-wonderland/", "/books/anne-of-green-gables/", "/books/the-railway-children/"],
+        "shelfTitle": "Six books about childhood",
+        "shelf": [
+          { "href": "/books/alices-adventures-in-wonderland/", "label": "Wonderland", "title": "Alice’s Adventures in Wonderland" },
+          { "href": "/books/the-adventures-of-tom-sawyer/", "label": "St Petersburg, Missouri", "title": "The Adventures of Tom Sawyer" },
+          { "href": "/books/anne-of-green-gables/", "label": "Green Gables", "title": "Anne of Green Gables" },
+          { "href": "/books/the-railway-children/", "label": "Three Chimneys", "title": "The Railway Children" },
+          { "href": "/books/the-wind-in-the-willows/", "label": "The river bank", "title": "The Wind in the Willows" },
+          { "href": "/books/adventures-of-huckleberry-finn/", "label": "Down the Mississippi", "title": "Adventures of Huckleberry Finn" }
+        ]
+      }
+    },
+    { "slug": "spring", "when": [{ "from": "03-01", "to": "05-31" }], "season": "spring" },
+    {
+      "slug": "world-poetry-day",
+      "priority": 2,
+      "when": [{ "from": "03-21", "to": "03-21" }],
+      "feature": {
+        "visual": "spring",
+        "headline": "World *Poetry* Day",
+        "kicker": "21 March",
+        "deck": "UNESCO named 21 March World Poetry Day in 1999. The poetry in the library runs from Shakespeare’s Sonnets and Paradise Lost to Blake, Wordsworth, Coleridge and Yeats.",
+        "period": "21 March",
+        "cta": { "href": "/romantic-regency/", "text": "Explore the Romantic poets" },
+        "heroBooks": ["/books/shakespeares-sonnets/", "/books/songs-of-innocence-and-of-experience/", "/books/lyrical-ballads/"],
+        "shelfTitle": "Six books of poems",
+        "shelf": [
+          { "href": "/books/shakespeares-sonnets/", "label": "1609", "title": "Shakespeare’s Sonnets" },
+          { "href": "/books/paradise-lost/", "label": "1667", "title": "Paradise Lost" },
+          { "href": "/books/the-rape-of-the-lock-and-an-essay-on-criticism/", "label": "1712–14", "title": "The Rape of the Lock" },
+          { "href": "/books/songs-of-innocence-and-of-experience/", "label": "1789–94", "title": "Songs of Innocence and of Experience" },
+          { "href": "/books/lyrical-ballads/", "label": "1798", "title": "Lyrical Ballads" },
+          { "href": "/books/michael-robartes-and-the-dancer/", "label": "1921", "title": "Michael Robartes and the Dancer" }
+        ]
+      }
+    },
+    {
+      "slug": "easter",
+      "priority": 1,
+      "when": [{ "easter": 0, "span": [-7, 1] }],
+      "feature": {
+        "visual": "spring",
+        "headline": "Easter *at* Astor",
+        "kicker": "Easter · Spring reading",
+        "deck": "Easter falls in the middle of Pride and Prejudice: Darcy comes to Rosings the week before, and his first proposal follows. Yeats’s ‘Easter, 1916’ is in Michael Robartes and the Dancer.",
+        "period": "Palm Sunday to Easter Monday",
+        "cta": { "href": "/seasons/spring/", "text": "Explore spring reading" },
+        "heroBooks": ["/books/pride-and-prejudice/", "/books/michael-robartes-and-the-dancer/", "/books/the-winters-tale/"],
+        "shelfTitle": "Six for Easter",
+        "shelf": [
+          { "href": "/books/pride-and-prejudice/", "label": "Easter at Rosings", "title": "Pride and Prejudice" },
+          { "href": "/books/michael-robartes-and-the-dancer/", "label": "‘Easter, 1916’", "title": "Michael Robartes and the Dancer" },
+          { "href": "/books/the-winters-tale/", "label": "The statue scene", "title": "The Winter’s Tale" },
+          { "href": "/books/paradise-lost/", "label": "Eden’s eternal spring", "title": "Paradise Lost" },
+          { "href": "/books/lyrical-ballads/", "label": "Lines Written in Early Spring", "title": "Lyrical Ballads" },
+          { "href": "/books/the-wind-in-the-willows/", "label": "Spring-cleaning", "title": "The Wind in the Willows" }
+        ]
+      }
+    },
+    {
+      "slug": "shakespeare",
+      "when": [{ "from": "04-18", "to": "04-25" }],
+      "feature": {
+        "visual": "spring",
+        "headline": "Shakespeare *at* Astor",
+        "kicker": "23 April · Shakespeare’s birthday",
+        "deck": "Shakespeare was baptised in Stratford on 26 April 1564 and died on 23 April 1616, and 23 April is kept as his birthday. The library has all thirty-seven plays, the Sonnets and the narrative poems.",
+        "period": "18–25 April",
+        "cta": { "href": "/shakespeare/", "text": "Explore the Shakespeare collection" },
+        "heroBooks": ["/books/hamlet/", "/books/a-midsummer-nights-dream/", "/books/macbeth/"],
+        "shelfTitle": "Six to start with",
+        "varied": false,
+        "shelf": [
+          { "href": "/books/hamlet/", "label": "Elsinore", "title": "Hamlet" },
+          { "href": "/books/macbeth/", "label": "Scotland", "title": "Macbeth" },
+          { "href": "/books/romeo-and-juliet/", "label": "Verona", "title": "Romeo and Juliet" },
+          { "href": "/books/a-midsummer-nights-dream/", "label": "Athens and the wood", "title": "A Midsummer Night’s Dream" },
+          { "href": "/books/the-tempest/", "label": "Prospero’s island", "title": "The Tempest" },
+          { "href": "/books/shakespeares-sonnets/", "label": "The Sonnets", "title": "Shakespeare’s Sonnets" }
+        ]
+      }
+    },
+    { "slug": "summer", "when": [{ "from": "06-01", "to": "08-31" }], "season": "summer" },
+    { "slug": "fourth-of-july", "when": [{ "from": "07-01", "to": "07-05" }], "season": "fourth-of-july" },
+    { "slug": "autumn", "when": [{ "from": "09-01", "to": "11-30" }], "season": "autumn" },
+    { "slug": "halloween", "when": [{ "from": "10-01", "to": "10-31" }], "season": "halloween" },
+    { "slug": "bonfire-night", "when": [{ "from": "11-01", "to": "11-06" }], "season": "bonfire-night" },
+    {
+      "slug": "remembrance",
+      "when": [{ "from": "11-07", "to": "11-14" }],
+      "feature": {
+        "visual": "remembrance",
+        "headline": "Remembrance Day",
+        "kicker": "11 November · Remembrance Sunday",
+        "deck": "The Armistice that ended the fighting of the First World War took effect at 11 a.m. on 11 November 1918. In Mrs Dalloway a veteran of that war walks through London in June 1923; Seven Pillars of Wisdom is T. E. Lawrence’s account of the Arab Revolt.",
+        "period": "7–14 November",
+        "heroBooks": ["/books/mrs-dalloway/", "/books/seven-pillars-of-wisdom/", "/books/red-badge-of-courage/"],
+        "shelfTitle": "Six books about war",
+        "shelf": [
+          { "href": "/books/mrs-dalloway/", "label": "Septimus Warren Smith", "title": "Mrs Dalloway" },
+          { "href": "/books/seven-pillars-of-wisdom/", "label": "The Arab Revolt", "title": "Seven Pillars of Wisdom" },
+          { "href": "/books/red-badge-of-courage/", "label": "The American Civil War", "title": "The Red Badge of Courage" },
+          { "href": "/books/henry-v/", "label": "Agincourt", "title": "Henry V" },
+          { "href": "/books/the-iliad/", "label": "The Trojan War", "title": "The Iliad" },
+          { "href": "/books/common-sense-and-the-american-crisis/", "label": "The American Revolution", "title": "Common Sense and The American Crisis" }
+        ]
+      }
+    },
+    {
+      "slug": "thanksgiving",
+      "when": [{ "from": "11-22", "to": "11-28" }],
+      "feature": {
+        "visual": "autumn",
+        "headline": "Thanksgiving *at* Astor",
+        "kicker": "The fourth Thursday in November",
+        "deck": "Lincoln proclaimed a national day of thanksgiving in 1863, to be kept on the last Thursday of November. The American collection runs from Irving and Hawthorne to Twain and Fitzgerald.",
+        "period": "22–28 November",
+        "cta": { "href": "/american/", "text": "Explore American classics" },
+        "heroBooks": ["/books/sleepy-hollow-and-other-stories/", "/books/the-scarlet-letter/", "/books/the-great-gatsby/"],
+        "shelfTitle": "Six American classics",
+        "varied": false,
+        "shelf": [
+          { "href": "/books/sleepy-hollow-and-other-stories/", "label": "The Van Tassels’ feast", "title": "Sleepy Hollow &amp; Other Stories" },
+          { "href": "/books/the-scarlet-letter/", "label": "Puritan Boston", "title": "The Scarlet Letter" },
+          { "href": "/books/moby-dick/", "label": "Nantucket", "title": "Moby-Dick" },
+          { "href": "/books/adventures-of-huckleberry-finn/", "label": "The Mississippi", "title": "Adventures of Huckleberry Finn" },
+          { "href": "/books/uncle-toms-cabin/", "label": "Stowe, 1852", "title": "Uncle Tom’s Cabin" },
+          { "href": "/books/the-great-gatsby/", "label": "Long Island, 1922", "title": "The Great Gatsby" }
+        ]
+      }
+    },
+    { "slug": "christmas", "when": [{ "from": "11-29", "to": "12-26" }], "season": "christmas" }
+  ],
+  "notes": [
+    { "when": [{ "from": "01-01", "to": "01-01" }], "text": "Public Domain Day: in the UK the work of writers who died in {uk} is now out of copyright, and in the US so are books first published in {us}.", "href": "/library/", "link": "Browse the library" },
+    { "when": [{ "from": "01-05", "to": "01-05" }], "text": "Tonight is Twelfth Night, the last night of the Christmas season, and the title of {link}.", "href": "/books/twelfth-night/", "link": "Shakespeare’s comedy" },
+    { "when": [{ "from": "02-01", "to": "02-29" }], "text": "February is Black History Month in the United States.", "href": "/subjects/slavery-freedom-abolition/", "link": "Slavery, freedom and abolition" },
+    { "when": [{ "from": "02-01", "to": "02-29" }], "text": "February is LGBT+ History Month in the UK." },
+    { "when": [{ "nth": [3, 4, 1] }], "text": "Today is World Book Day in the UK and Ireland." },
+    { "when": [{ "from": "03-08", "to": "03-08" }], "text": "Today is International Women’s Day.", "href": "/books/a-room-of-ones-own/", "link": "A Room of One’s Own" },
+    { "when": [{ "from": "03-17", "to": "03-17" }], "text": "Today is St Patrick’s Day. Swift, Le Fanu, Wilde, Stoker and Yeats were all born in Dublin." },
+    { "when": [{ "from": "03-27", "to": "03-27" }], "text": "Today is World Theatre Day.", "href": "/shakespeare/", "link": "The Shakespeare collection" },
+    { "when": [{ "from": "04-01", "to": "04-30" }], "text": "April is National Poetry Month in the United States." },
+    { "when": [{ "from": "04-23", "to": "04-23" }], "text": "Today is Shakespeare’s birthday, St George’s Day and UNESCO’s World Book and Copyright Day." },
+    { "when": [{ "from": "05-01", "to": "05-01" }], "text": "Today is May Day. In {link}, Theseus finds the lovers asleep in the wood and supposes they rose early to observe the rite of May.", "href": "/books/a-midsummer-nights-dream/", "link": "A Midsummer Night’s Dream" },
+    { "when": [{ "from": "06-19", "to": "06-19" }], "text": "Today is Juneteenth: on 19 June 1865 a Union general announced in Galveston that the enslaved people of Texas were free.", "href": "/subjects/slavery-freedom-abolition/", "link": "Slavery, freedom and abolition" },
+    { "when": [{ "solar": "jun" }], "text": "Today is the summer solstice, the longest day of the year." },
+    { "when": [{ "from": "07-01", "to": "07-01" }], "text": "Today is Canada Day. L. M. Montgomery set {link} on Prince Edward Island.", "href": "/books/anne-of-green-gables/", "link": "Anne of Green Gables" },
+    { "when": [{ "from": "07-04", "to": "07-04" }], "text": "Today is Independence Day in the United States." },
+    { "when": [{ "from": "09-08", "to": "09-08" }], "text": "Today is International Literacy Day. Frederick Douglass describes how he learned to read in {link}.", "href": "/books/narrative-of-the-life-of-frederick-douglass/", "link": "his Narrative" },
+    { "when": [{ "solar": "sep" }], "text": "Today is the autumn equinox." },
+    { "when": [{ "from": "10-01", "to": "10-31" }], "text": "October is Black History Month in the UK.", "href": "/subjects/slavery-freedom-abolition/", "link": "Slavery, freedom and abolition" },
+    { "when": [{ "from": "10-05", "to": "10-05" }], "text": "Today is World Teachers’ Day.", "href": "/for-teachers/", "link": "Free material for the classroom" },
+    { "when": [{ "from": "10-31", "to": "10-31" }], "text": "Today is Halloween." },
+    { "when": [{ "from": "11-05", "to": "11-05" }], "text": "Tonight is Bonfire Night." },
+    { "when": [{ "nth": [11, 0, 2] }], "text": "Today is Remembrance Sunday." },
+    { "when": [{ "from": "11-11", "to": "11-11" }], "text": "Today is Armistice Day. The guns fell silent at 11 a.m. on 11 November 1918." },
+    { "when": [{ "nth": [11, 4, 4] }], "text": "Today is Thanksgiving in the United States." },
+    { "when": [{ "from": "11-30", "to": "11-30" }], "text": "Today is St Andrew’s Day. Robert Louis Stevenson, Arthur Conan Doyle and Kenneth Grahame were all born in Edinburgh." },
+    { "when": [{ "solar": "dec" }], "text": "Today is the winter solstice, the shortest day of the year." },
+    { "when": [{ "from": "12-24", "to": "12-24" }], "text": "Today is Christmas Eve, the day on which {link} begins.", "href": "/books/a-christmas-carol/", "link": "A Christmas Carol" },
+    { "when": [{ "from": "12-25", "to": "12-25" }], "text": "Today is Christmas Day." },
+    { "when": [{ "from": "12-26", "to": "12-26" }], "text": "Today is Boxing Day." },
+    { "when": [{ "from": "12-31", "to": "12-31" }], "text": "Today is New Year’s Eve, the night on which Dickens set {link}.", "href": "/books/the-chimes/", "link": "The Chimes" }
+  ]
+}
