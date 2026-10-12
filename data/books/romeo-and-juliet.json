@@ -122,7 +122,7 @@
       "traits": ["exact", "self-governing", "unsentimental about risk"],
       "relationships": [
         { "to": "romeo", "label": "married to", "kind": "marriage", "stages": ["act-2", "act-3", "act-5"] },
-        { "to": "nurse", "label": "raised by, then dismissed by", "kind": "service", "stages": ["act-1", "act-3"] },
+        { "to": "nurse", "label": "raised by, then breaks with", "kind": "service", "stages": ["act-1", "act-3"] },
         { "to": "capulet", "label": "daughter of", "kind": "family", "stages": ["act-3", "act-4"] },
         { "to": "paris", "label": "promised to", "kind": "marriage", "stages": ["act-4"] }
       ]
@@ -137,7 +137,7 @@
       "traits": ["verbally inexhaustible", "obscene", "contemptuous of romance"],
       "relationships": [
         { "to": "romeo", "label": "friend of", "kind": "ally", "stages": ["act-1", "act-2", "act-3"] },
-        { "to": "tybalt", "label": "provoked and killed by", "kind": "enemy", "stages": ["act-3"] },
+        { "to": "tybalt", "label": "provokes, and is killed by", "kind": "enemy", "stages": ["act-3"] },
         { "to": "benvolio", "label": "companion of", "kind": "ally" }
       ]
     },

@@ -114,7 +114,7 @@
       "relationships": [
         { "to": "john", "label": "serves, and outlives", "kind": "service", "stages": ["act-1", "act-3", "act-5"] },
         { "to": "eleanor", "label": "recruited by, and calls grandam", "kind": "family", "stages": ["act-1", "act-2"] },
-        { "to": "arthur", "label": "carries his body, and reads the kingdom in it", "kind": "doubling", "stages": ["act-4"] },
+        { "to": "arthur", "label": "has Hubert carry his body, and reads the kingdom in it", "kind": "doubling", "stages": ["act-4"] },
         { "to": "hubert", "label": "threatens with damnation, then believes", "kind": "ally", "stages": ["act-4", "act-5"] },
         { "to": "louis", "label": "defies at Saint Edmundsbury", "kind": "enemy", "stages": ["act-5"] }
       ]
