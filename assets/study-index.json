@@ -107,7 +107,7 @@
           "id": "stave-4",
           "label": "Stave IV",
           "title": "The Last of the Spirits",
-          "summary": "The final spirit says nothing at all, so Scrooge has to do the interpreting himself: businessmen bargaining over whether to attend a cheap funeral, a laundress selling bed-curtains stripped from a corpse, an unwatched body, and a family relieved by a death. Only at the grave is the name supplied.",
+          "summary": "The final spirit says nothing at all, so Scrooge has to do the interpreting himself: businessmen bargaining over whether to attend a cheap funeral, a charwoman selling bed-curtains stripped from a corpse, an unwatched body, and a family relieved by a death. Only at the grave is the name supplied.",
           "scenes": [
             {
               "ref": "On ’Change",
@@ -1398,16 +1398,6 @@
               "ref": "Chapter X",
               "title": "Beginnings of civilization",
               "summary": "The patent office first, then schools, then the rest: his own order of priorities."
-            },
-            {
-              "ref": "Chapter XIII",
-              "title": "Freemen",
-              "summary": "Hank talks economics to men who cannot see their own position, and loses the argument by winning it."
-            },
-            {
-              "ref": "Chapter XVII",
-              "title": "A royal banquet",
-              "summary": "The court at its ease, with the gap between its manners and its cruelty on full display."
             }
           ]
         },
@@ -1428,12 +1418,22 @@
               "summary": "A charming hostess who stabs a page for brushing her knee, and whose dungeons hold men who have forgotten why they are there."
             },
             {
+              "ref": "Chapter XVII",
+              "title": "A royal banquet",
+              "summary": "The court at its ease, with the gap between its manners and its cruelty on full display."
+            },
+            {
               "ref": "Chapter XXII",
               "title": "The holy fountain",
               "summary": "A miracle performed with a pump, fire-works and two assistants, and received as one."
             },
             {
-              "ref": "Chapter XXXV",
+              "ref": "Chapter XXXIII",
+              "title": "Freemen",
+              "summary": "Hank talks economics to men who cannot see their own position, and loses the argument by winning it."
+            },
+            {
+              "ref": "Chapters XXXIV-XXXVIII",
               "title": "A pitiful incident",
               "summary": "The king and the Boss are sold as slaves, and the rescue arrives on bicycles."
             }
@@ -1463,7 +1463,7 @@
             {
               "ref": "Chapter XLIV",
               "title": "A postscript by Clarence",
-              "summary": "The Boss is put to sleep by Merlin for thirteen centuries, and a boy finishes the book for him."
+              "summary": "The Boss is put to sleep by Merlin for thirteen centuries, and Clarence finishes the book for him."
             }
           ]
         }
@@ -3696,7 +3696,7 @@
           "id": "act-1",
           "label": "Act I",
           "title": "Hermia’s sentence and the mechanicals’ play",
-          "summary": "Theseus is four days from marrying a woman he defeated in battle when Egeus arrives demanding the Athenian law that lets a father dispose of a daughter. Hermia is given a month to obey, die or enter a convent; she and Lysander agree to run, tell Helena, and Helena tells Demetrius. In a separate room six tradesmen are allocating parts in a play about a double suicide.",
+          "summary": "Theseus is four days from marrying a woman he defeated in battle when Egeus arrives demanding the Athenian law that lets a father dispose of a daughter. Hermia is given until the next new moon, Theseus’s wedding day four days off, to obey, die or enter a convent; she and Lysander agree to run, tell Helena, and Helena tells Demetrius. In a separate room six tradesmen are allocating parts in a play about a double suicide.",
           "scenes": [
             {
               "ref": "1.1",
@@ -5203,7 +5203,7 @@
           "id": "evasion",
           "label": "Chapters 33–43",
           "title": "Tom Sawyer’s escape plan",
-          "summary": "Tom arrives, discovers that Jim is being held in a shed, and refuses to simply open the door. Six weeks of rope ladders, sawn bedposts, anonymous letters, rats and a grindstone follow, because the books say so. The escape ends with Tom shot in the leg, Jim giving up his own freedom to fetch a doctor, and the news that Miss Watson freed him in her will two months earlier.",
+          "summary": "Tom arrives, discovers that Jim is being held in a shed, and refuses to simply open the door. Three weeks of rope ladders, sawn bedposts, anonymous letters, rats and a grindstone follow, because the books say so. The escape ends with Tom shot in the leg, Jim giving up his own freedom to stay with Tom and help the doctor, and the news that Miss Watson freed him in her will two months earlier.",
           "scenes": [
             {
               "ref": "Chapter 36",
@@ -11385,7 +11385,7 @@
           "id": "chapters-19-23",
           "label": "Chapters 19–23",
           "title": "A run of catastrophes",
-          "summary": "The Haunted Wood terrifies its own inventor, the liniment cake ruins a minister’s tea, and a dare on Mr Barry’s kitchen roof ends with a sprained ankle. Each disaster is also an introduction: Aunt Josephine, Mrs Allan and a village that begins to take Anne’s part.",
+          "summary": "The Haunted Wood terrifies its own inventor, the liniment cake ruins a minister’s tea, and a dare on Mr Barry’s kitchen roof ends with a broken ankle. Each disaster is also an introduction: Aunt Josephine, Mrs Allan and a village that begins to take Anne’s part.",
           "scenes": []
         },
         {
@@ -12663,7 +12663,7 @@
           "id": "act-3",
           "label": "Act III",
           "title": "Actium, and Cleopatra’s flight",
-          "summary": "The alliance dissolves in short scenes and reported news: Lepidus is deposed, Octavia is sent back, Antony insists on fighting at sea and then follows Cleopatra’s fleeing sails. Defeat is immediately fought over as a story, and Enobarbus begins to calculate what loyalty to a falling man is worth.",
+          "summary": "The alliance dissolves in short scenes and reported news: Lepidus is deposed, Octavia goes home to plead with her brother, Antony insists on fighting at sea and then follows Cleopatra’s fleeing sails. Defeat is immediately fought over as a story, and Enobarbus begins to calculate what loyalty to a falling man is worth.",
           "scenes": [
             {
               "ref": "3.1",
@@ -12736,7 +12736,7 @@
           "id": "act-4",
           "label": "Act IV",
           "title": "A victory, Enobarbus’s desertion, and Antony’s death",
-          "summary": "Antony wins a day on land, and the music of a god leaving the city is heard under the stage the night before he loses the rest. Enobarbus dies of his own defection. Told a false report of Cleopatra’s death, Antony asks Eros to kill him, botches the attempt himself, and is hauled up into the monument to die by degrees.",
+          "summary": "The night before Antony wins a day on land, the music of a god leaving him is heard under the stage; the sea fight that follows loses him the rest. Enobarbus dies of his own defection. Told a false report of Cleopatra’s death, Antony asks Eros to kill him, botches the attempt himself, and is hauled up into the monument to die by degrees.",
           "scenes": [
             {
               "ref": "4.1",
@@ -14168,7 +14168,7 @@
             {
               "ref": "5.3",
               "title": "It was a lover and his lass",
-              "summary": "Two pages sing to Touchstone and Audrey, who thinks little of the tune."
+              "summary": "Two pages sing to Touchstone and Audrey, and Touchstone thinks little of the tune."
             },
             {
               "ref": "5.4",
@@ -18175,7 +18175,7 @@
           "id": "the-real-cases",
           "label": "Cases that are real",
           "title": "The room, the ring and the hoof",
-          "summary": "In three of the six, something is really there. A ring and a bed-chamber produce a hand that hunts; a room in Ireland swells and whistles like a mouth; and in Galway a hoof walks through a closed door and down a passage between two men. These are the stories the book is remembered for, and in each the defences are nearly not enough.",
+          "summary": "In three of the six, something is really there. A ring and a bed-chamber produce a hand that hunts; a room in Ireland swells and whistles like a mouth; and in Lancashire a hoof walks through a closed door and down a passage between two men. These are the stories the book is remembered for, and in each the defences are nearly not enough.",
           "scenes": [
             {
               "ref": "No. 1, The Gateway of the Monster",
@@ -19041,7 +19041,7 @@
           "id": "act-4",
           "label": "Act IV",
           "title": "Debt, arrest and a conjurer",
-          "summary": "Money makes a domestic muddle into a legal one. Angelo is pressed by his own creditor, presses Antipholus of Ephesus for a chain the man never received, and has him arrested in the street. The bail is fetched by the wrong servant and handed to the wrong master. The courtesan reports her ring stolen. By the end of the act a hedge-priest called Pinch has declared master and man possessed, and both are tied up in a dark cellar.",
+          "summary": "Money makes a domestic muddle into a legal one. Angelo is pressed by his own creditor, presses Antipholus of Ephesus for a chain the man never received, and has him arrested in the street. The bail is fetched by the wrong servant and handed to the wrong master. The courtesan reports her ring stolen. By the end of the act a schoolmaster and conjurer called Pinch has declared master and man possessed, and both are tied up in a dark cellar.",
           "scenes": [
             {
               "ref": "4.1",
@@ -22447,7 +22447,7 @@
             {
               "ref": "5.4",
               "title": "Rome waits",
-              "summary": "Menenius describes a man grown from grub to dragon; the city hears the news and goes out to meet Volumnia."
+              "summary": "Menenius describes a man grown into a dragon; the city hears the news and goes out to meet Volumnia."
             },
             {
               "ref": "5.5",
@@ -25158,7 +25158,7 @@
             {
               "ref": "1.5–1.6",
               "title": "Poison, and a trunk",
-              "summary": "The Queen collects drugs from her doctor and plants a box on Pisanio. Iachimo tries Imogen directly, is thrown out, apologises handsomely, and asks her to keep a trunk of plate in her bedchamber overnight."
+              "summary": "The Queen collects drugs from her doctor and plants a box on Pisanio. Iachimo tries Imogen directly, is rebuffed, apologises handsomely, and asks her to keep a trunk of plate in her bedchamber overnight."
             }
           ]
         },
@@ -25247,7 +25247,7 @@
             {
               "ref": "4.3",
               "title": "The king with nobody left",
-              "summary": "Cymbeline has lost his daughter, his stepson and his queen to a fever, and the legions have landed on his coast."
+              "summary": "Cymbeline’s daughter and stepson are missing, his queen is dangerously ill with a fever, and the legions have landed on his coast."
             },
             {
               "ref": "4.4",
@@ -25260,7 +25260,7 @@
           "id": "act-5",
           "label": "Act V",
           "title": "The battle, Jupiter, and the recognitions",
-          "summary": "Posthumus lands with the Roman army, changes out of his Italian clothes and fights for the country he believes he has widowed. An old man and two boys hold a narrow lane and change the rout into a British victory. In prison Jupiter comes down on an eagle and leaves a riddle on the sleeper’s chest. In Cymbeline’s tent every disguise, lie and supposed death is unpicked in front of everybody.",
+          "summary": "Posthumus lands with the Roman army, changes out of his Italian clothes and fights for the country whose princess he believes he has had killed. An old man and two boys hold a narrow lane and change the rout into a British victory. In prison Jupiter comes down on an eagle and leaves a riddle on the sleeper’s chest. In Cymbeline’s tent every disguise, lie and supposed death is unpicked in front of everybody.",
           "scenes": [
             {
               "ref": "5.1",
@@ -26799,7 +26799,7 @@
             {
               "ref": "Scene 2",
               "title": "Two scholars and a servant",
-              "summary": "Wagner chops logic with two scholars, who guess where Faustus is dining and go to tell the Rector."
+              "summary": "Wagner chops logic with two scholars, who learn whom Faustus is dining with and go to tell the Rector."
             }
           ]
         },
@@ -26868,7 +26868,7 @@
             {
               "ref": "Scene 9",
               "title": "The goblet",
-              "summary": "Robin and Ralph gull a vintner, summon Mephistopheles by accident and are turned into an ape and a dog."
+              "summary": "Robin and Ralph gull a vintner, summon Mephistopheles out of the stolen book and are turned into an ape and a dog."
             },
             {
               "ref": "Scene 10",
@@ -28565,7 +28565,7 @@
             {
               "ref": "Chapters III-IV",
               "title": "",
-              "summary": "Lord Henry’s inquiries into Dorian’s parentage; the engagement announced over tea."
+              "summary": "Lord Henry’s inquiries into Dorian’s parentage; the engagement announced by telegram."
             },
             {
               "ref": "Chapter V",
@@ -28580,7 +28580,7 @@
             {
               "ref": "Chapter VIII",
               "title": "",
-              "summary": "The news of her death arrives with the morning post, and Lord Henry converts it into an aesthetic experience over lunch."
+              "summary": "Lord Henry calls with the news of her death and has turned it into an aesthetic experience before he leaves."
             }
           ]
         },
@@ -28593,7 +28593,7 @@
             {
               "ref": "Chapter IX",
               "title": "",
-              "summary": "Basil calls to console him, is refused a sight of the portrait, and is refused a drawing of Sibyl."
+              "summary": "Basil calls to console him and is refused a sight of the portrait; Dorian asks him for a drawing of Sibyl but will never sit to him again."
             },
             {
               "ref": "Chapter X",
@@ -28611,7 +28611,7 @@
           "id": "murder",
           "label": "Chapters XII-XIV",
           "title": "The murder of Basil Hallward",
-          "summary": "Basil comes on the eve of his thirty-eighth birthday to repeat the rumours to his face and to ask him to deny them. Dorian takes him up to the schoolroom instead, shows him the thing he made, and stabs him behind the ear. The next morning a chemist he once knew is blackmailed into destroying the body.",
+          "summary": "Basil comes on the eve of Dorian’s thirty-eighth birthday to repeat the rumours to his face and to ask him to deny them. Dorian takes him up to the schoolroom instead, shows him the thing he made, and stabs him behind the ear. The next morning a chemist he once knew is blackmailed into destroying the body.",
           "scenes": [
             {
               "ref": "Chapter XII",
@@ -28626,7 +28626,7 @@
             {
               "ref": "Chapter XIV",
               "title": "",
-              "summary": "A forged note, Alan Campbell’s arrival, and five hours in a locked room with nitric acid."
+              "summary": "A summons, Alan Campbell’s refusal, a threat written on a sheet of paper, and five hours in a locked room with nitric acid."
             }
           ]
         },
@@ -28634,7 +28634,7 @@
           "id": "reckoning",
           "label": "Chapters XV-XVIII",
           "title": "James Vane’s revenge, and the shooting party",
-          "summary": "Dorian goes from a dinner party to an opium den near the docks, where a woman calls him Prince Charming and Sibyl’s brother hears it. James Vane holds a pistol to his head, is talked out of it by a face that looks twenty, and follows him to the country. A beater’s accident removes the threat and leaves Dorian more frightened than before.",
+          "summary": "Dorian goes from a dinner party to an opium den near the docks, where a woman calls him Prince Charming and Sibyl’s brother hears it. James Vane holds a pistol to his head, is talked out of it by a face that looks twenty, and follows him to the country. A shot fired at a hare kills a man hiding in the thicket, and Dorian is terrified until he sees that the dead man is James Vane.",
           "scenes": [
             {
               "ref": "Chapters XV-XVI",
@@ -28649,7 +28649,7 @@
             {
               "ref": "Chapter XVIII",
               "title": "",
-              "summary": "Three days indoors, a shooting party, and a body brought in from the covert."
+              "summary": "Two days indoors, a shooting party, and a body brought in from the covert."
             }
           ]
         },
@@ -28667,7 +28667,7 @@
             {
               "ref": "Chapter XX",
               "title": "",
-              "summary": "A walk home, a mirror broken, the portrait unchanged, and a cry heard by the servants."
+              "summary": "A walk home, a mirror broken, the portrait no better, and a cry heard by the servants."
             }
           ]
         }
@@ -29937,7 +29937,7 @@
             {
               "ref": "Chapter IV",
               "title": "",
-              "summary": "Fifty boxes of earth, the letters Harker is forced to post-date, and his climb down to escape."
+              "summary": "Fifty boxes of earth, the letters Harker is forced to post-date, and his resolve to climb down the precipice."
             }
           ]
         },
@@ -29960,7 +29960,7 @@
             {
               "ref": "Chapter VIII",
               "title": "",
-              "summary": "Lucy found on the seat above the harbour with two small punctures; Mina is called to Budapest to marry Jonathan."
+              "summary": "Lucy found on the seat above the harbour with two small punctures; Mina is called to Jonathan’s sickbed in Budapest."
             }
           ]
         },
@@ -29968,7 +29968,7 @@
           "id": "lucy",
           "label": "Chapters IX-XIII",
           "title": "Lucy’s illness, death and return",
-          "summary": "Seward cannot account for anaemia without blood loss and sends for his old teacher. Van Helsing knows straight away, treats Lucy with garlic and transfusions, and is defeated four times by a household that keeps tidying the flowers away. Lucy dies, is buried, and children on Hampstead Heath begin coming home with small wounds.",
+          "summary": "Seward cannot account for anaemia without blood loss and sends for his old teacher. Van Helsing knows straight away, treats Lucy with garlic and the blood of four men, and is undone by a mother who takes the flowers away and opens the window. Lucy dies, is buried, and children on Hampstead Heath begin coming home with small wounds.",
           "scenes": [
             {
               "ref": "Chapters IX-X",
@@ -29983,7 +29983,7 @@
             {
               "ref": "Chapter XIII",
               "title": "",
-              "summary": "The funeral, the newspaper reports of the bloofer lady, and Van Helsing’s proposal to open the tomb."
+              "summary": "The funeral, the newspaper reports of the bloofer lady, and Van Helsing’s plan to cut off her head."
             }
           ]
         },
@@ -30014,7 +30014,7 @@
           "id": "mina",
           "label": "Chapters XIX-XXIII",
           "title": "The hunt for the boxes, and the attack on Mina",
-          "summary": "The men decide to protect Mina by excluding her from the work, and the decision is what exposes her. Renfield is beaten to death for trying to keep the Count out; upstairs, the men break in on a scene that Seward describes and Mina has to live with afterwards. She is marked on the forehead by the communion wafer.",
+          "summary": "The men decide to protect Mina by excluding her from the work, and the decision is what exposes her. Renfield is flung down and killed for trying to keep the Count out; upstairs, the men break in on a scene that Seward describes and Mina has to live with afterwards. She is marked on the forehead by the communion wafer.",
           "scenes": [
             {
               "ref": "Chapters XIX-XX",
@@ -30037,12 +30037,12 @@
           "id": "pursuit",
           "label": "Chapters XXIV-XXVII and the Note",
           "title": "The chase to Transylvania, and the closing note",
-          "summary": "Mina’s hypnotic trances give the group a compass and her own condition gives them a clock. They work out the route by shipping schedules and river maps, split into parties, and reach the castle road as the sun goes down. The closing note, written seven years later, admits that not one of the papers is an original.",
+          "summary": "Mina’s hypnotic trances give the group a compass and her own condition gives them a clock. They work out the route by shipping schedules and river maps, split into parties, and reach the castle road as the sun goes down. The closing note, written seven years later, admits that hardly one document in the record is authentic.",
           "scenes": [
             {
               "ref": "Chapters XXIV-XXV",
               "title": "",
-              "summary": "Mina is hypnotised at dawn and dusk; the party divides for Varna and then Galatz."
+              "summary": "Mina is hypnotised at dawn and dusk; the party waits at Varna for a ship that puts in at Galatz instead."
             },
             {
               "ref": "Chapter XXVI",
@@ -30052,7 +30052,7 @@
             {
               "ref": "Chapter XXVII and Note",
               "title": "",
-              "summary": "The three women dealt with at the castle, the fight at the gate, Quincey’s death, and a postscript about proof."
+              "summary": "The three women dealt with at the castle, the fight for the cart below the castle, Quincey’s death, and a postscript about proof."
             }
           ]
         }
@@ -31437,7 +31437,7 @@
             {
               "ref": "The Terror by Night",
               "title": "Receivers",
-              "summary": "A girl dying at Davos, and a cold that comes into a London room."
+              "summary": "A young wife dying at Davos, and a cold that comes into a London room."
             },
             {
               "ref": "The Other Bed",
@@ -31516,7 +31516,7 @@
           "id": "tilly-1923",
           "label": "Visible and Invisible, stories 9–12",
           "title": "Mediums, a vampire and the borderland",
-          "summary": "Mr Tilly, run over by a traction-engine at Hyde Park Corner, goes on to his medium’s séance anyway, catches her cheating, and discovers how much of what the spirits say is the medium’s own twaddle. In Mrs. Amworth a jolly widow back from India brings dinner parties and piquet to a Sussex village on the Brighton road, and a retired Cambridge physiologist who has been watching her recognises the vampire. In the Tube is Anthony Carling’s story of a man he saw twice before the man threw himself under a train, and of the ghost that came to him afterwards for help. In Roderick’s Story a friend with a failing heart comes to stay in Tilling, reads the narrator’s spook stories, calls them false, and tells what he saw when the woman he loved was dying in the same room.",
+          "summary": "Mr Tilly, run over by a traction-engine at Hyde Park Corner, goes on to his medium’s séance anyway, catches her cheating, and discovers how much of what the spirits say is the medium’s own twaddle. In Mrs. Amworth a jolly widow back from India brings dinner parties and piquet to a Sussex village on the Brighton road, and a retired Cambridge physiologist who has been watching her recognises the vampire. In the Tube is Anthony Carling’s story of a man he saw twice before the man threw himself under a train, and of the ghost that came to him afterwards for help. In Roderick’s Story a friend with a failing heart comes to stay in Tilling, reads the narrator’s spook stories, calls them false, and tells what he saw in the room he is sleeping in, years before, when the woman he loved lay dying there.",
           "scenes": [
             {
               "ref": "Mr. Tilly’s Séance",
@@ -33386,7 +33386,7 @@
           "id": "chapters-1-3",
           "label": "Chapters I–III",
           "title": "Waiting outside the dance",
-          "summary": "Ethan stands in the cold watching Mattie Silver dance with Denis Eady, and walks her home the long way past the graveyard. Zeena is awake when they get in, and by the third chapter she has announced a trip to Bettsbridge to see a new doctor.",
+          "summary": "Ethan stands in the cold watching Mattie Silver dance with Denis Eady, and walks her home by the coasting hill and past the Frome graves. Zeena is awake when they get in, and by the third chapter she has announced a trip to Bettsbridge to see a new doctor.",
           "scenes": []
         },
         {
@@ -33407,7 +33407,7 @@
           "id": "chapters-8-9",
           "label": "Chapters VIII–IX",
           "title": "Mattie leaves, and the sled ride",
-          "summary": "Ethan drafts a letter he cannot send, goes to Andrew Hale for an advance he does not get, and drives Mattie to the station by way of the sledding hill. She asks him not to leave her, and then asks him for something else.",
+          "summary": "Ethan drafts a letter he cannot send, sets out to ask Andrew Hale for an advance and turns back on the road, and drives Mattie to the station by way of the sledding hill. She asks him not to leave her, and then asks him for something else.",
           "scenes": []
         },
         {
@@ -34525,7 +34525,7 @@
           "id": "letters",
           "label": "Letters I-IV",
           "title": "Walton’s letters",
-          "summary": "Robert Walton, sailing north in search of a passage and a friend, writes to a sister who never answers. Ice closes around the ship, a huge figure crosses it on a sledge, and the next day the crew pulls aboard a starving European who has been chasing him. Everything that follows is inside a letter.",
+          "summary": "Robert Walton, sailing north in search of a passage and a friend, writes to a sister whose replies we never see. Ice closes around the ship, a huge figure crosses it on a sledge, and the next day the crew pulls aboard a starving European who has been chasing him. Everything that follows is inside a letter.",
           "scenes": [
             {
               "ref": "Letter I",
@@ -34652,7 +34652,7 @@
             {
               "ref": "Chapters XXI-XXIII",
               "title": "",
-              "summary": "Clerval is found strangled and Victor is charged; acquitted, he marries Elizabeth, who dies that night."
+              "summary": "Clerval is found strangled and Victor is charged; released, he marries Elizabeth, who dies that night."
             }
           ]
         },
@@ -34660,17 +34660,17 @@
           "id": "pursuit",
           "label": "Chapter XXIV and Walton’s close",
           "title": "The chase north, and Victor’s death",
-          "summary": "Victor chases the creature north until the ice stops both of them, and dies on Walton’s ship still recommending ambition in the same breath as warning against it. The creature comes aboard to grieve over him, tells Walton what the pursuit cost on its side, and leaves. Nobody is left to settle who was right.",
+          "summary": "Victor chases the creature north until the sea breaks the ice between them, and dies on Walton’s ship still recommending ambition in the same breath as warning against it. The creature comes aboard to grieve over him, tells Walton what the pursuit cost on its side, and leaves. Nobody is left to settle who was right.",
           "scenes": [
             {
               "ref": "Chapter XXIV",
               "title": "",
-              "summary": "The pursuit across Russia and the ice; Victor’s last speech to Walton’s mutinous crew."
+              "summary": "The pursuit down the Rhône, across the Black Sea and Russia, and out over the ice."
             },
             {
               "ref": "Walton, in continuation",
               "title": "",
-              "summary": "Victor dies; the creature is found weeping over the body and speaks for itself one last time."
+              "summary": "Victor rouses the mutinous crew and dies; the creature is found grieving over the body and speaks for itself one last time."
             }
           ]
         }
@@ -35989,7 +35989,7 @@
           "id": "london",
           "label": "Chapters 20–28",
           "title": "Little Britain, Barnard's Inn and the Castle",
-          "summary": "London turns out to be smaller and dirtier than expected. Pip meets Herbert Pocket, who renames him Handel and teaches him how to hold a fork; Wemmick, who keeps a drawbridge between his office and his feelings; and Jaggers, who washes his hands of his clients with scented soap. Joe visits and is made miserable by good manners.",
+          "summary": "London turns out to be uglier, narrower and dirtier than Pip expected. Pip meets Herbert Pocket, who renames him Handel and teaches him how to hold a fork; Wemmick, who keeps a drawbridge between his office and his feelings; and Jaggers, who washes his hands of his clients with scented soap. Joe visits and is made miserable by good manners.",
           "scenes": [
             {
               "ref": "Chapter 20",
@@ -36032,7 +36032,7 @@
             {
               "ref": "Chapter 38",
               "title": "",
-              "summary": "Estella warns him that she has no heart and must be taken as she has been made."
+              "summary": "Estella warns Pip against herself, tells Miss Havisham she is only what she was made, and admits she entraps every man but him."
             },
             {
               "ref": "Chapter 39",
@@ -36083,12 +36083,12 @@
             {
               "ref": "Chapter 54",
               "title": "",
-              "summary": "The rowing boat, the customs galley and Compeyson under the paddle-wheel."
+              "summary": "The rowing boat, the four-oared galley and Compeyson under the paddle-wheel."
             },
             {
               "ref": "Chapter 56",
               "title": "",
-              "summary": "Magwitch’s death, and the only lie in the book that is entirely kind."
+              "summary": "Magwitch’s death, after Pip tells him that his daughter is alive, a lady, and loved."
             },
             {
               "ref": "Chapter 59",
@@ -37479,7 +37479,7 @@
           "id": "front-matter",
           "label": "Prefatory documents",
           "title": "The publisher’s note and Gulliver’s letter",
-          "summary": "Before the first voyage the reader is given a publisher’s note vouching for Gulliver’s character and a furious letter from Gulliver complaining that his cousin Sympson published the book against his advice and let the text be tampered with. The satire is under way before the travels begin: the apparatus that guarantees a true account is the first thing shown to be unreliable.",
+          "summary": "Before the first voyage the reader is given a publisher’s note vouching for Gulliver’s character and a furious letter from Gulliver complaining that his cousin Sympson pressed him into publishing and then let the text be tampered with. The satire is under way before the travels begin: the apparatus that guarantees a true account is the first thing shown to be unreliable.",
           "scenes": [
             {
               "ref": "The Publisher to the Reader",
@@ -37525,7 +37525,7 @@
           "id": "part-2",
           "label": "Part II",
           "title": "Brobdingnag",
-          "summary": "Left on a beach where the corn is forty feet high, Gulliver becomes a farm curiosity, then a queen’s pet, then a lecturer on England to a king who listens carefully and is appalled. Everything he is proud of in England (the constitution, the law, finance, gunpowder) is laid before a listener who neither flatters him nor interrupts, and who is appalled when he has finished.",
+          "summary": "Left on a beach where the corn is forty feet high, Gulliver becomes a farm curiosity, then a queen’s pet, then a lecturer on England to a king. Everything he is proud of in England (the constitution, the law, finance, gunpowder) is laid before a listener who neither flatters him nor interrupts, and who is appalled when he has finished.",
           "scenes": [
             {
               "ref": "Part II, Chapters I–II",
@@ -37553,7 +37553,7 @@
           "id": "part-3",
           "label": "Part III",
           "title": "Laputa, Balnibarbi and the Struldbrugs",
-          "summary": "The loosest and most various of the voyages: a flying island whose philosophers must be struck with bladders to attend to anything, a ruined country improved into famine by its academy, a governor who can raise the dead, and the Struldbrugs, who are immortal but not young. Reason is not attacked here; reason detached from ordinary life is.",
+          "summary": "The loosest and most various of the voyages: a flying island whose philosophers must be struck with bladders to attend to anything, a ruined country improved into famine by its academy, a governor who can raise the dead, and the Struldbrugs, who are immortal but not young. The target throughout is reason cut off from ordinary life.",
           "scenes": [
             {
               "ref": "Part III, Chapters I–III",
@@ -40282,7 +40282,7 @@
           "id": "upriver",
           "label": "Part II",
           "title": "Up the river",
-          "summary": "Lying on his steamer, Marlow overhears the manager and his uncle hoping the climate will do away with Kurtz. The journey upriver takes two months, with a crew of cannibals and a few pilgrims with their staves. Fifty miles below the Inner Station Marlow finds a woodpile, a warning and an old book on seamanship annotated in what looks like cipher. After a night of fog he is attacked from the bank; his helmsman is killed by a spear, and Marlow throws his bloodied shoes overboard. Here he breaks off to tell his listeners what he later learned of Kurtz: the ivory, the Intended, and the report that ends Exterminate all the brutes!",
+          "summary": "Lying on his steamer, Marlow overhears the manager and his uncle hoping the climate will do away with Kurtz. The journey upriver takes two months, with a crew of cannibals and a few pilgrims with their staves. Fifty miles below the Inner Station Marlow finds a woodpile, a warning and an old book on seamanship annotated in what looks like cipher. Two hours after a morning fog lifts, the steamer is attacked from the bank; the helmsman is killed by a spear, and Marlow throws his bloodied shoes overboard. Here he breaks off to tell his listeners what he later learned of Kurtz: the ivory, the Intended, and the report that ends Exterminate all the brutes!",
           "scenes": [
             {
               "ref": "Part II",
@@ -42079,7 +42079,7 @@
           "id": "act-1",
           "label": "Act I",
           "title": "The king, the tavern and the rebels",
-          "summary": "The king postpones his crusade because Wales and Scotland are both in flames, and envies Northumberland the son he has. Hal robs a coach with Falstaff and then tells the audience, alone, that the whole tavern life is a calculated eclipse. Hotspur refuses to hand over his prisoners and the Percys begin to plan.",
+          "summary": "The king postpones his crusade because Wales and Scotland are both in flames, and envies Northumberland the son he has. Hal agrees to Poins’s trick on Falstaff at Gadshill and then tells the audience, alone, that the whole tavern life is a calculated eclipse. Hotspur refuses to hand over his prisoners and the Percys begin to plan.",
           "scenes": [
             {
               "ref": "1.1",
@@ -42130,7 +42130,7 @@
           "id": "act-3",
           "label": "Act III",
           "title": "The rebels at Bangor, and the king and Hal",
-          "summary": "At Bangor the rebels divide England on a map and quarrel about the course of a river, and Glendower and Hotspur cannot be in a room together for ten lines. In London the king tells his son that a crown is kept by being rarely seen, and compares him, to his face, with Richard II. Hal promises to redeem everything on Percy’s head.",
+          "summary": "At Bangor the rebels divide England on a map and quarrel about the course of a river, and Glendower and Hotspur cannot get through ten lines without a quarrel. In London the king tells his son that a crown is kept by being rarely seen, and compares him, to his face, with Richard II. Hal promises to redeem everything on Percy’s head.",
           "scenes": [
             {
               "ref": "3.1",
@@ -42153,7 +42153,7 @@
           "id": "act-4",
           "label": "Act IV",
           "title": "The rebellion thins out",
-          "summary": "Northumberland is sick, Glendower cannot raise his men in time, and Hotspur decides that fighting without them will look better anyway. Falstaff marches a company of scarecrows he has recruited for the bribes, and admits it. The king offers terms that Worcester decides not to repeat.",
+          "summary": "Northumberland is sick, Glendower cannot raise his men in time, and Hotspur decides that fighting without them will look better anyway. Falstaff marches a company of scarecrows he has recruited for the bribes, and admits it. Blunt brings the king’s offer of terms, and Hotspur answers it with the Percys’ grievances.",
           "scenes": [
             {
               "ref": "4.1",
@@ -43529,7 +43529,7 @@
           "id": "act-4",
           "label": "Act IV",
           "title": "Gaultree and the Jerusalem Chamber",
-          "summary": "At Gaultree Forest Westmoreland and Prince John meet the rebels. John agrees that their grievances shall be redressed, drinks with their leaders, and waits until their army has dispersed before arresting the Archbishop, Mowbray and Hastings for treason. Falstaff takes a surrendering knight, Colevile, and praises sherris-sack. At Westminster the King collapses on hearing the news. The Prince, sitting by him, thinks him dead, takes the crown from his pillow and puts it on. The King wakes, accuses him of wishing his death, and is reconciled when Hal explains himself; he advises his son to keep the country busy with foreign wars, and dies in the chamber called Jerusalem.",
+          "summary": "At Gaultree Forest Westmoreland and Prince John meet the rebels. John agrees that their grievances shall be redressed, drinks with their leaders, and waits until their army has dispersed before arresting the Archbishop, Mowbray and Hastings for treason. Falstaff takes a surrendering knight, Colevile, and praises sherris-sack. At Westminster the King collapses on hearing the news. The Prince, sitting by him, thinks him dead, takes the crown from his pillow and puts it on. The King wakes, accuses him of wishing his death, and is reconciled when Hal explains himself; he advises his son to keep the country busy with foreign wars, and asks to be carried to the chamber called Jerusalem to die.",
           "scenes": [
             {
               "ref": "4.1–4.2",
@@ -43557,7 +43557,7 @@
           "id": "act-5",
           "label": "Act V",
           "title": "The new king, and Falstaff rejected",
-          "summary": "In Gloucestershire Shallow entertains Falstaff, whose servant Davy asks favours for a friend who is a knave. At Westminster the Lord Chief Justice expects to be ruined by the new King; instead Henry V confirms him in office and tells his brothers that his wildness has died with his father. In Shallow’s orchard Pistol brings the news of the old King’s death and Falstaff sets out for London, declaring the laws of England at his command. The Hostess and Doll are arrested after a man is killed. At the coronation procession Falstaff calls out to the King, who banishes him and his companions from within ten miles of his person; the Chief Justice sends them to the Fleet.",
+          "summary": "In Gloucestershire Shallow entertains Falstaff, and Shallow’s man Davy asks favours for a friend who is a knave. At Westminster the Lord Chief Justice expects to be ruined by the new King; instead Henry V confirms him in office and tells his brothers that his wildness has died with his father. In Shallow’s orchard Pistol brings the news of the old King’s death and Falstaff sets out for London, declaring the laws of England at his command. The Hostess and Doll are arrested after a man is killed. At the coronation procession Falstaff calls out to the King, who banishes him and his companions from within ten miles of his person; the Chief Justice sends them to the Fleet.",
           "scenes": [
             {
               "ref": "5.1",
@@ -45012,7 +45012,7 @@
             {
               "ref": "3.5",
               "title": "The French react",
-              "summary": "The French nobility are appalled to be beaten in the field by an army they despise."
+              "summary": "The French nobility are appalled that an army they despise has crossed the Somme unopposed."
             },
             {
               "ref": "3.6",
@@ -45030,7 +45030,7 @@
           "id": "act-4",
           "label": "Act IV",
           "title": "The night before Agincourt, and the battle",
-          "summary": "Disguised in a borrowed cloak, Henry argues with two soldiers about whether a king answers for the souls of the men he leads, loses the argument in substance, and prays alone about his father’s usurpation. In the morning he answers the shortage of men with the Crispin’s Day speech. The victory is followed immediately by an order to kill the prisoners.",
+          "summary": "Disguised in a borrowed cloak, Henry argues with two soldiers about whether a king answers for the souls of the men he leads, loses the argument in substance, and prays alone about his father’s usurpation. In the morning he answers the shortage of men with the Crispin’s Day speech. Before the victory is certain, he orders the prisoners killed.",
           "scenes": [
             {
               "ref": "4.0",
@@ -46357,7 +46357,7 @@
           "id": "lowood",
           "label": "Chapters 5–10",
           "title": "Lowood, Helen Burns and eight years",
-          "summary": "A charity school run on cold water, burnt porridge and public humiliation, where Jane meets two answers to injustice: Miss Temple’s practical decency and Helen Burns’s doctrine of endurance. A typhus epidemic kills half the school and shames the management into reform.",
+          "summary": "A charity school run on cold water, burnt porridge and public humiliation, where Jane meets two answers to injustice: Miss Temple’s practical decency and Helen Burns’s doctrine of endurance. A typhus epidemic puts more than half the school to bed and shames the management into reform.",
           "scenes": [
             {
               "ref": "Chapter 6",
@@ -46367,12 +46367,12 @@
             {
               "ref": "Chapter 7",
               "title": "",
-              "summary": "Brocklehurst orders the girls’ hair cut off while his own daughters stand by in velvet and false curls."
+              "summary": "Brocklehurst orders the girls’ hair cut off while his wife and daughters stand by in velvet, furs and curls."
             },
             {
               "ref": "Chapter 9",
               "title": "",
-              "summary": "Typhus empties the school; Helen dies of consumption in Jane’s arms, unmourned by the institution."
+              "summary": "Typhus empties the classrooms; Helen dies of consumption in Jane’s arms, and fifteen years pass before her grave has a stone."
             },
             {
               "ref": "Chapter 10",
@@ -46413,7 +46413,7 @@
           "id": "engagement",
           "label": "Chapters 21–27",
           "title": "The proposal, the interruption and the flight",
-          "summary": "Mrs Reed dies confessing that she hid a letter from Jane’s uncle. Rochester proposes in the orchard and the chestnut tree is split by lightning that night. At the altar a solicitor produces a marriage register from Spanish Town, and Jane is taken upstairs to be shown what is in the attic.",
+          "summary": "Mrs Reed dies confessing that she hid a letter from Jane’s uncle. Rochester proposes in the orchard and the chestnut tree is split by lightning that night. At the altar a solicitor reads out proof of a marriage in Spanish Town fifteen years before, and Jane is taken upstairs to be shown what is in the attic.",
           "scenes": [
             {
               "ref": "Chapter 23",
@@ -46428,7 +46428,7 @@
             {
               "ref": "Chapter 27",
               "title": "",
-              "summary": "Rochester’s account of Jamaica and his offer of the south of France; Jane leaves before dawn with nothing."
+              "summary": "Rochester’s account of Jamaica and his offer of the south of France; Jane leaves before dawn with a parcel and twenty shillings."
             }
           ]
         },
@@ -46441,7 +46441,7 @@
             {
               "ref": "Chapter 30",
               "title": "",
-              "summary": "Village school-teaching, and Jane’s discomfort at how far she has fallen in her own estimation."
+              "summary": "German lessons with Diana, St John’s offer of the village school at Morton, and news that an uncle’s fortune has gone elsewhere."
             },
             {
               "ref": "Chapter 33",
@@ -46479,7 +46479,7 @@
             {
               "ref": "Chapter 38",
               "title": "",
-              "summary": "Reader, I married him: a quiet wedding, St John’s death in India, and ten years of being somebody’s life."
+              "summary": "Reader, I married him: a quiet wedding, St John’s last letter from India, and ten years of being somebody’s life."
             }
           ]
         }
@@ -47898,7 +47898,7 @@
             {
               "ref": "The Last Night",
               "title": "",
-              "summary": "The weeping voice, the rejected chemicals, the axe, and a suicide found among Jekyll’s papers."
+              "summary": "The weeping voice, the rejected chemicals, the axe, a suicide on the cabinet floor, and Jekyll’s papers on the table."
             }
           ]
         },
@@ -49210,7 +49210,7 @@
             {
               "ref": "2.4",
               "title": "Portia's nerves",
-              "summary": "She sends a boy to the Capitol and cannot say why, in the play’s most anxious scene."
+              "summary": "Portia sends a boy to the Capitol and cannot say why, in the play’s most anxious scene."
             }
           ]
         },
@@ -49218,7 +49218,7 @@
           "id": "act-3",
           "label": "Act III",
           "title": "The assassination and Antony’s funeral speech",
-          "summary": "Caesar turns down a petition with a speech about being constant as the northern star, and is stabbed by eight men. Brutus then makes two mistakes in one scene: he lets Antony live and lets him speak. The crowd that applauded Brutus’s prose walks out of the Forum carrying torches, and kills a poet for having the wrong name.",
+          "summary": "Caesar turns down a petition with a speech about being constant as the northern star, and is stabbed, Brutus last. Brutus then makes two mistakes in one scene: he lets Antony live and lets him speak. The crowd that applauded Brutus’s prose walks out of the Forum carrying torches, and kills a poet for having the wrong name.",
           "scenes": [
             {
               "ref": "3.1",
@@ -50486,7 +50486,7 @@
           "id": "act-1",
           "label": "Act I",
           "title": "France’s demand, and the Bastard’s choice",
-          "summary": "Chatillion asks for the crown on Arthur’s behalf and is sent home with a threat. Eleanor then tells her son, in an aside, what his claim really rests on. The rest of the act is a Northamptonshire inheritance case: two brothers arguing over five hundred pounds a year, which John settles by offering the elder the chance to be called Richard the Lionheart’s son instead.",
+          "summary": "Chatillion asks for the crown on Arthur’s behalf and is sent home with a threat. Eleanor then tells her son, in an aside, what his claim really rests on. The rest of the act is a Northamptonshire inheritance case: two brothers arguing over five hundred pounds a year, which Eleanor settles by offering the elder the chance to be called Richard the Lionheart’s son instead.",
           "scenes": [
             {
               "ref": "1.1",
@@ -52079,7 +52079,7 @@
             {
               "ref": "1.3",
               "title": "Goneril's instructions",
-              "summary": "She tells her steward to treat the old king and his knights coldly on purpose."
+              "summary": "Goneril tells her steward to treat the old king and his knights coldly on purpose."
             },
             {
               "ref": "1.4",
@@ -52140,7 +52140,7 @@
             {
               "ref": "3.3",
               "title": "Gloucester's secret",
-              "summary": "He confides his loyalty to the king to the son who immediately reports it."
+              "summary": "Gloucester confides his loyalty to the king to the son who immediately reports it."
             },
             {
               "ref": "3.4",
@@ -52183,7 +52183,7 @@
             {
               "ref": "4.3",
               "title": "Cordelia's grief reported",
-              "summary": "A gentleman describes how she received the letters, in a scene the Folio does not print."
+              "summary": "A gentleman describes how Cordelia received the letters, in a scene the Folio does not print."
             },
             {
               "ref": "4.4",
@@ -52211,7 +52211,7 @@
           "id": "act-5",
           "label": "Act V",
           "title": "The battle, and the deaths of Cordelia and Lear",
-          "summary": "The British army defeats the French, so the reunion of Act IV lasts one scene. Edmund’s counter-order for Cordelia’s death outlives the duel that kills him, by minutes. The play gives no consolation: the last thing Lear does is ask five people to look at his daughter’s lips.",
+          "summary": "The British army defeats the French, so the reunion of Act IV lasts one scene. Edmund’s order for Cordelia’s death is carried out while he lies dying from the duel, and his reprieve comes too late. The play gives no consolation: the last thing Lear does is ask the people round him to look at his daughter’s lips.",
           "scenes": [
             {
               "ref": "5.1",
@@ -53548,7 +53548,7 @@
             {
               "ref": "1.2",
               "title": "Armado in love",
-              "summary": "Armado spars with his page Moth, is given Costard to keep, meets Jaquenetta in nine words, and resolves to write a sonnet."
+              "summary": "Armado spars with his page Moth, is given Costard to keep, trades a dozen short lines with Jaquenetta, and resolves to write a sonnet."
             }
           ]
         },
@@ -53556,12 +53556,12 @@
           "id": "act-2",
           "label": "Act II",
           "title": "The Princess arrives",
-          "summary": "The Princess of France arrives to settle a debt of a hundred thousand crowns and the ownership of Aquitaine. Navarre will not let her through the gate, so she negotiates standing outside it. Each of the four men picks out one of the four women and goes to Boyet afterwards to ask her name, which tells the audience how much attention the courtship has had.",
+          "summary": "The Princess of France arrives to settle a debt of a hundred thousand crowns and the ownership of Aquitaine. Navarre will not let her through the gate, so she negotiates standing outside it. Three of the men go to Boyet afterwards to ask the names of the women they have picked out, which tells the audience how much attention the courtship has had.",
           "scenes": [
             {
               "ref": "2.1",
               "title": "Outside the gates",
-              "summary": "Boyet flatters, the Princess will have none of it, the Aquitaine accounts are disputed and adjourned, and four men leave in love with four women whose names they do not know."
+              "summary": "Boyet flatters, the Princess will have none of it, the Aquitaine accounts are disputed and adjourned, and three of the four men have to ask Boyet who their ladies are."
             }
           ]
         },
@@ -53569,7 +53569,7 @@
           "id": "act-3",
           "label": "Act III",
           "title": "Costard carries two letters",
-          "summary": "Armado sends Costard with a letter for Jaquenetta. Berowne, five minutes later, sends the same man with a poem for Rosaline. Nobody checks. The scene ends with Berowne alone, working out in fifty lines of self-disgust how a man who spent Act I mocking lovers has become one, and deciding to write anyway.",
+          "summary": "Armado sends Costard with a letter for Jaquenetta. Berowne, five minutes later, sends the same man with a poem for Rosaline. Nobody checks. The scene ends with Berowne alone, working out in thirty lines of self-disgust how a man who spent Act I mocking lovers has become one, and deciding to write anyway.",
           "scenes": [
             {
               "ref": "3.1",
@@ -53582,7 +53582,7 @@
           "id": "act-4",
           "label": "Act IV",
           "title": "The letters misdelivered, and the four men exposed",
-          "summary": "The Princess hunts a deer and is handed Armado’s letter by mistake. Holofernes and Nathaniel are handed Berowne’s and send it straight to the King. Then, in the park, each of the four men in turn reads his own love poem out loud while the others listen from hiding, and Berowne, caught last, argues the oath away for all of them.",
+          "summary": "The Princess hunts a deer and is handed Armado’s letter by mistake. Holofernes and Nathaniel are handed Berowne’s and send it straight to the King. Then, in the park, three of the men in turn read their love poems aloud while the others listen from hiding, and Berowne, caught last, argues the oath away for all of them.",
           "scenes": [
             {
               "ref": "4.1",
@@ -53592,7 +53592,7 @@
             {
               "ref": "4.2",
               "title": "The schoolmaster",
-              "summary": "Holofernes praises the deer in Latin and English, extemporises a poem on the letter L, and reads Berowne’s sonnet well enough to know it must go to the King."
+              "summary": "Holofernes praises the deer in Latin and English, extemporises a poem on the letter L, and hears Berowne’s sonnet read well enough to know it must go to the King."
             },
             {
               "ref": "4.3",
@@ -55098,7 +55098,7 @@
             {
               "ref": "The Rime of the Ancyent Marinere",
               "title": "The becalmed sea",
-              "summary": "Thirst, rotting decks and a painted ship: the stretch of the poem everybody remembers, and the one Coleridge’s contemporaries found absurd."
+              "summary": "Thirst, rotting decks and a painted ship: the stretch of the poem everybody remembers."
             }
           ]
         },
@@ -55106,7 +55106,7 @@
           "id": "experiments-in-speech",
           "label": "The talking poems",
           "title": "Wordsworth’s narrative poems",
-          "summary": "Wordsworth’s contribution begins with poems that sound like someone telling you a story at a gate. The diction is deliberately flat, the narrators are unreliable or obtuse, and the incidents are so slight that reviewers thought the book a joke. The Thorn is narrated by a garrulous retired sea captain; The Idiot Boy spends four hundred lines on a boy who is never in any danger.",
+          "summary": "Many of Wordsworth’s poems sound like someone telling you a story at a gate. The diction is deliberately flat, the narrators are unreliable or obtuse, and the incidents are so slight that reviewers thought the book a joke. The Thorn is narrated by a garrulous retired sea captain; The Idiot Boy spends four hundred lines on a boy who is never in any danger.",
           "scenes": [
             {
               "ref": "Goody Blake and Harry Gill",
@@ -55162,7 +55162,7 @@
           "id": "the-doctrine",
           "label": "The arguing poems",
           "title": "Expostulation and Reply, and The Tables Turned",
-          "summary": "Two short poems in dialogue set out the book’s position more baldly than the Advertisement dares: reading is not the only way of learning, and dissection destroys what it examines. They are quotable to the point of being misquoted, and they are the reason the volume is treated as a manifesto.",
+          "summary": "Two short poems in dialogue set out the book’s position more baldly than the Advertisement dares: reading is not the only way of learning, and dissection destroys what it examines. They are quotable to the point of being misquoted.",
           "scenes": [
             {
               "ref": "Expostulation and Reply",
@@ -55185,7 +55185,7 @@
           "id": "tintern-abbey",
           "label": "Tintern Abbey",
           "title": "Wordsworth returns to the Wye",
-          "summary": "The last poem in the volume is unlike everything before it: unrhymed, unhurried, and built out of one long act of remembering. Wordsworth composed it in his head walking back to Bristol and wrote nothing down until he arrived. It states the whole Romantic argument about memory, landscape and consolation, and then hands it to his sister as insurance.",
+          "summary": "The last poem in the volume is unlike the ballads before it: blank verse, unhurried, and built out of one long act of remembering. Wordsworth composed it in his head walking back to Bristol and wrote nothing down until he arrived. It states the whole Romantic argument about memory, landscape and consolation, and then hands it to his sister as insurance.",
           "scenes": [
             {
               "ref": "Tintern Abbey, lines 1–22",
@@ -56254,7 +56254,7 @@
           "id": "antiquary-1904",
           "label": "Ghost Stories of an Antiquary (1904)",
           "title": "Canon Alberic, the whistle and the other first stories",
-          "summary": "The first volume sets the method: a scholar, an object, a piece of research, and something that arrives because the research succeeded. Canon Alberic’s scrap-book, the picture that moves between viewings, the whistle on the Suffolk coast, the thing in Abbot Thomas’s well: all of it is here in the first eight.",
+          "summary": "The first volume sets the method: a scholar, an object, a piece of research, and something that arrives because the research succeeded. Canon Alberic’s scrap-book, the picture that moves between viewings, the whistle at Burnstow, the thing in Abbot Thomas’s well: all of it is here in the first eight.",
           "scenes": [
             {
               "ref": "Canon Alberic’s Scrap-book",
@@ -56269,12 +56269,12 @@
             {
               "ref": "The Mezzotint",
               "title": "The picture",
-              "summary": "An engraving of a country house changes between one viewing and the next, and a group of Cambridge men watch it happen in instalments."
+              "summary": "An engraving of a country house changes between one viewing and the next, and a group of university men watch it happen in instalments."
             },
             {
               "ref": "“Oh, Whistle, and I’ll Come to You, My Lad”",
               "title": "The whistle",
-              "summary": "A professor of ontography digs an ancient whistle out of a Templar preceptory on the Suffolk coast, and blows it."
+              "summary": "A professor of ontography digs an ancient whistle out of a Templar preceptory at Burnstow on the East Coast, and blows it."
             }
           ]
         },
@@ -56282,12 +56282,12 @@
           "id": "more-ghost-stories",
           "label": "More Ghost Stories (1911)",
           "title": "Runes, cathedral stalls and a library card",
-          "summary": "In the second volume James’s machinery gets funnier and nastier together. Casting the Runes makes a scholarly grudge into an occult contract with a deadline; The Tractate Middoth puts the horror between library shelves; the Barchester stories bring the cathedral close into the centre of his imagination.",
+          "summary": "In the second volume James’s machinery gets funnier and nastier together. Casting the Runes makes a scholarly grudge into an occult contract with a deadline; The Tractate Middoth puts the horror between library shelves; The Stalls of Barchester Cathedral brings the cathedral close into the centre of his imagination.",
           "scenes": [
             {
               "ref": "Casting the Runes",
               "title": "The deadline",
-              "summary": "Karswell passes a slip of paper to a man who reviewed his book badly, and the recipient has three months to pass it back."
+              "summary": "Karswell passes a slip of paper to the man who had his paper on alchemy turned down, and the recipient has three months to pass it back."
             },
             {
               "ref": "The Tractate Middoth",
@@ -56333,7 +56333,7 @@
             {
               "ref": "Rats",
               "title": "The figure on the bed",
-              "summary": "A guest at a Suffolk inn opens a door he was told not to open."
+              "summary": "A guest alone on the upper floor of a Suffolk inn turns the key of a locked bedroom and looks in."
             },
             {
               "ref": "Wailing Well",
@@ -57185,7 +57185,7 @@
           "id": "act-3",
           "label": "Act III",
           "title": "Banquo’s murder, and the banquet",
-          "summary": "Banquo suspects and says nothing. Macbeth, who now fears the second half of the prophecy more than the first, hires murderers without telling his wife. Fleance escapes, the ghost sits in Macbeth’s chair at the banquet, and the marriage that planned the first murder comes apart over the third.",
+          "summary": "Banquo suspects and says nothing. Macbeth, who now fears the second half of the prophecy more than the first, hires murderers without telling his wife. Fleance escapes, the ghost sits in Macbeth’s chair at the banquet, and the marriage that planned Duncan’s murder starts to come apart over Banquo’s.",
           "scenes": [
             {
               "ref": "3.1",
@@ -57233,7 +57233,7 @@
             {
               "ref": "4.2",
               "title": "Fife",
-              "summary": "Lady Macduff and her son are murdered on stage."
+              "summary": "Lady Macduff’s son is murdered on stage, and she is chased off crying murder."
             },
             {
               "ref": "4.3",
@@ -58515,7 +58515,7 @@
             {
               "ref": "4.2",
               "title": "The warrant",
-              "summary": "Angelo’s message demands Claudio’s head by four; the Duke persuades the Provost to disobey."
+              "summary": "Angelo’s message demands Claudio’s execution by four and his head by five; the Duke persuades the Provost to disobey."
             },
             {
               "ref": "4.3",
@@ -58525,7 +58525,7 @@
             {
               "ref": "4.4",
               "title": "Angelo alone",
-              "summary": "He cannot understand the Duke’s instructions, and admits he would not undo the deed now if he could."
+              "summary": "Angelo cannot make sense of the Duke’s letters; alone, he trusts Isabella’s shame to keep her quiet, and wishes Claudio had lived."
             },
             {
               "ref": "4.5",
@@ -59945,7 +59945,7 @@
           "id": "act-3",
           "label": "Act III",
           "title": "The buck-basket",
-          "summary": "Evans and Caius meet at last, are disarmed by the Host, and make friends in order to be revenged on him. Ford invites the town to see a monster. Falstaff arrives at Mistress Ford’s, Mistress Page runs in with the news that Ford is coming with half Windsor, and they hide Falstaff in a basket of dirty linen that the servants carry out and tip into the Thames at Datchet Mead. Ford searches the house and finds nothing. Anne tells Fenton she will not marry Slender, and would rather be buried alive and bowled to death with turnips than marry Caius. Falstaff, soaked, accepts a second appointment and tells Brook everything.",
+          "summary": "Evans and Caius meet at last, are disarmed by the Host, and make friends in order to be revenged on him. Ford invites the town to see a monster. Falstaff arrives at Mistress Ford’s, Mistress Page runs in with the news that Ford is coming with half Windsor, and they hide Falstaff in a basket of dirty linen that the servants carry out and tip into the Thames at Datchet Mead. Ford searches the house and finds nothing. Anne begs her mother not to marry her to Slender, and would rather be buried alive and bowled to death with turnips than marry Caius. Falstaff, soaked, accepts a second appointment and tells Brook everything.",
           "scenes": [
             {
               "ref": "3.1",
@@ -59973,7 +59973,7 @@
           "id": "act-4",
           "label": "Act IV",
           "title": "The witch of Brentford",
-          "summary": "Evans examines young William Page in his Latin while Mistress Quickly hears rude words in every case. At the Fords’ house Falstaff is trapped again. Ford checks the basket, so the wives dress Falstaff in the clothes of the fat woman of Brentford, whom Ford calls a witch, and Ford beats him out of the house. The wives then tell their husbands everything, Ford begs his wife’s pardon, and the four plan a last public shaming at Herne’s oak. Page secretly arranges for Slender to carry off Anne, Mistress Page for Caius to do so, and Anne tells Fenton, who arranges with the Host for a vicar. Three Germans run off with the Host’s horses.",
+          "summary": "Evans examines young William Page in his Latin while Mistress Quickly hears rude words in every case. At the Fords’ house Falstaff is trapped again. Ford is sure to search the basket, so the wives dress Falstaff in the clothes of the fat woman of Brentford, whom Ford calls a witch, and Ford beats him out of the house. The wives then tell their husbands everything, Ford begs his wife’s pardon, and the four plan a last public shaming at Herne’s oak. Page secretly arranges for Slender to carry off Anne, Mistress Page for Caius to do so, and Anne tells Fenton, who arranges with the Host for a vicar. Three Germans run off with the Host’s horses.",
           "scenes": [
             {
               "ref": "4.1",
@@ -61228,7 +61228,7 @@
           "id": "shore",
           "label": "Chapters 1–22",
           "title": "New Bedford, Queequeg and Nantucket",
-          "summary": "Ishmael goes to sea to keep himself from stepping into the street and knocking people’s hats off. He shares a bed with a tattooed harpooneer, hears Father Mapple preach on Jonah from a pulpit shaped like a ship’s bow, and signs articles with two Quaker owners who haggle over his lay while Ahab stays below, unseen.",
+          "summary": "Ishmael goes to sea to keep himself from stepping into the street and knocking people’s hats off. He shares a bed with a tattooed harpooneer, hears Father Mapple preach on Jonah from a pulpit shaped like a ship’s bow, and signs articles with two Quaker owners who haggle over his lay while Ahab keeps to his house, unseen.",
           "scenes": [
             {
               "ref": "Chapter 1",
@@ -61335,7 +61335,7 @@
             {
               "ref": "Chapter 93",
               "title": "The Castaway",
-              "summary": "Pip is abandoned in the water; the ship recovers a body and the crew decides the mind is gone."
+              "summary": "Pip is abandoned in the water; the ship picks him up by chance, and from then on the crew say he is out of his mind."
             },
             {
               "ref": "Chapter 94",
@@ -61358,7 +61358,7 @@
           "id": "omens",
           "label": "Chapters 111–132",
           "title": "The quadrant, the compass, the coffin and the Rachel",
-          "summary": "Ahab smashes the quadrant, remagnetises the compass needles after a typhoon, and will not give the Rachel’s captain a day’s search for his own lost son. The carpenter caulks Queequeg’s coffin as a life-buoy. In one clear morning Ahab asks Starbuck to let him look into a human eye, and then orders him to stay aboard.",
+          "summary": "Ahab smashes the quadrant, remagnetises the compass needles after a typhoon, and will not give the Rachel’s captain a day’s search for his own lost son. The carpenter caulks Queequeg’s coffin as a life-buoy. On one clear morning Ahab looks into Starbuck’s eyes, hears him plead for home, and does not turn back.",
           "scenes": [
             {
               "ref": "Chapter 119",
@@ -61373,7 +61373,7 @@
             {
               "ref": "Chapter 132",
               "title": "The Symphony",
-              "summary": "Ahab weeps into the sea, wonders what is commanding him, and sends Starbuck away."
+              "summary": "Ahab weeps into the sea and wonders what is commanding him, while Starbuck steals away in despair."
             }
           ]
         },
@@ -61381,7 +61381,7 @@
           "id": "chase",
           "label": "Chapters 133–135 and the Epilogue",
           "title": "The three-day chase, and Ishmael’s survival",
-          "summary": "The whale is raised at last and fought for three days. It stoves the boats, drowns Fedallah in the lines, and finally runs at the ship itself and sinks it. Ahab goes down fastened to his own harpoon rope. Ishmael, thrown clear on the first day of the chase, floats out of the vortex on the coffin.",
+          "summary": "The whale is raised at last and fought for three days. It stoves the boats, drowns Fedallah in the lines, and finally runs at the ship itself and sinks it. Ahab goes down fastened to his own harpoon rope. Ishmael, thrown from Ahab’s boat on the last day, floats out of the vortex on the coffin.",
           "scenes": [
             {
               "ref": "Chapter 135",
@@ -62661,7 +62661,7 @@
           "id": "kilman-and-elizabeth",
           "label": "Miss Kilman, Elizabeth and the Strand",
           "title": "Elizabeth and Miss Kilman, and the old woman opposite",
-          "summary": "Doris Kilman, poor, devout and humiliated, takes Elizabeth to the Army and Navy Stores and loses her over an éclair. Elizabeth rides a bus up the Strand thinking about a profession, and Clarissa, alone, watches an old woman in the house opposite go to bed.",
+          "summary": "Doris Kilman, poor, devout and humiliated, takes Elizabeth to the Army and Navy Stores and loses her over an éclair. Elizabeth rides a bus up the Strand thinking about a profession, and Clarissa, alone, watches the old woman in the house opposite climb the stairs to her bedroom.",
           "scenes": []
         },
         {
@@ -63950,7 +63950,7 @@
           "id": "act-2",
           "label": "Act II",
           "title": "The masked dance, and the gulling of Benedick",
-          "summary": "At the masked ball the wooing is done by proxy and briefly believed to be a betrayal. Once that is cleared up, Don Pedro proposes the only labour of Hercules he thinks worth attempting: getting Beatrice and Benedick to admit they like each other. The gulling of Benedick, staged in an orchard, works within a dozen lines.",
+          "summary": "At the masked ball the wooing is done by proxy and briefly believed to be a betrayal. Once that is cleared up, Don Pedro proposes the only labour of Hercules he thinks worth attempting: getting Beatrice and Benedick to admit they like each other. The gulling of Benedick, staged in an orchard, works first time.",
           "scenes": [
             {
               "ref": "2.1",
@@ -63978,12 +63978,12 @@
             {
               "ref": "3.1",
               "title": "Beatrice in the garden",
-              "summary": "She overhears herself described as too scornful to be loved, and surrenders in rhyme."
+              "summary": "Beatrice overhears herself described as too scornful to be loved, and surrenders in rhyme."
             },
             {
               "ref": "3.2",
               "title": "A changed Benedick",
-              "summary": "His friends mock his shaved beard and perfume; Don John invites Claudio to see proof."
+              "summary": "Benedick’s friends mock his shaved beard and perfume; Don John invites Claudio to see proof."
             },
             {
               "ref": "3.3",
@@ -65297,7 +65297,7 @@
             {
               "ref": "Preface",
               "title": "Garrison's testimonial",
-              "summary": "An account of the 1841 Nantucket convention, and a guarantee that nothing in the book has been softened."
+              "summary": "An account of the 1841 Nantucket convention, and a guarantee that nothing in the book has been exaggerated."
             },
             {
               "ref": "Letter",
@@ -65310,7 +65310,7 @@
           "id": "maryland-childhood",
           "label": "Chapters I–IV",
           "title": "Tuckahoe, and the great house farm",
-          "summary": "Douglass records a birth without a date, a mother he saw perhaps five times, and the whipping of his aunt in a kitchen doorway. He then widens the lens: the allowance of food and clothing, the songs on the road to the great house farm, and three overseers whose killings produced no inquest.",
+          "summary": "Douglass records a birth without a date, a mother he saw perhaps five times, and the whipping of his aunt, which he watched from a closet. He then widens the lens: the allowance of food and clothing, the songs on the road to the great house farm, and killings by overseers and owners that nobody was tried for.",
           "scenes": [
             {
               "ref": "Chapter I",
@@ -65325,7 +65325,7 @@
             {
               "ref": "Chapters III–IV",
               "title": "Overseers",
-              "summary": "Gore, Severe and the killing of Demby: three deaths, and no prosecution in any of them."
+              "summary": "Severe’s cursing, Gore’s shooting of Demby, and other killings that nobody was tried for."
             }
           ]
         },
@@ -65407,7 +65407,7 @@
             {
               "ref": "Chapter XI, New Bedford",
               "title": "Wages",
-              "summary": "Loading a sloop for two silver half-dollars that belong to him, and taking the name Douglass at a breakfast table."
+              "summary": "Stowing a sloop with oil for wages that are his own, and taking the name Douglass from The Lady of the Lake."
             },
             {
               "ref": "Chapter XI, Nantucket",
@@ -68203,7 +68203,7 @@
             {
               "ref": "3.2",
               "title": "The fortifications",
-              "summary": "Eleven lines of routine business that keep Othello offstage and the audience waiting."
+              "summary": "Six lines of routine business: Othello sends letters to the Senate and goes to look at the fortifications."
             },
             {
               "ref": "3.3",
@@ -68221,7 +68221,7 @@
           "id": "act-4",
           "label": "Act IV",
           "title": "The overheard conversation, and Othello strikes Desdemona",
-          "summary": "Iago stages a conversation about Bianca and lets Othello overhear it as a conversation about Desdemona. Othello falls into a fit, then strikes his wife in front of a Venetian envoy. The act ends in a bedroom with two women talking honestly about marriage while one of them prepares the bed she will be killed in.",
+          "summary": "Iago stages a conversation about Bianca and lets Othello overhear it as a conversation about Desdemona. Othello, who has already fallen into a fit, then strikes his wife in front of a Venetian envoy. The act ends in a bedroom with two women talking honestly about marriage while one of them prepares the bed she will be killed in.",
           "scenes": [
             {
               "ref": "4.1",
@@ -69508,7 +69508,7 @@
           "id": "book-2",
           "label": "Book II",
           "title": "The debate, the gates, and the flight through Chaos",
-          "summary": "Hell holds a policy meeting with four speakers and a fixed outcome, since Beelzebub is arguing Satan’s case for him. Satan then leaves alone, meets his own daughter and grandson keeping the gate, and beats his way up through Chaos towards the new world.",
+          "summary": "Hell holds a policy meeting with four speakers and a fixed outcome, since Beelzebub is arguing Satan’s case for him. Satan then leaves alone, meets Sin, his daughter, and Death, their son, keeping the gate, and beats his way up through Chaos towards the new world.",
           "scenes": []
         },
         {
@@ -70963,7 +70963,7 @@
           "id": "chapters-24-34",
           "label": "Chapters 24–34",
           "title": "Hunsford, Rosings and Darcy’s proposal",
-          "summary": "Elizabeth visits Charlotte’s parsonage and sees what a comfortable home actually costs. Lady Catherine presides, Colonel Fitzwilliam lets slip that Darcy separated Bingley from Jane, and Darcy proposes in terms that make turning him down easy and enjoyable.",
+          "summary": "Elizabeth visits Charlotte’s parsonage and sees what a comfortable home actually costs. Lady Catherine presides, Colonel Fitzwilliam lets slip that Darcy separated Bingley from Jane, and Darcy proposes in terms that make him easy to refuse, though she cries for half an hour once he has gone.",
           "scenes": []
         },
         {
@@ -70984,7 +70984,7 @@
           "id": "chapters-51-61",
           "label": "Chapters 51–61",
           "title": "Lydia’s marriage, Lady Catherine and the engagements",
-          "summary": "Lydia returns married and unembarrassed, and the reader learns before Elizabeth does who bought the marriage. Lady Catherine’s attempt to extract a promise produces the opposite of the one she wants, and the last chapters distribute incomes as carefully as affections.",
+          "summary": "Lydia returns married and unembarrassed, and a slip of Lydia’s tongue leads Elizabeth to find out who paid for the marriage. Lady Catherine’s attempt to extract a promise produces the opposite of the one she wants, and the last chapters distribute incomes as carefully as affections.",
           "scenes": []
         }
       ],
@@ -72299,7 +72299,7 @@
             {
               "ref": "Chapter II",
               "title": "Roxy and the two babies",
-              "summary": "Roxy, white to look at and a slave in law, is nursing her master’s son and her own, born within weeks of each other."
+              "summary": "Roxy, white to look at and a slave in law, is nursing her master’s son and her own, born on the same day."
             }
           ]
         },
@@ -72355,7 +72355,7 @@
             {
               "ref": "Chapter XI",
               "title": "Pudd'nhead's startling discovery",
-              "summary": "Wilson takes Tom’s prints and finds a record that does not fit, though he cannot yet say why."
+              "summary": "Wilson takes the twins’ and Tom’s finger-prints as a parlour game, and reads in Luigi’s palm that he has killed a man."
             }
           ]
         },
@@ -72368,7 +72368,7 @@
             {
               "ref": "Chapter XII",
               "title": "The shame of Judge Driscoll",
-              "summary": "The refused duel disgraces the family; the Judge fights it himself, at sixty, because the code allows nothing else."
+              "summary": "The refused duel disgraces the family; the Judge fights it himself, past sixty, because the code allows nothing else."
             },
             {
               "ref": "Chapter XIV",
@@ -72391,7 +72391,7 @@
           "id": "doom",
           "label": "Chapters XIX-Conclusion",
           "title": "The murder, the trial and the fingerprints",
-          "summary": "Tom robs his uncle in disguise, kills him with the twins’ Indian knife, and the town arrests the foreigners. Wilson, defending them, finds a bloody thumb-print on the haft, matches it to a record in his files, and in doing so discovers the exchange of 1830. The last page disposes of both men as property: one unfit for the drawing room, the other worth too much to be imprisoned.",
+          "summary": "Tom robs his uncle in disguise, kills him with the twins’ Indian knife, and the town arrests the foreigners. Wilson, defending them, finds finger-prints on the knife-handle, matches it to a record in his files, and in doing so discovers the exchange of 1830. The last page disposes of both men as property: one unfit for the drawing room, the other worth too much to be imprisoned.",
           "scenes": [
             {
               "ref": "Chapter XIX",
@@ -74861,7 +74861,7 @@
           "id": "act-3",
           "label": "Act III",
           "title": "Richard’s return, and Flint Castle",
-          "summary": "Richard lands from Ireland, greets the soil of his kingdom, and then loses the country in three scenes of bad news. At Flint Castle he comes down from the walls to meet Bolingbroke in the base court, a piece of staging that settles the question before either man says what he wants. In the garden scene the collapse becomes an argument about husbandry.",
+          "summary": "Richard lands from Ireland, greets the soil of his kingdom, and then loses the country in three successive pieces of bad news. At Flint Castle he comes down from the walls to meet Bolingbroke in the base court, a piece of staging that settles the question before either man says what he wants. In the garden scene the collapse becomes an argument about husbandry.",
           "scenes": [
             {
               "ref": "3.1",
@@ -76217,7 +76217,7 @@
           "id": "act-1",
           "label": "Act I",
           "title": "The opening soliloquy, Clarence and Lady Anne",
-          "summary": "Richard sets out his intentions to the audience before anyone else appears, has Clarence sent to the Tower on a manufactured prophecy, and wins Lady Anne beside the corpse of the king he helped kill. Margaret arrives to curse everyone present, and the play files the curses for later use.",
+          "summary": "Richard sets out his intentions to the audience before anyone else appears, has Clarence sent to the Tower on a manufactured prophecy, and wins Lady Anne beside the corpse of the king he killed. Margaret arrives to curse everyone present, and the play files the curses for later use.",
           "scenes": [
             {
               "ref": "1.1",
@@ -76293,7 +76293,7 @@
             {
               "ref": "3.4",
               "title": "Strawberries and a head",
-              "summary": "Richard asks for strawberries, leaves the council, returns accusing Hastings of witchcraft, and has him killed before dinner."
+              "summary": "Richard asks for strawberries, leaves the council, returns with a withered arm he blames on witchcraft, and has Hastings killed before dinner."
             },
             {
               "ref": "3.5",
@@ -76354,7 +76354,7 @@
             {
               "ref": "5.1",
               "title": "Buckingham at Salisbury",
-              "summary": "Led to execution on All-Souls’ day, he recalls the oath he swore and the curse Margaret laid."
+              "summary": "Led to execution on All-Souls’ day, Buckingham recalls the oath he swore and the curse Margaret laid."
             },
             {
               "ref": "5.2",
@@ -77694,7 +77694,7 @@
           "id": "the-footprint",
           "label": "Chapters XI–XIII",
           "title": "The footprint, and the cannibals",
-          "summary": "A single print in the sand ends twenty years of feeling safe. Crusoe fortifies, hides his goats, plans massacres and argues himself out of them on the ground that the cannibals have committed no crime against him. The chapters are a long study of what fear does to a man who has nobody to check his reasoning.",
+          "summary": "A single print in the sand ends fifteen years of feeling safe. Crusoe fortifies, hides his goats, plans massacres and argues himself out of them on the ground that the cannibals have committed no crime against him. The chapters are a long study of what fear does to a man who has nobody to check his reasoning.",
           "scenes": [
             {
               "ref": "Chapter XI",
@@ -77717,7 +77717,7 @@
           "id": "friday",
           "label": "Chapters XIV–XVI",
           "title": "Friday, the Spaniard and Friday’s father",
-          "summary": "Crusoe dreams of rescuing a prisoner who will serve him, and then does it. Friday is named for the day of the week, taught to say Master before he is taught anything else, and converted, though he asks why, if God is so strong, he does not kill the devil. By the time a Spaniard and Friday’s father arrive, Crusoe is describing himself as lord and lawgiver of three subjects and three religions.",
+          "summary": "Crusoe dreams of rescuing a prisoner who will serve him, and then does it. Friday is named for the day of the week, taught to say Master almost before anything else, and converted, though he asks why, if God is so strong, he does not kill the devil. By the time a Spaniard and Friday’s father arrive, Crusoe is describing himself as lord and lawgiver of three subjects and three religions.",
           "scenes": [
             {
               "ref": "Chapter XIV",
@@ -77750,12 +77750,12 @@
             {
               "ref": "Chapter XVIII",
               "title": "The Ship Recovered",
-              "summary": "The ship retaken, the ringleader hanged at the yardarm, and the worst of the mutineers left on the island in Crusoe’s place."
+              "summary": "The ship retaken, the ringleader shot and his body hung at the yardarm, and the worst of the mutineers left on the island in Crusoe’s place."
             },
             {
               "ref": "Chapter XIX",
               "title": "Return to England",
-              "summary": "Lisbon, the old Portuguese captain, and an estate that has been growing without him for two decades."
+              "summary": "Lisbon, the old Portuguese captain, and an estate that has been growing without him for nearly thirty years."
             },
             {
               "ref": "Chapter XX",
@@ -78955,7 +78955,7 @@
             {
               "ref": "2.6",
               "title": "The wedding",
-              "summary": "The Friar warns against violent delights and marries them within the same speech."
+              "summary": "The Friar warns against violent delights and leads them off to be married."
             }
           ]
         },
@@ -80397,14 +80397,14 @@
           "id": "chapters-23-36",
           "label": "Chapters 23–36",
           "title": "London, and Willoughby’s letter",
-          "summary": "In town Marianne writes to Willoughby and waits; he cuts her at a party and returns her letters with a note his fiancée dictated. Colonel Brandon supplies the history of the two Elizas, and the Ferrars family discovers Lucy, with consequences measured in pounds.",
+          "summary": "In town Marianne writes to Willoughby and waits; he cuts her at a party and returns her letters with a note his fiancée dictated. Colonel Brandon supplies the history of the two Elizas, and at Mrs Ferrars’s dinner Lucy is singled out for kindness while Elinor is pointedly slighted.",
           "scenes": []
         },
         {
           "id": "chapters-37-44",
           "label": "Chapters 37–44",
           "title": "Marianne’s illness, and Willoughby’s confession",
-          "summary": "Elinor finally tells Marianne how long she has known about Lucy and what it has cost to say nothing. At Cleveland Marianne walks in wet grass until she is dangerously ill, and Willoughby arrives at midnight to explain himself to the only person who will listen.",
+          "summary": "When the engagement comes out and Edward is disinherited for keeping to it, Elinor finally tells Marianne how long she has known about Lucy and what it has cost to say nothing. At Cleveland Marianne walks in wet grass until she is dangerously ill, and Willoughby arrives at eight on a stormy evening to explain himself to the only person who will listen.",
           "scenes": []
         },
         {
@@ -81593,7 +81593,7 @@
           "id": "procreation",
           "label": "Sonnets 1–17",
           "title": "The procreation sonnets",
-          "summary": "Seventeen poems make one request in seventeen ways: the young man should marry and father a son, because beauty that is not copied is beauty thrown away. The reasoning is economic as often as it is romantic: usury, husbandry, accounts, the unused estate. The group matters less for what it urges than for what it establishes: a speaker whose subject is time, and a listener who never answers.",
+          "summary": "Seventeen poems make one request in seventeen ways: the young man should marry and father a son, because beauty that is not copied is beauty thrown away. The reasoning is economic as often as it is romantic: usury, husbandry, accounts, the unused estate. It also establishes a speaker whose subject is time, and a listener who never answers.",
           "scenes": [
             {
               "ref": "Sonnet 1",
@@ -81613,7 +81613,7 @@
             {
               "ref": "Sonnet 15",
               "title": "The graft",
-              "summary": "The turn that makes the rest possible. War with Time is declared, and the weapon is no longer a child but the poem itself."
+              "summary": "The turn that makes the rest possible. War with Time is declared, and for the first time the weapon is the poem itself."
             },
             {
               "ref": "Sonnet 17",
@@ -81692,7 +81692,7 @@
           "id": "constancy",
           "label": "Sonnets 104–126",
           "title": "Constancy argued, and the envoy",
-          "summary": "The last movement addressed to the young man argues for a love that does not alter, and knows the argument is hard to believe. Sonnet 116 states it as law; 121 answers the people who judge him; 126 stops. It has twelve lines, six couplets and two empty brackets where the last lines should be: the sequence’s only unfinished poem, and unfinished on purpose.",
+          "summary": "The last movement addressed to the young man argues for a love that does not alter, and knows the argument is hard to believe. Sonnet 116 states it as law; 121 answers the people who judge him; 126 stops after twelve lines in six couplets, and the 1609 quarto prints two empty pairs of brackets where the last two lines would be.",
           "scenes": [
             {
               "ref": "Sonnet 106",
@@ -81715,7 +81715,7 @@
           "id": "dark-lady",
           "label": "Sonnets 127–154",
           "title": "The dark lady sonnets",
-          "summary": "The last group changes subject, tone and manners. The woman is desired and not admired; the praise is a running argument with the conventions of praise; and the poems about lust are the most self-disgusted in English. Two of them treat the triangle directly: she has the young man too. The final pair, about Cupid’s brand and a bath, translate a Greek epigram and read like a shrug.",
+          "summary": "The last group changes subject, tone and manners. The woman is desired and not admired; the praise is a running argument with the conventions of praise; and the poems about lust are the most self-disgusted in English. Several of them treat the triangle directly: she has the young man too. The final pair, about Cupid’s brand and a bath, translate a Greek epigram and read like a shrug.",
           "scenes": [
             {
               "ref": "Sonnet 127",
@@ -87407,7 +87407,7 @@
             {
               "ref": "4.2",
               "title": "Substitutions",
-              "summary": "Hortensio gives up on Bianca and marries a widow; Tranio recruits a pedant to play Vincentio."
+              "summary": "Hortensio gives up on Bianca and resolves to marry a widow; Tranio recruits a pedant to play Vincentio."
             },
             {
               "ref": "4.3",
@@ -88758,7 +88758,7 @@
             {
               "ref": "Chapters XX–XXIV",
               "title": "Summer",
-              "summary": "The dairy’s three other milkmaids love Angel too, and the novel does not lose sight of them; Angel declares himself in a cart full of milk."
+              "summary": "The dairy’s three other milkmaids love Angel too, and the novel does not lose sight of them; Angel takes her in his arms at the milking."
             }
           ]
         },
@@ -88820,7 +88820,7 @@
           "id": "phase-7",
           "label": "Phase the Seventh",
           "title": "Fulfilment",
-          "summary": "Angel comes back from Brazil thin and altered, and finds Tess installed in a boarding house at Sandbourne under another man’s protection. She kills Alec, the two of them walk north for five days, and the police take her at dawn on the stone at Stonehenge.",
+          "summary": "Angel comes back from Brazil thin and altered, and finds Tess installed in a boarding house at Sandbourne under another man’s protection. She kills Alec, the two of them hide for five days in an empty house in the New Forest, and the police take her at dawn on the stone at Stonehenge.",
           "scenes": [
             {
               "ref": "Chapters LIII–LVI",
@@ -89982,7 +89982,7 @@
           "id": "chapters-12-18",
           "label": "Chapters 12–18",
           "title": "Jackson’s Island and the funeral",
-          "summary": "Three boys run away to be pirates, live on bacon and stolen watermelons, and hear their own town firing a cannon over the water to raise their bodies. Tom’s great secret is that they will come back for their own funeral, and the congregation sings the doxology over three boys standing in the aisle.",
+          "summary": "Three boys run away to be pirates, live on stolen bacon, corn pone and the fish they catch, and hear their own town firing a cannon over the water to raise their bodies. Tom’s great secret is that they will come back for their own funeral, and the congregation sings the doxology over three boys standing in the aisle.",
           "scenes": []
         },
         {
@@ -91142,7 +91142,7 @@
           "id": "grand-isle",
           "label": "Chapters I–XIII",
           "title": "A summer at the shore",
-          "summary": "Léonce Pontellier looks up from his newspaper at a sunburnt wife and sees damaged property. Over the weeks that follow Edna sits with Adèle Ratignolle, hears Mademoiselle Reisz play, and finally swims out alone at night further than she has strength to return. The next morning she and Robert Lebrun cross to Chênière Caminada and she sleeps through most of a day.",
+          "summary": "Léonce Pontellier looks up from his newspaper at a sunburnt wife and sees damaged property. Over the weeks that follow Edna sits with Adèle Ratignolle, hears Mademoiselle Reisz play, and finally swims out alone at night and has a moment’s terror that she will not get back. The next morning she and Robert Lebrun cross to Chênière Caminada and she sleeps through most of a day.",
           "scenes": [
             {
               "ref": "Chapters I–V",
@@ -91165,7 +91165,7 @@
           "id": "departure",
           "label": "Chapters XIV–XVIII",
           "title": "Robert goes to Mexico, and the season ends",
-          "summary": "Robert announces at a few hours’ notice that he is leaving for Mexico, and Edna discovers how much has been arranged without reference to her. Back in New Orleans she abandons her reception day, throws her wedding ring on the carpet, and finds that her husband’s response is to consult a doctor about her health.",
+          "summary": "Robert announces at a few hours’ notice that he is leaving for Mexico, and Edna discovers how much has been arranged without reference to her. Back in New Orleans she abandons her reception day, throws her wedding ring on the carpet, and stamps on it.",
           "scenes": [
             {
               "ref": "Chapters XIV–XVI",
@@ -91206,7 +91206,7 @@
           "id": "pigeon-house",
           "label": "Chapters XXIX–XXXIV",
           "title": "The dinner, and the small house",
-          "summary": "Edna gives a farewell dinner at her husband’s table, wearing a crown of jewels and looking, to one guest, like a woman entirely alone. She moves into the little house around the corner, paid for out of her own winnings and her sketches, and Robert walks back into the city and into Mademoiselle Reisz’s rooms.",
+          "summary": "Edna gives a farewell dinner at her husband’s table, wearing her husband’s birthday diamonds in her hair and looking, as she leans back, like a woman who stands alone. She moves into the little house around the corner, paid for out of her own winnings and her sketches, and Robert walks back into the city and into Mademoiselle Reisz’s rooms.",
           "scenes": [
             {
               "ref": "Chapters XXIX–XXX",
@@ -91224,7 +91224,7 @@
           "id": "return",
           "label": "Chapters XXXV–XXXIX",
           "title": "Adèle's confinement, and the water again",
-          "summary": "Robert says at last what he has been imagining, that Léonce might set her free, and Edna tells him she is not anyone’s to give away. She is called out to Adèle’s childbirth, hears the words about the children, walks home, finds Robert gone, and goes back to Grand Isle in the morning.",
+          "summary": "Robert says at last what he has been imagining, that Léonce might set her free, and Edna tells him she is not anyone’s to give away. She is called out to Adèle’s childbirth, hears the words about the children, walks home, finds Robert gone, lies awake till morning, and goes back to Grand Isle.",
           "scenes": [
             {
               "ref": "Chapters XXXV–XXXVI",
@@ -100845,7 +100845,7 @@
           "id": "chapter-2",
           "label": "Chapter 2",
           "title": "The valley of ashes",
-          "summary": "The road from Long Island to New York runs through a landscape made of the city’s waste, watched over by a faded oculist’s hoarding. Tom takes Nick to a garage there, collects Myrtle Wilson from her husband’s business, and continues to a flat in Manhattan where the afternoon ends with a broken nose.",
+          "summary": "The road from Long Island to New York runs through a landscape made of the city’s waste, watched over by a faded oculist’s hoarding. Tom takes Nick to a garage there, collects Myrtle Wilson from her husband’s business, and continues to a flat in Manhattan where the party ends towards midnight with a broken nose.",
           "scenes": [
             {
               "ref": "Chapter 2",
@@ -100928,7 +100928,7 @@
           "id": "chapter-8",
           "label": "Chapter 8",
           "title": "Gatsby’s death",
-          "summary": "Nick hears the Louisville story from Gatsby himself, tells him he is worth the whole lot of them, and goes to work. Gatsby waits for a call, swims for the first time all summer, and is shot in the pool by George Wilson, who has spent the morning being pointed at the wrong car by the man who owned the right one.",
+          "summary": "Nick hears the Louisville story from Gatsby himself, tells him he is worth the whole lot of them, and goes to work. Gatsby waits for a call, swims for the first time all summer, and is shot in the pool by George Wilson, whom Tom has told whose car it was.",
           "scenes": [
             {
               "ref": "Chapter 8",
@@ -100941,7 +100941,7 @@
           "id": "chapter-9",
           "label": "Chapter 9",
           "title": "The funeral, and Nick’s departure",
-          "summary": "Nobody comes. Wolfshiem sends regrets, Daisy and Tom have left no address, and the only mourners are Nick, Gatsby’s father with a boyhood schedule written in the back of a book, and the drunk from the library. Nick breaks with Jordan, meets Tom on Fifth Avenue, and goes back to the Midwest.",
+          "summary": "Nobody comes. Wolfshiem sends regrets, Daisy and Tom have left no address, and apart from a few servants and the postman the mourners are Nick, Gatsby’s father with a boyhood schedule written in the back of a book, and the drunk from the library. Nick breaks with Jordan, meets Tom on Fifth Avenue, and goes back to the Midwest.",
           "scenes": [
             {
               "ref": "Chapter 9",
@@ -102219,7 +102219,7 @@
           "id": "the-gift-diffused",
           "label": "Chapter II",
           "title": "The Gift Diffused",
-          "summary": "In the Tetterbys’ crowded shop in Jerusalem Buildings, Mrs Tetterby confesses to her husband that she had wished she had never married, then remembered what their hard years have given them. Redlaw arrives looking for the student and touches Mr Tetterby, and when he looks back from the stairs the family has turned sullen and cold. The student, Edmund Denham, tells him that his real name is Longford: he is the son of the friend who wronged Redlaw. Under Redlaw’s influence he turns on Milly. Redlaw then follows the boy, who alone is unchanged, to a lodging-house among the arches of a viaduct. There a young woman with a bruised face insists that nobody hurt her, and Philip and William are watching over William’s elder brother George, who is dying. George begins to repent and warns that a ruined man upstairs means to kill himself; at Redlaw’s approach George hardens, Philip disowns him, and William turns on his father. Back in his room, with Milly at the door begging for help, Redlaw calls on the Phantom to take the gift back.",
+          "summary": "In the Tetterbys’ crowded shop in Jerusalem Buildings, Mrs Tetterby confesses to her husband that she had wished she had never married, then remembered what their hard years have given them. Redlaw arrives looking for the student and touches Mr Tetterby, and when he looks back from the stairs the family has turned sullen and cold. The student, Edmund Denham, tells him that his real name is Longford: he is the son of the friend who wronged Redlaw. Under Redlaw’s influence he turns on Milly. Redlaw then follows the boy, who alone is unchanged, to a lodging-house among the arches of a viaduct. There a young woman with a bruised face insists that nobody hurt her, and Philip and William are watching over William’s elder brother George, who is dying. George begins to repent and warns that a ruined man who was in the room a moment ago means to kill himself; at Redlaw’s approach George hardens, Philip disowns him, and William turns on his father. Back in his room, with Milly at the door begging for help, Redlaw calls on the Phantom to take the gift back.",
           "scenes": [
             {
               "ref": "Chapter II",
@@ -105248,7 +105248,7 @@
           "id": "the-manuscript",
           "label": "The frame",
           "title": "Two anglers, a ruin and a damp book",
-          "summary": "Hodgson spends his opening pages establishing how the story reaches us: a fishing holiday in Kraighten, a village with no road to it, a house reduced to rubble above a pit, and a small thick book dug out of the debris. The narrator who reads it warns that the account is stiff and abrupt and that he has left it alone, which licenses everything strange that follows.",
+          "summary": "Hodgson spends his opening pages establishing how the story reaches us: a fishing holiday in Kraighten, a hamlet forty miles from the nearest railway station, a house reduced to rubble above a pit, and a small thick book dug out of the debris. The narrator who reads it warns that the account is stiff and abrupt and that he has left it alone, which licenses everything strange that follows.",
           "scenes": [
             {
               "ref": "Author’s Introduction",
@@ -105281,7 +105281,7 @@
             {
               "ref": "The Earth",
               "title": "The return",
-              "summary": "He is brought home to find his sister worried and himself unable to explain where he has been."
+              "summary": "He comes back to his study nearly a day and a night later, and his sister, used to his absences, asks no questions."
             }
           ]
         },
@@ -107994,7 +107994,7 @@
           "id": "act-3",
           "label": "Act III",
           "title": "The drawing room: a hand-bag, and a christening cancelled",
-          "summary": "Lady Bracknell arrives, approves of Cecily’s money and forbids Algernon’s engagement until Jack forbids Cecily’s, at which point Miss Prism is recognised, the hand-bag is produced and Jack turns out to be Algernon’s elder brother. His father’s name is looked up in an Army List and is, inevitably, Ernest.",
+          "summary": "Lady Bracknell arrives and approves of Cecily once she hears the size of her fortune, Jack withholds his consent as Cecily’s guardian until his own engagement is allowed, and then Miss Prism is recognised, the hand-bag is produced and Jack turns out to be Algernon’s elder brother. His father’s name is looked up in an Army List and is, inevitably, Ernest.",
           "scenes": [
             {
               "ref": "Act III, the fortune",
@@ -109262,7 +109262,7 @@
             {
               "ref": "Chapter II",
               "title": "The Secret of Gabriel Syme",
-              "summary": "An underground room reached through a public house, a table of loaded revolvers, and a vote that makes a policeman the anarchist called Thursday."
+              "summary": "An underground room reached through a public house, walls packed with rifles and revolvers, and a vote that makes a policeman the anarchist called Thursday."
             }
           ]
         },
@@ -109270,7 +109270,7 @@
           "id": "council",
           "label": "Chapters III-V",
           "title": "The Council of Days",
-          "summary": "Breakfast on a Leicester Square balcony, in full view of the street, because the safest place to plot is in the open. Syme meets the six others and their president, learns how he came to be a policeman at all, and discovers that what they fear at this table is being seen through, more than arrest.",
+          "summary": "Breakfast on a Leicester Square balcony, in full view of the street, because the safest place to plot is in the open. Syme meets the six others and their president; the book goes back to explain how he became a policeman at all; and he discovers that what they fear at this table is being seen through, more than arrest.",
           "scenes": [
             {
               "ref": "Chapter III",
@@ -109293,7 +109293,7 @@
           "id": "unmasking",
           "label": "Chapters VI-X",
           "title": "One by one, the anarchists turn out to be policemen",
-          "summary": "Gogol goes first, exposed at the table by his own beard. Then the Professor pursues Syme across London and confesses on a scrap of paper; Dr Bull takes off his black spectacles and becomes an ordinary young man; and the Marquis, fought in a French field, turns out to be an inspector in a false nose. Each unmasking is funnier than the last and leaves the plot with fewer enemies and no explanation.",
+          "summary": "Gogol goes first, exposed at the table by the blue card in his waistcoat pocket. Then the Professor pursues Syme across London and lays a blue card of his own on the table; Dr Bull takes off his black spectacles and becomes an ordinary young man; and the Marquis, fought in a French field, turns out to be an inspector under a false face. Each unmasking is funnier than the last and leaves the plot with fewer enemies and no explanation.",
           "scenes": [
             {
               "ref": "Chapter VI",
@@ -109308,7 +109308,7 @@
             {
               "ref": "Chapter VIII",
               "title": "The Professor Explains",
-              "summary": "Written on a scrap of paper: he is a policeman too, and has been terrified of Syme for exactly as long as Syme has been terrified of him."
+              "summary": "The Professor makes Syme swear he is not in the police, then announces that he is: all day he has only been trying to catch up with a colleague."
             },
             {
               "ref": "Chapter IX",
@@ -110520,7 +110520,7 @@
             {
               "ref": "2.1",
               "title": "Morocco arrives",
-              "summary": "He asks not to be judged by his complexion and is told the terms of the lottery."
+              "summary": "Morocco asks not to be judged by his complexion and is told the terms of the lottery."
             },
             {
               "ref": "2.2",
@@ -110530,7 +110530,7 @@
             {
               "ref": "2.3",
               "title": "Jessica's plan",
-              "summary": "She calls her father’s house hell and asks Launcelot to carry a letter to Lorenzo."
+              "summary": "Jessica calls her father’s house hell and asks Launcelot to carry a letter to Lorenzo."
             },
             {
               "ref": "2.4",
@@ -110619,7 +110619,7 @@
           "id": "act-5",
           "label": "Act V",
           "title": "Belmont, and the rings",
-          "summary": "Lorenzo and Jessica trade stories of lovers who came to bad ends, the wives expose the business of the rings, and Antonio learns that three of his ships are safe after all. Shylock is not mentioned. The comedy closes with everybody paired except the merchant it is named after.",
+          "summary": "Lorenzo and Jessica trade stories of lovers who came to bad ends, the wives expose the business of the rings, and Antonio learns that three of his ships are safe after all. Shylock is mentioned only as the source of a deed of gift. The comedy closes with everybody paired except the merchant it is named after.",
           "scenes": [
             {
               "ref": "5.1",
@@ -111877,7 +111877,7 @@
             {
               "ref": "Second Period, First Narrative, Chapters VII–VIII",
               "title": "The engagement broken",
-              "summary": "Rachel breaks with Godfrey once his father’s inquiries are made, and Clack records his composure as saintliness."
+              "summary": "Rachel breaks with Godfrey on Mr Bruff’s advice, and Clack records his composure as saintliness."
             }
           ]
         },
@@ -111972,7 +111972,7 @@
             {
               "ref": "Epilogue, I",
               "title": "The Statement of Sergeant Cuff’s Man (1849)",
-              "summary": "Three Hindus board a steamer bound for Rotterdam and are followed no further."
+              "summary": "Three Hindus board a steamer bound for Rotterdam and slip ashore at Gravesend."
             },
             {
               "ref": "Epilogue, II",
@@ -124529,7 +124529,7 @@
           "id": "act-2",
           "label": "Act II",
           "title": "Antonio’s plot, and Caliban’s new master",
-          "summary": "On one part of the island Gonzalo imagines a commonwealth with no trade, law or labour and is mocked for it; within fifty lines Antonio has talked Sebastian into murdering his brother. On another, Caliban meets a butler with a bottle and decides that a new master is the same thing as freedom.",
+          "summary": "On one part of the island Gonzalo imagines a commonwealth with no trade, law or labour and is mocked for it; within a hundred lines Antonio has talked Sebastian into murdering his brother. On another, Caliban meets a butler with a bottle and decides that a new master is the same thing as freedom.",
           "scenes": [
             {
               "ref": "2.1",
@@ -124588,7 +124588,7 @@
             {
               "ref": "5.1",
               "title": "The circle, and the epilogue",
-              "summary": "Prospero breaks his staff, forgives his brother, discovers the lovers at chess, frees Ariel and asks for applause as absolution."
+              "summary": "Prospero promises to break his staff, forgives his brother, discovers the lovers at chess, frees Ariel and asks for applause as absolution."
             }
           ]
         }
@@ -125818,7 +125818,7 @@
             {
               "ref": "Chapter II",
               "title": "",
-              "summary": "The school’s letter is burned in conversation, never answered."
+              "summary": "The headmaster’s letter, forwarded unopened by the uncle, is read, talked over with Mrs Grose and never answered."
             },
             {
               "ref": "Chapter III",
@@ -128850,7 +128850,7 @@
           "summary": "They make camp on the lake, and the guide’s nerve goes. He smells something on the air, cannot say what, and by nightfall he is frightened of the dark in a country he has worked in all his life. Simpson, who is twenty-something and reads everything as a spiritual exercise, notices and does not understand.",
           "scenes": [
             {
-              "ref": "Section III",
+              "ref": "Section II",
               "title": "Fifty Island Water",
               "summary": "A lake that answers exactly to the description, and a guide who stops talking when they reach it."
             },
@@ -128860,7 +128860,7 @@
               "summary": "Faint, pungent and wrong for a forest: the odour Simpson will spend the rest of his life failing to describe."
             },
             {
-              "ref": "Section IV",
+              "ref": "Sections III–IV",
               "title": "The night",
               "summary": "Weeping in the tent, a man pressed against the canvas, and a voice outside calling his name."
             }
@@ -128873,12 +128873,12 @@
           "summary": "Défago is called out of the tent by something that uses his name, and goes at a speed no man runs. What Simpson hears as the sound recedes is the story’s most famous sentence, and it comes from high above, out of the sky.",
           "scenes": [
             {
-              "ref": "Section V",
+              "ref": "Section IV",
               "title": "Out of the tent",
-              "summary": "The guide leaves in his stockinged feet, at a pace that takes him out of earshot in seconds."
+              "summary": "The guide kicks free of his blankets and is gone through the tent flaps, at a pace that takes him out of earshot in seconds."
             },
             {
-              "ref": "Section V",
+              "ref": "Section IV",
               "title": "Fiery height",
               "summary": "The cry about burning feet of fire, heard once, from above, and then silence over the whole wilderness."
             }
@@ -128891,17 +128891,17 @@
           "summary": "Alone, in snow, Simpson follows what is left. Défago’s prints run beside marks that are not a moose’s and not a bear’s, and as the trail goes on the distance between the man’s footfalls grows until it can no longer be walked. Then his prints begin to resemble the other set.",
           "scenes": [
             {
-              "ref": "Section VI",
+              "ref": "Section IV",
               "title": "The other track",
               "summary": "Big, round, ample, with no pointed outline: nothing in the bush leaves that."
             },
             {
-              "ref": "Section VI",
+              "ref": "Section IV",
               "title": "The lengthening stride",
               "summary": "The gap between prints widening past any possible step, and the snow between them untouched."
             },
             {
-              "ref": "Section VI",
+              "ref": "Section V",
               "title": "The change",
               "summary": "The man’s tracks lose their shape and take on the other’s, and the story stops being a disappearance."
             }
@@ -128914,24 +128914,24 @@
           "summary": "The party reunites and Cathcart sets out the rational account: suggestion, hysteria, a legend planted in a young mind by a superstitious guide. While he is still explaining, something comes into the firelight that answers to Défago’s name and does not answer to anything else. The last pages give the facts of his death, the cook’s flight, and no explanation at all.",
           "scenes": [
             {
-              "ref": "Section VII",
+              "ref": "Section VI",
               "title": "Collective hallucination",
               "summary": "The doctor’s theory, offered with real intelligence and no effect whatever on what happens next."
             },
             {
-              "ref": "Section VII",
+              "ref": "Section VIII",
               "title": "What came to the fire",
-              "summary": "A shape that talks about moss and fire, and that Hank swears at until it goes."
+              "summary": "A shrunken figure answering to Défago’s name comes into the firelight, talks of a hellfire trip, and is met by a stream of Hank’s oaths."
             },
             {
-              "ref": "Section VIII",
+              "ref": "Section IX",
               "title": "Défago, afterwards",
-              "summary": "A man found in the bush who lives a few weeks, eats moss, and complains that his feet burn."
+              "summary": "The real Défago, found back at the main camp with moss in his cheeks and frozen feet that ‘burn like fire’, lingers a few weeks."
             },
             {
-              "ref": "Section VIII",
+              "ref": "Section IX",
               "title": "Punk leaves",
-              "summary": "The cook smells something on the air, walks three days without stopping, and never comes back."
+              "summary": "The cook catches the odour as the guide comes into camp and starts at once for home, a three days’ journey."
             }
           ]
         }
@@ -130908,7 +130908,7 @@
           "id": "chapters-1-2",
           "label": "Chapters 1–2",
           "title": "The River Bank and the Open Road",
-          "summary": "Mole throws down his whitewash brush, comes up into the sunlight and meets a Rat who owns a boat and a picnic hamper. Within a chapter he has a new life; within two, Toad has abandoned a caravan for a motorcar he has only heard, and the book’s two rhythms are both running.",
+          "summary": "Mole throws down his whitewash brush, comes up into the sunlight and meets a Rat who owns a boat and a picnic hamper. Within a chapter he has a new life; within two, Toad has abandoned a caravan for the motorcar that ran it into the ditch, and the book’s two rhythms are both running.",
           "scenes": []
         },
         {
@@ -132143,7 +132143,7 @@
           "id": "act-3",
           "label": "Act III",
           "title": "The oracle, the deaths, and the bear",
-          "summary": "Hermione defends herself in the clearest speech in the play, the oracle clears her in five clauses, and Leontes rejects it out loud. His son dies within a minute of the blasphemy and his wife within two. Then the play changes countries, a storm sinks a ship, a bear takes Antigonus, and a shepherd finds a baby and says the first kind thing anyone has said for three acts.",
+          "summary": "Hermione defends herself in the clearest speech in the play, the oracle clears her in a single sentence, and Leontes rejects it out loud. His son dies within a minute of the blasphemy and his wife within two. Then the play changes countries, a storm sinks a ship, a bear takes Antigonus, and a shepherd finds a baby and says the first kind thing anyone has said for three acts.",
           "scenes": [
             {
               "ref": "3.1",
@@ -132176,7 +132176,7 @@
             {
               "ref": "4.2",
               "title": "Camillo asks to go home",
-              "summary": "Polixenes refuses, and they agree to go in disguise to the shepherd’s cottage where the prince keeps disappearing."
+              "summary": "Polixenes refuses Camillo leave to go home, and they agree to go in disguise to the shepherd’s cottage where the prince keeps disappearing."
             },
             {
               "ref": "4.3",
@@ -133441,7 +133441,7 @@
           "id": "epoch-1-hartright",
           "label": "The First Epoch: Hartright",
           "title": "The road, Limmeridge and the likeness",
-          "summary": "Walter Hartright takes a post teaching drawing in Cumberland, having met a woman dressed entirely in white on the Finchley Road and helped her into a cab. At Limmeridge he finds his pupil’s face is the same face, falls in love with an engaged woman, and is eased out of the household.",
+          "summary": "Walter Hartright takes a post teaching drawing in Cumberland, having met a woman dressed entirely in white on a lonely road near Hampstead at night and helped her into a cab. At Limmeridge he finds his pupil’s face is the same face, falls in love with an engaged woman, and is eased out of the household.",
           "scenes": []
         },
         {
@@ -133483,7 +133483,7 @@
           "id": "epoch-3-catherick-fosco",
           "label": "The Third Epoch: Mrs Catherick and Fosco",
           "title": "Mrs Catherick’s letter and Fosco’s confession",
-          "summary": "Mrs Catherick’s letter explains the vestry, the forged register and the secret Sir Percival died trying to burn. Fosco, writing at pistol point, gives the conspiracy as a piece of intellectual autobiography and awards himself the credit for it.",
+          "summary": "Mrs Catherick’s letter explains the vestry, the forged register and the secret Sir Percival died trying to burn. Fosco, writing under threat of exposure to the Brotherhood, gives the conspiracy as a piece of intellectual autobiography and awards himself the credit for it.",
           "scenes": []
         },
         {
@@ -134742,7 +134742,7 @@
             {
               "ref": "The announcement",
               "title": "I've got out at last",
-              "summary": "The last sentence has divided readers for a century (an escape, a breakdown, or both), and it contains the name Jane, which appears nowhere else in the story."
+              "summary": "Her last words to John have divided readers for a century (an escape, a breakdown, or both), and they contain the name Jane, which appears nowhere else in the story."
             },
             {
               "ref": "The threshold",
@@ -138878,7 +138878,7 @@
           "id": "act-2",
           "label": "Act II",
           "title": "The hunt, the pit and the forest",
-          "summary": "The court rides out to hunt and the play moves into the woods, where Aaron has buried a bag of gold and written a letter that will hang two innocent men. Bassianus is stabbed and dropped into a pit, Titus’s sons Quintus and Martius fall in after him and are arrested for the murder, and Lavinia is taken away by Chiron and Demetrius. Marcus finds her at the end, and cannot say what he sees.",
+          "summary": "The court rides out to hunt and the play moves into the woods, where Aaron has buried a bag of gold and written a letter that will hang two innocent men. Bassianus is stabbed and dropped into a pit, Titus’s sons Quintus and Martius fall in after him and are arrested for the murder, and Lavinia is taken away by Chiron and Demetrius. Marcus finds her at the end, and can only talk round what he sees.",
           "scenes": [
             {
               "ref": "2.1",
@@ -140438,7 +140438,7 @@
           "id": "act-3",
           "label": "Act III",
           "title": "The lovers’ night, and the exchange agreed",
-          "summary": "Pandarus flirts through Helen’s music room on an errand, brings the lovers together in his orchard and takes them to a bed, hearing them swear vows in which each names the proverb their name will become. Between those two scenes Calchas asks the Greeks for his daughter in exchange for the prisoner Antenor, and gets her, before either lover knows the request has been made.",
+          "summary": "Pandarus flirts through Helen’s music room on an errand, brings the lovers together in his orchard and takes them to a bed, hearing them swear vows in which each names the proverb their name will become. In the scene after, Calchas asks the Greeks for his daughter in exchange for the prisoner Antenor, and gets her, before either lover knows the request has been made.",
           "scenes": [
             {
               "ref": "3.1",
@@ -140476,7 +140476,7 @@
             {
               "ref": "4.3",
               "title": "The hour fixed",
-              "summary": "Thirteen lines in the street: Paris tells Troilus to fetch her, and Troilus says he will deliver her like a priest at an altar."
+              "summary": "A dozen lines in the street: Paris tells Troilus to fetch her, and Troilus says he will deliver her like a priest at an altar."
             },
             {
               "ref": "4.4",
@@ -140494,7 +140494,7 @@
           "id": "act-5",
           "label": "Act V",
           "title": "Cressida and Diomedes, and Hector’s death",
-          "summary": "Ten short scenes. Troilus watches Cressida give his sleeve to Diomedes while Ulysses watches Troilus and Thersites watches all three. Hector goes out although his wife, his sister and his father have knelt to stop him, kills a man for the armour he is wearing, and is caught with his own off by Achilles and the Myrmidons. Troy keeps the field and has lost everything, and Pandarus is left alone on stage to make his will.",
+          "summary": "Ten short scenes. Troilus watches Cressida give his sleeve to Diomedes while Ulysses watches Troilus and Thersites watches all three. Hector goes out although his wife, his sister and his father have begged him to stay, kills a man for the armour he is wearing, and is caught with his own off by Achilles and the Myrmidons. Troy keeps the field and has lost everything, and Pandarus is left alone on stage to make his will.",
           "scenes": [
             {
               "ref": "5.1",
@@ -141920,7 +141920,7 @@
             {
               "ref": "2.1",
               "title": "Sebastian lives",
-              "summary": "Antonio, who has saved him from the sea, follows him into a city where he has enemies."
+              "summary": "Antonio, who has saved Sebastian from the sea, follows him into a city where he has enemies."
             },
             {
               "ref": "2.2",
@@ -141958,7 +141958,7 @@
             {
               "ref": "3.2",
               "title": "Sir Andrew's challenge",
-              "summary": "Sir Toby dictates a letter so incoherent he decides to deliver the challenge by mouth."
+              "summary": "Sir Toby talks Sir Andrew into writing a challenge in a martial hand, with as many lies as the sheet will hold."
             },
             {
               "ref": "3.3",
@@ -141999,7 +141999,7 @@
           "id": "act-5",
           "label": "Act V",
           "title": "The twins meet",
-          "summary": "Everything converges: Antonio’s accusation, Olivia’s claim to a husband, Orsino’s threat to kill the boy he loves, and then Sebastian walks on. The knot unties itself in fifteen lines. Malvolio is released, reads his letter out, learns the truth and leaves promising revenge, and Feste is left alone to sing about rain.",
+          "summary": "Everything converges: Antonio’s accusation, Olivia’s claim to a husband, Orsino’s threat to kill the boy he loves, and then Sebastian walks on. The knot unties itself in a few dozen lines. Malvolio is released, produces the forged letter, learns the truth and leaves promising revenge, and Feste is left alone to sing about rain.",
           "scenes": [
             {
               "ref": "5.1",
@@ -143326,7 +143326,7 @@
           "id": "ohio",
           "label": "Chapters IX–XIII",
           "title": "The fugitives go north, and Tom goes south",
-          "summary": "The chapters alternate between the fugitives and their cargo counterpart. A senator who voted for the Fugitive Slave Act finds it in his kitchen; George Harris faces down his pursuers on a rock; and Haley, on a steamboat south, sells a woman’s infant off her lap and records the consequence in his account book.",
+          "summary": "The chapters alternate between the fugitives and their cargo counterpart. A state senator who has just voted to forbid helping fugitives finds one in his kitchen; George Harris, disguised at a country tavern, tells his old employer he has no country; and Haley, on a steamboat south, sells a woman’s infant off her lap and records the consequence in his account book.",
           "scenes": [
             {
               "ref": "Chapter IX",
@@ -147767,7 +147767,7 @@
           "id": "heat-ray",
           "label": "Book I, Chapters V-VIII",
           "title": "The Heat-Ray, and the evening papers",
-          "summary": "A deputation walks towards the pit under a white flag and is burned where it stands. The narrator gets home, tells his wife, and finds that the rest of England is still treating the matter as local news; the second cylinder falls while Woking is being evacuated.",
+          "summary": "A deputation walks towards the pit under a white flag and is burned where it stands. The narrator gets home, tells his wife, and finds that the rest of England is still treating the matter as local news; just after midnight the second cylinder falls into the pine woods to the north-west.",
           "scenes": [
             {
               "ref": "Book I, V",
@@ -147795,7 +147795,7 @@
           "id": "tripods",
           "label": "Book I, Chapters IX-XIV",
           "title": "The fighting-machines, and the brother’s story begins",
-          "summary": "The fighting-machines rise and the military answer is over almost before it begins. The narrator drives his wife to Leatherhead, comes back into the storm, meets the curate among the ruins of Weybridge, and the narrative opens a second front with his brother in London.",
+          "summary": "The fighting-machines rise and the military answer is over almost before it begins. The narrator drives his wife to Leatherhead, comes back into the storm, drifts down the river from burning Weybridge to meet the curate near Walton, and the narrative opens a second front with his brother in London.",
           "scenes": [
             {
               "ref": "Book I, IX",
@@ -147833,12 +147833,12 @@
           "id": "exodus",
           "label": "Book I, Chapters XV-XVII",
           "title": "Six million people on the roads",
-          "summary": "The Black Smoke clears the ground in front of the machines and London empties north and east. With the brother’s chapters the novel widens from one man’s escape to a whole population in motion, and the Thunder Child gives the book its single moment of successful resistance.",
+          "summary": "The Black Smoke clears the ground in front of the machines and London empties north and east. With the brother’s chapters the novel widens from one man’s escape to a whole population in motion, and the Thunder Child gives the book its last moment of successful resistance.",
           "scenes": [
             {
               "ref": "Book I, XV",
               "title": "What Had Happened in Surrey",
-              "summary": "The Black Smoke is used systematically to kill anything that stays indoors."
+              "summary": "The Black Smoke, heavier than any smoke, kills all that breathes it; only roofs and upper storeys escape."
             },
             {
               "ref": "Book I, XVI",
@@ -147917,7 +147917,7 @@
             {
               "ref": "Book II, IX",
               "title": "Wreckage",
-              "summary": "The narrator breaks down, is taken in at Leatherhead, and gets home to Woking."
+              "summary": "The narrator breaks down, is taken in by strangers in St John’s Wood, and gets home to Woking."
             },
             {
               "ref": "Book II, X",
@@ -148999,7 +148999,7 @@
             {
               "ref": "Chapter 4",
               "title": "The Trail of the Gods",
-              "summary": "He hides when the camp moves in the autumn, finds that freedom is cold and silent, and runs forty hours down the river bank to crawl to Grey Beaver’s fire."
+              "summary": "He hides when the camp moves in the autumn, finds that freedom is cold and silent, and runs for more than thirty hours down the river bank to crawl to Grey Beaver’s fire."
             },
             {
               "ref": "Chapter 5",
@@ -151840,7 +151840,7 @@
             {
               "ref": "Chapter 3",
               "title": "",
-              "summary": "Heathcliff throws the door open and calls into the night for her to come in, once, in front of a witness."
+              "summary": "Heathcliff wrenches open the lattice and sobs into the night for her to come in, with Lockwood watching from the passage."
             }
           ]
         },
@@ -151853,7 +151853,7 @@
             {
               "ref": "Chapter 4",
               "title": "",
-              "summary": "The child is brought home as a nameless bundle; the fiddle and the whip promised to the other two are both broken."
+              "summary": "The child is brought home as a nameless bundle; the fiddle promised to Hindley is crushed and the whip promised to Cathy is lost."
             },
             {
               "ref": "Chapter 6",
@@ -151871,7 +151871,7 @@
           "id": "return",
           "label": "Chapters 10–17",
           "title": "Heathcliff’s return, and Catherine’s death",
-          "summary": "Heathcliff comes back after three years with money nobody can explain and begins collecting: Hindley’s estate at cards, Isabella Linton by elopement, and a last interview with Catherine two hours before she dies. Hindley drinks himself to death within six months; Heathcliff is left with the Heights and a son to raise crooked.",
+          "summary": "Heathcliff comes back after three years with money nobody can explain and begins collecting: Hindley’s estate at cards, Isabella Linton by elopement, and a last interview with Catherine on the day she dies. Hindley drinks himself to death within six months; Heathcliff is left with the Heights and Hindley’s son to raise crooked.",
           "scenes": [
             {
               "ref": "Chapter 10",
@@ -151899,7 +151899,7 @@
           "id": "revenge",
           "label": "Chapters 18–26",
           "title": "The second generation",
-          "summary": "Thirteen years pass in a paragraph. Young Cathy is raised inside the park wall and gets out; Linton Heathcliff is fetched back from London and installed at the Heights as a bargaining asset. His father, who has no affection for him at all, keeps him alive just long enough to be married.",
+          "summary": "Twelve years pass in a paragraph. Young Cathy is raised inside the park wall and gets out; Linton Heathcliff is fetched back from London and installed at the Heights as a bargaining asset. His father, who has no affection for him at all, keeps him alive just long enough to be married.",
           "scenes": [
             {
               "ref": "Chapter 18",
@@ -151922,7 +151922,7 @@
           "id": "captivity",
           "label": "Chapters 27–31",
           "title": "The marriage taken by force",
-          "summary": "Cathy and Nelly are locked into the Heights until the wedding takes place; Edgar Linton dies without seeing his daughter again; Linton dies a few weeks later, leaving everything to his father. Heathcliff tells the story of opening Catherine’s coffin as though it were an anecdote.",
+          "summary": "Cathy and Nelly are locked into the Heights until the wedding takes place; Cathy escapes in time to be at Edgar Linton’s bedside when he dies; Linton dies a few weeks later, leaving everything to his father. Heathcliff tells the story of opening Catherine’s coffin as though it were an anecdote.",
           "scenes": [
             {
               "ref": "Chapter 27",
