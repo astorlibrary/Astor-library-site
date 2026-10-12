@@ -225,12 +225,15 @@ export function orderThePlot(book, random = Math.random) {
   for (const stage of book.structure) {
     const scenes = stage.scenes || [];
     if (scenes.length < 4) continue;
+    // Several scenes can share a ref ('Part III' three times in Heart of
+    // Darkness), so each item is identified by its position, not its label.
+    const sceneId = index => stage.id + '#' + index;
     rounds.push({
       kind: 'order',
       id: 'order:' + book.slug + ':' + stage.id,
       stem: 'Put ' + stage.label + ' back in order.',
-      items: shuffle(scenes.map(scene => ({ id: scene.ref, label: scene.ref, text: scene.summary })), random),
-      answer: scenes.map(scene => scene.ref),
+      items: shuffle(scenes.map((scene, index) => ({ id: sceneId(index), label: scene.ref, text: scene.summary })), random),
+      answer: scenes.map((scene, index) => sceneId(index)),
       explain: stage.summary,
       source: book.title + ', ' + stage.label,
       book: bookRef(book)

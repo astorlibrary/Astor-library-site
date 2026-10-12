@@ -47,6 +47,7 @@ test('every book-scoped builder produces well-formed questions', () => {
             question.answer.slice().sort(),
             label + ' orders items it was not given'
           );
+          assert.equal(new Set(question.answer).size, question.answer.length, label + ' gives two items the same id');
         } else {
           assert.fail(label + ' has an unknown kind: ' + question.kind);
         }
