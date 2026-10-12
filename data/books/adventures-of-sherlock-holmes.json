@@ -123,7 +123,7 @@
       "name": "Sherlock Holmes",
       "role": "Consulting detective, 221B Baker Street",
       "summary": "He works for interest more than money, turns down cases that bore him, and treats the law as one option among several. The stories are careful to show his conclusions resting on specialist knowledge, correspondence, disguise and paid informants as much as on the famous glance at a sleeve.",
-      "clue": "He keeps his tobacco in a slipper, can tell a man’s trade from his cuffs, and once let a thief run out of the door on Christmas because gaol would have finished him.",
+      "clue": "He keeps his tobacco in a slipper, can tell a man’s trade from his cuffs, and once let a thief run out of the door at Christmas because gaol would have finished him.",
       "firstAppearance": "A Scandal in Bohemia",
       "traits": [
         "exacting",
@@ -168,7 +168,7 @@
       "name": "Dr John Watson",
       "role": "Army surgeon, friend, narrator",
       "summary": "He decides what the reader is told and when, which makes him the collection’s most important technical device. His admiration colours every portrait of Holmes, and his bafflement keeps a chain of inference feeling like a story.",
-      "clue": "An army surgeon invalided home, newly married in the middle of the book, who makes his friend’s demonstrations into the very thing his friend claims to despise: popular stories.",
+      "clue": "An army surgeon invalided home, newly married when the collection opens, who makes his friend’s demonstrations into the very thing his friend claims to despise: popular stories.",
       "firstAppearance": "A Scandal in Bohemia",
       "traits": [
         "loyal",
@@ -211,6 +211,7 @@
       "name": "Mary Sutherland",
       "role": "A typist with an income of her own",
       "summary": "Her hundred a year from a New Zealand annuity is the whole engine of the plot, and she cannot see it because she has been taught to think of the money as her mother’s. Holmes solves her case and then declines to tell her the answer.",
+      "clue": "A short-sighted typist who earns twopence a sheet, and whose bridegroom vanishes from a four-wheeler between his lodgings and the church.",
       "firstAppearance": "A Case of Identity",
       "traits": [
         "trusting",
@@ -232,7 +233,7 @@
       "name": "Helen Stoner",
       "role": "Stepdaughter of Dr Grimesby Roylott, of Stoke Moran",
       "summary": "She arrives at Baker Street before seven in the morning, shaking, with bruises on her wrist from the man she lives with. Her sister died two weeks before a wedding and she is about to be married herself, which is the arithmetic the case actually runs on.",
-      "clue": "She comes in grey, veiled and shivering, and says it is not the cold that is making her shake.",
+      "clue": "She comes in black, veiled and shivering, and says it is not the cold that is making her shake.",
       "firstAppearance": "The Adventure of the Speckled Band",
       "traits": [
         "frightened",
@@ -262,6 +263,7 @@
       "name": "Dr Grimesby Roylott",
       "role": "Physician, formerly of Calcutta, of Stoke Moran",
       "summary": "A doctor with a temper, a prison record and a will that pays him while his stepdaughters stay unmarried. Doyle makes him physically enormous and has him bend a poker in the sitting room, so that the eventual method, small, quiet and indirect, comes as a real surprise.",
+      "clue": "He bends a steel poker in a detective’s sitting-room, lets a cheetah and a baboon roam his grounds, and keeps a saucer of milk on top of his safe.",
       "firstAppearance": "The Adventure of the Speckled Band",
       "traits": [
         "violent",
@@ -283,7 +285,7 @@
       "id": "violet-hunter",
       "name": "Violet Hunter",
       "role": "Governess at the Copper Beeches",
-      "summary": "She is asked to cut her hair, wear a particular blue dress and sit with her back to a window, and she does all three while keeping a record. By the time Holmes arrives she has found the locked wing, tested the length of the ladder and worked out roughly what is being concealed.",
+      "summary": "She is asked to cut her hair, wear a particular blue dress and sit with her back to a window, and she does all three while keeping a record. By the time Holmes arrives she has found a coil of hair like her own in a locked drawer, got into the shut-up wing and worked out roughly what is being concealed.",
       "clue": "A governess who accepts a post with impossible conditions, sits where she is told, and secretly uses a hand-mirror to see what is behind her.",
       "firstAppearance": "The Adventure of the Copper Beeches",
       "traits": [
@@ -307,6 +309,7 @@
       "name": "Neville St. Clair",
       "role": "A gentleman of Lee, and the beggar Hugh Boone",
       "summary": "A journalist who went out to research an article on begging, discovered how much better it paid than writing, and spent years changing his face in a room above an opium den. He is the collection’s clearest statement that respectability is a costume with an income attached.",
+      "clue": "He leaves his villa at Lee every morning a gentleman, and spends the day in Threadneedle Street as a beggar with a twisted lip.",
       "firstAppearance": "The Man with the Twisted Lip",
       "traits": [
         "an actor by training",
@@ -327,8 +330,9 @@
     {
       "id": "jabez-wilson",
       "name": "Jabez Wilson",
-      "role": "Pawnbroker, of Coburg Square",
+      "role": "Pawnbroker, of Saxe-Coburg Square",
       "summary": "A slow, red-headed, thoroughly ordinary man who is paid four pounds a week to copy out an encyclopaedia and never wonders why. His complete lack of curiosity is the mechanism of the crime, and Doyle makes him likeable enough that the reader shares it.",
+      "clue": "He copies out the Encyclopaedia Britannica for four pounds a week, and gets through Abbots, Archery, Armour, Architecture and Attica before the office shuts.",
       "firstAppearance": "The Red-Headed League",
       "traits": [
         "incurious",
@@ -350,6 +354,7 @@
       "name": "Inspector Lestrade",
       "role": "Scotland Yard",
       "summary": "He appears to be there to be wrong, but the stories are more careful than that: he brings official power Holmes does not have, makes arrests, and is generally right about who had the opportunity and wrong only about what it means.",
+      "clue": "A lean, ferret-like man from Scotland Yard who is sure the son is guilty at Boscombe Valley, and drags the Serpentine for a missing bride.",
       "firstAppearance": "The Boscombe Valley Mystery",
       "traits": [
         "dogged",
