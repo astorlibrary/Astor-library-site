@@ -16,11 +16,11 @@
   "lengthNote": "Around 3,600 lines; after Hamlet, the longest play in the Folio",
   "openingLine": "Now is the winter of our discontent Made glorious summer by this sun of York;",
   "summary": "A man tells the audience in the first forty lines exactly what he intends to do, and then does it while everyone on stage fails to notice. Richard works by performance and hardly bothers with secrecy: he grieves for the brother he has imprisoned, refuses a crown he has arranged to be offered, and takes the audience into a confidence he offers nobody else. The trouble is that the confidence works, until Act IV, when the jokes dry up and the women take over the stage.",
-  "referenceStyle": "act, scene and line",
+  "referenceStyle": "act, scene and line of the Astor Library Edition",
   "sourceText": {
     "label": "Globe/Moby text of Richard III",
     "url": "https://shakespeare.mit.edu/richardiii/full.html",
-    "note": "The quarto and Folio texts differ substantially; line numbers here follow the traditional Globe numbering of the conflated text."
+    "note": "The quarto and Folio texts differ substantially, and other modern editions number the play differently."
   },
   "atAGlance": [
     {
@@ -565,7 +565,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 1.1.1–4",
+      "source": "Astor Library Edition, 1.1.1–4 (MIT 1.1.1–4)",
       "cloze": [
         "winter",
         "discontent"
@@ -588,7 +588,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 1.1.24–27",
+      "source": "Astor Library Edition, 1.1.24–27 (MIT 1.1.24–27)",
       "cloze": [
         "shadow",
         "descant"
@@ -613,7 +613,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 1.1.28–31",
+      "source": "Astor Library Edition, 1.1.28–31 (MIT 1.1.28–31)",
       "cloze": [
         "determined",
         "villain"
@@ -623,7 +623,7 @@
       "id": "fouler-toad",
       "text": "Never hung poison on a fouler toad. Out of my sight! thou dost infect my eyes.",
       "speaker": "Lady Anne",
-      "reference": "1.2.157",
+      "reference": "1.2.148",
       "stage": "act-1",
       "context": "Beside the coffin of Henry VI, answering Richard’s compliment on her spitting.",
       "analysis": "She wins this exchange and every other one in the scene, so the way it ends is hard to explain away. Her images are all of contagion (poison, infection, basilisks), and by the end of the scene she has accepted a ring from the source.",
@@ -637,7 +637,7 @@
         "anne",
         "richard"
       ],
-      "source": "Globe/Moby text, 1.2.157–158",
+      "source": "Astor Library Edition, 1.2.148–149 (MIT 1.2.157–158)",
       "cloze": [
         "poison",
         "toad"
@@ -647,7 +647,7 @@
       "id": "take-up-the-sword",
       "text": "Take up the sword again, or take up me.",
       "speaker": "Gloucester",
-      "reference": "1.2.193",
+      "reference": "1.2.184",
       "stage": "act-1",
       "context": "Kneeling with his breast bared, after Anne has let the sword fall.",
       "analysis": "One line, one repeated verb and two offers that cannot both be accepted; on stage she has to choose with her hands. His confession of murder becomes a proposal, because the only alternative he offers is another killing, which she has just refused to carry out.",
@@ -661,7 +661,7 @@
         "richard",
         "anne"
       ],
-      "source": "Globe/Moby text, 1.2.193",
+      "source": "Astor Library Edition, 1.2.184 (MIT 1.2.193)",
       "cloze": [
         "sword"
       ]
@@ -670,7 +670,7 @@
       "id": "was-ever-woman",
       "text": "Was ever woman in this humour woo'd? Was ever woman in this humour won? I'll have her; but I will not keep her long.",
       "speaker": "Gloucester",
-      "reference": "1.2.240",
+      "reference": "1.2.221",
       "stage": "act-1",
       "context": "Alone, the moment Anne has left the stage.",
       "analysis": "Two rhetorical questions to us, and then the third line disposes of her in ten words. The rhyme of woo’d and won makes the whole seduction sound like a completed piece of business, and the audience is being invited to applaud a performance whose victim has only just walked off.",
@@ -685,7 +685,7 @@
         "richard",
         "anne"
       ],
-      "source": "Globe/Moby text, 1.2.240–242",
+      "source": "Astor Library Edition, 1.2.221–223 (MIT 1.2.240–242)",
       "cloze": [
         "woo'd",
         "won"
@@ -695,7 +695,7 @@
       "id": "shine-out-fair-sun",
       "text": "Shine out, fair sun, till I have bought a glass, That I may see my shadow as I pass.",
       "speaker": "Gloucester",
-      "reference": "1.2.276",
+      "reference": "1.2.256",
       "stage": "act-1",
       "context": "The couplet that closes the wooing scene.",
       "analysis": "The shadow he could only ‘descant on’ in the first scene is now something he wants to look at, and he intends to buy a mirror to do it. Success has not altered how he sees his body; it has simply made him curious about the man who could pull this off.",
@@ -709,7 +709,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 1.2.276–277",
+      "source": "Astor Library Edition, 1.2.256–257 (MIT 1.2.276–277)",
       "cloze": [
         "shadow",
         "sun"
@@ -719,7 +719,7 @@
       "id": "elvish-markd",
       "text": "Thou elvish-mark'd, abortive, rooting hog! Thou that wast seal'd in thy nativity The slave of nature and the son of hell!",
       "speaker": "Queen Margaret",
-      "reference": "1.3.229",
+      "reference": "1.3.228",
       "stage": "act-1",
       "context": "Cursing Richard in front of the whole Yorkist court, which has been trying to ignore her.",
       "analysis": "‘Rooting hog’ is his own badge, the white boar, turned into an insult, and ‘seal’d in thy nativity’ claims that his body was a signature written at birth. Richard’s answer is to wait for her to finish and then substitute her name for his at the end of the curse, the only way anyone in the play ever interrupts her.",
@@ -734,7 +734,7 @@
         "margaret",
         "richard"
       ],
-      "source": "Globe/Moby text, 1.3.229–231",
+      "source": "Astor Library Edition, 1.3.228–230 (MIT 1.3.229–231)",
       "cloze": [
         "abortive",
         "nativity"
@@ -744,7 +744,7 @@
       "id": "bottled-spider",
       "text": "Why strew'st thou sugar on that bottled spider, Whose deadly web ensnareth thee about? Fool, fool! thou whet'st a knife to kill thyself.",
       "speaker": "Queen Margaret",
-      "reference": "1.3.246",
+      "reference": "1.3.243",
       "stage": "act-1",
       "context": "To Queen Elizabeth, who has just tried to make peace in the quarrel.",
       "analysis": "Margaret is right about everything and heard by nobody, which is her function until Act IV, when Elizabeth comes to her to be taught this vocabulary. The same ‘bottled spider’ comes back from Elizabeth’s own mouth in 4.4, quoted almost exactly: the play remembers who was listening.",
@@ -760,7 +760,7 @@
         "elizabeth",
         "richard"
       ],
-      "source": "Globe/Moby text, 1.3.246–248",
+      "source": "Astor Library Edition, 1.3.243–245 (MIT 1.3.246–248)",
       "cloze": [
         "spider",
         "web"
@@ -770,7 +770,7 @@
       "id": "naked-villany",
       "text": "And thus I clothe my naked villany With old odd ends stolen out of holy writ; And seem a saint, when most I play the devil.",
       "speaker": "Gloucester",
-      "reference": "1.3.341",
+      "reference": "1.3.337",
       "stage": "act-1",
       "context": "Alone after the quarrel scene, explaining his method to the audience.",
       "analysis": "He describes piety as a costume made of offcuts, and the verb ‘play’ places the whole performance in a theatre. This is a confession no other character will ever hear, and it arrives fifty lines after he has publicly forgiven his enemies for the injuries he invented.",
@@ -785,7 +785,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 1.3.341–343",
+      "source": "Astor Library Edition, 1.3.337–339 (MIT 1.3.341–343)",
       "cloze": [
         "villany",
         "saint"
@@ -795,7 +795,7 @@
       "id": "formal-vice",
       "text": "Thus, like the formal vice, Iniquity, I moralize two meanings in one word.",
       "speaker": "Gloucester",
-      "reference": "3.1.83",
+      "reference": "3.1.82",
       "stage": "act-3",
       "context": "An aside, after telling the young prince that fame lives long without characters.",
       "analysis": "He names his own theatrical ancestor: the Vice of the morality plays, who joked with the audience while damning the hero. ‘Moralize’ means to draw out a meaning, and he is boasting that he can do it twice over, one meaning for the boy and the other for us.",
@@ -810,7 +810,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 3.1.83–84",
+      "source": "Astor Library Edition, 3.1.82–83 (MIT 3.1.83–84)",
       "cloze": [
         "vice",
         "meanings"
@@ -820,7 +820,7 @@
       "id": "off-with-his-head",
       "text": "Off with his head! Now, by Saint Paul I swear, I will not dine until I see the same.",
       "speaker": "Gloucester",
-      "reference": "3.4.80",
+      "reference": "3.4.75",
       "stage": "act-3",
       "context": "At the council table, moments after asking the Bishop of Ely for strawberries.",
       "analysis": "The domestic detail is the horror: an execution is fitted into the gap before lunch, and the oath is sworn on a saint. Hastings has spoken one cautious conditional, ‘if they have done this thing’, and the word ‘if’ is treated as the treason.",
@@ -835,7 +835,7 @@
         "richard",
         "hastings"
       ],
-      "source": "Globe/Moby text, 3.4.80–81",
+      "source": "Astor Library Edition, 3.4.75–76 (MIT 3.4.80–81)",
       "cloze": [
         "head",
         "dine"
@@ -845,7 +845,7 @@
       "id": "builds-his-hopes-in-air",
       "text": "O momentary grace of mortal men, Which we more hunt for than the grace of God! Who builds his hopes in air of your good looks, Lives like a drunken sailor on a mast, Ready, with every nod, to tumble down Into the fatal bowels of the deep.",
       "speaker": "Hastings",
-      "reference": "3.4.100",
+      "reference": "3.4.95",
       "stage": "act-3",
       "context": "On the way to the block, an hour after gloating over the executions at Pomfret.",
       "analysis": "The image is exact about what he got wrong: a sailor high on a mast can see further than anybody on deck and is still the first to fall. ‘Nod’ does double work, as the roll of the ship and the small movement of a great man’s head, so favour and shipwreck become the same gesture.",
@@ -860,7 +860,7 @@
         "hastings",
         "richard"
       ],
-      "source": "Globe/Moby text, 3.4.100–105",
+      "source": "Astor Library Edition, 3.4.95–100 (MIT 3.4.100–105)",
       "cloze": [
         "grace",
         "sailor"
@@ -884,7 +884,7 @@
         "buckingham",
         "richard"
       ],
-      "source": "Globe/Moby text, 3.5.5–8",
+      "source": "Astor Library Edition, 3.5.5–8 (MIT 3.5.5–8)",
       "cloze": [
         "counterfeit",
         "tragedian"
@@ -894,7 +894,7 @@
       "id": "not-in-the-giving-vein",
       "text": "I am not in the giving vein to-day.",
       "speaker": "King Richard III",
-      "reference": "4.2.127",
+      "reference": "4.2.115",
       "stage": "act-4",
       "context": "Cutting off Buckingham, who has asked for the earldom he was promised.",
       "analysis": "One flat line ends a partnership that has run since Act I. ‘Vein’ is a mood and also a blood vessel, and the joke is that Buckingham has just declined to spill any blood when asked to kill the princes. There is no quarrel: Richard keeps asking what time it is.",
@@ -907,7 +907,7 @@
         "richard",
         "buckingham"
       ],
-      "source": "Globe/Moby text, 4.2.127",
+      "source": "Astor Library Edition, 4.2.115 (MIT 4.2.127)",
       "cloze": [
         "giving",
         "vein"
@@ -931,7 +931,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 4.3.9–13",
+      "source": "Astor Library Edition, 4.3.9–13 (MIT 4.3.9–13)",
       "cloze": [
         "babes",
         "roses"
@@ -941,7 +941,7 @@
       "id": "bloody-thou-art",
       "text": "Bloody thou art, bloody will be thy end; Shame serves thy life and doth thy death attend.",
       "speaker": "Duchess of York",
-      "reference": "4.4.199",
+      "reference": "4.4.194",
       "stage": "act-4",
       "context": "The last words Richard’s mother speaks to him, as he marches out to meet Richmond.",
       "analysis": "A rhymed couplet from a mother is a formal withdrawal of blessing, and the chiasmus of blood at either end of the first line makes his beginning and his end the same substance. He has had the drums sounded through her speech, so the audience hears it over noise he ordered.",
@@ -956,7 +956,7 @@
         "duchess-of-york",
         "richard"
       ],
-      "source": "Globe/Moby text, 4.4.199–200",
+      "source": "Astor Library Edition, 4.4.194–195 (MIT 4.4.199–200)",
       "cloze": [
         "Bloody",
         "Shame"
@@ -966,7 +966,7 @@
       "id": "is-the-chair-empty",
       "text": "Is the chair empty? is the sword unsway'd? Is the king dead? the empire unpossess'd? What heir of York is there alive but we?",
       "speaker": "King Richard III",
-      "reference": "4.4.488",
+      "reference": "4.4.470",
       "stage": "act-4",
       "context": "On being told that Richmond is at sea, coming to claim the crown.",
       "analysis": "Four questions in two lines, all of them rhetorical, all of them asked by a man who took the chair by proving it was empty when it was not. He has become the legitimacy he used to dismantle, and the argument he now makes is the one his victims could have made against him.",
@@ -980,7 +980,7 @@
         "richard",
         "richmond"
       ],
-      "source": "Globe/Moby text, 4.4.488–490",
+      "source": "Astor Library Edition, 4.4.470–472 (MIT 4.4.488–490)",
       "cloze": [
         "chair",
         "empty"
@@ -990,7 +990,7 @@
       "id": "richard-loves-richard",
       "text": "What do I fear? myself? there's none else by: Richard loves Richard; that is, I am I. Is there a murderer here? No. Yes, I am: Then fly. What, from myself?",
       "speaker": "King Richard III",
-      "reference": "5.3.202",
+      "reference": "5.3.180",
       "stage": "act-5",
       "context": "Waking in his tent at midnight after the ghosts have visited.",
       "analysis": "The soliloquy that was always a performance for us becomes a quarrel with no audience at all, and the syntax splits into question and answer as though two people were speaking. ‘I am I’ should be the most secure sentence in the language; here it is the last thing he can get to hold still.",
@@ -1005,7 +1005,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 5.3.202–205",
+      "source": "Astor Library Edition, 5.3.180–183 (MIT 5.3.202–205)",
       "cloze": [
         "murderer",
         "myself"
@@ -1015,7 +1015,7 @@
       "id": "thousand-several-tongues",
       "text": "My conscience hath a thousand several tongues, And every tongue brings in a several tale, And every tale condemns me for a villain.",
       "speaker": "King Richard III",
-      "reference": "5.3.213",
+      "reference": "5.3.191",
       "stage": "act-5",
       "context": "The same speech, a few lines later.",
       "analysis": "The word he chose for himself in the first scene is now the verdict returned against him, and by a court made entirely of voices. Repeating ‘every’ makes conscience into a crowd, and for the first time in the play Richard is outnumbered in a room.",
@@ -1029,7 +1029,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 5.3.213–215",
+      "source": "Astor Library Edition, 5.3.191–193 (MIT 5.3.213–215)",
       "cloze": [
         "conscience",
         "tongues"
@@ -1039,7 +1039,7 @@
       "id": "conscience-is-but-a-word",
       "text": "Conscience is but a word that cowards use, Devised at first to keep the strong in awe: Our strong arms be our conscience, swords our law.",
       "speaker": "King Richard III",
-      "reference": "5.3.332",
+      "reference": "5.3.305",
       "stage": "act-5",
       "context": "Addressing his officers on the morning of Bosworth, a hundred lines after the nightmare.",
       "analysis": "He is arguing with the speech he made in the night, in public, in front of men who did not hear it. The claim that conscience was invented to control the powerful is a political theory, and he advances it a few hours before dying on a field where every ghost has voted the other way.",
@@ -1051,7 +1051,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 5.3.332–334",
+      "source": "Astor Library Edition, 5.3.305–307 (MIT 5.3.332–334)",
       "cloze": [
         "Conscience",
         "cowards"
@@ -1073,7 +1073,7 @@
       "characters": [
         "richard"
       ],
-      "source": "Globe/Moby text, 5.4.7",
+      "source": "Astor Library Edition, 5.4.7 (MIT 5.4.7)",
       "cloze": [
         "horse",
         "kingdom"
@@ -1096,7 +1096,7 @@
       "characters": [
         "richmond"
       ],
-      "source": "Globe/Moby text, 5.5.19–21",
+      "source": "Astor Library Edition, 5.5.19–21 (MIT 5.5.19–21)",
       "cloze": [
         "unite",
         "rose"
@@ -1120,7 +1120,7 @@
       "characters": [
         "richmond"
       ],
-      "source": "Globe/Moby text, 5.5.23–26",
+      "source": "Astor Library Edition, 5.5.23–26 (MIT 5.5.23–26)",
       "cloze": [
         "mad",
         "brother"
@@ -1279,7 +1279,7 @@
       "focus": "Direct address, humour and complicity",
       "plan": [
         "Start with the structural fact: Richard speaks first, alone, and briefs us before the plot begins.",
-        "Analyse the jokes: the Vice comparison at 3.1, the two-meaning asides, the flat dismissal of Anne at 1.2.242.",
+        "Analyse the jokes: the Vice comparison at 3.1, the two-meaning asides, the flat dismissal of Anne at 1.2.223.",
         "Show how dramatic irony makes the audience an insider at every scene of trust, from Clarence to Hastings.",
         "Mark the withdrawal: once Richard is crowned the soliloquies shrink to bookkeeping, and the murders arrive by report instead.",
         "Conclude on 5.3, where he talks to himself because there is nobody else, and ask what the play has done to us by then."

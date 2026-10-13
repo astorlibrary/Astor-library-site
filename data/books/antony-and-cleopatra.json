@@ -16,11 +16,11 @@
   "lengthNote": "Around 3,000 lines in forty-two scenes, more than any other play of Shakespeare’s",
   "openingLine": "Nay, but this dotage of our general's O'erflows the measure",
   "summary": "A triumvir who governs a third of the known world will not leave Alexandria, and Rome sends messengers instead of armies. Shakespeare gives the story forty-two scenes and no settled vantage point: every judgement passed on Antony is passed by someone with an interest in it. After Actium the play stops being about who wins and becomes about who gets to describe the losers, and Cleopatra spends the last act taking that job away from Caesar.",
-  "referenceStyle": "act, scene and line",
+  "referenceStyle": "act, scene and line of the Astor Library Edition",
   "sourceText": {
     "label": "Globe/Moby text of Antony and Cleopatra",
     "url": "https://shakespeare.mit.edu/cleopatra/full.html",
-    "note": "Line numbers follow the traditional Globe numbering; modern editions divide some of the short battle scenes differently."
+    "note": "Some modern editions divide the short battle scenes differently."
   },
   "atAGlance": [
     {
@@ -643,7 +643,7 @@
       "characters": [
         "antony"
       ],
-      "source": "Globe/Moby text, 1.1.1–6",
+      "source": "Astor Library Edition, 1.1.1–6 (MIT 1.1.1–6)",
       "cloze": [
         "dotage",
         "measure"
@@ -666,7 +666,7 @@
         "antony",
         "cleopatra"
       ],
-      "source": "Globe/Moby text, 1.1.16",
+      "source": "Astor Library Edition, 1.1.16 (MIT 1.1.16)",
       "cloze": [
         "beggary",
         "reckon'd"
@@ -676,7 +676,7 @@
       "id": "rome-in-tiber",
       "text": "Let Rome in Tiber melt, and the wide arch Of the ranged empire fall! Here is my space.",
       "speaker": "Mark Antony",
-      "reference": "1.1.36",
+      "reference": "1.1.33",
       "stage": "act-1",
       "context": "Refusing to hear the messengers from Rome in front of Cleopatra.",
       "analysis": "The first of the play’s melting images arrives as bravado and returns in Act IV as diagnosis. ‘Here is my space’ is four monosyllables set against a collapsing empire, spoken by a man standing on a stage: the smallest possible claim, made in the largest possible terms.",
@@ -691,7 +691,7 @@
         "antony",
         "cleopatra"
       ],
-      "source": "Globe/Moby text, 1.1.36–37",
+      "source": "Astor Library Edition, 1.1.33–34 (MIT 1.1.36–37)",
       "cloze": [
         "melt",
         "space"
@@ -715,7 +715,7 @@
         "antony",
         "cleopatra"
       ],
-      "source": "Globe/Moby text, 1.4.4–7",
+      "source": "Astor Library Edition, 1.4.4–7 (MIT 1.4.4–7)",
       "cloze": [
         "man-like",
         "womanly"
@@ -725,7 +725,7 @@
       "id": "vagabond-flag",
       "text": "This common body, Like to a vagabond flag upon the stream, Goes to and back, lackeying the varying tide, To rot itself with motion.",
       "speaker": "Octavius Caesar",
-      "reference": "1.4.48",
+      "reference": "1.4.45",
       "stage": "act-1",
       "context": "On hearing that Pompey is gaining support among the people.",
       "analysis": "Caesar’s one extended image in the play is of the public as pondweed, and it tells you what kind of ruler he will be. ‘Lackeying’ makes the crowd a servant running beside a horse, and ‘rot itself with motion’ denies that popular movement is even alive.",
@@ -737,7 +737,7 @@
         "octavius-caesar",
         "pompey"
       ],
-      "source": "Globe/Moby text, 1.4.48–51",
+      "source": "Astor Library Edition, 1.4.45–48 (MIT 1.4.48–51)",
       "cloze": [
         "lackeying",
         "rot"
@@ -747,7 +747,7 @@
       "id": "salad-days",
       "text": "My salad days, When I was green in judgment: cold in blood, To say as I said then!",
       "speaker": "Cleopatra",
-      "reference": "1.5.86",
+      "reference": "1.5.76",
       "stage": "act-1",
       "context": "Silencing Charmian, who has reminded her how she once praised Julius Caesar.",
       "analysis": "She rewrites her own past on the spot before she will lose an argument, and the phrase has been borrowed so often since that its edge is easy to miss: green is unripe, and cold in blood is an accusation of having been not fully alive. The revision is the performance.",
@@ -759,7 +759,7 @@
         "cleopatra",
         "charmian"
       ],
-      "source": "Globe/Moby text, 1.5.86–88",
+      "source": "Astor Library Edition, 1.5.76–78 (MIT 1.5.86–88)",
       "cloze": [
         "salad",
         "green"
@@ -769,7 +769,7 @@
       "id": "the-barge",
       "text": "The barge she sat in, like a burnish'd throne, Burn'd on the water: the poop was beaten gold; Purple the sails, and so perfumed that The winds were love-sick with them",
       "speaker": "Domitius Enobarbus",
-      "reference": "2.2.230",
+      "reference": "2.2.213",
       "stage": "act-2",
       "context": "In Rome, to Agrippa and Maecenas, minutes after Antony has agreed to marry Octavia.",
       "analysis": "The placing is the argument: the treaty has just been signed and Enobarbus immediately tells the signatories what they have bargained against. Shakespeare keeps much of North’s prose almost word for word but breaks it across the verse line, so that the sentence never rests where the metre does.",
@@ -785,7 +785,7 @@
         "enobarbus",
         "cleopatra"
       ],
-      "source": "Globe/Moby text, 2.2.230–233",
+      "source": "Astor Library Edition, 2.2.213–216 (MIT 2.2.230–233)",
       "cloze": [
         "barge",
         "burnish'd"
@@ -795,7 +795,7 @@
       "id": "what-they-undid-did",
       "text": "With divers-colour'd fans, whose wind did seem To glow the delicate cheeks which they did cool, And what they undid did.",
       "speaker": "Domitius Enobarbus",
-      "reference": "2.2.242",
+      "reference": "2.2.225",
       "stage": "act-2",
       "context": "Continuing the description of Cleopatra on the river Cydnus.",
       "analysis": "Four words at the end of the sentence contradict themselves twice and remain perfectly grammatical. The play works this way throughout: the fans cool and heat together, and Cleopatra is a description that has to hold both halves at the same time.",
@@ -810,7 +810,7 @@
         "enobarbus",
         "cleopatra"
       ],
-      "source": "Globe/Moby text, 2.2.242–244",
+      "source": "Astor Library Edition, 2.2.225–227 (MIT 2.2.242–244)",
       "cloze": [
         "undid"
       ]
@@ -819,7 +819,7 @@
       "id": "infinite-variety",
       "text": "Age cannot wither her, nor custom stale Her infinite variety: other women cloy The appetites they feed: but she makes hungry Where most she satisfies",
       "speaker": "Domitius Enobarbus",
-      "reference": "2.2.278",
+      "reference": "2.2.260",
       "stage": "act-2",
       "context": "Answering Maecenas, who has just said that Antony must now leave her for good.",
       "analysis": "The claim is a prediction about Antony’s behaviour more than a compliment, which is why the Romans take it seriously. ‘Custom’ and ‘cloy’ are both words about repetition wearing things out, and the line’s argument is that Cleopatra has found a way of never repeating herself.",
@@ -836,7 +836,7 @@
         "cleopatra",
         "antony"
       ],
-      "source": "Globe/Moby text, 2.2.278–281",
+      "source": "Astor Library Edition, 2.2.260–263 (MIT 2.2.278–281)",
       "cloze": [
         "wither",
         "variety"
@@ -846,7 +846,7 @@
       "id": "honesty-and-i",
       "text": "Mine honesty and I begin to square.",
       "speaker": "Domitius Enobarbus",
-      "reference": "3.13.47",
+      "reference": "3.13.46",
       "stage": "act-3",
       "context": "An aside, watching Cleopatra receive Caesar’s messenger after Actium.",
       "analysis": "‘Square’ means to quarrel, and the line splits a man from his own integrity as though they were two soldiers falling out. Everything Enobarbus says for the rest of the scene is an argument with himself conducted in the third person, and he loses it.",
@@ -859,7 +859,7 @@
       "characters": [
         "enobarbus"
       ],
-      "source": "Globe/Moby text, 3.13.47",
+      "source": "Astor Library Edition, 3.13.46 (MIT 3.13.47)",
       "cloze": [
         "honesty",
         "square"
@@ -869,7 +869,7 @@
       "id": "rudder-tied",
       "text": "Egypt, thou knew'st too well My heart was to thy rudder tied by the strings, And thou shouldst tow me after",
       "speaker": "Mark Antony",
-      "reference": "3.11.60",
+      "reference": "3.11.56",
       "stage": "act-3",
       "context": "In Alexandria after Actium, forgiving Cleopatra for the flight he chose to follow.",
       "analysis": "He calls her by the name of her country, which is what the Romans do, and then describes himself as cargo. The accusation and the excuse are the same sentence: she knew, therefore it is her doing, and he was towed, therefore it is not his.",
@@ -882,7 +882,7 @@
         "antony",
         "cleopatra"
       ],
-      "source": "Globe/Moby text, 3.11.60–62",
+      "source": "Astor Library Edition, 3.11.56–58 (MIT 3.11.60–62)",
       "cloze": [
         "rudder",
         "tow"
@@ -892,7 +892,7 @@
       "id": "water-in-water",
       "text": "That which is now a horse, even with a thought The rack dislimns, and makes it indistinct, As water is in water.",
       "speaker": "Mark Antony",
-      "reference": "4.14.12",
+      "reference": "4.14.11",
       "stage": "act-4",
       "context": "To Eros, watching the evening clouds change shape before his last defeat.",
       "analysis": "‘Dislimns’, meaning unpaints, is rare enough that Shakespeare may have coined it, and it treats the sky as a canvas being wiped. The simile then takes away the comfort of a comparison: water in water is dissolution itself, and there is nothing left to see it against.",
@@ -905,7 +905,7 @@
       "characters": [
         "antony"
       ],
-      "source": "Globe/Moby text, 4.14.12–14",
+      "source": "Astor Library Edition, 4.14.11–13 (MIT 4.14.12–14)",
       "cloze": [
         "dislimns",
         "water"
@@ -915,7 +915,7 @@
       "id": "visible-shape",
       "text": "My good knave Eros, now thy captain is Even such a body: here I am Antony: Yet cannot hold this visible shape, my knave.",
       "speaker": "Mark Antony",
-      "reference": "4.14.16",
+      "reference": "4.14.15",
       "stage": "act-4",
       "context": "Applying the cloud image to himself, moments before asking Eros to kill him.",
       "analysis": "‘Here I am Antony’ ought to be the most certain statement a man can make, and the next line takes it back. The name has been public property since the first scene, used by Philo, Caesar and Cleopatra, and Antony is the last person to lose his grip on it.",
@@ -929,7 +929,7 @@
       "characters": [
         "antony"
       ],
-      "source": "Globe/Moby text, 4.14.16–18",
+      "source": "Astor Library Edition, 4.14.15–17 (MIT 4.14.16–18)",
       "cloze": [
         "Antony",
         "shape"
@@ -939,7 +939,7 @@
       "id": "master-leaver",
       "text": "But let the world rank me in register A master-leaver and a fugitive",
       "speaker": "Domitius Enobarbus",
-      "reference": "4.9.26",
+      "reference": "4.9.22",
       "stage": "act-4",
       "context": "Alone in a ditch by Caesar’s camp, after Antony has sent his abandoned treasure after him.",
       "analysis": "A man who has spent the play writing other people’s reputations asks for his own to be filed under two words. ‘Register’ is a clerk’s word, and he asks for no mitigation at all: he has understood that the record is the only judgement there will be.",
@@ -954,7 +954,7 @@
         "enobarbus",
         "antony"
       ],
-      "source": "Globe/Moby text, 4.9.26–27",
+      "source": "Astor Library Edition, 4.9.22–23 (MIT 4.9.26–27)",
       "cloze": [
         "master-leaver",
         "fugitive"
@@ -964,7 +964,7 @@
       "id": "dying-egypt",
       "text": "I am dying, Egypt, dying: Give me some wine, and let me speak a little.",
       "speaker": "Mark Antony",
-      "reference": "4.15.50",
+      "reference": "4.15.43",
       "stage": "act-4",
       "context": "Hauled up into the monument, bleeding from his own sword.",
       "analysis": "He has already said the same half-line twenty-seven lines earlier, and repetition is how the scene measures time: the dying takes long enough that he has to announce it twice. He asks for wine and for permission: the most public man in the world asking to be allowed to finish a sentence.",
@@ -979,7 +979,7 @@
         "antony",
         "cleopatra"
       ],
-      "source": "Globe/Moby text, 4.15.50–51",
+      "source": "Astor Library Edition, 4.15.43–44 (MIT 4.15.50–51)",
       "cloze": [
         "dying",
         "wine"
@@ -989,7 +989,7 @@
       "id": "crown-o-the-earth",
       "text": "The crown o' the earth doth melt. My lord! O, wither'd is the garland of the war, The soldier's pole is fall'n: young boys and girls Are level now with men; the odds is gone, And there is nothing left remarkable Beneath the visiting moon.",
       "speaker": "Cleopatra",
-      "reference": "4.15.75",
+      "reference": "4.15.67",
       "stage": "act-4",
       "context": "The moment Antony dies in her arms at the top of the monument.",
       "analysis": "Grief is expressed as the collapse of every scale of difference: with the pole gone, children and men measure the same. ‘The odds is gone’ is flat, almost colloquial, in the middle of the grandest lament in the play, and it tells you what she thinks she has lost: a standard to measure by, as well as a lover.",
@@ -1004,7 +1004,7 @@
         "cleopatra",
         "antony"
       ],
-      "source": "Globe/Moby text, 4.15.75–80",
+      "source": "Astor Library Edition, 4.15.67–72 (MIT 4.15.75–80)",
       "cloze": [
         "melt",
         "odds"
@@ -1014,7 +1014,7 @@
       "id": "legs-bestrid-the-ocean",
       "text": "His legs bestrid the ocean: his rear'd arm Crested the world: his voice was propertied As all the tuned spheres",
       "speaker": "Cleopatra",
-      "reference": "5.2.101",
+      "reference": "5.2.91",
       "stage": "act-5",
       "context": "Describing her dream of Antony to Dolabella, one of Caesar’s officers.",
       "analysis": "She is making a colossus out of a man who died badly two scenes ago, and she asks Dolabella outright whether such a person could have existed. His honest no does not end the exchange: she answers that dreaming him is itself a kind of evidence, which is the play’s last defence of the imagination against Roman fact.",
@@ -1029,7 +1029,7 @@
         "cleopatra",
         "antony"
       ],
-      "source": "Globe/Moby text, 5.2.101–103",
+      "source": "Astor Library Edition, 5.2.91–93 (MIT 5.2.101–103)",
       "cloze": [
         "bestrid",
         "Crested"
@@ -1039,7 +1039,7 @@
       "id": "he-words-me",
       "text": "He words me, girls, he words me, that I should not Be noble to myself",
       "speaker": "Cleopatra",
-      "reference": "5.2.225",
+      "reference": "5.2.209",
       "stage": "act-5",
       "context": "The instant Caesar leaves, having promised her kind treatment.",
       "analysis": "Making the noun a verb is the whole judgement: Caesar’s courtesy is a technique, and she has seen how it works. Her word for suicide here is ‘noble to myself’, which converts a Roman virtue into something a queen can do alone and in private.",
@@ -1052,7 +1052,7 @@
         "cleopatra",
         "octavius-caesar"
       ],
-      "source": "Globe/Moby text, 5.2.225–226",
+      "source": "Astor Library Edition, 5.2.209–210 (MIT 5.2.225–226)",
       "cloze": [
         "words",
         "noble"
@@ -1062,7 +1062,7 @@
       "id": "squeaking-cleopatra",
       "text": "the quick comedians Extemporally will stage us, and present Our Alexandrian revels; Antony Shall be brought drunken forth, and I shall see Some squeaking Cleopatra boy my greatness I' the posture of a whore.",
       "speaker": "Cleopatra",
-      "reference": "5.2.258",
+      "reference": "5.2.240",
       "stage": "act-5",
       "context": "Explaining to Iras what a Roman triumph would actually involve.",
       "analysis": "The line was first spoken by a boy actor playing Cleopatra, so the theatre is required to admit its own limits at the very moment she rejects them. What she fears is a bad performance, and the fear drives her to write a better final scene.",
@@ -1077,7 +1077,7 @@
         "cleopatra",
         "antony"
       ],
-      "source": "Globe/Moby text, 5.2.258–263",
+      "source": "Astor Library Edition, 5.2.240–245 (MIT 5.2.258–263)",
       "cloze": [
         "squeaking",
         "posture"
@@ -1087,7 +1087,7 @@
       "id": "immortal-longings",
       "text": "Give me my robe, put on my crown; I have Immortal longings in me",
       "speaker": "Cleopatra",
-      "reference": "5.2.328",
+      "reference": "5.2.301",
       "stage": "act-5",
       "context": "After the clown has delivered the basket of figs and wished her joy o’ the worm.",
       "analysis": "She dresses for a coronation, and the stage business is deliberate: robe and crown are the properties Caesar meant to parade. The word ‘longings’ keeps the appetite the Romans accused her of and attaches it to eternity instead of to supper.",
@@ -1099,7 +1099,7 @@
       "characters": [
         "cleopatra"
       ],
-      "source": "Globe/Moby text, 5.2.328–329",
+      "source": "Astor Library Edition, 5.2.301–302 (MIT 5.2.328–329)",
       "cloze": [
         "robe",
         "Immortal"
@@ -1109,7 +1109,7 @@
       "id": "fire-and-air",
       "text": "I am fire and air; my other elements I give to baser life.",
       "speaker": "Cleopatra",
-      "reference": "5.2.337",
+      "reference": "5.2.310",
       "stage": "act-5",
       "context": "Dressed and crowned, a few lines before the asp is applied.",
       "analysis": "Four elements were supposed to make a body; she discards earth and water and keeps the two that rise. It also answers Antony’s ‘kingdoms are clay’ in the first scene, so the play’s opening and closing images of substance are spoken by the two lovers about the same things.",
@@ -1123,7 +1123,7 @@
       "characters": [
         "cleopatra"
       ],
-      "source": "Globe/Moby text, 5.2.337–338",
+      "source": "Astor Library Edition, 5.2.310–311 (MIT 5.2.337–338)",
       "cloze": [
         "fire",
         "elements"
@@ -1133,7 +1133,7 @@
       "id": "baby-at-my-breast",
       "text": "Dost thou not see my baby at my breast, That sucks the nurse asleep?",
       "speaker": "Cleopatra",
-      "reference": "5.2.361",
+      "reference": "5.2.333",
       "stage": "act-5",
       "context": "With the asp at her breast, as Charmian cries out.",
       "analysis": "The image makes her death an act of feeding, and the venom a child. Cleopatra’s own children are barely mentioned in the play; here, at the last moment, she becomes a mother to the thing that is killing her, and asks a question.",
@@ -1146,7 +1146,7 @@
         "cleopatra",
         "charmian"
       ],
-      "source": "Globe/Moby text, 5.2.361–362",
+      "source": "Astor Library Edition, 5.2.333–334 (MIT 5.2.361–362)",
       "cloze": [
         "baby",
         "nurse"
@@ -1156,7 +1156,7 @@
       "id": "lass-unparalleld",
       "text": "Now boast thee, death, in thy possession lies A lass unparallel'd. Downy windows, close;",
       "speaker": "Charmian",
-      "reference": "5.2.368",
+      "reference": "5.2.339",
       "stage": "act-5",
       "context": "Closing the dead queen’s eyes before applying an asp to herself.",
       "analysis": "After five acts of Egypt, empire and infinite variety, the summing-up word is ‘lass’, the smallest, plainest, most domestic noun available. Charmian then straightens the crown, which is the only correction anyone in the play manages to make to how Cleopatra will be seen.",
@@ -1169,7 +1169,7 @@
         "charmian",
         "cleopatra"
       ],
-      "source": "Globe/Moby text, 5.2.368–369",
+      "source": "Astor Library Edition, 5.2.339–340 (MIT 5.2.368–369)",
       "cloze": [
         "lass",
         "unparallel'd"
@@ -1179,7 +1179,7 @@
       "id": "pair-so-famous",
       "text": "She shall be buried by her Antony: No grave upon the earth shall clip in it A pair so famous.",
       "speaker": "Octavius Caesar",
-      "reference": "5.2.421",
+      "reference": "5.2.384",
       "stage": "act-5",
       "context": "The play’s closing speech, after the guards find Cleopatra dead.",
       "analysis": "The winner’s last act is to arrange the funeral of the people who beat him to it, and ‘clip’, meaning embrace, lets the grave do what Caesar prevented. He is already speaking of them as a story worth lamenting, which is exactly the outcome Cleopatra spent the act securing.",
@@ -1193,7 +1193,7 @@
         "cleopatra",
         "antony"
       ],
-      "source": "Globe/Moby text, 5.2.421–423",
+      "source": "Astor Library Edition, 5.2.384–386 (MIT 5.2.421–423)",
       "cloze": [
         "buried",
         "famous"

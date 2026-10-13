@@ -15,11 +15,11 @@
   "lengthNote": "About 2,800 lines. Act V Scene 2 takes up some 900 of them, the longest scene in Shakespeare, and Berowne speaks more than anyone else in the play",
   "openingLine": "Let fame, that all hunt after in their lives,",
   "summary": "Four men swear off women, food and sleep for three years, and break the oath within a day of four women arriving on state business. What follows is made almost entirely of language: sonnets read aloud in a park while three men hide in the bushes, two letters delivered to the wrong hands, a schoolmaster’s Latin, a Spaniard’s prose, a masque of counterfeit Russians. The women win every exchange, and when a messenger brings news of a death in the last minutes they set the men a year of waiting instead of marrying them. It is the only Shakespeare comedy that ends with nobody married.",
-  "referenceStyle": "act, scene and line",
+  "referenceStyle": "act, scene and line of the Astor Library Edition",
   "sourceText": {
     "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
-    "note": "Line numbers follow the traditional Globe numbering, from which modern editions vary by a line or two. Line references were checked against the MIT Shakespeare."
+    "note": "Other modern editions vary by a line or two."
   },
   "atAGlance": [
     {
@@ -722,7 +722,7 @@
       "characters": [
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.1–2",
+      "source": "Astor Library Edition, 1.1.1–2 (MIT 1.1.1–2)",
       "cloze": [
         "fame",
         "tombs"
@@ -746,7 +746,7 @@
       "characters": [
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.12–13",
+      "source": "Astor Library Edition, 1.1.12–13 (MIT 1.1.12–13)",
       "cloze": [
         "wonder",
         "academe"
@@ -771,7 +771,7 @@
         "berowne",
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.86–87",
+      "source": "Astor Library Edition, 1.1.86–87 (MIT 1.1.86–87)",
       "cloze": [
         "plodders",
         "books"
@@ -781,7 +781,7 @@
       "id": "necessity",
       "text": "Necessity will make us all forsworn Three thousand times within this three years’ space",
       "speaker": "Berowne",
-      "reference": "1.1.149",
+      "reference": "1.1.146",
       "stage": "act-1",
       "context": "Signing the schedule, after the King has already suspended one clause for the French embassy.",
       "analysis": "Berowne signs and predicts the failure in the same breath, which makes him honest and useless. Three thousand is a joke and also roughly right: every man on stage is forsworn within three acts. The play is more interested in what he does after being proved correct than in the prediction, and what he does is write a sonnet.",
@@ -795,7 +795,7 @@
       "characters": [
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.149–150",
+      "source": "Astor Library Edition, 1.1.146–147 (MIT 1.1.149–150)",
       "cloze": [
         "Necessity",
         "forsworn"
@@ -805,7 +805,7 @@
       "id": "idle-scorn",
       "text": "I’ll lay my head to any good man’s hat These oaths and laws will prove an idle scorn.",
       "speaker": "Berowne",
-      "reference": "1.1.293",
+      "reference": "1.1.275",
       "stage": "act-1",
       "context": "Alone with Costard after the King has sentenced him to bran and water.",
       "analysis": "The bet is laid in the same scene as the law, and Berowne wins it before the interval. The placement lifts the line above a joke: he says it while escorting the first man punished under the statute, so the audience hears the law’s collapse predicted over the head of the one person it has actually cost anything.",
@@ -820,7 +820,7 @@
         "berowne",
         "costard"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.1.293–294",
+      "source": "Astor Library Edition, 1.1.275–276 (MIT 1.1.293–294)",
       "cloze": [
         "oaths",
         "scorn"
@@ -830,7 +830,7 @@
       "id": "turn-sonnet",
       "text": "Assist me, some extemporal god of rhyme, for I am sure I shall turn sonnet.",
       "speaker": "Don Adriano de Armado",
-      "reference": "1.2.210",
+      "reference": "1.2.149",
       "stage": "act-1",
       "context": "Alone at the end of Act I, having fallen for Jaquenetta.",
       "analysis": "‘Turn sonnet’, as a man might turn Turk or turn soldier: love makes a literary form of him. Armado gets there three acts before the lords do, and his letter to Jaquenetta arrives in the Princess’s hands in Act IV while Berowne’s reaches a schoolmaster. The subplot is ahead of the main plot.",
@@ -846,7 +846,7 @@
         "armado",
         "jaquenetta"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 1.2.210–211",
+      "source": "Astor Library Edition, 1.2.149–150 (MIT 1.2.210–211)",
       "cloze": [
         "extemporal",
         "sonnet"
@@ -872,7 +872,7 @@
         "princess-of-france",
         "boyet"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 2.1.15–16",
+      "source": "Astor Library Edition, 2.1.15–16 (MIT 2.1.15–16)",
       "cloze": [
         "Beauty",
         "chapmen"
@@ -882,7 +882,7 @@
       "id": "deadly-sin",
       "text": "’Tis deadly sin to keep that oath, my lord, And sin to break it.",
       "speaker": "Princess of France",
-      "reference": "2.1.106",
+      "reference": "2.1.105",
       "stage": "act-2",
       "context": "Standing outside the gates, told she cannot come in because of the vow.",
       "analysis": "She puts the men in a position they never work out of: the oath is wrong either way, so nothing they do about it can be virtuous. Berowne spends a hundred lines in Act IV arguing that breaking it is a religious duty, which is only half of what she said here, and she never grants him the other half.",
@@ -897,7 +897,7 @@
         "princess-of-france",
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 2.1.106–107",
+      "source": "Astor Library Edition, 2.1.105–106 (MIT 2.1.106–107)",
       "cloze": [
         "deadly",
         "oath"
@@ -907,7 +907,7 @@
       "id": "brabant",
       "text": "Did not I dance with you in Brabant once?",
       "speaker": "Rosaline",
-      "reference": "2.1.115",
+      "reference": "2.1.114",
       "stage": "act-2",
       "context": "Answering Berowne, who has just asked her the same question word for word.",
       "analysis": "She gives him his own sentence back unaltered, and it is the first thing she says to him. The tactic sets the pattern for every exchange they have: he supplies the material and she returns it with the ownership changed. It also tells the audience they have met before, so the courtship the men think they are starting is already several years old.",
@@ -922,7 +922,7 @@
         "rosaline",
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 2.1.115",
+      "source": "Astor Library Edition, 2.1.114 (MIT 2.1.115)",
       "cloze": [
         "dance",
         "Brabant"
@@ -932,7 +932,7 @@
       "id": "court-of-his-eye",
       "text": "Why, all his behaviours did make their retire To the court of his eye, peeping thorough desire.",
       "speaker": "Boyet",
-      "reference": "2.1.240",
+      "reference": "2.1.230",
       "stage": "act-2",
       "context": "Telling the Princess that Navarre has fallen for her.",
       "analysis": "Boyet reads a face the way the lords read books, and he is right. The pun on court does the work: the King’s whole household has withdrawn into one organ, so the academy has already shrunk to the size of a man looking at a woman. Berowne will build his Act IV defence of love out of eyes, and Boyet has got there first.",
@@ -949,7 +949,7 @@
         "king-of-navarre",
         "princess-of-france"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 2.1.240–241",
+      "source": "Astor Library Edition, 2.1.230–231 (MIT 2.1.240–241)",
       "cloze": [
         "behaviours",
         "desire"
@@ -959,7 +959,7 @@
       "id": "remuneration",
       "text": "“Remuneration”! O, that’s the Latin word for three farthings.",
       "speaker": "Costard",
-      "reference": "3.1.157",
+      "reference": "3.1.117",
       "stage": "act-3",
       "context": "Alone, after Armado has paid him for carrying a letter.",
       "analysis": "He works out the exchange rate of a word by what it bought, which is the only honest method anyone in the play uses. Berowne pays him a guerdon eighty lines later and Costard prices that too, at elevenpence farthing better. Set beside Holofernes hoarding Latin for its own sake, the countryman’s accounting looks like the sane position.",
@@ -976,7 +976,7 @@
         "armado",
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 3.1.157–158",
+      "source": "Astor Library Edition, 3.1.117–118 (MIT 3.1.157–158)",
       "cloze": [
         "Latin",
         "farthings"
@@ -986,7 +986,7 @@
       "id": "dan-cupid",
       "text": "This wimpled, whining, purblind, wayward boy, This Signior Junior, giant-dwarf, Dan Cupid",
       "speaker": "Berowne",
-      "reference": "3.1.197",
+      "reference": "3.1.156",
       "stage": "act-3",
       "context": "Alone, admitting he is in love and furious about it.",
       "analysis": "Four adjectives and then a title that contradicts itself twice over, junior and signior, giant and dwarf. Berowne abuses Cupid in the most elaborate style he has, which is the joke: the man complaining about love-rhymes is composing one. The speech ends with him agreeing to love, write, sigh, pray, sue and groan, in that order.",
@@ -1001,7 +1001,7 @@
       "characters": [
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 3.1.197–198",
+      "source": "Astor Library Edition, 3.1.156–157 (MIT 3.1.197–198)",
       "cloze": [
         "purblind",
         "Cupid"
@@ -1011,7 +1011,7 @@
       "id": "glory-guilty",
       "text": "Glory grows guilty of detested crimes, When, for fame’s sake, for praise, an outward part, We bend to that the working of the heart",
       "speaker": "Princess of France",
-      "reference": "4.1.32",
+      "reference": "4.1.31",
       "stage": "act-4",
       "context": "About to shoot a deer she does not want to kill.",
       "analysis": "She is describing herself: she will shoot for the credit of shooting well. The lines put a name to what the King did in the play’s first speech, hunting fame and bending the heart to it, and they come from the only character who admits to doing it. Four scenes later the deer is dead and Holofernes has written a poem about it.",
@@ -1025,7 +1025,7 @@
       "characters": [
         "princess-of-france"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 4.1.32–34",
+      "source": "Astor Library Edition, 4.1.31–33 (MIT 4.1.32–34)",
       "cloze": [
         "Glory",
         "fame"
@@ -1035,7 +1035,7 @@
       "id": "preyful-princess",
       "text": "The preyful Princess pierced and pricked a pretty pleasing pricket",
       "speaker": "Holofernes",
-      "reference": "4.2.59",
+      "reference": "4.2.52",
       "stage": "act-4",
       "context": "Improvising an epitaph on the deer for Sir Nathaniel.",
       "analysis": "Six words beginning with p, which Holofernes calls affecting the letter and says argues facility. It is a complete school exercise, executed correctly and for nothing. He follows it with a poem that gets fifty sores out of one by adding the letter L, and he is truly pleased. The scene is funny and also the clearest picture in the play of learning with no object.",
@@ -1051,7 +1051,7 @@
         "holofernes",
         "princess-of-france"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 4.2.59",
+      "source": "Astor Library Edition, 4.2.52 (MIT 4.2.59)",
       "cloze": [
         "preyful",
         "pricket"
@@ -1061,7 +1061,7 @@
       "id": "promethean-fire",
       "text": "From women’s eyes this doctrine I derive. They sparkle still the right Promethean fire; They are the books, the arts, the academes, That show, contain, and nourish, all the world",
       "speaker": "Berowne",
-      "reference": "4.3.359",
+      "reference": "4.3.348",
       "stage": "act-4",
       "context": "All four men are now exposed, and Berowne has been asked to prove their loving lawful.",
       "analysis": "The academy is moved elsewhere, with women installed where the library used to be. It is a magnificent argument, and it leaves the men exactly where they started, treating women as the means to something else. The Princess answers it in Act V by asking for a year, and none of these hundred lines is any use to Berowne then.",
@@ -1077,7 +1077,7 @@
       "characters": [
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 4.3.359–362",
+      "source": "Astor Library Edition, 4.3.348–351 (MIT 4.3.359–362)",
       "cloze": [
         "Promethean",
         "academes"
@@ -1087,7 +1087,7 @@
       "id": "lose-our-oaths",
       "text": "Let us once lose our oaths to find ourselves, Or else we lose ourselves to keep our oaths.",
       "speaker": "Berowne",
-      "reference": "4.3.370",
+      "reference": "4.3.359",
       "stage": "act-4",
       "context": "The end of the speech that releases all four men from the statute.",
       "analysis": "The couplet turns on one verb used twice, and the balance is so neat that nobody on stage looks for the hole in it. Berowne is arguing that a promise you regret was never binding, which is what he told the King in Act I as a joke. The women’s reply is to give the four men a promise with a year attached.",
@@ -1102,7 +1102,7 @@
         "berowne",
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 4.3.370–371",
+      "source": "Astor Library Edition, 4.3.359–360 (MIT 4.3.370–371)",
       "cloze": [
         "oaths",
         "ourselves"
@@ -1112,7 +1112,7 @@
       "id": "feast-of-languages",
       "text": "They have been at a great feast of languages and stolen the scraps.",
       "speaker": "Moth",
-      "reference": "5.1.38",
+      "reference": "5.1.32",
       "stage": "act-5",
       "context": "Aside to Costard, watching Armado and Holofernes greet each other in Latin.",
       "analysis": "A page says in one sentence what the play takes five acts to demonstrate. The insult is precise: the scraps are real food, taken from a real feast, but nobody at this table cooked anything. Costard carries it on straight away, saying they have lived long on the alms-basket of words, which makes the learned men beggars living on other people’s leftovers.",
@@ -1130,7 +1130,7 @@
         "holofernes",
         "armado"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.1.38–39",
+      "source": "Astor Library Edition, 5.1.32–33 (MIT 5.1.38–39)",
       "cloze": [
         "feast",
         "scraps"
@@ -1140,7 +1140,7 @@
       "id": "my-fool-his-fate",
       "text": "That he should be my fool, and I his fate.",
       "speaker": "Rosaline",
-      "reference": "5.2.70",
+      "reference": "5.2.69",
       "stage": "act-5",
       "context": "Telling the other women what she would do to Berowne if she had him in her power.",
       "analysis": "Said as a fantasy of revenge, and by the end of the scene it has come true in a form she has not imagined: she does become his fate, and the sentence she passes is a year among the dying. The line is worth setting beside her last speech, where the same wit that plans this torture is used to explain what a jest costs.",
@@ -1155,7 +1155,7 @@
         "rosaline",
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.70",
+      "source": "Astor Library Edition, 5.2.69 (MIT 5.2.70)",
       "cloze": [
         "fool",
         "fate"
@@ -1165,7 +1165,7 @@
       "id": "kersey-noes",
       "text": "Henceforth my wooing mind shall be expressed In russet yeas and honest kersey noes.",
       "speaker": "Berowne",
-      "reference": "5.2.434",
+      "reference": "5.2.419",
       "stage": "act-5",
       "context": "After the Muscovite masque has been exposed, renouncing taffeta phrases.",
       "analysis": "Russet and kersey are cheap cloth, set against the taffeta and three-piled hyperboles he has just forsworn, so the renunciation is still a figure of speech. Rosaline catches it two lines later when he says sans crack or flaw and she asks him to drop the sans. He admits he has a trick of the old rage and will leave it by degrees.",
@@ -1181,7 +1181,7 @@
         "berowne",
         "rosaline"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.434–435",
+      "source": "Astor Library Edition, 5.2.419–420 (MIT 5.2.434–435)",
       "cloze": [
         "russet",
         "kersey"
@@ -1191,7 +1191,7 @@
       "id": "heavy-in-my-tongue",
       "text": "I am sorry, madam, for the news I bring Is heavy in my tongue. The King your father—",
       "speaker": "Marcadé",
-      "reference": "5.2.757",
+      "reference": "5.2.703",
       "stage": "act-5",
       "context": "Entering in the middle of the Nine Worthies, as Armado and Costard square up to fight.",
       "analysis": "He never finishes the sentence; the Princess does it for him. Two and a half lines of plain statement stop a scene that has run nearly seven hundred, and Berowne’s response is the stage direction in words: worthies away, the scene begins to cloud. Nothing said after this has the same footing as anything said before it.",
@@ -1205,7 +1205,7 @@
       "characters": [
         "princess-of-france"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.757–758",
+      "source": "Astor Library Edition, 5.2.703–704 (MIT 5.2.757–758)",
       "cloze": [
         "heavy",
         "father"
@@ -1215,7 +1215,7 @@
       "id": "world-without-end",
       "text": "A time, methinks, too short To make a world-without-end bargain in.",
       "speaker": "Princess of France",
-      "reference": "5.2.830",
+      "reference": "5.2.773",
       "stage": "act-5",
       "context": "The King has asked, at the latest minute of the hour, for her love.",
       "analysis": "World-without-end comes from the prayer book, and she uses it to measure marriage against the few hours the courtship has actually lasted. This is the answer to everything Berowne argued in Act IV, and it is not a refusal: she sets a hermitage and a year, and says come challenge me by these deserts. The terms are the point.",
@@ -1231,7 +1231,7 @@
         "princess-of-france",
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.830–831",
+      "source": "Astor Library Edition, 5.2.773–774 (MIT 5.2.830–831)",
       "cloze": [
         "bargain",
         "short"
@@ -1241,7 +1241,7 @@
       "id": "jests-prosperity",
       "text": "A jest’s prosperity lies in the ear Of him that hears it, never in the tongue Of him that makes it.",
       "speaker": "Rosaline",
-      "reference": "5.2.898",
+      "reference": "5.2.847",
       "stage": "act-5",
       "context": "Explaining why Berowne must spend a year making the sick laugh.",
       "analysis": "The whole play is tested against this sentence. Every wit in it has assumed the credit belongs to the speaker, and Rosaline moves it to the listener. It also justifies her sentence exactly: if the dying will laugh at his jokes he may keep them, and if they will not, the fault was never in their ears.",
@@ -1257,7 +1257,7 @@
         "rosaline",
         "berowne"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.898–900",
+      "source": "Astor Library Edition, 5.2.847–849 (MIT 5.2.898–900)",
       "cloze": [
         "jest",
         "ear"
@@ -1267,7 +1267,7 @@
       "id": "old-play",
       "text": "Our wooing doth not end like an old play. Jack hath not Jill.",
       "speaker": "Berowne",
-      "reference": "5.2.911",
+      "reference": "5.2.860",
       "stage": "act-5",
       "context": "After all four women have set their terms and are leaving.",
       "analysis": "He names the genre the audience expected and says it has not arrived, and the King answers that it wants a twelvemonth and a day, to which Berowne replies that is too long for a play. Two characters stand inside the story and discuss its shape, and the ending they describe is the one they are in.",
@@ -1282,7 +1282,7 @@
         "berowne",
         "king-of-navarre"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.911–912",
+      "source": "Astor Library Edition, 5.2.860–861 (MIT 5.2.911–912)",
       "cloze": [
         "wooing",
         "Jill"
@@ -1292,7 +1292,7 @@
       "id": "greasy-joan",
       "text": "When icicles hang by the wall, And Dick the shepherd blows his nail",
       "speaker": "Winter",
-      "reference": "5.2.953",
+      "reference": "5.2.895",
       "stage": "act-5",
       "context": "The second of the two songs that close the play, sung by the pageant players.",
       "analysis": "Dick, Tom, Marian and greasy Joan are the first people in the play with ordinary names and ordinary jobs, and they arrive in the last ninety seconds. The song has no wit in it at all, only frozen milk, a red nose and a staring owl, and it is the plainest and best-liked writing in the whole comedy.",
@@ -1307,7 +1307,7 @@
         "armado",
         "holofernes"
       ],
-      "source": "Project Gutenberg eBook 100, Love’s Labour’s Lost 5.2.953–954",
+      "source": "Astor Library Edition, 5.2.895–896 (MIT 5.2.953–954)",
       "cloze": [
         "icicles",
         "shepherd"

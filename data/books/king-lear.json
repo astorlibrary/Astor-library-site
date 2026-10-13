@@ -18,11 +18,11 @@
   "lengthNote": "Around 3,300 lines in a conflated text; the quarto and the Folio each contain several hundred lines the other lacks",
   "openingLine": "I thought the king had more affected the Duke of Albany than Cornwall.",
   "summary": "An old king asks his three daughters to say how much they love him, and disinherits the one who will not perform. Within two acts he has no soldiers, no roof and no title, and the play spends the next three watching what is left of a man when the offices are taken away. A second family repeats the mistake with sons, and by the end both fathers have learned to see and neither survives the knowledge.",
-  "referenceStyle": "act, scene and line",
+  "referenceStyle": "act, scene and line of the Astor Library Edition",
   "sourceText": {
     "label": "Globe/Moby text of King Lear",
     "url": "https://shakespeare.mit.edu/lear/full.html",
-    "note": "The Globe numbering follows a conflated text. The 1608 quarto and the 1623 Folio differ in hundreds of readings, and the Folio omits a whole scene that many editions print as 4.3."
+    "note": "The Astor edition prints a conflated text. The 1608 quarto and the 1623 Folio differ in hundreds of readings, and the Folio omits a whole scene that many editions print as 4.3."
   },
   "atAGlance": [
     {
@@ -695,7 +695,7 @@
       "id": "cannot-heave-my-heart",
       "text": "Unhappy that I am, I cannot heave My heart into my mouth: I love your majesty According to my bond; nor more nor less.",
       "speaker": "Cordelia",
-      "reference": "1.1.94",
+      "reference": "1.1.90",
       "stage": "act-1",
       "context": "Her explanation after answering the love test with a single word.",
       "analysis": "‘Bond’ is a legal term, and she uses it deliberately: she is offering an obligation that can be relied on instead of a quantity that cannot be checked. ‘Nor more nor less’ is the sentence her father hears as coldness and the play treats as the only honest accounting in the scene.",
@@ -708,7 +708,7 @@
         "cordelia",
         "lear"
       ],
-      "source": "Globe/Moby text, 1.1.94–96",
+      "source": "Astor Library Edition, 1.1.90–92 (MIT 1.1.94–96)",
       "cloze": [
         "heart",
         "bond"
@@ -718,7 +718,7 @@
       "id": "nothing-will-come-of-nothing",
       "text": "Nothing will come of nothing: speak again.",
       "speaker": "King Lear",
-      "reference": "1.1.93",
+      "reference": "1.1.89",
       "stage": "act-1",
       "context": "After Cordelia has twice said ‘Nothing’.",
       "analysis": "He states a law of physics and applies it to affection, which is exactly the category error the play is about. The second half of the line matters most: he gives her another turn, so the disaster that follows is a decision taken with a chance to reconsider.",
@@ -731,7 +731,7 @@
         "lear",
         "cordelia"
       ],
-      "source": "Globe/Moby text, 1.1.93",
+      "source": "Astor Library Edition, 1.1.89 (MIT 1.1.93)",
       "cloze": [
         "Nothing",
         "speak"
@@ -741,7 +741,7 @@
       "id": "see-better-lear",
       "text": "See better, Lear; and let me still remain The true blank of thine eye.",
       "speaker": "Kent",
-      "reference": "1.1.167",
+      "reference": "1.1.160",
       "stage": "act-1",
       "context": "Refusing to leave after being told to get out of the king’s sight.",
       "analysis": "The blank is the white centre of an archery target, so Kent is asking to be the thing his master aims at: a servant volunteering to be a mark. He also drops the royal address and uses the king’s name, which in this court is the offence.",
@@ -754,7 +754,7 @@
         "kent",
         "lear"
       ],
-      "source": "Globe/Moby text, 1.1.167–168",
+      "source": "Astor Library Edition, 1.1.160–161 (MIT 1.1.167–168)",
       "cloze": [
         "See",
         "blank"
@@ -779,7 +779,7 @@
         "edmund",
         "gloucester"
       ],
-      "source": "Globe/Moby text, 1.2.1–4",
+      "source": "Astor Library Edition, 1.2.1–4 (MIT 1.2.1–4)",
       "cloze": [
         "nature",
         "custom"
@@ -802,7 +802,7 @@
       "characters": [
         "edmund"
       ],
-      "source": "Globe/Moby text, 1.2.22",
+      "source": "Astor Library Edition, 1.2.22 (MIT 1.2.22)",
       "cloze": [
         "gods",
         "bastards"
@@ -812,7 +812,7 @@
       "id": "who-can-tell-me-who-i-am",
       "text": "Who is it that can tell me who I am?",
       "speaker": "King Lear",
-      "reference": "1.4.222",
+      "reference": "1.4.200",
       "stage": "act-1",
       "context": "In Goneril’s house, finding that his own knights are being treated as an inconvenience.",
       "analysis": "The Fool answers ‘Lear’s shadow’, and the answer is exact: without the retinue, the ceremony and the obedience, there is no test he can apply to himself. The question is asked in irony and turns out to be the play’s real subject by the third act.",
@@ -827,7 +827,7 @@
         "lear",
         "fool"
       ],
-      "source": "Globe/Moby text, 1.4.222",
+      "source": "Astor Library Edition, 1.4.200 (MIT 1.4.222)",
       "cloze": [
         "tell",
         "am"
@@ -837,7 +837,7 @@
       "id": "serpents-tooth",
       "text": "How sharper than a serpent's tooth it is To have a thankless child!",
       "speaker": "King Lear",
-      "reference": "1.4.285",
+      "reference": "1.4.260",
       "stage": "act-1",
       "context": "The end of the curse he lays on Goneril, before storming out.",
       "analysis": "He has just asked nature to make her barren, and this is the sentence he finishes on: a father’s grievance dressed as a proverb. The comparison is with a bite, which keeps the whole speech inside the play’s animal vocabulary, and he goes out without waiting for a reply.",
@@ -852,7 +852,7 @@
         "lear",
         "goneril"
       ],
-      "source": "Globe/Moby text, 1.4.285–286",
+      "source": "Astor Library Edition, 1.4.260–261 (MIT 1.4.285–286)",
       "cloze": [
         "serpent's",
         "thankless"
@@ -862,7 +862,7 @@
       "id": "reason-not-the-need",
       "text": "O, reason not the need: our basest beggars Are in the poorest thing superfluous: Allow not nature more than nature needs, Man's life's as cheap as beast's:",
       "speaker": "King Lear",
-      "reference": "2.4.291",
+      "reference": "2.4.261",
       "stage": "act-2",
       "context": "Answering Regan’s question, ‘What need one?’",
       "analysis": "It is the best argument he makes in the play and he makes it in defence of a hundred armed men he does not need. The reasoning, though, is general and survives the occasion: measure a person by need and you have already agreed they are livestock. Two acts later he applies it to people with no roof at all.",
@@ -878,7 +878,7 @@
         "regan",
         "goneril"
       ],
-      "source": "Globe/Moby text, 2.4.291–294",
+      "source": "Astor Library Edition, 2.4.261–264 (MIT 2.4.291–294)",
       "cloze": [
         "reason",
         "beggars"
@@ -902,7 +902,7 @@
       "characters": [
         "lear"
       ],
-      "source": "Globe/Moby text, 3.2.1",
+      "source": "Astor Library Edition, 3.2.1 (MIT 3.2.1)",
       "cloze": [
         "winds",
         "rage"
@@ -912,7 +912,7 @@
       "id": "more-sinned-against",
       "text": "I am a man More sinn'd against than sinning.",
       "speaker": "King Lear",
-      "reference": "3.2.60",
+      "reference": "3.2.53",
       "stage": "act-3",
       "context": "Ending the speech in which he summons hidden criminals to confess.",
       "analysis": "The comparative is doing the pleading: he does not claim innocence, only a favourable balance. It answers his plea in 2.4, where he showed the gods ‘a poor old man’; now he claims the standing of a man wronged, and the metre of his self-defence keeps shortening.",
@@ -926,7 +926,7 @@
       "characters": [
         "lear"
       ],
-      "source": "Globe/Moby text, 3.2.60–61",
+      "source": "Astor Library Edition, 3.2.53–54 (MIT 3.2.60–61)",
       "cloze": [
         "sinn'd",
         "sinning"
@@ -936,7 +936,7 @@
       "id": "poor-naked-wretches",
       "text": "Poor naked wretches, whereso'er you are, That bide the pelting of this pitiless storm,",
       "speaker": "King Lear",
-      "reference": "3.4.32",
+      "reference": "3.4.28",
       "stage": "act-3",
       "context": "Outside the hovel, having sent the Fool in first.",
       "analysis": "This is the first sentence in the play in which he thinks about anyone who is not in the room. He addresses people he cannot see and has never considered, and the admission that follows, that he has taken too little care of this, is the nearest he comes to a moral turn.",
@@ -951,7 +951,7 @@
         "lear",
         "fool"
       ],
-      "source": "Globe/Moby text, 3.4.32–33",
+      "source": "Astor Library Edition, 3.4.28–29 (MIT 3.4.32–33)",
       "cloze": [
         "naked",
         "pitiless"
@@ -961,7 +961,7 @@
       "id": "unaccommodated-man",
       "text": "Thou art the thing itself: unaccommodated man is no more but such a poor bare, forked animal as thou art.",
       "speaker": "King Lear",
-      "reference": "3.4.107",
+      "reference": "3.4.95",
       "stage": "act-3",
       "context": "Looking at Poor Tom, who is naked in the storm; Lear then starts tearing off his own clothes.",
       "analysis": "It is prose, and the prose matters: the king’s verse has gone. ‘Forked’ is a stage direction as much as an image, two legs and nothing else, and the speech ends in an action, which is why the scene is remembered as something seen.",
@@ -977,7 +977,7 @@
         "lear",
         "edgar"
       ],
-      "source": "Globe/Moby text, 3.4.107–109",
+      "source": "Astor Library Edition, 3.4.95–96 (MIT 3.4.107–109)",
       "cloze": [
         "unaccommodated",
         "forked"
@@ -987,7 +987,7 @@
       "id": "out-vile-jelly",
       "text": "Lest it see more, prevent it. Out, vile jelly!",
       "speaker": "Cornwall",
-      "reference": "3.7.91",
+      "reference": "3.7.88",
       "stage": "act-3",
       "context": "Putting out Gloucester’s second eye, after his own servant has been killed trying to stop him.",
       "analysis": "The reason given is precautionary, which makes it worse: an eye is destroyed because of what it might otherwise witness. Calling it jelly makes an organ a substance, and Shakespeare puts the whole thing on stage, so the audience has to sit in the room.",
@@ -1000,7 +1000,7 @@
         "gloucester",
         "regan"
       ],
-      "source": "Globe/Moby text, 3.7.91",
+      "source": "Astor Library Edition, 3.7.88 (MIT 3.7.91)",
       "cloze": [
         "jelly",
         "see"
@@ -1022,7 +1022,7 @@
         "gloucester",
         "edgar"
       ],
-      "source": "Globe/Moby text, 4.1.19–20",
+      "source": "Astor Library Edition, 4.1.19–20 (MIT 4.1.19–20)",
       "cloze": [
         "eyes",
         "stumbled"
@@ -1032,7 +1032,7 @@
       "id": "flies-to-wanton-boys",
       "text": "As flies to wanton boys, are we to the gods. They kill us for their sport.",
       "speaker": "Gloucester",
-      "reference": "4.1.42",
+      "reference": "4.1.38",
       "stage": "act-4",
       "context": "Spoken to the man he has just hired to lead him, who is his son.",
       "analysis": "The most quoted theology in the play is a man’s response to a private disaster, and the play does not endorse it; forty lines earlier he was blaming eclipses, and by Act V he dies of joy. Notice who hears it: Edgar, in disguise, who could disprove at least part of it by saying his own name.",
@@ -1048,7 +1048,7 @@
         "gloucester",
         "edgar"
       ],
-      "source": "Globe/Moby text, 4.1.42–43",
+      "source": "Astor Library Edition, 4.1.38–39 (MIT 4.1.42–43)",
       "cloze": [
         "flies",
         "sport"
@@ -1058,7 +1058,7 @@
       "id": "dogs-obeyed-in-office",
       "text": "And the creature run from the cur? There thou mightst behold the great image of authority: a dog's obeyed in office.",
       "speaker": "King Lear",
-      "reference": "4.6.173",
+      "reference": "4.6.152",
       "stage": "act-4",
       "context": "Mad, crowned with weeds, talking to the blinded Gloucester in the fields near Dover.",
       "analysis": "Authority is reduced to a reflex in a beggar’s legs, and the argument is built from a scene anyone in the audience would have watched in a street. It is prose, spoken by a king who has lost his reason, and it is the most exact political sentence in the play.",
@@ -1074,7 +1074,7 @@
         "lear",
         "gloucester"
       ],
-      "source": "Globe/Moby text, 4.6.173–175",
+      "source": "Astor Library Edition, 4.6.152–153 (MIT 4.6.173–175)",
       "cloze": [
         "authority",
         "office"
@@ -1084,7 +1084,7 @@
       "id": "wheel-of-fire",
       "text": "You do me wrong to take me out o' the grave: Thou art a soul in bliss; but I am bound Upon a wheel of fire, that mine own tears Do scald like moulten lead.",
       "speaker": "King Lear",
-      "reference": "4.7.52",
+      "reference": "4.7.46",
       "stage": "act-4",
       "context": "Waking in the French camp, seeing Cordelia for the first time since Act I.",
       "analysis": "He wakes into a private hell and assumes his daughter is in heaven, so his first response to rescue is to apologise for being alive near her. The wheel is a torture from an older iconography than this play’s Britain, and his own tears are the instrument: nothing is being done to him from outside.",
@@ -1097,7 +1097,7 @@
         "lear",
         "cordelia"
       ],
-      "source": "Globe/Moby text, 4.7.52–55",
+      "source": "Astor Library Edition, 4.7.46–49 (MIT 4.7.52–55)",
       "cloze": [
         "wheel",
         "tears"
@@ -1107,7 +1107,7 @@
       "id": "foolish-fond-old-man",
       "text": "I am a very foolish fond old man, Fourscore and upward, not an hour more nor less; And, to deal plainly, I fear I am not in my perfect mind.",
       "speaker": "King Lear",
-      "reference": "4.7.70",
+      "reference": "4.7.61",
       "stage": "act-4",
       "context": "Kneeling to Cordelia, who has told him not to.",
       "analysis": "Three admissions in four lines, each one plainer than anything he has said before: his age, his foolishness, the state of his mind. ‘To deal plainly’ is the manner he punished Cordelia for in the first scene, and he has arrived at it by way of a heath, a hovel and a field.",
@@ -1120,7 +1120,7 @@
         "lear",
         "cordelia"
       ],
-      "source": "Globe/Moby text, 4.7.70–73",
+      "source": "Astor Library Edition, 4.7.61–64 (MIT 4.7.70–73)",
       "cloze": [
         "foolish",
         "plainly"
@@ -1130,7 +1130,7 @@
       "id": "ripeness-is-all",
       "text": "Men must endure Their going hence, even as their coming hither; Ripeness is all: come on.",
       "speaker": "Edgar",
-      "reference": "5.2.10",
+      "reference": "5.2.9",
       "stage": "act-5",
       "context": "Getting his father off the battlefield after the British victory.",
       "analysis": "Consolation offered under pressure by a son who still will not give his name, and it is a stoic commonplace that answers nothing. The last three words bring the grandeur down: this is something said to keep a man walking, and the play has not arrived at it as a philosophy.",
@@ -1145,7 +1145,7 @@
         "edgar",
         "gloucester"
       ],
-      "source": "Globe/Moby text, 5.2.10–12",
+      "source": "Astor Library Edition, 5.2.9–11 (MIT 5.2.10–12)",
       "cloze": [
         "endure",
         "Ripeness"
@@ -1155,7 +1155,7 @@
       "id": "wheel-come-full-circle",
       "text": "The wheel is come full circle: I am here.",
       "speaker": "Edmund",
-      "reference": "5.3.205",
+      "reference": "5.3.180",
       "stage": "act-5",
       "context": "Dying, after Edgar has told him who beat him in the duel.",
       "analysis": "He is the only character in the play to describe his own downfall as a shape, and he sounds almost pleased by the neatness of it. The wheel belongs to Fortune, whose authority he rejected in 1.2 in favour of nature; at the end he accepts the older machinery because it gives his ending a form.",
@@ -1168,7 +1168,7 @@
         "edmund",
         "edgar"
       ],
-      "source": "Globe/Moby text, 5.3.205",
+      "source": "Astor Library Edition, 5.3.180 (MIT 5.3.205)",
       "cloze": [
         "wheel",
         "circle"
@@ -1178,7 +1178,7 @@
       "id": "howl-howl-howl",
       "text": "Howl, howl, howl, howl! O, you are men of stones: Had I your tongues and eyes, I'ld use them so That heaven's vault should crack.",
       "speaker": "King Lear",
-      "reference": "5.3.302",
+      "reference": "5.3.265",
       "stage": "act-5",
       "context": "Entering with Cordelia dead in his arms.",
       "analysis": "The first word can be an order to the men on stage or a sound he is making himself, and productions have to decide. Either way the line begins outside language, and the accusation that follows, that they have tongues and eyes and are not using them, indicts everybody standing there, including the audience.",
@@ -1193,7 +1193,7 @@
         "lear",
         "cordelia"
       ],
-      "source": "Globe/Moby text, 5.3.302–304",
+      "source": "Astor Library Edition, 5.3.265–267 (MIT 5.3.302–304)",
       "cloze": [
         "Howl",
         "stones"
@@ -1203,7 +1203,7 @@
       "id": "never-never-never",
       "text": "Why should a dog, a horse, a rat, have life, And thou no breath at all? Thou'lt come no more, Never, never, never, never, never!",
       "speaker": "King Lear",
-      "reference": "5.3.362",
+      "reference": "5.3.318",
       "stage": "act-5",
       "context": "His last speech, over Cordelia’s body.",
       "analysis": "Five stressed nevers make a line of pure trochaic beats, the only one like it in Shakespeare, and it works because the metre has stopped doing anything except repeat. The question before it is the play’s animal vocabulary turned inside out: the beasts are alive and the daughter is not, and no account of nature explains it.",
@@ -1218,7 +1218,7 @@
         "lear",
         "cordelia"
       ],
-      "source": "Globe/Moby text, 5.3.362–364",
+      "source": "Astor Library Edition, 5.3.318–320 (MIT 5.3.362–364)",
       "cloze": [
         "dog",
         "Never"

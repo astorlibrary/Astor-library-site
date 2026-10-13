@@ -16,11 +16,11 @@
   "lengthNote": "Around 3,200 lines in the Folio; the quarto of 1600 is barely half that",
   "openingLine": "O for a Muse of fire, that would ascend The brightest heaven of invention",
   "summary": "A king takes an army across the Channel on a claim that churchmen have built for him, sacks a town by threatening its children, and wins a battle he had no business winning. Shakespeare frames it with a Chorus who describes a national epic, and then writes scenes that will not quite fit inside it: a soldier who asks whose fault it will be if the cause is bad, a boy who would trade his fame for a pot of ale, an epilogue that hands the conquest straight back.",
-  "referenceStyle": "act, scene and line",
+  "referenceStyle": "act, scene and line of the Astor Library Edition",
   "sourceText": {
     "label": "Globe/Moby text of Henry V",
     "url": "https://shakespeare.mit.edu/henryv/full.html",
-    "note": "Line numbers follow the traditional Globe numbering, in which each act’s Chorus is numbered as scene 0. The 1600 quarto contains none of the Chorus speeches."
+    "note": "Each act’s Chorus is numbered as scene 0, and the Epilogue is numbered on its own. The 1600 quarto contains none of the Chorus speeches."
   },
   "atAGlance": [
     {
@@ -603,7 +603,7 @@
       "characters": [
         "chorus"
       ],
-      "source": "Globe/Moby text, 1.0.1–4",
+      "source": "Astor Library Edition, 1.0.1–4 (MIT 1.0.1–4)",
       "cloze": [
         "Muse",
         "invention"
@@ -626,7 +626,7 @@
       "characters": [
         "chorus"
       ],
-      "source": "Globe/Moby text, 1.0.11–14",
+      "source": "Astor Library Edition, 1.0.11–14 (MIT 1.0.11–14)",
       "cloze": [
         "cockpit",
         "wooden"
@@ -650,7 +650,7 @@
       "characters": [
         "chorus"
       ],
-      "source": "Globe/Moby text, 1.0.17–18",
+      "source": "Astor Library Edition, 1.0.17–18 (MIT 1.0.17–18)",
       "cloze": [
         "ciphers",
         "imaginary"
@@ -660,7 +660,7 @@
       "id": "right-and-conscience",
       "text": "May I with right and conscience make this claim?",
       "speaker": "King Henry V",
-      "reference": "1.2.98",
+      "reference": "1.2.96",
       "stage": "act-1",
       "context": "After Canterbury’s long genealogical argument for the French crown.",
       "analysis": "It is the right question, asked of the one man in England with a financial interest in the answer. Canterbury does not say yes: he says ‘The sin upon my head, dread sovereign’, offering to take the blame without removing it, and Henry accepts the offer without pressing further.",
@@ -673,7 +673,7 @@
         "henry",
         "canterbury"
       ],
-      "source": "Globe/Moby text, 1.2.98–99",
+      "source": "Astor Library Edition, 1.2.96 (MIT 1.2.98–99)",
       "cloze": [
         "conscience",
         "claim"
@@ -683,7 +683,7 @@
       "id": "mock-mothers",
       "text": "for many a thousand widows Shall this his mock mock out of their dear husbands; Mock mothers from their sons, mock castles down;",
       "speaker": "King Henry V",
-      "reference": "1.2.289",
+      "reference": "1.2.286",
       "stage": "act-1",
       "context": "Replying to the Dauphin’s present of tennis balls.",
       "analysis": "He is answering an insult, and he answers it by itemising the dead in advance: widows, then mothers, then buildings, in descending order of grief. ‘Mock’ is used four times in three lines, so a joke about tennis becomes the word for the whole war, and the responsibility is carefully assigned to the man who made the joke.",
@@ -698,7 +698,7 @@
         "henry",
         "dauphin"
       ],
-      "source": "Globe/Moby text, 1.2.289–291",
+      "source": "Astor Library Edition, 1.2.286–288 (MIT 1.2.289–291)",
       "cloze": [
         "widows",
         "Mock"
@@ -708,7 +708,7 @@
       "id": "green-fields",
       "text": "for his nose was as sharp as a pen, and a' babbled of green fields.",
       "speaker": "Hostess",
-      "reference": "2.3.15",
+      "reference": "2.3.12",
       "stage": "act-2",
       "context": "Describing Falstaff’s death to Pistol, Bardolph and Nym.",
       "analysis": "The greatest comic character in English drama dies offstage, between scenes, in a hostess’s muddled prose, and is given one unforgettable image by a woman who is not trying to be eloquent. Eastcheap is being closed down: within forty lines the survivors are on their way to France to steal what they can.",
@@ -719,7 +719,7 @@
         "juxtaposition"
       ],
       "characters": [],
-      "source": "Globe/Moby text, 2.3.15–16",
+      "source": "Astor Library Edition, 2.3.12–13 (MIT 2.3.15–16)",
       "cloze": [
         "nose",
         "babbled"
@@ -743,7 +743,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 3.1.1–2",
+      "source": "Astor Library Edition, 3.1.1–2 (MIT 3.1.1–2)",
       "cloze": [
         "breach",
         "dead"
@@ -767,7 +767,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 3.1.5–8",
+      "source": "Astor Library Edition, 3.1.5–8 (MIT 3.1.5–8)",
       "cloze": [
         "tiger",
         "Disguise"
@@ -791,7 +791,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 3.1.32–34",
+      "source": "Astor Library Edition, 3.1.32–34 (MIT 3.1.32–34)",
       "cloze": [
         "game",
         "England"
@@ -801,7 +801,7 @@
       "id": "pot-of-ale",
       "text": "Would I were in an alehouse in London! I would give all my fame for a pot of ale and safety.",
       "speaker": "Boy",
-      "reference": "3.2.11",
+      "reference": "3.2.10",
       "stage": "act-3",
       "context": "Behind the breach, with Pistol declining to advance.",
       "analysis": "Ten lines after the most famous call to arms in the language, a child says he would sell the whole thing for a drink and not being killed. The play puts the two speeches in consecutive scenes on purpose, and gives the honest one to the youngest person on stage.",
@@ -816,7 +816,7 @@
         "the-boy",
         "pistol"
       ],
-      "source": "Globe/Moby text, 3.2.11–12",
+      "source": "Astor Library Edition, 3.2.10–11 (MIT 3.2.11–12)",
       "cloze": [
         "fame",
         "safety"
@@ -840,7 +840,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 3.3.10–14",
+      "source": "Astor Library Edition, 3.3.10–14 (MIT 3.3.10–14)",
       "cloze": [
         "mercy",
         "infants"
@@ -864,7 +864,7 @@
       "characters": [
         "chorus"
       ],
-      "source": "Globe/Moby text, 4.0.22–25",
+      "source": "Astor Library Edition, 4.0.22–25 (MIT 4.0.22–25)",
       "cloze": [
         "condemned",
         "sacrifices"
@@ -874,7 +874,7 @@
       "id": "few-die-well",
       "text": "I am afeard there are few die well that die in a battle; for how can they charitably dispose of any thing, when blood is their argument?",
       "speaker": "Williams",
-      "reference": "4.1.138",
+      "reference": "4.1.126",
       "stage": "act-4",
       "context": "To a stranger by the fire, who is the king.",
       "analysis": "Williams objects to dying unprepared, which in 1599 was a real and specific fear; the politics of the claim do not concern him. ‘Blood is their argument’ compresses the case: men killing cannot also be settling their affairs, and someone has put them in that position. Henry spends the next forty lines not answering that sentence.",
@@ -887,7 +887,7 @@
         "williams",
         "henry"
       ],
-      "source": "Globe/Moby text, 4.1.138–141",
+      "source": "Astor Library Edition, 4.1.126–129 (MIT 4.1.138–141)",
       "cloze": [
         "battle",
         "argument"
@@ -897,7 +897,7 @@
       "id": "every-subjects-soul",
       "text": "Every subject's duty is the king's; but every subject's soul is his own.",
       "speaker": "King Henry V",
-      "reference": "4.1.175",
+      "reference": "4.1.156",
       "stage": "act-4",
       "context": "The conclusion of his long reply to Williams and Bates.",
       "analysis": "It is a clean and quotable separation, and it answers a question nobody asked: Williams had raised the guilt of the man who ordered the battle; the state of each soldier’s conscience is Henry’s change of subject. The neatness is the evasion, and the prayer that follows a hundred lines later shows that Henry knows it.",
@@ -910,7 +910,7 @@
         "henry",
         "williams"
       ],
-      "source": "Globe/Moby text, 4.1.175–177",
+      "source": "Astor Library Edition, 4.1.156–157 (MIT 4.1.175–177)",
       "cloze": [
         "duty",
         "soul"
@@ -920,7 +920,7 @@
       "id": "upon-the-king",
       "text": "Upon the king! let us our lives, our souls, Our debts, our careful wives, Our children and our sins lay on the king! We must bear all.",
       "speaker": "King Henry V",
-      "reference": "4.1.226",
+      "reference": "4.1.202",
       "stage": "act-4",
       "context": "Alone, immediately after the soldiers leave.",
       "analysis": "He is mimicking his subjects’ voices, piling their possessions onto himself in a list that starts with lives and ends with sins. The pronoun slips from ‘us’ to ‘we’ without settling whose side he is arguing from, which is the closest the play comes to showing the man inside the office losing track of the boundary.",
@@ -935,7 +935,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.1.226–229",
+      "source": "Astor Library Edition, 4.1.202–205 (MIT 4.1.226–229)",
       "cloze": [
         "souls",
         "sins"
@@ -945,7 +945,7 @@
       "id": "idle-ceremony",
       "text": "And what art thou, thou idle ceremony? What kind of god art thou, that suffer'st more Of mortal griefs than do thy worshippers?",
       "speaker": "King Henry V",
-      "reference": "4.1.236",
+      "reference": "4.1.212",
       "stage": "act-4",
       "context": "The centre of the soliloquy on what a king has that a private man has not.",
       "analysis": "He addresses ceremony as a person and then as a deity, and finds it a god that suffers more than the people who pray to it. The speech is an audit: rents, comings in, place, degree and form on one side, and a slave’s untroubled sleep on the other, with the balance clearly against the crown.",
@@ -959,7 +959,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.1.236–238",
+      "source": "Astor Library Edition, 4.1.212–214 (MIT 4.1.236–238)",
       "cloze": [
         "ceremony",
         "worshippers"
@@ -969,7 +969,7 @@
       "id": "not-to-day",
       "text": "Not to-day, O Lord, O, not to-day, think not upon the fault My father made in compassing the crown!",
       "speaker": "King Henry V",
-      "reference": "4.1.290",
+      "reference": "4.1.265",
       "stage": "act-4",
       "context": "Praying alone before the battle.",
       "analysis": "He prays for a postponement more than for victory, and the fault he names is his father’s deposition of Richard II, the event that makes his own title questionable. He then lists the chantries and the tears and the five hundred poor on his payroll, and ends by admitting that all of it is worth nothing, which is the most honest sentence he speaks.",
@@ -983,7 +983,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.1.290–292",
+      "source": "Astor Library Edition, 4.1.265–267 (MIT 4.1.290–292)",
       "cloze": [
         "fault",
         "crown"
@@ -993,7 +993,7 @@
       "id": "no-stomach-to-this-fight",
       "text": "That he which hath no stomach to this fight, Let him depart; his passport shall be made And crowns for convoy put into his purse: We would not die in that man's company That fears his fellowship to die with us.",
       "speaker": "King Henry V",
-      "reference": "4.3.37",
+      "reference": "4.3.36",
       "stage": "act-4",
       "context": "Answering Westmoreland’s wish for ten thousand more men from England.",
       "analysis": "The offer of a passport and travelling money is safe to make because nobody can now accept it, which is the trick of the whole speech: he presents a shortage as a privilege before naming the day. He does not call such a man a coward, only poor company to die with.",
@@ -1005,7 +1005,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.3.37–41",
+      "source": "Astor Library Edition, 4.3.36–40 (MIT 4.3.37–41)",
       "cloze": [
         "stomach",
         "passport"
@@ -1030,7 +1030,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.3.60–64",
+      "source": "Astor Library Edition, 4.3.60–64 (MIT 4.3.60–64)",
       "cloze": [
         "remember'd",
         "brothers"
@@ -1040,7 +1040,7 @@
       "id": "kill-his-prisoners",
       "text": "The French have reinforced their scatter'd men: Then every soldier kill his prisoners: Give the word through.",
       "speaker": "King Henry V",
-      "reference": "4.6.37",
+      "reference": "4.6.36",
       "stage": "act-4",
       "context": "In the middle of the battle, on hearing an alarm.",
       "analysis": "Three lines, no argument, no soliloquy, and the audience is given no chance to decide what it thinks before the next scene starts. Shakespeare puts the order before the report of the murdered luggage-boys, so it cannot be read as retaliation, a sequence the 1600 quarto and several famous productions have rearranged or cut.",
@@ -1054,7 +1054,7 @@
       "characters": [
         "henry"
       ],
-      "source": "Globe/Moby text, 4.6.37–39",
+      "source": "Astor Library Edition, 4.6.36–38 (MIT 4.6.37–39)",
       "cloze": [
         "prisoners",
         "word"
@@ -1064,7 +1064,7 @@
       "id": "god-fought-for-us",
       "text": "Yes, captain; but with this acknowledgement, That God fought for us.",
       "speaker": "King Henry V",
-      "reference": "4.8.117",
+      "reference": "4.8.108",
       "stage": "act-4",
       "context": "Permitting Fluellen to announce the casualty figures.",
       "analysis": "The numbers just read out are wildly lopsided, and the king’s response is to forbid any English explanation of them. It is real piety and excellent policy together: giving the victory to God puts it beyond the reach of anyone who might ask harder questions about the campaign that produced it.",
@@ -1077,7 +1077,7 @@
         "henry",
         "fluellen"
       ],
-      "source": "Globe/Moby text, 4.8.117–118",
+      "source": "Astor Library Edition, 4.8.108–109 (MIT 4.8.117–118)",
       "cloze": [
         "acknowledgement",
         "God"
@@ -1087,7 +1087,7 @@
       "id": "plain-soldier",
       "text": "I speak to thee plain soldier: If thou canst love me for this, take me: if not, to say to thee that I shall die, is true; but for thy love, by the Lord, no; yet I love thee too.",
       "speaker": "King Henry V",
-      "reference": "5.2.150",
+      "reference": "5.2.143",
       "stage": "act-5",
       "context": "Courting Katharine at Troyes, in prose.",
       "analysis": "The man who has produced perfect verse on demand for four acts spends the courtship insisting he has no eloquence, which is itself the most calculated performance in the play. The honesty is real in one respect: he will not claim he would die for her, and the sentence about love arrives after the treaty has already awarded her to him.",
@@ -1100,7 +1100,7 @@
         "henry",
         "katharine"
       ],
-      "source": "Globe/Moby text, 5.2.150–153",
+      "source": "Astor Library Edition, 5.2.143–145 (MIT 5.2.150–153)",
       "cloze": [
         "plain",
         "love"
@@ -1110,7 +1110,7 @@
       "id": "small-time",
       "text": "Small time, but in that small most greatly lived This star of England: Fortune made his sword; By which the world's best garden be achieved, And of it left his son imperial lord.",
       "speaker": "Chorus",
-      "reference": "5.2.377",
+      "reference": "Epilogue.5",
       "stage": "act-5",
       "context": "The Epilogue, spoken after the betrothal.",
       "analysis": "‘Fortune made his sword’ withdraws, without comment, the credit that Act IV gave to God and Act III to Henry’s own rhetoric. The Epilogue is a sonnet, and it uses its turn to move from the garden won to the garden lost, the tightest possible form in which to take back five acts.",
@@ -1126,7 +1126,7 @@
         "chorus",
         "henry"
       ],
-      "source": "Globe/Moby text, 5.2.377–380",
+      "source": "Astor Library Edition, Epilogue.5–8 (MIT 5.2.377–380)",
       "cloze": [
         "Fortune",
         "garden"
@@ -1136,7 +1136,7 @@
       "id": "lost-france",
       "text": "Henry the Sixth, in infant bands crown'd King Of France and England, did this king succeed; Whose state so many had the managing, That they lost France and made his England bleed:",
       "speaker": "Chorus",
-      "reference": "5.2.381",
+      "reference": "Epilogue.9",
       "stage": "act-5",
       "context": "The last four lines before the appeal to the audience.",
       "analysis": "The final word on the conquest is that it did not last, and the audience is reminded that they have already seen the sequel, since the Henry VI plays were written and staged years earlier. The play ends by pointing backwards in the theatre and forwards in the history, which leaves the victory suspended between the two.",
@@ -1150,7 +1150,7 @@
       "characters": [
         "chorus"
       ],
-      "source": "Globe/Moby text, 5.2.381–384",
+      "source": "Astor Library Edition, Epilogue.9–12 (MIT 5.2.381–384)",
       "cloze": [
         "infant",
         "bleed"

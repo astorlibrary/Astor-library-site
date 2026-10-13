@@ -15,11 +15,11 @@
   "lengthNote": "Twenty-three poems in 1798, opening with The Rime of the Ancyent Marinere and closing with Tintern Abbey; the Astor edition adds poems from the 1800 volume",
   "openingLine": "It is an ancyent Marinere, And he stoppeth one of three.",
   "summary": "Two young poets published this anonymously in 1798 and changed what English poetry was allowed to be about. The subjects are people who had been comic or invisible in verse: a discharged soldier, a woman whose child has died, an old huntsman who cannot cut through a root, a boy sent for the doctor who spends the night listening to the owls. The language is deliberately plain, the metre is borrowed from street ballads, and the book ends with a hundred and sixty lines of blank verse above the Wye that set the terms for the next century of poetry.",
-  "referenceStyle": "poem title, and line numbers where the poem is long enough to need them",
+  "referenceStyle": "poem title, and the Astor Library Edition’s line numbers where the poem is long enough to need them",
   "sourceText": {
     "label": "Project Gutenberg text of Lyrical Ballads, With a Few Other Poems (eBook 9622)",
     "url": "https://www.gutenberg.org/cache/epub/9622/pg9622.txt",
-    "note": "The 1798 first edition, with Coleridge’s original spelling of the Ancyent Marinere. The Astor edition also prints poems added in 1800; the quotations here are all from the 1798 texts."
+    "note": "The 1798 first edition, with Coleridge’s original spelling of the Ancyent Marinere. The Astor edition also prints poems added in 1800; the quotations here are all from the 1798 texts. In Tintern Abbey the Astor edition counts each divided half-line as a line of its own, so from line 24 its numbers run one to three ahead of the usual count."
   },
   "atAGlance": [
     {
@@ -836,7 +836,7 @@
     {
       "id": "felt-in-the-blood",
       "text": "sensations sweet, Felt in the blood, and felt along the heart",
-      "reference": "Tintern Abbey, 27–28",
+      "reference": "Tintern Abbey, 29–30",
       "stage": "tintern-abbey",
       "context": "Describing what the remembered landscape has done for him in the years away.",
       "analysis": "The claim is physiological more than sentimental: a memory of a place is described as something circulating in the body. It is the volume’s clearest statement that feeling is a kind of evidence.",
@@ -850,7 +850,7 @@
       "characters": [
         "speaker"
       ],
-      "source": "1798 text, Tintern Abbey",
+      "source": "1798 text, Tintern Abbey (27–28 in the usual numbering)",
       "cloze": [
         "sensations",
         "blood"
@@ -859,7 +859,7 @@
     {
       "id": "sad-music",
       "text": "The still, sad music of humanity",
-      "reference": "Tintern Abbey, 92",
+      "reference": "Tintern Abbey, 94",
       "stage": "tintern-abbey",
       "context": "Accounting for what maturity has given him in place of youth’s raw pleasure.",
       "analysis": "The compensation is other people’s suffering, and it is heard as music. The phrase justifies the rest of the book without fuss: the vagrants, huntsmen and mothers of the earlier poems are the music he means.",
@@ -873,7 +873,7 @@
       "characters": [
         "speaker"
       ],
-      "source": "1798 text, Tintern Abbey",
+      "source": "1798 text, Tintern Abbey (92 in the usual numbering)",
       "cloze": [
         "sad",
         "humanity"
@@ -882,7 +882,7 @@
     {
       "id": "interfused",
       "text": "a sense sublime Of something far more deeply interfused",
-      "reference": "Tintern Abbey, 96–97",
+      "reference": "Tintern Abbey, 98–99",
       "stage": "tintern-abbey",
       "context": "The poem’s central and most careful passage.",
       "analysis": "Everything here is held at arm’s length (‘a sense’, ‘something’, ‘far more deeply’), because naming it would commit him to a doctrine. The vagueness is exact: this is a man describing an experience he trusts and cannot define.",
@@ -896,7 +896,7 @@
       "characters": [
         "speaker"
       ],
-      "source": "1798 text, Tintern Abbey",
+      "source": "1798 text, Tintern Abbey (96–97 in the usual numbering)",
       "cloze": [
         "sublime",
         "interfused"
@@ -905,7 +905,7 @@
     {
       "id": "nature-never-did-betray",
       "text": "Nature never did betray The heart that loved her",
-      "reference": "Tintern Abbey, 123–124",
+      "reference": "Tintern Abbey, 126–127",
       "stage": "tintern-abbey",
       "context": "Turning to his sister, and telling her what will hold when the rest does not.",
       "analysis": "A promise made to somebody else, at the point where the poet has stopped trusting his own future. Read beside the Marinere’s voyage at the other end of the book, the assurance looks less like a doctrine than a hope stated out loud.",
@@ -921,7 +921,7 @@
         "speaker",
         "dorothy"
       ],
-      "source": "1798 text, Tintern Abbey",
+      "source": "1798 text, Tintern Abbey (123–124 in the usual numbering)",
       "cloze": [
         "Nature",
         "betray"

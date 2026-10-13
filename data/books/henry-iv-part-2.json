@@ -15,11 +15,11 @@
   "lengthNote": "About 3,300 lines in five acts, with a speech by Rumour before the first act and an epilogue after the last",
   "openingLine": "Open your ears; for which of you will stop",
   "summary": "The rebellion Hotspur led has failed at Shrewsbury, but the war goes on. Northumberland, Hotspur’s father, raises a second rising with the Archbishop of York and then withdraws to Scotland, and Prince John ends it at Gaultree Forest by promising the rebels redress and arresting them once their army has gone home. King Henry, sleepless and ill, fears what his son will be as king. Prince Hal keeps company with Falstaff less and less; Falstaff, older and poorer, recruits soldiers in Gloucestershire, borrows a thousand pounds from an old acquaintance, Justice Shallow, and rides to London when the King dies, expecting to be made great. The new King Henry V keeps the Lord Chief Justice who once sent him to prison, and in the street after his coronation tells Falstaff he does not know him.",
-  "referenceStyle": "act, scene and line, with Rumour’s induction numbered 1.0",
+  "referenceStyle": "act, scene and line of the Astor Library Edition, with Rumour’s induction numbered 1.0",
   "sourceText": {
     "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
-    "note": "Line numbers follow the traditional Globe numbering, from which modern editions vary by a line or two. Line references were checked against the MIT Shakespeare."
+    "note": "The Astor edition divides Act 4 into three scenes where older editions have five: Gaultree is 4.1, Falstaff’s capture of Colevile 4.2, and the King’s last scene with the crown 4.3."
   },
   "atAGlance": [
     {
@@ -125,22 +125,22 @@
       "summary": "At Gaultree Forest Westmoreland and Prince John meet the rebels. John agrees that their grievances shall be redressed, drinks with their leaders, and waits until their army has dispersed before arresting the Archbishop, Mowbray and Hastings for treason. Falstaff takes a surrendering knight, Colevile, and praises sherris-sack. At Westminster the King collapses on hearing the news. The Prince, sitting by him, thinks him dead, takes the crown from his pillow and puts it on. The King wakes, accuses him of wishing his death, and is reconciled when Hal explains himself; he advises his son to keep the country busy with foreign wars, and asks to be carried to the chamber called Jerusalem to die.",
       "scenes": [
         {
-          "ref": "4.1–4.2",
+          "ref": "4.1",
           "title": "Gaultree",
           "summary": "The Archbishop’s case for rebellion, John’s promise, the rebels’ army sent home, and the arrests."
         },
         {
-          "ref": "4.3",
+          "ref": "4.2",
           "title": "Colevile and sack",
           "summary": "A rebel yields to Falstaff’s reputation; John is unimpressed; Falstaff explains why sober young men never come to anything."
         },
         {
-          "ref": "4.4",
+          "ref": "4.3.1–138",
           "title": "The King's collapse",
           "summary": "The King tells Clarence how to manage his brother and faints as good news arrives."
         },
         {
-          "ref": "4.5",
+          "ref": "4.3.139–382",
           "title": "The crown",
           "summary": "Hal takes the crown from the pillow; the King’s rebuke, Hal’s defence, and the last advice of a man who knows how he came by the crown."
         }
@@ -358,7 +358,7 @@
       "role": "The King’s younger son, general at Gaultree",
       "summary": "Cold, capable and sober. He promises the rebels at Gaultree that their grievances will be redressed, and once their army has scattered he arrests their leaders, keeping to the letter of his word and giving God the credit. Falstaff says he drinks no wine and cannot be made to laugh.",
       "clue": "He tells an archbishop that he pawned him no faith, only a promise about grievances.",
-      "firstAppearance": "4.2",
+      "firstAppearance": "4.1",
       "traits": [
         "cold",
         "calculating",
@@ -713,7 +713,7 @@
       "characters": [
         "rumour"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 1.0.15–16 (MIT 1.0.15)",
       "cloze": [
         "Rumour",
         "pipe"
@@ -723,7 +723,7 @@
       "id": "title-leaf",
       "text": "Yea, this man’s brow, like to a title-leaf, Foretells the nature of a tragic volume.",
       "speaker": "Northumberland",
-      "reference": "1.1.69",
+      "reference": "1.1.65",
       "stage": "act-1",
       "context": "Morton arrives from Shrewsbury, and Northumberland reads the news in his face.",
       "analysis": "Northumberland already knows his son is dead, and says so through a simile from a bookshop. He reads the news in Morton’s face and still tells him, ‘say not that Percy’s dead’: the play’s first case of someone believing and disbelieving a report in the same breath.",
@@ -737,7 +737,7 @@
       "characters": [
         "northumberland"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 1.1.65–66 (MIT 1.1.69)",
       "cloze": [
         "brow",
         "tragic"
@@ -747,7 +747,7 @@
       "id": "witty-in-myself",
       "text": "I am not only witty in myself, but the cause that wit is in other men.",
       "speaker": "Falstaff",
-      "reference": "1.2.8",
+      "reference": "1.2.7",
       "stage": "act-1",
       "context": "To his page, after complaining that men of all sorts gird at him.",
       "analysis": "It is a boast, and an accurate description of the character. Falstaff’s jokes provoke jokes, and the play is full of people, including the Prince, who are funniest when they are talking about him.",
@@ -760,7 +760,7 @@
       "characters": [
         "falstaff"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 1.2.7–8 (MIT 1.2.8)",
       "cloze": [
         "witty",
         "cause"
@@ -770,7 +770,7 @@
       "id": "gravy",
       "text": "His effect of gravy, gravy, gravy.",
       "speaker": "Falstaff",
-      "reference": "1.2.157",
+      "reference": "1.2.141",
       "stage": "act-1",
       "context": "The Chief Justice says every white hair in Falstaff’s face should have its effect of gravity.",
       "analysis": "Falstaff reduces dignity to dripping with one pun. Falstaff’s answer to every mention of his age is to change the subject to his body and his appetite.",
@@ -784,7 +784,7 @@
         "falstaff",
         "chief-justice"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 1.2.141 (MIT 1.2.157)",
       "cloze": [
         "gravy",
         "effect"
@@ -794,7 +794,7 @@
       "id": "diseases-to-commodity",
       "text": "A good wit will make use of anything. I will turn diseases to commodity.",
       "speaker": "Falstaff",
-      "reference": "1.2.245",
+      "reference": "1.2.213",
       "stage": "act-1",
       "context": "Alone, after the Chief Justice has refused him a thousand pounds, planning to pass off his gout as a war wound.",
       "analysis": "Commodity means profit. The play treats sickness as the condition of England; Falstaff treats it as a business opportunity, and says so in a line that sums up his method.",
@@ -808,7 +808,7 @@
       "characters": [
         "falstaff"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 1.2.213–214 (MIT 1.2.245)",
       "cloze": [
         "wit",
         "diseases"
@@ -818,7 +818,7 @@
       "id": "past-and-to-come",
       "text": "Past and to come seems best; things present, worst.",
       "speaker": "Archbishop",
-      "reference": "1.3.112",
+      "reference": "1.3.110",
       "stage": "act-1",
       "context": "Ending his attack on the crowd that cheered Bolingbroke and now longs for Richard.",
       "analysis": "Both halves of the line balance, and together they describe a country that cannot be satisfied with its present king. The Archbishop is describing the crowd, but the sentiment runs through the play: Shallow’s past, the King’s fear of the future.",
@@ -832,7 +832,7 @@
       "characters": [
         "archbishop"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 1.3.110 (MIT 1.3.112)",
       "cloze": [
         "Past",
         "present"
@@ -842,7 +842,7 @@
       "id": "house-and-home",
       "text": "He hath eaten me out of house and home.",
       "speaker": "Hostess",
-      "reference": "2.1.65",
+      "reference": "2.1.60",
       "stage": "act-2",
       "context": "Explaining to the Chief Justice why she has had Falstaff arrested.",
       "analysis": "The phrase became proverbial. Here it is literal: she means the money he owes her for years of food and drink, and within the scene she agrees to lend him more.",
@@ -856,7 +856,7 @@
         "hostess",
         "falstaff"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 2.1.60–61 (MIT 2.1.65)",
       "cloze": [
         "eaten",
         "home"
@@ -866,7 +866,7 @@
       "id": "heart-bleeds",
       "text": "my heart bleeds inwardly that my father is so sick",
       "speaker": "Prince Hal",
-      "reference": "2.2.47",
+      "reference": "2.2.40",
       "stage": "act-2",
       "context": "Talking to Poins, who assumes the Prince cares nothing for his father.",
       "analysis": "He admits real grief, then explains why he cannot show it: in his company, weeping would look like hypocrisy. The line shows how much his reputation now weighs on him.",
@@ -880,7 +880,7 @@
       "characters": [
         "hal"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 2.2.40 (MIT 2.2.47)",
       "cloze": [
         "heart",
         "sick"
@@ -890,7 +890,7 @@
       "id": "glass-of-youth",
       "text": "He was indeed the glass Wherein the noble youth did dress themselves.",
       "speaker": "Lady Percy",
-      "reference": "2.3.22",
+      "reference": "2.3.21",
       "stage": "act-2",
       "context": "Reproaching Northumberland for leaving Hotspur to fight alone at Shrewsbury.",
       "analysis": "The dead man is remembered as a mirror of fashion that others copied, down to his stammer. The praise is also an accusation: this is the son his father failed to support.",
@@ -905,7 +905,7 @@
         "lady-percy",
         "northumberland"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 2.3.21–22 (MIT 2.3.22)",
       "cloze": [
         "glass",
         "youth"
@@ -915,7 +915,7 @@
       "id": "deaths-head",
       "text": "Peace, good Doll, do not speak like a death’s-head; do not bid me remember mine end.",
       "speaker": "Falstaff",
-      "reference": "2.4.221",
+      "reference": "2.4.198",
       "stage": "act-2",
       "context": "Doll has asked him when he will patch up his old body for heaven.",
       "analysis": "A death’s-head is a skull kept as a reminder of mortality. Falstaff begs the one person who loves him not to remind him of the one thing the whole play keeps reminding him of.",
@@ -929,7 +929,7 @@
         "falstaff",
         "doll"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 2.4.198–199 (MIT 2.4.221)",
       "cloze": [
         "death’s-head",
         "end"
@@ -939,7 +939,7 @@
       "id": "desire-outlive",
       "text": "Is it not strange that desire should so many years outlive performance?",
       "speaker": "Poins",
-      "reference": "2.4.247",
+      "reference": "2.4.222",
       "stage": "act-2",
       "context": "Watching Falstaff with Doll, in disguise beside the Prince.",
       "analysis": "Poins whispers a cruel joke that is also a true observation about age. The audience sees the tenderness between the old man and Doll at the same moment as the young men mock it.",
@@ -953,7 +953,7 @@
         "falstaff",
         "hal"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 2.4.222–223 (MIT 2.4.247)",
       "cloze": [
         "desire",
         "performance"
@@ -978,7 +978,7 @@
       "characters": [
         "king-henry"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 3.1.31 (MIT 3.1.31)",
       "cloze": [
         "Uneasy",
         "crown"
@@ -1002,7 +1002,7 @@
       "characters": [
         "king-henry"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 3.1.80 (MIT 3.1.80)",
       "cloze": [
         "history",
         "lives"
@@ -1012,7 +1012,7 @@
       "id": "chimes-at-midnight",
       "text": "We have heard the chimes at midnight, Master Shallow.",
       "speaker": "Falstaff",
-      "reference": "3.2.200",
+      "reference": "3.2.183",
       "stage": "act-3",
       "context": "Shallow has been remembering the nights they spent together as young men at the Inns of Court.",
       "analysis": "It sounds like shared nostalgia, and Falstaff’s soliloquy a few minutes later calls most of Shallow’s memories lies. The line was used as the title of Orson Welles’s film about Falstaff.",
@@ -1027,7 +1027,7 @@
         "falstaff",
         "shallow"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 3.2.183 (MIT 3.2.200)",
       "cloze": [
         "chimes",
         "midnight"
@@ -1037,7 +1037,7 @@
       "id": "owe-god-a-death",
       "text": "A man can die but once. We owe God a death.",
       "speaker": "Feeble",
-      "reference": "3.2.219",
+      "reference": "3.2.201",
       "stage": "act-3",
       "context": "The recruits bribe Bardolph to be let off; Feeble will not.",
       "analysis": "The weakest-named man in the scene has the plainest courage. His fatalism answers Falstaff’s own joke in Part 1 that he did not want to pay death before it was due.",
@@ -1050,7 +1050,7 @@
       "characters": [
         "feeble"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 3.2.201–202 (MIT 3.2.219)",
       "cloze": [
         "die",
         "death"
@@ -1060,7 +1060,7 @@
       "id": "vice-of-lying",
       "text": "Lord, Lord, how subject we old men are to this vice of lying!",
       "speaker": "Falstaff",
-      "reference": "3.2.282",
+      "reference": "3.2.263",
       "stage": "act-3",
       "context": "Alone, after Shallow has gone in.",
       "analysis": "He means Shallow, and says we old men. The line is funny because the audience has watched Falstaff lie for two plays, and sad because it is the first time he has put himself among the old.",
@@ -1075,7 +1075,7 @@
         "falstaff",
         "shallow"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 3.2.263–264 (MIT 3.2.282)",
       "cloze": [
         "lying",
         "old"
@@ -1085,7 +1085,7 @@
       "id": "god-not-we",
       "text": "God, and not we, hath safely fought today.",
       "speaker": "Prince John",
-      "reference": "4.2.128",
+      "reference": "4.1.357",
       "stage": "act-4",
       "context": "Having arrested the rebel leaders after their army has gone home.",
       "analysis": "Rhyme and piety dress up a trick. John has kept to the words of his promise and broken its sense, and he gives the credit to God.",
@@ -1100,7 +1100,7 @@
         "lancaster",
         "archbishop"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 4.1.357 (MIT 4.2.128)",
       "cloze": [
         "God",
         "fought"
@@ -1110,7 +1110,7 @@
       "id": "thin-potations",
       "text": "the first humane principle I would teach them should be to forswear thin potations and to addict themselves to sack.",
       "speaker": "Falstaff",
-      "reference": "4.3.124",
+      "reference": "4.2.107",
       "stage": "act-4",
       "context": "The end of his speech in praise of sherris-sack, after Prince John has left.",
       "analysis": "Falstaff ends his mock sermon with a mock moral. Falstaff credits sack for Hal’s courage, which is his way of claiming a share in the Prince’s future.",
@@ -1124,7 +1124,7 @@
         "falstaff",
         "lancaster"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 4.2.107–109 (MIT 4.3.124)",
       "cloze": [
         "potations",
         "sack"
@@ -1134,7 +1134,7 @@
       "id": "golden-care",
       "text": "O polish’d perturbation! golden care!",
       "speaker": "Prince Hal",
-      "reference": "4.5.25",
+      "reference": "4.3.161",
       "stage": "act-4",
       "context": "Alone with his sleeping father and the crown on the pillow.",
       "analysis": "Two oxymorons: the crown is bright and troubling, precious and a burden. Hal’s first words to the crown already know what his father learned by wearing it.",
@@ -1149,7 +1149,7 @@
         "hal",
         "king-henry"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 4.3.161 (MIT 4.5.25)",
       "cloze": [
         "perturbation",
         "care"
@@ -1159,7 +1159,7 @@
       "id": "wish-father",
       "text": "Thy wish was father, Harry, to that thought.",
       "speaker": "King Henry",
-      "reference": "4.5.95",
+      "reference": "4.3.231",
       "stage": "act-4",
       "context": "Hal says he never thought to hear his father speak again.",
       "analysis": "In one line the King makes a son’s grief into a son’s ambition. The phrase has become proverbial for believing what we want to believe.",
@@ -1173,7 +1173,7 @@
         "king-henry",
         "hal"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 4.3.231 (MIT 4.5.95)",
       "cloze": [
         "wish",
         "thought"
@@ -1183,7 +1183,7 @@
       "id": "giddy-minds",
       "text": "Be it thy course to busy giddy minds With foreign quarrels",
       "speaker": "King Henry",
-      "reference": "4.5.216",
+      "reference": "4.3.354",
       "stage": "act-4",
       "context": "The last advice of the dying King to his son.",
       "analysis": "Politics at its plainest: keep the nobles occupied abroad so they do not look too closely at the crown. The advice prepares for the war with France in Henry V.",
@@ -1197,7 +1197,7 @@
         "king-henry",
         "hal"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 4.3.354–355 (MIT 4.5.216)",
       "cloze": [
         "giddy",
         "quarrels"
@@ -1222,7 +1222,7 @@
         "hal",
         "lancaster"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 5.2.49–50 (MIT 5.2.49)",
       "cloze": [
         "Amurath",
         "Harry"
@@ -1232,7 +1232,7 @@
       "id": "know-thee-not",
       "text": "I know thee not, old man. Fall to thy prayers.",
       "speaker": "King Henry V",
-      "reference": "5.5.48",
+      "reference": "5.5.40",
       "stage": "act-5",
       "context": "Falstaff calls out to the new king in the street after the coronation.",
       "analysis": "These are the new reign’s first words to its old companion. It picks up the Chief Justice’s list of Falstaff’s signs of age in the first act, and Hal now speaks as the law.",
@@ -1247,7 +1247,7 @@
         "hal",
         "falstaff"
       ],
-      "source": "Project Gutenberg eBook 100",
+      "source": "Astor Library Edition, 5.5.40 (MIT 5.5.48)",
       "cloze": [
         "know",
         "prayers"
@@ -1276,7 +1276,7 @@
     {
       "year": 1408,
       "label": "Northumberland killed at Bramham Moor",
-      "detail": "Defeated by the sheriff of Yorkshire, the victory reported to the King in 4.4.",
+      "detail": "Defeated by the sheriff of Yorkshire, the victory reported to the King in 4.3.",
       "kind": "context"
     },
     {
@@ -1401,7 +1401,7 @@
       "plan": [
         "Start with the King’s soliloquy on sleep and its last line.",
         "Set it beside Richard’s prophecy as the King remembers it.",
-        "Analyse Hal’s speech to the crown in 4.5.",
+        "Analyse Hal’s speech to the crown in 4.3.",
         "Weigh the King’s deathbed advice about foreign quarrels.",
         "Conclude with Hal’s promise that the crown will pass with better quiet."
       ]
