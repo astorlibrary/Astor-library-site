@@ -15,6 +15,12 @@
 // records the quotation's reference is checked too: a quotation filed under
 // "Chapter XII" or "Book II, Chapter 3" has to be found in that chapter.
 //
+// A few quotations follow the Astor Library Edition's wording where the
+// source text reads differently (a misprint such as "'gaitist" for "'gainst",
+// or a different reading). scripts/quotation-emendations.json lists them with
+// the source's own reading, and that reading is what gets looked for, so each
+// one is still located in its source.
+//
 // Exit code 1 if anything is missing or misfiled, so it can gate a build.
 
 const fs = require('fs');
@@ -22,6 +28,7 @@ const path = require('path');
 
 const root = path.join(__dirname, '..');
 const cacheDir = path.join(root, '.cache', 'sources');
+const emendations = JSON.parse(fs.readFileSync(path.join(__dirname, 'quotation-emendations.json'), 'utf8'));
 
 function normalise(text) {
   return String(text)
@@ -125,6 +132,14 @@ function found(source, text) {
   return locate(source, text) !== -1;
 }
 
+// An emended quotation must still be recognisably the line its source reading
+// names: most of its words have to be shared.
+function resembles(text, sourceReading) {
+  const words = normalise(text).split(' ');
+  const other = new Set(normalise(sourceReading).split(' '));
+  return words.filter(word => other.has(word)).length >= Math.ceil(words.length * 0.6);
+}
+
 async function main() {
   const wanted = process.argv.slice(2);
   const dir = path.join(root, 'data', 'books');
@@ -146,8 +161,17 @@ async function main() {
     ];
     const markers = [...source.matchAll(/qzq([a-z0-9]+?)qzq/g)].map(match => ({ index: match.index, id: match[1] }));
     const failures = [];
+    const emended = emendations[book.slug] || {};
+    for (const id of Object.keys(emended)) {
+      if (!lines.some(line => line.id === id)) failures.push({ id, text: '(listed in quotation-emendations.json but no longer in the record)' });
+    }
     for (const line of lines) {
-      const index = locate(source, line.text);
+      const sourceReading = emended[line.id];
+      if (sourceReading && !resembles(line.text, sourceReading)) {
+        failures.push({ id: line.id, text: '(no longer resembles its source reading in quotation-emendations.json) ' + line.text });
+        continue;
+      }
+      const index = locate(source, sourceReading || line.text);
       if (index === -1) { failures.push(line); continue; }
       const wantedSection = markers.length ? sectionFor(line.reference) : null;
       const actualSection = wantedSection && sectionAt(markers, index);

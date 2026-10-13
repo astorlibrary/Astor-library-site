@@ -19,7 +19,7 @@
   "sourceText": {
     "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
-    "note": "This is the text the quotations were taken from word for word. Other modern editions vary from the Astor numbering by a line or two."
+    "note": "This is the text the quotations were taken from word for word. Other modern editions vary from the Astor numbering by a line or two. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
   "atAGlance": [
     { "label": "Written", "value": "c. 1601–02", "note": "The Stationers’ Register entry of 7 February 1603 is the first firm record of it. Nothing fixes a first performance, and the 1609 quarto contradicts itself about whether there was one." },
@@ -365,7 +365,7 @@
     },
     {
       "id": "degree",
-      "text": "Take but degree away, untune that string, And hark what discord follows! Each thing melts In mere oppugnancy",
+      "text": "Take but degree away, untune that string, And, hark, what discord follows! each thing meets In mere oppugnancy:",
       "speaker": "Ulysses",
       "reference": "1.3.111",
       "stage": "act-1",
@@ -449,7 +449,7 @@
     },
     {
       "id": "whore-and-cuckold",
-      "text": "All the argument is a whore and a cuckold—a good quarrel to draw emulous factions and bleed to death upon.",
+      "text": "All the argument is a cuckold and a whore; a good quarrel to draw emulous factions and bleed to death upon.",
       "speaker": "Thersites",
       "reference": "2.3.56",
       "stage": "act-2",
@@ -654,7 +654,7 @@
       "themes": ["desire", "time"],
       "techniques": ["epilogue"],
       "characters": ["pandarus", "troilus"],
-      "source": "Astor Library Edition, 5.10.47 (MIT 5.10.52)",
+      "source": "Astor Library Edition, 5.10.47–52 (MIT 5.10.52)",
       "cloze": ["hold-door", "diseases"]
     }
   ],

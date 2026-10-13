@@ -19,7 +19,7 @@
   "sourceText": {
     "label": "Project Gutenberg text of the Complete Works of William Shakespeare (eBook 100)",
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
-    "note": "Every quotation was checked word for word against this text. Other modern editions vary from the Astor numbering by a line or two."
+    "note": "Every quotation was checked word for word against this text. Other modern editions vary from the Astor numbering by a line or two. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
   "atAGlance": [
     { "label": "Written", "value": "c. 1604–06", "note": "The verse and the vocabulary sit close to King Lear. No payment, performance or entry in the Stationers’ Register fixes the date." },
@@ -346,7 +346,7 @@
     },
     {
       "id": "number-of-men-eats",
-      "text": "O you gods, what a number of men eats Timon, and he sees 'em not! It grieves me to see so many dip their meat in one man's blood",
+      "text": "O you gods, what a number of men eat Timon, and he sees ’em not! It grieves me to see so many dip their meat in one man’s blood;",
       "speaker": "Apemantus",
       "reference": "1.2.40",
       "stage": "act-1",
@@ -356,7 +356,7 @@
       "techniques": ["set-piece"],
       "characters": ["apemantus", "timon"],
       "source": "Astor Library Edition, 1.2.40–42 (MIT 1.2.41–44)",
-      "cloze": ["eats", "blood"]
+      "cloze": ["eat", "blood"]
     },
     {
       "id": "setting-sun",
