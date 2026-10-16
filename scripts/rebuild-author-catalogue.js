@@ -1,10 +1,16 @@
 const fs = require('fs');
 const path = require('path');
 const profiles = require('./author-profiles');
+const lives = require('./author-lives.json');
 const septemberBooks = [...require('./september-catalogue-data.json'), ...require('./concise-catalogue-data.json')];
 
 function escapeHtml(value) {
   return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function countWords(n) {
+  const words = ['No', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
+  return words[n] || String(n);
 }
 
 function coverStack(author) {
@@ -20,7 +26,7 @@ function bookShelf(author) {
     return `<article><a href="${escapeHtml(book.href)}"><img src="${escapeHtml(book.image)}" alt="${escapeHtml(book.imageAlt)}" loading="lazy"><div><p>${escapeHtml(book.collection)}</p><h3>${escapeHtml(book.title)}</h3><span>${escapeHtml(attribution || copy)}</span><b>Open book page <span aria-hidden="true">&rarr;</span></b></div></a></article>`;
   }).join('');
   const gridClass = author.books.length < 3 ? ` author-book-grid-${author.books.length === 1 ? 'one' : 'two'}` : '';
-  return `<section class="author-shelf" id="books" aria-labelledby="${headingId}"><div class="author-shelf-head"><div><p class="kicker">${escapeHtml(author.title)} in Astor Library</p><h2 id="${headingId}">Books and collections.</h2></div><p>${author.bookCount} ${author.bookCount === 1 ? 'book or collection' : 'books and collections'} represented. Each book page identifies its contents, available formats and purchase links. Anthologies include work by more than one writer.</p></div><div class="author-book-grid${gridClass}">${cards}</div></section>`;
+  return `<section class="author-shelf" id="books" aria-labelledby="${headingId}"><div class="author-shelf-head"><div><p class="kicker">${escapeHtml(author.title)} in Astor Library</p><h2 id="${headingId}">Books and collections.</h2></div><p>${countWords(author.bookCount)} ${author.bookCount === 1 ? 'book' : 'books'} in the Astor catalogue.</p></div><div class="author-book-grid${gridClass}">${cards}</div></section>`;
 }
 
 function sourceLinks(author) {
@@ -33,6 +39,13 @@ function sourceLinks(author) {
   return sources.map(source => `<a href="${escapeHtml(source.href)}">${escapeHtml(source.label)}</a>`).join('');
 }
 
+// A short life of the writer, from author-lives.json (trusted HTML written for these pages).
+function biography(profile) {
+  const life = lives[profile.name];
+  if (!life) throw new Error(`No biography in author-lives.json for ${profile.name}`);
+  return `<section class="author-opening"><p class="kicker">Biography</p><div><h2>${escapeHtml(life.heading)}</h2>${life.paragraphs.map(text => `<p>${text}</p>`).join('')}</div></section>`;
+}
+
 function catalogueProfile(profile, author, siteHeader) {
   const years = `${profile.birthDate.slice(0, 4)}–${profile.deathDate.slice(0, 4)}`;
   const collections = [...new Set(author.books.map(book => book.collection))];
@@ -40,9 +53,9 @@ function catalogueProfile(profile, author, siteHeader) {
 <nav class="book-breadcrumb author-breadcrumb" aria-label="Breadcrumb"><a href="/authors/">Writers</a><span aria-hidden="true">/</span><span aria-current="page">${escapeHtml(author.title)}</span></nav>
 <section class="author-profile-hero"><div class="author-profile-heading"><p class="kicker">${years} · Writer catalogue</p><h1>${escapeHtml(author.title)}</h1><p class="deck">${escapeHtml(profile.description)}</p><div class="button-row"><a class="button primary" href="#books">Browse the books</a><a class="button secondary" href="/authors/">All writers</a></div></div>${coverStack(author)}</section>
 <section class="author-facts" aria-label="${escapeHtml(author.title)} at a glance"><div><b>${profile.birthDate.slice(0, 4)}</b><span>Year of birth</span></div><div><b>${profile.deathDate.slice(0, 4)}</b><span>Year of death</span></div><div><b>${author.bookCount}</b><span>${author.bookCount === 1 ? 'Book or anthology' : 'Books and anthologies'} in the catalogue</span></div><div><b>${collections.length}</b><span>${collections.length === 1 ? 'Literary collection' : 'Literary collections'} represented</span></div></section>
-<section class="author-opening"><p class="kicker">Reading and reference</p><div><h2>The editions in this catalogue.</h2><p>The books below bring together the work by ${escapeHtml(author.title)} currently available from Astor Library. A collection may include other writers; its book page lists the contents and identifies the texts used. Separate formats of one work are shown together on the same book page.</p><p>Use the individual pages for the complete edition description, publication history and the supporting material included in that volume. Textual notes distinguish an original publication date from the source used for a modern edition. Where paperback and hardcover editions are available, their covers and purchase links are labelled separately.</p></div></section>
+${biography(profile)}
 ${bookShelf(author)}
-<section class="author-sources"><div><p class="kicker">Sources and further reading</p><h2>Texts and publication records.</h2></div><p>These resources support the information on the linked book pages. The edition descriptions specify the text, translation, illustrations and annotations where applicable.</p><nav class="source-list" aria-label="${escapeHtml(author.title)} sources">${sourceLinks(author)}</nav></section>
+<section class="author-sources"><div><p class="kicker">Sources and further reading</p><h2>Texts and publication records.</h2></div><p>The book pages draw on these libraries, archives and editions.</p><nav class="source-list" aria-label="${escapeHtml(author.title)} sources">${sourceLinks(author)}</nav></section>
 <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/authors/">All writers</a><a href="/library/">All books</a><a href="/explore/?q=${encodeURIComponent(author.title)}">Search this writer <span aria-hidden="true">&rarr;</span></a></nav></main><footer class="site-footer"><div><p class="footer-brand">Astor Library</p><p>Complete classic texts, author pages and study resources.</p></div><div class="footer-links"><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a><a href="/library/">All books</a><a href="/resources/">Free resources</a></div></footer></body></html>`;
 }
 
