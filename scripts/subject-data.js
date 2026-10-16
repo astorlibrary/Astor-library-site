@@ -96,7 +96,7 @@ module.exports = [
       { href: '/books/twelfth-night/', title: 'Twelfth Night', author: 'William Shakespeare', year: 'c.1601', image: '/Twelfth%20Night%20Main%20Cover.jpg', copy: 'Viola’s borrowed identity redirects desire while festivity shades into punishment.' },
       { href: '/books/merry-wives-of-windsor/', title: 'The Merry Wives of Windsor', author: 'William Shakespeare', year: 'c.1597–1601', image: '/Merry%20Wives%20of%20Windsor.png', copy: 'Mistress Ford and Mistress Page answer Falstaff’s scheme with a series of traps, and in the end the whole town joins in.' },
       { href: '/books/measure-for-measure/', title: 'Measure for Measure', author: 'William Shakespeare', year: 'c.1603–04', image: '/Measure%20for%20Measure%20Main%20Cover.png', copy: 'Law, sexual coercion and disguised rule lead to an ending whose silences matter.' },
-      { href: '/books/alls-well-that-ends-well/', title: 'All’s Well That Ends Well', author: 'William Shakespeare', year: 'c.1604–05', image: '/Alls%20Well%20That%20Ends%20Well%20Main%20Cover.png', copy: 'A brilliant healer pursues a resistant husband through a plot whose title invites argument about its settlement.' },
+      { href: '/books/alls-well-that-ends-well/', title: 'All’s Well That Ends Well', author: 'William Shakespeare', year: 'c.1604–05', image: '/Alls%20Well%20That%20Ends%20Well%20Main%20Cover.png', copy: 'Helena cures the King and wins Bertram as her reward, then has to trick an unwilling husband into the marriage.' },
       { href: '/books/pericles-prince-of-tyre/', title: 'Pericles, Prince of Tyre', author: 'William Shakespeare', year: 'c.1607–08', image: '/Pericles%2C%20Prince%20of%20Tyre%20Main%20COver.png', copy: 'Shipwreck, apparent death and recognition turn an old story towards family recovery.' },
       { href: '/books/the-winters-tale/', title: 'The Winter’s Tale', author: 'William Shakespeare', year: 'c.1609–11', image: '/The%20Winter%27s%20Tale%20Main%20COver.png', copy: 'Jealous tyranny gives way to pastoral renewal and a reunion that cannot restore every loss.' },
       { href: '/books/the-two-noble-kinsmen/', title: 'The Two Noble Kinsmen', author: 'William Shakespeare', year: 'c.1613–14', image: '/The%20Two%20Noble%20Kinsmen%20Main%20Cover.jpg', copy: 'Friendship, rivalry and fate meet in a tragicomedy written with John Fletcher.' },
@@ -408,7 +408,7 @@ module.exports = [
       heading: 'Ask who is allowed to sound reasonable.',
       paragraphs: [
         'Begin with the form the passage imitates: law, travel account, political advice, scientific argument, commandment or song. What authority normally belongs to that form? Then identify the detail that puts pressure on it: a disproportion, contradiction, bodily fact or excluded person the formal language cannot comfortably contain.',
-        'Avoid reducing allegory to a one-for-one code. Historical reference matters greatly in Animal Farm, but the fable remains powerful because appetite, fear, labour, education and memory create relations that exceed a simple key. Good political reading moves between the specific history and the wider mechanism without abandoning either.'
+        'Allegory is not a one-for-one code. Animal Farm follows Soviet history closely, and Napoleon is plainly Stalin, but the fable also works for a reader who knows none of that, because appetite, fear, labour, schooling and memory work on the animals as they would on anyone. A good essay uses both: the history behind the story and the mechanism it shows.'
       ]
     },
     terms: [
@@ -601,7 +601,7 @@ addSubjectBooks('detective-fiction', [
 ]);
 addSubjectBooks('satire-political-writing', [
   ['a-connecticut-yankee-in-king-arthurs-court', '1889', 'Hank’s schools, factories and weapons are placed beside monarchy, slavery and inherited rank.'],
-  ['puddnhead-wilson', '1894', 'The novel examines the legal consequences of racial classification through two exchanged children.'],
+  ['puddnhead-wilson', '1894', 'Roxy switches her baby with her master’s, and Twain follows what the law makes of the two boys.'],
   ['julius-caesar', 'c.1599 / 1623', 'Conspirators and opponents make competing public claims about liberty, power and Rome.'],
   ['seven-pillars-of-wisdom', '1926 Subscribers’ text', 'Lawrence’s account of the Arab Revolt is accompanied by material examining its political and historical record.'],
   ['the-chimes', '1844', 'Trotty Veck encounters statistical, punitive and paternal arguments about poverty before the bells show a possible future.']

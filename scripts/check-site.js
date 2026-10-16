@@ -145,7 +145,20 @@ const stockPhrases = [
   /\b(?:is|was) the (?:whole )?point\b(?! (?:at|of|where|when)\b)/,
   /\bis a study (?:in|of)\b/,
   // A sentence that opens by telling the reader to notice something; say the thing.
-  /(?:^|[.!?] )(?:note|notice) (?:also |too )?that\b/i
+  /(?:^|[.!?] )(?:note|notice) (?:also |too )?that\b/i,
+  // Removed in the October 2026 pass: a text that "declines" (a stand-in for
+  // "refuses"), and the hedging and summing-up formulas that came with it.
+  /\b(?:the|this|its) (?:play|novel|poem|book|story|text|narrative|prose|line|scene|comedy|tragedy|novella|tale|collection|sequence) declines to\b/,
+  /\bdoes more than\b/,
+  /\bshould not be (?:reduced to|mistaken for|treated as)\b/,
+  /\binseparable from\b/,
+  /\bless like\b[^.]{1,60}\bmore like\b/,
+  /\bin miniature\b/,
+  /(?:^|[.!?] )Read together\b/,
+  /\b(?:is|was) no simple\b/,
+  /\bcomplicates? (?:any|a|the) (?:simple|easy|neat|tidy)\b/,
+  /\ba reminder that\b/,
+  /\bforegrounds\b|\bforegrounding\b|\bforegrounded\b/
 ];
 function stockPhraseFailures(fileName, text) {
   const found = [];

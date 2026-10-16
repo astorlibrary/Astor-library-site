@@ -427,7 +427,7 @@ const editionUpdateBooks = [
     overview: [
       'In Venus and Adonis, the goddess of love pursues a young hunter who repeatedly refuses her. Shakespeare moves between erotic comedy, rhetorical display, physical coercion and the grief that follows Adonis’s fatal hunt.',
       'The Rape of Lucrece follows Tarquin’s assault and its aftermath through power, shame, testimony and the language by which Lucrece tries to understand a crime committed against her. Her public naming of Tarquin and death become the catalyst for the overthrow of the Roman monarchy.',
-      'Read together, the poems form a deliberate pair. Both are about a desire that will not listen to reason, and about trying to possess another person through words and description. Both end with death and transformation, but their tonal and political consequences are sharply different.',
+      'Shakespeare dedicated both poems to the Earl of Southampton, and the dedication of Venus and Adonis (1593) promises him “some graver labour”, which Lucrece (1594) supplied. Each is about a desire that will not listen to reason, and about trying to possess another person through words and description. Each ends in death and transformation, but Venus and Adonis ends with a flower and Lucrece with the fall of the Roman kings.',
       'Every difficult word, image and allusion is explained on the same page as the relevant line, allowing the poetry and commentary to remain in continuous relation.'
     ],
     editorial: [

@@ -167,7 +167,7 @@ module.exports = [
     deck: "Shakespeare’s last history play, written with John Fletcher in 1613. It follows the falls of the Duke of Buckingham, Queen Katherine and Cardinal Wolsey, and ends with the christening of the baby Elizabeth. On 29 June 1613 a cannon fired during a performance set fire to the Globe’s thatch, and the theatre burned down.",
     edition: [
       "Henry VIII moves through trials, processions, private reckonings and public ceremonies. The Duke of Buckingham is condemned on disputed testimony; Cardinal Wolsey’s wealth and influence collapse; Queen Katherine will not let a church court judge her marriage; and Anne Bullen rises because Henry wants a new succession.",
-      "The play is less a continuous royal biography than a sequence of ‘principal pieces’ from the reign. Its structure makes political life feel ceremonial and precarious: each great entrance may be followed by an exit, each official account by a speaker who remembers events differently. Even Wolsey, the architect of other people’s ruin, is granted an exacting recognition of his own.",
+      "The play is a sequence of ‘principal pieces’ from the reign, with no continuous story of the king’s life. Political life in it is ceremonial and precarious: a great entrance may be followed by an exit, an official account by a speaker who remembers events differently. Even Wolsey, who ruined others, is given a clear-eyed recognition of his own ruin.",
       "This Astor Library edition presents the complete play with scene summaries, line numbering and explanatory notes. Additional material treats the collaboration between Shakespeare and John Fletcher, the chronicle sources, Katherine’s trial, the politics of succession, the play’s early title All Is True, the 1613 Globe fire and the difficult balance between historical spectacle and retrospective praise.",
     ],
     facts: [
@@ -188,7 +188,7 @@ module.exports = [
         label: "Truth",
         title: "What can ‘All Is True’ mean on a stage?",
         paragraphs: [
-          "The Prologue rejects easy laughter and promises weighty, sorrowful truth. Yet the play’s politics are full of competing testimony: Buckingham may be destroyed by a coached witness, Henry’s conscience about his marriage may be inseparable from desire, and Wolsey’s public service conceals private correspondence. Truth is invoked most strongly where access to it is least secure.",
+          "The Prologue rejects easy laughter and promises weighty, sorrowful truth. Yet the play’s politics are full of competing testimony: Buckingham may be destroyed by a coached witness, Henry’s conscience about his marriage may be his desire for Anne in another form, and Wolsey’s public service conceals private correspondence. In 1613 the play was known as All Is True, and it is full of claims that nobody on stage can check.",
           "Theatre adds another complication. Audiences see painstaking ceremonies that announce authority through costume, music and ordered bodies, but they also see the changes and omissions required to make history performable. The play’s old alternative title need not mean that every scene claims documentary accuracy. It can instead sharpen the question of who has the power to make an account count as true.",
         ],
       },
@@ -252,7 +252,7 @@ module.exports = [
       { label: "c.1595–96", text: "King John is generally dated to the middle of the 1590s and was named among Shakespeare’s plays by Francis Meres in 1598." },
       { label: "1623", text: "The play first appeared in print in the First Folio; no earlier Shakespearean quarto survives." },
       { label: "A dramatic source", text: "Most scholars regard the anonymous two-part Troublesome Reign of King John, printed in 1591, as a source for Shakespeare’s play." },
-      { label: "No Magna Carta", text: "Although the historical John is inseparable from the charter today, Shakespeare never mentions Magna Carta." },
+      { label: "No Magna Carta", text: "The historical John is best remembered today for the charter, but Shakespeare never mentions Magna Carta." },
     ],
     movements: [
       { label: "Claim", title: "France challenges John in Arthur’s name", body: "A French ambassador demands the crown for Arthur, son of John’s elder brother Geoffrey. John refuses, while his mother Eleanor privately admits that possession supports him more firmly than right." },
@@ -361,7 +361,7 @@ module.exports = [
         label: "Ending",
         title: "‘Our wooing doth not end like an old play’",
         paragraphs: [
-          "Marcade’s entrance does more than interrupt a comic ending. News of death changes the Princess’s office, the value of time and the tone in which every preceding vow must be heard. Berowne’s observation that the ending is unlike an old play is accurate, but Rosaline’s answer matters more: the men’s own behaviour has helped prevent the expected conclusion.",
+          "Marcade’s news that the Princess’s father is dead interrupts the comic ending and changes her office, the value of time and the tone in which every preceding vow must be heard. Berowne’s observation that the ending is unlike an old play is accurate, but Rosaline’s answer matters more: the men’s own behaviour has helped prevent the expected conclusion.",
           "The assigned tasks are carefully fitted to the suitors. Berowne, whose wit can wound, must use it among the sick and dying; the King must live the withdrawal he treated as a route to fame. The songs of the cuckoo and owl then set desire beside labour, weather, marriage and seasonal recurrence. There is still comedy at the end, and a question about what has to happen after the fun if the promises are to last a year.",
         ],
       },

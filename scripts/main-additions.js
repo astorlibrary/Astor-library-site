@@ -55,7 +55,7 @@ module.exports = [
         title: '“I am Duchess of Malfi still”',
         paragraphs: [
           'By the execution scene, the Duchess has lost her household, freedom, husband and apparent children. ‘I am Duchess of Malfi still’: in one short line she keeps Ferdinand’s punishments from deciding who she is. Surrounded by theatrical horrors and evasive language, she speaks with a clarity her persecutors lack.',
-          'The scene does not offer one tidy model of courage. Cariola resists death desperately, while the Duchess has already endured a campaign intended to exhaust hope. Her composure is powerful because Webster leaves fear, bodily suffering and injustice visible around it.'
+          'Webster shows two ways of dying in one scene. Cariola fights for her life, lying and pleading; the Duchess, worn down by Ferdinand’s torments, kneels and tells the executioners to pull hard. Her calm moves us because Webster keeps the fear and the injustice in view around it.'
         ]
       }
     ],

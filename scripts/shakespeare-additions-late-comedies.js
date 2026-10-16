@@ -411,7 +411,7 @@ module.exports = [
       {
         label: "Festivity",
         title: "Twelfth Night",
-        body: "Twelfth Night was associated with the end of Christmas celebration, when music, drinking, disguise and role reversal could suspend ordinary discipline. Sir Toby’s household embodies that festive licence, while Malvolio attempts to impose sobriety and hierarchy. The play enjoys disorder, and it also shows who suffers when a holiday gives one group power over another."
+        body: "Twelfth Night was associated with the end of Christmas celebration, when music, drinking, disguise and role reversal could suspend ordinary discipline. Sir Toby keeps that holiday going all year in Olivia’s house, and Malvolio tries to stop it. The play enjoys disorder, and it also shows who suffers when a holiday gives one group power over another."
       },
       {
         label: "Performance",
@@ -435,7 +435,7 @@ module.exports = [
       },
       {
         name: "Orsino",
-        body: "The ruler of Illyria, absorbed in the language and music of his passion for Olivia. His relationship with Cesario develops an intimacy that complicates the apparently sudden turn towards Viola at the close."
+        body: "The ruler of Illyria, absorbed in the language and music of his passion for Olivia. He grows close to Cesario, which makes his turn to Viola at the end less sudden than it looks."
       },
       {
         name: "Sebastian",
@@ -447,7 +447,7 @@ module.exports = [
       },
       {
         name: "Feste",
-        body: "Olivia’s professional fool, singer and verbal examiner. He sees through mourning, vanity and pretension, yet his role in Malvolio’s confinement complicates any easy idea that his wit stands outside the play’s cruelty."
+        body: "Olivia’s professional fool, singer and verbal examiner. He sees through mourning, vanity and pretension, yet he torments Malvolio in the dark room, disguised as Sir Topas, so his wit is part of the play’s cruelty too."
       }
     ],
     questions: [

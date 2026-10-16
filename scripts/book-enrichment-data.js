@@ -436,7 +436,7 @@ module.exports = {
         title: 'Willoughbyland before Dutch rule',
         body: [
           'English settlement in Surinam expanded under Francis, Lord Willoughby, and depended on plantation production and enslaved labour. The colony passed to Dutch control in 1667, though territorial arrangements continued to be negotiated. Behn published Oroonoko in 1688, writing about an earlier English colonial world from Restoration London.',
-          'The story names real colonists and describes rivers, plants, animals and Indigenous communities. Such detail gives the setting weight, but literary precision should not be mistaken for neutral ethnography; the descriptions are organised by a European narrator and the needs of the plot.'
+          'The story names real colonists and describes rivers, plants, animals and Indigenous communities. The detail gives the setting weight, but a European narrator chose it and arranged it to serve the plot.'
         ]
       },
       {
@@ -774,7 +774,7 @@ module.exports = {
         title: 'Two kinds of reading',
         body: [
           'The narrator can confide in writing because the page cannot diagnose, contradict or report her. “Dead” paper temporarily protects a living account. The room contains another paper that appears increasingly animate, until the narrator spends more energy deciphering the wall than recording herself.',
-          'The exchange is formal as well as psychological. As surveillance and exhaustion shorten the journal entries, the wallpaper’s imagined narrative expands. A private medium of agency is gradually displaced by the surface imposed upon her.'
+          'As John’s watching and her exhaustion shorten the journal entries, the story she reads in the wallpaper grows, until it has taken over the journal.'
         ]
       },
       {

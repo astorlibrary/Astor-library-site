@@ -101,7 +101,7 @@ module.exports = [
     sectionIntro: 'Bhardwaj relocates Shakespeare, and film form and Indian political worlds alter who can see, speak and act.',
     readings: [
       { label: 'Omkara', title: 'Evidence enters another culture', copy: 'The handkerchief becomes a jewelled cummerbund, carrying ideas of marriage, possession and sexual suspicion into a different material and social world.' },
-      { label: 'Maqbool', title: 'Desire is politically dangerous', copy: 'Nimmi’s position is not a copy of Lady Macbeth’s. Her vulnerability and agency emerge from the criminal household in which intimacy and command cannot be separated.' },
+      { label: 'Maqbool', title: 'Desire is politically dangerous', copy: 'Nimmi is not a copy of Lady Macbeth. She is Abbaji’s mistress, in a crime family where love and command are the same thing, and that gives her power and puts her in danger.' },
       { label: 'Film form', title: 'The camera redistributes knowledge', copy: 'Close-ups, cuts, music and landscape decide what the audience can read in a face or body. Those choices can give women a presence that spoken dialogue alone does not measure.' }
     ],
     note: 'For comparative writing, begin with one precise change (an object, setting, shot or action) and explain what the new form allows Bhardwaj to ask about Shakespeare’s play.',

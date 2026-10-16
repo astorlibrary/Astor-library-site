@@ -650,7 +650,7 @@ const remainingBooks = [
       'Original essays connect the serial publication and multiple-narrator design to the legal, social and institutional pressures on which the conspiracy depends.'
     ],
     topics: [
-      { title: 'Evidence and narration', body: 'Each witness controls part of the record, making the form of testimony inseparable from the investigation.' },
+      { title: 'Evidence and narration', body: 'Each witness controls part of the record, and the investigation consists of putting their accounts together.' },
       { title: 'Marriage and property', body: 'Legal identity and financial control give the conspiracy its practical means.' },
       { title: 'Institutions and power', body: 'The asylum and the law can preserve a false identity when authority accepts the wrong account.' }
     ]
