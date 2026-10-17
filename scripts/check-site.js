@@ -138,7 +138,14 @@ const editorialPhrases = [
   'Each page describes the contents',
   'Each book page includes',
   'Use the individual pages',
-  'currently available from Astor Library'
+  'currently available from Astor Library',
+  'These principal areas are listed',
+  'This list is for the edition pictured',
+  'suits your reading or shelf',
+  'each reproduced and explained',
+  'Each analysis uses evidence from specific',
+  'Each question requires evidence from the text',
+  'source record'
 ];
 
 // Stock constructions the copy review removed. They read as formula, and

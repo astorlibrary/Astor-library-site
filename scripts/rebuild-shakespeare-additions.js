@@ -80,15 +80,15 @@ function bookPage(book) {
   <section class="quick-facts" aria-label="${escapeHtml(book.title)} facts">${facts}</section>
   <section class="section-title" id="edition"><p class="kicker">Edition contents</p><h2>What this Astor edition contains.</h2><p>The edition contains the complete play, scene summaries, line numbers, explanatory notes, contextual information and study material.</p></section>
   <section class="timeline"><article class="edition-card new-edition"><img src="${book.image}" alt="Astor Library ${escapeHtml(book.title)} cover"><div><p class="year">${escapeHtml(book.genre)}</p><h2><em>${escapeHtml(book.title)}</em>, ${escapeHtml(book.author)}</h2>${book.edition.map(paragraph).join('')}<div class="button-row"><a class="button primary" href="${escapeHtml(book.url)}">Buy / view the Astor edition</a>${studyButton}</div></div></article></section>
-  <section class="section-title" id="movement"><p class="kicker">Plot and structure</p><h2>Five stages in the action.</h2><p>These sections summarise the main developments in the plot and identify changes in power, knowledge and dramatic conflict.</p></section>
+  <section class="section-title" id="movement"><p class="kicker">Plot and structure</p><h2>Five stages in the action.</h2></section>
   <section class="astor-movement-grid">${movements}</section>
-  <section class="section-title" id="reading"><p class="kicker">Critical reading</p><h2>Three analyses of language and form.</h2><p>Each analysis uses evidence from specific scenes, speeches and dramatic choices.</p></section>
+  <section class="section-title" id="reading"><p class="kicker">Critical reading</p><h2>Three analyses of language and form.</h2></section>
   <section class="astor-reading-grid">${readings}</section>
   <section class="section-title" id="context"><p class="kicker">Text, sources and performance</p><h2>Publication and performance context.</h2><p>When the play was written and printed, what Shakespeare drew on, and how it has been staged.</p></section>
   <section class="astor-context-grid">${contexts}</section>
   <section class="section-title" id="characters"><p class="kicker">Characters</p><h2>Principal characters and dramatic functions.</h2></section>
   <section class="astor-character-grid">${characters}</section>
-  <section class="section-title" id="questions"><p class="kicker">Study questions</p><h2>Questions for analysis and discussion.</h2><p>Each question requires evidence from the text and can be used for discussion, notes or essay planning.</p></section>
+  <section class="section-title" id="questions"><p class="kicker">Study questions</p><h2>Questions for analysis and discussion.</h2></section>
   <section class="astor-question-grid">${questions}</section>
   <section class="section-title" id="sources"><p class="kicker">Sources</p><h2>Texts, archives and research collections.</h2><p>Early texts, performance records and further reading.</p></section>
   <nav class="source-list" aria-label="${escapeHtml(book.title)} sources">${sources}</nav>

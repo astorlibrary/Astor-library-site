@@ -187,10 +187,10 @@ function page(resource) {
     ? `${slideCount} slides · written and published by Astor Library`
     : 'External online guide';
   const contents = detailed?.includes?.length
-    ? `<section class="resource-contents-section"><div class="resource-contents-heading"><p class="kicker">Guide contents</p><h2>What the guide covers.</h2><p>${slideCount ? `The complete guide contains ${slideCount} slides.` : 'The complete illustrated guide is available online.'} These principal areas are listed before the link to the preview.</p></div><ol class="resource-contents">${detailed.includes.map((item, index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><p>${inlineHtml(item)}</p></li>`).join('')}</ol></section>`
+    ? `<section class="resource-contents-section"><div class="resource-contents-heading"><p class="kicker">Guide contents</p><h2>What the guide covers.</h2><p>${slideCount ? `The complete guide has ${slideCount} slides.` : 'The complete illustrated guide is online.'} It covers:</p></div><ol class="resource-contents">${detailed.includes.map((item, index) => `<li><span>${String(index + 1).padStart(2, '0')}</span><p>${inlineHtml(item)}</p></li>`).join('')}</ol></section>`
     : '';
   const readingHeading = detailed?.sectionHeading || 'Questions and evidence.';
-  const readingIntro = detailed?.sectionIntro || 'Use these notes with the relevant words, scene or chapter and cite the evidence for each conclusion.';
+  const readingIntro = detailed?.sectionIntro || 'Read each note with the passage it discusses open beside it.';
   const linkAttributes = isAstorPresentation ? '' : ' target="_blank" rel="noopener noreferrer"';
   const externalArrow = isAstorPresentation ? '&rarr;' : '&nearr;';
   const completionNote = isAstorPresentation

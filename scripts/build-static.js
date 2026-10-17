@@ -806,7 +806,7 @@ function addBookPassageLinks(html, source) {
     : '';
   const section = '<section class="book-passage-shelf" aria-labelledby="book-passage-title">' +
     '<div class="book-passage-shelf-head"><div><p class="kicker">Annotated passages</p><h2 id="book-passage-title">Close readings from this book.</h2></div>' +
-    '<p>Short passages from this book, each reproduced and explained line by line.</p></div>' +
+    '<p>Short passages from the book, explained line by line.</p></div>' +
     '<div class="book-passage-grid">' + cards + '</div>' + resourceLinks + '</section>';
   return html.replace('</main>', section + '</main>');
 }
@@ -836,7 +836,7 @@ function addAuthorPassageLinks(html, source) {
     : '';
   const section = '<section class="book-passage-shelf author-passage-shelf" aria-labelledby="author-passage-title">' +
     '<div class="book-passage-shelf-head"><div><p class="kicker">Annotated passages</p><h2 id="author-passage-title">Close readings from this writer.</h2></div>' +
-    '<p>Short passages from this writer&rsquo;s work, each reproduced and explained line by line.</p></div>' +
+    '<p>Short passages from the writer&rsquo;s work, explained line by line.</p></div>' +
     '<div class="book-passage-grid">' + cards + '</div>' + more + '</section>';
   const anchor = html.includes('<section class="author-sources"') ? '<section class="author-sources"' : '</main>';
   return anchor === '</main>'
@@ -875,7 +875,7 @@ function addEditorialCredit(html, source) {
     ? 'Edition contents and description supplied by Astor Library.'
     : book
     ? 'Dates, publication details and historical claims are checked against the sources listed on this page.'
-    : 'This free guide contains summaries, context or analysis for reading, teaching and independent study.';
+    : 'For reading, teaching and independent study.';
   const sourcesLink = book && /\bid="sources"/.test(html) ? '<a href="#sources">The sources <span aria-hidden="true">&darr;</span></a>' : '';
   const credit = book
     ? '<aside class="astor-page-credit" aria-label="About this page"><span><b>Edited by Haydn Wood</b>' + copy + '</span>' + sourcesLink + '<a href="/about/#editor">About the editor <span aria-hidden="true">&rarr;</span></a></aside>'

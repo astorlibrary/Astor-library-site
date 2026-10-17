@@ -225,7 +225,7 @@ function bookPage(book) {
   <section class="page-intro astor-book-hero"><div><p class="kicker">${escapeHtml(book.author)}</p><h1>${escapeHtml(book.title)}</h1><p class="deck">${escapeHtml(book.deck)}</p></div><aside class="source-note astor-book-cover"><img src="${assetPath(book.image)}" alt="Astor Library ${escapeHtml(book.title)} cover"><div><p><strong>${escapeHtml(book.label)}</strong><br>${editionLevel}</p>${actionButtons(book, false)}</div></aside></section>
   <nav class="page-contents" aria-label="On this page"><strong>On this page</strong><div>${pageContents}${book.counterpart ? '<a href="#edition-choice-title">Choose an edition</a>' : ''}</div></nav>
   <section class="quick-facts" aria-label="${escapeHtml(book.title)} facts">${facts}</section>
-  <section class="section-title" id="edition"><p class="kicker">Edition contents</p><h2>What this Astor edition contains.</h2><p>This list is for the edition pictured here, the one the purchase link opens.</p></section>
+  <section class="section-title" id="edition"><p class="kicker">Edition contents</p><h2>What this Astor edition contains.</h2><p>Everything listed here is in the edition pictured.</p></section>
   <section class="timeline"><article class="edition-card new-edition"><img src="${assetPath(book.image)}" alt="Astor Library ${escapeHtml(book.title)} cover" loading="lazy"><div><p class="year">${escapeHtml(book.label)}</p><h2><em>${escapeHtml(book.shortTitle || book.title)}</em></h2><ul class="edition-includes">${includes}</ul>${actionButtons(book, true)}</div></article></section>
   ${workSections}
   ${sectionTitleBlock('editorial', 'Text and context', book.slug)}
