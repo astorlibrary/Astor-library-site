@@ -4,7 +4,7 @@ module.exports = [
     href: '/authors/arthur-conan-doyle/',
     birthDate: '1859-05-22',
     deathDate: '1930-07-07',
-    description: 'Arthur Conan Doyle (1859–1930) was an Edinburgh-trained doctor when he created Sherlock Holmes; Astor publishes twelve of the Holmes stories and The Sign of Four.'
+    description: 'Arthur Conan Doyle (1859–1930) was a doctor in Southsea, waiting for patients, when he wrote the first Sherlock Holmes novel, A Study in Scarlet (1887).'
   },
   {
     name: 'Bram Stoker',
@@ -18,7 +18,7 @@ module.exports = [
     href: '/authors/charles-dickens/',
     birthDate: '1812-02-07',
     deathDate: '1870-06-09',
-    description: 'Charles Dickens (1812–1870) worked in a blacking factory at twelve and became the most popular novelist of his age; Astor publishes Great Expectations and the Christmas books.'
+    description: 'Charles Dickens (1812–1870) was sent to work in a blacking warehouse at twelve and became the most popular novelist of his age.'
   },
   {
     name: 'Christopher Marlowe',
