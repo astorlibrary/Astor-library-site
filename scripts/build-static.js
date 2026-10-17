@@ -806,7 +806,7 @@ function addBookPassageLinks(html, source) {
     : '';
   const section = '<section class="book-passage-shelf" aria-labelledby="book-passage-title">' +
     '<div class="book-passage-shelf-head"><div><p class="kicker">Annotated passages</p><h2 id="book-passage-title">Close readings from this book.</h2></div>' +
-    '<p>Each page reproduces a short passage and explains its language, structure and immediate context.</p></div>' +
+    '<p>Short passages from this book, each reproduced and explained line by line.</p></div>' +
     '<div class="book-passage-grid">' + cards + '</div>' + resourceLinks + '</section>';
   return html.replace('</main>', section + '</main>');
 }

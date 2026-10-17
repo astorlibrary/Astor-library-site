@@ -132,7 +132,7 @@ function bookPage(book) {
   <section class="astor-character-grid">${figures}</section>
   <section class="section-title" id="questions"><p class="kicker">Study questions</p><h2>Questions for analysis and discussion.</h2><p>Answer each question with quotations or precise references to the work.</p></section>
   <section class="astor-question-grid">${questions}</section>
-  <section class="section-title" id="sources"><p class="kicker">Sources</p><h2>Texts, archives and further reading.</h2><p>The links below support the publication history, historical context and interpretation on this page.</p></section>
+  <section class="section-title" id="sources"><p class="kicker">Sources</p><h2>Texts, archives and further reading.</h2><p>Early editions, historical sources and criticism.</p></section>
   <nav class="source-list" aria-label="${escapeHtml(book.title)} sources">${sources}</nav>
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="${escapeHtml(book.collectionHref)}">More in ${escapeHtml(book.collection)}</a><a href="/study/">Study editions</a><a href="/explore/">Search the library <span aria-hidden="true">&rarr;</span></a></nav>
 </main>

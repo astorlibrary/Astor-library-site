@@ -129,7 +129,16 @@ const editorialPhrases = [
   'space to breathe',
   'room to move',
   'placeholder',
-  'classic texts, properly presented'
+  'classic texts, properly presented',
+  // Sentences that describe the website instead of the books (removed October 2026).
+  'Each page reproduces',
+  'The links below',
+  'This section covers',
+  'This page lists',
+  'Each page describes the contents',
+  'Each book page includes',
+  'Use the individual pages',
+  'currently available from Astor Library'
 ];
 
 // Stock constructions the copy review removed. They read as formula, and

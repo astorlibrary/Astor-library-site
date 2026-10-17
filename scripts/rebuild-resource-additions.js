@@ -72,7 +72,7 @@ const categories = {
   },
   american: {
     label: 'American literature',
-    use: 'Examine the language used to discuss freedom, success, race, power and national identity, and distinguish the narrator’s wording from the guide’s interpretation.'
+    use: 'Check what the guide says about freedom, success, race and power against the text, and keep the narrator’s words apart from the guide’s reading of them.'
   }
 };
 
@@ -181,7 +181,7 @@ function page(resource) {
     : readingNotes(resource, detailed).map(item => `<article><p class="year">${escapeHtml(item.label)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.copy)}</p></article>`).join('');
   const guidePurpose = detailed?.deck || resource.description;
   const note = detailed?.note || (isAstorPresentation
-    ? `Read the introduction and three-slide preview here, then sign in with a free account to continue. Check the guide’s summaries and interpretations against the relevant chapter, scene or poem.`
+    ? `Read the introduction and three-slide preview here, then sign in with a free account to continue. Check what the guide says against the text itself.`
     : `Read the introduction here, then open the external guide. Check its summaries and interpretations against the relevant chapter, scene or poem.`);
   const scopeNote = isAstorPresentation
     ? `${slideCount} slides · written and published by Astor Library`
@@ -195,7 +195,7 @@ function page(resource) {
   const externalArrow = isAstorPresentation ? '&rarr;' : '&nearr;';
   const completionNote = isAstorPresentation
     ? `Preview the first ${PREVIEW_SLIDES} slides without signing in. A free account opens the complete illustrated guide in your browser.`
-    : 'This page lists the guide’s contents and related Astor editions. The complete illustrated guide opens in a new tab.';
+    : 'The complete illustrated guide opens in a new tab.';
   const openCopy = isAstorPresentation
     ? `Read the first ${PREVIEW_SLIDES} slides without signing in. Create a free Astor account or sign in when you are ready to continue.`
     : 'The guide is free to read in a browser and opens in a new tab.';

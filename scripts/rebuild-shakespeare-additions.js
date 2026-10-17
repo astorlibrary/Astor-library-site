@@ -84,13 +84,13 @@ function bookPage(book) {
   <section class="astor-movement-grid">${movements}</section>
   <section class="section-title" id="reading"><p class="kicker">Critical reading</p><h2>Three analyses of language and form.</h2><p>Each analysis uses evidence from specific scenes, speeches and dramatic choices.</p></section>
   <section class="astor-reading-grid">${readings}</section>
-  <section class="section-title" id="context"><p class="kicker">Text, sources and performance</p><h2>Publication and performance context.</h2><p>This section covers the play's date, sources, early printed texts and relevant performance history.</p></section>
+  <section class="section-title" id="context"><p class="kicker">Text, sources and performance</p><h2>Publication and performance context.</h2><p>When the play was written and printed, what Shakespeare drew on, and how it has been staged.</p></section>
   <section class="astor-context-grid">${contexts}</section>
   <section class="section-title" id="characters"><p class="kicker">Characters</p><h2>Principal characters and dramatic functions.</h2></section>
   <section class="astor-character-grid">${characters}</section>
   <section class="section-title" id="questions"><p class="kicker">Study questions</p><h2>Questions for analysis and discussion.</h2><p>Each question requires evidence from the text and can be used for discussion, notes or essay planning.</p></section>
   <section class="astor-question-grid">${questions}</section>
-  <section class="section-title" id="sources"><p class="kicker">Sources</p><h2>Texts, archives and research collections.</h2><p>The links below provide source texts, performance records and further scholarly information.</p></section>
+  <section class="section-title" id="sources"><p class="kicker">Sources</p><h2>Texts, archives and research collections.</h2><p>Early texts, performance records and further reading.</p></section>
   <nav class="source-list" aria-label="${escapeHtml(book.title)} sources">${sources}</nav>
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/shakespeare/">All Shakespeare editions</a><a href="/study/">Study editions</a><a href="/explore/">Search the library <span aria-hidden="true">&rarr;</span></a></nav>
 </main>
