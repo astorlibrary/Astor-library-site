@@ -88,7 +88,7 @@ module.exports = [
     href: '/authors/mark-twain/',
     birthDate: '1835-11-30',
     deathDate: '1910-04-21',
-    description: 'Mark Twain (1835–1910), Samuel Clemens of Hannibal, Missouri, was a Mississippi river pilot before he was a writer; Astor publishes four of his novels.'
+    description: 'Mark Twain (1835–1910), Samuel Clemens of Hannibal, Missouri, was a Mississippi river pilot before he was a writer, and took his pen name from the leadsman’s call for two fathoms.'
   },
   {
     name: 'Mary Shelley',
