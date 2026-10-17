@@ -118,7 +118,7 @@ function paragraphs(values) {
 }
 
 function supportingFigure(image) {
-  return `<figure class="book-document-figure"><img src="${escapeHtml(image.src)}" width="${Number(image.width)}" height="${Number(image.height)}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async"><figcaption><span>${escapeHtml(image.caption)}</span><small>${escapeHtml(image.credit)} · <a href="${escapeHtml(image.sourceUrl)}">Source and image record</a> · ${escapeHtml(image.license)}</small></figcaption></figure>`;
+  return `<figure class="book-document-figure"><img src="${escapeHtml(image.src)}" width="${Number(image.width)}" height="${Number(image.height)}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async"><figcaption><span>${escapeHtml(image.caption)}</span><small>${escapeHtml(image.credit)} · <a href="${escapeHtml(image.sourceUrl)}">Image record</a> · ${escapeHtml(image.license)}</small></figcaption></figure>`;
 }
 
 function enrichedBookSections(book, enrichment) {
