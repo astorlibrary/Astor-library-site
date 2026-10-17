@@ -161,7 +161,7 @@ module.exports = [
     ],
     facts: [
       { label: "Collaboration", text: "Most current scholarship assigns the opening two acts largely to George Wilkins and the final three largely to Shakespeare, though the precise division is not unanimous." },
-      { label: "1609 quarto", text: "The first surviving edition is a poorly transmitted quarto of 1609, followed by five further quartos before 1635." },
+      { label: "1609 quarto", text: "The first surviving edition is a poorly transmitted quarto of 1609, followed by five more quartos, the last in 1635." },
       { label: "Outside the First Folio", text: "Pericles was omitted in 1623 and entered the Shakespeare folio tradition in the expanded 1664 issue of the Third Folio." },
       { label: "An ancient story", text: "Its chief sources are John Gower's account of Apollonius of Tyre and Laurence Twine's The Pattern of Painful Adventures." }
     ],
