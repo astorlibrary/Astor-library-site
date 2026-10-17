@@ -479,7 +479,7 @@ module.exports = {
       }
     ],
     sources: [
-      { label: 'Folger Shakespeare Library: 1688 first edition', url: 'https://catalog.folger.edu/record/467202', note: 'Catalogue record for Oroonoko: or, The Royal Slave as published by William Canning.' },
+      { label: 'Folger Shakespeare Library: 1688 first edition', url: 'https://catalog.folger.edu/record/155041', note: 'The Folger’s copy of the first edition, printed for William Canning, with digital images.' },
       { label: 'Oxford Academic: Oroonoko and early modern slavery', url: 'https://academic.oup.com/book/61633/chapter-abstract/539647331', note: 'A careful account of the work’s critique, influence and limits.' },
       { label: 'Aphra Behn, Oroonoko, and Suriname', url: 'https://doi.org/10.1080/03096564.2025.2559515', note: 'Helen Wilcox on Surinamese context, eyewitness claims and the work’s complex position on slavery.' },
       { label: 'Project Gutenberg: Oroonoko', url: 'https://www.gutenberg.org/ebooks/29854', note: 'Searchable public-domain reading text used to verify short phrases.' },
