@@ -369,7 +369,7 @@ module.exports = [
     edition: [
       'The book begins twice. “The Custom-House” claims an embroidered letter and old papers as the source of the romance; the main story opens in Puritan Boston as Hester emerges from prison. Archive and invention are placed beside each other before the reader can treat any sign as self-explanatory.',
       'This Astor Library edition presents the complete novel with chapter summaries and contextual notes. Longer material follows the Custom House, Puritan Boston, romance, the three scaffold scenes, the unstable A, symbolism, narration, character and reception.',
-      'Hawthorne’s ambiguity is left open; no object in the book is given a single meaning. The aim is to help readers distinguish evidence from interpretation and see why public certainty becomes one of the book’s most dangerous forms of power.'
+      'Hawthorne’s ambiguity is left open; no object in the book is given a single meaning. Evidence is kept apart from interpretation, which matters in a book where public certainty is one of the most dangerous forms of power.'
     ],
     movementTitle: 'Seven years in Boston.',
     movementIntro: 'The scaffold returns each time the relation between secrecy and public knowledge changes.',
@@ -456,7 +456,7 @@ module.exports = [
     edition: [
       'Satan’s journey gives the poem some of its most memorable speeches, but Adam and Eve’s ordinary acts of trust, disagreement and blame carry its largest human consequences. Milton does not make Genesis a simple sequence of familiar events. He makes it into an argument about freedom, foreknowledge, persuasion and love.',
       'This Astor Library edition presents the complete poem with book-by-book summaries and explanatory notes. Longer material opens the biblical and epic traditions, Milton’s politics and blindness, the 1667 and 1674 editions, blank verse, character, imagery, criticism and reception.',
-      'The support helps readers follow long sentences without flattening them and read Satan’s rhetoric without mistaking force for truth. It connects the cosmic scale to the poem’s most personal question: how two people speak to each other before and after trust fails.'
+      'This material helps with Milton’s long sentences without flattening them, and with Satan’s rhetoric, which is forceful without being true. It connects the cosmic scale to the poem’s most personal question: how two people speak to each other before and after trust fails.'
     ],
     movementTitle: 'The twelve books.',
     movementIntro: 'Five large movements hold the twelve-book poem together.',

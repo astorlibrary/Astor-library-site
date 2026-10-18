@@ -124,9 +124,9 @@ function bookPage(book) {
   <section class="timeline"><article class="edition-card new-edition"><img src="${book.image}" alt="Astor Library ${escapeHtml(book.title)} cover"><div><p class="year">${escapeHtml(book.genre)} · ${escapeHtml(book.year)}</p><h2><em>${escapeHtml(book.title)}</em>, ${escapeHtml(book.author)}</h2>${book.edition.map(paragraph).join('')}${editionActions}</div></article></section>
   <section class="section-title" id="movement"><p class="kicker">The shape of the work</p><h2>${escapeHtml(book.movementTitle)}</h2><p>${escapeHtml(book.movementIntro)}</p></section>
   <section class="astor-movement-grid">${movements}</section>
-  <section class="section-title" id="reading"><p class="kicker">Critical reading</p><h2>${escapeHtml(book.readingTitle)}</h2><p>Each section identifies specific language, structure or evidence used in the interpretation.</p></section>
+  <section class="section-title" id="reading"><p class="kicker">Critical reading</p><h2>${escapeHtml(book.readingTitle)}</h2></section>
   <section class="astor-reading-grid">${readings}</section>
-  <section class="section-title" id="context"><p class="kicker">Book, history and form</p><h2>${escapeHtml(book.contextTitle)}</h2><p>These sections explain publication history, literary form and historical information relevant to the work.</p></section>
+  <section class="section-title" id="context"><p class="kicker">Book, history and form</p><h2>${escapeHtml(book.contextTitle)}</h2></section>
   <section class="astor-context-grid">${contexts}</section>
   <section class="section-title" id="figures"><p class="kicker">Characters and speakers</p><h2>${escapeHtml(book.figuresTitle)}</h2></section>
   <section class="astor-character-grid">${figures}</section>

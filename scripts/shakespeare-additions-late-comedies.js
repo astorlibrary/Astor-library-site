@@ -11,7 +11,7 @@ module.exports = [
     edition: [
       "This Astor Library Edition presents the complete play with scene summaries, line numbering and explanatory notes. The support is designed to make the action clear without smoothing away its oddness: this is a play in which solemn ritual sits beside broad comedy, chivalric courtesy beside sudden violence, and apparent choice beside the rule of gods and circumstance.",
       "The introductory material places the play within the late collaborative phase of Shakespeare’s career and explains John Fletcher’s part in its composition. It also follows the story back through Chaucer’s ‘Knight’s Tale’ to Boccaccio, showing what the dramatists retained, what they altered and why the newly invented story of the Jailer’s Daughter changes the weight of the whole play.",
-      "Further sections examine the language of kinship, the uneasy treatment of Emilia, the contrast between courtly and popular worlds, the three temple scenes and the play’s complicated ending. Questions for reading and performance help readers judge the claims made about nobility for themselves, whatever Theseus and his court pronounce."
+      "Further sections examine the language of kinship, the uneasy treatment of Emilia, the contrast between courtly and popular worlds, the three temple scenes and the play’s complicated ending. Questions for reading and performance leave the claims made about nobility for the reader to judge, whatever Theseus and his court pronounce."
     ],
     facts: [
       {
@@ -172,7 +172,7 @@ module.exports = [
     edition: [
       "This Astor Library Edition presents the complete play with scene summaries, line numbering and explanatory notes. The guidance distinguishes the Trojan and Greek plots, follows the rapid movement between the city and the military camp, and identifies the mythological and historical names that Shakespeare expects his audience to recognise.",
       "The contextual material explains how Shakespeare brought together two different inheritances: the celebrated warriors of the Trojan War and the medieval love story of Troilus and Cressida. Attention is also given to the difficult publication history of the 1609 quarto, the play’s unusual position in the 1623 First Folio and the continuing argument over whether it should be approached as comedy, history, tragedy or satire.",
-      "Close-reading sections examine Cressida’s constrained choices, Pandarus’s mediation, Ulysses’s political rhetoric, Hector’s divided judgement and the destruction of heroic reputation. The aim is not to force the play into a tidier genre than it possesses, but to help readers see how thoroughly its language of value is challenged by what happens on stage."
+      "Close-reading sections examine Cressida’s constrained choices, Pandarus’s mediation, Ulysses’s political rhetoric, Hector’s divided judgement and the destruction of heroic reputation. The play is not pressed into a tidier genre than it has. Its language of value (what Helen, Cressida and honour are worth) is tested again and again by what happens on stage."
     ],
     facts: [
       {

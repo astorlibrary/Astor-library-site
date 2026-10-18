@@ -78,7 +78,7 @@ module.exports = {
         title: 'The withdrawn 1865 printing',
         body: [
           'Macmillan prepared the first printing with an 1865 title page, but it was withdrawn after Tenniel objected to the quality of the reproduction of his illustrations. A replacement impression, dated 1866, became the effective first public edition. Surviving sheets from the suppressed printing and Carroll’s own production records make this episode unusually well documented.',
-          'Later revisions matter because Carroll continued to attend closely to wording and presentation. An edition that identifies its textual basis allows readers to know which state of the book they are reading instead of treating every printing as identical.'
+          'Carroll kept attending to wording and presentation in later printings, so they are not all the same text, and it matters which one an edition follows.'
         ]
       },
       {
@@ -538,7 +538,7 @@ module.exports = {
         title: 'A woman’s patience',
         body: [
           'The preamble pairs a woman’s endurance with a man’s resolution, apparently assigning passive and active virtues by gender. The story that follows immediately complicates that formula. Marian investigates, climbs, travels and organises; Walter also waits, listens and depends on records made by others.',
-          'Keeping the phrase in view helps readers test the novel’s own framing. Restoration may be narrated as male achievement, but it cannot occur without women’s observation, memory and care.'
+          'The phrase is worth holding up against the story that follows. Restoration may be narrated as male achievement, but it cannot occur without women’s observation, memory and care.'
         ]
       },
       {
@@ -680,7 +680,7 @@ module.exports = {
         title: 'Fifteen letters and a finished manuscript',
         body: [
           'In 1907 Grahame sent a series of animal-story letters to his seven-year-old son Alastair, known in the family as Mouse. The Bodleian preserves fifteen letters together with manuscript material for The Wind in the Willows. They show an origin in serial family storytelling without making the printed book a mere transcription.',
-          'Episodes were selected, expanded and arranged into a work capable of moving between Toad’s comic career and the quieter river chapters. Publication history helps readers see the changes of tone as deliberate structure.'
+          'Episodes were selected, expanded and arranged into a book that moves between Toad’s comic career and the quieter river chapters, and the changes of tone are part of that design.'
         ]
       },
       {
@@ -865,7 +865,7 @@ module.exports = {
   'the-great-gatsby': {
     heading: 'Nick’s account, told in nine chapters.',
     introduction: [
-      'The Great Gatsby gives no neutral view of the Jazz Age. Nick Carraway tells the story after leaving the East, arranging a summer of encounters into a retrospective judgement. Information arrives out of order: Gatsby first appears as a silhouette, then as rumour, host and former lover, and only later as James Gatz. The delay lets readers experience the social invention before meeting the history underneath it. Nick’s selection (what he withholds, reconstructs and finally condemns) is part of the novel’s action.',
+      'The Great Gatsby gives no neutral view of the Jazz Age. Nick Carraway tells the story after leaving the East, arranging a summer of encounters into a retrospective judgement. Information arrives out of order: Gatsby first appears as a silhouette, then as rumour, host and former lover, and only later as James Gatz. We meet the invention before the history underneath it. Nick’s selection (what he withholds, reconstructs and finally condemns) is part of the novel’s action.',
       'Place performs an equally exact function. East Egg, West Egg, Manhattan, the valley of ashes and the Midwest distinguish inherited position, new money, labour, spectacle and retreat. Cars, trains, telephones, advertising and illicit alcohol keep those spaces connected while distributing risk unequally. Gatsby can cross the bay and fill a house, but he cannot make Daisy’s intervening life disappear. The tragedy grows from treating time as something wealth and performance ought to be able to purchase.'
     ],
     movementHeading: 'The story, chapter by chapter.',
