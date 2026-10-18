@@ -15,7 +15,7 @@ module.exports = [
     introduction: {
       heading: 'The past returns because the present is not secure.',
       paragraphs: [
-        'Gothic writing is often recognised by its surfaces: a ruined building, a locked door, a storm, a secret room, an unexplained sound. Those details matter, but the form is not a box of gloomy properties. It makes something that a culture would rather keep hidden become physically or psychologically impossible to ignore.',
+        'Gothic writing is often recognised by its surfaces: a ruined building, a locked door, a storm, a secret room, an unexplained sound. Those details matter for what they do: they drag into the open something a culture would rather keep hidden, until nobody in the story can ignore it.',
         'In the books held here, terror moves steadily closer. Frankenstein crosses mountains and frozen seas, yet its deepest fear begins in a private act of creation. In Wuthering Heights, who owns the house and who will inherit it decide almost everything that happens. Victorian and American supernatural stories make the ordinary house, road and railway uncanny; Gilman makes domestic decoration an instrument of confinement. Stevenson divides a respectable London professional; Wilde gives a beautiful public life a concealed record; Stoker brings the vampire into bedrooms, railway timetables and typewritten case notes.'
       ]
     },
@@ -76,7 +76,7 @@ module.exports = [
       heading: 'A comic ending does not make every problem disappear.',
       paragraphs: [
         'Shakespearean comedy often begins by making ordinary identity unstable. Twins arrive in the wrong city, a woman takes a man’s name, lovers change partners overnight, or a whole household plays a trick on a jealous husband. Confusion is entertaining, but it also exposes how readily rank, gender and reputation depend on performance and recognition.',
-        'The endings usually gather people into marriages, pardons and restored families. Those settlements matter, yet they do not erase everything that came before. Malvolio is not reconciled in Twelfth Night; Jaques leaves the dance in As You Like It; Helena wins Bertram under conditions audiences still argue about. Comedy is therefore more than laughter. It is a way of testing what a community can repair, what it chooses to forgive and who remains awkwardly outside the final picture.'
+        'The endings usually gather people into marriages, pardons and restored families. Those settlements matter, yet they do not erase everything that came before. Malvolio is not reconciled in Twelfth Night; Jaques leaves the dance in As You Like It; Helena wins Bertram under conditions audiences still argue about. The comedies keep asking what a community can repair, what it chooses to forgive and who is left awkwardly outside the final picture.'
       ]
     },
     methods: [
@@ -284,7 +284,7 @@ module.exports = [
     methods: [
       { label: 'The clue', title: 'Visible does not mean understood', copy: 'A good clue usually appears before it is explained. The reader sees an object or hears a statement but assigns it the wrong weight. Detection depends on arrangement: which detail is ordinary, which is planted and which has been dismissed too quickly.' },
       { label: 'The record', title: 'Narration is part of the evidence', copy: 'Watson writes after the case, chooses what to withhold and converts reasoning into drama. His honesty does not make the record neutral. Detective fiction wants us to trust an account while we watch how that trust is earned.' },
-      { label: 'The verdict', title: 'Explanation is a form of power', copy: 'To solve a case is to decide which story becomes public. Holmes sometimes protects a client, lets an offender leave or withholds a name. The genre therefore tests the detective’s judgement as well as the accuracy of the deduction.' }
+      { label: 'The verdict', title: 'Explanation is a form of power', copy: 'To solve a case is to decide which story becomes public. Holmes sometimes protects a client, lets an offender leave or withholds a name. The stories test Holmes’s judgement as well as his deductions.' }
     ],
     books: [
       { href: '/books/the-moonstone/', title: 'The Moonstone', author: 'Wilkie Collins', year: '1868', image: '/The%20Moonstone%20Main%20Cover.png', copy: 'A stolen diamond is investigated through connected testimonies that make voice, empire and possession part of the case.' },
@@ -338,7 +338,7 @@ module.exports = [
     methods: [
       { label: 'Beginning', title: 'The story opens in the middle', copy: 'Epic often begins after decisive events have already occurred. The missing past returns through song, memory and report. This makes storytelling part of survival: a hero must understand and narrate what has happened in order to move forward.' },
       { label: 'Repetition', title: 'A repeated scene always changes something', copy: 'Feasts, arrivals, councils, recognitions and acts of hospitality recur with variations. The pattern teaches a reader what to expect; the difference reveals whether a household or ruler honours the obligations of the world.' },
-      { label: 'Scale', title: 'The ordinary and cosmic share a line', copy: 'A meal, wound, garment or door may stand beside divine action and national history. Epic does not abandon material detail. It enlarges consequence until an object can carry memory across generations.' }
+      { label: 'Scale', title: 'The ordinary and cosmic share a line', copy: 'A meal, wound, garment or door may stand beside divine action and national history. Epic keeps hold of such details and raises their stakes, until an object can carry memory across generations.' }
     ],
     books: [
       { href: '/books/the-iliad/', title: 'The Iliad', author: 'Homer, translated by Samuel Butler', year: 'Ancient Greek epic', image: '/The%20Iliad.png', copy: 'Anger, mortality and the costs of heroic honour during a concentrated movement of the Trojan War.' },
@@ -443,7 +443,7 @@ module.exports = [
     introduction: {
       heading: 'A narrator is not a clear window between the reader and the world.',
       paragraphs: [
-        'Every account begins from a position. A speaker knows some events directly, learns others by report and understands the past through present needs. The useful question is rarely whether a narrator is simply reliable or unreliable. It is what this person can know, what they cannot see and what the act of telling now allows them to do.',
+        'Every account begins from a position. A speaker knows some events directly, learns others by report and understands the past through present needs. Asking whether a narrator is reliable gets you less far than asking what this person can know, what they cannot see and what telling the story now allows them to do.',
         'The difference is especially important when testimony carries real historical risk. Pamela writes while resisting an employer who can intercept her words, and Douglass writes to expose slavery while details may identify people and places. Hawthorne’s Custom-House narrator claims to edit a recovered manuscript before The Scarlet Letter moves into romance. Pip, Nelly, Lockwood, Huck and Dracula’s document-makers each produce a different relation between experience, evidence and judgement.'
       ]
     },
@@ -465,7 +465,7 @@ module.exports = [
       heading: 'Read the joins as closely as the voice.',
       paragraphs: [
         'Mark every change of speaker, medium or time. Who introduces the next account? Has a letter been copied, a conversation remembered or a document translated? Those joins show how authority moves. They can also reveal what no single voice can supply without another person’s testimony.',
-        'Then compare statement with scene. A narrator may call an action generous, shameful, ordinary or inevitable while the details produce a more difficult judgement. The aim is not to catch every speaker in a lie. It is to understand how vocabulary, position and later knowledge shape what the reader is being asked to believe.'
+        'Then compare statement with scene. A narrator may call an action generous, shameful, ordinary or inevitable while the details produce a more difficult judgement. Catching a speaker out is the least of it: watch how vocabulary, position and later knowledge shape what you are being asked to believe.'
       ]
     },
     terms: [
@@ -506,7 +506,7 @@ module.exports = [
       heading: 'The books share a history. They do not speak from the same position.',
       paragraphs: [
         'Aphra Behn’s Oroonoko represents an enslaved African prince and a colonial revolt through an English narrator; it is neither testimony by an enslaved writer nor a straightforward abolitionist tract. Frederick Douglass writes as a man who survived enslavement and claimed public authority over the account of his own life. Harriet Beecher Stowe writes an abolitionist novel for a mass reading public, using invented families, Christian argument and domestic feeling. Mark Twain looks back after the Civil War through the voice of a white boy whose moral vocabulary has been formed by a slaveholding society. Those differences of genre, date and authority must remain visible.',
-        'These books show slavery working as a system. Atlantic trade and colonial plantation rule organise Behn’s Surinam; sale breaks families; law follows people across state lines; literacy is controlled; churches provide both resistance and excuse; apparently kind households retain the power to own and sell. Freedom therefore means more than escape. It includes the recovery of name, family, legal standing, speech and the power to tell one’s own history.'
+        'These books show slavery working as a system. Atlantic trade and colonial plantation rule organise Behn’s Surinam; sale breaks families; law follows people across state lines; literacy is controlled; churches provide both resistance and excuse; apparently kind households retain the power to own and sell. Escape is where freedom starts in these books. The rest is the recovery of name, family, legal standing, speech and the power to tell one’s own history.'
       ]
     },
     methods: [
@@ -643,7 +643,7 @@ module.exports.push(
     ],
     introduction: { heading: 'The institutions around a child.', paragraphs: [
       'These books place children in households, schools and communities with rules they are expected to learn. Tom Sawyer bargains with other boys, the railway children adjust to reduced family income, and Anne enters a new household at Green Gables. Each narrative gives those arrangements a particular historical and social setting.',
-      'The guide includes books written for different readerships. A novel about a child is not necessarily a book addressed only to children. Compare the age and position of the character with the voice telling the story: Huck narrates his experience, whereas Jane Eyre and Pip look back on childhood from later life.'
+      'The guide includes books written for different readerships. A novel about a child is not necessarily a book addressed only to children. Compare the age and position of the character with the voice telling the story: Huck tells his story while it is still close, whereas Pip looks back on his childhood from later life.'
     ] },
     methods: [
       { label: 'Household', title: 'Identify the adults responsible', copy: 'Record who supplies money, food, work, discipline and protection. A parent, guardian, employer or school may exercise different kinds of authority.' },
@@ -688,7 +688,7 @@ module.exports.push(
       { value: 'Change', label: 'Later maps and landscapes may differ from those described in a book' }
     ],
     introduction: { heading: 'Establish where the travellers are going.', paragraphs: [
-      'The journeys in this selection have practical conditions: boats, currents, camps, provisions, work and physical endurance. Jerome’s Thames holiday, Blackwood’s Danube campsite and the sailors in Crane’s The Open Boat involve different aims and different degrees of danger. The book pages identify their settings and the historical information supplied in each edition.',
+      'The journeys in this selection have practical conditions: boats, currents, camps, provisions, work and physical endurance. Jerome’s Thames holiday, Blackwood’s Danube campsite and the sailors in Crane’s The Open Boat involve different aims and different degrees of danger.',
       'Travel writing also requires attention to the form of the account. Seven Pillars of Wisdom is a participant’s retrospective memoir; White Fang follows an animal through fictional settings; and Coleridge’s poems use speakers whose journeys and landscapes cannot be treated as the author’s travel diary. Keep those distinctions when comparing places across books.'
     ] },
     methods: [
@@ -742,7 +742,7 @@ module.exports.push(
     ],
     introduction: { heading: 'Distinguish the holiday from the history of the text.', paragraphs: [
       'The books in this guide include stories written for seasonal publication and works associated with a holiday by later readers. Dickens’s short Christmas books belong to a particular publishing sequence. The stories gathered in Sleepy Hollow and Other American Halloween Stories were not originally written for Halloween; the edition explains how the later association developed.',
-      'The historical collections also examine food, charitable activity, publishing, legislation and celebration. Their complete primary texts stand beside commentary and documents. Read the contents and textual information on each book page to distinguish the original works from the modern research accompanying them.'
+      'The historical collections also examine food, charitable activity, publishing, legislation and celebration. Their complete primary texts stand beside commentary and documents.'
     ] },
     methods: [
       { label: 'Date', title: 'Check first publication', copy: 'Distinguish an original story’s date from the later anthology in which it appears and from the period of the customs under discussion.' },
