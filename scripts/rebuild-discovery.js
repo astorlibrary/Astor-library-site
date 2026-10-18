@@ -828,7 +828,7 @@ const passages = [
   },
   {
     type: 'passage', typeLabel: 'Close reading', title: '“Golden lads and girls all must, / As chimney-sweepers, come to dust”',
-    description: 'The dirge from Cymbeline: the wages of a worldly task, the reed and the oak, and a funeral song sung over someone who is not dead.',
+    description: 'The dirge from Cymbeline: the wages of a worldly task, the reed and the oak, and a funeral song spoken over someone who is not dead.',
     href: '/passage-room/cymbeline-fear-no-more/', image: '/Cymbeline%20Main%20Cover.png', imageAlt: 'Astor Library Cymbeline cover',
     relatedBooks: ['/books/cymbeline/'], search: 'Cymbeline Shakespeare fear no more the heat of the sun dirge golden lads chimney-sweepers Imogen Act 4 Scene 2 close reading'
   },
