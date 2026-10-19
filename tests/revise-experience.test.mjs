@@ -131,3 +131,17 @@ test('both palettes of every edition keep their text readable', () => {
     }
   }
 });
+
+test('every book carries its cover drawings and can letter its band legibly', () => {
+  for (const book of shelf.books) {
+    const edition = book.edition;
+    assert.ok(edition.motifs >= 2, book.slug + ' has ' + edition.motifs + ' emblems');
+    assert.ok(fs.existsSync('assets/editions/' + book.slug + '-field.png'), book.slug + ' field');
+    assert.ok(fs.existsSync('assets/editions/' + book.slug + '-motifs.png'), book.slug + ' emblems');
+    for (const mode of ['light', 'dark']) {
+      const palette = edition[mode];
+      assert.ok(contrast(palette.bandInk, palette.band) >= 7, `${book.slug} ${mode}: band lettering`);
+      assert.ok(contrast(palette.bandSoft, palette.band) >= 4.5, `${book.slug} ${mode}: band small print`);
+    }
+  }
+});

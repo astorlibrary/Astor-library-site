@@ -13,6 +13,7 @@ import { resultGrid } from './questions.mjs';
 import { maskName } from './questions.mjs';
 import { scoreRing, starsFor } from './quiz-round.mjs';
 import {
+  motif, hasMotifs,
   loadShelf, loadBook, drawing, setAccent, keepAddress, preferredSlug,
   LIBRARY_QUIZZES, availableQuizzes, bookLines, lineSummary, lastRevised,
   sessionPlan, sessionLine, whenLabel, clip, STATE_WORDS, shortTitle,
@@ -115,7 +116,9 @@ function drawHero(meta, book, state, counts, day) {
     el('ul', { class: 'rx-hero-stats' }, statFacts(book, state, counts).map(([big, small]) => el('li', {}, [el('b', { text: big }), el('span', { text: small })])))
   ]);
 
-  titleMount.append(el('div', { class: 'rx-hero-inner' }, [cover, words, panel]));
+  // The hero is set like the cover itself: its ground and its drawings.
+  titleMount.classList.toggle('is-cover', hasMotifs());
+  titleMount.append(el('span', { class: 'rx-hero-art', 'aria-hidden': 'true' }), el('div', { class: 'rx-hero-inner' }, [cover, words, panel]));
 }
 
 function statFacts(book, state, counts) {
@@ -250,6 +253,8 @@ function drawActivities(book, meta, state, counts) {
   return section;
 }
 
+const ACTIVITY_ORDER = ['mixed-round', 'who-said-it', 'fill-the-line', 'theme-match', 'technique-spotter', 'character-identification', 'order-the-plot', 'flashcards', 'essay-forge', 'defend-the-reading'];
+
 function activityCard(id, book, meta, state, counts) {
   const [name, note] = DESCRIPTIONS[id];
   const result = state.scores?.[id]?.byBook?.[book.slug];
@@ -269,7 +274,7 @@ function activityCard(id, book, meta, state, counts) {
   if (id === 'essay-forge' || id === 'defend-the-reading') status = id === 'essay-forge' ? book.essayQuestions.length + ' questions' : book.criticalViews.length + ' readings';
 
   return el('a', { class: 'rx-activity', href: activityHref(id, book.slug), 'data-activity': id }, [
-    el('span', { class: 'rx-activity-preview', 'aria-hidden': 'true' }, [preview(id, book)]),
+    el('span', { class: 'rx-activity-preview', 'aria-hidden': 'true' }, [preview(id, book), hasMotifs() ? motif(ACTIVITY_ORDER.indexOf(id), 'rx-activity-motif') : null]),
     el('span', { class: 'rx-activity-body' }, [
       el('span', { class: 'rx-activity-name' }, [activityIcon(shelf.icons, id, 20), el('span', { text: name })]),
       el('span', { class: 'rx-activity-note', text: note }),

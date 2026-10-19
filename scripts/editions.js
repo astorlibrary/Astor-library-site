@@ -123,6 +123,32 @@ function darkPalette(ground, accent) {
   };
 }
 
+// --- the cover band ------------------------------------------------------------
+// The head of every Revise page is set like the book's own cover: its ground,
+// its drawings and its lettering colour. In dark mode a pale cover gives way to
+// the night with its drawings picked out in the accent.
+
+function bandColours(mode, cover, palette, accent) {
+  const ground = cover.ground || PAPER;
+  let band;
+  let art;
+  if (mode === 'light' || luminance(ground) < 0.05) {
+    band = ground;
+    art = cover.ink && contrast(cover.ink, band) > 2.2 ? cover.ink : (luminance(band) > 0.3 ? mix(accent, '#000000', 0.45) : mix(accent, CREAM, 0.6));
+  } else {
+    band = mix(palette.ground, accent, 0.2);
+    art = mix(accent, CREAM, 0.55);
+  }
+  // A mid-tone cover (the Iliad's terracotta) is deepened just enough to
+  // carry lettering at full contrast.
+  if (contrast(band, '#000000') < 7.6 && contrast(band, '#ffffff') < 7.6) band = reach(band, '#ffffff', 7.8, '#000000');
+  // Dark lettering wherever black would stand out more than white.
+  const light = contrast(band, '#000000') > contrast(band, '#ffffff');
+  const bandInk = reach(light ? mix('#1a1613', art, 0.25) : mix(CREAM, art, 0.15), band, 9, light ? '#000000' : '#ffffff');
+  const bandSoft = reach(mix(bandInk, band, 0.35), band, 4.8, bandInk);
+  return { band, bandInk, bandSoft, bandArt: art };
+}
+
 // --- the register --------------------------------------------------------------
 
 const DARK_GENRES = /gothic|ghost|weird|horror|sensation|metaphysical/i;
@@ -148,17 +174,21 @@ function registerFor(book) {
 
 // --- one edition ----------------------------------------------------------------
 
-function editionFor(book, colours = {}, overrides = {}) {
+function editionFor(book, colours = {}, overrides = {}, art = {}) {
   const override = overrides[book.slug] || {};
   const accent = override.accent || book.accent || '#6e1f2b';
   const ground = override.ground || colours.ground || PAPER;
   const register = { ...registerFor(book), ...pick(override, ['layout', 'voice', 'texture']) };
   const mode = override.mode || (DARK_GENRES.test(String(book.genre || '')) || luminance(ground) < 0.12 ? 'dark' : 'light');
+  const cover = { ground, ink: override.ink || art.ink || colours.ink };
+  const light = { ...lightPalette(ground, accent), ...(override.light || {}) };
+  const dark = { ...darkPalette(ground, accent), ...(override.dark || {}) };
   return {
     mode,
     ...register,
-    light: { ...lightPalette(ground, accent), ...(override.light || {}) },
-    dark: { ...darkPalette(ground, accent), ...(override.dark || {}) }
+    motifs: art.motifs || 0,
+    light: { ...light, ...bandColours('light', cover, light, accent), ...(override.light || {}) },
+    dark: { ...dark, ...bandColours('dark', cover, dark, accent), ...(override.dark || {}) }
   };
 }
 
@@ -171,7 +201,7 @@ const HOUSE = editionFor({ slug: '', period: '', form: 'novel', genre: '', accen
 
 function loadEditionSources(root = path.join(__dirname, '..')) {
   const read = file => { try { return JSON.parse(fs.readFileSync(path.join(root, file), 'utf8')); } catch { return {}; } };
-  return { colours: read('assets/edition-colours.json'), overrides: read('scripts/edition-overrides.json') };
+  return { colours: read('assets/edition-colours.json'), overrides: read('scripts/edition-overrides.json'), art: read('assets/edition-art.json') };
 }
 
 module.exports = { editionFor, registerFor, loadEditionSources, HOUSE, contrast, luminance, mix };

@@ -87,8 +87,10 @@ const TOKENS = {
   ground: '--ed-ground', surface: '--ed-surface', sunk: '--ed-sunk', ink: '--ed-ink', soft: '--ed-soft',
   accent: '--ed-accent', accentText: '--ed-accent-text', button: '--ed-button', buttonInk: '--ed-button-ink',
   hero: '--ed-hero', heroInk: '--ed-hero-ink', line: '--ed-line', lineStrong: '--ed-line-strong',
-  right: '--ed-right', wrong: '--ed-wrong', star: '--ed-star', onFill: '--ed-on-fill'
+  right: '--ed-right', wrong: '--ed-wrong', star: '--ed-star', onFill: '--ed-on-fill',
+  band: '--ed-band', bandInk: '--ed-band-text', bandSoft: '--ed-band-soft', bandArt: '--ed-band-art'
 };
+const ART = ['--ed-field', '--ed-motifs', '--ed-motif-n'];
 
 export function modeOverride() {
   try {
@@ -116,10 +118,17 @@ export function applyEdition(meta) {
   const edition = meta?.edition;
   currentMeta = meta || null;
   if (!edition) {
-    for (const token of Object.values(TOKENS)) html.style.removeProperty(token);
-    for (const key of ['edition', 'edMode', 'edLayout', 'edVoice', 'edTexture']) delete html.dataset[key];
+    for (const token of [...Object.values(TOKENS), ...ART]) html.style.removeProperty(token);
+    for (const key of ['edition', 'edMode', 'edLayout', 'edVoice', 'edTexture', 'edArt']) delete html.dataset[key];
     return;
   }
+  // The cover's drawings, lifted by scripts/build-edition-art.mjs.
+  const motifs = edition.motifs || 0;
+  html.style.setProperty('--ed-field', 'url("/assets/editions/' + meta.slug + '-field.png")');
+  if (motifs) html.style.setProperty('--ed-motifs', 'url("/assets/editions/' + meta.slug + '-motifs.png")');
+  else html.style.removeProperty('--ed-motifs');
+  html.style.setProperty('--ed-motif-n', String(Math.max(2, motifs)));
+  if (motifs) html.dataset.edArt = String(motifs); else delete html.dataset.edArt;
   const mode = editionMode(edition);
   const palette = edition[mode] || edition.light;
   for (const [key, token] of Object.entries(TOKENS)) if (palette[key]) html.style.setProperty(token, palette[key]);
@@ -130,6 +139,76 @@ export function applyEdition(meta) {
   html.dataset.edTexture = edition.texture || 'plain';
   document.querySelector('meta[name=theme-color]')?.setAttribute('content', palette.ground);
   for (const button of document.querySelectorAll('.rx-mode-toggle')) paintModeToggle(button, mode);
+}
+
+// One of the book's own drawings, as a mask the stylesheet tints. `index`
+// wraps round however many the cover gave; with none, it draws nothing.
+export function motif(index = 0, className = '') {
+  const count = currentMeta?.edition?.motifs || 0;
+  const node = el('i', { class: 'rx-motif' + (className ? ' ' + className : ''), 'aria-hidden': 'true' });
+  node.style.setProperty('--i', String(count ? ((index % count) + count) % count : 0));
+  return node;
+}
+
+export function hasMotifs() {
+  return Boolean(currentMeta?.edition?.motifs);
+}
+export function currentBook() {
+  return currentMeta;
+}
+
+// A right answer throws a handful of the book's drawings off the button.
+export function burst(node, count = 7) {
+  if (!node || !hasMotifs() || prefersReducedMotion() || !node.animate) return;
+  const layer = el('span', { class: 'rx-burst', 'aria-hidden': 'true' });
+  node.append(layer);
+  for (let index = 0; index < count; index += 1) {
+    const piece = motif(index + Math.floor(Math.random() * 8));
+    layer.append(piece);
+    const angle = (index / count) * Math.PI * 2 + Math.random() * 0.6;
+    const reach = 46 + Math.random() * 36;
+    piece.animate([
+      { transform: 'translate(-50%, -50%) scale(.3) rotate(0deg)', opacity: 0 },
+      { transform: 'translate(calc(-50% + ' + Math.cos(angle) * reach * 0.6 + 'px), calc(-50% + ' + Math.sin(angle) * reach * 0.6 + 'px)) scale(1)', opacity: 1, offset: 0.45 },
+      { transform: 'translate(calc(-50% + ' + Math.cos(angle) * reach + 'px), calc(-50% + ' + Math.sin(angle) * reach + 'px)) scale(.8) rotate(' + (Math.random() * 40 - 20) + 'deg)', opacity: 0 }
+    ], { duration: 760 + Math.random() * 200, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'forwards' });
+  }
+  setTimeout(() => layer.remove(), 1100);
+}
+
+// The cover band: the head of the page set in the cover's ground with its
+// drawings, running down behind the study bar until it meets the first page
+// of the activity, which sits on it like a book on its jacket.
+const BAND_ENDS = '.rx-card, .rx-results, .rx-flip, .rx-forge-panel, .rv-tool-panel, .rx-defend-case, .rx-hub-start, [data-band-end]';
+let bandNode = null;
+let bandWatch = null;
+
+export function coverBand(main = document.querySelector('main')) {
+  if (typeof document === 'undefined' || !main) return;
+  if (!bandNode || !bandNode.isConnected) {
+    bandNode = el('div', { class: 'rx-band', 'aria-hidden': 'true' }, [el('div', { class: 'rx-band-art' })]);
+    main.prepend(bandNode);
+    main.classList.add('has-band');
+  }
+  const place = () => {
+    const end = main.querySelector(BAND_ENDS);
+    const top = main.getBoundingClientRect().top + window.scrollY;
+    let bottom = 0;
+    if (end) bottom = end.getBoundingClientRect().top + window.scrollY - top + Math.min(96, end.offsetHeight * 0.35);
+    else {
+      const bar = main.querySelector('.rx-bar-mount');
+      bottom = bar ? bar.getBoundingClientRect().bottom + window.scrollY - top + 40 : 260;
+    }
+    main.style.setProperty('--rx-band-h', Math.round(Math.max(180, bottom)) + 'px');
+  };
+  place();
+  if (!bandWatch && 'ResizeObserver' in window) {
+    let queued = false;
+    const later = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; place(); }); };
+    bandWatch = new ResizeObserver(later);
+    bandWatch.observe(main);
+    new MutationObserver(later).observe(main, { childList: true, subtree: true });
+  }
 }
 
 // One button: it switches to the other palette. Switching back to the
@@ -632,6 +711,7 @@ export function studyBar(head, { books, meta, icons, active, onChoose, allBooks 
   head.rxEdges = edges;
   window.addEventListener('resize', edges);
   head.append(bar, row);
+  if (meta.edition) coverBand(head.closest('main') || undefined);
   // Keep the current activity in view on a narrow screen, without moving the page.
   requestAnimationFrame(() => {
     const here = acts.querySelector('.is-here');

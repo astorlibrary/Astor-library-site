@@ -504,6 +504,30 @@ does the rest. Pages that range across the library (Today, Which book?)
 keep the house edition. A new book gets its edition automatically when the
 study data is rebuilt; run the colour sampler once for its cover.
 
+**The cover.** Every Astor cover is a flat ground scattered with small line
+drawings chosen for the book: Macbeth's crowns, ravens and thistles,
+Frankenstein's flasks, hearts and lightning. `scripts/build-edition-art.mjs`
+(run by hand) finds those drawings, erases the lettering, and writes two
+masks per book to `assets/editions/`: the cover's own field of drawings and
+a strip of up to eight different emblems, plus the drawings' ink colour in
+`assets/edition-art.json`. Revise then wears the cover:
+
+- each activity page opens on a band of the cover's ground and drawings,
+  with the activity's name lettered in spaced capitals like a cover title;
+  the question, flashcard or planner sits on it as a page;
+- progress is a row of the book's emblems, lit as each answer is won;
+- each question is headed by one emblem, and a right answer throws a few of
+  them off the button;
+- the completion screen is set as the cover, with the score for its title;
+- the Revise home's hero is the cover, opened, and each activity card
+  carries an emblem.
+
+In light mode the band is the cover's true ground and ink; in dark mode a
+pale cover turns to night with its drawings in the accent. A mid-tone cover
+is deepened just enough for its lettering to pass contrast. For the few
+covers whose titles touch their drawings, `eraseTitle` and `dropMotifs` in
+`scripts/edition-overrides.json` clear what the detector misses.
+
 Order the plot is now played by tapping the events in the order they
 happen: a correct tap places the card, a wrong one counts as a slip, so the
 story assembles itself without dragging.
@@ -512,7 +536,8 @@ story assembles itself without dragging.
 one-book activity comes from the chosen book, that the study bar offers
 exactly the activities a book can run, that every activity page carries
 the study bar and its instructions, that every book has a valid edition, and
-that both palettes of every edition keep text readable.
+that both palettes of every edition keep text readable, and that every book
+has its cover drawings and legible lettering on its band.
 
 ---
 
@@ -732,7 +757,8 @@ episode of the day they fall in. Both records say so in `referenceStyle`.
    the indexes, writes a study page if the title has an Astor study edition,
    and flips its hub card to point at the page.
 4. For Revise, `node scripts/build-edition-colours.mjs` reads the new cover's
-   colours, then `node scripts/rebuild-study-data.js` gives the book its
+   colours and `node scripts/build-edition-art.mjs <slug>` lifts its
+   drawings (check `assets/editions/<slug>-*.png`), then `node scripts/rebuild-study-data.js` gives the book its
    edition. Adjust it in `scripts/edition-overrides.json` if needed.
 5. `node scripts/build-static.js && node scripts/check-site.js && npm test`.
 

@@ -185,7 +185,7 @@ fs.writeFileSync(path.join(root, 'assets', 'timeline-index.json'), JSON.stringif
       return {
         slug: book.slug, title: book.title, author: book.author, href: book.href,
         period: book.period, form: book.form, genre: book.genre || '',
-        edition: editionFor({ slug: book.slug, period: book.period, form: book.form, genre: book.genre, accent: identity.accent }, editionSources.colours[book.slug], editionSources.overrides),
+        edition: editionFor({ slug: book.slug, period: book.period, form: book.form, genre: book.genre, accent: identity.accent }, editionSources.colours[book.slug], editionSources.overrides, editionSources.art[book.slug]),
         accent: identity.accent, motif: MOTIFS[identity.motif] || '', cover: coverFor(book.href),
         quotations: book.quotations.length, characters: book.characters.length,
         stages: book.structure.length, essays: book.essayQuestions.length,

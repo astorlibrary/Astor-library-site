@@ -24,7 +24,7 @@
 import { el, clear, shuffle, announce, prefersReducedMotion, formatYear } from './util.mjs';
 import { recordScore, reviewCard, scores, toggleCommonplace, inCommonplace, isRemembering, streak } from './store.mjs';
 import { cardId } from './data.mjs';
-import { quotationKey, quotationFor, firstSentence, drawing, quizName, shortTitle, monogram, coverImage, quoted, headerOffset } from './revise-kit.mjs';
+import { quotationKey, quotationFor, firstSentence, drawing, quizName, shortTitle, monogram, coverImage, quoted, headerOffset, motif, hasMotifs, burst, currentBook } from './revise-kit.mjs';
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
 
@@ -145,8 +145,9 @@ export class QuizRound {
       const done = position < this.answers.length;
       track.append(el('li', {
         class: done ? (this.answers[position] ? (this.helped[position] ? 'is-right is-helped' : 'is-right') : 'is-wrong') : position === this.index ? 'is-now' : ''
-      }, [el('i')]));
+      }, [hasMotifs() ? motif(position) : el('i')]));
     }
+    track.classList.toggle('is-motifs', hasMotifs());
     const shown = Math.min(this.index + 1, total);
     return el('div', { class: 'rx-progress' }, [
       el('p', { class: 'rx-progress-count' }, [
@@ -181,6 +182,9 @@ export class QuizRound {
     this.card = card;
     // Each game's drawing, faint in the corner: its emblem on every card.
     card.append(drawing((this.options.icons || {})[about.icon] || '', 120, 'rx-card-emblem'));
+    // And the book's own drawing for this question, set at its head like a
+    // printer's ornament.
+    if (hasMotifs()) card.append(motif(this.index, 'rx-card-motif'));
     const showKind = this.options.gameId === 'mixed-round' || this.options.gameId === 'daily';
     const head = el('div', { class: 'rx-card-head' }, [
       showKind && about.label ? el('p', { class: 'rx-card-kind' }, [drawing((this.options.icons || {})[about.icon] || '', 16), el('span', { text: about.label })]) : null,
@@ -536,6 +540,12 @@ export class QuizRound {
     this.actions.remove();
     this.stage.querySelector('.rx-progress')?.replaceWith(this.progress(correct));
     this.card.classList.add(correct ? 'is-correct' : 'is-missed');
+    if (correct) {
+      const target = question.kind === 'choice' ? this.optionButtons[question.answer]
+        : question.kind === 'cloze' ? this.container.querySelector('.rx-cloze-line') : this.orderList;
+      burst(target || this.card);
+      this.stage.querySelector('.rx-track li:nth-child(' + this.answers.length + ')')?.classList.add('is-fresh');
+    }
     if (!correct && !gaveUp) this.shake(this.card);
 
     this.writeNote(question, correct, gaveUp, line);
@@ -859,9 +869,14 @@ export function completion({ score, total, kicker, title, chips = [], sub = '', 
   for (let index = 0; index < 3; index += 1) {
     starRow.append(el('span', { class: 'rx-star' + (index < stars ? ' is-earned' : ''), style: '--i:' + index, html: STAR }));
   }
-  const markRow = marks && marks.length ? el('ol', { class: 'rx-results-marks', 'aria-hidden': 'true', style: '--n:' + marks.length },
-    marks.map((right, index) => el('li', { class: right ? 'is-right' : '', style: '--i:' + index }))) : null;
-  return el('div', { class: 'rx-results-hero' }, [
+  const drawn = hasMotifs();
+  const markRow = marks && marks.length ? el('ol', { class: 'rx-results-marks' + (drawn ? ' is-motifs' : ''), 'aria-hidden': 'true', style: '--n:' + marks.length },
+    marks.map((right, index) => el('li', { class: right ? 'is-right' : '', style: '--i:' + index }, drawn ? [motif(index)] : []))) : null;
+  // Set like the book's cover: its name where the cover has the imprint.
+  const book = currentBook();
+  return el('div', { class: 'rx-results-hero' + (drawn ? ' is-cover' : '') }, [
+    drawn ? el('span', { class: 'rx-results-art', 'aria-hidden': 'true' }) : null,
+    drawn && book ? el('p', { class: 'rx-results-book', text: shortTitle(book) }) : null,
     kicker ? el('p', { class: 'rx-results-what', text: kicker }) : null,
     starRow,
     el('p', { class: 'rx-results-score', role: 'img', 'aria-label': score + ' out of ' + total }, [

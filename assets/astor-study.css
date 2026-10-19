@@ -3591,3 +3591,206 @@ html[data-edition] { background: var(--ed-ground); }
   html[data-ed-layout="centred"] .rx-hero-actions { grid-column: auto; width: 100%; }
   html[data-ed-layout="centred"] .rx-hero-panel { grid-template-columns: auto minmax(0, 1fr); width: 100%; box-sizing: border-box; }
 }
+
+/* =============================================================================
+   rx: the cover
+   Every Revise page is set on its book's cover. scripts/build-edition-art.mjs
+   lifts the drawings off each Astor cover as two masks: the cover's own field
+   of drawings (--ed-field) and a strip of up to eight emblems (--ed-motifs,
+   --ed-motif-n of them). revise-kit.mjs puts a band of the cover's ground and
+   drawings behind the head of the page (.rx-band, as tall as --rx-band-h), and
+   the activity's page sits on it. The book's emblems mark progress, head each
+   question and fly off a right answer.
+   ============================================================================= */
+
+/* one emblem: a mask the colour shows through */
+.rx-motif {
+  --i: 0;
+  display: inline-block; flex: none; width: 24px; height: 24px; background: currentColor; font-style: normal;
+  -webkit-mask: var(--ed-motifs) no-repeat; mask: var(--ed-motifs) no-repeat;
+  -webkit-mask-size: calc(var(--ed-motif-n, 2) * 100%) 100%; mask-size: calc(var(--ed-motif-n, 2) * 100%) 100%;
+  -webkit-mask-position: calc(var(--i) / (var(--ed-motif-n, 2) - 1) * 100%) 0; mask-position: calc(var(--i) / (var(--ed-motif-n, 2) - 1) * 100%) 0;
+}
+
+/* --- the band ------------------------------------------------------------------ */
+
+html[data-edition] body { overflow-x: clip; }
+html[data-edition] main.has-band { position: relative; isolation: isolate; }
+.rx-band {
+  position: absolute; z-index: -1; top: 0; left: 50%; width: 100vw; margin-left: -50vw; height: var(--rx-band-h, 300px);
+  background: var(--ed-band); overflow: hidden; pointer-events: none;
+}
+.rx-band-art {
+  position: absolute; inset: -40px 0 0; background: var(--ed-band-art); opacity: .9;
+  -webkit-mask: var(--ed-field) repeat; mask: var(--ed-field) repeat;
+  -webkit-mask-size: 470px auto; mask-size: 470px auto;
+  -webkit-mask-position: center top; mask-position: center top;
+}
+/* a soft clearing behind the words that sit on the band */
+.rx-band::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 70%, color-mix(in srgb, var(--ed-band-text) 8%, transparent));
+}
+html[data-ed-mode="dark"] .rx-band-art { opacity: .7; }
+
+/* what sits on the band takes the cover's lettering colour */
+html[data-edition] main.has-band > .book-breadcrumb, html[data-edition] main.has-band > .book-breadcrumb a { color: var(--ed-band-soft); }
+html[data-edition] main.has-band .rx-head :is(h1, .kicker) { color: var(--ed-band-text); }
+html[data-edition] main.has-band .rx-head p { color: var(--ed-band-soft); }
+html[data-edition] main.has-band :is(.rx-progress-count, .rx-progress-count span, .rx-run) { color: var(--ed-band-text); }
+html[data-edition] main.has-band .rx-run.is-live { color: var(--ed-band-text); background: color-mix(in srgb, var(--ed-band-text) 12%, transparent); }
+html[data-edition] main.has-band .rx-head h1 { text-transform: uppercase; letter-spacing: .12em; font-weight: 400; font-style: normal; }
+html[data-edition] main.has-band .rx-acts-arrow { background: var(--ed-surface); color: var(--ed-ink); border-color: var(--ed-line-strong); }
+html[data-edition] main.has-band .rx-bar { box-shadow: 0 10px 30px -18px rgba(0, 0, 0, .45); }
+html[data-edition] main.has-band .rx-act:not(.is-here) { box-shadow: 0 4px 14px -10px rgba(0, 0, 0, .5); }
+html[data-edition] main.has-band :is(.rx-step-label, .rx-step:not(.is-here)) { color: var(--ed-band-text); }
+
+/* --- progress: the book's emblems, lit as they are won ---------------------------- */
+
+.rx-track.is-motifs { display: flex; justify-content: space-between; gap: 2px; align-items: center; height: 30px; }
+.rx-track.is-motifs li { overflow: visible; position: relative; display: grid; place-items: center; flex: 1 1 0; height: 30px; background: none !important; border-radius: 0; color: var(--ed-band-text, var(--rx-ink)); }
+.rx-track.is-motifs li i.rx-motif { position: static; inset: auto; border-radius: 0; transform: none; background: currentColor; }
+.rx-track.is-motifs li.is-right i.rx-motif, .rx-track.is-motifs li.is-wrong i.rx-motif { background: currentColor; }
+.rx-track.is-motifs li .rx-motif { width: 22px; height: 22px; opacity: .42; transition: opacity .3s ease, transform .3s var(--rx-ease, ease); }
+.rx-track.is-motifs li.is-now .rx-motif { opacity: 1; transform: translateY(-2px) scale(1.12); }
+.rx-track.is-motifs li.is-now::after { content: ''; position: absolute; bottom: -3px; left: 50%; width: 4px; height: 4px; margin-left: -2px; border-radius: 50%; background: currentColor; }
+.rx-track.is-motifs li.is-right .rx-motif { opacity: 1; }
+.rx-track.is-motifs li.is-right::after { content: ''; position: absolute; bottom: -4px; left: 50%; width: 12px; height: 2px; margin-left: -6px; border-radius: 1px; background: var(--ed-star, var(--rx-gold)); }
+.rx-track.is-motifs li.is-helped::after { opacity: .5; }
+.rx-track.is-motifs li.is-wrong .rx-motif { opacity: .18; }
+.rx-track.is-motifs li.is-fresh .rx-motif { animation: rx-won .6s var(--rx-ease, ease) both; }
+@keyframes rx-won { 0% { transform: scale(.4); opacity: .3; } 55% { transform: scale(1.45) rotate(-8deg); opacity: 1; } 100% { transform: none; opacity: 1; } }
+html[data-edition] .rx-progress { gap: 12px; }
+html[data-edition] main.has-band .rx-score { background: var(--ed-surface); border-color: transparent; box-shadow: 0 4px 14px -8px rgba(0, 0, 0, .45); color: var(--ed-ink); }
+
+/* --- the page that sits on the cover ---------------------------------------------- */
+
+html[data-edition] .rx-card {
+  position: relative; background: var(--ed-surface); border: 0; border-radius: 24px; padding: 30px clamp(18px, 4vw, 40px) 22px;
+  box-shadow: 0 1px 0 var(--ed-line), 0 30px 60px -30px rgba(20, 14, 8, .45), 0 10px 20px -16px rgba(20, 14, 8, .3);
+}
+html[data-edition][data-ed-mode="dark"] .rx-card { box-shadow: 0 0 0 1px var(--ed-line), 0 30px 70px -28px rgba(0, 0, 0, .8); }
+html[data-ed-layout="page"] .rx-card { border-radius: 6px; }
+html[data-ed-layout="framed"] .rx-card { border-radius: 4px; outline: 1px solid var(--ed-line-strong); outline-offset: -9px; }
+html[data-ed-layout="framed"] .rx-card > :is(.rx-quote, .rx-event) { background: var(--ed-sunk); }
+.rx-card-motif { display: block; width: 34px; height: 34px; margin: -8px auto 10px; color: var(--ed-accent-text, var(--rx-accent)); opacity: .9; }
+html[data-ed-layout="page"] .rx-card > .rx-card-motif { margin-left: 0; }
+html[data-edition] .rx-card.is-correct .rx-card-motif { animation: rx-won .6s var(--rx-ease, ease) both; }
+html[data-edition] .rx-stem { letter-spacing: .16em; }
+html[data-ed-layout="centred"] .rx-card .rx-stem, html[data-ed-layout="framed"] .rx-card .rx-stem { text-align: center; width: 100%; }
+
+/* answers lift when touched and land with weight */
+html[data-edition] .rx-option { position: relative; overflow: visible; transition: transform .16s var(--rx-ease, ease), box-shadow .16s ease, background-color .16s ease, border-color .16s ease; }
+html[data-edition] .rx-option:active:not(:disabled) { transform: scale(.98); }
+html[data-ed-layout="centred"] .rx-options .rx-option:hover:not(:disabled), html[data-ed-layout="framed"] .rx-options .rx-option:hover:not(:disabled) {
+  transform: translateY(-2px); border-color: var(--ed-accent-text); box-shadow: 0 10px 20px -14px rgba(0, 0, 0, .5);
+}
+html[data-edition] .rx-option.is-right { animation: rx-land .5s var(--rx-ease, ease); }
+@keyframes rx-land { 0% { transform: scale(1); } 40% { transform: scale(1.035); } 100% { transform: scale(1); } }
+
+/* a right answer throws the book's drawings */
+.rx-burst { position: absolute; left: 50%; top: 50%; width: 0; height: 0; z-index: 6; pointer-events: none; }
+.rx-burst .rx-motif { position: absolute; left: 0; top: 0; width: 26px; height: 26px; color: var(--ed-accent-text, var(--rx-accent)); opacity: 0; }
+.rx-burst .rx-motif:nth-child(3n) { color: var(--ed-star, var(--rx-gold)); }
+
+/* --- results: the cover, with the score for its title ------------------------------ */
+
+html[data-edition] .rx-results {
+  position: relative; background: var(--ed-surface); border-radius: 26px; padding: 12px 12px 22px; gap: 18px;
+  box-shadow: 0 1px 0 var(--ed-line), 0 30px 60px -30px rgba(20, 14, 8, .45);
+}
+html[data-edition][data-ed-mode="dark"] .rx-results { box-shadow: 0 0 0 1px var(--ed-line), 0 30px 70px -28px rgba(0, 0, 0, .8); }
+html[data-ed-layout="page"] .rx-results { border-radius: 6px; text-align: center; }
+html[data-ed-layout="framed"] .rx-results { border-radius: 4px; }
+.rx-results-hero.is-cover {
+  position: relative; overflow: hidden; isolation: isolate; align-items: center !important; text-align: center;
+  padding: 26px 20px 30px !important; border: 0 !important; outline: 0 !important; border-radius: 18px;
+  background: var(--ed-band) !important; color: var(--ed-band-text);
+}
+html[data-ed-layout="page"] .rx-results-hero.is-cover, html[data-ed-layout="framed"] .rx-results-hero.is-cover { border-radius: 3px; }
+html[data-ed-layout="framed"] .rx-results-hero.is-cover { outline: 1px solid color-mix(in srgb, var(--ed-band-text) 35%, transparent) !important; outline-offset: -9px !important; }
+.rx-results-art {
+  position: absolute; z-index: -2; inset: 0; background: var(--ed-band-art); opacity: .85;
+  -webkit-mask: var(--ed-field) center top / 420px auto repeat; mask: var(--ed-field) center top / 420px auto repeat;
+}
+.rx-results-hero.is-cover::after {
+  content: ''; position: absolute; z-index: -1; inset: 0;
+  background: radial-gradient(closest-side, var(--ed-band) 80%, color-mix(in srgb, var(--ed-band) 0%, transparent) 100%) center 54% / 96% 104% no-repeat;
+}
+.rx-results-book { margin: 0 0 4px; font: 400 12px/1.3 Georgia, 'Times New Roman', serif; letter-spacing: .32em; text-transform: uppercase; color: var(--ed-band-text); }
+.rx-results-hero.is-cover .rx-results-what { margin-bottom: 18px; color: var(--ed-band-soft); }
+.rx-results-hero.is-cover .rx-results-score b { color: var(--ed-band-text); font-size: clamp(110px, 20vw, 150px); }
+.rx-results-hero.is-cover .rx-results-score span { color: var(--ed-band-soft); }
+.rx-results-hero.is-cover .rx-star svg { fill: color-mix(in srgb, var(--ed-band-text) 22%, transparent); }
+.rx-results-hero.is-cover .rx-star.is-earned svg { fill: var(--ed-star); filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .25)); }
+.rx-results-hero.is-cover .rx-star.is-earned { animation: rx-star-in .55s var(--rx-ease, ease) backwards; animation-delay: calc(.5s + var(--i, 0) * .18s); }
+@keyframes rx-star-in { 0% { transform: scale(0) rotate(-30deg); } 60% { transform: scale(1.3) rotate(8deg); } 100% { transform: none; } }
+.rx-results-hero.is-cover .rx-results-title { margin-top: 20px; font-style: normal; font-weight: 400; text-transform: uppercase; letter-spacing: .14em; font-size: clamp(20px, 3vw, 26px); color: var(--ed-band-text); }
+.rx-results-hero.is-cover .rx-results-sub, .rx-results-hero.is-cover .rx-results-note { color: var(--ed-band-soft); }
+ol.rx-results-marks.is-motifs { display: flex; justify-content: center; gap: 3px; width: auto; max-width: 100%; flex-wrap: wrap; }
+ol.rx-results-marks.is-motifs li { display: grid; place-items: center; width: 25px; height: 28px; background: none; color: var(--ed-band-text); }
+ol.rx-results-marks.is-motifs li .rx-motif { width: 22px; height: 22px; opacity: .22; }
+ol.rx-results-marks.is-motifs li.is-right .rx-motif { opacity: 1; animation: rx-won .5s var(--rx-ease, ease) backwards; animation-delay: calc(.3s + var(--i, 0) * 70ms); }
+html[data-edition] .rx-results > .rx-results-actions { padding: 0 10px; }
+html[data-edition] .rx-results { max-width: 600px; margin-left: auto; margin-right: auto; }
+
+/* --- flashcards: the emblem at the head of each side -------------------------------- */
+
+.rx-flip-face > .rx-card-motif { margin: 0 auto 10px; }
+html[data-edition] .rx-flip-face { box-shadow: 0 1px 0 var(--ed-line), 0 30px 60px -30px rgba(20, 14, 8, .45); }
+
+/* --- the book's home: the cover, opened ---------------------------------------------- */
+
+html[data-edition] .rx-hero.is-cover { background: var(--ed-band); color: var(--ed-band-text); isolation: isolate; overflow: hidden; }
+html[data-edition] .rx-hero.is-cover::after { display: none; }
+.rx-hero-art { display: none; }
+.rx-hero.is-cover .rx-hero-art {
+  display: block; position: absolute; z-index: -2; inset: 0; background: var(--ed-band-art); opacity: .9;
+  -webkit-mask: var(--ed-field) center top / 520px auto repeat; mask: var(--ed-field) center top / 520px auto repeat;
+}
+.rx-hero.is-cover::before {
+  content: ''; position: absolute; z-index: -1; inset: 0;
+  background: radial-gradient(closest-side, var(--ed-band) 70%, color-mix(in srgb, var(--ed-band) 0%, transparent) 100%) center / 86% 96% no-repeat;
+}
+.rx-hero.is-cover :is(.rx-hero-title, .rx-hero-kicker, .rx-hero-epigraph, .rx-hero-panel-caption, .rx-hero-stats b, .rx-hero-stats span) { color: var(--ed-band-text); }
+.rx-hero.is-cover :is(.rx-hero-kicker, .rx-hero-epigraph, .rx-hero-stats span, .rx-hero-panel-caption) { color: var(--ed-band-soft); }
+.rx-hero.is-cover .rx-hero-title { text-transform: uppercase; font-weight: 400; font-style: normal; letter-spacing: .08em; line-height: 1.02; }
+.rx-hero.is-cover .rx-hero-kicker { letter-spacing: .26em; }
+.rx-hero.is-cover .rx-hero-panel { background: color-mix(in srgb, var(--ed-surface) 88%, transparent); color: var(--ed-ink); border-color: var(--ed-line); backdrop-filter: blur(2px); }
+.rx-hero.is-cover .rx-hero-panel :is(b, span, p) { color: var(--ed-ink); }
+.rx-hero.is-cover .rx-hero-panel :is(span, .rx-hero-panel-caption) { color: var(--ed-soft); }
+.rx-hero.is-cover .rx-hero-link { background: color-mix(in srgb, var(--ed-surface) 90%, transparent); color: var(--ed-ink); border-color: var(--ed-line-strong); }
+.rx-hero.is-cover .rx-hero-cover img { box-shadow: 0 24px 40px -18px rgba(0, 0, 0, .55); }
+.rx-hero.is-cover .rx-hero-start { box-shadow: 0 18px 36px -20px rgba(0, 0, 0, .55); }
+.rx-activity-preview { position: relative; }
+.rx-activity-motif { position: absolute; right: 12px; bottom: 10px; width: 34px; height: 34px; color: var(--ed-accent-text, var(--rx-accent)); opacity: .85; transition: transform .25s var(--rx-ease, ease); }
+.rx-activity:hover .rx-activity-motif { transform: rotate(-8deg) scale(1.12); }
+
+/* the activity's name, lettered on the cover */
+html[data-edition] main.has-band .rx-head h1 { font-size: clamp(22px, 2.6vw, 30px); }
+@media (max-width: 720px) {
+  html[data-edition] main.has-band .rx-bar-mount + .rx-head {
+    position: static; width: auto; height: auto; overflow: visible; clip: auto; clip-path: none; white-space: normal; margin: 16px 0 2px; text-align: center;
+  }
+  html[data-edition] main.has-band .rx-bar-mount + .rx-head > :not(h1) { display: none; }
+  html[data-edition] main.has-band .rx-bar-mount + .rx-head h1 { margin: 0; font-size: 19px; line-height: 1.2; letter-spacing: .2em; }
+  html[data-edition] main.has-band .rx-bar-mount ~ :is(.rv-quiz, .rv-tool) { margin-top: 6px; }
+}
+@media (max-width: 560px) {
+  .rx-band-art { -webkit-mask-size: 330px auto; mask-size: 330px auto; }
+  html[data-edition] .rx-card { border-radius: 20px; padding: 24px 16px 18px; margin: 0 -4px; }
+  html[data-ed-layout="page"] .rx-card { border-radius: 6px; }
+  html[data-ed-layout="framed"] .rx-card { border-radius: 4px; outline-offset: -7px; }
+  .rx-card-motif { width: 30px; height: 30px; margin-top: -6px; }
+  .rx-track.is-motifs li .rx-motif { width: 19px; height: 19px; }
+  .rx-results-hero.is-cover .rx-results-score b { font-size: 112px; }
+  .rx-hero.is-cover .rx-hero-art { -webkit-mask-size: 380px auto; mask-size: 380px auto; }
+  html:not([data-ed-layout="centred"]) .rx-hero.is-cover .rx-hero-inner { grid-template-columns: 76px minmax(0, 1fr); align-items: end; }
+  html:not([data-ed-layout="centred"]) .rx-hero.is-cover .rx-hero-inner > .rx-hero-cover { grid-row: auto; width: 76px; }
+  html:not([data-ed-layout="centred"]) .rx-hero.is-cover .rx-hero-words > :is(.rx-hero-title, .rx-hero-epigraph) { grid-column: 1 / -1; }
+  html:not([data-ed-layout="centred"]) .rx-hero.is-cover .rx-hero-words > .rx-hero-kicker { align-self: end; padding-bottom: 6px; }
+  .rx-hero.is-cover .rx-hero-title { font-size: clamp(26px, 8.4vw, 40px); letter-spacing: .06em; overflow-wrap: normal; word-break: keep-all; hyphens: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rx-track.is-motifs li .rx-motif, .rx-card-motif, ol.rx-results-marks.is-motifs li .rx-motif, .rx-results-hero.is-cover .rx-star, html[data-edition] .rx-option { animation: none !important; transition: none !important; }
+}

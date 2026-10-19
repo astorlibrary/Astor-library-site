@@ -21,6 +21,7 @@ import { el, clear, shuffle, announce, prefersReducedMotion, seededRandom, hashS
 import { isRemembering, reviewCard, snapshot, today, toggleCommonplace, inCommonplace, recentlyViewed } from './store.mjs';
 import { completion, celebrate } from './quiz-round.mjs';
 import {
+  motif, hasMotifs,
   loadShelf, loadBook, setAccent, keepAddress, preferredSlug, studyBar,
   bookLines, lineSummary, lineState, STATE_WORDS, cardId, shortTitle, activityHref, quoted
 } from './revise-kit.mjs';
@@ -195,7 +196,10 @@ function sitting(book, meta, mode, only = null) {
     page.append(modeSwitch());
 
     const track = el('ol', { class: 'rx-track', 'aria-hidden': 'true' });
-    queue.forEach((_, index) => track.append(el('li', { class: index < position ? (results[index] ? 'is-right' : 'is-wrong') : index === position ? 'is-now' : '' })));
+    // With many cards the book's drawings would crowd the row: plain ticks then.
+    const drawn = hasMotifs() && queue.length <= 12;
+    track.classList.toggle('is-motifs', drawn);
+    queue.forEach((_, index) => track.append(el('li', { class: index < position ? (results[index] ? 'is-right' : 'is-wrong') : index === position ? 'is-now' : '' }, drawn ? [motif(index)] : [])));
     page.append(el('div', { class: 'rx-progress' }, [
       el('p', { class: 'rx-progress-count' }, [el('span', { class: 'rx-visually-hidden', text: 'Card ' }), el('b', { text: String(position + 1) }), el('span', { text: ' of ' + queue.length })]),
       track,
@@ -206,6 +210,7 @@ function sitting(book, meta, mode, only = null) {
     // The card: a front and a back on one sheet, turned in three dimensions.
     const front = el('div', { class: 'rx-flip-face is-front', 'aria-hidden': String(turned) });
     const back = el('div', { class: 'rx-flip-face is-back', 'aria-hidden': String(!turned) });
+    if (hasMotifs()) { front.append(motif(position, 'rx-card-motif')); back.append(motif(position + 3, 'rx-card-motif')); }
     const badge = el('p', { class: 'rx-flip-state is-' + state }, [el('i', { 'aria-hidden': 'true' }), state === 'new' ? 'A new line' : STATE_WORDS[state].replace(/^./, c => c.toUpperCase())]);
 
     if (mode === 'recall') {
