@@ -145,3 +145,20 @@ test('every book carries its cover drawings and can letter its band legibly', ()
     }
   }
 });
+
+test('the completion screen says something true about the round', async () => {
+  const { resultWords } = await import('../assets/astor/quiz-round.mjs');
+  assert.equal(resultWords({ score: 10, total: 10 }).title, 'Flawless.');
+  assert.equal(resultWords({ score: 9, total: 10 }).title, 'One away from perfect.');
+  assert.equal(resultWords({ score: 1, total: 10 }).title, 'A tough round.');
+  assert.equal(resultWords({ score: 0, total: 10 }).title, 'None this time.');
+  assert.match(resultWords({ score: 2, total: 10 }).sub, /lines to learn next/);
+  const better = resultWords({ score: 7, total: 10, before: { best: 5, total: 10, last: 5, lastTotal: 10 } });
+  assert.ok(better.best, 'beating the best is a new best');
+  assert.match(better.sub, /new best, up from 5/);
+  const upOnLast = resultWords({ score: 6, total: 10, before: { best: 8, total: 10, last: 3, lastTotal: 10 } });
+  assert.ok(!upOnLast.best);
+  assert.match(upOnLast.sub, /Up from 3 last time/);
+  assert.equal(resultWords({ score: 3, total: 3, practice: true }).title, 'All three put right.');
+  assert.equal(resultWords({ score: 2, total: 5, practice: true }).title, '2 of 5 put right.');
+});

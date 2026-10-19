@@ -3415,12 +3415,6 @@ html[data-ed-layout="centred"] .rx-quote::before, html[data-ed-layout="centred"]
 html[data-ed-layout="centred"] .rx-quote.is-speech { background: transparent; border: 0; padding: 18px 8px 8px; }
 html[data-ed-layout="centred"] .rx-quote blockquote p { font-size: clamp(26px, 3.6vw, 38px); line-height: 1.24; }
 html[data-ed-layout="centred"] .rx-quote::after { content: ''; display: block; position: static; width: 36px; height: 1px; margin: 22px auto 0; background: var(--ed-accent); transform: none; border: 0; }
-html[data-ed-layout="centred"] .rx-options:is(.is-list, .is-tiles, .is-people) { grid-template-columns: minmax(0, 1fr); gap: 10px; }
-html[data-ed-layout="centred"] .rx-options:is(.is-list, .is-tiles, .is-people) .rx-option {
-  grid-template-columns: minmax(0, 1fr) auto; min-height: 54px; padding: 0 22px; border-radius: 999px; border: 1.5px solid var(--ed-line-strong); border-left-width: 1.5px; background: var(--ed-surface);
-}
-html[data-ed-layout="centred"] .rx-options:is(.is-list, .is-tiles, .is-people) :is(.rx-key, .rx-monogram) { display: none; }
-html[data-ed-layout="centred"] .rx-options:is(.is-list, .is-tiles, .is-people) .rx-option-mark { position: static; }
 
 /* layout: page — a printed page: the line set left with a hanging mark, answers ruled */
 html[data-ed-layout="page"] .rx-card > .rx-quote { padding-left: clamp(26px, 4vw, 40px); margin-top: 8px; }
@@ -3428,17 +3422,6 @@ html[data-ed-layout="page"] .rx-quote.is-speech { background: transparent; borde
 html[data-ed-layout="page"] .rx-quote.is-speech::after { display: none; }
 html[data-ed-layout="page"] .rx-quote.is-speech::before { display: block; }
 html[data-ed-layout="page"] .rx-quote::before { color: var(--ed-accent); }
-html[data-ed-layout="page"] .rx-options:is(.is-list, .is-tiles, .is-people) { grid-template-columns: minmax(0, 1fr); gap: 0; border-top: 1px solid var(--ed-line-strong); }
-html[data-ed-layout="page"] .rx-options:is(.is-list, .is-tiles, .is-people) .rx-option {
-  min-height: 56px; padding: 10px 4px; border: 0; border-bottom: 1px solid var(--ed-line-strong); border-radius: 0; background: transparent; box-shadow: none; transform: none;
-}
-html[data-ed-layout="page"] .rx-options:is(.is-list, .is-tiles, .is-people) .rx-option:hover:not(:disabled) { background: color-mix(in srgb, var(--ed-accent) 6%, transparent); box-shadow: none; transform: none; }
-html[data-ed-layout="page"] .rx-options:is(.is-list, .is-tiles, .is-people) .rx-option.is-right { background: color-mix(in srgb, var(--ed-right) 10%, transparent); }
-html[data-ed-layout="page"] .rx-options:is(.is-list, .is-tiles, .is-people) .rx-option.is-wrong { background: color-mix(in srgb, var(--ed-wrong) 9%, transparent); }
-html[data-ed-layout="page"] .rx-options:is(.is-list, .is-tiles, .is-people) .rx-option.is-wrong .rx-option-text { text-decoration: line-through; text-decoration-color: var(--ed-wrong); }
-html[data-ed-layout="page"] .rx-options .rx-key { background: transparent; border: 0; width: 18px; }
-html[data-ed-layout="page"] .rx-options:is(.is-tiles) .rx-option { border-left: 0; }
-html[data-ed-layout="page"] .rx-options .rx-option-mark { position: static !important; }
 
 /* layout: framed — the line in a framed panel with a rule above, answers as tiles */
 html[data-ed-layout="framed"] .rx-card > :is(.rx-quote, .rx-event) {
@@ -3451,9 +3434,6 @@ html[data-ed-layout="framed"] .rx-card > :is(.rx-quote, .rx-event)::before {
 html[data-ed-layout="framed"] .rx-quote.is-speech { border-radius: 2px; }
 html[data-ed-layout="framed"] .rx-quote.is-speech::after { display: none; }
 html[data-ed-layout="framed"] .rx-quote blockquote p { font-size: clamp(22px, 3vw, 30px); }
-html[data-ed-layout="framed"] .rx-options:is(.is-list, .is-tiles, .is-people) .rx-option { border-radius: 4px; background: var(--ed-surface); border-color: var(--ed-line-strong); border-left-width: 1.5px; }
-html[data-ed-layout="framed"] .rx-options.is-tiles .rx-option:not(.is-right):not(.is-wrong) { border-left-color: var(--ed-line-strong); }
-html[data-ed-layout="framed"] .rx-options.is-tiles .rx-option:not(.is-right):not(.is-wrong) .rx-key { background: var(--ed-sunk); color: var(--ed-soft); border-color: var(--ed-line); }
 html[data-ed-layout="framed"] .rx-dossier { transform: none; box-shadow: none; }
 
 /* every edition: the answer arrives as a sheet at the foot of the screen */
@@ -3574,10 +3554,7 @@ html[data-edition] .rx-change { color: var(--ed-ink); border-color: var(--ed-lin
 html[data-edition] .rx-score { background: color-mix(in srgb, var(--ed-star) 16%, var(--ed-surface)); border-color: color-mix(in srgb, var(--ed-star) 45%, transparent); }
 html[data-edition] .rx-score-star svg { fill: var(--ed-star); }
 html[data-edition] .rx-shelf { background: var(--ed-surface); color: var(--ed-ink); }
-html[data-ed-layout="page"] .rx-options.is-people .rx-option { grid-template-columns: auto auto minmax(0, 1fr) auto; }
 @media (max-width: 560px) {
-  html[data-ed-layout="page"] .rx-options.is-people .rx-option { grid-template-columns: auto minmax(0, 1fr) auto; }
-  html[data-ed-layout="page"] .rx-options.is-tiles .rx-option, html[data-ed-layout="page"] .rx-options.is-list .rx-option { grid-template-columns: minmax(0, 1fr) auto; }
 }
 .rx-story-slot:not(.is-filled):not(.is-next) { display: none; }
 .rx-story-more { padding: 10px 0 8px; border-top: 1px dashed var(--rx-line-strong); font: italic 14px/1.3 Georgia, 'Times New Roman', serif; color: var(--rx-muted); }
@@ -3682,9 +3659,6 @@ html[data-ed-layout="centred"] .rx-card .rx-stem, html[data-ed-layout="framed"] 
 /* answers lift when touched and land with weight */
 html[data-edition] .rx-option { position: relative; overflow: visible; transition: transform .16s var(--rx-ease, ease), box-shadow .16s ease, background-color .16s ease, border-color .16s ease; }
 html[data-edition] .rx-option:active:not(:disabled) { transform: scale(.98); }
-html[data-ed-layout="centred"] .rx-options .rx-option:hover:not(:disabled), html[data-ed-layout="framed"] .rx-options .rx-option:hover:not(:disabled) {
-  transform: translateY(-2px); border-color: var(--ed-accent-text); box-shadow: 0 10px 20px -14px rgba(0, 0, 0, .5);
-}
 html[data-edition] .rx-option.is-right { animation: rx-land .5s var(--rx-ease, ease); }
 @keyframes rx-land { 0% { transform: scale(1); } 40% { transform: scale(1.035); } 100% { transform: scale(1); } }
 
@@ -3794,3 +3768,315 @@ html[data-edition] main.has-band .rx-head h1 { font-size: clamp(22px, 2.6vw, 30p
 @media (prefers-reduced-motion: reduce) {
   .rx-track.is-motifs li .rx-motif, .rx-card-motif, ol.rx-results-marks.is-motifs li .rx-motif, .rx-results-hero.is-cover .rx-star, html[data-edition] .rx-option { animation: none !important; transition: none !important; }
 }
+
+/* =============================================================================
+   rx: one design, every edition
+   The same parts in the same places for every book: a card, a line of what is
+   asked, the prompt, the answers as tiles, and the verdict in the card. Each
+   edition varies only colour, type, texture, its frame and two radii.
+   ============================================================================= */
+
+html[data-edition] { --rx-r-card: 22px; --rx-r-tile: 14px; }
+html[data-ed-layout="centred"] { --rx-r-card: 26px; --rx-r-tile: 16px; }
+html[data-ed-layout="page"] { --rx-r-card: 10px; --rx-r-tile: 10px; }
+html[data-ed-layout="framed"] { --rx-r-card: 6px; --rx-r-tile: 6px; }
+
+/* --- the top of the page: the book, the activities, the name, the score -------- */
+
+html[data-edition] .rx-bar { border-radius: var(--rx-r-tile); }
+html[data-edition] .rx-bar-title { font-size: 19px; }
+/* the activity row fades at whichever end has more, so nothing hides under the arrows */
+html[data-edition] .rx-acts-row .rx-acts { -webkit-mask-image: none; mask-image: none; }
+html[data-edition] .rx-acts-row.has-more .rx-acts { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 72px), transparent calc(100% - 6px)); mask-image: linear-gradient(90deg, #000 calc(100% - 72px), transparent calc(100% - 6px)); }
+html[data-edition] .rx-acts-row.has-back .rx-acts { -webkit-mask-image: linear-gradient(90deg, transparent 6px, #000 72px); mask-image: linear-gradient(90deg, transparent 6px, #000 72px); }
+html[data-edition] .rx-acts-row.has-back.has-more .rx-acts {
+  -webkit-mask-image: linear-gradient(90deg, transparent 6px, #000 72px, #000 calc(100% - 72px), transparent calc(100% - 6px));
+  mask-image: linear-gradient(90deg, transparent 6px, #000 72px, #000 calc(100% - 72px), transparent calc(100% - 6px));
+}
+html[data-edition] .rx-acts ul { padding: 4px 48px 6px 2px; gap: 8px; }
+html[data-edition] .rx-act { min-height: 40px; padding: 0 15px; border-radius: 999px; font-weight: 600; white-space: nowrap; }
+html[data-edition] .rx-act.is-here { font-weight: 700; box-shadow: 0 6px 16px -10px rgba(0, 0, 0, .55); }
+html[data-edition] .rx-acts-arrow { width: 36px; height: 36px; margin-top: -17px; }
+@media (max-width: 720px), (pointer: coarse) {
+  html[data-edition] .rx-acts-arrow { display: none !important; }
+}
+
+/* --- the card ---------------------------------------------------------------- */
+
+html[data-edition] .rx-card { border-radius: var(--rx-r-card); padding: 22px clamp(16px, 4vw, 36px) 18px; }
+html[data-edition] .rx-card-head { margin-bottom: 16px; }
+.rx-stem-row { display: flex; align-items: center; gap: 10px; min-width: 0; }
+html[data-ed-layout="centred"] .rx-stem-row, html[data-ed-layout="framed"] .rx-stem-row { justify-content: center; width: 100%; }
+html[data-edition] .rx-stem-row .rx-card-motif { flex: none; width: 26px; height: 26px; margin: 0; }
+html[data-edition] .rx-card .rx-stem { width: auto; font: 700 11.5px/1.35 var(--astor-sans); letter-spacing: .16em; color: var(--ed-soft); }
+html[data-edition] .rx-card.is-correct .rx-stem-row .rx-card-motif { animation: rx-won .6s var(--rx-ease, ease) both; }
+
+/* the prompt: one size and measure everywhere; only alignment and frame vary */
+html[data-edition] .rx-card > :is(.rx-quote, .rx-event) { margin: 0 0 20px; }
+html[data-edition] .rx-quote blockquote p { font-size: clamp(21px, 2.6vw, 27px); line-height: 1.38; max-width: 34em; }
+html[data-ed-layout="centred"] .rx-quote blockquote p { font-size: clamp(22px, 2.9vw, 30px); line-height: 1.3; margin-left: auto; margin-right: auto; }
+html[data-ed-layout="framed"] .rx-card > :is(.rx-quote, .rx-event) { border: 0; outline: 0; background: transparent; padding: 6px 4px 4px; }
+html[data-ed-layout="framed"] .rx-card > :is(.rx-quote, .rx-event)::before { display: none; }
+html[data-ed-layout="framed"] .rx-quote blockquote p { font-size: clamp(21px, 2.7vw, 28px); margin-left: auto; margin-right: auto; }
+html[data-ed-layout="framed"] .rx-quote::after { content: ''; display: block; width: 8px; height: 8px; margin: 18px auto 0; transform: rotate(45deg); background: var(--ed-accent); }
+
+/* the character file, in the book's own colours */
+html[data-edition] .rx-card > .rx-dossier {
+  margin: 0 0 20px; padding: 16px 18px 18px; transform: none; border: 1px solid var(--ed-line-strong); border-radius: var(--rx-r-tile);
+  background: var(--ed-sunk); box-shadow: none;
+}
+html[data-edition] .rx-dossier::before, html[data-edition] .rx-dossier::after { display: none; }
+html[data-edition] .rx-dossier-label { transform: none; margin-bottom: 10px; padding: 0; border: 0; color: var(--ed-accent-text); font-size: 10.5px; }
+html[data-edition] .rx-dossier > p:last-child { font-size: clamp(18px, 2.2vw, 22px); line-height: 1.5; color: var(--ed-ink); }
+html[data-edition] .rx-redact { border-radius: 3px; }
+
+/* --- the answers: one tile for every book ------------------------------------------ */
+
+html[data-edition] .rx-card .rx-options:not(.is-years):not(.is-covers) { grid-template-columns: minmax(0, 1fr); gap: 10px; border: 0; }
+html[data-edition] .rx-card .rx-options:not(.is-years):not(.is-covers) .rx-option {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px;
+  min-height: 56px; padding: 11px 14px 11px 18px; border: 1.5px solid var(--ed-line-strong); border-radius: var(--rx-r-tile);
+  background: color-mix(in srgb, var(--ed-ink) 2.5%, var(--ed-surface)); box-shadow: 0 1px 0 var(--ed-line);
+  color: var(--ed-ink); font: 400 17.5px/1.3 Georgia, 'Times New Roman', serif; text-align: left; opacity: 1; transform: none;
+}
+html[data-edition] .rx-card .rx-options.is-people:not(.is-years):not(.is-covers) .rx-option { grid-template-columns: auto minmax(0, 1fr) auto; padding-left: 12px; }
+html[data-edition] .rx-card .rx-options:not(.is-years):not(.is-covers) .rx-key { display: none; }
+html[data-edition] .rx-card .rx-options .rx-monogram { width: 36px; height: 36px; font-size: 12px; }
+html[data-edition] .rx-card .rx-options .rx-option-mark { position: static; width: 28px; height: 28px; }
+@media (hover: hover) {
+  html[data-edition] .rx-card .rx-options:not(.is-years):not(.is-covers) .rx-option:hover:not(:disabled) {
+    border-color: var(--ed-accent-text); background: color-mix(in srgb, var(--ed-accent) 6%, var(--ed-surface)); transform: translateY(-1px); box-shadow: 0 8px 18px -14px rgba(0, 0, 0, .55);
+  }
+}
+html[data-edition] .rx-card .rx-options:not(.is-years):not(.is-covers) .rx-option:active:not(:disabled) { transform: scale(.985); }
+html[data-edition] .rx-card .rx-options:not(.is-years):not(.is-covers) .rx-option.is-right {
+  border-color: var(--ed-right); background: color-mix(in srgb, var(--ed-right) 13%, var(--ed-surface));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ed-right) 18%, transparent);
+}
+html[data-edition] .rx-card .rx-options:not(.is-years):not(.is-covers) .rx-option.is-wrong {
+  border-color: var(--ed-wrong); background: color-mix(in srgb, var(--ed-wrong) 10%, var(--ed-surface)); box-shadow: none;
+}
+html[data-edition] .rx-card .rx-options .rx-option.is-wrong .rx-option-text { text-decoration: line-through; text-decoration-thickness: 1px; text-decoration-color: color-mix(in srgb, var(--ed-wrong) 70%, transparent); }
+html[data-edition] .rx-card .rx-options .rx-option.is-other { opacity: .5; }
+html[data-edition] .rx-card .rx-options .rx-option-gloss { color: var(--ed-soft); font-size: 13px; }
+html[data-edition] .rx-card .rx-options .rx-option.is-right .rx-option-mark { background: var(--ed-right); color: var(--ed-on-fill); }
+html[data-edition] .rx-card .rx-options .rx-option.is-wrong .rx-option-mark { background: var(--ed-wrong); color: var(--ed-on-fill); }
+
+/* the hints and skip: quiet, at the foot of the card */
+html[data-edition] .rx-actions { margin-top: 16px; padding-top: 4px; }
+html[data-edition] .rx-actions .rx-button.is-quiet { min-height: 44px; color: var(--ed-soft); }
+html[data-edition] .rx-actions .rx-button.is-quiet:hover { color: var(--ed-ink); }
+html[data-edition] .rx-actions .rx-button.is-primary { border-radius: var(--rx-r-tile); }
+
+/* --- fill the line: the words to place ---------------------------------------------- */
+
+html[data-edition] .rx-bank { gap: 8px; }
+html[data-edition] .rx-word {
+  min-height: 46px; padding: 0 16px; border: 1.5px solid var(--ed-line-strong); border-radius: var(--rx-r-tile);
+  background: var(--ed-surface); box-shadow: 0 1px 0 var(--ed-line); color: var(--ed-ink); font: 400 17px/1 Georgia, 'Times New Roman', serif;
+}
+@media (hover: hover) { html[data-edition] .rx-word:hover:not(:disabled) { transform: translateY(-1px); border-color: var(--ed-accent-text); box-shadow: 0 6px 14px -10px rgba(0, 0, 0, .5); } }
+html[data-edition] .rx-word:active:not(:disabled) { transform: scale(.97); box-shadow: none; }
+html[data-edition] .rx-word:disabled { opacity: .28; }
+html[data-edition] .rx-card .rx-cloze-line, html[data-edition] .rx-card > .rx-quote.is-cloze { border-radius: var(--rx-r-tile); }
+
+/* --- the verdict: in the card, tinted, never over the answers -------------------- */
+
+html[data-edition] .rx-card > .rx-feedback {
+  position: static; margin: 18px 0 0; padding: 14px 14px 12px 16px; border: 1.5px solid var(--ed-line-strong); border-radius: var(--rx-r-tile); box-shadow: none;
+  background: var(--ed-surface); scroll-margin-bottom: 16px;
+}
+html[data-edition] .rx-card > .rx-feedback.is-right { border-color: color-mix(in srgb, var(--ed-right) 55%, transparent); background: color-mix(in srgb, var(--ed-right) 11%, var(--ed-surface)); }
+html[data-edition] .rx-card > .rx-feedback.is-wrong { border-color: color-mix(in srgb, var(--ed-wrong) 50%, transparent); background: color-mix(in srgb, var(--ed-wrong) 9%, var(--ed-surface)); }
+html[data-edition] .rx-card > .rx-feedback.is-shown { border-color: color-mix(in srgb, var(--ed-star) 55%, transparent); background: color-mix(in srgb, var(--ed-star) 12%, var(--ed-surface)); }
+html[data-edition][data-ed-mode="dark"] .rx-card > .rx-feedback { box-shadow: none; }
+html[data-edition] .rx-feedback .rx-verdict-mark { width: 38px; height: 38px; color: var(--ed-on-fill); }
+html[data-edition] .rx-feedback.is-right .rx-verdict-mark { background: var(--ed-right); }
+html[data-edition] .rx-feedback.is-wrong .rx-verdict-mark { background: var(--ed-wrong); }
+html[data-edition] .rx-feedback.is-shown .rx-verdict-mark { background: var(--ed-star); }
+html[data-edition] .rx-feedback .rx-verdict-word { font: 400 21px/1.15 Georgia, 'Times New Roman', serif; }
+html[data-edition] .rx-feedback.is-right .rx-verdict-word { color: var(--ed-right); }
+html[data-edition] .rx-feedback.is-wrong .rx-verdict-word { color: var(--ed-wrong); }
+html[data-edition] .rx-feedback .rx-verdict-line { color: var(--ed-ink); font-size: 14.5px; }
+html[data-edition] .rx-feedback .rx-verdict-line b { font-weight: 700; }
+html[data-edition] .rx-feedback .rx-button.is-onward { min-height: 48px; padding: 0 20px; border-radius: var(--rx-r-tile); }
+html[data-edition] .rx-feedback .rx-more { margin-top: 8px; border-top: 1px solid var(--ed-line); }
+html[data-edition] .rx-feedback .rx-more > summary { min-height: 40px; display: flex; align-items: center; color: var(--ed-accent-text); }
+
+/* --- phones: the activity within reach of the top ------------------------------- */
+
+@media (max-width: 560px) {
+  html[data-edition] main.page-wrap:has(.rx-bar-mount) { padding-top: 8px; }
+  html[data-edition] .rx-bar { gap: 8px; padding: 6px 6px 6px 8px; }
+  html[data-edition] .rx-bar-cover, html[data-edition] .rx-bar-cover img { width: 28px; }
+  html[data-edition] .rx-bar-title { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; white-space: normal; font-size: 16px; line-height: 1.15; }
+  html[data-edition] .rx-mode-toggle { width: 38px; height: 38px; }
+  html[data-edition] .rx-change { width: auto; min-height: 38px; padding: 0 11px; gap: 6px; font-size: 12.5px; }
+  html[data-edition] .rx-change > span:last-child { position: static; width: auto; height: auto; overflow: visible; clip: auto; clip-path: none; }
+  html[data-edition] .rx-acts { margin-top: 8px; }
+  html[data-edition] .rx-act { min-height: 38px; padding: 0 13px; font-size: 13px; }
+  html[data-edition] main.has-band .rx-bar-mount + .rx-head { margin: 10px 0 0; }
+  html[data-edition] main.has-band .rx-bar-mount + .rx-head h1 { font-size: 17px; }
+  html[data-edition] .rx-progress { margin: 4px 0 8px; }
+  html[data-edition] .rx-card { padding: 18px 14px 14px; margin: 0; }
+  html[data-edition] .rx-card-head { margin-bottom: 12px; }
+  html[data-edition] .rx-quote blockquote p { font-size: 20.5px; }
+  html[data-ed-layout="centred"] .rx-quote blockquote p { font-size: 22px; }
+  html[data-edition] .rx-card > :is(.rx-quote, .rx-event, .rx-dossier) { margin-bottom: 16px; }
+  html[data-edition] .rx-card .rx-options:not(.is-years):not(.is-covers) .rx-option { min-height: 54px; padding: 10px 12px 10px 16px; font-size: 17px; }
+  html[data-edition] .rx-card .rx-options.is-people:not(.is-years):not(.is-covers) .rx-option { padding-left: 10px; }
+  html[data-edition] .rx-card > .rx-feedback { margin-top: 14px; padding: 12px 12px 10px 12px; }
+  html[data-edition] .rx-feedback .rx-verdict { gap: 10px; }
+  html[data-edition] .rx-feedback .rx-verdict-mark { width: 34px; height: 34px; }
+  html[data-edition] .rx-feedback .rx-verdict-word { font-size: 19px; }
+  html[data-edition] .rx-feedback .rx-button.is-onward { padding: 0 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-edition] .rx-card .rx-options .rx-option, html[data-edition] .rx-word { transition: none; }
+}
+
+/* --- results: a new best, and a second go at the misses ---------------------------- */
+
+.rx-results-badge {
+  position: relative; overflow: hidden; display: inline-flex; align-items: center; gap: 6px; margin: 18px 0 -6px; padding: 5px 12px;
+  border: 1px solid var(--ed-star, var(--rx-gold)); border-radius: 999px; font: 800 11px/1 var(--astor-sans); letter-spacing: .18em; text-transform: uppercase;
+  color: var(--ed-band-text, var(--rx-ink)); background: color-mix(in srgb, var(--ed-star, var(--rx-gold)) 22%, transparent);
+  animation: rx-star-in .6s var(--rx-ease, ease) .9s backwards;
+}
+.rx-results-badge::before { content: '★'; color: var(--ed-star, var(--rx-gold)); font-size: 12px; letter-spacing: 0; }
+.rx-results-badge::after {
+  content: ''; position: absolute; inset: 0; transform: translateX(-120%);
+  background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, .45) 50%, transparent 70%); animation: rx-shine 1.2s ease 1.5s 1 forwards;
+}
+@keyframes rx-shine { to { transform: translateX(120%); } }
+html[data-edition] .rx-results-hero:not(:has(.rx-stars)) .rx-results-what { margin-bottom: 22px; }
+html[data-edition] .rx-results-actions .rx-button.is-primary.is-wide { border-radius: 999px; font-size: 16px; }
+html[data-edition] .rx-results-sub { max-width: 36ch; line-height: 1.5; }
+@media (prefers-reduced-motion: reduce) { .rx-results-badge, .rx-results-badge::after { animation: none; } }
+/* the words sit on a panel of the cover's ground, so the drawings never cross them */
+.rx-results-words { display: flex; flex-direction: column; align-items: center; }
+.rx-results-hero.is-cover .rx-results-words {
+  margin-top: 14px; padding: 4px 18px 14px; max-width: 100%; border-radius: 14px;
+  background: color-mix(in srgb, var(--ed-band) 90%, transparent); box-shadow: 0 0 24px 18px color-mix(in srgb, var(--ed-band) 88%, transparent);
+}
+.rx-results-hero.is-cover .rx-results-words .rx-results-title { margin-top: 12px; }
+.rx-results-hero.is-cover .rx-results-words .rx-results-badge { margin: 10px 0 0; }
+.rx-results-hero.is-cover .rx-results-score { position: relative; }
+.rx-results-hero.is-cover .rx-results-score::before {
+  content: ''; position: absolute; z-index: -1; inset: -10px -30px; border-radius: 50%;
+  background: radial-gradient(closest-side, var(--ed-band) 60%, color-mix(in srgb, var(--ed-band) 0%, transparent));
+}
+html[data-edition] .rx-card-kind.is-practice { width: 100%; justify-content: center; margin: -4px 0 4px; color: var(--ed-accent-text); background: none; border: 0; font: 700 11px/1.3 var(--astor-sans); letter-spacing: .14em; text-transform: uppercase; }
+html[data-ed-layout="page"] .rx-card-kind.is-practice { justify-content: flex-start; }
+
+/* --- order the plot: the story so far, and the events to place ------------------- */
+
+.rx-story-box { border-radius: var(--rx-r-tile, 14px); background: var(--ed-sunk, var(--rx-sunk)); border: 1px solid var(--ed-line, var(--rx-line)); padding: 12px 16px 6px; }
+.rx-story-head { display: flex; align-items: center; gap: 12px; padding-bottom: 8px; }
+.rx-story-title { font: 700 11px/1.2 var(--astor-sans); letter-spacing: .16em; text-transform: uppercase; color: var(--ed-soft, var(--rx-muted)); }
+.rx-story-dots { display: flex; flex: 1; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.rx-story-dots li { flex: 1; max-width: 26px; height: 4px; border-radius: 2px; background: var(--ed-line-strong, var(--rx-line-strong)); transition: background-color .25s ease; }
+.rx-story-dots li.is-on { background: var(--ed-accent-text, var(--rx-accent)); }
+.rx-story-tally { font: 600 12px/1 var(--astor-sans); color: var(--ed-soft, var(--rx-muted)); white-space: nowrap; }
+html[data-edition] .rx-story-box .rx-story { padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; outline: 0; }
+.rx-story-box .rx-story-slot:not(.is-filled) { display: none; }
+.rx-story-box .rx-story-slot { border-top: 1px solid var(--ed-line, var(--rx-line)); }
+.rx-story-empty { padding: 10px 0 12px; border-top: 1px solid var(--ed-line, var(--rx-line)); font: italic 15px/1.3 Georgia, 'Times New Roman', serif; color: var(--ed-soft, var(--rx-muted)); }
+.rx-story-empty[hidden] { display: none; }
+html[data-edition] .rx-story-prompt { margin: 4px 0 0; font-size: 21px; color: var(--ed-ink); }
+html[data-edition] .rx-story-card {
+  border-radius: var(--rx-r-tile); background: color-mix(in srgb, var(--ed-ink) 2.5%, var(--ed-surface)); box-shadow: inset 0 0 0 1.5px var(--ed-line-strong); color: var(--ed-ink); padding: 13px 16px;
+}
+@media (hover: hover) { html[data-edition] .rx-story-card:hover { box-shadow: inset 0 0 0 1.5px var(--ed-accent-text); background: color-mix(in srgb, var(--ed-accent) 6%, var(--ed-surface)); } }
+html[data-edition] .rx-story-card:active { transform: scale(.985); }
+html[data-edition] .rx-story-card.is-slip { box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--ed-wrong) 65%, transparent); background: color-mix(in srgb, var(--ed-wrong) 6%, var(--ed-surface)); }
+html[data-edition] .rx-story-card-note { color: var(--ed-wrong); }
+html[data-edition] .rx-story-number { color: var(--ed-accent-text); font-size: 14px; }
+html[data-edition] .rx-story-text { color: var(--ed-ink); }
+
+/* --- flashcards: the same card as the questions, turned ------------------------------ */
+
+html[data-edition] .rx-modes { border-radius: var(--rx-r-tile); background: color-mix(in srgb, var(--ed-surface) 82%, transparent); box-shadow: 0 6px 18px -14px rgba(0, 0, 0, .5); backdrop-filter: blur(3px); }
+html[data-edition] .rx-mode { border-radius: calc(var(--rx-r-tile) - 4px); text-align: center; justify-items: center; }
+html[data-edition] .rx-mode b { color: var(--ed-soft); font-size: 17px; }
+html[data-edition] .rx-mode[aria-checked="true"] { background: var(--ed-surface); box-shadow: 0 0 0 1.5px var(--ed-accent-text); }
+html[data-edition] .rx-mode[aria-checked="true"] b { color: var(--ed-ink); }
+html[data-edition] .rx-flip-inner { border-radius: var(--rx-r-card); min-height: 300px; }
+html[data-edition] .rx-flip-face, html[data-edition] .rx-flip-face.is-front, html[data-edition] .rx-flip-face.is-back {
+  border-radius: var(--rx-r-card); border: 0; background: var(--ed-surface); padding: clamp(22px, 5vw, 44px);
+  box-shadow: 0 1px 0 var(--ed-line), 0 30px 60px -30px rgba(20, 14, 8, .45), 0 10px 20px -16px rgba(20, 14, 8, .3);
+}
+html[data-edition][data-ed-mode="dark"] .rx-flip-face { box-shadow: 0 0 0 1px var(--ed-line), 0 30px 70px -28px rgba(0, 0, 0, .8); }
+html[data-ed-layout="framed"] .rx-flip-face { outline: 1px solid var(--ed-line-strong); outline-offset: -9px; }
+html[data-edition] .rx-flip-face.is-back { background: color-mix(in srgb, var(--ed-accent) 4%, var(--ed-surface)); }
+html[data-edition] .rx-flip-line p { color: var(--ed-ink); }
+html[data-edition] .rx-flip-prompt { color: var(--ed-soft); }
+html[data-edition] .rx-flip.is-leaning-got .rx-flip-face { box-shadow: 0 0 0 3px var(--ed-right), 0 30px 60px -30px rgba(0, 0, 0, .45); }
+html[data-edition] .rx-flip.is-leaning-not .rx-flip-face { box-shadow: 0 0 0 3px var(--ed-wrong), 0 30px 60px -30px rgba(0, 0, 0, .45); }
+html[data-edition] .rx-deck-actions .rx-button.is-primary { border-radius: var(--rx-r-tile); }
+html[data-edition] .rx-rate { border-radius: var(--rx-r-tile); background: var(--ed-surface); }
+html[data-edition] .rx-rate.is-not { border-color: var(--ed-wrong); color: var(--ed-wrong); }
+html[data-edition] .rx-rate.is-got { border-color: var(--ed-right); background: var(--ed-right); color: var(--ed-on-fill); }
+html[data-edition] .rx-rate.is-got span { color: color-mix(in srgb, var(--ed-on-fill) 82%, transparent); }
+html[data-edition] .rx-rate span { color: var(--ed-soft); }
+@media (max-width: 560px) {
+  html[data-edition] .rx-flip-inner { min-height: 270px; }
+  html[data-edition] .rx-flip-face { padding: 22px 18px; }
+  html[data-edition] .rx-mode { padding: 8px 6px; }
+  html[data-edition] .rx-mode span { display: none; }
+  html[data-edition] .rx-deck { gap: 12px; }
+}
+
+/* --- essay planner and debate: the same card, the same tiles ------------------------ */
+
+html[data-edition] :is(.rx-essay-main, .rx-debate-step, .rx-essay-side > *, .rx-case) { border-radius: var(--rx-r-card); }
+html[data-edition] .rx-essay-main {
+  border: 0; border-top: 0; background: var(--ed-surface);
+  box-shadow: 0 1px 0 var(--ed-line), 0 30px 60px -30px rgba(20, 14, 8, .45), 0 10px 20px -16px rgba(20, 14, 8, .3);
+}
+html[data-edition][data-ed-mode="dark"] .rx-essay-main { box-shadow: 0 0 0 1px var(--ed-line), 0 30px 70px -28px rgba(0, 0, 0, .8); }
+html[data-ed-layout="framed"] .rx-essay-main { outline: 1px solid var(--ed-line-strong); outline-offset: -9px; }
+html[data-edition] .rx-debate-step { background: var(--ed-surface); border-color: var(--ed-line); }
+html[data-edition] :is(.rx-question, .rx-reading-tab, .rx-bench-card, .rx-textarea, .rx-essay-question, .rx-coach) { border-radius: var(--rx-r-tile); }
+html[data-edition] .rx-question { background: color-mix(in srgb, var(--ed-ink) 2.5%, var(--ed-surface)); border-color: var(--ed-line-strong); }
+html[data-edition] .rx-question[aria-checked="true"] { border-color: var(--ed-accent-text); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ed-accent) 16%, transparent); }
+html[data-edition] .rx-essay-question { border-left: 0; background: var(--ed-sunk); box-shadow: inset 3px 0 0 var(--ed-accent-text); }
+html[data-edition] .rx-textarea { background: var(--ed-surface); border-color: var(--ed-line-strong); color: var(--ed-ink); }
+html[data-edition] .rx-textarea::placeholder { color: var(--ed-soft); }
+html[data-edition] .rx-textarea:focus { border-color: var(--ed-accent-text); box-shadow: 0 0 0 4px color-mix(in srgb, var(--ed-accent) 16%, transparent); }
+html[data-edition] main.has-band .rx-step-number { background: var(--ed-surface); }
+html[data-edition] .rx-reading-tab { background: var(--ed-surface); border-color: var(--ed-line-strong); color: var(--ed-ink); }
+html[data-edition] .rx-reading-tab[aria-selected="true"] { border-color: var(--ed-accent-text); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ed-accent) 16%, transparent); }
+html[data-edition] .rx-case { background: var(--ed-sunk); }
+
+/* --- the Revise home: where to begin, and what there is to do ------------------------ */
+
+.rx-hero-start-kicker { font: 800 10.5px/1.2 var(--astor-sans); letter-spacing: .18em; text-transform: uppercase; color: var(--ed-accent-text, var(--rx-accent-ink)); }
+html[data-edition] .rx-hero-start { border-radius: var(--rx-r-tile); background: var(--ed-surface); color: var(--ed-ink); }
+html[data-edition] .rx-hero-start-label small { color: var(--ed-soft); }
+html[data-edition] .rx-hero-start-arrow { background: var(--ed-button); color: var(--ed-button-ink); }
+html[data-edition] .rx-activities { margin-top: 28px; }
+html[data-edition] .rx-activity { border-radius: var(--rx-r-card); border-color: var(--ed-line); background: var(--ed-surface); }
+html[data-edition] .rx-activity-preview { border-bottom-color: var(--ed-line); }
+html[data-edition] .rx-activity-name { color: var(--ed-ink); }
+html[data-edition] .rx-activity-note { color: var(--ed-soft); }
+html[data-edition] .rx-activity-status { color: var(--ed-soft); }
+html[data-edition] .rx-activity-status.is-tried { color: var(--ed-ink); }
+@media (max-width: 600px) {
+  /* on a phone each activity is a row: its emblem on the cover's ground, its name, what it does */
+  html[data-edition] .rx-gallery { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  html[data-edition] .rx-activity { grid-template-columns: 64px minmax(0, 1fr); grid-template-rows: auto; align-items: stretch; border-radius: var(--rx-r-tile); box-shadow: 0 1px 0 var(--ed-line); }
+  html[data-edition] .rx-activity:hover { transform: none; }
+  html[data-edition] .rx-activity-preview { min-height: 0; padding: 0; border-bottom: 0; border-right: 1px solid var(--ed-line); background: var(--ed-band); place-items: center; }
+  html[data-edition] .rx-activity-preview > .rx-pv { display: none; }
+  html[data-edition] .rx-activity-preview > .rx-activity-motif { position: static; width: 34px; height: 34px; color: var(--ed-band-art); opacity: 1; }
+  html[data-edition] .rx-activity-body { gap: 2px; padding: 11px 14px 12px; }
+  html[data-edition] .rx-activity-name { font-size: 18px; gap: 7px; }
+  html[data-edition] .rx-activity-name .rv-drawing { display: none; }
+  html[data-edition] .rx-activity-note { font-size: 13px; line-height: 1.4; }
+  html[data-edition] .rx-activity-status { margin-top: 4px; font-size: 11.5px; }
+  html[data-edition] .rx-group { margin-bottom: 22px; }
+  html[data-edition] .rx-group-head { margin-bottom: 8px; }
+  html[data-edition] .rx-group-head h3 { font-size: 18px; }
+}
+html[data-edition] .rx-results > .rx-results-actions { align-items: center; text-align: center; }

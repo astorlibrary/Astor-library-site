@@ -679,7 +679,7 @@ export function studyBar(head, { books, meta, icons, active, onChoose, allBooks 
   ]);
   const identity = el('div', { class: 'rx-bar-id' }, [
     el('span', { class: 'rx-bar-kicker', text: 'Revising' }),
-    el('a', { class: 'rx-bar-title', href: '/play/?book=' + encodeURIComponent(meta.slug), text: meta.title }),
+    el('a', { class: 'rx-bar-title', href: '/play/?book=' + encodeURIComponent(meta.slug), title: meta.title, text: shortTitle(meta) }),
     el('span', { class: 'rx-bar-author', text: meta.author })
   ]);
   const bar = el('div', { class: 'rx-bar' }, [cover, identity, el('div', { class: 'rx-bar-tools' }, [modeToggle(), changeBookButton({ books, current: meta, onChoose })])]);

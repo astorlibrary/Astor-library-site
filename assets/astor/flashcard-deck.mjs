@@ -336,7 +336,7 @@ function sitting(book, meta, mode, only = null) {
     page.append(completion({
       score: knew, total: reviewed, marks: results,
       kicker: 'Flashcards',
-      title: knew === reviewed ? 'Every card known.' : knew / reviewed >= 0.6 ? 'Nicely done.' : 'Cards turned.',
+      title: knew === reviewed ? 'Every card known.' : knew / reviewed >= 0.7 ? 'Most of these are yours.' : knew / reviewed >= 0.4 ? 'Coming along.' : 'These need another look.',
       sub: (counts.known ? counts.known + ' of the ' + book.quotations.length + ' key lines are known. ' : '') + (left ? left + (left === 1 ? ' line is' : ' lines are') + ' still waiting today.' : 'Nothing else is due today.')
     }));
 

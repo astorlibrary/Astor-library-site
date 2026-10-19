@@ -182,13 +182,13 @@ export class QuizRound {
     this.card = card;
     // Each game's drawing, faint in the corner: its emblem on every card.
     card.append(drawing((this.options.icons || {})[about.icon] || '', 120, 'rx-card-emblem'));
-    // And the book's own drawing for this question, set at its head like a
-    // printer's ornament.
-    if (hasMotifs()) card.append(motif(this.index, 'rx-card-motif'));
     const showKind = this.options.gameId === 'mixed-round' || this.options.gameId === 'daily';
+    // The book's own drawing for this question heads the card like a
+    // printer's ornament, on the same line as what is being asked.
     const head = el('div', { class: 'rx-card-head' }, [
       showKind && about.label ? el('p', { class: 'rx-card-kind' }, [drawing((this.options.icons || {})[about.icon] || '', 16), el('span', { text: about.label })]) : null,
-      el('h2', { class: 'rx-stem', tabindex: '-1', text: question.stem })
+      this.options.practice ? el('p', { class: 'rx-card-kind is-practice', text: 'Second go at the ones you missed' }) : null,
+      el('div', { class: 'rx-stem-row' }, [hasMotifs() ? motif(this.index, 'rx-card-motif') : null, el('h2', { class: 'rx-stem', tabindex: '-1', text: question.stem })])
     ]);
     card.append(head);
 
@@ -372,13 +372,18 @@ export class QuizRound {
       story.append(slot);
       return slot;
     });
-    // Only the filled places and the next one are drawn; the rest is a count.
-    const more = el('li', { class: 'rx-story-more' });
-    story.append(more);
+    // Only the events placed are drawn; above them, a dot for every event
+    // says how far the story has got.
+    const dots = el('ol', { class: 'rx-story-dots', 'aria-hidden': 'true' }, question.answer.map(() => el('li')));
+    const tally = el('span', { class: 'rx-story-tally' });
+    const head = el('div', { class: 'rx-story-head' }, [el('span', { class: 'rx-story-title', text: 'The story so far' }), dots, tally]);
+    const empty = el('li', { class: 'rx-story-empty', text: 'Nothing placed yet.' });
+    story.append(empty);
     const countLeft = () => {
-      const left = total - this.order.placed.length - 1;
-      more.textContent = left > 0 ? (left === 1 ? 'One more after that' : left + ' more after that') : '';
-      more.hidden = left <= 0;
+      const placed = this.order.placed.length;
+      [...dots.children].forEach((dot, index) => dot.classList.toggle('is-on', index < placed));
+      tally.textContent = placed + ' of ' + total;
+      empty.hidden = placed > 0;
     };
     countLeft();
     const prompt = el('p', { class: 'rx-story-prompt', 'aria-live': 'polite', text: 'What comes first?' });
@@ -426,7 +431,7 @@ export class QuizRound {
       });
       pool.append(button);
     }
-    return el('div', { class: 'rx-story-wrap' }, [story, prompt, pool]);
+    return el('div', { class: 'rx-story-wrap' }, [el('div', { class: 'rx-story-box' }, [head, story]), prompt, pool]);
   }
 
   // --- answering -------------------------------------------------------------
@@ -496,8 +501,8 @@ export class QuizRound {
       if (correct) line = '';
       else if (kindOf(question) === 'context' && !gaveUp) {
         const gap = Math.abs(yearValue(question.options[this.selection]) - yearValue(answer));
-        line = answer + ' — you were ' + gap + (gap === 1 ? ' year' : ' years') + ' out.';
-      } else line = 'It’s ' + answer + '.';
+        line = [el('b', { text: answer }), ' — you were ' + gap + (gap === 1 ? ' year' : ' years') + ' out.'];
+      } else line = ['It’s ', el('b', { text: answer }), '.'];
     } else if (question.kind === 'cloze') {
       if (!gaveUp && this.blanks.includes(null)) { announce(this.live, 'Place a word in every gap first.'); this.shake(this.container.querySelector('.rx-cloze-line')); return; }
       correct = !gaveUp && this.blanks.every((word, position) => word.toLowerCase() === question.answer[position].toLowerCase());
@@ -577,7 +582,8 @@ export class QuizRound {
     const quotation = quotationFor(book, question);
     const last = this.index === this.questions.length - 1;
     const tone = correct ? 'is-right' : gaveUp ? 'is-shown' : 'is-wrong';
-    const word = correct ? (this.hinted ? 'Right, with a hint' : praise(this.run)) : gaveUp ? 'The answer' : 'Not quite';
+    const nearly = question.kind === 'order' && !this.hinted && this.order.slips <= 2;
+    const word = correct ? (this.hinted ? 'Right, with a hint' : praise(this.run)) : gaveUp ? 'The answer' : nearly ? 'Nearly' : 'Not quite';
 
     this.onward = el('button', { class: 'rx-button is-primary is-onward', type: 'button', onclick: () => this.next() }, [
       el('span', { text: last ? 'Finish' : 'Next' }), el('span', { 'aria-hidden': 'true', text: '→' })
@@ -587,7 +593,7 @@ export class QuizRound {
       el('span', { class: 'rx-verdict-mark', html: correct ? CHECK : gaveUp ? '<span aria-hidden="true">i</span>' : CROSS }),
       el('div', { class: 'rx-verdict-words' }, [
         el('p', { class: 'rx-verdict-word', text: word }),
-        line ? el('p', { class: 'rx-verdict-line', text: line }) : null
+        line && line.length ? el('p', { class: 'rx-verdict-line' }, [].concat(line)) : null
       ]),
       this.onward
     ]));
@@ -715,18 +721,19 @@ export class QuizRound {
     const step = book && this.options.next ? this.options.next(book) : null;
 
     const page = el('div', { class: 'rx-results' + (ratio >= 0.8 && !practice ? ' is-shining' : '') });
+    const words = resultWords({ score, total, practice, before, pattern: this.pattern(), remembering: isRemembering() });
     page.append(completion({
       score, total, marks: this.answers,
-      kicker: practice ? 'Second go' : quizName(gameId),
-      title: headline(ratio, practice),
-      sub: [this.pattern(), practice ? '' : starHint(score, total, bestStars)].filter(Boolean).join(' '),
-      best: practice ? null : bestStars
+      kicker: practice ? 'The ones you missed' : quizName(gameId),
+      title: words.title, sub: words.sub, badge: words.best ? 'New best' : '',
+      stars: !practice, best: practice ? null : bestStars
     }));
 
     const actions = el('div', { class: 'rx-results-actions' });
     if (missed.length) {
       actions.append(el('button', {
-        class: 'rx-button is-primary is-wide', type: 'button', text: missed.length === 1 ? 'Try the one you missed' : 'Try the ' + missed.length + ' you missed',
+        class: 'rx-button is-primary is-wide', type: 'button',
+        text: practice ? (missed.length === 1 ? 'Try the last one again' : 'Try the ' + missed.length + ' still missed') : missed.length === 1 ? 'Try the one you missed' : 'Try the ' + missed.length + ' you missed',
         onclick: () => this.goOver(missed.map(entry => entry.question))
       }));
       actions.append(el('button', { class: 'rx-text-button', type: 'button', text: 'New round', onclick: () => this.restart() }));
@@ -828,13 +835,44 @@ function praise(run) {
   return PRAISE[Math.floor(Math.random() * PRAISE.length)];
 }
 
-function headline(ratio, practice) {
-  if (practice) return ratio === 1 ? 'All put right.' : 'Better each time.';
-  if (ratio === 1) return 'Every one right.';
-  if (ratio >= 0.8) return 'Excellent.';
-  if (ratio >= 0.6) return 'Nicely done.';
-  if (ratio >= 0.4) return 'Getting there.';
-  return 'A good start.';
+// What the completion screen says, from what actually happened: the score,
+// how it compares with the reader's best and last go on this book, and
+// (passed in as `pattern`) where the misses cluster. Kept free of the page so
+// it can be tested.
+export function resultWords({ score, total, practice = false, before = null, pattern = '', remembering = false }) {
+  const missed = total - score;
+  const ratio = total ? score / total : 0;
+  if (practice) {
+    if (!missed) {
+      return {
+        title: total === 1 ? 'Put right.' : 'All ' + inWords(total) + ' put right.',
+        sub: remembering ? 'They come back in a day or two, to make sure they stick.' : 'Those lines are yours now.'
+      };
+    }
+    return {
+      title: score ? score + ' of ' + total + ' put right.' : 'Still learning these.',
+      sub: (missed === 1 ? 'One still to learn.' : inWords(missed).replace(/^./, c => c.toUpperCase()) + ' still to learn.') + ' Another go fixes them faster than a new round.'
+    };
+  }
+  let title;
+  if (!missed) title = 'Flawless.';
+  else if (missed === 1 && total >= 5) title = 'One away from perfect.';
+  else if (ratio >= 0.7) title = 'A strong round.';
+  else if (ratio >= 0.5) title = 'More right than wrong.';
+  else if (ratio >= 0.3) title = 'Some of these are sticking.';
+  else if (score) title = 'A tough round.';
+  else title = 'None this time.';
+
+  const bestRatio = before?.total ? before.best / before.total : null;
+  const lastRatio = before?.lastTotal ? before.last / before.lastTotal : null;
+  const best = bestRatio !== null && ratio > bestRatio;
+  let change = '';
+  if (best) change = 'A new best, up from ' + before.best + (before.total !== total ? ' of ' + before.total : '') + '.';
+  else if (lastRatio !== null && ratio > lastRatio) change = 'Up from ' + before.last + ' last time.';
+  const advice = pattern || (ratio < 0.5 && missed ? 'The ones you missed are the lines to learn next.' : '');
+  const sub = [change, advice, starHint(score, total, bestRatio === null ? null : starsFor(before.best, before.total))].filter(Boolean).slice(0, 2).join(' ');
+  // The badge celebrates; on a weak round the line says it quietly instead.
+  return { title, sub, best: best && ratio >= 0.5 };
 }
 
 const NUMBER_WORDS = ['none', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
@@ -863,10 +901,10 @@ export function starTarget(total) {
 // The top of every completion screen: up to three stars, the score in large
 // type, a small mark for each question (filled or empty, never red), the
 // headline and one line. `chips` are a few short facts set as one quiet line.
-export function completion({ score, total, kicker, title, chips = [], sub = '', best = null, marks = null }) {
+export function completion({ score, total, kicker, title, chips = [], sub = '', best = null, marks = null, badge = '', stars: showStars = true }) {
   const stars = starsFor(score, total);
-  const starRow = el('p', { class: 'rx-stars', role: 'img', 'aria-label': stars + ' of 3 stars' });
-  for (let index = 0; index < 3; index += 1) {
+  const starRow = showStars ? el('p', { class: 'rx-stars', role: 'img', 'aria-label': stars + ' of 3 stars' }) : null;
+  for (let index = 0; showStars && index < 3; index += 1) {
     starRow.append(el('span', { class: 'rx-star' + (index < stars ? ' is-earned' : ''), style: '--i:' + index, html: STAR }));
   }
   const drawn = hasMotifs();
@@ -884,9 +922,12 @@ export function completion({ score, total, kicker, title, chips = [], sub = '', 
       el('span', { 'aria-hidden': 'true', text: 'out of ' + inWords(total) })
     ]),
     markRow,
-    el('h2', { class: 'rx-results-title', tabindex: '-1', text: title }),
-    sub ? el('p', { class: 'rx-results-sub', text: sub }) : null,
-    chips.length ? el('p', { class: 'rx-results-note', text: chips.join(' · ') }) : null
+    el('div', { class: 'rx-results-words' }, [
+      badge ? el('p', { class: 'rx-results-badge', text: badge }) : null,
+      el('h2', { class: 'rx-results-title', tabindex: '-1', text: title }),
+      sub ? el('p', { class: 'rx-results-sub', text: sub }) : null,
+      chips.length ? el('p', { class: 'rx-results-note', text: chips.join(' · ') }) : null
+    ])
   ]);
 }
 

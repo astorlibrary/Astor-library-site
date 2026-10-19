@@ -67,9 +67,10 @@ async function show(meta) {
 
   drawHero(meta, book, state, counts, day);
   clear(hubMount);
+  // What to do comes first; how well each line is known, after.
   hubMount.append(
-    drawLines(book, meta, lines, counts),
     drawActivities(book, meta, state, counts),
+    drawLines(book, meta, lines, counts),
     drawLibrary(day)
   );
   document.title = 'Revise ' + shortTitle(book) + ' | Astor Library';
@@ -94,7 +95,7 @@ function drawHero(meta, book, state, counts, day) {
     book.openingLine ? el('p', { class: 'rx-hero-epigraph', text: quoted(clip(book.openingLine, 140)) }) : null,
     el('div', { class: 'rx-hero-actions' }, [
       el('a', { class: 'rx-hero-start', href: activityHref('mixed-round', book.slug) }, [
-        el('span', { class: 'rx-hero-start-label' }, [el('b', { text: counts.due ? 'Revise the lines that are due' : 'Start a ten-question session' }), el('small', { text: sessionLine(plan.counts) + ' About five minutes.' })]),
+        el('span', { class: 'rx-hero-start-label' }, [el('span', { class: 'rx-hero-start-kicker', text: counts.known + counts.growing + counts.shaky ? 'Pick up where you left off' : 'Start here' }), el('b', { text: counts.due ? 'Revise the lines that are due' : 'Start a ten-question session' }), el('small', { text: sessionLine(plan.counts) + ' About five minutes.' })]),
         el('span', { class: 'rx-hero-start-arrow', 'aria-hidden': 'true', text: '→' })
       ]),
       el('div', { class: 'rx-hero-links' }, [
@@ -223,7 +224,7 @@ const DESCRIPTIONS = {
   'theme-match': ['Theme match', 'Match each line to the theme it carries.'],
   'technique-spotter': ['Technique spotter', 'Name the technique doing the work.'],
   'character-identification': ['Who is this?', 'Identify a character from their file.'],
-  'order-the-plot': ['Order the plot', 'Drag the story back into sequence.'],
+  'order-the-plot': ['Order the plot', 'Tap the events in the order they happen.'],
   'essay-forge': ['Essay planner', 'Build a plan step by step, with checked quotations.'],
   'defend-the-reading': ['Defend the reading', 'Take a side in a critical debate and answer the objection.']
 };
@@ -335,7 +336,7 @@ function preview(id, book) {
   if (id === 'order-the-plot') {
     const stages = book.structure.length >= 3 ? book.structure : [];
     const picked = stages.length ? [stages[1], stages[0], stages[2]] : [];
-    return el('span', { class: 'rx-pv rx-pv-order' }, picked.map((stage, index) => el('span', { class: 'rx-pv-strip', style: '--tilt:' + [-1.2, 0.8, -0.4][index] + 'deg' }, [el('b', { text: '⋮⋮' }), clip(stage.title || stage.label, 40)])));
+    return el('span', { class: 'rx-pv rx-pv-order' }, picked.map((stage, index) => el('span', { class: 'rx-pv-strip', style: '--tilt:' + [-1.2, 0.8, -0.4][index] + 'deg' }, [el('b', { text: String(index + 1) }), clip(stage.title || stage.label, 40)])));
   }
   if (id === 'essay-forge') {
     return el('span', { class: 'rx-pv rx-pv-essay' }, [

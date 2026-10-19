@@ -91,6 +91,13 @@ function suggestions(book, question, paragraphIndex = -1) {
   }).sort((a, b) => b.score - a.score);
 }
 
+// The writer as an essay names them: Brontë, Shakespeare, Shelley.
+function writerName(book) {
+  const author = String(book.author || '').replace(/\s*\(.*?\)\s*/g, ' ').split(/\s+and\s+|,|&/)[0].trim();
+  if (!author || /^(various|anonymous|unknown)/i.test(author)) return 'The writer';
+  return author.split(/\s+/).pop();
+}
+
 function render(book) {
   clear(mount);
   const plans = readPlans();
@@ -227,7 +234,7 @@ function render(book) {
       el('p', { class: 'rx-essay-lede', text: 'Answer the question in one or two sentences. A good argument takes a position and says how or why — it is something a reader could disagree with.' }));
 
     const coach = el('div', { class: 'rx-coach', 'aria-live': 'polite' });
-    const thesis = el('textarea', { class: 'rx-textarea is-large', id: 'rx-thesis', rows: '4', placeholder: 'e.g. Macbeth is responsible for his downfall because the witches only predict; every decision to kill is his own.' });
+    const thesis = el('textarea', { class: 'rx-textarea is-large', id: 'rx-thesis', rows: '4', placeholder: 'e.g. ' + writerName(book) + ' presents … not as … but as …, because …' });
     thesis.value = plan.thesis;
     const paint = () => {
       clear(coach);
@@ -301,7 +308,7 @@ function render(book) {
 
     // Point
     const pointId = 'rx-point-' + index;
-    const point = el('textarea', { class: 'rx-textarea', id: pointId, rows: '2', placeholder: 'The claim this paragraph proves. “Ambition” is a topic; “Macbeth’s ambition needs his wife’s scorn to become action” is a point.' });
+    const point = el('textarea', { class: 'rx-textarea', id: pointId, rows: '2', placeholder: 'The claim this paragraph proves. “Ambition” is a topic; “ambition only becomes action when someone else demands it” is a point.' });
     point.value = paragraph.point;
     const pointCoach = el('p', { class: 'rx-mini-coach', 'aria-live': 'polite' });
     const paintPoint = () => {

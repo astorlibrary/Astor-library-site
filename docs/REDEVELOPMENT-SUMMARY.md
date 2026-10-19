@@ -528,6 +528,37 @@ is deepened just enough for its lettering to pass contrast. For the few
 covers whose titles touch their drawings, `eraseTitle` and `dropMotifs` in
 `scripts/edition-overrides.json` clear what the detector misses.
 
+**One design, every edition.** A refinement pass gave every activity the
+same underlying parts, so a game looks like itself in every book while each
+book keeps its own colours, drawings, type and frame:
+
+- *The card.* What is asked, headed by one of the book's emblems; the
+  prompt (centred, set on the page, or framed, by edition); the answers as
+  one kind of tile with a monogram for people; hints and Skip at the foot.
+  Editions vary two radii (`--rx-r-card`, `--rx-r-tile`), not the structure.
+- *The verdict* sits in the card, below the answers, tinted for right,
+  wrong or shown, with the answer in bold and Next beside it; it never
+  covers the answers, and the page scrolls only as far as it needs to.
+- *Phones.* The book bar, activity row, activity name and progress take
+  about 60px less than before; titles wrap to two lines rather than clip;
+  the activity row fades at whichever end has more instead of putting
+  arrows over the labels (arrows remain for a mouse).
+- *Results* say something true about the round (`resultWords()` in
+  `quiz-round.mjs`): a headline for the score ("One away from perfect.",
+  "A tough round."), a comparison with the reader's best and last go on the
+  book ("A new best, up from 5.", "Up from 3 last time."), where the misses
+  cluster, and the next star. A new best of half marks or more earns a
+  badge. The words sit on a panel of the cover's ground so the drawings
+  never cross them. The second go at missed questions is labelled, has no
+  stars, and ends with how many were put right.
+- *Order the plot* shows "The story so far" with a dot for every event,
+  and says "Nearly" for one or two slips.
+- *Flashcards, the essay planner and debate* use the same card and tiles;
+  the essay planner's example argument names the book's own writer.
+- *The Revise home* puts "Start here" on the session button and the
+  activities straight after the hero; on a phone each activity is a compact
+  row with its emblem on the cover's ground.
+
 Order the plot is now played by tapping the events in the order they
 happen: a correct tap places the card, a wrong one counts as a slip, so the
 story assembles itself without dragging.
@@ -537,7 +568,8 @@ one-book activity comes from the chosen book, that the study bar offers
 exactly the activities a book can run, that every activity page carries
 the study bar and its instructions, that every book has a valid edition, and
 that both palettes of every edition keep text readable, and that every book
-has its cover drawings and legible lettering on its band.
+has its cover drawings and legible lettering on its band, and that the
+completion screen's words match the round (score, best, last go, second go).
 
 ---
 
