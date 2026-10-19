@@ -481,7 +481,7 @@ const editionUpdateBooks = [
     label: 'Shakespeare Apocrypha · Volume II',
     range: 'apocrypha',
     volume: 'II',
-    deck: 'In February 1551 Thomas Arden of Faversham was murdered in his own house by men his wife, Alice, had hired. Holinshed’s Chronicles told the story, and an anonymous play printed in 1592 put it on stage. Some scholars find Shakespeare in the scene where Alice quarrels with her lover, Mosby; the introduction sets out the cases for him, for Thomas Kyd and for several hands.',
+    deck: 'In February 1551 Thomas Arden of Faversham was murdered in his own house by men his wife, Alice, had hired. Holinshed’s Chronicles told the story, and an anonymous play printed in 1592 put it on stage. Some scholars find Shakespeare in the scene where Alice quarrels with her lover, Mosbie; the introduction sets out the cases for him, for Thomas Kyd and for several hands.',
     editionIncludes: ['Modernised text of the 1592 first quarto', 'Scene summaries before each scene', 'Line numbers and same-page explanatory notes', 'Introductions to authorship, sources and performance'],
     facts: [
       { label: '1551 crime', text: 'The plot transforms the murder of Thomas Arden at Faversham into domestic tragedy.' },
@@ -513,7 +513,7 @@ const editionUpdateBooks = [
     label: 'Shakespeare Apocrypha · Volume III',
     range: 'apocrypha',
     volume: 'III',
-    deck: 'Locrine, eldest son of Brutus, the legendary founder of Britain, defeats the invading Huns and then falls for their captive princess, Estrild. The play was printed in 1595 as ‘overseen and corrected’ by W. S., which was enough to get it into the Third Folio of Shakespeare in 1664. Nobody knows who wrote it.',
+    deck: 'Locrine, eldest son of Brutus, the legendary founder of Britain, defeats the invading Huns and then falls for Estrild, the captive wife of their king, Humber. The play was printed in 1595 as ‘overseen and corrected’ by W. S., which was enough to get it into the Third Folio of Shakespeare in 1664. Nobody knows who wrote it.',
     editionIncludes: ['Complete modern-spelling text of the 1595 quarto', 'Scene summaries and line-numbered text', 'Same-page explanatory notes', 'Introductions to authorship, sources and performance'],
     facts: [
       { label: '1595 quarto', text: 'The title page said the play was overseen and corrected by W. S.' },

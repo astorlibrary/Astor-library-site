@@ -25,7 +25,7 @@ module.exports = [
       { label: "Departure", title: "The traitors and Falstaff’s death", body: "Henry exposes Cambridge, Scroop and Grey before they can assassinate him, and sends all three to death. In Eastcheap, Falstaff dies offstage and Pistol, Nym and Bardolph leave for France, carrying the remains of Prince Hal’s earlier world into the king’s war." },
       { label: "Harfleur", title: "Harfleur", body: "‘Once more unto the breach’ creates a shared martial body out of tired soldiers. When Harfleur still resists, Henry’s next speech threatens rape, infanticide and indiscriminate destruction, forcing the audience to hear what conquest may require." },
       { label: "Agincourt", title: "The night before Agincourt", body: "Disguised on the eve of battle, Henry hears Bates and Williams question how much of a soldier’s death belongs on a king’s conscience. By morning he has answered fear with the Saint Crispin’s Day speech; the victory that follows is accompanied by the order to kill French prisoners." },
-      { label: "Settlement", title: "The wooing of Katherine", body: "The Treaty of Troyes recognises Henry as heir to France and makes Katherine part of the settlement. The Epilogue immediately breaks the triumphal frame: their son will lose France and England will descend into the conflicts dramatised in the Henry VI plays." },
+      { label: "Settlement", title: "The wooing of Katherine", body: "The Treaty of Troyes recognises Henry as heir to France and makes Katherine part of the settlement. The Epilogue immediately breaks the triumphal frame: under their son France will be lost, and England will descend into the conflicts dramatised in the Henry VI plays." },
     ],
     readings: [
       {
@@ -41,7 +41,7 @@ module.exports = [
         title: "Public and private",
         paragraphs: [
           "Henry’s authority depends upon an extraordinary ability to change register. He can speak legal precision to ambassadors, violent prophecy to Harfleur, intimacy to his troops and plain awkwardness to Katherine. These are not ornamental speeches added to a fixed character. They are how the king wins consent and makes a shaky claim into a cause his army will fight for.",
-          "At night before Agincourt, disguise removes the automatic obedience attached to his crown. Bates and Williams insist that ordinary men must answer for their own souls but leave Henry with a harder question about the cause in which they die. His long reply separates royal duty from private guilt; his following prayer reveals that the legitimacy of his father’s crown still troubles him. The scene makes leadership look less secure than it sounds in daylight.",
+          "At night before Agincourt, disguise removes the automatic obedience attached to his crown. Bates and Williams ask how much of a soldier’s death belongs on a king’s conscience, and how far the king must answer for the cause in which his men die. His long reply separates royal duty from private guilt; his following prayer reveals that the legitimacy of his father’s crown still troubles him. The scene makes leadership look less secure than it sounds in daylight.",
         ],
       },
       {
@@ -55,7 +55,7 @@ module.exports = [
     ],
     contexts: [
       { label: "1599", title: "Essex in Ireland", body: "The fifth Chorus imagines a victorious English general returning from Ireland, almost certainly Robert Devereux, Earl of Essex. Essex departed in March 1599 and returned in disgrace that September, so the allusion catches a brief moment of public expectation. A play about an earlier French campaign was speaking to an audience watching another war unfold." },
-      { label: "Text", title: "Quarto and Folio", body: "The 1600 quarto is much shorter than the 1623 Folio, omitting the Choruses, the night-time debate and much else. Editors disagree over how the shorter text came into being, but modern editions normally take the Folio as their principal basis. Comparing the versions shows how strongly the Chorus and the common soldiers shape the play’s moral range." },
+      { label: "Text", title: "Quarto and Folio", body: "The 1600 quarto is much shorter than the 1623 Folio: it has no Choruses, no opening scene for the bishops and no ‘Once more unto the breach’, though it keeps the soldiers’ debate on the night before Agincourt. Editors disagree over how the shorter text came into being, but modern editions normally take the Folio as their principal basis. Comparing the versions shows how strongly the Chorus shapes the play’s moral range." },
       { label: "Performance", title: "Productions", body: "Henry V has repeatedly been recruited in wartime, most famously in Laurence Olivier’s 1944 film. Later productions and Kenneth Branagh’s 1989 film made mud, fatigue and grief harder to overlook. The text sustains both traditions because its ceremonies of national unity are repeatedly interrupted by the damage required to create them." },
     ],
     characters: [
@@ -321,7 +321,7 @@ module.exports = [
     studyUrl: "https://astorlibrary.com/go/loves-labours-lost-study",
     genre: "Comedy",
     date: "c.1595–96",
-    deck: "The King of Navarre and three of his lords swear to study for three years without seeing women. The Princess of France arrives on business the next day, with three ladies. The men write sonnets in secret, send them to the wrong people and visit the ladies disguised as Russians, and at the end the women give them a year to prove they mean it.",
+    deck: "The King of Navarre and three of his lords swear to study for three years without seeing women. The Princess of France arrives on business almost at once, with three ladies. The men write sonnets in secret, send them to the wrong people and visit the ladies disguised as Russians, and at the end the women give them a year to prove they mean it.",
     edition: [
       "In Love’s Labour’s Lost an impossible oath shows how people use words, and misuse them. Navarre’s men plan to win fame through study and abstinence; the Princess of France and her ladies expose how quickly that programme depends upon exceptions, and how easily intellectual display becomes another form of vanity.",
       "Around the two courts, Armado, Moth, Costard, Jaquenetta and Holofernes create a second world of letters, errors and extravagant speech. The play’s verbal difficulty is part of its subject: Latin tags, fashionable rhetoric, puns and misread messages continually ask whether language makes contact or merely advertises the speaker.",
@@ -369,7 +369,7 @@ module.exports = [
     contexts: [
       { label: "Date and print", title: "The 1598 quarto", body: "The 1598 quarto says the play had been presented before Elizabeth I during the previous Christmas season, while a poem from the same year also refers to seeing it in a public theatre. Its language and verse connect it to Shakespeare’s mid-1590s comedies, though no record fixes a first performance." },
       { label: "Culture", title: "Sources", body: "The imagined academy, visiting embassy, Muscovite masque and Nine Worthies pageant draw on aristocratic education and royal entertainment. Shakespeare also uses the fashionable vocabulary of sonnet sequences and courtly compliment. The comedy comes from watching imported forms meet bodies, business and feelings they cannot organise." },
-      { label: "Performance", title: "Language", body: "The play’s density once helped earn it a reputation as a learned early experiment, but modern performance has restored its emotional precision. Directors often give each courtship a distinct rhythm and make the subplots part of the same struggle over status and speech. The ending works best when the news of the King’s death leaves the comedy in place and shows what its games failed to prove." },
+      { label: "Performance", title: "Language", body: "The play’s density once helped earn it a reputation as a learned early experiment, but modern performance has restored its emotional precision. Directors often give each courtship a distinct rhythm and make the subplots part of the same struggle over status and speech. The ending works best when the news of the French king’s death leaves the comedy in place and shows what its games failed to prove." },
     ],
     characters: [
       { name: "Berowne", body: "The oath’s sharpest critic and most gifted breaker. His wit detects other people’s pretence but must learn that exposing folly does not exempt him from it." },

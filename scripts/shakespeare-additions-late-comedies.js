@@ -156,7 +156,7 @@ module.exports = [
       },
       {
         href: "https://www.rsc.org.uk/the-two-noble-kinsmen/about-the-play/dates-and-sources",
-        label: "Royal Shakespeare Company: The Two Gentlemen of Verona"
+        label: "Royal Shakespeare Company: dates and sources"
       }
     ]
   },
@@ -317,7 +317,7 @@ module.exports = [
       },
       {
         href: "https://www.rsc.org.uk/troilus-and-cressida/about-the-play/dates-and-sources",
-        label: "Royal Shakespeare Company: The Two Gentlemen of Verona"
+        label: "Royal Shakespeare Company: dates and sources"
       }
     ]
   },
@@ -534,7 +534,7 @@ module.exports = [
       {
         label: "Movement four",
         title: "The forest and the false courtship",
-        body: "Valentine encounters a group of outlaws who compel him to become their leader. Proteus claims to assist Turio but secretly presses his own suit, which Silvia rejects. Julia, still disguised, must carry Proteus’s gifts and even the ring she once gave him. Launce’s account of taking punishment for his dog Crab supplies a comic image of loyalty absent from Proteus’s conduct."
+        body: "Valentine encounters a group of outlaws who compel him to become their leader. Proteus claims to assist Thurio but secretly presses his own suit, which Silvia rejects. Julia, still disguised, must carry Proteus’s gifts and even the ring she once gave him. Launce’s account of taking punishment for his dog Crab supplies a comic image of loyalty absent from Proteus’s conduct."
       },
       {
         label: "Movement five",

@@ -698,7 +698,7 @@ const remainingBooks = [
     image: 'The Moonstone Main Cover.png',
     purchaseUrl: 'https://astorlibrary.com/go/the-moonstone',
     label: 'Novel · 1868',
-    deck: 'On her eighteenth birthday Rachel Verinder is given a great yellow diamond, taken from India when Seringapatam was stormed in 1799. By the next morning it has gone from her room. The story is told by a series of witnesses, starting with the family’s old steward, Gabriel Betteredge, who consults Robinson Crusoe in every crisis.',
+    deck: 'On her eighteenth birthday Rachel Verinder is given a great yellow diamond, taken from India when Seringapatam was stormed in 1799. By the next morning it has gone from her room. The story is told by a series of witnesses; the first long account is by the family’s old steward, Gabriel Betteredge, who consults Robinson Crusoe in every crisis.',
     editionIncludes: [
       'Explanatory footnotes throughout',
       'Historical context and original essays',
@@ -827,7 +827,7 @@ const remainingBooks = [
     ],
     editorial: [
       'The editorial material states which works Mansfield completed and which survive only as fragments. It does not present the ten-item selection as a complete reprint of the 1923 contents.',
-      'Notes, chronology and publication history connect the stories to Wellington and Karori, domestic service, money, the First World War, Leslie Mansfield and contemporary treatment of tuberculosis.'
+      'Notes, chronology and publication history connect the stories to Wellington and Karori, domestic service, money, the First World War, her brother Leslie Beauchamp and contemporary treatment of tuberculosis.'
     ],
     topics: [
       { title: 'Completion and fragment', body: 'The volume preserves the formal difference between stories Mansfield finished and writing left incomplete at her death.' },
