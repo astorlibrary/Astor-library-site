@@ -79,11 +79,17 @@ ${FOOTER}
   return dir;
 }
 
+function howSteps(steps) {
+  if (!steps || !steps.length) return '';
+  return '<ol class="rx-how" aria-label="How it works">' + steps.map(step => '<li>' + escapeHtml(step) + '</li>').join('') + '</ol>';
+}
+
 // --------------------------------------------------------------- the games
 
 const GAMES = [
   {
     slug: 'who-said-it',
+    how: ['Read the line', 'Choose who says it', 'See why, with the line in context'],
     name: 'Who said it?',
     scope: 'book',
     blurb: 'A line appears with the speaker removed. Name who says it.',
@@ -92,6 +98,7 @@ const GAMES = [
   },
   {
     slug: 'fill-the-line',
+    how: ['Read the line with gaps', 'Tap the missing words in order', 'Check, and see the full line'],
     name: 'Fill the line',
     scope: 'book',
     blurb: 'Words are taken out of a famous speech. Put them back.',
@@ -100,6 +107,7 @@ const GAMES = [
   },
   {
     slug: 'theme-match',
+    how: ['Read the line', 'Pick the theme it carries', 'Every theme explains itself after you answer'],
     name: 'Theme match',
     scope: 'book',
     blurb: 'Decide which theme a quotation is carrying.',
@@ -108,6 +116,7 @@ const GAMES = [
   },
   {
     slug: 'technique-spotter',
+    how: ['Read the line', 'Name the technique at work', 'Learn what each technique does'],
     name: 'Technique spotter',
     scope: 'book',
     blurb: 'Name the device doing the work in a line.',
@@ -116,6 +125,7 @@ const GAMES = [
   },
   {
     slug: 'character-identification',
+    how: ['Read the character file', 'Work out who has been struck out', 'Read who they really are'],
     name: 'Who is this?',
     scope: 'book',
     blurb: 'Identify a character from a description that never names them.',
@@ -124,6 +134,7 @@ const GAMES = [
   },
   {
     slug: 'order-the-plot',
+    how: ['Read the shuffled events', 'Drag them into order, earliest first', 'Check, and see where each belongs'],
     name: 'Order the plot',
     scope: 'book',
     blurb: 'Put acts, chapters and scenes back into sequence.',
@@ -132,6 +143,7 @@ const GAMES = [
   },
   {
     slug: 'mixed-round',
+    how: ['Ten questions of every kind', 'Lines due for review come first', 'Missed lines come back tomorrow'],
     name: 'Ten questions',
     scope: 'book',
     blurb: 'Ten questions on one book, starting with the lines due for another look and the ones you have not met yet.',
@@ -140,6 +152,7 @@ const GAMES = [
   },
   {
     slug: 'which-book',
+    how: ['Read a line from anywhere', 'Choose the book from four covers', 'See where it comes from'],
     name: 'Which book?',
     scope: 'library',
     blurb: 'One line from a book in the library. Name the book it comes from.',
@@ -148,6 +161,7 @@ const GAMES = [
   },
   {
     slug: 'context-sprint',
+    how: ['Read an event', 'Place it on the timeline', 'See how close you were'],
     name: 'Which year?',
     scope: 'library',
     blurb: 'Place an event in the right year.',
@@ -156,6 +170,7 @@ const GAMES = [
   },
   {
     slug: 'opening-lines',
+    how: ['Read a first sentence', 'Choose the book it opens', 'Find out more about it'],
     name: 'Opening lines',
     scope: 'library',
     blurb: 'Name the book from its first sentence.',
@@ -180,8 +195,8 @@ function buildPages() {
     breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Revise</span>',
     module: 'revise-hub.mjs',
     bare: true,
-    intro: `  <section class="rv-title" id="rv-title" aria-label="The book you are revising">
-    <div class="rv-title-words"><p class="kicker">Revise</p><h1>Revise a book.</h1><p class="rv-status">Short quizzes on the quotations, characters and plot of each book with a study guide, with flashcards and an essay planner.</p></div>
+    intro: `  <section class="rx-hero" id="rv-title" aria-label="The book you are revising">
+    <div class="rx-hero-inner"><div class="rx-hero-words"><p class="rx-hero-kicker">Revise</p><h1 class="rx-hero-title">Revise a book.</h1><p class="rx-hero-epigraph">Quizzes, flashcards, an essay planner and a debate for every book with a study guide.</p></div></div>
   </section>`,
     mount: `  <div class="rv-hub" id="rv-hub"><p class="rv-loading">Finding your book…</p></div>`,
     fallback: 'The quizzes need JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
@@ -201,17 +216,17 @@ function buildPages() {
       breadcrumb: '<a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">' + escapeHtml(game.name) + '</span>',
       module: 'quiz-page.mjs',
       bare: true,
-      intro: `  <header class="rv-head">
-    ${game.scope === 'book' ? '<div class="rv-head-book" id="rv-head-book"></div>' : ''}
-    <p class="kicker">${game.scope === 'book' ? 'Quiz' : 'Quiz · every book'}</p>
+      intro: `${game.scope === 'book' ? '  <div class="rx-bar-mount" id="rv-head-book"></div>\n' : ''}  <header class="rx-head">
+    <p class="kicker">${game.scope === 'book' ? (game.slug === 'mixed-round' ? 'Revision session' : 'Quiz') : 'Quiz · every book'}</p>
     <h1>${escapeHtml(game.name)}</h1>
-    <p class="rv-head-deck">${escapeHtml(game.deck)}</p>
+    <p class="rx-head-deck">${escapeHtml(game.deck)}</p>
+    ${howSteps(game.how)}
   </header>`,
       mount: `  <div class="rv-quiz" id="astor-game" data-game="${escapeHtml(game.slug)}" data-scope="${game.scope}"></div>`,
       fallback: 'This quiz needs JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
-      tail: `  <aside class="rv-why"><h2>Why this helps</h2><p>${escapeHtml(game.why)}</p><p class="rv-keys">${game.slug === 'fill-the-line' || game.slug === 'order-the-plot'
-        ? 'On a keyboard, Tab to a word or an arrow and press Space to use it, then Enter to check your answer and again to go on.'
-        : 'On a keyboard, press 1 to 4 or A to D to answer, Enter to go on, and R at the end to start again.'}</p></aside>`,
+      tail: `  <aside class="rx-why"><h2>Why this helps</h2><p>${escapeHtml(game.why)}</p><p class="rx-keys">${game.slug === 'fill-the-line' || game.slug === 'order-the-plot'
+        ? 'On a keyboard: Tab to a word or an arrow and press Space to use it, then Enter to check and again to go on.'
+        : 'On a keyboard: press 1 to 4 or A to D to answer, H to narrow the choices, Enter to go on, and R at the end to start again.'}</p></aside>`,
       links: [{ href: '/play/', label: 'Revise' }, { href: '/today/', label: 'Today' }]
     }));
   }
@@ -227,15 +242,16 @@ function buildPages() {
     breadcrumb: '<a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Flashcards</span>',
     module: 'flashcard-deck.mjs',
     bare: true,
-    intro: `  <header class="rv-head">
-    <div class="rv-head-book" id="rv-head-book"></div>
-    <p class="kicker">Revise</p>
+    intro: `  <div class="rx-bar-mount" id="rv-head-book"></div>
+  <header class="rx-head">
+    <p class="kicker">Learn the lines</p>
     <h1>Flashcards</h1>
-    <p class="rv-head-deck">Ten cards at a time. The lines you forget come back sooner.</p>
+    <p class="rx-head-deck">Ten cards at a time, three ways to learn them. The lines you forget come back sooner; the ones you know move up a box.</p>
+    ${howSteps(['Choose Recall, Complete or Memorise', 'Think of the answer, then turn the card', 'Mark yourself honestly'])}
   </header>`,
     mount: '  <div class="rv-quiz" id="astor-flashcards"></div>',
     fallback: 'The flashcards need JavaScript. The same quotations are on each book page.',
-    tail: '  <p class="astor-inline-note">Your cards are saved in this browser only.</p>',
+    tail: '  <aside class="rx-why"><h2>How the boxes work</h2><p>Every key line lives in one of five boxes. A new line starts in the first and comes back the next day; each time you know it, it moves up a box and waits longer: two days, four, eight, sixteen. Miss it and it goes back to the first. A line answered in any quiz moves the same way, so the flashcards and the quizzes always agree.</p><p class="rx-keys">On a keyboard: Space turns the card, the right arrow says Got it, the left arrow Not yet. On a touch screen, swipe a turned card right or left. Your cards are saved in this browser only.</p></aside>',
     links: [{ href: '/play/', label: 'Revise' }, { href: '/my-library/', label: 'My library' }]
   }));
 
@@ -250,11 +266,12 @@ function buildPages() {
     breadcrumb: '<a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Essay planner</span>',
     module: 'essay-planner.mjs',
     bare: true,
-    intro: `  <header class="rv-head">
-    <div class="rv-head-book" id="rv-head-book"></div>
-    <p class="kicker">Revise</p>
+    intro: `  <div class="rx-bar-mount" id="rv-head-book"></div>
+  <header class="rx-head">
+    <p class="kicker">Write about it</p>
     <h1>Essay planner</h1>
-    <p class="rv-head-deck">Choose a question and build the plan a paragraph at a time, with the evidence and what it shows.</p>
+    <p class="rx-head-deck">Build a plan in four steps: a question, an argument, paragraphs of point, evidence and analysis, and a conclusion. Your plan is saved in this browser as you go.</p>
+    ${howSteps(['Choose a question', 'Say what you will argue', 'Build three or more paragraphs', 'Review, copy or print'])}
   </header>`,
     mount: '  <div class="rv-tool" id="astor-essay-forge"><p class="rv-loading">Finding the questions…</p></div>',
     fallback: 'The planner needs JavaScript. Every book page has essay questions with a plan for each.',
@@ -273,11 +290,12 @@ function buildPages() {
     breadcrumb: '<a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Defend the reading</span>',
     module: 'defend-reading.mjs',
     bare: true,
-    intro: `  <header class="rv-head">
-    <div class="rv-head-book" id="rv-head-book"></div>
-    <p class="kicker">Revise</p>
+    intro: `  <div class="rx-bar-mount" id="rv-head-book"></div>
+  <header class="rx-head">
+    <p class="kicker">Write about it</p>
     <h1>Defend the reading</h1>
-    <p class="rv-head-deck">Take a side on a reading of the book, choose the lines that support it, then answer the case against.</p>
+    <p class="rx-head-deck">A critical debate about the book. Take a side, build a case from the text, then answer the evidence against you.</p>
+    ${howSteps(['Read both sides', 'Take a side and choose your evidence', 'Answer the line that tells against you'])}
   </header>`,
     mount: '  <div class="rv-tool" id="astor-defend"><p class="rv-loading">Finding the readings…</p></div>',
     fallback: 'This needs JavaScript. The readings are on each book page under “The book in its moment”.',
@@ -295,10 +313,11 @@ function buildPages() {
     deck: 'A passage, a book and five questions. New every day.',
     breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Today</span>',
     module: 'today.mjs',
-    intro: '  <div class="astor-daily-strip" id="astor-daily-strip"></div>',
+    bare: true,
+    intro: '  <header class="rx-today-head" id="astor-today-head"><div class="rx-almanac"><p class="rx-almanac-kicker">Astor today</p><h1 class="rx-almanac-date">Today</h1><p class="rx-almanac-deck">Five questions from across the library, the same for everyone today. Then a passage, a book and an anniversary.</p></div></header>',
     mount: '  <div class="rv-quiz" id="astor-daily-game"></div>',
     fallback: 'Today’s questions need JavaScript. The close readings in the <a href="/passage-room/">Passage Room</a> work without it.',
-    tail: '  <p class="astor-inline-note">Everyone gets the same five questions each day.</p>',
+    tail: '  <div class="rx-today-grid" id="astor-daily-strip"></div>',
     links: [{ href: '/play/', label: 'Revise' }, { href: '/my-library/', label: 'My library' }]
   }));
 

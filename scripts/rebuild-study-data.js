@@ -182,6 +182,7 @@ fs.writeFileSync(path.join(root, 'assets', 'timeline-index.json'), JSON.stringif
       const identity = identityFor(book.slug, book.title);
       return {
         slug: book.slug, title: book.title, author: book.author, href: book.href,
+        period: book.period, form: book.form,
         accent: identity.accent, motif: MOTIFS[identity.motif] || '', cover: coverFor(book.href),
         quotations: book.quotations.length, characters: book.characters.length,
         stages: book.structure.length, essays: book.essayQuestions.length,

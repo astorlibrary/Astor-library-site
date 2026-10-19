@@ -393,6 +393,60 @@ carries a print block that drops every control and opens every tab panel.
 Projector mode puts one quotation on the wall at `clamp(30px, 6vw, 72px)`,
 driven by the arrow keys, Escape to close.
 
+### The Revise redesign (October 2026)
+
+Every page under `/play/` and `/today/` now shares one design, set by the
+`rx` block at the end of `assets/astor-study.css`. Each page takes the colour
+and cover of the book being revised; right is always green and wrong always
+red. The question data, schedules and saved progress are unchanged.
+
+- **One study bar** (`studyBar()` in `revise-kit.mjs`) heads every one-book
+  tool: the cover, title and author, *Change book*, and a row of every
+  activity the book supports, so moving from a quiz to the flashcards for the
+  same book is one tap. *Change book* opens a dialog of covers with search,
+  recent books and a period filter (`openShelf()`), which replaced the old
+  select list. `assets/revise-index.json` now carries each title's `period`.
+- **The Revise home** opens on a jacket for the book: cover, opening line, a
+  ring for the key lines known, the next session, and flashcards due. Below
+  it, every key line is a square on a map, coloured by how well it is known;
+  choosing one shows the line and its note. Activities are cards grouped as
+  *Learn the words*, *Understand the ideas*, *Know the story* and *Write about
+  it*, each showing a real example from the book.
+- **The quiz stage** (`quiz-round.mjs`) answers each kind of question in its
+  own way: speakers as monogrammed roundels, characters from a "character
+  file" with the name struck out, book questions as the covers themselves,
+  years laid on a timeline (with "you were 12 years out" afterwards), plot
+  order by dragging cards or using arrows. After an answer every option
+  explains itself (who that character is, what that theme or technique
+  means) and a *Why not X?* note addresses the reader's own wrong choice.
+  *Narrow it down* and *Show first letters* are hints; a line answered
+  correctly after a hint scores, but is not promoted in the flashcard boxes.
+  The results page has a score ring, a mark for each question, a pattern in
+  the misses where there is one, each miss with its reason, and one next
+  step.
+- **Flashcards** turn in three dimensions and can be worked three ways:
+  *Recall* (the line; say who, where and why), *Complete* (the moment and the
+  first words; say the line) and *Memorise* (the line with more of its words
+  reduced to first letters each step). Space turns, the arrow keys mark, and
+  a turned card can be swiped. The five boxes are drawn as stacks under the
+  card. The chosen mode is remembered in `astor-flashcard-mode`.
+- **The essay planner** is four steps — question, argument, paragraphs,
+  review — with coaching on whether the argument and each paragraph do their
+  job, starters to click in, the model route to compare against, and an
+  evidence picker that puts the quotations fitting that paragraph's step
+  first. Plans are kept per book and question in `astor-essay-plans` and can
+  be copied, downloaded or printed on their own.
+- **Defend the reading** is set as a debate: the reading against the
+  objection, with a balance that tips as evidence is added, then the unused
+  line that tells most against the reader's case, to answer in writing.
+- **Today** is set as an almanac: the date, the Daily Five as the main event
+  (no hints), then the passage, book and anniversary of the day with covers.
+
+`tests/revise-experience.test.mjs` checks that every question in every
+one-book activity comes from the chosen book, that the study bar offers
+exactly the activities a book can run, and that every activity page carries
+the study bar and its instructions.
+
 ---
 
 ## 5. Accuracy
