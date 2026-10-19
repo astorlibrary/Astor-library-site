@@ -454,6 +454,18 @@ stays in view at the foot of the screen on a phone), and the full note is
 folded under *Why?*. Completion screens count the score up inside its ring,
 award up to three stars, and fold the misses away behind one line.
 
+**Final polish.** Stars mean the same thing in every activity: one for
+finishing, two for 70 per cent or better (7 out of 10, 4 out of 5 on Today),
+three for a perfect round (`starsFor()` in `quiz-round.mjs`). The completion
+screen shows the key with the next star picked out, and the Revise home shows
+each quiz's best stars. Misses on the completion screen are soft numbered
+tiles under "Try the ones I missed again". In Order the plot the checked
+cards slide into the right order, each saying where the reader had it.
+Anything the pages scroll to stops clear of the sticky site header
+(`--rx-header`, measured in `revise-kit.mjs`), the activity row shows arrows
+when there is more to swipe to, and the end-of-page links sit in a compact
+row on phones.
+
 `tests/revise-experience.test.mjs` checks that every question in every
 one-book activity comes from the chosen book, that the study bar offers
 exactly the activities a book can run, and that every activity page carries

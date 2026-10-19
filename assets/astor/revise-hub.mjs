@@ -11,7 +11,7 @@ import { el, clear, shuffle, seededRandom, hashString } from './util.mjs';
 import { snapshot, today, streak, recentlyViewed, dailyResult, isRemembering } from './store.mjs';
 import { resultGrid } from './questions.mjs';
 import { maskName } from './questions.mjs';
-import { scoreRing } from './quiz-round.mjs';
+import { scoreRing, starsFor } from './quiz-round.mjs';
 import {
   loadShelf, loadBook, drawing, setAccent, keepAddress, preferredSlug,
   LIBRARY_QUIZZES, availableQuizzes, bookLines, lineSummary, lastRevised,
@@ -254,10 +254,11 @@ function activityCard(id, book, meta, state, counts) {
   const result = state.scores?.[id]?.byBook?.[book.slug];
   let status = 'New';
   let ratio = null;
+  let stars = null;
   if (result) {
     const last = result.lastTotal ? result.last + '/' + result.lastTotal : result.best + '/' + result.total;
     status = 'Last ' + last + (result.lastAt ? ' · ' + whenLabel(result.lastAt) : '');
-    ratio = result.total ? result.best / result.total : null;
+    if (result.total) stars = starsFor(result.best, result.total);
   }
   if (id === 'flashcards') {
     const met = counts.known + counts.growing + counts.shaky;
@@ -273,6 +274,7 @@ function activityCard(id, book, meta, state, counts) {
       el('span', { class: 'rx-activity-note', text: note }),
       el('span', { class: 'rx-activity-status' + (result || ratio !== null ? ' is-tried' : '') }, [
         el('span', { text: status }),
+        stars !== null ? el('span', { class: 'rx-mini-stars', role: 'img', 'aria-label': 'Best: ' + stars + ' of 3 stars' }, [0, 1, 2].map(index => el('i', { class: index < stars ? 'is-earned' : '', text: '★' }))) : null,
         ratio !== null ? el('span', { class: 'rx-meter' }, [el('i', { style: 'width:' + Math.round(ratio * 100) + '%' })]) : null
       ])
     ])

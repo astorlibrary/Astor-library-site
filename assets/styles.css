@@ -2148,3 +2148,4 @@
   .astor-buy-actions{grid-column:2;justify-content:flex-start}
   .astor-page-credit a+a{margin-left:14px}
 }
+.skip-link:focus:not(:focus-visible){transform:translateY(-180%)}

@@ -85,3 +85,16 @@ test('every Revise activity page opens on the study bar, a heading and one sente
     assert.doesNotMatch(html, /rx-bar-mount/, id + ' ranges across the library and should not name one book');
   }
 });
+
+test('stars mean the same everywhere: finish, 70 per cent, perfect', async () => {
+  const { starsFor, starTarget } = await import('../assets/astor/quiz-round.mjs');
+  assert.equal(starsFor(0, 10), 1, 'finishing earns one star');
+  assert.equal(starsFor(6, 10), 1);
+  assert.equal(starsFor(7, 10), 2, '7 out of 10 earns two');
+  assert.equal(starsFor(9, 10), 2);
+  assert.equal(starsFor(10, 10), 3, 'a perfect round earns three');
+  assert.equal(starTarget(10), 7);
+  assert.equal(starTarget(5), 4, 'Today’s five: 4 for the second star');
+  assert.equal(starsFor(4, 5), 2);
+  assert.equal(starsFor(0, 0), 0, 'nothing played, nothing earned');
+});

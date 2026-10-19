@@ -3236,3 +3236,82 @@ html[data-theme="dark"] .rx-options.is-tiles .rx-option:not(.is-right):not(.is-w
   .rx-option, .rx-word, .rx-order.is-checked .rx-order-row, .rx-score.is-bump, .rx-run.is-live, .rx-card.is-correct, .rx-star.is-earned, .is-shining .rx-burst i, .rx-more-body { animation: none !important; }
   .rx-track li i { transition: none; }
 }
+
+/* ============================================================== rx: polish
+   Mobile fixes and the final refinements. */
+
+/* Anything a Revise page scrolls to stops clear of the sticky site header
+   (--rx-header is measured by revise-kit.mjs). */
+.rv-quiz, .rv-tool, .rx-results, .rx-card, .rx-feedback, .rx-essay, .rx-essay-main, .rx-doc, .rx-picker-slot,
+.rx-bench, .rx-counter, .rx-case-out, .rx-debate-step, #astor-daily-game, .rx-daily-done {
+  scroll-margin-top: calc(var(--rx-header, 0px) + 12px);
+}
+
+/* the activity row says when there is more to swipe to */
+.rx-acts-row { position: relative; }
+.rx-acts { -webkit-mask-image: none; mask-image: none; }
+.rx-acts-arrow {
+  appearance: none; position: absolute; top: 50%; z-index: 2; display: none; place-items: center; width: 34px; height: 34px; margin-top: -15px; padding: 0 0 3px;
+  border: 1px solid var(--rx-line-strong); border-radius: 50%; background: var(--rx-paper); color: var(--rx-ink); cursor: pointer;
+  font: 400 24px/1 Georgia, 'Times New Roman', serif; box-shadow: 0 4px 12px -4px rgba(32, 28, 26, .35);
+}
+.rx-acts-arrow.is-back { left: -4px; }
+.rx-acts-arrow.is-more { right: -4px; }
+.rx-acts-row.has-back .rx-acts-arrow.is-back, .rx-acts-row.has-more .rx-acts-arrow.is-more { display: grid; }
+.rx-acts-row::before, .rx-acts-row::after { content: ''; position: absolute; top: 0; bottom: 0; z-index: 1; width: 56px; pointer-events: none; opacity: 0; transition: opacity .2s ease; }
+.rx-acts-row::before { left: -4px; background: linear-gradient(90deg, var(--surface-paper,#f8f1e9) 30%, transparent); }
+.rx-acts-row::after { right: -4px; background: linear-gradient(270deg, var(--surface-paper,#f8f1e9) 30%, transparent); }
+.rx-acts-row.has-back::before, .rx-acts-row.has-more::after { opacity: 1; }
+.rx-acts-row.has-more .rx-acts-arrow.is-more { animation: rx-nudge 1.4s ease-in-out 2 .8s; }
+@keyframes rx-nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(4px); } }
+.rx-acts-arrow:hover { border-color: var(--rx-accent-ink); color: var(--rx-accent-ink); }
+
+/* order the plot: cards like slips, and an answer that is simply the right order */
+.rx-order-row { border-left: 4px solid color-mix(in srgb, var(--rx-accent) 45%, var(--rx-line)); background: var(--rx-paper); }
+.rx-order-number { min-width: 34px; height: 34px; border-radius: 6px; background: color-mix(in srgb, var(--rx-accent) 10%, var(--rx-paper)); color: var(--rx-accent-ink); font: 400 17px/1 Georgia, 'Times New Roman', serif; }
+.rx-order.is-checked .rx-order-row { grid-template-columns: auto minmax(0, 1fr) auto; animation: none; }
+.rx-order.is-checked .rx-order-grip { display: none; }
+.rx-order.is-checked .rx-order-number { display: grid; min-width: 52px; padding: 0 8px; font: 700 12.5px/1 var(--astor-sans); white-space: nowrap; }
+.rx-order-row.is-right { border-color: var(--rx-right); border-left-color: var(--rx-right); background: color-mix(in srgb, var(--rx-right) 7%, var(--rx-paper)); }
+.rx-order-row.is-right .rx-order-number { background: var(--rx-right); color: var(--rx-on-fill); }
+.rx-order-row.is-moved { border-color: var(--rx-line-strong); border-left-color: var(--rx-gold); background: var(--rx-paper); }
+.rx-order-row.is-moved .rx-order-number { background: color-mix(in srgb, var(--rx-gold) 18%, var(--rx-paper)); color: var(--rx-ink); }
+.rx-order-row.is-moved .rx-order-verdict { color: var(--rx-muted); font-weight: 600; font-size: 12px; }
+.rx-order-row.is-right .rx-order-verdict { color: var(--rx-right); }
+
+/* results that encourage another go */
+.rx-results-marks li.is-wrong { background: color-mix(in srgb, var(--rx-wrong) 10%, var(--rx-paper)); color: color-mix(in srgb, var(--rx-wrong) 70%, var(--rx-ink)); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--rx-wrong) 28%, transparent); font-size: 12px; }
+.rx-results-sub { margin-top: 4px; }
+.rx-button.is-retry span { font-size: 18px; line-height: 1; }
+.rx-star-key { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 6px; padding: 0; list-style: none; font: 12px/1.3 var(--astor-sans); color: var(--rx-muted); }
+.rx-star-key li { display: inline-flex; align-items: center; gap: 5px; }
+.rx-star-key b { font-weight: 400; letter-spacing: 1px; color: var(--rx-line-strong); }
+.rx-star-key li.is-earned b { color: var(--rx-gold); }
+.rx-star-key li.is-next { color: var(--rx-ink); font-weight: 700; }
+.rx-star-key li.is-next::after { content: '← next'; font-weight: 600; color: var(--rx-accent-ink); }
+.rx-mini-stars { display: inline-flex; gap: 2px; font-style: normal; font-size: 14px; line-height: 1; }
+.rx-mini-stars i { font-style: normal; color: var(--rx-line-strong); }
+.rx-mini-stars i.is-earned { color: var(--rx-gold); }
+
+/* phones: no wasted space under the activity */
+main.page-wrap:has(.rx-stage-mount, .rx-bar-mount, #astor-daily-game) { padding-bottom: 24px; }
+main:has(.rx-stage-mount, .rx-bar-mount, #astor-daily-game) > .book-end-nav { margin-top: 32px; }
+@media (max-width: 720px) {
+  main:has(.rx-stage-mount, .rx-bar-mount, #astor-daily-game) > .book-end-nav {
+    display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 22px; padding: 14px 0; font-size: 12.5px;
+  }
+  main:has(.rx-stage-mount, .rx-bar-mount, #astor-daily-game) > .book-end-nav a:first-child { flex-basis: 100%; }
+  .rx-today-grid { margin-bottom: 0; }
+}
+@media (max-width: 560px) {
+  .rx-acts-arrow { width: 30px; height: 30px; margin-top: -13px; font-size: 21px; }
+  .rx-order.is-checked .rx-order-row { gap: 8px; padding: 9px 8px; }
+  .rx-order.is-checked .rx-order-number { min-width: 44px; height: 28px; font-size: 11.5px; }
+  .rx-order-verdict { font-size: 11px; max-width: 64px; text-align: right; line-height: 1.2; white-space: normal; }
+  .rx-star-key { font-size: 11.5px; gap: 3px 10px; }
+  .rx-star-key li.is-next::after { content: '←'; }
+  .rx-results-hero { align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rx-acts-row.has-more .rx-acts-arrow.is-more { animation: none; }
+}

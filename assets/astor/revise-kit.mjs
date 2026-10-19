@@ -6,7 +6,7 @@
 // /assets/revise-index.json for the chooser and then fetch only the chosen
 // book's record. The whole-library study index is left to the explorers.
 
-import { el, clear, shuffle, seededRandom } from './util.mjs';
+import { el, clear, shuffle, seededRandom, prefersReducedMotion } from './util.mjs';
 import { loadBook, cardId } from './data.mjs';
 import { snapshot, today, recentlyViewed } from './store.mjs';
 import { GAME_BUILDERS } from './questions.mjs';
@@ -529,9 +529,46 @@ export function studyBar(head, { books, meta, icons, active, onChoose, allBooks 
     }, [activityIcon(icons, activity.id, 18), el('span', { text: activity.short })])]));
   }
   acts.append(list);
-  head.append(bar, acts);
-  // Keep the current activity in view on a narrow screen.
-  requestAnimationFrame(() => acts.querySelector('.is-here')?.scrollIntoView?.({ block: 'nearest', inline: 'center' }));
+  // When the row is wider than the screen, arrows at either end say there is
+  // more to see and scroll it; the row can still be swiped.
+  const nudge = direction => acts.scrollBy({ left: direction * acts.clientWidth * 0.7, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+  const back = el('button', { type: 'button', class: 'rx-acts-arrow is-back', 'aria-label': 'Earlier activities', tabindex: '-1', html: '&lsaquo;', onclick: () => nudge(-1) });
+  const more = el('button', { type: 'button', class: 'rx-acts-arrow is-more', 'aria-label': 'More activities', tabindex: '-1', html: '&rsaquo;', onclick: () => nudge(1) });
+  const row = el('div', { class: 'rx-acts-row' }, [back, acts, more]);
+  const edges = () => {
+    const overflow = acts.scrollWidth > acts.clientWidth + 2;
+    row.classList.toggle('has-back', overflow && acts.scrollLeft > 4);
+    row.classList.toggle('has-more', overflow && acts.scrollLeft + acts.clientWidth < acts.scrollWidth - 4);
+  };
+  acts.addEventListener('scroll', edges, { passive: true });
+  if (head.rxEdges) window.removeEventListener('resize', head.rxEdges);
+  head.rxEdges = edges;
+  window.addEventListener('resize', edges);
+  head.append(bar, row);
+  // Keep the current activity in view on a narrow screen, without moving the page.
+  requestAnimationFrame(() => {
+    const here = acts.querySelector('.is-here');
+    if (here) acts.scrollLeft = Math.max(0, here.offsetLeft - (acts.clientWidth - here.offsetWidth) / 2);
+    edges();
+  });
+}
+
+// The site header stays at the top of the screen as the page scrolls, so
+// anything the Revise pages scroll to is kept clear of it (scroll-margin-top
+// in astor-study.css reads --rx-header).
+export function headerOffset() {
+  const header = document.querySelector('.site-header');
+  if (!header) return 0;
+  const position = getComputedStyle(header).position;
+  return position === 'sticky' || position === 'fixed' ? Math.round(header.getBoundingClientRect().height) : 0;
+}
+function syncHeaderOffset() {
+  document.documentElement.style.setProperty('--rx-header', headerOffset() + 'px');
+}
+if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', syncHeaderOffset);
+  else syncHeaderOffset();
+  window.addEventListener('resize', syncHeaderOffset);
 }
 
 // Kept for the older call sites: the running head is now the study bar.

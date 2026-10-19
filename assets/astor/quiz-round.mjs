@@ -24,7 +24,7 @@
 import { el, clear, shuffle, announce, prefersReducedMotion, formatYear } from './util.mjs';
 import { recordScore, reviewCard, scores, toggleCommonplace, inCommonplace, isRemembering, streak } from './store.mjs';
 import { cardId } from './data.mjs';
-import { quotationKey, quotationFor, firstSentence, drawing, quizName, shortTitle, monogram, coverImage, quoted } from './revise-kit.mjs';
+import { quotationKey, quotationFor, firstSentence, drawing, quizName, shortTitle, monogram, coverImage, quoted, headerOffset } from './revise-kit.mjs';
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
 
@@ -525,21 +525,36 @@ export class QuizRound {
       if (!correct) line = 'The corrected words are shown in the line.';
     } else if (question.kind === 'order') {
       correct = !gaveUp && this.order.every((item, position) => item.id === question.answer[position]);
-      for (const button of this.container.querySelectorAll('.rx-move')) button.disabled = true;
-      this.orderList?.classList.add('is-checked');
+      // The cards slide into the right order, so the sequence to learn is the
+      // one on screen. A card the reader had in place keeps a tick; any other
+      // says where they had it.
+      const had = new Map(this.order.map((item, position) => [item.id, position]));
+      const labels = new Map(question.items.map(item => [item.id, item]));
+      const rows = new Map([...this.orderList.children].map(row => [row.dataset.id, row]));
+      const before = new Map([...rows].map(([id, row]) => [id, row.getBoundingClientRect().top]));
+      this.orderList.classList.add('is-checked');
       let inPlace = 0;
-      [...this.container.querySelectorAll('.rx-order-row')].forEach((row, position) => {
-        const right = correct || this.order[position].id === question.answer[position];
+      question.answer.forEach((id, position) => {
+        const row = rows.get(id);
+        if (!row) return;
+        const right = !gaveUp && had.get(id) === position;
         if (right) inPlace += 1;
-        row.classList.add(right ? 'is-right' : 'is-wrong');
-        row.style.setProperty('--i', position);
+        row.classList.add(right ? 'is-right' : 'is-moved');
         const label = row.querySelector('.rx-order-number');
-        if (label) label.textContent = this.order[position].label;
+        if (label) label.textContent = labels.get(id)?.label || String(position + 1);
         row.querySelector('.rx-order-moves')?.replaceWith(el('span', {
-          class: 'rx-order-verdict', html: right ? CHECK : '<span>' + ordinal(question.answer.indexOf(this.order[position].id) + 1) + '</span>'
+          class: 'rx-order-verdict', html: right ? CHECK + '<span class="rx-visually-hidden">In place</span>' : '<span>You had it ' + ordinal(had.get(id) + 1) + '</span>'
         }));
+        this.orderList.append(row);
       });
-      if (!correct) line = inPlace + ' of ' + this.order.length + ' in the right place. Each card shows where it belongs.';
+      for (const button of this.container.querySelectorAll('.rx-move')) button.disabled = true;
+      if (!prefersReducedMotion()) {
+        for (const [id, row] of rows) {
+          const shift = before.get(id) - row.getBoundingClientRect().top;
+          if (shift) row.animate?.([{ transform: 'translateY(' + shift + 'px)' }, { transform: 'none' }], { duration: 520, easing: 'cubic-bezier(.3,.8,.25,1)' });
+        }
+      }
+      if (!correct) line = (gaveUp ? 'Here is the right order.' : inPlace + ' of ' + this.order.length + ' were in place. This is the right order.');
     }
 
     this.checked = true;
@@ -607,10 +622,6 @@ export class QuizRound {
     const where = this.whereLine(question, quotation);
     if (where) more.append(el('p', { class: 'rx-where', text: where }));
     if (question.kind === 'cloze' && quotation && !correct) more.append(el('p', { class: 'rx-fullline', text: quoted(quotation.text) }));
-    if (question.kind === 'order' && !correct) {
-      const labels = new Map(question.items.map(item => [item.id, item]));
-      more.append(el('ol', { class: 'rx-right-order' }, question.answer.map(id => el('li', {}, [el('b', { text: labels.get(id)?.label || id }), el('span', { text: labels.get(id)?.text || '' })]))));
-    }
     const analysis = quotation?.analysis || question.explain;
     if (analysis) more.append(el('p', { class: 'rx-analysis', text: analysis }));
     if (quotation && question.explain && question.explain !== quotation.analysis) {
@@ -693,7 +704,7 @@ export class QuizRound {
     this.clearQuestionState();
     this.render();
     const top = this.container.getBoundingClientRect().top;
-    if (top < 0 || top > window.innerHeight * 0.4) this.container.scrollIntoView?.({ block: 'start', behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+    if (top < headerOffset() || top > window.innerHeight * 0.4) this.container.scrollIntoView?.({ block: 'start', behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
   }
 
   restart(questions) {
@@ -723,6 +734,7 @@ export class QuizRound {
 
     const ratio = total ? score / total : 0;
     const previous = before?.total ? before.best / before.total : beforeAll?.bestTotal ? beforeAll.best / beforeAll.bestTotal : null;
+    const bestStars = before?.total ? starsFor(before.best, before.total) : beforeAll?.bestTotal ? starsFor(beforeAll.best, beforeAll.bestTotal) : null;
     const newBest = previous !== null && !practice && ratio > previous;
     const missed = this.questions.map((question, position) => ({ question, position })).filter(entry => !this.answers[entry.position]);
 
@@ -731,9 +743,11 @@ export class QuizRound {
       score, total,
       kicker: [book ? shortTitle(book) : '', practice ? 'Second go' : quizName(gameId)].filter(Boolean).join(' · '),
       title: headline(ratio, practice),
+      sub: encouragement(score, total, practice),
+      best: practice ? null : bestStars,
       chips: [
         this.bestRun >= 3 ? this.bestRun + ' in a row' : '',
-        newBest ? 'New best' : '',
+        newBest ? 'New best score' : '',
         (() => { const run = streak(); return run.live && run.current >= 2 ? run.current + '-day streak' : ''; })()
       ].filter(Boolean)
     }));
@@ -742,8 +756,8 @@ export class QuizRound {
     this.questions.forEach((question, position) => {
       const right = this.answers[position];
       marks.append(el('li', { class: right ? (this.helped[position] ? 'is-right is-helped' : 'is-right') : 'is-wrong', style: '--i:' + position }, [
-        el('span', { class: 'rx-visually-hidden', text: 'Question ' + (position + 1) + ': ' + (right ? (this.helped[position] ? 'right with a hint' : 'right') : 'missed') }),
-        el('span', { 'aria-hidden': 'true', html: right ? CHECK : CROSS })
+        el('span', { class: 'rx-visually-hidden', text: 'Question ' + (position + 1) + ': ' + (right ? (this.helped[position] ? 'right with a hint' : 'right') : 'to try again') }),
+        el('span', { 'aria-hidden': 'true', html: right ? CHECK : String(position + 1) })
       ]));
     });
     page.append(marks);
@@ -751,7 +765,7 @@ export class QuizRound {
     const actions = el('div', { class: 'rx-results-actions' });
     if (missed.length) {
       actions.append(el('button', {
-        class: 'rx-button is-primary', type: 'button', text: missed.length === 1 ? 'Retry the one I missed' : 'Retry the ' + missed.length + ' I missed',
+        class: 'rx-button is-primary is-retry', type: 'button', html: '<span aria-hidden="true">↻</span> ' + (missed.length === 1 ? 'Try the one I missed again' : 'Try the ' + missed.length + ' I missed again'),
         onclick: () => this.goOver(missed.map(entry => entry.question))
       }));
     }
@@ -866,28 +880,51 @@ function headline(ratio, practice) {
   if (ratio >= 0.8) return 'Excellent.';
   if (ratio >= 0.6) return 'Well read.';
   if (ratio >= 0.4) return 'Getting there.';
-  return 'A place to start.';
+  return 'Good start.';
 }
 
+function encouragement(score, total, practice) {
+  const missed = total - score;
+  if (!missed) return practice ? 'Every one right this time.' : '';
+  if (practice) return score + ' of ' + total + ' put right. Another go will fix the rest.';
+  return 'You got ' + score + ' right. Trying the ' + (missed === 1 ? 'one' : missed) + ' you missed again is the quickest way to learn ' + (missed === 1 ? 'it' : 'them') + '.';
+}
+
+// Stars, the same everywhere: one for finishing, two for 70 per cent or
+// better (7 out of 10), three for a perfect round.
 export function starsFor(score, total) {
-  const ratio = total ? score / total : 0;
-  return ratio >= 1 ? 3 : ratio >= 0.7 ? 2 : ratio >= 0.4 ? 1 : 0;
+  if (!total) return 0;
+  if (score >= total) return 3;
+  if (score >= starTarget(total)) return 2;
+  return 1;
+}
+export function starTarget(total) {
+  return Math.max(1, Math.ceil(total * 0.7 - 1e-9));
 }
 
 // The top of every completion screen: the score counting up inside its ring,
 // up to three stars, the headline and a few small facts as chips.
-export function completion({ score, total, kicker, title, chips = [], sub = '' }) {
+export function completion({ score, total, kicker, title, chips = [], sub = '', best = null }) {
   const stars = starsFor(score, total);
   const starRow = el('p', { class: 'rx-stars', role: 'img', 'aria-label': stars + ' of 3 stars' });
   for (let index = 0; index < 3; index += 1) {
     starRow.append(el('span', { class: 'rx-star' + (index < stars ? ' is-earned' : ''), style: '--i:' + index, html: STAR }));
   }
+  if (best !== null && stars > best) chips = ['New best: ' + '★'.repeat(stars), ...chips.filter(chip => chip !== 'New best score')];
+  // What each star is for, with the next one to aim at picked out.
+  const target = starTarget(total);
+  const key = el('ul', { class: 'rx-star-key', 'aria-label': 'How stars are earned' }, [
+    ['★', 'Finish'], ['★★', target + ' out of ' + total], ['★★★', 'All ' + total]
+  ].map(([mark, label], index) => el('li', { class: index < stars ? 'is-earned' : index === stars ? 'is-next' : '' }, [
+    el('b', { 'aria-hidden': 'true', text: mark }), el('span', { text: label })
+  ])));
   return el('div', { class: 'rx-results-hero' }, [
     el('div', { class: 'rx-ring-wrap' }, [scoreRing(score, total), el('span', { class: 'rx-burst', 'aria-hidden': 'true' }, Array.from({ length: 14 }, (_, index) => el('i', { style: '--a:' + (index * 360 / 14) + 'deg;--d:' + (70 + (index % 3) * 14) + 'px;--i:' + index })))]),
     el('div', { class: 'rx-results-words' }, [
       kicker ? el('p', { class: 'rx-results-what', text: kicker }) : null,
       el('h2', { class: 'rx-results-title', tabindex: '-1', text: title }),
       starRow,
+      key,
       sub ? el('p', { class: 'rx-results-sub', text: sub }) : null,
       chips.length ? el('ul', { class: 'rx-chips' }, chips.map(chip => el('li', { text: chip }))) : null
     ])
