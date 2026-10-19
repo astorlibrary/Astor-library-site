@@ -98,3 +98,36 @@ test('stars mean the same everywhere: finish, 70 per cent, perfect', async () =>
   assert.equal(starsFor(4, 5), 2);
   assert.equal(starsFor(0, 0), 0, 'nothing played, nothing earned');
 });
+
+const { contrast } = require('../scripts/editions.js');
+const LAYOUTS = ['centred', 'page', 'framed'];
+const VOICES = ['italic', 'roman', 'caps'];
+const TEXTURES = ['plain', 'laid', 'ruled', 'grain', 'glow'];
+
+test('every book wears an edition the stylesheet knows how to draw', () => {
+  for (const book of shelf.books) {
+    const edition = book.edition;
+    assert.ok(edition, book.slug + ' has no edition');
+    assert.ok(['light', 'dark'].includes(edition.mode), book.slug + ' mode');
+    assert.ok(LAYOUTS.includes(edition.layout), book.slug + ' layout ' + edition.layout);
+    assert.ok(VOICES.includes(edition.voice), book.slug + ' voice ' + edition.voice);
+    assert.ok(TEXTURES.includes(edition.texture), book.slug + ' texture ' + edition.texture);
+  }
+});
+
+test('both palettes of every edition keep their text readable', () => {
+  const pairs = [
+    ['ink', 'ground', 7], ['ink', 'surface', 7], ['soft', 'surface', 4.5], ['soft', 'ground', 4.5],
+    ['accentText', 'surface', 4.5], ['accentText', 'sunk', 4.5], ['buttonInk', 'button', 4.5],
+    ['heroInk', 'hero', 4.5], ['right', 'surface', 4.5], ['wrong', 'surface', 4.5]
+  ];
+  for (const book of shelf.books) {
+    for (const mode of ['light', 'dark']) {
+      const palette = book.edition[mode];
+      for (const [text, ground, ratio] of pairs) {
+        const value = contrast(palette[text], palette[ground]);
+        assert.ok(value >= ratio, `${book.slug} ${mode}: ${text} on ${ground} is ${value.toFixed(2)}`);
+      }
+    }
+  }
+});

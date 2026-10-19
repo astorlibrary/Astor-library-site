@@ -466,10 +466,53 @@ Anything the pages scroll to stops clear of the sticky site header
 when there is more to swipe to, and the end-of-page links sit in a compact
 row on phones.
 
+**Editions: every book its own design.** Revise now dresses itself in the
+book being studied, taken from that book's Astor edition, while navigation,
+controls, game mechanics and accessibility stay identical everywhere. There is
+one interface and one stylesheet; what varies is a small set of tokens and
+three choices, worked out for each title at build time:
+
+- *Colours.* `scripts/build-edition-colours.mjs` (run by hand, like
+  `build-book-accents.js`) reads every cover in Chromium and records the
+  ground it is printed on and its ink in `assets/edition-colours.json`.
+  `scripts/editions.js` turns that ground and the book's accent into a light
+  and a dark palette (paper, surface, ink, soft text, accent text, button,
+  hero, right, wrong, star). Every pair that carries text is pushed until it
+  meets its contrast ratio, so no edition can ship unreadable.
+- *Mode.* A cover printed on a deep colour (Jane Eyre's green) or a Gothic,
+  ghost, horror or sensation title starts dark; the rest start light. Dark is
+  simply one aspect of a book's design. The sun/moon button in the study bar
+  and the Revise home lets the reader override it (stored as
+  `astor-revise-mode`; choosing the book's own mode clears the override), and
+  a reader who set the whole site dark gets the dark palette.
+- *Register.* From the book's period, form and genre: `layout` (centred for
+  tragedies, poems and epics; page for Regency, Victorian and earlier prose;
+  framed for Gothic, comedies and modern novels), `voice` (italic, roman or
+  caps display type) and `texture` (plain, laid paper, ruled lines, grain or
+  a lamplit glow). Layout changes how a question, the feedback, the
+  completion screen, the Revise home's hero and the quotation map are
+  composed; it never moves a control.
+
+`scripts/edition-overrides.json` adjusts any title by hand (accent, ground,
+mode, layout, voice, texture, or individual palette colours); Macbeth's
+deeper red and Hamlet's ink-violet are set there. Each book's edition is
+written into `assets/revise-index.json`; `applyEdition()` in
+`revise-kit.mjs` sets the `--ed-*` tokens and the `data-edition`,
+`data-ed-mode`, `data-ed-layout`, `data-ed-voice` and `data-ed-texture`
+attributes on `<html>`, and the "rx: editions" block of `astor-study.css`
+does the rest. Pages that range across the library (Today, Which book?)
+keep the house edition. A new book gets its edition automatically when the
+study data is rebuilt; run the colour sampler once for its cover.
+
+Order the plot is now played by tapping the events in the order they
+happen: a correct tap places the card, a wrong one counts as a slip, so the
+story assembles itself without dragging.
+
 `tests/revise-experience.test.mjs` checks that every question in every
 one-book activity comes from the chosen book, that the study bar offers
-exactly the activities a book can run, and that every activity page carries
-the study bar and its instructions.
+exactly the activities a book can run, that every activity page carries
+the study bar and its instructions, that every book has a valid edition, and
+that both palettes of every edition keep text readable.
 
 ---
 
@@ -688,7 +731,10 @@ episode of the day they fall in. Both records say so in `referenceStyle`.
 3. `node scripts/rebuild-library.js` — this validates the record, regenerates
    the indexes, writes a study page if the title has an Astor study edition,
    and flips its hub card to point at the page.
-4. `node scripts/build-static.js && node scripts/check-site.js && npm test`.
+4. For Revise, `node scripts/build-edition-colours.mjs` reads the new cover's
+   colours, then `node scripts/rebuild-study-data.js` gives the book its
+   edition. Adjust it in `scripts/edition-overrides.json` if needed.
+5. `node scripts/build-static.js && node scripts/check-site.js && npm test`.
 
 The book page, the study page, the explorers, the glossary, the timeline, the
 map, the search palette, nine games, a flashcard deck, the essay forge, the

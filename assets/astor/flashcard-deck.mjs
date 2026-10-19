@@ -329,17 +329,11 @@ function sitting(book, meta, mode, only = null) {
     const missedLines = queue.filter((_, index) => !results[index]);
     const page = el('div', { class: 'rx-results rx-deck-end' + (reviewed && knew / reviewed >= 0.8 ? ' is-shining' : '') });
     page.append(completion({
-      score: knew, total: reviewed,
-      kicker: shortTitle(book) + ' · Flashcards',
+      score: knew, total: reviewed, marks: results,
+      kicker: 'Flashcards',
       title: knew === reviewed ? 'Every card known.' : knew / reviewed >= 0.6 ? 'Nicely done.' : 'Cards turned.',
-      chips: [
-        counts.known ? counts.known + ' of ' + book.quotations.length + ' lines known' : '',
-        left ? left + ' still waiting today' : 'Nothing else due today'
-      ].filter(Boolean)
+      sub: (counts.known ? counts.known + ' of the ' + book.quotations.length + ' key lines are known. ' : '') + (left ? left + (left === 1 ? ' line is' : ' lines are') + ' still waiting today.' : 'Nothing else is due today.')
     }));
-    const marks = el('ol', { class: 'rx-results-marks', 'aria-hidden': 'true' });
-    results.forEach((right, index) => marks.append(el('li', { class: right ? 'is-right' : 'is-wrong', style: '--i:' + index, html: right ? '✓' : '✗' })));
-    page.append(marks);
 
     const actions = el('div', { class: 'rx-results-actions' });
     if (left) actions.append(el('button', { class: 'rx-button is-primary', type: 'button', text: 'Ten more cards', onclick: () => sitting(book, meta, mode) }));

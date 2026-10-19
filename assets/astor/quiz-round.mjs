@@ -61,7 +61,6 @@ const yearValue = label => {
 
 const CHECK = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>';
 const CROSS = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg>';
-const GRIP = '<svg width="14" height="20" viewBox="0 0 14 20" fill="currentColor" aria-hidden="true"><circle cx="4" cy="4" r="1.6"/><circle cx="10" cy="4" r="1.6"/><circle cx="4" cy="10" r="1.6"/><circle cx="10" cy="10" r="1.6"/><circle cx="4" cy="16" r="1.6"/><circle cx="10" cy="16" r="1.6"/></svg>';
 const STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 17l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6Z"/></svg>';
 
 export class QuizRound {
@@ -133,7 +132,7 @@ export class QuizRound {
     if (event.key === 'Enter') {
       event.preventDefault();
       if (this.checked) this.next();
-      else if (question.kind !== 'choice') this.check();
+      else if (question.kind === 'cloze') this.check();
     }
   }
 
@@ -196,7 +195,7 @@ export class QuizRound {
     else if (question.kind === 'order') card.append(this.renderOrder(question));
 
     this.actions = el('div', { class: 'rx-actions' });
-    if (question.kind !== 'choice') {
+    if (question.kind === 'cloze') {
       this.checkButton = el('button', { class: 'rx-button is-primary', type: 'button', text: 'Check', onclick: () => this.check() });
       this.actions.append(this.checkButton);
     }
@@ -210,6 +209,8 @@ export class QuizRound {
         this.hintButton = el('button', { class: 'rx-button is-quiet', type: 'button', onclick: () => this.hint() }, [
           el('span', { class: 'rx-hint-icon', 'aria-hidden': 'true', text: 'A' }), el('span', { text: 'First letters' })
         ]);
+      } else if (question.kind === 'order') {
+        this.hintButton = el('button', { class: 'rx-button is-quiet', type: 'button', text: 'Show the next one', onclick: () => this.hint() });
       }
       if (this.hintButton) this.actions.append(this.hintButton);
     }
@@ -349,100 +350,79 @@ export class QuizRound {
     this.markNextBlank();
   }
 
+  // Order the plot, played by tapping: the story so far fills from the top,
+  // one event at a time, and the reader taps whichever event comes next. A
+  // wrong tap is marked where it stands ("Later than that") and counts as a
+  // slip, so the list on screen only ever holds the right order and there is
+  // nothing to untangle at the end. The round is right with no slips.
   renderOrder(question) {
-    this.order = question.items.slice();
-    const list = el('ol', { class: 'rx-order' });
-    this.orderList = list;
-    const move = (from, to, direction) => {
-      const [item] = this.order.splice(from, 1);
-      this.order.splice(to, 0, item);
-      draw(item.id, direction);
-      announce(this.live, brief(item.text) + ' moved to position ' + (to + 1));
+    this.order = { placed: [], slips: 0 };
+    const labels = new Map(question.items.map(item => [item.id, item]));
+    const total = question.answer.length;
+    const story = el('ol', { class: 'rx-story', 'aria-label': 'The story so far' });
+    const slots = question.answer.map((_, position) => {
+      const slot = el('li', { class: 'rx-story-slot' + (position === 0 ? ' is-next' : '') }, [
+        el('span', { class: 'rx-story-number', text: String(position + 1) }),
+        el('span', { class: 'rx-story-text' }, [el('span', { class: 'rx-visually-hidden', text: 'Not placed yet' })])
+      ]);
+      story.append(slot);
+      return slot;
+    });
+    // Only the filled places and the next one are drawn; the rest is a count.
+    const more = el('li', { class: 'rx-story-more' });
+    story.append(more);
+    const countLeft = () => {
+      const left = total - this.order.placed.length - 1;
+      more.textContent = left > 0 ? (left === 1 ? 'One more after that' : left + ' more after that') : '';
+      more.hidden = left <= 0;
     };
-    const draw = (focusId, direction) => {
-      clear(list);
-      this.order.forEach((item, position) => {
-        const row = el('li', { class: 'rx-order-row', 'data-id': item.id }, [
-          el('span', { class: 'rx-order-grip', html: GRIP, title: 'Drag to move' }),
-          el('span', { class: 'rx-order-number', text: String(position + 1) }),
-          el('span', { class: 'rx-order-text', text: item.text }),
-          el('span', { class: 'rx-order-moves' }, [
-            el('button', {
-              class: 'rx-move', type: 'button', 'aria-label': 'Move "' + brief(item.text) + '" earlier',
-              disabled: position === 0, html: '&uarr;', onclick: () => move(position, position - 1, 'up')
-            }),
-            el('button', {
-              class: 'rx-move', type: 'button', 'aria-label': 'Move "' + brief(item.text) + '" later',
-              disabled: position === this.order.length - 1, html: '&darr;', onclick: () => move(position, position + 1, 'down')
-            })
-          ])
-        ]);
-        this.makeDraggable(row, list, draw);
-        list.append(row);
-      });
-      if (!focusId) return;
-      const moved = this.order.findIndex(item => item.id === focusId);
-      const controls = list.children[moved]?.querySelectorAll('.rx-move');
-      const wanted = controls?.[direction === 'up' ? 0 : 1];
-      (wanted && !wanted.disabled ? wanted : controls?.[direction === 'up' ? 1 : 0])?.focus();
+    countLeft();
+    const prompt = el('p', { class: 'rx-story-prompt', 'aria-live': 'polite', text: 'What comes first?' });
+    const pool = el('div', { class: 'rx-story-pool', role: 'group', 'aria-label': 'Events to place' });
+    this.orderList = story;
+    this.orderPool = pool;
+    this.orderSlots = slots;
+    this.placeNext = (id, helped = false) => {
+      const position = this.order.placed.length;
+      const item = labels.get(id);
+      this.order.placed.push(id);
+      const slot = slots[position];
+      slot.classList.remove('is-next');
+      slot.classList.add('is-filled');
+      if (helped) slot.classList.add('is-helped');
+      slot.querySelector('.rx-story-number').textContent = item.label || String(position + 1);
+      const text = slot.querySelector('.rx-story-text');
+      clear(text);
+      text.append(item.text);
+      if (!prefersReducedMotion()) slot.animate?.([{ opacity: 0, transform: 'translateY(6px)' }, { opacity: 1, transform: 'none' }], { duration: 260, easing: 'cubic-bezier(.2,.7,.2,1)' });
+      pool.querySelector('[data-id="' + CSS.escape(id) + '"]')?.remove();
+      slots[position + 1]?.classList.add('is-next');
+      countLeft();
+      const left = total - this.order.placed.length;
+      prompt.textContent = left === 0 ? '' : left === 1 ? 'And last?' : 'What comes next?';
+      announce(this.live, (item.label ? item.label + ': ' : '') + brief(item.text) + ' placed ' + ordinal(position + 1) + '.');
     };
-    draw();
-    return el('div', { class: 'rx-order-wrap' }, [
-      el('p', { class: 'rx-order-end', 'aria-hidden': 'true', text: 'First' }),
-      list,
-      el('p', { class: 'rx-order-end', 'aria-hidden': 'true', text: 'Last' })
-    ]);
-  }
-
-  // Pointer dragging for Order the plot. The row follows the finger; when it
-  // passes the middle of a neighbour the two change places in the list, and on
-  // release the order is read back from the page.
-  makeDraggable(row, list, draw) {
-    const grip = row.querySelector('.rx-order-grip');
-    const text = row.querySelector('.rx-order-text');
-    for (const handle of [grip, text]) {
-      handle.addEventListener('pointerdown', event => {
-        if (this.checked || event.button > 0) return;
-        event.preventDefault();
-        row.setPointerCapture?.(event.pointerId);
-        let startY = event.clientY;
-        let moved = false;
-        row.classList.add('is-dragging');
-        list.classList.add('is-sorting');
-        const follow = moveEvent => {
-          const offset = moveEvent.clientY - startY;
-          if (Math.abs(offset) > 3) moved = true;
-          const next = row.nextElementSibling;
-          const previous = row.previousElementSibling;
-          const before = row.offsetTop;
-          if (next && moveEvent.clientY > next.getBoundingClientRect().top + next.offsetHeight / 2) {
-            list.insertBefore(next, row);
-            startY += row.offsetTop - before;
-          } else if (previous && moveEvent.clientY < previous.getBoundingClientRect().top + previous.offsetHeight / 2) {
-            list.insertBefore(row, previous);
-            startY += row.offsetTop - before;
-          }
-          row.style.transform = 'translateY(' + (moveEvent.clientY - startY) + 'px)';
-        };
-        const drop = () => {
-          row.removeEventListener('pointermove', follow);
-          row.removeEventListener('pointerup', drop);
-          row.removeEventListener('pointercancel', drop);
-          row.style.transform = '';
-          row.classList.remove('is-dragging');
-          list.classList.remove('is-sorting');
-          if (!moved) return;
-          const ids = [...list.children].map(child => child.dataset.id);
-          this.order = ids.map(id => this.order.find(item => item.id === id));
-          const position = ids.indexOf(row.dataset.id);
-          draw();
-          announce(this.live, brief(this.order[position].text) + ' moved to position ' + (position + 1));
-        };
-        row.addEventListener('pointermove', follow);
-        row.addEventListener('pointerup', drop);
-        row.addEventListener('pointercancel', drop);
+    for (const item of question.items) {
+      const button = el('button', { type: 'button', class: 'rx-story-card', 'data-id': item.id, style: '--i:' + question.items.indexOf(item) }, [
+        el('span', { class: 'rx-story-card-text', text: item.text })
+      ]);
+      button.addEventListener('click', () => {
+        if (this.checked) return;
+        const expected = question.answer[this.order.placed.length];
+        if (item.id === expected) {
+          this.placeNext(item.id);
+          if (this.order.placed.length === total) this.check();
+          return;
+        }
+        this.order.slips += 1;
+        button.classList.add('is-slip');
+        if (!button.querySelector('.rx-story-card-note')) button.append(el('span', { class: 'rx-story-card-note', text: 'Later than that. Try another.' }));
+        this.shake(button);
+        announce(this.live, 'Not yet: that comes later.');
       });
+      pool.append(button);
     }
+    return el('div', { class: 'rx-story-wrap' }, [story, prompt, pool]);
   }
 
   // --- answering -------------------------------------------------------------
@@ -451,6 +431,13 @@ export class QuizRound {
     if (this.checked || this.hinted) return;
     const question = this.current;
     this.hinted = true;
+    if (question.kind === 'order') {
+      this.hinted = false;
+      this.order.slips += 1;
+      this.placeNext(question.answer[this.order.placed.length], true);
+      if (this.order.placed.length === question.answer.length) { this.hinted = true; this.check(); }
+      return;
+    }
     if (question.kind === 'choice') {
       const wrong = shuffle(question.options.map((_, position) => position).filter(position => position !== question.answer)).slice(0, question.options.length - 2);
       for (const position of wrong) {
@@ -524,37 +511,14 @@ export class QuizRound {
       this.container.querySelector('.rx-bank')?.classList.add('is-spent');
       if (!correct) line = 'The corrected words are shown in the line.';
     } else if (question.kind === 'order') {
-      correct = !gaveUp && this.order.every((item, position) => item.id === question.answer[position]);
-      // The cards slide into the right order, so the sequence to learn is the
-      // one on screen. A card the reader had in place keeps a tick; any other
-      // says where they had it.
-      const had = new Map(this.order.map((item, position) => [item.id, position]));
-      const labels = new Map(question.items.map(item => [item.id, item]));
-      const rows = new Map([...this.orderList.children].map(row => [row.dataset.id, row]));
-      const before = new Map([...rows].map(([id, row]) => [id, row.getBoundingClientRect().top]));
-      this.orderList.classList.add('is-checked');
-      let inPlace = 0;
-      question.answer.forEach((id, position) => {
-        const row = rows.get(id);
-        if (!row) return;
-        const right = !gaveUp && had.get(id) === position;
-        if (right) inPlace += 1;
-        row.classList.add(right ? 'is-right' : 'is-moved');
-        const label = row.querySelector('.rx-order-number');
-        if (label) label.textContent = labels.get(id)?.label || String(position + 1);
-        row.querySelector('.rx-order-moves')?.replaceWith(el('span', {
-          class: 'rx-order-verdict', html: right ? CHECK + '<span class="rx-visually-hidden">In place</span>' : '<span>You had it ' + ordinal(had.get(id) + 1) + '</span>'
-        }));
-        this.orderList.append(row);
-      });
-      for (const button of this.container.querySelectorAll('.rx-move')) button.disabled = true;
-      if (!prefersReducedMotion()) {
-        for (const [id, row] of rows) {
-          const shift = before.get(id) - row.getBoundingClientRect().top;
-          if (shift) row.animate?.([{ transform: 'translateY(' + shift + 'px)' }, { transform: 'none' }], { duration: 520, easing: 'cubic-bezier(.3,.8,.25,1)' });
-        }
-      }
-      if (!correct) line = (gaveUp ? 'Here is the right order.' : inPlace + ' of ' + this.order.length + ' were in place. This is the right order.');
+      // A round given up is finished for the reader, in the right order.
+      while (this.order.placed.length < question.answer.length) this.placeNext(question.answer[this.order.placed.length], true);
+      correct = !gaveUp && !this.hinted && this.order.slips === 0;
+      this.orderPool?.remove();
+      this.orderList?.classList.add('is-checked');
+      const slips = this.order.slips;
+      if (gaveUp) line = 'Here is the order.';
+      else if (!correct) line = (slips === 1 ? 'One slip' : slips + ' slips') + ' on the way. The story is in order above.';
     }
 
     this.checked = true;
@@ -721,6 +685,9 @@ export class QuizRound {
 
   // --- the end page ----------------------------------------------------------
 
+  // The result, simply: the stars, the number, a mark for each question, one
+  // line and one thing to do next. The lines missed are there for anyone who
+  // wants them, folded under a link.
   finish() {
     const total = this.questions.length;
     const score = this.score;
@@ -733,64 +700,41 @@ export class QuizRound {
     if (this.options.ownEnd) return;
 
     const ratio = total ? score / total : 0;
-    const previous = before?.total ? before.best / before.total : beforeAll?.bestTotal ? beforeAll.best / beforeAll.bestTotal : null;
     const bestStars = before?.total ? starsFor(before.best, before.total) : beforeAll?.bestTotal ? starsFor(beforeAll.best, beforeAll.bestTotal) : null;
-    const newBest = previous !== null && !practice && ratio > previous;
     const missed = this.questions.map((question, position) => ({ question, position })).filter(entry => !this.answers[entry.position]);
+    const step = book && this.options.next ? this.options.next(book) : null;
 
     const page = el('div', { class: 'rx-results' + (ratio >= 0.8 && !practice ? ' is-shining' : '') });
     page.append(completion({
-      score, total,
-      kicker: [book ? shortTitle(book) : '', practice ? 'Second go' : quizName(gameId)].filter(Boolean).join(' · '),
+      score, total, marks: this.answers,
+      kicker: practice ? 'Second go' : quizName(gameId),
       title: headline(ratio, practice),
-      sub: encouragement(score, total, practice),
-      best: practice ? null : bestStars,
-      chips: [
-        this.bestRun >= 3 ? this.bestRun + ' in a row' : '',
-        newBest ? 'New best score' : '',
-        (() => { const run = streak(); return run.live && run.current >= 2 ? run.current + '-day streak' : ''; })()
-      ].filter(Boolean)
+      sub: [this.pattern(), practice ? '' : starHint(score, total, bestStars)].filter(Boolean).join(' '),
+      best: practice ? null : bestStars
     }));
-
-    const marks = el('ol', { class: 'rx-results-marks', 'aria-label': 'Each question in turn' });
-    this.questions.forEach((question, position) => {
-      const right = this.answers[position];
-      marks.append(el('li', { class: right ? (this.helped[position] ? 'is-right is-helped' : 'is-right') : 'is-wrong', style: '--i:' + position }, [
-        el('span', { class: 'rx-visually-hidden', text: 'Question ' + (position + 1) + ': ' + (right ? (this.helped[position] ? 'right with a hint' : 'right') : 'to try again') }),
-        el('span', { 'aria-hidden': 'true', html: right ? CHECK : String(position + 1) })
-      ]));
-    });
-    page.append(marks);
 
     const actions = el('div', { class: 'rx-results-actions' });
     if (missed.length) {
       actions.append(el('button', {
-        class: 'rx-button is-primary is-retry', type: 'button', html: '<span aria-hidden="true">↻</span> ' + (missed.length === 1 ? 'Try the one I missed again' : 'Try the ' + missed.length + ' I missed again'),
+        class: 'rx-button is-primary is-wide', type: 'button', text: missed.length === 1 ? 'Try the one you missed' : 'Try the ' + missed.length + ' you missed',
         onclick: () => this.goOver(missed.map(entry => entry.question))
       }));
+      actions.append(el('button', { class: 'rx-text-button', type: 'button', text: 'New round', onclick: () => this.restart() }));
+    } else if (step && !practice) {
+      actions.append(el('a', { class: 'rx-button is-primary is-wide', href: step.href, text: 'Next: ' + step.label }));
+      actions.append(el('button', { class: 'rx-text-button', type: 'button', text: 'New round', onclick: () => this.restart() }));
+    } else {
+      actions.append(el('button', { class: 'rx-button is-primary is-wide', type: 'button', text: 'New round', onclick: () => this.restart() }));
     }
-    actions.append(el('button', { class: missed.length ? 'rx-button is-secondary' : 'rx-button is-primary', type: 'button', text: 'Play again', onclick: () => this.restart() }));
     page.append(actions);
-
-    const pattern = this.pattern();
-    if (pattern) page.append(el('p', { class: 'rx-insight', text: pattern }));
 
     if (missed.length) {
       const list = el('ol', { class: 'rx-review-list' });
       for (const { question, position } of missed) list.append(this.missedItem(question, this.picked[position]));
       page.append(el('details', { class: 'rx-review' }, [
-        el('summary', {}, [el('span', { text: missed.length === 1 ? 'Look over the one you missed' : 'Look over the ' + missed.length + ' you missed' })]),
+        el('summary', {}, [el('span', { text: missed.length === 1 ? 'See the one you missed' : 'See the ' + missed.length + ' you missed' })]),
         list,
-        quotationCount(missed) && isRemembering() && !practice ? el('p', { class: 'rx-review-note', text: 'Missed lines come back tomorrow in Ten questions and the flashcards.' }) : null
-      ]));
-    }
-
-    const step = book && this.options.next ? this.options.next(book) : null;
-    if (step) {
-      page.append(el('a', { class: 'rx-next', href: step.href }, [
-        el('span', { class: 'rx-next-kicker', text: 'Up next' }),
-        el('span', { class: 'rx-next-title', text: step.label }),
-        el('span', { class: 'rx-next-arrow', 'aria-hidden': 'true', text: '→' })
+        quotationCount(missed) && isRemembering() && !practice ? el('p', { class: 'rx-review-note', text: 'They come back tomorrow in Ten questions and the flashcards.' }) : null
       ]));
     }
 
@@ -876,18 +820,22 @@ function praise(run) {
 
 function headline(ratio, practice) {
   if (practice) return ratio === 1 ? 'All put right.' : 'Better each time.';
-  if (ratio === 1) return 'Word-perfect.';
+  if (ratio === 1) return 'Every one right.';
   if (ratio >= 0.8) return 'Excellent.';
-  if (ratio >= 0.6) return 'Well read.';
+  if (ratio >= 0.6) return 'Nicely done.';
   if (ratio >= 0.4) return 'Getting there.';
-  return 'Good start.';
+  return 'A good start.';
 }
 
-function encouragement(score, total, practice) {
-  const missed = total - score;
-  if (!missed) return practice ? 'Every one right this time.' : '';
-  if (practice) return score + ' of ' + total + ' put right. Another go will fix the rest.';
-  return 'You got ' + score + ' right. Trying the ' + (missed === 1 ? 'one' : missed) + ' you missed again is the quickest way to learn ' + (missed === 1 ? 'it' : 'them') + '.';
+const NUMBER_WORDS = ['none', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+const inWords = number => NUMBER_WORDS[number] || String(number);
+
+// What the next star asks for, in a sentence.
+export function starHint(score, total, best = null) {
+  const stars = starsFor(score, total);
+  if (stars === 3) return best !== null && best < 3 ? 'All three stars, and a new best.' : 'All three stars.';
+  if (stars === 2) return 'Get all ' + inWords(total) + ' for the third star.';
+  return 'Get ' + starTarget(total) + ' for the second star.';
 }
 
 // Stars, the same everywhere: one for finishing, two for 70 per cent or
@@ -902,48 +850,42 @@ export function starTarget(total) {
   return Math.max(1, Math.ceil(total * 0.7 - 1e-9));
 }
 
-// The top of every completion screen: the score counting up inside its ring,
-// up to three stars, the headline and a few small facts as chips.
-export function completion({ score, total, kicker, title, chips = [], sub = '', best = null }) {
+// The top of every completion screen: up to three stars, the score in large
+// type, a small mark for each question (filled or empty, never red), the
+// headline and one line. `chips` are a few short facts set as one quiet line.
+export function completion({ score, total, kicker, title, chips = [], sub = '', best = null, marks = null }) {
   const stars = starsFor(score, total);
   const starRow = el('p', { class: 'rx-stars', role: 'img', 'aria-label': stars + ' of 3 stars' });
   for (let index = 0; index < 3; index += 1) {
     starRow.append(el('span', { class: 'rx-star' + (index < stars ? ' is-earned' : ''), style: '--i:' + index, html: STAR }));
   }
-  if (best !== null && stars > best) chips = ['New best: ' + '★'.repeat(stars), ...chips.filter(chip => chip !== 'New best score')];
-  // What each star is for, with the next one to aim at picked out.
-  const target = starTarget(total);
-  const key = el('ul', { class: 'rx-star-key', 'aria-label': 'How stars are earned' }, [
-    ['★', 'Finish'], ['★★', target + ' out of ' + total], ['★★★', 'All ' + total]
-  ].map(([mark, label], index) => el('li', { class: index < stars ? 'is-earned' : index === stars ? 'is-next' : '' }, [
-    el('b', { 'aria-hidden': 'true', text: mark }), el('span', { text: label })
-  ])));
+  const markRow = marks && marks.length ? el('ol', { class: 'rx-results-marks', 'aria-hidden': 'true', style: '--n:' + marks.length },
+    marks.map((right, index) => el('li', { class: right ? 'is-right' : '', style: '--i:' + index }))) : null;
   return el('div', { class: 'rx-results-hero' }, [
-    el('div', { class: 'rx-ring-wrap' }, [scoreRing(score, total), el('span', { class: 'rx-burst', 'aria-hidden': 'true' }, Array.from({ length: 14 }, (_, index) => el('i', { style: '--a:' + (index * 360 / 14) + 'deg;--d:' + (70 + (index % 3) * 14) + 'px;--i:' + index })))]),
-    el('div', { class: 'rx-results-words' }, [
-      kicker ? el('p', { class: 'rx-results-what', text: kicker }) : null,
-      el('h2', { class: 'rx-results-title', tabindex: '-1', text: title }),
-      starRow,
-      key,
-      sub ? el('p', { class: 'rx-results-sub', text: sub }) : null,
-      chips.length ? el('ul', { class: 'rx-chips' }, chips.map(chip => el('li', { text: chip }))) : null
-    ])
+    kicker ? el('p', { class: 'rx-results-what', text: kicker }) : null,
+    starRow,
+    el('p', { class: 'rx-results-score', role: 'img', 'aria-label': score + ' out of ' + total }, [
+      el('b', { 'aria-hidden': 'true', text: String(score) }),
+      el('span', { 'aria-hidden': 'true', text: 'out of ' + inWords(total) })
+    ]),
+    markRow,
+    el('h2', { class: 'rx-results-title', tabindex: '-1', text: title }),
+    sub ? el('p', { class: 'rx-results-sub', text: sub }) : null,
+    chips.length ? el('p', { class: 'rx-results-note', text: chips.join(' · ') }) : null
   ]);
 }
 
-// The ring fills and the number counts up; both are skipped when the reader
-// has asked for less motion.
+// The number counts up and the stars arrive; both are skipped when the
+// reader has asked for less motion.
 export function celebrate(page) {
   if (prefersReducedMotion()) return;
-  page.animate?.([{ opacity: 0, transform: 'translateY(12px) scale(.985)' }, { opacity: 1, transform: 'none' }], { duration: 340, easing: 'cubic-bezier(.2,.7,.2,1)' });
-  const arc = page.querySelector('.rx-ring-value');
-  if (arc) arc.animate?.([{ strokeDashoffset: arc.getAttribute('data-full') }, { strokeDashoffset: arc.style.strokeDashoffset }], { duration: 1000, easing: 'cubic-bezier(.3,.7,.2,1)' });
-  const number = page.querySelector('.rx-ring-label b');
+  page.animate?.([{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'none' }], { duration: 340, easing: 'cubic-bezier(.2,.7,.2,1)' });
+  const number = page.querySelector('.rx-results-score b');
   const target = Number(number?.textContent || 0);
   if (number && target > 0) {
     const start = performance.now();
     const tick = now => {
-      const progress = Math.min(1, (now - start) / 900);
+      const progress = Math.min(1, (now - start) / 800);
       number.textContent = String(Math.round(target * (1 - Math.pow(1 - progress, 3))));
       if (progress < 1) requestAnimationFrame(tick);
     };

@@ -70,6 +70,93 @@ export function drawing(paths, size = 24, className = '') {
 
 export function setAccent(node, meta) {
   if (node && meta?.accent) node.style.setProperty('--book-accent', meta.accent);
+  applyEdition(meta);
+}
+
+// --- the book's edition ------------------------------------------------------
+//
+// Every book carries an edition (scripts/editions.js): a light and a dark
+// palette drawn from its cover, the mode it wears by default, and a register
+// (layout, voice, texture). Applying one writes the palette as custom
+// properties and the register as data attributes on <html>; the "rx:
+// editions" block of astor-study.css does the rest. Nothing about how a game
+// is played changes from book to book.
+
+const MODE_KEY = 'astor-revise-mode';
+const TOKENS = {
+  ground: '--ed-ground', surface: '--ed-surface', sunk: '--ed-sunk', ink: '--ed-ink', soft: '--ed-soft',
+  accent: '--ed-accent', accentText: '--ed-accent-text', button: '--ed-button', buttonInk: '--ed-button-ink',
+  hero: '--ed-hero', heroInk: '--ed-hero-ink', line: '--ed-line', lineStrong: '--ed-line-strong',
+  right: '--ed-right', wrong: '--ed-wrong', star: '--ed-star', onFill: '--ed-on-fill'
+};
+
+export function modeOverride() {
+  try {
+    const value = window.localStorage.getItem(MODE_KEY);
+    return value === 'light' || value === 'dark' ? value : '';
+  } catch { return ''; }
+}
+
+// The reader's own choice wins; then a site-wide dark theme they chose; then
+// the edition's own mode.
+export function editionMode(edition) {
+  const chosen = modeOverride();
+  if (chosen) return chosen;
+  let site = '';
+  try { site = window.localStorage.getItem('astor-theme') || ''; } catch { /* optional */ }
+  if (site === 'dark') return 'dark';
+  return edition?.mode === 'dark' ? 'dark' : 'light';
+}
+
+let currentMeta = null;
+
+export function applyEdition(meta) {
+  if (typeof document === 'undefined') return;
+  const html = document.documentElement;
+  const edition = meta?.edition;
+  currentMeta = meta || null;
+  if (!edition) {
+    for (const token of Object.values(TOKENS)) html.style.removeProperty(token);
+    for (const key of ['edition', 'edMode', 'edLayout', 'edVoice', 'edTexture']) delete html.dataset[key];
+    return;
+  }
+  const mode = editionMode(edition);
+  const palette = edition[mode] || edition.light;
+  for (const [key, token] of Object.entries(TOKENS)) if (palette[key]) html.style.setProperty(token, palette[key]);
+  html.dataset.edition = meta.slug;
+  html.dataset.edMode = mode;
+  html.dataset.edLayout = edition.layout || 'centred';
+  html.dataset.edVoice = edition.voice || 'italic';
+  html.dataset.edTexture = edition.texture || 'plain';
+  document.querySelector('meta[name=theme-color]')?.setAttribute('content', palette.ground);
+  for (const button of document.querySelectorAll('.rx-mode-toggle')) paintModeToggle(button, mode);
+}
+
+// One button: it switches to the other palette. Switching back to the
+// edition's own mode clears the choice, so each book wears its own again.
+export function modeToggle(className = 'rx-mode-toggle') {
+  const button = el('button', { type: 'button', class: className, onclick: () => {
+    const edition = currentMeta?.edition;
+    if (!edition) return;
+    const next = editionMode(edition) === 'dark' ? 'light' : 'dark';
+    try {
+      if (next === edition.mode) window.localStorage.removeItem(MODE_KEY);
+      else window.localStorage.setItem(MODE_KEY, next);
+    } catch { /* storage is optional */ }
+    applyEdition(currentMeta);
+  } });
+  paintModeToggle(button, currentMeta?.edition ? editionMode(currentMeta.edition) : 'light');
+  return button;
+}
+
+function paintModeToggle(button, mode) {
+  const toDark = mode !== 'dark';
+  button.setAttribute('aria-label', toDark ? 'Use dark colours for this book' : 'Use light colours for this book');
+  button.setAttribute('aria-pressed', String(mode === 'dark'));
+  button.title = toDark ? 'Dark colours' : 'Light colours';
+  button.innerHTML = toDark
+    ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>'
+    : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>';
 }
 
 // --- dates -------------------------------------------------------------------
@@ -516,7 +603,7 @@ export function studyBar(head, { books, meta, icons, active, onChoose, allBooks 
     el('a', { class: 'rx-bar-title', href: '/play/?book=' + encodeURIComponent(meta.slug), text: meta.title }),
     el('span', { class: 'rx-bar-author', text: meta.author })
   ]);
-  const bar = el('div', { class: 'rx-bar' }, [cover, identity, changeBookButton({ books, current: meta, onChoose })]);
+  const bar = el('div', { class: 'rx-bar' }, [cover, identity, el('div', { class: 'rx-bar-tools' }, [modeToggle(), changeBookButton({ books, current: meta, onChoose })])]);
 
   const acts = el('nav', { class: 'rx-acts', 'aria-label': 'Activities for ' + meta.title });
   const list = el('ul', {});

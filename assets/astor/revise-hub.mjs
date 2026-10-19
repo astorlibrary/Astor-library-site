@@ -16,7 +16,7 @@ import {
   loadShelf, loadBook, drawing, setAccent, keepAddress, preferredSlug,
   LIBRARY_QUIZZES, availableQuizzes, bookLines, lineSummary, lastRevised,
   sessionPlan, sessionLine, whenLabel, clip, STATE_WORDS, shortTitle,
-  changeBookButton, coverImage, monogram, activityIcon, activityHref, hasActivity, quoted
+  changeBookButton, coverImage, monogram, activityIcon, activityHref, hasActivity, quoted, modeToggle
 } from './revise-kit.mjs';
 
 const titleMount = document.querySelector('#rv-title');
@@ -101,7 +101,8 @@ function drawHero(meta, book, state, counts, day) {
           activityIcon(shelf.icons, 'flashcards', 18),
           el('span', { text: counts.due ? 'Flashcards · ' + counts.due + ' due' : 'Flashcards' })
         ]) : null,
-        changeBookButton({ books: shelf.books, current: meta, onChoose: choice => show(choice), className: 'rx-hero-link is-button' })
+        changeBookButton({ books: shelf.books, current: meta, onChoose: choice => show(choice), className: 'rx-hero-link is-button' }),
+        modeToggle('rx-hero-link is-icon rx-mode-toggle')
       ])
     ])
   ]);

@@ -176,13 +176,16 @@ fs.writeFileSync(path.join(root, 'assets', 'timeline-index.json'), JSON.stringif
     const thumb = thumbnails[image] || '';
     return thumb ? thumb.replace(/\.jpg$/, '-360.jpg') : '';
   };
+  const { editionFor, loadEditionSources } = require('./editions');
+  const editionSources = loadEditionSources(root);
   fs.writeFileSync(path.join(root, 'assets', 'revise-index.json'), JSON.stringify({
     icons: require('./revise-icons'),
     books: entries.map(book => {
       const identity = identityFor(book.slug, book.title);
       return {
         slug: book.slug, title: book.title, author: book.author, href: book.href,
-        period: book.period, form: book.form,
+        period: book.period, form: book.form, genre: book.genre || '',
+        edition: editionFor({ slug: book.slug, period: book.period, form: book.form, genre: book.genre, accent: identity.accent }, editionSources.colours[book.slug], editionSources.overrides),
         accent: identity.accent, motif: MOTIFS[identity.motif] || '', cover: coverFor(book.href),
         quotations: book.quotations.length, characters: book.characters.length,
         stages: book.structure.length, essays: book.essayQuestions.length,
