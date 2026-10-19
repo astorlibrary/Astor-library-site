@@ -806,7 +806,7 @@ const remainingBooks = [
     image: "The Doves' Nest and Other Stories Main COver.png",
     purchaseUrl: 'https://astorlibrary.com/go/the-doves-nest-and-other-stories',
     label: 'Stories and fragments · 1923',
-    deck: 'Katherine Mansfield died in January 1923, and John Middleton Murry published this collection later that year. Six of the stories are finished and four are pieces she left unfinished; the notes say which is which and what state each one was in.',
+    deck: 'Katherine Mansfield died in January 1923, and John Middleton Murry published this collection later that year. Astor prints ten of its twenty-one pieces, the six finished stories and four that she left unfinished, and the notes say what state each one was in.',
     editionIncludes: [
       'Ten selected stories and fragments from the 1923 collection',
       'Original explanatory notes and historical context',
