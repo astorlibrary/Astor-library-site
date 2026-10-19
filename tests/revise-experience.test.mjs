@@ -70,12 +70,15 @@ test('speaker monograms skip articles and joining words', () => {
   assert.equal(initials(''), '?');
 });
 
-test('every Revise activity page carries the study bar, a heading and how it works', () => {
+test('every Revise activity page opens on the study bar, a heading and one sentence', () => {
   for (const activity of ACTIVITIES) {
     const html = fs.readFileSync('play/' + activity.id + '/index.html', 'utf8');
     assert.match(html, /class="rx-bar-mount" id="rv-head-book"/, activity.id + ' has no study bar');
-    assert.match(html, /class="rx-how"/, activity.id + ' does not say how it works');
     assert.match(html, /<h1>/, activity.id + ' has no heading');
+    const deck = (html.match(/<p class="rx-head-deck">([^<]*)<\/p>/) || [])[1] || '';
+    assert.ok(deck, activity.id + ' has no introduction');
+    assert.ok((deck.match(/[.!?](\s|$)/g) || []).length <= 1 && deck.length <= 90, activity.id + ' introduction is longer than a sentence: ' + deck);
+    assert.doesNotMatch(html, /rx-how|rx-why|Why this helps/, activity.id + ' still carries instructions around the game');
   }
   for (const id of ['which-book', 'context-sprint', 'opening-lines']) {
     const html = fs.readFileSync('play/' + id + '/index.html', 'utf8');

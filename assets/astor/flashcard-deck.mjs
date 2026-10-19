@@ -19,6 +19,7 @@
 
 import { el, clear, shuffle, announce, prefersReducedMotion, seededRandom, hashString } from './util.mjs';
 import { isRemembering, reviewCard, snapshot, today, toggleCommonplace, inCommonplace, recentlyViewed } from './store.mjs';
+import { completion, celebrate } from './quiz-round.mjs';
 import {
   loadShelf, loadBook, setAccent, keepAddress, preferredSlug, studyBar,
   bookLines, lineSummary, lineState, STATE_WORDS, cardId, shortTitle, activityHref, quoted
@@ -173,7 +174,8 @@ function sitting(book, meta, mode, only = null) {
     for (const option of MODES) {
       group.append(el('button', {
         type: 'button', role: 'radio', class: 'rx-mode', 'aria-checked': String(option.id === mode),
-        onclick: () => { if (option.id === mode) return; saveMode(option.id); sitting(book, meta, option.id); }
+        onclick: () => { if (option.id === mode) return; saveMode(option.id); sitting(book, meta, option.id); },
+        title: option.note
       }, [el('b', { text: option.name }), el('span', { text: option.note })]));
     }
     return group;
@@ -197,9 +199,9 @@ function sitting(book, meta, mode, only = null) {
     page.append(el('div', { class: 'rx-progress' }, [
       el('p', { class: 'rx-progress-count' }, [el('span', { class: 'rx-visually-hidden', text: 'Card ' }), el('b', { text: String(position + 1) }), el('span', { text: ' of ' + queue.length })]),
       track,
-      el('p', { class: 'rx-run', text: '' })
+      el('p', { class: 'rx-score', 'aria-label': knew + ' known so far' }, [el('span', { class: 'rx-score-star', 'aria-hidden': 'true', html: '<svg viewBox="0 0 24 24"><path d="M12 2.8l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 17l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6Z"/></svg>' }), el('b', { text: String(knew) })])
     ]));
-    if (anyway && position === 0 && !turned) page.append(el('p', { class: 'rx-deck-note', text: 'Nothing is due today, so these are lines you’ve met before. Extra practice never hurts.' }));
+    if (anyway && position === 0 && !turned) page.append(el('p', { class: 'rx-deck-note', text: 'Nothing due today — here are lines you’ve met before.' }));
 
     // The card: a front and a back on one sheet, turned in three dimensions.
     const front = el('div', { class: 'rx-flip-face is-front', 'aria-hidden': String(turned) });
@@ -209,22 +211,22 @@ function sitting(book, meta, mode, only = null) {
     if (mode === 'recall') {
       put(front, badge.cloneNode(true),
         el('blockquote', { class: 'rx-flip-line' }, [el('p', { text: quotation.text })]),
-        el('p', { class: 'rx-flip-prompt', text: 'Before you turn: who says it, where does it come, and what is it doing?' }));
+        el('p', { class: 'rx-flip-prompt', text: 'Who says it? Where? Why does it matter?' }));
     } else if (mode === 'complete') {
       const opening = quotation.text.split(/\s+/).slice(0, Math.min(4, Math.max(2, Math.floor(quotation.text.split(/\s+/).length / 4)))).join(' ');
       put(front, badge.cloneNode(true),
         el('p', { class: 'rx-flip-cue' }, [el('span', { class: 'rx-label', text: 'The moment' }), el('span', { text: where })]),
         quotation.context ? el('p', { class: 'rx-flip-context', text: quotation.context }) : null,
         el('blockquote', { class: 'rx-flip-line is-start' }, [el('p', { text: '“' + opening.replace(/^[“"]/, '') + ' …”' })]),
-        el('p', { class: 'rx-flip-prompt', text: 'Say the whole line out loud, or write it down, then turn the card to check.' }));
+        el('p', { class: 'rx-flip-prompt', text: 'Say the rest of the line, then turn.' }));
     } else {
       put(front, badge.cloneNode(true),
         el('blockquote', { class: 'rx-flip-line is-memorise' }, [memoriseLine(quotation, step)]),
         el('p', { class: 'rx-flip-prompt', text: [
-          'Read the line aloud twice.',
-          'Some words are down to their first letter. Say the line in full.',
-          'More are gone. Say it again from memory.',
-          'Only first letters left. Can you say it all?'
+          'Read it aloud.',
+          'Now say it in full.',
+          'Again, from memory.',
+          'Just the first letters. Can you say it all?'
         ][step] }),
         el('ol', { class: 'rx-mem-steps', 'aria-label': 'Step ' + (step + 1) + ' of 4' }, [0, 1, 2, 3].map(index => el('li', { class: index <= step ? 'is-on' : '' }))));
     }
@@ -249,8 +251,8 @@ function sitting(book, meta, mode, only = null) {
       actions.append(el('button', { class: 'rx-button is-primary is-wide', type: 'button', onclick: advance }, [el('span', { text: label }), el('span', { class: 'rx-kbd', 'aria-hidden': 'true', text: 'Space' })]));
     } else {
       actions.append(
-        el('button', { class: 'rx-rate is-not', type: 'button', onclick: () => answer(false) }, [el('b', { text: 'Not yet' }), el('span', { text: 'see it again tomorrow' })]),
-        el('button', { class: 'rx-rate is-got', type: 'button', onclick: () => answer(true) }, [el('b', { text: 'Got it' }), el('span', { text: 'move it up a box' })])
+        el('button', { class: 'rx-rate is-not', type: 'button', onclick: () => answer(false) }, [el('b', { text: 'Not yet' }), el('span', { text: 'again tomorrow' })]),
+        el('button', { class: 'rx-rate is-got', type: 'button', onclick: () => answer(true) }, [el('b', { text: 'Got it' }), el('span', { text: 'up a box' })])
       );
     }
     page.append(actions);
@@ -323,41 +325,38 @@ function sitting(book, meta, mode, only = null) {
   function end() {
     document.removeEventListener('keydown', keyHandler);
     const counts = lineSummary(bookLines(book, snapshot().cards || {}, today()));
-    const page = el('div', { class: 'rx-results rx-deck-end' });
     const left = counts.due + counts.new;
-    page.append(el('div', { class: 'rx-results-hero' }, [
-      el('div', { class: 'rx-ring rx-ring-cards', 'aria-hidden': 'true' }, [el('span', { class: 'rx-ring-label' }, [el('b', { text: String(knew) }), el('span', { text: '/' + reviewed })])]),
-      el('div', { class: 'rx-results-words' }, [
-        el('p', { class: 'rx-results-what', text: shortTitle(book) + ' · Flashcards · ' + MODES.find(entry => entry.id === mode).name }),
-        el('h2', { class: 'rx-results-title', tabindex: '-1', text: knew === reviewed ? 'Every card known.' : reviewed === SITTING ? 'Ten cards done.' : reviewed + (reviewed === 1 ? ' card done.' : ' cards done.') }),
-        el('p', { class: 'rx-results-sub', text: 'You knew ' + knew + ' of ' + reviewed + '. ' + (left
-          ? left + (left === 1 ? ' line is' : ' lines are') + ' still waiting today.'
-          : 'Nothing else is waiting today.' + (knew < reviewed ? ' The ones you missed come back tomorrow.' : '')) })
-      ])
-    ]));
-    page.append(el('h3', { class: 'rx-subhead', text: 'Your deck now' }));
-    page.append(boxShelf(book));
-    page.append(el('p', { class: 'rx-review-note', text: counts.known + ' of the ' + book.quotations.length + ' key lines in ' + shortTitle(book) + ' are in boxes 4 and 5, which means you know them.' }));
-
     const missedLines = queue.filter((_, index) => !results[index]);
-    if (missedLines.length) {
-      const list = el('ul', { class: 'rx-deck-missed' });
-      for (const quotation of missedLines) list.append(el('li', {}, [el('q', { text: quotation.text }), el('span', { text: [quotation.speaker, quotation.reference].filter(Boolean).join(' · ') })]));
-      page.append(el('h3', { class: 'rx-subhead', text: 'Still learning' }), list);
-    }
+    const page = el('div', { class: 'rx-results rx-deck-end' + (reviewed && knew / reviewed >= 0.8 ? ' is-shining' : '') });
+    page.append(completion({
+      score: knew, total: reviewed,
+      kicker: shortTitle(book) + ' · Flashcards',
+      title: knew === reviewed ? 'Every card known.' : knew / reviewed >= 0.6 ? 'Nicely done.' : 'Cards turned.',
+      chips: [
+        counts.known ? counts.known + ' of ' + book.quotations.length + ' lines known' : '',
+        left ? left + ' still waiting today' : 'Nothing else due today'
+      ].filter(Boolean)
+    }));
+    const marks = el('ol', { class: 'rx-results-marks', 'aria-hidden': 'true' });
+    results.forEach((right, index) => marks.append(el('li', { class: right ? 'is-right' : 'is-wrong', style: '--i:' + index, html: right ? '✓' : '✗' })));
+    page.append(marks);
 
     const actions = el('div', { class: 'rx-results-actions' });
     if (left) actions.append(el('button', { class: 'rx-button is-primary', type: 'button', text: 'Ten more cards', onclick: () => sitting(book, meta, mode) }));
     if (mode !== 'memorise' && missedLines.length) actions.append(el('button', { class: 'rx-button is-secondary', type: 'button', text: 'Memorise the ones I missed', onclick: () => sitting(book, meta, 'memorise', missedLines) }));
-    actions.append(el('a', { class: left ? 'rx-button is-secondary' : 'rx-button is-primary', href: activityHref('mixed-round', book.slug), text: 'Ten questions on ' + shortTitle(book) }));
+    actions.append(el('a', { class: left ? 'rx-button is-secondary' : 'rx-button is-primary', href: activityHref('mixed-round', book.slug), text: 'Ten questions' }));
     page.append(actions);
-    page.append(el('p', { class: 'rx-results-links' }, [
-      el('a', { href: book.href, text: 'Back to ' + shortTitle(book) }),
-      el('a', { href: '/play/?book=' + encodeURIComponent(book.slug), text: 'All revision for ' + shortTitle(book) })
-    ]));
+
+    page.append(boxShelf(book));
+    if (missedLines.length) {
+      const list = el('ul', { class: 'rx-deck-missed' });
+      for (const quotation of missedLines) list.append(el('li', {}, [el('q', { text: quotation.text }), el('span', { text: [quotation.speaker, quotation.reference].filter(Boolean).join(' · ') })]));
+      page.append(el('details', { class: 'rx-review' }, [el('summary', {}, [el('span', { text: 'Still learning (' + missedLines.length + ')' })]), list]));
+    }
     clear(mount);
     mount.append(live, page);
     page.querySelector('.rx-results-title')?.focus({ preventScroll: true });
+    celebrate(page);
   }
 
   if (!queue.length) {

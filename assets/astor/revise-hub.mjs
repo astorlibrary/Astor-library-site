@@ -138,7 +138,7 @@ function drawLines(book, meta, lines, counts) {
       el('p', { class: 'rx-eyebrow', text: 'Your lines' }),
       el('h2', { id: 'rx-lines-title', text: 'The ' + lines.length + ' key lines in ' + shortTitle(book) })
     ]),
-    el('p', { text: 'Each square is a quotation worth knowing, in the order it comes. Get it right in any quiz or flashcard and it moves towards known; miss it and it starts again. Choose a square to read the line.' })
+    el('p', { text: 'Each square is a key quotation, filling in as you learn it. Tap one to read it.' })
   ]));
 
   const detail = el('div', { class: 'rx-line-detail', 'aria-live': 'polite' });
@@ -233,7 +233,7 @@ function drawActivities(book, meta, state, counts) {
   const section = el('section', { class: 'rx-section rx-activities', 'aria-labelledby': 'rx-acts-title' });
   section.append(el('header', { class: 'rx-section-head' }, [
     el('div', {}, [el('p', { class: 'rx-eyebrow', text: 'Activities' }), el('h2', { id: 'rx-acts-title', text: 'Choose what to work on' })]),
-    el('p', { text: 'Every activity uses only ' + shortTitle(book) + '. Each card shows a real example of what it will ask you.' })
+    el('p', { text: 'Every activity uses only ' + shortTitle(book) + '.' })
   ]));
 
   for (const group of GROUPS) {
@@ -352,7 +352,7 @@ function drawLibrary(day) {
   const section = el('section', { class: 'rx-section rx-library', 'aria-labelledby': 'rx-library-title' });
   section.append(el('header', { class: 'rx-section-head' }, [
     el('div', {}, [el('p', { class: 'rx-eyebrow', text: 'Across the library' }), el('h2', { id: 'rx-library-title', text: 'Questions from every book' })]),
-    el('p', { text: 'Quick rounds that range across every title with a study guide.' })
+    el('p', { text: 'Quick rounds across every title.' })
   ]));
 
   const done = dailyResult(day);

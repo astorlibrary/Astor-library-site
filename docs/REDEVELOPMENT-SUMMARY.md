@@ -442,6 +442,18 @@ red. The question data, schedules and saved progress are unchanged.
 - **Today** is set as an almanac: the date, the Daily Five as the main event
   (no hints), then the passage, book and anniversary of the day with covers.
 
+**Second pass: games, not worksheets.** Each activity page now opens with
+its name and one sentence; the "How it works" and "Why this helps" sections
+are gone. On a phone the breadcrumb and heading give way to the study bar,
+so the question is on the first screen. The progress bar fills green and red
+with a running score and streak; each game carries its emblem and its own
+dress (speech bubble, highlighted specimen, coloured theme tiles, ruled
+paper, character file). After an answer only the right option and the
+reader's own carry a note; the verdict is one line with Next beside it (it
+stays in view at the foot of the screen on a phone), and the full note is
+folded under *Why?*. Completion screens count the score up inside its ring,
+award up to three stars, and fold the misses away behind one line.
+
 `tests/revise-experience.test.mjs` checks that every question in every
 one-book activity comes from the chosen book, that the study bar offers
 exactly the activities a book can run, and that every activity page carries

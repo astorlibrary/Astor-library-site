@@ -9,7 +9,7 @@
 import { el, clear, seededRandom, hashString, pick, formatDate } from './util.mjs';
 import { loadIndex, allQuotations } from './data.mjs';
 import { dailyRound, resultGrid, dailyPassage } from './questions.mjs';
-import { QuizRound, emptyState, kindOf } from './quiz-round.mjs';
+import { QuizRound, emptyState, kindOf, completion, celebrate } from './quiz-round.mjs';
 import { today, dailyResult, recordDaily, streak, isRemembering, dailyHistory } from './store.mjs';
 import { loadShelf, coverImage, drawing, clip, shortTitle } from './revise-kit.mjs';
 
@@ -52,7 +52,7 @@ function renderHead(day) {
       el('span', { class: 'rx-almanac-day', text: now.toLocaleDateString('en-GB', { weekday: 'long' }) }),
       el('span', { text: now.toLocaleDateString('en-GB', { day: 'numeric', month: 'long' }) })
     ]),
-    el('p', { class: 'rx-almanac-deck', text: 'Five questions from across the library, the same for everyone today. Then a passage, a book and an anniversary.' }),
+    el('p', { class: 'rx-almanac-deck', text: 'Five questions, the same for everyone today.' }),
     run.live && run.current >= 2 ? el('p', { class: 'rx-almanac-streak', text: run.current + ' days of revision running' }) : null
   ]));
   void day;
@@ -80,8 +80,8 @@ function renderPuzzle(index, day) {
   gameMount.append(el('section', { class: 'rx-daily-start' }, [
     el('div', {}, [
       el('p', { class: 'rx-eyebrow', text: 'The Daily Five' }),
-      el('h2', { text: 'Five questions, about two minutes.' }),
-      el('p', { class: 'rx-daily-note', text: 'No hints today, and one go each. Every answer comes with a note on the line.' })
+      el('h2', { text: 'Five questions. Two minutes.' }),
+      el('p', { class: 'rx-daily-note', text: 'One go each, no hints.' })
     ]),
     kinds,
     begin
@@ -125,11 +125,12 @@ function renderDone(result, questions, day) {
   const week = Object.keys(history).sort().slice(-7).map(key => ({ day: key, ...history[key] }));
 
   const panel = el('section', { class: 'rx-daily-done' }, [
-    el('div', { class: 'rx-daily-done-head' }, [
-      el('p', { class: 'rx-eyebrow', text: 'Today’s five · ' + formatDate(new Date()) }),
-      el('h2', { class: 'rx-results-title', tabindex: '-1', text: result.score === total ? 'All five. Superb.' : result.score + ' of ' + total + ' today' }),
-      el('p', { class: 'rx-results-sub', text: (run.live && run.current >= 2 ? run.current + ' days running. ' : '') + 'New questions at midnight.' })
-    ]),
+    completion({
+      score: result.score, total,
+      kicker: 'Today’s five · ' + formatDate(new Date()),
+      title: result.score === total ? 'All five. Superb.' : result.score >= 3 ? 'A good day.' : 'Done for today.',
+      chips: [run.live && run.current >= 2 ? run.current + '-day streak' : '', 'New questions at midnight'].filter(Boolean)
+    }),
     squares
   ]);
   if (week.length >= 2) {
@@ -142,14 +143,13 @@ function renderDone(result, questions, day) {
     try { await navigator.clipboard.writeText(shareText); share.textContent = 'Copied'; }
     catch { share.textContent = 'Select the grid to copy it'; }
   });
-  panel.append(el('p', { class: 'rx-share-grid', 'aria-hidden': 'true', text: grid }));
   panel.append(el('div', { class: 'rx-results-actions' }, [
     share,
     el('a', { class: 'rx-button is-secondary', href: '/play/', text: 'Revise a book' })
   ]));
-  panel.append(el('p', { class: 'rx-review-note', text: 'The grid shows how you did without giving the answers away.' }));
   gameMount.append(panel);
   panel.querySelector('.rx-results-title')?.focus({ preventScroll: true });
+  celebrate(panel);
 }
 
 function renderStrip(index, day) {
