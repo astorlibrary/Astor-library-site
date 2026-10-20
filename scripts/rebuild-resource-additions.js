@@ -181,8 +181,8 @@ function page(resource) {
     : readingNotes(resource, detailed).map(item => `<article><p class="year">${escapeHtml(item.label)}</p><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.copy)}</p></article>`).join('');
   const guidePurpose = detailed?.deck || resource.description;
   const note = detailed?.note || (isAstorPresentation
-    ? `Read the introduction and three-slide preview here, then sign in with a free account to continue. Check what the guide says against the text itself.`
-    : `Read the introduction here, then open the external guide. Check its summaries and interpretations against the relevant chapter, scene or poem.`);
+    ? `Check what the guide says against the text itself, and quote the book, not the slides.`
+    : `Check the guide’s summaries and interpretations against the relevant chapter, scene or poem.`);
   const scopeNote = isAstorPresentation
     ? `${slideCount} slides · written and published by Astor Library`
     : 'External online guide';
