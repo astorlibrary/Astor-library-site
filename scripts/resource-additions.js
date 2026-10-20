@@ -11,7 +11,7 @@ module.exports = [
     tags: ['Langston Hughes', 'Archive', 'American literature'],
     includes: [
       'Hughes and Hurston’s 1927 journey through the American South.',
-      'The escaped prisoner whose testimony entered Walter Wilson’s account.',
+      'The escaped prisoner they met near Savannah, and John L. Spivak’s exposé of the Georgia chain gangs.',
       'Hughes’s foreword, its Russian publication and disappearance from English print.',
       'Steven Hoelscher’s discovery in the Harry Ransom Center.',
       'Questions about recovery, authorship and the lives preserved in archives.'
@@ -20,7 +20,7 @@ module.exports = [
     sectionIntro: 'The essay follows a document back through the people, journeys and institutions that made it visible, and invisible.',
     readings: [
       { label: '1927', title: 'A meeting on the road', copy: 'Travelling with Zora Neale Hurston, Hughes encountered an escaped chain-gang prisoner. That meeting linked a private act of survival to a much wider history of forced labour in the South.' },
-      { label: '1933', title: 'A foreword crosses languages', copy: 'Hughes supplied a foreword for Walter Wilson’s book. It appeared in Russian, but not in the English-language editions through which most later readers knew the work.' },
+      { label: '1933', title: 'A foreword crosses languages', copy: 'Writing from Moscow early in 1933, Hughes supplied the foreword to the Soviet edition of John L. Spivak’s 1932 book on the Georgia chain gangs. It appeared only in Russian and was never included in English copies.' },
       { label: '2019', title: 'The archive speaks again', copy: 'Steven Hoelscher’s research brought the forgotten text back into English. Its recovery shows that literary history depends upon catalogues, correspondence and the patient reconstruction of incomplete records.' }
     ],
     note: 'Read the essay as a history of transmission as well as a history of Hughes. Ask at each stage whose voice is being recorded, translated, edited or recovered.',
