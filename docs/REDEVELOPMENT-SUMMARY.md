@@ -555,6 +555,8 @@ book keeps its own colours, drawings, type and frame:
   and says "Nearly" for one or two slips.
 - *Flashcards, the essay planner and debate* use the same card and tiles;
   the essay planner's example argument names the book's own writer.
+- *Keyboard focus* is drawn in each edition's accent, so the ring stays
+  visible on Jane Eyre's green as well as Macbeth's ivory.
 - *The Revise home* puts "Start here" on the session button and the
   activities straight after the hero; on a phone each activity is a compact
   row with its emblem on the cover's ground.
