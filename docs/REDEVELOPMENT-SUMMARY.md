@@ -393,6 +393,184 @@ carries a print block that drops every control and opens every tab panel.
 Projector mode puts one quotation on the wall at `clamp(30px, 6vw, 72px)`,
 driven by the arrow keys, Escape to close.
 
+### The Revise redesign (October 2026)
+
+Every page under `/play/` and `/today/` now shares one design, set by the
+`rx` block at the end of `assets/astor-study.css`. Each page takes the colour
+and cover of the book being revised; right is always green and wrong always
+red. The question data, schedules and saved progress are unchanged.
+
+- **One study bar** (`studyBar()` in `revise-kit.mjs`) heads every one-book
+  tool: the cover, title and author, *Change book*, and a row of every
+  activity the book supports, so moving from a quiz to the flashcards for the
+  same book is one tap. *Change book* opens a dialog of covers with search,
+  recent books and a period filter (`openShelf()`), which replaced the old
+  select list. `assets/revise-index.json` now carries each title's `period`.
+- **The Revise home** opens on a jacket for the book: cover, opening line, a
+  ring for the key lines known, the next session, and flashcards due. Below
+  it, every key line is a square on a map, coloured by how well it is known;
+  choosing one shows the line and its note. Activities are cards grouped as
+  *Learn the words*, *Understand the ideas*, *Know the story* and *Write about
+  it*, each showing a real example from the book.
+- **The quiz stage** (`quiz-round.mjs`) answers each kind of question in its
+  own way: speakers as monogrammed roundels, characters from a "character
+  file" with the name struck out, book questions as the covers themselves,
+  years laid on a timeline (with "you were 12 years out" afterwards), plot
+  order by dragging cards or using arrows. After an answer every option
+  explains itself (who that character is, what that theme or technique
+  means) and a *Why not X?* note addresses the reader's own wrong choice.
+  *Narrow it down* and *Show first letters* are hints; a line answered
+  correctly after a hint scores, but is not promoted in the flashcard boxes.
+  The results page has a score ring, a mark for each question, a pattern in
+  the misses where there is one, each miss with its reason, and one next
+  step.
+- **Flashcards** turn in three dimensions and can be worked three ways:
+  *Recall* (the line; say who, where and why), *Complete* (the moment and the
+  first words; say the line) and *Memorise* (the line with more of its words
+  reduced to first letters each step). Space turns, the arrow keys mark, and
+  a turned card can be swiped. The five boxes are drawn as stacks under the
+  card. The chosen mode is remembered in `astor-flashcard-mode`.
+- **The essay planner** is four steps — question, argument, paragraphs,
+  review — with coaching on whether the argument and each paragraph do their
+  job, starters to click in, the model route to compare against, and an
+  evidence picker that puts the quotations fitting that paragraph's step
+  first. Plans are kept per book and question in `astor-essay-plans` and can
+  be copied, downloaded or printed on their own.
+- **Defend the reading** is set as a debate: the reading against the
+  objection, with a balance that tips as evidence is added, then the unused
+  line that tells most against the reader's case, to answer in writing.
+- **Today** is set as an almanac: the date, the Daily Five as the main event
+  (no hints), then the passage, book and anniversary of the day with covers.
+
+**Second pass: games, not worksheets.** Each activity page now opens with
+its name and one sentence; the "How it works" and "Why this helps" sections
+are gone. On a phone the breadcrumb and heading give way to the study bar,
+so the question is on the first screen. The progress bar fills green and red
+with a running score and streak; each game carries its emblem and its own
+dress (speech bubble, highlighted specimen, coloured theme tiles, ruled
+paper, character file). After an answer only the right option and the
+reader's own carry a note; the verdict is one line with Next beside it (it
+stays in view at the foot of the screen on a phone), and the full note is
+folded under *Why?*. Completion screens count the score up inside its ring,
+award up to three stars, and fold the misses away behind one line.
+
+**Final polish.** Stars mean the same thing in every activity: one for
+finishing, two for 70 per cent or better (7 out of 10, 4 out of 5 on Today),
+three for a perfect round (`starsFor()` in `quiz-round.mjs`). The completion
+screen shows the key with the next star picked out, and the Revise home shows
+each quiz's best stars. Misses on the completion screen are soft numbered
+tiles under "Try the ones I missed again". In Order the plot the checked
+cards slide into the right order, each saying where the reader had it.
+Anything the pages scroll to stops clear of the sticky site header
+(`--rx-header`, measured in `revise-kit.mjs`), the activity row shows arrows
+when there is more to swipe to, and the end-of-page links sit in a compact
+row on phones.
+
+**Editions: every book its own design.** Revise now dresses itself in the
+book being studied, taken from that book's Astor edition, while navigation,
+controls, game mechanics and accessibility stay identical everywhere. There is
+one interface and one stylesheet; what varies is a small set of tokens and
+three choices, worked out for each title at build time:
+
+- *Colours.* `scripts/build-edition-colours.mjs` (run by hand, like
+  `build-book-accents.js`) reads every cover in Chromium and records the
+  ground it is printed on and its ink in `assets/edition-colours.json`.
+  `scripts/editions.js` turns that ground and the book's accent into a light
+  and a dark palette (paper, surface, ink, soft text, accent text, button,
+  hero, right, wrong, star). Every pair that carries text is pushed until it
+  meets its contrast ratio, so no edition can ship unreadable.
+- *Mode.* A cover printed on a deep colour (Jane Eyre's green) or a Gothic,
+  ghost, horror or sensation title starts dark; the rest start light. Dark is
+  simply one aspect of a book's design. The sun/moon button in the study bar
+  and the Revise home lets the reader override it (stored as
+  `astor-revise-mode`; choosing the book's own mode clears the override), and
+  a reader who set the whole site dark gets the dark palette.
+- *Register.* From the book's period, form and genre: `layout` (centred for
+  tragedies, poems and epics; page for Regency, Victorian and earlier prose;
+  framed for Gothic, comedies and modern novels), `voice` (italic, roman or
+  caps display type) and `texture` (plain, laid paper, ruled lines, grain or
+  a lamplit glow). Layout changes how a question, the feedback, the
+  completion screen, the Revise home's hero and the quotation map are
+  composed; it never moves a control.
+
+`scripts/edition-overrides.json` adjusts any title by hand (accent, ground,
+mode, layout, voice, texture, or individual palette colours); Macbeth's
+deeper red and Hamlet's ink-violet are set there. Each book's edition is
+written into `assets/revise-index.json`; `applyEdition()` in
+`revise-kit.mjs` sets the `--ed-*` tokens and the `data-edition`,
+`data-ed-mode`, `data-ed-layout`, `data-ed-voice` and `data-ed-texture`
+attributes on `<html>`, and the "rx: editions" block of `astor-study.css`
+does the rest. Pages that range across the library (Today, Which book?)
+keep the house edition. A new book gets its edition automatically when the
+study data is rebuilt; run the colour sampler once for its cover.
+
+**The cover.** Every Astor cover is a flat ground scattered with small line
+drawings chosen for the book: Macbeth's crowns, ravens and thistles,
+Frankenstein's flasks, hearts and lightning. `scripts/build-edition-art.mjs`
+(run by hand) finds those drawings, erases the lettering, and writes two
+masks per book to `assets/editions/`: the cover's own field of drawings and
+a strip of up to eight different emblems, plus the drawings' ink colour in
+`assets/edition-art.json`. Revise then wears the cover:
+
+- each activity page opens on a band of the cover's ground and drawings,
+  with the activity's name lettered in spaced capitals like a cover title;
+  the question, flashcard or planner sits on it as a page;
+- progress is a row of the book's emblems, lit as each answer is won;
+- each question is headed by one emblem, and a right answer throws a few of
+  them off the button;
+- the completion screen is set as the cover, with the score for its title;
+- the Revise home's hero is the cover, opened, and each activity card
+  carries an emblem.
+
+In light mode the band is the cover's true ground and ink; in dark mode a
+pale cover turns to night with its drawings in the accent. A mid-tone cover
+is deepened just enough for its lettering to pass contrast. For the few
+covers whose titles touch their drawings, `eraseTitle` and `dropMotifs` in
+`scripts/edition-overrides.json` clear what the detector misses.
+
+**One design, every edition.** A refinement pass gave every activity the
+same underlying parts, so a game looks like itself in every book while each
+book keeps its own colours, drawings, type and frame:
+
+- *The card.* What is asked, headed by one of the book's emblems; the
+  prompt (centred, set on the page, or framed, by edition); the answers as
+  one kind of tile with a monogram for people; hints and Skip at the foot.
+  Editions vary two radii (`--rx-r-card`, `--rx-r-tile`), not the structure.
+- *The verdict* sits in the card, below the answers, tinted for right,
+  wrong or shown, with the answer in bold and Next beside it; it never
+  covers the answers, and the page scrolls only as far as it needs to.
+- *Phones.* The book bar, activity row, activity name and progress take
+  about 60px less than before; titles wrap to two lines rather than clip;
+  the activity row fades at whichever end has more instead of putting
+  arrows over the labels (arrows remain for a mouse).
+- *Results* say something true about the round (`resultWords()` in
+  `quiz-round.mjs`): a headline for the score ("One away from perfect.",
+  "A tough round."), a comparison with the reader's best and last go on the
+  book ("A new best, up from 5.", "Up from 3 last time."), where the misses
+  cluster, and the next star. A new best of half marks or more earns a
+  badge. The words sit on a panel of the cover's ground so the drawings
+  never cross them. The second go at missed questions is labelled, has no
+  stars, and ends with how many were put right.
+- *Order the plot* shows "The story so far" with a dot for every event,
+  and says "Nearly" for one or two slips.
+- *Flashcards, the essay planner and debate* use the same card and tiles;
+  the essay planner's example argument names the book's own writer.
+- *The Revise home* puts "Start here" on the session button and the
+  activities straight after the hero; on a phone each activity is a compact
+  row with its emblem on the cover's ground.
+
+Order the plot is now played by tapping the events in the order they
+happen: a correct tap places the card, a wrong one counts as a slip, so the
+story assembles itself without dragging.
+
+`tests/revise-experience.test.mjs` checks that every question in every
+one-book activity comes from the chosen book, that the study bar offers
+exactly the activities a book can run, that every activity page carries
+the study bar and its instructions, that every book has a valid edition, and
+that both palettes of every edition keep text readable, and that every book
+has its cover drawings and legible lettering on its band, and that the
+completion screen's words match the round (score, best, last go, second go).
+
 ---
 
 ## 5. Accuracy
@@ -610,7 +788,11 @@ episode of the day they fall in. Both records say so in `referenceStyle`.
 3. `node scripts/rebuild-library.js` — this validates the record, regenerates
    the indexes, writes a study page if the title has an Astor study edition,
    and flips its hub card to point at the page.
-4. `node scripts/build-static.js && node scripts/check-site.js && npm test`.
+4. For Revise, `node scripts/build-edition-colours.mjs` reads the new cover's
+   colours and `node scripts/build-edition-art.mjs <slug>` lifts its
+   drawings (check `assets/editions/<slug>-*.png`), then `node scripts/rebuild-study-data.js` gives the book its
+   edition. Adjust it in `scripts/edition-overrides.json` if needed.
+5. `node scripts/build-static.js && node scripts/check-site.js && npm test`.
 
 The book page, the study page, the explorers, the glossary, the timeline, the
 map, the search palette, nine games, a flashcard deck, the essay forge, the

@@ -6,7 +6,7 @@
 // /assets/revise-index.json for the chooser and then fetch only the chosen
 // book's record. The whole-library study index is left to the explorers.
 
-import { el, clear, shuffle, seededRandom } from './util.mjs';
+import { el, clear, shuffle, seededRandom, prefersReducedMotion } from './util.mjs';
 import { loadBook, cardId } from './data.mjs';
 import { snapshot, today, recentlyViewed } from './store.mjs';
 import { GAME_BUILDERS } from './questions.mjs';
@@ -70,6 +70,172 @@ export function drawing(paths, size = 24, className = '') {
 
 export function setAccent(node, meta) {
   if (node && meta?.accent) node.style.setProperty('--book-accent', meta.accent);
+  applyEdition(meta);
+}
+
+// --- the book's edition ------------------------------------------------------
+//
+// Every book carries an edition (scripts/editions.js): a light and a dark
+// palette drawn from its cover, the mode it wears by default, and a register
+// (layout, voice, texture). Applying one writes the palette as custom
+// properties and the register as data attributes on <html>; the "rx:
+// editions" block of astor-study.css does the rest. Nothing about how a game
+// is played changes from book to book.
+
+const MODE_KEY = 'astor-revise-mode';
+const TOKENS = {
+  ground: '--ed-ground', surface: '--ed-surface', sunk: '--ed-sunk', ink: '--ed-ink', soft: '--ed-soft',
+  accent: '--ed-accent', accentText: '--ed-accent-text', button: '--ed-button', buttonInk: '--ed-button-ink',
+  hero: '--ed-hero', heroInk: '--ed-hero-ink', line: '--ed-line', lineStrong: '--ed-line-strong',
+  right: '--ed-right', wrong: '--ed-wrong', star: '--ed-star', onFill: '--ed-on-fill',
+  band: '--ed-band', bandInk: '--ed-band-text', bandSoft: '--ed-band-soft', bandArt: '--ed-band-art'
+};
+const ART = ['--ed-field', '--ed-motifs', '--ed-motif-n'];
+
+export function modeOverride() {
+  try {
+    const value = window.localStorage.getItem(MODE_KEY);
+    return value === 'light' || value === 'dark' ? value : '';
+  } catch { return ''; }
+}
+
+// The reader's own choice wins; then a site-wide dark theme they chose; then
+// the edition's own mode.
+export function editionMode(edition) {
+  const chosen = modeOverride();
+  if (chosen) return chosen;
+  let site = '';
+  try { site = window.localStorage.getItem('astor-theme') || ''; } catch { /* optional */ }
+  if (site === 'dark') return 'dark';
+  return edition?.mode === 'dark' ? 'dark' : 'light';
+}
+
+let currentMeta = null;
+
+export function applyEdition(meta) {
+  if (typeof document === 'undefined') return;
+  const html = document.documentElement;
+  const edition = meta?.edition;
+  currentMeta = meta || null;
+  if (!edition) {
+    for (const token of [...Object.values(TOKENS), ...ART]) html.style.removeProperty(token);
+    for (const key of ['edition', 'edMode', 'edLayout', 'edVoice', 'edTexture', 'edArt']) delete html.dataset[key];
+    return;
+  }
+  // The cover's drawings, lifted by scripts/build-edition-art.mjs.
+  const motifs = edition.motifs || 0;
+  html.style.setProperty('--ed-field', 'url("/assets/editions/' + meta.slug + '-field.png")');
+  if (motifs) html.style.setProperty('--ed-motifs', 'url("/assets/editions/' + meta.slug + '-motifs.png")');
+  else html.style.removeProperty('--ed-motifs');
+  html.style.setProperty('--ed-motif-n', String(Math.max(2, motifs)));
+  if (motifs) html.dataset.edArt = String(motifs); else delete html.dataset.edArt;
+  const mode = editionMode(edition);
+  const palette = edition[mode] || edition.light;
+  for (const [key, token] of Object.entries(TOKENS)) if (palette[key]) html.style.setProperty(token, palette[key]);
+  html.dataset.edition = meta.slug;
+  html.dataset.edMode = mode;
+  html.dataset.edLayout = edition.layout || 'centred';
+  html.dataset.edVoice = edition.voice || 'italic';
+  html.dataset.edTexture = edition.texture || 'plain';
+  document.querySelector('meta[name=theme-color]')?.setAttribute('content', palette.ground);
+  for (const button of document.querySelectorAll('.rx-mode-toggle')) paintModeToggle(button, mode);
+}
+
+// One of the book's own drawings, as a mask the stylesheet tints. `index`
+// wraps round however many the cover gave; with none, it draws nothing.
+export function motif(index = 0, className = '') {
+  const count = currentMeta?.edition?.motifs || 0;
+  const node = el('i', { class: 'rx-motif' + (className ? ' ' + className : ''), 'aria-hidden': 'true' });
+  node.style.setProperty('--i', String(count ? ((index % count) + count) % count : 0));
+  return node;
+}
+
+export function hasMotifs() {
+  return Boolean(currentMeta?.edition?.motifs);
+}
+export function currentBook() {
+  return currentMeta;
+}
+
+// A right answer throws a handful of the book's drawings off the button.
+export function burst(node, count = 7) {
+  if (!node || !hasMotifs() || prefersReducedMotion() || !node.animate) return;
+  const layer = el('span', { class: 'rx-burst', 'aria-hidden': 'true' });
+  node.append(layer);
+  for (let index = 0; index < count; index += 1) {
+    const piece = motif(index + Math.floor(Math.random() * 8));
+    layer.append(piece);
+    const angle = (index / count) * Math.PI * 2 + Math.random() * 0.6;
+    const reach = 46 + Math.random() * 36;
+    piece.animate([
+      { transform: 'translate(-50%, -50%) scale(.3) rotate(0deg)', opacity: 0 },
+      { transform: 'translate(calc(-50% + ' + Math.cos(angle) * reach * 0.6 + 'px), calc(-50% + ' + Math.sin(angle) * reach * 0.6 + 'px)) scale(1)', opacity: 1, offset: 0.45 },
+      { transform: 'translate(calc(-50% + ' + Math.cos(angle) * reach + 'px), calc(-50% + ' + Math.sin(angle) * reach + 'px)) scale(.8) rotate(' + (Math.random() * 40 - 20) + 'deg)', opacity: 0 }
+    ], { duration: 760 + Math.random() * 200, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'forwards' });
+  }
+  setTimeout(() => layer.remove(), 1100);
+}
+
+// The cover band: the head of the page set in the cover's ground with its
+// drawings, running down behind the study bar until it meets the first page
+// of the activity, which sits on it like a book on its jacket.
+const BAND_ENDS = '.rx-card, .rx-results, .rx-flip, .rx-forge-panel, .rv-tool-panel, .rx-defend-case, .rx-hub-start, [data-band-end]';
+let bandNode = null;
+let bandWatch = null;
+
+export function coverBand(main = document.querySelector('main')) {
+  if (typeof document === 'undefined' || !main) return;
+  if (!bandNode || !bandNode.isConnected) {
+    bandNode = el('div', { class: 'rx-band', 'aria-hidden': 'true' }, [el('div', { class: 'rx-band-art' })]);
+    main.prepend(bandNode);
+    main.classList.add('has-band');
+  }
+  const place = () => {
+    const end = main.querySelector(BAND_ENDS);
+    const top = main.getBoundingClientRect().top + window.scrollY;
+    let bottom = 0;
+    if (end) bottom = end.getBoundingClientRect().top + window.scrollY - top + Math.min(96, end.offsetHeight * 0.35);
+    else {
+      const bar = main.querySelector('.rx-bar-mount');
+      bottom = bar ? bar.getBoundingClientRect().bottom + window.scrollY - top + 40 : 260;
+    }
+    main.style.setProperty('--rx-band-h', Math.round(Math.max(180, bottom)) + 'px');
+  };
+  place();
+  if (!bandWatch && 'ResizeObserver' in window) {
+    let queued = false;
+    const later = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; place(); }); };
+    bandWatch = new ResizeObserver(later);
+    bandWatch.observe(main);
+    new MutationObserver(later).observe(main, { childList: true, subtree: true });
+  }
+}
+
+// One button: it switches to the other palette. Switching back to the
+// edition's own mode clears the choice, so each book wears its own again.
+export function modeToggle(className = 'rx-mode-toggle') {
+  const button = el('button', { type: 'button', class: className, onclick: () => {
+    const edition = currentMeta?.edition;
+    if (!edition) return;
+    const next = editionMode(edition) === 'dark' ? 'light' : 'dark';
+    try {
+      if (next === edition.mode) window.localStorage.removeItem(MODE_KEY);
+      else window.localStorage.setItem(MODE_KEY, next);
+    } catch { /* storage is optional */ }
+    applyEdition(currentMeta);
+  } });
+  paintModeToggle(button, currentMeta?.edition ? editionMode(currentMeta.edition) : 'light');
+  return button;
+}
+
+function paintModeToggle(button, mode) {
+  const toDark = mode !== 'dark';
+  button.setAttribute('aria-label', toDark ? 'Use dark colours for this book' : 'Use light colours for this book');
+  button.setAttribute('aria-pressed', String(mode === 'dark'));
+  button.title = toDark ? 'Dark colours' : 'Light colours';
+  button.innerHTML = toDark
+    ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>'
+    : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>';
 }
 
 // --- dates -------------------------------------------------------------------
@@ -114,6 +280,13 @@ export function shortTitle(book) {
 export function firstSentence(text) {
   const match = String(text || '').match(/^.+?[.!?](?=\s|$)/);
   return (match ? match[0] : String(text || '')).trim();
+}
+
+// A line in curly quotation marks, without doubling marks the line already has.
+export function quoted(text) {
+  // Only double marks: a leading apostrophe is usually an elision ('Tis).
+  const inner = String(text || '').trim().replace(/^[“"]+/, '').replace(/[”"]+$/, '');
+  return '“' + inner + '”';
 }
 
 export function clip(text, length = 80) {
@@ -300,6 +473,73 @@ export function nextStep(book, { exclude = '', state = snapshot() } = {}) {
   return null;
 }
 
+// --- every activity a book can have ------------------------------------------
+
+// The order a student meets them in the study bar: the quick session, the
+// six quizzes on one kind of thing, then the longer work.
+export const ACTIVITIES = [
+  { id: 'mixed-round', name: 'Ten questions', short: 'Ten questions' },
+  { id: 'who-said-it', name: 'Who said it?', short: 'Who said it' },
+  { id: 'fill-the-line', name: 'Fill the line', short: 'Fill the line' },
+  { id: 'theme-match', name: 'Theme match', short: 'Themes' },
+  { id: 'technique-spotter', name: 'Technique spotter', short: 'Techniques' },
+  { id: 'character-identification', name: 'Who is this?', short: 'Characters' },
+  { id: 'order-the-plot', name: 'Order the plot', short: 'Plot order' },
+  { id: 'flashcards', name: 'Flashcards', short: 'Flashcards' },
+  { id: 'essay-forge', name: 'Essay planner', short: 'Essay plan' },
+  { id: 'defend-the-reading', name: 'Defend the reading', short: 'Debate' }
+];
+
+// Whether a shelf entry (assets/revise-index.json) supports an activity,
+// without fetching the book's record.
+export function hasActivity(meta, id) {
+  if (!meta) return false;
+  if (id === 'mixed-round') return true;
+  if (id === 'flashcards') return meta.quotations >= 5;
+  if (id === 'essay-forge') return meta.essays > 0;
+  if (id === 'defend-the-reading') return meta.views >= 2 && meta.quotations >= 6;
+  return (meta.quizzes || []).includes(id);
+}
+
+export function activityHref(id, slug) {
+  return '/play/' + id + '/?book=' + encodeURIComponent(slug);
+}
+
+// An activity's drawing, from scripts/revise-icons.js via the shelf.
+export function activityIcon(icons, id, size = 20) {
+  return drawing((icons || {})[id] || '', size, 'rx-icon');
+}
+
+export function coverImage(meta, { width = 120, className = '', eager = false } = {}) {
+  if (!meta?.cover) {
+    return el('span', { class: 'rx-cover-blank ' + className, style: '--book-accent:' + (meta?.accent || '#6E1F2B'), 'aria-hidden': 'true' }, [
+      el('span', { text: shortTitle(meta) })
+    ]);
+  }
+  return el('img', {
+    class: className, src: meta.cover, alt: '', width: String(width), height: String(Math.round(width * 1.5)),
+    decoding: 'async', loading: eager ? 'eager' : 'lazy'
+  });
+}
+
+// Two letters for a name, set in a roundel. Titles and articles are skipped so
+// "The Ghost of Christmas Past" reads GC and "Lady Macbeth" reads LM.
+const MONOGRAM_SKIP = new Set(['the', 'of', 'a', 'an', 'and', 'de', 'la', 'le', 'van', 'von']);
+export function initials(name) {
+  const words = String(name || '').replace(/[^\p{L}\s'’-]/gu, ' ').split(/\s+/)
+    .filter(word => word && !MONOGRAM_SKIP.has(word.toLowerCase()));
+  if (!words.length) return '?';
+  const letters = words.length === 1 ? [words[0][0]] : [words[0][0], words[words.length - 1][0]];
+  return letters.join('').toUpperCase();
+}
+
+const MONOGRAM_HUES = ['#6e1f2b', '#2f5d3f', '#294a6b', '#7a5a1e', '#5b3a6b', '#2d5f62', '#7c3a22', '#3e4a2a'];
+export function monogram(name) {
+  let hash = 0;
+  for (const character of String(name)) hash = (hash * 31 + character.charCodeAt(0)) >>> 0;
+  return el('span', { class: 'rx-monogram', style: '--mono:' + MONOGRAM_HUES[hash % MONOGRAM_HUES.length], 'aria-hidden': 'true', text: initials(name) });
+}
+
 // --- the book chooser --------------------------------------------------------
 
 const REMEMBERED = 'astor-last-book';
@@ -314,54 +554,110 @@ export function preferredSlug() {
   try { return window.localStorage.getItem(REMEMBERED) || ''; } catch { return ''; }
 }
 
-// "Change book" as a disclosure: the reader's recent books as buttons, then the
-// full list in a native select, so keyboard and screen-reader use is unchanged.
-export function bookSwitcher(books, current, recentSlugs, onChoose) {
-  const details = el('details', { class: 'rv-switch' });
-  // After the page redraws for the new book, focus goes back to "Change book".
-  const choose = book => Promise.resolve(onChoose(book)).then(() => {
-    document.querySelector('.rv-switch summary')?.focus({ preventScroll: true });
-  });
-  details.append(el('summary', { text: 'Change book' }));
-  const panel = el('div', { class: 'rv-switch-panel' });
-  const recent = recentSlugs
-    .map(slug => books.find(book => book.slug === slug))
-    .filter(book => book && book.slug !== current.slug)
-    .slice(0, 4);
-  if (recent.length) {
-    const row = el('div', { class: 'rv-switch-recent', role: 'group', 'aria-label': 'Recent books' });
-    for (const book of recent) {
-      row.append(el('button', {
-        type: 'button', class: 'rv-switch-book', style: '--book-accent:' + book.accent,
-        onclick: () => { details.open = false; choose(book); }
-      }, [drawing(book.motif, 18), el('span', { text: book.title })]));
-    }
-    panel.append(row);
-  }
-  const id = 'rv-switch-' + Math.random().toString(36).slice(2, 8);
-  const select = el('select', { id });
-  for (const book of books) {
-    select.append(el('option', { value: book.slug, text: book.title + ' — ' + book.author, selected: book.slug === current.slug }));
-  }
-  // Arrow keys on a closed select fire "change" in some browsers, so while the
-  // reader is browsing with the keyboard the choice waits for Enter or blur.
-  let browsing = false;
-  const commit = () => {
-    browsing = false;
-    const book = books.find(item => item.slug === select.value);
-    if (!book || book.slug === current.slug) return;
-    details.open = false;
-    choose(book);
+// "Choose a book" as a dialog of covers: a search box, the reader's recent
+// books, and every book this tool supports, filterable by period. A native
+// <dialog> keeps focus inside while it is open and Escape closes it.
+export function openShelf({ books, current, recentSlugs = [], onChoose, heading = 'Choose a book' }) {
+  const dialog = el('dialog', { class: 'rx-shelf', 'aria-labelledby': 'rx-shelf-title' });
+  const close = () => dialog.close();
+  const choose = book => {
+    close();
+    if (!current || book.slug !== current.slug) onChoose(book);
   };
-  select.addEventListener('keydown', event => {
-    if (/^(Arrow|Page|Home|End)/.test(event.key)) browsing = true;
-    if (event.key === 'Enter') { event.preventDefault(); commit(); }
+
+  const search = el('input', {
+    type: 'search', class: 'rx-shelf-search', placeholder: 'Search by title or author',
+    'aria-label': 'Search by title or author', autocomplete: 'off'
   });
-  select.addEventListener('change', () => { if (!browsing) commit(); });
-  select.addEventListener('blur', () => { if (browsing) commit(); });
-  panel.append(el('label', { for: id, text: 'Every book' }), select);
-  details.append(panel);
-  return details;
+  const periods = [...new Set(books.map(book => book.period).filter(Boolean))].sort();
+  let period = '';
+  const chips = el('div', { class: 'rx-shelf-chips', role: 'group', 'aria-label': 'Filter by period' });
+  const chip = (value, label) => el('button', {
+    type: 'button', class: 'rx-chip', 'aria-pressed': String(period === value), text: label,
+    onclick: () => { period = value; draw(); }
+  });
+  if (periods.length > 1) {
+    chips.append(chip('', 'All'));
+    for (const value of periods) chips.append(chip(value, value));
+    chips.addEventListener('click', event => {
+      const pressed = event.target.closest('.rx-chip');
+      if (!pressed) return;
+      for (const node of chips.children) node.setAttribute('aria-pressed', String(node === pressed));
+    });
+  }
+
+  const tile = book => el('li', {}, [el('button', {
+    type: 'button', class: 'rx-shelf-book' + (current && book.slug === current.slug ? ' is-current' : ''),
+    style: '--book-accent:' + (book.accent || '#6E1F2B'),
+    'aria-current': current && book.slug === current.slug ? 'true' : null,
+    onclick: () => choose(book)
+  }, [
+    el('span', { class: 'rx-shelf-cover' }, [coverImage(book, { width: 120 })]),
+    el('span', { class: 'rx-shelf-title', text: book.title }),
+    el('span', { class: 'rx-shelf-author', text: book.author })
+  ])]);
+
+  const recent = recentSlugs.map(slug => books.find(book => book.slug === slug)).filter(Boolean).slice(0, 6);
+  const recentBlock = recent.length ? el('section', { class: 'rx-shelf-section' }, [
+    el('h3', { text: 'Recently opened' }),
+    el('ul', { class: 'rx-shelf-grid is-row' }, recent.map(tile))
+  ]) : null;
+
+  const grid = el('ul', { class: 'rx-shelf-grid' });
+  const count = el('p', { class: 'rx-shelf-count', 'aria-live': 'polite' });
+  const draw = () => {
+    const words = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    const shown = books.filter(book => (!period || book.period === period)
+      && words.every(word => (book.title + ' ' + book.author).toLowerCase().includes(word)));
+    clear(grid);
+    for (const book of shown) grid.append(tile(book));
+    count.textContent = shown.length === books.length ? books.length + ' books' : shown.length + ' of ' + books.length + ' books';
+    if (recentBlock) recentBlock.hidden = Boolean(words.length || period);
+    if (!shown.length) grid.append(el('li', { class: 'rx-shelf-none', text: 'No book matches that. Try part of the title or the author’s surname.' }));
+  };
+  search.addEventListener('input', draw);
+
+  dialog.append(
+    el('div', { class: 'rx-shelf-head' }, [
+      el('h2', { id: 'rx-shelf-title', text: heading }),
+      el('button', { type: 'button', class: 'rx-shelf-close', 'aria-label': 'Close', html: '&times;', onclick: close })
+    ]),
+    el('div', { class: 'rx-shelf-tools' }, [search, chips.childNodes.length ? chips : null]),
+    el('div', { class: 'rx-shelf-body' }, [recentBlock, el('section', { class: 'rx-shelf-section' }, [
+      el('div', { class: 'rx-shelf-section-head' }, [el('h3', { text: 'All books' }), count]),
+      grid
+    ])])
+  );
+  // A click on the backdrop (the dialog element itself, outside its box) closes it.
+  dialog.addEventListener('click', event => {
+    if (event.target !== dialog) return;
+    const box = dialog.getBoundingClientRect();
+    const inside = event.clientX >= box.left && event.clientX <= box.right && event.clientY >= box.top && event.clientY <= box.bottom;
+    if (!inside) close();
+  });
+  const opener = document.activeElement;
+  dialog.addEventListener('close', () => {
+    dialog.remove();
+    document.documentElement.classList.remove('rx-locked');
+    if (opener && document.contains(opener)) opener.focus({ preventScroll: true });
+  });
+  draw();
+  document.body.append(dialog);
+  document.documentElement.classList.add('rx-locked');
+  if (dialog.showModal) dialog.showModal(); else dialog.setAttribute('open', '');
+  // On a phone the keyboard would cover the covers, so focus waits for a tap.
+  if (window.matchMedia?.('(min-width: 720px)').matches) search.focus();
+  return dialog;
+}
+
+export function changeBookButton({ books, current, onChoose, label = 'Change book', className = 'rx-change' }) {
+  return el('button', {
+    type: 'button', class: className,
+    onclick: () => openShelf({ books, current, recentSlugs: recentlyViewed(20).map(entry => entry.slug), onChoose })
+  }, [
+    el('span', { class: 'rx-change-icon', 'aria-hidden': 'true', html: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h6v13H4z"/><path d="M10 6.5h5v12h-5z"/><path d="m16 7.6 3.6-1 3 11.4-3.6 1z"/></svg>' }),
+    el('span', { text: label })
+  ]);
 }
 
 export function keepAddress(slug) {
@@ -371,23 +667,86 @@ export function keepAddress(slug) {
   window.history.replaceState(null, '', url);
 }
 
-// The running head on a Revise tool page: the book's drawing, title and
-// author, and "Change book".
-export function bookHead(head, books, meta, onChoose) {
+// The study bar at the top of every one-book Revise tool: the cover, the title
+// and author, "Change book", and every activity this book supports, so moving
+// from a quiz to the flashcards for the same book is one tap.
+export function studyBar(head, { books, meta, icons, active, onChoose, allBooks }) {
   if (!head) return;
   clear(head);
-  head.append(
-    drawing(meta.motif, 22, 'rv-head-motif'),
-    el('a', { class: 'rv-head-title', href: '/play/?book=' + encodeURIComponent(meta.slug), text: meta.title }),
-    el('span', { class: 'rv-head-author', text: meta.author }),
-    bookSwitcher(books, meta, recentlyViewed(20).map(entry => entry.slug), onChoose)
-  );
+  head.classList.add('rx-bar-mount');
+  const cover = el('a', { class: 'rx-bar-cover', href: '/play/?book=' + encodeURIComponent(meta.slug), 'aria-label': 'Revision home for ' + meta.title }, [
+    coverImage(meta, { width: 56, eager: true })
+  ]);
+  const identity = el('div', { class: 'rx-bar-id' }, [
+    el('span', { class: 'rx-bar-kicker', text: 'Revising' }),
+    el('a', { class: 'rx-bar-title', href: '/play/?book=' + encodeURIComponent(meta.slug), title: meta.title, text: shortTitle(meta) }),
+    el('span', { class: 'rx-bar-author', text: meta.author })
+  ]);
+  const bar = el('div', { class: 'rx-bar' }, [cover, identity, el('div', { class: 'rx-bar-tools' }, [modeToggle(), changeBookButton({ books, current: meta, onChoose })])]);
+
+  const acts = el('nav', { class: 'rx-acts', 'aria-label': 'Activities for ' + meta.title });
+  const list = el('ul', {});
+  for (const activity of ACTIVITIES) {
+    if (!hasActivity(meta, activity.id)) continue;
+    const here = activity.id === active;
+    list.append(el('li', {}, [el('a', {
+      class: 'rx-act' + (here ? ' is-here' : ''), href: activityHref(activity.id, meta.slug),
+      'aria-current': here ? 'page' : null
+    }, [activityIcon(icons, activity.id, 18), el('span', { text: activity.short })])]));
+  }
+  acts.append(list);
+  // When the row is wider than the screen, arrows at either end say there is
+  // more to see and scroll it; the row can still be swiped.
+  const nudge = direction => acts.scrollBy({ left: direction * acts.clientWidth * 0.7, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+  const back = el('button', { type: 'button', class: 'rx-acts-arrow is-back', 'aria-label': 'Earlier activities', tabindex: '-1', html: '&lsaquo;', onclick: () => nudge(-1) });
+  const more = el('button', { type: 'button', class: 'rx-acts-arrow is-more', 'aria-label': 'More activities', tabindex: '-1', html: '&rsaquo;', onclick: () => nudge(1) });
+  const row = el('div', { class: 'rx-acts-row' }, [back, acts, more]);
+  const edges = () => {
+    const overflow = acts.scrollWidth > acts.clientWidth + 2;
+    row.classList.toggle('has-back', overflow && acts.scrollLeft > 4);
+    row.classList.toggle('has-more', overflow && acts.scrollLeft + acts.clientWidth < acts.scrollWidth - 4);
+  };
+  acts.addEventListener('scroll', edges, { passive: true });
+  if (head.rxEdges) window.removeEventListener('resize', head.rxEdges);
+  head.rxEdges = edges;
+  window.addEventListener('resize', edges);
+  head.append(bar, row);
+  if (meta.edition) coverBand(head.closest('main') || undefined);
+  // Keep the current activity in view on a narrow screen, without moving the page.
+  requestAnimationFrame(() => {
+    const here = acts.querySelector('.is-here');
+    if (here) acts.scrollLeft = Math.max(0, here.offsetLeft - (acts.clientWidth - here.offsetWidth) / 2);
+    edges();
+  });
 }
 
-// Everything a one-book tool needs: the shelf, the reader's book, the head,
-// and that book's record, fetched on its own. A slow book never overwrites a
-// quicker, later choice.
-export async function openBookPage({ head, mount, filter, render }) {
+// The site header stays at the top of the screen as the page scrolls, so
+// anything the Revise pages scroll to is kept clear of it (scroll-margin-top
+// in astor-study.css reads --rx-header).
+export function headerOffset() {
+  const header = document.querySelector('.site-header');
+  if (!header) return 0;
+  const position = getComputedStyle(header).position;
+  return position === 'sticky' || position === 'fixed' ? Math.round(header.getBoundingClientRect().height) : 0;
+}
+function syncHeaderOffset() {
+  document.documentElement.style.setProperty('--rx-header', headerOffset() + 'px');
+}
+if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', syncHeaderOffset);
+  else syncHeaderOffset();
+  window.addEventListener('resize', syncHeaderOffset);
+}
+
+// Kept for the older call sites: the running head is now the study bar.
+export function bookHead(head, books, meta, onChoose, options = {}) {
+  studyBar(head, { books, meta, onChoose, icons: options.icons, active: options.active });
+}
+
+// Everything a one-book tool needs: the shelf, the reader's book, the study
+// bar, and that book's record, fetched on its own. A slow book never
+// overwrites a quicker, later choice.
+export async function openBookPage({ head, mount, filter, render, active }) {
   let shelf;
   try { shelf = await loadShelf(); } catch {
     clear(mount);
@@ -411,7 +770,9 @@ export async function openBookPage({ head, mount, filter, render }) {
     const ticket = ++generation;
     keepAddress(meta.slug);
     setAccent(document.querySelector('main'), meta);
-    bookHead(head, books, meta, open);
+    studyBar(head, { books, meta, icons: shelf.icons, active, onChoose: open });
+    clear(mount);
+    mount.append(el('p', { class: 'rv-loading', text: 'Opening ' + meta.title + '…' }));
     let book;
     try { book = await loadBook(meta.slug); } catch {
       if (ticket !== generation) return;
@@ -420,7 +781,9 @@ export async function openBookPage({ head, mount, filter, render }) {
       return;
     }
     if (ticket !== generation) return;
-    render(book, meta);
+    // A record must belong to the book that was asked for.
+    if (book.slug !== meta.slug) return;
+    render(book, meta, shelf);
   };
   await open(first);
 }
