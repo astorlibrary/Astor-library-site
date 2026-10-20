@@ -4080,3 +4080,29 @@ html[data-edition] .rx-activity-status.is-tried { color: var(--ed-ink); }
   html[data-edition] .rx-group-head h3 { font-size: 18px; }
 }
 html[data-edition] .rx-results > .rx-results-actions { align-items: center; text-align: center; }
+
+/* the kind of question in a mixed round sits on its own line above what is asked */
+html[data-edition] .rx-card-head { flex-direction: column; align-items: flex-start; gap: 8px; }
+html[data-ed-layout="centred"] .rx-card-head, html[data-ed-layout="framed"] .rx-card-head { align-items: center; }
+html[data-edition] .rx-card-head .rx-card-kind:not(.is-practice) {
+  margin: 0; padding: 4px 10px 4px 8px; background: color-mix(in srgb, var(--ed-accent) 10%, transparent); color: var(--ed-accent-text); font-size: 10.5px;
+}
+html[data-edition] .rx-card-head .rx-card-kind .rv-drawing { color: var(--ed-accent-text); }
+
+/* a flashcard reads from the top, like a card, rather than floating in the middle */
+html[data-edition] .rx-flip-face { align-content: start; }
+html[data-edition] .rx-flip-face > .rx-card-motif { margin: 2px auto 12px; }
+/* every completion screen ends with the same buttons: one strong, the rest quiet */
+html[data-edition] .rx-results > .rx-results-actions { display: flex; flex-direction: column; gap: 8px; }
+html[data-edition] .rx-results > .rx-results-actions .rx-button { width: min(100%, 360px); min-height: 50px; border-radius: 999px; justify-content: center; }
+html[data-edition] .rx-results > .rx-results-actions .rx-button.is-secondary { background: transparent; border: 1.5px solid var(--ed-line-strong); color: var(--ed-ink); box-shadow: none; }
+@media (hover: hover) { html[data-edition] .rx-results > .rx-results-actions .rx-button.is-secondary:hover { border-color: var(--ed-accent-text); color: var(--ed-accent-text); } }
+html[data-edition] .rx-deck-end .rx-boxes { border-radius: var(--rx-r-tile); }
+html[data-edition] .rx-pv-dossier { transform: none; border-radius: var(--rx-r-tile); background: var(--ed-sunk); border-color: var(--ed-line-strong); box-shadow: none; color: var(--ed-ink); }
+html[data-edition] .rx-pv-dossier .rx-pv-label { transform: none; border: 0; padding: 0; color: var(--ed-accent-text); }
+
+/* the keyboard's place is drawn in the edition's accent, visible on light and dark grounds alike */
+html[data-edition] :is(.rx-option, .rx-word, .rx-blank, .rx-act, .rx-story-card, .rx-button, .rx-mode, .rx-question, .rx-rate, .rx-change, .rx-mode-toggle, .rx-activity, .rx-hero-start, .rx-hero-link, .rx-text-button, .rx-reading-tab, .rx-side-choice, .rx-tile-line, .rx-keep, .rx-more > summary):focus-visible {
+  outline: 3px solid var(--ed-accent-text); outline-offset: 2px;
+}
+html[data-edition] .rx-flip:focus-visible .rx-flip-inner { outline: 3px solid var(--ed-accent-text); outline-offset: 3px; }
