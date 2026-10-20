@@ -123,3 +123,26 @@ export function download(name, text, type = 'text/plain;charset=utf-8') {
   link.remove();
   window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
+
+// The site's own data files, fetched like the page itself (with its cookies,
+// so a preview behind a sign-in still loads them). A request that fails is
+// tried once more past any cached copy before giving up, and the reason is
+// written to the console so a failure can be diagnosed.
+export async function fetchJson(url) {
+  let lastError = null;
+  for (const cache of ['default', 'reload']) {
+    try {
+      const response = await fetch(url, { credentials: 'same-origin', cache });
+      if (!response.ok) throw new Error(url + ' answered ' + response.status);
+      const type = response.headers.get('content-type') || '';
+      const text = await response.text();
+      try { return JSON.parse(text); } catch {
+        throw new Error(url + ' did not return JSON (' + (type || 'no content type') + ', starts "' + text.slice(0, 40).replace(/\s+/g, ' ') + '")');
+      }
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  console.error('Astor Library: could not load data.', lastError);
+  throw lastError;
+}

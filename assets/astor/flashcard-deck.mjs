@@ -21,7 +21,7 @@ import { el, clear, shuffle, announce, prefersReducedMotion, seededRandom, hashS
 import { isRemembering, reviewCard, snapshot, today, toggleCommonplace, inCommonplace, recentlyViewed } from './store.mjs';
 import { completion, celebrate } from './quiz-round.mjs';
 import {
-  motif, hasMotifs,
+  motif, hasMotifs, loadFailed,
   loadShelf, loadBook, setAccent, keepAddress, preferredSlug, studyBar,
   bookLines, lineSummary, lineState, STATE_WORDS, cardId, shortTitle, activityHref, quoted
 } from './revise-kit.mjs';
@@ -61,8 +61,7 @@ async function start() {
   mount.append(el('p', { class: 'rv-loading', text: 'Shuffling the deck…' }));
   let shelf;
   try { shelf = await loadShelf(); } catch {
-    clear(mount);
-    mount.append(el('p', { class: 'rv-empty', text: 'The cards didn’t load. Try reloading the page.' }));
+    loadFailed(mount, 'The cards didn’t load.');
     return;
   }
   const books = shelf.books.filter(book => book.quotations >= 5);

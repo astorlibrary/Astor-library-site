@@ -34,14 +34,14 @@ async function start(container) {
     try {
       [index, shelf] = await Promise.all([loadIndex(), loadShelf().catch(() => shelf)]);
     } catch {
-      return emptyState(container, 'The quiz didn’t load. Try reloading the page.', [{ href: '/play/', label: 'More revision' }]);
+      return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }]);
     }
     return runLibrary(container, gameId, index, shelf);
   }
 
   let shelf;
   try { shelf = await loadShelf(); } catch {
-    return emptyState(container, 'The quiz didn’t load. Try reloading the page.', [{ href: '/library/', label: 'Browse the catalogue' }]);
+    return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/library/', label: 'Browse the catalogue' }]);
   }
   const wanted = preferredSlug();
   const first = shelf.books.find(book => book.slug === wanted)
@@ -77,7 +77,7 @@ async function runBook(container, gameId, shelf, meta) {
   let book;
   try { book = await loadBook(meta.slug); } catch {
     if (ticket !== generation) return;
-    return emptyState(container, 'That book didn’t load. Try reloading the page.', [{ href: '/play/', label: 'More revision' }]);
+    return emptyState(container, 'That book didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }]);
   }
   if (ticket !== generation || book.slug !== meta.slug) return;
 

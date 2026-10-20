@@ -6,15 +6,13 @@
 //                             quotations, themes, techniques, characters and
 //                             timeline, for the explorers and the daily puzzle
 
+import { fetchJson } from './util.mjs';
+
 const cache = new Map();
 
 async function getJson(url) {
   if (cache.has(url)) return cache.get(url);
-  const request = fetch(url, { credentials: 'omit' })
-    .then(response => {
-      if (!response.ok) throw new Error('Could not load ' + url);
-      return response.json();
-    })
+  const request = fetchJson(url)
     .catch(error => {
       cache.delete(url);
       throw error;
