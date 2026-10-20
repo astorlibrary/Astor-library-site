@@ -300,7 +300,7 @@ module.exports = [
         "copy": "Place the structure of An Essay on Criticism beside its reception. How do the responses test the poem’s account of critical judgement?"
       }
     ],
-    "note": "Compare the versions of The Rape of the Lock discussed in the slides. What changes when the machinery and Clarissa’s speech enter the poem?"
+    "note": "Read The Rape of the Lock in the 1717 text, the first to include Clarissa’s speech in Canto V, which the guide discusses."
   },
   {
     "url": "/presentations/?presentation=blackwood-the-willows",
@@ -330,7 +330,7 @@ module.exports = [
         "copy": "Use the genre discussion to ask what kind of explanation the story allows, withholds or makes impossible."
       }
     ],
-    "note": "Track the descriptions of the river, islands and willows. Which details make the landscape difficult for the travellers to interpret?"
+    "note": "Read the story straight through before opening the guide. Much of its effect depends on how slowly the unease builds, and the slides discuss the ending."
   },
   {
     "url": "/presentations/?presentation=arden-of-faversham-1592",
@@ -360,7 +360,7 @@ module.exports = [
         "copy": "Separate the authorship evidence presented in the guide from the conclusions drawn from it. Note where the argument remains open."
       }
     ],
-    "note": "Compare the killing as recorded in the source material with its treatment in the play. Where does the drama change the emphasis?"
+    "note": "Count the failed attempts on Arden’s life before the one that succeeds; the play’s dark comedy depends on those near misses."
   },
   {
     "url": "/presentations/?presentation=dracula-1897-origins",
@@ -390,7 +390,7 @@ module.exports = [
         "copy": "Read the discussion of Powers of Darkness alongside the publication history. Keep the different texts and their claims distinct."
       }
     ],
-    "note": "Use the surviving notes and reading discussed in the guide to distinguish documented sources from later associations."
+    "note": "Stoker’s working notes are at the Rosenbach in Philadelphia and have been published in facsimile, so the guide’s claims about them can be checked."
   },
   {
     "url": "/presentations/?presentation=ancient-mariner-versions-and-gloss",
@@ -420,7 +420,7 @@ module.exports = [
         "copy": "Read the turning-point passage aloud and connect its changes in rhythm and language to the Mariner’s experience."
       }
     ],
-    "note": "Establish which version you are reading before comparing particular words or passages with the guide."
+    "note": "Most anthologies print the 1834 text, with the gloss, so check which version yours follows before you compare it with the 1798 poem."
   },
   {
     "url": "/presentations/?presentation=gogol-overcoat-the-mantle",
@@ -450,7 +450,7 @@ module.exports = [
         "copy": "Place the ending beside the account of what Akaky leaves behind. Which earlier judgements does it make harder to sustain?"
       }
     ],
-    "note": "Trace the guide’s discussion of names, rank and money. How do these details shape the treatment of Akaky?"
+    "note": "Read the last pages twice. The ghost who steals coats can be taken as revenge, as a rumour the narrator half believes, or as a joke."
   },
   {
     "url": "/presentations/?presentation=hamlet-three-texts",
@@ -480,7 +480,7 @@ module.exports = [
         "copy": "Name Q1, Q2 or F1 exactly when discussing a textual difference. Avoid treating the three witnesses as interchangeable."
       }
     ],
-    "note": "Read the Q1 speech beside the version you know. Note differences in wording and placement before judging their effects."
+    "note": "Facsimiles of Q1, Q2 and the Folio are free online, so when the guide quotes a reading you can check it in the original printing."
   },
   {
     "url": "/presentations/?presentation=moby-dick-1851-publication",
@@ -510,7 +510,7 @@ module.exports = [
         "copy": "Place the early reception beside the revival. What different features of the book become central to each account?"
       }
     ],
-    "note": "Compare the discussion of the missing Epilogue with the British reviews. How does access to an ending affect a reader’s judgement?"
+    "note": "If you have a modern edition, find the Epilogue and the ‘Etymology’ and ‘Extracts’ pages first: those are the parts the London edition left out or moved to the back."
   },
   {
     "url": "/presentations/?presentation=iliad-samuel-butler",
@@ -540,7 +540,7 @@ module.exports = [
         "copy": "Read the account of composition beside the account of transmission. What kinds of evidence does each discussion use?"
       }
     ],
-    "note": "Use the discussion of Roman names to identify Butler’s choices before comparing this translation with another version."
+    "note": "Keep a short list of Butler’s Roman names beside the Greek ones (Jove for Zeus, Juno for Hera, Minerva for Athena, Ulysses for Odysseus) until they stop slowing you down."
   },
   {
     "url": "/presentations/?presentation=white-fang-1906",
@@ -570,7 +570,7 @@ module.exports = [
         "copy": "Place the nature-fakers criticism beside London’s response and the passages used to support his position."
       }
     ],
-    "note": "Use the guide’s comparison with London’s other animal fiction to consider the direction of White Fang’s journey."
+    "note": "London answered the nature-fakers in his essay ‘The Other Animals’ (1908). Read it after the novel, so that you meet the book before the defence of it."
   },
   {
     "url": "/presentations/?presentation=paradise-lost-publication-and-form",
@@ -600,7 +600,7 @@ module.exports = [
         "copy": "Read the opening beside the discussion of Satan and reception. Distinguish the poem’s words from the responses they have prompted."
       }
     ],
-    "note": "Place the manuscript and contract beside the guide’s account of Milton’s circumstances. What can each document establish?"
+    "note": "The 1674 second edition made twelve books out of ten by splitting Books VII and X of 1667, so a reference to a book number depends on the edition."
   },
   {
     "url": "/presentations/?presentation=duchess-of-malfi-1623",
@@ -630,7 +630,7 @@ module.exports = [
         "copy": "Consider what remains for the drama to do after the Duchess’s death, and how Bosola affects that movement."
       }
     ],
-    "note": "Examine what the title page says about the relationship between the printed text and the performed play."
+    "note": "The 1623 quarto’s cast list names the King’s Men actors in each part, some of them from two different productions. Keep it open while the guide discusses them."
   },
   {
     "url": "/presentations/?presentation=king-lear-two-texts",
@@ -660,7 +660,7 @@ module.exports = [
         "copy": "Place Shakespeare’s treatment of his sources beside the discussion of Tate. How does each ending redirect the audience’s judgement?"
       }
     ],
-    "note": "Compare the passages and scenes discussed in the guide before deciding what the differences imply."
+    "note": "Check which text your own edition prints before you start. Many print a conflated text; the Oxford Shakespeare prints the Quarto and the Folio as separate plays."
   },
   {
     "url": "/presentations/?presentation=macbeth-folio-and-middleton",
@@ -690,7 +690,7 @@ module.exports = [
         "copy": "Compare the treatment of Holinshed with the discussion of James. Support claims about political context with the specific changes identified."
       }
     ],
-    "note": "Read the Folio discussion beside Simon Forman’s account. What can a printed text and a performance report each tell us?"
+    "note": "Mark the two Folio stage directions that call for songs, ‘Come away, come away’ in 3.5 and ‘Black spirits’ in 4.1. Both songs survive in full in Middleton’s play The Witch."
   },
   {
     "url": "/presentations/?presentation=puddnhead-wilson-1894",
@@ -720,7 +720,7 @@ module.exports = [
         "copy": "Separate what the fingerprint evidence establishes from what the ending resolves. Does discovery produce justice for each character?"
       }
     ],
-    "note": "Read the account of the novel’s origins beside the physical book. How does the guide explain the relationship between the separated narratives?"
+    "note": "Read the extract from Pudd’nhead Wilson’s Calendar at the head of each chapter as you go; they are easy to skip, and the guide treats them on their own."
   },
   {
     "url": "/presentations/?presentation=othello-two-texts",
@@ -750,7 +750,7 @@ module.exports = [
         "copy": "Compare the source story with the play’s treatment of it, using the precise points identified in the guide."
       }
     ],
-    "note": "Record the quarto and Folio readings separately before explaining the dramatic effect of a difference."
+    "note": "Start with the best-known variant, in Othello’s last speech: the Quarto’s ‘base Indian’ is ‘base Judean’ in the Folio."
   },
   {
     "url": "/presentations/?presentation=sir-thomas-more-manuscript",
@@ -780,7 +780,7 @@ module.exports = [
         "copy": "Read the case for Hand D’s attribution alongside the guide’s qualifications, and distinguish it from questions about the whole play."
       }
     ],
-    "note": "Identify the different contributions described in the guide. How does a manuscript preserve evidence that a printed text may conceal?"
+    "note": "The British Library has put the manuscript (Harley MS 7368) online, so you can look at Hand D’s three pages yourself while the guide describes them."
   },
   {
     "url": "/presentations/?presentation=moonstone-1868",
@@ -810,6 +810,6 @@ module.exports = [
         "copy": "Compare Sergeant Cuff’s treatment of details with the narrators’ explanations, then consider the guide’s account of the novel’s reception."
       }
     ],
-    "note": "Track what each narrator knows, omits or interprets. How does the sequence of accounts change the evidence available to the reader?"
+    "note": "The novel first ran weekly in All the Year Round in 1868. Notice where an instalment might have ended, and how often a narrative stops just short of what it knows."
   }
 ];
