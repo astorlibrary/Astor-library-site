@@ -561,6 +561,35 @@ book keeps its own colours, drawings, type and frame:
   activities straight after the hero; on a phone each activity is a compact
   row with its emblem on the cover's ground.
 
+**Refinement: flashcards, navigation, the essay planner.** A further pass
+kept the cover-based design and worked on use:
+
+- *Flashcards* are as tall as what is on them: only the side showing sets
+  the card's height, and the card grows or shrinks to the other side as it
+  turns. Each mode says what it asks in one sentence under the switch.
+  Recall's back answers the front (who, then where, then why); Complete's
+  back sets the words the reader had to supply apart from those given;
+  Memorise counts its four steps in the card's corner, has "Show more
+  words" to step back, and a hidden word can be tapped to peek at it.
+- *On phones* the activity row is replaced by one control: the current
+  activity's name, lettered on the cover, which opens to every activity the
+  book has as a grid of named tiles. Nothing is cut short.
+- *Lettering on the cover* (an activity's name, the progress count) has a
+  halo of the cover's own ground, and a soft patch of it behind the heading
+  block, so a drawing passing behind never crosses the words. The drawings
+  themselves are untouched.
+- *The Revise home* sets its cover as one row on tablet and desktop: the
+  activities start about 680px down instead of 870–1,230px.
+- *The essay planner*: writing boxes grow with the writing; each part of a
+  paragraph (Point, Evidence, Analysis) says what it is for beside its
+  label; sentence starters swipe as one row on a phone; the review page,
+  help, links and coaching take the edition's colours; the review's actions
+  sit in one row.
+- *Debate* uses the same cards and tiles; the reading and the objection are
+  marked as two sides of an argument rather than in right/wrong colours.
+- *Keyboard focus* and the book title in the study bar are comfortable
+  targets in every edition.
+
 Order the plot is now played by tapping the events in the order they
 happen: a correct tap places the card, a wrong one counts as a slip, so the
 story assembles itself without dragging.

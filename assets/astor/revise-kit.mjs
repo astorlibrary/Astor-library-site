@@ -175,7 +175,7 @@ export function burst(node, count = 7) {
 // The cover band: the head of the page set in the cover's ground with its
 // drawings, running down behind the study bar until it meets the first page
 // of the activity, which sits on it like a book on its jacket.
-const BAND_ENDS = '.rx-card, .rx-results, .rx-flip, .rx-forge-panel, .rv-tool-panel, .rx-defend-case, .rx-hub-start, [data-band-end]';
+const BAND_ENDS = '.rx-card, .rx-results, .rx-flip, .rx-essay-main, .rx-debate-step, .rx-reading-tabs + *, .rv-tool-panel, [data-band-end]';
 let bandNode = null;
 let bandWatch = null;
 
@@ -706,7 +706,7 @@ export function studyBar(head, { books, meta, icons, active, onChoose, allBooks 
   if (head.rxEdges) window.removeEventListener('resize', head.rxEdges);
   head.rxEdges = edges;
   window.addEventListener('resize', edges);
-  head.append(bar, row);
+  head.append(bar, row, activityMenu({ meta, icons, active }));
   if (meta.edition) coverBand(head.closest('main') || undefined);
   // Keep the current activity in view on a narrow screen, without moving the page.
   requestAnimationFrame(() => {
@@ -719,6 +719,43 @@ export function studyBar(head, { books, meta, icons, active, onChoose, allBooks 
 // The site header stays at the top of the screen as the page scrolls, so
 // anything the Revise pages scroll to is kept clear of it (scroll-margin-top
 // in astor-study.css reads --rx-header).
+// On a phone the activities are one control instead of a row: the current
+// activity's name, lettered on the cover, which opens to every activity the
+// book has. Nothing is cut short and the current one is never out of sight.
+function activityMenu({ meta, icons, active }) {
+  const current = ACTIVITIES.find(activity => activity.id === active);
+  const available = ACTIVITIES.filter(activity => hasActivity(meta, activity.id));
+  const menu = el('details', { class: 'rx-acts-menu' });
+  menu.append(el('summary', { 'aria-label': (current ? current.name + '. ' : '') + 'Change activity' }, [
+    current ? activityIcon(icons, current.id, 18) : null,
+    el('span', { class: 'rx-acts-menu-name', text: current ? current.name : 'Activities' }),
+    el('span', { class: 'rx-acts-menu-hint', 'aria-hidden': 'true', text: 'Change' }),
+    el('span', { class: 'rx-acts-menu-chevron', 'aria-hidden': 'true' })
+  ]));
+  const grid = el('ul', { class: 'rx-acts-grid' });
+  for (const activity of available) {
+    const here = activity.id === active;
+    grid.append(el('li', {}, [el('a', {
+      class: 'rx-acts-tile' + (here ? ' is-here' : ''), href: activityHref(activity.id, meta.slug), 'aria-current': here ? 'page' : null
+    }, [activityIcon(icons, activity.id, 18), el('span', { text: activity.name })])]));
+  }
+  menu.append(el('nav', { class: 'rx-acts-panel', 'aria-label': 'Activities for ' + meta.title }, [grid]));
+  // Close when the reader taps elsewhere or presses Escape.
+  const close = event => {
+    if (!menu.open) return;
+    if (event.type === 'keydown' ? event.key === 'Escape' : !menu.contains(event.target)) {
+      menu.open = false;
+      if (event.type === 'keydown') menu.querySelector('summary').focus();
+    }
+  };
+  if (menuCloser) { document.removeEventListener('click', menuCloser); document.removeEventListener('keydown', menuCloser); }
+  menuCloser = close;
+  document.addEventListener('click', close);
+  document.addEventListener('keydown', close);
+  return menu;
+}
+let menuCloser = null;
+
 export function headerOffset() {
   const header = document.querySelector('.site-header');
   if (!header) return 0;

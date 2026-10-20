@@ -2555,7 +2555,6 @@ i.rx-tile-line.is-due::after { width: 6px; height: 6px; top: -3px; right: -3px; 
 .rx-flip-small { margin: 0; font-size: 14px; font-style: italic; color: var(--rx-muted); }
 .rx-mem-word { display: inline-flex; align-items: baseline; }
 .rx-mem-word b { font-weight: 400; color: var(--rx-accent-ink); }
-.rx-mem-word span { display: inline-block; width: calc(var(--len, 3) * .42em); height: .1em; margin-left: .06em; border-radius: 1px; background: var(--rx-line-strong); }
 .rx-mem-steps { display: flex; gap: 6px; margin: 4px 0 0; padding: 0; list-style: none; }
 .rx-mem-steps li { width: 34px; height: 5px; border-radius: 3px; background: var(--rx-line); }
 .rx-mem-steps li.is-on { background: var(--rx-accent); }
@@ -4108,3 +4107,295 @@ html[data-edition] :is(.rx-option, .rx-word, .rx-blank, .rx-act, .rx-story-card,
 html[data-edition] .rx-flip:focus-visible .rx-flip-inner { outline: 3px solid var(--ed-accent-text); outline-offset: 3px; }
 .rx-load-failed { display: grid; justify-items: center; gap: 14px; padding: 28px 18px; text-align: center; }
 .rx-load-failed p { margin: 0; }
+
+/* =============================================================================
+   rx: flashcards sized to what is on them
+   The two sides share one place so the card can turn, but only the side that
+   is showing gives the card its height; the other is laid over it. The card
+   grows or shrinks to the new side as it turns (flashcard-deck.mjs).
+   ============================================================================= */
+
+.rx-flip-inner { min-height: 0; }
+html[data-edition] .rx-flip-inner { min-height: 0; }
+.rx-flip:not(.is-turned) .rx-flip-face.is-back, .rx-flip.is-turned .rx-flip-face.is-front { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+html[data-edition] .rx-flip-face, html[data-edition] .rx-flip-face.is-front, html[data-edition] .rx-flip-face.is-back {
+  align-content: start; gap: 12px; min-height: 200px; padding: clamp(20px, 4vw, 36px) clamp(18px, 4.5vw, 40px) clamp(22px, 4vw, 34px);
+}
+.rx-flip-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 26px; }
+html[data-edition] .rx-flip-head .rx-card-motif { flex: none; width: 24px; height: 24px; margin: 0; opacity: .85; }
+html[data-edition] .rx-flip-state { color: var(--ed-soft); }
+html[data-edition] .rx-flip-line p { font-size: clamp(22px, 3vw, 30px); line-height: 1.36; }
+html[data-edition] .rx-flip-line.is-answer p { font-size: clamp(19px, 2.4vw, 24px); }
+html[data-edition] .rx-flip-prompt { margin: 2px 0 0; font: 600 13.5px/1.45 var(--astor-sans); color: var(--ed-accent-text); }
+
+/* what each way of working asks, once, under the switch */
+.rx-mode-help { margin: -4px 2px 0; font: 14px/1.5 var(--astor-sans); color: var(--ed-band-text, var(--rx-soft)); text-align: center; text-wrap: balance; }
+html[data-edition] main.has-band .rx-mode-help { padding: 8px 14px; border-radius: var(--rx-r-tile); background: color-mix(in srgb, var(--ed-band) 86%, transparent); }
+
+/* the back: who and where as the answer, then why */
+html[data-edition] .rx-flip-where { display: grid; gap: 2px; font: 600 12.5px/1.4 var(--astor-sans); letter-spacing: .02em; color: var(--ed-soft); }
+html[data-edition] .rx-flip-where b { font: 400 21px/1.2 Georgia, 'Times New Roman', serif; letter-spacing: -.005em; color: var(--ed-accent-text); }
+html[data-edition] .rx-flip-analysis { font-size: 16.5px; line-height: 1.6; color: var(--ed-ink); }
+html[data-edition] .rx-flip-context { color: var(--ed-soft); }
+html[data-edition] .rx-flip-small { color: var(--ed-soft); }
+html[data-edition] .rx-flip-cue { color: var(--ed-accent-text); }
+.rx-flip-given { color: var(--ed-soft, var(--rx-muted)); }
+html[data-edition] .rx-flip-line.is-start p { color: var(--ed-soft); }
+
+/* memorise: four steps, hidden words that can be peeked at */
+html[data-edition] .rx-flip-head .rx-mem-steps { margin: 0; }
+html[data-edition] .rx-mem-steps li { width: 28px; background: var(--ed-line-strong); }
+html[data-edition] .rx-mem-steps li.is-on { background: var(--ed-accent-text); }
+.rx-mem-word {
+  appearance: none; display: inline-flex; align-items: baseline; margin: 0; padding: 0 1px; border: 0; border-radius: 3px; background: none; cursor: pointer;
+  font: inherit; color: inherit; line-height: inherit;
+}
+.rx-mem-word b { font-weight: 400; color: var(--ed-accent-text, var(--rx-accent-ink)); }
+.rx-mem-word .rx-mem-rest {
+  color: transparent; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; text-decoration-skip-ink: none;
+  text-decoration-color: var(--ed-line-strong, var(--rx-line-strong)); transition: color .2s ease;
+}
+.rx-mem-word.is-peek .rx-mem-rest { color: var(--rx-ink); text-decoration-color: transparent; }
+@media (hover: hover) { .rx-mem-word:hover .rx-mem-rest { text-decoration-color: var(--ed-accent-text, var(--rx-accent)); } }
+.rx-mem-word:focus-visible { outline: 2px solid var(--ed-accent-text, var(--rx-accent)); outline-offset: 1px; }
+html[data-edition] .rx-deck-actions { flex-direction: column; align-items: center; gap: 6px; }
+html[data-edition] .rx-deck-actions:has(.rx-rate) { flex-direction: row; }
+
+/* keyboard hints only where there is a keyboard */
+@media (hover: none), (pointer: coarse) { .rx-kbd, .rx-deck-keys { display: none; } }
+
+@media (max-width: 560px) {
+  html[data-edition] .rx-flip-face { min-height: 180px; padding: 18px 18px 22px; gap: 10px; }
+  html[data-edition] .rx-flip-line p { font-size: 21px; }
+  html[data-edition] .rx-flip-line.is-answer p { font-size: 19px; }
+  html[data-edition] .rx-flip-analysis { font-size: 15.5px; }
+  .rx-mode-help { font-size: 13.5px; }
+}
+@media (prefers-reduced-motion: reduce) { .rx-mem-word .rx-mem-rest { transition: none; } }
+
+/* =============================================================================
+   rx: the activity menu on phones, and lettering that reads over the cover
+   ============================================================================= */
+
+.rx-acts-menu { display: none; }
+@media (max-width: 720px) {
+  html[data-edition] .rx-acts-row { display: none; }
+  html[data-edition] .rx-acts-menu { display: block; position: relative; z-index: 6; margin: 10px 0 0; }
+  /* the menu is the activity's name, so the heading below it would only repeat it */
+  html[data-edition] main.has-band .rx-bar-mount + .rx-head { display: none; }
+}
+.rx-acts-menu > summary {
+  list-style: none; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; margin: 0 auto; padding: 6px 16px;
+  width: fit-content; max-width: 100%; border-radius: 999px; cursor: pointer;
+  background: color-mix(in srgb, var(--ed-band) 88%, transparent); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ed-band-text) 22%, transparent);
+  color: var(--ed-band-text); -webkit-tap-highlight-color: transparent;
+}
+.rx-acts-menu > summary::-webkit-details-marker { display: none; }
+.rx-acts-menu > summary .rv-drawing { color: var(--ed-band-text); opacity: .8; }
+.rx-acts-menu-name { font: 400 17px/1.15 Georgia, 'Times New Roman', serif; letter-spacing: .16em; text-transform: uppercase; }
+.rx-acts-menu-hint { font: 700 11px/1 var(--astor-sans); letter-spacing: .08em; text-transform: uppercase; color: var(--ed-band-soft); }
+.rx-acts-menu-chevron { width: 9px; height: 9px; margin-top: -4px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); transition: transform .2s ease; }
+.rx-acts-menu[open] .rx-acts-menu-chevron { transform: rotate(225deg); margin-top: 4px; }
+.rx-acts-menu > summary:focus-visible { outline: 3px solid var(--ed-band-text); outline-offset: 2px; }
+.rx-acts-panel {
+  position: absolute; left: 0; right: 0; top: calc(100% + 8px); padding: 10px; border-radius: var(--rx-r-tile, 14px);
+  background: var(--ed-surface); box-shadow: 0 0 0 1px var(--ed-line), 0 24px 48px -18px rgba(0, 0, 0, .55);
+  animation: rx-menu-in .18s ease-out;
+}
+@keyframes rx-menu-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.rx-acts-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin: 0; padding: 0; list-style: none; }
+.rx-acts-tile {
+  display: flex; align-items: center; gap: 9px; min-height: 48px; padding: 8px 12px; border-radius: calc(var(--rx-r-tile, 14px) - 4px);
+  color: var(--ed-ink); text-decoration: none; font: 600 14px/1.25 var(--astor-sans); background: color-mix(in srgb, var(--ed-ink) 3%, var(--ed-surface));
+}
+.rx-acts-tile .rv-drawing { flex: none; color: var(--ed-accent-text); }
+.rx-acts-tile.is-here { background: var(--ed-button); color: var(--ed-button-ink); }
+.rx-acts-tile.is-here .rv-drawing { color: var(--ed-button-ink); }
+.rx-acts-tile:focus-visible { outline: 3px solid var(--ed-accent-text); outline-offset: 1px; }
+@media (prefers-reduced-motion: reduce) { .rx-acts-panel { animation: none; } .rx-acts-menu-chevron { transition: none; } }
+
+/* lettering on the cover: a halo of the cover's own ground behind each
+   letter, so the drawings stay whole and the words stay legible */
+html[data-edition] main.has-band :is(.rx-head h1, .rx-head p, .rx-progress-count, .rx-run, .rx-step-label, .rx-step:not(.is-here), > .book-breadcrumb) {
+  text-shadow: 0 0 2px var(--ed-band), 0 0 6px var(--ed-band), 0 0 12px var(--ed-band), 0 0 18px var(--ed-band);
+}
+html[data-edition] main.has-band .rx-head { position: relative; }
+html[data-edition] main.has-band .rx-head h1 { font-size: clamp(22px, 2.4vw, 28px); letter-spacing: .14em; }
+
+/* =============================================================================
+   rx: a shorter cover on the Revise home
+   On wider screens every edition sets its jacket as one row (cover, words,
+   progress) so the activities are close; a centred edition centres its words
+   within that row. Phones keep their stacked jacket.
+   ============================================================================= */
+
+@media (min-width: 561px) {
+  html[data-edition] .rx-hero.is-cover { padding: clamp(22px, 2.6vw, 34px) clamp(22px, 3.4vw, 44px); }
+  html[data-edition] .rx-hero.is-cover .rx-hero-cover { width: clamp(92px, 9vw, 128px); }
+  html[data-edition] .rx-hero.is-cover .rx-hero-title { margin-bottom: 8px; font-size: clamp(34px, 4.2vw, 58px); }
+  html[data-edition] .rx-hero.is-cover .rx-hero-kicker { margin-bottom: 8px; }
+  html[data-edition] .rx-hero.is-cover .rx-hero-epigraph {
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; margin-bottom: 16px; font-size: clamp(15.5px, 1.4vw, 18px);
+  }
+  html[data-edition] .rx-hero.is-cover .rx-hero-actions { gap: 10px; }
+  html[data-edition] .rx-hero.is-cover .rx-hero-start { padding: 12px 16px; }
+  html[data-edition] .rx-hero.is-cover .rx-hero-start-label b { font-size: 19px; }
+  html[data-edition] .rx-hero.is-cover .rx-hero-panel { padding: 14px 16px; min-width: 170px; }
+  html[data-edition] .rx-hero.is-cover .rx-hero-panel .rx-ring svg { width: 96px; height: 96px; }
+  /* the centred edition: the same row, its words centred */
+  html[data-ed-layout="centred"] .rx-hero.is-cover .rx-hero-inner { grid-template-columns: auto minmax(0, 1fr) auto; justify-items: stretch; text-align: center; }
+  html[data-ed-layout="centred"] .rx-hero.is-cover .rx-hero-words { display: grid; justify-items: center; }
+  html[data-ed-layout="centred"] .rx-hero.is-cover .rx-hero-actions { width: 100%; max-width: 520px; }
+  html[data-ed-layout="centred"] .rx-hero.is-cover .rx-hero-panel { grid-column: auto; grid-template-columns: none; justify-items: center; }
+}
+@media (min-width: 561px) and (max-width: 960px) {
+  html[data-edition] .rx-hero.is-cover .rx-hero-inner, html[data-ed-layout="centred"] .rx-hero.is-cover .rx-hero-inner { grid-template-columns: auto minmax(0, 1fr); align-items: start; }
+  html[data-edition] .rx-hero.is-cover .rx-hero-panel, html[data-ed-layout="centred"] .rx-hero.is-cover .rx-hero-panel {
+    grid-column: 1 / -1; grid-template-columns: auto auto minmax(0, 1fr); justify-items: start; align-items: center; padding: 10px 14px;
+  }
+  html[data-edition] .rx-hero.is-cover .rx-hero-panel .rx-ring svg { width: 72px; height: 72px; }
+}
+/* a soft patch of the cover's ground behind the activity's name, so a
+   drawing passing behind it never crosses the words */
+html[data-edition] main.has-band .rx-head::before {
+  content: ''; position: absolute; z-index: -1; inset: -14px -40px -10px -40px; pointer-events: none;
+  background: radial-gradient(closest-side, var(--ed-band) 62%, color-mix(in srgb, var(--ed-band) 0%, transparent)) 0 50% / min(100%, 640px) 100% no-repeat;
+}
+
+/* =============================================================================
+   rx: the essay planner, finished like the games
+   ============================================================================= */
+
+html[data-edition] .rx-essay-side { top: calc(var(--rx-header, 72px) + 16px); }
+html[data-edition] .rx-essay-side { background: var(--ed-surface); border-color: var(--ed-line); box-shadow: 0 1px 0 var(--ed-line), 0 20px 40px -26px rgba(0, 0, 0, .45); }
+html[data-edition] .rx-essay-title { color: var(--ed-ink); }
+html[data-edition] .rx-essay-lede { color: var(--ed-soft); }
+
+/* writing boxes grow with the writing; guidance sits in the label */
+html[data-edition] .rx-textarea { resize: none; overflow: hidden; min-height: 0; line-height: 1.55; }
+html[data-edition] .rx-textarea.is-large { font-size: 19px; }
+.rx-pea-label { flex-wrap: wrap; row-gap: 2px; }
+.rx-pea-hint { font: 400 12.5px/1.3 var(--astor-sans); color: var(--ed-soft, var(--rx-muted)); }
+.rx-pea-hint::before { content: '·'; margin-right: 6px; }
+/* label above its box at every width, so the writing has the full measure */
+html[data-edition] .rx-pea { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+html[data-edition] .rx-pea-label { padding-top: 2px; }
+html[data-edition] .rx-pea-label { color: var(--ed-ink); }
+html[data-edition] .rx-pea-label b { border-radius: calc(var(--rx-r-tile) / 2); background: var(--ed-button); color: var(--ed-button-ink); }
+html[data-edition] .rx-pea { border-top-color: var(--ed-line); }
+
+/* a paragraph: a section of the page, not a box inside a box */
+html[data-edition] .rx-para { border-radius: var(--rx-r-tile); border-color: var(--ed-line-strong); background: color-mix(in srgb, var(--ed-ink) 2%, var(--ed-surface)); }
+html[data-edition] .rx-para-head h3 { color: var(--ed-ink); }
+html[data-edition] .rx-para-model { border-left: 0; border-radius: calc(var(--rx-r-tile) - 4px); background: var(--ed-sunk); box-shadow: inset 3px 0 0 var(--ed-star); color: var(--ed-soft); }
+html[data-edition] .rx-para-model .rx-label { color: var(--ed-accent-text); }
+html[data-edition] .rx-thesis-echo { border-radius: var(--rx-r-tile); background: var(--ed-sunk); color: var(--ed-ink); }
+html[data-edition] .rx-icon-button { width: 40px; height: 40px; border-radius: calc(var(--rx-r-tile) / 2); border-color: var(--ed-line-strong); background: var(--ed-surface); color: var(--ed-ink); }
+html[data-edition] .rx-icon-button:hover:not(:disabled) { border-color: var(--ed-accent-text); color: var(--ed-accent-text); }
+
+/* evidence */
+html[data-edition] .rx-evidence { border-left: 0; border-radius: var(--rx-r-tile); background: var(--ed-sunk); box-shadow: inset 3px 0 0 var(--ed-accent-text); }
+html[data-edition] .rx-evidence blockquote p { color: var(--ed-ink); }
+html[data-edition] .rx-evidence figcaption { color: var(--ed-accent-text); }
+html[data-edition] .rx-choose-evidence { border-radius: var(--rx-r-tile); border-color: var(--ed-line-strong); color: var(--ed-ink); }
+html[data-edition] .rx-choose-evidence span:first-child { color: var(--ed-accent-text); }
+html[data-edition] .rx-picker { border-radius: var(--rx-r-tile); border-color: var(--ed-accent-text); background: var(--ed-surface); }
+html[data-edition] .rx-pick { border-radius: calc(var(--rx-r-tile) - 4px); border-color: var(--ed-line-strong); background: color-mix(in srgb, var(--ed-ink) 2%, var(--ed-surface)); color: var(--ed-ink); }
+html[data-edition] .rx-pick:hover { border-color: var(--ed-accent-text); }
+html[data-edition] .rx-pick-meta, html[data-edition] .rx-picker-head .rx-label { color: var(--ed-accent-text); }
+html[data-edition] .rx-pick-tags { color: var(--ed-soft); }
+html[data-edition] .rx-search { border-radius: calc(var(--rx-r-tile) - 4px); border-color: var(--ed-line-strong); background: var(--ed-surface); color: var(--ed-ink); }
+
+/* links, help and the model route take the edition's accent, not the house red */
+html[data-edition] :is(.rx-link-button, .rx-model > summary, .rx-help > summary) { color: var(--ed-accent-text); }
+html[data-edition] :is(.rx-model, .rx-help) { border-radius: var(--rx-r-tile); border-color: var(--ed-line); background: var(--ed-sunk); }
+html[data-edition] :is(.rx-model ol, .rx-model-focus, .rx-help p) { color: var(--ed-ink); }
+html[data-edition] .rx-model-note { color: var(--ed-soft); }
+
+/* coaching */
+html[data-edition] .rx-coach { border-radius: var(--rx-r-tile); background: var(--ed-sunk); color: var(--ed-ink); }
+html[data-edition] .rx-coach.is-good { background: color-mix(in srgb, var(--ed-right) 12%, var(--ed-surface)); }
+html[data-edition] .rx-coach.is-good .rx-coach-mark { background: var(--ed-right); color: var(--ed-on-fill); }
+html[data-edition] .rx-coach.is-warn { background: color-mix(in srgb, var(--ed-star) 16%, var(--ed-surface)); }
+html[data-edition] .rx-coach.is-warn .rx-coach-mark { background: var(--ed-star); color: var(--ed-on-fill); }
+html[data-edition] .rx-coach-count { color: var(--ed-soft); }
+html[data-edition] .rx-mini-coach { color: var(--ed-soft); }
+html[data-edition] .rx-mini-coach.is-good { color: var(--ed-right); }
+html[data-edition] .rx-mini-coach.is-warn { color: color-mix(in srgb, var(--ed-star) 70%, var(--ed-ink)); }
+html[data-edition] .rx-starters .rx-chip { border-radius: 999px; border-color: var(--ed-line-strong); background: var(--ed-surface); color: var(--ed-ink); }
+html[data-edition] .rx-starters .rx-label { color: var(--ed-soft); }
+html[data-edition] .rx-checklist { color: var(--ed-soft); }
+html[data-edition] .rx-checklist li.is-done { color: var(--ed-ink); }
+html[data-edition] .rx-checklist li.is-done i { border-color: var(--ed-right); background-color: var(--ed-right); }
+html[data-edition] .rx-meter { background: var(--ed-line-strong); }
+html[data-edition] .rx-meter > i { background: var(--ed-accent-text); }
+
+/* the plan as one page: the book's paper and ink in every edition */
+html[data-edition] .rx-doc { border-radius: var(--rx-r-tile); border-color: var(--ed-line); background: var(--ed-sunk); color: var(--ed-ink); box-shadow: none; }
+html[data-edition] .rx-doc-kicker, html[data-edition] .rx-doc-paras li::marker { color: var(--ed-accent-text); }
+html[data-edition] .rx-doc em { color: var(--ed-wrong); }
+html[data-edition] .rx-doc-foot { border-top-color: var(--ed-line); color: var(--ed-soft); }
+
+/* the review's actions in one row; the step buttons on one line */
+html[data-edition] .rx-essay-main .rx-results-actions.is-left { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 8px; }
+html[data-edition] .rx-essay-main .rx-results-actions.is-left .rx-button { width: auto; min-height: 46px; border-radius: var(--rx-r-tile); }
+html[data-edition] .rx-essay-main .rx-results-actions.is-left .rx-button.is-secondary { background: transparent; border: 1.5px solid var(--ed-line-strong); color: var(--ed-ink); }
+html[data-edition] .rx-essay-nav { border-top-color: var(--ed-line); }
+html[data-edition] .rx-essay-nav .rx-button { min-height: 48px; border-radius: var(--rx-r-tile); white-space: nowrap; }
+
+@media (max-width: 560px) {
+  html[data-edition] .rx-essay-main { padding: 20px 14px; }
+  html[data-edition] .rx-para { padding: 14px 12px 16px; }
+  html[data-edition] .rx-pea { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  html[data-edition] .rx-pea-label { padding-top: 2px; }
+  /* sentence starters: one row to swipe through, not a stack */
+  html[data-edition] .rx-starters.is-small { flex-wrap: nowrap; overflow-x: auto; margin: 8px -12px 0; padding: 2px 12px 4px; scrollbar-width: none; }
+  html[data-edition] .rx-starters.is-small::-webkit-scrollbar { display: none; }
+  html[data-edition] .rx-starters.is-small .rx-chip { flex: none; white-space: nowrap; }
+  html[data-edition] .rx-essay-main .rx-results-actions.is-left .rx-button { flex: 1 1 auto; }
+}
+
+/* --- debate: the same cards and tiles as everything else ----------------------------- */
+
+html[data-edition] .rx-side-card {
+  border: 0; border-radius: var(--rx-r-card); background: var(--ed-surface);
+  box-shadow: 0 1px 0 var(--ed-line), 0 24px 48px -30px rgba(20, 14, 8, .45);
+}
+html[data-edition][data-ed-mode="dark"] .rx-side-card { box-shadow: 0 0 0 1px var(--ed-line), 0 24px 56px -28px rgba(0, 0, 0, .75); }
+html[data-ed-layout="framed"] .rx-side-card { outline: 1px solid var(--ed-line-strong); outline-offset: -8px; }
+html[data-edition] .rx-side-card.is-mine { box-shadow: 0 0 0 2px var(--ed-accent-text), 0 24px 48px -30px rgba(0, 0, 0, .45); }
+/* the reading and the objection are two sides of an argument, not right and wrong */
+html[data-edition] .rx-side-label { color: var(--ed-accent-text); }
+html[data-edition] .is-against .rx-side-label { color: var(--ed-soft); }
+html[data-edition] .rx-side-card :is(.rx-debate-title, .rx-side-counter) { color: var(--ed-ink); }
+html[data-edition] .rx-side-card p { color: var(--ed-soft); }
+html[data-edition] .rx-balance { color: var(--ed-band-text); }
+html[data-edition] .rx-debate-step { border-radius: var(--rx-r-card); border-color: var(--ed-line); }
+html[data-edition] .rx-debate-head h3 { color: var(--ed-ink); }
+html[data-edition] .rx-debate-head p { color: var(--ed-soft); }
+html[data-edition] .rx-debate-step.is-current .rx-step-number { background: var(--ed-button); border-color: var(--ed-button); color: var(--ed-button-ink); }
+html[data-edition] .rx-debate-step.is-done .rx-step-number { border-color: var(--ed-right); color: var(--ed-right); }
+html[data-edition] .rx-side-button { border-radius: var(--rx-r-tile); border-color: var(--ed-line-strong); background: color-mix(in srgb, var(--ed-ink) 2.5%, var(--ed-surface)); color: var(--ed-ink); }
+html[data-edition] .rx-side-button span { color: var(--ed-soft); }
+html[data-edition] .rx-side-button:is(.is-for, .is-against):hover { border-color: var(--ed-accent-text); }
+html[data-edition] .rx-side-button[aria-checked="true"] { border-color: var(--ed-accent-text); background: color-mix(in srgb, var(--ed-accent) 9%, var(--ed-surface)); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ed-accent) 16%, transparent); }
+html[data-edition] .rx-bench-card { border-radius: var(--rx-r-tile); border-color: var(--ed-line-strong); background: color-mix(in srgb, var(--ed-ink) 2.5%, var(--ed-surface)); color: var(--ed-ink); }
+html[data-edition] .rx-bench-card:hover { border-color: var(--ed-accent-text); }
+html[data-edition] .rx-bench-card.is-in { border-color: var(--ed-accent-text); background: color-mix(in srgb, var(--ed-accent) 9%, var(--ed-surface)); }
+html[data-edition] .rx-bench-meta { color: var(--ed-accent-text); }
+html[data-edition] .rx-bench-tags { color: var(--ed-soft); }
+html[data-edition] .rx-counter { border-left: 0; border-radius: var(--rx-r-tile); background: var(--ed-sunk); box-shadow: inset 3px 0 0 var(--ed-wrong); }
+html[data-edition] .rx-counter blockquote p { color: var(--ed-ink); }
+html[data-edition] .rx-counter figcaption { color: var(--ed-wrong); }
+html[data-edition] .rx-case { color: var(--ed-ink); }
+html[data-edition] .rx-case-meter i { background: var(--ed-line-strong); }
+html[data-edition] .rx-case-meter i.is-on { background: var(--ed-accent-text); }
+html[data-edition] .rx-filter-chips .rx-chip { border-radius: 999px; border-color: var(--ed-line-strong); background: var(--ed-surface); color: var(--ed-ink); }
+html[data-edition] .rx-filter-chips .rx-chip[aria-pressed="true"] { background: var(--ed-button); border-color: var(--ed-button); color: var(--ed-button-ink); }
+html[data-edition] .rx-reading-num { color: var(--ed-accent-text); }
+.rx-acts-menu-name { font-size: 16px; letter-spacing: .11em; white-space: nowrap; }
+.rx-acts-menu > summary { gap: 8px; padding: 6px 14px; }
+/* the book's title in the study bar is a comfortable target, not just its letters */
+@media (max-width: 560px) {
+  html[data-edition] .rx-bar-title { padding: 11px 0; margin: -11px 0; }
+}
