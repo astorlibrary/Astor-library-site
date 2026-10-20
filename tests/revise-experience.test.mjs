@@ -162,3 +162,22 @@ test('the completion screen says something true about the round', async () => {
   assert.equal(resultWords({ score: 3, total: 3, practice: true }).title, 'All three put right.');
   assert.equal(resultWords({ score: 2, total: 5, practice: true }).title, '2 of 5 put right.');
 });
+
+test('no Who said it? question offers two names for one person', async () => {
+  const { whoSaidIt, castMember, sameName, inSentence } = await import('../assets/astor/questions.mjs');
+  for (const book of books) {
+    for (const question of whoSaidIt(book, seededRandom(3))) {
+      const people = question.options.map(option => castMember(book, option));
+      const answer = people[question.answer];
+      question.options.forEach((option, index) => {
+        if (index === question.answer) return;
+        if (answer && people[index]) assert.notEqual(people[index], answer, `${book.slug}: "${option}" is the answer "${question.options[question.answer]}" by another name`);
+      });
+      const known = people.filter(Boolean);
+      assert.equal(new Set(known).size, known.length, `${book.slug}: one person offered twice in ${JSON.stringify(question.options)}`);
+    }
+  }
+  assert.ok(sameName('Father', 'Father'), 'a name is always the same as itself');
+  assert.equal(inSentence('The Witches'), 'the Witches');
+  assert.equal(inSentence('Macbeth'), 'Macbeth');
+});

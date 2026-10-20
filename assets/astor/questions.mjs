@@ -76,6 +76,7 @@ export function nameTokens(name) {
 // in the other: "Scrooge" in "Ebenezer Scrooge", "King Richard III" in
 // "Richard, Duke of Gloucester". Two Bennets who differ by a forename are not.
 export function sameName(a, b) {
+  if (String(a).trim().toLowerCase() === String(b).trim().toLowerCase()) return true;
   const left = nameTokens(a);
   const right = nameTokens(b);
   if (!left.size || !right.size) return false;
@@ -88,18 +89,33 @@ export function sameName(a, b) {
 // name ("Scrooge" beside "Ebenezer Scrooge", "Gloucester" beside "King Richard
 // III"), nobody the line itself involves (the Weird Sisters beside the Third
 // Witch), and no two names for one person among the wrong answers either.
+// A cast member can also be named in a speaker line by another name, listed
+// in its `aliases`: "Marley's Ghost" for Jacob Marley, "The Witches" for the
+// Weird Sisters, "Jack" for John Worthing.
+export function castMember(book, name) {
+  const wanted = String(name).trim().toLowerCase();
+  return book.characters.find(character => [character.name, ...(character.aliases || [])]
+    .some(other => String(other).trim().toLowerCase() === wanted)) || null;
+}
+
 function otherSpeakers(book, quotation) {
   const byId = new Map(book.characters.map(character => [character.id, character]));
   const involved = (quotation.characters || []).map(id => byId.get(id)?.name).filter(Boolean);
   const speakers = [...new Set(book.quotations.map(entry => entry.speaker).filter(Boolean))];
   const candidates = [
     ...book.characters.map(character => character.name),
-    ...speakers.filter(speaker => !book.characters.some(character => sameName(character.name, speaker)))
+    ...speakers.filter(speaker => !castMember(book, speaker) && !book.characters.some(character => sameName(character.name, speaker)))
   ];
   // Two names that are both in the cast list are two people, however alike:
-  // Macbeth and Lady Macbeth are the pair most worth telling apart.
+  // Macbeth and Lady Macbeth are the pair most worth telling apart. A name
+  // the cast list knows, by name or alias, is that person and no other.
   const cast = new Set(book.characters.map(character => character.name));
-  const alike = (a, b) => !(cast.has(a) && cast.has(b)) && sameName(a, b);
+  const alike = (a, b) => {
+    const left = castMember(book, a);
+    const right = castMember(book, b);
+    if (left && right) return left === right;
+    return !(cast.has(a) && cast.has(b)) && sameName(a, b);
+  };
   const chosen = [];
   for (const name of candidates) {
     if (alike(name, quotation.speaker)) continue;
@@ -108,6 +124,11 @@ function otherSpeakers(book, quotation) {
     chosen.push(name);
   }
   return chosen;
+}
+
+// A name set inside a sentence: "the Witches", not "The Witches".
+export function inSentence(name) {
+  return String(name).replace(/^The (?=\S)/, 'the ');
 }
 
 export function whoSaidIt(book, random = Math.random) {
@@ -195,7 +216,7 @@ export function fillTheLine(book, random = Math.random) {
     return {
       kind: 'cloze',
       id: 'cloze:' + book.slug + ':' + quotation.id,
-      stem: quotation.speaker ? 'Complete the line spoken by ' + quotation.speaker + '.' : 'Complete the line.',
+      stem: quotation.speaker ? 'Complete the line spoken by ' + inSentence(quotation.speaker) + '.' : 'Complete the line.',
       segments,
       answer: answers,
       bank: shuffle([...answers, ...decoys], random),
