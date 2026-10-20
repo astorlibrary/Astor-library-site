@@ -73,7 +73,7 @@ async function open() {
   loadFailed = false;
   render();
   try {
-    const response = await fetch('/assets/search-index.json', { credentials: 'omit' });
+    const response = await fetch('/assets/search-index.json', { credentials: 'same-origin' });
     if (!response.ok) throw new Error('Search index unavailable');
     const payload = await response.json();
     if (!Array.isArray(payload.entries)) throw new Error('Invalid search index');

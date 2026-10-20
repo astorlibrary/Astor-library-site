@@ -6,7 +6,7 @@
 // /assets/revise-index.json for the chooser and then fetch only the chosen
 // book's record. The whole-library study index is left to the explorers.
 
-import { el, clear, shuffle, seededRandom, prefersReducedMotion } from './util.mjs';
+import { el, clear, shuffle, seededRandom, prefersReducedMotion, fetchJson } from './util.mjs';
 import { loadBook, cardId } from './data.mjs';
 import { snapshot, today, recentlyViewed } from './store.mjs';
 import { GAME_BUILDERS } from './questions.mjs';
@@ -45,11 +45,7 @@ let shelfRequest = null;
 
 export function loadShelf() {
   if (!shelfRequest) {
-    shelfRequest = fetch('/assets/revise-index.json', { credentials: 'omit' })
-      .then(response => {
-        if (!response.ok) throw new Error('Could not load the books');
-        return response.json();
-      })
+    shelfRequest = fetchJson('/assets/revise-index.json')
       .then(data => ({ icons: data.icons || {}, books: data.books.slice().sort((a, b) => a.title.localeCompare(b.title)) }))
       .catch(error => { shelfRequest = null; throw error; });
   }
@@ -743,14 +739,23 @@ export function bookHead(head, books, meta, onChoose, options = {}) {
   studyBar(head, { books, meta, onChoose, icons: options.icons, active: options.active });
 }
 
+// When the books cannot be fetched: say so, and offer to try again (the
+// cause is in the console, from fetchJson).
+export function loadFailed(mount, message = 'The books didn’t load.') {
+  clear(mount);
+  mount.append(el('div', { class: 'rv-empty rx-load-failed' }, [
+    el('p', { text: message + ' Check your connection, then try again.' }),
+    el('button', { type: 'button', class: 'rx-button is-primary', text: 'Try again', onclick: () => window.location.reload() })
+  ]));
+}
+
 // Everything a one-book tool needs: the shelf, the reader's book, the study
 // bar, and that book's record, fetched on its own. A slow book never
 // overwrites a quicker, later choice.
 export async function openBookPage({ head, mount, filter, render, active }) {
   let shelf;
   try { shelf = await loadShelf(); } catch {
-    clear(mount);
-    mount.append(el('p', { class: 'rv-empty', text: 'The books didn’t load. Try reloading the page.' }));
+    loadFailed(mount);
     return;
   }
   const books = filter ? shelf.books.filter(filter) : shelf.books;

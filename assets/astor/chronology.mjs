@@ -32,7 +32,7 @@ if (list) start();
 
 async function loadTimelineIndex() {
   try {
-    const response = await fetch('/assets/timeline-index.json', { credentials: 'omit' });
+    const response = await fetch('/assets/timeline-index.json', { credentials: 'same-origin' });
     if (response.ok) return await response.json();
   } catch { /* fall through */ }
   return loadIndex();

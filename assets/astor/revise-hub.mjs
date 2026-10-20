@@ -13,7 +13,7 @@ import { resultGrid } from './questions.mjs';
 import { maskName } from './questions.mjs';
 import { scoreRing, starsFor } from './quiz-round.mjs';
 import {
-  motif, hasMotifs,
+  motif, hasMotifs, loadFailed,
   loadShelf, loadBook, drawing, setAccent, keepAddress, preferredSlug,
   LIBRARY_QUIZZES, availableQuizzes, bookLines, lineSummary, lastRevised,
   sessionPlan, sessionLine, whenLabel, clip, STATE_WORDS, shortTitle,
@@ -31,7 +31,7 @@ async function start() {
   try {
     shelf = await loadShelf();
   } catch {
-    hubMount.append(el('p', { class: 'rv-empty', text: 'The books didn’t load. Try reloading the page.' }));
+    loadFailed(hubMount);
     return;
   }
   const recent = recentlyViewed(20).map(entry => entry.slug);

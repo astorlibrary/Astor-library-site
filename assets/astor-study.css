@@ -4106,3 +4106,5 @@ html[data-edition] :is(.rx-option, .rx-word, .rx-blank, .rx-act, .rx-story-card,
   outline: 3px solid var(--ed-accent-text); outline-offset: 2px;
 }
 html[data-edition] .rx-flip:focus-visible .rx-flip-inner { outline: 3px solid var(--ed-accent-text); outline-offset: 3px; }
+.rx-load-failed { display: grid; justify-items: center; gap: 14px; padding: 28px 18px; text-align: center; }
+.rx-load-failed p { margin: 0; }

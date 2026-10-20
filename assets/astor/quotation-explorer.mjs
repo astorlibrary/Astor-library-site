@@ -42,7 +42,7 @@ if (filterForm && results) start();
 // index still works.
 async function loadQuotationIndex() {
   try {
-    const response = await fetch('/assets/quotation-index.json', { credentials: 'omit' });
+    const response = await fetch('/assets/quotation-index.json', { credentials: 'same-origin' });
     if (response.ok) return await response.json();
   } catch { /* fall through */ }
   return loadIndex();
