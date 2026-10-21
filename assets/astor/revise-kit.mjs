@@ -6,7 +6,7 @@
 // /assets/revise-index.json for the chooser and then fetch only the chosen
 // book's record. The whole-library study index is left to the explorers.
 
-import { el, clear, shuffle, seededRandom, prefersReducedMotion, fetchJson } from './util.mjs';
+import { el, clear, shuffle, seededRandom, prefersReducedMotion, fetchJson, describeError } from './util.mjs';
 import { loadBook, cardId } from './data.mjs';
 import { snapshot, today, recentlyViewed } from './store.mjs';
 import { GAME_BUILDERS } from './questions.mjs';
@@ -430,9 +430,19 @@ export function sessionLine(counts) {
 
 // --- what to do next ---------------------------------------------------------
 
+// Builders that threw, so a page can say an activity could not be prepared
+// rather than leave it silently missing.
+export const buildFailures = [];
+
 export function availableQuizzes(book) {
   return QUIZZES.filter(quiz => {
-    try { return GAME_BUILDERS[quiz.id].build(book, seededRandom(1)).length >= 4; } catch { return false; }
+    try { return GAME_BUILDERS[quiz.id].build(book, seededRandom(1)).length >= 4; } catch (error) {
+      if (!buildFailures.some(item => item.quiz === quiz.id && item.book === book.slug)) {
+        buildFailures.push({ quiz: quiz.id, name: quiz.name, book: book.slug, error });
+        console.error('Astor Library: could not prepare ' + quiz.id + ' for ' + book.slug + '.', error);
+      }
+      return false;
+    }
   });
 }
 
@@ -776,12 +786,14 @@ export function bookHead(head, books, meta, onChoose, options = {}) {
   studyBar(head, { books, meta, onChoose, icons: options.icons, active: options.active });
 }
 
-// When the books cannot be fetched: say so, and offer to try again (the
-// cause is in the console, from fetchJson).
-export function loadFailed(mount, message = 'The books didn’t load.') {
+// When the books cannot be fetched: say so, say why in a line the reader can
+// pass on, and offer to try again.
+export function loadFailed(mount, message = 'The books didn’t load.', error = null) {
   clear(mount);
+  const why = describeError(error);
   mount.append(el('div', { class: 'rv-empty rx-load-failed' }, [
     el('p', { text: message + ' Check your connection, then try again.' }),
+    why ? el('p', { class: 'rx-load-why', text: 'Reason: ' + why }) : null,
     el('button', { type: 'button', class: 'rx-button is-primary', text: 'Try again', onclick: () => window.location.reload() })
   ]));
 }
@@ -791,8 +803,8 @@ export function loadFailed(mount, message = 'The books didn’t load.') {
 // overwrites a quicker, later choice.
 export async function openBookPage({ head, mount, filter, render, active }) {
   let shelf;
-  try { shelf = await loadShelf(); } catch {
-    loadFailed(mount);
+  try { shelf = await loadShelf(); } catch (error) {
+    loadFailed(mount, undefined, error);
     return;
   }
   const books = filter ? shelf.books.filter(filter) : shelf.books;
@@ -816,10 +828,9 @@ export async function openBookPage({ head, mount, filter, render, active }) {
     clear(mount);
     mount.append(el('p', { class: 'rv-loading', text: 'Opening ' + meta.title + '…' }));
     let book;
-    try { book = await loadBook(meta.slug); } catch {
+    try { book = await loadBook(meta.slug); } catch (error) {
       if (ticket !== generation) return;
-      clear(mount);
-      mount.append(el('p', { class: 'rv-empty', text: 'That book didn’t load. Try another, or reload the page.' }));
+      loadFailed(mount, 'That book didn’t load.', error);
       return;
     }
     if (ticket !== generation) return;

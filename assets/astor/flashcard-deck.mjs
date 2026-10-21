@@ -69,8 +69,8 @@ let keyHandler = null;
 async function start() {
   mount.append(el('p', { class: 'rv-loading', text: 'Shuffling the deck…' }));
   let shelf;
-  try { shelf = await loadShelf(); } catch {
-    loadFailed(mount, 'The cards didn’t load.');
+  try { shelf = await loadShelf(); } catch (error) {
+    loadFailed(mount, 'The cards didn’t load.', error);
     return;
   }
   const books = shelf.books.filter(book => book.quotations >= 5);
@@ -93,10 +93,9 @@ async function open(shelf, books, meta) {
   clear(mount);
   mount.append(el('p', { class: 'rv-loading', text: 'Opening ' + meta.title + '…' }));
   let book;
-  try { book = await loadBook(meta.slug); } catch {
+  try { book = await loadBook(meta.slug); } catch (error) {
     if (ticket !== generation) return;
-    clear(mount);
-    mount.append(el('p', { class: 'rv-empty', text: 'That deck didn’t load. Try another book.' }));
+    loadFailed(mount, 'That deck didn’t load.', error);
     return;
   }
   if (ticket !== generation || book.slug !== meta.slug) return;

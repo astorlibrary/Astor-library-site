@@ -73,10 +73,11 @@ test('modified search clicks preserve native link behaviour', () => {
 test('generated pages version search styles and script together to bypass stale offline assets', async () => {
   const { createHash } = await import('node:crypto');
   const root = new URL('../', import.meta.url);
-  const version = createHash('sha256')
-    .update(fs.readFileSync(new URL('assets/navigation.css', root)))
-    .update(fs.readFileSync(new URL('assets/astor/palette.mjs', root)))
-    .digest('hex').slice(0, 10);
+  const hash = createHash('sha256').update(fs.readFileSync(new URL('assets/navigation.css', root)));
+  for (const name of fs.readdirSync(new URL('assets/astor/', root)).filter(entry => entry.endsWith('.mjs')).sort()) {
+    hash.update(name).update(fs.readFileSync(new URL('assets/astor/' + name, root)));
+  }
+  const version = hash.digest('hex').slice(0, 10);
   for (const page of ['index.html', 'books/macbeth/index.html', 'explore/index.html']) {
     const html = fs.readFileSync(new URL('dist/' + page, root), 'utf8');
     assert.ok(html.includes('/assets/navigation.css?v=' + version), page);

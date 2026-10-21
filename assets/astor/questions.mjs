@@ -191,6 +191,27 @@ export function clozeWords(text, declared, random = Math.random) {
     .map(entry => entry.clean);
 }
 
+const LETTER_OR_DIGIT = /[\p{L}\p{N}]/u;
+const LETTER = /\p{L}/u;
+
+// Where `word` first stands in `text` as a whole word, or -1: "woo" must not
+// blank the start of "woo'd", nor "self" the end of "myself", but a possessive
+// is fine ("The game's afoot"). The characters before a match are checked by
+// hand rather than with a lookbehind, which Safari lacks before 16.4: there the
+// pattern threw and took the whole Revise page down with it.
+export function wholeWordAt(text, word) {
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = new RegExp(escaped + '(?![\\p{L}\\p{N}])(?![\'’](?!s(?!\\p{L}))\\p{L})', 'giu');
+  for (let found = pattern.exec(text); found; found = pattern.exec(text)) {
+    const before = Array.from(text.slice(Math.max(0, found.index - 4), found.index)).slice(-2);
+    const last = before[before.length - 1] || '';
+    const previous = before.length > 1 ? before[0] : '';
+    if (!LETTER_OR_DIGIT.test(last) && !(/['’]/.test(last) && LETTER.test(previous))) return found.index;
+    pattern.lastIndex = found.index + 1;
+  }
+  return -1;
+}
+
 export function fillTheLine(book, random = Math.random) {
   const vocabulary = [...new Set(book.quotations.flatMap(quotation =>
     quotation.text.split(/\s+/).map(word => word.replace(/[^\p{L}'’-]/gu, '').replace(/['’]+$/, ''))
@@ -206,12 +227,8 @@ export function fillTheLine(book, random = Math.random) {
     // word, but only one of them puts the line back together.
     const answers = [];
     for (const word of hidden) {
-      // A whole word only: "woo" must not blank the start of "woo'd", nor
-      // "self" the end of "myself". A possessive is fine: "The game's afoot".
-      const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const match = new RegExp('(?<![\\p{L}\\p{N}])(?<!\\p{L}[\'’])' + escaped + '(?![\\p{L}\\p{N}])(?![\'’](?!s(?!\\p{L}))\\p{L})', 'iu').exec(remaining);
-      if (!match) return null;
-      const at = match.index;
+      const at = wholeWordAt(remaining, word);
+      if (at === -1) return null;
       segments.push(remaining.slice(0, at));
       answers.push(remaining.slice(at, at + word.length));
       remaining = remaining.slice(at + word.length);

@@ -8,7 +8,7 @@
 // index, because their questions come from every book; they also read the
 // shelf, so their answers can be shown as covers.
 
-import { el, clear } from './util.mjs';
+import { el, clear, describeError } from './util.mjs';
 import { loadIndex } from './data.mjs';
 import { buildRound, GAME_BUILDERS } from './questions.mjs';
 import { recentlyViewed } from './store.mjs';
@@ -33,15 +33,15 @@ async function start(container) {
     let shelf = { books: [], icons: {} };
     try {
       [index, shelf] = await Promise.all([loadIndex(), loadShelf().catch(() => shelf)]);
-    } catch {
-      return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }]);
+    } catch (error) {
+      return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }], describeError(error));
     }
     return runLibrary(container, gameId, index, shelf);
   }
 
   let shelf;
-  try { shelf = await loadShelf(); } catch {
-    return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/library/', label: 'Browse the catalogue' }]);
+  try { shelf = await loadShelf(); } catch (error) {
+    return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/library/', label: 'Browse the catalogue' }], describeError(error));
   }
   const wanted = preferredSlug();
   const first = shelf.books.find(book => book.slug === wanted)
@@ -75,16 +75,23 @@ async function runBook(container, gameId, shelf, meta) {
   container.append(el('p', { class: 'rv-loading', text: 'Opening ' + meta.title + '…' }));
 
   let book;
-  try { book = await loadBook(meta.slug); } catch {
+  try { book = await loadBook(meta.slug); } catch (error) {
     if (ticket !== generation) return;
-    return emptyState(container, 'That book didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }]);
+    return emptyState(container, 'That book didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }], describeError(error));
   }
   if (ticket !== generation || book.slug !== meta.slug) return;
 
   const build = () => (gameId === 'mixed-round'
     ? sessionPlan(book).questions
     : buildRound(gameId, book, { length: 10 })).filter(question => belongsTo(book, question));
-  const questions = build();
+  let questions;
+  try { questions = build(); } catch (error) {
+    console.error('Astor Library: could not prepare ' + gameId + ' for ' + book.slug + '.', error);
+    return emptyState(container, 'This activity couldn’t be prepared for ' + book.title + ' in this browser. Try another activity, or reload the page.', [
+      { href: window.location.href, label: 'Try again' },
+      { href: '/play/?book=' + encodeURIComponent(book.slug), label: 'All revision' }
+    ], describeError(error));
+  }
   if (questions.length < 4) {
     const others = availableQuizzes(book).filter(quiz => quiz.id !== gameId).slice(0, 2);
     return emptyState(container, 'There aren’t enough questions of this kind for ' + book.title + ' yet. Try another activity on it, or another book.', [
@@ -108,7 +115,11 @@ async function runBook(container, gameId, shelf, meta) {
 
 function runLibrary(container, gameId, index, shelf) {
   const build = () => buildRound(gameId, index.books, { length: 10 });
-  const questions = build();
+  let questions;
+  try { questions = build(); } catch (error) {
+    console.error('Astor Library: could not prepare ' + gameId + '.', error);
+    return emptyState(container, 'This quiz couldn’t be prepared in this browser. Try another one, or reload the page.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }], describeError(error));
+  }
   if (questions.length < 4) {
     return emptyState(container, 'This quiz isn’t ready yet. Try another one.', [{ href: '/play/', label: 'More revision' }]);
   }

@@ -35,7 +35,7 @@ const VERSIONED_ASSETS = [
   '/assets/styles.css', '/assets/astor-study.css', '/assets/home.css', '/assets/seasons.css',
   '/assets/account.css', '/assets/presentation-viewer.css', '/assets/site.js', '/assets/catalogue.js',
   '/assets/explore.js', '/assets/resources.js', '/assets/resource-library.js', '/assets/seasonal-theme.css',
-  '/assets/theme.css'
+  '/assets/theme.css', '/assets/revise-watch.js'
 ];
 
 function versionAssets(html) {
@@ -48,10 +48,33 @@ function versionAssets(html) {
   return html;
 }
 
-const navigationVersion = require('crypto').createHash('sha256')
-  .update(fs.readFileSync(path.join(root, 'assets/navigation.css')))
-  .update(fs.readFileSync(path.join(root, 'assets/astor/palette.mjs')))
-  .digest('hex').slice(0, 10);
+// The study modules import one another by relative address and each is cached
+// on its own for up to an hour, so after a deploy a returning reader could run
+// a stale revise-kit.mjs under a fresh revise-hub.mjs, or stale modules against
+// a fresh page: the import fails and the page never starts. Every module, and
+// every import between modules, carries one stamp drawn from all of them (and
+// the navigation styles the search palette ships with), so a page always runs
+// one consistent set.
+const MODULE_DIR = path.join(root, 'assets', 'astor');
+const moduleVersion = (() => {
+  const hash = require('crypto').createHash('sha256');
+  hash.update(fs.readFileSync(path.join(root, 'assets/navigation.css')));
+  for (const name of fs.readdirSync(MODULE_DIR).filter(entry => entry.endsWith('.mjs')).sort()) {
+    hash.update(name).update(fs.readFileSync(path.join(MODULE_DIR, name)));
+  }
+  return hash.digest('hex').slice(0, 10);
+})();
+const navigationVersion = moduleVersion;
+
+function versionModuleScripts(html) {
+  return html.replace(/((?:src|href)=["'])\/assets\/astor\/([\w.-]+\.mjs)(?:\?[^"']*)?(["'])/g, '$1/assets/astor/$2?v=' + moduleVersion + '$3');
+}
+
+function versionModuleImports(code) {
+  return code.replace(/(\bfrom\s*|\bimport\s*\(\s*|\bimport\s+)(['"])\.\/([\w.-]+\.mjs)\2/g, function (match, lead, quote, name) {
+    return lead + quote + './' + name + '?v=' + moduleVersion + quote;
+  });
+}
 const outDir = path.join(root, 'dist');
 const SITE_URL = 'https://astorlibrary.com';
 const discoveryFile = path.join(root, 'assets', 'content-index.json');
@@ -1515,12 +1538,18 @@ function prepareHtml(html, source) {
     html = html.replace(/<body([^>]*)>/, '<body$1><a class="skip-link" href="#main-content">Skip to main content</a>');
   }
 
+  // A Revise page that cannot start its modules says why instead of sitting
+  // on its placeholder: the watch is a classic script, ahead of the modules.
+  if (/id="(?:rv-hub|astor-game|astor-flashcards|astor-essay-forge|astor-defend|astor-daily-game)"/.test(html) && !html.includes('/assets/revise-watch.js')) {
+    html = html.replace(/<script type="module" src="\/assets\/astor\//, '<script src="/assets/revise-watch.js"></script>\n  $&');
+  }
+
   html = html.replace(/<img\b[^>]*>/gi, addImageHints);
   html = promoteFirstMainImage(html);
   html = html.replace(/<img\b[^>]*>/gi, function (tag) { return useBookThumbnail(tag, source); });
   // Last of all, once every script and stylesheet this page will load has been
   // added: stamp each with a version taken from its contents.
-  return versionAssets(html);
+  return versionModuleScripts(versionAssets(html));
 }
 
 function copyRecursive(source, destination) {
@@ -1548,6 +1577,8 @@ function copyRecursive(source, destination) {
     if (path.extname(source) === '.html') {
       const html = prepareHtml(fs.readFileSync(source, 'utf8'), source);
       fs.writeFileSync(destination, html);
+    } else if (path.extname(source) === '.mjs' && path.dirname(source) === MODULE_DIR) {
+      fs.writeFileSync(destination, versionModuleImports(fs.readFileSync(source, 'utf8')));
     } else if (path.extname(source) === '.json' && /^(?:assets|data)\//.test(path.relative(root, source).split(path.sep).join('/'))) {
       // Published data is minified, which the explorers parse faster; the
       // repository keeps the readable copy.
@@ -1629,7 +1660,7 @@ sitemapUrls.sort((a, b) => a.url.localeCompare(b.url, 'en'));
     }
     const stamped = fs.readFileSync(workerFile, 'utf8')
       .replace('__ASTOR_BUILD__', hash.digest('hex').slice(0, 12))
-      .replace('__ASTOR_MODULES__', JSON.stringify(modules));
+      .replace('__ASTOR_MODULES__', JSON.stringify(modules.map(name => name + '?v=' + moduleVersion)));
     fs.writeFileSync(workerFile, stamped);
   }
 }

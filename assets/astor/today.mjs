@@ -6,7 +6,7 @@
 // questions, with no server deciding anything and nothing recorded off the
 // device.
 
-import { el, clear, seededRandom, hashString, pick, formatDate } from './util.mjs';
+import { el, clear, seededRandom, hashString, pick, formatDate, describeError } from './util.mjs';
 import { loadIndex, allQuotations } from './data.mjs';
 import { dailyRound, resultGrid, dailyPassage } from './questions.mjs';
 import { QuizRound, emptyState, kindOf, completion, celebrate } from './quiz-round.mjs';
@@ -28,11 +28,11 @@ async function start() {
   let index;
   try {
     [index, shelf] = await Promise.all([loadIndex(), loadShelf().catch(() => shelf)]);
-  } catch {
+  } catch (error) {
     strip.remove();
     return emptyState(gameMount, 'Today’s questions didn’t load. Try reloading the page, or read a close reading in the Passage Room.', [
       { href: '/passage-room/', label: 'Open the Passage Room' }
-    ]);
+    ], describeError(error));
   }
 
   const day = today();

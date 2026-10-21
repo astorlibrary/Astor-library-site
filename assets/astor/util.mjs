@@ -146,3 +146,11 @@ export async function fetchJson(url) {
   console.error('Astor Library: could not load data.', lastError);
   throw lastError;
 }
+
+// A failure in one line a reader can pass on: what failed and why, without a
+// stack trace.
+export function describeError(error) {
+  if (!error) return '';
+  const name = error.name && error.name !== 'Error' ? error.name + ': ' : '';
+  return (name + (error.message || String(error))).replace(/\s+/g, ' ').trim().slice(0, 240);
+}

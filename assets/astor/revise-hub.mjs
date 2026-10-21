@@ -7,7 +7,7 @@
 // shows a real piece of this book, so a student can see what each one asks
 // before they open it. The library-wide quizzes close the page.
 
-import { el, clear, shuffle, seededRandom, hashString } from './util.mjs';
+import { el, clear, shuffle, seededRandom, hashString, describeError } from './util.mjs';
 import { snapshot, today, streak, recentlyViewed, dailyResult, isRemembering } from './store.mjs';
 import { resultGrid } from './questions.mjs';
 import { maskName } from './questions.mjs';
@@ -15,7 +15,7 @@ import { scoreRing, starsFor } from './quiz-round.mjs';
 import {
   motif, hasMotifs, loadFailed,
   loadShelf, loadBook, drawing, setAccent, keepAddress, preferredSlug,
-  LIBRARY_QUIZZES, availableQuizzes, bookLines, lineSummary, lastRevised,
+  LIBRARY_QUIZZES, availableQuizzes, buildFailures, bookLines, lineSummary, lastRevised,
   sessionPlan, sessionLine, whenLabel, clip, STATE_WORDS, shortTitle,
   changeBookButton, coverImage, monogram, activityIcon, activityHref, hasActivity, quoted, modeToggle
 } from './revise-kit.mjs';
@@ -30,8 +30,8 @@ let shelf = null;
 async function start() {
   try {
     shelf = await loadShelf();
-  } catch {
-    loadFailed(hubMount);
+  } catch (error) {
+    loadFailed(hubMount, undefined, error);
     return;
   }
   const recent = recentlyViewed(20).map(entry => entry.slug);
@@ -53,10 +53,9 @@ async function show(meta) {
   let book;
   try {
     book = await loadBook(meta.slug);
-  } catch {
+  } catch (error) {
     if (ticket !== generation) return;
-    clear(hubMount);
-    hubMount.append(el('p', { class: 'rv-empty', text: 'That book didn’t load. Try another, or reload the page.' }));
+    loadFailed(hubMount, 'That book didn’t load.', error);
     return;
   }
   if (ticket !== generation || book.slug !== meta.slug) return;
@@ -250,6 +249,10 @@ function drawActivities(book, meta, state, counts) {
       el('div', { class: 'rx-group-head' }, [el('h3', { text: group.title }), el('p', { text: group.note })]),
       grid
     ]));
+  }
+  const failed = buildFailures.filter(item => item.book === book.slug);
+  if (failed.length) {
+    section.append(el('p', { class: 'rx-load-why', text: failed.map(item => item.name).join(', ') + ' couldn’t be prepared in this browser. Reason: ' + describeError(failed[0].error) }));
   }
   return section;
 }
