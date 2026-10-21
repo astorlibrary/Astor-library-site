@@ -38,11 +38,19 @@ function topLevelBlocks(inner) {
 const ORDER = [
   { rank: 0, test: b => /^<nav[^>]*class="[^"]*book-breadcrumb/.test(b) },
   { rank: 1, test: b => /^<section[^>]*class="[^"]*page-intro/.test(b) },
+  // A few pages open on a hero of their own (crown-hero, storm-hero…), which
+  // holds the title and belongs at the top like any other.
+  { rank: 1, test: b => /^<section[^>]*class="[a-z]+-hero\b/.test(b) },
+  { rank: 1.5, test: b => /^<nav[^>]*class="book-ways/.test(b) },
   { rank: 2, test: b => /^<aside[^>]*class="[^"]*astor-page-credit/.test(b) },
   { rank: 2.5, test: b => /^<section[^>]*class="astor-buy"/.test(b) },
   { rank: 3, test: b => /^<section[^>]*class="[^"]*quick-facts/.test(b) },
   { rank: 4, test: b => /^<nav[^>]*class="[^"]*page-contents/.test(b) },
   { rank: 5, test: b => /^<section[^>]*class="astor-toolkit"/.test(b) },
+  // What the edition is comes before the book's history: its sample pages,
+  // its card, its formats and the choice between editions.
+  { rank: 6, test: b => /^<(?:section|article)[^>]*class="(?:edition-sample|edition-card|edition-format-panel|edition-choice-band)\b/.test(b) },
+  { rank: 6.5, test: b => /^<section[^>]*class="book-study"/.test(b) },
   { rank: 9, test: b => /^<section[^>]*class="[^"]*book-passage-shelf/.test(b) },
   { rank: 10, test: b => /^<section[^>]*class="[^"]*context-image-shelf/.test(b) },
   { rank: 11, test: b => /^<aside[^>]*class="[^"]*season-book-backlinks/.test(b) },
@@ -52,6 +60,15 @@ const ORDER = [
 function rankOf(text) {
   for (const entry of ORDER) if (entry.test(text)) return entry.rank;
   return 7; // the book's own material keeps its place in the middle
+}
+
+// A heading that introduces the edition itself ("What this Astor edition
+// contains", the editorial method), which moves up with the block it heads.
+function headsEdition(text) {
+  if (!/^<section[^>]*class="section-title/.test(text)) return false;
+  if (/\bid="(?:edition|editorial)"/.test(text.slice(0, text.indexOf('>') + 1))) return true;
+  const heading = (text.match(/<h2[^>]*>([\s\S]*?)<\/h2>/) || [, ''])[1].replace(/<[^>]+>/g, '');
+  return /Astor edition|edition contains|Edition contents|Choose your edition/i.test(heading);
 }
 
 function normaliseBookOrder(html) {
@@ -77,9 +94,14 @@ function normaliseBookOrder(html) {
   const blocks = topLevelBlocks(inner).filter(block => block.text.trim());
   if (toolkit) blocks.push({ text: toolkit, loose: false });
 
-  const ordered = blocks
-    .map((block, index) => ({ ...block, index, rank: block.loose ? 7 : rankOf(block.text.trim()) }))
-    .sort((a, b) => a.rank - b.rank || a.index - b.index);
+  const ranked = blocks.map((block, index) => ({ ...block, index, rank: block.loose ? 7 : rankOf(block.text.trim()) }));
+  for (let at = 0; at < ranked.length; at += 1) {
+    if (ranked[at].loose || !headsEdition(ranked[at].text.trim())) continue;
+    ranked[at].rank = 6;
+    const next = ranked[at + 1];
+    if (next && !next.loose && next.rank === 7 && !/^<section[^>]*class="section-title/.test(next.text.trim())) next.rank = 6;
+  }
+  const ordered = ranked.slice().sort((a, b) => a.rank - b.rank || a.index - b.index);
 
   // Nothing may be lost: the same blocks must come out as went in.
   const before = blocks.map(b => b.text.trim()).sort().join('\u0000');

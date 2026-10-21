@@ -1,11 +1,10 @@
-// Renders the Astor study toolkit that build-static.js injects into every book
-// page and generated study page that has a data/books/<slug>.json file.
-//
-// The whole region is written out as plain sequential sections. JavaScript then
-// upgrades it into a tabbed panel, adds the save button, the progress ticks,
-// the quotation filters and the commonplace-book controls. A reader with no
-// JavaScript gets all of the same material, stacked, and nothing is hidden
-// from a search engine.
+// Renders the sections of a book's study material from its data/books/<slug>.json
+// record: what happens, characters, themes, quotations, form and language,
+// context, essays, videos and further reading. Each is plain, complete markup;
+// scripts/guide-pages.js gives each its own study-guide page, and toolkit.mjs
+// adds the progress ticks, quotation filters, maps and commonplace controls.
+// A reader with no JavaScript gets all of the same material, and nothing is
+// hidden from a search engine.
 
 const { accentFor, motifSvg } = require('./book-motifs');
 
@@ -334,10 +333,8 @@ function revisePanel(book) {
 // markup, and only a click loads a frame, from youtube-nocookie.com or
 // player.vimeo.com. Until then the page contacts neither.
 //
-// The `videos` array is empty in every record shipped so far, because a video
-// id cannot be verified from this environment and an invented one is worse
-// than none. Add an entry with a title, provider, id, url and a plain note on
-// what it is, and the section appears.
+// A record lists videos with a title, provider, id, url and a plain note on
+// what each is; with none, the section is left out.
 function videosPanel(book) {
   if (!(book.videos || []).length) return '';
   const cards = book.videos.map(video =>
@@ -386,47 +383,9 @@ function fallbackTitle(href) {
     .replace(/(^|\s)\S/g, character => character.toUpperCase());
 }
 
-function renderToolkit(book, { heading, titleFor, passages, showGlance = true } = {}) {
-  const resolveTitle = href => (titleFor && titleFor(href)) || fallbackTitle(href);
-  const panels = [
-    plotPanel(book),
-    charactersPanel(book),
-    themesPanel(book),
-    quotationsPanel(book),
-    techniquesPanel(book),
-    contextPanel(book),
-    essaysPanel(book),
-    videosPanel(book),
-    revisePanel(book),
-    relatedPanel(book, resolveTitle, passages || [])
-  ].filter(Boolean);
-
-  const tabs = panels.map((panel, index) => {
-    const id = panel.match(/id="([^"]+)"/)[1];
-    const label = panel.match(/data-panel="([^"]*)"/)[1];
-    return '<button class="astor-tab" type="button" data-tab-target="' + id + '"' +
-      (index === 0 ? ' aria-selected="true"' : ' aria-selected="false"') + '>' + label + '</button>';
-  }).join('');
-
-  return '<section class="astor-toolkit" id="astor-study-toolkit"' +
-    ' style="--book-accent: ' + accentFor(book.slug) + '"' +
-    ' data-astor-book="' + escapeHtml(book.slug) + '"' +
-    ' data-astor-book-title="' + escapeHtml(book.title) + '"' +
-    ' data-astor-book-href="' + escapeHtml(book.href) + '"' +
-    ' aria-labelledby="astor-toolkit-title">' +
-    '<div class="astor-toolkit-head">' +
-    '<div><p class="kicker">' + motifSvg(book, 22) + 'Astor study toolkit</p>' +
-    '<h2 id="astor-toolkit-title">' + escapeHtml(heading || ('Work through ' + book.title + '.')) + '</h2>' +
-    '<p>Plot, characters, themes, quotations, language, context, essay plans and quizzes.</p></div>' +
-    '<div class="astor-toolkit-actions">' +
-    '<button class="button secondary" type="button" data-astor-save aria-pressed="false">Save to my library</button>' +
-    '<a class="button primary" href="/play/?book=' + escapeHtml(book.slug) + '">Revise this book</a>' +
-    '</div>' +
-    '</div>' +
-    (showGlance ? glance(book) : '') +
-    '<div class="astor-tabs" role="tablist" aria-label="Study toolkit sections">' + tabs + '</div>' +
-    panels.join('') +
-    '</section>';
-}
-
-module.exports = { renderToolkit, escapeHtml, readingTimeLabel, formatYear, fallbackTitle, sourceLabel, DIFFICULTY_WORDS };
+module.exports = {
+  escapeHtml, readingTimeLabel, formatYear, fallbackTitle, sourceLabel, DIFFICULTY_WORDS,
+  // The study guides (scripts/guide-pages.js) give each panel a page of its own.
+  glance, plotPanel, charactersPanel, themesPanel, quotationsPanel, techniquesPanel, contextPanel,
+  essaysPanel, videosPanel, relatedPanel, revisePanel, REVISE_QUIZZES, GAMES
+};

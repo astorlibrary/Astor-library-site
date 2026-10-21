@@ -24,7 +24,7 @@ const CORE = [
   '/assets/revise-index.json'
 ].concat(MODULES);
 
-const STUDY_ROUTES = /^\/(play|explore|today|my-library|for-teachers|books|study|offline)\//;
+const STUDY_ROUTES = /^\/(play|explore|today|my-library|for-teachers|books|guides|study|offline)\//;
 const NEVER = /^\/(api|account|auth|login|logout|sign-in|admin)(\/|$)/;
 
 self.addEventListener('install', event => {

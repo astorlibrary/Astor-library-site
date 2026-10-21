@@ -4,7 +4,7 @@
 // There is no account behind this page. If it is empty, that is because this
 // device has not read anything yet, not because a sign-in is missing.
 
-import { el, clear, formatDate, download } from './util.mjs';
+import { el, clear, formatDate, download, guideHref } from './util.mjs';
 import { planSummary, nextSitting, readableDay } from './plan.mjs';
 import { loadIndex } from './data.mjs';
 import {
@@ -103,7 +103,7 @@ function renderSaved() {
   shelf(mounts.saved, savedBooks().map(book => ({
     href: book.href, title: book.title,
     note: 'Saved ' + formatDate(book.at)
-  })), 'No saved books yet. Save one from any book page.');
+  })), 'No saved books yet. Save one from a book’s page or its study guide.');
 }
 
 function renderRecent() {
@@ -118,7 +118,7 @@ function renderProgress(index) {
   const progress = allProgress();
   const slugs = Object.keys(progress).filter(slug => progress[slug].stages.length);
   if (!slugs.length) {
-    mounts.progress.append(el('p', { class: 'astor-empty', text: 'Nothing marked yet. Tick off sections on a book page as you read.' }));
+    mounts.progress.append(el('p', { class: 'astor-empty', text: 'Nothing marked yet. Tick off sections under “What happens” in a study guide as you read.' }));
     return;
   }
   const grid = el('div', { class: 'astor-dash-grid' });
@@ -204,7 +204,7 @@ function renderPlans() {
   clear(mounts.plans);
   const plans = allPlans().sort((a, b) => (nextSitting(a)?.date || 'z').localeCompare(nextSitting(b)?.date || 'z'));
   if (!plans.length) {
-    mounts.plans.append(el('p', { class: 'astor-empty', text: 'No plans yet. Make one in the Revise tab on any book page.' }));
+    mounts.plans.append(el('p', { class: 'astor-empty', text: 'No plans yet. Make one on the first page of any study guide.' }));
     return;
   }
   const grid = el('div', { class: 'astor-dash-grid' });
@@ -219,7 +219,7 @@ function renderPlans() {
         : next.label + ', about ' + next.minutes + ' minutes. ' + summary.done + ' of ' + summary.total + ' sittings done' +
           (summary.overdue ? ', ' + summary.overdue + ' behind.' : '.') }),
       el('small', {}, [
-        el('a', { href: plan.href + '#astor-revise', text: 'Open the plan \u2192' }),
+        el('a', { href: guideHref(plan.slug), text: 'Open the plan \u2192' }),
         ' \u00b7 ',
         el('button', { class: 'astor-link-button', type: 'button', text: 'Remove', onclick: () => { removePlan(plan.slug); renderPlans(); } })
       ])

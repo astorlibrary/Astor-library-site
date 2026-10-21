@@ -1,4 +1,5 @@
-// Upgrades the study toolkit that the build writes into book and study pages.
+// Upgrades the study material the build writes into each study-guide page (and
+// the invitation to study on each edition's page).
 //
 // The markup arrives complete and readable. This module adds the parts that
 // only make sense with a reader in front of them: tabs, the save button,
@@ -18,7 +19,10 @@ import {
 // during set-up.
 const embedded = new WeakSet();
 
-const toolkit = document.querySelector('#astor-study-toolkit');
+// A study-guide page (#astor-study-toolkit) or an edition page's invitation to
+// study the book (data-astor-study-invite), which records the visit and keeps
+// the save button.
+const toolkit = document.querySelector('#astor-study-toolkit, [data-astor-study-invite]');
 
 function enhance(root) {
   const slug = root.dataset.astorBook;
@@ -31,6 +35,21 @@ function enhance(root) {
   root.append(live);
 
   setUpTabs(root, live);
+  // A study-guide page holds one section and no tabs, so its maps are drawn
+  // straight away rather than when a tab opens.
+  if (!root.querySelector('.astor-tabs')) {
+    for (const panel of root.querySelectorAll('.astor-panel')) { embedMap(panel); embedPlaces(panel); }
+    // A link to one quotation or character lands on it, and stays on it while
+    // the maps above it draw.
+    const land = () => {
+      let target;
+      try { target = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
+      const node = target && document.getElementById(target);
+      if (node && root.contains(node)) settleOn(node);
+    };
+    land();
+    window.addEventListener('hashchange', land);
+  }
   setUpSaveButton(root, { slug, title, href }, live);
   setUpProgress(root, slug, title, live);
   setUpQuoteFilters(root, live);
@@ -167,8 +186,12 @@ function embedMap(panel) {
 
 // --- saving ----------------------------------------------------------------
 
+// The save button and the reading ring sit in a guide page's head, outside the
+// material itself, so they are looked for across the whole page.
+const pageOf = root => root.closest('main') || root;
+
 function setUpSaveButton(root, book, live) {
-  const button = root.querySelector('[data-astor-save]');
+  const button = pageOf(root).querySelector('[data-astor-save]');
   if (!button) return;
   if (!isRemembering()) {
     button.disabled = true;
@@ -197,7 +220,7 @@ function setUpProgress(root, slug, title, live) {
   if (!rows.length) return;
 
   const ring = el('div', { class: 'astor-ring' });
-  root.querySelector('.astor-toolkit-actions')?.prepend(ring);
+  pageOf(root).querySelector('.astor-toolkit-actions')?.prepend(ring);
 
   function paintRing() {
     const done = bookProgress(slug).stages.length;

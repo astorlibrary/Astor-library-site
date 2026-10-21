@@ -22,7 +22,7 @@ async function listKept(mount) {
       const cache = await window.caches.open(key);
       for (const request of await cache.keys()) {
         const url = new URL(request.url);
-        if (/^\/(books|study|play|explore|today|my-library|for-teachers)\//.test(url.pathname) && url.pathname.endsWith('/')) {
+        if (/^\/(books|guides|study|play|explore|today|my-library|for-teachers)\//.test(url.pathname) && url.pathname.endsWith('/')) {
           pages.push(url.pathname);
         }
       }
@@ -36,11 +36,11 @@ async function listKept(mount) {
     mount.append(el('p', { class: 'astor-empty', text: 'Nothing saved for offline yet. Open a few pages while online.' }));
     return;
   }
-  const books = pages.filter(page => page.startsWith('/books/') || page.startsWith('/study/'));
+  const books = pages.filter(page => page.startsWith('/books/') || page.startsWith('/guides/') || page.startsWith('/study/'));
   const tools = pages.filter(page => !books.includes(page));
   const group = (title, items) => items.length ? el('section', { class: 'astor-note' }, [
     el('h2', { class: 'astor-note-title', text: title }),
     el('ul', { class: 'astor-question-list' }, items.map(page => el('li', {}, [el('a', { href: page, text: page })])))
   ]) : null;
-  mount.append(el('div', { class: 'astor-note-grid' }, [group('Books and study pages', books), group('Tools', tools)]));
+  mount.append(el('div', { class: 'astor-note-grid' }, [group('Books and study guides', books), group('Tools', tools)]));
 }

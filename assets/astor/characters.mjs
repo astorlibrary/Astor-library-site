@@ -13,7 +13,7 @@
 // in the panel beneath, where there is room to. Every node is focusable, so
 // nothing is trapped in a picture.
 
-import { el, clear, prefersReducedMotion } from './util.mjs';
+import { el, clear, prefersReducedMotion, guideHref } from './util.mjs';
 import { withBooks } from './chooser.mjs';
 import { loadBook } from './data.mjs';
 
@@ -490,8 +490,8 @@ function renderDetail(mount, book, state, onSelect) {
       }))
       : el('p', { class: 'astor-inline-note', text: 'No connections in this part of the book.' }),
     el('p', {}, [el('a', {
-      href: book.href + '#astor-character-' + character.id,
-      text: window.location.pathname === book.href ? 'Jump to the full entry ↓' : 'Read the full entry on the ' + book.title + ' page →'
+      href: guideHref(book.slug, 'characters', 'astor-character-' + character.id),
+      text: window.location.pathname === guideHref(book.slug, 'characters') ? 'Jump to the full entry ↓' : 'Read the full entry in the ' + book.title + ' study guide →'
     })])
   ]));
 }

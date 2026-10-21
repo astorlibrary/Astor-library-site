@@ -154,3 +154,10 @@ export function describeError(error) {
   const name = error.name && error.name !== 'Error' ? error.name + ': ' : '';
   return (name + (error.message || String(error))).replace(/\s+/g, ' ').trim().slice(0, 240);
 }
+
+// Where a book's study material lives: its study guide, one page per section
+// (scripts/guide-pages.js), with an item's own address on the end, e.g.
+// guideHref('macbeth', 'quotations', 'astor-quote-tomorrow').
+export function guideHref(slug, section = '', item = '') {
+  return '/guides/' + encodeURIComponent(slug) + '/' + (section ? section + '/' : '') + (item ? '#' + item : '');
+}

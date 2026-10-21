@@ -7,7 +7,7 @@
 // shows a real piece of this book, so a student can see what each one asks
 // before they open it. The library-wide quizzes close the page.
 
-import { el, clear, shuffle, seededRandom, hashString, describeError } from './util.mjs';
+import { el, clear, shuffle, seededRandom, hashString, describeError, guideHref } from './util.mjs';
 import { snapshot, today, streak, recentlyViewed, dailyResult, isRemembering } from './store.mjs';
 import { resultGrid } from './questions.mjs';
 import { maskName } from './questions.mjs';
@@ -178,7 +178,7 @@ function drawLines(book, meta, lines, counts) {
       el('p', { class: 'rx-line-where', text: [quotation.speaker, stage?.label, quotation.reference].filter(Boolean).join(' · ') }),
       el('p', { class: 'rx-line-analysis', text: clip(quotation.analysis, 240) }),
       el('p', { class: 'rx-line-links' }, [
-        el('a', { href: book.href + '#astor-quote-' + quotation.id, text: 'See it in the book →' }),
+        el('a', { href: guideHref(book.slug, 'quotations', 'astor-quote-' + quotation.id), text: 'Read it in the study guide →' }),
         hasActivity(meta, 'flashcards') ? el('a', { href: activityHref('flashcards', book.slug), text: 'Practise with flashcards →' }) : null
       ])
     );

@@ -8,7 +8,7 @@ const septemberCatalogue = require('./september-catalogue-data.json');
 const conciseCatalogue = require('./concise-catalogue-data.json');
 const { seasons, booksFor, hrefFor } = require('./seasonal-helpers');
 const { loadBooks } = require('./book-data');
-const { renderToolkit } = require('./study-toolkit');
+const guidePages = require('./guide-pages');
 const { accentFor, motifSvg, motifSvgByName, motifName, identityFor } = require('./book-motifs');
 const { normaliseBookOrder } = require('./normalise-book-page');
 const { searchDescription } = require('./text-excerpt');
@@ -83,6 +83,14 @@ const discovery = fs.existsSync(discoveryFile)
   : { books: [] };
 // One structured record per title drives the study toolkit injected below.
 const studyData = new Map(loadBooks().map(book => [book.slug, book]));
+// The Revise shelf carries each book's edition (its cover's palettes and
+// drawings) and its cover thumbnail, which the study guides wear too.
+const reviseShelf = (() => {
+  try {
+    const index = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'revise-index.json'), 'utf8'));
+    return new Map(index.books.map(entry => [entry.slug, entry]));
+  } catch { return new Map(); }
+})();
 // A record can name other book pages that present the same text; those pages
 // carry the same toolkit, addressed to themselves.
 const studyEditions = new Map();
@@ -1220,6 +1228,7 @@ function addGlobalNavigation(html, source) {
   const readingRoutesCurrent = href === '/reading-routes/' || href.startsWith('/reading-routes/');
   const resourcesCurrent = href === '/resources/' || href.startsWith('/resources/');
   const studyCurrent = href === '/study/' || href.startsWith('/study/');
+  const guidesCurrent = href.startsWith('/guides/');
   const passageCurrent = href === '/passage-room/' || href.startsWith('/passage-room/');
   const searchCurrent = href === '/explore/' || href.startsWith('/explore/');
   const playCurrent = inRoute('/play/') || href === '/today/';
@@ -1233,7 +1242,7 @@ function addGlobalNavigation(html, source) {
   const seasonsCurrent = inRoute('/seasons/');
   const aboutCurrent = href === '/about/' || href === '/editorial/';
   const booksSection = booksCurrent || seasonsCurrent || hardbacksCurrent || shakespeareCurrent || periodsCurrent || authorsCurrent || subjectsCurrent;
-  const studySection = studyCurrent || resourcesCurrent || passageCurrent || playCurrent || teachersCurrent;
+  const studySection = studyCurrent || guidesCurrent || resourcesCurrent || passageCurrent || playCurrent || teachersCurrent;
   const exploreSection = searchCurrent || exploreToolsCurrent || readingRoutesCurrent;
 
   const header = `<header class="site-header astor-global-header">
@@ -1275,6 +1284,7 @@ function addGlobalNavigation(html, source) {
         <div class="astor-browse-panel astor-menu-panel" id="astor-menu-study">
           <div class="astor-menu-col">
             <h2>Study</h2>
+            <a href="/guides/"${current(guidesCurrent, href === '/guides/')}>Study guides</a>
             <a href="/study/"${current(studyCurrent, href === '/study/')}>Study editions</a>
             <a href="/resources/"${current(resourcesCurrent, href === '/resources/')}>Free guides</a>
             <a href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}>Passage Room</a>
@@ -1317,7 +1327,7 @@ function addGlobalNavigation(html, source) {
   const footer = `<footer class="site-footer astor-global-footer">
   <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
   <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/hardbacks/">Hardback editions</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
-  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/seasons/">The seasonal library</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
+  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/guides/">Study guides</a><a href="/seasons/">The seasonal library</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
   <div class="astor-footer-group"><h2>Revise &amp; explore</h2><a href="/play/">Revision quizzes</a><a href="/today/">Today</a><a href="/explore/quotations/">Quotation explorer</a><a href="/explore/timeline/">Timeline</a><a href="/explore/characters/">Character maps</a><a href="/explore/themes/">Themes</a><a href="/explore/techniques/">Technique glossary</a><a href="/explore/map/">Map of settings</a><a href="/explore/compare/">Compare two texts</a><a href="/for-teachers/">For teachers</a><a href="/my-library/">My library</a></div>
   <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact &amp; support</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;
@@ -1424,56 +1434,101 @@ function addPlainBookIdentity(html, source) {
   return html;
 }
 
+// --- the study guides ------------------------------------------------------------
+//
+// Each /guides/<slug>/ page arrives as a small source page (rebuild-guides.js)
+// and is filled here from the book's record. It wears the book's edition: both
+// palettes are written into the page, the dark one keyed to the site's own
+// dark theme, so it paints in the right colours before any script runs.
+
+const EDITION_TOKENS = {
+  ground: '--ed-ground', surface: '--ed-surface', sunk: '--ed-sunk', ink: '--ed-ink', soft: '--ed-soft',
+  accent: '--ed-accent', accentText: '--ed-accent-text', button: '--ed-button', buttonInk: '--ed-button-ink',
+  hero: '--ed-hero', heroInk: '--ed-hero-ink', line: '--ed-line', lineStrong: '--ed-line-strong',
+  band: '--ed-band', bandInk: '--ed-band-text', bandSoft: '--ed-band-soft', bandArt: '--ed-band-art'
+};
+
+function editionDeclarations(palette) {
+  return Object.entries(EDITION_TOKENS).filter(([key]) => palette && palette[key]).map(([key, token]) => token + ':' + palette[key]).join(';');
+}
+
+function editionArt(slug, edition) {
+  const motifs = edition.motifs || 0;
+  return '--ed-field:url("/assets/editions/' + slug + '-field.png");' +
+    (motifs ? '--ed-motifs:url("/assets/editions/' + slug + '-motifs.png");' : '') +
+    '--ed-motif-n:' + Math.max(2, motifs);
+}
+
+// Puts a book's edition on a page: data attributes on <html> and the palettes
+// in a style block. `scope` limits the tokens to one element instead (a book
+// page's study invitation), leaving the rest of that page as it was.
+function wearEdition(html, slug, { scope = '' } = {}) {
+  const edition = reviseShelf.get(slug)?.edition;
+  if (!edition) return html;
+  const selector = scope || 'html[data-edition]';
+  const dark = scope ? 'html[data-theme="dark"] ' + scope : 'html[data-edition][data-theme="dark"]';
+  const css = selector + '{' + editionArt(slug, edition) + ';' + editionDeclarations(edition.light) + '}' +
+    dark + '{' + editionDeclarations(edition.dark) + '}';
+  html = html.replace('</head>', '<style data-edition="' + slug + '">' + css + '</style></head>');
+  if (!scope) {
+    html = html.replace(/<html\b([^>]*)>/, (whole, attributes) => /data-edition=/.test(attributes) ? whole
+      : '<html' + attributes + ' data-edition="' + slug + '" data-ed-layout="' + (edition.layout || 'centred') + '" data-ed-voice="' + (edition.voice || 'italic') + '" data-ed-texture="' + (edition.texture || 'plain') + '"' + (edition.motifs ? ' data-ed-art="' + edition.motifs + '"' : '') + '>');
+  }
+  return html;
+}
+
+function guidePassages(book) {
+  return (discovery.passages || [])
+    .filter(passage => (passage.relatedBooks || []).includes(book.href))
+    .map(passage => ({ href: passage.href, title: plainText(passage.title), description: plainText(passage.description || '') }));
+}
+
+function addGuide(html, source) {
+  const match = pageHref(source).match(/^\/guides\/([^/]+)\/(?:([^/]+)\/)?$/);
+  if (!match) return html;
+  const book = studyData.get(match[1]);
+  const section = match[2] || '';
+  if (!book || !html.includes('data-astor-guide=')) return html;
+  const shelf = reviseShelf.get(book.slug) || {};
+  const main = guidePages.renderGuideMain(book, section, {
+    cover: shelf.cover || '',
+    passages: guidePassages(book),
+    titleFor: discoveryTitle
+  });
+  html = html.replace(/(<main\b[^>]*>)[\s\S]*?(<\/main>)/, (whole, open, close) =>
+    open.replace(/style="[^"]*"/, '') + main + '  <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/guides/">All study guides</a><a href="/play/?book=' + book.slug + '">Revise ' + escapeHtml(guidePages.shortTitle(book)) + '</a><a href="' + book.href + '">The Astor edition</a></nav>\n' + close);
+  html = html.replace(/<main\b([^>]*)>/, (whole, attributes) => '<main' + attributes + ' style="--book-accent: ' + accentFor(book.slug) + '">');
+  html = wearEdition(html, book.slug);
+  if (!html.includes('/assets/astor/toolkit.mjs')) {
+    html = html.replace('</head>', '<script type="module" src="/assets/astor/toolkit.mjs"></script></head>');
+  }
+  return html;
+}
+
+// A book page shows the edition; the book's study material lives in its guide
+// (/guides/<slug>/, scripts/guide-pages.js). The page keeps the way in: the
+// three ways into the book under its title (edition, study guide, Revise), an
+// invitation to study it free in the book's own colours, and a small script
+// that sends the toolkit's old addresses (#astor-quote-…) on to the guide.
+// A study-edition page gets the same.
 function addStudyToolkit(html, source) {
   const context = studyToolkitFor(source);
   if (!context || !html.includes('<main')) return html;
-  if (html.includes('id="astor-study-toolkit"')) return html;
+  if (html.includes('data-astor-study-invite')) return html;
   html = addBookIdentity(html, context.book);
-  if (context.kind === 'book') html = moveRelatedReadingDown(html);
+  const record = studyData.get(context.book.slug) || context.book;
+  const editionHref = context.kind === 'book' ? pageHref(source) : record.href;
+  const shelf = reviseShelf.get(record.slug);
 
-  const heading = context.kind === 'study'
-    ? 'Work through ' + context.book.title + '.'
-    : 'Study ' + context.book.title + '.';
-  const baseHref = context.baseHref || context.book.href;
-  const passages = (discovery.passages || [])
-    .filter(passage => (passage.relatedBooks || []).includes(baseHref))
-    .map(passage => ({ href: passage.href, title: plainText(passage.title), description: plainText(passage.description || '') }));
-  // A page that already opens with its own facts does not need them again
-  // from the toolkit.
-  const toolkit = renderToolkit(context.book, {
-    heading, titleFor: discoveryTitle, passages,
-    showGlance: !/class="quick-facts/.test(html)
-  });
+  const invite = guidePages.renderStudyInvite(record, { shelf, editionHref });
+  const ways = guidePages.bookWays(record, context.kind === 'book' ? 'edition' : '', { editionHref: context.kind === 'book' ? editionHref : record.href });
+  html = html.replace('</main>', ways + invite + '</main>');
+  html = wearEdition(html, record.slug, { scope: '.book-study' });
+  html = html.replace('</head>', guidePages.forwardingScript(record.slug) + '</head>');
 
-  // Insert where the page stops introducing the book and starts on its
-  // history: after the edition card, else after the quick facts, else after
-  // the opening section.
-  const anchors = context.kind === 'study'
-    ? [
-        /<section class="section-title" id="sources">/i,
-        /<nav class="book-end-nav"/i,
-        /<\/main>/i
-      ]
-    : [
-        /<article class="edition-card[^"]*">[\s\S]*?<\/article>/i,
-        /<section class="quick-facts"[\s\S]*?<\/section>/i,
-        /<section class="page-intro[^"]*">[\s\S]*?<\/section>/i
-      ];
-
-  let placed = false;
-  for (const anchor of anchors) {
-    const match = html.match(anchor);
-    if (!match) continue;
-    const before = /^<(?:section|nav)|^<\/main/i.test(match[0]);
-    const at = before ? match.index : match.index + match[0].length;
-    // The book-page anchors match whole blocks and insert after them; the
-    // study-page anchors are opening tags and insert before them.
-    const insertAt = context.kind === 'study' ? match.index : at;
-    html = html.slice(0, insertAt) + toolkit + html.slice(insertAt);
-    placed = true;
-    break;
+  if (context.kind === 'book') {
+    html = addHeroCover(html, record);
   }
-  if (!placed) html = html.replace('</main>', toolkit + '</main>');
 
   if (!/href="\/assets\/astor-study\.css"/i.test(html)) {
     html = html.replace('</head>', '<link rel="stylesheet" href="/assets/astor-study.css"></head>');
@@ -1482,6 +1537,21 @@ function addStudyToolkit(html, source) {
     html = html.replace('</head>', '<script type="module" src="/assets/astor/toolkit.mjs"></script></head>');
   }
   return html;
+}
+
+// Every edition page opens on its cover. Most heroes already carry it; the
+// rest have the edition note alone, and gain the cover from the page's own
+// edition card (or the book's thumbnail) beside that note.
+function addHeroCover(html, book) {
+  const intro = html.match(/<section class="page-intro[^"]*"[^>]*>[\s\S]*?<\/section>/);
+  if (!intro || intro[0].includes('<img')) return html;
+  const card = html.match(/<article class="edition-card[^"]*"[^>]*>[\s\S]*?<img\b[^>]*\bsrc="([^"]+)"/);
+  const src = card ? card[1] : (reviseShelf.get(book.slug)?.cover || '');
+  if (!src) return html;
+  const cover = '<img src="' + src + '" alt="Astor Library ' + escapeHtml(guidePages.shortTitle(book)) + ' cover" width="220" height="330">';
+  const updated = intro[0].replace(/<aside class="source-note">([\s\S]*?)<\/aside>/, (whole, inner) =>
+    '<aside class="source-note astor-book-cover">' + cover + '<div>' + inner + '</div></aside>');
+  return updated === intro[0] ? html : html.replace(intro[0], updated);
 }
 
 // The number of books is counted, never typed: any page can write
@@ -1513,6 +1583,7 @@ function prepareHtml(html, source) {
   html = addProductBox(html, source);
   html = addEditionSample(html, source);
   html = addContextImageShelf(html, source);
+  html = addGuide(html, source);
   html = addStudyToolkit(html, source);
   html = addPlainBookIdentity(html, source);
   // Every book and study page ends up in the same order: the book, then the

@@ -108,7 +108,7 @@ async function start() {
   try {
     index = await loadIndex();
   } catch {
-    mapMount.append(el('p', { class: 'astor-empty', text: 'The map could not load. Each book page names its settings in the “At a glance” panel.' }));
+    mapMount.append(el('p', { class: 'astor-empty', text: 'The map could not load. Each study guide names its settings.' }));
     return;
   }
 

@@ -21,7 +21,7 @@
 // Keyboard: 1 to 9 or A to D answer, H narrows the choices, Enter checks or
 // moves on, R starts again at the end.
 
-import { el, clear, shuffle, announce, prefersReducedMotion, formatYear } from './util.mjs';
+import { el, clear, shuffle, announce, prefersReducedMotion, formatYear, guideHref } from './util.mjs';
 import { recordScore, reviewCard, scores, toggleCommonplace, inCommonplace, isRemembering, streak } from './store.mjs';
 import { cardId } from './data.mjs';
 import { quotationKey, quotationFor, firstSentence, drawing, quizName, shortTitle, monogram, coverImage, quoted, headerOffset, motif, hasMotifs, burst, currentBook } from './revise-kit.mjs';
@@ -609,8 +609,8 @@ export class QuizRound {
     }
     const links = el('p', { class: 'rx-links' });
     const key = quotationKey(question);
-    const href = question.book?.href ? question.book.href + (key ? '#astor-quote-' + key.id : '') : '';
-    if (href) links.append(el('a', { href, text: key ? 'See it in the book →' : 'Open ' + shortTitle(question.book) + ' →' }));
+    const href = key ? guideHref(key.slug, 'quotations', 'astor-quote-' + key.id) : (question.book?.slug ? guideHref(question.book.slug) : '');
+    if (href) links.append(el('a', { href, text: key ? 'Read it in the study guide →' : 'Open the ' + shortTitle(question.book) + ' study guide →' }));
     if (key && (quotation || question.quote)) {
       const id = key.slug + ':' + key.id;
       const keep = el('button', {
