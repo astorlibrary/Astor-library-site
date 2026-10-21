@@ -131,7 +131,7 @@
 
 .astor-panel { padding: 26px 24px 30px; }
 .astor-panel[hidden] { display: none; }
-.astor-panel > h3 {
+.astor-panel > h3:where(:not(.astor-subhead)), .sg-body > .astor-panel > h2:where(:not(.sg-section-title, .astor-subhead)) {
   margin: 0 0 6px;
   font-size: 24px;
   letter-spacing: -.02em;
@@ -173,7 +173,7 @@
   padding-top: 4px;
 }
 
-.astor-spine h4 { margin: 0 0 8px; font-size: 20px; letter-spacing: -.015em; }
+.astor-spine :is(h2, h4) { margin: 0 0 8px; font-size: 20px; letter-spacing: -.015em; }
 
 .astor-spine p {
   margin: 0;
@@ -237,7 +237,7 @@
   padding: 18px;
 }
 
-.astor-character-card h4 { margin: 0; font-size: 21px; letter-spacing: -.015em; }
+.astor-character-card :is(h2, h4) { margin: 0; font-size: 21px; letter-spacing: -.015em; }
 
 .astor-character-card .astor-role {
   display: block;
@@ -388,7 +388,8 @@
   padding-top: 14px;
 }
 
-.astor-note h4,
+.astor-note :is(h2, h4),
+.sg-body .astor-note h3,
 .astor-note .astor-note-title { margin: 0 0 8px; font-size: 21px; letter-spacing: -.015em; }
 
 .astor-note p {
@@ -1307,7 +1308,7 @@
   padding-top: 14px;
 }
 
-.astor-video h4 { margin: 0 0 8px; font-size: 21px; letter-spacing: -.015em; }
+.astor-video :is(h3, h4) { margin: 0 0 8px; font-size: 21px; letter-spacing: -.015em; }
 
 .astor-video p {
   margin: 0 0 10px;
@@ -1452,8 +1453,8 @@
   background: var(--surface,#fffdfa);
   padding: 20px 22px;
 }
-.astor-plan h4,
-.astor-sheet-box h4 { margin: 0 0 6px; font-size: 21px; letter-spacing: -.015em; }
+.astor-plan :is(h3, h4),
+.astor-sheet-box :is(h3, h4) { margin: 0 0 6px; font-size: 21px; letter-spacing: -.015em; }
 .astor-plan > p,
 .astor-sheet-box > p { margin: 0 0 14px; font-family: var(--astor-sans); font-size: 15px; line-height: 1.6; color: var(--text-soft,#423b36); }
 .astor-plan-form { display: grid; gap: 14px; }
@@ -3163,7 +3164,7 @@ html[data-theme="dark"] .rx-options.is-tiles .rx-option:not(.is-right):not(.is-w
 /* Anything a Revise page scrolls to stops clear of the sticky site header
    (--rx-header is measured by revise-kit.mjs). */
 .rv-quiz, .rv-tool, .rx-results, .rx-card, .rx-feedback, .rx-essay, .rx-essay-main, .rx-doc, .rx-picker-slot,
-.rx-bench, .rx-counter, .rx-case-out, .rx-debate-step, #astor-daily-game, .rx-daily-done {
+.rx-bench, .rx-counter, .rx-case-out, .rx-debate-step, #astor-daily-game, .rx-daily-done, .rx-linemap {
   scroll-margin-top: calc(var(--rx-header, 0px) + 12px);
 }
 
@@ -3249,6 +3250,7 @@ html[data-edition] main { color: var(--ed-ink); }
 html[data-edition] main > .book-breadcrumb, html[data-edition] main > .book-breadcrumb a,
 html[data-edition] main > .book-end-nav a { color: var(--ed-accent-text); }
 html[data-edition] main > .book-end-nav { border-color: var(--ed-line); }
+html[data-edition] main > .book-breadcrumb span[aria-current="page"] { color: var(--ed-soft); }
 html[data-edition] .rx-head .kicker, html[data-edition] .rx-head h1 { color: var(--ed-ink); }
 
 /* buttons and fills take the edition's own pairings */
@@ -3495,7 +3497,8 @@ html[data-edition] main.has-band { position: relative; isolation: isolate; }
 html[data-ed-mode="dark"] .rx-band-art { opacity: .7; }
 
 /* what sits on the band takes the cover's lettering colour */
-html[data-edition] main.has-band > .book-breadcrumb, html[data-edition] main.has-band > .book-breadcrumb a { color: var(--ed-band-soft); }
+html[data-edition] main.has-band > .book-breadcrumb, html[data-edition] main.has-band > .book-breadcrumb a,
+html[data-edition] main.has-band > .book-breadcrumb span[aria-current="page"] { color: var(--ed-band-soft); }
 html[data-edition] main.has-band .rx-head :is(h1, .kicker) { color: var(--ed-band-text); }
 html[data-edition] main.has-band .rx-head p { color: var(--ed-band-soft); }
 html[data-edition] main.has-band :is(.rx-progress-count, .rx-progress-count span, .rx-run) { color: var(--ed-band-text); }
@@ -4318,7 +4321,7 @@ html[data-theme="dark"] .sg-band-art { opacity: .42; }
 .sg-body > .astor-panel > .astor-panel-note:first-child { margin-top: 0; }
 .sg-body .astor-panel-note { max-width: 62ch; font-size: 16px; }
 .sg-body > .astor-panel + .astor-panel { margin-top: 48px; padding-top: 30px; border-top: 1px solid var(--ed-line, var(--line)); }
-.sg-body > .astor-panel + .astor-panel > h3 { margin-top: 0; }
+.sg-body > .astor-panel + .astor-panel > :is(h2, h3) { margin-top: 0; }
 
 /* --- the overview ------------------------------------------------------------------- */
 .sg-intro { margin: 0 0 40px; }
@@ -4363,11 +4366,16 @@ html[data-theme="dark"] .sg-band-art { opacity: .42; }
 .sg-pager-prev span::before { content: '← '; }
 .sg-pager-next span::after { content: ' →'; }
 
+/* the site header is sticky up to 1040px, so the contents stop below it */
+@media (max-width: 1040px) {
+  .sg-contents { top: calc(var(--astor-header-height, 67px) + 18px); }
+}
+
 /* --- narrow screens: one column, contents as a menu ---------------------------------- */
 @media (max-width: 999px) {
   .sg-layout { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .sg-toc { display: none; }
-  .sg-contents { position: sticky; top: 0; z-index: 20; margin: 0 0 24px; }
+  .sg-contents { position: sticky; top: var(--astor-header-height, 67px); z-index: 20; margin: 0 0 24px; }
   .sg-picker { display: block; position: relative; }
   .sg-picker > summary {
     display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 44px 0 16px; border: 1px solid var(--ed-line-strong, var(--line));
@@ -4448,7 +4456,7 @@ html[data-theme="dark"] .sg-band-art { opacity: .42; }
 
 /* plot */
 .sg-body .astor-spine > li { grid-template-columns: 96px minmax(0, 1fr) auto; padding: 22px 0; }
-.sg-body .astor-spine h4 { font-size: 21px; }
+.sg-body .astor-spine :is(h2, h4) { font-size: 21px; }
 .sg-body .astor-read-toggle { border-radius: 999px; }
 .sg-body .astor-read-toggle[aria-pressed="true"] { background: var(--ed-button, var(--astor-green)); border-color: var(--ed-button, var(--astor-green)); color: var(--sg-on-button, #fff8ef); }
 
@@ -4465,7 +4473,7 @@ html[data-theme="dark"] .sg-band-art { opacity: .42; }
 /* notes: themes, techniques, essay questions, critical views */
 .sg-body .astor-note-grid { gap: 0 36px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 .sg-body .astor-note { padding: 18px 0 20px; border-top: 1px solid var(--astor-line); }
-.sg-body .astor-note h4 a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 30%, transparent); text-underline-offset: 3px; }
+.sg-body .astor-note :is(h2, h3, h4) a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 30%, transparent); text-underline-offset: 3px; }
 .sg-body .astor-note .astor-note-aside { border-left-color: var(--ed-accent, var(--astor-line-strong)); }
 .sg-body .astor-subhead { margin-top: 36px; }
 
@@ -4482,8 +4490,8 @@ html[data-theme="dark"] .sg-band-art { opacity: .42; }
 .sg-body .astor-filter[aria-pressed="true"] { background: var(--ed-button, var(--burgundy)); border-color: var(--ed-button, var(--burgundy)); color: var(--sg-on-button, #fff8ef); }
 
 /* read next */
-.sg-related .astor-note h4 a { text-decoration: none; }
-.sg-related .astor-note h4 a:hover { text-decoration: underline; }
+.sg-related .astor-note :is(h3, h4) a { text-decoration: none; }
+.sg-related .astor-note :is(h3, h4) a:hover { text-decoration: underline; }
 
 @media (max-width: 640px) {
   .sg-body .astor-glance { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -4565,6 +4573,8 @@ main > .book-ways { margin: 26px 0 8px; }
 .rx-hero-inner { grid-template-columns: auto minmax(0, 1fr); }
 .rx-hero-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin: 14px 0 0; font: 14px/1.4 var(--astor-sans); color: var(--ed-band-soft, rgba(255, 244, 228, .8)); }
 html[data-ed-layout="centred"] .rx-hero-meta { justify-content: center; }
+/* on a phone the hero is a grid of cover and words; the meta line spans both, like the start card */
+@media (max-width: 560px) { .rx-hero-words > .rx-hero-meta { grid-column: 1 / -1; } }
 .rx-hero-text-button {
   display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 0; border: 0; background: none; cursor: pointer;
   color: var(--ed-band-text, #fffaf2); font: 600 14px/1.2 var(--astor-sans); text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); text-underline-offset: 3px;
@@ -4625,3 +4635,16 @@ html[data-edition] main.has-band .rx-bar-mount + .rx-head .rx-head-deck { margin
   html[data-edition] main.has-band .rx-bar-mount + .rx-head { display: none; }
 }
 .rx-hero.is-cover .rx-hero-meta { text-shadow: 0 0 2px var(--ed-band), 0 0 6px var(--ed-band), 0 0 12px var(--ed-band); }
+
+/* Keyboard focus on a cover band takes the band's lettering, which every
+   edition keeps legible against it (the site's wine ring disappears there). */
+.sg-head :is(a, button, summary):focus-visible,
+.book-study :is(a, button):focus-visible { outline-color: var(--ed-band-text, currentColor); }
+
+/* On paper a guide is its material: no navigation, no band, black lettering
+   where the band's pale lettering would otherwise print on white. */
+@media print {
+  .book-ways, .sg-contents, .sg-pager, .sg-actions, .sg-band, .book-study { display: none !important; }
+  .sg-head { --ed-band-text: #111; --ed-band-soft: #444; color: #111; padding: 0 0 12px; }
+  .sg-layout { display: block; }
+}

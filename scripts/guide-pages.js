@@ -73,12 +73,13 @@ const SECTIONS = [
 ];
 
 // Where an old address on a book page now lives: /books/macbeth/#astor-quote-x
-// becomes /guides/macbeth/quotations/#astor-quote-x.
+// becomes /guides/macbeth/quotations/#astor-quote-x. Each panel's place is
+// written relative to the guide, with the part of the page it opens on.
 const OLD_PANELS = {
-  'astor-plot': 'plot', 'astor-characters': 'characters', 'astor-themes': 'themes',
-  'astor-quotations': 'quotations', 'astor-techniques': 'language', 'astor-context': 'context',
-  'astor-watch': 'context', 'astor-essays': 'essays', 'astor-revise': '', 'astor-related': '',
-  'astor-study-toolkit': ''
+  'astor-plot': 'plot/', 'astor-characters': 'characters/', 'astor-themes': 'themes/',
+  'astor-quotations': 'quotations/', 'astor-techniques': 'language/', 'astor-context': 'context/',
+  'astor-watch': 'context/#astor-watch', 'astor-essays': 'essays/', 'astor-revise': '#sg-practise-title',
+  'astor-related': '#astor-related', 'astor-study-toolkit': ''
 };
 const OLD_ITEMS = { 'astor-character-': 'characters', 'astor-theme-': 'themes', 'astor-quote-': 'quotations', 'astor-technique-': 'language' };
 
@@ -91,7 +92,7 @@ function sectionsFor(book) {
 }
 
 function shortTitle(book) {
-  return String(book.title).split(/[;:]/)[0].trim();
+  return String(book.title).split(';')[0].trim();
 }
 
 function clip(text, length) {
@@ -207,6 +208,19 @@ function pager(book, here) {
 function panelBody(panelHtml) {
   return panelHtml.replace(/(<section class="astor-panel"[^>]*>)<h3>[\s\S]*?<\/h3>/, '$1');
 }
+// The panels were written to sit under a page's h1 and the toolkit's h2, so
+// their subheads are h4 like their items. In a guide each heading moves up to
+// follow on from the one above it: what opens the body takes the level given,
+// and the items under a subhead (or under a later panel's title) one more.
+function levelHeadings(html, top) {
+  let nested = false;
+  return html.replace(/<h([34])(\s[^>]*)?>([\s\S]*?)<\/h\1>/g, (whole, level, attributes = '', text) => {
+    const opens = level === '3' || /class="[^"]*\bastor-subhead\b/.test(attributes);
+    if (opens) nested = true;
+    const to = opens || !nested ? top : top + 1;
+    return '<h' + to + attributes + '>' + text + '</h' + to + '>';
+  });
+}
 function panelHeading(panelHtml, fallback) {
   const match = panelHtml.match(/<section class="astor-panel"[^>]*><h3>([\s\S]*?)<\/h3>/);
   return match ? match[1] : escapeHtml(fallback);
@@ -253,16 +267,16 @@ function overview(book, { passages, titleFor }) {
     '<h2 id="sg-tools-title" class="sg-section-title">Plan your reading</h2>' +
     '<div class="astor-revise-tools">' +
     '<div class="astor-plan" data-astor-plan="' + slug + '">' +
-    '<h4>Reading plan</h4>' +
+    '<h3>Reading plan</h3>' +
     '<p>Pick a finish date and the days you can read, and the ' + parts(book) + ' are split between them.</p>' +
     '</div>' +
     '<div class="astor-sheet-box" data-astor-sheet="' + slug + '">' +
-    '<h4>Revision sheet</h4>' +
+    '<h3>Revision sheet</h3>' +
     '<p>Plot, characters, themes and ' + Math.min(8, book.quotations.length) + ' key quotations on one page to print.</p>' +
     '</div>' +
     '</div>' +
     '</section>' +
-    (related ? panelBody(related).replace('<section class="astor-panel" id="astor-related" data-panel="Read next">',
+    (related ? levelHeadings(panelBody(related), 3).replace('<section class="astor-panel" id="astor-related" data-panel="Read next">',
       '<section class="astor-panel sg-related" id="astor-related" data-panel="Read next" aria-labelledby="sg-related-title"><h2 id="sg-related-title" class="sg-section-title">Read next</h2>') : '');
 }
 
@@ -294,12 +308,12 @@ function renderGuideMain(book, id, { cover, editionHref, passages, titleFor } = 
   const more = id === 'context'
     ? '<p class="sg-more">The book’s publication, sources and later history are on <a href="' + escapeHtml(editionHref || book.href) + '">the Astor edition’s page</a>.</p>'
     : '';
-  const body = id ? panelBody(panelHtml) + more : overview(book, { passages, titleFor });
+  const body = id ? levelHeadings(panelBody(panelHtml), 2) + more : overview(book, { passages, titleFor });
   return '\n  <nav class="book-breadcrumb" aria-label="Breadcrumb">' + crumbs + '</nav>\n' +
     '  ' + head + '\n' +
     '  ' + bookWays(book, 'guide', { editionHref }) + '\n' +
     '  <div class="sg-layout">' + contents(book, id) +
-    '<div class="sg-body" id="astor-study-toolkit" data-astor-book="' + escapeHtml(book.slug) + '" data-astor-book-title="' + escapeHtml(book.title) + '" data-astor-book-href="' + escapeHtml(book.href) + '">' +
+    '<div class="sg-body" id="astor-study-toolkit" data-astor-book="' + escapeHtml(book.slug) + '" data-astor-book-title="' + escapeHtml(book.title) + '" data-astor-book-href="' + escapeHtml(book.href) + '" data-astor-stages="' + book.structure.length + '">' +
     body +
     '</div></div>\n' +
     '  ' + pager(book, id) + '\n';
@@ -314,7 +328,7 @@ function renderIndex(books, { coverFor } = {}) {
     if (!groups.has(period)) groups.set(period, []);
     groups.get(period).push(book);
   }
-  const ORDER = ['Shakespeare', 'Ancient & Epic', 'Renaissance & Early Modern', 'Restoration & Enlightenment', 'Romantic & Regency', 'Victorian', 'American', 'Modern', 'Russian'];
+  const ORDER = ['Shakespeare', 'Ancient & Epic', 'Renaissance & Early Modern', 'Restoration & Enlightenment', 'Romantic & Regency', 'Victorian', 'American Classics', 'Modern Classics', 'Russian'];
   const periods = [...groups.keys()].sort((a, b) => (ORDER.indexOf(a) + 1 || 99) - (ORDER.indexOf(b) + 1 || 99) || a.localeCompare(b));
   const card = book => {
     const cover = coverFor ? coverFor(book) : '';
@@ -398,17 +412,17 @@ function renderStudyInvite(book, { shelf, editionHref } = {}) {
 // before the page draws, sends such a link on to the same place in the guide.
 function forwardingScript(slug) {
   const items = Object.fromEntries(Object.entries(OLD_ITEMS).map(([prefix, section]) => [prefix, section + '/']));
-  const panels = Object.fromEntries(Object.entries(OLD_PANELS).map(([id, section]) => [id, section ? section + '/' : '']));
-  return '<script data-guide-forward>(function(g,s,p){function f(){var h=location.hash.slice(1);if(h.indexOf("astor-")!==0)return;' +
-    'try{h=decodeURIComponent(h)}catch(e){}var t=null;if(Object.prototype.hasOwnProperty.call(s,h))t=g+s[h];' +
+  return '<script data-guide-forward>(function(g,s,p){function f(){var h=location.hash.slice(1);' +
+    'try{h=decodeURIComponent(h)}catch(e){}if(h.indexOf("astor-")!==0)return;var t=null;if(Object.prototype.hasOwnProperty.call(s,h))t=g+s[h];' +
     'else for(var k in p)if(h.indexOf(k)===0){t=g+p[k]+"#"+encodeURIComponent(h);break}if(t)location.replace(t)}' +
-    'f();addEventListener("hashchange",f)})(' + JSON.stringify(guideHref(slug)) + ',' + JSON.stringify(panels) + ',' + JSON.stringify(items) + ')</script>';
+    'f();addEventListener("hashchange",f)})(' + JSON.stringify(guideHref(slug)) + ',' + JSON.stringify(OLD_PANELS) + ',' + JSON.stringify(items) + ')</script>';
 }
 
 // The address in the guide for an old fragment on a book page, or null.
 function guideTargetFor(slug, fragment) {
-  const id = String(fragment || '').replace(/^#/, '');
-  if (Object.hasOwn(OLD_PANELS, id)) return guideHref(slug, OLD_PANELS[id]);
+  let id = String(fragment || '').replace(/^#/, '');
+  try { id = decodeURIComponent(id); } catch { /* keep it as written */ }
+  if (Object.hasOwn(OLD_PANELS, id)) return guideHref(slug) + OLD_PANELS[id];
   for (const [prefix, section] of Object.entries(OLD_ITEMS)) {
     if (id.startsWith(prefix)) return guideHref(slug, section) + '#' + id;
   }

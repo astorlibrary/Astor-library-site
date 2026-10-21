@@ -6,7 +6,7 @@
 // and pairs the quotations that carry them, because that is where a
 // comparative paragraph actually begins.
 
-import { el, clear } from './util.mjs';
+import { el, clear, guideHref } from './util.mjs';
 import { loadIndex } from './data.mjs';
 import { mountChooser } from './chooser.mjs';
 
@@ -160,11 +160,11 @@ function render(left, right) {
 
   panel.append(row('What next',
     [el('div', { class: 'button-row' }, [
-      el('a', { class: 'button secondary', href: left.href, text: 'Study ' + left.title }),
+      el('a', { class: 'button secondary', href: guideHref(left.slug), text: 'Study ' + left.title }),
       el('a', { class: 'button secondary', href: '/play/essay-forge/?book=' + left.slug, text: 'Plan an essay' })
     ])],
     [el('div', { class: 'button-row' }, [
-      el('a', { class: 'button secondary', href: right.href, text: 'Study ' + right.title }),
+      el('a', { class: 'button secondary', href: guideHref(right.slug), text: 'Study ' + right.title }),
       el('a', { class: 'button secondary', href: '/play/essay-forge/?book=' + right.slug, text: 'Plan an essay' })
     ])]
   ));

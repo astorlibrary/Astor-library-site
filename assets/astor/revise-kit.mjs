@@ -107,6 +107,7 @@ export function editionMode(edition) {
 }
 
 let currentMeta = null;
+let themeWatch = null;
 
 export function applyEdition(meta) {
   if (typeof document === 'undefined') return;
@@ -125,7 +126,9 @@ export function applyEdition(meta) {
   else html.style.removeProperty('--ed-motifs');
   html.style.setProperty('--ed-motif-n', String(Math.max(2, motifs)));
   if (motifs) html.dataset.edArt = String(motifs); else delete html.dataset.edArt;
+  watchSiteTheme();
   const mode = editionMode(edition);
+  matchSiteTheme(mode);
   const palette = edition[mode] || edition.light;
   for (const [key, token] of Object.entries(TOKENS)) if (palette[key]) html.style.setProperty(token, palette[key]);
   html.dataset.edition = meta.slug;
@@ -205,6 +208,38 @@ export function coverBand(main = document.querySelector('main')) {
     bandWatch.observe(main);
     new MutationObserver(later).observe(main, { childList: true, subtree: true });
   }
+}
+
+// The site's own light/dark switch, in the header, dresses the book to match,
+// so a reader can change the colours from any Revise page. The choice is kept
+// the same way as the hub's button keeps it.
+function watchSiteTheme() {
+  if (themeWatch || typeof MutationObserver === 'undefined') return;
+  const html = document.documentElement;
+  themeWatch = new MutationObserver(records => {
+    const theme = html.getAttribute('data-theme');
+    const edition = currentMeta?.edition;
+    if (!edition || (theme !== 'light' && theme !== 'dark') || records.every(record => record.oldValue === theme)) return;
+    try {
+      if (theme === edition.mode) window.localStorage.removeItem(MODE_KEY);
+      else window.localStorage.setItem(MODE_KEY, theme);
+    } catch { /* storage is optional */ }
+    applyEdition(currentMeta);
+  });
+  themeWatch.observe(html, { attributes: true, attributeFilter: ['data-theme'], attributeOldValue: true });
+}
+
+// The header and footer take the book's mode too, so the page is one colour
+// and the header's switch shows what the reader sees. This is not saved as
+// the site's choice, and the watcher above is told it was not the reader.
+function matchSiteTheme(mode) {
+  const html = document.documentElement;
+  const theme = html.getAttribute('data-theme');
+  if (!theme || theme === mode) return;
+  html.setAttribute('data-theme', mode);
+  html.style.colorScheme = mode;
+  for (const toggle of document.querySelectorAll('[data-theme-toggle]')) toggle.setAttribute('aria-pressed', String(mode === 'dark'));
+  themeWatch?.takeRecords();
 }
 
 // One button: it switches to the other palette. Switching back to the

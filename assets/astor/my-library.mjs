@@ -131,10 +131,17 @@ function renderProgress(index) {
       el('b', { text: book ? book.title : slug }),
       el('strong', { text: share + '%' }),
       el('small', { text: done + ' of ' + total + ' ' + (book?.form === 'play' ? 'acts' : 'sections') + ' read.' }),
-      book ? el('small', {}, [el('a', { href: book.href, text: 'Carry on →' })]) : null
+      book ? el('small', {}, [el('a', { href: guideHref(slug, 'plot'), text: 'Carry on →' })]) : null
     ]));
   }
   mounts.progress.append(grid);
+}
+
+// A kept line is stored as "<book>:<quotation>"; it opens on that quotation
+// in the book's study guide.
+function quotationHref(entry) {
+  const [, slug, id] = String(entry.id || '').match(/^([a-z0-9-]+):([\w-]+)$/) || [];
+  return slug ? guideHref(slug, 'quotations', 'astor-quote-' + id) : entry.bookHref || '/library/';
 }
 
 function renderCommonplace() {
@@ -167,7 +174,7 @@ function renderCommonplace() {
     list.append(el('article', {}, [
       el('blockquote', {}, [el('p', { text: entry.text })]),
       el('footer', {}, [
-        el('a', { href: entry.bookHref || '/library/', text: entry.reference || entry.book || 'Astor Library' })
+        el('a', { href: quotationHref(entry), text: entry.reference || entry.book || 'Astor Library' })
       ]),
       note,
       el('div', { class: 'astor-quote-foot' }, [remove])
@@ -219,7 +226,7 @@ function renderPlans() {
         : next.label + ', about ' + next.minutes + ' minutes. ' + summary.done + ' of ' + summary.total + ' sittings done' +
           (summary.overdue ? ', ' + summary.overdue + ' behind.' : '.') }),
       el('small', {}, [
-        el('a', { href: guideHref(plan.slug), text: 'Open the plan \u2192' }),
+        el('a', { href: guideHref(plan.slug, '', 'sg-tools-title'), text: 'Open the plan \u2192' }),
         ' \u00b7 ',
         el('button', { class: 'astor-link-button', type: 'button', text: 'Remove', onclick: () => { removePlan(plan.slug); renderPlans(); } })
       ])

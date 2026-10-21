@@ -9,7 +9,7 @@
 // bar, a search box, and entries that open on the definition and unfold the
 // examples when asked.
 
-import { el, clear } from './util.mjs';
+import { el, clear, guideHref } from './util.mjs';
 import { loadIndex, allTechniques } from './data.mjs';
 
 const search = document.querySelector('#astor-technique-search');
@@ -112,7 +112,7 @@ function entry(technique, open) {
   const grid = el('div', { class: 'astor-note-grid' });
   for (const example of technique.examples) {
     const block = el('article', { class: 'astor-note' });
-    block.append(el('h3', { class: 'astor-note-title' }, [el('a', { href: example.href, text: example.title })]));
+    block.append(el('h3', { class: 'astor-note-title' }, [el('a', { href: guideHref(example.slug, 'language', 'astor-technique-' + technique.id), text: example.title })]));
     if (example.bookName && example.bookName !== technique.name) {
       block.append(el('p', { class: 'astor-quote-attribution', text: 'Also called ' + example.bookName }));
     }

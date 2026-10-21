@@ -728,6 +728,31 @@ of Revise's activity menu.
   grouped like the home page and ending with links to the edition, the
   study guide and the book's Revise home. It replaces the horizontal row
   of activities and its arrows. The question comes straight after.
+- **One light/dark switch.** On Revise pages the header's switch now
+  dresses the book as well (`watchSiteTheme()` in `revise-kit.mjs`), and
+  the header and footer take the book's mode (`matchSiteTheme()`), so the
+  switch always shows what the reader sees. The choice is kept in
+  `astor-revise-mode`, as the Revise home's own button keeps it.
+
+An independent review of the restructure then found and fixed: the Sign of
+Four hero picking up a magazine scan from outside its edition card; "M. R.
+James: Collected Ghost Stories" shortened to the author's name; headings
+in the guides jumping from h1 to h4 (they now run h1, h2, h3, with the same
+look, checked heading by heading); guide pages shared with the site logo
+instead of the cover; the period order on `/guides/`; old `#astor-watch`,
+`#astor-related` and `#astor-revise` links and percent-encoded links not
+reaching their place; forwarded links landing under the sticky header;
+the guide's Contents sliding under the header on phones and tablets; the
+reading ring showing only on the plot page; My library's *Carry on*, kept
+quotations and *Open the plan*, and the technique glossary and Compare,
+still pointing at the edition page; a book saved from an Expanded
+Scholarly Edition showing as unsaved on the guide; the Revise home's
+progress line squeezed beside the cover on phones; *Your key lines*
+scrolling under the header; keyboard focus rings lost against the cover
+bands (they now take the band's lettering); guides printing in the dark
+palette's pale inks (dark colours are now screen-only, and a printed guide
+drops its navigation); and the Revise breadcrumb's current page being hard
+to read on dark editions.
 
 `tests/study-data.test.mjs` checks the guide pages (unique ids, quotation
 ids kept, escaping). The restructure was checked by comparing every text

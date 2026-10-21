@@ -234,6 +234,16 @@ function absoluteUrl(value) {
   return SITE_URL + (href.startsWith('/') ? href : '/' + href);
 }
 
+// A study guide is shared with its book's cover, as the edition's page is.
+function guideImageOwner(href) {
+  const slug = (href.match(/^\/guides\/([^/]+)\//) || [])[1];
+  const record = slug && studyData.get(slug);
+  const book = record && discovery.books.find(item => item.href === record.href);
+  return book && book.image
+    ? { image: book.image, imageAlt: plainText(guidePages.shortTitle(record)) + ' study guide, Astor Library' }
+    : null;
+}
+
 function bookContext(source) {
   const relative = path.relative(root, source).split(path.sep).join('/');
   if (!relative.startsWith('books/') || !relative.endsWith('/index.html')) return null;
@@ -671,7 +681,8 @@ function addGlobalMetadata(html, source) {
   const passage = passageContext(source);
   const study = studyContext(source);
   const season = discovery.seasons?.find(item => item.href === href);
-  const imageOwner = book || resource || passage || study || author || subject || season;
+  const guide = guideImageOwner(href);
+  const imageOwner = book || resource || passage || study || author || subject || season || guide;
   const image = optimisedImage(imageOwner?.image) || '/assets/og-logo.jpg';
   const imageAlt = imageOwner?.imageAlt || (imageOwner?.title
     ? plainText(imageOwner.title) + ', Astor Library'
@@ -1467,8 +1478,9 @@ function wearEdition(html, slug, { scope = '' } = {}) {
   if (!edition) return html;
   const selector = scope || 'html[data-edition]';
   const dark = scope ? 'html[data-theme="dark"] ' + scope : 'html[data-edition][data-theme="dark"]';
+  // Dark colours are for the screen; paper is always light, as on the rest of the site.
   const css = selector + '{' + editionArt(slug, edition) + ';' + editionDeclarations(edition.light) + '}' +
-    dark + '{' + editionDeclarations(edition.dark) + '}';
+    '@media screen{' + dark + '{' + editionDeclarations(edition.dark) + '}}';
   html = html.replace('</head>', '<style data-edition="' + slug + '">' + css + '</style></head>');
   if (!scope) {
     html = html.replace(/<html\b([^>]*)>/, (whole, attributes) => /data-edition=/.test(attributes) ? whole
@@ -1545,8 +1557,11 @@ function addStudyToolkit(html, source) {
 function addHeroCover(html, book) {
   const intro = html.match(/<section class="page-intro[^"]*"[^>]*>[\s\S]*?<\/section>/);
   if (!intro || intro[0].includes('<img')) return html;
-  const card = html.match(/<article class="edition-card[^"]*"[^>]*>[\s\S]*?<img\b[^>]*\bsrc="([^"]+)"/);
-  const src = card ? card[1] : (reviseShelf.get(book.slug)?.cover || '');
+  // The edition card's own picture of the cover, if it has one on this site;
+  // otherwise the cover Revise shows.
+  const card = (html.match(/<article class="edition-card[^"]*"[^>]*>[\s\S]*?<\/article>/) || [''])[0];
+  const cardSrc = (card.match(/<img\b[^>]*\bsrc="(?!https?:|\/\/)([^"]+)"/) || [])[1];
+  const src = cardSrc || reviseShelf.get(book.slug)?.cover || '';
   if (!src) return html;
   const cover = '<img src="' + src + '" alt="Astor Library ' + escapeHtml(guidePages.shortTitle(book)) + ' cover" width="220" height="330">';
   const updated = intro[0].replace(/<aside class="source-note">([\s\S]*?)<\/aside>/, (whole, inner) =>

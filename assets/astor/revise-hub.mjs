@@ -135,7 +135,7 @@ function progressLine(book, state, counts) {
 // --- the map of lines ----------------------------------------------------------
 
 function drawLines(book, meta, lines, counts) {
-  const section = el('section', { class: 'rx-section rx-linemap', 'aria-labelledby': 'rx-lines-title' });
+  const section = el('section', { id: 'rx-lines', class: 'rx-section rx-linemap', 'aria-labelledby': 'rx-lines-title' });
   section.append(el('header', { class: 'rx-section-head' }, [
     el('div', {}, [
       el('p', { class: 'rx-eyebrow', text: 'Your lines' }),
@@ -286,7 +286,7 @@ function activityRow(id, book, meta, state, counts) {
   if (id === 'essay-forge') status = plural(book.essayQuestions.length, 'question');
   if (id === 'defend-the-reading') status = plural(book.criticalViews.length, 'reading');
   if (id === 'guide') status = '';
-  const href = id === 'guide' ? guideHref(book.slug) : id === 'lines' ? '#rx-lines-title' : activityHref(id, book.slug);
+  const href = id === 'guide' ? guideHref(book.slug) : id === 'lines' ? '#rx-lines' : activityHref(id, book.slug);
   const icon = OWN_ICONS[id] ? drawing(OWN_ICONS[id], 22, 'rx-icon') : activityIcon(shelf.icons, id, 22);
   return el('a', { class: 'rx-entry', href, 'data-activity': id }, [
     icon,
