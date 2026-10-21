@@ -628,6 +628,50 @@ that both palettes of every edition keep text readable, and that every book
 has its cover drawings and legible lettering on its band, and that the
 completion screen's words match the round (score, best, last go, second go).
 
+### Revise on the live site (October 2026)
+
+Some failures could happen for a returning reader on the live site but not
+in a fresh test browser. These are now fixed:
+
+- **One module version per page.** Browsers keep `/assets/*.mjs` for up to
+  an hour (`max-age=300, stale-while-revalidate=3600`), while pages, styles
+  and data always arrive fresh. After a deploy, a reader could therefore run
+  stale modules against a new page, or old and new modules together. An
+  import then failed, and the page sat on "Finding your book…".
+  `build-static.js` now stamps every `/assets/astor/` module, every import
+  between modules and the service worker's module list with one version
+  drawn from all of them. A new export can never meet an old importer.
+- **Older Safari.** Fill the line used a lookbehind `RegExp`, which Safari
+  only supports from 16.4. On older Safari it threw and took the Revise home
+  page, Today and the mixed round down with it. `wholeWordAt()` in
+  `questions.mjs` now checks the preceding characters by hand, with identical
+  results on every word lookup in the catalogue. Change book falls back to a
+  fixed panel where `<dialog>` is missing (Safari before 15.4), and so does
+  the search palette.
+- **One activity cannot take the others down.** Every builder runs through
+  `buildSafely()` (in `revise-kit.mjs`), so an activity that throws is left
+  out. The hub then says which activity couldn't be prepared and why. The
+  hub draws its cover, activities, lines and library quizzes separately, and
+  Today and the mixed round skip a builder that throws.
+- **Books that lack an activity.** Quiz pages open, and offer in Change book,
+  only books that have the activity: 65 books have no Order the plot and 28
+  have no Who said it?. A remembered book without it used to open on "There
+  aren't enough questions of this kind". If the address asks for such a
+  book, a note says so and another book opens.
+- **Failures say why.** Load failures show their reason, e.g.
+  "/assets/revise-index.json answered 403". `assets/revise-watch.js`, a
+  classic script ahead of the modules on each Revise page, reports a study
+  module that cannot load or run instead of leaving the page on its
+  placeholder. It ignores errors from other scripts.
+- **Damaged saved data.** `store.mjs` and the essay planner repair a saved
+  record of the wrong shape when they read it, rather than stopping the page.
+- **Offline.** The service worker now keeps `/assets/revise-index.json`, so
+  Revise opens offline after one visit.
+
+Every push to `main` and to the Revise branch deploys to the live site
+through Workers Builds. A branch must merge `main` before it pushes, or its
+deploy takes `main`'s newer fixes off the site.
+
 ---
 
 ## 5. Accuracy

@@ -362,7 +362,7 @@ const LINE_KINDS = ['who-said-it', 'fill-the-line', 'theme-match', 'technique-sp
 export function sessionPlan(book, { cards = snapshot().cards || {}, day = today(), random = Math.random, length = 10 } = {}) {
   const byLine = new Map();
   for (const kind of LINE_KINDS) {
-    for (const question of GAME_BUILDERS[kind].build(book, random)) {
+    for (const question of buildSafely(kind, book, random)) {
       const key = quotationKey(question);
       if (!key) continue;
       if (!byLine.has(key.id)) byLine.set(key.id, {});
@@ -383,8 +383,8 @@ export function sessionPlan(book, { cards = snapshot().cards || {}, day = today(
   known.sort((a, b) => a.card.box - b.card.box);
 
   const extras = [];
-  const people = shuffle(GAME_BUILDERS['character-identification'].build(book, random), random)[0];
-  const plot = shuffle(GAME_BUILDERS['order-the-plot'].build(book, random), random)[0];
+  const people = shuffle(buildSafely('character-identification', book, random), random)[0];
+  const plot = shuffle(buildSafely('order-the-plot', book, random), random)[0];
   if (people) extras.push(people);
   if (plot) extras.push(plot);
 
@@ -434,16 +434,22 @@ export function sessionLine(counts) {
 // rather than leave it silently missing.
 export const buildFailures = [];
 
-export function availableQuizzes(book) {
-  return QUIZZES.filter(quiz => {
-    try { return GAME_BUILDERS[quiz.id].build(book, seededRandom(1)).length >= 4; } catch (error) {
-      if (!buildFailures.some(item => item.quiz === quiz.id && item.book === book.slug)) {
-        buildFailures.push({ quiz: quiz.id, name: quiz.name, book: book.slug, error });
-        console.error('Astor Library: could not prepare ' + quiz.id + ' for ' + book.slug + '.', error);
-      }
-      return false;
+// One activity's questions, or none if its builder throws (an older browser
+// missing a feature, a record in an unexpected shape): one activity failing
+// must never take the others, or the page, down with it.
+export function buildSafely(kind, book, random) {
+  try { return GAME_BUILDERS[kind].build(book, random); } catch (error) {
+    if (!buildFailures.some(item => item.quiz === kind && item.book === book.slug)) {
+      const quiz = QUIZZES.find(entry => entry.id === kind);
+      buildFailures.push({ quiz: kind, name: quiz ? quiz.name : kind, book: book.slug, error });
+      console.error('Astor Library: could not prepare ' + kind + ' for ' + book.slug + '.', error);
     }
-  });
+    return [];
+  }
+}
+
+export function availableQuizzes(book) {
+  return QUIZZES.filter(quiz => buildSafely(quiz.id, book, seededRandom(1)).length >= 4);
 }
 
 // One suggestion, chosen by a fixed rule: a kind of quiz not yet tried on this
@@ -565,7 +571,15 @@ export function preferredSlug() {
 // <dialog> keeps focus inside while it is open and Escape closes it.
 export function openShelf({ books, current, recentSlugs = [], onChoose, heading = 'Choose a book' }) {
   const dialog = el('dialog', { class: 'rx-shelf', 'aria-labelledby': 'rx-shelf-title' });
-  const close = () => dialog.close();
+  // Safari before 15.4 has no <dialog>: there the shelf is an ordinary fixed
+  // panel, closed by hand.
+  const native = typeof dialog.showModal === 'function';
+  const close = () => {
+    if (native) { dialog.close(); return; }
+    if (!dialog.isConnected) return;
+    dialog.removeAttribute('open');
+    dialog.dispatchEvent(new Event('close'));
+  };
   const choose = book => {
     close();
     if (!current || book.slug !== current.slug) onChoose(book);
@@ -650,7 +664,14 @@ export function openShelf({ books, current, recentSlugs = [], onChoose, heading 
   draw();
   document.body.append(dialog);
   document.documentElement.classList.add('rx-locked');
-  if (dialog.showModal) dialog.showModal(); else dialog.setAttribute('open', '');
+  if (native) dialog.showModal();
+  else {
+    dialog.setAttribute('open', '');
+    dialog.classList.add('is-fallback');
+    const onEscape = event => { if (event.key === 'Escape') close(); };
+    document.addEventListener('keydown', onEscape);
+    dialog.addEventListener('close', () => document.removeEventListener('keydown', onEscape));
+  }
   // On a phone the keyboard would cover the covers, so focus waits for a tap.
   if (window.matchMedia?.('(min-width: 720px)').matches) search.focus();
   return dialog;
@@ -788,11 +809,11 @@ export function bookHead(head, books, meta, onChoose, options = {}) {
 
 // When the books cannot be fetched: say so, say why in a line the reader can
 // pass on, and offer to try again.
-export function loadFailed(mount, message = 'The books didn’t load.', error = null) {
+export function loadFailed(mount, message = 'The books didn’t load.', error = null, hint = 'Check your connection, then try again.') {
   clear(mount);
   const why = describeError(error);
   mount.append(el('div', { class: 'rv-empty rx-load-failed' }, [
-    el('p', { text: message + ' Check your connection, then try again.' }),
+    el('p', { text: message + ' ' + hint }),
     why ? el('p', { class: 'rx-load-why', text: 'Reason: ' + why }) : null,
     el('button', { type: 'button', class: 'rx-button is-primary', text: 'Try again', onclick: () => window.location.reload() })
   ]));
@@ -836,7 +857,10 @@ export async function openBookPage({ head, mount, filter, render, active }) {
     if (ticket !== generation) return;
     // A record must belong to the book that was asked for.
     if (book.slug !== meta.slug) return;
-    render(book, meta, shelf);
+    try { render(book, meta, shelf); } catch (error) {
+      console.error('Astor Library: could not open ' + meta.slug + '.', error);
+      loadFailed(mount, 'This didn’t open for ' + meta.title + '.', error, 'Try again, or choose another book.');
+    }
   };
   await open(first);
 }

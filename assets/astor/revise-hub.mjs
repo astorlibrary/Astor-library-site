@@ -64,14 +64,25 @@ async function show(meta) {
   const lines = bookLines(book, state.cards || {}, day);
   const counts = lineSummary(lines);
 
-  drawHero(meta, book, state, counts, day);
+  // Each part is drawn on its own, so one that fails leaves the rest.
+  let partError = null;
+  const part = (draw, what) => {
+    try { return draw(); } catch (error) {
+      console.error('Astor Library: could not draw ' + what + ' for ' + book.slug + '.', error);
+      partError = error;
+      return null;
+    }
+  };
+  part(() => drawHero(meta, book, state, counts, day), 'the cover');
   clear(hubMount);
   // What to do comes first; how well each line is known, after.
-  hubMount.append(
-    drawActivities(book, meta, state, counts),
-    drawLines(book, meta, lines, counts),
-    drawLibrary(day)
-  );
+  const activities = part(() => drawActivities(book, meta, state, counts), 'the activities');
+  if (!activities) loadFailed(hubMount, 'The activities for ' + shortTitle(book) + ' didn’t open.', partError, 'Try again, or choose another book.');
+  hubMount.append(...[
+    activities,
+    part(() => drawLines(book, meta, lines, counts), 'the lines'),
+    part(() => drawLibrary(day), 'the library quizzes')
+  ].filter(Boolean));
   document.title = 'Revise ' + shortTitle(book) + ' | Astor Library';
 }
 

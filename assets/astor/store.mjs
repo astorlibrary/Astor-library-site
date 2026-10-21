@@ -45,6 +45,28 @@ function clone(value) {
   return JSON.parse(JSON.stringify(value));
 }
 
+// A damaged or hand-edited record must not stop a page: a field of the wrong
+// type starts again empty, and lists and maps keep only entries that are
+// records. A record the site wrote itself passes through unchanged.
+const isRecord = value => value !== null && typeof value === 'object' && !Array.isArray(value);
+function tidy(state) {
+  for (const [key, empty] of Object.entries(EMPTY)) {
+    if (Array.isArray(empty) ? !Array.isArray(state[key]) : !isRecord(state[key])) state[key] = clone(empty);
+  }
+  for (const key of ['saved', 'recent', 'commonplace']) {
+    if (!state[key].every(isRecord)) state[key] = state[key].filter(isRecord);
+  }
+  for (const key of ['progress', 'scores', 'cards', 'daily', 'plans']) {
+    for (const [name, value] of Object.entries(state[key])) if (!isRecord(value)) delete state[key][name];
+  }
+  for (const entry of Object.values(state.scores)) if (!isRecord(entry.byBook)) entry.byBook = {};
+  const streak = state.streak;
+  if (typeof streak.current !== 'number') streak.current = 0;
+  if (typeof streak.longest !== 'number') streak.longest = 0;
+  if (typeof streak.lastDay !== 'string') streak.lastDay = '';
+  return state;
+}
+
 function read() {
   if (!canStore()) return clone(EMPTY);
   try {
@@ -52,7 +74,7 @@ function read() {
     if (!raw) return clone(EMPTY);
     const parsed = JSON.parse(raw);
     if (!parsed || typeof parsed !== 'object') return clone(EMPTY);
-    return Object.assign(clone(EMPTY), parsed);
+    return tidy(Object.assign(clone(EMPTY), parsed));
   } catch {
     return clone(EMPTY);
   }

@@ -2029,6 +2029,8 @@ html.rx-locked { overflow: hidden; }
 }
 .rx-shelf[open] { display: flex; flex-direction: column; animation: rx-rise .26s var(--rx-ease); }
 .rx-shelf::backdrop { background: rgba(24, 19, 16, .52); backdrop-filter: blur(3px); }
+/* Browsers without <dialog> (Safari before 15.4): a fixed panel instead. */
+.rx-shelf.is-fallback { position: fixed; top: 16px; right: 16px; bottom: 16px; left: 16px; z-index: 1000; margin: auto; box-shadow: 0 0 0 100vmax rgba(24, 19, 16, .52), 0 40px 90px -30px rgba(20, 16, 14, .6); }
 .rx-shelf-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px 8px; }
 .rx-shelf-head h2 { margin: 0; font-size: 28px; letter-spacing: -.02em; }
 .rx-shelf-close { appearance: none; width: 44px; height: 44px; border: 0; border-radius: 50%; background: var(--rx-sunk); color: var(--rx-ink); font-size: 24px; line-height: 1; cursor: pointer; }
@@ -4110,6 +4112,8 @@ html[data-edition] .rx-flip:focus-visible .rx-flip-inner { outline: 3px solid va
 /* The reason for a failure, in a line a reader can pass on. */
 .rx-load-why { max-width: 46ch; margin: 0 auto; font-size: .82rem; line-height: 1.45; color: var(--rx-muted, #6b6258); overflow-wrap: anywhere; }
 .rx-empty .rx-load-why, .rx-activities > .rx-load-why { margin-top: 10px; }
+/* A book was asked for that lacks this activity, so another opened. */
+.rx-missing-note { max-width: 720px; margin: 0 auto 12px; padding: 10px 14px; border-left: 3px solid var(--ed-accent, var(--book-accent, #6E1F2B)); border-radius: 4px; background: var(--ed-surface, rgba(0, 0, 0, .03)); color: var(--rx-ink); font-size: .9rem; line-height: 1.45; }
 
 /* =============================================================================
    rx: flashcards sized to what is on them

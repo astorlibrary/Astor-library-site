@@ -20,7 +20,8 @@ const CORE = [
   '/assets/theme.css',
   '/assets/astor-study.css',
   '/assets/study-index.json',
-  '/assets/search-index.json'
+  '/assets/search-index.json',
+  '/assets/revise-index.json'
 ].concat(MODULES);
 
 const STUDY_ROUTES = /^\/(play|explore|today|my-library|for-teachers|books|study|offline)\//;
@@ -47,6 +48,7 @@ self.addEventListener('activate', event => {
 function isData(url) {
   return url.pathname.startsWith('/data/books/') ||
     url.pathname === '/assets/study-index.json' ||
+    url.pathname === '/assets/revise-index.json' ||
     url.pathname === '/assets/search-index.json' ||
     url.pathname === '/assets/content-index.json' ||
     url.pathname === '/assets/quotation-index.json' ||

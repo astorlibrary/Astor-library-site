@@ -242,10 +242,16 @@ function renderScores() {
       el('b', { text: gameName(gameId) }),
       el('strong', { text: entry.bestTotal ? entry.best + '/' + entry.bestTotal : String(entry.played) }),
       el('small', { text: entry.played + (entry.played === 1 ? ' quiz' : ' quizzes') + ', last on ' + formatDate(entry.lastAt) + '.' }),
-      gameId === 'daily' ? null : el('small', {}, [el('a', { href: '/play/' + gameId + '/', text: 'Try again →' })])
+      gameId === 'daily' ? null : el('small', {}, [el('a', { href: tryAgainHref(gameId, entry), text: 'Try again →' })])
     ]));
   }
   mounts.scores.append(grid);
+}
+
+// The activity on the book it was last played on, so it opens on a book that has it.
+function tryAgainHref(gameId, entry) {
+  const books = Object.entries(entry.byBook || {}).sort((a, b) => (b[1]?.lastAt || 0) - (a[1]?.lastAt || 0));
+  return '/play/' + gameId + '/' + (books.length ? '?book=' + encodeURIComponent(books[0][0]) : '');
 }
 
 function gameName(gameId) {

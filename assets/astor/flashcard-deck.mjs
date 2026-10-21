@@ -74,6 +74,10 @@ async function start() {
     return;
   }
   const books = shelf.books.filter(book => book.quotations >= 5);
+  if (!books.length) {
+    loadFailed(mount, 'No books have flashcards yet.', null, 'Try again later.');
+    return;
+  }
   const wanted = preferredSlug();
   const first = books.find(book => book.slug === wanted)
     || books.find(book => recentlyViewed(20).some(entry => entry.slug === book.slug))

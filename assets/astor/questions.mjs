@@ -426,7 +426,10 @@ export function mixedRound(book, random = Math.random) {
   const questions = [];
   for (const [id, builder] of Object.entries(GAME_BUILDERS)) {
     if (builder.scope !== 'book' || id === 'mixed-round') continue;
-    questions.push(...sample(builder.build(book, random), 3, random));
+    // One builder that throws costs its own questions, not the round.
+    let built;
+    try { built = builder.build(book, random); } catch { continue; }
+    questions.push(...sample(built, 3, random));
   }
   return questions;
 }
@@ -485,7 +488,8 @@ export function dailyRound(index, day) {
   const round = [];
   const used = new Set();
   for (const step of plan) {
-    const options = step().filter(question => question && !used.has(question.id));
+    let options;
+    try { options = step().filter(question => question && !used.has(question.id)); } catch { continue; }
     if (!options.length) continue;
     const chosen = pick(options, random);
     used.add(chosen.id);
@@ -494,10 +498,11 @@ export function dailyRound(index, day) {
   // A short day is better than a repeated question, but the puzzle should still
   // be five long wherever the data allows it.
   if (round.length < 5) {
+    const safely = build => { try { return build(); } catch { return []; } };
     const spare = shuffle([
-      ...characterIdentification(dayBook, random),
-      ...techniqueSpotter(dayBook, random),
-      ...openingLines(books, random)
+      ...safely(() => characterIdentification(dayBook, random)),
+      ...safely(() => techniqueSpotter(dayBook, random)),
+      ...safely(() => openingLines(books, random))
     ], random).filter(question => question && !used.has(question.id));
     while (round.length < 5 && spare.length) {
       const next = spare.shift();

@@ -14,19 +14,24 @@
     if (!text || /^Script error\.?$/i.test(text) || problems.length >= 3) return;
     problems.push(text.slice(0, 240));
   }
+  // Only the study modules count: another script's error (the site's own
+  // navigation, the analytics beacon) is not why a Revise page is waiting.
+  var MODULES = location.origin + '/assets/astor/';
   window.addEventListener('error', function (event) {
     var target = event.target;
     if (target && target !== window && target.tagName) {
-      if (target.tagName === 'SCRIPT' && target.src && target.src.indexOf(location.origin) === 0) {
+      if (target.tagName === 'SCRIPT' && target.src && target.src.indexOf(MODULES) === 0) {
         note('Could not load ' + target.src.slice(location.origin.length));
       }
       return;
     }
+    if (String(event.filename || '').indexOf(MODULES) !== 0) return;
     note(event.message || (event.error && event.error.message));
   }, true);
   window.addEventListener('unhandledrejection', function (event) {
     var reason = event.reason;
-    note(reason && (reason.message || reason));
+    if (!reason || String(reason.stack || '').indexOf(MODULES) === -1) return;
+    note(reason.message || reason);
   });
 
   var MOUNTS = '#rv-hub, #astor-game, #astor-flashcards, #astor-essay-forge, #astor-defend, #astor-daily-game';

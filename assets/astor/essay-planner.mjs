@@ -46,7 +46,10 @@ if (mount) {
 }
 
 function readPlans() {
-  try { return JSON.parse(window.localStorage.getItem(STORE) || '{}') || {}; } catch { return {}; }
+  try {
+    const plans = JSON.parse(window.localStorage.getItem(STORE) || '{}');
+    return plans && typeof plans === 'object' && !Array.isArray(plans) ? plans : {};
+  } catch { return {}; }
 }
 function writePlans(plans) {
   try { window.localStorage.setItem(STORE, JSON.stringify(plans)); return true; } catch { return false; }
@@ -60,6 +63,22 @@ function blankPlan() {
 }
 function blankParagraph() {
   return { point: '', quotationId: '', analysis: '' };
+}
+// A saved plan in the shape the planner draws, whatever the stored copy holds.
+function tidyPlan(saved) {
+  if (!saved || typeof saved !== 'object') return blankPlan();
+  const text = value => (typeof value === 'string' ? value : '');
+  const paragraphs = Array.isArray(saved.paragraphs) && saved.paragraphs.length
+    ? saved.paragraphs.map(paragraph => ({ ...(paragraph && typeof paragraph === 'object' ? paragraph : {}), point: text(paragraph?.point), quotationId: text(paragraph?.quotationId), analysis: text(paragraph?.analysis) }))
+    : blankPlan().paragraphs;
+  return {
+    ...saved,
+    thesis: text(saved.thesis),
+    conclusion: text(saved.conclusion),
+    paragraphs,
+    step: STEPS.some(step => step.id === saved.step) ? saved.step : 'question',
+    updated: Number(saved.updated) || 0
+  };
 }
 
 // The quotations that fit a question best: those carrying a theme, technique
@@ -103,7 +122,7 @@ function render(book) {
   const plans = readPlans();
   const mine = plans[book.slug] || { question: 0, byQuestion: {} };
   let questionIndex = Math.min(mine.question || 0, book.essayQuestions.length - 1);
-  let plan = mine.byQuestion?.[questionIndex] || blankPlan();
+  let plan = tidyPlan(mine.byQuestion?.[questionIndex]);
   let picking = -1;   // which paragraph's evidence picker is open
   let saved = true;
 
@@ -210,7 +229,7 @@ function render(book) {
           if (index !== questionIndex) {
             save();
             questionIndex = index;
-            plan = readPlans()[book.slug]?.byQuestion?.[index] || blankPlan();
+            plan = tidyPlan(readPlans()[book.slug]?.byQuestion?.[index]);
           }
           go(words(plan.thesis) ? (plan.step === 'question' ? 'argument' : plan.step) : 'argument');
         }
