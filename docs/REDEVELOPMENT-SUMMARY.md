@@ -11,8 +11,8 @@ out. The working plan that preceded it is in
 Astor Library was a very good reading site. Every page was prose, every visit
 was identical, and there was nothing on it to *do*. This redevelopment keeps
 the reading and adds the working: a structured study record for each of the
-most-studied titles, a study toolkit on every book and study page built from
-that record, six explorer tools that work across the whole library, nine
+most-studied titles, a study guide for every one of them built from that
+record, six explorer tools that work across the whole library, nine
 revision games, spaced-repetition flashcards, an essay planner, an argument
 builder, a daily puzzle, a personal dashboard, a teachers' area and a
 site-wide search palette.
@@ -86,9 +86,11 @@ Primary navigation keeps its five destinations and gains a sixth.
 /for-teachers/                      lesson starters, six worksheet generators, projector mode
 ```
 
-Plus a study toolkit injected into every `/books/<slug>/` and `/study/<slug>/`
-page that has a record, and eighteen generated study pages for editions that
-previously sent readers straight to a retailer.
+Plus a study guide for every title with a record (`/guides/`, then
+`/guides/<slug>/` and one page per section), an invitation to it on every
+`/books/<slug>/` and `/study/<slug>/` page that has a record, and eighteen
+generated study pages for editions that previously sent readers straight to a
+retailer.
 
 ---
 
@@ -178,20 +180,14 @@ opened from any page on the site.
 
 ## 4. How each feature works
 
-### The study toolkit (book and study pages)
+### The study guides
 
-`scripts/study-toolkit.js` renders it; `build-static.js` injects it into any
-`/books/<slug>/` or `/study/<slug>/` page whose slug has a record, placed
-after the edition card so a student meets the working material before the
-production history.
-
-It is written out as plain sequential sections with real headings.
-`assets/astor/toolkit.mjs` then upgrades it into a tabbed panel and adds the
-save button, the per-act progress ticks and ring, the quotation filters and a
-commonplace-book control on each quotation. Without JavaScript every word is
-still there, stacked, and visible to a search engine. Nine panels: plot,
-characters, themes, quotations, form and language, context, essays, revise,
-read next — plus a tenth for video when a record ever carries one.
+The study material first lived on the book page, as a tabbed toolkit of
+nine panels. It now has a guide of its own; see *Book pages, study guides
+and Revise* below. `scripts/study-toolkit.js` still renders every panel and
+`assets/astor/toolkit.mjs` still adds the save button, the per-act progress
+ticks and ring, the quotation filters, the commonplace-book control on each
+quotation, the reading plan, the revision sheet and the two maps.
 
 ### The games
 
@@ -335,13 +331,14 @@ to the printer on its own, with nothing else from the page around it.
 
 A tenth game, the mixed round, draws a few questions of every kind a title
 supports so a session changes its footing each time. The catalogue cards say
-which titles carry a toolkit, with reading time and difficulty from the
+which titles carry a study guide, with reading time and difficulty from the
 record, and a filter shows only those. The homepage carries the passage of
 the day — the same one the Today page shows, chosen by the same arithmetic —
 with the reader's own result if the device has one.
 
-The five Expanded Scholarly Editions carry the base play's toolkit through an
-`editions` field on the record, so sixty-two book pages have one.
+The five Expanded Scholarly Editions share the base play's guide through an
+`editions` field on the record; with them, 114 book pages and 36 study pages
+invite readers to a guide.
 
 ### Offline
 
@@ -369,11 +366,11 @@ covered by tests.
 Progress is *declared*, not inferred: a reader ticks an act when they have
 read it, rather than having it guessed from how far they scrolled.
 
-### Close readings and the toolkit
+### Close readings and the guides
 
-The Read next tab of a book page opens with the Passage Room's close readings
-of that book, so the ninety annotated passages and the study records point at
-each other.
+A guide's overview opens its *Read next* list with the Passage Room's close
+readings of that book, and the book page keeps its own shelf of them, so the
+ninety annotated passages and the study records point at each other.
 
 ### The search palette
 
@@ -403,7 +400,8 @@ red. The question data, schedules and saved progress are unchanged.
 - **One study bar** (`studyBar()` in `revise-kit.mjs`) heads every one-book
   tool: the cover, title and author, *Change book*, and a row of every
   activity the book supports, so moving from a quiz to the flashcards for the
-  same book is one tap. *Change book* opens a dialog of covers with search,
+  same book is one tap (the row has since become one menu; see *Book pages,
+  study guides and Revise* below). *Change book* opens a dialog of covers with search,
   recent books and a period filter (`openShelf()`), which replaced the old
   select list. `assets/revise-index.json` now carries each title's `period`.
 - **The Revise home** opens on a jacket for the book: cover, opening line, a
@@ -681,6 +679,62 @@ Every push to `main` and to the Revise branch deploys to the live site
 through Workers Builds. A branch must merge `main` before it pushes, or its
 deploy takes `main`'s newer fixes off the site.
 
+### Book pages, study guides and Revise (October 2026)
+
+Each title is now three connected places, each with one job: the book page
+to discover and buy the edition, the study guide to read and learn, and
+Revise to practise. Each links to the other two: a row of three tabs
+(`bookWays()` in `scripts/guide-pages.js`) on the book page and at the head
+of every guide page, the links at the foot of each guide page, and the foot
+of Revise's activity menu.
+
+- **Study guides.** `scripts/rebuild-guides.js` (run by
+  `rebuild-library.js`) writes `/guides/` and, for each of the 109 titles
+  with a record, an overview at `/guides/<slug>/` and one page per section
+  it has: `plot`, `characters`, `themes`, `quotations`, `language`,
+  `context` and `essays` (873 pages in all). The source pages are stubs;
+  `addGuide()` in `build-static.js` fills each one from the record with
+  the same panel functions the old toolkit used, so every word of it is
+  still there, as real HTML. The overview holds the summary, the facts at a
+  glance, a card for each section, the ways into Revise, the reading plan,
+  the revision sheet and *Read next*. Each page has its own title,
+  description and canonical address; a contents list sits beside the text
+  on a desktop and folds into one *Contents* control on a phone. The
+  guide wears the book's edition (`wearEdition()`), the same palette, band
+  art and motifs as Revise, in light and dark.
+- **Book pages** are publishing pages again. The hero now carries the
+  cover; below it are the description, what the edition is and includes,
+  the buying options, the facts, previews and the Passage Room shelf, all
+  as before. The toolkit has given way to one invitation (`section.book-study`,
+  `renderStudyInvite()`): a card for the guide, with links to its
+  sections, and a card for Revise, in the book's colours. Macbeth's page
+  went from about 44,500 characters of text to about 13,200; nothing that
+  was on the page outside the toolkit was removed.
+- **Old links still land.** The toolkit's fragments (`#astor-quotations`,
+  `#astor-quote-…`, `#astor-character-…` and so on) forward from the book
+  and study pages to the matching guide page and item, on load and on a
+  same-page hash change. Search results, the explorers, the Revise home,
+  quizzes, Today and My library now link to guide sections
+  (`guideHref()` in `assets/astor/util.mjs`). Saved books, recent visits,
+  reading progress, plans and the commonplace book use the same keys as
+  before, so nothing a reader saved is lost.
+- **A calmer Revise home.** The cover opens with the book's line, one card to
+  start a session, and one line of progress beside *Change book* and the
+  light/dark switch. The statistics panel and example previews are gone.
+  Activities sit in three plain lists, *Practise*, *Learn* and *Write*, one
+  line each with its best stars or what is due.
+- **One activity menu.** The study bar on every activity is now the cover,
+  title, *Change book* and one *Activities* menu, the same at every width,
+  grouped like the home page and ending with links to the edition, the
+  study guide and the book's Revise home. It replaces the horizontal row
+  of activities and its arrows. The question comes straight after.
+
+`tests/study-data.test.mjs` checks the guide pages (unique ids, quotation
+ids kept, escaping). The restructure was checked by comparing every text
+segment of the old toolkit with the new guides (73,658 segments, none
+missing) and every other segment of the old book and study pages with the
+new ones (27,517 segments).
+
 ---
 
 ## 5. Accuracy
@@ -778,7 +832,7 @@ recorded here so it is not discovered by a reader.
 
 ```sh
 node scripts/rebuild-library.js     # catalogue, discovery, study pages, study data, vocabulary check
-node scripts/build-static.js        # header, footer, metadata, JSON-LD, the study toolkit, dist/
+node scripts/build-static.js        # header, footer, metadata, JSON-LD, the guides and invitations, dist/
 node scripts/check-site.js          # links, structure, editorial safeguards, the data layer
 npm test                            # 108 tests
 ```

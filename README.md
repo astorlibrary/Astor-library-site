@@ -60,10 +60,18 @@ follows the system setting.
 
 `data/books/<slug>.json` holds one structured record per title: plot, characters,
 themes, techniques, quotations with references, timeline, settings, critical
-positions and essay questions. One record feeds the study toolkit on the book
-page, the generated study page, the explorers under `/explore/`, all nine
-revision games, the flashcard decks, the daily puzzle and the teachers' area,
-so a correction reaches every one of them in the same build.
+positions and essay questions. One record feeds the study guide under
+`/guides/<slug>/`, the invitation to study on the book page, the generated study
+page, the explorers under `/explore/`, all nine revision games, the flashcard
+decks, the daily puzzle and the teachers' area, so a correction reaches every
+one of them in the same build.
+
+Each title is three connected places: the book page (`/books/<slug>/`) to
+discover and buy the edition, the study guide (`/guides/<slug>/` and one page
+per section, such as `/guides/macbeth/quotations/`) to read and learn, and
+Revise (`/play/?book=<slug>`) to practise. `scripts/guide-pages.js`
+writes the guides; `node scripts/rebuild-guides.js` (run by
+`rebuild-library.js`) writes their source pages.
 
 `scripts/book-data.js` is the schema; `check-site.js` and the test suite both
 run it. Every quotation must carry a `reference` and a `source` naming the
