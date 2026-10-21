@@ -10,14 +10,13 @@
 import { el, clear, shuffle, seededRandom, hashString, describeError, guideHref } from './util.mjs';
 import { snapshot, today, streak, recentlyViewed, dailyResult, isRemembering } from './store.mjs';
 import { resultGrid } from './questions.mjs';
-import { maskName } from './questions.mjs';
-import { scoreRing, starsFor } from './quiz-round.mjs';
+import { starsFor } from './quiz-round.mjs';
 import {
   motif, hasMotifs, loadFailed,
   loadShelf, loadBook, drawing, setAccent, keepAddress, preferredSlug,
   LIBRARY_QUIZZES, availableQuizzes, buildFailures, bookLines, lineSummary, lastRevised,
   sessionPlan, sessionLine, whenLabel, clip, STATE_WORDS, shortTitle,
-  changeBookButton, coverImage, monogram, activityIcon, activityHref, hasActivity, quoted, modeToggle
+  changeBookButton, coverImage, activityIcon, activityHref, hasActivity, quoted, modeToggle
 } from './revise-kit.mjs';
 
 const titleMount = document.querySelector('#rv-title');
@@ -91,13 +90,13 @@ function drawHero(meta, book, state, counts, day) {
   if (!titleMount) return;
   clear(titleMount);
   titleMount.className = 'rx-hero';
-  const total = book.quotations.length;
   const plan = sessionPlan(book, { cards: state.cards || {}, day, random: () => 0.5 });
 
-  const cover = el('a', { class: 'rx-hero-cover', href: book.href, 'aria-label': 'Open the page for ' + book.title }, [
+  const cover = el('a', { class: 'rx-hero-cover', href: book.href, 'aria-label': 'The Astor edition of ' + book.title }, [
     coverImage(meta, { width: 200, eager: true })
   ]);
 
+  // One way to start, and one line on how well the book is known.
   const words = el('div', { class: 'rx-hero-words' }, [
     el('p', { class: 'rx-hero-kicker' }, [drawing(meta.motif, 18), el('span', { text: 'Revising · ' + book.author })]),
     el('h1', { class: 'rx-hero-title', text: shortTitle(book) }),
@@ -106,41 +105,31 @@ function drawHero(meta, book, state, counts, day) {
       el('a', { class: 'rx-hero-start', href: activityHref('mixed-round', book.slug) }, [
         el('span', { class: 'rx-hero-start-label' }, [el('span', { class: 'rx-hero-start-kicker', text: counts.known + counts.growing + counts.shaky ? 'Pick up where you left off' : 'Start here' }), el('b', { text: counts.due ? 'Revise the lines that are due' : 'Start a ten-question session' }), el('small', { text: sessionLine(plan.counts) + ' About five minutes.' })]),
         el('span', { class: 'rx-hero-start-arrow', 'aria-hidden': 'true', text: '→' })
-      ]),
-      el('div', { class: 'rx-hero-links' }, [
-        hasActivity(meta, 'flashcards') ? el('a', { class: 'rx-hero-link', href: activityHref('flashcards', book.slug) }, [
-          activityIcon(shelf.icons, 'flashcards', 18),
-          el('span', { text: counts.due ? 'Flashcards · ' + counts.due + ' due' : 'Flashcards' })
-        ]) : null,
-        changeBookButton({ books: shelf.books, current: meta, onChoose: choice => show(choice), className: 'rx-hero-link is-button' }),
-        modeToggle('rx-hero-link is-icon rx-mode-toggle')
       ])
+    ]),
+    el('p', { class: 'rx-hero-meta' }, [
+      el('span', { class: 'rx-hero-progress', text: progressLine(book, state, counts) }),
+      changeBookButton({ books: shelf.books, current: meta, onChoose: choice => show(choice), className: 'rx-hero-text-button' }),
+      modeToggle('rx-hero-link is-icon rx-mode-toggle')
     ])
-  ]);
-
-  // How well the book is known, as one ring and three plain facts.
-  const known = counts.known;
-  const panel = el('div', { class: 'rx-hero-panel' }, [
-    scoreRing(known, total, 112),
-    el('p', { class: 'rx-hero-panel-caption', text: known === total ? 'Every key line known' : 'key lines known' }),
-    el('ul', { class: 'rx-hero-stats' }, statFacts(book, state, counts).map(([big, small]) => el('li', {}, [el('b', { text: big }), el('span', { text: small })])))
   ]);
 
   // The hero is set like the cover itself: its ground and its drawings.
   titleMount.classList.toggle('is-cover', hasMotifs());
-  titleMount.append(el('span', { class: 'rx-hero-art', 'aria-hidden': 'true' }), el('div', { class: 'rx-hero-inner' }, [cover, words, panel]));
+  titleMount.append(el('span', { class: 'rx-hero-art', 'aria-hidden': 'true' }), el('div', { class: 'rx-hero-inner' }, [cover, words]));
 }
 
-function statFacts(book, state, counts) {
-  const facts = [];
-  if (!isRemembering()) return [['—', 'this browser isn’t saving progress']];
-  facts.push([String(counts.due), counts.due === 1 ? 'line due today' : 'lines due today']);
-  facts.push([String(counts.new), 'not met yet']);
+// How well the book is known, in one line: lines known, lines due, and the
+// run of days (or when it was last revised).
+function progressLine(book, state, counts) {
+  if (!isRemembering()) return 'This browser isn’t saving progress.';
+  const parts = [counts.known + ' of ' + book.quotations.length + ' key lines known'];
+  if (counts.due) parts.push(counts.due + ' due today');
   const run = streak();
   const last = lastRevised(book, state);
-  if (run.live && run.current >= 1) facts.push([String(run.current), run.current === 1 ? 'day of revision' : 'days running']);
-  else facts.push([last.time ? whenLabel(last.time) : last.before ? 'Before' : 'New', last.time || last.before ? 'last revised' : 'to you here']);
-  return facts;
+  if (run.live && run.current > 1) parts.push(run.current + ' days running');
+  else if (last.time) parts.push('last revised ' + whenLabel(last.time).toLowerCase());
+  return parts.join(' · ');
 }
 
 // --- the map of lines ----------------------------------------------------------
@@ -218,24 +207,35 @@ function drawLines(book, meta, lines, counts) {
 }
 
 // --- the activities ------------------------------------------------------------
+//
+// Three groups, each a short list: practise (the quizzes), learn (flashcards,
+// the study guide, the key lines) and write (the essay planner, the debate).
+// Each row says what the activity is and how it went last time; nothing else.
 
 const GROUPS = [
-  { title: 'Learn the words', note: 'Know the lines exactly, and who says them.', ids: ['who-said-it', 'fill-the-line', 'flashcards'] },
-  { title: 'Understand the ideas', note: 'Attach each line to what it is doing.', ids: ['theme-match', 'technique-spotter'] },
-  { title: 'Know the story', note: 'The people and the order things happen in.', ids: ['character-identification', 'order-the-plot'] },
-  { title: 'Write about it', note: 'Turn what you know into an argument.', ids: ['essay-forge', 'defend-the-reading'] }
+  { id: 'practise', title: 'Practise', note: 'Quick quizzes on the lines, the ideas and the story.', ids: ['who-said-it', 'fill-the-line', 'theme-match', 'technique-spotter', 'character-identification', 'order-the-plot'] },
+  { id: 'learn', title: 'Learn', note: 'Get the key lines by heart, and read the book closely.', ids: ['flashcards', 'guide', 'lines'] },
+  { id: 'write', title: 'Write', note: 'Turn what you know into an argument.', ids: ['essay-forge', 'defend-the-reading'] }
 ];
 
 const DESCRIPTIONS = {
   'who-said-it': ['Who said it?', 'Read a line and name the speaker.'],
   'fill-the-line': ['Fill the line', 'Put the missing words back into a quotation.'],
-  'flashcards': ['Flashcards', 'Three ways to learn each line until it sticks.'],
   'theme-match': ['Theme match', 'Match each line to the theme it carries.'],
   'technique-spotter': ['Technique spotter', 'Name the technique doing the work.'],
   'character-identification': ['Who is this?', 'Identify a character from their file.'],
   'order-the-plot': ['Order the plot', 'Tap the events in the order they happen.'],
+  flashcards: ['Flashcards', 'Recall, complete or memorise each key line.'],
+  guide: ['Study guide', 'What happens, the characters, themes and context, a section at a time.'],
+  lines: ['Your key lines', 'Which lines you know, and which are due for another look.'],
   'essay-forge': ['Essay planner', 'Build a plan step by step, with checked quotations.'],
   'defend-the-reading': ['Defend the reading', 'Take a side in a critical debate and answer the objection.']
+};
+
+// Two drawings of the hub's own: an open book for the guide, a grid for the lines.
+const OWN_ICONS = {
+  guide: '<path d="M3 5.5c3-1 6-1 9 1 3-2 6-2 9-1v13c-3-1-6-1-9 1-3-2-6-2-9-1Z"/><path d="M12 6.5v13"/>',
+  lines: '<rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/>'
 };
 
 function drawActivities(book, meta, state, counts) {
@@ -243,23 +243,22 @@ function drawActivities(book, meta, state, counts) {
   if (book.quotations.length >= 5) available.add('flashcards');
   if ((book.essayQuestions || []).length) available.add('essay-forge');
   if ((book.criticalViews || []).length >= 2 && book.quotations.length >= 6) available.add('defend-the-reading');
+  available.add('guide');
+  if (book.quotations.length) available.add('lines');
 
   const section = el('section', { class: 'rx-section rx-activities', 'aria-labelledby': 'rx-acts-title' });
-  section.append(el('header', { class: 'rx-section-head' }, [
-    el('div', {}, [el('p', { class: 'rx-eyebrow', text: 'Activities' }), el('h2', { id: 'rx-acts-title', text: 'Choose what to work on' })]),
-    el('p', { text: 'Every activity uses only ' + shortTitle(book) + '.' })
-  ]));
-
+  section.append(el('h2', { id: 'rx-acts-title', class: 'rx-visually-hidden', text: 'Activities on ' + shortTitle(book) }));
+  const columns = el('div', { class: 'rx-groups' });
   for (const group of GROUPS) {
     const ids = group.ids.filter(id => available.has(id));
     if (!ids.length) continue;
-    const grid = el('ul', { class: 'rx-gallery' });
-    for (const id of ids) grid.append(el('li', {}, [activityCard(id, book, meta, state, counts)]));
-    section.append(el('div', { class: 'rx-group' }, [
-      el('div', { class: 'rx-group-head' }, [el('h3', { text: group.title }), el('p', { text: group.note })]),
-      grid
+    columns.append(el('section', { class: 'rx-group is-' + group.id, 'aria-labelledby': 'rx-group-' + group.id }, [
+      el('h3', { id: 'rx-group-' + group.id, class: 'rx-group-title', text: group.title }),
+      el('p', { class: 'rx-group-note', text: group.note }),
+      el('ul', { class: 'rx-list' }, ids.map(id => el('li', {}, [activityRow(id, book, meta, state, counts)])))
     ]));
   }
+  section.append(columns);
   const failed = buildFailures.filter(item => item.book === book.slug);
   if (failed.length) {
     section.append(el('p', { class: 'rx-load-why', text: failed.map(item => item.name).join(', ') + ' couldn’t be prepared in this browser. Reason: ' + describeError(failed[0].error) }));
@@ -267,105 +266,40 @@ function drawActivities(book, meta, state, counts) {
   return section;
 }
 
-const ACTIVITY_ORDER = ['mixed-round', 'who-said-it', 'fill-the-line', 'theme-match', 'technique-spotter', 'character-identification', 'order-the-plot', 'flashcards', 'essay-forge', 'defend-the-reading'];
-
-function activityCard(id, book, meta, state, counts) {
+function activityRow(id, book, meta, state, counts) {
   const [name, note] = DESCRIPTIONS[id];
   const result = state.scores?.[id]?.byBook?.[book.slug];
   let status = 'New';
-  let ratio = null;
   let stars = null;
+  let tried = Boolean(result);
   if (result) {
-    const last = result.lastTotal ? result.last + '/' + result.lastTotal : result.best + '/' + result.total;
-    status = 'Last ' + last + (result.lastAt ? ' · ' + whenLabel(result.lastAt) : '');
+    status = result.lastTotal ? 'Last ' + result.last + '/' + result.lastTotal : 'Best ' + result.best + '/' + result.total;
     if (result.total) stars = starsFor(result.best, result.total);
   }
-  if (id === 'flashcards') {
+  if (id === 'flashcards' || id === 'lines') {
     const met = counts.known + counts.growing + counts.shaky;
-    status = met ? counts.known + ' of ' + book.quotations.length + ' known' : 'New';
-    ratio = met ? counts.known / book.quotations.length : null;
+    tried = met > 0;
+    status = id === 'lines'
+      ? (counts.due ? counts.due + ' due today' : met ? counts.known + ' of ' + book.quotations.length + ' known' : book.quotations.length + ' lines')
+      : (met ? counts.known + ' of ' + book.quotations.length + ' known' : 'New');
   }
-  if (id === 'essay-forge' || id === 'defend-the-reading') status = id === 'essay-forge' ? book.essayQuestions.length + ' questions' : book.criticalViews.length + ' readings';
-
-  return el('a', { class: 'rx-activity', href: activityHref(id, book.slug), 'data-activity': id }, [
-    el('span', { class: 'rx-activity-preview', 'aria-hidden': 'true' }, [preview(id, book), hasMotifs() ? motif(ACTIVITY_ORDER.indexOf(id), 'rx-activity-motif') : null]),
-    el('span', { class: 'rx-activity-body' }, [
-      el('span', { class: 'rx-activity-name' }, [activityIcon(shelf.icons, id, 20), el('span', { text: name })]),
-      el('span', { class: 'rx-activity-note', text: note }),
-      el('span', { class: 'rx-activity-status' + (result || ratio !== null ? ' is-tried' : '') }, [
-        el('span', { text: status }),
-        stars !== null ? el('span', { class: 'rx-mini-stars', role: 'img', 'aria-label': 'Best: ' + stars + ' of 3 stars' }, [0, 1, 2].map(index => el('i', { class: index < stars ? 'is-earned' : '', text: '★' }))) : null,
-        ratio !== null ? el('span', { class: 'rx-meter' }, [el('i', { style: 'width:' + Math.round(ratio * 100) + '%' })]) : null
-      ])
-    ])
+  if (id === 'essay-forge') status = plural(book.essayQuestions.length, 'question');
+  if (id === 'defend-the-reading') status = plural(book.criticalViews.length, 'reading');
+  if (id === 'guide') status = '';
+  const href = id === 'guide' ? guideHref(book.slug) : id === 'lines' ? '#rx-lines-title' : activityHref(id, book.slug);
+  const icon = OWN_ICONS[id] ? drawing(OWN_ICONS[id], 22, 'rx-icon') : activityIcon(shelf.icons, id, 22);
+  return el('a', { class: 'rx-entry', href, 'data-activity': id }, [
+    icon,
+    el('span', { class: 'rx-entry-main' }, [el('span', { class: 'rx-entry-name', text: name }), el('span', { class: 'rx-entry-note', text: note })]),
+    status ? el('span', { class: 'rx-entry-status' + (tried ? ' is-tried' : '') }, [
+      el('span', { text: status }),
+      stars !== null ? el('span', { class: 'rx-mini-stars', role: 'img', 'aria-label': 'Best: ' + stars + ' of 3 stars' }, [0, 1, 2].map(index => el('i', { class: index < stars ? 'is-earned' : '', text: '★' }))) : null
+    ]) : null
   ]);
 }
 
-// A small, real piece of the book in the shape the activity will ask for it.
-function preview(id, book) {
-  const random = seededRandom(hashString(book.slug + id));
-  const spoken = book.quotations.find(quotation => quotation.speaker && quotation.text.length > 20 && quotation.text.length < 120) || book.quotations[0];
-  if (id === 'who-said-it') {
-    const names = shuffle(book.characters.map(character => character.name), random).slice(0, 3);
-    return el('span', { class: 'rx-pv rx-pv-who' }, [
-      el('span', { class: 'rx-pv-quote', text: quoted(clip(spoken.text, 70)) }),
-      el('span', { class: 'rx-pv-people' }, names.map(name => monogram(name)))
-    ]);
-  }
-  if (id === 'fill-the-line') {
-    const line = book.quotations.find(quotation => (quotation.cloze || []).length && quotation.text.length < 110) || spoken;
-    const words = (line.cloze || []).slice(0, 2);
-    const text = clip(line.text, 86);
-    const node = el('span', { class: 'rx-pv-quote' });
-    let rest = text;
-    for (const word of words) {
-      const at = rest.toLowerCase().indexOf(word.toLowerCase());
-      if (at < 0) continue;
-      node.append(rest.slice(0, at), el('span', { class: 'rx-pv-gap' }));
-      rest = rest.slice(at + word.length);
-    }
-    node.append(rest);
-    if (!node.querySelector('.rx-pv-gap')) node.append(' ', el('span', { class: 'rx-pv-gap' }));
-    return el('span', { class: 'rx-pv rx-pv-fill' }, [node, el('span', { class: 'rx-pv-chips' }, words.concat(['…']).map(word => el('span', { class: 'rx-pv-chip', text: word })))]);
-  }
-  if (id === 'flashcards') {
-    return el('span', { class: 'rx-pv rx-pv-cards' }, [
-      el('span', { class: 'rx-pv-card is-back' }),
-      el('span', { class: 'rx-pv-card is-mid' }),
-      el('span', { class: 'rx-pv-card' }, [el('span', { text: quoted(clip(book.quotations[1]?.text || spoken.text, 60)) })])
-    ]);
-  }
-  if (id === 'theme-match' || id === 'technique-spotter') {
-    const list = id === 'theme-match' ? book.themes : book.techniques;
-    return el('span', { class: 'rx-pv rx-pv-tags' }, shuffle(list, random).slice(0, 4).map((item, index) => el('span', { class: 'rx-pv-chip' + (index === 1 ? ' is-on' : ''), text: item.name })));
-  }
-  if (id === 'character-identification') {
-    const person = book.characters.find(character => character.clue) || book.characters[0];
-    const text = clip(maskName(person.clue || person.summary, person.name), 110);
-    const node = el('span', { class: 'rx-pv-file' });
-    text.split('———').forEach((part, index) => { if (index) node.append(el('span', { class: 'rx-redact' })); node.append(part); });
-    return el('span', { class: 'rx-pv rx-pv-dossier' }, [el('span', { class: 'rx-pv-label', text: 'Character file' }), node]);
-  }
-  if (id === 'order-the-plot') {
-    const stages = book.structure.length >= 3 ? book.structure : [];
-    const picked = stages.length ? [stages[1], stages[0], stages[2]] : [];
-    return el('span', { class: 'rx-pv rx-pv-order' }, picked.map((stage, index) => el('span', { class: 'rx-pv-strip', style: '--tilt:' + [-1.2, 0.8, -0.4][index] + 'deg' }, [el('b', { text: String(index + 1) }), clip(stage.title || stage.label, 40)])));
-  }
-  if (id === 'essay-forge') {
-    return el('span', { class: 'rx-pv rx-pv-essay' }, [
-      el('span', { class: 'rx-pv-q', text: clip(book.essayQuestions[0].question, 80) }),
-      el('span', { class: 'rx-pv-steps' }, ['Argument', 'Point', 'Evidence', 'Analysis'].map((step, index) => el('span', { class: index < 2 ? 'is-on' : '', text: step })))
-    ]);
-  }
-  if (id === 'defend-the-reading') {
-    const view = book.criticalViews[0];
-    return el('span', { class: 'rx-pv rx-pv-debate' }, [
-      el('span', { class: 'rx-pv-side is-for' }, [el('b', { text: 'For' }), clip(view.position, 50)]),
-      el('span', { class: 'rx-pv-vs', text: 'vs' }),
-      el('span', { class: 'rx-pv-side is-against' }, [el('b', { text: 'Against' }), clip(view.counter || 'The objection', 50)])
-    ]);
-  }
-  return el('span', {});
+function plural(count, word) {
+  return count + ' ' + word + (count === 1 ? '' : 's');
 }
 
 // --- across the library ----------------------------------------------------------

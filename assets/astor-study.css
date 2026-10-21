@@ -4719,3 +4719,77 @@ main > .book-ways { margin: 26px 0 8px; }
   .book-study-band::after { background: color-mix(in srgb, var(--ed-band, transparent) 82%, transparent); }
   main > .book-ways { justify-content: space-between; gap: 0; }
 }
+
+/* =============================================================================
+   rx: a calmer Revise
+   The Revise home sets the book's cover with one way to start and one line on
+   progress, then the activities in three short lists (practise, learn,
+   write). Each activity page opens with one bar: the book, a way to change it,
+   and one menu of activities (the same at every width) that names the
+   current one. The cover artwork and each book's colours are unchanged.
+   ============================================================================= */
+
+/* --- the home: the jacket ---------------------------------------------------------- */
+.rx-hero-inner { grid-template-columns: auto minmax(0, 1fr); }
+.rx-hero-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin: 14px 0 0; font: 14px/1.4 var(--astor-sans); color: var(--ed-band-soft, rgba(255, 244, 228, .8)); }
+html[data-ed-layout="centred"] .rx-hero-meta { justify-content: center; }
+.rx-hero-text-button {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 0; border: 0; background: none; cursor: pointer;
+  color: var(--ed-band-text, #fffaf2); font: 600 14px/1.2 var(--astor-sans); text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); text-underline-offset: 3px;
+}
+.rx-hero-text-button:hover { text-decoration-color: currentColor; }
+.rx-hero-text-button .rx-change-icon { display: none; }
+.rx-hero-meta .rx-mode-toggle { width: 32px; height: 32px; min-height: 32px; padding: 0; }
+
+/* --- the home: three groups ----------------------------------------------------------- */
+.rx-activities { margin-top: 34px; }
+.rx-groups { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 1fr); gap: 0 40px; align-items: start; }
+.rx-groups > .rx-group { margin: 0; }
+.rx-group-title { margin: 0; font-size: 26px; line-height: 1.1; letter-spacing: -.02em; color: var(--rx-ink); }
+.rx-group-note { margin: 4px 0 12px; font: 14px/1.45 var(--astor-sans); color: var(--rx-muted); }
+.rx-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--rx-line); }
+.rx-entry {
+  display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; gap: 2px 14px; align-items: start; padding: 14px 2px;
+  border-bottom: 1px solid var(--rx-line); color: inherit; text-decoration: none;
+}
+.rx-entry .rx-icon { margin-top: 2px; color: var(--rx-accent-ink); }
+.rx-entry-main { display: grid; gap: 3px; min-width: 0; }
+.rx-entry-name { font-family: Georgia, 'Times New Roman', serif; font-size: 18.5px; line-height: 1.2; color: var(--rx-ink); }
+.rx-entry-note { font: 13.5px/1.45 var(--astor-sans); color: var(--rx-muted); }
+.rx-entry-status { display: grid; justify-items: end; gap: 2px; padding-top: 3px; font: 12.5px/1.3 var(--astor-sans); color: var(--rx-muted); white-space: nowrap; }
+.rx-entry-status.is-tried { color: var(--rx-accent-ink); font-weight: 600; }
+.rx-entry:hover .rx-entry-name { color: var(--rx-accent-ink); }
+.rx-entry:focus-visible { outline: 3px solid var(--rx-accent-ink); outline-offset: 2px; border-radius: 4px; }
+@media (max-width: 999px) {
+  .rx-groups { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px 32px; }
+  .rx-groups > .rx-group.is-practise { grid-column: 1 / -1; }
+  .rx-group.is-practise .rx-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; }
+}
+@media (max-width: 640px) {
+  .rx-groups { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .rx-group.is-practise .rx-list { grid-template-columns: minmax(0, 1fr); }
+  .rx-group-title { font-size: 23px; }
+  .rx-entry { padding: 13px 0; }
+}
+
+/* --- an activity's head: the bar and one menu ------------------------------------------- */
+html[data-edition] .rx-acts-menu { display: block; position: relative; z-index: 6; margin: 14px 0 0; }
+.rx-acts-menu-hint { display: none; }
+/* the menu names the activity, so the heading beneath it stays for screen
+   readers only, and its one-line instruction sits under the menu */
+html[data-edition] main.has-band .rx-bar-mount + .rx-head { display: block; margin: 8px auto 14px; text-align: center; }
+html[data-edition] main.has-band .rx-bar-mount + .rx-head > :is(h1, .kicker) {
+  position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; margin: 0;
+}
+html[data-edition] main.has-band .rx-bar-mount + .rx-head .rx-head-deck { margin: 0 auto; font-size: 15px; }
+.rx-acts-panel { left: 0; right: 0; width: min(580px, 100%); margin: 0 auto; padding: 12px 14px 10px; }
+.rx-acts-group { margin: 8px 4px 6px; font: 700 11px/1.2 var(--astor-sans); letter-spacing: .14em; text-transform: uppercase; color: var(--ed-soft, var(--rx-muted)); }
+.rx-acts-group:first-child { margin-top: 2px; }
+.rx-acts-grid + .rx-acts-group { margin-top: 14px; }
+.rx-acts-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 18px; margin: 12px 4px 2px; padding-top: 10px; border-top: 1px solid var(--ed-line, var(--rx-line)); font: 600 13.5px/1.3 var(--astor-sans); }
+.rx-acts-foot a { color: var(--ed-accent-text, var(--rx-accent-ink)); text-decoration: none; }
+.rx-acts-foot a:hover { text-decoration: underline; }
+@media (max-width: 720px) {
+  html[data-edition] main.has-band .rx-bar-mount + .rx-head { display: none; }
+}
+.rx-hero.is-cover .rx-hero-meta { text-shadow: 0 0 2px var(--ed-band), 0 0 6px var(--ed-band), 0 0 12px var(--ed-band); }

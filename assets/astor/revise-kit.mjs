@@ -6,7 +6,7 @@
 // /assets/revise-index.json for the chooser and then fetch only the chosen
 // book's record. The whole-library study index is left to the explorers.
 
-import { el, clear, shuffle, seededRandom, prefersReducedMotion, fetchJson, describeError } from './util.mjs';
+import { el, clear, shuffle, seededRandom, prefersReducedMotion, fetchJson, describeError, guideHref } from './util.mjs';
 import { loadBook, cardId } from './data.mjs';
 import { snapshot, today, recentlyViewed } from './store.mjs';
 import { GAME_BUILDERS } from './questions.mjs';
@@ -697,80 +697,62 @@ export function keepAddress(slug) {
 // The study bar at the top of every one-book Revise tool: the cover, the title
 // and author, "Change book", and every activity this book supports, so moving
 // from a quiz to the flashcards for the same book is one tap.
-export function studyBar(head, { books, meta, icons, active, onChoose, allBooks }) {
+// The bar at the head of every one-book activity: the book (its cover, its
+// name, a way to change it) and one menu of its activities, the same at every
+// width. The menu names the current activity, so it is also the page's title.
+export function studyBar(head, { books, meta, icons, active, onChoose }) {
   if (!head) return;
   clear(head);
   head.classList.add('rx-bar-mount');
-  const cover = el('a', { class: 'rx-bar-cover', href: '/play/?book=' + encodeURIComponent(meta.slug), 'aria-label': 'Revision home for ' + meta.title }, [
+  const home = '/play/?book=' + encodeURIComponent(meta.slug);
+  const cover = el('a', { class: 'rx-bar-cover', href: home, 'aria-label': 'Revision home for ' + meta.title }, [
     coverImage(meta, { width: 56, eager: true })
   ]);
   const identity = el('div', { class: 'rx-bar-id' }, [
-    el('span', { class: 'rx-bar-kicker', text: 'Revising' }),
-    el('a', { class: 'rx-bar-title', href: '/play/?book=' + encodeURIComponent(meta.slug), title: meta.title, text: shortTitle(meta) }),
+    el('a', { class: 'rx-bar-title', href: home, title: meta.title, text: shortTitle(meta) }),
     el('span', { class: 'rx-bar-author', text: meta.author })
   ]);
-  const bar = el('div', { class: 'rx-bar' }, [cover, identity, el('div', { class: 'rx-bar-tools' }, [modeToggle(), changeBookButton({ books, current: meta, onChoose })])]);
-
-  const acts = el('nav', { class: 'rx-acts', 'aria-label': 'Activities for ' + meta.title });
-  const list = el('ul', {});
-  for (const activity of ACTIVITIES) {
-    if (!hasActivity(meta, activity.id)) continue;
-    const here = activity.id === active;
-    list.append(el('li', {}, [el('a', {
-      class: 'rx-act' + (here ? ' is-here' : ''), href: activityHref(activity.id, meta.slug),
-      'aria-current': here ? 'page' : null
-    }, [activityIcon(icons, activity.id, 18), el('span', { text: activity.short })])]));
-  }
-  acts.append(list);
-  // When the row is wider than the screen, arrows at either end say there is
-  // more to see and scroll it; the row can still be swiped.
-  const nudge = direction => acts.scrollBy({ left: direction * acts.clientWidth * 0.7, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
-  const back = el('button', { type: 'button', class: 'rx-acts-arrow is-back', 'aria-label': 'Earlier activities', tabindex: '-1', html: '&lsaquo;', onclick: () => nudge(-1) });
-  const more = el('button', { type: 'button', class: 'rx-acts-arrow is-more', 'aria-label': 'More activities', tabindex: '-1', html: '&rsaquo;', onclick: () => nudge(1) });
-  const row = el('div', { class: 'rx-acts-row' }, [back, acts, more]);
-  const edges = () => {
-    const overflow = acts.scrollWidth > acts.clientWidth + 2;
-    row.classList.toggle('has-back', overflow && acts.scrollLeft > 4);
-    row.classList.toggle('has-more', overflow && acts.scrollLeft + acts.clientWidth < acts.scrollWidth - 4);
-  };
-  acts.addEventListener('scroll', edges, { passive: true });
-  if (head.rxEdges) window.removeEventListener('resize', head.rxEdges);
-  head.rxEdges = edges;
-  window.addEventListener('resize', edges);
-  head.append(bar, row, activityMenu({ meta, icons, active }));
+  const bar = el('div', { class: 'rx-bar' }, [cover, identity, el('div', { class: 'rx-bar-tools' }, [changeBookButton({ books, current: meta, onChoose })])]);
+  head.append(bar, activityMenu({ meta, icons, active }));
   if (meta.edition) coverBand(head.closest('main') || undefined);
-  // Keep the current activity in view on a narrow screen, without moving the page.
-  requestAnimationFrame(() => {
-    const here = acts.querySelector('.is-here');
-    if (here) acts.scrollLeft = Math.max(0, here.offsetLeft - (acts.clientWidth - here.offsetWidth) / 2);
-    edges();
-  });
 }
 
-// The site header stays at the top of the screen as the page scrolls, so
-// anything the Revise pages scroll to is kept clear of it (scroll-margin-top
-// in astor-study.css reads --rx-header).
-// On a phone the activities are one control instead of a row: the current
-// activity's name, lettered on the cover, which opens to every activity the
-// book has. Nothing is cut short and the current one is never out of sight.
+// The activities as one control: the current one's name, lettered on the
+// cover, opening to every activity the book has, in the Revise home's three
+// groups, with the way to the study guide underneath.
+export const ACTIVITY_GROUPS = [
+  { title: 'Practise', ids: ['mixed-round', 'who-said-it', 'fill-the-line', 'theme-match', 'technique-spotter', 'character-identification', 'order-the-plot'] },
+  { title: 'Learn', ids: ['flashcards'] },
+  { title: 'Write', ids: ['essay-forge', 'defend-the-reading'] }
+];
+
 function activityMenu({ meta, icons, active }) {
   const current = ACTIVITIES.find(activity => activity.id === active);
-  const available = ACTIVITIES.filter(activity => hasActivity(meta, activity.id));
   const menu = el('details', { class: 'rx-acts-menu' });
   menu.append(el('summary', { 'aria-label': (current ? current.name + '. ' : '') + 'Change activity' }, [
     current ? activityIcon(icons, current.id, 18) : null,
     el('span', { class: 'rx-acts-menu-name', text: current ? current.name : 'Activities' }),
-    el('span', { class: 'rx-acts-menu-hint', 'aria-hidden': 'true', text: 'Change' }),
     el('span', { class: 'rx-acts-menu-chevron', 'aria-hidden': 'true' })
   ]));
-  const grid = el('ul', { class: 'rx-acts-grid' });
-  for (const activity of available) {
-    const here = activity.id === active;
-    grid.append(el('li', {}, [el('a', {
-      class: 'rx-acts-tile' + (here ? ' is-here' : ''), href: activityHref(activity.id, meta.slug), 'aria-current': here ? 'page' : null
-    }, [activityIcon(icons, activity.id, 18), el('span', { text: activity.name })])]));
+  const panel = el('nav', { class: 'rx-acts-panel', 'aria-label': 'Activities for ' + meta.title });
+  for (const group of ACTIVITY_GROUPS) {
+    const ids = group.ids.filter(id => hasActivity(meta, id));
+    if (!ids.length) continue;
+    panel.append(el('p', { class: 'rx-acts-group', text: group.title }), el('ul', { class: 'rx-acts-grid' }, ids.map(id => {
+      const activity = ACTIVITIES.find(entry => entry.id === id);
+      const here = id === active;
+      return el('li', {}, [el('a', {
+        class: 'rx-acts-tile' + (here ? ' is-here' : ''), href: activityHref(id, meta.slug), 'aria-current': here ? 'page' : null
+      }, [activityIcon(icons, id, 18), el('span', { text: activity.name })])]);
+    })));
   }
-  menu.append(el('nav', { class: 'rx-acts-panel', 'aria-label': 'Activities for ' + meta.title }, [grid]));
+  // The book's other two places: its edition and its study guide.
+  panel.append(el('p', { class: 'rx-acts-foot' }, [
+    el('a', { href: meta.href, text: 'The edition' }),
+    el('a', { href: guideHref(meta.slug), text: 'Study guide' }),
+    el('a', { href: '/play/?book=' + encodeURIComponent(meta.slug), text: 'All of ' + shortTitle(meta) + ' on Revise' })
+  ]));
+  menu.append(panel);
   // Close when the reader taps elsewhere or presses Escape.
   const close = event => {
     if (!menu.open) return;
