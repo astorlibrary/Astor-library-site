@@ -180,4 +180,7 @@ test('no Who said it? question offers two names for one person', async () => {
   assert.ok(sameName('Father', 'Father'), 'a name is always the same as itself');
   assert.equal(inSentence('The Witches'), 'the Witches');
   assert.equal(inSentence('Macbeth'), 'Macbeth');
+  assert.equal(inSentence('Third Apparition'), 'the Third Apparition');
+  assert.equal(inSentence('Nurse'), 'the Nurse');
+  assert.equal(inSentence('King Henry'), 'King Henry');
 });

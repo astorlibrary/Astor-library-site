@@ -127,7 +127,7 @@ const GAMES = [
     name: 'Order the plot',
     scope: 'book',
     blurb: 'Put acts, chapters and scenes back into sequence.',
-    deck: 'Put the acts, chapters and scenes back in order.',
+    deck: 'Tap the events in the order they happen.',
     why: 'Knowing what happens before and after a scene lets you write about cause and effect. It is also the fastest way to find a quotation you half remember.'
   },
   {

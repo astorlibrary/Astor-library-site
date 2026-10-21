@@ -126,9 +126,14 @@ function otherSpeakers(book, quotation) {
   return chosen;
 }
 
-// A name set inside a sentence: "the Witches", not "The Witches".
+// A name set inside a sentence: "the Witches", not "The Witches"; and a
+// role rather than a name takes "the": "the Third Apparition", "the Nurse".
+const ROLE_WORDS = /^(?:(?:first|second|third|fourth|fifth)\s+\S+|doctor|soothsayer|chorus|prologue|epilogue|duke|duchess|countess|king|queen|prince|princess|hostess|abbess|captain|boatswain|shepherd|porter|nurse|ghost|clown|fool|messenger|servant|officer|senator|citizen|watchman|gaoler|musician|archbishop|bishop|cardinal|friar)$/i;
 export function inSentence(name) {
-  return String(name).replace(/^The (?=\S)/, 'the ');
+  const text = String(name).trim();
+  if (/^The (?=\S)/.test(text)) return text.replace(/^The /, 'the ');
+  if (ROLE_WORDS.test(text)) return 'the ' + text;
+  return text;
 }
 
 export function whoSaidIt(book, random = Math.random) {
@@ -177,7 +182,7 @@ export function clozeWords(text, declared, random = Math.random) {
   if (declared && declared.length) return declared.slice(0, 3);
   const words = text.split(/\s+/);
   const candidates = words
-    .map((word, index) => ({ index, clean: word.replace(/[^\p{L}'’-]/gu, '') }))
+    .map((word, index) => ({ index, clean: word.replace(/[^\p{L}'’-]/gu, '').replace(/['’]+$/, '') }))
     .filter(entry => entry.clean.length > 3 && !STOP_WORDS.has(entry.clean.toLowerCase()));
   if (!candidates.length) return [];
   const count = Math.min(candidates.length, text.split(/\s+/).length > 14 ? 3 : 2);
@@ -188,7 +193,7 @@ export function clozeWords(text, declared, random = Math.random) {
 
 export function fillTheLine(book, random = Math.random) {
   const vocabulary = [...new Set(book.quotations.flatMap(quotation =>
-    quotation.text.split(/\s+/).map(word => word.replace(/[^\p{L}'’-]/gu, ''))
+    quotation.text.split(/\s+/).map(word => word.replace(/[^\p{L}'’-]/gu, '').replace(/['’]+$/, ''))
   ).filter(word => word.length > 3 && !STOP_WORDS.has(word.toLowerCase())))];
 
   return book.quotations.map(quotation => {

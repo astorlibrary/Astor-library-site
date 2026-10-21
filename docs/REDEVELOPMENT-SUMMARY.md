@@ -590,6 +590,32 @@ kept the cover-based design and worked on use:
 - *Keyboard focus* and the book title in the study bar are comfortable
   targets in every edition.
 
+**Content review (October 2026).** The study records behind Revise were
+checked against the books themselves, using the Standard Ebooks texts:
+
+- *Every quotation* in the 36 books whose source is a Standard Ebooks text
+  was found word for word in it, and all 773 chapter references point to
+  the right chapter (scripts/verify-quotations.js, run offline against the
+  texts). In the 21 most-studied books every quotation was also checked
+  for speaker and reference by hand.
+- *220 corrections* were made to what surrounds the quotations: wrong
+  speakers, contexts that misplace a line, analyses that miscount words or
+  chapters or misstate a plot fact, character facts, technique tags that
+  break their own definitions, and first appearances counted consistently
+  (the first time a character is on stage or on the page). Every
+  correction was checked against the source text by a second reviewer
+  before it was made; anything that was only a matter of reading was left
+  alone.
+- *The question builder*: one person can no longer be offered twice under
+  two names (characters may list `aliases`), a name always matches itself,
+  speakers read correctly inside a sentence ("spoken by the Witches", "the
+  Third Apparition"), and the word bank no longer keeps a stray quotation
+  mark.
+- *Still to do*: the same field-by-field review for the remaining 88
+  books. Their quotations were checked automatically where a text was
+  available; the 84 lines that could only be compared with a different
+  edition (mostly Shakespeare against the MIT text) still need a reader.
+
 Order the plot is now played by tapping the events in the order they
 happen: a correct tap places the card, a wrong one counts as a slip, so the
 story assembles itself without dragging.
