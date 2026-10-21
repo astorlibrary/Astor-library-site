@@ -124,7 +124,7 @@ const resources = [
     category: 'eighteenth-century',
     title: 'Pamela’s Psyche',
     titleHtml: '<em>Pamela’s</em> Psyche',
-    description: 'Richardson’s letters read as a record of a mind changing: Pamela’s fear, her resistance, and the power Mr B holds over both. Twenty slides.',
+    description: 'Pamela’s letters read as a record of a mind changing: her fear, her resistance, and the power Mr B holds over both. Twenty slides.',
     image: '07_pamelas_psyche.png',
     url: '/presentations/?presentation=pamelas-psyche',
     legacyRoute: '/resources/pamela/psychological-analysis/',
