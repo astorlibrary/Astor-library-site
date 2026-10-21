@@ -20,7 +20,6 @@ import {
 
 const mount = document.querySelector('#astor-game');
 const head = document.querySelector('#rv-head-book');
-if (mount) start(mount);
 
 async function start(container) {
   const gameId = container.dataset.game;
@@ -146,3 +145,6 @@ function runLibrary(container, gameId, index, shelf) {
   });
   round.start();
 }
+
+// Started last, once every declaration above has run (see revise-hub.mjs).
+if (mount) start(mount);

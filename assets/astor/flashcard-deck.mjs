@@ -62,7 +62,6 @@ function saveMode(id) {
   try { window.localStorage.setItem(MODE_KEY, id); } catch { /* optional */ }
 }
 
-if (mount) start();
 
 let keyHandler = null;
 
@@ -436,3 +435,6 @@ export function memoriseLine(quotation, step) {
   });
   return line;
 }
+
+// Started last, once every declaration above has run (see revise-hub.mjs).
+if (mount) start();

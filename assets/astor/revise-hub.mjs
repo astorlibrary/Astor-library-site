@@ -23,7 +23,6 @@ import {
 const titleMount = document.querySelector('#rv-title');
 const hubMount = document.querySelector('#rv-hub');
 
-if (hubMount) start();
 
 let shelf = null;
 
@@ -410,3 +409,10 @@ function drawLibrary(day) {
   section.append(grid);
   return section;
 }
+
+// Started last, once every declaration above has run: Safari checks a
+// variable as soon as an assignment to it begins, so starting earlier made
+// `shelf = await loadShelf()` throw "Cannot access 'shelf' before
+// initialization" there, and every Revise page reported the books as not
+// loaded.
+if (hubMount) start();

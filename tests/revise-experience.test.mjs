@@ -184,3 +184,29 @@ test('no Who said it? question offers two names for one person', async () => {
   assert.equal(inSentence('Nurse'), 'the Nurse');
   assert.equal(inSentence('King Henry'), 'King Henry');
 });
+
+// Safari checks a `let` or `const` as soon as an assignment to it begins, so a
+// module that starts its page before declaring a variable the start-up assigns
+// (`shelf = await loadShelf()`) throws there, though Chrome waits until the
+// await is over. Every study module therefore starts last.
+test('study modules start their page only after every top-level declaration', () => {
+  const declaration = /^(?:export\s+)?(?:default\s+)?(?:async\s+)?(?:function\*?|const|let|var|class)\b/;
+  const inert = /^(?:import\b|export\s*\{|export\s+\*|\/\/|\/\*|\*|\}|\)|\]|$)/;
+  for (const name of fs.readdirSync('assets/astor').filter(entry => entry.endsWith('.mjs'))) {
+    let firstCall = null;
+    fs.readFileSync('assets/astor/' + name, 'utf8').split('\n').forEach((line, index) => {
+      if (!line || /^\s/.test(line) || inert.test(line)) return;
+      if (!declaration.test(line)) { firstCall = firstCall || index + 1; return; }
+      if (firstCall && /^(?:export\s+)?(?:const|let|var|class)\b/.test(line)) {
+        assert.fail(name + ':' + (index + 1) + ' is declared after the top-level call on line ' + firstCall);
+      }
+    });
+  }
+});
+
+test('no study module uses a RegExp lookbehind, which Safari lacks before 16.4', () => {
+  for (const name of fs.readdirSync('assets/astor').filter(entry => entry.endsWith('.mjs'))) {
+    const source = fs.readFileSync('assets/astor/' + name, 'utf8');
+    assert.ok(!/\(\?<[=!]/.test(source), name + ' uses a lookbehind');
+  }
+});

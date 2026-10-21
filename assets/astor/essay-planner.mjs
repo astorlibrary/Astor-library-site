@@ -41,9 +41,6 @@ const ANALYSIS_PROMPTS = [
   'A contemporary audience would have …'
 ];
 
-if (mount) {
-  openBookPage({ head, mount, active: 'essay-forge', filter: book => book.essays > 0, render: book => render(book) });
-}
 
 function readPlans() {
   try {
@@ -566,3 +563,7 @@ function insert(textarea, text) {
   if (at >= 0) textarea.setSelectionRange(at, at + 1);
 }
 
+// Started last, once every declaration above has run (see revise-hub.mjs).
+if (mount) {
+  openBookPage({ head, mount, active: 'essay-forge', filter: book => book.essays > 0, render: book => render(book) });
+}

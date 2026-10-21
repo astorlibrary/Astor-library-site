@@ -19,9 +19,6 @@ import { openBookPage, shortTitle, quoted } from './revise-kit.mjs';
 const head = document.querySelector('#rv-head-book');
 const mount = document.querySelector('#astor-defend');
 
-if (mount) {
-  openBookPage({ head, mount, active: 'defend-the-reading', filter: book => book.views >= 2 && book.quotations >= 6, render: book => render(book) });
-}
 
 const words = text => String(text || '').trim().split(/\s+/).filter(Boolean).length;
 
@@ -248,4 +245,9 @@ function pickCounterEvidence(book, chosen, skipped = new Set()) {
     .flatMap(quotation => quotation.themes || []));
   const contrasting = unused.filter(quotation => !(quotation.themes || []).some(id => chosenThemes.has(id)));
   return shuffle(contrasting.length ? contrasting : unused)[0] || null;
+}
+
+// Started last, once every declaration above has run (see revise-hub.mjs).
+if (mount) {
+  openBookPage({ head, mount, active: 'defend-the-reading', filter: book => book.views >= 2 && book.quotations >= 6, render: book => render(book) });
 }

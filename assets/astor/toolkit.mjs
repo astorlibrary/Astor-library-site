@@ -19,7 +19,6 @@ import {
 const embedded = new WeakSet();
 
 const toolkit = document.querySelector('#astor-study-toolkit');
-if (toolkit) enhance(toolkit);
 
 function enhance(root) {
   const slug = root.dataset.astorBook;
@@ -484,3 +483,6 @@ function setUpCommonplace(root, book) {
     foot.append(button);
   }
 }
+
+// Started last, once every declaration above has run (see revise-hub.mjs).
+if (toolkit) enhance(toolkit);

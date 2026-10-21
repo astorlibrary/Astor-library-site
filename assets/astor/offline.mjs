@@ -4,6 +4,7 @@
 import { el, clear } from './util.mjs';
 
 const secure = window.location.protocol === 'https:' || ['localhost', '127.0.0.1'].includes(window.location.hostname);
+const list = document.querySelector('#astor-offline-list');
 
 if ('serviceWorker' in navigator && secure) {
   window.addEventListener('load', () => {
@@ -11,7 +12,6 @@ if ('serviceWorker' in navigator && secure) {
   });
 }
 
-const list = document.querySelector('#astor-offline-list');
 if (list && 'caches' in window) listKept(list);
 
 async function listKept(mount) {

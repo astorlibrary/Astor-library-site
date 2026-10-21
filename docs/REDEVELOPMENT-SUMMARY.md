@@ -633,6 +633,15 @@ completion screen's words match the round (score, best, last go, second go).
 Some failures could happen for a returning reader on the live site but not
 in a fresh test browser. These are now fixed:
 
+- **Pages start last.** `revise-hub.mjs` called `start()` above its
+  `let shelf` declaration. The owner's browser checked `shelf` as soon as
+  `shelf = await loadShelf()` began, so every Revise home page said "The books
+  didn't load. Reason: ReferenceError: Cannot access 'shelf' before
+  initialization". The test browser, which only checks after the `await`,
+  never failed. Every study module now starts its page as its last
+  statement, and `tests/revise-experience.test.mjs` fails if a module
+  declares anything after its first top-level call.
+
 - **One module version per page.** Browsers keep `/assets/*.mjs` for up to
   an hour (`max-age=300, stale-while-revalidate=3600`), while pages, styles
   and data always arrive fresh. After a deploy, a reader could therefore run
