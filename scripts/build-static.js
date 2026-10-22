@@ -937,13 +937,17 @@ function addProductBox(html, source) {
   const slug = context.book.href.split('/')[2];
   const formats = bookFormats[slug];
   if (!formats || !formats.length) return html;
+  const taken = new Set();
   const rows = formats.map(format => {
     const edition = format.edition ? '<span> · ' + escapeHtml(format.edition) + '</span>' : '';
     const note = format.note ? '<p class="astor-buy-note">' + escapeHtml(format.note) + '</p>' : '';
     const more = format.page ? ' <a class="astor-buy-more" href="' + escapeHtml(format.page) + '">What is in it</a>' : '';
     // Countries where Amazon does not sell this format; site.js greys out the button there.
     const unavailable = format.unavailableIn ? ' data-unavailable-in="' + escapeHtml(format.unavailableIn.join(' ')) + '"' : '';
-    return '<li class="astor-buy-item"' + unavailable + '><img src="' + escapeHtml(format.image) + '" alt="" width="56" height="84" loading="lazy" decoding="async">' +
+    const anchor = /^(Paperback|Hardback)$/.test(format.format) && !taken.has(format.format)
+      ? ' id="' + format.format.toLowerCase() + '-edition"' : '';
+    taken.add(format.format);
+    return '<li class="astor-buy-item"' + anchor + unavailable + '><img src="' + escapeHtml(format.image) + '" alt="" width="56" height="84" loading="lazy" decoding="async">' +
       '<div class="astor-buy-text"><p class="astor-buy-format">' + escapeHtml(format.format) + edition + '</p>' + note + '</div>' +
       '<p class="astor-buy-actions"><a class="astor-buy-button" href="' + escapeHtml(format.url) + '" rel="noopener">Buy on Amazon</a>' + more + '</p></li>';
   }).join('');
@@ -955,6 +959,11 @@ function addProductBox(html, source) {
   html = html.replace(/<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>/i, intro => intro
     .replace(/<a class="button [^"]*" href="https:\/\/astorlibrary\.com\/go\/[^"]*"[^>]*>[\s\S]*?<\/a>/g, '')
     .replace(/<div class="button-row">\s*<\/div>/g, ''));
+  // A book with a hardback also had a second panel of the same choices further
+  // down (kept in the source, which the site check reads). The box above
+  // holds every one of its links, so the page shows the choices once, and
+  // the box's rows take over the panel's addresses (#hardback-edition).
+  html = html.replace(/(?:<!-- ASTOR FORMAT OPTIONS START -->\s*)?<section class="edition-format-panel"[\s\S]*?<\/section>(?:\s*<!-- ASTOR FORMAT OPTIONS END -->)?\s*/, '');
   const afterCredit = html.replace(/(<aside class="astor-page-credit"[\s\S]*?<\/aside>)/, '$1' + box);
   if (afterCredit !== html) return afterCredit;
   return html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>)/i, '$1' + box);

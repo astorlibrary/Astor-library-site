@@ -457,14 +457,19 @@
       const collection = data.collections.find(item => item.title === book.collection);
       addBookNavigation(book, collection);
 
+      const shelved = new Set([...main.querySelectorAll('.book-passage-shelf a[href]')].map(link => normalisePath(link.getAttribute('href'))));
       const resources = data.resources
         .filter(item => item.relatedBooks && item.relatedBooks.some(href => normalisePath(href) === currentPath))
+        .filter(item => !shelved.has(normalisePath(item.href)))
         .slice(0, 3);
       const editions = data.studyEditions
         .filter(item => item.relatedBooks && item.relatedBooks.some(href => normalisePath(href) === currentPath))
         .sort((a, b) => Number(a.paired) - Number(b.paired))
         .slice(0, 3);
-      const passages = (data.passages || [])
+      // The close readings and free guides already have their own shelf higher
+      // up the page (build-static.js); they are not offered a second time here.
+      const listed = Boolean(main.querySelector('.book-passage-shelf'));
+      const passages = listed ? [] : (data.passages || [])
         .filter(item => item.relatedBooks && item.relatedBooks.some(href => normalisePath(href) === currentPath))
         .slice(0, 1);
       // Keep the paired study edition visible: reserve it the first slot so

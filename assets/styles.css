@@ -2152,3 +2152,34 @@
   .astor-page-credit a+a{margin-left:14px}
 }
 .skip-link:focus:not(:focus-visible){transform:translateY(-180%)}
+
+/* Book pages, late October 2026: the close readings, the seasonal links and
+   the shelf of further reading as plain sections under a rule, not a navy
+   band, a tinted box and a bordered panel. Same tokens in both themes. */
+main .book-passage-shelf { margin: 72px 0 40px; padding: 28px 0 0; border-top: 1px solid var(--line); background: none; color: var(--text, var(--ink)); }
+main .book-passage-shelf-head { display: block; margin-bottom: 14px; }
+main .book-passage-shelf-head .kicker { color: var(--wine-text, var(--burgundy)); }
+main .book-passage-shelf-head h2 { color: var(--text, var(--ink)); font-size: clamp(32px, 3.6vw, 44px); line-height: 1.05; letter-spacing: -.02em; }
+main .book-passage-shelf-head > p { margin-top: 8px; color: var(--text-soft, #423b36); font-size: 16px; }
+main .book-passage-grid { gap: 0 44px; border: 0; }
+main .book-passage-grid > a { min-height: 0; padding: 18px 0; border: 0; border-bottom: 1px solid var(--line); color: var(--text, var(--ink)); }
+main .book-passage-grid > a:hover { background: none; }
+main .book-passage-grid > a:hover blockquote { color: var(--wine-text, var(--burgundy)); }
+main .book-passage-grid span, main .book-passage-resources > span { color: var(--text-muted, var(--muted)); font: 600 13px/1.3 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; letter-spacing: .08em; }
+main .book-passage-grid blockquote { margin: 10px 0 8px; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.15; letter-spacing: -.01em; }
+main .book-passage-grid p { margin: 0 0 10px; color: var(--text-soft, #423b36); font-size: 16px; }
+main .book-passage-grid b { color: var(--wine-text, var(--burgundy)); font: 600 14px/1.4 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+main .book-passage-resources a { color: var(--wine-text, var(--burgundy)); font: 500 16px/1.4 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+main .season-book-backlinks { margin: 40px 0; padding: 18px 0 0; border: 0; border-top: 1px solid var(--line); background: none; }
+main .season-book-backlinks p { font-size: 13px; color: var(--text-muted, var(--muted)); }
+main .related-reading { margin-left: 0; margin-right: 0; padding: 28px 0 0; border: 0; border-top: 1px solid var(--line); background: none; box-shadow: none; }
+main .related-reading-head h2 { font-size: clamp(32px, 3.6vw, 44px); font-weight: 400; line-height: 1.05; letter-spacing: -.02em; }
+main .related-subjects a { padding: 0; border: 0; background: none; color: var(--wine-text, #6e1f2b); font-size: 15px; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; }
+main .related-subjects a:hover { background: none; color: var(--text, var(--ink)); }
+.astor-buy-item[id] { scroll-margin-top: 120px; }
+@media (max-width: 620px) {
+  main .book-passage-shelf { margin: 56px 0 28px; padding-top: 22px; }
+  main .book-passage-shelf-head h2 { font-size: 30px; }
+  main .book-passage-grid blockquote { margin-top: 8px; font-size: 25px; }
+  main .book-passage-grid > a { padding: 16px 0; }
+}
