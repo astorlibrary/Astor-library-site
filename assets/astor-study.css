@@ -1801,3 +1801,8 @@
 }
 
 /* The Revise pages and the study guides are set by assets/study.css. */
+
+/* Verse quotations carry their line ends as "\n" (scripts/restore-lineation.js);
+   wherever a quotation is set from the data as a block, they show. */
+.astor-quote-card blockquote p, .astor-game-quote p, .astor-qx-card blockquote p,
+#astor-commonplace blockquote p, .astor-sheet q { white-space: pre-line; }

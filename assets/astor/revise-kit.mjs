@@ -113,14 +113,20 @@ export function firstSentence(text) {
 }
 
 // A line in curly quotation marks, without doubling marks the line already has.
+// A line of verse run into a sentence keeps its line ends as " / ", the way
+// an essay quotes verse; a line set on its own keeps them as breaks.
+export function inline(text) {
+  return String(text || '').replace(/\s*\n\s*/g, ' / ');
+}
+
 export function quoted(text) {
   // Only double marks: a leading apostrophe is usually an elision ('Tis).
-  const inner = String(text || '').trim().replace(/^[“"]+/, '').replace(/[”"]+$/, '');
+  const inner = inline(text).trim().replace(/^[“"]+/, '').replace(/[”"]+$/, '');
   return '“' + inner + '”';
 }
 
 export function clip(text, length = 80) {
-  const value = String(text || '').replace(/\s+/g, ' ').trim();
+  const value = inline(text).replace(/\s+/g, ' ').trim();
   if (value.length <= length) return value;
   return value.slice(0, value.lastIndexOf(' ', length - 1) > 20 ? value.lastIndexOf(' ', length - 1) : length).replace(/[,;:.]$/, '') + '…';
 }

@@ -23,7 +23,7 @@ import { completion } from './quiz-round.mjs';
 import {
   loadFailed,
   loadShelf, loadBook, setAccent, keepAddress, preferredSlug, studyBar,
-  bookLines, lineSummary, lineState, STATE_WORDS, cardId, activityHref, quoted
+  bookLines, lineSummary, lineState, STATE_WORDS, cardId, activityHref, quoted, inline, clip
 } from './revise-kit.mjs';
 
 const mount = document.querySelector('#astor-flashcards');
@@ -230,7 +230,7 @@ function sitting(book, meta, mode, only = null) {
       put(front, headRow(badge),
         el('p', { class: 'rx-flip-cue', text: where }),
         quotation.context ? el('p', { class: 'rx-flip-context', text: quotation.context }) : null,
-        el('blockquote', { class: 'rx-flip-line is-start' }, [el('p', { text: '“' + opening.replace(/^[“"]/, '') + ' …”' })]),
+        el('blockquote', { class: 'rx-flip-line is-start' }, [el('p', { text: '“' + inline(opening).replace(/^[“"]/, '') + ' …”' })]),
         el('p', { class: 'rx-flip-prompt', text: 'Say the rest aloud, then turn.' }));
     } else {
       put(front, headRow(el('p', { class: 'rx-flip-state', text: 'Step ' + (step + 1) + ' of 4' })),
@@ -241,7 +241,7 @@ function sitting(book, meta, mode, only = null) {
     // The back answers the front: in Recall, who and where; in Complete, the
     // words the reader had to supply, set apart from those they were given.
     const answerLine = mode === 'complete'
-      ? el('blockquote', { class: 'rx-flip-line is-answer' }, [el('p', {}, [el('span', { class: 'rx-flip-given', text: words.slice(0, given).join(' ') }), ' ' + words.slice(given).join(' ')])])
+      ? el('blockquote', { class: 'rx-flip-line is-answer' }, [el('p', {}, [el('span', { class: 'rx-flip-given', text: words.slice(0, given).join(' ') }), restOf(quotation.text, given)])])
       : el('blockquote', { class: 'rx-flip-line is-answer' }, [el('p', { text: quotation.text })]);
     put(back,
       headRow(el('p', { class: 'rx-flip-where' }, [
@@ -251,7 +251,7 @@ function sitting(book, meta, mode, only = null) {
       mode === 'recall' ? null : answerLine,
       quotation.context && mode === 'recall' ? el('p', { class: 'rx-flip-context', text: quotation.context }) : null,
       el('p', { class: 'rx-flip-analysis', text: quotation.analysis }),
-      mode === 'recall' ? el('p', { class: 'rx-flip-small', text: quoted(quotation.text.slice(0, 80) + (quotation.text.length > 80 ? '…' : '')) }) : null
+      mode === 'recall' ? el('p', { class: 'rx-flip-small', text: quoted(clip(quotation.text, 80)) }) : null
     );
 
     // One side of the card at a time: turning it shows the back in its place.
@@ -369,6 +369,12 @@ function sitting(book, meta, mode, only = null) {
   }
   void waiting;
   render();
+}
+
+// The line after its first `count` words, with its own spacing and line breaks.
+function restOf(text, count) {
+  const tokens = text.split(/(\s+)/);
+  return tokens.slice(count * 2 - 1).join('');
 }
 
 // Element.append writes null as text, so the optional parts go through here.

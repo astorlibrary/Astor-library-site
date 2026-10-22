@@ -821,9 +821,21 @@ lost its tipping-balance drawing.
 The edition palettes and lifted cover art (`scripts/editions.js`,
 `scripts/build-edition-art.mjs`, `assets/editions/`) are still built into
 `revise-index.json` and tested, but no page reads anything from them except
-the accent; they can be retired in a later clean-up. Verse quotations are
-stored without their line breaks, which shows now that lines are set large;
-restoring lineation is a data task.
+the accent; they can be retired in a later clean-up.
+
+**Verse keeps its lines.** The records stored every quotation as one run of
+words, so verse read as prose with stray capitals once it was set large.
+`scripts/restore-lineation.js` finds each quotation from a play, poem or
+poetry collection in the source text it was checked against and copies the
+source's line breaks into it as `\n`. It takes them only when every new line
+opens with a capital and none runs longer than a verse line, which keeps out
+the prose the sources also break (the MIT Shakespeare's numbered prose lines,
+Gutenberg's wrapping); the two poetry collections that marked line ends by
+hand with " / " were converted too. 715 quotations in 41 records now carry
+their lines, and `verify-quotations.js` still finds all of them. A quotation
+set on its own shows the breaks (`white-space: pre-line`); one run into a
+sentence, or copied into a plan, shows them as " / " (`inline()` and
+`quoted()` in `revise-kit.mjs`), as an essay quotes verse.
 
 
 ---

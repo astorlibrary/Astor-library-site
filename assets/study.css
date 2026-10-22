@@ -132,6 +132,9 @@ body:has(main.sg-page) { background: var(--surface-paper, #f7efe7); }
 .gd-moment { font-style: italic; color: var(--st-soft); }
 .gd-quote.is-target blockquote { border-left-width: 4px; }
 
+/* verse keeps its lines (the data carries them as "\n"); prose is unaffected */
+.gd-quote blockquote p { white-space: pre-line; }
+
 /* --- context ------------------------------------------------------------------------ */
 
 .gd-dates, .gd-places { margin: 0 0 1em; }
@@ -630,6 +633,10 @@ body:has(main.rx-page, main.sg-page) .skip-link:focus:not(:focus-visible) { tran
 .rx-boxes dt { font: 14px/1.3 var(--st-sans); color: var(--st-ink); }
 .rx-boxes dt small { display: block; font-size: 12.5px; color: var(--st-muted); }
 .rx-boxes dd { margin: 0; font: 30px/1 var(--st-serif); color: var(--st-ink); }
+
+/* --- verse keeps its line ends wherever a quotation is set on its own ------------ */
+
+.rx-quote p, .rx-flip-line p, .rx-today-card blockquote p, .rx-counter blockquote, .rx-evidence blockquote, .rx-deck-missed q { white-space: pre-line; }
 
 /* --- the Revise home ----------------------------------------------------------------- */
 

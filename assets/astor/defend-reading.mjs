@@ -222,7 +222,8 @@ function stepHead(number, title, note) {
 }
 
 function clip(text, length) {
-  return text.length > length ? text.slice(0, text.lastIndexOf(' ', length)) + '…' : text;
+  const value = text.replace(/\s*\n\s*/g, ' / ');
+  return value.length > length ? value.slice(0, value.lastIndexOf(' ', length)) + '…' : value;
 }
 
 

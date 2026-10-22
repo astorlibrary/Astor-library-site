@@ -79,6 +79,11 @@ book's colour only for links and the one strong button, and no box around
 anything that is not held or pressed. Before adding a card, badge, icon or
 animation to either, read the note at the top of that file.
 
+A verse quotation keeps its line ends as `\n` in `text`. For a new play, poem
+or poetry collection, `node scripts/restore-lineation.js --write <slug>` copies
+them from the record's source text (run it without `--write` to see the result
+first, and with `--why` to see why a long line was left alone).
+
 `scripts/book-data.js` is the schema; `check-site.js` and the test suite both
 run it. Every quotation must carry a `reference` and a `source` naming the
 public-domain text it was checked against, or the build fails.
