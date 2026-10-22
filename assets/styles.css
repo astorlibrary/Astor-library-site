@@ -2183,3 +2183,33 @@ main .related-subjects a:hover { background: none; color: var(--text, var(--ink)
   main .book-passage-grid blockquote { margin-top: 8px; font-size: 25px; }
   main .book-passage-grid > a { padding: 16px 0; }
 }
+
+/* The book pages' own sections (the shape of the work, critical reading,
+   context, characters, study questions, stage history) as typeset entries
+   rather than boxed cards: no borders, fills or fixed heights; a label at a
+   readable size, a plain heading, the text at reading size. */
+main :is(.astor-movement-grid, .astor-context-grid, .astor-question-grid, .astor-character-grid) { gap: 8px 44px; border: 0; }
+main :is(.astor-movement-grid, .astor-context-grid, .astor-question-grid, .astor-character-grid) article {
+  min-height: 0; padding: 18px 0; border: 0; border-top: 1px solid var(--line); background: none; box-shadow: none;
+}
+main :is(.astor-movement-grid, .astor-context-grid, .astor-question-grid) span {
+  color: var(--text-muted, var(--muted)); font: 600 13px/1.4 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; letter-spacing: .06em;
+}
+main :is(.astor-movement-grid, .astor-context-grid, .astor-question-grid, .astor-character-grid) h3 { margin: 6px 0 8px; font-size: 24px; line-height: 1.2; }
+main :is(.astor-movement-grid, .astor-context-grid, .astor-question-grid, .astor-character-grid) p { font-size: 16px; line-height: 1.6; }
+main .astor-movement-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+main .astor-character-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+main .astor-reading-grid { gap: 8px 44px; }
+main .prod-card, main .prod-card.prose-card { padding: 18px 0; border: 0; border-top: 1px solid var(--line); background: none; box-shadow: none; }
+main .prod-card h3 { font-size: 26px; font-weight: 400; line-height: 1.2; letter-spacing: -.01em; }
+main .prod-card .year { margin-bottom: 4px; color: var(--text-muted, var(--muted)); font-size: 13px; font-weight: 600; letter-spacing: .06em; }
+main .prod-card p, main .prod-card li { font-size: 16px; }
+@media (max-width: 620px) {
+  main :is(.astor-movement-grid, .astor-context-grid, .astor-question-grid, .astor-character-grid, .astor-reading-grid) { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  main :is(.astor-movement-grid, .astor-context-grid, .astor-question-grid) article { padding: 16px 0; }
+  main .prod-card h3 { font-size: 23px; }
+}
+main .record-list { gap: 0 44px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+main .record-list li { padding: 16px 0; border: 0; border-top: 1px solid var(--line); background: none; font-size: 16px; line-height: 1.6; color: var(--text-soft, #423b36); }
+main .record-list b { margin-bottom: 4px; font-size: 22px; font-weight: 400; color: var(--text, var(--ink)); }
+@media (max-width: 620px) { main .record-list { grid-template-columns: minmax(0, 1fr) !important; } }
