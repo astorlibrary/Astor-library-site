@@ -1806,3 +1806,32 @@
    wherever a quotation is set from the data as a block, they show. */
 .astor-quote-card blockquote p, .astor-game-quote p, .astor-qx-card blockquote p,
 #astor-commonplace blockquote p, .astor-sheet q { white-space: pre-line; }
+
+/* My library, late October 2026: a page of records, not a dashboard. The
+   figures sit as a quiet list under hairlines, empty sections say so in a
+   line of italic, section headings are set at a reading size, and the data
+   controls are text buttons. */
+main:has(#astor-dash) .section-title h2 { font-size: clamp(30px, 3.4vw, 40px); font-weight: 400; line-height: 1.1; letter-spacing: -.02em; }
+main:has(#astor-dash) .section-title { margin-top: 56px; }
+.astor-dash-grid { gap: 0 40px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin: 28px 0 24px; }
+.astor-dash-tile { padding: 14px 0 16px; border: 0; border-top: 1px solid var(--astor-line); background: none; }
+.astor-dash-tile b { margin-bottom: 4px; color: var(--text-muted, #5a514c); font-size: 13px; font-weight: 600; letter-spacing: .06em; }
+.astor-dash-tile strong { font-size: 34px; }
+.astor-dash-tile small { margin-top: 4px; font-size: 14px; }
+main:has(#astor-dash) .astor-empty { padding: 0; border: 0; font: italic 17px/1.6 Georgia, 'Times New Roman', serif; color: var(--text-muted, #5a514c); }
+main:has(#astor-dash) .astor-shelf a { border: 0; border-top: 1px solid var(--astor-line); background: none; }
+#astor-data-controls { gap: 8px 26px; }
+#astor-data-controls .button, main:has(#astor-dash) #astor-commonplace .button {
+  min-height: 0; padding: 6px 0; border: 0; background: none; color: var(--wine-text, var(--burgundy));
+  font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none;
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px;
+}
+main:has(#astor-dash) .astor-shelf a { padding: 12px 0; }
+main:has(#astor-dash) .astor-commonplace { gap: 0; }
+main:has(#astor-dash) .astor-commonplace article { padding: 20px 0; border: 0; border-top: 1px solid var(--astor-line); background: none; }
+main:has(#astor-dash) .astor-commonplace blockquote { padding-left: 16px; border-left: 2px solid var(--wine-text, var(--burgundy)); font-size: 21px; }
+main:has(#astor-dash) .astor-commonplace footer { margin-left: 18px; font-size: 14px; letter-spacing: 0; text-transform: none; color: var(--text-muted, #5a514c); }
+main:has(#astor-dash) .astor-commonplace footer a { color: inherit; }
+main:has(#astor-dash) .astor-commonplace textarea { font-size: 16px; border-color: var(--astor-line); }
+main:has(#astor-dash) .astor-save-quote { min-height: 0; margin-top: 4px; padding: 6px 0; border: 0; background: none; color: var(--text-muted, #5a514c); font: 500 14px var(--astor-sans); text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+main:has(#astor-dash) .astor-commonplace article > :last-child:not(textarea) { border-top: 0; }
