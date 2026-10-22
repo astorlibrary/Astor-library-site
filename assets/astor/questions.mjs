@@ -76,6 +76,7 @@ export function nameTokens(name) {
 // in the other: "Scrooge" in "Ebenezer Scrooge", "King Richard III" in
 // "Richard, Duke of Gloucester". Two Bennets who differ by a forename are not.
 export function sameName(a, b) {
+  if (String(a).trim().toLowerCase() === String(b).trim().toLowerCase()) return true;
   const left = nameTokens(a);
   const right = nameTokens(b);
   if (!left.size || !right.size) return false;
@@ -88,18 +89,33 @@ export function sameName(a, b) {
 // name ("Scrooge" beside "Ebenezer Scrooge", "Gloucester" beside "King Richard
 // III"), nobody the line itself involves (the Weird Sisters beside the Third
 // Witch), and no two names for one person among the wrong answers either.
+// A cast member can also be named in a speaker line by another name, listed
+// in its `aliases`: "Marley's Ghost" for Jacob Marley, "The Witches" for the
+// Weird Sisters, "Jack" for John Worthing.
+export function castMember(book, name) {
+  const wanted = String(name).trim().toLowerCase();
+  return book.characters.find(character => [character.name, ...(character.aliases || [])]
+    .some(other => String(other).trim().toLowerCase() === wanted)) || null;
+}
+
 function otherSpeakers(book, quotation) {
   const byId = new Map(book.characters.map(character => [character.id, character]));
   const involved = (quotation.characters || []).map(id => byId.get(id)?.name).filter(Boolean);
   const speakers = [...new Set(book.quotations.map(entry => entry.speaker).filter(Boolean))];
   const candidates = [
     ...book.characters.map(character => character.name),
-    ...speakers.filter(speaker => !book.characters.some(character => sameName(character.name, speaker)))
+    ...speakers.filter(speaker => !castMember(book, speaker) && !book.characters.some(character => sameName(character.name, speaker)))
   ];
   // Two names that are both in the cast list are two people, however alike:
-  // Macbeth and Lady Macbeth are the pair most worth telling apart.
+  // Macbeth and Lady Macbeth are the pair most worth telling apart. A name
+  // the cast list knows, by name or alias, is that person and no other.
   const cast = new Set(book.characters.map(character => character.name));
-  const alike = (a, b) => !(cast.has(a) && cast.has(b)) && sameName(a, b);
+  const alike = (a, b) => {
+    const left = castMember(book, a);
+    const right = castMember(book, b);
+    if (left && right) return left === right;
+    return !(cast.has(a) && cast.has(b)) && sameName(a, b);
+  };
   const chosen = [];
   for (const name of candidates) {
     if (alike(name, quotation.speaker)) continue;
@@ -108,6 +124,16 @@ function otherSpeakers(book, quotation) {
     chosen.push(name);
   }
   return chosen;
+}
+
+// A name set inside a sentence: "the Witches", not "The Witches"; and a
+// role rather than a name takes "the": "the Third Apparition", "the Nurse".
+const ROLE_WORDS = /^(?:(?:first|second|third|fourth|fifth)\s+\S+|doctor|soothsayer|chorus|prologue|epilogue|duke|duchess|countess|king|queen|prince|princess|hostess|abbess|captain|boatswain|shepherd|porter|nurse|ghost|clown|fool|messenger|servant|officer|senator|citizen|watchman|gaoler|musician|archbishop|bishop|cardinal|friar)$/i;
+export function inSentence(name) {
+  const text = String(name).trim();
+  if (/^The (?=\S)/.test(text)) return text.replace(/^The /, 'the ');
+  if (ROLE_WORDS.test(text)) return 'the ' + text;
+  return text;
 }
 
 export function whoSaidIt(book, random = Math.random) {
@@ -156,7 +182,7 @@ export function clozeWords(text, declared, random = Math.random) {
   if (declared && declared.length) return declared.slice(0, 3);
   const words = text.split(/\s+/);
   const candidates = words
-    .map((word, index) => ({ index, clean: word.replace(/[^\p{L}'’-]/gu, '') }))
+    .map((word, index) => ({ index, clean: word.replace(/[^\p{L}'’-]/gu, '').replace(/['’]+$/, '') }))
     .filter(entry => entry.clean.length > 3 && !STOP_WORDS.has(entry.clean.toLowerCase()));
   if (!candidates.length) return [];
   const count = Math.min(candidates.length, text.split(/\s+/).length > 14 ? 3 : 2);
@@ -165,9 +191,30 @@ export function clozeWords(text, declared, random = Math.random) {
     .map(entry => entry.clean);
 }
 
+const LETTER_OR_DIGIT = /[\p{L}\p{N}]/u;
+const LETTER = /\p{L}/u;
+
+// Where `word` first stands in `text` as a whole word, or -1: "woo" must not
+// blank the start of "woo'd", nor "self" the end of "myself", but a possessive
+// is fine ("The game's afoot"). The characters before a match are checked by
+// hand rather than with a lookbehind, which Safari lacks before 16.4: there the
+// pattern threw and took the whole Revise page down with it.
+export function wholeWordAt(text, word) {
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = new RegExp(escaped + '(?![\\p{L}\\p{N}])(?![\'’](?!s(?!\\p{L}))\\p{L})', 'giu');
+  for (let found = pattern.exec(text); found; found = pattern.exec(text)) {
+    const before = Array.from(text.slice(Math.max(0, found.index - 4), found.index)).slice(-2);
+    const last = before[before.length - 1] || '';
+    const previous = before.length > 1 ? before[0] : '';
+    if (!LETTER_OR_DIGIT.test(last) && !(/['’]/.test(last) && LETTER.test(previous))) return found.index;
+    pattern.lastIndex = found.index + 1;
+  }
+  return -1;
+}
+
 export function fillTheLine(book, random = Math.random) {
   const vocabulary = [...new Set(book.quotations.flatMap(quotation =>
-    quotation.text.split(/\s+/).map(word => word.replace(/[^\p{L}'’-]/gu, ''))
+    quotation.text.split(/\s+/).map(word => word.replace(/[^\p{L}'’-]/gu, '').replace(/['’]+$/, ''))
   ).filter(word => word.length > 3 && !STOP_WORDS.has(word.toLowerCase())))];
 
   return book.quotations.map(quotation => {
@@ -180,12 +227,8 @@ export function fillTheLine(book, random = Math.random) {
     // word, but only one of them puts the line back together.
     const answers = [];
     for (const word of hidden) {
-      // A whole word only: "woo" must not blank the start of "woo'd", nor
-      // "self" the end of "myself". A possessive is fine: "The game's afoot".
-      const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const match = new RegExp('(?<![\\p{L}\\p{N}])(?<!\\p{L}[\'’])' + escaped + '(?![\\p{L}\\p{N}])(?![\'’](?!s(?!\\p{L}))\\p{L})', 'iu').exec(remaining);
-      if (!match) return null;
-      const at = match.index;
+      const at = wholeWordAt(remaining, word);
+      if (at === -1) return null;
       segments.push(remaining.slice(0, at));
       answers.push(remaining.slice(at, at + word.length));
       remaining = remaining.slice(at + word.length);
@@ -195,7 +238,7 @@ export function fillTheLine(book, random = Math.random) {
     return {
       kind: 'cloze',
       id: 'cloze:' + book.slug + ':' + quotation.id,
-      stem: quotation.speaker ? 'Complete the line spoken by ' + quotation.speaker + '.' : 'Complete the line.',
+      stem: quotation.speaker ? 'Complete the line spoken by ' + inSentence(quotation.speaker) + '.' : 'Complete the line.',
       segments,
       answer: answers,
       bank: shuffle([...answers, ...decoys], random),
@@ -383,7 +426,10 @@ export function mixedRound(book, random = Math.random) {
   const questions = [];
   for (const [id, builder] of Object.entries(GAME_BUILDERS)) {
     if (builder.scope !== 'book' || id === 'mixed-round') continue;
-    questions.push(...sample(builder.build(book, random), 3, random));
+    // One builder that throws costs its own questions, not the round.
+    let built;
+    try { built = builder.build(book, random); } catch { continue; }
+    questions.push(...sample(built, 3, random));
   }
   return questions;
 }
@@ -442,7 +488,8 @@ export function dailyRound(index, day) {
   const round = [];
   const used = new Set();
   for (const step of plan) {
-    const options = step().filter(question => question && !used.has(question.id));
+    let options;
+    try { options = step().filter(question => question && !used.has(question.id)); } catch { continue; }
     if (!options.length) continue;
     const chosen = pick(options, random);
     used.add(chosen.id);
@@ -451,10 +498,11 @@ export function dailyRound(index, day) {
   // A short day is better than a repeated question, but the puzzle should still
   // be five long wherever the data allows it.
   if (round.length < 5) {
+    const safely = build => { try { return build(); } catch { return []; } };
     const spare = shuffle([
-      ...characterIdentification(dayBook, random),
-      ...techniqueSpotter(dayBook, random),
-      ...openingLines(books, random)
+      ...safely(() => characterIdentification(dayBook, random)),
+      ...safely(() => techniqueSpotter(dayBook, random)),
+      ...safely(() => openingLines(books, random))
     ], random).filter(question => question && !used.has(question.id));
     while (round.length < 5 && spare.length) {
       const next = spare.shift();

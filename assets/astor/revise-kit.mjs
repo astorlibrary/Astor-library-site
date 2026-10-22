@@ -6,7 +6,7 @@
 // /assets/revise-index.json for the chooser and then fetch only the chosen
 // book's record. The whole-library study index is left to the explorers.
 
-import { el, clear, shuffle, seededRandom, prefersReducedMotion, fetchJson } from './util.mjs';
+import { el, clear, shuffle, seededRandom, prefersReducedMotion, fetchJson, describeError, guideHref } from './util.mjs';
 import { loadBook, cardId } from './data.mjs';
 import { snapshot, today, recentlyViewed } from './store.mjs';
 import { GAME_BUILDERS } from './questions.mjs';
@@ -107,6 +107,7 @@ export function editionMode(edition) {
 }
 
 let currentMeta = null;
+let themeWatch = null;
 
 export function applyEdition(meta) {
   if (typeof document === 'undefined') return;
@@ -125,7 +126,9 @@ export function applyEdition(meta) {
   else html.style.removeProperty('--ed-motifs');
   html.style.setProperty('--ed-motif-n', String(Math.max(2, motifs)));
   if (motifs) html.dataset.edArt = String(motifs); else delete html.dataset.edArt;
+  watchSiteTheme();
   const mode = editionMode(edition);
+  matchSiteTheme(mode);
   const palette = edition[mode] || edition.light;
   for (const [key, token] of Object.entries(TOKENS)) if (palette[key]) html.style.setProperty(token, palette[key]);
   html.dataset.edition = meta.slug;
@@ -175,7 +178,7 @@ export function burst(node, count = 7) {
 // The cover band: the head of the page set in the cover's ground with its
 // drawings, running down behind the study bar until it meets the first page
 // of the activity, which sits on it like a book on its jacket.
-const BAND_ENDS = '.rx-card, .rx-results, .rx-flip, .rx-forge-panel, .rv-tool-panel, .rx-defend-case, .rx-hub-start, [data-band-end]';
+const BAND_ENDS = '.rx-card, .rx-results, .rx-flip, .rx-essay-main, .rx-debate-step, .rx-reading-tabs + *, .rv-tool-panel, [data-band-end]';
 let bandNode = null;
 let bandWatch = null;
 
@@ -205,6 +208,38 @@ export function coverBand(main = document.querySelector('main')) {
     bandWatch.observe(main);
     new MutationObserver(later).observe(main, { childList: true, subtree: true });
   }
+}
+
+// The site's own light/dark switch, in the header, dresses the book to match,
+// so a reader can change the colours from any Revise page. The choice is kept
+// the same way as the hub's button keeps it.
+function watchSiteTheme() {
+  if (themeWatch || typeof MutationObserver === 'undefined') return;
+  const html = document.documentElement;
+  themeWatch = new MutationObserver(records => {
+    const theme = html.getAttribute('data-theme');
+    const edition = currentMeta?.edition;
+    if (!edition || (theme !== 'light' && theme !== 'dark') || records.every(record => record.oldValue === theme)) return;
+    try {
+      if (theme === edition.mode) window.localStorage.removeItem(MODE_KEY);
+      else window.localStorage.setItem(MODE_KEY, theme);
+    } catch { /* storage is optional */ }
+    applyEdition(currentMeta);
+  });
+  themeWatch.observe(html, { attributes: true, attributeFilter: ['data-theme'], attributeOldValue: true });
+}
+
+// The header and footer take the book's mode too, so the page is one colour
+// and the header's switch shows what the reader sees. This is not saved as
+// the site's choice, and the watcher above is told it was not the reader.
+function matchSiteTheme(mode) {
+  const html = document.documentElement;
+  const theme = html.getAttribute('data-theme');
+  if (!theme || theme === mode) return;
+  html.setAttribute('data-theme', mode);
+  html.style.colorScheme = mode;
+  for (const toggle of document.querySelectorAll('[data-theme-toggle]')) toggle.setAttribute('aria-pressed', String(mode === 'dark'));
+  themeWatch?.takeRecords();
 }
 
 // One button: it switches to the other palette. Switching back to the
@@ -362,7 +397,7 @@ const LINE_KINDS = ['who-said-it', 'fill-the-line', 'theme-match', 'technique-sp
 export function sessionPlan(book, { cards = snapshot().cards || {}, day = today(), random = Math.random, length = 10 } = {}) {
   const byLine = new Map();
   for (const kind of LINE_KINDS) {
-    for (const question of GAME_BUILDERS[kind].build(book, random)) {
+    for (const question of buildSafely(kind, book, random)) {
       const key = quotationKey(question);
       if (!key) continue;
       if (!byLine.has(key.id)) byLine.set(key.id, {});
@@ -383,8 +418,8 @@ export function sessionPlan(book, { cards = snapshot().cards || {}, day = today(
   known.sort((a, b) => a.card.box - b.card.box);
 
   const extras = [];
-  const people = shuffle(GAME_BUILDERS['character-identification'].build(book, random), random)[0];
-  const plot = shuffle(GAME_BUILDERS['order-the-plot'].build(book, random), random)[0];
+  const people = shuffle(buildSafely('character-identification', book, random), random)[0];
+  const plot = shuffle(buildSafely('order-the-plot', book, random), random)[0];
   if (people) extras.push(people);
   if (plot) extras.push(plot);
 
@@ -430,10 +465,26 @@ export function sessionLine(counts) {
 
 // --- what to do next ---------------------------------------------------------
 
+// Builders that threw, so a page can say an activity could not be prepared
+// rather than leave it silently missing.
+export const buildFailures = [];
+
+// One activity's questions, or none if its builder throws (an older browser
+// missing a feature, a record in an unexpected shape): one activity failing
+// must never take the others, or the page, down with it.
+export function buildSafely(kind, book, random) {
+  try { return GAME_BUILDERS[kind].build(book, random); } catch (error) {
+    if (!buildFailures.some(item => item.quiz === kind && item.book === book.slug)) {
+      const quiz = QUIZZES.find(entry => entry.id === kind);
+      buildFailures.push({ quiz: kind, name: quiz ? quiz.name : kind, book: book.slug, error });
+      console.error('Astor Library: could not prepare ' + kind + ' for ' + book.slug + '.', error);
+    }
+    return [];
+  }
+}
+
 export function availableQuizzes(book) {
-  return QUIZZES.filter(quiz => {
-    try { return GAME_BUILDERS[quiz.id].build(book, seededRandom(1)).length >= 4; } catch { return false; }
-  });
+  return QUIZZES.filter(quiz => buildSafely(quiz.id, book, seededRandom(1)).length >= 4);
 }
 
 // One suggestion, chosen by a fixed rule: a kind of quiz not yet tried on this
@@ -555,7 +606,15 @@ export function preferredSlug() {
 // <dialog> keeps focus inside while it is open and Escape closes it.
 export function openShelf({ books, current, recentSlugs = [], onChoose, heading = 'Choose a book' }) {
   const dialog = el('dialog', { class: 'rx-shelf', 'aria-labelledby': 'rx-shelf-title' });
-  const close = () => dialog.close();
+  // Safari before 15.4 has no <dialog>: there the shelf is an ordinary fixed
+  // panel, closed by hand.
+  const native = typeof dialog.showModal === 'function';
+  const close = () => {
+    if (native) { dialog.close(); return; }
+    if (!dialog.isConnected) return;
+    dialog.removeAttribute('open');
+    dialog.dispatchEvent(new Event('close'));
+  };
   const choose = book => {
     close();
     if (!current || book.slug !== current.slug) onChoose(book);
@@ -640,7 +699,14 @@ export function openShelf({ books, current, recentSlugs = [], onChoose, heading 
   draw();
   document.body.append(dialog);
   document.documentElement.classList.add('rx-locked');
-  if (dialog.showModal) dialog.showModal(); else dialog.setAttribute('open', '');
+  if (native) dialog.showModal();
+  else {
+    dialog.setAttribute('open', '');
+    dialog.classList.add('is-fallback');
+    const onEscape = event => { if (event.key === 'Escape') close(); };
+    document.addEventListener('keydown', onEscape);
+    dialog.addEventListener('close', () => document.removeEventListener('keydown', onEscape));
+  }
   // On a phone the keyboard would cover the covers, so focus waits for a tap.
   if (window.matchMedia?.('(min-width: 720px)').matches) search.focus();
   return dialog;
@@ -666,59 +732,78 @@ export function keepAddress(slug) {
 // The study bar at the top of every one-book Revise tool: the cover, the title
 // and author, "Change book", and every activity this book supports, so moving
 // from a quiz to the flashcards for the same book is one tap.
-export function studyBar(head, { books, meta, icons, active, onChoose, allBooks }) {
+// The bar at the head of every one-book activity: the book (its cover, its
+// name, a way to change it) and one menu of its activities, the same at every
+// width. The menu names the current activity, so it is also the page's title.
+export function studyBar(head, { books, meta, icons, active, onChoose }) {
   if (!head) return;
   clear(head);
   head.classList.add('rx-bar-mount');
-  const cover = el('a', { class: 'rx-bar-cover', href: '/play/?book=' + encodeURIComponent(meta.slug), 'aria-label': 'Revision home for ' + meta.title }, [
+  const home = '/play/?book=' + encodeURIComponent(meta.slug);
+  const cover = el('a', { class: 'rx-bar-cover', href: home, 'aria-label': 'Revision home for ' + meta.title }, [
     coverImage(meta, { width: 56, eager: true })
   ]);
   const identity = el('div', { class: 'rx-bar-id' }, [
-    el('span', { class: 'rx-bar-kicker', text: 'Revising' }),
-    el('a', { class: 'rx-bar-title', href: '/play/?book=' + encodeURIComponent(meta.slug), title: meta.title, text: shortTitle(meta) }),
+    el('a', { class: 'rx-bar-title', href: home, title: meta.title, text: shortTitle(meta) }),
     el('span', { class: 'rx-bar-author', text: meta.author })
   ]);
-  const bar = el('div', { class: 'rx-bar' }, [cover, identity, el('div', { class: 'rx-bar-tools' }, [modeToggle(), changeBookButton({ books, current: meta, onChoose })])]);
-
-  const acts = el('nav', { class: 'rx-acts', 'aria-label': 'Activities for ' + meta.title });
-  const list = el('ul', {});
-  for (const activity of ACTIVITIES) {
-    if (!hasActivity(meta, activity.id)) continue;
-    const here = activity.id === active;
-    list.append(el('li', {}, [el('a', {
-      class: 'rx-act' + (here ? ' is-here' : ''), href: activityHref(activity.id, meta.slug),
-      'aria-current': here ? 'page' : null
-    }, [activityIcon(icons, activity.id, 18), el('span', { text: activity.short })])]));
-  }
-  acts.append(list);
-  // When the row is wider than the screen, arrows at either end say there is
-  // more to see and scroll it; the row can still be swiped.
-  const nudge = direction => acts.scrollBy({ left: direction * acts.clientWidth * 0.7, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
-  const back = el('button', { type: 'button', class: 'rx-acts-arrow is-back', 'aria-label': 'Earlier activities', tabindex: '-1', html: '&lsaquo;', onclick: () => nudge(-1) });
-  const more = el('button', { type: 'button', class: 'rx-acts-arrow is-more', 'aria-label': 'More activities', tabindex: '-1', html: '&rsaquo;', onclick: () => nudge(1) });
-  const row = el('div', { class: 'rx-acts-row' }, [back, acts, more]);
-  const edges = () => {
-    const overflow = acts.scrollWidth > acts.clientWidth + 2;
-    row.classList.toggle('has-back', overflow && acts.scrollLeft > 4);
-    row.classList.toggle('has-more', overflow && acts.scrollLeft + acts.clientWidth < acts.scrollWidth - 4);
-  };
-  acts.addEventListener('scroll', edges, { passive: true });
-  if (head.rxEdges) window.removeEventListener('resize', head.rxEdges);
-  head.rxEdges = edges;
-  window.addEventListener('resize', edges);
-  head.append(bar, row);
+  const bar = el('div', { class: 'rx-bar' }, [cover, identity, el('div', { class: 'rx-bar-tools' }, [changeBookButton({ books, current: meta, onChoose })])]);
+  head.append(bar, activityMenu({ meta, icons, active }));
   if (meta.edition) coverBand(head.closest('main') || undefined);
-  // Keep the current activity in view on a narrow screen, without moving the page.
-  requestAnimationFrame(() => {
-    const here = acts.querySelector('.is-here');
-    if (here) acts.scrollLeft = Math.max(0, here.offsetLeft - (acts.clientWidth - here.offsetWidth) / 2);
-    edges();
-  });
 }
 
-// The site header stays at the top of the screen as the page scrolls, so
-// anything the Revise pages scroll to is kept clear of it (scroll-margin-top
-// in astor-study.css reads --rx-header).
+// The activities as one control: the current one's name, lettered on the
+// cover, opening to every activity the book has, in the Revise home's three
+// groups, with the way to the study guide underneath.
+export const ACTIVITY_GROUPS = [
+  { title: 'Practise', ids: ['mixed-round', 'who-said-it', 'fill-the-line', 'theme-match', 'technique-spotter', 'character-identification', 'order-the-plot'] },
+  { title: 'Learn', ids: ['flashcards'] },
+  { title: 'Write', ids: ['essay-forge', 'defend-the-reading'] }
+];
+
+function activityMenu({ meta, icons, active }) {
+  const current = ACTIVITIES.find(activity => activity.id === active);
+  const menu = el('details', { class: 'rx-acts-menu' });
+  menu.append(el('summary', { 'aria-label': (current ? current.name + '. ' : '') + 'Change activity' }, [
+    current ? activityIcon(icons, current.id, 18) : null,
+    el('span', { class: 'rx-acts-menu-name', text: current ? current.name : 'Activities' }),
+    el('span', { class: 'rx-acts-menu-chevron', 'aria-hidden': 'true' })
+  ]));
+  const panel = el('nav', { class: 'rx-acts-panel', 'aria-label': 'Activities for ' + meta.title });
+  for (const group of ACTIVITY_GROUPS) {
+    const ids = group.ids.filter(id => hasActivity(meta, id));
+    if (!ids.length) continue;
+    panel.append(el('p', { class: 'rx-acts-group', text: group.title }), el('ul', { class: 'rx-acts-grid' }, ids.map(id => {
+      const activity = ACTIVITIES.find(entry => entry.id === id);
+      const here = id === active;
+      return el('li', {}, [el('a', {
+        class: 'rx-acts-tile' + (here ? ' is-here' : ''), href: activityHref(id, meta.slug), 'aria-current': here ? 'page' : null
+      }, [activityIcon(icons, id, 18), el('span', { text: activity.name })])]);
+    })));
+  }
+  // The book's other two places: its edition and its study guide.
+  panel.append(el('p', { class: 'rx-acts-foot' }, [
+    el('a', { href: meta.href, text: 'The edition' }),
+    el('a', { href: guideHref(meta.slug), text: 'Study guide' }),
+    el('a', { href: '/play/?book=' + encodeURIComponent(meta.slug), text: 'All of ' + shortTitle(meta) + ' on Revise' })
+  ]));
+  menu.append(panel);
+  // Close when the reader taps elsewhere or presses Escape.
+  const close = event => {
+    if (!menu.open) return;
+    if (event.type === 'keydown' ? event.key === 'Escape' : !menu.contains(event.target)) {
+      menu.open = false;
+      if (event.type === 'keydown') menu.querySelector('summary').focus();
+    }
+  };
+  if (menuCloser) { document.removeEventListener('click', menuCloser); document.removeEventListener('keydown', menuCloser); }
+  menuCloser = close;
+  document.addEventListener('click', close);
+  document.addEventListener('keydown', close);
+  return menu;
+}
+let menuCloser = null;
+
 export function headerOffset() {
   const header = document.querySelector('.site-header');
   if (!header) return 0;
@@ -739,12 +824,14 @@ export function bookHead(head, books, meta, onChoose, options = {}) {
   studyBar(head, { books, meta, onChoose, icons: options.icons, active: options.active });
 }
 
-// When the books cannot be fetched: say so, and offer to try again (the
-// cause is in the console, from fetchJson).
-export function loadFailed(mount, message = 'The books didn’t load.') {
+// When the books cannot be fetched: say so, say why in a line the reader can
+// pass on, and offer to try again.
+export function loadFailed(mount, message = 'The books didn’t load.', error = null, hint = 'Check your connection, then try again.') {
   clear(mount);
+  const why = describeError(error);
   mount.append(el('div', { class: 'rv-empty rx-load-failed' }, [
-    el('p', { text: message + ' Check your connection, then try again.' }),
+    el('p', { text: message + ' ' + hint }),
+    why ? el('p', { class: 'rx-load-why', text: 'Reason: ' + why }) : null,
     el('button', { type: 'button', class: 'rx-button is-primary', text: 'Try again', onclick: () => window.location.reload() })
   ]));
 }
@@ -754,8 +841,8 @@ export function loadFailed(mount, message = 'The books didn’t load.') {
 // overwrites a quicker, later choice.
 export async function openBookPage({ head, mount, filter, render, active }) {
   let shelf;
-  try { shelf = await loadShelf(); } catch {
-    loadFailed(mount);
+  try { shelf = await loadShelf(); } catch (error) {
+    loadFailed(mount, undefined, error);
     return;
   }
   const books = filter ? shelf.books.filter(filter) : shelf.books;
@@ -779,16 +866,18 @@ export async function openBookPage({ head, mount, filter, render, active }) {
     clear(mount);
     mount.append(el('p', { class: 'rv-loading', text: 'Opening ' + meta.title + '…' }));
     let book;
-    try { book = await loadBook(meta.slug); } catch {
+    try { book = await loadBook(meta.slug); } catch (error) {
       if (ticket !== generation) return;
-      clear(mount);
-      mount.append(el('p', { class: 'rv-empty', text: 'That book didn’t load. Try another, or reload the page.' }));
+      loadFailed(mount, 'That book didn’t load.', error);
       return;
     }
     if (ticket !== generation) return;
     // A record must belong to the book that was asked for.
     if (book.slug !== meta.slug) return;
-    render(book, meta, shelf);
+    try { render(book, meta, shelf); } catch (error) {
+      console.error('Astor Library: could not open ' + meta.slug + '.', error);
+      loadFailed(mount, 'This didn’t open for ' + meta.title + '.', error, 'Try again, or choose another book.');
+    }
   };
   await open(first);
 }

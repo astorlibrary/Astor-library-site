@@ -2018,6 +2018,9 @@
 @media (max-width: 620px) {
   .page-contents a { border: 1px solid var(--line); border-radius: 0; }
   .page-contents a:hover, .page-contents a:focus-visible { border-color: var(--wine-text,var(--burgundy)); }
+  /* the bar runs to the screen's edges, so its label and links keep the page's margin */
+  .page-contents strong { display: block; padding-inline: 15px; }
+  .page-contents div { padding-inline: 15px; scroll-padding-inline: 15px; }
 }
 
 /* Grids of cards: the covers and the titles are enough. The boxes around

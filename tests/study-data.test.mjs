@@ -7,7 +7,7 @@ import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const { loadBooks, validateBook, validateAll } = require('../scripts/book-data.js');
 const { missingCanonicalNames, loadVocabulary } = require('../scripts/rebuild-vocabulary.js');
-const { renderToolkit } = require('../scripts/study-toolkit.js');
+const { renderGuideMain, sectionsFor } = require('../scripts/guide-pages.js');
 
 const root = process.cwd();
 const books = loadBooks();
@@ -139,20 +139,24 @@ test('the vocabulary only names identifiers the data actually uses', () => {
   }
 });
 
-test('the study toolkit renders one unique id per section', () => {
+test('every study-guide page has unique ids and keeps the toolkit addresses old links use', () => {
   for (const book of books) {
-    const html = renderToolkit(book, { titleFor: () => null });
-    const ids = [...html.matchAll(/\sid="([^"]+)"/g)].map(match => match[1]);
-    assert.equal(new Set(ids).size, ids.length, book.slug + ' repeats an id in its toolkit');
-    assert.ok(html.includes('id="astor-quotations"'), book.slug + ' has no quotations panel');
-    assert.ok(html.includes('data-astor-book="' + book.slug + '"'));
+    for (const section of ['', ...sectionsFor(book).map(entry => entry.id)]) {
+      const html = renderGuideMain(book, section, { titleFor: () => null });
+      const ids = [...html.matchAll(/\sid="([^"]+)"/g)].map(match => match[1]);
+      assert.equal(new Set(ids).size, ids.length, book.slug + ' ' + (section || 'overview') + ' repeats an id');
+      assert.ok(html.includes('data-astor-book="' + book.slug + '"'));
+    }
+    const quotations = renderGuideMain(book, 'quotations', { titleFor: () => null });
+    assert.ok(quotations.includes('id="astor-quotations"'), book.slug + ' has no quotations section');
+    for (const quotation of book.quotations) assert.ok(quotations.includes('id="astor-quote-' + quotation.id + '"'), book.slug + ' has lost the address of ' + quotation.id);
   }
 });
 
-test('the study toolkit escapes the text it is given', () => {
+test('a study-guide page escapes the text it is given', () => {
   const book = JSON.parse(JSON.stringify(books[0]));
   book.title = 'Trouble <script>alert(1)</script>';
-  const html = renderToolkit(book, { titleFor: () => null });
+  const html = renderGuideMain(book, '', { titleFor: () => null });
   assert.ok(!html.includes('<script>alert(1)</script>'));
   assert.ok(html.includes('&lt;script&gt;'));
 });

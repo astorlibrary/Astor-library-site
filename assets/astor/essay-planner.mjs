@@ -41,12 +41,12 @@ const ANALYSIS_PROMPTS = [
   'A contemporary audience would have …'
 ];
 
-if (mount) {
-  openBookPage({ head, mount, active: 'essay-forge', filter: book => book.essays > 0, render: book => render(book) });
-}
 
 function readPlans() {
-  try { return JSON.parse(window.localStorage.getItem(STORE) || '{}') || {}; } catch { return {}; }
+  try {
+    const plans = JSON.parse(window.localStorage.getItem(STORE) || '{}');
+    return plans && typeof plans === 'object' && !Array.isArray(plans) ? plans : {};
+  } catch { return {}; }
 }
 function writePlans(plans) {
   try { window.localStorage.setItem(STORE, JSON.stringify(plans)); return true; } catch { return false; }
@@ -60,6 +60,22 @@ function blankPlan() {
 }
 function blankParagraph() {
   return { point: '', quotationId: '', analysis: '' };
+}
+// A saved plan in the shape the planner draws, whatever the stored copy holds.
+function tidyPlan(saved) {
+  if (!saved || typeof saved !== 'object') return blankPlan();
+  const text = value => (typeof value === 'string' ? value : '');
+  const paragraphs = Array.isArray(saved.paragraphs) && saved.paragraphs.length
+    ? saved.paragraphs.map(paragraph => ({ ...(paragraph && typeof paragraph === 'object' ? paragraph : {}), point: text(paragraph?.point), quotationId: text(paragraph?.quotationId), analysis: text(paragraph?.analysis) }))
+    : blankPlan().paragraphs;
+  return {
+    ...saved,
+    thesis: text(saved.thesis),
+    conclusion: text(saved.conclusion),
+    paragraphs,
+    step: STEPS.some(step => step.id === saved.step) ? saved.step : 'question',
+    updated: Number(saved.updated) || 0
+  };
 }
 
 // The quotations that fit a question best: those carrying a theme, technique
@@ -103,7 +119,7 @@ function render(book) {
   const plans = readPlans();
   const mine = plans[book.slug] || { question: 0, byQuestion: {} };
   let questionIndex = Math.min(mine.question || 0, book.essayQuestions.length - 1);
-  let plan = mine.byQuestion?.[questionIndex] || blankPlan();
+  let plan = tidyPlan(mine.byQuestion?.[questionIndex]);
   let picking = -1;   // which paragraph's evidence picker is open
   let saved = true;
 
@@ -210,7 +226,7 @@ function render(book) {
           if (index !== questionIndex) {
             save();
             questionIndex = index;
-            plan = readPlans()[book.slug]?.byQuestion?.[index] || blankPlan();
+            plan = tidyPlan(readPlans()[book.slug]?.byQuestion?.[index]);
           }
           go(words(plan.thesis) ? (plan.step === 'question' ? 'argument' : plan.step) : 'argument');
         }
@@ -234,7 +250,7 @@ function render(book) {
       el('p', { class: 'rx-essay-lede', text: 'Answer the question in one or two sentences. A good argument takes a position and says how or why — it is something a reader could disagree with.' }));
 
     const coach = el('div', { class: 'rx-coach', 'aria-live': 'polite' });
-    const thesis = el('textarea', { class: 'rx-textarea is-large', id: 'rx-thesis', rows: '4', placeholder: 'e.g. ' + writerName(book) + ' presents … not as … but as …, because …' });
+    const thesis = autoGrow(el('textarea', { class: 'rx-textarea is-large', id: 'rx-thesis', rows: '3', placeholder: 'e.g. ' + writerName(book) + ' presents … not as … but as …, because …' }));
     thesis.value = plan.thesis;
     const paint = () => {
       clear(coach);
@@ -267,7 +283,7 @@ function render(book) {
         el('p', { class: 'rx-model-note', text: 'One route among many. Your argument can go a different way — examiners reward a clear line, not this one.' })
       ]));
     }
-    main.append(nav('question', 'paragraphs', 'Next: build your paragraphs'));
+    main.append(nav('question', 'paragraphs', 'Next: paragraphs'));
   }
 
   // --- 3: the paragraphs -----------------------------------------------------
@@ -287,7 +303,7 @@ function render(book) {
         main.querySelectorAll('.rx-para')[plan.paragraphs.length - 1]?.querySelector('textarea')?.focus();
       } })
     ]));
-    main.append(nav('argument', 'review', 'Next: conclusion and review'));
+    main.append(nav('argument', 'review', 'Next: conclusion'));
   }
 
   function paragraphCard(paragraph, index) {
@@ -308,7 +324,7 @@ function render(book) {
 
     // Point
     const pointId = 'rx-point-' + index;
-    const point = el('textarea', { class: 'rx-textarea', id: pointId, rows: '2', placeholder: 'The claim this paragraph proves. “Ambition” is a topic; “ambition only becomes action when someone else demands it” is a point.' });
+    const point = autoGrow(el('textarea', { class: 'rx-textarea', id: pointId, rows: '2', placeholder: 'Not “ambition” (a topic) but a claim: “ambition only acts when someone demands it”.' }));
     point.value = paragraph.point;
     const pointCoach = el('p', { class: 'rx-mini-coach', 'aria-live': 'polite' });
     const paintPoint = () => {
@@ -319,7 +335,7 @@ function render(book) {
     point.addEventListener('input', () => { paragraph.point = point.value; paintPoint(); soon(); });
     paintPoint();
     card.append(el('div', { class: 'rx-pea' }, [
-      el('label', { class: 'rx-pea-label', for: pointId }, [el('b', { text: 'P' }), el('span', { text: 'Point' })]),
+      el('label', { class: 'rx-pea-label', for: pointId }, [el('b', { text: 'P' }), el('span', { text: 'Point' }), el('small', { class: 'rx-pea-hint', text: 'the claim this paragraph proves' })]),
       el('div', {}, [point, pointCoach])
     ]));
 
@@ -338,14 +354,14 @@ function render(book) {
       ]));
     }
     card.append(el('div', { class: 'rx-pea' }, [
-      el('span', { class: 'rx-pea-label' }, [el('b', { text: 'E' }), el('span', { text: 'Evidence' })]),
+      el('span', { class: 'rx-pea-label' }, [el('b', { text: 'E' }), el('span', { text: 'Evidence' }), el('small', { class: 'rx-pea-hint', text: 'a quotation that shows it' })]),
       evidence
     ]));
     card.append(el('div', { class: 'rx-picker-slot' }));
 
     // Analysis
     const analysisId = 'rx-analysis-' + index;
-    const analysis = el('textarea', { class: 'rx-textarea', id: analysisId, rows: '3', placeholder: 'What is the language doing? Zoom in on a word or image, then say what it shows and how it supports your point.' });
+    const analysis = autoGrow(el('textarea', { class: 'rx-textarea', id: analysisId, rows: '3', placeholder: 'Zoom in on one word or image. What does it suggest, and how does that prove your point?' }));
     analysis.value = paragraph.analysis;
     const analysisCoach = el('p', { class: 'rx-mini-coach', 'aria-live': 'polite' });
     const paintAnalysis = () => {
@@ -356,14 +372,14 @@ function render(book) {
     };
     analysis.addEventListener('input', () => { paragraph.analysis = analysis.value; paintAnalysis(); soon(); });
     paintAnalysis();
-    const prompts = el('div', { class: 'rx-starters is-small' });
+    const prompts = el('div', { class: 'rx-starters is-small', role: 'group', 'aria-label': 'Sentence starters' }, [el('span', { class: 'rx-label', text: 'Starters' })]);
     for (const prompt of ANALYSIS_PROMPTS) prompts.append(el('button', { type: 'button', class: 'rx-chip', text: prompt, onclick: () => insert(analysis, prompt) }));
     const help = chosen ? el('details', { class: 'rx-help' }, [
       el('summary', { text: 'Stuck? Read Astor’s note on this line' }),
       el('p', { text: chosen.analysis })
     ]) : null;
     card.append(el('div', { class: 'rx-pea' }, [
-      el('label', { class: 'rx-pea-label', for: analysisId }, [el('b', { text: 'A' }), el('span', { text: 'Analysis' })]),
+      el('label', { class: 'rx-pea-label', for: analysisId }, [el('b', { text: 'A' }), el('span', { text: 'Analysis' }), el('small', { class: 'rx-pea-hint', text: 'what the language is doing' })]),
       el('div', {}, [analysis, analysisCoach, prompts, help])
     ]));
     return card;
@@ -434,7 +450,7 @@ function render(book) {
   function drawReview() {
     main.append(el('h2', { class: 'rx-essay-title', tabindex: '-1', text: 'Conclude and review' }),
       el('p', { class: 'rx-essay-lede', text: 'Finish by answering the question directly, then read your plan through as one page.' }));
-    const conclusion = el('textarea', { class: 'rx-textarea', id: 'rx-conclusion', rows: '3', placeholder: 'Return to the question: so how far, or why? Say what your paragraphs add up to, in a sentence or two.' });
+    const conclusion = autoGrow(el('textarea', { class: 'rx-textarea', id: 'rx-conclusion', rows: '3', placeholder: 'Return to the question: so how far, or why? Say what your paragraphs add up to.' }));
     conclusion.value = plan.conclusion;
     conclusion.addEventListener('input', () => { plan.conclusion = conclusion.value; soon(); paintDoc(); });
     main.append(el('label', { class: 'rx-field-label', for: 'rx-conclusion', text: 'Your conclusion' }), conclusion);
@@ -522,6 +538,20 @@ function render(book) {
   draw();
 }
 
+// A writing box that grows with what is written in it, so a long answer is
+// read whole rather than scrolled inside a small window.
+function autoGrow(textarea) {
+  const fit = () => {
+    if (!textarea.isConnected) return;
+    textarea.style.height = 'auto';
+    textarea.style.height = (textarea.scrollHeight + textarea.offsetHeight - textarea.clientHeight) + 'px';
+  };
+  textarea.addEventListener('input', fit);
+  requestAnimationFrame(fit);
+  window.addEventListener('resize', fit, { passive: true });
+  return textarea;
+}
+
 function insert(textarea, text) {
   const value = textarea.value;
   const gap = value && !/\s$/.test(value) ? ' ' : '';
@@ -533,3 +563,7 @@ function insert(textarea, text) {
   if (at >= 0) textarea.setSelectionRange(at, at + 1);
 }
 
+// Started last, once every declaration above has run (see revise-hub.mjs).
+if (mount) {
+  openBookPage({ head, mount, active: 'essay-forge', filter: book => book.essays > 0, render: book => render(book) });
+}

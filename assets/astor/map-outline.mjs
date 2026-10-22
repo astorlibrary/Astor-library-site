@@ -102,14 +102,13 @@ let live = null;
 let detailMount = null;
 let drawing = 0;
 
-if (mapMount) start();
 
 async function start() {
   let index;
   try {
     index = await loadIndex();
   } catch {
-    mapMount.append(el('p', { class: 'astor-empty', text: 'The map could not load. Each book page names its settings in the “At a glance” panel.' }));
+    mapMount.append(el('p', { class: 'astor-empty', text: 'The map could not load. Each study guide names its settings.' }));
     return;
   }
 
@@ -641,3 +640,6 @@ function project(longitude, latitude, bounds) {
     y: bounds.height - ((latitude - bounds.south) / (bounds.north - bounds.south)) * bounds.height
   };
 }
+
+// Started last, once every declaration above has run (see revise-hub.mjs).
+if (mapMount) start();

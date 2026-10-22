@@ -146,3 +146,18 @@ export async function fetchJson(url) {
   console.error('Astor Library: could not load data.', lastError);
   throw lastError;
 }
+
+// A failure in one line a reader can pass on: what failed and why, without a
+// stack trace.
+export function describeError(error) {
+  if (!error) return '';
+  const name = error.name && error.name !== 'Error' ? error.name + ': ' : '';
+  return (name + (error.message || String(error))).replace(/\s+/g, ' ').trim().slice(0, 240);
+}
+
+// Where a book's study material lives: its study guide, one page per section
+// (scripts/guide-pages.js), with an item's own address on the end, e.g.
+// guideHref('macbeth', 'quotations', 'astor-quote-tomorrow').
+export function guideHref(slug, section = '', item = '') {
+  return '/guides/' + encodeURIComponent(slug) + '/' + (section ? section + '/' : '') + (item ? '#' + item : '');
+}

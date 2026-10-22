@@ -280,7 +280,7 @@
           "id": "fred",
           "name": "Fred",
           "role": "Scrooge’s nephew",
-          "summary": "He makes the case for Christmas in one long unbroken sentence and admits within it that the season has never earned him a penny, which is the strongest argument available. He keeps inviting his uncle to dinner every year and is refused every year, and goes on asking.",
+          "summary": "He makes the case for Christmas in one long unbroken sentence and admits in the next sentence that the season has never earned him a penny, which is the strongest argument available. He keeps inviting his uncle to dinner every year and is refused every year, and goes on asking.",
           "clue": "He comes in glowing from the frost, argues that a season which has never made him any money has still done him good, and never stops inviting his uncle to dinner.",
           "firstAppearance": "Stave I",
           "traits": [
@@ -347,7 +347,7 @@
           "name": "The Ghost of Christmas Past",
           "role": "The first of the three spirits",
           "summary": "A figure that is old and young together, with a jet of light from its head that Scrooge keeps trying to cover. It offers no interpretation of anything it shows, which is the method: the scenes are left to do their own arguing.",
-          "clue": "Its light can be put out with a cap, and it answers every protest by showing one more thing.",
+          "clue": "Its light streams out even from under the cap pressed down on it, and it answers every protest by showing one more thing.",
           "firstAppearance": "Stave II",
           "traits": [
             "ageless",
@@ -369,7 +369,7 @@
           "id": "ghost-present",
           "name": "The Ghost of Christmas Present",
           "role": "The second of the three spirits",
-          "summary": "A giant among heaped food who greets Scrooge as a man to be known better, and then spends the stave withholding comfort. He gives Scrooge’s own words about the surplus population back to him unaltered, and finishes by opening his robe on two children he insists belong to mankind.",
+          "summary": "A giant among heaped food who greets Scrooge as a man to be known better, and then spends the stave withholding comfort. He gives Scrooge’s own words about the surplus population back to him almost unaltered, and finishes by opening his robe on two children he insists belong to mankind.",
           "clue": "He sits on a throne of turkeys, geese and chestnuts, ages visibly in a single night, and keeps two starved children under his skirts.",
           "firstAppearance": "Stave III",
           "traits": [
@@ -584,15 +584,13 @@
           "speaker": "Fred",
           "reference": "Stave I",
           "stage": "stave-1",
-          "context": "Fred answering his uncle’s demand to know what reason he has to be merry.",
+          "context": "Fred answering his uncle’s jibe that Christmas has never done him any good.",
           "analysis": "Fred’s whole defence arrives as a single unbroken sentence with the clauses piling up, which is the opposite of Scrooge’s clipped questions and refusals. He then concedes the accounting point, that Christmas has never put gold or silver in his pocket, and argues that it has done him good anyway, meeting his uncle on his own ground and declining to stay there.",
           "themes": [
             "community",
             "business"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "fred",
             "scrooge"
@@ -609,13 +607,13 @@
           "speaker": "Scrooge",
           "reference": "Stave I",
           "stage": "stave-1",
-          "context": "His first reply to the two gentlemen collecting for the poor.",
+          "context": "His first reply to the gentlemen’s appeal for the poor.",
           "analysis": "He answers a request for money with a question about institutions, which moves the conversation from particular people to public provision and lets him leave without giving anything. Four words also make him sound reasonable, and the book spends three staves undoing that impression.",
           "themes": [
             "poverty"
           ],
           "techniques": [
-            "direct-address"
+            "structural-repetition"
           ],
           "characters": [
             "scrooge"
@@ -632,7 +630,7 @@
           "reference": "Stave I",
           "stage": "stave-1",
           "context": "Told that many would rather die than go to the workhouse.",
-          "analysis": "The phrase comes from political economy: it treats people as a quantity in excess of a total, and needs no malice to do it. Dickens stores it carefully, and in Stave III has the Ghost of Christmas Present quote it back word for word while Scrooge is looking at a child who may be the one it applies to.",
+          "analysis": "The phrase comes from political economy: it treats people as a quantity in excess of a total, and needs no malice to do it. Dickens stores it carefully, and in Stave III has the Ghost of Christmas Present quote it back almost word for word while Scrooge is looking at a child who may be the one it applies to.",
           "themes": [
             "poverty"
           ],
@@ -660,7 +658,6 @@
             "change"
           ],
           "techniques": [
-            "direct-address",
             "gothic"
           ],
           "characters": [
@@ -834,9 +831,7 @@
             "community",
             "change"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "ghost-present",
             "scrooge"
@@ -858,9 +853,7 @@
             "poverty",
             "community"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "tiny-tim",
             "bob-cratchit"
@@ -2208,7 +2201,7 @@
           "reference": "Chapter XLIV",
           "stage": "the-sand-belt",
           "context": "After the battle, with the dead heaped around the cave.",
-          "analysis": "In four words the victory becomes the ending. The fifty-four cannot leave because of what they have made, and the plague that kills them comes from the men they killed. It is the plainest statement in Twain of what a decisive weapon does to the man holding it.",
+          "analysis": "In five words the victory becomes the ending. The fifty-four cannot leave because of what they have made, and the plague that kills them comes from the men they killed. It is the plainest statement in Twain of what a decisive weapon does to the man holding it.",
           "themes": [
             "technology",
             "freedom"
@@ -3760,7 +3753,7 @@
             {
               "ref": "4.2",
               "title": "Back in Athens",
-              "summary": "The players mourn their lost leading man until he walks in with news of a wedding."
+              "summary": "The players mourn their lost leading man until he walks in with news that their play is preferred."
             }
           ]
         },
@@ -3947,7 +3940,7 @@
           "name": "Helena",
           "role": "In love with Demetrius, who has abandoned her",
           "summary": "She betrays her friend’s escape plan in order to be thanked by a man who despises her, and knows exactly how little that is worth while she does it. Her offer to be treated like a dog is the most uncomfortable speech in the comedy, and when both men suddenly want her she assumes it is a joke at her expense.",
-          "clue": "She hands over her best friend’s secret to a man who tells her he is sick when he looks at her, and asks only to be beaten and followed like a spaniel.",
+          "clue": "She hands over her best friend’s secret to a man who tells her he is sick when he looks at her, and asks only to be beaten like a spaniel and allowed to follow him.",
           "firstAppearance": "1.1",
           "traits": [
             "self-aware",
@@ -4074,7 +4067,7 @@
           "name": "Puck",
           "role": "Robin Goodfellow, Oberon’s servant",
           "summary": "He comes from English village folklore, a long way from Athens, and he is an employee and a hazard at the same time: he does what he is told and enjoys what goes wrong. He is given the last word, and uses it to offer the audience a way out of everything they have seen.",
-          "clue": "He frightens village girls, curdles the milk, mistakes one Athenian for another, and finally invites the audience to pretend they were asleep.",
+          "clue": "He frightens village girls, skims the milk, mistakes one Athenian for another, and finally invites the audience to pretend they were asleep.",
           "firstAppearance": "2.1",
           "traits": [
             "mischievous",
@@ -4254,7 +4247,7 @@
           "speaker": "Theseus",
           "reference": "1.1.16",
           "stage": "act-1",
-          "context": "To his bride, in the same opening speech.",
+          "context": "To his bride, later in the opening scene, after sending Philostrate away.",
           "analysis": "He describes a conquest as a courtship without seeming to notice the difference, and ‘doing thee injuries’ stays in the sentence as a plain fact. ‘In another key’ is a musical term, so the change he promises is one of tone, and the relation stays the same, which is exactly what Oberon and Titania will act out in the wood.",
           "themes": [
             "love",
@@ -4395,7 +4388,7 @@
           "speaker": "Bottom",
           "reference": "1.2.58",
           "stage": "act-1",
-          "context": "At the casting, having already asked to play Pyramus and Thisbe.",
+          "context": "At the casting, having already been cast as Pyramus and asked to play Thisbe.",
           "analysis": "‘Too’ is the joke: he has accepted the lead and wants the other parts as well, including the one with no words. Quince talks him out of it by explaining that a convincing lion would get the company hanged, which is the first of the play’s several reminders that theatre in 1595 was a licensed activity.",
           "themes": [
             "theatre"
@@ -4512,7 +4505,7 @@
           "reference": "2.1.175",
           "stage": "act-2",
           "context": "Sent to fetch the flower from wherever it grows.",
-          "analysis": "The boast fixes the scale of the wood: the errand crosses the world and takes less time than an act. It also sets the play’s clock against the audience’s, since forty minutes is roughly how long the fairies are then offstage.",
+          "analysis": "The boast fixes the scale of the wood: the errand crosses the world and takes less time than an act. It also sets the play’s clock against the audience’s: Puck is back with the flower some seventy lines later.",
           "themes": [
             "dream"
           ],
@@ -4799,7 +4792,7 @@
           "reference": "5.1.404",
           "stage": "act-5",
           "context": "The epilogue, spoken after the fairies have blessed the house.",
-          "analysis": "‘Shadows’ is Theseus’s word for actors four hundred lines earlier, so the epilogue picks up the court’s own dismissal and uses it as an apology. The offer, to call it a dream, is the one the characters have already accepted about themselves, and the rhymed tetrameter is the fairies’ metre, which means the excuse is being made by the people who caused the trouble.",
+          "analysis": "‘Shadows’ is Theseus’s word for actors two hundred lines earlier, so the epilogue picks up the court’s own dismissal and uses it as an apology. The offer, to call it a dream, is the one the characters have already accepted about themselves, and the rhymed tetrameter is the fairies’ metre, which means the excuse is being made by the people who caused the trouble.",
           "themes": [
             "dream",
             "theatre"
@@ -8378,7 +8371,7 @@
           "reference": "Chapter V",
           "stage": "caterpillar-and-kitchen",
           "context": "The Caterpillar’s first words, spoken from the mushroom.",
-          "analysis": "Four words, and the book has spent four chapters making them unanswerable. Coming from a creature about to dissolve into a chrysalis and re-form as something else, the question is also a professional one, which is why Alice’s complaint about changing size gets so little sympathy.",
+          "analysis": "Three words, and the book has spent four chapters making them unanswerable. Coming from a creature about to dissolve into a chrysalis and re-form as something else, the question is also a professional one, which is why Alice’s complaint about changing size gets so little sympathy.",
           "themes": [
             "identity"
           ],
@@ -28560,7 +28553,7 @@
           "id": "sibyl",
           "label": "Chapters III-VIII",
           "title": "Sibyl Vane",
-          "summary": "Dorian falls in love with a girl who plays Juliet in a shabby little theatre in Holborn, and loves her for her parts. When love makes her performance sincere and therefore bad, he tells her so in her dressing room and leaves. She kills herself that night, and the mouth of the portrait has changed by morning.",
+          "summary": "Dorian falls in love with a girl who plays Juliet in a shabby little theatre in Holborn, and loves her for her parts. When love makes her performance sincere and therefore bad, he tells her so in the greenroom and leaves. She kills herself that night, and the mouth of the portrait has changed by morning.",
           "scenes": [
             {
               "ref": "Chapters III-IV",
@@ -28575,7 +28568,7 @@
             {
               "ref": "Chapters VI-VII",
               "title": "",
-              "summary": "Sibyl plays badly because she has stopped pretending; Dorian’s speech in the dressing room; a cruel line added to the painted mouth."
+              "summary": "Sibyl plays badly because she has stopped pretending; Dorian’s speech in the greenroom; a cruel line added to the painted mouth."
             },
             {
               "ref": "Chapter VIII",
@@ -28621,7 +28614,7 @@
             {
               "ref": "Chapter XIII",
               "title": "",
-              "summary": "The lamp held up to the portrait, the prayer, and the knife on the chest behind the door."
+              "summary": "The candle held up to the portrait, the prayer, and the knife on the chest behind the door."
             },
             {
               "ref": "Chapter XIV",
@@ -28865,7 +28858,7 @@
             },
             {
               "to": "dorian",
-              "label": "would-be avenger of",
+              "label": "would-be killer of",
               "kind": "enemy",
               "stages": [
                 "reckoning"
@@ -29061,7 +29054,7 @@
           "speaker": "",
           "reference": "Preface",
           "stage": "studio",
-          "context": "The preface’s last substantial pair of statements before the closing line.",
+          "context": "From the closing run of aphorisms in the preface.",
           "analysis": "The two sentences are identical in shape and cancel each other, which leaves a reader with no safe position from which to interpret. It is also a plot summary: this is a book in which a surface and a symbol are separated from each other, and everyone who looks under the cloth comes off badly.",
           "themes": [
             "art-morality",
@@ -29179,7 +29172,7 @@
           "speaker": "Lord Henry Wotton",
           "reference": "Chapter II",
           "stage": "studio",
-          "context": "The opening of the speech in the garden, minutes after being introduced.",
+          "context": "The opening of the speech in the studio, while Dorian poses on the platform, minutes after being introduced.",
           "analysis": "He is establishing his authority by disclaiming it, which is the oldest move a persuader has. ‘From the scientific point of view’ is decoration, since there is no science in the sentence, and the whole novel is the experiment that follows from a man announcing that influence is impossible and then applying it for an hour.",
           "themes": [
             "influence"
@@ -29228,7 +29221,7 @@
           "speaker": "Lord Henry Wotton",
           "reference": "Chapter II",
           "stage": "studio",
-          "context": "Part of the garden speech, arguing that resistance makes desire monstrous.",
+          "context": "Part of the studio speech, arguing that resistance makes desire monstrous.",
           "analysis": "The reasoning around it is medical (the body sins once and is done with its sin), and that is the trick. A sentence built to sound like a cure for obsession is in fact a licence, and the novel spends twenty chapters showing that yielding does not get rid of anything.",
           "themes": [
             "influence",
@@ -29254,7 +29247,7 @@
           "reference": "Chapter II",
           "stage": "studio",
           "context": "Said with a hand on Dorian’s shoulder, in the garden.",
-          "analysis": "Dorian repeats this line to himself sixteen chapters later on the way to an opium den, and Wilde prints it twice in that scene to make sure the reader hears where it has ended up. A balanced, harmless-sounding chiasmus becomes a man’s excuse for buying oblivion the night after a murder.",
+          "analysis": "Dorian repeats this line to himself fourteen chapters later on the way to an opium den, and Wilde prints it twice in that scene to make sure the reader hears where it has ended up. A balanced, harmless-sounding chiasmus becomes a man’s excuse for buying oblivion the night after a murder.",
           "themes": [
             "influence",
             "double-life"
@@ -29332,8 +29325,8 @@
           "speaker": "Dorian Gray",
           "reference": "Chapter IV",
           "stage": "sibyl",
-          "context": "Answering Lord Henry’s amused questions about when he will be paying for her.",
-          "analysis": "The exclamation marks are the only ones Dorian earns in the whole book, and three chapters later he tells the same girl she has killed his love. ‘Sacred’ belongs to the vocabulary of worship, and that is the flaw: he has made her a shrine, and shrines are not allowed a bad night.",
+          "context": "Answering Lord Henry’s question about what his ‘actual relations’ with her are.",
+          "analysis": "He means every word, and three chapters later he tells the same girl she has killed his love. ‘Sacred’ belongs to the vocabulary of worship, and that is the flaw: he has made her a shrine, and shrines are not allowed a bad night.",
           "themes": [
             "influence",
             "surface"
@@ -29383,8 +29376,8 @@
           "speaker": "Dorian Gray",
           "reference": "Chapter VII",
           "stage": "sibyl",
-          "context": "In the dressing room, after Sibyl has acted Juliet badly for the first time.",
-          "analysis": "The three sentences go down from love to imagination to curiosity to effect, ending in the language of a critic. She has just told him that she can no longer act because she has discovered what love is; he replies by explaining that she was only ever a performance he enjoyed.",
+          "context": "In the greenroom, after Sibyl has acted Juliet badly for the first time.",
+          "analysis": "The four sentences go down from love to imagination to curiosity to effect, ending in the language of a critic. She has just told him that she can no longer act because she has discovered what love is; he replies by explaining that she was only ever a performance he enjoyed.",
           "themes": [
             "art-morality",
             "surface"
@@ -29435,7 +29428,7 @@
           "reference": "Chapter XI",
           "stage": "concealment",
           "context": "In the middle of a paragraph about Renaissance methods of murder.",
-          "analysis": "It arrives at the end of a list of poisoned helmets, gloves and pomanders, so the book is filed as one more elegant instrument. Seven words flatly contradict the preface, and Wilde lets both stand. Either that is carelessness, or it is why he published the preface at all.",
+          "analysis": "It arrives at the end of a list of poisoned helmets, gloves and pomanders, so the book is filed as one more elegant instrument. Eight words flatly contradict the preface, and Wilde lets both stand. Either that is carelessness, or it is why he published the preface at all.",
           "themes": [
             "art-morality",
             "influence"
@@ -29458,7 +29451,7 @@
           "speaker": "Dorian Gray",
           "reference": "Chapter XIII",
           "stage": "murder",
-          "context": "Holding the lamp up to the portrait for Basil, minutes before the murder.",
+          "context": "To Basil, who has just held a candle up to the portrait, minutes before the murder.",
           "analysis": "He has been asked to deny the rumours and instead produces a physical exhibit, which is a confession made in the only terms he still understands. Basil suggests that they pray, and Dorian reaches for a knife: the novel gives him no moment in which saying the true thing might have changed anything.",
           "themes": [
             "conscience",
@@ -29484,7 +29477,7 @@
           "speaker": "Dorian Gray",
           "reference": "Chapter XIII",
           "stage": "murder",
-          "context": "In the schoolroom, when Basil urges him to pray.",
+          "context": "In the schoolroom, when Basil says the portrait has the eyes of a devil.",
           "analysis": "It is said with a wild gesture of despair and it is the most ordinary piece of theology in the novel, and the one thing Dorian says that Lord Henry could not have taught him. Within a page he has stabbed the man he said it to: knowing the doctrine is not the same as having a conscience.",
           "themes": [
             "conscience",
@@ -29509,8 +29502,8 @@
           "speaker": "",
           "reference": "Chapter XIV",
           "stage": "murder",
-          "context": "The morning after the murder, looking at the portrait before Alan Campbell arrives.",
-          "analysis": "Dew is a word for something clean, and the sentence spends three modifiers being beautiful before it says blood. This is the aestheticist prose doing its usual job of looking away, and the detail it will not name outright is the one that has moved from the body downstairs onto a painted hand.",
+          "context": "Opening the schoolroom door for Alan Campbell, the day after the murder.",
+          "analysis": "Dew is a word for something clean, and the sentence spends three modifiers being beautiful before it says blood. This is the aestheticist prose doing its usual job of looking away, and the detail it will not name outright is the one that has moved from the body across the room onto a painted hand.",
           "themes": [
             "conscience",
             "surface"
@@ -29560,7 +29553,7 @@
           "speaker": "Dorian Gray",
           "reference": "Chapter XIX",
           "stage": "ending",
-          "context": "The last conversation with Lord Henry, who has just called the soul a fashionable myth.",
+          "context": "The last conversation with Lord Henry, who has just said that art has a soul but man has not.",
           "analysis": "The pupil corrects the teacher, using the commercial verbs Lord Henry taught him, and Lord Henry laughs. This is the only time anyone in the novel states the plot as a fact to somebody who could still act on it, and it is received as a good remark and nothing else.",
           "themes": [
             "conscience",
@@ -29725,7 +29718,7 @@
           ]
         },
         {
-          "question": "’The preface and the plot contradict each other.’ Discuss.",
+          "question": "‘The preface and the plot contradict each other.’ Discuss.",
           "focus": "Art, morality and the 1891 revisions",
           "plan": [
             "Set out the preface’s claims: no moral or immoral books, no ethical sympathies, all art quite useless.",
@@ -29794,7 +29787,7 @@
         {
           "year": 1895,
           "label": "The Importance of Being Earnest opens at the St James’s Theatre",
-          "detail": "In February, with Wilde at the height of his fame and three months from the first trial.",
+          "detail": "In February, with Wilde at the height of his fame and seven weeks from the first trial.",
           "kind": "author"
         },
         {
@@ -30210,7 +30203,7 @@
           "id": "lucy",
           "name": "Lucy Westenra",
           "role": "Mina’s friend, engaged to Arthur Holmwood",
-          "summary": "She receives three proposals in one day and asks in a letter why a girl cannot marry three men. The novel then spends five chapters draining her, killing her, burying her and killing her again, and the second death is carried out by the man she was going to marry with the other two watching.",
+          "summary": "She receives three proposals in one day and asks in a letter why a girl cannot marry three men. The novel then spends eight chapters draining her, killing her, burying her and killing her again, and the second death is carried out by the man she was going to marry with the other two watching.",
           "clue": "Three men propose to her on the same day, and all three of them give her their blood before the year is out.",
           "firstAppearance": "Chapter V",
           "traits": [
@@ -30549,7 +30542,7 @@
           "speaker": "Count Dracula",
           "reference": "Chapter II",
           "stage": "castle",
-          "context": "Wolves howling outside the castle during Harker’s first supper.",
+          "context": "Wolves howling outside the castle after Harker’s first supper, as dawn approaches.",
           "analysis": "He does not say ‘the wolves’: he calls them ‘the children of the night’, as if they were family, and he watches his guest’s face to see whether the phrase registers. What follows is an apology for the tastes of a hunter, which is the second time in a page he has explained himself in terms that only make sense later.",
           "themes": [
             "invasion"
@@ -30575,7 +30568,7 @@
           "reference": "Chapter II",
           "stage": "castle",
           "context": "A journal entry written in the castle, before he understands he is a prisoner.",
-          "analysis": "The three clauses get shorter as they go, in a journal that has so far been full of train times and paprika. The diary is the only person he can talk to, and the last clause admits that he is censoring even that: the document the entire novel rests on is being written by a man who dare not write everything down.",
+          "analysis": "The clauses drop to two words each (‘I doubt; I fear’) and then lengthen, in a journal that has so far been full of train times and paprika. The diary is the only person he can talk to, and the last clause admits that he is censoring even that: the document the entire novel rests on is being written by a man who dare not write everything down.",
           "themes": [
             "records"
           ],
@@ -30671,8 +30664,8 @@
           "speaker": "Jonathan Harker",
           "reference": "Chapter IV",
           "stage": "castle",
-          "context": "Harker watches the Count leave the castle, having been made to write letters dated weeks in advance.",
-          "analysis": "The triumph is over paperwork: the Count has just obtained three post-dated letters that will keep anyone from looking for Harker until long after he is dead. Stoker gives the villain his most theatrical exit in the novel at the exact moment his weapon is a set of forged dates.",
+          "context": "Going to his room after the Count has opened the castle door on a pack of wolves, in answer to Harker’s request to leave.",
+          "analysis": "The triumph is over a guest who has just asked to leave and been shown the door with wolves on the other side of it. Harker has already written the post-dated letters that will keep anyone from looking for him until long after he is dead, and the Count’s courtesy is now openly a joke at his expense.",
           "themes": [
             "records",
             "invasion"
@@ -30746,7 +30739,7 @@
           "speaker": "Professor Van Helsing",
           "reference": "Chapter XIV",
           "stage": "assembly",
-          "context": "Van Helsing to Mina, after reading her transcription of Jonathan’s journal.",
+          "context": "Van Helsing to Mina, after reading her typed copy of her own Whitby diary.",
           "analysis": "He says it to the person who has just done the filing, and it is worth setting beside the decision four chapters later to keep her out of the council. The novel praises Mina in the language of light and then removes her from the room where the work is done.",
           "themes": [
             "women",
@@ -30772,7 +30765,7 @@
           "reference": "Chapter XIV",
           "stage": "assembly",
           "context": "Mina resolves to type out Jonathan’s shorthand journal.",
-          "analysis": "This is the sentence on which the second half of the novel turns, and it is about office equipment. Ready for other eyes is the whole problem stated in five words: private records held by separate people cannot be compared, and a hunt that has failed for three hundred pages becomes possible the moment somebody makes copies.",
+          "analysis": "This is the sentence on which the second half of the novel turns, and it is about office equipment. Ready for other eyes is the whole problem stated in four words: private records held by separate people cannot be compared, and a hunt that has failed for three hundred pages becomes possible the moment somebody makes copies.",
           "themes": [
             "technology",
             "records"
@@ -30970,7 +30963,7 @@
           "speaker": "Count Dracula",
           "reference": "Chapter XXIII",
           "stage": "mina",
-          "context": "Cornered in the Piccadilly house, before escaping through the back.",
+          "context": "Having leapt from a window of the Piccadilly house, turning at the stable door before he escapes.",
           "analysis": "It is the only speech he makes to the whole group, and his boast is about how long he can last. Everything the hunters have (telegrams, timetables, a chartered launch) is built for speed, and he answers with centuries. The last four chapters settle which of the two is right.",
           "themes": [
             "invasion",
@@ -30992,11 +30985,11 @@
         {
           "id": "not-more-stainless",
           "text": "Now God be thanked that all has not been in vain! See! the snow is not more stainless than her forehead!",
-          "speaker": "Professor Van Helsing",
+          "speaker": "Quincey Morris",
           "reference": "Chapter XXVII",
           "stage": "pursuit",
-          "context": "At the moment the Count crumbles, with Mina watching.",
-          "analysis": "The victory is announced as a fact about a woman’s complexion. Van Helsing checks Mina’s forehead before he checks anything else, and the novel closes its plot by restoring her to a state of visible purity, which tells a reader a good deal about what was thought to have been lost.",
+          "context": "Quincey Morris, dying in the snow, minutes after the Count has crumbled to dust.",
+          "analysis": "The victory is announced as a fact about a woman’s complexion. Quincey, bleeding to death, looks at Mina’s forehead before anything else, and the novel closes its plot by restoring her to a state of visible purity, which tells a reader a good deal about what was thought to have been lost.",
           "themes": [
             "women",
             "faith-science"
@@ -31005,7 +30998,7 @@
             "multiple-narrators"
           ],
           "characters": [
-            "van-helsing",
+            "quincey",
             "mina",
             "dracula"
           ],
@@ -31086,7 +31079,7 @@
         {
           "label": "Shape",
           "value": "Twenty-seven chapters and a closing note",
-          "note": "Roughly four in the castle, ten in England, and the rest a chase back the way Harker came."
+          "note": "Four in the castle, nineteen in England, and the last four a chase back the way Harker came."
         }
       ],
       "criticalViews": [
@@ -31243,7 +31236,7 @@
           "name": "The Borgo Pass",
           "lat": 47.2667,
           "lon": 25.0167,
-          "note": "The road where the Count’s calèche takes over from the public coach, exactly at midnight."
+          "note": "The road where the Count’s calèche takes over from the public coach, some time before midnight."
         },
         {
           "name": "Whitby",
@@ -34734,7 +34727,7 @@
           "role": "The being Victor assembles and abandons",
           "summary": "Nameless on purpose, and called daemon, wretch and fiend by everyone who describes him, including himself. He is the best reader in the book and the best speaker in it, and he makes his case for a companion in the formal language of rights before he makes his case for revenge.",
           "clue": "Eight feet tall, articulate, self-taught from three books found in a portmanteau in the woods, and asking only for one other creature in the world who will not scream at the sight of him.",
-          "firstAppearance": "Chapter V",
+          "firstAppearance": "Letter IV",
           "traits": [
             "eloquent",
             "abandoned",
@@ -34814,7 +34807,7 @@
           "id": "elizabeth",
           "name": "Elizabeth Lavenza",
           "role": "Taken into the Frankenstein household as a child; Victor’s betrothed",
-          "summary": "Presented to Victor as a gift when they are children, and described by him for the rest of his life as a possession he was given. Her longest piece of writing offers to release him from the engagement; he marries her anyway, knowing what has been promised for the wedding night.",
+          "summary": "Presented to Victor as a gift when they are children, and described by him for the rest of his life as a possession he was given. Her last letter offers to release him from the engagement; he marries her anyway, knowing what has been promised for the wedding night.",
           "clue": "Brought home from Italy as a child and handed to a boy who was told she was his present, she dies on her wedding night because her husband assumed a threat was aimed at him.",
           "firstAppearance": "Chapter I",
           "traits": [
@@ -35126,8 +35119,8 @@
           "speaker": "Victor Frankenstein",
           "reference": "Chapter II",
           "stage": "making",
-          "context": "Victor contrasts his own childhood curiosity with Clerval’s taste for poetry and adventure.",
-          "analysis": "Divine is doing two jobs: to work out, and to do the work of a god. Shelley lets the pun sit there unremarked in a sentence about a small boy, ten chapters before anyone has assembled anything. The world is cast as something withholding information from him, which makes discovery feel like the recovery of a right.",
+          "context": "Victor contrasts his own childhood curiosity with Elizabeth’s delight in poetry and scenery.",
+          "analysis": "Divine is doing two jobs: to work out, and to do the work of a god. Shelley lets the pun sit there unremarked in a sentence about a small boy, two chapters before anyone has assembled anything. The world is cast as something withholding information from him, which makes discovery feel like the recovery of a right.",
           "themes": [
             "knowledge"
           ],
@@ -35394,8 +35387,8 @@
           "speaker": "The creature",
           "reference": "Chapter XVI",
           "stage": "creature",
-          "context": "After the De Laceys abandon the cottage and he burns it down.",
-          "analysis": "Spark of existence is Victor’s own phrase for what he infused, handed back with wantonly attached to it. This is the hinge of the creature’s narrative: the sentence before it he is grieving, and a few pages later he has met a child in the woods. Shelley puts the turn into a rhetorical question.",
+          "context": "Opening his account of the night after Felix drives him from the cottage.",
+          "analysis": "Spark of existence echoes Victor’s own phrase for what he infused, a ‘spark of being’, handed back with wantonly attached to it. This is the hinge of the creature’s narrative: the sentence before it he is grieving, and a few pages later he has met a child in the woods. Shelley puts the turn into a rhetorical question.",
           "themes": [
             "nurture",
             "responsibility"
@@ -35494,7 +35487,7 @@
           "speaker": "The creature",
           "reference": "Chapter XX",
           "stage": "bargain",
-          "context": "The creature’s last speech before he leaves the island.",
+          "context": "Threatening Victor in the Orkney hut, shortly before he leaves the island.",
           "analysis": "He has worked out that he cannot be threatened with anything he has not already lost, and states it as a syllogism. Compare Victor, whose power rests entirely on secrets he is afraid to reveal: the two of them are being measured against each other by what they still have to protect.",
           "themes": [
             "isolation",
@@ -36161,7 +36154,7 @@
           "role": "Blacksmith, married to Pip’s sister",
           "summary": "He cannot spell, will not raise his hand in his own house, and is the moral centre of the novel without ever being told so. His explanation of why he allows his wife to rule (his own father beat his mother, and he would rather be hit himself) is the best piece of reasoning anyone in the book manages.",
           "clue": "He shields a small boy from his wife’s cane, takes reading lessons from that boy years later, and on a visit to London keeps calling him sir.",
-          "firstAppearance": "Chapter 1",
+          "firstAppearance": "Chapter 2",
           "traits": [
             "gentle",
             "inarticulate",
@@ -36403,7 +36396,7 @@
           "role": "Jaggers’s clerk; proprietor of the Castle at Walworth",
           "summary": "He states as policy what everyone else in the novel does by accident: that the self at work and the self at home are different people and must not be confounded. At the office he collects portable property from condemned men; at Walworth he fires a gun at nine so his deaf father can feel it.",
           "clue": "His house has a drawbridge, a moat four feet wide and a cannon, and his opinions change at the garden gate.",
-          "firstAppearance": "Chapter 21",
+          "firstAppearance": "Chapter 20",
           "traits": [
             "compartmented",
             "kind at home",
@@ -36671,7 +36664,7 @@
           "reference": "Chapter 1",
           "stage": "marshes",
           "context": "Giving Pip his instructions while holding him upside down.",
-          "analysis": "The repeated stage direction between clauses makes a threat into a rhythm, and the two things demanded, one to eat and one to cut iron, are all the man needs from the world. Both come back: the file resurfaces in a stranger’s hand and then as the weapon used on Pip’s sister.",
+          "analysis": "The repeated stage direction between clauses makes a threat into a rhythm, and the two things demanded, one to eat and one to cut iron, are all the man needs from the world. Both come back: the file resurfaces in a stranger’s hand, and the leg-iron it cut through becomes the weapon used on Pip’s sister.",
           "themes": [
             "guilt"
           ],
@@ -36794,7 +36787,7 @@
           "speaker": "Miss Havisham",
           "reference": "Chapter 12",
           "stage": "satis",
-          "context": "Watching Estella after one of Pip’s visits.",
+          "context": "Watching Estella’s moods during Pip’s visits.",
           "analysis": "Pip reports it as something that ‘sounded like’ the words, so the most damning line in Estella’s upbringing reaches the reader through a child who did not quite catch it. The endearments and the instruction are in the same breath: pride and hope are what she calls the girl she is training to be unable to love.",
           "themes": [
             "love",
@@ -36844,7 +36837,7 @@
           "speaker": "Wemmick",
           "reference": "Chapter 36",
           "stage": "expectations",
-          "context": "Pip asks for advice in Little Britain that Wemmick has already given at Walworth.",
+          "context": "In Little Britain, Pip asks whether Wemmick’s advice against helping a friend with money would be his opinion at Walworth too.",
           "analysis": "He states as a rule of hygiene what the rest of the novel suffers as a problem: that the person you are at work and the person you are at home are not obliged to agree. Pip has spent the book trying to keep the forge and London apart and calling it shame; Wemmick does the same thing and calls it an address.",
           "themes": [
             "class",
@@ -36896,7 +36889,7 @@
           "reference": "Chapter 29",
           "stage": "expectations",
           "context": "Holding Pip’s head down to hers in the chair at Satis House.",
-          "analysis": "Nine imperatives in three sentences, with the conditions arranged so that being hurt and being favoured produce the same instruction. She is prescribing a wound and calling it love, and Pip lies awake that night making her command into a declaration of his own, the point at which the training takes.",
+          "analysis": "Eight imperatives in four sentences, with the conditions arranged so that being hurt and being favoured produce the same instruction. She is prescribing a wound and calling it love, and Pip lies awake that night making her command into a declaration of his own, the point at which the training takes.",
           "themes": [
             "love",
             "parents"
@@ -36972,7 +36965,7 @@
           "reference": "Chapter 38",
           "stage": "expectations",
           "context": "Answering Miss Havisham’s complaint that she is cold to her.",
-          "analysis": "The passive voice is exact and deliberate: she has been made, and she declines both the credit and the blame. It is also an answer to the whole Victorian plot of self-improvement that Pip is living out three streets away: one character is trying to make himself, and the other knows she was manufactured.",
+          "analysis": "The passive voice is exact and deliberate: she has been made, and she declines both the credit and the blame. It is also an answer to the whole Victorian plot of self-improvement that Pip, sitting by the same fire, is living out: one character is trying to make himself, and the other knows she was manufactured.",
           "themes": [
             "parents",
             "love"
@@ -39083,7 +39076,7 @@
           "name": "Laertes",
           "role": "Polonius’s son",
           "summary": "He does in one scene what Hamlet cannot do in four acts: hears of his father’s death, raises a mob and breaks into the palace. The play uses him to show that speed is not justice: he is willing to cut throats in a church, and Claudius steers him within minutes of his arrival.",
-          "clue": "He storms the castle with a crowd at his back and is talked into poisoning a fencing sword instead.",
+          "clue": "He storms the castle with a crowd at his back and is talked into a rigged fencing match instead, offering to poison his sword himself.",
           "firstAppearance": "1.2",
           "traits": [
             "quick",
@@ -39431,7 +39424,7 @@
           "reference": "1.3.78",
           "stage": "act-1",
           "context": "The end of a long farewell lecture to Laertes, who is trying to catch a ship.",
-          "analysis": "The most quoted piece of wisdom in the play belongs to its most tiresome speaker, and he contradicts it within a scene by sending Reynaldo to lie about Laertes abroad. In context it is advice about self-interest, which is why the court repeats it and nobody follows it.",
+          "analysis": "The most quoted piece of wisdom in the play belongs to its most tiresome speaker, and he contradicts it in his next scene by sending Reynaldo to lie about Laertes abroad. In context it is advice about self-interest, which is why the court repeats it and nobody follows it.",
           "themes": [
             "seeming",
             "surveillance"
@@ -39575,7 +39568,7 @@
           "speaker": "Hamlet",
           "reference": "2.2.237",
           "stage": "act-2",
-          "context": "To Rosencrantz and Guildenstern, moments after working out that they were sent for.",
+          "context": "To Rosencrantz and Guildenstern, shortly before he makes them admit that they were sent for.",
           "analysis": "Three words of prose, offered as a flat statement of fact to two men who have just been hired as warders without quite realising it. The exchange that follows makes it a philosophical game about thinking making it so, which is exactly how Hamlet avoids being pinned down by people fishing for symptoms.",
           "themes": [
             "surveillance",
@@ -39676,7 +39669,7 @@
           "reference": "3.1.57",
           "stage": "act-3",
           "context": "Spoken while Claudius and Polonius are hidden, having placed Ophelia in his path.",
-          "analysis": "The speech contains no first-person pronoun and names nobody: it is written as a general problem in ethics. Two men are listening for symptoms and hear philosophy instead, so the most intimate speech in the play is also the most carefully depersonalised.",
+          "analysis": "The speech contains no first-person singular pronoun and names nobody: it is written as a general problem in ethics. Two men are listening for symptoms and hear philosophy instead, so the most intimate speech in the play is also the most carefully depersonalised.",
           "themes": [
             "mortality",
             "revenge"
@@ -46367,7 +46360,7 @@
             {
               "ref": "Chapter 7",
               "title": "",
-              "summary": "Brocklehurst orders the girls’ hair cut off while his wife and daughters stand by in velvet, furs and curls."
+              "summary": "Brocklehurst orders the girls’ hair cut off and his wife and daughters then walk in wearing velvet, furs and curls."
             },
             {
               "ref": "Chapter 9",
@@ -46606,7 +46599,7 @@
           "id": "st-john",
           "name": "St John Rivers",
           "role": "Clergyman at Morton; Jane’s cousin",
-          "summary": "He is the novel’s hardest test, because he is no villain. He gives Jane a home, a school and a fortune, and then asks for her whole life on the grounds that she is “formed for labour, not for love”. He is in love with someone else and has decided that this disqualifies him from wanting her.",
+          "summary": "He is the novel’s hardest test, because he is no villain. He gives Jane a home and a school, brings her the news of a fortune, and then asks for her whole life on the grounds that she is “formed for labour, not for love”. He is in love with someone else and has decided that this disqualifies him from wanting her.",
           "clue": "He is handsome as a Greek statue and about as warm, loves a woman he will not marry, and wants a wife chiefly as an instrument.",
           "firstAppearance": "Chapter 28",
           "traits": [
@@ -46630,7 +46623,7 @@
           "name": "Helen Burns",
           "role": "Jane’s friend at Lowood",
           "summary": "She offers the doctrine of endurance in its most attractive form: forgive, look past the body, live in calm looking to the end. Jane finds it magnificent and unusable. Helen’s death is the novel’s argument that patience is a real answer and not, for Jane, the available one.",
-          "clue": "She is beaten for untidiness, reads Rasselas at a window, and tells her friend that life is too short for registering wrongs.",
+          "clue": "She is beaten for untidiness, reads Rasselas on a stone bench in the garden, and tells her friend that life is too short for registering wrongs.",
           "firstAppearance": "Chapter 5",
           "traits": [
             "forbearing",
@@ -46684,7 +46677,7 @@
           "id": "brocklehurst",
           "name": "Mr Brocklehurst",
           "role": "Treasurer and manager of Lowood School",
-          "summary": "He preaches mortification of the flesh to eighty half-starved girls and orders their hair cut off while his own daughters wait in velvet and ostrich plumes. Brontë gives him a particular kind of hypocrisy: he believes his doctrine, and has never imagined it applying to himself.",
+          "summary": "He preaches mortification of the flesh to eighty half-starved girls and orders their hair cut off just before his own daughters sweep in wearing velvet and ostrich plumes. Brontë gives him a particular kind of hypocrisy: he believes his doctrine, and has never imagined it applying to himself.",
           "clue": "He is a black pillar of a man who asks a ten-year-old how she will avoid the pit, and preaches plain living to girls he is underfeeding.",
           "firstAppearance": "Chapter 4",
           "traits": [
@@ -46940,9 +46933,7 @@
             "independence",
             "confinement"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "jane"
           ],
@@ -46964,9 +46955,7 @@
             "independence",
             "confinement"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "jane"
           ],
@@ -46987,9 +46976,7 @@
           "themes": [
             "independence"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "jane",
             "mrs-reed"
@@ -47006,7 +46993,7 @@
           "speaker": "Helen Burns",
           "reference": "Chapter 6",
           "stage": "lowood",
-          "context": "Answering Jane’s question about what she would do if she were struck with a rod.",
+          "context": "Answering Jane’s boast that if Miss Scatcherd struck her with the rod she would break it under her nose.",
           "analysis": "The argument is about consequences more than piety, which makes it hard to dismiss: Helen is saying that retaliation spreads the damage, which is a different claim from saying that suffering is good. Jane’s reply, that she could not bear it, is no refutation, and the novel never finishes the disagreement.",
           "themes": [
             "religion",
@@ -47036,9 +47023,7 @@
           "themes": [
             "religion"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "helen-burns",
             "jane"
@@ -47055,7 +47040,7 @@
           "speaker": "Mr Brocklehurst",
           "reference": "Chapter 7",
           "stage": "lowood",
-          "context": "Ordering the girls’ curls cut off, while his wife and daughters wait in velvet and ostrich plumes.",
+          "context": "Ordering the girls’ curls cut off, just before his wife and daughters walk in wearing velvet and ostrich plumes.",
           "analysis": "The sentence is scriptural and the staging destroys it: Brontë puts the ostrich feathers in the room, so the reader hears the doctrine and sees the exception together. What he claims to be mortifying is a charity school’s plaited hair, which he describes as lust.",
           "themes": [
             "religion",
@@ -47079,15 +47064,13 @@
           "speaker": "Jane Eyre",
           "reference": "Chapter 8",
           "stage": "lowood",
-          "context": "After Miss Temple has cleared her of Brocklehurst’s accusation.",
-          "analysis": "Set this beside the line in Chapter 27 where Jane says the more friendless she is, the more she will respect herself. Eight chapters and nine years separate the two sentences, and they are the beginning and end of the same argument with herself.",
+          "context": "To Helen, on the evening of Brocklehurst’s public accusation.",
+          "analysis": "Set this beside the line in Chapter 27 where Jane says the more friendless she is, the more she will respect herself. Nineteen chapters and nine years separate the two sentences, and they are the beginning and end of the same argument with herself.",
           "themes": [
             "independence",
             "passion"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "jane",
             "helen-burns"
@@ -47153,7 +47136,7 @@
           "reference": "Chapter 12",
           "stage": "thornfield",
           "context": "Waiting in Hay Lane as a dog and a horse come up out of the dusk.",
-          "analysis": "Brontë raises a folk ghost and cancels it in the next sentence: ‘the man, the human being, broke the spell at once’. The novel does this again and again: Gothic expectation summoned, then given a natural explanation that turns out to be more dangerous than the ghost.",
+          "analysis": "Brontë raises a folk ghost and cancels it in the next paragraph: ‘the man, the human being, broke the spell at once’. The novel does this again and again: Gothic expectation summoned, then given a natural explanation that turns out to be more dangerous than the ghost.",
           "themes": [
             "passion"
           ],
@@ -47209,9 +47192,7 @@
             "independence",
             "class"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "jane",
             "rochester"
@@ -47235,9 +47216,7 @@
             "religion",
             "class"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "jane",
             "rochester"
@@ -47255,7 +47234,7 @@
           "reference": "Chapter 23",
           "stage": "engagement",
           "context": "Pulling away from Rochester in the orchard.",
-          "analysis": "Rochester has spent the courtship calling her a bird, a linnet, a caged thing, and she throws out the whole figure instead of arguing about its terms. The final clause is grammatically the point: the will is proved by being exercised, in the act of walking away.",
+          "analysis": "Rochester has spent the courtship calling her a bird, a caged thing, and she throws out the whole figure instead of arguing about its terms. The final clause is grammatically the point: the will is proved by being exercised, in the act of walking away.",
           "themes": [
             "independence"
           ],
@@ -47309,9 +47288,7 @@
             "independence",
             "passion"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "jane",
             "rochester"
@@ -47354,16 +47331,14 @@
           "speaker": "Jane Eyre",
           "reference": "Chapter 27",
           "stage": "engagement",
-          "context": "Alone at Thornfield, deciding whether to go to the south of France with Rochester.",
+          "context": "Her silent answer to Rochester’s plea that nobody in the world will be injured if she stays with him.",
           "analysis": "Three comparatives escalate in one sentence, each a worse condition and a firmer conclusion, so the grammar carries the argument. She goes on to say that laws and principles are not for the times when there is no temptation, which is the clearest statement of moral reasoning anyone in the novel makes.",
           "themes": [
             "independence",
             "religion",
             "passion"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "jane"
           ],
@@ -47435,9 +47410,7 @@
             "religion",
             "independence"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "jane",
             "st-john"
@@ -47478,15 +47451,13 @@
           "speaker": "Jane Eyre",
           "reference": "Chapter 37",
           "stage": "ferndean",
-          "context": "At Ferndean, to a blind Rochester who has asked whether she has anywhere to go.",
+          "context": "At Ferndean, to a blind Rochester who supposes that, now she is rich, she has friends who will not let her devote herself to him.",
           "analysis": "Independence is named before wealth, which is the order Jane insists on, and ‘my own mistress’ takes a word the novel has used for an illicit relationship and hands it back as a statement of ownership. Every obstacle in Chapter 23 (money, family, standing) has now been removed before she says yes.",
           "themes": [
             "independence",
             "class"
           ],
-          "techniques": [
-            "direct-address"
-          ],
+          "techniques": [],
           "characters": [
             "jane",
             "rochester"
@@ -47504,7 +47475,7 @@
           "reference": "Chapter 38",
           "stage": "ferndean",
           "context": "The opening of the final chapter.",
-          "analysis": "Jane is the subject of the verb and Rochester the object, a deliberate reversal in a Victorian marriage sentence: she married him, and was not given away. The second sentence lists four people and no guests, and compares silently with the crowded, interrupted ceremony of Chapter 26.",
+          "analysis": "Jane is the subject of the verb and Rochester the object, a deliberate reversal in a Victorian marriage sentence: she married him, and was not given away. The second sentence lists four people and no guests, and compares silently with the interrupted ceremony of Chapter 26.",
           "themes": [
             "independence"
           ],
@@ -48067,7 +48038,7 @@
           "name": "Dr Hastie Lanyon",
           "role": "Physician, Jekyll’s contemporary and critic",
           "summary": "Hearty, conventional and certain that Jekyll went wrong in mind ten years ago, he is the book’s representative of orthodox science. What kills him is what he learns, and his narrative stops exactly where the scene stops being explicable, leaving the rest to be told by the guilty party.",
-          "clue": "A red-faced, dogmatic physician who calls his old friend’s work balderdash, and who is dead within three weeks of seeing it work.",
+          "clue": "A red-faced, dogmatic physician who calls his old friend’s work balderdash, and who is dead within weeks of seeing it work.",
           "firstAppearance": "Search for Mr. Hyde",
           "traits": [
             "sceptical",
@@ -48612,7 +48583,7 @@
           "reference": "The Carew Murder Case",
           "stage": "the-murder",
           "context": "The police examine the scene the following morning.",
-          "analysis": "The cane was a present from Utterson, and half of it will be found in Jekyll’s house: the murder weapon travels from the lawyer to the victim’s body to the respectable friend’s rooms. Stevenson measures the violence indirectly, by what it did to a piece of hardwood, which is more frightening than a description of the body would have been.",
+          "analysis": "The cane was Utterson’s present to Jekyll, and its other half will be found behind a door in Hyde’s Soho rooms: the murder weapon travels from the lawyer to the respectable friend to the victim’s body. Stevenson measures the violence indirectly, by what it did to a piece of hardwood, which is more frightening than a description of the body would have been.",
           "themes": [
             "evidence"
           ],
@@ -48736,7 +48707,7 @@
           "reference": "Henry Jekyll’s Full Statement of the Case",
           "stage": "statements",
           "context": "The daydream that preceded the experiment.",
-          "analysis": "Read the order: the unjust is delivered first and at greater length, and the just merely continues walking. Jekyll’s utopia is arranged for the benefit of the half he claims to want rid of, and the sentence gives away whose freedom the experiment was actually designed to secure.",
+          "analysis": "Read the order: the unjust is delivered first, and the just merely continues walking. Jekyll’s utopia is arranged for the benefit of the half he claims to want rid of, and the sentence gives away whose freedom the experiment was actually designed to secure.",
           "themes": [
             "duality",
             "appetite"
@@ -48861,7 +48832,7 @@
           "speaker": "Dr Henry Jekyll",
           "reference": "Henry Jekyll’s Full Statement of the Case",
           "stage": "statements",
-          "context": "After the involuntary transformation in Regent’s Park.",
+          "context": "After waking in his own bed to find that he has become Hyde without the draught.",
           "analysis": "The difficulty has reversed: at the start it took a drug to become Hyde, and now it takes one to stay Jekyll. ‘Slowly’ appears twice in one sentence, and the repetition gives a supernatural condition the shape of a habit, measured in doses that stop working.",
           "themes": [
             "appetite",
@@ -48941,7 +48912,7 @@
         },
         {
           "position": "A book about addiction",
-          "summary": "Readers have long noticed how exactly the middle chapters describe tolerance, escalating doses, involuntary relapse and a failed supply. The crisis is finally chemical: a batch of salt with an impurity that cannot be reproduced.",
+          "summary": "Readers have long noticed how exactly the closing chapters describe tolerance, escalating doses, involuntary relapse and a failed supply. The crisis is finally chemical: a batch of salt with an impurity that cannot be reproduced.",
           "counter": "Stevenson never names a substance or a habit, and the reading can slip a medical question into the place of the moral one, what Jekyll wanted."
         },
         {
@@ -49264,7 +49235,7 @@
           "id": "act-5",
           "label": "Act V",
           "title": "Philippi, and the deaths of Cassius and Brutus",
-          "summary": "The battle is lost by misreading: Cassius sends a friend to check what a distant cheer means, assumes the worst, and kills himself on the strength of it. Brutus, who has spent the play trusting reason, runs on his own sword because the alternative is a triumph in Rome. Antony’s eulogy gives him the honesty the play has been testing all along.",
+          "summary": "The battle is lost by misreading: Cassius sends a friend to find out whether distant troops are friends or enemies, takes their shout of joy for his capture, and kills himself on the strength of it. Brutus, who has spent the play trusting reason, runs on his own sword because the alternative is a triumph in Rome. Antony’s eulogy gives him the honesty the play has been testing all along.",
           "scenes": [
             {
               "ref": "5.1",
@@ -49487,7 +49458,7 @@
           "role": "Brutus’s wife, daughter of Cato",
           "summary": "She argues for the right to know what her husband is doing, and proves her constancy by wounding herself in the thigh. Having won the argument, she cannot hold the knowledge: her next scene shows somebody trying not to give something away, and her death is reported twice in one conversation.",
           "clue": "She gives herself a wound to prove she can keep a secret, and then cannot stand still in the street.",
-          "firstAppearance": "2.1",
+          "firstAppearance": "1.2",
           "traits": [
             "insistent",
             "proud of her father",
@@ -49509,7 +49480,7 @@
           "id": "calpurnia",
           "name": "Calpurnia",
           "role": "Caesar’s wife",
-          "summary": "She has one scene, is right in it, and is talked out of being right by a man who reinterprets her dream as a compliment. The play gives her the only correct prediction anybody makes about the morning of the Ides, and then shows exactly how such a warning gets set aside in a household that runs on prestige.",
+          "summary": "She has one scene of any length, is right in it, and is talked out of being right by a man who reinterprets her dream as a compliment. The play gives her a correct prediction about the morning of the Ides, and then shows exactly how such a warning gets set aside in a household that runs on prestige.",
           "clue": "She dreams of a statue running with blood and is told it means Rome will be revived by him.",
           "firstAppearance": "1.2",
           "traits": [
@@ -49795,7 +49766,7 @@
           "reference": "2.1.10",
           "stage": "act-2",
           "context": "Alone in his orchard at two in the morning, unable to sleep.",
-          "analysis": "The conclusion is stated in the first four words and the reasoning follows afterwards, which is the opposite of how an argument works. He admits he has no cause, and then constructs one out of a hypothetical change of character, so the whole conspiracy rests on a subjunctive.",
+          "analysis": "The conclusion is stated in the first six words and the reasoning follows afterwards, which is the opposite of how an argument works. He admits he has no cause, and then constructs one out of a hypothetical change of character, so the whole conspiracy rests on a subjunctive.",
           "themes": [
             "tyranny",
             "honour"
@@ -49896,7 +49867,7 @@
           "reference": "3.1.1",
           "stage": "act-3",
           "context": "Passing the soothsayer on the way into the Capitol.",
-          "analysis": "A joke at the soothsayer’s expense, answered in four words, ‘Ay, Caesar; but not gone’, that make the whole day a countdown. It is the last exchange Caesar wins and the last he has any time to enjoy.",
+          "analysis": "A joke at the soothsayer’s expense, answered in five words, ‘Ay, Caesar; but not gone’, that make the whole day a countdown. It is the last exchange Caesar wins and the last he has any time to enjoy.",
           "themes": [
             "omens"
           ],
@@ -49992,7 +49963,7 @@
           "reference": "3.1.282",
           "stage": "act-3",
           "context": "Alone with the body, having just shaken hands with the murderers.",
-          "analysis": "‘Havoc’ was a military order permitting a sack without quarter, so the line is technical as well as ferocious. He has spent the previous scene being reasonable in company and is now, alone, promising a civil war. Shakespeare shows the two Antonys back to back so the audience cannot miss the join.",
+          "analysis": "‘Havoc’ was a military order permitting a sack without quarter, so the line is technical as well as ferocious. He has spent the earlier part of the scene being reasonable in company and is now, alone, promising a civil war. Shakespeare shows the two Antonys back to back so the audience cannot miss the join.",
           "themes": [
             "rhetoric",
             "friendship"
@@ -52301,7 +52272,7 @@
           "id": "cordelia",
           "name": "Cordelia",
           "role": "Lear’s youngest daughter",
-          "summary": "She speaks about a hundred lines in the whole play and is absent from the middle three acts, which is part of the design: the play takes her away again and again. In the first scene she will not put a price on love, which is not the same as defiance, and it costs her a kingdom in under fifty lines.",
+          "summary": "She speaks about a hundred lines in the whole play and is absent from Acts II and III and most of Act IV, which is part of the design: the play takes her away again and again. In the first scene she will not put a price on love, which is not the same as defiance, and it costs her a kingdom in under fifty lines.",
           "clue": "Asked to bid for a third of a kingdom, she offers a word that means nothing, and is believed.",
           "firstAppearance": "1.1",
           "traits": [
@@ -52342,7 +52313,7 @@
           "id": "goneril",
           "name": "Goneril",
           "role": "Lear’s eldest daughter, Duchess of Albany",
-          "summary": "She wins the first scene by saying what is wanted and spends the rest of the play being right about her father’s knights and wrong about everything else. The play gives her a real grievance and then lets her overrun it: by Act IV she is poisoning her sister and writing to a man about killing her husband.",
+          "summary": "She wins the first scene by saying what is wanted and spends the rest of the play being right about her father’s knights and wrong about everything else. The play gives her a real grievance and then lets her overrun it: by Act V she is poisoning her sister, having written to a man about killing her husband.",
           "clue": "She tells her steward to grow cold to the old man on purpose, and later poisons her own sister.",
           "firstAppearance": "1.1",
           "traits": [
@@ -52385,7 +52356,7 @@
           "id": "regan",
           "name": "Regan",
           "role": "Lear’s second daughter, Duchess of Cornwall",
-          "summary": "She follows her sister’s lead in Act I and outruns her afterwards. It is Regan who suggests plucking out the second eye, and Regan who kills the servant who objects. Widowed in the same scene, she immediately begins competing for Edmund, and dies of her sister’s poison without ever suspecting it.",
+          "summary": "She follows her sister’s lead in Act I and outruns her afterwards. It is Regan who suggests plucking out the second eye, and Regan who kills the servant who objects. Widowed soon afterwards, she immediately begins competing for Edmund, and dies of her sister’s poison without ever suspecting it.",
           "clue": "She asks what need her father has of even one attendant, and later calls for the other eye.",
           "firstAppearance": "1.1",
           "traits": [
@@ -52598,7 +52569,7 @@
           "name": "The Fool",
           "role": "Lear’s licensed jester",
           "summary": "He arrives after Cordelia leaves and vanishes after the mock trial, which has made some readers connect them. His jokes are all one joke, repeated until it stops being funny: you gave away the thing that made you worth obeying. He is the only person allowed to say it, and he keeps saying it through the worst of the weather.",
-          "clue": "He tells the king that he is an O without a figure, and disappears from the play after a trial held in a hovel.",
+          "clue": "He tells the king that he is an O without a figure, and disappears from the play after a trial held in a farmhouse.",
           "firstAppearance": "1.4",
           "traits": [
             "relentless",
@@ -52823,7 +52794,7 @@
           "reference": "1.2.22",
           "stage": "act-1",
           "context": "The closing line of the soliloquy, as Gloucester comes in.",
-          "analysis": "A prayer shouted as he goes off, immediately before the trick it asks help with begins. He plants the word he has just spent twenty lines objecting to at the end, for emphasis, which tells you he means to keep it.",
+          "analysis": "A prayer shouted as his father comes in, immediately before the trick it asks help with begins. He plants the word he has just spent twenty lines objecting to at the end, for emphasis, which tells you he means to keep it.",
           "themes": [
             "nature"
           ],
@@ -52896,7 +52867,7 @@
           "reference": "2.4.259",
           "stage": "act-2",
           "context": "Answering Regan’s question, ‘What need one?’",
-          "analysis": "It is the best argument he makes in the play and he makes it in defence of a hundred armed men he does not need. The reasoning, though, is general and survives the occasion: measure a person by need and you have already agreed they are livestock. Two acts later he applies it to people with no roof at all.",
+          "analysis": "It is the best argument he makes in the play and he makes it in defence of a hundred armed men he does not need. The reasoning, though, is general and survives the occasion: measure a person by need and you have already agreed they are livestock. In the next act he applies it to people with no roof at all.",
           "themes": [
             "age",
             "justice"
@@ -53065,8 +53036,8 @@
           "speaker": "Gloucester",
           "reference": "4.1.38",
           "stage": "act-4",
-          "context": "Spoken to the man he has just hired to lead him, who is his son.",
-          "analysis": "The most quoted theology in the play is a man’s response to a private disaster, and the play does not endorse it; forty lines earlier he was blaming eclipses, and by Act V he dies of joy. Notice who hears it: Edgar, in disguise, who could disprove at least part of it by saying his own name.",
+          "context": "Spoken in the hearing of the beggar he is about to ask to lead him, who is his son.",
+          "analysis": "The most quoted theology in the play is a man’s response to a private disaster, and the play does not endorse it; in Act I he was blaming eclipses, and by Act V he dies of joy. Notice who hears it: Edgar, in disguise, who could disprove at least part of it by saying his own name.",
           "themes": [
             "nature",
             "justice"
@@ -53164,7 +53135,7 @@
           "reference": "5.2.9",
           "stage": "act-5",
           "context": "Getting his father off the battlefield after the British victory.",
-          "analysis": "Consolation offered under pressure by a son who still will not give his name, and it is a stoic commonplace that answers nothing. The last three words bring the grandeur down: this is something said to keep a man walking, and the play has not arrived at it as a philosophy.",
+          "analysis": "Consolation offered under pressure by a son who still will not give his name, and it is a stoic commonplace that answers nothing. The last two words bring the grandeur down: this is something said to keep a man walking, and the play has not arrived at it as a philosophy.",
           "themes": [
             "age",
             "nature"
@@ -54549,7 +54520,7 @@
           "reference": "4.2.52",
           "stage": "act-4",
           "context": "Improvising an epitaph on the deer for Sir Nathaniel.",
-          "analysis": "Six words beginning with p, which Holofernes calls affecting the letter and says argues facility. It is a complete school exercise, executed correctly and for nothing. He follows it with a poem that gets fifty sores out of one by adding the letter L, and he is truly pleased. The scene is funny and also the clearest picture in the play of learning with no object.",
+          "analysis": "Seven words beginning with p, which Holofernes calls affecting the letter and says argues facility. It is a complete school exercise, executed correctly and for nothing. He follows it with a poem that gets fifty sores out of one by adding the letter L, and he is truly pleased. The scene is funny and also the clearest picture in the play of learning with no object.",
           "themes": [
             "language",
             "knowledge"
@@ -57421,7 +57392,7 @@
           "role": "Thane of Fife",
           "summary": "He discovers the body, stays away from the coronation, and leaves for England without warning his household, a decision the play does not let him off. His grief in 4.3 is the one moment where a man is allowed to feel a loss fully before acting on it.",
           "clue": "He finds his king murdered, stays away from the coronation at Scone, and was from his mother’s womb untimely ripped.",
-          "firstAppearance": "2.3",
+          "firstAppearance": "1.6",
           "traits": [
             "blunt",
             "grieving",
@@ -57512,7 +57483,7 @@
           "id": "lady-macduff",
           "name": "Lady Macduff",
           "role": "Macduff’s wife",
-          "summary": "She gets one scene, and uses it to say the thing nobody else will: that a man who leaves his wife and children unguarded has behaved like a traitor to them, whatever his politics. She is killed on stage, which is rare in Shakespeare and deliberate here.",
+          "summary": "She gets one scene, and uses it to say the thing nobody else will: that a man who leaves his wife and children unguarded has behaved like a traitor to them, whatever his politics. Her son is killed on stage and she is chased off it, which is rare in Shakespeare and deliberate here.",
           "clue": "She calls her absent husband a traitor to his family, tells her son she can buy twenty husbands at any market, and is murdered in her own castle.",
           "firstAppearance": "4.2",
           "traits": [
@@ -57747,7 +57718,7 @@
           "reference": "1.5.65",
           "stage": "act-1",
           "context": "Instructing Macbeth as Duncan approaches the castle.",
-          "analysis": "The advice is a compressed piece of stage direction: a face to wear and a thing to be. It also answers Duncan’s complaint sixty lines earlier that there is no art to find the mind’s construction in the face: here is the art, and it belongs to the other side.",
+          "analysis": "The advice is a compressed piece of stage direction: a face to wear and a thing to be. It also answers Duncan’s complaint a scene earlier that there is no art to find the mind’s construction in the face: here is the art, and it belongs to the other side.",
           "themes": [
             "appearance"
           ],
@@ -57997,7 +57968,7 @@
           "speaker": "Macbeth",
           "reference": "5.3.22",
           "stage": "act-5",
-          "context": "Alone at Dunsinane as the English army approaches.",
+          "context": "At Dunsinane, after sending the terrified servant away, as the English army approaches.",
           "analysis": "He itemises exactly what he has lost, in order, and the list is entirely made of relationships. It is the most accurate self-assessment anyone makes in the play, and it changes nothing: within a few lines he is calling for his armour.",
           "themes": [
             "ambition",
@@ -58242,7 +58213,7 @@
       ],
       "discussionQuestions": [
         "The witches never tell Macbeth to do anything. Does that make them innocent?",
-        "Why does Shakespeare kill Lady Macduff and her son on stage, when almost every other death happens offstage?",
+        "Why does Shakespeare have Macduff’s son killed on stage, when Duncan’s murder happens out of sight?",
         "Macbeth hears of his wife’s death and talks about time. Is that grief, or the absence of it?",
         "Malcolm pretends to be worse than Macbeth in order to test Macduff. What does the scene suggest about the skills a king needs?",
         "The play is the shortest of the major tragedies. What would be lost if it were longer?"
@@ -64016,7 +63987,7 @@
             {
               "ref": "4.2",
               "title": "The examination",
-              "summary": "Dogberry conducts an inquiry he cannot follow and gets the confession anyway."
+              "summary": "Dogberry conducts an inquiry he cannot follow and gets the evidence anyway."
             }
           ]
         },
@@ -64024,7 +63995,7 @@
           "id": "act-5",
           "label": "Act V",
           "title": "Grief, confession and a second wedding",
-          "summary": "Leonato challenges the men who shamed his daughter, and they mock him for being old. The truth comes out because the constables question their prisoners; none of the gentlemen looks into it. Claudio mourns at a tomb, agrees to marry a cousin sight unseen, and is given Hero back.",
+          "summary": "Leonato challenges the men who shamed his daughter, and they mock him for being old. The truth comes out because the constables question their prisoners; none of the gentlemen looks into it. Claudio agrees to marry a cousin sight unseen, mourns at a tomb, and is given Hero back.",
           "scenes": [
             {
               "ref": "5.1",
@@ -64146,7 +64117,7 @@
           "name": "Hero",
           "role": "Leonato’s daughter",
           "summary": "She speaks little in the first half and is discussed constantly, and that makes her vulnerable: her reputation exists entirely in other people’s mouths. In 3.1 she runs the trick that catches Beatrice, so the play does show her capable of managing a scene when she is given one.",
-          "clue": "Her value is agreed by everyone before she has said fifty words, and it is destroyed in public by a man who never asks her a question.",
+          "clue": "Her value is agreed by everyone before she has said fifty words, and it is destroyed in public by a man who will not believe her answer.",
           "firstAppearance": "1.1",
           "traits": [
             "quiet",
@@ -64187,8 +64158,8 @@
           "id": "claudio",
           "name": "Claudio",
           "role": "A young lord of Florence",
-          "summary": "He falls in love by report, asks another man to do his courting, and believes an accusation on the evidence of a window at night. His cruelty at the wedding is a rehearsed public performance, planned the night before, and the play makes him accept a wife sight unseen before it forgives him.",
-          "clue": "He never speaks to the woman he loves without an intermediary, and he saves his accusation until the altar so that everybody can hear it.",
+          "summary": "He falls in love on sight, asks another man to do his courting, and believes an accusation on the evidence of a window at night. His cruelty at the wedding is a rehearsed public performance, planned the night before, and the play makes him accept a wife sight unseen before it forgives him.",
+          "clue": "He leaves the wooing of the woman he loves to an intermediary, and he saves his accusation until the altar so that everybody can hear it.",
           "firstAppearance": "1.1",
           "traits": [
             "young",
@@ -64528,7 +64499,7 @@
           "reference": "1.1.97",
           "stage": "act-1",
           "context": "His first words to Beatrice in the play, after she has interrupted him.",
-          "analysis": "He greets her with an allegorical title, as though she were a figure in a morality play, and she takes the personification off him in her reply and feeds it. Neither of them uses the other’s name in this whole exchange, which is the shape of the defence they have both agreed to.",
+          "analysis": "He greets her with an allegorical title, as though she were a figure in a morality play, and she takes the personification off him in her reply and feeds it. Neither of them addresses the other without a title in this whole exchange, which is the shape of the defence they have both agreed to.",
           "themes": [
             "wit"
           ],
@@ -64702,7 +64673,7 @@
           "speaker": "Hero",
           "reference": "3.1.107",
           "stage": "act-3",
-          "context": "The closing line of the scene in which she and Ursula trap Beatrice.",
+          "context": "Hero’s exit line, as she and Ursula leave Beatrice to come out of hiding.",
           "analysis": "Hero, who is usually spoken about and seldom speaks, gets the couplet that names the play’s method. A trap is not an arrow: it requires planning, bait and a victim who walks in, and every match in Messina is made that way, including the one that goes wrong.",
           "themes": [
             "noting",
@@ -64849,7 +64820,7 @@
           "reference": "4.1.288",
           "stage": "act-4",
           "context": "Her answer when Benedick tells her to bid him do anything for her.",
-          "analysis": "These two words come straight after a page of elaborate prose, and they are the shortest speech either of them makes in the play. Here the comedy’s machinery, a lover offering extravagant service, is taken literally, and the audience usually laughs, which adds to the discomfort of the moment.",
+          "analysis": "These two words come straight after a page of elaborate prose, and they are among the shortest speeches either of them makes in the play. Here the comedy’s machinery, a lover offering extravagant service, is taken literally, and the audience usually laughs, which adds to the discomfort of the moment.",
           "themes": [
             "gender",
             "forgiveness"
@@ -64950,7 +64921,7 @@
           "reference": "5.1.35",
           "stage": "act-5",
           "context": "Refusing his brother’s advice to bear his daughter’s disgrace calmly.",
-          "analysis": "He answers moral consolation with dentistry: the men who counsel patience have not been in the chair. It is the best serious writing in the play, and it is given to the man who, one scene earlier, wished his daughter dead sooner than shamed.",
+          "analysis": "He answers moral consolation with dentistry: the men who counsel patience have not been in the chair. It is the best serious writing in the play, and it is given to the man who, in the church scene, wished his daughter dead sooner than shamed.",
           "themes": [
             "forgiveness",
             "reputation"
@@ -65082,7 +65053,7 @@
           "question": "Is Claudio forgivable?",
           "focus": "Reputation, repentance and the second wedding",
           "plan": [
-            "Look at how he falls in love: by report, through a proxy, with a woman he has scarcely spoken to.",
+            "Look at how he falls in love: on sight, through a proxy, with a woman he has scarcely spoken to.",
             "Show that the denunciation at 4.1.28 is planned: he told Don John he would shame her ‘in the congregation’ (3.2), and he waits for the altar and an audience.",
             "Weigh the mourning of 5.3 against the fact that he agrees to marry an unseen cousin the next morning.",
             "Consider what the play withholds: Hero never accuses him, and no character demands that he explain himself.",
@@ -68396,7 +68367,7 @@
           "id": "emilia",
           "name": "Emilia",
           "role": "Iago’s wife, Desdemona’s attendant",
-          "summary": "She hands her husband the handkerchief without asking why, and spends the last act making up for it. Her long speech in 4.3 is the only sustained argument in the play against the sexual double standard, and it is spoken by a woman who has been married to Iago for years and has clearly learned it from him.",
+          "summary": "She lets her husband keep the handkerchief when he will not say why he wants it, and spends the last act making up for it. Her long speech in 4.3 is the only sustained argument in the play against the sexual double standard, and it is spoken by a woman who has been married to Iago for years and has clearly learned it from him.",
           "clue": "She picks up a handkerchief to please her husband, and later tells the truth about it knowing what he will do.",
           "firstAppearance": "2.1",
           "traits": [
@@ -68601,7 +68572,7 @@
           "id": "marriage",
           "name": "Marriage, duty and women",
           "canonicalName": "Marriage",
-          "summary": "Three marriages and an attachment run in parallel: Othello and Desdemona, Iago and Emilia, Cassio and Bianca. Each is a different arrangement of trust and property, and all three women are described by men as something other than what the audience has seen them be.",
+          "summary": "Two marriages and an attachment run in parallel: Othello and Desdemona, Iago and Emilia, Cassio and Bianca. Each is a different arrangement of trust and property, and all three women are described by men as something other than what the audience has seen them be.",
           "development": "Publicly defended in 1.3, privately corroded through Act III, and analysed by Emilia in 4.3 in the only scene where two women talk to each other at length."
         },
         {
@@ -68676,7 +68647,6 @@
             "reputation"
           ],
           "techniques": [
-            "soliloquy-and-aside",
             "dramatic-irony"
           ],
           "characters": [
@@ -68697,13 +68667,11 @@
           "reference": "1.1.64",
           "stage": "act-1",
           "context": "The end of his account of the two kinds of servant.",
-          "analysis": "The sentence is a flat contradiction that cannot be unpacked into sense, which is exactly its function: he tells the truth about himself in a form that guarantees nothing follows from it. It also inverts the formula God gives Moses, and the audience is left holding a confession no character has heard.",
+          "analysis": "The sentence is a flat contradiction that cannot be unpacked into sense, which is exactly its function: he tells the truth about himself in a form that guarantees nothing follows from it. It also inverts the formula God gives Moses, and the audience is left holding a confession that Roderigo, the one character who hears it, does not understand.",
           "themes": [
             "honesty"
           ],
-          "techniques": [
-            "soliloquy-and-aside"
-          ],
+          "techniques": [],
           "characters": [
             "iago",
             "roderigo"
@@ -68818,7 +68786,7 @@
           "reference": "1.3.294",
           "stage": "act-1",
           "context": "His parting shot as the Senate breaks up.",
-          "analysis": "The father’s last piece of spite comes in a rhyming couplet so that it sticks. Iago never has to make this argument himself: it has already been said in public by a senator, and Othello recalls it in the middle of Act III as though it were evidence.",
+          "analysis": "The father’s last piece of spite comes in a rhyming couplet so that it sticks. Iago only has to repeat this argument: it has already been said in public by a senator, so when he recalls it in the middle of Act III (‘She did deceive her father, marrying you’), Othello accepts it as evidence.",
           "themes": [
             "proof",
             "marriage",
@@ -68871,7 +68839,7 @@
           "reference": "2.3.243",
           "stage": "act-2",
           "context": "Drunk and disgraced, moments after the brawl that costs him his lieutenancy.",
-          "analysis": "Cassio uses the word five times in three lines, in prose, too drunk to vary his vocabulary, and the content is theologically serious. Iago answers by calling reputation an idle imposition, then tells Othello the opposite in 3.3, which is the clearest evidence that he believes neither.",
+          "analysis": "Cassio uses the word four times in two sentences, in prose, too drunk to vary his vocabulary, and the content is theologically serious. Iago answers by calling reputation an idle imposition, then tells Othello the opposite in 3.3, which is the clearest evidence that he believes neither.",
           "themes": [
             "reputation",
             "honesty"
@@ -69114,7 +69082,7 @@
           "reference": "5.2.7",
           "stage": "act-5",
           "context": "Standing over the bed with a taper in his hand.",
-          "analysis": "The same six words twice, meaning a candle and then a life, and the difference between them is the whole of the following seven lines: the lamp can be relit, she cannot. He is working out the metaphor while holding the object, which is why the line can only be understood in performance.",
+          "analysis": "The same four words twice, meaning a candle and then a life, and the difference between them is the whole of the following seven lines: the lamp can be relit, she cannot. He is working out the metaphor while holding the object, which is why the line can only be understood in performance.",
           "themes": [
             "proof",
             "marriage"
@@ -69162,7 +69130,7 @@
           "reference": "5.2.127",
           "stage": "act-5",
           "context": "Hearing Othello admit that he killed Desdemona, and that she died denying it.",
-          "analysis": "She reaches for the colour vocabulary the play has been circling since the first scene, and turns it on Othello at the moment he is least able to answer. It is also the first time anyone in Cyprus contradicts him to his face, and the whole exposure of Iago follows from a servant refusing to be quiet.",
+          "analysis": "She reaches for the colour vocabulary the play has been circling since the first scene, and turns it on Othello at the moment he is least able to answer. It is also the first time anyone in Cyprus condemns him to his face, and the whole exposure of Iago follows from a servant refusing to be quiet.",
           "themes": [
             "race",
             "honesty"
@@ -69239,7 +69207,7 @@
         {
           "label": "Source",
           "value": "Cinthio’s Hecatommithi",
-          "note": "An Italian prose tale supplies the Moor, the ensign, the wife and the handkerchief; Shakespeare supplies the names and the motives."
+          "note": "An Italian prose tale supplies the Moor, the ensign, the wife and the handkerchief; Shakespeare supplies every name but Desdemona’s, and the motives."
         },
         {
           "label": "Shape",
@@ -69314,7 +69282,7 @@
         "Iago gives at least three reasons for what he does. Does the play want us to believe any of them?",
         "Desdemona’s last words blame nobody. Is that a final act of love or a final silencing?",
         "The Turkish fleet is destroyed offstage before the second act begins. Why does Shakespeare cancel the war?",
-        "Emilia hands over the handkerchief without asking why. How far does the play hold her responsible?",
+        "Emilia lets Iago keep the handkerchief without learning why he wants it. How far does the play hold her responsible?",
         "Othello’s last speech arranges how he will be remembered. Should we let him?"
       ],
       "timeline": [
@@ -70995,7 +70963,7 @@
           "role": "Second of the five Bennet daughters",
           "summary": "Quick, funny and justly confident in her own judgement, which is exactly why the novel arranges for her to be wrong about the two men she is most certain of. Her wit is a form of courage in a household where nobody else will say anything true.",
           "clue": "She refuses two proposals, walks three miles through mud to nurse her sister, and only discovers her own vanity by reading a letter twice.",
-          "firstAppearance": "Chapter 1",
+          "firstAppearance": "Chapter 2",
           "traits": [
             "quick-witted",
             "proud of her discernment",
@@ -71091,7 +71059,7 @@
           "role": "The eldest Bennet daughter",
           "summary": "Her determination to think well of everybody is presented as a moral achievement and a practical disaster: it makes her unreadable to Bingley, unreadable to Darcy, and defenceless against Caroline Bingley. The novel likes her and does not recommend her method.",
           "clue": "She catches cold riding to dinner in the rain because her mother wanted her to stay the night, and forgives everyone involved.",
-          "firstAppearance": "Chapter 1",
+          "firstAppearance": "Chapter 2",
           "traits": [
             "generous",
             "reserved by temperament",
@@ -71144,7 +71112,7 @@
           "id": "wickham",
           "name": "George Wickham",
           "role": "Lieutenant in the militia",
-          "summary": "He tells Elizabeth a story about Darcy within an hour of meeting her, and she believes it because it is well told and because she wants to. His charm is a working method, and the militia’s stay in Meryton gives it a market.",
+          "summary": "He tells Elizabeth a story about Darcy the day after meeting her, and she believes it because it is well told and because she wants to. His charm is a working method, and the militia’s stay in Meryton gives it a market.",
           "clue": "The steward’s son who was left a living in a will, sold it for ready money, and then complained for the rest of the book that he had been robbed of it.",
           "firstAppearance": "Chapter 15",
           "traits": [
@@ -71239,7 +71207,7 @@
           "role": "The youngest Bennet daughter",
           "summary": "Fifteen, unsupervised and encouraged, she does exactly what her upbringing has trained her to do, and the novel is careful to spread the blame across her mother’s indulgence and her father’s amused neglect. Her elopement is the one plot event that could not be undone by an explanation.",
           "clue": "She is delighted to be married before her elder sisters and cannot understand why the family is not delighted too.",
-          "firstAppearance": "Chapter 1",
+          "firstAppearance": "Chapter 2",
           "traits": [
             "heedless",
             "shameless",
@@ -71263,7 +71231,7 @@
           "name": "Mr Bennet",
           "role": "Master of Longbourn",
           "summary": "He retreats to his library and treats his family as a source of entertainment, and the novel charges him for it: the daughter he never bothered to check runs away, and his best line, about making sport for our neighbours, comes after he has found out what that costs.",
-          "clue": "He tells his least favourite daughter that one parent will refuse to see her again whichever way she answers a proposal.",
+          "clue": "He tells his favourite daughter that one parent will refuse to see her again whichever way she answers a proposal.",
           "firstAppearance": "Chapter 1",
           "traits": [
             "ironic",
@@ -71466,7 +71434,7 @@
           "reference": "Chapter 1",
           "stage": "chapters-1-12",
           "context": "Answering his wife’s complaint that he has no compassion on her nerves.",
-          "analysis": "The joke depends on treating an ailment as an acquaintance, and it establishes the marriage in a line: he has been amusing himself at her expense for two decades and has changed nothing. Twenty years is also the age of the eldest daughter, which dates the arrangement without anyone remarking on it.",
+          "analysis": "The joke depends on treating an ailment as an acquaintance, and it establishes the marriage in a line: he has been amusing himself at her expense for two decades and has changed nothing. Twenty years is also roughly the age of the elder daughters, which dates the arrangement without anyone remarking on it.",
           "themes": [
             "marriage-and-money"
           ],
@@ -71589,7 +71557,7 @@
           "speaker": "Mr Bennet",
           "reference": "Chapter 18",
           "stage": "chapters-13-23",
-          "context": "Stopping Mary’s second song at the Netherfield ball.",
+          "context": "Stopping Mary after her second song at the Netherfield ball.",
           "analysis": "A father humiliates a daughter in public and the sentence is constructed so that the cruelty travels inside a compliment. It is the clearest instance of the habit Elizabeth will later have to judge: her father’s wit is aimed at his own children and costs him nothing.",
           "themes": [
             "reputation"
@@ -71716,7 +71684,7 @@
           "reference": "Chapter 34",
           "stage": "chapters-24-34",
           "context": "Refusing Darcy, after he has asked why he is rejected with so little civility.",
-          "analysis": "The superlative is a hostage to fortune and Austen collects on it twenty-six chapters later. She dates her verdict exactly, to ‘a month’, so Austen can later show her the evidence she had not yet seen.",
+          "analysis": "The superlative is a hostage to fortune and Austen collects on it twenty-four chapters later. She dates her verdict exactly, to ‘a month’, so Austen can later show her the evidence she had not yet seen.",
           "themes": [
             "judgement"
           ],
@@ -71765,7 +71733,7 @@
           "reference": "Chapter 36",
           "stage": "chapters-35-42",
           "context": "Alone, having read Darcy’s letter twice and reconstructed everything Wickham told her.",
-          "analysis": "Her charge against herself is a fault in method: she was pleased by one and slighted by the other, and let that do her thinking. ‘Vanity, not love, has been my folly’ applies Mary’s distinction from Chapter 5 to herself, thirty chapters after it was laughed at.",
+          "analysis": "Her charge against herself is a fault in method: she was pleased by one and slighted by the other, and let that do her thinking. ‘Vanity, not love, has been my folly’ applies Mary’s distinction from Chapter 5 to herself, thirty-one chapters after it was laughed at.",
           "themes": [
             "self-knowledge",
             "judgement"
@@ -71813,7 +71781,7 @@
           "speaker": "Elizabeth Bennet",
           "reference": "Chapter 43",
           "stage": "chapters-43-50",
-          "context": "Standing in the Pemberley gallery, hearing the housekeeper describe Darcy’s care of his sister.",
+          "context": "At Pemberley, on hearing the housekeeper call Darcy the best landlord and the best master that ever lived.",
           "analysis": "‘This place’ is doing double duty: the phrase means this circumstance, and she is standing in the house itself. The estate works as evidence (grounds, portraits, accounts of conduct over years) where conversation had produced only impressions.",
           "themes": [
             "judgement",
@@ -74016,7 +73984,7 @@
           "reference": "Chapter II",
           "stage": "waiting",
           "context": "After failing to find any other man visibly wrestling with the same fear.",
-          "analysis": "Four words on their own, and the isolation is entirely self-generated: he has been reading other men’s faces and finding nothing, which proves only that they are doing the same thing he is. The novel’s first joke is that everyone in the regiment believes himself the only coward in it.",
+          "analysis": "Five words on their own, and the isolation is entirely self-generated: he has been reading other men’s faces and finding nothing, which proves only that they are doing the same thing he is. The novel’s first joke is that everyone in the regiment believes himself the only coward in it.",
           "themes": [
             "self-deception",
             "courage"
@@ -79591,7 +79559,7 @@
           "reference": "1.2.8",
           "stage": "act-1",
           "context": "Refusing, for the moment, Paris’s request for Juliet’s hand.",
-          "analysis": "This is the same man who in Act III gives his daughter four days to marry or be turned out of doors, and he has not changed his opinion of her in between; he has only been contradicted. Shakespeare plants his reasonableness early so that the later scene registers as more than a bad temper.",
+          "analysis": "This is the same man who in Act III gives his daughter until Thursday to marry or be turned out of doors, and he has not changed his opinion of her in between; he has only been contradicted. Shakespeare plants his reasonableness early so that the later scene registers as more than a bad temper.",
           "themes": [
             "authority"
           ],
@@ -79692,7 +79660,7 @@
           "reference": "2.2.3",
           "stage": "act-2",
           "context": "In the Capulet orchard, seeing a light at the window above.",
-          "analysis": "Nine monosyllables and one name, which is unusually plain for a man who has spent Act I in elaborate paradoxes. The metaphor also reverses the scene’s conditions: it is the middle of the night, and he is describing a sunrise.",
+          "analysis": "Eight monosyllables and one name, which is unusually plain for a man who has spent Act I in elaborate paradoxes. The metaphor also reverses the scene’s conditions: it is the middle of the night, and he is describing a sunrise.",
           "themes": [
             "love"
           ],
@@ -79782,7 +79750,7 @@
           "speaker": "Juliet",
           "reference": "2.2.133",
           "stage": "act-2",
-          "context": "Called away by the Nurse, returning to the window for the third time.",
+          "context": "Moments before the Nurse first calls her away from the window.",
           "analysis": "Verona runs on exchange (dowries, bonds of kinship, favours owed), and this is the one economy in the play that does not work by subtraction. The rhyme of ‘sea’ and ‘thee’ ties the scale of the image to the person it is addressed to, which is why the hyperbole does not sound like boasting.",
           "themes": [
             "love"
@@ -79804,7 +79772,7 @@
           "speaker": "Juliet",
           "reference": "2.2.185",
           "stage": "act-2",
-          "context": "The end of the orchard scene, after three false exits.",
+          "context": "The end of the orchard scene, after two false exits.",
           "analysis": "The couplet jokes about itself: she says good night twice and then promises to keep saying it until morning, which is what the preceding hundred lines have been doing. The oxymoron is conventional, and on stage it becomes literal: she cannot leave, and the scene keeps starting again.",
           "themes": [
             "love",
@@ -79830,7 +79798,7 @@
           "reference": "2.3.21",
           "stage": "act-2",
           "context": "Gathering herbs at dawn, before Romeo arrives to ask for a wedding.",
-          "analysis": "He is talking about plants, and he has just said that the same flower cheers when smelt and kills when tasted. The couplet is also his own defence in advance: everything he does from here is a good thing misapplied, and he will use one of those flowers to fake a death.",
+          "analysis": "He is talking about plants, and in his next lines he says that the same flower cheers when smelt and kills when tasted. The couplet is also his own defence in advance: everything he does from here is a good thing misapplied, and he will use one of those flowers to fake a death.",
           "themes": [
             "fate",
             "death"
@@ -79942,7 +79910,7 @@
           "reference": "3.5.192",
           "stage": "act-3",
           "context": "To Juliet, who has said she will not marry Paris.",
-          "analysis": "Four verbs with nothing between them, each one a worse outcome than the last, from a man who two acts earlier wanted her consent before anything was agreed. Neither her mother nor her nurse contradicts him, and the scene ends with Juliet alone on stage for the first time since the orchard.",
+          "analysis": "Four verbs with nothing between them, each one a worse outcome than the last, from a man who two acts earlier wanted her consent before anything was agreed. Her mother then refuses to say a word for her, the Nurse advises her to marry Paris, and the scene ends with Juliet alone on stage.",
           "themes": [
             "authority"
           ],
@@ -79964,14 +79932,12 @@
           "reference": "3.5.237",
           "stage": "act-3",
           "context": "Alone, after the Nurse has advised her to marry Paris and forget Romeo.",
-          "analysis": "She ends fourteen years of intimacy in a line and a half, and she does it in verse to a woman who has just spoken prose. ‘Twain’ is a marriage word turned inside out: the one relationship in the play that predates the action is dissolved just as the Nurse becomes useless to her.",
+          "analysis": "She ends fourteen years of intimacy in a line and a half, and she says it to an empty room once the Nurse has gone. ‘Twain’ is a marriage word turned inside out: the one relationship in the play that predates the action is dissolved just as the Nurse becomes useless to her.",
           "themes": [
             "authority",
             "love"
           ],
-          "techniques": [
-            "bawdy-prose"
-          ],
+          "techniques": [],
           "characters": [
             "juliet",
             "nurse"
@@ -81080,7 +81046,7 @@
           "reference": "Chapter 22",
           "stage": "chapters-13-22",
           "context": "Telling Elinor about her engagement to Edward Ferrars, in a conversation Lucy has carefully arranged.",
-          "analysis": "Six words, placed after a long approach designed to make Elinor ask for them. The disclosure is an act of aggression disguised as intimacy: once Elinor holds the secret as a confidence, she is the one person in England who cannot use it.",
+          "analysis": "Seven words, placed after a long approach designed to make Elinor ask for them. The disclosure is an act of aggression disguised as intimacy: once Elinor holds the secret as a confidence, she is the one person in England who cannot use it.",
           "themes": [
             "secrecy",
             "performance"
@@ -93662,7 +93628,7 @@
           "reference": "Book III, chapter 8",
           "stage": "book-3",
           "context": "Over the brandy after dinner, Fyodor Pavlovitch asks each of his younger sons in turn.",
-          "analysis": "A drunk father puts the book’s central question in its barest form and gets two answers in three words each. The scene is comic and serious at the same moment, because the old man really wants to know. He goes on to ask about immortality, and Ivan says there is none.",
+          "analysis": "A drunk father puts the book’s central question in its barest form and gets two flat answers, one from each son. The scene is comic and serious at the same moment, because the old man really wants to know. He goes on to ask about immortality, and Ivan says there is none.",
           "themes": [
             "faith",
             "fathers-and-sons"
@@ -100884,7 +100850,7 @@
           "id": "chapter-5",
           "label": "Chapter 5",
           "title": "Tea in the rain",
-          "summary": "Gatsby has Nick’s lawn cut and fills his house with flowers for a meeting arranged four chapters and five years in advance. He knocks over a clock, recovers, and takes Daisy through the mansion, throwing shirts onto a table until she cries into them. The rain stops on cue. The green light becomes a light on a dock.",
+          "summary": "Gatsby has Nick’s lawn cut and fills his house with flowers for a meeting arranged four chapters and five years in advance. He nearly knocks over a clock, catches it, and takes Daisy through the mansion, throwing shirts onto a table until she cries into them. The rain stops on cue. The green light becomes a light on a dock.",
           "scenes": [
             {
               "ref": "Chapter 5",
@@ -100967,7 +100933,7 @@
           "relationships": [
             {
               "to": "gatsby",
-              "label": "neighbour, confidant and only mourner of",
+              "label": "neighbour, confidant and chief mourner of",
               "kind": "ally",
               "stages": [
                 "chapter-3",
@@ -101139,7 +101105,7 @@
           "id": "myrtle",
           "name": "Myrtle Wilson",
           "role": "Wife of a garage proprietor in the valley of ashes",
-          "summary": "She has one room in Manhattan in which she is a different person, and the novel is precise about what her ambition can actually buy: a dog collar, some magazines, a tea set. She runs out to the yellow car because she thinks Tom is driving it, and it kills her.",
+          "summary": "She has a small flat in Manhattan in which she is a different person, and the novel is precise about what her ambition can actually buy: a dog collar, some magazines, a flask of perfume. She runs out to the yellow car because she thinks Tom is driving it, and it kills her.",
           "clue": "She keeps a small flat with a puppy in it, says a name she has been forbidden to say, and runs into the road at the wrong car.",
           "firstAppearance": "Chapter 2",
           "traits": [
@@ -101244,7 +101210,7 @@
           "name": "Carelessness",
           "canonicalName": "Carelessness",
           "summary": "The word runs from Jordan’s driving in Chapter 3 to Nick’s summary of the Buchanans in Chapter 9, and it is deliberately not the same as cruelty. Carelessness is what money makes possible: the ability to damage something and then to be somewhere else, with the address unavailable.",
-          "development": "Introduced as a joke about a badly parked car, and paid out when a woman is killed by one and nobody who was in it is inconvenienced."
+          "development": "Introduced as a joke about a badly parked car, and paid out when a woman is killed by one and the woman who was driving it is never inconvenienced."
         },
         {
           "id": "geography",
@@ -101483,7 +101449,7 @@
           "reference": "Chapter 3",
           "stage": "chapter-3",
           "context": "The opening of the first party scene.",
-          "analysis": "The verb is repeated three times in two sentences so that invitation, the basic transaction of hospitality, can be shown to have collapsed. Nick’s one small distinction, that he was asked, qualifies him to narrate, and it also tells the reader that the parties are not for the people at them.",
+          "analysis": "The verb is repeated in two consecutive sentences so that invitation, the basic transaction of hospitality, can be shown to have collapsed. Nick’s one small distinction, that he was asked, qualifies him to narrate, and it also tells the reader that the parties are not for the people at them.",
           "themes": [
             "class",
             "invention"
@@ -101507,8 +101473,8 @@
           "speaker": "Jordan Baker",
           "reference": "Chapter 3",
           "stage": "chapter-3",
-          "context": "Jordan, who has just nearly hit a workman’s coat with her car, explaining why bad driving does not worry her.",
-          "analysis": "She has explained that it takes two to make an accident, so her own carelessness is safe until she meets another one, and then says she hates careless people. The word she introduces here is the one Nick will use, six chapters later, to sum up Tom and Daisy; she hands him the term for the novel’s central charge while demonstrating the offence.",
+          "context": "Jordan, who has just driven so close to some workmen that her fender flicked a button on one man’s coat, explaining why bad driving does not worry her.",
+          "analysis": "She has explained that it takes two to make an accident, so her own carelessness is safe until she meets another one, and then says she hates careless people. The word she takes up from Nick here is the one he will use, six chapters later, to sum up Tom and Daisy; she adopts the term for the novel’s central charge while demonstrating the offence.",
           "themes": [
             "carelessness"
           ],
@@ -101529,7 +101495,7 @@
           "speaker": "Nick Carraway",
           "reference": "Chapter 3",
           "stage": "chapter-3",
-          "context": "In the car with Jordan, on the way back from a party.",
+          "context": "In the car with Jordan, during a house party at Warwick.",
           "analysis": "Driving is the novel’s practical test of character, and every collision in it involves someone who thought the other party would take care. The exchange also sets out the alternative Nick offers the reader, be careful or get out, and at the end he takes it himself by going home.",
           "themes": [
             "carelessness"
@@ -101552,7 +101518,7 @@
           "reference": "Chapter 5",
           "stage": "chapter-5",
           "context": "Showing Daisy the view from his own house, minutes after their reunion.",
-          "analysis": "He tells her about the light in the flattest possible way, as a fact about her property, and ‘you always have’ gives away five years of watching. This is the moment the symbol is handed over to its owner, and the next paragraph records what it cost him.",
+          "analysis": "He tells her about the light in the flattest possible way, as a fact about her property, and ‘you always have’ gives away how long he has been watching. This is the moment the symbol is handed over to its owner, and the next paragraph records what it cost him.",
           "themes": [
             "the-past"
           ],
@@ -101695,8 +101661,8 @@
           "speaker": "Jay Gatsby",
           "reference": "Chapter 7",
           "stage": "chapter-7",
-          "context": "In Gatsby’s house on the hottest afternoon of the summer, while Daisy is speaking in the next room.",
-          "analysis": "Nick has spent two chapters failing to describe Daisy’s voice and Gatsby settles it in five words, which is the one moment in the book where he sees more clearly than the narrator. It is also the diagnosis of his own defeat: what he loves in her is a sound produced by a security he was not born into and cannot purchase.",
+          "context": "At the Buchanans’ house on the hottest afternoon of the summer, after Nick remarks that Daisy has an indiscreet voice.",
+          "analysis": "Nick has spent two chapters failing to describe Daisy’s voice and Gatsby settles it in six words, which is the one moment in the book where he sees more clearly than the narrator. It is also the diagnosis of his own defeat: what he loves in her is a sound produced by a security he was not born into and cannot purchase.",
           "themes": [
             "class",
             "the-past"
@@ -101719,7 +101685,7 @@
           "reference": "Chapter 8",
           "stage": "chapter-8",
           "context": "Leaving for work on the last morning of Gatsby’s life, after a night of listening to the Louisville story.",
-          "analysis": "Nick reports immediately afterwards that it was the only compliment he ever paid him, and that he disapproved of him from beginning to end, so the sentence comes with the disapproval attached. The staging matters too: it is shouted across a lawn, at a distance, by a man on his way to the office, and it is the last thing Gatsby hears from anybody.",
+          "analysis": "Nick reports immediately afterwards that it was the only compliment he ever paid him, and that he disapproved of him from beginning to end, so the sentence comes with the disapproval attached. The staging matters too: it is shouted across a lawn, at a distance, by a man on his way to the office, and it is the last thing Gatsby hears from Nick.",
           "themes": [
             "narration",
             "carelessness"
@@ -101743,7 +101709,7 @@
           "speaker": "",
           "reference": "Chapter 8",
           "stage": "chapter-8",
-          "context": "Nick’s reconstruction of Gatsby’s last hours, waiting beside a telephone that does not ring.",
+          "context": "Nick’s reconstruction of Gatsby’s last hours, floating in the pool while waiting for a telephone message that never comes.",
           "analysis": "Everything solid in the novel is here declared unreal at the moment the illusion fails, and the ghosts are ‘poor’, an adjective doing double duty for pity and for money. Nick admits he is guessing at all of this, so the most metaphysical passage in the book is explicitly an invention, made by a narrator about a man who invented himself.",
           "themes": [
             "invention",
@@ -101769,7 +101735,7 @@
           "speaker": "Owl Eyes",
           "reference": "Chapter 9",
           "stage": "chapter-9",
-          "context": "At the graveside, spoken by the drunk who admired the library in Chapter 3.",
+          "context": "At the cemetery gate after the burial, spoken by the drunk who admired the library in Chapter 3.",
           "analysis": "The only epitaph Gatsby gets comes from a man who went to one party and never met him, and it is four words of profanity. Set it against the two pages of lyric prose that close the book: the novel gives the plain human verdict first, and the grand one afterwards, and does not say which is truer.",
           "themes": [
             "carelessness",
@@ -101818,7 +101784,7 @@
           "reference": "Chapter 9",
           "stage": "chapter-9",
           "context": "Lying on the beach at night before leaving the East for good.",
-          "analysis": "The houses are made to melt away so that a seventeenth-century landscape can be laid over a twentieth-century one, and the colour green arrives from the dock light three hundred pages earlier. The move enlarges one man’s obsession into a continental habit without ever quite saying that Gatsby stands for America.",
+          "analysis": "The houses are made to melt away so that a seventeenth-century landscape can be laid over a twentieth-century one, and the colour green arrives from the dock light eight chapters earlier. The move enlarges one man’s obsession into a continental habit without ever quite saying that Gatsby stands for America.",
           "themes": [
             "the-past",
             "geography"
@@ -101891,7 +101857,7 @@
           "reference": "Chapter 9",
           "stage": "chapter-9",
           "context": "Ending the affair with Jordan Baker, who has accused him of throwing her over on the telephone.",
-          "analysis": "He uses his birthday as a moral unit of measurement, as though self-deception had an age limit, and by his arithmetic the age for honourable self-deception ended at twenty-five. Jordan’s reply, that she thought he was an honest, straightforward person, is the novel’s last word on his opening claim.",
+          "analysis": "He uses his birthday as a moral unit of measurement, as though self-deception had an age limit, and by his arithmetic the age for honourable self-deception ended at twenty-five. Jordan’s remark just before it, that she thought he was an honest, straightforward person, is the novel’s last word on his opening claim.",
           "themes": [
             "narration",
             "carelessness"
@@ -105863,7 +105829,7 @@
           "reference": "The Thing in the Pit",
           "stage": "the-siege",
           "context": "Looking down into the chasm at the first of the creatures.",
-          "analysis": "Six words, a full stop and no adjective: after pages of careful approach Hodgson gives the reveal the shortest sentence available, and the plainness makes it land.",
+          "analysis": "Seven words, a full stop and no adjective: after pages of careful approach Hodgson gives the reveal the shortest sentence available, and the plainness makes it land.",
           "themes": [
             "nature"
           ],
@@ -110480,7 +110446,7 @@
       "difficulty": 4,
       "lengthNote": "Around 2,600 lines, of which the trial takes nearly four hundred",
       "openingLine": "In sooth, I know not why I am so sad:",
-      "summary": "A merchant borrows money he does not need, on terms he thinks are a joke, so that a friend can go courting. The comedy that follows has a courtroom at its centre, and the clever rescue there is also a confiscation: Shylock loses his money, his profession and his religion in the space of forty lines, and the play then moves to a moonlit garden and never mentions him again.",
+      "summary": "A merchant borrows money he does not need, on terms he thinks are a joke, so that a friend can go courting. The comedy that follows has a courtroom at its centre, and the clever rescue there is also a confiscation: Shylock loses his money, his profession and his religion in the space of forty lines, and the play then moves to a moonlit garden and mentions him only twice more, never by name.",
       "referenceStyle": "act, scene and line of the Astor Library Edition",
       "sourceText": {
         "label": "Globe/Moby text of The Merchant of Venice",
@@ -110619,7 +110585,7 @@
           "id": "act-5",
           "label": "Act V",
           "title": "Belmont, and the rings",
-          "summary": "Lorenzo and Jessica trade stories of lovers who came to bad ends, the wives expose the business of the rings, and Antonio learns that three of his ships are safe after all. Shylock is mentioned only as the source of a deed of gift. The comedy closes with everybody paired except the merchant it is named after.",
+          "summary": "Lorenzo and Jessica trade stories of lovers who came to bad ends, the wives expose the business of the rings, and Antonio learns that three of his ships are safe after all. Shylock is mentioned only as the wealthy Jew Jessica stole from and as the source of a deed of gift. The comedy closes with everybody paired except the merchant it is named after.",
           "scenes": [
             {
               "ref": "5.1",
@@ -111049,7 +111015,7 @@
           "speaker": "Portia",
           "reference": "1.2.20",
           "stage": "act-1",
-          "context": "In prose to Nerissa, listing the suitors she cannot refuse.",
+          "context": "In prose to Nerissa, before they review the suitors she cannot refuse.",
           "analysis": "The sentence turns on one word used twice: ‘will’ as desire and ‘will’ as legal document. Portia’s problem is stated as a pun, which is a warning about the kind of play this is: the trial in Act IV will also be won by a word with two meanings.",
           "themes": [
             "value",
@@ -111339,7 +111305,7 @@
           "speaker": "Portia",
           "reference": "4.1.171",
           "stage": "act-4",
-          "context": "Her first words on entering the court in the gown of a doctor of laws.",
+          "context": "Among her first words on entering the court in the gown of a doctor of laws.",
           "analysis": "The question establishes her impartiality and is also unanswerable by sight, which is the play’s point about what Venice thinks it can see. She already knows which is which, so the line is a performance of neutrality by the one person in the room who has come to win.",
           "themes": [
             "disguise",
@@ -111488,7 +111454,7 @@
           "reference": "4.1.398",
           "stage": "act-4",
           "context": "Asked by Portia whether he accepts the court’s terms.",
-          "analysis": "Three words, and then four more lines asking to be allowed to leave because he is not well. Antonio had used the same phrase twelve lines earlier while dictating the terms, so the play puts the identical sentence in two mouths in one scene and lets the difference between them stand without comment.",
+          "analysis": "Three words, and then three more lines asking to be allowed to leave because he is not well. Antonio had used the same phrase twelve lines earlier while dictating the terms, so the play puts the identical sentence in two mouths in one scene and lets the difference between them stand without comment.",
           "themes": [
             "mercy",
             "antisemitism"
@@ -111510,7 +111476,7 @@
           "reference": "5.1.55",
           "stage": "act-5",
           "context": "In the garden at Belmont with Jessica, waiting for Portia’s return.",
-          "analysis": "The last act opens by changing the weather completely: after four hundred lines of courtroom prose the play produces its most lyrical verse, and does it in the mouth of the man who organised the elopement and the theft. Shakespeare buys the comedy its ending with music, and the person who says she is never merry when she hears it is sitting next to him.",
+          "analysis": "The last act opens by changing the weather completely: after four hundred lines of courtroom argument the play produces its most lyrical verse, and does it in the mouth of the man who organised the elopement and the theft. Shakespeare buys the comedy its ending with music, and the person who says she is never merry when she hears it is sitting next to him.",
           "themes": [
             "friendship",
             "value"
@@ -111534,7 +111500,7 @@
           "speaker": "Jessica",
           "reference": "5.1.70",
           "stage": "act-5",
-          "context": "Her reply to Lorenzo’s account of music’s power over wild animals.",
+          "context": "Spoken as the musicians begin to play; Lorenzo answers it with his account of music’s power over wild animals.",
           "analysis": "It is the last thing she says in the play. Lorenzo talks her out of it immediately, explaining that attentiveness only looks like sadness, and she does not answer, a silence that productions can play as agreement, exhaustion or something colder.",
           "themes": [
             "antisemitism",
@@ -111600,7 +111566,7 @@
             "Use 1.3 to show him giving an itemised account of the abuse, and Antonio confirming every word of it.",
             "Read 3.1 carefully: the questions establish common humanity, and the same logic then licenses revenge.",
             "Set the reported grief of 2.8 against the direct speech of 4.1.378 and ask which the audience is allowed to trust.",
-            "Close on his exit line and on the fact that Act V does not mention him."
+            "Close on his exit line and on the fact that Act V mentions him only twice, as ‘the wealthy Jew’ and ‘the rich Jew’, and never by name."
           ]
         },
         {
@@ -111684,7 +111650,7 @@
         {
           "year": 1741,
           "label": "Charles Macklin plays Shylock at Drury Lane",
-          "detail": "He abandoned the comic red wig of the Restoration stage and played the part seriously, which changed the play’s reputation.",
+          "detail": "He broke with the comic tradition of the part and played it seriously, which changed the play’s reputation.",
           "kind": "reception"
         },
         {
@@ -117242,7 +117208,7 @@
           "reference": "Chapter 3",
           "stage": "kinds-of-state",
           "context": "The general rule drawn from Louis XII’s career in Italy, after he has helped the Pope into the Romagna and Spain into Naples.",
-          "analysis": "A chapter of detailed Italian politics is compressed into ten words that would fit any century. The reason given is psychological: power is conferred by either cleverness or force, and the man who receives it distrusts both in his benefactor. Read from Lorenzo’s side it is an odd thing for a petitioner to write, since it tells a prince to be wary of exactly the useful servant Machiavelli is offering to be.",
+          "analysis": "A chapter of detailed Italian politics is compressed into eleven words that would fit any century. The reason given is psychological: power is conferred by either cleverness or force, and the man who receives it distrusts both in his benefactor. Read from Lorenzo’s side it is an odd thing for a petitioner to write, since it tells a prince to be wary of exactly the useful servant Machiavelli is offering to be.",
           "themes": [
             "power"
           ],
@@ -117780,7 +117746,7 @@
           "reference": "Chapter 26",
           "stage": "fortune-and-italy",
           "context": "Near the end of the exhortation, after a run of questions asking what Italian would refuse a liberator.",
-          "analysis": "After twenty-five chapters in the third person the book says us, and says it with the crudest verb it has used. The sentence is seven words long and follows a sequence of rising rhetorical questions, so it lands as a drop into plain speech. Whether the last chapter is the purpose of the whole or a flourish added to a technical work is the oldest argument about this book, and this line is the best evidence that the feeling was real.",
+          "analysis": "After twenty-five chapters in the third person the book says us, and says it with the crudest verb it has used. The sentence is eight words long and follows a sequence of rising rhetorical questions, so it lands as a drop into plain speech. Whether the last chapter is the purpose of the whole or a flourish added to a technical work is the oldest argument about this book, and this line is the best evidence that the feeling was real.",
           "themes": [
             "arms",
             "power"
@@ -124511,7 +124477,7 @@
           "id": "act-1",
           "label": "Act I",
           "title": "The storm, and Prospero’s story",
-          "summary": "The shipwreck is staged first and explained second. Prospero then tells Miranda the history she has never been told, wakes and dispatches Ariel, insults Caliban, and steers Ferdinand into meeting his daughter: four interviews in one scene, each conducted by a man who already knows how it ends.",
+          "summary": "The shipwreck is staged first and explained second. Prospero then tells Miranda the history she has never been told, summons and dispatches Ariel, insults Caliban, and steers Ferdinand into meeting his daughter: four interviews in one scene, each conducted by a man who already knows how it ends.",
           "scenes": [
             {
               "ref": "1.1",
@@ -124735,7 +124701,7 @@
           "role": "Prince of Naples, Alonso’s son",
           "summary": "He is separated from the ship, told his father has drowned, and set to carrying logs, a trial with no purpose except to make Miranda seem hard-won. He accepts the labour without complaint, which is the only test Prospero can devise and the only one he passes.",
           "clue": "Told by a song that his father lies full fathom five, he piles up thousands of logs for a magician and finds the work no burden because of who is watching.",
-          "firstAppearance": "1.2",
+          "firstAppearance": "1.1",
           "traits": [
             "courteous",
             "grieving",
@@ -125369,7 +125335,7 @@
           "speaker": "Prospero",
           "reference": "4.1.206",
           "stage": "act-4",
-          "context": "Alone, immediately after breaking off the masque.",
+          "context": "Alone, after sending Ariel for the glistering clothes to trap Caliban and his confederates.",
           "analysis": "The verdict is delivered by a man who has just spent years teaching the creature he says cannot be taught, and the repetitions (‘all, all lost, quite lost’) are those of someone arguing with himself. It is also the play’s clearest statement of the position Miranda’s existence contradicts.",
           "themes": [
             "nature-nurture",
@@ -125440,7 +125406,7 @@
           "reference": "5.1.205",
           "stage": "act-5",
           "context": "On seeing the assembled courtiers for the first time.",
-          "analysis": "The people she is admiring include the two men who set her adrift to die and a third who tried to murder his brother two days ago. Prospero’s four-word reply, “’Tis new to thee”, is the most economical piece of irony in Shakespeare, and it is the last thing he says to his daughter in the play.",
+          "analysis": "The people she is admiring include the two men who set her adrift to die and a third who tried to murder his brother that afternoon. Prospero’s four-word reply, “’Tis new to thee”, is the most economical piece of irony in Shakespeare, and it is the last thing he says to his daughter in the play.",
           "themes": [
             "forgiveness",
             "power"
@@ -125641,7 +125607,7 @@
         {
           "year": 1667,
           "label": "Dryden and Davenant’s The Enchanted Island",
-          "detail": "A Restoration rewriting that gave Miranda a sister and Caliban a mate, and held the stage for well over a century.",
+          "detail": "A Restoration rewriting that gave Miranda a sister and Caliban one too, and held the stage for well over a century.",
           "kind": "reception"
         },
         {
@@ -125680,7 +125646,7 @@
           "name": "Naples",
           "lat": 40.8518,
           "lon": 14.2681,
-          "note": "Alonso’s kingdom, and the wedding party the shipwrecked court was returning from."
+          "note": "Alonso’s kingdom, and the home the shipwrecked wedding party was returning to."
         },
         {
           "name": "Tunis",
@@ -126553,7 +126519,7 @@
           "reference": "Chapter VI",
           "stage": "naming",
           "context": "Explaining why the valet was so often with the boy.",
-          "analysis": "Four words, and they are the entire documented case against Peter Quint. Free is a word about rank as much as conduct, and the governess converts it into something much larger over the following chapters without ever being given more.",
+          "analysis": "Five words, and they are the entire documented case against Peter Quint. Free is a word about rank as much as conduct, and the governess converts it into something much larger over the following chapters without ever being given more.",
           "themes": [
             "silence",
             "service"
@@ -130512,7 +130478,7 @@
           "reference": "Section IV",
           "stage": "section-4",
           "context": "Asked whether they must avoid even thinking of them.",
-          "analysis": "Six words that give the other region a physics. Thought is visible there, and has a shape, which means the two men can be tracked by the one thing they cannot switch off.",
+          "analysis": "Seven words that give the other region a physics. Thought is visible there, and has a shape, which means the two men can be tracked by the one thing they cannot switch off.",
           "themes": [
             "silence",
             "knowledge"
@@ -135243,7 +135209,7 @@
           "reference": "First entry",
           "stage": "arrival",
           "context": "After admitting she believes the house is haunted.",
-          "analysis": "Eleven words that describe a marriage and excuse it in the same breath. ‘Of course’ and ‘one expects’ are the story’s method: the narrator supplies the defence before the reader can object, and the defence is the evidence.",
+          "analysis": "Twelve words that describe a marriage and excuse it in the same breath. ‘Of course’ and ‘one expects’ are the story’s method: the narrator supplies the defence before the reader can object, and the defence is the evidence.",
           "themes": [
             "gender",
             "authority"
@@ -135586,7 +135552,7 @@
           "reference": "Final entry",
           "stage": "the-escape",
           "context": "Spoken to John through the door he has just opened.",
-          "analysis": "The only speech she makes in the story, and the first sentence in it without a hedge. ‘Jane’ appears nowhere else: readers have taken it for her own name, for Jennie misprinted, and for the self she has just left behind. The victory and the disaster are the same act.",
+          "analysis": "Her last words in the story, and the first sentence in it without a hedge. ‘Jane’ appears nowhere else: readers have taken it for her own name, for Jennie misprinted, and for the self she has just left behind. The victory and the disaster are the same act.",
           "themes": [
             "identity",
             "confinement"
@@ -141188,7 +141154,7 @@
           "reference": "2.2.53",
           "stage": "act-2",
           "context": "Interrupting Hector’s argument that Helen is not worth what she costs to keep.",
-          "analysis": "Five words that reduce every question in the play to a market. Troilus is arguing that worth is conferred by the buyer, which is convenient for a council that has already paid, and fatal to him personally: if value is only what somebody will give, then Cressida is worth one Antenor, and a sleeve is worth whatever Diomedes decides.",
+          "analysis": "Six words that reduce every question in the play to a market. Troilus is arguing that worth is conferred by the buyer, which is convenient for a council that has already paid, and fatal to him personally: if value is only what somebody will give, then Cressida is worth one Antenor, and a sleeve is worth whatever Diomedes decides.",
           "themes": [
             "value"
           ],
@@ -142109,7 +142075,7 @@
           "name": "Orsino",
           "role": "Duke of Illyria",
           "summary": "He opens the play calling for music and stops it within eight lines, which is his whole character in one gesture. He has never spoken to Olivia; what he loves is the condition of loving, and the play transfers him to Viola with an ease that has troubled readers ever since.",
-          "clue": "He orders up music as an appetite to be killed by excess, courts a woman he never meets, and proposes to his own page in the last scene.",
+          "clue": "He orders up music as an appetite to be killed by excess, courts by proxy a woman he does not meet until the final scene, and proposes to his own page in the last scene.",
           "firstAppearance": "1.1",
           "traits": [
             "luxuriant",
@@ -142337,7 +142303,7 @@
           "id": "sebastian",
           "name": "Sebastian",
           "role": "Viola’s twin brother",
-          "summary": "He arrives late, is given money by a man who loves him, and spends his scenes being greeted by strangers who know his name. Handed a countess, he does not question it; he checks that he is not mad, and marries her within the hour.",
+          "summary": "He arrives late, is given money by a man who loves him, and spends his scenes being greeted by strangers who take him for Cesario. Handed a countess, he does not question it; he checks that he is not mad, and marries her within the hour.",
           "clue": "Everyone in the city seems to know him, one of them hits him and another proposes marriage, and he concludes that the air and the sun are at least real.",
           "firstAppearance": "2.1",
           "traits": [
@@ -142541,7 +142507,7 @@
           "reference": "1.2.1",
           "stage": "act-1",
           "context": "Her first line, on the coast, having just survived the wreck.",
-          "analysis": "Five words that establish everything: she has no idea where she is, no standing, and no information. The Captain’s answer, ‘This is Illyria, lady’, is the last time anybody in the play addresses her as a woman until the final scene.",
+          "analysis": "Five words that establish everything: she has no idea where she is, no standing, and no information. The Captain’s replies (‘This is Illyria, lady’, then ‘madam’ twice more in the same scene) are the last time anybody in the play addresses her as a woman until the final scene.",
           "themes": [
             "disguise",
             "mourning"
@@ -142588,7 +142554,7 @@
           "reference": "1.5.75",
           "stage": "act-1",
           "context": "Rebuking her steward for sneering at Feste’s wit.",
-          "analysis": "The diagnosis is delivered in the same appetite imagery Orsino used in the first scene, so the play’s two kinds of self-absorption are made to rhyme. It is also the reason the forged letter will work: his mistress has told him publicly what his weakness is, and Maria is listening.",
+          "analysis": "The diagnosis is delivered in the same appetite imagery Orsino used in the first scene, so the play’s two kinds of self-absorption are made to rhyme. It is also the reason the forged letter will work: his mistress has told him publicly what his weakness is, and in 2.3 Maria builds her plot on exactly that vice.",
           "themes": [
             "class",
             "desire"
@@ -151937,7 +151903,7 @@
             {
               "ref": "Chapter 31",
               "title": "",
-              "summary": "Lockwood’s second visit: Hareton with a book he cannot read, and Cathy’s contempt for him."
+              "summary": "Lockwood’s third visit: Hareton with a book he cannot read, and Cathy’s contempt for him."
             }
           ]
         },
@@ -152026,7 +151992,7 @@
           "id": "catherine-earnshaw",
           "name": "Catherine Earnshaw",
           "role": "Of Wuthering Heights, later Mrs Linton",
-          "summary": "She scratches three surnames on a window ledge before she has worn any of them, and her great speech is an argument that identity can be shared. She marries for money and standing and says so plainly, then treats her own decision as a wrong done to her.",
+          "summary": "She scratches three surnames on a window ledge before she has worn more than one of them, and her great speech is an argument that identity can be shared. She marries for money and standing and says so plainly, then treats her own decision as a wrong done to her.",
           "clue": "She carves three versions of her own name into a windowsill, and tells a housekeeper that she is another person.",
           "firstAppearance": "Chapter 3",
           "traits": [
@@ -152115,7 +152081,7 @@
           "role": "Servant at both houses; the novel’s chief narrator",
           "summary": "She raises three generations, and almost every significant concealment in the plot is hers: she does not tell Catherine that Heathcliff is listening, does not tell Edgar that his wife is ill, and does not tell anyone where Cathy has gone. She presents herself throughout as the sensible one.",
           "clue": "She has been in service at both houses since childhood, tells the whole story to a stranger, and is at the centre of every secret she reports.",
-          "firstAppearance": "Chapter 4",
+          "firstAppearance": "Chapter 2",
           "traits": [
             "capable",
             "managing",
@@ -152192,7 +152158,7 @@
           "role": "Catherine’s brother, master of the Heights after his father",
           "summary": "He begins the cruelty and is destroyed by it more thoroughly than his victim. The novel is careful to date his collapse to his wife’s death, which makes him the first of the book’s men to be undone by a bereavement, and the template for what happens to Heathcliff twenty years later.",
           "clue": "He is displaced in his father’s affections by a stranger, takes it out on him for years, and gambles the family land away to him over cards.",
-          "firstAppearance": "Chapter 4",
+          "firstAppearance": "Chapter 3",
           "traits": [
             "jealous",
             "grieving",
@@ -152263,7 +152229,7 @@
           "role": "Daughter of Catherine and Edgar",
           "summary": "Her mother’s temper with her father’s kindness attached, raised inside a park and let out too late. What distinguishes her is that she can be taught and can teach: the second half of the book turns on her deciding to make a friend of the man she has been mocking.",
           "clue": "She is kept inside a park wall for thirteen years, married by force to a dying cousin, and spends the last chapters teaching a grown man to read.",
-          "firstAppearance": "Chapter 18",
+          "firstAppearance": "Chapter 2",
           "traits": [
             "quick-tempered",
             "brave",
@@ -152498,7 +152464,7 @@
           "reference": "Chapter 1",
           "stage": "lockwood",
           "context": "Explaining the name of the house.",
-          "analysis": "A southerner glosses a northern word for readers he assumes share his vocabulary, and the class distance in the book is audible in the phrase ‘significant provincial adjective’. He then notices the stunted firs and the thorns all reaching one way, and draws no conclusion from them at all.",
+          "analysis": "A southerner glosses a northern word for readers he assumes share his vocabulary, and the class distance in the book is audible in the phrase ‘significant provincial adjective’. He then notices the stunted firs and the thorns all reaching one way, and reads them only as a gauge of the north wind.",
           "themes": [
             "nature",
             "class"
@@ -152549,7 +152515,7 @@
           "reference": "Chapter 3",
           "stage": "lockwood",
           "context": "The voice at the window answering Lockwood’s refusal.",
-          "analysis": "Twenty years is the interval since Catherine’s death, and a waif is exactly what Heathcliff was when Mr Earnshaw picked him up in Liverpool. The dream gives her his condition (homeless, nameless, outside a door), which is a stronger statement of their identity than anything either of them says while alive.",
+          "analysis": "Twenty years is roughly the interval since Catherine’s death (in fact nearer eighteen), and a waif is exactly what Heathcliff was when Mr Earnshaw picked him up in Liverpool. The dream gives her his condition (homeless, nameless, outside a door), which is a stronger statement of their identity than anything either of them says while alive.",
           "themes": [
             "haunting",
             "identity"
@@ -152726,7 +152692,7 @@
           "speaker": "Heathcliff",
           "reference": "Chapter 15",
           "stage": "return",
-          "context": "Their last meeting, two hours before Catherine’s death.",
+          "context": "Their last meeting, on the day of Catherine’s death.",
           "analysis": "He conducts a deathbed scene as a cross-examination, and the word he keeps using is ‘right’, the language of property and entitlement that he will spend the rest of the novel applying to land. There is no comfort offered in the entire interview by either of them.",
           "themes": [
             "identity",
@@ -152752,7 +152718,7 @@
           "reference": "Chapter 15",
           "stage": "return",
           "context": "Continuing the last interview, holding the dying Catherine.",
-          "analysis": "The sentence turns on a single verb repeated three times with a different subject each time, so that the blame moves and then doubles back. It is also the clearest formulation of the identity claim in reverse: if her heart and his are the same organ, she has committed an injury she could not survive either.",
+          "analysis": "The sentence turns on a single verb used four times, with the subject shifting from ‘I’ to ‘you’, so that the blame moves and then doubles back. It is also the clearest formulation of the identity claim in reverse: if her heart and his are the same organ, she has committed an injury she could not survive either.",
           "themes": [
             "identity"
           ],
@@ -152924,7 +152890,7 @@
           "reference": "Chapter 33",
           "stage": "ending",
           "context": "At breakfast, after Cathy has begun planting flowers in the Heights garden.",
-          "analysis": "This is the moment Heathcliff’s whole scheme fails, and it fails over breakfast, with no confrontation. Nelly’s aside, ‘the reckless thing’, registers the shock: a girl who has been locked in this house tells its owner that she has an ally, and he goes pale.",
+          "analysis": "This is the moment Heathcliff’s whole scheme fails, and it fails over breakfast, in a quarrel about a few yards of garden. Nelly’s aside, ‘the reckless thing’, registers the shock: a girl who has been locked in this house tells its owner that she has an ally, and he goes pale.",
           "themes": [
             "repetition",
             "revenge"
@@ -153000,7 +152966,7 @@
           "reference": "Chapter 34",
           "stage": "ending",
           "context": "The last sentence of the novel, at the three headstones.",
-          "analysis": "The calm belongs to Lockwood, who has been wrong about everything since page one, and it directly contradicts the shepherd boy and the country folk two paragraphs earlier who swear they have seen Heathcliff walking. Brontë ends by giving the last word to the least reliable person in the book, and leaves the reader to decide whether to take it.",
+          "analysis": "The calm belongs to Lockwood, who has been wrong about everything since page one, and it directly contradicts the shepherd boy and the country folk a page earlier who swear they have seen Heathcliff walking. Brontë ends by giving the last word to the least reliable person in the book, and leaves the reader to decide whether to take it.",
           "themes": [
             "haunting",
             "nature"

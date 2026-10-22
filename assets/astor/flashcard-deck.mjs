@@ -32,9 +32,18 @@ const SITTING = 10;
 const MODE_KEY = 'astor-flashcard-mode';
 
 const MODES = [
-  { id: 'recall', name: 'Recall', note: 'See the line. Say who, where and why.' },
-  { id: 'complete', name: 'Complete', note: 'See the moment. Say the line.' },
-  { id: 'memorise', name: 'Memorise', note: 'Learn it word for word.' }
+  { id: 'recall', name: 'Recall', note: 'Name who says it',
+    help: 'Read the line. Say who speaks it, when it comes and why it matters, then turn the card to check.' },
+  { id: 'complete', name: 'Complete', note: 'Finish the line',
+    help: 'You get the moment and the first few words. Say the rest of the line aloud, then turn to check it word for word.' },
+  { id: 'memorise', name: 'Memorise', note: 'Learn it by heart',
+    help: 'Read the line aloud, then hide more of it each time until the first letters are enough. Tap a hidden word to peek.' }
+];
+const MEMORISE_PROMPTS = [
+  'Read it aloud, twice.',
+  'Say it in full. A third of the words are hidden.',
+  'Again. Two thirds are hidden now.',
+  'Only first letters. Can you say it all?'
 ];
 
 const BOXES = [
@@ -53,18 +62,21 @@ function saveMode(id) {
   try { window.localStorage.setItem(MODE_KEY, id); } catch { /* optional */ }
 }
 
-if (mount) start();
 
 let keyHandler = null;
 
 async function start() {
   mount.append(el('p', { class: 'rv-loading', text: 'Shuffling the deck…' }));
   let shelf;
-  try { shelf = await loadShelf(); } catch {
-    loadFailed(mount, 'The cards didn’t load.');
+  try { shelf = await loadShelf(); } catch (error) {
+    loadFailed(mount, 'The cards didn’t load.', error);
     return;
   }
   const books = shelf.books.filter(book => book.quotations >= 5);
+  if (!books.length) {
+    loadFailed(mount, 'No books have flashcards yet.', null, 'Try again later.');
+    return;
+  }
   const wanted = preferredSlug();
   const first = books.find(book => book.slug === wanted)
     || books.find(book => recentlyViewed(20).some(entry => entry.slug === book.slug))
@@ -84,10 +96,9 @@ async function open(shelf, books, meta) {
   clear(mount);
   mount.append(el('p', { class: 'rv-loading', text: 'Opening ' + meta.title + '…' }));
   let book;
-  try { book = await loadBook(meta.slug); } catch {
+  try { book = await loadBook(meta.slug); } catch (error) {
     if (ticket !== generation) return;
-    clear(mount);
-    mount.append(el('p', { class: 'rv-empty', text: 'That deck didn’t load. Try another book.' }));
+    loadFailed(mount, 'That deck didn’t load.', error);
     return;
   }
   if (ticket !== generation || book.slug !== meta.slug) return;
@@ -168,6 +179,11 @@ function sitting(book, meta, mode, only = null) {
     turned = true;
     render(true);
   }
+  function stepBack() {
+    if (turned || step === 0) return;
+    step -= 1;
+    render();
+  }
 
   function modeSwitch() {
     const group = el('div', { class: 'rx-modes', role: 'radiogroup', 'aria-label': 'How to work through the cards' });
@@ -179,6 +195,10 @@ function sitting(book, meta, mode, only = null) {
       }, [el('b', { text: option.name }), el('span', { text: option.note })]));
     }
     return group;
+  }
+  // What this way of working asks, in a sentence, under the switch.
+  function modeHelp() {
+    return el('p', { class: 'rx-mode-help', text: MODES.find(option => option.id === mode).help });
   }
 
   function render(justTurned = false) {
@@ -193,6 +213,7 @@ function sitting(book, meta, mode, only = null) {
 
     const page = el('div', { class: 'rx-deck', 'data-mode': mode });
     page.append(modeSwitch());
+    if (position === 0 && step === 0 && !turned) page.append(modeHelp());
 
     const track = el('ol', { class: 'rx-track', 'aria-hidden': 'true' });
     // With many cards the book's drawings would crowd the row: plain ticks then.
@@ -209,35 +230,40 @@ function sitting(book, meta, mode, only = null) {
     // The card: a front and a back on one sheet, turned in three dimensions.
     const front = el('div', { class: 'rx-flip-face is-front', 'aria-hidden': String(turned) });
     const back = el('div', { class: 'rx-flip-face is-back', 'aria-hidden': String(!turned) });
-    if (hasMotifs()) { front.append(motif(position, 'rx-card-motif')); back.append(motif(position + 3, 'rx-card-motif')); }
     const badge = el('p', { class: 'rx-flip-state is-' + state }, [el('i', { 'aria-hidden': 'true' }), state === 'new' ? 'A new line' : STATE_WORDS[state].replace(/^./, c => c.toUpperCase())]);
+    // Each side opens with one row: where the line stands, and the book's emblem.
+    const headRow = (left, index) => el('div', { class: 'rx-flip-head' }, [left, hasMotifs() ? motif(index, 'rx-card-motif') : null]);
+    const words = quotation.text.split(/\s+/);
+    const given = Math.min(4, Math.max(2, Math.floor(words.length / 4)));
 
     if (mode === 'recall') {
-      put(front, badge.cloneNode(true),
+      put(front, headRow(badge.cloneNode(true), position),
         el('blockquote', { class: 'rx-flip-line' }, [el('p', { text: quotation.text })]),
-        el('p', { class: 'rx-flip-prompt', text: 'Who says it? Where? Why does it matter?' }));
+        el('p', { class: 'rx-flip-prompt', text: 'Who says it? When? Why does it matter?' }));
     } else if (mode === 'complete') {
-      const opening = quotation.text.split(/\s+/).slice(0, Math.min(4, Math.max(2, Math.floor(quotation.text.split(/\s+/).length / 4)))).join(' ');
-      put(front, badge.cloneNode(true),
+      const opening = words.slice(0, given).join(' ');
+      put(front, headRow(badge.cloneNode(true), position),
         el('p', { class: 'rx-flip-cue' }, [el('span', { class: 'rx-label', text: 'The moment' }), el('span', { text: where })]),
         quotation.context ? el('p', { class: 'rx-flip-context', text: quotation.context }) : null,
         el('blockquote', { class: 'rx-flip-line is-start' }, [el('p', { text: '“' + opening.replace(/^[“"]/, '') + ' …”' })]),
-        el('p', { class: 'rx-flip-prompt', text: 'Say the rest of the line, then turn.' }));
+        el('p', { class: 'rx-flip-prompt', text: 'Say the rest aloud, then turn.' }));
     } else {
-      put(front, badge.cloneNode(true),
+      put(front, headRow(el('ol', { class: 'rx-mem-steps', 'aria-label': 'Step ' + (step + 1) + ' of 4' }, [0, 1, 2, 3].map(index => el('li', { class: index <= step ? 'is-on' : '' }))), position),
         el('blockquote', { class: 'rx-flip-line is-memorise' }, [memoriseLine(quotation, step)]),
-        el('p', { class: 'rx-flip-prompt', text: [
-          'Read it aloud.',
-          'Now say it in full.',
-          'Again, from memory.',
-          'Just the first letters. Can you say it all?'
-        ][step] }),
-        el('ol', { class: 'rx-mem-steps', 'aria-label': 'Step ' + (step + 1) + ' of 4' }, [0, 1, 2, 3].map(index => el('li', { class: index <= step ? 'is-on' : '' }))));
+        el('p', { class: 'rx-flip-prompt', text: MEMORISE_PROMPTS[step] }));
     }
 
+    // The back answers the front: in Recall, who and where; in Complete, the
+    // words the reader had to supply, set apart from those they were given.
+    const answerLine = mode === 'complete'
+      ? el('blockquote', { class: 'rx-flip-line is-answer' }, [el('p', {}, [el('span', { class: 'rx-flip-given', text: words.slice(0, given).join(' ') }), ' ' + words.slice(given).join(' ')])])
+      : el('blockquote', { class: 'rx-flip-line is-answer' }, [el('p', { text: quotation.text })]);
     put(back,
-      el('p', { class: 'rx-flip-where', text: where }),
-      mode === 'recall' ? null : el('blockquote', { class: 'rx-flip-line is-answer' }, [el('p', { text: quotation.text })]),
+      headRow(el('p', { class: 'rx-flip-where' }, [
+        quotation.speaker ? el('b', { text: quotation.speaker }) : null,
+        el('span', { text: [stage?.label, quotation.reference].filter(Boolean).join(' · ') })
+      ]), position + 3),
+      mode === 'recall' ? null : answerLine,
       quotation.context && mode === 'recall' ? el('p', { class: 'rx-flip-context', text: quotation.context }) : null,
       el('p', { class: 'rx-flip-analysis', text: quotation.analysis }),
       mode === 'recall' ? el('p', { class: 'rx-flip-small', text: quoted(quotation.text.slice(0, 80) + (quotation.text.length > 80 ? '…' : '')) }) : null
@@ -253,6 +279,7 @@ function sitting(book, meta, mode, only = null) {
     if (!turned) {
       const label = mode === 'memorise' && step < 3 ? 'Hide more words' : 'Turn the card';
       actions.append(el('button', { class: 'rx-button is-primary is-wide', type: 'button', onclick: advance }, [el('span', { text: label }), el('span', { class: 'rx-kbd', 'aria-hidden': 'true', text: 'Space' })]));
+      if (mode === 'memorise' && step > 0) actions.append(el('button', { class: 'rx-text-button', type: 'button', text: 'Show more words', onclick: stepBack }));
     } else {
       actions.append(
         el('button', { class: 'rx-rate is-not', type: 'button', onclick: () => answer(false) }, [el('b', { text: 'Not yet' }), el('span', { text: 'again tomorrow' })]),
@@ -278,10 +305,14 @@ function sitting(book, meta, mode, only = null) {
     mount.append(page);
 
     if (justTurned && !prefersReducedMotion()) {
-      // Drawn unturned, then turned once laid out, so the turn is seen.
+      // Drawn unturned, then turned once laid out, so the turn is seen; the
+      // card grows or shrinks to the side now showing as it turns.
+      const inner = card.firstChild;
       card.classList.remove('is-turned');
-      void card.offsetWidth;
+      const before = inner.offsetHeight;
       card.classList.add('is-turned');
+      const after = inner.offsetHeight;
+      if (before !== after) inner.animate?.([{ height: before + 'px' }, { height: after + 'px' }], { duration: 460, easing: 'cubic-bezier(.2,.7,.2,1)' });
     }
     // After turning, focus the card so its answer is read before the buttons.
     if (turned) card.focus({ preventScroll: true });
@@ -390,7 +421,20 @@ export function memoriseLine(quotation, step) {
     const match = token.match(/^([^\p{L}]*)(\p{L})([\p{L}'’-]*)(.*)$/u);
     if (!match) { line.append(token); return; }
     const [, before, first, rest, after] = match;
-    line.append(before, el('span', { class: 'rx-mem-word', 'aria-label': first + ' blank', style: '--len:' + Math.max(1, rest.length) }, [el('b', { text: first }), el('span', { 'aria-hidden': 'true' })]), after);
+    // A hidden word keeps its first letter; tapping it shows the rest for a moment.
+    const word = el('button', { type: 'button', class: 'rx-mem-word', 'aria-label': 'Word beginning ' + first + '. Show it', style: '--len:' + Math.max(1, rest.length) }, [
+      el('b', { text: first }), el('span', { class: 'rx-mem-rest', 'aria-hidden': 'true', text: rest })
+    ]);
+    word.addEventListener('click', () => {
+      word.classList.add('is-peek');
+      word.setAttribute('aria-label', first + rest);
+      clearTimeout(word.peekTimer);
+      word.peekTimer = setTimeout(() => { word.classList.remove('is-peek'); word.setAttribute('aria-label', 'Word beginning ' + first + '. Show it'); }, 1800);
+    });
+    line.append(before, word, after);
   });
   return line;
 }
+
+// Started last, once every declaration above has run (see revise-hub.mjs).
+if (mount) start();

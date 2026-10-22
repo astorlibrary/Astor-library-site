@@ -234,19 +234,23 @@ for (const [group, label] of discoveryGroups) {
   }
 }
 
+// Characters, themes and quotations open in the book's study guide, at their
+// own entry (scripts/guide-pages.js), and each guide can be found by name.
+const guide = (book, section, id) => '/guides/' + book.slug + '/' + section + '/#' + id;
 for (const book of entries) {
+  addEntry('Study guide', book.title + ' study guide', '/guides/' + book.slug + '/', book.author || '', book.title + ' ' + (book.author || '') + ' study guide revision notes');
   for (const character of book.characters) {
-    addEntry('Character', character.name, book.href + '#astor-characters', book.title, character.name + ' ' + book.title + ' ' + (character.role || ''));
+    addEntry('Character', character.name, guide(book, 'characters', 'astor-character-' + character.id), book.title, character.name + ' ' + book.title + ' ' + (character.role || ''));
   }
   for (const theme of book.themes) {
-    addEntry('Theme', theme.name + ' in ' + book.title, '/explore/themes/#' + theme.id, book.title, theme.name + ' ' + book.title);
+    addEntry('Theme', theme.name + ' in ' + book.title, guide(book, 'themes', 'astor-theme-' + theme.id), book.title, theme.name + ' ' + book.title);
   }
   for (const technique of book.techniques) {
     addEntry('Technique', technique.name, '/explore/techniques/#' + technique.id, technique.definition, technique.name);
   }
   for (const quotation of book.quotations) {
     addEntry('Quotation', quotation.text.length > 76 ? quotation.text.slice(0, 74).trim() + '\u2026' : quotation.text,
-      book.href + '#astor-quotations', book.title + ' ' + quotation.reference,
+      guide(book, 'quotations', 'astor-quote-' + quotation.id), book.title + ' ' + quotation.reference,
       quotation.text + ' ' + (quotation.speaker || '') + ' ' + book.title);
   }
 }

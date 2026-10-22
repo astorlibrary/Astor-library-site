@@ -8,19 +8,18 @@
 // index, because their questions come from every book; they also read the
 // shelf, so their answers can be shown as covers.
 
-import { el, clear } from './util.mjs';
+import { el, clear, describeError } from './util.mjs';
 import { loadIndex } from './data.mjs';
 import { buildRound, GAME_BUILDERS } from './questions.mjs';
 import { recentlyViewed } from './store.mjs';
 import { QuizRound, emptyState } from './quiz-round.mjs';
 import {
   loadShelf, loadBook, setAccent, keepAddress, preferredSlug, studyBar,
-  sessionPlan, nextStep, availableQuizzes, quotationKey
+  sessionPlan, nextStep, availableQuizzes, quotationKey, hasActivity, QUIZZES
 } from './revise-kit.mjs';
 
 const mount = document.querySelector('#astor-game');
 const head = document.querySelector('#rv-head-book');
-if (mount) start(mount);
 
 async function start(container) {
   const gameId = container.dataset.game;
@@ -33,22 +32,29 @@ async function start(container) {
     let shelf = { books: [], icons: {} };
     try {
       [index, shelf] = await Promise.all([loadIndex(), loadShelf().catch(() => shelf)]);
-    } catch {
-      return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }]);
+    } catch (error) {
+      return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }], describeError(error));
     }
     return runLibrary(container, gameId, index, shelf);
   }
 
   let shelf;
-  try { shelf = await loadShelf(); } catch {
-    return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/library/', label: 'Browse the catalogue' }]);
+  try { shelf = await loadShelf(); } catch (error) {
+    return emptyState(container, 'The quiz didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/library/', label: 'Browse the catalogue' }], describeError(error));
   }
+  // Only books that have this activity are offered. A remembered book without
+  // it (65 books have no Order the plot, 28 no Who said it?) used to open on
+  // "There aren't enough questions of this kind".
+  const offered = shelf.books.filter(book => hasActivity(book, gameId));
+  const books = offered.length ? offered : shelf.books;
   const wanted = preferredSlug();
-  const first = shelf.books.find(book => book.slug === wanted)
-    || shelf.books.find(book => recentlyViewed(20).some(entry => entry.slug === book.slug))
-    || shelf.books.find(book => book.slug === 'macbeth')
-    || shelf.books[0];
-  runBook(container, gameId, shelf, first);
+  const first = books.find(book => book.slug === wanted)
+    || books.find(book => recentlyViewed(20).some(entry => entry.slug === book.slug))
+    || books.find(book => book.slug === 'macbeth')
+    || books[0];
+  const asked = new URLSearchParams(window.location.search).get('book');
+  const missing = asked && asked !== first.slug ? shelf.books.find(book => book.slug === asked) : null;
+  runBook(container, gameId, { ...shelf, books }, first, missing);
 }
 
 let round = null;
@@ -61,10 +67,16 @@ function belongsTo(book, question) {
   return !key || key.slug === book.slug;
 }
 
-async function runBook(container, gameId, shelf, meta) {
+async function runBook(container, gameId, shelf, meta, missing = null) {
   // A slow book must not overwrite a quicker, later choice.
   const ticket = ++generation;
   round?.stop();
+  // Asked for a book that lacks this activity: say so above the round.
+  document.querySelector('.rx-missing-note')?.remove();
+  if (missing) {
+    const name = QUIZZES.find(quiz => quiz.id === gameId)?.name || 'This activity';
+    container.before(el('p', { class: 'rx-missing-note', role: 'status', text: name + ' isn’t available for ' + missing.title + ' yet, so here is ' + meta.title + '.' }));
+  }
   keepAddress(meta.slug);
   setAccent(document.querySelector('main'), meta);
   studyBar(head, {
@@ -75,16 +87,23 @@ async function runBook(container, gameId, shelf, meta) {
   container.append(el('p', { class: 'rv-loading', text: 'Opening ' + meta.title + '…' }));
 
   let book;
-  try { book = await loadBook(meta.slug); } catch {
+  try { book = await loadBook(meta.slug); } catch (error) {
     if (ticket !== generation) return;
-    return emptyState(container, 'That book didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }]);
+    return emptyState(container, 'That book didn’t load. Check your connection, then try again.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }], describeError(error));
   }
   if (ticket !== generation || book.slug !== meta.slug) return;
 
   const build = () => (gameId === 'mixed-round'
     ? sessionPlan(book).questions
     : buildRound(gameId, book, { length: 10 })).filter(question => belongsTo(book, question));
-  const questions = build();
+  let questions;
+  try { questions = build(); } catch (error) {
+    console.error('Astor Library: could not prepare ' + gameId + ' for ' + book.slug + '.', error);
+    return emptyState(container, 'This activity couldn’t be prepared for ' + book.title + ' in this browser. Try another activity, or reload the page.', [
+      { href: window.location.href, label: 'Try again' },
+      { href: '/play/?book=' + encodeURIComponent(book.slug), label: 'All revision' }
+    ], describeError(error));
+  }
   if (questions.length < 4) {
     const others = availableQuizzes(book).filter(quiz => quiz.id !== gameId).slice(0, 2);
     return emptyState(container, 'There aren’t enough questions of this kind for ' + book.title + ' yet. Try another activity on it, or another book.', [
@@ -108,7 +127,11 @@ async function runBook(container, gameId, shelf, meta) {
 
 function runLibrary(container, gameId, index, shelf) {
   const build = () => buildRound(gameId, index.books, { length: 10 });
-  const questions = build();
+  let questions;
+  try { questions = build(); } catch (error) {
+    console.error('Astor Library: could not prepare ' + gameId + '.', error);
+    return emptyState(container, 'This quiz couldn’t be prepared in this browser. Try another one, or reload the page.', [{ href: window.location.href, label: 'Try again' }, { href: '/play/', label: 'More revision' }], describeError(error));
+  }
   if (questions.length < 4) {
     return emptyState(container, 'This quiz isn’t ready yet. Try another one.', [{ href: '/play/', label: 'More revision' }]);
   }
@@ -122,3 +145,6 @@ function runLibrary(container, gameId, index, shelf) {
   });
   round.start();
 }
+
+// Started last, once every declaration above has run (see revise-hub.mjs).
+if (mount) start(mount);

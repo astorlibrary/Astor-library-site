@@ -32,7 +32,7 @@
       "id": "act-1",
       "label": "Act I",
       "title": "The storm, and Prospero’s story",
-      "summary": "The shipwreck is staged first and explained second. Prospero then tells Miranda the history she has never been told, wakes and dispatches Ariel, insults Caliban, and steers Ferdinand into meeting his daughter: four interviews in one scene, each conducted by a man who already knows how it ends.",
+      "summary": "The shipwreck is staged first and explained second. Prospero then tells Miranda the history she has never been told, summons and dispatches Ariel, insults Caliban, and steers Ferdinand into meeting his daughter: four interviews in one scene, each conducted by a man who already knows how it ends.",
       "scenes": [
         { "ref": "1.1", "title": "The ship", "summary": "Courtiers get in the way of the crew; the Boatswain tells them rank means nothing to the weather." },
         { "ref": "1.2", "title": "The island", "summary": "Prospero recounts the usurpation to Miranda, sets Ariel back to work, curses Caliban and arranges Ferdinand’s arrival." }
@@ -139,7 +139,7 @@
       "name": "Ferdinand",
       "role": "Prince of Naples, Alonso’s son",
       "summary": "He is separated from the ship, told his father has drowned, and set to carrying logs, a trial with no purpose except to make Miranda seem hard-won. He accepts the labour without complaint, which is the only test Prospero can devise and the only one he passes.", "clue": "Told by a song that his father lies full fathom five, he piles up thousands of logs for a magician and finds the work no burden because of who is watching.",
-      "firstAppearance": "1.2",
+      "firstAppearance": "1.1",
       "traits": ["courteous", "grieving", "put to work"],
       "relationships": [
         { "to": "miranda", "label": "betrothed to", "kind": "love", "stages": ["act-3", "act-5"] },
@@ -503,7 +503,7 @@
       "speaker": "Prospero",
       "reference": "4.1.206",
       "stage": "act-4",
-      "context": "Alone, immediately after breaking off the masque.",
+      "context": "Alone, after sending Ariel for the glistering clothes to trap Caliban and his confederates.",
       "analysis": "The verdict is delivered by a man who has just spent years teaching the creature he says cannot be taught, and the repetitions (‘all, all lost, quite lost’) are those of someone arguing with himself. It is also the play’s clearest statement of the position Miranda’s existence contradicts.",
       "themes": ["nature-nurture", "possession"],
       "techniques": [],
@@ -546,7 +546,7 @@
       "reference": "5.1.205",
       "stage": "act-5",
       "context": "On seeing the assembled courtiers for the first time.",
-      "analysis": "The people she is admiring include the two men who set her adrift to die and a third who tried to murder his brother two days ago. Prospero’s four-word reply, “’Tis new to thee”, is the most economical piece of irony in Shakespeare, and it is the last thing he says to his daughter in the play.",
+      "analysis": "The people she is admiring include the two men who set her adrift to die and a third who tried to murder his brother that afternoon. Prospero’s four-word reply, “’Tis new to thee”, is the most economical piece of irony in Shakespeare, and it is the last thing he says to his daughter in the play.",
       "themes": ["forgiveness", "power"],
       "techniques": [],
       "characters": ["miranda", "prospero", "antonio", "alonso"],
@@ -589,7 +589,7 @@
     { "year": 1611, "label": "Performed before James I at Whitehall on 1 November", "detail": "The Revels record is the earliest firm evidence that the play existed and was being acted.", "kind": "work" },
     { "year": 1613, "label": "Played at court during the festivities for Princess Elizabeth’s marriage", "detail": "One of a group of plays given by the King’s Men that winter for the betrothal and wedding celebrations.", "kind": "reception" },
     { "year": 1623, "label": "First Folio", "detail": "The Folio is the only early text, and it opens with The Tempest, unusually well printed, with full stage directions and a cast list.", "kind": "work" },
-    { "year": 1667, "label": "Dryden and Davenant’s The Enchanted Island", "detail": "A Restoration rewriting that gave Miranda a sister and Caliban a mate, and held the stage for well over a century.", "kind": "reception" },
+    { "year": 1667, "label": "Dryden and Davenant’s The Enchanted Island", "detail": "A Restoration rewriting that gave Miranda a sister and Caliban one too, and held the stage for well over a century.", "kind": "reception" },
     { "year": 1957, "label": "Peter Brook directs John Gielgud as Prospero", "detail": "At the Shakespeare Memorial Theatre; remembered for a severe Prospero.", "kind": "reception" },
     { "year": 1970, "label": "Jonathan Miller’s colonial production", "detail": "Casting made the island’s politics explicit, and helped establish a reading British theatre has not since put down.", "kind": "reception" },
     { "year": 1991, "label": "Peter Greenaway’s Prospero’s Books", "detail": "A film that puts Prospero’s library at the centre of the play.", "kind": "reception" },
@@ -597,7 +597,7 @@
   ],
   "places": [
     { "name": "Milan", "lat": 45.4642, "lon": 9.19, "note": "The dukedom Prospero lost to his brother while he studied." },
-    { "name": "Naples", "lat": 40.8518, "lon": 14.2681, "note": "Alonso’s kingdom, and the wedding party the shipwrecked court was returning from." },
+    { "name": "Naples", "lat": 40.8518, "lon": 14.2681, "note": "Alonso’s kingdom, and the home the shipwrecked wedding party was returning to." },
     { "name": "Tunis", "lat": 36.8065, "lon": 10.1815, "note": "Where Claribel was married, and the voyage home from which the storm interrupts." },
     { "name": "Algiers", "lat": 36.7538, "lon": 3.0588, "note": "Argier in the text: the city from which Sycorax was banished to the island." },
     { "name": "Bermuda", "lat": 32.3078, "lon": -64.7505, "note": "The still-vex’d Bermoothes of Ariel’s speech, and the site of the 1609 wreck behind the play’s storm." },

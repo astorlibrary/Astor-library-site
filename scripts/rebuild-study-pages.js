@@ -127,7 +127,7 @@ const GAMES = [
     name: 'Order the plot',
     scope: 'book',
     blurb: 'Put acts, chapters and scenes back into sequence.',
-    deck: 'Put the acts, chapters and scenes back in order.',
+    deck: 'Tap the events in the order they happen.',
     why: 'Knowing what happens before and after a scene lets you write about cause and effect. It is also the fastest way to find a quotation you half remember.'
   },
   {
@@ -184,7 +184,7 @@ function buildPages() {
     <div class="rx-hero-inner"><div class="rx-hero-words"><p class="rx-hero-kicker">Revise</p><h1 class="rx-hero-title">Revise a book.</h1><p class="rx-hero-epigraph">Quizzes, flashcards, an essay planner and a debate for every book with a study guide.</p></div></div>
   </section>`,
     mount: `  <div class="rv-hub" id="rv-hub"><p class="rv-loading">Finding your book…</p></div>`,
-    fallback: 'The quizzes need JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
+    fallback: 'The quizzes need JavaScript. The quotations are in each book’s study guide: <a href="/guides/">browse the study guides</a>.',
     tail: '',
     links: [{ href: '/today/', label: 'Today' }, { href: '/my-library/', label: 'My library' }]
   }));
@@ -206,7 +206,7 @@ function buildPages() {
     <p class="rx-head-deck">${escapeHtml(game.deck)}</p>
   </header>`,
       mount: `  <div class="rv-quiz" id="astor-game" data-game="${escapeHtml(game.slug)}" data-scope="${game.scope}"></div>`,
-      fallback: 'This quiz needs JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
+      fallback: 'This quiz needs JavaScript. The quotations are in each book’s study guide: <a href="/guides/">browse the study guides</a>.',
       tail: '',
       links: [{ href: '/play/', label: 'Revise' }, { href: '/today/', label: 'Today' }]
     }));
@@ -229,7 +229,7 @@ function buildPages() {
     <p class="rx-head-deck">Turn each card, then say whether you knew it.</p>
   </header>`,
     mount: '  <div class="rv-quiz" id="astor-flashcards"></div>',
-    fallback: 'The flashcards need JavaScript. The same quotations are on each book page.',
+    fallback: 'The flashcards need JavaScript. The same quotations are in each book’s study guide.',
     tail: '',
     links: [{ href: '/play/', label: 'Revise' }, { href: '/my-library/', label: 'My library' }]
   }));
@@ -251,7 +251,7 @@ function buildPages() {
     <p class="rx-head-deck">Build an essay plan in four quick steps, saved as you go.</p>
   </header>`,
     mount: '  <div class="rv-tool" id="astor-essay-forge"><p class="rv-loading">Finding the questions…</p></div>',
-    fallback: 'The planner needs JavaScript. Every book page has essay questions with a plan for each.',
+    fallback: 'The planner needs JavaScript. Every study guide has essay questions with a plan for each.',
     tail: '',
     links: [{ href: '/play/', label: 'Revise' }, { href: '/for-teachers/', label: 'For teachers' }]
   }));
@@ -273,7 +273,7 @@ function buildPages() {
     <p class="rx-head-deck">Pick a side in a debate about the book, then back it up from the text.</p>
   </header>`,
     mount: '  <div class="rv-tool" id="astor-defend"><p class="rv-loading">Finding the readings…</p></div>',
-    fallback: 'This needs JavaScript. The readings are on each book page under “The book in its moment”.',
+    fallback: 'This needs JavaScript. The readings are in each study guide, under “Context”.',
     tail: '',
     links: [{ href: '/play/', label: 'Revise' }, { href: '/explore/quotations/', label: 'Quotation explorer' }]
   }));
@@ -311,7 +311,7 @@ function buildPages() {
     <p class="astor-explorer-count" id="astor-quote-count" aria-live="polite">Loading quotations&hellip;</p>
     <div id="astor-quote-results"></div>
   </div>`,
-    fallback: 'This needs JavaScript. Every quotation is also on its own book page.',
+    fallback: 'This needs JavaScript. Every quotation is also in its book’s study guide.',
     links: [{ href: '/explore/techniques/', label: 'Technique glossary' }, { href: '/play/', label: 'Revise' }]
   }));
 
@@ -328,7 +328,7 @@ function buildPages() {
     mount: `  <div id="astor-timeline-controls" class="astor-tl-controls"></div>
   <nav class="astor-tl-jump" id="astor-timeline-jump" aria-label="Jump to a century" hidden></nav>
   <div class="astor-tl" id="astor-timeline"><p class="astor-tl-summary">Loading the timeline&hellip;</p></div>`,
-    fallback: 'The timeline needs JavaScript. Each book page has its own dates under “The book in its moment”.',
+    fallback: 'The timeline needs JavaScript. Each study guide has its own dates, under “Context”.',
     links: [{ href: '/explore/map/', label: 'Map of settings' }, { href: '/classic-literature/', label: 'Periods' }]
   }));
 
@@ -346,7 +346,7 @@ function buildPages() {
     mount: `  <div class="astor-stage-switch" id="astor-stage-switch"></div>
   <div class="astor-graph-wrap"><div id="astor-character-graph"></div></div>
   <div id="astor-character-detail"></div>`,
-    fallback: 'The maps need JavaScript. Every character is described on the book page.',
+    fallback: 'The maps need JavaScript. Every character is described in the book’s study guide.',
     links: [{ href: '/play/character-identification/', label: 'Who is this?' }, { href: '/library/', label: 'All books' }]
   }));
 
@@ -362,7 +362,7 @@ function buildPages() {
     module: 'themes.mjs',
     mount: `  <div class="astor-chooser" id="astor-theme-search"></div>
   <div id="astor-theme-list"></div>`,
-    fallback: 'This needs JavaScript. Each book page covers its own themes.',
+    fallback: 'This needs JavaScript. Each study guide covers its own themes.',
     links: [{ href: '/explore/quotations/', label: 'Quotation explorer' }, { href: '/explore/compare/', label: 'Compare two texts' }]
   }));
 
@@ -378,7 +378,7 @@ function buildPages() {
     module: 'techniques.mjs',
     mount: `  <div class="astor-chooser" id="astor-technique-search"></div>
   <div id="astor-technique-list"></div>`,
-    fallback: 'The glossary needs JavaScript. Each book page has a “Form and language” section.',
+    fallback: 'The glossary needs JavaScript. Each study guide has a “Form and language” section.',
     links: [{ href: '/play/technique-spotter/', label: 'Technique spotter' }, { href: '/explore/quotations/', label: 'Quotation explorer' }]
   }));
 
@@ -395,7 +395,7 @@ function buildPages() {
     intro: '  <div class="astor-chooser" id="astor-map-controls"></div>',
     mount: `  <div class="astor-graph-wrap"><div id="astor-map"></div></div>
   <div id="astor-map-list"></div>`,
-    fallback: 'The map needs JavaScript. Each book page names its settings in the “At a glance” panel.',
+    fallback: 'The map needs JavaScript. Each study guide names its settings.',
     tail: '',
     links: [{ href: '/explore/timeline/', label: 'Timeline' }, { href: '/subjects/travel-and-landscape/', label: 'Travel &amp; landscape' }]
   }));
@@ -412,7 +412,7 @@ function buildPages() {
     module: 'compare.mjs',
     intro: '  <div class="astor-chooser" id="astor-compare-chooser"></div>',
     mount: '  <div id="astor-compare"></div>',
-    fallback: 'This needs JavaScript. Each book page lists its own themes and techniques.',
+    fallback: 'This needs JavaScript. Each study guide lists its own themes and techniques.',
     links: [{ href: '/reading-routes/', label: 'Reading routes' }, { href: '/explore/quotations/', label: 'Quotation explorer' }]
   }));
 
@@ -442,7 +442,7 @@ function buildPages() {
     breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">My library</span>',
     module: 'my-library.mjs',
     mount: `  <section class="astor-dash-grid" id="astor-dash" aria-label="Your reading at a glance"></section>
-  <section class="section-title" id="saved"><p class="kicker">Saved</p><h2>Books you have kept.</h2><p>Saved from any book page with the button in the study toolkit.</p></section>
+  <section class="section-title" id="saved"><p class="kicker">Saved</p><h2>Books you have kept.</h2><p>Saved from a book’s page or its study guide with the Save button.</p></section>
   <div id="astor-saved"></div>
   <section class="section-title" id="progress"><p class="kicker">Progress</p><h2>Reading progress.</h2><p>The acts and sections you have marked as read.</p></section>
   <div id="astor-progress"></div>
@@ -450,7 +450,7 @@ function buildPages() {
   <div id="astor-recent"></div>
   <section class="section-title" id="commonplace"><p class="kicker">Commonplace book</p><h2>Quotations you have kept.</h2><p>Add a note to any of them. The whole book exports as plain text.</p></section>
   <div id="astor-commonplace"></div>
-  <section class="section-title" id="plans"><p class="kicker">Reading plans</p><h2>What to read next, and when.</h2><p>Plans made from the Revise tab on a book page: the next sitting, and how far along you are.</p></section>
+  <section class="section-title" id="plans"><p class="kicker">Reading plans</p><h2>What to read next, and when.</h2><p>Plans made in a book’s study guide: the next sitting, and how far along you are.</p></section>
   <div id="astor-plans"></div>
   <section class="section-title" id="scores"><p class="kicker">Revision</p><h2>Scores and streak.</h2><p>Your best score in each quiz, and how many days in a row you have revised.</p></section>
   <div id="astor-scores"></div>`,
@@ -475,7 +475,7 @@ function buildPages() {
     mount: `  <div class="button-row" id="astor-teacher-actions"></div>
   <div id="astor-teacher-output"></div>
   <div class="astor-projector" id="astor-projector" hidden></div>`,
-    fallback: 'The worksheets need JavaScript. Every book page has its questions and quotations ready to print.',
+    fallback: 'The worksheets need JavaScript. Every study guide has its questions and quotations ready to print.',
     tail: `  <p class="astor-inline-note">Worksheets print straight from your browser. Free to use in class.</p>
   <p class="astor-inline-note">Projector mode: open it from the buttons above, then use the arrow keys. Escape closes it.</p>`,
     links: [{ href: '/resources/', label: 'Free resources' }, { href: '/study/', label: 'Study editions' }]

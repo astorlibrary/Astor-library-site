@@ -111,6 +111,10 @@ function validateBook(book, fileName) {
     if (!isPlainObject(character)) { problems.push(at('has a malformed character entry')); continue; }
     claimId('character', character.id, character.name);
     if (!nonEmptyString(character.name)) problems.push(at('has a character without a name'));
+    // Other names the character goes by in speaker lines ("Marley's Ghost").
+    if (character.aliases !== undefined && (!Array.isArray(character.aliases) || !character.aliases.every(nonEmptyString))) {
+      problems.push(at('has malformed aliases on character "' + (character.id || '?') + '"'));
+    }
     if (!nonEmptyString(character.summary) || wordCount(character.summary) < 12) {
       problems.push(at('has a thin summary for character "' + (character.id || '?') + '"'));
     }

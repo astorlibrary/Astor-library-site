@@ -64,7 +64,10 @@ function build() {
 async function open() {
   if (!palette) build();
   lastFocus = document.activeElement;
-  if (!palette.open) palette.showModal();
+  if (!palette.open) {
+    // Safari before 15.4 has no <dialog>; there the palette simply opens.
+    if (typeof palette.showModal === 'function') palette.showModal(); else palette.setAttribute('open', '');
+  }
   input.value = '';
   selected = 0;
   input.focus();
@@ -87,7 +90,7 @@ async function open() {
 
 function close() {
   if (!palette) return;
-  palette.close();
+  if (typeof palette.close === 'function') palette.close(); else palette.removeAttribute('open');
   lastFocus?.focus?.();
 }
 

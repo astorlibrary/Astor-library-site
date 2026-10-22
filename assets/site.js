@@ -540,7 +540,7 @@
     if (!main || !document.querySelector('.book-breadcrumb')) return;
     const toolkit = main.querySelector('#astor-study-toolkit');
 
-    const KEEP_OPEN = /astor-toolkit|book-passage-shelf|related-reading|edition-format-panel|context-image-shelf|season-book-backlinks|book-end-nav|astor-feature|page-contents|quick-facts|page-intro|astor-page-credit|book-breadcrumb/;
+    const KEEP_OPEN = /astor-toolkit|book-study|book-ways|edition-sample|edition-card|edition-choice-band|book-passage-shelf|related-reading|edition-format-panel|context-image-shelf|season-book-backlinks|book-end-nav|astor-feature|page-contents|quick-facts|page-intro|astor-page-credit|book-breadcrumb/;
     const children = [...main.children];
 
     const groups = [];

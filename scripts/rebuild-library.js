@@ -176,7 +176,7 @@ for (const record of loadBooks()) {
 function studyMeta(book) {
   const record = studyRecords.get(book.href);
   if (!record) return '';
-  const parts = ['Study toolkit'];
+  const parts = ['Study guide'];
   if (record.readingTime) parts.push(readingTimeLabel(record.readingTime));
   if (record.difficulty && DIFFICULTY_WORDS[record.difficulty]) parts.push(DIFFICULTY_WORDS[record.difficulty]);
   return '<p class="catalog-meta"><span class="catalog-meta-mark" aria-hidden="true">&#9679;</span>' + parts.map(escapeHtml).join(' &middot; ') + '</p>';
@@ -185,7 +185,7 @@ function studyMeta(book) {
 const filterButtons = ['All books', ...collections.map(([, label]) => label)]
   .map((label, index) => `<button type="button" class="catalog-filter${index === 0 ? ' is-active' : ''}" data-filter="${index === 0 ? 'all' : label}" aria-pressed="${index === 0 ? 'true' : 'false'}">${label}</button>`)
   .join('') +
-  `<button type="button" class="catalog-filter catalog-filter-toolkit" data-toolkit-filter aria-pressed="false">With a study toolkit (${[...books.values()].filter(book => studyRecords.has(book.href)).length})</button>`;
+  `<button type="button" class="catalog-filter catalog-filter-toolkit" data-toolkit-filter aria-pressed="false">With a study guide (${[...books.values()].filter(book => studyRecords.has(book.href)).length})</button>`;
 
 const cards = sorted.map(book => `
       <article class="catalog-card" data-collection="${book.collection}" data-toolkit="${studyRecords.has(book.href) ? 'yes' : 'no'}" data-search="${escapeHtml([book.titleText, book.authorText, book.collection, ...book.subjects, textOnly(book.descriptionHtml)].join(' '))}">
@@ -237,3 +237,5 @@ require('./rebuild-passage-hub');
 
 require('./rebuild-seasons');
 require('./rebuild-study-data');
+// The study guides list each book's cover from the Revise shelf written just above.
+require('./rebuild-guides').build();

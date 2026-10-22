@@ -162,3 +162,51 @@ test('the completion screen says something true about the round', async () => {
   assert.equal(resultWords({ score: 3, total: 3, practice: true }).title, 'All three put right.');
   assert.equal(resultWords({ score: 2, total: 5, practice: true }).title, '2 of 5 put right.');
 });
+
+test('no Who said it? question offers two names for one person', async () => {
+  const { whoSaidIt, castMember, sameName, inSentence } = await import('../assets/astor/questions.mjs');
+  for (const book of books) {
+    for (const question of whoSaidIt(book, seededRandom(3))) {
+      const people = question.options.map(option => castMember(book, option));
+      const answer = people[question.answer];
+      question.options.forEach((option, index) => {
+        if (index === question.answer) return;
+        if (answer && people[index]) assert.notEqual(people[index], answer, `${book.slug}: "${option}" is the answer "${question.options[question.answer]}" by another name`);
+      });
+      const known = people.filter(Boolean);
+      assert.equal(new Set(known).size, known.length, `${book.slug}: one person offered twice in ${JSON.stringify(question.options)}`);
+    }
+  }
+  assert.ok(sameName('Father', 'Father'), 'a name is always the same as itself');
+  assert.equal(inSentence('The Witches'), 'the Witches');
+  assert.equal(inSentence('Macbeth'), 'Macbeth');
+  assert.equal(inSentence('Third Apparition'), 'the Third Apparition');
+  assert.equal(inSentence('Nurse'), 'the Nurse');
+  assert.equal(inSentence('King Henry'), 'King Henry');
+});
+
+// Safari checks a `let` or `const` as soon as an assignment to it begins, so a
+// module that starts its page before declaring a variable the start-up assigns
+// (`shelf = await loadShelf()`) throws there, though Chrome waits until the
+// await is over. Every study module therefore starts last.
+test('study modules start their page only after every top-level declaration', () => {
+  const declaration = /^(?:export\s+)?(?:default\s+)?(?:async\s+)?(?:function\*?|const|let|var|class)\b/;
+  const inert = /^(?:import\b|export\s*\{|export\s+\*|\/\/|\/\*|\*|\}|\)|\]|$)/;
+  for (const name of fs.readdirSync('assets/astor').filter(entry => entry.endsWith('.mjs'))) {
+    let firstCall = null;
+    fs.readFileSync('assets/astor/' + name, 'utf8').split('\n').forEach((line, index) => {
+      if (!line || /^\s/.test(line) || inert.test(line)) return;
+      if (!declaration.test(line)) { firstCall = firstCall || index + 1; return; }
+      if (firstCall && /^(?:export\s+)?(?:const|let|var|class)\b/.test(line)) {
+        assert.fail(name + ':' + (index + 1) + ' is declared after the top-level call on line ' + firstCall);
+      }
+    });
+  }
+});
+
+test('no study module uses a RegExp lookbehind, which Safari lacks before 16.4', () => {
+  for (const name of fs.readdirSync('assets/astor').filter(entry => entry.endsWith('.mjs'))) {
+    const source = fs.readFileSync('assets/astor/' + name, 'utf8');
+    assert.ok(!/\(\?<[=!]/.test(source), name + ' uses a lookbehind');
+  }
+});

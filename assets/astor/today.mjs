@@ -6,7 +6,7 @@
 // questions, with no server deciding anything and nothing recorded off the
 // device.
 
-import { el, clear, seededRandom, hashString, pick, formatDate } from './util.mjs';
+import { el, clear, seededRandom, hashString, pick, formatDate, describeError, guideHref } from './util.mjs';
 import { loadIndex, allQuotations } from './data.mjs';
 import { dailyRound, resultGrid, dailyPassage } from './questions.mjs';
 import { QuizRound, emptyState, kindOf, completion, celebrate } from './quiz-round.mjs';
@@ -28,11 +28,11 @@ async function start() {
   let index;
   try {
     [index, shelf] = await Promise.all([loadIndex(), loadShelf().catch(() => shelf)]);
-  } catch {
+  } catch (error) {
     strip.remove();
     return emptyState(gameMount, 'Today’s questions didn’t load. Try reloading the page, or read a close reading in the Passage Room.', [
       { href: '/passage-room/', label: 'Open the Passage Room' }
-    ]);
+    ], describeError(error));
   }
 
   const day = today();
@@ -169,7 +169,7 @@ function renderStrip(index, day) {
       el('p', { class: 'rx-today-cite', text: [quotation.speaker, quotation.bookTitle, quotation.reference].filter(Boolean).join(' · ') }),
       el('p', { class: 'rx-today-body', text: quotation.analysis }),
       el('p', { class: 'rx-links' }, [
-        el('a', { href: quotation.bookHref + '#astor-quote-' + quotation.id, text: 'See it in the book →' }),
+        el('a', { href: guideHref(quotation.bookSlug, 'quotations', 'astor-quote-' + quotation.id), text: 'Read it in the study guide →' }),
         meta ? el('a', { href: '/play/?book=' + encodeURIComponent(meta.slug), text: 'Revise ' + shortTitle(meta) + ' →' }) : null
       ])
     ]));

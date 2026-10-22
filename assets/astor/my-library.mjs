@@ -4,7 +4,7 @@
 // There is no account behind this page. If it is empty, that is because this
 // device has not read anything yet, not because a sign-in is missing.
 
-import { el, clear, formatDate, download } from './util.mjs';
+import { el, clear, formatDate, download, guideHref } from './util.mjs';
 import { planSummary, nextSitting, readableDay } from './plan.mjs';
 import { loadIndex } from './data.mjs';
 import {
@@ -103,7 +103,7 @@ function renderSaved() {
   shelf(mounts.saved, savedBooks().map(book => ({
     href: book.href, title: book.title,
     note: 'Saved ' + formatDate(book.at)
-  })), 'No saved books yet. Save one from any book page.');
+  })), 'No saved books yet. Save one from a book’s page or its study guide.');
 }
 
 function renderRecent() {
@@ -118,7 +118,7 @@ function renderProgress(index) {
   const progress = allProgress();
   const slugs = Object.keys(progress).filter(slug => progress[slug].stages.length);
   if (!slugs.length) {
-    mounts.progress.append(el('p', { class: 'astor-empty', text: 'Nothing marked yet. Tick off sections on a book page as you read.' }));
+    mounts.progress.append(el('p', { class: 'astor-empty', text: 'Nothing marked yet. Tick off sections under “What happens” in a study guide as you read.' }));
     return;
   }
   const grid = el('div', { class: 'astor-dash-grid' });
@@ -131,10 +131,17 @@ function renderProgress(index) {
       el('b', { text: book ? book.title : slug }),
       el('strong', { text: share + '%' }),
       el('small', { text: done + ' of ' + total + ' ' + (book?.form === 'play' ? 'acts' : 'sections') + ' read.' }),
-      book ? el('small', {}, [el('a', { href: book.href, text: 'Carry on →' })]) : null
+      book ? el('small', {}, [el('a', { href: guideHref(slug, 'plot'), text: 'Carry on →' })]) : null
     ]));
   }
   mounts.progress.append(grid);
+}
+
+// A kept line is stored as "<book>:<quotation>"; it opens on that quotation
+// in the book's study guide.
+function quotationHref(entry) {
+  const [, slug, id] = String(entry.id || '').match(/^([a-z0-9-]+):([\w-]+)$/) || [];
+  return slug ? guideHref(slug, 'quotations', 'astor-quote-' + id) : entry.bookHref || '/library/';
 }
 
 function renderCommonplace() {
@@ -167,7 +174,7 @@ function renderCommonplace() {
     list.append(el('article', {}, [
       el('blockquote', {}, [el('p', { text: entry.text })]),
       el('footer', {}, [
-        el('a', { href: entry.bookHref || '/library/', text: entry.reference || entry.book || 'Astor Library' })
+        el('a', { href: quotationHref(entry), text: entry.reference || entry.book || 'Astor Library' })
       ]),
       note,
       el('div', { class: 'astor-quote-foot' }, [remove])
@@ -204,7 +211,7 @@ function renderPlans() {
   clear(mounts.plans);
   const plans = allPlans().sort((a, b) => (nextSitting(a)?.date || 'z').localeCompare(nextSitting(b)?.date || 'z'));
   if (!plans.length) {
-    mounts.plans.append(el('p', { class: 'astor-empty', text: 'No plans yet. Make one in the Revise tab on any book page.' }));
+    mounts.plans.append(el('p', { class: 'astor-empty', text: 'No plans yet. Make one on the first page of any study guide.' }));
     return;
   }
   const grid = el('div', { class: 'astor-dash-grid' });
@@ -219,7 +226,7 @@ function renderPlans() {
         : next.label + ', about ' + next.minutes + ' minutes. ' + summary.done + ' of ' + summary.total + ' sittings done' +
           (summary.overdue ? ', ' + summary.overdue + ' behind.' : '.') }),
       el('small', {}, [
-        el('a', { href: plan.href + '#astor-revise', text: 'Open the plan \u2192' }),
+        el('a', { href: guideHref(plan.slug, '', 'sg-tools-title'), text: 'Open the plan \u2192' }),
         ' \u00b7 ',
         el('button', { class: 'astor-link-button', type: 'button', text: 'Remove', onclick: () => { removePlan(plan.slug); renderPlans(); } })
       ])
@@ -242,10 +249,16 @@ function renderScores() {
       el('b', { text: gameName(gameId) }),
       el('strong', { text: entry.bestTotal ? entry.best + '/' + entry.bestTotal : String(entry.played) }),
       el('small', { text: entry.played + (entry.played === 1 ? ' quiz' : ' quizzes') + ', last on ' + formatDate(entry.lastAt) + '.' }),
-      gameId === 'daily' ? null : el('small', {}, [el('a', { href: '/play/' + gameId + '/', text: 'Try again →' })])
+      gameId === 'daily' ? null : el('small', {}, [el('a', { href: tryAgainHref(gameId, entry), text: 'Try again →' })])
     ]));
   }
   mounts.scores.append(grid);
+}
+
+// The activity on the book it was last played on, so it opens on a book that has it.
+function tryAgainHref(gameId, entry) {
+  const books = Object.entries(entry.byBook || {}).sort((a, b) => (b[1]?.lastAt || 0) - (a[1]?.lastAt || 0));
+  return '/play/' + gameId + '/' + (books.length ? '?book=' + encodeURIComponent(books[0][0]) : '');
 }
 
 function gameName(gameId) {

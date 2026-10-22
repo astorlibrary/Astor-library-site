@@ -1,4 +1,5 @@
-// Upgrades the study toolkit that the build writes into book and study pages.
+// Upgrades the study material the build writes into each study-guide page (and
+// the invitation to study on each edition's page).
 //
 // The markup arrives complete and readable. This module adds the parts that
 // only make sense with a reader in front of them: tabs, the save button,
@@ -8,7 +9,7 @@
 import { el, clear, announce, download } from './util.mjs';
 import { loadBook } from './data.mjs';
 import {
-  isRemembering, recordVisit, isSaved, toggleSaved,
+  isRemembering, recordVisit, savedBooks, toggleSaved,
   bookProgress, markStage, toggleCommonplace, inCommonplace,
   readingPlan, savePlan, removePlan, markSitting
 } from './store.mjs';
@@ -18,8 +19,10 @@ import {
 // during set-up.
 const embedded = new WeakSet();
 
-const toolkit = document.querySelector('#astor-study-toolkit');
-if (toolkit) enhance(toolkit);
+// A study-guide page (#astor-study-toolkit) or an edition page's invitation to
+// study the book (data-astor-study-invite), which records the visit and keeps
+// the save button.
+const toolkit = document.querySelector('#astor-study-toolkit, [data-astor-study-invite]');
 
 function enhance(root) {
   const slug = root.dataset.astorBook;
@@ -32,6 +35,21 @@ function enhance(root) {
   root.append(live);
 
   setUpTabs(root, live);
+  // A study-guide page holds one section and no tabs, so its maps are drawn
+  // straight away rather than when a tab opens.
+  if (!root.querySelector('.astor-tabs')) {
+    for (const panel of root.querySelectorAll('.astor-panel')) { embedMap(panel); embedPlaces(panel); }
+    // A link to one quotation or character lands on it, and stays on it while
+    // the maps above it draw.
+    const land = () => {
+      let target;
+      try { target = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
+      const node = target && document.getElementById(target);
+      if (node && root.contains(node)) settleOn(node);
+    };
+    land();
+    window.addEventListener('hashchange', land);
+  }
   setUpSaveButton(root, { slug, title, href }, live);
   setUpProgress(root, slug, title, live);
   setUpQuoteFilters(root, live);
@@ -121,7 +139,17 @@ function settleOn(node) {
   window.addEventListener('wheel', stop, { once: true, passive: true });
   window.addEventListener('touchmove', stop, { once: true, passive: true });
   window.addEventListener('keydown', stop, { once: true });
-  const go = () => { if (!moved) node.scrollIntoView({ block: 'center', behavior: 'instant' }); };
+  // Centred in the part of the screen the sticky header leaves, if it fits;
+  // a longer section opens at its top, just under the header.
+  const go = () => {
+    if (moved) return;
+    const header = document.querySelector('.site-header');
+    const covered = header && /sticky|fixed/.test(getComputedStyle(header).position) ? Math.max(0, header.getBoundingClientRect().bottom) : 0;
+    const box = node.getBoundingClientRect();
+    const room = window.innerHeight - covered;
+    const top = box.height < room - 32 ? box.top - covered - (room - box.height) / 2 : box.top - covered - 16;
+    window.scrollBy({ top, behavior: 'instant' });
+  };
   go();
   if (document.readyState === 'complete') window.setTimeout(go, 350);
   else window.addEventListener('load', () => { go(); window.setTimeout(go, 350); }, { once: true });
@@ -168,22 +196,32 @@ function embedMap(panel) {
 
 // --- saving ----------------------------------------------------------------
 
+// The save button and the reading ring sit in a guide page's head, outside the
+// material itself, so they are looked for across the whole page.
+const pageOf = root => root.closest('main') || root;
+
 function setUpSaveButton(root, book, live) {
-  const button = root.querySelector('[data-astor-save]');
+  const button = pageOf(root).querySelector('[data-astor-save]');
   if (!button) return;
   if (!isRemembering()) {
     button.disabled = true;
     button.title = 'Saving needs browser storage, which is switched off here.';
     return;
   }
+  // A guide serves every edition of its book, so a book saved from any of
+  // their pages (an Expanded Scholarly Edition, say) counts as saved here.
+  const onGuide = Boolean(root.closest('[data-astor-guide]'));
+  const entries = () => savedBooks().filter(entry => entry.href === book.href || (onGuide && entry.slug === book.slug));
   const paint = () => {
-    const saved = isSaved(book.href);
+    const saved = entries().length > 0;
     button.setAttribute('aria-pressed', String(saved));
     button.textContent = saved ? 'Saved to my library' : 'Save to my library';
   };
   paint();
   button.addEventListener('click', () => {
-    const saved = toggleSaved({ href: book.href, title: book.title, slug: book.slug, kind: 'book' });
+    const existing = entries();
+    for (const entry of existing) toggleSaved({ href: entry.href });
+    const saved = existing.length ? false : toggleSaved({ href: book.href, title: book.title, slug: book.slug, kind: 'book' });
     paint();
     announce(live, saved ? book.title + ' saved to your library.' : book.title + ' removed from your library.');
   });
@@ -192,24 +230,27 @@ function setUpSaveButton(root, book, live) {
 // --- progress --------------------------------------------------------------
 
 function setUpProgress(root, slug, title, live) {
+  if (!isRemembering()) return;
   const spine = root.querySelector('#astor-plot .astor-spine');
-  if (!spine || !isRemembering()) return;
-  const rows = [...spine.querySelectorAll('li[data-stage]')];
-  if (!rows.length) return;
+  const rows = spine ? [...spine.querySelectorAll('li[data-stage]')] : [];
+  // Every page of a guide shows how far the reader has got; only the plot
+  // page has the ticks.
+  const total = rows.length || Number(root.dataset.astorStages) || 0;
+  if (!total) return;
 
   const ring = el('div', { class: 'astor-ring' });
-  root.querySelector('.astor-toolkit-actions')?.prepend(ring);
+  pageOf(root).querySelector('.astor-toolkit-actions')?.prepend(ring);
 
   function paintRing() {
     const done = bookProgress(slug).stages.length;
-    const share = rows.length ? done / rows.length : 0;
+    const share = Math.min(1, done / total);
     const circumference = 2 * Math.PI * 18;
     ring.innerHTML =
-      '<svg viewBox="0 0 46 46" role="img" aria-label="' + done + ' of ' + rows.length + ' read">' +
+      '<svg viewBox="0 0 46 46" role="img" aria-label="' + done + ' of ' + total + ' read">' +
       '<circle class="astor-ring-track" cx="23" cy="23" r="18"></circle>' +
       '<circle class="astor-ring-value" cx="23" cy="23" r="18" stroke-dasharray="' + circumference +
       '" stroke-dashoffset="' + (circumference * (1 - share)) + '"></circle></svg>' +
-      '<span>' + done + '/' + rows.length + ' read</span>';
+      '<span>' + done + '/' + total + ' read</span>';
   }
 
   const painters = [];
@@ -447,7 +488,7 @@ function setUpVideos(root) {
       if (!build) return;
       const frame = el('iframe', {
         src: build(card.dataset.videoId),
-        title: card.querySelector('h4')?.textContent || 'Video',
+        title: card.querySelector('h2, h3, h4')?.textContent || 'Video',
         loading: 'lazy',
         allow: 'accelerometer; encrypted-media; picture-in-picture; fullscreen',
         // YouTube refuses an embed that names no origin (its "Error 153"), so
@@ -484,3 +525,6 @@ function setUpCommonplace(root, book) {
     foot.append(button);
   }
 }
+
+// Started last, once every declaration above has run (see revise-hub.mjs).
+if (toolkit) enhance(toolkit);
