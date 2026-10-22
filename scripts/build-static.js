@@ -1592,6 +1592,14 @@ function prepareHtml(html, source) {
   // facts, then the study tools, then the book's own material, then the
   // shelves. The pages were written by hand over a year and had drifted.
   if (/^\/(?:books|study)\/[^/]+\/$/.test(pageHref(source))) html = normaliseBookOrder(html);
+  // A book page opens on the book, the buy box and the way into its study
+  // guide. The strip of four facts and the "On this page" line that sat
+  // between them are left out of the built page (the source keeps them,
+  // and the site check reads the source).
+  if (/^\/books\/[^/]+\/$/.test(pageHref(source))) {
+    html = html.replace(/<section class="quick-facts"[^>]*>[\s\S]*?<\/section>\s*/, '')
+      .replace(/<nav class="page-contents"[^>]*>[\s\S]*?<\/nav>\s*/, '');
+  }
   html = addSiteIndexLink(html, source);
   html = addBookSeasonLinks(html, source);
   html = addGlobalNavigation(html, source);

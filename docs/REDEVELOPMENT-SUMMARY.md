@@ -831,6 +831,16 @@ became 62 KB. A test now checks the one thing left of them, that each book's
 colour reads as a link on paper, as a button with cream lettering, and as a
 link in dark mode.
 
+**Book pages, built leaner.** On the built edition pages the purchase
+choices appear once (the buy box; the hardback panel and the edition card's
+shop button, which repeated its links, are dropped), the further-reading
+shelf no longer repeats the close readings and free guides listed above it,
+and the strip of four facts and the "On this page" line are left out, so a
+page opens on the book, the buy box and the way into its guide. All of this
+is done in `build-static.js` and `site.js`; the source pages, which
+`check-site.js` reads, are unchanged. Section ids are kept, so links such as
+`#movement` and `#hardback-edition` still land.
+
 **Verse keeps its lines.** The records stored every quotation as one run of
 words, so verse read as prose with stray capitals once it was set large.
 `scripts/restore-lineation.js` finds each quotation from a play, poem or

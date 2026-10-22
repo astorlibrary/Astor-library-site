@@ -354,9 +354,15 @@
 
     const headings = [...main.querySelectorAll('.section-title h2')];
     if (headings.length < 3) return null;
+    // A book page has no contents line (its sections fold, and the page is
+    // short enough to read down); its sections only need ids, and keep any
+    // they were written with, since other pages link to them.
+    const bookPage = currentPath.startsWith('/books/');
 
-    const usedIds = new Set();
+    const usedIds = new Set(bookPage ? [...main.querySelectorAll('.section-title[id]')].map(section => section.id) : []);
     const links = headings.map((heading, index) => {
+      const section = heading.closest('.section-title');
+      if (bookPage && section.id) return '';
       let base = heading.textContent
         .toLocaleLowerCase()
         .normalize('NFKD')
@@ -366,9 +372,10 @@
       let suffix = 2;
       while (usedIds.has(id)) id = base + '-' + suffix++;
       usedIds.add(id);
-      heading.closest('.section-title').id = id;
+      section.id = id;
       return '<a href="#' + id + '">' + escapeHtml(heading.textContent) + '</a>';
     });
+    if (bookPage) return null;
 
     const contents = document.createElement('nav');
     contents.className = 'page-contents';
