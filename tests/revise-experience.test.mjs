@@ -88,50 +88,22 @@ test('a Revise page shows the question, not the cover: no emblems, monograms, st
   assert.doesNotMatch(css, /rx-(motif|burst|band|monogram|stars?\b)/, 'study.css still styles the old decoration');
 });
 
-const { contrast } = require('../scripts/editions.js');
-const LAYOUTS = ['centred', 'page', 'framed'];
-const VOICES = ['italic', 'roman', 'caps'];
-const TEXTURES = ['plain', 'laid', 'ruled', 'grain', 'glow'];
-
-test('every book wears an edition the stylesheet knows how to draw', () => {
+// A book's colour is the colour of its links on the page, of the one strong
+// button (with cream lettering) and, lifted towards cream by theme.css, of
+// its links in dark mode. Each of those has to read.
+test('every book colour reads as a link and as a button, in both themes', () => {
+  const rgb = value => { const h = value.replace('#', ''); const full = h.length === 3 ? h.split('').map(c => c + c).join('') : h; return [0, 2, 4].map(i => parseInt(full.slice(i, i + 2), 16)); };
+  const luminance = colour => { const [r, g, b] = colour.map(v => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); }); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+  const contrast = (a, b) => { const [hi, lo] = [luminance(a), luminance(b)].sort((x, y) => y - x); return (hi + 0.05) / (lo + 0.05); };
+  const mix = (a, b, share) => a.map((v, i) => Math.round(v * share + b[i] * (1 - share)));
+  const paper = rgb('#f7efe7');
+  const cream = rgb('#fffaf4');
+  const night = rgb('#1b1714');
   for (const book of shelf.books) {
-    const edition = book.edition;
-    assert.ok(edition, book.slug + ' has no edition');
-    assert.ok(['light', 'dark'].includes(edition.mode), book.slug + ' mode');
-    assert.ok(LAYOUTS.includes(edition.layout), book.slug + ' layout ' + edition.layout);
-    assert.ok(VOICES.includes(edition.voice), book.slug + ' voice ' + edition.voice);
-    assert.ok(TEXTURES.includes(edition.texture), book.slug + ' texture ' + edition.texture);
-  }
-});
-
-test('both palettes of every edition keep their text readable', () => {
-  const pairs = [
-    ['ink', 'ground', 7], ['ink', 'surface', 7], ['soft', 'surface', 4.5], ['soft', 'ground', 4.5],
-    ['accentText', 'surface', 4.5], ['accentText', 'sunk', 4.5], ['buttonInk', 'button', 4.5],
-    ['heroInk', 'hero', 4.5], ['right', 'surface', 4.5], ['wrong', 'surface', 4.5]
-  ];
-  for (const book of shelf.books) {
-    for (const mode of ['light', 'dark']) {
-      const palette = book.edition[mode];
-      for (const [text, ground, ratio] of pairs) {
-        const value = contrast(palette[text], palette[ground]);
-        assert.ok(value >= ratio, `${book.slug} ${mode}: ${text} on ${ground} is ${value.toFixed(2)}`);
-      }
-    }
-  }
-});
-
-test('every book carries its cover drawings and can letter its band legibly', () => {
-  for (const book of shelf.books) {
-    const edition = book.edition;
-    assert.ok(edition.motifs >= 2, book.slug + ' has ' + edition.motifs + ' emblems');
-    assert.ok(fs.existsSync('assets/editions/' + book.slug + '-field.png'), book.slug + ' field');
-    assert.ok(fs.existsSync('assets/editions/' + book.slug + '-motifs.png'), book.slug + ' emblems');
-    for (const mode of ['light', 'dark']) {
-      const palette = edition[mode];
-      assert.ok(contrast(palette.bandInk, palette.band) >= 7, `${book.slug} ${mode}: band lettering`);
-      assert.ok(contrast(palette.bandSoft, palette.band) >= 4.5, `${book.slug} ${mode}: band small print`);
-    }
+    const accent = rgb(book.accent);
+    assert.ok(contrast(accent, paper) >= 4.5, book.slug + ': its colour as a link on paper');
+    assert.ok(contrast(accent, cream) >= 4.5, book.slug + ': cream lettering on its button');
+    assert.ok(contrast(mix(accent, cream, 0.45), night) >= 4.5, book.slug + ': its colour as a link in dark mode');
   }
 });
 

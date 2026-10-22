@@ -46,7 +46,7 @@ let shelfRequest = null;
 export function loadShelf() {
   if (!shelfRequest) {
     shelfRequest = fetchJson('/assets/revise-index.json')
-      .then(data => ({ icons: data.icons || {}, books: data.books.slice().sort((a, b) => a.title.localeCompare(b.title)) }))
+      .then(data => ({ books: data.books.slice().sort((a, b) => a.title.localeCompare(b.title)) }))
       .catch(error => { shelfRequest = null; throw error; });
   }
   return shelfRequest;

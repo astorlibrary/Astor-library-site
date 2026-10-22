@@ -29,7 +29,7 @@ async function start(container) {
 
   if (scope === 'library') {
     let index;
-    let shelf = { books: [], icons: {} };
+    let shelf = { books: [] };
     try {
       [index, shelf] = await Promise.all([loadIndex(), loadShelf().catch(() => shelf)]);
     } catch (error) {

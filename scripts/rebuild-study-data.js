@@ -152,7 +152,7 @@ fs.writeFileSync(path.join(root, 'assets', 'timeline-index.json'), JSON.stringif
 // the chooser (title, author, cover, colour, drawing) and then fetch only the
 // chosen book's record, rather than the whole study index above.
 {
-  const { identityFor, MOTIFS } = require('./book-motifs');
+  const { identityFor } = require('./book-motifs');
   const thumbnails = fs.existsSync(path.join(root, 'assets', 'book-thumbnails.json'))
     ? JSON.parse(fs.readFileSync(path.join(root, 'assets', 'book-thumbnails.json'), 'utf8')) : {};
   const discoveryBooks = fs.existsSync(path.join(root, 'assets', 'content-index.json'))
@@ -176,17 +176,13 @@ fs.writeFileSync(path.join(root, 'assets', 'timeline-index.json'), JSON.stringif
     const thumb = thumbnails[image] || '';
     return thumb ? thumb.replace(/\.jpg$/, '-360.jpg') : '';
   };
-  const { editionFor, loadEditionSources } = require('./editions');
-  const editionSources = loadEditionSources(root);
   fs.writeFileSync(path.join(root, 'assets', 'revise-index.json'), JSON.stringify({
-    icons: require('./revise-icons'),
     books: entries.map(book => {
       const identity = identityFor(book.slug, book.title);
       return {
         slug: book.slug, title: book.title, author: book.author, href: book.href,
         period: book.period, form: book.form, genre: book.genre || '',
-        edition: editionFor({ slug: book.slug, period: book.period, form: book.form, genre: book.genre, accent: identity.accent }, editionSources.colours[book.slug], editionSources.overrides, editionSources.art[book.slug]),
-        accent: identity.accent, motif: MOTIFS[identity.motif] || '', cover: coverFor(book.href),
+        accent: identity.accent, cover: coverFor(book.href),
         quotations: book.quotations.length, characters: book.characters.length,
         stages: book.structure.length, essays: book.essayQuestions.length,
         openingLine: book.openingLine || '',

@@ -464,6 +464,10 @@ Anything the pages scroll to stops clear of the sticky site header
 when there is more to swipe to, and the end-of-page links sit in a compact
 row on phones.
 
+*(Superseded: the editions described in the next passages, with their cover
+bands, emblems and per-book palettes, were removed in late October 2026; see
+"A plainer guide and Revise" below. Only the book's colour remains.)*
+
 **Editions: every book its own design.** Revise now dresses itself in the
 book being studied, taken from that book's Astor edition, while navigation,
 controls, game mechanics and accessibility stay identical everywhere. There is
@@ -818,10 +822,14 @@ book, one line of progress, one way to start, the activities in three plain
 lists, the key lines folded, and the library quizzes as a list. The debate
 lost its tipping-balance drawing.
 
-The edition palettes and lifted cover art (`scripts/editions.js`,
-`scripts/build-edition-art.mjs`, `assets/editions/`) are still built into
-`revise-index.json` and tested, but no page reads anything from them except
-the accent; they can be retired in a later clean-up.
+The edition palettes, the lifted cover art and the activity icons
+(`scripts/editions.js`, `edition-overrides.json`, `build-edition-colours.mjs`,
+`build-edition-art.mjs`, `revise-icons.js`, `assets/edition-*.json` and the
+218 masks in `assets/editions/`, about 7 MB) are gone too, and with them most
+of `assets/revise-index.json`, which every Revise page loads first: 192 KB
+became 62 KB. A test now checks the one thing left of them, that each book's
+colour reads as a link on paper, as a button with cream lettering, and as a
+link in dark mode.
 
 **Verse keeps its lines.** The records stored every quotation as one run of
 words, so verse read as prose with stray capitals once it was set large.
@@ -1055,10 +1063,10 @@ episode of the day they fall in. Both records say so in `referenceStyle`.
 3. `node scripts/rebuild-library.js` — this validates the record, regenerates
    the indexes, writes a study page if the title has an Astor study edition,
    and flips its hub card to point at the page.
-4. For Revise, `node scripts/build-edition-colours.mjs` reads the new cover's
-   colours and `node scripts/build-edition-art.mjs <slug>` lifts its
-   drawings (check `assets/editions/<slug>-*.png`), then `node scripts/rebuild-study-data.js` gives the book its
-   edition. Adjust it in `scripts/edition-overrides.json` if needed.
+4. For a play, poem or poetry collection, `node scripts/restore-lineation.js
+   --write <slug>` gives its verse quotations their line ends. The book's
+   colour comes from `scripts/build-book-accents.js`; the test suite checks
+   it reads as a link and a button in both themes.
 5. `node scripts/build-static.js && node scripts/check-site.js && npm test`.
 
 The book page, the study page, the explorers, the glossary, the timeline, the

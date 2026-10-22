@@ -19,7 +19,7 @@ const gameMount = document.querySelector('#astor-daily-game');
 
 const KIND_NAMES = { who: 'Who said it?', book: 'Which book?', theme: 'Theme match', cloze: 'Fill the line', context: 'Which year?', character: 'Who is this?', technique: 'Technique', opening: 'Opening lines' };
 
-let shelf = { books: [], icons: {} };
+let shelf = { books: [] };
 
 if (strip && gameMount) start();
 
