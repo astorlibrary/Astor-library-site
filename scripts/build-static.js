@@ -964,6 +964,12 @@ function addProductBox(html, source) {
   // holds every one of its links, so the page shows the choices once, and
   // the box's rows take over the panel's addresses (#hardback-edition).
   html = html.replace(/(?:<!-- ASTOR FORMAT OPTIONS START -->\s*)?<section class="edition-format-panel"[\s\S]*?<\/section>(?:\s*<!-- ASTOR FORMAT OPTIONS END -->)?\s*/, '');
+  // The edition card's own shop button goes too when the box offers the same
+  // link; its other buttons (a study edition, the collection) stay.
+  const sold = new Set(formats.map(format => format.url));
+  html = html.replace(/<article class="edition-card[^"]*"[\s\S]*?<\/article>/g, card => card
+    .replace(/<a class="button [^"]*" href="([^"]*)"[^>]*>[\s\S]*?<\/a>/g, (button, href) => (sold.has(href) ? '' : button))
+    .replace(/<div class="button-row">\s*<\/div>/g, ''));
   const afterCredit = html.replace(/(<aside class="astor-page-credit"[\s\S]*?<\/aside>)/, '$1' + box);
   if (afterCredit !== html) return afterCredit;
   return html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>)/i, '$1' + box);
