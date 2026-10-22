@@ -17,13 +17,13 @@
 // arrow says "Got it", the left arrow "Not yet". On a touch screen a turned
 // card can be swiped right or left.
 
-import { el, clear, shuffle, announce, prefersReducedMotion, seededRandom, hashString } from './util.mjs';
+import { el, clear, shuffle, announce, seededRandom, hashString } from './util.mjs';
 import { isRemembering, reviewCard, snapshot, today, toggleCommonplace, inCommonplace, recentlyViewed } from './store.mjs';
-import { completion, celebrate } from './quiz-round.mjs';
+import { completion } from './quiz-round.mjs';
 import {
-  motif, hasMotifs, loadFailed,
+  loadFailed,
   loadShelf, loadBook, setAccent, keepAddress, preferredSlug, studyBar,
-  bookLines, lineSummary, lineState, STATE_WORDS, cardId, shortTitle, activityHref, quoted
+  bookLines, lineSummary, lineState, STATE_WORDS, cardId, activityHref, quoted
 } from './revise-kit.mjs';
 
 const mount = document.querySelector('#astor-flashcards');
@@ -91,7 +91,7 @@ async function open(shelf, books, meta) {
   const ticket = ++generation;
   keepAddress(meta.slug);
   setAccent(document.querySelector('main'), meta);
-  studyBar(head, { books, meta, icons: shelf.icons, active: 'flashcards', onChoose: choice => open(shelf, books, choice) });
+  studyBar(head, { books, meta, active: 'flashcards', onChoose: choice => open(shelf, books, choice) });
   if (keyHandler) document.removeEventListener('keydown', keyHandler);
   clear(mount);
   mount.append(el('p', { class: 'rv-loading', text: 'Opening ' + meta.title + '…' }));
@@ -115,9 +115,9 @@ function queueFor(book) {
   return { queue: chosen.map(line => line.quotation), waiting, anyway: !waiting };
 }
 
-// The five boxes as a shelf of small stacks, so a student can watch lines
-// travel from "not met" to "every sixteen days".
-function boxShelf(book, highlight = null) {
+// Where the book's lines stand in the five boxes, as one line of figures, so a
+// student can watch lines travel from "not met" to "every sixteen days".
+function boxShelf(book) {
   const cards = snapshot().cards || {};
   const counts = [0, 0, 0, 0, 0, 0];
   for (const quotation of book.quotations) {
@@ -125,19 +125,8 @@ function boxShelf(book, highlight = null) {
     counts[card ? Math.min(card.box, 4) + 1 : 0] += 1;
   }
   const total = book.quotations.length;
-  const list = el('ol', { class: 'rx-boxes', 'aria-label': 'Where the ' + total + ' lines are in the five boxes' });
-  BOXES.forEach((box, index) => {
-    const stack = el('span', { class: 'rx-box-stack', 'aria-hidden': 'true' });
-    const shown = Math.min(counts[index], 6);
-    for (let layer = 0; layer < shown; layer += 1) stack.append(el('i', { style: '--layer:' + layer }));
-    list.append(el('li', { class: 'rx-box' + (index === highlight ? ' is-lit' : '') + (index >= 4 ? ' is-known' : '') }, [
-      stack,
-      el('b', { text: String(counts[index]) }),
-      el('span', { class: 'rx-box-label', text: box.label }),
-      el('span', { class: 'rx-box-note', text: box.note })
-    ]));
-  });
-  return list;
+  return el('dl', { class: 'rx-boxes', 'aria-label': 'Where the ' + total + ' lines are in the five boxes' },
+    BOXES.map((box, index) => el('div', {}, [el('dt', {}, [box.label, el('small', { text: box.note })]), el('dd', { text: String(counts[index]) })])));
 }
 
 // `only`, when given, is a set of lines to work through instead of the usual
@@ -177,7 +166,7 @@ function sitting(book, meta, mode, only = null) {
     if (turned) return;
     if (mode === 'memorise' && step < 3) { step += 1; render(); return; }
     turned = true;
-    render(true);
+    render();
   }
   function stepBack() {
     if (turned || step === 0) return;
@@ -191,8 +180,8 @@ function sitting(book, meta, mode, only = null) {
       group.append(el('button', {
         type: 'button', role: 'radio', class: 'rx-mode', 'aria-checked': String(option.id === mode),
         onclick: () => { if (option.id === mode) return; saveMode(option.id); sitting(book, meta, option.id); },
-        title: option.note
-      }, [el('b', { text: option.name }), el('span', { text: option.note })]));
+        title: option.note, text: option.name
+      }));
     }
     return group;
   }
@@ -201,7 +190,7 @@ function sitting(book, meta, mode, only = null) {
     return el('p', { class: 'rx-mode-help', text: MODES.find(option => option.id === mode).help });
   }
 
-  function render(justTurned = false) {
+  function render() {
     clear(mount);
     mount.append(live);
     if (position >= queue.length) return end();
@@ -209,46 +198,42 @@ function sitting(book, meta, mode, only = null) {
     const id = cardId(book.slug, quotation.id);
     const state = lineState(snapshot().cards?.[id]);
     const stage = book.structure.find(entry => entry.id === quotation.stage);
-    const where = [quotation.speaker, stage?.label, quotation.reference].filter(Boolean).join(' · ');
+    // "Book XII" is said once, not as the part and again as the reference.
+    const place = [stage?.label, quotation.reference].filter((part, index, all) => part && all.indexOf(part) === index);
+    const where = [quotation.speaker, ...place].filter(Boolean).join(' · ');
 
     const page = el('div', { class: 'rx-deck', 'data-mode': mode });
-    page.append(modeSwitch());
-    if (position === 0 && step === 0 && !turned) page.append(modeHelp());
-
-    const track = el('ol', { class: 'rx-track', 'aria-hidden': 'true' });
-    // With many cards the book's drawings would crowd the row: plain ticks then.
-    const drawn = hasMotifs() && queue.length <= 12;
-    track.classList.toggle('is-motifs', drawn);
-    queue.forEach((_, index) => track.append(el('li', { class: index < position ? (results[index] ? 'is-right' : 'is-wrong') : index === position ? 'is-now' : '' }, drawn ? [motif(index)] : [])));
-    page.append(el('div', { class: 'rx-progress' }, [
-      el('p', { class: 'rx-progress-count' }, [el('span', { class: 'rx-visually-hidden', text: 'Card ' }), el('b', { text: String(position + 1) }), el('span', { text: ' of ' + queue.length })]),
-      track,
-      el('p', { class: 'rx-score', 'aria-label': knew + ' known so far' }, [el('span', { class: 'rx-score-star', 'aria-hidden': 'true', html: '<svg viewBox="0 0 24 24"><path d="M12 2.8l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 17l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6Z"/></svg>' }), el('b', { text: String(knew) })])
+    const line = el('span', { class: 'rx-progress-line', 'aria-hidden': 'true' }, [el('i')]);
+    line.firstChild.style.width = (100 * position / queue.length) + '%';
+    page.append(el('div', { class: 'rx-deck-top' }, [
+      modeSwitch(),
+      el('div', { class: 'rx-progress' }, [el('p', { class: 'rx-progress-count', text: 'Card ' + (position + 1) + ' of ' + queue.length }), line])
     ]));
+    if (position === 0 && step === 0 && !turned) page.append(modeHelp());
     if (anyway && position === 0 && !turned) page.append(el('p', { class: 'rx-deck-note', text: 'Nothing due today — here are lines you’ve met before.' }));
 
     // The card: a front and a back on one sheet, turned in three dimensions.
     const front = el('div', { class: 'rx-flip-face is-front', 'aria-hidden': String(turned) });
     const back = el('div', { class: 'rx-flip-face is-back', 'aria-hidden': String(!turned) });
-    const badge = el('p', { class: 'rx-flip-state is-' + state }, [el('i', { 'aria-hidden': 'true' }), state === 'new' ? 'A new line' : STATE_WORDS[state].replace(/^./, c => c.toUpperCase())]);
-    // Each side opens with one row: where the line stands, and the book's emblem.
-    const headRow = (left, index) => el('div', { class: 'rx-flip-head' }, [left, hasMotifs() ? motif(index, 'rx-card-motif') : null]);
+    const badge = el('p', { class: 'rx-flip-state is-' + state, text: state === 'new' ? 'A new line' : STATE_WORDS[state].replace(/^./, c => c.toUpperCase()) });
+    // Each side opens with one small line: where the line stands, or where it comes from.
+    const headRow = left => el('div', { class: 'rx-flip-head' }, [left]);
     const words = quotation.text.split(/\s+/);
     const given = Math.min(4, Math.max(2, Math.floor(words.length / 4)));
 
     if (mode === 'recall') {
-      put(front, headRow(badge.cloneNode(true), position),
+      put(front, headRow(badge),
         el('blockquote', { class: 'rx-flip-line' }, [el('p', { text: quotation.text })]),
         el('p', { class: 'rx-flip-prompt', text: 'Who says it? When? Why does it matter?' }));
     } else if (mode === 'complete') {
       const opening = words.slice(0, given).join(' ');
-      put(front, headRow(badge.cloneNode(true), position),
-        el('p', { class: 'rx-flip-cue' }, [el('span', { class: 'rx-label', text: 'The moment' }), el('span', { text: where })]),
+      put(front, headRow(badge),
+        el('p', { class: 'rx-flip-cue', text: where }),
         quotation.context ? el('p', { class: 'rx-flip-context', text: quotation.context }) : null,
         el('blockquote', { class: 'rx-flip-line is-start' }, [el('p', { text: '“' + opening.replace(/^[“"]/, '') + ' …”' })]),
         el('p', { class: 'rx-flip-prompt', text: 'Say the rest aloud, then turn.' }));
     } else {
-      put(front, headRow(el('ol', { class: 'rx-mem-steps', 'aria-label': 'Step ' + (step + 1) + ' of 4' }, [0, 1, 2, 3].map(index => el('li', { class: index <= step ? 'is-on' : '' }))), position),
+      put(front, headRow(el('p', { class: 'rx-flip-state', text: 'Step ' + (step + 1) + ' of 4' })),
         el('blockquote', { class: 'rx-flip-line is-memorise' }, [memoriseLine(quotation, step)]),
         el('p', { class: 'rx-flip-prompt', text: MEMORISE_PROMPTS[step] }));
     }
@@ -261,16 +246,17 @@ function sitting(book, meta, mode, only = null) {
     put(back,
       headRow(el('p', { class: 'rx-flip-where' }, [
         quotation.speaker ? el('b', { text: quotation.speaker }) : null,
-        el('span', { text: [stage?.label, quotation.reference].filter(Boolean).join(' · ') })
-      ]), position + 3),
+        el('span', { text: place.join(' · ') })
+      ])),
       mode === 'recall' ? null : answerLine,
       quotation.context && mode === 'recall' ? el('p', { class: 'rx-flip-context', text: quotation.context }) : null,
       el('p', { class: 'rx-flip-analysis', text: quotation.analysis }),
       mode === 'recall' ? el('p', { class: 'rx-flip-small', text: quoted(quotation.text.slice(0, 80) + (quotation.text.length > 80 ? '…' : '')) }) : null
     );
 
+    // One side of the card at a time: turning it shows the back in its place.
     const card = el('div', { class: 'rx-flip' + (turned ? ' is-turned' : ''), tabindex: '-1', 'aria-label': turned ? 'The answer' : 'The card' }, [
-      el('div', { class: 'rx-flip-inner' }, [front, back])
+      turned ? back : front
     ]);
     page.append(card);
     if (turned) enableSwipe(card);
@@ -278,7 +264,7 @@ function sitting(book, meta, mode, only = null) {
     const actions = el('div', { class: 'rx-deck-actions' });
     if (!turned) {
       const label = mode === 'memorise' && step < 3 ? 'Hide more words' : 'Turn the card';
-      actions.append(el('button', { class: 'rx-button is-primary is-wide', type: 'button', onclick: advance }, [el('span', { text: label }), el('span', { class: 'rx-kbd', 'aria-hidden': 'true', text: 'Space' })]));
+      actions.append(el('button', { class: 'rx-button is-primary', type: 'button', onclick: advance, text: label }));
       if (mode === 'memorise' && step > 0) actions.append(el('button', { class: 'rx-text-button', type: 'button', text: 'Show more words', onclick: stepBack }));
     } else {
       actions.append(
@@ -289,31 +275,19 @@ function sitting(book, meta, mode, only = null) {
     page.append(actions);
 
     const keep = el('button', {
-      class: 'rx-keep', type: 'button', 'aria-pressed': String(inCommonplace(id)),
-      text: inCommonplace(id) ? '★ Kept in your commonplace book' : '☆ Keep this line'
+      class: 'rx-text-button rx-keep', type: 'button', 'aria-pressed': String(inCommonplace(id)),
+      text: inCommonplace(id) ? 'Saved to your commonplace book' : 'Save this line'
     });
     keep.addEventListener('click', () => {
       const added = toggleCommonplace({ id, text: quotation.text, reference: book.title + ' ' + quotation.reference, book: book.title, bookHref: book.href });
       keep.setAttribute('aria-pressed', String(added));
-      keep.textContent = added ? '★ Kept in your commonplace book' : '☆ Keep this line';
+      keep.textContent = added ? 'Saved to your commonplace book' : 'Save this line';
     });
     page.append(el('p', { class: 'rx-deck-foot' }, [
       keep,
       el('span', { class: 'rx-deck-keys', 'aria-hidden': 'true', text: turned ? '← not yet · got it →' : 'Space to turn' })
     ]));
-    page.append(boxShelf(book));
     mount.append(page);
-
-    if (justTurned && !prefersReducedMotion()) {
-      // Drawn unturned, then turned once laid out, so the turn is seen; the
-      // card grows or shrinks to the side now showing as it turns.
-      const inner = card.firstChild;
-      card.classList.remove('is-turned');
-      const before = inner.offsetHeight;
-      card.classList.add('is-turned');
-      const after = inner.offsetHeight;
-      if (before !== after) inner.animate?.([{ height: before + 'px' }, { height: after + 'px' }], { duration: 460, easing: 'cubic-bezier(.2,.7,.2,1)' });
-    }
     // After turning, focus the card so its answer is read before the buttons.
     if (turned) card.focus({ preventScroll: true });
     else if (position > 0 || step > 0) page.querySelector('.rx-deck-actions button')?.focus({ preventScroll: true });
@@ -325,7 +299,7 @@ function sitting(book, meta, mode, only = null) {
     card.addEventListener('pointermove', event => {
       if (startX === null) return;
       const dx = event.clientX - startX;
-      card.style.transform = 'translateX(' + dx + 'px) rotate(' + dx / 30 + 'deg)';
+      card.style.transform = 'translateX(' + dx + 'px)';
       card.classList.toggle('is-leaning-got', dx > 60);
       card.classList.toggle('is-leaning-not', dx < -60);
     });
@@ -350,11 +324,10 @@ function sitting(book, meta, mode, only = null) {
     results.push(correct);
     if (correct) knew += 1;
     announce(live, correct ? 'Got it. Up a box.' : isRemembering() ? 'Not yet. This one comes back tomorrow.' : 'Not yet.');
-    const card = mount.querySelector('.rx-flip');
-    const go = () => { position += 1; turned = false; step = 0; render(); };
-    if (card && !prefersReducedMotion() && card.animate) {
-      card.animate([{ transform: 'none', opacity: 1 }, { transform: 'translateX(' + (correct ? 60 : -60) + 'px) rotate(' + (correct ? 4 : -4) + 'deg)', opacity: 0 }], { duration: 220, easing: 'ease-in' }).finished.then(go, go);
-    } else go();
+    position += 1;
+    turned = false;
+    step = 0;
+    render();
   }
 
   function end() {
@@ -362,9 +335,9 @@ function sitting(book, meta, mode, only = null) {
     const counts = lineSummary(bookLines(book, snapshot().cards || {}, today()));
     const left = counts.due + counts.new;
     const missedLines = queue.filter((_, index) => !results[index]);
-    const page = el('div', { class: 'rx-results rx-deck-end' + (reviewed && knew / reviewed >= 0.8 ? ' is-shining' : '') });
+    const page = el('div', { class: 'rx-results rx-deck-end' });
     page.append(completion({
-      score: knew, total: reviewed, marks: results,
+      score: knew, total: reviewed,
       kicker: 'Flashcards',
       title: knew === reviewed ? 'Every card known.' : knew / reviewed >= 0.7 ? 'Most of these are yours.' : knew / reviewed >= 0.4 ? 'Coming along.' : 'These need another look.',
       sub: (counts.known ? counts.known + ' of the ' + book.quotations.length + ' key lines are known. ' : '') + (left ? left + (left === 1 ? ' line is' : ' lines are') + ' still waiting today.' : 'Nothing else is due today.')
@@ -375,17 +348,18 @@ function sitting(book, meta, mode, only = null) {
     if (mode !== 'memorise' && missedLines.length) actions.append(el('button', { class: 'rx-button is-secondary', type: 'button', text: 'Memorise the ones I missed', onclick: () => sitting(book, meta, 'memorise', missedLines) }));
     actions.append(el('a', { class: left ? 'rx-button is-secondary' : 'rx-button is-primary', href: activityHref('mixed-round', book.slug), text: 'Ten questions' }));
     page.append(actions);
-
-    page.append(boxShelf(book));
     if (missedLines.length) {
       const list = el('ul', { class: 'rx-deck-missed' });
       for (const quotation of missedLines) list.append(el('li', {}, [el('q', { text: quotation.text }), el('span', { text: [quotation.speaker, quotation.reference].filter(Boolean).join(' · ') })]));
-      page.append(el('details', { class: 'rx-review' }, [el('summary', {}, [el('span', { text: 'Still learning (' + missedLines.length + ')' })]), list]));
+      page.append(el('section', { class: 'rx-review', 'aria-labelledby': 'rx-still-title' }, [el('h3', { id: 'rx-still-title', text: 'Still learning' }), list]));
     }
+    page.append(el('section', { class: 'rx-review', 'aria-labelledby': 'rx-boxes-title' }, [
+      el('h3', { id: 'rx-boxes-title', text: 'Where the ' + book.quotations.length + ' lines stand' }),
+      boxShelf(book)
+    ]));
     clear(mount);
     mount.append(live, page);
     page.querySelector('.rx-results-title')?.focus({ preventScroll: true });
-    celebrate(page);
   }
 
   if (!queue.length) {

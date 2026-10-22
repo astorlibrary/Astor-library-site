@@ -9,16 +9,15 @@
 import { el, clear, seededRandom, hashString, pick, formatDate, describeError, guideHref } from './util.mjs';
 import { loadIndex, allQuotations } from './data.mjs';
 import { dailyRound, resultGrid, dailyPassage } from './questions.mjs';
-import { QuizRound, emptyState, kindOf, completion, celebrate } from './quiz-round.mjs';
+import { QuizRound, emptyState, kindOf, completion } from './quiz-round.mjs';
 import { today, dailyResult, recordDaily, streak, isRemembering, dailyHistory } from './store.mjs';
-import { loadShelf, coverImage, drawing, clip, shortTitle } from './revise-kit.mjs';
+import { loadShelf, coverImage, clip, shortTitle } from './revise-kit.mjs';
 
 const head = document.querySelector('#astor-today-head');
 const strip = document.querySelector('#astor-daily-strip');
 const gameMount = document.querySelector('#astor-daily-game');
 
 const KIND_NAMES = { who: 'Who said it?', book: 'Which book?', theme: 'Theme match', cloze: 'Fill the line', context: 'Which year?', character: 'Who is this?', technique: 'Technique', opening: 'Opening lines' };
-const KIND_ICONS = { who: 'who-said-it', book: 'which-book', theme: 'theme-match', cloze: 'fill-the-line', context: 'context-sprint', character: 'character-identification', technique: 'technique-spotter', opening: 'opening-lines' };
 
 let shelf = { books: [], icons: {} };
 
@@ -71,17 +70,14 @@ function renderPuzzle(index, day) {
   questions.forEach((question, position) => {
     const kind = kindOf(question);
     kinds.append(el('li', {}, [
-      el('span', { class: 'rx-daily-num', text: String(position + 1) }),
-      drawing(shelf.icons[KIND_ICONS[kind]] || '', 20),
       el('span', { text: KIND_NAMES[kind] || 'Question' })
     ]));
   });
-  const begin = el('button', { class: 'rx-button is-primary is-wide', type: 'button', text: 'Begin today’s five', onclick: () => play(index, questions, day) });
+  const begin = el('button', { class: 'rx-button is-primary', type: 'button', text: 'Begin today’s five', onclick: () => play(index, questions, day) });
   gameMount.append(el('section', { class: 'rx-daily-start' }, [
     el('div', {}, [
-      el('p', { class: 'rx-eyebrow', text: 'The Daily Five' }),
       el('h2', { text: 'Five questions. Two minutes.' }),
-      el('p', { class: 'rx-daily-note', text: 'One go each, no hints.' })
+      el('p', { class: 'rx-daily-note', text: 'One go each, no hints. Today’s are:' })
     ]),
     kinds,
     begin
@@ -94,7 +90,6 @@ function play(index, questions, day) {
     gameId: 'daily',
     ownEnd: true,
     noHints: true,
-    icons: shelf.icons,
     catalogue: new Map(shelf.books.map(book => [book.title, book])),
     onFinish: result => {
       const marks = result.answers.slice();
@@ -149,7 +144,6 @@ function renderDone(result, questions, day) {
   ]));
   gameMount.append(panel);
   panel.querySelector('.rx-results-title')?.focus({ preventScroll: true });
-  celebrate(panel);
 }
 
 function renderStrip(index, day) {

@@ -6,7 +6,7 @@ import { createRequire } from 'node:module';
 import { buildRound, GAME_BUILDERS } from '../assets/astor/questions.mjs';
 import { seededRandom } from '../assets/astor/util.mjs';
 import {
-  quoted, initials, hasActivity, ACTIVITIES, availableQuizzes, sessionPlan, quotationKey
+  quoted, hasActivity, ACTIVITIES, availableQuizzes, sessionPlan, quotationKey
 } from '../assets/astor/revise-kit.mjs';
 
 const require = createRequire(import.meta.url);
@@ -63,13 +63,6 @@ test('lines are quoted once, however the record punctuates them', () => {
   assert.equal(quoted("'Tis now the very witching time"), "“'Tis now the very witching time”");
 });
 
-test('speaker monograms skip articles and joining words', () => {
-  assert.equal(initials('Lady Macbeth'), 'LM');
-  assert.equal(initials('The Ghost of Christmas Past'), 'GP');
-  assert.equal(initials('Scrooge'), 'S');
-  assert.equal(initials(''), '?');
-});
-
 test('every Revise activity page opens on the study bar, a heading and one sentence', () => {
   for (const activity of ACTIVITIES) {
     const html = fs.readFileSync('play/' + activity.id + '/index.html', 'utf8');
@@ -86,17 +79,13 @@ test('every Revise activity page opens on the study bar, a heading and one sente
   }
 });
 
-test('stars mean the same everywhere: finish, 70 per cent, perfect', async () => {
-  const { starsFor, starTarget } = await import('../assets/astor/quiz-round.mjs');
-  assert.equal(starsFor(0, 10), 1, 'finishing earns one star');
-  assert.equal(starsFor(6, 10), 1);
-  assert.equal(starsFor(7, 10), 2, '7 out of 10 earns two');
-  assert.equal(starsFor(9, 10), 2);
-  assert.equal(starsFor(10, 10), 3, 'a perfect round earns three');
-  assert.equal(starTarget(10), 7);
-  assert.equal(starTarget(5), 4, 'Today’s five: 4 for the second star');
-  assert.equal(starsFor(4, 5), 2);
-  assert.equal(starsFor(0, 0), 0, 'nothing played, nothing earned');
+test('a Revise page shows the question, not the cover: no emblems, monograms, stars or bursts', () => {
+  const css = fs.readFileSync('assets/study.css', 'utf8');
+  for (const name of ['quiz-round.mjs', 'flashcard-deck.mjs', 'revise-hub.mjs', 'revise-kit.mjs', 'today.mjs']) {
+    const source = fs.readFileSync('assets/astor/' + name, 'utf8');
+    assert.doesNotMatch(source, /\b(motif|burst|monogram|coverBand|celebrate|starsFor)\(/, name + ' still draws decoration around the activity');
+  }
+  assert.doesNotMatch(css, /rx-(motif|burst|band|monogram|stars?\b)/, 'study.css still styles the old decoration');
 });
 
 const { contrast } = require('../scripts/editions.js');

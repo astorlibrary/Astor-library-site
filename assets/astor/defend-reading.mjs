@@ -53,15 +53,13 @@ function render(book) {
     }, [el('span', { class: 'rx-reading-num', text: 'Reading ' + (position + 1) }), el('span', { text: entry.position })])));
     app.append(tabs);
 
-    // The two sides, with the balance between them.
-    const lean = side ? Math.min(chosen.length, 4) * (side === 'for' ? -1 : 1) : 0;
+    // The two sides.
     app.append(el('div', { class: 'rx-sides' }, [
       el('article', { class: 'rx-side-card is-for' + (side === 'for' ? ' is-mine' : '') }, [
         el('p', { class: 'rx-side-label', text: 'The reading' }),
         el('h2', { class: 'rx-debate-title', tabindex: '-1', text: view.position }),
         el('p', { text: view.summary })
       ]),
-      el('div', { class: 'rx-balance', 'aria-hidden': 'true', style: '--lean:' + (lean * 4) + 'deg' }, [balanceSvg()]),
       el('article', { class: 'rx-side-card is-against' + (side === 'against' ? ' is-mine' : '') }, [
         el('p', { class: 'rx-side-label', text: 'The objection' }),
         el('p', { class: 'rx-side-counter', text: view.counter || 'No objection is given for this reading. What would make it fail?' })
@@ -117,8 +115,7 @@ function render(book) {
     bench.append(list);
 
     const caseList = el('aside', { class: 'rx-case', 'aria-label': 'Your case so far' }, [
-      el('p', { class: 'rx-eyebrow', text: side === 'for' ? 'Your case for' : 'Your case against' }),
-      el('div', { class: 'rx-case-meter' }, [0, 1, 2, 3].map(slot => el('i', { class: slot < chosen.length ? 'is-on' : '' })))
+      el('p', { class: 'rx-eyebrow', text: side === 'for' ? 'Your case for' : 'Your case against' })
     ]);
     if (!chosen.length) caseList.append(el('p', { class: 'rx-case-empty', text: 'Nothing yet. Add lines from the list.' }));
     const caseItems = el('ol', { class: 'rx-case-list' });
@@ -228,13 +225,6 @@ function clip(text, length) {
   return text.length > length ? text.slice(0, text.lastIndexOf(' ', length)) + '…' : text;
 }
 
-function balanceSvg() {
-  const span = el('span', { class: 'rx-balance-art' });
-  span.innerHTML = '<svg width="74" height="64" viewBox="0 0 74 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
-    '<path d="M37 10v46M27 58h20"/><circle cx="37" cy="8" r="2.4"/>' +
-    '<g class="rx-balance-beam"><path d="M9 14h56"/><path d="M13 14 6 30h14Z"/><path d="M61 14l-7 16h14Z"/><path d="M5 30c1 4 4 6 8 6s7-2 8-6M53 30c1 4 4 6 8 6s7-2 8-6"/></g></svg>';
-  return span;
-}
 
 // Something the reader has deliberately not used is a better prompt than a
 // random line: it is the evidence their argument has to survive.

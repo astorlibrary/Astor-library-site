@@ -760,6 +760,72 @@ segment of the old toolkit with the new guides (73,658 segments, none
 missing) and every other segment of the old book and study pages with the
 new ones (27,517 segments).
 
+### A plainer guide and Revise (late October 2026)
+
+The guides and Revise had been designed to one formula: every piece of
+information in its own box, cover bands and emblems on every page, pills,
+icons, stars and small capitals everywhere. This pass takes most of that out
+rather than restyling it. Everything a reader could read, do or save before
+is still there; the sections above that describe edition palettes, cover
+bands, emblems, monograms and stars describe what this pass removed.
+
+The rules, all in `assets/study.css` (loaded after `astor-study.css` on guide,
+edition and Revise pages):
+
+- Plain paper, the site's own light and dark tokens. A book changes only one
+  colour (`--book-accent`), used for links, the one strong button and a few
+  rules. No page wears a cover band, a texture or a per-book palette, and no
+  page switches the site's theme on the reader's behalf.
+- Georgia for everything that is read; the sans only for the few labels and
+  controls, never below 13px, body text 18 to 19px.
+- No box unless it is a thing you hold (a flashcard) or press (a button).
+  Separation comes from space and the occasional hairline.
+
+**The guides.** The overview is a title page: cover, author, title, the
+summary, *Begin with what happens*, then one contents list (numbered, with a
+line on each section), a short *Alongside the guide* (Revise in a sentence,
+the reading plan and revision sheet folded behind one line each), *Read
+next* as a plain list, and the facts about the book at the foot like an
+imprint page. Gone: the cover band, the edition/guide/Revise tab row, the
+grid of section cards (which repeated the contents), the facts grid at the
+top, the Revise card, the boxed planner and the row of links at the foot.
+
+A section page is a reading column (38rem) with the one contents list beside
+it on a wide screen and after it on a phone, so a phone opens on the text.
+The panels in `scripts/study-toolkit.js` now write book-like markup (`gd-`
+classes) with headings at their proper levels. Quotations are grouped under
+the part of the book they come from; each is the line set large with a rule,
+then the speaker and reference, then the moment in italics, then the
+commentary, so the four read as different things by type alone. The theme
+filter pills and the tag row on every quotation are gone (the quotation
+explorer, linked at the foot, still filters). *Save* and *Mark as read* are
+quiet text buttons; reading progress is one sentence on the plot page.
+
+**Revise.** An activity opens on one quiet line naming the book (with
+*Change book*), the activity's name with *Other activities* beside it, a
+count and a hairline for progress, and then the question: the line set
+large, the answers as ruled rows. The verdict is one sentence with *Next*
+beside it; the note on the line folds under *Why?*. Removed: the cover band
+and the emblems lit as progress, the score chip and streak, the emblem in
+each card's corner, monograms on speakers, drawings thrown off right
+answers, shakes, slides and the count-up, the 50:50 roundel, stars on the
+completion screen and on the home. Results are the score, one line on what
+it means, one button, and the questions missed with their answers, shown
+rather than folded. Flashcards are a card that shows one side at a time
+(no 3D turn), with *Not yet* and *Got it* under it; the five Leitner boxes
+appear once, as figures, at the end of a sitting. The Revise home is the
+book, one line of progress, one way to start, the activities in three plain
+lists, the key lines folded, and the library quizzes as a list. The debate
+lost its tipping-balance drawing.
+
+The edition palettes and lifted cover art (`scripts/editions.js`,
+`scripts/build-edition-art.mjs`, `assets/editions/`) are still built into
+`revise-index.json` and tested, but no page reads anything from them except
+the accent; they can be retired in a later clean-up. Verse quotations are
+stored without their line breaks, which shows now that lines are set large;
+restoring lineation is a data task.
+
+
 ---
 
 ## 5. Accuracy

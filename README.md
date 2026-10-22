@@ -73,6 +73,12 @@ Revise (`/play/?book=<slug>`) to practise. `scripts/guide-pages.js`
 writes the guides; `node scripts/rebuild-guides.js` (run by
 `rebuild-library.js`) writes their source pages.
 
+The guides and Revise share one small stylesheet, `assets/study.css`, written
+to a few rules: plain paper in both themes, Georgia for anything read, the
+book's colour only for links and the one strong button, and no box around
+anything that is not held or pressed. Before adding a card, badge, icon or
+animation to either, read the note at the top of that file.
+
 `scripts/book-data.js` is the schema; `check-site.js` and the test suite both
 run it. Every quotation must carry a `reference` and a `source` naming the
 public-domain text it was checked against, or the build fails.

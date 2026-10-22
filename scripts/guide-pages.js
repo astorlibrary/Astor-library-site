@@ -14,7 +14,6 @@ const {
   escapeHtml, glance, plotPanel, charactersPanel, themesPanel, quotationsPanel, techniquesPanel,
   contextPanel, essaysPanel, videosPanel, relatedPanel, formatYear, readingTimeLabel, fallbackTitle
 } = require('./study-toolkit');
-const { motifSvg } = require('./book-motifs');
 
 const isPlay = book => book.form === 'play';
 const parts = book => (isPlay(book) ? 'acts' : 'sections');
@@ -162,161 +161,102 @@ function renderStub(book, id) {
 
 // --- the filled pages ------------------------------------------------------------
 
-// The three ways into one book, the same on its edition page, its guide and its
-// Revise pages.
-function bookWays(book, here, { editionHref, revise = true } = {}) {
-  const slug = escapeHtml(book.slug);
-  const link = (href, label, key) => '<a href="' + escapeHtml(href) + '"' + (here === key ? ' aria-current="page"' : '') + '>' + label + '</a>';
-  return '<nav class="book-ways" aria-label="' + escapeHtml(shortTitle(book)) + ': edition, study guide and revision">' +
-    link(editionHref || book.href, 'The edition', 'edition') +
-    link(guideHref(book.slug), 'Study guide', 'guide') +
-    (revise ? link('/play/?book=' + slug, 'Revise', 'revise') : '') +
-    '</nav>';
-}
-
-function contents(book, here) {
+// The one contents list. On a section page it sits beside the text on a wide
+// screen and after it on a narrow one, so a phone opens on the reading; the
+// overview carries its own fuller list instead.
+function contents(book, here, { editionHref } = {}) {
   const sections = sectionsFor(book);
-  const item = (href, name, size, current) =>
-    '<li><a href="' + href + '"' + (current ? ' aria-current="page"' : '') + '><span>' + escapeHtml(name) + '</span>' +
-    (size ? '<small>' + escapeHtml(size) + '</small>' : '') + '</a></li>';
-  const list = '<ol>' + item(guideHref(book.slug), 'Overview', '', !here) +
-    sections.map(section => item(guideHref(book.slug, section.id), section.name, section.size(book), section.id === here)).join('') +
-    '</ol>';
-  const current = here ? SECTIONS.find(section => section.id === here).name : 'Overview';
-  // One list, drawn twice: a contents column beside the page on a wide
-  // screen, and a closed menu naming the current section on a narrow one.
-  return '<nav class="sg-contents" aria-label="Study guide contents">' +
-    '<details class="sg-picker"><summary><span class="sg-picker-label">Contents</span><span class="sg-picker-here">' + escapeHtml(current) + '</span></summary>' + list + '</details>' +
-    '<div class="sg-toc"><p class="sg-toc-title">Contents</p>' + list + '</div>' +
+  const item = (href, name, current) =>
+    '<li><a href="' + href + '"' + (current ? ' aria-current="page"' : '') + '>' + escapeHtml(name) + '</a></li>';
+  return '<nav class="gd-contents" aria-labelledby="gd-contents-title">' +
+    '<p class="gd-contents-title" id="gd-contents-title"><a href="' + guideHref(book.slug) + '">' + escapeHtml(shortTitle(book)) + '</a></p>' +
+    '<ol>' + sections.map(section => item(guideHref(book.slug, section.id), section.name, section.id === here)).join('') + '</ol>' +
+    '<ul class="gd-contents-more">' +
+    '<li><a href="/play/?book=' + escapeHtml(book.slug) + '">Revise ' + escapeHtml(shortTitle(book)) + '</a></li>' +
+    '<li><a href="' + escapeHtml(editionHref || book.href) + '">The Astor edition</a></li>' +
+    '</ul>' +
     '</nav>';
 }
 
 function pager(book, here) {
-  const order = [{ id: '', name: 'Overview' }, ...sectionsFor(book)];
+  const order = [{ id: '', name: 'Contents' }, ...sectionsFor(book)];
   const at = order.findIndex(section => section.id === here);
   const previous = order[at - 1];
   const next = order[at + 1];
   if (!previous && !next) return '';
   const link = (section, rel, label) => section
-    ? '<a class="sg-pager-' + rel + '" rel="' + rel + '" href="' + guideHref(book.slug, section.id) + '"><small>' + label + '</small><span>' + escapeHtml(section.name) + '</span></a>'
+    ? '<a class="gd-pager-' + rel + '" rel="' + rel + '" href="' + guideHref(book.slug, section.id) + '"><small>' + label + '</small> ' + escapeHtml(section.name) + '</a>'
     : '<span></span>';
-  return '<nav class="sg-pager" aria-label="Previous and next sections">' + link(previous, 'prev', 'Previous') + link(next, 'next', 'Next') + '</nav>';
+  return '<nav class="gd-pager" aria-label="Previous and next sections">' + link(previous, 'prev', 'Previous') + link(next, 'next', 'Next') + '</nav>';
 }
 
-// The panel's own heading becomes the page's h1, so it is lifted out of the
-// panel rather than repeated beneath it.
-function panelBody(panelHtml) {
-  return panelHtml.replace(/(<section class="astor-panel"[^>]*>)<h3>[\s\S]*?<\/h3>/, '$1');
-}
-// The panels were written to sit under a page's h1 and the toolkit's h2, so
-// their subheads are h4 like their items. In a guide each heading moves up to
-// follow on from the one above it: what opens the body takes the level given,
-// and the items under a subhead (or under a later panel's title) one more.
-function levelHeadings(html, top) {
-  let nested = false;
-  return html.replace(/<h([34])(\s[^>]*)?>([\s\S]*?)<\/h\1>/g, (whole, level, attributes = '', text) => {
-    const opens = level === '3' || /class="[^"]*\bastor-subhead\b/.test(attributes);
-    if (opens) nested = true;
-    const to = opens || !nested ? top : top + 1;
-    return '<h' + to + attributes + '>' + text + '</h' + to + '>';
-  });
-}
-function panelHeading(panelHtml, fallback) {
-  const match = panelHtml.match(/<section class="astor-panel"[^>]*><h3>([\s\S]*?)<\/h3>/);
-  return match ? match[1] : escapeHtml(fallback);
-}
-
-function practise(book) {
-  const slug = escapeHtml(book.slug);
-  const title = escapeHtml(shortTitle(book));
-  const rows = [
-    ['/play/mixed-round/?book=' + slug, 'Ten questions', 'A mix of every kind, the lines you miss first.'],
-    ['/play/flashcards/?book=' + slug, 'Flashcards', 'Learn the ' + book.quotations.length + ' key lines by heart.'],
-    (book.essayQuestions || []).length ? ['/play/essay-forge/?book=' + slug, 'Essay planner', 'Turn a question here into a plan, step by step.'] : null
-  ].filter(Boolean);
-  return '<section class="sg-practise" aria-labelledby="sg-practise-title">' +
-    '<div class="sg-practise-words"><p class="sg-eyebrow">Revise</p><h2 id="sg-practise-title">Practise what you have read</h2>' +
-    '<p>Quizzes, flashcards and an essay planner on ' + title + ' alone. Your answers stay in this browser.</p></div>' +
-    '<ul class="sg-practise-list">' + rows.map(([href, name, note]) =>
-      '<li><a href="' + href + '"><b>' + escapeHtml(name) + '</b><span>' + escapeHtml(note) + '</span></a></li>').join('') + '</ul>' +
-    '<a class="sg-practise-all" href="/play/?book=' + slug + '">All activities on ' + title + ' <span aria-hidden="true">→</span></a>' +
-    '</section>';
-}
-
-function overview(book, { passages, titleFor }) {
+// The overview: the book, a way to begin, the contents, and what goes with it.
+function overview(book, { passages, titleFor, cover, editionHref }) {
   const sections = sectionsFor(book);
   const slug = escapeHtml(book.slug);
-  const cards = sections.map(section =>
-    '<li><a class="sg-section-card" href="' + guideHref(book.slug, section.id) + '">' +
-    '<span class="sg-section-name">' + escapeHtml(section.name) + '</span>' +
-    '<span class="sg-section-about">' + escapeHtml(section.about(book)) + '</span>' +
-    '<span class="sg-section-size">' + escapeHtml(section.size(book)) + '</span>' +
-    '</a></li>').join('');
+  const title = escapeHtml(shortTitle(book));
+  const first = sections[0];
+  const toc = sections.map(section =>
+    '<li><a href="' + guideHref(book.slug, section.id) + '">' + escapeHtml(section.name) + '</a>' +
+    '<span>' + escapeHtml(section.about(book)) + '</span></li>').join('');
   // A related page the catalogue cannot name is titled from its address.
   const related = relatedPanel(book, href => (titleFor && titleFor(href)) || fallbackTitle(href), passages || []);
-  return '<section class="sg-intro">' +
-    '<p class="sg-lead">' + escapeHtml(book.summary) + '</p>' +
-    glance(book) +
+  const coverHtml = cover
+    ? '<a class="gd-cover" href="' + escapeHtml(editionHref || book.href) + '" aria-label="The Astor edition of ' + title + '"><img src="' + escapeHtml(cover) + '" alt="" width="160" height="240" decoding="async"></a>'
+    : '';
+  return '<header class="gd-title' + (cover ? '' : ' no-cover') + '">' + coverHtml +
+    '<div class="gd-title-words">' +
+    (book.author ? '<p class="gd-author">' + escapeHtml(book.author) + '</p>' : '') +
+    '<h1>' + title + '</h1>' +
+    '<p class="gd-subtitle">A study guide</p>' +
+    '</div></header>' +
+    '<div class="gd-text gd-overview">' +
+    '<p class="gd-lead">' + escapeHtml(book.summary) + '</p>' +
+    '<p class="gd-begin">' +
+    (first ? '<a class="gd-button" href="' + guideHref(book.slug, first.id) + '">Begin with ' + escapeHtml(first.name.toLowerCase()) + ' <span aria-hidden="true">→</span></a>' : '') +
+    '<button class="gd-text-button" type="button" data-astor-save aria-pressed="false">Save to my library</button>' +
+    '</p>' +
+    '<section class="gd-toc" aria-labelledby="gd-toc-title"><h2 id="gd-toc-title">Contents</h2><ol>' + toc + '</ol></section>' +
+    '<section class="gd-alongside" aria-labelledby="sg-practise-title">' +
+    '<h2 id="sg-practise-title">Alongside the guide</h2>' +
+    '<p><a href="/play/?book=' + slug + '">Revise ' + title + '</a> with quizzes, flashcards for the ' + book.quotations.length + ' key lines' +
+    ((book.essayQuestions || []).length ? ' and an essay planner' : '') + '. Your answers stay in this browser.</p>' +
+    '<details class="gd-tool" id="sg-tools-title"><summary>Make a reading plan</summary>' +
+    '<div class="astor-plan" data-astor-plan="' + slug + '"><p>Choose a finish date and the days you can read, and the ' + parts(book) + ' are shared out between them.</p></div></details>' +
+    '<details class="gd-tool"><summary>Print a revision sheet</summary>' +
+    '<div class="astor-sheet-box" data-astor-sheet="' + slug + '"><p>The plot, characters, themes and ' + Math.min(8, book.quotations.length) + ' key quotations on one page.</p></div></details>' +
     '</section>' +
-    '<section class="sg-sections" aria-labelledby="sg-sections-title">' +
-    '<h2 id="sg-sections-title" class="sg-section-title">In this guide</h2>' +
-    '<ol class="sg-section-grid">' + cards + '</ol>' +
-    '</section>' +
-    practise(book) +
-    '<section class="sg-tools" aria-labelledby="sg-tools-title">' +
-    '<h2 id="sg-tools-title" class="sg-section-title">Plan your reading</h2>' +
-    '<div class="astor-revise-tools">' +
-    '<div class="astor-plan" data-astor-plan="' + slug + '">' +
-    '<h3>Reading plan</h3>' +
-    '<p>Pick a finish date and the days you can read, and the ' + parts(book) + ' are split between them.</p>' +
-    '</div>' +
-    '<div class="astor-sheet-box" data-astor-sheet="' + slug + '">' +
-    '<h3>Revision sheet</h3>' +
-    '<p>Plot, characters, themes and ' + Math.min(8, book.quotations.length) + ' key quotations on one page to print.</p>' +
-    '</div>' +
-    '</div>' +
-    '</section>' +
-    (related ? levelHeadings(panelBody(related), 3).replace('<section class="astor-panel" id="astor-related" data-panel="Read next">',
-      '<section class="astor-panel sg-related" id="astor-related" data-panel="Read next" aria-labelledby="sg-related-title"><h2 id="sg-related-title" class="sg-section-title">Read next</h2>') : '');
+    related +
+    '<section class="gd-about" aria-labelledby="gd-about-title"><h2 id="gd-about-title">About the book</h2>' + glance(book) + '</section>' +
+    '</div>';
 }
 
 // Everything inside <main> for one guide page.
 function renderGuideMain(book, id, { cover, editionHref, passages, titleFor } = {}) {
   const section = SECTIONS.find(entry => entry.id === id);
   const title = shortTitle(book);
-  const panelHtml = section ? section.panel(book) : '';
-  const heading = section ? panelHeading(panelHtml, section.name) : escapeHtml(title);
   const crumbs = '<a href="/guides/">Study guides</a><span aria-hidden="true">/</span>' + (id
     ? '<a href="' + guideHref(book.slug) + '">' + escapeHtml(title) + '</a><span aria-hidden="true">/</span><span aria-current="page">' + escapeHtml(section.name) + '</span>'
     : '<span aria-current="page">' + escapeHtml(title) + '</span>');
-  const coverHtml = cover
-    ? '<a class="sg-cover" href="' + escapeHtml(editionHref || book.href) + '" aria-label="The Astor edition of ' + escapeHtml(title) + '"><img src="' + escapeHtml(cover) + '" alt="" width="132" height="198" decoding="async"></a>'
-    : '';
-  const head = '<header class="sg-head' + (id ? ' is-section' : ' is-overview') + '">' +
-    '<div class="sg-band" aria-hidden="true"><div class="sg-band-art"></div></div>' +
-    '<div class="sg-head-inner">' + (id ? '' : coverHtml) +
-    '<div class="sg-head-words">' +
-    '<p class="sg-kicker">' + motifSvg(book, 18) + '<span>Study guide' + (book.author ? ' · ' + escapeHtml(book.author) : '') + '</span></p>' +
-    (id ? '<p class="sg-book"><a href="' + guideHref(book.slug) + '">' + escapeHtml(title) + '</a></p>' : '') +
-    '<h1>' + heading + '</h1>' +
-    (id ? '' : '<p class="sg-deck">' + escapeHtml(sectionsFor(book).map(entry => entry.name.toLowerCase()).join(', ').replace(/^./, c => c.toUpperCase())) + '.</p>') +
-    '<div class="sg-actions astor-toolkit-actions"><button class="sg-save" type="button" data-astor-save aria-pressed="false">Save to my library</button></div>' +
-    '</div></div>' +
-    '</header>';
+  const data = ' id="astor-study-toolkit" data-astor-book="' + escapeHtml(book.slug) + '" data-astor-book-title="' + escapeHtml(book.title) + '" data-astor-book-href="' + escapeHtml(book.href) + '" data-astor-stages="' + book.structure.length + '"';
+  if (!id) {
+    return '\n  <nav class="book-breadcrumb" aria-label="Breadcrumb">' + crumbs + '</nav>\n' +
+      '  <div class="gd-book"' + data + '>' + overview(book, { passages, titleFor, cover, editionHref }) + '</div>\n';
+  }
   // The edition's page keeps the book's own history (its text, sources and
   // afterlife); the Context section points there rather than repeating it.
   const more = id === 'context'
-    ? '<p class="sg-more">The book’s publication, sources and later history are on <a href="' + escapeHtml(editionHref || book.href) + '">the Astor edition’s page</a>.</p>'
+    ? '<p class="gd-see-also">The book’s publication, sources and later history are on <a href="' + escapeHtml(editionHref || book.href) + '">the Astor edition’s page</a>.</p>'
     : '';
-  const body = id ? levelHeadings(panelBody(panelHtml), 2) + more : overview(book, { passages, titleFor });
   return '\n  <nav class="book-breadcrumb" aria-label="Breadcrumb">' + crumbs + '</nav>\n' +
-    '  ' + head + '\n' +
-    '  ' + bookWays(book, 'guide', { editionHref }) + '\n' +
-    '  <div class="sg-layout">' + contents(book, id) +
-    '<div class="sg-body" id="astor-study-toolkit" data-astor-book="' + escapeHtml(book.slug) + '" data-astor-book-title="' + escapeHtml(book.title) + '" data-astor-book-href="' + escapeHtml(book.href) + '" data-astor-stages="' + book.structure.length + '">' +
-    body +
-    '</div></div>\n' +
-    '  ' + pager(book, id) + '\n';
+    '  <div class="gd-layout">' +
+    '<article class="gd-text"' + data + '>' +
+    '<h1>' + escapeHtml(section.name) + '</h1>' +
+    section.panel(book) + more +
+    pager(book, id) +
+    '</article>' +
+    contents(book, id, { editionHref }) +
+    '</div>\n';
 }
 
 // --- the index of guides ----------------------------------------------------------
@@ -374,36 +314,23 @@ function reviseWords(shelf) {
 }
 
 // The invitation on an edition's page (and a study edition's) to study the
-// book free: the guide and Revise, side by side, in the book's own colours.
+// book free: two plain links, to the guide and to Revise, under one heading.
 function renderStudyInvite(book, { shelf, editionHref } = {}) {
   const title = shortTitle(book);
   const slug = escapeHtml(book.slug);
-  const sections = sectionsFor(book);
-  const guideNote = sections.map(section => {
+  const guideNote = sectionsFor(book).map(section => {
     if (section.id === 'quotations') return book.quotations.length + ' key quotations';
     if (section.id === 'characters') return 'the characters';
     if (section.id === 'plot') return 'what happens';
     return section.name.toLowerCase();
   }).join(', ').replace(/, ([^,]*)$/, ' and $1');
   return '<section class="book-study" data-astor-study-invite data-astor-book="' + slug + '" data-astor-book-title="' + escapeHtml(book.title) + '" data-astor-book-href="' + escapeHtml(editionHref || book.href) + '" aria-labelledby="book-study-title">' +
-    '<div class="book-study-band" aria-hidden="true"><div class="book-study-art"></div></div>' +
-    '<div class="book-study-words">' +
-    '<p class="book-study-kicker">' + motifSvg(book, 18) + '<span>Free to use</span></p>' +
     '<h2 id="book-study-title">Study ' + escapeHtml(title) + '</h2>' +
-    '<p>A complete study guide and interactive revision, free, with nothing to sign up for.</p>' +
-    '<button class="book-study-save" type="button" data-astor-save aria-pressed="false">Save to my library</button>' +
-    '</div>' +
-    '<div class="book-study-ways">' +
-    '<a class="book-study-way" href="' + guideHref(book.slug) + '"><span class="book-study-way-name">Study guide</span>' +
-    '<span class="book-study-way-note">' + escapeHtml(guideNote.replace(/^./, character => character.toUpperCase())) + '.</span>' +
-    '<span class="book-study-way-go">Read the guide <span aria-hidden="true">→</span></span></a>' +
-    '<a class="book-study-way" href="/play/?book=' + slug + '"><span class="book-study-way-name">Revise</span>' +
-    '<span class="book-study-way-note">' + escapeHtml(reviseWords(shelf)) + ', all on ' + escapeHtml(title) + '. Your progress stays in this browser.</span>' +
-    '<span class="book-study-way-go">Start revising <span aria-hidden="true">→</span></span></a>' +
-    '</div>' +
-    '<nav class="book-study-sections" aria-label="Sections of the ' + escapeHtml(title) + ' study guide"><ol>' +
-    sections.map(section => '<li><a href="' + guideHref(book.slug, section.id) + '">' + escapeHtml(section.name) + '</a></li>').join('') +
-    '</ol></nav>' +
+    '<ul class="book-study-ways">' +
+    '<li><a href="' + guideHref(book.slug) + '">The study guide</a> ' + escapeHtml(guideNote.replace(/^./, character => character.toUpperCase())) + '.</li>' +
+    '<li><a href="/play/?book=' + slug + '">Revise</a> ' + escapeHtml(reviseWords(shelf)) + ', all on ' + escapeHtml(title) + '.</li>' +
+    '</ul>' +
+    '<p class="book-study-note">Both are free, with nothing to sign up for. <button class="gd-text-button" type="button" data-astor-save aria-pressed="false">Save to my library</button></p>' +
     '</section>';
 }
 
@@ -431,6 +358,6 @@ function guideTargetFor(slug, fragment) {
 
 module.exports = {
   SECTIONS, OLD_PANELS, OLD_ITEMS, guideHref, sectionsFor, shortTitle, pageTitle, pageDescription,
-  renderStub, renderGuideMain, renderIndex, bookWays, guideTargetFor, renderStudyInvite, forwardingScript,
+  renderStub, renderGuideMain, renderIndex, guideTargetFor, renderStudyInvite, forwardingScript,
   formatYear, readingTimeLabel
 };

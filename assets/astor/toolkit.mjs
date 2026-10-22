@@ -38,7 +38,7 @@ function enhance(root) {
   // A study-guide page holds one section and no tabs, so its maps are drawn
   // straight away rather than when a tab opens.
   if (!root.querySelector('.astor-tabs')) {
-    for (const panel of root.querySelectorAll('.astor-panel')) { embedMap(panel); embedPlaces(panel); }
+    for (const panel of root.querySelectorAll('.astor-panel, .gd-panel')) { embedMap(panel); embedPlaces(panel); }
     // A link to one quotation or character lands on it, and stays on it while
     // the maps above it draw.
     const land = () => {
@@ -228,60 +228,56 @@ function setUpSaveButton(root, book, live) {
 }
 
 // --- progress --------------------------------------------------------------
+//
+// The plot page lets a reader mark each act or section as read, and says in one
+// line how far they have got. The reading plan marks the same sections.
 
 function setUpProgress(root, slug, title, live) {
   if (!isRemembering()) return;
-  const spine = root.querySelector('#astor-plot .astor-spine');
-  const rows = spine ? [...spine.querySelectorAll('li[data-stage]')] : [];
-  // Every page of a guide shows how far the reader has got; only the plot
-  // page has the ticks.
-  const total = rows.length || Number(root.dataset.astorStages) || 0;
-  if (!total) return;
+  const rows = [...root.querySelectorAll('#astor-plot [data-stage]')];
+  if (!rows.length) return;
+  const total = rows.length;
+  const line = root.querySelector('[data-astor-progress]');
 
-  const ring = el('div', { class: 'astor-ring' });
-  pageOf(root).querySelector('.astor-toolkit-actions')?.prepend(ring);
-
-  function paintRing() {
+  function paintLine() {
+    if (!line) return;
     const done = bookProgress(slug).stages.length;
-    const share = Math.min(1, done / total);
-    const circumference = 2 * Math.PI * 18;
-    ring.innerHTML =
-      '<svg viewBox="0 0 46 46" role="img" aria-label="' + done + ' of ' + total + ' read">' +
-      '<circle class="astor-ring-track" cx="23" cy="23" r="18"></circle>' +
-      '<circle class="astor-ring-value" cx="23" cy="23" r="18" stroke-dasharray="' + circumference +
-      '" stroke-dashoffset="' + (circumference * (1 - share)) + '"></circle></svg>' +
-      '<span>' + done + '/' + total + ' read</span>';
+    line.hidden = false;
+    line.textContent = done
+      ? done + ' of ' + total + ' marked as read.'
+      : 'Mark each part as you finish reading it, and your place is kept in this browser.';
   }
 
   const painters = [];
-  root.addEventListener('astor:progress', () => { for (const paint of painters) paint(); paintRing(); });
+  root.addEventListener('astor:progress', () => { for (const paint of painters) paint(); paintLine(); });
 
   for (const row of rows) {
     const stage = row.dataset.stage;
     const slot = row.querySelector('.astor-stage-slot');
     if (!slot) continue;
-    const label = row.querySelector('.astor-stage-label')?.textContent || 'this section';
+    const label = row.querySelector('[data-stage-label]')?.textContent || 'this section';
     const button = el('button', {
-      class: 'astor-read-toggle', type: 'button',
+      class: 'gd-text-button', type: 'button',
       'aria-label': 'Mark ' + label + ' of ' + title + ' as read'
     });
     const paint = () => {
       const done = bookProgress(slug).stages.includes(stage);
       button.setAttribute('aria-pressed', String(done));
       button.textContent = done ? 'Read' : 'Mark as read';
+      row.classList.toggle('is-read', done);
     };
     button.addEventListener('click', () => {
       const done = bookProgress(slug).stages.includes(stage);
       markStage(slug, stage, !done);
       paint();
-      paintRing();
+      paintLine();
       announce(live, label + (done ? ' unmarked.' : ' marked as read.'));
     });
     paint();
     painters.push(paint);
     slot.replaceWith(button);
   }
-  paintRing();
+  paintLine();
 }
 
 // --- reading plan ------------------------------------------------------------
@@ -298,6 +294,10 @@ function setUpReadingPlan(root, book, live) {
   const load = () => (record ? Promise.resolve(record) : loadBook(book.slug).then(loaded => { record = loaded; return loaded; }));
   const mount = el('div', { class: 'astor-plan-body' });
   box.append(mount);
+  // On a guide the planner is folded away; a reader with a plan finds it open.
+  const fold = box.closest('details');
+  if (fold && plan) fold.open = true;
+  if (fold && plan && /^#sg-tools-title$/.test(window.location.hash)) settleOn(fold);
   draw();
 
   function draw() {
@@ -400,6 +400,9 @@ function setUpReadingPlan(root, book, live) {
 }
 
 // --- revision sheet -----------------------------------------------------------
+//
+// On a guide the sheet sits in a fold, and is drawn the first time the fold is
+// opened; anywhere else a button shows and hides it.
 
 function setUpSheet(root, book) {
   const box = root.querySelector('[data-astor-sheet]');
@@ -415,30 +418,45 @@ function setUpSheet(root, book) {
     document.body.append(printed);
   });
   window.addEventListener('afterprint', () => { printed?.remove(); printed = null; });
+  let sheet = null;
+  const show = () => Promise.all([import('./sheet.mjs'), loadBook(book.slug)]).then(([module, record]) => {
+    sheet = el('div', { class: 'astor-sheet-wrap' });
+    sheet.append(module.buildSheet(record));
+    sheet.append(el('p', { class: 'astor-toolkit-actions' }, [
+      el('button', { class: 'button', type: 'button', text: 'Print it', onclick: () => window.print() })
+    ]));
+    box.append(sheet);
+    document.body.classList.add('astor-has-sheet');
+  }).catch(() => {
+    box.append(el('p', { class: 'astor-inline-note', text: 'The sheet could not be built just now. Everything on it is in the guide.' }));
+  });
+  const hide = () => {
+    sheet?.remove();
+    sheet = null;
+    document.body.classList.remove('astor-has-sheet');
+  };
+
+  const fold = box.closest('details');
+  if (fold) {
+    fold.addEventListener('toggle', () => {
+      if (fold.open && !sheet) show();
+      else if (!fold.open) hide();
+    });
+    return;
+  }
   const button = el('button', { class: 'button secondary', type: 'button', text: 'Show the revision sheet', 'aria-expanded': 'false' });
   box.append(el('p', { class: 'astor-toolkit-actions' }, [button]));
-  let sheet = null;
   button.addEventListener('click', () => {
     if (sheet) {
-      sheet.remove();
-      sheet = null;
-      document.body.classList.remove('astor-has-sheet');
+      hide();
       button.textContent = 'Show the revision sheet';
       button.setAttribute('aria-expanded', 'false');
       return;
     }
-    Promise.all([import('./sheet.mjs'), loadBook(book.slug)]).then(([module, record]) => {
-      sheet = el('div', { class: 'astor-sheet-wrap' });
-      sheet.append(module.buildSheet(record));
-      sheet.append(el('p', { class: 'astor-toolkit-actions' }, [
-        el('button', { class: 'button', type: 'button', text: 'Print it', onclick: () => window.print() })
-      ]));
-      box.append(sheet);
-      document.body.classList.add('astor-has-sheet');
+    show().then(() => {
+      if (!sheet) return;
       button.textContent = 'Hide the revision sheet';
       button.setAttribute('aria-expanded', 'true');
-    }).catch(() => {
-      box.append(el('p', { class: 'astor-inline-note', text: 'The sheet could not be built just now. Everything on it is in the tabs above.' }));
     });
   });
 }
@@ -447,7 +465,7 @@ function setUpSheet(root, book) {
 
 function setUpQuoteFilters(root, live) {
   const buttons = [...root.querySelectorAll('[data-quote-filter]')];
-  const cards = [...root.querySelectorAll('.astor-quote-card')];
+  const cards = [...root.querySelectorAll('.astor-quote-card, [data-quote-id]')];
   if (!buttons.length || !cards.length) return;
 
   const count = el('p', { class: 'astor-explorer-count', text: cards.length + ' quotations' });
@@ -505,17 +523,17 @@ function setUpVideos(root) {
 
 function setUpCommonplace(root, book) {
   if (!isRemembering()) return;
-  for (const card of root.querySelectorAll('.astor-quote-card')) {
-    const foot = card.querySelector('.astor-quote-foot');
+  for (const card of root.querySelectorAll('[data-quote-id]')) {
+    const foot = card.querySelector('[data-quote-tools], .astor-quote-foot');
     if (!foot) continue;
     const id = book.slug + ':' + card.dataset.quoteId;
     const text = card.querySelector('blockquote p')?.textContent || '';
-    const reference = card.querySelector('.astor-quote-attribution')?.textContent || '';
-    const button = el('button', { class: 'astor-save-quote', type: 'button' });
+    const reference = card.dataset.quoteReference || card.querySelector('.astor-quote-attribution')?.textContent || '';
+    const button = el('button', { class: 'gd-text-button', type: 'button', 'aria-label': 'Save this quotation to your commonplace book' });
     const paint = () => {
       const saved = inCommonplace(id);
       button.setAttribute('aria-pressed', String(saved));
-      button.textContent = saved ? 'In your commonplace book' : 'Save this quotation';
+      button.textContent = saved ? 'Saved' : 'Save';
     };
     button.addEventListener('click', () => {
       toggleCommonplace({ id, text, reference, book: book.title, bookHref: book.href });

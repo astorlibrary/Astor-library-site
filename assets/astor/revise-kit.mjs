@@ -1,12 +1,12 @@
-// Shared pieces for the Revise pages: each book's colour, drawing and cover,
-// the state of its key lines, the ten-question session and the one next step
-// a page suggests.
+// Shared pieces for the Revise pages: each book's colour and cover, the state
+// of its key lines, the ten-question session and the one next step a page
+// suggests.
 //
 // The Revise pages open on one book at a time, so they read the small
 // /assets/revise-index.json for the chooser and then fetch only the chosen
 // book's record. The whole-library study index is left to the explorers.
 
-import { el, clear, shuffle, seededRandom, prefersReducedMotion, fetchJson, describeError, guideHref } from './util.mjs';
+import { el, clear, shuffle, seededRandom, fetchJson, describeError, guideHref } from './util.mjs';
 import { loadBook, cardId } from './data.mjs';
 import { snapshot, today, recentlyViewed } from './store.mjs';
 import { GAME_BUILDERS } from './questions.mjs';
@@ -54,219 +54,18 @@ export function loadShelf() {
 
 export { loadBook };
 
-// A drawing as markup. `paths` is the inner SVG from book-motifs.js or
-// revise-icons.js; both are drawn in the same 24x24 box.
-export function drawing(paths, size = 24, className = '') {
-  return el('span', {
-    class: 'rv-drawing' + (className ? ' ' + className : ''),
-    'aria-hidden': 'true',
-    html: '<svg width="' + size + '" height="' + size + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" focusable="false">' + (paths || '') + '</svg>'
-  });
-}
+// The book's colour, for its links, its one button and the thin rules that
+// mark progress. Revise follows the site's own light or dark theme; a book
+// changes only this colour, never the page around the question.
+let currentMeta = null;
 
 export function setAccent(node, meta) {
-  if (node && meta?.accent) node.style.setProperty('--book-accent', meta.accent);
-  applyEdition(meta);
-}
-
-// --- the book's edition ------------------------------------------------------
-//
-// Every book carries an edition (scripts/editions.js): a light and a dark
-// palette drawn from its cover, the mode it wears by default, and a register
-// (layout, voice, texture). Applying one writes the palette as custom
-// properties and the register as data attributes on <html>; the "rx:
-// editions" block of astor-study.css does the rest. Nothing about how a game
-// is played changes from book to book.
-
-const MODE_KEY = 'astor-revise-mode';
-const TOKENS = {
-  ground: '--ed-ground', surface: '--ed-surface', sunk: '--ed-sunk', ink: '--ed-ink', soft: '--ed-soft',
-  accent: '--ed-accent', accentText: '--ed-accent-text', button: '--ed-button', buttonInk: '--ed-button-ink',
-  hero: '--ed-hero', heroInk: '--ed-hero-ink', line: '--ed-line', lineStrong: '--ed-line-strong',
-  right: '--ed-right', wrong: '--ed-wrong', star: '--ed-star', onFill: '--ed-on-fill',
-  band: '--ed-band', bandInk: '--ed-band-text', bandSoft: '--ed-band-soft', bandArt: '--ed-band-art'
-};
-const ART = ['--ed-field', '--ed-motifs', '--ed-motif-n'];
-
-export function modeOverride() {
-  try {
-    const value = window.localStorage.getItem(MODE_KEY);
-    return value === 'light' || value === 'dark' ? value : '';
-  } catch { return ''; }
-}
-
-// The reader's own choice wins; then a site-wide dark theme they chose; then
-// the edition's own mode.
-export function editionMode(edition) {
-  const chosen = modeOverride();
-  if (chosen) return chosen;
-  let site = '';
-  try { site = window.localStorage.getItem('astor-theme') || ''; } catch { /* optional */ }
-  if (site === 'dark') return 'dark';
-  return edition?.mode === 'dark' ? 'dark' : 'light';
-}
-
-let currentMeta = null;
-let themeWatch = null;
-
-export function applyEdition(meta) {
-  if (typeof document === 'undefined') return;
-  const html = document.documentElement;
-  const edition = meta?.edition;
   currentMeta = meta || null;
-  if (!edition) {
-    for (const token of [...Object.values(TOKENS), ...ART]) html.style.removeProperty(token);
-    for (const key of ['edition', 'edMode', 'edLayout', 'edVoice', 'edTexture', 'edArt']) delete html.dataset[key];
-    return;
-  }
-  // The cover's drawings, lifted by scripts/build-edition-art.mjs.
-  const motifs = edition.motifs || 0;
-  html.style.setProperty('--ed-field', 'url("/assets/editions/' + meta.slug + '-field.png")');
-  if (motifs) html.style.setProperty('--ed-motifs', 'url("/assets/editions/' + meta.slug + '-motifs.png")');
-  else html.style.removeProperty('--ed-motifs');
-  html.style.setProperty('--ed-motif-n', String(Math.max(2, motifs)));
-  if (motifs) html.dataset.edArt = String(motifs); else delete html.dataset.edArt;
-  watchSiteTheme();
-  const mode = editionMode(edition);
-  matchSiteTheme(mode);
-  const palette = edition[mode] || edition.light;
-  for (const [key, token] of Object.entries(TOKENS)) if (palette[key]) html.style.setProperty(token, palette[key]);
-  html.dataset.edition = meta.slug;
-  html.dataset.edMode = mode;
-  html.dataset.edLayout = edition.layout || 'centred';
-  html.dataset.edVoice = edition.voice || 'italic';
-  html.dataset.edTexture = edition.texture || 'plain';
-  document.querySelector('meta[name=theme-color]')?.setAttribute('content', palette.ground);
-  for (const button of document.querySelectorAll('.rx-mode-toggle')) paintModeToggle(button, mode);
+  if (node && meta?.accent) node.style.setProperty('--book-accent', meta.accent);
 }
 
-// One of the book's own drawings, as a mask the stylesheet tints. `index`
-// wraps round however many the cover gave; with none, it draws nothing.
-export function motif(index = 0, className = '') {
-  const count = currentMeta?.edition?.motifs || 0;
-  const node = el('i', { class: 'rx-motif' + (className ? ' ' + className : ''), 'aria-hidden': 'true' });
-  node.style.setProperty('--i', String(count ? ((index % count) + count) % count : 0));
-  return node;
-}
-
-export function hasMotifs() {
-  return Boolean(currentMeta?.edition?.motifs);
-}
 export function currentBook() {
   return currentMeta;
-}
-
-// A right answer throws a handful of the book's drawings off the button.
-export function burst(node, count = 7) {
-  if (!node || !hasMotifs() || prefersReducedMotion() || !node.animate) return;
-  const layer = el('span', { class: 'rx-burst', 'aria-hidden': 'true' });
-  node.append(layer);
-  for (let index = 0; index < count; index += 1) {
-    const piece = motif(index + Math.floor(Math.random() * 8));
-    layer.append(piece);
-    const angle = (index / count) * Math.PI * 2 + Math.random() * 0.6;
-    const reach = 46 + Math.random() * 36;
-    piece.animate([
-      { transform: 'translate(-50%, -50%) scale(.3) rotate(0deg)', opacity: 0 },
-      { transform: 'translate(calc(-50% + ' + Math.cos(angle) * reach * 0.6 + 'px), calc(-50% + ' + Math.sin(angle) * reach * 0.6 + 'px)) scale(1)', opacity: 1, offset: 0.45 },
-      { transform: 'translate(calc(-50% + ' + Math.cos(angle) * reach + 'px), calc(-50% + ' + Math.sin(angle) * reach + 'px)) scale(.8) rotate(' + (Math.random() * 40 - 20) + 'deg)', opacity: 0 }
-    ], { duration: 760 + Math.random() * 200, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'forwards' });
-  }
-  setTimeout(() => layer.remove(), 1100);
-}
-
-// The cover band: the head of the page set in the cover's ground with its
-// drawings, running down behind the study bar until it meets the first page
-// of the activity, which sits on it like a book on its jacket.
-const BAND_ENDS = '.rx-card, .rx-results, .rx-flip, .rx-essay-main, .rx-debate-step, .rx-reading-tabs + *, .rv-tool-panel, [data-band-end]';
-let bandNode = null;
-let bandWatch = null;
-
-export function coverBand(main = document.querySelector('main')) {
-  if (typeof document === 'undefined' || !main) return;
-  if (!bandNode || !bandNode.isConnected) {
-    bandNode = el('div', { class: 'rx-band', 'aria-hidden': 'true' }, [el('div', { class: 'rx-band-art' })]);
-    main.prepend(bandNode);
-    main.classList.add('has-band');
-  }
-  const place = () => {
-    const end = main.querySelector(BAND_ENDS);
-    const top = main.getBoundingClientRect().top + window.scrollY;
-    let bottom = 0;
-    if (end) bottom = end.getBoundingClientRect().top + window.scrollY - top + Math.min(96, end.offsetHeight * 0.35);
-    else {
-      const bar = main.querySelector('.rx-bar-mount');
-      bottom = bar ? bar.getBoundingClientRect().bottom + window.scrollY - top + 40 : 260;
-    }
-    main.style.setProperty('--rx-band-h', Math.round(Math.max(180, bottom)) + 'px');
-  };
-  place();
-  if (!bandWatch && 'ResizeObserver' in window) {
-    let queued = false;
-    const later = () => { if (queued) return; queued = true; requestAnimationFrame(() => { queued = false; place(); }); };
-    bandWatch = new ResizeObserver(later);
-    bandWatch.observe(main);
-    new MutationObserver(later).observe(main, { childList: true, subtree: true });
-  }
-}
-
-// The site's own light/dark switch, in the header, dresses the book to match,
-// so a reader can change the colours from any Revise page. The choice is kept
-// the same way as the hub's button keeps it.
-function watchSiteTheme() {
-  if (themeWatch || typeof MutationObserver === 'undefined') return;
-  const html = document.documentElement;
-  themeWatch = new MutationObserver(records => {
-    const theme = html.getAttribute('data-theme');
-    const edition = currentMeta?.edition;
-    if (!edition || (theme !== 'light' && theme !== 'dark') || records.every(record => record.oldValue === theme)) return;
-    try {
-      if (theme === edition.mode) window.localStorage.removeItem(MODE_KEY);
-      else window.localStorage.setItem(MODE_KEY, theme);
-    } catch { /* storage is optional */ }
-    applyEdition(currentMeta);
-  });
-  themeWatch.observe(html, { attributes: true, attributeFilter: ['data-theme'], attributeOldValue: true });
-}
-
-// The header and footer take the book's mode too, so the page is one colour
-// and the header's switch shows what the reader sees. This is not saved as
-// the site's choice, and the watcher above is told it was not the reader.
-function matchSiteTheme(mode) {
-  const html = document.documentElement;
-  const theme = html.getAttribute('data-theme');
-  if (!theme || theme === mode) return;
-  html.setAttribute('data-theme', mode);
-  html.style.colorScheme = mode;
-  for (const toggle of document.querySelectorAll('[data-theme-toggle]')) toggle.setAttribute('aria-pressed', String(mode === 'dark'));
-  themeWatch?.takeRecords();
-}
-
-// One button: it switches to the other palette. Switching back to the
-// edition's own mode clears the choice, so each book wears its own again.
-export function modeToggle(className = 'rx-mode-toggle') {
-  const button = el('button', { type: 'button', class: className, onclick: () => {
-    const edition = currentMeta?.edition;
-    if (!edition) return;
-    const next = editionMode(edition) === 'dark' ? 'light' : 'dark';
-    try {
-      if (next === edition.mode) window.localStorage.removeItem(MODE_KEY);
-      else window.localStorage.setItem(MODE_KEY, next);
-    } catch { /* storage is optional */ }
-    applyEdition(currentMeta);
-  } });
-  paintModeToggle(button, currentMeta?.edition ? editionMode(currentMeta.edition) : 'light');
-  return button;
-}
-
-function paintModeToggle(button, mode) {
-  const toDark = mode !== 'dark';
-  button.setAttribute('aria-label', toDark ? 'Use dark colours for this book' : 'Use light colours for this book');
-  button.setAttribute('aria-pressed', String(mode === 'dark'));
-  button.title = toDark ? 'Dark colours' : 'Light colours';
-  button.innerHTML = toDark
-    ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>'
-    : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>';
 }
 
 // --- dates -------------------------------------------------------------------
@@ -552,11 +351,6 @@ export function activityHref(id, slug) {
   return '/play/' + id + '/?book=' + encodeURIComponent(slug);
 }
 
-// An activity's drawing, from scripts/revise-icons.js via the shelf.
-export function activityIcon(icons, id, size = 20) {
-  return drawing((icons || {})[id] || '', size, 'rx-icon');
-}
-
 export function coverImage(meta, { width = 120, className = '', eager = false } = {}) {
   if (!meta?.cover) {
     return el('span', { class: 'rx-cover-blank ' + className, style: '--book-accent:' + (meta?.accent || '#6E1F2B'), 'aria-hidden': 'true' }, [
@@ -567,24 +361,6 @@ export function coverImage(meta, { width = 120, className = '', eager = false } 
     class: className, src: meta.cover, alt: '', width: String(width), height: String(Math.round(width * 1.5)),
     decoding: 'async', loading: eager ? 'eager' : 'lazy'
   });
-}
-
-// Two letters for a name, set in a roundel. Titles and articles are skipped so
-// "The Ghost of Christmas Past" reads GC and "Lady Macbeth" reads LM.
-const MONOGRAM_SKIP = new Set(['the', 'of', 'a', 'an', 'and', 'de', 'la', 'le', 'van', 'von']);
-export function initials(name) {
-  const words = String(name || '').replace(/[^\p{L}\s'’-]/gu, ' ').split(/\s+/)
-    .filter(word => word && !MONOGRAM_SKIP.has(word.toLowerCase()));
-  if (!words.length) return '?';
-  const letters = words.length === 1 ? [words[0][0]] : [words[0][0], words[words.length - 1][0]];
-  return letters.join('').toUpperCase();
-}
-
-const MONOGRAM_HUES = ['#6e1f2b', '#2f5d3f', '#294a6b', '#7a5a1e', '#5b3a6b', '#2d5f62', '#7c3a22', '#3e4a2a'];
-export function monogram(name) {
-  let hash = 0;
-  for (const character of String(name)) hash = (hash * 31 + character.charCodeAt(0)) >>> 0;
-  return el('span', { class: 'rx-monogram', style: '--mono:' + MONOGRAM_HUES[hash % MONOGRAM_HUES.length], 'aria-hidden': 'true', text: initials(name) });
 }
 
 // --- the book chooser --------------------------------------------------------
@@ -716,10 +492,7 @@ export function changeBookButton({ books, current, onChoose, label = 'Change boo
   return el('button', {
     type: 'button', class: className,
     onclick: () => openShelf({ books, current, recentSlugs: recentlyViewed(20).map(entry => entry.slug), onChoose })
-  }, [
-    el('span', { class: 'rx-change-icon', 'aria-hidden': 'true', html: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h6v13H4z"/><path d="M10 6.5h5v12h-5z"/><path d="m16 7.6 3.6-1 3 11.4-3.6 1z"/></svg>' }),
-    el('span', { text: label })
-  ]);
+  }, [el('span', { text: label })]);
 }
 
 export function keepAddress(slug) {
@@ -729,46 +502,41 @@ export function keepAddress(slug) {
   window.history.replaceState(null, '', url);
 }
 
-// The study bar at the top of every one-book Revise tool: the cover, the title
-// and author, "Change book", and every activity this book supports, so moving
-// from a quiz to the flashcards for the same book is one tap.
-// The bar at the head of every one-book activity: the book (its cover, its
-// name, a way to change it) and one menu of its activities, the same at every
-// width. The menu names the current activity, so it is also the page's title.
-export function studyBar(head, { books, meta, icons, active, onChoose }) {
+// The line at the head of every one-book activity: the book (a small cover and
+// its title, both leading to its Revise home) and a way to change it. The
+// activity's own name is the page's heading, and beside it one menu leads to
+// the book's other activities.
+export function studyBar(head, { books, meta, active, onChoose }) {
   if (!head) return;
   clear(head);
   head.classList.add('rx-bar-mount');
   const home = '/play/?book=' + encodeURIComponent(meta.slug);
-  const cover = el('a', { class: 'rx-bar-cover', href: home, 'aria-label': 'Revision home for ' + meta.title }, [
-    coverImage(meta, { width: 56, eager: true })
-  ]);
-  const identity = el('div', { class: 'rx-bar-id' }, [
-    el('a', { class: 'rx-bar-title', href: home, title: meta.title, text: shortTitle(meta) }),
-    el('span', { class: 'rx-bar-author', text: meta.author })
-  ]);
-  const bar = el('div', { class: 'rx-bar' }, [cover, identity, el('div', { class: 'rx-bar-tools' }, [changeBookButton({ books, current: meta, onChoose })])]);
-  head.append(bar, activityMenu({ meta, icons, active }));
-  if (meta.edition) coverBand(head.closest('main') || undefined);
+  head.append(el('div', { class: 'rx-bar' }, [
+    el('a', { class: 'rx-bar-book', href: home, 'aria-label': 'Revise ' + meta.title + ': all activities' }, [
+      coverImage(meta, { width: 40, eager: true }),
+      el('span', { class: 'rx-bar-id' }, [
+        el('span', { class: 'rx-bar-title', text: shortTitle(meta) }),
+        el('span', { class: 'rx-bar-author', text: meta.author })
+      ])
+    ]),
+    changeBookButton({ books, current: meta, onChoose })
+  ]));
+  const title = head.parentElement?.querySelector('.rx-head');
+  title?.querySelector('.rx-acts-menu')?.remove();
+  (title || head).append(activityMenu({ meta, active }));
 }
 
-// The activities as one control: the current one's name, lettered on the
-// cover, opening to every activity the book has, in the Revise home's three
-// groups, with the way to the study guide underneath.
+// The book's activities, folded behind one quiet control beside the heading,
+// in the Revise home's three groups, with the way to the study guide underneath.
 export const ACTIVITY_GROUPS = [
   { title: 'Practise', ids: ['mixed-round', 'who-said-it', 'fill-the-line', 'theme-match', 'technique-spotter', 'character-identification', 'order-the-plot'] },
   { title: 'Learn', ids: ['flashcards'] },
   { title: 'Write', ids: ['essay-forge', 'defend-the-reading'] }
 ];
 
-function activityMenu({ meta, icons, active }) {
-  const current = ACTIVITIES.find(activity => activity.id === active);
+function activityMenu({ meta, active }) {
   const menu = el('details', { class: 'rx-acts-menu' });
-  menu.append(el('summary', { 'aria-label': (current ? current.name + '. ' : '') + 'Change activity' }, [
-    current ? activityIcon(icons, current.id, 18) : null,
-    el('span', { class: 'rx-acts-menu-name', text: current ? current.name : 'Activities' }),
-    el('span', { class: 'rx-acts-menu-chevron', 'aria-hidden': 'true' })
-  ]));
+  menu.append(el('summary', {}, [el('span', { text: 'Other activities' })]));
   const panel = el('nav', { class: 'rx-acts-panel', 'aria-label': 'Activities for ' + meta.title });
   for (const group of ACTIVITY_GROUPS) {
     const ids = group.ids.filter(id => hasActivity(meta, id));
@@ -777,15 +545,14 @@ function activityMenu({ meta, icons, active }) {
       const activity = ACTIVITIES.find(entry => entry.id === id);
       const here = id === active;
       return el('li', {}, [el('a', {
-        class: 'rx-acts-tile' + (here ? ' is-here' : ''), href: activityHref(id, meta.slug), 'aria-current': here ? 'page' : null
-      }, [activityIcon(icons, id, 18), el('span', { text: activity.name })])]);
+        class: 'rx-acts-tile' + (here ? ' is-here' : ''), href: activityHref(id, meta.slug), 'aria-current': here ? 'page' : null, text: activity.name
+      })]);
     })));
   }
   // The book's other two places: its edition and its study guide.
   panel.append(el('p', { class: 'rx-acts-foot' }, [
-    el('a', { href: meta.href, text: 'The edition' }),
     el('a', { href: guideHref(meta.slug), text: 'Study guide' }),
-    el('a', { href: '/play/?book=' + encodeURIComponent(meta.slug), text: 'All of ' + shortTitle(meta) + ' on Revise' })
+    el('a', { href: meta.href, text: 'The edition' })
   ]));
   menu.append(panel);
   // Close when the reader taps elsewhere or presses Escape.
@@ -821,7 +588,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
 
 // Kept for the older call sites: the running head is now the study bar.
 export function bookHead(head, books, meta, onChoose, options = {}) {
-  studyBar(head, { books, meta, onChoose, icons: options.icons, active: options.active });
+  studyBar(head, { books, meta, onChoose, active: options.active });
 }
 
 // When the books cannot be fetched: say so, say why in a line the reader can
@@ -862,7 +629,7 @@ export async function openBookPage({ head, mount, filter, render, active }) {
     const ticket = ++generation;
     keepAddress(meta.slug);
     setAccent(document.querySelector('main'), meta);
-    studyBar(head, { books, meta, icons: shelf.icons, active, onChoose: open });
+    studyBar(head, { books, meta, active, onChoose: open });
     clear(mount);
     mount.append(el('p', { class: 'rv-loading', text: 'Opening ' + meta.title + '…' }));
     let book;

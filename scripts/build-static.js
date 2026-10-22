@@ -35,7 +35,7 @@ const VERSIONED_ASSETS = [
   '/assets/styles.css', '/assets/astor-study.css', '/assets/home.css', '/assets/seasons.css',
   '/assets/account.css', '/assets/presentation-viewer.css', '/assets/site.js', '/assets/catalogue.js',
   '/assets/explore.js', '/assets/resources.js', '/assets/resource-library.js', '/assets/seasonal-theme.css',
-  '/assets/theme.css', '/assets/revise-watch.js'
+  '/assets/theme.css', '/assets/revise-watch.js', '/assets/study.css'
 ];
 
 function versionAssets(html) {
@@ -1448,46 +1448,7 @@ function addPlainBookIdentity(html, source) {
 // --- the study guides ------------------------------------------------------------
 //
 // Each /guides/<slug>/ page arrives as a small source page (rebuild-guides.js)
-// and is filled here from the book's record. It wears the book's edition: both
-// palettes are written into the page, the dark one keyed to the site's own
-// dark theme, so it paints in the right colours before any script runs.
-
-const EDITION_TOKENS = {
-  ground: '--ed-ground', surface: '--ed-surface', sunk: '--ed-sunk', ink: '--ed-ink', soft: '--ed-soft',
-  accent: '--ed-accent', accentText: '--ed-accent-text', button: '--ed-button', buttonInk: '--ed-button-ink',
-  hero: '--ed-hero', heroInk: '--ed-hero-ink', line: '--ed-line', lineStrong: '--ed-line-strong',
-  band: '--ed-band', bandInk: '--ed-band-text', bandSoft: '--ed-band-soft', bandArt: '--ed-band-art'
-};
-
-function editionDeclarations(palette) {
-  return Object.entries(EDITION_TOKENS).filter(([key]) => palette && palette[key]).map(([key, token]) => token + ':' + palette[key]).join(';');
-}
-
-function editionArt(slug, edition) {
-  const motifs = edition.motifs || 0;
-  return '--ed-field:url("/assets/editions/' + slug + '-field.png");' +
-    (motifs ? '--ed-motifs:url("/assets/editions/' + slug + '-motifs.png");' : '') +
-    '--ed-motif-n:' + Math.max(2, motifs);
-}
-
-// Puts a book's edition on a page: data attributes on <html> and the palettes
-// in a style block. `scope` limits the tokens to one element instead (a book
-// page's study invitation), leaving the rest of that page as it was.
-function wearEdition(html, slug, { scope = '' } = {}) {
-  const edition = reviseShelf.get(slug)?.edition;
-  if (!edition) return html;
-  const selector = scope || 'html[data-edition]';
-  const dark = scope ? 'html[data-theme="dark"] ' + scope : 'html[data-edition][data-theme="dark"]';
-  // Dark colours are for the screen; paper is always light, as on the rest of the site.
-  const css = selector + '{' + editionArt(slug, edition) + ';' + editionDeclarations(edition.light) + '}' +
-    '@media screen{' + dark + '{' + editionDeclarations(edition.dark) + '}}';
-  html = html.replace('</head>', '<style data-edition="' + slug + '">' + css + '</style></head>');
-  if (!scope) {
-    html = html.replace(/<html\b([^>]*)>/, (whole, attributes) => /data-edition=/.test(attributes) ? whole
-      : '<html' + attributes + ' data-edition="' + slug + '" data-ed-layout="' + (edition.layout || 'centred') + '" data-ed-voice="' + (edition.voice || 'italic') + '" data-ed-texture="' + (edition.texture || 'plain') + '"' + (edition.motifs ? ' data-ed-art="' + edition.motifs + '"' : '') + '>');
-  }
-  return html;
-}
+// and is filled here from the book's record.
 
 function guidePassages(book) {
   return (discovery.passages || [])
@@ -1496,6 +1457,7 @@ function guidePassages(book) {
 }
 
 function addGuide(html, source) {
+  if (pageHref(source) === '/guides/') return addStudyStyles(html);
   const match = pageHref(source).match(/^\/guides\/([^/]+)\/(?:([^/]+)\/)?$/);
   if (!match) return html;
   const book = studyData.get(match[1]);
@@ -1508,11 +1470,25 @@ function addGuide(html, source) {
     titleFor: discoveryTitle
   });
   html = html.replace(/(<main\b[^>]*>)[\s\S]*?(<\/main>)/, (whole, open, close) =>
-    open.replace(/style="[^"]*"/, '') + main + '  <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a><a href="/guides/">All study guides</a><a href="/play/?book=' + book.slug + '">Revise ' + escapeHtml(guidePages.shortTitle(book)) + '</a><a href="' + book.href + '">The Astor edition</a></nav>\n' + close);
+    open.replace(/style="[^"]*"/, '') + main + close);
+  // The book's own colour, for links and the few rules; nothing else of the
+  // cover is laid over a guide, which reads on the site's plain paper.
   html = html.replace(/<main\b([^>]*)>/, (whole, attributes) => '<main' + attributes + ' style="--book-accent: ' + accentFor(book.slug) + '">');
-  html = wearEdition(html, book.slug);
+  html = addStudyStyles(html);
   if (!html.includes('/assets/astor/toolkit.mjs')) {
     html = html.replace('</head>', '<script type="module" src="/assets/astor/toolkit.mjs"></script></head>');
+  }
+  return html;
+}
+
+// The study guides and Revise share one stylesheet, laid over the older study
+// styles (the explorers and maps still use those).
+function addStudyStyles(html) {
+  if (!/href="\/assets\/astor-study\.css"/i.test(html)) {
+    html = html.replace('</head>', '<link rel="stylesheet" href="/assets/astor-study.css"></head>');
+  }
+  if (!/href="\/assets\/study\.css"/i.test(html)) {
+    html = html.replace(/(<link rel="stylesheet" href="\/assets\/astor-study\.css"[^>]*>)/, '$1<link rel="stylesheet" href="/assets/study.css">');
   }
   return html;
 }
@@ -1533,18 +1509,14 @@ function addStudyToolkit(html, source) {
   const shelf = reviseShelf.get(record.slug);
 
   const invite = guidePages.renderStudyInvite(record, { shelf, editionHref });
-  const ways = guidePages.bookWays(record, context.kind === 'book' ? 'edition' : '', { editionHref: context.kind === 'book' ? editionHref : record.href });
-  html = html.replace('</main>', ways + invite + '</main>');
-  html = wearEdition(html, record.slug, { scope: '.book-study' });
+  html = html.replace('</main>', invite + '</main>');
   html = html.replace('</head>', guidePages.forwardingScript(record.slug) + '</head>');
 
   if (context.kind === 'book') {
     html = addHeroCover(html, record);
   }
 
-  if (!/href="\/assets\/astor-study\.css"/i.test(html)) {
-    html = html.replace('</head>', '<link rel="stylesheet" href="/assets/astor-study.css"></head>');
-  }
+  html = addStudyStyles(html);
   if (!html.includes('/assets/astor/toolkit.mjs')) {
     html = html.replace('</head>', '<script type="module" src="/assets/astor/toolkit.mjs"></script></head>');
   }
@@ -1737,6 +1709,7 @@ sitemapUrls.sort((a, b) => a.url.localeCompare(b.url, 'en'));
     const hash = require('crypto').createHash('sha256');
     for (const file of modules.map(name => path.join(outDir, name)).concat([
       path.join(outDir, 'assets', 'astor-study.css'),
+      path.join(outDir, 'assets', 'study.css'),
       path.join(outDir, 'assets', 'styles.css'),
       path.join(outDir, 'assets', 'navigation.css'),
       path.join(outDir, 'assets', 'study-index.json'),

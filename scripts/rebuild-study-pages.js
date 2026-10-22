@@ -44,7 +44,10 @@ function endNav(links) {
     '</nav>';
 }
 
-function page({ dir, title, description, kicker, heading, deck, breadcrumb, module: moduleName, intro, mount, fallback, tail, links, bare }) {
+// `revise` marks a Revise page (/play/ and /today/): it takes the study
+// stylesheet, and ends without the row of links other pages close on, so the
+// activity has the page to itself.
+function page({ dir, title, description, kicker, heading, deck, breadcrumb, module: moduleName, intro, mount, fallback, tail, links, bare, revise }) {
   const html = `<!doctype html>
 <html lang="en-GB">
 <head>
@@ -53,12 +56,12 @@ function page({ dir, title, description, kicker, heading, deck, breadcrumb, modu
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="stylesheet" href="/assets/styles.css">
-  <link rel="stylesheet" href="/assets/astor-study.css">
+  <link rel="stylesheet" href="/assets/astor-study.css">${revise ? '\n  <link rel="stylesheet" href="/assets/study.css">' : ''}
   ${moduleName ? `<script type="module" src="/assets/astor/${moduleName}"></script>` : ''}
 </head>
 <body>
 ${HEADER}
-<main id="main-content" class="page-wrap">
+<main id="main-content" class="page-wrap${revise ? ' rx-page' : ''}">
   <nav class="book-breadcrumb" aria-label="Breadcrumb">${breadcrumb}</nav>
 ${bare ? '' : `  <section class="page-intro">
     <div><p class="kicker">${escapeHtml(kicker)}</p><h1>${escapeHtml(heading)}</h1><p class="deck">${deck}</p></div>
@@ -67,8 +70,7 @@ ${bare ? '' : `  <section class="page-intro">
 ${mount || ''}
 ${fallback ? `<noscript><div class="astor-empty">${fallback}</div></noscript>` : ''}
 ${tail || ''}
-  ${endNav(links || [])}
-</main>
+${revise ? '' : '  ' + endNav(links || []) + '\n'}</main>
 ${FOOTER}
 </body>
 </html>
@@ -171,7 +173,7 @@ function buildPages() {
 
   // --- Play hub ---
   written.push(page({
-    dir: 'play',
+    dir: 'play', revise: true,
     title: 'Revise | Astor Library',
     description: 'Short quizzes on the quotations, characters, themes and plot of each book with a study guide, plus flashcards, an essay planner and five questions a day.',
     kicker: 'Revise',
@@ -181,7 +183,7 @@ function buildPages() {
     module: 'revise-hub.mjs',
     bare: true,
     intro: `  <section class="rx-hero" id="rv-title" aria-label="The book you are revising">
-    <div class="rx-hero-inner"><div class="rx-hero-words"><p class="rx-hero-kicker">Revise</p><h1 class="rx-hero-title">Revise a book.</h1><p class="rx-hero-epigraph">Quizzes, flashcards, an essay planner and a debate for every book with a study guide.</p></div></div>
+    <div class="rx-hero-inner"><div class="rx-hero-words"><p class="rx-hero-kicker">Revise</p><h1 class="rx-hero-title">Revise a book.</h1><p class="rx-hero-author">Quizzes, flashcards, an essay planner and a debate for every book with a study guide.</p></div></div>
   </section>`,
     mount: `  <div class="rv-hub" id="rv-hub"><p class="rv-loading">Finding your book…</p></div>`,
     fallback: 'The quizzes need JavaScript. The quotations are in each book’s study guide: <a href="/guides/">browse the study guides</a>.',
@@ -192,7 +194,7 @@ function buildPages() {
   // --- one page per game ---
   for (const game of GAMES) {
     written.push(page({
-      dir: 'play/' + game.slug,
+      dir: 'play/' + game.slug, revise: true,
       title: game.name + ' | Astor Library',
       description: game.blurb + ' A free revision quiz from Astor Library.',
       kicker: game.scope === 'book' ? 'Revision quiz · one book' : 'Revision quiz · every book',
@@ -214,7 +216,7 @@ function buildPages() {
 
   // --- flashcards ---
   written.push(page({
-    dir: 'play/flashcards',
+    dir: 'play/flashcards', revise: true,
     title: 'Flashcards | Astor Library',
     description: 'Flashcards for the quotations in each Astor Library study guide, set so the lines you keep forgetting come back sooner.',
     kicker: 'Flashcards',
@@ -236,7 +238,7 @@ function buildPages() {
 
   // --- essay forge ---
   written.push(page({
-    dir: 'play/essay-forge',
+    dir: 'play/essay-forge', revise: true,
     title: 'Essay planner | Astor Library',
     description: 'Build an essay plan: choose a question, take a line of argument and attach quotations to each paragraph.',
     kicker: 'Planning tool',
@@ -258,7 +260,7 @@ function buildPages() {
 
   // --- defend the reading ---
   written.push(page({
-    dir: 'play/defend-the-reading',
+    dir: 'play/defend-the-reading', revise: true,
     title: 'Defend the reading | Astor Library',
     description: 'Argue for a reading of a book, then read the strongest case against it, with quotations for both sides.',
     kicker: 'Argument tool',
@@ -280,7 +282,7 @@ function buildPages() {
 
   // --- today ---
   written.push(page({
-    dir: 'today',
+    dir: 'today', revise: true,
     title: 'Today at Astor Library',
     description: 'A passage of the day, a literary anniversary and five quick questions, new every morning.',
     kicker: 'Today',

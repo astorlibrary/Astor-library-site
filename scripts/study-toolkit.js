@@ -1,12 +1,14 @@
 // Renders the sections of a book's study material from its data/books/<slug>.json
 // record: what happens, characters, themes, quotations, form and language,
-// context, essays, videos and further reading. Each is plain, complete markup;
-// scripts/guide-pages.js gives each its own study-guide page, and toolkit.mjs
-// adds the progress ticks, quotation filters, maps and commonplace controls.
-// A reader with no JavaScript gets all of the same material, and nothing is
-// hidden from a search engine.
-
-const { accentFor, motifSvg } = require('./book-motifs');
+// context, essays, videos and further reading. scripts/guide-pages.js gives
+// each section a page of its own in the book's study guide.
+//
+// The markup is written to be read, like the pages of a printed study guide:
+// headings, paragraphs and lists, with no boxes around them. A quotation, the
+// note on where it comes from and the commentary on it each have their own
+// element, so the stylesheet can set them apart by type alone. toolkit.mjs
+// adds the few controls a reader with scripts gets (mark a section as read,
+// keep a quotation, the maps). Without JavaScript every word is still there.
 
 const DIFFICULTY_WORDS = {
   1: 'Straightforward',
@@ -41,156 +43,133 @@ function readingTimeLabel(minutes) {
   return hours + (hours === 1 ? ' hour' : ' hours') + (rest ? ' ' + rest + ' minutes' : '');
 }
 
+const isPlay = book => book.form === 'play';
+const shortTitle = book => String(book.title).split(';')[0].trim();
+
+// The facts about the book, set like the details on a book's imprint page.
 function glance(book) {
-  const cells = [];
+  const rows = [];
   if (book.form) {
-    cells.push({
-      label: 'Form',
-      value: book.genre || book.form.replace(/^./, character => character.toUpperCase()),
-      note: book.lengthNote || ''
-    });
+    rows.push(['Form', book.genre || book.form.replace(/^./, character => character.toUpperCase()), book.lengthNote || '']);
   }
   // `written` is when the work was composed and `firstPublished` the year it
   // reached print. Before 1700 editors speak of a work being first printed
   // (a Shakespeare quarto, the first printed Homer), so the label follows suit.
   if (book.written || book.firstPublished) {
-    const printed = Number(book.firstPublished) < 1700;
-    const verb = printed ? 'First printed' : 'First published';
-    cells.push(book.written ? {
-      label: 'Written',
-      value: book.written,
-      note: book.firstPublished ? verb + ' ' + formatYear(book.firstPublished) + '.' : ''
-    } : {
-      label: verb,
-      value: formatYear(book.firstPublished),
-      note: ''
-    });
+    const verb = Number(book.firstPublished) < 1700 ? 'First printed' : 'First published';
+    rows.push(book.written
+      ? ['Written', book.written, book.firstPublished ? verb + ' ' + formatYear(book.firstPublished) + '.' : '']
+      : [verb, formatYear(book.firstPublished), '']);
   }
-  if (book.readingTime) {
-    cells.push({
-      label: 'Reading time',
-      value: readingTimeLabel(book.readingTime),
-      note: 'At an easy pace, without notes.'
-    });
-  }
-  if (book.difficulty) {
-    cells.push({
-      label: 'Difficulty',
-      value: DIFFICULTY_WORDS[book.difficulty],
-      note: 'Rated ' + book.difficulty + ' out of 5 for first-time readers.'
-    });
-  }
-  if (book.setting) {
-    cells.push({ label: 'Setting', value: book.setting, note: '' });
-  }
-  if (!cells.length) return '';
-  return '<dl class="astor-glance">' + cells.map(cell =>
-    '<div><dt>' + escapeHtml(cell.label) + '</dt><dd><strong>' + escapeHtml(cell.value) + '</strong>' +
-    (cell.note ? '<small>' + escapeHtml(cell.note) + '</small>' : '') + '</dd></div>'
+  if (book.readingTime) rows.push(['Reading time', readingTimeLabel(book.readingTime), 'At an easy pace, without notes.']);
+  if (book.difficulty) rows.push(['Difficulty', DIFFICULTY_WORDS[book.difficulty], 'Rated ' + book.difficulty + ' out of 5 for first-time readers.']);
+  if (book.setting) rows.push(['Setting', book.setting, '']);
+  if (!rows.length) return '';
+  return '<dl class="gd-facts">' + rows.map(([label, value, note]) =>
+    '<div><dt>' + escapeHtml(label) + '</dt><dd>' + escapeHtml(value) + (note ? ' <span>' + escapeHtml(note) + '</span>' : '') + '</dd></div>'
   ).join('') + '</dl>';
 }
 
+// A line at the foot of a section that points somewhere else on the site.
+function seeAlso(html) {
+  return '<p class="gd-see-also">' + html + '</p>';
+}
+
 function plotPanel(book) {
-  const stages = book.structure.map(stage => {
+  const parts = book.structure.map(stage => {
     const scenes = (stage.scenes || []).length
-      ? '<ol class="astor-scene-list">' + stage.scenes.map(scene =>
-        '<li><b>' + escapeHtml(scene.ref) + '</b><span>' + escapeHtml(scene.summary) + '</span></li>'
-      ).join('') + '</ol>'
+      // Short references (1.3) hang in the margin; longer ones (Chapter 12) head their line.
+      ? '<dl class="gd-scenes' + (stage.scenes.some(scene => String(scene.ref).length > 5) ? ' is-stacked' : '') + '">' + stage.scenes.map(scene =>
+        '<div><dt>' + escapeHtml(scene.ref) + '</dt><dd>' +
+        (scene.title ? '<i>' + escapeHtml(scene.title) + '.</i> ' : '') + escapeHtml(scene.summary) + '</dd></div>'
+      ).join('') + '</dl>'
       : '';
-    return '<li data-stage="' + escapeHtml(stage.id) + '">' +
-      '<span class="astor-stage-label">' + escapeHtml(stage.label) + '</span>' +
-      '<div><h4>' + escapeHtml(stage.title) + '</h4><p>' + escapeHtml(stage.summary) + '</p>' + scenes + '</div>' +
-      '<span class="astor-stage-slot"></span>' +
-      '</li>';
+    return '<section class="gd-part" data-stage="' + escapeHtml(stage.id) + '" aria-labelledby="gd-stage-' + escapeHtml(stage.id) + '">' +
+      '<p class="gd-part-label"><span data-stage-label>' + escapeHtml(stage.label) + '</span><span class="astor-stage-slot"></span></p>' +
+      '<h2 id="gd-stage-' + escapeHtml(stage.id) + '">' + escapeHtml(stage.title) + '</h2>' +
+      '<p>' + escapeHtml(stage.summary) + '</p>' + scenes +
+      '</section>';
   }).join('');
-  return '<section class="astor-panel" id="astor-plot" data-panel="Plot">' +
-    '<h3>What happens in ' + escapeHtml(book.title) + '</h3>' +
-    '<p class="astor-panel-note">' + escapeHtml(book.summary) + '</p>' +
-    '<ol class="astor-spine">' + stages + '</ol>' +
-    '</section>';
+  return '<div class="gd-panel" id="astor-plot" data-panel="Plot">' +
+    '<p class="gd-progress" data-astor-progress hidden></p>' +
+    parts +
+    '</div>';
 }
 
 function charactersPanel(book) {
-  const cards = book.characters.map(character => {
-    const traits = (character.traits || []).length
-      ? '<p class="astor-tag-row">' + character.traits.map(trait => '<span class="astor-tag">' + escapeHtml(trait) + '</span>').join('') + '</p>'
-      : '';
-    return '<article class="astor-character-card" id="astor-character-' + escapeHtml(character.id) + '">' +
-      '<h4>' + escapeHtml(character.name) + '</h4>' +
-      (character.role ? '<span class="astor-role">' + escapeHtml(character.role) + '</span>' : '') +
-      '<p>' + escapeHtml(character.summary) + '</p>' + traits +
-      '</article>';
-  }).join('');
-  return '<section class="astor-panel" id="astor-characters" data-panel="Characters">' +
-    '<h3>Characters</h3>' +
-    '<p class="astor-panel-note">' +
-    'The map shows how their connections change across the ' + (book.form === 'play' ? 'acts' : 'sections') + '.</p>' +
+  const entries = book.characters.map(character =>
+    '<section class="gd-entry" id="astor-character-' + escapeHtml(character.id) + '">' +
+    '<h2>' + escapeHtml(character.name) + '</h2>' +
+    (character.role ? '<p class="gd-role">' + escapeHtml(character.role) + '</p>' : '') +
+    '<p>' + escapeHtml(character.summary) + '</p>' +
+    ((character.traits || []).length ? '<p class="gd-traits">' + escapeHtml(character.traits.join(', ')) + '</p>' : '') +
+    '</section>'
+  ).join('');
+  return '<div class="gd-panel" id="astor-characters" data-panel="Characters">' +
+    entries +
+    '<section class="gd-entry gd-map-section" aria-labelledby="gd-connections">' +
+    '<h2 id="gd-connections">How they connect</h2>' +
+    '<p>The map redraws the relationships ' + (isPlay(book) ? 'act by act' : 'section by section') + '.</p>' +
     '<div class="astor-character-map" data-astor-character-map="' + escapeHtml(book.slug) + '">' +
-    '<p class="astor-toolkit-actions"><a class="button secondary" href="/explore/characters/?book=' + escapeHtml(book.slug) + '">Open the relationship map</a></p>' +
+    '<p><a href="/explore/characters/?book=' + escapeHtml(book.slug) + '">Open the relationship map</a></p>' +
     '</div>' +
-    '<div class="astor-character-grid">' + cards + '</div>' +
-    '</section>';
+    '</section>' +
+    '</div>';
 }
 
 function themesPanel(book) {
-  const notes = book.themes.map(theme =>
-    '<article class="astor-note" id="astor-theme-' + escapeHtml(theme.id) + '">' +
-    '<h4><a href="/explore/themes/#' + escapeHtml(theme.id) + '">' + escapeHtml(theme.name) + '</a></h4>' +
+  const entries = book.themes.map(theme =>
+    '<section class="gd-entry" id="astor-theme-' + escapeHtml(theme.id) + '">' +
+    '<h2>' + escapeHtml(theme.name) + '</h2>' +
     '<p>' + escapeHtml(theme.summary) + '</p>' +
-    (theme.development ? '<p class="astor-note-aside">' + escapeHtml(theme.development) + '</p>' : '') +
-    '</article>'
+    (theme.development ? '<p>' + escapeHtml(theme.development) + '</p>' : '') +
+    '</section>'
   ).join('');
-  return '<section class="astor-panel" id="astor-themes" data-panel="Themes">' +
-    '<h3>Themes</h3>' +
-    '<p class="astor-panel-note">' +
-    'Compare these with other books in the <a href="/explore/themes/">themes explorer</a>.</p>' +
-    '<div class="astor-note-grid">' + notes + '</div>' +
-    '</section>';
+  return '<div class="gd-panel" id="astor-themes" data-panel="Themes">' +
+    entries +
+    seeAlso('The <a href="/explore/themes/">themes explorer</a> follows each of these ideas through the other books in the library.') +
+    '</div>';
+}
+
+// Where a quotation comes from: the speaker and the reference, leaving out a
+// reference that only repeats the heading it sits under ("Book I" under Book I).
+function citation(quotation, stageLabel) {
+  const reference = quotation.reference && quotation.reference !== stageLabel ? quotation.reference : '';
+  return [quotation.speaker, reference].filter(Boolean).map(escapeHtml).join(', ');
 }
 
 function quotationsPanel(book) {
-  const themeNames = new Map(book.themes.map(theme => [theme.id, theme.name]));
-  const techniqueNames = new Map(book.techniques.map(technique => [technique.id, technique.name]));
-  const characterNames = new Map(book.characters.map(character => [character.id, character.name]));
+  const stages = book.structure.map(stage => ({ stage, quotations: book.quotations.filter(quotation => quotation.stage === stage.id) }));
+  const placed = new Set(stages.flatMap(group => group.quotations));
+  const rest = book.quotations.filter(quotation => !placed.has(quotation));
+  if (rest.length) stages.push({ stage: { id: 'elsewhere', label: 'Elsewhere', title: '' }, quotations: rest });
 
-  const filters = ['<button class="astor-filter" type="button" data-quote-filter="all" aria-pressed="true">All</button>']
-    .concat(book.themes.map(theme =>
-      '<button class="astor-filter" type="button" data-quote-filter="theme:' + escapeHtml(theme.id) + '" aria-pressed="false">' + escapeHtml(theme.name) + '</button>'
-    ))
-    .join('');
-
-  const cards = book.quotations.map(quotation => {
-    const tags = [
-      ...(quotation.themes || []).map(id => themeNames.get(id)),
-      ...(quotation.techniques || []).map(id => techniqueNames.get(id)),
-      ...(quotation.characters || []).map(id => characterNames.get(id))
-    ].filter(Boolean);
-    const keys = [
-      ...(quotation.themes || []).map(id => 'theme:' + id),
-      ...(quotation.techniques || []).map(id => 'technique:' + id),
-      ...(quotation.characters || []).map(id => 'character:' + id)
-    ].join(' ');
-    return '<article class="astor-quote-card" id="astor-quote-' + escapeHtml(quotation.id) + '" data-quote-keys="' + escapeHtml(keys) + '" data-quote-id="' + escapeHtml(quotation.id) + '">' +
+  const card = (quotation, stage) => {
+    const cite = citation(quotation, stage.label);
+    // The commonplace book keeps the line with its full reference.
+    const reference = (quotation.speaker ? quotation.speaker + ' · ' : '') + book.title + ' ' + quotation.reference;
+    return '<article class="gd-quote" id="astor-quote-' + escapeHtml(quotation.id) + '" data-quote-id="' + escapeHtml(quotation.id) + '" data-quote-reference="' + escapeHtml(reference) + '">' +
       '<blockquote><p>' + escapeHtml(quotation.text) + '</p></blockquote>' +
-      '<p class="astor-quote-attribution">' +
-      (quotation.speaker ? escapeHtml(quotation.speaker) + ' &middot; ' : '') +
-      escapeHtml(book.title) + ' ' + escapeHtml(quotation.reference) +
-      '</p>' +
-      (quotation.context ? '<p class="astor-context">' + escapeHtml(quotation.context) + '</p>' : '') +
-      '<p class="astor-analysis">' + escapeHtml(quotation.analysis) + '</p>' +
-      '<div class="astor-quote-foot">' +
-      tags.map(tag => '<span class="astor-tag">' + escapeHtml(tag) + '</span>').join('') +
-      '</div>' +
+      '<div class="gd-quote-cite">' + (cite ? '<p>' + cite + '</p>' : '') + '<span class="gd-quote-tools" data-quote-tools></span></div>' +
+      (quotation.context ? '<p class="gd-moment">' + escapeHtml(quotation.context) + '</p>' : '') +
+      '<p>' + escapeHtml(quotation.analysis) + '</p>' +
       '</article>';
-  }).join('');
+  };
 
-  return '<section class="astor-panel" id="astor-quotations" data-panel="Quotations">' +
-    '<h3>Key quotations</h3>' +
-    '<p class="astor-panel-note">' + book.quotations.length + ' quotations, each with the place it comes from.</p>' +
-    '<div class="astor-quote-filters" role="group" aria-label="Filter quotations by theme">' + filters + '</div>' +
-    '<div class="astor-quote-list">' + cards + '</div>' +
-    '<p class="astor-inline-note">Quoted from ' + escapeHtml(sourceLabel(book.sourceText.label)) + '.</p>' +
-    '</section>';
+  const groups = stages.filter(group => group.quotations.length).map(({ stage, quotations }) =>
+    '<section class="gd-quote-group" aria-labelledby="gd-quotes-' + escapeHtml(stage.id) + '">' +
+    '<h2 id="gd-quotes-' + escapeHtml(stage.id) + '">' + escapeHtml(stage.label) +
+    (stage.title && !isPlay(book) && stage.label !== stage.title ? ' <span>' + escapeHtml(stage.title) + '</span>' : '') + '</h2>' +
+    quotations.map(quotation => card(quotation, stage)).join('') +
+    '</section>'
+  ).join('');
+
+  return '<div class="gd-panel" id="astor-quotations" data-panel="Quotations">' +
+    '<p class="gd-intro">' + book.quotations.length + ' lines, in the order they come in the ' + (isPlay(book) ? 'play' : book.form === 'poem' ? 'poem' : 'book') +
+    ', each with where it comes from and what it does. Quoted from ' + escapeHtml(sourceLabel(book.sourceText.label)) + '.</p>' +
+    groups +
+    seeAlso('The <a href="/explore/quotations/?book=' + escapeHtml(book.slug) + '">quotation explorer</a> sorts these lines by theme, technique and character.') +
+    '</div>';
 }
 
 // "the Project Gutenberg text of…", but a named edition or translation
@@ -202,134 +181,73 @@ function sourceLabel(label) {
 
 function techniquesPanel(book) {
   if (!book.techniques.length) return '';
-  const notes = book.techniques.map(technique =>
-    '<article class="astor-note" id="astor-technique-' + escapeHtml(technique.id) + '">' +
-    '<h4>' + escapeHtml(technique.name) + '</h4>' +
+  const entries = book.techniques.map(technique =>
+    '<section class="gd-entry" id="astor-technique-' + escapeHtml(technique.id) + '">' +
+    '<h2>' + escapeHtml(technique.name) + '</h2>' +
     '<p>' + escapeHtml(technique.definition) + '</p>' +
-    '<p class="astor-note-aside">' + escapeHtml(technique.inThisBook) + '</p>' +
-    '</article>'
+    '<p><span class="gd-runin">In ' + escapeHtml(shortTitle(book)) + '</span> ' + escapeHtml(technique.inThisBook) + '</p>' +
+    '</section>'
   ).join('');
-  return '<section class="astor-panel" id="astor-techniques" data-panel="Form &amp; language">' +
-    '<h3>Form and language</h3>' +
-    '<p class="astor-panel-note">' +
-    'The <a href="/explore/techniques/">technique glossary</a> shows these terms across the library.</p>' +
-    '<div class="astor-note-grid">' + notes + '</div>' +
-    '</section>';
+  return '<div class="gd-panel" id="astor-techniques" data-panel="Form &amp; language">' +
+    entries +
+    seeAlso('The <a href="/explore/techniques/">technique glossary</a> shows each of these terms at work in other books.') +
+    '</div>';
 }
 
 function contextPanel(book) {
   const timeline = (book.timeline || []).length
-    ? '<ol class="astor-spine">' + book.timeline.slice().sort((a, b) => a.year - b.year).map(entry =>
-      '<li><span class="astor-stage-label">' + escapeHtml(formatYear(entry.year)) + '</span>' +
-      '<div><h4>' + escapeHtml(entry.label) + '</h4>' +
-      (entry.detail ? '<p>' + escapeHtml(entry.detail) + '</p>' : '') + '</div><span></span></li>'
-    ).join('') + '</ol>'
+    ? '<section class="gd-entry" aria-labelledby="gd-dates"><h2 id="gd-dates">Dates</h2>' +
+      '<dl class="gd-dates">' + book.timeline.slice().sort((a, b) => a.year - b.year).map(entry =>
+        '<div><dt>' + escapeHtml(formatYear(entry.year)) + '</dt><dd><b>' + escapeHtml(entry.label) + '.</b>' +
+        (entry.detail ? ' ' + escapeHtml(entry.detail) : '') + '</dd></div>'
+      ).join('') + '</dl>' +
+      seeAlso('See these dates among the other books on the <a href="/explore/timeline/?view=events&amp;mark=' + escapeHtml(book.slug) + '">library timeline</a>.') +
+      '</section>'
     : '';
   const views = (book.criticalViews || []).length
-    ? '<h4 class="astor-subhead">Critical views</h4><div class="astor-note-grid">' +
-    book.criticalViews.map(view =>
-      '<article class="astor-note"><h4>' + escapeHtml(view.position) + '</h4>' +
-      '<p>' + escapeHtml(view.summary) + '</p>' +
-      (view.counter ? '<p class="astor-note-aside">Against it: ' + escapeHtml(view.counter) + '</p>' : '') +
-      '</article>'
-    ).join('') + '</div>'
+    ? '<section class="gd-entry" aria-labelledby="gd-views"><h2 id="gd-views">Critical views</h2>' +
+      book.criticalViews.map(view =>
+        '<h3>' + escapeHtml(view.position) + '</h3>' +
+        '<p>' + escapeHtml(view.summary) + '</p>' +
+        (view.counter ? '<p><span class="gd-runin">Against it</span> ' + escapeHtml(view.counter) + '</p>' : '')
+      ).join('') + '</section>'
     : '';
   const places = (book.places || []).length
-    ? '<h4 class="astor-subhead">Places</h4>' +
-    '<div class="astor-book-map-box" data-astor-book-map="' + escapeHtml(book.slug) + '">' +
-    '<ul class="astor-place-plain">' + book.places.map(place =>
-      '<li><strong>' + escapeHtml(place.name) + '</strong>' + (place.note ? ' — ' + escapeHtml(place.note) : '') + '</li>').join('') + '</ul>' +
-    '</div>' +
-    '<p class="astor-inline-note"><a href="/explore/map/?book=' + escapeHtml(book.slug) +
-    '">Open the full map →</a></p>'
+    ? '<section class="gd-entry" aria-labelledby="gd-places"><h2 id="gd-places">Places</h2>' +
+      '<div class="astor-book-map-box" data-astor-book-map="' + escapeHtml(book.slug) + '">' +
+      '<dl class="gd-places">' + book.places.map(place =>
+        '<div><dt>' + escapeHtml(place.name) + '</dt>' + (place.note ? '<dd>' + escapeHtml(place.note) + '</dd>' : '') + '</div>').join('') + '</dl>' +
+      '</div>' +
+      seeAlso('<a href="/explore/map/?book=' + escapeHtml(book.slug) + '">Open the full map</a>') +
+      '</section>'
     : '';
   if (!timeline && !views) return '';
-  return '<section class="astor-panel" id="astor-context" data-panel="Context">' +
-    '<h3>Context</h3>' +
-    '<p class="astor-panel-note">Key dates and how the book has been read. ' +
-    'See them among the other books on the <a href="/explore/timeline/?view=events&amp;mark=' + escapeHtml(book.slug) + '">library timeline</a>.</p>' +
+  return '<div class="gd-panel" id="astor-context" data-panel="Context">' +
     timeline + views + places +
-    '</section>';
+    '</div>';
 }
 
 function essaysPanel(book) {
-  const questions = (book.essayQuestions || []).map((question, index) =>
-    '<article class="astor-note">' +
-    '<h4>' + escapeHtml(question.question) + '</h4>' +
-    (question.focus ? '<p class="astor-note-aside">' + escapeHtml(question.focus) + '</p>' : '') +
-    '<ol class="astor-plan">' + (question.plan || []).map(step => '<li>' + escapeHtml(step) + '</li>').join('') + '</ol>' +
-    '</article>'
+  const questions = (book.essayQuestions || []).map(question =>
+    '<section class="gd-entry gd-essay">' +
+    '<h2>' + escapeHtml(question.question) + '</h2>' +
+    (question.focus ? '<p class="gd-role">' + escapeHtml(question.focus) + '</p>' : '') +
+    '<ol class="gd-plan">' + (question.plan || []).map(step => '<li>' + escapeHtml(step) + '</li>').join('') + '</ol>' +
+    '</section>'
   ).join('');
   const discussion = (book.discussionQuestions || []).length
-    ? '<h4 class="astor-subhead">Discussion questions</h4><ul class="astor-question-list">' +
-    book.discussionQuestions.map(question => '<li>' + escapeHtml(question) + '</li>').join('') + '</ul>'
+    ? '<section class="gd-entry" aria-labelledby="gd-discussion"><h2 id="gd-discussion">For discussion</h2><ol class="gd-plan">' +
+      book.discussionQuestions.map(question => '<li>' + escapeHtml(question) + '</li>').join('') + '</ol></section>'
     : '';
   if (!questions && !discussion) return '';
-  return '<section class="astor-panel" id="astor-essays" data-panel="Essays">' +
-    '<h3>Essay questions</h3>' +
-    '<p class="astor-panel-note">Each question has a plan. ' +
-    'Build a full plan in the <a href="/play/essay-forge/?book=' + escapeHtml(book.slug) + '">essay planner</a>.</p>' +
-    '<div class="astor-note-grid">' + questions + '</div>' + discussion +
-    '</section>';
+  return '<div class="gd-panel" id="astor-essays" data-panel="Essays">' +
+    '<p class="gd-intro">Each question comes with the outline of an answer, a paragraph to a line.</p>' +
+    questions + discussion +
+    seeAlso('To turn one of these into a full plan with quotations, use the <a href="/play/essay-forge/?book=' + escapeHtml(book.slug) + '">essay planner</a>.') +
+    '</div>';
 }
 
-const REVISE_ICONS = require('./revise-icons');
-
-// The quizzes each book can fill, as worked out in rebuild-study-data.js.
-const REVISE_QUIZZES = (() => {
-  try {
-    const index = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '..', 'assets', 'revise-index.json'), 'utf8'));
-    return new Map(index.books.map(book => [book.slug, new Set(book.quizzes || [])]));
-  } catch {
-    return new Map();
-  }
-})();
-
-const GAMES = [
-  ['who-said-it', 'Who said it?', 'Read a line and name who says it.'],
-  ['fill-the-line', 'Fill the line', 'Put the missing words back.'],
-  ['theme-match', 'Theme match', 'Match a line to the theme it carries.'],
-  ['technique-spotter', 'Technique spotter', 'Name the technique doing the work.'],
-  ['character-identification', 'Who is this?', 'Name a character from a description.'],
-  ['order-the-plot', 'Order the plot', 'Put the story back in order.']
-];
-
-function reviseRow(href, icon, title, note) {
-  return '<li><a class="rv-row" href="' + href + '">' +
-    '<span class="rv-row-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" focusable="false">' + (REVISE_ICONS[icon] || '') + '</svg></span>' +
-    '<span class="rv-row-main"><span class="rv-row-name">' + escapeHtml(title) + '</span><span class="rv-row-sample">' + escapeHtml(note) + '</span></span></a></li>';
-}
-
-function revisePanel(book) {
-  const slug = escapeHtml(book.slug);
-  const offered = REVISE_QUIZZES.get(book.slug);
-  const rows = GAMES.filter(([id]) => !offered || offered.has(id))
-    .map(([id, title, note]) => reviseRow('/play/' + id + '/?book=' + slug, id, title, note)).join('') +
-    reviseRow('/play/flashcards/?book=' + slug, 'flashcards', 'Flashcards', 'The ' + book.quotations.length + ' key lines, ten at a time.') +
-    reviseRow('/today/', 'today', 'Today’s questions', 'Five questions from across the library, the same for everyone.');
-  return '<section class="astor-panel" id="astor-revise" data-panel="Revise">' +
-    '<h3>Revise ' + escapeHtml(book.title) + '</h3>' +
-    '<p class="astor-panel-note">Answers are kept in this browser, and the lines you miss come back first next time.</p>' +
-    '<div class="rv-session"><a class="rv-start" href="/play/mixed-round/?book=' + slug + '">' +
-    '<span class="rv-start-label">Ten questions on ' + escapeHtml(String(book.title).split(';')[0].trim()) + '</span><span class="rv-start-arrow" aria-hidden="true">→</span></a>' +
-    '<p class="rv-start-note">A mix of every kind, starting with the lines due for another look and the ones you haven’t met yet. <a href="/play/?book=' + slug + '">See how you are getting on</a>.</p></div>' +
-    '<div class="astor-revise-tools">' +
-    '<div class="astor-plan" data-astor-plan="' + slug + '">' +
-    '<h4>Reading plan</h4>' +
-    '<p>Pick a finish date and the days you can read, and the ' + (book.form === 'play' ? 'acts' : 'sections') +
-    ' are split between them.</p>' +
-    '</div>' +
-    '<div class="astor-sheet-box" data-astor-sheet="' + slug + '">' +
-    '<h4>Revision sheet</h4>' +
-    '<p>Plot, characters, themes and ' + Math.min(8, book.quotations.length) + ' key quotations on one page to print.</p>' +
-    '</div>' +
-    '</div>' +
-    '<h4 class="rv-group">Quizzes</h4>' +
-    '<ul class="rv-rows">' + rows + '</ul>' +
-    '</section>';
-}
-
-// Watching. Nothing is embedded until a reader asks for it: the card is plain
+// Watching. Nothing is embedded until a reader asks for it: the entry is plain
 // markup, and only a click loads a frame, from youtube-nocookie.com or
 // player.vimeo.com. Until then the page contacts neither.
 //
@@ -337,47 +255,40 @@ function revisePanel(book) {
 // what each is; with none, the section is left out.
 function videosPanel(book) {
   if (!(book.videos || []).length) return '';
-  const cards = book.videos.map(video =>
+  const entries = book.videos.map(video =>
     '<article class="astor-video" data-video-provider="' + escapeHtml(video.provider) + '" data-video-id="' + escapeHtml(video.id) + '">' +
-    '<h4>' + escapeHtml(video.title) + '</h4>' +
-    '<p>' + escapeHtml(video.note) + '</p>' +
-    '<p class="astor-inline-note">' + escapeHtml(video.source || video.provider) + '</p>' +
-    '<button class="button secondary" type="button" data-video-play>Play</button> ' +
-    '<a class="button secondary" href="' + escapeHtml(video.url) + '" rel="noopener noreferrer">Watch on YouTube</a>' +
+    '<h3>' + escapeHtml(video.title) + '</h3>' +
+    '<p>' + escapeHtml(video.note) + ' <span class="gd-role">' + escapeHtml(video.source || video.provider) + '</span></p>' +
+    '<p><button class="gd-text-button" type="button" data-video-play>Play here</button> · ' +
+    '<a href="' + escapeHtml(video.url) + '" rel="noopener noreferrer">Watch on YouTube</a></p>' +
     '</article>'
   ).join('');
-  return '<section class="astor-panel" id="astor-watch" data-panel="Watch">' +
-    '<h3>Videos</h3>' +
-    '<p class="astor-panel-note">Nothing loads until you press play.</p>' +
-    '<div class="astor-note-grid">' + cards + '</div>' +
+  return '<section class="gd-panel gd-entry" id="astor-watch" data-panel="Watch" aria-labelledby="gd-videos">' +
+    '<h2 id="gd-videos">Videos</h2>' +
+    '<p class="gd-intro">Nothing loads until you press play.</p>' +
+    entries +
     '</section>';
 }
 
 function relatedPanel(book, titleFor, passages = []) {
   if (!(book.related || []).length && !passages.length) return '';
+  const item = (href, title, note) =>
+    '<li><a href="' + escapeHtml(href) + '">' + escapeHtml(title) + '</a>' + (note ? ' ' + escapeHtml(note) : '') + '</li>';
   const readings = passages.length
-    ? '<h4 class="astor-subhead">Close readings</h4>' +
-      '<div class="astor-note-grid">' + passages.map(passage =>
-        '<article class="astor-note"><h4><a href="' + escapeHtml(passage.href) + '">' + escapeHtml(passage.title) + '</a></h4>' +
-        '<p>' + escapeHtml(passage.description || '') + '</p></article>'
-      ).join('') + '</div>'
+    ? (book.related || []).length ? '<h3>Close readings</h3>' : ''
     : '';
-  const cards = (book.related || []).map(related =>
-    '<article class="astor-note"><h4><a href="' + escapeHtml(related.href) + '">' + escapeHtml(titleFor(related.href)) + '</a></h4>' +
-    '<p>' + escapeHtml(related.why) + '</p></article>'
-  ).join('');
-  const related = cards
-    ? (readings ? '<h4 class="astor-subhead">Related books</h4>' : '') +
-      '<div class="astor-note-grid">' + cards + '</div>'
-    : '';
-  return '<section class="astor-panel" id="astor-related" data-panel="Read next">' +
-    '<h3>Read next</h3>' +
-    readings + related +
+  return '<section class="gd-read-next" id="astor-related" data-panel="Read next" aria-labelledby="gd-read-next">' +
+    '<h2 id="gd-read-next">Read next</h2>' +
+    (passages.length ? readings + '<ul class="gd-reading-list">' + passages.map(passage => item(passage.href, passage.title, passage.description)).join('') + '</ul>' : '') +
+    ((book.related || []).length
+      ? (passages.length ? '<h3>Related books</h3>' : '') +
+        '<ul class="gd-reading-list">' + book.related.map(related => item(related.href, titleFor(related.href), related.why)).join('') + '</ul>'
+      : '') +
     '</section>';
 }
 
 // Related links carry a reason, not a title: the catalogue already knows what
-// each page is called, so the toolkit asks it rather than storing the name twice.
+// each page is called, so the guide asks it rather than storing the name twice.
 function fallbackTitle(href) {
   return href.replace(/^\/[a-z-]+\//, '').replace(/\/$/, '').replace(/-/g, ' ')
     .replace(/(^|\s)\S/g, character => character.toUpperCase());
@@ -385,7 +296,7 @@ function fallbackTitle(href) {
 
 module.exports = {
   escapeHtml, readingTimeLabel, formatYear, fallbackTitle, sourceLabel, DIFFICULTY_WORDS,
-  // The study guides (scripts/guide-pages.js) give each panel a page of its own.
+  // The study guides (scripts/guide-pages.js) give each section a page of its own.
   glance, plotPanel, charactersPanel, themesPanel, quotationsPanel, techniquesPanel, contextPanel,
-  essaysPanel, videosPanel, relatedPanel, revisePanel, REVISE_QUIZZES, GAMES
+  essaysPanel, videosPanel, relatedPanel
 };

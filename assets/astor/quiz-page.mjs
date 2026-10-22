@@ -80,7 +80,7 @@ async function runBook(container, gameId, shelf, meta, missing = null) {
   keepAddress(meta.slug);
   setAccent(document.querySelector('main'), meta);
   studyBar(head, {
-    books: shelf.books, meta, icons: shelf.icons, active: gameId,
+    books: shelf.books, meta, active: gameId,
     onChoose: choice => runBook(container, gameId, shelf, choice)
   });
   clear(container);
@@ -118,7 +118,6 @@ async function runBook(container, gameId, shelf, meta, missing = null) {
     gameId,
     book,
     meta,
-    icons: shelf.icons,
     reshuffle: build,
     next: current => nextStep(current, { exclude: gameId })
   });
@@ -139,7 +138,6 @@ function runLibrary(container, gameId, index, shelf) {
   clear(container);
   round = new QuizRound(container, questions, {
     gameId,
-    icons: shelf.icons,
     catalogue: new Map(shelf.books.map(book => [book.title, book])),
     reshuffle: build
   });
