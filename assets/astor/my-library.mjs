@@ -101,7 +101,7 @@ function renderSaved() {
   shelf(mounts.saved, savedBooks().map(book => ({
     href: book.href, title: book.title,
     note: 'Saved ' + formatDate(book.at)
-  })), 'No saved books yet. Save one from any book page.');
+  })), 'No saved books yet. Save one from any study guide.');
 }
 
 function renderRecent() {
@@ -201,10 +201,12 @@ function renderPlans() {
   if (!mounts.plans) return;
   clear(mounts.plans);
   const plans = allPlans().sort((a, b) => (nextSitting(a)?.date || 'z').localeCompare(nextSitting(b)?.date || 'z'));
-  if (!plans.length) {
-    mounts.plans.append(el('p', { class: 'astor-empty', text: 'No plans yet. Make one in the Revise tab on any book page.' }));
-    return;
-  }
+  // Reading plans were made with a tool that has been retired. Plans saved
+  // with it are still shown; with none, the section is hidden.
+  const section = document.querySelector('#plans');
+  if (section) section.hidden = !plans.length;
+  mounts.plans.hidden = !plans.length;
+  if (!plans.length) return;
   const grid = el('div', { class: 'astor-dash-grid' });
   for (const plan of plans) {
     const summary = planSummary(plan);

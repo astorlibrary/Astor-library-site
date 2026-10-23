@@ -1062,7 +1062,7 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<a href="/explore/map/"><span>Map of settings</span><p>Where the books are set, from Inverness to Transylvania.</p></a>' +
   '<a href="/explore/compare/"><span>Compare two texts</span><p>Two books side by side, with paired quotations.</p></a>' +
   '<a href="/play/"><span>Revise</span><p>Quizzes and flashcards on each book.</p></a>' +
-  '<a href="/for-teachers/"><span>For teachers</span><p>Lesson starters, printable worksheets, discussion sheets and a projector mode.</p></a>' +
+  '<a href="/for-teachers/"><span>For teachers</span><p>Lesson starters, printable worksheets and a projector mode.</p></a>' +
   '</section>' +
   '<section class="explore-results" aria-label="Search results">' + entryCards + '</section>' +
   '<button class="explore-more" id="explore-more" type="button">Show 24 more</button>' +
