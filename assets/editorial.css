@@ -1494,6 +1494,557 @@ main .book-end-nav a:hover {
   }
 }
 
+/* --- Collection pages: the books of a period, one under another ------------ */
+
+main.collection-page {
+  max-width: 1120px;
+  padding: 40px 24px 96px;
+  color: var(--text, var(--ed-ink));
+}
+
+main.collection-page .page-intro {
+  display: block;
+  max-width: var(--ed-measure);
+  margin: 0;
+  padding: 0 0 36px;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+}
+
+main.collection-page .page-intro .deck {
+  max-width: none;
+  margin: 22px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 20px/1.55 var(--serif);
+}
+
+main.collection-page .timeline {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+main.collection-page .collection-entry {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  max-width: 50rem;
+  margin: 0;
+  padding: 30px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  transform: none;
+}
+
+main.collection-page .collection-entry:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+main.collection-page .collection-entry-cover {
+  display: block;
+  line-height: 0;
+}
+
+main.collection-page .collection-entry-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  box-shadow: 0 1px 2px rgba(31, 27, 24, 0.12), 0 6px 16px rgba(31, 27, 24, 0.12);
+}
+
+main.collection-page .collection-entry h2 {
+  margin: 0;
+  font: 400 28px/1.2 var(--serif);
+  letter-spacing: 0;
+}
+
+main.collection-page .collection-entry h2 a {
+  color: var(--text, var(--ed-ink));
+  text-decoration: none;
+}
+
+main.collection-page .collection-entry h2 a:hover,
+main.collection-page .collection-entry h2 a:focus-visible {
+  color: var(--wine-text, var(--ed-wine));
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+main.collection-page .collection-entry p {
+  max-width: none;
+  margin: 10px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 17px/1.6 var(--serif);
+}
+
+main.collection-page .collection-entry .collection-entry-author {
+  margin-top: 4px;
+  color: var(--text-muted, var(--ed-muted));
+  font-size: 18px;
+}
+
+main.collection-page .collection-entry-author a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--line, var(--ed-rule-strong));
+  text-underline-offset: 3px;
+}
+
+main.collection-page .collection-entry-links a {
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 15px/1.4 var(--sans);
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  main.collection-page {
+    padding: 24px 16px 72px;
+  }
+
+  main.collection-page .collection-entry {
+    grid-template-columns: 76px minmax(0, 1fr);
+    gap: 18px;
+    padding: 22px 0;
+  }
+
+  main.collection-page .collection-entry h2 {
+    font-size: 23px;
+  }
+
+  main.collection-page .collection-entry p {
+    font-size: 16px;
+  }
+}
+
+/* The Shakespeare page: its three shelves and the plays by genre, as plain
+   lists rather than coloured panels. */
+main.collection-page .shakespeare-collection-routes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 32px;
+  max-width: 60rem;
+  margin: 32px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+main.collection-page .shakespeare-collection-route {
+  display: block;
+  min-height: 0;
+  padding: 16px 0;
+  border: 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--text, var(--ed-ink));
+  text-decoration: none;
+}
+
+main.collection-page .shakespeare-collection-route span {
+  display: none;
+}
+
+main.collection-page .shakespeare-collection-route > * {
+  margin-top: 0;
+}
+
+main.collection-page .shakespeare-collection-route strong {
+  display: block;
+  color: var(--text, var(--ed-ink));
+  font: 400 22px/1.25 var(--serif);
+}
+
+main.collection-page .shakespeare-collection-route.is-current strong {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+main.collection-page .shakespeare-collection-route small {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 16px/1.5 var(--serif);
+}
+
+main.collection-page .shakespeare-collection-route:hover strong {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+main.collection-page .shakespeare-reading-room {
+  max-width: 60rem;
+  margin: 48px 0 16px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--text, var(--ed-ink));
+}
+
+main.collection-page .shakespeare-reading-room::before,
+main.collection-page .shakespeare-reading-room::after {
+  content: none;
+}
+
+main.collection-page .shakespeare-reading-room-head {
+  display: block;
+  margin: 0 0 16px;
+  padding: 0;
+  border: 0;
+}
+
+main.collection-page .shakespeare-reading-room-head .kicker,
+main.collection-page .shakespeare-reading-room-head > div + div {
+  display: none;
+}
+
+main.collection-page .shakespeare-reading-room h2 {
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 30px/1.2 var(--serif);
+  letter-spacing: 0;
+}
+
+main.collection-page .shakespeare-reading-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0 28px;
+  border: 0;
+}
+
+main.collection-page .shakespeare-reading-table article {
+  display: block;
+  min-height: 0;
+  padding: 12px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+  background: none;
+}
+
+main.collection-page .shakespeare-reading-table article > p {
+  display: none;
+}
+
+main.collection-page .shakespeare-reading-table h3 {
+  margin: 0 0 6px;
+  color: var(--text, var(--ed-ink));
+  font: 400 20px/1.3 var(--serif);
+}
+
+main.collection-page .shakespeare-reading-table a {
+  display: block;
+  padding: 3px 0;
+  border: 0;
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 17px/1.4 var(--serif);
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: underline;
+  text-decoration-color: var(--line, var(--ed-rule-strong));
+  text-underline-offset: 3px;
+}
+
+main.collection-page .shakespeare-reading-room .button-row {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  main.collection-page .shakespeare-collection-routes,
+  main.collection-page .shakespeare-reading-table {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* --- All books -------------------------------------------------------------- */
+
+main.catalog-page {
+  max-width: 1120px;
+  padding: 40px 24px 96px;
+  color: var(--text, var(--ed-ink));
+}
+
+main.catalog-page .catalog-hero {
+  display: block;
+  min-height: 0;
+  margin: 0;
+  padding: 0 0 28px;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--text, var(--ed-ink));
+}
+
+main.catalog-page .catalog-hero::before,
+main.catalog-page .catalog-hero::after {
+  content: none;
+}
+
+main.catalog-page .catalog-hero h1 {
+  color: var(--text, var(--ed-ink));
+}
+
+main.catalog-page .catalog-hero .deck {
+  max-width: var(--ed-measure);
+  margin: 18px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 20px/1.55 var(--serif);
+}
+
+main.catalog-page .catalog-tools {
+  margin: 0;
+  padding: 20px 0 24px;
+  border: 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+main.catalog-page .catalog-tools label {
+  display: block;
+  margin: 0 0 8px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.3 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+main.catalog-page .catalog-search-row input {
+  border-radius: 2px;
+  font: 400 18px/1.3 var(--serif);
+}
+
+main.catalog-page #catalog-count {
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.3 var(--sans);
+}
+
+main.catalog-page .catalog-filters {
+  gap: 6px 18px;
+  margin-top: 14px;
+}
+
+main.catalog-page .catalog-filter {
+  min-height: 0;
+  padding: 4px 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  background: none;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 15px/1.3 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+  box-shadow: none;
+}
+
+main.catalog-page .catalog-filter.is-active,
+main.catalog-page .catalog-filter[aria-pressed="true"] {
+  border-bottom-color: var(--wine-text, var(--ed-wine));
+  background: none;
+  color: var(--text, var(--ed-ink));
+}
+
+main.catalog-page .catalog-filter:hover {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+main.catalog-page .catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 48px;
+  margin-top: 8px;
+}
+
+main.catalog-page .catalog-card {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  min-height: 0;
+  padding: 24px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+main.catalog-page .catalog-cover img {
+  display: block;
+  width: 88px;
+  height: auto;
+  box-shadow: 0 1px 2px rgba(31, 27, 24, 0.12), 0 6px 14px rgba(31, 27, 24, 0.12);
+}
+
+main.catalog-page .catalog-card-copy .catalog-collection {
+  margin: 0 0 2px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 13px/1.3 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+main.catalog-page .catalog-card h2 {
+  margin: 0;
+  font: 400 22px/1.25 var(--serif);
+  letter-spacing: 0;
+}
+
+main.catalog-page .catalog-card h2 a {
+  color: var(--text, var(--ed-ink));
+  text-decoration: none;
+}
+
+main.catalog-page .catalog-card h2 a:hover {
+  color: var(--wine-text, var(--ed-wine));
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+main.catalog-page .catalog-author,
+main.catalog-page .catalog-author a {
+  margin: 2px 0 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 16px/1.4 var(--serif);
+}
+
+main.catalog-page .catalog-card .catalog-meta {
+  margin: 6px 0 0;
+}
+
+main.catalog-page .catalog-card .catalog-meta a {
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 14px/1.3 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+main.catalog-page .catalog-card-copy > p:not([class]) {
+  margin: 8px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 16px/1.55 var(--serif);
+}
+
+main.catalog-page .catalog-card .home-text-link {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  main.catalog-page {
+    padding: 24px 16px 72px;
+  }
+
+  main.catalog-page .catalog-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  main.catalog-page .catalog-card {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  main.catalog-page .catalog-cover img {
+    width: 72px;
+  }
+}
+
+/* The short shelf of related books and guides at the foot of resource,
+   subject and close-reading pages: a plain row, not a coloured panel. */
+.context-image-shelf {
+  margin: 64px 0 0;
+  padding: 24px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.context-image-shelf header {
+  display: block;
+  margin: 0 0 16px;
+}
+
+.context-image-shelf header .kicker {
+  display: none;
+}
+
+.context-image-shelf h2 {
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 24px/1.2 var(--serif);
+  letter-spacing: 0;
+}
+
+.context-image-shelf > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px 28px;
+}
+
+.context-image-shelf .context-image-card {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--text, var(--ed-ink));
+  text-decoration: none;
+  transform: none;
+}
+
+.context-image-shelf .context-image-cover {
+  width: 52px;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.context-image-shelf .context-image-cover img {
+  display: block;
+  width: 52px;
+  height: auto;
+  box-shadow: 0 1px 2px rgba(31, 27, 24, 0.16);
+}
+
+.context-image-shelf .context-image-copy small {
+  display: block;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 13px/1.3 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.context-image-shelf .context-image-copy strong {
+  display: block;
+  font: 400 18px/1.3 var(--serif);
+}
+
+.context-image-shelf .context-image-link {
+  display: none;
+}
+
+.context-image-shelf .context-image-card:hover strong {
+  color: var(--wine-text, var(--ed-wine));
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* --- Study Editions ------------------------------------------------------------ */
 
 .study-index {

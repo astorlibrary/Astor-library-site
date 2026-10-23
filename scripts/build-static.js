@@ -820,6 +820,69 @@ function addEditorialCredit(html, source) {
 // scripts/book-formats.json is the only list of formats and links.
 const bookFormats = JSON.parse(fs.readFileSync(path.join(root, 'scripts', 'book-formats.json'), 'utf8'));
 
+// The Shakespeare page's genre panel listed four plays of each kind. It now
+// lists every play and poem on the page, grouped by the genre each entry
+// already names.
+function shakespeareByGenre(html) {
+  const groups = [['Histories', []], ['Comedies', []], ['Tragedies', []], ['Late plays', []], ['Poems', []]];
+  const place = (label, title) => {
+    if (/history/i.test(label)) return 0;
+    if (/romance/i.test(label)) return 3;
+    if (/poem|poetry/i.test(label)) return 4;
+    if (/tragedy/i.test(label) || /^Julius Caesar$/.test(title)) return 2;
+    if (/comedy|problem/i.test(label)) return 1;
+    return -1;
+  };
+  for (const card of html.matchAll(/<article class="edition-card[^"]*">([\s\S]*?)<\/article>/g)) {
+    const label = (card[1].match(/<p class="year">([^<]*)<\/p>/) || [])[1] || '';
+    const title = ((card[1].match(/<h2>([\s\S]*?)<\/h2>/) || [])[1] || '').replace(/<[^>]+>/g, '').replace(/,\s*William Shakespeare$/, '').trim();
+    const page = (card[1].match(/<a class="button primary" href="(?:\.\.)?(\/books\/[^"]+)"/) || [])[1];
+    const index = place(label, title);
+    if (page && title && index >= 0) groups[index][1].push('<a href="' + page + '">' + title + '</a>');
+  }
+  const sortKey = link => link.replace(/<[^>]+>/g, '').replace(/^The /, '');
+  for (const group of groups) group[1].sort((a, b) => sortKey(a).localeCompare(sortKey(b), 'en'));
+  const table = '<div class="shakespeare-reading-table">' + groups.filter(group => group[1].length)
+    .map(([name, links]) => '<article><h3>' + name + '</h3>' + links.join('') + '</article>').join('') + '</div>';
+  return html
+    .replace(/<div class="shakespeare-reading-table">[\s\S]*?<\/div>(?=<div class="button-row">)/, table)
+    .replace('<h2 id="shakespeare-room-title">Browse the plays by genre.</h2>', '<h2 id="shakespeare-room-title">The plays and poems by genre</h2>');
+}
+
+// A period collection lists its books one under another. The page gets a
+// class for the plain listing style, and its title loses the full stop and
+// the "Period" label above it.
+function markCollectionPage(html, source) {
+  const href = pageHref(source);
+  if (!(discovery.collections || []).some(item => item.href === href)) return html;
+  html = html.replace(/<main\b([^>]*)\bclass="([^"]*)"/, (whole, before, classes) => '<main' + before + 'class="' + classes + ' collection-page"');
+  html = html.replace(/(<section class="page-intro"><div>)<p class="kicker">[^<]*<\/p>(<h1>[\s\S]*?)\.(<\/h1>)/, '$1$2$3');
+  if (href === '/shakespeare/') html = shakespeareByGenre(html);
+  // Each entry is rebuilt to the same shape: the cover and the title lead to
+  // the book's page, then the author, the description and where to buy it.
+  // The cards had been written at different times with different labels
+  // ("Paperback · author", a bare year, "Christmas book · 1844") and two
+  // buttons each.
+  return html.replace(/<article class="edition-card([^"]*)">([\s\S]*?)<\/article>/g, (whole, extra, body) => {
+    const page = ((body.match(/<a class="button primary" href="(?:\.\.)?(\/books\/[^"]+)"/) || [])[1]);
+    const book = page && (discovery.books || []).find(item => item.href === page);
+    if (!book) return whole;
+    const image = (body.match(/<img\b[^>]*>/) || [''])[0];
+    const description = (body.match(/<\/h2>\s*<p>([\s\S]*?)<\/p>/) || [])[1] || escapeHtml(book.description || '');
+    const buy = (body.match(/<a class="button secondary" href="(https?:[^"]+)"/) || [])[1];
+    const author = book.authorHref
+      ? '<a href="' + escapeHtml(book.authorHref) + '">' + escapeHtml(book.author) + '</a>'
+      : escapeHtml(book.author || '');
+    return '<article class="edition-card collection-entry' + extra + '">' +
+      '<a class="collection-entry-cover" href="' + escapeHtml(page) + '" tabindex="-1" aria-hidden="true">' + image + '</a>' +
+      '<div><h2><a href="' + escapeHtml(page) + '"><em>' + escapeHtml(book.title) + '</em></a></h2>' +
+      (author ? '<p class="collection-entry-author">' + author + '</p>' : '') +
+      '<p>' + description + '</p>' +
+      (buy ? '<p class="collection-entry-links"><a href="' + escapeHtml(buy) + '" rel="noopener">Buy on Amazon</a></p>' : '') +
+      '</div></article>';
+  });
+}
+
 function addContextImageShelf(html, source) {
   if (html.includes('class="context-image-shelf"')) return html;
   const href = pageHref(source);
@@ -828,7 +891,6 @@ function addContextImageShelf(html, source) {
   const study = studyContext(source);
   const subject = subjectContext(source);
   const passage = passageContext(source);
-  const collection = (discovery.collections || []).find(item => item.href === href);
   let candidates = [];
   let heading = 'Related editions and guides.';
   let label = 'Related catalogue pages';
@@ -871,10 +933,6 @@ function addContextImageShelf(html, source) {
     const routes = passage.relatedBooks || [];
     candidates = [...booksFor(routes), ...resourcesFor(routes), ...studiesFor(routes)];
     label = 'Related to this passage';
-  } else if (collection) {
-    candidates = (discovery.books || []).filter(item => item.collection === collection.title);
-    heading = 'Editions in this collection.';
-    label = collection.title;
   } else {
     return html;
   }
@@ -1269,6 +1327,7 @@ function prepareHtml(html, source) {
     html = addResourceReadingNavigation(html, source);
     html = addEditorialCredit(html, source);
     html = addContextImageShelf(html, source);
+    html = markCollectionPage(html, source);
     html = addStudyEditionPage(html, source);
   }
   html = addSiteIndexLink(html, source);

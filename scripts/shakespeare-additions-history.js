@@ -186,7 +186,7 @@ module.exports = [
     readings: [
       {
         label: "Truth",
-        title: "What can ‘All Is True’ mean on a stage?",
+        title: "‘All Is True’ on the stage",
         paragraphs: [
           "The Prologue rejects easy laughter and promises weighty, sorrowful truth. Yet the play’s politics are full of competing testimony: Buckingham may be destroyed by a coached witness, Henry’s conscience about his marriage may be his desire for Anne in another form, and Wolsey’s public service conceals private correspondence. In 1613 the play was known as All Is True, and it is full of claims that nobody on stage can check.",
           "Theatre adds another complication. Audiences see painstaking ceremonies that announce authority through costume, music and ordered bodies, but they also see the changes and omissions required to make history performable. The play’s old alternative title need not mean that every scene claims documentary accuracy. It can instead sharpen the question of who has the power to make an account count as true.",
@@ -210,7 +210,7 @@ module.exports = [
       },
     ],
     contexts: [
-      { label: "Collaboration", title: "Shakespeare and Fletcher", body: "Since the nineteenth century, scholars have identified marked changes in metre, vocabulary and dramatic habit across the play. Exact scene divisions remain open to argument, but collaborative authorship with John Fletcher is now the prevailing view. The First Folio’s inclusion of the work among Shakespeare’s histories and its collaborative making are compatible facts." },
+      { label: "Collaboration", title: "Shakespeare and Fletcher", body: "Since James Spedding’s essay of 1850, editors have identified changes in metre, vocabulary and dramatic habit across the play that point to John Fletcher’s hand. Exact scene divisions remain open to argument, but collaborative authorship with John Fletcher is now the prevailing view. The First Folio’s inclusion of the work among Shakespeare’s histories and its collaborative making are compatible facts." },
       { label: "Playhouse", title: "The Globe fire", body: "During a performance on 29 June 1613, wadding from a cannon used for Henry’s entrance lodged in the thatch. The Globe burned to the ground in roughly an hour. Contemporary accounts stress both the production’s extraordinary pomp and the absence of serious injury, giving the play an unusually vivid first-performance history." },
       { label: "Memory", title: "Tudor history and Stuart politics", body: "The writers drew chiefly on Holinshed, with material also associated with John Stow and John Speed. By 1613, Elizabeth had been dead for a decade and James I occupied the throne. So Cranmer’s prophecy looks back to Elizabeth’s reign and forward to James, and presents a disputed marriage and the birth of a girl as a smooth national story." },
     ],

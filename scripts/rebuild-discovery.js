@@ -200,7 +200,7 @@ for (const match of libraryHtml.matchAll(bookPattern)) {
   if (!titleMatch || !imageMatch) throw new Error('Could not read a book card');
 
   const authorHtml = matchText(block, /<p class="catalog-author">([\s\S]*?)<\/p>/, 'book author');
-  const descriptionHtml = matchText(block, /<p>([\s\S]*?)<\/p><a class="home-text-link"/, 'book description');
+  const descriptionHtml = matchText(block, /<p>([\s\S]*?)<\/p><\/div>/, 'book description');
   const title = textOnly(titleMatch[2]);
   const author = textOnly(authorHtml);
   const collection = textOnly(match[1]);
