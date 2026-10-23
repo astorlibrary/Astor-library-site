@@ -207,10 +207,10 @@ function context(book) {
     parts.push('<section class="guide-criticism" aria-labelledby="guide-criticism-title"><h2 id="guide-criticism-title">Critics</h2>' +
       book.criticalViews.map(view =>
         '<div class="guide-critic"><h3>' + escapeHtml(view.critic) + '</h3>' +
-        '<p class="guide-critic-work"><cite>' + escapeHtml(view.work) + '</cite>' + (view.year ? ' (' + escapeHtml(view.year) + ')' : '') + '</p>' +
+        '<p class="guide-critic-work">' + (view.essay ? '“' + escapeHtml(view.essay) + '”, in ' : '') + '<cite>' + escapeHtml(view.work) + '</cite> (' + escapeHtml(view.year) + ')</p>' +
         '<p>' + escapeHtml(view.summary) + '</p></div>'
       ).join('') +
-      '<p class="guide-small">The summaries are our own. Short quotations are from the works named.</p>' +
+      '<p class="guide-small">The summaries are our own. Short quotations are from the works named or from the ' + (['play', 'poem'].includes(book.form) ? book.form : 'book') + '.</p>' +
       '</section>');
   }
   return parts.join('');
