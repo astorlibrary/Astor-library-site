@@ -21,28 +21,6 @@
     "url": "https://standardebooks.org/ebooks/wilkie-collins/the-moonstone/text/single-page",
     "note": "A proofed transcription of Collins’s text. References follow the book’s own divisions (Prologue, First Period, the numbered Narratives of the Second Period, and Epilogue), with no running chapter count."
   },
-  "atAGlance": [
-    {
-      "label": "Serialised",
-      "value": "4 January to 8 August 1868",
-      "note": "Thirty-two weekly instalments in Dickens’s All the Year Round, and simultaneously in Harper’s Weekly."
-    },
-    {
-      "label": "First edition",
-      "value": "July 1868",
-      "note": "Tinsley Brothers, three volumes, published in London before the serial had finished running."
-    },
-    {
-      "label": "Narrators",
-      "value": "Eleven",
-      "note": "All writing to Franklin Blake’s commission, each confined to what they personally saw."
-    },
-    {
-      "label": "Historical anchor",
-      "value": "Seringapatam, 1799",
-      "note": "The prologue places the theft during a documented assault of the Fourth Anglo-Mysore War."
-    }
-  ],
   "structure": [
     {
       "id": "prologue",
@@ -227,11 +205,6 @@
       "summary": "Seventy years old, in service since he was a footman, and entirely convinced that a household runs on precedence and that Robinson Crusoe will answer any question put to it. His prejudices are visible on every page, and that makes his evidence usable: the reader can see the shape of what he is leaving out.",
       "clue": "He has worn out six copies of one book, opens it at random whenever he needs advice, and calls his sudden interest in the investigation a disease.",
       "firstAppearance": "First Period, Chapter I",
-      "traits": [
-        "loyal",
-        "digressive",
-        "unshakeably certain"
-      ],
       "relationships": [
         {
           "to": "franklin-blake",
@@ -276,11 +249,6 @@
       "summary": "She is the only person in the book who knows a central fact from the first morning and refuses to give it up, and her silence is read by everyone as guilt, temper or debt. Collins gives her no narrative of her own, so she is constructed entirely out of other people’s accounts of a woman they have decided is behaving badly.",
       "clue": "She saw the theft with her own eyes and will not say what she saw, because saying it would ruin the man she loves.",
       "firstAppearance": "First Period, Chapter IX",
-      "traits": [
-        "independent",
-        "obstinate",
-        "protective"
-      ],
       "relationships": [
         {
           "to": "franklin-blake",
@@ -326,11 +294,6 @@
       "summary": "He brings the diamond from London, commissions every narrative in the book, and turns out to be the man who took it. Educated in Germany, France and Italy, he argues with himself in three national manners, and his greatest discovery is that his own memory holds nothing at all of the most important night of his life.",
       "clue": "He collects everybody else’s testimony in order to find a thief, and finds his own name on the evidence.",
       "firstAppearance": "First Period, Chapter I",
-      "traits": [
-        "restless",
-        "methodical",
-        "unaware of himself"
-      ],
       "relationships": [
         {
           "to": "rachel-verinder",
@@ -378,11 +341,6 @@
       "summary": "Taken from a reformatory, deformed in one shoulder, and in love with a gentleman who does not notice she exists. She hides the paint-stained nightgown to protect him, is suspected because of her record, and walks into the Shivering Sand. Her letter, read fifty chapters later, is the most painful document in the book.",
       "clue": "A housemaid with a prison record and a crooked shoulder, who buries the evidence that would convict a man who has never once looked at her.",
       "firstAppearance": "First Period, Chapter IV",
-      "traits": [
-        "watchful",
-        "ashamed",
-        "devoted"
-      ],
       "relationships": [
         {
           "to": "franklin-blake",
@@ -418,11 +376,6 @@
       "summary": "Grizzled, softly spoken and interested chiefly in roses, he reads a smear of paint faster than anybody and misreads a young woman completely. Collins makes him formidable and also wrong, which is unusual in the genre he helped invent: the great detective leaves the case with three predictions, two of which come true for reasons he never understood.",
       "clue": "He whistles ‘The Last Rose of Summer’ when he is thinking, and means to give up catching thieves for a nursery garden.",
       "firstAppearance": "First Period, Chapter XII",
-      "traits": [
-        "observant",
-        "dry",
-        "confidently mistaken"
-      ],
       "relationships": [
         {
           "to": "betteredge",
@@ -457,11 +410,6 @@
       "summary": "She lives on a small income in Brittany, distributes tracts with titles like ‘Satan in the Hair Brush’, and writes her narrative for the fee. Everything she reports is accurate and every judgement she attaches to it is wrong, which makes her the clearest demonstration of Collins’s method: evidence and interpretation arriving in the same sentence and needing to be separated by the reader.",
       "clue": "She leaves improving pamphlets in hat-boxes and under sofa cushions, and hides behind a curtain to witness a proposal of marriage.",
       "firstAppearance": "Second Period, First Narrative, Chapter I",
-      "traits": [
-        "officious",
-        "self-deceiving",
-        "unintentionally exact"
-      ],
       "relationships": [
         {
           "to": "godfrey-ablewhite",
@@ -496,11 +444,6 @@
       "summary": "The favourite of the Ladies’ committees, a large fair man who is kind to everybody and is living two lives at the expense of a trust he was supposed to hold. Collins makes him the one figure in the book whose public character is entirely manufactured, and the novel’s method (many witnesses, each partial) is what it takes to catch him.",
       "clue": "The ladies’ favourite platform speaker, whose charity is funded by a minor’s money he has already spent.",
       "firstAppearance": "First Period, Chapter X",
-      "traits": [
-        "plausible",
-        "genial",
-        "double"
-      ],
       "relationships": [
         {
           "to": "rachel-verinder",
@@ -536,11 +479,6 @@
       "summary": "Of mixed birth, piebald hair, dying of an incurable disease and ruined years ago by an accusation he will not describe, he is the only person who will try an idea out before asserting it. He reconstructs the birthday night as a controlled trial and insists that Rachel’s consent be freely given, and he asks for nothing except to be remembered.",
       "clue": "His hair is black on one side and white on the other, the town will not speak to him, and he keeps himself alive on the drug that solves the case.",
       "firstAppearance": "Second Period, Third Narrative, Chapter IX",
-      "traits": [
-        "scrupulous",
-        "outcast",
-        "dying"
-      ],
       "relationships": [
         {
           "to": "franklin-blake",
@@ -568,11 +506,6 @@
       "summary": "He drew the simplest will of his career for Sir John and has kept the family’s secrets ever since, and his narrative supplies the legal machinery the plot turns on. He is also the proof that competence is no protection against prejudice: he explains Rachel’s troubles shrewdly and states in the same breath that hardly one woman in a thousand could manage a trust.",
       "clue": "A Gray’s Inn solicitor who is asked by a soft-spoken, unannounced visitor how long a borrower has to repay a loan, and answers: one year.",
       "firstAppearance": "Second Period, Second Narrative, Chapter I",
-      "traits": [
-        "shrewd",
-        "discreet",
-        "complacent"
-      ],
       "relationships": [
         {
           "to": "rachel-verinder",
@@ -601,11 +534,6 @@
       "summary": "They appear at the gate, at a London bank and finally at Somnauth, and they are the only characters with a claim to the diamond that predates every English one. Collins filters them through Victorian conventions of mystery and disguise, and still gives them the last word: the stone goes home and the English lose sight of it for ever.",
       "clue": "Travelling as jugglers, they pour ink into an English boy’s palm to see a man on the road, and are last seen at a festival where the stone shines again in the forehead of their god.",
       "firstAppearance": "First Period, Chapter III",
-      "traits": [
-        "patient",
-        "disciplined",
-        "unreadable"
-      ],
       "relationships": [
         {
           "to": "godfrey-ablewhite",
@@ -634,11 +562,6 @@
       "summary": "He is the only Englishman in the book who can speak to the three Indians in their own language and the only one who states plainly what they will do to recover the stone. His statement closes the novel from Kattiawar, which puts the final act of interpretation outside the English record entirely.",
       "clue": "A traveller who has gone in disguise where no European had set foot, he speaks to the jugglers in their own tongue, and writes the book’s last pages from a festival at Somnauth.",
       "firstAppearance": "First Period, Chapter X",
-      "traits": [
-        "travelled",
-        "unruffled",
-        "informed"
-      ],
       "relationships": [
         {
           "to": "the-indians",
@@ -667,11 +590,6 @@
       "summary": "She will not have her daughter questioned, sends Cuff away before he can go further, and dies before the case is reopened. Her judgement is the one the household runs on, and it is exercised in the teeth of the professional advice she is paying for.",
       "clue": "She puts her chequebook back in the drawer when the detective names her daughter, sends him away with his fee by post, and has been living with a fatal heart disease for two years.",
       "firstAppearance": "First Period, Chapter II",
-      "traits": [
-        "decisive",
-        "protective",
-        "ill"
-      ],
       "relationships": [
         {
           "to": "rachel-verinder",
@@ -1376,98 +1294,5 @@
       "lon": 4.9041,
       "note": "The city where Murthwaite advises the diamond be cut into half a dozen stones, which would have ended the danger and the plot."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "A founding text of the detective novel",
-      "summary": "The country-house theft, the professional detective, the false suspect, the material clue and the final reconstruction are all here in one book, and much later crime fiction can be described in its terms.",
-      "counter": "Prose mysteries and investigating figures existed before 1868, and the claim can flatten what is unusual here: a detective who is wrong, and a solution nobody deduces."
-    },
-    {
-      "position": "A novel about testimony, more than crime",
-      "summary": "On this reading the subject is how evidence is produced: who is asked, what they are allowed to say, and how religion, class and vanity shape what a witness notices. The structure does the arguing, since no single document is sufficient.",
-      "counter": "It risks treating the plot as a pretext, when Collins plainly took great care to make the mechanism of the theft work in medical and legal detail."
-    },
-    {
-      "position": "An imperial novel",
-      "summary": "The stone is taken by force, held under English law, and returned outside it, and the Prologue and Epilogue frame the domestic mystery with acts of conquest and restitution the English narrators cannot control.",
-      "counter": "The Indian characters are still filtered through Victorian conventions of disguise and inscrutability, and they are given no narrative of their own in a novel made entirely of narratives."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "What does Collins gain, and what does he give up, by telling the story through many narrators?",
-      "focus": "Structure, testimony and the reader’s work",
-      "plan": [
-        "Set out the commission in the First Period: each witness confined to what they personally saw.",
-        "Use Betteredge to show the method’s strength: visible prejudice makes the omissions legible.",
-        "Read Miss Clack as the limiting case, where accurate facts arrive wrapped in judgements nobody can accept.",
-        "Weigh the cost: Rachel, the person who knows most, is never given a narrative, and the Indians none at all.",
-        "Conclude on the work the form gives a reader that a single detective’s account would not."
-      ]
-    },
-    {
-      "question": "‘Sergeant Cuff is the most impressive person in the book and he gets it wrong.’ Discuss.",
-      "focus": "Detection, inference and class",
-      "plan": [
-        "Establish his real competence: the paint, the timing, the missing garment, the deduction about the town.",
-        "Show where the inference fails and why: a theory of Rachel’s debts that fits everything except Rachel.",
-        "Examine the part played by Rosanna’s record and appearance in making the wrong suspect plausible.",
-        "Set his method against Ezra Jennings’s: inference from traces, versus an experiment designed to produce new evidence.",
-        "Assess the Sixth Narrative, where Cuff writes up the truth and thereby admits what his first theory cost."
-      ]
-    },
-    {
-      "question": "How far is the Prologue necessary to The Moonstone?",
-      "focus": "Empire, framing and the ending",
-      "plan": [
-        "Describe what the Prologue establishes: an eleventh-century sack, a documented 1799 assault, a private accusation, a curse.",
-        "Trace how Herncastle’s legacy works as a weapon disguised as a gift, and what that does to the birthday.",
-        "Follow the adjective ‘Indian’ through the English chapters, where the stone is repeatedly given a geography.",
-        "Read the Epilogue as the Prologue completed, and note that no English narrator is present for the restitution.",
-        "Decide whether the frame is a moral argument, an exotic device, or both."
-      ]
-    },
-    {
-      "question": "Examine Collins’s treatment of respectability and reputation.",
-      "focus": "Godfrey Ablewhite, Miss Clack, Rosanna Spearman and Ezra Jennings",
-      "plan": [
-        "Pair the characters by reputation: the celebrated philanthropist and the reformatory housemaid, the tract-giver and the outcast assistant.",
-        "Show how suspicion is distributed in the First Period, and on what evidence.",
-        "Read Clack’s narrative for the mechanics of self-approval, using her own word ‘providentially’.",
-        "Use Cuff’s Sixth Narrative to establish what Godfrey’s public character was actually financed by.",
-        "Close on Jennings, who asks for consent and asks for nothing else, and on what the novel does with him."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Rachel knows the answer from the first morning and says nothing. Is her silence admirable, or does the novel punish her for it?",
-    "Betteredge consults Robinson Crusoe as an oracle. What does Collins gain by putting one famous English story inside another?",
-    "Miss Clack is ridiculous and every fact she reports is true. How should a reader use a witness like that?",
-    "Ezra Jennings solves the case and dies asking only to be forgotten. Why does Collins give the solution to the man nobody will employ?",
-    "The diamond goes back to India and the English characters never learn how. Is that an ending or a refusal to end?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-woman-in-white/",
-      "why": "Collins’s earlier experiment with the same method, where the witnesses are assembled as though for a trial."
-    },
-    {
-      "href": "/books/adventures-of-sherlock-holmes/",
-      "why": "The detective story after Cuff: inference raised to a system, and an investigator who is never wrong."
-    },
-    {
-      "href": "/books/robinson-crusoe/",
-      "why": "Betteredge’s oracle, opened at random for guidance throughout the First Period and quoted by page number in the first line."
-    },
-    {
-      "href": "/books/great-expectations/",
-      "why": "Another All the Year Round serial with a concealed benefactor and a fortune whose origins will not bear examination."
-    },
-    {
-      "href": "/books/dracula/",
-      "why": "A later novel assembled from journals, letters and statements, and equally interested in what a dossier can prove."
-    }
-  ],
-  "videos": []
+  ]
 }

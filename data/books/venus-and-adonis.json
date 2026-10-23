@@ -21,28 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
     "note": "Every quotation here is taken word for word from this text. The Astor numbering agrees with this text’s own count of the poem’s 1,194 lines. It opens with Shakespeare’s Latin motto from Ovid’s Amores and his dedication to the Earl of Southampton. At lines 3–4 the quotation follows the Astor Library Edition, which reads ‘hied’ with the 1593 quarto, where this text prints ‘tried’."
   },
-  "atAGlance": [
-    {
-      "label": "Published",
-      "value": "1593",
-      "note": "Shakespeare’s first printed work, which the dedication calls the first heir of my invention."
-    },
-    {
-      "label": "Form",
-      "value": "199 stanzas",
-      "note": "Six lines each, rhyming ababcc; the form is often called the Venus and Adonis stanza."
-    },
-    {
-      "label": "Source",
-      "value": "Ovid’s Metamorphoses",
-      "note": "Book 10. In Ovid, Adonis returns Venus’s love; Shakespeare makes him refuse it."
-    },
-    {
-      "label": "Readers",
-      "value": "A best-seller",
-      "note": "Reprinted more often than any other work of Shakespeare’s in his lifetime."
-    }
-  ],
   "structure": [
     {
       "id": "lines-1-258",
@@ -196,12 +174,6 @@
       "summary": "The goddess of love, who cannot make one boy love her. She pulls Adonis from his horse, holds him down, kisses him, and argues with every means she has: flattery, tears, a faint, the example of Mars, and the claim that beauty must breed. When he is killed she grieves, prophesies that love will always be joined with sorrow, and takes the flower that grows from his blood.",
       "clue": "She once led the god of war prisoner in a chain of red roses, and cannot persuade one boy to kiss her.",
       "firstAppearance": "Line 5",
-      "traits": [
-        "passionate",
-        "eloquent",
-        "forceful",
-        "grief-stricken"
-      ],
       "relationships": [
         {
           "to": "adonis",
@@ -242,12 +214,6 @@
       "summary": "A beautiful young man who loves hunting and laughs at love. He blushes, frowns and says little, and when he does speak he argues that he is too young and that what Venus calls love is lust. He goes to hunt the boar against her warning and is killed by it, and his blood becomes a purple and white flower.",
       "clue": "He says he knows not love, unless it is a boar, and then he chases it.",
       "firstAppearance": "Line 3",
-      "traits": [
-        "proud",
-        "reluctant",
-        "young",
-        "terse"
-      ],
       "relationships": [
         {
           "to": "venus",
@@ -286,11 +252,6 @@
       "summary": "The voice that tells the story, with relish and some irony. The narrator pities and teases Venus, draws long similes from hunting and country life, and describes Adonis’s horse as a painter would.",
       "clue": "Calls the goddess poor queen of love, and compares her kisses to a starving eagle tearing at its prey.",
       "firstAppearance": "Line 1",
-      "traits": [
-        "witty",
-        "sensuous",
-        "sympathetic"
-      ],
       "relationships": []
     },
     {
@@ -300,10 +261,6 @@
       "summary": "Tied to a branch while Venus woos his master, he breaks his rein at the sight of a breeding mare, chases her and runs off with her into the wood. He does everything Adonis will not, and Venus holds him up as an example.",
       "clue": "He crushes the iron bit between his teeth and leaves his master on foot.",
       "firstAppearance": "Line 13",
-      "traits": [
-        "spirited",
-        "wilful"
-      ],
       "relationships": [
         {
           "to": "jennet",
@@ -331,10 +288,6 @@
       "summary": "She comes out of a copse and attracts Adonis’s horse. At first she puts on a show of coldness and kicks at him, then grows kinder and runs off into the wood with him.",
       "clue": "She kicks at a suitor’s embraces, then grows kinder and runs off with him into the wood.",
       "firstAppearance": "Line 260",
-      "traits": [
-        "coy",
-        "wild"
-      ],
       "relationships": []
     },
     {
@@ -344,10 +297,6 @@
       "summary": "Venus describes him before he appears: a battle of bristles on his back, tusks that are never sheathed, eyes like glow-worms, and a snout that digs graves. At dawn his mouth is red with blood, and he has gored Adonis in the groin. Venus imagines that he only meant to kiss him.",
       "clue": "His snout digs sepulchres wherever he goes, and at dawn his mouth is painted red.",
       "firstAppearance": "Line 410",
-      "traits": [
-        "savage",
-        "indifferent"
-      ],
       "relationships": [
         {
           "to": "adonis",
@@ -366,10 +315,6 @@
       "summary": "The hare Venus describes when she begs Adonis to hunt something harmless. Chased by hounds, he doubles back and runs among sheep, rabbits and deer to hide his scent, and stops on a hill to listen like a sick man hearing the passing bell.",
       "clue": "A hunted creature who hides among sheep and deer to confuse the hounds, then stands on a hill to listen.",
       "firstAppearance": "Line 697",
-      "traits": [
-        "cunning",
-        "frightened"
-      ],
       "relationships": [
         {
           "to": "adonis",
@@ -388,10 +333,6 @@
       "summary": "Finding the hounds wounded, Venus turns on Death as a grim-grinning ghost that has killed Adonis by mistake, aiming at old age and hitting a child. When she hears a huntsman and hopes Adonis is alive, she begs Death’s pardon and flatters him as king of graves.",
       "clue": "Called a grim-grinning ghost and earth’s worm, then flattered as king of graves.",
       "firstAppearance": "Line 931",
-      "traits": [
-        "random",
-        "merciless"
-      ],
       "relationships": []
     }
   ],
@@ -1405,84 +1346,5 @@
       "lon": -1.7073,
       "note": "Home town of both Shakespeare and his printer, Richard Field."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "An Ovidian comedy",
-      "summary": "Many readers take the poem as a witty, erotic entertainment in the fashion of the 1590s, written to please a young aristocratic patron and a public that bought it in edition after edition.",
-      "counter": "The ending is not comic. Adonis dies, and with Venus’s prophecy the poem becomes an account of why love hurts."
-    },
-    {
-      "position": "A poem about consent",
-      "summary": "Recent criticism stresses that Venus physically restrains Adonis and overrides his refusals, and reads the gender reversal as a way of making coercion visible.",
-      "counter": "Others argue that the comedy depends on Venus’s helplessness: the goddess of love cannot get what she wants, and the joke is on her."
-    },
-    {
-      "position": "The argument for breeding",
-      "summary": "Venus’s case that beauty must reproduce links the poem to the procreation sonnets, and some critics read it as a serious argument about nature and time.",
-      "counter": "Adonis’s reply, that her love is lust and he is too young, has the last word in the debate, and the boar puts an end to the question."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Shakespeare present Venus?",
-      "focus": "Venus as wooer and mourner",
-      "plan": [
-        "Begin with the reversal in the first stanza, where the goddess is a bold-faced suitor.",
-        "Analyse her arguments: Mars, the park, the duty to breed.",
-        "Look at how the narrator describes her, in images of predators and as poor queen of love.",
-        "Examine her grief, from the curse on Death to the discovery of the body.",
-        "Conclude on the prophecy and whether the poem sympathises with her."
-      ]
-    },
-    {
-      "question": "How does the poem use animals?",
-      "focus": "Horses, hare and boar",
-      "plan": [
-        "Start with the similes of the first wooing: eagle, bird in a net, dive-dapper.",
-        "Analyse the stallion and the jennet as an example Venus uses and Adonis rejects.",
-        "Consider Wat the hare and what Venus’s story reveals.",
-        "Examine the boar and Venus’s claim that it meant to kiss Adonis.",
-        "Conclude on what the animals say about human desire."
-      ]
-    },
-    {
-      "question": "How does Shakespeare set love against lust?",
-      "focus": "Adonis’s reply and Venus’s prophecy",
-      "plan": [
-        "Begin with Venus’s claim that love is a spirit all compact of fire.",
-        "Analyse Adonis’s answer in lines 787–810.",
-        "Consider how the narrator describes Venus’s desire in the goodnight kiss.",
-        "Examine the prophecy of what love will be from now on.",
-        "Conclude on whether the poem sides with either speaker."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Is Venus comic, pitiable or threatening?",
-    "Why does Adonis say so little?",
-    "Why does Shakespeare spend sixty-six lines on a horse?",
-    "Does the gender reversal make the poem more troubling or less?",
-    "Is Venus’s prophecy fair to love?",
-    "Why does the poem end with Venus hiding herself away?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-rape-of-lucrece/",
-      "why": "Shakespeare’s other narrative poem, dedicated to the same patron a year later."
-    },
-    {
-      "href": "/books/shakespeares-sonnets/",
-      "why": "The first seventeen sonnets make Venus’s argument that beauty must breed."
-    },
-    {
-      "href": "/books/a-midsummer-nights-dream/",
-      "why": "Another Ovidian story in which a woman chases a man who does not want her."
-    },
-    {
-      "href": "/books/the-rape-of-lucrece-and-venus-and-adonis/",
-      "why": "The two narrative poems together in one volume."
-    }
-  ],
-  "videos": []
+  ]
 }

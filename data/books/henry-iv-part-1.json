@@ -21,28 +21,6 @@
     "url": "https://shakespeare.mit.edu/1henryiv/full.html",
     "note": "The Astor edition counts prose lines as printed; other modern editions vary. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1596–97",
-      "note": "After Richard II and before the second part, which begins where this one stops."
-    },
-    {
-      "label": "First printed",
-      "value": "1598",
-      "note": "Entered in the Stationers’ Register on 25 February and printed in quarto; a fragment of an earlier printing survives."
-    },
-    {
-      "label": "Chief sources",
-      "value": "Holinshed’s Chronicles",
-      "note": "With the Tudor dynastic framing of Hall behind it, and an anonymous older play, The Famous Victories, somewhere in the background."
-    },
-    {
-      "label": "A name changed",
-      "value": "Oldcastle to Falstaff",
-      "note": "Traces in the text suggest the knight first carried the name of a Protestant martyr with powerful descendants."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -188,11 +166,6 @@
       "summary": "He tells the audience his whole strategy in his first scene alone, which leaves the play free to spend four acts on the question of whether a man can perform disgrace for years without being changed by it. He is funnier than Falstaff intends him to be and colder than the tavern realises.",
       "clue": "He explains his entire plan in a soliloquy before the audience has had time to like him, then goes back to drinking for two more acts.",
       "firstAppearance": "1.2",
-      "traits": [
-        "calculating",
-        "excellent company",
-        "already leaving"
-      ],
       "relationships": [
         {
           "to": "falstaff",
@@ -236,11 +209,6 @@
       "summary": "He lies on a scale that is meant to be caught, steals from the poor and from the king’s press with equal cheerfulness, and produces the only argument in the play against dying for a word. He is not a fool and he is not harmless: the hundred and fifty men he recruits for bribes are dead by Act V, and he says so himself.",
       "clue": "Two men in buckram become eleven while he talks, and he stabs a corpse in the thigh to make sure of the credit.",
       "firstAppearance": "1.2",
-      "traits": [
-        "inventive",
-        "cowardly on principle",
-        "impossible to shame"
-      ],
       "relationships": [
         {
           "to": "hal",
@@ -272,11 +240,6 @@
       "summary": "He cannot finish a sentence about politics without making it a sentence about himself, and the speed is his charm and his defect. Shakespeare makes him Hal’s age, which the chronicles do not, so that the play can set two versions of one generation against each other.",
       "clue": "He will not hand over his prisoners, mocks a lord who sniffed a pouncet-box on the battlefield, and dies in the middle of his own sentence.",
       "firstAppearance": "1.3",
-      "traits": [
-        "headlong",
-        "wonderful company for ten minutes",
-        "deaf to advice"
-      ],
       "relationships": [
         {
           "to": "lady-percy",
@@ -321,11 +284,6 @@
       "summary": "He opens the play trying to leave the country on crusade and never manages it in this play or the next. His advice to his son is about being seen more than about virtue (a crown is kept by rationing it), which tells an audience exactly how he got it.",
       "clue": "He wishes a fairy had swapped his son in the cradle for the rebel earl’s, and says so to the lords of the council.",
       "firstAppearance": "1.1",
-      "traits": [
-        "exhausted",
-        "politically shrewd",
-        "unable to atone"
-      ],
       "relationships": [
         {
           "to": "hal",
@@ -363,11 +321,6 @@
       "summary": "He is the cold intelligence behind a hot nephew, and the one man who understands that a pardon offered to the Percys would be honoured for Hotspur and not for him. Suppressing the king’s offer is the single most consequential decision in the play, and he takes it in a short, entirely rational speech.",
       "clue": "He decides that his own head is worth more than the truth, and keeps a pardon in his pocket while men march.",
       "firstAppearance": "1.3",
-      "traits": [
-        "calculating",
-        "self-preserving",
-        "correct about the risk"
-      ],
       "relationships": [
         {
           "to": "hotspur",
@@ -397,11 +350,6 @@
       "summary": "He claims the earth shook at his birth and that he can call spirits, and the play neither proves nor disproves him; it simply has Hotspur laugh. He is also the one character with a household, a language and a daughter who sings, which makes the Welsh scene the play’s only picture of home.",
       "clue": "He says the front of heaven was full of fiery shapes when he was born, and is told that the same thing would have happened if his mother’s cat had kittened.",
       "firstAppearance": "3.1",
-      "traits": [
-        "grand",
-        "learned",
-        "easily needled"
-      ],
       "relationships": [
         {
           "to": "hotspur",
@@ -430,11 +378,6 @@
       "summary": "She describes her husband’s sleep (the muttered orders, the sweat, the starting awake) in the most precise account of a soldier’s mind the play contains, and he answers by refusing to tell her anything. Their scene together is affectionate, funny and entirely one-sided about information.",
       "clue": "She has watched her husband cry out about basilisks and cannon in his sleep for a fortnight, and still cannot get a straight answer out of him.",
       "firstAppearance": "2.3",
-      "traits": [
-        "observant",
-        "quick-tongued",
-        "shut out"
-      ],
       "relationships": [
         {
           "to": "hotspur",
@@ -454,10 +397,6 @@
       "summary": "He invents the Gadshill counter-robbery, which is the mechanism that lets Hal watch Falstaff lie and then correct him with evidence. He is the prince’s accomplice more than his friend, and the play drops him without comment once the joke has served its purpose.",
       "clue": "He is the one who works out that two men in disguise can rob the robbers and then simply listen to the story afterwards.",
       "firstAppearance": "1.2",
-      "traits": [
-        "practical",
-        "malicious in a small way"
-      ],
       "relationships": [
         {
           "to": "hal",
@@ -485,11 +424,6 @@
       "summary": "He spends the battle killing men dressed as the king and getting angrier each time, which makes the play’s theme of counterfeiting into a running joke with corpses in it. He is released without ransom at the end, in the only unambiguously generous act anyone performs.",
       "clue": "He keeps killing the king and keeps being told that this was not the king.",
       "firstAppearance": "4.1",
-      "traits": [
-        "brave",
-        "literal",
-        "unlucky in his targets"
-      ],
       "relationships": [
         {
           "to": "hotspur",
@@ -1260,98 +1194,5 @@
       "lon": -2.7527,
       "note": "The field where the play’s three worlds finally meet, on 21 July 1403."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "The education of a prince",
-      "summary": "The oldest account reads the play as a structured apprenticeship: Hal learns the whole kingdom, from carriers to kings, and earns the crown that his father only seized.",
-      "counter": "It depends on taking the soliloquy in 1.2 at face value, and that speech shows a man who needs no education because he has already decided what the tavern is for."
-    },
-    {
-      "position": "A play about how power manages its own image",
-      "summary": "Newer historicist criticism has focused on the way authority in these plays produces disorder in order to be seen putting it down, with Hal’s misrule and its public correction as the model case.",
-      "counter": "The reading can make the play airless, and it has little to say about why Falstaff is funny, which is not a trivial fact about him."
-    },
-    {
-      "position": "Falstaff as the play’s real centre",
-      "summary": "A long tradition, running through the eighteenth century and beyond, treats Falstaff as a comic creation too large for the history he is placed in, and reads the political plot as the frame around him.",
-      "counter": "It can go soft on what he actually does, and Shakespeare shows all of it: pressing men for bribes, marching them to be killed, stabbing a corpse."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "What does the play conclude about honour?",
-      "focus": "Hotspur, Falstaff and the space between them",
-      "plan": [
-        "Set out Hotspur’s definition from 1.3: honour as an object to be fetched from an impossible place.",
-        "Set out Falstaff’s from 5.1: honour as a word with no surgical use and no living owner.",
-        "Show Hal converting it into a transferable account in 3.2, which is neither of the other two positions.",
-        "Test all three against 5.4, where Hotspur dies mid-sentence, Falstaff plays dead, and the credit is claimed by the wrong man.",
-        "Decide whether the play adjudicates or simply leaves three definitions standing, and what the ending does with the man who keeps the corpse."
-      ]
-    },
-    {
-      "question": "Is Hal’s soliloquy in 1.2 a confession, a plan or a defence?",
-      "focus": "Character, timing and the audience’s position",
-      "plan": [
-        "Note where the speech falls: after the robbery is agreed, and before the audience has seen him with anyone but Falstaff and Poins.",
-        "Read the tense and modality closely (‘I know you all’, ‘will awhile uphold’) and what they claim about the scenes still to come.",
-        "Set the sun and cloud imagery beside the king’s advice in 3.2 and ask who learned it from whom.",
-        "Consider how the speech changes a rereading of 2.4, especially the play extempore and ‘I do, I will’.",
-        "Conclude on whether the soliloquy is meant to reassure an audience about a prince, or to make it uneasy about a future king."
-      ]
-    },
-    {
-      "question": "How does the play use the movement between court, tavern and camp?",
-      "focus": "Structure, register and the shape of the kingdom",
-      "plan": [
-        "Chart the cutting in Acts I and II: each scene answers the one before, and 1.2 and 1.3 present two sons in succession.",
-        "Show how prose and verse mark the spaces, and how Hal is the only character who moves fluently between them.",
-        "Bring in the carriers in 2.1 and the recruits in 4.2 as the play’s view from below the plot.",
-        "Use 3.1, where the rebels divide England on a map, as the moment the technique becomes the subject.",
-        "Close on Shrewsbury, where all three worlds are finally in the same place, and ask what survives the meeting."
-      ]
-    },
-    {
-      "question": "Does Worcester or Hotspur destroy the rebellion?",
-      "focus": "Political judgement and the suppressed pardon",
-      "plan": [
-        "Trace Worcester’s role from 1.3, where he converts a family quarrel into a conspiracy.",
-        "Set Hotspur’s decisions in 4.1 against the evidence: two armies missing, and each absence turned into a reason to fight now.",
-        "Examine 5.2 in detail: the reasoning by which Worcester keeps the king’s offer from his nephew, and whether it is wrong.",
-        "Weigh the effect of Vernon’s report of Hal’s praise, which reaches Hotspur when the pardon does not.",
-        "Judge how far the play makes the defeat a matter of character and how far a matter of one man’s calculation."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Hal tells the audience his plan before we have decided whether to like him. Does that make the play more honest, or the prince harder to forgive?",
-    "Falstaff’s catechism on honour comes immediately before a battle in which men he pressed for bribes are killed. Is the speech still funny?",
-    "Shakespeare makes Hotspur young, though the chronicles make him older than the king. What does the change buy the play?",
-    "Lady Percy describes her husband’s sleep more accurately than anyone describes him awake. Why does the play give that speech to her?",
-    "The play ends with armies dividing for campaigns not yet fought. Is this a complete play or the first half of one?"
-  ],
-  "related": [
-    {
-      "href": "/books/richard-ii/",
-      "why": "The play immediately before: the deposition, and the debt to the Percys that this rebellion is collecting."
-    },
-    {
-      "href": "/books/henry-iv-part-2/",
-      "why": "The sequel, where the tavern gets colder, the king finally dies, and ‘I do, I will’ is carried out in public."
-    },
-    {
-      "href": "/books/henry-v/",
-      "why": "The reign the prince has been preparing for, with the same trick of moving in disguise among ordinary soldiers."
-    },
-    {
-      "href": "/books/henry-iv-parts-1-and-2/",
-      "why": "Both parts in a single Astor volume, for reading the whole arc from Shrewsbury to the rejection in one sitting."
-    },
-    {
-      "href": "/books/merry-wives-of-windsor/",
-      "why": "Falstaff transplanted into a citizen comedy, and a useful test of how much of him belongs to the history plays."
-    }
-  ],
-  "videos": []
+  ]
 }

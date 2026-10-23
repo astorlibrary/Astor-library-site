@@ -24,28 +24,6 @@
     "url": "https://shakespeare.mit.edu/lear/full.html",
     "note": "The Astor edition prints a conflated text. The 1608 quarto and the 1623 Folio differ in hundreds of readings, and the Folio omits a whole scene that many editions print as 4.3. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1605–06",
-      "note": "After Harsnett’s Declaration of 1603, which supplied Edgar’s fiends, and before the recorded court performance of 1606."
-    },
-    {
-      "label": "First printed",
-      "value": "1608",
-      "note": "As a True Chronicle Historie, printed for Nathaniel Butter; the Folio of 1623 calls it a tragedy."
-    },
-    {
-      "label": "Two early texts",
-      "value": "Q1 and F1",
-      "note": "The Folio adds more than a hundred lines and drops around three hundred. Editors must choose, conflate or print both."
-    },
-    {
-      "label": "Shape",
-      "value": "Five acts, twenty-six scenes",
-      "note": "Two full plots, Lear’s daughters and Gloucester’s sons, running in parallel and colliding on the heath."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -226,11 +204,6 @@
       "summary": "A man who has never in his life been contradicted and cannot tell the difference between love and the language of love. He gives his power away in the first scene; what the play takes from him is the assumptions that came with it, and what is left underneath turns out to be capable of pity for the first time at eighty.",
       "clue": "He asks three women to say how much they love him, and ends the play carrying the one who refused.",
       "firstAppearance": "1.1",
-      "traits": [
-        "absolute",
-        "self-pitying",
-        "late to understand"
-      ],
       "relationships": [
         {
           "to": "cordelia",
@@ -291,11 +264,6 @@
       "summary": "She speaks about a hundred lines in the whole play and is absent from the middle three acts, which is part of the design: the play takes her away again and again. In the first scene she will not put a price on love, which is not the same as defiance, and it costs her a kingdom in under fifty lines.",
       "clue": "Asked to bid for a third of a kingdom, she offers a word that means nothing, and is believed.",
       "firstAppearance": "1.1",
-      "traits": [
-        "exact",
-        "unbending",
-        "returning"
-      ],
       "relationships": [
         {
           "to": "lear",
@@ -332,11 +300,6 @@
       "summary": "She wins the first scene by saying what is wanted and spends the rest of the play being right about her father’s knights and wrong about everything else. The play gives her a real grievance and then lets her overrun it: by Act IV she is poisoning her sister and writing to a man about killing her husband.",
       "clue": "She tells her steward to grow cold to the old man on purpose, and later poisons her own sister.",
       "firstAppearance": "1.1",
-      "traits": [
-        "competent",
-        "cold",
-        "reckless in love"
-      ],
       "relationships": [
         {
           "to": "lear",
@@ -375,11 +338,6 @@
       "summary": "She follows her sister’s lead in Act I and outruns her afterwards. It is Regan who suggests plucking out the second eye, and Regan who kills the servant who objects. Widowed in the same scene, she immediately begins competing for Edmund, and dies of her sister’s poison without ever suspecting it.",
       "clue": "She asks what need her father has of even one attendant, and later calls for the other eye.",
       "firstAppearance": "1.1",
-      "traits": [
-        "imitative",
-        "cruel in the moment",
-        "unguarded"
-      ],
       "relationships": [
         {
           "to": "lear",
@@ -415,11 +373,6 @@
       "summary": "He jokes about his illegitimate son’s conception in the play’s opening exchange, with the son standing beside him. His plot rhymes with Lear’s without repeating it: Lear cannot read speech, Gloucester cannot read a document, and it is Gloucester who is punished physically for a loyalty he only just found the nerve to act on.",
       "clue": "He believes a forged letter, loses both eyes in his own house, and asks a beggar to lead him to a cliff.",
       "firstAppearance": "1.1",
-      "traits": [
-        "credulous",
-        "superstitious",
-        "brave too late"
-      ],
       "relationships": [
         {
           "to": "edgar",
@@ -459,11 +412,6 @@
       "summary": "The only character who tells the audience his plan and keeps to it. He argues that the law’s distinction between his brother and himself is arbitrary, which is true, and then uses the point to justify anything at all. His attempt to do one good thing arrives about ninety seconds too late to save Cordelia.",
       "clue": "He forges a letter in his brother’s hand, cuts his own arm to prove his loyalty, and is loved by two sisters together.",
       "firstAppearance": "1.1",
-      "traits": [
-        "clear-sighted",
-        "amused",
-        "opportunistic"
-      ],
       "relationships": [
         {
           "to": "gloucester",
@@ -512,11 +460,6 @@
       "summary": "He is tricked out of his name in Act I and spends four acts wearing other people’s, of which Poor Tom is only the first. His care for his father is real and strangely cruel (he lets Gloucester believe in a miracle and does not tell him who is holding his arm), and he ends the play holding a kingdom nobody would want.",
       "clue": "He grimes his face with filth, takes the name of a Bedlam beggar, and leads his blind father to a cliff that is not there.",
       "firstAppearance": "1.2",
-      "traits": [
-        "improvising",
-        "dutiful",
-        "withholding"
-      ],
       "relationships": [
         {
           "to": "gloucester",
@@ -553,11 +496,6 @@
       "summary": "He contradicts the king to his face in the first scene, is banished for it, and comes back in disguise the same week to carry on doing the job. His loyalty is not sentimental: he trips Oswald, insults Cornwall and gets himself locked in the stocks. At the end he declines the kingdom because he has an appointment elsewhere.",
       "clue": "Banished for telling the truth, he shaves his beard, changes his voice and takes service with the man who banished him.",
       "firstAppearance": "1.1",
-      "traits": [
-        "blunt",
-        "faithful",
-        "finished"
-      ],
       "relationships": [
         {
           "to": "lear",
@@ -587,11 +525,6 @@
       "summary": "He arrives after Cordelia leaves and vanishes after the mock trial, which has made some readers connect them. His jokes are all one joke, repeated until it stops being funny: you gave away the thing that made you worth obeying. He is the only person allowed to say it, and he keeps saying it through the worst of the weather.",
       "clue": "He tells the king that he is an O without a figure, and disappears from the play after a trial held in a hovel.",
       "firstAppearance": "1.4",
-      "traits": [
-        "relentless",
-        "loyal",
-        "unexplained"
-      ],
       "relationships": [
         {
           "to": "lear",
@@ -1335,124 +1268,6 @@
       "lat": 47.322,
       "lon": 5.0415,
       "note": "The suitor who withdraws when Cordelia’s dowry disappears, leaving France to take her without one."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "The play as a Christian pattern of suffering",
-      "summary": "A long tradition reads Lear’s progress as a purgation: pride stripped away by storm and loss until, in 4.7, the king kneels and is reconciled. On this account the tragedy is a form of instruction.",
-      "counter": "The ending resists it. Cordelia dies after the reprieve has been sent, for no reason the plot requires, and Lear’s last words are a demand that those around him look at her lips."
-    },
-    {
-      "position": "The play as a political and material tragedy",
-      "summary": "Criticism since the mid-twentieth century has emphasised the play’s interest in property, need and power: a division of land, a negotiation over how many servants a pensioner deserves, and a king who works out that the office commands obedience and the man without it commands none.",
-      "counter": "It can flatten the family material, which Shakespeare stages with as much care as the politics: the arithmetic of 2.4 devastates only because daughters are doing it."
-    },
-    {
-      "position": "Two plays, Quarto and Folio",
-      "summary": "Because the 1608 quarto and the 1623 Folio differ so widely, many textual scholars argue that the Folio represents a later revision and that conflating the two produces a text no early audience heard.",
-      "counter": "The conflated tradition is what four centuries of readers and actors have worked with, and some of the play’s best-known material survives only because editors refused to choose."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Shakespeare use the Gloucester plot?",
-      "focus": "Double plot, parallel and difference",
-      "plan": [
-        "Set the two opening deceptions side by side: Lear misreads speech in 1.1, Gloucester misreads a document in 1.2.",
-        "Distinguish them as well as pairing them: Gloucester is blinded for an act of kindness to the king, while Lear’s suffering follows from his own ceremony.",
-        "Use 3.7 and 4.1 to show the subplot outpacing the main plot: the blinding is the most violent thing in the play and happens to the secondary father.",
-        "Analyse 4.6, where the two ruined men meet and the comparison is made on stage instead of by the audience.",
-        "Conclude with the endings: Gloucester dies offstage, his heart bursting between joy and grief; Lear dies on stage, telling the others to look at Cordelia’s lips."
-      ]
-    },
-    {
-      "question": "‘The play is about sight, not madness.’ Discuss.",
-      "focus": "Seeing, knowing and judgement",
-      "plan": [
-        "Start with Kent’s ‘See better, Lear’ and the eye imagery running through the first scene.",
-        "Follow the metaphor into literal action at 3.7, and note what reason Cornwall gives for the second eye.",
-        "Read 4.1: Gloucester’s claim that he stumbled when he saw, and what it implies about the value of evidence in this play.",
-        "Set 4.6 against both: a blind man and a mad king conducting the clearest analysis of authority in the text.",
-        "Weigh the counter-case: Lear’s madness produces insight that his sanity never did, so the two strands may not be separable."
-      ]
-    },
-    {
-      "question": "Are Goneril and Regan given a case?",
-      "focus": "Justice, need and the presentation of the sisters",
-      "plan": [
-        "Reconstruct their argument from 1.3, 1.4 and 2.4: a hundred armed men in someone else’s house, and a father who curses one daughter with sterility.",
-        "Notice how much of their behaviour before 3.7 is administrative, and where exactly the line into cruelty is crossed.",
-        "Use ‘O, reason not the need’ to show the play answering them on principle.",
-        "Consider the later plot (the poisoning, the letters to Edmund) and ask whether it convicts them or simply disposes of them.",
-        "Decide whether the play gives them a case and then takes it away."
-      ]
-    },
-    {
-      "question": "How far does King Lear offer any consolation?",
-      "focus": "The ending, justice and the gods",
-      "plan": [
-        "Collect the appeals to the gods across the play and note that none of them is answered on stage.",
-        "Treat 4.7 as the play’s best offer: reconciliation, clean clothes, a kneeling king, a daughter who says no cause.",
-        "Show how 5.3 dismantles it: the reprieve is sent, and arrives too late by a matter of lines.",
-        "Weigh Edgar’s ‘Ripeness is all’ and Albany’s closing couplet as attempts to supply a moral that the stage picture contradicts.",
-        "Compare Tate’s ending, and use it to say exactly what Shakespeare’s ending will not do."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Cordelia could have said something warm and true and kept her third of the kingdom. Why does she not?",
-    "The Fool disappears after the mock trial and is never mentioned again. What does the play gain by losing him there?",
-    "Edgar keeps his identity from his father for four acts. Is that kindness?",
-    "Gloucester says the gods kill us for their sport. Does the play agree with him?",
-    "Nahum Tate let Lear live for a hundred and fifty years of English theatre. What exactly does that version lose?"
-  ],
-  "related": [
-    {
-      "href": "/books/macbeth/",
-      "why": "Written within a year or two, and the other Jacobean tragedy in which a kingdom is described as a body that has gone wrong."
-    },
-    {
-      "href": "/books/hamlet/",
-      "why": "The earlier tragedy of a court that cannot tell performance from feeling, and a hero who checks what others simply believe."
-    },
-    {
-      "href": "/books/othello/",
-      "why": "Another play in which a credulous man is talked into destroying the person who loves him, and the machinery is entirely verbal."
-    },
-    {
-      "href": "/books/the-tempest/",
-      "why": "A later play about an old ruler, a daughter and the giving up of power, written as though the ending of Lear could be answered."
-    },
-    {
-      "href": "/books/king-lear-expanded-scholarly-edition/",
-      "why": "The expanded Astor edition, with fuller material on the quarto and Folio texts, criticism and stage history."
-    }
-  ],
-  "videos": [
-    {
-      "title": "The Making of King Lear with Simon Russell Beale | National Theatre",
-      "provider": "youtube-nocookie",
-      "id": "tnYInEJ1-v0",
-      "url": "https://www.youtube.com/watch?v=tnYInEJ1-v0",
-      "note": "Simon Russell Beale and director Sam Mendes describe how they built their production, including their thinking about Lear's age, power and mind.",
-      "source": "National Theatre"
-    },
-    {
-      "title": "Act 1 Scene 1 | King Lear | 2017 | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "D3gS2-D2ZH0",
-      "url": "https://www.youtube.com/watch?v=D3gS2-D2ZH0",
-      "note": "Part of the love test and the division of the kingdom from Gregory Doran's RSC production with Antony Sher, the scene from which everything else in the play follows.",
-      "source": "RSC Shakespeare Learning Zone"
-    },
-    {
-      "title": "'Everybody is Lear' | King Lear (2022) | Summer 2022 | Shakespeare's Globe",
-      "provider": "youtube-nocookie",
-      "id": "0ul7aS0Yc6w",
-      "url": "https://www.youtube.com/watch?v=0ul7aS0Yc6w",
-      "note": "Kathryn Hunter and the Globe company, filmed in rehearsal, reflect briefly on the play and on why Lear's journey into the storm is a common one.",
-      "source": "Shakespeare's Globe"
     }
   ]
 }

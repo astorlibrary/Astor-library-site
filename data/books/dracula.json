@@ -21,28 +21,6 @@
     "url": "https://standardebooks.org/ebooks/bram-stoker/dracula/text/single-page",
     "note": "The chapters are numbered but have no titles. Stoker’s characters date their entries by day and month and never give a year."
   },
-  "atAGlance": [
-    {
-      "label": "First published",
-      "value": "1897",
-      "note": "In London by Archibald Constable and Company, in yellow cloth with red lettering."
-    },
-    {
-      "label": "Form",
-      "value": "Documents only",
-      "note": "Journals in shorthand, letters, telegrams, a ship’s log, newspaper cuttings, a phonograph diary and a memorandum, with no outside narrator at any point."
-    },
-    {
-      "label": "Research",
-      "value": "Notes kept from about 1890",
-      "note": "Stoker’s working papers show the name and the Transylvanian setting arriving late, over an existing plan."
-    },
-    {
-      "label": "Shape",
-      "value": "Twenty-seven chapters and a closing note",
-      "note": "Roughly four in the castle, ten in England, and the rest a chase back the way Harker came."
-    }
-  ],
   "structure": [
     {
       "id": "castle",
@@ -173,11 +151,6 @@
       "summary": "He appears in person in perhaps a dozen scenes and is offstage for most of the book, which is why he works. He is a historian of his own family, a careful reader of Bradshaw and the Law List, and his invasion of England is carried out by conveyancing, shipping agents and carters.",
       "clue": "He studies English from books until his accent is perfect, buys a ruined estate by post, and packs fifty boxes of his own soil for the journey.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "patient",
-        "courteous",
-        "administratively thorough"
-      ],
       "relationships": [
         {
           "to": "jonathan",
@@ -225,11 +198,6 @@
       "summary": "He goes east to complete a purchase and keeps taking notes after the notes stop being professional: recipes, train times, then the fact that his host has no reflection. His shorthand journal is the document everything else is later measured against, and for four months nobody believes a word of it, including him.",
       "clue": "He notes down a paprika recipe for his fiancée, and is still keeping the same journal on the day he decides to climb down the castle wall.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "methodical",
-        "shaken",
-        "vindicated late"
-      ],
       "relationships": [
         {
           "to": "mina",
@@ -268,11 +236,6 @@
       "summary": "She learns shorthand and typewriting to be useful to her husband and ends up as the only person who can see the whole case, because she is the one who puts it in order. The men then decide to protect her by leaving her out, and every disaster in the second half follows from that decision.",
       "clue": "She practises stenography to help her fiancé, and it is her chronological typescript, more than anyone’s courage, that shows five men where the enemy has gone.",
       "firstAppearance": "Chapter V",
-      "traits": [
-        "organised",
-        "brave",
-        "excluded at the worst moment"
-      ],
       "relationships": [
         {
           "to": "jonathan",
@@ -321,11 +284,6 @@
       "summary": "She receives three proposals in one day and asks in a letter why a girl cannot marry three men. The novel then spends five chapters draining her, killing her, burying her and killing her again, and the second death is carried out by the man she was going to marry with the other two watching.",
       "clue": "Three men propose to her on the same day, and all three of them give her their blood before the year is out.",
       "firstAppearance": "Chapter V",
-      "traits": [
-        "warm",
-        "sleepwalking",
-        "transformed"
-      ],
       "relationships": [
         {
           "to": "mina",
@@ -370,11 +328,6 @@
       "summary": "He arrives with a diagnosis he will not state, which is a medical judgement and also a device for keeping the reader waiting. His English is wrong in a consistent and characterised way, and his argument against his own profession (that science wants to explain everything and dismisses whatever it cannot) is the book’s defence of its own plot.",
       "clue": "A Dutch doctor with several degrees and shaky English, who treats a wasting illness with garlic flowers and will not say why until he has been proved right.",
       "firstAppearance": "Chapter IX",
-      "traits": [
-        "learned",
-        "secretive",
-        "emotionally volatile"
-      ],
       "relationships": [
         {
           "to": "seward",
@@ -414,11 +367,6 @@
       "summary": "He dictates his diary onto wax cylinders, the most modern thing in the novel, and the reason nobody can search his account until Mina types it out. He is a careful clinician who keeps a man in a cell while failing entirely to hear what the man is telling him.",
       "clue": "He records his private grief on phonograph cylinders, and does not notice that the lunatic in his care is announcing the neighbour’s arrival.",
       "firstAppearance": "Chapter V",
-      "traits": [
-        "clinical",
-        "rejected suitor",
-        "slow to listen"
-      ],
       "relationships": [
         {
           "to": "van-helsing",
@@ -456,11 +404,6 @@
       "summary": "He eats flies, then feeds them to spiders, then the spiders to sparrows, and keeps a ledger of the lives he has accumulated. He is the only person in England who knows Dracula has arrived, and he is the only person nobody thinks to ask. He dies because he will not let his master in a second time.",
       "clue": "He keeps an account book of the flies, spiders and birds he has eaten, and is flung to the floor and killed for changing his mind about an invitation.",
       "firstAppearance": "Chapter V",
-      "traits": [
-        "zoophagous",
-        "lucid in bursts",
-        "disbelieved"
-      ],
       "relationships": [
         {
           "to": "seward",
@@ -497,11 +440,6 @@
       "summary": "He talks in a stage American that even the other characters notice, proposes to Lucy by asking her to go down the long road with him in double harness, and is the one who adds Winchesters to the party’s arms because the Count comes from wolf country. He dies in the snow below the castle at sunset, and the last child born to the group carries his name.",
       "clue": "The one American in the party, who answers a supernatural threat by buying rifles, and whose name is given to the child born on the anniversary of his death.",
       "firstAppearance": "Chapter V",
-      "traits": [
-        "direct",
-        "practical",
-        "expendable"
-      ],
       "relationships": [
         {
           "to": "lucy",
@@ -1260,121 +1198,6 @@
       "lat": 45.4353,
       "lon": 28.008,
       "note": "Where the box is transferred to a river launch, and the chase becomes a matter of maps and timetables."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "A novel about invasion and the foreign",
-      "summary": "The most established modern reading takes the Count’s careful, legal arrival (a purchase, a shipment, a change of address) as a late-Victorian anxiety about what might enter a confident empire through its own ports and offices.",
-      "counter": "It can make the book tidier than it is. The Count’s most effective allies are English professionals doing their jobs properly, and the novel is at least as interested in them."
-    },
-    {
-      "position": "A novel about women and desire",
-      "summary": "Criticism has long contrasted Lucy, whose appetite is punished in a tomb by the men who wanted her, with Mina, who is useful and is therefore shielded. The vocabulary Seward reaches for in the tomb scene is not medical, and the book’s own language keeps admitting it.",
-      "counter": "Mina is also the most capable person in the novel, and the turning point of the plot is her clerical work, and any account of Stoker’s women has to start there."
-    },
-    {
-      "position": "A novel about information",
-      "summary": "On this reading the subject is how a scattered group makes private records into shared knowledge. Nothing supernatural is defeated until the papers are copied and dated, and the closing note’s admission that no original survives is the book’s real last twist.",
-      "counter": "The approach can leave the horror out. The scenes readers remember are in a tomb and a bedroom; nobody remembers the typing room."
-    },
-    {
-      "position": "The Count as a figure who barely appears",
-      "summary": "Dracula speaks in only a handful of scenes and is absent from the middle of his own novel. Much of his power comes from being reconstructed out of other people’s documents, which is also why every adaptation has had to invent him.",
-      "counter": "The absence may be a limitation: Stoker’s notes show a good deal of material planned for the Count that never reached the page."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "What does Stoker gain by telling the whole novel in documents?",
-      "focus": "Form, dramatic irony and the closing note",
-      "plan": [
-        "Establish the range: shorthand journal, letters, telegrams, a ship’s log, cuttings, phonograph cylinders and a memorandum.",
-        "Show how the arrangement creates irony: the reader sees the Demeter’s log before anyone in England understands it.",
-        "Use Mina’s transcription in Chapter XIV as the hinge on which the plot turns.",
-        "Consider what the form costs: the Count can only be seen through people who fear or misunderstand him.",
-        "Close on the Note, where the survivors admit that hardly one of the papers is authentic."
-      ]
-    },
-    {
-      "question": "How does the novel treat Lucy and Mina differently, and why?",
-      "focus": "Women, desire and protection",
-      "plan": [
-        "Begin with Lucy’s letter about three proposals, and the novel’s response to the question she asks in it.",
-        "Trace the medical treatment of Lucy as a body acted on by four men in under a fortnight.",
-        "Read the tomb scene for its vocabulary more than its events.",
-        "Set against it Mina’s usefulness, and the Chapter XVIII decision to exclude her from the council.",
-        "Ask whether the ending restores Mina or simply certifies her, and on whose authority."
-      ]
-    },
-    {
-      "question": "’The most modern people in the novel are the least effective.’ Discuss.",
-      "focus": "Science, technology and Van Helsing’s method",
-      "plan": [
-        "Inventory the modern equipment: shorthand, typewriter, phonograph, telegrams, transfusion, timetables.",
-        "Show Seward’s clinical training producing a diagnosis that cannot include the evidence.",
-        "Use Van Helsing’s objection in Chapter XIV about what science does with the unexplained.",
-        "Point out that in the end the decisive tools are organisational.",
-        "Weigh the ending: the Count is destroyed by knives in the open air, after weeks of paperwork."
-      ]
-    },
-    {
-      "question": "How does Stoker create dread without showing very much?",
-      "focus": "Setting, absence and the Count’s brief appearances",
-      "plan": [
-        "Count the scenes in which Dracula is actually present, and note how few they are.",
-        "Examine the castle chapters for the technique of accumulating small impossibilities in a factual register.",
-        "Use the Demeter’s log as the clearest case of horror generated by an official document’s limits.",
-        "Follow the Gothic as it moves from a castle to an Essex estate, a Hampstead tomb and a Piccadilly drawing room.",
-        "Conclude with the effect on adaptation: everything visual about the Count has had to come from outside the book."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Renfield tells the truth for several chapters and nobody listens. What would it have cost Seward to take him seriously?",
-    "Mina is excluded from the council in order to protect her, and the exclusion is what exposes her. Is the novel aware of this?",
-    "Dracula appears in very few scenes. Does that make him more frightening or simply thinner?",
-    "The last page says the papers would convince nobody. Why end a documentary novel by discrediting its own documents?",
-    "Almost every screen Dracula comes from the 1924 play, and not from the book. What does the novel look like if you forget the cloak?"
-  ],
-  "related": [
-    {
-      "href": "/books/jekyll-and-hyde/",
-      "why": "The other late-Victorian horror assembled from professional documents, and the other one in which respectable men decline to ask the obvious question."
-    },
-    {
-      "href": "/books/frankenstein/",
-      "why": "The earlier novel built from letters and nested testimony, and the earlier monster who is described only by the people who fear him."
-    },
-    {
-      "href": "/books/the-woman-in-white/",
-      "why": "Collins’s method of narration by successive witnesses, which Stoker takes over almost intact and makes frightening."
-    },
-    {
-      "href": "/books/the-moonstone/",
-      "why": "The same documentary structure applied to a theft, and the source of the idea that each narrator should give evidence only within their own knowledge."
-    },
-    {
-      "href": "/books/dorian-gray/",
-      "why": "Published six years earlier, and the other 1890s novel about something in a locked room that must not be seen."
-    }
-  ],
-  "videos": [
-    {
-      "title": "How did Dracula become the world's most famous vampire? - Stanley Stepanic",
-      "provider": "youtube-nocookie",
-      "id": "7uiyz3139tE",
-      "url": "https://www.youtube.com/watch?v=7uiyz3139tE",
-      "note": "An animated TED-Ed lesson on how Stoker's Count became the best-known vampire in fiction.",
-      "source": "TED-Ed"
-    },
-    {
-      "title": "The Gothic",
-      "provider": "youtube-nocookie",
-      "id": "gNohDegnaOQ",
-      "url": "https://www.youtube.com/watch?v=gNohDegnaOQ",
-      "note": "A British Library film in which Professor John Bowen sets out the motifs of the Gothic novel.",
-      "source": "British Library"
     }
   ]
 }

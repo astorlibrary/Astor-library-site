@@ -21,28 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
     "note": "Other modern editions vary by a line or two. This text calls Ford’s disguise Brook, as the 1602 quarto does; the 1623 Folio calls him Broome."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1597–1601",
-      "note": "Many editors connect it with the Garter feast of April 1597; others date it a few years later."
-    },
-    {
-      "label": "First printed",
-      "value": "1602",
-      "note": "A short quarto; the fuller text is the First Folio’s of 1623."
-    },
-    {
-      "label": "Setting",
-      "value": "Windsor, now",
-      "note": "Shakespeare’s only comedy set in contemporary England, among townspeople."
-    },
-    {
-      "label": "Prose",
-      "value": "Mostly prose",
-      "note": "Verse is kept for the lovers and the fairy masque at Herne’s oak."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -178,12 +156,6 @@
       "summary": "Short of money, he decides to court two wives together for their husbands’ purses, and sends them the same letter. He is carried out in dirty laundry, thrown in the Thames, beaten as an old woman and pinched by children dressed as fairies, and every time he talks his way back to the next appointment. In the end he admits he has been made an ass and is invited home to supper by one of the husbands.",
       "clue": "He tells a stranger called Brook that he will cuckold Ford, not knowing he is talking to Ford.",
       "firstAppearance": "1.1",
-      "traits": [
-        "witty",
-        "greedy",
-        "vain",
-        "resilient"
-      ],
       "relationships": [
         {
           "to": "mistress-ford",
@@ -233,11 +205,6 @@
       "summary": "She receives Falstaff’s letter first, carries out the plots in her own house, and has to put up with her husband’s searches while she does it. Her jokes about Falstaff are the play’s sharpest, and she keeps the plan inside the limits of her honesty.",
       "clue": "She says she would be knighted if she would go to hell for an eternal moment or so.",
       "firstAppearance": "1.1",
-      "traits": [
-        "quick",
-        "honest",
-        "resourceful"
-      ],
       "relationships": [
         {
           "to": "mistress-page",
@@ -269,11 +236,6 @@
       "summary": "The leader of the plotting, and the author of its motto that wives may be merry and yet honest too. She runs in with false alarms, invents the disguise of the fat woman, and proposes the Herne’s oak masque. She also plans to marry her daughter to Doctor Caius behind her husband’s back, and is beaten by her daughter at her own game.",
       "clue": "She suspects the knight has a thousand of these letters, written with a blank space for the name.",
       "firstAppearance": "1.1",
-      "traits": [
-        "inventive",
-        "commanding",
-        "witty"
-      ],
       "relationships": [
         {
           "to": "anne",
@@ -304,11 +266,6 @@
       "summary": "Told by Pistol that Falstaff loves his wife, he disguises himself as Master Brook and pays Falstaff to seduce her, so as to catch her. He searches his house twice, finds nothing, beats an old woman who is Falstaff, and is made a laughing stock until his wife tells him the truth. He asks her pardon and joins the last plot.",
       "clue": "He thanks God for his jealousy, and turns out a basket of dirty washing on the one day it is empty.",
       "firstAppearance": "2.1",
-      "traits": [
-        "jealous",
-        "violent",
-        "penitent"
-      ],
       "relationships": [
         {
           "to": "page",
@@ -338,11 +295,6 @@
       "summary": "Confident in his wife, he laughs at Nym’s warning and at Ford’s searches. He wants his daughter to marry Slender, who has land, and turns Fenton away as too well born and too wild. He ends the play accepting the marriage he tried to prevent.",
       "clue": "He says he would turn his wife loose to the knight and let whatever he gets lie on his head.",
       "firstAppearance": "1.1",
-      "traits": [
-        "easy-going",
-        "trusting",
-        "stubborn"
-      ],
       "relationships": [
         {
           "to": "anne",
@@ -372,11 +324,6 @@
       "summary": "She says little, and every word counts. She sees exactly what three hundred pounds a year does for Slender’s faults, would rather be buried alive than marry Caius, and deceives both parents to marry Fenton, the man she has chosen.",
       "clue": "She agrees to wear white for her father’s man and green for her mother’s, and goes off with a third.",
       "firstAppearance": "1.1",
-      "traits": [
-        "clear-sighted",
-        "quiet",
-        "determined"
-      ],
       "relationships": [
         {
           "to": "fenton",
@@ -415,11 +362,6 @@
       "summary": "Page objects that he is too high born, that he has spent his money, and that he kept company with the wild Prince and Poins. He admits her father’s wealth was his first motive for wooing Anne, and says he found her worth more than money. He arranges their secret marriage through the Host.",
       "clue": "He tells Anne her father’s wealth was the first motive, and that he now aims at the riches of herself.",
       "firstAppearance": "1.4",
-      "traits": [
-        "honest",
-        "well-born",
-        "resourceful"
-      ],
       "relationships": [
         {
           "to": "anne",
@@ -448,11 +390,6 @@
       "summary": "A timid, foolish young man who wishes he had his book of songs and sonnets to woo with, tells Anne about the bear Sackerson, and says he will marry her if his uncle tells him to, hoping that love will decrease upon better acquaintance. He carries off a boy in white and marries him at Eton.",
       "clue": "He keeps but three men and a boy, till his mother be dead, and says love may decrease on better acquaintance.",
       "firstAppearance": "1.1",
-      "traits": [
-        "timid",
-        "foolish",
-        "obedient"
-      ],
       "relationships": [
         {
           "to": "shallow",
@@ -472,11 +409,6 @@
       "summary": "Hot-tempered and loud, he challenges the parson to a duel for helping Slender, waits for him in the wrong field, and then joins him in revenge on the Host. He carries off a boy in green and marries him at the deanery.",
       "clue": "He finds a stranger in his closet and calls for his rapier, and ends the play married to a boy.",
       "firstAppearance": "1.4",
-      "traits": [
-        "choleric",
-        "boastful",
-        "foreign"
-      ],
       "relationships": [
         {
           "to": "evans",
@@ -504,11 +436,6 @@
       "summary": "He tries to make peace between Shallow and Falstaff by a marriage, sings to steady his nerves before a duel, examines young William in Latin, teaches the children their fairy parts and plays a satyr at Herne’s oak. His Welsh English is mocked by everyone, and he gets the last word on Falstaff’s sins.",
       "clue": "He says he despises a liar as he despises one that is false, or one that is not true.",
       "firstAppearance": "1.1",
-      "traits": [
-        "pious",
-        "pedantic",
-        "good-hearted"
-      ],
       "relationships": [
         {
           "to": "caius",
@@ -535,11 +462,6 @@
       "summary": "She keeps the doctor’s house single-handed and promises all three of Anne’s suitors her help, taking Fenton’s money as she does so. She carries the wives’ messages to Falstaff and plays the Queen of the Fairies at the oak. She mishears William’s Latin as a string of rude words.",
       "clue": "She tells three different suitors she knows Anne’s mind, and means it every time.",
       "firstAppearance": "1.4",
-      "traits": [
-        "talkative",
-        "obliging",
-        "muddled"
-      ],
       "relationships": [
         {
           "to": "falstaff",
@@ -560,11 +482,6 @@
       "summary": "Loud and full of nicknames, bully rook and bully Hector among them, he takes on Bardolph as a tapster, arranges the duel and then sends the duellists to the wrong places, helps Ford become Brook and Fenton marry Anne, and loses three horses to men who say they are Germans.",
       "clue": "He calls a parson and a doctor soul-curer and body-curer, and is cozened of his horses.",
       "firstAppearance": "1.3",
-      "traits": [
-        "boisterous",
-        "meddling",
-        "good-natured"
-      ],
       "relationships": [
         {
           "to": "fenton",
@@ -583,11 +500,6 @@
       "summary": "The same old justice as in Henry IV Part 2, here come to Windsor to complain of Falstaff and to marry his cousin to money. He says he has lived fourscore years and upward.",
       "clue": "He threatens to make a Star Chamber matter of a poached deer.",
       "firstAppearance": "1.1",
-      "traits": [
-        "old",
-        "fussy",
-        "litigious"
-      ],
       "relationships": [
         {
           "to": "falstaff",
@@ -606,11 +518,6 @@
       "summary": "He refuses to carry the love letter, tells Ford that Falstaff loves his wife, and later plays Hobgoblin in the fairy masque.",
       "clue": "He says the world is his oyster, which he with sword will open.",
       "firstAppearance": "1.1",
-      "traits": [
-        "bombastic",
-        "vengeful",
-        "comic"
-      ],
       "relationships": [
         {
           "to": "ford",
@@ -1227,84 +1134,5 @@
       "lon": -0.309,
       "note": "Home of the fat woman whose gown Falstaff wears."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "A comedy of the citizens",
-      "summary": "Set among townspeople’s households, the play gives the victory to the town, and above all to the wives, who defend their reputations with wit and a laundry basket.",
-      "counter": "The last scene includes a blessing on Windsor Castle and the Order of the Garter, so the play also flatters the court it seems to leave behind."
-    },
-    {
-      "position": "Not the real Falstaff",
-      "summary": "Many critics have felt that this Falstaff, gulled three times, is a lesser figure than the Falstaff of Henry IV, who is never outwitted for long.",
-      "counter": "Verdi and many modern productions have made the play’s Falstaff a great comic role in his own right, and his wit survives every humiliation."
-    },
-    {
-      "position": "The wives’ comedy",
-      "summary": "Mistress Ford and Mistress Page plan and carry out every trick, cure a husband’s jealousy and keep their honesty. They are among the most capable women in Shakespeare’s comedies.",
-      "counter": "Their power has limits: Mistress Page’s own plan for her daughter fails, and the play’s last marriage is arranged by the young couple and the Host."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Shakespeare present the wives of Windsor?",
-      "focus": "Mistress Ford and Mistress Page",
-      "plan": [
-        "Start with the comparison of the letters in 2.1 and the decision to be revenged.",
-        "Examine the three tricks and who plans each one.",
-        "Consider ‘Wives may be merry and yet honest too’ as the play’s defence of them.",
-        "Weigh Mistress Page’s failed plan for Anne.",
-        "Conclude on how far the play gives the wives control."
-      ]
-    },
-    {
-      "question": "How is jealousy dramatised through Ford?",
-      "focus": "Ford and Page",
-      "plan": [
-        "Contrast Ford’s and Page’s reactions to the same warning.",
-        "Analyse the Brook scenes and Ford’s soliloquies.",
-        "Look at the two searches and the beating of the old woman.",
-        "Examine his apology in 4.4.",
-        "Conclude on whether the play treats jealousy as a comic or a serious fault."
-      ]
-    },
-    {
-      "question": "What part does money play in love and marriage in the play?",
-      "focus": "Falstaff, Anne and her suitors",
-      "plan": [
-        "Begin with Falstaff’s plan to court the wives’ purses.",
-        "Compare the three suitors and why each parent chooses one.",
-        "Analyse Anne’s couplet on three hundred pounds a year and Fenton’s admission.",
-        "Consider Ford’s closing couplet.",
-        "Conclude on the play’s final view of money and love."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Does Falstaff deserve all three punishments?",
-    "Why does Ford disguise himself as Brook instead of simply watching his wife?",
-    "Is Page a good husband and a bad father?",
-    "Anne hardly speaks. How does the play still make her the winner?",
-    "Why do so many characters in this play speak English badly?",
-    "Is the ending, with Falstaff invited to supper, a fair one?"
-  ],
-  "related": [
-    {
-      "href": "/books/henry-iv-part-1/",
-      "why": "Falstaff at his best, with Hal at the Boar’s Head."
-    },
-    {
-      "href": "/books/henry-iv-part-2/",
-      "why": "Falstaff, Shallow, Pistol and Mistress Quickly before Windsor."
-    },
-    {
-      "href": "/books/twelfth-night/",
-      "why": "Another comedy of disguise and a gulled would-be lover."
-    },
-    {
-      "href": "/books/much-ado-about-nothing/",
-      "why": "Another comedy in which a jealous man is fooled and a marriage is at stake."
-    }
-  ],
-  "videos": []
+  ]
 }

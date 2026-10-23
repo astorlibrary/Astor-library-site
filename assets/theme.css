@@ -170,7 +170,7 @@ html[data-theme="light"] {
   }
 
   html[data-theme="dark"] body {
-    background: linear-gradient(180deg, #1e1a16 0%, #1b1714 55%, #171310 100%);
+    background: var(--surface-paper);
   }
 
   /* Seasonal pages keep their night heroes, ribbons and art untouched. Only the

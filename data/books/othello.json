@@ -25,28 +25,6 @@
     "url": "https://shakespeare.mit.edu/othello/full.html",
     "note": "The Astor edition prints a conflated text. The 1622 quarto and the 1623 Folio differ in oaths, stage directions and several substantial passages. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
-  "atAGlance": [
-    {
-      "label": "First recorded performance",
-      "value": "1 November 1604",
-      "note": "The Revels accounts record a play of the Moor of Venice at Whitehall."
-    },
-    {
-      "label": "First printed",
-      "value": "1622",
-      "note": "A quarto printed by Nicholas Okes for Thomas Walkley, nearly twenty years after the court record."
-    },
-    {
-      "label": "Source",
-      "value": "Cinthio’s Hecatommithi",
-      "note": "An Italian prose tale supplies the Moor, the ensign, the wife and the handkerchief; Shakespeare supplies the names and the motives."
-    },
-    {
-      "label": "Shape",
-      "value": "Five acts, fifteen scenes",
-      "note": "One act in Venice, four on an island, and a single scene, 3.3, in which the whole tragedy is arranged."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -172,11 +150,6 @@
       "summary": "Indispensable to the state and never fully part of it, he is the most controlled speaker in the play until the middle of Act III and one of the least controlled afterwards. He is not credulous in general (his answer to Brabantio before the senate is calm and persuasive); what destroys him is a standard of proof that he hands over to somebody else.",
       "clue": "He answers a charge of witchcraft with a story about his life, and later demands to be shown something he can see.",
       "firstAppearance": "1.2",
-      "traits": [
-        "commanding",
-        "formal",
-        "catastrophically trusting"
-      ],
       "relationships": [
         {
           "to": "desdemona",
@@ -214,11 +187,6 @@
       "summary": "She marries against her father, argues her own case before the Senate, and then finds that every quality she showed in Act I is used against her: constancy becomes persistence, generosity becomes appetite. Her worst mistake is a piece of ordinary decency: pressing Cassio’s suit because she believes he has been wronged.",
       "clue": "She defends her own marriage before the Venetian Senate, and with her last breath says nobody killed her.",
       "firstAppearance": "1.3",
-      "traits": [
-        "direct",
-        "persistent",
-        "generous"
-      ],
       "relationships": [
         {
           "to": "othello",
@@ -259,11 +227,6 @@
       "summary": "He gives more reasons for what he does than any other Shakespearean villain and none of them holds: the promotion, the rumour about Emilia, the claim that he too loves Desdemona. What is consistent is method. He almost never lies outright; he times, he hesitates, he declines to say things, and lets other people finish his sentences for him.",
       "clue": "He is called honest by nearly everyone in the play, and his last decision is to stop speaking.",
       "firstAppearance": "1.1",
-      "traits": [
-        "improvising",
-        "patient",
-        "unaccountable"
-      ],
       "relationships": [
         {
           "to": "othello",
@@ -304,11 +267,6 @@
       "summary": "She hands her husband the handkerchief without asking why, and spends the last act making up for it. Her long speech in 4.3 is the only sustained argument in the play against the sexual double standard, and it is spoken by a woman who has been married to Iago for years and has clearly learned it from him.",
       "clue": "She picks up a handkerchief to please her husband, and later tells the truth about it knowing what he will do.",
       "firstAppearance": "2.1",
-      "traits": [
-        "worldly",
-        "complicit",
-        "finally immovable"
-      ],
       "relationships": [
         {
           "to": "iago",
@@ -341,11 +299,6 @@
       "summary": "Promoted over Iago’s head and entirely unequipped to survive him. He cannot drink, he is courteous to women in a way that can be made to look like something else, and his idea of a disaster is the loss of a reputation. The play never suggests he has done anything wrong, which is why the plot works.",
       "clue": "One cup of wine costs him his commission, and he then asks the general’s wife to get it back.",
       "firstAppearance": "1.2",
-      "traits": [
-        "courteous",
-        "susceptible",
-        "career-minded"
-      ],
       "relationships": [
         {
           "to": "othello",
@@ -383,11 +336,6 @@
       "summary": "Iago’s purse and his rehearsal space. Every technique used on Othello is tried first on Roderigo, who is told to sell his land, follow the wars and wait, and does. He is the only character who accuses Iago to his face before Act V, and he is killed in the dark for it.",
       "clue": "Told to put money in his purse, he sells his land, follows an army he has no business with and is stabbed by the man who advised him.",
       "firstAppearance": "1.1",
-      "traits": [
-        "gullible",
-        "persistent",
-        "expendable"
-      ],
       "relationships": [
         {
           "to": "iago",
@@ -416,11 +364,6 @@
       "summary": "He has entertained Othello at his house for years and still cannot imagine his daughter choosing him, so he reaches for witchcraft. Defeated in the Senate, he leaves with a warning that Iago will be quoting in effect for the rest of the play: a daughter who deceived her father may deceive a husband.",
       "clue": "He calls a general a thief and a sorcerer in front of the Senate, then hands over a daughter he says has already deceived him.",
       "firstAppearance": "1.1",
-      "traits": [
-        "proud",
-        "wounded",
-        "prophetic by accident"
-      ],
       "relationships": [
         {
           "to": "desdemona",
@@ -447,11 +390,6 @@
       "summary": "She is given the handkerchief to copy, brings it back in a jealous temper, and thereby supplies the visible object Othello has been demanding. The play lets her be openly in love and openly angry, and then uses her reputation to discredit her in front of the men who need a witness.",
       "clue": "Asked to take out the work on a piece of embroidery, she throws it back in the street at exactly the wrong moment.",
       "firstAppearance": "3.4",
-      "traits": [
-        "candid",
-        "jealous",
-        "dismissed"
-      ],
       "relationships": [
         {
           "to": "cassio",
@@ -1216,124 +1154,6 @@
       "lat": 51.5044,
       "lon": -0.1264,
       "note": "Where the earliest recorded performance took place, on 1 November 1604."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "A domestic tragedy",
-      "summary": "The reading that stresses scale: no state falls, no succession is disputed, and the catastrophe happens in a bedroom, among the people of one general’s household. On this account the play’s power comes from its ordinariness.",
-      "counter": "It underplays Act I. The marriage is tried before a senate, and Othello’s standing as an outsider indispensable to Venice is the condition of everything that follows."
-    },
-    {
-      "position": "A play about race",
-      "summary": "Criticism and performance since the mid-twentieth century have put the play’s racial language at the centre: Iago’s plot succeeds because the society around him already supplies the terms, and Othello’s isolation comes from his position in Venice.",
-      "counter": "The difficulty is the play’s own vocabulary, which productions cannot simply endorse; casting and staging decisions do at least as much interpretive work as the text."
-    },
-    {
-      "position": "Iago’s motive as the play’s real problem",
-      "summary": "He offers promotion, a rumour about Emilia and a claimed desire for Desdemona, and drops each in turn. One tradition takes the incoherence as characterisation, a man who improvises his reasons afterwards; another takes it as evidence of a figure closer to allegory than to psychology.",
-      "counter": "Both readings have to account for 5.2, where Iago will not speak at all: the play withholds the answer, and offers no competing ones."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "What actually persuades Othello?",
-      "focus": "Proof, evidence and the handkerchief",
-      "plan": [
-        "List what Iago produces across 3.3: hesitation, a refusal to speak, a recollection of Brabantio’s warning, and a dream he says he overheard.",
-        "Show that the demand for ocular proof in 3.3 marks the point at which Othello has already conceded the charge.",
-        "Track the handkerchief through 3.3, 3.4 and 4.1 and note that when Desdemona asks Emilia where it is, Emilia says she does not know.",
-        "Analyse 4.1 as theatre: Othello is given a scene to watch with the sound arranged and the subject changed.",
-        "Conclude with 5.2, where Emilia dismantles four acts of evidence with one fact about who found the cloth."
-      ]
-    },
-    {
-      "question": "How does Shakespeare present Iago?",
-      "focus": "Motive, method and the audience’s complicity",
-      "plan": [
-        "Separate his stated motives (the lieutenancy, the rumour about Emilia, his own claimed desire) and note where each is dropped.",
-        "Examine method instead: timing, withholding, letting other people complete his sentences, and saving outright lies, like Cassio’s dream, for the moments that need them.",
-        "Use the soliloquies to show how the play makes the audience his confidant, and what that does to our position as watchers.",
-        "Consider the word ‘honest’ as the play’s most sustained piece of dramatic irony.",
-        "Close on his silence in 5.2 and what it denies the audience."
-      ]
-    },
-    {
-      "question": "Discuss the presentation of women in Othello.",
-      "focus": "Desdemona, Emilia and Bianca",
-      "plan": [
-        "Begin with Desdemona’s speech to the Senate in 1.3: a woman arguing her own case in public, and winning it.",
-        "Trace how the same qualities are reinterpreted: her advocacy for Cassio becomes persistence, her warmth becomes appetite.",
-        "Read 4.3 as the play’s one long scene of women talking to each other, and weigh Emilia’s argument on its own terms.",
-        "Use Bianca to test the play’s social range: she is candid, in love, and dismissed because of what she is assumed to be.",
-        "Assess the ending: Emilia’s testimony is decisive, and both women are killed soon after speaking plainly."
-      ]
-    },
-    {
-      "question": "‘Othello is destroyed by Venice, not by Iago.’ Discuss.",
-      "focus": "Race, service and the state",
-      "plan": [
-        "Set out Othello’s position in Act I: indispensable in war, and put on trial for a marriage.",
-        "The play’s most violent racial language is spoken before Othello appears, and by more than one character.",
-        "Examine 3.3, where Othello reaches for Brabantio’s warning and for his own difference as explanations.",
-        "Consider Cyprus: an outpost with no war left to fight, where Venetian authority is present only as an envoy with a letter.",
-        "Weigh the counter-case: Iago’s plot requires particular people in particular rooms, and works on Roderigo and Cassio too."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Iago gives at least three reasons for what he does. Does the play want us to believe any of them?",
-    "Desdemona’s last words blame nobody. Is that a final act of love or a final silencing?",
-    "The Turkish fleet is destroyed offstage before the second act begins. Why does Shakespeare cancel the war?",
-    "Emilia hands over the handkerchief without asking why. How far does the play hold her responsible?",
-    "Othello’s last speech arranges how he will be remembered. Should we let him?"
-  ],
-  "related": [
-    {
-      "href": "/books/hamlet/",
-      "why": "The tragedy immediately before it, and the opposite problem: a hero who will not act until the evidence is sound."
-    },
-    {
-      "href": "/books/king-lear/",
-      "why": "Another play in which a credulous man destroys the person who loves him on the strength of a fabrication."
-    },
-    {
-      "href": "/books/macbeth/",
-      "why": "The other tragedy in which a marriage is the engine of the plot, and in which one partner talks the other into it."
-    },
-    {
-      "href": "/books/the-merchant-of-venice/",
-      "why": "The same city, and the same question about who Venice will use and who it will accept."
-    },
-    {
-      "href": "/books/othello-expanded-scholarly-edition/",
-      "why": "The expanded Astor edition, with fuller material on the quarto and Folio texts, criticism and stage history."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Representations of Race | Othello | National Theatre",
-      "provider": "youtube-nocookie",
-      "id": "7KkdBNETIOM",
-      "url": "https://www.youtube.com/watch?v=7KkdBNETIOM",
-      "note": "Two scholars and the actor Adrian Lester compare four National Theatre productions from 1964 to 2013 and how each handled race and the character of Othello.",
-      "source": "National Theatre"
-    },
-    {
-      "title": "Othello and Iago | Othello | National Theatre",
-      "provider": "youtube-nocookie",
-      "id": "jyoCIwJn9Ic",
-      "url": "https://www.youtube.com/watch?v=jyoCIwJn9Ic",
-      "note": "Adrian Lester and Rory Kinnear talk through the relationship at the centre of the tragedy and why Othello trusts the man who destroys him.",
-      "source": "National Theatre"
-    },
-    {
-      "title": "Exploring Act 5 Scene 2 | Othello | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "TLPZf6SjCMo",
-      "url": "https://www.youtube.com/watch?v=TLPZf6SjCMo",
-      "note": "Hugh Quarshie and Joanna Vanderham explore the final scene with Iqbal Khan, director of the RSC's 2015 production.",
-      "source": "RSC Shakespeare Learning Zone"
     }
   ]
 }

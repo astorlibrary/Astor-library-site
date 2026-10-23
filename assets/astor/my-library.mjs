@@ -219,8 +219,6 @@ function renderPlans() {
         : next.label + ', about ' + next.minutes + ' minutes. ' + summary.done + ' of ' + summary.total + ' sittings done' +
           (summary.overdue ? ', ' + summary.overdue + ' behind.' : '.') }),
       el('small', {}, [
-        el('a', { href: plan.href + '#astor-revise', text: 'Open the plan \u2192' }),
-        ' \u00b7 ',
         el('button', { class: 'astor-link-button', type: 'button', text: 'Remove', onclick: () => { removePlan(plan.slug); renderPlans(); } })
       ])
     ]);

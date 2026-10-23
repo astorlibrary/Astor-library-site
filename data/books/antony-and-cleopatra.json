@@ -22,28 +22,6 @@
     "url": "https://shakespeare.mit.edu/cleopatra/full.html",
     "note": "Some modern editions divide the short battle scenes differently."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1606–07",
-      "note": "Close in date to King Lear and Macbeth, and to Shakespeare’s other Plutarch play, Coriolanus."
-    },
-    {
-      "label": "First printed",
-      "value": "1623",
-      "note": "No quarto survives. The play was entered in the Stationers’ Register in 1608, but the Folio is the only early text."
-    },
-    {
-      "label": "Chief source",
-      "value": "Plutarch’s Life of Antony",
-      "note": "In Thomas North’s English translation of 1579, which Shakespeare follows closely enough that whole phrases survive into the verse."
-    },
-    {
-      "label": "Shape",
-      "value": "Five acts, forty-two scenes",
-      "note": "Act III alone changes location thirteen times; several scenes are under twenty lines long."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -304,11 +282,6 @@
       "summary": "A soldier whose reputation is largely made of other people’s memories of him, and who keeps being asked to live up to a version of himself that is already historical. He is generous, careless and consistently late, and the play’s tenderness towards him comes from watching a man lose the shape he is supposed to hold.",
       "clue": "He rules a third of the world and answers a summons from it with a shrug; he dies asking for wine and permission to speak a little.",
       "firstAppearance": "1.1",
-      "traits": [
-        "open-handed",
-        "self-dramatising",
-        "unable to hold one shape"
-      ],
       "relationships": [
         {
           "to": "cleopatra",
@@ -349,11 +322,6 @@
       "summary": "She is never off duty: every mood is real and also calculated, and Shakespeare never separates the two. Romans put her political intelligence down to caprice, because they cannot see that testing a messenger, staging a faint and declining a triumph are all the same skill.",
       "clue": "She beats the bringer of bad news, then asks him to describe her rival’s height; at the end she dresses for a coronation to meet a snake.",
       "firstAppearance": "1.1",
-      "traits": [
-        "quick",
-        "theatrical",
-        "politically exact"
-      ],
       "relationships": [
         {
           "to": "antony",
@@ -383,11 +351,6 @@
       "summary": "Young, dry and entirely without appetite, he wins because he is the only person in the play who never mistakes a gesture for an achievement. Shakespeare gives him no soliloquy at all, so the audience is never invited inside a mind that runs the world.",
       "clue": "He drinks reluctantly, weeps on cue for a dead rival, and wants the queen alive mainly so that she can walk behind his chariot.",
       "firstAppearance": "1.4",
-      "traits": [
-        "patient",
-        "unimaginative",
-        "always ahead"
-      ],
       "relationships": [
         {
           "to": "antony",
@@ -417,11 +380,6 @@
       "summary": "He talks to the audience in prose, sees through everyone including himself, and produces the one speech in the play that makes Cleopatra indisputable. His defection is a reasoned decision that kills him, which is the play’s sharpest comment on reason.",
       "clue": "He tells Rome about a burnished barge, calculates that loyalty to a falling lord is folly, acts on the calculation and dies of it in a ditch.",
       "firstAppearance": "1.2",
-      "traits": [
-        "sardonic",
-        "clear-eyed",
-        "undone by being right"
-      ],
       "relationships": [
         {
           "to": "antony",
@@ -445,10 +403,6 @@
       "summary": "A treaty in human form, and the play knows it: she is praised for holy, cold and still conversation by men deciding what to do with her. Her few speeches are attempts to be a person in an arrangement that needs her not to be.",
       "clue": "Her marriage is the whole of the peace, and when she asks to travel between her brother and her husband she is really asking not to be the reason for a war.",
       "firstAppearance": "2.3",
-      "traits": [
-        "dutiful",
-        "used"
-      ],
       "relationships": [
         {
           "to": "octavius-caesar",
@@ -473,10 +427,6 @@
       "summary": "She jokes with a soothsayer in the second scene and closes the queen’s eyes in the last, and the play gives her the final judgement on Cleopatra’s life. Straightening the crown on a dead woman’s head before dying herself is the only stage direction the ending needs.",
       "clue": "She asks a fortune-teller to let her marry three kings in a forenoon, and ends by mending her mistress’s crown and following her.",
       "firstAppearance": "1.2",
-      "traits": [
-        "witty",
-        "loyal to the last gesture"
-      ],
       "relationships": [
         {
           "to": "cleopatra",
@@ -492,10 +442,6 @@
       "summary": "He has the strongest navy and the weakest stomach for what winning would require. Offered the world by a pirate who only needs permission to cut a rope, he explains that the deed would have been honourable if he had not been told about it.",
       "clue": "He is master of the sea and loses it by turning down an offer he would have taken if nobody had asked him first.",
       "firstAppearance": "2.1",
-      "traits": [
-        "well-placed",
-        "scrupulous at the wrong moment"
-      ],
       "relationships": [
         {
           "to": "octavius-caesar",
@@ -522,10 +468,6 @@
       "summary": "His job is to agree with whoever is speaking and to keep begging the others not to quarrel. He is carried drunk off Pompey’s galley and deposed offstage a few scenes later, which is how the play measures the value of a share in power without the means to defend it.",
       "clue": "A third of the world is his; he spends his best scene asking what sort of thing a crocodile is, and is carried off the boat asleep.",
       "firstAppearance": "1.4",
-      "traits": [
-        "conciliatory",
-        "expendable"
-      ],
       "relationships": [
         {
           "to": "octavius-caesar",
@@ -1298,129 +1240,6 @@
       "lat": 36.9177,
       "lon": 34.8936,
       "note": "On the river Cydnus, where Enobarbus places the barge and the first meeting."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "A tragedy of the world well lost",
-      "summary": "The reading that takes the lovers at their own valuation: the Roman world is small, the love is large, and Cleopatra’s last act converts political defeat into something Caesar cannot touch.",
-      "counter": "It has to look past Actium, the whipping of Thidias and the desertion of the Egyptian fleet, all of which Shakespeare puts on stage."
-    },
-    {
-      "position": "A political play about the making of an emperor",
-      "summary": "On this account the subject is Caesar’s patient assembly of sole rule, with Antony as the last obstacle and Egypt as the pretext; the love story is the material out of which a founding myth of empire is built.",
-      "counter": "Shakespeare gives Caesar no soliloquy and the lovers almost all the poetry, which is a strange way to write a play about the winner."
-    },
-    {
-      "position": "A play about how reputation is manufactured",
-      "summary": "Recent criticism has concentrated on report, rumour and messengers: nearly every major event reaches us through someone with an interest in how it is described, and the last act is an open contest over who narrates the dead.",
-      "counter": "Pressed too far, it makes the play sound sceptical about everything, when Antony’s physical death and Enobarbus’s are given no gloss at all."
-    },
-    {
-      "position": "Cleopatra and the limits of the Roman categories",
-      "summary": "Feminist and postcolonial readings have examined how consistently Rome describes Egypt in terms of appetite, softness and race, and how far the play endorses that vocabulary or exposes it as a governing tool.",
-      "counter": "The play also gives Cleopatra the theatrical extravagance the Roman case predicts, so the critique and the caricature are made from the same material."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How far does the play invite us to accept Rome’s judgement of Egypt?",
-      "focus": "Rome, Egypt and the reliability of the speaker",
-      "plan": [
-        "Start with the fact that Philo’s verdict comes before any action: the audience is given a reading before it is given evidence.",
-        "Set Caesar’s dispatch in 1.4 beside Enobarbus’s barge speech in 2.2 and ask what each speaker needs his description to achieve.",
-        "Show how Roman self-presentation is also theatre, using the galley scene at Misenum and Caesar’s management of Octavia.",
-        "Test the opposition against Act IV, where Antony’s Roman death fails and Cleopatra’s Egyptian one succeeds.",
-        "Conclude on 5.2: Caesar’s final speech adopts the lovers’ scale, which suggests the Roman categories have not held."
-      ]
-    },
-    {
-      "question": "Discuss Shakespeare’s presentation of Cleopatra.",
-      "focus": "Performance, politics and the last act",
-      "plan": [
-        "Begin with 2.5 and 3.3, where testing a messenger is shown to be a method.",
-        "Use Enobarbus in 2.2 to establish that her theatricality is recognised by Rome as a political force.",
-        "Examine Actium and its aftermath as the point where her judgement is most open to attack.",
-        "Read 5.2 as a scene she constructs: the false account of her treasure, the dream of Antony, the robe and crown.",
-        "Weigh two conclusions: a woman who finally achieves dignity, or one who has been managing her own image throughout."
-      ]
-    },
-    {
-      "question": "What does the play gain from being written in so many short scenes?",
-      "focus": "Structure, pace and political space",
-      "plan": [
-        "Count the shape: forty-two scenes, thirteen of them in Act III, some under twenty lines.",
-        "Take Actium as the case study: four scenes, no fighting shown, the disaster reported by witnesses.",
-        "Show how juxtaposition does the arguing: a Roman judgement is answered by the next Egyptian scene before the audience can settle it.",
-        "Consider the cost as well as the gain, including how little sustained interiority any character is allowed.",
-        "Close on the two long scenes that break the pattern, 2.2 and 5.2, and ask why those are the ones given room."
-      ]
-    },
-    {
-      "question": "‘The tragedy of Enobarbus.’ How useful is that description of the play?",
-      "focus": "Loyalty and judgement",
-      "plan": [
-        "Establish his function: prose, asides, jokes and the running assessment of his own commander.",
-        "Trace his reasoning from 3.13, where honesty and he begin to square, to the decision itself.",
-        "Set Antony’s response, sending the treasure after him, against the logic that produced the desertion.",
-        "Read 4.9 closely: he asks the world to record him in two words and offers no defence.",
-        "Decide whether his death is a sub-plot, a commentary on the main action, or the play’s clearest verdict on measuring loyalty by prospects."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Almost every major event reaches us as a report. Does that make the play sceptical, or simply realistic about how politics works?",
-    "Caesar is given no soliloquy at all. What does Shakespeare gain by keeping the winner’s mind closed to us?",
-    "Antony’s death takes two scenes and goes wrong; Cleopatra’s is quick and beautifully staged. What is the play saying by the contrast?",
-    "Cleopatra fears a squeaking boy actor more than she fears dying. What does that tell us about what she thinks is at stake?",
-    "Is Octavia a character or an instrument? Does the play notice the difference?"
-  ],
-  "related": [
-    {
-      "href": "/books/julius-caesar/",
-      "why": "The same Plutarch and the same Antony, seven years earlier and considerably more in control of a crowd."
-    },
-    {
-      "href": "/books/coriolanus/",
-      "why": "Shakespeare’s other late Roman play from North, and the opposite temperament: a man who cannot perform at all."
-    },
-    {
-      "href": "/books/macbeth/",
-      "why": "Written within a year or two, and the contrast is instructive: one tragedy of terrible speed, one of enormous distances."
-    },
-    {
-      "href": "/books/romeo-and-juliet/",
-      "why": "The other play in which lovers die by their own hands in a monument, but at the beginning of a career and with none of the politics."
-    },
-    {
-      "href": "/books/cymbeline/",
-      "why": "Rome and a queen again, in the late mode where the tragic material is allowed to turn out otherwise."
-    }
-  ],
-  "videos": [
-    {
-      "title": "‘The barge she sat in’ speech in rehearsals | Act II, scene 2 | Antony & Cleopatra | Summer 2024",
-      "provider": "youtube-nocookie",
-      "id": "Oc9v0pO2ag8",
-      "url": "https://www.youtube.com/watch?v=Oc9v0pO2ag8",
-      "note": "Enobarbus's description of Cleopatra, worked through in rehearsal at the Globe.",
-      "source": "Shakespeare's Globe"
-    },
-    {
-      "title": "Antony and Cleopatra | Act 1, Scene 3 | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "M0B1xgqAdkM",
-      "url": "https://www.youtube.com/watch?v=M0B1xgqAdkM",
-      "note": "The Royal Shakespeare Company play the lovers' parting in Egypt.",
-      "source": "Royal Shakespeare Company"
-    },
-    {
-      "title": "Act 1 Scene 3 Antony & Cleopatra | ‘Eternity was in our lips and eyes’ | National Theatre at Home",
-      "provider": "youtube-nocookie",
-      "id": "P8tNcjK4pGc",
-      "url": "https://www.youtube.com/watch?v=P8tNcjK4pGc",
-      "note": "The National Theatre's staging of the same early scene, for comparison.",
-      "source": "National Theatre"
     }
   ]
 }

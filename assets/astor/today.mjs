@@ -1,211 +1,160 @@
-// Astor today: five questions, the same for everyone, then a passage for the
-// day, a title for the day and an anniversary the current year carries.
-//
-// Everything is chosen from the date itself. Two readers on opposite sides of
-// the world run the same arithmetic on the same string and see the same five
-// questions, with no server deciding anything and nothing recorded off the
-// device.
+// Astor Today: five questions on literature, the same for everyone, one at a
+// time. Each question has a hint for anyone who wants it, and every answer is
+// followed by a short explanation. The questions are written and checked by
+// hand (assets/today-questions.json); today-pick.mjs chooses the day's five.
 
-import { el, clear, seededRandom, hashString, pick, formatDate } from './util.mjs';
-import { loadIndex, allQuotations } from './data.mjs';
-import { dailyRound, resultGrid, dailyPassage } from './questions.mjs';
-import { QuizRound, emptyState, kindOf, completion, celebrate } from './quiz-round.mjs';
-import { today, dailyResult, recordDaily, streak, isRemembering, dailyHistory } from './store.mjs';
-import { loadShelf, coverImage, drawing, clip, shortTitle } from './revise-kit.mjs';
+import { el, clear, announce, fetchJson } from './util.mjs';
+import { today, dailyResult, recordDaily, isRemembering } from './store.mjs';
+import { questionsFor, shareGrid, PER_DAY } from './today-pick.mjs';
 
 const head = document.querySelector('#astor-today-head');
-const strip = document.querySelector('#astor-daily-strip');
-const gameMount = document.querySelector('#astor-daily-game');
+const mount = document.querySelector('#astor-daily-game');
+const LETTERS = ['A', 'B', 'C', 'D'];
 
-const KIND_NAMES = { who: 'Who said it?', book: 'Which book?', theme: 'Theme match', cloze: 'Fill the line', context: 'Which year?', character: 'Who is this?', technique: 'Technique', opening: 'Opening lines' };
-const KIND_ICONS = { who: 'who-said-it', book: 'which-book', theme: 'theme-match', cloze: 'fill-the-line', context: 'context-sprint', character: 'character-identification', technique: 'technique-spotter', opening: 'opening-lines' };
-
-let shelf = { books: [], icons: {} };
-
-if (strip && gameMount) start();
+if (mount) start();
 
 async function start() {
-  let index;
-  try {
-    [index, shelf] = await Promise.all([loadIndex(), loadShelf().catch(() => shelf)]);
-  } catch {
-    strip.remove();
-    return emptyState(gameMount, 'Today’s questions didn’t load. Try reloading the page, or read a close reading in the Passage Room.', [
-      { href: '/passage-room/', label: 'Open the Passage Room' }
-    ]);
-  }
-
   const day = today();
-  renderHead(day);
-  renderPuzzle(index, day);
-  renderStrip(index, day);
+  renderHead();
+  let bank;
+  try {
+    bank = await fetchJson('/assets/today-questions.json');
+  } catch {
+    clear(mount);
+    mount.append(el('p', { class: 'today-empty', text: 'Today’s questions didn’t load. Check your connection and reload the page.' }));
+    return;
+  }
+  const questions = questionsFor(bank.questions, day);
+  if (!questions.length) return;
+  const done = dailyResult(day);
+  if (done && Array.isArray(done.picks) && done.picks.length === questions.length) return renderEnd(questions, done, day);
+  play(questions, day);
 }
 
-function renderHead(day) {
+function renderHead() {
   if (!head) return;
   clear(head);
   const now = new Date();
-  const run = streak();
-  head.append(el('div', { class: 'rx-almanac' }, [
-    el('p', { class: 'rx-almanac-kicker', text: 'Astor today' }),
-    el('h1', { class: 'rx-almanac-date' }, [
-      el('span', { class: 'rx-almanac-day', text: now.toLocaleDateString('en-GB', { weekday: 'long' }) }),
-      el('span', { text: now.toLocaleDateString('en-GB', { day: 'numeric', month: 'long' }) })
-    ]),
-    el('p', { class: 'rx-almanac-deck', text: 'Five questions, the same for everyone today.' }),
-    run.live && run.current >= 2 ? el('p', { class: 'rx-almanac-streak', text: run.current + ' days of revision running' }) : null
-  ]));
-  void day;
+  head.append(
+    el('h1', { class: 'today-title', text: 'Today' }),
+    el('p', { class: 'today-date', text: now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' }) }),
+    el('p', { class: 'today-deck', text: 'Five questions on literature, one at a time. New questions every day.' })
+  );
 }
 
-function renderPuzzle(index, day) {
-  const questions = dailyRound(index, day);
-  if (questions.length < 3) {
-    return emptyState(gameMount, 'Not enough books yet. Try a quiz on one book.', [{ href: '/play/', label: 'Revise' }]);
-  }
-  const already = dailyResult(day);
-  if (already) return renderDone(already, questions, day);
+function play(questions, day) {
+  const picks = [];
+  const hinted = [];
+  const live = el('p', { class: 'rx-visually-hidden', 'aria-live': 'polite' });
+  let index = 0;
 
-  clear(gameMount);
-  const kinds = el('ol', { class: 'rx-daily-kinds' });
-  questions.forEach((question, position) => {
-    const kind = kindOf(question);
-    kinds.append(el('li', {}, [
-      el('span', { class: 'rx-daily-num', text: String(position + 1) }),
-      drawing(shelf.icons[KIND_ICONS[kind]] || '', 20),
-      el('span', { text: KIND_NAMES[kind] || 'Question' })
-    ]));
-  });
-  const begin = el('button', { class: 'rx-button is-primary is-wide', type: 'button', text: 'Begin today’s five', onclick: () => play(index, questions, day) });
-  gameMount.append(el('section', { class: 'rx-daily-start' }, [
-    el('div', {}, [
-      el('p', { class: 'rx-eyebrow', text: 'The Daily Five' }),
-      el('h2', { text: 'Five questions. Two minutes.' }),
-      el('p', { class: 'rx-daily-note', text: 'One go each, no hints.' })
-    ]),
-    kinds,
-    begin
-  ]));
-}
+  function show() {
+    clear(mount);
+    mount.append(live);
+    if (index >= questions.length) return finish();
+    const question = questions[index];
+    const card = el('section', { class: 'today-card', 'aria-labelledby': 'today-q' });
+    const count = el('p', { class: 'today-count', text: 'Question ' + (index + 1) + ' of ' + questions.length });
+    const prompt = el('h2', { class: 'today-question', id: 'today-q', tabindex: '-1', text: question.question });
+    const options = el('ol', { class: 'today-options' });
+    const buttons = question.options.map((option, position) => {
+      const button = el('button', { type: 'button', class: 'today-option' }, [
+        el('span', { class: 'today-letter', 'aria-hidden': 'true', text: LETTERS[position] }),
+        el('span', { class: 'today-option-text', text: option })
+      ]);
+      button.addEventListener('click', () => answer(position));
+      options.append(el('li', {}, [button]));
+      return button;
+    });
+    const hintText = el('p', { class: 'today-hint', hidden: true, text: question.hint });
+    const hintButton = el('button', { type: 'button', class: 'today-hint-button', text: 'Show a hint' });
+    hintButton.addEventListener('click', () => {
+      hintText.hidden = false;
+      hintButton.hidden = true;
+      hinted[index] = true;
+      announce(live, 'Hint: ' + question.hint);
+    });
+    const feedback = el('div', { class: 'today-feedback', hidden: true });
+    card.append(count, prompt, options, el('div', { class: 'today-hint-row' }, [hintButton, hintText]), feedback);
+    mount.append(card);
+    prompt.focus({ preventScroll: true });
 
-function play(index, questions, day) {
-  clear(gameMount);
-  const round = new QuizRound(gameMount, questions, {
-    gameId: 'daily',
-    ownEnd: true,
-    noHints: true,
-    icons: shelf.icons,
-    catalogue: new Map(shelf.books.map(book => [book.title, book])),
-    onFinish: result => {
-      const marks = result.answers.slice();
-      if (isRemembering()) recordDaily({ score: result.score, total: result.total, marks }, day);
-      window.setTimeout(() => { round.stop(); renderDone({ score: result.score, total: result.total, marks }, questions, day); }, 0);
+    function answer(position) {
+      if (picks[index] !== undefined) return;
+      picks[index] = position;
+      const right = position === question.answer;
+      buttons.forEach((button, place) => {
+        button.disabled = true;
+        if (place === question.answer) button.classList.add('is-answer');
+        if (place === position && !right) button.classList.add('is-wrong');
+      });
+      hintButton.hidden = true;
+      feedback.hidden = false;
+      feedback.className = 'today-feedback ' + (right ? 'is-right' : 'is-wrong');
+      feedback.append(
+        el('p', { class: 'today-verdict' }, right
+          ? [el('b', { text: 'Right.' })]
+          : [el('b', { text: 'Not quite.' }), ' The answer is ' + question.options[question.answer] + '.']),
+        el('p', { class: 'today-explanation', text: question.explanation }),
+        question.link ? el('p', { class: 'today-more' }, [el('a', { href: question.link.href, text: question.link.label })]) : null
+      );
+      const next = el('button', { type: 'button', class: 'today-next', text: index + 1 < questions.length ? 'Next question' : 'See how you did' });
+      next.addEventListener('click', () => { index += 1; show(); });
+      feedback.append(next);
+      announce(live, (right ? 'Right. ' : 'Not quite. The answer is ' + question.options[question.answer] + '. ') + question.explanation);
+      next.focus({ preventScroll: true });
+      feedback.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     }
-  });
-  round.start();
-  gameMount.scrollIntoView({ block: 'start' });
+
+    keyHandler = event => {
+      if (event.target.closest?.('input, textarea')) return;
+      const key = event.key.toUpperCase();
+      const chosen = LETTERS.indexOf(key) >= 0 ? LETTERS.indexOf(key) : ['1', '2', '3', '4'].indexOf(event.key);
+      if (chosen >= 0 && chosen < question.options.length && picks[index] === undefined) { event.preventDefault(); answer(chosen); }
+      else if (key === 'H' && picks[index] === undefined && !hintButton.hidden) hintButton.click();
+    };
+  }
+
+  function finish() {
+    document.removeEventListener('keydown', onKey);
+    const marks = questions.map((question, position) => picks[position] === question.answer);
+    const result = { score: marks.filter(Boolean).length, total: questions.length, marks, picks: picks.slice(), hints: questions.map((_, position) => Boolean(hinted[position])) };
+    if (isRemembering()) recordDaily(result, day);
+    renderEnd(questions, result, day);
+  }
+
+  let keyHandler = null;
+  const onKey = event => keyHandler?.(event);
+  document.addEventListener('keydown', onKey);
+  show();
 }
 
-function renderDone(result, questions, day) {
-  clear(gameMount);
-  const total = result.total || questions.length;
-  const grid = resultGrid(result.marks || []);
-  const run = streak();
-
-  const squares = el('ol', { class: 'rx-daily-result', 'aria-label': result.score + ' right out of ' + total });
-  (result.marks || []).forEach((mark, position) => {
-    const kind = kindOf(questions[position]);
-    squares.append(el('li', { class: mark ? 'is-right' : 'is-wrong' }, [
-      el('span', { class: 'rx-daily-square', 'aria-hidden': 'true', text: mark ? '✓' : '✗' }),
-      el('span', { text: KIND_NAMES[kind] || 'Question ' + (position + 1) })
-    ]));
-  });
-
-  const history = dailyHistory() || {};
-  const week = Object.keys(history).sort().slice(-7).map(key => ({ day: key, ...history[key] }));
-
-  const panel = el('section', { class: 'rx-daily-done' }, [
-    completion({
-      score: result.score, total,
-      kicker: 'Today’s five · ' + formatDate(new Date()),
-      title: result.score === total ? 'All five. Superb.' : result.score >= 3 ? 'A good day.' : 'Done for today.',
-      chips: [run.live && run.current >= 2 ? run.current + '-day streak' : '', 'New questions at midnight'].filter(Boolean)
-    }),
-    squares
+function renderEnd(questions, result, day) {
+  clear(mount);
+  const total = result.total || PER_DAY;
+  const summary = el('section', { class: 'today-end', 'aria-labelledby': 'today-score' }, [
+    el('h2', { class: 'today-score', id: 'today-score', tabindex: '-1', text: 'You got ' + result.score + ' of ' + total + '.' }),
+    el('p', { class: 'today-deck', text: 'There will be five new questions tomorrow.' })
   ]);
-  if (week.length >= 2) {
-    panel.append(el('p', { class: 'rx-daily-week' }, [el('span', { class: 'rx-label', text: 'Your recent days' }), ...week.map(entry => el('span', { class: 'rx-daily-day', title: entry.day + ': ' + entry.score + ' of ' + (entry.total || 5), text: entry.score + '/' + (entry.total || 5) }))]));
-  }
-
-  const shareText = 'Astor Library — today’s questions, ' + day + '\n' + grid + ' ' + result.score + '/' + total + '\nhttps://astorlibrary.com/today/';
-  const share = el('button', { class: 'rx-button is-primary', type: 'button', text: 'Copy your result' });
-  share.addEventListener('click', async () => {
-    try { await navigator.clipboard.writeText(shareText); share.textContent = 'Copied'; }
-    catch { share.textContent = 'Select the grid to copy it'; }
+  const review = el('ol', { class: 'today-review' });
+  questions.forEach((question, position) => {
+    const pick = result.picks?.[position];
+    const right = pick === question.answer;
+    review.append(el('li', { class: right ? 'is-right' : 'is-wrong' }, [
+      el('p', { class: 'today-review-question', text: question.question }),
+      el('p', { class: 'today-review-answer' }, [
+        el('span', { class: 'today-mark', text: right ? 'Right' : 'Missed' }),
+        ' ' + question.options[question.answer] + (right ? '' : (pick !== undefined && pick !== null ? ' (you chose ' + question.options[pick] + ')' : ''))
+      ]),
+      el('p', { class: 'today-explanation', text: question.explanation })
+    ]));
   });
-  panel.append(el('div', { class: 'rx-results-actions' }, [
-    share,
-    el('a', { class: 'rx-button is-secondary', href: '/play/', text: 'Revise a book' })
-  ]));
-  gameMount.append(panel);
-  panel.querySelector('.rx-results-title')?.focus({ preventScroll: true });
-  celebrate(panel);
-}
-
-function renderStrip(index, day) {
-  clear(strip);
-  strip.className = 'rx-today-grid';
-  const random = seededRandom(hashString('astor-strip:' + day));
-  const quotations = allQuotations(index);
-  const year = new Date().getFullYear();
-  const metaFor = slug => shelf.books.find(book => book.slug === slug);
-
-  if (quotations.length) {
-    const quotation = dailyPassage(index, day);
-    const meta = metaFor(quotation.bookSlug);
-    strip.append(el('section', { class: 'rx-today-card is-passage', style: meta?.accent ? '--book-accent:' + meta.accent : null }, [
-      el('p', { class: 'rx-eyebrow', text: 'Passage of the day' }),
-      el('blockquote', {}, [el('p', { text: quotation.text })]),
-      el('p', { class: 'rx-today-cite', text: [quotation.speaker, quotation.bookTitle, quotation.reference].filter(Boolean).join(' · ') }),
-      el('p', { class: 'rx-today-body', text: quotation.analysis }),
-      el('p', { class: 'rx-links' }, [
-        el('a', { href: quotation.bookHref + '#astor-quote-' + quotation.id, text: 'See it in the book →' }),
-        meta ? el('a', { href: '/play/?book=' + encodeURIComponent(meta.slug), text: 'Revise ' + shortTitle(meta) + ' →' }) : null
-      ])
-    ]));
-  }
-
-  const book = pick(index.books, random);
-  const bookMeta = metaFor(book.slug);
-  strip.append(el('section', { class: 'rx-today-card is-book', style: bookMeta?.accent ? '--book-accent:' + bookMeta.accent : null }, [
-    el('p', { class: 'rx-eyebrow', text: 'A book for today' }),
-    el('div', { class: 'rx-today-book' }, [
-      bookMeta ? el('a', { class: 'rx-today-cover', href: book.href, 'aria-hidden': 'true', tabindex: '-1' }, [coverImage(bookMeta, { width: 96 })]) : null,
-      el('div', {}, [
-        el('h2', { text: book.title }),
-        el('p', { class: 'rx-today-author', text: book.author }),
-        el('p', { class: 'rx-today-body', text: clip(book.summary, 220) })
-      ])
-    ]),
-    el('p', { class: 'rx-links' }, [
-      el('a', { href: book.href, text: 'Open the book →' }),
-      bookMeta ? el('a', { href: '/play/?book=' + encodeURIComponent(book.slug), text: 'Revise it →' }) : null
-    ])
-  ]));
-
-  // Year-level anniversaries only: the records hold the year a thing happened,
-  // not the day, so the page says "this year" rather than "on this day".
-  const anniversaries = index.books
-    .flatMap(entry => (entry.timeline || []).map(event => ({ ...event, book: entry })))
-    .filter(event => year - event.year > 0 && (year - event.year) % 25 === 0);
-  if (anniversaries.length) {
-    const event = pick(anniversaries, random);
-    const distance = year - event.year;
-    strip.append(el('section', { class: 'rx-today-card is-anniversary' }, [
-      el('p', { class: 'rx-eyebrow', text: 'An anniversary this year' }),
-      el('p', { class: 'rx-today-big' }, [el('b', { text: String(distance) }), el('span', { text: 'years' })]),
-      el('p', { class: 'rx-today-body' }, [el('b', { text: event.year + '. ' }), event.label + (event.detail ? '. ' + event.detail : '.')]),
-      el('p', { class: 'rx-links' }, [el('a', { href: event.book.href, text: shortTitle(event.book) + ' →' })])
-    ]));
-  }
+  const shareText = 'Astor Library, Today, ' + day + '\n' + shareGrid(result.marks || []) + ' ' + result.score + '/' + total + '\nhttps://astorlibrary.com/today/';
+  const copy = el('button', { type: 'button', class: 'today-next', text: 'Copy your result' });
+  copy.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(shareText); copy.textContent = 'Copied'; } catch { copy.textContent = 'Copying is not available here'; }
+  });
+  summary.append(review, el('p', { class: 'today-actions' }, [copy, el('a', { href: '/play/', text: 'Revise a book' })]));
+  mount.append(summary);
+  summary.querySelector('#today-score')?.focus({ preventScroll: true });
 }

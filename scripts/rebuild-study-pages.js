@@ -31,14 +31,12 @@ const FOOTER = `<footer class="site-footer"><div><p class="footer-brand">Astor L
 
 function endNav(links) {
   const all = links.concat([
-    { href: '/explore/', label: 'Search the library' },
-    { href: '/library/', label: 'All books' },
-    { href: '/study/', label: 'Study editions' },
-    { href: '/resources/', label: 'Free resources' }
+    { href: '/guides/', label: 'Study guides' },
+    { href: '/library/', label: 'All books' }
   ]);
   const seen = new Set();
   return '<nav class="book-end-nav" aria-label="End of page">' +
-    '<a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a>' +
+    '<a href="#main-content">Back to the top</a>' +
     all.filter(link => !seen.has(link.href) && seen.add(link.href))
       .map(link => '<a href="' + link.href + '">' + link.label + '</a>').join('') +
     '</nav>';
@@ -173,18 +171,18 @@ function buildPages() {
   written.push(page({
     dir: 'play',
     title: 'Revise | Astor Library',
-    description: 'Short quizzes on the quotations, characters, themes and plot of each book with a study guide, plus flashcards, an essay planner and five questions a day.',
+    description: 'Free quizzes and flashcards on the quotations, characters, themes and plot of each book with an Astor study guide.',
     kicker: 'Revise',
     heading: 'Revise a book.',
-    deck: 'Short quizzes on the quotations, characters and plot, with flashcards and an essay planner. Choose a book to start.',
+    deck: 'Quizzes and flashcards on one book at a time.',
     breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Revise</span>',
     module: 'revise-hub.mjs',
     bare: true,
-    intro: `  <section class="rx-hero" id="rv-title" aria-label="The book you are revising">
-    <div class="rx-hero-inner"><div class="rx-hero-words"><p class="rx-hero-kicker">Revise</p><h1 class="rx-hero-title">Revise a book.</h1><p class="rx-hero-epigraph">Quizzes, flashcards, an essay planner and a debate for every book with a study guide.</p></div></div>
+    intro: `  <section class="rx-hero rx-hub-hero" id="rv-title" aria-label="The book you are revising">
+    <div class="rx-hero-inner"><div class="rx-hero-words"><p class="rx-hero-kicker">Revise</p><h1 class="rx-hero-title">Revise a book</h1><p class="rx-hero-author">Quizzes and flashcards on one book at a time.</p></div></div>
   </section>`,
     mount: `  <div class="rv-hub" id="rv-hub"><p class="rv-loading">Finding your book…</p></div>`,
-    fallback: 'The quizzes need JavaScript. The quotations are on the book pages: <a href="/library/">browse the catalogue</a>.',
+    fallback: 'The quizzes need JavaScript. The key quotations are in each <a href="/guides/">study guide</a>.',
     tail: '',
     links: [{ href: '/today/', label: 'Today' }, { href: '/my-library/', label: 'My library' }]
   }));
@@ -234,66 +232,22 @@ function buildPages() {
     links: [{ href: '/play/', label: 'Revise' }, { href: '/my-library/', label: 'My library' }]
   }));
 
-  // --- essay forge ---
-  written.push(page({
-    dir: 'play/essay-forge',
-    title: 'Essay planner | Astor Library',
-    description: 'Build an essay plan: choose a question, take a line of argument and attach quotations to each paragraph.',
-    kicker: 'Planning tool',
-    heading: 'Essay planner.',
-    deck: 'Choose a question and build the plan paragraph by paragraph.',
-    breadcrumb: '<a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Essay planner</span>',
-    module: 'essay-planner.mjs',
-    bare: true,
-    intro: `  <div class="rx-bar-mount" id="rv-head-book"></div>
-  <header class="rx-head">
-    <h1>Essay planner</h1>
-    <p class="rx-head-deck">Build an essay plan in four quick steps, saved as you go.</p>
-  </header>`,
-    mount: '  <div class="rv-tool" id="astor-essay-forge"><p class="rv-loading">Finding the questions…</p></div>',
-    fallback: 'The planner needs JavaScript. Every book page has essay questions with a plan for each.',
-    tail: '',
-    links: [{ href: '/play/', label: 'Revise' }, { href: '/for-teachers/', label: 'For teachers' }]
-  }));
-
-  // --- defend the reading ---
-  written.push(page({
-    dir: 'play/defend-the-reading',
-    title: 'Defend the reading | Astor Library',
-    description: 'Argue for a reading of a book, then read the strongest case against it, with quotations for both sides.',
-    kicker: 'Argument tool',
-    heading: 'Defend the reading.',
-    deck: 'Take a side on a reading of the book, choose quotations to support it, then answer the objection.',
-    breadcrumb: '<a href="/play/">Revise</a><span aria-hidden="true">/</span><span aria-current="page">Defend the reading</span>',
-    module: 'defend-reading.mjs',
-    bare: true,
-    intro: `  <div class="rx-bar-mount" id="rv-head-book"></div>
-  <header class="rx-head">
-    <h1>Defend the reading</h1>
-    <p class="rx-head-deck">Pick a side in a debate about the book, then back it up from the text.</p>
-  </header>`,
-    mount: '  <div class="rv-tool" id="astor-defend"><p class="rv-loading">Finding the readings…</p></div>',
-    fallback: 'This needs JavaScript. The readings are on each book page under “The book in its moment”.',
-    tail: '',
-    links: [{ href: '/play/', label: 'Revise' }, { href: '/explore/quotations/', label: 'Quotation explorer' }]
-  }));
-
   // --- today ---
   written.push(page({
     dir: 'today',
-    title: 'Today at Astor Library',
-    description: 'A passage of the day, a literary anniversary and five quick questions, new every morning.',
+    title: 'Today | Astor Library',
+    description: 'Five questions on literature, chosen and checked by hand, new every day. Each comes with a hint and a short explanation.',
     kicker: 'Today',
-    heading: 'Astor today.',
-    deck: 'A passage, a book and five questions. New every day.',
+    heading: 'Today',
+    deck: 'Five questions on literature, one at a time.',
     breadcrumb: '<a href="/">Astor Library</a><span aria-hidden="true">/</span><span aria-current="page">Today</span>',
     module: 'today.mjs',
     bare: true,
-    intro: '  <header class="rx-today-head" id="astor-today-head"><div class="rx-almanac"><p class="rx-almanac-kicker">Astor today</p><h1 class="rx-almanac-date">Today</h1><p class="rx-almanac-deck">Five questions, the same for everyone today.</p></div></header>',
-    mount: '  <div class="rv-quiz" id="astor-daily-game"></div>',
+    intro: '  <header class="today-head" id="astor-today-head"><h1 class="today-title">Today</h1><p class="today-deck">Five questions on literature, one at a time. New questions every day.</p></header>',
+    mount: '  <div class="today-quiz" id="astor-daily-game"><p class="rv-loading">Finding today’s questions…</p></div>',
     fallback: 'Today’s questions need JavaScript. The close readings in the <a href="/passage-room/">Passage Room</a> work without it.',
-    tail: '  <div class="rx-today-grid" id="astor-daily-strip"></div>',
-    links: [{ href: '/play/', label: 'Revise' }, { href: '/my-library/', label: 'My library' }]
+    tail: '',
+    links: [{ href: '/play/', label: 'Revise' }]
   }));
 
   // --- explore: quotations ---

@@ -21,28 +21,6 @@
     "url": "https://standardebooks.org/ebooks/john-milton/paradise-lost/text/single-page",
     "note": "The text used for checking runs one verse line to a line but prints no line numbers, so references here stop at the book. Line numbers in printed editions follow the twelve-book arrangement of 1674."
   },
-  "atAGlance": [
-    {
-      "label": "First published",
-      "value": "1667",
-      "note": "In ten books, from a London still rebuilding after the Fire."
-    },
-    {
-      "label": "Second edition",
-      "value": "1674",
-      "note": "Books VII and X were each divided in two, giving the twelve books now standard, and the year Milton died."
-    },
-    {
-      "label": "Verse",
-      "value": "Blank verse",
-      "note": "Milton added a note defending the absence of rhyme, which he called no necessary adjunct of a poem."
-    },
-    {
-      "label": "Composition",
-      "value": "Dictated",
-      "note": "Milton had been entirely blind since about 1652; the poem was spoken to whoever was at hand to write."
-    }
-  ],
   "structure": [
     {
       "id": "book-1",
@@ -125,11 +103,6 @@
       "summary": "Perhaps the most persuasive speaker in English poetry and the one the poem most wants you to distrust. He is magnificent in Books I and II, cannot stop talking to himself in Book IV, and by Book IX has agreed to be squeezed into a snake: a career the poem records as a steady shrinking.",
       "clue": "He calls the worst place in creation his own possession, decides that his mind can furnish it, and ends the poem in the body of an animal.",
       "firstAppearance": "Book I",
-      "traits": [
-        "eloquent",
-        "self-wounding",
-        "diminishing"
-      ],
       "relationships": [
         {
           "to": "beelzebub",
@@ -175,11 +148,6 @@
       "summary": "She is given the poem’s best argument (that an untested virtue is no virtue at all), and the poem never answers it; it only shows what happens next. She also speaks its tenderest lines and makes the first move towards reconciliation after the Fall, while Adam is still composing his complaint.",
       "clue": "She proposes that they work apart for one morning, wins the argument, and the world changes before lunch.",
       "firstAppearance": "Book IV",
-      "traits": [
-        "curious",
-        "argumentative",
-        "the first to forgive"
-      ],
       "relationships": [
         {
           "to": "adam",
@@ -203,11 +171,6 @@
       "summary": "An archangel tells him the whole truth in advance and he falls anyway, because he will not live without her; ignorance has nothing to do with it. Milton is careful about this: Adam is not deceived, which makes his eating the more deliberate act and the harder one to condemn cleanly.",
       "clue": "Warned in person, at length, by an angel over dinner, he still swallows the fruit within seconds of learning what she has done.",
       "firstAppearance": "Book IV",
-      "traits": [
-        "inquisitive",
-        "uxorious",
-        "slow to repent"
-      ],
       "relationships": [
         {
           "to": "eve",
@@ -243,11 +206,6 @@
       "summary": "Milton puts him on the stand in Book III and has him argue his own case: the angels and man were made free, freedom that cannot fail is not freedom, and therefore the blame is not his. Readers have found the voice cold ever since, which may be the price of making an argument instead of an atmosphere.",
       "clue": "From his throne he foresees the Fall, explains that he made man sufficient to have stood though free to fall, and asks which of the heavenly powers will die to redeem him.",
       "firstAppearance": "Book III",
-      "traits": [
-        "forensic",
-        "foreknowing",
-        "unmoved"
-      ],
       "relationships": [
         {
           "to": "the-son",
@@ -266,11 +224,6 @@
       "summary": "He does everything in the poem that actually takes effect: he ends the war alone, speaks the world into being, passes sentence in Eden and then kneels down to clothe the people he has sentenced. Where Satan announces, the Son acts and says very little about it.",
       "clue": "He drives the rebel angels over the wall of Heaven in a chariot alone, marks out the world with golden compasses, and clothes the man and woman he has just judged.",
       "firstAppearance": "Book III",
-      "traits": [
-        "decisive",
-        "self-offering",
-        "sparing of speech"
-      ],
       "relationships": [
         {
           "to": "god-the-father",
@@ -294,11 +247,6 @@
       "summary": "He comes to lunch and stays for four books, explaining the revolt, the war and the creation in terms a person without experience of either could hold. His honesty has limits he admits to, and his parting advice, “be lowly wise”, is the one instruction Adam and Eve both fail to keep.",
       "clue": "Sent down at noon to warn the first man, he eats a real meal at his table, talks for four books, and glows rosy red when asked how angels love.",
       "firstAppearance": "Book V",
-      "traits": [
-        "companionable",
-        "didactic",
-        "candid about what he cannot say"
-      ],
       "relationships": [
         {
           "to": "adam",
@@ -318,11 +266,6 @@
       "summary": "He leads the loyal host in the war and returns in the last two books as the poem’s historian, showing Adam the future in pictures until the pictures become unbearable and he switches to plain narration. He is the one who names the paradise within.",
       "clue": "He leads the loyal angels into battle with a sword from the armoury of Heaven, and at the end shows the first man the future from a hilltop before leading him out of the garden by the hand.",
       "firstAppearance": "Book VI",
-      "traits": [
-        "soldierly",
-        "plain-spoken",
-        "merciful in method"
-      ],
       "relationships": [
         {
           "to": "adam",
@@ -342,10 +285,6 @@
       "summary": "Milton invents him. He hears out Satan’s case for independence, answers it in public, and then walks the whole night back through an army that despises him. For a poet who had defended a beheaded king’s executioners and then watched the monarchy return, the figure of the lone dissenter was not an abstraction.",
       "clue": "One angel out of an entire rebel legion says no, argues the point, and walks out alone through a jeering camp.",
       "firstAppearance": "Book V",
-      "traits": [
-        "outnumbered",
-        "unpersuaded"
-      ],
       "relationships": [
         {
           "to": "satan",
@@ -365,10 +304,6 @@
       "summary": "He speaks last in the debate in Hell and proposes the plan Satan wants, which the assembly then adopts as its own idea. The manoeuvre is the most recognisable piece of politics in the poem: the leader does not have to argue for his policy if the right subordinate does.",
       "clue": "Satan’s second-in-command, he proposes in Hell’s council that they attack the new world and its new race in place of Heaven, which is the plan his leader had already devised.",
       "firstAppearance": "Book I",
-      "traits": [
-        "grave",
-        "useful"
-      ],
       "relationships": [
         {
           "to": "satan",
@@ -387,11 +322,6 @@
       "summary": "Half allegory and half family, they are Satan’s daughter and his son by her, and they guard the door he needs opened. Once the Fall has happened they build a bridge from Hell to earth, and a moral idea becomes a piece of civil engineering.",
       "clue": "One sprang from her father’s head and the other is her son by him; they keep the gate of Hell, and after the Fall they build a bridge across Chaos.",
       "firstAppearance": "Book II",
-      "traits": [
-        "allegorical",
-        "hereditary",
-        "industrious"
-      ],
       "relationships": [
         {
           "to": "satan",
@@ -1273,129 +1203,6 @@
       "lat": 51.5195,
       "lon": -0.0936,
       "note": "The church where Milton was buried in November 1674, months after the twelve-book edition appeared."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "The Romantic reading: Satan as the poem’s true energy",
-      "summary": "From the 1790s onwards, readers have argued that Milton writes at full power in Hell and at half power in Heaven, and that the sympathy the poem generates for its rebel is not fully under its author’s control.",
-      "counter": "It requires ignoring the poem’s shape. Satan’s speeches get shorter and his form smaller as the work proceeds, and Books XI and XII belong to somebody else entirely."
-    },
-    {
-      "position": "The theological reading: a poem about free will",
-      "summary": "On this account the epic does exactly what it says in line twenty-six, defending divine justice by insisting that creatures who could not have failed would prove nothing, and that the Fall therefore belongs to the people who chose it.",
-      "counter": "A defence conducted by the defendant, in speeches many readers find chilly, may win the argument and lose the case."
-    },
-    {
-      "position": "The political reading: a defeated republican writing after the Restoration",
-      "summary": "Milton wrote for a revolution, served its government, and finished the poem under the monarchy it had killed. Read this way, the questions of who deserves to rule, what service means and how a lone dissenter behaves are not decoration.",
-      "counter": "The parallels do not line up neatly: the poem’s rebel against a monarch is Satan, which wrecks any simple mapping of Milton’s politics onto the plot."
-    },
-    {
-      "position": "Feminist readings of Eden",
-      "summary": "Since the 1970s critics have examined the gap between the hierarchy the poem asserts and the initiative it repeatedly gives to Eve: the strongest argument in Book IX is hers, and so is the first step towards reconciliation in Book X.",
-      "counter": "The poem also gives her the fall, and it states her subordination in the narrator’s own voice as well as through characters."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "Does Paradise Lost succeed in justifying the ways of God to men?",
-      "focus": "Free will, foreknowledge and the poem’s stated purpose",
-      "plan": [
-        "Take the promise literally: ‘justify’ is a legal verb, so establish what charge is being answered.",
-        "Set out God’s own defence in Book III (created ‘sufficient to have stood, though free to fall’), and note that it is put as an argument.",
-        "Test it on the angels, where Abdiel in Book V shows that the rebellion was refusable by somebody standing in the same room.",
-        "Turn to Book IX, where the doctrine becomes a domestic argument and Adam concedes on exactly the principle God has stated.",
-        "Weigh the cost: a case won in Book III may still be lost in tone, and decide whether Books XI and XII repair that or confirm it."
-      ]
-    },
-    {
-      "question": "How far is Satan the hero of Paradise Lost?",
-      "focus": "Rhetoric, structure and the reader’s sympathy",
-      "plan": [
-        "Begin with what the speeches actually promise: ‘the unconquerable will, / And study of revenge’ (Book I), and a reign that nobody offered as an alternative to service.",
-        "Trace the diminishing shape: the soliloquy on Niphates in Book IV, the toad and the mist, the serpent in Book IX, the hissing in Book X.",
-        "Distinguish the reader’s experience of the verse from the poem’s judgement, and consider whether Milton means the seduction to happen to us.",
-        "Use Abdiel as the control: a character given the same information who does the opposite.",
-        "Conclude on structure: the last two books keep Satan off stage, which is an argument in itself."
-      ]
-    },
-    {
-      "question": "Discuss Milton’s presentation of Eve.",
-      "focus": "Hierarchy, argument and the poem’s internal contradictions",
-      "plan": [
-        "Start with the narrator’s own statement of hierarchy in Book IV and note who is looking when it is made.",
-        "Read her speech of obedience as a rhetorical performance, fluent and shapely, and ask what that does to the word ‘unargued’.",
-        "Give full weight to the separation scene: the argument about untested virtue is Milton’s own published position.",
-        "Follow the aftermath in Book X, where she proposes reconciliation and Adam is still assigning blame.",
-        "Decide whether the poem contains a contradiction or dramatises one deliberately."
-      ]
-    },
-    {
-      "question": "What does the ending of Paradise Lost offer its readers?",
-      "focus": "Exile, consolation and the last four lines",
-      "plan": [
-        "Establish what Michael has actually shown Adam in Books XI and XII, and how the method changes from vision to narration.",
-        "Examine the paradise within: a comparative claim, happier far, made to somebody being evicted.",
-        "Read the closing lines phrase by phrase, noting how each carries its own contradiction.",
-        "Set the ending against Book I, where exile produced rage, and measure the distance travelled.",
-        "Consider what a reader in London in 1667, after the plague, the fire and the restored monarchy, would hear in a consolation of this kind."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Satan’s finest speeches are in the first two books and he never sounds that way again. Is the decline a judgement, or a loss of interest?",
-    "Eve argues that virtue untested is not virtue. Does the poem ever answer her, or only show the consequences?",
-    "Adam is explicitly not deceived. Does that make his fall worse than hers, or more forgivable?",
-    "Raphael tells Adam to be lowly wise after answering questions for three books. Where is the line meant to fall?",
-    "The poem ends with the whole world available and two people walking slowly. Is that a consolation or a sentence?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-aeneid/",
-      "why": "The epic Milton measured himself against most closely, down to the arming, the councils and the visit to the underworld."
-    },
-    {
-      "href": "/books/the-iliad/",
-      "why": "The war poem behind the war in Heaven, and the source of the catalogue and the extended simile."
-    },
-    {
-      "href": "/books/doctor-faustus/",
-      "why": "An earlier English study of a magnificent speaker arguing himself out of repentance, seventy years before Satan does it on Niphates."
-    },
-    {
-      "href": "/books/frankenstein/",
-      "why": "Shelley takes her epigraph from Book X, and her creature reads Paradise Lost and identifies with both Adam and Satan."
-    },
-    {
-      "href": "/books/the-rime-of-the-ancient-mariner/",
-      "why": "A later English poem about a single act with cosmic consequences, and a penitent who must tell the story afterwards."
-    }
-  ],
-  "videos": [
-    {
-      "title": "9. Paradise Lost, Book I",
-      "provider": "youtube-nocookie",
-      "id": "H62G9yIN5Wk",
-      "url": "https://www.youtube.com/watch?v=H62G9yIN5Wk",
-      "note": "A Yale lecture on the opening book and Satan in hell.",
-      "source": "Yale University"
-    },
-    {
-      "title": "14. Paradise Lost, Book IV",
-      "provider": "youtube-nocookie",
-      "id": "00RKB0StzHY",
-      "url": "https://www.youtube.com/watch?v=00RKB0StzHY",
-      "note": "A Yale lecture on Book IV and the first sight of Eden.",
-      "source": "Yale University"
-    },
-    {
-      "title": "19. Paradise Lost, Books XI-XII",
-      "provider": "youtube-nocookie",
-      "id": "TpF34q9h7qc",
-      "url": "https://www.youtube.com/watch?v=TpF34q9h7qc",
-      "note": "A Yale lecture on the closing books and the expulsion from the garden.",
-      "source": "Yale University"
     }
   ]
 }

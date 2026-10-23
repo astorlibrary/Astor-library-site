@@ -25,28 +25,6 @@
     "url": "https://shakespeare.mit.edu/hamlet/full.html",
     "note": "The three early texts (Q1, Q2 and the Folio) differ, and other modern editions number the play differently."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1599–1601",
-      "note": "Close in date to Julius Caesar, which the play itself remembers when Polonius says he once played Caesar."
-    },
-    {
-      "label": "First printed",
-      "value": "1603",
-      "note": "The short First Quarto. A longer Second Quarto followed in 1604/5, and the Folio text in 1623."
-    },
-    {
-      "label": "Three early texts",
-      "value": "Q1, Q2, F1",
-      "note": "Each preserves material the others lack, so no edition can print all of Hamlet without choosing."
-    },
-    {
-      "label": "Shape",
-      "value": "Five acts, twenty scenes",
-      "note": "Two of the five acts pass before Hamlet takes any action against Claudius at all."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -197,11 +175,6 @@
       "summary": "A student called home into a job he has no evidence for and no appetite for. His delay is usually called a flaw, but again and again the play shows him doing the work of proof: testing the Ghost, staging the play, reading the commission. What he cannot do is act while he is still thinking, and the two things almost never stop at the same time.",
       "clue": "He wears black at a wedding, talks to a skull, and stages a play in order to watch one man’s face.",
       "firstAppearance": "1.2",
-      "traits": [
-        "sceptical",
-        "theatrical",
-        "unable to act and think at the same time"
-      ],
       "relationships": [
         {
           "to": "claudius",
@@ -264,11 +237,6 @@
       "summary": "The most competent politician in the play and the only character who tells the audience outright that he is guilty. He settles a foreign crisis by letter, manages a rebellion by talking to it, and never once mishandles a room, which is why the prayer scene hurts: it is the one thing he cannot negotiate.",
       "clue": "He opens with a speech that makes a funeral and a wedding sound like one piece of administration, and later cannot pray.",
       "firstAppearance": "1.2",
-      "traits": [
-        "fluent",
-        "efficient",
-        "unable to repent"
-      ],
       "relationships": [
         {
           "to": "gertrude",
@@ -312,11 +280,6 @@
       "summary": "She is given very few lines in which to be anything other than the subject of other people’s speeches about her. The play never says whether she knew about the murder, and the closet scene is the one place where she is asked directly and answers in a way that settles nothing. Her clearest moment is the speech describing Ophelia’s drowning.",
       "clue": "Her marriage is the scandal the play opens on, and her longest speech is a description of a drowning she did not witness.",
       "firstAppearance": "1.2",
-      "traits": [
-        "conciliatory",
-        "opaque",
-        "protective too late"
-      ],
       "relationships": [
         {
           "to": "claudius",
@@ -350,11 +313,6 @@
       "summary": "Every scene she appears in before her madness has been arranged by a man: her father tells her what to feel, her brother tells her what to fear, and she is placed in a corridor with a book to be watched. When she loses her reason she is finally allowed to speak first and at length, and the court cannot stop her singing.",
       "clue": "Told to return a suitor’s letters, she is later the only person at court who can say anything she likes, and does it in songs and flowers.",
       "firstAppearance": "1.3",
-      "traits": [
-        "obedient",
-        "observant",
-        "released only by madness"
-      ],
       "relationships": [
         {
           "to": "polonius",
@@ -394,11 +352,6 @@
       "summary": "A man who mistakes talking for thinking and surveillance for care. His famous advice to Laertes is a string of maxims delivered by somebody who immediately sends a spy after him. He dies because he is hiding in a room where he has no business, which is the only end the play could reasonably give him.",
       "clue": "He gives his son a lecture of proverbs and then sends a servant to Paris to slander him; he dies behind a curtain.",
       "firstAppearance": "1.2",
-      "traits": [
-        "sententious",
-        "intrusive",
-        "fatally curious"
-      ],
       "relationships": [
         {
           "to": "ophelia",
@@ -437,11 +390,6 @@
       "summary": "He does in one scene what Hamlet cannot do in four acts: hears of his father’s death, raises a mob and breaks into the palace. The play uses him to show that speed is not justice: he is willing to cut throats in a church, and Claudius steers him within minutes of his arrival.",
       "clue": "He storms the castle with a crowd at his back and is talked into poisoning a fencing sword instead.",
       "firstAppearance": "1.2",
-      "traits": [
-        "quick",
-        "biddable",
-        "sorry at the end"
-      ],
       "relationships": [
         {
           "to": "polonius",
@@ -488,11 +436,6 @@
       "summary": "The only person in Elsinore who wants nothing from Hamlet, and therefore the only one told the truth. He is a sceptic in the first scene who has to concede that the Ghost is real, and a survivor in the last who is ordered to stay alive and tell the story, a job the play leaves him doing after the lights go down.",
       "clue": "He doubts the ghost, watches the king’s face on Hamlet’s behalf, and is talked out of drinking the poison so that someone can report what happened.",
       "firstAppearance": "1.1",
-      "traits": [
-        "steady",
-        "sceptical",
-        "the appointed witness"
-      ],
       "relationships": [
         {
           "to": "hamlet",
@@ -516,11 +459,6 @@
       "summary": "It comes in armour, refuses to speak to anyone but its son, and gives an account of its own murder that no living witness can confirm. The play deliberately leaves its status open: a soul in purgatory, a devil exploiting grief, or a projection. Everything Hamlet does from Act II onwards is an attempt to work out which.",
       "clue": "Armed from head to foot, it walks the same cold hour twice before it will say what happened in the orchard.",
       "firstAppearance": "1.1",
-      "traits": [
-        "insistent",
-        "unverifiable",
-        "partial"
-      ],
       "relationships": [
         {
           "to": "hamlet",
@@ -549,11 +487,6 @@
       "summary": "They are summoned by name, given a task neither of them quite admits to, and are never separated by the text into two distinguishable people. Their function is to show that friendship at this court is a form of employment; their deaths are reported in a single line by a messenger who has no idea who they were.",
       "clue": "Two old friends sent for by the king, who cannot play a recorder but agree to play a prince.",
       "firstAppearance": "2.2",
-      "traits": [
-        "interchangeable",
-        "compliant",
-        "out of their depth"
-      ],
       "relationships": [
         {
           "to": "claudius",
@@ -583,11 +516,6 @@
       "summary": "He is talked about for four acts and appears for a few minutes, which is exactly the point: he is the other son of a dead king, and he is busy. Hamlet watches his army march past to fight over ground not worth farming, and the play then hands Denmark to him because everyone with a better claim is dead on the floor.",
       "clue": "A soldier who never meets the prince he is compared with, and who walks in at the end to find the throne empty.",
       "firstAppearance": "4.4",
-      "traits": [
-        "decisive",
-        "unreflective",
-        "lucky"
-      ],
       "relationships": [
         {
           "to": "hamlet",
@@ -1377,124 +1305,6 @@
       "lat": 51.5074,
       "lon": -0.1278,
       "note": "England, where the sealed commission sends Hamlet to die, and where the play was first performed."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "Hamlet as a problem of character",
-      "summary": "The reading that dominated the nineteenth century and shaped most since: the play is the study of a particular temperament, and the delay is explained by something in the man: reflectiveness, melancholy, a will paralysed by thought.",
-      "counter": "It has to treat Elsinore as scenery. A court that hires spies, opens letters and stages entrapments gives Hamlet practical reasons for caution that have nothing to do with temperament."
-    },
-    {
-      "position": "Hamlet as a play about proof",
-      "summary": "On this account the delay is rational. The only evidence is a ghost of uncertain origin; Hamlet designs a test, gets a reaction but no confession, and has to decide what a reaction is worth.",
-      "counter": "It struggles with 3.4, where he kills a concealed listener without checking who it is: a man careful about evidence has just behaved as carelessly as possible."
-    },
-    {
-      "position": "Hamlet as three plays",
-      "summary": "Because Q1, Q2 and the Folio differ substantially, textual criticism since the late twentieth century has argued that editors who conflate them produce a play no early audience ever saw.",
-      "counter": "Readers and actors still need a text to work from, and the conflated tradition has shaped four centuries of performance, which is itself a fact about the play."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "Is Hamlet’s delay a failure of character or a problem of evidence?",
-      "focus": "Revenge, proof and the status of the Ghost",
-      "plan": [
-        "Establish what Hamlet actually has at the end of Act I: unverifiable testimony from a spirit whose nature he says he cannot classify.",
-        "Trace the design of the Mousetrap in 2.2 and 3.2 as an experiment, and ask exactly what Claudius’s reaction proves.",
-        "Turn the argument at 3.3: he spares a praying man by theological calculation, and the audience knows the prayer failed.",
-        "Test the counter-case with 3.4, where he stabs a concealed listener without identifying him.",
-        "Close on Act V, where the killing finally happens under conditions Hamlet did not arrange and cannot control."
-      ]
-    },
-    {
-      "question": "How does Shakespeare use watching and being watched in Hamlet?",
-      "focus": "Surveillance, privacy and the court",
-      "plan": [
-        "Open with Reynaldo in 2.1: the court’s method stated in its purest form, applied by a father to his own son.",
-        "Map the arranged scenes: 3.1 with two men concealed, 3.2 with the whole court watching a king watch a play, 3.4 with a listener behind the arras.",
-        "Show how Hamlet takes up the method himself: the play, the rewritten commission, the friends he tests.",
-        "Consider what the play makes private: the soliloquies, Claudius’s prayer, and the fact that the audience is always the extra watcher.",
-        "Decide whether the arrival of Fortinbras ends the surveillance or simply changes who is doing it."
-      ]
-    },
-    {
-      "question": "Discuss the presentation of Ophelia and Gertrude.",
-      "focus": "Constraint, silence and what the play leaves unsaid",
-      "plan": [
-        "Count what each is allowed to say, and note how much of it is answering a question put by a man.",
-        "Read 1.3 and 3.1 as a sequence in which Ophelia is instructed, positioned and then abused for being where she was told to stand.",
-        "Examine 4.5, where madness lets her set the terms of a scene, in songs the court cannot answer.",
-        "Weigh Gertrude’s silences, such as her refusal to answer directly in 3.4, against the strangely detailed drowning speech in 4.7.",
-        "Assess two readings: a play that exposes the constraints on these women, or one that shares them."
-      ]
-    },
-    {
-      "question": "‘Hamlet is a play about acting.’ Discuss.",
-      "focus": "Performance, theatre and the antic disposition",
-      "plan": [
-        "Begin with 1.2, where Hamlet rejects ‘seems’, and 1.5, where he schedules a performance of madness.",
-        "Use the players in 2.2: a professional weeping for Hecuba shames a son who cannot produce feeling on demand.",
-        "Take the advice to the players in 3.2 as the play’s own theory of acting, then watch it applied to an audience of one.",
-        "Set Claudius beside Hamlet as a rival performer, whose mask cracks in an aside in 3.1 and in public at the play, before he drops it alone in 3.3.",
-        "Conclude with Act V, where Hamlet stops performing, and ask what he loses and gains by it."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "The Ghost’s account of the murder has no other witness. What would it take for Hamlet to know it is true?",
-    "Hamlet announces his madness before he performs it. Does that settle the question of whether any of it is real?",
-    "Is Claudius a good king? Consider how he handles Norway, the rebellion and the succession.",
-    "Why does Shakespeare keep Hamlet offstage for so much of Act IV?",
-    "Horatio is told to stay alive and report what happened. Do you trust the account he would give?"
-  ],
-  "related": [
-    {
-      "href": "/books/macbeth/",
-      "why": "The opposite case: a tragedy of soliloquy in which the hero acts far too quickly and thinks about it afterwards."
-    },
-    {
-      "href": "/books/king-lear/",
-      "why": "Written within a few years, and equally concerned with what happens when a court stops being able to tell truth from performance."
-    },
-    {
-      "href": "/books/julius-caesar/",
-      "why": "The play Hamlet remembers when Polonius says he once played Caesar, and another study of a political killing argued out in advance."
-    },
-    {
-      "href": "/books/othello/",
-      "why": "The next of the great tragedies, and the clearest contrast: a hero destroyed by accepting evidence too quickly."
-    },
-    {
-      "href": "/books/hamlet-expanded-scholarly-edition/",
-      "why": "The expanded Astor edition, with fuller textual, critical and performance material on the three early texts."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Why should you read \"Hamlet\"? - Iseult Gillespie",
-      "provider": "youtube-nocookie",
-      "id": "QTu39aMg_mU",
-      "url": "https://www.youtube.com/watch?v=QTu39aMg_mU",
-      "note": "A short animated overview of the story and of why Hamlet's hesitation has kept audiences arguing for four centuries.",
-      "source": "TED-Ed"
-    },
-    {
-      "title": "To be, or not to be, that is the question | Hamlet's Soliloquy | Hamlet (2018) | Shakespeare's Globe",
-      "provider": "youtube-nocookie",
-      "id": "OzvI3WS61ps",
-      "url": "https://www.youtube.com/watch?v=OzvI3WS61ps",
-      "note": "Michelle Terry performs the most famous soliloquy on the Globe stage, a chance to hear the speech spoken directly to an audience in daylight as it first was.",
-      "source": "Shakespeare's Globe"
-    },
-    {
-      "title": "Hamlet: A Character Study",
-      "provider": "youtube-nocookie",
-      "id": "OcoHJWdETnw",
-      "url": "https://www.youtube.com/watch?v=OcoHJWdETnw",
-      "note": "Actor Rory Kinnear and director Nicholas Hytner explain the key aspects of Hamlet's character as they understood it for the National Theatre production.",
-      "source": "National Theatre"
     }
   ]
 }

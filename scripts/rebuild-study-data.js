@@ -20,10 +20,9 @@ const outputFile = path.join(root, 'assets', 'study-index.json');
 const vocabulary = loadVocabulary();
 const canonical = (kind, entry) => vocabulary[kind][entry.id]?.name || entry.name;
 
-// The index carries what a cross-library tool needs. That includes the essay
-// questions, critical positions and discussion questions, because the essay
-// forge, the argument builder and the teachers' generators all work from a
-// chosen title without loading its individual record.
+// The index carries what a cross-library tool needs, so the explorers, the
+// library-wide quizzes and the teachers' worksheets can work from a chosen
+// title without loading its individual record.
 function indexEntry(book) {
   return {
     slug: book.slug,
@@ -59,7 +58,6 @@ function indexEntry(book) {
       summary: character.summary,
       clue: character.clue || '',
       firstAppearance: character.firstAppearance || '',
-      traits: character.traits || [],
       relationships: character.relationships || []
     })),
     themes: (book.themes || []).map(theme => ({
@@ -91,14 +89,9 @@ function indexEntry(book) {
       source: quotation.source,
       cloze: quotation.cloze || []
     })),
-    atAGlance: book.atAGlance || [],
     criticalViews: book.criticalViews || [],
-    essayQuestions: book.essayQuestions || [],
-    discussionQuestions: book.discussionQuestions || [],
     timeline: book.timeline || [],
-    places: book.places || [],
-    related: book.related || [],
-    videos: book.videos || []
+    places: book.places || []
   };
 }
 
@@ -188,9 +181,8 @@ fs.writeFileSync(path.join(root, 'assets', 'timeline-index.json'), JSON.stringif
         edition: editionFor({ slug: book.slug, period: book.period, form: book.form, genre: book.genre, accent: identity.accent }, editionSources.colours[book.slug], editionSources.overrides, editionSources.art[book.slug]),
         accent: identity.accent, motif: MOTIFS[identity.motif] || '', cover: coverFor(book.href),
         quotations: book.quotations.length, characters: book.characters.length,
-        stages: book.structure.length, essays: book.essayQuestions.length,
+        stages: book.structure.length,
         openingLine: book.openingLine || '',
-        views: book.criticalViews.length,
         quizzes: quizzesFor(book)
       };
     })
@@ -235,49 +227,52 @@ for (const [group, label] of discoveryGroups) {
 }
 
 for (const book of entries) {
+  const guide = '/guides/' + book.slug + '/';
+  addEntry('Study guide', book.title + ' study guide', guide, book.author, book.title + ' ' + book.author + ' study guide notes summary');
   for (const character of book.characters) {
-    addEntry('Character', character.name, book.href + '#astor-characters', book.title, character.name + ' ' + book.title + ' ' + (character.role || ''));
+    addEntry('Character', character.name, guide + 'characters/#astor-character-' + character.id, book.title, character.name + ' ' + book.title + ' ' + (character.role || ''));
   }
   for (const theme of book.themes) {
-    addEntry('Theme', theme.name + ' in ' + book.title, '/explore/themes/#' + theme.id, book.title, theme.name + ' ' + book.title);
+    addEntry('Theme', theme.name + ' in ' + book.title, guide + 'themes/#astor-theme-' + theme.id, book.title, theme.name + ' ' + book.title);
   }
   for (const technique of book.techniques) {
     addEntry('Technique', technique.name, '/explore/techniques/#' + technique.id, technique.definition, technique.name);
   }
   for (const quotation of book.quotations) {
     addEntry('Quotation', quotation.text.length > 76 ? quotation.text.slice(0, 74).trim() + '\u2026' : quotation.text,
-      book.href + '#astor-quotations', book.title + ' ' + quotation.reference,
+      guide + 'quotations/#astor-quote-' + quotation.id, book.title + ' ' + quotation.reference,
       quotation.text + ' ' + (quotation.speaker || '') + ' ' + book.title);
   }
 }
 
 for (const tool of [
-  ['Tool', 'Revise', '/play/', 'Quizzes, flashcards and the essay planner', 'play games revise quiz quizzes revision flashcards'],
-  ['Tool', 'Today’s questions', '/today/', "A passage, a book and five questions", 'daily puzzle today streak'],
+  ['Tool', 'Study guides', '/guides/', 'Plot, characters, themes, quotations, language and context', 'study guide guides notes summary'],
+  ['Tool', 'Revise', '/play/', 'Quizzes and flashcards', 'play games revise quiz quizzes revision flashcards'],
+  ['Tool', 'Today', '/today/', 'Five questions on literature, new each day', 'daily puzzle today quiz'],
   ['Tool', 'Quotation explorer', '/explore/quotations/', 'Filter every quotation by theme, character and technique', 'quotations explorer filter'],
   ['Tool', 'Literature timeline', '/explore/timeline/', 'Every book in order, with its dates', 'timeline history dates'],
   ['Tool', 'Character maps', '/explore/characters/', 'Who is linked to whom in each book', 'characters relationships map diagram'],
   ['Tool', 'Themes across the library', '/explore/themes/', 'Each shared theme, book by book', 'themes theme explorer compare'],
-  ['Tool', 'Technique glossary', '/explore/techniques/', 'Literary terms, with examples from the books', 'technique glossary terms devices'],
+  ['Tool', 'Literary terms', '/explore/techniques/', 'Literary terms, with examples from the books', 'technique glossary terms devices'],
   ['Tool', 'Map of settings', '/explore/map/', 'Where the books take place', 'map places settings geography'],
   ['Tool', 'Compare two texts', '/explore/compare/', 'Shared themes and techniques, side by side', 'compare comparative essay two texts'],
-  ['Tool', 'My library', '/my-library/', 'Saved books, progress, streak and commonplace book', 'my library saved progress streak commonplace'],
+  ['Tool', 'My library', '/my-library/', 'Saved books, reading progress, scores and kept quotations', 'my library saved progress commonplace'],
   ['Tool', 'For teachers', '/for-teachers/', 'Lesson starters, worksheets and projector mode', 'teachers lesson worksheet classroom printable']
 ]) addEntry(tool[0], tool[1], tool[2], tool[3], tool[4]);
 
 fs.writeFileSync(searchFile, JSON.stringify({ entries: searchEntries }, null, 0) + '\n');
 
-// The homepage states how much study material exists; keep the two numbers
-// truthful rather than leaving them to rot.
-const homepageFile = path.join(root, 'index.html');
-if (fs.existsSync(homepageFile)) {
-  let homepage = fs.readFileSync(homepageFile, 'utf8');
-  for (const [key, value] of [['quotations', index.counts.quotations], ['titles', index.counts.books]]) {
+// Pages that state how much study material exists carry the figure in a
+// <span data-astor-count="…">, and the build writes the real number in.
+for (const file of ['index.html', 'guides/index.html']) {
+  const target = path.join(root, file);
+  if (!fs.existsSync(target)) continue;
+  let html = fs.readFileSync(target, 'utf8');
+  for (const [key, value] of [['quotations', index.counts.quotations], ['titles', index.counts.books], ['guides', index.counts.books]]) {
     const pattern = new RegExp('(<span data-astor-count="' + key + '">)[\\d,]+(<\\/span>)', 'g');
-    if (!pattern.test(homepage)) throw new Error('The homepage has no ' + key + ' counter');
-    homepage = homepage.replace(pattern, '$1' + Number(value).toLocaleString('en-GB') + '$2');
+    html = html.replace(pattern, '$1' + Number(value).toLocaleString('en-GB') + '$2');
   }
-  fs.writeFileSync(homepageFile, homepage);
+  fs.writeFileSync(target, html);
 }
 
 console.log(

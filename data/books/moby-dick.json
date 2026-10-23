@@ -21,33 +21,6 @@
     "url": "https://standardebooks.org/ebooks/herman-melville/moby-dick/text/single-page",
     "note": "The text follows the American edition, which has the epilogue the London issue left out."
   },
-  "atAGlance": [
-    {
-      "label": "London first",
-      "value": "October 1851",
-      "note": "Richard Bentley printed it in three volumes as The Whale, expurgated, and without the epilogue."
-    },
-    {
-      "label": "New York first",
-      "value": "November 1851",
-      "note": "Harper & Brothers printed it in one volume as Moby-Dick; or, The Whale."
-    },
-    {
-      "label": "Dedication",
-      "value": "Nathaniel Hawthorne",
-      "note": "Inscribed in token of his genius; the two men were neighbours in the Berkshires while the book was being finished."
-    },
-    {
-      "label": "Chief sources",
-      "value": "The Essex and Mocha Dick",
-      "note": "A whaleship sunk by a sperm whale in 1820, and a white bull already famous in maritime print."
-    },
-    {
-      "label": "Shape",
-      "value": "135 chapters",
-      "note": "Some run to twenty pages; several run to less than one."
-    }
-  ],
   "structure": [
     {
       "id": "shore",
@@ -229,11 +202,6 @@
       "summary": "He signs on as an ordinary sailor and then takes over the book, interrupting the voyage to explain whale anatomy, quote Sir Thomas Browne and stage a scene as drama. His curiosity saves him from Ahab’s kind of attention: he wants to know what things are, and Ahab wants to know what they mean about him.",
       "clue": "He goes to sea whenever he finds himself pausing in front of coffin warehouses, and he ends the book afloat on one.",
       "firstAppearance": "Chapter 1",
-      "traits": [
-        "digressive",
-        "companionable",
-        "unable to stop explaining"
-      ],
       "relationships": [
         {
           "to": "queequeg",
@@ -258,11 +226,6 @@
       "summary": "A Nantucket whaling captain of forty years’ experience who has decided that one animal is responsible for everything wrong with the universe. He is a brilliant manager of men and a competent navigator, and he uses both skills to convert thirty crew members and a hundred thousand dollars of other people’s property into an instrument of revenge.",
       "clue": "He walks on a leg carved from whale jaw, nails a gold coin to the mast for the man who first sights the whale, and then claims it himself.",
       "firstAppearance": "Chapter 28",
-      "traits": [
-        "monomaniacal",
-        "eloquent",
-        "an excellent commander"
-      ],
       "relationships": [
         {
           "to": "starbuck",
@@ -309,11 +272,6 @@
       "summary": "The only officer who states plainly that hunting one whale for revenge is blasphemy and bad business, and the only one with the standing to stop it. He is brave in a measured, professional way, thinks of his wife and child at Cape Cod, and once stands outside Ahab’s cabin with a loaded musket and cannot fire it.",
       "clue": "He will not have a man in his boat who is not afraid of a whale, and he is the one person aboard who says out loud that the voyage is madness.",
       "firstAppearance": "Chapter 26",
-      "traits": [
-        "conscientious",
-        "courageous by calculation",
-        "obedient past the point of use"
-      ],
       "relationships": [
         {
           "to": "ahab",
@@ -338,11 +296,6 @@
       "summary": "A tattooed South Sea islander who left home to learn Christian civilisation and concluded that it was not worth the trouble. He is the best workman aboard, rescues a man who has just insulted him, and has his coffin built while he is still able to climb into it and try the fit.",
       "clue": "He sells shrunken heads in the street, sleeps with a tomahawk pipe, and has his whole history tattooed on a body he cannot read.",
       "firstAppearance": "Chapter 3",
-      "traits": [
-        "generous",
-        "unembarrassed",
-        "expert"
-      ],
       "relationships": [
         {
           "to": "ishmael",
@@ -366,11 +319,6 @@
       "summary": "He kills whales with a pipe in his mouth and a joke running, and treats the whole voyage as an amusing arrangement that somebody else is responsible for. His good humour is the book’s most disturbing moral position, because it cannot be told apart from not caring what happens to anyone.",
       "clue": "He jokes his way through every lowering, smokes at the moment of the kill, and reads the gold coin as a comic almanac.",
       "firstAppearance": "Chapter 27",
-      "traits": [
-        "easy",
-        "cruel without malice",
-        "fatalistic"
-      ],
       "relationships": [
         {
           "to": "pip",
@@ -394,11 +342,6 @@
       "summary": "A small Black cabin boy from Tolland County, Connecticut, who is put into a whaleboat, jumps twice, and is left alone on the surface of the Pacific for a time no one bothers to measure. What comes back is treated by the crew as an idiot and by the narrator as a witness, and he is the one person Ahab treats tenderly.",
       "clue": "He jumped from a boat once too often, came back from the water saying things nobody wanted to hear, and ended up holding a mad captain’s hand.",
       "firstAppearance": "Chapter 27",
-      "traits": [
-        "small",
-        "abandoned",
-        "clear-sighted in the wrong register"
-      ],
       "relationships": [
         {
           "to": "ahab",
@@ -426,11 +369,6 @@
       "summary": "A Parsee smuggled aboard with a boat’s crew of his own, who gives Ahab a prophecy built like the witches’ riddles in a tragedy: two hearses, a hemp rope, and a promise that he will go before his captain. Every clause comes true in a way Ahab never considered.",
       "clue": "He is hidden in the hold until the first whale is raised, and his prophecy about hearses and hemp is the only accurate forecast in the book.",
       "firstAppearance": "Chapter 47",
-      "traits": [
-        "silent",
-        "oracular",
-        "exact"
-      ],
       "relationships": [
         {
           "to": "ahab",
@@ -450,11 +388,6 @@
       "summary": "Rumoured to be in several oceans at the same time and impossible to kill, he is also a large animal doing what large animals do when harpooned. The book will not decide between those two descriptions: Ahab needs the first, and Ishmael keeps producing evidence for the second.",
       "clue": "A wrinkled brow, a crooked jaw and a white hump: the only character in the book with no interior at all.",
       "firstAppearance": "Chapter 133",
-      "traits": [
-        "white",
-        "unreadable",
-        "physically enormous"
-      ],
       "relationships": [
         {
           "to": "ahab",
@@ -1220,130 +1153,6 @@
       "lat": 35,
       "lon": 145,
       "note": "The Pacific cruising ground off Japan where the typhoon strikes, before the Pequod runs south to the equator for the final chase."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "The book as American epic",
-      "summary": "The oldest line of the twentieth-century revival reads the Pequod as a working model of the republic: a multinational crew, a democratic argument about labour, and a leader who can persuade free men to sign away their interests.",
-      "counter": "It tends to treat the cetology chapters as ballast, when they are the part of the book that stops the ship becoming a symbol."
-    },
-    {
-      "position": "The book as a crisis of interpretation",
-      "summary": "A reading grounded in the whiteness chapter and the doubloon: the novel is about the impossibility of fixing meaning, and Ahab’s error is certainty, more than cruelty.",
-      "counter": "Taken far enough it makes every position in the book equivalent, which is hard to sustain against a narrative in which thirty men actually drown."
-    },
-    {
-      "position": "The book as a document of work and empire",
-      "summary": "Recent critics have concentrated on whaling as a global extractive industry: the lay system, the Pacific labour market, the traffic in bodies that Chapter 89 puts under the same law as fish.",
-      "counter": "This reading can be impatient with Ahab’s rhetoric, which is where most of the novel’s energy actually is."
-    },
-    {
-      "position": "The book as a quarrel with providence",
-      "summary": "Father Mapple’s sermon, Ahab’s addresses to the lightning and Pip’s promotion to prophet make a sustained argument with Calvinist inheritance, conducted by a writer who could neither believe nor let it alone.",
-      "counter": "It risks making Ishmael a theologian, when his most typical act is to change the subject to whale anatomy."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How far is Moby-Dick a novel about Ahab?",
-      "focus": "Narrative attention, digression and who the book belongs to",
-      "plan": [
-        "Count the ground: Ahab does not appear until Chapter 28 and is absent from most of the middle three hundred pages.",
-        "Use Chapters 32, 42 and 86 to show Ishmael pursuing a wholly different question from his captain’s.",
-        "Turn on Chapter 41, where the narrator explains Ahab so thoroughly that the explanation displaces the man.",
-        "Test the counter-case with the dramatic chapters, where Ahab speaks without a narrator between him and the reader.",
-        "Close on the Epilogue: the survivor is the one who kept getting distracted."
-      ]
-    },
-    {
-      "question": "What does the novel do with the colour white?",
-      "focus": "Symbol, blankness and the limits of reading",
-      "plan": [
-        "Set out the structure of Chapter 42: a list of white things that are lovely or holy, then a list of white things that are terrible.",
-        "Look at the grammar: the chapter is built from questions and never reaches a conclusion.",
-        "Compare the doubloon in Chapter 99, where the crew’s readings of one coin are given in sequence.",
-        "Ask what Ahab does differently, and why fixing a meaning is presented as an act of violence.",
-        "Weigh the ending: the surf is white, and the sea is indifferent to what that means."
-      ]
-    },
-    {
-      "question": "Discuss the treatment of work in Moby-Dick.",
-      "focus": "The lay system, the try-works and the economics of the voyage",
-      "plan": [
-        "Begin with Chapter 16 and the haggle over Ishmael’s three-hundredth lay: the voyage is a speculation in which the crew are investors who cannot withdraw.",
-        "Use the line, the monkey-rope and the cutting-in chapters to show danger described as routine.",
-        "Read Chapter 94 as the point where the work produces fellowship as well as oil.",
-        "Set Chapter 89 beside all of this: the law of fast-fish and loose-fish is applied to serfs, republics and continents.",
-        "Conclude on Ahab, who can only afford his revenge because somebody else owns the ship."
-      ]
-    },
-    {
-      "question": "‘Ishmael survives because he is interested in everything, and Ahab dies because he is interested in one thing.’ Discuss.",
-      "focus": "Attention, obsession and the shape of the narrative",
-      "plan": [
-        "Establish the contrast structurally: the digressions belong to Ishmael, the soliloquies to Ahab.",
-        "Use Chapter 96 to complicate it: Ishmael, too, stares into a fire and nearly wrecks the ship.",
-        "Bring in Pip, whose attention is destroyed by the sea and who is the one person Ahab can bear.",
-        "Consider Starbuck as a third case: he sees clearly, objects more than once, and still obeys.",
-        "Decide whether the Epilogue offers survival as a reward or simply as an accident with a coffin in it."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "The whale appears in person in only three chapters out of a hundred and thirty-five. Why does Melville keep it offstage for so long?",
-    "Chapter 42 tries to explain why whiteness is frightening and fails. Is the failure a flaw or the point?",
-    "Ishmael tells us he alone survived, but he narrates scenes he could not have witnessed. Does that damage the book?",
-    "Starbuck stands outside Ahab’s cabin with a loaded musket and does not use it. What is the novel saying about conscience that stops short of action?",
-    "Is Pip mad, or is he the only character who has seen the thing the book is about?",
-    "The Pequod’s crew comes from four continents and obeys one man without much argument. What does the novel think about that?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-scarlet-letter/",
-      "why": "The book Moby-Dick is dedicated to its author, published the year before, and the other great American argument about a symbol nobody can fix."
-    },
-    {
-      "href": "/books/frankenstein/",
-      "why": "The other study of a man whose thoughts create a creature that then feeds on him."
-    },
-    {
-      "href": "/books/paradise-lost/",
-      "why": "The poem behind Ahab’s quarrel with heaven, and the source of the grandeur his speeches borrow."
-    },
-    {
-      "href": "/books/the-odyssey/",
-      "why": "The long sea voyage as a form, and a captain who comes home alone, having lost every one of his crew."
-    },
-    {
-      "href": "/books/adventures-of-huckleberry-finn/",
-      "why": "The other great American book about water, in which the narrator’s voice matters more than the plot he is carrying."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Why should you read “Moby Dick”? - Sascha Morrell",
-      "provider": "youtube-nocookie",
-      "id": "mmoFxVqZ9z4",
-      "url": "https://www.youtube.com/watch?v=mmoFxVqZ9z4",
-      "note": "A short animated introduction to the novel.",
-      "source": "TED-Ed"
-    },
-    {
-      "title": "A Moby Dick Tour through the New Bedford Whaling Museum",
-      "provider": "youtube-nocookie",
-      "id": "jS79w13lHMA",
-      "url": "https://www.youtube.com/watch?v=jS79w13lHMA",
-      "note": "A tour of the whaling museum at New Bedford, the port where the novel begins.",
-      "source": "New Bedford Whaling Museum"
-    },
-    {
-      "title": "The Enduring Power of Moby-Dick with Nathaniel Philbrick",
-      "provider": "youtube-nocookie",
-      "id": "J7cPtUBo30E",
-      "url": "https://www.youtube.com/watch?v=J7cPtUBo30E",
-      "note": "A museum talk on the novel and the Nantucket whaling world behind it.",
-      "source": "Nantucket Historical Association"
     }
   ]
 }

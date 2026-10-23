@@ -21,28 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/9622/pg9622.txt",
     "note": "The 1798 first edition, with Coleridge’s original spelling of the Ancyent Marinere. The Astor edition also prints poems added in 1800; the quotations here are all from the 1798 texts. In Tintern Abbey the Astor edition counts each divided half-line as a line of its own, so from line 24 its numbers run one to three ahead of the usual count."
   },
-  "atAGlance": [
-    {
-      "label": "Published",
-      "value": "1798",
-      "note": "Anonymously, in five hundred copies printed by Biggs and Cottle in Bristol. Cottle soon sold the stock to J. and A. Arch, who put a London title page on it. Neither poet’s name appeared."
-    },
-    {
-      "label": "Written",
-      "value": "1797–98",
-      "note": "In the year the two men lived four miles apart in Somerset and walked most days."
-    },
-    {
-      "label": "Contents",
-      "value": "Twenty-three poems",
-      "note": "Four by Coleridge, the rest by Wordsworth, opening with the Marinere and closing above Tintern Abbey."
-    },
-    {
-      "label": "The claim",
-      "value": "Experiments",
-      "note": "The Advertisement offers the poems as trials of whether ordinary speech can carry poetry."
-    }
-  ],
   "structure": [
     {
       "id": "advertisement",
@@ -178,11 +156,6 @@
       "summary": "He shot a bird for no reason he can name and has been explaining it ever since. The poem gives him a punishment with no proportion to the crime and a moral at the end that does not cover what happened, which is why readers have argued about him for two hundred years.",
       "clue": "Holds a wedding guest with his eye, and cannot finish being sorry.",
       "firstAppearance": "The Rime of the Ancyent Marinere",
-      "traits": [
-        "compelled",
-        "haunted",
-        "unstoppable"
-      ],
       "relationships": [
         {
           "to": "wedding-guest",
@@ -201,11 +174,6 @@
       "summary": "He is late, he is unwilling, and he is changed by the end. His resistance is the poem’s measure of the tale’s force, and his final state, “a sadder and a wiser man”, is the closest thing the volume has to a statement about what listening to other people costs.",
       "clue": "Beats his breast, hears the bassoon, and cannot leave.",
       "firstAppearance": "The Rime of the Ancyent Marinere",
-      "traits": [
-        "reluctant",
-        "impatient",
-        "altered"
-      ],
       "relationships": [
         {
           "to": "marinere",
@@ -224,11 +192,6 @@
       "summary": "She sits on the mountain in a scarlet cloak crying oh misery, and the poem never establishes what happened to her child. Wordsworth gives the story to a narrator who cannot tell it, so the reader is left doing what the village does: assembling a woman’s tragedy out of gossip and a measured pond.",
       "clue": "Named in a poem that will not say what she did.",
       "firstAppearance": "The Thorn",
-      "traits": [
-        "silent",
-        "constant",
-        "talked about"
-      ],
       "relationships": [
         {
           "to": "thorn-narrator",
@@ -247,11 +210,6 @@
       "summary": "Wordsworth’s note describes him as a man of slow faculties and deep feelings who has settled in a village where he knows nobody. He measures the pond, repeats himself, and passes on what he has heard, and the poem turns out to be about his way of telling, more than the events.",
       "clue": "Has measured the pond: three feet long, and two feet wide.",
       "firstAppearance": "The Thorn",
-      "traits": [
-        "repetitive",
-        "credulous",
-        "well meaning"
-      ],
       "relationships": [
         {
           "to": "martha-ray",
@@ -270,11 +228,6 @@
       "summary": "She lives in a churchyard cottage with two of her siblings buried twelve steps from the door, and counts them in. The adult questioner repeats the arithmetic three times and gets nowhere, and the poem ends with his failure; she is never corrected.",
       "clue": "Answers every argument about death with the same three words: we are seven.",
       "firstAppearance": "We are seven",
-      "traits": [
-        "certain",
-        "unbothered",
-        "literal"
-      ],
       "relationships": [
         {
           "to": "questioner",
@@ -293,11 +246,6 @@
       "summary": "He appears in We are seven and in Anecdote for Fathers, and in both he is the one who comes off worse. Wordsworth uses him to put the reader’s own reasonableness in the poem and let it be defeated by a child who is not arguing at all.",
       "clue": "Presses a child for a reason twice, and is taught something both times.",
       "firstAppearance": "We are seven",
-      "traits": [
-        "reasonable",
-        "insistent",
-        "corrected"
-      ],
       "relationships": [
         {
           "to": "little-maid",
@@ -316,11 +264,6 @@
       "summary": "She sends her son out at night for a doctor and then spends the poem in an agony of self-reproach looking for him. Wordsworth defended the poem against charges of condescension, and the writing bears him out: her panic is given the attention a heroine’s would get.",
       "clue": "Sends her son on a pony for the doctor, searches all night, and finds him sitting on the pony by a waterfall.",
       "firstAppearance": "The Idiot Boy",
-      "traits": [
-        "devoted",
-        "frantic",
-        "unembarrassed"
-      ],
       "relationships": [
         {
           "to": "johnny",
@@ -339,11 +282,6 @@
       "summary": "He never reaches the doctor and comes home with a report of the night that is pure sensation: cocks crowing, a cold sun, the moon. His account is the only piece of poetry produced inside the poem, which is the joke and the argument together.",
       "clue": "Says the cocks crowed to-whoo, and that the sun shone cold.",
       "firstAppearance": "The Idiot Boy",
-      "traits": [
-        "happy",
-        "unhurried",
-        "oddly exact"
-      ],
       "relationships": [
         {
           "to": "betty-foy",
@@ -362,11 +300,6 @@
       "summary": "She is silent throughout and is given the poem’s whole argument to keep. Wordsworth turns from his own loss to her present pleasure, predicts her future grief, and asks her to remember that he stood there, so memory becomes something two people hold.",
       "clue": "Has wild eyes, and is told what she will need when the poet is gone.",
       "firstAppearance": "Tintern Abbey",
-      "traits": [
-        "present",
-        "silent",
-        "entrusted"
-      ],
       "relationships": [
         {
           "to": "speaker",
@@ -385,11 +318,6 @@
       "summary": "He walks, listens, asks the wrong questions and reports what he could not get. Across the volume he is a man being taught by the people he meets and by the places he returns to, and the last poem turns him from a collector of other people’s stories into the subject of one.",
       "clue": "Cuts through the root Simon Lee cannot, and is left mourning by the thanks.",
       "firstAppearance": "Simon Lee",
-      "traits": [
-        "watchful",
-        "self-questioning",
-        "slow to conclude"
-      ],
       "relationships": [
         {
           "to": "dorothy",
@@ -1033,99 +961,5 @@
       "lon": 10.4288,
       "note": "Where Wordsworth spent the winter after publication, writing the poems that filled the 1800 edition."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "The beginning of English Romanticism",
-      "summary": "The standard account treats 1798 as a break: ordinary subjects, plain diction, feeling as authority, and the end of eighteenth-century poetic decorum.",
-      "counter": "The book sold slowly and anonymously, its manifesto was written two years later, and much of it belongs to a ballad revival already twenty years old. The break is clearer in hindsight than it was at the time."
-    },
-    {
-      "position": "An experiment in the real language of men",
-      "summary": "Wordsworth’s claim, made in the Advertisement and expanded in the Preface, is that there is no essential difference between the language of poetry and that of good prose.",
-      "counter": "Coleridge devoted a chapter of Biographia Literaria to showing that his friend’s best lines are not in any ordinary man’s language, and that where they are, the poems are weakest."
-    },
-    {
-      "position": "The Marinere does not belong in it",
-      "summary": "Wordsworth blamed the poem for the volume’s poor sale, said it had great defects, and moved it out of first place in 1800.",
-      "counter": "It is the piece everyone can still quote, and the book’s argument about isolation and compulsive telling runs straight from it into the poems about the poor."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How successfully does the volume use ordinary speech for poetry?",
-      "focus": "Diction, metre and the claim of the Advertisement",
-      "plan": [
-        "Start with the Advertisement’s word, ‘experiments’, and what it asks a reader to set aside.",
-        "Take The Thorn’s measurements as the extreme case, and account for the ridicule they drew.",
-        "Set Simon Lee or We are seven beside it, where the flat language works.",
-        "Bring in Coleridge’s objection from Biographia Literaria, and test it on a passage of Tintern Abbey.",
-        "Conclude on whether the experiment succeeds as theory, as practice, or only in particular poems."
-      ]
-    },
-    {
-      "question": "What is Tintern Abbey doing at the end of the book?",
-      "focus": "Structure, metre and the turn to memory",
-      "plan": [
-        "Describe what changes: the book’s longest stretch of blank verse, longer sentences, a single continuous voice.",
-        "Trace the poem’s three times: the boy, the man five years ago, the man now.",
-        "Examine the compensation offered in place of youth, and the phrase about the music of humanity.",
-        "Account for the turn to the sister, and what entrusting the memory to her achieves.",
-        "Argue for what the volume gains by ending here, and not on another ballad."
-      ]
-    },
-    {
-      "question": "How does the book present the rural poor?",
-      "focus": "Class, sympathy and the refusal to moralise",
-      "plan": [
-        "Collect the cases: the female vagrant, the last of the flock, Simon Lee, Goody Blake.",
-        "Note what the poems mostly withhold: causes, blame, and any call to action.",
-        "Consider the effect of giving these figures direct speech and the poem’s own metre.",
-        "Weigh the charge of condescension, using The Idiot Boy and Wordsworth’s defence of it.",
-        "Decide whether attention without argument is a political position."
-      ]
-    },
-    {
-      "question": "Does The Rime of the Ancyent Marinere fit the volume it opens?",
-      "focus": "The two poets and one book",
-      "plan": [
-        "Set out the contrast: archaic spelling and supernatural machinery against Somerset paupers in plain words.",
-        "Show what the two halves share: compulsive telling, a listener who cannot leave, a punishment out of proportion.",
-        "Use Wordsworth’s own complaints and the 1800 demotion as evidence of the strain.",
-        "Consider Coleridge’s account of the division of labour between them.",
-        "Conclude on whether the volume is one book or two bound together."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "The Advertisement warns readers they may feel awkwardness and struggle. Which poem still produces that, and is the discomfort doing something?",
-    "Is We are seven about a child’s misunderstanding or an adult’s?",
-    "The Tables Turned says we murder to dissect. What would that mean for the study of this poem?",
-    "Why does Wordsworth give the poem’s last fifty lines to a sister who never speaks?",
-    "The Thorn’s narrator cannot tell the story. What do you learn from a poem told by the wrong person?",
-    "If you had bought this book in 1798 with no name on the title page, what would you have thought you had?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-rime-of-the-ancient-mariner/",
-      "why": "The poem that opens this volume, printed on its own with the 1798 text and its later revisions."
-    },
-    {
-      "href": "/books/selected-poems-of-samuel-taylor-coleridge/",
-      "why": "What Coleridge wrote either side of the Quantock year, including the conversation poems."
-    },
-    {
-      "href": "/books/frankenstein/",
-      "why": "Written twenty years later by a reader of both poets, and it quotes the Marinere at the moment its narrator loses his nerve."
-    },
-    {
-      "href": "/books/sense-and-sensibility/",
-      "why": "Published in 1811, and unsparing about the fashion for feeling that this book helped to license."
-    },
-    {
-      "href": "/books/paradise-lost/",
-      "why": "The blank verse Wordsworth is answering in Tintern Abbey, and the measure of what he does differently with it."
-    }
-  ],
-  "videos": []
+  ]
 }

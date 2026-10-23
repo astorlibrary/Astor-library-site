@@ -21,28 +21,6 @@
     "url": "https://standardebooks.org/ebooks/lewis-carroll/alices-adventures-in-wonderland/john-tenniel/text/single-page",
     "note": "A proofed transcription following Carroll’s revised wording. References give the chapter, which is the only division the book uses."
   },
-  "atAGlance": [
-    {
-      "label": "First told",
-      "value": "4 July 1862",
-      "note": "On a boating excursion from Oxford with Robinson Duckworth and the three Liddell sisters."
-    },
-    {
-      "label": "Manuscript",
-      "value": "Alice’s Adventures Under Ground",
-      "note": "Written out and illustrated by Carroll himself and given to Alice Liddell in November 1864."
-    },
-    {
-      "label": "First published",
-      "value": "1865",
-      "note": "The 1865 printing was withdrawn after Tenniel objected to the reproduction of his pictures; the replacement is dated 1866."
-    },
-    {
-      "label": "Illustrator",
-      "value": "John Tenniel",
-      "note": "Forty-two wood-engraved illustrations, made from Tenniel’s drawings by the Dalziel brothers."
-    }
-  ],
   "structure": [
     {
       "id": "down-the-hole",
@@ -161,11 +139,6 @@
       "summary": "She is the only person in the book who revises her opinions. Alice tries school knowledge, polite introductions and recitation, notices each time that the method has failed, and keeps a running commentary on her own conduct that is often sharper than anything the creatures say to her.",
       "clue": "She gives herself very good advice and seldom follows it, and she grows tall enough to stop being frightened of a court made of playing cards.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "curious",
-        "argumentative",
-        "self-correcting"
-      ],
       "relationships": [
         {
           "to": "white-rabbit",
@@ -211,11 +184,6 @@
       "summary": "He is the only creature in Wonderland who is frightened of being late, and the fear turns out to be well founded once the Queen appears. Anxious upwards and imperious downwards, he sets the plot going and then spends it running errands for people more dangerous than himself.",
       "clue": "Pink eyes, a waistcoat-pocket watch, white kid gloves, and a permanent terror of the Duchess and of being late.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "hurried",
-        "deferential",
-        "officious"
-      ],
       "relationships": [
         {
           "to": "alice",
@@ -243,10 +211,6 @@
       "summary": "He is offended twice over by Alice’s cat and her neighbour’s terrier before he can begin his history, which is then delivered as the driest paragraph of Norman constitutional record Carroll could find. His long tale is the book’s first joke about a word doing two jobs.",
       "clue": "Swimming in a pool of tears, this one takes offence at any talk of cats, recites the driest history it knows to dry everyone off, and tells a tale that winds down the page like a tail.",
       "firstAppearance": "Chapter II",
-      "traits": [
-        "easily wounded",
-        "pedantic"
-      ],
       "relationships": [
         {
           "to": "alice",
@@ -266,11 +230,6 @@
       "summary": "He conducts the only real interrogation in the book, and he is entitled to it: a creature that will shortly liquefy into a butterfly has a professional interest in whether anybody stays themselves. His contempt is useful to Alice, because it forces her to say out loud that she cannot explain herself.",
       "clue": "Three inches high, smoking on a mushroom, and unimpressed by a girl who says she is not herself today.",
       "firstAppearance": "Chapter V",
-      "traits": [
-        "languid",
-        "severe",
-        "exact"
-      ],
       "relationships": [
         {
           "to": "alice",
@@ -289,11 +248,6 @@
       "summary": "The only creature who is candid with Alice, and the only one who can leave a conversation gradually. His directions are logically impeccable and practically useless, which makes him the book’s clearest demonstration that valid reasoning and helpful reasoning are different things.",
       "clue": "It can vanish slowly from the tail upwards, leaving a smile behind, and it tells Alice that everyone present is mad, itself included.",
       "firstAppearance": "Chapter VI",
-      "traits": [
-        "candid",
-        "detachable",
-        "logical"
-      ],
       "relationships": [
         {
           "to": "alice",
@@ -321,11 +275,6 @@
       "summary": "In her own house she shakes a baby, sings about beating it, and is under sentence of execution; released, she becomes affectionate and finds a moral in everything Alice says. The two performances belong to the same person, and her manners have no connection to her conduct.",
       "clue": "She sings a lullaby about beating a boy when he sneezes, flings the baby at a stranger, and later finds a moral in everything.",
       "firstAppearance": "Chapter VI",
-      "traits": [
-        "violent",
-        "sententious",
-        "sharp-chinned"
-      ],
       "relationships": [
         {
           "to": "queen-of-hearts",
@@ -352,11 +301,6 @@
       "summary": "He quarrelled with Time while singing at a concert and has been stuck at six o’clock ever since, which gives his rudeness a grievance behind it. He asks a riddle he cannot answer, corrects Alice’s grammar while ignoring her meaning, and later gives evidence in court shaking too hard to stand.",
       "clue": "He fell out with Time at a concert and has been stuck at tea ever since, and he asks a riddle to which he admits he has not the slightest idea of the answer.",
       "firstAppearance": "Chapter VII",
-      "traits": [
-        "rude",
-        "aggrieved",
-        "terrified in court"
-      ],
       "relationships": [
         {
           "to": "alice",
@@ -383,11 +327,6 @@
       "summary": "She has one procedure for every difficulty, and it is beheading. Nothing she orders is ever carried out, because the King secretly pardons everybody, so her power is pure noise, frightening until somebody notices.",
       "clue": "Her answer to every difficulty is the same three words, and the King pardons everyone behind her back so that none of her sentences is ever carried out.",
       "firstAppearance": "Chapter VIII",
-      "traits": [
-        "furious",
-        "arbitrary",
-        "ineffectual"
-      ],
       "relationships": [
         {
           "to": "alice",
@@ -416,11 +355,6 @@
       "summary": "He exists because mock turtle soup was made of veal, so Carroll gives him a calf’s head and a permanent sob. His account of an education in Reeling, Writhing and the different branches of Arithmetic is the book’s most sustained joke about school, and it is delivered as real grief.",
       "clue": "He sobs through the story of his schooling in the sea, where the master was called Tortoise because he taught them, and sings of beautiful soup.",
       "firstAppearance": "Chapter IX",
-      "traits": [
-        "tearful",
-        "nostalgic",
-        "punning"
-      ],
       "relationships": [
         {
           "to": "alice",
@@ -1112,124 +1046,6 @@
       "lat": 51.2362,
       "lon": -0.5704,
       "note": "The Chestnuts, his sisters’ house, where he died in January 1898."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "A book about logic and language",
-      "summary": "Carroll taught mathematics and wrote on logic, and this reading takes the creatures’ arguments seriously as arguments: most are valid, and the fault lies in the premises or in a shift between senses of a word.",
-      "counter": "It can make Wonderland sound like a textbook, when a great deal of the book’s force is emotional: the fear of being someone else, and the misery of being talked down to."
-    },
-    {
-      "position": "A child’s book that satirises adult institutions",
-      "summary": "School, etiquette, committees, monarchy and the law all appear in forms a child can follow, and all fail their own tests. On this account Alice is learning to tell a rule that helps people live together from a rule that only protects whoever is shouting.",
-      "counter": "Carroll disliked being told what his book meant, and a satirical target can usually be swapped for another without the scene changing at all."
-    },
-    {
-      "position": "A book made twice over",
-      "summary": "Because the 1864 manuscript survives, Wonderland can be read against the shorter story Carroll first wrote out, and the most famous episodes, the tea-party, the Cheshire Cat, the Duchess’s kitchen, turn out to be additions made for the public.",
-      "counter": "Treating the manuscript as the ‘real’ version mistakes a private gift for a draft; the two texts were made for different readers and do different work."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Carroll use changes of size to show who Alice is?",
-      "focus": "Identity, the body and the limits of self-knowledge",
-      "plan": [
-        "Establish the pattern: eleven changes of height, each answered with a question about identity.",
-        "Read the tests in Chapter II (Ada’s ringlets, Mabel’s ignorance, the multiplication table) as an attempt to prove identity from evidence.",
-        "Set the Caterpillar’s questioning against that failure, and note that Alice’s answer is an admission.",
-        "Turn the argument at the mushroom: from Chapter V onwards size is a tool she uses where before it was an accident she suffered.",
-        "Close on Chapter XII, where growing large is an act of judgement about the court."
-      ]
-    },
-    {
-      "question": "‘Wonderland is not lawless; it is over-governed.’ Discuss.",
-      "focus": "Rules, procedure and authority",
-      "plan": [
-        "Distinguish the two claims: disorder, or an excess of rules that nobody has agreed to.",
-        "Use the Caucus-race as the first case: a complete procedure with no contest inside it.",
-        "Read the croquet ground for the relation between ceremony and effect: sentences are passed about once a minute and nothing is carried out.",
-        "Examine the order of the trial: judge, jury, evidence and verdict are all present and only the sequence has gone.",
-        "Decide whether Alice’s final refusal shows that authority here depends on the consent of everybody who agrees to be frightened."
-      ]
-    },
-    {
-      "question": "What does Carroll do with parody, and does it still work for a reader who does not know the originals?",
-      "focus": "Verse, recitation and memory",
-      "plan": [
-        "Set out what is being parodied: improving verse of the kind children were made to learn by heart.",
-        "Show how the parodies are staged as failures of memory: Alice sets out to recite and something else comes out.",
-        "Compare the Mock Turtle’s account of his schooling, where the joke is on the curriculum.",
-        "Test the question directly: what survives for a reader with no original in mind, and what is lost.",
-        "Conclude on what recitation is for in the book: a proof of identity that keeps failing."
-      ]
-    },
-    {
-      "question": "How does the dream frame affect the way the book ends?",
-      "focus": "Structure, the waking and the sister’s second dream",
-      "plan": [
-        "Describe the frame exactly: a drowsy afternoon, a fall, and a waking with leaves on the face.",
-        "Ask whether the dream is used to explain the impossibilities, and note how little of the book depends on their being explained.",
-        "Read the changes at the waking, cards into leaves, shrieks into a shepherd boy, as a translation of the dream.",
-        "Examine the sister’s deliberate re-dreaming, and what it says about rereading a book you already know.",
-        "Weigh the ending against the fear the middle chapters generate: is the frame a comfort, or an admission that none was needed?"
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Alice changes her mind; the creatures she meets never do. Does that make her the heroine, or just the outsider?",
-    "The Queen orders constant executions and none takes place. Is she frightening?",
-    "Almost every creature corrects Alice’s English. Why does Carroll make rudeness so specifically grammatical?",
-    "The tea-party has no plot and no consequence. What would the book lose without it?",
-    "Tenniel’s pictures arrived with the first published text. Can the book now be read without them?"
-  ],
-  "related": [
-    {
-      "href": "/books/gullivers-travels/",
-      "why": "Another traveller who measures an impossible country deadpan, and another book that children were given after the satire had been trimmed off it."
-    },
-    {
-      "href": "/books/the-wind-in-the-willows/",
-      "why": "Talking animals with settled manners: the opposite arrangement, where the creatures are courteous and the rules hold."
-    },
-    {
-      "href": "/books/the-railway-children/",
-      "why": "Children left to work out an adult world for themselves, without any of Wonderland’s licence to be rude back."
-    },
-    {
-      "href": "/books/anne-of-green-gables/",
-      "why": "Another heroine who talks herself through trouble, and another book in which recitation is a test of who a child is."
-    },
-    {
-      "href": "/books/the-importance-of-being-earnest/",
-      "why": "Nonsense logic promoted to social weapon: characters who reason impeccably from premises they have just invented."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Alice in Medieval Oxford",
-      "provider": "youtube-nocookie",
-      "id": "npbENFQhzXA",
-      "url": "https://www.youtube.com/watch?v=npbENFQhzXA",
-      "note": "A Bodleian film on the medieval Oxford behind the story.",
-      "source": "Bodleian Libraries"
-    },
-    {
-      "title": "Alice’s Adventures Underground: A Reading",
-      "provider": "youtube-nocookie",
-      "id": "DGmVB4ZGR44",
-      "url": "https://www.youtube.com/watch?v=DGmVB4ZGR44",
-      "note": "Actors read Carroll's original handwritten version in full.",
-      "source": "British Library"
-    },
-    {
-      "title": "Chris Riddell’s Alice in Wonderland",
-      "provider": "youtube-nocookie",
-      "id": "zCi7d8NCR_A",
-      "url": "https://www.youtube.com/watch?v=zCi7d8NCR_A",
-      "note": "An illustrator draws and actors perform scenes from the book.",
-      "source": "British Library"
     }
   ]
 }

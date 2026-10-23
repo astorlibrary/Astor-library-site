@@ -22,28 +22,6 @@
     "url": "https://shakespeare.mit.edu/richardiii/full.html",
     "note": "The quarto and Folio texts differ substantially, and other modern editions number the play differently. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1592–93",
-      "note": "It completes the sequence begun by the three Henry VI plays, and assumes an audience that knows them."
-    },
-    {
-      "label": "First printed",
-      "value": "1597",
-      "note": "A quarto printed by Valentine Simmes for Andrew Wise, with no author named. The 1598 second quarto adds Shakespeare’s name."
-    },
-    {
-      "label": "Chief sources",
-      "value": "More, Hall and Holinshed",
-      "note": "Thomas More’s hostile life of Richard reached Shakespeare through the Tudor chronicles, already shaped into a villain."
-    },
-    {
-      "label": "Two texts",
-      "value": "Quarto and Folio",
-      "note": "The Folio text is longer and differs from the quarto tradition throughout; the relationship between them is still an open editorial question."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -219,11 +197,6 @@
       "summary": "He is the funniest person in the play and knows it, which is the trap: the audience laughs at the jokes and is therefore in the room for the murders. He is not a hypocrite in the ordinary sense, because he tells us the truth constantly; he simply tells nobody on stage.",
       "clue": "He is his own prologue, announces his plan in the first speech, and by Act V is arguing with himself about whether he is a villain and losing both sides.",
       "firstAppearance": "1.1",
-      "traits": [
-        "improvising",
-        "funny",
-        "alone by Act V"
-      ],
       "relationships": [
         {
           "to": "buckingham",
@@ -265,11 +238,6 @@
       "summary": "The only person who is let into part of the plan, and he is good at it: the staged emergency and the bogus refusal of the crown are largely his productions. He hesitates exactly once, over the princes, and discovers that there was never a second place in the arrangement.",
       "clue": "He boasts that he can counterfeit the deep tragedian, stage-manages a fake coronation appeal, and is dropped the moment he pauses over a murder.",
       "firstAppearance": "1.3",
-      "traits": [
-        "fluent",
-        "theatrical",
-        "one hesitation too many"
-      ],
       "relationships": [
         {
           "to": "richard",
@@ -298,11 +266,6 @@
       "summary": "Historically she was not in England at all by this date, and Shakespeare keeps her anyway because the play needs someone who remembers. Her curses are memory with a very long reach, and the characters who dismiss her in Act I quote her accurately on their way to the block.",
       "clue": "Banished on pain of death, she walks into the court anyway and curses everyone in it, and the curses come true one by one.",
       "firstAppearance": "1.3",
-      "traits": [
-        "unhoused",
-        "retentive",
-        "vindicated"
-      ],
       "relationships": [
         {
           "to": "richard",
@@ -327,11 +290,6 @@
       "summary": "She begins as a court politician anxious about her relatives’ standing and ends as the one person who holds a long conversation with Richard and gives nothing away. Whether she agrees to give him her daughter or plays for time is a question the text leaves open.",
       "clue": "She loses a husband, two sons and most of her family, then talks for two hundred lines with the man who took them and leaves him thinking he has won.",
       "firstAppearance": "1.3",
-      "traits": [
-        "exposed",
-        "durable",
-        "unreadable at the end"
-      ],
       "relationships": [
         {
           "to": "richard",
@@ -358,11 +316,6 @@
       "summary": "She is given one great scene, in which she out-argues Richard line for line and then takes his ring anyway, and one short scene four acts later in which she explains what the marriage has cost her. The play never accounts for the change, which is why the scene is still argued about.",
       "clue": "She spits at him over a coffin, calls him a fouler toad than any poison ever hung on, and is wearing his ring before the corpse has been carried off.",
       "firstAppearance": "1.2",
-      "traits": [
-        "quick-tongued",
-        "worn down",
-        "briefly queen"
-      ],
       "relationships": [
         {
           "to": "richard",
@@ -382,10 +335,6 @@
       "summary": "She has outlived a husband and is watching her sons destroy one another, and the play gives her the one curse that is delivered by someone with an unquestionable right to it. Her farewell to Richard is a mother’s formal withdrawal of blessing, and he asks the drums to drown it.",
       "clue": "Three of her sons appear in this play; she buries two of them and sends the third to Bosworth with her heaviest curse instead of a blessing.",
       "firstAppearance": "2.2",
-      "traits": [
-        "bereaved",
-        "unsparing"
-      ],
       "relationships": [
         {
           "to": "richard",
@@ -409,10 +358,6 @@
       "summary": "He is imprisoned on the strength of a prophecy his brother invented and killed on the strength of a warrant his brother sent, and he spends his last scene describing a dream in which the dead he betrayed at Tewkesbury come for him. He is not innocent, and the murder is still shocking.",
       "clue": "A letter of the alphabet sends him to the Tower, where he dreams of drowning among jewels and wakes to two men arguing about conscience.",
       "firstAppearance": "1.1",
-      "traits": [
-        "trusting of the wrong brother",
-        "haunted"
-      ],
       "relationships": [
         {
           "to": "richard",
@@ -431,10 +376,6 @@
       "summary": "He celebrates the execution of his enemies in the morning and is executed himself after lunch, having explained an hour earlier that he knows Richard’s face too well to be in danger. His speech on the block is the play’s plainest statement about reading the powerful.",
       "clue": "He laughs at a warning dream, rejoices at his rivals’ deaths at Pomfret, and loses his head between the strawberries and dinner.",
       "firstAppearance": "1.1",
-      "traits": [
-        "complacent",
-        "briefly right about everything except himself"
-      ],
       "relationships": [
         {
           "to": "richard",
@@ -453,11 +394,6 @@
       "summary": "He arrives with fewer than two hundred lines and no inner life at all, and that is a choice: after four acts of a man who talks to us all the time, the play gives us a leader who talks only to his army and to God. The play announces the Tudor settlement without dramatising it.",
       "clue": "He lands at Milford Haven, sleeps well, is blessed by every ghost that curses his opponent, and ends the play by marrying a woman who never appears in it.",
       "firstAppearance": "5.2",
-      "traits": [
-        "public",
-        "opaque",
-        "the settlement in person"
-      ],
       "relationships": [
         {
           "to": "richard",
@@ -1249,129 +1185,6 @@
       "lat": 52.59,
       "lon": -1.411,
       "note": "The two tents, the ghosts and the battle in which Richard is killed."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "A providential history",
-      "summary": "The reading that takes Margaret’s curses at face value: the play traces a pattern of retribution running back through the Henry VI plays and closing with the Tudor marriage, so that Richard is the instrument by which England is scourged and cleansed.",
-      "counter": "It has to explain why the scourge gets the best lines, the jokes and the audience’s attention for four acts."
-    },
-    {
-      "position": "A play about political theatre",
-      "summary": "On this account the subject is the manufacture of consent: the staged arrest, the fake emergency at 3.5, the rehearsed refusal at 3.7, and the citizens who say nothing. Tyranny here works in public and depends on witnesses agreeing to be an audience.",
-      "counter": "The last act abandons that interest almost completely for ghosts, dreams and a battle, which is a strange way to end a play about spin."
-    },
-    {
-      "position": "Richard as a part for an actor",
-      "summary": "Criticism has long treated the part as an inheritance from the morality-play Vice, a job of work for a virtuoso actor, which is why its stage history is a history of performers.",
-      "counter": "It underrates 5.3, where Shakespeare gives the role an interior at exactly the moment the performance stops."
-    },
-    {
-      "position": "Deformity, and who is doing the describing",
-      "summary": "Critics writing about disability have examined how consistently Richard’s body is read as a moral text, by Margaret, by the Duchess and by Richard himself, and asked whether the play endorses that reading or exhibits it.",
-      "counter": "Richard supplies most of the descriptions himself, which makes it hard to separate the play’s view from his performance of one."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Shakespeare make an audience enjoy the company of a murderer?",
-      "focus": "Direct address, humour and complicity",
-      "plan": [
-        "Start with the structural fact: Richard speaks first, alone, and briefs us before the plot begins.",
-        "Analyse the jokes: the Vice comparison at 3.1, the two-meaning asides, the flat dismissal of Anne at 1.2.223.",
-        "Show how dramatic irony makes the audience an insider at every scene of trust, from Clarence to Hastings.",
-        "Mark the withdrawal: once Richard is crowned the soliloquies shrink to bookkeeping, and the murders arrive by report instead.",
-        "Conclude on 5.3, where he talks to himself because there is nobody else, and ask what the play has done to us by then."
-      ]
-    },
-    {
-      "question": "What is the function of the women in the play?",
-      "focus": "Lament, memory and the limits of Richard’s method",
-      "plan": [
-        "Begin with Margaret’s anomalous presence: historically absent, dramatically indispensable as the play’s memory.",
-        "Trace the curses of 1.3 through Rivers at Pomfret, Hastings on the block and Buckingham at Salisbury.",
-        "Read 4.4 as a formal set piece (matched laments, a shared arithmetic of dead sons) that Richard cannot interrupt.",
-        "Compare the two wooing scenes, and weigh the case that Elizabeth is playing for time and has not consented.",
-        "Decide whether the women are the play’s moral centre or its chorus, and what difference that makes to the ending."
-      ]
-    },
-    {
-      "question": "‘The play is about theatre, not about history.’ Discuss.",
-      "focus": "Performance, staging and the Tudor settlement",
-      "plan": [
-        "Collect the play’s own theatrical vocabulary: counterfeit, tragedian, vice, plot, induction, stratagem.",
-        "Analyse 3.5 and 3.7 as staged productions with scripts, props, cues and a silent audience of citizens.",
-        "Set against this the historical apparatus: the chroniclers, the tetralogy, the marriage that closes it.",
-        "Test the claim on Act V, which replaces performance with dreams, ghosts and a battle.",
-        "Conclude on Richmond, who makes a public statement no one is allowed to examine, and ask which mode wins."
-      ]
-    },
-    {
-      "question": "How far does the play invite sympathy for Richard?",
-      "focus": "Deformity, self-description and the nightmare",
-      "plan": [
-        "Open with the problem of evidence: nearly everything said about Richard’s body is said by Richard or by his enemies.",
-        "Read the opening soliloquy as a performance for the audience, noting ‘descant’ and ‘determined’.",
-        "Weigh Margaret’s and the Duchess’s language against his own, and ask whether the play shares their view.",
-        "Examine 5.3 closely: the first speech in which he is not in control of who is talking.",
-        "Conclude on the difference between sympathy, fascination and complicity, and which of the three the play actually produces."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Richard tells us his plan in the first forty lines. Why is the play still suspenseful?",
-    "Anne accepts the ring of the man who killed her husband and her father-in-law. Is that scene believable, and does it need to be?",
-    "Margaret has no legal standing, no power and no business being in England. What does the play lose if a production cuts her, as many have?",
-    "The princes are murdered offstage and described in some of the play’s loveliest language. Why that choice?",
-    "Richmond has almost no interiority at all. Is that a failure of the writing or a deliberate contrast?"
-  ],
-  "related": [
-    {
-      "href": "/books/henry-vi-part-3/",
-      "why": "Richard’s first long soliloquy is there, and this play begins in the middle of a conversation started in it."
-    },
-    {
-      "href": "/books/richard-ii/",
-      "why": "The other deposition play, and the opposite temperament: a king who cannot stop talking about himself and has no plan at all."
-    },
-    {
-      "href": "/books/macbeth/",
-      "why": "Shakespeare’s later return to the same material (a usurper, a prophecy and a battlefield) with the jokes and the audience’s company taken away."
-    },
-    {
-      "href": "/books/king-john/",
-      "why": "Another history with a child in the way of a crown, and a man who hesitates over the order to remove him."
-    },
-    {
-      "href": "/books/henry-v/",
-      "why": "The other Shakespearean study of a leader who understands that ruling is partly a performance, and is admired for it."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Richard III Plot Summary | Richard III (2024) | Summer 2024 | Shakespeare's Globe",
-      "provider": "youtube-nocookie",
-      "id": "7bsHQlVEPNU",
-      "url": "https://www.youtube.com/watch?v=7bsHQlVEPNU",
-      "note": "A short run-through of the play's story from Shakespeare's Globe.",
-      "source": "Shakespeare's Globe"
-    },
-    {
-      "title": "Now is the winter of our discontent... | Act 1 scene 1 | Richard III (2024) | Shakespeare's Globe",
-      "provider": "youtube-nocookie",
-      "id": "61SiNygN9EY",
-      "url": "https://www.youtube.com/watch?v=61SiNygN9EY",
-      "note": "The opening soliloquy performed at the Globe.",
-      "source": "Shakespeare's Globe"
-    },
-    {
-      "title": "Richard III stage footage | Act 1, Scene 1 | 2012 | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "5lMpF1R1z1I",
-      "url": "https://www.youtube.com/watch?v=5lMpF1R1z1I",
-      "note": "The same opening scene as the Royal Shakespeare Company staged it in 2012.",
-      "source": "Royal Shakespeare Company"
     }
   ]
 }

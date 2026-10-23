@@ -27,7 +27,6 @@ function render(book) {
     ['Quotation worksheet', () => quotationSheet(book)],
     ['Character worksheet', () => characterSheet(book)],
     ['Sequencing worksheet', () => sequenceSheet(book)],
-    ['Discussion sheet', () => discussionSheet(book)],
     ['Knowledge check', () => knowledgeSheet(book)]
   ];
 
@@ -126,20 +125,6 @@ function sequenceSheet(book) {
   return sheet;
 }
 
-function discussionSheet(book) {
-  const sheet = sheetShell(book, 'Discussion sheet', 'for pairs or groups');
-  const questions = (book.discussionQuestions || []).concat(
-    (book.criticalViews || []).map(view => view.position + '. ' + view.summary + ' Against this: ' + (view.counter || 'It goes too far.') + ' Which side do you agree with?')
-  );
-  sheet.append(el('ol', {}, questions.map(question => {
-    const item = el('li', {});
-    item.append(el('p', { text: question }));
-    item.append(rules(2));
-    return item;
-  })));
-  return sheet;
-}
-
 function knowledgeSheet(book) {
   const sheet = sheetShell(book, 'Knowledge check', 'ten questions, answers below');
   // The same draw has to answer the same questions, so the samples are taken
@@ -181,8 +166,7 @@ function openProjector(book) {
       text: quotation.text,
       meta: (quotation.speaker ? quotation.speaker + ' · ' : '') + book.title + ' ' + quotation.reference
     })),
-    ...book.themes.map(theme => ({ text: theme.name, meta: book.title + ' · theme' })),
-    ...(book.discussionQuestions || []).map(question => ({ text: question, meta: book.title + ' · discussion' }))
+    ...book.themes.map(theme => ({ text: theme.name, meta: book.title + ' · theme' }))
   ];
   if (!slides.length) return;
 

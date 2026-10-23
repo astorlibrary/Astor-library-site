@@ -8,9 +8,8 @@ const septemberCatalogue = require('./september-catalogue-data.json');
 const conciseCatalogue = require('./concise-catalogue-data.json');
 const { seasons, booksFor, hrefFor } = require('./seasonal-helpers');
 const { loadBooks } = require('./book-data');
-const { renderToolkit } = require('./study-toolkit');
 const { accentFor, motifSvg, motifSvgByName, motifName, identityFor } = require('./book-motifs');
-const { normaliseBookOrder } = require('./normalise-book-page');
+const { restructureBookPage } = require('./book-page');
 const { searchDescription } = require('./text-excerpt');
 
 const root = process.cwd();
@@ -35,7 +34,7 @@ const VERSIONED_ASSETS = [
   '/assets/styles.css', '/assets/astor-study.css', '/assets/home.css', '/assets/seasons.css',
   '/assets/account.css', '/assets/presentation-viewer.css', '/assets/site.js', '/assets/catalogue.js',
   '/assets/explore.js', '/assets/resources.js', '/assets/resource-library.js', '/assets/seasonal-theme.css',
-  '/assets/theme.css'
+  '/assets/theme.css', '/assets/editorial.css'
 ];
 
 function versionAssets(html) {
@@ -150,8 +149,8 @@ function useBookThumbnail(tag, sourceFile) {
   const thumbnail = collectionBanners[resolvedSource] || bookThumbnails[resolvedSource] || (alreadyThumbnail ? resolvedSource : '');
   if (!thumbnail) return tag;
   let result = tag.replace(/\bsrc="[^"]+"/i, 'src="' + thumbnail + '"');
-  // Lazy images with a declared width also get the 360px variant so small
-  // cells stop downloading 720px files. The sizes value is the declared width,
+  // Lazy images with a declared width also get the 320px variant so small
+  // cells stop downloading the 640px file. The sizes value is the declared width,
   // never "auto": browsers lay an auto-sized lazy image out at the wrong shape
   // until it decodes, which showed as squashed covers. Undeclared widths keep
   // the plain 720px source.
@@ -160,7 +159,7 @@ function useBookThumbnail(tag, sourceFile) {
   if (declaredWidth && /\bloading="lazy"/i.test(result) && !/\bsrcset=/i.test(result) &&
       thumbnail.startsWith('/assets/book-thumbs/') &&
       fs.existsSync(path.join(root, smallThumbnail.replace(/^\//, '')))) {
-    result = result.replace('<img', '<img srcset="' + smallThumbnail + ' 360w, ' + thumbnail + ' 720w" sizes="' + declaredWidth + 'px"');
+    result = result.replace('<img', '<img srcset="' + smallThumbnail + ' 320w, ' + thumbnail + ' 640w" sizes="' + declaredWidth + 'px"');
   }
   return result;
 }
@@ -611,7 +610,7 @@ const ASTOR_FOUNDER = {
   name: 'Haydn Wood',
   jobTitle: 'Founder and editor',
   url: SITE_URL + '/about/#editor',
-  image: SITE_URL + '/assets/about/haydn-wood-480.jpg'
+  image: SITE_URL + '/assets/about/haydn-wood-portrait-480.jpg'
 };
 
 // Search descriptions are cut to whole sentences, and a one-sentence description
@@ -740,76 +739,8 @@ function addGlobalMetadata(html, source) {
   return html.replace('</head>', metadata + '</head>');
 }
 
-function addBookReadingNavigation(html, source) {
-  const context = bookContext(source);
-  if (!context) return html;
-  const { book, collection } = context;
-  const collectionHref = collection?.href || '/library/';
 
-  if (!html.includes('class="book-breadcrumb"')) {
-    const breadcrumb = '<nav class="book-breadcrumb" aria-label="Breadcrumb">' +
-      '<a href="/library/">All books</a><span aria-hidden="true">/</span>' +
-      '<a href="' + escapeHtml(collectionHref) + '">' + escapeHtml(book.collection) + '</a>' +
-      '<span aria-hidden="true">/</span><span aria-current="page">' + escapeHtml(book.title) + '</span></nav>';
-    const withIntro = html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*")/i, breadcrumb + '$1');
-    html = withIntro === html
-      ? html.replace(/(<main\b[^>]*>)/i, '$1' + breadcrumb)
-      : withIntro;
-  }
 
-  if (!html.includes('class="book-end-nav"')) {
-    const endNav = '<nav class="book-end-nav" aria-label="End of page">' +
-      '<a href="#main-content">Back to the top <span aria-hidden="true">&uarr;</span></a>' +
-      (book.authorHref ? '<a href="' + escapeHtml(book.authorHref) + '">More by ' + escapeHtml(book.author) + '</a>' : '') +
-      '<a href="' + escapeHtml(collectionHref) + '">More from ' + escapeHtml(book.collection) + '</a>' +
-      '<a href="/explore/">Find another book <span aria-hidden="true">&rarr;</span></a></nav>';
-    html = html.replace('</main>', endNav + '</main>');
-  }
-
-  return html;
-}
-
-function addBookAuthorLink(html, source) {
-  const context = bookContext(source);
-  if (!context?.book?.authorHref) return html;
-  const { book } = context;
-  return html.replace(/<p class="kicker">([\s\S]*?)<\/p>/i, function (match, contents) {
-    if (plainText(contents) !== book.author || /<a\b/i.test(contents)) return match;
-    return '<p class="kicker book-author-kicker"><a href="' + escapeHtml(book.authorHref) + '">' + contents + '</a></p>';
-  });
-}
-
-function addBookPassageLinks(html, source) {
-  const context = bookContext(source);
-  if (!context || html.includes('class="book-passage-shelf"')) return html;
-  const { book } = context;
-  const passages = (discovery.passages || []).filter(passage => passage.relatedBooks?.includes(book.href));
-  if (!passages.length) return html;
-
-  const cards = passages.map(function (passage) {
-    const number = String((discovery.passages || []).indexOf(passage) + 1).padStart(2, '0');
-    return '<a href="' + escapeHtml(passage.href) + '">' +
-      '<span>' + number + ' · Close reading</span>' +
-      '<blockquote>' + escapeHtml(passage.title) + '</blockquote>' +
-      '<p>' + escapeHtml(passage.description) + '</p>' +
-      '<b>Read the annotated passage <span aria-hidden="true">&rarr;</span></b></a>';
-  }).join('');
-
-  const resources = (discovery.resources || [])
-    .filter(resource => resource.relatedBooks?.includes(book.href))
-    .slice(0, 3);
-  const resourceLinks = resources.length
-    ? '<nav class="book-passage-resources" aria-label="Free resources for ' + escapeHtml(book.title) + '">' +
-      '<span>Free guides for this book</span>' +
-      resources.map(resource => '<a href="' + escapeHtml(resource.href) + '">' + escapeHtml(resource.title) + '</a>').join('') +
-      '</nav>'
-    : '';
-  const section = '<section class="book-passage-shelf" aria-labelledby="book-passage-title">' +
-    '<div class="book-passage-shelf-head"><div><p class="kicker">Annotated passages</p><h2 id="book-passage-title">Close readings from this book.</h2></div>' +
-    '<p>Short passages from the book, explained line by line.</p></div>' +
-    '<div class="book-passage-grid">' + cards + '</div>' + resourceLinks + '</section>';
-  return html.replace('</main>', section + '</main>');
-}
 
 // Aggregate a writer's close readings onto their author page — the per-book
 // shelves already sit on each book page; this gathers them in one place.
@@ -884,93 +815,10 @@ function addEditorialCredit(html, source) {
   return withIntro === html ? html.replace(/(<main\b[^>]*>)/i, '$1' + credit) : withIntro;
 }
 
-// One box near the top of every book page with each format that can be
-// bought: paperback, any second paperback edition, hardback, study edition.
+// Every format of a book that can be bought: paperback, any second
+// paperback edition, hardback, Kindle and Study Edition.
 // scripts/book-formats.json is the only list of formats and links.
 const bookFormats = JSON.parse(fs.readFileSync(path.join(root, 'scripts', 'book-formats.json'), 'utf8'));
-
-function addProductBox(html, source) {
-  const context = bookContext(source);
-  if (!context || html.includes('class="astor-buy"')) return html;
-  const slug = context.book.href.split('/')[2];
-  const formats = bookFormats[slug];
-  if (!formats || !formats.length) return html;
-  const rows = formats.map(format => {
-    const edition = format.edition ? '<span> · ' + escapeHtml(format.edition) + '</span>' : '';
-    const note = format.note ? '<p class="astor-buy-note">' + escapeHtml(format.note) + '</p>' : '';
-    const more = format.page ? ' <a class="astor-buy-more" href="' + escapeHtml(format.page) + '">What is in it</a>' : '';
-    // Countries where Amazon does not sell this format; site.js greys out the button there.
-    const unavailable = format.unavailableIn ? ' data-unavailable-in="' + escapeHtml(format.unavailableIn.join(' ')) + '"' : '';
-    return '<li class="astor-buy-item"' + unavailable + '><img src="' + escapeHtml(format.image) + '" alt="" width="56" height="84" loading="lazy" decoding="async">' +
-      '<div class="astor-buy-text"><p class="astor-buy-format">' + escapeHtml(format.format) + edition + '</p>' + note + '</div>' +
-      '<p class="astor-buy-actions"><a class="astor-buy-button" href="' + escapeHtml(format.url) + '" rel="noopener">Buy on Amazon</a>' + more + '</p></li>';
-  }).join('');
-  const box = '<section class="astor-buy" id="buy" aria-labelledby="astor-buy-title"><h2 id="astor-buy-title">Buy the Astor edition</h2><ul class="astor-buy-list">' + rows + '</ul></section>';
-  // The buttons that used to sit beside the hero cover are replaced by the box.
-  html = html.replace(/(<aside class="[^"]*astor-book-cover[^"]*"(?:(?!<\/aside>)[\s\S])*?)<div class="button-row">(?:(?!<\/aside>)[\s\S])*?<\/div>(\s*<\/div>\s*<\/aside>)/, '$1$2');
-  // So are the retailer buttons in the other hero asides; links to
-  // presentations, study pages and indexes stay.
-  html = html.replace(/<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>/i, intro => intro
-    .replace(/<a class="button [^"]*" href="https:\/\/astorlibrary\.com\/go\/[^"]*"[^>]*>[\s\S]*?<\/a>/g, '')
-    .replace(/<div class="button-row">\s*<\/div>/g, ''));
-  const afterCredit = html.replace(/(<aside class="astor-page-credit"[\s\S]*?<\/aside>)/, '$1' + box);
-  if (afterCredit !== html) return afterCredit;
-  return html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>)/i, '$1' + box);
-}
-
-function addEditionSample(html, source) {
-  if (html.includes('class="edition-sample"')) return html;
-  const samples = {
-    '/books/macbeth/': {
-      title: 'Sample pages from the Macbeth edition',
-      copy: 'The spread shows the complete play with a scene summary, line numbers and explanatory notes keyed to the text.',
-      image: '/assets/samples/macbeth-sample.jpg',
-      fullImage: '/Macbeth%20Sample.png',
-      width: 1200, height: 914,
-      alt: 'Two sample pages from Macbeth showing the complete play, a scene summary, line numbers and explanatory footnotes'
-    },
-    '/books/the-odyssey/': {
-      title: 'Sample pages from The Odyssey edition',
-      copy: 'The spread shows the prose text with a chapter summary, short explanatory notes and a contextual panel.',
-      image: '/assets/samples/the-odyssey-sample.jpg',
-      fullImage: '/The%20Odyssey%20Sample.png',
-      width: 1200, height: 893,
-      alt: 'Two sample pages from The Odyssey showing the prose text, a Story so far summary and a contextual note panel'
-    },
-    '/study/rime-of-the-ancient-mariner/': {
-      title: 'Sample pages from The Rime of the Ancient Mariner',
-      copy: 'The spread shows the complete poem with marginal glosses, line numbers and explanatory footnotes.',
-      image: '/assets/samples/rime-of-the-ancient-mariner-sample.jpg',
-      fullImage: '/Rime%20of%20the%20Ancient%20Mariner%20Sample.png',
-      width: 1200, height: 896,
-      alt: 'Two sample pages from The Rime of the Ancient Mariner showing the poem, marginal glosses, line numbers and footnotes'
-    },
-    '/study/': {
-      title: 'Sample pages from the Othello Study Edition',
-      copy: 'The spread shows scene analysis, key quotations, method notes and example sentences for essay writing.',
-      image: '/assets/samples/othello-study-sample.jpg',
-      fullImage: '/Othello%20Study%20Sample.png',
-      width: 1200, height: 896,
-      alt: 'Two sample pages from the Othello Study Edition showing scene analysis, key quotations, method notes and example sentences'
-    },
-    '/shakespeare/': {
-      title: 'Sample pages from Shakespeare’s Sonnets',
-      copy: 'The spread shows complete poems with short introductions, line numbers and explanatory footnotes.',
-      image: '/assets/samples/shakespeare-s-sonnets-sample.jpg',
-      fullImage: '/Shakespeare%27s%20Sonnets%20Sample.png',
-      width: 1200, height: 899,
-      alt: 'Two sample pages from Shakespeare’s Sonnets showing complete poems, short introductions, line numbers and explanatory footnotes'
-    }
-  };
-  const sample = samples[pageHref(source)];
-  if (!sample) return html;
-
-  const section = '<section class="edition-sample" aria-labelledby="edition-sample-title">' +
-    '<div><p class="kicker">Inside the edition</p><h2 id="edition-sample-title">' + escapeHtml(sample.title) + '</h2><p>' + escapeHtml(sample.copy) + '</p></div>' +
-    '<figure><a href="' + sample.fullImage + '"><img src="' + sample.image + '" alt="' + escapeHtml(sample.alt) + '" width="' + sample.width + '" height="' + sample.height + '" data-no-priority></a><figcaption>Select the image to view the sample at full size.</figcaption></figure></section>';
-  const withIntro = html.replace(/(<section class="[^"]*\bpage-intro\b[^"]*"[\s\S]*?<\/section>)/i, '$1' + section);
-  return withIntro === html ? html.replace(/(<nav class="book-end-nav\b)/i, section + '$1') : withIntro;
-}
 
 function addContextImageShelf(html, source) {
   if (html.includes('class="context-image-shelf"')) return html;
@@ -1088,15 +936,6 @@ function addDiscoveryNavigation(html, source) {
   return html;
 }
 
-function addBookSeasonLinks(html, source) {
-  const context = bookContext(source);
-  if (!context) return html;
-  if (!html.includes('href="/assets/seasons.css"')) html = html.replace('</head>', '<link rel="stylesheet" href="/assets/seasons.css"></head>');
-  const matches = seasons.filter(season => booksFor(season).includes(context.book.href));
-  if (!matches.length) return html;
-  const links = '<aside class="season-book-backlinks" aria-label="Seasonal reading collections"><p>Find this book in the seasonal library</p><div>' + matches.map(season => '<a href="' + hrefFor(season) + '">' + escapeHtml(season.shortTitle || season.title) + '</a>').join('') + '</div></aside>';
-  return html.replace(/<nav class="book-end-nav"|<\/main>/, match => links + match);
-}
 
 // Seasonal dress. A season with a siteTheme block in seasonal-data.json gets
 // a ribbon above the header on every page, a badge on the book pages in its
@@ -1171,7 +1010,10 @@ function addThemeSupport(html) {
   // The guard runs once the stylesheets are in and before anything is painted: the
   // base stylesheets carry --theme-aware, so if a page ever meets an older cached
   // one it drops back to the light theme instead of showing dark text on dark.
-  return html.replace('</head>', '<link rel="stylesheet" href="/assets/theme.css">' + themeGuard + '</head>');
+  // The house stylesheet and its typeface go in just ahead of the dark palette.
+  const fontPreload = '<link rel="preload" href="/assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>';
+  const editorial = html.includes('/assets/editorial.css') ? '' : '<link rel="stylesheet" href="/assets/editorial.css">';
+  return html.replace('</head>', fontPreload + editorial + '<link rel="stylesheet" href="/assets/theme.css">' + themeGuard + '</head>');
 }
 
 function addGlobalNavigation(html, source) {
@@ -1213,26 +1055,33 @@ function addGlobalNavigation(html, source) {
   const studySection = studyCurrent || resourcesCurrent || passageCurrent || playCurrent || teachersCurrent;
   const exploreSection = searchCurrent || exploreToolsCurrent || readingRoutesCurrent;
 
+  const guidesCurrent = inRoute('/guides/');
+  const reviseCurrent = inRoute('/play/');
+  const todayCurrent = href === '/today/';
+  const booksMenuCurrent = booksSection || studyCurrent;
+  const exploreMenuCurrent = exploreSection || resourcesCurrent || passageCurrent || teachersCurrent;
+
   const header = `<header class="site-header astor-global-header">
   <div class="astor-header-identity">
     <a class="brand" href="/" aria-label="Astor Library home"><span class="word">ASTOR</span><img class="torch-mark" src="/assets/astor-header-mark.png" alt="" width="24" height="54"><span class="word">LIBRARY</span></a>
-    <p class="astor-header-strap"><span>Independent literary editions</span><small>For readers, students &amp; teachers</small></p>
+    <p class="astor-header-strap">Annotated editions of classic literature</p>
     <button class="astor-theme-toggle-compact" type="button" data-theme-toggle aria-pressed="false" aria-label="Dark mode"><span class="astor-theme-icon" aria-hidden="true"></span></button>
     <button class="site-nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation"><span>Menu</span><span class="site-nav-mark" aria-hidden="true"></span></button>
   </div>
   <nav class="nav astor-primary-nav" id="site-navigation" aria-label="Primary navigation">
     <div class="astor-primary-links">
-      <details class="astor-browse-menu astor-menu${booksSection ? ' is-current-section' : ''}">
+      <details class="astor-browse-menu astor-menu${booksMenuCurrent ? ' is-current-section' : ''}">
         <summary aria-controls="astor-menu-books"><span>Books</span></summary>
         <div class="astor-browse-panel astor-menu-panel is-two" id="astor-menu-books">
           <div class="astor-menu-col">
-            <h2>Books</h2>
+            <h2>The catalogue</h2>
             <a href="/library/"${current(href === '/library/')}>All books</a>
             <a href="/shakespeare/"${current(shakespeareCurrent, href === '/shakespeare/')}>Shakespeare</a>
+            <a href="/study/"${current(studyCurrent, href === '/study/')}>Study Editions</a>
             <a href="/hardbacks/"${current(hardbacksCurrent, href === '/hardbacks/')}>Hardbacks</a>
+            <a href="/seasons/"${current(seasonsCurrent, href === '/seasons/')}>The seasonal library</a>
             <a href="/authors/"${current(authorsCurrent, href === '/authors/')}>Writers</a>
             <a href="/subjects/"${current(subjectsCurrent, href === '/subjects/')}>Subjects</a>
-            <a href="/seasons/"${current(seasonsCurrent, href === '/seasons/')}>Seasons</a>
           </div>
           <div class="astor-menu-col">
             <h2>By period</h2>
@@ -1247,40 +1096,32 @@ function addGlobalNavigation(html, source) {
           </div>
         </div>
       </details>
-      <details class="astor-browse-menu astor-menu${studySection ? ' is-current-section' : ''}">
-        <summary aria-controls="astor-menu-study"><span>Study</span></summary>
-        <div class="astor-browse-panel astor-menu-panel" id="astor-menu-study">
-          <div class="astor-menu-col">
-            <h2>Study</h2>
-            <a href="/study/"${current(studyCurrent, href === '/study/')}>Study editions</a>
-            <a href="/resources/"${current(resourcesCurrent, href === '/resources/')}>Free guides</a>
-            <a href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}>Passage Room</a>
-            <a href="/play/"${current(playCurrent && href !== '/today/', href === '/play/')}>Revise</a>
-            <a href="/today/"${current(href === '/today/')}>Today’s questions</a>
-            <a href="/for-teachers/"${current(teachersCurrent)}>For teachers</a>
-          </div>
-        </div>
-      </details>
-      <details class="astor-browse-menu astor-menu${exploreSection ? ' is-current-section' : ''}">
+      <a class="nav-link" href="/guides/"${current(guidesCurrent, href === '/guides/')}>Study guides</a>
+      <a class="nav-link" href="/play/"${current(reviseCurrent, href === '/play/')}>Revise</a>
+      <a class="nav-link" href="/today/"${current(todayCurrent)}>Today</a>
+      <details class="astor-browse-menu astor-menu${exploreMenuCurrent ? ' is-current-section' : ''}">
         <summary aria-controls="astor-menu-explore"><span>Explore</span></summary>
         <div class="astor-browse-panel astor-menu-panel is-two" id="astor-menu-explore">
           <div class="astor-menu-col">
-            <h2>Explore</h2>
-            <a href="/explore/"${current(href === '/explore/')}>Search the library</a>
+            <h2>Reading</h2>
+            <a href="/passage-room/"${current(passageCurrent, href === '/passage-room/')}>Close readings</a>
+            <a href="/resources/"${current(resourcesCurrent, href === '/resources/')}>Illustrated guides</a>
+            <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}>Reading routes</a>
+            <a href="/for-teachers/"${current(teachersCurrent)}>For teachers</a>
+          </div>
+          <div class="astor-menu-col">
+            <h2>Across the library</h2>
             <a href="/explore/quotations/"${current(href === '/explore/quotations/')}>Quotations</a>
             <a href="/explore/timeline/"${current(href === '/explore/timeline/')}>Timeline</a>
             <a href="/explore/characters/"${current(href === '/explore/characters/')}>Character maps</a>
             <a href="/explore/themes/"${current(href === '/explore/themes/')}>Themes</a>
-          </div>
-          <div class="astor-menu-col is-continued">
-            <a href="/explore/techniques/"${current(href === '/explore/techniques/')}>Technique glossary</a>
+            <a href="/explore/techniques/"${current(href === '/explore/techniques/')}>Literary terms</a>
             <a href="/explore/map/"${current(href === '/explore/map/')}>Map of settings</a>
             <a href="/explore/compare/"${current(href === '/explore/compare/')}>Compare two books</a>
-            <a href="/reading-routes/"${current(readingRoutesCurrent, href === '/reading-routes/')}>Reading routes</a>
           </div>
         </div>
       </details>
-      <a class="nav-link" href="/about/"${current(aboutCurrent, href === '/about/')}><span>About</span></a>
+      <a class="nav-link" href="/about/"${current(aboutCurrent, href === '/about/')}>About</a>
     </div>
     <div class="astor-nav-utilities">
       <a class="astor-utility-link astor-search-link" href="/explore/" data-astor-palette${current(searchCurrent, href === '/explore/')}><span aria-hidden="true"></span>Search</a>
@@ -1292,11 +1133,10 @@ function addGlobalNavigation(html, source) {
 </header>`;
 
   const footer = `<footer class="site-footer astor-global-footer">
-  <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Classic books, study editions and free literature resources.</p></div>
-  <div class="astor-footer-group"><h2>Library</h2><a href="/library/">All books</a><a href="/hardbacks/">Hardback editions</a><a href="/shakespeare/">Shakespeare</a><a href="/classic-literature/">Periods &amp; collections</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
-  <div class="astor-footer-group"><h2>Read &amp; study</h2><a href="/seasons/">The seasonal library</a><a href="/resources/">Free resources</a><a href="/study/">Study editions</a><a href="/passage-room/">Passage Room</a><a href="/reading-routes/">Reading routes</a></div>
-  <div class="astor-footer-group"><h2>Revise &amp; explore</h2><a href="/play/">Revision quizzes</a><a href="/today/">Today</a><a href="/explore/quotations/">Quotation explorer</a><a href="/explore/timeline/">Timeline</a><a href="/explore/characters/">Character maps</a><a href="/explore/themes/">Themes</a><a href="/explore/techniques/">Technique glossary</a><a href="/explore/map/">Map of settings</a><a href="/explore/compare/">Compare two texts</a><a href="/for-teachers/">For teachers</a><a href="/my-library/">My library</a></div>
-  <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact &amp; support</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
+  <div class="astor-footer-signature"><p class="footer-brand">Astor Library</p><p>Annotated editions of classic literature, with free study guides.</p></div>
+  <div class="astor-footer-group"><h2>Books</h2><a href="/library/">All books</a><a href="/shakespeare/">Shakespeare</a><a href="/study/">Study Editions</a><a href="/hardbacks/">Hardbacks</a><a href="/seasons/">The seasonal library</a><a href="/authors/">Writers</a><a href="/subjects/">Subjects</a></div>
+  <div class="astor-footer-group"><h2>Study</h2><a href="/guides/">Study guides</a><a href="/play/">Revise</a><a href="/today/">Today</a><a href="/passage-room/">Close readings</a><a href="/resources/">Illustrated guides</a><a href="/explore/quotations/">Quotations</a><a href="/for-teachers/">For teachers</a><a href="/my-library/">My library</a></div>
+  <div class="astor-footer-group"><h2>Astor</h2><a href="/about/">About</a><a href="/editorial/">Editorial standards</a><a href="/privacy/">Privacy</a><a href="mailto:support@astorlibrary.com">Contact</a><a href="https://ko-fi.com/astorlibrary">Support Astor Library</a><a href="/site-index/">Site index</a></div>
 </footer>`;
 
   html = html.replace(/<header\b[^>]*\bclass=(?:"[^"]*\b(?:site-header|home-masthead)\b[^"]*"|'[^']*\b(?:site-header|home-masthead)\b[^']*')[^>]*>[\s\S]*?<\/header>/i, header);
@@ -1317,24 +1157,6 @@ function addGlobalNavigation(html, source) {
   return versionAssets(html);
 }
 
-// The study toolkit is generated rather than written into each page by hand,
-// so a change to one title's data reaches its book page, its study page, the
-// explorers and the games in the same build.
-function studyToolkitFor(source) {
-  const href = pageHref(source);
-  const bookMatch = href.match(/^\/books\/([^/]+)\/$/);
-  if (bookMatch && studyData.has(bookMatch[1])) return { book: studyData.get(bookMatch[1]), kind: 'book' };
-  if (bookMatch && studyEditions.has(bookMatch[1])) return { book: { ...studyEditions.get(bookMatch[1]), href }, kind: 'book', baseHref: studyEditions.get(bookMatch[1]).href };
-  const studyMatch = href.match(/^\/study\/([^/]+)\/$/);
-  if (studyMatch) {
-    const direct = studyData.get(studyMatch[1]);
-    if (direct) return { book: direct, kind: 'study' };
-    const paired = [...studyData.values()].find(book => book.studyHref === href);
-    if (paired) return { book: paired, kind: 'study' };
-  }
-  return null;
-}
-
 function discoveryTitle(href) {
   for (const group of ['books', 'resources', 'studyEditions', 'passages', 'authors', 'subjects', 'collections', 'seasons']) {
     const found = (discovery[group] || []).find(item => item.href === href);
@@ -1343,122 +1165,71 @@ function discoveryTitle(href) {
   return null;
 }
 
-// A book page wears its book's colour and its own symbol: a lightning bolt on
-// Frankenstein, a whale on Moby-Dick, a candle on A Christmas Carol.
-function addBookIdentity(html, book) {
-  if (!html.includes('<main') || html.includes('--book-accent')) return html;
-  html = html.replace(/<main([^>]*)>/, (whole, attributes) => {
-    if (/style=/.test(attributes)) return whole.replace(/style="([^"]*)"/, 'style="$1; --book-accent: ' + accentFor(book.slug) + '"');
-    return '<main' + attributes + ' style="--book-accent: ' + accentFor(book.slug) + '" data-motif="' + motifName(book) + '">';
+
+
+
+
+// Every book page is rebuilt into one shape by book-page.js: the book, the
+// edition and how to buy it, the way into the study guide, then the book's own
+// history and sources.
+function buildBookPage(html, source) {
+  const context = bookContext(source);
+  if (!context) return html;
+  const { book, collection } = context;
+  const slug = book.href.split('/')[2];
+  const record = studyData.get(slug) || studyEditions.get(slug);
+  const passages = (discovery.passages || []).filter(passage => (passage.relatedBooks || []).includes(book.href) || (record && (passage.relatedBooks || []).includes(record.href)));
+  const seasonLinks = seasons.filter(season => booksFor(season).includes(book.href)).map(season => ({ href: hrefFor(season), title: season.shortTitle || season.title }));
+  html = restructureBookPage(html, {
+    book,
+    collectionHref: collection?.href,
+    formats: bookFormats[slug],
+    guideSlug: record ? record.slug : null,
+    passages,
+    seasons: seasonLinks
   });
-  // The symbol goes beside the author's name at the top of the page.
-  let marked = false;
-  // The author's name may already be a link (addBookAuthorLink runs first and
-  // renames the class), and the symbol belongs beside it either way.
-  html = html.replace(/(<p class="kicker(?: book-author-kicker)?">)/, (whole, open) => {
-    if (marked) return whole;
-    marked = true;
-    return open + motifSvg(book, 22);
-  });
-  html = html.replace(/<section class="page-intro([^"]*)"([^>]*)>/, (whole, rest, attributes) =>
-    '<section class="page-intro' + rest + ' astor-marked-hero"' + attributes + '>');
+  if (!html.includes('href="/assets/seasons.css"')) html = html.replace('</head>', '<link rel="stylesheet" href="/assets/seasons.css"></head>');
   return html;
 }
 
-// The shelf of related guides and editions is worth having, but not before
-// the reader has reached the book itself. It moves to the foot of the page.
-function moveRelatedReadingDown(html) {
-  const match = html.match(/<section class="related-reading[\s\S]*?<\/section>\s*/);
-  if (!match) return html;
-  const block = match[0];
-  const rest = html.replace(block, '');
-  if (/<nav class="book-end-nav/.test(rest)) return rest.replace(/<nav class="book-end-nav/, block.trimEnd() + '\n  <nav class="book-end-nav');
-  return rest.replace(/<\/main>/, block.trimEnd() + '\n</main>');
-}
+// A Study Edition page describes one printed book: what it contains, how to
+// buy it, and where its free study guide and standard edition are. The words
+// come from scripts/study-editions.json, which is checked against each
+// edition's own title and contents; the page's older study material now lives
+// in the guides.
+const studyEditionCopy = JSON.parse(fs.readFileSync(path.join(root, 'scripts', 'study-editions.json'), 'utf8'));
 
-// A book page with no study record still gets its colour and its symbol.
-function addPlainBookIdentity(html, source) {
+function addStudyEditionPage(html, source) {
   const href = pageHref(source);
-  const match = href.match(/^\/books\/([^/]+)\/$/);
-  if (!match || !html.includes('<main') || html.includes('--book-accent')) return html;
-  const slug = match[1];
-  const title = (html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [, ''])[1].replace(/<[^>]+>/g, ' ').trim();
-  const { accent, motif } = identityFor(slug, title);
-  html = html.replace(/<main([^>]*)>/, (whole, attributes) => {
-    if (/style=/.test(attributes)) return whole;
-    return '<main' + attributes + ' style="--book-accent: ' + accent + '" data-motif="' + motif + '">';
-  });
-  let marked = false;
-  // The author's name may already be a link (addBookAuthorLink runs first and
-  // renames the class), and the symbol belongs beside it either way.
-  html = html.replace(/(<p class="kicker(?: book-author-kicker)?">)/, (whole, open) => {
-    if (marked) return whole;
-    marked = true;
-    return open + motifSvgByName(motif, 22);
-  });
-  html = html.replace(/<section class="page-intro([^"]*)"([^>]*)>/, (whole, rest, attributes) =>
-    '<section class="page-intro' + rest + ' astor-marked-hero"' + attributes + '>');
-  return html;
-}
-
-function addStudyToolkit(html, source) {
-  const context = studyToolkitFor(source);
-  if (!context || !html.includes('<main')) return html;
-  if (html.includes('id="astor-study-toolkit"')) return html;
-  html = addBookIdentity(html, context.book);
-  if (context.kind === 'book') html = moveRelatedReadingDown(html);
-
-  const heading = context.kind === 'study'
-    ? 'Work through ' + context.book.title + '.'
-    : 'Study ' + context.book.title + '.';
-  const baseHref = context.baseHref || context.book.href;
-  const passages = (discovery.passages || [])
-    .filter(passage => (passage.relatedBooks || []).includes(baseHref))
-    .map(passage => ({ href: passage.href, title: plainText(passage.title), description: plainText(passage.description || '') }));
-  // A page that already opens with its own facts does not need them again
-  // from the toolkit.
-  const toolkit = renderToolkit(context.book, {
-    heading, titleFor: discoveryTitle, passages,
-    showGlance: !/class="quick-facts/.test(html)
-  });
-
-  // Insert where the page stops introducing the book and starts on its
-  // history: after the edition card, else after the quick facts, else after
-  // the opening section.
-  const anchors = context.kind === 'study'
-    ? [
-        /<section class="section-title" id="sources">/i,
-        /<nav class="book-end-nav"/i,
-        /<\/main>/i
-      ]
-    : [
-        /<article class="edition-card[^"]*">[\s\S]*?<\/article>/i,
-        /<section class="quick-facts"[\s\S]*?<\/section>/i,
-        /<section class="page-intro[^"]*">[\s\S]*?<\/section>/i
-      ];
-
-  let placed = false;
-  for (const anchor of anchors) {
-    const match = html.match(anchor);
-    if (!match) continue;
-    const before = /^<(?:section|nav)|^<\/main/i.test(match[0]);
-    const at = before ? match.index : match.index + match[0].length;
-    // The book-page anchors match whole blocks and insert after them; the
-    // study-page anchors are opening tags and insert before them.
-    const insertAt = context.kind === 'study' ? match.index : at;
-    html = html.slice(0, insertAt) + toolkit + html.slice(insertAt);
-    placed = true;
-    break;
-  }
-  if (!placed) html = html.replace('</main>', toolkit + '</main>');
-
-  if (!/href="\/assets\/astor-study\.css"/i.test(html)) {
-    html = html.replace('</head>', '<link rel="stylesheet" href="/assets/astor-study.css"></head>');
-  }
-  if (!html.includes('/assets/astor/toolkit.mjs')) {
-    html = html.replace('</head>', '<script type="module" src="/assets/astor/toolkit.mjs"></script></head>');
-  }
-  return html;
+  if (!/^\/study\/[^/]+\/$/.test(href)) return html;
+  const copy = studyEditionCopy.editions[href];
+  if (!copy) return html;
+  const mainOpen = html.match(/<main\b[^>]*>/);
+  if (!mainOpen) return html;
+  const start = mainOpen.index + mainOpen[0].length;
+  const end = html.lastIndexOf('</main>');
+  const record = [...studyData.values()].find(book => book.studyHref === href || book.href === copy.book);
+  const guide = record ? '/guides/' + record.slug + '/' : '';
+  const paragraphs = copy.description.map(text => '<p class="deck">' + text + '</p>').join('');
+  const contents = (copy.contents || []).length ? '<ul class="book-edition-list">' + copy.contents.map(item => '<li>' + escapeHtml(item) + '</li>').join('') + '</ul>' : '';
+  const links = [
+    '<a class="book-format-buy" href="' + escapeHtml(copy.buy) + '" rel="noopener">Buy on Amazon</a>',
+    copy.book ? '<a href="' + escapeHtml(copy.book) + '">The standard Astor edition</a>' : '',
+    guide ? '<a href="' + guide + '">The free study guide</a>' : ''
+  ].filter(Boolean).join('');
+  const main = '\n<nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/study/">Study Editions</a><span aria-hidden="true">/</span><span aria-current="page">' + escapeHtml(copy.title) + '</span></nav>' +
+    '<section class="book-top page-intro study-edition-top"><div class="book-top-text">' +
+    '<p class="book-author kicker">' + escapeHtml(copy.author) + '</p>' +
+    '<h1>' + escapeHtml(copy.title) + '</h1>' +
+    '<p class="book-subtitle">Astor Study Edition</p>' +
+    paragraphs +
+    (contents ? '<h2 class="book-contents-title">In this edition</h2>' + contents : '') +
+    '<p class="book-links study-edition-links">' + links + '</p>' +
+    '</div><figure class="book-cover"><img src="' + escapeHtml(copy.cover) + '" alt="' + escapeHtml(copy.title) + ', Astor Study Edition cover" width="400" height="600"></figure></section>' +
+    '<nav class="book-end-nav" aria-label="End of page"><a href="/study/">All Study Editions</a>' + (copy.book ? '<a href="' + escapeHtml(copy.book) + '">' + escapeHtml(copy.title) + '</a>' : '') + '<a href="/guides/">Study guides</a></nav>\n';
+  html = html.slice(0, start) + main + html.slice(end);
+  html = html.replace(/<main\b([^>]*)>/, (whole, attributes) => /class="/.test(attributes) ? '<main' + attributes.replace(/class="([^"]*)"/, 'class="$1 book-page study-edition-page"') + '>' : '<main' + attributes + ' class="page-wrap book-page study-edition-page">');
+  return html.replace(/<style>[\s\S]*?<\/style>/g, '');
 }
 
 // The number of books is counted, never typed: any page can write
@@ -1471,6 +1242,9 @@ function prepareHtml(html, source) {
   // The site publishes British English and stamps en-GB metadata everywhere;
   // normalise the bare lang="en" used by older source pages to match.
   html = html.replace(/(<html\b[^>]*\blang=")en(")/i, '$1en-GB$2');
+  // The illustrated banners that once headed the collection pages are gone;
+  // the covers on each page say more about a collection than a drawing did.
+  html = html.replace(/<figure class="collection-page-banner">[\s\S]*?<\/figure>\s*/g, '');
   html = addBookStructuredData(html, source);
   html = addResourceStructuredData(html, source);
   html = addStudyStructuredData(html, source);
@@ -1481,23 +1255,17 @@ function prepareHtml(html, source) {
   html = addPassageRelated(html, source);
   html = addGlobalMetadata(html, source);
   html = addDiscoveryNavigation(html, source);
-  html = addBookAuthorLink(html, source);
-  html = addBookPassageLinks(html, source);
-  html = addAuthorPassageLinks(html, source);
-  html = addBookReadingNavigation(html, source);
-  html = addResourceReadingNavigation(html, source);
-  html = addEditorialCredit(html, source);
-  html = addProductBox(html, source);
-  html = addEditionSample(html, source);
-  html = addContextImageShelf(html, source);
-  html = addStudyToolkit(html, source);
-  html = addPlainBookIdentity(html, source);
-  // Every book and study page ends up in the same order: the book, then the
-  // facts, then the study tools, then the book's own material, then the
-  // shelves. The pages were written by hand over a year and had drifted.
-  if (/^\/(?:books|study)\/[^/]+\/$/.test(pageHref(source))) html = normaliseBookOrder(html);
+  const isBookPage = Boolean(bookContext(source));
+  if (isBookPage) {
+    html = buildBookPage(html, source);
+  } else {
+    html = addAuthorPassageLinks(html, source);
+    html = addResourceReadingNavigation(html, source);
+    html = addEditorialCredit(html, source);
+    html = addContextImageShelf(html, source);
+    html = addStudyEditionPage(html, source);
+  }
   html = addSiteIndexLink(html, source);
-  html = addBookSeasonLinks(html, source);
   html = addGlobalNavigation(html, source);
   html = addSeasonalTheme(html, source);
   html = addThemeSupport(html);
@@ -1668,6 +1436,9 @@ fs.writeFileSync(path.join(outDir, '_headers'), `# Astor Library static hosting 
   Cache-Control: public, max-age=300, stale-while-revalidate=3600
 
 /assets/vendor/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
 /assets/book-thumbs/*

@@ -22,28 +22,6 @@
     "url": "https://standardebooks.org/ebooks/mary-shelley/frankenstein/text/single-page",
     "note": "The text checked here is the one-volume 1831 revision; the anonymous first edition of 1818 differs. It can be identified from the inside: it carries Shelley’s 1831 introduction about the summer at Geneva, it runs as twenty-four continuous chapters where 1818 had three volumes, and Elizabeth Lavenza arrives as an orphan taken in by the Frankensteins (in 1818 she is Victor’s cousin)."
   },
-  "atAGlance": [
-    {
-      "label": "Begun",
-      "value": "Summer 1816",
-      "note": "At the Villa Diodati by Lake Geneva, after Byron proposed that the party each write a ghost story."
-    },
-    {
-      "label": "First published",
-      "value": "1818",
-      "note": "Anonymously, in three volumes, by Lackington, Hughes, Harding, Mavor & Jones."
-    },
-    {
-      "label": "Text used here",
-      "value": "1831",
-      "note": "Shelley’s revised single-volume text for Bentley’s Standard Novels, with a new introduction."
-    },
-    {
-      "label": "Shape",
-      "value": "Four letters, twenty-four chapters",
-      "note": "Walton writes to his sister; Victor speaks inside Walton’s letters; the creature speaks inside Victor’s account."
-    }
-  ],
   "structure": [
     {
       "id": "letters",
@@ -186,11 +164,6 @@
       "summary": "He gives two years to the problem of animating dead matter and about ten seconds to the question of what he will do afterwards. His narration is the novel’s central difficulty: it is fluent, self-accusing and consistently arranged so that the things he chose look like things that happened to him.",
       "clue": "He works alone for two years to make something live, then runs out of the room when it opens its eye, and spends the rest of his life calling that moment his misfortune.",
       "firstAppearance": "Letter IV",
-      "traits": [
-        "secretive",
-        "eloquent",
-        "never to blame, in his own account"
-      ],
       "relationships": [
         {
           "to": "creature",
@@ -238,11 +211,6 @@
       "summary": "Nameless on purpose, and called daemon, wretch and fiend by everyone who describes him, including himself. He is the best reader in the book and the best speaker in it, and he makes his case for a companion in the formal language of rights before he makes his case for revenge.",
       "clue": "Eight feet tall, articulate, self-taught from three books found in a portmanteau in the woods, and asking only for one other creature in the world who will not scream at the sight of him.",
       "firstAppearance": "Chapter V",
-      "traits": [
-        "eloquent",
-        "abandoned",
-        "systematically refused"
-      ],
       "relationships": [
         {
           "to": "victor",
@@ -279,11 +247,6 @@
       "summary": "An amateur with money, no formal education and a plan to reach the pole, who writes home that he wants a friend more than he wants the passage. He is offered the story as a warning and never says whether he has taken it; it is his crew that makes him turn the ship round.",
       "clue": "He is frozen into the ice north of Archangel, writing letters to a sister who cannot reply, when a sledge crosses his bow carrying the man whose story fills this book.",
       "firstAppearance": "Letter I",
-      "traits": [
-        "ambitious",
-        "lonely",
-        "a listener"
-      ],
       "relationships": [
         {
           "to": "victor",
@@ -320,11 +283,6 @@
       "summary": "Presented to Victor as a gift when they are children, and described by him for the rest of his life as a possession he was given. Her longest piece of writing offers to release him from the engagement; he marries her anyway, knowing what has been promised for the wedding night.",
       "clue": "Brought home from Italy as a child and handed to a boy who was told she was his present, she dies on her wedding night because her husband assumed a threat was aimed at him.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "conciliating",
-        "clear-sighted in her letters",
-        "used"
-      ],
       "relationships": [
         {
           "to": "victor",
@@ -352,11 +310,6 @@
       "summary": "The alternative Victor might have been: a student of languages and poetry who nurses his friend through a breakdown without ever asking what caused it. He is strangled on a beach in Ireland because he is travelling with the wrong man, and his death produces the book’s second wrongful arrest.",
       "clue": "A merchant’s son with a passion for Persian and Sanskrit, who nursed his friend for months without asking a single question about the illness.",
       "firstAppearance": "Chapter II",
-      "traits": [
-        "generous",
-        "literary",
-        "incurious at the wrong moment"
-      ],
       "relationships": [
         {
           "to": "victor",
@@ -384,11 +337,6 @@
       "summary": "Tried for William’s murder on the evidence of a miniature planted in her pocket, and convicted after a confessor persuades her that a lie will save her soul. Victor sits in the courtroom knowing who did it. The novel’s clearest statement about what respectable silence costs is made by a hanging.",
       "clue": "A servant loved by the family she serves, condemned on a planted locket and a confession extracted by a priest, while the one man who could clear her says nothing.",
       "firstAppearance": "Chapter VI",
-      "traits": [
-        "devoted",
-        "innocent",
-        "persuaded to accuse herself"
-      ],
       "relationships": [
         {
           "to": "elizabeth",
@@ -415,11 +363,6 @@
       "summary": "A blind father, a son and a daughter living in poverty after a political disgrace, watched for months through a chink by a being who chops their firewood at night. They teach it language, history and sympathy without knowing it exists, and then Felix beats it with a stick.",
       "clue": "A blind man, his son and his daughter, poor and exiled, who are taught kindness to a stranger by everything except the moment the stranger appears.",
       "firstAppearance": "Chapter XI",
-      "traits": [
-        "gentle",
-        "impoverished",
-        "terrified at the decisive moment"
-      ],
       "relationships": [
         {
           "to": "creature",
@@ -438,11 +381,6 @@
       "summary": "She never speaks, never writes back and never appears, and the entire novel is addressed to her. Her initials, M. W. S., are Mary Shelley’s own, and her silence is structural: every narrator in the book is finally talking to a woman at home who cannot interrupt them.",
       "clue": "She is in England, she is the person the whole book is addressed to, and she does not get a single line.",
       "firstAppearance": "Letter I",
-      "traits": [
-        "silent",
-        "absent",
-        "the addressee"
-      ],
       "relationships": [
         {
           "to": "walton",
@@ -1236,129 +1174,6 @@
       "lat": 64.5401,
       "lon": 40.5433,
       "note": "Walton’s last port before the ice, and the place from which he writes that he has no friend."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "A myth about science without conscience",
-      "summary": "The oldest popular reading, and the one the title invites: a man reaches beyond the permitted limits of knowledge and is destroyed by what he makes. It has given the novel a second life in debates about genetics, artificial intelligence and research ethics.",
-      "counter": "The novel spends almost no time on whether the creation was wrong and a great deal on what happened next. Read closely, the disaster begins at the door Victor runs out of."
-    },
-    {
-      "position": "A book about parents, birth and abandonment",
-      "summary": "Since the 1970s critics have read the novel through Shelley’s own losses (a mother who died after giving birth to her, and children of her own who did not survive) and through a creation scene in which a maker recoils from what he has brought into the world.",
-      "counter": "The biographical fit can flatten the creature’s case, which he argues in the public language of rights and obligation more than the private language of family feeling."
-    },
-    {
-      "position": "A political argument inherited from Godwin and Wollstonecraft",
-      "summary": "On this reading the novel is a test of the claim that character is formed by circumstance. The creature’s six chapters of self-education are the evidence, and Justine’s trial is the counter-example in which reasonable institutions kill an innocent woman.",
-      "counter": "The creature does eventually murder a child and a bride, and the novel never lets the reader treat those acts as merely the output of his conditions."
-    },
-    {
-      "position": "A question about who is allowed to speak",
-      "summary": "The structure puts the creature at the centre of three frames, so that his account reaches us only through a man who hates him and a man writing home. Adaptations that make him silent are not misreading the book so much as completing a process it describes.",
-      "counter": "He is also the novel’s most persuasive rhetorician, and a reader can reasonably suspect that the eloquence is doing the same work as Victor’s: arranging the facts."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "Who is responsible for the deaths in Frankenstein?",
-      "focus": "Creation, abandonment and the limits of Victor’s account",
-      "plan": [
-        "Separate the making from the abandoning: the novel treats them as two decisions and only dwells on one.",
-        "Use Chapter V to show how the grammar of Victor’s narration removes him from his own actions.",
-        "Turn to Chapter VIII, where Victor keeps silent for fear of being thought mad, and Justine pays for it with her life.",
-        "Weigh the creature’s case in Chapters X and XVII, in which he argues from what he was made capable of feeling.",
-        "Close on the wedding night: Victor’s misreading of the threat is the last and most expensive act of self-importance in the book."
-      ]
-    },
-    {
-      "question": "How does the frame narrative shape what a reader is able to believe?",
-      "focus": "Structure, testimony and unreliable narration",
-      "plan": [
-        "Set out the three layers and note that the innermost voice is the one with the fewest witnesses.",
-        "Show Walton establishing himself in Letters I-IV as a man predisposed to admire an ambitious stranger.",
-        "Examine Victor’s retrospective habits: foreboding, destiny and the passive voice.",
-        "Read the creature’s narrative for its own rhetorical shaping, including his choice of Milton as precedent.",
-        "Conclude with the last page: no body, no proof, and a story that reaches us only as a bundle of private letters."
-      ]
-    },
-    {
-      "question": "‘The creature is made monstrous by the way he is treated, not by the way he is made.’ Discuss.",
-      "focus": "Nurture, education and the evidence of Chapters XI-XVI",
-      "plan": [
-        "Begin with the creation scene, where nothing about the body changes between wonder and disgust.",
-        "Trace the creature’s education through sensation, language, books and a sense of injustice.",
-        "Use Felix’s stick and the shooting in the woods as the two points where kindness is met with violence.",
-        "Test the claim against William’s murder, which follows the discovery that even a child recoils.",
-        "Decide whether the novel endorses his argument, or merely gives him the strongest possible version of it."
-      ]
-    },
-    {
-      "question": "What use does Shelley make of landscape?",
-      "focus": "The sublime, the Alps and the Arctic",
-      "plan": [
-        "Establish the Romantic convention Victor is relying on: mountains as a cure for the mind.",
-        "Show it failing on the Mer de Glace, where the sublime prospect delivers his accuser.",
-        "Contrast the Orkney island, where desolation brings on the worst thing he does, with no consolation in it.",
-        "Read the Arctic as the only landscape in the novel that can hold both pursuer and pursued.",
-        "Conclude with the blasted oak of Chapter II: the novel’s first image of power is destructive and impersonal."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Victor never gives the creature a name. What does the novel gain by never giving him one?",
-    "Walton is offered the story as a warning. By the last page, has he taken it?",
-    "The creature asks for a companion and promises exile. Should Victor have agreed?",
-    "Every narrator in the novel is finally addressing Margaret Saville, who never replies. What difference does that make to how the book reads?",
-    "Would you rather read the 1818 text or the 1831 revision, and on what grounds would you choose?"
-  ],
-  "related": [
-    {
-      "href": "/books/dracula/",
-      "why": "The other great novel assembled out of letters and journals, where documents are again the only evidence anyone has."
-    },
-    {
-      "href": "/books/jekyll-and-hyde/",
-      "why": "A second experiment carried out in private by a respectable man who cannot afterwards control what he has released."
-    },
-    {
-      "href": "/books/paradise-lost/",
-      "why": "The creature’s own reading, and the source of the epigraph: Adam’s complaint that he did not ask to be made."
-    },
-    {
-      "href": "/books/the-rime-of-the-ancient-mariner/",
-      "why": "Shelley quotes it directly, and it supplies the model of a haunted man compelled to tell his story to a stranger."
-    },
-    {
-      "href": "/books/wuthering-heights/",
-      "why": "Another novel that puts a violent story inside a mild narrator’s account and lets the frame do the moral work."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Everything you need to know to read \"Frankenstein\" - Iseult Gillespie",
-      "provider": "youtube-nocookie",
-      "id": "PDgu25Dsv34",
-      "url": "https://www.youtube.com/watch?v=PDgu25Dsv34",
-      "note": "A five-minute animated account of how Mary Shelley came to write the novel and of the ideas about science and creation behind it.",
-      "source": "TED-Ed"
-    },
-    {
-      "title": "Don't Reanimate Corpses! Frankenstein Part 1: Crash Course Literature 205",
-      "provider": "youtube-nocookie",
-      "id": "SyyrwoCec1k",
-      "url": "https://www.youtube.com/watch?v=SyyrwoCec1k",
-      "note": "A lecture on the novel's plot, its framing narrators and its Romantic context, the first of two parts.",
-      "source": "CrashCourse"
-    },
-    {
-      "title": "The Creature: A Character Study | Frankenstein | National Theatre at Home",
-      "provider": "youtube-nocookie",
-      "id": "lRxOtaPAx1c",
-      "url": "https://www.youtube.com/watch?v=lRxOtaPAx1c",
-      "note": "Benedict Cumberbatch and Jonny Lee Miller discuss playing the Creature in the National Theatre production, with attention to how he learns and why he turns to violence.",
-      "source": "National Theatre"
     }
   ]
 }

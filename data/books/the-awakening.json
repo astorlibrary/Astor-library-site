@@ -21,28 +21,6 @@
     "url": "https://standardebooks.org/ebooks/kate-chopin/the-awakening/text/single-page",
     "note": "Chapters are numbered I to XXXIX, following the 1899 first edition; references below give the chapter only."
   },
-  "atAGlance": [
-    {
-      "label": "Completed",
-      "value": "21 January 1898",
-      "note": "Chopin dated the finished manuscript; it had been begun the previous year under the title A Solitary Soul."
-    },
-    {
-      "label": "First published",
-      "value": "22 April 1899",
-      "note": "By Herbert S. Stone & Company of Chicago, in an edition that sold modestly and was not reprinted in her lifetime."
-    },
-    {
-      "label": "Setting",
-      "value": "Grand Isle and New Orleans",
-      "note": "Real places, a summer apart: a Creole resort on the Gulf and a household in the city that runs on visiting days and other people’s labour."
-    },
-    {
-      "label": "Shape",
-      "value": "Thirty-nine chapters",
-      "note": "Very short units, many of them a single scene, with the largest decisions taking place in the gaps between them."
-    }
-  ],
   "structure": [
     {
       "id": "grand-isle",
@@ -158,11 +136,6 @@
       "summary": "She married partly by accident and partly because her father disapproved, and she has been performing a role ever since without noticing that it was one. The novel gives her a series of refusals instead of a plan, and Chopin is careful that she never finds words equal to what she wants.",
       "clue": "She learned to swim at twenty-eight, stopped receiving visitors on Tuesdays, moved into a house she could pay for herself, and told a man who offered to ask her husband to release her that she was not his to give.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "reticent",
-        "increasingly literal about ownership",
-        "without a model for what she wants"
-      ],
       "relationships": [
         {
           "to": "leonce-pontellier",
@@ -215,11 +188,6 @@
       "summary": "He is not cruel, and that is the difficulty: he sends bonbons from New York, pays every bill, and honestly cannot understand why a wife would object to being valued. When Edna becomes unmanageable he consults a doctor, and when she moves out he puts a notice in the paper about redecorating so that nobody’s credit suffers.",
       "clue": "He looked at his sunburnt wife the way a man looks at a piece of damaged property, and when she left his house he told the newspapers he was having it renovated.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "generous with money",
-        "conventional",
-        "concerned about appearances"
-      ],
       "relationships": [
         {
           "to": "edna-pontellier",
@@ -243,11 +211,6 @@
       "summary": "He has spent every summer attaching himself harmlessly to a married woman, and is caught out when one of them takes it seriously. His last proposal, that Léonce might be persuaded to set her free, shows that he has understood nothing, and he leaves sooner than face what she has actually said.",
       "clue": "He made a summer profession of devotion to married women, went to Mexico when it stopped being a game, and came back with a plan that still required another man’s permission.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "charming",
-        "conventional underneath",
-        "unable to stay"
-      ],
       "relationships": [
         {
           "to": "edna-pontellier",
@@ -273,11 +236,6 @@
       "summary": "She is the novel’s mother-woman and is not caricatured: she is warm, shrewd, physically frank, and the person who first gets Edna talking about herself. She also delivers the sentence that does most damage, at the moment when Edna is least able to argue with it.",
       "clue": "She embodies everything Edna is expected to be, gave the novel its one scene of childbirth, and whispered four words about the children that follow Edna to the beach.",
       "firstAppearance": "Chapter IV",
-      "traits": [
-        "affectionate",
-        "unembarrassed",
-        "entirely within the world she was given"
-      ],
       "relationships": [
         {
           "to": "edna-pontellier",
@@ -306,11 +264,6 @@
       "summary": "She is unmarried, ill-tempered, badly dressed and the best musician in the book, and she is the only character who tells Edna the truth about what an independent life would cost. Her test (feeling the shoulder blades for wings) is affectionate and entirely serious.",
       "clue": "She played Chopin in a room full of holidaymakers and left one listener in tears, kept a stove, a piano and a window over the river, and asked to feel a friend’s shoulder blades for wings.",
       "firstAppearance": "Chapter IX",
-      "traits": [
-        "rude",
-        "uncompromising",
-        "the only witness who understands"
-      ],
       "relationships": [
         {
           "to": "edna-pontellier",
@@ -338,11 +291,6 @@
       "summary": "He is practised, unserious and entirely unembarrassed, and Chopin punishes neither of them for what happens between them. What Edna feels afterwards is a kind of clarity, with no shame and no love in it, and Chopin’s refusal to moralise the scene is one reason reviewers condemned the book in 1899.",
       "clue": "He showed a married woman the scar from an old duel to get her attention, and was the one man in the book who wanted nothing from her but the present evening.",
       "firstAppearance": "Chapter XXIII",
-      "traits": [
-        "idle",
-        "persistent",
-        "undeceived"
-      ],
       "relationships": [
         {
           "to": "edna-pontellier",
@@ -362,11 +310,6 @@
       "summary": "Called in to explain a wife to a husband, he declines to pathologise her and watches instead. He is the one man who guesses what is happening, and his offer to listen comes on the night Edna has already decided there is nothing left to say.",
       "clue": "Asked to treat a woman’s disobedience as an illness, he advised letting her alone, and later told her that youth and illusions are the trap nature sets for mothers.",
       "firstAppearance": "Chapter XXII",
-      "traits": [
-        "observant",
-        "discreet",
-        "too late"
-      ],
       "relationships": [
         {
           "to": "edna-pontellier",
@@ -394,11 +337,6 @@
       "summary": "He is careless, boastful and useful to the structure: he supplies gossip about Robert, sings the song Edna cannot get out of her head, and is the last person to speak to her. He is hammering at a shutter out of season when she walks down to the water.",
       "clue": "He sang a line of a song that followed a woman all winter, and was mending a house out of season on the last morning of the book.",
       "firstAppearance": "Chapter VIII",
-      "traits": [
-        "idle",
-        "talkative",
-        "oblivious"
-      ],
       "relationships": [
         {
           "to": "robert-lebrun",
@@ -1134,103 +1072,5 @@
       "lon": -87.6298,
       "note": "Where Herbert S. Stone & Company published the book in April 1899."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "A novel about a woman’s self-ownership",
-      "summary": "The reading that returned the book to the syllabus after 1969 takes Edna’s refusals (of the reception day, the ring, the household, and finally of being disposed of by anyone) as a coherent argument about who a married woman belongs to.",
-      "counter": "It has to explain an ending in which the self so carefully claimed is put into the Gulf, and explanations of that ending tend to be more confident than the last chapter is."
-    },
-    {
-      "position": "The question of the ending",
-      "summary": "Some readers take the last swim as defeat, the weakling fluttering back to earth that Mademoiselle Reisz predicted; others take it as the only act left that nobody else can direct. Chopin supplies the bird, the sea passage and a childhood garden, and does not say.",
-      "counter": "That may itself be the point: Chopin ends in free indirect style, so the last thoughts on the page are Edna’s and not the book’s."
-    },
-    {
-      "position": "Regional novel or modern one",
-      "summary": "Chopin was known as a writer of Louisiana local colour, and the book can be read as the culmination of that work: Creole manners, the Gulf, the Chênière, a society observed from just inside it.",
-      "counter": "The technique (short chapters, withheld judgement, decisive events left in the gaps) belongs with Flaubert and with the novel of the next twenty years, and has little to do with regional sketch-writing."
-    },
-    {
-      "position": "What the household rests on",
-      "summary": "More recent criticism has attended to the quadroon nurse, the cook, the servants at Grand Isle and the woman called Old Celestine, and to the fact that Edna’s leisure to paint and to think is produced by other women’s labour, largely unremarked by the narrator.",
-      "counter": "The novel does notice the arrangement in places, and its silences are those of the class it describes; the question is how far a reader should credit Chopin with observing what she does not comment on."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Chopin present Edna’s awakening without endorsing or condemning it?",
-      "focus": "Narrative distance and free indirect style",
-      "plan": [
-        "Establish the method with Chapter VI, where the narrator explains Edna’s condition in treatise language and then hands the chapter to the sea.",
-        "Show how judgements are offered but unattributed; ‘overestimating her strength’ in Chapter X is the clearest case.",
-        "Examine the flatness of ‘She began to do as she liked’ as a deliberate refusal of emphasis.",
-        "Compare the decisive events that happen off the page: the night with Arobin and the drowning.",
-        "Conclude on the last two chapters, and what free indirect style does to the reliability of Edna’s final thoughts."
-      ]
-    },
-    {
-      "question": "‘Adèle and Mademoiselle Reisz are the two futures on offer, and both are insufficient.’ Discuss.",
-      "focus": "Foils, motherhood and art",
-      "plan": [
-        "Set out the mother-woman passage of Chapter IV and the warmth Chopin allows Adèle throughout.",
-        "Set against it the Chapter XVIII evening, where a happy household fills the observer with ‘hopeless ennui’.",
-        "Read Mademoiselle Reisz’s playing in Chapter IX and her warning in Chapter XXVII as the other offer, with its own costs.",
-        "Show how the two women reappear at the end: one whispering about the children, one imagined sneering about pretensions.",
-        "Ask what Chopin is arguing by making neither life contemptible."
-      ]
-    },
-    {
-      "question": "What work does the sea do in The Awakening?",
-      "focus": "Repetition, setting and the last chapter",
-      "plan": [
-        "Compare the sea passage as it appears in Chapter VI and again in Chapter XXXIX, noting exactly what changes.",
-        "Trace the swim of Chapter X as the novel’s first act of self-direction, and its vocabulary of control.",
-        "Consider the Gulf as a social space as well as a symbolic one: a resort, a crossing, a fishing village.",
-        "Set the bird with the broken wing beside Reisz’s warning and ask how Chopin wants the connection taken.",
-        "Decide what is achieved by ending on a garden in Kentucky instead of on the water."
-      ]
-    },
-    {
-      "question": "How far is the novel about ownership, and how far about love?",
-      "focus": "Property, money and the pigeon house",
-      "plan": [
-        "Start from Chapter I, where a husband inspects his wife for damage and holds her rings.",
-        "Follow the money: the races, the sketches sold, the accounts kept, and the rent on the small house.",
-        "Read the wedding-ring scene of Chapter XVII as a failed act against an object that will not be marked.",
-        "Use the refusal to Robert in Chapter XXXVI as the novel’s most explicit statement.",
-        "Weigh the last chapter’s sentence about being possessed body and soul: whose vocabulary is it, and has it been escaped?"
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Chopin’s original title was A Solitary Soul. What changes if you read the book under that title instead?",
-    "Adèle is the character the novel is least ironic about, and she says the thing that does the most damage. Why give her that line?",
-    "Robert’s grand offer is that he might ask Edna’s husband to release her. Is he a lover or simply a younger version of Léonce?",
-    "The most decisive events in the book happen between chapters. What does Chopin gain by leaving them out?",
-    "Edna’s freedom to paint depends on servants who are barely described. How should that alter a modern reading?"
-  ],
-  "related": [
-    {
-      "href": "/books/a-dolls-house/",
-      "why": "Published twenty years earlier and asking the same question from the stage: what a wife owes a house, and what happens when she leaves it."
-    },
-    {
-      "href": "/books/tess-of-the-durbervilles/",
-      "why": "The other great novel of the 1890s to be reviewed as a moral offence, and another narrator arguing with the judgement his heroine receives."
-    },
-    {
-      "href": "/books/mrs-dalloway/",
-      "why": "A later development of the same method: a woman’s day, a party, and the whole weight of a life carried in free indirect style."
-    },
-    {
-      "href": "/books/jane-eyre/",
-      "why": "The nineteenth century’s central account of a woman refusing to be disposed of, and the marriage plot Chopin chose not to write."
-    },
-    {
-      "href": "/books/the-scarlet-letter/",
-      "why": "The American novel of a woman judged publicly for a private life, half a century before Chopin’s reviewers reached for the same vocabulary."
-    }
-  ],
-  "videos": []
+  ]
 }

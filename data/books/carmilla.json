@@ -21,28 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/37174/pg37174.txt",
     "note": "The 1872 book text, with its Prologue and British spelling. The volume opens with the last chapters of The Room in the Dragon Volant and then prints Carmilla complete. Its small inconsistencies are kept: the governess is Perrodon everywhere except chapter VII, where she is Paradon, and Laura’s mother is a Styrian lady in chapter I and of an old Hungarian family in chapter V."
   },
-  "atAGlance": [
-    {
-      "label": "First published",
-      "value": "1871–1872",
-      "note": "In four monthly parts in The Dark Blue, a London magazine, from December 1871 to March 1872, with illustrations by D. H. Friston and Michael Fitzgerald."
-    },
-    {
-      "label": "In book form",
-      "value": "1872",
-      "note": "As the last of five tales in In a Glass Darkly, three volumes, published by Richard Bentley and Son."
-    },
-    {
-      "label": "The frame",
-      "value": "Doctor Hesselius",
-      "note": "Every tale in the book comes from the papers of Doctor Martin Hesselius, a German physician. Carmilla is a lady’s account of her own case, and the editor finds that she has since died."
-    },
-    {
-      "label": "The name",
-      "value": "An anagram",
-      "note": "Carmilla, Millarca and Mircalla use the same eight letters, a condition the vampire cannot escape."
-    }
-  ],
   "structure": [
     {
       "id": "arrival",
@@ -168,11 +146,6 @@
       "summary": "The motherless daughter of an Englishman, brought up in a remote Styrian castle by two governesses, with only occasional visitors of her own age. She is lonely, romantic and honest about her own confusion: she feels attraction and repulsion towards Carmilla, and says so. Her name is first spoken in chapter VIII, by her father, as she begins to fade. She writes the story years later for a correspondent, and by the time the Prologue is written she has died.",
       "clue": "At six she woke to find a strange young woman lying beside her in the nursery; at nineteen she recognises the same face in a guest’s bed.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "lonely",
-        "impressionable",
-        "candid"
-      ],
       "relationships": [
         {
           "to": "carmilla",
@@ -218,12 +191,6 @@
       "summary": "Beautiful, languid and secretive, she will say only that her name is Carmilla, that her family is ancient and noble, and that her home lies to the west. She takes a cup of chocolate and eats nothing, never joins the family prayers, hates funerals and is fierce when crossed. Her love for Laura is sincere by its own lights, and it is also hunger: she talks of Laura dying into her, of a cruelty that is also love, of Laura coming with her to death. She is a Karnstein countess buried a century and a half before, who became a vampire, the Baron explains, after one had preyed on her.",
       "clue": "She will reveal only that her family is ancient and noble and that her home lies to the west, and a pedlar remarks on her long, sharp tooth.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "languid",
-        "passionate",
-        "secretive",
-        "predatory"
-      ],
       "relationships": [
         {
           "to": "laura",
@@ -272,11 +239,6 @@
       "summary": "Kind and growing old, he retired on a pension and bought the schloss as a bargain. He reads Shakespeare aloud to keep up the family’s English, prides himself on being something of a physician, and at Laura’s pleading offers the stranger’s daughter a home. He explains the local deaths by natural causes and Carmilla’s disappearance by sleepwalking, and keeps what the doctor tells him from Laura. His late wife was descended from the Karnsteins.",
       "clue": "An Englishman who reads Shakespeare aloud in a Styrian castle and assures the household that the peasants’ deaths are strictly referable to natural causes.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "kind",
-        "rational",
-        "hospitable"
-      ],
       "relationships": [
         {
           "to": "laura",
@@ -310,11 +272,6 @@
       "summary": "An old friend of Laura’s father, childless, and a man who generally requires proof. At a masked ball he let himself be charmed into taking charge of a stranger’s daughter, and he curses his own conceited incredulity for what followed. When he reaches the schloss, ten months have aged him by years, and he is bent on the pious sacrilege of finding the vampire’s grave. He tells his story on the drive to Karnstein and finishes it in the ruined chapel.",
       "clue": "At Count Carlsfeld’s masquerade he agreed to look after a masked lady’s daughter; months later he swings a woodman’s hatchet in a ruined chapel.",
       "firstAppearance": "Chapter II",
-      "traits": [
-        "soldierly",
-        "grieving",
-        "vengeful"
-      ],
       "relationships": [
         {
           "to": "bertha",
@@ -351,10 +308,6 @@
       "summary": "A charming girl whom Laura never meets. She was to have come to the schloss with the General for a visit of some weeks; instead he writes that she is dead. His story shows her meeting Millarca at the ball, taken with her at first sight and begging him to invite her home, and then suffering exactly the dreams and sensations that Laura is suffering as she listens. She died without suspecting the cause.",
       "clue": "She was expected at the castle that summer as a companion for the narrator, and the visit is cancelled by a letter written very nearly in distraction.",
       "firstAppearance": "Chapter II",
-      "traits": [
-        "charming",
-        "trusting"
-      ],
       "relationships": [
         {
           "to": "general",
@@ -382,11 +335,6 @@
       "summary": "Stately, commanding and theatrical, she appears twice: at Count Carlsfeld’s masquerade, where she intrigues the General with incidents from his past, and at Laura’s gate after the carriage accident. Each time she pleads urgent business of life and death, leaves her daughter with strangers and insists on secrecy. A grinning woman in a turban watches from her carriage window, and at the ball she is attended by a gentleman in black whose face is the palest the General has ever seen.",
       "clue": "Twice she leaves her daughter with a stranger, each time on urgent business of life and death, and each time demands secrecy.",
       "firstAppearance": "Chapter II",
-      "traits": [
-        "stately",
-        "persuasive",
-        "mysterious"
-      ],
       "relationships": [
         {
           "to": "carmilla",
@@ -406,10 +354,6 @@
       "summary": "Fat, middle-aged, good-natured and romantic, she has looked after Laura since infancy and in part made up to her for the loss of her mother. She thinks Carmilla the prettiest creature she ever saw. The doctor tells her never to leave Laura alone, and she is standing in the chapel passage when Carmilla vanishes, and sitting up in Laura’s room that night.",
       "clue": "A good-natured woman from Berne with a fat, benignant face, who has been the narrator’s nearest thing to a mother since infancy.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "kindly",
-        "romantic"
-      ],
       "relationships": [
         {
           "to": "laura",
@@ -431,10 +375,6 @@
       "summary": "Her father was German, and so she is assumed to be psychological, metaphysical and something of a mystic. She believes that the full moon acts on dreams, on lunacy and on nervous people. She alone noticed the grinning woman in the carriage, and she passes on a servant’s story of a female figure in the lime-tree walk.",
       "clue": "She tells of a cousin whose face was drawn to one side after he slept on deck in the full moon.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "fanciful",
-        "observant"
-      ],
       "relationships": [
         {
           "to": "laura",
@@ -454,11 +394,6 @@
       "summary": "Tall, narrow-chested and stooping, with gold spectacles and old black gloves far too wide for his hands, he knows every work on vampires and has drawn rules from a digest of the judicial cases. His ancestor was the Moravian nobleman, in truth a native of Upper Styria, who had loved Mircalla in his youth and hid her tomb to save her body from outrage. That ancestor’s tracings, notes and confession lead the Baron to the grave.",
       "clue": "Living on a pittance, he finds a lost marble tablet in a ruined chapel by pacing out distances from an ancestor’s notes.",
       "firstAppearance": "Chapter XV",
-      "traits": [
-        "learned",
-        "eccentric",
-        "methodical"
-      ],
       "relationships": [
         {
           "to": "general",
@@ -485,10 +420,6 @@
       "summary": "He comes to the schloss about twice a year with his fiddle, his magic-lantern, a salamander and a mandrake stitched together from the dried parts of animals, and a dog that will not cross the drawbridge. He sells the girls charms against the oupire and offers to file down Carmilla’s sharp tooth, which provokes the second and last show of temper Laura ever sees in her.",
       "clue": "His dog howls and will not follow him over the drawbridge, and he sells slips of vellum to pin to the pillow.",
       "firstAppearance": "Chapter IV",
-      "traits": [
-        "voluble",
-        "sharp-eyed"
-      ],
       "relationships": [
         {
           "to": "laura",
@@ -1370,88 +1301,5 @@
       "lon": -0.1278,
       "note": "Where The Dark Blue was published, and where Richard Bentley and Son issued In a Glass Darkly."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "A love story between women",
-      "summary": "Many readers put the story’s account of desire between women at its centre. Carmilla’s courtship is written in the language of romantic love; Laura admits to adoration as well as abhorrence; and the ending leaves her still haunted by the girl as well as the fiend. On this view the vampire plot is a way of writing, in 1872, about a love that could not be named.",
-      "counter": "The story makes the desire predatory and deadly, and ends with a stake and a burning, which can be read as punishment of the thing it describes. Le Fanu’s Victorian readers could enjoy the frisson while the plot restores order, and some critics see the story as policing desire more than expressing it."
-    },
-    {
-      "position": "A case history",
-      "summary": "The Hesselius frame invites a psychological reading. Laura is a lonely, motherless girl in an isolated house, and her story, full of dreams, trances, lassitude and a childhood memory that shapes everything, reads like the kind of case a doctor like Hesselius would collect. The editor’s silence about the Doctor’s theory leaves a natural explanation open.",
-      "counter": "Too much in the story is witnessed by others for it to be only Laura’s mind: the General’s account, the doctor’s blue spot, the Commission’s report and the opened coffin. Le Fanu assembles the supernatural out of many testimonies, and that closes off the purely psychological reading."
-    },
-    {
-      "position": "An Anglo-Irish Gothic of decline",
-      "summary": "Some critics connect the story with Le Fanu’s Irish Protestant background: an old aristocratic family that survives by feeding on the living, a ruined estate, ancestral guilt, and English-speaking settlers in a foreign country who cannot see what is happening in their own house. The vampire becomes a figure for a dying class and its hold on the present.",
-      "counter": "The allegory has to be brought in from outside the text, which is set in Austria among German, French and English speakers and never mentions Ireland. Readers who find it persuasive rely on Le Fanu’s biography more than on anything Carmilla says."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Le Fanu present the relationship between Laura and Carmilla?",
-      "focus": "Desire, fear and narration",
-      "plan": [
-        "Begin with the first meeting and the shared dream: destiny, recognition, attraction and repulsion.",
-        "Analyse Carmilla’s language of love in chapters IV to VI: I live in you, you shall be mine, love is always selfish.",
-        "Look at Laura’s account of her own feelings: adoration and abhorrence, the boyish lover in masquerade.",
-        "Consider how the vampire lore of chapter XVI describes the passion as something resembling love.",
-        "End with the ambiguous alternations of the last paragraph, and what they suggest about Laura’s feelings."
-      ]
-    },
-    {
-      "question": "How does Le Fanu make the supernatural convincing in Carmilla?",
-      "focus": "Frames, testimony and evidence",
-      "plan": [
-        "Examine the Prologue and the Hesselius frame: a case paper, an editor, a narrator who has died.",
-        "Show the accumulation of witnesses: the servants, the doctor, the General, the woodman, the Baron.",
-        "Analyse the doubling of Laura’s and Bertha’s stories, and the portrait and the anagram as clues.",
-        "Discuss the Imperial Commission, the official register of the last chapters, and Laura’s argument from human testimony.",
-        "Decide whether any doubt survives the evidence, and where."
-      ]
-    },
-    {
-      "question": "What is the role of reason and superstition in Carmilla?",
-      "focus": "The father, the General and the vampire",
-      "plan": [
-        "Start with the father’s natural causes and the pedlar’s charms.",
-        "Look at Carmilla’s own speeches on Nature, and why a vampire might prefer materialists.",
-        "Trace how the General moves from conceited incredulity to pious sacrilege.",
-        "Consider the doctors: the father’s joke about hippogriffs and dragons, the physician who laughs, and the doctor from Gratz whose letter must be opened before a priest.",
-        "Evaluate what the story finally says about the limits of reason."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Why might Le Fanu frame the story as one of Doctor Hesselius’s cases and then withhold the Doctor’s explanation?",
-    "Is Carmilla’s love for Laura real?",
-    "Why does Laura’s father fail to see what is happening in his own house?",
-    "What does the hunchbacked pedlar notice that nobody else does?",
-    "Does the execution in chapter XV bring the story to an end?",
-    "How is Carmilla different from the vampires of later fiction and film?"
-  ],
-  "related": [
-    {
-      "href": "/books/dracula/",
-      "why": "The vampire novel that followed twenty-five years later, by another Dublin writer, with a countess’s tomb in its cut opening and a learned vampire-hunter at its centre."
-    },
-    {
-      "href": "/books/selected-poems-of-samuel-taylor-coleridge/",
-      "why": "Christabel, the poem most often set beside Carmilla: a motherless girl, her father, and a beautiful stranger taken in at night."
-    },
-    {
-      "href": "/books/the-turn-of-the-screw/",
-      "why": "Another ghost story narrated in retrospect by a young woman in an isolated house, where the question is how far to trust what she saw."
-    },
-    {
-      "href": "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
-      "why": "A young woman confined and weakened in a house run by kindly, rational men who will not believe what is happening to her."
-    },
-    {
-      "href": "/books/m-r-james-collected-ghost-stories/",
-      "why": "M. R. James collected Le Fanu’s forgotten stories in Madam Crowl’s Ghost (1923) and ranked him among the best of all ghost-story writers."
-    }
-  ],
-  "videos": []
+  ]
 }

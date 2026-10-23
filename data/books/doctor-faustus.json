@@ -21,38 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/779/pg779.txt",
     "note": "This is the shorter of the two early versions, keeping Dyce’s spellings ‘Mephistophilis’ and ‘Wertenberg’. It is not divided into acts or scenes. The scene numbers used here begin a new scene wherever the stage clears, and at the two places where editors usually start one although it does not: at ‘When I behold the heavens’ (Scene 6) and at the Horse-courser’s entrance (Scene 11). The Helen speech therefore falls in Scene 13 and the last hour in Scene 14. Editions that follow the 1616 text, or that arrange the play in five acts, number differently."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1588–93",
-      "note": "Nothing fixes the date. The English Faust book Marlowe used survives in an edition of 1592, which may not have been the first."
-    },
-    {
-      "label": "First printed",
-      "value": "1604",
-      "note": "Eleven years after Marlowe’s death. A longer and different version followed in 1616."
-    },
-    {
-      "label": "Two texts",
-      "value": "A (1604) and B (1616)",
-      "note": "The Astor edition and every reference here follow the 1604 text. The 1616 version adds papal politics, a revenge plot for the horned knight and devils watching the final scene from above."
-    },
-    {
-      "label": "The bargain",
-      "value": "Twenty-four years",
-      "note": "One year for each hour of a day, which is how the last scene spends them."
-    },
-    {
-      "label": "First Faustus",
-      "value": "Edward Alleyn",
-      "note": "The leading actor of the Admiral’s Men, who also created Tamburlaine and Barabas."
-    },
-    {
-      "label": "Source",
-      "value": "The English Faust book",
-      "note": "A translation, signed only ‘P. F.’, of the German Historia von D. Johann Fausten of 1587."
-    }
-  ],
   "structure": [
     {
       "id": "choice",
@@ -193,12 +161,6 @@
       "summary": "A man of low birth who has reached the top of his university and found the view disappointing. He is a brilliant talker and a careless reader, quick to quote half a verse of scripture and build a philosophy on it. What he wants changes from scene to scene: a god’s power in Scene 1, a wife in Scene 5, a nap in Scene 11. He addresses himself by name throughout, as though Faustus were someone he was managing.",
       "clue": "He quotes ‘the reward of sin is death’ and stops reading before the half of the verse that would have saved him.",
       "firstAppearance": "Scene 1",
-      "traits": [
-        "eloquent",
-        "impatient",
-        "a selective reader",
-        "afraid of pain"
-      ],
       "relationships": [
         {
           "to": "mephistopheles",
@@ -251,12 +213,6 @@
       "summary": "Spelt ‘Mephistophilis’ in the 1604 text. He is the most honest speaker in the play: he says plainly that conjuring did not compel him, that he is in hell as he stands there, and that the loss of heaven is a torment he would rather not discuss. Faustus takes none of it in. Once the deed is signed the candour hardens into management, and by Scene 13 he is handing Faustus a dagger and threatening to tear him in pieces.",
       "clue": "Asked how he comes to be out of hell, he answers that he is not out of it.",
       "firstAppearance": "Scene 3",
-      "traits": [
-        "candid",
-        "melancholy",
-        "watchful",
-        "menacing when crossed"
-      ],
       "relationships": [
         {
           "to": "faustus",
@@ -294,11 +250,6 @@
       "summary": "He appears once in the 1604 text, at the exact moment Faustus calls on Christ to save his soul, and treats the prayer as a breach of contract. His method is a lawyer’s and then a showman’s: first the reminder of what was promised, then the Seven Deadly Sins to take Faustus’s mind off it.",
       "clue": "He arrives in answer to a prayer addressed to somebody else.",
       "firstAppearance": "Scene 6",
-      "traits": [
-        "punctual",
-        "legalistic",
-        "a provider of pastimes"
-      ],
       "relationships": [
         {
           "to": "faustus",
@@ -319,11 +270,6 @@
       "summary": "Always enters with the Evil Angel and usually speaks first. The advice is short and practical: put the book down, read the scriptures, think of heaven. In Scene 6 the Good Angel gives the play’s most important line of doctrine, that it is never too late if Faustus can repent, and the whole argument turns on that ‘can’.",
       "clue": "Says it is never too late, on one condition.",
       "firstAppearance": "Scene 1",
-      "traits": [
-        "brief",
-        "hopeful",
-        "unheeded"
-      ],
       "relationships": [
         {
           "to": "evil-angel",
@@ -344,10 +290,6 @@
       "summary": "Where the Good Angel offers heaven, the Evil Angel offers honour, wealth and the rule of the elements, and when those stop working offers fear instead: repent and devils will tear you in pieces. The Evil Angel generally gets the last word in each exchange, and Faustus’s next speech generally picks it up.",
       "clue": "Tells Faustus he is a spirit now, and that God cannot pity him.",
       "firstAppearance": "Scene 1",
-      "traits": [
-        "flattering",
-        "then threatening"
-      ],
       "relationships": [
         {
           "to": "good-angel",
@@ -368,11 +310,6 @@
       "summary": "He has no history and no stake in the matter, and that makes him persuasive. He sees an angel over Faustus’s head with a vial of grace and talks him out of suicide. Faustus repays him by asking Mephistopheles to torture him. The devils can hurt his body and nothing else, and he leaves the stage for God as Faustus leaves it for Helen.",
       "clue": "Mephistopheles admits he cannot touch this man’s soul.",
       "firstAppearance": "Scene 13",
-      "traits": [
-        "plain-spoken",
-        "steadfast",
-        "unafraid"
-      ],
       "relationships": [
         {
           "to": "faustus",
@@ -399,11 +336,6 @@
       "summary": "A sharp boy who has picked up his master’s manner without his learning. He defeats two scholars with mock logic, hires a clown with borrowed devils, and in Scene 13 notices, puzzled, that a man who has just made his will is carousing with students. He inherits everything.",
       "clue": "He binds a servant for seven years with the help of two devils called Baliol and Belcher.",
       "firstAppearance": "Scene 1",
-      "traits": [
-        "cheeky",
-        "imitative",
-        "observant"
-      ],
       "relationships": [
         {
           "to": "faustus",
@@ -428,10 +360,6 @@
       "summary": "They appear in one scene, promise spirits like lions and argosies from Venice, lend the books and the method, and are never seen again. Their disappearance is pointed: they know the art well enough to teach it and have evidently never signed anything themselves.",
       "clue": "Infamous through the world, according to the scholars, and absent from the play after dinner.",
       "firstAppearance": "Scene 1",
-      "traits": [
-        "persuasive",
-        "cautious on their own account"
-      ],
       "relationships": [
         {
           "to": "faustus",
@@ -450,11 +378,6 @@
       "summary": "They frame the play. In Scene 2 they fear he has fallen into a damned art and go for help; in Scene 13 they ask, innocently, to see the most beautiful woman who ever lived; in Scene 14 they tell him to look up to heaven, and go next door to pray. They are the ordinary, decent, companionable life he says he wishes he had kept.",
       "clue": "One of them offers to stay with Faustus through the last night and is talked out of it.",
       "firstAppearance": "Scene 2",
-      "traits": [
-        "loyal",
-        "conventional",
-        "kind"
-      ],
       "relationships": [
         {
           "to": "faustus",
@@ -470,11 +393,6 @@
       "summary": "Robin steals one of Faustus’s conjuring books and means to use it for drink and for Nan Spit the kitchen-maid. The joke is that it works: his gibberish fetches Mephistopheles all the way from Constantinople. Their ambitions are Faustus’s with the poetry taken out, and their punishment, to be an ape and a dog, delights them.",
       "clue": "He cannot read, by his friend’s account, and conjures a devil anyway.",
       "firstAppearance": "Scene 8",
-      "traits": [
-        "lewd",
-        "cheerful",
-        "unteachable"
-      ],
       "relationships": [
         {
           "to": "faustus",
@@ -501,10 +419,6 @@
       "summary": "She crosses the stage twice and says nothing. Faustus has already told the Emperor that he cannot raise true bodies, only spirits that resemble them, so the play has explained what she is before she enters. She is requested as a cure for thoughts of repentance, and she works.",
       "clue": "The most praised character in the play has no lines.",
       "firstAppearance": "Scene 13",
-      "traits": [
-        "silent",
-        "a likeness, not a person"
-      ],
       "relationships": [
         {
           "to": "faustus",
@@ -523,11 +437,6 @@
       "summary": "The Chorus tells the ending before the beginning and the moral after the end, and its tone is cooler than anything in between. It praises the scholar, names the fault as self-conceit, and closes by recommending that the wise wonder at unlawful things from a distance. How far the play agrees with its own Chorus is the oldest argument about it.",
       "clue": "Announces that the play will not be about war or love.",
       "firstAppearance": "Prologue",
-      "traits": [
-        "formal",
-        "judicial",
-        "regretful"
-      ],
       "relationships": [
         {
           "to": "faustus",
@@ -1602,133 +1511,6 @@
       "lat": 51.5072,
       "lon": -0.0953,
       "note": "Henslowe’s playhouse, where the Admiral’s Men played Faustus with Edward Alleyn in the part."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "An orthodox warning",
-      "summary": "On this reading the Chorus speaks for the play. Faustus is a gifted man ruined by pride, the means of rescue are put in front of him repeatedly, and he declines them with his eyes open. The comic scenes and the shrinking of his ambitions show what sin does to a mind, and the ending is just. The structure of Angels, Sins and last-minute appeal comes from the morality play because the moral is the same.",
-      "counter": "It has to explain away the Prologue’s ‘heavens conspir’d’, the Good Angel’s ‘if Faustus can’, and the fact that the verse gives Faustus’s longing a grandeur the Chorus’s verdict never matches. A play that only wanted to warn would not make the sinner its best poet."
-    },
-    {
-      "position": "A Renaissance overreacher",
-      "summary": "Here Faustus is the tragic hero of a new age, a self-made scholar who will not accept the limits an old order sets on what a man may know and be, and is destroyed for it. The sympathy of the play is with the aspiring mind of Scene 1, and the terror of the ending is an indictment of the cosmos that requires it. Marlowe’s own reputation for dangerous opinions is usually called in support.",
-      "counter": "The play gives this Faustus very little to do. He asks few real questions, accepts evasive answers, and spends his power on pranks. If he is a hero of the intellect, the middle of the play is a strange way to honour him, and the author’s biography is not evidence about a character."
-    },
-    {
-      "position": "A tragedy of predestination",
-      "summary": "A third view sets the play inside the Calvinist teaching of Elizabethan England, in which God has chosen the saved and the damned in advance and the reprobate cannot truly repent. Faustus’s hardened heart, his inability to weep or lift his hands, and the devils who arrive at each prayer then look less like his choices than like the symptoms of a sentence already passed. The horror is theological: he may be right that mercy is not for him.",
-      "counter": "The Old Man sees grace offered in the present tense, and Mephistopheles admits he has no power over a faithful soul. Characters inside the fiction, with no reason to lie, say the door is open. The text supports the fear of reprobation without ever confirming it."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "Is Faustus damned by his own choice, or was he never free to choose otherwise?",
-      "focus": "Free will, grace and the hardened heart",
-      "plan": [
-        "Begin with the two verbs that frame the problem: the heavens that ‘conspir’d’ in the Prologue and the branch that ‘might have grown full straight’ in the Epilogue. The Chorus itself gives both answers.",
-        "Set out the case for choice from Scenes 1 to 5: the half-read verses, the ignored warning of Mephistopheles, the congealing blood and ‘Homo, fuge’, each a chance taken knowingly.",
-        "Turn to Scene 6 for the case against: ‘My heart’s so harden’d, I cannot repent’, the Good Angel’s conditional ‘can’, and Lucifer arriving in answer to a prayer to Christ.",
-        "Use Scene 13 as the test. The Old Man reports grace on offer and Mephistopheles admits he cannot touch a faithful soul; Faustus renews the bond because he is threatened with pain, which is a choice made in fear but still made.",
-        "Conclude that the 1604 text is built to keep the question open, and that Faustus’s own certainty that he cannot be forgiven is the one position the play marks as a sin."
-      ]
-    },
-    {
-      "question": "‘The comic scenes are the play’s sharpest commentary on its hero.’ How far do you agree?",
-      "focus": "Structure, parody and the middle of the play",
-      "plan": [
-        "Acknowledge the old complaint that Scenes 4 and 7 to 12 are padding, possibly not all Marlowe’s, and then argue from what they do instead of who wrote them.",
-        "Pair Scene 4 with Scene 3: a soul for a shoulder of mutton, a seven-year bond enforced by devils, straight after Faustus offers twenty-four years. The Clown bargains harder.",
-        "Pair Robin’s stolen book in Scenes 8 and 9 with the books Faustus is given in Scene 5. Both men want sex and drink from magic; only one of them says so.",
-        "Show that Faustus’s own scenes descend into the same register. The Emperor, the Horse-courser and the grapes are in prose, and his soliloquy in Scene 11 is wedged into a farce about a false leg.",
-        "Weigh the limit of the claim: the comedy diagnoses the waste, but it cannot produce the feeling of Scene 14. The sharpest commentary and the deepest are different things."
-      ]
-    },
-    {
-      "question": "Discuss the presentation of Mephistopheles and his relationship with Faustus.",
-      "focus": "Service, honesty and control",
-      "plan": [
-        "Start with the first exchange in Scene 3, where every assumption Faustus makes is corrected: the spell did not raise him, he serves Lucifer, and he is in hell as he speaks.",
-        "Analyse ‘Why, this is hell’ and ‘leave these frivolous demands’ as testimony from a witness, and note that the tempter’s most effective move is to tell the truth to a man who will not hear it.",
-        "Trace the change once the deed is signed: the refused wife, the refused answer about creation, the dagger and ‘I arrest thy soul’. Candour gives way to management and then to force.",
-        "Consider the language of affection on Faustus’s side, ‘sweet Mephistophilis’, ‘for love of thee’, and what it suggests about what he wanted from the bargain.",
-        "End on the last line of the part: ‘Ah, Mephistophilis!’ Set out at least two ways of speaking it and what each implies about who has been master."
-      ]
-    },
-    {
-      "question": "How does Marlowe use time in Doctor Faustus?",
-      "focus": "Dramatic time, the Chorus and the final soliloquy",
-      "plan": [
-        "Establish the contract’s arithmetic, twenty-four years for a soul, and show how the Choruses and the short middle scenes let those years vanish almost unnoticed.",
-        "Read the brief soliloquy in Scene 11, ‘the restless course that time doth run’, as the first moment Faustus feels time passing, and note that he answers it by going to sleep.",
-        "Look closely at Scene 14: the striking clock as a stage effect, the shrinking requests from a year to a day, and the line from Ovid begging the horses of the night to run slowly.",
-        "Show how the verse enacts the pressure, with short lines, exclamations and an hour of stage time compressed into under sixty lines, so the audience experiences time as speeding up.",
-        "Conclude that the play’s proportions are its argument: the years are spent carelessly in front of us so that the hour can be counted."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Mephistopheles tells Faustus the truth about hell before the contract is signed. Why does the play make the devil the most honest character on stage?",
-    "Faustus quotes two verses of scripture in his first speech and stops each one halfway. Is this a scholar’s mistake, a deliberate choice, or something Marlowe wants us to be unable to decide?",
-    "The Good Angel says ‘if Faustus can repent’; later versions of the play print ‘will’. How much changes with one word?",
-    "What, exactly, does Faustus get for his soul? Make a list from the text and compare it with what he says he will do in Scene 1.",
-    "Helen never speaks. What would be lost, or given away, if she did?",
-    "Does the Epilogue’s advice, to wonder at unlawful things without practising them, match the experience of watching the play?"
-  ],
-  "related": [
-    {
-      "href": "/passage-room/doctor-faustus-thousand-ships/",
-      "why": "A phrase-by-phrase reading of the Helen speech, in which every image of beauty turns out to be on fire."
-    },
-    {
-      "href": "/books/paradise-lost/",
-      "why": "Milton’s Satan carries his hell within him wherever he flies, which is Mephistopheles’s answer in Scene 3 expanded into an epic."
-    },
-    {
-      "href": "/books/macbeth/",
-      "why": "Another man given a prediction by dark powers who hears every warning clearly, and a last act that counts down in the same way."
-    },
-    {
-      "href": "/books/the-tempest/",
-      "why": "Shakespeare’s magician also rules through a serving spirit and also promises to give up his book, but does it voluntarily and in time."
-    },
-    {
-      "href": "/books/frankenstein/",
-      "why": "A later student at a German university who wants forbidden knowledge and cannot bear to look at what it gets him."
-    },
-    {
-      "href": "/books/dorian-gray/",
-      "why": "Wilde’s version of the pact: a soul traded without a contract or a devil, and the same slide from grand appetite to squalor."
-    },
-    {
-      "href": "/books/the-duchess-of-malfi/",
-      "why": "Jacobean tragedy a generation on, where a Cardinal ends his life puzzling over a question about hell."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Synopsis | Doctor Faustus | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "Wj-rNihJ6Fs",
-      "url": "https://www.youtube.com/watch?v=Wj-rNihJ6Fs",
-      "note": "A short summary of the play's story.",
-      "source": "Royal Shakespeare Company"
-    },
-    {
-      "title": "Playing Faustus | Doctor Faustus | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "qGSNd3QvxmY",
-      "url": "https://www.youtube.com/watch?v=qGSNd3QvxmY",
-      "note": "The two actors playing Faustus and Mephistophilis talk about the production.",
-      "source": "Royal Shakespeare Company"
-    },
-    {
-      "title": "Faustus is dragged to hell | Doctor Faustus (2011) | Act 5 Scene 2 | Shakespeare's Globe",
-      "provider": "youtube-nocookie",
-      "id": "vIIqxnmQ_es",
-      "url": "https://www.youtube.com/watch?v=vIIqxnmQ_es",
-      "note": "The final scene, played at the Globe.",
-      "source": "Shakespeare's Globe"
     }
   ]
 }

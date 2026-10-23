@@ -160,12 +160,10 @@ function render(left, right) {
 
   panel.append(row('What next',
     [el('div', { class: 'button-row' }, [
-      el('a', { class: 'button secondary', href: left.href, text: 'Study ' + left.title }),
-      el('a', { class: 'button secondary', href: '/play/essay-forge/?book=' + left.slug, text: 'Plan an essay' })
+      el('a', { class: 'button secondary', href: '/guides/' + left.slug + '/', text: 'Study guide to ' + left.title })
     ])],
     [el('div', { class: 'button-row' }, [
-      el('a', { class: 'button secondary', href: right.href, text: 'Study ' + right.title }),
-      el('a', { class: 'button secondary', href: '/play/essay-forge/?book=' + right.slug, text: 'Plan an essay' })
+      el('a', { class: 'button secondary', href: '/guides/' + right.slug + '/', text: 'Study guide to ' + right.title })
     ])]
   ));
 

@@ -22,28 +22,6 @@
     "url": "https://shakespeare.mit.edu/henryv/full.html",
     "note": "Each act’s Chorus is numbered as scene 0, and the Epilogue is numbered on its own. The 1600 quarto contains none of the Chorus speeches."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "1599",
-      "note": "The fifth Chorus imagines a general returning in triumph from Ireland, which points to the months of the Earl of Essex’s expedition."
-    },
-    {
-      "label": "Early texts",
-      "value": "1600 quarto, 1623 Folio",
-      "note": "The quarto has no Choruses and much less of the night before Agincourt. Editions follow the Folio."
-    },
-    {
-      "label": "Sources",
-      "value": "Holinshed, Hall and an older play",
-      "note": "The anonymous Famous Victories of Henry the Fifth had already put the same career on the London stage."
-    },
-    {
-      "label": "The battle",
-      "value": "25 October 1415",
-      "note": "Saint Crispin’s Day, which Henry turns into a bond between everyone who survives it."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -234,11 +212,6 @@
       "summary": "He can produce whatever voice a situation needs, legal, terrifying, brotherly, awkwardly amorous, and the play never lets the audience behind all of them. The one scene in which nobody knows he is the king is the one in which he is contradicted and cannot answer, and it is followed immediately by a prayer about his father’s stolen crown.",
       "clue": "He asks a bishop whether his claim is lawful, threatens a town with the murder of its infants, and borrows a cloak so that he can hear what his soldiers really think.",
       "firstAppearance": "1.2",
-      "traits": [
-        "fluent in every register",
-        "watchful",
-        "unresolved about his own right"
-      ],
       "relationships": [
         {
           "to": "canterbury",
@@ -278,11 +251,6 @@
       "summary": "It appears before every act to apologise for the theatre and to recruit the audience into supplying what the stage cannot. Its Henry is a mirror of all Christian kings moving through a clean epic; the scenes that follow are consistently more complicated, and the gap between the two is the play’s method.",
       "clue": "It begs pardon for the wooden stage, tells the audience to imagine the horses, and promises a king the following scenes do not quite deliver.",
       "firstAppearance": "1.0",
-      "traits": [
-        "enthusiastic",
-        "apologetic",
-        "unreliable"
-      ],
       "relationships": [
         {
           "to": "henry",
@@ -298,11 +266,6 @@
       "summary": "He opens the play worrying about a bill that would confiscate Church lands and closes his first scene proposing to fund a French war. His genealogical argument takes sixty-two lines, and when Henry asks whether the claim is honest he offers to carry the sin himself, which is not the same as saying yes.",
       "clue": "He fears a bill that would strip the Church of the better half of its lands, and answers it with sixty lines on the Salic law and the largest sum the clergy ever gave a king.",
       "firstAppearance": "1.1",
-      "traits": [
-        "learned",
-        "interested",
-        "willing to be blamed"
-      ],
       "relationships": [
         {
           "to": "henry",
@@ -321,11 +284,6 @@
       "summary": "She learns English from her waiting-woman in the scene after Harfleur falls, and the lesson collapses into laughter at two words that sound obscene in French: a comic scene about a woman preparing to be handed over with a country. In the last scene she wonders whether it is possible to love the enemy of France, and never gives an answer.",
       "clue": "She learns the English for hand, fingers, nails and neck from her waiting-woman, and is shocked by the words for foot and gown.",
       "firstAppearance": "3.4",
-      "traits": [
-        "quick",
-        "amused",
-        "negotiating in a second language"
-      ],
       "relationships": [
         {
           "to": "henry",
@@ -344,11 +302,6 @@
       "summary": "He talks constantly about the disciplines of the wars and tests every event against a classical precedent, which makes him funny; he is also the only officer who reports the killing of the boys as a breach of the law of arms. The comic accent and the moral accuracy belong to the same character and the play does not separate them.",
       "clue": "A captain who compares Monmouth to Macedon because both have a river, and who makes a braggart eat a leek.",
       "firstAppearance": "3.2",
-      "traits": [
-        "pedantic",
-        "brave",
-        "exact about rules"
-      ],
       "relationships": [
         {
           "to": "henry",
@@ -377,11 +330,6 @@
       "summary": "He states the case against the war more clearly than anyone else in the play: if the cause is bad, the reckoning belongs to the man who ordered it. Henry answers him at length about the souls of individual soldiers, which is not the question he asked, and the disguise means he never knows he has been debating the king.",
       "clue": "He tells a stranger by the fire that legs and arms chopped off in battle will cry out at the latter day, and exchanges gloves with him.",
       "firstAppearance": "4.1",
-      "traits": [
-        "plain",
-        "unimpressed",
-        "right"
-      ],
       "relationships": [
         {
           "to": "henry",
@@ -400,11 +348,6 @@
       "summary": "He speaks in fragments of old plays and treats the campaign as a business opportunity, ransoming a terrified Frenchman he cannot understand. What is left of Falstaff’s world goes to France and comes back as a man planning to pass off his beating as war wounds.",
       "clue": "He takes a Frenchman prisoner for two hundred crowns without understanding a word he says, is made to eat a leek, and means to pass off his cudgelled scars as wounds from the French wars.",
       "firstAppearance": "2.1",
-      "traits": [
-        "bombastic",
-        "cowardly",
-        "on the make"
-      ],
       "relationships": [
         {
           "to": "fluellen",
@@ -433,11 +376,6 @@
       "summary": "He gives a clear-eyed account of the three men he works for, decides that their swaggering is not for him, and would trade all his fame for a pot of ale and safety. He is with the luggage when the French attack the camp, and the play does not show his death.",
       "clue": "He would give all his fame for a pot of ale and safety, and is left minding the baggage.",
       "firstAppearance": "2.1",
-      "traits": [
-        "observant",
-        "young",
-        "unprotected"
-      ],
       "relationships": [
         {
           "to": "pistol",
@@ -457,11 +395,6 @@
       "summary": "He carries the ultimatum to Paris, answers the Dauphin’s tennis balls with a threat, and it is he who tells the French king that the coming widows and orphans will be laid at his door. He functions as the war’s clear voice: no argument about the claim, only a statement of what refusing it will cost.",
       "clue": "The king’s uncle, who warns the Dauphin that the caves and womby vaultages of France will answer his mock, and weeps when he tells how two earls died together on the field.",
       "firstAppearance": "1.2",
-      "traits": [
-        "blunt",
-        "loyal",
-        "formal"
-      ],
       "relationships": [
         {
           "to": "henry",
@@ -485,11 +418,6 @@
       "summary": "He sends the tennis balls, spends the night before Agincourt praising his own horse, and is the play’s argument that aristocratic confidence is a military weakness. His contempt for the English is the engine of the first act and the reason the French lose the fourth.",
       "clue": "He answers a claim on France with a tun of tennis balls, and on the eve of battle boasts of the sonnet he once wrote to his horse.",
       "firstAppearance": "2.4",
-      "traits": [
-        "scornful",
-        "vain",
-        "unserious"
-      ],
       "relationships": [
         {
           "to": "henry",
@@ -1267,124 +1195,6 @@
       "lat": 51.8117,
       "lon": -2.7167,
       "note": "Henry’s birthplace, and the town Fluellen compares to Macedon on the grounds that both have a river."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "The play as national epic",
-      "summary": "The oldest and most durable reading takes the Chorus at its word and the Crispin’s Day speech at face value: a play about successful leadership and the making of a nation out of four quarrelling countries.",
-      "counter": "It has to work around the bishops’ motives in Act I, the threat at Harfleur, the order in 4.6 and an Epilogue that says the whole thing was undone within a generation."
-    },
-    {
-      "position": "The play as an interrogation of the war",
-      "summary": "A reading that has dominated British theatre since the 1960s treats the heroic scenes as the surface and Williams, the Boy, Bardolph’s hanging and the prisoners as the evidence underneath it.",
-      "counter": "Pushed too far it makes the Crispin’s Day speech unplayable, when the play plainly wants an audience to be moved by it before it asks them to think again."
-    },
-    {
-      "position": "The play as an argument about theatre",
-      "summary": "A third approach starts from the Chorus: a play that keeps saying it cannot show what it describes is also a play about how national stories are made, and who agrees to believe them.",
-      "counter": "It risks treating the war as a metaphor, when Harfleur and the prisoners are staged as events."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "Does Henry V celebrate its king or put him on trial?",
-      "focus": "Heroism, evidence and the structure of the play",
-      "plan": [
-        "Establish the Chorus’s version first (‘the mirror of all Christian kings’), so that the later scenes have something to be measured against.",
-        "Set the breach speech in 3.1 beside the threat at the gates in 3.3: the same voice, a scene apart, doing two entirely different things.",
-        "Use 4.1 as the play’s own cross-examination, and note that Williams is never answered on the point he actually raised.",
-        "Weigh 4.6 carefully: the order to kill the prisoners comes before the killing of the boys.",
-        "Conclude with the Epilogue, which is a sonnet, and which gives the last word to loss instead of Agincourt."
-      ]
-    },
-    {
-      "question": "What does the Chorus do to the play?",
-      "focus": "Narration, imagination and unreliability",
-      "plan": [
-        "Describe the Chorus’s stated job: apologising for the stage and recruiting the audience’s imaginary forces.",
-        "Show the pattern of contradiction: a heroic prologue followed by bishops counting money, or by Pistol refusing to advance.",
-        "Identify the fourth Prologue as the exception, where narrator and play agree on condemned men by their fires.",
-        "Consider the 1600 quarto, which has no Choruses at all, and what a performance without them would be like.",
-        "Decide whether the Chorus is propaganda, nostalgia, or an invitation to notice how national stories get made."
-      ]
-    },
-    {
-      "question": "How does the play present the ordinary soldier?",
-      "focus": "Class, responsibility and who pays for the campaign",
-      "plan": [
-        "Begin with the Eastcheap survivors in Act II and what they say they have come to France for.",
-        "Use the Boy’s speech at 3.2 as the deliberate reply to the breach speech that precedes it.",
-        "Read the Williams and Bates exchange in 4.1 as a real argument more than a lapse in morale, and track what Henry concedes.",
-        "Follow the glove quarrel through to 4.8, and ask what the gentling promised in the Crispin’s Day speech actually amounts to.",
-        "Close with the killing of the luggage-boys and the fact that the play never shows the Boy’s death."
-      ]
-    },
-    {
-      "question": "‘A play about language as much as about war.’ Discuss.",
-      "focus": "Rhetoric, dialect and translation",
-      "plan": [
-        "Set out Henry’s four registers: the legal argument of 1.2, the terror of 3.3, the fellowship of 4.3 and the plainness of 5.2.",
-        "Examine the captains’ scene at 3.2 as an attempt to make one army out of four kinds of English.",
-        "Read Katharine’s lesson in 3.4 as conquest happening in vocabulary before it happens in the treaty.",
-        "Use Pistol’s borrowed theatrical rant as the play’s example of rhetoric with nothing behind it.",
-        "Return to the Chorus, whose whole function is to say that words must do the work the stage cannot."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Canterbury offers to take the sin of the war on his own head. Does that settle anything?",
-    "Henry orders the prisoners killed before he hears about the boys in the camp. Does the order of those scenes change how you read him?",
-    "Williams argues with a man he does not know is the king, and is never told he won. What would change if he were?",
-    "The Epilogue spends its last lines explaining that everything won here was lost. Why end a triumph that way?",
-    "Olivier’s 1944 film cuts the Harfleur threat and the prisoners. Is a production that keeps them telling the truth, or making a different argument?"
-  ],
-  "related": [
-    {
-      "href": "/books/henry-iv-part-1/",
-      "why": "The prince before the crown, and Falstaff alive: the play whose promises this one collects on."
-    },
-    {
-      "href": "/books/henry-iv-part-2/",
-      "why": "Ends with the rejection of Falstaff, which is the decision Henry V spends its second act paying for."
-    },
-    {
-      "href": "/books/richard-ii/",
-      "why": "The deposition that made the Lancastrian title doubtful, and the fault Henry prays about before Agincourt."
-    },
-    {
-      "href": "/books/henry-vi-part-1/",
-      "why": "The sequel Shakespeare had already written: France lost, exactly as the Epilogue says."
-    },
-    {
-      "href": "/books/julius-caesar/",
-      "why": "Written in the same year, and just as interested in how a public speech can make an audience into an army."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Kenneth Branagh, Alfred Enoch, Alex Hassell and Tamara Harvey in conversation | Henry V Roundtable",
-      "provider": "youtube-nocookie",
-      "id": "UmdJiEBwmFg",
-      "url": "https://www.youtube.com/watch?v=UmdJiEBwmFg",
-      "note": "Kenneth Branagh and three others who have worked on the play discuss it ahead of a new RSC production.",
-      "source": "Royal Shakespeare Company"
-    },
-    {
-      "title": "Act 4 Scene 1 | Henry V | 2015 | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "N3Gh_Nfls20",
-      "url": "https://www.youtube.com/watch?v=N3Gh_Nfls20",
-      "note": "The king moves in disguise among his soldiers on the night before Agincourt, from an RSC production.",
-      "source": "Royal Shakespeare Company"
-    },
-    {
-      "title": "Once more unto the breach | Henry V (2012) | Act 3 Scene 1 | Shakespeare's Globe",
-      "provider": "youtube-nocookie",
-      "id": "AW5eMySmtwM",
-      "url": "https://www.youtube.com/watch?v=AW5eMySmtwM",
-      "note": "The speech at the walls of Harfleur, played at the Globe.",
-      "source": "Shakespeare's Globe"
     }
   ]
 }

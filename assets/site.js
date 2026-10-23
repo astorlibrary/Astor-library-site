@@ -12,6 +12,22 @@
       .replace(/'/g, '&#39;');
   }
 
+  // The study material that used to sit in tabs on a book page is now its
+  // study guide. Old links into it (/books/macbeth/#astor-quote-…) go there.
+  (() => {
+    const main = document.querySelector('main[data-guide]');
+    const id = window.location.hash.slice(1);
+    if (!main || !window.location.pathname.startsWith('/books/') || !/^astor-/.test(id)) return;
+    const sections = [
+      [/^astor-(quote-|quotations$)/, 'quotations'], [/^astor-character/, 'characters'],
+      [/^astor-theme/, 'themes'], [/^astor-technique/, 'form-and-language'],
+      [/^astor-context$/, 'context'], [/^astor-plot$/, 'what-happens']
+    ];
+    const match = sections.find(([pattern]) => pattern.test(id));
+    const anchor = match && /^astor-(quote|character|theme|technique)-/.test(id) ? '#' + id : '';
+    window.location.replace('/guides/' + main.dataset.guide + '/' + (match ? match[1] + '/' : '') + anchor);
+  })();
+
   for (const image of document.querySelectorAll('.prod-card img')) {
     const markBroken = () => {
       image.classList.add('is-broken');

@@ -21,28 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
     "note": "This text spells the Countess’s county Rossillon. The Astor edition counts prose by its printed lines, so other editions vary by a few lines, most of all in the prose scenes. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "Early 1600s",
-      "note": "No record fixes the date. Editors have proposed years from about 1602 to 1606, most often placing it close to Measure for Measure."
-    },
-    {
-      "label": "First printed",
-      "value": "1623",
-      "note": "No quarto is known. The First Folio prints it among the comedies, and every modern edition depends on that one text."
-    },
-    {
-      "label": "Source",
-      "value": "Boccaccio, through Painter",
-      "note": "The story of Giletta of Narbonne from the Decameron, which reached English readers in William Painter’s Palace of Pleasure. Parolles and the Countess have no counterpart there."
-    },
-    {
-      "label": "Shape",
-      "value": "Five acts, twenty-three scenes",
-      "note": "The action moves from Rossillon to Paris, back to Rossillon, out to Florence and its camp, and home by way of Marseilles."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -198,11 +176,6 @@
       "summary": "She drives every turn of the plot, and she keeps describing herself as low, poor and unworthy while she does it. She stakes her life on a cure the King’s doctors have abandoned, chooses her husband in front of the court, obeys his order to go home, and then slips away from it by night. The bed trick is her design, paid for with her own gold. She speaks the play’s title twice, each time as a way of carrying on.",
       "clue": "She takes a dead man’s prescription to a dying king and asks to be paid in a husband.",
       "firstAppearance": "1.1",
-      "traits": [
-        "determined",
-        "self-deprecating",
-        "resourceful"
-      ],
       "relationships": [
         {
           "to": "bertram",
@@ -264,11 +237,6 @@
       "summary": "He is young, newly fatherless and a ward of the King, and he wants to be at the war. Ordered to marry a woman he calls a poor physician’s daughter, he gives in to a threat, leaves on the wedding night and wins honour as a cavalry commander in Florence. He courts Diana with music and oaths, hands over the ring of his house to get her into bed, and at court tells lie after lie about the ring and about her. His last lines promise love on a condition.",
       "clue": "He tells his wife she may call him husband when she has his ring and his child, and gives both away himself in the dark.",
       "firstAppearance": "1.1",
-      "traits": [
-        "proud of his birth",
-        "impatient",
-        "evasive under pressure"
-      ],
       "relationships": [
         {
           "to": "helena",
@@ -334,11 +302,6 @@
       "summary": "She opens the play in black for her husband and ends it asking the King to forgive her son. Her first response to Helena’s love is alarm, God shield you mean it not, and within a hundred lines she is giving her means and attendants for the trip to Paris. On reading Bertram’s letter she takes Helena’s side against him without hesitation, and in the last scene she identifies the ring Diana holds as the heirloom of her house.",
       "clue": "She tells a ward she is a mother to her and watches the girl go white at the word.",
       "firstAppearance": "1.1",
-      "traits": [
-        "shrewd",
-        "generous",
-        "grieving"
-      ],
       "relationships": [
         {
           "to": "bertram",
@@ -373,11 +336,6 @@
       "summary": "He has given up hope of a cure and at first will not let an unknown young woman try, then agrees on condition that she dies if she fails. Cured, he keeps his promise by force, making a fine speech on virtue against title and following it with threats when Bertram is unpersuaded. In the last scene he forgives Bertram, suspects him of murder, arrests him, loses patience with Diana’s riddles, and at the end offers Diana a husband of her choosing and a dowry, repeating the bargain that started the trouble.",
       "clue": "He pays for his cure with somebody else’s son.",
       "firstAppearance": "1.2",
-      "traits": [
-        "weary",
-        "authoritative",
-        "quick to judge"
-      ],
       "relationships": [
         {
           "to": "helena",
@@ -419,11 +377,6 @@
       "summary": "His name is French for words, and he is mostly made of them. Helena knows him for a liar and a coward in the first scene, and Lafew sees through his scarves at their first meeting. He urges Bertram to the war, swears he will recover a lost drum, and when his own comrades take him blindfold he betrays the army and slanders everyone in it. Stripped of his captaincy, he decides to live as the thing he is, and the man who first exposed him ends up feeding him.",
       "clue": "He promises to bring back a lost drum, and is himself brought in blindfold instead.",
       "firstAppearance": "1.1",
-      "traits": [
-        "boastful",
-        "cowardly",
-        "resilient"
-      ],
       "relationships": [
         {
           "to": "bertram",
@@ -477,11 +430,6 @@
       "summary": "He is the play’s plain judge of character. He brings Helena to the King with a joke about being Cressida’s uncle, marvels at the cure, and is the first to see that Parolles is a window of lattice he can look straight through. After Helena’s supposed death he proposes his own daughter for Bertram, withdraws the offer as soon as Diana’s petition is read, and ends the play in tears, borrowing Parolles’s handkerchief and telling him to wait on him at home.",
       "clue": "He calls a man a window of lattice, and at the end his eyes smell onions.",
       "firstAppearance": "1.1",
-      "traits": [
-        "blunt",
-        "shrewd",
-        "kind"
-      ],
       "relationships": [
         {
           "to": "parolles",
@@ -522,11 +470,6 @@
       "summary": "In her first scene Mariana warns her against the French count and his go-between, and she never wavers. In her one scene alone with Bertram she takes his oaths apart and gets his ring by turning his own argument about honour against him. At court she plays the witness who will not give a straight answer, claims to be married and a maid in the same breath, and risks prison to hold the truth back until Helena comes in.",
       "clue": "She makes a midnight appointment with a count and arranges not to keep it.",
       "firstAppearance": "3.5",
-      "traits": [
-        "clear-headed",
-        "witty",
-        "loyal"
-      ],
       "relationships": [
         {
           "to": "helena",
@@ -569,11 +512,6 @@
       "summary": "She says she was well born and has come down in the world, and she hesitates to put her reputation at risk. Helena’s proofs of rank and a purse of gold persuade her, and Diana later says her mother told her exactly how Bertram would woo. She travels with Helena to Marseilles and Rossillon and stands beside Diana in front of the King.",
       "clue": "She is promised three thousand crowns towards her daughter’s marriage for one night’s arrangements.",
       "firstAppearance": "3.5",
-      "traits": [
-        "cautious",
-        "respectable",
-        "practical"
-      ],
       "relationships": [
         {
           "to": "diana",
@@ -599,11 +537,6 @@
       "summary": "He wants to marry Isbel because the flesh drives him, loses interest after a trip to court, and entertains the Countess with an answer for every question at court. His jokes about cuckolds, the devil and the broad gate to the great fire run close to the play’s darker matter. Parolles alone gives his name, Lavache, when he comes begging in the last act and the Clown will not stand downwind of him.",
       "clue": "He has one answer that fits every question at court, and the answer is O Lord, sir.",
       "firstAppearance": "1.3",
-      "traits": [
-        "bawdy",
-        "sharp",
-        "irreverent"
-      ],
       "relationships": [
         {
           "to": "countess",
@@ -636,11 +569,6 @@
       "summary": "They leave the court for the war in 2.1, carry letters between Florence and Rossillon, and set the trap for Parolles because they know him better than Bertram does. One leads the ambush in a language of his own invention. Waiting for Bertram in 4.3 they judge his seduction of Diana with a frankness nobody uses to his face, and one of them sums the whole play up in a sentence about a mingled yarn.",
       "clue": "Asked about the Dumaine brothers, Parolles slanders both of them while both stand in the room.",
       "firstAppearance": "2.1",
-      "traits": [
-        "loyal",
-        "sardonic",
-        "fair-minded"
-      ],
       "relationships": [
         {
           "to": "parolles",
@@ -1318,88 +1246,5 @@
       "lon": -8.5448,
       "note": "The shrine of Saint Jaques le Grand, to which Helena writes that she has gone barefoot. She is next seen in Florence."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "Johnson: Bertram is let off",
-      "summary": "Samuel Johnson could not bring himself to like Bertram, who marries under threat, abandons his wife, lies when accused and is still sent off to happiness at the end. On this reading the comedy rewards a man who has done nothing to earn his reward, and the title reads as an evasion.",
-      "counter": "The play seems aware of the objection. Bertram’s last lines are conditional, the King’s closing couplet says only that all yet seems well, and the Epilogue hands the verdict to the audience. The discomfort Johnson felt is written into the ending."
-    },
-    {
-      "position": "A problem play",
-      "summary": "Since Frederick Boas grouped it with Measure for Measure and Troilus and Cressida in 1896, the play has been read as a comedy in form that raises questions of rank, sex and consent it cannot settle. Its ending supplies the marriage and withholds the feeling.",
-      "counter": "The label can flatten the play. Much of it is straightforward comedy, including the Clown and the whole drum plot, and the story of the clever wife who meets impossible conditions was an old and popular one that audiences would have recognised as a romance."
-    },
-    {
-      "position": "A folk tale taken at its word",
-      "summary": "W. W. Lawrence argued in 1931 that the healing of a king and the fulfilment of impossible tasks are folk-tale motifs, and that an audience of the time would admire Helena as the heroine who carries them out. Judging her by modern ideas of courtship misreads the convention.",
-      "counter": "Shakespeare adds exactly what the tale leaves out. Bertram is given a voice to say no with, the King’s force is shown on stage, and the bed trick puts Bertram in bed with a woman he did not choose. The changes pull against the convention, which is why modern productions return to questions of consent."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "Is Helena the heroine of a love story or the author of a trap?",
-      "focus": "Helena’s agency and her methods",
-      "plan": [
-        "Start with the soliloquies in 1.1: the hopeless star speech, and then the couplets in which it becomes a plan.",
-        "Examine the bargain with the King in 2.1, where she stakes her life and asks for a husband as her fee, and the choosing scene in 2.3, where she offers to withdraw.",
-        "Read her letter from Saint Jaques in 3.4 against her arrival in Florence in 3.5, and decide what the pilgrimage was for.",
-        "Weigh the bed trick through her own words in 3.7 and 4.4, including the admission of a sinful fact and her line on men who make sweet use of what they hate.",
-        "Close on 5.3, where she offers deadly divorce if her proof fails, and judge whether the ending is her victory or her compromise."
-      ]
-    },
-    {
-      "question": "What does All’s Well That Ends Well mean by honour?",
-      "focus": "Rank, deeds, chastity and reputation",
-      "plan": [
-        "Set out the King’s argument in 2.3 that honour comes from deeds and not from birth, and note that he enforces it with threats.",
-        "Compare the two rings in 4.2: Bertram’s ring as the honour of his house and Diana’s chastity as the jewel of hers.",
-        "Use Parolles’s drum as the parody version, an instrument of honour that nobody needs until it is lost.",
-        "Look at Bertram’s military reputation in Florence against his conduct in the same weeks, using the First Lord’s mingled yarn.",
-        "Decide whose idea of honour the last scene rewards, and whose it simply ignores."
-      ]
-    },
-    {
-      "question": "How does the exposure of Parolles shape our judgement of Bertram?",
-      "focus": "The drum plot as a mirror of the main plot",
-      "plan": [
-        "Begin with the warnings: Helena’s soliloquy in 1.1, Lafew’s attacks in 2.3 and 2.5, and Bertram’s refusal to listen.",
-        "Show how the lords design the ambush in 3.6 so that Bertram will be present at the questioning.",
-        "Analyse 4.3, where Parolles betrays the army and describes Bertram to his face, and Bertram calls him a cat.",
-        "Set Parolles’s soliloquy, simply the thing I am, beside Bertram’s lies about the ring and about Diana in 5.3.",
-        "Conclude on who is punished, who is forgiven, and whether the two plots reach the same verdict."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "The King forces Bertram to marry Helena and then argues that honour comes from deeds. Does the play agree with his argument, his method, or neither?",
-    "Helena twice speaks the title as a proverb. Is the play’s ending well, and on whose terms?",
-    "Diana risks prison and her reputation in the last scene for a plan that is not hers. What does she gain from it?",
-    "Parolles is exposed, humiliated and then fed by the man who first saw through him. Why does the play let him off so lightly?",
-    "The Countess disowns her son and calls Helena all her child. How does her view of the marriage differ from the King’s?",
-    "The bed trick happens offstage and is never shown. What difference would it make if it were?"
-  ],
-  "related": [
-    {
-      "href": "/books/measure-for-measure/",
-      "why": "Written in the same years, and also resolved by a bed trick in which a woman takes another’s place in the dark to hold a man to a promise."
-    },
-    {
-      "href": "/books/the-merchant-of-venice/",
-      "why": "Another comedy whose last act turns on a ring a husband has given away, and on the wife who knows exactly where it went."
-    },
-    {
-      "href": "/books/henry-iv-part-1/",
-      "why": "Falstaff’s cowardice is exposed by a prank set up by his own companions, the model for the drum plot that unmasks Parolles."
-    },
-    {
-      "href": "/books/troilus-and-cressida/",
-      "why": "Grouped with All’s Well as a problem play, and just as unsentimental about honour, war and what a reputation is worth."
-    },
-    {
-      "href": "/books/cymbeline/",
-      "why": "A later play in which a ring and a night in a bedroom decide a marriage, and a husband who has wronged his wife is forgiven in one crowded final scene."
-    }
-  ],
-  "videos": []
+  ]
 }

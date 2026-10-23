@@ -22,28 +22,6 @@
     "url": "https://standardebooks.org/ebooks/charles-dickens/a-christmas-carol/text/single-page",
     "note": "A proofed transcription of Dickens’s text. References give the stave, which is the only division the book itself uses."
   },
-  "atAGlance": [
-    {
-      "label": "Published",
-      "value": "19 December 1843",
-      "note": "Chapman and Hall, as A Christmas Carol. In Prose. Being a Ghost Story of Christmas."
-    },
-    {
-      "label": "Illustrator",
-      "value": "John Leech",
-      "note": "Four hand-coloured plates and four wood engravings for the first edition."
-    },
-    {
-      "label": "Divisions",
-      "value": "Five staves",
-      "note": "A stave is the ruled set of lines music is written on; the title promises a carol, and the book is one."
-    },
-    {
-      "label": "Time span",
-      "value": "One night",
-      "note": "Everything between Marley’s arrival and the Christmas morning bells happens in a few hours of story time."
-    }
-  ],
   "structure": [
     {
       "id": "stave-1",
@@ -154,11 +132,6 @@
       "summary": "A man whose coldness is described as a climate he carries about with him. Dickens gives him wit, arguing with his own hallucination about undigested beef, which is why his conversion can be believed: the intelligence was never missing, only the use he put it to.",
       "clue": "He argues that a ghost may be a crumb of cheese, reads his own name on a headstone, and ends by buying a turkey too big for a boy to carry.",
       "firstAppearance": "Stave I",
-      "traits": [
-        "sardonic",
-        "self-enclosed",
-        "capable of change"
-      ],
       "relationships": [
         {
           "to": "marley",
@@ -203,11 +176,6 @@
       "summary": "Seven years dead and still doing the accounts. He is punished for a narrow idea of business more than for any cruelty, and his chain is made of the objects of his trade, so we see the moral before anyone states it.",
       "clue": "He wears cash-boxes, ledgers and keys as a chain, and corrects the meaning of one word in a way that sets up the whole book.",
       "firstAppearance": "Stave I",
-      "traits": [
-        "tormented",
-        "explanatory",
-        "too late"
-      ],
       "relationships": [
         {
           "to": "scrooge",
@@ -226,11 +194,6 @@
       "summary": "Fifteen shillings a week, a white comforter instead of a greatcoat, and a coal-box he is not allowed to reach. Dickens is careful to show him sliding on the ice at Cornhill on the way home, so that his goodness reads as more than the patience of a man too tired to object.",
       "clue": "He tries to warm himself at a candle, drinks a toast to the man who underpays him, and slides down a lane of boys on his way back to Camden Town.",
       "firstAppearance": "Stave I",
-      "traits": [
-        "loyal",
-        "underpaid",
-        "unresentful"
-      ],
       "relationships": [
         {
           "to": "scrooge",
@@ -251,11 +214,6 @@
       "summary": "He has very few lines and one of them has escaped the book entirely. Dickens stops him being merely pathetic by giving him a thought of his own about being seen in church: he has decided how to use the fact that people notice him.",
       "clue": "He is carried on his father’s shoulder, hopes the congregation notices his crutch for a reason of his own, and speaks the last four words of the book.",
       "firstAppearance": "Stave III",
-      "traits": [
-        "thoughtful",
-        "ill",
-        "the book’s measure"
-      ],
       "relationships": [
         {
           "to": "bob-cratchit",
@@ -279,11 +237,6 @@
       "summary": "He makes the case for Christmas in one long unbroken sentence and admits within it that the season has never earned him a penny, which is the strongest argument available. He keeps inviting his uncle to dinner every year and is refused every year, and goes on asking.",
       "clue": "He comes in glowing from the frost, argues that a season which has never made him any money has still done him good, and never stops inviting his uncle to dinner.",
       "firstAppearance": "Stave I",
-      "traits": [
-        "warm",
-        "persistent",
-        "unoffended"
-      ],
       "relationships": [
         {
           "to": "scrooge",
@@ -299,11 +252,6 @@
       "summary": "She releases him in the gentlest possible terms and the terms are final: they made their contract when they were both poor, he is a different man now, and she doubts he would choose her today. She is right, and he cannot answer.",
       "clue": "She hands back an engagement without raising her voice, naming the golden idol that has taken her place.",
       "firstAppearance": "Stave II",
-      "traits": [
-        "clear-eyed",
-        "unangry",
-        "unanswerable"
-      ],
       "relationships": [
         {
           "to": "scrooge",
@@ -322,11 +270,6 @@
       "summary": "An employer who spends a few pounds on a party and buys an amount of happiness that Scrooge, watching, can only describe as a fortune. He is there to prove that there is another way of doing business, inside commerce itself.",
       "clue": "He calls a halt to work, has the shutters up in a minute, and clears a warehouse for a dance at very small expense.",
       "firstAppearance": "Stave II",
-      "traits": [
-        "generous",
-        "practical",
-        "a counter-example"
-      ],
       "relationships": [
         {
           "to": "scrooge",
@@ -345,11 +288,6 @@
       "summary": "A figure that is old and young together, with a jet of light from its head that Scrooge keeps trying to cover. It offers no interpretation of anything it shows, which is the method: the scenes are left to do their own arguing.",
       "clue": "Its light can be put out with a cap, and it answers every protest by showing one more thing.",
       "firstAppearance": "Stave II",
-      "traits": [
-        "ageless",
-        "unhurried",
-        "relentless"
-      ],
       "relationships": [
         {
           "to": "scrooge",
@@ -368,11 +306,6 @@
       "summary": "A giant among heaped food who greets Scrooge as a man to be known better, and then spends the stave withholding comfort. He gives Scrooge’s own words about the surplus population back to him unaltered, and finishes by opening his robe on two children he insists belong to mankind.",
       "clue": "He sits on a throne of turkeys, geese and chestnuts, ages visibly in a single night, and keeps two starved children under his skirts.",
       "firstAppearance": "Stave III",
-      "traits": [
-        "expansive",
-        "sharp",
-        "short-lived"
-      ],
       "relationships": [
         {
           "to": "scrooge",
@@ -391,11 +324,6 @@
       "summary": "A shrouded shape that never speaks and only points. Because it supplies no commentary, every conclusion in the stave has to be reached by Scrooge himself, which is why the stave frightens him more than the chained ghost did.",
       "clue": "It is draped, silent, and does nothing throughout but extend one hand.",
       "firstAppearance": "Stave IV",
-      "traits": [
-        "silent",
-        "unmoving",
-        "the most feared"
-      ],
       "relationships": [
         {
           "to": "scrooge",
@@ -1137,124 +1065,6 @@
       "lat": 50.8198,
       "lon": -1.088,
       "note": "Dickens’s birthplace."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "A social argument in the shape of a fable",
-      "summary": "Read alongside Dickens’s public speaking of 1843 and the reports on child labour he had been reading, the book looks like an intervention in the poor-relief debate that chose allegory because allegory sells at Christmas.",
-      "counter": "It leaves the remedy with individual generosity: Scrooge raises one salary, and nothing in the system he defended in Stave I has been touched."
-    },
-    {
-      "position": "A conversion narrative",
-      "summary": "The oldest reading treats the book as a religious structure in secular dress: warning, examination of conscience, terror, penitence and works, with the spirits as three stages of self-examination.",
-      "counter": "It has to explain away how much of the change comes from fear of a grave, and how little from the memory and pity of the earlier staves."
-    },
-    {
-      "position": "The book that made Christmas",
-      "summary": "A long-running argument in cultural history holds that the novella fixed one version of the festival, domestic, charitable and sentimental, just when Christmas printing and present-giving were growing fastest.",
-      "counter": "The claim is easy to overstate: carols, feasting and seasonal charity long predate 1843, and the book’s popularity may record a change as much as cause it."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Dickens present Scrooge’s transformation?",
-      "focus": "Character, structure and proof",
-      "plan": [
-        "Start with the Stave I portrait and note that the flint image already concedes the fire is present and unstruck.",
-        "Show the ghosts working by different methods: the past supplies evidence, the present indicts, the future threatens and says nothing.",
-        "Use the moment in Stave II where Scrooge defends Fezziwig ‘unconsciously like his former, not his latter self’ as the first sign of movement.",
-        "Argue about the mechanism: is he reformed by pity at the schoolroom, or by terror at the grave, and does the book need both?",
-        "Close on Stave V, where Dickens measures the change in turkeys, cab fares, coal and a salary."
-      ]
-    },
-    {
-      "question": "What does A Christmas Carol say about poverty and responsibility?",
-      "focus": "The Poor Law, charity and the limits of the fable",
-      "plan": [
-        "Open with the charity collectors: Scrooge answers a request for money with a question about institutions.",
-        "Track the phrase about the surplus population from Stave I to the moment the Ghost of Christmas Present returns it in Stave III.",
-        "Read Ignorance and Want closely, noting that the spirit calls them Man’s and ranks Ignorance as the greater danger.",
-        "Set the Cratchit scenes against the Stave IV visit to old Joe’s shop, where poverty produces theft and not loyalty.",
-        "Weigh the ending: one employer improves, which may be the book’s answer or the limit of it."
-      ]
-    },
-    {
-      "question": "How does Dickens use the supernatural in the novella?",
-      "focus": "Gothic form doing moral work",
-      "plan": [
-        "Establish the ground rules: the narrator insists on Marley’s death so that the return can mean something.",
-        "Compare the three spirits as three kinds of evidence: shown, opened and withheld.",
-        "Examine why the silent spirit frightens Scrooge most, and what work the silence forces him to do.",
-        "Look at Marley’s chain as an allegory that is also a stage property, visible to an audience at a public reading.",
-        "Decide whether the supernatural machinery makes the social argument sharper or lets the reader off it."
-      ]
-    },
-    {
-      "question": "‘The book’s real subject is time, not money.’ Discuss.",
-      "focus": "Past, present and future as structure",
-      "plan": [
-        "Set out the design: three spirits, three tenses, and a story that takes one night to cover a lifetime.",
-        "Use the schoolroom and Belle’s release to show the past working as evidence.",
-        "Show how Stave III insists that everyone keeps the day together: miners, sailors, lighthouse keepers.",
-        "Test the case on Scrooge’s question at the grave about shadows of what will be and what may be only.",
-        "Answer with Stave IV’s vow to live in the Past, the Present and the Future, and ask whether it is money or time that he has been wasting."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "The last spirit never speaks. Does that make it more frightening than Marley, and if so why?",
-    "Scrooge raises one clerk’s wages. Is that a solution to anything the book has described?",
-    "Dickens calls the divisions staves and the book a carol. What does the musical framing change about how you read it?",
-    "Tiny Tim has very few lines. Is he a character or a device, and does the distinction matter?",
-    "Would the conversion be as convincing if Stave V ended in the bedroom, and never reached the street?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-chimes/",
-      "why": "The Christmas book Dickens wrote next, with the same machinery turned to a much angrier argument about the deserving poor."
-    },
-    {
-      "href": "/books/the-haunted-man-and-the-ghosts-bargain/",
-      "why": "The last of the Christmas books, and the inverse experiment: a man granted the power to forget."
-    },
-    {
-      "href": "/books/great-expectations/",
-      "why": "Dickens twenty years later on the same question of what money does to a person’s judgement of the people who raised them."
-    },
-    {
-      "href": "/books/cricket-on-the-hearth/",
-      "why": "The domestic side of the Christmas books, and a useful contrast with the Carol’s social sharpness."
-    },
-    {
-      "href": "/books/a-victorian-christmas/",
-      "why": "The customs, food and print culture the novella arrived in and helped to shape."
-    }
-  ],
-  "videos": [
-    {
-      "title": "The origins of A Christmas Carol",
-      "provider": "youtube-nocookie",
-      "id": "cTHAN3_P7uE",
-      "url": "https://www.youtube.com/watch?v=cTHAN3_P7uE",
-      "note": "The Dickens scholar Michael Slater explains the background to the book, Dickens's reasons for writing it and its immediate success.",
-      "source": "British Library"
-    },
-    {
-      "title": "Making A Christmas Carol",
-      "provider": "youtube-nocookie",
-      "id": "1j08V41auuQ",
-      "url": "https://www.youtube.com/watch?v=1j08V41auuQ",
-      "note": "Curators at the Charles Dickens Museum explain how the first edition was designed, illustrated and printed, and what that shows about Dickens as a writer.",
-      "source": "Charles Dickens Museum"
-    },
-    {
-      "title": "A Christmas Carol Themes | BBC Teach",
-      "provider": "youtube-nocookie",
-      "id": "1JMcKSp8uto",
-      "url": "https://www.youtube.com/watch?v=1JMcKSp8uto",
-      "note": "A four-minute BBC summary of the main ideas of the novella, including poverty, responsibility and redemption.",
-      "source": "BBC Bitesize for Teachers"
     }
   ]
 }

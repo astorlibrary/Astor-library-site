@@ -21,28 +21,6 @@
     "url": "https://standardebooks.org/ebooks/arthur-conan-doyle/the-adventures-of-sherlock-holmes/text/single-page",
     "note": "Quotations are placed by story. Standard Ebooks prints ‘The Redheaded League’ where most editions print ‘The Red-Headed League’; the stories are otherwise in their magazine order."
   },
-  "atAGlance": [
-    {
-      "label": "Serialised",
-      "value": "July 1891 – June 1892",
-      "note": "One story a month in The Strand Magazine, illustrated by Sidney Paget."
-    },
-    {
-      "label": "Collected",
-      "value": "1892",
-      "note": "Published as a volume by George Newnes, in the magazine’s own order."
-    },
-    {
-      "label": "Narrator",
-      "value": "Dr John Watson",
-      "note": "Every story is his written-up account, which means every solution reaches the reader second-hand."
-    },
-    {
-      "label": "Endings",
-      "value": "Not always an arrest",
-      "note": "Holmes lets the culprit go, or declines to involve the police, in several of the twelve."
-    }
-  ],
   "structure": [
     {
       "id": "scandal-in-bohemia",
@@ -125,11 +103,6 @@
       "summary": "He works for interest more than money, turns down cases that bore him, and treats the law as one option among several. The stories are careful to show his conclusions resting on specialist knowledge, correspondence, disguise and paid informants as much as on the famous glance at a sleeve.",
       "clue": "He keeps his tobacco in a slipper, can tell a man’s trade from his cuffs, and once let a thief run out of the door at Christmas because gaol would have finished him.",
       "firstAppearance": "A Scandal in Bohemia",
-      "traits": [
-        "exacting",
-        "theatrical",
-        "bored between cases"
-      ],
       "relationships": [
         {
           "to": "john-watson",
@@ -170,11 +143,6 @@
       "summary": "He decides what the reader is told and when, which makes him the collection’s most important technical device. His admiration colours every portrait of Holmes, and his bafflement keeps a chain of inference feeling like a story.",
       "clue": "An army surgeon invalided home, newly married when the collection opens, who makes his friend’s demonstrations into the very thing his friend claims to despise: popular stories.",
       "firstAppearance": "A Scandal in Bohemia",
-      "traits": [
-        "loyal",
-        "selective",
-        "a professional witness"
-      ],
       "relationships": [
         {
           "to": "sherlock-holmes",
@@ -190,11 +158,6 @@
       "summary": "She recognises Holmes in disguise, follows him home in men’s clothes to be certain, and leaves the country with the photograph and a better husband. Watson records that Holmes has kept her picture and stopped joking about the cleverness of women.",
       "clue": "An opera singer who spots a disguised detective in the street, wishes him goodnight by name, and is on the boat train before he opens the hiding place.",
       "firstAppearance": "A Scandal in Bohemia",
-      "traits": [
-        "quick",
-        "self-protecting",
-        "unbeaten"
-      ],
       "relationships": [
         {
           "to": "sherlock-holmes",
@@ -213,10 +176,6 @@
       "summary": "Her hundred a year from a New Zealand annuity is the whole engine of the plot, and she cannot see it because she has been taught to think of the money as her mother’s. Holmes solves her case and then declines to tell her the answer.",
       "clue": "A short-sighted typist who earns twopence a sheet, and whose bridegroom vanishes from a four-wheeler between his lodgings and the church.",
       "firstAppearance": "A Case of Identity",
-      "traits": [
-        "trusting",
-        "short-sighted in both senses"
-      ],
       "relationships": [
         {
           "to": "sherlock-holmes",
@@ -235,10 +194,6 @@
       "summary": "She arrives at Baker Street before seven in the morning, shaking, with bruises on her wrist from the man she lives with. Her sister died two weeks before a wedding and she is about to be married herself, which is the arithmetic the case actually runs on.",
       "clue": "She comes in black, veiled and shivering, and says it is not the cold that is making her shake.",
       "firstAppearance": "The Adventure of the Speckled Band",
-      "traits": [
-        "frightened",
-        "precise in her account"
-      ],
       "relationships": [
         {
           "to": "grimesby-roylott",
@@ -265,11 +220,6 @@
       "summary": "A doctor with a temper, a prison record and a will that pays him while his stepdaughters stay unmarried. Doyle makes him physically enormous and has him bend a poker in the sitting room, so that the eventual method, small, quiet and indirect, comes as a real surprise.",
       "clue": "He bends a steel poker in a detective’s sitting-room, lets a cheetah and a baboon roam his grounds, and keeps a saucer of milk on top of his safe.",
       "firstAppearance": "The Adventure of the Speckled Band",
-      "traits": [
-        "violent",
-        "knowledgeable",
-        "in debt to a will"
-      ],
       "relationships": [
         {
           "to": "helen-stoner",
@@ -288,11 +238,6 @@
       "summary": "She is asked to cut her hair, wear a particular blue dress and sit with her back to a window, and she does all three while keeping a record. By the time Holmes arrives she has found a coil of hair like her own in a locked drawer, got into the shut-up wing and worked out roughly what is being concealed.",
       "clue": "A governess who accepts a post with impossible conditions, sits where she is told, and secretly uses a hand-mirror to see what is behind her.",
       "firstAppearance": "The Adventure of the Copper Beeches",
-      "traits": [
-        "observant",
-        "nerveless",
-        "underpaid"
-      ],
       "relationships": [
         {
           "to": "sherlock-holmes",
@@ -311,11 +256,6 @@
       "summary": "A journalist who went out to research an article on begging, discovered how much better it paid than writing, and spent years changing his face in a room above an opium den. He is the collection’s clearest statement that respectability is a costume with an income attached.",
       "clue": "He leaves his villa at Lee every morning a gentleman, and spends the day in Threadneedle Street as a beggar with a twisted lip.",
       "firstAppearance": "The Man with the Twisted Lip",
-      "traits": [
-        "an actor by training",
-        "ashamed",
-        "solvent"
-      ],
       "relationships": [
         {
           "to": "sherlock-holmes",
@@ -334,10 +274,6 @@
       "summary": "A slow, red-headed, thoroughly ordinary man who is paid four pounds a week to copy out an encyclopaedia and never wonders why. His complete lack of curiosity is the mechanism of the crime, and Doyle makes him likeable enough that the reader shares it.",
       "clue": "He copies out the Encyclopaedia Britannica for four pounds a week, and gets through Abbots, Archery, Armour, Architecture and Attica before the office shuts.",
       "firstAppearance": "The Red-Headed League",
-      "traits": [
-        "incurious",
-        "aggrieved"
-      ],
       "relationships": [
         {
           "to": "sherlock-holmes",
@@ -356,10 +292,6 @@
       "summary": "He appears to be there to be wrong, but the stories are more careful than that: he brings official power Holmes does not have, makes arrests, and is generally right about who had the opportunity and wrong only about what it means.",
       "clue": "A lean, ferret-like man from Scotland Yard who is sure the son is guilty at Boscombe Valley, and drags the Serpentine for a missing bride.",
       "firstAppearance": "The Boscombe Valley Mystery",
-      "traits": [
-        "dogged",
-        "official"
-      ],
       "relationships": [
         {
           "to": "sherlock-holmes",
@@ -1142,98 +1074,5 @@
       "lon": -2.72,
       "note": "The estate and pool of the Boscombe case, where the ground gives the answer that the witnesses cannot."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "The stories as the template for modern detective fiction",
-      "summary": "The collection fixed a formula that most twentieth-century detective writing either follows or deliberately breaks: the eccentric amateur, the admiring narrator, the client’s interview, a false solution, a physical clue and the closing explanation.",
-      "counter": "It risks treating Doyle as a machine for producing puzzles, when several of these stories have no crime, no arrest, or no solution that arrives in time."
-    },
-    {
-      "position": "Watson as the essential device",
-      "summary": "Criticism has long argued that the interest lies in the narration more than the deduction: the reader’s pleasure depends on a narrator who has the clues without understanding them, and whose affection colours every description of Holmes.",
-      "counter": "Pushed far, it makes Holmes no more than Watson’s projection, yet Holmes keeps complaining about the way Watson tells the stories, and the complaint is one of their running jokes."
-    },
-    {
-      "position": "The collection as social record",
-      "summary": "Later readings look at what the cases are about: annuities, wills, mortgages, professional respectability, the economics of begging, and the vulnerability of women who depend on male relatives for an income.",
-      "counter": "Doyle is no reformer, and the stories usually restore the arrangements they have exposed."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How important is Watson to the effect of the Holmes stories?",
-      "focus": "Narration, withholding and the reader’s position",
-      "plan": [
-        "Establish that every story is written up afterwards by a participant, and find the places where Watson admits to selecting.",
-        "Use the opening of ‘A Scandal in Bohemia’ to show how his admiration frames the portrait before any case begins.",
-        "Examine a demonstration scene, such as the stair count, the hat or the boots, and track exactly when the reader is given each fact.",
-        "Contrast with ‘The Engineer’s Thumb’, where the client tells his own story and Watson steps back.",
-        "Conclude on the running joke that Holmes despises the stories his method depends on for its reputation."
-      ]
-    },
-    {
-      "question": "‘Holmes is a private authority answerable to nobody.’ Discuss with reference to at least three stories.",
-      "focus": "Justice, law and the endings",
-      "plan": [
-        "Count the outcomes: how many of the twelve end in arrest, and how many in a private decision.",
-        "Take ‘The Blue Carbuncle’ as the clearest case of mercy, and weigh the reasoning Holmes gives Watson for it.",
-        "Set against it ‘A Case of Identity’, where the law cannot act and Holmes also declines to tell the victim the truth.",
-        "Consider ‘The Speckled Band’, where his intervention causes a death he then judges in borrowed proverbs.",
-        "Decide whether the collection presents this authority as a solution to the law’s failures or as a second problem."
-      ]
-    },
-    {
-      "question": "Examine the presentation of women in The Adventures of Sherlock Holmes.",
-      "focus": "Clients, incomes and independence",
-      "plan": [
-        "Begin with Irene Adler, who is introduced as an exception and defeats the method by using it.",
-        "Set the dependent clients, such as Mary Sutherland and Helen Stoner, beside the income or will that puts them in danger.",
-        "Use Violet Hunter, who investigates before the detective arrives, as the strongest counter-example.",
-        "Weigh Watson’s habit of describing women’s appearance first and their reasoning second.",
-        "Ask whether the collection admires independence or merely finds it striking."
-      ]
-    },
-    {
-      "question": "What does Doyle’s London contribute to these stories?",
-      "focus": "Setting, anonymity and the machinery of a modern city",
-      "plan": [
-        "Gather the infrastructure the plots run on: trains, cabs, post, newspapers, banks, lodging houses.",
-        "Show how the same systems that let Holmes move fast let criminals disappear: the beggar, the typewriter, the advertisement.",
-        "Consider class geography: Coburg Square, Streatham, Swandam Lane and Lee are different economies as well as different addresses.",
-        "Turn to the final story’s claim that the isolated countryside is worse, and test it against the rural cases.",
-        "Conclude on what the city does to identity when nobody’s neighbours know them."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "The collection opens with the case Holmes loses. What does beginning there do to everything that follows?",
-    "Watson keeps saying Holmes is a machine, and keeps recording evidence that he is not. Whose view should we take?",
-    "Four of the twelve cases end without anybody being charged. Is Holmes dispensing justice or avoiding it?",
-    "Violet Hunter does most of the observing in the last story. Does that strengthen the method or undermine the detective?",
-    "Nearly every case has an exact sum of money at its centre. What kind of society is being described?"
-  ],
-  "related": [
-    {
-      "href": "/books/sign-of-four/",
-      "why": "The novel published a year earlier, where the same partnership is given room for a chase, a treasure and Watson’s marriage."
-    },
-    {
-      "href": "/books/the-moonstone/",
-      "why": "The English detective novel Doyle inherited: a stolen jewel, multiple narrators and a professional detective who gets it wrong."
-    },
-    {
-      "href": "/books/the-woman-in-white/",
-      "why": "An earlier sensation novel that draws on the same Victorian fears: disputed identity, a woman’s income, and documents that can be forged."
-    },
-    {
-      "href": "/books/jekyll-and-hyde/",
-      "why": "Published five years before these stories and set in the same fog: professional respectability with a second address behind it."
-    },
-    {
-      "href": "/books/dracula/",
-      "why": "The decade’s other bestseller about reading evidence, in which timetables, letters and phonograph cylinders are assembled against something the law cannot charge."
-    }
-  ],
-  "videos": []
+  ]
 }

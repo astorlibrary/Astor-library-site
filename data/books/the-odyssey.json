@@ -21,28 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/1727/pg1727.txt",
     "note": "Quotations are given exactly as Butler first printed them, and Butler used the Roman names then usual in English: Ulysses for Odysseus, Minerva for Athene, Jove for Zeus, Neptune for Poseidon, Mercury for Hermes, Proserpine for Persephone. The Astor edition prints the same translation with the familiar Greek names restored, so a quotation here that says Ulysses will say Odysseus there. Outside quotations, the commentary uses the Greek names."
   },
-  "atAGlance": [
-    {
-      "label": "Composed",
-      "value": "c. 725–675 BCE",
-      "note": "This is a scholarly estimate, since no record survives. The poem comes out of a long tradition of oral performance, and nobody knows when, or whether, a single poet fixed it."
-    },
-    {
-      "label": "This translation",
-      "value": "1900",
-      "note": "Samuel Butler, novelist and author of Erewhon, put the poem into plain Victorian prose for readers without Greek."
-    },
-    {
-      "label": "Length",
-      "value": "24 books",
-      "note": "The division into twenty-four books is ancient but later than the poem, and is usually credited to the scholars of Alexandria."
-    },
-    {
-      "label": "Time covered",
-      "value": "About forty days",
-      "note": "The ten years of wandering are told in flashback over a single evening. The action of the poem itself takes about six weeks."
-    }
-  ],
   "structure": [
     {
       "id": "books-1-4",
@@ -221,11 +199,6 @@
       "summary": "The Iliad’s heroes are strong; this one is clever, and the poem treats cleverness as a kind of endurance. He can build a raft, a bed and a lie with equal care, and he tells five separate false life-stories once he is home. He is also the only survivor of his expedition, a fact he narrates himself and for which he never fully takes the blame.",
       "clue": "He gives a giant a false name and gets away with it, then cannot resist shouting the real one, and pays ten years for the pleasure.",
       "firstAppearance": "Book 5",
-      "traits": [
-        "inventive",
-        "patient",
-        "untrusting"
-      ],
       "relationships": [
         {
           "to": "penelope",
@@ -298,11 +271,6 @@
       "summary": "She has no army, no husband and a son too young to help, and she holds a hundred-odd men off for three years with a loom. The poem never says exactly when she recognises the beggar, and her decision to set the bow contest on the very day he arrives can be read as despair, luck or collusion. She out-tricks Odysseus, which no other mortal in the poem manages.",
       "clue": "She weaves by day, unpicks by night, and at the end orders a bed moved that she knows cannot be moved.",
       "firstAppearance": "Book 1",
-      "traits": [
-        "guarded",
-        "resourceful",
-        "hard to read"
-      ],
       "relationships": [
         {
           "to": "odysseus",
@@ -345,11 +313,6 @@
       "summary": "The first four books are his, and they show a young man who has been told all his life whose son he is and has no way to check. His journey finds out very little about Odysseus and a good deal about himself. By Book 21 he is giving orders to his mother and could, the poem hints, have strung the bow himself.",
       "clue": "He tells his mother that talking is men’s business in Book 1, and that the bow is men’s business in Book 21, in almost the same words.",
       "firstAppearance": "Book 1",
-      "traits": [
-        "untested",
-        "quick to learn",
-        "his father’s son"
-      ],
       "relationships": [
         {
           "to": "odysseus",
@@ -400,11 +363,6 @@
       "summary": "She opens the plot by lobbying her father while Poseidon is out of the room, and she stays in it to the last line. She appears as Mentes, as Mentor, as a little girl with a pitcher and as a shepherd boy, and she likes Odysseus for the quality a moralist would disapprove of: he lies as well as she does.",
       "clue": "Caught being lied to by her favourite mortal, she smiles, strokes his hand and compliments his technique.",
       "firstAppearance": "Book 1",
-      "traits": [
-        "partisan",
-        "disguised",
-        "amused"
-      ],
       "relationships": [
         {
           "to": "odysseus",
@@ -437,11 +395,6 @@
       "summary": "His anger is the reason a voyage of a few weeks takes ten years, and it has a specific cause: Odysseus blinded his son and then supplied a name for the curse. He cannot kill Odysseus, because fate has settled that the man gets home, so he settles for making it slow, solitary and expensive, and takes out the remainder on the Phaeacians.",
       "clue": "He is away at a feast among the Ethiopians when the poem begins, which is the only reason anything can start.",
       "firstAppearance": "Book 5",
-      "traits": [
-        "grudge-bearing",
-        "absent",
-        "thorough"
-      ],
       "relationships": [
         {
           "to": "odysseus",
@@ -469,11 +422,6 @@
       "summary": "He is the poem’s clearest picture of a host who breaks every rule: he asks his guests’ business before feeding them, eats them, and offers as his guest-gift the favour of being eaten last. Yet he is tender with his ram, and Odysseus was in his cave uninvited, helping himself to cheese. The episode is less one-sided than its teller makes it sound.",
       "clue": "His neighbours ask who is hurting him, and he gives them an answer that sends them back to bed.",
       "firstAppearance": "Book 9",
-      "traits": [
-        "lawless",
-        "solitary",
-        "literal-minded"
-      ],
       "relationships": [
         {
           "to": "odysseus",
@@ -500,11 +448,6 @@
       "summary": "Her name comes from the Greek for hiding, and she has hidden Odysseus from the world for seven years. She offers the one thing no Homeric hero is otherwise offered (never to die), and he declines it for a woman he concedes is less beautiful. Told to release him, she protests that gods are allowed mortal lovers and goddesses are not.",
       "clue": "She offers a man immortality and ends up lending him an axe.",
       "firstAppearance": "Book 5",
-      "traits": [
-        "possessive",
-        "generous",
-        "aggrieved"
-      ],
       "relationships": [
         {
           "to": "odysseus",
@@ -523,11 +466,6 @@
       "summary": "She turns half the crew into pigs, fails to turn Odysseus, and then becomes the most useful ally of the whole voyage. It is Circe who sends him to the dead and who briefs him, point by point, on the Sirens, Scylla and the cattle of the Sun. He stays a year, and it is the crew who have to remind him about home.",
       "clue": "Her guests arrive as men and are penned as pigs, with their minds unchanged.",
       "firstAppearance": "Book 10",
-      "traits": [
-        "dangerous",
-        "hospitable",
-        "well-informed"
-      ],
       "relationships": [
         {
           "to": "odysseus",
@@ -546,11 +484,6 @@
       "summary": "She is the only person on the beach who does not run away from the salt-caked stranger, and she manages the encounter better than he could have hoped, down to the instruction to walk behind her wagon so that nobody gossips. The poem lets her think of him as a husband and then sends him home to someone else.",
       "clue": "She goes to the river to wash her brothers’ clothes and comes back with the hero of the Trojan war.",
       "firstAppearance": "Book 6",
-      "traits": [
-        "composed",
-        "practical",
-        "wistful"
-      ],
       "relationships": [
         {
           "to": "odysseus",
@@ -569,11 +502,6 @@
       "summary": "He is the poem’s model host, and he is a slave with a hut and a herd of pigs. He gives a beggar the best cut of pork and his own cloak, and refuses to believe the beggar’s good news because he has been lied to before. The narrator addresses him directly as “you”, a courtesy the poem extends to nobody else in Ithaca.",
       "clue": "He has been told so often that his master is coming home that he will not believe it from the master himself.",
       "firstAppearance": "Book 14",
-      "traits": [
-        "loyal",
-        "sceptical",
-        "generous"
-      ],
       "relationships": [
         {
           "to": "odysseus",
@@ -602,11 +530,6 @@
       "summary": "She knows the house better than anyone in it, and she knows Odysseus by touch: the scar on his leg tells her what twenty years and a goddess’s disguise were hiding from everybody else. Her reward is a hand at her throat. After the killing it is she who names the twelve disloyal maids.",
       "clue": "She drops his foot into the basin, the water spills, and he grips her by the throat before she can speak.",
       "firstAppearance": "Book 1",
-      "traits": [
-        "observant",
-        "fierce",
-        "trusted"
-      ],
       "relationships": [
         {
           "to": "odysseus",
@@ -631,11 +554,6 @@
       "summary": "The suitors are guests who will not leave, and their offence is described again and again as eating. Antinous is the worst of them: he proposes Telemachus’s murder and throws a stool at a beggar in another man’s hall. Yet his account of Penelope’s web in Book 2 is half admiring, and the suitors’ kin have a grievance the last book takes seriously.",
       "clue": "He dies with a gold cup raised to his lips, thinking about his wine.",
       "firstAppearance": "Book 1",
-      "traits": [
-        "arrogant",
-        "greedy",
-        "heedless"
-      ],
       "relationships": [
         {
           "to": "penelope",
@@ -1566,125 +1484,6 @@
       "lat": 38.5333,
       "lon": 22.6167,
       "note": "Where the young Odysseus, visiting his grandfather Autolycus, was gored by a boar. The scar is how Eurycleia knows him in Book 19."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "A moral poem: the just are rewarded and the wicked pay",
-      "summary": "On this reading Zeus’s opening speech is the key. Mortals suffer beyond their portion through their own recklessness; the crew and the suitors are both warned, both persist, and both are destroyed, while the patient hero and the faithful wife get their house back. The Odyssey is then a more ethically ordered poem than the Iliad, with gods who care about right conduct.",
-      "counter": "The scheme fits the suitors better than it fits the facts. Poseidon’s ten-year persecution is a private grudge, the Phaeacians are punished for the exact hospitality the poem praises, and the hanged maids and the imposed truce of Book 24 suggest a poet less comfortable with the tidy version than Zeus is."
-    },
-    {
-      "position": "Penelope knows: the second half as a collaboration",
-      "summary": "Some readers hold that Penelope recognises the beggar, or at least suspects him, during the interview in Book 19, and that her decision to stage the bow contest the next day is a move in a game both are playing. On this reading she is the poem’s second strategist, and the odd timing is explained.",
-      "counter": "The text never says so, and says several things against it: she weeps for her husband in his presence, prays for death in Book 20, and holds out against him in Book 23. It may be truer to the poem to say that it deliberately closes her mind to us, as she closes it to everyone else."
-    },
-    {
-      "position": "The untrustworthy hero",
-      "summary": "A sceptical reading notices that the monsters, the witches and the loss of every ship and man are reported only by Odysseus, to hosts he needs to impress, and that the same voice later tells five detailed and entirely false life-stories in Ithaca. His account consistently puts the blame on the crew. The poem, on this view, is inviting us to admire the performance and doubt the performer.",
-      "counter": "The narrator confirms the essentials in his own voice (the blinding of the Cyclops, the cattle of the Sun, Poseidon’s anger), so the adventures cannot simply be a tall tale. And for an audience raised on oral poetry, skill in telling was a heroic virtue in its own right."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "Is Odysseus a hero to be admired?",
-      "focus": "Cunning, endurance and the cost to others",
-      "plan": [
-        "Start from the first adjective, ‘ingenious’, and establish that this poem’s idea of excellence is intelligence and staying power, more than strength.",
-        "Take the Cyclops episode as the test case: the Noman trick shows the quality at its best, and the boast from the ship shows the older heroic appetite for fame throwing it away.",
-        "Count the losses, twelve ships and every companion, and weigh his own account of them against the proem’s insistence that the men died by their own folly.",
-        "Set against this the refusal of Calypso’s offer and the patience in the hall, where he absorbs blows he could return.",
-        "Close on Book 24: he lies to his grieving father out of habit and has to be stopped from slaughter by a thunderbolt. Odysseus is meant to be admired; decide how far the poem qualifies that admiration."
-      ]
-    },
-    {
-      "question": "How does the Odyssey use hospitality to judge its characters?",
-      "focus": "Hosts, guests and the protection of Zeus",
-      "plan": [
-        "Set out the rule as the poem shows it working at Pylos and Sparta: welcome, bath, food, and only then the question of a name.",
-        "Treat Polyphemus as the deliberate inversion, point by point, including the parody of a guest-gift, while noting that Odysseus entered uninvited.",
-        "Use Eumaeus to show that the standard is moral and has nothing to do with rank: ‘all strangers and beggars are from Jove’ is said in a hut.",
-        "Read the suitors as bad guests, whose crime is put in terms of eating, and connect them to the crew on Thrinacia.",
-        "Finish with the Phaeacians, whose ship is turned to stone for giving a stranger passage, and ask whether the poem’s gods uphold the code as reliably as its mortals are expected to."
-      ]
-    },
-    {
-      "question": "‘The real contest in the Odyssey is between husband and wife.’ Discuss the presentation of Penelope.",
-      "focus": "Cunning, loyalty and what the poem withholds",
-      "plan": [
-        "Begin with the web, told by Antinous as a grievance, and show how it establishes her as a strategist before she has said much at all.",
-        "Examine the Book 19 interview and the gates of horn and ivory: set out what she says she believes and what she then does.",
-        "Make the bed scene the centre. She tests him with a lie, he fails to see it coming, and his anger is the proof that she has out-manoeuvred him.",
-        "Follow the reverse simile of the shipwrecked swimmer, which gives her his ordeal, as the poem’s own statement of their equality.",
-        "Qualify with the limits: Telemachus twice sends her to her room, and Agamemnon’s praise reduces her to ‘constancy’. Consider whether the poem sees more than its characters do."
-      ]
-    },
-    {
-      "question": "What is the effect of having Odysseus tell his own adventures?",
-      "focus": "Narrative structure and reliability",
-      "plan": [
-        "Describe the structure: a poem that begins in the twentieth year and hands four books to its hero to narrate after dinner.",
-        "Show how Book 8 prepares for this, with Demodocus’s songs and the weeping guest, so that Odysseus takes over from a professional bard.",
-        "Consider audience and motive: the Phaeacians are about to give him passage and treasure, and Alcinous compliments him on telling it like a poet.",
-        "Compare the false Cretan tales of Books 13 to 19, which are plausible, detailed and untrue, and ask what that does to our trust in Books 9 to 12.",
-        "Conclude with the bow strung like a lyre: the poem treats storytelling and action as the same skill, and leaves admiration and doubt side by side."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Odysseus turns down immortality with Calypso for a wife he admits is less beautiful and a life that will end. What exactly is he choosing?",
-    "When do you think Penelope knows who the beggar is? Find the moment you would stake the argument on, and the strongest evidence against it.",
-    "Twelve maidservants are hanged in Book 22, and the simile compares them to birds caught on their way to the nest. Is the poem on the side of the sentence it carries out?",
-    "Achilles in Hades would rather be a living labourer than king of the dead. Does that remark change how you read the Iliad, or only how you read the Odyssey?",
-    "Almost everything we know about the wanderings comes from Odysseus. Which episode would you most like a second witness for, and why?",
-    "The poem ends with a truce imposed by a thunderbolt. Is that a satisfying ending, an evasion, or an admission?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-iliad/",
-      "why": "The war this poem is the aftermath of, and the idea of heroism (a short life for lasting fame) that Achilles’ ghost takes back in Book 11."
-    },
-    {
-      "href": "/books/the-aeneid/",
-      "why": "Virgil’s answer: another survivor of Troy, another voyage and another descent to the dead, but with a hero who is travelling away from home to found one."
-    },
-    {
-      "href": "/passage-room/odyssey-olive-bed/",
-      "why": "A close reading of the bed built round the olive tree, the test Penelope sets and Odysseus does not see coming."
-    },
-    {
-      "href": "/books/paradise-lost/",
-      "why": "Milton inherits the machinery: the invocation, the start in the middle, a long story told to a host over a meal. He uses it to tell how a different home was lost."
-    },
-    {
-      "href": "/books/robinson-crusoe/",
-      "why": "The castaway as practical man: another hero defined by what he can build with his hands, on an island, a long way from home."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Everything you need to know to read Homer's \"Odyssey\" - Jill Dash",
-      "provider": "youtube-nocookie",
-      "id": "8Z9FQxcCAZ0",
-      "url": "https://www.youtube.com/watch?v=8Z9FQxcCAZ0",
-      "note": "A five-minute animated introduction to the poem.",
-      "source": "TED-Ed"
-    },
-    {
-      "title": "A Long and Difficult Journey, or  The Odyssey: Crash Course Literature 201",
-      "provider": "youtube-nocookie",
-      "id": "MS4jk5kavy4",
-      "url": "https://www.youtube.com/watch?v=MS4jk5kavy4",
-      "note": "A twelve-minute overview of the poem's story and structure.",
-      "source": "CrashCourse"
-    },
-    {
-      "title": "How The Odyssey was experienced in the ancient world",
-      "provider": "youtube-nocookie",
-      "id": "4q3LnqQCrcI",
-      "url": "https://www.youtube.com/watch?v=4q3LnqQCrcI",
-      "note": "A British Museum curator on how the poem was pictured on ancient objects.",
-      "source": "The British Museum"
     }
   ]
 }

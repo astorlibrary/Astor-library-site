@@ -1,0 +1,3045 @@
+{
+ "note": "Written and checked by hand. Each question: four options with the right answer first, a hint and an explanation shown after answering. today-pick.mjs chooses five a day and shuffles the options.",
+ "questions": [
+  {
+   "id": "winters-tale-bear",
+   "question": "Which play contains the stage direction “Exit, pursued by a bear”?",
+   "options": [
+    "The Winter’s Tale",
+    "The Tempest",
+    "Cymbeline",
+    "Pericles"
+   ],
+   "answer": 0,
+   "hint": "A statue appears to come to life in its last scene.",
+   "explanation": "Antigonus leaves the baby Perdita on the coast of Bohemia in Act 3, scene 3 of The Winter’s Tale and is chased off by a bear. A shepherd’s son later reports that the bear has eaten him.",
+   "link": {
+    "href": "/books/the-winters-tale/",
+    "label": "The Winter’s Tale"
+   }
+  },
+  {
+   "id": "macbeth-sleepwalk-witnesses",
+   "question": "Who watch Lady Macbeth sleepwalking in Act 5, scene 1 of Macbeth?",
+   "options": [
+    "A doctor and a gentlewoman",
+    "Macduff and Ross",
+    "Seyton and the Porter",
+    "Malcolm and Donalbain"
+   ],
+   "answer": 0,
+   "hint": "One of them says the disease is “beyond my practice”.",
+   "explanation": "A waiting-gentlewoman has called in a doctor of physic. They see Lady Macbeth rub her hands and hear her speak of Duncan’s blood and Lady Macduff’s death.",
+   "link": {
+    "href": "/guides/macbeth/what-happens/",
+    "label": "Macbeth: what happens"
+   }
+  },
+  {
+   "id": "hamlet-mousetrap",
+   "question": "Which play does Hamlet ask the travelling players to perform before Claudius?",
+   "options": [
+    "The Murder of Gonzago",
+    "The Spanish Tragedy",
+    "Dido, Queen of Carthage",
+    "The Tragedy of Priam"
+   ],
+   "answer": 0,
+   "hint": "Hamlet tells the King its other title is “The Mousetrap”.",
+   "explanation": "Hamlet asks the players for The Murder of Gonzago and adds “some dozen or sixteen lines” of his own. The play shows a king poisoned in his garden, as the Ghost says Old Hamlet was.",
+   "link": {
+    "href": "/guides/hamlet/what-happens/",
+    "label": "Hamlet: what happens"
+   }
+  },
+  {
+   "id": "hamlet-yorick",
+   "question": "Whose skull does Hamlet hold in the graveyard scene?",
+   "options": [
+    "Yorick’s",
+    "Polonius’s",
+    "Osric’s",
+    "Old Hamlet’s"
+   ],
+   "answer": 0,
+   "hint": "He was the king’s jester.",
+   "explanation": "The First Gravedigger says the skull has lain in the earth twenty-three years and belonged to Yorick, the King’s jester. Hamlet remembers being carried on his back.",
+   "link": {
+    "href": "/guides/hamlet/",
+    "label": "Hamlet study guide"
+   }
+  },
+  {
+   "id": "as-you-like-it-names",
+   "question": "In which play do Rosalind, Orlando and Touchstone appear?",
+   "options": [
+    "As You Like It",
+    "Twelfth Night",
+    "Much Ado About Nothing",
+    "The Two Gentlemen of Verona"
+   ],
+   "answer": 0,
+   "hint": "Much of it takes place in the Forest of Arden.",
+   "explanation": "Rosalind is banished from her uncle’s court and goes to the Forest of Arden disguised as a young man, Ganymede, with her cousin Celia and the court fool Touchstone.",
+   "link": {
+    "href": "/books/as-you-like-it/",
+    "label": "As You Like It"
+   }
+  },
+  {
+   "id": "othello-strawberries",
+   "question": "In Othello, what is the handkerchief Othello gave Desdemona embroidered with?",
+   "options": [
+    "Strawberries",
+    "Roses",
+    "Cherries",
+    "Violets"
+   ],
+   "answer": 0,
+   "hint": "Iago describes it to Othello in Act 3, scene 3.",
+   "explanation": "Iago calls it a handkerchief “spotted with strawberries”. Emilia picks it up when Desdemona drops it and gives it to Iago, who leaves it in Cassio’s lodging.",
+   "link": {
+    "href": "/guides/othello/",
+    "label": "Othello study guide"
+   }
+  },
+  {
+   "id": "tempest-sycorax",
+   "question": "In The Tempest, who imprisoned Ariel in a cloven pine before Prospero came to the island?",
+   "options": [
+    "Sycorax",
+    "Hecate",
+    "Circe",
+    "Tamora"
+   ],
+   "answer": 0,
+   "hint": "She was Caliban’s mother.",
+   "explanation": "Prospero reminds Ariel that the witch Sycorax confined him in a pine for twelve years, and that he released him. Sycorax had died before Prospero arrived.",
+   "link": {
+    "href": "/books/the-tempest/",
+    "label": "The Tempest"
+   }
+  },
+  {
+   "id": "twelfth-night-stockings",
+   "question": "In Twelfth Night, what colour stockings does the forged letter tell Malvolio to wear?",
+   "options": [
+    "Yellow",
+    "Green",
+    "Black",
+    "Scarlet"
+   ],
+   "answer": 0,
+   "hint": "He is also told to wear them cross-gartered.",
+   "explanation": "Maria writes the letter in a hand like Olivia’s. It tells Malvolio to wear yellow stockings, cross-gartered, and to smile, all things Olivia dislikes.",
+   "link": {
+    "href": "/books/twelfth-night/",
+    "label": "Twelfth Night"
+   }
+  },
+  {
+   "id": "romeo-plague",
+   "question": "Who says “A plague o’ both your houses!” in Romeo and Juliet?",
+   "options": [
+    "Mercutio",
+    "Tybalt",
+    "Benvolio",
+    "Friar Laurence"
+   ],
+   "answer": 0,
+   "hint": "He is fatally wounded when Romeo steps between him and his opponent.",
+   "explanation": "Mercutio is stabbed by Tybalt under Romeo’s arm in Act 3, scene 1. He curses both the Montagues and the Capulets before he dies.",
+   "link": {
+    "href": "/guides/romeo-and-juliet/",
+    "label": "Romeo and Juliet study guide"
+   }
+  },
+  {
+   "id": "julius-caesar-antony",
+   "question": "Who begins a speech “Friends, Romans, countrymen, lend me your ears”?",
+   "options": [
+    "Mark Antony",
+    "Brutus",
+    "Cassius",
+    "Octavius"
+   ],
+   "answer": 0,
+   "hint": "He has been given permission to speak at Caesar’s funeral.",
+   "explanation": "Mark Antony speaks after Brutus in Act 3, scene 2 of Julius Caesar. By repeating that Brutus is “an honourable man” he turns the crowd against the conspirators.",
+   "link": {
+    "href": "/guides/julius-caesar/",
+    "label": "Julius Caesar study guide"
+   }
+  },
+  {
+   "id": "much-ado-dogberry",
+   "question": "In Much Ado About Nothing, who is the constable of the Watch?",
+   "options": [
+    "Dogberry",
+    "Verges",
+    "Borachio",
+    "Conrade"
+   ],
+   "answer": 0,
+   "hint": "He is famous for using the wrong word.",
+   "explanation": "Dogberry and his partner Verges lead the Watch, who overhear Borachio boasting about the plot against Hero. Dogberry’s muddled language delays the truth coming out.",
+   "link": {
+    "href": "/books/much-ado-about-nothing/",
+    "label": "Much Ado About Nothing"
+   }
+  },
+  {
+   "id": "merchant-casket",
+   "question": "In The Merchant of Venice, which casket holds Portia’s portrait?",
+   "options": [
+    "Lead",
+    "Gold",
+    "Silver",
+    "Bronze"
+   ],
+   "answer": 0,
+   "hint": "Its inscription says “Who chooseth me must give and hazard all he hath.”",
+   "explanation": "Morocco chooses gold and Arragon silver. Bassanio chooses lead and finds Portia’s picture inside.",
+   "link": {
+    "href": "/books/the-merchant-of-venice/",
+    "label": "The Merchant of Venice"
+   }
+  },
+  {
+   "id": "dream-bottom",
+   "question": "In A Midsummer Night’s Dream, what does Puck give Bottom in place of his own head?",
+   "options": [
+    "An ass’s head",
+    "A goat’s head",
+    "A hare’s head",
+    "A boar’s head"
+   ],
+   "answer": 0,
+   "hint": "Quince cries out that Bottom is “translated”.",
+   "explanation": "Puck transforms Bottom while the workmen rehearse their play in the wood. Titania, under the spell of the love-juice, wakes and falls in love with him.",
+   "link": {
+    "href": "/guides/a-midsummer-nights-dream/",
+    "label": "A Midsummer Night’s Dream study guide"
+   }
+  },
+  {
+   "id": "richard-iii-opening",
+   "question": "Which play opens “Now is the winter of our discontent / Made glorious summer by this sun of York”?",
+   "options": [
+    "Richard III",
+    "Henry VI, Part 3",
+    "Richard II",
+    "King John"
+   ],
+   "answer": 0,
+   "hint": "The speaker is the Duke of Gloucester.",
+   "explanation": "Richard, Duke of Gloucester, speaks the opening soliloquy alone on stage. The “sun of York” is his brother, King Edward IV.",
+   "link": {
+    "href": "/guides/richard-iii/",
+    "label": "Richard III study guide"
+   }
+  },
+  {
+   "id": "henry-v-crispin",
+   "question": "Before which battle does Henry V speak about St Crispin’s Day?",
+   "options": [
+    "Agincourt",
+    "Harfleur",
+    "Bosworth",
+    "Shrewsbury"
+   ],
+   "answer": 0,
+   "hint": "It was fought on 25 October 1415.",
+   "explanation": "Henry speaks in Act 4, scene 3, when Westmorland wishes they had more men. The battle of Agincourt was fought on the feast of Saints Crispin and Crispinian.",
+   "link": {
+    "href": "/books/henry-v/",
+    "label": "Henry V"
+   }
+  },
+  {
+   "id": "first-folio-year",
+   "question": "In which year was the First Folio of Shakespeare’s plays published?",
+   "options": [
+    "1623",
+    "1616",
+    "1609",
+    "1603"
+   ],
+   "answer": 0,
+   "hint": "It came out seven years after his death.",
+   "explanation": "Mr. William Shakespeares Comedies, Histories, & Tragedies was published in 1623. It contains thirty-six plays, eighteen of which had not been printed before, Macbeth and The Tempest among them."
+  },
+  {
+   "id": "first-folio-editors",
+   "question": "Which two actors gathered the plays for the First Folio?",
+   "options": [
+    "John Heminges and Henry Condell",
+    "Richard Burbage and Will Kemp",
+    "Ben Jonson and Michael Drayton",
+    "Edward Alleyn and Philip Henslowe"
+   ],
+   "answer": 0,
+   "hint": "Both were fellow members of Shakespeare’s company and are named in his will.",
+   "explanation": "Heminges and Condell, of the King’s Men, signed the dedication and the address “To the great Variety of Readers”. Shakespeare left each of them money to buy a memorial ring."
+  },
+  {
+   "id": "sonnets-mr-wh",
+   "question": "To whom is the 1609 edition of Shakespeare’s Sonnets dedicated?",
+   "options": [
+    "“Mr. W. H.”",
+    "The Earl of Southampton",
+    "Queen Elizabeth",
+    "“The Dark Lady”"
+   ],
+   "answer": 0,
+   "hint": "The dedication was signed by the publisher, Thomas Thorpe.",
+   "explanation": "The dedication names “the onlie begetter of these insuing sonnets Mr. W. H.”. Who W. H. was has never been settled.",
+   "link": {
+    "href": "/books/shakespeares-sonnets/",
+    "label": "Shakespeare’s Sonnets"
+   }
+  },
+  {
+   "id": "shortest-play",
+   "question": "Which is usually described as Shakespeare’s shortest play?",
+   "options": [
+    "The Comedy of Errors",
+    "Macbeth",
+    "The Two Gentlemen of Verona",
+    "The Tempest"
+   ],
+   "answer": 0,
+   "hint": "It has two pairs of identical twins.",
+   "explanation": "The Comedy of Errors has fewer than 1,800 lines. Macbeth is the shortest of the tragedies.",
+   "link": {
+    "href": "/books/comedy-of-errors/",
+    "label": "The Comedy of Errors"
+   }
+  },
+  {
+   "id": "globe-fire",
+   "question": "During a performance of which play did the first Globe Theatre burn down in 1613?",
+   "options": [
+    "Henry VIII",
+    "Hamlet",
+    "The Tempest",
+    "Macbeth"
+   ],
+   "answer": 0,
+   "hint": "A cannon was fired to mark a king’s entrance.",
+   "explanation": "On 29 June 1613 a stage cannon set light to the thatch during Henry VIII, then known as All Is True. Contemporary letters report that nobody was killed.",
+   "link": {
+    "href": "/books/henry-viii/",
+    "label": "Henry VIII"
+   }
+  },
+  {
+   "id": "second-best-bed",
+   "question": "What did Shakespeare leave his wife, Anne, in his will?",
+   "options": [
+    "His “second best bed”",
+    "The house at New Place",
+    "His books and papers",
+    "A gold ring"
+   ],
+   "answer": 0,
+   "hint": "The bequest was added between the lines of the will.",
+   "explanation": "The will of 1616 leaves Anne “my second best bed with the furniture”. Most of the estate went to his elder daughter, Susanna."
+  },
+  {
+   "id": "coriolanus-mother",
+   "question": "What is the name of Coriolanus’s mother?",
+   "options": [
+    "Volumnia",
+    "Virgilia",
+    "Valeria",
+    "Octavia"
+   ],
+   "answer": 0,
+   "hint": "She persuades him not to attack Rome.",
+   "explanation": "Volumnia, with Coriolanus’s wife Virgilia and his son, pleads with him outside Rome in Act 5, scene 3. He gives way, knowing it will cost him his life.",
+   "link": {
+    "href": "/guides/coriolanus/",
+    "label": "Coriolanus study guide"
+   }
+  },
+  {
+   "id": "titus-goths",
+   "question": "At the start of Titus Andronicus, Tamora is queen of which people?",
+   "options": [
+    "The Goths",
+    "The Moors",
+    "The Britons",
+    "The Scythians"
+   ],
+   "answer": 0,
+   "hint": "Titus has brought her to Rome as a prisoner of war.",
+   "explanation": "Titus returns from war against the Goths with Tamora and her sons as captives. He has her eldest son, Alarbus, sacrificed, which begins her revenge.",
+   "link": {
+    "href": "/guides/titus-andronicus/",
+    "label": "Titus Andronicus study guide"
+   }
+  },
+  {
+   "id": "measure-vienna",
+   "question": "In which city is Measure for Measure set?",
+   "options": [
+    "Vienna",
+    "Verona",
+    "Venice",
+    "Milan"
+   ],
+   "answer": 0,
+   "hint": "Its duke leaves Angelo in charge and stays in disguise.",
+   "explanation": "Duke Vincentio hands power to Angelo and remains in Vienna dressed as a friar. Angelo revives a law against fornication and condemns Claudio to death.",
+   "link": {
+    "href": "/guides/measure-for-measure/",
+    "label": "Measure for Measure study guide"
+   }
+  },
+  {
+   "id": "shrew-sly",
+   "question": "Who is the drunken tinker tricked into believing he is a lord in the Induction to The Taming of the Shrew?",
+   "options": [
+    "Christopher Sly",
+    "Tranio",
+    "Grumio",
+    "Biondello"
+   ],
+   "answer": 0,
+   "hint": "He is found asleep outside an alehouse.",
+   "explanation": "A lord finds Christopher Sly asleep and has him dressed and served as a nobleman. The story of Katherina and Petruchio is then performed for him as a play.",
+   "link": {
+    "href": "/guides/taming-of-the-shrew/",
+    "label": "The Taming of the Shrew study guide"
+   }
+  },
+  {
+   "id": "loves-labours-three-years",
+   "question": "In Love’s Labour’s Lost, for how long do the King of Navarre and his lords swear to study and keep away from women?",
+   "options": [
+    "Three years",
+    "One year",
+    "Seven years",
+    "Twelve months and a day"
+   ],
+   "answer": 0,
+   "hint": "Berowne says the oath is impossible to keep almost as soon as he signs it.",
+   "explanation": "The King, Berowne, Longaville and Dumaine swear a three-year oath. The Princess of France and her ladies arrive on an embassy at once.",
+   "link": {
+    "href": "/guides/loves-labours-lost/",
+    "label": "Love’s Labour’s Lost study guide"
+   }
+  },
+  {
+   "id": "pericles-wilkins",
+   "question": "Which writer is generally thought to have written the first two acts of Pericles?",
+   "options": [
+    "George Wilkins",
+    "Thomas Middleton",
+    "John Fletcher",
+    "George Peele"
+   ],
+   "answer": 0,
+   "hint": "He also published a prose version of the story in 1608.",
+   "explanation": "Most editors accept that Pericles was written with George Wilkins. Wilkins’s prose The Painful Adventures of Pericles appeared in 1608.",
+   "link": {
+    "href": "/books/pericles-prince-of-tyre/",
+    "label": "Pericles, Prince of Tyre"
+   }
+  },
+  {
+   "id": "historical-macbeth",
+   "question": "Which king did the historical Macbeth defeat and kill in 1040?",
+   "options": [
+    "Duncan I",
+    "Malcolm III",
+    "Kenneth III",
+    "Lulach"
+   ],
+   "answer": 0,
+   "hint": "Shakespeare makes him an old man killed in his bed.",
+   "explanation": "The historical Duncan was a young king killed in battle near Elgin. Macbeth then ruled Alba until 1057, when he was killed by Duncan’s son Malcolm.",
+   "link": {
+    "href": "/guides/macbeth/context/",
+    "label": "Macbeth: context"
+   }
+  },
+  {
+   "id": "hamlet-q1",
+   "question": "Which early printed text of Hamlet is much the shortest?",
+   "options": [
+    "The First Quarto, 1603",
+    "The Second Quarto, 1604",
+    "The First Folio, 1623",
+    "The Third Quarto, 1611"
+   ],
+   "answer": 0,
+   "hint": "In it, Polonius is called Corambis.",
+   "explanation": "The First Quarto is a little over half the length of the Second Quarto. Some scholars think it is a reconstruction from memory, others an early version.",
+   "link": {
+    "href": "/guides/hamlet/context/",
+    "label": "Hamlet: context"
+   }
+  },
+  {
+   "id": "elsinore",
+   "question": "Elsinore, where Hamlet is set, is the English name for which Danish town?",
+   "options": [
+    "Helsingør",
+    "Odense",
+    "Aarhus",
+    "Roskilde"
+   ],
+   "answer": 0,
+   "hint": "Its castle, Kronborg, guards the sound between Denmark and Sweden.",
+   "explanation": "Kronborg Castle at Helsingør was rebuilt in the 1570s and 1580s. English actors, Will Kemp among them, performed at the Danish court there in the 1580s.",
+   "link": {
+    "href": "/guides/hamlet/context/",
+    "label": "Hamlet: context"
+   }
+  },
+  {
+   "id": "forman-macbeth",
+   "question": "Who wrote notes on a performance of Macbeth at the Globe in April 1611?",
+   "options": [
+    "Simon Forman",
+    "Samuel Pepys",
+    "Thomas Platter",
+    "Philip Henslowe"
+   ],
+   "answer": 0,
+   "hint": "He was an astrologer and doctor.",
+   "explanation": "Simon Forman’s “Booke of Plaies” describes Macbeth and Banquo meeting three women in a wood and Lady Macbeth trying to wash her hands. It is the earliest account of the play in performance.",
+   "link": {
+    "href": "/guides/macbeth/context/",
+    "label": "Macbeth: context"
+   }
+  },
+  {
+   "id": "platter-caesar",
+   "question": "Which Swiss traveller saw Julius Caesar on Bankside in September 1599?",
+   "options": [
+    "Thomas Platter",
+    "Simon Forman",
+    "Paul Hentzner",
+    "Johannes de Witt"
+   ],
+   "answer": 0,
+   "hint": "He was a medical student from Basel.",
+   "explanation": "Thomas Platter wrote that he saw “the tragedy of the first Emperor Julius Caesar” in a thatched playhouse across the river on 21 September 1599. It is probably the new Globe.",
+   "link": {
+    "href": "/guides/julius-caesar/",
+    "label": "Julius Caesar study guide"
+   }
+  },
+  {
+   "id": "pepys-dream",
+   "question": "Which play did Samuel Pepys call “the most insipid ridiculous play that ever I saw in my life”?",
+   "options": [
+    "A Midsummer Night’s Dream",
+    "Romeo and Juliet",
+    "Twelfth Night",
+    "The Taming of the Shrew"
+   ],
+   "answer": 0,
+   "hint": "He did admit to liking the dancing and some “handsome women”.",
+   "explanation": "Pepys saw A Midsummer Night’s Dream at the King’s Theatre on 29 September 1662 and recorded his verdict in his diary that night.",
+   "link": {
+    "href": "/guides/a-midsummer-nights-dream/",
+    "label": "A Midsummer Night’s Dream study guide"
+   }
+  },
+  {
+   "id": "tate-lear",
+   "question": "In Nahum Tate’s 1681 version of King Lear, whom does Cordelia marry?",
+   "options": [
+    "Edgar",
+    "The King of France",
+    "Edmund",
+    "The Duke of Albany"
+   ],
+   "answer": 0,
+   "hint": "Tate removed the Fool and gave the play a happy ending.",
+   "explanation": "In Tate’s History of King Lear, Lear is restored to his throne and Cordelia marries Edgar. Tate’s version held the stage until the nineteenth century.",
+   "link": {
+    "href": "/guides/king-lear/",
+    "label": "King Lear study guide"
+   }
+  },
+  {
+   "id": "romeo-brooke",
+   "question": "Which English poem of 1562 was Shakespeare’s main source for Romeo and Juliet?",
+   "options": [
+    "The Tragicall Historye of Romeus and Juliet",
+    "Hero and Leander",
+    "The Faerie Queene",
+    "The Rape of Lucrece"
+   ],
+   "answer": 0,
+   "hint": "Its author, Arthur Brooke, drowned in the following year.",
+   "explanation": "Arthur Brooke’s long poem tells the story over about nine months. Shakespeare compresses the action into a few days.",
+   "link": {
+    "href": "/guides/romeo-and-juliet/context/",
+    "label": "Romeo and Juliet: context"
+   }
+  },
+  {
+   "id": "othello-cinthio",
+   "question": "Shakespeare took the story of Othello from a tale by which Italian writer?",
+   "options": [
+    "Giraldi Cinthio",
+    "Boccaccio",
+    "Matteo Bandello",
+    "Ludovico Ariosto"
+   ],
+   "answer": 0,
+   "hint": "The tale appears in his collection Gli Hecatommithi of 1565.",
+   "explanation": "In Cinthio’s tale only Disdemona is named. The other characters are known by their roles, the Moor and the Ensign.",
+   "link": {
+    "href": "/guides/othello/context/",
+    "label": "Othello: context"
+   }
+  },
+  {
+   "id": "north-plutarch",
+   "question": "For his Roman plays Shakespeare read Plutarch in whose English translation?",
+   "options": [
+    "Sir Thomas North",
+    "George Chapman",
+    "Arthur Golding",
+    "John Florio"
+   ],
+   "answer": 0,
+   "hint": "It was translated from Jacques Amyot’s French.",
+   "explanation": "North’s Lives of the Noble Grecians and Romanes was published in 1579. Some speeches in Antony and Cleopatra and Coriolanus follow North’s wording closely.",
+   "link": {
+    "href": "/guides/antony-and-cleopatra/",
+    "label": "Antony and Cleopatra study guide"
+   }
+  },
+  {
+   "id": "garnet-equivocator",
+   "question": "The Porter in Macbeth jokes about an “equivocator”. Which Jesuit, executed in 1606, is usually thought to lie behind the joke?",
+   "options": [
+    "Henry Garnet",
+    "Edmund Campion",
+    "Robert Southwell",
+    "Guy Fawkes"
+   ],
+   "answer": 0,
+   "hint": "He was tried after the Gunpowder Plot.",
+   "explanation": "Henry Garnet defended equivocation, the practice of giving misleading answers under oath, in his trial in March 1606. He was executed in May.",
+   "link": {
+    "href": "/guides/macbeth/context/",
+    "label": "Macbeth: context"
+   }
+  },
+  {
+   "id": "bodkin",
+   "question": "When Hamlet speaks of making his “quietus” with “a bare bodkin”, what is a bodkin?",
+   "options": [
+    "A dagger",
+    "A poison",
+    "A rope",
+    "A prayer"
+   ],
+   "answer": 0,
+   "hint": "He is thinking about suicide.",
+   "explanation": "In the “To be, or not to be” soliloquy a bodkin is a short dagger. A quietus is the settling of an account.",
+   "link": {
+    "href": "/guides/hamlet/quotations/",
+    "label": "Hamlet: key quotations"
+   }
+  },
+  {
+   "id": "thane",
+   "question": "In Macbeth, what is a thane?",
+   "options": [
+    "A Scottish nobleman holding land from the king",
+    "A Norwegian general",
+    "A priest of the old religion",
+    "A royal messenger"
+   ],
+   "answer": 0,
+   "hint": "Macbeth is already Thane of Glamis when the play begins.",
+   "explanation": "A thane held land directly from the king. The witches hail Macbeth as Thane of Glamis, Thane of Cawdor and king.",
+   "link": {
+    "href": "/guides/macbeth/",
+    "label": "Macbeth study guide"
+   }
+  },
+  {
+   "id": "groundlings",
+   "question": "In Hamlet, who are the “groundlings”?",
+   "options": [
+    "Spectators who stood in the yard of the playhouse",
+    "Gravediggers",
+    "Soldiers on watch",
+    "The court’s spies"
+   ],
+   "answer": 0,
+   "hint": "They paid the lowest price for admission.",
+   "explanation": "Hamlet complains of actors who “split the ears of the groundlings”, the audience standing around the stage for a penny.",
+   "link": {
+    "href": "/guides/hamlet/",
+    "label": "Hamlet study guide"
+   }
+  },
+  {
+   "id": "lear-cordelia",
+   "question": "Which of King Lear’s daughters will not compete in praising him?",
+   "options": [
+    "Cordelia",
+    "Goneril",
+    "Regan",
+    "Juliet"
+   ],
+   "answer": 0,
+   "hint": "Her answer is “Nothing, my lord.”",
+   "explanation": "Cordelia says she loves Lear “according to my bond, no more nor less”. He divides her share of the kingdom between her sisters.",
+   "link": {
+    "href": "/guides/king-lear/",
+    "label": "King Lear study guide"
+   }
+  },
+  {
+   "id": "antony-asp",
+   "question": "How does Cleopatra die?",
+   "options": [
+    "By the bite of an asp",
+    "By poison in a cup",
+    "By falling on a sword",
+    "By drowning"
+   ],
+   "answer": 0,
+   "hint": "A clown brings her a basket of figs.",
+   "explanation": "Cleopatra puts asps to her breast and arm in Act 5, scene 2. Plutarch reports that the cause of her death was uncertain, though the asp was the common story.",
+   "link": {
+    "href": "/guides/antony-and-cleopatra/",
+    "label": "Antony and Cleopatra study guide"
+   }
+  },
+  {
+   "id": "iliad-anger",
+   "question": "Whose anger does the first line of the Iliad announce as its subject?",
+   "options": [
+    "Achilles’",
+    "Agamemnon’s",
+    "Hector’s",
+    "Zeus’s"
+   ],
+   "answer": 0,
+   "hint": "He withdraws from the fighting after a quarrel over a captive woman.",
+   "explanation": "The poem opens with the anger of Achilles, son of Peleus, against Agamemnon, who has taken Briseis from him. Samuel Butler translates the first words as “Sing, O goddess, the anger of Achilles”.",
+   "link": {
+    "href": "/guides/the-iliad/",
+    "label": "The Iliad study guide"
+   }
+  },
+  {
+   "id": "odyssey-argos",
+   "question": "What is the name of Odysseus’s old dog, who recognises him on his return to Ithaca?",
+   "options": [
+    "Argos",
+    "Laelaps",
+    "Cerberus",
+    "Orthrus"
+   ],
+   "answer": 0,
+   "hint": "He is lying neglected on a dung heap.",
+   "explanation": "Argos wags his tail and drops his ears when he sees Odysseus, disguised as a beggar, and then dies. Odysseus hides a tear from Eumaeus.",
+   "link": {
+    "href": "/guides/the-odyssey/",
+    "label": "The Odyssey study guide"
+   }
+  },
+  {
+   "id": "odyssey-nobody",
+   "question": "What name does Odysseus give the Cyclops Polyphemus?",
+   "options": [
+    "Nobody",
+    "Somebody",
+    "Stranger",
+    "Ithacus"
+   ],
+   "answer": 0,
+   "hint": "It means the other Cyclopes think Polyphemus is not being attacked at all.",
+   "explanation": "In Greek the name is Outis. When Polyphemus shouts that Nobody is killing him, the other Cyclopes go away. Butler’s translation renders the name as “Noman”.",
+   "link": {
+    "href": "/guides/the-odyssey/",
+    "label": "The Odyssey study guide"
+   }
+  },
+  {
+   "id": "odyssey-shroud",
+   "question": "Penelope tells her suitors she will choose a husband when she has finished weaving a shroud. Whose shroud is it?",
+   "options": [
+    "Laertes’, Odysseus’s father",
+    "Odysseus’s",
+    "Her own",
+    "Telemachus’s"
+   ],
+   "answer": 0,
+   "hint": "He is still alive, living on his farm.",
+   "explanation": "Penelope weaves by day and unpicks the work by night for three years, until one of her maids tells the suitors.",
+   "link": {
+    "href": "/guides/the-odyssey/",
+    "label": "The Odyssey study guide"
+   }
+  },
+  {
+   "id": "odyssey-poseidon",
+   "question": "Odysseus angers which god by blinding the Cyclops Polyphemus?",
+   "options": [
+    "Poseidon",
+    "Zeus",
+    "Apollo",
+    "Hermes"
+   ],
+   "answer": 0,
+   "hint": "Polyphemus is his son.",
+   "explanation": "Polyphemus prays to his father Poseidon, who keeps Odysseus from home for years. Athena supports Odysseus throughout.",
+   "link": {
+    "href": "/guides/the-odyssey/",
+    "label": "The Odyssey study guide"
+   }
+  },
+  {
+   "id": "iliad-end",
+   "question": "The Iliad ends with the funeral of which hero?",
+   "options": [
+    "Hector",
+    "Patroclus",
+    "Achilles",
+    "Paris"
+   ],
+   "answer": 0,
+   "hint": "His father, Priam, comes to Achilles’ tent at night to ransom the body.",
+   "explanation": "The last line of the poem is “Thus, then, did they celebrate the funeral of Hector tamer of horses” in Butler’s translation. The death of Achilles is not narrated.",
+   "link": {
+    "href": "/guides/the-iliad/",
+    "label": "The Iliad study guide"
+   }
+  },
+  {
+   "id": "iliad-astyanax",
+   "question": "In Book 6 of the Iliad, why does Hector’s baby son Astyanax cry when his father reaches for him?",
+   "options": [
+    "He is frightened by the plume on Hector’s helmet",
+    "He wants his nurse",
+    "He hears the battle outside",
+    "Andromache is weeping"
+   ],
+   "answer": 0,
+   "hint": "Hector laughs and takes the helmet off.",
+   "explanation": "Hector has come in from the fighting to see Andromache. He lays down the helmet, kisses the boy and prays that he will be a better man than his father.",
+   "link": {
+    "href": "/guides/the-iliad/",
+    "label": "The Iliad study guide"
+   }
+  },
+  {
+   "id": "aeneid-anchises",
+   "question": "Whom does Aeneas carry on his shoulders out of burning Troy?",
+   "options": [
+    "His father, Anchises",
+    "His son, Ascanius",
+    "His wife, Creusa",
+    "King Priam"
+   ],
+   "answer": 0,
+   "hint": "He leads his son by the hand at the same time.",
+   "explanation": "Aeneas carries Anchises, who holds the household gods, and leads Ascanius. His wife Creusa is lost in the confusion and appears to him later as a ghost.",
+   "link": {
+    "href": "/books/the-aeneid/",
+    "label": "The Aeneid"
+   }
+  },
+  {
+   "id": "aeneid-augustus",
+   "question": "According to the ancient lives of Virgil, he asked for the unfinished Aeneid to be burned. Who overruled him?",
+   "options": [
+    "The emperor Augustus",
+    "Maecenas",
+    "Horace",
+    "Ovid"
+   ],
+   "answer": 0,
+   "hint": "The poem tells of the founding of the Roman people.",
+   "explanation": "Virgil died in 19 BC with the poem unrevised. The emperor ordered his literary executors, Varius and Tucca, to publish it.",
+   "link": {
+    "href": "/books/the-aeneid/",
+    "label": "The Aeneid"
+   }
+  },
+  {
+   "id": "aeneid-dido",
+   "question": "Which queen falls in love with Aeneas and kills herself when he leaves?",
+   "options": [
+    "Dido, Queen of Carthage",
+    "Lavinia",
+    "Camilla",
+    "Hecuba"
+   ],
+   "answer": 0,
+   "hint": "Her city is in North Africa.",
+   "explanation": "Mercury reminds Aeneas that he is meant to found a new home in Italy, and he sails from Carthage. Dido dies on a pyre in Book 4.",
+   "link": {
+    "href": "/books/the-aeneid/",
+    "label": "The Aeneid"
+   }
+  },
+  {
+   "id": "butler-authoress",
+   "question": "In The Authoress of the Odyssey (1897), Samuel Butler argued that the poem was written by whom?",
+   "options": [
+    "A young woman in Sicily",
+    "Homer’s daughter",
+    "An Athenian priest",
+    "Several poets over two centuries"
+   ],
+   "answer": 0,
+   "hint": "He thought she put herself into the poem as Nausicaa.",
+   "explanation": "Butler placed the author at Trapani in western Sicily. He went on to translate the Iliad (1898) and the Odyssey (1900) into prose.",
+   "link": {
+    "href": "/books/the-odyssey/",
+    "label": "The Odyssey"
+   }
+  },
+  {
+   "id": "paradise-lost-books",
+   "question": "In how many books was Paradise Lost first published in 1667?",
+   "options": [
+    "Ten",
+    "Twelve",
+    "Nine",
+    "Twenty-four"
+   ],
+   "answer": 0,
+   "hint": "The second edition, of 1674, divided two of them.",
+   "explanation": "Milton split Books 7 and 10 for the 1674 edition, making twelve books, the number in Virgil’s Aeneid.",
+   "link": {
+    "href": "/books/paradise-lost/",
+    "label": "Paradise Lost"
+   }
+  },
+  {
+   "id": "paradise-lost-reign",
+   "question": "Who says “Better to reign in Hell, than serve in Heav’n” in Paradise Lost?",
+   "options": [
+    "Satan",
+    "Beelzebub",
+    "Moloch",
+    "Belial"
+   ],
+   "answer": 0,
+   "hint": "He has just woken in the burning lake.",
+   "explanation": "Satan says it in Book 1, after he and Beelzebub have raised themselves from the burning lake.",
+   "link": {
+    "href": "/books/paradise-lost/",
+    "label": "Paradise Lost"
+   }
+  },
+  {
+   "id": "faustus-years",
+   "question": "For how many years does Faustus’s pact give him the service of Mephistopheles?",
+   "options": [
+    "Twenty-four",
+    "Twelve",
+    "Seven",
+    "Forty"
+   ],
+   "answer": 0,
+   "hint": "Faustus signs the deed in his own blood.",
+   "explanation": "At the end of the twenty-four years Faustus waits for his last hour to strike and the devils come for him.",
+   "link": {
+    "href": "/books/doctor-faustus/",
+    "label": "Doctor Faustus"
+   }
+  },
+  {
+   "id": "faustus-helen",
+   "question": "In Doctor Faustus, whose face “launched a thousand ships”?",
+   "options": [
+    "Helen of Troy’s",
+    "Cleopatra’s",
+    "Dido’s",
+    "Penelope’s"
+   ],
+   "answer": 0,
+   "hint": "Mephistopheles makes a spirit appear in her shape.",
+   "explanation": "Faustus says “Was this the face that launched a thousand ships / And burnt the topless towers of Ilium?” when the spirit of Helen appears, near the end of the play.",
+   "link": {
+    "href": "/books/doctor-faustus/",
+    "label": "Doctor Faustus"
+   }
+  },
+  {
+   "id": "marlowe-deptford",
+   "question": "Christopher Marlowe was killed in 1593 in which place?",
+   "options": [
+    "Deptford",
+    "Southwark",
+    "Canterbury",
+    "Cambridge"
+   ],
+   "answer": 0,
+   "hint": "He had spent the day at a house there with three other men.",
+   "explanation": "Marlowe was stabbed by Ingram Frizer at the house of Eleanor Bull in Deptford on 30 May 1593. The coroner’s inquest found that Frizer acted in self-defence.",
+   "link": {
+    "href": "/books/doctor-faustus/",
+    "label": "Doctor Faustus"
+   }
+  },
+  {
+   "id": "malfi-cover-her-face",
+   "question": "In The Duchess of Malfi, who says “Cover her face; mine eyes dazzle: she died young”?",
+   "options": [
+    "Ferdinand, her twin brother",
+    "Bosola",
+    "The Cardinal",
+    "Antonio"
+   ],
+   "answer": 0,
+   "hint": "He ordered her death.",
+   "explanation": "Ferdinand speaks over the Duchess’s body in Act 4, scene 2. Soon afterwards he turns on Bosola, who carried out the murder.",
+   "link": {
+    "href": "/books/the-duchess-of-malfi/",
+    "label": "The Duchess of Malfi"
+   }
+  },
+  {
+   "id": "utopia-latin",
+   "question": "In which language did Thomas More first publish Utopia in 1516?",
+   "options": [
+    "Latin",
+    "English",
+    "French",
+    "Greek"
+   ],
+   "answer": 0,
+   "hint": "The first English translation appeared in 1551, after More’s execution.",
+   "explanation": "Utopia was printed at Louvain in 1516. Ralph Robinson’s English translation was published in 1551.",
+   "link": {
+    "href": "/books/utopia/",
+    "label": "Utopia"
+   }
+  },
+  {
+   "id": "utopia-hythloday",
+   "question": "Who describes the island of Utopia in More’s book?",
+   "options": [
+    "Raphael Hythloday",
+    "Peter Giles",
+    "Cardinal Morton",
+    "Erasmus"
+   ],
+   "answer": 0,
+   "hint": "He is a traveller said to have sailed with Amerigo Vespucci.",
+   "explanation": "More meets Raphael Hythloday in Antwerp through his friend Peter Giles. The surname combines Greek words usually translated as “expert in nonsense”.",
+   "link": {
+    "href": "/books/utopia/",
+    "label": "Utopia"
+   }
+  },
+  {
+   "id": "prince-dedication",
+   "question": "To whom did Machiavelli dedicate The Prince?",
+   "options": [
+    "Lorenzo de’ Medici",
+    "Cesare Borgia",
+    "Pope Leo X",
+    "Francesco Sforza"
+   ],
+   "answer": 0,
+   "hint": "He was the grandson of Lorenzo the Magnificent.",
+   "explanation": "Machiavelli dedicated the book to Lorenzo di Piero de’ Medici, hoping to return to public service after the Medici came back to power in Florence in 1512.",
+   "link": {
+    "href": "/books/the-prince/",
+    "label": "The Prince"
+   }
+  },
+  {
+   "id": "prince-printed",
+   "question": "Machiavelli wrote The Prince in about 1513. When was it first printed?",
+   "options": [
+    "1532",
+    "1513",
+    "1559",
+    "1600"
+   ],
+   "answer": 0,
+   "hint": "Machiavelli had been dead for five years.",
+   "explanation": "The Prince circulated in manuscript and was printed in 1532. In 1559 it was placed on the Church’s Index of Prohibited Books.",
+   "link": {
+    "href": "/books/the-prince/",
+    "label": "The Prince"
+   }
+  },
+  {
+   "id": "arden-murder",
+   "question": "Arden of Faversham dramatises a real murder of 1551. Who arranged the killing of Thomas Arden?",
+   "options": [
+    "His wife, Alice, and her lover",
+    "His business rivals",
+    "His servant Michael alone",
+    "Two soldiers from Calais"
+   ],
+   "answer": 0,
+   "hint": "The case was told in Holinshed’s Chronicles.",
+   "explanation": "Alice Arden and her lover Mosby hired killers, among them Black Will and Shakebag. Alice was burned at Canterbury in 1551.",
+   "link": {
+    "href": "/books/arden-of-faversham/",
+    "label": "Arden of Faversham"
+   }
+  },
+  {
+   "id": "more-hand-d",
+   "question": "In the manuscript of the play Sir Thomas More, which section is widely believed to be in Shakespeare’s handwriting?",
+   "options": [
+    "The pages in Hand D",
+    "The whole play",
+    "The pages in Hand A",
+    "None of it"
+   ],
+   "answer": 0,
+   "hint": "In those pages More calms a riot against foreigners in London.",
+   "explanation": "Several writers revised the play. Three pages in the hand known as Hand D are widely accepted as Shakespeare’s, which would make them the only surviving literary manuscript in his hand.",
+   "link": {
+    "href": "/books/sir-thomas-more/",
+    "label": "Sir Thomas More"
+   }
+  },
+  {
+   "id": "venus-southampton",
+   "question": "To whom did Shakespeare dedicate Venus and Adonis in 1593?",
+   "options": [
+    "The Earl of Southampton",
+    "The Earl of Essex",
+    "Queen Elizabeth",
+    "Lord Hunsdon"
+   ],
+   "answer": 0,
+   "hint": "He dedicated The Rape of Lucrece to the same man a year later.",
+   "explanation": "Both poems are dedicated to Henry Wriothesley, third Earl of Southampton. Venus and Adonis was the first work published under Shakespeare’s name.",
+   "link": {
+    "href": "/books/venus-and-adonis/",
+    "label": "Venus and Adonis"
+   }
+  },
+  {
+   "id": "skeltonics",
+   "question": "The short, rapidly rhyming lines known as “Skeltonics” are named after which poet?",
+   "options": [
+    "John Skelton",
+    "Thomas Wyatt",
+    "Edmund Spenser",
+    "George Gascoigne"
+   ],
+   "answer": 0,
+   "hint": "He was tutor to the young Henry VIII.",
+   "explanation": "John Skelton wrote in short lines that keep the same rhyme for as long as he can find words for it, as in Phyllyp Sparowe and Colyn Cloute.",
+   "link": {
+    "href": "/books/selected-poems-of-john-skelton/",
+    "label": "Selected Poems of John Skelton"
+   }
+  },
+  {
+   "id": "gulliver-houyhnhnms",
+   "question": "In Gulliver’s Travels, what are the Houyhnhnms?",
+   "options": [
+    "Horses who live by reason",
+    "Tiny people",
+    "Giants",
+    "Flying philosophers"
+   ],
+   "answer": 0,
+   "hint": "Gulliver visits them in the fourth and last voyage.",
+   "explanation": "The Houyhnhnms rule a land where the Yahoos, animals in human shape, are their servants. Gulliver returns home unable to bear human company.",
+   "link": {
+    "href": "/books/gullivers-travels/",
+    "label": "Gulliver’s Travels"
+   }
+  },
+  {
+   "id": "gulliver-eggs",
+   "question": "Lilliput and Blefuscu go to war over which end to break what?",
+   "options": [
+    "A boiled egg",
+    "A loaf of bread",
+    "A sealed letter",
+    "A wine bottle"
+   ],
+   "answer": 0,
+   "hint": "The two parties are the Big-Endians and the Little-Endians.",
+   "explanation": "Swift’s quarrel over eggs mocks religious and political disputes in England, including the division between Catholics and Protestants.",
+   "link": {
+    "href": "/books/gullivers-travels/",
+    "label": "Gulliver’s Travels"
+   }
+  },
+  {
+   "id": "gulliver-title-page",
+   "question": "When Gulliver’s Travels was published in 1726, whose name appeared as the author?",
+   "options": [
+    "Lemuel Gulliver’s",
+    "Jonathan Swift’s",
+    "Isaac Bickerstaff’s",
+    "Martinus Scriblerus’s"
+   ],
+   "answer": 0,
+   "hint": "Swift wanted the book to look like a real traveller’s account.",
+   "explanation": "The title page reads “By Lemuel Gulliver, First a Surgeon, and then a Captain of several Ships”. Swift arranged publication anonymously through intermediaries.",
+   "link": {
+    "href": "/books/gullivers-travels/",
+    "label": "Gulliver’s Travels"
+   }
+  },
+  {
+   "id": "crusoe-friday",
+   "question": "Why does Robinson Crusoe call the man he rescues Friday?",
+   "options": [
+    "Because that is the day he saves him",
+    "Because it is the man’s own name",
+    "Because Friday is a holy day",
+    "Because he arrives on the sixth day of a storm"
+   ],
+   "answer": 0,
+   "hint": "Crusoe keeps a calendar on a wooden post.",
+   "explanation": "Crusoe saves the man from a group of cannibals and names him after the day of the rescue. He teaches him English and the Christian religion.",
+   "link": {
+    "href": "/books/robinson-crusoe/",
+    "label": "Robinson Crusoe"
+   }
+  },
+  {
+   "id": "selkirk",
+   "question": "Which Scottish sailor, marooned on a Pacific island from 1704 to 1709, is often named as an inspiration for Robinson Crusoe?",
+   "options": [
+    "Alexander Selkirk",
+    "William Dampier",
+    "Woodes Rogers",
+    "James Cook"
+   ],
+   "answer": 0,
+   "hint": "He had asked to be put ashore after a quarrel with his captain.",
+   "explanation": "Selkirk lived alone on Más a Tierra in the Juan Fernández Islands until Woodes Rogers’s ships took him off. Rogers and Richard Steele both published accounts of him before Defoe’s novel of 1719.",
+   "link": {
+    "href": "/books/robinson-crusoe/",
+    "label": "Robinson Crusoe"
+   }
+  },
+  {
+   "id": "oroonoko-surinam",
+   "question": "Where is most of Aphra Behn’s Oroonoko set?",
+   "options": [
+    "Surinam",
+    "Jamaica",
+    "Barbados",
+    "Virginia"
+   ],
+   "answer": 0,
+   "hint": "It was an English colony until it was handed to the Dutch in 1667.",
+   "explanation": "Oroonoko, an African prince, is tricked into slavery and taken to Surinam. Behn’s narrator claims to have witnessed the events there.",
+   "link": {
+    "href": "/books/oroonoko/",
+    "label": "Oroonoko"
+   }
+  },
+  {
+   "id": "woolf-behn",
+   "question": "In A Room of One’s Own, on whose tomb does Woolf say “all women together ought to let flowers fall”?",
+   "options": [
+    "Aphra Behn’s",
+    "Jane Austen’s",
+    "Mary Wollstonecraft’s",
+    "George Eliot’s"
+   ],
+   "answer": 0,
+   "hint": "Woolf notes that the tomb is in Westminster Abbey.",
+   "explanation": "Woolf writes that Aphra Behn “earned them the right to speak their minds”, as one of the first English women to earn her living by writing.",
+   "link": {
+    "href": "/books/a-room-of-ones-own/",
+    "label": "A Room of One’s Own"
+   }
+  },
+  {
+   "id": "rape-of-lock-fermor",
+   "question": "The Rape of the Lock grew out of a quarrel after Lord Petre cut a lock of hair from which woman?",
+   "options": [
+    "Arabella Fermor",
+    "Martha Blount",
+    "Lady Mary Wortley Montagu",
+    "Teresa Blount"
+   ],
+   "answer": 0,
+   "hint": "In the poem she becomes Belinda.",
+   "explanation": "John Caryll suggested Pope write a poem to make peace between the two Catholic families. The first version appeared in 1712 and the longer one, with the sylphs, in 1714.",
+   "link": {
+    "href": "/books/the-rape-of-the-lock-and-an-essay-on-criticism/",
+    "label": "The Rape of the Lock and An Essay on Criticism"
+   }
+  },
+  {
+   "id": "essay-criticism-learning",
+   "question": "Which poem by Alexander Pope contains the line “A little learning is a dang’rous thing”?",
+   "options": [
+    "An Essay on Criticism",
+    "The Rape of the Lock",
+    "An Essay on Man",
+    "The Dunciad"
+   ],
+   "answer": 0,
+   "hint": "Pope published it in 1711, when he was twenty-three.",
+   "explanation": "The poem continues “Drink deep, or taste not the Pierian spring”. The same poem contains “To err is human, to forgive divine.”",
+   "link": {
+    "href": "/books/the-rape-of-the-lock-and-an-essay-on-criticism/",
+    "label": "An Essay on Criticism"
+   }
+  },
+  {
+   "id": "pamela-subtitle",
+   "question": "What is the subtitle of Samuel Richardson’s Pamela (1740)?",
+   "options": [
+    "Virtue Rewarded",
+    "The History of a Young Lady",
+    "The Servant’s Tale",
+    "A Moral Fable"
+   ],
+   "answer": 0,
+   "hint": "Henry Fielding mocked it in Shamela.",
+   "explanation": "Pamela Andrews, a servant, resists her master Mr B. and eventually marries him. Fielding’s parody, An Apology for the Life of Mrs. Shamela Andrews, appeared in 1741.",
+   "link": {
+    "href": "/books/pamela/",
+    "label": "Pamela"
+   }
+  },
+  {
+   "id": "common-sense-date",
+   "question": "When was Thomas Paine’s pamphlet Common Sense published?",
+   "options": [
+    "January 1776",
+    "July 1776",
+    "December 1773",
+    "April 1775"
+   ],
+   "answer": 0,
+   "hint": "It came out six months before the Declaration of Independence.",
+   "explanation": "Common Sense was published in Philadelphia on 10 January 1776 and argued for independence from Britain. It sold in very large numbers in its first year.",
+   "link": {
+    "href": "/books/common-sense-and-the-american-crisis/",
+    "label": "Common Sense and The American Crisis"
+   }
+  },
+  {
+   "id": "american-crisis-opening",
+   "question": "Which work of Thomas Paine opens “These are the times that try men’s souls”?",
+   "options": [
+    "The American Crisis",
+    "Common Sense",
+    "Rights of Man",
+    "The Age of Reason"
+   ],
+   "answer": 0,
+   "hint": "It was written during the retreat across New Jersey in December 1776.",
+   "explanation": "Washington is said to have had the first American Crisis paper read to his troops before they crossed the Delaware on Christmas night 1776.",
+   "link": {
+    "href": "/books/common-sense-and-the-american-crisis/",
+    "label": "Common Sense and The American Crisis"
+   }
+  },
+  {
+   "id": "eikon-basilike",
+   "question": "Which book, published days after Charles I’s execution in 1649, presented itself as the king’s own meditations?",
+   "options": [
+    "Eikon Basilike",
+    "Leviathan",
+    "Areopagitica",
+    "The True Law of Free Monarchies"
+   ],
+   "answer": 0,
+   "hint": "Milton wrote a reply to it called Eikonoklastes.",
+   "explanation": "Eikon Basilike went through dozens of editions in 1649. How much of it Charles wrote himself has been argued over ever since.",
+   "link": {
+    "href": "/books/charles-i-selected-writings/",
+    "label": "Charles I: Selected Writings"
+   }
+  },
+  {
+   "id": "frankenstein-diodati",
+   "question": "At which house near Geneva did Mary Shelley begin Frankenstein in the summer of 1816?",
+   "options": [
+    "The Villa Diodati",
+    "The Château de Chillon",
+    "The Villa Medici",
+    "Ferney"
+   ],
+   "answer": 0,
+   "hint": "Lord Byron had rented it.",
+   "explanation": "Byron proposed that each of the party write a ghost story. Mary Shelley’s became Frankenstein, and John Polidori’s became The Vampyre.",
+   "link": {
+    "href": "/guides/frankenstein/context/",
+    "label": "Frankenstein: context"
+   }
+  },
+  {
+   "id": "frankenstein-subtitle",
+   "question": "What is the subtitle of Frankenstein?",
+   "options": [
+    "The Modern Prometheus",
+    "A Tale of the Alps",
+    "The New Adam",
+    "A Ghost Story"
+   ],
+   "answer": 0,
+   "hint": "In Greek myth the original stole fire from the gods.",
+   "explanation": "Frankenstein; or, The Modern Prometheus was published anonymously on 1 January 1818. Mary Shelley revised it for the edition of 1831.",
+   "link": {
+    "href": "/guides/frankenstein/",
+    "label": "Frankenstein study guide"
+   }
+  },
+  {
+   "id": "frankenstein-ingolstadt",
+   "question": "At which university does Victor Frankenstein study natural philosophy?",
+   "options": [
+    "Ingolstadt",
+    "Geneva",
+    "Leipzig",
+    "Edinburgh"
+   ],
+   "answer": 0,
+   "hint": "It was in Bavaria.",
+   "explanation": "Victor leaves Geneva for Ingolstadt at seventeen. There he builds the creature in a lodging he calls his “workshop of filthy creation”.",
+   "link": {
+    "href": "/guides/frankenstein/",
+    "label": "Frankenstein study guide"
+   }
+  },
+  {
+   "id": "frankenstein-de-lacey",
+   "question": "Which family does the creature watch through a gap in the wall of a cottage?",
+   "options": [
+    "The De Laceys",
+    "The Clervals",
+    "The Westenras",
+    "The Lintons"
+   ],
+   "answer": 0,
+   "hint": "He learns to speak and read by listening to them.",
+   "explanation": "The creature hides in a hovel beside the De Laceys’ cottage for months. When he finally speaks to them, Felix drives him away.",
+   "link": {
+    "href": "/guides/frankenstein/what-happens/",
+    "label": "Frankenstein: what happens"
+   }
+  },
+  {
+   "id": "pride-first-impressions",
+   "question": "What was the original title of Pride and Prejudice?",
+   "options": [
+    "First Impressions",
+    "Elizabeth Bennet",
+    "The Bennets of Longbourn",
+    "Susan"
+   ],
+   "answer": 0,
+   "hint": "Austen wrote the first version in 1796–97.",
+   "explanation": "Her father offered First Impressions to the publisher Thomas Cadell in 1797, who declined it unseen. It was revised and published as Pride and Prejudice in 1813.",
+   "link": {
+    "href": "/guides/pride-and-prejudice/",
+    "label": "Pride and Prejudice study guide"
+   }
+  },
+  {
+   "id": "pride-opening",
+   "question": "Which novel opens “It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife”?",
+   "options": [
+    "Pride and Prejudice",
+    "Emma",
+    "Sense and Sensibility",
+    "Persuasion"
+   ],
+   "answer": 0,
+   "hint": "The family it introduces has five daughters.",
+   "explanation": "The rest of the first chapter shows that it is Mrs Bennet, with five unmarried daughters, who is in want of a rich husband for one of them.",
+   "link": {
+    "href": "/guides/pride-and-prejudice/",
+    "label": "Pride and Prejudice study guide"
+   }
+  },
+  {
+   "id": "sense-by-a-lady",
+   "question": "How was the author of Sense and Sensibility identified on its title page in 1811?",
+   "options": [
+    "“By a Lady”",
+    "“By Jane Austen”",
+    "“By the author of Evelina”",
+    "Not at all"
+   ],
+   "answer": 0,
+   "hint": "It was the first of her novels to be published.",
+   "explanation": "None of Austen’s novels carried her name in her lifetime. Pride and Prejudice was published as “By the Author of Sense and Sensibility”.",
+   "link": {
+    "href": "/guides/sense-and-sensibility/",
+    "label": "Sense and Sensibility study guide"
+   }
+  },
+  {
+   "id": "lyrical-ballads-opening",
+   "question": "Which poem opened the first edition of Lyrical Ballads in 1798?",
+   "options": [
+    "The Rime of the Ancyent Marinere",
+    "Lines written a few miles above Tintern Abbey",
+    "We Are Seven",
+    "The Idiot Boy"
+   ],
+   "answer": 0,
+   "hint": "Wordsworth later moved it further back in the book.",
+   "explanation": "Lyrical Ballads was published anonymously by Wordsworth and Coleridge. Coleridge’s poem came first and Tintern Abbey last.",
+   "link": {
+    "href": "/books/lyrical-ballads/",
+    "label": "Lyrical Ballads"
+   }
+  },
+  {
+   "id": "mariner-crossbow",
+   "question": "What does the Ancient Mariner use to shoot the albatross?",
+   "options": [
+    "A crossbow",
+    "A musket",
+    "A harpoon",
+    "A longbow"
+   ],
+   "answer": 0,
+   "hint": "“With my cross-bow / I shot the Albatross.”",
+   "explanation": "The Mariner kills the bird at the end of Part 1 without giving a reason. His shipmates hang it round his neck in Part 2.",
+   "link": {
+    "href": "/guides/the-rime-of-the-ancient-mariner/",
+    "label": "The Rime of the Ancient Mariner study guide"
+   }
+  },
+  {
+   "id": "mariner-gloss",
+   "question": "In which book of 1817 did Coleridge first print the prose notes in the margins of The Rime of the Ancient Mariner?",
+   "options": [
+    "Sibylline Leaves",
+    "Biographia Literaria",
+    "Christabel",
+    "The Friend"
+   ],
+   "answer": 0,
+   "hint": "The title refers to the scattered prophecies of the Sibyl.",
+   "explanation": "The gloss is written in the voice of an old-fashioned editor commenting on the poem, and it sometimes says more than the verse does.",
+   "link": {
+    "href": "/guides/the-rime-of-the-ancient-mariner/",
+    "label": "The Rime of the Ancient Mariner study guide"
+   }
+  },
+  {
+   "id": "tintern-wye",
+   "question": "Wordsworth’s Lines written a few miles above Tintern Abbey revisits the banks of which river?",
+   "options": [
+    "The Wye",
+    "The Derwent",
+    "The Severn",
+    "The Duddon"
+   ],
+   "answer": 0,
+   "hint": "It forms part of the border between England and Wales.",
+   "explanation": "Wordsworth dated the poem 13 July 1798 and recalled a first visit five years earlier. He walked there with his sister Dorothy, who is addressed at the end.",
+   "link": {
+    "href": "/books/lyrical-ballads/",
+    "label": "Lyrical Ballads"
+   }
+  },
+  {
+   "id": "blake-tyger",
+   "question": "Which of Blake’s poems asks “What immortal hand or eye / Could frame thy fearful symmetry?”",
+   "options": [
+    "The Tyger",
+    "The Lamb",
+    "London",
+    "The Sick Rose"
+   ],
+   "answer": 0,
+   "hint": "It belongs to Songs of Experience.",
+   "explanation": "Blake printed Songs of Experience with Songs of Innocence from 1794. The Tyger is often read beside The Lamb, its counterpart in Innocence.",
+   "link": {
+    "href": "/books/songs-of-innocence-and-of-experience/",
+    "label": "Songs of Innocence and of Experience"
+   }
+  },
+  {
+   "id": "blake-printing",
+   "question": "How did William Blake print Songs of Innocence and of Experience?",
+   "options": [
+    "By relief etching on copper plates, coloured by hand",
+    "By movable type with woodcuts",
+    "By lithography",
+    "By engraving on steel"
+   ],
+   "answer": 0,
+   "hint": "Text and pictures were made on the same plate.",
+   "explanation": "Blake wrote the text backwards on copper in an acid-resistant liquid and etched away the rest. He and his wife Catherine coloured each copy by hand, so no two are the same.",
+   "link": {
+    "href": "/books/songs-of-innocence-and-of-experience/",
+    "label": "Songs of Innocence and of Experience"
+   }
+  },
+  {
+   "id": "werther-coat",
+   "question": "What did young admirers of Goethe’s Werther copy from the novel’s hero?",
+   "options": [
+    "His blue coat and yellow waistcoat",
+    "His beard",
+    "His habit of writing in French",
+    "His walking stick"
+   ],
+   "answer": 0,
+   "hint": "Goethe describes the clothes in the novel.",
+   "explanation": "The Sorrows of Young Werther (1774) made Goethe famous across Europe. Werther dies wearing the blue coat and yellow waistcoat he wore when he first danced with Lotte.",
+   "link": {
+    "href": "/books/the-sorrows-of-young-werther/",
+    "label": "The Sorrows of Young Werther"
+   }
+  },
+  {
+   "id": "jane-eyre-currer-bell",
+   "question": "Under which name did Charlotte Brontë publish Jane Eyre in 1847?",
+   "options": [
+    "Currer Bell",
+    "Ellis Bell",
+    "Acton Bell",
+    "George Eliot"
+   ],
+   "answer": 0,
+   "hint": "Her sisters published as Ellis and Acton.",
+   "explanation": "The three sisters kept their initials. Emily published Wuthering Heights as Ellis Bell and Anne published Agnes Grey as Acton Bell in the same year.",
+   "link": {
+    "href": "/guides/jane-eyre/",
+    "label": "Jane Eyre study guide"
+   }
+  },
+  {
+   "id": "jane-eyre-st-john",
+   "question": "Who asks Jane Eyre to marry him and go with him to India as a missionary?",
+   "options": [
+    "St John Rivers",
+    "Mr Brocklehurst",
+    "Mr Mason",
+    "Mr Lloyd"
+   ],
+   "answer": 0,
+   "hint": "He turns out to be her cousin.",
+   "explanation": "Jane refuses to marry St John without love, though she offers to go to India as his assistant. She then hears Rochester’s voice calling her.",
+   "link": {
+    "href": "/guides/jane-eyre/",
+    "label": "Jane Eyre study guide"
+   }
+  },
+  {
+   "id": "wuthering-nelly",
+   "question": "Who tells most of the story of Wuthering Heights to Mr Lockwood?",
+   "options": [
+    "Nelly Dean",
+    "Joseph",
+    "Isabella Linton",
+    "Zillah"
+   ],
+   "answer": 0,
+   "hint": "She is the housekeeper at Thrushcross Grange.",
+   "explanation": "Lockwood, Heathcliff’s tenant, falls ill after a night at Wuthering Heights. Nelly Dean tells him the history of the two families while he recovers.",
+   "link": {
+    "href": "/guides/wuthering-heights/",
+    "label": "Wuthering Heights study guide"
+   }
+  },
+  {
+   "id": "great-expectations-magazine",
+   "question": "In which magazine was Great Expectations first published?",
+   "options": [
+    "All the Year Round",
+    "Household Words",
+    "Bentley’s Miscellany",
+    "The Cornhill Magazine"
+   ],
+   "answer": 0,
+   "hint": "Dickens owned and edited it himself.",
+   "explanation": "Great Expectations ran in weekly instalments from December 1860 to August 1861. Dickens had started the magazine in 1859.",
+   "link": {
+    "href": "/guides/great-expectations/",
+    "label": "Great Expectations study guide"
+   }
+  },
+  {
+   "id": "great-expectations-benefactor",
+   "question": "Who turns out to be Pip’s secret benefactor in Great Expectations?",
+   "options": [
+    "Magwitch",
+    "Miss Havisham",
+    "Mr Jaggers",
+    "Uncle Pumblechook"
+   ],
+   "answer": 0,
+   "hint": "Pip first meets him on the marshes on Christmas Eve.",
+   "explanation": "Abel Magwitch, the convict Pip helped as a child, made a fortune as a sheep-farmer in New South Wales and has paid for Pip’s education.",
+   "link": {
+    "href": "/guides/great-expectations/",
+    "label": "Great Expectations study guide"
+   }
+  },
+  {
+   "id": "great-expectations-ending",
+   "question": "Which novelist persuaded Dickens to change the ending of Great Expectations?",
+   "options": [
+    "Edward Bulwer-Lytton",
+    "Wilkie Collins",
+    "William Makepeace Thackeray",
+    "Elizabeth Gaskell"
+   ],
+   "answer": 0,
+   "hint": "He was the author of The Last Days of Pompeii.",
+   "explanation": "In the first ending Pip and Estella meet briefly and part. Bulwer-Lytton thought it too sad, and Dickens wrote the version in which they leave the ruins of Satis House together.",
+   "link": {
+    "href": "/guides/great-expectations/",
+    "label": "Great Expectations study guide"
+   }
+  },
+  {
+   "id": "carol-stave",
+   "question": "A Christmas Carol is divided into five staves. What is a stave?",
+   "options": [
+    "A verse of a song",
+    "A wooden walking stick",
+    "A night watch",
+    "A chapter of a sermon"
+   ],
+   "answer": 0,
+   "hint": "The book is called a carol.",
+   "explanation": "Dickens used the word as another form of “stanza”, so the book is laid out like the verses of a carol. It was published on 19 December 1843.",
+   "link": {
+    "href": "/guides/a-christmas-carol/",
+    "label": "A Christmas Carol study guide"
+   }
+  },
+  {
+   "id": "carol-fezziwig",
+   "question": "At whose Christmas party does the Ghost of Christmas Past show Scrooge his younger self?",
+   "options": [
+    "Old Fezziwig’s",
+    "Jacob Marley’s",
+    "Fred’s",
+    "Bob Cratchit’s"
+   ],
+   "answer": 0,
+   "hint": "He was Scrooge’s first employer.",
+   "explanation": "Scrooge had been apprenticed to Fezziwig. Watching the party makes him remember his own clerk, Bob Cratchit.",
+   "link": {
+    "href": "/guides/a-christmas-carol/",
+    "label": "A Christmas Carol study guide"
+   }
+  },
+  {
+   "id": "dracula-whitby",
+   "question": "At which English port does Dracula come ashore?",
+   "options": [
+    "Whitby",
+    "Scarborough",
+    "Dover",
+    "Hull"
+   ],
+   "answer": 0,
+   "hint": "He leaps from a wrecked ship in the shape of a large dog.",
+   "explanation": "The Russian schooner Demeter runs aground with its dead captain lashed to the wheel. Stoker had stayed in Whitby in 1890 and found the name Dracula in a book in the town’s library.",
+   "link": {
+    "href": "/guides/dracula/",
+    "label": "Dracula study guide"
+   }
+  },
+  {
+   "id": "dracula-carfax",
+   "question": "What is the name of the house near London that Dracula buys?",
+   "options": [
+    "Carfax",
+    "Hillingham",
+    "Purfleet Hall",
+    "Bly"
+   ],
+   "answer": 0,
+   "hint": "Jonathan Harker travels to Transylvania to complete the purchase.",
+   "explanation": "Carfax stands next to Dr Seward’s asylum at Purfleet. Dracula has boxes of earth sent there from his castle.",
+   "link": {
+    "href": "/guides/dracula/",
+    "label": "Dracula study guide"
+   }
+  },
+  {
+   "id": "jekyll-utterson",
+   "question": "Which lawyer’s inquiries frame Strange Case of Dr Jekyll and Mr Hyde?",
+   "options": [
+    "Mr Utterson",
+    "Mr Enfield",
+    "Dr Lanyon",
+    "Mr Guest"
+   ],
+   "answer": 0,
+   "hint": "He holds Jekyll’s will.",
+   "explanation": "Utterson is disturbed that Jekyll’s will leaves everything to Edward Hyde. The full explanation comes only in the last two chapters, in Lanyon’s narrative and Jekyll’s statement.",
+   "link": {
+    "href": "/guides/jekyll-and-hyde/",
+    "label": "Jekyll and Hyde study guide"
+   }
+  },
+  {
+   "id": "jekyll-carew",
+   "question": "Which murder makes Hyde a wanted man?",
+   "options": [
+    "The murder of Sir Danvers Carew",
+    "The murder of Dr Lanyon",
+    "The murder of Poole",
+    "The murder of a child in the street"
+   ],
+   "answer": 0,
+   "hint": "A maid witnesses it from a window by moonlight.",
+   "explanation": "Hyde beats Sir Danvers Carew, a Member of Parliament, to death with a heavy cane, half of which is found at the scene.",
+   "link": {
+    "href": "/guides/jekyll-and-hyde/",
+    "label": "Jekyll and Hyde study guide"
+   }
+  },
+  {
+   "id": "dorian-lippincott",
+   "question": "In which magazine did The Picture of Dorian Gray first appear, in 1890?",
+   "options": [
+    "Lippincott’s Monthly Magazine",
+    "The Strand Magazine",
+    "Blackwood’s Magazine",
+    "The Yellow Book"
+   ],
+   "answer": 0,
+   "hint": "It was based in Philadelphia.",
+   "explanation": "The magazine version has thirteen chapters. Wilde expanded it to twenty chapters, with a Preface, for the book of 1891.",
+   "link": {
+    "href": "/guides/dorian-gray/",
+    "label": "The Picture of Dorian Gray study guide"
+   }
+  },
+  {
+   "id": "dorian-basil",
+   "question": "Who paints the portrait of Dorian Gray?",
+   "options": [
+    "Basil Hallward",
+    "Lord Henry Wotton",
+    "Alan Campbell",
+    "James Vane"
+   ],
+   "answer": 0,
+   "hint": "Dorian later kills him.",
+   "explanation": "Basil finishes the portrait in the first chapter. Years later Dorian shows him what the picture has become and stabs him.",
+   "link": {
+    "href": "/guides/dorian-gray/",
+    "label": "The Picture of Dorian Gray study guide"
+   }
+  },
+  {
+   "id": "tess-subtitle",
+   "question": "What is the subtitle of Tess of the d’Urbervilles?",
+   "options": [
+    "A Pure Woman Faithfully Presented",
+    "A Tale of Wessex",
+    "The Maiden No More",
+    "A Story of the Dairy"
+   ],
+   "answer": 0,
+   "hint": "Many reviewers objected to it.",
+   "explanation": "Hardy added the subtitle for the book of 1891. The novel is divided into seven Phases, the first called “The Maiden”.",
+   "link": {
+    "href": "/guides/tess-of-the-durbervilles/",
+    "label": "Tess of the d’Urbervilles study guide"
+   }
+  },
+  {
+   "id": "moonstone-eliot",
+   "question": "Which poet called The Moonstone “the first, the longest, and the best of modern English detective novels”?",
+   "options": [
+    "T. S. Eliot",
+    "W. H. Auden",
+    "Algernon Swinburne",
+    "Robert Browning"
+   ],
+   "answer": 0,
+   "hint": "He wrote an introduction to the novel in 1928.",
+   "explanation": "Wilkie Collins published The Moonstone in 1868. Its detective, Sergeant Cuff, was partly modelled on Inspector Jonathan Whicher.",
+   "link": {
+    "href": "/books/the-moonstone/",
+    "label": "The Moonstone"
+   }
+  },
+  {
+   "id": "woman-in-white-fosco",
+   "question": "Which character in The Woman in White keeps white mice, a cockatoo and canaries?",
+   "options": [
+    "Count Fosco",
+    "Sir Percival Glyde",
+    "Mr Fairlie",
+    "Walter Hartright"
+   ],
+   "answer": 0,
+   "hint": "He is an Italian count of great size.",
+   "explanation": "Fosco is the friend and adviser of Sir Percival Glyde and the most dangerous person in the book. Marian Halcombe’s diary describes him at length.",
+   "link": {
+    "href": "/books/the-woman-in-white/",
+    "label": "The Woman in White"
+   }
+  },
+  {
+   "id": "holmes-beeton",
+   "question": "In which publication did Sherlock Holmes first appear, in 1887?",
+   "options": [
+    "Beeton’s Christmas Annual",
+    "The Strand Magazine",
+    "Lippincott’s Monthly Magazine",
+    "Punch"
+   ],
+   "answer": 0,
+   "hint": "The story was A Study in Scarlet.",
+   "explanation": "A Study in Scarlet appeared in Beeton’s Christmas Annual in November 1887. Holmes became famous after the short stories began in The Strand Magazine in 1891.",
+   "link": {
+    "href": "/books/adventures-of-sherlock-holmes/",
+    "label": "The Adventures of Sherlock Holmes"
+   }
+  },
+  {
+   "id": "holmes-the-woman",
+   "question": "Who is always “the woman” to Sherlock Holmes?",
+   "options": [
+    "Irene Adler",
+    "Mary Morstan",
+    "Mrs Hudson",
+    "Violet Hunter"
+   ],
+   "answer": 0,
+   "hint": "She outwits him in “A Scandal in Bohemia”.",
+   "explanation": "Watson says Holmes never spoke of her under any other title. Irene Adler keeps the photograph the King of Bohemia wanted recovered.",
+   "link": {
+    "href": "/books/adventures-of-sherlock-holmes/",
+    "label": "The Adventures of Sherlock Holmes"
+   }
+  },
+  {
+   "id": "sign-of-four-cocaine",
+   "question": "At the start of The Sign of Four, what is Holmes injecting himself with?",
+   "options": [
+    "A seven-per-cent solution of cocaine",
+    "Morphine",
+    "Laudanum",
+    "Opium"
+   ],
+   "answer": 0,
+   "hint": "Watson asks which it is today.",
+   "explanation": "Holmes says he takes the drug when he has no work for his mind. Mary Morstan then arrives with her case.",
+   "link": {
+    "href": "/books/sign-of-four/",
+    "label": "The Sign of Four"
+   }
+  },
+  {
+   "id": "hound-dartmoor",
+   "question": "On which moor is The Hound of the Baskervilles set?",
+   "options": [
+    "Dartmoor",
+    "Exmoor",
+    "Bodmin Moor",
+    "The North York Moors"
+   ],
+   "answer": 0,
+   "hint": "An escaped convict from Princetown is hiding there.",
+   "explanation": "The novel was serialised in The Strand Magazine in 1901–02. It is set before the events of “The Final Problem”, in which Holmes seemed to have died.",
+   "link": {
+    "href": "/books/the-hound-of-the-baskervilles/",
+    "label": "The Hound of the Baskervilles"
+   }
+  },
+  {
+   "id": "alice-liddell",
+   "question": "On a boat trip on 4 July 1862, Charles Dodgson first told the Alice story to three sisters. What was their surname?",
+   "options": [
+    "Liddell",
+    "Tenniel",
+    "Darwin",
+    "Macmillan"
+   ],
+   "answer": 0,
+   "hint": "Their father was Dean of Christ Church, Oxford.",
+   "explanation": "Dodgson rowed Lorina, Alice and Edith Liddell up the Thames to Godstow. Alice asked him to write the story down, and he gave her the manuscript, Alice’s Adventures under Ground.",
+   "link": {
+    "href": "/books/alices-adventures-in-wonderland/",
+    "label": "Alice’s Adventures in Wonderland"
+   }
+  },
+  {
+   "id": "alice-tenniel",
+   "question": "Who drew the illustrations for the first edition of Alice’s Adventures in Wonderland (1865)?",
+   "options": [
+    "John Tenniel",
+    "Arthur Rackham",
+    "George Cruikshank",
+    "Phiz"
+   ],
+   "answer": 0,
+   "hint": "He was the chief cartoonist of Punch.",
+   "explanation": "Tenniel was unhappy with the printing of the first edition, and Carroll withdrew it. The book was reprinted for the general public later in 1865, dated 1866.",
+   "link": {
+    "href": "/books/alices-adventures-in-wonderland/",
+    "label": "Alice’s Adventures in Wonderland"
+   }
+  },
+  {
+   "id": "nobody-laurels",
+   "question": "What is the name of the Pooters’ house in The Diary of a Nobody?",
+   "options": [
+    "The Laurels",
+    "The Cedars",
+    "Brickfield Lodge",
+    "Holloway House"
+   ],
+   "answer": 0,
+   "hint": "It is in Brickfield Terrace, Holloway.",
+   "explanation": "Charles Pooter is a City clerk. The book began as a series in Punch in 1888–89 and appeared as a book in 1892.",
+   "link": {
+    "href": "/books/the-diary-of-a-nobody/",
+    "label": "The Diary of a Nobody"
+   }
+  },
+  {
+   "id": "three-men-dog",
+   "question": "What is the name of the dog in Three Men in a Boat?",
+   "options": [
+    "Montmorency",
+    "Bob",
+    "Jip",
+    "Bull’s-eye"
+   ],
+   "answer": 0,
+   "hint": "He is a fox terrier.",
+   "explanation": "Jerome K. Jerome’s book of 1889 follows three friends rowing up the Thames from Kingston to Oxford, with the dog.",
+   "link": {
+    "href": "/books/three-men-in-a-boat/",
+    "label": "Three Men in a Boat"
+   }
+  },
+  {
+   "id": "war-of-worlds-horsell",
+   "question": "Where does the first Martian cylinder land in The War of the Worlds?",
+   "options": [
+    "Horsell Common, near Woking",
+    "Hampstead Heath",
+    "Richmond Park",
+    "Salisbury Plain"
+   ],
+   "answer": 0,
+   "hint": "Wells was living in Woking when he wrote the book.",
+   "explanation": "The cylinder lands on Horsell Common, a short walk from Wells’s house. The Martians later advance on London.",
+   "link": {
+    "href": "/books/war-of-the-worlds/",
+    "label": "The War of the Worlds"
+   }
+  },
+  {
+   "id": "war-of-worlds-bacteria",
+   "question": "What finally kills the Martians in The War of the Worlds?",
+   "options": [
+    "Bacteria",
+    "Artillery",
+    "The winter cold",
+    "Poison gas"
+   ],
+   "answer": 0,
+   "hint": "Human beings have built up resistance to it over thousands of years.",
+   "explanation": "The narrator finds the Martians dead in their machines, killed by bacteria against which they had no defence.",
+   "link": {
+    "href": "/books/war-of-the-worlds/",
+    "label": "The War of the Worlds"
+   }
+  },
+  {
+   "id": "mr-james-whistle",
+   "question": "In M. R. James’s story “Oh, Whistle, and I’ll Come to You, My Lad”, what does Professor Parkins find in a ruined Templar preceptory?",
+   "options": [
+    "A bronze whistle",
+    "A carved crucifix",
+    "A lead coffin",
+    "A Latin manuscript"
+   ],
+   "answer": 0,
+   "hint": "It carries a Latin inscription.",
+   "explanation": "Parkins blows the whistle, and something answers. The story was published in Ghost Stories of an Antiquary in 1904.",
+   "link": {
+    "href": "/books/m-r-james-collected-ghost-stories/",
+    "label": "M. R. James: Collected Ghost Stories"
+   }
+  },
+  {
+   "id": "carmilla-anagram",
+   "question": "In Sheridan Le Fanu’s Carmilla, the names Millarca and Mircalla are what?",
+   "options": [
+    "Anagrams of Carmilla",
+    "Her sisters",
+    "The towns where she lived",
+    "Her two servants"
+   ],
+   "answer": 0,
+   "hint": "All three names belong to the same person.",
+   "explanation": "Carmilla appeared as a serial in The Dark Blue in 1871–72, more than twenty years before Dracula. Her earlier identity is Countess Mircalla Karnstein.",
+   "link": {
+    "href": "/books/carmilla/",
+    "label": "Carmilla"
+   }
+  },
+  {
+   "id": "turn-screw-bly",
+   "question": "What is the name of the house where the governess looks after Miles and Flora in The Turn of the Screw?",
+   "options": [
+    "Bly",
+    "Thornfield",
+    "Carfax",
+    "Gaunt House"
+   ],
+   "answer": 0,
+   "hint": "It is in Essex.",
+   "explanation": "The children’s uncle hires the governess on condition that she never troubles him about them. Henry James published the story in 1898.",
+   "link": {
+    "href": "/books/the-turn-of-the-screw/",
+    "label": "The Turn of the Screw"
+   }
+  },
+  {
+   "id": "gilman-mitchell",
+   "question": "Charlotte Perkins Gilman wrote “The Yellow Wall-Paper” after undergoing which physician’s “rest cure”?",
+   "options": [
+    "Silas Weir Mitchell",
+    "Sigmund Freud",
+    "Jean-Martin Charcot",
+    "Henry Maudsley"
+   ],
+   "answer": 0,
+   "hint": "He is named in the story.",
+   "explanation": "The narrator’s husband threatens to send her to “Weir Mitchell in the fall”. Gilman later wrote that she had sent Mitchell a copy of the story.",
+   "link": {
+    "href": "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
+    "label": "The Yellow Wallpaper"
+   }
+  },
+  {
+   "id": "christmas-card",
+   "question": "Who commissioned the first commercially printed Christmas card, in 1843?",
+   "options": [
+    "Henry Cole",
+    "Prince Albert",
+    "Charles Dickens",
+    "Rowland Hill"
+   ],
+   "answer": 0,
+   "hint": "He later became the first director of what is now the V&A.",
+   "explanation": "Henry Cole asked the artist John Callcott Horsley to design the card. About a thousand copies were printed and sold for a shilling each.",
+   "link": {
+    "href": "/books/a-victorian-christmas/",
+    "label": "A Victorian Christmas"
+   }
+  },
+  {
+   "id": "cracker-tom-smith",
+   "question": "Which London confectioner is credited with inventing the Christmas cracker?",
+   "options": [
+    "Tom Smith",
+    "John Cadbury",
+    "Henry Tate",
+    "Joseph Fry"
+   ],
+   "answer": 0,
+   "hint": "He began by wrapping sugared almonds in paper with a motto.",
+   "explanation": "Tom Smith sold sweets wrapped in twists of paper from the 1840s and later added the snap, a strip that cracks when the cracker is pulled. The paper hats came later still.",
+   "link": {
+    "href": "/books/a-victorian-christmas/",
+    "label": "A Victorian Christmas"
+   }
+  },
+  {
+   "id": "moby-the-whale",
+   "question": "Under what title was Moby-Dick first published in London in October 1851?",
+   "options": [
+    "The Whale",
+    "Ishmael",
+    "The Pequod",
+    "Ahab"
+   ],
+   "answer": 0,
+   "hint": "The American edition followed a month later.",
+   "explanation": "Richard Bentley published The Whale in three volumes in London. The London edition left out the Epilogue, so some British reviewers wondered how the narrator had survived.",
+   "link": {
+    "href": "/guides/moby-dick/",
+    "label": "Moby-Dick study guide"
+   }
+  },
+  {
+   "id": "moby-doubloon",
+   "question": "What does Captain Ahab nail to the mainmast as a reward for the first man to sight Moby Dick?",
+   "options": [
+    "A gold doubloon",
+    "A silver dollar",
+    "A harpoon head",
+    "A ship’s bell"
+   ],
+   "answer": 0,
+   "hint": "The coin comes from Ecuador.",
+   "explanation": "Ahab nails the doubloon to the mast in Chapter 36, “The Quarter-Deck”. In Chapter 99 several of the crew look at the coin and each reads it differently.",
+   "link": {
+    "href": "/guides/moby-dick/",
+    "label": "Moby-Dick study guide"
+   }
+  },
+  {
+   "id": "scarlet-pearl",
+   "question": "What is the name of Hester Prynne’s daughter in The Scarlet Letter?",
+   "options": [
+    "Pearl",
+    "Ruth",
+    "Faith",
+    "Grace"
+   ],
+   "answer": 0,
+   "hint": "Her name comes from a parable about something of great price.",
+   "explanation": "Hester named her Pearl, “as being of great price”, after the parable in Matthew’s Gospel. The father, the minister Arthur Dimmesdale, is not named until late in the book.",
+   "link": {
+    "href": "/books/the-scarlet-letter/",
+    "label": "The Scarlet Letter"
+   }
+  },
+  {
+   "id": "scarlet-custom-house",
+   "question": "The Scarlet Letter begins with an introduction about Hawthorne’s years in which job?",
+   "options": [
+    "Surveyor at the Salem Custom House",
+    "Editor of a Boston newspaper",
+    "Minister of a church in Concord",
+    "Teacher at Bowdoin College"
+   ],
+   "answer": 0,
+   "hint": "He lost the post after a change of government.",
+   "explanation": "In “The Custom-House”, Hawthorne claims to have found the scarlet letter and an old manuscript about Hester Prynne in the building’s attic.",
+   "link": {
+    "href": "/books/the-scarlet-letter/",
+    "label": "The Scarlet Letter"
+   }
+  },
+  {
+   "id": "huck-jim",
+   "question": "Who travels down the Mississippi on a raft with Huck Finn?",
+   "options": [
+    "Jim",
+    "Tom Sawyer",
+    "Pap Finn",
+    "Joe Harper"
+   ],
+   "answer": 0,
+   "hint": "He has run away because he is about to be sold.",
+   "explanation": "Jim escapes from Miss Watson when he hears she plans to sell him down the river. Huck has faked his own death to get away from his father.",
+   "link": {
+    "href": "/books/adventures-of-huckleberry-finn/",
+    "label": "Adventures of Huckleberry Finn"
+   }
+  },
+  {
+   "id": "hemingway-huck",
+   "question": "Which writer said that “all modern American literature comes from one book by Mark Twain called Huckleberry Finn”?",
+   "options": [
+    "Ernest Hemingway",
+    "William Faulkner",
+    "F. Scott Fitzgerald",
+    "T. S. Eliot"
+   ],
+   "answer": 0,
+   "hint": "The remark appears in a book about a hunting trip in Africa.",
+   "explanation": "Hemingway wrote it in Green Hills of Africa (1935). He added that readers should stop at the point where Jim is stolen from the boys.",
+   "link": {
+    "href": "/books/adventures-of-huckleberry-finn/",
+    "label": "Adventures of Huckleberry Finn"
+   }
+  },
+  {
+   "id": "tom-sawyer-fence",
+   "question": "Which chore does Tom Sawyer trick other boys into doing for him?",
+   "options": [
+    "Whitewashing a fence",
+    "Chopping firewood",
+    "Fetching water",
+    "Weeding the garden"
+   ],
+   "answer": 0,
+   "hint": "Aunt Polly sets it as a punishment.",
+   "explanation": "Tom pretends the work is a privilege, and the other boys pay him with apples, marbles and a dead rat for a turn with the brush.",
+   "link": {
+    "href": "/books/the-adventures-of-tom-sawyer/",
+    "label": "The Adventures of Tom Sawyer"
+   }
+  },
+  {
+   "id": "gatsby-1922",
+   "question": "In which summer is The Great Gatsby set?",
+   "options": [
+    "1922",
+    "1919",
+    "1925",
+    "1929"
+   ],
+   "answer": 0,
+   "hint": "Nick Carraway turns thirty during the novel.",
+   "explanation": "Nick rents a house in West Egg in the spring of 1922. Fitzgerald published the novel in April 1925.",
+   "link": {
+    "href": "/guides/the-great-gatsby/",
+    "label": "The Great Gatsby study guide"
+   }
+  },
+  {
+   "id": "gatsby-trimalchio",
+   "question": "Which title, taken from a character in Petronius’s Satyricon, did Fitzgerald consider for The Great Gatsby?",
+   "options": [
+    "Trimalchio in West Egg",
+    "The Valley of Ashes",
+    "Under the Red, White, and Blue",
+    "Among Ash-Heaps and Millionaires"
+   ],
+   "answer": 0,
+   "hint": "The character is a rich former slave who gives lavish feasts.",
+   "explanation": "Fitzgerald considered several titles, including Trimalchio in West Egg, Under the Red, White, and Blue and Among Ash-Heaps and Millionaires. An early draft has been published as Trimalchio.",
+   "link": {
+    "href": "/guides/the-great-gatsby/",
+    "label": "The Great Gatsby study guide"
+   }
+  },
+  {
+   "id": "douglass-auld",
+   "question": "Who first taught Frederick Douglass the alphabet?",
+   "options": [
+    "Sophia Auld, the wife of his enslaver",
+    "William Lloyd Garrison",
+    "His grandmother",
+    "A white schoolboy in Baltimore"
+   ],
+   "answer": 0,
+   "hint": "Her husband stopped the lessons.",
+   "explanation": "Hugh Auld told his wife that learning would make Douglass unfit to be a slave. Douglass writes that this showed him the “pathway from slavery to freedom”, and he went on learning from boys in the street.",
+   "link": {
+    "href": "/books/narrative-of-the-life-of-frederick-douglass/",
+    "label": "Narrative of the Life of Frederick Douglass"
+   }
+  },
+  {
+   "id": "douglass-escape",
+   "question": "Why did Douglass leave out the details of his escape from his Narrative of 1845?",
+   "options": [
+    "To protect the people and routes that helped him",
+    "Because he had not yet escaped",
+    "Because his publisher objected",
+    "Because he had forgotten them"
+   ],
+   "answer": 0,
+   "hint": "He described the escape only after slavery had ended.",
+   "explanation": "Douglass escaped in 1838 dressed as a sailor and carrying borrowed papers. He gave the details in Life and Times of Frederick Douglass (1881).",
+   "link": {
+    "href": "/books/narrative-of-the-life-of-frederick-douglass/",
+    "label": "Narrative of the Life of Frederick Douglass"
+   }
+  },
+  {
+   "id": "uncle-tom-eliza",
+   "question": "In Uncle Tom’s Cabin, how does Eliza escape across the Ohio River with her child?",
+   "options": [
+    "By jumping from one ice floe to the next",
+    "By ferry at night",
+    "By swimming",
+    "Over a railway bridge"
+   ],
+   "answer": 0,
+   "hint": "The river is breaking up in early spring.",
+   "explanation": "Eliza runs when she learns her son Harry is to be sold. Harriet Beecher Stowe’s novel was serialised in 1851–52 and published as a book in 1852.",
+   "link": {
+    "href": "/books/uncle-toms-cabin/",
+    "label": "Uncle Tom’s Cabin"
+   }
+  },
+  {
+   "id": "call-wild-buck",
+   "question": "Where does Buck live before he is stolen and sold in The Call of the Wild?",
+   "options": [
+    "On Judge Miller’s estate in the Santa Clara Valley",
+    "In a lumber camp in Oregon",
+    "On a farm in Kansas",
+    "In Dawson City"
+   ],
+   "answer": 0,
+   "hint": "It is in California.",
+   "explanation": "Buck is stolen by a gardener’s helper who owes gambling debts and is shipped north to be used as a sled dog in the Klondike gold rush of 1897.",
+   "link": {
+    "href": "/books/call-of-the-wild/",
+    "label": "The Call of the Wild"
+   }
+  },
+  {
+   "id": "crane-born",
+   "question": "Stephen Crane published The Red Badge of Courage, a novel of the American Civil War, in 1895. When was he born?",
+   "options": [
+    "1871",
+    "1845",
+    "1858",
+    "1863"
+   ],
+   "answer": 0,
+   "hint": "He had never seen a battle when he wrote it.",
+   "explanation": "Crane was born six years after the war ended. He drew on veterans’ accounts, including the series Battles and Leaders of the Civil War.",
+   "link": {
+    "href": "/books/red-badge-of-courage/",
+    "label": "The Red Badge of Courage"
+   }
+  },
+  {
+   "id": "awakening-grand-isle",
+   "question": "Where does Edna Pontellier spend the summer at the start of The Awakening?",
+   "options": [
+    "Grand Isle",
+    "Martha’s Vineyard",
+    "Newport",
+    "Key West"
+   ],
+   "answer": 0,
+   "hint": "It is an island resort on the Gulf of Mexico.",
+   "explanation": "Kate Chopin’s novel of 1899 begins among Creole families on holiday at Grand Isle in Louisiana. Edna learns to swim there.",
+   "link": {
+    "href": "/books/the-awakening/",
+    "label": "The Awakening"
+   }
+  },
+  {
+   "id": "ethan-frome-starkfield",
+   "question": "In which fictional New England town is Ethan Frome set?",
+   "options": [
+    "Starkfield",
+    "Grover’s Corners",
+    "Winesburg",
+    "Gopher Prairie"
+   ],
+   "answer": 0,
+   "hint": "The name suggests a bare winter landscape.",
+   "explanation": "The unnamed narrator is stuck in Starkfield, Massachusetts, for a winter and pieces together Ethan’s story. Edith Wharton published the novel in 1911.",
+   "link": {
+    "href": "/books/ethan-frome/",
+    "label": "Ethan Frome"
+   }
+  },
+  {
+   "id": "sleepy-hollow-hessian",
+   "question": "According to the legend in Washington Irving’s story, who was the Headless Horseman in life?",
+   "options": [
+    "A Hessian trooper whose head was carried away by a cannonball",
+    "A murdered schoolmaster",
+    "A Dutch farmer",
+    "A British spy"
+   ],
+   "answer": 0,
+   "hint": "He fought in the American Revolutionary War.",
+   "explanation": "The story says the trooper rides out each night in search of his head. Ichabod Crane, the schoolmaster, disappears after meeting him.",
+   "link": {
+    "href": "/books/sleepy-hollow-and-other-stories/",
+    "label": "Sleepy Hollow and Other Stories"
+   }
+  },
+  {
+   "id": "poe-dupin",
+   "question": "Which detective did Edgar Allan Poe introduce in “The Murders in the Rue Morgue” (1841)?",
+   "options": [
+    "C. Auguste Dupin",
+    "Sherlock Holmes",
+    "Inspector Bucket",
+    "Sergeant Cuff"
+   ],
+   "answer": 0,
+   "hint": "He lives in Paris.",
+   "explanation": "Dupin appears in three of Poe’s stories. His unnamed friend narrates them, a pattern Conan Doyle later used for Holmes and Watson.",
+   "link": {
+    "href": "/books/edgar-allan-poe-selected-tales/",
+    "label": "Edgar Allan Poe: Selected Tales"
+   }
+  },
+  {
+   "id": "yankee-eclipse",
+   "question": "How does Hank Morgan escape being burned at the stake in A Connecticut Yankee in King Arthur’s Court?",
+   "options": [
+    "He claims to cause a solar eclipse",
+    "He fires a pistol",
+    "He bribes Merlin",
+    "He builds a hot-air balloon"
+   ],
+   "answer": 0,
+   "hint": "He remembers the date of one from his own century.",
+   "explanation": "Hank knows an eclipse is due and announces that he will blot out the sun. Mark Twain published the novel in 1889.",
+   "link": {
+    "href": "/books/a-connecticut-yankee-in-king-arthurs-court/",
+    "label": "A Connecticut Yankee in King Arthur’s Court"
+   }
+  },
+  {
+   "id": "puddnhead-fingerprints",
+   "question": "What evidence does David Wilson use to solve the murder in Pudd’nhead Wilson?",
+   "options": [
+    "Fingerprints",
+    "A torn letter",
+    "Footprints in the mud",
+    "A pawned watch"
+   ],
+   "answer": 0,
+   "hint": "He has collected them from the townspeople for years as a hobby.",
+   "explanation": "Wilson’s collection proves that two babies were exchanged in their cradles. Mark Twain published the novel in 1894, when fingerprinting was still a new method of identification.",
+   "link": {
+    "href": "/books/puddnhead-wilson/",
+    "label": "Pudd’nhead Wilson"
+   }
+  },
+  {
+   "id": "anne-boy",
+   "question": "In Anne of Green Gables, what had Matthew and Marilla Cuthbert asked the orphanage to send?",
+   "options": [
+    "A boy, to help on the farm",
+    "A girl, as a companion",
+    "Twins",
+    "A child under five"
+   ],
+   "answer": 0,
+   "hint": "The message was passed on wrongly.",
+   "explanation": "Matthew drives to the station and finds Anne waiting. L. M. Montgomery’s novel of 1908 is set on Prince Edward Island.",
+   "link": {
+    "href": "/books/anne-of-green-gables/",
+    "label": "Anne of Green Gables"
+   }
+  },
+  {
+   "id": "blue-castle-letter",
+   "question": "What news makes Valancy Stirling change her life in L. M. Montgomery’s The Blue Castle?",
+   "options": [
+    "A doctor’s letter saying she has a year to live",
+    "An inheritance from an uncle",
+    "A proposal of marriage",
+    "Her mother’s death"
+   ],
+   "answer": 0,
+   "hint": "The letter later turns out to have been meant for someone else.",
+   "explanation": "Valancy is twenty-nine and has always done what her family wanted. After the letter she leaves home and marries Barney Snaith.",
+   "link": {
+    "href": "/books/the-blue-castle/",
+    "label": "The Blue Castle"
+   }
+  },
+  {
+   "id": "dalloway-flowers",
+   "question": "In the first sentence of Mrs Dalloway, what does Clarissa say she will buy herself?",
+   "options": [
+    "The flowers",
+    "A new dress",
+    "Gloves",
+    "The champagne"
+   ],
+   "answer": 0,
+   "hint": "She is preparing for a party that evening.",
+   "explanation": "The novel follows one day in June 1923. Clarissa’s party, which ends the book, is the event the day leads to.",
+   "link": {
+    "href": "/guides/mrs-dalloway/",
+    "label": "Mrs Dalloway study guide"
+   }
+  },
+  {
+   "id": "dalloway-hours",
+   "question": "What was Virginia Woolf’s working title for Mrs Dalloway?",
+   "options": [
+    "The Hours",
+    "One Day in June",
+    "The Party",
+    "Westminster"
+   ],
+   "answer": 0,
+   "hint": "Michael Cunningham later used it for a novel.",
+   "explanation": "Big Ben strikes the hours through the book. Cunningham’s The Hours (1998) follows three women connected to Mrs Dalloway.",
+   "link": {
+    "href": "/guides/mrs-dalloway/",
+    "label": "Mrs Dalloway study guide"
+   }
+  },
+  {
+   "id": "room-colleges",
+   "question": "A Room of One’s Own grew out of lectures Woolf gave in 1928 at which two Cambridge colleges?",
+   "options": [
+    "Newnham and Girton",
+    "Trinity and King’s",
+    "Somerville and Lady Margaret Hall",
+    "Clare and Christ’s"
+   ],
+   "answer": 0,
+   "hint": "Both were colleges for women.",
+   "explanation": "Woolf spoke on women and fiction in October 1928 and expanded the talks into the book published in 1929.",
+   "link": {
+    "href": "/books/a-room-of-ones-own/",
+    "label": "A Room of One’s Own"
+   }
+  },
+  {
+   "id": "room-five-hundred",
+   "question": "How much money a year does Woolf say a woman needs in order to write fiction?",
+   "options": [
+    "Five hundred pounds",
+    "One hundred pounds",
+    "A thousand pounds",
+    "Fifty pounds"
+   ],
+   "answer": 0,
+   "hint": "She also needs a room with a lock on the door.",
+   "explanation": "Woolf’s narrator inherits five hundred a year from an aunt, which she says freed her from writing for money and from resentment.",
+   "link": {
+    "href": "/books/a-room-of-ones-own/",
+    "label": "A Room of One’s Own"
+   }
+  },
+  {
+   "id": "room-judith",
+   "question": "In A Room of One’s Own, whose imagined life does Woolf use to show what would have happened to a woman of genius in the sixteenth century?",
+   "options": [
+    "Shakespeare’s sister, Judith",
+    "Milton’s daughter",
+    "Jane Austen’s aunt",
+    "Queen Elizabeth’s lady-in-waiting"
+   ],
+   "answer": 0,
+   "hint": "Woolf invents her.",
+   "explanation": "Woolf imagines Judith Shakespeare running away to London to act, being refused, and dying by her own hand. Shakespeare in fact had a sister called Joan.",
+   "link": {
+    "href": "/books/a-room-of-ones-own/",
+    "label": "A Room of One’s Own"
+   }
+  },
+  {
+   "id": "heart-intended",
+   "question": "In Heart of Darkness, what does Marlow tell Kurtz’s Intended were his last words?",
+   "options": [
+    "Her name",
+    "“The horror! The horror!”",
+    "“Exterminate all the brutes!”",
+    "Nothing at all"
+   ],
+   "answer": 0,
+   "hint": "It is a lie.",
+   "explanation": "Kurtz’s last words were “The horror! The horror!” Marlow, who says he hates lies, cannot bring himself to tell her.",
+   "link": {
+    "href": "/books/heart-of-darkness/",
+    "label": "Heart of Darkness"
+   }
+  },
+  {
+   "id": "heart-achebe",
+   "question": "Which Nigerian novelist argued in a 1975 lecture that Heart of Darkness denies Africans their humanity?",
+   "options": [
+    "Chinua Achebe",
+    "Wole Soyinka",
+    "Ngũgĩ wa Thiong’o",
+    "Ben Okri"
+   ],
+   "answer": 0,
+   "hint": "He wrote Things Fall Apart.",
+   "explanation": "Achebe gave the lecture “An Image of Africa” at the University of Massachusetts in 1975. It is one of the most cited essays in the criticism of Conrad.",
+   "link": {
+    "href": "/books/heart-of-darkness/",
+    "label": "Heart of Darkness"
+   }
+  },
+  {
+   "id": "metamorphosis-job",
+   "question": "What is Gregor Samsa’s job before his transformation?",
+   "options": [
+    "Travelling salesman",
+    "Bank clerk",
+    "Insurance lawyer",
+    "Railway porter"
+   ],
+   "answer": 0,
+   "hint": "He worries about missing his train.",
+   "explanation": "Gregor supports his parents and sister and hates his work. Kafka himself worked for an accident insurance institute in Prague.",
+   "link": {
+    "href": "/books/the-metamorphosis/",
+    "label": "The Metamorphosis"
+   }
+  },
+  {
+   "id": "metamorphosis-cover",
+   "question": "In 1915 Kafka wrote to his publisher with an instruction about the cover of The Metamorphosis. What was it?",
+   "options": [
+    "The insect itself must not be drawn",
+    "It must show Gregor’s family",
+    "It must be plain black",
+    "It must name him as a lawyer"
+   ],
+   "answer": 0,
+   "hint": "The first edition shows a man covering his face.",
+   "explanation": "Kafka asked that the insect not be shown, “not even from a distance”. Ottomar Starke’s cover shows a man in a doorway with his hands over his face.",
+   "link": {
+    "href": "/books/the-metamorphosis/",
+    "label": "The Metamorphosis"
+   }
+  },
+  {
+   "id": "animal-farm-eliot",
+   "question": "Which poet, then a director at Faber and Faber, turned down Animal Farm in 1944?",
+   "options": [
+    "T. S. Eliot",
+    "W. H. Auden",
+    "Stephen Spender",
+    "Louis MacNeice"
+   ],
+   "answer": 0,
+   "hint": "He wrote that the pigs were “far more intelligent than the other animals”.",
+   "explanation": "Eliot’s letter argued that what was needed was “not more communism but more public-spirited pigs”. Secker and Warburg published the book in August 1945.",
+   "link": {
+    "href": "/books/animal-farm/",
+    "label": "Animal Farm"
+   }
+  },
+  {
+   "id": "animal-farm-equal",
+   "question": "How does the last version of the commandments on the barn wall read in Animal Farm?",
+   "options": [
+    "All animals are equal but some animals are more equal than others",
+    "Four legs good, two legs better",
+    "No animal shall sleep in a bed with sheets",
+    "Whatever goes upon two legs is a friend"
+   ],
+   "answer": 0,
+   "hint": "Benjamin reads it out to Clover.",
+   "explanation": "By the end, the seven commandments have been replaced by this single sentence. The pigs then start to walk on their hind legs.",
+   "link": {
+    "href": "/books/animal-farm/",
+    "label": "Animal Farm"
+   }
+  },
+  {
+   "id": "thursday-subtitle",
+   "question": "What is the subtitle of G. K. Chesterton’s The Man Who Was Thursday?",
+   "options": [
+    "A Nightmare",
+    "A Detective Story",
+    "A Parable",
+    "An Anarchist’s Tale"
+   ],
+   "answer": 0,
+   "hint": "The ending suggests the whole story may have been a dream.",
+   "explanation": "Gabriel Syme, a poet turned police detective, joins a council of seven anarchists named after the days of the week. Chesterton published the novel in 1908.",
+   "link": {
+    "href": "/books/the-man-who-was-thursday/",
+    "label": "The Man Who Was Thursday"
+   }
+  },
+  {
+   "id": "lawrence-reading",
+   "question": "Where did T. E. Lawrence lose most of the first draft of Seven Pillars of Wisdom in 1919?",
+   "options": [
+    "At Reading railway station",
+    "In a hotel in Cairo",
+    "On a ship to Marseilles",
+    "At All Souls College, Oxford"
+   ],
+   "answer": 0,
+   "hint": "He was changing trains.",
+   "explanation": "Lawrence rewrote the book from memory. A private subscribers’ edition appeared in 1926, and the general edition after his death in 1935.",
+   "link": {
+    "href": "/books/seven-pillars-of-wisdom/",
+    "label": "Seven Pillars of Wisdom"
+   }
+  },
+  {
+   "id": "yeats-second-coming",
+   "question": "Which poem by Yeats ends “And what rough beast, its hour come round at last, / Slouches towards Bethlehem to be born?”",
+   "options": [
+    "The Second Coming",
+    "Easter, 1916",
+    "Sailing to Byzantium",
+    "The Wild Swans at Coole"
+   ],
+   "answer": 0,
+   "hint": "It was collected in Michael Robartes and the Dancer (1921).",
+   "explanation": "Yeats wrote the poem in January 1919. The same collection contains “Easter, 1916”.",
+   "link": {
+    "href": "/books/michael-robartes-and-the-dancer/",
+    "label": "Michael Robartes and the Dancer"
+   }
+  },
+  {
+   "id": "railway-children-father",
+   "question": "Why has the children’s father gone away in The Railway Children?",
+   "options": [
+    "He has been wrongly imprisoned as a spy",
+    "He is fighting in a war",
+    "He has gone to work abroad",
+    "He has died"
+   ],
+   "answer": 0,
+   "hint": "Bobbie finds out from an old newspaper.",
+   "explanation": "E. Nesbit’s novel was serialised in 1905 and published as a book in 1906. The old gentleman the children wave to on the train helps prove their father innocent.",
+   "link": {
+    "href": "/books/the-railway-children/",
+    "label": "The Railway Children"
+   }
+  },
+  {
+   "id": "willows-piper",
+   "question": "Which chapter title of The Wind in the Willows did Pink Floyd use for their first album?",
+   "options": [
+    "The Piper at the Gates of Dawn",
+    "The Open Road",
+    "Dulce Domum",
+    "Wayfarers All"
+   ],
+   "answer": 0,
+   "hint": "In the chapter Rat and Mole meet the god Pan.",
+   "explanation": "Rat and Mole search the river at night for Otter’s missing son and find him asleep at the feet of Pan. Pink Floyd’s album came out in 1967.",
+   "link": {
+    "href": "/books/the-wind-in-the-willows/",
+    "label": "The Wind in the Willows"
+   }
+  },
+  {
+   "id": "blackwood-danube",
+   "question": "On which river are the two travellers canoeing in Algernon Blackwood’s story “The Willows”?",
+   "options": [
+    "The Danube",
+    "The Rhine",
+    "The Volga",
+    "The Thames"
+   ],
+   "answer": 0,
+   "hint": "They have come down from Vienna towards Budapest.",
+   "explanation": "The two men camp on a sandy island among willows as the river floods. Blackwood had made the canoe journey himself.",
+   "link": {
+    "href": "/books/the-willows/",
+    "label": "The Willows"
+   }
+  },
+  {
+   "id": "carnacki-pentacle",
+   "question": "What does Carnacki, William Hope Hodgson’s ghost-finder, use to protect himself?",
+   "options": [
+    "An electric pentacle",
+    "A silver bullet",
+    "A crucifix of iron",
+    "A circle of salt only"
+   ],
+   "answer": 0,
+   "hint": "It is made of vacuum tubes.",
+   "explanation": "Carnacki combines the electric pentacle with older defences taken from a fictional manuscript he calls the Sigsand. The stories were collected in 1913.",
+   "link": {
+    "href": "/books/carnacki-the-ghost-finder/",
+    "label": "Carnacki, the Ghost-Finder"
+   }
+  },
+  {
+   "id": "dolls-house-ending",
+   "question": "For a German production in 1880 Ibsen reluctantly wrote a different ending to A Doll’s House. What happens in it?",
+   "options": [
+    "Nora sees her sleeping children and stays",
+    "Torvald leaves instead",
+    "Nora dies",
+    "Krogstad returns the letter"
+   ],
+   "answer": 0,
+   "hint": "The actress playing Nora had refused to perform the original.",
+   "explanation": "Ibsen called the alternative ending a “barbaric outrage” and wrote it only so that no one else would. In the original Nora leaves, and the door slams.",
+   "link": {
+    "href": "/books/a-dolls-house/",
+    "label": "A Doll’s House"
+   }
+  },
+  {
+   "id": "earnest-handbag",
+   "question": "Where was Jack Worthing found as a baby in The Importance of Being Earnest?",
+   "options": [
+    "In a handbag at Victoria Station",
+    "On the steps of a church",
+    "In a basket on the river",
+    "At a seaside hotel"
+   ],
+   "answer": 0,
+   "hint": "It was the Brighton line.",
+   "explanation": "Lady Bracknell is appalled. At the end Miss Prism admits she left the baby there and put her three-volume novel in the pram.",
+   "link": {
+    "href": "/books/the-importance-of-being-earnest/",
+    "label": "The Importance of Being Earnest"
+   }
+  },
+  {
+   "id": "overcoat-saying",
+   "question": "The saying “We all came out from under Gogol’s Overcoat” is often credited to which novelist, though there is no record of him saying it?",
+   "options": [
+    "Dostoevsky",
+    "Tolstoy",
+    "Turgenev",
+    "Chekhov"
+   ],
+   "answer": 0,
+   "hint": "The remark first appears in a French critic’s book about the Russian novel.",
+   "explanation": "The phrase is found in the writing of Eugène-Melchior de Vogüé, who reported it as something said by a Russian writer. Its attribution to Dostoevsky is usually treated as doubtful.",
+   "link": {
+    "href": "/books/the-overcoat/",
+    "label": "The Overcoat"
+   }
+  },
+  {
+   "id": "underground-opening",
+   "question": "Which work opens “I am a sick man… I am a spiteful man”?",
+   "options": [
+    "Notes from Underground",
+    "The Death of Ivan Ilyich",
+    "White Nights",
+    "The Overcoat"
+   ],
+   "answer": 0,
+   "hint": "Its narrator is a retired civil servant in St Petersburg.",
+   "explanation": "Dostoevsky published Notes from Underground in 1864. Its first part is a monologue and its second a story from the narrator’s youth.",
+   "link": {
+    "href": "/books/notes-from-underground/",
+    "label": "Notes from Underground"
+   }
+  },
+  {
+   "id": "karamazov-inquisitor",
+   "question": "Which of the Karamazov brothers tells the story of the Grand Inquisitor?",
+   "options": [
+    "Ivan",
+    "Alyosha",
+    "Dmitri",
+    "Smerdyakov"
+   ],
+   "answer": 0,
+   "hint": "He tells it to his younger brother in a tavern.",
+   "explanation": "Ivan calls the story a poem he has not written down. In it Christ returns to Seville in the time of the Inquisition and is arrested.",
+   "link": {
+    "href": "/books/the-brothers-karamazov/",
+    "label": "The Brothers Karamazov"
+   }
+  },
+  {
+   "id": "karamazov-last",
+   "question": "The Brothers Karamazov was the last novel Dostoevsky completed. When did he die?",
+   "options": [
+    "1881",
+    "1872",
+    "1890",
+    "1866"
+   ],
+   "answer": 0,
+   "hint": "The novel had finished its serial run only a few months before.",
+   "explanation": "The novel appeared in The Russian Messenger in 1879–80. Dostoevsky died in St Petersburg in February 1881.",
+   "link": {
+    "href": "/books/the-brothers-karamazov/",
+    "label": "The Brothers Karamazov"
+   }
+  },
+  {
+   "id": "white-nights-four",
+   "question": "Over how many nights does Dostoevsky’s White Nights take place?",
+   "options": [
+    "Four",
+    "Seven",
+    "One",
+    "Twelve"
+   ],
+   "answer": 0,
+   "hint": "The last section is called “Morning”.",
+   "explanation": "The narrator, a lonely dreamer, meets Nastenka by the canal and they talk on four successive nights in the St Petersburg summer.",
+   "link": {
+    "href": "/books/white-nights/",
+    "label": "White Nights"
+   }
+  },
+  {
+   "id": "ivan-ilyich-curtains",
+   "question": "How does Ivan Ilyich receive the injury that begins his illness?",
+   "options": [
+    "He falls while showing a workman how to hang curtains",
+    "He is thrown from a carriage",
+    "He is attacked in the street",
+    "He slips on ice outside the courts"
+   ],
+   "answer": 0,
+   "hint": "He is decorating his new flat.",
+   "explanation": "Ivan Ilyich knocks his side against a window frame. Tolstoy’s story of 1886 opens with his colleagues hearing of his death.",
+   "link": {
+    "href": "/books/the-death-of-ivan-ilyich/",
+    "label": "The Death of Ivan Ilyich"
+   }
+  },
+  {
+   "id": "burns-halloween",
+   "question": "Which Scottish poet wrote a poem called “Halloween”, published in 1786 with notes on the customs it describes?",
+   "options": [
+    "Robert Burns",
+    "Walter Scott",
+    "James Hogg",
+    "Allan Ramsay"
+   ],
+   "answer": 0,
+   "hint": "The poem appeared in his first collection, printed at Kilmarnock.",
+   "explanation": "Burns describes young people in Ayrshire trying to foretell their future husbands and wives with nuts, kale stalks and apples.",
+   "link": {
+    "href": "/seasons/halloween/",
+    "label": "Halloween at Astor"
+   }
+  },
+  {
+   "id": "otranto",
+   "question": "Which novel of 1764 is usually called the first Gothic novel?",
+   "options": [
+    "The Castle of Otranto",
+    "The Mysteries of Udolpho",
+    "The Monk",
+    "Vathek"
+   ],
+   "answer": 0,
+   "hint": "Its author, Horace Walpole, lived at Strawberry Hill.",
+   "explanation": "Walpole first presented the book as a translation of an old Italian manuscript. The second edition admitted his authorship and called it “A Gothic Story”."
+  },
+  {
+   "id": "boz",
+   "question": "Which writer used the pen name “Boz”?",
+   "options": [
+    "Charles Dickens",
+    "William Makepeace Thackeray",
+    "Thomas Hardy",
+    "Wilkie Collins"
+   ],
+   "answer": 0,
+   "hint": "It came from a family nickname for his younger brother.",
+   "explanation": "Sketches by Boz, Dickens’s first book, was published in 1836. The Pickwick Papers began appearing in the same year."
+  },
+  {
+   "id": "gunpowder-fawkes",
+   "question": "Where was Guy Fawkes arrested in November 1605?",
+   "options": [
+    "In a cellar beneath the House of Lords",
+    "At the Tower of London",
+    "In a house in Warwickshire",
+    "On a boat on the Thames"
+   ],
+   "answer": 0,
+   "hint": "He was guarding barrels of gunpowder.",
+   "explanation": "Fawkes was found around midnight on 4–5 November with thirty-six barrels of gunpowder. Parliament ordered an annual thanksgiving for the King’s escape in 1606.",
+   "link": {
+    "href": "/books/a-victorian-bonfire-night/",
+    "label": "A Victorian Bonfire Night"
+   }
+  }
+ ]
+}

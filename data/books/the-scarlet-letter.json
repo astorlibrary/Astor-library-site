@@ -21,33 +21,6 @@
     "url": "https://standardebooks.org/ebooks/nathaniel-hawthorne/the-scarlet-letter/text/single-page",
     "note": "References give the chapter, or the introductory sketch, which this text titles ‘The Customhouse’."
   },
-  "atAGlance": [
-    {
-      "label": "Published",
-      "value": "March 1850",
-      "note": "Ticknor, Reed and Fields, Boston. A second edition followed within weeks."
-    },
-    {
-      "label": "Called",
-      "value": "A Romance",
-      "note": "Hawthorne’s own subtitle, and a claim about the kind of truth the book is offering."
-    },
-    {
-      "label": "Shape",
-      "value": "Three scaffold scenes",
-      "note": "Daylight, midnight, daylight: the book’s structure is a stage used three times."
-    },
-    {
-      "label": "Span",
-      "value": "Seven years",
-      "note": "From Pearl at three months old to the Election Day sermon."
-    },
-    {
-      "label": "Frame",
-      "value": "‘The Customhouse’",
-      "note": "A sketch of Hawthorne’s own surveyorship, which invents an archival source for everything that follows."
-    }
-  ],
   "structure": [
     {
       "id": "customhouse",
@@ -191,11 +164,6 @@
       "summary": "She is the only person in the book punished in public. Left to support a child on embroidery, she gradually makes herself indispensable to the town that sentenced her, and the change in her (from passion to speculation, from beauty to a kind of marble calm) is described by the narrator as a loss more than a triumph.",
       "clue": "She embroiders her own sentence in gold thread, refuses for seven years to name the man, and comes back at the end to put the badge on again when nobody is making her.",
       "firstAppearance": "Chapter 2",
-      "traits": [
-        "truthful",
-        "self-supporting",
-        "changed by being looked at"
-      ],
       "relationships": [
         {
           "to": "pearl",
@@ -230,11 +198,6 @@
       "summary": "A young clergyman of great ability whose sermons improve in exact proportion as his health fails, because the congregation hears the suffering and mistakes it for holiness. He confesses constantly in terms so general that every confession makes him more revered, and the novel is merciless about how comfortable that arrangement is.",
       "clue": "He keeps his hand over his heart, preaches better the worse he gets, and confesses at midnight where nobody can hear.",
       "firstAppearance": "Chapter 3",
-      "traits": [
-        "eloquent",
-        "physically failing",
-        "expert at half-confession"
-      ],
       "relationships": [
         {
           "to": "hester",
@@ -272,11 +235,6 @@
       "summary": "A scholar who sent a much younger wife ahead to a colony and arrived two years late to find her on a scaffold. He is right about everything (he identifies the man, reads the symptoms and proves his case), and the book treats the accuracy as the crime, because he uses a doctor’s access to get inside a heart and stay there.",
       "clue": "He arrives from the forest with one shoulder higher than the other, takes a new name at the prison door, and spends seven years being right.",
       "firstAppearance": "Chapter 3",
-      "traits": [
-        "learned",
-        "patient",
-        "self-consumed"
-      ],
       "relationships": [
         {
           "to": "hester",
@@ -305,11 +263,6 @@
       "summary": "Adults keep calling her a symbol (the scarlet letter given life, a demon child, evidence of sin), and she keeps behaving like a bright, wild, furiously observant little girl. Her questions are the most exact in the book because nobody has taught her what may not be asked.",
       "clue": "Dressed in scarlet and gold to match her mother’s badge, she throws flowers at it, and will not cross a brook until it is put back on.",
       "firstAppearance": "Chapter 2",
-      "traits": [
-        "observant",
-        "uncontrollable",
-        "made to carry meanings"
-      ],
       "relationships": [
         {
           "to": "hester",
@@ -333,11 +286,6 @@
       "summary": "A version of Hawthorne who spent three years counting cargo, lost the job to a change of administration, and claims to have found the story in an attic. He is why the book calls itself a romance: he hands the reader a forged provenance and says so in the same breath.",
       "clue": "He is dismissed from a government post, blames the guillotine of politics, and produces a manuscript nobody else has ever seen.",
       "firstAppearance": "The Customhouse",
-      "traits": [
-        "ironic",
-        "evasive",
-        "candid about invention"
-      ],
       "relationships": [
         {
           "to": "hester",
@@ -356,11 +304,6 @@
       "summary": "He owns the grandest house in Boston, complete with a suit of armour that distorts Hester’s letter into a monstrous size, and considers taking Pearl away from her mother for the child’s spiritual good. He is the book’s ordinary face of authority: not cruel, merely certain.",
       "clue": "His polished breastplate makes the letter look enormous, and he has to be argued out of removing a child from her mother.",
       "firstAppearance": "Chapter 7",
-      "traits": [
-        "official",
-        "well-meaning",
-        "unreflective"
-      ],
       "relationships": [
         {
           "to": "hester",
@@ -379,11 +322,6 @@
       "summary": "She invites Hester to the forest to meet the Black Man, recognises Dimmesdale’s condition on sight, and is later executed for witchcraft. Hawthorne uses her to leave one possibility open: the forest bargain the townspeople believe in is one the narrator will neither confirm nor rule out.",
       "clue": "She keeps offering people a night ride to the forest, and is hanged for it in the end.",
       "firstAppearance": "Chapter 8",
-      "traits": [
-        "malicious",
-        "perceptive",
-        "doomed"
-      ],
       "relationships": [
         {
           "to": "hester",
@@ -408,11 +346,6 @@
       "summary": "They open the book demanding a branding iron and close it deciding that the letter means Able and that the minister’s confession was a parable. As a character they have one consistent trait: whatever they believe, they believe it unanimously and without memory of having believed anything else.",
       "clue": "They gather at the same scaffold three times, and give three different verdicts without noticing that they have changed their minds.",
       "firstAppearance": "Chapter 1",
-      "traits": [
-        "unanimous",
-        "forgetful",
-        "revisionist"
-      ],
       "relationships": [
         {
           "to": "hester",
@@ -1199,104 +1132,5 @@
       "lon": -73.2854,
       "note": "The Berkshire cottage he moved to months after publication, and where Melville rode over to see him."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "A psychological study of concealment",
-      "summary": "The longest-standing reading takes the book’s subject to be what secrecy does to a mind and a body, with Dimmesdale as the case and Chillingworth as the pathology of the observer.",
-      "counter": "It tends to make Hester the occasion for two men’s inner lives, when she is the only character in the book who acts."
-    },
-    {
-      "position": "A romance about historical inheritance",
-      "summary": "Read with ‘The Customhouse’ attached, the novel is a nineteenth-century writer negotiating with a Puritan ancestry (a judge in the family, a federal post of his own), more than a reconstruction of the 1640s.",
-      "counter": "The frame can be treated as so decisive that the seventeenth-century story becomes merely illustrative, which is not how it reads."
-    },
-    {
-      "position": "A book about the government of women",
-      "summary": "Criticism since the 1970s has concentrated on Hester’s needle as the only economic independence available to her, on the magistrates’ proposal to remove her child, and on the closing prophecy of a truth that could not be entrusted to a woman stained with sin.",
-      "counter": "The final chapter’s retreat (Hester returns, resumes the badge, and defers the revelation to someone purer) is hard to read as endorsement or as critique, and both sides claim it."
-    },
-    {
-      "position": "A book about interpretation",
-      "summary": "The A is read half a dozen ways by half a dozen parties, the meteor gets three explanations, and the minister’s chest gets four. On this account the romance is about communities deciding what marks mean, and the power that decision carries.",
-      "counter": "Pushed far enough, it leaves a novel with real suffering in it looking like an essay on signs."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Hawthorne use the three scaffold scenes to structure the novel?",
-      "focus": "Repetition, staging and the distribution of knowledge",
-      "plan": [
-        "Set the three scenes side by side: Chapter 2 at noon, Chapter 12 at midnight, Chapter 23 at noon again.",
-        "Track who is present, who is watching, and who knows what at each of the three points.",
-        "Show that Dimmesdale’s midnight words are nearly identical to his final ones, so the variable is the audience.",
-        "Use Chillingworth’s position in each scene (in the crowd, at the foot, kneeling) to measure his progress.",
-        "Close on what the third scene fails to settle: the witnesses in Chapter 24 cannot agree what they saw."
-      ]
-    },
-    {
-      "question": "‘The letter changes meaning, but never stops working.’ Discuss.",
-      "focus": "The unstable sign and the power behind it",
-      "plan": [
-        "Begin with the gold thread in Chapter 2: Hester alters the sentence before she has served an hour of it.",
-        "Trace the readings: adultery, Able, an angel in the sky, a mark on a minister’s chest.",
-        "Note who does the reading each time, and that the object itself never changes.",
-        "Test the case with Chapter 18, where the letter comes off and the forest brightens, and Chapter 19, where it goes back on.",
-        "Decide what it means that Hester resumes the badge when nobody is enforcing it."
-      ]
-    },
-    {
-      "question": "Is Chillingworth the villain of The Scarlet Letter?",
-      "focus": "Revenge, marriage and the ethics of observation",
-      "plan": [
-        "Establish the facts he is right about, and the accuracy of his diagnosis in Chapter 10.",
-        "Use Chapter 14 to show him passing the fairest judgement anyone passes on Hester.",
-        "Set against that Dimmesdale’s verdict in Chapter 17, that Chillingworth ‘has violated, in cold blood, the sanctity of a human heart’.",
-        "Consider the marriage itself, and Chapter 15’s warning to men who win a hand without a heart.",
-        "Weigh the conclusion: he dies within the year and leaves his property to the child of the man he destroyed."
-      ]
-    },
-    {
-      "question": "What does ‘The Customhouse’ do for the romance that follows?",
-      "focus": "Frame, provenance and the claims a romance makes",
-      "plan": [
-        "Describe what the sketch claims: a scrap of cloth, Surveyor Pue’s papers, a burn on the chest.",
-        "All of it is invented, and the sketch tells us so by its tone.",
-        "Use the moonlit room and the neutral territory as Hawthorne’s own definition of the form.",
-        "Connect the narrator’s ancestry and his federal office to the magistrates in the story.",
-        "Ask what would be lost if a modern edition printed the twenty-four chapters alone."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Hester is punished, Dimmesdale is revered, and Chillingworth is free. Does the ending correct any of that, or only end it?",
-    "Pearl is called a demon, an elf and the scarlet letter given life. What happens if you read her simply as a child?",
-    "The novel never dramatises the adultery. Why does Hawthorne begin after it, and what would change if he had not?",
-    "Chapter 24 gives four accounts of what was on Dimmesdale’s chest, including the claim that there was nothing. Which one does the book prefer?",
-    "The forest lets the letter come off and the brook puts it back. Is nature on Hester’s side in this book?",
-    "Hester says what they did had a consecration of its own. Does the novel ever answer her?"
-  ],
-  "related": [
-    {
-      "href": "/books/moby-dick/",
-      "why": "Dedicated to Hawthorne a year later by a neighbour who had just read this book, and the other great American argument with a symbol."
-    },
-    {
-      "href": "/books/tess-of-the-durbervilles/",
-      "why": "The same case tried in England fifty years on: a woman marked by an event and judged for the rest of her life."
-    },
-    {
-      "href": "/books/the-awakening/",
-      "why": "A later American novel about a woman whose independence is available only outside the settled community."
-    },
-    {
-      "href": "/books/jane-eyre/",
-      "why": "Another study of a first-person conscience formed against an institution, and of a secret kept inside a respectable house."
-    },
-    {
-      "href": "/books/adventures-of-huckleberry-finn/",
-      "why": "The other American book about a conscience that has been trained wrong by the community it belongs to."
-    }
-  ],
-  "videos": []
+  ]
 }

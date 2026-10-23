@@ -21,28 +21,6 @@
     "url": "https://standardebooks.org/ebooks/thomas-hardy/tess-of-the-durbervilles/text/single-page",
     "note": "Hardy numbered the chapters continuously, from I to LIX, across seven phases that he named himself."
   },
-  "atAGlance": [
-    {
-      "label": "Serialised",
-      "value": "1891",
-      "note": "Weekly in The Graphic from July to December, cut and altered to suit a family illustrated paper."
-    },
-    {
-      "label": "First book edition",
-      "value": "1891",
-      "note": "Three volumes from James R. Osgood, McIlvaine and Co., with the material the serial had removed restored."
-    },
-    {
-      "label": "Subtitle",
-      "value": "A Pure Woman Faithfully Presented",
-      "note": "The subtitle is a verdict on Tess, and it is the reason so much of the first reviewing was about morality and so little about the novel."
-    },
-    {
-      "label": "Shape",
-      "value": "Seven phases",
-      "note": "Hardy names them (The Maiden, Maiden No More, The Rally, The Consequence, The Woman Pays, The Convert, Fulfilment), so that the table of contents reads as a sentence about a life."
-    }
-  ],
   "structure": [
     {
       "id": "phase-1",
@@ -184,11 +162,6 @@
       "summary": "Hardy gives her the intelligence of a National-school education and the position of an unskilled labourer, and the gap between the two is where the novel lives. She is judged by everyone she meets on evidence she was never allowed to present, and the subtitle exists because Hardy expected his readers to join in.",
       "clue": "She baptises her own child with a jug of water because the parson will not come, and names him for a word out of the Bible.",
       "firstAppearance": "Phase the First, Chapter II",
-      "traits": [
-        "conscientious to a fault",
-        "physically capable",
-        "silent at the wrong moments"
-      ],
       "relationships": [
         {
           "to": "alec-durberville",
@@ -244,11 +217,6 @@
       "summary": "His ancestry is bought and his power is entirely current: money, a gig, a poultry farm, a mother who cannot see. He converts, preaches, relapses and proposes with the same unembarrassed energy, and blames Tess for each turn.",
       "clue": "He drives too fast downhill, feeds a girl strawberries she has not asked for, and later preaches in a barn about the sin he committed.",
       "firstAppearance": "Phase the First, Chapter V",
-      "traits": [
-        "predatory",
-        "theatrical",
-        "impervious to refusal"
-      ],
       "relationships": [
         {
           "to": "tess-durbeyfield",
@@ -273,11 +241,6 @@
       "summary": "He has rejected his father’s church and kept every one of its judgements. The cruelty of the wedding night is something stranger than ordinary hypocrisy: he has truly convinced himself that the woman in front of him is a different person from the one he proposed to.",
       "clue": "He confesses forty-eight hours of dissipation, is forgiven in a sentence, and cannot manage the same for a confession he has just been given.",
       "firstAppearance": "Phase the First, Chapter II",
-      "traits": [
-        "principled in theory",
-        "conventional under pressure",
-        "slow to arrive"
-      ],
       "relationships": [
         {
           "to": "tess-durbeyfield",
@@ -301,11 +264,6 @@
       "summary": "She sends her daughter to claim kin in a clean dress and never explains why a clean dress might matter. Hardy is precise about the gap between them: the mother’s world is ballads and a fortune-telling book, the daughter’s is the Sixth Standard, and two hundred years lie between the two.",
       "clue": "She keeps a fortune-telling book in the thatch because she will not have it in the house at night.",
       "firstAppearance": "Phase the First, Chapter III",
-      "traits": [
-        "hopeful",
-        "improvident",
-        "fatalistic"
-      ],
       "relationships": [
         {
           "to": "tess-durbeyfield",
@@ -326,11 +284,6 @@
       "summary": "He is given a title and no money, and spends the rest of his short life being carried home. His death is the event that empties the cottage, because the lease was on his life: the novel’s cruellest joke is that the ancestry which ruined his daughter also fails to house her.",
       "clue": "Told on the road that he is descended from knights, he immediately orders a carriage to take him the rest of the way home.",
       "firstAppearance": "Phase the First, Chapter I",
-      "traits": [
-        "vain",
-        "unwell",
-        "easily intoxicated by a name"
-      ],
       "relationships": [
         {
           "to": "tess-durbeyfield",
@@ -351,11 +304,6 @@
       "summary": "She loves Angel, loses him without resentment, and is the one who finds Tess work when nobody else will. Her drinking at the starve-acre farm is treated as a fact about the work and no fault in her.",
       "clue": "The jolly-faced eldest of the three milkmaids who lie awake listening for a man’s footstep, and the one who later writes to warn of a danger she cannot name.",
       "firstAppearance": "Phase the Third, Chapter XVII",
-      "traits": [
-        "generous",
-        "sturdy",
-        "worn down by the work"
-      ],
       "relationships": [
         {
           "to": "tess-durbeyfield",
@@ -380,11 +328,6 @@
       "summary": "Asked by Angel to come to Brazil with him, she agrees, and then tells him the truth about how much Tess loved him, which ends the proposal. It is the most disinterested act in the book and nobody thanks her for it.",
       "clue": "She is offered a passage to Brazil and talks the man out of it by telling him what another woman would have done for him.",
       "firstAppearance": "Phase the Third, Chapter XVII",
-      "traits": [
-        "quiet",
-        "observant",
-        "unable to lie usefully"
-      ],
       "relationships": [
         {
           "to": "angel-clare",
@@ -412,11 +355,6 @@
       "summary": "She is barely characterised until the last pages, when Tess asks Angel to marry her, a request Hardy neither endorses nor refuses. She walks away from Wintoncester holding his hand, which is as close to a future as the book offers.",
       "clue": "Twelve and a half when the book opens, she ends it as a spiritualised image of her sister, walking away from Wintoncester hand in hand with her sister’s husband.",
       "firstAppearance": "Phase the First, Chapter III",
-      "traits": [
-        "young",
-        "silent",
-        "used as a substitute"
-      ],
       "relationships": [
         {
           "to": "tess-durbeyfield",
@@ -1135,98 +1073,5 @@
       "lon": -1.308,
       "note": "Wintoncester, the cathedral city whose gaol flies the black flag in the last paragraph."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "A tragedy of circumstance",
-      "summary": "The oldest reading treats Tess as a modern tragic heroine destroyed by forces larger than herself (heredity, chance, the decay of the rural economy), with the President of the Immortals as the novel’s own summary of the case.",
-      "counter": "It risks letting Alec and Angel off as instruments of fate, when the book is careful to show each of them choosing, at leisure, what to do next."
-    },
-    {
-      "position": "A social and economic novel",
-      "summary": "Criticism attentive to the work has read the book as a record of the late-Victorian agricultural labour market: the annual hirings, the loss of lifehold cottages, the arrival of steam threshing, and what all of that does to a woman without a settlement.",
-      "counter": "Read only this way, the marriage plot becomes an interruption, and the novel’s very deliberate arguments about purity and judgement go unanswered."
-    },
-    {
-      "position": "A novel about who is allowed to speak",
-      "summary": "Later criticism, particularly feminist criticism from the 1970s onwards, has focused on the narration itself: Tess is described, painted, watched and argued over, and the scene on which everything turns is narrated in her absence from the prose.",
-      "counter": "Hardy’s defenders point out that the same narrator is the only voice in the book that consistently argues on her side, and that the subtitle cost him a great deal."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Hardy use the seven phases to shape the reader’s judgement of Tess?",
-      "focus": "Structure as argument",
-      "plan": [
-        "Set out the titles in order and show that they form a sentence about a life.",
-        "Contrast The Maiden and Maiden No More: the second title is imposed by other people, and the phase opens with Tess walking home.",
-        "Use The Rally to show Hardy granting a recovery that the structure has already told us is temporary.",
-        "Read The Woman Pays as the book’s thesis statement, and check it against the paired confessions that come just before it.",
-        "Weigh Fulfilment: an ironic title, a religious one, or an accurate description of what Tess says on the stone at Stonehenge."
-      ]
-    },
-    {
-      "question": "‘Tess is destroyed by circumstance, not by character.’ Discuss.",
-      "focus": "Chance, agency and blame",
-      "plan": [
-        "List the accidents: the mail-cart, the letter under the carpet, the Clare brothers on the road, Angel’s return too late.",
-        "Show that each one is small, domestic and survivable by somebody with money, and that Hardy makes the point himself.",
-        "Set against this the decisions actually taken: Alec at Trantridge, Angel on the wedding night, Joan Durbeyfield sending her daughter to claim kin.",
-        "Examine the narrator’s own interventions, which never accept fate as an explanation while letting the characters reach for it.",
-        "Test the last paragraph: does the President of the Immortals settle the question or dodge it?"
-      ]
-    },
-    {
-      "question": "Examine Hardy’s presentation of work in the novel.",
-      "focus": "Labour, land and machinery",
-      "plan": [
-        "Start with the fact that Tess is always employed, and track the workplaces in order: Trantridge, the harvest field at Marlott, Talbothays, Flintcomb-Ash.",
-        "Show how the prose changes with the land, setting the Var valley’s abundance against the grey of the flint uplands, and how each is described through the body doing the work.",
-        "Read the threshing scene closely: the machine’s tempo, the engineer as a stranger, and the fact that Tess cannot leave the platform.",
-        "Connect labour to power: every one of Alec’s advantages is contractual, from the poultry farm to the offer to keep her family.",
-        "Conclude on Lady Day and the lost cottage, where a lifehold agreement does more damage than either man."
-      ]
-    },
-    {
-      "question": "How far does the novel earn its subtitle?",
-      "focus": "A Pure Woman Faithfully Presented",
-      "plan": [
-        "Establish what the subtitle claims and whom it is addressed to: the readers who will judge Tess.",
-        "Use the refused burial and the home baptism to show institutions and individuals reaching opposite verdicts on the same child.",
-        "Read the wedding night as a controlled experiment in the double standard, with the same offence confessed twice in an hour.",
-        "Consider what the defence costs: Tess is described far more often than she is heard, and the assault itself happens outside the prose.",
-        "Decide whether Hardy’s narrator persuades or merely insists, and whether the last sentence helps or weakens the case."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Hardy does not describe what happens in The Chase. Is that restraint, evasion, or a way of making the reader supply the verdict?",
-    "Angel confesses first and is forgiven in a sentence. What would the novel lose if that order were reversed?",
-    "The letter goes under the carpet as well as under the door. Does that small accident convince you, or does it feel arranged?",
-    "Alec’s conversion lasts a fortnight. Is the novel attacking religion, or attacking him?",
-    "Tess asks Angel to marry her sister. What is being offered, and what is being taken away?"
-  ],
-  "related": [
-    {
-      "href": "/books/jane-eyre/",
-      "why": "Another dependent woman whose employer’s household turns out to hold a prior claim, and who walks out of it onto the moor with nothing."
-    },
-    {
-      "href": "/books/the-scarlet-letter/",
-      "why": "A community’s verdict on an unmarried mother, and a child named for the circumstances of her birth."
-    },
-    {
-      "href": "/books/the-awakening/",
-      "why": "Published eight years later, and equally interested in what a woman is permitted to want once the marriage is in place."
-    },
-    {
-      "href": "/books/great-expectations/",
-      "why": "A life reorganised around a fantasy of gentility, and a fortune whose real source is nothing like the imagined one."
-    },
-    {
-      "href": "/books/wuthering-heights/",
-      "why": "Landscape as an agent, not a setting, and a plot in which class humiliation is passed down a generation."
-    }
-  ],
-  "videos": []
+  ]
 }
