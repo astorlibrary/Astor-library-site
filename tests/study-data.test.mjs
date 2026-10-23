@@ -166,6 +166,13 @@ test('every quotation in a guide shows its words, speaker, place and a note', ()
   }
 });
 
+test('verse quotations in a play guide are set as lines', () => {
+  const html = fs.readFileSync(path.join(root, 'guides', 'macbeth', 'quotations', 'index.html'), 'utf8');
+  assert.match(html, /Fair is foul, and foul is fair:<br>Hover through the fog and filthy air\./);
+  const themes = fs.readFileSync(path.join(root, 'guides', 'macbeth', 'themes', 'index.html'), 'utf8');
+  assert.match(themes, /<blockquote class="guide-example"><p>[^<]{10,}/, 'theme examples show their words');
+});
+
 test('critical views name a critic, a work and a year', () => {
   for (const book of books) {
     for (const view of book.criticalViews || []) {

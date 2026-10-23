@@ -97,19 +97,26 @@ function contentsNav(book, current) {
     '<ol>' + items + '</ol></nav>';
 }
 
+// Verse quotations mark their line ends with " / "; in a play or a poem the
+// guide sets them as lines.
+function quoteText(book, text) {
+  const escaped = escapeHtml(text);
+  return ['play', 'poem'].includes(book.form) ? escaped.replace(/ \/ /g, '<br>') : escaped;
+}
+
 function quoteBlock(book, quotation, { explain = true, id = true } = {}) {
   const where = [quotation.speaker, quotation.reference].filter(Boolean).join(', ');
   const note = [quotation.context, quotation.analysis].filter(Boolean).map(text => '<p>' + escapeHtml(text) + '</p>').join('');
   return '<figure class="guide-quote"' + (id ? ' id="astor-quote-' + escapeHtml(quotation.id) + '" data-quote-id="' + escapeHtml(quotation.id) + '"' : '') + '>' +
-    '<blockquote><p>' + escapeHtml(quotation.text) + '</p></blockquote>' +
+    '<blockquote><p>' + quoteText(book, quotation.text) + '</p></blockquote>' +
     '<figcaption>' + escapeHtml(where) + '</figcaption>' +
     (explain && note ? '<div class="guide-quote-note">' + note + '</div>' : '') +
     '</figure>';
 }
 
-function shortQuote(quotation) {
+function shortQuote(book, quotation) {
   const where = [quotation.speaker, quotation.reference].filter(Boolean).join(', ');
-  return '<blockquote class="guide-example"><p>' + escapeHtml(quotation.text) + '</p><footer>' + escapeHtml(where) + '</footer></blockquote>';
+  return '<blockquote class="guide-example"><p>' + quoteText(book, quotation.text) + '</p><footer>' + escapeHtml(where) + '</footer></blockquote>';
 }
 
 function whatHappens(book) {
@@ -149,7 +156,7 @@ function themes(book) {
       '<h2>' + escapeHtml(theme.name) + '</h2>' +
       '<p>' + escapeHtml(theme.summary) + '</p>' +
       (theme.development ? '<p>' + escapeHtml(theme.development) + '</p>' : '') +
-      examples.map(shortQuote).join('') +
+      examples.map(example => shortQuote(book, example)).join('') +
       '</section>';
   }).join('');
 }
@@ -184,7 +191,7 @@ function formAndLanguage(book) {
       '<h2>' + escapeHtml(technique.name) + '</h2>' +
       '<p class="guide-definition">' + escapeHtml(technique.definition) + '</p>' +
       '<p>' + escapeHtml(technique.inThisBook) + '</p>' +
-      (example ? shortQuote(example) : '') +
+      (example ? shortQuote(book, example) : '') +
       '</section>';
   }).join('');
 }
