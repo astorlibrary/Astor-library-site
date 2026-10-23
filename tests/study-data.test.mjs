@@ -7,7 +7,7 @@ import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const { loadBooks, validateBook, validateAll } = require('../scripts/book-data.js');
 const { missingCanonicalNames, loadVocabulary } = require('../scripts/rebuild-vocabulary.js');
-const { renderToolkit } = require('../scripts/study-toolkit.js');
+const { SECTIONS } = require('../scripts/rebuild-guides.js');
 
 const root = process.cwd();
 const books = loadBooks();
@@ -139,22 +139,44 @@ test('the vocabulary only names identifiers the data actually uses', () => {
   }
 });
 
-test('the study toolkit renders one unique id per section', () => {
+test('every book has a study guide with the same six sections and no repeated ids', () => {
+  assert.deepEqual(SECTIONS.map(section => section.slug), ['what-happens', 'characters', 'themes', 'quotations', 'form-and-language', 'context']);
   for (const book of books) {
-    const html = renderToolkit(book, { titleFor: () => null });
-    const ids = [...html.matchAll(/\sid="([^"]+)"/g)].map(match => match[1]);
-    assert.equal(new Set(ids).size, ids.length, book.slug + ' repeats an id in its toolkit');
-    assert.ok(html.includes('id="astor-quotations"'), book.slug + ' has no quotations panel');
-    assert.ok(html.includes('data-astor-book="' + book.slug + '"'));
+    const pages = ['', ...SECTIONS.map(section => section.slug + '/')];
+    for (const page of pages) {
+      const file = path.join(root, 'guides', book.slug, page, 'index.html');
+      assert.ok(fs.existsSync(file), book.slug + ' is missing guides/' + book.slug + '/' + page);
+      const html = fs.readFileSync(file, 'utf8');
+      const ids = [...html.matchAll(/\sid="([^"]+)"/g)].map(match => match[1]);
+      assert.equal(new Set(ids).size, ids.length, book.slug + '/' + page + ' repeats an id');
+      assert.doesNotMatch(html, /essay question|youtube|vimeo|<iframe/i, book.slug + '/' + page + ' still has essay questions or video');
+    }
   }
 });
 
-test('the study toolkit escapes the text it is given', () => {
-  const book = JSON.parse(JSON.stringify(books[0]));
-  book.title = 'Trouble <script>alert(1)</script>';
-  const html = renderToolkit(book, { titleFor: () => null });
-  assert.ok(!html.includes('<script>alert(1)</script>'));
-  assert.ok(html.includes('&lt;script&gt;'));
+test('every quotation in a guide shows its words, speaker, place and a note', () => {
+  for (const book of books) {
+    const html = fs.readFileSync(path.join(root, 'guides', book.slug, 'quotations', 'index.html'), 'utf8');
+    const figures = [...html.matchAll(/<figure class="guide-quote"[\s\S]*?<\/figure>/g)].map(match => match[0]);
+    assert.equal(figures.length, book.quotations.length, book.slug + ' does not show every key quotation');
+    for (const figure of figures) {
+      assert.match(figure, /<blockquote/, book.slug + ' has a quotation without its words');
+      assert.match(figure, /<figcaption/, book.slug + ' has a quotation without speaker and place');
+    }
+  }
+});
+
+test('critical views name a critic, a work and a year', () => {
+  for (const book of books) {
+    for (const view of book.criticalViews || []) {
+      assert.ok(view.critic && view.work && view.year && view.summary, book.slug + ' has an unattributed critical view');
+      assert.doesNotMatch(view.critic, /^(critics|readers|scholars|some)\b/i);
+    }
+  }
+  for (const slug of ['macbeth', 'hamlet']) {
+    const html = fs.readFileSync(path.join(root, 'guides', slug, 'context', 'index.html'), 'utf8');
+    assert.match(html, /<h2 id="guide-criticism-title">Critics<\/h2>/, slug + ' has no named critics');
+  }
 });
 
 test('no record names an exam board', () => {
@@ -166,11 +188,10 @@ test('no record names an exam board', () => {
   }
 });
 
-test('no record ships an unverified video', () => {
+test('no record carries the retired study toolkit fields', () => {
   for (const book of books) {
-    for (const video of book.videos || []) {
-      assert.ok(['youtube-nocookie', 'vimeo'].includes(video.provider), book.slug + ' has an unsupported video provider');
-      assert.ok(video.url.startsWith('https://'), book.slug + ' has a video without an https address');
+    for (const field of ['videos', 'essayQuestions', 'discussionQuestions', 'related', 'atAGlance']) {
+      assert.equal(book[field], undefined, book.slug + ' still has ' + field);
     }
   }
 });

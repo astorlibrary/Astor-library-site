@@ -189,6 +189,11 @@ function formAndLanguage(book) {
   }).join('');
 }
 
+// Titles of works inside a summary are marked *thus* and set in italics.
+function withTitles(text) {
+  return escapeHtml(text).replace(/\*([^*]+)\*/g, '<cite>$1</cite>');
+}
+
 function context(book) {
   const parts = [];
   const timeline = (book.timeline || []).slice().sort((a, b) => a.year - b.year);
@@ -208,7 +213,7 @@ function context(book) {
       book.criticalViews.map(view =>
         '<div class="guide-critic"><h3>' + escapeHtml(view.critic) + '</h3>' +
         '<p class="guide-critic-work">' + (view.essay ? '“' + escapeHtml(view.essay) + '”, in ' : '') + '<cite>' + escapeHtml(view.work) + '</cite> (' + escapeHtml(view.year) + ')</p>' +
-        '<p>' + escapeHtml(view.summary) + '</p></div>'
+        '<p>' + withTitles(view.summary) + '</p></div>'
       ).join('') +
       '<p class="guide-small">The summaries are our own. Short quotations are from the works named or from the ' + (['play', 'poem'].includes(book.form) ? book.form : 'book') + '.</p>' +
       '</section>');

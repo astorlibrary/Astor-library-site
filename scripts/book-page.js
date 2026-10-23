@@ -379,7 +379,7 @@ function restructureBookPage(html, ctx) {
     extras.push('<p><span>In the seasonal library</span> ' + seasons.map(season => '<a href="' + escapeHtml(season.href) + '">' + escapeHtml(season.title) + '</a>').join(', ') + '</p>');
   }
   const foot = (extras.length ? '<aside class="book-also" aria-label="Elsewhere on Astor Library">' + extras.join('') + '</aside>' : '') +
-    '<p class="book-credit">Edited by Haydn Wood. Dates and publication details are checked against the sources listed on this page. <a href="/about/#editor">About the editor</a></p>';
+    '<p class="book-credit">Edited by Haydn Wood. Dates and publication details are checked against the sources listed on this page, as described in the <a href="/editorial/">editorial standards</a>.</p>';
   const endNav = '<nav class="book-end-nav" aria-label="End of page">' +
     '<a href="#main-content">Back to the top</a>' +
     (book.authorHref ? '<a href="' + escapeHtml(book.authorHref) + '">More by ' + escapeHtml(book.author) + '</a>' : '') +

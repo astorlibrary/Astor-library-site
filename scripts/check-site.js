@@ -248,8 +248,10 @@ for (const file of htmlFiles) {
     }
   }
 
+  // The build replaces every header with the shared one (checked in dist/
+  // below), so a source page needs only a way back to the books.
   if (html.includes('class="site-header"')) {
-    for (const href of ['/explore/', '/library/', '/study/', '/resources/']) {
+    for (const href of ['/library/']) {
       if (!html.includes('href="' + href + '"')) failures.push(fileName + ' is missing ' + href + ' from its shared navigation');
     }
   }
@@ -258,7 +260,8 @@ for (const file of htmlFiles) {
   for (const phrase of editorialPhrases) {
     if (text.includes(phrase)) failures.push(fileName + ' contains build wording: "' + phrase + '"');
   }
-  failures.push(...stockPhraseFailures(fileName, text));
+  // Quotations are the authors' own words; only Astor's prose is held to the list.
+  failures.push(...stockPhraseFailures(fileName, visibleText(html.replace(/<blockquote\b[\s\S]*?<\/blockquote>/gi, ' '))));
 }
 
 // One catalogue total everywhere: a stale "all 97 books" on one page and
@@ -279,9 +282,13 @@ if (!homepage.includes('/assets/home.css')) failures.push('The homepage is missi
 if (!homepage.includes('/assets/navigation.css')) failures.push('The homepage is missing the shared navigation stylesheet');
 if (!homepage.includes('class="site-header astor-global-header')) failures.push('The homepage is missing the shared header');
 if (!/<footer\b[^>]*class="[^"]*\bastor-global-footer\b/i.test(homepage)) failures.push('The homepage is missing the grouped footer');
-for (const className of ['home-counts-line', 'home-intro-covers', 'home-book-list', 'home-sample-grid', 'home-study-grid', 'home-account-note', 'home-support']) {
+for (const className of ['home-intro-covers', 'home-free-list']) {
   if (!homepageMain.includes('class="' + className + '"')) failures.push('The homepage is missing its ' + className + ' section');
 }
+// No screenshots of inside pages and no promotional statistics: the covers
+// show the books, and the catalogue totals belong on the catalogue pages.
+if (/\/assets\/samples\//.test(homepageMain)) failures.push('The homepage still shows sample pages');
+if (/class="home-counts-line"|class="home-stats/.test(homepageMain)) failures.push('The homepage still has a line of catalogue statistics');
 // The homepage opens with what Astor is (the only h1) and a row of covers.
 if (countMatches(homepageMain, /<h1\b/g) !== 1 || !/<h1 id="home-title">[^<]+<\/h1>/.test(homepageMain)) failures.push('The homepage must open with its own h1 saying what Astor publishes');
 if (countMatches(homepageMain.match(/<div class="home-intro-covers"[\s\S]*?<\/div>/)?.[0] || '', /<img\b/g) < 4) failures.push('The homepage introduction must show real covers');
@@ -352,25 +359,17 @@ if (/class="seasonal-feature"|class="academic-feature"/i.test(homepageMain)) fai
   if (built && (!built.includes('data-season-switch') || !built.includes('/assets/seasonal-theme.css'))) failures.push('The built homepage is missing the seasonal switch or its stylesheet');
 }
 if (!/^\.astor-season-ribbon,\s*\.astor-season-badge \{\s*display: none;/m.test(fs.readFileSync(path.join(root, 'assets', 'seasonal-theme.css'), 'utf8'))) failures.push('The seasonal ribbon and badges must be hidden out of season');
-for (const total of [
-  sourceBookFiles.length + ' complete novels, plays and poems',
-  'All ' + sourceBookFiles.length + ' books &rarr;',
-  studyEditionCount + ' editions with summaries',
-  resourceData.length + ' guides and ' + closeReadingCount + ' annotated passages'
-]) {
-  if (!homepageMain.includes(total)) failures.push('The homepage is missing its current catalogue total: ' + total);
-}
 const homepageSections = Array.from(homepageMain.matchAll(/^  <section class="([^"]+)"/gm), match => match[1]);
-if (homepageSections.length !== 6 || homepageSections[0] !== 'home-intro' || !homepageSections.some(name => name.startsWith('home-season '))) failures.push('The homepage must contain six top-level sections: the introduction first, then the season, the books, the sample pages, the free material and support');
-if (!homepageSections.includes('home-wrap home-study')) failures.push('The homepage is missing its study and revision section');
-for (const sample of ['/assets/samples/macbeth-sample.jpg', '/assets/samples/othello-study-sample.jpg', '/assets/samples/rime-of-the-ancient-mariner-sample.jpg', '/assets/samples/the-odyssey-sample.jpg']) {
-  if (!homepageMain.includes('src="' + sample + '"')) failures.push('The homepage is missing edition sample ' + sample);
-}
+if (homepageSections.length !== 3 || homepageSections[0] !== 'home-intro' || !homepageSections[1]?.startsWith('home-season ') || homepageSections[2] !== 'home-wrap home-free') failures.push('The homepage must contain three top-level sections: the introduction, the season and the free material');
 if (!homepage.includes('mailto:support@astorlibrary.com')) failures.push('The homepage is missing the support email');
 for (const href of ['/library/', '/shakespeare/', '/resources/', '/study/', '/passage-room/', '/authors/', '/subjects/', '/reading-routes/', '/account/', '/privacy/']) {
   if (!homepage.includes('href="' + href + '"')) failures.push('The homepage is missing ' + href);
 }
-if (countMatches(homepage, /class="astor-browse-menu astor-menu/g) !== 3) failures.push('The homepage header must have the Books, Study and Explore menus');
+{
+  const builtHome = path.join(root, 'dist', 'index.html');
+  const built = fs.existsSync(builtHome) ? fs.readFileSync(builtHome, 'utf8') : '';
+  if (built && countMatches(built, /class="astor-browse-menu astor-menu/g) !== 2) failures.push('The built header must have the Books and Explore menus');
+}
 if (!homepage.includes('data-auth-link')) failures.push('The homepage is missing its account-aware sign-in link');
 if (homepage.includes('class="home-reading-desk"') || homepage.includes('class="home-library-doors"')) failures.push('The homepage still contains an older duplicate section');
 
@@ -513,8 +512,10 @@ if (!fs.existsSync(editorialFile)) {
   failures.push('The site is missing its editorial standards page');
 } else {
   const editorial = fs.readFileSync(editorialFile, 'utf8');
-  if (!editorial.includes('How the pages are made and checked.')) failures.push('The editorial standards page is missing its opening statement');
-  if (countMatches(editorial, /class="editorial-principles"/g) !== 1) failures.push('The editorial standards page is missing its principles');
+  if (!/<h1>Editorial standards<\/h1>/.test(editorial)) failures.push('The editorial standards page is missing its title');
+  for (const id of ['ed-quotations', 'ed-facts', 'ed-criticism', 'ed-summaries', 'ed-images']) {
+    if (!editorial.includes('id="' + id + '"')) failures.push('The editorial standards page is missing its section #' + id);
+  }
 }
 
 const authorsHub = fs.readFileSync(path.join(root, 'authors', 'index.html'), 'utf8');
@@ -767,8 +768,8 @@ for (const book of editionUpdateData) {
       if (!html.includes('href="' + escapeHtml(source.url) + '"')) failures.push(href + ' does not render source ' + source.url);
     }
     if (countMatches(html, /class="prod-card prose-card"/g) !== 0) failures.push(href + ' still contains the retired generic reading cards');
-  } else if (countMatches(html, /class="prod-card prose-card"/g) !== 2) {
-    failures.push(href + ' must contain two substantive reading sections');
+  } else if (countMatches(html, /class="prod-card prose-card"/g) !== 1) {
+    failures.push(href + ' must contain its account of the work');
   }
 
   const requiredClasses = ['page-contents', 'quick-facts', 'astor-context-grid', 'astor-question-grid', 'book-end-nav'];
@@ -1204,10 +1205,13 @@ if (fs.existsSync(distDir)) {
       const isBookListing = fileName === 'library/index.html' || fileName === 'explore/index.html' || collectionFiles.includes(fileName) || fileName === hardbackCollectionFile;
       const isOptimizedListing = isBookListing || fileName === 'resources/index.html' || fileName === 'study/index.html' || specialistCollectionFiles.includes(fileName);
       if (isOptimizedListing) {
+        // With the banners gone, the first cover is the largest image above the
+        // fold and may load eagerly; the rest wait.
+        const firstListingImage = mainImages.find(tag => !/\bdata-no-priority\b/.test(tag));
         for (const card of html.matchAll(/<(article|a)\b[^>]*class="[^"]*\b(?:edition-card|catalog-card|explore-card-(?:book|resource|study)|resource-card|study-card|specialist-volume-card|hardback-card)\b[^"]*"[^>]*>[\s\S]*?<\/\1>/gi)) {
           const images = Array.from(card[0].matchAll(/<img\b[^>]*>/gi), match => match[0]);
           for (const image of images) {
-            if (isBookListing && !/\bloading="lazy"/i.test(image)) failures.push('dist/' + fileName + ' eagerly loads a catalogue cover');
+            if (isBookListing && !/\bloading="lazy"/i.test(image) && image !== firstListingImage) failures.push('dist/' + fileName + ' eagerly loads a catalogue cover');
             if (!/\bsrc="\/assets\/book-thumbs\//i.test(image)) failures.push('dist/' + fileName + ' is not using a light catalogue image');
           }
         }
@@ -1294,12 +1298,12 @@ if (fs.existsSync(distDir)) {
       if (!html.includes('class="book-end-nav"')) {
         failures.push('dist/' + fileName + ' is missing its end-of-page choices');
       }
-      if (!html.includes('class="astor-page-credit"') || !html.includes('href="/editorial/"')) {
+      if (!html.includes('class="book-credit"') || !html.includes('href="/editorial/"')) {
         failures.push('dist/' + fileName + ' is missing its editorial credit');
       }
       const bookHref = '/' + fileName.replace(/index\.html$/, '');
       const relatedPassages = (discoveryIndex?.passages || []).filter(passage => passage.relatedBooks?.includes(bookHref));
-      if (relatedPassages.length && !html.includes('class="book-passage-shelf"')) {
+      if (relatedPassages.length && !html.includes('class="book-also"')) {
         failures.push('dist/' + fileName + ' is missing its route into the Passage Room');
       }
       for (const passage of relatedPassages) {
@@ -1607,10 +1611,13 @@ const generatedPages = [
   'play', 'play/who-said-it', 'play/fill-the-line', 'play/theme-match',
   'play/technique-spotter', 'play/character-identification', 'play/order-the-plot', 'play/mixed-round',
   'play/which-book', 'play/context-sprint', 'play/opening-lines',
-  'play/flashcards', 'play/essay-forge', 'play/defend-the-reading',
+  'play/flashcards',
   'today', 'explore/quotations', 'explore/timeline', 'explore/characters', 'explore/themes',
   'explore/techniques', 'explore/map', 'explore/compare', 'my-library', 'for-teachers'
 ];
+for (const page of ['play/essay-forge', 'play/defend-the-reading']) {
+  if (fs.existsSync(path.join(root, page, 'index.html'))) failures.push('The retired page /' + page + '/ has come back');
+}
 for (const page of generatedPages) {
   const file = path.join(root, page, 'index.html');
   if (!fs.existsSync(file)) { failures.push('The generated page /' + page + '/ is missing. Run node scripts/rebuild-study-pages.js'); continue; }
