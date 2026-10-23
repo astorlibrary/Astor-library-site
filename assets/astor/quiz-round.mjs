@@ -855,9 +855,9 @@ const NUMBER_WORDS = ['none', 'one', 'two', 'three', 'four', 'five', 'six', 'sev
 const inWords = number => NUMBER_WORDS[number] || String(number);
 const capitalise = text => String(text).replace(/^./, character => character.toUpperCase());
 
-// The top of every completion screen: up to three stars, the score in large
-// type, a small mark for each question (filled or empty, never red), the
-// headline and one line. `chips` are a few short facts set as one quiet line.
+// The top of every completion screen: the score in large type, a small mark
+// for each question (filled or empty, never red), the headline and one line.
+// `chips` are a few short facts set as one quiet line.
 export function completion({ score, total, kicker, title, chips = [], sub = '', marks = null }) {
   const drawn = hasMotifs();
   const markRow = marks && marks.length ? el('ol', { class: 'rx-results-marks' + (drawn ? ' is-motifs' : ''), 'aria-hidden': 'true', style: '--n:' + marks.length },

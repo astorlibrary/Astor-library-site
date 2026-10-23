@@ -11,6 +11,11 @@ const head = document.querySelector('#astor-today-head');
 const mount = document.querySelector('#astor-daily-game');
 const LETTERS = ['A', 'B', 'C', 'D'];
 
+// Titles of works are marked *thus* in the bank and set in italics.
+const plain = text => String(text).replace(/\*/g, '');
+const rich = text => String(text).split(/(\*[^*]+\*)/).filter(Boolean)
+  .map(part => (/^\*[^*]+\*$/.test(part) ? el('em', { text: part.slice(1, -1) }) : part));
+
 if (mount) start();
 
 async function start() {
@@ -55,24 +60,24 @@ function play(questions, day) {
     const question = questions[index];
     const card = el('section', { class: 'today-card', 'aria-labelledby': 'today-q' });
     const count = el('p', { class: 'today-count', text: 'Question ' + (index + 1) + ' of ' + questions.length });
-    const prompt = el('h2', { class: 'today-question', id: 'today-q', tabindex: '-1', text: question.question });
+    const prompt = el('h2', { class: 'today-question', id: 'today-q', tabindex: '-1' }, rich(question.question));
     const options = el('ol', { class: 'today-options' });
     const buttons = question.options.map((option, position) => {
       const button = el('button', { type: 'button', class: 'today-option' }, [
         el('span', { class: 'today-letter', 'aria-hidden': 'true', text: LETTERS[position] }),
-        el('span', { class: 'today-option-text', text: option })
+        el('span', { class: 'today-option-text' }, rich(option))
       ]);
       button.addEventListener('click', () => answer(position));
       options.append(el('li', {}, [button]));
       return button;
     });
-    const hintText = el('p', { class: 'today-hint', hidden: true, text: question.hint });
+    const hintText = el('p', { class: 'today-hint', hidden: true }, rich(question.hint));
     const hintButton = el('button', { type: 'button', class: 'today-hint-button', text: 'Show a hint' });
     hintButton.addEventListener('click', () => {
       hintText.hidden = false;
       hintButton.hidden = true;
       hinted[index] = true;
-      announce(live, 'Hint: ' + question.hint);
+      announce(live, 'Hint: ' + plain(question.hint));
     });
     const feedback = el('div', { class: 'today-feedback', hidden: true });
     card.append(count, prompt, options, el('div', { class: 'today-hint-row' }, [hintButton, hintText]), feedback);
@@ -94,14 +99,14 @@ function play(questions, day) {
       feedback.append(
         el('p', { class: 'today-verdict' }, right
           ? [el('b', { text: 'Right.' })]
-          : [el('b', { text: 'Not quite.' }), ' The answer is ' + question.options[question.answer] + '.']),
-        el('p', { class: 'today-explanation', text: question.explanation }),
-        question.link ? el('p', { class: 'today-more' }, [el('a', { href: question.link.href, text: question.link.label })]) : null
+          : [el('b', { text: 'Not quite.' }), ' The answer is ', ...rich(question.options[question.answer]), '.']),
+        el('p', { class: 'today-explanation' }, rich(question.explanation)),
+        question.link ? el('p', { class: 'today-more' }, [el('a', { href: question.link.href, text: plain(question.link.label) })]) : null
       );
       const next = el('button', { type: 'button', class: 'today-next', text: index + 1 < questions.length ? 'Next question' : 'See how you did' });
       next.addEventListener('click', () => { index += 1; show(); });
       feedback.append(next);
-      announce(live, (right ? 'Right. ' : 'Not quite. The answer is ' + question.options[question.answer] + '. ') + question.explanation);
+      announce(live, (right ? 'Right. ' : 'Not quite. The answer is ' + plain(question.options[question.answer]) + '. ') + plain(question.explanation));
       next.focus({ preventScroll: true });
       feedback.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
     }
@@ -141,12 +146,13 @@ function renderEnd(questions, result, day) {
     const pick = result.picks?.[position];
     const right = pick === question.answer;
     review.append(el('li', { class: right ? 'is-right' : 'is-wrong' }, [
-      el('p', { class: 'today-review-question', text: question.question }),
+      el('p', { class: 'today-review-question' }, rich(question.question)),
       el('p', { class: 'today-review-answer' }, [
         el('span', { class: 'today-mark', text: right ? 'Right' : 'Missed' }),
-        ' ' + question.options[question.answer] + (right ? '' : (pick !== undefined && pick !== null ? ' (you chose ' + question.options[pick] + ')' : ''))
+        ' ', ...rich(question.options[question.answer]),
+        ...(right || pick === undefined || pick === null ? [] : [' (you chose ', ...rich(question.options[pick]), ')'])
       ]),
-      el('p', { class: 'today-explanation', text: question.explanation })
+      el('p', { class: 'today-explanation' }, rich(question.explanation))
     ]));
   });
   const shareText = 'Astor Library, Today, ' + day + '\n' + shareGrid(result.marks || []) + ' ' + result.score + '/' + total + '\nhttps://astorlibrary.com/today/';

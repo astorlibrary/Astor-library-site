@@ -9,7 +9,7 @@ import { planSummary, nextSitting, readableDay } from './plan.mjs';
 import { loadIndex } from './data.mjs';
 import {
   isRemembering, savedBooks, recentlyViewed, allProgress, commonplace,
-  annotate, toggleCommonplace, scores, streak, exportAll, forget, snapshot, today,
+  annotate, toggleCommonplace, scores, exportAll, forget, snapshot, today,
   allPlans, removePlan
 } from './store.mjs';
 
@@ -55,7 +55,6 @@ async function start() {
 
 function renderDash(index) {
   clear(mounts.dash);
-  const run = streak();
   const progress = allProgress();
   const readStages = Object.values(progress).reduce((total, entry) => total + entry.stages.length, 0);
   const played = Object.values(scores()).reduce((total, entry) => total + entry.played, 0);
@@ -70,7 +69,6 @@ function renderDash(index) {
   const tiles = [
     ['Saved books', String(savedBooks().length), 'on your shelf.'],
     ['Sections read', String(readStages), 'across ' + Object.keys(progress).length + ' ' + (Object.keys(progress).length === 1 ? 'title' : 'titles') + '.'],
-    ['Days in a row', run.live && run.current ? String(run.current) : '0', run.live && run.current ? 'Your longest run is ' + run.longest + '.' : 'Do one quiz today to start a run.'],
     ['Quotations kept', String(commonplace().length), 'in your commonplace book.'],
     ['Quizzes done', String(played), played ? 'so far.' : 'Try one from Revise.'],
     ['Flashcards to review', String(due), !studied.length ? 'You haven’t started a deck yet.' : due ? 'of the ' + studied.length + ' cards you have studied.' : 'Nothing to review today.']

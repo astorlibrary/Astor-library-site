@@ -202,7 +202,7 @@ function sitting(book, meta, mode, only = null) {
     page.append(el('div', { class: 'rx-progress' }, [
       el('p', { class: 'rx-progress-count' }, [el('span', { class: 'rx-visually-hidden', text: 'Card ' }), el('b', { text: String(position + 1) }), el('span', { text: ' of ' + queue.length })]),
       track,
-      el('p', { class: 'rx-score', 'aria-label': knew + ' known so far' }, [el('span', { class: 'rx-score-star', 'aria-hidden': 'true', html: '<svg viewBox="0 0 24 24"><path d="M12 2.8l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 17l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6Z"/></svg>' }), el('b', { text: String(knew) })])
+      el('p', { class: 'rx-score' }, [el('b', { text: String(knew) }), ' known'])
     ]));
     if (anyway && position === 0 && !turned) page.append(el('p', { class: 'rx-deck-note', text: 'Nothing due today — here are lines you’ve met before.' }));
 
