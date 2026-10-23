@@ -18,7 +18,7 @@
   "difficulty": 3,
   "lengthNote": "Around 2,100 lines, the shortest of the major tragedies",
   "openingLine": "When shall we three meet again In thunder, lightning, or in rain?",
-  "summary": "Three witches greet a victorious general with a prophecy that he will be king. Within a day he has murdered the king who trusts him, and the rest of the play watches him kill to keep a crown that gives him nothing. It is Shakespeare’s fastest tragedy, and the speed is the argument: Macbeth is never allowed the time to become a different kind of man.",
+  "summary": "Three witches greet a victorious general with a prophecy that he will be king. Within a day he has murdered the king who trusts him, and the rest of the play watches him kill to keep a crown that gives him nothing. It is the shortest of Shakespeare’s tragedies and moves quickly: Macbeth is never given time to reconsider.",
   "referenceStyle": "act, scene and line of the Astor Library Edition",
   "sourceText": {
     "label": "Globe/Moby text of Macbeth",
@@ -212,7 +212,7 @@
       "id": "macbeth",
       "name": "Macbeth",
       "role": "Thane of Glamis, then Cawdor, then king of Scotland",
-      "summary": "A soldier praised for a savagery the state approves of, who discovers that the same nerve is unbearable when he uses it for himself. He imagines every murder in full before he commits it and feels every consequence afterwards, which is why the play is a tragedy and not a case study.",
+      "summary": "A soldier praised for a savagery the state approves of, who discovers that the same nerve is unbearable when he uses it for himself. He imagines every murder in full before he commits it and feels every consequence afterwards.",
       "clue": "A soldier whose imagination is his conscience: he sees the dagger before he uses it and hears the voice that will not let him sleep afterwards.",
       "firstAppearance": "1.3",
       "relationships": [
@@ -274,7 +274,7 @@
       "id": "banquo",
       "name": "Banquo",
       "role": "A general, father of Fleance",
-      "summary": "He hears the same prophecy and does nothing with it, which makes him the play’s control experiment. His silence after Duncan’s death is not innocence either: he suspects Macbeth of foul play and keeps quiet because the prophecy also promised something to him.",
+      "summary": "He hears the same prophecy and does nothing with it, which sets him against Macbeth from the start. His silence after Duncan’s death is not innocence either: he suspects Macbeth of foul play and keeps quiet because the prophecy also promised something to him.",
       "clue": "Told that he will father kings though he will not be one, he is murdered on the road at dusk and comes back to sit in the king’s place at a feast.",
       "firstAppearance": "1.3",
       "relationships": [
@@ -397,7 +397,7 @@
       "id": "lady-macduff",
       "name": "Lady Macduff",
       "role": "Macduff’s wife",
-      "summary": "She gets one scene, and uses it to say the thing nobody else will: that a man who leaves his wife and children unguarded has behaved like a traitor to them, whatever his politics. She is killed on stage, which is rare in Shakespeare and deliberate here.",
+      "summary": "She gets one scene, and uses it to say the thing nobody else will: that a man who leaves his wife and children unguarded has behaved like a traitor to them, whatever his politics. Her son is killed in front of her, and she is chased off the stage crying ‘Murder!’.",
       "clue": "She calls her absent husband a traitor to his family, tells her son she can buy twenty husbands at any market, and is murdered in her own castle.",
       "firstAppearance": "4.2",
       "relationships": [
@@ -415,7 +415,7 @@
       "id": "fleance",
       "name": "Fleance",
       "role": "Banquo’s son",
-      "summary": "He speaks two lines and then escapes into the dark, and the whole second half of the play runs on that escape. James VI and I’s line claimed descent from Banquo, so Fleance running offstage is also the future sitting in the audience.",
+      "summary": "He speaks only a few lines and then escapes into the dark, and the second half of the play runs on that escape. James VI and I was held to be descended from Banquo through Fleance.",
       "clue": "He tells his father the moon is down, carries the torch on the road at dusk, and escapes into the dark when his father is killed.",
       "firstAppearance": "2.1",
       "relationships": [
@@ -441,7 +441,7 @@
     {
       "id": "guilt",
       "name": "Guilt and conscience",
-      "summary": "Guilt in this play is physical. It stops a man saying ‘Amen’, it will not wash off, it takes a seat at dinner, and it eventually walks the corridors at night with a candle. Nobody is punished for the murders by the state; they are punished by their own nervous systems.",
+      "summary": "Guilt in this play is physical. It stops a man saying ‘Amen’, it will not wash off, it takes a seat at dinner, and it eventually walks the corridors at night with a candle. Nobody is punished for the murders by the state; they are punished by their own minds and bodies.",
       "development": "Macbeth’s imagination runs ahead of his conscience in Acts I and II, and his wife’s runs behind hers: she is unshaken at the murder and destroyed by it in Act V."
     },
     {
@@ -454,12 +454,12 @@
       "id": "fate",
       "name": "Fate, prophecy and equivocation",
       "summary": "Every prophecy in the play comes true, and the ones Macbeth relies on mislead him. The apparitions promise safety in terms that are technically exact and practically worthless, which is the same trick the Jesuit doctrine of equivocation was accused of in the Gunpowder Plot trials of 1606.",
-      "development": "First a prediction, then a riddle, then a trapdoor: Birnam wood does move, and the man not of woman born does exist."
+      "development": "The prophecies move from prediction to riddle: Birnam wood does move, and the man not of woman born does exist."
     },
     {
       "id": "appearance",
       "name": "Appearance and reality",
-      "summary": "The play opens by declaring that fair is foul, and then spends five acts proving it operationally: a welcoming castle, a loyal host, an innocent flower, a safe prophecy. Reading the play is largely a matter of watching characters fail to read each other.",
+      "summary": "The play opens by declaring that fair is foul, and then shows it again and again: a welcoming castle, a loyal host, an innocent flower, a safe prophecy. Characters repeatedly fail to read each other.",
       "development": "Duncan cannot find the mind’s construction in the face; by Act IV Malcolm will not trust a face at all, and tests Macduff with a false one of his own."
     },
     {

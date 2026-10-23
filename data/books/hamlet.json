@@ -109,7 +109,7 @@
       "id": "act-4",
       "label": "Act IV",
       "title": "Ophelia’s madness, and Laertes’s return",
-      "summary": "Hamlet is exported. While he is away the play shows what happens to the people he has damaged: Ophelia goes mad and drowns, Laertes comes home with a mob behind him, and Claudius spends one long scene making a young man’s grief into a poisoned foil. The act runs on offstage events reported by letters and messengers.",
+      "summary": "Hamlet is sent to England. While he is away the play shows what happens to the people he has damaged: Ophelia goes mad and drowns, Laertes comes home with a mob behind him, and Claudius spends one long scene making a young man’s grief into a poisoned foil. The act runs on offstage events reported by letters and messengers.",
       "scenes": [
         {
           "ref": "4.1",
@@ -234,7 +234,7 @@
       "id": "claudius",
       "name": "Claudius",
       "role": "King of Denmark, the dead king’s brother",
-      "summary": "The most competent politician in the play and the only character who tells the audience outright that he is guilty. He settles a foreign crisis by letter, manages a rebellion by talking to it, and never once mishandles a room, which is why the prayer scene hurts: it is the one thing he cannot negotiate.",
+      "summary": "The most competent politician in the play and the only character who tells the audience outright that he is guilty. He settles a foreign crisis by letter, manages a rebellion by talking to it, and rarely loses control of a room, which is why the prayer scene matters: it is the one thing he cannot negotiate.",
       "clue": "He opens with a speech that makes a funeral and a wedding sound like one piece of administration, and later cannot pray.",
       "firstAppearance": "1.2",
       "relationships": [
@@ -349,7 +349,7 @@
       "id": "polonius",
       "name": "Polonius",
       "role": "Counsellor to the king",
-      "summary": "A man who mistakes talking for thinking and surveillance for care. His famous advice to Laertes is a string of maxims delivered by somebody who immediately sends a spy after him. He dies because he is hiding in a room where he has no business, which is the only end the play could reasonably give him.",
+      "summary": "A man who mistakes talking for thinking and surveillance for care. His famous advice to Laertes is a string of maxims delivered by somebody who immediately sends a spy after him. He dies because he is hiding behind a curtain in the queen’s room.",
       "clue": "He gives his son a lecture of proverbs and then sends a servant to Paris to slander him; he dies behind a curtain.",
       "firstAppearance": "1.2",
       "relationships": [
@@ -433,7 +433,7 @@
       "id": "horatio",
       "name": "Horatio",
       "role": "Hamlet’s fellow student",
-      "summary": "The only person in Elsinore who wants nothing from Hamlet, and therefore the only one told the truth. He is a sceptic in the first scene who has to concede that the Ghost is real, and a survivor in the last who is ordered to stay alive and tell the story, a job the play leaves him doing after the lights go down.",
+      "summary": "The only person in Elsinore who wants nothing from Hamlet, and therefore the only one told the truth. He is a sceptic in the first scene who has to concede that the Ghost is real, and a survivor in the last who is ordered to stay alive and tell the story.",
       "clue": "He doubts the ghost, watches the king’s face on Hamlet’s behalf, and is talked out of drinking the poison so that someone can report what happened.",
       "firstAppearance": "1.1",
       "relationships": [
@@ -484,7 +484,7 @@
       "id": "rosencrantz-and-guildenstern",
       "name": "Rosencrantz and Guildenstern",
       "role": "Hamlet’s schoolfellows, hired by the king",
-      "summary": "They are summoned by name, given a task neither of them quite admits to, and are never separated by the text into two distinguishable people. Their function is to show that friendship at this court is a form of employment; their deaths are reported in a single line by a messenger who has no idea who they were.",
+      "summary": "They are summoned by name, given a task neither of them quite admits to, and are never separated by the text into two distinguishable people. Their function is to show that friendship at this court is a form of employment; their deaths are reported in a single line by the English ambassador.",
       "clue": "Two old friends sent for by the king, who cannot play a recorder but agree to play a prince.",
       "firstAppearance": "2.2",
       "relationships": [
@@ -513,7 +513,7 @@
       "id": "fortinbras",
       "name": "Fortinbras",
       "role": "Prince of Norway",
-      "summary": "He is talked about for four acts and appears for a few minutes, which is exactly the point: he is the other son of a dead king, and he is busy. Hamlet watches his army march past to fight over ground not worth farming, and the play then hands Denmark to him because everyone with a better claim is dead on the floor.",
+      "summary": "He is talked about for four acts and appears for a few minutes. He is the other son of a dead king, and he acts. Hamlet watches his army march past to fight over ground not worth farming, and the play then hands Denmark to him because everyone with a better claim is dead on the floor.",
       "clue": "A soldier who never meets the prince he is compared with, and who walks in at the end to find the throne empty.",
       "firstAppearance": "4.4",
       "relationships": [
@@ -549,12 +549,12 @@
       "id": "seeming",
       "name": "Seeming and performance",
       "summary": "Hamlet’s first substantial line rejects the word ‘seems’, and he spends the rest of the play acting: a feigned madness, a play staged as an experiment, a rewritten commission sealed with his father’s signet. Claudius is doing the same thing from the other side of the throne, and only the audience gets to see both scripts.",
-      "development": "Set out in 1.2, adopted as policy in 1.5, professionalised in 3.2, and abandoned in Act V, where Hamlet stops performing and starts reporting."
+      "development": "Set out in 1.2, adopted as a plan in 1.5, turned into a method with the players in 3.2, and given up in Act V, where Hamlet stops performing and starts reporting."
     },
     {
       "id": "surveillance",
       "name": "Watching and being watched",
-      "summary": "Almost no private conversation in this play is actually private. Reynaldo is sent to spy on Laertes, Ophelia is used as bait, Polonius hides twice, Rosencrantz and Guildenstern are briefed, and the king watches a play while being watched watching it. Elsinore meets dissent by listening to it.",
+      "summary": "Almost no private conversation in this play is actually private. Reynaldo is sent to spy on Laertes, Ophelia is used as bait, Polonius hides twice, Rosencrantz and Guildenstern are briefed, and the king watches a play while being watched watching it. At Elsinore, the answer to suspicion is to listen in.",
       "development": "A habit in Act II, a policy in Act III, and lethal in 3.4, where the listener behind the curtain is killed for listening."
     },
     {
@@ -567,13 +567,13 @@
       "id": "madness",
       "name": "Madness, real and performed",
       "summary": "Hamlet announces in advance that he will pretend, which ought to settle the question and does not: the pretence gives him licence to say things that are far too accurate to be mad and far too wild to be safe. Ophelia’s madness is unannounced, unstrategic and hard to interpret, and the court’s response to it is to keep watching.",
-      "development": "Declared in 1.5, diagnosed by Polonius in Act II, weaponised in 3.1, and set beside the real thing in 4.5."
+      "development": "Declared in 1.5, diagnosed by Polonius in Act II, turned on Ophelia in 3.1, and set beside the real thing in 4.5."
     },
     {
       "id": "memory",
       "name": "Memory and record",
       "summary": "The Ghost’s actual demand is ‘Remember me’, and Hamlet answers by treating his mind as a notebook to be wiped and rewritten. The play is full of records: tables, letters, commissions, songs, an old jester remembered by a skull. Hamlet’s dying charge is that Horatio report him and his cause aright.",
-      "development": "A vow in 1.5, a joke about writing it down moments later, and a formal commission to Horatio in 5.2: the play ends by appointing its own narrator."
+      "development": "A vow in 1.5, a joke about writing it down moments later, and a formal commission to Horatio in 5.2, who is asked to tell the story."
     }
   ],
   "techniques": [
