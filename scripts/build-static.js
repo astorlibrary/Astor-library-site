@@ -1182,6 +1182,7 @@ function buildBookPage(html, source) {
   const seasonLinks = seasons.filter(season => booksFor(season).includes(book.href)).map(season => ({ href: hrefFor(season), title: season.shortTitle || season.title }));
   html = restructureBookPage(html, {
     book,
+    href: book.href,
     collectionHref: collection?.href,
     formats: bookFormats[slug],
     guideSlug: record ? record.slug : null,
@@ -1210,7 +1211,12 @@ function addStudyEditionPage(html, source) {
   const end = html.lastIndexOf('</main>');
   const record = [...studyData.values()].find(book => book.studyHref === href || book.href === copy.book);
   const guide = record ? '/guides/' + record.slug + '/' : '';
-  const paragraphs = copy.description.map(text => '<p class="deck">' + text + '</p>').join('');
+  // The list below names the contents, so the sentence that names them
+  // again ("It contains the full text…") is left out of the introduction.
+  const description = (copy.contents || []).length
+    ? copy.description.map(text => text.replace(/\s*It contains [^.]*\./, '')).filter(text => text.trim())
+    : copy.description;
+  const paragraphs = description.map(text => '<p class="deck">' + text + '</p>').join('');
   const contents = (copy.contents || []).length ? '<ul class="book-edition-list">' + copy.contents.map(item => '<li>' + escapeHtml(item) + '</li>').join('') + '</ul>' : '';
   const links = [
     '<a class="book-format-buy" href="' + escapeHtml(copy.buy) + '" rel="noopener">Buy on Amazon</a>',

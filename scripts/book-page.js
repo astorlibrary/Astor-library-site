@@ -68,19 +68,19 @@ const ALWAYS_DROP = [/^questions for/i, /^topics for analysis/i, /^open question
 const KICKER_RULES = {
   'edition contents': { role: 'edition' },
   'this astor edition': { role: 'edition' },
-  'about the work': { role: 'study', heading: 'The story' },
-  'reading routes': { role: 'study', heading: 'Themes' },
-  'critical reading': { role: 'study', heading: 'Language and form' },
-  'plot and structure': { role: 'study', heading: 'The plot' },
-  'characters': { role: 'study', heading: 'Characters' },
-  'characters and speakers': { role: 'study', heading: 'Characters' },
+  'about the work': { role: 'study' },
+  'reading routes': { role: 'study' },
+  'critical reading': { role: 'study' },
+  'plot and structure': { role: 'study' },
+  'characters': { role: 'study' },
+  'characters and speakers': { role: 'study' },
   'study questions': { role: 'drop' },
-  'text and context': { role: 'keep', heading: 'The text' },
-  'text, sources and performance': { role: 'keep', heading: 'Text, sources and performance' },
-  'further reference': { role: 'sources', heading: 'Sources' },
-  'sources': { role: 'sources', heading: 'Sources' },
-  'the shape of the work': { role: 'study', heading: 'The shape of the work' },
-  'book, history and form': { role: 'keep', heading: 'Book, history and form' }
+  'text and context': { role: 'keep' },
+  'text, sources and performance': { role: 'keep' },
+  'further reference': { role: 'sources' },
+  'sources': { role: 'sources' },
+  'the shape of the work': { role: 'study' },
+  'book, history and form': { role: 'keep' }
 };
 
 // Blocks that carry thematic summaries in coloured panels ("Crown — Henry
@@ -135,18 +135,24 @@ function cleanHeading(text) {
   return text.replace(/\.\s*$/, '');
 }
 
-// A section-title block, rewritten as a plain heading with its line of
-// explanation (if any) as an ordinary paragraph.
+// A section-title block, rewritten as a plain heading. The line of
+// explanation many of them carried under the heading ("Before the later
+// production record, Macbeth already has…") only announced what followed, and
+// is left out.
+function slug(text) {
+  return plain(text).toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
 function plainSectionTitle(block, heading) {
-  const id = (block.match(/^<section class="section-title"[^>]*\bid="([^"]+)"/) || [])[1];
   const h2 = heading || cleanHeading(inner(block, 'h2'));
+  const id = (block.match(/^<section class="section-title"[^>]*\bid="([^"]+)"/) || [])[1] || slug(h2);
   const rest = block
     .replace(/^<section[^>]*>/, '')
     .replace(/<\/section>\s*$/, '')
-    .replace(/<p class="kicker">[\s\S]*?<\/p>/, '')
+    .replace(/<p\b[^>]*>[\s\S]*?<\/p>/g, '')
     .replace(/<h2[^>]*>[\s\S]*?<\/h2>/, '')
     .trim();
-  return '<section class="section-title"' + (id ? ' id="' + id + '"' : '') + '><h2>' + h2 + '</h2>' + rest + '</section>';
+  return '<section class="section-title" id="' + id + '"><h2>' + h2 + '</h2>' + rest + '</section>';
 }
 
 // Groups the page's material under its section headings, so a heading and
@@ -166,20 +172,49 @@ function groupSections(blocks) {
   return groups;
 }
 
-function formatRows(formats, mainImage, studyPage) {
+// Each Study Edition is described from its own record in study-editions.json,
+// which follows the book's title and listing. A standard Astor edition already
+// has the text, summaries, notes and context, so the line leaves those out.
+const STUDY_EDITIONS = new Map(require('./study-editions.json').list.map(edition => [edition.buy, edition]));
+const BASIC_CONTENTS = /^(the (full|complete)\b|both (texts|parts)|a summary of every|summaries$|chapter summaries|scene (and chapter )?recaps|“what’s just happened|explanatory notes|annotations|full notes|line-by-line|the 1897 text|the play, annotated|(historical )?context( boxes)?$|a guide to the context)/i;
+
+function listWords(items) {
+  if (items.length < 2) return items.join('');
+  return items.slice(0, -1).join(', ') + ' and ' + items[items.length - 1];
+}
+
+function studyNote(edition) {
+  if (!edition) return '';
+  if (edition.paired) return edition.title + ' in one volume, with study material for both.';
+  const added = edition.contents
+    .filter(item => !BASIC_CONTENTS.test(item))
+    .map(item => (/^(GCSE|A-level|“)/.test(item) ? item : item.charAt(0).toLowerCase() + item.slice(1)));
+  return added.length ? 'Includes ' + listWords(added) + '.' : '';
+}
+
+// A format note that only repeats the edition's list of contents is left out.
+function repeatsList(note, listHtml) {
+  if (!note || !listHtml) return false;
+  const listed = plain(decodeBasic(listHtml)).toLowerCase();
+  return note.split(/\s+·\s+/).every(item => listed.includes(item.trim().toLowerCase()));
+}
+
+function formatRows(formats, mainImage, listHtml) {
   if (!formats || !formats.length) return '';
   return formats.map(format => {
     const isStudy = /study/i.test(format.format);
-    const label = isStudy ? 'Study Edition' : format.format;
-    const edition = format.edition ? ' <span class="book-format-edition">' + escapeHtml(format.edition) + '</span>' : '';
-    const note = format.note ? '<p class="book-format-note">' + escapeHtml(format.note) + '</p>' : '';
+    const edition = isStudy ? STUDY_EDITIONS.get(format.url) : null;
+    const label = isStudy ? (edition?.paired ? 'Paired Study Edition' : 'Study Edition') : format.format;
+    const named = format.edition ? ' <span class="book-format-edition">' + escapeHtml(format.edition) + '</span>' : '';
+    const noteText = (repeatsList(format.note, listHtml) ? '' : format.note) || studyNote(edition);
+    const note = noteText ? '<p class="book-format-note">' + escapeHtml(noteText) + '</p>' : '';
     const thumb = format.image && format.image !== mainImage
       ? '<img class="book-format-cover" src="' + escapeHtml(format.image) + '" alt="" width="48" height="72" loading="lazy" decoding="async">'
-      : '<span class="book-format-cover is-empty" aria-hidden="true"></span>';
+      : '';
     const more = format.page ? '<a class="book-format-more" href="' + escapeHtml(format.page) + '">About this edition</a>' : '';
     const unavailable = format.unavailableIn ? ' data-unavailable-in="' + escapeHtml(format.unavailableIn.join(' ')) + '"' : '';
-    return '<li class="book-format astor-buy-item"' + unavailable + '>' + thumb +
-      '<div class="book-format-text"><p class="book-format-name">' + escapeHtml(label) + edition + '</p>' + note + more + '</div>' +
+    return '<li class="book-format astor-buy-item' + (thumb ? ' has-cover' : '') + '"' + unavailable + '>' + thumb +
+      '<div class="book-format-text"><p class="book-format-name">' + escapeHtml(label) + named + '</p>' + note + more + '</div>' +
       '<p class="astor-buy-actions"><a class="book-format-buy astor-buy-button" href="' + escapeHtml(format.url) + '" rel="noopener">Buy on Amazon</a></p></li>';
   }).join('');
 }
@@ -240,6 +275,35 @@ function restructureBookPage(html, ctx) {
     ? editionList.replace('class="edition-includes"', 'class="book-edition-list"')
     : (editionNote || asideNote) ? '<p>' + (editionNote || asideNote) + '</p>' : '';
 
+  // --- the standard and expanded editions ------------------------------------------
+  // Five plays have an Expanded Scholarly Edition as well as the standard one.
+  // The old "Standard or expanded scholarship" panel becomes one sentence.
+  let otherEdition = '';
+  const choice = blocks.find(block => /^<section class="edition-choice-band"/.test(block));
+  if (choice) {
+    const hrefs = [...choice.matchAll(/href="([^"]+)"/g)].map(match => match[1]);
+    const expanded = hrefs.find(href => /-expanded-scholarly-edition\/$/.test(href));
+    const standard = hrefs.find(href => !/-expanded-scholarly-edition\/$/.test(href));
+    if (expanded && ctx.href !== expanded) {
+      otherEdition = '<p class="book-other-edition">There is also an <a href="' + escapeHtml(expanded) + '">Expanded Scholarly Edition</a>, with more on the text, its criticism, its context and its performance history.</p>';
+    } else if (standard && ctx.href !== standard) {
+      otherEdition = '<p class="book-other-edition">The <a href="' + escapeHtml(standard) + '">standard Astor edition</a> is also available.</p>';
+    }
+  }
+
+  // --- "A closer look" ----------------------------------------------------------------
+  // Thirty-one pages carry a longer account of publication and history in a
+  // block of its own. Its articles join the page's sections and its sources
+  // join the source list.
+  let depthSources = '';
+  blocks = blocks.flatMap(block => {
+    if (!/^<section class="book-depth"/.test(block)) return [block];
+    const grid = (block.match(/<div class="book-depth-grid">[\s\S]*?<\/div>(?=<details|<\/section>)/) || [''])[0];
+    const list = (block.match(/<details class="book-depth-sources">[\s\S]*?(<ul>[\s\S]*?<\/ul>)/) || [])[1] || '';
+    if (list) depthSources = '<h3>Publication and history</h3>' + list;
+    return ['<section class="section-title" id="further-context"><h2>Publication and history</h2></section>', grid];
+  });
+
   // --- drop what repeats or what belongs elsewhere --------------------------------
   const dropClasses = /^(quick-facts|page-contents|astor-toolkit|edition-sample|edition-format-panel|edition-choice-band|astor-buy|astor-page-credit|book-passage-shelf|context-image-shelf|season-book-backlinks|book-end-nav|book-breadcrumb|book-callout)\b/;
   blocks = blocks.filter(block => !dropClasses.test(classOf(block)) && !/^<nav class="book-breadcrumb/.test(block) && !/^<style\b/.test(block));
@@ -260,7 +324,7 @@ function restructureBookPage(html, ctx) {
     const study = rule?.role === 'study' || (!rule && STUDY_HEADINGS.some(pattern => pattern.test(heading)));
     if (study && guideSlug) continue;
     const isSources = rule?.role === 'sources' || /^(sources|texts and publication records|texts, archives)/i.test(heading);
-    const title = plainSectionTitle(group.title, rule?.heading && rule.role !== 'sources' ? rule.heading : (isSources ? 'Sources' : undefined));
+    const title = plainSectionTitle(group.title, isSources ? 'Sources' : undefined);
     const section = title + group.body.join('\n');
     if (isSources) sourcesHtml += section;
     else kept.push(section);
@@ -272,13 +336,15 @@ function restructureBookPage(html, ctx) {
       kept.splice(index, 1);
     }
   }
+  if (depthSources) {
+    sourcesHtml = (sourcesHtml || '<section class="section-title" id="sources"><h2>Sources</h2></section>') + '<div class="book-depth-sources">' + depthSources + '</div>';
+  }
   if (sourcesHtml && !/id="sources"/.test(sourcesHtml)) sourcesHtml = sourcesHtml.replace('<section class="section-title"', '<section class="section-title" id="sources"');
 
   // --- the new opening --------------------------------------------------------------
-  const studyFormat = (formats || []).find(format => /study/i.test(format.format) && format.page);
   const links = [];
-  if (guideSlug) links.push('<a href="/guides/' + escapeHtml(guideSlug) + '/">Study guide</a>');
-  if (guideSlug) links.push('<a href="/play/?book=' + escapeHtml(guideSlug) + '">Revise</a>');
+  if (guideSlug) links.push('<a href="/guides/' + escapeHtml(guideSlug) + '/">The free study guide</a>');
+  if (guideSlug) links.push('<a href="/play/?book=' + escapeHtml(guideSlug) + '">Quizzes and flashcards</a>');
   const linkLine = links.length ? '<p class="book-links">' + links.join('') + '</p>' : '';
 
   const cover = coverSrc
@@ -289,7 +355,7 @@ function restructureBookPage(html, ctx) {
   const author = book.authorHref && !/<a\b/.test(authorHtml)
     ? '<a href="' + escapeHtml(book.authorHref) + '">' + authorHtml + '</a>'
     : authorHtml;
-  const buyRows = formatRows(formats, coverSrc, studyFormat?.page);
+  const buyRows = formatRows(formats, coverSrc, editionList);
   const top = '<section class="book-top page-intro">' +
     '<div class="book-top-text">' +
     '<p class="book-author kicker">' + author + '</p>' +
@@ -300,6 +366,7 @@ function restructureBookPage(html, ctx) {
     '<h2 id="book-edition-title">The Astor edition</h2>' +
     (editionHtml ? '<div class="book-edition-note">' + editionHtml + '</div>' : '') +
     (buyRows ? '<ul class="book-formats astor-buy-list">' + buyRows + '</ul>' : '') +
+    otherEdition +
     linkLine +
     '</section>';
 
@@ -319,7 +386,19 @@ function restructureBookPage(html, ctx) {
     '<a href="' + escapeHtml(collectionHref || '/library/') + '">More from ' + escapeHtml(book.collection) + '</a>' +
     '<a href="/library/">All books</a></nav>';
 
-  const body = kept.length ? '<div class="book-body">' + kept.join('\n') + '</div>' : '';
+  // A long page gets a plain line of contents; a short one does not need it.
+  const sectionLinks = kept
+    .map(section => section.match(/^<section class="section-title" id="([^"]+)"><h2>([\s\S]*?)<\/h2>/))
+    .filter(Boolean)
+    .map(match => '<a href="#' + match[1] + '">' + plain(match[2]) + '</a>');
+  if (sourcesHtml) sectionLinks.push('<a href="#sources">Sources</a>');
+  const contents = sectionLinks.length >= 4
+    ? '<nav class="book-contents" aria-label="On this page"><h2>On this page</h2><ul>' + sectionLinks.map(link => '<li>' + link + '</li>').join('') + '</ul></nav>'
+    : '';
+  // A label such as "Text" or "Sources" above an entry says less than its
+  // heading does; a date says something, and stays.
+  const keptHtml = kept.join('\n').replace(/<p class="year">([^<]*)<\/p>/g, (whole, text) => (/\d/.test(text) ? whole : ''));
+  const body = kept.length ? '<div class="book-body">' + contents + keptHtml + '</div>' : '';
   const rebuilt = '\n' + breadcrumb + '\n' + top + '\n' + body + '\n' + (sourcesHtml ? '<div class="book-sources">' + sourcesHtml + '</div>' : '') + '\n' + foot + '\n' + endNav + '\n';
   let out = html.slice(0, innerStart) + rebuilt + html.slice(innerEnd);
   out = out.replace(/<main\b([^>]*)>/, (whole, attributes) => {

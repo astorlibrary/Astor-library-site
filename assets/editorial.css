@@ -855,6 +855,739 @@
   }
 }
 
+/* --- Book pages and Study Edition pages ------------------------------------- */
+
+main.book-page {
+  max-width: 1120px;
+  padding: 40px 24px 96px;
+  color: var(--text, var(--ed-ink));
+  font-family: var(--serif);
+}
+
+main.book-page p,
+main.book-page li {
+  font-family: var(--serif);
+}
+
+/* The book: author, title, one introduction, and the cover. */
+main.book-page .book-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 56px;
+  align-items: start;
+  margin: 0;
+  padding: 0 0 44px;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+  background: none;
+}
+
+main.book-page .book-top::before,
+main.book-page .book-top::after {
+  content: none;
+}
+
+main.book-page .book-author {
+  margin: 0 0 6px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 18px/1.3 var(--serif);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+main.book-page .book-author a {
+  color: inherit;
+  border: 0;
+  text-decoration: underline;
+  text-decoration-color: var(--line, var(--ed-rule-strong));
+  text-underline-offset: 3px;
+}
+
+main.book-page .book-top h1 {
+  max-width: none;
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 clamp(44px, 6vw, 72px)/1.02 var(--serif);
+  letter-spacing: -0.01em;
+}
+
+main.book-page .book-top .deck {
+  max-width: var(--ed-measure);
+  margin: 26px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 21px/1.55 var(--serif);
+}
+
+main.book-page .book-top .deck + .deck {
+  margin-top: 14px;
+  font-size: 19px;
+}
+
+main.book-page .book-cover {
+  margin: 0;
+}
+
+main.book-page .book-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 1px 2px rgba(31, 27, 24, 0.12), 0 10px 26px rgba(31, 27, 24, 0.14);
+}
+
+/* The Astor edition and how to buy it. */
+main.book-page .book-edition {
+  max-width: 46rem;
+  padding: 40px 0 44px;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+}
+
+main.book-page .book-edition > h2 {
+  margin: 0 0 14px;
+  font: 400 30px/1.15 var(--serif);
+}
+
+main.book-page .book-edition-note p,
+main.book-page .book-edition-note li {
+  max-width: none;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 18px/1.6 var(--serif);
+}
+
+main.book-page .book-edition-note p {
+  margin: 0 0 12px;
+}
+
+main.book-page .book-edition-list {
+  margin: 0 0 14px;
+  padding-left: 1.2em;
+}
+
+main.book-page .book-edition-list li + li {
+  margin-top: 4px;
+}
+
+main.book-page .book-formats {
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+main.book-page .book-format {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin: 0;
+  padding: 14px 0;
+  border: 0;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+  background: none;
+  box-shadow: none;
+}
+
+main.book-page .book-format.has-cover {
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+}
+
+main.book-page .book-format-cover {
+  display: block;
+  width: 44px;
+  height: auto;
+  box-shadow: 0 1px 2px rgba(31, 27, 24, 0.16);
+}
+
+main.book-page .book-format-text p {
+  margin: 0;
+  max-width: none;
+}
+
+main.book-page .book-format-name {
+  color: var(--text, var(--ed-ink));
+  font: 400 19px/1.3 var(--serif);
+}
+
+main.book-page .book-format-edition {
+  color: var(--text-muted, var(--ed-muted));
+  font-style: italic;
+}
+
+main.book-page .book-format-note {
+  margin-top: 3px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.5 var(--serif);
+}
+
+main.book-page .book-format-more {
+  display: inline-block;
+  margin-top: 4px;
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 15px/1.4 var(--sans);
+  text-underline-offset: 3px;
+}
+
+main.book-page .astor-buy-actions {
+  margin: 0;
+}
+
+main.book-page .book-format-buy,
+main.book-page .book-format .astor-buy-button {
+  display: inline-block;
+  min-height: 0;
+  padding: 9px 16px;
+  border: 1px solid var(--wine-text, var(--ed-wine));
+  border-radius: 2px;
+  background: var(--wine-text, var(--ed-wine));
+  color: var(--surface-paper, #fff);
+  font: 500 15px/1.2 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: none;
+}
+
+main.book-page .book-format-buy:hover,
+main.book-page .book-format-buy:focus-visible {
+  background: transparent;
+  color: var(--wine-text, var(--ed-wine));
+}
+
+main.book-page .book-format .astor-buy-button.is-unavailable {
+  border-color: var(--line, var(--ed-rule-strong));
+  background: none;
+  color: var(--text-muted, var(--ed-muted));
+}
+
+main.book-page .book-other-edition {
+  margin: 20px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 17px/1.55 var(--serif);
+}
+
+main.book-page .book-other-edition a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
+}
+
+main.book-page .book-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  margin: 24px 0 0;
+  font: 400 17px/1.4 var(--sans);
+}
+
+main.book-page .book-links a {
+  color: var(--wine-text, var(--ed-wine));
+  font-family: var(--sans);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+main.book-page .study-edition-links .book-format-buy {
+  color: var(--surface-paper, #fff);
+  text-decoration: none;
+}
+
+main.book-page .study-edition-links .book-format-buy:hover {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+/* A Study Edition page has its contents in the opening. */
+main.book-page .book-subtitle {
+  margin: 10px 0 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: italic 400 20px/1.3 var(--serif);
+}
+
+main.book-page .book-contents-title {
+  margin: 34px 0 10px;
+  font: 400 22px/1.2 var(--serif);
+}
+
+main.book-page .study-edition-top .book-edition-list {
+  max-width: var(--ed-measure);
+  color: var(--text-soft, var(--ed-soft));
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* The book's history: plain sections, one after another. */
+main.book-page .book-body {
+  max-width: 46rem;
+}
+
+main.book-page .book-contents {
+  margin: 44px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  position: static;
+}
+
+main.book-page .book-contents h2 {
+  margin: 0 0 10px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.3 var(--sans);
+}
+
+main.book-page .book-body .book-contents ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  columns: 2;
+  column-gap: 40px;
+}
+
+main.book-page .book-body .book-contents li {
+  margin: 0;
+  break-inside: avoid;
+  padding: 3px 0;
+}
+
+main.book-page .book-body .book-contents a {
+  color: var(--text, var(--ed-ink));
+  font: 400 18px/1.35 var(--serif);
+  text-decoration: underline;
+  text-decoration-color: var(--line, var(--ed-rule-strong));
+  text-underline-offset: 3px;
+}
+
+main.book-page .book-contents a:hover {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+main.book-page .book-body .section-title,
+main.book-page .book-sources .section-title {
+  margin: 64px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+main.book-page .book-body .section-title h2,
+main.book-page .book-sources .section-title h2 {
+  max-width: none;
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 34px/1.15 var(--serif);
+  letter-spacing: -0.005em;
+}
+
+main.book-page .book-body :is(section, article, div, aside):not(.book-contents) {
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+main.book-page .book-body .timeline {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+main.book-page .book-body .prod-card {
+  display: block;
+  max-width: none;
+  margin: 26px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+main.book-page .book-body .prod-card + .prod-card {
+  padding-top: 26px;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+main.book-page .book-body .prod-card.has-image {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 180px;
+  gap: 0 32px;
+  align-items: start;
+}
+
+main.book-page .book-body .prod-card.has-image > figure {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 6px 0 0;
+}
+
+main.book-page .book-body .prod-card.has-image > div {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+main.book-page .book-body figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  box-shadow: none;
+}
+
+main.book-page .book-body figcaption {
+  margin-top: 8px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 13px/1.45 var(--sans);
+}
+
+main.book-page .book-body .kicker,
+main.book-page .book-body .prod-card p.year,
+main.book-page .book-body article > span:first-child {
+  display: block;
+  margin: 0 0 4px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.3 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+main.book-page .book-body h3 {
+  margin: 0 0 10px;
+  color: var(--text, var(--ed-ink));
+  font: 400 24px/1.25 var(--serif);
+}
+
+main.book-page .book-body p:not(.year),
+main.book-page .book-body li,
+main.book-page .book-body .prod-card.prose-card p:not(.year),
+main.book-page .book-body .prod-card li {
+  max-width: none;
+  color: var(--text-soft, var(--ed-soft));
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+main.book-page .book-body p {
+  margin: 0 0 12px;
+}
+
+main.book-page .book-body ul,
+main.book-page .book-body ol {
+  margin: 0 0 12px;
+  padding-left: 1.2em;
+}
+
+main.book-page .book-body li + li {
+  margin-top: 6px;
+}
+
+main.book-page .book-body a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
+}
+
+/* Grids left over from older layouts read as a plain list of entries. */
+main.book-page .book-body :is(.record-list, [class$="-grid"], [class*="-grid "], [class$="-strip"], [class*="-strip "]) {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+
+main.book-page .book-body :is(.record-list, [class$="-grid"], [class*="-grid "], [class$="-strip"], [class*="-strip "]) > * {
+  min-height: 0;
+  height: auto;
+  margin: 22px 0 0;
+  padding: 22px 0 0;
+  border: 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+main.book-page .book-body .image-note,
+main.book-page .book-body .astor-feature {
+  margin: 30px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Sources. */
+main.book-page .book-sources {
+  max-width: 46rem;
+}
+
+main.book-page .book-depth-sources h3 {
+  margin: 28px 0 0;
+  font: 400 20px/1.3 var(--serif);
+}
+
+main.book-page .book-depth-sources ul {
+  margin: 10px 0 0;
+  padding-left: 1.2em;
+}
+
+main.book-page .book-depth-sources li {
+  margin: 4px 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 16px/1.45 var(--serif);
+}
+
+main.book-page .book-depth-sources a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
+}
+
+main.book-page .book-sources p {
+  color: var(--text-muted, var(--ed-muted));
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+main.book-page .source-list {
+  display: block;
+  margin: 18px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+main.book-page .source-list a {
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+  border: 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+  background: none;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 16px/1.45 var(--serif);
+  text-decoration: none;
+  transform: none;
+}
+
+main.book-page .source-list a:hover {
+  color: var(--wine-text, var(--ed-wine));
+  background: none;
+  transform: none;
+}
+
+main.book-page .source-list a span,
+main.book-page .source-list a small,
+main.book-page .source-list a b {
+  display: inline;
+  font: inherit;
+  color: inherit;
+}
+
+/* The foot of the page. */
+main.book-page .book-also {
+  max-width: 46rem;
+  margin: 64px 0 0;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+main.book-page .book-also p {
+  margin: 0 0 10px;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 17px/1.55 var(--serif);
+}
+
+main.book-page .book-also span {
+  display: block;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.4 var(--sans);
+}
+
+main.book-page .book-also a,
+main.book-page .book-credit a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
+}
+
+main.book-page .book-credit {
+  max-width: 46rem;
+  margin: 28px 0 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.55 var(--serif);
+}
+
+main.book-page .book-end-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px 28px;
+  margin: 48px 0 0;
+  padding: 16px 0;
+  border: 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+  border-bottom: 0;
+}
+
+main.book-page .book-end-nav a {
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.4 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+  text-decoration: underline;
+  text-decoration-color: var(--line, var(--ed-rule-strong));
+  text-underline-offset: 3px;
+}
+
+main.book-page .book-end-nav a:hover {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+@media (max-width: 760px) {
+  main.book-page {
+    padding: 24px 16px 72px;
+  }
+
+  main.book-page .book-top {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+    padding-bottom: 32px;
+  }
+
+  main.book-page .book-cover {
+    order: -1;
+    width: 150px;
+  }
+
+  main.book-page .book-top .deck {
+    font-size: 19px;
+  }
+
+  main.book-page .book-format,
+  main.book-page .book-format.has-cover {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  main.book-page .book-format.has-cover {
+    grid-template-columns: 40px minmax(0, 1fr);
+  }
+
+  main.book-page .book-format.has-cover .astor-buy-actions {
+    grid-column: 2;
+  }
+
+  main.book-page .book-body .book-contents ul {
+    columns: 1;
+  }
+
+  main.book-page .book-body .section-title h2,
+  main.book-page .book-sources .section-title h2 {
+    font-size: 28px;
+  }
+
+  main.book-page .book-body .prod-card.has-image {
+    display: block;
+  }
+
+  main.book-page .book-body .prod-card.has-image > figure {
+    max-width: 220px;
+    margin: 0 0 14px;
+  }
+}
+
+/* --- Study Editions ------------------------------------------------------------ */
+
+.study-index {
+  max-width: 1120px;
+  padding: 40px 24px 96px;
+  color: var(--text, var(--ed-ink));
+}
+
+.editorial-intro {
+  max-width: var(--ed-measure);
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+}
+
+.editorial-intro h1 {
+  margin: 0;
+  font: 400 clamp(44px, 6vw, 72px)/1.02 var(--serif);
+  letter-spacing: -0.01em;
+}
+
+.editorial-intro p {
+  margin: 18px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 18px/1.6 var(--serif);
+}
+
+.editorial-intro .editorial-lede {
+  margin-top: 24px;
+  font-size: 21px;
+  line-height: 1.55;
+}
+
+.editorial-intro a,
+.study-shelf-note a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
+}
+
+.study-shelf {
+  padding-top: 44px;
+}
+
+.study-shelf h2 {
+  margin: 0 0 6px;
+  font: 400 30px/1.15 var(--serif);
+}
+
+.study-shelf-note {
+  max-width: var(--ed-measure);
+  margin: 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 17px/1.55 var(--serif);
+}
+
+.study-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 34px 28px;
+  margin-top: 24px;
+}
+
+.study-index .study-card {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--text, var(--ed-ink));
+  text-decoration: none;
+}
+
+.study-index .study-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  box-shadow: 0 1px 2px rgba(31, 27, 24, 0.12), 0 8px 20px rgba(31, 27, 24, 0.12);
+}
+
+.study-index .study-card h3 {
+  margin: 12px 0 2px;
+  font: 400 18px/1.25 var(--serif);
+}
+
+.study-index .study-card p {
+  margin: 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.4 var(--serif);
+}
+
+.study-index .study-card:hover h3,
+.study-index .study-card:focus-visible h3 {
+  color: var(--wine-text, var(--ed-wine));
+}
+
+@media (max-width: 760px) {
+  .study-index {
+    padding: 24px 16px 72px;
+  }
+
+  .study-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 18px;
+  }
+}
+
 /* One plain paper for every page. Older rules in styles.css shaded the page
    from cream to sand; html body outranks them. */
 html body {
