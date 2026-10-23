@@ -199,13 +199,18 @@ function repeatsList(note, listHtml) {
   return note.split(/\s+·\s+/).every(item => listed.includes(item.trim().toLowerCase()));
 }
 
-function formatRows(formats, mainImage, listHtml) {
+function formatRows(formats, mainImage, listHtml, bookTitle) {
   if (!formats || !formats.length) return '';
   return formats.map(format => {
     const isStudy = /study/i.test(format.format);
     const edition = isStudy ? STUDY_EDITIONS.get(format.url) : null;
     const label = isStudy ? (edition?.paired ? 'Paired Study Edition' : 'Study Edition') : format.format;
-    const named = format.edition ? ' <span class="book-format-edition">' + escapeHtml(format.edition) + '</span>' : '';
+    // A Study Edition that covers more than this book (Henry IV, Parts 1 and
+    // 2, sold on both plays' pages) says so in its name.
+    const key = text => String(text).toLowerCase().replace(/[^a-z0-9]/g, '');
+    const sameTitle = (a, b) => key(a).startsWith(key(b)) || key(b).startsWith(key(a));
+    const editionName = format.edition || (edition && !edition.paired && bookTitle && !sameTitle(edition.title, bookTitle) ? edition.title : '');
+    const named = editionName ? ' <span class="book-format-edition">' + escapeHtml(editionName) + '</span>' : '';
     const noteText = (repeatsList(format.note, listHtml) ? '' : format.note) || studyNote(edition);
     const note = noteText ? '<p class="book-format-note">' + escapeHtml(noteText) + '</p>' : '';
     const thumb = format.image && format.image !== mainImage
@@ -355,7 +360,7 @@ function restructureBookPage(html, ctx) {
   const author = book.authorHref && !/<a\b/.test(authorHtml)
     ? '<a href="' + escapeHtml(book.authorHref) + '">' + authorHtml + '</a>'
     : authorHtml;
-  const buyRows = formatRows(formats, coverSrc, editionList);
+  const buyRows = formatRows(formats, coverSrc, editionList, decodeBasic(plain(titleHtml)));
   const top = '<section class="book-top page-intro">' +
     '<div class="book-top-text">' +
     '<p class="book-author kicker">' + author + '</p>' +

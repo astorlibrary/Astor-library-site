@@ -4,7 +4,7 @@
 // add to a standard Astor edition and lists every one, with a link to its own
 // page where there is one and to the retailer where there is not. The cards
 // keep the markup rebuild-discovery.js and rebuild-generated-study-pages.js
-// read: an <h3><em> title and a <p> line.
+// read: an <h3><em> title and an unclassed <p> with the summary.
 
 const fs = require('fs');
 const path = require('path');
@@ -31,7 +31,8 @@ function card(edition) {
     (external ? ' rel="noopener"' : ' data-buy-url="' + escapeHtml(edition.buy) + '"') + '>' +
     '<img src="' + escapeHtml(edition.cover) + '" alt="' + escapeHtml(edition.title) + ', Astor Study Edition cover" width="320" height="480" loading="lazy">' +
     '<h3><em>' + escapeHtml(edition.title) + '</em></h3>' +
-    '<p>' + escapeHtml(line) + '</p>' +
+    '<p class="study-card-author">' + escapeHtml(line) + '</p>' +
+    '<p>' + escapeHtml(edition.summary || '') + '</p>' +
     '</a>';
 }
 

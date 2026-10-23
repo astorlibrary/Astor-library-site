@@ -2136,6 +2136,13 @@ main.catalog-page .catalog-card .home-text-link {
   font: 400 15px/1.4 var(--serif);
 }
 
+.study-index .study-card p + p {
+  margin-top: 6px;
+  color: var(--text-soft, var(--ed-soft));
+  font-size: 14px;
+  line-height: 1.45;
+}
+
 .study-index .study-card:hover h3,
 .study-index .study-card:focus-visible h3 {
   color: var(--wine-text, var(--ed-wine));
