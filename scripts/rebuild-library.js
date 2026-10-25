@@ -9,6 +9,7 @@ require('./rebuild-main-additions');
 require('./rebuild-edition-update');
 require('./rebuild-september-catalogue');
 require('./rebuild-concise-catalogue');
+require('./rebuild-october-catalogue').build();
 require('./rebuild-format-release');
 require('./rebuild-book-depth');
 require('./rebuild-resources');

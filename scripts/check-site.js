@@ -10,6 +10,7 @@ const { metadata: pageMetadata, validatePageSeo, validateSitemapUrls } = require
 const { coverFormat } = require('./book-edition-schema');
 const septemberCatalogue = require('./september-catalogue-data.json');
 const conciseCatalogue = require('./concise-catalogue-data.json');
+const octoberCatalogue = require('./october-catalogue-data.json');
 
 const root = process.cwd();
 const SITE_URL = 'https://astorlibrary.com';
@@ -808,8 +809,8 @@ if (!fs.existsSync(expandedFile)) {
 if (formatReleaseData.books.length !== 20) failures.push('The format release data must contain the twenty supplied paperback editions');
 const septemberHardbacks = septemberCatalogue.filter(book => book.format === 'hardcover');
 const septemberPaperbacks = septemberCatalogue.filter(book => book.format === 'paperback');
-if (septemberCatalogue.length !== 39 || septemberPaperbacks.length !== 26 || septemberHardbacks.length !== 13) failures.push('The September request must preserve all 39 supplied editions: 26 paperbacks and 13 hardcovers');
-if (formatReleaseData.hardbacks.length !== 10 + septemberHardbacks.length) failures.push('The hardback registry must retain the ten existing formats and all supplied September hardcovers');
+if (septemberCatalogue.length !== 34 || septemberPaperbacks.length !== 26 || septemberHardbacks.length !== 8) failures.push('The September registry must preserve its 26 paperbacks and eight retained hardcovers after the five requested removals');
+if (formatReleaseData.hardbacks.length !== 10 + septemberHardbacks.length + formatReleaseData.octoberHardbacks.length) failures.push('The hardback registry must retain the ten original formats, the retained September hardcovers and the October additions');
 if (new Set(septemberCatalogue.map(book => book.href + ':' + book.format)).size !== septemberCatalogue.length) failures.push('The September catalogue repeats an edition');
 if (new Set(septemberCatalogue.map(book => book.purchaseUrl)).size !== septemberCatalogue.length) failures.push('The September catalogue repeats a purchase link');
 for (const book of septemberCatalogue) {
@@ -844,6 +845,16 @@ for (const book of conciseCatalogue) {
   if (!html.includes('class="edition-includes"') || countMatches(html, /<li>/g) !== book.editionIncludes.length) failures.push(book.href + ' is missing its supplied edition contents');
 }
 const russianBooks = conciseCatalogue.filter(book => book.collection === 'Russian');
+for (const book of octoberCatalogue) {
+  const file = path.join(root, book.href.slice(1), 'index.html');
+  const html = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : '';
+  if (!html) failures.push('An October book page is missing: ' + book.title);
+  if (memberships.get(book.href) !== book.collectionFile) failures.push(book.href + ' has the wrong literary collection');
+  if (!html.includes('src="' + assetPath(book.image) + '"')) failures.push(book.href + ' is missing its verified paperback cover');
+  if (!html.includes('href="' + book.purchaseUrl + '"')) failures.push(book.href + ' is missing its paperback purchase link');
+  if (!html.includes(book.isbn) || !html.includes(book.asin)) failures.push(book.href + ' is missing its edition identifiers');
+  if (fs.existsSync(path.join(root, 'data/books', book.slug + '.json')) || fs.existsSync(path.join(root, 'study', book.slug, 'index.html'))) failures.push(book.href + ' must remain a catalogue-only addition');
+}
 if (russianBooks.length !== 5 || russianBooks.some(book => memberships.get(book.href) !== 'russian/index.html')) failures.push('The five supplied Russian texts must be in the Russian collection');
 if (memberships.get('/books/common-sense-and-the-american-crisis/') !== 'romantic-regency/index.html') failures.push('Common Sense and The American Crisis must be in Romantic & Regency');
 

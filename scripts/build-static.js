@@ -6,6 +6,7 @@ const { hardbacks } = require('./format-release-data');
 const { bookEditionSchemas, paperbackEditionSchema } = require('./book-edition-schema');
 const septemberCatalogue = require('./september-catalogue-data.json');
 const conciseCatalogue = require('./concise-catalogue-data.json');
+const octoberCatalogue = require('./october-catalogue-data.json');
 const { seasons, booksFor, hrefFor } = require('./seasonal-helpers');
 const { loadBooks } = require('./book-data');
 const { renderToolkit } = require('./study-toolkit');
@@ -254,7 +255,7 @@ function addBookStructuredData(html, source) {
   const { book, collection } = context;
   if (!book) return html;
   const pairedFormats = hardbacks.find(edition => edition.href === book.href);
-  const suppliedPaperback = [...septemberCatalogue, ...conciseCatalogue].find(edition => edition.href === book.href && edition.format === 'paperback');
+  const suppliedPaperback = [...septemberCatalogue, ...conciseCatalogue, ...octoberCatalogue].find(edition => edition.href === book.href && edition.format === 'paperback');
   const editionImageUrl = filename => absoluteUrl(optimisedImage('/' + encodeURIComponent(filename).replace(/'/g, '%27')));
   const bookAuthors = authorProfileData.authorNamesForBook(book).map(name => ({
     '@type': name === 'Astor Library' ? 'Organization' : 'Person',
@@ -871,7 +872,10 @@ function addEditorialCredit(html, source) {
   // A short catalogue page that has not yet been written up lists no sources
   // to check its claims against, so it says only where its copy came from.
   const conciseEdition = book && conciseCatalogue.find(edition => edition.href === book.href);
-  const copy = conciseEdition && !(conciseEdition.sources || []).length
+  const octoberEdition = book && octoberCatalogue.find(edition => edition.href === book.href);
+  const copy = octoberEdition
+    ? (octoberEdition.publicProductUnavailable ? 'Edition description and paperback details checked in Amazon KDP.' : 'Edition description and paperback details checked against the Amazon listing.')
+    : conciseEdition && !(conciseEdition.sources || []).length
     ? 'Edition contents and description supplied by Astor Library.'
     : book
     ? 'Dates, publication details and historical claims are checked against the sources listed on this page.'

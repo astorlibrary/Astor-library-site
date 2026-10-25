@@ -552,10 +552,19 @@ module.exports = [
 // Subject shelves link the shared book page and therefore show its paperback
 // artwork; labelled hardcover offers remain on the edition's format panel.
 const septemberCatalogue = require('./september-catalogue-data.json');
+const paperbackFormats = require('./book-formats.json');
+const canonicalBookRecords = new Map(require('./book-data').loadBooks().map(book => [book.slug, book]));
 const existingSubjectBooks = new Map(module.exports.flatMap(subject => subject.books).map(book => [book.href, book]));
 function septemberSubjectBook(slug, year, copy) {
   const book = septemberCatalogue.find(entry => entry.slug === slug);
-  if (!book) throw new Error(`Unknown September subject book: ${slug}`);
+  // A withdrawn hardback does not withdraw the work's paperback or its subject
+  // memberships. Reuse the canonical work and its primary paperback buying row.
+  if (!book) {
+    const canonical = canonicalBookRecords.get(slug);
+    const paperback = paperbackFormats[slug]?.find(row => row.format === 'Paperback' && row.url === `https://astorlibrary.com/go/${slug}`);
+    if (!canonical || !paperback) throw new Error(`Unknown September subject book: ${slug}`);
+    return { href: canonical.href, title: canonical.title, author: canonical.author, year, image: paperback.image, copy };
+  }
   const image = book.format === 'hardcover' ? book.paperbackImage : book.image;
   if (!image) throw new Error(`No canonical paperback artwork for subject book: ${slug}`);
   return { href: book.href, title: book.title, author: book.author, year, image: '/' + encodeURIComponent(image).replace(/'/g, '%27'), copy };
