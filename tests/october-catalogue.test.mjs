@@ -28,14 +28,9 @@ test('new paperbacks keep their verified edition identity across page, format bo
     assert.equal(paperback.length, 1);
     assert.equal(decodeURIComponent(paperback[0].image), '/' + book.image);
     assert.equal(paperback[0].url, book.purchaseUrl);
-    const destination = links.books[book.slug].destinations.GB;
-    if (book.slug === 'pygmalion') {
-      assert.equal(destination.kind, 'search', 'KDP identity is confirmed but the public UK product page was unavailable');
-      assert.equal(new URL(destination.url).searchParams.get('k'), book.asin);
-    } else {
-      assert.equal(destination.kind, 'product');
-      assert.equal(new URL(destination.url).pathname, '/dp/' + book.asin);
-    }
+    const destination = links.books[book.slug].destinations[book.slug === 'pygmalion' ? 'US' : 'GB'];
+    assert.equal(destination.kind, 'product');
+    assert.equal(new URL(destination.url).pathname, '/dp/' + book.asin);
     const html = fs.readFileSync('dist' + book.href + 'index.html', 'utf8');
     assert.ok(html.includes(book.isbn));
     assert.ok(html.includes(book.purchaseUrl));

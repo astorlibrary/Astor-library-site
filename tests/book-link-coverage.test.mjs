@@ -32,8 +32,10 @@ test('every registered book routes to its configured country and offers a choose
       const req = new Request(`https://astorlibrary.com/go/${slug}`);
       Object.defineProperty(req, 'cf', { value: { country } });
       const response = handleBookRedirect(req);
-      assert.equal(response.status, destination.kind === 'product' ? 302 : 200, `${slug}/${country}`);
-      if (destination.kind === 'product') assert.equal(response.headers.get('Location'), destination.url);
+      const fallback = book.fallbackCountry && book.destinations[book.fallbackCountry];
+      const product = destination.kind === 'product' ? destination : fallback?.kind === 'product' ? fallback : null;
+      assert.equal(response.status, product ? 302 : 200, `${slug}/${country}`);
+      if (product) assert.equal(response.headers.get('Location'), product.url);
     }
     const response = handleBookRedirect(new Request(`https://astorlibrary.com/go/${slug}?choose=1`));
     assert.equal(response.status, 200);

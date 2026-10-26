@@ -6454,22 +6454,23 @@
       "format": "Paperback",
       "destinations": {
         "GB": {
-          "url": "https://www.amazon.co.uk/s?k=B0HN5BYSMR",
-          "kind": "search"
+          "kind": "unavailable"
         },
         "US": {
-          "url": "https://www.amazon.com/s?k=B0HN5BYSMR",
-          "kind": "search"
+          "url": "https://www.amazon.com/dp/B0HN5BYSMR",
+          "kind": "product"
         },
         "CA": {
-          "url": "https://www.amazon.ca/s?k=B0HN5BYSMR",
-          "kind": "search"
+          "url": "https://www.amazon.ca/dp/B0HN5BYSMR",
+          "kind": "product"
         },
         "AU": {
-          "url": "https://www.amazon.com.au/s?k=B0HN5BYSMR",
-          "kind": "search"
+          "url": "https://www.amazon.com.au/dp/B0HN5BYSMR",
+          "kind": "product"
         }
-      }
+      },
+      "fallbackCountry": "US",
+      "note": "The UK product page is currently unavailable. The Astor paperback is listed on Amazon US, Canada and Australia."
     }
   }
 }

@@ -91,3 +91,9 @@ The Kindle ASINs are paired with the physical ASINs supplied by the owner. See
 `docs/catalogue-update-september-2026.json` for the new destinations and evidence.
 Unconfirmed regional destinations use a labelled exact-ASIN search through the
 Astor chooser. Retailer availability can change after a listing is checked.
+
+## Verified product fallback
+
+A book may declare `fallbackCountry` when a particular marketplace has no product listing but an exact edition is verified elsewhere. An ordinary `/go/slug` request uses its local product destination first, then the configured verified product fallback. Only a `kind: product` fallback is accepted. Explicit `?country=` choices and `?choose=1` retain their existing behaviour. This does not turn an unconfirmed search into an automatic redirect.
+
+Pygmalion uses the verified US product as its fallback because the UK product page was missing when checked on 26 October 2026. The US, Canadian and Australian destinations are direct pages for B0HN5BYSMR. Its public page and buying link must not be changed back to Amazon search links.

@@ -874,7 +874,7 @@ function addEditorialCredit(html, source) {
   const conciseEdition = book && conciseCatalogue.find(edition => edition.href === book.href);
   const octoberEdition = book && octoberCatalogue.find(edition => edition.href === book.href);
   const copy = octoberEdition
-    ? (octoberEdition.publicProductUnavailable ? 'Edition description and paperback details checked in Amazon KDP.' : 'Edition description and paperback details checked against the Amazon listing.')
+    ? 'Edition description and paperback details checked against the Amazon listing.'
     : conciseEdition && !(conciseEdition.sources || []).length
     ? 'Edition contents and description supplied by Astor Library.'
     : book
