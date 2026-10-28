@@ -277,7 +277,7 @@ module.exports = [
     introduction: {
       heading: 'A case is solved twice: by the detective and by the storyteller.',
       paragraphs: [
-        'Detective fiction creates a double movement. Someone inside the story gathers traces and constructs an explanation; the narrative decides when the reader may see those traces and what they appear to mean. A solution can be logically sound and still owe its force to delay, selection and performance.',
+        'A detective story is told twice. Someone inside the story gathers traces and constructs an explanation; the narrative decides when the reader may see those traces and what they appear to mean. A solution can be logically sound and still owe its force to delay, selection and performance.',
         'The Moonstone distributes its evidence among witnesses whose voices reveal character as well as fact. Conan Doyle’s most important formal decision is Watson. Holmes notices a cuff, a footprint or a timetable, but it is Watson who writes the case up, with weather, rooms, clients, doubt and a final account. Both forms make the record of an investigation part of the mystery.'
       ]
     },
@@ -389,7 +389,7 @@ module.exports = [
       heading: 'A made-up world can make ordinary language look newly strange.',
       paragraphs: [
         'Satire rarely announces a safe position outside the foolish world it describes. It imitates a travel report, proposal, scientific debate or public slogan until the borrowed form begins to expose itself. The reader has to judge what is said, and also the voice, scale and assumptions that make it sound reasonable.',
-        'The shelf here includes works that must be distinguished. Utopia is a dialogue and imagined commonwealth; The Prince is political analysis, not fiction or a simple handbook of wickedness; Gulliver’s Travels is a satirical voyage; The Man Who Was Thursday is a philosophical nightmare wearing the clothes of a chase; Animal Farm is a political fable and allegory. Their methods cross without making their genres identical.'
+        'The books here are of different kinds. Utopia is a dialogue and imagined commonwealth; The Prince is political analysis, not fiction or a simple handbook of wickedness; Gulliver’s Travels is a satirical voyage; The Man Who Was Thursday is a philosophical nightmare wearing the clothes of a chase; Animal Farm is a political fable and allegory. They share methods without being the same kind of book.'
       ]
     },
     methods: [
@@ -633,7 +633,7 @@ addSubjectBooks('slavery-freedom-abolition', [
 
 const comedySubject = module.exports.find(subject => subject.slug === 'comedy');
 comedySubject.description = 'Sixteen Shakespeare comedies and romances, from The Comedy of Errors to The Tempest, beside Wilde, Jerome, the Grossmiths, Twain and Montgomery.';
-comedySubject.introduction.paragraphs.push('The wider selection includes stage comedy, a suburban diary, a boating narrative and novels. Their comic situations use different forms: Wilde’s invented identities are performed before an audience, while Pooter’s diary and Jerome’s travel account present the explanations of a narrator. These prose works extend the guide beyond Shakespeare without classifying all comic writing as a play.');
+comedySubject.introduction.paragraphs.push('The guide also includes Wilde’s play and some comic prose. Wilde’s characters invent identities in front of an audience; Pooter’s diary and Jerome’s account of the river trip are funny because their narrators explain themselves too much.');
 const tragedySubject = module.exports.find(subject => subject.slug === 'tragedy');
 tragedySubject.description = 'Fourteen tragedies, eleven of them Shakespeare’s, with Marlowe’s Doctor Faustus, Webster’s Duchess of Malfi and Ibsen’s A Doll’s House.';
 tragedySubject.introduction.paragraphs.push('Ibsen’s A Doll’s House provides a later comparison in serious domestic drama. Its ending does not follow the deaths that close many early modern tragedies; the household’s crisis instead leads to Nora’s departure. Julius Caesar extends the Shakespeare selection through assassination and the ensuing civil war.');
@@ -651,13 +651,13 @@ module.exports.push(
       { value: 'History', label: 'Work, class and law affect the opportunities available to children' }
     ],
     introduction: { heading: 'The institutions around a child.', paragraphs: [
-      'These books place children in households, schools and communities with rules they are expected to learn. Tom Sawyer bargains with other boys, the railway children adjust to reduced family income, and Anne enters a new household at Green Gables. Each narrative gives those arrangements a particular historical and social setting.',
-      'The guide includes books written for different readerships. A novel about a child is not necessarily a book addressed only to children. Compare the age and position of the character with the voice telling the story: Huck tells his story while it is still close, whereas Pip looks back on his childhood from later life.'
+      'Most of these children live under someone else’s rules. Tom Sawyer is brought up by his Aunt Polly and dodges school, Sunday school and chores; the railway children lose their comfortable London home when their father is taken away, and make a new life in the country on very little money; Anne Shirley arrives at Green Gables by mistake, because the Cuthberts had asked for a boy; Alice spends Wonderland trying to remember her lessons.',
+      'Two of the books are told by the child. Huck tells his story in his own voice soon after the events; Pip looks back on his childhood as a grown man. The others are told about children by narrators who know more than the children do. Not all were written for children: Great Expectations and Huckleberry Finn were written for adults, The Railway Children and Anne of Green Gables for younger readers, though adults have always read them too.'
     ] },
     methods: [
-      { label: 'Household', title: 'Identify the adults responsible', copy: 'Record who supplies money, food, work, discipline and protection. A parent, guardian, employer or school may exercise different kinds of authority.' },
-      { label: 'Education', title: 'Compare lessons with experience', copy: 'Follow what a child is formally taught and what happens outside the lesson. Use the specific disagreement or incident as evidence.' },
-      { label: 'Narration', title: 'Locate the storyteller in time', copy: 'Distinguish a child’s immediate account from an adult’s memory of childhood, and from a narrator describing the child from outside.' }
+      { label: 'Household', title: 'Who is in charge', copy: 'Note who pays for the child’s food and clothes, who punishes and who protects. The answer is rarely a parent: Aunt Polly, the Cuthberts, Mrs Joe and the Widow Douglas all bring up someone else’s child.' },
+      { label: 'Education', title: 'What is taught, and what is learned', copy: 'Compare the schoolroom with everything else. Alice’s lessons come back wrong, Tom learns more from the boys’ own rules than from his teacher, and Huck’s conscience has been trained by a slave-holding town.' },
+      { label: 'Narration', title: 'Who is telling it, and when', copy: 'A child telling the story soon after, an adult remembering, and a narrator describing a child from outside give three different kinds of evidence.' }
     ],
     books: [
       septemberSubjectBook('the-adventures-of-tom-sawyer', '1876', 'School, Sunday school, family discipline and the boys’ own rules in a Missouri town.'),
@@ -668,8 +668,8 @@ module.exports.push(
       existingSubjectBooks.get('/books/great-expectations/')
     ],
     reading: { heading: 'Read the rule and the response together.', paragraphs: [
-      'When a child disobeys, identify the rule before deciding what the incident demonstrates. The account may involve a misunderstanding, a practical difficulty or a conscious rejection. Check how the narrator describes it and how other characters respond.',
-      'Place schooling and family life beside the historical information supplied by each edition. Money, work, enslavement, adoption and access to education do not have the same meaning in every setting. A comparison is more useful when those differences remain visible.'
+      'When a child breaks a rule, first find the rule. Tom’s whitewashing trick works because he understands what makes work feel like a privilege; Anne breaks a slate over Gilbert’s head because he called her Carrots; Huck decides he will go to hell rather than give Jim up. They are three very different kinds of disobedience.',
+      'Then put the family and the school back in their place and time. Money, work, adoption, slavery and schooling did not mean the same in Victorian England, slave-holding Missouri and rural Prince Edward Island, and the notes in each edition give the detail.'
     ] },
     terms: [
       { term: 'Retrospective narration', copy: 'An account told after the events, often from a later stage of life.' },
@@ -697,13 +697,13 @@ module.exports.push(
       { value: 'Change', label: 'Later maps and landscapes may differ from those described in a book' }
     ],
     introduction: { heading: 'Establish where the travellers are going.', paragraphs: [
-      'The journeys in this selection have practical conditions: boats, currents, camps, provisions, work and physical endurance. Jerome’s Thames holiday, Blackwood’s Danube campsite and the sailors in Crane’s The Open Boat involve different aims and different degrees of danger.',
-      'Travel writing also requires attention to the form of the account. Seven Pillars of Wisdom is a participant’s retrospective memoir; White Fang follows an animal through fictional settings; and Coleridge’s poems use speakers whose journeys and landscapes cannot be treated as the author’s travel diary. Keep those distinctions when comparing places across books.'
+      'These journeys have practical limits: what a boat can carry, how far a sled team can run, where water can be found. Jerome’s three friends row up the Thames with too much luggage; Blackwood’s two travellers camp on an island of willows in the flooded Danube; Lawrence’s war in the desert depends on wells, camels and the Hejaz Railway; the four men in Crane’s open boat are trying to reach a beach through the surf.',
+      'They are also different kinds of account. Seven Pillars of Wisdom is the memoir of a man who took part; Three Men in a Boat is a comic novel drawn from real trips up the river; White Fang and The Call of the Wild follow animals through invented stories set in the real Klondike; and the speakers of Coleridge’s poems make imagined journeys, even through landscapes he knew.'
     ] },
     methods: [
-      { label: 'Route', title: 'Follow the practical itinerary', copy: 'Check distances, transport, weather and supplies. These details explain what movement is possible and who the traveller depends on.' },
-      { label: 'Evidence', title: 'Separate record from fiction', copy: 'A real journey may provide background for a story without proving that its incidents happened to the author.' },
-      { label: 'Landscape', title: 'Use the appropriate historical map', copy: 'Names, borders, rivers and buildings can change. The edition’s historical geography may explain a difference from the present-day location.' }
+      { label: 'Route', title: 'The practical journey', copy: 'Distances, weather, supplies and transport decide what the travellers can do and whom they depend on.' },
+      { label: 'Evidence', title: 'Record and story', copy: 'A real journey can lie behind a story without proving that its events happened. Lawrence’s memoir and London’s novels both draw on real places; only the memoir claims to be a record.' },
+      { label: 'Landscape', title: 'Then and now', copy: 'Rivers are engineered, borders move and towns empty. The Danube Blackwood knew has been changed by later works on the river, and the Klondike that London saw in 1897 was half deserted a few years later.' }
     ],
     books: [
       septemberSubjectBook('three-men-in-a-boat', '1889', 'The Thames journey is accompanied by notes on places, prices, boating and camping.'),
@@ -720,8 +720,8 @@ module.exports.push(
       existingSubjectBooks.get('/books/the-odyssey/')
     ],
     reading: { heading: 'Keep the traveller’s position in view.', paragraphs: [
-      'Identify whether the account is made during a journey or afterwards. A memoirist can know the outcome of an event that the traveller did not yet understand. A fictional narrator can select and arrange a route for different purposes.',
-      'Then consider what the account permits its traveller to see. Work, money, authority, local knowledge and language affect access. The historical notes offer evidence about those conditions; the narrative provides the particular encounters to examine.'
+      'Ask when the account was written. Lawrence wrote and rewrote Seven Pillars years after the war, knowing how it ended; a traveller in the middle of a journey does not know how it will turn out.',
+      'Then ask what the traveller is in a position to see. Money, rank, language and local knowledge decide who is helped and who is ignored, and the notes give the history behind each journey.'
     ] },
     terms: [
       { term: 'Itinerary', copy: 'The sequence of places and stages in a journey.' },
@@ -750,13 +750,13 @@ module.exports.push(
       { value: 'Afterlives', label: 'Stories can acquire a seasonal association after their first publication' }
     ],
     introduction: { heading: 'Distinguish the holiday from the history of the text.', paragraphs: [
-      'The books in this guide include stories written for seasonal publication and works associated with a holiday by later readers. Dickens’s short Christmas books belong to a particular publishing sequence. The stories gathered in Sleepy Hollow and Other American Halloween Stories were not originally written for Halloween; the edition explains how the later association developed.',
-      'The historical collections also examine food, charitable activity, publishing, legislation and celebration. Their complete primary texts stand beside commentary and documents.'
+      'Some of these books were written for the season. Dickens published a Christmas book every year from 1843 to 1848, except 1847, to be bought and read at Christmas. Others found their season later. The Legend of Sleepy Hollow is set in autumn and has a ghost in it, but Irving did not write it for Halloween, and the edition shows how these stories came to be read at the end of October.',
+      'The two historical collections, A Victorian Christmas and A Victorian Bonfire Night, print the original documents beside chapters on food, charity, publishing and the law.'
     ] },
     methods: [
-      { label: 'Date', title: 'Check first publication', copy: 'Distinguish an original story’s date from the later anthology in which it appears and from the period of the customs under discussion.' },
-      { label: 'Contents', title: 'Identify each kind of material', copy: 'Stories, poems, documents and editorial chapters have different functions. A full contents list prevents a collection from being mistaken for one novel.' },
-      { label: 'Custom', title: 'Follow the documentary evidence', copy: 'Laws, prices, magazines, illustrations and advertisements can establish when a practice was recorded or promoted.' }
+      { label: 'Date', title: 'When it first appeared', copy: 'Keep apart the date a story was first printed, the date of the anthology that reprints it and the period of the customs it describes. Christmas annuals were often dated for the coming year and sold before it began.' },
+      { label: 'Contents', title: 'What kind of writing it is', copy: 'Stories, poems, documents and editorial chapters do different jobs, and a collection is not a novel.' },
+      { label: 'Custom', title: 'What the evidence shows', copy: 'A law records a measure, an advertisement what a seller offered, a reminiscence what someone remembered later. Each custom has its own dates.' }
     ],
     books: [
       septemberSubjectBook('american-christmas-stories', '1823–1905 · anthology', 'Eight stories and one poem accompany researched chapters on American Christmas customs and publishing.'),
@@ -769,8 +769,8 @@ module.exports.push(
       { href: '/books/a-victorian-bonfire-night/', title: 'A Victorian Bonfire Night', author: 'James Orchard Halliwell, Douglas Jerrold and others', year: 'Historical collection', image: '/A%20Victorian%20Bonfire%20Night%20Main%20Cover.png', copy: 'Primary texts and researched history concerning the Fifth of November.' }
     ],
     reading: { heading: 'Compare what was written with how it was later used.', paragraphs: [
-      'A story’s present seasonal popularity does not by itself identify its original purpose. Start with the first-publication note and the setting of the story, then follow the edition’s account of later reprinting, performance and holiday association.',
-      'For historical customs, ask what each source establishes. A law records a particular legal measure; an advertisement records what a seller offered; a reminiscence records a later account. Their dates and geographical limits matter when describing a holiday’s history.'
+      'A story’s place in the season now does not tell you why it was written. Start with where and when it first appeared, then follow how it was reprinted, performed and attached to a holiday.',
+      'With customs, keep dates and places precise. A Christmas tree recorded in one household is not evidence that every family had one, and a bonfire custom in Lewes does not describe the whole country.'
     ] },
     terms: [
       { term: 'Anthology', copy: 'A selected collection of separately composed works, sometimes accompanied by new editorial material.' },
