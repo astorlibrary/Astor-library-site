@@ -218,6 +218,8 @@ function repeatsDetails(note, detailsHtml) {
 
 function formatRows(formats, mainImage, listHtml, bookTitle, detailsHtml) {
   if (!formats || !formats.length) return '';
+  // The Hardbacks page links to #hardback-edition on each book's page.
+  const firstHardback = formats.find(format => format.format === 'Hardback');
   return formats.map(format => {
     const isStudy = /study/i.test(format.format);
     const edition = isStudy ? STUDY_EDITIONS.get(format.url) : null;
@@ -235,7 +237,8 @@ function formatRows(formats, mainImage, listHtml, bookTitle, detailsHtml) {
       : '';
     const more = format.page ? '<a class="book-format-more" href="' + escapeHtml(format.page) + '">About this edition</a>' : '';
     const unavailable = format.unavailableIn ? ' data-unavailable-in="' + escapeHtml(format.unavailableIn.join(' ')) + '"' : '';
-    return '<li class="book-format astor-buy-item' + (thumb ? ' has-cover' : '') + '"' + unavailable + '>' + thumb +
+    const anchor = format === firstHardback ? ' id="hardback-edition"' : '';
+    return '<li class="book-format astor-buy-item' + (thumb ? ' has-cover' : '') + '"' + anchor + unavailable + '>' + thumb +
       '<div class="book-format-text"><p class="book-format-name">' + escapeHtml(label) + named + '</p>' + note + more + '</div>' +
       '<p class="astor-buy-actions"><a class="book-format-buy astor-buy-button" href="' + escapeHtml(format.url) + '" rel="noopener">Buy on Amazon</a></p></li>';
   }).join('');
