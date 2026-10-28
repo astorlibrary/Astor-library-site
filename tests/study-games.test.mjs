@@ -203,3 +203,20 @@ test('fill the line only ever blanks whole words', () => {
     }
   }
 });
+
+test('no browser script builds a lookbehind, which Safari before 16.4 cannot compile', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const root = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'assets');
+  const scripts = [];
+  (function walk(dir) {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) walk(full);
+      else if (/\.m?js$/.test(entry.name)) scripts.push(full);
+    }
+  })(root);
+  for (const file of scripts) {
+    assert.ok(!/\(\?<[=!]/.test(fs.readFileSync(file, 'utf8')), path.relative(root, file) + ' uses a lookbehind');
+  }
+});

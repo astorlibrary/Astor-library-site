@@ -165,6 +165,14 @@ export function clozeWords(text, declared, random = Math.random) {
     .map(entry => entry.clean);
 }
 
+// The start of a whole word: not inside one, and not after an elision such
+// as the "o'" of "o'erleaps". Checked here rather than with a lookbehind,
+// which Safari before 16.4 cannot compile.
+function startsWord(text, at) {
+  const before = text.slice(0, at);
+  return !/[\p{L}\p{N}]$/u.test(before) && !/\p{L}['’]$/u.test(before);
+}
+
 export function fillTheLine(book, random = Math.random) {
   const vocabulary = [...new Set(book.quotations.flatMap(quotation =>
     quotation.text.split(/\s+/).map(word => word.replace(/[^\p{L}'’-]/gu, ''))
@@ -183,7 +191,9 @@ export function fillTheLine(book, random = Math.random) {
       // A whole word only: "woo" must not blank the start of "woo'd", nor
       // "self" the end of "myself". A possessive is fine: "The game's afoot".
       const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const match = new RegExp('(?<![\\p{L}\\p{N}])(?<!\\p{L}[\'’])' + escaped + '(?![\\p{L}\\p{N}])(?![\'’](?!s(?!\\p{L}))\\p{L})', 'iu').exec(remaining);
+      const pattern = new RegExp(escaped + '(?![\\p{L}\\p{N}])(?![\'’](?!s(?!\\p{L}))\\p{L})', 'giu');
+      let match;
+      while ((match = pattern.exec(remaining)) && !startsWord(remaining, match.index)) { /* try the next one */ }
       if (!match) return null;
       const at = match.index;
       segments.push(remaining.slice(0, at));
