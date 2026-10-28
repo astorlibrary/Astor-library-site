@@ -191,7 +191,7 @@ module.exports = {
         label: 'Serial form',
         title: 'Thirty-two weekly instalments',
         body: [
-          'The Moonstone ran in Dickens’s All the Year Round and in Harper’s Weekly from 4 January to 8 August 1868. Collins wrote for readers who had to wait a week between parts: narrators hand over, letters are held back, and discoveries come at the end of an instalment.',
+          'The Moonstone ran in Dickens’s All the Year Round and in Harper’s Weekly from 4 January to 8 August 1868. Collins wrote for readers who had to wait a week between parts, so narrators hand over, letters are held back, and discoveries come at the end of an instalment.',
           'Tinsley Brothers published the three-volume edition in July, before the serial had finished, so a reader who bought the book could know the ending before the magazine printed it.'
         ]
       },
@@ -199,7 +199,7 @@ module.exports = {
         label: 'Empire',
         title: 'Seringapatam',
         body: [
-          'British forces captured Seringapatam in 1799 during the Fourth Anglo-Mysore War. The prologue begins there: John Herncastle takes the diamond in the sack of the city, and it comes to his niece Rachel Verinder through his will.',
+          'British forces captured Seringapatam in 1799 during the Fourth Anglo-Mysore War. The prologue begins there. John Herncastle takes the diamond in the sack of the city, and it comes to his niece Rachel Verinder through his will.',
           'The three Brahmins who follow the diamond to England are drawn partly from Victorian stereotypes of Indian mystery. But the novel is clear that the English claim to the stone begins with a theft, and its last pages return the diamond to the forehead of the moon-god in India.'
         ]
       },
@@ -331,7 +331,7 @@ module.exports = {
         title: 'Boston publication and a Canadian world',
         body: [
           'Montgomery signed with the Boston firm L. C. Page in April 1907, and the novel appeared in June 1908. This edition follows that first edition, keeping its spelling and punctuation, which later British printings sometimes changed.',
-          'The book sold well at once and was translated into Swedish in 1909. Its world stays local all the same: farm work, the district school, church, the roads, and a household that has to count its money.'
+          'The book sold well at once and was translated into Swedish in 1909. Its world stays local all the same, with its farm work, the district school, church, the roads, and a household that has to count its money.'
         ]
       }
     ],
@@ -559,7 +559,7 @@ module.exports = {
         title: 'A story written while readers waited',
         body: [
           'Collins began writing on 15 August 1859. Serial publication in Dickens’s All the Year Round and Harper’s Weekly began on 26 November, while much of the novel still had to be composed. He completed the manuscript on 26 July 1860; the British serial ended on 25 August.',
-          'Collins was writing only weeks ahead of the printers, and had to keep the whole chronology straight as he went. He did not quite manage it: the dates around Laura’s journey to London do not work in the first book edition, and he corrected them for the edition of 1861.'
+          'Collins was writing only weeks ahead of the printers, and had to keep the whole chronology straight as he went. He did not quite manage it. The dates around Laura’s journey to London do not work in the first book edition, and he corrected them for the edition of 1861.'
         ]
       },
       {
