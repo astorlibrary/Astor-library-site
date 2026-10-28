@@ -3828,3 +3828,79 @@ main[data-hub="passage"] .passage-hero-cover img {
     width: 88px;
   }
 }
+
+/* The classic literature landing page: the collections as a plain list. */
+main[data-hub="classic"] {
+  max-width: 1120px;
+  padding: 40px 24px 96px;
+  color: var(--text, var(--ed-ink));
+}
+
+main[data-hub="classic"] .hub-intro {
+  display: block;
+  max-width: 46rem;
+  margin: 0;
+  padding: 0 0 36px;
+  border: 0;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+  background: none;
+  box-shadow: none;
+  color: inherit;
+}
+
+main[data-hub="classic"] .hub-intro h1 {
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 clamp(40px, 6vw, 64px)/1.05 var(--serif);
+}
+
+main[data-hub="classic"] .hub-intro .deck {
+  margin: 22px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 20px/1.55 var(--serif);
+}
+
+main[data-hub="classic"] .hub-section {
+  display: block;
+  max-width: 50rem;
+  margin: 40px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+}
+
+main[data-hub="classic"] .hub-section > p {
+  max-width: 46rem;
+  margin: 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 18px/1.65 var(--serif);
+}
+
+main[data-hub="classic"] .hub-section a {
+  color: var(--wine-text, var(--ed-wine));
+  text-underline-offset: 3px;
+}
+
+main[data-hub="classic"] .hub-section h2 {
+  margin: 0 0 16px;
+  color: var(--text, var(--ed-ink));
+  font: 400 34px/1.15 var(--serif);
+}
+
+.hub-entry.hub-entry-plain {
+  grid-template-columns: 1fr;
+}
+
+main[data-hub="classic"] .hub-section {
+  margin-top: 56px;
+}
+
+main[data-hub="classic"] .classic-intro {
+  margin-top: 28px;
+}
+
+main[data-hub="classic"] .hub-links li {
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 18px/1.6 var(--serif);
+}

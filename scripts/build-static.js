@@ -1337,7 +1337,7 @@ function prepareHtml(html, source) {
     html = addContextImageShelf(html, source);
     html = markCollectionPage(html, source);
     html = addStudyEditionPage(html, source);
-    html = plainHubPage(html, pageHref(source));
+    html = plainHubPage(html, pageHref(source), discovery);
   }
   html = addSiteIndexLink(html, source);
   html = addGlobalNavigation(html, source);

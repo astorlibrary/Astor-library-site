@@ -351,7 +351,52 @@ function passagePage(html) {
   });
 }
 
-function plainHubPage(html, href) {
+// --- the classic literature landing page --------------------------------------------
+// Its cards gave book counts and descriptions from before the October books
+// ("Modern Classics: three books"). Both now come from the catalogue index.
+const NUMBER_WORDS = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+
+function classicPage(html, discovery) {
+  return html.replace(/(<main\b[^>]*class="[^"]*\bclassic-page\b[^"]*"[^>]*>)([\s\S]*?)(<\/main>)/, (whole, open, body, close) => {
+    const collections = (discovery && discovery.collections) || [];
+    const books = (discovery && discovery.books) || [];
+    body = body.replace(/<section class="classic-hero">[\s\S]*?<\/section>/, hero =>
+      '<section class="page-intro hub-intro"><h1>' + headingText(inner(hero, 'h1')) + '</h1><p class="deck">' + inner(hero, 'p', 'deck') + '</p></section>');
+    body = body.replace(/<section class="classic-intro">[\s\S]*?<\/section>/,
+      '<section class="classic-intro hub-section"><p>All ' + books.length + ' books can be searched by title, writer, period or subject on the <a href="/library/">All books</a> page. Each book page introduces the book, lists what the Astor edition contains with every format and where to buy it, and gives its publication history and sources. Most also link to a free study guide.</p></section>');
+    body = body.replace(/<section class="section-title">[\s\S]*?<\/section>\s*/, '');
+    body = body.replace(/<section class="classic-periods"([^>]*)>([\s\S]*?)<\/section>/, (section, attributes, content) => {
+      const entries = [...content.matchAll(/<a class="classic-period" href="([^"]+)">([\s\S]*?)<\/a>/g)].map(match => {
+        const href = match[1];
+        const card = match[2];
+        const record = collections.find(item => item.href === href);
+        const title = record ? record.title : plain(inner(card, 'h2'));
+        const count = books.filter(book => book.collection === title).length;
+        const label = count ? (count <= 10 ? NUMBER_WORDS[count].replace(/^./, letter => letter.toUpperCase()) : String(count)) + (count === 1 ? ' book' : ' books') : '';
+        return '<article class="hub-entry hub-entry-plain"><div><h3><a href="' + href + '">' + inner(card, 'h2') + '</a></h3>' +
+          (label ? '<p class="hub-book-meta">' + label + '</p>' : '') +
+          '<p>' + (record ? record.description : inner(card, 'p')) + '</p></div></article>';
+      });
+      return '<section class="classic-periods hub-section"' + attributes + '><h2>The collections</h2><div class="hub-entries">' + entries.join('') + '</div></section>';
+    });
+    // What the editions contain, said once and as it now stands, then the
+    // other ways into the catalogue as a short list.
+    body = body.replace(/<section class="classic-reading">[\s\S]*?<\/section>/,
+      '<section class="classic-reading hub-section"><h2>The editions</h2><p>Every Astor edition prints the complete text. The prose editions add chapter summaries, explanatory notes and historical context; the Shakespeare editions add scene summaries, line numbers and notes on the same page. Study Editions, printed for students, add closer analysis, key quotations and context. Some books are also published in hardback or for Kindle.</p></section>');
+    body = body.replace(/<section class="section-title">[\s\S]*?<\/section>\s*<section class="classic-ways">[\s\S]*?<\/section>/,
+      '<section class="classic-ways hub-section"><h2>Other ways in</h2><ul class="hub-links">' +
+      '<li><a href="/library/">All books</a>, searchable by title, writer, period or subject</li>' +
+      '<li><a href="/reading-routes/">Reading lists</a> that group books from different periods around a question</li>' +
+      '<li><a href="/subjects/">Subject guides</a> to forms such as tragedy, comedy and Gothic fiction</li>' +
+      '<li><a href="/guides/">Study guides</a> to each book, free to read</li>' +
+      '<li><a href="/resources/">Illustrated guides</a> to Shakespeare, Victorian novels, poetry and drama</li></ul></section>');
+    body = stripHeadingStops(stripLabels(body));
+    return open.replace('<main', '<main data-hub="classic"') + body + close;
+  });
+}
+
+function plainHubPage(html, href, discovery) {
+  html = classicPage(html, discovery);
   html = passagePage(html);
   html = resourcePage(html);
   html = hardbacksPage(html);
