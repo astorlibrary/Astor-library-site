@@ -1,7 +1,7 @@
 // The quiz runner behind every Revise quiz and Today's questions.
 //
 // A round is played, not read. The progress bar fills green and red as the
-// reader goes, with a running score and a streak; each question is one card;
+// reader goes, with a running score; each question is one card;
 // an answer is marked on the card itself, with a one-line verdict and the
 // Next button beside it, and the full note folded away for anyone who wants
 // it. Each kind of question has its own way of being answered:
@@ -22,9 +22,9 @@
 // moves on, R starts again at the end.
 
 import { el, clear, shuffle, announce, prefersReducedMotion, formatYear } from './util.mjs';
-import { recordScore, reviewCard, scores, toggleCommonplace, inCommonplace, isRemembering, streak } from './store.mjs';
+import { recordScore, reviewCard, scores, toggleCommonplace, inCommonplace, isRemembering } from './store.mjs';
 import { cardId } from './data.mjs';
-import { quotationKey, quotationFor, firstSentence, drawing, quizName, shortTitle, monogram, coverImage, quoted, headerOffset, motif, hasMotifs, burst, currentBook } from './revise-kit.mjs';
+import { quotationKey, quotationFor, firstSentence, drawing, quizName, shortTitle, monogram, coverImage, quoted, headerOffset, motif, hasMotifs, currentBook } from './revise-kit.mjs';
 
 const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
 
@@ -61,7 +61,6 @@ const yearValue = label => {
 
 const CHECK = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>';
 const CROSS = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></svg>';
-const STAR = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.6 6.1 6.6.6-5 4.4 1.5 6.5L12 17l-5.7 3.4 1.5-6.5-5-4.4 6.6-.6Z"/></svg>';
 
 export class QuizRound {
   // options: { gameId, book (full record or null), meta (shelf entry), practice,
@@ -81,8 +80,6 @@ export class QuizRound {
     this.answers = [];
     this.picked = [];
     this.helped = [];
-    this.run = 0;
-    this.bestRun = 0;
     this.clearQuestionState();
   }
 
@@ -157,10 +154,9 @@ export class QuizRound {
       ]),
       track,
       el('p', { class: 'rx-score' + (bump ? ' is-bump' : ''), 'aria-label': this.score + ' right so far' }, [
-        el('span', { class: 'rx-score-star', 'aria-hidden': 'true', html: STAR }),
-        el('b', { text: String(this.score) })
-      ]),
-      el('p', { class: 'rx-run' + (this.run >= 2 ? ' is-live' : ''), 'aria-hidden': 'true', text: this.run >= 2 ? this.run + ' in a row' : '' })
+        el('b', { text: String(this.score) }),
+        el('span', { text: ' right' })
+      ])
     ]);
   }
 
@@ -534,8 +530,6 @@ export class QuizRound {
     this.answers.push(correct);
     this.helped.push(Boolean(this.hinted && correct));
     this.picked.push(question.kind === 'choice' && !gaveUp ? this.selection : null);
-    this.run = correct && !this.hinted ? this.run + 1 : 0;
-    this.bestRun = Math.max(this.bestRun, this.run);
 
     // A quotation answered here is a review of that line, unless a hint did
     // half the work: then it is neither promoted nor sent back.
@@ -546,9 +540,6 @@ export class QuizRound {
     this.stage.querySelector('.rx-progress')?.replaceWith(this.progress(correct));
     this.card.classList.add(correct ? 'is-correct' : 'is-missed');
     if (correct) {
-      const target = question.kind === 'choice' ? this.optionButtons[question.answer]
-        : question.kind === 'cloze' ? this.container.querySelector('.rx-cloze-line') : this.orderList;
-      burst(target || this.card);
       this.stage.querySelector('.rx-track li:nth-child(' + this.answers.length + ')')?.classList.add('is-fresh');
     }
     if (!correct && !gaveUp) this.shake(this.card);
@@ -583,7 +574,7 @@ export class QuizRound {
     const last = this.index === this.questions.length - 1;
     const tone = correct ? 'is-right' : gaveUp ? 'is-shown' : 'is-wrong';
     const nearly = question.kind === 'order' && !this.hinted && this.order.slips <= 2;
-    const word = correct ? (this.hinted ? 'Right, with a hint' : praise(this.run)) : gaveUp ? 'The answer' : nearly ? 'Nearly' : 'Not quite';
+    const word = correct ? (this.hinted ? 'Right, with a hint' : 'Right') : gaveUp ? 'The answer' : nearly ? 'Nearly' : 'Not quite';
 
     this.onward = el('button', { class: 'rx-button is-primary is-onward', type: 'button', onclick: () => this.next() }, [
       el('span', { text: last ? 'Finish' : 'Next' }), el('span', { 'aria-hidden': 'true', text: '→' })
@@ -609,8 +600,9 @@ export class QuizRound {
     }
     const links = el('p', { class: 'rx-links' });
     const key = quotationKey(question);
-    const href = question.book?.href ? question.book.href + (key ? '#astor-quote-' + key.id : '') : '';
-    if (href) links.append(el('a', { href, text: key ? 'See it in the book →' : 'Open ' + shortTitle(question.book) + ' →' }));
+    const guide = question.book?.slug ? '/guides/' + question.book.slug + '/' : '';
+    const href = guide ? guide + (key ? 'quotations/#astor-quote-' + key.id : '') : '';
+    if (href) links.append(el('a', { href, text: key ? 'See it in the study guide' : 'The study guide to ' + shortTitle(question.book) }));
     if (key && (quotation || question.quote)) {
       const id = key.slug + ':' + key.id;
       const keep = el('button', {
@@ -701,8 +693,8 @@ export class QuizRound {
 
   // --- the end page ----------------------------------------------------------
 
-  // The result, simply: the stars, the number, a mark for each question, one
-  // line and one thing to do next. The lines missed are there for anyone who
+  // The result, simply: the number, a mark for each question, one line and
+  // one thing to do next. The lines missed are there for anyone who
   // wants them, folded under a link.
   finish() {
     const total = this.questions.length;
@@ -716,17 +708,15 @@ export class QuizRound {
     if (this.options.ownEnd) return;
 
     const ratio = total ? score / total : 0;
-    const bestStars = before?.total ? starsFor(before.best, before.total) : beforeAll?.bestTotal ? starsFor(beforeAll.best, beforeAll.bestTotal) : null;
     const missed = this.questions.map((question, position) => ({ question, position })).filter(entry => !this.answers[entry.position]);
     const step = book && this.options.next ? this.options.next(book) : null;
 
-    const page = el('div', { class: 'rx-results' + (ratio >= 0.8 && !practice ? ' is-shining' : '') });
+    const page = el('div', { class: 'rx-results' });
     const words = resultWords({ score, total, practice, before, pattern: this.pattern(), remembering: isRemembering() });
     page.append(completion({
       score, total, marks: this.answers,
       kicker: practice ? 'The ones you missed' : quizName(gameId),
-      title: words.title, sub: words.sub, badge: words.best ? 'New best' : '',
-      stars: !practice, best: practice ? null : bestStars
+      title: words.title, sub: words.sub
     }));
 
     const actions = el('div', { class: 'rx-results-actions' });
@@ -828,13 +818,6 @@ export class QuizRound {
 
 const quotationCount = missed => missed.filter(entry => quotationKey(entry.question)).length;
 
-const PRAISE = ['Right', 'Yes!', 'Exactly', 'Spot on', 'Correct'];
-function praise(run) {
-  if (run >= 5) return run + ' in a row!';
-  if (run >= 3) return 'Right — ' + run + ' in a row';
-  return PRAISE[Math.floor(Math.random() * PRAISE.length)];
-}
-
 // What the completion screen says, from what actually happened: the score,
 // how it compares with the reader's best and last go on this book, and
 // (passed in as `pattern`) where the misses cluster. Kept free of the page so
@@ -846,67 +829,36 @@ export function resultWords({ score, total, practice = false, before = null, pat
     if (!missed) {
       return {
         title: total === 1 ? 'Put right.' : 'All ' + inWords(total) + ' put right.',
-        sub: remembering ? 'They come back in a day or two, to make sure they stick.' : 'Those lines are yours now.'
+        sub: remembering ? 'They will come back in a day or two.' : ''
       };
     }
     return {
-      title: score ? score + ' of ' + total + ' put right.' : 'Still learning these.',
-      sub: (missed === 1 ? 'One still to learn.' : inWords(missed).replace(/^./, c => c.toUpperCase()) + ' still to learn.') + ' Another go fixes them faster than a new round.'
+      title: score + ' of ' + total + ' put right.',
+      sub: missed === 1 ? 'One still to learn.' : inWords(missed).replace(/^./, c => c.toUpperCase()) + ' still to learn.'
     };
   }
-  let title;
-  if (!missed) title = 'Flawless.';
-  else if (missed === 1 && total >= 5) title = 'One away from perfect.';
-  else if (ratio >= 0.7) title = 'A strong round.';
-  else if (ratio >= 0.5) title = 'More right than wrong.';
-  else if (ratio >= 0.3) title = 'Some of these are sticking.';
-  else if (score) title = 'A tough round.';
-  else title = 'None this time.';
-
+  const title = !missed
+    ? (total === 1 ? 'Right.' : 'All ' + inWords(total) + ' right.')
+    : capitalise(inWords(score)) + ' right, ' + inWords(missed) + ' missed.';
   const bestRatio = before?.total ? before.best / before.total : null;
   const lastRatio = before?.lastTotal ? before.last / before.lastTotal : null;
   const best = bestRatio !== null && ratio > bestRatio;
   let change = '';
-  if (best) change = 'A new best, up from ' + before.best + (before.total !== total ? ' of ' + before.total : '') + '.';
-  else if (lastRatio !== null && ratio > lastRatio) change = 'Up from ' + before.last + ' last time.';
-  const advice = pattern || (ratio < 0.5 && missed ? 'The ones you missed are the lines to learn next.' : '');
-  const sub = [change, advice, starHint(score, total, bestRatio === null ? null : starsFor(before.best, before.total))].filter(Boolean).slice(0, 2).join(' ');
-  // The badge celebrates; on a weak round the line says it quietly instead.
+  if (best) change = 'Your previous best was ' + before.best + (before.total !== total ? ' of ' + before.total : '') + '.';
+  else if (lastRatio !== null) change = 'Last time: ' + before.last + ' of ' + before.lastTotal + '.';
+  const advice = pattern || (ratio < 0.5 && missed ? 'The lines you missed are the ones to learn next.' : '');
+  const sub = [change, advice].filter(Boolean).join(' ');
   return { title, sub, best: best && ratio >= 0.5 };
 }
 
 const NUMBER_WORDS = ['none', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
 const inWords = number => NUMBER_WORDS[number] || String(number);
+const capitalise = text => String(text).replace(/^./, character => character.toUpperCase());
 
-// What the next star asks for, in a sentence.
-export function starHint(score, total, best = null) {
-  const stars = starsFor(score, total);
-  if (stars === 3) return best !== null && best < 3 ? 'All three stars, and a new best.' : 'All three stars.';
-  if (stars === 2) return 'Get all ' + inWords(total) + ' for the third star.';
-  return 'Get ' + starTarget(total) + ' for the second star.';
-}
-
-// Stars, the same everywhere: one for finishing, two for 70 per cent or
-// better (7 out of 10), three for a perfect round.
-export function starsFor(score, total) {
-  if (!total) return 0;
-  if (score >= total) return 3;
-  if (score >= starTarget(total)) return 2;
-  return 1;
-}
-export function starTarget(total) {
-  return Math.max(1, Math.ceil(total * 0.7 - 1e-9));
-}
-
-// The top of every completion screen: up to three stars, the score in large
-// type, a small mark for each question (filled or empty, never red), the
-// headline and one line. `chips` are a few short facts set as one quiet line.
-export function completion({ score, total, kicker, title, chips = [], sub = '', best = null, marks = null, badge = '', stars: showStars = true }) {
-  const stars = starsFor(score, total);
-  const starRow = showStars ? el('p', { class: 'rx-stars', role: 'img', 'aria-label': stars + ' of 3 stars' }) : null;
-  for (let index = 0; showStars && index < 3; index += 1) {
-    starRow.append(el('span', { class: 'rx-star' + (index < stars ? ' is-earned' : ''), style: '--i:' + index, html: STAR }));
-  }
+// The top of every completion screen: the score in large type, a small mark
+// for each question (filled or empty, never red), the headline and one line.
+// `chips` are a few short facts set as one quiet line.
+export function completion({ score, total, kicker, title, chips = [], sub = '', marks = null }) {
   const drawn = hasMotifs();
   const markRow = marks && marks.length ? el('ol', { class: 'rx-results-marks' + (drawn ? ' is-motifs' : ''), 'aria-hidden': 'true', style: '--n:' + marks.length },
     marks.map((right, index) => el('li', { class: right ? 'is-right' : '', style: '--i:' + index }, drawn ? [motif(index)] : []))) : null;
@@ -916,14 +868,12 @@ export function completion({ score, total, kicker, title, chips = [], sub = '', 
     drawn ? el('span', { class: 'rx-results-art', 'aria-hidden': 'true' }) : null,
     drawn && book ? el('p', { class: 'rx-results-book', text: shortTitle(book) }) : null,
     kicker ? el('p', { class: 'rx-results-what', text: kicker }) : null,
-    starRow,
     el('p', { class: 'rx-results-score', role: 'img', 'aria-label': score + ' out of ' + total }, [
       el('b', { 'aria-hidden': 'true', text: String(score) }),
       el('span', { 'aria-hidden': 'true', text: 'out of ' + inWords(total) })
     ]),
     markRow,
     el('div', { class: 'rx-results-words' }, [
-      badge ? el('p', { class: 'rx-results-badge', text: badge }) : null,
       el('h2', { class: 'rx-results-title', tabindex: '-1', text: title }),
       sub ? el('p', { class: 'rx-results-sub', text: sub }) : null,
       chips.length ? el('p', { class: 'rx-results-note', text: chips.join(' · ') }) : null
@@ -931,23 +881,10 @@ export function completion({ score, total, kicker, title, chips = [], sub = '', 
   ]);
 }
 
-// The number counts up and the stars arrive; both are skipped when the
-// reader has asked for less motion.
+// The result fades in, unless the reader has asked for less motion.
 export function celebrate(page) {
   if (prefersReducedMotion()) return;
-  page.animate?.([{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'none' }], { duration: 340, easing: 'cubic-bezier(.2,.7,.2,1)' });
-  const number = page.querySelector('.rx-results-score b');
-  const target = Number(number?.textContent || 0);
-  if (number && target > 0) {
-    const start = performance.now();
-    const tick = now => {
-      const progress = Math.min(1, (now - start) / 800);
-      number.textContent = String(Math.round(target * (1 - Math.pow(1 - progress, 3))));
-      if (progress < 1) requestAnimationFrame(tick);
-    };
-    number.textContent = '0';
-    requestAnimationFrame(tick);
-  }
+  page.animate?.([{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'none' }], { duration: 260, easing: 'ease-out' });
 }
 
 export function scoreRing(score, total, size = 132) {

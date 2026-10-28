@@ -21,28 +21,6 @@
     "url": "https://shakespeare.mit.edu/much_ado/full.html",
     "note": "The Astor edition counts the prose by its printed lines; other modern editions vary."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1598–1599",
-      "note": "Placed by its style and by the company’s records at the end of the 1590s."
-    },
-    {
-      "label": "First printed",
-      "value": "1600",
-      "note": "The First Quarto, printed by Valentine Simmes for Andrew Wise and William Aspley."
-    },
-    {
-      "label": "Source tradition",
-      "value": "The slandered bride",
-      "note": "The Hero plot belongs to a European story family found in Ariosto and in Bandello; Beatrice and Benedick are Shakespeare’s own."
-    },
-    {
-      "label": "Title",
-      "value": "‘Nothing’ and ‘noting’",
-      "note": "The two words sounded close in early modern English, and almost every turn of the plot depends on somebody noting: watching, overhearing or reporting."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -178,11 +156,6 @@
       "summary": "She has the fastest tongue in Shakespearean comedy and uses it, by her own admission, as armour: the play hints at an earlier hurt from Benedick that she will not describe. Her anger after the wedding is the point at which the comedy nearly stops being one.",
       "clue": "She would rather hear her dog bark at a crow than a man swear he loves her, and her first request of the man she finally admits loving is that he kill his friend.",
       "firstAppearance": "1.1",
-      "traits": [
-        "quick",
-        "defended",
-        "morally exact"
-      ],
       "relationships": [
         {
           "to": "benedick",
@@ -225,11 +198,6 @@
       "summary": "His anti-marriage act is loud enough to be a performance, and the gulling scene works by letting him surrender without losing face. He takes Beatrice’s account of the wedding seriously, and he changes sides for her at real cost.",
       "clue": "He swears he will die a bachelor, is talked out of it by three friends shouting in a garden, and ends up challenging his commander’s favourite.",
       "firstAppearance": "1.1",
-      "traits": [
-        "witty",
-        "self-aware",
-        "loyal when it counts"
-      ],
       "relationships": [
         {
           "to": "beatrice",
@@ -269,11 +237,6 @@
       "summary": "She speaks little in the first half and is discussed constantly, and that makes her vulnerable: her reputation exists entirely in other people’s mouths. In 3.1 she runs the trick that catches Beatrice, so the play does show her capable of managing a scene when she is given one.",
       "clue": "Her value is agreed by everyone before she has said fifty words, and it is destroyed in public by a man who never asks her a question.",
       "firstAppearance": "1.1",
-      "traits": [
-        "quiet",
-        "observant",
-        "publicly unmade"
-      ],
       "relationships": [
         {
           "to": "claudio",
@@ -311,11 +274,6 @@
       "summary": "He falls in love by report, asks another man to do his courting, and believes an accusation on the evidence of a window at night. His cruelty at the wedding is a rehearsed public performance, planned the night before, and the play makes him accept a wife sight unseen before it forgives him.",
       "clue": "He never speaks to the woman he loves without an intermediary, and he saves his accusation until the altar so that everybody can hear it.",
       "firstAppearance": "1.1",
-      "traits": [
-        "young",
-        "credulous",
-        "conventional to the point of cruelty"
-      ],
       "relationships": [
         {
           "to": "hero",
@@ -353,11 +311,6 @@
       "summary": "He arranges everything: Claudio’s marriage, the gulling of two friends, and, without meaning to, the conditions in which a lie about Hero can be believed. He ends the play with no partner and one line of consolation offered to him, which several productions have made the quietest moment in the last scene.",
       "clue": "He courts one woman on another man’s behalf, invents the plot that marries two enemies, and is left standing alone at the end of it.",
       "firstAppearance": "1.1",
-      "traits": [
-        "generous",
-        "managing",
-        "unpartnered"
-      ],
       "relationships": [
         {
           "to": "claudio",
@@ -394,11 +347,6 @@
       "summary": "He announces that he is a villain in the play’s third scene and offers no reason beyond his position, which is the interesting thing about him: a defeated bastard brother in a household where legitimacy is everything. He needs to invent almost nothing, because the men around him are ready to believe it.",
       "clue": "He calls himself a plain-dealing villain and says he is trusted with a muzzle; his whole plot amounts to arranging for two people to be seen at a window.",
       "firstAppearance": "1.1",
-      "traits": [
-        "sullen",
-        "honest about his malice",
-        "structurally resentful"
-      ],
       "relationships": [
         {
           "to": "don-pedro",
@@ -427,11 +375,6 @@
       "summary": "Hospitable, pleased with his household, and the first person in the church to believe the accusation against his own daughter. His grief in 5.1 produces the best serious verse in the play, and it is directed at the men who wronged her only after a friar has told him she is innocent.",
       "clue": "He welcomes a prince, gives away a daughter, and at the altar wishes aloud that somebody would lend him a dagger.",
       "firstAppearance": "1.1",
-      "traits": [
-        "genial",
-        "proud",
-        "quick to accept shame"
-      ],
       "relationships": [
         {
           "to": "hero",
@@ -464,11 +407,6 @@
       "summary": "He reverses almost every word he uses and is right about almost every fact. The play’s crime is solved by men the gentry cannot be bothered to listen to, and the running joke about being written down an ass carries a real grievance about who is believed.",
       "clue": "He tells his watchmen to let thieves go sooner than risk a scuffle, and then demands to be written down, on record, as an ass.",
       "firstAppearance": "3.3",
-      "traits": [
-        "pompous",
-        "linguistically catastrophic",
-        "effective"
-      ],
       "relationships": [
         {
           "to": "leonato",
@@ -496,11 +434,6 @@
       "summary": "She stands at the window in her mistress’s clothes and is the physical cause of the catastrophe, and the play excuses her in a line and a half without asking what she thought she was doing. Her bawdy jokes on the wedding morning are the last cheerful thing said before the church scene.",
       "clue": "She wears her mistress’s gown at a window one night, and the play forgives her in half a sentence without ever letting her explain.",
       "firstAppearance": "2.1",
-      "traits": [
-        "bawdy",
-        "socially ambitious",
-        "barely accounted for"
-      ],
       "relationships": [
         {
           "to": "hero",
@@ -1223,124 +1156,6 @@
       "lat": 51.5074,
       "lon": -0.1278,
       "note": "Where the 1600 quarto was printed and where the Lord Chamberlain’s Men first played it."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "The play belongs to Beatrice and Benedick",
-      "summary": "On this reading the inherited slandered-bride plot is the frame and the invented couple are the picture: the comedy’s real subject is two intelligent people arguing themselves out of a defence.",
-      "counter": "It leaves Act IV hard to account for, since the church scene is among the longest in the play and its most serious writing, and Hero is at the centre of it."
-    },
-    {
-      "position": "A comedy about evidence",
-      "summary": "Criticism has long noticed that nothing here is learned first-hand. The same technique, a scene staged for a watcher, makes one marriage and nearly destroys another, which makes the play an argument about how societies decide what is true.",
-      "counter": "The truth comes out because Borachio confesses, and nobody reasons their way to it, so the play may be less confident about evidence than this reading suggests."
-    },
-    {
-      "position": "A play about what men are permitted to do",
-      "summary": "Recent stage practice and criticism have concentrated on Claudio’s public shaming of Hero, Leonato’s readiness to believe it, and Beatrice’s fury that revenge is a man’s office. The second wedding leaves the comedy open.",
-      "counter": "Hero herself is given no scene in which to judge Claudio, which makes it difficult to say what the play thinks the right ending would be."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Shakespeare use deception in Much Ado About Nothing?",
-      "focus": "Overhearing, evidence and the two plots",
-      "plan": [
-        "Establish the pattern: nobody in this play learns anything except by watching or being told.",
-        "Compare the two gulling scenes, 2.3 and 3.1, and note that each accuses its target of the fault they most fear.",
-        "Set Don John’s window scene against them, and observe that Shakespeare never stages it.",
-        "Add the Friar’s false report of Hero’s death as a third kind of lie, used as medicine.",
-        "Conclude on the watch: the truth arrives from the people nobody bothered to listen to in 3.5."
-      ]
-    },
-    {
-      "question": "Discuss the presentation of Beatrice.",
-      "focus": "Wit, anger and the limits of comedy",
-      "plan": [
-        "Begin with 1.1, where she asks after Benedick before admitting she has any interest in him.",
-        "Read her wit as a defence, and support the reading with her hint at an earlier hurt: ‘he lent it me awhile’ (2.1).",
-        "Use the rhymed verse of 3.1.110 to show how completely the trick works, and how much she concedes in the image of the tamed bird.",
-        "Turn to 4.1: the repeated wish to be a man, and the demand that Benedick act because she cannot.",
-        "Close by asking whether the last scene’s discovered sonnet restores the comedy or simply puts the armour back on."
-      ]
-    },
-    {
-      "question": "Is Claudio forgivable?",
-      "focus": "Reputation, repentance and the second wedding",
-      "plan": [
-        "Look at how he falls in love: by report, through a proxy, with a woman he has scarcely spoken to.",
-        "Show that the denunciation at 4.1.28 is planned: he told Don John he would shame her ‘in the congregation’ (3.2), and he waits for the altar and an audience.",
-        "Weigh the mourning of 5.3 against the fact that he agrees to marry an unseen cousin the next morning.",
-        "Consider what the play withholds: Hero never accuses him, and no character demands that he explain himself.",
-        "Decide whether the play wants Claudio forgiven, or simply moves on and leaves the audience to judge him."
-      ]
-    },
-    {
-      "question": "What is the function of Dogberry and the watch?",
-      "focus": "Class, language and who gets believed",
-      "plan": [
-        "Set out the joke first: a constable who reverses his words and instructs his men to avoid arresting anyone.",
-        "Show that the watch nevertheless overhear the confession that solves the plot, in 3.3.",
-        "Make 3.5 the centre of the argument: Leonato is in a hurry and will not listen, and the wedding goes ahead.",
-        "Read the ‘write me down an ass’ joke as a grievance about record and testimony as well as a gag.",
-        "Conclude on the reversal: the gentlemen read signs badly and the fools take statements accurately."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Both love plots are begun by a lie. Does the play think that matters?",
-    "Shakespeare never shows the scene at Hero’s window. What does the play gain by keeping it offstage?",
-    "‘Kill Claudio’ usually gets a laugh. Should it?",
-    "Leonato believes the accusation against his own daughter before anyone else does. Is he forgiven too easily?",
-    "Don Pedro ends the play without a partner. What should a production do with him in the final dance?"
-  ],
-  "related": [
-    {
-      "href": "/books/twelfth-night/",
-      "why": "The next of the great comedies, and the other one in which a joke played on a self-important man goes too far to be laughed off."
-    },
-    {
-      "href": "/books/as-you-like-it/",
-      "why": "Written within a year or two, and the closest comparison for two people talking themselves into love in prose."
-    },
-    {
-      "href": "/books/the-winters-tale/",
-      "why": "The same accusation of a faithful woman, taken seriously enough to kill a child and to need sixteen years to mend."
-    },
-    {
-      "href": "/books/othello/",
-      "why": "The slandered-wife plot again, with the malicious deceiver given a full part and no comic constables to stop him."
-    },
-    {
-      "href": "/books/a-midsummer-nights-dream/",
-      "why": "Shakespeare’s other comedy of people made to love on someone else’s instruction, with the trickery done by magic instead of gossip."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Beatrice's Journey | Much Ado about Nothing: in performance | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "I6oD1VxRYL0",
-      "url": "https://www.youtube.com/watch?v=I6oD1VxRYL0",
-      "note": "Michelle Terry, who played Beatrice for the RSC in 2014, traces how the character changes across the play.",
-      "source": "RSC Shakespeare Learning Zone"
-    },
-    {
-      "title": "Voice - Text Work | Blank Verse from 'Much Ado About Nothing' | National Theatre",
-      "provider": "youtube-nocookie",
-      "id": "5pQ_JbzdAb8",
-      "url": "https://www.youtube.com/watch?v=5pQ_JbzdAb8",
-      "note": "A National Theatre voice coach works with an actor on a verse speech from the play, which makes the rhythm of blank verse easy to hear.",
-      "source": "National Theatre"
-    },
-    {
-      "title": "'Much Ado About Nothing' Designer Grace Smart Breaks Down Costumes and Set | Shakespeare's Globe",
-      "provider": "youtube-nocookie",
-      "id": "xJ6GlRZp_CM",
-      "url": "https://www.youtube.com/watch?v=xJ6GlRZp_CM",
-      "note": "The designer of a Globe production explains how costume and set express character and status, a useful view of the play as something staged.",
-      "source": "Shakespeare's Globe"
     }
   ]
 }

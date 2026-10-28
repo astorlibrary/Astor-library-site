@@ -21,28 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/1041/pg1041.txt",
     "note": "A modern-spelling text in the 1609 order. It keeps elided forms such as ruin’d and show’st, and at 126.2 it prints “his fickle hour” where many editions read “his sickle, hour”. Quotations here follow it exactly."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1591–1604",
-      "note": "Two of the poems were in print by 1599 and Francis Meres had heard of the others by 1598, so the sequence was long in the making."
-    },
-    {
-      "label": "First printed",
-      "value": "1609",
-      "note": "Thomas Thorpe entered SHAKE-SPEARES SONNETS in the Stationers’ Register on 20 May 1609. Whether Shakespeare authorised it is still argued."
-    },
-    {
-      "label": "Shape",
-      "value": "154 poems in one order",
-      "note": "Three quatrains and a couplet, rhyming abab cdcd efef gg: the form Surrey devised and Shakespeare made his own."
-    },
-    {
-      "label": "Address",
-      "value": "Two figures, never named",
-      "note": "Sonnets 1–126 are addressed to or about a young man; 127–152 concern a woman. The last two are translations of a Greek epigram."
-    }
-  ],
   "structure": [
     {
       "id": "procreation",
@@ -213,11 +191,6 @@
       "summary": "An older man, publicly of lower rank than the person he writes to, who makes his living by writing and is ashamed of how. He is at his best when he is losing: the poems of praise are brilliant, the poems of abandonment are better. He lies to himself in the last group and says so in the same line.",
       "clue": "Calls his own name a brand upon his hand, and puns on it until the word means desire, a man and a signature together.",
       "firstAppearance": "Sonnet 1",
-      "traits": [
-        "self-aware",
-        "possessive",
-        "ashamed of his trade"
-      ],
       "relationships": [
         {
           "to": "fair-youth",
@@ -267,11 +240,6 @@
       "summary": "Beautiful, well born, and silent for 126 poems. He is urged to breed, then promised immortality instead; he takes another poet’s attention, takes the speaker’s mistress, and is forgiven in language that cannot stop noticing it is forgiving. Nothing in the sequence is told from his side, which is why readers keep inventing one.",
       "clue": "Addressed as the master mistress of the speaker’s passion, and as a lovely boy holding Time’s glass.",
       "firstAppearance": "Sonnet 1",
-      "traits": [
-        "beautiful",
-        "unanswering",
-        "careless"
-      ],
       "relationships": [
         {
           "to": "speaker",
@@ -318,11 +286,6 @@
       "summary": "Black-haired, black-eyed, married, musical and unfaithful: that is the whole of what the poems establish. She is desired without being idealised, which makes the praise of her more convincing than the praise of the young man and the insults harder to forgive. The name readers use for her, the Dark Lady, comes from later critics; the poems never use it.",
       "clue": "Her eyes are nothing like the sun, and the speaker swears she is fair while knowing she is not.",
       "firstAppearance": "Sonnet 127",
-      "traits": [
-        "unidealised",
-        "unfaithful",
-        "clear-eyed"
-      ],
       "relationships": [
         {
           "to": "speaker",
@@ -349,11 +312,6 @@
       "summary": "A better-funded, grander-sounding writer whose verse the speaker describes as a full-sailed ship beside his own small boat. Whether he is Chapman, Marlowe or nobody at all, his function is exact: he makes praise a market, and makes the speaker admit that his poems have a price as well as a subject.",
       "clue": "His ‘great verse’ is bound for the young man, and the speaker’s tongue is tied when he hears it.",
       "firstAppearance": "Sonnet 78",
-      "traits": [
-        "fashionable",
-        "well patronised",
-        "loud"
-      ],
       "relationships": [
         {
           "to": "speaker",
@@ -380,11 +338,6 @@
       "summary": "Given a scythe, a sickle, a pen, a hand and an appetite, Time is the one figure that appears in every group. It is addressed directly, insulted, bargained with and finally not defeated: the poems claim to outlast it, and the claim is the only weapon they have.",
       "clue": "Called devouring, bloody, and a tyrant; asked to blunt its own lion’s paws.",
       "firstAppearance": "Sonnet 5",
-      "traits": [
-        "indifferent",
-        "thorough",
-        "undefeated"
-      ],
       "relationships": [
         {
           "to": "speaker",
@@ -1401,99 +1354,5 @@
       "lon": -1.7073,
       "note": "Where Shakespeare’s family remained through the years the sequence was written."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "The sequence tells a story",
-      "summary": "Read in the 1609 order the poems describe a plot: infatuation with a young man, a rival poet, a betrayal involving a woman, and a bitter end. Editions and teaching have followed that plot for two centuries.",
-      "counter": "The printer, Thomas Thorpe, may have fixed the order, some poems sit oddly where they stand, and a narrative reading has to ignore how many of the poems are exercises on set themes."
-    },
-    {
-      "position": "The poems are autobiography, and the people can be identified",
-      "summary": "The dedication to ‘Mr. W.H.’, the Southampton and Pembroke candidacies and the hunt for the woman treat the sequence as evidence about Shakespeare’s life.",
-      "counter": "Every identification rests on initials, dedications and dates that fit several people. The sonnet vogue of the 1590s produced hundreds of first-person poems whose speakers nobody mistakes for their authors."
-    },
-    {
-      "position": "The immortality claims are conventional boasting",
-      "summary": "Horace and Ovid had made the same promise; Elizabethan poets repeated it as a formula, and Shakespeare uses it at least a dozen times.",
-      "counter": "The claim is conventional and has also turned out to be true, which the poems half anticipate: 17 imagines future readers calling the verse a liar, and 55 names the monuments it expects to outlast."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How far do the sonnets present poetry as a defence against time?",
-      "focus": "Time, writing and the limits of the boast",
-      "plan": [
-        "Start with the substitution in sonnet 15, where the child of the first seventeen poems is replaced by the verse itself.",
-        "Take 55 as the confident version: marble and gilded monuments named so that the rhyme can outlast them.",
-        "Set 60 against it, where the waves keep coming and the verse stands only in hope.",
-        "Use 126, which ends the young man’s sequence by handing him to Nature’s audit and stopping two lines short.",
-        "Close on 17’s worry that readers will believe the poem to be a liar, and on the fact that we are reading it."
-      ]
-    },
-    {
-      "question": "What does sonnet 20 do to the praise that follows it?",
-      "focus": "Gender, desire and the vocabulary of compliment",
-      "plan": [
-        "Establish what the poem does: a woman’s face, a man’s heart, nature changing her mind, and a couplet that divides love from use.",
-        "Show how the surrounding poems use the language reserved for female beauty (rose, summer, fair) for a man.",
-        "Bring in the 1640 edition’s changed pronouns as evidence of later discomfort.",
-        "Compare the dark lady poems, where the same vocabulary is thrown out altogether (130).",
-        "Conclude on whether the sequence breaks down the categories or simply borrows across them."
-      ]
-    },
-    {
-      "question": "Are the dark lady poems a change of subject or a change of honesty?",
-      "focus": "Desire, shame and the sequence’s two halves",
-      "plan": [
-        "Note what actually changes at 127: the addressee, the tone, and the amount of physical detail.",
-        "Read 129, which addresses nobody, and account for its plainness.",
-        "Use 138’s mutual lying to compare with the forgiveness of 33–35: the same self-knowledge, differently handled.",
-        "Take 144 as the point where the two halves meet, and consider how much the triangle explains.",
-        "Decide whether the shame in the last group is new, or has been audible since 29 and 111."
-      ]
-    },
-    {
-      "question": "How does the shape of the English sonnet control what these poems can argue?",
-      "focus": "Form, turn and couplet",
-      "plan": [
-        "Set out the shape and its two resources: three parallel quatrains and a two-line settlement.",
-        "Use 73 for quatrains that work as images, each shorter in span than the last.",
-        "Use 29 for a turn that rescues a poem, and 94 for one that arrives late, in the third quatrain.",
-        "Take 35 as a case where the couplet spoils the argument, and ask whether that is failure or honesty.",
-        "Close with 126’s missing couplet, and what an unfinished form says at the end of a sequence about endings."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "The young man never speaks. Does his silence make him a character or a surface?",
-    "Which is the more convincing love poem, 116 or 138, and what does your answer say about what you want from love poetry?",
-    "Sonnet 130 will not use the usual comparisons. Is it a compliment?",
-    "If the printer, and not the poet, chose the 1609 order, is it a mistake to read the poems as a story?",
-    "Sonnet 94 praises people who feel nothing and then mentions the smell of rotting lilies. What has happened between line twelve and line thirteen?",
-    "The speaker calls his own profession a stain on his name. How much of the sequence is about work?"
-  ],
-  "related": [
-    {
-      "href": "/books/venus-and-adonis/",
-      "why": "The narrative poem Shakespeare published first, in 1593, with the same vocabulary of beauty, refusal and pursuit."
-    },
-    {
-      "href": "/books/the-rape-of-lucrece/",
-      "why": "Its companion of 1594, and the other place where Shakespeare writes at length in stanzas."
-    },
-    {
-      "href": "/books/romeo-and-juliet/",
-      "why": "A play that builds a shared sonnet into the lovers’ first meeting, written while the sequence was in progress."
-    },
-    {
-      "href": "/books/twelfth-night/",
-      "why": "Desire that crosses the categories sonnet 20 plays with, worked out as a plot."
-    },
-    {
-      "href": "/books/as-you-like-it/",
-      "why": "Bad love poetry pinned to trees, and a heroine who takes it apart: Shakespeare’s comedy about the sonnet habit."
-    }
-  ],
-  "videos": []
+  ]
 }

@@ -22,28 +22,6 @@
     "url": "https://shakespeare.mit.edu/asyoulikeit/full.html",
     "note": "Much of the play is prose, and prose line numbers vary widely between editions."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1599",
-      "note": "The same year as Henry V and Julius Caesar, and the year the Globe opened on Bankside."
-    },
-    {
-      "label": "First printed",
-      "value": "1623",
-      "note": "No quarto. The play was entered in the Stationers’ Register in 1600 with a note staying publication."
-    },
-    {
-      "label": "Chief source",
-      "value": "Lodge’s Rosalynde",
-      "note": "Thomas Lodge’s prose romance of 1590, which supplies the plot; Touchstone, Jaques and Audrey are Shakespeare’s additions."
-    },
-    {
-      "label": "Shape",
-      "value": "Five acts, twenty-two scenes",
-      "note": "Every scene after 2.3 except 3.1 takes place in the forest, and the plot stops moving for most of Acts III and IV."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -204,11 +182,6 @@
       "summary": "She has more lines than any other woman in Shakespeare and uses most of them to conduct her own courtship from behind a disguise. The wit is not decoration: playing Ganymede playing Rosalind lets her ask Orlando the questions a betrothed woman could not, and hear the answers before she commits.",
       "clue": "She takes a boy’s name and a boar-spear, and then teaches the man who loves her to woo a version of herself she can correct as he goes.",
       "firstAppearance": "1.2",
-      "traits": [
-        "quick",
-        "practical about love",
-        "in charge of the plot"
-      ],
       "relationships": [
         {
           "to": "orlando",
@@ -244,11 +217,6 @@
       "summary": "Kept unschooled by his brother and still, in his own account, unable to explain why. He is brave, courteous and a truly terrible poet, and the play is fond of him without pretending he is clever; his best moment is drawing a sword on strangers to get food for an old servant.",
       "clue": "He wins a wrestling match he was supposed to lose, hangs his verses on every tree in the wood, and is taught to court his own fiancée by a boy he does not recognise.",
       "firstAppearance": "1.1",
-      "traits": [
-        "generous",
-        "unlettered",
-        "slow to see"
-      ],
       "relationships": [
         {
           "to": "rosalind",
@@ -277,11 +245,6 @@
       "summary": "She gives up a dukedom for a cousin without a moment’s discussion, which is the most decisive act anyone performs in the play. As the disguise takes over she is edged out of the dialogue, and her dry interruptions in Acts III and IV are the closest the play comes to noticing the cost.",
       "clue": "She is the usurper’s daughter and leaves with the usurped one, buys a cottage under a false name, and falls in love at first sight with Orlando’s brother.",
       "firstAppearance": "1.2",
-      "traits": [
-        "loyal",
-        "sceptical",
-        "increasingly silent"
-      ],
       "relationships": [
         {
           "to": "rosalind",
@@ -313,11 +276,6 @@
       "summary": "He is the first character to say plainly that the forest is cold and the food is poor, and he spends the play testing pastoral sentiment against what things actually cost. His marriage to Audrey is the one in the final scene that nobody pretends will last.",
       "clue": "A touchstone tests gold; this one tests shepherds, courtiers and poets, and takes a goatherd for a wife because nobody else will.",
       "firstAppearance": "1.2",
-      "traits": [
-        "professional",
-        "unsentimental",
-        "exact about money"
-      ],
       "relationships": [
         {
           "to": "celia",
@@ -349,11 +307,6 @@
       "summary": "He has attached himself to the exiles in order to have something to be sad about, and he is the only person in the play who is not in love, in service or in danger. The seven ages speech is superb and immediately disproved on stage by the entrance of an old man being carried by a young one.",
       "clue": "He weeps for a wounded deer, envies a fool his coat, will not dance at the end, and leaves for a cave because converts are more interesting than brides.",
       "firstAppearance": "2.5",
-      "traits": [
-        "detached",
-        "articulate",
-        "outside every arrangement"
-      ],
       "relationships": [
         {
           "to": "duke-senior",
@@ -378,11 +331,6 @@
       "summary": "He runs a court in the woods with all the ceremony and none of the power, and his first speech is an argument that the cold is honest. Whether this is philosophy or a way of making exile bearable, the play does not say, and Jaques is there to keep the question open.",
       "clue": "He finds books in brooks and sermons in stones, and proposes a deer hunt four lines later.",
       "firstAppearance": "2.1",
-      "traits": [
-        "genial",
-        "eloquent",
-        "comfortable in adversity"
-      ],
       "relationships": [
         {
           "to": "rosalind",
@@ -408,11 +356,6 @@
       "summary": "He banishes his niece because she is well liked, which is the only reason he gives and probably the true one. He never sets foot in Arden: the play sends him to its edge, has him meet a religious man, and converts him offstage in a single reported sentence.",
       "clue": "He took his brother’s dukedom, exiles a young woman for being popular, and gives everything back after a conversation nobody in the play witnesses.",
       "firstAppearance": "1.2",
-      "traits": [
-        "arbitrary",
-        "suspicious",
-        "resolved offstage"
-      ],
       "relationships": [
         {
           "to": "celia",
@@ -444,10 +387,6 @@
       "summary": "He admits in his first scene that he hates his brother for being better liked and cannot say why. His rescue from a lioness and his conversion happen offstage and he reports them himself, which asks a good deal of an audience, the kind of demand the last act makes again and again.",
       "clue": "He plots his brother’s death by wrestler and by fire, and is saved by that brother from a snake and a lioness in the same morning.",
       "firstAppearance": "1.1",
-      "traits": [
-        "envious",
-        "transformed by report"
-      ],
       "relationships": [
         {
           "to": "orlando",
@@ -471,11 +410,6 @@
       "summary": "He is a working shepherd, and he answers a courtier’s philosophical needling with a list of things he knows: rain wets, fire burns, good pasture makes fat sheep. His account of being a hired man on another’s land keeps the pastoral honest.",
       "clue": "He cannot offer hospitality because the flock is not his, and his philosophy is entirely made of things he has had to learn on a hillside.",
       "firstAppearance": "2.4",
-      "traits": [
-        "practical",
-        "unromantic",
-        "employed"
-      ],
       "relationships": [
         {
           "to": "touchstone",
@@ -502,10 +436,6 @@
       "summary": "She refuses Silvius in the language of a Petrarchan mistress and then falls for a boy who has just told her she is nothing special. Her instant love at the sight of Ganymede is the play’s demonstration that the conventions it laughs at are also how people actually behave.",
       "clue": "She dares a shepherd to show the wound her eyes have made, then falls in love at first sight and sends him with a love letter to a young man who is a woman.",
       "firstAppearance": "3.5",
-      "traits": [
-        "scornful",
-        "converted at sight"
-      ],
       "relationships": [
         {
           "to": "rosalind",
@@ -1234,129 +1164,6 @@
       "lat": 51.4787,
       "lon": -0.0261,
       "note": "Where Marlowe, the play’s dead shepherd, was killed in 1593."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "A pastoral that argues with pastoral",
-      "summary": "The forest is offered as an alternative to the court and then furnished with cold, hunger, wage labour and an old shepherd who cannot afford hospitality. On this reading the play’s real subject is the distance between the literary countryside and the economic one.",
-      "counter": "It risks making the play sound sour, when Arden also plainly works: three of the four couples are made there and a usurper is converted on its edge."
-    },
-    {
-      "position": "A play about gender as performance",
-      "summary": "Rosalind’s layered disguise, and the boy actor beneath it, have made the play central to criticism interested in how far masculinity and femininity are things people do.",
-      "counter": "The play still ends in four marriages presided over by a god, and Rosalind hands herself to a father and a husband in successive lines."
-    },
-    {
-      "position": "The comedy of talk",
-      "summary": "Almost nothing happens in Acts III and IV. The characters talk instead, and critics have long treated its structure as a deliberate suspension of plot in favour of argument, song and wit.",
-      "counter": "The suspension is paid for in the last act, where two conversions and a lioness are reported offstage."
-    },
-    {
-      "position": "Jaques as the play’s dissenting voice",
-      "summary": "A long tradition reads Jaques as the character who keeps the comedy honest: the one who weeps for the deer, doubts the songs and will not dance.",
-      "counter": "The play also treats him as a pose: Rosalind prices his travels in a sentence, and his great speech is contradicted by the stage as he finishes it."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Shakespeare use the Forest of Arden?",
-      "focus": "Pastoral, labour and the limits of the green world",
-      "plan": [
-        "Set Duke Senior’s praise in 2.1 against Touchstone’s arrival in 2.4 and read them as a deliberate pair.",
-        "Use Corin throughout as the play’s control: he works there, he does not own the flock, and his philosophy is entirely practical.",
-        "Examine what the forest actually permits (disguise, argument, courtship) and what it does not change.",
-        "Consider the weather: the songs about ingratitude and winter wind are sung by people who are cold.",
-        "Conclude on the ending, which returns almost everybody to the court and sends the two dissenters into a cave and a religious life."
-      ]
-    },
-    {
-      "question": "Discuss the presentation of Rosalind.",
-      "focus": "Disguise, control and the epilogue",
-      "plan": [
-        "Begin with 1.3: the disguise is adopted for safety and immediately theorised as something men also wear.",
-        "Show how Ganymede gives Rosalind an active part where she would have had a passive one: she can question Orlando as no betrothed woman could.",
-        "Analyse the two great prose scenes, 3.2 and 4.1, as a syllabus on the difference between love poetry and marriage.",
-        "Use 4.3, where she faints at blood and has to claim she counterfeited it, as the point where the costume starts to cost.",
-        "Close on the epilogue and the boy actor, and ask what the play is claiming about identity as it lets the audience go."
-      ]
-    },
-    {
-      "question": "What does the play gain from Jaques and Touchstone, neither of whom is in Lodge?",
-      "focus": "Commentary, folly and the play’s own scepticism",
-      "plan": [
-        "Establish that both are Shakespeare’s additions, and that neither is required by the plot.",
-        "Read 2.7 as their joint scene: Jaques envying the fool’s licence and then taking a set piece for himself.",
-        "Set Touchstone’s economic exactness against Jaques’s cultivated sadness, and note who the play lets be right.",
-        "Examine the marriages: one is put off at the first attempt, another is presented as a poor bargain.",
-        "Decide whether they undermine the comedy or make its optimism worth having."
-      ]
-    },
-    {
-      "question": "‘A play in which nothing happens.’ How far is that a fair description, and is it a criticism?",
-      "focus": "Structure, prose and the suspension of plot",
-      "plan": [
-        "Chart the plot: it is all but finished by the end of Act II and does not resume until 4.3.",
-        "Show what fills the gap (courtship lessons, debates, songs, set pieces) and why prose is the medium for it.",
-        "Look at how much the last act has to do offstage: a lioness, two conversions, a restored dukedom.",
-        "Compare the play’s use of time with Jaques’s seven ages and Rosalind’s divers paces: the form is about duration.",
-        "Argue a conclusion about what a comedy is for, if not for events."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Duke Senior says the woods are freer from peril than the court. Does the play agree with him?",
-    "Rosalind does far more of the courting than Orlando. Why does she keep the disguise on for so long after the danger has passed?",
-    "Celia gives up a dukedom in a single scene and then gradually stops speaking. What has happened to her?",
-    "Touchstone’s marriage is the one nobody expects to last. Why does Shakespeare put it in the middle of the final celebration?",
-    "Duke Frederick is converted by a man we never meet, offstage, in one reported sentence. Is that a weakness or a joke?"
-  ],
-  "related": [
-    {
-      "href": "/books/twelfth-night/",
-      "why": "The other great disguise comedy, written within a year or two, with a woman in men’s clothes and a considerably colder ending."
-    },
-    {
-      "href": "/books/much-ado-about-nothing/",
-      "why": "The same period and the same interest in couples who argue their way towards each other in prose."
-    },
-    {
-      "href": "/books/a-midsummer-nights-dream/",
-      "why": "The earlier wood outside the city, where love is rearranged by magic; in Arden it is done by conversation."
-    },
-    {
-      "href": "/books/the-tempest/",
-      "why": "A later island of exiles, usurped dukes and restored dukedoms, with the forgiveness made much harder to give."
-    },
-    {
-      "href": "/books/loves-labours-lost/",
-      "why": "Shakespeare’s other comedy of talk, where wit is the whole action and the marriages are postponed at the end."
-    }
-  ],
-  "videos": [
-    {
-      "title": "The Plot of As You Like It | Summer 2026 | Shakespeare's Globe",
-      "provider": "youtube-nocookie",
-      "id": "LyrSjnT6KsM",
-      "url": "https://www.youtube.com/watch?v=LyrSjnT6KsM",
-      "note": "The cast of the Globe's production summarise the story in about a minute.",
-      "source": "Shakespeare's Globe"
-    },
-    {
-      "title": "Exploring Act 4 Scene 1 | As You Like It | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "G0ETzwlNkKk",
-      "url": "https://www.youtube.com/watch?v=G0ETzwlNkKk",
-      "note": "Actors and a director work through the mock-wooing scene in the forest.",
-      "source": "Royal Shakespeare Company"
-    },
-    {
-      "title": "Act 1 Scene 3 | As You Like It | 2019 | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "Qp7jzJVVgzM",
-      "url": "https://www.youtube.com/watch?v=Qp7jzJVVgzM",
-      "note": "Rosalind is banished and plans her escape with Celia, played in performance.",
-      "source": "Royal Shakespeare Company"
     }
   ]
 }

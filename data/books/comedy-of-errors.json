@@ -21,28 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
     "note": "Other modern editions vary by a line or two."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "Early 1590s",
-      "note": "Verse tests place it among the first plays; the Gray’s Inn performance of December 1594 is the latest it can have been finished."
-    },
-    {
-      "label": "First printed",
-      "value": "1623",
-      "note": "No quarto exists. The First Folio prints it among the Comedies under the title The Comedie of Errors."
-    },
-    {
-      "label": "Sources",
-      "value": "Plautus, Menaechmi and Amphitruo",
-      "note": "The Menaechmi gives the twins, Amphitruo the husband shut out of his own house; the second pair of twins is Shakespeare’s own, and the frame of Egeon and Emilia comes from the story of Apollonius of Tyre."
-    },
-    {
-      "label": "Shape",
-      "value": "Five acts, eleven scenes",
-      "note": "One city, one afternoon, and about 1,777 lines: the shortest play Shakespeare wrote."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -148,11 +126,6 @@
       "summary": "He left Syracuse at eighteen and has spent seven years looking for a brother he would not know by sight, and says so in the play’s most famous image: a drop of water gone into the sea to find another drop. Ephesus answers him with gold, dinner invitations and a wife, none of which he asked for, and he decides in 2.2 to take what is offered and see where it leads.",
       "clue": "He says he is but two hours old in Ephesus, and compares himself to a drop of water searching the sea for another drop.",
       "firstAppearance": "1.2",
-      "traits": [
-        "searching",
-        "melancholy",
-        "willing to be deceived"
-      ],
       "relationships": [
         {
           "to": "antipholus-ephesus",
@@ -201,11 +174,6 @@
       "summary": "He is the twin with everything to lose: a standing in the city, a wife, a goldsmith who trusts him and a soldier’s claim on the Duke’s gratitude. In a single afternoon he is shut out of his house, refused his dinner, arrested for a chain he never touched, declared insane by a quack and tied up in his own cellar. He never once doubts who he is, which is why he is the angriest man on stage.",
       "clue": "He is kept out of his own front door at dinner time, and sends a servant for a crowbar.",
       "firstAppearance": "3.1",
-      "traits": [
-        "respectable",
-        "short-tempered",
-        "wrongly accused"
-      ],
       "relationships": [
         {
           "to": "antipholus-syracuse",
@@ -250,11 +218,6 @@
       "summary": "He is the quicker of the two Dromios and does most of the joking, making a beating into an argument about Father Time’s bald head and a fat kitchen maid into a globe of the world. He decides early that Ephesus is fairy land, where the goblins will pinch them black and blue if they disobey.",
       "clue": "He plays porter at a door he has no right to, and escapes a marriage to a woman he describes as spherical.",
       "firstAppearance": "1.2",
-      "traits": [
-        "quick",
-        "frightened",
-        "inexhaustible"
-      ],
       "relationships": [
         {
           "to": "antipholus-syracuse",
@@ -287,11 +250,6 @@
       "summary": "He is beaten by two masters and a mistress in a single day for carrying messages accurately. His complaints are the play’s running account of what service costs: sent between house and mart like a football, marked on the head instead of paid in marks, and beaten at last for buying the rope’s end his master told him to buy. He gets the last speech of the play, and uses it to take his brother’s hand.",
       "clue": "He is sent out to buy a rope’s end, brings it back, and is beaten by a master who thinks he sent him for bail money.",
       "firstAppearance": "1.2",
-      "traits": [
-        "loyal",
-        "battered",
-        "literal-minded"
-      ],
       "relationships": [
         {
           "to": "antipholus-ephesus",
@@ -324,11 +282,6 @@
       "summary": "She is jealous, and she is right: her husband spends the afternoon at a courtesan’s table and promises his wife’s gold chain to the woman sitting across it. Shakespeare gives her the best speech in the play, an argument that a marriage cannot be divided any more than one drop of water can be taken back out of the sea, and then has her deliver it to a man she has never met.",
       "clue": "She makes the play’s finest speech about marriage to a stranger, and locks the front door on her own husband.",
       "firstAppearance": "2.1",
-      "traits": [
-        "jealous",
-        "eloquent",
-        "unheard"
-      ],
       "relationships": [
         {
           "to": "antipholus-ephesus",
@@ -369,11 +322,6 @@
       "summary": "She preaches wifely obedience with the confidence of someone who has never been married, telling her sister that beasts, fishes and fowls are all subject to their males. Courted by the wrong Antipholus, she gives him advice she cannot have meant to give: if you must be unfaithful, do it quietly and be kind at the table. Her own feelings are never stated: in the last scene the right Antipholus promises to make good what his brother said to her, and she says nothing at all.",
       "clue": "She argues for obedience before marriage, and advises a man she thinks is her brother-in-law to lie better.",
       "firstAppearance": "2.1",
-      "traits": [
-        "dutiful",
-        "unmarried",
-        "sharper than she admits"
-      ],
       "relationships": [
         {
           "to": "adriana",
@@ -402,11 +350,6 @@
       "summary": "He opens the play asking to be executed and spends a hundred lines telling the Duke why, in a speech of shipwreck and a mast cut in half that belongs to romance and not to farce. He then disappears for three acts. When he comes back, on his way to the block, his own son looks at him and says he has never seen him before. The Folio prints his name as Egeon; modern editions often set it as Aegeon.",
       "clue": "He tells the story of the split mast, then vanishes until the headsman brings him back in the last scene.",
       "firstAppearance": "1.1",
-      "traits": [
-        "grieving",
-        "patient",
-        "unrecognised"
-      ],
       "relationships": [
         {
           "to": "emilia",
@@ -451,11 +394,6 @@
       "summary": "She appears for the first time in the last scene, refuses to hand over the man who has taken sanctuary with her, and takes Adriana apart on the subject of nagging with a thoroughness nobody else in the play manages. Then she recognises her husband. In her closing speech the whole day becomes a birth she has been waiting thirty-three years to finish.",
       "clue": "She has lived in the abbey the whole time, and does not appear until the last scene, when she claims both twins and a husband.",
       "firstAppearance": "5.1",
-      "traits": [
-        "authoritative",
-        "severe",
-        "long-suffering"
-      ],
       "relationships": [
         {
           "to": "egeon",
@@ -498,11 +436,6 @@
       "summary": "He enforces a law he plainly dislikes, tells Egeon that his own crown and oath stop him from doing what he would prefer, and then gives him the day anyway. In the last scene he is handed two sworn accounts of the same afternoon that cannot both be true, and reaches for the only explanation available: they have all been drinking from Circe’s cup.",
       "clue": "He sentences a man in the first scene and spends the last one trying to work out which of two identical men is the real one.",
       "firstAppearance": "1.1",
-      "traits": [
-        "lawful",
-        "sympathetic",
-        "baffled"
-      ],
       "relationships": [
         {
           "to": "egeon",
@@ -538,11 +471,6 @@
       "summary": "He makes the chain that ruins everybody. Owing money to a merchant who is about to sail, he needs payment for a necklace he handed to the wrong Antipholus in the street, and has the right one arrested when he denies taking it. He is neither a villain nor a fool: he is a tradesman with a debt due, and his credit is the only thing he has.",
       "clue": "He delivers a gold chain unasked to a stranger in the street, then has a different man arrested for not paying for it.",
       "firstAppearance": "3.1",
-      "traits": [
-        "exact",
-        "pressed for money",
-        "certain he is right"
-      ],
       "relationships": [
         {
           "to": "antipholus-ephesus",
@@ -1068,7 +996,7 @@
       "reference": "4.4.25",
       "stage": "act-4",
       "context": "Beaten for bringing back the rope’s end he was sent to buy, by a master who meant to send him for bail.",
-      "analysis": "The speech starts as a pun and turns into an account of a whole life, from the hour of his nativity to the day he expects to beg at doors with a limp his master gave him. Both Dromios call themselves asses repeatedly, and this is the point at which the audience is invited to hear the word as a job description.",
+      "analysis": "The speech starts as a pun and turns into an account of a whole life, from the hour of his nativity to the day he expects to beg at doors with a limp his master gave him. Both Dromios call themselves asses repeatedly, and here the word starts to sound like a job description.",
       "themes": [
         "service"
       ],
@@ -1347,99 +1275,5 @@
       "lon": -0.112,
       "note": "Where the play was staged on 28 December 1594, on the night the Inn’s own revels collapsed into chaos."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "A farce, and nothing more",
-      "summary": "The oldest view treats the play as an apprentice exercise in Roman comedy: a machine of entrances and mistakes, brilliantly built and emotionally empty, worth studying for its craft and its speed.",
-      "counter": "The frame is not farce. Egeon’s hundred lines on the wreck, his son’s failure to know his voice, and Emilia’s speech on thirty-three years of labour are written in a register Plautus never used, and a production that plays only the machine has to cut or hurry them."
-    },
-    {
-      "position": "Ephesus was chosen for St Paul",
-      "summary": "Acts 19 gives Ephesus its exorcists, its sorcerers and its burnt books of magic, and Ephesians 5 gives the doctrine of wives and husbands as one flesh that Luciana preaches and Adriana argues from. On this reading the city is a theological choice, and the abbey ending completes it.",
-      "counter": "Scripture comes into the play mainly as the Syracusans’ jokes (the Prodigal, old Adam, Satan and the angels of light), and everything that happens in Ephesus can be accounted for by Plautus, who set his twin plot in a port full of sharpers without any help from Paul."
-    },
-    {
-      "position": "Adriana is the play’s serious voice",
-      "summary": "Her speech on the drop of water in the breaking gulf is the finest writing in the play, her jealousy is factually correct, and the errors she is punished for are not hers. Read this way, the comedy contains a real marriage in trouble.",
-      "counter": "The play gives her no vindication: the Abbess blames her in the last scene, Luciana’s protest is brushed aside, and Adriana herself concedes the point. A reading that makes her the moral centre has to argue against the ending."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does The Comedy of Errors make a single mistake last five acts?",
-      "focus": "Plot mechanics, doubling and the classical unities",
-      "plan": [
-        "Set out the design: one city, one afternoon, two masters and two servants who look alike, and no character who possesses the information the audience is given in 1.1.",
-        "Trace the first error through 1.2 and show that nobody does anything wrong: the servant delivers his message correctly to the wrong man.",
-        "Use 3.1 to show how the errors start feeding each other: being shut out sends Antipholus of Ephesus to the Porpentine, which is why the chain goes to the wrong brother.",
-        "Show how money raises the stakes in Act IV, where a private muddle becomes an arrest, a diagnosis and a locked cellar.",
-        "Argue about the ending: whether the recognition in 5.1 resolves the design or simply stops it, and what the Duke’s inability to decipher the twins adds."
-      ]
-    },
-    {
-      "question": "‘The Dromios pay for everybody else’s mistakes.’ How far do you agree?",
-      "focus": "Service, comedy and the body",
-      "plan": [
-        "Establish the terms: both Dromios were bought as infants from a poor woman at the inn, as Egeon explains in 1.1.",
-        "Count the beatings and say who gives them: two masters and a mistress, all for errands carried out correctly.",
-        "Look closely at the language: marks on a pate against marks in gold in 1.2, parchment and handwriting in 3.1, the catalogue of beatings by weather in 4.4.",
-        "Weigh the comedy against the complaint, and decide whether the jokes protect the audience from the violence or make it visible.",
-        "Finish with the last two lines of the play, which give the servants the closing couplet and the only settlement anybody reaches by agreement."
-      ]
-    },
-    {
-      "question": "What does the play make of marriage?",
-      "focus": "Adriana, Luciana and the Abbess",
-      "plan": [
-        "Start with the couplet debate at the opening of 2.1 and state each sister’s position exactly.",
-        "Read Adriana’s speech at 2.2.115 as an argument as much as a complaint, and note who she is actually speaking to.",
-        "Turn to Luciana at 3.2, where the defender of obedience recommends concealment, and ask what has changed.",
-        "Set the Abbess’s verdict at 5.1.68 against everything the audience knows about the husband’s afternoon at the Porpentine.",
-        "Decide what the reunion settles: the play ends with a feast and a restored family, and says nothing more about Adriana’s marriage."
-      ]
-    },
-    {
-      "question": "Why is the play set in Ephesus?",
-      "focus": "Place, sorcery and the law",
-      "plan": [
-        "Note first what Plautus gave him and what Shakespeare changed: Epidamnum became Ephesus, and the abbey and the Abbess are new.",
-        "Gather the city’s reputation from the text itself: the jugglers and witches of 1.2, the fairy land of 2.2, Pinch’s exorcism in 4.4.",
-        "Bring in Acts 19 and Ephesians, and test how far they explain the abbey, the sanctuary and the doctrine Luciana preaches.",
-        "Look at the other Ephesus: bonds, ducats, carcanets, arrest and a law about foreign merchants, which is the city the plot actually runs on.",
-        "Conclude on the priory gate in 5.1, where the religious city and the commercial one meet and the law gives way."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Antipholus of Syracuse works out in 2.2 that something is badly wrong, and goes in to dinner anyway. Why?",
-    "The audience knows about the twins from the first scene. Would the play be better or worse if it kept the secret?",
-    "Adriana’s jealousy turns out to be justified, and she is still the one blamed at the end. Does the play agree with the Abbess?",
-    "Both Dromios call themselves asses. Is the play laughing at them or with them?",
-    "Egeon is on stage for the first scene and the last, and absent for the middle three acts. What does his absence do?",
-    "The ending needs four actors who look like two pairs. How should a production handle that, and what is lost by any of the answers?"
-  ],
-  "related": [
-    {
-      "href": "/books/twelfth-night/",
-      "why": "Twins parted by shipwreck again, but the mistakes are used for feeling instead of farce, and one twin spends the play in disguise on purpose."
-    },
-    {
-      "href": "/books/pericles-prince-of-tyre/",
-      "why": "The sea takes a wife and returns her from a temple years later: the frame of Egeon and Emilia, given a whole play to itself."
-    },
-    {
-      "href": "/books/the-tempest/",
-      "why": "The only other play Shakespeare kept to one place and one day, and it also ends with a scattered family assembled and a ruler deciding what to forgive."
-    },
-    {
-      "href": "/books/taming-of-the-shrew/",
-      "why": "Written at about the same time, built from the same Italian and Roman materials, and equally interested in servants changing places with masters and in what a wife owes."
-    },
-    {
-      "href": "/books/the-two-gentlemen-of-verona/",
-      "why": "The other earliest comedy, with the same taste for a servant who talks his master’s plot into absurdity and the same trust in symmetry."
-    }
-  ],
-  "videos": []
+  ]
 }

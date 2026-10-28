@@ -22,28 +22,6 @@
     "url": "https://standardebooks.org/ebooks/robert-louis-stevenson/the-strange-case-of-dr-jekyll-and-mr-hyde/text/single-page",
     "note": "The chapters have titles in the original, with no numbers, and references here use those titles. The original title has no ‘The’ in front of Strange Case."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "1885",
-      "note": "At Skerryvore, the house in Bournemouth Stevenson took for his health."
-    },
-    {
-      "label": "First published",
-      "value": "January 1886",
-      "note": "By Longmans, Green and Co. in London; a New York edition appeared at about the same time."
-    },
-    {
-      "label": "Title",
-      "value": "Strange Case of Dr Jekyll and Mr Hyde",
-      "note": "No opening ‘The’, and no full stop after ‘Dr’: the phrasing of a case report."
-    },
-    {
-      "label": "Shape",
-      "value": "Ten chapters, two of them sealed documents",
-      "note": "Eight chapters of investigation, then Lanyon’s narrative and Jekyll’s statement arrive after both men are dead."
-    }
-  ],
   "structure": [
     {
       "id": "the-door",
@@ -134,11 +112,6 @@
       "summary": "Dry, incurious about other people’s vices and loyal past the point of prudence, he is the perfect filter for this story because he cannot imagine the answer. He keeps looking for a blackmailer, which is the worst thing a respectable London career can produce, and the search is honest work aimed in the wrong direction.",
       "clue": "A lawyer who drinks gin alone to mortify his taste for vintages, and who solves nothing because the only crime he can picture is blackmail.",
       "firstAppearance": "Story of the Door",
-      "traits": [
-        "reticent",
-        "loyal",
-        "professionally literal-minded"
-      ],
       "relationships": [
         {
           "to": "jekyll",
@@ -186,11 +159,6 @@
       "summary": "Large, well made, fifty, celebrated for his charities, and privately annoyed that a man of his standing cannot also be a man of his appetites. His experiment does not create a second nature; it removes the inconvenience of having one body carry both, and his confession keeps trying to make that sound like a scientific result.",
       "clue": "A celebrated doctor of fifty whose own written account of himself begins with a theory of human nature and ends with a hand he cannot stop from changing.",
       "firstAppearance": "Story of the Door",
-      "traits": [
-        "respectable",
-        "self-justifying",
-        "addicted to his own escape"
-      ],
       "relationships": [
         {
           "to": "hyde",
@@ -232,11 +200,6 @@
       "summary": "Everyone who meets him agrees that he is deformed and nobody can say where. He is smaller and younger than Jekyll because, on Jekyll’s own account, that side of the man had less exercise. Apart from two acts of violence, almost everything he does in the book is administrative: signing cheques, taking rooms, fetching chemicals.",
       "clue": "Smaller and younger than the man he lives inside, hateful on sight to everyone, and impossible for any witness to describe.",
       "firstAppearance": "Story of the Door",
-      "traits": [
-        "violent",
-        "indescribable",
-        "unembarrassed"
-      ],
       "relationships": [
         {
           "to": "jekyll",
@@ -274,11 +237,6 @@
       "summary": "Hearty, conventional and certain that Jekyll went wrong in mind ten years ago, he is the book’s representative of orthodox science. What kills him is what he learns, and his narrative stops exactly where the scene stops being explicable, leaving the rest to be told by the guilty party.",
       "clue": "A red-faced, dogmatic physician who calls his old friend’s work balderdash, and who is dead within three weeks of seeing it work.",
       "firstAppearance": "Search for Mr. Hyde",
-      "traits": [
-        "sceptical",
-        "hearty",
-        "destroyed by one night"
-      ],
       "relationships": [
         {
           "to": "jekyll",
@@ -306,10 +264,6 @@
       "summary": "He supplies the first story and then declines to discuss it ever again, which sets the novella’s rule that respectable men stop asking at the point where the answer would be interesting. His account of the trampling is the only time in the book a reader sees Hyde act before knowing who he is.",
       "clue": "He tells the story that starts the whole investigation, and then agrees never to mention it again.",
       "firstAppearance": "Story of the Door",
-      "traits": [
-        "worldly",
-        "discreet to a fault"
-      ],
       "relationships": [
         {
           "to": "utterson",
@@ -337,11 +291,6 @@
       "summary": "He works out the truth before any professional man in the book does, and he does it by listening: the voice behind the door is not his master’s, and the figure he glimpses among the crates is the wrong size. Having no theory to defend, he is free to believe his ears.",
       "clue": "Twenty years in the same household, and the first person to be sure that the man behind the locked door is not the one who ought to be there.",
       "firstAppearance": "Search for Mr. Hyde",
-      "traits": [
-        "observant",
-        "frightened",
-        "right"
-      ],
       "relationships": [
         {
           "to": "jekyll",
@@ -369,11 +318,6 @@
       "summary": "He appears for one paragraph, asking a stranger for directions with old-fashioned courtesy, and is beaten to death for it. His killing makes a private worry into a public case, and it is the only event in the novella narrated as it happens, through a witness at a window.",
       "clue": "A white-haired gentleman who stops in the moonlight to ask the way, and whose politeness gets him clubbed to death.",
       "firstAppearance": "The Carew Murder Case",
-      "traits": [
-        "courteous",
-        "elderly",
-        "unlucky"
-      ],
       "relationships": [
         {
           "to": "hyde",
@@ -1184,117 +1128,22 @@
   ],
   "criticalViews": [
     {
-      "position": "A fable about the divided self",
-      "summary": "The reading the title has given the language: two natures in one man, one of them released by chemistry. It takes Jekyll’s own theory as the book’s, and it is the version almost every adaptation dramatises.",
-      "counter": "The theory belongs to a narrator with every reason to prefer it, and the novella’s own evidence (Hyde’s fear, his letters, his negotiations) keeps failing to match the claim that he is pure evil."
+      "critic": "Vladimir Nabokov",
+      "work": "Lectures on Literature",
+      "year": "1980",
+      "summary": "In lectures given at Cornell and published after his death, Nabokov insisted that the story be read as a work of art rather than a detective story or an allegory. He pointed out that Jekyll is not wholly good: Hyde is separated out of him, while Jekyll remains a mixture of both."
     },
     {
-      "position": "A book about Victorian respectability",
-      "summary": "On this account the subject is the club more than the laboratory: a professional class in which discretion is a virtue, questions are impolite, and a man’s reputation is a shared asset that several people work to protect.",
-      "counter": "It risks making the story sociology. The horror in the last night chapter is not about reputation at all; it is about a voice behind a door."
+      "critic": "Elaine Showalter",
+      "work": "Sexual Anarchy: Gender and Culture at the Fin de Siècle",
+      "year": "1990",
+      "summary": "Showalter reads the story’s world of bachelors, closed doors and things that cannot be said in the light of the secret lives of late Victorian men. She connects it with the Labouchere Amendment of 1885, which made “gross indecency” between men a crime."
     },
     {
-      "position": "A book about addiction",
-      "summary": "Readers have long noticed how exactly the middle chapters describe tolerance, escalating doses, involuntary relapse and a failed supply. The crisis is finally chemical: a batch of salt with an impurity that cannot be reproduced.",
-      "counter": "Stevenson never names a substance or a habit, and the reading can slip a medical question into the place of the moral one, what Jekyll wanted."
-    },
-    {
-      "position": "A story about the limits of description",
-      "summary": "Attention has turned to what the book will not show: the pleasures are unspecified, the deformity is unnamed, and eight chapters pass without a transformation. What frightens comes from the gaps.",
-      "counter": "A reader can also find the gaps evasive, and the unspecified pleasures have carried very different meanings for different generations."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Stevenson control what the reader is allowed to know?",
-      "focus": "Structure, narration and delayed revelation",
-      "plan": [
-        "Establish that eight chapters follow a man whose professional imagination cannot reach the answer.",
-        "Use the will and the handwriting comparison to show evidence arriving in a form Utterson can misread.",
-        "Examine Lanyon’s narrative: the one eyewitness account, and its deliberate stopping point.",
-        "Read the final statement as a document with an author and a purpose, before taking it as the truth.",
-        "Conclude with adaptation: what is lost when a production shows the transformation in its first scene."
-      ]
-    },
-    {
-      "question": "Is Hyde a separate person, or a permission?",
-      "focus": "Duality, responsibility and the evidence of the confession",
-      "plan": [
-        "Set out Jekyll’s own theory of two natures and note where he admits its limits.",
-        "Gather the moments that undercut the theory: the leap of welcome at the mirror, my devil, the memory that carries across.",
-        "Use the Carew murder and its timing after two months of virtue.",
-        "Consider Hyde’s ordinary behaviour (cheques, lodgings, letters) as evidence against pure evil.",
-        "Decide whether the novella endorses Jekyll’s defence or supplies the material to dismantle it."
-      ]
-    },
-    {
-      "question": "What does respectability cost in this novella?",
-      "focus": "Reputation, silence and professional discretion",
-      "plan": [
-        "Begin with Enfield and Utterson agreeing never to mention the door again.",
-        "Trace the pattern through Utterson’s suppression of the letter in a murder investigation.",
-        "Weigh Lanyon’s sealed envelope, held unopened while there is still time to act.",
-        "Set Poole against the professionals: a servant who believes the evidence of his ears.",
-        "Close on Jekyll’s admission that he was in no sense a hypocrite, and ask what that distinction is worth."
-      ]
-    },
-    {
-      "question": "How does Stevenson use London?",
-      "focus": "Setting, architecture and the divided map",
-      "plan": [
-        "Start with the single building that has a comfortable square at the front and a blistered door at the back.",
-        "Contrast the descriptions of the by-street on a Sunday with Soho under fog.",
-        "Track the thresholds: the door with no knocker, the window shut mid-sentence, the cabinet door taken down with an axe.",
-        "Consider Edinburgh behind the London geography, and what Stevenson gains by moving it south.",
-        "Conclude with Regent’s Park, where the safest and most public space produces the change."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Utterson never opens Lanyon’s envelope while it could still do any good. Is that decency or cowardice?",
-    "Nobody can describe Hyde’s deformity. What do you think the witnesses are actually responding to?",
-    "The novella never says what Hyde’s pleasures are. Does that make the book stronger or evasive?",
-    "Jekyll’s statement is the only full account of what happened. How much of it would you accept?",
-    "Almost every adaptation shows the transformation early. What is lost, and is anything gained?"
-  ],
-  "related": [
-    {
-      "href": "/books/dracula/",
-      "why": "The other late-Victorian case file, where the danger is again reconstructed from documents by professional men."
-    },
-    {
-      "href": "/books/dorian-gray/",
-      "why": "Published five years later, and the same arrangement in reverse: the respectable face stays intact while the hidden thing takes the damage."
-    },
-    {
-      "href": "/books/frankenstein/",
-      "why": "The earlier experiment carried out alone and in secret, and the earlier confession delivered by a dying man."
-    },
-    {
-      "href": "/books/adventures-of-sherlock-holmes/",
-      "why": "The same London of fog, cabs and respectable clients with unrespectable problems, investigated by someone who is much better at it than Utterson."
-    },
-    {
-      "href": "/books/the-turn-of-the-screw/",
-      "why": "Another short book whose whole effect depends on a single narrator’s account and on what is never shown."
-    }
-  ],
-  "videos": [
-    {
-      "title": "'Strange case of Dr Jekyll and Mr Hyde' by Robert Louis Stevenson | BBC Teach",
-      "provider": "youtube-nocookie",
-      "id": "G8ne5tOy7-o",
-      "url": "https://www.youtube.com/watch?v=G8ne5tOy7-o",
-      "note": "An eleven-minute BBC introduction to the story, its author and the Victorian anxieties behind it.",
-      "source": "BBC Bitesize for Teachers"
-    },
-    {
-      "title": "Jekyll and Hyde: Themes | BBC Teach",
-      "provider": "youtube-nocookie",
-      "id": "yYPOyBmZziA",
-      "url": "https://www.youtube.com/watch?v=yYPOyBmZziA",
-      "note": "A short BBC film setting out the central ideas of the novella, including duality, reputation and the limits of science.",
-      "source": "BBC Bitesize for Teachers"
+      "critic": "Stephen D. Arata",
+      "work": "Fictions of Loss in the Victorian Fin de Siècle",
+      "year": "1996",
+      "summary": "Arata notes that Hyde is described in the language used for the criminal poor and for degeneration, yet he is a gentleman’s other self. He argues that the story turns the period’s fears of decline back on the respectable middle class."
     }
   ]
 }

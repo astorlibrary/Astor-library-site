@@ -22,28 +22,6 @@
     "url": "https://shakespeare.mit.edu/merchant/full.html",
     "note": "The Astor edition counts the prose by its printed lines; other modern editions vary. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1596–1597",
-      "note": "Topical references and the style of the verse place composition in the later 1590s."
-    },
-    {
-      "label": "First printed",
-      "value": "1600",
-      "note": "The First Quarto, which remains the basis of most modern editions."
-    },
-    {
-      "label": "Chief source",
-      "value": "Il Pecorone",
-      "note": "The bond, the trial and the disguised lady-lawyer come from a tale in Ser Giovanni Fiorentino’s Italian collection."
-    },
-    {
-      "label": "At court",
-      "value": "February 1605",
-      "note": "The first recorded performance was on 10 February 1605, and the play was repeated before the court two days later."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -194,11 +172,6 @@
       "summary": "He appears in five scenes and dominates the play. Shakespeare gives him the abuse he has taken in detail (the spitting, the name-calling, the kicks) and then has him use that history as a legal instrument. The play neither excuses what he does nor lets his enemies off the account he reads them.",
       "clue": "He keeps a ledger of insults as exactly as one of debts, asks whether a dog has money, and leaves the stage saying he is not well.",
       "firstAppearance": "1.3",
-      "traits": [
-        "exact",
-        "unforgiving",
-        "publicly humiliated"
-      ],
       "relationships": [
         {
           "to": "antonio",
@@ -236,11 +209,6 @@
       "summary": "Rich, quick and confined: her father’s will means she may neither choose nor refuse. She takes the only freedom available by leaving Belmont in a man’s gown, and the same intelligence that saves Antonio is later used to trap her own husband over a ring.",
       "clue": "She may neither choose a husband nor refuse one, so she borrows a lawyer’s gown from Padua and wins the biggest case in Venice.",
       "firstAppearance": "1.2",
-      "traits": [
-        "clever",
-        "controlled",
-        "less merciful than her own speech"
-      ],
       "relationships": [
         {
           "to": "bassanio",
@@ -282,11 +250,6 @@
       "summary": "The title character speaks the first line of the play and almost nothing in the last scene. His sadness is never explained; his willingness to die for Bassanio is stated plainly, and so is his intention to go on spitting on Shylock. He is the only major figure who ends the play unpaired.",
       "clue": "He opens the play saying he does not know why he is sad, offers his own body as security for a friend’s courtship, and ends it the only one without a partner.",
       "firstAppearance": "1.1",
-      "traits": [
-        "melancholy",
-        "generous",
-        "unrepentant in his contempt"
-      ],
       "relationships": [
         {
           "to": "bassanio",
@@ -325,11 +288,6 @@
       "summary": "He has run through his money and proposes to repair it by marrying a fortune, which he explains to Antonio without embarrassment. His casket speech rejects outward show in terms that apply uncomfortably well to his own courtship, financed by a borrowed appearance of wealth.",
       "clue": "He argues that the world is deceived by ornament while wearing clothes bought with a friend’s borrowed money.",
       "firstAppearance": "1.1",
-      "traits": [
-        "charming",
-        "improvident",
-        "sincere in patches"
-      ],
       "relationships": [
         {
           "to": "portia",
@@ -363,11 +321,6 @@
       "summary": "She robs her father, sells her mother’s ring for a monkey, and converts. Shakespeare gives her the discomfort as well as the escape: she is ashamed of her boy’s clothes, and in the last act she and Lorenzo exchange a string of stories about lovers whose nights ended badly.",
       "clue": "She leaves her father’s house in a boy’s coat with his ducats in a casket, and spends the last act naming lovers who came to grief.",
       "firstAppearance": "2.3",
-      "traits": [
-        "decisive",
-        "uneasy",
-        "assimilated at a price"
-      ],
       "relationships": [
         {
           "to": "shylock",
@@ -396,10 +349,6 @@
       "summary": "He plans the elopement as a raid, is pleased about the gold, and then speaks the play’s most beautiful verse about music and the harmony of the spheres. The distance between those two facts is one of the things the last act is for.",
       "clue": "He organises a theft and an elopement in the same breath, and later explains that a man with no music in him is fit for treasons.",
       "firstAppearance": "1.1",
-      "traits": [
-        "lyrical",
-        "opportunist"
-      ],
       "relationships": [
         {
           "to": "jessica",
@@ -424,11 +373,6 @@
       "summary": "She doubles Portia at every level: she gives the sceptical answer in 1.2, marries Bassanio’s friend, disguises herself as a clerk, and runs the same trick with the same ring. The play works by these pairings, and she is the clearest of them.",
       "clue": "She dresses as a lawyer’s clerk, marries the hero’s friend, and plays the ring trick a second time.",
       "firstAppearance": "1.2",
-      "traits": [
-        "dry",
-        "practical",
-        "a shadow of her mistress"
-      ],
       "relationships": [
         {
           "to": "portia",
@@ -453,11 +397,6 @@
       "summary": "Bassanio says he speaks an infinite deal of nothing, and for three acts that is a joke about a harmless talker. In the courtroom he becomes the voice that cheers each reversal and asks for Shylock to be hanged, which is where the comic licence stops being comic.",
       "clue": "A friend says he speaks an infinite deal of nothing; in court he applauds every turn of the verdict and offers the defeated man a free halter.",
       "firstAppearance": "1.1",
-      "traits": [
-        "loud",
-        "coarse",
-        "cruel when permitted"
-      ],
       "relationships": [
         {
           "to": "bassanio",
@@ -1187,120 +1126,16 @@
   ],
   "criticalViews": [
     {
-      "position": "A romantic comedy with an obstacle",
-      "summary": "On this reading the play’s business is three marriages and a rescue, Shylock is the blocking figure whom comedy must remove, and Act V is the proper ending.",
-      "counter": "It requires the audience to accept a forced conversion as a happy outcome, and it cannot explain why Shakespeare gave the obstacle the best prose in the play."
+      "critic": "William Hazlitt",
+      "work": "Characters of Shakespear’s Plays",
+      "year": "1817",
+      "summary": "Hazlitt, writing after Edmund Kean’s Shylock, found the Jew a good hater and “a man no less sinned against than sinning”, whose revenge is sharpened by the contempt the Christians show him. As Shylock ceased to be a popular bugbear, Hazlitt noted, he became something of a favourite with the more thoughtful part of the audience."
     },
     {
-      "position": "A play about antisemitism",
-      "summary": "Many modern critics argue that the Christians are shown behaving exactly as Shylock describes them (spitting, mocking, confiscating), so that the comedy exposes the society it flatters.",
-      "counter": "The play still ends in that society’s garden, with its victim offstage, and the text nowhere condemns what the court does."
-    },
-    {
-      "position": "Contract and obligation",
-      "summary": "Bonds, wills, caskets and rings are all binding documents, and the play shows what happens when a written promise meets the intention behind it. The trial is then less about race than about how far a society will honour its own paperwork.",
-      "counter": "The verdict turns on a statute about aliens, so Shylock’s standing under Venetian law depends on his religion."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Shakespeare present Shylock?",
-      "focus": "Sympathy, hostility and the limits of both",
-      "plan": [
-        "Note first that he appears in only five scenes and never speaks after 4.1.402.",
-        "Use 1.3 to show him giving an itemised account of the abuse, and Antonio confirming every word of it.",
-        "Read 3.1 carefully: the questions establish common humanity, and the same logic then licenses revenge.",
-        "Set the reported grief of 2.8 against the direct speech of 4.1.378 and ask which the audience is allowed to trust.",
-        "Close on his exit line and on the fact that Act V does not mention him."
-      ]
-    },
-    {
-      "question": "‘Mercy in this play is something the powerful do to the powerless.’ Discuss.",
-      "focus": "Justice, law and the trial scene",
-      "plan": [
-        "Begin with Shylock’s question at 4.1.183, ‘On what compulsion must I?’, and show that Portia’s speech is a direct answer to it.",
-        "Trace the reversal: mercy preached, refused, then imposed as a set of conditions at 4.1.384–394.",
-        "Examine the alien statute and what it says about who counts as a citizen of Venice.",
-        "Weigh Antonio’s terms, including the conversion, against his conduct in 1.3.",
-        "Decide whether the play endorses the verdict, exposes it, or simply stages it and moves on."
-      ]
-    },
-    {
-      "question": "What is the function of Belmont?",
-      "focus": "Place, wealth and the structure of the play",
-      "plan": [
-        "Set out the alternation: Venice for business and law, Belmont for music, riddles and marriage.",
-        "Show that Belmont is also governed by a document, a dead man’s will, and so is less free than it looks.",
-        "Use the casket scenes to argue that the two worlds share one question: how do you value what you cannot see?",
-        "Portia’s money resolves nothing in Venice; her legal reading wins.",
-        "Judge whether Act V restores Belmont or merely relocates the play’s unfinished business."
-      ]
-    },
-    {
-      "question": "Discuss the presentation of women in The Merchant of Venice.",
-      "focus": "Portia, Nerissa, Jessica and the uses of disguise",
-      "plan": [
-        "Start from the constraint: Portia cannot choose, Jessica is locked in, Nerissa marries where her mistress does.",
-        "Show disguise as the only available instrument: a boy’s coat for one, a doctor’s gown for another.",
-        "Read the trial as Portia acquiring, temporarily, a competence the play otherwise reserves for men.",
-        "Use the ring plot to argue that she brings the courtroom’s methods home with her.",
-        "Ask what happens to that competence in Act V, when the gowns come off."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Antonio never explains his sadness. Should a production decide what it is?",
-    "Shylock’s greatest speech ends by promising revenge. Does that ending change what the speech is worth?",
-    "Portia argues that mercy cannot be compelled, and then compels it. Is she a hypocrite, or is the court?",
-    "Jessica’s last line is that she is never merry when she hears sweet music. What should she do for the rest of the scene?",
-    "The play is classed as a comedy. What would have to change for it to be a tragedy?"
-  ],
-  "related": [
-    {
-      "href": "/books/othello/",
-      "why": "The other Venetian play, and the other outsider whom the city uses and then discards."
-    },
-    {
-      "href": "/books/measure-for-measure/",
-      "why": "A comedy that also stops for a long argument about mercy and the letter of the law, and also ends in silence."
-    },
-    {
-      "href": "/books/twelfth-night/",
-      "why": "Another heroine who puts on a man’s clothes, with the same interest in what a disguise makes possible."
-    },
-    {
-      "href": "/books/as-you-like-it/",
-      "why": "The other great breeches role of these years, in a comedy that uses the same device and pushes it in the opposite direction."
-    },
-    {
-      "href": "/books/much-ado-about-nothing/",
-      "why": "A comedy of the same period that comes close to tragedy for a whole act before recovering."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Who is Shylock? | The Merchant of Venice (2022) | Winter 2021/22 | Shakespeare's Globe",
-      "provider": "youtube-nocookie",
-      "id": "Xh00-buLu0c",
-      "url": "https://www.youtube.com/watch?v=Xh00-buLu0c",
-      "note": "The actor playing Shylock at the Globe talks about the part and the difficulties the play raises.",
-      "source": "Shakespeare's Globe"
-    },
-    {
-      "title": "Act 4 Scene 1 | The Merchant of Venice | 2015 | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "sCkhgfDQUzI",
-      "url": "https://www.youtube.com/watch?v=sCkhgfDQUzI",
-      "note": "The RSC company performs the courtroom scene from its 2015 production.",
-      "source": "Royal Shakespeare Company"
-    },
-    {
-      "title": "The Merchant of Venice Synopsis | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "VA6yysHox98",
-      "url": "https://www.youtube.com/watch?v=VA6yysHox98",
-      "note": "Actors from an RSC touring production tell the story of the play.",
-      "source": "Royal Shakespeare Company"
+      "critic": "Heinrich Heine",
+      "work": "Shakespeares Mädchen und Frauen",
+      "year": "1838",
+      "summary": "Heine remembered a performance at Drury Lane where a pale English woman wept at the end of the trial scene and cried out that the poor man was wronged. He suggested that the play could be seen as Shylock’s tragedy."
     }
   ]
 }

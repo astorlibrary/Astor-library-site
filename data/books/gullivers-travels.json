@@ -21,28 +21,6 @@
     "url": "https://standardebooks.org/ebooks/jonathan-swift/gullivers-travels/text/single-page",
     "note": "A proofed transcription of the text as corrected for Faulkner’s Dublin edition. References give the part and the chapter, which are the divisions the book itself uses; the prefatory letter to Sympson stands outside them."
   },
-  "atAGlance": [
-    {
-      "label": "First published",
-      "value": "28 October 1726",
-      "note": "By Benjamin Motte in London, in two volumes, with Lemuel Gulliver named as the author."
-    },
-    {
-      "label": "Attributed author",
-      "value": "Lemuel Gulliver",
-      "note": "Swift’s name appears nowhere in the first edition, and the title imitates the factual confidence of voyage literature."
-    },
-    {
-      "label": "Corrected edition",
-      "value": "1735",
-      "note": "George Faulkner’s Dublin edition prints the book in Swift’s collected works and adds Gulliver’s complaint that the text had been altered."
-    },
-    {
-      "label": "Shape",
-      "value": "Four voyages",
-      "note": "Lilliput, Brobdingnag, the flying island and its neighbours, and the country of the Houyhnhnms."
-    }
-  ],
   "structure": [
     {
       "id": "front-matter",
@@ -183,11 +161,6 @@
       "summary": "A competent, incurious man who measures everything and understands almost nothing, and whose plainness makes the satire work. He is not a fixed point the reader can stand on: each voyage adjusts what he admires, and by the fourth he faints when his wife kisses him.",
       "clue": "He records latitudes, cargoes and the exact height of everything he meets, learns each new language quickly, and comes home at last preferring the conversation of his horses.",
       "firstAppearance": "Part I, Chapter I",
-      "traits": [
-        "exact",
-        "credulous",
-        "unstable in judgement"
-      ],
       "relationships": [
         {
           "to": "emperor-of-lilliput",
@@ -238,11 +211,6 @@
       "summary": "Taller than his courtiers by the breadth of a fingernail, and described in the vocabulary of universal monarchy. He is generous while Gulliver is useful and merciful in the technical sense afterwards: the sentence of blinding is presented at court as an act of clemency.",
       "clue": "He is almost the breadth of a nail taller than any of his court, describes himself as the delight and terror of the universe, and calls it mercy when he only orders your eyes put out.",
       "firstAppearance": "Part I, Chapter II",
-      "traits": [
-        "vain",
-        "ceremonious",
-        "vindictive"
-      ],
       "relationships": [
         {
           "to": "gulliver",
@@ -261,11 +229,6 @@
       "summary": "Swift’s one straightforwardly admirable figure, and a deliberately limited one: he is learned, he keeps a small army, and he cannot conceive of a state secret worth a massacre. His verdict on English history is delivered after several audiences of careful notes, and so it is hard to dismiss.",
       "clue": "He questions his six-inch guest about England over several sittings, takes notes, and concludes that the natives of that island are the most pernicious little vermin nature ever suffered to crawl.",
       "firstAppearance": "Part II, Chapter III",
-      "traits": [
-        "attentive",
-        "unflattering",
-        "morally plain"
-      ],
       "relationships": [
         {
           "to": "gulliver",
@@ -284,11 +247,6 @@
       "summary": "She names him, sews his shirts, teaches him the language and is the only person in four voyages who loves him. Swift lets her stand outside the satire entirely, and when an eagle carries his box out to sea, Gulliver’s first thought is of her grief.",
       "clue": "Nine years old and not above forty feet high, being little for her age, she lines a travelling box with her doll’s quilt and gives its occupant a name meaning mannikin.",
       "firstAppearance": "Part II, Chapter II",
-      "traits": [
-        "tender",
-        "capable",
-        "young"
-      ],
       "relationships": [
         {
           "to": "gulliver",
@@ -307,11 +265,6 @@
       "summary": "His fields are full, his house stands up and his neighbours despise him for it, because his methods are the old ones. Munodi keeps the Academy funny as well as grotesque: the country has failed because ingenuity has been put in charge of farming, and it never lacked ingenuity.",
       "clue": "Once governor of the capital, he is the one lord whose land is well farmed, and he let the projectors talk him into pulling down a good mill to build a new one up a mountain.",
       "firstAppearance": "Part III, Chapter IV",
-      "traits": [
-        "practical",
-        "out of fashion",
-        "resigned"
-      ],
       "relationships": [
         {
           "to": "gulliver",
@@ -330,11 +283,6 @@
       "summary": "Born with a spot over the eyebrow, they never die and they also never stop ageing. Swift uses them to separate two wishes that are usually confused, and the chapter’s real cruelty is that Gulliver delivers his rapturous plan for an immortal life before he is taken to see any of them.",
       "clue": "A red circular spot over the left eyebrow marks them at birth; at eighty they are declared legally dead, and they go on for centuries after that.",
       "firstAppearance": "Part III, Chapter X",
-      "traits": [
-        "undying",
-        "decrepit",
-        "envious"
-      ],
       "relationships": [
         {
           "to": "gulliver",
@@ -353,11 +301,6 @@
       "summary": "Patient, literal and entirely without a concept of deception, he can only call a lie “the thing which was not”, and Gulliver has to explain a lawsuit to him from first principles. His difficulty in believing the account is the engine of Part IV: everything sounds worse when explained to someone who cannot supply the usual excuses.",
       "clue": "He has no word for lying and must be taught one before his guest can describe a European law court.",
       "firstAppearance": "Part IV, Chapter I",
-      "traits": [
-        "reasonable",
-        "literal",
-        "unsentimental"
-      ],
       "relationships": [
         {
           "to": "gulliver",
@@ -384,11 +327,6 @@
       "summary": "Filthy, greedy, tribal and recognisably human, they are the satire’s hardest device because Gulliver accepts the identification completely and the book does not obviously stop him. They hoard coloured stones they cannot use, which is the one detail that makes the resemblance impossible to argue with.",
       "clue": "Kept in a kennel by their masters and harnessed to sledges, they will dig with their claws for whole days to get at a shining stone.",
       "firstAppearance": "Part IV, Chapter I",
-      "traits": [
-        "appetitive",
-        "quarrelsome",
-        "acquisitive"
-      ],
       "relationships": [
         {
           "to": "houyhnhnm-master",
@@ -415,11 +353,6 @@
       "summary": "He has a raving man brought aboard for his own safety, clothes him, takes him into his own house at Lisbon and asks nothing in return, and Gulliver can barely stand to breathe near him. Swift plants an entirely good human being in the last chapters, and lets his narrator fail to notice, which is the strongest evidence that Swift does not share Gulliver’s final opinion of mankind.",
       "clue": "A Portuguese captain who takes a raving stranger into his own house in Lisbon, has a suit of clothes made for him, and lends him twenty pounds for the voyage home.",
       "firstAppearance": "Part IV, Chapter XI",
-      "traits": [
-        "generous",
-        "patient",
-        "unthanked"
-      ],
       "relationships": [
         {
           "to": "gulliver",
@@ -933,7 +866,7 @@
       "reference": "Part IV, Chapter XII",
       "stage": "part-4",
       "context": "The same paragraph, on his purpose in publishing.",
-      "analysis": "Six words that a great many readers have ignored for three centuries, since the book’s afterlife has been mostly in nurseries. Set beside the letter to Sympson, where Gulliver complains that nobody has reformed in six months, the sentence is already an admission of failure.",
+      "analysis": "Six words that the nursery versions of the book leave out. Set beside the letter to Sympson, where Gulliver complains that nobody has reformed in six months, the sentence is already an admission of failure.",
       "themes": [
         "pride",
         "empire"
@@ -1052,7 +985,7 @@
     {
       "name": "Nottinghamshire",
       "lat": 53.1,
-      "lon": -1.0,
+      "lon": -1,
       "note": "Gulliver’s father’s small estate, and the county he retires to at the end."
     },
     {
@@ -1088,95 +1021,18 @@
   ],
   "criticalViews": [
     {
-      "position": "A topical political satire",
-      "summary": "Read against the Whig ministry, the South Sea Bubble and Anglo-Irish politics, much of Part I maps onto identifiable quarrels, and the high heels and egg ends onto identifiable parties and churches.",
-      "counter": "The mapping stops working after Part I, and a satire that needed footnotes to be funny would not have survived in nurseries for three hundred years."
+      "critic": "William Makepeace Thackeray",
+      "essay": "Swift",
+      "work": "The English Humourists of the Eighteenth Century",
+      "year": "1851",
+      "summary": "In a lecture of 1851 Thackeray condemned the fourth voyage as horrible, shameful and blasphemous, filthy in thought, furious and obscene. He later softened his view of Swift."
     },
     {
-      "position": "A general satire on human pride",
-      "summary": "Swift himself said the design was ‘to vex the world rather than divert it’, and this reading takes the four voyages as one mounting argument against the definition of man as a rational animal.",
-      "counter": "It tends to treat Gulliver as a mouthpiece, when the last chapters make him ridiculous: a man who cannot sit at table with his wife but can talk to his horses for four hours a day."
-    },
-    {
-      "position": "The Part IV problem",
-      "summary": "Everything turns on how far Swift stands behind the Houyhnhnms. They are chaste, rational and serene, and they also debate the extermination of a species by show of hands; Don Pedro is kind, and Gulliver cannot bear him.",
-      "counter": "Making the Houyhnhnms simply a trap risks the opposite error, since the book gives them the only society in which its narrator is ever happy."
+      "critic": "George Orwell",
+      "essay": "Politics vs. Literature: An Examination of Gulliver’s Travels",
+      "work": "Polemic",
+      "year": "1946",
+      "summary": "Orwell called Swift a Tory anarchist whose disgust with the human body poisons the last voyage, and saw in the Houyhnhnms a totalitarian society that rules by unanimous opinion. He still counted it among the six books he would save if all others were destroyed."
     }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Swift use changes of scale to make his satire work?",
-      "focus": "Perspective, proportion and judgement",
-      "plan": [
-        "Set out the arithmetic: a ratio of twelve to one in each direction, kept consistent down to meals and clothing.",
-        "Use Part I to show scale producing comedy: court politics observed from above looks like ceremony without weight.",
-        "Reverse it with Part II: the same English institutions, described upwards, become a case for the prosecution.",
-        "Note what happens in Parts III and IV, where Gulliver is at ordinary human size and the disorientation is moral.",
-        "Conclude on the reader’s position: the book never supplies a scale from which humanity looks reasonable."
-      ]
-    },
-    {
-      "question": "‘Swift attacks reason without use.’ Discuss with reference to Part III.",
-      "focus": "The Academy, Munodi and the Struldbrugs",
-      "plan": [
-        "Distinguish the two charges, and note that Swift wrote for readers who admired the new science.",
-        "Examine the Laputans: mathematics and music at the expense of houses that stand and clothes that fit.",
-        "Set Munodi’s working estate against the improved countryside around it as the chapter’s explicit control.",
-        "Read the Academy projects for the pattern: each is rational in aim and ruinous in cost.",
-        "Close with the Struldbrugs, where nobody asked what the wish was for."
-      ]
-    },
-    {
-      "question": "Is Gulliver a reliable narrator? Does the question matter?",
-      "focus": "Voice, irony and the reader’s work",
-      "plan": [
-        "Define the problem: Gulliver is accurate about facts and unreliable about their meaning.",
-        "Use the gunpowder scene, where his report of the king’s horror is filed under the king’s narrowness.",
-        "Take the prefatory documents as evidence that Swift undermines his narrator before the voyages begin.",
-        "Test the hardest case: how far Part IV endorses the Houyhnhnms, using Don Pedro as the counterweight.",
-        "Decide what the irony asks of a reader, and whether a satire that gives no reliable position can still teach anything."
-      ]
-    },
-    {
-      "question": "How does Gulliver’s Travels treat empire and the describing of other peoples?",
-      "focus": "Travel writing, possession and the last chapter",
-      "plan": [
-        "Begin with form: the book imitates the voyage literature that supplied Europe with its picture of the world.",
-        "Read the inventory of Gulliver’s pockets as a survey carried out on him.",
-        "Use his refusal to help reduce Blefuscu to a province, and the terms in which the refusal is received.",
-        "Examine Part IV, Chapter XII, where he sets out how a country is normally taken and then exempts his own discoveries.",
-        "Weigh the irony against its limits: the Yahoos are described in the language contemporary travellers used for peoples they despised."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Swift published the book under Gulliver’s name and then had Gulliver attack the publisher. What does that arrangement do to a reader before Chapter I?",
-    "The King of Brobdingnag is the book’s nearest thing to a moral standard. Is he a good ruler, or only a shocked one?",
-    "The Houyhnhnms vote on whether to exterminate the Yahoos. Does that single detail change how Part IV should be read?",
-    "Don Pedro de Mendez is kind, patient and generous, and Gulliver cannot bear him. Why does Swift put him there?",
-    "For three centuries this has been sold as a children’s book about little people. What has to be removed to make that possible?"
-  ],
-  "related": [
-    {
-      "href": "/books/robinson-crusoe/",
-      "why": "The other great English fiction dressed as a factual voyage, published seven years earlier and taken seriously as fact by many first readers."
-    },
-    {
-      "href": "/books/utopia/",
-      "why": "The ancestor of the form: a traveller’s report of a rationally ordered commonwealth, delivered with the same straight face."
-    },
-    {
-      "href": "/books/animal-farm/",
-      "why": "Political satire that makes its argument through animals, and that also has to be read twice by anybody who first met it as a story."
-    },
-    {
-      "href": "/books/oroonoko/",
-      "why": "An earlier first-person report from the colonies that claims documentary authority for what it saw."
-    },
-    {
-      "href": "/books/alices-adventures-in-wonderland/",
-      "why": "Another impossible country described with deadpan precision, and another book whose harder edges were trimmed away by its popularity."
-    }
-  ],
-  "videos": []
+  ]
 }

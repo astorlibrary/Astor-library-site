@@ -16,7 +16,7 @@ require('./rebuild-resources');
 require('./rebuild-resource-additions');
 require('./rebuild-study-pages');
 require('./rebuild-generated-study-pages').build();
-require('./rebuild-study-additions');
+require('./rebuild-study-index');
 
 const root = process.cwd();
 const authorProfileByName = new Map(authorProfileData.map(author => [author.name, author]));
@@ -168,7 +168,6 @@ if (!sorted.length) throw new Error('No catalogue books were found');
 // the difficulty the record carries, so a reader choosing what to start can
 // see both before opening the page.
 const { loadBooks } = require('./book-data');
-const { readingTimeLabel, DIFFICULTY_WORDS } = require('./study-toolkit');
 const studyRecords = new Map();
 for (const record of loadBooks()) {
   studyRecords.set(record.href, record);
@@ -177,21 +176,18 @@ for (const record of loadBooks()) {
 function studyMeta(book) {
   const record = studyRecords.get(book.href);
   if (!record) return '';
-  const parts = ['Study toolkit'];
-  if (record.readingTime) parts.push(readingTimeLabel(record.readingTime));
-  if (record.difficulty && DIFFICULTY_WORDS[record.difficulty]) parts.push(DIFFICULTY_WORDS[record.difficulty]);
-  return '<p class="catalog-meta"><span class="catalog-meta-mark" aria-hidden="true">&#9679;</span>' + parts.map(escapeHtml).join(' &middot; ') + '</p>';
+  return '<p class="catalog-meta"><a href="/guides/' + escapeHtml(record.slug) + '/">Study guide</a></p>';
 }
 
 const filterButtons = ['All books', ...collections.map(([, label]) => label)]
   .map((label, index) => `<button type="button" class="catalog-filter${index === 0 ? ' is-active' : ''}" data-filter="${index === 0 ? 'all' : label}" aria-pressed="${index === 0 ? 'true' : 'false'}">${label}</button>`)
   .join('') +
-  `<button type="button" class="catalog-filter catalog-filter-toolkit" data-toolkit-filter aria-pressed="false">With a study toolkit (${[...books.values()].filter(book => studyRecords.has(book.href)).length})</button>`;
+  `<button type="button" class="catalog-filter catalog-filter-toolkit" data-toolkit-filter aria-pressed="false">With a study guide (${[...books.values()].filter(book => studyRecords.has(book.href)).length})</button>`;
 
 const cards = sorted.map(book => `
       <article class="catalog-card" data-collection="${book.collection}" data-toolkit="${studyRecords.has(book.href) ? 'yes' : 'no'}" data-search="${escapeHtml([book.titleText, book.authorText, book.collection, ...book.subjects, textOnly(book.descriptionHtml)].join(' '))}">
         <a class="catalog-cover" href="${book.href}"><img src="${book.image}" alt="${escapeHtml(book.imageAlt)}" width="155" height="233" loading="lazy"></a>
-        <div class="catalog-card-copy"><p class="catalog-collection">${book.collection}</p><h2><a href="${book.href}">${book.titleHtml}</a></h2><p class="catalog-author">${book.authorHtml}</p>${studyMeta(book)}<p>${book.descriptionHtml}</p><a class="home-text-link" href="${book.href}">Open book page <span aria-hidden="true">&rarr;</span></a></div>
+        <div class="catalog-card-copy"><p class="catalog-collection">${book.collection}</p><h2><a href="${book.href}">${book.titleHtml}</a></h2><p class="catalog-author">${book.authorHtml}</p>${studyMeta(book)}<p>${book.descriptionHtml}</p></div>
       </article>`).join('');
 
 const html = `<!doctype html>
@@ -209,7 +205,7 @@ const html = `<!doctype html>
   </nav>
 </header>
 <main class="page-wrap catalog-page">
-  <section class="catalog-hero"><div><p class="kicker">The complete catalogue</p><h1>Astor Library books.</h1><p class="deck">${sorted.length} books across nine collections, from ancient epic and Shakespeare to Victorian, American, modern and Russian classics. Search by title, author or subject.</p></div><div class="catalog-hero-covers" aria-hidden="true"><img src="/The%20Aeneid.png" alt="" width="160" height="240"><img src="/Pride%20and%20Prejudice.png" alt="" width="160" height="240"><img src="/Moby%20Dick.png" alt="" width="160" height="240"></div></section>
+  <section class="catalog-hero"><div><h1>All books</h1><p class="deck">${sorted.length} Astor editions in nine collections, from Homer to the twentieth century. Search by title, author or subject, or choose a collection.</p></div></section>
   <section class="catalog-tools" aria-label="Filter the catalogue"><label for="catalog-search">Search by title, author or subject</label><div class="catalog-search-row"><input id="catalog-search" type="search" autocomplete="off" placeholder="Try Hamlet, Dickens or Gothic"><p id="catalog-count" aria-live="polite">${sorted.length} books</p></div><div class="catalog-filters">${filterButtons}</div></section>
   <section class="catalog-grid" aria-label="Astor Library books">${cards}
   </section>
@@ -220,17 +216,6 @@ const html = `<!doctype html>
 
 fs.writeFileSync(path.join(root, 'library/index.html'), html);
 
-const homepageFile = path.join(root, 'index.html');
-let homepageHtml = fs.readFileSync(homepageFile, 'utf8');
-for (const pattern of [
-  /\b\d+(?= complete novels, plays and poems)/g,
-  /(?<=<a class="home-more" href="\/library\/">All )\d+(?= books &rarr;<\/a>)/g
-]) {
-  if ([...homepageHtml.matchAll(pattern)].length !== 1) throw new Error('Could not find a unique homepage book total');
-  homepageHtml = homepageHtml.replace(pattern, String(sorted.length));
-}
-fs.writeFileSync(homepageFile, homepageHtml);
-
 console.log(`Rebuilt the library with ${sorted.length} books.`);
 require('./rebuild-subjects');
 require('./rebuild-discovery');
@@ -238,3 +223,5 @@ require('./rebuild-passage-hub');
 
 require('./rebuild-seasons');
 require('./rebuild-study-data');
+
+console.log('Built ' + require('./rebuild-guides').rebuildGuides() + ' study guides.');

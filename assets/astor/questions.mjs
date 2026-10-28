@@ -14,7 +14,7 @@
 // quotation entered once is a card on the book page, an entry in the explorer,
 // a flashcard, and a question in four different games.
 
-import { shuffle, sample, pick, seededRandom, hashString, formatYear } from './util.mjs';
+import { shuffle, sample, seededRandom, hashString, formatYear } from './util.mjs';
 
 const STOP_WORDS = new Set([
   'the', 'and', 'but', 'for', 'nor', 'yet', 'so', 'a', 'an', 'of', 'to', 'in',
@@ -409,63 +409,4 @@ export function buildRound(gameId, source, { length = 10, seed = null } = {}) {
   const random = seed === null ? Math.random : seededRandom(seed);
   const questions = builder.build(source, random);
   return shuffle(questions, random).slice(0, length);
-}
-
-// The passage of the day: the same quotation for everybody, chosen by the date.
-export function dailyPassage(index, day) {
-  const quotations = index.books.flatMap(book => book.quotations.map(quotation => ({
-    ...quotation, bookSlug: book.slug, bookTitle: book.title, bookHref: book.href, author: book.author
-  })));
-  if (!quotations.length) return null;
-  return pick(quotations, seededRandom(hashString('astor-strip:' + day)));
-}
-
-// The Daily Five: one question from each of five kinds, chosen by the date so
-// that everybody playing on the same day plays the same round, with no server
-// and no account.
-export function dailyRound(index, day) {
-  const seed = hashString('astor-daily:' + day);
-  const random = seededRandom(seed);
-  const books = index.books;
-  const withQuotations = books.filter(book => book.quotations.length >= 6);
-  if (!withQuotations.length) return [];
-
-  const dayBook = pick(withQuotations, random);
-  const plan = [
-    () => whoSaidIt(dayBook, random),
-    () => whichBook(books, random),
-    () => themeMatch(dayBook, random),
-    () => fillTheLine(dayBook, random),
-    () => contextSprint(books, random)
-  ];
-
-  const round = [];
-  const used = new Set();
-  for (const step of plan) {
-    const options = step().filter(question => question && !used.has(question.id));
-    if (!options.length) continue;
-    const chosen = pick(options, random);
-    used.add(chosen.id);
-    round.push(chosen);
-  }
-  // A short day is better than a repeated question, but the puzzle should still
-  // be five long wherever the data allows it.
-  if (round.length < 5) {
-    const spare = shuffle([
-      ...characterIdentification(dayBook, random),
-      ...techniqueSpotter(dayBook, random),
-      ...openingLines(books, random)
-    ], random).filter(question => question && !used.has(question.id));
-    while (round.length < 5 && spare.length) {
-      const next = spare.shift();
-      used.add(next.id);
-      round.push(next);
-    }
-  }
-  return round.slice(0, 5);
-}
-
-// The shareable grid: five marks, no answers given away.
-export function resultGrid(results) {
-  return results.map(correct => (correct ? '▣' : '▢')).join('');
 }

@@ -38,6 +38,17 @@ const items = [
   ...formatBoxImages
 ];
 const seenSources = new Set();
+const force = process.argv.includes('--force');
+
+// sips on a Mac, ImageMagick elsewhere. Covers are resized by height so every
+// thumbnail keeps the 2:3 shape of the book.
+function resize(sourceFile, target, height, quality) {
+  if (fs.existsSync('/usr/bin/sips')) {
+    childProcess.execFileSync('/usr/bin/sips', ['-s', 'format', 'jpeg', '-s', 'formatOptions', String(quality), '--resampleHeight', String(height), sourceFile, '--out', target], { stdio: 'ignore' });
+    return;
+  }
+  childProcess.execFileSync('convert', [sourceFile + '[0]', '-background', 'white', '-alpha', 'remove', '-colorspace', 'sRGB', '-resize', 'x' + height, '-strip', '-interlace', 'Plane', '-quality', String(quality), target], { stdio: 'ignore' });
+}
 
 fs.mkdirSync(outputDirectory, { recursive: true });
 
@@ -60,19 +71,16 @@ for (const item of items) {
   const fileName = slug + '-' + hash + '.jpg';
   const smallFileName = slug + '-' + hash + '-360.jpg';
 
-  // Two sizes per cover: 720px for hero covers and retina grids, 360px for
-  // catalogue and explore grid cells. Consumers derive the -360 name from the
-  // mapped path, so both files must always exist together.
-  for (const [maxSize, quality, name] of [[720, '78', fileName], [360, '74', smallFileName]]) {
+  // Two sizes per cover, both made from the original upload: about 640px
+  // wide (960 tall) for book pages, hero covers and retina grids, and about
+  // 320px wide (the "-360" file) for catalogue cells. Consumers derive the
+  // small name from the mapped path, so both files always exist together.
+  // Pass --force to remake every file, for instance after changing the sizes.
+  for (const [height, quality, name] of [[960, 82, fileName], [480, 80, smallFileName]]) {
+    const target = path.join(outputDirectory, name);
     // A thumbnail is named after its source path, so an existing file is current.
-    if (fs.existsSync(path.join(outputDirectory, name))) continue;
-    childProcess.execFileSync('/usr/bin/sips', [
-      '-s', 'format', 'jpeg',
-      '-s', 'formatOptions', quality,
-      '-Z', String(maxSize),
-      sourceFile,
-      '--out', path.join(outputDirectory, name)
-    ], { stdio: 'ignore' });
+    if (fs.existsSync(target) && !force) continue;
+    resize(sourceFile, target, height, quality);
   }
 
   mapping[sourceHref] = '/assets/book-thumbs/' + fileName;

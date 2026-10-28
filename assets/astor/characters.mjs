@@ -490,8 +490,8 @@ function renderDetail(mount, book, state, onSelect) {
       }))
       : el('p', { class: 'astor-inline-note', text: 'No connections in this part of the book.' }),
     el('p', {}, [el('a', {
-      href: book.href + '#astor-character-' + character.id,
-      text: window.location.pathname === book.href ? 'Jump to the full entry ↓' : 'Read the full entry on the ' + book.title + ' page →'
+      href: '/guides/' + book.slug + '/characters/#astor-character-' + character.id,
+      text: window.location.pathname.startsWith('/guides/' + book.slug + '/characters/') ? 'Read the full entry above' : 'Read the full entry in the study guide'
     })])
   ]));
 }

@@ -21,28 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
     "note": "The Astor edition divides Act 4 into three scenes where older editions have five: Gaultree is 4.1, Falstaff’s capture of Colevile 4.2, and the King’s last scene with the crown 4.3."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1597–98",
-      "note": "After Henry IV Part 1 and before Henry V, with which it forms the second half of a four-play sequence beginning with Richard II."
-    },
-    {
-      "label": "First printed",
-      "value": "1600",
-      "note": "A quarto whose first copies left out the whole of 3.1; the scene was added in a reissue the same year."
-    },
-    {
-      "label": "Frame",
-      "value": "Rumour and a dancer",
-      "note": "Rumour, painted full of tongues, opens the play with false news of Shrewsbury; a dancer speaks the epilogue and promises more of Falstaff."
-    },
-    {
-      "label": "Ending",
-      "value": "I know thee not, old man",
-      "note": "The new king’s first public words to Falstaff, in the street after the coronation."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -183,12 +161,6 @@
       "summary": "Less often on stage than in Part 1, and less easy in the tavern. He tells Poins his heart bleeds for his father but that weeping would look like hypocrisy, spies on Falstaff in disguise, and leaves the moment the news of war arrives. At his father’s bedside he takes the crown too soon and has to explain himself. As king he keeps the justice who once imprisoned him and turns away Falstaff in public.",
       "clue": "He speaks to a crown on a pillow as if it could hear him, and puts it on because he thinks the man beside it is dead.",
       "firstAppearance": "2.2",
-      "traits": [
-        "guarded",
-        "self-aware",
-        "watchful",
-        "decisive"
-      ],
       "relationships": [
         {
           "to": "king-henry",
@@ -233,12 +205,6 @@
       "summary": "Older, poorer and more often ill than in Part 1. He owes the Hostess a hundred marks and borrows more, is refused a thousand pounds by the Chief Justice and gets one from Shallow, lets the fittest recruits buy their way out, and claims a knight who surrenders to his reputation. He still talks better than anyone, but the play reminds him of his age again and again: Doll’s death’s-head, Shallow’s dead friends, the chimes at midnight. He expects the new king to make his fortune, and is sent to prison.",
       "clue": "He sends his water to a doctor, and his page with letters to the Prince and to an old woman he has sworn weekly to marry.",
       "firstAppearance": "1.2",
-      "traits": [
-        "witty",
-        "ageing",
-        "resourceful",
-        "unscrupulous"
-      ],
       "relationships": [
         {
           "to": "hal",
@@ -293,12 +259,6 @@
       "summary": "He does not appear until the third act, awake at one in the morning and sick. He remembers Richard II’s prophecy that Northumberland would turn on him, fears the reign his son will lead, and on his deathbed admits that he came by the crown by by-paths and indirect ways. His last advice is to keep restless minds busy with wars abroad.",
       "clue": "He envies the ship-boy asleep on the mast, and learns too late that the Jerusalem he was to die in is a room in his own palace.",
       "firstAppearance": "3.1",
-      "traits": [
-        "sleepless",
-        "guilty",
-        "politic",
-        "sick"
-      ],
       "relationships": [
         {
           "to": "hal",
@@ -325,12 +285,6 @@
       "summary": "He once sent the Prince to prison for striking him in court. He spends the play trying to bring Falstaff to account, and after the old King’s death expects to lose everything. His defence, that he acted for the King’s own law, persuades Henry V to keep him in office as a father to his youth. It is he who sends Falstaff to the Fleet.",
       "clue": "He tells an old man that there is not a white hair on his face but should have its effect of gravity, and the answer is ‘gravy’.",
       "firstAppearance": "1.2",
-      "traits": [
-        "stern",
-        "upright",
-        "patient",
-        "fearless"
-      ],
       "relationships": [
         {
           "to": "falstaff",
@@ -359,11 +313,6 @@
       "summary": "Cold, capable and sober. He promises the rebels at Gaultree that their grievances will be redressed, and once their army has scattered he arrests their leaders, keeping to the letter of his word and giving God the credit. Falstaff says he drinks no wine and cannot be made to laugh.",
       "clue": "He tells an archbishop that he pawned him no faith, only a promise about grievances.",
       "firstAppearance": "4.1",
-      "traits": [
-        "cold",
-        "calculating",
-        "loyal"
-      ],
       "relationships": [
         {
           "to": "archbishop",
@@ -390,11 +339,6 @@
       "summary": "He lay crafty-sick while his son fought at Shrewsbury. Told of Hotspur’s death he tears off his nightcap and calls for order to die, then lets his wife and daughter-in-law persuade him to Scotland, and sends the Archbishop letters instead of men. The sheriff of Yorkshire defeats him in the end.",
       "clue": "He reads a messenger’s face like the title-page of a tragedy before the man has said a word.",
       "firstAppearance": "1.1",
-      "traits": [
-        "wavering",
-        "proud",
-        "self-protective"
-      ],
       "relationships": [
         {
           "to": "lady-percy",
@@ -422,11 +366,6 @@
       "summary": "He makes rebellion a religious cause, gathering followers with the blood of King Richard, and argues at Gaultree that the commonwealth is sick and he means only to purge it. He trusts Prince John’s word, sends his army home, and is arrested for treason.",
       "clue": "He calls the English crowd a common dog that has vomited up one king and now howls to eat him again.",
       "firstAppearance": "1.3",
-      "traits": [
-        "eloquent",
-        "trusting",
-        "principled"
-      ],
       "relationships": [
         {
           "to": "lancaster",
@@ -445,11 +384,6 @@
       "summary": "A thin old man who knew Falstaff at Clement’s Inn fifty-five years ago, by his cousin Silence’s count, and talks endlessly of the wild days they had. Falstaff says that every third word is a lie. He presents the recruits, entertains Falstaff twice, and lends him a thousand pounds in the hope of advancement at court.",
       "clue": "He asks in one breath whether an old archer is dead and what a yoke of bullocks fetches at Stamford fair.",
       "firstAppearance": "3.2",
-      "traits": [
-        "garrulous",
-        "nostalgic",
-        "gullible"
-      ],
       "relationships": [
         {
           "to": "falstaff",
@@ -469,11 +403,6 @@
       "summary": "A poor widow, she has Falstaff arrested for a hundred marks and remembers, in exact domestic detail, the day he swore to marry her. Within minutes she has agreed to pawn her plate to lend him more. She has known him twenty-nine years. At the end she is dragged off by the beadles with Doll.",
       "clue": "She says he has eaten her out of house and home, and cannot finish a sentence about an honest man without breaking off.",
       "firstAppearance": "2.1",
-      "traits": [
-        "loyal",
-        "muddled",
-        "warm-hearted"
-      ],
       "relationships": [
         {
           "to": "falstaff",
@@ -501,11 +430,6 @@
       "summary": "She fights Pistol with better insults than he has, calls Falstaff a muddy conger, and then sits on his knee and tells him she loves him better than any young man. She is arrested in the last act after a man has been killed.",
       "clue": "She tells an old man to begin patching up his body for heaven, and is told not to speak like a death’s-head.",
       "firstAppearance": "2.4",
-      "traits": [
-        "fierce",
-        "affectionate",
-        "outspoken"
-      ],
       "relationships": [
         {
           "to": "falstaff",
@@ -532,11 +456,6 @@
       "summary": "A swaggerer who talks in scraps of old plays, Latin and Italian. He is thrown downstairs at the Boar’s Head, rides to Gloucestershire with the news of the King’s death, and goes to the Fleet with Falstaff.",
       "clue": "He asks ‘Under which king?’ and quotes the playhouse on hollow pampered jades of Asia.",
       "firstAppearance": "2.4",
-      "traits": [
-        "bombastic",
-        "cowardly",
-        "comic"
-      ],
       "relationships": [
         {
           "to": "falstaff",
@@ -556,11 +475,6 @@
       "summary": "In one speech she remembers her husband so vividly that the young men of England copied even the thickness of his speech, and tells his father that he broke his word to his son. She persuades Northumberland not to fight.",
       "clue": "She says her husband was the glass in which the noble youth did dress themselves.",
       "firstAppearance": "2.3",
-      "traits": [
-        "grieving",
-        "eloquent",
-        "reproachful"
-      ],
       "relationships": [
         {
           "to": "northumberland",
@@ -579,11 +493,6 @@
       "summary": "The one recruit who does not try to buy his way out. He answers Falstaff’s jokes about his trade with plain courage.",
       "clue": "He says a man can die but once and that he that dies this year is quit for the next.",
       "firstAppearance": "3.2",
-      "traits": [
-        "humble",
-        "brave",
-        "plain-spoken"
-      ],
       "relationships": [
         {
           "to": "falstaff",
@@ -602,11 +511,6 @@
       "summary": "A figure painted full of tongues who announces that he has spread false news of a rebel victory at Shrewsbury. The play that follows is full of wrong reports, exaggerated numbers and people who believe what they fear.",
       "clue": "He calls himself a pipe that the many-headed crowd can play upon.",
       "firstAppearance": "1.0",
-      "traits": [
-        "boastful",
-        "false",
-        "self-aware"
-      ],
       "relationships": [
         {
           "to": "northumberland",
@@ -1365,88 +1269,5 @@
       "lon": -2.05,
       "note": "Justice Shallow’s house and orchard."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "The rejection is necessary",
-      "summary": "Hal has promised since the first part that he would throw off his loose behaviour, and a king cannot keep a companion who says the laws of England are at his commandment. The play prepares the audience for it scene by scene.",
-      "counter": "A. C. Bradley and many since have found the public humiliation cruel, and the play gives Falstaff too much life for the audience to share the new king’s view of him."
-    },
-    {
-      "position": "A darker second part",
-      "summary": "Where Part 1 has battles and energy, Part 2 has sickness, age, debts and deaths. Falstaff is poorer and more often alone, and even the comedy of Shallow’s orchard is about old men.",
-      "counter": "The Gloucestershire scenes are among the funniest Shakespeare wrote, and the play’s gentleness towards Shallow, Silence and Doll is as strong as its melancholy."
-    },
-    {
-      "position": "Gaultree as policy",
-      "summary": "Prince John’s trick shows how the House of Lancaster actually holds power: through the letter of the law and the appearance of piety. It prepares the ground for Hal’s own careful public image.",
-      "counter": "Some productions and readers treat it simply as treachery that the play condemns; the rebels’ own cause was not clean either, as Westmoreland points out."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does the play prepare the audience for the rejection of Falstaff?",
-      "focus": "Hal and Falstaff",
-      "plan": [
-        "Begin with how little Hal and Falstaff share the stage compared with Part 1.",
-        "Examine 2.2 and 2.4: Hal’s weariness, his reasons for not weeping, and his exit when the news of war arrives.",
-        "Consider 5.2, where Hal takes the Chief Justice as a father.",
-        "Analyse the language of 5.5, including old man and fall to thy prayers.",
-        "Conclude on whether the play makes the rejection feel just, cruel or both."
-      ]
-    },
-    {
-      "question": "What does Henry IV Part 2 show about holding power?",
-      "focus": "Crown and conscience",
-      "plan": [
-        "Start with the King’s soliloquy on sleep and its last line.",
-        "Set it beside Richard’s prophecy as the King remembers it.",
-        "Analyse Hal’s speech to the crown in 4.3.",
-        "Weigh the King’s deathbed advice about foreign quarrels.",
-        "Conclude with Hal’s promise that the crown will pass with better quiet."
-      ]
-    },
-    {
-      "question": "How does Shakespeare use age and memory in the Gloucestershire scenes?",
-      "focus": "Shallow, Silence and Falstaff",
-      "plan": [
-        "Examine Shallow’s recollections of Clement’s Inn and his list of the dead.",
-        "Consider the chimes at midnight and Falstaff’s soliloquy on Shallow’s lies.",
-        "Look at the recruits, especially Feeble.",
-        "Discuss the orchard scene and Silence’s songs.",
-        "Connect them to the King’s and Falstaff’s ageing elsewhere in the play."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Why does Shakespeare open with Rumour, when the audience already knows how Shrewsbury ended?",
-    "Is Prince John’s trick at Gaultree clever, dishonest or both?",
-    "Does Hal mean what he says to the crown when he thinks his father is dead?",
-    "Who is the better father to Hal: the King, Falstaff or the Lord Chief Justice?",
-    "Is the rejection of Falstaff cruel?",
-    "What do Shallow and Silence add to a history play?"
-  ],
-  "related": [
-    {
-      "href": "/books/henry-iv-part-1/",
-      "why": "The first part, with Hotspur, Gad’s Hill and Shrewsbury."
-    },
-    {
-      "href": "/books/henry-v/",
-      "why": "What Hal does as king, and how Falstaff’s death is reported."
-    },
-    {
-      "href": "/books/richard-ii/",
-      "why": "How Bolingbroke came by the crown that stops his son sleeping."
-    },
-    {
-      "href": "/books/merry-wives-of-windsor/",
-      "why": "Falstaff in a comedy of his own, among the Windsor wives."
-    },
-    {
-      "href": "/books/henry-iv-parts-1-and-2/",
-      "why": "Both parts together in one volume."
-    }
-  ],
-  "videos": []
+  ]
 }

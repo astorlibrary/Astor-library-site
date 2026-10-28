@@ -21,28 +21,6 @@
     "url": "https://shakespeare.mit.edu/julius_caesar/full.html",
     "note": "The play was first printed in the 1623 First Folio and no earlier quarto is known, so the text is unusually stable compared with the other tragedies."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "1599",
-      "note": "Associated with the opening season of the Globe; a Swiss traveller, Thomas Platter, saw a Roman tragedy on Bankside that September."
-    },
-    {
-      "label": "First printed",
-      "value": "1623",
-      "note": "In the First Folio. There is no quarto, and the Folio text is comparatively clean."
-    },
-    {
-      "label": "Chief source",
-      "value": "North’s Plutarch, 1579",
-      "note": "The lives of Caesar, Brutus and Antony, translated into English prose that Shakespeare sometimes versifies almost word for word."
-    },
-    {
-      "label": "Shape",
-      "value": "Five acts, eighteen scenes",
-      "note": "The title character is dead by the middle of Act III and speaks about 150 lines in the whole play."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -183,11 +161,6 @@
       "summary": "He is on stage for a fraction of the play and dominates the rest of it. Shakespeare is careful to make him formidable and physically ordinary, deaf in one ear, prone to fits, superstitious enough to change his mind twice in one morning, so that whether he would have become a tyrant can never be settled.",
       "clue": "He is offered a crown three times and pushes it away, ignores a warning about a date, and is more powerful after his death than before it.",
       "firstAppearance": "1.2",
-      "traits": [
-        "imperious",
-        "physically frail",
-        "persuadable by flattery"
-      ],
       "relationships": [
         {
           "to": "brutus",
@@ -233,11 +206,6 @@
       "summary": "He joins a murder on a hypothesis, having said outright that he knows no personal cause. Every subsequent decision he takes for honourable reasons is tactically ruinous: spare Antony, let him speak, refuse the money he needs, march to Philippi. The play never suggests he is insincere, and that makes him difficult.",
       "clue": "He kills a friend on the grounds of what the friend might become, and then loses the argument at the funeral.",
       "firstAppearance": "1.2",
-      "traits": [
-        "principled",
-        "self-persuading",
-        "consistently wrong about people"
-      ],
       "relationships": [
         {
           "to": "cassius",
@@ -285,11 +253,6 @@
       "summary": "He begins as the play’s cynic (envious, sharp about Caesar’s body, willing to forge letters) and ends as the one character who reads situations correctly and is overruled every time. Kill Antony, do not let him speak, wait at Sardis: he is right three times, defers to Brutus three times, and dies of a misreport.",
       "clue": "He forges letters, gives the play’s best account of how a man becomes a god, and dies because he trusts a distant shout.",
       "firstAppearance": "1.2",
-      "traits": [
-        "envious",
-        "shrewd",
-        "deferential at the wrong moments"
-      ],
       "relationships": [
         {
           "to": "brutus",
@@ -327,11 +290,6 @@
       "summary": "Dismissed by Brutus as a limb of Caesar and a man given to sports, he turns out to be the most capable politician in the play. His funeral speech says the opposite of what it seems to say, and the next scene he appears in shows him trading his own nephew’s life across a table.",
       "clue": "He is given permission to speak at a funeral on the condition that he blames nobody, and obeys the letter of it.",
       "firstAppearance": "1.2",
-      "traits": [
-        "theatrical",
-        "cold when it counts",
-        "underestimated"
-      ],
       "relationships": [
         {
           "to": "caesar",
@@ -369,11 +327,6 @@
       "summary": "She argues for the right to know what her husband is doing, and proves her constancy by wounding herself in the thigh. Having won the argument, she cannot hold the knowledge: her next scene shows somebody trying not to give something away, and her death is reported twice in one conversation.",
       "clue": "She gives herself a wound to prove she can keep a secret, and then cannot stand still in the street.",
       "firstAppearance": "2.1",
-      "traits": [
-        "insistent",
-        "proud of her father",
-        "undone by knowing"
-      ],
       "relationships": [
         {
           "to": "brutus",
@@ -393,11 +346,6 @@
       "summary": "She has one scene, is right in it, and is talked out of being right by a man who reinterprets her dream as a compliment. The play gives her the only correct prediction anybody makes about the morning of the Ides, and then shows exactly how such a warning gets set aside in a household that runs on prestige.",
       "clue": "She dreams of a statue running with blood and is told it means Rome will be revived by him.",
       "firstAppearance": "1.2",
-      "traits": [
-        "frightened",
-        "accurate",
-        "overruled"
-      ],
       "relationships": [
         {
           "to": "caesar",
@@ -416,11 +364,6 @@
       "summary": "His account of the crown scene in 1.2 is the play’s funniest piece of writing and its most useful: a bored, contemptuous eyewitness is worth more than a ceremony. He is terrified by the storm in the next scene, which makes his blunt prose a pose, and Cassius recruits him in about forty lines.",
       "clue": "He describes a crown being refused as if it were bad theatre, and later strikes the first blow.",
       "firstAppearance": "1.2",
-      "traits": [
-        "sardonic",
-        "superstitious",
-        "easily recruited"
-      ],
       "relationships": [
         {
           "to": "cassius",
@@ -447,11 +390,6 @@
       "summary": "He arrives in Act IV, contradicts Antony twice, and wins both exchanges without raising his voice. Shakespeare gives him very few lines and makes every one of them a decision, so that an audience who knows what he becomes can see it starting: the last words of the play are his, ordering Brutus’s burial and calling the field to rest.",
       "clue": "A young man who disagrees with his senior partner about which wing to take, and is obeyed.",
       "firstAppearance": "4.1",
-      "traits": [
-        "cold",
-        "exact",
-        "already in charge"
-      ],
       "relationships": [
         {
           "to": "antony",
@@ -1177,124 +1115,6 @@
       "lat": 51.5081,
       "lon": -0.0972,
       "note": "Where Thomas Platter watched a Caesar play in September 1599, in the Globe’s first season."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "A tragedy of Brutus",
-      "summary": "The oldest reading treats the play as the study of a good man who does a terrible thing for defensible reasons. On this account the title is a misdirection: Caesar dies halfway through, and the moral interest belongs to the man who cannot live with what he has done.",
-      "counter": "It has to explain away Act I, where Brutus is recruited more than convinced, and the play’s steady interest in the crowd, who decide more than any individual does."
-    },
-    {
-      "position": "A political play about rhetoric",
-      "summary": "The play can be read as an argument about language and power: two speeches from one pulpit produce opposite results, and the crowd’s replies are written into the scene so that persuasion can be examined as a technique.",
-      "counter": "Read only this way, the private material, Portia’s wound, Calpurnia’s dream, the quarrel in the tent, becomes decoration, when it is where the play’s decisions are really made."
-    },
-    {
-      "position": "A play about republicanism",
-      "summary": "Written in the last years of an ageing queen with no heir, the play stages a succession crisis and never says whether killing a ruler can be justified. The republic and one-man rule are each shown at their worst within two acts of each other.",
-      "counter": "The refusal can look like evasion. The play gives Caesar no tyrannical act on stage and gives the conspirators no working alternative, which leaves the political question open by declining to pose it."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "Is Brutus a tragic hero or a political failure?",
-      "focus": "Honour, judgement and consequence",
-      "plan": [
-        "Start with 2.1, where the conclusion precedes the argument and the case rests on what Caesar might become.",
-        "List the decisions he takes on principle and loses by: sparing Antony, permitting the funeral speech, refusing to raise money, marching to Philippi.",
-        "Consider how consistently the play puts his errors down to virtue more than vanity, and whether that distinction holds in 4.3.",
-        "Weigh Antony’s eulogy in 5.5: is ‘the noblest Roman’ a verdict, or the last piece of rhetoric in a play made of it?",
-        "Decide whether the tragedy lies in the man’s character or in the situation’s refusal to reward it."
-      ]
-    },
-    {
-      "question": "How does Shakespeare use the two funeral speeches?",
-      "focus": "Rhetoric, the crowd and the turning point of the play",
-      "plan": [
-        "Compare form first. Brutus speaks in prose, from principle; Antony in verse, from objects: a will, a mantle, a body.",
-        "Analyse Antony’s refrain of ‘honourable’ as a technique for making an accusation the crowd believes it has reached itself.",
-        "Use the citizens’ interjections as evidence: the scene records its own effect line by line.",
-        "Take 3.3, the murder of Cinna the poet, as the result of the speeches.",
-        "Assess what the sequence implies about political speech: that it works by permission, timing and property more than by argument."
-      ]
-    },
-    {
-      "question": "What part do omens and interpretation play in Julius Caesar?",
-      "focus": "Prophecy, reading and self-deception",
-      "plan": [
-        "Gather the signs: the soothsayer, the storm, the lion, Calpurnia’s dream, the sacrificial beast with no heart, the birds at Philippi.",
-        "Show that the signs are never wrong and are usually explained away by somebody with a motive; Decius in 2.2 is the clearest case.",
-        "Set Cassius’s ‘not in our stars’ against the play’s supernatural machinery and ask which the drama endorses.",
-        "Use 5.3 to make the point structurally: Cassius dies of a misread cheer in a play full of misread omens.",
-        "Conclude that the play is about interpretation more than fate."
-      ]
-    },
-    {
-      "question": "‘The play is about friendship, not politics.’ Discuss.",
-      "focus": "Private bonds and public acts",
-      "plan": [
-        "Begin with Caesar’s last words, which name a friend and not a cause.",
-        "Follow Cassius’s recruitment of Brutus in 1.2 as an exploitation of intimacy: the flattery is personal, the argument is not.",
-        "Read 4.3 closely: an argument that starts about bribery and is settled by an embrace and a bowl of wine.",
-        "Weigh the domestic scenes with Portia and Calpurnia as the places where the political decisions are actually contested.",
-        "Test the counter-case with Act IV’s proscription list, where Antony gives up a nephew’s life in a single line."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Caesar is killed halfway through and never commits a tyrannical act on stage. Does the play think the conspirators were wrong?",
-    "Brutus lets Antony speak at the funeral. Is that an error of judgement or an expression of everything he believes?",
-    "The citizens open the play, decide its middle and murder a poet. What is the crowd for?",
-    "Portia and Calpurnia are both right and both ignored. What does the play suggest about where political decisions get made?",
-    "Antony calls Brutus the noblest Roman of them all. Do you believe him?"
-  ],
-  "related": [
-    {
-      "href": "/books/antony-and-cleopatra/",
-      "why": "The sequel in all but name: the same Antony and the same Octavius, ten years on and no longer pretending to share."
-    },
-    {
-      "href": "/books/coriolanus/",
-      "why": "The other Roman tragedy that turns on a crowd, and the bleakest account Shakespeare gives of what a city owes its soldiers."
-    },
-    {
-      "href": "/books/hamlet/",
-      "why": "Written within a year or two; Polonius says he once played Caesar, and the two plays share a question about killing a ruler."
-    },
-    {
-      "href": "/books/macbeth/",
-      "why": "Political murder argued out in advance, with the same discovery that the killing settles nothing."
-    },
-    {
-      "href": "/books/richard-ii/",
-      "why": "An earlier study of whether a bad ruler may lawfully be removed, and what follows once the answer is yes."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Julius Caesar Act 1 Scene 2 | Text Detectives Key Scene | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "fCpPR2yWEpc",
-      "url": "https://www.youtube.com/watch?v=fCpPR2yWEpc",
-      "note": "Two RSC actors and a director work through the first scene between Brutus and Cassius.",
-      "source": "Royal Shakespeare Company"
-    },
-    {
-      "title": "Friends, Romans, Countrymen | Julius Caesar (2014) | Act 3 Scene 2 | Shakespeare's Globe",
-      "provider": "youtube-nocookie",
-      "id": "1RL8Wg-b8kg",
-      "url": "https://www.youtube.com/watch?v=1RL8Wg-b8kg",
-      "note": "Mark Antony's speech over the body of Caesar, performed on the Globe stage.",
-      "source": "Shakespeare's Globe"
-    },
-    {
-      "title": "'Romans, countrymen and lovers' Julius Caesar with Ben Whishaw",
-      "provider": "youtube-nocookie",
-      "id": "sW4uwFlsZlo",
-      "url": "https://www.youtube.com/watch?v=sW4uwFlsZlo",
-      "note": "Ben Whishaw performs Brutus's speech to the crowd in a modern-dress stage production.",
-      "source": "National Theatre"
     }
   ]
 }

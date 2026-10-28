@@ -200,7 +200,7 @@ for (const match of libraryHtml.matchAll(bookPattern)) {
   if (!titleMatch || !imageMatch) throw new Error('Could not read a book card');
 
   const authorHtml = matchText(block, /<p class="catalog-author">([\s\S]*?)<\/p>/, 'book author');
-  const descriptionHtml = matchText(block, /<p>([\s\S]*?)<\/p><a class="home-text-link"/, 'book description');
+  const descriptionHtml = matchText(block, /<p>([\s\S]*?)<\/p><\/div>/, 'book description');
   const title = textOnly(titleMatch[2]);
   const author = textOnly(authorHtml);
   const collection = textOnly(match[1]);
@@ -1050,18 +1050,19 @@ const exploreHtml = '<!doctype html><html lang="en"><head>' +
   '<a href="/library/"><span>Main editions</span><p>Every book in the catalogue, with what each edition includes.</p></a>' +
   '<a href="/subjects/"><span>Subject guides</span><p>Guides to comedy, Gothic, tragedy, detective fiction, epic, satire, narration, slavery and freedom.</p></a>' +
   '<a href="/authors/"><span>Author pages</span><p>A life, the publication history, and every Astor edition by that writer.</p></a>' +
-  '<a href="/study/"><span>Study editions</span><p>The complete text, with the summaries, quotations, criticism and model paragraphs an essay needs.</p></a>' +
-  '<a href="/resources/"><span>Free guides</span><p>Online guides to individual texts, passages, themes and historical contexts.</p></a>' +
+  '<a href="/guides/"><span>Study guides</span><p>Free guides to the plot, characters, themes, quotations, language and context of each book.</p></a>' +
+  '<a href="/study/"><span>Study Editions</span><p>Printed editions with the complete text and closer analysis for coursework and exams.</p></a>' +
+  '<a href="/resources/"><span>Illustrated guides</span><p>Slide guides to individual texts, passages, themes and historical contexts.</p></a>' +
   '<a href="/reading-routes/"><span>Cross-period reading lists</span><p>Book lists organised around home, freedom, fear, power, evidence, voice and knowledge.</p></a>' +
   '<a href="/explore/quotations/"><span>Quotation explorer</span><p>Every checked quotation. Search by word, or narrow by book, character, theme or technique.</p></a>' +
   '<a href="/explore/timeline/"><span>Literature timeline</span><p>Every book in order of first publication, with its own dates and what else was happening.</p></a>' +
   '<a href="/explore/characters/"><span>Character maps</span><p>How the characters in each book are linked, act by act or section by section.</p></a>' +
   '<a href="/explore/themes/"><span>Themes across the library</span><p>Themes the books share, set out book by book.</p></a>' +
-  '<a href="/explore/techniques/"><span>Technique glossary</span><p>What each term means, with a line from a book using it.</p></a>' +
+  '<a href="/explore/techniques/"><span>Literary terms</span><p>What each term means, with a line from a book using it.</p></a>' +
   '<a href="/explore/map/"><span>Map of settings</span><p>Where the books are set, from Inverness to Transylvania.</p></a>' +
   '<a href="/explore/compare/"><span>Compare two texts</span><p>Two books side by side, with paired quotations.</p></a>' +
-  '<a href="/play/"><span>Revise</span><p>Quizzes on each book, flashcards and an essay planner.</p></a>' +
-  '<a href="/for-teachers/"><span>For teachers</span><p>Lesson starters, printable worksheets, discussion sheets and a projector mode.</p></a>' +
+  '<a href="/play/"><span>Revise</span><p>Quizzes and flashcards on each book.</p></a>' +
+  '<a href="/for-teachers/"><span>For teachers</span><p>Lesson starters, printable worksheets and a projector mode.</p></a>' +
   '</section>' +
   '<section class="explore-results" aria-label="Search results">' + entryCards + '</section>' +
   '<button class="explore-more" id="explore-more" type="button">Show 24 more</button>' +
@@ -1158,13 +1159,14 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
   '<link rel="stylesheet" href="/assets/styles.css"><style>' +
   '.site-index-quick{display:flex;gap:10px;flex-wrap:wrap;margin:30px 0 60px}.site-index-quick a{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;font-weight:800;color:var(--wine-text,var(--burgundy));border:1px solid var(--line);background:var(--surface,#fff8ef);padding:10px 13px;text-decoration:none}.index-group{border-top:1px solid var(--line);padding:38px 0 14px}.index-group h2{font-size:clamp(34px,5vw,58px);line-height:.95;letter-spacing:-.04em;margin:0 0 22px}.index-group h2 a{text-decoration:none}.index-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.index-links>a{display:flex;flex-direction:column;gap:6px;min-height:92px;border:1px solid var(--line);background:rgba(var(--surface-rgb,255,248,239),0.86);padding:15px;text-decoration:none}.index-links span{font-size:21px;font-weight:700;line-height:1.08}.index-links small{font-family:system-ui,-apple-system,BlinkMacSystemFont,\'Segoe UI\',sans-serif;color:var(--text-muted,var(--muted));line-height:1.35}@media(max-width:820px){.index-links{grid-template-columns:1fr}}' +
   '</style></head><body>' + siteHeader() +
-  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Complete directory</p><h1>Site index.</h1><p class="deck">Links to every book, close reading, writer, subject guide, free resource, study edition and collection currently available from Astor Library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions, plus twenty-two study tools.</strong> Use the catalogue search to filter these entries, or browse the sections below.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/passage-room/">Read a passage</a></div></aside></section>' +
+  '<main class="page-wrap"><section class="page-intro"><div><p class="kicker">Complete directory</p><h1>Site index.</h1><p class="deck">Links to every book, close reading, writer, subject guide, free resource, study edition and collection currently available from Astor Library.</p></div><aside class="source-note"><p><strong>' + books.length + ' books, ' + passages.length + ' close readings, ' + subjects.length + ' subject guides, ' + authors.length + ' writers, ' + resources.length + ' free guides and ' + studyEditions.length + ' study editions, plus the study tools.</strong> Use the catalogue search to filter these entries, or browse the sections below.</p><div class="button-row"><a class="button primary" href="/explore/">Search everything</a><a class="button secondary" href="/passage-room/">Read a passage</a></div></aside></section>' +
   '<nav class="site-index-quick" aria-label="Site index sections"><a href="#seasons">Seasons</a><a href="#passages">Close readings</a><a href="#subjects">Subjects</a><a href="#writers">Writers</a><a href="#books">Books by collection</a><a href="#free-guides">Free guides</a><a href="#study-editions">Study editions</a><a href="#tools">Study tools</a><a href="/about/">About Astor Library</a><a href="/editorial/">Editorial standards</a></nav>' +
   // The tools are part of the site and belong in a page that calls itself a
   // complete directory; they are listed by hand because there are few of them
   // and each needs a sentence rather than a category.
   '<section class="index-group" id="tools"><h2><a href="/play/">Study tools</a></h2><div class="index-links">' + [
-    ['/play/', 'Revise', 'Quizzes on each book, flashcards and an essay planner'],
+    ['/guides/', 'Study guides', 'Plot, characters, themes, quotations, language and context'],
+    ['/play/', 'Revise', 'Quizzes and flashcards on each book'],
     ['/play/who-said-it/', 'Who said it?', 'Name the speaker of a line'],
     ['/play/fill-the-line/', 'Fill the line', 'Put the missing words back into a speech'],
     ['/play/theme-match/', 'Theme match', 'Decide which theme a quotation carries'],
@@ -1175,17 +1177,15 @@ const siteIndexHtml = '<!doctype html><html lang="en"><head>' +
     ['/play/context-sprint/', 'Which year?', 'Place an event in the right year'],
     ['/play/opening-lines/', 'Opening lines', 'Name the book from its first sentence'],
     ['/play/flashcards/', 'Flashcards', 'Spaced repetition over a title’s quotations'],
-    ['/play/essay-forge/', 'Essay planner', 'Build a plan paragraph by paragraph'],
-    ['/play/defend-the-reading/', 'Defend the reading', 'Argue a reading against the case on the other side'],
-    ['/today/', 'Astor today', 'A passage, a book and five questions'],
+    ['/today/', 'Today', 'Five questions on literature, new each day'],
     ['/explore/quotations/', 'Quotation explorer', 'Search and filter every quotation'],
     ['/explore/timeline/', 'Literature timeline', 'Every book in order, with its dates'],
     ['/explore/characters/', 'Character maps', 'Who is linked to whom in each book'],
     ['/explore/themes/', 'Themes across the library', 'Themes the books share'],
-    ['/explore/techniques/', 'Technique glossary', 'Literary terms, with examples'],
+    ['/explore/techniques/', 'Literary terms', 'Literary terms, with examples'],
     ['/explore/map/', 'Map of settings', 'Where the books are set'],
     ['/explore/compare/', 'Compare two texts', 'Shared themes and techniques side by side'],
-    ['/my-library/', 'My library', 'Saved books, progress, streak and commonplace book'],
+    ['/my-library/', 'My library', 'Saved books, reading progress, scores and kept quotations'],
     ['/for-teachers/', 'For teachers', 'Lesson starters, worksheets and projector mode']
   ].map(tool => '<a href="' + tool[0] + '"><span>' + tool[1] + '</span><small>' + tool[2] + '</small></a>').join('') + '</div></section>' +
   '<section class="index-group" id="seasons"><h2><a href="/seasons/">The seasonal library</a></h2><div class="index-links">' + seasons.map(season => '<a href="' + season.href + '"><span>' + escapeHtml(season.title) + '</span><small>Books and resources · open all year</small></a>').join('') + '</div></section>' +

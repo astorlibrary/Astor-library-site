@@ -21,28 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/41/pg41.txt",
     "note": "Irving’s story as printed in The Sketch Book. The quotations here all come from it, the collection’s lead story; the other eleven are noted by title and first publication."
   },
-  "atAGlance": [
-    {
-      "label": "Twelve stories",
-      "value": "1820–1926",
-      "note": "From Irving’s Sketch Book to Lovecraft’s The Outsider, a century apart."
-    },
-    {
-      "label": "Seven writers",
-      "value": "Irving to Lovecraft",
-      "note": "Irving, Hawthorne, Poe, Bierce, Gilman, Freeman and Lovecraft."
-    },
-    {
-      "label": "Not for Halloween",
-      "value": "None of them",
-      "note": "Every story predates the holiday’s modern shape; the association was made later, by publishers and readers."
-    },
-    {
-      "label": "The apparatus",
-      "value": "Notes and a chronology",
-      "note": "Each story is returned to its first printing, with a chronology of the holiday and a glossary."
-    }
-  ],
   "structure": [
     {
       "id": "irving",
@@ -163,11 +141,6 @@
       "summary": "Lank, greedy, superstitious and calculating, he courts an heiress for her father’s barns and reads Cotton Mather for pleasure after dark. Irving gives him no dignity and a good deal of sympathy, and then removes him from the story without saying what happened.",
       "clue": "Has the dilating powers of an anaconda at a table, and an appetite for the marvellous to match.",
       "firstAppearance": "The Legend of Sleepy Hollow",
-      "traits": [
-        "hungry",
-        "credulous",
-        "calculating"
-      ],
       "relationships": [
         {
           "to": "katrina",
@@ -202,11 +175,6 @@
       "summary": "Broad, good-humoured and fond of practical jokes, he is the obvious husband and the obvious suspect. Irving’s last paragraphs let him look knowing whenever the pumpkin is mentioned, which is as close to a solution as the story offers.",
       "clue": "Laughs whenever anyone brings up the pumpkin found beside the hat.",
       "firstAppearance": "The Legend of Sleepy Hollow",
-      "traits": [
-        "boisterous",
-        "popular",
-        "sly"
-      ],
       "relationships": [
         {
           "to": "ichabod",
@@ -233,11 +201,6 @@
       "summary": "Eighteen, plump, and perfectly aware of what she is worth. She is described in the same sentences as her father’s land and livestock, which is Irving’s joke about the courtship and his most pointed observation about it.",
       "clue": "Is appraised alongside the barns, the poultry and the buckwheat fields.",
       "firstAppearance": "The Legend of Sleepy Hollow",
-      "traits": [
-        "coquettish",
-        "shrewd",
-        "sought after"
-      ],
       "relationships": [
         {
           "to": "ichabod",
@@ -264,11 +227,6 @@
       "summary": "A cavalryman whose head was carried off by a cannon-ball in the Revolution, said to ride nightly in search of it and to be obliged to return to the churchyard before daybreak. He exists in the village’s talk long before he appears on the road, which is how Irving has it both ways.",
       "clue": "Throws his head, and the head turns out to be a pumpkin.",
       "firstAppearance": "The Legend of Sleepy Hollow",
-      "traits": [
-        "local",
-        "punctual",
-        "possibly Brom"
-      ],
       "relationships": [
         {
           "to": "ichabod",
@@ -287,11 +245,6 @@
       "summary": "He leaves his wife Faith at sunset on an errand he will not describe and meets, in the forest, everybody he has been taught to respect. Whether the meeting happened is left open; what it does to the rest of his life is not.",
       "clue": "Comes home and will not take his wife’s hand in the street.",
       "firstAppearance": "Young Goodman Brown",
-      "traits": [
-        "devout",
-        "shaken",
-        "unforgiving"
-      ],
       "relationships": [
         {
           "to": "poe-narrator",
@@ -311,11 +264,6 @@
       "summary": "Each opens by disputing an accusation nobody in the text has made (that he is mad, or nervous, or fanciful), and then supplies the account that convicts him. Poe’s method is to make the reader the jury and the confession the evidence.",
       "clue": "Insists on his own sanity in the first paragraph, every time.",
       "firstAppearance": "The Tell-Tale Heart",
-      "traits": [
-        "articulate",
-        "self-betraying",
-        "certain"
-      ],
       "relationships": [
         {
           "to": "goodman-brown",
@@ -334,11 +282,6 @@
       "summary": "Forbidden to work, she gives the pattern on the wall the attention she would have given a book, and finds a woman behind it. The story is the sharpest thing in the volume about who is believed, and it was written by someone who had been through the treatment.",
       "clue": "Keeps a journal because writing has been forbidden.",
       "firstAppearance": "The Yellow Wall-Paper",
-      "traits": [
-        "observant",
-        "disbelieved",
-        "determined"
-      ],
       "relationships": [
         {
           "to": "poe-narrator",
@@ -357,11 +300,6 @@
       "summary": "He has lived in a castle among books and cannot remember anyone speaking to him. The story is a single movement upward towards light and company, and its last paragraph rearranges everything that came before it.",
       "clue": "Reaches for the figure in the doorway and touches a mirror.",
       "firstAppearance": "The Outsider",
-      "traits": [
-        "lonely",
-        "bookish",
-        "unaware"
-      ],
       "relationships": [
         {
           "to": "poe-narrator",
@@ -734,88 +672,5 @@
       "lon": -71.4128,
       "note": "Lovecraft’s city, and the source of the antiquarian New England in The Outsider."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "A holiday canon assembled after the fact",
-      "summary": "None of these stories was written for Halloween; the association was built by publishers, anthologists and a century of repetition, which the edition’s introduction documents.",
-      "counter": "Readers have been telling ghost stories in the dark half of the year for far longer than the modern holiday has existed, so the fit may be older than the marketing."
-    },
-    {
-      "position": "Irving’s ghost is a joke",
-      "summary": "The evidence at the brook (a hat, a shattered pumpkin, hoof-prints) points at Brom Bones, and the narrator lets you see it.",
-      "counter": "The story spends its first thousand words establishing that this valley makes people believe things, and it ends with the village choosing the ghost. The joke is on anyone certain either way."
-    },
-    {
-      "position": "An American gothic without ruins",
-      "summary": "Lacking abbeys and hereditary curses, these writers use recent history (a Revolutionary soldier, a witch trial, a frontier cabin), which is why the horror feels close to the ground.",
-      "counter": "Lovecraft’s castle and Poe’s Usher borrow European machinery wholesale; the American gothic keeps importing what it claims not to need."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Irving make a ghost story out of village gossip?",
-      "focus": "Hearsay, narration and the withheld fact",
-      "plan": [
-        "Start with the naming of the Hollow and the drowsy influence: reputation before event.",
-        "Show the Horseman introduced as something the neighbourhood says, thousands of words before the ride.",
-        "Follow Ichabod’s credulity as a character trait the plot then uses.",
-        "Set the evidence at the brook (hat, pumpkin, hoof-prints) against the village’s preferred version.",
-        "Conclude on what the story gains by never settling it."
-      ]
-    },
-    {
-      "question": "What changes across the century this collection covers?",
-      "focus": "From a shared ghost to a private one",
-      "plan": [
-        "Take Irving’s communal legend as the starting point.",
-        "Move to Hawthorne, where the horror is moral and may be a dream.",
-        "Use Poe’s confessional narrators as the turn inward.",
-        "Show Bierce, Gilman and Freeman making the explanation late, partial or absent.",
-        "End on The Outsider, where the narrator does not know what he is."
-      ]
-    },
-    {
-      "question": "Why do so many of these stories hide something?",
-      "focus": "Concealment as plot",
-      "plan": [
-        "List the hidden things: a face behind crape, a heart under boards, a body in a wall, a boarded window, a figure behind a pattern.",
-        "Consider what concealment does to a short story’s structure.",
-        "Examine what each story reveals, or holds back, in its last lines.",
-        "Compare Hawthorne’s refusal with Bierce’s single closing sentence.",
-        "Argue for which method the collection makes most effective."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Irving gives you the pumpkin. Do you believe in the Horseman anyway?",
-    "Ichabod wants the farm as much as the girl. Does that change how you read his fate?",
-    "Poe’s narrators insist they are sane. At what point in each story did you stop agreeing?",
-    "The Yellow Wall-Paper sits among ghost stories here. Is it one?",
-    "None of these was written for Halloween. Does reading them as Halloween stories cost anything?",
-    "Which of the twelve would you give someone who says they do not like ghost stories?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-yellow-wallpaper-and-the-giant-wistaria/",
-      "why": "Gilman’s story on its own, with its companion piece and the publication history of both."
-    },
-    {
-      "href": "/books/american-ghost-stories/",
-      "why": "Ten more American ghost stories, 1878 to 1925, with Freeman’s Shadows on the Wall, a third Bierce story and seven women writers."
-    },
-    {
-      "href": "/books/m-r-james-collected-ghost-stories/",
-      "why": "The English tradition in the same decades, with an antiquary in place of a schoolmaster."
-    },
-    {
-      "href": "/books/victorian-ghost-stories/",
-      "why": "What British readers were being frightened by while these were written."
-    },
-    {
-      "href": "/books/edgar-allan-poe-selected-tales/",
-      "why": "More of the three Poe stories’ neighbours, in the Astor selection."
-    }
-  ],
-  "videos": []
+  ]
 }

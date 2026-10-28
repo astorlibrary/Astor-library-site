@@ -153,29 +153,11 @@ export function currentBook() {
   return currentMeta;
 }
 
-// A right answer throws a handful of the book's drawings off the button.
-export function burst(node, count = 7) {
-  if (!node || !hasMotifs() || prefersReducedMotion() || !node.animate) return;
-  const layer = el('span', { class: 'rx-burst', 'aria-hidden': 'true' });
-  node.append(layer);
-  for (let index = 0; index < count; index += 1) {
-    const piece = motif(index + Math.floor(Math.random() * 8));
-    layer.append(piece);
-    const angle = (index / count) * Math.PI * 2 + Math.random() * 0.6;
-    const reach = 46 + Math.random() * 36;
-    piece.animate([
-      { transform: 'translate(-50%, -50%) scale(.3) rotate(0deg)', opacity: 0 },
-      { transform: 'translate(calc(-50% + ' + Math.cos(angle) * reach * 0.6 + 'px), calc(-50% + ' + Math.sin(angle) * reach * 0.6 + 'px)) scale(1)', opacity: 1, offset: 0.45 },
-      { transform: 'translate(calc(-50% + ' + Math.cos(angle) * reach + 'px), calc(-50% + ' + Math.sin(angle) * reach + 'px)) scale(.8) rotate(' + (Math.random() * 40 - 20) + 'deg)', opacity: 0 }
-    ], { duration: 760 + Math.random() * 200, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'forwards' });
-  }
-  setTimeout(() => layer.remove(), 1100);
-}
 
 // The cover band: the head of the page set in the cover's ground with its
 // drawings, running down behind the study bar until it meets the first page
 // of the activity, which sits on it like a book on its jacket.
-const BAND_ENDS = '.rx-card, .rx-results, .rx-flip, .rx-forge-panel, .rv-tool-panel, .rx-defend-case, .rx-hub-start, [data-band-end]';
+const BAND_ENDS = '.rx-card, .rx-results, .rx-flip, .rv-tool-panel, .rx-hub-start, [data-band-end]';
 let bandNode = null;
 let bandWatch = null;
 
@@ -437,7 +419,7 @@ export function availableQuizzes(book) {
 }
 
 // One suggestion, chosen by a fixed rule: a kind of quiz not yet tried on this
-// book, otherwise the weakest one, otherwise an essay plan.
+// book, otherwise the weakest one.
 export function nextStep(book, { exclude = '', state = snapshot() } = {}) {
   const quizzes = availableQuizzes(book).filter(quiz => quiz.id !== exclude);
   const results = quizzes.map(quiz => ({ quiz, result: state.scores?.[quiz.id]?.byBook?.[book.slug] || null }));
@@ -459,20 +441,13 @@ export function nextStep(book, { exclude = '', state = snapshot() } = {}) {
       sentence: 'Your weakest quiz on ' + shortTitle(book) + ' so far (best score ' + weakest.result.best + ' out of ' + weakest.result.total + '):'
     };
   }
-  if ((book.essayQuestions || []).length) {
-    return {
-      href: '/play/essay-forge/?book=' + encodeURIComponent(book.slug),
-      label: 'Plan an essay',
-      sentence: 'Your best in every other quiz on ' + shortTitle(book) + ' is 9 in 10 or better.'
-    };
-  }
   return null;
 }
 
 // --- every activity a book can have ------------------------------------------
 
 // The order a student meets them in the study bar: the quick session, the
-// six quizzes on one kind of thing, then the longer work.
+// six quizzes on one kind of thing, then the flashcards.
 export const ACTIVITIES = [
   { id: 'mixed-round', name: 'Ten questions', short: 'Ten questions' },
   { id: 'who-said-it', name: 'Who said it?', short: 'Who said it' },
@@ -481,9 +456,7 @@ export const ACTIVITIES = [
   { id: 'technique-spotter', name: 'Technique spotter', short: 'Techniques' },
   { id: 'character-identification', name: 'Who is this?', short: 'Characters' },
   { id: 'order-the-plot', name: 'Order the plot', short: 'Plot order' },
-  { id: 'flashcards', name: 'Flashcards', short: 'Flashcards' },
-  { id: 'essay-forge', name: 'Essay planner', short: 'Essay plan' },
-  { id: 'defend-the-reading', name: 'Defend the reading', short: 'Debate' }
+  { id: 'flashcards', name: 'Flashcards', short: 'Flashcards' }
 ];
 
 // Whether a shelf entry (assets/revise-index.json) supports an activity,
@@ -492,8 +465,6 @@ export function hasActivity(meta, id) {
   if (!meta) return false;
   if (id === 'mixed-round') return true;
   if (id === 'flashcards') return meta.quotations >= 5;
-  if (id === 'essay-forge') return meta.essays > 0;
-  if (id === 'defend-the-reading') return meta.views >= 2 && meta.quotations >= 6;
   return (meta.quizzes || []).includes(id);
 }
 

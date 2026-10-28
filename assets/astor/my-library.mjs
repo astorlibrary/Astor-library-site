@@ -9,7 +9,7 @@ import { planSummary, nextSitting, readableDay } from './plan.mjs';
 import { loadIndex } from './data.mjs';
 import {
   isRemembering, savedBooks, recentlyViewed, allProgress, commonplace,
-  annotate, toggleCommonplace, scores, streak, exportAll, forget, snapshot, today,
+  annotate, toggleCommonplace, scores, exportAll, forget, snapshot, today,
   allPlans, removePlan
 } from './store.mjs';
 
@@ -55,7 +55,6 @@ async function start() {
 
 function renderDash(index) {
   clear(mounts.dash);
-  const run = streak();
   const progress = allProgress();
   const readStages = Object.values(progress).reduce((total, entry) => total + entry.stages.length, 0);
   const played = Object.values(scores()).reduce((total, entry) => total + entry.played, 0);
@@ -70,7 +69,6 @@ function renderDash(index) {
   const tiles = [
     ['Saved books', String(savedBooks().length), 'on your shelf.'],
     ['Sections read', String(readStages), 'across ' + Object.keys(progress).length + ' ' + (Object.keys(progress).length === 1 ? 'title' : 'titles') + '.'],
-    ['Days in a row', run.live && run.current ? String(run.current) : '0', run.live && run.current ? 'Your longest run is ' + run.longest + '.' : 'Do one quiz today to start a run.'],
     ['Quotations kept', String(commonplace().length), 'in your commonplace book.'],
     ['Quizzes done', String(played), played ? 'so far.' : 'Try one from Revise.'],
     ['Flashcards to review', String(due), !studied.length ? 'You haven’t started a deck yet.' : due ? 'of the ' + studied.length + ' cards you have studied.' : 'Nothing to review today.']
@@ -103,7 +101,7 @@ function renderSaved() {
   shelf(mounts.saved, savedBooks().map(book => ({
     href: book.href, title: book.title,
     note: 'Saved ' + formatDate(book.at)
-  })), 'No saved books yet. Save one from any book page.');
+  })), 'No saved books yet. Save one from any study guide.');
 }
 
 function renderRecent() {
@@ -203,10 +201,12 @@ function renderPlans() {
   if (!mounts.plans) return;
   clear(mounts.plans);
   const plans = allPlans().sort((a, b) => (nextSitting(a)?.date || 'z').localeCompare(nextSitting(b)?.date || 'z'));
-  if (!plans.length) {
-    mounts.plans.append(el('p', { class: 'astor-empty', text: 'No plans yet. Make one in the Revise tab on any book page.' }));
-    return;
-  }
+  // Reading plans were made with a tool that has been retired. Plans saved
+  // with it are still shown; with none, the section is hidden.
+  const section = document.querySelector('#plans');
+  if (section) section.hidden = !plans.length;
+  mounts.plans.hidden = !plans.length;
+  if (!plans.length) return;
   const grid = el('div', { class: 'astor-dash-grid' });
   for (const plan of plans) {
     const summary = planSummary(plan);
@@ -219,8 +219,6 @@ function renderPlans() {
         : next.label + ', about ' + next.minutes + ' minutes. ' + summary.done + ' of ' + summary.total + ' sittings done' +
           (summary.overdue ? ', ' + summary.overdue + ' behind.' : '.') }),
       el('small', {}, [
-        el('a', { href: plan.href + '#astor-revise', text: 'Open the plan \u2192' }),
-        ' \u00b7 ',
         el('button', { class: 'astor-link-button', type: 'button', text: 'Remove', onclick: () => { removePlan(plan.slug); renderPlans(); } })
       ])
     ]);

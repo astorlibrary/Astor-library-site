@@ -40,11 +40,10 @@ test('the study bar offers exactly the activities each book can run', () => {
     assert.ok(book, meta.slug + ' is on the shelf without a record');
     const quizzes = new Set(availableQuizzes(book).map(quiz => quiz.id));
     for (const activity of ACTIVITIES) {
-      if (['mixed-round', 'flashcards', 'essay-forge', 'defend-the-reading'].includes(activity.id)) continue;
+      if (['mixed-round', 'flashcards'].includes(activity.id)) continue;
       assert.equal(hasActivity(meta, activity.id), quizzes.has(activity.id), meta.slug + ' ' + activity.id);
     }
     assert.equal(hasActivity(meta, 'flashcards'), book.quotations.length >= 5, meta.slug + ' flashcards');
-    assert.equal(hasActivity(meta, 'essay-forge'), book.essayQuestions.length > 0, meta.slug + ' essay planner');
   }
 });
 
@@ -86,17 +85,14 @@ test('every Revise activity page opens on the study bar, a heading and one sente
   }
 });
 
-test('stars mean the same everywhere: finish, 70 per cent, perfect', async () => {
-  const { starsFor, starTarget } = await import('../assets/astor/quiz-round.mjs');
-  assert.equal(starsFor(0, 10), 1, 'finishing earns one star');
-  assert.equal(starsFor(6, 10), 1);
-  assert.equal(starsFor(7, 10), 2, '7 out of 10 earns two');
-  assert.equal(starsFor(9, 10), 2);
-  assert.equal(starsFor(10, 10), 3, 'a perfect round earns three');
-  assert.equal(starTarget(10), 7);
-  assert.equal(starTarget(5), 4, 'Today’s five: 4 for the second star');
-  assert.equal(starsFor(4, 5), 2);
-  assert.equal(starsFor(0, 0), 0, 'nothing played, nothing earned');
+test('Revise keeps scores but has no stars, streaks, essay planner or debate', async () => {
+  const round = await import('../assets/astor/quiz-round.mjs');
+  assert.equal(round.starsFor, undefined, 'stars are gone');
+  assert.ok(!ACTIVITIES.some(activity => ['essay-forge', 'defend-the-reading'].includes(activity.id)));
+  for (const page of ['play/essay-forge', 'play/defend-the-reading']) assert.ok(!fs.existsSync(page + '/index.html'), page + ' has come back');
+  const hub = fs.readFileSync('assets/astor/revise-hub.mjs', 'utf8');
+  assert.doesNotMatch(hub, /streak|leaderboard|ranking|essay-forge|defend-the-reading/i);
+  assert.match(fs.readFileSync('_redirects', 'utf8'), /^\/play\/essay-forge\/? +\/play\/ +301/m);
 });
 
 const { contrast } = require('../scripts/editions.js');
@@ -148,17 +144,16 @@ test('every book carries its cover drawings and can letter its band legibly', ()
 
 test('the completion screen says something true about the round', async () => {
   const { resultWords } = await import('../assets/astor/quiz-round.mjs');
-  assert.equal(resultWords({ score: 10, total: 10 }).title, 'Flawless.');
-  assert.equal(resultWords({ score: 9, total: 10 }).title, 'One away from perfect.');
-  assert.equal(resultWords({ score: 1, total: 10 }).title, 'A tough round.');
-  assert.equal(resultWords({ score: 0, total: 10 }).title, 'None this time.');
-  assert.match(resultWords({ score: 2, total: 10 }).sub, /lines to learn next/);
+  assert.equal(resultWords({ score: 10, total: 10 }).title, 'All ten right.');
+  assert.equal(resultWords({ score: 9, total: 10 }).title, 'Nine right, one missed.');
+  assert.equal(resultWords({ score: 0, total: 10 }).title, 'None right, ten missed.');
+  assert.match(resultWords({ score: 2, total: 10 }).sub, /lines you missed are the ones to learn next/);
   const better = resultWords({ score: 7, total: 10, before: { best: 5, total: 10, last: 5, lastTotal: 10 } });
   assert.ok(better.best, 'beating the best is a new best');
-  assert.match(better.sub, /new best, up from 5/);
+  assert.match(better.sub, /previous best was 5/);
   const upOnLast = resultWords({ score: 6, total: 10, before: { best: 8, total: 10, last: 3, lastTotal: 10 } });
   assert.ok(!upOnLast.best);
-  assert.match(upOnLast.sub, /Up from 3 last time/);
+  assert.match(upOnLast.sub, /Last time: 3 of 10/);
   assert.equal(resultWords({ score: 3, total: 3, practice: true }).title, 'All three put right.');
   assert.equal(resultWords({ score: 2, total: 5, practice: true }).title, '2 of 5 put right.');
 });

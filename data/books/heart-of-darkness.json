@@ -24,28 +24,6 @@
     ],
     "note": "The 1902 book text, which this edition prints, with its British spelling; quotations follow the first-edition scan. The Gutenberg transcription follows an American printing and serves only as a check on wording where the scan’s optical reading breaks a word. Gutenberg eBook 219 departs from the 1902 wording in places and is not used."
   },
-  "atAGlance": [
-    {
-      "label": "First published",
-      "value": "1899",
-      "note": "In three monthly parts in Blackwood’s Edinburgh Magazine, February to April 1899, as The Heart of Darkness, beginning in the magazine’s thousandth number."
-    },
-    {
-      "label": "In book form",
-      "value": "1902",
-      "note": "In Youth: A Narrative, and Two Other Stories, published by William Blackwood and Sons on 13 November 1902."
-    },
-    {
-      "label": "The narrator",
-      "value": "Marlow",
-      "note": "Told by Charlie Marlow, the seaman who first appeared in Conrad’s story Youth, to four friends on the Thames, and reported by one of them."
-    },
-    {
-      "label": "The journey",
-      "value": "1890",
-      "note": "Conrad went up the Congo in 1890 as second in command of a company steamer; he later called the story experience pushed a little beyond the actual facts."
-    }
-  ],
   "structure": [
     {
       "id": "the-nellie",
@@ -223,12 +201,6 @@
       "summary": "Charlie Marlow is an English merchant seaman, restless between voyages, who gets command of a river steamer through an aunt’s connections. He is ironic, practical and full of contempt for the agents he meets, and he holds on to work, rivets and the surface-truth of steering as a defence against what he sees. He says he hates lies, yet he lets the brickmaker believe he has influence and ends by lying to Kurtz’s Intended. Telling the story later, he admits that it is not very clear to him even now.",
       "clue": "An unemployed sailor who gets a command through his aunt, spends months raising a sunken steamer, and throws his shoes into a river.",
       "firstAppearance": "Part I",
-      "traits": [
-        "ironic",
-        "practical",
-        "loyal",
-        "troubled"
-      ],
       "relationships": [
         {
           "to": "kurtz",
@@ -296,12 +268,6 @@
       "summary": "Kurtz went out with moral ideas and a gift for eloquence: a painter, a writer for the papers, a musician, according to whom one asks, and the author of a report on the suppression of savage customs. His mother was half English and his father half French, and he is a man to whom all Europe contributed. At the Inner Station he raids the country for ivory, is worshipped by the people of the lake, and decorates his fence with heads. Dying, he talks of his Intended and his career, and at the end pronounces a judgement: The horror! The horror!",
       "clue": "His report for a society devoted to suppressing savage customs runs to seventeen pages and ends with a scrawled postscript.",
       "firstAppearance": "Part I (by name); Part III (in person)",
-      "traits": [
-        "eloquent",
-        "ambitious",
-        "hollow",
-        "ruthless"
-      ],
       "relationships": [
         {
           "to": "intended",
@@ -351,12 +317,6 @@
       "summary": "Commonplace in complexion, feature and voice, he has risen because he is never ill. He inspires uneasiness, seals his sentences with a smile that gives nothing away, and says that men who come out should have no entrails. Marlow’s steamer was sunk on a trip he ordered, perhaps on purpose, and he delays the relief of the Inner Station, and hopes with his uncle that the climate will remove Kurtz. When Kurtz is found, he objects only that his method is unsound.",
       "clue": "His one distinction is triumphant health, and he had a round table built so that nobody could quarrel about precedence.",
       "firstAppearance": "Part I",
-      "traits": [
-        "cold",
-        "cautious",
-        "mediocre",
-        "scheming"
-      ],
       "relationships": [
         {
           "to": "kurtz",
@@ -396,11 +356,6 @@
       "summary": "Young, gentlemanly and stand-offish, with a forked beard and mica eyes, he is supposed to make bricks but has made none in a year. He keeps a whole candle to himself, pumps Marlow for news of his connections in Europe, and assumes Marlow belongs to the new gang of virtue that sent Kurtz. Marlow calls him a papier-mâché Mephistopheles, with nothing inside but a little loose dirt.",
       "clue": "He has waited more than a year for materials that never come, and he has a painting by Kurtz on his wall.",
       "firstAppearance": "Part I",
-      "traits": [
-        "envious",
-        "prying",
-        "idle"
-      ],
       "relationships": [
         {
           "to": "marlow",
@@ -428,11 +383,6 @@
       "summary": "In starched collars, white cuffs and varnished boots, he keeps his books in apple-pie order a few yards from the grove where labourers lie dying. Marlow respects his backbone, the achievement of looking correct in the middle of chaos. It is from him that Marlow first hears the name of Kurtz, whom he predicts will be a somebody in the Administration.",
       "clue": "He looks like a hairdresser’s dummy, has taught a local woman to starch his linen, and complains that a sick man’s groans distract him.",
       "firstAppearance": "Part I",
-      "traits": [
-        "fastidious",
-        "diligent",
-        "callous"
-      ],
       "relationships": [
         {
           "to": "kurtz",
@@ -452,10 +402,6 @@
       "summary": "A man from the coast, trained by Marlow’s predecessor, who wears brass earrings and a blue wrapper and steers with a swagger while he is watched. When the steamer is attacked he drops the wheel, throws open the shutter and fires into the bush, and a spear kills him. His last look at Marlow, like a claim of distant kinship, stays in Marlow’s memory to the day he tells the story.",
       "clue": "He thought all the world of himself, steered with a swagger when watched, and was killed by a spear thrown through a shutter he had opened.",
       "firstAppearance": "Part II",
-      "traits": [
-        "proud",
-        "impulsive"
-      ],
       "relationships": [
         {
           "to": "marlow",
@@ -475,12 +421,6 @@
       "summary": "The son of an arch-priest from Tambov, twenty-five, who ran away to sea and has wandered alone on the river for two years. Dressed in patches like a harlequin, he is all glamour and audacity, and his devotion to Kurtz is total: Kurtz has enlarged his mind, talked to him all night of everything, and once threatened to shoot him for his ivory. He leaves the Inner Station at night with Marlow’s cartridges, an old pair of shoes and Towson’s book.",
       "clue": "His clothes are patched in blue, red and yellow, and the margin notes Marlow took for cipher turn out to be Russian.",
       "firstAppearance": "Part II",
-      "traits": [
-        "devoted",
-        "naïve",
-        "brave",
-        "talkative"
-      ],
       "relationships": [
         {
           "to": "kurtz",
@@ -508,11 +448,6 @@
       "summary": "She walks along the shore in fringed cloths, brass leggings and glass beads worth several elephant tusks, faces the steamer, and raises her arms to the sky. The Russian says she argued with Kurtz and that he risked his life to keep her out of the house. As the steamer leaves she stretches her arms after it. She never speaks a word Marlow can understand, and Marlow sees her again in the Intended’s gesture.",
       "clue": "Hung with brass and glass beads, she faces the steamer and throws her arms up rigid above her head.",
       "firstAppearance": "Part III",
-      "traits": [
-        "proud",
-        "grieving",
-        "silent"
-      ],
       "relationships": [
         {
           "to": "kurtz",
@@ -541,11 +476,6 @@
       "summary": "A fair-haired woman, no longer girlish, whose family disapproved of the engagement because Kurtz was poor. More than a year after his death she is still in black, sure that she knew him best and that his goodness shone in every act. She asks Marlow for his last words so that she will have something to live with, and Marlow gives her a lie she can keep.",
       "clue": "More than a year after the death she is still in black, and she asks the visitor to repeat the last words he heard.",
       "firstAppearance": "Part II (mentioned); Part III",
-      "traits": [
-        "faithful",
-        "grieving",
-        "trusting"
-      ],
       "relationships": [
         {
           "to": "kurtz",
@@ -575,11 +505,6 @@
       "summary": "A dear enthusiastic soul who knows the wife of a high personage in the Administration and gets Marlow his appointment. She believes the Company’s talk of civilising mission and speaks of weaning the ignorant millions from their horrid ways, until Marlow ventures that the Company is run for profit. After his return she tries to nurse up his strength.",
       "clue": "She gives the traveller the last decent cup of tea he will have for many days, and tells him to wear flannel.",
       "firstAppearance": "Part I",
-      "traits": [
-        "enthusiastic",
-        "idealistic",
-        "kind"
-      ],
       "relationships": [
         {
           "to": "marlow",
@@ -600,10 +525,6 @@
       "summary": "An unshaven little man in slippers who measures the skulls of those going out, in the interests of science, and asks whether there is madness in the family. He never sees them come back, and in any case, he says, the changes take place inside. Marlow remembers him on the march when his companion faints.",
       "clue": "He measures the heads of men going out with calipers and advises them, above all, to keep calm.",
       "firstAppearance": "Part I",
-      "traits": [
-        "eccentric",
-        "detached"
-      ],
       "relationships": [
         {
           "to": "marlow",
@@ -623,10 +544,6 @@
       "summary": "One of four friends of the Director of Companies, all men bound by the sea, who hears Marlow’s story on the Nellie and reports it. He opens with the Thames as the river of Drake and Franklin and the germs of empires, stays awake while the others may be asleep, and ends by seeing the same river lead into the heart of an immense darkness.",
       "clue": "He stays awake on the yawl, listening for the word that would give him the clue to his faint uneasiness.",
       "firstAppearance": "Part I",
-      "traits": [
-        "attentive",
-        "reflective"
-      ],
       "relationships": [
         {
           "to": "marlow",
@@ -647,9 +564,6 @@
       "summary": "An overfed young man from the coast whom the manager allows to treat the white agents with insolence. He announces Kurtz’s death at dinner, putting his head round the door, in a tone of scathing contempt.",
       "clue": "An overfed young servant from the coast, he interrupts a dinner with one sentence of scathing contempt.",
       "firstAppearance": "Part I",
-      "traits": [
-        "insolent"
-      ],
       "relationships": [
         {
           "to": "manager",
@@ -736,7 +650,7 @@
       "id": "ellipsis",
       "name": "The unspeakable",
       "definition": "Something left out on purpose, at a point where the reader will notice the gap and fill it.",
-      "inThisBook": "Some of the worst things are withheld: the unspeakable rites offered up to Kurtz, the ceremonies used when approaching him, the content of The horror! Marlow’s adjectives (inscrutable, unspeakable, incomprehensible) point at what he will not describe. Some critics admire the method; others find it an evasion."
+      "inThisBook": "Some of the worst things are withheld: the unspeakable rites offered up to Kurtz, the ceremonies used when approaching him, the content of The horror! Marlow’s adjectives (inscrutable, unspeakable, incomprehensible) point at what he will not describe. F. R. Leavis, in The Great Tradition (1948), complained of this ‘adjectival insistence’."
     },
     {
       "id": "allusion",
@@ -748,7 +662,7 @@
       "id": "personification",
       "name": "The wilderness personified",
       "definition": "Giving human qualities to something that is not human.",
-      "inThisBook": "The wilderness watches, waits, whispers and takes vengeance. It pats Kurtz on the head, caresses him, loves him and seals his soul to its own. The personification lets Marlow blame the land for what the men did, a habit of thought many readers now question."
+      "inThisBook": "The wilderness watches, waits, whispers and takes vengeance. It pats Kurtz on the head, caresses him, loves him and seals his soul to its own. The personification lets Marlow blame the land for what the men did, a habit of thought the book does not examine."
     },
     {
       "id": "leitmotif",
@@ -1040,7 +954,7 @@
       "reference": "Part I",
       "stage": "the-stations",
       "context": "Stepping into the shade of a grove, Marlow finds sick labourers who have crawled away to die.",
-      "analysis": "Enemies, criminals: the Company’s labels fall away, and what is left is starvation. The grove is the most direct picture of colonial cruelty in the book, and critics have pointed out that it still shows the dying as shadows and shapes. Marlow can only offer a biscuit.",
+      "analysis": "Enemies, criminals: the Company’s labels fall away, and what is left is starvation. The grove is the most direct picture of colonial cruelty in the book, yet it still shows the dying as shadows and shapes, without speech. Marlow can only offer a biscuit.",
       "themes": [
         "empire",
         "race"
@@ -1765,85 +1679,29 @@
   ],
   "criticalViews": [
     {
-      "position": "A racist book",
-      "summary": "In a lecture of 1975, published in 1977, the novelist Chinua Achebe argued that the book uses Africa as a backdrop for a European’s breakdown and denies its African characters speech and full humanity, and that a book which does so should not be called a great work of art. His challenge changed how the book is read and taught.",
-      "counter": "Defenders reply that the racist views belong to Marlow and his age, that the frame keeps him at a distance, and that the book’s attack on imperialism was radical in 1899. Others accept much of Achebe’s case and still teach the book as a revealing record of European attitudes."
+      "critic": "F. R. Leavis",
+      "work": "The Great Tradition",
+      "year": "1948",
+      "summary": "Leavis admired Conrad but objected to the “adjectival insistence” of the novella, its repeated words such as “unspeakable” and “inscrutable”, which in his view announce a mystery instead of showing it."
     },
     {
-      "position": "An indictment of empire",
-      "summary": "Many readers see the book as one of the first literary exposures of the Congo Free State, written from Conrad’s own experience before the reform campaign of the 1900s. Marlow calls conquest robbery with violence, and the chain gang, the grove of death and the heads on stakes make the Company’s philanthropy look like a pretence.",
-      "counter": "The attack is aimed at a Continental company, and the British red on the map is good to see. Marlow still believes in efficiency and the idea, and the book says little about the Africans’ own point of view, so its critique of empire has clear limits."
+      "critic": "Chinua Achebe",
+      "essay": "An Image of Africa: Racism in Conrad’s Heart of Darkness",
+      "work": "The Massachusetts Review",
+      "year": "1977",
+      "summary": "In a lecture given in 1975 and printed in 1977, Achebe argued that the book makes Africa a backdrop for a European’s mind and denies Africans speech and humanity. He called Conrad “a thoroughgoing racist”, and the essay changed how the book is taught."
     },
     {
-      "position": "A journey into the self",
-      "summary": "Psychological and mythic readings treat the voyage as a descent into the unconscious or the underworld, with Kurtz as Marlow’s double: what any civilised man might become without neighbours and police. The frame and the impressionist method, meaning outside like a haze, support a reading about the limits of knowing and telling.",
-      "counter": "This reading can reduce Africa and Africans to symbols of a European’s inner life, which is exactly what Achebe objected to. It also lets the historical Congo, and the real people who died there, drop out of the story."
+      "critic": "Ian Watt",
+      "work": "Conrad in the Nineteenth Century",
+      "year": "1979",
+      "summary": "Watt named Conrad’s method “delayed decoding”: the reader is given an impression before its cause, as when Marlow sees little sticks flying about before he understands that they are arrows."
+    },
+    {
+      "critic": "Edward Said",
+      "work": "Culture and Imperialism",
+      "year": "1993",
+      "summary": "Said reads the novella as critical of the brutality of imperialism but unable to imagine anything outside it: Africans are not given the independence that would make the empire’s end thinkable."
     }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Conrad use Marlow’s narration to shape our view of Kurtz?",
-      "focus": "Narrator, frame and judgement",
-      "plan": [
-        "Start with the frame: the listener on the Nellie, and meaning outside like a haze.",
-        "Show Kurtz built up by rumour: the accountant, the brickmaker, the manager and the Russian.",
-        "Analyse Kurtz as a voice: the report, its postscript, and his talk on the steamer.",
-        "Discuss Marlow’s loyalty and his reading of The horror! as a judgement.",
-        "Conclude with the lie to the Intended, and what it shows about Marlow himself."
-      ]
-    },
-    {
-      "question": "To what extent is Heart of Darkness a critique of imperialism?",
-      "focus": "Empire, race and the debate since Achebe",
-      "plan": [
-        "Begin with Marlow’s Romans: robbery with violence redeemed by an idea.",
-        "Examine the Company in action: the warship, the chain gang, the grove of death, the pilgrims and ivory.",
-        "Consider the limits: the red on the map, efficiency, and how Africans are presented.",
-        "Set out Achebe’s argument and the replies to it.",
-        "Weigh the evidence and reach a judgement of your own."
-      ]
-    },
-    {
-      "question": "How does Conrad use light and darkness in Heart of Darkness?",
-      "focus": "Imagery and its reversals",
-      "plan": [
-        "Look at the opening and closing images of the Thames.",
-        "Show how Europe is darkened: the whited sepulchre and the knitters of black wool.",
-        "Analyse Kurtz: the painting of the blindfolded woman with a torch, and the ivory face in the dark.",
-        "Examine the Intended’s room, where the light gathers on her forehead as the darkness deepens.",
-        "Conclude on what the book finally means by darkness."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Why does Conrad frame Marlow’s story with a listener on the Thames?",
-    "Why does the story never name the Congo, Belgium or Brussels?",
-    "Is Marlow right to lie to the Intended?",
-    "What does Marlow mean by restraint, and who in the story has it?",
-    "What might Kurtz mean by The horror! The horror!?",
-    "Can a book attack empire and still be racist?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-tempest/",
-      "why": "An island, a European magician and the native he calls a savage: a play that critics, like readers of Conrad, have read as a story of empire."
-    },
-    {
-      "href": "/books/the-rime-of-the-ancient-mariner/",
-      "why": "Another tale told by a sailor to listeners who cannot leave, about a voyage that changes the teller for ever."
-    },
-    {
-      "href": "/books/the-aeneid/",
-      "why": "Critics have compared Marlow’s journey upriver with Aeneas’s descent to the underworld in Book VI."
-    },
-    {
-      "href": "/books/the-great-gatsby/",
-      "why": "Nick Carraway, like Marlow, tells the story of a man he half admires and ends by protecting his memory."
-    },
-    {
-      "href": "/books/the-open-boat-and-other-stories/",
-      "why": "Stories by Stephen Crane, Conrad’s friend in the years when he wrote Heart of Darkness."
-    }
-  ],
-  "videos": []
+  ]
 }

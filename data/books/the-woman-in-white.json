@@ -21,28 +21,6 @@
     "url": "https://standardebooks.org/ebooks/wilkie-collins/the-woman-in-white/text/single-page",
     "note": "References give the epoch, the narrator and the chapter number within that narrative, since the novel numbers its chapters afresh for each new hand."
   },
-  "atAGlance": [
-    {
-      "label": "Serialised",
-      "value": "1859–60",
-      "note": "Weekly in Dickens’s All the Year Round from 26 November 1859, and simultaneously in Harper’s Weekly in New York."
-    },
-    {
-      "label": "Book edition",
-      "value": "1860",
-      "note": "Three volumes in 1860; Collins then prepared a revised one-volume text, with a dated preface, in 1861."
-    },
-    {
-      "label": "Written to deadline",
-      "value": "Composition overlapped publication",
-      "note": "Collins began on 15 August 1859 and finished the manuscript on 26 July 1860, with instalments appearing throughout."
-    },
-    {
-      "label": "Shape",
-      "value": "Eleven narratives",
-      "note": "Hartright, Gilmore, Marian’s diary, Mr Fairlie, the housekeeper, a cook, a doctor, a gravestone, Mrs Catherick and Fosco, and Hartright decides the order of all of them."
-    }
-  ],
   "structure": [
     {
       "id": "epoch-1-hartright",
@@ -101,11 +79,6 @@
       "summary": "He is the novel’s hero and also its archivist, which are two different kinds of power. He collects, orders and introduces every other statement in the book, so the reader’s impression of Marian, Fosco and Laura has already passed through his hands before it arrives.",
       "clue": "He is walking back to London at midnight when a hand touches his shoulder, and he spends the rest of the book assembling the paperwork that follows.",
       "firstAppearance": "The First Epoch, Chapter I",
-      "traits": [
-        "observant",
-        "methodical",
-        "in charge of the record"
-      ],
       "relationships": [
         {
           "to": "laura-fairlie",
@@ -151,11 +124,6 @@
       "summary": "She is introduced through a description that admires her figure and recoils from her face, and then proceeds to do everything the plot requires: investigate, climb, travel, negotiate and remember. The novel gives her no money, no legal standing and the best prose in the book.",
       "clue": "She takes off her shoes, crawls out over a verandah roof in a downpour and writes down what she hears until the fever takes the pen away.",
       "firstAppearance": "The First Epoch, Chapter VI",
-      "traits": [
-        "fearless",
-        "sardonic",
-        "without any legal power at all"
-      ],
       "relationships": [
         {
           "to": "laura-fairlie",
@@ -185,11 +153,6 @@
       "summary": "She is the object the conspiracy moves around, and Collins gives her almost no narrative of her own: her testimony is the one thing the plot establishes is legally worthless. What is stolen from her is the acknowledged fact of being herself, which matters more than the money.",
       "clue": "Her name is on a gravestone in Cumberland while she is alive in London, and for a whole epoch nobody in authority will say otherwise.",
       "firstAppearance": "The First Epoch, Chapter VIII",
-      "traits": [
-        "gentle",
-        "honest to her own cost",
-        "erased"
-      ],
       "relationships": [
         {
           "to": "sir-percival-glyde",
@@ -225,11 +188,6 @@
       "summary": "She is dressed in white because a kind woman once praised her in it, shut up in an asylum because she knew a secret she did not understand, and killed by the conspiracy because her heart gives out at the right moment for it. She gives the novel its title and almost nothing else of her own.",
       "clue": "She asks a stranger on the road whether he knows many men of the rank of Baronet, and will not say which one she means.",
       "firstAppearance": "The First Epoch, Chapter IV",
-      "traits": [
-        "frightened",
-        "half-informed",
-        "unheard by anyone with authority"
-      ],
       "relationships": [
         {
           "to": "laura-fairlie",
@@ -255,11 +213,6 @@
       "summary": "Charming for exactly as long as the settlement takes to sign, and after that a man locking doors. His secret is smaller and more frightening than the plot implies: he has no title at all, only a page added to a parish register, which makes him a forgery more than a villain.",
       "clue": "He dies in the vestry of a country church, trying to burn the book that proves he was never entitled to his own name.",
       "firstAppearance": "The First Epoch, Vincent Gilmore’s narrative",
-      "traits": [
-        "plausible in public",
-        "violent in private",
-        "financially desperate"
-      ],
       "relationships": [
         {
           "to": "laura-fairlie",
@@ -289,11 +242,6 @@
       "summary": "Enormous, silent-footed, fond of white mice and pastry, and the only character in the novel who thinks in terms of systems. He is also the one who writes his own confession and cannot resist making it a lecture; his vanity is what eventually kills him.",
       "clue": "He keeps canaries and white mice, flatters his enemy in her own diary, and is found in the Paris Morgue with a mark cut into his left arm.",
       "firstAppearance": "The Second Epoch, Marian’s narrative",
-      "traits": [
-        "theatrical",
-        "formidably clever",
-        "fatally vain"
-      ],
       "relationships": [
         {
           "to": "marian-halcombe",
@@ -322,11 +270,6 @@
       "summary": "A collector of etchings and coins who has made his own nerves into a full-time occupation, and whose refusal to be troubled is what allows every stage of the conspiracy to proceed. Collins hands him a narrative of his own so that he can convict himself in his own voice.",
       "clue": "He asks visitors to speak more quietly and to put the tray of coins back themselves, and calls himself a bundle of nerves dressed up to look like a man.",
       "firstAppearance": "The First Epoch, Chapter VII",
-      "traits": [
-        "indolent",
-        "querulous",
-        "catastrophically unhelpful"
-      ],
       "relationships": [
         {
           "to": "laura-fairlie",
@@ -350,11 +293,6 @@
       "summary": "She sold her silence for respectability and has spent twenty years collecting it in instalments: a house, a clock, and the clergyman’s bow every Sunday. Her narrative is the coldest thing in the book, because she is not ashamed of any of it.",
       "clue": "She sits at her window each Sunday to be bowed to by the clergyman, and counts that bow as the price of what she did in a vestry.",
       "firstAppearance": "The Second Epoch, Marian’s narrative",
-      "traits": [
-        "unrepentant",
-        "socially ambitious",
-        "hard"
-      ],
       "relationships": [
         {
           "to": "anne-catherick",
@@ -375,11 +313,6 @@
       "summary": "He writes the second narrative and supplies the novel’s legal spine: the marriage settlement, the twenty thousand pounds, and the clause that makes Laura worth more dead than alive. He sees exactly what is coming and signs anyway, because his client will not be bothered.",
       "clue": "He records, twice and in the same words, that no daughter of his would have been married under the settlement he was compelled to draw up.",
       "firstAppearance": "The First Epoch, Gilmore’s narrative",
-      "traits": [
-        "professional",
-        "clear-sighted",
-        "powerless without instructions"
-      ],
       "relationships": [
         {
           "to": "laura-fairlie",
@@ -1097,98 +1030,5 @@
       "lon": -86.2419,
       "note": "Where Walter lands with the archaeological expedition, and spends the months in which the conspiracy is carried out at home."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "The founding sensation novel",
-      "summary": "The standard literary-historical reading places the book at the head of an 1860s genre that moved crime, bigamy and false identity from Italian castles into respectable English houses, and took its material from the newspapers.",
-      "counter": "Treating it as the origin of a genre can flatten what is odd about it, particularly the decision to tell the whole thing as a bundle of legal statements."
-    },
-    {
-      "position": "A novel about the law of married women’s property",
-      "summary": "Criticism attentive to the settlement reads the plot as an argument about legal disability: Laura’s money, her testimony and her liberty all belong to somebody else, and the conspiracy only has to use powers that the law already grants.",
-      "counter": "The novel’s resolution restores her by the same legal machinery it has just exposed, which makes it hard to read as a reforming book."
-    },
-    {
-      "position": "A book that cannot decide about Marian",
-      "summary": "Feminist criticism since the 1970s has focused on the gap between what Marian does and how the novel frames her: she is the intelligence of the plot and is introduced through a description of her face that treats her as a physiological joke.",
-      "counter": "Defenders point out that the description is Walter’s own, and that the structure allows Marian’s own prose to answer it at length."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "What does Collins gain by telling the story through many narrators?",
-      "focus": "Form, evidence and the editor’s control",
-      "plan": [
-        "Begin with the preamble’s own claim: a court, several witnesses, and each speaking only of what they saw.",
-        "Show the method producing suspense: Marian’s diary breaking off, Mr Fairlie’s account arriving after the damage is done.",
-        "Show it producing class comedy and range, from a solicitor’s professional prose to a housekeeper’s careful self-defence and a cook’s few sentences.",
-        "Turn the argument: Walter selects and orders every document, so the novel about distributed testimony has one author inside it.",
-        "Test the case with Fosco’s confession, which is extracted under threat and is still the most self-satisfied writing in the book."
-      ]
-    },
-    {
-      "question": "How does the novel present the relationship between identity and documents?",
-      "focus": "Certificates, registers, inscriptions",
-      "plan": [
-        "Set out what the conspiracy actually requires: a death certificate, a gravestone, a reception at an asylum, and nobody willing to look twice.",
-        "Show that recognition fails repeatedly: servants, an uncle and a village all decline to identify a living woman.",
-        "Use the register at Old Welmingham to show the reverse case: a forged page makes a commoner a baronet.",
-        "Read the counter-attack as an argument about dates, where the conspirators had relied on faces, and ask what that says about the novel’s idea of proof.",
-        "Conclude on the restoration scene, in which Laura is made herself again by a public reading and a new inscription."
-      ]
-    },
-    {
-      "question": "Examine the presentation of Marian Halcombe.",
-      "focus": "Capability, appearance and the limits placed on her",
-      "plan": [
-        "Start with the two-paragraph introduction, where the figure is admired and the face is recoiled from in consecutive sentences.",
-        "Track what she actually does: investigates, negotiates, climbs the verandah in the rain, and keeps the only dated record of the conspiracy.",
-        "Examine what she cannot do: hold property, give testimony that counts, or prevent a marriage settlement.",
-        "Read Fosco’s postscript as a violation that is also a tribute, and consider why Collins gives her admirer to the villain.",
-        "Weigh the ending: she is called the good angel and given the last word, in a book whose last word is written by somebody else."
-      ]
-    },
-    {
-      "question": "‘The conspiracy needs no villains, only institutions.’ How far do you agree?",
-      "focus": "Marriage law, private asylums and respectability",
-      "plan": [
-        "Set out the legal position: the settlement, the twenty thousand pounds, and the clause Gilmore objects to and signs anyway.",
-        "Show private asylum admission as an administrative act requiring certificates and a willing signature.",
-        "Use Fosco’s after-dinner argument about English Society as the accomplice of crime, and check it against the plot that follows.",
-        "Test the counter-case: Sir Percival’s violence and Fosco’s ingenuity are not reducible to procedure.",
-        "Decide whether Collins wants these institutions reformed or merely finds them frightening."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Walter compiles every statement in the book. How much should we trust the arrangement?",
-    "Laura is the centre of the plot and is given almost no narrative of her own. Is that a failure or a point being made?",
-    "Fosco writes his own confession and cannot resist showing off. Does that make him more or less frightening?",
-    "Sir Percival’s secret is a forged entry in a parish register. Why does the novel treat that as worse than the conspiracy it caused?",
-    "Marian does the work and Walter gets the marriage. What would have to change for the novel to end differently?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-moonstone/",
-      "why": "Collins doing the same thing again eight years later: a case assembled from statements by people who each saw one part of it."
-    },
-    {
-      "href": "/books/jane-eyre/",
-      "why": "A confined woman, a husband with a secret and a country house with a wing nobody visits, written thirteen years earlier."
-    },
-    {
-      "href": "/books/dracula/",
-      "why": "Another novel built entirely out of diaries, letters and transcripts, with a group assembling evidence against something official channels will not credit."
-    },
-    {
-      "href": "/books/great-expectations/",
-      "why": "Serialised in the same magazine a year later, and equally interested in what documents, settlements and hidden benefactors do to an identity."
-    },
-    {
-      "href": "/books/the-turn-of-the-screw/",
-      "why": "The other great case of a narrative handed to the reader as a document, with the reliability of the narrator left as the real question."
-    }
-  ],
-  "videos": []
+  ]
 }

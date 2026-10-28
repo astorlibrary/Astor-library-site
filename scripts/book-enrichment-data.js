@@ -62,7 +62,7 @@ module.exports = {
         ]
       }
     ],
-    contextHeading: 'Oxford storytelling, manuscript revision and Victorian print.',
+    contextHeading: 'From a river story to Macmillan’s book.',
     contextDeck: 'The familiar book grew through retelling, expansion, illustration and an unusually visible false start in production.',
     contexts: [
       {
@@ -70,7 +70,7 @@ module.exports = {
         title: 'From a river story to Under Ground',
         body: [
           'The British Library manuscript record connects the story’s first shape with the Oxford river excursion of 4 July 1862 involving Charles Dodgson, Robinson Duckworth and the three Liddell sisters. Dodgson then wrote and illustrated Alice’s Adventures Under Ground, giving the finished manuscript to Alice Liddell in November 1864.',
-          'The published Wonderland more than doubled the shorter manuscript. For publication Carroll added new episodes, among them the Mad Tea-Party and the Cheshire Cat, and John Tenniel drew the pictures. Comparing the two texts shows that Carroll’s revisions added new material as well as correcting the old.'
+          'For publication Carroll nearly doubled the story’s length. He added new episodes, among them the Mad Tea-Party and the Cheshire Cat, and John Tenniel drew the pictures in place of Carroll’s own.'
         ]
       },
       {
@@ -78,15 +78,15 @@ module.exports = {
         title: 'The withdrawn 1865 printing',
         body: [
           'Macmillan prepared the first printing with an 1865 title page, but it was withdrawn after Tenniel objected to the quality of the reproduction of his illustrations. A replacement impression, dated 1866, became the effective first public edition. Surviving sheets from the suppressed printing and Carroll’s own production records make this episode unusually well documented.',
-          'Carroll kept attending to wording and presentation in later printings, so they are not all the same text, and it matters which one an edition follows.'
+          'Carroll went on correcting the text in later printings, so they are not all the same, and an edition has to say which one it follows.'
         ]
       },
       {
         label: 'First readers',
-        title: 'Lessons, recitations and remembered poems',
+        title: 'The poems Alice gets wrong',
         body: [
-          'Several of Alice’s recitations reshape poems associated with moral instruction or schoolroom memory. The joke was especially sharp for readers who knew the expected lines, but recognition is not required for the scenes to work: Alice expects memorised language to prove who she is, and Wonderland sends back altered versions.',
-          'That pattern helps explain the book’s mixed address. Children can follow the reversals and interruptions; adults are invited to hear institutional habits (schooling, etiquette, courts and commands) through the child’s effort to make sense of them.'
+          'When Alice tries to recite the poems she learned by heart, they come out wrong. “How doth the little crocodile” replaces Isaac Watts’s “How doth the little busy bee”, and “You are old, Father William” turns Robert Southey’s sober old man into one who stands on his head. Carroll’s first readers had learned the originals in the schoolroom and heard the joke at once.',
+          'Most of the originals are forgotten now, and the parodies work without them. Alice expects the words she has memorised to prove who she is, and they come back altered.'
         ]
       }
     ],
@@ -129,7 +129,7 @@ module.exports = {
     ],
     movementHeading: 'The diamond’s journey.',
     movementDeck: 'A prologue of imperial seizure becomes a domestic investigation and finally a question of restitution.',
-    archiveHeading: 'Collins beside the first three-volume Moonstone.',
+    archiveHeading: 'Collins and the first edition.',
     archiveDeck: 'The author’s portrait and the 1868 title page place the many-voiced investigation beside the form in which its first book readers encountered it.',
     closeReadingHeading: 'Property, detection and books.',
     closeReadingDeck: 'The novel’s recurring words keep the stone’s geography, the risks of investigative certainty and Betteredge’s habits of reading in view.',
@@ -184,31 +184,31 @@ module.exports = {
         ]
       }
     ],
-    contextHeading: 'Serial suspense, imperial property and Victorian experiment.',
+    contextHeading: 'Weekly parts, India and the detective.',
     contextDeck: 'The novel’s form was shaped by weekly publication, while its mystery draws on histories far beyond the country house.',
     contexts: [
       {
         label: 'Serial form',
         title: 'Thirty-two weekly instalments',
         body: [
-          'The Moonstone ran in Dickens’s All the Year Round and in Harper’s Weekly from 4 January to 8 August 1868. Weekly divisions had to sustain memory and expectation across months. Changes of narrator, withheld letters and discoveries at the ends of instalments are therefore part of the conditions in which the novel was first read.',
-          'The three-volume London edition appeared before the serial had finished. Reading in a bound volume changes pace, but the work still carries the architecture of recurrence, delay and partial disclosure built for serial readers.'
+          'The Moonstone ran in Dickens’s All the Year Round and in Harper’s Weekly from 4 January to 8 August 1868. Collins wrote for readers who had to wait a week between parts, so narrators hand over, letters are held back, and discoveries come at the end of an instalment.',
+          'Tinsley Brothers published the three-volume edition in July, before the serial had finished, so a reader who bought the book could know the ending before the magazine printed it.'
         ]
       },
       {
         label: 'Empire',
         title: 'Seringapatam',
         body: [
-          'British forces captured Seringapatam in 1799 during the Fourth Anglo-Mysore War. Collins uses that recognisable imperial event as the point at which the diamond enters an English family history. The prologue makes violence abroad structurally necessary to comfort and inheritance at home.',
-          'The novel’s Indian guardians are often filtered through Victorian conventions of mystery and stereotype. A responsible reading can recognise those conventions while also noticing that the English claim begins in theft and that the final movement returns the stone to a religious setting beyond English control.'
+          'British forces captured Seringapatam in 1799 during the Fourth Anglo-Mysore War. The prologue begins there. John Herncastle takes the diamond in the sack of the city, and it comes to his niece Rachel Verinder through his will.',
+          'The three Brahmins who follow the diamond to England are drawn partly from Victorian stereotypes of Indian mystery. But the novel is clear that the English claim to the stone begins with a theft, and its last pages return the diamond to the forehead of the moon-god in India.'
         ]
       },
       {
         label: 'Detection and medicine',
-        title: 'Science and detection',
+        title: 'Detection and opium',
         body: [
-          'The Moonstone is frequently described as a foundational detective novel, though prose mysteries and investigating figures existed before it. Its importance lies partly in the density with which it combines professional detection, documentary testimony, physical traces, false inference and a final reconstruction.',
-          'The opium experiment joins that method to nineteenth-century debates about drugs, consciousness and memory. Collins, who used laudanum while suffering from painful illness, does not make medicine a simple answer: Jennings must design, observe and interpret the reenactment.'
+          'T. S. Eliot called it “the first, the longest, and the best of modern English detective novels”, though Poe’s Dupin stories and Dickens’s Inspector Bucket came before it. It brings together a professional detective, written testimony, physical clues, wrong conclusions and a final reconstruction.',
+          'Collins was taking large doses of laudanum for gout while he wrote the book, and the solution turns on an experiment with opium, devised by Ezra Jennings, a doctor’s assistant who takes the drug himself for an incurable illness.'
         ]
       }
     ],
@@ -238,6 +238,7 @@ module.exports = {
       { label: 'Wilkie Collins Society: The Moonstone', url: 'https://wilkiecollinssociety.org/the-moonstone/', note: 'Society resources on the work, its contexts and Collins scholarship.' },
       { label: 'Wilkie Collins Information Pages: publishing history', url: 'https://www.wilkie-collins.info/books_moonstone.htm', note: 'Dates and formats for the serial, first edition and revised text.' },
       { label: 'Victorian Web: serial and triple-decker publication', url: 'https://victorianweb.org/authors/collins/moonstone1.html', note: 'Instalment-level record of the 1868 serialisation.' },
+      { label: 'Wikipedia: The Moonstone', url: 'https://en.wikipedia.org/wiki/The_Moonstone', note: 'Collins’s gout and laudanum while writing the novel, and T. S. Eliot’s description of it, with references.' },
       { label: 'Project Gutenberg: The Moonstone', url: 'https://www.gutenberg.org/ebooks/155', note: 'Searchable public-domain text used to verify short phrases.' },
       { label: 'Wikimedia Commons: first-edition title page', url: 'https://commons.wikimedia.org/wiki/File:The_Moonstone_1st_ed.jpg', note: 'Image record, edition details and public-domain status.' }
     ]
@@ -306,15 +307,15 @@ module.exports = {
         ]
       }
     ],
-    contextHeading: 'A working manuscript, an Island landscape and the first-edition text.',
+    contextHeading: 'The manuscript, the Island and the first edition.',
     contextDeck: 'Montgomery planned carefully, revised heavily and used real places around Cavendish for Avonlea.',
     contexts: [
       {
         label: 'Composition',
-        title: 'From notebook premise to working manuscript',
+        title: 'From a notebook entry to the manuscript',
         body: [
           'Montgomery’s surviving notes preserve the seed of the plot: an elderly couple ask an orphanage for a boy and receive a girl. The official Anne manuscript project shows how she surrounded that premise with advance planning (what she called “spade work”) before beginning composition in June 1905.',
-          'The manuscript is full of changes, insertions and reused paper. It demonstrates that Anne’s apparently effortless voice was revised into shape. A facsimile shows how much physical work went into writing the book.'
+          'The manuscript is full of crossings-out and insertions, some of them on reused paper. Anne’s voice sounds spontaneous, and Montgomery worked hard to make it sound that way.'
         ]
       },
       {
@@ -322,15 +323,15 @@ module.exports = {
         title: 'Cavendish and Avonlea',
         body: [
           'Green Gables was inspired by the Macneill farm near the home where Montgomery grew up with her grandparents. She knew its fields, woods and paths, and Parks Canada preserves the cultural landscape associated with her early life. Montgomery did not live in the Green Gables farmhouse itself.',
-          'That distinction matters. Avonlea is not a disguised map in which every fiction has one documentary equivalent. Real roads, shorelines, farms and community practices are selected, renamed and reorganised by the novel’s imagination.'
+          'Avonlea is not Cavendish under another name. Montgomery took roads, shorelines, farms, and the church and school life she knew, and renamed and rearranged them.'
         ]
       },
       {
         label: 'Text and readership',
         title: 'Boston publication and a Canadian world',
         body: [
-          'Montgomery signed with the Boston firm L. C. Page in April 1907, and the novel appeared in June 1908. Its American publication helps explain why the first edition uses forms that later British printings sometimes regularised. Preserving that spelling and punctuation keeps the chosen base text visible.',
-          'The success was international very quickly: a Swedish translation appeared in 1909. Yet the novel’s material world remains local: farm labour, district school, church, roads and household economies give Anne’s imaginative language something definite to transform.'
+          'Montgomery signed with the Boston firm L. C. Page in April 1907, and the novel appeared in June 1908. This edition follows that first edition, keeping its spelling and punctuation, which later British printings sometimes changed.',
+          'The book sold well at once and was translated into Swedish in 1909. Its world stays local all the same, with its farm work, the district school, church, the roads, and a household that has to count its money.'
         ]
       }
     ],
@@ -366,16 +367,16 @@ module.exports = {
   },
 
   'oroonoko': {
-    heading: 'A “true history” and its claims to authority.',
+    heading: 'A “true history”',
     introduction: [
-      'Oroonoko: or, The Royal Slave moves between Coramantien on the West African coast and the English colony of Surinam. Its hero is a prince and military leader who falls in love with Imoinda, loses her through royal power, encounters her again in enslavement and leads a rising after repeated promises of freedom fail. The story moves as fast as a romance or a tragedy, but the narrator insists again and again that she saw it happen.',
-      'That claim makes the work more complicated. The narrative includes precise colonial names and landscapes alongside idealised description, political invention and an exceptional hero fashioned through European conventions of rank. It condemns treachery and the violence inflicted on Oroonoko while remaining entangled in the social hierarchy and slave economy it represents. Behn attacks the dishonesty of the colonists, but the book is not an abolitionist tract; organised British abolitionism came a century later.'
+      'Oroonoko: or, The Royal Slave moves between Coramantien on the West African coast and the English colony of Surinam. Its hero, a prince and a general, loses Imoinda to his grandfather the king, finds her again as a slave in Surinam, and leads a rising when the promises of freedom made to him come to nothing. The story moves as fast as a romance, and the narrator keeps telling us that she saw much of it herself.',
+      'That claim is the difficulty. The book names real colonists and real places, but it also idealises its hero in the European language of rank and honour. It condemns the treachery and cruelty done to Oroonoko without condemning slavery itself. Behn attacks the dishonesty of the colonists, but the book is not an abolitionist work; organised British abolitionism came a century later.'
     ],
-    movementHeading: 'Love, sale and resistance across the Atlantic.',
+    movementHeading: 'The story.',
     movementDeck: 'The narrative’s two geographies are joined by commerce, broken oaths and competing ideas of honour.',
     archiveHeading: 'Behn beside a map of English Guiana.',
     archiveDeck: 'The portrait and seventeenth-century map restore a writer and colonial geography that the narrator’s confident first-person account cannot by itself verify.',
-    closeReadingHeading: 'Honour, witness and the language of enslavement.',
+    closeReadingHeading: 'Witness and rank.',
     closeReadingDeck: 'Three phrases show how the narrative talks about truth, trade and the promises made again and again to Oroonoko and Imoinda.',
     sourcesHeading: 'The narrative and the colonial record.',
     sourcesDeck: 'First-edition text, archive catalogues and histories of Surinam help separate Behn’s literary authority from claims that remain disputed.',
@@ -383,48 +384,48 @@ module.exports = {
       {
         title: 'Coramantien: love under royal power',
         body: [
-          'Oroonoko’s courtship of Imoinda begins in a society ordered by war, rank and the authority of his grandfather, the king. The king’s desire overrides the lovers’ bond and sends Imoinda into the royal otan. Courtly honour is already unstable before European traders dominate the action.',
-          'The African opening does not present a world outside slavery. Captives taken in war are sold, and Oroonoko participates in that system. This fact is essential to the book’s moral difficulty: his later enslavement is a betrayal and catastrophe, but the narrative has not established opposition to enslavement as such.'
+          'Oroonoko loves Imoinda, the daughter of the general who died saving his life, but his grandfather the king wants her and takes her into the Otan, his household of women. When the lovers are discovered, the king sells Imoinda into slavery and lets Oroonoko believe she has been put to death.',
+          'Coramantien is not a world without slavery. Captives taken in war are sold to European traders, and Oroonoko sells them himself. The book treats his own enslavement as a betrayal; it does not object to the trade he took part in.'
         ]
       },
       {
         title: 'The captain’s invitation and the middle passage',
         body: [
-          'An English captain invites Oroonoko and his companions aboard under the forms of hospitality, then seizes them. The captain invites Oroonoko aboard as a trading partner and then puts him in chains. Oroonoko’s hunger strike and negotiation show resistance beginning before the ship reaches Surinam, while the captain’s oath proves worthless because he controls the vessel.',
-          'In the colony Oroonoko is renamed Caesar. The imposed name recognises heroic stature in a European idiom while also claiming the power to replace his identity. His reunion with Imoinda gives the Surinam section hope, but her pregnancy makes delay newly dangerous.'
+          'An English captain who has traded with Oroonoko invites him and his companions aboard to dine, then puts them in chains. Oroonoko refuses food until the captain gives his word to free him when they reach land. The captain breaks it and sells him.',
+          'In Surinam he is bought by Trefry and renamed Caesar, and he finds Imoinda, now called Clemene, among the slaves. She becomes pregnant, and the freedom he has been promised keeps being put off.'
         ]
       },
       {
         title: 'Broken promises, rising and execution',
         body: [
-          'Trefry treats Oroonoko with relative respect, yet the promised freedom never arrives. Oroonoko’s speech to the enslaved exposes the logic of endless postponement: labour and obedience offer no route out when the people making the promise benefit from breaking it. The rising is defeated after another offer of terms.',
-          'The conclusion refuses rescue. Oroonoko kills Imoinda before his own capture and is publicly dismembered. Behn’s prose directs horror towards colonial cruelty, but the hero’s choices remain available for moral scrutiny. Tragedy does not require every act of its central figure to become exemplary.'
+          'Oroonoko persuades the enslaved men to escape with him. When the deputy governor, Byam, offers terms, Oroonoko surrenders, and is then seized and whipped.',
+          'Rather than leave Imoinda and their child to slavery, he kills her, with her consent, and is found beside her body. He is executed by being cut to pieces, and the narrator reports that he smoked his pipe until he died. Her horror is directed at the colonists, but she does not ask us to approve everything Oroonoko does.'
         ]
       }
     ],
     closeReadings: [
       {
         phrase: 'A True History',
-        title: '“A True History”',
+        title: 'The claim to truth',
         body: [
-          'The subtitle asks seventeenth-century readers to approach the narrative as history, a word that could cover forms of factual and exemplary narration broader than modern documentary history. The narrator’s confidence creates immediacy, but it does not remove the need to test the account against other records.',
-          'Behn was already an accomplished dramatist. Scenes, speeches and carefully staged recognition can produce the effect of testimony while remaining shaped literary art.'
+          'The title page calls the book a true history. In the 1680s “history” could mean almost any narrative of events, so the word promises less than it seems to, and the narrator’s confidence is no reason to stop checking her account against other records.',
+          'Behn was by then an established playwright, and the book is built like a play, with set speeches and staged recognitions.'
         ]
       },
       {
         phrase: 'The Royal Slave',
         title: 'The title',
         body: [
-          '“Royal” and “slave” are forced together as incompatible identities. The contradiction gives Oroonoko tragic distinction and makes his enslavement appear as a violation of natural hierarchy. It also raises a harder question: does the narrative oppose human bondage, or does it especially oppose the bondage of someone represented as born to rule?',
-          'Imoinda and the unnamed enslaved community widen that question beyond the prince. Their presence prevents rank from settling the ethical problem, even when the narrator’s language repeatedly returns to nobility.'
+          '“The Royal Slave” joins two conditions the book treats as incompatible. Oroonoko’s enslavement shocks the narrator because he was born to rule, and the book never settles whether it objects to slavery or to the enslavement of a prince.',
+          'Imoinda and the other enslaved people, most of them unnamed, keep the question open, though the narrator’s language keeps returning to nobility.'
         ]
       },
       {
         phrase: 'an eye-witness',
         title: 'The narrator’s voice',
         body: [
-          'The narrator claims direct knowledge of much that happened in Surinam and explains absences from crucial moments. Those statements organise trust, but they also make her position visible: she moves within the colonial society that can observe Oroonoko without freeing him.',
-          'Modern scholarship disputes details of Behn’s biography and the extent of any visit. The most useful reading keeps both facts in view: the text insistently performs eyewitness authority, and that performance is no independent proof.'
+          'The narrator says she saw much of what happened in Surinam, and explains why she was absent at the worst moments. Those explanations place her inside the colonial society that could watch Oroonoko without freeing him.',
+          'How long Behn was in Surinam, and the details of her life there, are disputed by her biographers. The book’s claim to be an eyewitness account is part of its design, and it cannot prove itself.'
         ]
       }
     ],
@@ -444,15 +445,15 @@ module.exports = {
         title: 'Coramantien and the trade in captives',
         body: [
           '“Coramantien” points towards the English trading world around Kormantin on the Gold Coast. The narrative joins warfare and captive sale in West Africa to European shipping and American plantation slavery. Oroonoko can occupy both sides of that commerce before betrayal makes him its victim.',
-          'That double position is not an incidental inconsistency to be explained away. It is one reason the work remains important for studying how early English fiction could condemn cruelty while retaining assumptions about hierarchy, conquest and who most visibly deserved liberty.'
+          'The book condemns the cruelty done to Oroonoko while keeping its assumptions about rank and conquest, and about who deserves to be free.'
         ]
       },
       {
         label: 'Afterlife',
         title: 'From prose history to stage tragedy',
         body: [
-          'Thomas Southerne adapted the narrative for the stage in 1695. His tragedy altered character, plot and emphasis, helping Oroonoko circulate through eighteenth-century theatrical culture in forms different from Behn’s prose.',
-          'Later antislavery readers could draw force from the work’s exposure of broken oaths, sale and torture. That reception is historically significant, but it does not make every element of the 1688 narrative abolitionist. Influence and original argument are not identical.'
+          'Thomas Southerne adapted the story for the stage in 1695, changing its characters and plot; in his version Imoinda is white. The play was revived throughout the eighteenth century, and for much of it the story was better known from Southerne than from Behn.',
+          'Later opponents of slavery drew on the story’s broken oaths, sale and torture. That later use does not make Behn’s narrative of 1688 an abolitionist work.'
         ]
       }
     ],
@@ -460,20 +461,20 @@ module.exports = {
       { date: 'Early 1660s', title: 'The claimed Surinam setting', body: 'The narrative points back to the period of English colonial rule associated with Willoughbyland.' },
       { date: '1667', title: 'Dutch control', body: 'Surinam passes from English to Dutch rule in the settlements following the Second Anglo-Dutch War.' },
       { date: '1688', title: 'First publication', body: 'William Canning publishes Oroonoko: or, The Royal Slave in London.' },
-      { date: '1695', title: 'Southerne’s adaptation', body: 'A stage tragedy substantially reshapes the prose narrative for a new public.' }
+      { date: '1695', title: 'Southerne’s adaptation', body: 'Thomas Southerne’s tragedy, with a changed plot and a white Imoinda, is staged in London.' }
     ],
     gallery: [
       {
         src: '/assets/book-context/aphra-behn-c1670.jpg', width: 837, height: 1000,
         alt: 'Portrait traditionally identified as Aphra Behn, painted by Peter Lely',
-        caption: 'Peter Lely’s portrait traditionally identified as Aphra Behn, a professional writer of drama, poetry and prose in Restoration England.',
+        caption: 'Peter Lely’s portrait traditionally identified as Aphra Behn, who earned her living as a playwright, poet and writer of prose.',
         credit: 'Peter Lely, c. 1670; Yale Center for British Art via Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Peter_Lely_-_Aphra_Behn_-_Google_Art_Project.jpg', license: 'Public domain'
       },
       {
         src: '/assets/book-context/guiana-map-1656.jpg', width: 1000, height: 779,
         alt: 'Nicolas Sanson’s 1656 map of Guiana including the coast of Surinam',
-        caption: 'A 1656 European map of Guiana made during the period in which English, Dutch and French colonial interests competed along the coast.',
+        caption: 'Nicolas Sanson’s map of Guiana, 1656, from the years when English, Dutch and French colonists competed along the coast.',
         credit: 'Nicolas Sanson, 1656; Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:1656_Sanson_Map_of_Guiana,_Venezuela,_and_El_Dorado_-_Geographicus_-_Guiane-sanson-1656.jpg', license: 'Public domain'
       }
@@ -495,7 +496,7 @@ module.exports = {
     ],
     movementHeading: 'Encounter, substitution and the recovery of a name.',
     movementDeck: 'The plot moves from Gothic warning to legal conspiracy and finally to a reconstructed public record.',
-    archiveHeading: 'Collins and the first readers’ Woman in White.',
+    archiveHeading: 'Collins and the edition of 1861.',
     archiveDeck: 'The author’s portrait and an early frontispiece place the documentary narrative beside the visual identity it acquired in print.',
     closeReadingHeading: 'Evidence, identity and the terms of confinement.',
     closeReadingDeck: 'The novel’s own language reveals how testimony becomes public fact and how institutions can make a false name legally persuasive.',
@@ -550,7 +551,7 @@ module.exports = {
         ]
       }
     ],
-    contextHeading: 'Weekly publication, revised text and the machinery of legal identity.',
+    contextHeading: 'Weekly parts, a revised text and the law.',
     contextDeck: 'The sensation plot works because its shocks are attached to recognisable Victorian institutions and documents.',
     contexts: [
       {
@@ -558,23 +559,23 @@ module.exports = {
         title: 'A story written while readers waited',
         body: [
           'Collins began writing on 15 August 1859. Serial publication in Dickens’s All the Year Round and Harper’s Weekly began on 26 November, while much of the novel still had to be composed. He completed the manuscript on 26 July 1860; the British serial ended on 25 August.',
-          'That overlap makes suspense a working condition of composition. Instalments shift documents, break at moments of uncertainty and move between locations while maintaining the larger chronology readers are invited to reconstruct.'
+          'Collins was writing only weeks ahead of the printers, and had to keep the whole chronology straight as he went. He did not quite manage it. The dates around Laura’s journey to London do not work in the first book edition, and he corrected them for the edition of 1861.'
         ]
       },
       {
         label: 'Text',
-        title: 'Why the revised 1861 version matters',
+        title: 'The revised text of 1861',
         body: [
-          'The first English book edition appeared in three volumes in 1860. Collins then prepared a revised one-volume text with a dated preface in 1861. Following that revision is an editorial choice, and the edition says so, so that the serial, first-edition and later readings stay distinct.',
-          'The change of format also altered access. A one-volume edition belonged to a different price and circulation structure from both weekly parts and the expensive three-decker associated with circulating libraries.'
+          'The first book edition appeared in three volumes in 1860. Collins revised it for a one-volume edition in 1861, with a new preface, and this edition follows the revised text.',
+          'The change of format also changed who could own the book. A three-volume novel cost a guinea and a half and was mostly borrowed from circulating libraries; a single volume was far cheaper to buy outright.'
         ]
       },
       {
         label: 'Law and confinement',
         title: 'Asylums, registers and the law',
         body: [
-          'Laura’s vulnerability is not explained by villainy alone. Marriage settlements determine control of money; married women’s legal and economic powers were restricted; private asylum admission depended on certificates and testimony that could be abused when a patient’s own account was discounted.',
-          'The novel intensifies these conditions for sensation, but it does not invent their basic imbalance. Its most frightening substitution works because name, property and sanity are recognised through systems controlled by people who may accept the wrong witness.'
+          'Laura is not at Sir Percival’s mercy only because he is a villain. Her marriage settlement decides who controls her money; a married woman had few legal or economic powers of her own; and admission to a private asylum depended on certificates and statements that could be abused when the patient’s own account was ignored.',
+          'Collins exaggerates for effect, but he did not invent the imbalance. Laura can be shut away under another woman’s name because the people who certify names, property and sanity take the word of her husband and his friend over hers.'
         ]
       }
     ],
@@ -588,7 +589,7 @@ module.exports = {
       {
         src: '/assets/book-context/wilkie-collins-1880.jpg', width: 797, height: 1000,
         alt: 'Portrait of Wilkie Collins by Rudolph Lehmann in 1880',
-        caption: 'Wilkie Collins, photographed through the formal portrait style of the period in which his sensation novels remained widely read.',
+        caption: 'Wilkie Collins in a formal studio portrait.',
         credit: 'Rudolph Lehmann, 1880; National Portrait Gallery image via Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:(William)_Wilkie_Collins_by_Rudolph_Lehmann.jpg', license: 'Public domain'
       },
@@ -679,16 +680,16 @@ module.exports = {
         label: 'Composition',
         title: 'Fifteen letters and a finished manuscript',
         body: [
-          'In 1907 Grahame sent a series of animal-story letters to his seven-year-old son Alastair, known in the family as Mouse. The Bodleian preserves fifteen letters together with manuscript material for The Wind in the Willows. They show an origin in serial family storytelling without making the printed book a mere transcription.',
-          'Episodes were selected, expanded and arranged into a book that moves between Toad’s comic career and the quieter river chapters, and the changes of tone are part of that design.'
+          'In 1907 Grahame sent a series of letters about Toad to his seven-year-old son Alastair, known in the family as Mouse. The Bodleian Library keeps fifteen of them, with manuscript material for the book.',
+          'The book is not a copy of the letters. Grahame chose, expanded and rearranged episodes, and added quieter chapters about the river in which Toad does not appear at all.'
         ]
       },
       {
         label: 'Author',
         title: 'The Bank of England and retirement in 1908',
         body: [
-          'Grahame entered the Bank of England in 1879 and rose to become Secretary in 1898. He resigned in June 1908, and the novel appeared on 8 October. The dates place the book beside a long professional life of office, institution and metropolitan routine.',
-          'It would be too simple to read the river as Grahame’s escape from the Bank of England. The context works better as a contrast: Grahame knew regulated work well, and his animals show what habits and loyalties make freedom last.'
+          'Grahame entered the Bank of England in 1879 and rose to become its Secretary in 1898. He resigned in June 1908, and the novel appeared on 8 October.',
+          'It is tempting to read the river as Grahame’s escape from the Bank. But he knew regular work well, and his animals value habit, home and loyal friends as much as freedom.'
         ]
       },
       {
@@ -696,7 +697,7 @@ module.exports = {
         title: 'Road law, speed and the first edition',
         body: [
           'The Motor Car Act 1903 introduced national registration and driving licences and set a twenty-mile-per-hour maximum. Toad’s offences are exaggerated for comedy, but arguments about speed and road danger were already current in 1908.',
-          'The 1908 Methuen edition had a frontispiece by W. Graham Robertson. Later illustrations, especially E. H. Shepard’s, became central to the book’s public image, but they belong to its afterlife. The restrained first cover helps recover how the earliest readers first met it.'
+          'The 1908 Methuen edition had only a frontispiece, by W. Graham Robertson. E. H. Shepard’s drawings of 1931 fixed how most readers now picture the animals, but the first readers met them without pictures.'
         ]
       }
     ],
@@ -710,14 +711,14 @@ module.exports = {
       {
         src: '/assets/book-context/kenneth-grahame-hollyer.jpg', width: 620, height: 1000,
         alt: 'Portrait photograph of Kenneth Grahame by Frederick Hollyer',
-        caption: 'Kenneth Grahame in a portrait by Frederick Hollyer published by 1901, before the animal-story letters and finished novel.',
+        caption: 'Kenneth Grahame, photographed by Frederick Hollyer before 1901.',
         credit: 'Frederick Hollyer, by 1901; Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Portrait_of_Kenneth_Grahame.jpg', license: 'Public domain'
       },
       {
         src: '/assets/book-context/wind-willows-first-edition-1908.jpg', width: 640, height: 1000,
         alt: 'Dark blue cover of the 1908 first edition of The Wind in the Willows',
-        caption: 'The restrained first-edition cover, before later illustrated editions fixed the familiar appearances of Rat, Mole, Badger and Toad.',
+        caption: 'The cover of the first edition, 1908. Rat, Mole, Badger and Toad had not yet been drawn as most readers now picture them.',
         credit: 'The Wind in the Willows, 1908; Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:The_Wind_in_the_Willows_cover.jpg', license: 'Public domain'
       }
@@ -802,7 +803,7 @@ module.exports = {
         title: 'Seven months in The New England Magazine',
         body: [
           'The Giant Wistaria appeared in June 1891; The Yellow Wall-Paper followed in January 1892. Both used forms of Gilman’s married name. In the magazine the stories sat among essays, fiction, illustrations and local history.',
-          'The original periodical pages matter. They fix dates, bylines, spelling and layout, and they ground the pairing in documents.'
+          'The magazine pages are the first printed texts of both stories, and they settle the dates, bylines and spelling.'
         ]
       },
       {
@@ -810,15 +811,15 @@ module.exports = {
         title: 'Gilman’s 1913 account',
         body: [
           'Gilman connected The Yellow Wall-Paper with her experience of S. Weir Mitchell’s rest cure. In a 1913 essay she recalled instructions to restrict intellectual work and avoid pen, brush or pencil, and described abandoning that regimen after her condition worsened. She also insisted that the fiction contained embellishment and that she had not experienced its hallucinations.',
-          'Her claim that Mitchell later changed his treatment was something she said she had been told, not an event she documented directly. The distinction matters: the retrospective essay is valuable primary evidence for Gilman’s stated purpose without becoming infallible proof of every later anecdote.'
+          'Her claim that Mitchell later changed his treatment after reading the story was something she said she had been told. The essay, written twenty years on, is good evidence of what she meant the story to do, and weaker evidence for that anecdote.'
         ]
       },
       {
         label: 'Textual history',
-        title: 'Hyphen, manuscript and magazine',
+        title: 'The Wall-Paper and the Wistaria',
         body: [
-          'The January 1892 heading prints The Yellow Wall-Paper with a hyphen, while later editions often use Wallpaper. A surviving manuscript and the periodical text contain differences that can affect pace and interpretation. The edition records the variants, instead of printing one tidied online version as if it were final.',
-          'The Giant Wistaria also has a layered history. Gilman revised an earlier, now-lost ghost-story project and added the colonial prelude. Its wisteria contains an anachronism (the plant reached Europe after the colonial period imagined in the opening), so atmosphere and botanical history do not align neatly.'
+          'The magazine heading of January 1892 prints The Yellow Wall-Paper with a hyphen; later editions often print Wallpaper. Gilman’s surviving manuscript and the magazine text differ in places, and the edition notes where.',
+          'The Giant Wistaria is set in two periods: a colonial prelude in which a young mother is hidden away in disgrace, and a present-day summer in which visitors to the same house find what was left of her.'
         ]
       }
     ],
@@ -832,7 +833,7 @@ module.exports = {
       {
         src: '/assets/book-context/charlotte-perkins-gilman-c1900.jpg', width: 823, height: 1000,
         alt: 'Profile portrait of Charlotte Perkins Gilman around 1900',
-        caption: 'Charlotte Perkins Gilman around 1900. Both stories first appeared under her married name, Charlotte Perkins Stetson.',
+        caption: 'Charlotte Perkins Gilman, about 1900. Both stories first appeared under her married name, Charlotte Perkins Stetson.',
         credit: 'Charles Fletcher Lummis, c. 1900; restored by Adam Cuerden; Library of Congress via Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:Charlotte_Perkins_Gilman_c._1900.jpg', license: 'Public domain'
       },
@@ -939,16 +940,16 @@ module.exports = {
         label: 'Composition',
         title: 'From pencil manuscript to Trimalchio galleys',
         body: [
-          'Fitzgerald planned a third novel from 1922 and drafted intensively in France during 1924. Princeton preserves manuscript and galley evidence showing more than proofreading: he crossed out, inserted and reordered material, altered point of view and reshaped disclosure. The Rome galleys carried forms of the title Trimalchio.',
-          'Other proposed titles and Francis Cugat’s jacket belong to that process. Fitzgerald urged Maxwell Perkins to reserve Cugat’s design before the manuscript was complete, saying he had written its visual idea into the book through Doctor T. J. Eckleburg’s eyes.'
+          'Fitzgerald began planning a third novel in 1922 and wrote most of it in France in 1924. The manuscript and proofs at Princeton show that his corrections went far beyond proofreading: in the galley proofs, set under the title Trimalchio and revised over the winter of 1924–25, he moved whole passages and changed when the reader learns about Gatsby’s past.',
+          'Before the novel was finished he wrote to his editor, Maxwell Perkins, asking him to keep Francis Cugat’s jacket design for him: “I’ve written it into the book.” Readers have usually taken him to mean the eyes of Doctor T. J. Eckleburg.'
         ]
       },
       {
         label: 'Summer 1922',
-        title: 'Prohibition, mobility and unequal consequence',
+        title: 'Prohibition and the motor car',
         body: [
-          'The Eighteenth Amendment and Volstead Act were in force during the dated summer. There is plenty of drink because prohibition created a black market and did nothing to stop people wanting it. Gatsby’s business associations and Tom’s drugstore insinuation belong to that legal economy.',
-          'Cars are status objects, transport and instruments of transferred responsibility. The fatal sequence requires attention to who owns and drives each vehicle. Tom, Daisy and Nick can move through the valley of ashes; George and Myrtle Wilson are materially tied to it.'
+          'The Eighteenth Amendment and the Volstead Act were in force in the summer of 1922. There is plenty of drink in the novel because Prohibition created a black market and did nothing to stop people wanting it. Tom’s charge that Gatsby and Wolfshiem bought up side-street drugstores to sell grain alcohol over the counter belongs to that trade.',
+          'Cars matter as much as drink. Myrtle is killed by Gatsby’s car with Daisy at the wheel, and Wilson goes after its owner. Tom, Daisy and Nick drive through the valley of ashes; George and Myrtle Wilson live in it.'
         ]
       },
       {
@@ -956,7 +957,7 @@ module.exports = {
         title: 'A reputation made after 1925',
         body: [
           'Scribner’s published The Great Gatsby on 10 April 1925. Reviews were mixed and sales disappointed Fitzgerald; the vast classroom reputation familiar today was not secure when he died in 1940. In 1945, 155,000 Armed Services Edition copies were distributed to service personnel, bringing the novel to a large new readership.',
-          'Works published in 1925 entered the United States public domain on 1 January 2021. That legal change made the first-edition text newly available for independent editions, but responsible presentation still requires a declared textual basis and correction policy.'
+          'The novel entered the public domain in the United States on 1 January 2021, ninety-five years after publication, which is why new editions of the 1925 text, this one among them, can now be published there.'
         ]
       }
     ],
@@ -970,7 +971,7 @@ module.exports = {
       {
         src: '/assets/book-context/f-scott-fitzgerald-1917.jpg', width: 714, height: 1000,
         alt: 'F. Scott Fitzgerald in a First World War United States Army officer’s uniform in 1917',
-        caption: 'F. Scott Fitzgerald in uniform in 1917. Military service and the postwar return form part of Nick and Gatsby’s shared background.',
+        caption: 'F. Scott Fitzgerald in army uniform, 1917. At Gatsby’s first party, he and Nick find that they served in the same division in France.',
         credit: 'Unknown photographer, 1917; F. Scott Fitzgerald Archives via Wikimedia Commons',
         sourceUrl: 'https://commons.wikimedia.org/wiki/File:F._Scott_Fitzgerald_-_World_War_I_Uniform_-_1917.jpg', license: 'Public domain'
       },

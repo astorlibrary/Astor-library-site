@@ -18,35 +18,13 @@
   "difficulty": 3,
   "lengthNote": "Around 2,100 lines, the shortest of the major tragedies",
   "openingLine": "When shall we three meet again In thunder, lightning, or in rain?",
-  "summary": "Three witches greet a victorious general with a prophecy that he will be king. Within a day he has murdered the king who trusts him, and the rest of the play watches him kill to keep a crown that gives him nothing. It is Shakespeare’s fastest tragedy, and the speed is the argument: Macbeth is never allowed the time to become a different kind of man.",
+  "summary": "Three witches greet a victorious general with a prophecy that he will be king. Within a day he has murdered the king who trusts him, and the rest of the play watches him kill to keep a crown that gives him nothing. It is the shortest of Shakespeare’s tragedies and moves quickly: Macbeth is never given time to reconsider.",
   "referenceStyle": "act, scene and line of the Astor Library Edition",
   "sourceText": {
     "label": "Globe/Moby text of Macbeth",
     "url": "https://shakespeare.mit.edu/macbeth/full.html",
     "note": "Other modern editions vary by a line or two. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1606",
-      "note": "Soon after the Gunpowder Plot trials, and three years into James VI and I’s English reign."
-    },
-    {
-      "label": "First printed",
-      "value": "1623",
-      "note": "No quarto survives. The First Folio is the only early text."
-    },
-    {
-      "label": "Chief source",
-      "value": "Holinshed’s Chronicles",
-      "note": "Shakespeare compresses decades of Scottish history into a matter of months."
-    },
-    {
-      "label": "Shape",
-      "value": "Five acts, 28 scenes",
-      "note": "Two of the five acts are over before the murder is half an hour old on stage."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -234,14 +212,9 @@
       "id": "macbeth",
       "name": "Macbeth",
       "role": "Thane of Glamis, then Cawdor, then king of Scotland",
-      "summary": "A soldier praised for a savagery the state approves of, who discovers that the same nerve is unbearable when he uses it for himself. He imagines every murder in full before he commits it and feels every consequence afterwards, which is why the play is a tragedy and not a case study.",
+      "summary": "A soldier praised for a savagery the state approves of, who discovers that the same nerve is unbearable when he uses it for himself. He imagines every murder in full before he commits it and feels every consequence afterwards.",
       "clue": "A soldier whose imagination is his conscience: he sees the dagger before he uses it and hears the voice that will not let him sleep afterwards.",
       "firstAppearance": "1.3",
-      "traits": [
-        "imaginative",
-        "brave in battle",
-        "unable to stop"
-      ],
       "relationships": [
         {
           "to": "lady-macbeth",
@@ -281,11 +254,6 @@
       "summary": "She reads her husband accurately in a single speech and organises the murder he cannot organise himself. Her strength is a performance she has to summon, and once the crown is won she has no further part to play, which is where the sleepwalking begins.",
       "clue": "She calls on spirits to unsex her, tells her husband to look like the innocent flower, and later cannot get a spot off a clean hand.",
       "firstAppearance": "1.5",
-      "traits": [
-        "decisive",
-        "self-willed",
-        "undone by what she willed"
-      ],
       "relationships": [
         {
           "to": "macbeth",
@@ -306,13 +274,9 @@
       "id": "banquo",
       "name": "Banquo",
       "role": "A general, father of Fleance",
-      "summary": "He hears the same prophecy and does nothing with it, which makes him the play’s control experiment. His silence after Duncan’s death is not innocence either: he suspects Macbeth of foul play and keeps quiet because the prophecy also promised something to him.",
+      "summary": "He hears the same prophecy and does nothing with it, which sets him against Macbeth from the start. His silence after Duncan’s death is not innocence either: he suspects Macbeth of foul play and keeps quiet because the prophecy also promised something to him.",
       "clue": "Told that he will father kings though he will not be one, he is murdered on the road at dusk and comes back to sit in the king’s place at a feast.",
       "firstAppearance": "1.3",
-      "traits": [
-        "watchful",
-        "compromised by silence"
-      ],
       "relationships": [
         {
           "to": "macbeth",
@@ -333,10 +297,6 @@
       "summary": "Generous, trusting and a poor judge of faces: he says as much about the last thane of Cawdor moments before promoting the next traitor. Shakespeare makes him gentler than the historical king so that the murder costs the audience something.",
       "clue": "He says there is no art to find the mind’s construction in the face, praises the sweet air at his host’s castle, and is murdered there that night.",
       "firstAppearance": "1.2",
-      "traits": [
-        "gracious",
-        "trusting"
-      ],
       "relationships": [
         {
           "to": "malcolm",
@@ -360,11 +320,6 @@
       "summary": "He discovers the body, stays away from the coronation, and leaves for England without warning his household, a decision the play does not let him off. His grief in 4.3 is the one moment where a man is allowed to feel a loss fully before acting on it.",
       "clue": "He finds his king murdered, stays away from the coronation at Scone, and was from his mother’s womb untimely ripped.",
       "firstAppearance": "2.3",
-      "traits": [
-        "blunt",
-        "grieving",
-        "the play’s instrument"
-      ],
       "relationships": [
         {
           "to": "lady-macduff",
@@ -398,10 +353,6 @@
       "summary": "Named heir in 1.4, which is the political fact that makes the prophecy inconvenient. He flees, learns caution, and sounds out Macduff by describing himself as a worse tyrant than Macbeth, a scene that shows a king being made.",
       "clue": "He flees to England after his father’s murder, tests a loyal thane by slandering himself, and has his soldiers hew down boughs to carry before them.",
       "firstAppearance": "1.2",
-      "traits": [
-        "cautious",
-        "politically educated"
-      ],
       "relationships": [
         {
           "to": "duncan",
@@ -426,10 +377,6 @@
       "summary": "They tell the truth in a form designed to be misheard. Nothing they say forces anybody to do anything, which is the difficulty: the play never settles whether they cause the future or only describe it accurately enough to be dangerous.",
       "clue": "They meet in thunder on a heath, hail a soldier by three titles, and leave him sure he is safe until a wood comes to a hill.",
       "firstAppearance": "1.1",
-      "traits": [
-        "equivocal",
-        "precise"
-      ],
       "relationships": [
         {
           "to": "macbeth",
@@ -450,13 +397,9 @@
       "id": "lady-macduff",
       "name": "Lady Macduff",
       "role": "Macduff’s wife",
-      "summary": "She gets one scene, and uses it to say the thing nobody else will: that a man who leaves his wife and children unguarded has behaved like a traitor to them, whatever his politics. She is killed on stage, which is rare in Shakespeare and deliberate here.",
+      "summary": "She gets one scene, and uses it to say the thing nobody else will: that a man who leaves his wife and children unguarded has behaved like a traitor to them, whatever his politics. Her son is killed in front of her, and she is chased off the stage crying ‘Murder!’.",
       "clue": "She calls her absent husband a traitor to his family, tells her son she can buy twenty husbands at any market, and is murdered in her own castle.",
       "firstAppearance": "4.2",
-      "traits": [
-        "clear-sighted",
-        "abandoned"
-      ],
       "relationships": [
         {
           "to": "macduff",
@@ -472,13 +415,9 @@
       "id": "fleance",
       "name": "Fleance",
       "role": "Banquo’s son",
-      "summary": "He speaks two lines and then escapes into the dark, and the whole second half of the play runs on that escape. James VI and I’s line claimed descent from Banquo, so Fleance running offstage is also the future sitting in the audience.",
+      "summary": "He speaks only a few lines and then escapes into the dark, and the second half of the play runs on that escape. James VI and I was held to be descended from Banquo through Fleance.",
       "clue": "He tells his father the moon is down, carries the torch on the road at dusk, and escapes into the dark when his father is killed.",
       "firstAppearance": "2.1",
-      "traits": [
-        "silent",
-        "the unclosed door"
-      ],
       "relationships": [
         {
           "to": "banquo",
@@ -502,7 +441,7 @@
     {
       "id": "guilt",
       "name": "Guilt and conscience",
-      "summary": "Guilt in this play is physical. It stops a man saying ‘Amen’, it will not wash off, it takes a seat at dinner, and it eventually walks the corridors at night with a candle. Nobody is punished for the murders by the state; they are punished by their own nervous systems.",
+      "summary": "Guilt in this play is physical. It stops a man saying ‘Amen’, it will not wash off, it takes a seat at dinner, and it eventually walks the corridors at night with a candle. Nobody is punished for the murders by the state; they are punished by their own minds and bodies.",
       "development": "Macbeth’s imagination runs ahead of his conscience in Acts I and II, and his wife’s runs behind hers: she is unshaken at the murder and destroyed by it in Act V."
     },
     {
@@ -515,12 +454,12 @@
       "id": "fate",
       "name": "Fate, prophecy and equivocation",
       "summary": "Every prophecy in the play comes true, and the ones Macbeth relies on mislead him. The apparitions promise safety in terms that are technically exact and practically worthless, which is the same trick the Jesuit doctrine of equivocation was accused of in the Gunpowder Plot trials of 1606.",
-      "development": "First a prediction, then a riddle, then a trapdoor: Birnam wood does move, and the man not of woman born does exist."
+      "development": "The prophecies move from prediction to riddle: Birnam wood does move, and the man not of woman born does exist."
     },
     {
       "id": "appearance",
       "name": "Appearance and reality",
-      "summary": "The play opens by declaring that fair is foul, and then spends five acts proving it operationally: a welcoming castle, a loyal host, an innocent flower, a safe prophecy. Reading the play is largely a matter of watching characters fail to read each other.",
+      "summary": "The play opens by declaring that fair is foul, and then shows it again and again: a welcoming castle, a loyal host, an innocent flower, a safe prophecy. Characters repeatedly fail to read each other.",
       "development": "Duncan cannot find the mind’s construction in the face; by Act IV Malcolm will not trust a face at all, and tests Macduff with a false one of his own."
     },
     {
@@ -571,7 +510,7 @@
   "quotations": [
     {
       "id": "fair-is-foul",
-      "text": "Fair is foul, and foul is fair: Hover through the fog and filthy air.",
+      "text": "Fair is foul, and foul is fair: / Hover through the fog and filthy air.",
       "speaker": "The Witches",
       "reference": "1.1.12",
       "stage": "act-1",
@@ -615,7 +554,7 @@
     },
     {
       "id": "milk-of-human-kindness",
-      "text": "It is too full o' the milk of human kindness To catch the nearest way.",
+      "text": "It is too full o' the milk of human kindness / To catch the nearest way.",
       "speaker": "Lady Macbeth",
       "reference": "1.5.14",
       "stage": "act-1",
@@ -638,7 +577,7 @@
     },
     {
       "id": "unsex-me-here",
-      "text": "Come, you spirits That tend on mortal thoughts, unsex me here, And fill me from the crown to the toe top-full Of direst cruelty!",
+      "text": "Come, you spirits / That tend on mortal thoughts, unsex me here, / And fill me from the crown to the toe top-full / Of direst cruelty!",
       "speaker": "Lady Macbeth",
       "reference": "1.5.39",
       "stage": "act-1",
@@ -662,7 +601,7 @@
     },
     {
       "id": "innocent-flower",
-      "text": "Look like the innocent flower, But be the serpent under't.",
+      "text": "Look like the innocent flower, / But be the serpent under't.",
       "speaker": "Lady Macbeth",
       "reference": "1.5.65",
       "stage": "act-1",
@@ -686,7 +625,7 @@
     },
     {
       "id": "if-it-were-done",
-      "text": "If it were done when 'tis done, then 'twere well It were done quickly.",
+      "text": "If it were done when 'tis done, then 'twere well / It were done quickly.",
       "speaker": "Macbeth",
       "reference": "1.7.1",
       "stage": "act-1",
@@ -709,7 +648,7 @@
     },
     {
       "id": "vaulting-ambition",
-      "text": "I have no spur To prick the sides of my intent, but only Vaulting ambition, which o'erleaps itself And falls on the other.",
+      "text": "I have no spur / To prick the sides of my intent, but only / Vaulting ambition, which o'erleaps itself / And falls on the other.",
       "speaker": "Macbeth",
       "reference": "1.7.25",
       "stage": "act-1",
@@ -732,7 +671,7 @@
     },
     {
       "id": "is-this-a-dagger",
-      "text": "Is this a dagger which I see before me, The handle toward my hand?",
+      "text": "Is this a dagger which I see before me, / The handle toward my hand?",
       "speaker": "Macbeth",
       "reference": "2.1.32",
       "stage": "act-2",
@@ -777,7 +716,7 @@
     },
     {
       "id": "neptunes-ocean",
-      "text": "Will all great Neptune’s ocean wash this blood Clean from my hand? No, this my hand will rather The multitudinous seas incarnadine, Making the green one red.",
+      "text": "Will all great Neptune’s ocean wash this blood / Clean from my hand? No, this my hand will rather / The multitudinous seas incarnadine, / Making the green one red.",
       "speaker": "Macbeth",
       "reference": "2.2.60",
       "stage": "act-2",
@@ -844,7 +783,7 @@
     },
     {
       "id": "birnam-wood",
-      "text": "Macbeth shall never vanquish'd be until Great Birnam wood to high Dunsinane hill Shall come against him.",
+      "text": "Macbeth shall never vanquish'd be until / Great Birnam wood to high Dunsinane hill / Shall come against him.",
       "speaker": "Third Apparition",
       "reference": "4.1.97",
       "stage": "act-4",
@@ -868,7 +807,7 @@
     },
     {
       "id": "give-sorrow-words",
-      "text": "Give sorrow words: the grief that does not speak Whispers the o'er-fraught heart and bids it break.",
+      "text": "Give sorrow words: the grief that does not speak / Whispers the o'er-fraught heart and bids it break.",
       "speaker": "Malcolm",
       "reference": "4.3.210",
       "stage": "act-4",
@@ -913,7 +852,7 @@
     },
     {
       "id": "yellow-leaf",
-      "text": "My way of life Is fall'n into the sear, the yellow leaf; And that which should accompany old age, As honour, love, obedience, troops of friends, I must not look to have.",
+      "text": "My way of life / Is fall'n into the sear, the yellow leaf; / And that which should accompany old age, / As honour, love, obedience, troops of friends, / I must not look to have.",
       "speaker": "Macbeth",
       "reference": "5.3.22",
       "stage": "act-5",
@@ -937,7 +876,7 @@
     },
     {
       "id": "tomorrow",
-      "text": "To-morrow, and to-morrow, and to-morrow, Creeps in this petty pace from day to day To the last syllable of recorded time.",
+      "text": "To-morrow, and to-morrow, and to-morrow, / Creeps in this petty pace from day to day / To the last syllable of recorded time.",
       "speaker": "Macbeth",
       "reference": "5.5.20",
       "stage": "act-5",
@@ -962,7 +901,7 @@
     },
     {
       "id": "walking-shadow",
-      "text": "Life's but a walking shadow, a poor player That struts and frets his hour upon the stage And then is heard no more.",
+      "text": "Life's but a walking shadow, a poor player / That struts and frets his hour upon the stage / And then is heard no more.",
       "speaker": "Macbeth",
       "reference": "5.5.25",
       "stage": "act-5",
@@ -985,7 +924,7 @@
     },
     {
       "id": "untimely-ripp-d",
-      "text": "Macduff was from his mother's womb Untimely ripp'd.",
+      "text": "Macduff was from his mother's womb / Untimely ripp'd.",
       "speaker": "Macduff",
       "reference": "5.8.17",
       "stage": "act-5",
@@ -1052,7 +991,7 @@
     },
     {
       "id": "stars-hide-your-fires",
-      "text": "Stars, hide your fires; Let not light see my black and deep desires.",
+      "text": "Stars, hide your fires; / Let not light see my black and deep desires.",
       "speaker": "Macbeth",
       "reference": "1.4.52",
       "stage": "act-1",
@@ -1183,120 +1122,50 @@
   ],
   "criticalViews": [
     {
-      "position": "Macbeth’s conscience",
-      "summary": "The oldest and still the most common reading: the play’s interest is psychological, and its subject is a man who knows exactly what he is doing at every stage and does it anyway.",
-      "counter": "It can make the witches decorative, when the play gives them the first and last word on what Macbeth becomes."
+      "critic": "Samuel Johnson",
+      "work": "The Plays of William Shakespeare",
+      "year": "1765",
+      "summary": "In his note on the play Johnson praised the “solemnity, grandeur, and variety of its action” but found “no nice discriminations of character”: the events are so large that they decide what the characters do. He thought Lady Macbeth “merely detested”, and that Macbeth’s courage keeps some respect for him without making the reader sorry at his fall."
     },
     {
-      "position": "Macbeth as a Jacobean political play",
-      "summary": "Read alongside the Gunpowder Plot, Daemonologie and the Stuart claim of descent from Banquo, the play reads as an argument about legitimate rule addressed to a particular king, as much as a tragedy of character.",
-      "counter": "The flattery reading struggles with Act IV: a play written to please James spends a long scene teaching an audience to distrust the man who will be king."
+      "critic": "Thomas De Quincey",
+      "essay": "On the Knocking at the Gate in Macbeth",
+      "work": "The London Magazine",
+      "year": "1823",
+      "summary": "De Quincey asks why the knocking after Duncan’s murder is so disturbing. His answer is that while the murderers are alone the ordinary world is suspended. The knocking announces that it has come back, and the audience then feels how far outside it the murder took place."
     },
     {
-      "position": "Manhood in the play",
-      "summary": "Since the 1980s critics have looked at how consistently the word ‘man’ licenses violence: in Lady Macbeth’s taunt, in Macbeth’s answer to the murderers, and in Macduff’s refusal of the equation in 4.3.",
-      "counter": "Lady Macbeth’s collapse can then be read as the play retreating into a conventional punishment for a woman who overreached."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How far is Macbeth responsible for his own downfall?",
-      "focus": "Fate, choice and the limits of prophecy",
-      "plan": [
-        "Open with the fact that the witches’ greeting in 1.3 is a prediction, not an instruction: the future tense, not the imperative.",
-        "Use 1.3 and 1.7 to show Macbeth reasoning his way to a decision and then reversing it under pressure from his wife.",
-        "Turn the argument at Act III: Banquo’s murder is planned without his wife and without hesitation, to defeat a prophecy rather than fulfil one.",
-        "Test the counter-case with 4.1: nothing the apparitions say requires the attack on Fife, which Macbeth decides on his own.",
-        "Close on 5.5: the man who blamed nobody reduces his own life to a story told by an idiot."
-      ]
+      "critic": "A. C. Bradley",
+      "work": "Shakespearean Tragedy",
+      "year": "1904",
+      "summary": "Bradley stresses the darkness, storm and blood that fill the play. He reads Macbeth as a man of strong imagination whose conscience reaches him as terrifying images rather than as moral argument, and Lady Macbeth as someone whose will is stronger than her nature, so that it holds until the deed is done and then gives way."
     },
     {
-      "question": "Discuss the presentation of Lady Macbeth.",
-      "focus": "Gender, power and collapse",
-      "plan": [
-        "Begin with 1.5: she has to send for cruelty, which means she does not start with it.",
-        "Read her control of 1.7 as rhetoric more than temperament: the argument she wins is about the meaning of the word ‘man’.",
-        "Mark the hinge at 3.2, where Macbeth stops telling her things, and note that she manages the banquet without knowing what he has done.",
-        "Use 5.1 to show the same material returning as prose, fragments and a clean hand that will not come clean.",
-        "Weigh two readings: a psychological collapse, or a play that gives a woman power and then takes it back."
-      ]
+      "critic": "L. C. Knights",
+      "work": "How Many Children Had Lady Macbeth?",
+      "year": "1933",
+      "summary": "Knights attacked criticism, Bradley’s above all, that treats Shakespeare’s characters as people with lives beyond the play. He read *Macbeth* as a dramatic poem organised by its imagery and its themes, such as the confusion of values in “Fair is foul” and the disorder that follows the murder of a king. The essay was published as a pamphlet and reprinted in his *Explorations* (1946)."
     },
     {
-      "question": "How does Shakespeare use the supernatural in Macbeth?",
-      "focus": "Prophecy, equivocation and staging",
-      "plan": [
-        "Set out what the supernatural actually does: it predicts accurately, and its few commands (‘Be bloody, bold, and resolute’) only encourage what Macbeth already intends.",
-        "Compare Banquo’s response to the same prophecy as a control on Macbeth’s.",
-        "Examine the apparitions in 4.1 as equivocation in the strict 1606 sense, alongside the Porter in 2.3.",
-        "Consider the dagger and the ghost, which may be supernatural or may be symptoms, a question the play leaves open.",
-        "Conclude with staging: a production that makes the witches literal and one that makes them internal produce two different plays."
-      ]
+      "critic": "Cleanth Brooks",
+      "essay": "The Naked Babe and the Cloak of Manliness",
+      "work": "The Well Wrought Urn",
+      "year": "1947",
+      "summary": "Taking up Caroline Spurgeon’s observation that Macbeth’s titles hang on him like borrowed clothes, Brooks follows a second set of images: babies, from the “naked new-born babe” of Macbeth’s soliloquy to the crowned child the witches show him. He argues that the babe stands for the future, which Macbeth tries and fails to control."
     },
     {
-      "question": "‘A play about the health of a country, not the guilt of a man.’ Discuss.",
-      "focus": "Kingship, the state and Act IV Scene 3",
-      "plan": [
-        "Gather the imagery of Scotland as a body: bleeding, sick, in need of a physician.",
-        "Set Duncan’s public rewards against Macbeth’s rule by informer and Lennox’s careful irony in 3.6.",
-        "Use Malcolm’s list of the king-becoming graces in 4.3 as the play’s explicit standard.",
-        "Test the statement against 5.1 and 5.5, which are as private as the play gets.",
-        "Decide whether the ending restores order or simply installs a more careful politician."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "The witches never tell Macbeth to do anything. Does that make them innocent?",
-    "Why does Shakespeare kill Lady Macduff and her son on stage, when almost every other death happens offstage?",
-    "Macbeth hears of his wife’s death and talks about time. Is that grief, or the absence of it?",
-    "Malcolm pretends to be worse than Macbeth in order to test Macduff. What does the scene suggest about the skills a king needs?",
-    "The play is the shortest of the major tragedies. What would be lost if it were longer?"
-  ],
-  "related": [
-    {
-      "href": "/books/hamlet/",
-      "why": "The other tragedy built almost entirely out of soliloquy, and the opposite case: a man who cannot act."
+      "critic": "Janet Adelman",
+      "essay": "“Born of Woman”: Fantasies of Maternal Power in Macbeth",
+      "work": "Cannibals, Witches, and Divorce",
+      "year": "1987",
+      "summary": "Adelman argues that the play is shaped by a fear of women’s power over men, seen in the witches and in Lady Macbeth’s call to the spirits to “unsex me here”. She reads the ending, where Macbeth is killed by a man “from his mother’s womb / Untimely ripp’d” and the women have vanished from the play, as a fantasy of escape from that power. A revised version is in her book *Suffocating Mothers* (1992)."
     },
     {
-      "href": "/books/king-lear/",
-      "why": "Written within a year or two, and equally interested in a kingdom that comes apart at the top."
-    },
-    {
-      "href": "/books/richard-iii/",
-      "why": "An earlier study of a usurper who enjoys the audience’s company, where Macbeth cannot bear it."
-    },
-    {
-      "href": "/books/julius-caesar/",
-      "why": "Political murder argued out in advance, and the same discovery that killing a ruler does not settle anything."
-    },
-    {
-      "href": "/books/macbeth-expanded-scholarly-edition/",
-      "why": "The expanded Astor edition, with fuller textual, critical and performance material."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Why should you read \"Macbeth\"? - Brendan Pelsue",
-      "provider": "youtube-nocookie",
-      "id": "rD5goS69LT4",
-      "url": "https://www.youtube.com/watch?v=rD5goS69LT4",
-      "note": "A six-minute animated introduction to the plot, the history behind it and the questions about ambition and guilt the play raises.",
-      "source": "TED-Ed"
-    },
-    {
-      "title": "Macbeth Act 5 Scene 1 | Key Scene | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "oKk14heP2Tw",
-      "url": "https://www.youtube.com/watch?v=oKk14heP2Tw",
-      "note": "Niamh Cusack, who played Lady Macbeth in 2018, and an assistant director work through the sleepwalking scene, showing how choices in performance shape its meaning.",
-      "source": "RSC Shakespeare Learning Zone"
-    },
-    {
-      "title": "Editing Macbeth",
-      "provider": "youtube-nocookie",
-      "id": "trE8A_VI40w",
-      "url": "https://www.youtube.com/watch?v=trE8A_VI40w",
-      "note": "Barbara Mowat, editor of the Folger edition, describes the problems an editor faces with this play, which is useful for thinking about why editions differ.",
-      "source": "FolgerLibrary"
+      "critic": "Alan Sinfield",
+      "essay": "Macbeth: History, Ideology and Intellectuals",
+      "work": "Critical Quarterly",
+      "year": "1986",
+      "summary": "Sinfield notes that the play condemns Macbeth’s violence while praising the violence done on behalf of Duncan and Malcolm, Macbeth’s own in the first act included. He connects this with the claim of James I’s state to be the only lawful user of violence, and asks whether the play supports that claim or shows how it works."
     }
   ]
 }

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
 
 import {
-  GAME_BUILDERS, buildRound, dailyRound, resultGrid,
+  GAME_BUILDERS, buildRound,
   whoSaidIt, fillTheLine, orderThePlot, themeMatch, techniqueSpotter,
   characterIdentification, whichBook, contextSprint, openingLines,
   clozeWords, maskName, sameName
@@ -147,40 +147,6 @@ test('buildRound respects the requested length and is repeatable with a seed', (
 
 test('buildRound refuses a game it does not have', () => {
   assert.throws(() => buildRound('not-a-game', books[0], {}), /Unknown game/);
-});
-
-test('the daily round is the same round all day and a different one tomorrow', () => {
-  const index = { books };
-  const monday = dailyRound(index, '2026-09-19');
-  const mondayAgain = dailyRound(index, '2026-09-19');
-  const tuesday = dailyRound(index, '2026-09-20');
-  assert.deepEqual(monday.map(question => question.id), mondayAgain.map(question => question.id));
-  assert.notDeepEqual(monday.map(question => question.id), tuesday.map(question => question.id));
-});
-
-test('the daily round is five questions and never repeats one', () => {
-  const index = { books };
-  for (const day of ['2026-01-01', '2026-06-15', '2026-09-19', '2026-12-25']) {
-    const round = dailyRound(index, day);
-    assert.equal(round.length, 5, day);
-    assert.equal(new Set(round.map(question => question.id)).size, 5, day + ' repeats a question');
-  }
-});
-
-test('a year of daily rounds stays well formed', () => {
-  const index = { books };
-  for (let day = 1; day <= 28; day += 1) {
-    const date = '2026-02-' + String(day).padStart(2, '0');
-    for (const question of dailyRound(index, date)) {
-      assert.ok(question.stem, date);
-      if (question.kind === 'choice') assertWellFormedChoice(question, date + ' ' + question.id);
-    }
-  }
-});
-
-test('the shareable grid gives nothing away but the score', () => {
-  assert.equal(resultGrid([true, false, true, true, false]), '▣▢▣▣▢');
-  assert.equal(resultGrid([]), '');
 });
 
 test('clozeWords prefers the words a reader has to know', () => {

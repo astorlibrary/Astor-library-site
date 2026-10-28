@@ -73,8 +73,8 @@ const editionUpdateBooks = [
       'Literature is part of this social history. The book reproduces three Dickens pieces and discusses A Christmas Carol, The Chimes, Trollope’s Christmas at Thompson Hall and Gabriel Grub in The Pickwick Papers, as well as the Victorian Christmas number and ghost-story tradition.'
     ],
     editorial: [
-      'The edition brings material culture, legislation, labour and literature into one chronology. Familiar objects are treated as historical developments whose meanings changed as they moved through royal example, commercial manufacture and domestic use.',
-      'Readers can follow a single custom or read across the whole period to see Christmas become more domestic, more commercial and more public.'
+      'The book puts objects, laws, work and writing into one chronology. Familiar things have histories of their own, and their meanings changed as the royal household, the factories and ordinary homes took them up.',
+      'A single custom can be followed through the century, or the whole period read through, as Christmas became more domestic, more commercial and more public.'
     ],
     topics: [
       { title: 'Tradition and invention', body: 'The book distinguishes older seasonal customs from nineteenth-century practices that quickly acquired the authority of tradition.' },
@@ -109,8 +109,8 @@ const editionUpdateBooks = [
       'The supporting material follows the Gothic inheritance of Thornfield, Victorian class and the governess, marriage and property law, madness and confinement, Jamaica and empire, religion, gender and the novel’s direct address to its reader.'
     ],
     editorial: [
-      'Brontë’s chapter divisions, paragraphing, spelling and characteristic punctuation are retained. Historical support appears outside the reading text and in boxes after each chapter, allowing the novel’s voice to proceed without intrusive editorial footnotes.',
-      'The edition also covers the Bell pseudonyms, the novel’s sources, major critical interpretations, reception history and the continuing literary afterlife of Jane, Rochester, Bertha Mason, St John Rivers and Helen Burns.'
+      'Brontë’s chapter divisions, paragraphing, spelling and punctuation are kept. The historical notes come in boxes after each chapter, so Jane’s narration runs on without footnotes.',
+      'The edition also covers the Bell pseudonyms, the novel’s sources, the main critical readings, its reception, and the later lives of Jane, Rochester, Bertha Mason, St John Rivers and Helen Burns in other books.'
     ],
     topics: [
       { title: 'Independence and equality', body: 'Jane refuses relationships that require her to become dependent, concealed or spiritually subordinate.' },
@@ -145,8 +145,8 @@ const editionUpdateBooks = [
       'The concluding stage-history essay follows Dickens’s permission for Pepper to use a scene from the book in the optical illusion later called Pepper’s Ghost. Pepper recorded that the scene ran for fifteen months.'
     ],
     editorial: [
-      'The edition preserves Dickens’s spelling, capitalisation and paragraphing while regularising quotation marks and dashes and correcting evident typographical slips. Notes are kept outside the story, with vocabulary gathered in a glossary.',
-      'Chapter-end material explains Victorian chemistry, poverty, ragged schools, Christmas customs, structure, character, important passages, critical interpretations and the book’s reception.'
+      'Dickens’s spelling, capitals and paragraphing are kept; quotation marks and dashes are made consistent and obvious misprints corrected. The notes come outside the story, and unfamiliar words are gathered in a glossary.',
+      'The material after each chapter explains Victorian chemistry, poverty, ragged schools and Christmas customs, and the story’s structure, characters, criticism and reception.'
     ],
     topics: [
       { title: 'Memory and sympathy', body: 'The bargain is an experiment: what happens to a man’s feelings when his painful memories are taken away?' },
@@ -182,7 +182,7 @@ const editionUpdateBooks = [
     ],
     editorial: [
       'The reading text follows the first American setting of 1925 as preserved in a later Harcourt impression, with the erroneous Richard corrected to Peter near the close. Woolf’s twelve original section breaks are restored.',
-      'Sixteen numbered Parts provide practical stopping points without pretending that every division is Woolf’s. The contents distinguish original breaks from the four additional divisions announced by the striking of a clock.'
+      'The text is divided into sixteen numbered parts as places to stop. The contents page shows which breaks are Woolf’s and which four were added, each at a point where a clock strikes.'
     ],
     topics: [
       { title: 'Time and consciousness', body: 'Public clocks measure the day while memory opens private histories within a single moment.' },
@@ -217,7 +217,7 @@ const editionUpdateBooks = [
       'Coleridge’s later marginal gloss tries to explain the crime and the supernatural powers pursuing the ship. Its confident statements do not always agree with the verse, creating a second interpretive voice on the same page.'
     ],
     editorial: [
-      'Commentary at the foot of the relevant page defines unfamiliar language, explains nautical and historical references, traces patterns and records important changes among lifetime printings.',
+      'Notes at the foot of the page explain unfamiliar words and nautical and historical references, and record the main changes between the printings made in Coleridge’s lifetime.',
       'The introduction covers Coleridge’s work with William and Dorothy Wordsworth, voyage narratives and ballad sources, the 1798 publication, the gloss, the unusual verse form and the long history of revision.'
     ],
     topics: [
@@ -289,8 +289,8 @@ const editionUpdateBooks = [
       'The edition places the survival narrative inside maritime travel, Atlantic commerce, slavery, colonial expansion and the development of the English novel.'
     ],
     editorial: [
-      'Spelling and punctuation are modernised where clarity requires it, while Defoe’s long sentences and dated journal entries are preserved. Defoe did not divide the book into chapters; the familiar twenty were added by later editors.',
-      'Footnotes clarify nautical and archaic language; Story So Far and Context sections support each chapter. Longer material covers Defoe, Alexander Selkirk, Providence, property, Friday, realism, criticism and adaptation.'
+      'Spelling and punctuation are modernised where the sense needs it, but Defoe’s long sentences and dated journal entries are kept. Defoe did not divide the book into chapters; the familiar twenty were added by later editors.',
+      'Footnotes explain nautical and archaic words, and each chapter is followed by a recap and a note on its context. Longer sections cover Defoe, Alexander Selkirk, Providence, property, Friday, realism, criticism and adaptation.'
     ],
     topics: [
       { title: 'Labour and property', body: 'Crusoe converts survival into possession and repeatedly treats work as a claim to rule the space around him.' },
@@ -324,8 +324,8 @@ const editionUpdateBooks = [
       'Philip Sparrow, Speak, Parrot, Colin Clout, Why Come Ye Not to Court? and the Garland lyrics are presented as clearly identified extracts. The headnotes state every cut and keep selection from masquerading as completeness.'
     ],
     editorial: [
-      'Dyce’s textual apparatus is removed and line numbers are added for reference. Original spelling remains part of the encounter with Skelton’s voice, while a glossary and footnotes keep that choice usable.',
-      'Critical material covers Skelton’s life, Henry VIII, Cardinal Wolsey, the Tudor court, religious and political satire, the Skeltonic line, language, style, key passages and reception.'
+      'Dyce’s textual apparatus is removed and line numbers are added. The original spelling is kept, because so much of Skelton’s voice is in it, and a glossary and footnotes explain it.',
+      'The critical material covers Skelton’s life, Henry VIII, Cardinal Wolsey, the Tudor court, religious and political satire, the short rhyming Skeltonic line, and the poems’ reception.'
     ],
     topics: [
       { title: 'The Skeltonic line', body: 'Short lines and accumulating rhyme create speed, insistence, interruption and comic or satirical pressure.' },
@@ -360,8 +360,8 @@ const editionUpdateBooks = [
       'Butler’s prose prioritises clarity and narrative movement. The notes explain unfamiliar language, the social and religious world of the poem and the terminology of Homeric warfare without requiring readers to know ancient Greek.'
     ],
     editorial: [
-      'Every book is accompanied by a summary and context box. Longer essays introduce Homer, Butler, oral tradition, the Homeric question, the possible history behind Troy and the transmission of the poem.',
-      'Character studies and critical material follow honour, glory, mortality, fate, divine intervention, speeches, epic similes, battle narrative and the long reception of Achilles, Hector, Priam and the war.'
+      'Each book of the poem has a summary and a note on its context. Longer essays introduce Homer, Samuel Butler’s translation, oral poetry, the Homeric question, the history that may lie behind Troy, and how the poem came down to us.',
+      'Character studies and critical essays follow honour, glory, death, fate, the gods, the speeches, the similes and the fighting, and what later readers have made of Achilles, Hector, Priam and the war.'
     ],
     topics: [
       { title: 'Anger and honour', body: 'Achilles’ withdrawal makes the demands of heroic status visible through the suffering that follows.' },
@@ -396,7 +396,7 @@ const editionUpdateBooks = [
     ],
     editorial: [
       'The introduction covers Shakespeare’s life, the 1609 quarto, Thomas Thorpe’s dedication to Mr W. H., the probable dating of the poems, the development of the English sonnet and Shakespeare’s formal choices.',
-      'Line numbers, commentary and an index of first lines support both first reading and detailed reference while leaving the complete poem visible as a single designed unit.'
+      'Each sonnet is printed whole on the page, with line numbers and a note beside it, and there is an index of first lines.'
     ],
     topics: [
       { title: 'Sequence and change', body: 'The meaning of a single sonnet shifts when it is read beside the arguments, absences and betrayals surrounding it.' },
@@ -431,8 +431,8 @@ const editionUpdateBooks = [
       'Every difficult word, image and allusion is explained on the same page as the relevant line, allowing the poetry and commentary to remain in continuous relation.'
     ],
     editorial: [
-      'The text is based on the quartos of 1593 and 1594. Modernised spelling and punctuation improve access without altering Shakespeare’s wording, stanza forms or rhyme.',
-      'Introductions and essays cover classical sources, language and style, figures, themes, close reading, critical approaches, reception and classroom use. A substantial glossary provides a second route into recurring language.'
+      'The text is based on the quartos of 1593 and 1594. Spelling and punctuation are modernised; Shakespeare’s wording, stanzas and rhymes are not changed.',
+      'Introductions and essays cover the classical sources, the language and style of the poems, their critics and their reception. A long glossary explains words that recur.'
     ],
     topics: [
       { title: 'Desire and refusal', body: 'The poems place persuasion beside resistance and expose the danger of treating another person as an object to be possessed.' },
@@ -463,7 +463,7 @@ const editionUpdateBooks = [
       'The romantic and military halves are sharply different, yet both ask what mastery means. Private appetite and public command place different pressures on the king’s ability to govern himself.'
     ],
     editorial: [
-      'The complete first-quarto text is presented in modernised spelling and punctuation. Every scene begins with a concise summary, and commentary appears at the foot of the relevant page.',
+      'The complete text of the first quarto, in modernised spelling and punctuation. Each scene opens with a short summary, and the notes are at the foot of the page.',
       'Introductions cover the authorship question, possible collaboration, chronicle and novella sources, early Shakespearean verse, textual history and modern revival.'
     ],
     topics: [
@@ -528,7 +528,7 @@ const editionUpdateBooks = [
     ],
     editorial: [
       'The complete play appears in modern spelling with line numbers, summaries and same-page commentary.',
-      'The introduction separates the later Shakespeare claim from current evidence and examines W. S., Charles Tilney, proposals for Greene and Peele, source history, textual layering and limited performance.'
+      'The introduction sets the old claim that Shakespeare wrote the play against the evidence now available, and discusses the initials W. S., Charles Tilney, the cases made for Greene and Peele, the sources, the signs of revision and the play’s few performances.'
     ],
     topics: [
       { title: 'Legendary Britain', body: 'Dynastic division, invasion and civil war make the story of Britain’s founding a story of broken settlements.' },
@@ -559,7 +559,7 @@ const editionUpdateBooks = [
       'Later scenes present wit, scholarship, hospitality and conscience before More refuses articles required by the king. Arrest and execution turn the play from civic comedy towards tragedy.'
     ],
     editorial: [
-      'The modernised text includes the additions, damaged passages and unfinished material, so the manuscript’s working state can be seen.',
+      'The modernised text includes the additions, the damaged passages and the unfinished material, so the manuscript can be seen as the working document it was.',
       'Introductions cover the six hands, Hand D, Edmund Tilney’s censorship, the historical More, sources, verse and prose, textual problems and modern performance.'
     ],
     topics: [
@@ -592,7 +592,7 @@ const editionUpdateBooks = [
     ],
     editorial: [
       'The complete play is modernised and supplied with scene summaries, lineation and same-page commentary.',
-      'The introduction distinguishes dramatic invention from Cromwell’s history and covers the quartos, disputed attribution, religion, commerce, sources and performance.'
+      'The introduction separates what the play invents from what happened to Cromwell, and covers the quartos, the disputed authorship, religion, trade, the sources and performance.'
     ],
     topics: [
       { title: 'Fortune and advancement', body: 'Cromwell travels through Europe and rises at court, and his merit carries him only so far.' },
@@ -687,7 +687,7 @@ const editionUpdateBooks = [
       'The play’s speed comes from its compressed form and proximity to the real case. No one has a personal name, so a notorious crime is reduced to its parts: Husband, Wife, children, debt and inheritance.'
     ],
     editorial: [
-      'The edition follows the 1608 quarto, preserving original spelling, correcting evident errors and explaining uncertainty. Verse and prose remain distinct, with notes on the relevant page.',
+      'The edition follows the 1608 quarto in its original spelling, correcting obvious errors and saying where the reading is uncertain. Verse and prose are kept distinct, with notes on the page.',
       'The introduction covers the Calverley case, title-page attribution, Middleton’s claim, Globe performance, debt, landed inheritance, domestic tragedy and the missing companion plays.'
     ],
     topics: [
@@ -720,7 +720,7 @@ const editionUpdateBooks = [
       'By Hamlet’s return from England, Ophelia is dead, Laertes seeks vengeance and Claudius has prepared a poisoned fencing match. A son’s grief for his father becomes a question of evidence, spying, acting and who should be king.'
     ],
     editorial: [
-      'Significant textual disputes are pointed out. Line numbers restart in every scene; summaries and footnotes keep difficult language, action and interpretive choice on the page where they arise.',
+      'The main textual disputes are pointed out where they occur. Line numbers restart in each scene, and summaries and footnotes deal with difficult language and staging on the page where they come up.',
       'Extended essays cover Shakespeare, sources, Denmark, Elizabethan politics, ghosts and Purgatory, the Reformation, delay, Hamlet’s age, Claudius, Gertrude, Ophelia, language, criticism, theatre and cinema.'
     ],
     topics: [
@@ -753,7 +753,7 @@ const editionUpdateBooks = [
       'The Quarto and Folio are substantially different works as well as witnesses to a shared play. This edition follows the received conflated tradition while identifying important version-specific material.'
     ],
     editorial: [
-      'Scene-based line numbering, summaries and same-page notes support the complete modern-spelling text. Passages found only in the Quarto or only in the Folio are marked.',
+      'The complete text in modern spelling, with line numbers by scene, summaries and notes on the page. Passages found only in the Quarto or only in the Folio are marked.',
       'Forty key passages sit within essays on a divided Britain, revision, Lear, Edmund, Edgar, the Fool, the three daughters, madness, blindness, social justice, dramatic form, criticism and performance.'
     ],
     topics: [
@@ -786,7 +786,7 @@ const editionUpdateBooks = [
       'Back in Athens, the mechanicals perform Pyramus and Thisbe. Their play within the play gives the court a chance to show how badly it can behave as an audience, and puts amateur theatre at the centre of the comedy.'
     ],
     editorial: [
-      'The complete text uses modern spelling with scene summaries, restarting line numbers and footnotes. Quarto and Folio differences are recorded without allowing textual history to obstruct the action.',
+      'The complete text in modern spelling, with scene summaries, line numbers by scene and footnotes. Differences between the Quarto and the Folio are recorded in the notes, not in the text.',
       'Essays cover Athens, the English wood, seasonal custom, fairies, folklore, marriage law, paternal authority, lovers, rulers, mechanicals, the changeling, verse, music, criticism, theatre, film and ballet.'
     ],
     topics: [
@@ -819,7 +819,7 @@ const editionUpdateBooks = [
       'The play contracts from republic to island to bedroom, asking how trust is dismantled through suggestion, prejudice and the desire for certainty.'
     ],
     editorial: [
-      'Each scene begins with a summary and restarts line numbering. Same-page notes supply plain meaning before recording textual or interpretive consequence.',
+      'Each scene begins with a summary, and line numbers restart in each scene. The notes on the page give the plain meaning first, then any textual or critical question.',
       'The extended introduction covers source, Quarto and Folio, Venice, Cyprus, Ottoman conflict, race and blackness, Iago’s motives, Desdemona, Emilia, Bianca, imagery, double time, key passages, criticism and stage and screen history.'
     ],
     topics: [
@@ -852,7 +852,7 @@ const editionUpdateBooks = [
       'Birnam Wood and Macduff fulfil the prophecies through meanings Macbeth refused to hear. The tragedy makes equivocation effective because a listener chooses the interpretation that protects desire.'
     ],
     editorial: [
-      'The Folio text appears in modern spelling with scene summaries, restarting line numbers and commentary. Textual problems and possible Middleton material are made visible.',
+      'The Folio text in modern spelling, with scene summaries, line numbers by scene and commentary. Textual problems and the passages that may be Middleton’s are marked.',
       'Forty key passages join essays on Holinshed, James I, the historical Macbeth, witchcraft, prophecy, moral responsibility, marriage, masculinity, children, succession, language, chronology, criticism, theatre and film.'
     ],
     topics: [

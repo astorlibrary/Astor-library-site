@@ -68,8 +68,8 @@ const books = [
       'A chronology and documentary material on spiritualism and psychical research place the stories beside changing efforts to investigate, report and explain supernatural experience.'
     ],
     editorial: [
-      'Explanatory notes identify unfamiliar references and supply historical context without interrupting the complete literary texts.',
-      'The fiction, poetry and documents are kept apart, and readers can set literary ghosts beside what people were writing about séances and psychical research at the time.'
+      'The stories and poems are printed complete. Notes explain unfamiliar references and give the historical background without breaking into the texts.',
+      'The fiction, the poetry and the documents are kept apart, so the literary ghosts can be read beside what people were writing about séances and psychical research at the same time.'
     ],
     topics: [
       { title: 'Haunted places', body: 'Houses, roads and railway lines, the most familiar Victorian places, are where the danger comes from.' },
@@ -104,7 +104,7 @@ const books = [
       'Publication history and textual notes record significant differences among surviving versions and separate documented evidence from claims that have acquired authority through repetition.'
     ],
     editorial: [
-      'Footnotes clarify period language and references, while longer sections provide biographical, legal, medical and domestic context for the two stories.',
+      'Footnotes explain period language and references. Longer sections give the biographical, legal, medical and domestic background to the two stories.',
       'Where the texts differ, or a story told about the stories cannot be proved, the notes say so.'
     ],
     topics: [
@@ -140,8 +140,8 @@ const books = [
       'The edition follows the first edition in substantive wording while modernising spelling, punctuation and capitalisation. Fourteen editorial parts provide reference points in the otherwise continuous narrative.'
     ],
     editorial: [
-      'Notes and summaries accompany a modernised text, with a chronology, a glossary and sources for the history.',
-      'Essays examine Behn’s disputed Surinam visit, real colonists named in the book, Willoughbyland, seventeenth-century slave trading, Coramantien and the work’s later theatrical and literary history.'
+      'The text is modernised, with notes and summaries, a chronology, a glossary and sources for the history.',
+      'The essays cover Behn’s disputed visit to Surinam, the real colonists named in the book, Willoughbyland, the seventeenth-century slave trade, Coramantien, and the later life of the story on the stage and in print.'
     ],
     topics: [
       { title: 'Promise and betrayal', body: 'Commercial and colonial authority repeatedly makes promises of freedom that it has the power to break.' },
@@ -176,8 +176,8 @@ const books = [
       'This edition follows the Cuala text without modernising spelling or punctuation. Yeats’s Preface and two Notes are preserved, while a table records significant readings that he later changed.'
     ],
     editorial: [
-      'Line numbers, summaries and explanatory notes accompany the poems while keeping the Cuala Press wording intact, including early readings in The Second Coming.',
-      'Historical material covers the Easter Rising, Irish politics, Yeats’s marriage and automatic writing, Michael Robartes, A Vision, Ballylee and the making of the collection.'
+      'The poems keep the wording of the Cuala Press edition, including the early readings in “The Second Coming”, with line numbers, summaries and explanatory notes.',
+      'The historical material covers the Easter Rising and Irish politics, Yeats’s marriage and the automatic writing, the figure of Michael Robartes, A Vision, Ballylee and the making of the collection.'
     ],
     topics: [
       { title: 'Poems in their first book', body: 'The edition restores readings later altered by Yeats and records their subsequent history openly.' },
@@ -213,7 +213,7 @@ const books = [
     ],
     editorial: [
       'Spelling, punctuation and capitals follow the 1798 or 1800 text; the poets’ later revisions are not used.',
-      'The introduction and apparatus state clearly that this is a thirty-six-poem selection, with documented sources and historical context for the two early editions.'
+      'This is a selection of thirty-six poems, and the introduction says so. It gives the sources and the history of the two early editions.'
     ],
     topics: [
       { title: 'First forms', body: 'Reading the poems as they appeared in 1798 or 1800 reveals decisions obscured by later familiar revisions.' },
@@ -248,8 +248,8 @@ const books = [
       'First published in 1911, the novel grew from Wharton’s earlier French exercise Hiver and her knowledge of the Berkshires. Its sledding climax has a documented connection with a 1904 Lenox accident, though Wharton did not identify that accident as her source.'
     ],
     editorial: [
-      'The 1911 Scribner text is followed with spelling, punctuation and phonetic Starkfield speech preserved; only evident typographical errors are silently corrected.',
-      'Notes and essays explain rural work and debt, Berkshire geography, winter transport, patent medicines, healthcare, marriage, divorce, obligation, adaptations and reception.'
+      'The text is Scribner’s of 1911. Its spelling and punctuation, and the phonetic spelling of Starkfield speech, are kept; only obvious misprints are corrected.',
+      'The notes and essays explain rural work and debt, the geography of the Berkshires, winter travel, patent medicines, medical care, marriage and divorce, and the novel’s adaptations and reception.'
     ],
     topics: [
       { title: 'Confinement', body: 'Farm debt, work, marriage and dependence give material force to the novel’s emotional confinement.' },
@@ -284,8 +284,8 @@ const books = [
       'The Haunted Man and the Ghost’s Bargain gives Redlaw the power to forget sorrow, only for the loss of painful memory to destroy sympathy for other people.'
     ],
     editorial: [
-      'An original introduction and individual headnotes establish the publication setting of each book before the complete literary text begins.',
-      'Chapter summaries, notes and historical context allow readers to compare how four different supernatural and domestic plots return to poverty, family, memory and social responsibility.'
+      'An introduction, and a headnote before each book, say when and how it first appeared. Each book is then printed complete.',
+      'Chapter summaries, notes and historical context make it easy to compare how four supernatural and domestic plots keep returning to poverty, family, memory and what people owe one another.'
     ],
     topics: [
       { title: 'Four Christmas forms', body: 'The volume makes it possible to compare structures and supernatural devices across Dickens’s short seasonal books.' },
@@ -320,8 +320,8 @@ const books = [
       'A final section looks at the disputed authorship of Eikon Basilike.'
     ],
     editorial: [
-      'Each document is identified as personal writing, a formal text drafted for the king, reported speech or doubtful attribution, with provenance stated openly.',
-      'Notes explain people, places, law, Parliament, religion and seventeenth-century terminology while retaining the wording of the historical sources.'
+      'Each document is labelled as the king’s own writing, a formal text drafted for him, a report of what he said, or a doubtful attribution, and its source is given.',
+      'Notes explain people, places, law, Parliament, religion and seventeenth-century terms. The wording of the sources is kept.'
     ],
     topics: [
       { title: 'Royal voice and drafting', body: 'The edition distinguishes what Charles wrote personally from official texts composed in his name.' },
@@ -356,8 +356,8 @@ const books = [
       'Original essays examine Montgomery’s life, the writing and publication of the novel, Prince Edward Island, farming, schooling, religion, women’s opportunities, orphan children and domestic labour.'
     ],
     editorial: [
-      'The first-edition language is not silently converted to later or British usage. Notes identify references while retaining Montgomery’s spelling, speech and punctuation.',
-      'Chapter support keeps recap separate from historical explanation, allowing the narrative to continue while giving readers practical routes into its 1890s setting.'
+      'Montgomery’s spelling, punctuation and dialogue follow the first edition and are not converted to later or British usage. Notes identify her references.',
+      'Each chapter is followed by a short recap and, separately, notes on its setting in the 1890s.'
     ],
     topics: [
       { title: 'Arrival by mistake', body: 'Anne’s place at Green Gables begins in error and develops through changing family expectations.' },
@@ -392,8 +392,8 @@ const books = [
       'Original essays follow the unusual publication history, Oxford setting, John Tenniel’s illustrations and Alice’s Adventures Under Ground, the earlier manuscript from which the published novel developed.'
     ],
     editorial: [
-      'Chapter recaps and footnotes support the sequence of Wonderland without replacing Carroll’s language or the final revised text.',
-      'Manuscript comparisons and publication history allow readers to see the book as a work that changed between Under Ground and its familiar printed form.'
+      'The text is Carroll’s final revised version. Chapter recaps and footnotes help with the order of events in Wonderland without rewording it.',
+      'The edition compares the published book with the manuscript, Alice’s Adventures Under Ground, and gives the publication history, so the changes between the two can be followed.'
     ],
     topics: [
       { title: 'Language and recognition', body: 'Notes recover poems, phrases and customs that Carroll’s first readers could identify more readily.' },
@@ -428,8 +428,8 @@ const books = [
       'Original chapters examine the Plot, legislation and repeal, pope-burning, the Guy, fuel gathering, firework manufacture, the Papal Aggression, disturbances, parkin, bonfire toffee, policing and regional carnival.'
     ],
     editorial: [
-      'Notes and source statements distinguish reprinted Victorian writing from the original editorial chapters that connect it to law, manufacture, food and public order.',
-      'The chronology and glossary make it possible to follow continuity and change without presenting the nineteenth-century festival as one uniform national custom.'
+      'Notes and source statements make clear which pieces are reprinted Victorian writing and which are new chapters on the law, manufacture, food and public order.',
+      'The chronology and glossary show what stayed the same and what changed. The nineteenth-century festival was not kept the same way everywhere, and the book does not pretend it was.'
     ],
     topics: [
       { title: 'Observance and entertainment', body: 'Religious commemoration changes as children’s customs, fireworks and organised public celebration become more prominent.' },
@@ -464,8 +464,8 @@ const books = [
       'Woolf invents Judith Shakespeare and turns to Aphra Behn, Austen, the Brontës, George Eliot and contemporary women novelists before ending with the androgynous mind and an appeal to her student audience to write.'
     ],
     editorial: [
-      'Woolf’s spelling, punctuation and italics are preserved, and her original notes are visibly distinguished from the new editorial apparatus. Chapter-end summaries and contextual notes support each of the essay’s six parts.',
-      'Notes and essays identify people, books, laws, institutions, money and period practices while separating historical references from figures and places Woolf invents or combines. Supporting material follows the Newnham and Girton lectures, composition and publication through the Hogarth Press, women’s access to university, marriage, property, employment and voting rights, and the significance of Woolf’s five hundred a year.'
+      'Woolf’s spelling, punctuation and italics are kept, and her own notes are marked off from the new ones. Each of the essay’s six chapters is followed by a summary and contextual notes.',
+      'Notes and essays identify the people, books, laws, institutions and sums of money Woolf mentions, and say where she invents or combines figures and places. The supporting material follows her lectures at Newnham and Girton, the writing of the book and its publication by the Hogarth Press, women’s access to universities, marriage, property, work and the vote, and what five hundred a year meant.'
     ],
     topics: [
       { title: 'Material freedom', body: 'Money, rooms, education and legal rights determine who has time, privacy and authority to write.' },
@@ -646,8 +646,8 @@ const remainingBooks = [
       'Notes and essays explain Victorian society, law, language and institutions, including the property rules and asylum practices behind the novel’s central conflicts.'
     ],
     editorial: [
-      'The revised 1861 text remains central, with concise footnotes supplying information a nineteenth-century reader might have recognised without explanation.',
-      'Original essays connect the serial publication and multiple-narrator design to the legal, social and institutional pressures on which the conspiracy depends.'
+      'The text is Collins’s revised version of 1861. Short footnotes supply what a nineteenth-century reader would have known without being told.',
+      'The essays connect the serial publication and the many narrators to the legal, social and institutional pressures the conspiracy depends on.'
     ],
     topics: [
       { title: 'Evidence and narration', body: 'Each witness controls part of the record, and the investigation consists of putting their accounts together.' },
@@ -682,8 +682,8 @@ const remainingBooks = [
       'Chapter recaps support the sequence of events, while original essays introduce Grahame, the book’s publication history and the Edwardian background to its landscapes and machines.'
     ],
     editorial: [
-      'Explanatory material sits around a text whose original spelling and punctuation remain intact. Notes are directed towards details that have become less familiar since 1908.',
-      'Chapter summaries and contextual essays connect the friends’ adventures to the practical histories of river travel, roads, motor cars, railways, money and law.'
+      'Grahame’s spelling and punctuation are left as they were in 1908. The notes concentrate on details that have become less familiar since then.',
+      'Chapter summaries and essays connect the animals’ adventures to the history of river travel, roads, motor cars, railways, money and the law.'
     ],
     topics: [
       { title: 'Home and wandering', body: 'The riverbank and Toad Hall provide centres of belonging against repeated departures and returns.' },
@@ -718,8 +718,8 @@ const remainingBooks = [
       'Original essays examine the novel’s serial publication, sources, reception and place in the development of detective fiction, together with the real history behind its famous diamond.'
     ],
     editorial: [
-      'Footnotes and a glossary clarify terms and references without flattening the differences among the novel’s narrating voices.',
-      'Historical sections connect the domestic investigation to British India, policing, serial reading and the emerging conventions of detective fiction.'
+      'Footnotes and a glossary explain terms and references. The narrators’ different voices are left as Collins wrote them.',
+      'The historical sections connect the investigation at the Verinders’ house to British India, policing, reading in weekly parts and the early conventions of detective fiction.'
     ],
     topics: [
       { title: 'Testimony and character', body: 'The solution develops through accounts whose voices reveal the witnesses as well as the evidence.' },
@@ -754,8 +754,8 @@ const remainingBooks = [
       'Written in twenty-one days in 1912 and first published in 1915, Die Verwandlung is the longest work of fiction Kafka completed and published during his lifetime.'
     ],
     editorial: [
-      'Ian Johnston’s translation, prepared for students at Malaspina University-College and released into the public domain in January 1999, is retained apart from sixteen evident typographical errors checked against Kafka’s German. Notes explain Gregor’s position in the commercial world, the authority of the Prokurist, Austro-Hungarian money, domestic servants, compulsory sickness insurance, trains and trams, and the German vocabulary behind Johnston’s English.',
-      'Supporting essays examine German-speaking Prague, work and bureaucracy, the Samsa household, illness and disability, publication, Kafka’s instruction that Gregor’s transformed body must not appear on the original cover, and the translation history of ungeheueres Ungeziefer.'
+      'The text is Ian Johnston’s translation, made for students at Malaspina University-College and released into the public domain in January 1999, with sixteen obvious misprints corrected against Kafka’s German. The notes explain Gregor’s place in the commercial world, the authority of the Prokurist (the chief clerk), Austro-Hungarian money, servants, compulsory sickness insurance, trains and trams, and the German words behind Johnston’s English.',
+      'The essays cover German-speaking Prague, work and bureaucracy, the Samsa household, illness and disability, the story’s publication, Kafka’s instruction that the insect itself must not be drawn on the first cover, and the history of translating ungeheueres Ungeziefer.'
     ],
     topics: [
       { title: 'Work', body: 'Gregor responds to transformation through timetables, debt and the disciplinary reach of his employer.' },
@@ -790,8 +790,8 @@ const remainingBooks = [
       'Original essays examine Fitzgerald’s life and the novel’s reception alongside New York, the Gold Coast, the valley of ashes, Prohibition, organised crime, money, motoring, advertising, immigration, race and women’s lives in 1922.'
     ],
     editorial: [
-      'The first-edition wording, spelling and punctuation are preserved. Notes explain historically specific details without replacing Fitzgerald’s text with modern equivalents.',
-      'Chapter support separates narrative recap from contextual history, while introductory material traces composition, first reception, later revival and continuing reputation.'
+      'Fitzgerald’s wording, spelling and punctuation follow the first edition. The notes explain period details; they do not replace them with modern equivalents.',
+      'Each chapter is followed by a recap and, separately, notes on its history. The introduction covers the writing of the novel, its first reception and its revival.'
     ],
     topics: [
       { title: 'Place and division', body: 'The Gold Coast, New York and the valley of ashes organise social distance as well as geography.' },
@@ -826,8 +826,8 @@ const remainingBooks = [
       'The selection moves between New Zealand childhood, European domestic life, marriage, class, bereavement and illness, with context on Mansfield’s final years and John Middleton Murry’s assembly of the posthumous book.'
     ],
     editorial: [
-      'The editorial material states which works Mansfield completed and which survive only as fragments. It does not present the ten-item selection as a complete reprint of the 1923 contents.',
-      'Notes, chronology and publication history connect the stories to Wellington and Karori, domestic service, money, the First World War, her brother Leslie Beauchamp and contemporary treatment of tuberculosis.'
+      'The editorial material says which pieces Mansfield finished and which survive only as fragments. This is a selection of ten, not a reprint of the whole 1923 book.',
+      'Notes, a chronology and the publication history connect the stories to Wellington and Karori, domestic service, money, the First World War, her brother Leslie Beauchamp and the treatment of tuberculosis in her lifetime.'
     ],
     topics: [
       { title: 'Completion and fragment', body: 'The volume preserves the formal difference between stories Mansfield finished and writing left incomplete at her death.' },
@@ -862,8 +862,8 @@ const remainingBooks = [
       'First published on 16 December 1844, The Chimes was Dickens’s second Christmas book. Its four divisions (First Quarter through Fourth Quarter) are Dickens’s own.'
     ],
     editorial: [
-      'The complete story retains Dickens’s spelling, punctuation, capitalisation and dialect. Footnotes and chapter-end material explain the Poor Law, political economy, poverty, needlework, suicide law and reform debate.',
-      'Longer supporting material follows the Genoa composition, four-part structure, characters, language, key passages, reception, theatrical adaptations and political arguments of the 1840s.'
+      'The story keeps Dickens’s spelling, punctuation, capitals and dialect. Footnotes and the material after each quarter explain the Poor Law, political economy, poverty, needlework, the law on suicide and the arguments for reform.',
+      'Longer sections follow the writing of the story in Genoa, its four-part structure, its characters and language, its reception and stage adaptations, and the political arguments of the 1840s.'
     ],
     topics: [
       { title: 'Who defines poverty?', body: 'Statistics, law and paternal benevolence all claim authority over lives they do not adequately understand.' },
@@ -898,8 +898,8 @@ const remainingBooks = [
       'Story notes return each work to its original publication setting, while the introduction and chronology explain how American Halloween customs developed during the nineteenth and early twentieth centuries.'
     ],
     editorial: [
-      'Publication history and anachronism guides distinguish what belongs to each story’s first context from Halloween associations created later.',
-      'The glossary, chronology and historical notes support the complete texts while documenting the holiday customs through which they entered an American Halloween canon.'
+      'The publication history separates what belonged to each story when it first appeared from the Halloween associations it gathered later.',
+      'A glossary, a chronology and historical notes go with the complete texts, and describe the holiday customs through which the stories came to be read at Halloween.'
     ],
     topics: [
       { title: 'Stories before Halloween', body: 'The volume separates original literary purpose from the later seasonal tradition that adopted these works.' },

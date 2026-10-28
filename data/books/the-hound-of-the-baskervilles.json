@@ -24,28 +24,6 @@
     ],
     "note": "The first London edition of 25 March 1902, which this edition prints. Its readings differ in places from the Project Gutenberg texts, which follow other printings: in 1902 Sir Charles dies on the 4th of June (Gutenberg has May), Watson cries Good heavens where they have My God, and the spelling is British throughout. Quotations follow the 1902 edition."
   },
-  "atAGlance": [
-    {
-      "label": "First published",
-      "value": "1901–1902",
-      "note": "In nine monthly parts in The Strand Magazine, August 1901 to April 1902, with sixty illustrations by Sidney Paget."
-    },
-    {
-      "label": "In book form",
-      "value": "1902",
-      "note": "Published by George Newnes in London on 25 March 1902, with sixteen of Paget’s illustrations; McClure, Phillips followed in New York in April."
-    },
-    {
-      "label": "The narrator",
-      "value": "Dr Watson",
-      "note": "Watson tells the story, and in the middle of the book hands it over to his letters to Holmes and the diary he kept on the moor."
-    },
-    {
-      "label": "The source",
-      "value": "Fletcher Robinson",
-      "note": "Conan Doyle credited his friend Bertram Fletcher Robinson with the West-Country legend behind the story and with help on its plot and local details."
-    }
-  ],
   "structure": [
     {
       "id": "baker-street",
@@ -183,12 +161,6 @@
       "summary": "Holmes treats the legend as a fairy tale and the footmark as material. He sends Watson to Devon, pretends to be busy with a blackmail case in London, and lives in a prehistoric hut, fed by the boy Cartwright, to watch without being watched. He is outwitted in London by a man who gives the cabman his name, and he admits that he nearly lost his client by waiting to make his case complete.",
       "clue": "He lets his friend believe he is busy with a blackmailer in London while he lives in a stone hut, supplied by a boy from a messenger office.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "rational",
-        "secretive",
-        "competitive",
-        "brave"
-      ],
       "relationships": [
         {
           "to": "watson",
@@ -244,12 +216,6 @@
       "summary": "Watson does most of the detective work in this book. He follows Barrymore at night, questions Laura Lyons, tracks the boy to the hut and waits there with his revolver. His letters are full of the moor’s atmosphere and of his own suspicions, some wrong, and he insists on common sense against the peasants’ fiend dog. He is hurt when he learns that Holmes has been on the moor all along, reading his reports.",
       "clue": "He writes long letters from Devon to Baker Street, and throws down a cigarette marked Bradley, Oxford Street, at the door of an empty hut.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "loyal",
-        "brave",
-        "sensible",
-        "impressionable"
-      ],
       "relationships": [
         {
           "to": "holmes",
@@ -288,12 +254,6 @@
       "summary": "Small, sturdy, dark-eyed and about thirty, he has the fiery temper of the Baskervilles and the manners of the American West. He refuses to be frightened away from the home of his own people, plans electric lamps for the drive, and falls quickly in love with Miss Stapleton. He does as Holmes tells him and walks home across the moor, not knowing he is the bait, and survives the hound only to suffer a breakdown; he and Mortimer leave on a voyage round the world.",
       "clue": "He buys new brown boots in the Strand, loses one of them, then loses an old black one, and says there is no devil in hell who will keep him from his home.",
       "firstAppearance": "Chapter IV",
-      "traits": [
-        "brave",
-        "hot-tempered",
-        "open",
-        "trusting"
-      ],
       "relationships": [
         {
           "to": "beryl",
@@ -338,12 +298,6 @@
       "summary": "Small, prim, flaxen-haired, with a butterfly-net and a tin box for specimens, he is a recognised authority on moths and one of the few people who know the paths through the Grimpen Mire. He is also the son of Sir Charles’s disgraced younger brother, an embezzler and a former schoolmaster under another name, who passes his wife off as his sister, murders Sir Charles with a painted hound and plans to kill Sir Henry the same way. He disappears into the mire in the fog.",
       "clue": "He chases a moth called Cyclopides across a bog, and Holmes finds his face under the plumed hat of an old portrait.",
       "firstAppearance": "Chapter VII (in person); Chapter IV (in disguise)",
-      "traits": [
-        "cunning",
-        "cold",
-        "audacious",
-        "cruel"
-      ],
       "relationships": [
         {
           "to": "beryl",
@@ -408,12 +362,6 @@
       "summary": "Tall, dark and elegant, with a curious lisp, she is darker than any brunette Watson has seen in England. Afraid of her husband, who beats her, she warns Watson, whom she takes for Sir Henry, to go back to London, and she composes the warning letter from words cut out of The Times. When she learns of the plot against Sir Henry and of her husband’s affair, she turns against him; he ties her up, and afterwards she leads Holmes to his path through the mire.",
       "clue": "She sends a warning made of words cut from a newspaper and addressed in a disguised hand, and she planted the guiding wands through the mire.",
       "firstAppearance": "Chapter VII",
-      "traits": [
-        "proud",
-        "frightened",
-        "brave",
-        "passionate"
-      ],
       "relationships": [
         {
           "to": "stapleton",
@@ -449,11 +397,6 @@
       "summary": "Tall, thin and absent-minded, a former house-surgeon at Charing Cross who gave up a London career to marry, he writes on atavism and covets Holmes’s skull. He brings the case to Baker Street, half believing in the hound, and withheld the footprints from the inquest because a man of science shrinks from seeming to endorse a superstition. He loses his curly-haired spaniel to the hound.",
       "clue": "He leaves his stick behind in Baker Street, excavates a prehistoric barrow, and wrote a prize essay asking whether disease is a reversion.",
       "firstAppearance": "Chapter I",
-      "traits": [
-        "scientific",
-        "absent-minded",
-        "loyal"
-      ],
       "relationships": [
         {
           "to": "charles",
@@ -483,11 +426,6 @@
       "summary": "Tall, handsome and pale, with a square black beard, he is the first suspect: he found Sir Charles’s body, benefits from the will, and walks the corridors at night. His secret turns out to be loyalty to his wife, who is feeding her brother, the escaped convict. In gratitude for Sir Henry’s silence he reveals the letter signed L. L., and Sir Henry’s old clothes, passed to Selden, cost the convict his life.",
       "clue": "He holds a candle to an upper window facing the moor at two in the morning, and his family have served the Hall for four generations.",
       "firstAppearance": "Chapter VI",
-      "traits": [
-        "loyal",
-        "secretive",
-        "dignified"
-      ],
       "relationships": [
         {
           "to": "mrs-barrymore",
@@ -523,11 +461,6 @@
       "summary": "A heavy, solid, intensely respectable woman whom Watson hears sobbing in the night. Her maiden name was Selden, and to her the Notting Hill murderer is still the curly-headed little brother she nursed. She takes the blame for the signals and weeps bitterly when he dies.",
       "clue": "Her telltale eyes are red on the first morning, and she remembers a murderer as the little boy she played with.",
       "firstAppearance": "Chapter VI",
-      "traits": [
-        "respectable",
-        "devoted",
-        "grieving"
-      ],
       "relationships": [
         {
           "to": "selden",
@@ -560,10 +493,6 @@
       "summary": "A convict whose death sentence was commuted because of doubts about his sanity, he hides on the moor, fed by his sister and her husband. Watson sees his evil yellow face over a rock like one of the old savages of the burrows. Wearing Sir Henry’s cast-off clothes, he is hunted down by the hound and dies falling over a cliff.",
       "clue": "An escaped murderer hiding on the moor, he answers a candle in a window with a candle of his own.",
       "firstAppearance": "Chapter VI (named); Chapter IX",
-      "traits": [
-        "violent",
-        "desperate"
-      ],
       "relationships": [
         {
           "to": "mrs-barrymore",
@@ -585,11 +514,6 @@
       "summary": "Deserted by the artist she married against her father’s wishes, and helped into a typewriting business by Sir Charles, Stapleton and Mortimer, she hopes to divorce her husband and marry Stapleton. At his dictation she writes asking Sir Charles to meet her at the gate at ten, and he then stops her from going. Shown proof that he is married, she tells Holmes everything.",
       "clue": "Her initials are found on the charred end of a letter, and she works at a Remington typewriter in Coombe Tracey.",
       "firstAppearance": "Chapter X (named); Chapter XI",
-      "traits": [
-        "beautiful",
-        "defiant",
-        "deceived"
-      ],
       "relationships": [
         {
           "to": "stapleton",
@@ -628,11 +552,6 @@
       "summary": "Red-faced, white-haired and choleric, he spends his fortune on lawsuits for the pleasure of fighting and is carried in triumph or burned in effigy by the villagers of Fernworthy. He has disowned his daughter. From his roof he sweeps the moor with a telescope, and his spite against the police leads Watson to the boy and the hut.",
       "clue": "He has established a right of way across old Middleton’s park and watches the moor from his roof through a telescope on a tripod.",
       "firstAppearance": "Chapter VIII",
-      "traits": [
-        "litigious",
-        "spiteful",
-        "comic"
-      ],
       "relationships": [
         {
           "to": "laura",
@@ -652,11 +571,6 @@
       "summary": "A widower who made a fortune in South Africa and came home to restore the Hall and help the countryside. He took the family legend so seriously that he would not cross the moor at night, and his heart was weak. Lured to the moor-gate by a letter, he saw the painted hound and ran down the alley until he fell dead.",
       "clue": "The ash dropped twice from his cigar while he waited at a wicket-gate, and his footprints seemed to change to tiptoe.",
       "firstAppearance": "Chapter II (before the story opens)",
-      "traits": [
-        "generous",
-        "superstitious",
-        "nervous"
-      ],
       "relationships": [
         {
           "to": "henry",
@@ -684,11 +598,6 @@
       "summary": "In the time of the Great Rebellion he abducted a yeoman’s daughter, vowed his body and soul to the Powers of Evil to catch her when she escaped, and was found on the moor with his throat torn out by a black beast shaped like a hound. His portrait in the dining-hall, dated 1647, shows a prim, hard, stern face.",
       "clue": "He set the hounds on a girl who climbed down the ivy from his house, and his portrait, in black velvet and lace, hangs in the banqueting-hall.",
       "firstAppearance": "Chapter II (in the legend)",
-      "traits": [
-        "wild",
-        "cruel",
-        "godless"
-      ],
       "relationships": [
         {
           "to": "stapleton",
@@ -708,10 +617,6 @@
       "summary": "A small, wiry bulldog of a man who arrives on the London express with an unsigned warrant, and who now looks at Holmes with reverence. When the hound breaks out of the fog he yells with terror and throws himself on the ground.",
       "clue": "He comes down by the London express with an unsigned warrant and keeps something in his hip-pocket.",
       "firstAppearance": "Chapter XIII",
-      "traits": [
-        "tenacious",
-        "practical"
-      ],
       "relationships": [
         {
           "to": "holmes",
@@ -1288,7 +1193,7 @@
       "reference": "Chapter IX",
       "stage": "reports",
       "context": "After the chase of the convict, Watson sees a tall figure standing on a tor against the moon.",
-      "analysis": "Watson describes the mysterious watcher as a ghost, and the reader is invited to wonder whether he is enemy or supernatural. The figure is Holmes, and the moment is typical of the book: a Gothic image that turns out to have the most rational explanation of all.",
+      "analysis": "Watson describes the mysterious watcher as a ghost, and the reader cannot tell whether he is an enemy or something supernatural. The figure is Holmes, and the moment is typical of the book: a Gothic image that turns out to have the most rational explanation of all.",
       "themes": [
         "superstition",
         "disguise"
@@ -1715,88 +1620,5 @@
       "lon": -0.7336,
       "note": "Where Doyle lived and signed the dedication to Robinson."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "Reason defeats superstition",
-      "summary": "The classic reading sees the novel as a contest between a family legend and the rational detective, which reason wins: the hound comes from a dealer’s shop, its fire is phosphorus, and every Gothic mystery has a material cause. On this view the book reassures its readers that the modern world is knowable.",
-      "counter": "The book draws its power from the fear it claims to dispel. Holmes is absent for half the story, the moor and its prehistoric ruins remain strange, and the murderer vanishes without trace into the mire. Many readers remember the hound more than the explanation."
-    },
-    {
-      "position": "A story of degeneration",
-      "summary": "Some critics read the book in the light of late-Victorian anxieties about heredity and degeneration. Mortimer measures skulls and writes on atavism, Selden looks like a prehistoric savage, and Holmes calls Stapleton a throw-back to Hugo, physical and spiritual. The villain’s wickedness seems to be inherited, like the family face.",
-      "counter": "Doyle treats the pseudo-science with irony as well as interest. Mortimer’s craniology is comic, the case is solved by evidence, and the throw-back is a detective’s phrase in a moment of excitement, while the real motive is money."
-    },
-    {
-      "position": "Women silenced",
-      "summary": "Feminist readers point out that the women know the most and say the least. Beryl Stapleton is beaten into passing as a sister and silenced by fear; Laura Lyons is controlled by a promise of marriage; Mrs Barrymore is bound by loyalty to a brother. The detective plot depends on their eventual testimony.",
-      "counter": "The book gives these women little inner life, and Holmes’s final explanation reduces Beryl’s rebellion to a remark about Spanish blood. The novel notices coercion without making it its subject."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Conan Doyle create and then explain the supernatural in The Hound of the Baskervilles?",
-      "focus": "Legend, atmosphere and explanation",
-      "plan": [
-        "Begin with the manuscript of 1742 and Mortimer’s ‘realm in which the most acute and most experienced of detectives is helpless’.",
-        "Analyse how the hound is heard and glimpsed before it is seen: the moan on the moor, the footprints, the peasants’ stories.",
-        "Examine Watson’s letters and diary, and his insistence on common sense.",
-        "Discuss the climax: the hound in the fog, phosphorus and the family ghost laid.",
-        "Consider whether the explanation fully dispels the fear the book creates."
-      ]
-    },
-    {
-      "question": "How is the moor presented, and why does it matter to the novel?",
-      "focus": "Setting, mood and meaning",
-      "plan": [
-        "Start with Watson’s first sight of the moor and the arrival at the Hall.",
-        "Look at the Grimpen Mire and Stapleton’s knowledge of its paths.",
-        "Consider the stone huts and the sense of the prehistoric past.",
-        "Analyse the weather: fog, rain, moonlight and the creeping fog at the climax.",
-        "Conclude on the mire as the place that swallows the murderer."
-      ]
-    },
-    {
-      "question": "What is the importance of Watson in The Hound of the Baskervilles?",
-      "focus": "Narrator, detective and friend",
-      "plan": [
-        "Examine the opening with the stick: Watson as a conductor of light.",
-        "Show how Holmes’s absence makes Watson the investigator in Devon.",
-        "Analyse the letters and diary as a narrative method.",
-        "Discuss the revelation at the hut and Watson’s feelings about it.",
-        "Evaluate what the book gains from seeing Holmes through Watson’s eyes."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Why does Conan Doyle keep Holmes away from Dartmoor for so much of the novel?",
-    "What does the portrait of Hugo add to the case?",
-    "Is Holmes right to use Sir Henry as bait?",
-    "How far does the novel take the idea of inherited wickedness seriously?",
-    "What do Beryl Stapleton and Laura Lyons each know, and why do they stay silent?",
-    "Why might the novel end with Stapleton lost in the mire, and not on trial?"
-  ],
-  "related": [
-    {
-      "href": "/books/sign-of-four/",
-      "why": "The second Holmes novel, where Watson falls in love and the solution lies in an old crime committed abroad."
-    },
-    {
-      "href": "/books/adventures-of-sherlock-holmes/",
-      "why": "The first collection of Holmes stories from The Strand, where the reader first learns the method Holmes uses on Mortimer’s stick."
-    },
-    {
-      "href": "/books/the-moonstone/",
-      "why": "An earlier English detective novel told through several narrators’ documents, with an Indian curse and a country house."
-    },
-    {
-      "href": "/books/wuthering-heights/",
-      "why": "Another novel in which moorland and an inherited estate shape violent passions across generations."
-    },
-    {
-      "href": "/books/dracula/",
-      "why": "A Gothic novel of the same decade told through letters and journals, with a stranger who arrives to claim a place in England."
-    }
-  ],
-  "videos": []
+  ]
 }

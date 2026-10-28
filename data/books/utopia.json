@@ -21,38 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/2130/pg2130.txt",
     "note": "The Astor edition’s book page names no translation and links to this Project Gutenberg file, whose editor states in his introduction that the translation is Burnet’s. Burnet translates More’s Latin into late seventeenth-century English, so wording differs from Ralph Robinson’s version of 1551 and from modern translations. This edition leaves out the letters, verses, map and alphabet that surrounded the early printings, and runs the two books on under a single heading: Book II begins at ‘The island of Utopia is in the middle two hundred miles broad’. Because the book is a dialogue, every quotation names its speaker; all of Book II is Hythloday’s speech as the narrator reports it. The Utopians and their officers are listed under characters as groups."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "1515–16",
-      "note": "The island of Book II was probably written first, late in 1515, after More’s embassy to Flanders; Book I, with its argument about England, followed early in 1516."
-    },
-    {
-      "label": "First printed",
-      "value": "Louvain, 1516",
-      "note": "In Latin, seen through the press by Erasmus, Peter Giles and others of More’s friends. It was not printed in England in his lifetime."
-    },
-    {
-      "label": "In English",
-      "value": "1551",
-      "note": "Ralph Robinson’s translation came sixteen years after More’s execution. The quotations here follow Gilbert Burnet’s version of 1684."
-    },
-    {
-      "label": "The name",
-      "value": "No-place",
-      "note": "From Greek ou, ‘not’, and topos, ‘place’, with a pun on eutopia, ‘good place’, made in verses printed with the early editions. Nearly every proper name in the book is a Greek joke of the same kind."
-    },
-    {
-      "label": "The traveller",
-      "value": "Raphael Hythloday",
-      "note": "A Portuguese who sailed with Amerigo Vespucci and stayed behind in the New World. His surname is built from Greek words for nonsense."
-    },
-    {
-      "label": "The working day",
-      "value": "Six hours",
-      "note": "Three before dinner and three after, possible, Hythloday argues, because everybody works and nobody makes luxuries."
-    }
-  ],
   "structure": [
     {
       "id": "garden",
@@ -216,12 +184,6 @@
       "summary": "He gave his estate to his brothers while young, sailed on three of Vespucci’s four voyages, stayed behind in the New World and lived five years in Utopia. He is an eloquent talker, argues from examples, and will not compromise: he refuses royal service because he could neither lie nor be heard, and he names private property as the disease that every other reform only soothes. More gives him a surname that means something like “dealer in nonsense”, and the angriest, most persuasive pages in the book.",
       "clue": "He has seen the best commonwealth in the world and would rather not advise any real one.",
       "firstAppearance": "Book I",
-      "traits": [
-        "learned",
-        "uncompromising",
-        "eloquent",
-        "restless"
-      ],
       "relationships": [
         {
           "to": "more",
@@ -277,12 +239,6 @@
       "summary": "He shares the author’s name, office and family, and the book makes him a little less than the author: courteous, practical, a lawyer who believes a good man should serve the state and work within its bad habits. He argues against Hythloday twice, for a pliable philosophy that plays its part in the drama in hand and against holding all things in common, and at the end he keeps his objections to himself because his guest looks tired. His last sentence is the book’s most quoted hedge.",
       "clue": "He was brought up in Cardinal Morton’s household, which is why Hythloday tells the dinner story to him.",
       "firstAppearance": "Book I",
-      "traits": [
-        "courteous",
-        "sceptical",
-        "practical",
-        "reticent"
-      ],
       "relationships": [
         {
           "to": "morton",
@@ -312,11 +268,6 @@
       "summary": "A real person and a friend of Erasmus, whom More praises at length for his learning, his modesty and his ‘prudent simplicity’. In the fiction he is the introducer: he brings Hythloday to More, urges the traveller to serve a king for his friends’ sake, and doubts that any nation in the New World can be better governed than old Europe. His presence gives the fantasy a real address.",
       "clue": "He corrects More’s first impression: the stranger sailed not as a seaman but as a philosopher.",
       "firstAppearance": "Book I",
-      "traits": [
-        "learned",
-        "hospitable",
-        "conventional"
-      ],
       "relationships": [
         {
           "to": "more",
@@ -341,12 +292,6 @@
       "summary": "The one great man in the book who listens. Hythloday describes him as grave, easy in conversation and fond of testing suitors by speaking sharply; he stops the lawyer’s set speech, asks a real question about how thieves should be punished, and proposes a trial of the Polylerits’ method. Yet his table is where the case against courts is proved. The guests despise an idea until he approves it, and applaud in earnest what he only liked in jest.",
       "clue": "His guests laugh when he laughs; he asks for an experiment before a verdict.",
       "firstAppearance": "Book I",
-      "traits": [
-        "shrewd",
-        "grave",
-        "open-minded",
-        "flattered"
-      ],
       "relationships": [
         {
           "to": "more",
@@ -378,11 +323,6 @@
       "summary": "He opens the argument by praising a justice that hangs twenty thieves on one gibbet, and wonders aloud why theft continues. Answered, he prepares a formal rebuttal that will repeat everything in order and answer nothing, and the Cardinal stops him before he starts. His last contribution is a shake of the head and a prediction that the scheme would endanger the whole nation. Burnet’s English calls him “the Counsellor”, which makes him the working model of the royal adviser Hythloday refuses to become.",
       "clue": "He had got as far as ‘there were four things’ when the Cardinal told him to hold his peace.",
       "firstAppearance": "Book I",
-      "traits": [
-        "complacent",
-        "formal",
-        "conventional"
-      ],
       "relationships": [
         {
           "to": "hythloday",
@@ -409,11 +349,6 @@
       "summary": "A grave, morose man who enjoys the Fool’s joke at the monks’ expense until it turns on the friars. He then rails at the jester as knave, backbiter and son of perdition, quotes scripture to prove that his anger is no sin, and threatens the fate of the children who mocked Elisha and a papal bull. He is the book’s portrait of learning used for self-defence.",
       "clue": "He insists he is not angry, and cites the Psalms to prove it.",
       "firstAppearance": "Book I",
-      "traits": [
-        "pompous",
-        "touchy",
-        "learned to no purpose"
-      ],
       "relationships": [
         {
           "to": "fool",
@@ -440,11 +375,6 @@
       "summary": "He plays the fool so naturally that he seems to be one, and most of his jokes fall flat, but he is the only guest who says something rude and true: that the answer to beggars is to put them in monasteries, and that no vagabonds are like the friars. The company likes the jest in earnest because the Cardinal smiles. Erasmus had lately punned More’s name into folly in The Praise of Folly, and the jester is a small version of the licensed truth-teller the whole book tries to be.",
       "clue": "He says he knows no vagabonds like the friars.",
       "firstAppearance": "Book I",
-      "traits": [
-        "irreverent",
-        "mostly flat",
-        "occasionally exact"
-      ],
       "relationships": [
         {
           "to": "friar",
@@ -468,14 +398,9 @@
       "id": "utopus",
       "name": "King Utopus",
       "role": "Conqueror and lawgiver of Utopia",
-      "summary": "He conquered a peninsula called Abraxa, gave it his own name, and had it cut from the mainland by a fifteen-mile channel dug by his soldiers as well as the natives. He drew the plan of Amaurot and left its ornament to later generations, and he made the law that every man may follow what religion he pleases and argue for it without violence. The ideal commonwealth, it is worth noticing, begins with a conquest.",
+      "summary": "He conquered a peninsula called Abraxa, gave it his own name, and had it cut from the mainland by a fifteen-mile channel dug by his soldiers as well as the natives. He drew the plan of Amaurot and left its ornament to later generations, and he made the law that every man may follow what religion he pleases and argue for it without violence. The ideal commonwealth begins with a conquest.",
       "clue": "He found the natives easy to conquer because they were quarrelling about religion.",
       "firstAppearance": "Book II, opening",
-      "traits": [
-        "conquering",
-        "far-sighted",
-        "tolerant by policy"
-      ],
       "relationships": [
         {
           "to": "utopians",
@@ -495,12 +420,6 @@
       "summary": "They are industrious, cheerful, fond of lectures and gardens, contemptuous of gold, jewels, hunting and dice, and quick to learn Greek. They also live in full view of one another, need a passport to leave their city, keep slaves, marry after inspecting each other naked, bar from office anyone who denies Providence, and win wars with bribes. Hythloday presents them almost as a single character with one mind, which is the attraction of the place and also its strangeness.",
       "clue": "Their children laugh at foreign ambassadors for wearing jewels like toddlers.",
       "firstAppearance": "Book II, opening",
-      "traits": [
-        "industrious",
-        "rational",
-        "uniform",
-        "unembarrassed"
-      ],
       "relationships": [
         {
           "to": "magistrates",
@@ -525,11 +444,6 @@
       "summary": "Every thirty households elect a Syphogrant each year, and every ten Syphogrants answer to a Tranibor; the Syphogrants choose a Prince for life, by secret vote, from four candidates named by the people, and he can be removed if he is suspected of meaning to enslave them. The Syphogrants’ chief business is to see that nobody is idle. The system is built against conspiracy, down to the rule that no question is debated on the day it is raised and the law that makes it death to discuss public affairs outside council.",
       "clue": "The Prince wears no crown; a sheaf of corn is carried before him.",
       "firstAppearance": "Book II, Of their Magistrates",
-      "traits": [
-        "elected",
-        "vigilant",
-        "unassuming"
-      ],
       "relationships": [
         {
           "to": "utopians",
@@ -1184,7 +1098,7 @@
       "reference": "Book II, Of their Military Discipline",
       "stage": "war-and-worship",
       "context": "Hythloday describes the Zapolets, a fierce people who hire themselves out to any side and change sides for a penny a day.",
-      "analysis": "The Utopians hate war and are content to buy it. They pay the Zapolets more than anyone, send them into the worst danger, and reckon their deaths a service to mankind. ‘Consumption’ is an economist’s word, and it treats a people as fuel. Readers have long recognised Europe’s hired Swiss soldiers in the Zapolets, and the calm that abolishes poverty at home here spends foreigners’ lives abroad.",
+      "analysis": "The Utopians hate war and are content to buy it. They pay the Zapolets more than anyone, send them into the worst danger, and reckon their deaths a service to mankind. ‘Consumption’ is an economist’s word, and it treats a people as fuel. The Zapolets resemble the Swiss soldiers hired across Europe, and the calm that abolishes poverty at home here spends foreigners’ lives abroad.",
       "themes": [
         "empire",
         "justice"
@@ -1209,7 +1123,7 @@
       "reference": "Book II, Of the Religions of the Utopians",
       "stage": "war-and-worship",
       "context": "Utopus had found the island’s inhabitants divided by religious quarrels, which made them easy to conquer.",
-      "analysis": "The law is justified twice, by public peace and by the interest of religion itself, since truth, Utopus thinks, will prevail if it is argued gently. It is a remarkable principle for 1516, and its author later wrote against Protestant reformers and, as Chancellor, pursued them, one reason readers argue about how far Hythloday speaks for More. The law has its own limit: denying Providence bars a man from office.",
+      "analysis": "The law is justified twice, by public peace and by the interest of religion itself, since truth, Utopus thinks, will prevail if it is argued gently. It is a remarkable principle for 1516, and its author later wrote against Protestant reformers and, as Chancellor, pursued them, one reason it is hard to say how far Hythloday speaks for More. The law has its own limit: denying Providence bars a man from office.",
       "themes": [
         "religion",
         "freedom"
@@ -1411,103 +1325,5 @@
       "lon": -0.0766,
       "note": "Where More was beheaded in 1535."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "A serious blueprint",
-      "summary": "On this reading Hythloday speaks for More, and Utopia is what it appears to be: a reasoned case that private property causes poverty, crime and war, with a working model attached. The anger of Book I at enclosure and hanging is too specific to be play, and later socialist writers recognised an ancestor in the book. The fictional frame was there for protection.",
-      "counter": "The book goes out of its way to undermine its witness: an island called No-place, a traveller named for nonsense, a narrator who objects at the start and the end. The island includes slavery, surveillance, counselled death and wars won by bribery, and the author spent the next two decades serving a king and defending the established church. A blueprint would not advertise its own unreality so insistently."
-    },
-    {
-      "position": "A humanist satire of Europe",
-      "summary": "Here the island is a mirror held up to Christian Europe: it shows that pagans guided by reason alone live better than those who have revelation, and that gold, rank and fashion are absurd once seen from outside. The Greek puns, the straight-faced praise of treaties and the gold chamber-pots belong to the world of Erasmus’s Praise of Folly, a learned joke with a moral edge.",
-      "counter": "Satire needs a target, and some Utopian institutions are ones humanists argued for in earnest: education for all, toleration within limits, punishment that reforms. Reading everything as a joke also loses the plain moral force of Book I and of Hythloday’s closing speech, neither of which is written like a joke."
-    },
-    {
-      "position": "A dialogue about counsel",
-      "summary": "A third view makes Book I the heart of the work. Hythloday and the narrator are two sides of a choice the author faced, whether to enter royal service, and the island is Hythloday’s strongest card in an argument about whether philosophy can work inside an imperfect state. The unresolved ending is then the point: neither pure principle nor accommodation wins.",
-      "counter": "This makes the larger part of the book an illustration for the smaller, and it leans on biography that the text never mentions. The island has had a life of its own for five centuries because readers found in it more than an example in someone else’s argument."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "Does Utopia present its island as a model to be imitated?",
-      "focus": "Frame, irony and endorsement",
-      "plan": [
-        "Distinguish three voices: Hythloday, who admires; the narrator, who objects; and the author, who invented both and all the names.",
-        "Gather the evidence for endorsement: the cure for theft, the six-hour day, the treatment of gold, toleration, and the passion of the closing speech.",
-        "Gather the evidence against: the Greek names, the slavery and surveillance described without comment, the colonies and mercenaries, and the narrator’s reservations.",
-        "Treat the last sentence as a key: ‘rather wish, than hope’ allows admiration without advocacy.",
-        "Conclude that the book is built to be argued about, and that its method, making Europe look strange, matters more than whether the island could exist."
-      ]
-    },
-    {
-      "question": "How does Book I prepare the reader for Book II?",
-      "focus": "Structure and argument",
-      "plan": [
-        "Book I was probably written after Book II: ask what it adds: England, a real Cardinal, real hangings and real enclosures.",
-        "Show how Morton’s dinner diagnoses problems, idleness, enclosure and savage punishment, that Book II’s institutions answer one by one.",
-        "Read the argument about counsel as a warning about how Book II will be received: ‘how little courtiers would value either me or my counsels’.",
-        "Look at the narrator’s objection to common property and how Book II is framed as the reply to it.",
-        "Conclude that because of Book I the description reads as an argument, and the reader is seated at Morton’s table deciding whether to laugh."
-      ]
-    },
-    {
-      "question": "Compare the presentation of Raphael Hythloday and More the narrator.",
-      "focus": "Character, voice and the dialogue form",
-      "plan": [
-        "Set out the difference in their situations: a traveller who has given away his estate, and an envoy with a wife, children and an office.",
-        "Compare their images of counsel: the lasting fountain and the play in performance against Plato’s philosopher who stays indoors while others stand in the rain.",
-        "Consider tone: Hythloday’s certainty and indignation against the narrator’s courtesy and his silence at the end.",
-        "Discuss the names: a traveller called for nonsense who talks the most sense, and a narrator who bears the author’s name and holds back.",
-        "Conclude on whether the book sides with either, or deliberately leaves the reader in the space between them."
-      ]
-    },
-    {
-      "question": "How does More use the Utopians’ attitudes to gold, jewels and pleasure to criticise Europe?",
-      "focus": "Satire and making the familiar strange",
-      "plan": [
-        "Explain the chamber-pots and chains: the reasons given for them, and why value turns out to be a matter of convention.",
-        "Analyse the Anemolian ambassadors as a set piece: their mistaken expectations, the children’s laughter, their shame.",
-        "Show how the philosophy of true and false pleasure extends the method to fine clothes, titles, gems, dice and hunting.",
-        "Consider the limits: the Utopians’ certainty, their contempt for hunters, and the slaves who wear the gold.",
-        "Conclude that making Europe look childish is the book’s most effective argument, and ask whether it depends on a people who have never seen anything else."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Hythloday says that at court ‘serve’ and ‘enslave’ come to the same thing. Is he right, and does the narrator ever answer him?",
-    "Which Utopian institution would you most like to see adopted, and which would you most resist? Does the book seem to expect that division?",
-    "The Utopians keep slaves, need passports and ‘live in full view’. Does this weaken the case for the island, or make the account more honest?",
-    "Why might a book that argues for toleration make belief in an afterlife a condition of public office?",
-    "What is the effect of giving the book’s strongest arguments to a character whose name suggests nonsense?",
-    "At Morton’s table the guests applaud whatever the Cardinal approves. Where else in the book do people agree with whoever holds authority, whatever the argument?"
-  ],
-  "related": [
-    {
-      "href": "/passage-room/utopia-sheep-devour-men/",
-      "why": "A phrase-by-phrase reading of the enclosure passage, in which the mildest animal in England becomes a predator with a landlord behind it."
-    },
-    {
-      "href": "/books/the-prince/",
-      "why": "Written three years earlier by another official out of favour, and the opposite answer to Hythloday: the adviser who takes men as they are and tells princes how to keep power."
-    },
-    {
-      "href": "/books/sir-thomas-more/",
-      "why": "The Elizabethan play about More’s rise and fall, in which the London under-sheriff talks a rioting crowd out of violence."
-    },
-    {
-      "href": "/books/gullivers-travels/",
-      "why": "Swift’s traveller also returns from a rational commonwealth unable to bear his own country, and the satire again turns on how seriously to take the report."
-    },
-    {
-      "href": "/books/the-tempest/",
-      "why": "Gonzalo’s imagined commonwealth, with no riches, poverty or occupation, belongs to the tradition More began, and is laughed at on stage."
-    },
-    {
-      "href": "/books/animal-farm/",
-      "why": "A modern fable about a revolution in common ownership that ends with the pigs at the farmhouse table."
-    }
-  ],
-  "videos": []
+  ]
 }

@@ -21,28 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/10002/pg10002.txt",
     "note": "The 1908 text, with Hodgson’s spellings, his dedication to his father, and the sixteen footnotes signed Ed. that the fictional editor adds to the manuscript."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "1907",
-      "note": "Dated December 1907 at the end of the author’s introduction."
-    },
-    {
-      "label": "First printed",
-      "value": "1908",
-      "note": "Published by Chapman & Hall, the second of the four novels Hodgson brought out in five years."
-    },
-    {
-      "label": "Shape",
-      "value": "A manuscript in a frame",
-      "note": "Found by two anglers, printed with an editor’s footnotes, and broken off mid-word at the end."
-    },
-    {
-      "label": "Reputation",
-      "value": "Admired by Lovecraft",
-      "note": "He read it in 1934, after most of his own stories were written, and ranked it perhaps the best of Hodgson’s books."
-    }
-  ],
   "structure": [
     {
       "id": "the-manuscript",
@@ -163,11 +141,6 @@
       "summary": "A man who bought a house nobody would live in because it was cheap, keeps no servants, and describes himself as not superstitious on the page before the visions start. He is brave under siege, exact in his descriptions, and entirely alone with what he has seen; the diary exists because there is no one he can tell.",
       "clue": "Says the peasantry call him mad, and starts a diary so that readers may say it too.",
       "firstAppearance": "The Plain of Silence",
-      "traits": [
-        "solitary",
-        "exact",
-        "unshakeable until the end"
-      ],
       "relationships": [
         {
           "to": "pepper",
@@ -211,11 +184,6 @@
       "summary": "The only creature the Recluse says he prefers to the rest of creation, and the one that makes the ending land. Through the siege he is the alarm and the company; in the last chapters he sleeps through the acceleration of time and is touched with a foot and falls to pieces. It is the book’s cruellest and best-judged paragraph.",
       "clue": "Crumbles into a mouldering heap of bones and dust at the nudge of a boot.",
       "firstAppearance": "The Plain of Silence",
-      "traits": [
-        "loyal",
-        "brave",
-        "mortal on a different clock"
-      ],
       "relationships": [
         {
           "to": "recluse",
@@ -243,11 +211,6 @@
       "summary": "She keeps the house, asks few questions, and is kept out of the story by her brother’s decision. Hodgson uses her to measure how far the Recluse has gone: the more he sees, the less he tells the one person in the building with him.",
       "clue": "Is told nothing about the creatures in the garden, and cooks through the siege.",
       "firstAppearance": "The Thing in the Pit",
-      "traits": [
-        "practical",
-        "uninformed",
-        "steady"
-      ],
       "relationships": [
         {
           "to": "recluse",
@@ -266,11 +229,6 @@
       "summary": "Human in shape and swine in face, they come in numbers, climb walls, and are stopped only by walls and bullets. Hodgson never explains them or connects them to the cosmic material, and that is why they frighten: they stand for nothing.",
       "clue": "The first is identified by a single sentence: it was the face of a swine.",
       "firstAppearance": "The Thing in the Pit",
-      "traits": [
-        "numerous",
-        "patient",
-        "unexplained"
-      ],
       "relationships": [
         {
           "to": "recluse",
@@ -289,11 +247,6 @@
       "summary": "She appears only in the quiet chapters, on a still sea under a white orb, and is given no history that the reader can hold. Her leaving, forced by a darkness crossing the light, is the emotional rehearsal for the ending, where a bigger darkness takes everything else.",
       "clue": "Calls the advancing blackness the Sun of Darkness and goes before it closes.",
       "firstAppearance": "The Sea of Sleep",
-      "traits": [
-        "gentle",
-        "fading",
-        "not explained"
-      ],
       "relationships": [
         {
           "to": "recluse",
@@ -312,11 +265,6 @@
       "summary": "He prints the manuscript, declines to interpret it, and then cannot help himself: the footnotes offer orbital mechanics, speculation about the speed of time, and finally a note on the ink trailing off the page. The apparatus of scholarship applied to the impossible is the book’s quietest and best joke.",
       "clue": "Signs his notes Ed., and ends the book with a remark about a pen.",
       "firstAppearance": "Author’s Introduction",
-      "traits": [
-        "careful",
-        "curious",
-        "out of his depth"
-      ],
       "relationships": [
         {
           "to": "recluse",
@@ -840,88 +788,5 @@
       "lon": 2.8853,
       "note": "Where he was killed in 1918, ten years after this book appeared."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "The first cosmic horror novel in English",
-      "summary": "The second half abandons plot, character and consequence to watch the solar system end, and sets one frightened man against the whole of cosmic time.",
-      "counter": "Wells had already sent a traveller to watch the sun dying in The Time Machine, and the cosmology here is Edwardian: entropy as spectacle, with gods in an arena. The visionary chapters are as much religious as scientific."
-    },
-    {
-      "position": "Two books stitched together",
-      "summary": "A competent siege story and an extraordinary cosmic reverie sit side by side, and readers regularly prefer one and skip the other.",
-      "counter": "The siege buys the reverie its credit: the reader trusts the man watching the sun die because he was exact about doors, ammunition and a cellar slab."
-    },
-    {
-      "position": "The prose style",
-      "summary": "Hodgson is repetitive, fond of capitals and given to constructions no editor would pass; the book is admired in spite of its sentences.",
-      "counter": "The stiffness is built into the fiction (the editor warns of it on the first page), and the plainest sentences in it, the face of a swine and the little hill of ash, are the ones nobody forgets."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "What does the frame narrative allow the novel to do?",
-      "focus": "Found manuscripts, damage and the right to stop",
-      "plan": [
-        "Describe the frame: anglers, a ruin, a damp book, an editor who declines to interpret.",
-        "Show how the document’s condition licenses the gaps in the story.",
-        "Examine the footnotes, and the way their confidence rises as the events become less explicable.",
-        "Take the final note about the pen trailing off as the book’s real ending.",
-        "Argue for what would be lost if the Recluse simply told his story."
-      ]
-    },
-    {
-      "question": "How do the two halves of the novel depend on each other?",
-      "focus": "Siege and cosmos",
-      "plan": [
-        "Set out the siege: creatures, barricades, ammunition, a sister kept ignorant.",
-        "Set out the cosmic chapters: acceleration, the green star, the dead sun.",
-        "Show what the first half establishes about the narrator’s reliability and precision.",
-        "Use Pepper as the hinge: comic relief during the siege, and the heaviest loss by the end.",
-        "Decide whether the book is two stories or one argument."
-      ]
-    },
-    {
-      "question": "Why is nothing explained?",
-      "focus": "Withheld cause, and what it does to a reader",
-      "plan": [
-        "List what the novel never answers: the pit, the creatures, the arena, the jade house.",
-        "Contrast the gothic convention, where a secret is eventually produced.",
-        "Consider the editor’s footnotes as the text’s own attempt at explanation, and their failure.",
-        "Weigh the effect on a reader: frustration, or a dread that survives the last page.",
-        "Conclude on what later writers took from the refusal."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "The Recluse calls himself not superstitious on the page before the visions begin. Does the book agree with him?",
-    "Why does Hodgson make the house’s double green jade, and never say more about it?",
-    "The swine-things are never connected to the cosmic material. Should they have been?",
-    "Is Pepper’s death the most affecting moment in the novel, and if so what does that say about it?",
-    "The editor’s last note explains a pen. What is he refusing to say?",
-    "Would the ending work at all without the siege that comes before it?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-willows/",
-      "why": "Published a year earlier, and the other English story of its decade about a place where something else presses through."
-    },
-    {
-      "href": "/books/carnacki-the-ghost-finder/",
-      "why": "Hodgson’s own ghost-finder, taking the same practical habits (measurements, defences, evidence) into six short cases."
-    },
-    {
-      "href": "/books/war-of-the-worlds/",
-      "why": "Wells in the same decade, taking the other route out of the Victorian novel: an indifferent intelligence arrives, where Hodgson has a universe running down."
-    },
-    {
-      "href": "/books/frankenstein/",
-      "why": "The earlier account of a solitary man writing down what he has seen, and expecting not to be believed."
-    },
-    {
-      "href": "/books/dracula/",
-      "why": "A siege told through documents, and the measure of how much apparatus Hodgson does without."
-    }
-  ],
-  "videos": []
+  ]
 }

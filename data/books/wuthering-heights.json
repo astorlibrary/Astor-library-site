@@ -21,33 +21,6 @@
     "url": "https://standardebooks.org/ebooks/emily-bronte/wuthering-heights/text/single-page",
     "note": "References give the chapter, numbered straight through from 1 to 34. The original two-volume division is not marked in this text, so it is not used in references here."
   },
-  "atAGlance": [
-    {
-      "label": "Published",
-      "value": "December 1847",
-      "note": "Thomas Cautley Newby, in a three-volume set whose third volume was Anne Brontë’s Agnes Grey."
-    },
-    {
-      "label": "Author’s name",
-      "value": "Ellis Bell",
-      "note": "Emily Brontë’s pseudonym. The 1850 edition kept it on the title page, but Charlotte’s biographical notice inside revealed who Ellis Bell had been."
-    },
-    {
-      "label": "Time scheme",
-      "value": "1771–1802",
-      "note": "The novel’s dates are exact enough for readers to have reconstructed a full calendar from internal evidence."
-    },
-    {
-      "label": "Narrators",
-      "value": "Two, nested",
-      "note": "Lockwood writes the book; Nelly Dean supplies almost all of it; letters and reported speech supply the rest."
-    },
-    {
-      "label": "1850 edition",
-      "value": "Edited by Charlotte",
-      "note": "She softened Joseph’s dialect and added a biographical notice and a preface defending her sister."
-    }
-  ],
   "structure": [
     {
       "id": "lockwood",
@@ -182,11 +155,6 @@
       "summary": "He has one name, no surname and no history before Liverpool, and the novel never supplies the three years in which he acquired his money. What it does supply is the method: he takes the two estates by mortgage, marriage and guardianship, with one act of force (Cathy is locked in until she marries Linton), and finds at the end that he has lost the appetite for the result.",
       "clue": "He arrives as a nameless child speaking no English anyone can understand, and leaves as the legal owner of everything the two families had.",
       "firstAppearance": "Chapter 1",
-      "traits": [
-        "unaccounted for",
-        "patient",
-        "finally uninterested"
-      ],
       "relationships": [
         {
           "to": "catherine-earnshaw",
@@ -238,11 +206,6 @@
       "summary": "She scratches three surnames on a window ledge before she has worn any of them, and her great speech is an argument that identity can be shared. She marries for money and standing and says so plainly, then treats her own decision as a wrong done to her.",
       "clue": "She carves three versions of her own name into a windowsill, and tells a housekeeper that she is another person.",
       "firstAppearance": "Chapter 3",
-      "traits": [
-        "imperious",
-        "self-aware",
-        "divided"
-      ],
       "relationships": [
         {
           "to": "heathcliff",
@@ -284,11 +247,6 @@
       "summary": "Kind, cultivated, physically no match for anybody, and the only adult in the first half of the novel who behaves well to a child. The book is not on his side and does not pretend he deserves what happens to him; his worst act is to raise a daughter inside a park wall and tell her nothing.",
       "clue": "He reads in his library while his wife starves herself upstairs, and dies with his daughter, just escaped from the Heights, at his bedside.",
       "firstAppearance": "Chapter 6",
-      "traits": [
-        "gentle",
-        "ineffective",
-        "loving"
-      ],
       "relationships": [
         {
           "to": "catherine-earnshaw",
@@ -325,11 +283,6 @@
       "summary": "She raises three generations, and almost every significant concealment in the plot is hers: she does not tell Catherine that Heathcliff is listening, does not tell Edgar that his wife is ill, and does not tell anyone where Cathy has gone. She presents herself throughout as the sensible one.",
       "clue": "She has been in service at both houses since childhood, tells the whole story to a stranger, and is at the centre of every secret she reports.",
       "firstAppearance": "Chapter 4",
-      "traits": [
-        "capable",
-        "managing",
-        "far from impartial"
-      ],
       "relationships": [
         {
           "to": "lockwood",
@@ -368,11 +321,6 @@
       "summary": "A man who congratulates himself on a taste for solitude he does not have, and who is wrong about every person he meets in the first three chapters. He is the reader’s proxy, and Brontë makes him unreliable on purpose: everything in the book has passed through the judgement of a man who thinks a violent household is picturesque.",
       "clue": "He rents a house to be alone, immediately calls on his landlord twice, and mistakes a heap of dead rabbits for a litter of kittens.",
       "firstAppearance": "Chapter 1",
-      "traits": [
-        "self-flattering",
-        "obtuse",
-        "curious"
-      ],
       "relationships": [
         {
           "to": "nelly-dean",
@@ -402,11 +350,6 @@
       "summary": "He begins the cruelty and is destroyed by it more thoroughly than his victim. The novel is careful to date his collapse to his wife’s death, which makes him the first of the book’s men to be undone by a bereavement, and the template for what happens to Heathcliff twenty years later.",
       "clue": "He is displaced in his father’s affections by a stranger, takes it out on him for years, and gambles the family land away to him over cards.",
       "firstAppearance": "Chapter 4",
-      "traits": [
-        "jealous",
-        "grieving",
-        "self-destroying"
-      ],
       "relationships": [
         {
           "to": "heathcliff",
@@ -442,11 +385,6 @@
       "summary": "She has read enough novels to want a dangerous man and is warned in plain terms by the one person who knows. Her long letter from the Heights is the only sustained account in the book from inside the house that is not Nelly’s, and she is one of the few characters who gets out.",
       "clue": "She is told exactly what the man is, marries him anyway, and escapes south to raise her son alone.",
       "firstAppearance": "Chapter 6",
-      "traits": [
-        "romantic",
-        "disabused",
-        "resourceful"
-      ],
       "relationships": [
         {
           "to": "heathcliff",
@@ -473,11 +411,6 @@
       "summary": "Her mother’s temper with her father’s kindness attached, raised inside a park and let out too late. What distinguishes her is that she can be taught and can teach: the second half of the book turns on her deciding to make a friend of the man she has been mocking.",
       "clue": "She is kept inside a park wall for thirteen years, married by force to a dying cousin, and spends the last chapters teaching a grown man to read.",
       "firstAppearance": "Chapter 18",
-      "traits": [
-        "quick-tempered",
-        "brave",
-        "teachable"
-      ],
       "relationships": [
         {
           "to": "hareton",
@@ -515,11 +448,6 @@
       "summary": "Deliberately kept illiterate by the man who was kept illiterate before him, and the only person in the book who grieves for Heathcliff. His late attempt at reading, undertaken to impress a girl who has been laughing at him, is the novel’s one unambiguous piece of progress.",
       "clue": "His name is over the door of the house he works in as a labourer, and he cannot read it.",
       "firstAppearance": "Chapter 2",
-      "traits": [
-        "proud",
-        "loyal",
-        "learning late"
-      ],
       "relationships": [
         {
           "to": "heathcliff",
@@ -557,11 +485,6 @@
       "summary": "A Calvinist who has outlived four masters and disapproves of all of them, speaking a broad West Riding that Charlotte Brontë later thinned out for southern readers. He supplies the novel’s religion, and the fact that it is entirely joyless is part of the argument.",
       "clue": "He quotes scripture at everyone in a dialect half the household pretends not to understand, and serves the house through four generations of it.",
       "firstAppearance": "Chapter 1",
-      "traits": [
-        "censorious",
-        "enduring",
-        "unhelpful"
-      ],
       "relationships": [
         {
           "to": "heathcliff",
@@ -1319,125 +1242,23 @@
   ],
   "criticalViews": [
     {
-      "position": "A structure of narrators",
-      "summary": "Formalist criticism has concentrated on the nesting: everything the reader learns is filtered through a self-satisfied tenant and a servant with her own stake in the events. On this reading the novel’s subject is the impossibility of getting at what happened.",
-      "counter": "It can make the book sound cooler than it is; the speeches in Chapters 9, 15 and 16 survive every layer of mediation and are the reason anyone reads it."
+      "critic": "Charlotte Brontë",
+      "work": "Editor’s Preface to the New Edition of Wuthering Heights",
+      "year": "1850",
+      "summary": "After Emily’s death Charlotte defended the novel to readers who found it coarse, explaining it by her sister’s isolated life. Of Heathcliff she wrote: “Whether it is right or advisable to create beings like Heathcliff, I do not know: I scarcely think it is.”"
     },
     {
-      "position": "Property, class and the outsider",
-      "summary": "A materialist reading follows the deeds: Heathcliff acquires both estates by mortgage, marriage settlement and will, and needs force only once, to make Cathy marry Linton. The novel then becomes an account of how landed families can be destroyed by their own legal instruments.",
-      "counter": "It has little to say about why he abandons the victory in Chapter 33, at exactly the moment the scheme is complete."
+      "critic": "Q. D. Leavis",
+      "essay": "A Fresh Approach to Wuthering Heights",
+      "work": "Lectures in America",
+      "year": "1969",
+      "summary": "Leavis argued that the novel is best read as a realistic account of social and economic change in the north of England, and that the Gothic and romantic elements are not its centre."
     },
     {
-      "position": "Heathcliff’s origins",
-      "summary": "The novel supplies a date, a port and a vocabulary (Liverpool, ‘it’, ‘owner’, a dark-skinned child nobody can place), and no explanation. Critics and, increasingly, casting directors have pressed on what the silence is doing.",
-      "counter": "The evidence is deliberately incomplete, and readings that settle the question can close down an indeterminacy the book seems to have chosen."
-    },
-    {
-      "position": "The second half matters",
-      "summary": "Against the tradition, begun in performance and fixed by the 1939 film, of ending at Catherine’s death, many readers argue that the novel only makes sense as two generations: the repetitions are the argument, and the whole design leads to Hareton’s reading lesson.",
-      "counter": "The second generation’s resolution is quieter and less quoted, and even sympathetic readers concede that the book’s energy belongs to the first."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Brontë’s use of narrators shape the reader’s response?",
-      "focus": "Frame, mediation and reliability",
-      "plan": [
-        "Establish the structure: Lockwood writes, Nelly tells, and letters and reported speech supply the rest.",
-        "Show Lockwood being wrong in Chapters 1 to 3, so that his authority is undermined before the story begins.",
-        "Examine Nelly’s silences (she watches Heathcliff leave in Chapter 9 and says nothing of it until after supper, by which time he has gone) and ask what her interest is.",
-        "The novel’s central declarations are all reported, never witnessed: consider what they lose by it.",
-        "Close on the last paragraph, where the calmest sentence in the book is given to its least reliable narrator."
-      ]
-    },
-    {
-      "question": "Discuss the presentation of Heathcliff.",
-      "focus": "Origin, method and the failure of revenge",
-      "plan": [
-        "Begin with what the novel withholds: no surname, no parentage, no account of the three years away.",
-        "Read the Liverpool passage closely, noting the pronouns and the word ‘owner’.",
-        "Trace the method (cards, marriage, guardianship, will) and note how much of it the law allows.",
-        "Use Chapter 17’s promise to twist Hareton, and ask why Hareton is the one who mourns him.",
-        "Finish on Chapter 33: total victory and no appetite for it, and what that tells us about the motive."
-      ]
-    },
-    {
-      "question": "‘The second generation is the point of the book.’ How far do you agree?",
-      "focus": "Repetition, education and the ending",
-      "plan": [
-        "Set out the parallels: two Catherines, two degraded boys, two forced or unequal marriages.",
-        "Show what changes: Cathy teaches Hareton to read, where Hindley withheld books from Heathcliff.",
-        "Use the breakfast scene in Chapter 33, where the alliance between Cathy and Hareton defeats Heathcliff without any argument.",
-        "Consider the adaptations that end at Catherine’s death, and what they lose.",
-        "Decide whether the quiet second ending answers the first half or merely survives it."
-      ]
-    },
-    {
-      "question": "What use does Brontë make of the two houses and the moor?",
-      "focus": "Setting, class and thresholds",
-      "plan": [
-        "Start with the first page’s gloss on ‘wuthering’, and the thorns and firs bent one way.",
-        "Contrast the Heights with the crimson-carpeted Grange the children look in at through a window.",
-        "Track the thresholds: windows, locked doors, the hand at the broken pane, the swinging lattice at the end.",
-        "Use Catherine’s dream of being flung out of heaven onto the heath as the novel’s central image of belonging.",
-        "Conclude with the last paragraph’s moths and harebells, and whether the moor finally settles anything."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Catherine says she is Heathcliff. Is that a description of love, or of something else entirely?",
-    "Nelly Dean is in the room for almost every disaster in the book. How much of it is her fault?",
-    "The novel tells us where Heathcliff was found and nothing about where he came from. Why leave it open?",
-    "Heathcliff wins completely and then loses interest. Does the ending punish him, forgive him, or neither?",
-    "Does the last sentence of the novel settle the question of the ghosts, or deliberately fail to?"
-  ],
-  "related": [
-    {
-      "href": "/books/jane-eyre/",
-      "why": "Published the same year by the sister in the next room, and the strongest possible contrast in what a narrator can be trusted to say."
-    },
-    {
-      "href": "/books/dracula/",
-      "why": "The later Gothic novel built entirely out of documents and witnesses, and equally unwilling to let the reader see anything directly."
-    },
-    {
-      "href": "/books/tess-of-the-durbervilles/",
-      "why": "The same landscape-as-fate method applied to a woman with even fewer options, half a century on."
-    },
-    {
-      "href": "/books/frankenstein/",
-      "why": "Nested narrators, a creature without a name and an education withheld: the structure Brontë works in was already there."
-    },
-    {
-      "href": "/books/the-woman-in-white/",
-      "why": "Marriage settlements, guardianship and confinement used as instruments of ruin, worked out at sensation-novel length."
-    }
-  ],
-  "videos": [
-    {
-      "title": "Wuthering Heights: Who is Heathcliff?",
-      "provider": "youtube-nocookie",
-      "id": "hsJ7CGN8tPc",
-      "url": "https://www.youtube.com/watch?v=hsJ7CGN8tPc",
-      "note": "Professor John Bowen on Heathcliff, filmed on the moors above Haworth.",
-      "source": "British Library"
-    },
-    {
-      "title": "Wuthering Heights: Violence and cruelty",
-      "provider": "youtube-nocookie",
-      "id": "ImqD5e2_4OE",
-      "url": "https://www.youtube.com/watch?v=ImqD5e2_4OE",
-      "note": "A British Library film on Emily Brontë's use of violence in the novel.",
-      "source": "British Library"
-    },
-    {
-      "title": "Wuthering Heights: Fantasy and realism",
-      "provider": "youtube-nocookie",
-      "id": "fyGNVUAJvpA",
-      "url": "https://www.youtube.com/watch?v=fyGNVUAJvpA",
-      "note": "A British Library film on the fairy-tale and Gothic elements at the edges of the novel.",
-      "source": "British Library"
+      "critic": "Terry Eagleton",
+      "work": "Myths of Power: A Marxist Study of the Brontës",
+      "year": "1975",
+      "summary": "Eagleton reads Heathcliff’s rise in terms of property and class: an outsider who gains the land and houses of the families who rejected him, by using their own laws of marriage and inheritance against them."
     }
   ]
 }

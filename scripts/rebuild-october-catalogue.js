@@ -7,6 +7,12 @@ const start = '<!-- ASTOR OCTOBER CATALOGUE START -->';
 const end = '<!-- ASTOR OCTOBER CATALOGUE END -->';
 const esc = value => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 const asset = name => '/' + encodeURIComponent(name).replace(/'/g, '%27');
+// Titles marked *like this* in the history paragraphs are set in italics.
+const prose = text => esc(text).replace(/\*([^*]+)\*/g, '<em>$1</em>');
+const history = book => (book.history || []).map(section => `<section class="section-title" id="history"><h2>${esc(section.heading)}</h2></section><div class="book-reading">${section.paragraphs.map(text => `<p>${prose(text)}</p>`).join('')}</div>`).join('\n  ');
+const sources = book => (book.sources || []).length
+  ? `<section class="section-title" id="sources"><h2>Sources</h2></section><nav class="book-source-grid" aria-label="Sources for ${esc(book.title)}">${book.sources.map(source => `<a href="${esc(source.url)}"><strong>${esc(source.label)}</strong><span>${esc(source.note)}</span></a>`).join('')}</nav>`
+  : '';
 const dateLabel = date => new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(date));
 
 function page(book) {
@@ -16,9 +22,11 @@ function page(book) {
 <main id="main-content" class="page-wrap astor-book-record">
   <nav class="book-breadcrumb" aria-label="Breadcrumb"><a href="/library/">All books</a><span aria-hidden="true">/</span><a href="${esc(book.collectionHref)}">${esc(book.collection)}</a><span aria-hidden="true">/</span><span aria-current="page">${esc(book.title)}</span></nav>
   <section class="page-intro astor-book-hero"><div><p class="kicker">${esc(book.author)}</p><h1>${esc(book.title)}</h1><p class="deck">${esc(book.summary)}</p></div><aside class="source-note astor-book-cover"><img src="${asset(book.image)}" alt="${esc(book.title)} — Astor paperback cover"><div><p><strong>Astor annotated edition</strong><br>Paperback · Edited by ${esc(book.editor)}</p><div class="button-row"><a class="button primary" href="${esc(book.purchaseUrl)}">View paperback edition</a></div></div></aside></section>
-  <div class="catalogue-essays"><section class="catalogue-essay" id="description"><h2>About this edition</h2>${book.descriptionParagraphs.map(text => `<p>${esc(text)}</p>`).join('')}<p><a href="${esc(book.amazonUrl)}">Read the description on Amazon</a></p></section>
-  <section class="catalogue-essay" id="edition"><h2>Inside the book</h2><ul class="edition-includes">${book.editionIncludes.map(text => `<li>${esc(text)}</li>`).join('')}</ul></section>
-  <section class="catalogue-essay" id="edition-details"><h2>Paperback details</h2><p><strong>Publication:</strong> ${esc(dateLabel(book.publicationDate))}<br><strong>Length:</strong> ${book.numberOfPages} pages<br><strong>Language:</strong> ${esc(book.language)}<br><strong>Editor:</strong> ${esc(book.editor)}</p><p><strong>ISBN-13:</strong> ${esc(book.isbn)}<br><strong>ASIN:</strong> ${esc(book.asin)}<br><strong>Dimensions:</strong> ${esc(book.dimensions)}<br><strong>Publisher:</strong> ${esc(book.publisher)}</p></section></div>
+  <section class="section-title" id="edition"><h2>What this Astor edition contains</h2><ul class="edition-includes">${book.editionIncludes.map(text => `<li>${esc(text)}</li>`).join('')}</ul></section>
+  <div class="catalogue-essays"><section class="catalogue-essay" id="description"><h2>About this edition</h2>${book.descriptionParagraphs.map(text => `<p>${esc(text)}</p>`).join('')}<p><a href="${esc(book.amazonUrl)}">Read the description on Amazon</a></p></section></div>
+  ${history(book)}
+  <div class="catalogue-essays"><section class="catalogue-essay" id="edition-details"><h2>The paperback</h2><dl class="book-details"><div><dt>Published</dt><dd>${esc(dateLabel(book.publicationDate))}</dd></div><div><dt>Pages</dt><dd>${book.numberOfPages}</dd></div><div><dt>ISBN-13</dt><dd>${esc(book.isbn)}</dd></div><div><dt>ASIN</dt><dd>${esc(book.asin)}</dd></div><div><dt>Size</dt><dd>${esc(book.dimensions)}</dd></div><div><dt>Editor</dt><dd>${esc(book.editor)}</dd></div></dl></section></div>
+  ${sources(book)}
   <nav class="book-end-nav" aria-label="End of page"><a href="#main-content">Back to the top</a><a href="${esc(book.collectionHref)}">More in ${esc(book.collection)}</a><a href="/library/">All books</a></nav>
 </main><footer class="site-footer"><p>Astor Library</p><a href="/library/">All books</a></footer></body></html>\n`;
 }

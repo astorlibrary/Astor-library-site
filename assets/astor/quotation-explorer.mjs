@@ -306,7 +306,7 @@ function card(quotation) {
   const techniques = (quotation.techniques || []).map(id => tagButton('technique', id)).filter(Boolean);
 
   const links = el('p', { class: 'astor-qx-links' }, [
-    el('a', { href: quotation.bookHref + '#astor-quote-' + quotation.id, text: 'Read it in the study guide' })
+    el('a', { href: '/guides/' + quotation.bookSlug + '/quotations/#astor-quote-' + quotation.id, text: 'Read it in the study guide' })
   ]);
   if (isRemembering()) {
     const id = quotation.bookSlug + ':' + quotation.id;

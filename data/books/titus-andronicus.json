@@ -21,33 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
     "note": "Other modern editions vary by a line or two. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1592",
-      "note": "Early, and possibly the earliest of the tragedies. Ben Jonson’s 1614 joke about the play’s admirers implies a first audience around 1589."
-    },
-    {
-      "label": "First staged",
-      "value": "24 January 1594",
-      "note": "Philip Henslowe entered a performance of Titus & ondronicus at the Rose in his account book."
-    },
-    {
-      "label": "First printed",
-      "value": "1594",
-      "note": "John Danter’s quarto for Edward White and Thomas Millington, the first printing of any Shakespeare play. One copy survives, in the Folger."
-    },
-    {
-      "label": "Sources",
-      "value": "No single narrative source",
-      "note": "Ovid’s Philomela, Seneca’s Thyestes, the Lucrece story and a mass of Roman material, combined by Shakespeare himself."
-    },
-    {
-      "label": "Shape",
-      "value": "Five acts, fourteen scenes",
-      "note": "Act I is one unbroken scene; the Folio adds the fly scene at 3.2, which no quarto prints."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -168,11 +141,6 @@
       "summary": "He has buried twenty-one sons for Rome and cannot imagine an argument that Rome’s forms will not settle. He gives away the empire, sacrifices a prisoner because the rite requires it, and kills his own son for standing in a doorway. When the forms stop working he goes to the stones, then to the gods by arrow, and finally does the arithmetic himself with a knife and a pie dish.",
       "clue": "Refuses the empire, then kills his own son for blocking a door, and ends the play dressed as a cook.",
       "firstAppearance": "1.1",
-      "traits": [
-        "ceremonious",
-        "obstinate",
-        "terrifyingly literal"
-      ],
       "relationships": [
         {
           "to": "lavinia",
@@ -220,11 +188,6 @@
       "summary": "She is bargained over by two men in the first scene and has her tongue and hands cut off in the second act so that she can name nobody. What follows is the hardest thing in Shakespeare to stage: forty lines in which her uncle describes her, scene after scene in which her family guesses at her meaning, and then the moment she takes a staff in her mouth and writes two names in the sand.",
       "clue": "Writes the names of her attackers in sand with a staff held in her mouth, guided by her stumps.",
       "firstAppearance": "1.1",
-      "traits": [
-        "sharp-tongued at first",
-        "silenced",
-        "insistent"
-      ],
       "relationships": [
         {
           "to": "titus",
@@ -265,11 +228,6 @@
       "summary": "She begins the play kneeling in the street to beg for her son’s life and is refused in the name of piety. Within two hundred lines she is empress, and she spends the rest of the play making Rome pay. The play lets her be right about the sacrifice and monstrous about everything after it, and she never pretends the two are connected by anything but appetite.",
       "clue": "Kneels in the street for her eldest son’s life, is refused, and is crowned empress in the same scene.",
       "firstAppearance": "1.1",
-      "traits": [
-        "eloquent",
-        "patient",
-        "pitiless"
-      ],
       "relationships": [
         {
           "to": "saturninus",
@@ -312,11 +270,6 @@
       "summary": "He buries the gold, writes the letter, guides the brothers to the pit, talks Titus out of his hand and watches through a crack in the wall while the heads come back. He is also the only parent in the play who protects a child: when his black son is born he kills the nurse, refuses the empress and carries the baby off. On the ladder he confesses everything and regrets one good deed.",
       "clue": "Laughs until his own eyes are wet at the sight of Titus getting two heads back for his hand, then risks everything for his newborn son.",
       "firstAppearance": "1.1",
-      "traits": [
-        "inventive",
-        "unrepentant",
-        "fiercely paternal"
-      ],
       "relationships": [
         {
           "to": "tamora",
@@ -366,11 +319,6 @@
       "summary": "He is given the empire by the man he immediately insults, and loses Lavinia to his brother within a hundred lines of claiming her. Everything he does afterwards is reaction: he marries Tamora on the spot, condemns Titus’s sons on evidence Aaron arranged for him, orders a clown hanged for carrying a letter, and dies at his own banquet without ever understanding who was moving him.",
       "clue": "Chooses a new bride mid-scene when the first one is carried off, and never asks who arranged the evidence he sentences men on.",
       "firstAppearance": "1.1",
-      "traits": [
-        "touchy",
-        "credulous",
-        "vindictive"
-      ],
       "relationships": [
         {
           "to": "tamora",
@@ -407,11 +355,6 @@
       "summary": "He asks for the sacrifice in the first scene, which makes him the cause of the revenge as much as his father. Banished for trying to rescue his brothers, he comes back at the head of the army of the people whose prince he had burned. He swears by a god Aaron does not believe in to keep a baby alive, and keeps the promise while sentencing its father to starve in the ground.",
       "clue": "Calls for the sacrifice in Act I, then returns with a Gothic army to avenge what it caused.",
       "firstAppearance": "1.1",
-      "traits": [
-        "dutiful",
-        "soldierly",
-        "unreflective"
-      ],
       "relationships": [
         {
           "to": "titus",
@@ -448,11 +391,6 @@
       "summary": "He offers Rome to Titus, argues him into burying Mutius, and finds Lavinia in the wood. His long speech over her has been the play’s most argued-about passage for two centuries: it is beautiful, it is about Ovid, and it does nothing for her. He kills the fly, thinks of the staff in the sand, and is left at the end trying to talk a city back into one piece.",
       "clue": "Speaks forty lines of elegant verse to a niece who cannot answer, and later kills a fly at dinner.",
       "firstAppearance": "1.1",
-      "traits": [
-        "civic",
-        "literary",
-        "helpless"
-      ],
       "relationships": [
         {
           "to": "titus",
@@ -490,11 +428,6 @@
       "summary": "He and his brother open Act II with swords drawn over Lavinia and are still finishing each other’s sentences when Titus cuts their throats. Demetrius supplies the reasoning: she is a woman, therefore may be won; she is Lavinia, therefore must be loved. He puts the first knife into Bassianus, talks Tamora out of killing Lavinia on the spot (thrash the corn first, burn the straw after) and jeers at her to go and tell.",
       "clue": "Tells his brother that more water goes by the mill than the miller knows of, and strikes Bassianus first.",
       "firstAppearance": "1.1",
-      "traits": [
-        "coarse",
-        "quick",
-        "unimaginative"
-      ],
       "relationships": [
         {
           "to": "tamora",
@@ -532,11 +465,6 @@
       "summary": "The younger and touchier of the pair, mocked by his brother for the dancing-rapier their mother gave him in the quarrel that opens Act II. He orders Bassianus’s body dragged to a secret hole, then tells Lavinia to write her meaning down if her stumps will let her, a joke the play turns into the instrument of his death. Watching Alarbus led away in 1.1, he says Scythia was never half so barbarous, and he is not counting himself.",
       "clue": "Jeers that Lavinia should write with her stumps, and is bound and bled over a basin she holds.",
       "firstAppearance": "1.1",
-      "traits": [
-        "hot-tempered",
-        "boastful",
-        "cruel"
-      ],
       "relationships": [
         {
           "to": "tamora",
@@ -574,11 +502,6 @@
       "summary": "He carries the books his aunt chases him for, and his copy of Ovid is what lets the family finally learn who attacked her. He offers to stab Chiron and Demetrius with a dagger and is told there is a better way. At the end he cannot get a word out for crying, which in this play is the only honest response anyone manages to the sight of the dead.",
       "clue": "Drops his schoolbooks running from his aunt, and one of them is the Metamorphoses.",
       "firstAppearance": "3.2",
-      "traits": [
-        "bookish",
-        "frightened",
-        "loyal"
-      ],
       "relationships": [
         {
           "to": "lucius",
@@ -1402,99 +1325,5 @@
       "lon": -1.7069,
       "note": "Where Deborah Warner staged the play in 1987, in the production that settled its modern reputation."
     }
-  ],
-  "criticalViews": [
-    {
-      "position": "George Peele wrote part of it",
-      "summary": "Stylistic and statistical work, most insistently by Brian Vickers, assigns Act I, 2.1 and 4.1 to George Peele on the evidence of vocabulary, verse habits and a taste for classical roll-calls that thins out sharply after the first act.",
-      "counter": "The tests disagree with each other about where the seams fall, and the scenes credited to Peele include the sacrifice of Alarbus, which every later act depends on. A collaborator who set up the whole machine is hard to distinguish from an author writing early."
-    },
-    {
-      "position": "Aaron is the play’s clearest moral intelligence",
-      "summary": "He sees Rome accurately when nobody else does, names the hypocrisy of fair men calling for grace, and protects a child while everyone else avenges one. Readings since the 1980s have moved him out of the villain’s slot and into the centre of the play.",
-      "counter": "He also invents the pit, the letter and the severed-hand trick, and tells Lucius he wishes he had done ten thousand worse things. A reading that rescues him has to explain why the play gives him so much pleasure in the suffering we are also meant to condemn."
-    },
-    {
-      "position": "The play is about who is permitted to speak for a victim",
-      "summary": "Lavinia is described, interpreted, wept over and finally killed, and the one time she testifies she has to do it with a stick in her teeth. Feminist criticism from the 1980s on has read the play as an exposure of how a woman’s injury becomes everyone else’s material.",
-      "counter": "The exposure and the exploitation use the same forty lines. Marcus’s speech is written to be admired, and a production that plays it for beauty reproduces the appropriation the reading objects to; one that plays it for embarrassment loses the verse the play actually wrote."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How far is Titus responsible for what happens to his family?",
-      "focus": "Ritual, choice and consequence in Act I",
-      "plan": [
-        "Start with the sacrifice of Alarbus at 1.1 and note that Lucius asks for it, Titus grants it, and Tamora argues against it in Rome’s own terms and loses.",
-        "Follow the decisions of the rest of the scene: refusing the empire, giving it to Saturninus, killing Mutius, and then accepting Tamora’s public reconciliation at face value.",
-        "Set Tamora’s aside at 1.1.452 beside her answer to Lavinia at 2.3.161, and show that she names the refusal in the street as the exact debt she is collecting.",
-        "Weigh the counter-case: the trap at the pit, the forged letter and the bargain for his hand are Aaron’s inventions, and Titus could not have foreseen any of them.",
-        "Close by asking what the fly scene at 3.2 shows about how much of his later method was in him from the first act."
-      ]
-    },
-    {
-      "question": "‘The play makes Lavinia’s body do the work of speech.’ Discuss.",
-      "focus": "Silence, testimony and staging",
-      "plan": [
-        "Establish that she speaks freely and sharply in 2.3, arguing with Tamora, so the silence that follows is something done to her and not a character trait.",
-        "Examine Marcus’s speech at 2.4 in detail, including the word but at 2.4.38, and decide whether the verse attends to her or replaces her.",
-        "Read Titus’s promise to wrest an alphabet at 3.2.42 as both devotion and a claim on her meaning.",
-        "Treat 4.1.78 as the turning point: Lavinia names the crime in legal Latin and the men in plain Roman letters, using a staff and her stumps.",
-        "Finish with her death at 5.3.46, where her father asks Saturninus for a precedent and kills her without asking her anything."
-      ]
-    },
-    {
-      "question": "What does Aaron contribute to the play beyond villainy?",
-      "focus": "Race, fatherhood and the limits of sympathy",
-      "plan": [
-        "List what he actually engineers: the gold, the letter, the pit, the hand, the heads, and his own delight at the crack in the wall in 5.1.",
-        "Set against it the language Rome uses about him, from the nurse’s loathsome as a toad to Lucius’s incarnate devil, and note how much of it is about colour.",
-        "Work through 4.2, where he kills the nurse, defies Tamora and takes the child, and compare his defence of his son with Titus’s treatment of Mutius and Lavinia.",
-        "Use 3.1.205 and 4.2.100 to show how he converts an imposed insult into a claim, and ask whether that is defiance or self-hatred taking a proud form.",
-        "End on 5.3.186 and the fact that the one good deed he repents is the child who is alive and safe while he is buried to the chest."
-      ]
-    },
-    {
-      "question": "Does the ending of Titus Andronicus restore order?",
-      "focus": "Revenge, settlement and Lucius’s Rome",
-      "plan": [
-        "Count what is settled in 5.3: four deaths in some twenty lines, an emperor acclaimed, burials assigned and a sentence passed on Aaron.",
-        "Read Marcus’s sheaf-and-body speech at 5.3.70 and ask whether the civic vocabulary has earned its return after three acts in which limbs came off for real.",
-        "Test Lucius’s credentials: he demanded the sacrifice in Act I, he returns with the army of the people whose prince he burned, and he swears by a god to a man who has none.",
-        "Look at the final orders, which reward and punish through burial, and note that burial is the currency the play opened with.",
-        "Decide what the last two lines about the birds do to the ending’s claim to have finished with cruelty."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Tamora asks for mercy in Rome’s own language and is refused on a point of rite. Is Titus wrong at 1.1, or only unlucky?",
-    "Marcus’s forty lines over Lavinia are some of the finest verse in the play. Should a production let them be beautiful?",
-    "Titus laughs when the heads arrive. What has to have happened to a person for that to be the response?",
-    "Aaron saves his son and regrets nothing else. Does that one act change how you read everything he does before it?",
-    "Chiron jeers that Lavinia should write with her stumps, and two acts later she does. Is the play satisfying here, or merely neat?",
-    "Lucius ends the play as emperor, having asked for the sacrifice that started it. What sort of Rome has he inherited?"
-  ],
-  "related": [
-    {
-      "href": "/books/the-rape-of-lucrece/",
-      "why": "The play names Lucrece three times and swears its revenge oath on Brutus’s example; the poem is the story Titus and Marcus keep reaching for when they need a precedent."
-    },
-    {
-      "href": "/books/hamlet/",
-      "why": "The other Shakespeare revenge play, with the same machinery of feigned madness, a delayed reckoning and a court that cannot be told the truth directly."
-    },
-    {
-      "href": "/books/coriolanus/",
-      "why": "Shakespeare’s other Roman tragedy of a general the city honours and then cannot live with, ending again with a soldier leading an enemy army home."
-    },
-    {
-      "href": "/books/othello/",
-      "why": "The later play that puts a black man at the centre of the tragedy, and lets the audience hear how Venice talks about him when it thinks he is not listening."
-    },
-    {
-      "href": "/books/the-duchess-of-malfi/",
-      "why": "Webster takes up the same stagecraft of horror as spectacle, including a scene of body parts presented to a grieving relative as a message."
-    }
-  ],
-  "videos": []
+  ]
 }

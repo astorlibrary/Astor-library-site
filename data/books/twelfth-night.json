@@ -21,28 +21,6 @@
     "url": "https://shakespeare.mit.edu/twelfth_night/full.html",
     "note": "The Astor edition counts the prose by its printed lines; other modern editions vary. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
-  "atAGlance": [
-    {
-      "label": "Written",
-      "value": "c. 1601",
-      "note": "Probably composed in 1601, shortly before the earliest recorded performance."
-    },
-    {
-      "label": "First recorded performance",
-      "value": "2 February 1602",
-      "note": "At Middle Temple Hall, noted in the diary of the law student John Manningham."
-    },
-    {
-      "label": "First printed",
-      "value": "1623",
-      "note": "The First Folio, among the comedies, as Twelfe Night, Or what you will."
-    },
-    {
-      "label": "Chief source",
-      "value": "Barnabe Riche",
-      "note": "The twin-and-disguise story comes chiefly from ‘Of Apolonius and Silla’, part of a wider European tradition."
-    }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -183,11 +161,6 @@
       "summary": "She invents Cesario as a practical measure and then finds the disguise doing things she did not intend: it makes her the confidant of the man she loves and the object of the woman she is sent to persuade. She is the only one who knows who Cesario is, and she can do nothing with the knowledge.",
       "clue": "Washed ashore in a country she has never heard of, she dresses as her drowned brother’s sort of young man and is sent to woo on behalf of the man she wants for herself.",
       "firstAppearance": "1.2",
-      "traits": [
-        "quick",
-        "candid under cover",
-        "patient by necessity"
-      ],
       "relationships": [
         {
           "to": "orsino",
@@ -225,11 +198,6 @@
       "summary": "Her seven-year mourning is a position, and it lasts until somebody argues with her. Once she falls, she is the most decisive person in the play: she declares herself, sends after the messenger and marries a stranger within three days of meeting his face on somebody else.",
       "clue": "She vows to weep for a brother for seven years, and is engaged to a man she has spoken to twice, and he is not the man she thinks.",
       "firstAppearance": "1.5",
-      "traits": [
-        "formal",
-        "abrupt once decided",
-        "generous to her household"
-      ],
       "relationships": [
         {
           "to": "viola",
@@ -277,11 +245,6 @@
       "summary": "He opens the play calling for music and stops it within eight lines, which is his whole character in one gesture. He has never spoken to Olivia; what he loves is the condition of loving, and the play transfers him to Viola with an ease that has troubled readers ever since.",
       "clue": "He orders up music as an appetite to be killed by excess, courts a woman he never meets, and proposes to his own page in the last scene.",
       "firstAppearance": "1.1",
-      "traits": [
-        "luxuriant",
-        "changeable",
-        "quick to threaten"
-      ],
       "relationships": [
         {
           "to": "viola",
@@ -311,11 +274,6 @@
       "summary": "Humourless, ambitious and right about the drinking, which makes him unbearable. The trick works because the letter tells him what he already believes; the punishment goes far beyond the joke, and the play lets him leave without being forgiven or forgiving.",
       "clue": "A steward who practises behaviour to his own shadow, appears before a woman in mourning in yellow stockings, and is shut in a dark room for smiling.",
       "firstAppearance": "1.5",
-      "traits": [
-        "self-loving",
-        "censorious",
-        "wronged"
-      ],
       "relationships": [
         {
           "to": "olivia",
@@ -354,11 +312,6 @@
       "summary": "He is paid by both households and belongs to neither, which lets him say things nobody else can. He sings the play’s best songs, performs the curate who torments Malvolio, and is left alone at the end to sing about a world where it rains every day.",
       "clue": "He is licensed to say anything, takes money from two rival houses, plays a priest in a false beard, and has the last word after everyone else has gone in to dinner.",
       "firstAppearance": "1.5",
-      "traits": [
-        "professional",
-        "unsentimental",
-        "musical"
-      ],
       "relationships": [
         {
           "to": "olivia",
@@ -395,11 +348,6 @@
       "summary": "He lives in his niece’s house at her expense and funds his drinking by keeping a rich fool on the premises. He is the engine of the misrule and the first to tire of it: when the duel goes wrong and he is bloodied, he turns on Sir Andrew and marries Maria offstage.",
       "clue": "He keeps a foolish knight in the house for his money, argues that virtue does not abolish cakes and ale, and discards his friend the moment he gets hurt.",
       "firstAppearance": "1.3",
-      "traits": [
-        "convivial",
-        "parasitic",
-        "casually cruel"
-      ],
       "relationships": [
         {
           "to": "andrew",
@@ -436,11 +384,6 @@
       "summary": "He is being robbed in plain sight and is happy about it. Shakespeare gives him one line of real pathos (“I was adored once too”) and then has him beaten by a stranger and cast off by the man who has been living on his money.",
       "clue": "He is kept in the house as a suitor and a source of funds, is frightened into a duel he cannot fight, and says, almost to himself, that he was adored once.",
       "firstAppearance": "1.3",
-      "traits": [
-        "vain",
-        "credulous",
-        "briefly touching"
-      ],
       "relationships": [
         {
           "to": "toby",
@@ -468,11 +411,6 @@
       "summary": "She writes the letter, and the letter is a piece of character analysis: she knows exactly what Malvolio wants to hear because she has watched him practise it. Her reward is marriage to Sir Toby, which happens offstage and is reported in a line.",
       "clue": "She can imitate her mistress’s hand closely enough to ruin a man, and her wages for it are a knight, announced in half a sentence.",
       "firstAppearance": "1.3",
-      "traits": [
-        "sharp",
-        "observant",
-        "vindictive with style"
-      ],
       "relationships": [
         {
           "to": "malvolio",
@@ -506,11 +444,6 @@
       "summary": "He arrives late, is given money by a man who loves him, and spends his scenes being greeted by strangers who know his name. Handed a countess, he does not question it; he checks that he is not mad, and marries her within the hour.",
       "clue": "Everyone in the city seems to know him, one of them hits him and another proposes marriage, and he concludes that the air and the sun are at least real.",
       "firstAppearance": "2.1",
-      "traits": [
-        "direct",
-        "grateful",
-        "decisive"
-      ],
       "relationships": [
         {
           "to": "viola",
@@ -547,11 +480,6 @@
       "summary": "He risks arrest in a hostile city because he cannot stand to be parted from Sebastian, and says so in terms no other character in the play uses about anybody. He is arrested, believes himself betrayed, and at the end is neither punished nor paired: he simply stops speaking.",
       "clue": "He follows a young man into a city where he is a wanted enemy, hands over his purse, and is left standing at the end with nothing settled.",
       "firstAppearance": "2.1",
-      "traits": [
-        "devoted",
-        "reckless",
-        "unresolved"
-      ],
       "relationships": [
         {
           "to": "sebastian",
@@ -1279,124 +1207,6 @@
       "lat": 51.8107,
       "lon": -0.03,
       "note": "Sir Toby tells Sir Andrew to write a challenge as big as the Great Bed of Ware, a celebrated inn bed and a standing English joke."
-    }
-  ],
-  "criticalViews": [
-    {
-      "position": "A festive comedy",
-      "summary": "Read through its title, the play belongs to the end of the Christmas holiday: misrule is licensed, a steward is mocked, appetites are indulged, and ordinary order returns at the close with three marriages.",
-      "counter": "The holiday reading has to account for a final scene in which one character leaves swearing revenge and another is left alone singing about rain."
-    },
-    {
-      "position": "A play about gender and desire",
-      "summary": "Much recent criticism concentrates on the fact that Orsino falls in love with Cesario and proposes while still calling her by that name, and on Olivia’s attraction to a woman. The disguise is what makes the real feeling possible.",
-      "counter": "The play still ends in the conventional pairings, and Viola’s own language about her disguise is uneasy."
-    },
-    {
-      "position": "The Malvolio problem",
-      "summary": "Since the eighteenth century the steward has drawn as much attention as the lovers, and productions differ over whether the dark-room scenes are broad comedy or an early study of cruelty licensed by a group.",
-      "counter": "Malvolio is also thoroughly unpleasant to almost everyone before the trick begins, and the play gives Maria and Feste real provocation."
-    }
-  ],
-  "essayQuestions": [
-    {
-      "question": "How does Shakespeare use disguise in Twelfth Night?",
-      "focus": "Identity, truth-telling and constraint",
-      "plan": [
-        "Begin with the practical origin of the disguise in 1.2: it is protection and employment before it is anything else.",
-        "Show how it lets truth out: the willow-cabin speech and the sister who never told her love.",
-        "Use 2.2 and 3.1 to trace Viola’s own judgement on the costume, from wickedness to ‘I am not what I am’.",
-        "Compare Feste’s beard in 4.2, a disguise nobody can see, and ask what it is for.",
-        "Close on the last scene: she never changes back on stage, and Orsino goes on calling her Cesario."
-      ]
-    },
-    {
-      "question": "Is the treatment of Malvolio funny?",
-      "focus": "Festivity, cruelty and the limits of a joke",
-      "plan": [
-        "Establish the provocation: he is rude to Feste in 1.5 and to the whole household in 2.3, and he is right about the noise.",
-        "Analyse why the letter works: it tells him what he already believes about himself.",
-        "Mark the change of register at 4.2, where a prank becomes confinement and a fake priest denies the evidence of his senses.",
-        "Weigh the last scene: Olivia calls it notorious abuse, Fabian explains it away, and Feste admits the revenge was personal.",
-        "Decide what a production owes him, and what is lost if he is played as sympathetic throughout."
-      ]
-    },
-    {
-      "question": "Discuss the presentation of love in the play.",
-      "focus": "Imagination, constancy and the speed of feeling",
-      "plan": [
-        "Open with Orsino’s appetite imagery in 1.1 and the fact that he courts Olivia only by proxy.",
-        "Set against it Olivia’s instant reversal in 1.5 and Sebastian’s acceptance of a marriage in 4.3.",
-        "Use 2.4 (‘She never told her love’) to show that Viola’s love is defined by waiting in silence.",
-        "Add Antonio, whose attachment to Sebastian is the most costly in the play and gets no ending at all.",
-        "Judge whether the three marriages are a resolution or simply where the music stops."
-      ]
-    },
-    {
-      "question": "What does Feste contribute to Twelfth Night?",
-      "focus": "The fool, the songs and the play’s ending",
-      "plan": [
-        "Note first that he is employed, paid by two houses, and absent without leave when the play begins.",
-        "Show his professional method in 1.5 and 3.1: proof by wordplay, and the claim that words have been corrupted.",
-        "Read the songs as a sequence: ‘O mistress mine’, ‘Come away, death’, and the final ballad.",
-        "Examine his part in 4.2 and his return to it at 5.1.361–362, where he names his own motive.",
-        "Conclude with the empty stage: what does it mean that a comedy ends with its fool alone?"
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Orsino proposes to a person he has known only as Cesario. Has he fallen in love with Viola, or with the servant?",
-    "Olivia mourns for seven years and abandons it in one scene. Is the play laughing at her, or at mourning?",
-    "Where exactly does the joke on Malvolio stop being funny, and can a production put the line somewhere else?",
-    "Antonio is given no partner and no explanation in the final scene. What should he be doing while the marriages are arranged?",
-    "The play ends with Feste’s song about the rain, where a comedy might end with a dance. What does that do to everything before it?"
-  ],
-  "related": [
-    {
-      "href": "/books/much-ado-about-nothing/",
-      "why": "The comedy just before it, and the other one where a gulling scene played for laughs runs beyond what its victims can forgive."
-    },
-    {
-      "href": "/books/as-you-like-it/",
-      "why": "The other great disguise comedy of these years, where the heroine’s boy’s clothes buy her freedom and do not trap her."
-    },
-    {
-      "href": "/books/comedy-of-errors/",
-      "why": "Shakespeare’s early twin play, and the plainest demonstration of how much the device changes when the twins are brother and sister."
-    },
-    {
-      "href": "/books/the-tempest/",
-      "why": "Another play that begins with a shipwreck and ends with a reunion, written at the far end of Shakespeare’s career."
-    },
-    {
-      "href": "/books/the-merchant-of-venice/",
-      "why": "A comedy that also leaves one character outside its happy ending, and leaves the audience to decide what to do about him."
-    }
-  ],
-  "videos": [
-    {
-      "title": "William Shakespeare's Twelfth Night - Mistaken Identity | National Theatre",
-      "provider": "youtube-nocookie",
-      "id": "dNW36aZIWjs",
-      "url": "https://www.youtube.com/watch?v=dNW36aZIWjs",
-      "note": "The National Theatre company discusses disguise and confusion in the play, illustrated with moments from the production.",
-      "source": "National Theatre"
-    },
-    {
-      "title": "Act 2 Scene 5 | Twelfth Night | 2017 | Royal Shakespeare Company",
-      "provider": "youtube-nocookie",
-      "id": "D55uvCvpcY8",
-      "url": "https://www.youtube.com/watch?v=D55uvCvpcY8",
-      "note": "The letter scene from the RSC production, in which Malvolio is gulled while the plotters watch from hiding.",
-      "source": "RSC Shakespeare Learning Zone"
-    },
-    {
-      "title": "She took the ring of me | Twelfth Night (2012) | Act 2 Scene 2 | Shakespeare's Globe",
-      "provider": "youtube-nocookie",
-      "id": "AvL6LiJkCJQ",
-      "url": "https://www.youtube.com/watch?v=AvL6LiJkCJQ",
-      "note": "Viola's ring soliloquy from the Globe's all-male production, showing the play performed under something like its original conditions.",
-      "source": "Shakespeare's Globe"
     }
   ]
 }

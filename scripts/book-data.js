@@ -187,22 +187,22 @@ function validateBook(book, fileName) {
     if (typeof place?.lon !== 'number' || place.lon < -180 || place.lon > 180) problems.push(at('has a place with an invalid longitude: ' + place?.name));
   }
 
-  for (const question of book.essayQuestions || []) {
-    if (!nonEmptyString(question?.question)) problems.push(at('has an essay prompt without a question'));
-    if (!Array.isArray(question?.plan) || question.plan.length < 3) problems.push(at('has an essay prompt without a plan: ' + String(question?.question).slice(0, 40)));
+  // Essay questions, discussion prompts, videos and related-reading lists
+  // were retired with the old study toolkit; the study guides do not use them.
+  for (const field of ['essayQuestions', 'discussionQuestions', 'videos', 'related', 'atAGlance']) {
+    if (book[field] !== undefined) problems.push(at('still carries the retired field ' + field));
   }
 
-  for (const video of book.videos || []) {
-    // Nothing unverified reaches a reader. A video needs a provider we trust,
-    // an id and a plain description of what it is.
-    for (const field of ['title', 'provider', 'id', 'url', 'note']) {
-      if (!nonEmptyString(video?.[field])) problems.push(at('has a video missing ' + field));
+  // A critical view names its critic, the work it comes from and the year,
+  // so a reader can find it. No "critics have argued".
+  for (const view of book.criticalViews || []) {
+    for (const field of ['critic', 'work', 'year', 'summary']) {
+      if (!nonEmptyString(view?.[field])) problems.push(at('has a critical view missing ' + field));
     }
-  }
-
-  for (const related of book.related || []) {
-    if (!/^\/[a-z0-9-/]+\/$/.test(related?.href || '')) problems.push(at('has a related link that is not a site path'));
-    if (!nonEmptyString(related?.why)) problems.push(at('has a related link with no reason to follow it'));
+    if (view?.year && !/^\d{4}(?:[–-]\d{2,4})?$/.test(view.year)) problems.push(at('has a critical view with an unclear year: ' + view.year));
+    const extra = Object.keys(view || {}).filter(key => !['critic', 'work', 'year', 'summary', 'essay'].includes(key));
+    if (extra.length) problems.push(at('has a critical view with unknown fields: ' + extra.join(', ')));
+    if (/^(critics|readers|scholars|some)\b/i.test(view?.critic || '')) problems.push(at('has a critical view not attributed to a named critic'));
   }
 
   return problems;

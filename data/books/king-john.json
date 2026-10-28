@@ -21,12 +21,6 @@
     "url": "https://www.gutenberg.org/cache/epub/100/pg100.txt",
     "note": "Every quotation here was checked word for word against this text. Other modern editions vary from the Astor numbering by a line or two. A few quotations follow the Astor Library Edition’s wording where this text reads differently."
   },
-  "atAGlance": [
-    { "label": "Written", "value": "c. 1595–96", "note": "Francis Meres names it among Shakespeare’s plays in 1598, which gives the outer limit." },
-    { "label": "First printed", "value": "1623", "note": "No quarto survives. The First Folio opens its section of histories with it." },
-    { "label": "Chief source", "value": "The Troublesome Reign of King John", "note": "An anonymous two-part play printed in 1591, with the chronicle traditions of Holinshed and Foxe behind it." },
-    { "label": "Shape", "value": "Five acts, sixteen scenes", "note": "Acts I and II are a single scene each; Act V breaks into seven short ones as the kingdom comes apart." }
-  ],
   "structure": [
     {
       "id": "act-1",
@@ -34,7 +28,11 @@
       "title": "France’s demand, and the Bastard’s choice",
       "summary": "Chatillion asks for the crown on Arthur’s behalf and is sent home with a threat. Eleanor then tells her son, in an aside, what his claim really rests on. The rest of the act is a Northamptonshire inheritance case: two brothers arguing over five hundred pounds a year, which Eleanor settles by offering the elder the chance to be called Richard the Lionheart’s son instead.",
       "scenes": [
-        { "ref": "1.1", "title": "Northampton", "summary": "France demands the crown for Arthur and gets war. The Faulconbridge brothers bring their suit; the elder gives up the estate, is knighted Sir Richard Plantagenet, and hears from his mother who his father was." }
+        {
+          "ref": "1.1",
+          "title": "Northampton",
+          "summary": "France demands the crown for Arthur and gets war. The Faulconbridge brothers bring their suit; the elder gives up the estate, is knighted Sir Richard Plantagenet, and hears from his mother who his father was."
+        }
       ]
     },
     {
@@ -43,7 +41,11 @@
       "title": "Angers, and the marriage of Blanche and Louis",
       "summary": "Everything happens in front of the walls of Angers. Both kings make their case to the townsmen, who decline to choose; a day’s fighting settles nothing; the Bastard proposes that France and England flatten the town together and fight afterwards. A citizen then suggests a wedding, and five provinces and thirty thousand marks buy the peace that the battle could not.",
       "scenes": [
-        { "ref": "2.1", "title": "Before the walls of Angers", "summary": "Claim and counter-claim, a drawn battle, the Bastard’s plan to level the town, the match between Blanche and the Dauphin, and the soliloquy that gives self-interest the name of Commodity." }
+        {
+          "ref": "2.1",
+          "title": "Before the walls of Angers",
+          "summary": "Claim and counter-claim, a drawn battle, the Bastard’s plan to level the town, the match between Blanche and the Dauphin, and the soliloquy that gives self-interest the name of Commodity."
+        }
       ]
     },
     {
@@ -52,10 +54,26 @@
       "title": "Pandulph breaks the peace, and John hints at Arthur’s murder",
       "summary": "Constance refuses to accept the settlement and sits on the ground to say so. Pandulph arrives, excommunicates John for keeping Stephen Langton out of Canterbury, and orders France to break the league it swore that morning. Battle follows, Arthur is taken, and John works his way round to asking Hubert for the boy’s death in two words.",
       "scenes": [
-        { "ref": "3.1", "title": "The French king's tent", "summary": "Constance curses the wedding day; Pandulph curses John; Philip lets go of England’s hand and Blanche finds she cannot wish either army well." },
-        { "ref": "3.2", "title": "Plains near Angers", "summary": "The Bastard comes on with Austria’s head; John puts Arthur into Hubert’s keeping." },
-        { "ref": "3.3", "title": "After the battle", "summary": "The Bastard is sent home to shake money out of the abbeys, and John talks Hubert towards a murder he will not name." },
-        { "ref": "3.4", "title": "The French camp", "summary": "Constance tears her hair down over Arthur’s capture; Pandulph explains to the Dauphin why the boy’s death will hand him England." }
+        {
+          "ref": "3.1",
+          "title": "The French king's tent",
+          "summary": "Constance curses the wedding day; Pandulph curses John; Philip lets go of England’s hand and Blanche finds she cannot wish either army well."
+        },
+        {
+          "ref": "3.2",
+          "title": "Plains near Angers",
+          "summary": "The Bastard comes on with Austria’s head; John puts Arthur into Hubert’s keeping."
+        },
+        {
+          "ref": "3.3",
+          "title": "After the battle",
+          "summary": "The Bastard is sent home to shake money out of the abbeys, and John talks Hubert towards a murder he will not name."
+        },
+        {
+          "ref": "3.4",
+          "title": "The French camp",
+          "summary": "Constance tears her hair down over Arthur’s capture; Pandulph explains to the Dauphin why the boy’s death will hand him England."
+        }
       ]
     },
     {
@@ -64,9 +82,21 @@
       "title": "Hubert and the irons, the second coronation and Arthur’s death",
       "summary": "Hubert heats the irons, hides two executioners behind the arras, and then cannot do it. John has himself crowned a second time and is told by his own lords that gilding gold is waste. News arrives of a French landing and of two deaths, Arthur jumps from a wall in disguise and breaks his neck, and the lords ride off to Saint Edmundsbury.",
       "scenes": [
-        { "ref": "4.1", "title": "A room in the castle", "summary": "Arthur talks Hubert out of blinding him, and Hubert sends him into hiding and lets the king believe he is dead." },
-        { "ref": "4.2", "title": "A room of state", "summary": "The second coronation, Pembroke’s request for Arthur’s release, the report of his death, the loss of Eleanor and Constance, and John turning on Hubert for having understood him." },
-        { "ref": "4.3", "title": "Before the castle", "summary": "Arthur leaps, and dies. The lords find the body, swear revenge, and leave; the Bastard is left holding what is left of England." }
+        {
+          "ref": "4.1",
+          "title": "A room in the castle",
+          "summary": "Arthur talks Hubert out of blinding him, and Hubert sends him into hiding and lets the king believe he is dead."
+        },
+        {
+          "ref": "4.2",
+          "title": "A room of state",
+          "summary": "The second coronation, Pembroke’s request for Arthur’s release, the report of his death, the loss of Eleanor and Constance, and John turning on Hubert for having understood him."
+        },
+        {
+          "ref": "4.3",
+          "title": "Before the castle",
+          "summary": "Arthur leaps, and dies. The lords find the body, swear revenge, and leave; the Bastard is left holding what is left of England."
+        }
       ]
     },
     {
@@ -75,13 +105,41 @@
       "title": "John yields to Rome, the French invasion and John’s death",
       "summary": "John hands his crown to Pandulph on Ascension Day and takes it back as the pope’s tenant, which fulfils a prophecy he had the prophet hanged for. Louis refuses to be called off. Melun, dying, warns the English lords that Louis has sworn to kill them, and they come home. John is poisoned by a monk; the Bastard loses half his army in the Lincolnshire tides and reaches the orchard in time to watch the king die.",
       "scenes": [
-        { "ref": "5.1", "title": "The crown surrendered", "summary": "John submits to Rome, hears that London has let the French in, and hands the conduct of the war to the Bastard." },
-        { "ref": "5.2", "title": "The French camp at Saint Edmundsbury", "summary": "Salisbury weeps over his own rebellion; Louis tells Pandulph that Rome has paid for none of this; the Bastard delivers John’s defiance." },
-        { "ref": "5.3", "title": "The field of battle", "summary": "John, sick with fever, leaves the field for Swinstead as word comes that the French supply ships are lost on the Goodwin Sands." },
-        { "ref": "5.4", "title": "Another part of the field", "summary": "The wounded Melun tells the English lords they are bought and sold, and they turn back to John." },
-        { "ref": "5.5", "title": "The Dauphin's camp", "summary": "Louis, who thinks the day went well, learns that Melun is dead, the lords are gone and his reinforcements are sunk." },
-        { "ref": "5.6", "title": "Near Swinstead Abbey", "summary": "Hubert finds the Bastard in the dark with news that a monk has poisoned the king; the Bastard reports half his force drowned in the Washes." },
-        { "ref": "5.7", "title": "The orchard at Swinstead", "summary": "John dies in a chair in the open air, Prince Henry succeeds, Pandulph has terms ready, and the Bastard kneels to the new king." }
+        {
+          "ref": "5.1",
+          "title": "The crown surrendered",
+          "summary": "John submits to Rome, hears that London has let the French in, and hands the conduct of the war to the Bastard."
+        },
+        {
+          "ref": "5.2",
+          "title": "The French camp at Saint Edmundsbury",
+          "summary": "Salisbury weeps over his own rebellion; Louis tells Pandulph that Rome has paid for none of this; the Bastard delivers John’s defiance."
+        },
+        {
+          "ref": "5.3",
+          "title": "The field of battle",
+          "summary": "John, sick with fever, leaves the field for Swinstead as word comes that the French supply ships are lost on the Goodwin Sands."
+        },
+        {
+          "ref": "5.4",
+          "title": "Another part of the field",
+          "summary": "The wounded Melun tells the English lords they are bought and sold, and they turn back to John."
+        },
+        {
+          "ref": "5.5",
+          "title": "The Dauphin's camp",
+          "summary": "Louis, who thinks the day went well, learns that Melun is dead, the lords are gone and his reinforcements are sunk."
+        },
+        {
+          "ref": "5.6",
+          "title": "Near Swinstead Abbey",
+          "summary": "Hubert finds the Bastard in the dark with news that a monk has poisoned the king; the Bastard reports half his force drowned in the Washes."
+        },
+        {
+          "ref": "5.7",
+          "title": "The orchard at Swinstead",
+          "summary": "John dies in a chair in the open air, Prince Henry succeeds, Pandulph has terms ready, and the Bastard kneels to the new king."
+        }
       ]
     }
   ],
@@ -93,14 +151,54 @@
       "summary": "He is quick and certain while there is an embassy to answer or a town to threaten, and lost the moment the question turns to what his title rests on. He wants Arthur dead without saying the words, blames Hubert when he believes it has been done, hands his crown to a legate to buy off an invasion, and dies of poison in an orchard while a messenger is still speaking.",
       "clue": "He answers France within the hour, and his own mother whispers to him that holding the crown is doing more for him than owning it.",
       "firstAppearance": "1.1",
-      "traits": ["quick to threaten", "evasive", "frightened by his own orders"],
       "relationships": [
-        { "to": "eleanor", "label": "son of, and advised by", "kind": "family" },
-        { "to": "arthur", "label": "uncle of, and gaoler of", "kind": "enemy", "stages": ["act-2", "act-3", "act-4"] },
-        { "to": "hubert", "label": "employs, then disowns", "kind": "service", "stages": ["act-3", "act-4"] },
-        { "to": "bastard", "label": "knights him, and comes to lean on him", "kind": "family" },
-        { "to": "pandulph", "label": "defies, then submits to", "kind": "enemy", "stages": ["act-3", "act-5"] },
-        { "to": "king-philip", "label": "fights, then makes a match with", "kind": "enemy", "stages": ["act-2", "act-3"] }
+        {
+          "to": "eleanor",
+          "label": "son of, and advised by",
+          "kind": "family"
+        },
+        {
+          "to": "arthur",
+          "label": "uncle of, and gaoler of",
+          "kind": "enemy",
+          "stages": [
+            "act-2",
+            "act-3",
+            "act-4"
+          ]
+        },
+        {
+          "to": "hubert",
+          "label": "employs, then disowns",
+          "kind": "service",
+          "stages": [
+            "act-3",
+            "act-4"
+          ]
+        },
+        {
+          "to": "bastard",
+          "label": "knights him, and comes to lean on him",
+          "kind": "family"
+        },
+        {
+          "to": "pandulph",
+          "label": "defies, then submits to",
+          "kind": "enemy",
+          "stages": [
+            "act-3",
+            "act-5"
+          ]
+        },
+        {
+          "to": "king-philip",
+          "label": "fights, then makes a match with",
+          "kind": "enemy",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        }
       ]
     },
     {
@@ -110,13 +208,51 @@
       "summary": "He gives up an estate to be called his father’s son and spends the next four acts saying aloud what the kings will not. At Angers he tells two armies to level the town and settle the quarrel afterwards; in the last scene he kneels to a boy king and speaks the closing lines about England. He also strips the abbeys for John’s war and carries Austria’s head on stage.",
       "clue": "He walks into court over a five-hundred-pound inheritance, walks out with a new name, and gets the last word standing over a dead king.",
       "firstAppearance": "1.1",
-      "traits": ["plain-spoken", "opportunistic", "loyal past the point of comfort"],
       "relationships": [
-        { "to": "john", "label": "serves, and outlives", "kind": "service", "stages": ["act-1", "act-3", "act-5"] },
-        { "to": "eleanor", "label": "recruited by, and calls grandam", "kind": "family", "stages": ["act-1", "act-2"] },
-        { "to": "arthur", "label": "has Hubert carry his body, and reads the kingdom in it", "kind": "doubling", "stages": ["act-4"] },
-        { "to": "hubert", "label": "threatens with damnation, then believes", "kind": "ally", "stages": ["act-4", "act-5"] },
-        { "to": "louis", "label": "defies at Saint Edmundsbury", "kind": "enemy", "stages": ["act-5"] }
+        {
+          "to": "john",
+          "label": "serves, and outlives",
+          "kind": "service",
+          "stages": [
+            "act-1",
+            "act-3",
+            "act-5"
+          ]
+        },
+        {
+          "to": "eleanor",
+          "label": "recruited by, and calls grandam",
+          "kind": "family",
+          "stages": [
+            "act-1",
+            "act-2"
+          ]
+        },
+        {
+          "to": "arthur",
+          "label": "has Hubert carry his body, and reads the kingdom in it",
+          "kind": "doubling",
+          "stages": [
+            "act-4"
+          ]
+        },
+        {
+          "to": "hubert",
+          "label": "threatens with damnation, then believes",
+          "kind": "ally",
+          "stages": [
+            "act-4",
+            "act-5"
+          ]
+        },
+        {
+          "to": "louis",
+          "label": "defies at Saint Edmundsbury",
+          "kind": "enemy",
+          "stages": [
+            "act-5"
+          ]
+        }
       ]
     },
     {
@@ -126,12 +262,39 @@
       "summary": "Everybody argues about his right and nobody asks him anything until Hubert arrives with the irons and the warrant. He says he would rather be out of prison and keeping sheep, and he talks his way out of blinding by remembering a headache and a handkerchief. Then he puts on a ship-boy’s clothes, climbs down a wall, and breaks his neck on the stones.",
       "clue": "The boy with the better descent, who would rather keep sheep, and who dies in disguise at the foot of a castle wall.",
       "firstAppearance": "2.1",
-      "traits": ["gentle", "frightened", "suddenly eloquent"],
       "relationships": [
-        { "to": "constance", "label": "son of", "kind": "family" },
-        { "to": "john", "label": "nephew of, and prisoner of", "kind": "enemy", "stages": ["act-2", "act-3", "act-4"] },
-        { "to": "hubert", "label": "pleads with, and is spared by", "kind": "service", "stages": ["act-4"] },
-        { "to": "king-philip", "label": "championed by", "kind": "ally", "stages": ["act-2", "act-3"] }
+        {
+          "to": "constance",
+          "label": "son of",
+          "kind": "family"
+        },
+        {
+          "to": "john",
+          "label": "nephew of, and prisoner of",
+          "kind": "enemy",
+          "stages": [
+            "act-2",
+            "act-3",
+            "act-4"
+          ]
+        },
+        {
+          "to": "hubert",
+          "label": "pleads with, and is spared by",
+          "kind": "service",
+          "stages": [
+            "act-4"
+          ]
+        },
+        {
+          "to": "king-philip",
+          "label": "championed by",
+          "kind": "ally",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        }
       ]
     },
     {
@@ -141,12 +304,37 @@
       "summary": "She is the one person who will not let the wedding at Angers pass as a settlement, and she says so to both kings on the day itself. When Arthur is taken she sits on the ground in the French tent, pulls her hair down, and tells a cardinal to his face that she is not mad, only grieving. She dies offstage, reported in a messenger’s half-sentence.",
       "clue": "She sits on the bare ground in a king’s tent and calls it her throne, and will not let anyone call her grief madness.",
       "firstAppearance": "2.1",
-      "traits": ["unappeasable", "exact", "public"],
       "relationships": [
-        { "to": "arthur", "label": "mother of", "kind": "family" },
-        { "to": "eleanor", "label": "trades curses with", "kind": "enemy", "stages": ["act-2"] },
-        { "to": "king-philip", "label": "holds to his oath", "kind": "ally", "stages": ["act-2", "act-3"] },
-        { "to": "pandulph", "label": "asks him to bless her curses", "kind": "ally", "stages": ["act-3"] }
+        {
+          "to": "arthur",
+          "label": "mother of",
+          "kind": "family"
+        },
+        {
+          "to": "eleanor",
+          "label": "trades curses with",
+          "kind": "enemy",
+          "stages": [
+            "act-2"
+          ]
+        },
+        {
+          "to": "king-philip",
+          "label": "holds to his oath",
+          "kind": "ally",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "pandulph",
+          "label": "asks him to bless her curses",
+          "kind": "ally",
+          "stages": [
+            "act-3"
+          ]
+        }
       ]
     },
     {
@@ -156,12 +344,34 @@
       "summary": "Forty lines into the play she tells her son that possession is doing more for him than right, and pitches it so that only the two of them hear. She sails with the army, picks the Lionheart out of a stranger’s face, and arranges the Blanche marriage that ends the war for an afternoon. Her death reaches John in the same speech as the news of the French fleet.",
       "clue": "She recognises a dead king in a young man’s features, and tells her son in private which of his two arguments is the real one.",
       "firstAppearance": "1.1",
-      "traits": ["clear-eyed", "political", "unsentimental"],
       "relationships": [
-        { "to": "john", "label": "mother of", "kind": "family" },
-        { "to": "constance", "label": "enemy across two generations", "kind": "enemy", "stages": ["act-2"] },
-        { "to": "bastard", "label": "takes him to France as her man", "kind": "family", "stages": ["act-1", "act-2"] },
-        { "to": "blanche", "label": "grandmother of", "kind": "family" }
+        {
+          "to": "john",
+          "label": "mother of",
+          "kind": "family"
+        },
+        {
+          "to": "constance",
+          "label": "enemy across two generations",
+          "kind": "enemy",
+          "stages": [
+            "act-2"
+          ]
+        },
+        {
+          "to": "bastard",
+          "label": "takes him to France as her man",
+          "kind": "family",
+          "stages": [
+            "act-1",
+            "act-2"
+          ]
+        },
+        {
+          "to": "blanche",
+          "label": "grandmother of",
+          "kind": "family"
+        }
       ]
     },
     {
@@ -171,11 +381,33 @@
       "summary": "He takes the commission in a scene where the king never says what it is, heats the irons and puts two executioners behind the arras. Alone with the boy he sends them out, and then cannot use the iron either. For that he is called a murderer by the lords, damned by the Bastard, and turned on by the king who wanted it done. Some editions give him the Angers citizen’s lines as well.",
       "clue": "Told only ‘Death’ and ‘A grave’ by a king who will say no more, he heats the irons, and then finds he cannot use them.",
       "firstAppearance": "3.2",
-      "traits": ["obedient", "plain", "unprotected"],
       "relationships": [
-        { "to": "john", "label": "servant of, and blamed by", "kind": "service", "stages": ["act-3", "act-4"] },
-        { "to": "arthur", "label": "keeper of, and rescuer of", "kind": "service", "stages": ["act-4"] },
-        { "to": "bastard", "label": "suspected by, then trusted by", "kind": "ally", "stages": ["act-4", "act-5"] }
+        {
+          "to": "john",
+          "label": "servant of, and blamed by",
+          "kind": "service",
+          "stages": [
+            "act-3",
+            "act-4"
+          ]
+        },
+        {
+          "to": "arthur",
+          "label": "keeper of, and rescuer of",
+          "kind": "service",
+          "stages": [
+            "act-4"
+          ]
+        },
+        {
+          "to": "bastard",
+          "label": "suspected by, then trusted by",
+          "kind": "ally",
+          "stages": [
+            "act-4",
+            "act-5"
+          ]
+        }
       ]
     },
     {
@@ -185,12 +417,41 @@
       "summary": "He walks into the wedding celebrations with a question about Stephen Langton and leaves with a war. He excommunicates John, orders Philip to unclasp a hand he has just taken, and later shows the Dauphin how Arthur’s death will hand him the kingdom. He takes John’s crown, gives it back, and then discovers that the invasion he started will not stop for him.",
       "clue": "He makes a wedding day into a war before sunset, and finds in the last act that the prince he set going will not be called back.",
       "firstAppearance": "3.1",
-      "traits": ["patient", "legalistic", "overtaken by his own argument"],
       "relationships": [
-        { "to": "john", "label": "curses, then absolves", "kind": "enemy", "stages": ["act-3", "act-5"] },
-        { "to": "king-philip", "label": "forces to break the league", "kind": "enemy", "stages": ["act-3"] },
-        { "to": "louis", "label": "sets on England, then cannot call off", "kind": "ally", "stages": ["act-3", "act-5"] },
-        { "to": "constance", "label": "tells her she is mad", "kind": "enemy", "stages": ["act-3"] }
+        {
+          "to": "john",
+          "label": "curses, then absolves",
+          "kind": "enemy",
+          "stages": [
+            "act-3",
+            "act-5"
+          ]
+        },
+        {
+          "to": "king-philip",
+          "label": "forces to break the league",
+          "kind": "enemy",
+          "stages": [
+            "act-3"
+          ]
+        },
+        {
+          "to": "louis",
+          "label": "sets on England, then cannot call off",
+          "kind": "ally",
+          "stages": [
+            "act-3",
+            "act-5"
+          ]
+        },
+        {
+          "to": "constance",
+          "label": "tells her she is mad",
+          "kind": "enemy",
+          "stages": [
+            "act-3"
+          ]
+        }
       ]
     },
     {
@@ -200,12 +461,38 @@
       "summary": "He comes to Angers in Arthur’s name with a great deal of language about the judge in heaven who made him the boy’s guardian, and gives the cause up the same day for five provinces and a marriage. Pandulph makes him break the new league within hours of swearing it. After Angers he drops out of the play, and his son carries the invasion on alone.",
       "clue": "He swears he is in the field on a child’s behalf, and trades the child’s claim for a wedding before the day is out.",
       "firstAppearance": "2.1",
-      "traits": ["ceremonious", "persuadable", "out of his depth"],
       "relationships": [
-        { "to": "louis", "label": "father of", "kind": "family" },
-        { "to": "arthur", "label": "champion of", "kind": "ally", "stages": ["act-2", "act-3"] },
-        { "to": "john", "label": "makes war on, then a match with", "kind": "enemy", "stages": ["act-2", "act-3"] },
-        { "to": "pandulph", "label": "threatened with a curse by", "kind": "enemy", "stages": ["act-3"] }
+        {
+          "to": "louis",
+          "label": "father of",
+          "kind": "family"
+        },
+        {
+          "to": "arthur",
+          "label": "champion of",
+          "kind": "ally",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "john",
+          "label": "makes war on, then a match with",
+          "kind": "enemy",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "pandulph",
+          "label": "threatened with a curse by",
+          "kind": "enemy",
+          "stages": [
+            "act-3"
+          ]
+        }
       ]
     },
     {
@@ -215,12 +502,38 @@
       "summary": "He is handed a wife and five provinces at Angers and takes the English claim that comes with her. When John makes his peace with Rome, Louis tells the legate that Rome has sent no men, no money and no munition, and carries on. Melun’s confession on the battlefield reveals that he had already sworn to cut off the heads of the English lords who joined him.",
       "clue": "He marries into England at noon and invades it by the last act, and will not be stopped by the churchman who started him.",
       "firstAppearance": "2.1",
-      "traits": ["cold", "ambitious", "quick to learn"],
       "relationships": [
-        { "to": "king-philip", "label": "son of", "kind": "family" },
-        { "to": "blanche", "label": "married to at Angers", "kind": "love", "stages": ["act-2", "act-3"] },
-        { "to": "pandulph", "label": "instructed by, then refuses", "kind": "ally", "stages": ["act-3", "act-5"] },
-        { "to": "john", "label": "invades", "kind": "enemy", "stages": ["act-5"] }
+        {
+          "to": "king-philip",
+          "label": "son of",
+          "kind": "family"
+        },
+        {
+          "to": "blanche",
+          "label": "married to at Angers",
+          "kind": "love",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "pandulph",
+          "label": "instructed by, then refuses",
+          "kind": "ally",
+          "stages": [
+            "act-3",
+            "act-5"
+          ]
+        },
+        {
+          "to": "john",
+          "label": "invades",
+          "kind": "enemy",
+          "stages": [
+            "act-5"
+          ]
+        }
       ]
     },
     {
@@ -230,11 +543,26 @@
       "summary": "She is offered to Louis in front of both armies and answers that her uncle’s will in the matter is hers. A few hundred lines later Pandulph has set her husband against her uncle on her wedding day, and she works out aloud that whichever side wins she loses. After that line she says nothing more and never comes back on stage.",
       "clue": "Married at noon to end a war, and by evening unable to wish either army well.",
       "firstAppearance": "2.1",
-      "traits": ["obliging", "clear-sighted", "silenced"],
       "relationships": [
-        { "to": "john", "label": "niece of", "kind": "family" },
-        { "to": "louis", "label": "married to", "kind": "love", "stages": ["act-2", "act-3"] },
-        { "to": "eleanor", "label": "granddaughter of", "kind": "family" }
+        {
+          "to": "john",
+          "label": "niece of",
+          "kind": "family"
+        },
+        {
+          "to": "louis",
+          "label": "married to",
+          "kind": "love",
+          "stages": [
+            "act-2",
+            "act-3"
+          ]
+        },
+        {
+          "to": "eleanor",
+          "label": "granddaughter of",
+          "kind": "family"
+        }
       ]
     }
   ],
@@ -335,11 +663,22 @@
       "stage": "act-1",
       "context": "Interrupting the French ambassador four lines into the play.",
       "analysis": "She objects to the adjective and leaves the noun alone, and by objecting she repeats it. ‘Borrow’d’ implies an owner somewhere else and a term that will expire, which is exactly the charge, and Eleanor has put it into the air of the English court herself before anyone has had time to answer it.",
-      "themes": ["legitimacy", "rhetoric"],
-      "techniques": ["wordplay"],
-      "characters": ["eleanor", "john"],
+      "themes": [
+        "legitimacy",
+        "rhetoric"
+      ],
+      "techniques": [
+        "wordplay"
+      ],
+      "characters": [
+        "eleanor",
+        "john"
+      ],
       "source": "Astor Library Edition, 1.1.5 (MIT 1.1.5)",
-      "cloze": ["strange", "majesty"]
+      "cloze": [
+        "strange",
+        "majesty"
+      ]
     },
     {
       "id": "strong-possession",
@@ -349,11 +688,23 @@
       "stage": "act-1",
       "context": "Answering John, who has just said that he has possession and right both.",
       "analysis": "She corrects the weighting and leaves the facts alone, and then seals the correction with a promise of secrecy. The word ‘conscience’ is doing odd work: it tells him to be accurate in private and to keep saying something else in public. Nothing in the next four acts contradicts her.",
-      "themes": ["legitimacy", "inheritance"],
-      "techniques": ["antithesis"],
-      "characters": ["eleanor", "john", "arthur"],
+      "themes": [
+        "legitimacy",
+        "inheritance"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "eleanor",
+        "john",
+        "arthur"
+      ],
       "source": "Astor Library Edition, 1.1.40–43 (MIT 1.1.40–43)",
-      "cloze": ["possession", "conscience"]
+      "cloze": [
+        "possession",
+        "conscience"
+      ]
     },
     {
       "id": "i-am-i",
@@ -363,11 +714,22 @@
       "stage": "act-1",
       "context": "Accepting Eleanor’s offer to call her grandam, having just given away his land and his legitimacy.",
       "analysis": "Three rhymed lines that say possession settles the question, and they are spoken by the one character with no claim to anything. The argument that keeps John on the throne is here used by a man who has just walked away from an inheritance, which shows how easily the reasoning travels.",
-      "themes": ["legitimacy", "inheritance"],
-      "techniques": ["antithesis"],
-      "characters": ["bastard", "eleanor"],
+      "themes": [
+        "legitimacy",
+        "inheritance"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "bastard",
+        "eleanor"
+      ],
       "source": "Astor Library Edition, 1.1.173–175 (MIT 1.1.174–176)",
-      "cloze": ["have", "begot"]
+      "cloze": [
+        "have",
+        "begot"
+      ]
     },
     {
       "id": "sweet-poison",
@@ -377,11 +739,22 @@
       "stage": "act-1",
       "context": "Alone after his knighting, working out what a new-made courtier has to become.",
       "analysis": "The triple ‘sweet’ makes flattery taste of sugar before the word ‘poison’ arrives, and the excuse that follows is the most honest thing in the speech: he will study deceit in order to spot it. That distinction will be tested at Angers, where he understands every lie in the room and joins the transaction anyway.",
-      "themes": ["commodity", "rhetoric"],
-      "techniques": ["wordplay", "foils"],
-      "characters": ["bastard"],
+      "themes": [
+        "commodity",
+        "rhetoric"
+      ],
+      "techniques": [
+        "wordplay",
+        "foils"
+      ],
+      "characters": [
+        "bastard"
+      ],
       "source": "Astor Library Edition, 1.1.213–215 (MIT 1.1.214–216)",
-      "cloze": ["poison", "deceive"]
+      "cloze": [
+        "poison",
+        "deceive"
+      ]
     },
     {
       "id": "proves-the-king",
@@ -391,11 +764,22 @@
       "stage": "act-2",
       "context": "Refusing John’s demand that the town acknowledge him and open up.",
       "analysis": "The town will obey whoever can demonstrate kingship, and declines to say what a demonstration would look like. It is the most damaging answer either king receives, because it treats the crown as a claim requiring evidence, and neither of the men outside the wall can produce any that the other cannot match.",
-      "themes": ["legitimacy", "loyalty"],
-      "techniques": ["antithesis"],
-      "characters": ["john", "king-philip"],
+      "themes": [
+        "legitimacy",
+        "loyalty"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "john",
+        "king-philip"
+      ],
       "source": "Astor Library Edition, 2.1.271–273 (MIT 2.1.276–278)",
-      "cloze": ["proves", "loyal"]
+      "cloze": [
+        "proves",
+        "loyal"
+      ]
     },
     {
       "id": "worthiest",
@@ -405,11 +789,23 @@
       "stage": "act-2",
       "context": "After both kings have offered their armies as witnesses to their titles.",
       "analysis": "The town appoints itself trustee of a disputed inheritance and holds the property until the claimants settle. ‘Compound’ is a word from law and from money, and the citizens use it to treat a war of succession as a matter awaiting probate, which is exactly how the marriage they later propose settles it.",
-      "themes": ["legitimacy", "inheritance"],
-      "techniques": ["antithesis"],
-      "characters": ["john", "king-philip", "arthur"],
+      "themes": [
+        "legitimacy",
+        "inheritance"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "john",
+        "king-philip",
+        "arthur"
+      ],
       "source": "Astor Library Edition, 2.1.282–283 (MIT 2.1.287–288)",
-      "cloze": ["compound", "worthiest"]
+      "cloze": [
+        "compound",
+        "worthiest"
+      ]
     },
     {
       "id": "as-in-a-theatre",
@@ -419,11 +815,24 @@
       "stage": "act-2",
       "context": "Goading both kings after a day’s fighting has settled nothing.",
       "analysis": "He treats the town wall as a gallery and the two armies as a company performing for it, which is how the staging has looked since the citizens first appeared above. ‘Scenes and acts of death’ makes the battle a production with a running order, and the line lands on an audience watching from their own seats.",
-      "themes": ["rhetoric", "legitimacy"],
-      "techniques": ["personification", "foils"],
-      "characters": ["bastard", "john", "king-philip"],
+      "themes": [
+        "rhetoric",
+        "legitimacy"
+      ],
+      "techniques": [
+        "personification",
+        "foils"
+      ],
+      "characters": [
+        "bastard",
+        "john",
+        "king-philip"
+      ],
       "source": "Astor Library Edition, 2.1.376–379 (MIT 2.1.381–384)",
-      "cloze": ["theatre", "battlements"]
+      "cloze": [
+        "theatre",
+        "battlements"
+      ]
     },
     {
       "id": "commodity",
@@ -433,11 +842,21 @@
       "stage": "act-2",
       "context": "Alone after the wedding has been arranged and both armies have stood down.",
       "analysis": "The word is given a face and a touch before it is given a definition. ‘Bias’ is the weight in a bowls ball that makes it curve away from the line it was sent along, so the metaphor says the ground itself is tilted, and a straight throw arrives somewhere else; it does not say men are wicked.",
-      "themes": ["commodity", "rhetoric"],
-      "techniques": ["personification"],
-      "characters": ["bastard"],
+      "themes": [
+        "commodity",
+        "rhetoric"
+      ],
+      "techniques": [
+        "personification"
+      ],
+      "characters": [
+        "bastard"
+      ],
       "source": "Astor Library Edition, 2.1.577–578 (MIT 2.1.584–585)",
-      "cloze": ["commodity", "bias"]
+      "cloze": [
+        "commodity",
+        "bias"
+      ]
     },
     {
       "id": "gain-be-my-lord",
@@ -447,11 +866,21 @@
       "stage": "act-2",
       "context": "The last line of the soliloquy that closes Act II.",
       "analysis": "He has just admitted that he rails at Commodity only because it has not courted him yet, and this couplet closes the circuit. The verb is religious and so is the noun he replaces: Gain is being installed where a king or a god would go, four scenes before a cardinal arrives to do the same thing with a curse.",
-      "themes": ["commodity", "religion"],
-      "techniques": ["personification"],
-      "characters": ["bastard"],
+      "themes": [
+        "commodity",
+        "religion"
+      ],
+      "techniques": [
+        "personification"
+      ],
+      "characters": [
+        "bastard"
+      ],
       "source": "Astor Library Edition, 2.1.601–602 (MIT 2.1.608–609)",
-      "cloze": ["commodity", "worship"]
+      "cloze": [
+        "commodity",
+        "worship"
+      ]
     },
     {
       "id": "here-is-my-throne",
@@ -461,11 +890,24 @@
       "stage": "act-3",
       "context": "Refusing to go with Salisbury to the kings, and sitting down on the ground.",
       "analysis": "She takes the one position nobody can order her out of and calls it a throne, and her refusal becomes a ceremony. The paradox in ‘proud’ and ‘stoop’ is not decoration: grief has made her lower than everyone at court and more unassailable, and both kings do eventually come and stand over her.",
-      "themes": ["grief", "rhetoric"],
-      "techniques": ["antithesis", "personification"],
-      "characters": ["constance", "arthur", "king-philip"],
+      "themes": [
+        "grief",
+        "rhetoric"
+      ],
+      "techniques": [
+        "antithesis",
+        "personification"
+      ],
+      "characters": [
+        "constance",
+        "arthur",
+        "king-philip"
+      ],
       "source": "Astor Library Edition, 3.1.68–74 (MIT 3.1.69–75)",
-      "cloze": ["sorrows", "throne"]
+      "cloze": [
+        "sorrows",
+        "throne"
+      ]
     },
     {
       "id": "italian-priest",
@@ -475,11 +917,22 @@
       "stage": "act-3",
       "context": "Answering Pandulph’s demand about Stephen Langton and Canterbury.",
       "analysis": "‘Supreme head’ is Henry VIII’s title, lent to John, and an Elizabethan audience would have heard their own settlement defended three centuries early. The speech is the boldest John ever makes and it is about revenue as much as doctrine: ‘tithe or toll’ puts the argument where the money is, and he sells it back in 5.1.",
-      "themes": ["religion", "legitimacy"],
-      "techniques": ["antithesis"],
-      "characters": ["john", "pandulph"],
+      "themes": [
+        "religion",
+        "legitimacy"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "john",
+        "pandulph"
+      ],
       "source": "Astor Library Edition, 3.1.153–157 (MIT 3.1.155–159)",
-      "cloze": ["priest", "supreme"]
+      "cloze": [
+        "priest",
+        "supreme"
+      ]
     },
     {
       "id": "whoever-wins",
@@ -489,11 +942,25 @@
       "stage": "act-3",
       "context": "On her wedding day, as her husband and her uncle prepare to fight.",
       "analysis": "She has just gone through the list, husband, uncle, father, grandmother, and found no one to pray for. ‘Match’ means the marriage and the contest in the same breath, and she works the outcome out in advance with the flatness of somebody doing arithmetic. It is her last speech of any length in the play.",
-      "themes": ["inheritance", "loyalty", "grief"],
-      "techniques": ["antithesis", "wordplay"],
-      "characters": ["blanche", "louis", "john"],
+      "themes": [
+        "inheritance",
+        "loyalty",
+        "grief"
+      ],
+      "techniques": [
+        "antithesis",
+        "wordplay"
+      ],
+      "characters": [
+        "blanche",
+        "louis",
+        "john"
+      ],
       "source": "Astor Library Edition, 3.1.337–338 (MIT 3.1.343–344)",
-      "cloze": ["wins", "loss"]
+      "cloze": [
+        "wins",
+        "loss"
+      ]
     },
     {
       "id": "serpent-in-my-way",
@@ -503,11 +970,23 @@
       "stage": "act-3",
       "context": "Working round to what he wants done with Arthur, after forty lines of not saying it.",
       "analysis": "Every word is deniable. The boy is a snake in a path, the path belongs to the king, and ‘keeper’ is a job title that gives no instruction. The question in the middle does the real work: John is asking to be understood without having said anything, and Hubert’s answer commits them both while leaving the sentence unfinished.",
-      "themes": ["legitimacy", "loyalty"],
-      "techniques": ["indirection"],
-      "characters": ["john", "hubert", "arthur"],
+      "themes": [
+        "legitimacy",
+        "loyalty"
+      ],
+      "techniques": [
+        "indirection"
+      ],
+      "characters": [
+        "john",
+        "hubert",
+        "arthur"
+      ],
       "source": "Astor Library Edition, 3.3.64–67 (MIT 3.3.66–69)",
-      "cloze": ["serpent", "keeper"]
+      "cloze": [
+        "serpent",
+        "keeper"
+      ]
     },
     {
       "id": "grief-fills-the-room",
@@ -517,11 +996,22 @@
       "stage": "act-3",
       "context": "Answering Philip, who has told her she is as fond of grief as of her son.",
       "analysis": "Grief here is a lodger who has moved into the child’s place and taken over his habits. ‘Room’ means the chamber and also the space he occupied, so her answer to Philip’s charge is exact: of course she is fond of it, since it wears her son’s face and uses his vocabulary.",
-      "themes": ["grief"],
-      "techniques": ["personification"],
-      "characters": ["constance", "arthur", "king-philip"],
+      "themes": [
+        "grief"
+      ],
+      "techniques": [
+        "personification"
+      ],
+      "characters": [
+        "constance",
+        "arthur",
+        "king-philip"
+      ],
       "source": "Astor Library Edition, 3.4.93–95 (MIT 3.4.95–97)",
-      "cloze": ["Grief", "absent"]
+      "cloze": [
+        "Grief",
+        "absent"
+      ]
     },
     {
       "id": "gild-refined-gold",
@@ -531,11 +1021,21 @@
       "stage": "act-4",
       "context": "Telling John, to his face, what his second coronation amounts to.",
       "analysis": "A list of improvements that spoil what they are applied to, offered as polite counsel by a man who will be in arms against the king within two scenes. The irony is that the gold is not refined: John has himself crowned again because he knows the first ceremony settled nothing, and the flattery diagnoses him exactly.",
-      "themes": ["legitimacy", "rhetoric"],
-      "techniques": ["antithesis"],
-      "characters": ["john"],
+      "themes": [
+        "legitimacy",
+        "rhetoric"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "john"
+      ],
       "source": "Astor Library Edition, 4.2.11–12 (MIT 4.2.11–12)",
-      "cloze": ["gild", "lily"]
+      "cloze": [
+        "gild",
+        "lily"
+      ]
     },
     {
       "id": "hot-irons",
@@ -545,11 +1045,23 @@
       "stage": "act-4",
       "context": "Having read the warrant Hubert has just handed him.",
       "analysis": "He has read the paper and makes it a question, which forces Hubert to answer in the first person. The whole scene proceeds by this method: the boy never disputes the politics, he makes the man say out loud what he is going to do, and the plain statement is what finally becomes impossible.",
-      "themes": ["grief", "loyalty"],
-      "techniques": ["indirection"],
-      "characters": ["arthur", "hubert", "john"],
+      "themes": [
+        "grief",
+        "loyalty"
+      ],
+      "techniques": [
+        "indirection"
+      ],
+      "characters": [
+        "arthur",
+        "hubert",
+        "john"
+      ],
       "source": "Astor Library Edition, 4.1.41 (MIT 4.1.42)",
-      "cloze": ["irons", "eyes"]
+      "cloze": [
+        "irons",
+        "eyes"
+      ]
     },
     {
       "id": "curse-of-kings",
@@ -559,11 +1071,24 @@
       "stage": "act-4",
       "context": "Rounding on Hubert when he believes Arthur has been killed.",
       "analysis": "The man who never gave the order now complains about servants who act on moods, and the grammar gives him away: he talks about ‘kings’ and ‘slaves’ in general, never about himself and the man standing there. Hubert answers by producing the hand and seal, which is the one thing John had hoped never to see again.",
-      "themes": ["legitimacy", "loyalty"],
-      "techniques": ["indirection", "antithesis"],
-      "characters": ["john", "hubert", "arthur"],
+      "themes": [
+        "legitimacy",
+        "loyalty"
+      ],
+      "techniques": [
+        "indirection",
+        "antithesis"
+      ],
+      "characters": [
+        "john",
+        "hubert",
+        "arthur"
+      ],
       "source": "Astor Library Edition, 4.2.210–212 (MIT 4.2.216–218)",
-      "cloze": ["curse", "warrant"]
+      "cloze": [
+        "curse",
+        "warrant"
+      ]
     },
     {
       "id": "uncles-spirit",
@@ -573,11 +1098,23 @@
       "stage": "act-4",
       "context": "After leaping from the castle wall in a ship-boy’s disguise.",
       "analysis": "Two lines, and the second is a will. He divides himself between heaven and England, which is the only inheritance he ever gets to dispose of. The first line is stranger: he blames the ground, and he is not entirely wrong, since nobody pushed him and the death still belongs to his uncle.",
-      "themes": ["inheritance", "grief", "legitimacy"],
-      "techniques": ["antithesis"],
-      "characters": ["arthur", "john"],
+      "themes": [
+        "inheritance",
+        "grief",
+        "legitimacy"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "arthur",
+        "john"
+      ],
       "source": "Astor Library Edition, 4.3.9–10 (MIT 4.3.9–10)",
-      "cloze": ["stones", "bones"]
+      "cloze": [
+        "stones",
+        "bones"
+      ]
     },
     {
       "id": "morsel-of-royalty",
@@ -587,11 +1124,25 @@
       "stage": "act-4",
       "context": "Watching Hubert lift Arthur’s body, after the lords have gone.",
       "analysis": "A child’s corpse is light enough for one man to carry, and the whole kingdom is said to go up with it. ‘Morsel’ is a word for food, and it sets up the dogs and the picked bone in the lines that follow, where the nobles, the French and the church all arrive to eat what is left of the state.",
-      "themes": ["legitimacy", "inheritance", "commodity"],
-      "techniques": ["personification", "foils"],
-      "characters": ["bastard", "arthur", "hubert"],
+      "themes": [
+        "legitimacy",
+        "inheritance",
+        "commodity"
+      ],
+      "techniques": [
+        "personification",
+        "foils"
+      ],
+      "characters": [
+        "bastard",
+        "arthur",
+        "hubert"
+      ],
       "source": "Astor Library Edition, 4.3.141–144 (MIT 4.3.149–152)",
-      "cloze": ["morsel", "realm"]
+      "cloze": [
+        "morsel",
+        "realm"
+      ]
     },
     {
       "id": "circle-of-my-glory",
@@ -601,11 +1152,22 @@
       "stage": "act-5",
       "context": "The opening words of Act V, handing the crown to Pandulph.",
       "analysis": "The act begins with the transfer already made, so the audience never sees him decide. ‘Circle’ is the crown’s shape and also a closed loop, which is what the gesture turns out to be: Pandulph hands it straight back, and John holds the same object under a new tenancy, with the pope now his landlord.",
-      "themes": ["religion", "legitimacy"],
-      "techniques": ["antithesis"],
-      "characters": ["john", "pandulph"],
+      "themes": [
+        "religion",
+        "legitimacy"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "john",
+        "pandulph"
+      ],
       "source": "Astor Library Edition, 5.1.1–2 (MIT 5.1.1–2)",
-      "cloze": ["circle", "glory"]
+      "cloze": [
+        "circle",
+        "glory"
+      ]
     },
     {
       "id": "blew-this-tempest",
@@ -615,11 +1177,24 @@
       "stage": "act-5",
       "context": "Accepting John’s submission and promising to call the French off.",
       "analysis": "He claims the invasion as his own weather and offers to switch it off, which is the flattest statement of clerical power in the play. Within a hundred lines Louis tells him that Rome has supplied no men, no money and no munition, and the breath that raised the storm turns out to have no authority over it.",
-      "themes": ["religion", "rhetoric"],
-      "techniques": ["personification", "prophecy"],
-      "characters": ["pandulph", "john", "louis"],
+      "themes": [
+        "religion",
+        "rhetoric"
+      ],
+      "techniques": [
+        "personification",
+        "prophecy"
+      ],
+      "characters": [
+        "pandulph",
+        "john",
+        "louis"
+      ],
       "source": "Astor Library Edition, 5.1.18–21 (MIT 5.1.18–21)",
-      "cloze": ["breath", "tempest"]
+      "cloze": [
+        "breath",
+        "tempest"
+      ]
     },
     {
       "id": "romes-slave",
@@ -629,11 +1204,23 @@
       "stage": "act-5",
       "context": "Refusing Pandulph’s order to break off the invasion of England.",
       "analysis": "He answers a spiritual claim with an invoice. Pennies, men and munition are the three things a war actually runs on, and the cardinal has provided none of them, so the argument that made him come cannot make him go. The legate who unpicked Philip’s oath in Act III is beaten here by simple accounting.",
-      "themes": ["religion", "commodity", "rhetoric"],
-      "techniques": ["antithesis"],
-      "characters": ["louis", "pandulph"],
+      "themes": [
+        "religion",
+        "commodity",
+        "rhetoric"
+      ],
+      "techniques": [
+        "antithesis"
+      ],
+      "characters": [
+        "louis",
+        "pandulph"
+      ],
       "source": "Astor Library Edition, 5.2.97–99 (MIT 5.2.98–100)",
-      "cloze": ["penny", "munition"]
+      "cloze": [
+        "penny",
+        "munition"
+      ]
     },
     {
       "id": "scribbled-form",
@@ -643,11 +1230,21 @@
       "stage": "act-5",
       "context": "Poisoned, carried into the orchard at Swinstead in a chair.",
       "analysis": "He describes himself as a written document curling in a flame, which is the right image for a reign held together by warrants, wills and charters. The hand and seal Hubert produced in Act IV was parchment too. Dying, he becomes the paper his authority was made of, and it goes the way paper goes.",
-      "themes": ["legitimacy", "grief"],
-      "techniques": ["personification"],
-      "characters": ["john"],
+      "themes": [
+        "legitimacy",
+        "grief"
+      ],
+      "techniques": [
+        "personification"
+      ],
+      "characters": [
+        "john"
+      ],
       "source": "Astor Library Edition, 5.7.32–34 (MIT 5.7.34–36)",
-      "cloze": ["scribbled", "parchment"]
+      "cloze": [
+        "scribbled",
+        "parchment"
+      ]
     },
     {
       "id": "proud-foot",
@@ -657,112 +1254,137 @@
       "stage": "act-5",
       "context": "Over John’s body, with the French withdrawing and Prince Henry newly king.",
       "analysis": "The boast has a clause attached, and the clause is the play. England has just spent two acts helping to wound itself, and the invasion ends by treaty, without a defeat. The speaker has no title, no land and no legitimate name, which is the last of the play’s questions about who gets to speak for a country.",
-      "themes": ["loyalty", "legitimacy", "rhetoric"],
-      "techniques": ["antithesis", "foils"],
-      "characters": ["bastard", "john", "louis"],
+      "themes": [
+        "loyalty",
+        "legitimacy",
+        "rhetoric"
+      ],
+      "techniques": [
+        "antithesis",
+        "foils"
+      ],
+      "characters": [
+        "bastard",
+        "john",
+        "louis"
+      ],
       "source": "Astor Library Edition, 5.7.113–115 (MIT 5.7.117–119)",
-      "cloze": ["conqueror", "wound"]
+      "cloze": [
+        "conqueror",
+        "wound"
+      ]
     }
   ],
   "timeline": [
-    { "year": 1199, "label": "John is crowned at Westminster", "detail": "Richard I dies childless and the crown passes to his youngest brother, over the claim of Geoffrey’s son Arthur.", "kind": "context" },
-    { "year": 1202, "label": "Arthur of Brittany is captured at Mirebeau", "detail": "Taken by John’s forces while besieging his own grandmother Eleanor, he was imprisoned at Falaise and then Rouen, and was never seen again after April 1203.", "kind": "context" },
-    { "year": 1213, "label": "John surrenders the kingdom to the papal legate", "detail": "After four years of excommunication he accepted Stephen Langton and received England back from Pandulph as a papal fief.", "kind": "context" },
-    { "year": 1215, "label": "Magna Carta is sealed at Runnymede", "detail": "The event that now defines the reign, and the one the play leaves out entirely.", "kind": "context" },
-    { "year": 1216, "label": "Louis of France lands in England; John dies at Newark", "detail": "The barons invited the Dauphin over; John lost his baggage train in the Wash and died of dysentery in October, and was buried at Worcester.", "kind": "context" },
-    { "year": 1591, "label": "The Troublesome Reign of King John is printed", "detail": "An anonymous two-part play with the same unusual sequence of events, generally taken as the source Shakespeare worked from.", "kind": "context" },
-    { "year": 1596, "label": "Shakespeare writes King John", "detail": "Dated to the middle of the 1590s on style and on its place among the other histories.", "kind": "work" },
-    { "year": 1598, "label": "Francis Meres lists it in Palladis Tamia", "detail": "His roll-call of Shakespeare’s plays names King John, which fixes the latest possible date of composition.", "kind": "reception" },
-    { "year": 1623, "label": "The First Folio", "detail": "The only early text. It opens the section of histories, ahead of Richard II.", "kind": "work" },
-    { "year": 1745, "label": "Two rival King Johns in London", "detail": "Garrick played the king at Drury Lane against Colley Cibber’s adaptation Papal Tyranny at Covent Garden, during the year of the Jacobite rising.", "kind": "reception" },
-    { "year": 1823, "label": "Charles Kemble’s antiquarian revival", "detail": "J. R. Planche’s researched thirteenth-century costumes at Covent Garden began the fashion for historically accurate Shakespeare staging.", "kind": "reception" },
-    { "year": 1899, "label": "Herbert Beerbohm Tree’s production", "detail": "A spectacular staging at Her Majesty’s Theatre, from which a short filmed fragment survives, often called the earliest Shakespeare film.", "kind": "reception" }
+    {
+      "year": 1199,
+      "label": "John is crowned at Westminster",
+      "detail": "Richard I dies childless and the crown passes to his youngest brother, over the claim of Geoffrey’s son Arthur.",
+      "kind": "context"
+    },
+    {
+      "year": 1202,
+      "label": "Arthur of Brittany is captured at Mirebeau",
+      "detail": "Taken by John’s forces while besieging his own grandmother Eleanor, he was imprisoned at Falaise and then Rouen, and was never seen again after April 1203.",
+      "kind": "context"
+    },
+    {
+      "year": 1213,
+      "label": "John surrenders the kingdom to the papal legate",
+      "detail": "After four years of excommunication he accepted Stephen Langton and received England back from Pandulph as a papal fief.",
+      "kind": "context"
+    },
+    {
+      "year": 1215,
+      "label": "Magna Carta is sealed at Runnymede",
+      "detail": "The event that now defines the reign, and the one the play leaves out entirely.",
+      "kind": "context"
+    },
+    {
+      "year": 1216,
+      "label": "Louis of France lands in England; John dies at Newark",
+      "detail": "The barons invited the Dauphin over; John lost his baggage train in the Wash and died of dysentery in October, and was buried at Worcester.",
+      "kind": "context"
+    },
+    {
+      "year": 1591,
+      "label": "The Troublesome Reign of King John is printed",
+      "detail": "An anonymous two-part play with the same unusual sequence of events, generally taken as the source Shakespeare worked from.",
+      "kind": "context"
+    },
+    {
+      "year": 1596,
+      "label": "Shakespeare writes King John",
+      "detail": "Dated to the middle of the 1590s on style and on its place among the other histories.",
+      "kind": "work"
+    },
+    {
+      "year": 1598,
+      "label": "Francis Meres lists it in Palladis Tamia",
+      "detail": "His roll-call of Shakespeare’s plays names King John, which fixes the latest possible date of composition.",
+      "kind": "reception"
+    },
+    {
+      "year": 1623,
+      "label": "The First Folio",
+      "detail": "The only early text. It opens the section of histories, ahead of Richard II.",
+      "kind": "work"
+    },
+    {
+      "year": 1745,
+      "label": "Two rival King Johns in London",
+      "detail": "Garrick played the king at Drury Lane against Colley Cibber’s adaptation Papal Tyranny at Covent Garden, during the year of the Jacobite rising.",
+      "kind": "reception"
+    },
+    {
+      "year": 1823,
+      "label": "Charles Kemble’s antiquarian revival",
+      "detail": "J. R. Planche’s researched thirteenth-century costumes at Covent Garden began the fashion for historically accurate Shakespeare staging.",
+      "kind": "reception"
+    },
+    {
+      "year": 1899,
+      "label": "Herbert Beerbohm Tree’s production",
+      "detail": "A spectacular staging at Her Majesty’s Theatre, from which a short filmed fragment survives, often called the earliest Shakespeare film.",
+      "kind": "reception"
+    }
   ],
   "places": [
-    { "name": "Northampton", "lat": 52.2405, "lon": -0.9027, "note": "The room of state where the play opens, where the Faulconbridge suit is heard, and where John is crowned a second time in Act IV." },
-    { "name": "Angers", "lat": 47.4784, "lon": -0.5632, "note": "Angiers in the text: the walled town that will accept neither king, and whose citizens propose the marriage that ends the war." },
-    { "name": "Bury St Edmunds", "lat": 52.243, "lon": 0.7108, "note": "Saint Edmundsbury, where the English lords take the sacrament with the Dauphin, and on whose altar Louis swore to have their heads." },
-    { "name": "The Wash", "lat": 52.9167, "lon": 0.3333, "note": "The Lincoln Washes, where the Bastard loses half his force to the tide in the last act." },
-    { "name": "Swineshead, Lincolnshire", "lat": 52.949, "lon": -0.166, "note": "Swinstead in the text: the abbey where a monk poisons John, and the orchard where he dies." },
-    { "name": "Worcester Cathedral", "lat": 52.1885, "lon": -2.2217, "note": "Where Prince Henry says his father’s body must be interred, and where the historical John’s tomb still stands." }
-  ],
-  "criticalViews": [
     {
-      "position": "A Protestant play about the pope",
-      "summary": "The reading the Elizabethans inherited from The Troublesome Reign. John defies Rome, is cursed for it, and is poisoned by a monk, which makes him an early casualty in the English church’s quarrel with the papacy and the play a piece of national self-defence.",
-      "counter": "Shakespeare cuts most of the source play’s anti-Catholic knockabout, gives Pandulph the tightest legal argument anybody makes, and puts John’s surrender of the crown on stage. A martyr would not have taken it back from the legate’s hand as a tenancy."
+      "name": "Northampton",
+      "lat": 52.2405,
+      "lon": -0.9027,
+      "note": "The room of state where the play opens, where the Faulconbridge suit is heard, and where John is crowned a second time in Act IV."
     },
     {
-      "position": "The Bastard is the play’s conscience",
-      "summary": "He names Commodity, stays when the lords desert, holds the field while the king is carried off sick, and speaks the closing lines about England. On this account the play is his education, and he grows from mockery into service.",
-      "counter": "He ends the Angers soliloquy promising to worship Gain, shakes down the abbeys for John’s war, and carries the Duke of Austria’s head on stage over a private grudge. The growth has to be read past a good deal of contrary evidence."
+      "name": "Angers",
+      "lat": 47.4784,
+      "lon": -0.5632,
+      "note": "Angiers in the text: the walled town that will accept neither king, and whose citizens propose the marriage that ends the war."
     },
     {
-      "position": "A history with no legitimate centre",
-      "summary": "A modern reading takes the refusal at Angers as the real subject. Descent, victory, coronation, papal warrant and the consent of a town are each offered as proof of kingship, and each one fails in front of the audience.",
-      "counter": "It flattens what the play does settle. Arthur’s death is judged by everyone who sees the body, the lords come back when they learn what Louis intends, and the last speech is not neutral about an invasion."
+      "name": "Bury St Edmunds",
+      "lat": 52.243,
+      "lon": 0.7108,
+      "note": "Saint Edmundsbury, where the English lords take the sacrament with the Dauphin, and on whose altar Louis swore to have their heads."
+    },
+    {
+      "name": "The Wash",
+      "lat": 52.9167,
+      "lon": 0.3333,
+      "note": "The Lincoln Washes, where the Bastard loses half his force to the tide in the last act."
+    },
+    {
+      "name": "Swineshead, Lincolnshire",
+      "lat": 52.949,
+      "lon": -0.166,
+      "note": "Swinstead in the text: the abbey where a monk poisons John, and the orchard where he dies."
+    },
+    {
+      "name": "Worcester Cathedral",
+      "lat": 52.1885,
+      "lon": -2.2217,
+      "note": "Where Prince Henry says his father’s body must be interred, and where the historical John’s tomb still stands."
     }
-  ],
-  "essayQuestions": [
-    {
-      "question": "Where does King John locate the right to rule?",
-      "focus": "Descent, possession and the scenes that test them",
-      "plan": [
-        "Start with Eleanor’s answer at 1.1.40 and note that the play’s clearest statement about John’s title is made in private and never contradicted.",
-        "Treat the Angers scene as an experiment: blood, arms, coronation and the consent of a town are all put to the citizens, and none of them is accepted.",
-        "Use the second coronation in 4.2, and Pembroke’s objection to it, to show what John believes a ceremony can do for him.",
-        "Set the crown’s short trip in 5.1, handed to a legate and straight back, against what John said to Pandulph in 3.1.",
-        "Finish with Prince Henry, who inherits without argument, and ask what has changed besides the deaths of everybody who was arguing."
-      ]
-    },
-    {
-      "question": "‘Commodity, the bias of the world.’ How far does the Bastard’s diagnosis hold for the rest of the play?",
-      "focus": "Self-interest, and the people it does not account for",
-      "plan": [
-        "Establish what he has just watched at Angers: a war ended by a marriage, five provinces and thirty thousand marks.",
-        "Follow the idea into 3.1, where Pandulph weighs a curse against a league and Philip’s oath is priced.",
-        "Test it on Hubert in 4.1, who has everything to gain by obeying the warrant and puts the iron down.",
-        "Test it on the English lords in 5.4, who turn back because a dying man has nothing left to gain by lying to them.",
-        "Return to the last couplet of the soliloquy and decide whether the play ever lets the Bastard keep his promise to Gain."
-      ]
-    },
-    {
-      "question": "What does Act IV Scene 1 do that the political scenes cannot?",
-      "focus": "Arthur, Hubert, and the one argument in the play that works",
-      "plan": [
-        "Describe the room: the irons heating, the warrant, the two executioners behind the arras.",
-        "Arthur never argues about the succession. He talks about a headache, a handkerchief and Hubert’s own eyes.",
-        "Track Hubert’s asides and the moment he sends the men out, and say what has already changed by then.",
-        "Set the mercy against 4.3: the wall, the ship-boy’s clothes, and a death that nobody ordered.",
-        "Ask what the scene costs politically, since the lords read the body as proof of the king’s guilt and are not wrong about him."
-      ]
-    },
-    {
-      "question": "Is the ending of King John a settlement?",
-      "focus": "The last act, and what it leaves standing",
-      "plan": [
-        "List what is resolved in 5.7: the French withdraw, the lords are pardoned, Henry succeeds, and Pandulph has terms ready in the next room.",
-        "List what is not: nobody answers for Arthur, Hubert is never cleared in public, and the monk who poisoned the king is a few lines of report.",
-        "Look at who speaks last and on what authority, given that the Bastard has no title, no land and no lawful name.",
-        "Weigh ‘This England never did, nor never shall, Lie at the proud foot of a conqueror’ against the fact that the invasion is ending by treaty.",
-        "Decide whether the closing couplet is a promise, a warning, or the same public language the play has spent five acts taking apart."
-      ]
-    }
-  ],
-  "discussionQuestions": [
-    "Eleanor tells her son that possession is worth more to him than right. Does anything in the next four acts prove her wrong?",
-    "The citizens of Angers will not open their gates until somebody has proved he is king. Are they being cowardly or exact?",
-    "Blanche is married at noon and cannot wish either army well by evening. What is the play saying about a peace made by marriage?",
-    "John never gives Hubert the order in plain words. Does the indirection make him more guilty or less?",
-    "Constance is told twice that she is mad. Why does she keep answering that she is not?",
-    "The Bastard ends the play speaking for England. Has he earned the right to?"
-  ],
-  "related": [
-    { "href": "/books/richard-ii/", "why": "Another English king whose title will not bear examination, and another crown that changes hands while everybody argues about what a crown is." },
-    { "href": "/books/richard-iii/", "why": "The other play about children in a king’s keeping, where the order to kill them is given plainly and carried out." },
-    { "href": "/books/edward-iii/", "why": "The Angevin quarrel from the other end: an English king pressing a claim in France, where John spends the first half of this play losing provinces." },
-    { "href": "/books/henry-v/", "why": "The Bastard’s closing lines about England, expanded into a whole play’s worth of public speech, with the same questions underneath about who inherited what." },
-    { "href": "/books/macbeth/", "why": "A king who wants a boy dead and hires the work out: the hint, the servants who understand it, and the afterlife of an order nobody will admit to." }
-  ],
-  "videos": []
+  ]
 }

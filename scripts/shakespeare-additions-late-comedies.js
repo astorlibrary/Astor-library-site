@@ -61,7 +61,7 @@ module.exports = [
     readings: [
       {
         label: "Close reading",
-        title: "What happens to the cousins’ friendship?",
+        title: "The cousins’ friendship",
         paragraphs: [
           "Palamon and Arcite first describe their kinship as something stronger than imprisonment, defeat or fortune. Their language imagines two lives joined in a single honour. The sight of Emilia does not gently weaken that bond; it converts intimacy into possession and makes each man reinterpret the other as a traitor.",
           "Their later duel preserves the manners of friendship even as it attempts to destroy the friend. They feed, dress and arm one another before fighting. On stage the mixture of tenderness and aggression can make their rivalry look heroic, absurd or both. The tournament is chivalry at its most formal, and it is still a fight to the death."

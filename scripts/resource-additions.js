@@ -185,7 +185,7 @@ module.exports = [
     sectionIntro: 'Pamela’s letters do not give us a finished self looking backwards. They record thought while pressure, hope and fear are still changing it.',
     readings: [
       { label: 'Epistolary form', title: 'Feeling has no safe distance', copy: 'Letters place the reader close to uncertainty. Pamela repeats herself, revises a judgement and records danger before she can know how an episode will end.' },
-      { label: 'Reception', title: 'Readers have always disagreed', copy: 'The early debate over sincerity, calculation and social ambition is evidence of how urgently the book disturbed assumptions about virtue and class.' },
+      { label: 'Reception', title: 'Pamelists and Antipamelists', copy: 'In the 1740s readers divided over whether Pamela was sincere or calculating, and over what her marriage meant for the order of rank. Fielding’s Shamela (1741) took the calculating view.' },
       { label: 'Power', title: 'Contradiction needs context', copy: 'Pamela’s feelings cannot be separated from dependence, confinement and unequal authority. A psychological reading becomes stronger when it measures the conditions under which a choice is made.' }
     ],
     note: 'Avoid forcing Pamela into a choice between perfect sincerity and complete calculation. Follow when her language changes and what has made another response possible.',
