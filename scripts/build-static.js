@@ -11,6 +11,7 @@ const { seasons, booksFor, hrefFor } = require('./seasonal-helpers');
 const { loadBooks } = require('./book-data');
 const { accentFor, motifSvg, motifSvgByName, motifName, identityFor } = require('./book-motifs');
 const { restructureBookPage } = require('./book-page');
+const { plainHubPage } = require('./hub-pages');
 const { searchDescription } = require('./text-excerpt');
 
 const root = process.cwd();
@@ -1336,6 +1337,7 @@ function prepareHtml(html, source) {
     html = addContextImageShelf(html, source);
     html = markCollectionPage(html, source);
     html = addStudyEditionPage(html, source);
+    html = plainHubPage(html, pageHref(source));
   }
   html = addSiteIndexLink(html, source);
   html = addGlobalNavigation(html, source);
