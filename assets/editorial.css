@@ -1264,6 +1264,25 @@ main.book-page .book-body article > span:first-child {
   text-transform: none;
 }
 
+/* Catalogue pages keep their sections in one wrapper; they read like the
+   other book pages' sections. */
+main.book-page .book-body .catalogue-essays {
+  display: block;
+  max-width: none;
+  margin: 0;
+}
+
+main.book-page .book-body .catalogue-essay {
+  margin: 64px 0 0;
+}
+
+main.book-page .book-body .catalogue-essay h2 {
+  margin: 0 0 16px;
+  color: var(--text, var(--ed-ink));
+  font: 400 34px/1.15 var(--serif);
+  letter-spacing: -0.005em;
+}
+
 main.book-page .book-body h3 {
   margin: 0 0 10px;
   color: var(--text, var(--ed-ink));
@@ -1414,6 +1433,31 @@ main.book-page .book-also a,
 main.book-page .book-credit a {
   color: var(--wine-text, var(--ed-wine));
   text-underline-offset: 3px;
+}
+
+main.book-page .book-details {
+  max-width: 34rem;
+  margin: 16px 0 0;
+}
+
+main.book-page .book-details > div {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 16px;
+  padding: 8px 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+}
+
+main.book-page .book-details dt {
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.6 var(--sans);
+}
+
+main.book-page .book-details dd {
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 17px/1.5 var(--serif);
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 main.book-page .book-credit {

@@ -24,6 +24,45 @@ test('explicit store choice overrides geolocation and aliases keep working', () 
   const response = handleBookRedirect(request('/go/shorter/?country=UK', 'US'), sample);
   assert.equal(response.headers.get('Location'), sample.books.sample.destinations.GB.url);
 });
+test('Pygmalion opens the confirmed paperback directly, using the US listing where no local product is available', async () => {
+  for (const [country, host] of [
+    ['GB', 'www.amazon.com'],
+    ['US', 'www.amazon.com'],
+    ['CA', 'www.amazon.ca'],
+    ['AU', 'www.amazon.com.au'],
+    ['FR', 'www.amazon.com'],
+    [undefined, 'www.amazon.com']
+  ]) {
+    const response = handleBookRedirect(request('/go/pygmalion', country));
+    assert.equal(response.status, 302, `Pygmalion/${country || 'no location'} opens a product`);
+    assert.equal(response.headers.get('Location'), `https://${host}/dp/B0HN5BYSMR`);
+    assert.equal(await response.text(), '', 'a direct purchase route does not show the chooser');
+  }
+  for (const [country, host] of [
+    ['US', 'www.amazon.com'], ['CA', 'www.amazon.ca'], ['AU', 'www.amazon.com.au']
+  ]) {
+    const response = handleBookRedirect(request('/go/pygmalion?country=' + country, 'GB'));
+    assert.equal(response.status, 302);
+    assert.equal(response.headers.get('Location'), `https://${host}/dp/B0HN5BYSMR`);
+  }
+});
+test('Pygmalion explicit UK and chooser requests report UK unavailability and offer only confirmed product links', async () => {
+  for (const [route, country] of [
+    ['/go/pygmalion?country=GB', 'US'],
+    ['/go/pygmalion?country=UK', 'US'],
+    ['/go/pygmalion?choose=1', 'GB']
+  ]) {
+    const response = handleBookRedirect(request(route, country));
+    assert.equal(response.status, 200, route);
+    const html = await response.text();
+    assert.match(html, /Choose your Amazon store/);
+    assert.match(html, /Not sold on Amazon UK\./);
+    assert.doesNotMatch(html, /Search Amazon|amazon\.co\.uk/);
+    for (const host of ['www.amazon.com', 'www.amazon.ca', 'www.amazon.com.au']) {
+      assert.ok(html.includes(`href="https://${host}/dp/B0HN5BYSMR"`));
+    }
+  }
+});
 test('missing locations and unconfirmed local listings display the country choice', async () => {
   for (const country of [undefined, 'FR', 'CA', 'AU']) {
     const response = handleBookRedirect(request('/go/sample', country), sample);

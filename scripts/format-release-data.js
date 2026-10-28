@@ -911,6 +911,51 @@ const remainingBooks = [
 
 books.push(...remainingBooks);
 
-hardbacks.push(...require('./september-catalogue-data.json').filter(book => book.format === 'hardcover'));
+const octoberHardbacks = [
+  {
+    href: '/books/edgar-allan-poe-selected-tales/',
+    slug: 'edgar-allan-poe-selected-tales',
+    title: 'Edgar Allan Poe: Selected Tales',
+    author: 'Edgar Allan Poe',
+    collection: 'American Classics',
+    collectionHref: '/american/',
+    image: 'Selected Tales of Edgar Allan Poe Hardcover.png',
+    purchaseUrl: 'https://astorlibrary.com/go/edgar-allan-poe-selected-tales-hardback',
+    paperbackImage: 'Selected Tales- Edgar Allan Poe Main Cover.png',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/edgar-allan-poe-selected-tales',
+    deck: 'Ten complete tales, including The Fall of the House of Usher, The Tell-Tale Heart, The Black Cat and two Dupin detective stories.',
+    editorial: '195 pages · Published 24 October 2026 · ISBN 9798164783761.'
+  },
+  {
+    href: '/books/american-christmas-stories/',
+    slug: 'american-christmas-stories',
+    title: 'American Christmas Stories',
+    author: 'Various authors',
+    collection: 'American Classics',
+    collectionHref: '/american/',
+    image: 'American Christmas Stories Hardcover.png',
+    purchaseUrl: 'https://astorlibrary.com/go/american-christmas-stories-hardback',
+    paperbackImage: 'American Christmas Stories Main Cover.png',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/american-christmas-stories',
+    deck: 'Eight complete American Christmas stories, from Bret Harte to O. Henry, with A Visit from St. Nicholas and six chapters of history.',
+    editorial: '190 pages · Published 16 October 2026 · ISBN 9798162714644.'
+  },
+  {
+    href: '/books/american-ghost-stories/',
+    slug: 'american-ghost-stories',
+    title: 'American Ghost Stories',
+    author: 'F. Marion Crawford, Ambrose Bierce, Ellen Glasgow and others',
+    collection: 'American Classics',
+    collectionHref: '/american/',
+    image: 'American Ghost Stories Hardcover.png',
+    purchaseUrl: 'https://astorlibrary.com/go/american-ghost-stories-hardback',
+    paperbackImage: 'American Ghost Stories Main Cover.png',
+    paperbackPurchaseUrl: 'https://astorlibrary.com/go/american-ghost-stories',
+    deck: 'Ten complete American ghost stories from 1878 to 1925, with historical and literary essays, a chronology and a glossary.',
+    editorial: '244 pages · Published 16 October 2026 · ISBN 9798162876113.'
+  }
+];
 
-module.exports = { books, hardbacks };
+hardbacks.push(...require('./september-catalogue-data.json').filter(book => book.format === 'hardcover'), ...octoberHardbacks);
+
+module.exports = { books, hardbacks, octoberHardbacks };

@@ -1,6 +1,6 @@
 function coverFormat(filename) {
   const decoded = decodeURIComponent(filename);
-  if (/hard[\s_-]*(?:cover|back)/i.test(decoded)) return 'Hardcover';
+  if (/(?:hard[\s_-]*(?:cover|back)|harcover)/i.test(decoded)) return 'Hardcover';
   if (/main[\s_-]*cover/i.test(decoded)) return 'Paperback';
   return null;
 }
@@ -19,8 +19,13 @@ function editionSchema(record, format, pageUrl, imageUrl) {
 }
 
 function paperbackEditionSchema(record, pageUrl, imageUrl) {
-  if (coverFormat(record.image) !== 'Paperback') throw new Error(`${record.title}: paperback cover is not identified by its filename`);
-  return editionSchema(record, { key: 'paperback', label: 'Paperback', image: record.image, purchaseUrl: record.purchaseUrl }, pageUrl, imageUrl);
+  if ((coverFormat(record.image) || record.imageFormat) !== 'Paperback') throw new Error(`${record.title}: paperback cover must be identified by its filename or verified format`);
+  return {
+    ...editionSchema(record, { key: 'paperback', label: 'Paperback', image: record.image, purchaseUrl: record.purchaseUrl }, pageUrl, imageUrl),
+    ...(record.isbn ? { isbn: record.isbn } : {}),
+    ...(record.numberOfPages ? { numberOfPages: record.numberOfPages } : {}),
+    ...(record.publicationDate ? { datePublished: record.publicationDate } : {})
+  };
 }
 
 // This registry already supplies the two visible format cards. Keep each

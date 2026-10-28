@@ -199,7 +199,16 @@ function repeatsList(note, listHtml) {
   return note.split(/\s+·\s+/).every(item => listed.includes(item.trim().toLowerCase()));
 }
 
-function formatRows(formats, mainImage, listHtml, bookTitle) {
+// A paperback note such as "174 pages · Published 9 October 2026 · ISBN …"
+// is left out when the page's own table of details already gives those figures.
+function repeatsDetails(note, detailsHtml) {
+  if (!note || !detailsHtml) return false;
+  const numbers = note.match(/\d+/g) || [];
+  const details = plain(detailsHtml);
+  return numbers.length > 0 && numbers.every(number => details.includes(number));
+}
+
+function formatRows(formats, mainImage, listHtml, bookTitle, detailsHtml) {
   if (!formats || !formats.length) return '';
   return formats.map(format => {
     const isStudy = /study/i.test(format.format);
@@ -211,7 +220,7 @@ function formatRows(formats, mainImage, listHtml, bookTitle) {
     const sameTitle = (a, b) => key(a).startsWith(key(b)) || key(b).startsWith(key(a));
     const editionName = format.edition || (edition && !edition.paired && bookTitle && !sameTitle(edition.title, bookTitle) ? edition.title : '');
     const named = editionName ? ' <span class="book-format-edition">' + escapeHtml(editionName) + '</span>' : '';
-    const noteText = (repeatsList(format.note, listHtml) ? '' : format.note) || studyNote(edition);
+    const noteText = (repeatsList(format.note, listHtml) || repeatsDetails(format.note, detailsHtml) ? '' : format.note) || studyNote(edition);
     const note = noteText ? '<p class="book-format-note">' + escapeHtml(noteText) + '</p>' : '';
     const thumb = format.image && format.image !== mainImage
       ? '<img class="book-format-cover" src="' + escapeHtml(format.image) + '" alt="" width="48" height="72" loading="lazy" decoding="async">'
@@ -360,7 +369,8 @@ function restructureBookPage(html, ctx) {
   const author = book.authorHref && !/<a\b/.test(authorHtml)
     ? '<a href="' + escapeHtml(book.authorHref) + '">' + authorHtml + '</a>'
     : authorHtml;
-  const buyRows = formatRows(formats, coverSrc, editionList, decodeBasic(plain(titleHtml)));
+  const detailsHtml = (kept.join('').match(/<dl class="book-details">[\s\S]*?<\/dl>/) || [''])[0];
+  const buyRows = formatRows(formats, coverSrc, editionList, decodeBasic(plain(titleHtml)), detailsHtml);
   const top = '<section class="book-top page-intro">' +
     '<div class="book-top-text">' +
     '<p class="book-author kicker">' + author + '</p>' +
@@ -383,8 +393,14 @@ function restructureBookPage(html, ctx) {
   if ((seasons || []).length) {
     extras.push('<p><span>In the seasonal library</span> ' + seasons.map(season => '<a href="' + escapeHtml(season.href) + '">' + escapeHtml(season.title) + '</a>').join(', ') + '</p>');
   }
+  // The credit only points to a source list when the page has one.
+  const checked = ctx.creditNote
+    ? escapeHtml(ctx.creditNote) + ' See the <a href="/editorial/">editorial standards</a>.'
+    : sourcesHtml
+    ? 'Dates and publication details are checked against the sources listed on this page, as described in the <a href="/editorial/">editorial standards</a>.'
+    : 'See the <a href="/editorial/">editorial standards</a> for how pages are written and checked.';
   const foot = (extras.length ? '<aside class="book-also" aria-label="Elsewhere on Astor Library">' + extras.join('') + '</aside>' : '') +
-    '<p class="book-credit">Edited by Haydn Wood. Dates and publication details are checked against the sources listed on this page, as described in the <a href="/editorial/">editorial standards</a>.</p>';
+    '<p class="book-credit">Edited by Haydn Wood. ' + checked + '</p>';
   const endNav = '<nav class="book-end-nav" aria-label="End of page">' +
     '<a href="#main-content">Back to the top</a>' +
     (book.authorHref ? '<a href="' + escapeHtml(book.authorHref) + '">More by ' + escapeHtml(book.author) + '</a>' : '') +

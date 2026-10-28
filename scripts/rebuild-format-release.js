@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const releaseData = require('./format-release-data');
+const { coverFormat } = require('./book-edition-schema');
 
 const root = process.cwd();
 const formatStart = '<!-- ASTOR FORMAT OPTIONS START -->';
@@ -20,8 +21,8 @@ const collectionIntroductions = {
   'Renaissance & Early Modern': 'Milton&rsquo;s <em>Paradise Lost</em>, in the twelve books of 1674.',
   Shakespeare: 'All 154 sonnets in the 1609 order, with a note beside every poem.',
   'Romantic & Regency': 'Mary Shelley&rsquo;s <em>Frankenstein</em> and Coleridge&rsquo;s <em>Rime of the Ancient Mariner</em>.',
-  Victorian: '<em>Dracula</em>, <em>The Moonstone</em>, <em>Dorian Gray</em> and <em>The War of the Worlds</em>; Dickens&rsquo;s Christmas books, together and one by one; and three seasonal anthologies.',
-  'American Classics': '<em>Moby-Dick</em>, <em>The Great Gatsby</em>, <em>The Call of the Wild</em>, <em>The Red Badge of Courage</em> and a collection of American Halloween stories.'
+  Victorian: '<em>Dracula</em>, <em>The Moonstone</em> and <em>Dorian Gray</em>; <em>Dickens at Christmas</em> and three seasonal anthologies.',
+  'American Classics': '<em>Moby-Dick</em>, <em>The Great Gatsby</em>, <em>The Red Badge of Courage</em>, selected tales by Edgar Allan Poe and collections of American Christmas, ghost and Halloween stories.'
 };
 
 function escapeHtml(value) {
@@ -125,10 +126,10 @@ function validateReleaseData() {
     validateAsset(hardback.paperbackImage, `${label} paperback cover`);
     validatePurchaseUrl(hardback.purchaseUrl, `${label} purchase URL`);
     validatePurchaseUrl(hardback.paperbackPurchaseUrl, `${label} paperback purchase URL`);
-    if (!/(?:hard[\s_-]*(?:back|cover)|casebound)/i.test(hardback.image)) {
+    if (coverFormat(hardback.image) !== 'Hardcover') {
       throw new Error(`${label} cover filename does not identify hardback artwork: ${hardback.image}`);
     }
-    if (/(?:hard[\s_-]*(?:back|cover)|casebound)/i.test(hardback.paperbackImage) || hardback.paperbackImage === hardback.image) {
+    if (coverFormat(hardback.paperbackImage) === 'Hardcover' || hardback.paperbackImage === hardback.image) {
       throw new Error(`${label} paperback artwork is not clearly distinct from the hardback cover`);
     }
   }
@@ -158,6 +159,19 @@ function addFormatPanel(book) {
   if (insertion === -1) throw new Error(`Could not add format choices to ${book.href}`);
   html = html.slice(0, insertion).replace(/\s*$/, '\n') + formatPanel(book) + '\n' + html.slice(insertion);
   fs.writeFileSync(file, html);
+}
+
+function removeRetiredFormatPanels() {
+  const activeRoutes = new Set(releaseData.hardbacks.map(book => book.href));
+  const directory = path.join(root, 'books');
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    if (!entry.isDirectory() || activeRoutes.has(`/books/${entry.name}/`)) continue;
+    const file = path.join(directory, entry.name, 'index.html');
+    if (!fs.existsSync(file)) continue;
+    const html = fs.readFileSync(file, 'utf8');
+    const cleaned = html.replace(new RegExp('\\s*' + formatStart + '[\\s\\S]*?' + formatEnd + '\\s*', 'g'), '\n');
+    if (cleaned !== html) fs.writeFileSync(file, cleaned);
+  }
 }
 
 function header() {
@@ -232,6 +246,7 @@ function hardbackPage(hardbacks) {
 }
 
 validateReleaseData();
+removeRetiredFormatPanels();
 for (const hardback of releaseData.hardbacks) addFormatPanel(hardback);
 const hardbackDirectory = path.join(root, 'hardbacks');
 fs.mkdirSync(hardbackDirectory, { recursive: true });

@@ -35,7 +35,13 @@ export function handleBookRedirect(request, data = catalogue) {
   const explicit = url.searchParams.get('country')?.toUpperCase();
   const country = explicit === 'UK' ? 'GB' : explicit || request.cf?.country;
   if (explicit && !Object.hasOwn(STORES, country)) return new Response('Unknown Amazon country.', { status: 400, headers: HEADERS });
-  const target = destination(book, country, data);
+  let target = destination(book, country, data);
+  // A known live store can serve readers where this edition has no local
+  // product listing. Explicit country choices still report that store honestly.
+  if (!explicit && target?.kind !== 'product' && book.fallbackCountry) {
+    const fallback = destination(book, book.fallbackCountry, data);
+    if (fallback?.kind === 'product') target = fallback;
+  }
   if (url.searchParams.get('choose') !== '1' && target && (target.kind === 'product' || explicit)) {
     return new Response(null, { status: 302, headers: { ...HEADERS, Location: target.url } });
   }
