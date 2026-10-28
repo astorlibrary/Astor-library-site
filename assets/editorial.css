@@ -3594,3 +3594,237 @@ main[data-hub="resource"] .hub-links li {
 main[data-hub="resource"] .astor-page-credit a {
   font-weight: 400;
 }
+
+/* A single close reading: the title, the source beside it, then the passage
+   and its notes as before. */
+main[data-hub="passage"] .passage-reading-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 48px;
+  align-items: start;
+  min-height: 0;
+  margin: 0;
+  padding: 0 0 32px;
+  border: 0;
+  border-bottom: 1px solid var(--line, var(--ed-rule));
+  background: none !important;
+  box-shadow: none;
+  color: var(--text, var(--ed-ink));
+}
+
+main[data-hub="passage"] .passage-reading-hero h1 {
+  max-width: none;
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 clamp(36px, 5vw, 56px)/1.1 var(--serif);
+  letter-spacing: -0.01em;
+}
+
+main[data-hub="passage"] .passage-reading-hero .deck {
+  max-width: none;
+  margin: 20px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 20px/1.55 var(--serif);
+}
+
+main[data-hub="passage"] .passage-reading-hero aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--text-soft, var(--ed-soft));
+}
+
+main[data-hub="passage"] .passage-reading-hero aside img {
+  width: 120px;
+  height: auto;
+  margin: 0 0 14px;
+  box-shadow: 0 1px 2px rgba(31, 27, 24, 0.12), 0 6px 16px rgba(31, 27, 24, 0.12);
+}
+
+main[data-hub="passage"] .passage-reading-hero aside span {
+  display: block;
+  margin: 0;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 15px/1.45 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+main[data-hub="passage"] .passage-reading-hero aside b {
+  display: block;
+  margin: 4px 0 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 18px/1.4 var(--serif);
+}
+
+main[data-hub="passage"] .passage-reading-hero aside p {
+  margin: 10px 0 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 15px/1.55 var(--serif);
+}
+
+main[data-hub="passage"] .passage-instructions {
+  margin: 20px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+main[data-hub="passage"] .passage-instructions p {
+  max-width: 46rem;
+  margin: 0;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 17px/1.6 var(--serif);
+}
+
+main[data-hub="passage"] :is(.passage-question, .passage-classroom, .passage-context, .passage-related) {
+  display: block;
+  max-width: 46rem;
+  margin: 64px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--text, var(--ed-ink));
+}
+
+main[data-hub="passage"] :is(.passage-question, .passage-classroom, .passage-context, .passage-related) h2 {
+  max-width: none;
+  margin: 0 0 14px;
+  color: var(--text, var(--ed-ink));
+  font: 400 32px/1.15 var(--serif);
+  letter-spacing: -0.005em;
+}
+
+main[data-hub="passage"] .passage-question p {
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 22px/1.5 var(--serif);
+}
+
+main[data-hub="passage"] .passage-classroom > article {
+  margin: 24px 0 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  min-height: 0;
+}
+
+main[data-hub="passage"] .passage-classroom h3 {
+  margin: 0;
+  color: var(--text, var(--ed-ink));
+  font: 400 23px/1.3 var(--serif);
+}
+
+main[data-hub="passage"] .passage-classroom .passage-classroom-label {
+  margin: 2px 0 8px;
+  color: var(--text-muted, var(--ed-muted));
+  font: 400 14px/1.4 var(--sans);
+}
+
+main[data-hub="passage"] :is(.passage-classroom, .passage-context) :is(p, li) {
+  max-width: none;
+  color: var(--text-soft, var(--ed-soft));
+  font: 400 17px/1.6 var(--serif);
+}
+
+main[data-hub="passage"] .passage-context {
+  display: block;
+}
+
+main[data-hub="passage"] .passage-context > div,
+main[data-hub="passage"] .passage-context aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+main[data-hub="passage"] .passage-context aside {
+  margin-top: 20px;
+}
+
+main[data-hub="passage"] .passage-context aside h3 {
+  margin: 0 0 6px;
+  font: 400 20px/1.3 var(--serif);
+}
+
+main[data-hub="passage"] .passage-context aside a {
+  display: block;
+  margin: 4px 0;
+}
+
+main[data-hub="passage"] .passage-context a,
+main[data-hub="passage"] .passage-context-links a {
+  color: var(--wine-text, var(--ed-wine));
+  font: 400 17px/1.5 var(--serif);
+  text-underline-offset: 3px;
+}
+
+main[data-hub="passage"] .passage-context-links a + a {
+  margin-left: 22px;
+}
+
+main[data-hub="passage"] .passage-related-head {
+  display: block;
+  margin: 0;
+}
+
+main[data-hub="passage"] .passage-related-grid {
+  display: block;
+  border: 0;
+}
+
+main[data-hub="passage"] .passage-related-grid a {
+  display: block;
+  min-height: 0;
+  padding: 12px 0;
+  border: 0;
+  border-top: 1px solid var(--line, var(--ed-rule));
+  background: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+main[data-hub="passage"] .passage-related-grid small {
+  display: none;
+}
+
+main[data-hub="passage"] .passage-related-grid strong {
+  display: block;
+  color: var(--text, var(--ed-ink));
+  font: 400 21px/1.3 var(--serif);
+}
+
+main[data-hub="passage"] .passage-related-grid a:hover strong {
+  color: var(--wine-text, var(--ed-wine));
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+main[data-hub="passage"] .passage-related-grid em {
+  display: block;
+  margin-top: 2px;
+  color: var(--text-muted, var(--ed-muted));
+  font: italic 400 15px/1.4 var(--serif);
+}
+
+@media (max-width: 760px) {
+  main[data-hub="passage"] .passage-reading-hero {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+main[data-hub="passage"] .passage-hero-cover,
+main[data-hub="passage"] .passage-hero-cover img {
+  display: block;
+  transform: none !important;
+  rotate: none;
+}
+
+@media (max-width: 760px) {
+  main[data-hub="passage"] .passage-reading-hero aside img {
+    width: 88px;
+  }
+}

@@ -333,7 +333,26 @@ function resourcePage(html) {
   });
 }
 
+// --- a single close reading --------------------------------------------------------
+// The passage and its notes stay as they are. The dark panel above them, the
+// running number and the labels around the classroom material go.
+function passagePage(html) {
+  return html.replace(/(<main\b[^>]*class="[^"]*\bpassage-reading-page\b[^"]*"[^>]*>)([\s\S]*?)(<\/main>)/, (whole, open, body, close) => {
+    body = body.replace(/<section class="passage-question"><span>[\s\S]*?<\/span>\s*<h2>([\s\S]*?)<\/h2>\s*<\/section>/,
+      (section, question) => '<section class="passage-question"><h2>A question to take away</h2><p>' + question + '</p></section>');
+    body = body.replace(/<section class="passage-classroom"([^>]*)>([\s\S]*?)<\/section>/, (section, attributes, content) =>
+      '<section class="passage-classroom"' + attributes + '><h2>Before, during and after reading</h2>' +
+      content.replace(/<article><span>([\s\S]*?)<\/span>\s*<h2>([\s\S]*?)<\/h2>/g, (article, label, heading) => '<article><h3>' + headingText(heading) + '</h3><p class="passage-classroom-label">' + label + '</p>') + '</section>');
+    body = body.replace(/<div class="passage-related-head"><span>[\s\S]*?<\/span>/, '<div class="passage-related-head">');
+    body = body.replace(/(<section class="passage-context">[\s\S]*?)<div class="button-row">([\s\S]*?)<\/div>/, (section, start, buttons) =>
+      start + '<p class="passage-context-links">' + buttons.replace(/ class="button (?:primary|secondary)"/g, '') + '</p>');
+    body = stripHeadingStops(stripLabels(body));
+    return open.replace('<main', '<main data-hub="passage"') + body + close;
+  });
+}
+
 function plainHubPage(html, href) {
+  html = passagePage(html);
   html = resourcePage(html);
   html = hardbacksPage(html);
   html = authorPage(html);
