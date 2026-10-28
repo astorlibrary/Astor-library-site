@@ -84,7 +84,13 @@ async function runBook(container, gameId, shelf, meta) {
   const build = () => (gameId === 'mixed-round'
     ? sessionPlan(book).questions
     : buildRound(gameId, book, { length: 10 })).filter(question => belongsTo(book, question));
-  const questions = build();
+  let questions;
+  try { questions = build(); } catch {
+    // Without this the page would say "Opening…" for ever.
+    return emptyState(container, 'This activity couldn’t be set out for ' + book.title + ' in this browser. Try another activity, or update the browser.', [
+      { href: '/play/?book=' + encodeURIComponent(book.slug), label: 'All revision' }
+    ]);
+  }
   if (questions.length < 4) {
     const others = availableQuizzes(book).filter(quiz => quiz.id !== gameId).slice(0, 2);
     return emptyState(container, 'There aren’t enough questions of this kind for ' + book.title + ' yet. Try another activity on it, or another book.', [

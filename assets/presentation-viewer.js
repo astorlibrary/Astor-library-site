@@ -353,13 +353,13 @@ export class AstorPresentationViewer extends HTMLElement {
 
   #prefetchPreviewNeighbour(number) {
     if (number < 1 || number > this._presentation.previewSlides || number > this._presentation.slideCount) return;
-    const link = document.createElement('link');
-    link.rel = 'prefetch';
-    link.as = 'image';
-    link.href = this.#slideUrl(number);
-    document.head.append(link);
-    link.addEventListener('load', () => link.remove(), { once: true });
-    link.addEventListener('error', () => link.remove(), { once: true });
+    // An ordinary request, not <link rel="prefetch">: Cloudflare refuses
+    // prefetches to Worker routes with a 503, so the slide was never kept.
+    fetch(this.#slideUrl(number), {
+      credentials: 'same-origin',
+      priority: 'low',
+      headers: { Accept: 'image/png,image/*;q=0.8' }
+    }).then(response => response.blob()).catch(() => {});
   }
 
   async #sessionStatus() {
